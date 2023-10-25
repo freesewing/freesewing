@@ -2,7 +2,6 @@
 maker: "Mandarijnhaai"
 caption: "TangerineShark in een aangepaste jurk van Aaron"
 date: "2023-01-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/60bf0ea6d52c09618ecd7a59293faaf48da014b0-3024x4032.jpg"
 intro: "Hey! FreeSewing gebruiker TangerineShark hier! Ik heb dit Aaron A-shirt aangepast door het te verlengen tot een jurk."
 title: "Aaron gewijzigd in een jurk"
 designs:
@@ -31,5 +30,5 @@ Het is beter om iets langer te gaan dan je verwacht, want het is gemakkelijk om 
 ![Een benadering van het resultaat van de aanpassingen om het Aaron A-shirt te veranderen in een Aaron jurk.](https://posts.freesewing.org/uploads/teagan_dress_481cb6b7b9.svg)
 
 ### Nu komt het makkelijke gedeelte!
-Je hoeft alleen maar de [montage-instructies voor Aaron](https://freesewing.org/docs/patterns/aaron/instructions/)te volgen, behalve met superlange zijnaden. Pas je jurk voordat je hem gaat zomen! Ik heb de mijne op enkellengte gezoomd, maar experimenteer met de zoomdiepte. Dit is vooral belangrijk als je stof rekbaar of drapeerbaar is, want het kan langer uitrekken dan je verwacht.
+Je hoeft alleen maar de [montage-instructies voor Aaron](/docs/designs/aaron/instructions/)te volgen, behalve met superlange zijnaden. Pas je jurk voordat je hem gaat zomen! Ik heb de mijne op enkellengte gezoomd, maar experimenteer met de zoomdiepte. Dit is vooral belangrijk als je stof rekbaar of drapeerbaar is, want het kan langer uitrekken dan je verwacht.
 

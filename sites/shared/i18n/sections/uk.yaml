@@ -3,7 +3,7 @@ blogAbout: Новини та оновлення від спільноти FreeSe
 showcase: Готові проєкти
 showcaseAbout: Приклади та натхнення від спільноти FreeSewing з використанням наших дизайнів
 docs: Документація
-docsAbout: Детальна документація для всіх наших дизайнів, нашого веб-сайту та багато іншого
+docsAbout: In-depth documentation for all our designs, our website, and much more
 account: Ваш обліковий запис
 accountAbout: Керуйте налаштуваннями та уподобаннями свого акаунта, а також пресональними даними
 designs: Дизайни
@@ -28,8 +28,11 @@ sets: Ваші набори вимірювань
 patterns: Ваші візерунки
 curate: Куратор
 curateSets: Кураторські набори
+curatedSets: Curated Measurements Sets
 code: Код
 patternsAbout: Перелік викрійок, збережених у вашому обліковому записі FreeSewing
 setsAbout: Перелік наборів мірок, збережених у вашому обліковому записі FreeSewing
 codeAbout: Тут ви можете знайти (посилання на) вихідний код Freesewing
 new: Новий...
+newAbout: Start here if you are looking to create something new
+support: Підтримати

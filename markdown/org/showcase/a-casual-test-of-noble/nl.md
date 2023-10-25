@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "De naaister was blij met haar resultaten"
 date: "2022-06-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/433aa6299949881aa53c46f8778661ecf25ac893-1265x1686.jpg"
 intro: "Een FreeSewing maker deelde deze versie van het Noble lijfblok."
 title: "Een losse test van Noble"
 designs:

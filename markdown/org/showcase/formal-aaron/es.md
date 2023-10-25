@@ -2,7 +2,6 @@
 maker: "TangerineShark"
 caption: "TangerineShark con un aarón formal, unos atrevidos pantalones amarillos y el accesorio más sexy de todos, un respirador"
 date: "2023-01-14"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/86fd2445332cdc1519d2e85e68db7023118643ff-1852x2704.jpg"
 intro: "Un Aarón formal, para fiestas"
 title: "Un Aarón formal, para fiestas"
 designs:

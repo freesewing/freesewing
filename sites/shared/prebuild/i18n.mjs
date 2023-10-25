@@ -4,7 +4,9 @@ import rdir from 'recursive-readdir'
 import yaml from 'js-yaml'
 import { fileURLToPath } from 'url'
 import allLanguages from '../../../config/languages.json' assert { type: 'json' }
-import { designs } from '../i18n/designs.mjs'
+import { designs as fsDesigns } from '../i18n/designs.mjs'
+import { designs as sdeDesigns } from '../i18n/sde-designs.mjs'
+import { plugins } from '../i18n/plugins.mjs'
 
 /*
  * This is where we configure what folders we should check for
@@ -12,9 +14,11 @@ import { designs } from '../i18n/designs.mjs'
  */
 const sitesFolder = path.join(fileURLToPath(import.meta.url), '..', '..', '..')
 export const folders = {
+  backend: [path.join(sitesFolder, 'backend', 'src', 'templates', 'email')],
   org: [path.join(sitesFolder, 'org', 'pages'), path.join(sitesFolder, 'org', 'components')],
   dev: [path.join(sitesFolder, 'dev', 'pages'), path.join(sitesFolder, 'dev', 'components')],
   lab: [path.join(sitesFolder, 'lab', 'pages'), path.join(sitesFolder, 'lab', 'components')],
+  sde: [path.join(sitesFolder, 'sde', 'pages')],
   shared: [
     path.join(sitesFolder, 'shared', 'components'),
     path.join(sitesFolder, 'shared', 'i18n'),
@@ -42,10 +46,12 @@ const writeJson = async (site, locale, namespace, content) => {
  *
  */
 const getI18nFileList = async (site, languages) => {
-  const dirs = [...folders.shared]
-  if (site === 'org') dirs.push(...folders.org)
-  if (site === 'dev') dirs.push(...folders.dev)
-  if (site === 'lab') dirs.push(...folders.lab)
+  const dirs = []
+  if (site === 'org') dirs.push(...folders.org, ...folders.shared)
+  else if (site === 'dev') dirs.push(...folders.dev, ...folders.shared)
+  else if (site === 'lab') dirs.push(...folders.lab, ...folders.shared)
+  else if (site === 'sde') dirs.push(...folders.lab, ...folders.shared, ...folders.sde)
+  else if (site === 'backend') dirs.push(...folders.backend)
 
   const allFiles = []
   for (const dir of dirs) {
@@ -181,13 +187,20 @@ export const prebuildI18n = async (store) => {
   // Write out code-adjacent source files
   for (const language of languages) {
     // Fan out into namespaces
-    for (const namespace in namespaces)
+    for (const namespace in namespaces) {
       writeJson(store.site, language, namespace, namespaces[namespace][language])
+    }
   }
 
   /*
-   * Handle design translations
+   * For backend, this is all we need
    */
+  if (store.site === 'backend') return (store.i18n = { namespaces })
+
+  /*
+   * Handle design translations, but sde does it differently
+   */
+  const designs = store.site === 'sde' ? sdeDesigns : fsDesigns
   const designNs = {}
   for (const design in designs) {
     for (const language of languages) {
@@ -200,6 +213,19 @@ export const prebuildI18n = async (store) => {
     }
   }
   for (const language of languages) writeJson(store.site, language, 'designs', designNs[language])
+
+  /*
+   * Handle plugin translations
+   */
+  const pluginNs = {}
+  for (const plugin in plugins) {
+    for (const language of languages) {
+      if (typeof pluginNs[language] === 'undefined') pluginNs[language] = {}
+      // Write out plugin namespace files
+      writeJson(store.site, language, plugin, plugins[plugin][language])
+    }
+  }
+  for (const language of languages) writeJson(store.site, language, 'plugins', pluginNs[language])
 
   /*
    * Update the store

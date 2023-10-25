@@ -2,18 +2,16 @@
 import { siteConfig } from 'site/site.config.mjs'
 import translators from 'site/prebuild/translators.json'
 // Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
-import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Components
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import { I18nIcon } from 'shared/components/icons.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
-import { WebLink } from 'shared/components/web-link.mjs'
+import { WebLink } from 'shared/components/link.mjs'
 
 export const ns = ['translation', 'locales']
 
@@ -23,29 +21,22 @@ const languages = [
 ].sort()
 
 export const TranslatorInvite = () => {
-  // Context
-  const { startLoading, stopLoading } = useContext(LoadingContext)
-
   // Hooks
   const { t } = useTranslation(ns)
-  const { token } = useAccount()
-  const backend = useBackend(token)
-  const toast = useToast()
+  const backend = useBackend()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
   const [team, setTeam] = useState(false)
   const [sent, setSent] = useState(false)
 
   const sendInvite = async () => {
-    startLoading()
+    setLoadingStatus([true, 'status:contactingBackend'])
     const result = await backend.sendTranslatorInvite(team)
     if (result.success) {
       setSent(true)
-      stopLoading()
-      toast.success(t('translation:inviteSent'))
-    } else {
-      toast.for.backendError()
-    }
+      setLoadingStatus([true, 'status:settingsSaved', true, true])
+    } else setLoadingStatus([true, 'status:backendError', true, false])
   }
 
   if (sent)

@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Violette, geblümte, absolut entzückende Wahid-Weste"
 date: "27.11.2020"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4aa2526bd8de543f32ed5f9470e1728d876aa568-750x750.jpg"
 intro: "Kaena hat ihrem Mann eine Wahid-Weste für eine Hochzeit genäht, und wir lieben sie einfach!"
 title: "Lila Wahid von Kaena"
 designs:

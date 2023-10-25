@@ -3,17 +3,22 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import Head from 'next/head'
 import { PageWrapper } from 'shared/components/wrappers/page.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { PageLink } from 'shared/components/link.mjs'
 import { Highlight } from 'shared/components/mdx/highlight.mjs'
-import { FreeSewingIcon } from 'shared/components/icons.mjs'
-import Link from 'next/link'
+import { FreeSewingIcon, CisFemaleIcon, CodeIcon } from 'shared/components/icons.mjs'
+import { CardLink } from 'shared/components/link.mjs'
+import { ReadMore } from 'shared/components/mdx/read-more.mjs'
 
 const title = 'Welcome to FreeSewing.dev'
 
-const BoldLink = ({ href, children }) => (
-  <a href={href} className="font-bold underline hover:decoration-4">
+const Card = ({ bg = 'bg-base-200', textColor = 'text-base-content', title, children, icon }) => (
+  <div className={`px-8 ${bg} py-10 rounded-lg block ${textColor} shadow-lg grow`}>
+    <h2 className="mb-4 text-inherit flex flex-row gap-4 justify-between items-center font-medium text-left">
+      {title}
+      {icon}
+    </h2>
     {children}
-  </a>
+  </div>
 )
 
 /*
@@ -42,156 +47,66 @@ const HomePage = ({ page }) => (
       <title>{title}</title>
     </Head>
 
-    <div className="max-w-7xl m-auto px-0 mt-24 text-center">
+    <div className="max-w-7xl m-auto px-0 mt-24 px-4">
       <FreeSewingIcon className="h-36 w-36 m-auto" />
       <h1 className="text-center font-heavy drop-shadow-md px-4">
         <span style={{ letterSpacing: '-0.2rem' }} className="text-5xl lg:text-6xl">
           FreeSewing
         </span>
         <span className="block text-sm lg:text-xl m-1">
-          The library for parametric sewing patterns
+          An open source Javascript library for parametric sewing patterns
         </span>
       </h1>
 
-      <div className="flex flex-col gap-8 lg:grid lg:grid-cols-3 lg:gap-4 mt-12">
-        <div className="px-4 lg:px-8 bg-gradient-to-tr from-accent to-primary py-10 rounded-none lg:rounded-xl lg:shadow">
-          <h2 className="text-accent-content mb-4">Custom-Fit Fashion</h2>
-          <p className="text-accent-content font-medium">
+      <div className="flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:gap-4 mt-12">
+        <Card
+          title="Custom-Fit Fashion"
+          icon={<CisFemaleIcon className="w-12 h-12 shrink-0" fill stroke={0} />}
+        >
+          <p className="font-medium text-lg">
             FreeSewing is the leading open source library for on-demand garment manufacturing.
           </p>
-          <p className="text-accent-content font-medium">
+          <p className="font-medium text-lg">
             Loved by home sewers and fashion entrepreneurs alike, we provide the tech stack for your
             creative endeavours.
           </p>
-        </div>
+        </Card>
 
-        <div className="px-4 lg:px-8 py-10 bg-gradient-to-tr from-info to-neutral rounded-none lg:rounded-xl lg:shadow">
-          <h2 className="text-neutral-content mb-4">Patterns as Code</h2>
-          <p className="font-medium text-neutral-content">
+        <Card title="Patterns as Code" icon={<CodeIcon className="w-12 h-12 shrink-0" />}>
+          <p className="font-medium text-lg">
             FreeSewing designs are implemented as code giving you unmatched power and flexibility.
           </p>
-          <p className="font-medium text-neutral-content">
+          <p className="font-medium text-lg">
             You can mix and match parts from different designs, extend them, or add options that
             turn one base design into many.
           </p>
-        </div>
+        </Card>
+      </div>
 
-        <div className="px-4 lg:px-8 bg-gradient-to-tr from-primary to-secondary py-10 rounded-none lg:rounded-xl lg:shadow">
-          <h2 className="text-accent-content mb-4">Doing what&apos;s right</h2>
-          <p className="text-accent-content font-medium">
-            As an open source project, our work and support is gifted free of charge to all our
-            users.
-          </p>
-          <p className="text-accent-content font-medium">
-            In return, we ask those who can afford it to{' '}
-            <BoldLink href="https://freesewing.org/patrons/join">support us</BoldLink>. This helps
-            us{' '}
-            <BoldLink href="https://freesewing.org/docs/various/pledge">
-              do what&apos;s right
-            </BoldLink>
-            .
-          </p>
+      <h2 className="lg:text-center mb-4 mt-12">Documentation</h2>
+      <div className="flex flex-col gap-5 md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 lg:gap-4 mt-12 mb-24">
+        <div>
+          <h4>Guides</h4>
+          <ReadMore recurse root="guides" depth={3} />
+        </div>
+        <div>
+          <h4>Howtos</h4>
+          <ReadMore recurse root="howtos" depth={3} />
+        </div>
+        <div>
+          <h4>Reference</h4>
+          <ReadMore recurse root="reference" depth={3} />
+        </div>
+        <div>
+          <h4>Tutorials</h4>
+          <ReadMore recurse root="tutorials" depth={3} />
+          <h4>Training</h4>
+          <ReadMore recurse root="training" depth={3} />
         </div>
       </div>
 
-      <div className="p-0 bg-gradient-to-tr from-neutral to-primary mt-12 rounded-none lg:rounded-xl lg:shadow">
-        <div
-          className="bg-cover bg-neutral w-full bg-center shadow rounded-none lg:rounded-xl"
-          style={{ backgroundImage: 'url(/support.jpg)' }}
-        >
-          <div className="bg-neutral bg-opacity-50 p-4 py-12 rounded-none lg:rounded-xl">
-            <h2 className="text-accent-content mb-4">Support FreeSewing</h2>
-            <p className="text-accent-content font-medium max-w-sm m-auto drop-shadow-md">
-              FreeSewing is fuelled by a voluntary subscription model
-            </p>
-            <p className="text-accent-content font-medium max-w-prose max-w-sm m-auto">
-              If you think what we do is worthwhile, and if you can spare a few coins each month
-              without hardship, please support our work
-            </p>
-            <p>
-              <a
-                role="button"
-                className="btn btn-accent hover:btn-success px-12 ml-4 mb-8"
-                href="https://freesewing.org/patrons/join"
-              >
-                Become a Patron
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:gap-4 mt-12">
-        <Link
-          href="/reference/api"
-          className="px-4 lg:px-8 py-10 bg-primary rounded-none lg:rounded-xl lg:shadow hover:bg-secondary"
-        >
-          <h2 className="text-neutral-content mb-4">Design Tutorial</h2>
-          <p className="font-medium text-neutral-content">
-            Step by step instructions to create your first FreeSewing design
-          </p>
-        </Link>
-
-        <Link
-          href="/reference/api"
-          className="px-4 lg:px-8 py-10 bg-neutral rounded-none lg:rounded-xl lg:shadow hover:bg-secondary"
-        >
-          <h2 className="text-accent-content mb-4">Core API</h2>
-          <p className="text-accent-content font-medium">
-            Reference documentation for our core library
-          </p>
-        </Link>
-
-        <div className="px-4 lg:px-8 bg-accent py-10 rounded-none lg:rounded-xl lg:shadow hover:bg-secondary">
-          <h2 className="text-accent-content mb-4">Backend API</h2>
-          <p className="text-accent-content font-medium">
-            No backend?
-            <br />
-            No problem, you can use ours.
-          </p>
-        </div>
-      </div>
-
-      <div className="p-0 bg-gradient-to-tr from-neutral to-primary mt-12 rounded-none lg:rounded-xl lg:shadow">
-        <div className="flex flex-col gap-8 lg:grid lg:grid-cols-2">
-          <div className="px-4 lg:px-12 pt-12 lg:py-12">
-            <h2 className="text-accent-content mb-4 text-center lg:text-left">
-              FreeSewing v3: It&apos;s coming
-            </h2>
-            <p className="text-accent-content font-medium text-center lg:text-left">
-              The upcoming version 3 of FreeSewing is currently under development. All of the
-              documentation here is being kept up-to-date with the upcoming v3 release.
-            </p>
-            <p className="text-accent-content font-medium text-center lg:text-left">
-              Visit <BoldLink href="https://v2.freesewing.dev/">v2.freesewing.dev</BoldLink> for the
-              documentation for version 2 of FreeSewing.
-            </p>
-          </div>
-          <div className="px-4 lg:px-12 pb-12 lg:py-12">
-            <h2 className="text-accent-content mb-4 text-center lg:text-left">
-              What&apos;s changed?
-            </h2>
-            <p className="text-accent-content font-medium text-center lg:text-left">
-              Check{' '}
-              <BoldLink href="/guides/v3/migration">
-                the FreeSewing version 3 migration guide
-              </BoldLink>{' '}
-              to learn about what is new in version 3 of FreeSewing, and what changes you should
-              make in your own designs to port them to version 3.
-            </p>
-            <p className="text-accent-content font-medium text-center lg:text-left">
-              If you have any questions to which you can&apos;t find the answers here, please{' '}
-              <BoldLink href="https://discord.freesewing.org/">reach out to us on Discord</BoldLink>
-              .
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div className="max-w-7xl m-auto mt-12 px-4">
-      <h2 className="text-left lg:text-center mb-4">Using FreeSewing: TL;DR</h2>
-      <div className="flex flex-row flex-wrap gap-4 justify-between">
+      <h2 className="lg:text-center mb-4 mt-12">Using FreeSewing: TL;DR</h2>
+      <div className="grid w-full m-auto  md:grid-cols-2 gap-4 justify-between">
         <div className="max-w-xl w-full">
           <h3>
             To go fast, go alone <span role="img">🚀</span>
@@ -199,7 +114,7 @@ const HomePage = ({ page }) => (
           <p>
             All you need is <strong>NodeJS</strong>; Then run:
           </p>
-          <Highlight language="shell">npx @freesewing/new-design@next</Highlight>
+          <Highlight language="shell">npx @freesewing/new-design</Highlight>
           <p>
             This command will setup the stand-alone FreeSewing development environment for you.{' '}
             <PageLink href="/tutorials/getting-started-linux/dev-setup" txt="Learn more" />.
@@ -230,32 +145,37 @@ const HomePage = ({ page }) => (
           </p>
         </div>
       </div>
-    </div>
 
-    <div className="max-w-7xl m-auto px-0 mt-12">
-      <div className="p-0 bg-gradient-to-tr from-accent to-warning mt-24 rounded-none lg:rounded-xl lg:shadow mb-12">
-        <div className="flex flex-col lg:grid lg:grid-cols-2">
-          <div className="px-4 lg:px-12 pt-12 lg:py-12">
-            <h2 className="text-accent-content mb-4 text-center lg:text-left">Questions?</h2>
-            <p className="text-accent-content font-medium text-center lg:text-left">
-              When you have questions or find yourself scratching your head you can{' '}
-              <a href="/contact" className="font-bold underline">
-                contact us
-              </a>{' '}
-              in various ways.
-            </p>
-          </div>
-          <div className="px-4 lg:px-12 py-12">
-            <h2 className="text-accent-content mb-4 text-center lg:text-left">Need Help?</h2>
-            <p className="text-accent-content font-medium text-center lg:text-left">
-              While we are all volunteers, we have a good track record of helping people. So{' '}
-              <a href="/contact" className="font-bold underline">
-                don&apos;t be shy
-              </a>
-              .
-            </p>
-          </div>
-        </div>
+      <div className="flex flex-col gap-5 md:grid lg:grid-cols-2 lg:gap-4 mt-12">
+        <CardLink
+          href="/reference/core"
+          title="Core API"
+          text="Reference documentation for our core library"
+        />
+        <CardLink
+          href="/reference/backend"
+          title="Backend API"
+          text={
+            <span>
+              No backend?
+              <br />
+              No problem, you can use ours.
+            </span>
+          }
+        />
+      </div>
+
+      <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-4 mt-12 mb-24">
+        <CardLink
+          href="/tutorials/pattern-design"
+          title="Design Tutorial"
+          text="Step by step instructions to create your first FreeSewing design"
+        />
+        <CardLink
+          href="https://next.freesewing.org/support"
+          title="Need Help?"
+          text="Learn about the various ways you can reach out for help"
+        />
       </div>
     </div>
   </PageWrapper>

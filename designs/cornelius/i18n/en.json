@@ -14,32 +14,42 @@
   },
   "s": {
     "Vent": "Vent",
-    "PocketFacing": "Pocket facing"
+    "PocketFacing": "Pocket facing",
+    "cutWaistband.t": "The waist band is not shown",
+    "cutWaistband.d": "The **waist band** is a strip of fabric {{{ width }}} wide and {{{ length }}} long."
   },
   "o": {
-    "fullness": {
-      "t": "Fullness",
-      "d": "Controls the fullness of the breeches"
-    },
-    "waistbandBelowWaist": {
-      "t": "Lower waistband",
-      "d": "Percentage to move the waistband below the actual waist"
-    },
-    "waistReduction": {
-      "t": "Waist reduction",
-      "d": "Percentage to reduce the waistband"
-    },
-    "cuffWidth": {
-      "t": "Cuff width",
-      "d": "Width of the leg cuff"
+    "bandBelowKnee": {
+      "t": "Cuff below knee",
+      "d": "Controls the cuff distance from the knee"
     },
     "cuffStyle": {
       "t": "Cuff style",
       "d": "Style of the leg cuff"
     },
-    "bandBelowKnee": {
-      "t": "Cuff below knee",
-      "d": "Controls the cuff distance from the knee"
+    "cuffStyle.traditional": {
+      "t": "Traditional cuff style",
+      "d": "A single buttoned curved band with a pointed edge"
+    },
+    "cuffStyle.elegant": {
+      "t": "Elegant cuff style",
+      "d": "A single buttoned straight band with a pointed edge"
+    },
+    "cuffStyle.keystone": {
+      "t": "Keystone cuff style",
+      "d": "A slightly curved band that is wider than the others using 3 buttons rather than 1. This one is based of off the one in the Keystone Draft this pattern is based on."
+    },
+    "cuffWidth": {
+      "t": "Cuff width",
+      "d": "Width of the leg cuff"
+    },
+    "flyWidth": {
+      "t": "Fly Guard width",
+      "d": "Width of the fly guard"
+    },
+    "fullness": {
+      "t": "Fullness of the legs",
+      "d": "Influences the ease on the legs for a looser style"
     },
     "kneeToBelow": {
       "t": "Cuff length",
@@ -48,6 +58,14 @@
     "ventLength": {
       "t": "Vent length",
       "d": "Controls the length of the vent between knee and cuff"
+    },
+    "waistbandBelowWaist": {
+      "t": "Lower waistband",
+      "d": "Percentage to move the waistband below the actual waist"
+    },
+    "waistReduction": {
+      "t": "Waist reduction",
+      "d": "Percentage to reduce the waistband"
     }
   }
 }

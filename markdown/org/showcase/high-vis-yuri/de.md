@@ -2,7 +2,6 @@
 maker: "Hellgy"
 caption: "Ein Blick auf das Tageslicht"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3a80879182c63ed3438ee239ed6cb5d2a88d2d4b-1440x1800.jpg"
 intro: "Es gibt nicht genug Worte, um diesen Yuri Hoodie von dem unnachahmlichen Hellgy zu beschreiben! Auffällig! Lebendig! Disco! Super Spaß!!!"
 title: "Hellgys Yuri-High-Vis-Hoodie (Blinklicht-GIFs im Beitrag)"
 designs:

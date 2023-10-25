@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "If you like it, put a bow on it"
 date: "2017-11-14"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b04db622ddf3bff6e2d66a5305903a0e96edd58-2000x1333.jpg"
 intro: "Our family of freesewing patterns has grown once again, and the benjamin of the family is... Benjamin ."
 title: "The Benjamin Bow Tie pattern is now available in beta. And I didn't even have to do anything."
 ---

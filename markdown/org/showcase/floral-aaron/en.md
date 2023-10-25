@@ -2,7 +2,6 @@
 maker: "Natalia Sayang"
 caption: "Did you know that the \"A\" in A-shirt refers to the triangular shape of the garment?"
 date: "2021-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/60945201919c87d88076815366d03f42beae4235-600x800.jpg"
 intro: "This Aaron tank top was made by Nat, who shared:"
 title: "Floral Aaron"
 designs: ["aaron"]

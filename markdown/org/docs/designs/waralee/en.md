@@ -2,4 +2,7 @@
 title: "Waralee wrap pants"
 ---
 
-<PatternDocs pattern='waralee' />
+
+
+<DesignInfo design='waralee' docs />
+

@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Your login background for October"
 date: "2018-09-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b5a652991874d5eb4b6aa694653fcc483330a49d-1920x1280.jpg"
 intro: "Monthly roundup - September 2018: Shin, loads of JavaScript, and a long TODO list"
 title: "Monthly roundup - September 2018: Shin, loads of JavaScript, and a long TODO list"
 ---

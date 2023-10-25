@@ -1,7 +1,10 @@
-import { ClearIcon, HelpIcon, EditIcon } from 'shared/components/icons.mjs'
-import { Collapse } from 'shared/components/collapse.mjs'
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
+import { ResetIcon, EditIcon } from 'shared/components/icons.mjs'
 import { useState, useMemo } from 'react'
-import { ListToggle } from './inputs.mjs'
+import { SubAccordion } from 'shared/components/accordion.mjs'
+import { FormControl } from 'shared/components/inputs.mjs'
+import { BoxIcon as GroupIcon, OptionsIcon } from 'shared/components/icons.mjs'
+import { optionType } from 'shared/utils.mjs'
 
 /**
  * Check to see if a value is different from its default
@@ -34,7 +37,7 @@ export const ItemTitle = ({ name, t, current = null, open = false, emoji = '', I
 )
 
 /** @type {String} class to apply to buttons on open menu items */
-const openButtonClass = 'btn btn-xs btn-ghost px-0'
+const iconButtonClass = 'btn btn-xs btn-ghost px-0 text-accent'
 
 /**
  * A generic component for handling a menu item.
@@ -46,7 +49,6 @@ const openButtonClass = 'btn btn-xs btn-ghost px-0'
  * @param  {Function}  options.t          the translation function
  * @param  {Object}  options.passProps  props to pass to the Input component
  * @param  {Boolean}  changed            has the value changed from default?
- * @param  {Function}  loadDocs           a function to load documentation for the item into a modal
  * @param  {React.Component}  Input              the input component this menu item will use
  * @param  {React.Component}  Value              a value display component this menu item will use
  * @param  {Boolean} allowOverride      all a text input to be used to override the given input component
@@ -60,12 +62,11 @@ export const MenuItem = ({
   t,
   passProps = {},
   changed,
-  loadDocs,
   Input = () => {},
-  Value = () => {},
   allowOverride = false,
-  allowToggle = false,
   control = Infinity,
+  docs,
+  design,
 }) => {
   // state for knowing whether the override input should be shown
   const [override, setOverride] = useState(false)
@@ -81,6 +82,7 @@ export const MenuItem = ({
       t,
       changed,
       override,
+      design,
       ...passProps,
     }),
     [name, config, current, updateFunc, t, changed, override, passProps, control]
@@ -91,68 +93,54 @@ export const MenuItem = ({
 
   // get buttons for open and closed states
   const buttons = []
-  const openButtons = []
-  if (loadDocs)
-    openButtons.push(
-      <button className={openButtonClass} key="help" onClick={(evt) => loadDocs(evt, name)}>
-        <HelpIcon className="w-6 h-6" />
-      </button>
-    )
   if (allowOverride)
-    openButtons.push(
+    buttons.push(
       <button
         key="edit"
-        className={openButtonClass}
+        className={iconButtonClass}
         onClick={(evt) => {
           evt.stopPropagation()
           setOverride(!override)
         }}
       >
-        <EditIcon className={`w-6 h-6 ${override ? 'bg-base-100 text-accent rounded' : ''}`} />
+        <EditIcon
+          className={`w-6 h-6 ${
+            override ? 'bg-secondary text-secondary-content rounded' : 'text-secondary'
+          }`}
+        />
       </button>
     )
-  const ResetButton = ({ open, disabled = false }) => (
+  const ResetButton = ({ disabled = false }) => (
     <button
-      className={`${open ? openButtonClass : 'btn btn-accent'} disabled:bg-opacity-0`}
+      className={`${iconButtonClass} disabled:bg-opacity-0`}
       disabled={disabled}
       onClick={(evt) => {
         evt.stopPropagation()
         updateFunc([name])
       }}
     >
-      <ClearIcon />
+      <ResetIcon />
     </button>
   )
 
-  if (changed && !allowToggle) {
-    buttons.push(<ResetButton key="clear" />)
-  }
-
-  if (allowToggle) {
-    buttons.push(<ListToggle key="toggle" {...{ config, changed, updateFunc, name }} />)
-  } else {
-    openButtons.push(<ResetButton open disabled={!changed} key="clear" />)
-  }
-
-  // props to pass to the ItemTitle
-  const titleProps = {
-    name,
-    t,
-    current: <Value {...drillProps} />,
-    emoji: config.emoji,
-    Icon: config.icon,
-  }
+  buttons.push(<ResetButton open disabled={!changed} key="clear" />)
 
   return (
-    <Collapse
-      color={changed ? 'accent' : 'secondary'}
-      openTitle={<ItemTitle open {...titleProps} />}
-      title={<ItemTitle {...titleProps} />}
-      buttons={buttons}
-      openButtons={openButtons}
+    <FormControl
+      label={<span className="text-base font-normal">{t([`${name}.d`, name])}</span>}
+      id={config.name}
+      labelBR={<div className="flex flex-row items-center gap-2">{buttons}</div>}
+      labelBL={
+        <span
+          className={`text-base font-medium -mt-2 block ${changed ? 'text-accent' : 'opacity-50'}`}
+        >
+          {t(`workbench:youUse${changed ? 'Default' : 'Custom'}Value`)}
+        </span>
+      }
+      docs={docs}
     >
       <Input {...drillProps} />
-    </Collapse>
+    </FormControl>
   )
 }
 
@@ -169,7 +157,6 @@ export const MenuItem = ({
  * @param  {React.Component}  Item         the component to use for menu items
  * @param  {Object}  values                a map of Value display components to be used by menu items in the group
  * @param  {Object}  inputs                a map of Input components to be used by menu items in the group
- * @param  {Function}  loadDocs            a function to load item documentation into a modal
  * @param  {Object}  passProps             properties to pass to Inputs within menu items
  * @param  {Object}  emojis                a map of emojis to use as icons for groups or items
  * @param  {Function}  updateFunc          the function called by change handlers on inputs within menu items
@@ -179,28 +166,91 @@ export const MenuItem = ({
 export const MenuItemGroup = ({
   collapsible = true,
   control,
-  name,
+  //name,
   currentValues = {},
   structure,
   Icon,
   Item = MenuItem,
   values = {},
   inputs = {},
-  loadDocs,
   passProps = {},
   emojis = {},
   updateFunc,
   topLevel = false,
   t,
+  language,
+  isDesignOptionsGroup = false,
+  docs = false,
+  design,
 }) => {
   // map the entries in the structure
   const content = Object.entries(structure).map(([itemName, item]) => {
     // if it's the isGroup property, or it is false, it shouldn't be shown
     if (itemName === 'isGroup' || item === false) return null
+    if (!item) return null
+    if (item.control && control && item.control > control) return null
 
-    // if the item is not a menu, it's an Item
-    if (!item.isGroup)
-      return (
+    const ItemIcon = item.icon
+      ? item.icon
+      : item.isGroup
+      ? GroupIcon
+      : Icon
+      ? Icon
+      : () => <span role="img">fixme-icon</span>
+    const Value = item.isGroup
+      ? () => (
+          <div className="flex flex-row gap-2 items-center font-medium">
+            {Object.keys(item).filter((i) => i !== 'isGroup').length}
+            <OptionsIcon className="w-5 h-5" />
+          </div>
+        )
+      : isDesignOptionsGroup
+      ? values[optionType(item)]
+      : values[itemName]
+      ? values[itemName]
+      : () => <span>¯\_(ツ)_/¯</span>
+
+    return [
+      <div className="flex flex-row items-center justify-between w-full" key="a">
+        <div className="flex flex-row items-center gap-4 w-full">
+          <ItemIcon />
+          <span className="font-medium">{t([`${itemName}.t`, `workbench:${itemName}`])}</span>
+        </div>
+        <div className="font-bold">
+          <Value
+            current={currentValues[itemName]}
+            config={item}
+            t={t}
+            changed={wasChanged(currentValues[itemName], item)}
+            design={design}
+          />
+        </div>
+      </div>,
+      item.isGroup ? (
+        <MenuItemGroup
+          key={itemName}
+          {...{
+            collapsible: true,
+            // it's the top level if the previous level was top but not wrapped
+            topLevel: topLevel && !collapsible,
+            control,
+            name: itemName,
+            currentValues,
+            structure: item,
+            Icon,
+            Item,
+            values,
+            inputs,
+            passProps,
+            emojis,
+            updateFunc,
+            t,
+            language,
+            isDesignOptionsGroup,
+            design,
+          }}
+        />
+      ) : (
         <Item
           key={itemName}
           {...{
@@ -212,64 +262,17 @@ export const MenuItemGroup = ({
             Value: values[itemName],
             Input: inputs[itemName],
             t,
-            loadDocs,
             updateFunc,
             passProps,
+            language,
+            docs,
+            design,
           }}
         />
-      )
-
-    // otherwise, it's a group
-    return (
-      <MenuItemGroup
-        key={itemName}
-        {...{
-          collapsible: true,
-          // it's the top level if the previous level was top but not wrapped
-          topLevel: topLevel && !collapsible,
-          control,
-          name: itemName,
-          currentValues,
-          structure: item,
-          Icon,
-          Item,
-          values,
-          inputs,
-          loadDocs,
-          passProps,
-          emojis,
-          updateFunc,
-          t,
-        }}
-      />
-    )
+      ),
+      itemName,
+    ]
   })
 
-  // if it should be wrapped in a collapsible
-  if (collapsible) {
-    // props to give to the group title
-    const titleProps = {
-      name,
-      t,
-      emoji: emojis[name] || emojis.groupDflt,
-    }
-    return (
-      <Collapse
-        bottom
-        color={topLevel ? 'primary' : 'secondary'}
-        title={
-          <ItemTitle
-            {...titleProps}
-            current={Icon ? <Icon className="w-6 h-6 text-primary" /> : ''}
-          />
-        }
-        openTitle={<ItemTitle open {...titleProps} />}
-      >
-        {content}
-      </Collapse>
-    )
-  }
-
-  //otherwise just return the content
-  return content
+  return <SubAccordion items={content.filter((item) => item !== null)} />
 }

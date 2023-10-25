@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Photo par <a href='https://stock.tookapic.com/jenniferforjoy' target='_BLANK' rel='nofollow'>Jennifer</a>"
 date: "2017-06-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/952f714d11203d03a449895053c63963b0c02dbd-2000x1126.jpg"
 intro: "Lorsque nous avons sorti freesewing core à la fin du mois de mars, mon attention s'est immédiatement portée sur la construction de notre front-end afin que freesewing.org puisse remplacer complètement makemypattern.com ."
 title: "Nous sommes JAMstack, nous sommes JAMstack, nous sommes JAMstack, nous sommes JAMstack, nous sommes JAMstack, nous sommes JAMstack, nous sommes JAMstack, nous sommes JAMstack, et j'espère que tu aimes aussi JAMstack."
 ---

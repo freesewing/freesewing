@@ -8,6 +8,6 @@ Because a shoulder is more rounded at the front of the body than the back, the f
 
 Цей параметр контролює, на скільки саме.
 
-## Вплив цієї опції на шаблон
 
-![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bent_frontarmholedeeper_sample.svg "Вплив цієї опції на шаблон")
+
+

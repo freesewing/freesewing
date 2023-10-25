@@ -2,4 +2,7 @@
 title: "Sven, der Pullover"
 ---
 
-<PatternDocs pattern='sven' />
+
+
+<DesignInfo design='sven' docs />
+

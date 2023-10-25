@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { Algolia } from 'shared/components/sponsors/algolia.mjs'
 import { Bugsnag } from 'shared/components/sponsors/bugsnag.mjs'
 import { Crowdin } from 'shared/components/sponsors/crowdin.mjs'

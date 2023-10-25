@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "We love the pattern choices"
 date: "2023-05-03"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d80184b7b5847dcd35f73b4381934246594b5634-3968x2232.jpg"
 intro: "The maker of these Bruce boxer briefs says they will be making even more pairs!"
 title: "Two Bruce boxer briefs"
 designs: ["bruce"]

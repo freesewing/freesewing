@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Foto de Alex Andrews de Pexels"
 date: "2020-09-09"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8bee0b9035162c14da54744b24539e56a8e16e27-2000x1500.jpg"
 intro: "Hace un tiempo alguien preguntó si teníamos un patrón de camiseta en freesewing.org y resulta que no."
 title: "FreeSewing 2.9 trae nuestro patrón de camiseta Teagan"
 ---

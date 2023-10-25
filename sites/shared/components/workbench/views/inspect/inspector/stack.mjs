@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { Stack as ShowStack, utils } from 'pkgs/react-components/src/index.mjs'
 import { pointCoords, KeyValTable } from './shared.mjs'
 import { TrashIcon, PrintIcon, SearchIcon } from 'shared/components/icons.mjs'

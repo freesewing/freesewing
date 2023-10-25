@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Abierto 24/7 a partir de ahora"
 date: "2017-08-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/444b63db2120d50eb52004b2017c992624bbb66e-2000x1333.jpg"
 intro: "Freesewing.org está abierto al público. Es decir, el negocio de regalar patrones de costura gratuitos"
 title: "Freesewing.org está abierto al público. Es decir, el negocio de regalar patrones de costura gratuitos"
 ---

@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "La costurera estaba contenta con sus resultados"
 date: "2022-06-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/433aa6299949881aa53c46f8778661ecf25ac893-1265x1686.jpg"
 intro: "Un fabricante de FreeSewing compartió esta versión del bloque del cuerpo Noble."
 title: "Una prueba casual de Noble"
 designs:

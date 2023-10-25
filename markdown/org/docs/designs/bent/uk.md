@@ -2,4 +2,7 @@
 title: "Викрійка-основа Бент"
 ---
 
-<PatternDocs pattern='bent' />
+
+
+<DesignInfo design='bent' docs />
+

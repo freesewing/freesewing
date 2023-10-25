@@ -2,4 +2,4 @@
 title: "Cornelius fietsbroek: Vereiste maten"
 ---
 
-<PatternMeasurements pattern='cornelius' />
+<DesignMeasurements design='cornelius' />

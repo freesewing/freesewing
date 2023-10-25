@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Je creuse ce look."
 date: "2018-02-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4812bf0a9667224088fe258addf79f4e21ab9170-1080x1350.jpg"
 intro: "Cette image provient du fil Instagram de Gillian ."
 title: "Un Hugo sur le thème des quatre fantastiques"
 designs:

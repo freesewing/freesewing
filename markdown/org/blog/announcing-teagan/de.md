@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Foto von Alex Andrews von Pexels"
 date: "09.09.2020"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8bee0b9035162c14da54744b24539e56a8e16e27-2000x1500.jpg"
 intro: "Vor einiger Zeit fragte jemand, ob wir ein T-Shirt-Muster auf freesewing.org hatten und es stellte sich heraus, dass wir das nicht hatten."
 title: "FreeSewing 2.9 bringt unser T-Shirt-Muster Teagan"
 ---

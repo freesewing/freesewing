@@ -2,7 +2,6 @@
 maker: "étoile"
 caption: "Un commentateur dans Discord a dit que cette image ressemblait à un lit... de rien."
 date: "19-12-2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/35c073767eaf563d5550012e4ca217c8efd80a44-5184x3888.jpg"
 intro: "Starf a réalisé cette superbe version de Bruce avec un renflement réglé sur 0 % !"
 title: "Un Bruce à façade plate"
 designs:

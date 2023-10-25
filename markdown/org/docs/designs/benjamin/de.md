@@ -2,4 +2,7 @@
 title: "Benjamin, die Fliege"
 ---
 
-<PatternDocs pattern='benjamin' />
+
+
+<DesignInfo design='benjamin' docs />
+

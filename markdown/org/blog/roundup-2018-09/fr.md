@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ton arrière-plan de connexion pour le mois d'octobre"
 date: "2018-09-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b5a652991874d5eb4b6aa694653fcc483330a49d-1920x1280.jpg"
 intro: "Tour d'horizon mensuel - septembre 2018 : Shin, des tonnes de JavaScript, et une longue liste TODO."
 title: "Tour d'horizon mensuel - septembre 2018 : Shin, des tonnes de JavaScript, et une longue liste TODO."
 ---

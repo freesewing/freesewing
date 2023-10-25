@@ -3,12 +3,11 @@ import { backBase } from './backbase.mjs'
 import { backVent, backVentLength } from './options.mjs'
 
 function jaegerSide({
-  paperless,
   sa,
   snippets,
   Snippet,
+  store,
   utils,
-  complete,
   points,
   measurements,
   options,
@@ -86,79 +85,94 @@ function jaegerSide({
     .line(points.sideHem)
 
   paths.seam = paths.saBase.clone().join(paths.hemBase).close().attr('class', 'fabric')
+  if (sa)
+    paths.sa = paths.saBase
+      .clone()
+      .offset(sa)
+      .join(paths.hemBase.offset(sa * 3))
+      .close()
+      .attr('class', 'fabric sa')
 
-  if (complete) {
-    // Logo
-    points.logo = points.sideHips.shiftFractionTowards(points.bsHips, 0.5)
-    snippets.logo = new Snippet('logo', points.logo)
-    // Notches
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['sideWaist', 'bsWaist'],
-    })
-    points.title = points.sideWaistCp2.shiftFractionTowards(points.bsWaistCp2, 0.5)
-    macro('title', {
-      at: points.title,
-      nr: 3,
-      title: 'side',
-    })
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut([
+    { cut: 2, from: 'fabric' },
+    { cut: 2, from: 'lining' },
+  ])
 
-    if (sa) {
-      paths.sa = paths.saBase
-        .clone()
-        .offset(sa)
-        .join(paths.hemBase.offset(sa * 3))
-        .close()
-        .attr('class', 'fabric sa')
-    }
+  // Logo
+  points.logo = points.sideHips.shiftFractionTowards(points.bsHips, 0.5)
+  snippets.logo = new Snippet('logo', points.logo)
 
-    if (paperless) {
-      macro('ld', {
-        from: points.sideWaist,
-        to: points.bsWaist,
-      })
-      macro('hd', {
-        from: points.sideHem,
-        to: points.bsHem,
-        y: points.sideHem.y + 3 * sa + 15,
-      })
-      macro('hd', {
-        from: points.fsArmhole,
-        to: points.bsArmholeHollow,
-        y: points.bsArmholeHollow.y - sa - 15,
-      })
-      macro('vd', {
-        from: points.bsHem,
-        to: points.bsHips,
-        x: points.bsHips.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.bsHem,
-        to: points.bsWaist,
-        x: points.bsHips.x + sa + 30,
-      })
-      macro('vd', {
-        from: points.bsHem,
-        to: points.bsArmholeHollow,
-        x: points.bsHips.x + sa + 45,
-      })
-      macro('vd', {
-        from: points.sideHem,
-        to: points.bsArmholeHollow,
-        x: points.bsHips.x + sa + 60,
-      })
-      macro('vd', {
-        from: points.sideHem,
-        to: points.sideWaist,
-        x: points.sideHem.x - sa - 15,
-      })
-      macro('vd', {
-        from: points.sideWaist,
-        to: points.fsArmhole,
-        x: points.sideHem.x - sa - 15,
-      })
-    }
-  }
+  // Notches
+  snippets.sideNotchFront = new Snippet('notch', points.sideWaist)
+  snippets.sideNotchBack = new Snippet('bnotch', points.bsWaist)
+
+  // Title
+  points.title = points.sideWaistCp2.shiftFractionTowards(points.bsWaistCp2, 0.5)
+  macro('title', {
+    at: points.title,
+    nr: 3,
+    title: 'side',
+    align: 'center',
+  })
+
+  // Dimensions
+  macro('ld', {
+    id: 'wAtWaist',
+    from: points.sideWaist,
+    to: points.bsWaist,
+  })
+  macro('hd', {
+    id: 'wAtHem',
+    from: points.sideHem,
+    to: points.bsHem,
+    y: points.sideHem.y + 3 * sa + 15,
+  })
+  macro('hd', {
+    id: 'wAtTop',
+    from: points.fsArmhole,
+    to: points.bsArmholeHollow,
+    y: points.bsArmholeHollow.y - sa - 15,
+  })
+  macro('vd', {
+    id: 'hBackHemToHips',
+    from: points.bsHem,
+    to: points.bsHips,
+    x: points.bsHips.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hBackHemToWaist',
+    from: points.bsHem,
+    to: points.bsWaist,
+    x: points.bsHips.x + sa + 30,
+  })
+  macro('vd', {
+    id: 'hBackHemToArmhole',
+    from: points.bsHem,
+    to: points.bsArmholeHollow,
+    x: points.bsHips.x + sa + 45,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.sideHem,
+    to: points.bsArmholeHollow,
+    x: points.bsHips.x + sa + 60,
+  })
+  macro('vd', {
+    from: points.sideHem,
+    id: 'hFrontHemToWaist',
+    to: points.sideWaist,
+    x: points.sideHem.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hFrontWaistToArmhole',
+    from: points.sideWaist,
+    to: points.fsArmhole,
+    x: points.sideHem.x - sa - 15,
+  })
 
   return part
 }

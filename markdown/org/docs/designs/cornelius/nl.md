@@ -2,4 +2,7 @@
 title: "Cornelius fietsen boren"
 ---
 
-<PatternDocs pattern='cornelius' />
+
+
+<DesignInfo design='cornelius' docs />
+

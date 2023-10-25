@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Sie sind aus schwarzem T-Shirt-Stoff, den sie selbst gefärbt und mit Wüstenpflanzen gestaltet hat."
 date: "2018-01-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e8834593713a2a6e4903d53e789b430449f947a-1280x960.jpg"
 intro: "Bleich gefärbter Bruce von Reanna"
 title: "Bleich gefärbter Bruce von Reanna"
 designs:

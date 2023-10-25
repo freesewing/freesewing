@@ -1,5 +1,7 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import axios from 'axios'
 import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
+import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useMemo } from 'react'
 
 /*
@@ -7,8 +9,11 @@ import { useMemo } from 'react'
  */
 const apiHandler = axios.create({
   baseURL: freeSewingConfig.backend,
-  timeout: 3000,
+  timeout: 6660,
 })
+
+const auth = (token) =>
+  token ? { headers: { Authorization: 'Bearer ' + token } } : { headers: {} }
 
 /*
  * This api object handles async code for different HTTP methods
@@ -27,6 +32,15 @@ const api = {
     let result
     try {
       result = await apiHandler.post(uri, data, config)
+      return result
+    } catch (err) {
+      return err
+    }
+  },
+  put: async (uri, data = null, config = {}) => {
+    let result
+    try {
+      result = await apiHandler.put(uri, data, config)
       return result
     } catch (err) {
       return err
@@ -63,6 +77,15 @@ const responseHandler = (response, expectedStatus = 200, expectData = true) => {
     return { success: true, response }
   }
 
+  // Unpack axios errors
+  if (response?.name === 'AxiosError')
+    return {
+      success: false,
+      status: response.response?.status,
+      data: response.response?.data,
+      error: response.message,
+    }
+
   return { success: false, response }
 }
 
@@ -75,6 +98,20 @@ function Backend(auth) {
  */
 Backend.prototype.signUp = async function ({ email, language }) {
   return responseHandler(await api.post('/signup', { email, language }), 201)
+}
+
+/*
+ * backend.oauthInit: Init Oauth flow for oauth provider
+ */
+Backend.prototype.oauthInit = async function ({ provider, language }) {
+  return responseHandler(await api.post('/signin/oauth/init', { provider, language }))
+}
+
+/*
+ * backend.oauthSignIn: User sign in via oauth provider
+ */
+Backend.prototype.oauthSignIn = async function ({ state, code, provider }) {
+  return responseHandler(await api.post('/signin/oauth', { state, code, provider }))
 }
 
 /*
@@ -114,6 +151,13 @@ Backend.prototype.updateAccount = async function (data) {
 }
 
 /*
+ * Update consent (uses the jwt-guest middleware)
+ */
+Backend.prototype.updateConsent = async function (consent) {
+  return responseHandler(await api.patch(`/consent/jwt`, { consent }, this.auth))
+}
+
+/*
  * Checks whether a username is available
  */
 Backend.prototype.isUsernameAvailable = async function (username) {
@@ -149,22 +193,92 @@ Backend.prototype.confirmMfa = async function (data) {
  * Disable MFA
  */
 Backend.prototype.disableMfa = async function (data) {
-  return responseHandler(
-    await await api.post(`/account/mfa/jwt`, { ...data, mfa: false }, this.auth)
-  )
+  return responseHandler(await api.post(`/account/mfa/jwt`, { ...data, mfa: false }, this.auth))
 }
 
 /*
  * Reload account
  */
 Backend.prototype.reloadAccount = async function () {
-  return responseHandler(await await api.get(`/whoami/jwt`, this.auth))
+  return responseHandler(await api.get(`/whoami/jwt`, this.auth))
 }
+
+/*
+ * Export account data
+ */
+Backend.prototype.exportAccount = async function () {
+  return responseHandler(await api.get(`/account/export/jwt`, this.auth))
+}
+
+/*
+ * Restrict processing of account data
+ */
+Backend.prototype.restrictAccount = async function () {
+  return responseHandler(await api.get(`/account/restrict/jwt`, this.auth))
+}
+
+/*
+ * Remove account
+ */
+Backend.prototype.restrictAccount = async function () {
+  return responseHandler(await api.delete(`/account/jwt`, this.auth))
+}
+
+/*
+ * Load all user data
+ */
+Backend.prototype.getUserData = async function (uid) {
+  return responseHandler(await api.get(`/users/${uid}/jwt`, this.auth))
+}
+
+/*
+ * Load user profile
+ */
+Backend.prototype.getProfile = async function (uid) {
+  return responseHandler(await api.get(`/users/${uid}`))
+}
+
+/*
+ * Create bookmark
+ */
+Backend.prototype.createBookmark = async function (data) {
+  return responseHandler(await api.post(`/bookmarks/jwt`, data, this.auth), 201)
+}
+
+/*
+ * Get bookmark
+ */
+Backend.prototype.getBookmark = async function (id) {
+  return responseHandler(await api.get(`/bookmarks/${id}/jwt`, this.auth))
+}
+/*
+ * Get bookmarks
+ */
+Backend.prototype.getBookmarks = async function () {
+  return responseHandler(await api.get(`/bookmarks/jwt`, this.auth))
+}
+
+/*
+ * Remove bookmark
+ */
+Backend.prototype.removeBookmark = async function (id) {
+  const response = await api.delete(`/bookmarks/${id}/jwt`, this.auth)
+
+  return response && response.status === 204 ? true : false
+}
+
 /*
  * Create API key
  */
 Backend.prototype.createApikey = async function (data) {
   return responseHandler(await api.post(`/apikeys/jwt`, data, this.auth), 201)
+}
+
+/*
+ * Get API key
+ */
+Backend.prototype.getApikey = async function (id) {
+  return responseHandler(await api.get(`/apikeys/${id}/jwt`, this.auth))
 }
 
 /*
@@ -198,6 +312,13 @@ Backend.prototype.getSet = async function (id) {
 }
 
 /*
+ * Get public measurements set
+ */
+Backend.prototype.getPublicSet = async function (id) {
+  return responseHandler(await api.get(`/sets/${id}.json`))
+}
+
+/*
  * Create measurements set
  */
 Backend.prototype.createSet = async function (data) {
@@ -228,10 +349,40 @@ Backend.prototype.getCuratedSets = async function () {
 }
 
 /*
+ * Get measurements sets suggested for curation
+ */
+Backend.prototype.getSuggestedSets = async function () {
+  return responseHandler(await api.get(`/suggested-sets/jwt`, this.auth))
+}
+
+/*
+ * Get option packs suggested for curation
+ */
+Backend.prototype.getSuggestedPacks = async function () {
+  return responseHandler(await api.get(`/suggested-packs/jwt`, this.auth))
+}
+
+/*
+ * Remove suggested measurements set
+ */
+Backend.prototype.removeSuggestedMeasurementsSet = async function (id) {
+  const response = await api.delete(`/suggested-sets/${id}/jwt`, this.auth)
+
+  return response && response.status === 204 ? true : false
+}
+
+/*
  * Get curated measurements set
  */
 Backend.prototype.getCuratedSet = async function (id) {
   return responseHandler(await api.get(`/curated-sets/${id}`))
+}
+
+/*
+ * Generic update curated measurements set method
+ */
+Backend.prototype.updateCuratedSet = async function (id, data) {
+  return responseHandler(await api.patch(`/curated-sets/${id}/jwt`, data, this.auth))
 }
 
 /*
@@ -248,6 +399,13 @@ Backend.prototype.removeCuratedMeasurementsSet = async function (id) {
  */
 Backend.prototype.getPattern = async function (id) {
   return responseHandler(await api.get(`/patterns/${id}/jwt`, this.auth))
+}
+
+/*
+ * Get public pattern
+ */
+Backend.prototype.getPublicPattern = async function (id) {
+  return responseHandler(await api.get(`/patterns/${id}.json`))
 }
 
 /*
@@ -288,6 +446,32 @@ Backend.prototype.createIssue = async function (data) {
 }
 
 /*
+ * Create GitHub discussion
+ */
+Backend.prototype.createDiscussion = async function (data) {
+  return responseHandler(await api.post(`/discussions`, data), 201)
+}
+
+/*
+ * Check whether a slug is available
+ */
+Backend.prototype.isSlugAvailable = async function ({ slug, type }) {
+  const response = await api.get(`/slugs/${type}/${slug}/jwt`, this.auth)
+
+  // 404 means username is available, which is success in this case
+  return response.status === 200
+    ? { success: false, available: false, response }
+    : { success: true, data: false, available: true, response }
+}
+
+/*
+ * Create showcase/blog post (pull request)
+ */
+Backend.prototype.createPost = async function (type, data) {
+  return responseHandler(await api.post(`/flows/pr/${type}/jwt`, data, this.auth), 201)
+}
+
+/*
  * Send translation invite
  */
 Backend.prototype.sendTranslatorInvite = async function (language) {
@@ -301,18 +485,125 @@ Backend.prototype.sendLanguageSuggestion = async function (data) {
   return responseHandler(await api.post(`/flows/language-suggestion/jwt`, data, this.auth))
 }
 
-export function useBackend(token = false) {
+/*
+ * Subscribe to newsletter
+ */
+Backend.prototype.newsletterSubscribe = async function ({ email, language }) {
+  return responseHandler(await api.post('/subscriber', { email, language }))
+}
+
+/*
+ * Confirm newsletter subscribe
+ */
+Backend.prototype.confirmNewsletterSubscribe = async function ({ id, ehash }) {
+  return responseHandler(await api.put('/subscriber', { id, ehash }))
+}
+
+/*
+ * Confirm newsletter unsubscribe
+ */
+Backend.prototype.confirmNewsletterUnsubscribe = async function ({ id, ehash }) {
+  return responseHandler(await api.delete(`/subscriber/${id}/${ehash}`))
+}
+
+/*
+ * Upload an image
+ */
+Backend.prototype.uploadImage = async function (body) {
+  return responseHandler(await api.post('/images/jwt', body, this.auth))
+}
+
+/*
+ * Upload an image anonymously
+ */
+Backend.prototype.uploadAnonImage = async function (body) {
+  return responseHandler(await api.post('/images', body))
+}
+
+/*
+ * Remove an (uploaded) image
+ */
+Backend.prototype.removeImage = async function (id) {
+  return responseHandler(await api.delete(`/images/${id}/jwt`, this.auth))
+}
+
+/*
+ * Suggest a measurements set for curation
+ */
+Backend.prototype.suggestCset = async function (data) {
+  return responseHandler(await api.post(`/curated-sets/suggest/jwt`, data, this.auth))
+}
+
+/*
+ * Suggest an option pack
+ */
+Backend.prototype.suggestOpack = async function (data) {
+  return responseHandler(await api.post(`/option-packs/suggest/jwt`, data, this.auth))
+}
+
+/*
+ * Create a curated set from a suggested set
+ */
+Backend.prototype.csetFromSuggestedSet = async function (id) {
+  return responseHandler(await api.post(`/curated-sets/from/${id}/jwt`, {}, this.auth))
+}
+
+/*
+ * Ping backend to see if current token is still valid
+ */
+Backend.prototype.ping = async function () {
+  return responseHandler(await api.get(`/whoami/jwt`, this.auth))
+}
+
+/*
+ * Search user (admin method)
+ */
+Backend.prototype.adminSearchUsers = async function (q) {
+  return responseHandler(await api.post('/admin/search/users/jwt', { q }, this.auth))
+}
+
+/*
+ * Load user (admin method)
+ */
+Backend.prototype.adminLoadUser = async function (id) {
+  return responseHandler(await api.get(`/admin/user/${id}/jwt`, this.auth))
+}
+
+/*
+ * Update user (admin method)
+ */
+Backend.prototype.adminUpdateUser = async function ({ id, data }) {
+  return responseHandler(await api.patch(`/admin/user/${id}/jwt`, data, this.auth))
+}
+
+/*
+ * Impersonate user (admin method)
+ */
+Backend.prototype.adminImpersonateUser = async function (id) {
+  return responseHandler(await api.get(`/admin/impersonate/${id}/jwt`, this.auth))
+}
+
+/*
+ * Verify an admin account while impersonating another user
+ */
+Backend.prototype.adminPing = async function (token) {
+  return responseHandler(await api.get(`/whoami/jwt`, auth(token)))
+}
+
+/*
+ * Migrate a v2 account
+ */
+Backend.prototype.migrate = async function (data) {
+  return responseHandler(await api.post(`/migrate`, data))
+}
+
+export function useBackend() {
+  const { token } = useAccount()
+
   /*
    * This backend object is what we'll end up returning
    */
-  const backend = useMemo(() => {
-    /*
-     * Set up authentication headers
-     */
-    const auth = token ? { headers: { Authorization: 'Bearer ' + token } } : {}
-
-    return new Backend(auth)
-  }, [token])
+  const backend = useMemo(() => new Backend(auth(token)), [token])
 
   return backend
 }

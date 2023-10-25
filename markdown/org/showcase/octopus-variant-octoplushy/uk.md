@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "Це варіант восьминога, представлений з оригінальними Octoplushy та Hi"
 date: "2022-09-03"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/862b0a096d69cfcee0b54347f4cff56dc8f4da73-3024x4032.jpg"
 intro: "\"Восьминіг\" варіант Octoplushy"
 title: "\"Восьминіг\" варіант Octoplushy"
 designs:

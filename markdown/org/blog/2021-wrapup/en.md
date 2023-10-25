@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Picture by Snapwire - Via pexels.com"
 date: "2022-01-01"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/33d380890b215e6fc9c698b57469fdd0c24acc44-3072x2304.jpg"
 intro: "I'm not going to do a whole blog post about 2021 stuff because I feel like most of us just sorta want to move on and forget about it, but if you were looking for a longer read, then here's the table of content of our latest newsletter edition that also went out today:"
 title: "2021 wrap-up: A new FreeSewing.dev and announcing our bug bounty program"
 ---

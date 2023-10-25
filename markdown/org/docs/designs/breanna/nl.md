@@ -2,4 +2,7 @@
 title: "Breanna basispatroon"
 ---
 
-<PatternDocs pattern='breanna' />
+
+
+<DesignInfo design='breanna' docs />
+

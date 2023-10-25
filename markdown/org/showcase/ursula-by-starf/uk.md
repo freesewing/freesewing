@@ -2,7 +2,6 @@
 maker: "Старф"
 caption: "Урсула Пік feat. наклейка FreeSewing"
 date: "2021-10-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7122df4542178bb30f451685da54b78c7c97407c-4698x3523.jpg"
 intro: "Starf зробив Урсулу - з чудовим вибором кольорів - і поділився цією чудовою фотографією з наліпкою FreeSewing, яку вони отримали як патрон FreeSewing."
 title: "Урсула від Starf"
 designs:

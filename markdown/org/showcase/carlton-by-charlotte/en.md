@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "A classy Carlton coat by Charlotte"
 date: "2021-06-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8954b27fb2e27a99aeff6b28baba29a342f3ccff-640x586.jpg"
 intro: "We adore this classy Carlton coat by Charlotte."
 title: "Carlton by Charlotte"
 designs: ["carlton"]

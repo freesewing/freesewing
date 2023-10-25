@@ -2,7 +2,6 @@
 maker: "Hellgy"
 caption: "Rückansicht des Yuri Hoodies"
 date: "2021-09-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/af8e14596c0112734fb14e4a838853fb9dc0ac8a-1899x1266.jpg"
 intro: "Das sind Bilder des originalen Yuri Hoody des Designers Hellgy, der einen Hoodie machen wollte, der ohne Reißverschlüsse auskommt."
 title: "Der originale Juri von seinem Designer"
 designs:

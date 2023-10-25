@@ -2,4 +2,7 @@
 title: "Bent, ein Grundschnitt"
 ---
 
-<PatternDocs pattern='bent' />
+
+
+<DesignInfo design='bent' docs />
+

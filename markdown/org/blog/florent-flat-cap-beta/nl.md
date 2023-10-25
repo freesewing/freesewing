@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Quentin omringd door onze toekomstige robotoverheersers."
 date: "2017-12-06"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ee5c11e3b29fe788dae470ab0e20396d806c4d1b-2000x1333.jpg"
 intro: "Het Florent Flat Cap patroon is nu beschikbaar in bèta. Dat is nog eens een cadeau gesorteerd."
 title: "Het Florent Flat Cap patroon is nu beschikbaar in bèta. Dat is nog eens een cadeau gesorteerd."
 ---

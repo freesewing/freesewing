@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Tu fondo de conexión para octubre"
 date: "2018-09-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b5a652991874d5eb4b6aa694653fcc483330a49d-1920x1280.jpg"
 intro: "Resumen mensual - Septiembre de 2018: Shin, un montón de JavaScript y una larga lista de TODO"
 title: "Resumen mensual - Septiembre de 2018: Shin, un montón de JavaScript y una larga lista de TODO"
 ---

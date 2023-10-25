@@ -2,7 +2,6 @@
 maker: "Hellgy"
 caption: "Un sweat à capuche Hugo avec un imprimé en forme de volant."
 date: "12-06-2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a534aefe906da98d816afa76266d97a318821305-598x803.jpg"
 intro: "Hellgy a conquis nos cœurs avec ses créations de sweats à capuche Hugo aux imprimés amusants et joyeux."
 title: "Hugo hoodie by Hellgy"
 designs:

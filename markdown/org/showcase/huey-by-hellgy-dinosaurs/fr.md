@@ -2,7 +2,6 @@
 maker: "Hellgy"
 caption: "Un sweat à capuche Huey avec un imprimé dinosaure."
 date: "06-25-2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3323f7a8888bcf863c2126003b353db443cd1eba-1279x853.jpg"
 intro: "Nous adorons les sweats à capuche Huey de Hellgy et leur excellent choix de tissus. Ce dinosaure a été le favori de la foule sur le Discord de FreeSewing."
 title: "Sweat à capuche Huey par Hellgy"
 designs:

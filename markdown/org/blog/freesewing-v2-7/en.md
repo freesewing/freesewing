@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Photo by Deeana Creates from Pexels"
 date: "2020-07-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f04cc6c50a8e5f08f3ebd6c3d4903fb3055c9a01-1920x1280.jpg"
 intro: "We've just release FreeSewing v2.7 🎉"
 title: "FreeSewing v2.7: Titan, changes to measurements, and a long list of improvements"
 ---
@@ -64,7 +63,7 @@ To get around this, you should probably [reload your account](/account/reload/).
 
 We've made a few changes to the website too. 
 
- - We've added a [pattern notation guide](/docs/various/notation/) to take the guesswork out of what those markings on your pattern mean.
+ - We've added a [pattern notation guide](/docs/about/notation/) to take the guesswork out of what those markings on your pattern mean.
  - We've added a [reload account](/account/actions/reload/) page to help you avoid issues due to cached account data
  - We've changed the styling of the different sizes when you compare a pattern, as well as included a legend showing which outline corresponds to which size.
 

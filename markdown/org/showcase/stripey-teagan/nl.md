@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Prachtige pasvorm en strepen op deze aangepaste Teagan!"
 date: "2023-01-15"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/787622dcb6885cc9a60e3071f92cf4cbe266607a-724x854.jpg"
 intro: "Een FreeSewing gebruiker probeerde Teagan aan te passen en we vinden het resultaat geweldig! Hier is een kleine uitleg over hoe ze haar Teagan heeft ontworpen en de zijnaden heeft gevormd voor een betere pasvorm."
 title: "Een spectaculair gestreepte Teagan"
 designs:

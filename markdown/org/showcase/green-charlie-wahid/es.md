@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Rob en un soleado jardín trasero, vistiendo un Wahid ajustado con doble pechera y pantalones Charlie a juego."
 date: "2023-07-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f007d49c1d688a66f6c2a865b9ac1e08654448f6-1080x1350.jpg"
 intro: "¿Estás de broma? Este dúo de Charlie y Wahid es tan suave y sofisticado que resulta ridículo. Confeccionado con una lana shetland verde en espiga por @sewingdentist en Instagram, nos parece impecable. Puntos extra por la genial modificación de doble botonadura, que puedes ver aún más de cerca a continuación."
 title: "Charlie Verde y Traje Wahid"
 designs:

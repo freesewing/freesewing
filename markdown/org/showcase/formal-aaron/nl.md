@@ -2,7 +2,6 @@
 maker: "Mandarijnhaai"
 caption: "TangerineShark in een formele Aaron, een knalgele broek en het hipste accessoire van allemaal, een ademhalingstoestel"
 date: "2023-01-14"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/86fd2445332cdc1519d2e85e68db7023118643ff-1852x2704.jpg"
 intro: "Een formele Aaron, voor feestjes"
 title: "Een formele Aaron, voor feestjes"
 designs:

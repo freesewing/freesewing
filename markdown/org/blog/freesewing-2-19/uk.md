@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Як історія? Тоді цей реліз буде саме для вас."
 date: "2021-10-17"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/af326b5b6326911272ed989947e8cafe22966019-1920x1280.jpg"
 intro: "Я щойно потягнув за важіль випуску версії 2.19 FreeSewing, і в цьому випуску багато чого змінилося. Повну інформацію ви можете знайти в журналі змін, а тут я розповім про основні моменти:"
 title: "FreeSewing 2.19 приносить Bee, Lunetius, Tiberius, Walburga, новий плагін та купу покращень і виправлень"
 ---

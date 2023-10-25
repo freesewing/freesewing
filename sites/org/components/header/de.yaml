@@ -8,6 +8,5 @@ account: Account
 theme: Theme
 language: Sprache
 search: Suche
-sets: Maße
-patterns: Schnittmuster
-new: Neu
+new: Neu...
+support: Hilfe

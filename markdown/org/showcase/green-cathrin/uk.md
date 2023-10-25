@@ -2,7 +2,6 @@
 maker: "Наталія Саян"
 caption: "Корсет Cathrin з стьобаної бавовни та полотна"
 date: "2021-10-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ac93904c42357ce18237c3ce2c071559e9d185a0-640x1136.png"
 intro: "Зелений 11-панельний корсет Cathrin"
 title: "Зелений 11-панельний корсет Cathrin"
 designs:

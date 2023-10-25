@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ton arrière-plan de connexion pour le mois de novembre"
 date: "30-11-2018"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5be11786eaed9bba641fa66b812a3fc9f68aed1d-1920x1410.jpg"
 intro: "Récapitulatif mensuel - octobre 2018 : Progrès sur beta.freesewing.org"
 title: "Récapitulatif mensuel - octobre 2018 : Progrès sur beta.freesewing.org"
 ---

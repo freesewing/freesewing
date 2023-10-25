@@ -1,22 +1,17 @@
 // Dependencies
-import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { nsMerge } from 'shared/utils.mjs'
+// Hooks
+import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { CurateSets, ns as curateNs } from 'site/components/curate/sets/index.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
+import { AuthWrapper } from 'shared/components/wrappers/auth/index.mjs'
+import { CuratedSetsList } from 'shared/components/curated-sets.mjs'
+import { CsetSubmissions } from 'shared/components/submissions/index.mjs'
 
 // Translation namespaces used on this page
-const namespaces = ['curate', 'sets', ...new Set([...curateNs, ...authNs, ...pageNs])]
-
-/*
- * Some things should never generated as SSR
- * So for these, we run a dynamic import and disable SSR rendering
- */
-const DynamicAuthWrapper = dynamic(
-  () => import('shared/components/wrappers/auth/index.mjs').then((mod) => mod.AuthWrapper),
-  { ssr: false }
-)
+const ns = nsMerge('curate', 'sets', pageNs, authNs)
 
 /*
  * Each page MUST be wrapped in the PageWrapper component.
@@ -25,11 +20,18 @@ const DynamicAuthWrapper = dynamic(
  * or set them manually.
  */
 const CuratorPage = ({ page }) => {
+  const { t } = useTranslation(ns)
+
   return (
-    <PageWrapper {...page}>
-      <DynamicAuthWrapper requiredRole="curator">
-        <CurateSets />
-      </DynamicAuthWrapper>
+    <PageWrapper {...page} title={t('curate:curateSets')}>
+      <AuthWrapper requiredRole="curator">
+        <div className="max-w-6xl">
+          <h2>{t('curate:suggestedSets')}</h2>
+          <CsetSubmissions />
+          <h2>{t('curate:sets')}</h2>
+          <CuratedSetsList href={(id) => `/curate/set?id=${id}`} />
+        </div>
+      </AuthWrapper>
     </PageWrapper>
   )
 }
@@ -39,7 +41,7 @@ export default CuratorPage
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, namespaces)),
+      ...(await serverSideTranslations(locale, ns)),
       page: {
         locale,
         path: ['curate', 'sets'],

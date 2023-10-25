@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Un poco de abrigo"
 date: "2022-02-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/adfb8bb22c40946d7abf48f5362afd4e74c87a39-1512x2016.jpg"
 intro: "Bob3000 hizo este abrigo de tareas tan mono para su hijo. Se basa en el bloque Brian."
 title: "Chaquetón hecho a mano por Bob3000 basado en Brian"
 designs:

@@ -2,7 +2,6 @@
 maker: "TangerineShark"
 caption: "TangerineShark in einem modifizierten Aaron-Kleid"
 date: "2023-01-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/60bf0ea6d52c09618ecd7a59293faaf48da014b0-3024x4032.jpg"
 intro: "Hey! FreeSewing-Benutzer TangerineShark hier! Ich habe dieses Aaron A-Shirt in ein Kleid umgewandelt und verlängert."
 title: "Aaron modifiziert zu einem Kleid"
 designs:
@@ -31,5 +30,5 @@ Es ist besser, etwas länger zu nehmen, als du erwartest, denn es ist einfach, d
 ![Eine Annäherung an das Ergebnis der Änderungen, um das Aaron A-Shirt in ein Aaron Kleid zu verwandeln.](https://posts.freesewing.org/uploads/teagan_dress_481cb6b7b9.svg)
 
 ### Jetzt kommt der einfache Teil!
-Du kannst einfach der [Montageanleitung für Aaron](https://freesewing.org/docs/patterns/aaron/instructions/)folgen, nur mit superlangen Seitennähten. Bevor du dein Kleid säumst, probiere es an! Ich habe meine etwa knöchellang gesäumt, aber experimentiere mit der Saumtiefe. Das ist besonders wichtig, wenn dein Stoff dehnbar oder fließend ist, da er sich länger dehnen kann, als du erwartest.
+Du kannst einfach der [Montageanleitung für Aaron](/docs/designs/aaron/instructions/)folgen, nur mit superlangen Seitennähten. Bevor du dein Kleid säumst, probiere es an! Ich habe meine etwa knöchellang gesäumt, aber experimentiere mit der Saumtiefe. Das ist besonders wichtig, wenn dein Stoff dehnbar oder fließend ist, da er sich länger dehnen kann, als du erwartest.
 

@@ -1023,6 +1023,51 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "compilin",
+      "name": "Lin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40794281?v=4",
+      "profile": "https://github.com/compilin",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "evilrobotfromouterspace",
+      "name": "evilrobotfromouterspace",
+      "avatar_url": "https://avatars.githubusercontent.com/u/143673955?v=4",
+      "profile": "https://github.com/evilrobotfromouterspace",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "iambijayd",
+      "name": "Bijay Dulal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/110587589?v=4",
+      "profile": "https://github.com/iambijayd",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "TheTanay902",
+      "name": "Tanay Toshniwal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/84577440?v=4",
+      "profile": "https://github.com/TheTanay902",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "biswassushmita947",
+      "name": "Sushmita Biswas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/145688707?v=4",
+      "profile": "https://github.com/biswassushmita947",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true,

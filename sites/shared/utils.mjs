@@ -1,8 +1,26 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import tlds from 'tlds/index.json' assert { type: 'json' }
+import _slugify from 'slugify'
 import get from 'lodash.get'
 import set from 'lodash.set'
 import orderBy from 'lodash.orderby'
 import unset from 'lodash.unset'
+import { cloudflareConfig } from './config/cloudflare.mjs'
+import { mergeOptions } from '@freesewing/core'
+
+const slugifyConfig = {
+  replacement: '-', // replace spaces with replacement character, defaults to `-`
+  remove: undefined, // remove characters that match regex, defaults to `undefined`
+  lower: true, // convert to lower case, defaults to `false`
+  strict: true, // strip special characters except replacement, defaults to `false`
+  locale: 'en', // language code of the locale to use
+  trim: true, // trim leading and trailing replacement chars, defaults to `true`
+}
+
+// Slugify a string
+export const slugify = (input) => _slugify(input, slugifyConfig)
+// Slugify a string, but don't trim it. Handy when slugifying user input
+export const slugifyNoTrim = (input) => _slugify(input, { ...slugifyConfig, trim: false })
 
 // Method that returns a unique ID when all you need is an ID
 // but you can't be certain you have one
@@ -73,7 +91,7 @@ export const formatFraction128 = (fraction, format = 'html') => {
 // Format can be html, notags, or anything else which will only return numbers
 export const formatMm = (val, units, format = 'html') => {
   val = roundMm(val)
-  if (units === 'imperial') {
+  if (units === 'imperial' || units === true) {
     if (val == 0) return formatImperial('', 0, false, false, format)
 
     let fraction = val / 25.4
@@ -100,41 +118,6 @@ export const optionType = (option) => {
 
 export const capitalize = (string) =>
   typeof string === 'string' ? string.charAt(0).toUpperCase() + string.slice(1) : ''
-
-export const strapiImage = (
-  img,
-  sizes = ['thumbnail', 'xlarge', 'large', 'medium', 'small', 'xsmall']
-) => {
-  const image = {
-    caption: img.caption || '',
-    w: img.width,
-    h: img.height,
-    url: img.url,
-    sizes: {},
-  }
-  for (const size of sizes) {
-    if (img.formats[size])
-      image.sizes[size] = {
-        w: img.formats[size].width,
-        h: img.formats[size].height,
-        url: img.formats[size].url,
-      }
-  }
-
-  // Some images only have a small original, and thus no (resized) sizes
-  // In that case, return the original for the requested size
-  if (Object.keys(image.sizes).length < 1) {
-    for (const size of sizes) {
-      image.sizes[size] = {
-        w: img.width,
-        h: img.height,
-        url: img.url,
-      }
-    }
-  }
-
-  return image
-}
 
 export const getCrumbs = (app, slug = false) => {
   if (!slug) return null
@@ -206,7 +189,7 @@ export const measurementAsMm = (value, units = 'metric') => {
   }
 }
 
-export const optionsMenuStructure = (options) => {
+export const optionsMenuStructure = (options, settings) => {
   if (!options) return options
   const sorted = {}
   for (const [name, option] of Object.entries(options)) {
@@ -220,7 +203,17 @@ export const optionsMenuStructure = (options) => {
       const oType = optionType(option)
       option.dflt = option.dflt || option[oType]
       if (oType === 'pct') option.dflt /= 100
+      if (typeof option.menu === 'function')
+        option.menu = option.menu(settings, mergeOptions(settings, options))
       if (option.menu) {
+        // Handle nested groups that don't have any direct children
+        if (option.menu.includes('.')) {
+          let menuPath = []
+          for (const chunk of option.menu.split('.')) {
+            menuPath.push(chunk)
+            set(menu, `${menuPath.join('.')}.isGroup`, true)
+          }
+        }
         set(menu, `${option.menu}.isGroup`, true)
         set(menu, `${option.menu}.${option.name}`, option)
       } else if (typeof option.menu === 'undefined') {
@@ -278,20 +271,22 @@ export const nsMerge = (...args) => {
     if (typeof arg === 'string') ns.add(arg)
     else if (Array.isArray(arg)) {
       for (const el of nsMerge(...arg)) ns.add(el)
-    } else console.log('Unexpected namespect type:', { arg })
+    }
   }
 
   return [...ns]
 }
 
-export const shortDate = (locale = 'en', timestamp = false) => {
+export const shortDate = (locale = 'en', timestamp = false, withTime = true) => {
   const options = {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-    hour12: false,
+  }
+  if (withTime) {
+    options.hour = '2-digit'
+    options.minute = '2-digit'
+    options.hour12 = false
   }
   const ts = timestamp ? new Date(timestamp) : new Date()
 
@@ -386,3 +381,113 @@ export const isSlugPart = (part, slug) => slug && part && slug.slice(0, part.len
  * Expects a slug with no leading slash
  * */
 export const localePath = (locale, slug) => (locale === 'en' ? '/' : `/${locale}/`) + slug
+
+/*
+ * Formats a number for display to human beings. Keeps long/high numbers short
+ */
+export const formatNumber = (num, suffix = '') => {
+  if (num === null || typeof num === 'undefined') return num
+  // Small values don't get formatted
+  if (num < 1) return num
+  if (num) {
+    const sizes = ['', 'K', 'M', 'B']
+    const i = Math.min(
+      parseInt(Math.floor(Math.log(num) / Math.log(1000)).toString(), 10),
+      sizes.length - 1
+    )
+    return `${(num / 1000 ** i).toFixed(i ? 1 : 0)}${sizes[i]}${suffix}`
+  }
+
+  return '0'
+}
+
+/*
+ * Returns the URL of a cloudflare image
+ * based on the ID and Variant
+ */
+export const cloudflareImageUrl = ({ id = 'default-avatar', variant = 'public' }) => {
+  /*
+   * Return something default so that people will actually change it
+   */
+  if (!id || id === 'default-avatar') return cloudflareConfig.dflt
+
+  /*
+   * If the variant is invalid, set it to the smallest thumbnail so
+   * people don't load enourmous images by accident
+   */
+  if (!cloudflareConfig.variants.includes(variant)) variant = 'sq100'
+
+  return `${cloudflareConfig.url}${id}/${variant}`
+}
+
+/*
+ * Parses value that should be a distance (cm or inch)
+ */
+export const parseDistanceInput = (val = false, imperial = false) => {
+  // No input is not valid
+  if (!val) return false
+
+  // Cast to string, and replace comma with period
+  val = val.toString().trim().replace(',', '.')
+
+  // Regex pattern for regular numbers with decimal seperator or fractions
+  const regex = imperial
+    ? /^-?[0-9]*(\s?[0-9]+\/|[.])?[0-9]+$/ // imperial (fractions)
+    : /^-?[0-9]*[.]?[0-9]+$/ // metric (no fractions)
+  if (!val.match(regex)) return false
+
+  // if fractions are allowed, parse for fractions, otherwise use the number as a value
+  if (imperial) val = fractionToDecimal(val)
+
+  return isNaN(val) ? false : Number(val)
+}
+
+/*
+ * To spread icon + text horizontal
+ */
+export const horFlexClasses = 'flex flex-row items-center justify-between gap-4 w-full'
+
+/*
+ * To spread icon + text horizontal but only from md upwards
+ */
+export const horFlexClassesNoSm =
+  'md:flex md:flex-row md:items-center md:justify-between md:gap-4 md-w-full'
+
+/*
+ * A method that check that a var is not empty
+ */
+export const notEmpty = (thing) => `${thing}`.length > 0
+
+/*
+ * Generates a random string (used in Oauth flow)
+ */
+const dec2hex = (dec) => dec.toString(16).padStart(2, '0')
+export const randomString = (len = 42) => {
+  if (typeof window === 'undefined') return '' // Not used in SSR
+  const arr = new Uint8Array(len / 2)
+  window.crypto.getRandomValues(arr) // eslint-disable-line
+  return Array.from(arr, dec2hex).join('')
+}
+
+/*
+ * Gets the pattern namespaces based on patternConfig
+ */
+export const patternNsFromPatternConfig = (config) => {
+  const ns = new Set()
+  for (const part of config.draftOrder) ns.add(part.split('.')[0])
+
+  return [...ns]
+}
+
+export const newPatternUrl = ({ design, settings = {}, view = 'draft' }) =>
+  `/new/${design}/#settings=${encodeURIComponent(
+    JSON.stringify(settings)
+  )}&view=${encodeURIComponent('"' + view + '"')}`
+
+export const workbenchHash = ({ settings = {}, view = 'draft' }) =>
+  `#settings=${encodeURIComponent(JSON.stringify(settings))}&view=${encodeURIComponent(
+    '"' + view + '"'
+  )}`
+
+export const getSearchParam = (name = 'id') =>
+  typeof window === 'undefined' ? undefined : new URLSearchParams(window.location.search).get(name)

@@ -2,7 +2,6 @@
 maker: "Зее."
 caption: "Лацерна Зеє"
 date: "2021-11-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c5a6e2b97f8aa58b85fd7eeb29a7aaa8ad2f99c7-3000x4000.jpg"
 intro: "Зе зробила чудову роботу над цією Lunetius lacerna, однією з найновіших моделей FreeSewing. Їхній вибір тканини виглядає чудово, а драпірування надзвичайно приємне. Вони пошили його повністю вручну!"
 title: "Lunetius lacerna ручної роботи Зее"
 designs:

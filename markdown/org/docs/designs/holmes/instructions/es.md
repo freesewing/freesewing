@@ -62,7 +62,7 @@ If you are uncertain about the length you want for you ties take 1 metre (39") o
 <Note>
 
 Las longitudes anteriores son recomendaciones, así que siéntete libre de ir tan largo o corto como quieras con los vínculos.  
-Si lo prefieres, puedes hacer tus corbatas personalizadas con tela, [ver corte Holmes](/docs/patterns/holmes/cutting/) para más información.
+If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/designs/holmes/cutting/) for more info.
 
 </Note>
 

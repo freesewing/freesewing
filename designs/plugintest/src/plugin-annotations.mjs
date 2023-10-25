@@ -1,4 +1,3 @@
-import { annotationsPlugin } from '@freesewing/plugin-annotations'
 import { base } from './base.mjs'
 
 const snippies = [
@@ -41,6 +40,7 @@ const pluginAnnotations = ({
       repeat: options.bannerRepeat,
     })
     macro('bannerbox', {
+      id: 'banner',
       topLeft: points.banner_from,
       bottomRight: points.banner_to,
       text: 'macro = banner',
@@ -53,11 +53,12 @@ const pluginAnnotations = ({
     points.crossbox_a = new Point(0, y)
     points.crossbox_b = new Point(40, y + 33)
     macro('crossbox', {
-      from: points.crossbox_a,
-      to: points.crossbox_b,
+      topLeft: points.crossbox_a,
+      bottomRight: points.crossbox_b,
       text: options.crossboxText ? 'crossbox' : false,
     })
     macro('bannerbox', {
+      id: 'crossbox',
       topLeft: points.crossbox_a,
       bottomRight: points.crossbox_b,
       text: 'macro = crossbox',
@@ -84,6 +85,7 @@ const pluginAnnotations = ({
       ...btOptions,
     })
     macro('bannerbox', {
+      id: 'bartack',
       topLeft: points.bartack,
       bottomRight: points.bartack.shift(0, 15),
       text: 'macro = bartack',
@@ -107,6 +109,7 @@ const pluginAnnotations = ({
       ...btOptions,
     })
     macro('bannerbox', {
+      id: 'bartackalong',
       topLeft: points.bartack_a,
       bottomRight: points.bartack_d,
       text: 'macro = bartackAlong',
@@ -130,6 +133,7 @@ const pluginAnnotations = ({
       ...btOptions,
     })
     macro('bannerbox', {
+      id: 'bartackfractionalong',
       topLeft: points.bartack_e,
       bottomRight: points.bartack_h,
       text: 'macro = bartackFractionAlong',
@@ -142,6 +146,7 @@ const pluginAnnotations = ({
     points.cof_a = new Point(x, y + 10)
     points.cof_b = new Point(x + 93, y + 10)
     macro('cutonfold', {
+      id: 'dfs',
       from: points.cof_a,
       to: points.cof_b,
       margin: options.cutonfoldMargin,
@@ -149,6 +154,7 @@ const pluginAnnotations = ({
       grainline: options.cutonfoldGrainline,
     })
     macro('bannerbox', {
+      id: 'cutonfoldBanner',
       topLeft: points.cof_a.shift(90, 10),
       bottomRight: points.cof_b.shift(90, 10),
       text: 'macro = cutonfold',
@@ -166,6 +172,7 @@ const pluginAnnotations = ({
         .attr('data-rotate', options.snippetRotation)
       x += 20
       macro('bannerbox', {
+        id: snippet,
         topLeft: points[snippet],
         bottomRight: points[snippet],
         text: `snippet = ${snippet}`,
@@ -192,9 +199,11 @@ const pluginAnnotations = ({
       to: points.vd_from,
       from: points.vd_to,
       x: x + 15,
+      force: true,
       ...dimOptions,
     })
     macro('bannerbox', {
+      id: 'vd',
       topLeft: points.vd_from,
       bottomRight: points.vd_to,
       text: 'macro = vd',
@@ -212,9 +221,11 @@ const pluginAnnotations = ({
       from: points.hd_from,
       to: points.hd_to,
       y: y + 10,
+      force: true,
       ...dimOptions,
     })
     macro('bannerbox', {
+      id: 'hd',
       topLeft: points.hd_from,
       bottomRight: points.hd_to.shift(-90, 15),
       text: 'macro = hd',
@@ -231,9 +242,11 @@ const pluginAnnotations = ({
       from: points.ld_from,
       to: points.ld_to,
       y: y + 10,
+      force: true,
       ...dimOptions,
     })
     macro('bannerbox', {
+      id: 'ld',
       topLeft: points.ld_from.shift(90, 10),
       bottomRight: points.ld_to.shift(-90, 5),
       text: 'macro = ld',
@@ -253,16 +266,17 @@ const pluginAnnotations = ({
     macro('pd', {
       path: paths.pd,
       d: 10,
+      force: true,
       ...dimOptions,
     })
     macro('bannerbox', {
+      id: 'pd',
       topLeft: points.pd_from,
       bottomRight: points.pd_to.shift(-90, 23),
       text: 'macro = ld',
       margin,
       ...store.get('bannerbox.macro'),
     })
-
     // macro = grainline
     x = 230
     y -= 20
@@ -270,6 +284,7 @@ const pluginAnnotations = ({
     points.gl_b = new Point(x + 90, y)
     macro('grainline', { from: points.gl_a, to: points.gl_b })
     macro('bannerbox', {
+      id: 'grainline',
       topLeft: points.gl_a,
       bottomRight: points.gl_b,
       text: 'macro = grainline',
@@ -288,6 +303,7 @@ const pluginAnnotations = ({
       reverse: options.pleatReverse,
     })
     macro('bannerbox', {
+      id: 'pleat',
       topLeft: points.pleat_a.shift(-90, 5),
       bottomRight: points.pleat_b.shift(0, 40).shift(90, 5),
       text: 'macro = pleat',
@@ -302,6 +318,7 @@ const pluginAnnotations = ({
       rotate: options.scaleboxRotation,
     })
     macro('bannerbox', {
+      id: 'miniscale',
       topLeft: new Point(303, 133),
       bottomRight: new Point(320, 142),
       text: 'macro = miniscale',
@@ -321,6 +338,7 @@ const pluginAnnotations = ({
     else if (options.scaleboxText === 'suppress') scaleboxOptions.text = ''
     macro('scalebox', scaleboxOptions)
     macro('bannerbox', {
+      id: 'scalebox',
       topLeft: new Point(0, y - 20),
       bottomRight: new Point(95, y + 20),
       text: 'macro = scalebox',
@@ -334,13 +352,14 @@ const pluginAnnotations = ({
     points.st_a = new Point(x - 5, y)
     points.st_b = new Point(x + 35, y + 10)
     points.st_c = new Point(x + 70, y)
-    macro('sewTogether', {
+    macro('sewtogether', {
       from: points.st_a,
       to: points.st_c,
       hinge: options.sewtogetherHinge,
       middle: options.sewtogetherMiddle ? points.st_b : null,
     })
     macro('bannerbox', {
+      id: 'sewtogether',
       topLeft: new Point(x, y - 30),
       bottomRight: new Point(x + 65, y + 10),
       text: 'macro = sewTogether',
@@ -361,20 +380,22 @@ const pluginAnnotations = ({
       scale: options.titleScale,
     })
     macro('bannerbox', {
+      id: 'title',
       topLeft: new Point(x, y - 30),
       bottomRight: new Point(x + 65, y + 35),
       text: 'macro = title',
       ...store.get('bannerbox.macro'),
     })
 
-    points.logo = new Point(40, 40)
+    points.logo = new Point(30, 275)
     snippets.logo = new Snippet('logo', points.logo)
       .attr('data-scale', options.logoScale)
       .attr('data-rotate', options.logoRotate)
 
     macro('bannerbox', {
-      topLeft: new Point(25, 10),
-      bottomRight: new Point(60, 45),
+      id: 'logo',
+      topLeft: new Point(18, 248),
+      bottomRight: new Point(45, 280),
       text: 'snippet = logo',
       ...store.get('bannerbox.snippet'),
     })
@@ -382,7 +403,7 @@ const pluginAnnotations = ({
     // Overarching bannerbox
     macro('bannerbox', {
       topLeft: new Point(-10, -10),
-      bottomRight: new Point(330, 250),
+      bottomRight: new Point(330, 290),
       text: 'plugin = annotations',
       ...store.get('bannerbox.plugin'),
     })
@@ -409,7 +430,7 @@ export const annotations = {
     // Crossbox
     crossboxText: { bool: true, menu: 'annotations.crossboxText' },
     // Cutonfold
-    cutonfoldMargin: { count: 5, min: 0, max: 25, menu: 'annotations.cutonfold' },
+    cutonfoldMargin: { pct: 5, min: 0, max: 25, menu: 'annotations.cutonfold' },
     cutonfoldOffset: { count: 15, min: 0, max: 100, menu: 'annotations.cutonfold' },
     cutonfoldGrainline: { bool: false, menu: 'annotations.cutonfold' },
     // dimension
@@ -417,7 +438,7 @@ export const annotations = {
     dimensionsEndMarker: { bool: true, menu: 'annotations.dimensions' },
     dimensionsStartMarker: { bool: true, menu: 'annotations.dimensions' },
     // Logo
-    logoScale: { pct: 100, min: 10, max: 200, menu: 'annptations.logo' },
+    logoScale: { pct: 100, min: 10, max: 200, menu: 'annotations.logo' },
     logoRotate: { deg: 0, min: -360, max: 360, menu: 'annotations.logo' },
     // Pleat
     pleatMargin: { count: 35, min: 0, max: 50, menu: 'annotations.pleat' },
@@ -442,6 +463,5 @@ export const annotations = {
     snippetScale: { pct: 100, min: 10, max: 200, menu: 'annotations.snippets' },
     snippetRotation: { deg: 0, min: -360, max: 360, menu: 'annotations.snippets' },
   },
-  plugins: annotationsPlugin,
   draft: pluginAnnotations,
 }

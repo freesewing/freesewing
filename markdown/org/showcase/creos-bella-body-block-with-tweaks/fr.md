@@ -2,7 +2,6 @@
 maker: "Creo"
 caption: "Bella avec des ajustements"
 date: "08-08-2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fed29bed9342da4b3d26837c43de5cc08c15c148-1411x1634.jpg"
 intro: "Creo a partagé son bloc corporel Bella dans le chat Discord de FreeSewing. Ils ont fait quelques ajustements pour obtenir un excellent ajustement ! Commentaires sur les ajustements :"
 title: "Le bloc corporel Bella de Creo avec des modifications"
 designs:

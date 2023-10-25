@@ -5,7 +5,7 @@ title: "Noble body block: What You Need"
 To make Noble, you will need the following:
 
 - Basic sewing supplies
-- About 0.5 metres (0.6 yards) of a suitable fabric ([see Noble Fabric options](/docs/patterns/noble/fabric/))
+- About 0.5 metres (0.6 yards) of a suitable fabric ([see Noble Fabric options](/docs/designs/noble/fabric/))
 
 This list is for a default Noble Block. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
 

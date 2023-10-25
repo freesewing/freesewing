@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Je nieuwe inlogachtergrond voor de maand december"
 date: "2017-11-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c9c5c5e10d2ed6e9f2935b047afa76c1ddd7c834-2000x1333.jpg"
 intro: "Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt."
 title: "Maandelijkse samenvatting - november 2017: Benjamin, on-boarding, showcases en onze on-demand tegelzetter"
 ---

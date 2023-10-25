@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Ce Wahid est superbe dans un imprimé avec d'élégants boutons argentés"
 date: "2023-02-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e364e71938c56bba1269b69c6dbabdb1b17c78ed-2320x3088.jpg"
 intro: "Cette utilisatrice de FreeSewing a terminé son premier gilet Wahid, et il s'est avéré génial !"
 title: "Une fenêtre grise Wahid"
 designs:

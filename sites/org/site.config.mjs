@@ -20,8 +20,4 @@ export const siteConfig = {
   languagesWip: [],
   site: 'FreeSewing.org',
   tld: 'org',
-  posts: {
-    preGenerate: 6,
-    perPage: 12,
-  },
 }

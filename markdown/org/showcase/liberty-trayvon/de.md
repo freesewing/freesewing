@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Schöner Stoff und eine toll gemachte Krawatte"
 date: "29.09.2017"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a4df7c8446671138fe4f6e07eebf32058af31999-1080x1080.jpg"
 intro: "Eine Trayvon-Krawatte aus Liberty-Seide von Victoria"
 title: "Eine Trayvon-Krawatte aus Liberty-Seide von Victoria"
 designs:

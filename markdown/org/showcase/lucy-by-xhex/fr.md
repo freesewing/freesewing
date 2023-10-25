@@ -2,7 +2,6 @@
 maker: "Xhex"
 caption: "Plus tu regardes de près, plus cette poche devient froide"
 date: "2023-04-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/80b67633d4d42db34a8fa4a2c8550f45e3c64a40-1153x863.png"
 intro: "Regarderais-tu cette pochette Lucy que Xhex a fabriquée ? C'est incroyable !"
 title: "Pochette Lucy brodée par Xhex"
 designs:

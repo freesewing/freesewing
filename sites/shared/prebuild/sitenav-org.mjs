@@ -1,5 +1,6 @@
 import { freeSewingConfig as conf } from '../config/freesewing.config.mjs'
 import { designs } from '../config/designs.mjs'
+import i18nConfig from '../config/i18n.config.mjs'
 import { loadTranslations } from './shared.mjs'
 import i18next from 'i18next'
 
@@ -17,17 +18,17 @@ import i18next from 'i18next'
  */
 
 export const extendSiteNav = async (siteNav, lang) => {
-  const translations = await loadTranslations({
+  const resources = await loadTranslations({
     site: 'org',
-    namespaces: ['account', 'design', 'sections'],
-    language: lang,
+    namespaces: ['account', 'sections', 'tags', 'designs', 'patrons'],
+    languages: [lang],
   })
 
-  const resources = {}
-  resources[lang] = translations
-  i18next.init({
+  const config = i18nConfig([lang])
+  await i18next.init({
     lng: lang,
     resources,
+    interpolation: config.interpolation,
   })
   const { t } = i18next
 
@@ -38,9 +39,14 @@ export const extendSiteNav = async (siteNav, lang) => {
     h: 1,
     t: t('sections:new'),
     apikey: {
-      c: conf.account.fields.developer.apikeys,
+      c: conf.account.fields.security.apikeys,
       s: 'new/apikey',
       t: t('newApikey'),
+      o: 30,
+    },
+    bookmark: {
+      s: 'new/bookmark',
+      t: t('account:newBookmark'),
       o: 30,
     },
     pattern: {
@@ -53,6 +59,16 @@ export const extendSiteNav = async (siteNav, lang) => {
       s: 'new/set',
       0: 20,
     },
+    showcase: {
+      t: t('newShowcase'),
+      s: 'new/showcase',
+      0: 30,
+    },
+    blog: {
+      t: t('newBlog'),
+      s: 'new/blog',
+      0: 30,
+    },
   }
 
   // Add designs
@@ -63,18 +79,14 @@ export const extendSiteNav = async (siteNav, lang) => {
     n: 1,
   }
   for (const design in designs) {
-    // addThese.designs[design] = {
-    //   t: t(`designs:${design}.t`),
-    //   s: `designs/${design}`,
-    // }
+    siteNav.designs[design] = {
+      t: t(`designs:${design}.t`),
+      s: `designs/${design}`,
+    }
     siteNav.new.pattern[design] = {
       s: `new/${design}`,
       t: t(`account:generateANewThing`, { thing: t(`designs:${design}.t`) }),
     }
-  }
-
-  for (const key of ['patterns', 'sets', 'community']) {
-    siteNav[key] = { m: 1, s: key, t: t(`sections:${key}`) }
   }
 
   // Configure properties of blog and showcase sections
@@ -94,6 +106,18 @@ export const extendSiteNav = async (siteNav, lang) => {
   siteNav.newsletter.t = t('sections:newsletter')
   siteNav.newsletter._ = 1
   siteNav.newsletter.s = 'newsletter'
+
+  // Add admin but hide it
+  siteNav.admin = {
+    t: t('sections:admin'),
+    _: 1,
+    s: 'admin',
+    cset: {
+      t: 'Curated Measurement Sets',
+      s: 'admin/cset',
+      _: 1,
+    },
+  }
 
   // Add account
   siteNav.account = {
@@ -142,6 +166,14 @@ export const extendSiteNav = async (siteNav, lang) => {
     t: t('yourProfile'),
   }
 
+  // Add curated measurements sets
+  siteNav['curated-sets'] = {
+    m: 1,
+    s: 'curated-sets',
+    t: t('sections:curatedSets'),
+    n: 1,
+  }
+
   // Add translation
   siteNav.translation = {
     s: 'translation',
@@ -155,6 +187,47 @@ export const extendSiteNav = async (siteNav, lang) => {
       t: t('translation:suggestLanguage'),
       s: 'translation',
     },
+  }
+
+  // Add patrons
+  siteNav.patrons = {
+    _: 1,
+    s: 'patrons',
+    h: 1,
+    t: t('patrons:freeSewingPatrons'),
+    join: {
+      _: 1,
+      s: 'join',
+      h: 1,
+      t: t('patrons:joinPatrons'),
+    },
+    thanks: {
+      _: 1,
+      s: 'thanks',
+      h: 1,
+      t: t('patrons:thankYouVeryMuch'),
+    },
+  }
+
+  // Add donate
+  siteNav.donate = {
+    _: 1,
+    s: 'donate',
+    h: 1,
+    t: t('patrons:donate'),
+    thanks: {
+      _: 1,
+      s: 'thanks',
+      h: 1,
+      t: t('patrons:thankYouVeryMuch'),
+    },
+  }
+
+  // Add support
+  siteNav.support = {
+    m: 1,
+    s: 'support',
+    t: t('sections:support'),
   }
 
   // Add search
@@ -176,11 +249,9 @@ export const extendSiteNav = async (siteNav, lang) => {
   siteNav.docs.o = 20
   siteNav.blog.o = 30
   siteNav.showcase.o = 40
-  siteNav.community.o = 50
-  siteNav.patterns.o = 60
-  siteNav.sets.o = 70
-  siteNav.account.o = 80
-  siteNav.new.o = 90
+  siteNav.new.o = 50
+  siteNav.account.o = 60
+  siteNav.support.o = 70
 
   return siteNav
 }

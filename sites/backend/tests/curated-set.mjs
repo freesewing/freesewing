@@ -4,47 +4,44 @@ import { capitalize } from '../src/utils/index.mjs'
 export const curatedSetTests = async (chai, config, expect, store) => {
   const data = {
     jwt: {
+      test: true,
       nameDe: 'Beispielmessungen A',
       nameEn: 'Example measurements A',
       nameEs: 'Medidas de ejemplo A',
       nameFr: 'Mesures exemple A',
-      nameNl: 'Voorbeel maten  A',
+      nameNl: 'Voorbeel maten A',
+      nameUk: 'Ukranian example A',
       notesDe: 'Das sind die Notizen A',
       notesEn: 'These are the notes A',
       notesEs: 'Estas son las notas A',
       notesFr: 'Ce sont les notes A',
       notesNl: 'Dit zijn de notities A',
-      tagsDe: ['tagA', 'tagB'],
-      tagsEn: ['tagA', 'tagB'],
-      tagsEs: ['tagA', 'tagB'],
-      tagsFr: ['tagA', 'tagB'],
-      tagsNl: ['tagA', 'tagB'],
+      notesUk: 'These are the ukranian notes A',
+      tags: ['tagA', 'tagB'],
       measies: {
         chest: 1000,
         neck: 420,
       },
     },
     key: {
+      test: true,
       nameDe: 'Beispielmessungen B',
       nameEn: 'Example measurements B',
       nameEs: 'Medidas de ejemplo B',
       nameFr: 'Mesures exemple B',
       nameNl: 'Voorbeel maten B',
+      nameUk: 'Ukranian example B',
       notesDe: 'Das sind die Notizen B',
       notesEn: 'These are the notes B',
       notesEs: 'Estas son las notas B',
       notesFr: 'Ce sont les notes B',
       notesNl: 'Dit zijn de notities B',
-      tagsDe: ['tagA', 'tagB'],
-      tagsEn: ['tagA', 'tagB'],
-      tagsEs: ['tagA', 'tagB'],
-      tagsFr: ['tagA', 'tagB'],
-      tagsNl: ['tagA', 'tagB'],
+      notesUk: 'These are the ukranian notes B',
+      tags: ['tagA', 'tagB'],
       measies: {
         chest: 930,
         neck: 360,
       },
-      img: cat,
     },
   }
   store.curatedSet = {
@@ -77,16 +74,16 @@ export const curatedSetTests = async (chai, config, expect, store) => {
           .end((err, res) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(201)
-            expect(res.body.result).to.equal(`success`)
+            expect(res.body.result).to.equal(`created`)
             for (const [key, val] of Object.entries(data[auth])) {
-              if (!['measies', 'img'].includes(key))
+              if (!['measies', 'test'].includes(key)) {
                 expect(JSON.stringify(res.body.curatedSet[key])).to.equal(JSON.stringify(val))
+              }
             }
             store.curatedSet[auth] = res.body.curatedSet
             done()
           })
       }).timeout(5000)
-
       for (const field of ['name', 'notes']) {
         for (const lang of config.languages) {
           const langField = field + capitalize(lang)
@@ -114,7 +111,7 @@ export const curatedSetTests = async (chai, config, expect, store) => {
                 expect(err === null).to.equal(true)
                 expect(res.status).to.equal(200)
                 expect(res.body.result).to.equal(`success`)
-                expect(res.body.set[langField]).to.equal(val)
+                expect(res.body.curatedSet[langField]).to.equal(val)
                 done()
               })
           })
@@ -146,7 +143,7 @@ export const curatedSetTests = async (chai, config, expect, store) => {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(200)
               expect(res.body.result).to.equal(`success`)
-              expect(res.body.set.measies[field]).to.equal(val)
+              expect(res.body.curatedSet.measies[field]).to.equal(val)
               done()
             })
         })
@@ -178,8 +175,8 @@ export const curatedSetTests = async (chai, config, expect, store) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(200)
             expect(res.body.result).to.equal(`success`)
-            expect(res.body.set.measies.ankle).to.equal(320)
-            expect(typeof res.body.set.measies.potatoe).to.equal('undefined')
+            expect(res.body.curatedSet.measies.ankle).to.equal(320)
+            expect(typeof res.body.curatedSet.measies.potatoe).to.equal('undefined')
             done()
           })
       })
@@ -206,15 +203,15 @@ export const curatedSetTests = async (chai, config, expect, store) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(200)
             expect(res.body.result).to.equal(`success`)
-            expect(typeof res.body.set.measies.chest).to.equal('undefined')
+            expect(typeof res.body.curatedSet.measies.chest).to.equal('undefined')
             done()
           })
       })
 
-      it(`${store.icon('set', auth)} Should clone a set (${auth})`, (done) => {
+      it(`${store.icon('set', auth)} Should suggest a curated set (${auth})`, (done) => {
         chai
           .request(config.api)
-          .post(`/curated-sets/${store.curatedSet[auth].id}/clone/${auth}`)
+          .post(`/curated-sets/suggest/${auth}`)
           .set(
             'Authorization',
             auth === 'jwt'
@@ -224,18 +221,24 @@ export const curatedSetTests = async (chai, config, expect, store) => {
                     'base64'
                   )
           )
-          .send({ language: 'nl' })
+          .send({
+            set: 1,
+            notes: 'These are the notes',
+            name: 'me',
+            height: '166cm',
+            img: cat,
+          })
           .end((err, res) => {
             expect(err === null).to.equal(true)
-            expect(res.status).to.equal(201)
+            expect(res.status).to.equal(200)
             expect(res.body.result).to.equal(`success`)
             expect(typeof res.body.error).to.equal(`undefined`)
-            expect(typeof res.body.set.id).to.equal(`number`)
-            expect(res.body.set.name).to.equal(store.curatedSet[auth].nameNl + '_updated')
-            expect(res.body.set.notes).to.equal(store.curatedSet[auth].notesNl + '_updated')
+            expect(typeof res.body.submission).to.equal(`object`)
+            expect(res.body.submission.type).to.equal('cset')
+            expect(typeof res.body.submission.id).to.equal('string')
             done()
           })
-      })
+      }).timeout(5000)
     })
   }
 

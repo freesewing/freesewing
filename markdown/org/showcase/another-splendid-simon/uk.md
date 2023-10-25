@@ -2,7 +2,6 @@
 maker: "ferdi"
 caption: "Подивіться на ґудзики на цій сорочці Саймона"
 date: "2021-11-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/aa83d95a1856f79f70235f968555ba87a31b14db-1920x1281.jpg"
 intro: "Ще одна чудова сорочка Simon від Ferdi, якою поділився Ферді:"
 title: "Ще одна чудова сорочка Simon від Ferdi"
 designs:

@@ -2,7 +2,6 @@
 maker: "Rowan"
 caption: "El fabricante añadió ajustadores para poder ajustar las correas"
 date: "2022-04-01"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b112c1f8ae8cebdff28a37104d640e9b2daf77b6-687x976.jpg"
 intro: "Rowan hizo este pequeño Albert para el 4º cumpleaños de su hijo y nos encanta."
 title: "Un pequeño delantal Albert"
 designs:

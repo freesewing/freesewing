@@ -2,7 +2,6 @@
 maker: "RedBlaqueGolden"
 caption: "La deuxième version de Simon avec de la dentelle de RedBlaqueGolden"
 date: "2021-09-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/987fdefa57c5259ca090b0b120a5e5218eb8ef67-1614x1526.jpg"
 intro: "Par où commencer avec cette tenue fantastique ? C'est un utilisateur de FreeSewing qui l'a le mieux exprimé :"
 title: "RedBlaqueGolden's vintage high fashion outfit featuring Simon and Sandy"
 designs:

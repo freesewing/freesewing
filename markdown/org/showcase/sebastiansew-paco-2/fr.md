@@ -2,7 +2,6 @@
 maker: "SebastianSew"
 caption: "Pantalon Paco pour le travail en extérieur sans élastique à la cheville."
 date: "07-09-2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/bfa0ba6da28e2377d998f5befcaa137409d64fd9-868x1156.jpg"
 intro: "Ce pantalon Paco favori des foules n'a pas d'élastique à la cheville (regarde l'autre vitrine Paco de SebastianSew pour une version avec élastique) et comporte des poches arrière, avant et latérales. Le tissu est un denim tout coton, de poids moyen."
 title: "Une autre paire exceptionnelle de Pacos en plein air par SebastianSew"
 designs:

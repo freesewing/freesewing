@@ -2,7 +2,6 @@
 maker: "Gaëlle"
 caption: "Gaëlle's vriend in hun nieuwe Hugo hoodie"
 date: "2023-02-15"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7c510d7ee01cef0b2b4df46e02d0fc052ade3579-1694x3323.jpg"
 intro: "Gaëlle maakte deze Hugo bedekt met vrolijke kleine ...nou ja, ik weet niet precies hoe ik deze kronkelende monstertjes moet noemen, maar ze zijn duidelijk geweldig. Het is voor een vriendin en we zouden het geweldig vinden om zoiets geweldigs te ontvangen.  Kijk eens naar die geweldige gestreepte ribboord."
 title: "Hugo door Gaëlle"
 designs:

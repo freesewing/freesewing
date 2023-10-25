@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Просто виняткове поєднання кольорів на цьому помаранчево-зеленому худі."
 date: "2023-02-02"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e8bf624ac2dd9b48fa2e97905e19f4939fde1fc7-1458x2570.jpg"
 intro: "Захоплений цим худі користувач FreeSewing опублікував його на Discord!"
 title: "Хьюго-Тіган Мэшап"
 designs:

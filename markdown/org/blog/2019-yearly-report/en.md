@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Close-up of a dandelion against a pink background"
 date: "2019-12-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/83a131ff51bec913541a94356d1930aaa2c07f87-1920x1280.jpg"
 intro: "4109 reasons to be happy about 2019"
 title: "4109 reasons to be happy about 2019"
 ---

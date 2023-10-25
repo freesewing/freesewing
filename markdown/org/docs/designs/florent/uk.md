@@ -2,4 +2,7 @@
 title: "Пласка кепка Флорент"
 ---
 
-<PatternDocs pattern='florent' />
+
+
+<DesignInfo design='florent' docs />
+

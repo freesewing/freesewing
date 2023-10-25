@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Cette version est vraiment un changement de vue"
 date: "2019-08-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5b31cfbe3a85cee5519e12afe767ca3249588463-2000x1126.jpg"
 intro: "Bienvenue sur la version 2 de FreeSewing, la plate-forme open source pour les patrons de couture sur mesure."
 title: "Annonce de FreeSewing v2.0"
 ---

@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Hummel Shirt"
 date: "24.08.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/591fb507b28867c6e529a7abefb6ca73dc7f3a08-800x757.jpg"
 intro: "Eine FreeSewing-Nutzerin hat an dem Teagan-T-Shirt herumgebastelt, damit es auch in einem gewebten Zustand gut funktioniert, und dieses Hummel-Shirt gemacht. Wir lieben es! Wir finden, dass dieser Stoff in dem schlichten Design toll aussieht."
 title: "Eine bienenschöne Teagan aus gewebtem Stoff"
 designs:

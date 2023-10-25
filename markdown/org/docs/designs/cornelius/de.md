@@ -2,4 +2,7 @@
 title: "Cornelius, die Kniebundhose zum Radfahren"
 ---
 
-<PatternDocs pattern='cornelius' />
+
+
+<DesignInfo design='cornelius' docs />
+

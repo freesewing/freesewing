@@ -2,4 +2,4 @@
 title: "Jaeger Jacke: Erforderliche Maße"
 ---
 
-<PatternMeasurements pattern='jaeger' />
+<DesignMeasurements design='jaeger' />

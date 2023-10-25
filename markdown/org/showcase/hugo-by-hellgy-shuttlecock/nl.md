@@ -2,7 +2,6 @@
 maker: "Helse"
 caption: "Een Hugo hoodie met shuttleprint"
 date: "2021-06-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a534aefe906da98d816afa76266d97a318821305-598x803.jpg"
 intro: "Hellgy heeft onze harten veroverd met hun Hugo hoodie creaties met leuke en vrolijke prints."
 title: "Hugo hoodie van Hellgy"
 designs:

@@ -5,8 +5,8 @@ title: "Bienen-Bikinioberteil: Was du brauchst"
 Für die Herstellung von Bee benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- Etwa 0,5 - 1 Meter (0,6 - 1,1 Yards) eines geeigneten Stoffes ([siehe Bee Fabric options](/docs/patterns/bee/fabric/))
-- (Optional) Etwa 0,5 - 1 Meter (0,6 - 1,1 Yards) Futterstoff ([siehe Bienenstoffoptionen](/docs/patterns/bee/fabric/))
+- Etwa 0,5 - 1 Meter (0,6 - 1,1 Yards) eines geeigneten Stoffes ([siehe Bee Fabric options](/docs/designs/bee/fabric/))
+- (Optional) Etwa 0,5 - 1 Meter (0,6 - 1,1 Yards) Futterstoff ([siehe Bienenstoffoptionen](/docs/designs/bee/fabric/))
 - (Optional) Bänder für Krawatten und Bänder mit der gleichen Länge und Breite wie die Krawatte und/oder das Band.
 
 <Note>

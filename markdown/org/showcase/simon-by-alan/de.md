@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Ein kurzärmeliges Simon-Hemd"
 date: "25.06.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ca7321e1085eb2c81e8c3affa89d14863bc4584a-770x1048.jpg"
 intro: "Alan ist mit diesem Simon-Shirt direkt ins kalte Wasser gesprungen - mit sehr beeindruckenden Ergebnissen!"
 title: "Alans kurzärmeliges Simon-Hemd"
 designs:

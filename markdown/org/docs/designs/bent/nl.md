@@ -2,4 +2,7 @@
 title: "Bent Basisvorm"
 ---
 
-<PatternDocs pattern='bent' />
+
+
+<DesignInfo design='bent' docs />
+

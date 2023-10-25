@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dein Login-Hintergrund für April"
 date: "31.03.2018"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/637be1530f8be9387a2be4feac90b92a145b1ddd-1920x1280.jpg"
 intro: "Dies ist dein monatlicher Überblick über die Freesewing-Nachrichten der letzten vier Wochen und ein Ausblick auf das, was im nächsten Monat ansteht."
 title: "Monatliche Zusammenfassung - März 2018: Parlez-vous français? Sprichst du Deutsch? ¿Hablas español? 你會說中文嗎？"
 ---

@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Una flamante chaqueta Jaeger de flamenco"
 date: "2021-06-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3bbc589317e13e279d05f3b13eed309efabbfe23-480x534.jpg"
 intro: "Esta chaqueta de Jaeger nos ha hecho pensar a todos los que trabajamos en FreeSewing en cómo podemos incorporar el estampado de flamencos a todas nuestras creaciones."
 title: "Jaeger de Roberta"
 designs:

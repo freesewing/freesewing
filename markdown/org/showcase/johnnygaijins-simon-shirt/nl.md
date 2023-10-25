@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Een stellaire eerste versie van Simon"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d7f4deae2968a63adf7e2f440ac4808a7b804d84-3024x4032.jpg"
 intro: "Johnnygaijin heeft zich al heel dapper getoond - dit was hun eerste naaiproject! Het is geweldig geworden."
 title: "Johnnygaijins eerste echte naaiproject, het Simon-shirt"
 designs:

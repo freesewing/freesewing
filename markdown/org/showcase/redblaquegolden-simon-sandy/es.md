@@ -2,7 +2,6 @@
 maker: "RedBlaqueGolden"
 caption: "Segunda versión de Simon con encaje de RedBlaqueGolden"
 date: "2021-09-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/987fdefa57c5259ca090b0b120a5e5218eb8ef67-1614x1526.jpg"
 intro: "¿Por dónde empezar con este fantástico conjunto? Un usuario de FreeSewing lo dijo mejor:"
 title: "Conjunto vintage de alta costura de RedBlaqueGolden con Simon y Sandy"
 designs:

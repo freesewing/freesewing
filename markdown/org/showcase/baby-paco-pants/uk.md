@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Наймініатюрніші штани Paco на сьогоднішній день"
 date: "2023-05-03"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/449c7034767dc8d1ca040c17c65c6c4a7043c5a6-3024x4032.jpg"
 intro: "Ці штани Paco демонструє 6-місячний малюк!"
 title: "Штани Baby Paco"
 designs:

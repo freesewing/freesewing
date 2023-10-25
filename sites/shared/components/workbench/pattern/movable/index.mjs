@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useRef } from 'react'
 import { PanZoomPattern } from 'shared/components/workbench/pan-zoom-pattern.mjs'
 import { MovableStack } from './stack.mjs'

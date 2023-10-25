@@ -2,7 +2,6 @@
 maker: "ОГРЕДАНДІ"
 caption: "Погляньте на цю прикольну тканину"
 date: "2022-06-27"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/600638f71b0e7a56fca004596b376771e865737a-3024x4032.jpg"
 intro: "Нам подобається прикольний вибір тканини для цього літнього піжамного комплекту від ogredandy з дизайном Брюса та Аарона."
 title: "Брюс і Аарон у постановці ogredandy"
 designs:

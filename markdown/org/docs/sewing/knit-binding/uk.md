@@ -1,38 +1,38 @@
 ---
-title: Трикотажна палітурка
+title: Трикотажна бійка
 ---
 
-## Що таке трикотажна в'язка?
+## Що до біса таке та трикотажна бійка?
 
-Трикотажна в'язка - це загальний термін для позначення типу оздоблення (зазвичай), що зустрічається на горловині або на рукавах футболок та інших трикотажних виробів.
+Трикотажною бійкою називають тип обробки краю виробу, переважно горловини та пройми рукавів футболок та іншого трикотажу.
 
-Існує два різновиди такого оздоблення: трикотажна стрічка та власне трикотажна палітурка.
+Існує два види такої обробки країв: за допомогою рібани та справжня трикотажна бійка.
 
-## Трикотажна стрічка
+## Рібана
 
 ![Як і більшість футболок, та, що на цій дівчині, має трикотажну стрічку біля горловини.](knit_band.jpg)
 
-Трикотажна стрічка - це те, що ви зазвичай знаходите біля горловини футболки. Це смужка тканини, складена вдвічі і прикріплена до краю одягу.
+Рібана — це матеріал, який найчастіше можна знайти на горловині футболок. Це смужка тканини, складена вдвічі та пришита до краю виробу.
 
-Це залишає незакінчений край на внутрішній стороні, який часто зашивають краєобметочним швом навколо трикотажної стрічки.
+В такому випадку необроблений край тканини залишається всередині виробу та часто пришивається закріплювальним швом до рібани.
 
-### Трикотажна палітурка
+### Трикотажна бійка
 
 ![Сіра майка та біла футболка цієї дівчини мають трикотажну зав'язку біля вирізу горловини.](knit_binding.jpg)
 
-Справжня трикотажна в'язка більше схожа на класичну зміщену в'язку, оскільки вона обертається навколо тканини, а не виходить з неї.
+Справжня трикотажна бійка схожа на, власне, звичайну бійку — вона охоплює край тканини, а не пришивається до нього на вивороті.
 
-Необроблений край виробу вставляється між складеними трикотажними палітурками, які прострочуються по краю. Часто це робиться за допомогою коверлок-машини, таким чином акуратно обробляючи внутрішню сторону.
+Необроблений край виробу заховується між складеною вдвічі трикотажною бійкою, яка прострочується по краю. Це часто виконується коверлоком, які охайно оброблюють краї на вивороті.
 
-> Pictures by [Support Tattoos and Piercings at Work](https://www.flickr.com/photos/supporttattoosandpiercingsatwork/21870942614/) and [Derek A.](https://www.flickr.com/photos/sfj/696122404/)
+> Світлини: [Support Tattoos and Piercings at Work](https://www.flickr.com/photos/supporttattoosandpiercingsatwork/21870942614/) та [Derek A.](https://www.flickr.com/photos/sfj/696122404/)
 
-### Стиль vs функція
+### Стиль чи функціональність
 
-Трикотажна стрічка є більш поширеною, і саме її ви зазвичай зустрічаєте на вирізах футболок. Це більш декоративний варіант.
+Рібана є більш поширеною і саме її часто можна побачити на горловинах футболок. Вона є більш декоративною.
 
-Трикотажна в'язка менш поширена, але часто використовується на майках (наприклад, нижній білизні). Це більш функціональний варіант.
+Трикотажна бійка зустрічається рідше, але часто використовується на майках та спідній білизні. Бійка є більш практичною.
 
-> ##### Все ще розгублений?
+> ##### Все ще розгублені?
 > 
 > Ще один спосіб розрізнити їх - ось як: Подумайте, що станеться, коли ви вирішите розширити в'язальну в'язку/бандери.
 > 
@@ -109,4 +109,30 @@ title: Трикотажна палітурка
 
 Таким чином, вам не доведеться гадати, якої довжини має бути палітурка, а палітурний шов ляже саме там, де ви хочете, щоб він лежав.
 
-> Детальні інструкції можна знайти на сайті [та в документації Aaron](/docs/patterns/aaron/)
+> Детальні інструкції можна знайти на сайті [та в документації Aaron](/docs/designs/aaron/instructions)
+
+## Alternate method
+
+While the above instructions describe one way to attach a knit band or knit binding, it is not the only method that can be used. An alternate method is to cut the exact amount of binding needed, sew it into a ring, and then attach the ring to the garment opening.
+
+Some people feel that this is an easier method for novice sewists. They are told exactly how much binding to use, and they do not have to guess how much they should be stretching the binding as they sew.
+
+1. Measure the garment opening that the binding will cover. Be sure to measure at the seamline, to account for seam allowance.
+
+2. Check the pattern instructions for the length of binding to use. Or, use a length 80-90% smaller than the opening based on the stretchiness of the binding fabric. (For example, 80% for very stretchy fabric, 90% for less stretchy fabric.)
+
+3. Cut the length of binding required plus seam allowance at each end.
+
+4. Sew the binding ends right sides together to form a closed loop or ring. Trim excess seam allowance.
+
+5. Fold the ring together at the seam to divide the ring into equal halves. Mark or insert pins at each end fold. One pin will be in the seam, and the other will mark the halfway point around the ring.
+
+6. Unfold the ring and fold it again into equal halves so the two marks/pins meet together in the middle. Again mark or insert pins into each end fold. Now there are 4 pins or marks dividing the ring into 4 quarters of equal length.
+
+7. Similarly, fold the garment opening and mark or insert pins to divide the garment opening into 4 quarters of equal length.
+
+8. Match the marks or pins on the binding with the ones on the garment opening. (Try to align it so the seam is at the most inconspicuous location in the garment opening. For example, if binding a neck opening align the binding so the seam is at the back of the neck opening.)
+
+9. Pin the binding ring to the garment opening at each quarter mark/pin. This ensures that the binding is evenly distributed around the garment opening.
+
+10. Sew the binding to the opening, one quarter at a time. While sewing, evenly stretch each quarter segment of binding to match the length of the quarter segment of garment opening.

@@ -2,4 +2,7 @@
 title: Octoplushy, de pluchen octopus
 ---
 
-<PatternDocs pattern='octoplushy' />
+
+
+<DesignInfo design='octoplushy' docs />
+

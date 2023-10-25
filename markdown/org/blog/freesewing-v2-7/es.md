@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Foto de Deeana Creates de Pexels"
 date: "2020-07-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f04cc6c50a8e5f08f3ebd6c3d4903fb3055c9a01-1920x1280.jpg"
 intro: "Acabamos de lanzar FreeSewing v2.7 🎉"
 title: "FreeSewing v2.7: Titán, cambios en las medidas y una larga lista de mejoras"
 ---
@@ -64,7 +63,7 @@ Para evitarlo, probablemente deberías [recargar tu cuenta](/account/reload/).
 
 También hemos hecho algunos cambios en el sitio web.
 
- - Hemos añadido una guía de notación de patrones [](/docs/various/notation/) para que no tengas que adivinar qué significan esas marcas en tu patrón.
+ - Hemos añadido una guía de notación de patrones [](/docs/about/notation/) para que no tengas que adivinar qué significan esas marcas en tu patrón.
  - Hemos añadido una página [de recarga de la cuenta](/account/actions/reload/) para ayudarte a evitar problemas debidos a los datos de la cuenta almacenados en caché.
  - Hemos cambiado el estilo de las distintas tallas cuando comparas un patrón, además de incluir una leyenda que muestra qué contorno corresponde a cada talla.
 

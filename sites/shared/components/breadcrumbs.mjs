@@ -1,6 +1,6 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { HomeIcon, RightIcon } from 'shared/components/icons.mjs'
-import Link from 'next/link'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { Link, PageLink } from 'shared/components/link.mjs'
 
 export const Breadcrumbs = ({ crumbs, title }) => {
   if (!crumbs) return null
@@ -16,12 +16,7 @@ export const Breadcrumbs = ({ crumbs, title }) => {
         <li key={crumb.s} className="flex flex-row flex-wrap items-center">
           <RightIcon className="w-4 h-4 opacity-50" stroke={3} />
           {i < crumbs.length - 1 ? (
-            <PageLink
-              href={`/${crumb.s}`}
-              title={crumb.t}
-              className="text-secondary-focus font-bold px-1"
-              txt={crumb.t}
-            />
+            <PageLink href={`/${crumb.s}`} title={crumb.t} txt={crumb.t} />
           ) : (
             <span className="font-medium">{title || crumb.t}</span>
           )}

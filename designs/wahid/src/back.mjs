@@ -11,9 +11,8 @@ function wahidBack({
   measurements,
   options,
   macro,
-  complete,
+  store,
   sa,
-  paperless,
   snippets,
   part,
 }) {
@@ -103,124 +102,154 @@ function wahidBack({
     .join(paths.dart)
     .line(points.hem)
     .attr('class', 'fabric')
+  if (sa)
+    paths.sa = paths.saBase
+      .offset(sa)
+      .join(paths.hemBase.offset(sa))
+      .close()
+      .attr('class', 'fabric sa')
   paths.saBase.hide()
   paths.hemBase.hide()
   paths.hemBase.hide()
   paths.dart.hide()
 
-  if (complete) {
-    //Grainline
-    points.grainlineBottom = new Point(points.logo.x / 2, points.cbNeck.y)
-    points.grainlineTop = new Point(points.grainlineBottom.x, points.gridAnchor.y)
-    macro('grainline', {
-      from: points.grainlineTop,
-      to: points.grainlineBottom,
-    })
-    macro('scalebox', { at: new Point(points.logo.x, points.armholePitchCp2.y) })
-    if (sa) {
-      paths.sa = paths.saBase
-        .offset(sa)
-        .join(paths.hemBase.offset(sa))
-        .close()
-        .attr('class', 'fabric sa')
-    }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
 
-    if (paperless) {
-      macro('ld', {
-        from: points.neck,
-        to: points.shoulder,
-        d: 15 + sa,
-      })
-      macro('hd', {
-        from: points.cbArmhole,
-        to: points.cbNeck,
-        y: points.cbNeck.y - 15 - sa,
-      })
-      macro('hd', {
-        from: points.cbArmhole,
-        to: points.neck,
-        y: points.cbNeck.y - 30 - sa,
-      })
-      macro('hd', {
-        from: points.cbArmhole,
-        to: points.shoulder,
-        y: points.cbNeck.y - 45 - sa,
-      })
-      macro('hd', {
-        from: points.cbArmhole,
-        to: points.armholePitch,
-        y: points.armholePitch.y,
-      })
-      macro('hd', {
-        from: points.cbArmhole,
-        to: points.dartTop,
-        y: points.dartTop.y - 15,
-      })
-      macro('vd', {
-        from: points.armhole,
-        to: points.armholePitch,
-        x: points.armhole.x + 15 + sa,
-      })
-      macro('vd', {
-        from: points.armhole,
-        to: points.shoulder,
-        x: points.armhole.x + 30 + sa,
-      })
-      macro('vd', {
-        from: points.armhole,
-        to: points.neck,
-        x: points.armhole.x + 45 + sa,
-      })
-      macro('vd', {
-        from: points.hem,
-        to: points.waist,
-        x: points.armhole.x + 15 + sa,
-      })
-      macro('vd', {
-        from: points.hem,
-        to: points.armhole,
-        x: points.armhole.x + 30 + sa,
-      })
-      macro('hd', {
-        from: points.dartHemRight,
-        to: points.hem,
-        y: points.hem.y + 3 * sa + 15,
-      })
-      macro('hd', {
-        from: points.cbHem,
-        to: points.dartHemLeft,
-        y: points.hem.y + 3 * sa + 15,
-      })
-      macro('hd', {
-        from: points.cbHem,
-        to: points.hem,
-        y: points.hem.y + 3 * sa + 30,
-      })
-      macro('ld', {
-        from: points.dartWaistLeft,
-        to: points.dartWaistRight,
-      })
-      macro('ld', {
-        from: points.dartHipLeft,
-        to: points.dartHipRight,
-      })
-      macro('vd', {
-        from: points.cbHem,
-        to: points.cbArmhole,
-        x: points.cbHem.x - 15 - sa,
-      })
-      macro('vd', {
-        from: points.cbHem,
-        to: points.cbNeck,
-        x: points.cbHem.x - 30 - sa,
-      })
-      macro('vd', {
-        from: points.cbHem,
-        to: points.neck,
-        x: points.cbHem.x - 45 - sa,
-      })
-    }
-  }
+  // Title
+  macro('title', {
+    at: points.title,
+    nr: 2,
+    align: 'center',
+  })
+
+  //Grainline
+  points.grainlineBottom = new Point(points.logo.x / 2, points.cbNeck.y)
+  points.grainlineTop = new Point(points.grainlineBottom.x, points.gridAnchor.y)
+  macro('grainline', {
+    from: points.grainlineTop,
+    to: points.grainlineBottom,
+  })
+
+  // Scalebox
+  macro('scalebox', { at: new Point(points.logo.x, points.cfNeck.y) })
+
+  // Dimensions
+  macro('ld', {
+    id: 'lShoulderSeam',
+    from: points.neck,
+    to: points.shoulder,
+    d: 15 + sa,
+  })
+  macro('hd', {
+    id: 'wCbDart',
+    from: points.cbArmhole,
+    to: points.cbNeck,
+    y: points.cbNeck.y - 15 - sa,
+  })
+  macro('hd', {
+    id: 'wCbToHps',
+    from: points.cbArmhole,
+    to: points.neck,
+    y: points.cbNeck.y - 30 - sa,
+  })
+  macro('hd', {
+    id: 'wCbToShoulder',
+    from: points.cbArmhole,
+    to: points.shoulder,
+    y: points.cbNeck.y - 45 - sa,
+  })
+  macro('hd', {
+    id: 'wCbToArmholePitch',
+    from: points.cbArmhole,
+    to: points.armholePitch,
+    y: points.armholePitch.y,
+  })
+  macro('hd', {
+    id: 'wCbToDartTip',
+    from: points.cbArmhole,
+    to: points.dartTop,
+    y: points.dartTop.y - 15,
+  })
+  macro('vd', {
+    id: 'hArmholeToArmholePitch',
+    from: points.armhole,
+    to: points.armholePitch,
+    x: points.armhole.x + 15 + sa,
+  })
+  macro('vd', {
+    id: 'hArmholeTpShoulder',
+    from: points.armhole,
+    to: points.shoulder,
+    x: points.armhole.x + 30 + sa,
+  })
+  macro('vd', {
+    id: 'hArmholeToHps',
+    from: points.armhole,
+    to: points.neck,
+    x: points.armhole.x + 45 + sa,
+  })
+  macro('vd', {
+    id: 'hHemToWaist',
+    from: points.hem,
+    to: points.waist,
+    x: points.armhole.x + 15 + sa,
+  })
+  macro('vd', {
+    id: 'hHemToArmhole',
+    from: points.hem,
+    to: points.armhole,
+    x: points.armhole.x + 30 + sa,
+  })
+  macro('hd', {
+    id: 'wDartSideAtHemToSide',
+    from: points.dartHemRight,
+    to: points.hem,
+    y: points.hem.y + 3 * sa + 15,
+  })
+  macro('hd', {
+    id: 'wDartSideAtHemToCb',
+    from: points.cbHem,
+    to: points.dartHemLeft,
+    y: points.hem.y + 3 * sa + 15,
+  })
+  macro('hd', {
+    id: 'wAtHem',
+    from: points.cbHem,
+    to: points.hem,
+    y: points.hem.y + 3 * sa + 30,
+  })
+  macro('ld', {
+    id: 'lDartAtWaist',
+    from: points.dartWaistLeft,
+    to: points.dartWaistRight,
+  })
+  macro('ld', {
+    id: 'wDartAtHip',
+    from: points.dartHipLeft,
+    to: points.dartHipRight,
+  })
+  macro('vd', {
+    id: 'hHemToArmhole',
+    from: points.cbHem,
+    to: points.cbArmhole,
+    x: points.cbHem.x - 15 - sa,
+  })
+  macro('vd', {
+    id: 'hHemToCbNeck',
+    from: points.cbHem,
+    to: points.cbNeck,
+    x: points.cbHem.x - 30 - sa,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.cbHem,
+    to: points.neck,
+    x: points.cbHem.x - 45 - sa,
+  })
 
   return part
 }

@@ -2,7 +2,6 @@
 maker: "Юст де Кок"
 caption: "Заздалегідь замасковані чарлі"
 date: "2022-04-27"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a6be215386e08cb79541d3d044101d3ee8f2882f-3072x4080.jpg"
 intro: "Спільнота FreeSewing була в захваті від цих чіносів Charlie від joost. Вони настільки чудові, що - без жартів - принесли йому безкоштовні млинці."
 title: "Квіткові \"камуфльовані\" чінос \"Чарлі"
 designs:

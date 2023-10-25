@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Een voorbeeld Hortensia gemaakt door de ontwerper"
 date: "2021-02-13"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/01f416518b5bf8fb75dcc8ae3ab2691d5532dd65-2000x1500.jpg"
 intro: "Met veel plezier kondig ik de directe beschikbaarheid aan van ons nieuwste FreeSewing patroon: de Hortensia handtas ."
 title: "Zeg hallo tegen ons nieuwste patroon: De Hortensia handtas"
 ---

@@ -2,4 +2,4 @@
 title: "Метелик Бенджамін: Необхідні виміри"
 ---
 
-<PatternMeasurements pattern='benjamin' />
+<DesignMeasurements design='benjamin' />

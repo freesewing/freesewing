@@ -1,9 +1,9 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import Worker from 'web-worker'
 import fileSaver from 'file-saver'
 import { themePlugin } from '@freesewing/plugin-theme'
 import { pluginI18n } from '@freesewing/plugin-i18n'
 import { pagesPlugin, materialPlugin } from 'shared/plugins/plugin-layout-part.mjs'
-import { pluginAnnotations } from '@freesewing/plugin-annotations'
 import { cutLayoutPlugin } from 'shared/plugins/plugin-cut-layout.mjs'
 import { materialSettingsOrDefault } from 'shared/components/workbench/views/cut/hooks.mjs'
 import { useMaterialLength } from 'shared/components/workbench/views/cut/hooks.mjs'
@@ -36,7 +36,6 @@ const themedPattern = (Design, settings, overwrite, format, t) => {
   // add the theme and translation to the pattern
   pattern.use(themePlugin, { stripped: format !== 'svg', skipGrid: ['pages'] })
   pattern.use(pluginI18n, { t })
-  pattern.use(pluginAnnotations)
 
   return pattern
 }
@@ -155,13 +154,11 @@ export const handleExport = async ({
     let pattern = themedPattern(Design, settings, { layout }, format, t)
 
     // a specified size should override the settings one
-    if (format !== 'pdf') {
-      pageSettings.size = format
-    }
+    pageSettings.size = format
 
     try {
       // add pages to pdf exports
-      if (format !== 'svg') {
+      if (!exportTypes.exportForEditing.includes(format)) {
         pattern.use(
           pagesPlugin({
             ...pageSettings,
@@ -184,11 +181,13 @@ export const handleExport = async ({
       pattern.draft()
       workerArgs.svg = pattern.render()
 
+      if (format === 'pdf') pageSettings.size = [pattern.width, pattern.height]
+
       // add the svg and pages data to the worker args
       workerArgs.pages = pattern.setStores[pattern.activeSet].get('pages')
 
       // add cutting layouts if requested
-      if (format !== 'svg' && pageSettings.cutlist) {
+      if (!exportTypes.exportForEditing.includes(format) && pageSettings.cutlist) {
         workerArgs.cutLayouts = generateCutLayouts(pattern, Design, settings, format, t, ui)
       }
     } catch (err) {

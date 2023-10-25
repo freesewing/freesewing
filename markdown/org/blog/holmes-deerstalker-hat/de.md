@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Screengrab aus Bernadette Banners YouTube-Tutorial für diesen Hut"
 date: "23.02.2020"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/02a03dd39c9e5317e89681482735e8e5929d7c2d-2748x1546.jpg"
 intro: "Neues Schnittmuster: Die Holmes Deerstalker-Mütze"
 title: "Neues Schnittmuster: Die Holmes Deerstalker-Mütze"
 ---

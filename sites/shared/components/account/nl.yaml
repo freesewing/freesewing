@@ -12,6 +12,7 @@ actions: Acties
 created: Aangemaakt
 updated: Bijgewerkt
 expires: Verloopt op
+role: Role
 yourProfile: Jouw profiel
 yourPatterns: Jouw patronen
 yourSets: Jouw maten sets
@@ -19,8 +20,7 @@ signOut: Afmelden
 politeOhCrap: Jandorie
 bio: Bio
 email: E-mailadres
-github: Github-gebruikersnaam
-img: Profiel afbeelding
+img: Afbeelding
 username: Gebruikersnaam
 compare: Metricset Vergelijking
 consent: Privacy & Toestemming
@@ -45,12 +45,22 @@ enableMfa: Twee-Stappen Authenticatie inschakelen
 disableMfa: Twee-Stappen Authenticatie uitschakelen
 language: Taal
 developer: Ontwikkelaar
+design: Ontwerp
+patternMetadata: Pattern metadata
+clonePattern: Clone pattern
+updatePattern: Update pattern
 reload: Account herladen
 export: Exporteer je gegevens
+exportMsg: Click below to export your personal data
+exportNote: The EU's General Data Protection Regulation (GDPR) ensures your so-called right to data portability — the right to obtain and reuse your personal data for your own purposes, or across different services.
+exportDownload: "Your data was exported and is available for download at the following location:"
 review: Herzie je toestemmingen
 restrict: Beperk de verwerking van je gegevens
 disable: Je account desactiveren
 remove: Verwijder je account
+proceedWithCaution: Ga voorzichtig te werk
+restrictWarning: While no data will be removed, this will disable your account. Furthermore, you can not undo this on your own, but will have to contact support when you want to restore access to your account.
+noWayBack: There is no way back from this.
 mdSupport: Je kan hier markdown opmaak gebruiken
 or: of
 continue: Ga verder
@@ -94,6 +104,7 @@ controlTitle: Welke gebruikerservaring heeft jouw voorkeur?
 #img
 imgTitle: Wat denk je van een leuke foto?
 imgDragAndDropImageHere: Sleep hier een afbeelding naartoe
+imgPasteUrlHere: Paste an image location (url) here
 imgSelectImage: Selecteer een afbeelding
 #newsletter
 newsletterTitle: Wil je de FreeSewing nieuwsbrief ontvangen?
@@ -108,6 +119,7 @@ imperialUnitsd: Kies deze optie als je de voorkeur geeft aan duimen boven centim
 unitsTitle: Welke eenheden hebben jouw voorkeur?
 #username
 usernameTitle: Welke gebruikersnaam wil je?
+usernameAvailable: Username is available
 usernameNotAvailable: Deze gebruikersnaam is niet beschikbaar
 #email
 emailTitle: Waar kunnen we je bereiken als we daar een goede reden voor hebben (zoals wanneer je je wachtwoord bent vergeten)?
@@ -116,7 +128,12 @@ oneMomentPlease: Een ogenblikje alsjeblieft
 emailChangeConfirmation: We hebben een e-mail naar je nieuwe adres gestuurd om deze wijziging te bevestigen.
 vagueError: Er is iets fout gelopen en we weten niet meteen hoe we dit best oplossen. Probeer het opnieuw of contacteer ons voor assistentie.
 #github
-githubTitle: Vul hier je github gebruikersnaam in om updates te ontvangen wanneer je een probleem meldt via deze website.
+githubTitle: Link your GitHub identity
+githubWhy1: Enter your GitHub username and email here and we will use them when interacting with GitHub on your behalf.
+githubWhy2: Note that both your GitHub username and email is public info. This merely allows us to make a link between your FreeSewing account and GitHub account.
+githubWhy3: For example, when you report a problem on this website, we can mention you so you will receive notifications when there is an update. For this, your username is sufficient.
+githubWhy4: When you submit a showcase post or make changed to our content, we can credit those commits to you if we have both your username and the email address you use on GitHub.
+tooComplex: If all of this in confusing, you don't have to provide this info. It's an advanced feature.
 #languge
 languageTitle: Aan welke taal geef je de voorkeur?
 #password
@@ -142,8 +159,28 @@ cancel: Annuleren
 keySecretWarning: Dit is de enige keer dat je het sleutelgeheim kunt zien, zorg ervoor dat je het kopieert.
 keyExpired: Deze API-key is verlopen
 deleteKeyWarning: Het verwijderen van een API-key kan niet ongedaan worden gemaakt.
+keyDocsTitle: Refer to FreeSewing.dev for documentation on using API keys (English only)
+keyDocsMsg: This is an advanced feature aimed at developers or anyone who wants to interact with our backend directly.
+apiCalls: API Calls
+#bookmarks
+newBookmark: Add a Bookmark
+bookmark: Bookmark
+bookmarks: Bookmarks
+type: Type
+location: Location
+title: Titel
 new: Nieuw
+designBookmark: Collectie
+patternBookmark: Patronen
+setBookmark: Maten sets
+csetBookmark: Curated Measurements Sets
+docBookmark: Documentatie
+customBookmark: Custom Bookmarks
+yourBookmarks: Your bookmarks
+bookmarkThisThing: Bookmark this { thing }
+page: Page
 #sets
+set: Measurements Set
 name: Naam
 setNameDesc: Een naam om deze maten set te identificeren
 setNewInfo: Creëer een nieuwe maten set waar je vervolgens patronen voor kunt genereren.
@@ -163,12 +200,83 @@ privateSet: Privé maten set
 publicSetDesc: Anderen kunnen deze maten gebruiken om patronen aan te maken of te testen
 privateSetDesc: Deze maten mogen niet worden gebruikt door anderen om patronen aan te maken of te testen
 permalink: Link
+editThing: Bewerk {thing}
+saveThing: Bewaar {thing}
+filterByDesign: Filter by design
+noFilter: Do not filter
+filterByDesignDocs: If you have a specific design in mind, you can <b>filter by design</b> to only list those measurements that are required for this design.
+setLacksMeasiesForDesign: This set lacks measurements required for this pattern
+setHasMeasiesForDesign: This set has all measurements required for this pattern
+someSetsLacking: Some of your sets lack the measurments required to generate this pattern
+theseSetsReady: These sets have all required measurments to generate this pattern
+chooseSet: Kies een maten set
+patternForWhichSet: Voor welke maten set moeten we een patroon genereren?
+bookmarkedSets: Maten sets in je bladwijzers
+curatedSets: FreeSewing's curated measurements sets
+curatedSetsAbout: Maten sets samengesteld door FreeSewing die je kan gebruiken om ons platform of je ontwerpen te testen.
+curateCuratedSets: Curate our selection of curated measurements sets
+useThisSet: Gebruik deze maten set
+ownSets: Your own measurements sets
+noOwnSets: You do not have any of your own measurements sets (yet)
+pleaseMtm: Because our patterns are bespokee, we strongly suggest you take accurate measurements.
+noOwnSetsMsg: You can store your measurements as a measurements set, after which you can generate as many patterns as you want for them.
+measurements: Maten
+chooseASet: Choose a measurements set
+showImage: Show image
+suggestForCuration: Suggest for curation
+suggestCset: Suggest a measurements set for curation
+csetAllMeasies: To ensure curated measurements sets work for all designs, you need to provide a full set of measurements.
+csetMissing: Your measurements set is missing the following measurements
+allMeasiesAvailable: All measurements are available.
+csetHeightMsg1: To allow organizing and presenting our curated sets in a structured way, we organize them by height.
+csetImgMsg: Finally, we need a picture. Please refer to the documentation to see what makes a good picture for a curated measurements set.
+docs: Documentatie
+csetNotesMsg: If you would like to add any notes, you can do so here.
+thankYouVeryMuch: Thank you very much
+csetSuggestedMsg: Your submission has been registered and will be processed by one of our curators.
+itIsAvailableAt: It is available at
+csetNameMsg: Each curated set has a name. You can suggest your own name or a pseudonym.
 patternNew: Een nieuw patroon genereren
-patternNewInfo: Kies een ontwerp, voeg je maten set toe en wij genereren een naaipatroon op maat voor je.
+patternNewInfo: Pick a design, add your measurements set, and we'll generate a bespoke sewing pattern for you.
 designNew: Een nieuw ontwerp creëren
 designNewInfo: FreeSewing ontwerpen zijn bundeltjes JavaScript-code die patronen genereren. Je eigen ontwerpen maken is niet zo moeilijk en we hebben een gedetailleerde handleiding om je op weg te helpen.
 pluginNew: Een nieuwe plugin creëren
 pluginNewInfo: De functionaliteit van FreeSewing kan verder worden uitgebreid met plugins. Het maken van een plugin is eenvoudig en we hebben een gids die je van begin tot eind begeleidt.
-newBasic: De basis
-newAdvanced: Ga verder
+showcaseNew: Create a new showcase post
+showcaseNewInfo: If you would like to share something you (or someone else) made based on our designs, you can start a draft showcase post here.
+blogNew: Create a new blog post
+blogNewInfo: If you would like to write on the FreeSewing blog, you can start a draft blog post here.
+csetNew: Suggest a new curated measurements set
+csetNewInfo: We curate a collection of vetted measurments sets that we use to test patterns. You can suggest a measurements set here.
+opackNew: Suggest a new options pack
+opackNewInfo: We curate a collection of vetted option packs for each of our designs. You can suggest your options here.
+newPopular: Most popular
+newShare: Share / Show
+newDev: Design / Develop
 generateANewThing: "Genereer een nieuwe { thing }"
+website: Website
+linkedIdentities: Linked Identities
+websiteTitle: Do you have a website or other URL you'd like to add?
+platformTitle: Who are you on { platform }?
+platformWhy: We do not use this data in any way. This is only here so FreeSewing users can connect the dots across platforms.
+security: Security
+revealPassword: Reveal password
+hidePassword: Hide password
+#Design view
+designs: Designs
+code: Code
+aboutThing: About { thing }
+requiredMeasurements: Vereiste maten
+optionalMeasurements: Optionele maten
+designOptions: Design opties
+parts: Parts
+plugins: Plugins
+specifications: Specifications
+visitShowcase: Visit showcase post
+examples: Voorbeelden
+noExamples: We currently do not have any examples for this design
+noExamplesMsg: We rely on the FreeSewing community to submit examples in our showcase posts.
+ownPublicPattern: This is the public view on one of your own patterns. For more options, access the private view.
+ownPrivatePattern: This is the private view on your pattern. The public view will work for you even when the pattern is private. It will only work for others when the pattern is public.
+privateView: Private view
+publicView: Public view

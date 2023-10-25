@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Deze post geeft weer wat er nieuw is in versie 2.2 van FreeSewing"
 date: "2020-02-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/356c127b8b37937b9537790d71a949c236027513-1920x1280.jpg"
 intro: "Een blik op de nieuwigheden in FreeSewing 2.2, inclusief Breanna, ons basiscorsage voor dameskleding"
 title: "Een blik op de nieuwigheden in FreeSewing 2.2, inclusief Breanna, ons basiscorsage voor dameskleding"
 ---
@@ -17,8 +16,6 @@ Even kijken wat dat allemaal betekent:
 
 ## Nieuw patroon: Breanna is een basiscorsage voor dameskleding
 
-<Linedrawing pattern="breanna" />
-
 We stellen je [Breanna](/designs/breanna/) voor, ons basiscorsage voor vrouwenkleding.
 
 Een basisvorm is misschien niet het spannendste patroon om naar te kijken, maar het speelt een belangrijke rol als vertrekpunt voor andere patronen.
@@ -27,7 +24,7 @@ We hebben bijvoorbeeld een vergelijkbare basisvorm voor herenkleding genaamd [Br
 
 Met andere woorden, Breanna is een belangrijke bouwsteen voor ons om onze damescollectie uit te breiden. Maar dat betekent niet dat het geen goed nieuws voor jou is. Als je al een tijdje naait op , dan is de kans groot dat het ontwerpen van je eigen blok/slopper altijd op je to-do lijstje heeft gestaan. Nou, goed nieuws, want hier is je blok klaar voor gebruik.
 
-Oh, en natuurlijk heeft het alle toeters en bellen die je van ons kunt verwachten. Ga maar eens kijken naar de [patroonopties](/docs/patterns/breanna/options/) voor Breanna. Ik denk dat je onder de indruk zal zijn. Dit basiscorsage geeft je bijvoorbeeld de optie van 1 of 2 coupenaden op 15 mogelijke posities. Dat geeft je in totaal 120 unieke manieren om je coupenaad of -naden te plaatsen.
+Oh, en natuurlijk heeft het alle toeters en bellen die je van ons kunt verwachten. Ga maar eens kijken naar de [patroonopties](/docs/designs/breanna/options/) voor Breanna. Ik denk dat je onder de indruk zal zijn. Dit basiscorsage geeft je bijvoorbeeld de optie van 1 of 2 coupenaden op 15 mogelijke posities. Dat geeft je in totaal 120 unieke manieren om je coupenaad of -naden te plaatsen.
 
 Breanna is al een tijdje in ontwikkeling. We zijn benieuwd naar je feedback erop. Het is echt niet veel werk om een toile te maken van een basiscorsage zoals dit. Dus als je wat tijd vrij hebt om dit patroon te testen en ons te laten weten wat je ervan vindt, dan zou dat geweldig zijn.
 
@@ -75,7 +72,7 @@ Patronen op maat zijn uiteraard *ons ding* en dat blijft ook zo. Maar we hopen d
 
 ### Wat zijn eigenlijk 'standaard'maten?
 
-Het lastigste aan de hele oefening met standaardmaten? Uitvissen wat nu eigenlijk 'standaard' is. We hebben een poging gedaan, en als je nieuwsgierig bent kan je hier onze [maattabel](/docs/various/sizes/) bekijken.
+Het lastigste aan de hele oefening met standaardmaten? Uitvissen wat nu eigenlijk 'standaard' is. We hebben een poging gedaan, en als je nieuwsgierig bent kan je hier onze [maattabel](/sizes/) bekijken.
 
 Voor herenkleding is ons maatbereik 32 tot 50, en ze zijn gebaseerd op een basismaat 38 die we vervolgens naar boven en beneden hebben ingedeeld.  
 Voor dameskleding is ons maatbereik 28 tot 48, en ze zijn gebaseerd op een basismaat 34 die we vervolgens naar boven en beneden hebben aangepast.

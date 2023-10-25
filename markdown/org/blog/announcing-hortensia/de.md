@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Eine Beispiel-Hortensia, gefertigt vom Designer"
 date: "2021-02-13"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/01f416518b5bf8fb75dcc8ae3ab2691d5532dd65-2000x1500.jpg"
 intro: "Ich freue mich, die sofortige Verfügbarkeit unseres neuesten FreeSewing-Musters bekannt geben zu können: die Hortensia Handtasche."
 title: "Sagt Hi zu unserem neuesten Schnittmuster: Die Handtasche Hortensia"
 ---

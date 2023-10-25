@@ -2,7 +2,6 @@
 maker: "Ramoth"
 caption: "Corset Ramoth Cathrin ...avec des papillons !"
 date: "2023-01-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/75c473b2d6a85e0ff83042ec3465791f017e146e-425x567.jpg"
 intro: "Voici un fantastique corset Cathrin en forme de papillon fabriqué par Ramoth - leur tout premier ! Ils ont partagé ceci à propos des futures modifications :"
 title: "Corset Cathrin de Ramoth"
 designs:

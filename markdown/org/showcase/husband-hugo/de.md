@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Liegt es an mir oder ist Hugo eine beliebte Marke für Ehemänner?"
 date: "2015-12-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/bc1b64060b3b0907157c2e1608b2b2610b81a4b0-1080x1080.jpg"
 intro: "Dieses Bild stammt aus dem Instagram-Feed von uneanneedecouture."
 title: "Eine Umarmung für den Ehemann, von Sonia"
 designs:

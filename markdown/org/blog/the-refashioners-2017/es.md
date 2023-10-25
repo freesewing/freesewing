@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dijeron que estaba loca por hacer una chaqueta de cebra, así que la hice de todos modos. Y se hundió en el pantano."
 date: "2017-09-04"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/35dda6f4c8ec6f2689e2741cc49cf178e4a39474-3300x2200.jpg"
 intro: "Para los no iniciados, el refashioners es un evento/concurso anual organizado por la encantadora (y muy persuasiva) Portia Lawrie ."
 title: "The Refashioners 2017 - Ahora con un avance de Blake Blazer y 100% más cebra"
 ---

@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Un sweat-shirt Sven très apprécié des fans, avec une loutre en tissu éponge français."
 date: "01-22-2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b851b4ceda3714fed1cf4b6eb3d624724803c3ba-864x1152.jpg"
 intro: "Un sweat-shirt Sven délicieux comme une loutre"
 title: "Un sweat-shirt Sven délicieux comme une loutre"
 designs:

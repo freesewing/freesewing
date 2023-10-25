@@ -2,7 +2,6 @@
 maker: "TangerineShark"
 caption: "TangerineShark con un vestido Aaron modificado"
 date: "2023-01-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/60bf0ea6d52c09618ecd7a59293faaf48da014b0-3024x4032.jpg"
 intro: "¡Eh! ¡Aquí la usuaria de FreeSewing TangerineShark! He modificado esta camiseta Aaron A alargándola hasta convertirla en un vestido."
 title: "Aaron modificado a un vestido"
 designs:
@@ -31,5 +30,5 @@ Es mejor ir un poco más larga de lo que esperas, ya que es fácil recortarla o 
 ![Una aproximación al resultado de las modificaciones para convertir la camiseta A de Aarón en un vestido Aarón.](https://posts.freesewing.org/uploads/teagan_dress_481cb6b7b9.svg)
 
 ### ¡Ahora viene la parte fácil!
-Sólo tienes que seguir las instrucciones de montaje de [para Aaron](https://freesewing.org/docs/patterns/aaron/instructions/), excepto con las costuras laterales superlargas. Antes de hacer el dobladillo a tu vestido, ¡pruébatelo! Yo hice el dobladillo a la altura del tobillo, pero experimenta con la profundidad del dobladillo. Esto es especialmente importante si tu tejido es elástico o drapeado, ya que puede estirarse más de lo que esperas.
+Sólo tienes que seguir las instrucciones de montaje de [para Aaron](/docs/designs/aaron/instructions/), excepto con las costuras laterales superlargas. Antes de hacer el dobladillo a tu vestido, ¡pruébatelo! Yo hice el dobladillo a la altura del tobillo, pero experimenta con la profundidad del dobladillo. Esto es especialmente importante si tu tejido es elástico o drapeado, ya que puede estirarse más de lo que esperas.
 

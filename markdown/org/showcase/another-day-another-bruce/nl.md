@@ -2,7 +2,6 @@
 maker: "William"
 caption: "Bruce in een interessante stretchstof"
 date: "2022-06-09"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9f347c949c2fb673ed7dda8ebfd93cc559165dd4-800x600.jpg"
 intro: "Deze Bruce boxerslip is van William. Mis zijn eerste versie niet, ook in de FreeSewing showcase."
 title: "Een andere dag, een andere Bruce"
 designs:

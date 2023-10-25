@@ -2,4 +2,7 @@
 title: "Жилет Вахід"
 ---
 
-<PatternDocs pattern='wahid' />
+
+
+<DesignInfo design='wahid' docs />
+

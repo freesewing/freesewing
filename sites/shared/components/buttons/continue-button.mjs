@@ -1,15 +1,16 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Hooks
 import { useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Components
 import { Spinner } from 'shared/components/spinner.mjs'
 import Link from 'next/link'
 
 export const ContinueButton = ({ btnProps = {}, link = false }) => {
   // Context
-  const { loading } = useContext(LoadingContext)
+  const { loading } = useContext(LoadingStatusContext)
 
   // Hooks
   const { t } = useTranslation(['account'])

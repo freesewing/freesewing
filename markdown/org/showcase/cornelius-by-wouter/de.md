@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "Cornelius Radlerhosen von Wouter, feat. Radfahrerkälber"
 date: "2021-03-17"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/abd61dc5abc173a4e858d03b5f1af80fed297957-571x613.jpg"
 intro: "Wouter hat das Cornelius-Radhosenmuster auf der Grundlage des Keystone-Systems entwickelt. Lies mehr auf dem FreeSewing Blog."
 title: "Cornelius von Wouter"
 designs:

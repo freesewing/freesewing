@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "Esta es la variante pulpo, presentada con el Octoplushy original y Hi"
 date: "2022-09-03"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/862b0a096d69cfcee0b54347f4cff56dc8f4da73-3024x4032.jpg"
 intro: "La variante \"pulpo\" de Octoplushy"
 title: "La variante \"pulpo\" de Octoplushy"
 designs:

@@ -2,7 +2,6 @@
 maker: "Ramoth"
 caption: "L'impressionnant premier Simon de Ramoth"
 date: "2021-08-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f8d6b349216c86df4b27ddd6696dc2aeb7ada1c9-600x779.jpg"
 intro: "Ramoth a réalisé cette fantastique première ébauche de la chemise Simon et a généreusement partagé quelques notes utiles sur la coupe. Ils ont dit :"
 title: "La première version du Simon de Ramoth avec des notes d'ajustement"
 designs:

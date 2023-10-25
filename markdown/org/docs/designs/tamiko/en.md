@@ -2,4 +2,7 @@
 title: "Tamiko top"
 ---
 
-<PatternDocs pattern='tamiko' />
+
+
+<DesignInfo design='tamiko' docs />
+

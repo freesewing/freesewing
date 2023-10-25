@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "Navy Shin trunks for a matched swimming costume"
 date: "2023-01-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fe9742719123fca0d036202d2e3c5c2654ca2b71-3024x4032.jpg"
 intro: "FreeSewing user comixminx sewed up a storm over the winter holiday season, including these fantastic Shin swimming trunks for several family members!"
 title: "Shins by Comixminx"
 designs: ["shin"]

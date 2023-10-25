@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Een scherpe outfit met. Benjamin, Florent en Charlie"
 date: "2021-06-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d2298f1d90c3dee1bcfa91895a30cd6aae13b7e2-1634x2172.jpg"
 intro: "We zijn dol op deze hele outfit met drie FreeSewing patronen: Charlie, Florent en Benjamin! Bekijk ook onze eerdere showcase van Elske's Florent cap."
 title: "Elske's FreeSewing outfit"
 designs:

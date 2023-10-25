@@ -2,7 +2,6 @@
 maker: "ferdi"
 caption: "Цей Симон був пошитий трохи ширше, щоб його можна було носити як сорочку"
 date: "2021-11-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ccc178893cc97708b480fb5bf298c7a6ec7abc76-1920x1280.jpg"
 intro: "Яка приваблива версія сорочки Саймона! Каже творець:"
 title: "Саймон в образі сорочки від Ferdi"
 designs:

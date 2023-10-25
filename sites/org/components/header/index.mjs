@@ -1,6 +1,7 @@
 // Hooks
 import { useContext } from 'react'
 import { useTranslation } from 'next-i18next'
+import { useTheme } from 'shared/hooks/use-theme.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
@@ -13,8 +14,8 @@ import {
   UserIcon,
   ThemeIcon,
   I18nIcon,
-  MeasieIcon,
-  PageIcon,
+  HeartIcon,
+  PlusIcon,
   RssIcon,
 } from 'shared/components/icons.mjs'
 import { HeaderWrapper } from 'shared/components/wrappers/header.mjs'
@@ -22,102 +23,103 @@ import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-p
 import { ModalLocalePicker, ns as localeNs } from 'shared/components/modal/locale-picker.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 
-import { NavButton, NavSpacer, colors, iconSize } from 'shared/components/header.mjs'
+import { NavButton, NavSpacer, iconSize } from 'shared/components/header.mjs'
 
 export const ns = ['header', 'sections', ...themeNs, ...localeNs]
 
 const NavIcons = ({ setModal, setSearch }) => {
   const { t } = useTranslation(['header'])
+  const { spectrum } = useTheme()
 
   return (
     <>
       <NavButton
         onClick={() => setModal(<ModalMenu />)}
         label={t('header:menu')}
-        color={colors[0]}
+        color={spectrum[0]}
         extraClasses="md:px-4"
       >
-        <MenuIcon className={iconSize} />
+        <MenuIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavSpacer />
-      <NavButton href="/designs" label={t('header:designs')} color={colors[1]}>
+      <NavButton href="/designs" label={t('header:designs')} color={spectrum[1]}>
         <DesignIcon className={iconSize} />
       </NavButton>
       <NavButton
         href="/docs"
         label={t('header:docs')}
-        color={colors[2]}
+        color={spectrum[2]}
         extraClasses="hidden md:flex"
       >
-        <DocsIcon className={iconSize} />
+        <DocsIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavButton
         href="/blog"
         label={t('header:blog')}
-        color={colors[3]}
+        color={spectrum[3]}
         extraClasses="hidden md:flex"
       >
-        <RssIcon className={iconSize} />
+        <RssIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavButton
         href="/showcase"
         label={t('header:showcase')}
-        color={colors[4]}
+        color={spectrum[4]}
         extraClasses="hidden md:flex"
       >
-        <ShowcaseIcon className={iconSize} />
+        <ShowcaseIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavSpacer />
       <NavButton
-        href="/patterns"
-        label={t('header:patterns')}
-        color={colors[5]}
+        href="/new"
+        label={t('header:new')}
+        color={spectrum[5]}
         extraClasses="hidden lg:flex"
       >
-        <PageIcon className={iconSize} />
+        <PlusIcon className={iconSize} stroke={1.5} />
+      </NavButton>
+      <NavButton href="/account" label={t('header:account')} color={spectrum[6]}>
+        <UserIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavButton
-        href="/sets"
-        label={t('header:sets')}
-        color={colors[6]}
+        href="/support"
+        label={t('header:support')}
+        color={spectrum[7]}
         extraClasses="hidden lg:flex"
       >
-        <MeasieIcon className={iconSize} />
-      </NavButton>
-      <NavButton href="/account" label={t('header:account')} color={colors[7]}>
-        <UserIcon className={iconSize} />
+        <HeartIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavSpacer />
       <NavButton
         onClick={() => setModal(<ModalThemePicker />)}
         label={t('header:theme')}
-        color={colors[8]}
+        color={spectrum[8]}
       >
-        <ThemeIcon className={iconSize} />
+        <ThemeIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavButton
         onClick={() => setModal(<ModalLocalePicker />)}
         label={t('header:language')}
-        color={colors[9]}
+        color={spectrum[9]}
       >
-        <I18nIcon className={iconSize} />
+        <I18nIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavButton
         onClick={() => setSearch(true)}
         label={t('header:search')}
-        color={colors[10]}
+        color={spectrum[10]}
         extraClasses="md:px-4"
       >
-        <SearchIcon className={iconSize} />
+        <SearchIcon className={iconSize} stroke={1.5} />
       </NavButton>
     </>
   )
 }
 
-export const Header = ({ show }) => {
+export const Header = () => {
   const { setModal } = useContext(ModalContext)
   return (
-    <HeaderWrapper show={show}>
+    <HeaderWrapper>
       <div className="m-auto">
         <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
           {/* Non-mobile content */}

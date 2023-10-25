@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Screengrab van Bernadette Banner's YouTube tutorial voor deze hoed"
 date: "2020-02-23"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/02a03dd39c9e5317e89681482735e8e5929d7c2d-2748x1546.jpg"
 intro: "Nieuw patroon: De Holmes Hertenstafmuts"
 title: "Nieuw patroon: De Holmes Hertenstafmuts"
 ---

@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Dies ist ein Musselin des Bella-Miederblocks, der mit minimalen Anpassungen hergestellt wurde"
 date: "2021-01-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/854a688f4a7447de0b44f8371dbb2d3e0fdce9ea-1488x1680.jpg"
 intro: "Bella Miederblock"
 title: "Bella Miederblock"
 designs:

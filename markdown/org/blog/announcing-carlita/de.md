@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Stell Sie sich und ihn vor, in zusammenpassenden Mänteln."
 date: "26.01.2018"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d0ac31adcf8e14cec377aada6c688394a15199d8-1920x1440.webp"
 intro: "Dieser hier ist für die Damen --- und ich rede nicht (nur) über dieses Bild von Frauenschwarm Benedict Cumberbatch am Anfang dieses Beitrags."
 title: "Ankündigung von Carlita, der Damenversion unseres Carlton-Mantels."
 ---
@@ -39,7 +38,7 @@ Auf diese Weise kann die Tasche in der Prinzessnaht integriert werden, irgendwo 
 
 ### Eine zusätzliche Option: Der Prinzessnaht-Glättungsfaktor
 
-Carlita hat auch eine Option, die Carlton nicht hat, den etwas umständlich benannten [Prinzessnaht-Glättungsfaktor](/docs/patterns/carlita/options#princessSeamSmoothFactor).
+Carlita hat auch eine Option, die Carlton nicht hat, den etwas umständlich benannten [Prinzessnaht-Glättungsfaktor](/docs/designs/carlita/options#princessSeamSmoothFactor).
 
 Dieser legt fest, wie stark die Prinzessinen naht unterhalb der Brust wieder an den Körper anliegt, nach dem sie für die Mehrweite für die Brüste sorgte.
 

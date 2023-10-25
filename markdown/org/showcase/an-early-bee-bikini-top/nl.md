@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Een vroeg Bee bikinitopje"
 date: "2021-10-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f26aa235307e36906c8b16b8e99364cce01645ef-4032x3024.jpg"
 intro: "Een FreeSewing-maker maakte deze Bee bikinitop. Ze gebruikte de standaardinstellingen en meldde een geweldige pasvorm zonder problemen met gaten of bedekking, maar zei dat ze normaal gesproken niet veel steun nodig heeft."
 title: "Een vroeg Bee bikinitopje"
 designs:

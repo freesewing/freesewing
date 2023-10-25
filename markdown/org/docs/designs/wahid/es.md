@@ -2,4 +2,7 @@
 title: "Wahid, chaleco"
 ---
 
-<PatternDocs pattern='wahid' />
+
+
+<DesignInfo design='wahid' docs />
+

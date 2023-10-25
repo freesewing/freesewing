@@ -2,4 +2,4 @@
 title: "Bruce boxerslip: Benodigde afmetingen"
 ---
 
-<PatternMeasurements pattern='bruce' />
+<DesignMeasurements design='bruce' />

@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "Harings Hortensia Handtasche von Wouter"
 date: "2021-03-06"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7192891ad24b1dc1ccb1a4093dc70e3678bb65c7-661x612.jpg"
 intro: "Wouter hat nicht nur diese Hortensia-Handtasche von Haring genäht, er hat auch den Stoff entworfen und das Schnittmuster angefertigt! Er erzählte, dass er das Stoffdesign zusammen mit seiner Tochter entworfen hat und es über Spoonflower drucken ließ."
 title: "Hortensia von Wouter"
 designs:

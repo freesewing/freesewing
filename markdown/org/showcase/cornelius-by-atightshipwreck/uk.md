@@ -2,7 +2,6 @@
 maker: "ATightShipwreck"
 caption: "Корнеліус зі стегнами!"
 date: "2022-07-23"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/21ad37b0e35bbf1ec1f769ba0b642d0f4c2baefb-1290x2622.jpg"
 intro: "Ми обожнюємо ці бриджі Cornelius від ATightShipwreck! Вони поділилися:"
 title: "Велосипедні бриджі Cornelius від ATightShipwreck"
 designs:

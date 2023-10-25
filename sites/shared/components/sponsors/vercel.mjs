@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 export const Vercel = ({ className = 'w-36' }) => (
   <svg
     fill="none"

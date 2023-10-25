@@ -2,4 +2,7 @@
 title: "Trayvon, die Krawatte"
 ---
 
-<PatternDocs pattern='trayvon' />
+
+
+<DesignInfo design='trayvon' docs />
+

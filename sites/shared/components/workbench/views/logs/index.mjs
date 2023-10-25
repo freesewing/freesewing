@@ -1,16 +1,18 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useTranslation } from 'next-i18next'
 import { analyzeDraftLogLine } from './errors.mjs'
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import {
   ClearAllButton,
   ns as coreMenuNs,
 } from 'shared/components/workbench/menus/core-settings/index.mjs'
+import { V3Wip } from 'shared/components/v3-wip.mjs'
 
 export const ns = ['logs', ...coreMenuNs]
 
 const colors = {
   error: 'error',
-  warning: 'warning',
+  warn: 'warning',
   info: 'secondary',
   debug: 'base',
 }
@@ -43,7 +45,7 @@ const DraftLogEntry = ({ type, line, t }) => {
           <span className={`hidden lg:block font-bold uppercase text-${colors[type]}`}>{type}</span>
           <span className={`hidden lg:block font-bold text-${colors[type]}`}>|</span>
           <span className="font-medium px-2 lg:px-0">
-            <Markdown>{title}</Markdown>
+            <Mdx md={title} />
           </span>
         </div>
         <div className="popout-content pl-2">{data}</div>
@@ -64,7 +66,7 @@ const DraftLogs = ({ type, t, lines = [] }) =>
 
 const extractLogs = (pattern) => {
   const logs = {}
-  for (const type of ['error', 'warning', 'info', 'debug']) {
+  for (const type of ['error', 'warn', 'info', 'debug']) {
     logs[type] = [...pattern.store.logs[type]]
     for (const store of pattern.setStores) logs[type].push(...store.logs[type])
   }
@@ -85,9 +87,10 @@ export const LogView = ({ pattern, settings, setSettings }) => {
   return (
     <div className="max-w-4xl mx-auto px-4 pb-8">
       <div className="flex">
-        <h1 className="grow">{t('logs')}</h1>
+        <h2 className="grow">{t('logs')}</h2>
         <ClearAllButton setSettings={setSettings} />
       </div>
+      <V3Wip />
       {Object.entries(logs).map(([type, lines], key) => (
         <DraftLogs key={key} {...{ type, lines, t }} />
       ))}

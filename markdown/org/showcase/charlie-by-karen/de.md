@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Ein Paar lila Charlies"
 date: "24.07.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/057330d8ccc0e758cfe43f25649489eddb728ce6-1288x1800.jpg"
 intro: "Diese Charlies wurden aus lilafarbenem Stretch-Twill gefertigt, mit einer maximalen Leibhöhe von 30%."
 title: "Lila Charlies"
 designs:

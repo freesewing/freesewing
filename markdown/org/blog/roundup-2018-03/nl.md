@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Je inlogachtergrond voor april"
 date: "2018-03-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/637be1530f8be9387a2be4feac90b92a145b1ddd-1920x1280.jpg"
 intro: "Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt."
 title: "Maandelijkse roundup - maart 2018: Parlez-vous français? Spreekt u Duits? ¿Hablas español? 你會說中文嗎？"
 ---

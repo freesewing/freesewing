@@ -2,4 +2,7 @@
 title: "Hortensia handtas"
 ---
 
-<PatternDocs pattern='hortensia' />
+
+
+<DesignInfo design='hortensia' docs />
+

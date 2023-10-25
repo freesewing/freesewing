@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Une version abrégée de Teagan"
 date: "2021-07-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1f6216e1908af3210e48c8d2e85f46d1868ebcb5-600x800.jpg"
 intro: "Daryl a confectionné cette formidable Teagan dans une longueur coupée, aussi courte qu'elle peut l'être (-20%). Ils ont partagé :"
 title: "Le tee-shirt Teagan de Daryl"
 designs:

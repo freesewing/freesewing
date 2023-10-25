@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Wir bedanken uns bei unseren Mitwirkenden und wollen sicherstellen, dass ihre Beiträge die Anerkennung erhalten, die sie verdienen"
 date: "2021-11-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1488bc5a9940423308a38d2cd33edb86b6eed442-1920x1280.jpg"
 intro: "Bei unserem letzten Aufruf an die Mitwirkenden haben wir beschlossen, die Spezifikation \"Alle Mitwirkenden\" einzuführen, um alle Mitwirkenden zu ehren."
 title: "Aufruf an alle Mitwirkenden"
 ---

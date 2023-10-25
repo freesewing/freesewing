@@ -2,7 +2,6 @@
 maker: "RedBlaqueGolden"
 caption: "СП у пісочному з відповідною маскою"
 date: "2020-10-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/35daf9e79d06a8a12972a1e0bd87bce6f3c92028-1536x2048.jpg"
 intro: "СП поділилися своєю новою сукнею зі спідницею Sandy у Твіттері."
 title: "Сукня СП виконана з використанням спідниці з пісочного кола"
 designs:

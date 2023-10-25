@@ -1,11 +1,14 @@
-import { Tab, Tabs } from './tabs.mjs'
-import Md from 'react-markdown'
-import { pluginBundle } from '@freesewing/plugin-bundle'
+import { Tab, Tabs } from '../tabs.mjs'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import { pluginFlip } from '@freesewing/plugin-flip'
 import { pluginGore } from '@freesewing/plugin-gore'
+import { pluginRingsector } from '@freesewing/plugin-ringsector'
 import { Design } from '@freesewing/core'
 import yaml from 'js-yaml'
-import { Pattern, PatternXray } from '@freesewing/react-components'
+import { Pattern, PatternXray } from 'pkgs/react-components/src/index.mjs'
+import { useTranslation } from 'next-i18next'
+
+export const ns = ['tutorial', 'plugin-annotations']
 
 // Get code from children
 export const asText = (reactEl) => {
@@ -46,7 +49,7 @@ const buildPattern = (children, settings = { margin: 5 }, tutorial = false, pape
           lengthRatio: { pct: 75, min: 55, max: 85, menu: 'style' },
         }
       : {},
-    plugins: [pluginBundle, pluginFlip, pluginGore],
+    plugins: [pluginFlip, pluginGore, pluginRingsector],
   }
   const design = new Design({
     parts: [part],
@@ -59,7 +62,8 @@ const buildPattern = (children, settings = { margin: 5 }, tutorial = false, pape
 }
 
 // Handles display of pattern in mormal or xray mode
-const ShowPattern = ({ renderProps, logs, mode = 'normal' }) => {
+export const ShowPattern = ({ renderProps, logs, mode = 'normal' }) => {
+  const { t } = useTranslation(ns)
   if (!renderProps) return null
 
   if (logs.pattern.error.length > 0 || logs.sets[0].error.length > 0)
@@ -69,7 +73,11 @@ const ShowPattern = ({ renderProps, logs, mode = 'normal' }) => {
       </div>
     )
 
-  return mode === 'xray' ? <PatternXray {...{ renderProps }} /> : <Pattern {...{ renderProps }} />
+  return mode === 'xray' ? (
+    <PatternXray {...{ renderProps, t }} className="freesewing pattern text-base-content" />
+  ) : (
+    <Pattern {...{ renderProps, t }} className="freesewing pattern text-base-content" />
+  )
 }
 
 // Wrapper component dealing with the tabs and code view
@@ -133,10 +141,12 @@ export const TabbedExample = ({
 
   return (
     <div className="my-8">
-      <Tabs tabs={tabNames.join(', ')}>{tabs}</Tabs>
+      <Tabs tabs={tabNames.join(', ')} withModal>
+        {tabs}
+      </Tabs>
       {caption && (
         <div className="text-center italic -mt-4">
-          <Md>{caption}</Md>
+          <Mdx md={caption} />
         </div>
       )}
     </div>

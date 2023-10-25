@@ -1,9 +1,19 @@
 {
   "t": "Aaron A-Shirt",
   "d": "Aaron is an athletic shirt or tank top.",
+  "p": {
+    "armBinding": "Arm opening knit binding",
+    "neckBinding": "Neck opening knit binding"
+  },
   "s": {
+    "cutArmBinding.t": "The arm opening knit binding is not shown",
+    "cutArmBinding.d": "The **Arm opening knit binding** are two strips of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "cutNeckBinding.t": "The neck opening knit binding is not shown",
+    "cutNeckBinding.d": "The **Neck opening knit binding** is a strip of fabric {{{ width }}} wide and {{{ length }}} long.",
     "cutOneStripToFinishTheNeckOpening": "Cut one strip to finish the neck opening",
     "cutTwoStripsToFinishTheArmholes": "Cut two strips to finish the armholes",
+    "largeSaAdaptKnitBindingWidth.t": "Consider lowering the knit binding width",
+    "largeSaAdaptKnitBindingWidth.d": "The default width of the knit binding is 6 times the seam allowance. Because your chosen seam allowance ({{{ sa }}}) is larger than the 1cm used when designing the pattern, your knit binding is likely to be too wide. \n\nYou can lower the knit binding width to compensate for your larger seam allowance.",
     "length": "Length",
     "width": "Width"
   },
@@ -19,6 +29,10 @@
     "hipsEase": {
       "t": "Hips ease",
       "d": "The amount of ease at your hips."
+    },
+    "knitBindingWidth": {
+      "t": "Knit binding width",
+      "d": "Controls the width of the knit binding as a percentage of the chosen seam allowance, or 1cm if no seam allowance is used."
     },
     "necklineBend": {
       "t": "Neckline shape",
@@ -40,6 +54,5 @@
       "t": "Stretch",
       "d": "Determines the horizontal negative ease."
     }
-  },
-  "p": {}
+  }
 }

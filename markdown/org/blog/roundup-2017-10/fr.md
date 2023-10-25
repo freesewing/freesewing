@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ton nouveau fond d'écran de connexion pour le mois de novembre"
 date: "2017-10-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c9242975400bf885feef0b6ddc3b2bc0ce901638-2000x1500.jpg"
 intro: "Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernières semaines, et un aperçu de ce qui t'attend le mois prochain."
 title: "Tour d'horizon mensuel - octobre 2017 : Huey, Roy, le renforcement de la communauté et les pages de garde à motifs."
 ---

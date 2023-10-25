@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Designer Hellgy pronkt met zijn spullen, terwijl zijn Yuri stroomt in een zomerbriesje"
 date: "2021-09-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/af8e14596c0112734fb14e4a838853fb9dc0ac8a-1899x1266.jpg"
 intro: "Aankondiging van FreeSewing v2.18: Gefeliciteerd, het is een Yuri"
 title: "Aankondiging van FreeSewing v2.18: Gefeliciteerd, het is een Yuri"
 ---

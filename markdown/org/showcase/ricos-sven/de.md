@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Ein erstklassiger Sven, aber warte nur..."
 date: "2020-11-03"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f208ab781d22f74c91cc37a31249fd88a94a2aab-2000x2198.jpg"
 intro: "Es gibt noch mehr! Sieh dir die Ärmel und Streifen an diesem Sven an!"
 title: "Sven von Ricos"
 designs:

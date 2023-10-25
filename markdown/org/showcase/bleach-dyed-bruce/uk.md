@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Вони зроблені з чорної тканини для футболок, яку вона пофарбувала сама, використовуючи пустельні рослини для дизайну."
 date: "2018-01-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e8834593713a2a6e4903d53e789b430449f947a-1280x960.jpg"
 intro: "Відбілювач Bruce від Reanna"
 title: "Відбілювач Bruce від Reanna"
 designs:

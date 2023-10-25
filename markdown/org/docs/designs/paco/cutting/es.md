@@ -14,7 +14,7 @@ Si no se imprime una parte de patrón, significa que no la necesita.
 - De tu tela principal:
   - 2x **parte 1**: Este es el panel trasero. Corta estos de tu **tela principal** con _lados buenos juntos_
   - 2x **parte 2**: Este es el panel frontal. Corta estos de tu **tela principal** con _lados buenos juntos_
-  - 2x **parte 3**: Esta es la cintura. Cortarlo de tu **tela principal**
+  - Corta 2 de estas de tu **tela principal** con _lados buenos juntos_ Cortarlo de tu **tela principal**
   - 2x **parte 4**: Este es el cubo de pegatina. Corta estos, desde tu **tela principal** con _lados buenos juntos_ (no es necesario si eliges no tener un héroe elasticado)
   - 2x **parte 7**: Este es el bolsillo trasero. Corta 2 de estas de tu **tela principal** con _lados buenos juntos_
 - De su tela de forraje:
@@ -25,10 +25,9 @@ Si no se imprime una parte de patrón, significa que no la necesita.
 
 <Warning>
 
-#### Advertencias
+#### Caveats
 
-- No hay margen de costura en la entretela
-- Hay margen de costura extra en la banda de la cintura y en el dobladillo
-- La banda de la cintura es un mero rectángulo, por lo que no está totalmente impresa para ahorrar papel
+- There is no seam allowance on the interfacing
+- There is extra seam allowance on the waist band and hem
 
 </Warning>

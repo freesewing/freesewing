@@ -57,7 +57,7 @@ the screen or opening a new terminal.
 
 Now that you have NVM installed, you can install Node.js. The latest version can be
 installed using `nvm install default`. You can also install a specific version
-using `nvm install v16.17.0`. For the purposes of debugging it can be useful to
+using `nvm install v18.17.0`. For the purposes of debugging it can be useful to
 have the same version of Node.js installed as the main project uses, which you can
 then activate using `nvm use <version>`. You can determine what version the
 FreeSewing project uses by checking
@@ -65,7 +65,7 @@ FreeSewing project uses by checking
 
 <Warning> At the time this guide was written the latest version of Node.js/npm has
 a bug in the dependency resolution process which causes the freesewing project
-to fail to build. Use the latest LTS version (currently 16.17.0) or the specific
+to fail to build. Use the latest LTS version (currently 18.17.0) or the specific
 version used by the main project to avoid this issue.  </Warning>
 
 Node.js comes with the Node Package Manager (npm) by default which can be used to
@@ -139,7 +139,7 @@ rest of this process.
 Open a Powershell terminal or command prompt. Run `nvm ls available` to show
 versions that can be installed. Choose the appropriate version (you should use
 the same version as the freesewing project or latest LTS version) then run `nvm
-install 16.17.0` and `nvm use 16.17.0` (where `16.17.0` is the full version
+install 18.17.0` and `nvm use 18.17.0` (where `18.17.0` is the full version
 string of the version you wish to use) to activate the newly installed version.
 You will receive a prompt for elevated permissions and will need to accept it in
 order to activate the new version of Node.js.
@@ -147,7 +147,7 @@ order to activate the new version of Node.js.
 <Warning>
 At the time this guide was written the latest version of Node.js/npm has
 a bug in the dependency resolution process which causes the freesewing project
-to fail to build. Use the latest LTS version (currently 16.17.0) or the specific
+to fail to build. Use the latest LTS version (currently 18.17.0) or the specific
 version used by the main project to avoid this issue.
 </Warning>
 

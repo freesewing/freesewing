@@ -2,4 +2,5 @@
 title: "Футболка Тіган"
 ---
 
-<PatternDocs pattern='teagan' />
+<DesignInfo design='teagan' docs />
+

@@ -2,7 +2,6 @@
 maker: "Старф"
 caption: "Коментатор у Discord сказав, що ця картина схожа на ліжко... будь ласка"
 date: "2021-12-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/35c073767eaf563d5550012e4ca217c8efd80a44-5184x3888.jpg"
 intro: "Starf зробив цю чудову версію Брюса з опуклістю, встановленою на 0%!"
 title: "Брюс з плоским фасадом"
 designs:

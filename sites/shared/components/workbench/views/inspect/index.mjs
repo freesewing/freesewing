@@ -1,10 +1,13 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useState } from 'react'
 import { InspectorPattern } from './inspector/pattern.mjs'
 import { DraftMenu, ns as menuNs } from './menu.mjs'
-import { objUpdate } from 'shared/utils.mjs'
+import { objUpdate, nsMerge } from 'shared/utils.mjs'
 import { PatternWithMenu, ns as wrapperNs } from '../pattern-with-menu.mjs'
+import { V3Wip } from 'shared/components/v3-wip.mjs'
+import { DraftHeader, ns as headerNs } from '../draft/header.mjs'
 
-export const ns = [...menuNs, ...wrapperNs]
+export const ns = nsMerge(menuNs, wrapperNs, headerNs)
 
 export const InspectView = ({
   design,
@@ -16,7 +19,6 @@ export const InspectView = ({
   update,
   language,
   account,
-  DynamicDocs,
   setView,
   view,
 }) => {
@@ -73,27 +75,32 @@ export const InspectView = ({
         ui,
         update,
         control: account.control,
+        account,
+        design,
         setSettings,
         pattern: output,
+        Header: DraftHeader,
         menu: (
-          <DraftMenu
-            {...{
-              design,
-              pattern,
-              patternConfig,
-              settings,
-              setSettings,
-              ui,
-              update,
-              language,
-              account,
-              DynamicDocs,
-              inspector,
-              renderProps,
-              view,
-              setView,
-            }}
-          />
+          <>
+            <V3Wip />
+            <DraftMenu
+              {...{
+                design,
+                pattern,
+                patternConfig,
+                settings,
+                setSettings,
+                ui,
+                update,
+                language,
+                account,
+                inspector,
+                renderProps,
+                view,
+                setView,
+              }}
+            />
+          </>
         ),
       }}
     />

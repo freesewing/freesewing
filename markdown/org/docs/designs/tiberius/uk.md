@@ -2,4 +2,7 @@
 title: "Туніка Тіберіус"
 ---
 
-<PatternDocs pattern='tiberius' />
+
+
+<DesignInfo design='tiberius' docs />
+

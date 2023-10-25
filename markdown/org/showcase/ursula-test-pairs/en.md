@@ -2,7 +2,6 @@
 maker: "Natalia Sayang"
 caption: "Some early versions of Ursula"
 date: "2021-06-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b266a22f7783201dc4c7f508d316dec1b9d70d8-1000x600.jpg"
 intro: "Ursula is a basic, highly-customizable undies pattern. Here are some of the early versions testing different combinations of options, which may be useful to you as you design your own pairs."
 title: "Early tests of Ursula"
 designs: ["ursula"]

@@ -2,4 +2,7 @@
 title: "Bent body Block"
 ---
 
-<PatternDocs pattern='bent' />
+
+
+<DesignInfo design='bent' docs />
+

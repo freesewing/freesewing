@@ -2,4 +2,6 @@
 title: "Albert apron"
 ---
 
-<PatternDocs pattern='albert' />
+
+
+<DesignInfo design='albert' docs />

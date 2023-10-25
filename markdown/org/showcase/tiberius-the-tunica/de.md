@@ -2,7 +2,6 @@
 maker: "starf"
 caption: "Tiberius die Tunika ist die einfachste Form, die ein Kleidungsstück haben kann"
 date: "10.18.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fe8c7477640f372e5580478246826076a2721b3a-2292x3056.jpg"
 intro: "Tiberius der Tunika"
 title: "Tiberius der Tunika"
 designs:

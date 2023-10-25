@@ -2,7 +2,6 @@
 maker: "Gaëlle"
 caption: "Jaeger en Charlie in een leuke ribfluwelen stof"
 date: "2023-05-03"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a607817635bb3c8a65a53944a586851f5c6a3a8e-1380x3041.jpg"
 intro: "Deze mooie set van Jaeger en Waralee is gemaakt van katoenen ribfluweel en cupro voering."
 title: "Een Jaeger en Charlie set"
 designs:

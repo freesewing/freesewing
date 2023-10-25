@@ -1,8 +1,7 @@
 ---
 maker: "inconnue"
-caption: "Le mari d'Anne Sigvard est entraîneur au <a target='_BLANK' href='http://fighter.org'/>club de boxe locale</a>. D'où le nom de du chasseur à capuche"
+caption: "Le mari d'Anne Sigvard est entraîneur au <a target='_BLANK' href='http://fighter.org'/>club de boxe locale</a>. D'où le nom de sweat à capuche de combattant"
 date: "2017-11-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8f0b0ca919900145250b0af08401775198623eda-1001x1500.jpg"
 intro: "Le sweat à capuche du combattant : Hugo avec un zip"
 title: "Le sweat à capuche du combattant : Hugo avec un zip"
 designs:

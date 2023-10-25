@@ -2,4 +2,7 @@
 title: "Noble, patrón base de torso"
 ---
 
-<PatternDocs pattern='noble' />
+
+
+<DesignInfo design='noble' docs />
+

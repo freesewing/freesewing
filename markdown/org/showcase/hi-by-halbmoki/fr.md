@@ -2,7 +2,6 @@
 maker: "halbmoki"
 caption: "Bonjour, Bonjour"
 date: "2022-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4fff8a1a4470a60e4cff772afe3308b59b9ea459-1920x1440.jpg"
 intro: "Le Hi de Halbmoki a été instantanément adoré par la communauté FreeSewing !"
 title: "Salut par halbmoki"
 designs:

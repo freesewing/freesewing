@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Una sudadera de Sven, la favorita de los fans, con rizo francés de nutria"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b851b4ceda3714fed1cf4b6eb3d624724803c3ba-864x1152.jpg"
 intro: "Una sudadera de Sven deliciosa como una nutria"
 title: "Una sudadera de Sven deliciosa como una nutria"
 designs:

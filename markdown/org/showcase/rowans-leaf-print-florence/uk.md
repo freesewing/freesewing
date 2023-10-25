@@ -2,7 +2,6 @@
 maker: "Рован."
 caption: "Обожнюю координуючі відбитки листя"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4b5ffa2fc9449d7718b6f0fdc162b5643d1dfcbb-1548x2064.jpg"
 intro: "Першою моделлю для FreeSewing, яку створила Рован, була ця Флоренція! Ми великі шанувальники координаційних принтів."
 title: "Відбиток листя горобини Флоренція"
 designs:

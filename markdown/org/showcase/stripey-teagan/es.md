@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "¡Me encanta el ajuste y las rayas de esta Teagan modificada!"
 date: "2023-01-15"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/787622dcb6885cc9a60e3071f92cf4cbe266607a-724x854.jpg"
 intro: "Una usuaria de FreeSewing probó a modificar a Teagan, ¡y nos encanta cómo quedó el resultado! Aquí tienes una pequeña explicación que compartió sobre cómo dibujó su Teagan y dio forma a las costuras laterales para un ajuste más ceñido."
 title: "Una Teagan a rayas espectacular"
 designs:

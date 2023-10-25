@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Плавки Navy Shin до купальника в тон"
 date: "2023-01-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fe9742719123fca0d036202d2e3c5c2654ca2b71-3024x4032.jpg"
 intro: "Користувачка FreeSewing, comixminx, пошила бурю протягом зимових свят, включаючи ці фантастичні плавки Shin для кількох членів сім'ї!"
 title: "Гомілки від Comixminx"
 designs:

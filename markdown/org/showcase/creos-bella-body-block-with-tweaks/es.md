@@ -2,7 +2,6 @@
 maker: "Creo"
 caption: "Bella con ajustes"
 date: "2022-08-08"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fed29bed9342da4b3d26837c43de5cc08c15c148-1411x1634.jpg"
 intro: "Creo compartió su bloque de cuerpo Bella en el chat Discord de FreeSewing. ¡Hicieron algunos ajustes para conseguir un ajuste excelente! Comentarios sobre los ajustes:"
 title: "Bloque de carrocería Bella de Creo con retoques"
 designs:

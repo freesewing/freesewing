@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "A bit cold perhaps, but swimtrunks: we've got'em"
 date: "2021-10-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3a69586735a24a674d4e65971643b3b55c676fc3-1000x667.png"
 intro: "Embodying your favourite character can make for a really fun Halloween experience! Here are some iconic characters to get you inspired."
 title: "10 cosplays you can make from FreeSewing patterns to get you in the Halloween mood"
 ---

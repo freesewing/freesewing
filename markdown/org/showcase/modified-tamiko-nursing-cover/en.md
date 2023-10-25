@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "The maker used stretchy mesh fabric"
 date: "2022-06-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ae49748b9e877ef9b239ebc8a6b72fa006dd490b-909x1212.jpg"
 intro: "The maker shared:"
 title: "Modified Tamiko as a nursing cover"
 designs: ["tamiko"]

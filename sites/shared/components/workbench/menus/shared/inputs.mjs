@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useCallback, useMemo, useState, useEffect, useRef } from 'react'
 import {
   round,
@@ -6,8 +7,9 @@ import {
   formatFraction128,
   fractionToDecimal,
 } from 'shared/utils.mjs'
-import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import debounce from 'lodash.debounce'
+
+import { ButtonFrame } from 'shared/components/inputs.mjs'
 
 /*******************************************************************************************
  * This file contains the base components to be used by inputs in menus in the workbench
@@ -111,16 +113,15 @@ export const NumberInput = ({
 
   useEffect(() => {
     if (typeof onMount === 'function') {
-      console.log('mount', valid.current)
-      onMount(valid)
+      onMount(valid.current)
     }
-  }, [onMount])
+  }, [onMount, valid])
 
   return (
     <input
       type="text"
       inputMode="number"
-      className={`input ${className || 'input-sm input-bordered grow text-base-content'}
+      className={`input input-secondary ${className || 'input-sm grow text-base-content'}
         ${valid.current === false && 'input-error'}
         ${valid.current && 'input-success'}
       `}
@@ -222,33 +223,60 @@ export const ListToggle = ({ config, changed, updateFunc, name }) => {
  * @param  {Function}  options.updateFunc the function called by the event handler to update the value
  * @param  {Boolean} options.compact    include descriptions with the list items?
  * @param  {Function}  options.t          translation function
+ * @param  {String}  design  name of the design
+ * @param  {Boolean} isDesignOption  Whether or not it's a design option
  */
-export const ListInput = ({ name, config, current, updateFunc, compact = false, t, changed }) => {
+export const ListInput = ({
+  name,
+  config,
+  current,
+  updateFunc,
+  compact = false,
+  t,
+  changed,
+  design,
+  isDesignOption = false,
+}) => {
   const handleChange = useSharedHandlers({
     dflt: config.dflt,
     updateFunc,
     name,
   })
 
-  return (
-    <>
-      <p>{t(`${name}.d`)}</p>
-      {config.list.map((entry) => {
-        const titleKey = config.choiceTitles ? config.choiceTitles[entry] : `${name}.o.${entry}`
-        return (
-          <ChoiceButton
-            key={entry}
-            title={t(`${titleKey}.t`)}
-            color={entry === config.dflt ? 'primary' : 'secondary'}
-            active={changed ? current === entry : entry === config.dflt}
-            onClick={() => handleChange(entry)}
-          >
-            {compact ? null : t(`${titleKey}.d`)}
-          </ChoiceButton>
-        )
-      })}
-    </>
-  )
+  return config.list.map((entry) => {
+    const titleKey = config.choiceTitles
+      ? config.choiceTitles[entry]
+      : isDesignOption
+      ? `${design}:${name}.${entry}`
+      : `${name}.o.${entry}`
+    const title = config.titleMethod ? config.titleMethod(entry, t) : t(`${titleKey}.t`)
+    const desc = config.valueMethod ? config.valueMethod(entry, t) : t(`${titleKey}.d`)
+    const sideBySide = config.sideBySide || desc.length + title.length < 42
+
+    return (
+      <ButtonFrame
+        dense={config.dense || false}
+        key={entry}
+        active={
+          changed
+            ? Array.isArray(current)
+              ? current.includes(entry)
+              : current === entry
+            : entry === config.dflt
+        }
+        onClick={() => handleChange(entry)}
+      >
+        <div
+          className={`w-full flex items-start ${
+            sideBySide ? 'flex-row justify-between gap-2' : 'flex-col'
+          }`}
+        >
+          <div className="font-bold text-lg shrink-0">{title}</div>
+          {compact ? null : <div className="text-base font-normal">{desc}</div>}
+        </div>
+      </ButtonFrame>
+    )
+  })
 }
 
 /** A boolean version of {@see ListInput} that sets up the necessary configuration */
@@ -264,7 +292,10 @@ export const useDebouncedHandlers = ({ handleChange = () => {}, val }) => {
   const [displayVal, setDisplayVal] = useState(val)
 
   // the debounce function needs to be it's own memoized value so we can flush it on unmount
-  const debouncer = useMemo(() => debounce(handleChange, 300), [handleChange])
+  const debouncer = useMemo(
+    () => debounce(handleChange, 300, { leading: true, trailing: true }),
+    [handleChange]
+  )
 
   // this is the change handler
   const debouncedHandleChange = useCallback(
@@ -329,7 +360,6 @@ export const SliderInput = ({
 
   return (
     <>
-      <p>{t(`${name}.d`)}</p>
       <div className="flex flex-row justify-between">
         {override ? (
           <EditCount
@@ -471,12 +501,11 @@ export const ConstantInput = ({
   name,
   current,
   updateFunc,
-  t,
+  //t,
   changed,
   config,
 }) => (
   <>
-    <p>{t(`${name}.d`)}</p>
     <input
       type={type}
       className={`

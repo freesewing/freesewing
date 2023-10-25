@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Een linnen geruite Simon"
 date: "2021-06-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3e3211e181cb8be99b62dfadb56c05422430ca4d-640x677.jpg"
 intro: "Anna heeft dit geweldige Simon shirt met ons gedeeld! zei Anna:"
 title: "Simon overhemd van Anna"
 designs:

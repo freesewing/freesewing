@@ -1,74 +1,58 @@
 // Dependencies
-import { useState, useContext, useCallback } from 'react'
-import { useTranslation } from 'next-i18next'
-import { useDropzone } from 'react-dropzone'
+import { cloudflareImageUrl } from 'shared/utils.mjs'
 // Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
+import { useState, useContext } from 'react'
+import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
 // Components
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
+import { PassiveImageInput } from 'shared/components/inputs.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
-export const ns = ['account', 'toast']
+export const ns = ['account', 'status']
 
-export const ImgSettings = ({ title = false, welcome = false }) => {
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
-  const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
-  const toast = useToast()
-  const { t } = useTranslation(ns)
+export const ImgSettings = ({ welcome = false }) => {
+  const { account, setAccount } = useAccount()
+  const backend = useBackend()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
+  const { t, i18n } = useTranslation(ns)
 
-  const [img, setImg] = useState(false)
-
-  const onDrop = useCallback((acceptedFiles) => {
-    const reader = new FileReader()
-    reader.onload = () => {
-      setImg(reader.result)
-    }
-    acceptedFiles.forEach((file) => reader.readAsDataURL(file))
-  }, [])
-
-  const { getRootProps, getInputProps } = useDropzone({ onDrop })
+  const [img, setImg] = useState('')
 
   const save = async () => {
-    startLoading()
+    setLoadingStatus([true, 'processingUpdate'])
     const result = await backend.updateAccount({ img })
     if (result.success) {
       setAccount(result.data.account)
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
-    stopLoading()
+      setLoadingStatus([true, 'settingsSaved', true, true])
+    } else setLoadingStatus([true, 'backendError', true, false])
   }
 
   const nextHref = '/docs/guide'
 
   return (
     <div className="max-w-xl">
-      {title ? <h2 className="text-4xl">{t('imgTitle')}</h2> : null}
-      <div>
-        {!welcome || img !== false ? (
-          <img alt="img" src={img || account.img} className="shadow mb-4" />
-        ) : null}
-        <div
-          {...getRootProps()}
-          className={`
-          flex rounded-lg w-full flex-col items-center justify-center
-          lg:h-64 lg:border-4 lg:border-secondary lg:border-dashed
-        `}
-        >
-          <input {...getInputProps()} />
-          <p className="hidden lg:block p-0 m-0">{t('imgDragAndDropImageHere')}</p>
-          <p className="hidden lg:block p-0 my-2">{t('or')}</p>
-          <button className={`btn btn-secondary btn-outline mt-4 px-8`}>
-            {t('imgSelectImage')}
-          </button>
-        </div>
-      </div>
-
+      {!welcome || img !== false ? (
+        <img
+          alt="img"
+          src={img || cloudflareImageUrl({ id: `uid-${account.ihash}`, variant: 'public' })}
+          className="shadow mb-4"
+        />
+      ) : null}
+      <PassiveImageInput
+        id="account-img"
+        label={t('image')}
+        placeholder={'image'}
+        update={setImg}
+        current={img}
+        valid={(val) => val.length > 0}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/img`} />}
+      />
       {welcome ? (
         <>
           <button className={`btn btn-secondary mt-4 px-8`} onClick={save} disabled={!img}>
@@ -96,7 +80,7 @@ export const ImgSettings = ({ title = false, welcome = false }) => {
       ) : (
         <>
           <SaveSettingsButton btnProps={{ onClick: save }} />
-          <BackToAccountButton loading={loading} />
+          <BackToAccountButton />
         </>
       )}
     </div>

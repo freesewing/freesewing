@@ -2,4 +2,7 @@
 title: "Culotte de cyclisme Cornelius"
 ---
 
-<PatternDocs pattern='cornelius' />
+
+
+<DesignInfo design='cornelius' docs />
+

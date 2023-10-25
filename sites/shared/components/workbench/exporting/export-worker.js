@@ -1,9 +1,11 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 /**
  * A web worker to handle the business of exporting pattern files
  * */
 import yaml from 'js-yaml'
 import axios from 'axios'
 import { PdfMaker } from './pdf-maker'
+import { SinglePdfMaker } from './single-pdf-maker.mjs'
 
 /** when the worker receives data from the page, do the appropriate export */
 addEventListener('message', async (e) => {
@@ -49,7 +51,7 @@ const exportYaml = (settings) => exportBlob(yaml.dump(settings), 'application/x-
 const exportSvg = (svg) => exportBlob(svg, 'image/svg+xml')
 
 const exportPdf = async (data) => {
-  const maker = new PdfMaker(data)
+  const maker = data.format === 'pdf' ? new SinglePdfMaker(data) : new PdfMaker(data)
   await maker.makePdf()
   postSuccess(await maker.toBlob())
 }

@@ -17,8 +17,8 @@ Les blocs ne sont généralement pas réalisés tels quels mais servent plutôt 
 
 - Fermez les pinces du buste et de la taille.
 - Fermer les fléchettes arrière.
-- Sew the front to the backs at the shoulders good sides together.
-- Sew the front to the backs at the side seams good sides together.
+- With _good sides together_ sew the backs to the front at the shoulder seams, _easing_ the backs to fit the front.
+- With _good sides together_ sew the backs to the front at the side seams.
 
 <Tip>
 

@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Photo par Snapwire - Via pexels.com"
 date: "2022-01-01"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/33d380890b215e6fc9c698b57469fdd0c24acc44-3072x2304.jpg"
 intro: "Je ne vais pas faire tout un article de blog sur 2021 parce que j'ai l'impression que la plupart d'entre nous veulent passer à autre chose et oublier tout ça, mais si tu cherchais une lecture plus longue, voici la table des matières de la dernière édition de notre bulletin d'information qui a également été envoyé aujourd'hui :"
 title: "Récapitulation de 2021 : Un nouveau FreeSewing.dev et l'annonce de notre programme de primes aux bugs."
 ---

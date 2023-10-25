@@ -1,7 +1,7 @@
 authRequired: Потрібна автентифікація
-membersOnly: Цей вміст доступний лише для учасників FreeSewing.
-signUp: Зареєструватися
-signIn: Увійдіть
+membersOnly: This functionality requires a FreeSewing account.
+signUp: Реєстрація
+signIn: Вхід
 statusUnknown: Попередження про стан облікового запису
 statusUnknownMsg: Статус вашого облікового запису забороняє нам обробляти ваші дані. Будь ласка, зверніться до служби підтримки.
 consentLacking: Відсутня згода

@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Ein scharfes Outfit feat. Benjamin, Florent und Charlie"
 date: "25.06.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d2298f1d90c3dee1bcfa91895a30cd6aae13b7e2-1634x2172.jpg"
 intro: "Wir lieben dieses ganze Outfit mit drei FreeSewing-Mustern: Charlie, Florent und Benjamin! Du solltest dir auch unsere frühere Vorstellung der Florent-Mütze von Elske ansehen."
 title: "Elske's FreeSewing Outfit"
 designs:

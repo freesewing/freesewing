@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Anmerkung: Dieser Beitrag ist etwas lang. Aber auf keinen Fall so lang wie dieses Buch"
 date: "2020-08-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1a143c96b4afc8c12d2014c5605bfd1e63d917d0-2000x1348.jpg"
 intro: "Bitte helft mit dabei, FreeSewing über das hinauswachsen zu lassen, was ich alleine tun kann"
 title: "Bitte helft mit dabei, FreeSewing über das hinauswachsen zu lassen, was ich alleine tun kann"
 ---
@@ -63,9 +62,9 @@ Also nehme ich Julians Ratschlag zu Herzen und bitte um Hilfe. Bevor wir aber do
 
 Um sicherzustellen, dass deine Wertvorstellungen mit denen von FreeSewing in Einklang stehen, nimm dir bitte einen Moment Zeit, um dich mit dem Folgenden vertraut zu machen:
 
- - [Unsere Gemeinschaftsstandards](/docs/various/community-standards/)
+ - [Unsere Gemeinschaftsstandards](/docs/about/community-standards/)
  - [Unsere Verhaltensregeln](https://freesewing.dev/contributors/code-of-conduct/)
- - [Unser Umsatzversprechen](/docs/various/pledge/)
+ - [Unser Umsatzversprechen](/docs/about/pledge/)
 
 Wenn dich das lesen hiervon froh und nicht wütend gemacht hast, können wir deine Hilfe gebrauchen :)
 
@@ -148,7 +147,7 @@ Du weißt, wie man Dinge schön macht, auch wenn du dir nicht sicher sind, wie d
 
 ### Was habe ich davon?
 
-Wir können dir kein Geld bieten. Lies bitte [unsere Einnahmenzusage](/docs/various/pledge/) , um zu verstehen, warum das so ist.
+Wir können dir kein Geld bieten. Lies bitte [unsere Einnahmenzusage](/docs/about/pledge/) , um zu verstehen, warum das so ist.
 
 Was wir anbieten können, ist Verantwortung, Anerkennung und eine Beteiligung an etwas, das danach strebt, eine Kraft für das Gute in dieser Welt zu sein.
 

@@ -1,8 +1,7 @@
 ---
 maker: "unbekannt"
-caption: "Annes Mann Sigvard ist Trainer bei <a target='_BLANK' href='http://fighter.org/'>, dem örtlichen Kickboxclub</a>. Daher auch der Name fighter hoodie"
+caption: "Annes Mann Sigvard ist Trainer bei <a target='_BLANK' href='http://fighter.org/'>, dem örtlichen Kickboxclub</a>. Daher auch der Name Fighter Hoodie"
 date: "2017-11-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8f0b0ca919900145250b0af08401775198623eda-1001x1500.jpg"
 intro: "Der Fighter Hoodie: Hugo mit Reißverschluss"
 title: "Der Fighter Hoodie: Hugo mit Reißverschluss"
 designs:

@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Dieses Paar Ursulas wurde geklebt, nicht genäht"
 date: "2022-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fded88dfbbc8b84fb7535cf31387c33b52522549-3024x4032.jpg"
 intro: "Eine FreeSewing-Macherin hat diese wunderschöne Version von Ursulas Unterhose aus Latexmaterial hergestellt."
 title: "Latex Ursulas"
 designs:

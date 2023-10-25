@@ -2,7 +2,6 @@
 maker: "TangerineShark"
 caption: "TangerineShark in einem formellen Aaron, einer auffälligen gelben Hose und dem heißesten Accessoire von allen, einer Atemschutzmaske"
 date: "2023-01-14"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/86fd2445332cdc1519d2e85e68db7023118643ff-1852x2704.jpg"
 intro: "Ein formeller Aaron, für Parteien"
 title: "Ein formeller Aaron, für Parteien"
 designs:

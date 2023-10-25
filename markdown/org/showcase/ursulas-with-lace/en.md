@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "Default and high-waisted pairs of Ursulas"
 date: "2021-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/88754adafdaecc661b6cf14aed0f07042350aabe-600x800.jpg"
 intro: "We love the fabric and elastic choices on Sanne's first two pairs of Ursulas! FreeSewing contributors in Discord said they loved the lace and the color combos."
 title: "Ursulas with lace"
 designs: ["ursula"]

@@ -2,7 +2,6 @@
 maker: "pecatrix"
 caption: "Aaron a-shirt de pecatrix"
 date: "08-02-2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c3baaebfd6c1378f0c779b80d29a6af9edd07496-1944x2592.jpg"
 intro: "Aaron A-shirt par pecatrix"
 title: "Aaron A-shirt par pecatrix"
 designs:

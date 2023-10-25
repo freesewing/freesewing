@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Dit is gemaakt uit zwarte t-shirtstof die geverfd werd met bleekwater. Voor het ontwerp werden woestijnplanten gebruikt."
 date: "2018-01-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e8834593713a2a6e4903d53e789b430449f947a-1280x960.jpg"
 intro: "Gebleekte Bruce door Reanna"
 title: "Gebleekte Bruce door Reanna"
 designs:

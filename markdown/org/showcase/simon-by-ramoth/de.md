@@ -2,7 +2,6 @@
 maker: "Ramoth"
 caption: "Ramoths beeindruckender erster Simon"
 date: "24.08.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f8d6b349216c86df4b27ddd6696dc2aeb7ada1c9-600x779.jpg"
 intro: "Ramoth hat diesen fantastischen ersten Entwurf des Simon-Shirts gemacht und großzügig einige hilfreiche Passformhinweise geteilt. Sie sagten:"
 title: "Ramoths erster Entwurf des Simon mit passenden Notizen"
 designs:

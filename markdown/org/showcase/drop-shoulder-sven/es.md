@@ -2,7 +2,6 @@
 maker: "Jazmín"
 caption: "Si extiendes el brazo de este Sven de hombros caídos, podrás sentir realmente el efecto de la modificación."
 date: "2023-01-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/eb6eb402ffce2e41a4bf6a7f1b110e01ed98666f-1956x2608.jpg"
 intro: "La usuaria de FreeSewing Jasmine ha creado este impresionante Sven de hombros caídos con un pequeño pliegue en la manga, y es increíble. Pero la cosa se pone mejor, porque ha creado un artículo sobre cómo hacerlo todo. Echa un vistazo al producto acabado aquí, ¡pero desplázate hacia abajo si quieres saber cómo hacerlo!"
 title: "Drop Shoulder Sven"
 designs:

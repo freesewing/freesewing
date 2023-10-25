@@ -2,4 +2,7 @@
 title: "Haut drapé Diana"
 ---
 
-<PatternDocs pattern='diana' />
+
+
+<DesignInfo design='diana' docs />
+

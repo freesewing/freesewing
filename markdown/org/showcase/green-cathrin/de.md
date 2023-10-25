@@ -2,7 +2,6 @@
 maker: "Natalia Sayang"
 caption: "Ein Cathrin-Korsett aus Quilting-Baumwolle und Canvas"
 date: "10.19.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ac93904c42357ce18237c3ce2c071559e9d185a0-640x1136.png"
 intro: "Ein grünes 11-teiliges Cathrin Korsett"
 title: "Ein grünes 11-teiliges Cathrin Korsett"
 designs:

@@ -2,7 +2,6 @@
 maker: "RedBlaqueGolden"
 caption: "Друга версія Саймона з мереживом від RedBlaqueGolden"
 date: "2021-09-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/987fdefa57c5259ca090b0b120a5e5218eb8ef67-1614x1526.jpg"
 intro: "З чого почати з цим фантастичним вбранням? Користувач FreeSewing сказав це найкраще:"
 title: "Вінтажне вбрання високої моди від RedBlaqueGolden з Саймоном і Сенді"
 designs:

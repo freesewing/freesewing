@@ -14,7 +14,7 @@ Als een patroondeel niet is afgedrukt, betekent dit dat je het niet nodig hebt.
 - Uit je buitenstof:
   - 2x **deel 1**: Dit is het achterpand. Knip deze uit je **buitenstof** met _goede kanten op elkaar_
   - 2x **deel 2**: Dit is het voorpand. Knip deze uit je **buitenstof** met _goede kanten op elkaar_
-  - 2x **deel 3**: Dit is de tailleband. Knip dit uit je **buitenstof**
+  - Knip 2 van deze uit je **voeringsstof** _aan de stofvouw_ Knip dit uit je **buitenstof**
   - 2x **deel 4**: Dit is de enkelboord. Knip deze, van je **hoofdstof** met _goede kanten op elkaar_ (niet nodig als je koos om geen elastische zoom te hebben)
   - 2x **deel 7**: Dit is de paspel voor de achterzak. Knip 2 van deze uit je **buitenstof** met _goede kanten op elkaar_
 - Uit je voeringsstof:
@@ -25,10 +25,9 @@ Als een patroondeel niet is afgedrukt, betekent dit dat je het niet nodig hebt.
 
 <Warning>
 
-#### Opmerkingen
+#### Caveats
 
-- Er zit geen naadtoeslag op de vlieseline
-- Er zit extra naadtoeslag op de tailleband en zoom
-- De tailleband is slechts een rechthoek, dus hij is niet volledig bedrukt om papier te besparen.
+- There is no seam allowance on the interfacing
+- There is extra seam allowance on the waist band and hem
 
 </Warning>

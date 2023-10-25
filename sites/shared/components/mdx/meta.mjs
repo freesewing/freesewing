@@ -1,31 +1,19 @@
+import { useState, useEffect } from 'react'
 import { siteConfig } from 'site/site.config.mjs'
+import { horFlexClasses } from 'shared/utils.mjs'
 // List of authors
 import { authors as allAuthors } from 'config/authors.mjs'
 import { docUpdates } from 'site/prebuild/doc-updates.mjs'
-// Components
-import { PageLink } from 'shared/components/page-link.mjs'
-import { DateTime, Interval } from 'luxon'
 // Hooks
 import { useTranslation } from 'next-i18next'
 import { EditIcon } from 'shared/components/icons.mjs'
+import { useAccount } from 'shared/hooks/use-account.mjs'
+// Components
+import { PageLink } from 'shared/components/link.mjs'
+import { TimeAgo, ns as timeagoNs } from 'shared/components/timeago/index.mjs'
+import { BookmarkButton } from 'shared/components/bookmarks.mjs'
 
-export const TimeAgo = ({ date, t }) => {
-  const i = Interval.fromDateTimes(DateTime.fromISO(date), DateTime.now())
-    .toDuration(['hours', 'days', 'months', 'years'])
-    .toObject()
-  let ago = ''
-  if (i.years < 1 && i.months < 1) {
-    if (Math.floor(i.days) === 1) ago += `${t('oneDay')}`
-    else if (Math.floor(i.days) === 0) ago += `${t('lessThanADay')}`
-  } else {
-    if (i.years === 1) ago += `${i.years} ${t('year')}, `
-    else if (i.years > 1) ago += `${i.years} ${t('years')}, `
-    if (i.months === 1) ago += `${i.months} ${t('month')}`
-    else if (i.months > 1) ago += `${i.months} ${t('months')}`
-  }
-
-  return `${ago} ${t('ago')}`
-}
+export const ns = ['account', timeagoNs]
 
 const PersonList = ({ list }) =>
   list ? (
@@ -66,17 +54,25 @@ const CreditsList = ({ updates, frontmatter, locale, t }) => (
       </li>
     )}
     <li className="list-none mt-2">
-      <b className="pr-2">{t('lastUpdated')}:</b> <TimeAgo date={updates.u} t={t} />
+      <b className="pr-2">{t('lastUpdated')}:</b> <TimeAgo date={updates.u} />
     </li>
   </ul>
 )
 
 export const MdxMetaData = ({ frontmatter, locale, slug }) => {
-  const { t } = useTranslation('docs')
+  const { control } = useAccount()
+  const { t, i18n } = useTranslation('docs')
+
+  const [localControl, setLocalControl] = useState(1)
+
+  // Prevent hydration issues
+  useEffect(() => {
+    setLocalControl(control)
+  }, [])
 
   const updates = docUpdates[slug] || {}
   frontmatter.maintainers = ['joostdecock']
-  locale = 'fr'
+  locale = i18n.language
 
   /*
    * FIXME
@@ -88,13 +84,18 @@ export const MdxMetaData = ({ frontmatter, locale, slug }) => {
 
   return (
     <div className="hidden xl:block mb-4">
-      <a
-        href={`https://github.dev/freesewing/freesewing/blob/develop/markdown/${siteConfig.tld}/${slug}/en.md`}
-        className="btn btn-success flex flex-row justify-between items-center w-full px-4 bg-gradient-to-r from-primary to-accent mb-4 hover:from-accent hover:to-accent"
-      >
-        <EditIcon />
-        <span>{t('editThisPage')}</span>
-      </a>
+      {localControl > 2 && (
+        <div className="flex flex-col gap-2 max-w-xs">
+          <a
+            href={`https://github.dev/freesewing/freesewing/blob/develop/markdown/${siteConfig.tld}/${slug}/en.md`}
+            className={`btn btn-secondary btn-outline ${horFlexClasses}`}
+          >
+            <EditIcon />
+            <span>{t('editThisPage')}</span>
+          </a>
+          <BookmarkButton slug={slug} title={frontmatter.title} type="doc" />
+        </div>
+      )}
       <div
         className={`
           mdx mdx-toc text-base-content text-base

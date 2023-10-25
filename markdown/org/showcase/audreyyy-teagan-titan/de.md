@@ -2,7 +2,6 @@
 maker: "Audreyyy"
 caption: "Old Shattterhand Modelle Titan und Teagan"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7f86048972a716b1e07a89d33a21c8163d541ddc-3888x5184.jpg"
 intro: "Das fantastische Teagan Shirt und die Titan Pant von Audreyyy"
 title: "Das fantastische Teagan Shirt und die Titan Pant von Audreyyy"
 designs:

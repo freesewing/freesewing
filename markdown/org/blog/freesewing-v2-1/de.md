@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "In diesem Beitrag geht es hauptsächlich um unsere Arbeit an der progressiven Offenlegung. Außerdem: Drei neue Schnittmuster!"
 date: "2019-10-06"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/52db6852590a15208dace4a16a6a1c824037e400-2000x1500.jpg"
 intro: "Wir haben gerade FreeSewing v2.1 veröffentlicht 🎉"
 title: "FreeSewing v2.1: Drei neue Muster, Expertenmodus und Hilfe beim Massnehmen"
 ---

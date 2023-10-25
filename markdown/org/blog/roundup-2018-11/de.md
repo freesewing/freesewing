@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dein Login-Hintergrund für Dezember"
 date: "2018-11-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ebdb5fce7cd9b56f2f9d51d05dbda187195e30b6-1920x1280.jpg"
 intro: "Monatliche Zusammenfassung - November 2018: Neue Schaukästen und ein (falscher) Sicherheitsalarm"
 title: "Monatliche Zusammenfassung - November 2018: Neue Schaukästen und ein (falscher) Sicherheitsalarm"
 ---

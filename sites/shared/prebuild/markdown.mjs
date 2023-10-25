@@ -71,6 +71,7 @@ const loadFolderFrontmatter = async (key, site, folder, transform = false, lang 
       .split(`markdown/${site}/${site === 'dev' ? '' : folder + '/'}`)
       .pop()
       .split(`.md:${key}:`)
+
     if (chunks.length === 2 && chunks[0].length > 1) {
       /*
        * Figure out the language and make sure we have an key for that language
@@ -81,7 +82,7 @@ const loadFolderFrontmatter = async (key, site, folder, transform = false, lang 
       /*
        * Add page to our object with slug as key and title as value
        */
-      let slug = (prefix + chunks[0].slice(0, -3)).replace(`/./`, `/`)
+      let slug = prefix + chunks[0].slice(0, -3).replace('./', '')
       if (slug === prefix) slug = slug.slice(0, -1)
       if (slug !== 'docs/.')
         pages[lang][slug] = transform
@@ -116,8 +117,10 @@ const mergeOrder = (titles, order, withSlug = false) => {
 const formatDate = (date, slug, lang) => {
   date = date.split('-')
   if (date.length === 1) date = date[0].split('.')
-  if (date.length === 1) console.log(`Could not format date ${date} from ${slug} (${lang})`)
-  else {
+  if (date.length === 1) {
+    if (date[0].length === 8) return date[0]
+    else console.log(`Could not format date ${date} from ${slug} (${lang})`)
+  } else {
     if (date[0].length === 4) return date.join('')
     else return date.reverse().join('')
   }
@@ -127,7 +130,7 @@ const formatDate = (date, slug, lang) => {
  * Loads all docs files, titles and order
  */
 const loadDocs = async (site) => {
-  const folder = site === 'org' ? 'docs' : '.'
+  const folder = site === 'org' ? 'docs' : ''
   const titles = await loadFolderFrontmatter('title', site, folder)
   // Order is the same for all languages, so only grab EN files
   const order = await loadFolderFrontmatter('order', site, folder, false, 'en')
@@ -144,8 +147,6 @@ const loadBlog = async () => {
   const order = await loadFolderFrontmatter('date', 'org', 'blog', formatDate, 'en')
   // Author is the same for all languages, so only grab EN files
   const authors = await loadFolderFrontmatter('author', 'org', 'blog', false, 'en')
-  // Image is the same for all languages, so only grab EN files
-  const images = await loadFolderFrontmatter('image', 'org', 'blog', false, 'en')
 
   // Merge titles and order for EN
   const merged = {}
@@ -155,7 +156,6 @@ const loadBlog = async () => {
       o: order.en[slug],
       s: slug,
       a: authors.en[slug],
-      i: images.en[slug],
     }
   // Order based on post data (descending)
   const ordered = orderBy(merged, 'o', 'desc')
@@ -168,7 +168,7 @@ const loadBlog = async () => {
     posts[lang] = {}
     for (const post of ordered) {
       posts[lang][post.s] = { t: post.t }
-      if (lang === 'en') meta[post.s] = { a: post.a, d: post.o, i: post.i }
+      if (lang === 'en') meta[post.s] = { a: post.a, d: post.o }
     }
   }
 
@@ -176,7 +176,7 @@ const loadBlog = async () => {
 }
 
 /*
- * Loads all showcase posts, titles and order
+ * Loads all showcase posts, titles, designs and order
  */
 const loadShowcase = async () => {
   const titles = await loadFolderFrontmatter('title', 'org', 'showcase')
@@ -184,8 +184,6 @@ const loadShowcase = async () => {
   const order = await loadFolderFrontmatter('date', 'org', 'showcase', formatDate, 'en')
   // Author is the same for all languages, so only grab EN files
   const makers = await loadFolderFrontmatter('maker', 'org', 'showcase', false, 'en')
-  // Image is the same for all languages, so only grab EN files
-  const images = await loadFolderFrontmatter('image', 'org', 'showcase', false, 'en')
 
   // Merge titles and order for EN
   const merged = {}
@@ -195,7 +193,6 @@ const loadShowcase = async () => {
       o: order.en[slug],
       s: slug,
       m: makers.en[slug],
-      i: images.en[slug],
     }
   // Order based on post data (descending)
   const ordered = orderBy(merged, 'o', 'desc')
@@ -208,11 +205,24 @@ const loadShowcase = async () => {
     posts[lang] = {}
     for (const post of ordered) {
       posts[lang][post.s] = { t: post.t }
-      if (lang === 'en') meta[post.s] = { m: post.m, d: post.o, i: post.i }
+      if (lang === 'en') meta[post.s] = { m: post.m, d: post.o }
     }
   }
 
-  return { posts, meta }
+  /*
+   * Create list of showcase slugs per design
+   */
+  const designShowcases = {}
+  // Designs is the same for all languages, so only grab EN files
+  const designs = await loadFolderFrontmatter('designs', 'org', 'showcase', false, 'en')
+  for (const [slug, list] of Object.entries(designs.en)) {
+    for (const design of JSON.parse(list)) {
+      if (typeof designShowcases[design] === 'undefined') designShowcases[design] = []
+      designShowcases[design].push(slug.split('/').pop())
+    }
+  }
+
+  return { posts, meta, designShowcases }
 }
 
 /*
@@ -279,4 +289,5 @@ export const prebuildPosts = async (store) => {
   await writeFiles('newsletter', 'org', store.posts.newsletter)
   await writeFile('blog-meta', 'meta', 'org', store.posts.blog.meta)
   await writeFile('showcase-meta', 'meta', 'org', store.posts.showcase.meta)
+  await writeFile('design-examples', 'examples', 'org', store.posts.showcase.designShowcases)
 }

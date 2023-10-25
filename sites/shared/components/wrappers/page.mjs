@@ -1,5 +1,9 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 import React, { useState, useEffect, useContext } from 'react'
+import { nsMerge } from 'shared/utils.mjs'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useTheme } from 'shared/hooks/use-theme.mjs'
 // Components
@@ -10,14 +14,14 @@ import { DefaultLayout, ns as defaultLayoutNs } from 'site/components/layouts/de
 import { Feeds } from 'site/components/feeds.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 
-export const ns = [...new Set([...layoutNs, ...defaultLayoutNs])]
+export const ns = nsMerge(layoutNs, defaultLayoutNs, 'status', 'hodl')
 
 /* This component should wrap all page content */
 export const PageWrapper = (props) => {
   /*
    * Deconstruct props
    */
-  const { layout = DefaultLayout, footer = true, header = false, children = [], path = [] } = props
+  const { layout = DefaultLayout, footer = true, header = true, children = [], path = [] } = props
   // Title is typically set in props.t but check props.title too
   const pageTitle = props.t ? props.t : props.title ? props.title : null
 
@@ -31,12 +35,13 @@ export const PageWrapper = (props) => {
    * Contexts
    */
   const { modalContent } = useContext(ModalContext)
+  const { LoadingStatus } = useContext(LoadingStatusContext)
 
   /*
    * This forces a re-render upon initial bootstrap of the app
    * This is needed to avoid hydration errors because theme can't be set reliably in SSR
    */
-  const [theme] = useTheme()
+  const { theme } = useTheme()
   const [currentTheme, setCurrentTheme] = useState()
   useEffect(() => setCurrentTheme(theme), [currentTheme, theme])
 
@@ -52,12 +57,16 @@ export const PageWrapper = (props) => {
       {pageTitle && (
         <Head>
           <meta property="og:title" content={pageTitle} key="title" />
+          {props.intro && (
+            <meta property="og:description" content={props.intro} key="description" />
+          )}
         </Head>
       )}
       <div
         data-theme={currentTheme} // This facilitates CSS selectors
         key={currentTheme} // This forces the data-theme update
       >
+        <LoadingStatus />
         <Feeds />
         <LayoutWrapper {...childProps}>
           {Layout ? <Layout {...childProps}>{children}</Layout> : children}

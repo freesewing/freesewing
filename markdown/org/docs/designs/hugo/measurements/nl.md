@@ -2,4 +2,4 @@
 title: "Hugo capuchon: Benodigde afmetingen"
 ---
 
-<PatternMeasurements pattern='hugo' />
+<DesignMeasurements design='hugo' />

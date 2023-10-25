@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Imaginez vous et lui, dans des manteaux assortis."
 date: "2018-01-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d0ac31adcf8e14cec377aada6c688394a15199d8-1920x1440.webp"
 intro: "Celui-ci est pour les dames -- et je ne parle pas (juste) de cette image du craquant Benoît Cumberbatch en haut de l'article."
 title: "Annonce de Carlita, la version féminine de notre manteau Carlton."
 ---
@@ -39,7 +38,7 @@ De cette façon, la poche peut être intégrée dans la découpe princesse un pe
 
 ### Une option supplémentaire : L'intensité de la découpe princesse
 
-Carlita a aussi une option supplémentaire que Carlton n'a pas, du nom un peu élaboré [Intensité de la découpe princesse](/docs/patterns/carlita/options#princessSeamSmoothFactor).
+Carlita a aussi une option supplémentaire que Carlton n'a pas, du nom un peu élaboré [Intensité de la découpe princesse](/docs/designs/carlita/options#princessSeamSmoothFactor).
 
 Cette option permet de régler la netteté de la découpe princesse après avoir ajouté le volume supplémentaire de votre poitrine.
 

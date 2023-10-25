@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "This post describes what's new in version 2.2 of FreeSewing"
 date: "2020-02-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/356c127b8b37937b9537790d71a949c236027513-1920x1280.jpg"
 intro: "A look at what's new in FreeSewing 2.2, including Breanna, our bodice block for womenswear"
 title: "A look at what's new in FreeSewing 2.2, including Breanna, our bodice block for womenswear"
 ---
@@ -17,8 +16,6 @@ The [changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.
 Let's have a look at what it all means:
 
 ## New pattern: Breanna is a bodice block for womenswear
-
-<Linedrawing pattern="breanna" />
 
 Meet [Breanna](/designs/breanna/), our bodice block for womenswear. 
 
@@ -44,7 +41,7 @@ a while, chances are drafting your own block/sloper has perpetually been on your
 to-do list. Well, good news, because here is your block ready to go.
 
 Oh, and of course it has all the bells and whistles you can expect from us.
-Have a look at [the pattern options](/docs/patterns/breanna/options/) and
+Have a look at [the pattern options](/docs/designs/breanna/options/) and
 I think you'll be positively impressed. If nothing else, this block can accommodate 1 or 2 bust 
 darts in 15 different places, giving you 120 unique ways to place your bust dart(s).
 
@@ -115,7 +112,7 @@ that by lowering the bar to try out our platform, more people will give FreeSewi
 
 The hardest thing about adding support for standard sizes? Figuring out what the heck standard sizes
 are supposed to be. We took a stab at it, and if you're curious you can [check out
-our sizing table here](/docs/various/sizes/). 
+our sizing table here](/sizes/). 
 
 For menswear, our size range is 32 to 50, and they are based on a size 38 baseline that we then graded 
 up and down.  

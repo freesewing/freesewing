@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Opmerking: deze post is best lang. Maar bijlange niet zo lang als dit boek"
 date: "2020-08-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1a143c96b4afc8c12d2014c5605bfd1e63d917d0-2000x1348.jpg"
 intro: "Help me om FreeSewing groter te laten worden dan wat ik zelf kan doen"
 title: "Help me om FreeSewing groter te laten worden dan wat ik zelf kan doen"
 ---
@@ -63,9 +62,9 @@ Dus ik neem Julians advies ter harte en vraag om hulp. Voordat we daar echter aa
 
 Om er zeker van te zijn dat jouw waarden overeenkomen met die van FreeSewing, neem dan even de tijd om jezelf bekend te maken met:
 
- - [Onze gemeenschapsnormen](/docs/various/community-standards/)
+ - [Onze gemeenschapsnormen](/docs/about/community-standards/)
  - [Onze gedragscode](https://freesewing.dev/contributors/code-of-conduct/)
- - [Onze inkomstenbelofte](/docs/various/pledge/)
+ - [Onze inkomstenbelofte](/docs/about/pledge/)
 
 Als het lezen hiervan je blij maakt in plaats van boos, dan kunnen we je hulp goed gebruiken :)
 
@@ -148,7 +147,7 @@ Je weet hoe je dingen mooi maakt, ook al weer je niet zeker hoe je ze kan laten 
 
 ### Wat heb ik hieraan?
 
-We kunnen je geen geld geven. Bekijk alsjeblieft [onze belofte rond inkomsten](/docs/various/pledge/) om te begrijpen waarom dat zo is.
+We kunnen je geen geld geven. Bekijk alsjeblieft [onze belofte rond inkomsten](/docs/about/pledge/) om te begrijpen waarom dat zo is.
 
 Wat we kunnen bieden is verantwoordelijkheid, erkenning en een aandeel in iets dat ernaar streeft om een positieve kracht te zijn in deze wereld.
 

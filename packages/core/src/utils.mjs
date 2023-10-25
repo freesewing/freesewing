@@ -2,6 +2,18 @@ import { Bezier } from 'bezier-js'
 import { Path } from './path.mjs'
 import { Point } from './point.mjs'
 
+/*
+ * See: https://en.wikipedia.org/wiki/Golden_ratio
+ */
+export const goldenRatio = 1.618034
+
+/*
+ * cbqc = Cubic Bezier Quarter Circle
+ * The value to best approximate a (quarter) circle with cubic Bézier curves
+ * See: https://spencermortensen.com/articles/bezier-circle/
+ */
+export const cbqc = 0.55191502449351
+
 //////////////////////////////////////////////
 //            PUBLIC  METHODS               //
 //////////////////////////////////////////////
@@ -477,8 +489,8 @@ export function mergeI18n(designs, options) {
  * @param {object} optionsConfig - The pattern's options config
  * @return {object} result - An object with the merged options and their values
  */
-export function mergeOptions(settings, optionsConfig) {
-  const merged = typeof settings.options === 'undefined' ? {} : { ...settings.option }
+export function mergeOptions(settings = {}, optionsConfig) {
+  let merged = {}
   for (const [key, option] of Object.entries(optionsConfig)) {
     if (typeof option === 'object') {
       if (typeof option.pct !== 'undefined') merged[key] = option.pct / 100
@@ -489,6 +501,7 @@ export function mergeOptions(settings, optionsConfig) {
       else if (typeof option.dflt !== 'undefined') merged[key] = option.dflt
     } else merged[key] = option
   }
+  if (typeof settings.options === 'object') merged = { ...merged, ...settings.options }
 
   return merged
 }
@@ -693,7 +706,7 @@ export function __addNonEnumProp(obj, name, value) {
 export function __asNumber(value, param, method, log) {
   if (typeof value === 'number') return value
   if (typeof value === 'string') {
-    log.warning(
+    log.warn(
       `Called \`${method}(${param})\` but \`${param}\` is not a number. Will attempt to cast to Number`
     )
     try {
@@ -730,7 +743,7 @@ export function __isCoord(value) {
  * @return {string} macroName - The inernal macroName
  */
 export function __macroName(name) {
-  return `__macro_${name}`
+  return `__macro_${name.toLowerCase()}`
 }
 
 /**
@@ -803,7 +816,7 @@ function matrixTransform(transformationType, matrix, values) {
       const centerY = values[2]
 
       // if there's a rotation center, we need to move the origin to that center
-      if (centerX) {
+      if (centerX !== undefined) {
         matrix = matrixTransform('translate', matrix, [centerX, centerY])
       }
 
@@ -820,7 +833,7 @@ function matrixTransform(transformationType, matrix, values) {
       ]
 
       // move the origin back to origin
-      if (centerX) {
+      if (centerX !== undefined) {
         matrix = matrixTransform('translate', matrix, [-centerX, -centerY])
       }
       break
@@ -875,35 +888,7 @@ export function applyTransformToPoint(transform, point) {
 
   // The starting matrix
   let matrix = [1, 0, 0, 1, 0, 0]
-
-  // Update matrix for transform
-  switch (name) {
-    case 'matrix':
-      matrix = values
-      break
-    case 'translate':
-      matrix[4] = values[0]
-      matrix[5] = values[1]
-      break
-    case 'scale':
-      matrix[0] = values[0]
-      matrix[3] = values[1]
-      break
-    case 'rotate': {
-      const angle = (values[0] * Math.PI) / 180
-      const cos = Math.cos(angle)
-      const sin = Math.sin(angle)
-      console.log('in rotate', { angle })
-      matrix = [cos, sin, -sin, cos, 0, 0]
-      break
-    }
-    case 'skewX':
-      matrix[2] = Math.tan((values[0] * Math.PI) / 180)
-      break
-    case 'skewY':
-      matrix[1] = Math.tan((values[0] * Math.PI) / 180)
-      break
-  }
+  matrix = matrixTransform(name, matrix, values)
 
   // Apply the matrix transform to the coordinates
   const newX = point.x * matrix[0] + point.y * matrix[2] + matrix[4]
@@ -919,7 +904,7 @@ export function applyTransformToPoint(transform, point) {
  * Get the bounds of a given object after transforms have been applied
  * @param  {Object}           boundsObj   any object with `topLeft` and `bottomRight` properties
  * @param  {Boolean|String[]} transforms  the transforms to apply to the bounds, structured as they would be for being applied as an svg attribute
- * @return {Object}                       `tl` and `br` for the transformed bounds
+ * @return {Object}                       `topLeft` and `bottomRight` for the transformed bounds
  */
 export function getTransformedBounds(boundsObj, transforms = false) {
   if (!boundsObj.topLeft) return {}
@@ -951,7 +936,7 @@ export function getTransformedBounds(boundsObj, transforms = false) {
   )
 
   return {
-    tl: transformedTl,
-    br: transformedBr,
+    topLeft: transformedTl,
+    bottomRight: transformedBr,
   }
 }

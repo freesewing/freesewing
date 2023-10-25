@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { createContext, useState } from 'react'
 import { objUpdate } from 'shared/utils.mjs'
 import { siteNav as defaultSiteNav } from 'site/prebuild/sitenav.mjs'

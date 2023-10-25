@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Beeld je naast hem in, met een matchende jas."
 date: "2018-01-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d0ac31adcf8e14cec377aada6c688394a15199d8-1920x1440.webp"
 intro: "Deze is voor de dames - en ik heb het niet (alleen) over die foto van hartenbreker Benedict Cumberbatch bovenaan deze post."
 title: "We presenteren Carlita, de damesversie van onze Carlton jas."
 ---
@@ -39,7 +38,7 @@ Op deze manier kan de zak geïntegreerd worden in de prinsessennaad, ergens onde
 
 ### Eén extra optie: De prinsessennaad ronding factor
 
-Carlita heeft ook een extra optie die Carlton niet heeft, de ietwat uitgebreid genaamde [prinsessennaad ronding factor](/docs/patterns/carlita/options#princessSeamSmoothFactor).
+Carlita heeft ook een extra optie die Carlton niet heeft, de ietwat uitgebreid genaamde [prinsessennaad ronding factor](/docs/designs/carlita/options#princessSeamSmoothFactor).
 
 Dit controleert hoe scherp de prinsessennaad terug naar binnen keert na het extra volume aan de buste te hebben toegevoegd.
 

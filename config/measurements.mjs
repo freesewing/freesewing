@@ -30,7 +30,7 @@ export const measurements = [
   'upperLeg',
   'waist',
   'waistBack',
-  'waistToArmhole',
+  'waistToArmpit',
   'waistToFloor',
   'waistToHips',
   'waistToKnee',

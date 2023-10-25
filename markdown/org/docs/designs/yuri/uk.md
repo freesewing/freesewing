@@ -2,4 +2,7 @@
 title: "Худі Юрі"
 ---
 
-<PatternDocs pattern='yuri' />
+
+
+<DesignInfo design='yuri' docs />
+

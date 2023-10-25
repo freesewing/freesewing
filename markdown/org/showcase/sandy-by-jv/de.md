@@ -2,7 +2,6 @@
 maker: "RedBlaqueGolden"
 caption: "JV in einem Sandy mit passender Maske"
 date: "20.10.2020"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/35daf9e79d06a8a12972a1e0bd87bce6f3c92028-1536x2048.jpg"
 intro: "JV teilte ihr neues Kleid mit dem Sandy-Rock auf Twitter."
 title: "JVs Kleid aus einem Sandy-Kreisrock"
 designs:

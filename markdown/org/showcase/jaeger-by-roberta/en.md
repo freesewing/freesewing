@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "A flamboyant flamingo Jaeger jacket"
 date: "2021-06-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3bbc589317e13e279d05f3b13eed309efabbfe23-480x534.jpg"
 intro: "This Jaeger jacket has all of us at FreeSewing considering how we can work flamingo prints into all of our makes."
 title: "Jaeger by Roberta"
 designs: ["jaeger"]

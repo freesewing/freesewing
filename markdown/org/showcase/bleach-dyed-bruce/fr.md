@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Ils sont faits à partir du tissu de tee-shirt noir qu'elle a blanchi elle-même, en utilisant des plantes désertiques pour le design."
 date: "2018-01-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e8834593713a2a6e4903d53e789b430449f947a-1280x960.jpg"
 intro: "Bruce blanchi à la javel par Reanna"
 title: "Bruce blanchi à la javel par Reanna"
 designs:

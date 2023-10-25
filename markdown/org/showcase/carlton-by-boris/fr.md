@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Boris dans son incroyable manteau Carlton"
 date: "2023-02-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8d7e149722688b531c2cfbeaac82de4e6730f156-2252x4000.jpg"
 intro: "Je ne sais même pas par où commencer. Veux-tu bien regarder ce manteau ? C'est incroyable."
 title: "Classic Carlton par Boris"
 designs:

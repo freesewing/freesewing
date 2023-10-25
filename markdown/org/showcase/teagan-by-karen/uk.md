@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Футболка Teagan з рельєфним подолом з мереживної тканини"
 date: "2021-06-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1bbdf2752cb10d9beee022fa0e770fe9bb03fd09-3024x4032.jpg"
 intro: "Ще одна версія футболки Тіган від Карен. Цього разу виконана з чорного мереживного полотна і з додаванням зубчастого подолу."
 title: "Футболка з гребінцем Teagan від Karen"
 designs:

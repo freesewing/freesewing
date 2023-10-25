@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Rob in einem sonnigen Hinterhofgarten. Er trägt ein angepasstes Wahid mit doppelter Brust und eine passende Charlie-Hose."
 date: "2023-07-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f007d49c1d688a66f6c2a865b9ac1e08654448f6-1080x1350.jpg"
 intro: "Machst du Witze?!? Das Duo Charlie und Wahid ist so charmant und kultiviert, dass es lächerlich ist. Der von @sewingdentist auf Instagram aus grüner Fischgräten-Shetlandwolle gefertigte Mantel ist unserer Meinung nach tadellos. Bonuspunkte gibt es für die coole doppelreihige Änderung, die du unten noch genauer sehen kannst."
 title: "Grüner Charlie und Wahid Anzug"
 designs:

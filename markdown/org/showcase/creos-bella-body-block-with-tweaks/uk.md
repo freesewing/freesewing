@@ -2,7 +2,6 @@
 maker: "Крео."
 caption: "Белла з коригуванням"
 date: "2022-08-08"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fed29bed9342da4b3d26837c43de5cc08c15c148-1411x1634.jpg"
 intro: "Creo поділилися своїм боді-блоком Bella в чаті FreeSewing Discord. Вони зробили кілька коригувань, щоб досягти ідеальної посадки! Коментарі щодо коригувань:"
 title: "Боді-блок Bella від Creo з доробкою"
 designs:

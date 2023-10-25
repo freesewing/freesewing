@@ -2,4 +2,7 @@
 title: "Trayvon, corbata"
 ---
 
-<PatternDocs pattern='trayvon' />
+
+
+<DesignInfo design='trayvon' docs />
+

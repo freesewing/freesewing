@@ -2,4 +2,7 @@
 title: "Bella, ein Grundschnitt"
 ---
 
-<PatternDocs pattern='bella' />
+
+
+<DesignInfo design='bella' docs />
+

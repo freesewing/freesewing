@@ -1,256 +1,242 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
-import { capitalize, shortDate } from 'shared/utils.mjs'
+import {
+  workbenchHash,
+  capitalize,
+  shortDate,
+  notEmpty,
+  horFlexClassesNoSm,
+} from 'shared/utils.mjs'
+import yaml from 'js-yaml'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
-import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
-import { Spinner } from 'shared/components/spinner.mjs'
+import { AuthWrapper } from 'shared/components/wrappers/auth/index.mjs'
+import { StringInput, MarkdownInput, ListInput } from 'shared/components/inputs.mjs'
+import {
+  SaveIcon,
+  SaveAsIcon,
+  EditIcon,
+  PlusIcon,
+  BookmarkIcon,
+  ExportIcon,
+} from 'shared/components/icons.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
+import { PageLink } from 'shared/components/link.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
-export const ns = ['wbsave']
+export const ns = ['workbench', 'status']
 
-const whereAreWe = (router = false, design, from) => {
-  const info = {}
-  if (router?.asPath) {
-    info.locale = router.locale
-    if (from && from.type) {
-      if (from.type === 'pattern') {
-        // Editing an existing pattern
-        info.edit = true
-        info.patternId = from.data.id
-        if (from.data.set) info.set = from.data.setId
-        else if (from.data.cset) info.cset = from.data.csetId
-      } else if (from.type === 'new') {
-        // Creating a new pattern
-        const chunks = router.asPath.split('/')
-        info.design = chunks[3]
-        info.from = chunks[4]
-        info.fromId = chunks[5].split('#').shift()
-        if (info.design !== design) throw 'Design passed to view does not match URL state'
-      }
-    }
-  }
-
-  return info
-}
-
-const defaultName = (info) =>
-  `${capitalize(info.design)} / ${info.from}-${info.fromId} / ${shortDate(info.locale)}`
-
-const SaveNewPattern = ({
-  t,
-  design,
-  settings,
-  info,
-  backend,
-  loading,
-  startLoading,
-  stopLoading,
-  toast,
-  router,
-}) => {
-  // State
-  const [name, setName] = useState(defaultName(info))
-
-  const update = async (evt) => {
-    evt.preventDefault()
-    if (evt.target.value !== name) setName(evt.target.value)
-  }
-
-  const save = async () => {
-    startLoading()
-    const data = {
-      data: {},
-      design,
-      name,
-      settings,
-    }
-    if (data.settings.measurements) delete data.settings.measurements
-    if (data.settings.embed) delete data.settings.embed
-    if (info.from === 'set' && info.fromId) data.set = Number(info.fromId)
-    else if (info.from === 'cset' && info.fromId) data.cset = Number(info.fromId)
-    else return toast.error(<span>¯\_(ツ)_/¯</span>)
-
-    const result = await backend.createPattern(data)
-    if (result.success) {
-      toast.for.settingsSaved()
-      router.push(`/patterns/${result.data.pattern.id}`)
-    } else toast.for.backendError()
-    stopLoading()
-  }
-
-  return (
-    <div className="max-w-sm w-full">
-      <h2>Save to your FreeSewing account</h2>
-      <label className="font-bold">{t('wbsave:giveItAName')}</label>
-      <input
-        value={name}
-        onChange={update}
-        className="input w-full input-bordered flex flex-row"
-        type="text"
-        placeholder={t('title')}
-      />
-      <button className="btn mt-4 capitalize btn-primary w-full" onClick={save}>
-        <span className="flex flex-row items-center gap-2">
-          {loading ? (
-            <>
-              <Spinner />
-              <span>{t('processing')}</span>
-            </>
-          ) : (
-            t('save')
-          )}
-        </span>
-      </button>
-    </div>
-  )
-}
-
-const SaveExistingPattern = ({
-  t,
-  design,
-  settings,
-  info,
-  backend,
-  loading,
-  startLoading,
-  stopLoading,
-  toast,
-  router,
-  from,
-}) => {
-  // State
-  const [name, setName] = useState(from.name ? from.name : defaultName(info))
-
-  const update = async (evt) => {
-    evt.preventDefault()
-    if (evt.target.value !== name) setName(evt.target.value)
-  }
-
-  const save = async () => {
-    startLoading()
-    const data = {
-      settings: {
-        ...settings,
-        measurements: { ...settings.measurements },
-      },
-    }
-    if (data.settings.measurements) delete data.settings.measurements
-    if (data.settings.embed) delete data.settings.embed
-
-    const result = await backend.updatePattern(from.data.id, data)
-    if (result.success) {
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
-    stopLoading()
-  }
-
-  const saveAs = async () => {
-    startLoading()
-    const data = {
-      data: {},
-      design,
-      name,
-      settings: {
-        ...settings,
-        measurements: { ...settings.measurements },
-      },
-    }
-    if (data.settings.measurements) delete data.settings.measurements
-    if (data.settings.embed) delete data.settings.embed
-    if (info.set) data.set = info.set
-    else if (info.cset) data.cset = info.cset
-    else return toast.error(<span>¯\_(ツ)_/¯</span>)
-
-    const result = await backend.createPattern(data)
-    if (result.success) {
-      toast.for.settingsSaved()
-      router.push(`/patterns/${result.data.pattern.id}`)
-    } else toast.for.backendError()
-    stopLoading()
-  }
-
-  return (
-    <>
-      <div className="max-w-sm w-full">
-        <h2>{t('savePattern')}</h2>
-        <button className="btn mt-4 capitalize btn-primary w-full" onClick={save}>
-          <span className="flex flex-row items-center gap-2">
-            {loading ? (
-              <>
-                <Spinner />
-                <span>{t('processing')}</span>
-              </>
-            ) : (
-              t('save')
-            )}
-          </span>
-        </button>
-      </div>
-      <div className="max-w-sm w-full">
-        <h2>{t('saveAsPattern')}</h2>
-        <label className="font-bold">{t('wbsave:giveItAName')}</label>
-        <input
-          value={name}
-          onChange={update}
-          className="input w-full input-bordered flex flex-row"
-          type="text"
-          placeholder={from.data.name ? from.data.name : t('title')}
-        />
-        <button className="btn mt-4 capitalize btn-primary w-full" onClick={saveAs}>
-          <span className="flex flex-row items-center gap-2">
-            {loading ? (
-              <>
-                <Spinner />
-                <span>{t('processing')}</span>
-              </>
-            ) : (
-              t('save')
-            )}
-          </span>
-        </button>
-      </div>
-    </>
-  )
-}
-
-export const SaveView = ({ design, settings, from = false }) => {
+export const SaveView = ({ design, settings, setView, saveAs }) => {
   // Hooks
-  const { t } = useTranslation(ns)
-  const { token } = useAccount()
-  const backend = useBackend(token)
+  const { t, i18n } = useTranslation(ns)
+  const backend = useBackend()
   const router = useRouter()
-  const toast = useToast()
-  // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
-  const info = whereAreWe(router, design, from)
+  // State
+  const [name, setName] = useState(`${capitalize(design)} / ${shortDate(router.locale)}`)
+  const [withNotes, setWithNotes] = useState(false)
+  const [notes, setNotes] = useState('')
+  const [savedId, setSavedId] = useState()
+  const [bookmarkedId, setBookmarkedId] = useState()
+  const [editAfterSaveAs, setEditAfterSaveAs] = useState(true)
 
-  const saveProps = {
-    t,
-    design,
-    settings,
-    info,
-    backend,
-    loading,
-    startLoading,
-    stopLoading,
-    toast,
-    router,
+  const addSettingsToNotes = () => {
+    setNotes(notes + '\n```yaml\n' + yaml.dump(settings) + '````')
+  }
+
+  const saveAsNewPattern = async () => {
+    setLoadingStatus([true, 'savingPattern'])
+    const patternData = { design, name, public: false, settings, data: {} }
+    if (withNotes) patternData.notes = notes
+    const result = await backend.createPattern(patternData)
+    if (result.success) {
+      const id = result.data.pattern.id
+      setLoadingStatus([
+        true,
+        <>
+          {t('status:patternSaved')} <small>[#{id}]</small>
+        </>,
+        true,
+        true,
+      ])
+      router.push(
+        `/account/patterns/${id}` +
+          (editAfterSaveAs ? '/edit' + workbenchHash({ settings, view: 'draft' }) : '')
+      )
+      if (editAfterSaveAs) setView('draft')
+    } else setLoadingStatus([true, 'backendError', true, false])
+  }
+
+  const savePattern = async () => {
+    setLoadingStatus([true, 'savingPattern'])
+    const patternData = { design, name, public: false, settings, data: {} }
+    const result = await backend.updatePattern(saveAs.pattern, patternData)
+    if (result.success) {
+      setLoadingStatus([
+        true,
+        <>
+          {t('status:patternSaved')} <small>[#{saveAs.pattern}]</small>
+        </>,
+        true,
+        true,
+      ])
+      setSavedId(saveAs.pattern)
+    } else setLoadingStatus([true, 'backendError', true, false])
+  }
+
+  const bookmarkPattern = async () => {
+    setLoadingStatus([true, 'creatingBookmark'])
+    const result = await backend.createBookmark({
+      type: 'pattern',
+      title: name,
+      url: window.location.pathname + window.location.search + window.location.hash,
+    })
+    if (result.success) {
+      const id = result.data.bookmark.id
+      setLoadingStatus([
+        true,
+        <>
+          {t('status:bookmarkCreated')} <small>[#{id}]</small>
+        </>,
+        true,
+        true,
+      ])
+      setBookmarkedId(id)
+    } else setLoadingStatus([true, 'backendError', true, false])
+  }
+
+  const docs = {}
+  for (const field of ['name', 'notes', 'goto']) {
+    docs[field] = <DynamicMdx language={i18n.language} slug={`docs/site/patterns/${field}`} />
   }
 
   return (
-    <div className="m-auto mt-24">
-      <h1 className="max-w-6xl m-auto text-center">{t('wbsave:title')}</h1>
-      <div className="px-4 lg:px-12 flex flex-row flex-wrap gap-4 lg:gap-8 justify-around">
-        {info.new ? <SaveNewPattern {...saveProps} /> : null}
-        {info.edit ? <SaveExistingPattern {...saveProps} from={from} /> : null}
+    <AuthWrapper>
+      <div className="m-auto mt-8 max-w-2xl px-4">
+        {saveAs && saveAs.pattern ? (
+          <>
+            <h2>{t('workbench:savePattern')}</h2>
+            {savedId && (
+              <Popout link>
+                <h5>{t('workbend:patternSaved')}</h5>
+                {t('workbench:see')}:{' '}
+                <PageLink
+                  href={`/account/patterns/${savedId}`}
+                  txt={`/account/patterns/${savedId}`}
+                />
+              </Popout>
+            )}
+            <button
+              className={`${horFlexClassesNoSm} btn btn-primary btn-lg w-full mt-2 mb-8`}
+              onClick={savePattern}
+            >
+              <SaveIcon className="h-8 w-8" />
+              {t('workbench:savePattern')} #{saveAs.pattern}
+            </button>
+          </>
+        ) : null}
+        <h2>{t('workbench:saveAsNewPattern')}</h2>
+        {bookmarkedId && (
+          <Popout link>
+            <h5>{t('workbench:patternBookmarkCreated')}</h5>
+            {t('workbench:see')}:{' '}
+            <PageLink
+              href={`/account/bookmarks/${bookmarkedId}`}
+              txt={`/account/bookmarks/${bookmarkedId}`}
+            />
+          </Popout>
+        )}
+        <div className="mb-4">
+          <StringInput
+            label={t('workbench:name')}
+            current={name}
+            update={setName}
+            valid={notEmpty}
+            docs={docs.name}
+          />
+
+          {withNotes ? (
+            <MarkdownInput
+              label={t('workbench:notes')}
+              current={notes}
+              update={setNotes}
+              docs={docs.notes}
+            />
+          ) : null}
+        </div>
+        <ListInput
+          update={setEditAfterSaveAs}
+          label={t('workbench:whereToGoAfterSaveAs')}
+          current={editAfterSaveAs}
+          docs={docs.goto}
+          list={[
+            {
+              val: true,
+              label: t('workbench:continueEditingTitle'),
+              desc: t('workbench:continueEditingDesc'),
+            },
+            {
+              val: false,
+              label: t('workbench:goToPatternTitle'),
+              desc: t('workbench:goToPatternDesc'),
+            },
+          ]}
+        />
+        <div className="grid md:grid-cols-2 gap-2 mt-4 mb-8">
+          {withNotes ? (
+            <button
+              className={`${horFlexClassesNoSm} btn btn-primary btn-outline`}
+              onClick={addSettingsToNotes}
+            >
+              <PlusIcon />
+              {t('workbench:addSettingsToNotes')}
+            </button>
+          ) : (
+            <button
+              className={`${horFlexClassesNoSm} btn btn-primary btn-outline`}
+              onClick={() => setWithNotes(true)}
+            >
+              <EditIcon />
+              {t('workbench:addNotes')}
+            </button>
+          )}
+          <button
+            className={`${horFlexClassesNoSm} btn btn-primary w-full`}
+            onClick={saveAsNewPattern}
+          >
+            <SaveAsIcon />
+            {t('workbench:saveAsNewPattern')}
+          </button>
+        </div>
+        <h2>
+          {t('workbench:bookmarkPattern')}
+          <span className="px-2">/</span>
+          {t('workbench:exportPattern')}
+        </h2>
+        <div className="grid md:grid-cols-2 gap-2 mt-4 mb-8">
+          <button
+            className={`${horFlexClassesNoSm} btn btn-primary btn-outline w-full`}
+            onClick={bookmarkPattern}
+          >
+            <BookmarkIcon />
+            {t('workbench:bookmarkPattern')}
+          </button>
+          <button
+            className={`${horFlexClassesNoSm} btn btn-primary btn-outline w-full`}
+            onClick={() => setView('export')}
+          >
+            <ExportIcon />
+            {t('workbench:exportPattern')}
+          </button>
+        </div>
       </div>
-    </div>
+    </AuthWrapper>
   )
 }

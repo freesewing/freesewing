@@ -4,6 +4,8 @@
   "p": {
     "base": "Base",
     "panel1": "Panel 1",
+    "panel1a": "Panel 1a",
+    "panel1b": "Panel 1b",
     "panel2": "Panel 2",
     "panel3": "Panel 3",
     "panel4": "Panel 4",
@@ -16,6 +18,14 @@
     "panels": {
       "t": "Number of panels",
       "d": "The number of panels to draft. More panels are better to fit a curvier model."
+    },
+    "panels.11": {
+      "t": "11 Panels",
+      "d": "Draft a pattern for a corset with 11 panels."
+    },
+    "panels.13": {
+      "t": "13 Panels",
+      "d": "Draft a pattern for a corset with 13 panels."
     },
     "waistReduction": {
       "t": "Waist reduction",

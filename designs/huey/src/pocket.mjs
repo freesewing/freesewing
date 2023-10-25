@@ -5,15 +5,35 @@ function draftHueyPocket({
   Path,
   points,
   paths,
-  complete,
-  paperless,
   snippets,
   Snippet,
   sa,
+  store,
+  expand,
   options,
   part,
 }) {
   if (!options.pocket) return part
+
+  if (expand) store.flag.preset('expandIsOn')
+  else {
+    // Expand is on, do not draw the part but flag this to the user
+    store.flag.note({
+      msg: `huey:cutPocket`,
+      notes: 'flag:partHiddenByExpand',
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
 
   // Clear paths and snippets
   for (let p of Object.keys(paths)) delete paths[p]
@@ -30,53 +50,64 @@ function draftHueyPocket({
     .close()
     .attr('class', 'fabric')
 
-  // Complete?
-  if (complete) {
-    points.logo = points.pocketCfTop.shiftFractionTowards(points.pocketHem, 0.3)
-    points.title = points.pocketCfTop.shiftFractionTowards(points.pocketHem, 0.5)
-    snippets.logo = new Snippet('logo', points.logo)
-    macro('title', {
-      at: points.title,
-      nr: 4,
-      title: 'pocket',
-    })
-    macro('grainline', {
-      from: points.pocketCfTop.shift(-45, 10),
-      to: points.cfHem.shift(45, 10),
-    })
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-    }
-  }
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.cfHem,
-      to: points.pocketHem,
-      y: points.cfHem.y + sa + 15,
-    })
-    macro('hd', {
-      from: points.cfHem,
-      to: points.pocketTip,
-      y: points.cfHem.y + sa + 30,
-    })
-    macro('hd', {
-      from: points.pocketCfTop,
-      to: points.pocketTopRight,
-      y: points.pocketCfTop.y - sa - 15,
-    })
-    macro('vd', {
-      from: points.cfHem,
-      to: points.pocketCfTop,
-      x: points.cfHem.x - sa - 15,
-    })
-    macro('vd', {
-      from: points.pocketHem,
-      to: points.pocketTip,
-      x: points.pocketTip.x + sa + 15,
-    })
-  }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Logo
+  points.logo = points.pocketCfTop.shiftFractionTowards(points.pocketHem, 0.3)
+  snippets.logo = new Snippet('logo', points.logo).scale(0.666)
+
+  // Title
+  points.title = points.pocketCfTop.shiftFractionTowards(points.pocketHem, 0.5)
+  macro('title', {
+    at: points.title,
+    nr: 4,
+    title: 'pocket',
+    align: 'center',
+  })
+
+  // Grainline
+  macro('grainline', {
+    from: points.cfHem.shift(45, 20),
+    to: points.pocketCfTop.shift(-45, 20),
+  })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wAtWaist',
+    from: points.cfHem,
+    to: points.pocketHem,
+    y: points.cfHem.y + sa + 15,
+  })
+  macro('hd', {
+    id: 'WFull',
+    from: points.cfHem,
+    to: points.pocketTip,
+    y: points.cfHem.y + sa + 30,
+  })
+  macro('hd', {
+    id: 'wAtTop',
+    from: points.pocketCfTop,
+    to: points.pocketTopRight,
+    y: points.pocketCfTop.y - sa - 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.cfHem,
+    to: points.pocketCfTop,
+    x: points.cfHem.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hToTip',
+    from: points.pocketHem,
+    to: points.pocketTip,
+    x: points.pocketTip.x + sa + 15,
+  })
 
   return part
 }

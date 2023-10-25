@@ -2,7 +2,6 @@
 maker: "Deby"
 caption: "Simon overhemd met kleurrijke details"
 date: "2021-07-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c749c87baf2715a7f868648c016cd967695062cf-689x919.png"
 intro: "Simon door Deby"
 title: "Simon door Deby"
 designs:

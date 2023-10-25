@@ -2,4 +2,7 @@
 title: "Юбка-сонце Сенді"
 ---
 
-<PatternDocs pattern='sandy' />
+
+
+<DesignInfo design='sandy' docs />
+

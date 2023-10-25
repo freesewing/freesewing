@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Quentin surrounded by our future robot overlords."
 date: "2017-12-06"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ee5c11e3b29fe788dae470ab0e20396d806c4d1b-2000x1333.jpg"
 intro: "The Florent Flat Cap pattern is now available in beta. That's another gift sorted."
 title: "The Florent Flat Cap pattern is now available in beta. That's another gift sorted."
 ---

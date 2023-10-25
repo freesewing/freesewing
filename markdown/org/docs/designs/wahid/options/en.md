@@ -2,4 +2,4 @@
 title: "Wahid waistcoat: Design Options"
 ---
 
-<PatternOptions pattern='wahid' />
+<DesignOptions design='wahid' />

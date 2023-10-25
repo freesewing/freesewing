@@ -10,6 +10,6 @@ Utilizar la circunstancia del cuello es una parte de conseguir una corbata de ar
 > 
 > Esta opción se utiliza para hacer una corbata de arco ajustable. Cuando utiliza el ribbon de ajuste, esta opción no se utiliza.
 
-## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](benjamin_collarease_sample.svg "Efecto de esta opción en el patrón")
+
+

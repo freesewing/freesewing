@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Je inlogachtergrond voor december"
 date: "2018-11-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ebdb5fce7cd9b56f2f9d51d05dbda187195e30b6-1920x1280.jpg"
 intro: "Maandelijkse roundup - november 2018: Nieuwe vitrines en een (vals) veiligheidsalarm"
 title: "Maandelijkse roundup - november 2018: Nieuwe vitrines en een (vals) veiligheidsalarm"
 ---

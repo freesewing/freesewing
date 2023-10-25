@@ -1,583 +1,534 @@
 // Dependencies
-import { useState, useEffect, useContext, useCallback } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
-import orderBy from 'lodash.orderby'
-import { capitalize } from 'shared/utils.mjs'
-import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
+import {
+  capitalize,
+  shortDate,
+  cloudflareImageUrl,
+  horFlexClasses,
+  newPatternUrl,
+} from 'shared/utils.mjs'
+import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
-import { useDropzone } from 'react-dropzone'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useRouter } from 'next/router'
 // Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
-import Link from 'next/link'
-import { PageLink } from 'shared/components/page-link.mjs'
-import { Collapse, MimicCollapseLink } from 'shared/components/collapse.mjs'
-import { BackToAccountButton, Choice } from './shared.mjs'
+import { PageLink, Link, AnchorLink } from 'shared/components/link.mjs'
+import { BackToAccountButton } from './shared.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
+import {
+  StringInput,
+  MarkdownInput,
+  PassiveImageInput,
+  ListInput,
+} from 'shared/components/inputs.mjs'
 import {
   OkIcon,
   NoIcon,
   TrashIcon,
-  SettingsIcon,
-  DownloadIcon,
-  PageIcon,
+  PlusIcon,
+  CameraIcon,
+  EditIcon,
+  ResetIcon,
+  UploadIcon,
+  FreeSewingIcon,
+  CloneIcon,
+  BoolYesIcon,
+  BoolNoIcon,
+  LockIcon,
+  PatternIcon,
 } from 'shared/components/icons.mjs'
+import { DisplayRow } from './shared.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-import Markdown from 'react-markdown'
-import { Tab } from './bio.mjs'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import Timeago from 'react-timeago'
-import { Spinner } from 'shared/components/spinner.mjs'
+import { TableWrapper } from 'shared/components/wrappers/table.mjs'
+import { PatternReactPreview } from 'shared/components/pattern/preview.mjs'
+import { Lightbox } from 'shared/components/lightbox.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
-export const ns = ['account', 'patterns', 'toast']
+export const ns = ['account', 'patterns', 'status']
 
-export const StandAloneNewSet = () => {
-  const { t } = useTranslation(['account'])
-  const toast = useToast()
-  const { account, token } = useAccount()
-  const backend = useBackend(token)
-
-  return (
-    <div className="max-w-xl">
-      <NewSet {...{ t, account, backend, toast }} title={false} standalone={true} />
-    </div>
-  )
-}
-
-export const NewSet = ({
-  t,
-  refresh,
-  closeCollapseButton,
-  backend,
-  toast,
-  title = true,
-  standalone = false,
-}) => {
-  // Context
-  const { startLoading, stopLoading } = useContext(LoadingContext)
-
+export const ShowPattern = ({ id }) => {
   // Hooks
-  const router = useRouter()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
+  const backend = useBackend()
+  const { t, i18n } = useTranslation(ns)
 
   // State
-  const [name, setName] = useState('')
+  const [pattern, setPattern] = useState()
+  const [isOwn, setIsOwn] = useState(false)
 
-  // Helper method to create a new set
-  const createSet = async () => {
-    startLoading()
-    const result = await backend.createSet({
-      name,
-    })
-    if (result.success) {
-      toast.success(<span>{t('nailedIt')}</span>)
-      if (standalone) router.push('/account/sets/')
-      else {
-        refresh()
-        closeCollapseButton()
+  // Effect
+  useEffect(() => {
+    const getPattern = async () => {
+      setLoadingStatus([true, t('backendLoadingStarted')])
+      let result
+      try {
+        result = await backend.getPattern(id)
+        console.log('first attempt', result)
+        if (result.success) {
+          setPattern(result.data.pattern)
+          setIsOwn(true)
+          setLoadingStatus([true, 'backendLoadingCompleted', true, true])
+        } else {
+          result = await backend.getPublicPattern(id)
+          if (result.success) {
+            setPattern({ ...result.data, public: true })
+            setLoadingStatus([true, 'backendLoadingCompleted', true, true])
+          } else setLoadingStatus([true, 'backendError', true, false])
+        }
+      } catch (err) {
+        console.log(err)
+        setLoadingStatus([true, 'backendError', true, false])
       }
-    } else toast.for.backendError()
-    stopLoading()
-  }
+    }
+    if (id) getPattern()
+  }, [id])
+
+  if (!pattern) return <p>loading</p>
 
   return (
-    <div>
-      {title ? <h2>{t('newSet')}</h2> : null}
-      <h5>{t('name')}</h5>
-      <p>{t('setNameDesc')}</p>
-      <input
-        autoFocus
-        value={name}
-        onChange={(evt) => setName(evt.target.value)}
-        className="input w-full input-bordered flex flex-row"
-        type="text"
-        placeholder={'Georg Cantor'}
-      />
-      <div className="flex flex-row gap-2 items-center w-full mt-8 mb-2">
-        <button
-          className="btn btn-primary grow capitalize"
-          disabled={name.length < 1}
-          onClick={createSet}
-        >
-          {t('newSet')}
-        </button>
-      </div>
-    </div>
-  )
-}
-
-const EditField = (props) => {
-  if (props.field === 'name') return <EditName {...props} />
-  if (props.field === 'notes') return <EditNotes {...props} />
-  if (props.field === 'public') return <EditPublic {...props} />
-  if (props.field === 'img') return <EditImg {...props} />
-
-  return <p>FIXME: No edit component for this field</p>
-}
-
-export const EditRow = (props) => (
-  <Collapse
-    color="secondary"
-    openTitle={props.title}
-    title={
-      <>
-        <div className="w-24 text-left md:text-right block md:inline font-bold pr-4">
-          {props.title}
+    <>
+      <div className="flex flex-row flex-wrap gap-4 max-w-7xl w-full">
+        <div className="max-w-lg grow w-full">
+          <Lightbox buttonClasses="w-full" boxClasses="" modalProps={{ fullWidth: 1 }}>
+            <PatternReactPreview {...pattern} />
+          </Lightbox>
         </div>
-        <div className="grow">{props.children}</div>
-      </>
-    }
-  >
-    <EditField field="name" {...props} />
-  </Collapse>
-)
-
-const EditImg = ({ t, pattern, account, backend, toast, refresh }) => {
-  const [img, setImg] = useState(pattern.img)
-  const { startLoading, stopLoading } = useContext(LoadingContext)
-
-  const onDrop = useCallback((acceptedFiles) => {
-    const reader = new FileReader()
-    reader.onload = () => {
-      setImg(reader.result)
-    }
-    acceptedFiles.forEach((file) => reader.readAsDataURL(file))
-  }, [])
-
-  const { getRootProps, getInputProps } = useDropzone({ onDrop })
-
-  const save = async () => {
-    startLoading()
-    const result = await backend.updatePattern(pattern.id, { img })
-    if (result.success) {
-      toast.for.settingsSaved()
-      refresh()
-    } else toast.for.backendError()
-    stopLoading()
-  }
-
-  return (
-    <div>
-      <div>
-        <img
-          alt="img"
-          src={img || account.img}
-          className="shadow mb-4 mask mask-squircle bg-neutral aspect-square"
-        />
-        <div
-          {...getRootProps()}
-          className={`
-          flex rounded-lg w-full flex-col items-center justify-center
-          lg:h-64 lg:border-4 lg:border-secondary lg:border-dashed
-        `}
-        >
-          <input {...getInputProps()} />
-          <p className="hidden lg:block p-0 m-0">{t('imgDragAndDropImageHere')}</p>
-          <p className="hidden lg:block p-0 my-2">{t('or')}</p>
-          <button className={`btn btn-secondary btn-outline mt-4 px-8`}>
-            {t('imgSelectImage')}
-          </button>
-        </div>
-      </div>
-      <div className="flex flex-row gap-2 items-center justify-center mt-2">
-        <button className="btn btn-secondary" onClick={save}>
-          {t('save')}
-        </button>
-      </div>
-    </div>
-  )
-}
-
-const EditName = ({ t, pattern, backend, toast, refresh }) => {
-  const [value, setValue] = useState(pattern.name)
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
-
-  const update = async (evt) => {
-    evt.preventDefault()
-    if (evt.target.value !== value) {
-      setValue(evt.target.value)
-    }
-  }
-
-  const save = async () => {
-    startLoading()
-    const result = await backend.updatePattern(pattern.id, { name: value })
-    if (result.success) {
-      refresh()
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
-    stopLoading()
-  }
-
-  return (
-    <div className="flex flex-col lg:flex-row gap-2">
-      <input
-        value={value}
-        onChange={update}
-        className="input w-full input-bordered flex flex-row"
-        type="text"
-        placeholder={t('name')}
-      />
-      <button className="btn btn-secondary" onClick={save} disabled={value === pattern.name}>
-        <span className="flex flex-row items-center gap-2">
-          {loading ? (
+        <div className="w-full md:max-w-lg">
+          <DisplayRow title={t('name')}>{pattern.name}</DisplayRow>
+          <DisplayRow title="#">{pattern.id}</DisplayRow>
+          <DisplayRow title={t('account:publicView')}>
+            <PageLink href={`/pattern?id=${pattern.id}`} txt={`/pattern?id=${pattern.id}`} />
+          </DisplayRow>
+          <DisplayRow title={t('account:privateView')}>
+            <PageLink
+              href={`/account/pattern?id=${pattern.id}`}
+              txt={`/account/pattern?id=${pattern.id}`}
+            />
+          </DisplayRow>
+          <DisplayRow title={t('created')}>
+            <Timeago date={pattern.createdAt} />
+            <span className="px-2 opacity-50">|</span>
+            {shortDate(i18n.language, pattern.createdAt, false)}
+          </DisplayRow>
+          <DisplayRow title={t('updated')}>
+            <Timeago date={pattern.createdAt} />
+            <span className="px-2 opacity-50">|</span>
+            {shortDate(i18n.language, pattern.updatedAt, false)}
+          </DisplayRow>
+          <DisplayRow title={t('public')}>
+            {pattern.public ? <BoolYesIcon /> : <BoolNoIcon />}
+          </DisplayRow>
+          <DisplayRow title={t('img')}>
+            <Lightbox buttonClasses="mask mask-squircle w-36 h-35">
+              <img src={cloudflareImageUrl({ id: pattern.img, variant: 'sq500' })} />
+            </Lightbox>
+          </DisplayRow>
+          <Link
+            href={newPatternUrl({ design: pattern.design, settings: pattern.settings })}
+            className={`btn btn-primary ${horFlexClasses}`}
+          >
+            <CloneIcon /> {t('clonePattern')}
+          </Link>
+          {isOwn ? (
             <>
-              <Spinner />
-              <span>{t('processing')}</span>
+              <Popout tip noP>
+                <p>{t('account:ownPublicPattern')}</p>
+                <Link
+                  href={`/account/pattern?id=${pattern.id}/`}
+                  className={`btn btn-secondary ${horFlexClasses} mt-2`}
+                >
+                  <LockIcon /> {t('account:privateView')}
+                </Link>
+              </Popout>
             </>
+          ) : null}
+        </div>
+      </div>
+      <h2>{t('account:notes')}</h2>
+      {isOwn ? 'is own' : 'is not own'}
+      <Mdx md={pattern.notes} />
+    </>
+  )
+}
+
+export const Pattern = ({ id }) => {
+  // Hooks
+  const { account, control } = useAccount()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
+  const backend = useBackend()
+  const { t, i18n } = useTranslation(ns)
+
+  // Context
+  const { setModal } = useContext(ModalContext)
+
+  const [edit, setEdit] = useState(false)
+  const [pattern, setPattern] = useState()
+  // Set fields for editing
+  const [name, setName] = useState(pattern?.name)
+  const [image, setImage] = useState(pattern?.image)
+  const [isPublic, setIsPublic] = useState(pattern?.public ? true : false)
+  const [notes, setNotes] = useState(pattern?.notes || '')
+
+  // Effect
+  useEffect(() => {
+    const getPattern = async () => {
+      setLoadingStatus([true, t('backendLoadingStarted')])
+      const result = await backend.getPattern(id)
+      if (result.success) {
+        setPattern(result.data.pattern)
+        setName(result.data.pattern.name)
+        setImage(result.data.pattern.image)
+        setIsPublic(result.data.pattern.public ? true : false)
+        setNotes(result.data.pattern.notes)
+        setLoadingStatus([true, 'backendLoadingCompleted', true, true])
+      } else setLoadingStatus([true, 'backendError', true, false])
+    }
+    if (id) getPattern()
+  }, [id])
+
+  const save = async () => {
+    setLoadingStatus([true, 'gatheringInfo'])
+    // Compile data
+    const data = {}
+    if (name || name !== pattern.name) data.name = name
+    if (image || image !== pattern.image) data.img = image
+    if (notes || notes !== pattern.notes) data.notes = notes
+    if ([true, false].includes(isPublic) && isPublic !== pattern.public) data.public = isPublic
+    setLoadingStatus([true, 'savingPattern'])
+    const result = await backend.updatePattern(pattern.id, data)
+    if (result.success) {
+      setPattern(result.data.pattern)
+      setEdit(false)
+      setLoadingStatus([true, 'nailedIt', true, true])
+    } else setLoadingStatus([true, 'backendError', true, false])
+  }
+
+  if (!pattern) return null
+
+  const heading = (
+    <>
+      <div className="flex flex-wrap md:flex-nowrap flex-row gap-2 w-full">
+        <div className="w-full md:w-96 shrink-0">
+          <PatternCard pattern={pattern} size="md" />
+        </div>
+        <div className="flex flex-col justify-end gap-2 mb-2 grow">
+          {account.control > 3 && pattern?.public ? (
+            <div className="flex flex-row gap-2 items-center">
+              <a
+                className="badge badge-secondary font-bold badge-lg"
+                href={`${conf.backend}/patterns/${pattern.id}.json`}
+              >
+                JSON
+              </a>
+              <a
+                className="badge badge-success font-bold badge-lg"
+                href={`${conf.backend}/patterns/${pattern.id}.yaml`}
+              >
+                YAML
+              </a>
+            </div>
           ) : (
-            t('save')
+            <span></span>
           )}
-        </span>
+          <button
+            onClick={() =>
+              setModal(
+                <ModalWrapper flex="col" justify="top lg:justify-center" slideFrom="right">
+                  <img src={cloudflareImageUrl({ type: 'public', id: pattern.img })} />
+                </ModalWrapper>
+              )
+            }
+            className={`btn btn-secondary btn-outline ${horFlexClasses}`}
+          >
+            <CameraIcon />
+            {t('showImage')}
+          </button>
+          {pattern.userId === account.id && (
+            <>
+              {edit ? (
+                <>
+                  <button
+                    onClick={() => setEdit(false)}
+                    className={`btn btn-primary btn-outline ${horFlexClasses}`}
+                  >
+                    <ResetIcon />
+                    {t('cancel')}
+                  </button>
+                  <button onClick={save} className={`btn btn-primary ${horFlexClasses}`}>
+                    <UploadIcon />
+                    {t('saveThing', { thing: t('account:pattern') })}
+                  </button>
+                </>
+              ) : (
+                <>
+                  <Link
+                    href={`/account/patterns/${pattern.design}/edit?id=${pattern.id}`}
+                    className={`btn btn-primary btn-outline ${horFlexClasses}`}
+                  >
+                    <FreeSewingIcon /> {t('updatePattern')}
+                  </Link>
+                  <Link
+                    href={newPatternUrl({ design: pattern.design, settings: pattern.settings })}
+                    className={`btn btn-primary btn-outline ${horFlexClasses}`}
+                  >
+                    <CloneIcon /> {t('clonePattern')}
+                  </Link>
+                  <button
+                    onClick={() => setEdit(true)}
+                    className={`btn btn-primary ${horFlexClasses}`}
+                  >
+                    <EditIcon /> {t('editThing', { thing: t('account:patternMetadata') })}
+                  </button>
+                </>
+              )}
+            </>
+          )}
+        </div>
+      </div>
+      <div className="flex flex-row flex-wrap gap-4 text-sm items-center justify-between mb-2"></div>
+    </>
+  )
+
+  if (!edit)
+    return (
+      <div className="max-w-2xl">
+        {heading}
+        <DisplayRow title={t('name')}>{pattern.name}</DisplayRow>
+        {control >= controlLevels.sets.notes && (
+          <DisplayRow title={t('notes')}>
+            <Mdx md={pattern.notes} />
+          </DisplayRow>
+        )}
+        {control >= controlLevels.patterns.public && (
+          <>
+            <DisplayRow title={t('public')}>
+              {pattern.public ? <BoolYesIcon /> : <BoolNoIcon />}
+            </DisplayRow>
+            {pattern.public && (
+              <DisplayRow title={t('permalink')}>
+                <PageLink href={`/pattern?id=${pattern.id}`} txt={`/patternid=?${pattern.id}`} />
+              </DisplayRow>
+            )}
+          </>
+        )}
+        {control >= controlLevels.sets.createdAt && (
+          <DisplayRow title={t('created')}>
+            <Timeago date={pattern.createdAt} />
+            <span className="px-2 opacity-50">|</span>
+            {shortDate(i18n.language, pattern.createdAt, false)}
+          </DisplayRow>
+        )}
+        {control >= controlLevels.patterns.updatedAt && (
+          <DisplayRow title={t('updated')}>
+            <Timeago date={pattern.updatedAt} />
+            <span className="px-2 opacity-50">|</span>
+            {shortDate(i18n.language, pattern.updatedAt, false)}
+          </DisplayRow>
+        )}
+        {control >= controlLevels.patterns.id && (
+          <DisplayRow title={t('id')}>{pattern.id}</DisplayRow>
+        )}
+        <Popout tip noP>
+          <p>{t('account:ownPrivatePattern')}</p>
+          <Link
+            className={`btn btn-secondary ${horFlexClasses}`}
+            href={`/pattern?id=${pattern.id}`}
+          >
+            <PatternIcon />
+            {t('account:publicView')}
+          </Link>
+        </Popout>
+      </div>
+    )
+
+  return (
+    <div className="max-w-2xl">
+      {heading}
+      <ul className="list list-disc list-inside ml-4">
+        <li>
+          <AnchorLink id="name" txt={t('name')} />
+        </li>
+        {account.control >= conf.account.sets.img ? (
+          <li>
+            <AnchorLink id="image" txt={t('image')} />
+          </li>
+        ) : null}
+        {['public', 'units', 'notes'].map((id) =>
+          account.control >= conf.account.sets[id] ? (
+            <li key={id}>
+              <AnchorLink id="units" txt={t(id)} />
+            </li>
+          ) : null
+        )}
+      </ul>
+
+      {/* Name is always shown */}
+      <span id="name"></span>
+      <StringInput
+        id="pattern-name"
+        label={t('name')}
+        update={setName}
+        current={name}
+        original={pattern.name}
+        placeholder="Maurits Cornelis Escher"
+        valid={(val) => val && val.length > 0}
+        docs={<DynamicMdx language={i18n.language} slug="docs/site/patterns/name" />}
+      />
+
+      {/* img: Control level determines whether or not to show this */}
+      <span id="image"></span>
+      {account.control >= conf.account.sets.img ? (
+        <PassiveImageInput
+          id="pattern-img"
+          label={t('image')}
+          update={setImage}
+          current={image}
+          valid={(val) => val.length > 0}
+          docs={<DynamicMdx language={i18n.language} slug="docs/site/patterns/image" />}
+        />
+      ) : null}
+
+      {/* public: Control level determines whether or not to show this */}
+      <span id="public"></span>
+      {account.control >= conf.account.patterns.public ? (
+        <ListInput
+          id="pattern-public"
+          label={t('public')}
+          update={setIsPublic}
+          list={[
+            {
+              val: true,
+              label: (
+                <div className="flex flex-row items-center flex-wrap justify-between w-full">
+                  <span>{t('publicPattern')}</span>
+                  <OkIcon
+                    className="w-8 h-8 text-success bg-base-100 rounded-full p-1"
+                    stroke={4}
+                  />
+                </div>
+              ),
+              desc: t('publicPatternDesc'),
+            },
+            {
+              val: false,
+              label: (
+                <div className="flex flex-row items-center flex-wrap justify-between w-full">
+                  <span>{t('privatePattern')}</span>
+                  <NoIcon className="w-8 h-8 text-error bg-base-100 rounded-full p-1" stroke={3} />
+                </div>
+              ),
+              desc: t('privatePatternDesc'),
+            },
+          ]}
+          current={isPublic}
+          docs={<DynamicMdx language={i18n.language} slug="docs/site/patterns/public" />}
+        />
+      ) : null}
+
+      {/* notes: Control level determines whether or not to show this */}
+      <span id="notes"></span>
+      {account.control >= conf.account.patterns.notes ? (
+        <MarkdownInput
+          id="pattern-notes"
+          label={t('notes')}
+          update={setNotes}
+          current={notes}
+          placeholder={t('mdSupport')}
+          docs={<DynamicMdx language={i18n.language} slug="docs/site/patterns/notes" />}
+        />
+      ) : null}
+      <button
+        onClick={save}
+        className="btn btn-primary btn-lg flex flex-row items-center gap-4 mx-auto mt-8"
+      >
+        <UploadIcon />
+        {t('saveThing', { thing: t('account:pattern') })}
       </button>
     </div>
   )
 }
 
-const EditNotes = ({ t, pattern, backend, toast, refresh }) => {
-  const [value, setValue] = useState(pattern.notes)
-  const [activeTab, setActiveTab] = useState('edit')
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
-
-  const update = async (evt) => {
-    evt.preventDefault()
-    if (evt.target.value !== value) {
-      setValue(evt.target.value)
-    }
+export const PatternCard = ({
+  pattern,
+  href = false,
+  onClick = false,
+  useA = false,
+  size = 'md',
+}) => {
+  const sizes = {
+    lg: 96,
+    md: 52,
+    sm: 36,
+    xs: 20,
   }
+  const s = sizes[size]
 
-  const save = async () => {
-    startLoading()
-    const result = await backend.updatePattern(pattern.id, { notes: value })
-    if (result.success) {
-      refresh()
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
-    stopLoading()
+  const wrapperProps = {
+    className: `bg-base-300 w-full mb-2 mx-auto flex flex-col items-start text-center justify-center rounded shadow py-4 h-${s} w-${s}`,
+    style: {
+      backgroundImage: `url(${cloudflareImageUrl({ type: 'w1000', id: pattern.img })})`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '50%',
+    },
   }
+  if (pattern.img === 'default-avatar') wrapperProps.style.backgroundPosition = 'bottom right'
 
-  // Shared props for tabs
-  const tabProps = { activeTab, setActiveTab, t }
+  const inner = null
 
-  return (
-    <div>
-      <div className="tabs w-full">
-        <Tab id="edit" {...tabProps} />
-        <Tab id="preview" {...tabProps} />
-      </div>
-      <div className="flex flex-row items-center mt-4">
-        {activeTab === 'edit' ? (
-          <textarea
-            rows="5"
-            className="textarea textarea-bordered textarea-lg w-full"
-            placeholder={t('placeholder')}
-            onChange={update}
-            value={value}
-          />
-        ) : (
-          <div className="text-left px-4 border w-full">
-            <Markdown>{value}</Markdown>
-          </div>
-        )}
-      </div>
-      <div className="my-2 flex gap-2 items-center justify-center">
-        <button className="btn btn-secondary" onClick={save} disabled={value === pattern.notes}>
-          <span className="flex flex-row items-center gap-2">
-            {loading ? (
-              <>
-                <Spinner />
-                <span>{t('processing')}</span>
-              </>
-            ) : (
-              t('save')
-            )}
-          </span>
-        </button>
-      </div>
-    </div>
-  )
-}
-
-const EditPublic = ({ t, pattern, backend, toast, refresh }) => {
-  const [selection, setSelection] = useState(pattern.public)
-  const { startLoading, stopLoading } = useContext(LoadingContext)
-
-  const update = async (val) => {
-    setSelection(val)
-    if (val !== pattern.public) {
-      startLoading()
-      const result = await backend.updatePattern(pattern.id, { public: val })
-      if (result.success) {
-        refresh()
-        toast.for.settingsSaved()
-      } else toast.for.backendError()
-      stopLoading()
-    }
-  }
-
-  return (
-    <>
-      {[true, false].map((val) => (
-        <Choice val={val} t={t} update={update} current={selection} bool key={val}>
-          <div className="flex flex-row gap-2 text-lg leading-5 items-center">
-            {val ? (
-              <>
-                <OkIcon className="w-6 h-6 text-success" /> <span>{t('publicPattern')}</span>
-              </>
-            ) : (
-              <>
-                <NoIcon className="w-6 h-6 text-error" /> <span>{t('privatePattern')}</span>
-              </>
-            )}
-          </div>
-          <div className="flex flex-row gap-2 text-normal font-light normal-case pt-1 items-center">
-            {val ? t('publicPatternDesc') : t('privatePatternDesc')}
-          </div>
-        </Choice>
-      ))}
-    </>
-  )
-}
-
-export const EditSectionTitle = ({ title }) => (
-  <h5 className="border border-solid border-b-2 border-r-0 border-l-0 border-t-0 border-primary mt-4 mb-2">
-    {title}
-  </h5>
-)
-
-const EditPattern = (props) => {
-  const { account, pattern, t } = props
-
-  return (
-    <div className="p-2 lg:p-4">
-      {/* Meta info */}
-      {account.control > 2 ? (
-        <div className="flex flex-row gap-2 text-sm items-center justify-center mb-2">
-          <div className="flex flex-row gap-2 items-center">
-            <b>{t('permalink')}:</b>
-            {pattern.public ? (
-              <PageLink href={`/patterns/${pattern.id}`} txt={`/patterns/${pattern.id}`} />
-            ) : (
-              <NoIcon className="w-4 h-4 text-error" />
-            )}
-          </div>
-          <div>
-            <b>{t('created')}</b>: <Timeago date={pattern.createdAt} />
-          </div>
-          <div>
-            <b>{t('updated')}</b>: <Timeago date={pattern.updatedAt} />
-          </div>
-        </div>
-      ) : null}
-
-      {/* JSON & YAML links */}
-      {account.control > 3 ? (
-        <div className="flex flex-row gap-2 text-sm items-center justify-center">
-          <a
-            className="badge badge-secondary font-bold"
-            href={`${conf.backend}/patterns/${pattern.id}.json`}
-          >
-            JSON
-          </a>
-          <a
-            className="badge badge-success font-bold"
-            href={`${conf.backend}/patterns/${pattern.id}.yaml`}
-          >
-            YAML
-          </a>
-        </div>
-      ) : null}
-
-      <EditSectionTitle title={t('data')} />
-
-      {/* Name is always shown */}
-      <EditRow title={t('name')} field="name" {...props}>
-        {pattern.name}
-      </EditRow>
-
-      {/* img: Control level determines whether or not to show this */}
-      {account.control >= conf.account.patterns.img ? (
-        <EditRow title={t('image')} field="img" {...props}>
-          <img src={pattern.img} className="w-10 mask mask-squircle bg-neutral aspect-square" />
-        </EditRow>
-      ) : null}
-
-      {/* public: Control level determines whether or not to show this */}
-      {account.control >= conf.account.patterns.public ? (
-        <EditRow title={t('public')} field="public" {...props}>
-          <div className="flex flex-row gap-2">
-            {pattern.public ? (
-              <>
-                <OkIcon className="h-6 w-6 text-success" /> <span>{t('publicPattern')}</span>
-              </>
-            ) : (
-              <>
-                <NoIcon className="h-6 w-6 text-error" /> <span>{t('privatePattern')}</span>
-              </>
-            )}
-          </div>
-        </EditRow>
-      ) : null}
-
-      {/* notes: Control level determines whether or not to show this */}
-      {account.control >= conf.account.patterns.notes ? (
-        <EditRow title={t('notes')} field="notes" {...props}>
-          <Markdown>{pattern.notes}</Markdown>
-        </EditRow>
-      ) : null}
-    </div>
-  )
-}
-
-const Pattern = ({ pattern, t, account, backend, refresh }) => {
-  // Context
-  const { startLoading, stopLoading } = useContext(LoadingContext)
-  const { setModal } = useContext(ModalContext)
-
-  // Hooks
-  const toast = useToast()
-
-  const remove = async () => {
-    startLoading()
-    const result = await backend.removePattern(pattern.id)
-    if (result) toast.success(t('gone'))
-    else toast.for.backendError()
-    // This just forces a refresh of the list from the server
-    refresh()
-    stopLoading()
-  }
-
-  const removeModal = () => {
-    setModal(
-      <ModalWrapper slideFrom="top">
-        <h2>{t('areYouCertain')}</h2>
-        <p>{t('deleteSetWarning')}</p>
-        <p className="flex flex-row gap-4 items-center justify-center">
-          <button className="btn btn-neutral btn-outline px-8">{t('cancel')}</button>
-          <button className="btn btn-error px-8" onClick={remove}>
-            {t('delete')}
-          </button>
-        </p>
-      </ModalWrapper>
+  // Is it a button with an onClick handler?
+  if (onClick)
+    return (
+      <button {...wrapperProps} onClick={onClick}>
+        {inner}
+      </button>
     )
-  }
 
-  const title = (
-    <>
-      <img src={pattern.img} className="w-10 mask mask-squircle bg-neutral aspect-square" />
-      <div className="flex flex-col lg:flex-row lg:flex-wrap lg:gap-2 lg:justify-between w-full">
-        {pattern.set?.img && (
-          <img src={pattern.set.img} className="w-10 mask mask-squircle bg-neutral aspect-square" />
-        )}
-        {pattern.cset?.img && (
-          <img
-            src={pattern.cset.img}
-            className="w-10 mask mask-squircle bg-neutral aspect-square"
-          />
-        )}
-        <b>{capitalize(pattern.design)}</b>
-        <span>{pattern.name}</span>
-        {pattern.set?.name && <span>{pattern.set.name}</span>}
-        {pattern.cset?.nameEn && <span>{pattern.cset.nameEn}</span>}
-      </div>
-    </>
-  )
+  // Returns a link to an internal page
+  if (href && !useA)
+    return (
+      <Link {...wrapperProps} href={href}>
+        {inner}
+      </Link>
+    )
 
-  return (
-    <>
-      <MimicCollapseLink
-        href={`/patterns/${pattern.id}`}
-        className="block lg:hidden"
-        title={title}
-      />
-      <Collapse
-        primary
-        top
-        className="hidden lg:flex"
-        title={title}
-        openTitle={`${capitalize(pattern.design)} | ${pattern.name}`}
-        buttons={[
-          <Link
-            key="view"
-            className="btn btn-success hover:text-success-content border-0 hidden lg:flex"
-            href={`/patterns/${pattern.id}`}
-            title={t('showPattern')}
-          >
-            <PageIcon />
-          </Link>,
-          <Link
-            key="edit"
-            className="btn btn-secondary hover:text-secondary-content border-0 hidden lg:flex"
-            href={`/patterns/${pattern.id}/edit#view="draft"`}
-            title={t('removePattern')}
-          >
-            <SettingsIcon />
-          </Link>,
-          <Link
-            key="export"
-            className="btn btn-primary hover:text-primary-content border-0 hidden lg:flex"
-            href={`/patterns/${pattern.id}/edit#view="export"`}
-            title={t('removePattern')}
-          >
-            <DownloadIcon />
-          </Link>,
-          <button
-            key="rm"
-            className="btn btn-error hover:text-error-content border-0"
-            onClick={account.control > 4 ? remove : removeModal}
-            title={t('removePattern')}
-          >
-            <TrashIcon />
-          </button>,
-        ]}
-      >
-        <EditPattern {...{ t, pattern, account, backend, toast, refresh, setModal }} />
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
-          <Link
-            key="view"
-            className="btn btn-success w-full"
-            href={`/patterns/${pattern.id}`}
-            title={t('showPattern')}
-          >
-            <PageIcon />
-            <span className="pl-2">{t('showPattern')}</span>
-          </Link>
-          <Link
-            key="draft"
-            className="btn btn-secondary w-full"
-            href={`/patterns/${pattern.id}/edit#view="draft"`}
-            title={t('draftPattern')}
-          >
-            <SettingsIcon />
-            <span className="pl-2">{t('draftPattern')}</span>
-          </Link>
-          <Link
-            key="download"
-            className="btn btn-primary w-full"
-            href={`/patterns/${pattern.id}/edit#view="export"`}
-            title={t('exportPattern')}
-          >
-            <DownloadIcon />
-            <span className="pl-2">{t('exportPattern')}</span>
-          </Link>
-        </div>
-      </Collapse>
-    </>
-  )
+  // Returns a link to an external page
+  if (href && useA)
+    return (
+      <a {...wrapperProps} href={href}>
+        {inner}
+      </a>
+    )
+
+  // Returns a div
+  return <div {...wrapperProps}>{inner}</div>
 }
 
 // Component for the account/patterns page
-export const Patterns = ({ standAlone = false }) => {
+export const Patterns = () => {
+  const router = useRouter()
+  const { locale } = router
+
   // Hooks
-  const { account, token } = useAccount()
-  const backend = useBackend(token)
+  const backend = useBackend()
   const { t } = useTranslation(ns)
+  const { setLoadingStatus, LoadingProgress } = useContext(LoadingStatusContext)
 
   // State
   const [patterns, setPatterns] = useState([])
-  const [changes, setChanges] = useState(0)
+  const [selected, setSelected] = useState({})
+  const [refresh, setRefresh] = useState(0)
+
+  // Helper var to see how many are selected
+  const selCount = Object.keys(selected).length
 
   // Effects
   useEffect(() => {
@@ -586,22 +537,112 @@ export const Patterns = ({ standAlone = false }) => {
       if (result.success) setPatterns(result.data.patterns)
     }
     getPatterns()
-  }, [changes])
+  }, [refresh])
 
-  // Helper method to force a refresh
-  const refresh = () => {
-    setChanges(changes + 1)
+  // Helper method to toggle single selection
+  const toggleSelect = (id) => {
+    const newSelected = { ...selected }
+    if (newSelected[id]) delete newSelected[id]
+    else newSelected[id] = 1
+    setSelected(newSelected)
+  }
+
+  // Helper method to toggle select all
+  const toggleSelectAll = () => {
+    if (selCount === patterns.length) setSelected({})
+    else {
+      const newSelected = {}
+      for (const pattern of patterns) newSelected[pattern.id] = 1
+      setSelected(newSelected)
+    }
+  }
+
+  // Helper to delete one or more patterns
+  const removeSelectedPatterns = async () => {
+    let i = 0
+    for (const pattern in selected) {
+      i++
+      await backend.removePattern(pattern)
+      setLoadingStatus([
+        true,
+        <LoadingProgress val={i} max={selCount} msg={t('removingPatterns')} key="linter" />,
+      ])
+    }
+    setSelected({})
+    setRefresh(refresh + 1)
+    setLoadingStatus([true, 'nailedIt', true, true])
   }
 
   return (
     <div className="max-w-4xl xl:pl-4">
-      {orderBy(patterns, ['name'], ['asc']).map((pattern) => (
-        <Pattern {...{ account, pattern, t, backend, refresh }} key={pattern.id} />
-      ))}
-      <Link href="/new/pattern" className="btn btn-primary w-full capitalize mt-4">
-        {t('createANewPattern')}
-      </Link>
-      {standAlone ? null : <BackToAccountButton />}
+      <p className="text-center md:text-right">
+        <Link className="btn btn-primary capitalize w-full md:w-auto" href="/new/pattern">
+          <PlusIcon />
+          {t('patternNew')}
+        </Link>
+      </p>
+      {selCount ? (
+        <button className="btn btn-error" onClick={removeSelectedPatterns}>
+          <TrashIcon /> {selCount} {t('patterns')}
+        </button>
+      ) : null}
+      <TableWrapper>
+        <table className="table table-auto">
+          <thead className="border border-base-300 border-b-2 border-t-0 border-x-0">
+            <tr className="">
+              <th className="">
+                <input
+                  type="checkbox"
+                  className="checkbox checkbox-secondary"
+                  onClick={toggleSelectAll}
+                  checked={patterns.length === selCount}
+                />
+              </th>
+              <th>#</th>
+              <th>{t('account:img')}</th>
+              <th>{t('account:name')}</th>
+              <th>{t('account:design')}</th>
+              <th>{t('account:createdAt')}</th>
+              <th>{t('account:public')}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {patterns.map((pattern, i) => (
+              <tr key={i}>
+                <td className="text-base font-medium">
+                  <input
+                    type="checkbox"
+                    checked={selected[pattern.id] ? true : false}
+                    className="checkbox checkbox-secondary"
+                    onClick={() => toggleSelect(pattern.id)}
+                  />
+                </td>
+                <td className="text-base font-medium">{pattern.id}</td>
+                <td className="text-base font-medium">
+                  <PatternCard
+                    href={`/account/pattern?id=${pattern.id}`}
+                    pattern={pattern}
+                    size="xs"
+                  />
+                </td>
+                <td className="text-base font-medium">
+                  <PageLink href={`/account/pattern?id=${pattern.id}`} txt={pattern.name} />
+                </td>
+                <td className="text-base font-medium">
+                  <PageLink href={`/designs/${pattern.design}`} txt={capitalize(pattern.design)} />
+                </td>
+                <td className="text-base font-medium">
+                  {shortDate(locale, pattern.createdAt, false)}
+                </td>
+                <td className="text-base font-medium">
+                  {pattern.public ? <BoolYesIcon /> : <BoolNoIcon />}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </TableWrapper>
+      <BackToAccountButton />
     </div>
   )
 }

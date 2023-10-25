@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Standard- und High-Waisted-Paare von Ursulas"
 date: "2021-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/88754adafdaecc661b6cf14aed0f07042350aabe-600x800.jpg"
 intro: "Wir lieben die Stoff- und Elastikauswahl bei Sannes ersten beiden Paaren von Ursulas! FreeSewing-Mitarbeiter im Discord sagten, dass sie die Spitze und die Farbkombinationen lieben."
 title: "Ursulas mit Spitze"
 designs:

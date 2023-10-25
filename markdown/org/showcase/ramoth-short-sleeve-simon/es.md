@@ -2,7 +2,6 @@
 maker: "Ramoth"
 caption: "Simón de manga corta de Ramoth con la mayor parte de la forma desplazada a las pinzas de la espalda"
 date: "2021-09-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fdf5a6c5f8ef988575d9a57c1fe5a6b2734e566f-1836x3264.jpg"
 intro: "Camiseta de manga corta Simon de Ramoth"
 title: "Camiseta de manga corta Simon de Ramoth"
 designs:

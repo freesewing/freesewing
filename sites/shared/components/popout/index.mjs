@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useState } from 'react'
 import { CloseIcon } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
@@ -66,7 +67,7 @@ export const Popout = (props) => {
         <div className={`font-bold flex flex-row gap-1 items-end justify-between`}>
           <div>
             <span className={`font-bold uppercase text-${color}`}>
-              {type === 'tldr' ? 'TL;DR' : type}
+              {type === 'tldr' ? 'TL;DR' : t(`popout:${type}`)}
             </span>
             <span className={`font-normal text-base text-${color}`}>
               {type === 'comment' && (

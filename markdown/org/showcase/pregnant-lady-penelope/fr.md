@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Une Pénélope modelée avec un baby bump"
 date: "2022-04-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/82bb1d8f07a65881fbd63e377d62314db12e212b-581x677.jpg"
 intro: "La fabricante a fait les ajustements suivants pour adapter Pénélope au travail avec du tricot et à son ventre de femme enceinte :"
 title: "Pénélope enceinte"
 designs:

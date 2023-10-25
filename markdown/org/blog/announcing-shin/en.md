@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "I guess this is what augmented reality looks like?"
 date: "2018-09-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b471275001689bd4819d6d95aabc8134788dc612-1694x1129.jpg"
 intro: "A while ago I found myself in need of some new swim trunks. So I drafted a pattern and made some:"
 title: "Announcing Shin, a swim trunks pattern"
 ---
@@ -23,9 +22,9 @@ has already provided an illustration for it too.
 Shin comes with options, and they are very close to the options available for 
 [Bruce](/designs/bruce).
 
-All [options are documented](/docs/patterns/shin/options), 
-as are the [required measurements](/docs/patterns/shin/measurements), 
-and I've also written [instructions for how to make this](/docs/patterns/shin). 
+All [options are documented](/docs/designs/shin/options), 
+as are the [required measurements](/docs/designs/shin/measurements), 
+and I've also written [instructions for how to make this](/docs/designs/shin/instructions). 
 
 I still have to do the illustrations, but it's really not hard so you'll probably
 figure it out without them.

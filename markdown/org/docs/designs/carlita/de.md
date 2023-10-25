@@ -2,4 +2,7 @@
 title: "Carlita, der Mantel"
 ---
 
-<PatternDocs pattern='carlita' />
+
+
+<DesignInfo design='carlita' docs />
+

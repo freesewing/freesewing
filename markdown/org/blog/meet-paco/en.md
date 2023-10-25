@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Paco on yours truly"
 date: "2020-08-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1bc82d4abb50ea1b7bda32dd64521e9ecfdd8467-2048x1536.jpg"
 intro: "Meet Paco: Our new unisex pattern for stylish summer pants"
 title: "Meet Paco: Our new unisex pattern for stylish summer pants"
 ---

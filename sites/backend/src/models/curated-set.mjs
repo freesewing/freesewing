@@ -1,132 +1,153 @@
 import { capitalize } from '../utils/index.mjs'
 import { log } from '../utils/log.mjs'
-import { setSetAvatar } from '../utils/sanity.mjs'
-import yaml from 'js-yaml'
+import { storeImage } from '../utils/cloudflare-images.mjs'
+import { decorateModel } from '../utils/model-decorator.mjs'
 
+/*
+ * This model handles all curated set updates
+ */
 export function CuratedSetModel(tools) {
-  this.config = tools.config
-  this.prisma = tools.prisma
-  this.rbac = tools.rbac
-
-  return this
+  return decorateModel(this, tools, {
+    name: 'curatedSet',
+    jsonFields: ['measies', 'tags'],
+    models: ['confirmation', 'set'],
+  })
 }
 
+/*
+ * Creates a curated set
+ *
+ * @param {body} object - The request body
+ * @returns {CuratedSetModel} object - The CureatedSetModel
+ */
 CuratedSetModel.prototype.guardedCreate = async function ({ body, user }) {
+  /*
+   * Enforce RBAC
+   */
   if (!this.rbac.curator(user)) return this.setResponse(403, 'insufficientAccessLevel')
+
+  /*
+   * Do we have a POST body?
+   */
   if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
+
+  /*
+   * Is nameEn set?
+   */
   if (!body.nameEn || typeof body.nameEn !== 'string') return this.setResponse(400, 'nameEnMissing')
 
-  // Prepare data
+  /*
+   * Prepare data to create the record
+   * A curated set is special in that it has a name and notes like a regular set, but it
+   * has those in every supported languages (eg nameEn and notesEn)
+   * So we need to iterated over languages + fields
+   */
   const data = {}
   for (const lang of this.config.languages) {
     for (const field of ['name', 'notes']) {
       const key = field + capitalize(lang)
       if (body[key] && typeof body[key] === 'string') data[key] = body[key]
     }
-    const key = 'tags' + capitalize(lang)
-    if (body[key] && Array.isArray(body[key])) data[key] = body[key]
   }
-  if (body.measies) data.measies = this.sanitizeMeasurements(body.measies)
-  else data.measies = {}
-  // Set this one initially as we need the ID to create a custom img via Sanity
-  data.img = this.config.avatars.set
+  if (body.tags && Array.isArray(body.tags)) data.tags = JSON.stringify(body.tags)
 
-  // Create record
-  await this.unguardedCreate(data)
+  /*
+   * Add the (sanitized) measurements if there are any
+   */
+  if (body.measies) data.measies = JSON.stringify(this.sanitizeMeasurements(body.measies))
+  else data.measies = '{}'
 
-  // Update img? (now that we have the ID)
-  const img =
-    this.config.use.sanity &&
-    typeof body.img === 'string' &&
-    (!body.test || (body.test && this.config.use.tests?.sanity))
-      ? await setSetAvatar(this.record.id, body.img)
-      : false
+  /*
+   * Add the info
+   */
+  if (body.info) data.info = body.info
 
-  if (img) await this.unguardedUpdate({ img: img.url })
-  else await this.read({ id: this.record.id })
+  /*
+   * Add the height
+   */
+  if (body.height) data.height = Number(body.height)
 
-  return this.setResponse(201, 'created', { curatedSet: this.asCuratedSet() })
-}
+  /*
+   * Create the database record
+   */
+  await this.createRecord(data)
 
-CuratedSetModel.prototype.unguardedCreate = async function (data) {
-  // FIXME: See https://github.com/prisma/prisma/issues/3786
-  if (data.measies && typeof data.measies === 'object') data.measies = JSON.stringify(data.measies)
-  for (const lang of this.config.languages) {
-    const key = `tags${capitalize(lang)}`
-    if (Array.isArray(data[key])) data[key] = JSON.stringify(data[key] || [])
-  }
-  try {
-    this.record = await this.prisma.curatedSet.create({ data })
-  } catch (err) {
-    log.warn(err, 'Could not create set')
-    return this.setResponse(500, 'createSetFailed')
-  }
+  /*
+   * Now that we have a record and ID, we can upload the image to cloudflare and set its id
+   */
+  await storeImage(
+    {
+      id: `cset-${this.record.id}`,
+      metadata: { user: user.uid },
+      b64: body.img,
+    },
+    this.isTest(body)
+  )
 
-  return this
-}
-
-/*
- * Loads a measurements set from the database based on the where clause you pass it
- *
- * Stores result in this.record
- */
-CuratedSetModel.prototype.read = async function (where) {
-  try {
-    this.record = await this.prisma.curatedSet.findUnique({ where })
-  } catch (err) {
-    log.warn({ err, where }, 'Could not read curated measurements set')
-  }
-
-  if (this.record) {
-    // FIXME: Convert JSON to object. See https://github.com/prisma/prisma/issues/3786
-    this.record.measies = JSON.parse(this.record.measies)
-    for (const lang of this.config.languages) {
-      const key = `tags${capitalize(lang)}`
-      this.record[key] = JSON.parse(this.record[key] || '[]')
-    }
-  }
-
-  return this.curatedSetExists()
+  /*
+   * Record created, return data in the proper format
+   */
+  return this.setResponse201({ curatedSet: this.asCuratedSet() })
 }
 
 /*
  * Loads a measurements set from the database based on the where clause you pass it
  * In addition prepares it for returning the set data
  *
- * Stores result in this.record
+ * @param {params} object - The (URL) params from the request
+ * @param {format} string - The format to use (json or yaml)
+ * @returns {CuratedSetModel} object - The CureatedSetModel
  */
 CuratedSetModel.prototype.guardedRead = async function ({ params }, format = false) {
+  /*
+   * Read record from database
+   */
   await this.read({ id: parseInt(params.id) })
 
+  /*
+   * If no format is specified, return as object
+   */
   if (!format)
-    return this.setResponse(200, false, {
+    return this.setResponse200({
       result: 'success',
       curatedSet: this.asCuratedSet(),
     })
 
-  return this.setResponse(200, false, this.asData(), true)
+  return this.setResponse200(this.asData(), true)
 }
 
 /*
  * Returns a list of all curated sets
+ *
+ * @returns {list} array - The list of curated sets
  */
 CuratedSetModel.prototype.allCuratedSets = async function () {
+  /*
+   * Attempt to read all curates sets from the database
+   */
   let curatedSets
   try {
-    curatedSets = await this.prisma.curatedSet.findMany()
+    curatedSets = await this.prisma.curatedSet.findMany({ orderBy: { height: 'asc' } })
   } catch (err) {
     log.warn(`Failed to search curated sets: ${err}`)
   }
+
+  /*
+   * Iterate over list to do some housekeeping and JSON wrangling
+   */
   const list = []
-  for (const curatedSet of curatedSets) {
-    // FIXME: Convert object to JSON. See https://github.com/prisma/prisma/issues/3786
-    const asPojo = { ...curatedSet }
-    asPojo.measies = JSON.parse(asPojo.measies)
-    for (const lang of this.config.languages) {
-      const key = `tags${capitalize(lang)}`
-      asPojo[key] = JSON.parse(asPojo[key] || [])
+  if (curatedSets) {
+    for (const curatedSet of curatedSets) {
+      const asPojo = { ...curatedSet }
+      /*
+       * We need to parse this from JSON
+       * See https://github.com/prisma/prisma/issues/3786
+       */
+      asPojo.measies = JSON.parse(asPojo.measies)
+      asPojo.tags = JSON.parse(asPojo.tags)
+      delete asPojo.info
+      list.push(asPojo)
     }
-    list.push(asPojo)
   }
 
   return list
@@ -136,148 +157,344 @@ CuratedSetModel.prototype.allCuratedSets = async function () {
  * Clones a curated measurements set (into a regular set)
  * In addition prepares it for returning the set data
  *
- * Stores result in this.record
+ * @param {params} object - The (URL) params from the request
+ * @param {user} string - The user object as loaded by auth middleware
+ * @param {body} string - The request body
+ * @param {Set} SetModel - The Set to clone into
+ * @returns {CuratedSetModel} object - The CureatedSetModel
  */
 CuratedSetModel.prototype.guardedClone = async function ({ params, user, body }, Set) {
+  /*
+   * Enforce RBAC
+   */
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
+
+  /*
+   * Is language set?
+   */
   if (!body.language || !this.config.languages.includes(body.language))
     return this.setResponse(403, 'languageMissing')
 
+  /*
+   * Read record from database
+   */
   await this.read({ id: parseInt(params.id) })
 
-  // Clone curated set
-  const data = {}
+  /*
+   * Create data for the cloned set
+   */
   const lang = capitalize(body.language.toLowerCase())
-  data.name = this.record[`name${lang}`]
-  data.notes = this.record[`notes${lang}`]
-  data.measies = this.record.measies
+  const data = {
+    lang,
+    name: this.record[`name${lang}`],
+    notes: this.record[`notes${lang}`],
+    measies: this.record.measies,
+  }
 
+  /*
+   * Clone curated set into regular set
+   */
   await Set.guardedCreate({ params, user, body: data })
 
   return
 }
 
 /*
- * Checks this.record and sets a boolean to indicate whether
- * the curated set exists or not
- *
- * Stores result in this.exists
- */
-CuratedSetModel.prototype.curatedSetExists = function () {
-  this.exists = this.record ? true : false
-
-  return this
-}
-
-/*
- * Updates the set data - Used when we create the data ourselves
- * so we know it's safe
- */
-CuratedSetModel.prototype.unguardedUpdate = async function (data) {
-  // FIXME: Convert object to JSON. See https://github.com/prisma/prisma/issues/3786
-  if (data.measies && typeof data.measies === 'object') data.measies = JSON.stringify(data.measies)
-  for (const lang of this.config.languages) {
-    const key = `tags${capitalize(lang)}`
-    if (data[key] && Array.isArray(data[key])) data[key] = JSON.stringify(data[key] || [])
-  }
-
-  try {
-    this.record = await this.prisma.curatedSet.update({
-      where: { id: this.record.id },
-      data,
-    })
-    // FIXME: Convert JSON to object. See https://github.com/prisma/prisma/issues/3786
-    this.record.measies = JSON.parse(this.record.measies)
-    for (const lang of this.config.languages) {
-      const key = `tags${capitalize(lang)}`
-      this.record[key] = JSON.parse(this.record[key])
-    }
-  } catch (err) {
-    log.warn(err, 'Could not update set record')
-    process.exit()
-    return this.setResponse(500, 'updateSetFailed')
-  }
-
-  return this.setResponse(200)
-}
-
-/*
  * Updates the set data - Used when we pass through user-provided data
  * so we can't be certain it's safe
+ *
+ * @param {params} object - The (URL) params from the request
+ * @param {body} string - The request body
+ * @param {user} string - The user object as loaded by auth middleware
+ * @returns {CuratedSetModel} object - The CureatedSetModel
  */
 CuratedSetModel.prototype.guardedUpdate = async function ({ params, body, user }) {
+  /*
+   * Enforce RBAC
+   */
   if (!this.rbac.curator(user)) return this.setResponse(403, 'insufficientAccessLevel')
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
+
+  /*
+   * Attempt to read database record
+   */
   await this.read({ id: parseInt(params.id) })
 
-  // Prepare data
+  /*
+   * Prepare data for updating the record
+   */
   const data = {}
+
+  /*
+   * Handle the published field
+   */
+  if ([true, false].includes(body.published)) data.published = body.published
+
+  /*
+   * Handle the info field
+   */
+  if (typeof body.info === 'string') data.info = body.info
+
+  /*
+   * Handle the info field
+   */
+  if (body.height) data.height = Number(body.height)
+
+  /*
+   * Unlike a regular set, curated set have notes and name in each language
+   */
   for (const lang of this.config.languages) {
     for (const field of ['name', 'notes']) {
       const key = field + capitalize(lang)
       if (body[key] && typeof body[key] === 'string') data[key] = body[key]
     }
   }
-  // Measurements
-  const measies = {}
+
+  /*
+   * Handle the measurements
+   */
   if (typeof body.measies === 'object') {
-    const remove = []
-    for (const [key, val] of Object.entries(body.measies)) {
-      if (this.config.measies.includes(key)) {
-        if (val === null) remove.push(key)
-        else if (typeof val == 'number' && val > 0) measies[key] = val
-      }
-    }
-    data.measies = { ...this.record.measies, ...measies }
-    for (const key of remove) delete data.measies[key]
+    data.measies = JSON.stringify(
+      this.sanitizeMeasurements({
+        ...this.record.measies,
+        ...body.measies,
+      })
+    )
   }
 
-  // Image (img)
+  /*
+   * Handle the image, if there is one
+   */
   if (typeof body.img === 'string') {
-    const img = await setSetAvatar(params.id, body.img)
-    data.img = img.url
+    await storeImage(
+      {
+        id: `cset-${this.record.id}`,
+        metadata: { user: user.uid },
+        b64: body.img,
+      },
+      this.isTest(body)
+    )
   }
 
-  // Now update the record
-  await this.unguardedUpdate(data)
+  /*
+   * Now update the record
+   */
+  await this.update(data)
 
-  return this.setResponse(200, false, { set: this.asCuratedSet() })
+  /*
+   * Return 200 with updated data
+   */
+  return this.setResponse200({ curatedSet: this.asCuratedSet() })
 }
 
 /*
- * Removes the set - No questions asked
- */
-CuratedSetModel.prototype.unguardedDelete = async function () {
-  await this.prisma.curatedSet.delete({ where: { id: this.record.id } })
-  this.record = null
-  this.clear = null
-
-  return this.curatedSetExists()
-}
-
-/*
- * Removes the set - Checks permissions
+ * Removes the set - But checks permissions
+ *
+ * @param {params} object - The (URL) params from the request
+ * @param {user} string - The user object as loaded by auth middleware
+ * @returns {CuratedSetModel} object - The CureatedSetModel
  */
 CuratedSetModel.prototype.guardedDelete = async function ({ params, user }) {
+  /*
+   * Enforce RBAC
+   */
   if (!this.rbac.curator(user)) return this.setResponse(403, 'insufficientAccessLevel')
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
+  /*
+   * Find the database record
+   */
   await this.read({ id: parseInt(params.id) })
-  await this.unguardedDelete()
 
+  /*
+   * Now delete it
+   */
+  await this.delete()
+
+  /*
+   * Return 204
+   */
   return this.setResponse(204, false)
 }
 
 /*
- * Returns record data fit for public publishing
+ * Suggests a curated set
+ *
+ * @param {body} object - The request body
+ * @param {user} string - The user object as loaded by auth middleware
+ * @returns {CuratedSetModel} object - The CureatedSetModel
  */
-CuratedSetModel.prototype.asCuratedSet = function () {
-  return { ...this.record }
+CuratedSetModel.prototype.suggest = async function ({ body, user }) {
+  /*
+   * Enforce RBAC
+   */
+  if (!this.rbac.user(user)) return this.setResponse(403, 'insufficientAccessLevel')
+
+  /*
+   * Is set set?
+   */
+  if (!body.set || typeof body.set !== 'number') return this.setResponse(403, 'setMissing')
+
+  /*
+   * Is height set?
+   */
+  if (!body.height) return this.setResponse(403, 'heightMissing')
+
+  /*
+   * Is name set?
+   */
+  if (!body.name) return this.setResponse(403, 'nameMissing')
+
+  /*
+   * Is img set?
+   */
+  if (!body.img) return this.setResponse(403, 'imgMissing')
+
+  /*
+   * Create confirmation to store the suggested data
+   */
+  const data = {
+    name: body.name,
+    notes: body.notes ? body.notes : '',
+    set: body.set,
+    height: body.height,
+  }
+  await this.Confirmation.createRecord({ type: 'sugset', data, userId: user.uid })
+
+  /*
+   * Now the we have an id, upload the image
+   */
+  const img = await storeImage(
+    {
+      id: `sugset-${this.Confirmation.record.id}`,
+      data: body.img,
+      metadata: { user: user.uid },
+    },
+    this.isTest(body)
+  )
+
+  /*
+   * If an image was uploaded, update the record with the image ID
+   */
+  if (img) await this.Confirmation.update({ data })
+
+  /*
+   * Return id
+   */
+  return this.setResponse200({ submission: { type: 'cset', id: this.Confirmation.record.id } })
+}
+
+/*
+ * Creates a curated set from a suggested measurements set
+ *
+ * @param {params} object - The request URL parameters
+ * @param {user} string - The user object as loaded by auth middleware
+ * @returns {CuratedSetModel} object - The CureatedSetModel
+ */
+CuratedSetModel.prototype.fromSuggestion = async function ({ params, user }) {
+  /*
+   * Enforce RBAC
+   */
+  if (!this.rbac.curator(user)) return this.setResponse(403, 'insufficientAccessLevel')
+
+  /*
+   * Is submission id set?
+   */
+  if (!params.id) return this.setResponse(403, 'idMissing')
+
+  /*
+   * Attemt to read the confirmation record from the database
+   */
+  await this.Confirmation.read({ id: params.id })
+
+  /*
+   * If it does not exist, log a warning and return 404
+   */
+  if (!this.Confirmation.exists) {
+    log.warn(`Could not find confirmation id ${params.id}`)
+    return this.setResponse(404)
+  }
+
+  /*
+   * If it is the wrong confirmation type, log a warning and return 404
+   */
+  if (this.Confirmation.record.type !== 'sugset') {
+    log.warn(`Confirmation mismatch; ${params.id} is not a subset id`)
+    return this.setResponse(404)
+  }
+
+  /*
+   * Load the suggested measurements set
+   */
+  await this.Set.read({ id: this.Confirmation.clear.data.set })
+
+  /*
+   * It it does not exist, return 404
+   */
+  if (!this.Set.exists) {
+    log.warn(`Suggested set ${this.Confirmation.clear.data.set} does not exist`)
+    return this.setResponse(404)
+  }
+
+  /*
+   * Create data for new curated set
+   */
+  const name = this.Confirmation.clear.data.name
+  const notes = this.Confirmation.clear.data.notes || '--'
+
+  /*
+   * Now create the curated set
+   */
+  await this.createRecord({
+    height: this.Confirmation.record.clear.data.height || 1,
+    nameDe: name,
+    nameEn: name,
+    nameEs: name,
+    nameFr: name,
+    nameNl: name,
+    nameUk: name,
+    notesDe: notes,
+    notesEn: notes,
+    notesEs: notes,
+    notesFr: notes,
+    notesNl: notes,
+    notesUk: notes,
+    measies: JSON.stringify(this.Set.clear.measies),
+    published: false,
+  })
+
+  /*
+   * If it failed for some reason, bail out
+   */
+  if (!this.exists) {
+    log.warn(`Could not create set from suggested set`)
+    return this.setResponse(500)
+  }
+
+  /*
+   * Return 200 with updated data
+   */
+  return this.setResponse200({ curatedSet: this.asCuratedSet() })
 }
 
 /*
  * Returns record data fit for public publishing
+ *
+ * @returns {curatedSet} object - The Cureated Set as a plain object
+ */
+CuratedSetModel.prototype.asCuratedSet = function () {
+  const data = { ...this.record }
+  for (const field of this.jsonFields) {
+    data[field] =
+      typeof this.record[field] === 'string' ? JSON.parse(this.record[field]) : this.record[field]
+  }
+  delete data.info
+
+  return data
+}
+
+/*
+ * Returns record data fit for public publishing
+ *
+ * @returns {curatedSet} object - The Cureated Set as a plain object
  */
 CuratedSetModel.prototype.asData = function () {
   const data = {
@@ -288,60 +505,7 @@ CuratedSetModel.prototype.asData = function () {
   }
   data.measurements = data.measies
   delete data.measies
+  delete data.info
 
   return data
-}
-
-/*
- * Helper method to set the response code, result, and body
- *
- * Will be used by this.sendResponse()
- */
-CuratedSetModel.prototype.setResponse = function (
-  status = 200,
-  error = false,
-  data = {},
-  rawData = false
-) {
-  this.response = {
-    status,
-    body: rawData
-      ? data
-      : {
-          result: 'success',
-          ...data,
-        },
-  }
-  if (status > 201) {
-    this.response.body.error = error
-    this.response.body.result = 'error'
-    this.error = true
-  } else this.error = false
-
-  return this.curatedSetExists()
-}
-
-/*
- * Helper method to send response (as JSON)
- */
-CuratedSetModel.prototype.sendResponse = async function (res) {
-  return res.status(this.response.status).send(this.response.body)
-}
-
-/*
- * Helper method to send response as YAML
- */
-CuratedSetModel.prototype.sendYamlResponse = async function (res) {
-  return res.status(this.response.status).type('yaml').send(yaml.dump(this.response.body))
-}
-
-/* Helper method to parse user-supplied measurements */
-CuratedSetModel.prototype.sanitizeMeasurements = function (input) {
-  const measies = {}
-  if (typeof input !== 'object') return measies
-  for (const [m, val] of Object.entries(input)) {
-    if (this.config.measies.includes(m) && typeof val === 'number' && val > 0) measies[m] = val
-  }
-
-  return measies
 }

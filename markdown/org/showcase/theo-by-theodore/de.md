@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Gekürzte Hose von Theodore"
 date: "17.06.2019"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e575a527685d83546061ac9508fd6ec83cd5bbfc-2160x3840.jpg"
 intro: "Theodore schreibt auf Reddit:"
 title: "Theodore macht die Hose Theo kurz geschnitten"
 designs:

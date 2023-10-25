@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useTranslation } from 'next-i18next'
 import {
   DesignOptions,
@@ -40,7 +41,6 @@ export const CutMenu = ({
   update,
   language,
   account,
-  DynamicDocs,
   materialSettings,
   setSettings,
 }) => {
@@ -52,7 +52,6 @@ export const CutMenu = ({
     update,
     language,
     account,
-    DynamicDocs,
     control,
   }
   return (

@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function draftTwoPieceLidTop({
   options,
   Point,
@@ -113,6 +111,5 @@ export const twoPieceLidTop = {
     openingRatio: { pct: 66, min: 30, max: 90, menu: 'style' },
     onePieceLid: { bool: false, menu: 'style' },
   },
-  plugins: [pluginBundle],
   draft: draftTwoPieceLidTop,
 }

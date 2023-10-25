@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Das FreeSewing-Logo"
 date: "2017-03-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4e1f5426ee6578ef31d9c18a1de9b4beef15836b-2000x1125.jpg"
 intro: "Ich bin stolz, freesewing core v1.0.0 und die dazugehörige Dokumentation anzukündigen, die das freesewing Projekt im Detail beschreibt."
 title: "Ankündigung von FreeSewing, eine Opensourceplattform für Schnittmuster auf Mass"
 ---

@@ -2,7 +2,6 @@
 maker: "TangerineShark"
 caption: "TangerineShark у формальному аароні, сміливих жовтих штанях і з найгарячішим аксесуаром - респіратором"
 date: "2023-01-14"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/86fd2445332cdc1519d2e85e68db7023118643ff-1852x2704.jpg"
 intro: "Формальний Аарон, для вечірок"
 title: "Формальний Аарон, для вечірок"
 designs:

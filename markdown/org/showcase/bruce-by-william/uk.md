@@ -2,7 +2,6 @@
 maker: "Вільям"
 caption: "Білі труси-боксери Bruce з бонусом у вигляді мушки"
 date: "2023-01-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/59feea443697c67e82aca6bfca8d074089f33cb2-4032x3024.jpg"
 intro: "Вільям створив цю чудову пару трусів-боксерів Bruce і зробив ще один крок вперед, додавши мушку!"
 title: "Брюс з \"Fly by William"
 designs:

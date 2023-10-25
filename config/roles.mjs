@@ -5,6 +5,7 @@ export const roles = {
     readOnly: 2,
     writeSome: 3,
     user: 4,
+    tester: 4,
     curator: 5,
     bughunter: 6,
     support: 8,

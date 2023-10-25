@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Скріншот з YouTube-уроку Бернадетт Баннер про цей капелюх"
 date: "2020-02-23"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/02a03dd39c9e5317e89681482735e8e5929d7c2d-2748x1546.jpg"
 intro: "Новий візерунок: Капелюх переслідувача оленів Холмса"
 title: "Новий візерунок: Капелюх переслідувача оленів Холмса"
 ---

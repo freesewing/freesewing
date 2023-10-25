@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Mantén a raya las gotitas infectadas de virus con nuestra mascarilla Florence"
 date: "2020-02-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d2235dcc38012e87ac402d43e7ae7084a7d7e9b4-1920x1272.jpg"
 intro: "Acabamos de publicar un patrón de máscaras faciales, porque el coronavirus"
 title: "Acabamos de publicar un patrón de máscaras faciales, porque el coronavirus"
 ---

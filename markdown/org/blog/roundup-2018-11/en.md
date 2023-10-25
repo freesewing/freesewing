@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Your login background for December"
 date: "2018-11-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ebdb5fce7cd9b56f2f9d51d05dbda187195e30b6-1920x1280.jpg"
 intro: "Monthly roundup - November 2018: New showcases and a (false) security alarm"
 title: "Monthly roundup - November 2018: New showcases and a (false) security alarm"
 ---

@@ -2,7 +2,6 @@
 maker: "Hellgy"
 caption: "Hellgy sieht toll aus in ihrem Hugo Hoodie"
 date: "07.11.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/064688968c55a3ddc155ff8f8e75e627d4c87bc9-1280x853.jpg"
 intro: "Dies ist ein weiterer fantastischer Hugo von Hellgy, dessen verschiedene FreeSewing-Kapuzenpullis alle Publikumslieblinge sind."
 title: "Hellgys Hugo Hoodie"
 designs:

@@ -2,7 +2,6 @@
 maker: "naaitandarts"
 caption: "Een zeer indrukwekkende Carlton in wollen stof"
 date: "2022-08-02"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8fbc75fcfe11bd0f32c5f28d82f58f89986e03d3-742x743.jpg"
 intro: "Deze schitterende Carlton jas is gemaakt door naaitandarts, die zei:"
 title: "Carlton jas door naaitandarts"
 designs:

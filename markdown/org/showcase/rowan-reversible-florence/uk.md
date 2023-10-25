@@ -2,7 +2,6 @@
 maker: "Рован."
 caption: "Одна сторона двосторонньої маски для обличчя Rowan's Florence"
 date: "2023-01-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/aaedd307de0bc101180d2b54e5d2ccb5d5657519-1161x2064.jpg"
 intro: "Бездоганна робота Рована над цією маскою для обличчя \"Флоренція\", але просто зачекайте ... Він також є оборотним!"
 title: "Реверсивна Флоренція Рована"
 designs:

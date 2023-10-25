@@ -1,5 +1,4 @@
 import { box } from './shared.mjs'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 
 function legendSa({ points, Point, paths, Path, part }) {
   points.a = new Point(10, 40)
@@ -21,6 +20,5 @@ function legendSa({ points, Point, paths, Path, part }) {
 
 export const sa = {
   name: 'legend.sa',
-  plugins: pluginBundle,
   draft: legendSa,
 }

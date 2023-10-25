@@ -1,41 +1,25 @@
-import { useContext } from 'react'
-import { useTranslation } from 'next-i18next'
-import { pagesPlugin } from 'shared/plugins/plugin-layout-part.mjs'
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
+// Dependencies
+import { nsMerge } from 'shared/utils.mjs'
 import {
   handleExport,
   ns as exportNs,
 } from 'shared/components/workbench/exporting/export-handler.mjs'
+import { pagesPlugin } from 'shared/plugins/plugin-layout-part.mjs'
 import get from 'lodash.get'
+import { defaultPrintSettings, printSettingsPath } from './config.mjs'
+// Hooks
+import { useContext } from 'react'
+import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
+// Components
 import { MovablePattern } from 'shared/components/workbench/pattern/movable/index.mjs'
 import { PrintMenu, ns as menuNs } from './menu.mjs'
-import { defaultPrintSettings, printSettingsPath } from './config.mjs'
-import { PrintIcon, RightIcon } from 'shared/components/icons.mjs'
-import { LoadingContext } from 'shared/context/loading-context.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
 import { PatternWithMenu, ns as wrapperNs } from '../pattern-with-menu.mjs'
 
-const viewNs = ['print', ...exportNs]
-export const ns = [...viewNs, ...menuNs, ...wrapperNs]
+export const ns = nsMerge(menuNs, wrapperNs, exportNs, 'print', 'status')
 
-const PageCounter = ({ pattern }) => {
-  const pages = pattern.setStores[0].get('pages', {})
-  const { cols, rows, count } = pages
-
-  return (
-    <div className="flex flex-row font-bold items-center text-2xl justify-center ">
-      <PrintIcon />
-      <span className="ml-2">{count}</span>
-      <span className="mx-6 opacity-50">|</span>
-      <RightIcon />
-      <span className="ml-2">{cols}</span>
-      <span className="mx-6 opacity-50">|</span>
-      <div className="rotate-90">
-        <RightIcon />
-      </div>
-      <span className="ml-2">{rows}</span>
-    </div>
-  )
-}
 export const PrintView = ({
   design,
   pattern,
@@ -46,12 +30,10 @@ export const PrintView = ({
   update,
   language,
   account,
-  DynamicDocs,
   Design,
 }) => {
   const { t } = useTranslation(ns)
-  const loading = useContext(LoadingContext)
-  const toast = useToast()
+  const { loading, setLoadingStatus } = useContext(LoadingStatusContext)
 
   const defaultSettings = defaultPrintSettings(settings.units)
   // add the pages plugin to the draft
@@ -72,8 +54,9 @@ export const PrintView = ({
   }
 
   const exportIt = () => {
+    setLoadingStatus([true, 'generatingPdf'])
     handleExport({
-      format: 'pdf',
+      format: pageSettings.size,
       settings,
       design,
       t,
@@ -81,56 +64,60 @@ export const PrintView = ({
       ui,
       startLoading: loading.startLoading,
       stopLoading: loading.stopLoading,
-      onComplete: () => {},
-      onError: (err) => toast.error(err.message),
+      onComplete: () => {
+        setLoadingStatus([true, 'pdfReady', true, true])
+      },
+      onError: (err) => {
+        setLoadingStatus([true, 'pdfFailed', true, true])
+        console.log(err)
+      },
     })
   }
 
   return (
-    <PatternWithMenu
-      {...{
-        settings,
-        ui,
-        update,
-        control: account.control,
-        setSettings,
-        title: (
-          <div className="flex lg:justify-between items-baseline flex-wrap px-2">
-            <h2 className="text-center lg:text-left capitalize">
-              {t('layoutThing', { thing: design }) + ' ' + t('forPrinting')}
-            </h2>
-            <PageCounter pattern={pattern} />
-          </div>
-        ),
-        pattern: (
-          <MovablePattern
-            {...{
-              renderProps,
-              update,
-              immovable: ['pages'],
-              layoutPath: ['layouts', 'print'],
-              showButtons: !ui.hideMovableButtons,
-            }}
-          />
-        ),
-        menu: (
-          <PrintMenu
-            {...{
-              design,
-              pattern,
-              patternConfig,
-              setSettings,
-              settings,
-              ui,
-              update,
-              language,
-              account,
-              DynamicDocs,
-              exportIt,
-            }}
-          />
-        ),
-      }}
-    />
+    <>
+      <PatternWithMenu
+        noHeader
+        {...{
+          settings,
+          ui,
+          update,
+          control: account.control,
+          account,
+          design,
+          setSettings,
+          title: (
+            <h2 className="text-center lg:text-left capitalize">{t('workbench:printLayout')}</h2>
+          ),
+          pattern: (
+            <MovablePattern
+              {...{
+                renderProps,
+                update,
+                immovable: ['pages'],
+                layoutPath: ['layouts', 'print'],
+                showButtons: !ui.hideMovableButtons,
+              }}
+            />
+          ),
+          menu: (
+            <PrintMenu
+              {...{
+                design,
+                pattern,
+                patternConfig,
+                setSettings,
+                settings,
+                ui,
+                update,
+                language,
+                account,
+                exportIt,
+              }}
+            />
+          ),
+        }}
+      />
+    </>
   )
 }

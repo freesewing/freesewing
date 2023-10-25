@@ -1,13 +1,16 @@
 // Dependencies
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { nsMerge } from 'shared/utils.mjs'
+// Hooks
+import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 import { ns as apikeysNs } from 'shared/components/account/apikeys.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set([...apikeysNs, ...authNs, ...pageNs])]
+const ns = nsMerge(apikeysNs, authNs, pageNs)
 
 /*
  * Some things should never generated as SSR
@@ -29,20 +32,24 @@ const DynamicNewApikey = dynamic(
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const NewApikeyPage = ({ page }) => (
-  <PageWrapper {...page}>
-    <DynamicAuthWrapper>
-      <DynamicNewApikey standalone title={false} />
-    </DynamicAuthWrapper>
-  </PageWrapper>
-)
+const NewApikeyPage = ({ page }) => {
+  const { t } = useTranslation(ns)
+
+  return (
+    <PageWrapper {...page} title={t('newApikey')}>
+      <DynamicAuthWrapper>
+        <DynamicNewApikey standalone title={false} />
+      </DynamicAuthWrapper>
+    </PageWrapper>
+  )
+}
 
 export default NewApikeyPage
 
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, namespaces)),
+      ...(await serverSideTranslations(locale, ns)),
       page: {
         locale,
         path: ['new', 'apikey'],

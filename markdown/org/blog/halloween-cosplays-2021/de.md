@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ein bisschen kalt vielleicht, aber Badehosen: Wir haben sie"
 date: "2021-10-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3a69586735a24a674d4e65971643b3b55c676fc3-1000x667.png"
 intro: "Wenn du deinen Lieblingscharakter verkörperst, kann das ein wirklich lustiges Halloween-Erlebnis sein! Hier sind einige ikonische Figuren, die dich inspirieren werden."
 title: "10 Cosplays, die du mit FreeSewing-Mustern machen kannst, um dich in Halloween-Stimmung zu bringen"
 ---

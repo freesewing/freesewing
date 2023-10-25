@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function draftStrapAttachments({
   options,
   Point,
@@ -129,6 +127,5 @@ export const strapAttachments = {
     taperRatio: { pct: 60, min: 50, max: 100, menu: 'style' },
     useCommonWebbingSizes: { bool: true, menu: 'style' },
   },
-  plugins: [pluginBundle],
   draft: draftStrapAttachments,
 }

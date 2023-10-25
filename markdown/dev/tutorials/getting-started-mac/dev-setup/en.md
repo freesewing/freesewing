@@ -116,12 +116,8 @@ yarn new plugin
 With Node.js installed, all you need to do to setup the stand-alone development environment is run this command:
 
 ```bash
-npx @freesewing/new-design@next
+npx @freesewing/new-design
 ```
-
-<Fixme compact>
-Remove `@next` tag when v3 is releasedi
-</Fixme>
 
 After you've answered [some questions](#questions), it will take a while to set
 everything up.  When it's done, you will have a new folder with the development

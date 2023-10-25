@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Je nieuwe inlogachtergrond voor de maand november"
 date: "2017-10-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c9242975400bf885feef0b6ddc3b2bc0ce901638-2000x1500.jpg"
 intro: "Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt."
 title: "Maandelijkse roundup - oktober 2017: Huey, Roy, gemeenschapsvorming en patroonomslagen"
 ---

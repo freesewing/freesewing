@@ -1,20 +1,20 @@
 // Dependencies
 import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
-import Markdown from 'react-markdown'
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
-import { Popout } from 'shared/components/popout/index.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
+import { MarkdownInput } from 'shared/components/inputs.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
+import { TipIcon } from 'shared/components/icons.mjs'
 
-export const ns = ['account', 'toast']
+export const ns = ['account', 'status']
 
 export const Tab = ({ id, activeTab, setActiveTab, t }) => (
   <button
@@ -26,29 +26,24 @@ export const Tab = ({ id, activeTab, setActiveTab, t }) => (
   </button>
 )
 
-export const BioSettings = ({ title = false, welcome = false }) => {
-  // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
-
+export const BioSettings = ({ welcome = false }) => {
   // Hooks
-  const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
-  const { t } = useTranslation(ns)
-  const toast = useToast()
+  const { account, setAccount } = useAccount()
+  const backend = useBackend()
+  const { t, i18n } = useTranslation(ns)
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
   const [bio, setBio] = useState(account.bio)
-  const [activeTab, setActiveTab] = useState('edit')
 
   // Helper method to save bio
   const save = async () => {
-    startLoading()
+    setLoadingStatus([true, 'processingUpdate'])
     const result = await backend.updateAccount({ bio })
     if (result.success) {
       setAccount(result.data.account)
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
-    stopLoading()
+      setLoadingStatus([true, 'settingsSaved', true, true])
+    } else setLoadingStatus([true, 'backendError', true, false])
   }
 
   // Next step in the onboarding
@@ -57,36 +52,24 @@ export const BioSettings = ({ title = false, welcome = false }) => {
       ? '/welcome/' + welcomeSteps[account.control][6]
       : '/docs/guide'
 
-  // Shared props for tabs
-  const tabProps = { activeTab, setActiveTab, t }
-
   return (
     <div className="max-w-xl xl:pl-4">
-      {title ? <h1 className="text-4xl">{t('bioTitle')}</h1> : null}
-      <div className="tabs w-full">
-        <Tab id="edit" {...tabProps} />
-        <Tab id="preview" {...tabProps} />
-      </div>
-      <div className="flex flex-row items-center mt-4">
-        {activeTab === 'edit' ? (
-          <textarea
-            rows="5"
-            className="textarea textarea-bordered textarea-lg w-full"
-            placeholder={t('placeholder')}
-            onChange={(evt) => setBio(evt.target.value)}
-            value={bio}
-          />
-        ) : (
-          <div className="text-left px-4 border w-full">
-            <Markdown>{bio}</Markdown>
-          </div>
-        )}
-      </div>
+      <MarkdownInput
+        id="account-bio"
+        label={t('bioTitle')}
+        update={setBio}
+        current={bio}
+        placeholder={t('bioTitle')}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/bio`} />}
+        labelBL={
+          <span className="flex flex-row items-center gap-1">
+            <TipIcon className="w-6 h-6 text-success" />
+            {t('mdSupport')}
+          </span>
+        }
+      />
       <SaveSettingsButton btnProps={{ onClick: save }} welcome={welcome} />
-      {!welcome && <BackToAccountButton loading={loading} />}
-      <Popout tip compact>
-        {t('mdSupport')}
-      </Popout>
+      {!welcome && <BackToAccountButton />}
 
       {welcome ? (
         <>

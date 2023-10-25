@@ -2,4 +2,7 @@
 title: "Diana, top de escote drapeado"
 ---
 
-<PatternDocs pattern='diana' />
+
+
+<DesignInfo design='diana' docs />
+

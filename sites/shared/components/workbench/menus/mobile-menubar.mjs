@@ -1,9 +1,10 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useContext, useState, useEffect } from 'react'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { CloseIcon } from 'shared/components/icons.mjs'
 import { MobileMenubarContext } from 'shared/context/mobile-menubar-context.mjs'
-import { shownHeaderSelector } from 'shared/components/wrappers/header.mjs'
+import { MenuAltIcon } from 'shared/components/icons.mjs'
 
 /**
  * A component to display menu buttons and actions in mobile.
@@ -35,6 +36,7 @@ export const MobileMenubar = () => {
           slideFrom="right"
           keepOpenOnClick={selectedMenu.keepOpenOnClick}
           keepOpenOnSwipe
+          fullWidth
         >
           <div className="mb-16">{selectedMenu.menuContent}</div>
           <button
@@ -62,10 +64,9 @@ export const MobileMenubar = () => {
     <div
       className={`
       lg:hidden
-      ${shownHeaderSelector('bottom-16')} 
       sticky bottom-0 w-20 -ml-20 self-end
-      duration-300 transition-all 
-      flex flex-col-reverse gap-4
+      duration-300 transition-all
+      flex flex-col-reverse gap-2 mb-2
       z-20
       mobile-menubar
       `}
@@ -73,11 +74,11 @@ export const MobileMenubar = () => {
       {Object.keys(menus)
         .sort((a, b) => menus[a].order - menus[b].order)
         .map((m) => {
-          const Icon = menus[m].Icon
+          const Icon = m === 'nav' ? MenuAltIcon : menus[m].Icon
           return (
             <button
               key={m}
-              className="btn btn-accent btn-circle mx-4"
+              className={`btn ${m === 'nav' ? 'btn-neutral' : 'btn-primary'} btn-circle mx-4`}
               onClick={() => setSelectedModal(m)}
             >
               <Icon />

@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "¡No puedo creer lo bien que queda este Simón!"
 date: "2023-05-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fc008d5c7e66aa5674115d930e281fbd24489091-1920x1281.jpg"
 intro: "Nos quedamos boquiabiertos cuando un usuario de FreeSewing dejó caer estas fabulosas fotos de su nuevo Simon en un tema de GitHub."
 title: "Un Simon geométrico azul"
 designs:

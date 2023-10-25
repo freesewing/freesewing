@@ -16,6 +16,10 @@ config.rewrites = async () => {
       source: '/showcase',
       destination: '/showcase/page/1',
     },
+    {
+      source: '/sets',
+      destination: '/docs/site/sets',
+    },
   ]
 }
 

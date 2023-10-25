@@ -1,13 +1,13 @@
-import { ThemePicker } from 'shared/components/theme-picker/index.mjs'
-import { LocalePicker } from 'shared/components/locale-picker/index.mjs'
+import { ModalThemePicker } from 'shared/components/modal/theme-picker.mjs'
+import { ModalLocalePicker } from 'shared/components/modal/locale-picker.mjs'
 
 export const ns = ['']
 
 export const BeforeNav = ({ app }) => (
   <>
     <div className="md:hidden flex flex-row flex-wrap sm:flex-nowrap gap-2 mb-2">
-      <ThemePicker app={app} />
-      <LocalePicker app={app} />
+      <ModalThemePicker app={app} />
+      <ModalLocalePicker app={app} />
     </div>
     <div className="md:hidden flex flex-row flex-wrap sm:flex-nowrap gap-2 mb-2"></div>
   </>

@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Wenn dein Partner Snook hieße, würdest du ihn auch Snook nennen."
 date: "2017-11-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/adbe9f0fb465866669913ed393d77c0ae48a59f7-2000x2667.jpg"
 intro: "Ein Simon-Shirt von Kris für ihren Snook"
 title: "Ein Simon-Shirt von Kris für ihren Snook"
 designs:

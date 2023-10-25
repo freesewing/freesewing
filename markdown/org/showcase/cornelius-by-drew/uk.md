@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Велосипедні бриджі Cornelius з льону"
 date: "2021-07-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7cb1aa306644cf26aac361deaec00e9bb3bdd342-482x800.jpg"
 intro: "Дрю С. створив цю класну пару штанів з льону, свою першу викрійку для FreeSewing, а також перший раз зробив штани! Дрю поділився:"
 title: "Корнеліус Дрю С."
 designs:

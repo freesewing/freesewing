@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import Link from 'next/link'
 
 export const ChoiceLink = ({ title = '', href = '', children, icon = null }) => {

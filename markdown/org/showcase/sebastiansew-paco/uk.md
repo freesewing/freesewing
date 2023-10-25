@@ -2,7 +2,6 @@
 maker: "SebastianSew"
 caption: "Штани Пако для роботи на відкритому повітрі з гумкою на щиколотці"
 date: "2021-09-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/cfc2c203229bc437f737bf815bd8d65deb9d2c8c-868x1156.jpg"
 intro: "Це перша з двох супер крутих пар штанів Paco від SebastianSew! Ці мають еластичну щиколотку. З задньою, передньою та боковими кишенями. Тканина - повністю бавовняний денім, середньої ваги."
 title: "Першокласні штани Paco від SebastianSew, з еластичною резинкою"
 designs:

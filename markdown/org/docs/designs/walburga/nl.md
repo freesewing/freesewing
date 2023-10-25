@@ -2,4 +2,7 @@
 title: "Walburga Wapenrok"
 ---
 
-<PatternDocs pattern='walburga' />
+
+
+<DesignInfo design='walburga' docs />
+

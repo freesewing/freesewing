@@ -5,12 +5,12 @@ import { sharedDimensions } from './shared.mjs'
 function draftHueyFront({
   utils,
   store,
+  macro,
   Point,
   Path,
   points,
   paths,
   complete,
-  paperless,
   sa,
   options,
   measurements,
@@ -75,25 +75,35 @@ function draftHueyFront({
 
   paths.seam = paths.saBase.clone().join(paths.hemBase).close().attr('class', 'fabric')
 
-  // Complete?
-  if (complete) {
-    if (options.pocket) {
-      paths.pocket = new Path()
-        .move(points.pocketHem)
-        .line(points.pocketTip)
-        .curve_(points.pocketTipCp2, points.pocketTopRight)
-        .line(points.pocketCfTop)
-        .attr('class', 'fabric dashed stroke-sm')
-    }
-
-    if (sa) {
-      paths.sa = paths.hemBase.offset(options.ribbing ? sa : 3 * sa).join(paths.saBase.offset(sa))
-      paths.sa = paths.sa.line(paths.sa.start()).close().attr('class', 'fabric sa')
-    }
+  if (complete && options.pocket) {
+    paths.pocket = new Path()
+      .move(points.pocketHem)
+      .line(points.pocketTip)
+      .curve_(points.pocketTipCp2, points.pocketTopRight)
+      .line(points.pocketCfTop)
+      .attr('class', 'fabric dashed stroke-sm')
   }
 
-  // Paperless?
-  if (paperless) sharedDimensions(part, 'front')
+  if (sa) {
+    paths.sa = paths.hemBase.offset(options.ribbing ? sa : 3 * sa).join(paths.saBase.offset(sa))
+    paths.sa = paths.sa.line(paths.sa.start()).close().attr('class', 'fabric sa')
+  }
+
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Title
+  macro('rmtitle')
+  macro('title', {
+    at: points.title,
+    nr: 1,
+    title: 'front',
+  })
+
+  sharedDimensions(part, 'front')
 
   return part
 }

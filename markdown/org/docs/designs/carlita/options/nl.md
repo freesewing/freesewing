@@ -2,4 +2,4 @@
 title: "Carlita jas: Ontwerpopties"
 ---
 
-<PatternOptions pattern='carlita' />
+<DesignOptions design='carlita' />

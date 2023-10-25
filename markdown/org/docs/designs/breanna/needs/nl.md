@@ -5,7 +5,7 @@ title: "Breanna lichaamsblok: Wat je nodig hebt"
 Om Breanna te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- Ongeveer 1,25 - 1,5 meter van een geschikte stof ([zie Breanna stofopties](/docs/patterns/Breanna/fabric/)).
+- Ongeveer 1,25 - 1,5 meter van een geschikte stof ([zie Breanna stofopties](/docs/designs/Breanna/fabric/)).
 
 Deze lijst is voor een standaard Breanna Block. Als je veranderingen aan het blok hebt aangebracht, heb je misschien extra onderdelen nodig, zoals sluitingen, bindingen, enz.
 

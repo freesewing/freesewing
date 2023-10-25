@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Tu fondo de conexión para agosto"
 date: "2018-07-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/73ad81c28d5045aeaaebc1e182accac4f93f52eb-1920x1280.jpg"
 intro: "Resumen mensual - Julio de 2018: Francés y esperando a Sandy"
 title: "Resumen mensual - Julio de 2018: Francés y esperando a Sandy"
 ---

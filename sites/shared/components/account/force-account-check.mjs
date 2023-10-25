@@ -6,8 +6,8 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 
 export const ForceAccountCheck = ({ trigger = null }) => {
   // Hooks
-  const { account, setAccount, token, logout } = useAccount()
-  const backend = useBackend(token)
+  const { account, setAccount, signOut } = useAccount()
+  const backend = useBackend()
 
   // State
   const [lastCheck, setLastCheck] = useState(Date.now())
@@ -22,7 +22,7 @@ export const ForceAccountCheck = ({ trigger = null }) => {
           setAccount(result.data.account)
         } else {
           // Login expired. Logout user.
-          logout()
+          signOut()
         }
         setLastCheck(Date.now())
       }

@@ -1,6 +1,6 @@
 measurements: Заміри
 ankle: Обхват щиколодки
-biceps: Обхват біцепсів
+biceps: Обхват біцепса
 bustFront: Передній напівобхват грудей
 bustPointToUnderbust: Центр грудей до підгруддя
 bustSpan: Центр грудей
@@ -29,7 +29,7 @@ underbust: Підгруддя
 upperLeg: Обхват верху ноги
 waist: Обхват талії
 waistBack: Ширина талії ззаду
-waistToArmhole: Від талії до пройми
+waistToArmpit: Waist to armpit
 waistToFloor: Від талії до підлоги
 waistToHips: Від талії до кісточки таза
 waistToKnee: Від талії до коліна

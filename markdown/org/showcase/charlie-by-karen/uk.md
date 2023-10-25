@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Пара фіолетових чарлі"
 date: "2021-07-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/057330d8ccc0e758cfe43f25649489eddb728ce6-1288x1800.jpg"
 intro: "Ці Шарлі виготовлені з фіолетової стрейчевої саржі з максимальним підйомом (30%)."
 title: "Фіолетовий Чарлі"
 designs:

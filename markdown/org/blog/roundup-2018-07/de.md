@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dein Login-Hintergrund für August"
 date: "2018-07-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/73ad81c28d5045aeaaebc1e182accac4f93f52eb-1920x1280.jpg"
 intro: "Monatliche Zusammenfassung - Juli 2018: Französisch und Warten auf Sandy"
 title: "Monatliche Zusammenfassung - Juli 2018: Französisch und Warten auf Sandy"
 ---

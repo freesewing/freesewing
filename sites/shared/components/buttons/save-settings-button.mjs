@@ -2,12 +2,12 @@
 import { useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Components
 import { Spinner } from 'shared/components/spinner.mjs'
 
 export const SaveSettingsButton = ({ btnProps = {}, welcome = false, label = false }) => {
-  const { loading } = useContext(LoadingContext)
+  const { loading } = useContext(LoadingStatusContext)
   const { t } = useTranslation(['account'])
   let classes = 'btn mt-4 capitalize '
   if (welcome) {

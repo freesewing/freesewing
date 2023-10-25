@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "Such a fantastic Simon shirt, modeled by the creator!"
 date: "2023-05-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/41a2576323a499f2a571335a68795be7d6a88bdc-1920x1281.jpg"
 intro: "The sixth Simon for this sewist, we love this geometric patterned Simon in a shade of brown crisscrossed with thin white lines. The creator dropped this in a GitHub issue to share with FreeSewing, and we couldn't be more pleased."
 title: "A brown geometric Simon"
 designs: ["simon"]

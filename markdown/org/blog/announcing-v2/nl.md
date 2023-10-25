@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Deze lancering is echt een aardverschuiving."
 date: "2019-08-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5b31cfbe3a85cee5519e12afe767ca3249588463-2000x1126.jpg"
 intro: "Welkom aan versie 2 van FreeSewing, het open source-platform voor naaipatronen op maat."
 title: "We presenteren FreeSewing v2.0"
 ---

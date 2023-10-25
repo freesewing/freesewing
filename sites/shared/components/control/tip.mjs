@@ -1,5 +1,6 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { Popout } from 'shared/components/popout/index.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { PageLink } from 'shared/components/link.mjs'
 import { useTranslation } from 'next-i18next'
 import { RightIcon } from 'shared/components/icons.mjs'
 

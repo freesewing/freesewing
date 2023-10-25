@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useEffect, useCallback } from 'react'
 import { useTranslation } from 'next-i18next'
 import { CutMenu, ns as menuNs } from './menu.mjs'
@@ -11,6 +12,7 @@ import {
   useMaterialList,
   useMaterialLength,
 } from './hooks'
+import { V3Wip } from 'shared/components/v3-wip.mjs'
 
 export const ns = [...menuNs, ...wrapperNs]
 
@@ -44,7 +46,6 @@ export const CutView = ({
   update,
   language,
   account,
-  DynamicDocs,
   Design,
 }) => {
   const { t } = useTranslation(['workbench', 'plugin'])
@@ -67,11 +68,14 @@ export const CutView = ({
 
   return (
     <PatternWithMenu
+      noHeader
       {...{
         settings,
         ui,
         update,
         control: account.control,
+        account,
+        design,
         setSettings,
         title: (
           <div className="px-2 flex flex-wrap justify-between items-baseline">
@@ -110,21 +114,23 @@ export const CutView = ({
           </div>
         ),
         menu: (
-          <CutMenu
-            {...{
-              design,
-              pattern,
-              patternConfig,
-              settings,
-              ui,
-              update,
-              language,
-              account,
-              DynamicDocs,
-              materialSettings,
-              setSettings,
-            }}
-          />
+          <>
+            <V3Wip />
+            <CutMenu
+              {...{
+                design,
+                pattern,
+                patternConfig,
+                settings,
+                ui,
+                update,
+                language,
+                account,
+                materialSettings,
+                setSettings,
+              }}
+            />
+          </>
         ),
       }}
     />

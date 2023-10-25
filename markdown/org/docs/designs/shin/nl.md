@@ -2,4 +2,7 @@
 title: "Shin zwembroek"
 ---
 
-<PatternDocs pattern='shin' />
+
+
+<DesignInfo design='shin' docs />
+

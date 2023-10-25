@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Básculas, ¿cómo funcionan?"
 date: "2018-01-04"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d09252be53d33ab5b743c22f523a9ea8cbd70708-2000x1328.jpg"
 intro: "Ya está disponible el núcleo de Freesewing v1.3.0; viene con correcciones tan buenas que las hemos retroportado a todos tus borradores"
 title: "Ya está disponible el núcleo de Freesewing v1.3.0; viene con correcciones tan buenas que las hemos retroportado a todos tus borradores"
 ---

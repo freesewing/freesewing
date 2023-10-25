@@ -262,6 +262,18 @@ Pattern.prototype.__applySettings = function (sets) {
 }
 
 /**
+ * Populates the pattern store with methods set by plugins
+ *
+ * @private
+ * @return {Store} store - The pattern-wide store populated with relevant data/methods
+ */
+Pattern.prototype.__extendPatternStore = function () {
+  this.store.extend([...this.plugins.__storeMethods])
+
+  return this.store
+}
+
+/**
  * Creates a store for a set (of settings)
  *
  * @private

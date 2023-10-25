@@ -2,4 +2,4 @@
 title: "Куртка Jaeger: Варіанти дизайну"
 ---
 
-<PatternOptions pattern='jaeger' />
+<DesignOptions design='jaeger' />

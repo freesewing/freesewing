@@ -2,7 +2,6 @@
 maker: "SebastianSew"
 caption: "Paco Hose für die Arbeit im Freien ohne Knöchelgummi"
 date: "07.09.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/bfa0ba6da28e2377d998f5befcaa137409d64fd9-868x1156.jpg"
 intro: "Bei dieser beliebten Paco-Hose wurde auf den Gummizug am Knöchel verzichtet (eine Version mit Gummizug findest du im anderen Paco-Showcase von SebastianSew) und sie hat Taschen hinten, vorne und seitlich. Der Stoff ist ein mittelschwerer Denim aus reiner Baumwolle."
 title: "Ein weiteres hervorragendes Paar Pacos von SebastianSew für den Innenbereich"
 designs:

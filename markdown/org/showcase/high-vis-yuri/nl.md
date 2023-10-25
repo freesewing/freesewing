@@ -2,7 +2,6 @@
 maker: "Helse"
 caption: "Uitzicht bij daglicht"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3a80879182c63ed3438ee239ed6cb5d2a88d2d4b-1440x1800.jpg"
 intro: "Er zijn niet genoeg woorden om deze Yuri hoodie van de onnavolgbare Hellgy te beschrijven! Flitsend! Levendig! Disco! Super leuk!!!"
 title: "Hellgy's high vis Yuri hoodie (knipperende lichten GIF's in post)"
 designs:

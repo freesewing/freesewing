@@ -2,7 +2,6 @@
 maker: "Jasmine"
 caption: "Wenn du den Arm dieses Drop-Shoulder-Svens ausstreckst, bekommst du ein gutes Gefühl für die Wirkung der Veränderung"
 date: "2023-01-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/eb6eb402ffce2e41a4bf6a7f1b110e01ed98666f-1956x2608.jpg"
 intro: "FreeSewing-Benutzerin Jasmine hat diesen tollen Sven mit überschnittenen Schultern und einer kleinen Ärmelfalte entworfen, der einfach unglaublich ist. Aber es kommt noch besser, denn sie hat eine Anleitung geschrieben, wie man das Ganze macht. Schau dir das fertige Produkt hier an, aber scrolle nach unten, wenn du die ganze Anleitung lesen willst!"
 title: "Drop Shoulder Sven"
 designs:

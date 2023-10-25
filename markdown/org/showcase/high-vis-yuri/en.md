@@ -2,7 +2,6 @@
 maker: "Hellgy"
 caption: "A daylight view"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3a80879182c63ed3438ee239ed6cb5d2a88d2d4b-1440x1800.jpg"
 intro: "There are not enough words to describe this Yuri hoodie by the inimitable Hellgy! Flashy! Vibrant! Disco! Super fun!!"
 title: "Hellgy's high vis Yuri hoodie (flashing lights GIFs in post)"
 designs: ["yuri"]

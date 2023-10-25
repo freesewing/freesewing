@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "Bolso Hortensia de Haring por Wouter"
 date: "2021-03-06"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7192891ad24b1dc1ccb1a4093dc70e3678bb65c7-661x612.jpg"
 intro: "Wouter no sólo cosió este bolso Hortensia de Haring, ¡también diseñó la tela y confeccionó el patrón! Compartió que hizo el diseño de la tela con su hija y lo hizo imprimir a través de Spoonflower."
 title: "Hortensia por Wouter"
 designs:

@@ -2,4 +2,7 @@
 title: "Ручна сумка Гортензія"
 ---
 
-<PatternDocs pattern='hortensia' />
+
+
+<DesignInfo design='hortensia' docs />
+

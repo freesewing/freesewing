@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Die Cornelius Radlerhosen aus Leinen"
 date: "2021-07-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7cb1aa306644cf26aac361deaec00e9bb3bdd342-482x800.jpg"
 intro: "Drew S. hat diese coole Hose aus Leinen genäht, ihr erstes FreeSewing-Muster und auch das erste Mal, dass sie eine Hose genäht hat! Drew teilte:"
 title: "Drew S.'s Cornelius"
 designs:

@@ -2,4 +2,7 @@
 title: "Brian Basisvorm"
 ---
 
-<PatternDocs pattern='brian' />
+
+
+<DesignInfo design='brian' docs />
+

@@ -2,7 +2,6 @@
 maker: "William"
 caption: "Bruce en un interesante tejido elástico"
 date: "2022-06-09"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9f347c949c2fb673ed7dda8ebfd93cc559165dd4-800x600.jpg"
 intro: "Estos calzoncillos bóxer Bruce son de William. No te pierdas su primera versión, también en el escaparate de FreeSewing."
 title: "Otro día, otro Bruce"
 designs:

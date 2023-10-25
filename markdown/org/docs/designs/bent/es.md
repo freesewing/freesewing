@@ -2,4 +2,7 @@
 title: "Bent, patrón base de chaqueta"
 ---
 
-<PatternDocs pattern='bent' />
+
+
+<DesignInfo design='bent' docs />
+

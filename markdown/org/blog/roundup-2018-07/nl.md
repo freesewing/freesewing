@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Je inlogachtergrond voor augustus"
 date: "2018-07-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/73ad81c28d5045aeaaebc1e182accac4f93f52eb-1920x1280.jpg"
 intro: "Maandelijkse roundup - juli 2018: Frans en wachten op Sandy"
 title: "Maandelijkse roundup - juli 2018: Frans en wachten op Sandy"
 ---

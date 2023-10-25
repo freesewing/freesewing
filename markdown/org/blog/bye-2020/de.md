@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ein Foto von <a href='https://unsplash.com/@onevagabond'>Paulo Silva</a> zeigt einen leeren Times Square in New York während der COVID-Pandemie"
 date: "2021-01-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ffacb5c6384f250ad7cd3cb50b5ed4fdeff33ae6-1920x1280.jpg"
 intro: "Sind wir nicht alle froh, dass 2020 vorbei ist?"
 title: "Das Jahr 2020 hatte es in sich"
 ---
@@ -40,7 +39,7 @@ Wir bemühen uns auch, Schnittmuster für alle Körpertypen anzubieten, und ich 
 ##### Wir haben dieses Jahr mehr Menschen als je zuvor geholfen
 In der Praxis habe ich unser Buchjahr um ein paar Wochen verlängert, so dass wir in Zukunft nur noch den Kalenderjahren folgen werden. Mit ein paar verbleibenden Stunden in diesem Jahr beläuft sich der Umsatz von FreeSewing für 2020 auf **10.736,82 Euro**. Das macht 2020 zu einem absoluten Spitzenjahr, und es ist mehr als alle vorherigen Jahre zusammen (2015: 256,65 €, 2016: 473,50 €, 2017: 673,14 €, 2018: 3162,14 €, 2019: 4109,38 €).
 
-Wie immer geht der gesamte Erlös von FreeSewing - die gesamten 10.736,82 Euro - [an Ärzte ohne Grenzen](/docs/various/pledge/).
+Wie immer geht der gesamte Erlös von FreeSewing - die gesamten 10.736,82 Euro - [an Ärzte ohne Grenzen](/docs/about/pledge/).
 
 Ich bin euch wirklich dankbar für eure kontinuierliche Unterstützung und eure Beiträge. Ich habe das Gefühl, dass wir auf eine sehr kleine Art und Weise etwas Balsam auf die Verletzungen auftragen können, die in der Welt manchmal allgegenwärtig zu sein scheinen.
 

@@ -1,6 +1,6 @@
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import { formatMm } from 'shared/utils.mjs'
-import { Tab, Tabs } from '../mdx/tabs.mjs'
+import { Tab, Tabs } from '../tabs.mjs'
 
 export const Error = ({ err }) => {
   // Include the error name and message info if it isn't already at the top
@@ -27,9 +27,7 @@ export const Error = ({ err }) => {
 }
 
 // Markdown wrapper to suppress creation of P tags
-const Md = ({ children }) => (
-  <Markdown components={{ p: (props) => props.children }}>{children}</Markdown>
-)
+const Md = ({ md }) => <Mdx components={{ p: (props) => props.children }} md={md} />
 
 const Log = ({ log, units }) => {
   if (Array.isArray(log)) {
@@ -43,9 +41,9 @@ const Log = ({ log, units }) => {
       )
     else return log.map((l) => <Log log={l} key={l} />)
   } else if (log.message) return <Error err={log} />
-  else if (typeof log === 'string') return <Md>{log}</Md>
+  else if (typeof log === 'string') return <Md md={log} />
 
-  return <Md>Unrecognized log: {JSON.stringify(log, null, 2)}</Md>
+  return <Md md={`Unrecognized log: ${JSON.stringify(log, null, 2)}`} />
 }
 
 export const LogGroup = ({ type = 'info', logs = [], units = 'metric' }) =>

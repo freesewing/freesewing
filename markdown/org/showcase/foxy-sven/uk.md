@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Светр Sven з червоною палітуркою та дивовижними малюнками маленької лисички!"
 date: "2023-01-23"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0301979d6fef57676f4e03997cba9415c88e03b2-2448x3264.jpg"
 intro: "Користувач FreeSewing намалював цього лисого Свена для свого хлопця, і він вийшов фантастичним!"
 title: "Лисий светр Sven"
 designs:

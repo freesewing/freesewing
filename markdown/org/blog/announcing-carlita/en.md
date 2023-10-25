@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Picture you and him, in matching coats."
 date: "2018-01-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d0ac31adcf8e14cec377aada6c688394a15199d8-1920x1440.webp"
 intro: "This one's for the ladies --- and I'm not (just) talking about that picture of heart-throb Benedict Cumberbatch at the top of this post."
 title: "Announcing Carlita, the womenswear version of our Carlton coat."
 ---
@@ -47,7 +46,7 @@ This way, the pocket can be integrated in the princess seam, somewhere in the un
 ### One extra option: The princess seam smooth factor
 
 Carlita also has one extra option that Carlton doesn't have, the somewhat elaborately named 
-[Princess seam smooth factor](/docs/patterns/carlita/options#princessSeamSmoothFactor).
+[Princess seam smooth factor](/docs/designs/carlita/options#princessSeamSmoothFactor).
 
 This controls how sharply the princess seam will revert back after having added the extra volume for your chest.
 

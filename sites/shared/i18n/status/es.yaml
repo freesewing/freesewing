@@ -1,0 +1,14 @@
+backendError: Backend returned an error
+contactingBackend: Contacting the FreeSewing backend
+contactingGitHub: Contacting GitHub
+contactingGoogle: Contacting Google
+copiedToClipboard: Copiado al portapapeles
+dataLoaded: Loaded data from the FreeSewing backend
+generatingPdf: Generating your PDF, one moment please
+nailedIt: Clavado!
+pdfFailed: An unexpected error occured while generating your PDF
+pdfReady: PDF generated
+processingUpdate: Processing update
+settingsSaved: Settings saved
+updatingSettings: Updating settings
+

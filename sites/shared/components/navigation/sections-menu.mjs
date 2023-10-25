@@ -1,10 +1,11 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useContext } from 'react'
+import { useTheme } from 'shared/hooks/use-theme.mjs'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import Link from 'next/link'
 import { icons, ns as sectionsNs } from 'shared/components/navigation/primary.mjs'
 import { useTranslation } from 'next-i18next'
 import orderBy from 'lodash.orderby'
-import { colors } from 'shared/components/header.mjs'
 
 export const ns = sectionsNs
 
@@ -13,6 +14,7 @@ const onlySections = (tree) => orderBy(tree, ['t'], ['asc']).filter((entry) => e
 export const SectionsMenu = ({ bOnly = false }) => {
   const { t } = useTranslation(ns)
   const { siteNav } = useContext(NavigationContext)
+  const { spectrum } = useTheme()
 
   const output = []
   let i = 1
@@ -26,7 +28,7 @@ export const SectionsMenu = ({ bOnly = false }) => {
             className={
               bOnly
                 ? `bg-secondary border border solid border-secondary bg-opacity-0 hover:bg-opacity-20 ${sharedClasses}`
-                : `bg-${colors[i]}-400 bg-opacity-70 hover:bg-opacity-100 ${sharedClasses}`
+                : `bg-${spectrum[i]} bg-opacity-70 hover:bg-opacity-100 ${sharedClasses}`
             }
             href={`/${page.s}`}
             title={page.t}

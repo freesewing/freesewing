@@ -2,7 +2,6 @@
 maker: "ferdi"
 caption: "Deze Simon is iets wijder genaaid om als overhemd te worden gedragen"
 date: "2021-11-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ccc178893cc97708b480fb5bf298c7a6ec7abc76-1920x1280.jpg"
 intro: "Wat een aantrekkelijke versie van het Simon shirt! De maker zegt:"
 title: "Simon als overhemd door Ferdi"
 designs:

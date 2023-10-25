@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Un vestido basado en el bloque de corpiño Bella"
 date: "2021-06-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f2325ac8325f54f48637fa7d24e0edebfd5ab3ee-600x800.jpg"
 intro: "¡La talentosa Bumblebunch ha compartido este vestido basado en el bloque de corpiño Bella! ¿Quién hubiera imaginado que estaba hecho con una sábana vieja?"
 title: "Vestido de Bumblebunch basado en el bloque Bella"
 designs:

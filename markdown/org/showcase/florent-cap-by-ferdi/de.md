@@ -2,7 +2,6 @@
 maker: "ferdi"
 caption: "Eine Ölhaut Florent Kappe"
 date: "07.11.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5cc7c9e8af3c7716d2df9ac7fce9a44f6c19034f-1115x800.jpg"
 intro: "Diese raffinierte Mütze von Florent ist von Ferdi, der sagte:"
 title: "Florentiner Mütze von Ferdi"
 designs:

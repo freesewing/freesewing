@@ -3,7 +3,7 @@
   "d": "For Sherlock Holmes cosplay or just a cute hat.",
   "p": {
     "ear": "Ear",
-    "gore": "Gore",
+    "crown": "Crown",
     "visor": "Visor"
   },
   "s": {},
@@ -39,6 +39,14 @@
     "buttonhole": {
       "t": "Buttonhole guide",
       "d": "Adds a buttonhole to the ear flap to help you draft the buttonhole ear flap variant"
+    },
+    "buttonholeNo": {
+      "t": "No buttonhole guide",
+      "d": "Do not place a buttonhole on the ear flap"
+    },
+    "buttonholeYes": {
+      "t": "With buttonhole guide",
+      "d": "Do place a buttonhole on the ear flap"
     },
     "visorLength": {
       "t": "Visor length",

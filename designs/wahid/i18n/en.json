@@ -11,7 +11,18 @@
     "pocketInterfacing": "Pocket interfacing",
     "pocketWelt": "Pocket welt"
   },
-  "s": {},
+  "s": {
+    "cutFrontFacing.t": "The front facing is not shown",
+    "cutFrontFacing.d": "The **Front facing** (1a) is not shown, but you can trace it from the Front part (1). Trace the outline on the left of the facing/lining boundary that extends from the tip of the dart to the shoulder seam. \n\nIt is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutFrontLining.t": "The front lining is not shown",
+    "cutFrontLining.d": "The **Front lining** (1b) is not shown, but you can trace it from the Front part (1). Trace the outline on the right of the facing/lining boundary that extends from the tip of the dart to the shoulder seam. \n\nIt is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutPocketWelt.t": "The pocket welt is not shown",
+    "cutPocketWelt.d": "The **Pocket welt** (3) is a rectangular piece of fabric {{{ w }}} wide and {{{ l }}} long (this part does not use seam allowance). \n\nIt is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutPocketInterfacing.t": "The pocket interfacing is not shown",
+    "cutPocketInterfacing.d": "The **Pocket interfacing** (6) is a rectangular piece of fabric {{{ w }}} wide and {{{ l }}} long (this part does not use seam allowance). \n\nIt is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "flbFacingSide": "Facing/Lining boundary : Facing side",
+    "flbLiningSide": "Facing/Lining boundary : Lining side"
+  },
   "o": {
     "backScyeDart": {
       "t": "Back scye dart",
@@ -41,9 +52,29 @@
       "t": "Neck opening style",
       "d": "Style of the neck opening"
     },
+    "frontStyle.classic": {
+      "t": "Classic",
+      "d": "Draft a waistcoat with a classic V-shaped neck opening"
+    },
+    "frontStyle.rounded": {
+      "t": "Rounded",
+      "d": "Draft a waistcoat with a rounded V-shaped neck opening"
+    },
     "hemStyle": {
       "t": "Hem style",
       "d": "Style of the front hem"
+    },
+    "hemStyle.classic": {
+      "t": "classic",
+      "d": "Draft a waistcoat with a classic cut-away hem style"
+    },
+    "hemStyle.rounded": {
+      "t": "Rounded",
+      "d": "Draft a waistcoat with a rounded hem style"
+    },
+    "hemStyle.square": {
+      "t": "Straight",
+      "d": "Draft a waistcoat with with straight hem"
     },
     "hemRadius": {
       "t": "Hem radius",

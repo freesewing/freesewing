@@ -1,5 +1,4 @@
 import { box } from './shared.mjs'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 
 function legendDimension({ points, Point, macro, part }) {
   points.a = new Point(10, 20)
@@ -8,6 +7,7 @@ function legendDimension({ points, Point, macro, part }) {
   macro('ld', {
     from: points.a,
     to: points.b,
+    force: true,
   })
 
   return box(part, 100, 25)
@@ -15,6 +15,5 @@ function legendDimension({ points, Point, macro, part }) {
 
 export const dimension = {
   name: 'legend.dimension',
-  plugins: pluginBundle,
   draft: legendDimension,
 }

@@ -2,7 +2,6 @@
 maker: "TangerineShark"
 caption: "TangerineShark dans une robe Aaron modifiée"
 date: "2023-01-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/60bf0ea6d52c09618ecd7a59293faaf48da014b0-3024x4032.jpg"
 intro: "Hé ! TangerineShark, utilisatrice de FreeSewing, est ici ! J'ai modifié ce Aaron A-shirt en le rallongeant pour en faire une robe."
 title: "Aaron modifié en robe"
 designs:
@@ -31,5 +30,5 @@ Il est préférable de prendre un peu plus long que prévu, car il est facile de
 ![Une approximation du résultat des modifications apportées pour transformer le tee-shirt Aaron en robe Aaron.](https://posts.freesewing.org/uploads/teagan_dress_481cb6b7b9.svg)
 
 ### C'est maintenant la partie la plus facile !
-Tu peux suivre les instructions d'assemblage de [pour Aaron](https://freesewing.org/docs/patterns/aaron/instructions/), sauf pour les coutures latérales super longues. Avant de faire l'ourlet de ta robe, essaie-la ! J'ai fait un ourlet autour de la cheville, mais expérimente avec la profondeur de l'ourlet. C'est particulièrement important si ton tissu est extensible ou drapé, car il peut s'étirer plus longtemps que prévu.
+Tu peux suivre les instructions d'assemblage de [pour Aaron](/docs/designs/aaron/instructions/), sauf pour les coutures latérales super longues. Avant de faire l'ourlet de ta robe, essaie-la ! J'ai fait un ourlet autour de la cheville, mais expérimente avec la profondeur de l'ourlet. C'est particulièrement important si ton tissu est extensible ou drapé, car il peut s'étirer plus longtemps que prévu.
 

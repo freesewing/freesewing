@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Stefan zeigt sein neues T-Shirt, das auf dem Brian Body Block basiert."
 date: "2017-11-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/2c7cf37e1f57ef685ee9e767ab84ceeed677f3c5-1971x1970.jpg"
 intro: "Dieses Bild erschien ursprünglich im Twitter-Feed von @SThanheiser."
 title: "Stefan macht ein T-Shirt nach dem Vorbild von Brian 2/4"
 designs:

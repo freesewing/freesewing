@@ -1,16 +1,17 @@
-import themes from 'shared/themes/index.js'
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
+import { themes } from 'shared/themes/index.mjs'
 import { useTranslation } from 'next-i18next'
 import { useTheme } from 'shared/hooks/use-theme.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 
 export const ns = ['themes']
 
-export const ModalThemePicker = ({ app, iconOnly = false, bottom = false }) => {
-  const [theme, setTheme] = useTheme()
+export const ModalThemePicker = () => {
+  const { setTheme } = useTheme()
   const { t } = useTranslation(ns)
 
   return (
-    <ModalWrapper app={app}>
+    <ModalWrapper>
       <div className="grid gap-2 p-4 grid-cols-1 max-w-lg w-full">
         <h2>{t('themes:chooseYourTheme')}</h2>
         {Object.keys(themes).map((theme) => (

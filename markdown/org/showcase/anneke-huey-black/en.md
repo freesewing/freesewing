@@ -2,7 +2,6 @@
 maker: "Anneke Caramin"
 caption: "Anneke rocking her latest Huey, this time in black."
 date: "2020-10-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4e6d5a2fdf43b6904230f7ef7594bbcd41dd8759-640x640.jpg"
 intro: "A Black Huey by Anneke"
 title: "A Black Huey by Anneke"
 designs: ["huey"]

@@ -2,4 +2,7 @@
 title: "Simone, camisa"
 ---
 
-<PatternDocs pattern='simone' />
+
+
+<DesignInfo design='simone' docs />
+

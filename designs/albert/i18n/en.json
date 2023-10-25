@@ -6,7 +6,14 @@
     "pocket": "Pocket",
     "strap": "Strap"
   },
-  "s": {},
+  "s": {
+    "attachStrap": "Attach strap",
+    "cutPocket.t": "The pocket is not currently shown",
+    "cutPocket.d": "The **Pocket** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "cutStrap.t": "The straps are not currently shown",
+    "cutStrap.d": "The **Straps** are two strips of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "foldHere": "Fold here"
+  },
   "o": {
     "backOpening": {
       "t": "Back opening",

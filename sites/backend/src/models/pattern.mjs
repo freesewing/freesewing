@@ -1,340 +1,361 @@
 import { log } from '../utils/log.mjs'
-import { capitalize } from '../utils/index.mjs'
-import { setPatternAvatar } from '../utils/sanity.mjs'
-import yaml from 'js-yaml'
-import { SetModel } from './set.mjs'
+import { storeImage } from '../utils/cloudflare-images.mjs'
+import { decorateModel } from '../utils/model-decorator.mjs'
 
+/*
+ * This model handles all flows (typically that involves sending out emails)
+ */
 export function PatternModel(tools) {
-  this.config = tools.config
-  this.prisma = tools.prisma
-  this.decrypt = tools.decrypt
-  this.encrypt = tools.encrypt
-  this.rbac = tools.rbac
-  this.encryptedFields = ['data', 'img', 'name', 'notes', 'settings']
-  this.clear = {} // For holding decrypted data
-  this.Set = new SetModel(tools)
-
-  return this
+  return decorateModel(this, tools, {
+    name: 'pattern',
+    encryptedFields: ['data', 'name', 'notes', 'settings'],
+    jsonFields: ['data'],
+  })
 }
 
 /*
- * Returns a list of sets for the user making the API call
+ * Returns a list of patterns for the user making the API call
+ *
+ * @param {uid} string - uid of the user, as provided by the auth middleware
+ * @returns {patterns} array - The list of patterns
  */
 PatternModel.prototype.userPatterns = async function (uid) {
+  /*
+   * No uid no deal
+   */
   if (!uid) return false
+
+  /*
+   * Run query returning all patterns from the database
+   */
   let patterns
   try {
     patterns = await this.prisma.pattern.findMany({
       where: { userId: uid },
-      include: {
-        set: true,
-        cset: true,
-      },
     })
   } catch (err) {
     log.warn(`Failed to search patterns for user ${uid}: ${err}`)
   }
-  const list = []
-  for (const pattern of patterns) list.push(this.revealPattern(pattern))
 
+  /*
+   * Decrypt data for all patterns found
+   */
+  const list = patterns.map((pattern) => this.revealPattern(pattern))
+
+  /*
+   * Return the list of patterns
+   */
   return list
 }
 
+/*
+ * Creates a new pattern - Takes user input so we validate data and access
+ *
+ * @param {body} object - The request body
+ * @param {user} object - The user data as provided by the auth middleware
+ * @returns {PatternModel} object - The PatternModel
+ */
 PatternModel.prototype.guardedCreate = async function ({ body, user }) {
+  /*
+   * Enforce RBAC
+   */
   if (!this.rbac.user(user)) return this.setResponse(403, 'insufficientAccessLevel')
+
+  /*
+   * Do we have a POST body?
+   */
   if (Object.keys(body).length < 2) return this.setResponse(400, 'postBodyMissing')
-  if (!body.set && !body.cset) return this.setResponse(400, 'setOrCsetMissing')
-  if (typeof body.set !== 'undefined' && typeof body.set !== 'number')
-    return this.setResponse(400, 'setNotNumeric')
-  if (typeof body.cset !== 'undefined' && typeof body.cset !== 'number')
-    return this.setResponse(400, 'csetNotNumeric')
+
+  /*
+   * Is settings set?
+   */
   if (typeof body.settings !== 'object') return this.setResponse(400, 'settingsNotAnObject')
+
+  /*
+   * Is data set?
+   */
   if (body.data && typeof body.data !== 'object') return this.setResponse(400, 'dataNotAnObject')
+
+  /*
+   * Is design set?
+   */
   if (!body.design && !body.data?.design) return this.setResponse(400, 'designMissing')
+
+  /*
+   * Is design a string?
+   */
   if (typeof body.design !== 'string') return this.setResponse(400, 'designNotStringy')
 
-  // Prepare data
-  const data = {
+  /*
+   * Create initial record
+   */
+  await this.createRecord({
+    data: typeof body.data === 'object' ? body.data : {},
     design: body.design,
-    settings: body.settings,
-  }
-  if (data.settings.measurements) delete data.settings.measurements
-  if (body.set) data.setId = body.set
-  else if (body.cset) data.csetId = body.cset
-  else return this.setResponse(400, 'setOrCsetMissing')
+    img: this.config.avatars.pattern,
+    settings: {
+      ...body.settings,
+      measurements:
+        typeof body.settings.measurements === 'object' ? body.settings.measurements : {},
+    },
+    userId: user.uid,
+    name: typeof body.name === 'string' && body.name.length > 0 ? body.name : '--',
+    notes: typeof body.notes === 'string' && body.notes.length > 0 ? body.notes : '--',
+    public: body.public === true ? true : false,
+  })
 
-  // Data (will be encrypted, so always set _some_ value)
-  if (typeof body.data === 'object') data.data = body.data
-  else data.data = {}
-  // Name (will be encrypted, so always set _some_ value)
-  if (typeof body.name === 'string' && body.name.length > 0) data.name = body.name
-  else data.name = '--'
-  // Notes (will be encrypted, so always set _some_ value)
-  if (typeof body.notes === 'string' && body.notes.length > 0) data.notes = body.notes
-  else data.notes = '--'
-  // Public
-  if (body.public === true) data.public = true
-  data.userId = user.uid
-  // Set this one initially as we need the ID to create a custom img via Sanity
-  data.img = this.config.avatars.pattern
-
-  // Create record
-  await this.unguardedCreate(data)
-
-  // Update img? (now that we have the ID)
-  const img =
-    this.config.use.sanity &&
-    typeof body.img === 'string' &&
-    (!body.test || (body.test && this.config.use.tests?.sanity))
-      ? await setPatternAvatar(this.record.id, body.img)
-      : false
-
-  if (img) await this.unguardedUpdate(this.cloak({ img: img.url }))
-  else await this.read({ id: this.record.id })
-
-  return this.setResponse(201, 'created', { pattern: this.asPattern() })
-}
-
-PatternModel.prototype.unguardedCreate = async function (data) {
-  try {
-    this.record = await this.prisma.pattern.create({ data: this.cloak(data) })
-  } catch (err) {
-    log.warn(err, 'Could not create pattern')
-    return this.setResponse(500, 'createPatternFailed')
-  }
-
-  return this
-}
-
-/*
- * Loads a pattern from the database based on the where clause you pass it
- *
- * Stores result in this.record
- */
-PatternModel.prototype.read = async function (where) {
-  try {
-    this.record = await this.prisma.pattern.findUnique({
-      where,
-      include: {
-        set: true,
-        cset: true,
+  /*
+   * Now that we have a record ID, we can update the image, but only if needed
+   */
+  if (body.img) {
+    const img = await storeImage(
+      {
+        id: `pattern-${this.record.id}`,
+        metadata: { user: user.uid },
+        b64: body.img,
       },
-    })
-  } catch (err) {
-    log.warn({ err, where }, 'Could not read pattern')
-  }
+      this.isTest(body)
+    )
 
-  this.reveal()
+    /*
+     * If an image was created, update the record with its ID
+     * If not, just update the record from the database
+     */
+    await this.update({ img })
+  } else await this.read({ id: this.record.id })
 
-  return this.setExists()
+  /*
+   * Now return 201 and the record data
+   */
+  return this.setResponse201({ pattern: this.asPattern() })
 }
 
 /*
  * Loads a pattern from the database but only if it's public
  *
- * Stores result in this.record
+ * @param {params} object - The request (URL) parameters
+ * @returns {PatternModel} object - The PatternModel
  */
 PatternModel.prototype.publicRead = async function ({ params }) {
+  /*
+   * Attempt to read the database record
+   */
   await this.read({ id: parseInt(params.id) })
-  if (this.record.public !== true) {
-    // Note that we return 404
-    // because we don't want to reveal that a non-public pattern exists.
-    return this.setResponse(404)
-  }
 
-  return this.setResponse(200, false, this.asPublicPattern(), true)
+  /*
+   * Ensure it is public and if it is not public, return 404
+   * rather than reveal that a non-public pattern exists
+   */
+  if (this.record.public !== true) return this.setResponse(404)
+
+  /*
+   * Return pattern
+   */
+  return this.setResponse200(this.asPublicPattern())
 }
 
 /*
  * Loads a pattern from the database based on the where clause you pass it
  * In addition prepares it for returning the pattern data
  *
- * Stores result in this.record
+ * @param {params} object - The request (URL) parameters
+ * @param {user} object - The user data as provided by the auth middleware
+ * @returns {PatternModel} object - The PatternModel
  */
 PatternModel.prototype.guardedRead = async function ({ params, user }) {
+  /*
+   * Enforce RBAC
+   */
   if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
+
+  /*
+   * Is the id set?
+   */
   if (typeof params.id !== 'undefined' && !Number(params.id))
     return this.setResponse(403, 'idNotNumeric')
 
+  /*
+   * Attempt to read record from database
+   */
   await this.read({ id: parseInt(params.id) })
+
+  /*
+   * Return 404 if it cannot be found
+   */
   if (!this.record) return this.setResponse(404, 'notFound')
 
+  /*
+   * You need at least the bughunter role to read another user's pattern
+   */
   if (this.record.userId !== user.uid && !this.rbac.bughunter(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 
-  return this.setResponse(200, false, {
-    result: 'success',
-    pattern: this.asPattern(),
-  })
+  /*
+   * Return the loaded pattern
+   */
+  return this.setResponse200({ pattern: this.asPattern() })
 }
 
 /*
  * Clones a pattern
  * In addition prepares it for returning the pattern data
  *
- * Stores result in this.record
+ * @param {params} object - The request (URL) parameters
+ * @param {user} object - The user data as provided by the auth middleware
+ * @returns {PatternModel} object - The PatternModel
  */
 PatternModel.prototype.guardedClone = async function ({ params, user }) {
+  /*
+   * Enforce RBAC
+   */
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
+  /*
+   * Attempt to read record from database
+   */
   await this.read({ id: parseInt(params.id) })
+
+  /*
+   * You need the support role to clone another user's pattern that is not public
+   */
   if (this.record.userId !== user.uid && !this.record.public && !this.rbac.support(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 
-  // Clone pattern
+  /*
+   * Now clone the pattern
+   */
   const data = this.asPattern()
   delete data.id
   data.name += ` (cloned from #${this.record.id})`
   data.notes += ` (Note: This pattern was cloned from pattern #${this.record.id})`
-  await this.unguardedCreate(data)
 
-  // Update unencrypted data
+  /*
+   * Write it to the database
+   */
+  await this.createRecord(data)
+
+  /*
+   * Update record with unencrypted data
+   */
   this.reveal()
 
-  return this.setResponse(200, false, {
-    result: 'success',
-    pattern: this.asPattern(),
-  })
-}
-
-/*
- * Helper method to decrypt at-rest data
- */
-PatternModel.prototype.reveal = async function () {
-  this.clear = {}
-  if (this.record) {
-    for (const field of this.encryptedFields) {
-      this.clear[field] = this.decrypt(this.record[field])
-    }
-  }
-
-  // Parse JSON content
-  if (this.record?.cset) {
-    for (const lang of this.config.languages) {
-      const key = `tags${capitalize(lang)}`
-      if (this.record.cset[key]) this.record.cset[key] = JSON.parse(this.record.cset[key])
-    }
-    if (this.record.cset.measies) this.record.cset.measies = JSON.parse(this.record.cset.measies)
-  }
-  if (this.record?.set) {
-    this.record.set = this.Set.revealSet(this.record.set)
-  }
-
-  return this
-}
-
-/*
- * Helper method to encrypt at-rest data
- */
-PatternModel.prototype.cloak = function (data) {
-  for (const field of this.encryptedFields) {
-    if (typeof data[field] !== 'undefined') {
-      data[field] = this.encrypt(data[field])
-    }
-  }
-
-  return data
-}
-
-/*
- * Checks this.record and sets a boolean to indicate whether
- * the pattern exists or not
- *
- * Stores result in this.exists
- */
-PatternModel.prototype.setExists = function () {
-  this.exists = this.record ? true : false
-
-  return this
-}
-
-/*
- * Updates the pattern data - Used when we create the data ourselves
- * so we know it's safe
- */
-PatternModel.prototype.unguardedUpdate = async function (data) {
-  try {
-    this.record = await this.prisma.pattern.update({
-      where: { id: this.record.id },
-      data,
-      include: {
-        set: true,
-        cset: true,
-      },
-    })
-  } catch (err) {
-    log.warn(err, 'Could not update pattern record')
-    process.exit()
-    return this.setResponse(500, 'updatePatternFailed')
-  }
-  await this.reveal()
-
-  return this.setResponse(200)
+  /*
+   * And return the cloned pattern
+   */
+  return this.setResponse200({ pattern: this.asPattern() })
 }
 
 /*
  * Updates the pattern data - Used when we pass through user-provided data
  * so we can't be certain it's safe
+ *
+ * @param {params} object - The request (URL) parameters
+ * @param {body} object - The request body
+ * @param {user} object - The user data as provided by the auth middleware
+ * @returns {PatternModel} object - The PatternModel
  */
 PatternModel.prototype.guardedUpdate = async function ({ params, body, user }) {
+  /*
+   * Enforce RBAC
+   */
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
+
+  /*
+   * Attempt to read record from the database
+   */
   await this.read({ id: parseInt(params.id) })
+
+  /*
+   * Only admins can update other people's patterns
+   */
   if (this.record.userId !== user.uid && !this.rbac.admin(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
+
+  /*
+   * Prepare data for updating the record
+   */
   const data = {}
-  // Name
+  /*
+   * name
+   */
   if (typeof body.name === 'string') data.name = body.name
-  // Notes
+  /*
+   * notes
+   */
   if (typeof body.notes === 'string') data.notes = body.notes
-  // Public
+  /*
+   * public
+   */
   if (body.public === true || body.public === false) data.public = body.public
-  // Data
+  /*
+   * data
+   */
   if (typeof body.data === 'object') data.data = body.data
-  // Settings
+  /*
+   * settings
+   */
   if (typeof body.settings === 'object') data.settings = body.settings
-  // Image (img)
+  /*
+   * img
+   */
   if (typeof body.img === 'string') {
-    const img = await setPatternAvatar(params.id, body.img)
-    data.img = img.url
+    data.img = await storeImage(
+      {
+        id: `pattern-${this.record.id}`,
+        metadata: { user: user.uid },
+        b64: body.img,
+      },
+      this.isTest(body)
+    )
   }
 
-  // Now update the record
-  await this.unguardedUpdate(this.cloak(data))
+  /*
+   * Now update the record
+   */
+  await this.update(data)
 
-  return this.setResponse(200, false, { pattern: this.asPattern() })
-}
-
-/*
- * Removes the pattern - No questions asked
- */
-PatternModel.prototype.unguardedDelete = async function () {
-  await this.prisma.pattern.delete({ where: { id: this.record.id } })
-  this.record = null
-  this.clear = null
-
-  return this.setExists()
+  /*
+   * Return 200 and the data
+   */
+  return this.setResponse200({ pattern: this.asPattern() })
 }
 
 /*
  * Removes the pattern - Checks permissions
+ *
+ * @param {params} object - The request (URL) parameters
+ * @param {user} object - The user data as provided by the auth middleware
+ * @returns {PatternModel} object - The PatternModel
  */
 PatternModel.prototype.guardedDelete = async function ({ params, user }) {
+  /*
+   * Enforce RBAC
+   */
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
+  /*
+   * Attempt to read record from database
+   */
   await this.read({ id: parseInt(params.id) })
+
+  /*
+   * Only admins can delete other user's patterns
+   */
   if (this.record.userId !== user.uid && !this.rbac.admin(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 
-  await this.unguardedDelete()
+  /*
+   * Remove the record
+   */
+  await this.delete()
 
+  /*
+   * Return 204
+   */
   return this.setResponse(204, false)
 }
 
@@ -350,6 +371,9 @@ PatternModel.prototype.asPattern = function () {
 
 /*
  * Helper method to decrypt data from a non-instantiated pattern
+ *
+ * @param {pattern} object - The pattern data
+ * @returns {pattern} object - The unencrypted pattern data
  */
 PatternModel.prototype.revealPattern = function (pattern) {
   const clear = {}
@@ -360,53 +384,8 @@ PatternModel.prototype.revealPattern = function (pattern) {
       //console.log(err)
     }
   }
-  if (pattern.set) delete pattern.set.measies
-  if (pattern.cset) delete pattern.cset.measies
 
   return { ...pattern, ...clear }
-}
-
-/*
- * Helper method to set the response code, result, and body
- *
- * Will be used by this.sendResponse()
- */
-PatternModel.prototype.setResponse = function (
-  status = 200,
-  error = false,
-  data = {},
-  rawData = false
-) {
-  this.response = {
-    status,
-    body: rawData
-      ? data
-      : {
-          result: 'success',
-          ...data,
-        },
-  }
-  if (status > 201) {
-    this.response.body.error = error
-    this.response.body.result = 'error'
-    this.error = true
-  } else this.error = false
-
-  return this.setExists()
-}
-
-/*
- * Helper method to send response
- */
-PatternModel.prototype.sendResponse = async function (res) {
-  return res.status(this.response.status).send(this.response.body)
-}
-
-/*
- * Helper method to send response as YAML
- */
-PatternModel.prototype.sendYamlResponse = async function (res) {
-  return res.status(this.response.status).type('yaml').send(yaml.dump(this.response.body))
 }
 
 /*
@@ -414,11 +393,10 @@ PatternModel.prototype.sendYamlResponse = async function (res) {
  */
 PatternModel.prototype.asPublicPattern = function () {
   const data = {
-    author: 'FreeSewing.org',
+    provider: 'FreeSewing.org',
     type: 'pattern',
     ...this.asPattern(),
   }
-  delete data.userId
   delete data.public
 
   return data

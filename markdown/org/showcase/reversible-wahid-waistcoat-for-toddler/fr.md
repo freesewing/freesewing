@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Regarde ce joli costume de hobbit !"
 date: "2023-07-11"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/53426fe47d7a52b633d033c1afc77f788bde0013-469x470.jpg"
 intro: "Ce gilet Wahid en lin a été confectionné pour un bambin d'un an. Il est en lin et a été rendu entièrement réversible en suivant un tutoriel de Sarah Kirsten : Comment coudre un gilet doublé - Deux méthodes faciles"
 title: "Un gilet réversible Wahid pour un tout-petit."
 designs:

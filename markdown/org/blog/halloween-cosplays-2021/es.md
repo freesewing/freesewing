@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Un poco de frío quizás, pero bañadores: los tenemos"
 date: "2021-10-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3a69586735a24a674d4e65971643b3b55c676fc3-1000x667.png"
 intro: "Encarnar a tu personaje favorito puede ser una experiencia de Halloween muy divertida. Aquí tienes algunos personajes emblemáticos para inspirarte."
 title: "10 cosplays que puedes hacer a partir de patrones de FreeSewing para entrar en el ambiente de Halloween"
 ---

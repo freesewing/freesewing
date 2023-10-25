@@ -7,7 +7,7 @@ well as [how to take measurements](/docs/measurements/), documentation for [vari
 
 If you're new to FreeSewing, please take a moment to read the [getting started documentation](/docs/guide/).
 
-<ReadMore />
+<ReadMore recurse />
 
 <Tip>
 

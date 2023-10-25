@@ -2,7 +2,6 @@
 maker: "comixminx"
 caption: "Short de bain en lycra"
 date: "2022-04-04"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fe9742719123fca0d036202d2e3c5c2654ca2b71-3024x4032.jpg"
 intro: "Ces shorts de bain Shin sont le fruit d'un travail d'amour - comixminx a fait plusieurs paires d'essai dans un tissu extensible pour affiner la coupe. Elle a partagé de nombreux conseils sur Discord en cours de route. En voici quelques unes, essentielles :"
 title: "Maillot de bain Shin pour l'enfant de comixminx"
 designs:

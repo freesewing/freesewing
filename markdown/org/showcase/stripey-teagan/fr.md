@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "J'adore la coupe et les rayures de cette version modifiée de Teagan !"
 date: "2023-01-15"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/787622dcb6885cc9a60e3071f92cf4cbe266607a-724x854.jpg"
 intro: "Une utilisatrice de FreeSewing a essayé de modifier Teagan, et nous adorons le résultat ! Voici une petite explication qu'elle a partagée sur la façon dont elle a dessiné son Teagan et façonné les coutures latérales pour un ajustement plus serré."
 title: "Une spectaculaire Teagan à rayures"
 designs:

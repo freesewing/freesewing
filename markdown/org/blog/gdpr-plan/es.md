@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Esta imagen es probablemente lo único del post que puedes hojear en diagonal"
 date: "2018-02-14"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/39f3d1e7320510b2dd12cc1bc2e58008263889f3-1920x1280.webp"
 intro: "El Reglamento General de Protección de Datos de la Unión Europea: Nuestro plan de batalla."
 title: "El Reglamento General de Protección de Datos de la Unión Europea: Nuestro plan de batalla."
 ---

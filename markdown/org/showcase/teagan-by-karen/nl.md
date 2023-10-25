@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "T-shirt van Teagan met een geschulpte zoom van kanten stof"
 date: "2021-06-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1bbdf2752cb10d9beee022fa0e770fe9bb03fd09-3024x4032.jpg"
 intro: "Een andere versie van het Teagan T-shirt van Karen. Deze keer gemaakt met zwarte kanten stof en met de toevoeging van een geschulpte zoom."
 title: "Geschulpte zoom Teagan T-shirt van Karen"
 designs:

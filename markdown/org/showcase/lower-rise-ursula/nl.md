@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Ursula van zwarte katoen-spandexstof"
 date: "2021-09-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/26de214a4587d5123deaf4111b8e36714b8a7479-4032x3024.jpg"
 intro: "Deze Ursula is gemaakt in een katoenen spandex breisel (94% Katoen, 6% Spandex) met bordeauxrood picot elastiek."
 title: "Lagere stijging Ursula"
 designs:

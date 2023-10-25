@@ -8,13 +8,12 @@ function teaganSleeve({
   Path,
   paths,
   options,
-  complete,
-  paperless,
   macro,
   measurements,
+  store,
   part,
 }) {
-  let height = points.bicepsRight.x * options.sleeveLength
+  const height = points.bicepsRight.x * options.sleeveLength
   let width = measurements.biceps * (1 + options.bicepsEase) * (1 + options.sleeveEase)
   if (width > points.bicepsRight.x * 2) width = points.bicepsRight.x * 2
   points.hemLeft = new Point(width / -2, height)
@@ -44,52 +43,59 @@ function teaganSleeve({
     .close()
     .attr('class', 'fabric')
 
-  // Complete pattern?
-  if (complete) {
-    points.title = points.gridAnchor.clone()
-    macro('title', { at: points.title, nr: 3, title: 'sleeve' })
-    macro('grainline', {
-      from: new Point(points.top.x, points.hemLeft.y),
-      to: points.top,
-    })
+  if (sa)
+    paths.sa = new Path()
+      .move(points.hemLeft.shift(-90, sa * 3))
+      .join(paths.hemBase.offset(sa * 3))
+      .join(paths.saBase.offset(sa))
+      .line(points.hemLeft.shift(-90, sa * 3))
+      .close()
+      .attr('class', 'fabric sa')
 
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.hemLeft.shift(-90, sa * 3))
-        .join(paths.hemBase.offset(sa * 3))
-        .join(paths.saBase.offset(sa))
-        .line(points.hemLeft.shift(-90, sa * 3))
-        .close()
-        .attr('class', 'fabric sa')
-    }
-  }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
 
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.hemLeft,
-      to: points.hemRight,
-      y: points.hemLeft.y + sa * 3 + 15,
-    })
-    macro('hd', {
-      from: points.bicepsLeft,
-      to: points.bicepsRight,
-      y: points.hemLeft.y + sa * 3 + 30,
-    })
-    macro('vd', {
-      from: points.hemRight,
-      to: points.bicepsRight,
-      x: points.bicepsRight.x + sa + 15,
-    })
-    macro('vd', {
-      from: points.hemRight,
-      to: new Path()
-        .move(points.capQ2)
-        .curve(points.capQ2Cp2, points.capQ3Cp1, points.capQ3)
-        .edge('top'),
-      x: points.bicepsRight.x + sa + 30,
-    })
-  }
+  // Title
+  points.title = points.gridAnchor.clone()
+  macro('title', { at: points.title, nr: 3, title: 'sleeve' })
+
+  // Grainline
+  macro('grainline', {
+    from: new Point(points.top.x, points.hemLeft.y),
+    to: points.top,
+  })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wAtHem',
+    from: points.hemLeft,
+    to: points.hemRight,
+    y: points.hemLeft.y + sa * 3 + 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.bicepsLeft,
+    to: points.bicepsRight,
+    y: points.hemLeft.y + sa * 3 + 30,
+  })
+  macro('vd', {
+    id: 'hSleeveSeam',
+    from: points.hemRight,
+    to: points.bicepsRight,
+    x: points.bicepsRight.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.hemRight,
+    to: new Path()
+      .move(points.capQ2)
+      .curve(points.capQ2Cp2, points.capQ3Cp1, points.capQ3)
+      .edge('top'),
+    x: points.bicepsRight.x + sa + 30,
+  })
 
   return part
 }
@@ -100,6 +106,12 @@ export const sleeve = {
   hide: hidePresets.HIDE_TREE,
   options: {
     sleeveEase: { pct: 15, min: 5, max: 35, menu: 'style' },
+    /*
+     * Hide options from Brian
+     */
+    cuffEase: 0,
+    s3Collar: 0,
+    s3Armhole: 0,
   },
   draft: teaganSleeve,
 }

@@ -2,4 +2,7 @@
 title: "Галстук-метелик Бенджамін"
 ---
 
-<PatternDocs pattern='benjamin' />
+
+
+<DesignInfo design='benjamin' docs />
+

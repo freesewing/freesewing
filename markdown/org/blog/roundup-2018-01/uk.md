@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ваш новий фон для входу в систему на лютий"
 date: "2018-01-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6fbc797ad0b3d50a8337bd2cb8401f04f63bffdd-2000x1125.jpg"
 intro: "Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, а також погляд на те, що чекає на нас у наступному місяці."
 title: "Щомісячний огляд - січень 2018: Inkscape DPI, обізнаність про версії, Bail та Carlita"
 ---

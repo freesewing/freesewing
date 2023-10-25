@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Your new login background for the month of March"
 date: "2018-02-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8e0079e2521a2bf71545d736a2549180902c0d50-1980x1311.jpg"
 intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
 title: "Monthly roundup - February 2018: Core 1.7.0 with Sven, Carlton, and Carlita improvements. Plus GDRP, vim, and Jaeger"
 ---
@@ -21,12 +20,12 @@ Let's look at the things that did happen in February before we talk about what d
 Earlier today, I pulled the trigger on core release 1.7.0. 
 As usual, [the changelog](https://github.com/freesewing/core/blob/develop/CHANGELOG.md#170)
 has all the info, but most significant to users are 
-[the new ribbing options in the Sven pattern](/docs/patterns/sven/options#ribbing), as well as 
+[the new ribbing options in the Sven pattern](/docs/designs/sven/options#ribbing), as well as 
 a bunch of additional improvements to Carlton/Carlita. 
 
 Those Carlton/Carlita improvements are driven by the fact that myself and [Anneke](/showcase/maker/annekecaramin)
 have started to work on [the documentation
-for these patterns](/docs/patterns/carlton/). 
+for these patterns](/docs/designs/carlton/). 
 And every time we write something like *apply fusible interfacing here*, we also go back to the pattern to
 mark exactly where this fusible needs to go.
 

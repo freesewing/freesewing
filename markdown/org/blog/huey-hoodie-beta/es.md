@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Esta sudadera con capucha Huey morada es la primera de su clase. Ahora te toca a ti"
 date: "2017-10-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3be185a211486823b678af97710274804fe86dcf-2048x2048.jpg"
 intro: "La sudadera con capucha Huey ya está disponible en versión beta. Lo que nos lleva a preguntarnos: ¿qué significa que un patrón esté en Beta?"
 title: "La sudadera con capucha Huey ya está disponible en versión beta. Lo que nos lleva a preguntarnos: ¿qué significa que un patrón esté en Beta?"
 ---

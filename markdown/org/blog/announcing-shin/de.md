@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ich schätze, so sieht Augmented Reality aus?"
 date: "2018-09-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b471275001689bd4819d6d95aabc8134788dc612-1694x1129.jpg"
 intro: "Vor einer Weile stellte ich fest, dass ich Badehosen benötige. Also habe ich ein Schnittmuster gezeichnet und hab mir welche genäht:"
 title: "Ankündigung von Shin, einem Badehosenschnitt"
 ---
@@ -21,7 +20,7 @@ Also, nach einigen weiteren Optimierungen, denke ich, dass dies für euch Jungs 
 
 Shin kommt mit Optionen, und sie sind sehr nahe an den verfügbaren Optionen für [Bruce](/designs/bruce).
 
-Alle [Optionen sind dokumentiert](/docs/patterns/shin/options), sowie die [benötigten Maße](/docs/patterns/shin/measurements), und ich habe auch eine [Anleitung geschrieben, wie man das macht](/docs/patterns/shin).
+Alle [Optionen sind dokumentiert](/docs/designs/shin/options), sowie die [benötigten Maße](/docs/designs/shin/measurements), und ich habe auch eine [Anleitung geschrieben, wie man das macht](/docs/designs/shin/instructions).
 
 Ich muss noch die Illustrationen dazu machen, aber es ist wirklich nicht schwer, also werden Sie die Anleitung wahrscheinlich es ohne sie verstehen. Im Grunde genommen können Sie jetzt sofort loslegen und das Ganze durchziehen.
 

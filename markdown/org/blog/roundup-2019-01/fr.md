@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ton arrière-plan de connexion pour le mois de février"
 date: "2019-01-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/26bf3d41513702ad361b5a0f15dcff2350cc852b-1920x1440.jpg"
 intro: "Est-ce vraiment la fin du mois de janvier ? Déjà ?"
 title: "Récapitulatif mensuel - janvier 2019 : la grande mise à jour de la bêta."
 ---

@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Deze paarse Huey hoodie is de eerste in zijn soort. Nu is het jouw beurt"
 date: "2017-10-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3be185a211486823b678af97710274804fe86dcf-2048x2048.jpg"
 intro: "De Huey Hoodie is nu verkrijgbaar in bèta. Wat de vraag oproept: wat betekent het voor een patroon om in Beta te zijn?"
 title: "De Huey Hoodie is nu verkrijgbaar in bèta. Wat de vraag oproept: wat betekent het voor een patroon om in Beta te zijn?"
 ---

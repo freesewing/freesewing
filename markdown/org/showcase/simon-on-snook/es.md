@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Si tu compañero se llamara Róbalo, tú también le llamarías Róbalo."
 date: "2017-11-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/adbe9f0fb465866669913ed393d77c0ae48a59f7-2000x2667.jpg"
 intro: "Una camiseta Simon de Kris para su Snook"
 title: "Una camiseta Simon de Kris para su Snook"
 designs:

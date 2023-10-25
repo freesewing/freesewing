@@ -2,4 +2,7 @@
 title: "Бріджі для катання Корнеліус"
 ---
 
-<PatternDocs pattern='cornelius' />
+
+
+<DesignInfo design='cornelius' docs />
+

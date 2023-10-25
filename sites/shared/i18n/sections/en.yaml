@@ -3,7 +3,7 @@ blogAbout: News and updates from the FreeSewing community
 showcase: Showcase
 showcaseAbout: Examples and inspiration from the FreeSewing community using our designs
 docs: Documentation
-docsAbout: In-depth documenation for all our designs, our website, and much more
+docsAbout: In-depth documentation for all our designs, our website, and much more
 account: Your Account
 accountAbout: Manage your account settings and preferences, and your presonal data
 designs: Designs
@@ -28,8 +28,11 @@ sets: Your Measurements Sets
 patterns: Your Patterns
 curate: Curate
 curateSets: Curate Sets
+curatedSets: Curated Measurements Sets
 code: Code
 patternsAbout: Lists the patterns that you have stored in your FreeSewing account
 setsAbout: Lists the measurements sets that you have stored in your FreeSewing account
 codeAbout: Here you can find (links to) the Freesewing source code
 new: New...
+newAbout: Start here if you are looking to create something new
+support: Support

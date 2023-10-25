@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Ich liebe die Passform und die Streifen an dieser modifizierten Teagan!"
 date: "2023-01-15"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/787622dcb6885cc9a60e3071f92cf4cbe266607a-724x854.jpg"
 intro: "Eine FreeSewing-Benutzerin hat sich an Teagan versucht und wir sind begeistert von dem Ergebnis! Hier ist eine kleine Erklärung, wie sie ihre Teagan entworfen und die Seitennähte für eine engere Passform geformt hat."
 title: "Eine spektakulär gestreifte Teagan"
 designs:

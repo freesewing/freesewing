@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "Це був ідеальний одяг для спекотного дня"
 date: "2023-05-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f4128611e5ab25e9faa9cff8c16e047354706b94-2316x3088.jpg"
 intro: "В офісі немає кондиціонера? Варалі поспішає на допомогу! Воутер носив їх у досить теплий день."
 title: "Легкі варалі на літо"
 designs:

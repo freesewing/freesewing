@@ -2,7 +2,6 @@
 maker: "Ramoth"
 caption: "Ramoth's impressive first Simon"
 date: "2021-08-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f8d6b349216c86df4b27ddd6696dc2aeb7ada1c9-600x779.jpg"
 intro: "Ramoth made this fantastic first draft of the Simon shirt and generously shared some helpful fit notes. They said:"
 title: "Ramoth's first draft of the Simon with fit notes"
 designs: ["simon"]

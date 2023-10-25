@@ -2,7 +2,6 @@
 maker: "Joost De Cock"
 caption: "Moar Charlie"
 date: "2021-05-23"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/20ccf81fc098beaab92cbb48ee1a37b9f6a011c9-600x800.jpg"
 intro: "Joost hizo otro excelente par de Chinos Charlie en este tejido tostado."
 title: "Otro Charlie de Joost"
 ---

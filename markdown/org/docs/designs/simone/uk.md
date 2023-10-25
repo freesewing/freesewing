@@ -2,4 +2,7 @@
 title: "Сорочка Сімон"
 ---
 
-<PatternDocs pattern='simone' />
+
+
+<DesignInfo design='simone' docs />
+

@@ -2,7 +2,6 @@
 maker: "Галле."
 caption: "Аарон з чудовим принтом"
 date: "2022-04-27"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b8a719f1ddd4df23e72dd5bd1c736c75eeff33db-900x1233.jpg"
 intro: "Цю привабливу футболку Aaron A пошила безстрашна швачка Гаель, яка почала шити лише 10 днів тому! Це було зроблено без серпанку."
 title: "Футболка Aaron від Gaëlle"
 designs:

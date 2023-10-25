@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Ein Leinen-Gingham Simon"
 date: "2021-06-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3e3211e181cb8be99b62dfadb56c05422430ca4d-640x677.jpg"
 intro: "Anna hat dieses tolle Simon Hemd mit uns geteilt! Anna sagte:"
 title: "Simon shirt by Anna"
 designs:

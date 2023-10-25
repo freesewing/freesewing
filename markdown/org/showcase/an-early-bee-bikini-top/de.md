@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Ein frühes Bikinioberteil von Bee"
 date: "10.18.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f26aa235307e36906c8b16b8e99364cce01645ef-4032x3024.jpg"
 intro: "Eine FreeSewing-Macherin hat dieses Bienen-Bikinioberteil gemacht. Sie hat die Standardeinstellungen verwendet und berichtet, dass die Passform sehr gut ist und keine Lücken oder Probleme mit der Abdeckung auftreten."
 title: "Ein frühes Bikinioberteil von Bee"
 designs:

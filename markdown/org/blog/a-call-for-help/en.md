@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Note: This post is a long read. Although nowhere near as long as this book"
 date: "2020-08-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1a143c96b4afc8c12d2014c5605bfd1e63d917d0-2000x1348.jpg"
 intro: "Please help grow FreeSewing beyond what I can do on my own"
 title: "Please help grow FreeSewing beyond what I can do on my own"
 ---
@@ -77,9 +76,9 @@ So I am taking Julian's advice to heart, and asking for help. Before we get to t
 
 To ensure that your values are aligned with those of FreeSewing, please take a moment to familiarize yourself with:
 
- - [Our community standards](/docs/various/community-standards/)
+ - [Our community standards](/docs/about/community-standards/)
  - [Our code of conduct](https://freesewing.dev/contributors/code-of-conduct/)
- - [Our revenue pledge](/docs/various/pledge/)
+ - [Our revenue pledge](/docs/about/pledge/)
 
 If reading that made you happy rather than angry, we could use your help :)
 
@@ -174,7 +173,7 @@ You know how to make things pretty, even if you're not sure how to actually make
 
 ### What's in it for me?
 
-We can't offer you money. Please [read our revenue pledge](/docs/various/pledge/) to understand why that is.
+We can't offer you money. Please [read our revenue pledge](/docs/about/pledge/) to understand why that is.
 
 What we can offer is responsibility, recognition, and a stake in something that strives to be a force for good in this world.
 

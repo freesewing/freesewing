@@ -5,11 +5,11 @@ title: "Sandy cirkelrok: Wat je nodig hebt"
 Om Sandy te maken heb je het volgende nodig:
 
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-- Ongeveer 2 - 6 meter van een geschikte hoofdstof ([zie Zandstofopties](/docs/patterns/sandy/fabric)).
+- Ongeveer 2 - 6 meter van een geschikte hoofdstof ([zie Zandstofopties](/docs/designs/sandy/fabric)).
 - Een tussenvoering voor de tailleband
 - (Optioneel) Facing voor de zoom.
 - Een soort sluiting voor de tailleband (als deze niet naadloos is)
-- (Optioneel) Ongeveer 2 - 6 meter geschikte voeringstof ([zie Zandstofopties](/docs/patterns/sandy/fabric))
+- (Optioneel) Ongeveer 2 - 6 meter geschikte voeringstof ([zie Zandstofopties](/docs/designs/sandy/fabric))
 - Elastiek (indien nodig)
 
 Door de vele verschillende stijlen van Sandy is het moeilijk om precies te zeggen wat je nodig hebt, dus we zullen een aantal opties doornemen.

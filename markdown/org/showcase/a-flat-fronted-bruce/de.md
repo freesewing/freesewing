@@ -2,7 +2,6 @@
 maker: "starf"
 caption: "Ein Kommentator in Discord sagte, dass dieses Bild wie ein Bett aussieht... gern geschehen"
 date: "19.12.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/35c073767eaf563d5550012e4ca217c8efd80a44-5184x3888.jpg"
 intro: "Starf hat diese tolle Bruce-Version gemacht, bei der die Ausbuchtung auf 0% gesetzt ist!"
 title: "Ein Bruce mit flacher Fassade"
 designs:

@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "La version plus courte et plus effilée de Bruce est très confortable !"
 date: "2021-08-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0ab813c61caf89cb240486fe8cc2858ecdd06607-800x600.jpg"
 intro: "La première version de Bruce de Victoria a eu des fans instantanés - les membres de la communauté FreeSewing ont demandé à copier ses réglages pour leurs propres paires !"
 title: "Une version plus courte de Bruce"
 designs:

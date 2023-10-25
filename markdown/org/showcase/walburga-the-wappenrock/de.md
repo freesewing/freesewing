@@ -2,7 +2,6 @@
 maker: "starf"
 caption: "Walburga der Wappenrock ist Starfs eigenes, vom mittelalterlichen Europa (und Legend of Zelda) inspiriertes Fantasy-Design."
 date: "10.18.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8217f094b2ea551ed3bfcf72b79905506bf4f883-3888x5184.jpg"
 intro: "Walburga der Wappenrock"
 title: "Walburga der Wappenrock"
 designs:

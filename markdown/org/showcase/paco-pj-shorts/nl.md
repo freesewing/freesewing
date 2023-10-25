@@ -2,7 +2,6 @@
 maker: "Eend"
 caption: "Een bijgewerkte versie van Paco als PJ shorts, nu met juk"
 date: "2022-07-13"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b9253befec857619f0f366ae0df9c147a18e1cc9-1251x2668.jpg"
 intro: "Paco PJ shorts, nu met toegevoegd juk"
 title: "Paco PJ shorts, nu met toegevoegd juk"
 designs:

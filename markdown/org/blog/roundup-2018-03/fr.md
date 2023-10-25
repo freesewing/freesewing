@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ton arrière-plan de connexion pour le mois d'avril"
 date: "31-03-2018"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/637be1530f8be9387a2be4feac90b92a145b1ddd-1920x1280.jpg"
 intro: "Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernières semaines, et un aperçu de ce qui t'attend le mois prochain."
 title: "Récapitulatif mensuel - mars 2018 : Parlez-vous français ? Sprechen Sie Deutsch ? ¿Hablas español ? 你會說中文嗎？"
 ---

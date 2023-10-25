@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Karin posiert am Wasser in ihrem neuen Rock"
 date: "2018-11-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6e2a1b1b2b2935542f32a362aa7876deb36f89fd-2000x1500.jpg"
 intro: "Sandy von Karin"
 title: "Sandy von Karin"
 designs:

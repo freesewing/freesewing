@@ -2,7 +2,6 @@
 maker: "Eend"
 caption: "De eerste van vele Bob slabbetjes"
 date: "2022-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3bc87a8419c5de7d2be003541fd8f353eba04772-2448x3264.jpg"
 intro: "Duck maakte verschillende charmante Bob slabbetjes, net op tijd voor een babyshower!"
 title: "Bob slabbetjes van Duck"
 designs:

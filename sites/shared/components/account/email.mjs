@@ -1,29 +1,27 @@
 // Dependencies
 import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Verification methods
 import { validateEmail, validateTld } from 'shared/utils.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
+import { EmailInput } from 'shared/components/inputs.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
-export const ns = ['account', 'toast']
+export const ns = ['account', 'status']
 
-export const EmailSettings = ({ title = false }) => {
-  // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
-
+export const EmailSettings = () => {
   // Hooks
-  const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
-  const { t } = useTranslation(ns)
-  const toast = useToast()
+  const { account, setAccount } = useAccount()
+  const backend = useBackend()
+  const { t, i18n } = useTranslation(ns)
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
   const [email, setEmail] = useState(account.email)
@@ -31,14 +29,13 @@ export const EmailSettings = ({ title = false }) => {
 
   // Helper method to update account
   const save = async () => {
-    startLoading()
+    setLoadingStatus([true, 'processingUpdate'])
     const result = await backend.updateAccount({ email })
     if (result.success) {
       setAccount(result.data.account)
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
+      setLoadingStatus([true, 'settingsSaved', true, true])
+    } else setLoadingStatus([true, 'backendError', true, true])
     setChanged(true)
-    stopLoading()
   }
 
   // Is email valid?
@@ -46,7 +43,6 @@ export const EmailSettings = ({ title = false }) => {
 
   return (
     <div className="max-w-xl">
-      {title ? <h2 className="text-4xl">{t('emailTitle')}</h2> : null}
       {changed ? (
         <Popout note>
           <h3>{t('oneMoreThing')}</h3>
@@ -54,14 +50,17 @@ export const EmailSettings = ({ title = false }) => {
         </Popout>
       ) : (
         <>
-          <div className="flex flex-row items-center mt-4">
-            <input
-              value={email}
-              onChange={(evt) => setEmail(evt.target.value)}
-              className="input w-full input-bordered flex flex-row"
-              type="text"
-            />
-          </div>
+          <EmailInput
+            id="account-email"
+            label={t('account:email')}
+            placeholder={t('account:email')}
+            update={setEmail}
+            labelBL={t('emailTitle')}
+            current={email}
+            original={account.email}
+            valid={() => valid}
+            docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/email`} />}
+          />
           <button
             className="btn mt-4 btn-primary w-full"
             onClick={save}
@@ -71,7 +70,7 @@ export const EmailSettings = ({ title = false }) => {
           </button>
         </>
       )}
-      <BackToAccountButton loading={loading} />
+      <BackToAccountButton />
     </div>
   )
 }

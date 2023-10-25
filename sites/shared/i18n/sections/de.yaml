@@ -3,7 +3,7 @@ blogAbout: Neuigkeiten und Updates aus der FreeSewing-Community
 showcase: Galerie
 showcaseAbout: Beispiele und Inspirationen aus der FreeSewing-Community, die unsere Designs verwenden
 docs: Dokumentation
-docsAbout: Ausführliche Dokumentationen für alle unsere Designs, unsere Website und vieles mehr
+docsAbout: In-depth documentation for all our designs, our website, and much more
 account: Dein Konto
 accountAbout: Verwalte deine Kontoeinstellungen und Präferenzen sowie deine persönlichen Daten
 designs: Entwurf
@@ -28,8 +28,11 @@ sets: Deine Maßeinheiten
 patterns: Deine Muster
 curate: Kuratieren
 curateSets: Sets kuratieren
+curatedSets: Curated Measurements Sets
 code: Code
 patternsAbout: Listet die Muster auf, die du in deinem FreeSewing-Konto gespeichert hast
 setsAbout: Listet die Messreihen auf, die du in deinem FreeSewing-Konto gespeichert hast
 codeAbout: Hier findest du (Links zu) den Freesewing-Quellcode
 new: Neu...
+newAbout: Start here if you are looking to create something new
+support: Hilfe

@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Ligt het aan mij, of is dit te veel schattigheid?"
 date: "2018-02-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0d0673d758bb9ec6f60c01db5dba00a0d3fea7ee-1080x1080.jpg"
 intro: "Matchende Simon hemden voor deze twee schatjes"
 title: "Matchende Simon hemden voor deze twee schatjes"
 designs:

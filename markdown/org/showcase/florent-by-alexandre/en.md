@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "A wonderful Florent"
 date: "2021-06-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/563d67dbd2f2985e438331c0ce884239cbace2ad-1536x2048.jpg"
 intro: "What a great reuse of fabric into an adorable Florent cap. Alexandre said:"
 title: "Florent flat cap by Alexandre"
 designs: ["florent"]

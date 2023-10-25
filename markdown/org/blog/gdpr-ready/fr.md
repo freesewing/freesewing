@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Le changement le plus important est évidemment que nous sommes passés du violet au noir comme couleur emblématique"
 date: "24-05-2018"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e67a17e37a70154b3bb250ea1cb60eff2baddb55-1920x1285.jpg"
 intro: "Bienvenue sur notre nouveau site Internet. Il est conforme au GDPR, parle 3 langues et sent la peinture mouillée"
 title: "Bienvenue sur notre nouveau site Internet. Il est conforme au GDPR, parle 3 langues et sent la peinture mouillée"
 ---

@@ -2,4 +2,4 @@
 title: "Walburga Wappenrock: Erforderliche Maßnahmen"
 ---
 
-<PatternMeasurements pattern='walburga' />
+<DesignMeasurements design='walburga' />

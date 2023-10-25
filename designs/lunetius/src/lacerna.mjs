@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function lunetiusLacerna({
   Point,
   points,
@@ -8,11 +6,9 @@ function lunetiusLacerna({
   measurements,
   options,
   macro,
-  complete,
   snippets,
   Snippet,
   sa,
-  paperless,
   store,
   utils,
   part,
@@ -63,93 +59,103 @@ function lunetiusLacerna({
   paths.saBase = new Path().move(points.top).line(points.topLeft).hide()
   paths.seam = paths.saBase.join(paths.hem).join(paths.fold).attr('class', 'fabric')
 
-  // Complete?
-  if (complete) {
-    snippets.shoulder = new Snippet('notch', points.topShoulder)
+  if (sa)
+    paths.sa = paths.saBase
+      .offset(sa)
+      .join(paths.hem.offset(sa * 1.5))
+      .close()
+      .addClass('fabric sa')
 
-    // cut on fold
-    macro('cutonfold', {
-      from: points.bottom,
-      to: points.top,
-      grainline: true,
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'fabric', onFold: true })
+
+  // Notches
+  snippets.shoulder = new Snippet('notch', points.topShoulder)
+
+  // cut on fold
+  macro('cutonfold', {
+    from: points.bottom,
+    to: points.top,
+    grainline: true,
+  })
+
+  // Logo
+  points.logo = points.top.shift(45, points.bottom.dy(points.top) / 3)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  // Title
+  points.title = points.logo.shift(90, points.bottom.dy(points.top) / 4)
+  macro('title', {
+    at: points.title,
+    nr: 1,
+    title: 'Lacerna',
+    align: 'center',
+  })
+
+  // scalebox
+  points.scalebox = points.title.shift(90, points.bottom.dy(points.top) / 5)
+  macro('scalebox', { at: points.scalebox })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wFull',
+    from: points.topLeft,
+    to: points.top,
+    y: points.top.y - sa - 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottom,
+    to: points.top,
+    x: points.top.x + 15,
+  })
+  macro('hd', {
+    id: 'wToNeck',
+    from: points.topLeft,
+    to: points.topShoulder,
+    y: points.top.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wNeck',
+    from: points.topShoulder,
+    to: points.top,
+    y: points.top.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wToRoundStart',
+    from: points.bottomShoulder,
+    to: points.bottom,
+    y: points.bottom.y + sa + 15,
+  })
+  macro('hd', {
+    id: 'wRound',
+    from: points.bottomLeft,
+    to: points.bottomShoulder,
+    y: points.bottom.y + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFromRound',
+    from: points.middleLeft,
+    to: points.topLeft,
+    x: points.topLeft.x - sa - 15,
+  })
+  if (!['toHips', 'toUpperLeg'].includes(options.length)) {
+    macro('ld', {
+      id: 'lRoundDiag',
+      from: points.middleLeft,
+      to: points.bottomShoulder,
+      d: 0,
     })
-
-    // logo & title
-    points.logo = points.top.shift(45, points.bottom.dy(points.top) / 3)
-    snippets.logo = new Snippet('logo', points.logo)
-    points.title = points.logo.shift(90, points.bottom.dy(points.top) / 4)
-    macro('title', {
-      at: points.title,
-      nr: 1,
-      title: 'Lacerna',
-    })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
-
-    // scalebox
-    points.scalebox = points.title.shift(90, points.bottom.dy(points.top) / 5)
-    macro('scalebox', { at: points.scalebox })
-
-    // seam allowance
-    if (sa) {
-      paths.sa = paths.saBase
-        .offset(sa)
-        .join(paths.hem.offset(sa * 1.5))
-        .close()
-        .attr('class', 'fabric sa')
-    }
-
-    // Paperless?
-    if (paperless) {
-      macro('hd', {
-        from: points.topLeft,
-        to: points.top,
-        y: points.top.y - 20,
-      })
-      macro('vd', {
-        from: points.top,
-        to: points.bottom,
-        x: points.top.x + 10,
-      })
-      macro('hd', {
-        from: points.topLeft,
-        to: points.topShoulder,
-        y: points.top.y - 10,
-      })
-      macro('hd', {
-        from: points.topShoulder,
-        to: points.top,
-        y: points.top.y - 10,
-      })
-      macro('hd', {
-        from: points.bottomShoulder,
-        to: points.bottom,
-        y: points.bottom.y + 10,
-      })
-      macro('hd', {
-        from: points.bottomShoulder,
-        to: points.bottomLeft,
-        y: points.bottom.y + 10,
-      })
-      macro('vd', {
-        from: points.topLeft,
-        to: points.middleLeft,
-        x: points.topLeft.x - 10,
-      })
-      macro('ld', {
-        from: points.middleLeft,
-        to: points.bottomShoulder,
-        d: 0,
-      })
-
-      macro('vd', {
-        from: points.middleLeft,
-        to: points.bottomLeft,
-        x: points.bottomLeft.x - 10,
-      })
-    }
   }
+  macro('vd', {
+    id: 'hRound',
+    from: points.bottomLeft,
+    to: points.middleLeft,
+    x: points.bottomLeft.x - 10,
+  })
 
   return part
 }
@@ -175,6 +181,5 @@ export const lacerna = {
       menu: 'style',
     },
   },
-  plugins: pluginBundle,
   draft: lunetiusLacerna,
 }

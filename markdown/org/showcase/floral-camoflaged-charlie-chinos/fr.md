@@ -2,7 +2,6 @@
 maker: "Joost De Cock"
 caption: "Camouflage avancé Charlies"
 date: "2022-04-27"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a6be215386e08cb79541d3d044101d3ee8f2882f-3072x4080.jpg"
 intro: "La communauté FreeSewing est tombée sous le charme de ces pantalons Charlie de joost. Elles sont tellement géniales qu'elles lui ont valu - sans blague - des crêpes gratuites."
 title: "Chinos Charlie \"camouflé\" à fleurs"
 designs:

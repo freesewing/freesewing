@@ -2,7 +2,6 @@
 maker: "Jackseye"
 caption: "Jackseye's schönes Simone Shirt"
 date: "07.11.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/979dec6c39ae2ebd8ac54bdc7ae0a7ff34ce230b-1159x1385.jpg"
 intro: "Wir lieben dieses Simone-Shirt von Jackseye, der es geteilt hat:"
 title: "Simone von Jackseye"
 designs:

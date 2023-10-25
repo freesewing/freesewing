@@ -2,4 +2,7 @@
 title: "Sandy circle skirt"
 ---
 
-<PatternDocs pattern='sandy' />
+
+
+<DesignInfo design='sandy' docs />
+

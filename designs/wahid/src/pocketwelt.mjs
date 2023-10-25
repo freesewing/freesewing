@@ -6,14 +6,41 @@ function wahidPocketWelt({
   paths,
   Path,
   measurements,
+  store,
   options,
   macro,
+  units,
   complete,
-  paperless,
+  expand,
   part,
 }) {
   const pw = measurements.hips * options.pocketWidth // Pocket width
   const pwh = pw * options.weltHeight // Pocket welt height
+
+  if (expand) {
+    store.flag.preset('expandIsOn')
+  } else {
+    // Expand is off, do not draw the part but flag this to the user
+    store.flag.note({
+      msg: `wahid:cutPocketWelt`,
+      replace: {
+        l: units(pw),
+        w: units(pwh),
+      },
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
+
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(pw + 30, 0)
   points.bottomLeft = new Point(0, pwh * 2 + 20)
@@ -30,36 +57,8 @@ function wahidPocketWelt({
     .line(points.topLeft)
     .close()
     .attr('class', 'fabric')
+
   if (complete) {
-    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    macro('title', {
-      nr: 5,
-      title: 'pocketWelt',
-      at: points.title,
-    })
-    //Grainline
-    let grainlineVariableShift = points.topLeft.dist(points.topRight) * 0.1
-
-    points.grainlineFromWelt = new Point(points.topLeft.x, points.topLeft.y).shift(
-      0,
-      grainlineVariableShift
-    )
-    points.grainlineToWelt = new Point(points.topLeft.x, points.topLeft.y)
-      .shift(0, grainlineVariableShift)
-      .shift(-90, pwh * 2 + 20)
-    points.grainlineToWeltRotated = points.grainlineToWelt.rotate(
-      options.pocketAngle,
-      points.grainlineFromWelt
-    )
-
-    macro('grainline', {
-      from: points.grainlineFromWelt,
-      to: points.grainlineToWeltRotated,
-    })
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['notchLeft', 'notchRight'],
-    })
     paths.cutline = new Path()
       .move(points.notchLeft)
       .line(points.notchRight)
@@ -69,33 +68,79 @@ function wahidPocketWelt({
       .line(points.midRight)
       .attr('class', 'hint dotted')
   }
-  if (paperless) {
-    macro('hd', {
-      from: points.notchLeft,
-      to: points.notchRight,
-      y: points.bottomLeft.y + 15,
-    })
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomLeft.y + 30,
-    })
-    macro('vd', {
-      from: points.midRight,
-      to: points.notchRight,
-      x: points.midRight.x + 15,
-    })
-    macro('vd', {
-      from: points.midRight,
-      to: points.topRight,
-      x: points.midRight.x + 30,
-    })
-    macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.midRight.x + 45,
-    })
-  }
+
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Title
+  points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+  macro('title', {
+    nr: 3,
+    title: 'pocketWelt',
+    at: points.title,
+    align: 'center',
+    scale: 0.666,
+  })
+
+  //Grainline
+  let grainlineVariableShift = points.topLeft.dist(points.topRight) * 0.1
+  points.grainlineFromWelt = new Point(points.topLeft.x, points.topLeft.y).shift(
+    0,
+    grainlineVariableShift
+  )
+  points.grainlineToWelt = new Point(points.topLeft.x, points.topLeft.y)
+    .shift(0, grainlineVariableShift)
+    .shift(-90, pwh * 2 + 20)
+  points.grainlineToWeltRotated = points.grainlineToWelt.rotate(
+    options.pocketAngle,
+    points.grainlineFromWelt
+  )
+  macro('grainline', {
+    from: points.grainlineFromWelt,
+    to: points.grainlineToWeltRotated,
+  })
+
+  // Notches
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: ['notchLeft', 'notchRight'],
+  })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wBetweenNotches',
+    from: points.notchLeft,
+    to: points.notchRight,
+    y: points.bottomLeft.y + 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.bottomLeft,
+    to: points.bottomRight,
+    y: points.bottomLeft.y + 30,
+  })
+  macro('vd', {
+    id: 'hToNotch',
+    from: points.midRight,
+    to: points.notchRight,
+    x: points.midRight.x + 15,
+  })
+  macro('vd', {
+    id: 'hHalf',
+    from: points.midRight,
+    to: points.topRight,
+    x: points.midRight.x + 30,
+  })
+  macro('vd', {
+    from: points.bottomRight,
+    id: 'hFull',
+    to: points.topRight,
+    x: points.midRight.x + 45,
+  })
+
   return part
 }
 

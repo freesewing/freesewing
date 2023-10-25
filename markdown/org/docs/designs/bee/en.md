@@ -2,4 +2,7 @@
 title: "Bee bikini top"
 ---
 
-<PatternDocs pattern='bee' />
+
+
+<DesignInfo design='bee' docs />
+

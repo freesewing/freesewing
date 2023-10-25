@@ -3,7 +3,7 @@ blogAbout: Nieuws en updates van de FreeSewing gemeenschap
 showcase: Voorbeelden
 showcaseAbout: Voorbeelden en inspiratie van de FreeSewing gemeenschap met onze ontwerpen
 docs: Documentatie
-docsAbout: Diepgaande documentatie voor al onze ontwerpen, onze website en nog veel meer
+docsAbout: In-depth documentation for all our designs, our website, and much more
 account: Jouw account
 accountAbout: Je accountinstellingen en -voorkeuren en je persoonlijke gegevens beheren
 designs: Designs
@@ -28,8 +28,11 @@ sets: Je metingen instellen
 patterns: Jouw patronen
 curate: samenstellen
 curateSets: Sets samenstellen
+curatedSets: Curated Measurements Sets
 code: Code
 patternsAbout: Toont de patronen die je hebt opgeslagen in je FreeSewing account
 setsAbout: Toont de meetsets die je hebt opgeslagen in je FreeSewing account
 codeAbout: Hier kun je (links naar) de broncode van Freesewing vinden
 new: Nieuw...
+newAbout: Start here if you are looking to create something new
+support: Ondersteuning

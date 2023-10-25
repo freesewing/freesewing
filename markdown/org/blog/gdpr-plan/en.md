@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "This image is probably the only thing in the post you can skim diagonally"
 date: "2018-02-14"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/39f3d1e7320510b2dd12cc1bc2e58008263889f3-1920x1280.webp"
 intro: "The General Data Protection Regulation of the European Union: Our battle plan."
 title: "The General Data Protection Regulation of the European Union: Our battle plan."
 ---

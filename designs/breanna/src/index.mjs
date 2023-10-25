@@ -11,7 +11,7 @@ import { i18n } from '../i18n/index.mjs'
 // Create design
 const Breanna = new Design({
   data,
-  parts: [back, front, sleeve],
+  parts: [back, front, sleeve, base, frontBase, sleevecap],
 })
 
 // Named exports

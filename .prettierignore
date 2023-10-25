@@ -15,8 +15,8 @@
 *.html
 *.env
 *.sh
-# Prettier cannot format XML, but it tries.
-*.xml
+*.json
+*.local
 Dockerfile
 LICENSE
 yarn.lock
@@ -26,3 +26,5 @@ yarn.lock
 .eslintignore
 .gitkeep
 .all-contributorsrc
+ansible.cfg
+sites/shared/prebuild/data/*.mjs

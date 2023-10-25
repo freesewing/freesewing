@@ -2,4 +2,7 @@
 title: "Lucy, die Umbindetasche"
 ---
 
-<PatternDocs pattern='lucy' />
+
+
+<DesignInfo design='lucy' docs />
+

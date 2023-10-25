@@ -21,6 +21,6 @@ Este botón adicional se añade al número de botones en la parte delantera. No 
 
 </Note>
 
-## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_extratopbutton_sample.svg "Efecto de esta opción en el patrón")
+
+

@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Je inlogachtergrond voor juli"
 date: "2018-06-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d4f2c83df7c4bc98b2bee3159b3f042bf0c1177f-1920x1279.jpg"
 intro: "Maandoverzicht - juni 2018: Duits, Penelope en meer damesmode aan de horizon"
 title: "Maandoverzicht - juni 2018: Duits, Penelope en meer damesmode aan de horizon"
 ---

@@ -2,7 +2,6 @@
 maker: "Rowan"
 caption: "Eine Seite von Rowans wendbarer Gesichtsmaske Florence"
 date: "2023-01-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/aaedd307de0bc101180d2b54e5d2ccb5d5657519-1161x2064.jpg"
 intro: "Rowan hat bei der Florence Face Mask tadellose Arbeit geleistet, aber warte nur... Es ist auch wendbar!"
 title: "Rowan's Reversible Florence"
 designs:

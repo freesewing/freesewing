@@ -2,7 +2,7 @@
 title: "Breanna body block: Design Options"
 ---
 
-<PatternOptions pattern='breanna' />
+<DesignOptions design='breanna' />
 
 ## Understanding the sleevecap
 
@@ -49,8 +49,8 @@ is a trade-off between the measurments of the model, options, ease, sleevecap ea
 that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control
 the exact value. But there are two options that control the shape of our sleevecap:
 
-- [Sleevecap top X](/docs/patterns/breanna/options/sleevecaptopfactorx/) : Controls the horizontal placement of point 3 and 4
-- [Sleevecap top Y](/docs/patterns/breanna/options/sleevecaptopfactory/) : Controls the vertical placement of point 4
+- [Sleevecap top X](/docs/designs/breanna/options/sleevecaptopfactorx/) : Controls the horizontal placement of point 3 and 4
+- [Sleevecap top Y](/docs/designs/breanna/options/sleevecaptopfactory/) : Controls the vertical placement of point 4
 
 In other words, point 4 can be made higher and lower and, perhaps less intutitively, it can also
 be changed to lie more to the right or the left, rather than smack in the middle as in our example.
@@ -63,10 +63,10 @@ With points 1, 2, 3, and 4 in place, we have a box to draw our sleevecap in. Now
 map out our _inflection points_. These are points 5 and 6 on our drawing, and their placement
 is determined by the following 4 options:
 
-- [Sleevecap back X](/docs/patterns/breanna/options/sleevecapbackfactorx) : Controls the horizontal placement of point 5
-- [Sleevecap back Y](/docs/patterns/breanna/options/sleevecapbackfactory) : Controls the vertical placement of point 5
-- [Sleevecap front X](/docs/patterns/breanna/options/sleevecapbackfactorx) : Controls the horizontal placement of point 6
-- [Sleevecap front Y](/docs/patterns/breanna/options/sleevecapbackfactory) : Controls the vertical placement of point 6
+- [Sleevecap back X](/docs/designs/breanna/options/sleevecapbackfactorx) : Controls the horizontal placement of point 5
+- [Sleevecap back Y](/docs/designs/breanna/options/sleevecapbackfactory) : Controls the vertical placement of point 5
+- [Sleevecap front X](/docs/designs/breanna/options/sleevecapbackfactorx) : Controls the horizontal placement of point 6
+- [Sleevecap front Y](/docs/designs/breanna/options/sleevecapbackfactory) : Controls the vertical placement of point 6
 
 <Note>
 
@@ -86,10 +86,10 @@ those curves.
 The points are _offset_ perpendicular from the middle of a line between the two anchor points
 surrounding them. The offset for each point is controlled by these 4 options:
 
-- [Sleevecap Q1 offset](/docs/patterns/breanna/options/sleevecapq1offset) : Controls the offset perpendicular to the line from points 2 to 6
-- [Sleevecap Q2 offset](/docs/patterns/breanna/options/sleevecapq2offset) : Controls the offset perpendicular to the line from points 6 to 4
-- [Sleevecap Q3 offset](/docs/patterns/breanna/options/sleevecapq3offset) : Controls the offset perpendicular to the line from points 4 to 5
-- [Sleevecap Q4 offset](/docs/patterns/breanna/options/sleevecapq3offset) : Controls the offset perpendicular to the line from points 5 to 1
+- [Sleevecap Q1 offset](/docs/designs/breanna/options/sleevecapq1offset) : Controls the offset perpendicular to the line from points 2 to 6
+- [Sleevecap Q2 offset](/docs/designs/breanna/options/sleevecapq2offset) : Controls the offset perpendicular to the line from points 6 to 4
+- [Sleevecap Q3 offset](/docs/designs/breanna/options/sleevecapq3offset) : Controls the offset perpendicular to the line from points 4 to 5
+- [Sleevecap Q4 offset](/docs/designs/breanna/options/sleevecapq3offset) : Controls the offset perpendicular to the line from points 5 to 1
 
 <Note>
 
@@ -113,14 +113,14 @@ about how curves are constructed). These are determined by the so-called _spread
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option
 to control the spread upwards, and downwards:
 
-- [Sleevecap Q1 downward spread](/docs/patterns/breanna/options/sleevecapq1spread1) : Controls the downward spread in the first quarter
-- [Sleevecap Q1 upward spread](/docs/patterns/breanna/options/sleevecapq1spread2) : Controls the upward spread in the first quarter
-- [Sleevecap Q2 downward spread](/docs/patterns/breanna/options/sleevecapq2spread1) : Controls the downward spread in the second quarter
-- [Sleevecap Q2 upward spread](/docs/patterns/breanna/options/sleevecapq2spread2) : Controls the upward spread in the second quarter
-- [Sleevecap Q3 upward spread](/docs/patterns/breanna/options/sleevecapq3spread1) : Controls the upward spread in the third quarter
-- [Sleevecap Q3 downward spread](/docs/patterns/breanna/options/sleevecapq3spread2) : Controls the downward spread in the third quarter
-- [Sleevecap Q4 upward spread](/docs/patterns/breanna/options/sleevecapq4spread1) : Controls the upward spread in the fourth quarter
-- [Sleevecap Q4 downward spread](/docs/patterns/breanna/options/sleevecapq4spread2) : Controls the downward spread in the fourth quarter
+- [Sleevecap Q1 downward spread](/docs/designs/breanna/options/sleevecapq1spread1) : Controls the downward spread in the first quarter
+- [Sleevecap Q1 upward spread](/docs/designs/breanna/options/sleevecapq1spread2) : Controls the upward spread in the first quarter
+- [Sleevecap Q2 downward spread](/docs/designs/breanna/options/sleevecapq2spread1) : Controls the downward spread in the second quarter
+- [Sleevecap Q2 upward spread](/docs/designs/breanna/options/sleevecapq2spread2) : Controls the upward spread in the second quarter
+- [Sleevecap Q3 upward spread](/docs/designs/breanna/options/sleevecapq3spread1) : Controls the upward spread in the third quarter
+- [Sleevecap Q3 downward spread](/docs/designs/breanna/options/sleevecapq3spread2) : Controls the downward spread in the third quarter
+- [Sleevecap Q4 upward spread](/docs/designs/breanna/options/sleevecapq4spread1) : Controls the upward spread in the fourth quarter
+- [Sleevecap Q4 downward spread](/docs/designs/breanna/options/sleevecapq4spread2) : Controls the downward spread in the fourth quarter
 
 <Note>
 

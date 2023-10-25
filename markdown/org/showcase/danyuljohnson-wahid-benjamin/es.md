@@ -2,7 +2,6 @@
 maker: "danyuljohnson"
 caption: "Traje para la boda temática blanca de su mejor amiga, feat. Wahid y Benjamin"
 date: "2021-09-17"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4955518c8ca48f1f7f653855d7250c1c65ed8998-3456x4608.jpg"
 intro: "¡Estamos enamorados de este precioso conjunto con los estampados Wahid y Benjamin! Dijo el fabricante:"
 title: "El brillante Wahid y Benjamin de danyuljohnson"
 designs:

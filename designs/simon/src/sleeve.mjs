@@ -19,7 +19,6 @@ function simonSleeve({
   Path,
   paths,
   complete,
-  paperless,
   macro,
   options,
   snippets,
@@ -33,7 +32,7 @@ function simonSleeve({
   // Remove inherited paths, snippets, and scalebox
   for (const p in paths) delete paths[p]
   for (const s in snippets) delete snippets[s]
-  macro('scalebox', false)
+  macro('rmscalebox')
 
   // Determine the sleeve length
   const len = measurements.shoulderToWrist * (1 + options.sleeveLengthBonus)
@@ -137,10 +136,24 @@ function simonSleeve({
     .join(paths.cuffBase)
     .attr('class', 'fabric')
 
-  // Complete pattern?
+  if (sa) {
+    paths.sa = paths.frenchBase.offset(sa * options.ffsa)
+    paths.frenchSa = paths.sa.clone().attr('class', 'hidden')
+    paths.sa = paths.sa
+      .join(paths.saBase.offset(sa))
+      .join(paths.cuffBase.offset(sa))
+      .close()
+      .attr('class', 'fabric sa')
+    macro('banner', {
+      path: paths.frenchSa.reverse(),
+      text: 'simon:flatFelledSeamAllowance',
+      repeat: 30,
+      classes: 'text-sm fill-note center',
+      dy: 7,
+    })
+  }
+
   if (complete) {
-    snippets.backNotch = new Snippet('bnotch', points.backNotch)
-    snippets.frontNotch = new Snippet('notch', points.frontNotch)
     points.placketEnd = points.cuffLeftCusp.shift(
       90,
       options.sleevePlacketLength * measurements.shoulderToWrist
@@ -168,115 +181,119 @@ function simonSleeve({
       }
       paths.pleats.attr('class', 'dotted')
     }
-    macro('title', { at: points.centerBiceps, nr: 5, title: 'sleeve' })
-    macro('grainline', {
-      from: points.cuffMid,
-      to: new Point(points.cuffMid.x, points.sleeveTip.y),
-    })
-
-    if (sa) {
-      paths.sa = paths.frenchBase.offset(sa * options.ffsa)
-      paths.frenchSa = paths.sa.clone().attr('class', 'hidden')
-      paths.sa = paths.sa
-        .join(paths.saBase.offset(sa))
-        .join(paths.cuffBase.offset(sa))
-        .close()
-        .attr('class', 'fabric sa')
-      macro('banner', {
-        path: paths.frenchSa,
-        text: 'flatFelledSeamAllowance',
-        repeat: 30,
-      })
-    }
   }
 
-  // Paperless?
-  if (paperless) {
-    if (complete) {
-      macro('hd', {
-        from: points.backNotch,
-        to: points.sleeveTip,
-        y: points.sleeveTip.y - 15 - sa * options.ffsa,
-      })
-      macro('hd', {
-        from: points.sleeveTip,
-        to: points.frontNotch,
-        y: points.sleeveTip.y - 15 - sa * options.ffsa,
-      })
-    }
-    macro('hd', {
-      from: points.bicepsLeft,
-      to: points.sleeveTip,
-      y: points.sleeveTip.y - 30 - sa * options.ffsa,
-    })
-    macro('hd', {
-      from: points.sleeveTip,
-      to: points.bicepsRight,
-      y: points.sleeveTip.y - 30 - sa * options.ffsa,
-    })
-    macro('hd', {
-      from: points.bicepsLeft,
-      to: points.bicepsRight,
-      y: points.sleeveTip.y - 45 - sa * options.ffsa,
-    })
-    macro('pd', {
-      path: new Path()
-        .move(points.bicepsRight)
-        ._curve(points.capQ1Cp1, points.capQ1)
-        .curve(points.capQ1Cp2, points.capQ2Cp1, points.capQ2)
-        .curve(points.capQ2Cp2, points.capQ3Cp1, points.capQ3)
-        .curve(points.capQ3Cp2, points.capQ4Cp1, points.capQ4)
-        .curve_(points.capQ4Cp2, points.bicepsLeft)
-        .reverse(),
-      d: 15,
-    })
+  /*
+   * Annotations
+   */
+
+  // Notches
+  snippets.backNotch = new Snippet('bnotch', points.backNotch)
+  snippets.frontNotch = new Snippet('notch', points.frontNotch)
+
+  // Title
+  macro('title', { at: points.centerBiceps, nr: 5, title: 'sleeve' })
+
+  // Grainline
+  macro('grainline', {
+    from: points.cuffMid,
+    to: new Point(points.cuffMid.x, points.sleeveTip.y),
+  })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wCenterToBackNotch',
+    from: points.backNotch,
+    to: points.sleeveTip,
+    y: points.sleeveTip.y - 15 - sa * options.ffsa,
+  })
+  macro('hd', {
+    id: 'wCenterToFrontNotch',
+    from: points.sleeveTip,
+    to: points.frontNotch,
+    y: points.sleeveTip.y - 15 - sa * options.ffsa,
+  })
+  macro('hd', {
+    id: 'wFrontHalf',
+    from: points.bicepsLeft,
+    to: points.sleeveTip,
+    y: points.sleeveTip.y - 30 - sa * options.ffsa,
+  })
+  macro('hd', {
+    id: 'wBackHalf',
+    from: points.sleeveTip,
+    to: points.bicepsRight,
+    y: points.sleeveTip.y - 30 - sa * options.ffsa,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.bicepsLeft,
+    to: points.bicepsRight,
+    y: points.sleeveTip.y - 45 - sa * options.ffsa,
+  })
+  macro('pd', {
+    id: 'lSleevecap',
+    path: new Path()
+      .move(points.bicepsRight)
+      ._curve(points.capQ1Cp1, points.capQ1)
+      .curve(points.capQ1Cp2, points.capQ2Cp1, points.capQ2)
+      .curve(points.capQ2Cp2, points.capQ3Cp1, points.capQ3)
+      .curve(points.capQ3Cp2, points.capQ4Cp1, points.capQ4)
+      .curve_(points.capQ4Cp2, points.bicepsLeft)
+      .reverse(),
+    d: 15,
+  })
+  macro('vd', {
+    id: 'hCuffToSleevecap',
+    from: points.wristRight,
+    to: points.bicepsRight,
+    x: points.bicepsRight.x + 15 + sa * options.ffsa,
+  })
+  macro('vd', {
+    id: 'hSleevecapToFrontNotch',
+    from: points.bicepsRight,
+    to: points.frontNotch,
+    x: points.bicepsRight.x + 15 + sa * options.ffsa,
+  })
+  macro('vd', {
+    id: 'hSleevecapToBackNotch',
+    from: points.bicepsLeft,
+    to: points.backNotch,
+    x: points.bicepsLeft.x - 15 - sa,
+  })
+  if (complete)
     macro('vd', {
-      from: points.wristRight,
-      to: points.bicepsRight,
-      x: points.bicepsRight.x + 15 + sa * options.ffsa,
+      id: 'hCut',
+      from: points.cuffLeftCusp,
+      to: points.placketEnd,
+      x: points.placketEnd.x - 15,
     })
-    if (complete) {
-      macro('vd', {
-        from: points.bicepsRight,
-        to: points.frontNotch,
-        x: points.bicepsRight.x + 15 + sa * options.ffsa,
-      })
-      macro('vd', {
-        from: points.bicepsLeft,
-        to: points.backNotch,
-        x: points.bicepsLeft.x - 15 - sa,
-      })
-      macro('vd', {
-        from: points.cuffLeftCusp,
-        to: points.placketEnd,
-        x: points.placketEnd.x - 15,
-      })
-    }
-    macro('vd', {
-      from: points.bicepsRight,
-      to: points.sleeveTip,
-      x: points.bicepsRight.x + 30 + sa * options.ffsa,
-    })
+  macro('vd', {
+    id: 'hSleevecap',
+    from: points.bicepsRight,
+    to: points.sleeveTip,
+    x: points.bicepsRight.x + 30 + sa * options.ffsa,
+  })
+  macro('hd', {
+    id: 'wCuff',
+    from: points.wristLeft,
+    to: points.wristRight,
+    y: points.wristLeft.y + 15 + sa,
+  })
+  if (pleats > 0)
     macro('hd', {
-      from: points.wristLeft,
-      to: points.wristRight,
-      y: points.wristLeft.y + 15 + sa,
+      id: 'wPleat',
+      from: points.cuffMidTop,
+      to: points.cuffPleat1EdgeTop,
+      y: points.cuffMidTop.y - 15,
     })
-    if (pleats > 0) {
-      macro('hd', {
-        from: points.cuffMidTop,
-        to: points.cuffPleat1EdgeTop,
-        y: points.cuffMidTop.y - 15,
-      })
-      if (pleats === 2) {
-        macro('hd', {
-          from: points.cuffPleat2Top,
-          to: points.cuffPleat2EdgeTop,
-          y: points.cuffPleat2Top.y - 15,
-        })
-      }
-    }
-  }
+  if (pleats === 2)
+    macro('hd', {
+      id: 'wPleat2',
+      from: points.cuffPleat2Top,
+      to: points.cuffPleat2EdgeTop,
+      y: points.cuffPleat2Top.y - 15,
+    })
 
   return part
 }

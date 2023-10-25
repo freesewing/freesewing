@@ -2,7 +2,6 @@
 maker: "Загс"
 caption: "Плоскі передні бретелі"
 date: "2022-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/db51352416f72e89ab1100cd0b2e9219d80eb4af-2752x1548.jpg"
 intro: "Гендерні ейфорійні брюки"
 title: "Гендерні ейфорійні брюки"
 designs:

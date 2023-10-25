@@ -1,6 +1,6 @@
 {
   "name": "rehype-highlight-lines",
-  "version": "3.0.0-alpha.10",
+  "version": "3.0.0",
   "description": "A Rehype plugin to add highlighted lines to code blocks",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -20,7 +20,10 @@
   "type": "module",
   "module": "dist/index.mjs",
   "exports": {
-    ".": "./dist/index.mjs"
+    ".": {
+      "internal": "./src/index.mjs",
+      "default": "./dist/index.mjs"
+    }
   },
   "scripts": {
     "clean": "rimraf dist",
@@ -41,7 +44,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": "18",

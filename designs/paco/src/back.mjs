@@ -11,7 +11,6 @@ function pacoBack({
   options,
   measurements,
   complete,
-  paperless,
   macro,
   absoluteOptions,
   part,
@@ -69,7 +68,7 @@ function pacoBack({
 
   // Shorter leg if we have an elasticated hem
   store.set('ankleElastic', absoluteOptions.ankleElastic)
-  if (options.elasticatedHem) {
+  if (options.elasticatedCuff) {
     for (const p of ['floor', 'floorIn', 'floorOut'])
       points[p] = points[p].shift(90, store.get('ankleElastic'))
   }
@@ -144,7 +143,32 @@ function pacoBack({
   store.set('backWaist', points.styleWaistIn.dist(points.styleWaistOut))
   store.set('backAnkle', points.floorIn.dist(points.floorOut))
 
+  if (sa) {
+    const waistIn = points.styleWaistIn || points.waistIn
+    const hemSa = options.elasticatedCuff ? sa : 4 * sa
+    paths.sa = drawInseam()
+      .offset(sa)
+      .line(points.floorIn.shift(180, sa).shift(-90, hemSa))
+      .line(points.floorOut.shift(0, sa).shift(-90, hemSa))
+      .join(drawOutseam().offset(sa).trim())
+      .join(
+        new Path()
+          .move(points.styleWaistOut)
+          .line(waistIn)
+          .line(points.crossSeamCurveStart)
+          .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
+          .offset(sa)
+      )
+      .close()
+      .attr('class', 'fabric sa')
+  }
+
   if (complete) {
+    paths.hint = new Path()
+      .move(points.crossSeamCurveStart)
+      .line(points.crossSeamCurveMax)
+      .line(points.fork)
+      .attr('class', 'note lashed')
     if (options.backPockets) {
       paths.pocket = new Path()
         .move(points.pocketLeft)
@@ -156,154 +180,158 @@ function pacoBack({
         .line(points.pocketBagBottomRight)
         .line(points.pocketBagWaistRight)
         .attr('class', 'lining lashed')
-      macro('sprinkle', {
-        snippet: 'bnotch',
-        on: ['pocketLeft', 'pocketRight', 'pocketBagWaistLeft', 'pocketBagWaistRight'],
-      })
-    }
-
-    if (sa) {
-      const waistIn = points.styleWaistIn || points.waistIn
-      const hemSa = options.elasticatedHem ? sa : 4 * sa
-      paths.sa = drawInseam()
-        .offset(sa)
-        .line(points.floorIn.shift(180, sa).shift(-90, hemSa))
-        .line(points.floorOut.shift(0, sa).shift(-90, hemSa))
-        .join(drawOutseam().offset(sa).trim())
-        .join(
-          new Path()
-            .move(points.styleWaistOut)
-            .line(waistIn)
-            .line(points.crossSeamCurveStart)
-            .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
-            .offset(sa)
-        )
-        .close()
-        .attr('class', 'fabric sa')
     }
   }
 
-  if (paperless) {
-    // Help construct cross seam
-    paths.hint = new Path()
-      .move(points.crossSeamCurveStart)
-      .line(points.crossSeamCurveMax)
-      .line(points.fork)
-      .attr('class', 'note lashed')
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Notches
+  if (options.backPockets) {
+    macro('sprinkle', {
+      snippet: 'bnotch',
+      on: ['pocketLeft', 'pocketRight', 'pocketBagWaistLeft', 'pocketBagWaistRight'],
+    })
+  }
+
+  // Dimensions
+  macro('hd', {
+    id: 'wHem',
+    from: points.floorIn,
+    to: points.floorOut,
+    y: points.floorIn.y - 30,
+  })
+  macro('hd', {
+    id: 'wHemLeft',
+    from: points.floorIn,
+    to: points.floor,
+    y: points.floorIn.y - 15,
+  })
+  macro('hd', {
+    id: 'wHemRight',
+    from: points.floor,
+    to: points.floorOut,
+    y: points.floorIn.y - 15,
+  })
+  macro('vd', {
+    id: 'hHemToWaistSide',
+    from: points.floorOut,
+    to: points.styleWaistOut,
+    x:
+      (points.seatOut.x > points.styleWaistOut.x ? points.seatOut.x : points.styleWaistOut.x) +
+      sa +
+      30,
+  })
+  macro('vd', {
+    id: 'hHemToFork',
+    from: points.floorIn,
+    to: points.fork,
+    x: points.fork.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hForkToCbWaist',
+    from: points.fork,
+    to: points.styleWaistIn,
+    x: points.fork.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.floorIn,
+    to: points.styleWaistIn,
+    x: points.fork.x - sa - 30,
+  })
+  macro('vd', {
+    id: 'hCurveStartToCbWaist',
+    from: points.crossSeamCurveStart,
+    to: points.styleWaistIn,
+    x: points.crossSeamCurveStart.x - sa - 15,
+  })
+  macro('hd', {
+    id: 'wCbWaistToPleat',
+    from: points.styleWaistIn,
+    to: points.grainlineTop,
+    y: points.styleWaistIn.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wCurveStartToPleat',
+    from: points.crossSeamCurveStart,
+    to: points.grainlineTop,
+    y: points.styleWaistIn.y - sa - 30,
+  })
+  macro('hd', {
+    id: 'wCrossSeamProjectionPointToPleat',
+    from: points.crossSeamCurveMax,
+    to: points.grainlineTop,
+    y: points.styleWaistIn.y - sa - 45,
+  })
+  macro('hd', {
+    id: 'wForkToPleat',
+    from: points.fork,
+    to: points.grainlineTop,
+    y: points.styleWaistIn.y - sa - 60,
+  })
+  macro('hd', {
+    id: 'wPleatToWaistSide',
+    from: points.grainlineTop,
+    to: points.styleWaistOut,
+    y: points.styleWaistIn.y - sa - 15,
+  })
+  if (points.seatOut.x > points.styleWaistOut.x) {
     macro('hd', {
-      from: points.floorIn,
-      to: points.floorOut,
-      y: points.floorIn.y - 30,
-    })
-    macro('hd', {
-      from: points.floorIn,
-      to: points.floor,
-      y: points.floorIn.y - 15,
-    })
-    macro('hd', {
-      from: points.floor,
-      to: points.floorOut,
-      y: points.floorIn.y - 15,
-    })
-    macro('vd', {
-      from: points.floorOut,
-      to: points.styleWaistOut,
-      x:
-        (points.seatOut.x > points.styleWaistOut.x ? points.seatOut.x : points.styleWaistOut.x) +
-        sa +
-        15,
-    })
-    macro('vd', {
-      from: points.floorIn,
-      to: points.fork,
-      x: points.fork.x - sa - 15,
-    })
-    macro('vd', {
-      from: points.fork,
-      to: points.styleWaistIn,
-      x: points.fork.x - sa - 15,
-    })
-    macro('vd', {
-      from: points.floorIn,
-      to: points.styleWaistIn,
-      x: points.fork.x - sa - 30,
-    })
-    macro('vd', {
-      from: points.crossSeamCurveStart,
-      to: points.styleWaistIn,
-      x: points.crossSeamCurveStart.x - sa - 15,
-    })
-    macro('hd', {
-      from: points.styleWaistIn,
-      to: points.grainlineTop,
-      y: points.styleWaistIn.y - sa - 15,
-    })
-    macro('hd', {
-      from: points.crossSeamCurveStart,
-      to: points.grainlineTop,
+      id: 'wToSeatOut',
+      from: points.grainlineTop,
+      to: points.seatOut,
       y: points.styleWaistIn.y - sa - 30,
     })
-    macro('hd', {
-      from: points.crossSeamCurveMax,
-      to: points.grainlineTop,
-      y: points.styleWaistIn.y - sa - 45,
+  }
+  if (options.frontPockets) {
+    macro('ld', {
+      id: 'lPocketTopToWaist',
+      from: points.styleWaistOut,
+      to: points.pocketFlapTopIn,
+      d: -15,
     })
-    macro('hd', {
-      from: points.fork,
-      to: points.grainlineTop,
-      y: points.styleWaistIn.y - sa - 60,
+    macro('ld', {
+      id: 'lPocketOpening',
+      from: points.pocketFlapTopIn,
+      to: points.pocketFlapBottomIn,
+      d: -15,
     })
-    macro('hd', {
-      from: points.grainlineTop,
-      to: points.styleWaistOut,
-      y: points.styleWaistIn.y - sa - 15,
+    macro('ld', {
+      id: 'lPocketFacing',
+      from: points.pocketFlapTopIn,
+      to: points.pocketFlapTopOut,
+      d: -15,
     })
-    if (points.seatOut.x > points.styleWaistOut.x) {
-      macro('hd', {
-        from: points.grainlineTop,
-        to: points.seatOut,
-        y: points.styleWaistIn.y - sa - 30,
-      })
-    }
-    if (options.frontPockets) {
-      macro('ld', {
-        from: points.styleWaistOut,
-        to: points.pocketFlapTopIn,
-        d: -15,
-      })
-      macro('ld', {
-        from: points.pocketFlapTopIn,
-        to: points.pocketFlapBottomIn,
-        d: -15,
-      })
-      macro('ld', {
-        from: points.pocketFlapTopIn,
-        to: points.pocketFlapTopOut,
-        d: -15,
-      })
-    }
-    if (options.backPockets) {
-      macro('ld', {
-        from: points.styleWaistIn,
-        to: points.pocketBagWaistLeft,
-        d: -15 - sa,
-      })
-      macro('ld', {
-        from: points.styleWaistIn,
-        to: points.pocketWaistCenter,
-        d: -30 - sa,
-      })
-      macro('ld', {
-        from: points.pocketCenter,
-        to: points.pocketWaistCenter,
-        d: -15,
-      })
-      macro('ld', {
-        from: points.pocketBagBottomRight,
-        to: points.pocketBagWaistRight,
-        d: -15,
-      })
-    }
+  }
+  if (options.backPockets) {
+    macro('ld', {
+      id: 'lCbToPocket',
+      from: points.styleWaistIn,
+      to: points.pocketBagWaistLeft,
+      d: -15 - sa,
+    })
+    macro('ld', {
+      id: 'lCbToPocketCenter',
+      from: points.styleWaistIn,
+      to: points.pocketWaistCenter,
+      d: -30 - sa,
+    })
+    macro('ld', {
+      id: 'lWeltToWaist',
+      from: points.pocketCenter,
+      to: points.pocketWaistCenter,
+      d: -15,
+    })
+    macro('ld', {
+      id: 'lWaistToPocketBottom',
+      from: points.pocketBagBottomRight,
+      to: points.pocketBagWaistRight,
+      d: -15,
+    })
   }
 
   return part
@@ -336,7 +364,7 @@ export const back = {
     waistHeight: { pct: 5, min: 0, max: 100, menu: 'style' },
     lengthBonus: { pct: 0, min: -15, max: 10, menu: 'style' },
     crotchDrop: { pct: 2, min: 0, max: 10, menu: 'style' },
-    elasticatedHem: { bool: true, menu: 'style' },
+    elasticatedCuff: { bool: true, menu: 'style' },
     // Elastic
     waistbandWidth: {
       pct: 3,

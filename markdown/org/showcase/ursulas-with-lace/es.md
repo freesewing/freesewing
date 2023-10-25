@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Pares de Úrsulas por defecto y de cintura alta"
 date: "2021-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/88754adafdaecc661b6cf14aed0f07042350aabe-600x800.jpg"
 intro: "¡Nos encantan las opciones de tejido y elástico de los dos primeros pares de Úrsulas de Sanne! Los colaboradores de FreeSewing en Discord dijeron que les encantaba el encaje y las combinaciones de colores."
 title: "Úrsulas con encaje"
 designs:

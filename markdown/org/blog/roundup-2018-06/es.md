@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Tu fondo de conexión para julio"
 date: "2018-06-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d4f2c83df7c4bc98b2bee3159b3f042bf0c1177f-1920x1279.jpg"
 intro: "Resumen mensual - Junio de 2018: German, Penelope y más ropa de mujer en el horizonte"
 title: "Resumen mensual - Junio de 2018: German, Penelope y más ropa de mujer en el horizonte"
 ---

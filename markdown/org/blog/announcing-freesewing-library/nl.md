@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ik drink niet, maar dit leek me gepast voor een feestpost ¯\_(ツ)_/¯"
 date: "2018-08-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a6b5a3918ad412f7fb434413fafcc82107109d87-1920x1276.jpg"
 intro: "Het eerste verjaardagsfeestje van FreeSewing.org, en de nieuwe FreeSewing-bibliotheek"
 title: "Het eerste verjaardagsfeestje van FreeSewing.org, en de nieuwe FreeSewing-bibliotheek"
 ---

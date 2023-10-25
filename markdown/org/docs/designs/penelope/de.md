@@ -2,4 +2,7 @@
 title: "Penelope, der Bleistiftrock"
 ---
 
-<PatternDocs pattern='penelope' />
+
+
+<DesignInfo design='penelope' docs />
+

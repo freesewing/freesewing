@@ -1,56 +1,62 @@
-// Dependencies
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
+// Hooks
 import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
-// Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
+import { StringInput } from 'shared/components/inputs.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
-export const ns = ['account', 'toast']
+export const ns = ['account', 'status']
 
-export const GithubSettings = ({ title = false, welcome = false }) => {
-  // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
-
+export const GithubSettings = () => {
   // Hooks
-  const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
-  const { t } = useTranslation(ns)
-  const toast = useToast()
+  const { account, setAccount } = useAccount()
+  const backend = useBackend()
+  const { t, i18n } = useTranslation(ns)
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
-  const [github, setGithub] = useState(account.github || '')
+  const [githubUsername, setGithubUsername] = useState(account.data.githubUsername || '')
+  const [githubEmail, setGithubEmail] = useState(account.data.githubEmail || '')
 
   // Helper method to save changes
   const save = async () => {
-    startLoading()
-    const result = await backend.updateAccount({ github })
+    setLoadingStatus([true, 'processingUpdate'])
+    const result = await backend.updateAccount({ data: { githubUsername, githubEmail } })
     if (result.success) {
       setAccount(result.data.account)
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
-    stopLoading()
+      setLoadingStatus([true, 'settingsSaved', true, true])
+    } else setLoadingStatus([true, 'backendError', true, false])
   }
 
   return (
     <div className="max-w-xl">
-      {title ? <h2 className="text-4xl">{t('githubTitle')}</h2> : null}
-      <div className="flex flex-row items-center mt-4">
-        <input
-          value={github}
-          onChange={(evt) => setGithub(evt.target.value)}
-          className="input w-full input-bordered flex flex-row"
-          type="text"
-          placeholder={t('github')}
-        />
-      </div>
+      <h2 className="text-4xl">{t('githubTitle')}</h2>
+      <StringInput
+        id="account-github-email"
+        label={t('email')}
+        current={githubEmail}
+        update={setGithubEmail}
+        valid={(val) => val.length > 0}
+        placeholder={'joostdecock'}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/github`} />}
+      />
+      <StringInput
+        id="account-github-username"
+        label={t('username')}
+        current={githubUsername}
+        update={setGithubUsername}
+        valid={(val) => val.length > 0}
+        placeholder={'joost@joost.at'}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/github`} />}
+      />
       <SaveSettingsButton btnProps={{ onClick: save }} />
-      {!welcome && <BackToAccountButton loading={loading} />}
+      <BackToAccountButton />
     </div>
   )
 }

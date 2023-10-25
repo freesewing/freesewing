@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Boris con su increíble abrigo Carlton"
 date: "2023-02-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8d7e149722688b531c2cfbeaac82de4e6730f156-2252x4000.jpg"
 intro: "No sé ni por dónde empezar. ¿Quieres mirar este abrigo? Es increíble."
 title: "Clásico Carlton de Boris"
 designs:

@@ -2,7 +2,6 @@
 maker: "Hellgy"
 caption: "Un point de vue sur la lumière du jour"
 date: "01-22-2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3a80879182c63ed3438ee239ed6cb5d2a88d2d4b-1440x1800.jpg"
 intro: "Il n'y a pas assez de mots pour décrire ce sweat à capuche Yuri de l'inimitable Hellgy ! Flashy ! Vibrant ! Disco ! Super fun ! !!"
 title: "Le sweat à capuche Yuri haute visibilité de Hellgy (GIFs des lumières clignotantes dans le post)"
 designs:

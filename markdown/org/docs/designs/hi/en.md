@@ -2,4 +2,7 @@
 title: Hi the shark
 ---
 
-<PatternDocs pattern='hi' />
+
+
+<DesignInfo design='hi' docs />
+

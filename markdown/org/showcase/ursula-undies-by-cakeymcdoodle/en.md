@@ -2,7 +2,6 @@
 maker: "cakeymcdoodle "
 caption: "The first of many pairs"
 date: "2022-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/eead06f719f0f7c8f94d6222cf93139361b46b0b-4000x3000.jpg"
 intro: "cakeymcdoodle made these delightful Ursula undies! She shared:"
 title: "Ursula undies by cakeymcdoodle"
 designs: ["ursula"]

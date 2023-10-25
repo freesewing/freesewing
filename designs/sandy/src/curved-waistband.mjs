@@ -1,5 +1,3 @@
-import { draftRingSector } from './shared.mjs'
-
 export function draftCurvedWaistband({
   utils,
   store,
@@ -10,8 +8,6 @@ export function draftCurvedWaistband({
   Snippet,
   snippets,
   options,
-  complete,
-  paperless,
   macro,
   absoluteOptions,
   part,
@@ -34,93 +30,102 @@ export function draftCurvedWaistband({
     store.get('waistbandOverlap') / (rad + absoluteOptions.waistbandWidth)
   )
 
-  // The curved waistband is shown with no rotation
-  const rot = 0
-  // Call draftRingSector to draft the part
-  paths.seam = draftRingSector(
-    part,
-    rot,
-    an + anExtra,
-    rad,
-    rad + absoluteOptions.waistbandWidth
-  ).attr('class', 'fabric')
+  // Call the RingSector macro to draft the waistband
+  const ids = macro('ringsector', {
+    angle: an + anExtra,
+    insideRadius: rad,
+    outsideRadius: rad + absoluteOptions.waistbandWidth,
+  })
+  const pathId = ids.paths.path
+  paths.seam = paths[pathId].clone().addClass('fabric')
+  paths[pathId].hide()
+
+  /*
+   * Macros ensure they can be used more than once in a part, and will generate unique (and complex)
+   * point names. Since we're only calling the macro once here, we will simplify these names
+   */
+  for (const [shortId, uid] of Object.entries(ids.points)) {
+    points[shortId] = points[uid].copy()
+    // Some points are rotated, we need those too
+    if (points[uid + 'Rotated']) points[shortId + 'Rotated'] = points[uid + 'Rotated'].copy()
+  }
+
+  if (sa) paths.sa = paths.seam.offset(sa * -1).addClass('fabric sa')
+
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'fabric' })
 
   // Anchor samples to the centre of the waist
   points.gridAnchor = points.in1.clone()
 
-  // Complete pattern?
-  if (complete) {
-    points.title = points.in1Rotated.shiftFractionTowards(points.ex1Rotated, 0.5).shift(0, 25)
-    macro('title', {
-      at: points.title,
-      nr: 2,
-      title: 'curvedWaistband',
-      scale: 0.5,
-    })
-    points.grainlineFrom = utils.curveIntersectsY(
-      points.ex2FlippedRotated,
-      points.ex2CFlippedRotated,
-      points.ex1CFlippedRotated,
-      points.ex1Rotated,
-      points.title.y
+  // Title
+  points.title = points.ex2Flipped.shiftFractionTowards(points.ex2, 0.5)
+  macro('title', {
+    at: points.title,
+    nr: 2,
+    title: 'curvedWaistband',
+    scale: 0.5,
+  })
+
+  // Grainline
+  macro('grainline', {
+    from: points.ex2Flipped,
+    to: points.ex2,
+  })
+
+  // Buttons / Notches
+  if (store.get('waistbandOverlap') >= options.minimumOverlap) {
+    points.pivot = points.in2.shiftFractionTowards(points.ex2, 0.5)
+    points.button = points.pivot
+      .shiftTowards(points.ex2, store.get('waistbandOverlap') / 2)
+      .rotate(-90, points.pivot)
+    points.buttonhole = points.button.flipX()
+    snippets.button = new Snippet('button', points.button)
+    snippets.buttonhole = new Snippet('buttonhole', points.buttonhole).rotate(
+      points.in2.angle(points.ex2)
     )
-    points.grainlineTo = points.grainlineFrom.flipX()
-    macro('grainline', {
-      from: points.grainlineFrom,
-      to: points.grainlineTo,
-    })
-
-    if (store.get('waistbandOverlap') >= options.minimumOverlap) {
-      points.pivot = points.in2Rotated.shiftFractionTowards(points.ex2Rotated, 0.5)
-      points.button = points.pivot
-        .shiftTowards(points.ex2Rotated, store.get('waistbandOverlap') / 2)
-        .rotate(-90, points.pivot)
-      points.buttonhole = points.button.flipX()
-      snippets.button = new Snippet('button', points.button)
-      snippets.buttonhole = new Snippet('buttonhole', points.buttonhole).attr(
-        'data-rotate',
-        -1 * points.ex2FlippedRotated.angle(points.in2FlippedRotated)
-      )
-      points.centerNotch = new Path()
-        .move(points.ex1Rotated)
-        .curve(points.ex1CFlippedRotated, points.ex2CFlippedRotated, points.ex2FlippedRotated)
-        .shiftAlong(store.get('waistbandOverlap') / 2)
-      points.buttonNotch = new Path()
-        .move(points.ex2Rotated)
-        .curve(points.ex2CRotated, points.ex1CRotated, points.ex1Rotated)
-        .shiftAlong(store.get('waistbandOverlap'))
-      macro('sprinkle', {
-        snippet: 'notch',
-        on: ['centerNotch', 'buttonNotch', 'ex2FlippedRotated'],
-      })
-    }
-
-    if (sa) paths.sa = paths.seam.offset(sa * -1).attr('class', 'fabric sa')
-  }
-
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.in2FlippedRotated,
-      to: points.in2Rotated,
-      y: points.in2Rotated.y - sa - 15,
-    })
-    macro('hd', {
-      from: points.ex2FlippedRotated,
-      to: points.ex2Rotated,
-      y: points.in2Rotated.y - sa - 30,
-    })
-    macro('vd', {
-      from: points.ex1Rotated,
-      to: points.in2Rotated,
-      x: points.in2Rotated.x + sa + 30,
-    })
-    macro('ld', {
-      from: points.ex2Rotated,
-      to: points.in2Rotated,
-      d: -1 * sa - 15,
+    points.centerNotch = new Path()
+      .move(points.ex1Rotated)
+      .curve(points.ex1cFlippedRotated, points.ex2cFlippedRotated, points.ex2FlippedRotated)
+      .shiftAlong(store.get('waistbandOverlap') / 2)
+    points.buttonNotch = new Path()
+      .move(points.ex2Rotated)
+      .curve(points.ex2cRotated, points.ex1cRotated, points.ex1Rotated)
+      .shiftAlong(store.get('waistbandOverlap'))
+    macro('sprinkle', {
+      snippet: 'notch',
+      on: ['centerNotch', 'buttonNotch', 'ex2Flipped'],
     })
   }
+
+  // Dimensions
+  macro('hd', {
+    id: 'wTop',
+    from: points.in2FlippedRotated,
+    to: points.in2,
+    y: points.in2.y - sa - 15,
+  })
+  macro('hd', {
+    from: points.ex2FlippedRotated,
+    id: 'wFull',
+    to: points.ex2,
+    y: points.in2.y - sa - 30,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.ex1,
+    to: points.in2,
+    x: points.in2.x + sa + 40,
+  })
+  macro('ld', {
+    id: 'lWidth',
+    from: points.ex2,
+    to: points.in2,
+    d: -1 * sa - 15,
+  })
 
   return part
 }

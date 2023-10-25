@@ -1,38 +1,30 @@
 clickHere: Haz clic aquí para dar tu consentimiento
-createLimitedAccount: Crear cuenta con consentimiento limitado
 createAccount: Crear cuenta
 compliant: "FreeSewing respeta tu privacidad y tus derechos. Nos adherimos a la ley de privacidad y seguridad más estricta del mundo: el Reglamento General de Protección de Datos (RGPD) de la Unión Europea (UE)."
 consent: Consentimiento
-consentForSetData: Consentimiento para la medición de datos
-consentForProfileData: Consentimiento para datos de perfil
+consentForAccountData: Consent for account data
 consentGiven: Consentimiento dado
 consentNotGiven: Consentimiento no dado
 consentWhyAnswer: Según el GDPR, el tratamiento de tus datos personales requiere un consentimiento granular, es decir, necesitamos tu permiso para las distintas formas en que tratamos tus datos.
 createMyAccount: Crea mi cuenta
 furtherReading: Lectura adicional
 hideDetails: Ocultar detalles
-noConsentNoAccount: Sin este consentimiento, no podemos crear tu cuenta
-noConsentNoPatterns: Sin este consentimiento, no puedes crear ningún patrón a medida
+noConsentNoAccount: This consent is required for a FreeSewing account.
+noConsentNoAccountCreation: Without this consent, we cannot create a FreeSewing account.
 noIDoNot: 'No, no lo hago'
 openDataInfo: Estos datos se utilizan para estudiar y comprender la forma humana en todas sus formas, para que podamos obtener mejores patrones de costura y que se ajusten mejor a las prendas. Aunque esta información es anónima, tiene derecho a objetar esto.
 openDataQuestion: Compartir mediciones anonimizadas como datos abiertos.
-setQuestion: '¿Das tu consentimiento para procesar los datos de tus medidas?'
-setWarning: Revocar este consentimiento te bloqueará todos los datos de tus mediciones, así como desactivará las funciones que dependan de ellos.
-setWhatAnswer: Para cada medición establece las mediciones <b></b>.
-setWhatAnswerOptional: 'Opcional: Una imagen <b></b> y el nombre <b></b> o <b>notas</b> que añadas a un conjunto de medidas.'
-setWhatQuestion: '¿Qué son los datos de las mediciones?'
-setWhyAnswer: 'Para redactar <b> patrones de costura hechos a medida </b>, necesitamos <b> medidas corporales </b>.'
 privacyMatters: Cuestiones de privacidad
 privacyNotice: Aviso de privacidad de FreeSewing
 processing: Procesando
-profileQuestion: '¿Das tu consentimiento para procesar los datos de tu perfil?'
-profileShareAnswer: '<b>No</b>, nunca.'
-profileTimingAnswer: '<b>12 meses</b> después de su último inicio de sesión, o hasta que <b> elimine </b> su cuenta o <b> revoque </b> este consentimiento.'
-profileWarning: La revocación de este consentimiento activará la eliminación de todos sus datos. Tiene exactamente el mismo efecto que la eliminación de su cuenta.
-profileWhatAnswerOptional: 'Opcional: Una foto de perfil <b></b>, <b>bio</b>y <b>cuentas de redes sociales</b>'
-profileWhatAnswer: 'Su <b> dirección de correo electrónico </b>, <b> nombre de usuario </b> y <b> contraseña </b>.'
-profileWhatQuestion: '¿Qué son los datos de perfil?'
-profileWhyAnswer: 'Para <b> autenticar </b> usted, <b> contactarse </b> con usted cuando sea necesario y crear una <b> comunidad </b>.'
+accountQuestion: Do you give your consent to process your account data?
+accountShareAnswer: '<b>No</b>, nunca.'
+accountTimingAnswer: '<b>12 months</b> after the last time your connected to our backend, or until you <b>remove</b> your account or <b>revoke</b> this consent.'
+accountWarning: La revocación de este consentimiento activará la eliminación de todos sus datos. Tiene exactamente el mismo efecto que la eliminación de su cuenta.
+accountWhatAnswerOptional: 'Optional: A <b>picture</b>, <b>bio</b>, or <b>GitHub username</b>'
+accountWhatAnswer: 'Your <b>email address</b>, <b>username</b>, and <b>password</b>, and any <b>body measurements</b> you add to your account.'
+accountWhatQuestion: What is account data?
+accountWhyAnswer: 'To <b>authenticate</b> you, <b>contact</b> you when needed, and generate <b>bespoke</b> sewing patterns.'
 readMore: Para más información, lea nuestro aviso de privacidad.
 readRights: Para obtener más información, lea más sobre sus derechos.
 revokeConsent: Revocar consentimiento

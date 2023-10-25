@@ -2,4 +2,7 @@
 title: "Manteau Carlita"
 ---
 
-<PatternDocs pattern='carlita' />
+
+
+<DesignInfo design='carlita' docs />
+

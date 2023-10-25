@@ -1,12 +1,10 @@
-// Dependencies
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
+// Hooks
 import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
-// Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
@@ -25,14 +23,11 @@ const CodeInput = ({ code, setCode, t }) => (
 )
 
 export const MfaSettings = ({ title = false, welcome = false }) => {
-  // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
-
   // Hooks
-  const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
+  const { account, setAccount } = useAccount()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
-  const toast = useToast()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
   const [enable, setEnable] = useState(false)
@@ -42,15 +37,17 @@ export const MfaSettings = ({ title = false, welcome = false }) => {
 
   // Helper method to enable MFA
   const enableMfa = async () => {
-    startLoading()
+    setLoadingStatus([true, 'processingUpdate'])
     const result = await backend.enableMfa()
-    if (result.success) setEnable(result.data.mfa)
-    stopLoading()
+    if (result.success) {
+      setEnable(result.data.mfa)
+      setLoadingStatus([true, 'settingsSaved', true, true])
+    } else setLoadingStatus([true, 'backendError', true, false])
   }
 
   // Helper method to disable MFA
   const disableMfa = async () => {
-    startLoading()
+    setLoadingStatus([true, 'processingUpdate'])
     const result = await backend.disableMfa({
       mfa: false,
       password,
@@ -59,19 +56,18 @@ export const MfaSettings = ({ title = false, welcome = false }) => {
     if (result) {
       if (result.success) {
         setAccount(result.data.account)
-        toast.warning(<span>{t('mfaDisabled')}</span>)
-      } else toast.for.backendError()
+        setLoadingStatus([true, 'settingsSaved', true, true])
+      } else setLoadingStatus([true, 'backendError', true, false])
       setDisable(false)
       setEnable(false)
       setCode('')
       setPassword('')
     }
-    stopLoading()
   }
 
   // Helper method to confirm MFA
   const confirmMfa = async () => {
-    startLoading()
+    setLoadingStatus([true, 'processingUpdate'])
     const result = await backend.confirmMfa({
       mfa: true,
       secret: enable.secret,
@@ -79,11 +75,10 @@ export const MfaSettings = ({ title = false, welcome = false }) => {
     })
     if (result.success) {
       setAccount(result.data.account)
-      toast.success(<span>{t('mfaEnabled')}</span>)
-    } else toast.for.backendError()
+      setLoadingStatus([true, 'settingsSaved', true, true])
+    } else setLoadingStatus([true, 'backendError', true, false])
     setEnable(false)
     setCode('')
-    stopLoading()
   }
 
   // Figure out what title to use
@@ -156,7 +151,7 @@ export const MfaSettings = ({ title = false, welcome = false }) => {
           </div>
         )}
       </div>
-      {!welcome && <BackToAccountButton loading={loading} />}
+      {!welcome && <BackToAccountButton />}
     </div>
   )
 }

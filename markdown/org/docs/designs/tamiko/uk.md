@@ -2,4 +2,7 @@
 title: "Блузка Таміко"
 ---
 
-<PatternDocs pattern='tamiko' />
+
+
+<DesignInfo design='tamiko' docs />
+

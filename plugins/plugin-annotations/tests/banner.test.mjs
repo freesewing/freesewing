@@ -22,12 +22,15 @@ describe('Banner Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const design = new Design({ parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.example
+    // Note that this macro does not add text to the path, but clones
+    // the path and adds text to the clone which is then hidden
+    const c = pattern.parts[0].test.paths.__macro_banner_banner_banner
     expect(c.attributes.get('data-text')).to.equal(
-      '&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'
+      'foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; foo'
     )
     expect(c.attributes.get('data-text-class').trim()).to.equal('center')
     expect(c.attributes.get('data-text-dy')).to.equal('-1')
@@ -52,11 +55,12 @@ describe('Banner Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const design = new Design({ parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.example2
-    expect(c.attributes.get('data-text')).to.equal('&#160;&#160; foo &#160;&#160; foo &#160;&#160;')
+    const c = pattern.parts[0].test.paths.__macro_banner_banner_banner
+    expect(c.attributes.get('data-text')).to.equal('foo &#160;&#160; foo &#160;&#160; foo')
   })
 
   it('Number of repetitions should be configurable', () => {
@@ -78,12 +82,13 @@ describe('Banner Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const design = new Design({ parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.example3
+    const c = pattern.parts[0].test.paths.__macro_banner_banner_banner
     expect(c.attributes.get('data-text')).to.equal(
-      '&#160; foo &#160; foo &#160; foo &#160; foo &#160;'
+      'foo &#160; foo &#160; foo &#160; foo &#160; foo'
     )
   })
 })

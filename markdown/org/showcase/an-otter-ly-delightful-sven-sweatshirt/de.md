@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Ein beliebtes Sven-Sweatshirt mit Otter-Frottee"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b851b4ceda3714fed1cf4b6eb3d624724803c3ba-864x1152.jpg"
 intro: "Ein otterhaft entzückendes Sven-Sweatshirt"
 title: "Ein otterhaft entzückendes Sven-Sweatshirt"
 designs:

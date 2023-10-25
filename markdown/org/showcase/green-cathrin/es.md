@@ -2,7 +2,6 @@
 maker: "Natalia Sayang"
 caption: "Un corsé Cathrin de algodón acolchado y lona"
 date: "2021-10-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ac93904c42357ce18237c3ce2c071559e9d185a0-640x1136.png"
 intro: "Un corsé Cathrin verde de 11 paneles"
 title: "Un corsé Cathrin verde de 11 paneles"
 designs:

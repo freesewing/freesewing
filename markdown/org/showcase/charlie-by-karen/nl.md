@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Een paar paarse Charlies"
 date: "2021-07-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/057330d8ccc0e758cfe43f25649489eddb728ce6-1288x1800.jpg"
 intro: "Deze Charlies zijn gemaakt in een paarse stretch keperstof, met een maximale taillehoogte (30%)."
 title: "Paarse Charlies"
 designs:

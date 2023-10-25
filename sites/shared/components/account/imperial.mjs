@@ -1,27 +1,24 @@
-// Dependencies
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
+// Hooks
 import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
-// Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
-import { Choice, Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
+import { Icons, welcomeSteps, BackToAccountButton, NumberBullet } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
+import { ListInput } from 'shared/components/inputs.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
-export const ns = ['account', 'toast']
+export const ns = ['account', 'status']
 
-export const ImperialSettings = ({ title = false, welcome = false }) => {
-  // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
-
+export const ImperialSettings = ({ welcome = false }) => {
   // Hooks
-  const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
-  const toast = useToast()
-  const { t } = useTranslation(ns)
+  const { account, setAccount } = useAccount()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
+  const backend = useBackend()
+  const { t, i18n } = useTranslation(ns)
 
   // State
   const [selection, setSelection] = useState(account?.imperial === true ? 'imperial' : 'metric')
@@ -29,14 +26,13 @@ export const ImperialSettings = ({ title = false, welcome = false }) => {
   // Helper method to update account
   const update = async (val) => {
     if (val !== selection) {
-      startLoading()
+      setLoadingStatus([true, 'processingUpdate'])
       const result = await backend.updateAccount({ imperial: val === 'imperial' ? true : false })
       if (result.success) {
         setAccount(result.data.account)
         setSelection(val)
-        toast.for.settingsSaved()
-      } else toast.for.backendError()
-      stopLoading()
+        setLoadingStatus([true, 'settingsSaved', true, true])
+      } else setLoadingStatus([true, 'backendError', true, true])
     }
   }
 
@@ -48,23 +44,23 @@ export const ImperialSettings = ({ title = false, welcome = false }) => {
 
   return (
     <div className="max-w-xl">
-      {title ? <h1 className="text-4xl">{t('unitsTitle')}</h1> : <h1></h1>}
-      {['metric', 'imperial'].map((val) => (
-        <Choice
-          val={val}
-          t={t}
-          update={update}
-          current={selection}
-          bool
-          key={val}
-          boolIcons={{ yes: <span>&quot;</span>, no: <span>cm</span> }}
-        >
-          <span className="block text-lg leading-5">
-            {selection === 1 && val === 2 ? t('showMore') : t(`${val}Units`)}
-          </span>
-          <span className="block text-normal font-light normal-case pt-1">{t(`${val}Unitsd`)}</span>
-        </Choice>
-      ))}
+      <ListInput
+        id="account-units"
+        label={t('unitsTitle')}
+        list={['metric', 'imperial'].map((val) => ({
+          val,
+          label: (
+            <div className="flex flex-row items-center w-full justify-between">
+              <span>{t(`${val}Units`)}</span>
+              <NumberBullet nr={val === 'imperial' ? '″' : 'cm'} color="secondary" />
+            </div>
+          ),
+          desc: t(`${val}Unitsd`),
+        }))}
+        current={selection}
+        update={update}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/units`} />}
+      />
       {welcome ? (
         <>
           <ContinueButton btnProps={{ href: nextHref }} link />
@@ -87,7 +83,7 @@ export const ImperialSettings = ({ title = false, welcome = false }) => {
           ) : null}
         </>
       ) : (
-        <BackToAccountButton loading={loading} />
+        <BackToAccountButton />
       )}
     </div>
   )

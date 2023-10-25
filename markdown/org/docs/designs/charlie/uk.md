@@ -2,4 +2,7 @@
 title: "Брюки-чіноси Чарлі"
 ---
 
-<PatternDocs pattern='charlie' />
+
+
+<DesignInfo design='charlie' docs />
+

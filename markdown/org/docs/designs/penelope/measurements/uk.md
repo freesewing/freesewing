@@ -2,4 +2,4 @@
 title: "Спідниця-олівець Пенелопа: Необхідні виміри"
 ---
 
-<PatternMeasurements pattern='penelope' />
+<DesignMeasurements design='penelope' />

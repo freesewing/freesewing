@@ -2,7 +2,6 @@
 maker: "Natalia Sayang"
 caption: "Een Cathrin korset gemaakt van quiltkatoen en canvas"
 date: "2021-10-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ac93904c42357ce18237c3ce2c071559e9d185a0-640x1136.png"
 intro: "Een groen Cathrin korset met 11 panelen"
 title: "Een groen Cathrin korset met 11 panelen"
 designs:

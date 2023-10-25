@@ -10,6 +10,6 @@ title: "Camisa Simone Instrucciones de costura"
 
 <Note>
 
-Simone no es más que nuestro [patrón Simon](/diseños/simon/) adaptado para pechos, así que ahora sólo tienes que seguir las [instrucciones de Simon](/docs/patrones/simon/instrucciones) para terminar tu Simone :)
+Simone is just our [Simon pattern](/designs/simon/) adapted for breasts so you can now just follow [Simon's instructions](/docs/designs/simon/instructions) to finish your Simone :)
 
 </Note>

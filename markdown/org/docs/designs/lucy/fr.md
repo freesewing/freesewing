@@ -2,4 +2,7 @@
 title: "Poche à nouer Lucy"
 ---
 
-<PatternDocs pattern='lucy' />
+
+
+<DesignInfo design='lucy' docs />
+

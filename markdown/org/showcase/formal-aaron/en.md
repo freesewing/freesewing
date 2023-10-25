@@ -2,7 +2,6 @@
 maker: "TangerineShark"
 caption: "TangerineShark in a formal Aaron, bold yellow pants, and the hottest accessory of them all, a respirator"
 date: "2023-01-14"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/86fd2445332cdc1519d2e85e68db7023118643ff-1852x2704.jpg"
 intro: "A formal Aaron, for parties"
 title: "A formal Aaron, for parties"
 designs: ["aaron"]

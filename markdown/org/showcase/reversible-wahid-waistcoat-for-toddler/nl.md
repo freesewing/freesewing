@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Bekijk dit schattige hobbitkostuum!"
 date: "2023-07-11"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/53426fe47d7a52b633d033c1afc77f788bde0013-469x470.jpg"
 intro: "Dit linnen Wahid-gilet is gemaakt voor een peuter van 1 jaar oud. Het is gemaakt van linnen en is volledig omkeerbaar gemaakt volgens een tutorial van Sarah Kirsten: Een gevoerd vest naaien - Twee eenvoudige methodes"
 title: "Een omkeerbaar Wahid vest voor een peuter"
 designs:

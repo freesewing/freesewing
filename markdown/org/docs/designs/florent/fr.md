@@ -2,4 +2,7 @@
 title: "Casquette plate Florent"
 ---
 
-<PatternDocs pattern='florent' />
+
+
+<DesignInfo design='florent' docs />
+

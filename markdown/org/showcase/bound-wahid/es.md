@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Lo creas o no, éste es sólo su tercer proyecto de costura."
 date: "2018-02-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3d05ee5656f7aac511d95ed567dab54c6545cd88-1080x1080.jpg"
 intro: "Un chaleco Wahid con ojales encuadernados"
 title: "Un chaleco Wahid con ojales encuadernados"
 designs:

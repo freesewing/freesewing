@@ -6,6 +6,6 @@ title: "Simone overhemd: Snij-instructies"
 
 Raadpleeg [de Simon documentatie](/docs/patterns/simon/).
 
-Raadpleeg [de Simon documentatie](/docs/patterns/simon/).
+Please refer to [the Simon documentation](/docs/designs/simon/).
 
 </Note>

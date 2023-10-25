@@ -2,7 +2,6 @@
 maker: "Pato"
 caption: "Una versión actualizada de los pantalones cortos Paco como PJ, ahora con canesú"
 date: "2022-07-13"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b9253befec857619f0f366ae0df9c147a18e1cc9-1251x2668.jpg"
 intro: "Pantalones cortos Paco PJ, ahora con canesú añadido"
 title: "Pantalones cortos Paco PJ, ahora con canesú añadido"
 designs:

@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Un elegante abrigo Carlton de Charlotte"
 date: "2021-06-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8954b27fb2e27a99aeff6b28baba29a342f3ccff-640x586.jpg"
 intro: "Nos encanta este elegante abrigo Carlton de Charlotte."
 title: "Carlton de Charlotte"
 designs:

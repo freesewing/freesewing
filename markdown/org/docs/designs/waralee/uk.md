@@ -2,4 +2,7 @@
 title: "Штани з запахом Варалі"
 ---
 
-<PatternDocs pattern='waralee' />
+
+
+<DesignInfo design='waralee' docs />
+

@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Eso sí que es posar con calidad."
 date: "2017-10-09"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/bdb5e72db9290457048b763783bf8a2de51ce0c1-1080x1080.jpg"
 intro: "Una camiseta azul Simon de feelingmyoats"
 title: "Una camiseta azul Simon de feelingmyoats"
 designs:

@@ -2,7 +2,6 @@
 maker: "TangerineShark"
 caption: "A deep blue fit-and-flare dress emblazoned with embroidery constellations"
 date: "2021-09-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/da025b955c455a3d9dbef404a49881ea30a88a8f-1986x2648.jpg"
 intro: "This dress is a hybrid of the Bella body block and the Sandy circle skirt . I've been calling the combo Sanderella."
 title: "A Celestial Sanderella"
 designs: ["bella","sandy"]

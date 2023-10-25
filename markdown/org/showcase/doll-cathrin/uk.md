@@ -2,7 +2,6 @@
 maker: "MagicantAce"
 caption: "Ця крихітна Катрін зроблена без кісток"
 date: "2021-10-23"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b472699e9ecc36fe44ade84a317f61458d1c07dd-3264x2448.jpg"
 intro: "Блискучий MagicantAce повернувся з черговою ляльковою викрійкою, цим крихітним корсетом Катрін!"
 title: "Лялькова версія Катрін"
 designs:

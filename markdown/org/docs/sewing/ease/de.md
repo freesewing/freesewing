@@ -14,6 +14,6 @@ Zugabe, die hinzugefügt wird, damit du dich in einem Kleidungsstück bewegen ka
 
 Zugabe kann auch umgekehrt arbeiten. Wenn der Stoff dehnbar ist, können wir weniger Stoff verwenden, um das Kleidungsstück passend zu machen. Dies nennt man **negative Zugabe**.
 
-Negative Zugabe wird bei dehnbaren Materialien verwendet, bei denen das Kleidungsstück eng anliegen muss. Zum Beispiel bei Badebekleidung, Strumpfhosen, Unterwäsche oder Sportbekleidung.
+Negative ease is used for stretchy materials where the garment must fit tightly. Zum Beispiel bei Badebekleidung, Strumpfhosen, Unterwäsche oder Sportbekleidung.
 
 > Bilder von [Quinn Dombrowski](https://www.flickr.com/photos/quinnanya/8885126989/) und [sutiblr](https://www.flickr.com/photos/30788655@N08/4743320893)

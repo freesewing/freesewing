@@ -67,7 +67,7 @@ ApikeysController.prototype.whoami = async (req, res, tools) => {
         key: key[0].id,
         level: key[0].level,
         expiresAt: key[0].expiresAt,
-        name: key[0].name,
+        name: Apikey.decrypt(key[0].name),
         userId: key[0].userId,
       },
     })

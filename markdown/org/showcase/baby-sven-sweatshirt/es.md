@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Esta versión utiliza un tejido de rizo francés elástico"
 date: "2023-05-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/2d9168d90c395b8dd3916764454331bf0fa67a0b-1041x1064.jpg"
 intro: "¡El fabricante aumentó las opciones de holgura de pecho (18%), cuello (20,8%), bíceps (31,2%), puños (32,9%), hombros (6%) y caderas (9,9%) para un ajuste de gran tamaño en esta sudadera Sven para un bebé! Utilizaron las medidas reales del bebé."
 title: "Sudadera Sven bebé"
 designs:

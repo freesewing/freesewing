@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Geloof het of niet, maar dit is pas zijn derde naaiproject ooit."
 date: "2018-02-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3d05ee5656f7aac511d95ed567dab54c6545cd88-1080x1080.jpg"
 intro: "Een Wahid gilet met paspel knoopsgaten"
 title: "Een Wahid gilet met paspel knoopsgaten"
 designs:

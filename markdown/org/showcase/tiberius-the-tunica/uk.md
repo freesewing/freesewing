@@ -2,7 +2,6 @@
 maker: "Старф"
 caption: "Туніка Тіберія - це найпростіша форма одягу, яка тільки може бути"
 date: "2021-10-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fe8c7477640f372e5580478246826076a2721b3a-2292x3056.jpg"
 intro: "Тиберій Туніка"
 title: "Тиберій Туніка"
 designs:

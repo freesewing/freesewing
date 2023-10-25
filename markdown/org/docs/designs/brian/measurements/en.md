@@ -2,4 +2,4 @@
 title: "Brian body block: Required Measurements"
 ---
 
-<PatternMeasurements pattern='brian' />
+<DesignMeasurements design='brian' />

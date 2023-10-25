@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Jupe Sandy à panneaux par Sunshine"
 date: "2021-02-15"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4d38d6837e8125276522abb62d44a99e191fd8a0-1477x1969.jpg"
 intro: "Cette jolie jupe Sandy a été réalisée par Sunshine. La créatrice a fourni plus d'informations sur ce projet :"
 title: "Jupe Sandy par Sunshine"
 designs:

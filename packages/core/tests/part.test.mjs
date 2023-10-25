@@ -124,14 +124,14 @@ describe('Part', () => {
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    expect(pattern.setStores[0].logs.warning.length).to.equal(4)
-    expect(pattern.setStores[0].logs.warning[0]).to.equal(
+    expect(pattern.setStores[0].logs.warn.length).to.equal(4)
+    expect(pattern.setStores[0].logs.warn[0]).to.equal(
       '`points.a` was set with a value that is not a `Point` object'
     )
-    expect(pattern.setStores[0].logs.warning[1]).to.equal(
+    expect(pattern.setStores[0].logs.warn[1]).to.equal(
       '`points.a` was set with a `x` parameter that is not a `number`'
     )
-    expect(pattern.setStores[0].logs.warning[2]).to.equal(
+    expect(pattern.setStores[0].logs.warn[2]).to.equal(
       '`points.a` was set with a `y` parameter that is not a `number`'
     )
   })
@@ -147,14 +147,14 @@ describe('Part', () => {
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    expect(pattern.setStores[0].logs.warning.length).to.equal(4)
-    expect(pattern.setStores[0].logs.warning[0]).to.equal(
+    expect(pattern.setStores[0].logs.warn.length).to.equal(4)
+    expect(pattern.setStores[0].logs.warn[0]).to.equal(
       '`snippets.a` was set with a value that is not a `Snippet` object'
     )
-    expect(pattern.setStores[0].logs.warning[1]).to.equal(
+    expect(pattern.setStores[0].logs.warn[1]).to.equal(
       '`snippets.a` was set with a `def` parameter that is not a `string`'
     )
-    expect(pattern.setStores[0].logs.warning[2]).to.equal(
+    expect(pattern.setStores[0].logs.warn[2]).to.equal(
       '`snippets.a` was set with an `anchor` parameter that is not a `Point`'
     )
   })
@@ -197,8 +197,8 @@ describe('Part', () => {
     // Let's also cover the branch where complete is false
     const pattern = new design({ complete: false })
     pattern.draft()
-    expect(pattern.setStores[0].logs.warning.length).to.equal(1)
-    expect(pattern.setStores[0].logs.warning[0]).to.equal(
+    expect(pattern.setStores[0].logs.warn.length).to.equal(1)
+    expect(pattern.setStores[0].logs.warn[0]).to.equal(
       'Calling `units(value)` but `value` is not a number (`string`)'
     )
   })
@@ -311,8 +311,8 @@ describe('Part', () => {
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    expect(pattern.setStores[0].logs.warning.length).to.equal(1)
-    expect(pattern.setStores[0].logs.warning[0]).to.equal(
+    expect(pattern.setStores[0].logs.warn.length).to.equal(1)
+    expect(pattern.setStores[0].logs.warn[0]).to.equal(
       'Tried to access `options.test` but it is `undefined`'
     )
   })
@@ -328,8 +328,8 @@ describe('Part', () => {
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    expect(pattern.setStores[0].logs.warning.length).to.equal(1)
-    expect(pattern.setStores[0].logs.warning[0]).to.equal(
+    expect(pattern.setStores[0].logs.warn.length).to.equal(1)
+    expect(pattern.setStores[0].logs.warn[0]).to.equal(
       'Tried to access `absoluteOptions.test` but it is `undefined`'
     )
   })
@@ -362,5 +362,73 @@ describe('Part', () => {
     expect(pattern.parts[0].to.points.to.y).to.equal(80)
     expect(typeof pattern.parts[0].to.paths.line).to.equal('object')
     expect(pattern.parts[0].to.paths.curve.ops[1].cp2.x).to.equal(200)
+  })
+
+  it('Should set/unset the name of the active macro', () => {
+    const activeMacro = []
+    const plugin = {
+      name: 'testplugin',
+      version: '0.0.1',
+      macros: {
+        macro1: (config, { part, store }) => {
+          activeMacro.push(store.activeMacro)
+          return part
+        },
+      },
+    }
+    const part = {
+      name: 'test',
+      draft: ({ macro, part }) => {
+        activeMacro.push(part.activeMacro)
+        macro('macro1')
+        activeMacro.push(part.activeMacro)
+
+        return part
+      },
+    }
+    const design = new Design({ parts: [part], plugins: [plugin] })
+    const pattern = new design()
+    pattern.draft()
+    expect(activeMacro[0]).to.equal(undefined)
+    expect(activeMacro[1]).to.equal('macro1')
+    expect(activeMacro[2]).to.equal(undefined)
+  })
+
+  it('Should set/unset the name of the active macro in a nested macro', () => {
+    const activeMacro = []
+    const plugin = {
+      name: 'testplugin',
+      version: '0.0.1',
+      macros: {
+        macro1: (config, { macro, part, store }) => {
+          activeMacro.push(store.activeMacro)
+          macro('macro2')
+          activeMacro.push(store.activeMacro)
+          return part
+        },
+        macro2: (config, { part, store }) => {
+          activeMacro.push(store.activeMacro)
+          return part
+        },
+      },
+    }
+    const part = {
+      name: 'test',
+      draft: ({ macro, part }) => {
+        activeMacro.push(part.activeMacro)
+        macro('macro1')
+        activeMacro.push(part.activeMacro)
+
+        return part
+      },
+    }
+    const design = new Design({ parts: [part], plugins: [plugin] })
+    const pattern = new design()
+    pattern.draft()
+    expect(activeMacro[0]).to.equal(undefined)
+    expect(activeMacro[1]).to.equal('macro1')
+    expect(activeMacro[2]).to.equal('macro2')
+    expect(activeMacro[3]).to.equal('macro1')
+    expect(activeMacro[4]).to.equal(undefined)
   })
 })

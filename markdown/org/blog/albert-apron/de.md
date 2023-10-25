@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Halten Sie die selbstgemachte Kleidung sauber während Sie mit der Albert Schürze kochen"
 date: "17.10.2020"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/192f0da76422475ea9a36b7988d70f69bb89bbaf-1920x1282.jpg"
 intro: "Was tun Sie, wenn Ihre Tochter eine Schürze für die Schule benötigt?"
 title: "Wir haben Schürze jetzt: FreeSewing 2.10 bringt Albert mit sich, ein bescheidenes Schürzen-Schnittmuster"
 ---

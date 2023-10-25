@@ -2,7 +2,6 @@
 maker: "Hellgy"
 caption: "Ein Huey-Kapuzenpulli mit Dinosaurier-Aufdruck"
 date: "25.06.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3323f7a8888bcf863c2126003b353db443cd1eba-1279x853.jpg"
 intro: "Wir lieben die Huey-Kapuzenpullis von Hellgy und ihre exzellente Auswahl an Stoffen. Dieser Dinosaurier war ein Publikumsliebling im FreeSewing Discord."
 title: "Huey Hoodie von Hellgy"
 designs:

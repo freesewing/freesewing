@@ -2,7 +2,6 @@
 maker: "Anneke Caramin"
 caption: "achteraanzicht van Anneke's glanzende zwarte Sandy rok"
 date: "2020-10-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f17b554dceedcfa01572346e5032e4836deb6f52-1080x1080.jpg"
 intro: "Lees Anneke's uitgebreide 2018 blogpost over haar nieuwe Sandy rok , inclusief hoe ze zakken en een gebogen tailleband heeft toegevoegd."
 title: "Anneke's glanzende zwarte Sandy cirkelrok"
 designs:

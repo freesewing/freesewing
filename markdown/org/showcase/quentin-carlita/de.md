@@ -2,7 +2,6 @@
 maker: "quentin"
 caption: "Quentins Carlita-Mantel"
 date: "16.09.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b60941609d3b81d53fbbcc4e9657acda7ee0d909-640x631.jpg"
 intro: "Der talentierte Quentin hat diesen eleganten und stilvollen Carlita-Mantel gemacht."
 title: "Quentins Carlita-Mantel"
 designs:

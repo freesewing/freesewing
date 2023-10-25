@@ -2,7 +2,6 @@
 maker: "Фіфі."
 caption: "Піжамні штани з візерунком Пако"
 date: "2021-12-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/af784a62ff853e00c16080a852bc3b6c8072fbe4-1560x2080.jpg"
 intro: "Фіфі скоригувала викрійку штанів Пако, щоб досягти часто запитуваного результату: Вільне шиття піжамних штанів!"
 title: "Піжама Fifi's Paco"
 designs:

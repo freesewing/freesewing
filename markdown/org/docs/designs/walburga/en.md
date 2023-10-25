@@ -2,4 +2,7 @@
 title: "Walburga Wappenrock"
 ---
 
-<PatternDocs pattern='walburga' />
+
+
+<DesignInfo design='walburga' docs />
+

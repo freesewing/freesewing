@@ -2,4 +2,7 @@
 title: "Юбка-олівець Пенелопа"
 ---
 
-<PatternDocs pattern='penelope' />
+
+
+<DesignInfo design='penelope' docs />
+

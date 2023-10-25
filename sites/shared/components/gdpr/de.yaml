@@ -1,38 +1,30 @@
 clickHere: Klicke hier, um deine Zustimmung zu geben
-createLimitedAccount: Konto mit eingeschränkter Zustimmung erstellen
 createAccount: Konto erstellen
 compliant: "FreeSewing respektiert deine Privatsphäre und deine Rechte. Wir halten uns an das strengste Datenschutz- und Sicherheitsgesetz der Welt: die General Data Protection Regulation (GDPR) der Europäischen Union (EU)."
 consent: Einwilligungen
-consentForSetData: Zustimmung zu Messdaten
-consentForProfileData: Einwilligung für Profildaten
+consentForAccountData: Consent for account data
 consentGiven: Einwilligung erteilt
 consentNotGiven: Einwilligung nicht erteilt
 consentWhyAnswer: Nach der DSGVO erfordert die Verarbeitung deiner personenbezogenen Daten eine detaillierte Zustimmung - mit anderen Worten, wir brauchen deine Erlaubnis für die verschiedenen Arten, wie wir deine Daten verarbeiten.
 createMyAccount: Meinen Account erstellen
 furtherReading: Weiterführende Informationen
 hideDetails: Details ausblenden
-noConsentNoAccount: Ohne diese Einwilligung können wir deinen Account nicht erstellen
-noConsentNoPatterns: Ohne diese Zustimmung kannst du keine maßgeschneiderten Muster erstellen
+noConsentNoAccount: This consent is required for a FreeSewing account.
+noConsentNoAccountCreation: Ohne diese Einwilligung können wir deinen Account nicht erstellen.
 noIDoNot: 'Nein, mache ich nicht'
 openDataInfo: Diese Daten werden verwendet, um die menschliche Form in all ihren Formen zu studieren und zu verstehen, sodass wir bessere Schnittmuster und besser passende Kleidungsstücke erhalten. Auch wenn diese Daten anonymisiert sind, hast du das Recht, dem zu widersprechen.
 openDataQuestion: Teile anonymisierte Maße als freie Daten (open data)
-setQuestion: Gibst du deine Zustimmung zur Verarbeitung deiner Messdaten?
-setWarning: Wenn du diese Zustimmung widerrufst, werden alle deine Messdaten gesperrt und alle Funktionen, die davon abhängen, deaktiviert.
-setWhatAnswer: Stelle für jede Messung die <b>Messungen</b>ein.
-setWhatAnswerOptional: 'Optional: Ein <b>Bild</b> und der <b>Name</b> oder <b>Notizen</b> , die du zu einem Messdatensatz hinzufügst.'
-setWhatQuestion: Was sind Messdaten?
-setWhyAnswer: 'Zum Erstellen von <b>maßgeschneiderten Schnittmustern</b> benötigen wir <b>Körpermaße</b>.'
 privacyMatters: Datenschutz ist wichtig
 privacyNotice: FreeSewing Datenschutzhinweis
 processing: In Bearbeitung
-profileQuestion: Gibst du deine Einwilligung zur Verarbeitung deiner Profildaten?
-profileShareAnswer: '<b>Nein</b>, niemals.'
-profileTimingAnswer: '<b>12 Monate</b> nach deinem letzten Login oder bis du <b>deinen Account entfernst</b> oder bis du diese Einwilligung <b>widerrufst</b>.'
-profileWarning: Durch den Widerruf dieser Einwilligung werden alle deine Daten entfernt. Es hat den gleichen Effekt wie das Entfernen deines Accounts.
-profileWhatAnswerOptional: 'Optional: ein <b>Profilbild</b>, eine <b>Beschreibung über dich</b>, und <b>Accounts bei sozialen Medien</b>'
-profileWhatAnswer: 'Deine <b>E-Mail-Adresse</b>, <b>Benutzername</b> und <b>Passwort</b>.'
-profileWhatQuestion: Was sind Profildaten?
-profileWhyAnswer: 'Um dich <b>zu authentifizieren</b>, dich zu <b>kontaktieren</b> wenn nötig, und um eine <b>Community</b> aufzubauen.'
+accountQuestion: Gibst du deine Einwilligung zur Verarbeitung deiner Modelldaten?
+accountShareAnswer: '<b>Nein</b>, niemals.'
+accountTimingAnswer: '<b>12 Monate</b> nach deinem letzten Login oder bis du <b>deinen Account entfernst</b> oder bis du diese Einwilligung <b>widerrufst</b>.'
+accountWarning: Durch den Widerruf dieser Einwilligung werden alle deine Daten entfernt. Es hat den gleichen Effekt wie das Entfernen deines Accounts.
+accountWhatAnswerOptional: 'Optional: A <b>picture</b>, <b>bio</b>, or <b>GitHub username</b>'
+accountWhatAnswer: 'Your <b>email address</b>, <b>username</b>, and <b>password</b>, and any <b>body measurements</b> you add to your account.'
+accountWhatQuestion: What is account data?
+accountWhyAnswer: 'To <b>authenticate</b> you, <b>contact</b> you when needed, and generate <b>bespoke</b> sewing patterns.'
 readMore: Weitere Informationen findest du in unserer Datenschutzerklärung.
 readRights: Lies mehr über deine Rechte für weitere Informationen.
 revokeConsent: Einwilligung widerrufen

@@ -2,7 +2,6 @@
 maker: "Jasmine"
 caption: "Holding out the arm of this drop-shoulder Sven lets you really get a feel for the effect of the modification"
 date: "2023-01-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/eb6eb402ffce2e41a4bf6a7f1b110e01ed98666f-1956x2608.jpg"
 intro: "So FreeSewing user Jasmine created this awesome drop-shoulder Sven with a little sleeve cap pleat, and it's incredible. But it gets better, because she created a write-up on how to do the whole thing. Check out the finished product here, but scroll down if you want the whole how-to!"
 title: "Drop Shoulder Sven"
 designs: ["sven"]

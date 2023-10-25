@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dieser Beitrag beschreibt, was in Version 2.2 von FreeSewing neu ist"
 date: "2020-02-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/356c127b8b37937b9537790d71a949c236027513-1920x1280.jpg"
 intro: "Ein Blick auf die Neuerungen in FreeSewing 2.2, darunter Breanna, unser Grundschnittblock für Damenoberbekleidung"
 title: "Ein Blick auf die Neuerungen in FreeSewing 2.2, darunter Breanna, unser Grundschnittblock für Damenoberbekleidung"
 ---
@@ -17,8 +16,6 @@ Schauen wir uns an, was das im Einzelnen bedeutet:
 
 ## Neues Schnittmuster: Breanna ist ein Grundschnittblock für Damenoberbekleidung
 
-<Linedrawing pattern="breanna" />
-
 Schauen Sie sich [Breanna](/designs/breanna/), unser Grundschnittblock für Damenoberbekleidung an.
 
 Ein Grundschnittblock ist vielleicht nicht das aufregendste Schnittmuster, das es gibt, aber er spielt eine wichtige Rolle, da er die Grundform ist, auf der andere Schnittmuster aufgebaut sind.
@@ -27,7 +24,7 @@ Wir haben zum Beispiel einen ähnlichen Block für Herrenbekleidung namens [Bria
 
 Mit anderen Worten: Breanna ist für uns ein wichtiger Baustein, um unsere Damenkollektion zu erweitern. Das heißt aber nicht, dass es nicht auch für dich eine gute Nachricht ist. Wenn du schon eine Weile für nähst, stehen die Chancen gut, dass das Entwerfen eines eigenen Blocks/Slopers immer auf deiner To-Do-Liste steht. Dann gibt es gute Neuigkeiten, denn hier ist dein Block fertig zum Mitnehmen.
 
-Oh, und natürlich hat es all den Schnickschnack, den du von uns erwarten kannst. Schau dir [an, die Musteroptionen](/docs/patterns/breanna/options/) und Ich denke, du wirst positiv beeindruckt sein. Zumindest kann dieser Block 1 oder 2 Brustabnäher an 15 verschiedenen Stellen unterbringen, so dass du 120 einzigartige Möglichkeiten hast, deine Brustabnäher zu platzieren.
+Oh, und natürlich hat es all den Schnickschnack, den du von uns erwarten kannst. Schau dir [an, die Musteroptionen](/docs/designs/breanna/options/) und Ich denke, du wirst positiv beeindruckt sein. Zumindest kann dieser Block 1 oder 2 Brustabnäher an 15 verschiedenen Stellen unterbringen, so dass du 120 einzigartige Möglichkeiten hast, deine Brustabnäher zu platzieren.
 
 Die Entwicklung von Breanna hat eine Weile gedauert und wir würden uns freuen, wenn du uns dein Feedback gibst. Aus einem solchen Block einen Musselin zu machen, ist wirklich nicht viel Arbeit. Wenn du also ein bisschen Zeit hast und uns wissen lässt, wie es gelaufen ist, , wäre das toll.
 
@@ -42,7 +39,7 @@ Wir haben uns für den High-Point Shoulder, den sogenannten HPS-Punkt, als Grund
 
 ### Wir haben die Messung "Mitte Rücken zum Nacken" eingestellt
 
-Wie bereits erwähnt, verwenden wir die Messungen vom HPS-Punkt jetzt für die vertikalen Rumpfmessungen . Aus diesem Grund haben wir die alte *Rückenmitte Nacken bis Taille* Messung eingestellt.
+Wie bereits erwähnt, verwenden wir die Messungen vom HPS-Punkt jetzt für die vertikalen Rumpfmessungen . Aus diesem Grund haben wir die alte *Rückenmitte Nacken bis Taille* Messung eingestellt. Aus diesem Grund haben wir die alte *Rückenmitte Nacken bis Taille* Messung eingestellt.
 
 Da dieses Maß nun wegfällt, musst du für bestimmte Muster eventuell ein weiteres Maß hinzufügen.
 
@@ -75,7 +72,7 @@ Offensichtlich sind Maßanfertigungen *unser Ding*, und das werden wir auch nich
 
 ### Was sind eigentlich Standardgrößen?
 
-Was ist das Schwierigste an der Unterstützung von Standardgrößen? Finde heraus, welche Standardgrößen haben soll. Wir haben es ausprobiert und wenn du neugierig bist, kannst du [ unsere Größentabelle hier](/docs/various/sizes/)nachlesen.
+Was ist das Schwierigste an der Unterstützung von Standardgrößen? Finde heraus, welche Standardgrößen haben soll. Wir haben es ausprobiert und wenn du neugierig bist, kannst du [ unsere Größentabelle hier](/sizes/)nachlesen.
 
 Für Herrenbekleidung reicht unsere Größenskala von 32 bis 50. Sie basiert auf einer Basisgröße von 38, die wir dann auf nach oben und unten abgestuft haben.  
 Bei Damenbekleidung reicht die Größenskala von 28 bis 48 und basiert auf einer Basisgröße von 34, die wir dann nach oben und unten abgestuft haben.

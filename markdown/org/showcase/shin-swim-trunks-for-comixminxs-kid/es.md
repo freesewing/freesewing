@@ -2,7 +2,6 @@
 maker: "comixminx"
 caption: "Bañador de lycra"
 date: "2022-04-04"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fe9742719123fca0d036202d2e3c5c2654ca2b71-3024x4032.jpg"
 intro: "Estos shorts de baño Shin fueron un trabajo de amor: comixminx hizo varios pares de prueba en tejido elástico para perfeccionar el ajuste. Compartió muchos consejos en Discord a lo largo del camino. Un par de claves:"
 title: "Bañador Shin para el hijo de comixminx"
 designs:

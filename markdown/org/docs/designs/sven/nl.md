@@ -2,4 +2,7 @@
 title: "Sven sweater"
 ---
 
-<PatternDocs pattern='sven' />
+
+
+<DesignInfo design='sven' docs />
+

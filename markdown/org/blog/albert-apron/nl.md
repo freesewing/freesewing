@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Houd je zelfgemaakte kleren schoon tijdens het koken met het Albert schort"
 date: "2020-10-17"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/192f0da76422475ea9a36b7988d70f69bb89bbaf-1920x1282.jpg"
 intro: "Wat zou je doen als je dochter een schort nodig had voor school?"
 title: "We ontgroenen nu een schort: FreeSewing 2.10 brengt je Albert, een bescheiden schortpatroon"
 ---

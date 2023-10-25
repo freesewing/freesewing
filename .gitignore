@@ -1,4 +1,6 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
+dump
+production.sqlite
 
 # .env
 .env
@@ -28,17 +30,14 @@ sites/sanity/.sanity
 
 # Sites prebuild artifacts
 sites/*/public/locales/*/*.json
+!sites/sde/public/locales/*/*.json
 sites/*/public/feeds/*
 packages/new-design/shared/public/locales/*/*.json
 packages/new-design/shared/.gitignore
 packages/new-design/lib/banner.mjs
-# Translation files for NextJS
-# Remove this after we move to Node 16 and deprecate pattern-info
-#/home/joost/git/freesewing/packages/i18n/src/next/*/*.mjs
 
 # Lab auto-generated content
 sites/lab/lib
-sites/lab/pages
 sites/lab/public/android-chrome-192x192.png
 sites/lab/public/android-chrome-384x384.png
 sites/lab/public/apple-touch-icon.png
@@ -49,8 +48,18 @@ sites/lab/public/favicon.ico
 sites/lab/public/mstile-150x150.png
 sites/lab/public/safari-pinned-tab.svg
 sites/lab/public/site.webmanifest
-# but not the indexes
-!sites/lab/pages/*/index.js
+
+# sde auto-generated content
+sites/sde/public/android-chrome-192x192.png
+sites/sde/public/android-chrome-384x384.png
+sites/sde/public/apple-touch-icon.png
+sites/sde/public/browserconfig.xml
+sites/sde/public/favicon-16x16.png
+sites/sde/public/favicon-32x32.png
+sites/sde/public/favicon.ico
+sites/sde/public/mstile-150x150.png
+sites/sde/public/safari-pinned-tab.svg
+sites/sde/public/site.webmanifest
 
 # dev auto-generated content
 sites/dev/public/android-chrome-192x192.png
@@ -97,7 +106,6 @@ sites/*/out
 sites/*/public/mdx
 sites/*/prebuild
 !sites/shared/prebuild
-sites/shared/prebuild/data
 sites/dev/public/og
 
 # misc

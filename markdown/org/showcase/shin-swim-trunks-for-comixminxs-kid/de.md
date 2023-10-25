@@ -2,7 +2,6 @@
 maker: "comixminx"
 caption: "Lycra Schwimmshorts"
 date: "04.04.2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fe9742719123fca0d036202d2e3c5c2654ca2b71-3024x4032.jpg"
 intro: "Diese Shin Badeshorts waren eine Arbeit der Liebe - comixminx hat mehrere Testpaare aus dehnbarem Stoff angefertigt, um die Passform zu verbessern. Auf dem Weg dorthin hat sie viele Tipps auf Discord geteilt. Ein paar wichtige davon:"
 title: "Shin-Badehose für das Kind von comixminx"
 designs:

@@ -2,7 +2,6 @@
 maker: "costurerodentista"
 caption: "Un Carlton impresionante en tejido de lana"
 date: "2022-08-02"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8fbc75fcfe11bd0f32c5f28d82f58f89986e03d3-742x743.jpg"
 intro: "Este abrigo Carlton estelar fue confeccionado por sewingdentist, que dijo:"
 title: "Abrigo Carlton por sewingdentist"
 designs:

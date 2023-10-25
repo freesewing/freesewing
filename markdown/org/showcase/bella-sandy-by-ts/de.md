@@ -2,7 +2,6 @@
 maker: "TangerineShark"
 caption: "Ein tiefblaues, tailliertes Kleid mit aufgestickten Sternbildern"
 date: "25.09.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/da025b955c455a3d9dbef404a49881ea30a88a8f-1986x2648.jpg"
 intro: "Dieses Kleid ist eine Mischung aus dem Bella Body Block und dem Sandy Circle Rock. Ich habe die Kombination Sanderella genannt."
 title: "Ein himmlisches Sanderella"
 designs:

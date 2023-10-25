@@ -2,7 +2,6 @@
 maker: "starf"
 caption: "Walburga la Wappenrock (tabardo/sabana en alemán) es el diseño de fantasía propio de Starf inspirado en la Europa medieval (y en la Leyenda de Zelda)"
 date: "2021-10-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8217f094b2ea551ed3bfcf72b79905506bf4f883-3888x5184.jpg"
 intro: "Walburga la Wappenrock"
 title: "Walburga la Wappenrock"
 designs:

@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Photo par <a href='https://pixabay.com/en/users/herbert2512-2929941/' target='_BLANK' rel='nofollow'>Herbert</a>"
 date: "2017-06-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8ccbb2d5b50eb0917c6bd2befb2b098b6d667ba9-1920x1280.jpg"
 intro: "Le world wide web érode de plus en plus ta vie privée. Facebook, Google et une avalanche de réseaux publicitaires surveillent tous les onglets de ton navigateur. Ils te suivent sur le Web, gardent un œil sur les sites que tu visites, afin de recueillir plus d'informations sur toi et de les vendre à des annonceurs."
 title: "Les choix que j'ai faits pour protéger ta vie privée. Ou pourquoi vous n'aurez pas de cookies."
 ---

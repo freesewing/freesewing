@@ -2,7 +2,6 @@
 maker: "RoodBlaqueGouden"
 caption: "RedBlaqueGolden's tweede versie van Simon met kant"
 date: "2021-09-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/987fdefa57c5259ca090b0b120a5e5218eb8ef67-1614x1526.jpg"
 intro: "Waar te beginnen met deze fantastische outfit? Een FreeSewing gebruiker zei het het beste:"
 title: "RedBlaqueGolden's vintage high fashion outfit met Simon en Sandy"
 designs:

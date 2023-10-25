@@ -7,15 +7,41 @@ function draftCharlieBeltLoops({
   paths,
   Path,
   options,
+  expand,
+  units,
   complete,
-  paperless,
   macro,
-  sa,
   part,
 }) {
-  let count = options.beltLoops
-  let length = store.get('waistbandWidth') * 2.5 * count
-  let width = store.get('waistbandWidth') / 4
+  const count = options.beltLoops
+  const length = store.get('waistbandWidth') * 2.5 * count
+  const width = store.get('waistbandWidth') / 4
+
+  if (expand) {
+    store.flag.preset('expandIsOn')
+  } else {
+    // Expand is off, do not draw the part but flag this to the user
+    store.flag.note({
+      msg: `charlie:cutBeltloops`,
+      notes: ['flag:saUnused', 'flag:partHiddenByExpand'],
+      replace: {
+        count: 7,
+        width: units(width * 4),
+        length: units(length / count),
+      },
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
 
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(width * 2.8, 0)
@@ -37,7 +63,7 @@ function draftCharlieBeltLoops({
     .line(points.topRight)
     .line(points.topLeft)
     .close()
-    .attr('class', 'fabric')
+    .addClass('fabric')
 
   if (complete) {
     paths.fold = new Path()
@@ -46,39 +72,47 @@ function draftCharlieBeltLoops({
       .move(points.bottomFold2)
       .line(points.topFold2)
       .attr('class', 'fabric help')
-    macro('title', {
-      at: new Point(width / 2, length / 2),
-      nr: 12,
-      title: 'beltLoops',
-      rotation: 90,
-      scale: 0.7,
-    })
-    points.grainlineTop = new Point(points.topRight.x / 2, 0)
-    points.grainlineBottom = new Point(points.topRight.x / 2, length)
-    macro('grainline', {
-      from: points.grainlineTop,
-      to: points.grainlineBottom,
-    })
     for (let i = 1; i < count; i++) {
       paths[`cut${i}`] = new Path()
         .move(points[`cut${i}a`])
         .line(points[`cut${i}b`])
         .attr('class', 'fabric dashed')
     }
-
-    if (paperless) {
-      macro('hd', {
-        from: points.bottomLeft,
-        to: points.bottomRight,
-        y: points.bottomLeft.y + sa + 15,
-      })
-      macro('vd', {
-        from: points.bottomRight,
-        to: points.topRight,
-        x: points.bottomRight.x + sa + 15,
-      })
-    }
   }
+
+  /*
+   * Annotations
+   */
+  // CutList
+  store.cutlist.setCut({ cut: 1, from: 'fabric' })
+
+  macro('title', {
+    at: new Point(width / 2, length / 2),
+    nr: 12,
+    title: 'beltLoops',
+    rotation: 90,
+    scale: 0.7,
+  })
+  points.grainlineTop = new Point(points.topRight.x / 2, 0)
+  points.grainlineBottom = new Point(points.topRight.x / 2, length)
+  macro('grainline', {
+    from: points.grainlineTop,
+    to: points.grainlineBottom,
+  })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wFull',
+    from: points.bottomLeft,
+    to: points.bottomRight,
+    y: points.bottomLeft.y + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottomRight,
+    to: points.topRight,
+    x: points.bottomRight.x + 15,
+  })
 
   return part
 }

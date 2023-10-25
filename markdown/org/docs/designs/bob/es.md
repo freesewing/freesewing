@@ -2,4 +2,7 @@
 title: "Bob el Babero"
 ---
 
-<PatternDocs pattern='bob' />
+
+
+<DesignInfo design='bob' docs />
+

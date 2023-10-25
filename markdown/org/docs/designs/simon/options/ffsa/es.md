@@ -8,6 +8,6 @@ La sisa y las costuras laterales de la camisa son costuras planas, que requieren
 
 Esta opción controla la cantidad de margen de costura plana como factor del margen de costura normal.
 
-## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_ffsa_sample.svg "Efecto de esta opción en el patrón")
+
+

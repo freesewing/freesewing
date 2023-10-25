@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Wir bauen ein Fundament aus treuen Unterstützern, um eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Schnittmuster und unsere Community zu sichern."
 date: "2017-12-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/84e39d762790744f10fe17bcb971f99e98550299-2000x1334.jpg"
 intro: "Aufruf an alle Gönner; Schließen Sie sich unserem Fundament treuer Unterstützer an."
 title: "Aufruf an alle Gönner; Schließen Sie sich unserem Fundament treuer Unterstützer an."
 ---

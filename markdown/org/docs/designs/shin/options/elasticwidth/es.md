@@ -8,6 +8,6 @@ title: "Ancho elástico"
 > 
 > Sin embargo, el ancho de su elástico es también un factor a tener en cuenta, por lo que es ahí donde entra esta opción.
 
-## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](shin_elasticwidth_sample.svg "Efecto de esta opción en el patrón")
+
+

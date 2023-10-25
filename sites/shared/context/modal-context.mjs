@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { createContext, useState } from 'react'
 
 export const ModalContext = createContext(null)

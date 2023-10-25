@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "A fan-favorite Sven sweatshirt featuring an otter French terry"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b851b4ceda3714fed1cf4b6eb3d624724803c3ba-864x1152.jpg"
 intro: "An otter-ly delightful Sven sweatshirt"
 title: "An otter-ly delightful Sven sweatshirt"
 designs: ["sven"]

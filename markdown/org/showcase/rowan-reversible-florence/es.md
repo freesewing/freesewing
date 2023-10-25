@@ -2,7 +2,6 @@
 maker: "Rowan"
 caption: "Una cara de la máscara facial reversible Florence de Rowan"
 date: "2023-01-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/aaedd307de0bc101180d2b54e5d2ccb5d5657519-1161x2064.jpg"
 intro: "Impecable trabajo de Rowan en esta Máscara Facial Florence, pero espera... Además, ¡es reversible!"
 title: "Florencia Reversible de Rowan"
 designs:

@@ -2,4 +2,7 @@
 title: "Brian, patrón base de torso sin pechos"
 ---
 
-<PatternDocs pattern='brian' />
+
+
+<DesignInfo design='brian' docs />
+

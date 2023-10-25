@@ -2,7 +2,6 @@
 maker: "Ramoth"
 caption: "Simon à manches courtes de Ramoth, dont la plupart des formes ont été déplacées vers les pinces du dos."
 date: "30-09-2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fdf5a6c5f8ef988575d9a57c1fe5a6b2734e566f-1836x3264.jpg"
 intro: "La chemise Simon à manches courtes de Ramoth"
 title: "La chemise Simon à manches courtes de Ramoth"
 designs:

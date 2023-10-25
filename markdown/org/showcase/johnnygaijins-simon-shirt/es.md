@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Una primera versión estelar de Simon"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d7f4deae2968a63adf7e2f440ac4808a7b804d84-3024x4032.jpg"
 intro: "Johnnygaijin ya ha demostrado ser bastante valiente: ¡éste fue su primer proyecto de costura! Ha quedado muy bien."
 title: "El primer proyecto de costura real de Johnnygaijin, la camisa Simon"
 designs:

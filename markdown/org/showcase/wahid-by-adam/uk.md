@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Адам виглядає ефектно у своєму вахідському вбранні"
 date: "2020-07-01"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ab68d41354448f2149dcdce2cbf3b0222f58012d-2160x1080.jpg"
 intro: "Вахід від Адама"
 title: "Вахід від Адама"
 designs:

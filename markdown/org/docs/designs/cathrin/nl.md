@@ -2,4 +2,7 @@
 title: "Cathrin korset"
 ---
 
-<PatternDocs pattern='cathrin' />
+
+
+<DesignInfo design='cathrin' docs />
+

@@ -2,7 +2,6 @@
 maker: "Infernal"
 caption: "Sudadera Hugo con capucha y estampado de volantes"
 date: "2021-06-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a534aefe906da98d816afa76266d97a318821305-598x803.jpg"
 intro: "Hellgy ha conquistado nuestros corazones con sus creaciones de sudaderas Hugo con estampados divertidos y alegres."
 title: "Sudadera Hugo de Hellgy"
 designs:

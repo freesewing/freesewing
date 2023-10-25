@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "A dress based on the Bella bodice block"
 date: "2021-06-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f2325ac8325f54f48637fa7d24e0edebfd5ab3ee-600x800.jpg"
 intro: "The talented Bumblebunch shared this dress based on the Bella bodice block! Who would have guessed it was made from an old bed sheet?!"
 title: "Bumblebunch's dress based on the Bella block"
 designs: ["bella"]

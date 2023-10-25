@@ -2,11 +2,11 @@ import { frontpoints } from './frontpoints.mjs'
 import { front } from './front.mjs'
 
 function rotateDistanceForP3(part, point, distance, center) {
-  let { options, Path, points, paths, store, log } = part.shorthand()
+  const { options, Path, points, paths, store, log } = part.shorthand()
 
-  let length = store.get('insideSeam')
+  const length = store.get('insideSeam')
 
-  let dCenter = point.dist(center)
+  const dCenter = point.dist(center)
   let angle = Math.atan(distance / dCenter) * (180 / Math.PI)
   let aOffset = (distance / dCenter) * -3 //angle *-.05;
 
@@ -47,15 +47,6 @@ function rotateDistanceForP3(part, point, distance, center) {
       angle += aOffset
     }
 
-    // console.log( 'pLenght: ' +pLength );
-    // console.log( 'dLenght: ' +dLength );
-    // console.log( 'distAdjust: ' +distAdjust );
-    // console.log( 'angle: ' +angle );
-    // console.log( 'pDistance: ' +pDistance );
-    // console.log( 'dOffset: ' +dOffset );
-    // console.log( 'aOffset: ' +aOffset );
-    // console.log( 'iteration: ' +iteration );
-
     iteration++
   } while ((dOffset > 0.1 || dOffset < -0.1 || dLength < -0.1 || dLength > 0.1) && iteration < 100)
 
@@ -65,14 +56,14 @@ function rotateDistanceForP3(part, point, distance, center) {
 }
 
 function rotateDistanceForP4(part, point, distance, center, origin) {
-  let { options, Path, points, paths, store, log } = part.shorthand()
+  const { options, Path, points, paths, store, log } = part.shorthand()
 
   let aCPu,
     aCPj,
     a4to11 = null
 
-  let length = store.get('sideSeam')
-  let halfInch = store.get('halfInch')
+  const length = store.get('sideSeam')
+  const halfInch = store.get('halfInch')
   let pLength,
     dLength,
     pDistance,
@@ -80,7 +71,7 @@ function rotateDistanceForP4(part, point, distance, center, origin) {
 
   let pivotAngle, originalAngle, angleChange
 
-  let dCenter = point.dist(center)
+  const dCenter = point.dist(center)
 
   let direction = 1
 
@@ -105,7 +96,6 @@ function rotateDistanceForP4(part, point, distance, center, origin) {
 
     points.p6 = points.pJ.shift(points.pJ.angle(points.pT) - angleChange, points.pJ.dist(points.pT))
     points.p7 = points.pJ.shift(points.pJ.angle(points.pA) - angleChange, points.pJ.dist(points.pA))
-    //if( options.fullness > 0.30 ) {
     points.p6 = points.p6.shift(
       points.pJ.angle(points.pT) - angleChange - 90,
       halfInch * options.fullness * 2
@@ -114,20 +104,17 @@ function rotateDistanceForP4(part, point, distance, center, origin) {
       points.pJ.angle(points.pA) - angleChange - 90,
       halfInch * options.fullness * 2
     )
-    //}
-    // console.log( points.p7);
 
     aCPu = points.p7.dist(points.p4) * options.pctAtoO
     aCPj = points.p7.dist(points.p11) * options.pctAtoC
 
     a4to11 = points.p4.angle(points.p11)
 
-    // There's a tweak in there that moves the control point in when the fullness settingh increases.
+    // There's a tweak in there that moves the control point in when the fullness setting increases.
     points.p7cp4 = points.p7.shift(a4to11 + 180 + 5 * options.fullness, aCPu)
     points.p7cp11 = points.p7.shift(a4to11, aCPj)
 
     points.p4cp7 = points.p4.shiftFractionTowards(points.p7cp4, options.pctUtoA)
-    // points.p4cp7 = points.p4.shift( points.p4.angle( points.p2 ) +90, points.p4.dist( points.p7cp4) *options.pctUtoA *2)
     points.p11cp7 = points.p11
       .shiftFractionTowards(points.p7cp11, options.pctJtoA)
       .shift(0, points.p11.dist(points.pH) * options.fullness)
@@ -158,14 +145,6 @@ function rotateDistanceForP4(part, point, distance, center, origin) {
       // We adjust the waist length by altering the angle of rotation
       angle += aOffset * direction
     }
-    // console.log( 'pLenght: ' +pLength );
-    // console.log( 'dLenght: ' +dLength );
-    // console.log( 'distAdjust: ' +distAdjust );
-    // console.log( 'angle: ' +angle );
-    // console.log( 'pDistance: ' +pDistance );
-    // console.log( 'dOffset: ' +dOffset );
-    // console.log( 'aOffset: ' +aOffset );
-    // console.log( 'iteration: ' +iteration );
 
     iteration++
   } while ((dOffset > 0.1 || dOffset < -0.1 || dLength > 0.1 || dLength < -0.1) && iteration < 100)
@@ -175,87 +154,77 @@ function rotateDistanceForP4(part, point, distance, center, origin) {
   }
 }
 
-function draftCorneliusBack({
-  options,
-  Path,
-  points,
-  paths,
-  Snippet,
-  snippets,
-  complete,
-  sa,
-  store,
-  paperless,
-  macro,
-  part,
-}) {
-  let tempP = null
+export const back = {
+  name: 'cornelius.back',
+  from: frontpoints,
+  after: front,
+  draft: ({ options, Path, points, paths, Snippet, snippets, sa, store, macro, part }) => {
+    let tempP = null
 
-  let waist = store.get('waist')
-  let seat = store.get('seat')
-  let halfInch = store.get('halfInch')
-  let ventLength = store.get('ventLength')
-  let traditional = options.cuffStyle == 'traditional'
+    const waist = store.get('waist')
+    const seat = store.get('seat')
+    const halfInch = store.get('halfInch')
+    const ventLength = store.get('ventLength')
+    const traditional = options.cuffStyle == 'traditional'
 
-  points.p2 = points.pD.shift(90, seat / 12 + halfInch)
-  points.p10 = points.pK.shiftTowards(points.pH, -halfInch)
-  rotateDistanceForP3(part, points.pR.clone(), halfInch * 2, points.pK)
+    points.p2 = points.pD.shift(90, seat / 12 + halfInch)
+    points.p10 = points.pK.shiftTowards(points.pH, -halfInch)
+    rotateDistanceForP3(part, points.pR.clone(), halfInch * 2, points.pK)
 
-  points.p11 = points.pJ.shiftTowards(points.pH, -halfInch)
+    points.p11 = points.pJ.shiftTowards(points.pH, -halfInch)
 
-  // console.log( 'Pu -> Pj: ' + points.pU.angle( points.pJ ));
-  rotateDistanceForP4(part, points.pU, -1 * (waist / 2 + halfInch), points.p11, points.p2)
+    // console.log( 'Pu -> Pj: ' + points.pU.angle( points.pJ ));
+    rotateDistanceForP4(part, points.pU, -1 * (waist / 2 + halfInch), points.p11, points.p2)
 
-  points.p2a = points.p2.shiftTowards(points.p4, halfInch)
+    points.p2a = points.p2.shiftTowards(points.p4, halfInch)
 
-  tempP = points.p6.shiftTowards(points.pT, 1000)
-  // let pathFto2a = new Path().move(points.pX).line(points.p2a);
-  let pathFto2a = new Path().move(points.pF).line(points.p2a)
-  // let pathFto2a = new Path().move(points.pV).line(points.p2a);
-  let path6ThroughT = new Path().move(points.p6).line(tempP)
-  // points.p5 = path6ThroughT.intersects(pathXto2a)[0];
-  points.p5 = path6ThroughT.intersects(pathFto2a)[0]
+    tempP = points.p6.shiftTowards(points.pT, 1000)
+    // let pathFto2a = new Path().move(points.pX).line(points.p2a);
+    const pathFto2a = new Path().move(points.pF).line(points.p2a)
+    // let pathFto2a = new Path().move(points.pV).line(points.p2a);
+    const path6ThroughT = new Path().move(points.p6).line(tempP)
+    // points.p5 = path6ThroughT.intersects(pathXto2a)[0];
+    points.p5 = path6ThroughT.intersects(pathFto2a)[0]
 
-  // points.p5cp3 = points.p5.shiftFractionTowards( points.pX, options.pctZtoR *2)
-  points.p5cp3 = points.p5.shiftFractionTowards(points.pF, options.pctZtoR * 2)
-  // points.p5cp3 = points.p5.shiftFractionTowards( points.pV, options.pctZtoR *2)
-  points.p3cp5 = points.p3
-    .shiftFractionTowards(points.pF, options.pctRtoZin)
-    .shiftFractionTowards(points.p5, options.pctRtoZup / 4)
+    // points.p5cp3 = points.p5.shiftFractionTowards( points.pX, options.pctZtoR *2)
+    points.p5cp3 = points.p5.shiftFractionTowards(points.pF, options.pctZtoR * 2)
+    // points.p5cp3 = points.p5.shiftFractionTowards( points.pV, options.pctZtoR *2)
+    points.p3cp5 = points.p3
+      .shiftFractionTowards(points.pF, options.pctRtoZin)
+      .shiftFractionTowards(points.p5, options.pctRtoZup / 4)
 
-  points.p2cp5 = points.p2.shiftFractionTowards(points.pD, options.pctZtoR)
-  points.p5cp2 = points.p5.shiftFractionTowards(points.p2a, options.pctZtoR)
+    points.p2cp5 = points.p2.shiftFractionTowards(points.pD, options.pctZtoR)
+    points.p5cp2 = points.p5.shiftFractionTowards(points.p2a, options.pctZtoR)
 
-  paths.crotchSeam = new Path()
-    .move(points.p2)
-    .curve(points.p2cp5, points.p5cp2, points.p5)
-    .curve(points.p5cp3, points.p3cp5, points.p3)
+    paths.crotchSeam = new Path()
+      .move(points.p2)
+      .curve(points.p2cp5, points.p5cp2, points.p5)
+      .curve(points.p5cp3, points.p3cp5, points.p3)
 
-  if (traditional) {
-    tempP = points.pH.shift(90, halfInch * 2)
-  } else {
-    tempP = points.pH.shift(90, halfInch * 1)
-  }
-  points.p10cpH = points.p10.shiftFractionTowards(tempP, options.pctKtoH)
-  points.p11cpH = points.p11.shiftFractionTowards(tempP, options.pctKtoH)
+    if (traditional) {
+      tempP = points.pH.shift(90, halfInch * 2)
+    } else {
+      tempP = points.pH.shift(90, halfInch * 1)
+    }
+    points.p10cpH = points.p10.shiftFractionTowards(tempP, options.pctKtoH)
+    points.p11cpH = points.p11.shiftFractionTowards(tempP, options.pctKtoH)
 
-  paths.legSeam = new Path().move(points.p10).curve(points.p10cpH, points.p11cpH, points.p11)
-  store.set('backLegSeam', paths.legSeam.length())
+    paths.legSeam = new Path().move(points.p10).curve(points.p10cpH, points.p11cpH, points.p11)
+    store.set('backLegSeam', paths.legSeam.length())
 
-  paths.waistSeam = new Path().move(points.p4).line(points.p2)
-  store.set('backWaistLength', paths.waistSeam.length())
+    paths.waistSeam = new Path().move(points.p4).line(points.p2)
+    store.set('backWaistLength', paths.waistSeam.length())
 
-  paths.seam = paths.waistSeam
-    .join(paths.crotchSeam)
-    .join(paths.insideSeam)
-    .join(paths.legSeam)
-    .join(paths.sideSeam)
-    .close()
-    .attr('class', 'fabric')
+    paths.seam = paths.waistSeam
+      .join(paths.crotchSeam)
+      .join(paths.insideSeam)
+      .join(paths.legSeam)
+      .join(paths.sideSeam)
+      .close()
+      .attr('class', 'fabric')
 
-  points.topOfVent = paths.sideSeam.shiftAlong(ventLength)
+    points.topOfVent = paths.sideSeam.shiftAlong(ventLength)
 
-  if (complete) {
     snippets.n1 = new Snippet('notch', points.p10)
     snippets.n2 = new Snippet('notch', points.p11)
     snippets.n3 = new Snippet('notch', points.topOfVent)
@@ -266,98 +235,103 @@ function draftCorneliusBack({
       .attr('data-text-class', 'center')
       .attr('class', 'fabric sa')
 
+    points.gridAnchor = points.pO.clone()
+
     points.logo = points.pE.clone()
     snippets.logo = new Snippet('logo', points.logo)
     points.title = points.logo.shift(270, 50)
     macro('title', {
-      nr: 77,
+      nr: 6,
       at: points.title,
       title: 'Back',
+      align: 'center',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
 
-    let angle = points.p11.angle(points.p4)
-    let dist = points.p11.dist(points.p4)
+    const angle = points.p11.angle(points.p4)
+    const dist = points.p11.dist(points.p4)
     macro('grainline', {
       from: points.pA.shift(angle, dist * 0.35),
       to: points.pA.shift(angle + 180, dist * 0.35),
     })
 
+    store.cutlist.addCut({ cut: 2, from: 'fabric' })
+
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
-  }
 
-  // Paperless?
-  if (paperless) {
-    macro('ld', {
-      from: points.topOfVent,
-      to: points.p11,
-    })
-    macro('ld', {
+    tempP = paths.sideSeam.intersectsY(points.p3.y)[0]
+    macro('hd', {
+      id: 1,
       from: points.p2,
       to: points.p4,
-      d: 15,
+      y: points.p2.y - sa - 25,
     })
-    tempP = paths.sideSeam.intersectsY(points.p3.y)[0]
+    macro('hd', {
+      id: 2,
+      from: points.p10,
+      to: points.p11,
+      y: points.p10.y + sa + 15,
+    })
+    macro('vd', {
+      id: 3,
+      from: points.p3,
+      to: points.p2,
+      x: points.p3.x - sa - 15,
+    })
+    macro('vd', {
+      id: 4,
+      from: points.p4,
+      to: points.p2,
+      x: points.p2.x - sa - 15,
+    })
+    macro('vd', {
+      id: 5,
+      from: points.p10,
+      to: points.p3,
+      x: points.p3.x - sa - 15,
+    })
     macro('ld', {
+      id: 6,
+      from: points.topOfVent,
+      to: points.p11,
+      d: sa + 15,
+    })
+    macro('ld', {
+      id: 7,
+      from: points.p2,
+      to: points.p4,
+      d: sa + 15,
+    })
+    macro('ld', {
+      id: 8,
       from: points.p5,
       to: tempP,
     })
     macro('ld', {
+      id: 9,
       from: points.p3,
       to: tempP,
     })
-    macro('hd', {
-      from: points.p2,
-      to: points.p4,
-      y: points.p2.y,
-    })
-    macro('hd', {
-      from: points.p10,
-      to: points.p11,
-      y: points.p10.y - 15,
-    })
-    macro('vd', {
-      from: points.p2,
-      to: points.p3,
-      x: points.p3.x,
-    })
-    macro('vd', {
-      from: points.p2,
-      to: points.p4,
-      x: points.p2.x,
-    })
-    macro('vd', {
-      from: points.p3,
-      to: points.p10,
-      x: points.p3.x,
+    macro('ld', {
+      id: 10,
+      from: points.p5,
+      to: points.p2,
+      d: +sa + 20,
     })
     macro('ld', {
-      from: points.p2,
-      to: points.p5,
-      d: -15,
-    })
-    macro('ld', {
+      id: 11,
       from: points.p4,
       to: points.p11,
       d: -15,
     })
     macro('ld', {
+      id: 12,
       from: tempP,
       to: points.p4,
-      d: 0,
+      d: -sa - 20,
     })
-  }
 
-  return part
-}
-
-export const back = {
-  name: 'cornelius.back',
-  from: frontpoints,
-  after: front,
-  draft: draftCorneliusBack,
+    return part
+  },
 }

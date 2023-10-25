@@ -1,6 +1,6 @@
 import { configs } from 'shared/designs/index.js'
 import { useTranslation } from 'next-i18next'
-import PageLink from 'shared/components/page-link.js'
+import PageLink from 'shared/components/link.js'
 
 const renderOptions = (groups, pattern, t) => {
   const list = []

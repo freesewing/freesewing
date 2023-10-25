@@ -2,4 +2,7 @@
 title: "Gilet Wahid"
 ---
 
-<PatternDocs pattern='wahid' />
+
+
+<DesignInfo design='wahid' docs />
+

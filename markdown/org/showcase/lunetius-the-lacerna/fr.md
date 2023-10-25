@@ -2,7 +2,6 @@
 maker: "étoile"
 caption: "Lunetius le lacerna est une cape"
 date: "18-10-2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/670d2e18d923f83d52b1eb64aaefdcf989f64e9e-2500x3333.jpg"
 intro: ""
 title: "Lunetius le lacerna"
 designs:

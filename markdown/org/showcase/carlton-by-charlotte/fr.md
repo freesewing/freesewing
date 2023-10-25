@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Un manteau Carlton très classe par Charlotte"
 date: "12-06-2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8954b27fb2e27a99aeff6b28baba29a342f3ccff-640x586.jpg"
 intro: "Nous adorons ce manteau Carlton très classe de Charlotte."
 title: "Carlton by Charlotte"
 designs:

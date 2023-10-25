@@ -2,7 +2,6 @@
 maker: "dentiste de la couture"
 caption: "Un Carlton très impressionnant en tissu de laine"
 date: "08-02-2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8fbc75fcfe11bd0f32c5f28d82f58f89986e03d3-742x743.jpg"
 intro: "Ce manteau stellaire Carlton a été réalisé par sewingdentist, qui a déclaré :"
 title: "Manteau Carlton par sewingdentist"
 designs:

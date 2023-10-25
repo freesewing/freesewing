@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Your new login background for the month of october"
 date: "2017-09-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c6418b621228730525d835acff53c4cd6895a865-2000x1250.jpg"
 intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
 title: "Monthly roundup - September 2017: Simon complications, email issues, and donations are up this year."
 ---

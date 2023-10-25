@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Стильне пальто Carlton від Charlotte"
 date: "2021-06-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8954b27fb2e27a99aeff6b28baba29a342f3ccff-640x586.jpg"
 intro: "Ми обожнюємо це стильне пальто Carlton від Charlotte."
 title: "Карлтон від Шарлотти"
 designs:

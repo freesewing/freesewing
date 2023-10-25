@@ -2,7 +2,6 @@
 maker: "ferdi"
 caption: "Ce Simon a été cousu un peu plus large pour être porté comme une surchemise"
 date: "2021-11-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ccc178893cc97708b480fb5bf298c7a6ec7abc76-1920x1280.jpg"
 intro: "Quelle version attrayante de la chemise Simon ! Le fabricant dit :"
 title: "Simon en surchemise par Ferdi"
 designs:

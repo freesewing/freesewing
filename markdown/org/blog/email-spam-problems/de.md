@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Würden Sie eine Spur schließen, weil ein Fahrer seine Musik zu laut spielte?"
 date: "2017-09-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/923cd5587c873d2662df4a804f75f8f32b5673ca-1920x1281.jpg"
 intro: "Danke für nichts Microsoft; E-Mail sollte nicht so schwierig sein"
 title: "Danke für nichts Microsoft; E-Mail sollte nicht so schwierig sein"
 ---

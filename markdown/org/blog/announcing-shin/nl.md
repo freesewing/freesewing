@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dit is hoe augmented reality eruitziet ... denk ik?"
 date: "2018-09-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b471275001689bd4819d6d95aabc8134788dc612-1694x1129.jpg"
 intro: "Een tijdje geleden stelde ik vast dat ik een nieuwe zwembroek nodig had. Dus heb ik een patroon geschetst en er eentje gemaakt:"
 title: "Verwelkom Shin, een zwembroekpatroon"
 ---
@@ -21,7 +20,7 @@ Dus na een rondje aanpassingen denk ik dat dit klaar is voor jullie. Roy heeft e
 
 Je hebt een aantal opties met Shin en die liggen heel dicht bij de beschikbare opties voor [Bruce](/designs/bruce).
 
-Alle [opties zijn gedocumenteerd](/docs/patterns/shin/options), net zoals de [afmetingen die je nodig hebt](/docs/patterns/shin/measurements), en ik heb ook [instructies voor Shin](/docs/patterns/shin) geschreven.
+Alle [opties zijn gedocumenteerd](/docs/designs/shin/options), net zoals de [afmetingen die je nodig hebt](/docs/designs/shin/measurements), en ik heb ook [instructies voor Shin](/docs/designs/shin/instructions) geschreven.
 
 Ik moet nog illustraties maken voor de instructies, maar het is echt niet moeilijk dus volgens mij kan je aan de slag zonder tekeningen. Eigenlijk kan je gewoon meteen aan de slag.
 

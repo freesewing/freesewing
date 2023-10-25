@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "Вийшло дуже добре для туалету"
 date: "2017-12-11"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f3126799846dc9ea9aecb423e7283bb715db93b4-3724x2785.jpg"
 intro: "Тест Florent, щоб побачити, чи працює шаблон для інших, від Wouter.vdub"
 title: "Тест Florent, щоб побачити, чи працює шаблон для інших, від Wouter.vdub"
 designs:

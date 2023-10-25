@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Мені здається, чи це серйозно перевантажує милі сенсори?"
 date: "2018-02-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0d0673d758bb9ec6f60c01db5dba00a0d3fea7ee-1080x1080.jpg"
 intro: "Відповідні сорочки Simon для цих двох красунь"
 title: "Відповідні сорочки Simon для цих двох красунь"
 designs:

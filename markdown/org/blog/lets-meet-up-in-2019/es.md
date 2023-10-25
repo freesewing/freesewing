@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Como introvertido no digo esto a menudo, pero en realidad me gustaría conoceros."
 date: "2018-12-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b5fdb232675b32c7c08b59ffc57e9b9da31f02f-1920x1078.jpg"
 intro: "¡Nos vemos en 2019! Y otras reflexiones de fin de año"
 title: "¡Nos vemos en 2019! Y otras reflexiones de fin de año"
 ---
@@ -50,7 +49,7 @@ Soy más del tipo de mirar hacia delante que hacia atrás, pero al reflexionar s
 
 Hace doce meses , [lanzamos nuestro proyecto de mecenazgo](/blog/calling-all-patrons). Desde entonces, 65 mecenas -repartidos aproximadamente a partes iguales entre nuestros 3 niveles de mecenazgo- han dado un paso al frente [para apoyar la libre circulación](/patrons/join). Las repercusiones de que estas personas se comprometan a apoyar nuestro trabajo han superado incluso mis esperanzas más optimistas.
 
-Puede que sepas, o puede que no, que yo he [hecho el compromiso](/docs/various/pledge) de donar todos los ingresos de freesewing a obras benéficas. Así que esta mañana he transferido todos nuestros ingresos del año (**3162,14 euros**) a [Médicos Sin Fronteras](https://www.msf.org/) . Dinero que se destinará a socorrer a algunas de las personas más vulnerables del planeta.
+Puede que sepas, o puede que no, que yo he [hecho el compromiso](/docs/about/pledge) de donar todos los ingresos de freesewing a obras benéficas. Así que esta mañana he transferido todos nuestros ingresos del año (**3162,14 euros**) a [Médicos Sin Fronteras](https://www.msf.org/) . Dinero que se destinará a socorrer a algunas de las personas más vulnerables del planeta.
 
 Tú lo has hecho posible, y si esto produce en tu corazón una fracción de la alegría que produce en el mío, comprenderás lo mucho que significa para mí tu patrocinio.
 

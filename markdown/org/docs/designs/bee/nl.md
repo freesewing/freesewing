@@ -2,4 +2,7 @@
 title: "Bikinitopje Bee"
 ---
 
-<PatternDocs pattern='bee' />
+
+
+<DesignInfo design='bee' docs />
+

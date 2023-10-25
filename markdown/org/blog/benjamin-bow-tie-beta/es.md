@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Si te gusta, ponle un lazo"
 date: "2017-11-14"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b04db622ddf3bff6e2d66a5305903a0e96edd58-2000x1333.jpg"
 intro: "Nuestra familia de patrones de costura libre ha vuelto a crecer, y el benjamín de la familia es... Benjamin ."
 title: "El patrón Pajarita Benjamin ya está disponible en versión beta. Y ni siquiera tuve que hacer nada."
 ---

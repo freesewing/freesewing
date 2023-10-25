@@ -2,7 +2,6 @@
 maker: "швачка-стоматолог"
 caption: "Дуже ефектний карлтон з вовняної тканини"
 date: "2022-08-02"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8fbc75fcfe11bd0f32c5f28d82f58f89986e03d3-742x743.jpg"
 intro: "Це зоряне пальто Carlton було зроблено швеєю-стоматологом, яка сказала:"
 title: "Пальто Carlton від sewingdentist"
 designs:

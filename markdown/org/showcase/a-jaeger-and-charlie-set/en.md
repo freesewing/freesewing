@@ -2,7 +2,6 @@
 maker: "Gaëlle"
 caption: "Jaeger and Charlie in a fun corduroy fabric"
 date: "2023-05-03"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a607817635bb3c8a65a53944a586851f5c6a3a8e-1380x3041.jpg"
 intro: "This handsome Jaeger and Waralee set are made all with a cotton corduroy, and cupro lining."
 title: "A Jaeger and Charlie set"
 designs: ["jaeger","charlie"]

@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Schau dir dieses süße Hobbit-Kostüm an!"
 date: "2023-07-11"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/53426fe47d7a52b633d033c1afc77f788bde0013-469x470.jpg"
 intro: "Diese Leinenweste von Wahid wurde für ein 1-jähriges Kleinkind angefertigt. Sie ist aus Leinen und wurde nach einer Anleitung von Sarah Kirsten komplett wendbar gemacht: Wie man eine gefütterte Weste näht - zwei einfache Methoden"
 title: "Eine wendbare Wahid-Weste für ein Kleinkind"
 designs:

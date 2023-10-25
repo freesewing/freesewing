@@ -2,7 +2,6 @@
 maker: "TangerineShark"
 caption: "An early test of the Bee Bikini top"
 date: "2021-10-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e3f929c42105b265778bee5a4e15a9fa40ed20bd-4032x2461.jpg"
 intro: "This Bee variation was made as a pattern test with cross-back ties, and has a few modifications from the default Bee. The top of the cup is lowered, and there is a small dart along the bottom of each cup taking up some of the gathering. There is also clear elastic sewn into the seams along the band, and a layer of power mesh in the cups, for additional support."
 title: "Bee with Cross-Back Ties"
 designs: ["bee","ursula"]

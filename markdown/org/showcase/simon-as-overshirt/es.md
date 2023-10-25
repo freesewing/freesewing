@@ -2,7 +2,6 @@
 maker: "ferdi"
 caption: "Este Simón se cosió un poco más ancho para llevarlo como sobrecamisa"
 date: "2021-11-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ccc178893cc97708b480fb5bf298c7a6ec7abc76-1920x1280.jpg"
 intro: "¡Qué versión más atractiva de la camiseta Simon! Dice el fabricante:"
 title: "Simon como sobrecamisa de Ferdi"
 designs:

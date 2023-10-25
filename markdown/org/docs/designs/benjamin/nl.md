@@ -2,4 +2,7 @@
 title: "Benjamin vlinderdas"
 ---
 
-<PatternDocs pattern='benjamin' />
+
+
+<DesignInfo design='benjamin' docs />
+

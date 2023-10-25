@@ -1,31 +1,29 @@
 translation: Übersetzung
-proudlyMultilingual: Thanks to the translation volunteers in our community, FreeSewing is proudly multilingual.
-getInvolved: Get involved
-teamEffort: Translation is a team effort, and we would love to have you join one of our language teams.
-seeTranslationGuide: Refer to the FreeSewing translation guide for all details
-translatedAndApproved: Translated and approved by a proofreader
-translatedOnly: Translated but not (yet) approved by a proofreader
-notTranslated: Not (yet) translated
-defaultLanguage: This is our source language and the working language of the FreeSewing project
-addLanguage1: Looking to add a language?
-addLanguage2: We would love to make FreeSewing available in more langauges.
-addLanguage3: If you are interested in starting a new translation effort, please reach out.
-globalRanking: Global ranking
-groupByLanguage: Group by language
-translator: Translator
-words: Words
-joinTheTeam: Join the team
-joinATranslationTeam: Join a translation team
-languageTeam: "{language} Team"
-whatTeam: What language team are you joining?
-sendMeAnInvite: Send me an invite
-pleaseChooseTeam: Please choose a language below so we can send you the correct invite.
-successNote: Please check your inbox. You will get an email with an invite code that grants you access to the translation on Crowdin, the online translation platform that we use to translate FreeSewing into multiple languages.
-suggestLanguage: Suggest a new language
-joinIntro: Looking to join a FreeSewing translation team?
-thatIsAwesome: That is awesome.
-thanksSoMuch: Thanks so much.
-suggestIntro: Looking to add a new language to FreeSewing?
-pleaseMotivate: Please complete the form below so we can review your suggestion.
-
-
+proudlyMultilingual: Dank der freiwilligen Übersetzer/-innen unserer Community kann FreeSewing stolz mehrsprachig sein.
+getInvolved: Engagiere dich
+teamEffort: Übersetzen ist eine Teamleistung, und wir würden uns freuen, wenn du einem unserer Sprachteams beitreten würdest.
+seeTranslationGuide: Alle Details findest du in der FreeSewing-Übersetzungsanleitung
+translatedAndApproved: Übersetzt und von Korrekturleser/-innen genehmigt
+translatedOnly: Übersetzt, aber (noch) nicht von Korrekturleser/-innen genehmigt
+notTranslated: (noch) nicht übersetzt
+defaultLanguage: Dies ist unsere Ausgangssprache und die Arbeitssprache des FreeSewing-Projekts
+addLanguage1: Willst du eine Sprache hinzufügen?
+addLanguage2: Wir würden FreeSewing gerne in mehr Sprachen verfügbar machen.
+addLanguage3: Wenn du daran interessiert bist, ein neues Übersetzungsunterfangen zu beginnen, melde dich bitte bei uns.
+globalRanking: Globale Rangliste
+groupByLanguage: Nach Sprache gruppieren
+translator: Übersetzer/-in
+words: Wörter
+joinTheTeam: Tritt dem Team bei
+joinATranslationTeam: Tritt einem Übersetzungsteam bei
+languageTeam: '{language} Team'
+whatTeam: Welchem Sprachenteam trittst du bei?
+sendMeAnInvite: Schick mir eine Einladung
+pleaseChooseTeam: Bitte wähle unten eine Sprache aus, damit wir dir die richtige Einladung schicken können.
+successNote: Bitte schau in deinem Posteingang nach. Du erhältst eine E-Mail mit einem Einladungscode, der dir Zugang zur Übersetzung auf Crowdin gewährt, der Online-Übersetzungsplattform, die wir nutzen, um FreeSewing in mehrere Sprachen zu übersetzen.
+suggestLanguage: Eine neue Sprache vorschlagen
+joinIntro: Willst du einem FreeSewing-Übersetzungsteam beitreten?
+thatIsAwesome: Das ist großartig.
+thanksSoMuch: Herzlichen Dank.
+suggestIntro: Willst du eine neue Sprache zu FreeSewing hinzufügen?
+pleaseMotivate: Bitte fülle das folgende Formular aus, damit wir deinen Vorschlag prüfen können.

@@ -2,7 +2,6 @@
 maker: "RedBlaqueGolden"
 caption: "JV dans une Sandy avec un masque assorti"
 date: "2020-10-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/35daf9e79d06a8a12972a1e0bd87bce6f3c92028-1536x2048.jpg"
 intro: "JV a partagé leur nouvelle robe en utilisant la jupe Sandy sur Twitter."
 title: "Robe de JV fabriquée à l'aide d'une jupe en cercle Sandy"
 designs:

@@ -2,7 +2,6 @@
 maker: "rostic"
 caption: "Deze mooie Wahid is gemaakt van gebloemd katoen"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/429adcc0d0847351ca6076d941428f67dba6a223-910x1265.jpg"
 intro: "Rostic heeft dit geweldige Wahid-gilet gemaakt! De detailfoto's hieronder wil je niet missen."
 title: "Het uitstekende Wahid-gilet van Rostic"
 designs:

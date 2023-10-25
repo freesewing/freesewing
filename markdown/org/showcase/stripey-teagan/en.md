@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "Love the fit and stripes on this modified Teagan!"
 date: "2023-01-15"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/787622dcb6885cc9a60e3071f92cf4cbe266607a-724x854.jpg"
 intro: "A FreeSewing user gave modifying Teagan a try, and we love how the results turned out! Here's a little explanation she shared of how she drafted her Teagan and shaped the side seams for a closer fit."
 title: "A Spectacular Stripey Teagan"
 designs: ["teagan"]

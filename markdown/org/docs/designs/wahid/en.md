@@ -2,4 +2,7 @@
 title: "Wahid waistcoat"
 ---
 
-<PatternDocs pattern='wahid' />
+
+
+<DesignInfo design='wahid' docs />
+

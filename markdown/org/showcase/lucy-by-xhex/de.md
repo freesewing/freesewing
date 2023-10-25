@@ -2,7 +2,6 @@
 maker: "Xhex"
 caption: "Je genauer du hinschaust, desto cooler wird diese Tasche"
 date: "05.04.2023"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/80b67633d4d42db34a8fa4a2c8550f45e3c64a40-1153x863.png"
 intro: "Würdest du dir diese Lucy-Tasche ansehen, die Xhex gemacht hat? Es ist unglaublich!"
 title: "Bestickte Lucy Tasche von Xhex"
 designs:

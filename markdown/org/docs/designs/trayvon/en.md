@@ -2,4 +2,7 @@
 title: "Trayvon tie"
 ---
 
-<PatternDocs pattern='trayvon' />
+
+
+<DesignInfo design='trayvon' docs />
+

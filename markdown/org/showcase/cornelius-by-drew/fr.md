@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "La culotte cycliste Cornélius, en lin"
 date: "2021-07-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7cb1aa306644cf26aac361deaec00e9bb3bdd342-482x800.jpg"
 intro: "Drew S. a réalisé cette paire de pantalons en lin, leur premier patron FreeSewing et leur première fois à faire des pantalons ! Drew a partagé son expérience :"
 title: "Cornelius de Drew S."
 designs:

@@ -49,7 +49,7 @@ describe('Path', () => {
       points.to = new Point(90, 20)
 
       const messages = []
-      const log = { warning: (msg) => messages.push(msg) }
+      const log = { warn: (msg) => messages.push(msg) }
       new Path()
         .__withLog(log)
         .move(points.from)
@@ -62,7 +62,7 @@ describe('Path', () => {
 
     it('Should log a warning when passing a non-Point to smurve_()', () => {
       const messages = []
-      const log = { warning: (msg) => messages.push(msg) }
+      const log = { warn: (msg) => messages.push(msg) }
       try {
         new Path().__withLog(log).smurve_('hi')
       } catch (e) {
@@ -76,7 +76,7 @@ describe('Path', () => {
 
   it('Should log a warning when passing a non-Path to the paths proxy', () => {
     const messages = []
-    const log = { warning: (msg) => messages.push(msg) }
+    const log = { warn: (msg) => messages.push(msg) }
     const pathsObj = {}
     const paths = pathsProxy(pathsObj, log)
     paths.set(pathsObj, 'test', 'Writing code can get very lonely sometimes')
@@ -685,7 +685,7 @@ describe('Path', () => {
   it('Calling translate with non-numbers should generate a warning', () => {
     const log = []
     const p = new Path()
-    p.log = { warning: (msg) => log.push(msg) }
+    p.log = { warn: (msg) => log.push(msg) }
     p.translate('a', 'b')
     expect(log.length).to.equal(2)
     expect(log[0]).to.equal('Called `Path.translate(x, y)` but `x` is not a number')
@@ -756,7 +756,7 @@ describe('Path', () => {
 
   it('Should log a warning when moving to a non-point', () => {
     let invalid = false
-    const log = { warning: () => (invalid = true) }
+    const log = { warn: () => (invalid = true) }
     const p1 = new Path().__withLog(log)
     expect(invalid).to.equal(false)
     try {
@@ -769,7 +769,7 @@ describe('Path', () => {
 
   it('Should log a warning when drawing a line to a non-point', () => {
     let invalid = false
-    const log = { warning: () => (invalid = true) }
+    const log = { warn: () => (invalid = true) }
     const p1 = new Path().__withLog(log)
     expect(invalid).to.equal(false)
     try {
@@ -782,7 +782,7 @@ describe('Path', () => {
 
   it('Should log a warning when drawing a curve to a non-point', () => {
     let invalid = false
-    const log = { warning: () => (invalid = true) }
+    const log = { warn: () => (invalid = true) }
     const p1 = new Path().__withLog(log)
     const a = new Point(0, 0)
     const b = new Point(10, 10)
@@ -797,7 +797,7 @@ describe('Path', () => {
 
   it('Should log a warning when drawing a curve with a Cp1 that is a non-point', () => {
     let invalid = false
-    const log = { warning: () => (invalid = true) }
+    const log = { warn: () => (invalid = true) }
     const p1 = new Path().__withLog(log)
     const a = new Point(0, 0)
     const b = new Point(10, 10)
@@ -812,7 +812,7 @@ describe('Path', () => {
 
   it('Should log a warning when drawing a curve with a Cp1 that is a non-point', () => {
     let invalid = false
-    const log = { warning: () => (invalid = true) }
+    const log = { warn: () => (invalid = true) }
     const p1 = new Path().__withLog(log)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
@@ -826,7 +826,7 @@ describe('Path', () => {
 
   it('Should log a warning when drawing a curve with a Cp2 that is a non-point', () => {
     let invalid = false
-    const log = { warning: () => (invalid = true) }
+    const log = { warn: () => (invalid = true) }
     const p1 = new Path().__withLog(log)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
@@ -840,7 +840,7 @@ describe('Path', () => {
 
   it('Should log a warning when drawing a _curve with a To that is a non-point', () => {
     let invalid = false
-    const log = { warning: () => (invalid = true) }
+    const log = { warn: () => (invalid = true) }
     const p1 = new Path().__withLog(log)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
@@ -854,7 +854,7 @@ describe('Path', () => {
 
   it('Should log a warning when drawing a _curve with a Cp2 that is a non-point', () => {
     let invalid = false
-    const log = { warning: () => (invalid = true) }
+    const log = { warn: () => (invalid = true) }
     const p1 = new Path().__withLog(log)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
@@ -868,7 +868,7 @@ describe('Path', () => {
 
   it('Should log a warning when drawing a curve_ with a To that is a non-point', () => {
     let invalid = false
-    const log = { warning: () => (invalid = true) }
+    const log = { warn: () => (invalid = true) }
     const p1 = new Path().__withLog(log)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
@@ -882,7 +882,7 @@ describe('Path', () => {
 
   it('Should log a warning when drawing a curve_ with a Cp2 that is a non-point', () => {
     let invalid = false
-    const log = { warning: () => (invalid = true) }
+    const log = { warn: () => (invalid = true) }
     const p1 = new Path().__withLog(log)
     const b = new Point(10, 10)
     expect(invalid).to.equal(false)
@@ -912,7 +912,7 @@ describe('Path', () => {
 
   it('Should log a warning when an insop operation used an falsy ID', () => {
     let invalid = false
-    const log = { warning: () => (invalid = true) }
+    const log = { warn: () => (invalid = true) }
     const a = new Point(0, 0)
     const b = new Point(10, 10)
     const p1 = new Path().move(a).line(b)
@@ -923,7 +923,7 @@ describe('Path', () => {
 
   it('Should log a warning when an insop operation used an falsy ID', () => {
     let invalid = false
-    const log = { warning: () => (invalid = true) }
+    const log = { warn: () => (invalid = true) }
     const a = new Point(0, 0)
     const b = new Point(10, 10)
     new Path().move(a).line(b)
@@ -938,21 +938,21 @@ describe('Path', () => {
 
   it('Should log a warning when setting an attribute without a name', () => {
     let invalid = false
-    const log = { warning: () => (invalid = true) }
+    const log = { warn: () => (invalid = true) }
     new Path().__withLog(log).attr()
     expect(invalid).to.equal(true)
   })
 
   it('Should log a warning when setting an attribute without a value', () => {
     let invalid = false
-    const log = { warning: () => (invalid = true) }
+    const log = { warn: () => (invalid = true) }
     new Path().__withLog(log).attr('test')
     expect(invalid).to.equal(true)
   })
 
   it('Should log an error when calling offset without a distance', () => {
     let invalid = true
-    const log = { warning: () => {}, error: () => (invalid = true) }
+    const log = { warn: () => {}, error: () => (invalid = true) }
     const pointLog = { error: () => {} }
     const pointA = new Point(0, 0).__withLog(pointLog)
     const pointB = new Point(0, 40).__withLog(pointLog)
@@ -1019,7 +1019,7 @@ describe('Path', () => {
   it('Should log an error when splitting a path on a non-point', () => {
     let invalid = false
     const log = { error: () => (invalid = true) }
-    const pointLog = { warning: () => {} }
+    const pointLog = { warn: () => {} }
     try {
       new Path()
         .__withLog(log)

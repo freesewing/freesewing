@@ -2,7 +2,6 @@
 maker: "sewingdentist"
 caption: "Ein sehr beeindruckender Carlton aus Wollstoff"
 date: "02.08.2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8fbc75fcfe11bd0f32c5f28d82f58f89986e03d3-742x743.jpg"
 intro: "Dieser stellare Carlton-Mantel wurde von sewingdentist genäht, der sagte:"
 title: "Carlton Mantel von sewingdentist"
 designs:

@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "Check out this cute hobbit costume!"
 date: "2023-07-11"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/53426fe47d7a52b633d033c1afc77f788bde0013-469x470.jpg"
 intro: "This linen Wahid waistcoat was made for a 1-year-old toddler. It is made of linen and was made fully reversible following a tutorial by Sarah Kirsten: How to Sew a Lined Vest - Two Easy Methods"
 title: "A reversible Wahid waistcoat for a toddler"
 designs: ["wahid"]

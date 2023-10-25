@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Photo par Deeana crée à partir de Pexels"
 date: "2020-07-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f04cc6c50a8e5f08f3ebd6c3d4903fb3055c9a01-1920x1280.jpg"
 intro: "Nous venons de publier FreeSewing v2.7 🎉"
 title: "FreeSewing v2.7 : Titan, modifications des mesures et une longue liste d'améliorations"
 ---
@@ -64,7 +63,7 @@ Pour contourner ce problème, vous devriez probablement [recharger votre compte]
 
 Nous avons également apporté quelques modifications au site Web.
 
- - Nous avons ajouté un [guide de notation des patrons](/docs/various/notation/) pour aider à la compréhension de la signification de ces marquages sur votre patron.
+ - Nous avons ajouté un [guide de notation des patrons](/docs/about/notation/) pour aider à la compréhension de la signification de ces marquages sur votre patron.
  - Nous avons ajouté une page [recharger le compte](/account/actions/reload/) pour vous aider à éviter des problèmes liés aux données du compte mises en cache
  - Nous avons changé le style des différentes tailles lorsque vous comparez un patron, et nous avons aussi inclus une légende montrant quel trait correspond à quelle taille.
 

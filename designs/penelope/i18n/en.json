@@ -16,6 +16,14 @@
       "t": "Back vent",
       "d": "Add a vent in the back of the skirt."
     },
+    "backVentNo": {
+      "t": "No vent in the back",
+      "d": "This will be the challenging way to walk."
+    },
+    "backVentYes": {
+      "t": "A vent in the back",
+      "d": "Making it easier to walk."
+    },
     "backVentLength": {
       "t": "Back vent length",
       "d": "Length of the Back Vent as a percentage of the skirt length."
@@ -23,6 +31,14 @@
     "curvedDarts": {
       "t": "Curved darts",
       "d": "Whether or not to used curved darts."
+    },
+    "curvedDartsNo": {
+      "t": "Straight darts",
+      "d": "The darts will be straight, for the standard look."
+    },
+    "curvedDartsYes": {
+      "t": "Curved darts",
+      "d": "The darts will be curved, making the shape in the back and front more round."
     },
     "dartToSideSeamFactor": {
       "t": "Dart to side seam factor",
@@ -52,13 +68,25 @@
       "t": "Seat ease",
       "d": "Amount of ease at the seat level."
     },
-    "waistBand": {
-      "t": "Waist band",
+    "waistband": {
+      "t": "Waistband",
       "d": "Add a waistband to the pattern."
     },
-    "waistBandWidth": {
-      "t": "Waist band width",
-      "d": "The width of the waist band."
+    "waistbandNo": {
+      "t": "No waistband",
+      "d": "Just the skirt, nothing else."
+    },
+    "waistbandYes": {
+      "t": "Skirt with a waistband",
+      "d": "Add a waistband."
+    },
+    "waistbandOverlap": {
+      "t": "Waistband overlap",
+      "d": "How much the waistband should overlap at the front."
+    },
+    "waistbandWidth": {
+      "t": "Waistband width",
+      "d": "The width of the waistband."
     },
     "waistEase": {
       "t": "Waist ease",
@@ -67,6 +95,14 @@
     "zipperLocation": {
       "t": "Zipper location",
       "d": "The location of the zipper."
+    },
+    "zipperLocation.backSeam": {
+      "t": "Add the zipper to the back seam",
+      "d": "Good option with the back vent."
+    },
+    "zipperLocation.sideSeam": {
+      "t": "Add the zipper to the side seam",
+      "d": "Allows you to cut the back on fold, removing the seam from the back."
     }
   }
 }

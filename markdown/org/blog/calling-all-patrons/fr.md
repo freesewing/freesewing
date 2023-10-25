@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Nous construisons un cercle de soutiens fidèles pour assurer un avenir durable à freesewing.org, à notre code, à nos modèles et à notre communauté."
 date: "2017-12-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/84e39d762790744f10fe17bcb971f99e98550299-2000x1334.jpg"
 intro: "Appel aux mécènes ; rejoignez notre socle de soutiens fidèles."
 title: "Appel aux mécènes ; rejoignez notre socle de soutiens fidèles."
 ---

@@ -2,7 +2,6 @@
 maker: "Anneke Caramin"
 caption: "Rückansicht von Annekes glänzendem schwarzen Sandy-Rock"
 date: "20.10.2020"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f17b554dceedcfa01572346e5032e4836deb6f52-1080x1080.jpg"
 intro: "Lies Annekes ausführlichen Blogpost von 2018 über ihren neuen Sandy-Rock und wie sie Taschen und einen geschwungenen Bund hinzugefügt hat."
 title: "Annekes glänzender schwarzer Sandy Kreisrock"
 designs:

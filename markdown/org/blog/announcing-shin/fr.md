@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Je suppose que c'est à cela que ressemble la réalité augmentée ?"
 date: "2018-09-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b471275001689bd4819d6d95aabc8134788dc612-1694x1129.jpg"
 intro: "Il y a quelque temps, j'ai eu besoin d'un nouveau maillot de bain. J'ai donc dessiné un modèle et j'en ai fabriqué :"
 title: "Annonce Shin, un modèle de maillot de bain"
 ---
@@ -21,7 +20,7 @@ Après quelques ajustements, je pense que c'est prêt pour vous, et entre-temps,
 
 Shin est livré avec des options, et elles sont très proches des options disponibles pour [Bruce](/designs/bruce).
 
-Toutes les options [sont documentées](/docs/patterns/shin/options), ainsi que les mesures [nécessaires](/docs/patterns/shin/measurements), et j'ai également écrit [les instructions pour faire ceci](/docs/patterns/shin).
+Toutes les options [sont documentées](/docs/designs/shin/options), ainsi que les mesures [nécessaires](/docs/designs/shin/measurements), et j'ai également écrit [les instructions pour faire ceci](/docs/designs/shin/instructions).
 
 Je dois encore faire les illustrations, mais ce n'est vraiment pas difficile, donc tu pourras probablement comprendre sans elles. Essentiellement, tu peux aller faire ça tout de suite.
 

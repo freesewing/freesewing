@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Foto de Anna Doschechko [vía Pexels]."
 date: "2022-01-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9c6157f73a050c291cf5441d08c3a74db6670aee-1920x1280.jpg"
 intro: "FreeSewing 2.20: ¿Te gustaría más pequeño?"
 title: "FreeSewing 2.20: ¿Te gustaría más pequeño?"
 ---

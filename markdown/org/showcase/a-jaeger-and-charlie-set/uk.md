@@ -2,7 +2,6 @@
 maker: "Галле."
 caption: "Єгер і Чарлі у веселій вельветовій тканині"
 date: "2023-05-03"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a607817635bb3c8a65a53944a586851f5c6a3a8e-1380x3041.jpg"
 intro: "Цей гарний комплект Jaeger і Waralee виготовлений з бавовняного вельвету та підкладки з купро."
 title: "Набір \"Єгер і Чарлі"
 designs:

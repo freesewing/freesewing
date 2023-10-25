@@ -9,6 +9,8 @@ sabool.t: Include Seam Allowance
 sabool.d: Controls whether or not to include seam allowance in your pattern
 complete.t: Details
 complete.d: Controls how detailed the pattern is; Either a complete pattern with all details, or a basic outline of the pattern parts
+expand.t: Expand
+expand.d: Controls efforts to save paper. Disable this to expand all pattern parts at the cost of using more space.
 only.t: Included Parts
 only.d: Use this to control exactly which pattern parts will be included in your pattern
 locale.t: Language
@@ -35,6 +37,10 @@ completeYes.t: Generate a complete pattern
 completeYes.d: This will generate a complete pattern with all notations, lines, markings. Use this if you are not certain what to choose.
 completeNo.t: Generate a pattern outline
 completeNo.d: Only generate the outline of the pattern parts. Use this if you are looking to use a lasercutter or have other specific needs.
+expandYes.t: Expand all pattern parts
+expandYes.d: This will generate a pattern where all pattern parts are drawn to their full size, even if they are simple rectangles.
+expandNo.t: Keep patterns parts compact where possible
+expandNo.d: This will draw a more dense representation of the pattern which includes all info without using up too much space & paper.
 paperlessNo.t: Generate a regular pattern
 paperlessNo.d: This will generate a regular pattern, which you can then print out.
 paperlessYes.t: Generate a paperless pattern
@@ -49,4 +55,5 @@ saNo.t: Do not include seam allowance
 saNo.d: This generates a pattern which does not include any seam allowance. The size of the seam allowance does not matter as no seam allowancce will be included.
 saYes.t: Include seam allowance
 saYes.d: This generates a pattern that will include seam allowance. The size of the seam allowance is set individually.
-
+clearSettingsNotMeasurements: Clear settings, but keep measurements
+clearSettingsAndMeasurements: Clear settings & Clear measurements

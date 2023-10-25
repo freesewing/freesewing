@@ -2,4 +2,7 @@
 title: "Patron de base Bent"
 ---
 
-<PatternDocs pattern='bent' />
+
+
+<DesignInfo design='bent' docs />
+

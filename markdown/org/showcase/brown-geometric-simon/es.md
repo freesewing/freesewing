@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "¡Qué fantástica camisa Simon, modelada por el creador!"
 date: "2023-05-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/41a2576323a499f2a571335a68795be7d6a88bdc-1920x1281.jpg"
 intro: "El sexto Simón para esta costurera, nos encanta este Simón de estampado geométrico en un tono marrón entrecruzado con finas líneas blancas. El creador dejó caer esto en un tema de GitHub para compartirlo con FreeSewing, y no podríamos estar más contentos."
 title: "Un Simon geométrico marrón"
 designs:

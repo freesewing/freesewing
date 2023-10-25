@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Лляний гінгам Симон"
 date: "2021-06-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3e3211e181cb8be99b62dfadb56c05422430ca4d-640x677.jpg"
 intro: "Анна поділилася з нами цією приголомшливою сорочкою Саймона! сказала Анна:"
 title: "Сорочка Саймона від Анни"
 designs:

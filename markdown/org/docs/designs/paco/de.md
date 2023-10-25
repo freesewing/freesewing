@@ -2,4 +2,7 @@
 title: "Paco, die Hose"
 ---
 
-<PatternDocs pattern='paco' />
+
+
+<DesignInfo design='paco' docs />
+

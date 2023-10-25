@@ -2,7 +2,6 @@
 maker: "Anneke Caramin"
 caption: "vista trasera de la falda Sandy negra brillante de Anneke"
 date: "2020-10-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f17b554dceedcfa01572346e5032e4836deb6f52-1080x1080.jpg"
 intro: "Lee el extenso blogpost 2018 de Anneke sobre su nueva falda Sandy , que incluye cómo añadió bolsillos y una cintura curvada."
 title: "Falda circular Sandy negra brillante de Anneke"
 designs:

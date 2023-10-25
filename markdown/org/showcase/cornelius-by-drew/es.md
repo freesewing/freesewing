@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Los pantalones ciclistas Cornelius de lino"
 date: "2021-07-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7cb1aa306644cf26aac361deaec00e9bb3bdd342-482x800.jpg"
 intro: "Drew S. hizo este pantalón tan chulo en lino, ¡su primer patrón de FreeSewing y también la primera vez que hacía pantalones! compartió Drew:"
 title: "Cornelius de Drew S."
 designs:

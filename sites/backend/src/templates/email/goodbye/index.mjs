@@ -1,10 +1,11 @@
 import { headingRow, wrap } from '../shared/blocks.mjs'
 // Translations
-import en from '../../../../public/locales/en/goodbye.json' assert { type: 'json' }
-import de from '../../../../public/locales/de/goodbye.json' assert { type: 'json' }
-import es from '../../../../public/locales/es/goodbye.json' assert { type: 'json' }
-import fr from '../../../../public/locales/fr/goodbye.json' assert { type: 'json' }
-import nl from '../../../../public/locales/nl/goodbye.json' assert { type: 'json' }
+import en from './en.json' assert { type: 'json' }
+import de from './de.json' assert { type: 'json' }
+import es from './es.json' assert { type: 'json' }
+import fr from './fr.json' assert { type: 'json' }
+import nl from './nl.json' assert { type: 'json' }
+import uk from './uk.json' assert { type: 'json' }
 
 export const goodbye = {
   html: wrap.html(`
@@ -35,4 +36,4 @@ joost
 PS: {{ps}}`),
 }
 
-export const translations = { en, de, es, fr, nl }
+export const translations = { en, de, es, fr, nl, uk }

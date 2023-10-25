@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "¡Sobrecarga aguda de ternura! Conoce a Octoplushy"
 date: "2022-09-03"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/51d70ae47ddd534ba340f49e5867b4378b7dc1a3-4032x3024.jpg"
 intro: "Este escaparate muestra el primer Octoplushy completado, la variante estándar."
 title: "Conoce a Octoplushy"
 designs:

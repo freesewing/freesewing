@@ -190,13 +190,24 @@ Cuando hayas terminado, presiona Abrirlo.
 
 ## Paso 9: Cerrar el cruce
 
+<tip>
+
+Double check that your right and left legs match the pattern markings. The right leg's crotch should extend slightly beyond the left. Refer to the pattern and cut excess on the left leg if necessary.
+
+It can be valuable to mark with chalk or thread mark the **Center Front** on each leg. This will help you make sure the peices are in the right place duing fly construction.
+
+</tip>
+
 Asegúrate de que una pierna esté girada con el lado bueno, y la otra tiene el lado bueno.
 
 Ahora mete la pierna con el lado bueno hacia fuera dentro de la pierna que tiene el lado bueno hacia dentro. De esta manera, tienen su lado bueno entre sí.
 
-Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. Parar en el nivel de vuelo más bajo.
+Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. **Stop at the fly notch** and makes sure to back-stitch.
 
 Cuando haya terminado. Hágalo de nuevo. Siempre coser la costura de la cruz dos veces. Es una de esas mejores prácticas que usted ignora bajo su propio riesgo.
+
+![Close Crossseam](CloseCrossseam.svg)
+
 
 <Tip>
 
@@ -209,7 +220,7 @@ Conseguirlo bien es una de esas cosas que acabarás cherizando cada vez que las 
 
 ## Paso 10: Construir la mosca
 
-### Cerrar extensión de mosca
+### Close the fly extension and serge
 
 Doblar la extensión de la mosca en su línea plegable con buenos lados juntos.
 
@@ -217,67 +228,82 @@ Ahora coser a lo largo del fondo, para cerrar la extensión de la mosca.
 
 Recorre la mitad de la franquicia de costura para quitar el granel antes de girar el lado bueno y presionar.
 
-### Sirve la extensión de la mosca y mira a la mosca
+#### Sirve la extensión de la mosca y mira a la mosca
 
 Serge (o zig-zag) a lo largo del lado abierto de la extensión de la mosca. No hay necesidad de servir la parte superior, ya que eso se verá atrapado en nuestra cintura.
 
 mientras estás en él, también siéntate a lo largo de toda la mosca mirando hacia el borde en forma de J.
 
-### Cortar la costura extra en el frente de la pierna izquierda
+![Close Extension and Serge](CloseExtensionAndSerge.svg)
 
-Hay una franquicia extra de costura que corre a lo largo de la mosca. Solo necesitamos esto en el panel de la pierna derecha. Corte en el panel izquierdo para que se quede con la franquicia regular de costura solamente.
 
 ### Adjuntar la cara de vuelo
 
-Pase la mosca hacia el frente izquierdo. Colócalos con los lados bien juntos, alineando la parte superior.
+Sew fly facing to left leg. You will be sewing slightly past the cross seam point, so be careful to keep the right leg seam allowance out of the way and aim to sew directly on top of the cross seam line.
 
-### Pegado en la punta de la cara de la mosca
+![Attach Facing](AttachFacing.svg)
 
-Doblar la parte inferior de la franquicia de costura de la mosca hacia adentro y asegurar con unas pocas pulseras.
+### Finish the fly facing
 
-### El borde tira la mosca hacia la costura
+Trim the fly facing to half of the seam allowance.  
+Tuck in the tip of the fly facing and secure it with a few stitches. Edge stitch the fly facing to the seam allowance. Press the seam allowance toward the facing and understitch the facing for a clean finish. Again, keeping the right leg  seam allowance out of the way.
 
-Difunde la mosca hacia la franquicia de costura. Asegúrate de dejar el panel frontal fuera de él.
+![Finish Facing](FinishFacing.svg)
 
-### Presione la costura cruzada, la cara de la mosca y el borde de la mosca
+### Edge stitch the zipper to the fly extension
 
-Pulse abrir la costura cruzada. Presione el volar hacia el lado.
+<tip>
 
-Luego, doblézcalo sobre la franquicia extra de costura en la parte delantera derecha y presione la parte inferior.
+**Zipper Length**
 
-### Baste el zipper para la extensión de moscas
+It's a good idea to ensure your zipper stop ends before the indicated stitch line on the pattern. This will ensure you don't sew over your zipper stop and reduces tension on the bottom of the fly. If your zipper is too long, you can do a 0 length zig zag stitch to create a new stop (on just the zipper itself).
 
-Coloque el zipper a lo largo del borde (ligeramente curvado) de la extensión de la mosca.
+</tip>
 
-Ahora coser a lo largo del borde. No hay necesidad de acercarse al césped, sólo coser a lo largo del borde para mantenerlos en su lugar.
+Edge stitch along the left edge of the zipper to the serged edge of the fly extension to hold it in place.
 
-### Adjuntar zipper a la mosca
+![Baste Zipper](BasteZipper.svg)
 
-Ahora coloque la mosca de la pata delantera derecha con la franquicia extra de costura que se dobló de nuevo en la parte superior de la zipa.
 
-Usa un borde de zipper en el borde plegado a lo largo del borde de zipper.
+### Top stitch the right leg to the zipper
 
-<Tip>
+Start by pressing the right leg seam allowance to the back.
 
-Quizás quieras bastar esto primero para asegurarte de que es muy paralelo al zipper. Cerrar, pero no demasiado cerca.
+<tip>
 
-</Tip>
+Remember that the seam allowance starts slightly right of the center front, the center front is marked in purple in the image, make sure you don't fold along the center front line by mistake.
 
-### Difunde el caparazón hacia la mosca
+</tip>
 
-Ahora coser el otro lado del cipper a la mosca. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
+Ensure you place the folded edge of the right leg just left of the zipper teeth to prevent fabric from being caught in the zipper.
 
-### Termina la costura cruzada
+Stop sewing at the top 'fly extention' notch, slightly above the cross seam, and be sure to backstitch. If you don't do this you won't be able to keep the extension out of the way when sewing the J-Seam.
 
-Difunde el último trozo de la costura de la cruz hasta la altura más alta de la mosca.
+![Attach Extension to Right Leg](AttachExtensionToRightLeg.svg)
+
+
+### Attach the zipper to the fly facing.
+
+Be careful to align the leg left on the right center front. It can be valuable to pin or baste through the facing and right zide of the zipper tape. (We need to sew the left side of the zipper tape to the left leg). Ensuring everything is lined, sew the fly facing to the left side of the zipper. Try to get close to the zipper, but not too close.
+
+![Attach Facing to Zipper](AttachFacingToZipper.svg)
+
 
 ### Difunde la costura J de la mosca
 
-Ahora suman la llamada costura J de la mosca. Asegúrese de mantener la extensión de la mosca fuera del camino.
+<tip>
 
-### Barra toca la parte inferior de la mosca
+Use a peice of paper as a guide to sew the J seam, this can be cut from your pattern along the indicated stitch line.
 
-Ahora desmenuzan el mismo botton de la costura J-costura (la parte horizontal), pero esta vez asegúrese de capturar también la extensión de la mosca.
+</tip>
+
+Ahora suman la llamada costura J de la mosca. Asegúrese de mantener la extensión de la mosca fuera del camino. Since you didn't sew all the way along the fly extention, you should be able to pin it out of the way.
+
+#### Barra toca la parte inferior de la mosca
+
+Now, bartack the very botton of the J-seam (the horizontal part) but this time make sure to also catch the fly extension. You can choose to add an additional bar tack along the J-Seam as well (shown in purple).
+
+![Sew the J-Seam](SewTheJSeam.svg)
 
 ## Paso 11: Adjuntar bucles de cinturón
 
@@ -293,11 +319,15 @@ Corta una tira de 80 cm de largo y 2,8 cm de ancho.
 
 Servir (o zigzag) el borde largo de la tira en ambos lados.
 
+![Finish Loop Edges](FinishLoopEdges.svg)
+
 Doblar un lado hacia adentro, y el otro hacia arriba. Luego presiona con tu hierro. El resultado final debe ser una tira larga de aproximadamente 1cm de largo.
 
 Ahora coser a lo largo de toda la longitud de la raya, huele en medio de ella. Asegúrate de usar una longitud de unión generosa para esto.
 
 Por último, cortar los bucles de la correa de longitud en 8 partes iguales para hacer 8 bucles de la cinta.
+
+![Stitch and Cut Loops](StitchAndCutLoops.svg)
 
 ### Adjuntar bucles de la cinta
 

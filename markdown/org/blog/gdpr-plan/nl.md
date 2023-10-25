@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Deze afbeelding is waarschijnlijk het enige in de post dat je diagonaal kunt bekijken"
 date: "2018-02-14"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/39f3d1e7320510b2dd12cc1bc2e58008263889f3-1920x1280.webp"
 intro: "De Algemene Verordening Gegevensbescherming van de Europese Unie: Ons strijdplan."
 title: "De Algemene Verordening Gegevensbescherming van de Europese Unie: Ons strijdplan."
 ---

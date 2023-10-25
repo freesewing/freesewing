@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "As an introvert I don't say this often, but I'd actually like to meet you guys."
 date: "2018-12-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b5fdb232675b32c7c08b59ffc57e9b9da31f02f-1920x1078.jpg"
 intro: "Let's meet up in 2019! And other end-of-year musings"
 title: "Let's meet up in 2019! And other end-of-year musings"
 ---
@@ -91,7 +90,7 @@ The knock-on effects of these people making a commitment to support our work hav
 even my most optimistic hopes.
 
 You may or may not know that I 
-have [made a pledge](/docs/various/pledge) to donate all income from freesewing to charity. 
+have [made a pledge](/docs/about/pledge) to donate all income from freesewing to charity. 
 So this morning I transferred our entire revenue for the year (**3162.14 euros**) 
 to [Médecins Sans Frontières](https://www.msf.org/) (Doctors Without Borders).
 Money that will go towards bringing relief to some of the most vulnerable people on this planet.
