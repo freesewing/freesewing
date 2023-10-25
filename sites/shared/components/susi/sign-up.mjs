@@ -45,6 +45,10 @@ export const SignUp = () => {
     setEmailValid(valid === true ? true : false)
   }
 
+  const triggerSubmit = (evt) => {
+    if (evt.key === 'Enter') signinHandler(evt)
+  }
+
   const signupHandler = async (evt) => {
     evt.preventDefault()
     if (!emailValid) {
@@ -179,7 +183,7 @@ export const SignUp = () => {
               </div>
               <Link
                 className={`${horFlexClassesNoSm} w-full btn btn-lg btn-neutral mt-2`}
-                href="/signup"
+                href="/signin"
               >
                 <span className="hidden md:block">
                   <KeyIcon className="h-10 w-10" />
