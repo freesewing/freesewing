@@ -8,7 +8,9 @@
     "neckband": "Neckband",
     "raglanSleeve": "Sleeve"
   },
-  "s": {},
+  "s": {
+	"foldLine": "Fold line"
+  },
   "o": {
     "hemWidth": {
       "t": "Hem width",
