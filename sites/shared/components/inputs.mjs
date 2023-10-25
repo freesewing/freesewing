@@ -203,9 +203,12 @@ export const PasswordInput = ({
   placeholder = '¯\\_(ツ)_/¯', // The placeholder text
   docs = false, // Docs to load, if any
   id = '', // An id to tie the input to the label
+  onKeyDown = false, // Optionall capture certain keys (like enter)
 }) => {
   const { t } = useTranslation(['account'])
   const [reveal, setReveal] = useState(false)
+
+  const extraProps = onKeyDown ? { onKeyDown } : {}
 
   return (
     <FormControl
@@ -230,6 +233,7 @@ export const PasswordInput = ({
         className={`input w-full input-bordered ${
           valid(current) ? 'input-success' : 'input-error'
         }`}
+        {...extraProps}
       />
     </FormControl>
   )

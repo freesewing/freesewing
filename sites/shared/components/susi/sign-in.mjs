@@ -55,6 +55,10 @@ export const SignIn = () => {
     }
   }, [seenUser])
 
+  const triggerSubmit = (evt) => {
+    if (evt.key === 'Enter') signinHandler(evt)
+  }
+
   const signinHandler = async (evt) => {
     evt.preventDefault()
     setLoadingStatus([true, 'processingUpdate'])
@@ -80,7 +84,7 @@ export const SignIn = () => {
       }
     }
     // Sign-in failed
-    if (result.response?.response?.status === 401) {
+    if (result?.status === 401) {
       const msg = magicLink ? t('susi:notFound') : t('susi:signInFailed')
       setSignInFailed(msg)
       setLoadingStatus([true, msg, true, false])
@@ -177,6 +181,7 @@ export const SignIn = () => {
             update={setPassword}
             current={password}
             valid={(val) => val.length > 0}
+            onKeyDown={triggerSubmit}
           />
           <button className={btnClasses} tabIndex="-1" role="button" onClick={signinHandler}>
             {signInFailed ? (
