@@ -10,7 +10,7 @@ import { isProduction } from 'shared/config/freesewing.config.mjs'
 
 export const printSettingsPath = ['print', 'pages']
 
-export const defaultPrintSettings = (units, inMm = true) => ({
+export const defaultPrintSettings = (units) => ({
   size: units === 'imperial' ? 'letter' : 'a4',
   orientation: 'portrait',
   margin: units === 'imperial' ? 12.7 : 10,

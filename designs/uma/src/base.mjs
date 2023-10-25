@@ -9,7 +9,6 @@ function draftUmaBase({
   measurements,
   store,
   utils,
-  macro,
   expand,
   units,
   part,
