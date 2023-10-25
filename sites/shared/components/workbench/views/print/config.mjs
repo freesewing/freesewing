@@ -20,7 +20,7 @@ export const defaultPrintSettings = (units) => ({
 
 const sizes = ['a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'legal', 'tabloid']
 export const loadPrintConfig = (units) => {
-  const defaults = defaultPrintSettings(units, false)
+  const defaults = defaultPrintSettings(units)
   const config = {
     size: {
       control: 2,
