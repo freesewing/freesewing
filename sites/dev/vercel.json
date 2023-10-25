@@ -2,7 +2,8 @@
   "git": {
     "deploymentEnabled": {
       "i18n": false,
-      "producionBackend": false
+      "main": false,
+      "producion-backend": false
     }
   }
 }

@@ -1,12 +1,13 @@
 welcome: Willkommen bei FreeSewing.org
+freePatterns: Free Bespoke Sewing Patterns
 howDoesItWork: Wie funktioniert es?
 whatIsFreeSewing: Was ist FreeSewing?
 whatIsFreeSewingNot: Was ist FreeSewing nicht?
-what1: FreeSewing ist eine Open-Source-Software zum Erstellen von maßgeschneiderten Schnittmustern, die von HeimnäherInnen und Modeunternehmenden gleichermaßen geschätzt wird.
+what1: FreeSewing is open source software to generate bespoke sewing patterns, loved by home sewers and fashion entrepreneurs alike.
 what2: FreeSewing.org stellt dir diese Software als Online-Tool mit unübertroffener Anpassungsfähigkeit und Flexibilität zur Verfügung. Wir haben über 50 Designs und fügen regelmäßig neue hinzu. Du kannst jedes Design auswählen und ein Schnittmuster nach deinen genauen Maßen erstellen.
-what3: Da die Maßanfertigung das Herzstück unserer Arbeit ist, möchten wir dir nachdrücklich nahelegen, genau Maß zu nehmen. Die Größenangaben der Industrie sind ein Haufen Lügen. Mach mit bei der Slow Fashion Revolution und genieße Kleidung, die dir passt.
+what3: Industry sizing is a bunch of lies. Join the slow fashion revolution and enjoy clothes that fit you.
 whatNot1: FreeSewing ist kein Unternehmen. Wir verkaufen nichts. Wir haben keine Mitarbeiter oder Angestellten. Wir haben kein Büro. Wir werden nicht bezahlt.
-whatNot2: Unsere Websites enthalten keine Werbung. Wir verfolgen dich nicht und verkaufen deine persönlichen Daten nicht. Wir verletzen deine Privatsphäre nicht.
+whatNot2: Our website does not contain any advertising. We do not track you or sell your personal data. We do not violate your privacy.
 whatNot3: FreeSewing ist nicht geschlechtsspezifisch. Wir schließen niemanden aus und diskriminieren niemanden. Wir dulden auch keine Diskriminierung in unserer Gemeinschaft.
 whatNot4: FreeSewing ist nicht perfekt. Aber wir versuchen unser Bestes. Wenn du etwas zum Verbessern findest, sind wir froh, wenn du uns darauf hinweist.
 whatNot5: So sind wir eigentlich dahin gekommen, wo wir heute sind.
@@ -14,7 +15,7 @@ pickAnyDesign: Wähle ein beliebiges Design
 addASet: Füge einen Satz an Maßen hinzu
 customizeYourPattern: Passe dein Schnittmuster an
 whyBother: Reasons to join
-why1: Generate made-to-measure sewing patterns.
+why1: Generate bespoke sewing patterns.
 why2: Store your patterns & measurements sets.
 why3: Share your creations with the community.
 why4: Open source. No ads. No nonsense.

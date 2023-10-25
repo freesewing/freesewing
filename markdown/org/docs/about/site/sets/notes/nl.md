@@ -1,5 +1,5 @@
 ---
-title: "Measurements Sets: Notes"
+title: Notities
 ---
 
 Every measurements set has a **notes** attribute that is optional.

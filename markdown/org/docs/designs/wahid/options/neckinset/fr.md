@@ -14,6 +14,6 @@ La couture de l'épaule d'un gilet est généralement plus étroite que votre ch
 
 </Note>
 
-## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_neckinset_sample.svg "Effet de cette option sur le motif")
+
+
