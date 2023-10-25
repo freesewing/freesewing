@@ -9,6 +9,7 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { Bullet } from 'shared/components/bullet.mjs'
+import { PasswordInput } from 'shared/components/inputs.mjs'
 
 export const ns = ['account']
 
@@ -111,12 +112,11 @@ export const MfaSettings = ({ title = false, welcome = false }) => {
         <div className="my-8">
           <Bullet num="1">
             <h5>{t('confirmWithPassword')}</h5>
-            <input
-              value={password}
-              onChange={(evt) => setPassword(evt.target.value)}
-              className="input w-full input-bordered flex flex-row"
-              type="text"
+            <PasswordInput
+              current={password}
+              update={setPassword}
               placeholder={t('passwordPlaceholder')}
+              valid={(val) => true}
             />
           </Bullet>
           <Bullet num="2">
