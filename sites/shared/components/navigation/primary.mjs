@@ -19,6 +19,7 @@ import {
   RocketIcon,
   TutorialIcon,
   YouTubeIcon,
+  HeartIcon,
 } from 'shared/components/icons.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 
@@ -39,10 +40,8 @@ export const icons = {
   designs: (className = '') => <DesignIcon className={className} stroke={3} />,
   docs: (className = '') => <DocsIcon className={className} />,
   showcase: (className = '') => <ShowcaseIcon className={className} />,
-  community: (className = '') => <CommunityIcon className={className} />,
-  sets: (className = '') => <MeasieIcon className={className} />,
-  patterns: (className = '') => <PatternIcon className={className} />,
   new: (className = '') => <PlusIcon className={className} />,
+  support: (className = '') => <HeartIcon className={className} />,
 
   // Lab
   code: (className = '') => <GitHubIcon className={className} />,

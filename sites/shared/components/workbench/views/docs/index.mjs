@@ -28,7 +28,7 @@ export const DocsView = ({ design }) => {
   return (
     <div className="m-auto mt-8 max-w-7xl px-4 mb-8">
       <Popout tip compact>
-        <PageLink txt={t('workbench:learnHowToUseEditor')} href="/docs/site/draft" />
+        <PageLink txt={t('workbench:learnHowToUseEditor')} href="/docs/about/site/draft" />
       </Popout>
       <h2>{t(`designs:${design}.t`)}</h2>
       <DesignInfo design={design} workbench />

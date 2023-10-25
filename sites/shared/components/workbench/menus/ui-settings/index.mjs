@@ -22,8 +22,8 @@ const UiSetting = ({ name, control, ...rest }) => (
         language={rest.language}
         slug={
           name === 'control'
-            ? 'docs/site/account/control'
-            : `docs/site/draft/ui-settings/${name.toLowerCase()}`
+            ? 'docs/about/site/account/control'
+            : `docs/about/site/draft/ui-settings/${name.toLowerCase()}`
         }
       />
     }
