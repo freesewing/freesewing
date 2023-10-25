@@ -9,8 +9,6 @@ function draftBack({
   options,
   part,
   store,
-  paperless,
-  complete,
   sa,
   macro,
   snippets,
@@ -51,88 +49,84 @@ function draftBack({
     .curve(points.armpitScoopCp1, points.armpitScoopCp2, points.armpitScoopEnd)
     .line(points.neckShoulderCorner)
     .curve(points.neckCP1, points.neckCP2, points.cfNeck)
-    .hide(true)
+    .hide()
 
-  paths.foldBase = new Path().move(points.cfNeck).line(points.cfHem).hide(true)
+  paths.foldBase = new Path().move(points.cfNeck).line(points.cfHem).hide()
 
-  paths.hemBase = new Path().move(points.cfHem).line(points.sideHem).hide(true)
+  paths.hemBase = new Path().move(points.cfHem).line(points.sideHem).hide()
 
-  paths.seam = paths.saBase.join(paths.foldBase).join(paths.hemBase).close().attr('class', 'fabric')
+  paths.seam = paths.saBase.join(paths.foldBase).join(paths.hemBase).close().addClass('fabric')
 
-  if (paperless) {
-    macro('vd', {
-      id: 'hCenterSeam',
-      from: points.cfNeck,
-      to: points.cfHem,
-      x: -(15 + sa),
-    })
-    macro('vd', {
-      id: 'hNeck',
-      from: points.neckShoulderCorner,
-      to: points.cfNeck,
-      x: -(15 + sa),
-      noStartMarker: true,
-      noEndMarker: true,
-    })
-    macro('vd', {
-      id: 'hTotal',
-      from: points.neckShoulderCorner,
-      to: points.cfHem,
-      x: -(30 + sa),
-    })
-    macro('vd', {
-      id: 'hRaglanSeam',
-      from: points.armpitCornerScooped,
-      to: points.neckShoulderCorner,
-      x: points.armpitCornerScooped.x + (15 + sa),
-    })
-    macro('hd', {
-      id: 'wRaglanSeamStraightPortion',
-      from: points.neckShoulderCorner,
-      to: points.armpitScoopEnd,
-      y: 0 - (sa + 0),
-    })
-    macro('hd', {
-      id: 'wRaglanSeam',
-      from: points.neckShoulderCorner,
-      to: points.armpitCornerScooped,
-      y: 0 - (sa + 15),
-    })
-    macro('hd', {
-      id: 'wNeck',
-      from: points.cfNeck,
-      to: points.neckShoulderCorner,
-      y: 0 - (sa + 15),
-      noStartMarker: true,
-      noEndMarker: true,
-    })
-    macro('hd', {
-      id: 'wCenterToArmpit',
-      from: points.cfNeck,
-      to: points.armpitCornerScooped,
-      y: 0 - (sa + 30),
-    })
-  }
+  macro('vd', {
+    id: 'hCenterSeam',
+    from: points.cfNeck,
+    to: points.cfHem,
+    x: -(15 + sa),
+  })
+  macro('vd', {
+    id: 'hNeck',
+    from: points.neckShoulderCorner,
+    to: points.cfNeck,
+    x: -(15 + sa),
+    noStartMarker: true,
+    noEndMarker: true,
+  })
+  macro('vd', {
+    id: 'hTotal',
+    from: points.neckShoulderCorner,
+    to: points.cfHem,
+    x: -(30 + sa),
+  })
+  macro('vd', {
+    id: 'hRaglanSeam',
+    from: points.armpitCornerScooped,
+    to: points.neckShoulderCorner,
+    x: points.armpitCornerScooped.x + (15 + sa),
+  })
+  macro('hd', {
+    id: 'wRaglanSeamStraightPortion',
+    from: points.neckShoulderCorner,
+    to: points.armpitScoopEnd,
+    y: 0 - (sa + 0),
+  })
+  macro('hd', {
+    id: 'wRaglanSeam',
+    from: points.neckShoulderCorner,
+    to: points.armpitCornerScooped,
+    y: 0 - (sa + 15),
+  })
+  macro('hd', {
+    id: 'wNeck',
+    from: points.cfNeck,
+    to: points.neckShoulderCorner,
+    y: 0 - (sa + 15),
+    noStartMarker: true,
+    noEndMarker: true,
+  })
+  macro('hd', {
+    id: 'wCenterToArmpit',
+    from: points.cfNeck,
+    to: points.armpitCornerScooped,
+    y: 0 - (sa + 30),
+  })
 
-  store.cutlist.addCut({ cut: 1 })
+  store.cutlist.addCut({ cut: 1, from: 'fabric' })
 
-  if (complete) {
-    snippets.armpitScoopEnd = new Snippet('bnotch', points.armpitScoopEnd)
+  snippets.armpitScoopEnd = new Snippet('bnotch', points.armpitScoopEnd)
 
-    points.title = new Point(
-      points.armpitCorner.x / 2,
-      (points.cfHem.y + points.armpitCornerScooped.y / 2) / 2
-    )
-    macro('title', { at: points.title, nr: 2, title: 'back' })
+  points.title = new Point(
+    points.armpitCorner.x / 2,
+    (points.cfHem.y + points.armpitCornerScooped.y / 2) / 2
+  )
+  macro('title', { at: points.title, nr: 2, title: 'back' })
 
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.cfHem)
-        .join(paths.hemBase.offset(sa * options.hemWidth))
-        .join(paths.saBase.offset(sa))
-        .line(points.cfNeck)
-        .attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = new Path()
+      .move(points.cfHem)
+      .join(paths.hemBase.offset(sa * options.hemWidth))
+      .join(paths.saBase.offset(sa))
+      .line(points.cfNeck)
+      .addClass('fabric sa')
   }
 
   const neckPath = new Path()
@@ -145,8 +139,6 @@ function draftBack({
 
 export const back = {
   name: 'shelly.back',
-  plugins: [],
   draft: draftBack,
   from: base,
-  measurements: ['neck', 'chest', 'hips', 'waistToHips', 'hpsToWaistBack'],
 }

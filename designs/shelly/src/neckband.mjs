@@ -1,5 +1,3 @@
-import { front } from './front.mjs'
-import { back } from './back.mjs'
 import { raglanSleeve } from './raglansleeve.mjs'
 
 function draftNeckband({
@@ -11,7 +9,6 @@ function draftNeckband({
   options,
   part,
   store,
-  paperless,
   complete,
   sa,
   macro,
@@ -34,35 +31,33 @@ function draftNeckband({
     .line(points.bottomRightCorner)
     .line(points.topRightCorner)
     .line(points.topLeftCorner)
-    .attr('class', 'fabric')
-    .hide(true)
+    .addClass('fabric')
+    .hide()
 
-  paths.foldBase = new Path().move(points.topLeftCorner).line(points.bottomLeftCorner).hide(true)
+  paths.foldBase = new Path().move(points.topLeftCorner).line(points.bottomLeftCorner).hide()
 
-  paths.foldLine = new Path()
-    .move(points.leftCenter)
-    .line(points.rightCenter)
-    .attr('class', 'various dashed')
-    .attr('data-text', 'Fold Line')
-    .attr('data-text-class', 'center')
-    .hide(false)
-
-  paths.seam = paths.saBase.join(paths.foldBase).close().attr('class', 'fabric')
-
-  if (paperless) {
-    macro('vd', {
-      id: 'hWidth',
-      from: points.topLeftCorner,
-      to: points.bottomLeftCorner,
-      x: -(15 + sa),
-    })
-    macro('hd', {
-      id: 'wLength',
-      from: points.topLeftCorner,
-      to: points.topRightCorner,
-      y: -(sa + 15),
-    })
+  if (complete) {
+    paths.foldLine = new Path()
+      .move(points.leftCenter)
+      .line(points.rightCenter)
+      .addClass('various dashed')
+      .addText('shelly:foldLine', 'center')
   }
+
+  paths.seam = paths.saBase.join(paths.foldBase).close().addClass('fabric')
+
+  macro('vd', {
+    id: 'hWidth',
+    from: points.topLeftCorner,
+    to: points.bottomLeftCorner,
+    x: -(15 + sa),
+  })
+  macro('hd', {
+    id: 'wLength',
+    from: points.topLeftCorner,
+    to: points.topRightCorner,
+    y: -(sa + 15),
+  })
 
   points.cutonfoldFrom = points.topLeftCorner
   points.cutonfoldTo = points.bottomLeftCorner
@@ -72,20 +67,19 @@ function draftNeckband({
     grainline: true,
   })
 
-  store.cutlist.addCut({ cut: 1 })
+  store.cutlist.addCut({ cut: 1, from: 'fabric' })
 
-  if (complete) {
-    points.title = new Point(neckbandLength / 4, neckbandWidth / 2)
-    macro('title', { at: points.title, nr: 4, title: 'neckband' })
+  points.title = new Point(neckbandLength / 4, neckbandWidth / 2)
+  macro('title', { at: points.title, nr: 4, title: 'neckband' })
 
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.bottomLeftCorner)
-        .join(paths.saBase.offset(sa))
-        .line(points.topLeftCorner)
-        .attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = new Path()
+      .move(points.bottomLeftCorner)
+      .join(paths.saBase.offset(sa))
+      .line(points.topLeftCorner)
+      .addClass('fabric sa')
   }
+
   return part
 }
 
@@ -93,8 +87,7 @@ export const neckband = {
   name: 'shelly.neckband',
   plugins: [],
   draft: draftNeckband,
-  after: [front, back, raglanSleeve],
-  measurements: ['neck', 'chest', 'biceps', 'wrist'],
+  after: [raglanSleeve],
   options: {
     // How long the neckband should be, as a percentage of the length of the neck hole.
     neckbandLength: { pct: 80, min: 50, max: 100, menu: 'fit' },
