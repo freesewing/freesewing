@@ -8,6 +8,7 @@ On these pages, we'll paint a high-level picture of how to get the most out of t
 <Comment by="joost">
 
 ##### Where can I download the patterns?
+
 It can be frustrating for visitors who come here expecting a website where they can download sewing patterns that they can't seem to find the sewing patterns to download. Almost like hiding the *download button* is some elaborate scheme to waste their time.
 
 I don't really know how to fix this because I cannot control people's expectations.
@@ -60,7 +61,7 @@ Please enable [Two-Factor Authentication](/account/mfa/) to secure your FreeSewi
 
 ## Make it your own
 
-Now that you have a FreeSewing account, there's more you can do on FreeSewing.org. Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features:
+Now that you have a FreeSewing account, there's more you can do on FreeSewing.org. Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features:
 
 - [Account](/docs/about/site/account)
 - [Maten sets](/docs/about/site/sets)
