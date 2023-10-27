@@ -1,7 +1,7 @@
 import { backPoints } from './backpoints.mjs'
 
 export const backOutside = {
-  name: 'noble.backOutside',
+  name: 'tristan.backOutside',
   from: backPoints,
   draft: ({ sa, Point, points, Path, paths, Snippet, snippets, options, macro, part }) => {
     paths.cut = new Path()
@@ -26,6 +26,13 @@ export const backOutside = {
       .join(paths.dart)
       .close()
       .attr('class', 'fabric')
+
+    console.log({
+      backSide: new Path()
+        .move(points.waistSide)
+        .curve_(points.waistSideCp2, points.armhole)
+        .length(),
+    })
 
     return part
   },

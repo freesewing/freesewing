@@ -64,18 +64,30 @@ export const backPoints = {
       1 - options.cutRoundnessBack
     )
 
-    points.armholeCutCp = points.armhole.shiftFractionTowards(
-      points.cutSeamOutside,
-      1 - options.cutRoundnessBack
-    )
+    points.armholeCutCp = points.armhole
+      .shift(180, options.armholeBackIn * points.armhole.dist(points.dartTip))
+      .addCircle(4)
+    // points.cutSeamOutside = points.armhole.shiftFractionTowards(
+    //   points.cutSeamOutside,
+    //   1 - options.cutRoundnessBack
+    // )
 
-    points.strapOutsideCp = points.strapOutside.shiftFractionTowards(
-      points.cutSeamOutside.shift(
-        points.cutSeamOutside.angle(points.shoulderDart) - 90,
-        strapWidth / 2
-      ),
-      1 - options.cutRoundnessBack
-    )
+    points.strapOutsideCp = points.strapOutside
+      .shiftFractionTowards(
+        points.cutSeamOutside.shift(
+          points.cutSeamOutside.angle(points.shoulderDart) - 90,
+          strapWidth / 2
+        ),
+        options.armholeFrontDepth
+      )
+      .addCircle(2)
+    // points.strapOutsideCp = points.strapOutside.shiftFractionTowards(
+    //   points.cutSeamOutside.shift(
+    //     points.cutSeamOutside.angle(points.shoulderDart) - 90,
+    //     strapWidth / 2
+    //   ),
+    //   1 - options.cutRoundnessBack
+    // ).addCircle(2)
 
     const armHole = new Path()
       .move(points.armhole)
@@ -90,17 +102,17 @@ export const backPoints = {
       ).length,
     })
 
-    var iter = 0
-    while (
-      armHole.intersects(
-        new Path()
-          .move(points.strapOutside)
-          .curve(points.strapOutsideCp, points.armholeCutCp, points.armhole)
-      ).length != 0 &&
-      ++iter < 250
-    ) {
-      points.armholeCutCp = points.armholeCutCp.shiftFractionTowards(points.cutSeamOutside, 0.05)
-    }
+    // var iter = 0
+    // while (
+    //   armHole.intersects(
+    //     new Path()
+    //       .move(points.strapOutside)
+    //       .curve(points.strapOutsideCp, points.armholeCutCp, points.armhole)
+    //   ).length != 0 &&
+    //   ++iter < 250
+    // ) {
+    //   points.armholeCutCp = points.armholeCutCp.shiftFractionTowards(points.cutSeamOutside, 0.05)
+    // }
 
     return part
   },

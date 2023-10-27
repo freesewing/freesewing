@@ -1,14 +1,26 @@
 import { frontPoints as nobleFrontPoints } from '@freesewing/noble'
 import { hidePresets } from '@freesewing/core'
 import * as options from './options.mjs'
-import { utils } from 'mocha'
 
 export const frontPoints = {
   name: 'tristan.frontPoints',
   from: nobleFrontPoints,
   hide: hidePresets.HIDE_ALL,
   options,
-  draft: ({ log, points, Path, paths, snippets, options, macro, utils, store, part }) => {
+  draft: ({
+    log,
+    measurements,
+    Point,
+    points,
+    Path,
+    paths,
+    snippets,
+    options,
+    macro,
+    utils,
+    store,
+    part,
+  }) => {
     const bCircle = 0.552284749831
 
     // Hide Noble paths
@@ -34,6 +46,7 @@ export const frontPoints = {
       strapWidth = shoulderWidthOutside * 2
     }
     store.set('strapWidth', strapWidth)
+    console.log({ strapWidth: strapWidth })
 
     console.log({ options: JSON.parse(JSON.stringify(options)) })
     console.log({ paths: JSON.parse(JSON.stringify(paths)) })
@@ -47,6 +60,7 @@ export const frontPoints = {
     //   .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
     // .curve_(points.armholePitchCp2, points.shoulder)
     points.cfCut = points.cfNeck.shiftFractionTowards(points.cfBust, options.cutDepthFront)
+    console.log({ cut: points.cfNeck.dist(points.cfCut) })
 
     points.cutSeamInside = new Path()
       .move(points.waistDartLeft)
@@ -63,6 +77,7 @@ export const frontPoints = {
         points.shoulderDartOutside
       )
       .intersectsY(points.cfCut.y)[0]
+      .addCircle(6)
 
     points.cfCutCp = points.cfCut.shiftFractionTowards(
       points.cutSeamInside,
@@ -76,18 +91,28 @@ export const frontPoints = {
       1 - options.cutRoundnessFront
     )
 
-    points.armholeCutCp = points.armhole.shiftFractionTowards(
-      points.cutSeamOutside,
-      1 - options.cutRoundnessFront
-    )
+    points.armholeCutCp = points.armhole
+      .shiftFractionTowards(points.bustDartTip, options.armholeFrontIn)
+      .addCircle(4)
+    // points.armholeCutCp = points.armhole.shiftFractionTowards(
+    //   points.cutSeamOutside,
+    //   1 - options.cutRoundnessFront
+    // ).addCircle(4)
 
     points.strapOutsideCp = points.strapOutside.shiftFractionTowards(
-      points.cutSeamOutside.shift(
+      points.bustDartTip.shift(
         points.cutSeamOutside.angle(points.shoulderDartOutside) - 90,
         strapWidth / 2
       ),
-      1 - options.cutRoundnessFront
+      options.armholeFrontDepth
     )
+    // points.strapOutsideCp = points.strapOutside.shiftFractionTowards(
+    //   points.cutSeamOutside.shift(
+    //     points.cutSeamOutside.angle(points.shoulderDartOutside) - 90,
+    //     strapWidth / 2
+    //   ),
+    //   1 - options.cutRoundnessFront
+    // )
 
     const armHole = new Path()
       .move(points.armhole)
@@ -102,18 +127,22 @@ export const frontPoints = {
       ).length,
     })
 
-    var iter = 0
-    while (
-      armHole.intersects(
-        new Path()
-          .move(points.strapOutside)
-          .curve(points.strapOutsideCp, points.armholeCutCp, points.armhole)
-      ).length != 0 &&
-      ++iter < 250
-    ) {
-      points.armholeCutCp = points.armholeCutCp.shiftFractionTowards(points.cutSeamOutside, 0.05)
-    }
+    // var iter = 0
+    // while (
+    //   armHole.intersects(
+    //     new Path()
+    //       .move(points.strapOutside)
+    //       .curve(points.strapOutsideCp, points.armholeCutCp, points.armhole)
+    //   ).length != 0 &&
+    //   ++iter < 250
+    // ) {
+    //   points.armholeCutCp = points.armholeCutCp.shiftFractionTowards(points.cutSeamOutside, 0.05)
+    // }
 
+    // armhole adjustment
+    if (points.sideHem.y < points.waistDartRight.y) {
+      points.sideHem.y = points.waistDartRight.y
+    }
     return part
   },
 }
