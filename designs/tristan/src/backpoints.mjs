@@ -74,13 +74,12 @@ export const backPoints = {
 
     points.strapOutsideCp = points.strapOutside
       .shiftFractionTowards(
-        points.cutSeamOutside.shift(
-          points.cutSeamOutside.angle(points.shoulderDart) - 90,
-          strapWidth / 2
-        ),
+        points.dartTip.shift(points.dartTip.angle(points.shoulderDart) - 90, strapWidth / 2),
         options.armholeFrontDepth
       )
       .addCircle(2)
+      .addCircle(4)
+      .addCircle(6)
     // points.strapOutsideCp = points.strapOutside.shiftFractionTowards(
     //   points.cutSeamOutside.shift(
     //     points.cutSeamOutside.angle(points.shoulderDart) - 90,

@@ -11,9 +11,9 @@ export const armholeBackDepth = 0.6
 export const dartPosition = 'shoulder'
 // Percentages
 export const armholeDepth = { pct: 44, min: 38, max: 55, menu: 'armhole' }
-export const strapWidth = { pct: 45, min: 5, max: 100, menu: 'style' }
+export const strapWidth = { pct: 45, min: 5, max: 90, menu: 'style' }
 export const cutDepthFront = { pct: 80, min: 0, max: 125, menu: 'style' }
-export const cutDepthBack = { pct: 40, min: 0, max: 125, menu: 'style' }
+export const cutDepthBack = { pct: 40, min: 5, max: 90, menu: 'style' }
 // export const cutShape = { pct: 80, min: 0, max: 100, menu: 'style' }
 export const cutRoundnessFront = { pct: 10, min: 0, max: 100, menu: 'style' }
 export const cutRoundnessBack = { pct: 20, min: 0, max: 100, menu: 'style' }
