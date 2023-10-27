@@ -5703,6 +5703,11 @@ estree-util-is-identifier-name@^2.0.0:
   resolved "https://registry.yarnpkg.com/estree-util-is-identifier-name/-/estree-util-is-identifier-name-2.1.0.tgz#fb70a432dcb19045e77b05c8e732f1364b4b49b2"
   integrity sha512-bEN9VHRyXAUOjkKVQVvArFym08BTWB0aJPppZZr0UNyAqWsLaVfAqP7hbaTJjzHifmB5ebnR8Wm7r7yGN/HonQ==
 
+estree-util-is-identifier-name@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/estree-util-is-identifier-name/-/estree-util-is-identifier-name-3.0.0.tgz#0b5ef4c4ff13508b34dcd01ecfa945f61fce5dbd"
+  integrity sha512-hFtqIDZTIUZ9BXLb8y4pYGyk6+wekIivNVTcmvk8NoOh+VeRn5y6cEHzbURrWbfp1fIqdVipilzj+lfaadNZmg==
+
 estree-util-to-js@^1.1.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/estree-util-to-js/-/estree-util-to-js-1.2.0.tgz#0f80d42443e3b13bd32f7012fffa6f93603f4a36"
@@ -11766,16 +11771,16 @@ remark-gfm@3.0.1:
     micromark-extension-gfm "^2.0.0"
     unified "^10.0.0"
 
-remark-mdx-frontmatter@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/remark-mdx-frontmatter/-/remark-mdx-frontmatter-3.0.0.tgz#302e68cf0d5992225b7c936d6e0a7aec7b1b9452"
-  integrity sha512-Tnkz8n/fxZGKMBaFJa5jKumJPpuTr9eZF+u+4UcnlUNmUQP3h8ZwgaTzIvkVb6QjG6QE0itsP5JjWnkEBz8IJw==
+remark-mdx-frontmatter@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/remark-mdx-frontmatter/-/remark-mdx-frontmatter-4.0.0.tgz#1d0287103ac73c5d493d2fad19dd805e69db55ca"
+  integrity sha512-PZzAiDGOEfv1Ua7exQ8S5kKxkD8CDaSb4nM+1Mprs6u8dyvQifakh+kCj6NovfGXW+bTvrhjaR3srzjS2qJHKg==
   dependencies:
-    "@types/mdast" "^3.0.0"
-    estree-util-is-identifier-name "^2.0.0"
+    "@types/mdast" "^4.0.0"
+    estree-util-is-identifier-name "^3.0.0"
     estree-util-value-to-estree "^3.0.0"
     toml "^3.0.0"
-    unified "^10.0.0"
+    unified "^11.0.0"
     yaml "^2.0.0"
 
 remark-mdx@2.0.0-next.9:
