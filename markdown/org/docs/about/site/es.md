@@ -9,6 +9,10 @@ On these pages, we'll paint a high-level picture of how to get the most out of t
 
 ##### Where can I download the patterns?
 
+##### Where can I download the patterns?
+
+##### Where can I download the patterns?
+
 It can be frustrating for visitors who come here expecting a website where they can download sewing patterns that they can't seem to find the sewing patterns to download. Almost like hiding the *download button* is some elaborate scheme to waste their time.
 
 I don't really know how to fix this because I cannot control people's expectations.
