@@ -50,7 +50,7 @@ export const BioSettings = ({ welcome = false }) => {
   const nextHref =
     welcomeSteps[account.control].length > 5
       ? '/welcome/' + welcomeSteps[account.control][6]
-      : '/docs/guide'
+      : '/docs/about/guide'
 
   return (
     <div className="max-w-xl xl:pl-4">
@@ -60,7 +60,7 @@ export const BioSettings = ({ welcome = false }) => {
         update={setBio}
         current={bio}
         placeholder={t('bioTitle')}
-        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/bio`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/bio`} />}
         labelBL={
           <span className="flex flex-row items-center gap-1">
             <TipIcon className="w-6 h-6 text-success" />

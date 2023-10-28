@@ -9,6 +9,8 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { Bullet } from 'shared/components/bullet.mjs'
+import { PasswordInput } from 'shared/components/inputs.mjs'
+import { CopyToClipboard } from 'shared/components/copy-to-clipboard.mjs'
 
 export const ns = ['account']
 
@@ -17,7 +19,7 @@ const CodeInput = ({ code, setCode, t }) => (
     value={code}
     onChange={(evt) => setCode(evt.target.value)}
     className="input w-full text-4xl  input-bordered input-lg flex flex-row text-center mb-8 tracking-widest"
-    type="number"
+    type="text"
     placeholder={t('000000')}
   />
 )
@@ -34,6 +36,7 @@ export const MfaSettings = ({ title = false, welcome = false }) => {
   const [disable, setDisable] = useState(false)
   const [code, setCode] = useState('')
   const [password, setPassword] = useState('')
+  const [scratchCodes, setScratchCodes] = useState(false)
 
   // Helper method to enable MFA
   const enableMfa = async () => {
@@ -75,6 +78,7 @@ export const MfaSettings = ({ title = false, welcome = false }) => {
     })
     if (result.success) {
       setAccount(result.data.account)
+      setScratchCodes(result.data.scratchCodes)
       setLoadingStatus([true, 'settingsSaved', true, true])
     } else setLoadingStatus([true, 'backendError', true, false])
     setEnable(false)
@@ -111,12 +115,11 @@ export const MfaSettings = ({ title = false, welcome = false }) => {
         <div className="my-8">
           <Bullet num="1">
             <h5>{t('confirmWithPassword')}</h5>
-            <input
-              value={password}
-              onChange={(evt) => setPassword(evt.target.value)}
-              className="input w-full input-bordered flex flex-row"
-              type="text"
+            <PasswordInput
+              current={password}
+              update={setPassword}
               placeholder={t('passwordPlaceholder')}
+              valid={() => true}
             />
           </Bullet>
           <Bullet num="2">
@@ -132,25 +135,49 @@ export const MfaSettings = ({ title = false, welcome = false }) => {
           </button>
         </div>
       ) : null}
-      <div className="flex flex-row items-center mt-4">
-        {account.mfaEnabled ? (
-          disable ? null : (
-            <button className="btn btn-primary block w-full" onClick={() => setDisable(true)}>
-              {t('disableMfa')}
-            </button>
-          )
-        ) : enable ? null : (
-          <div>
-            <button className="btn btn-primary block w-full" onClick={enableMfa}>
-              {t('mfaSetup')}
-            </button>
-            <Popout tip>
-              <h5>{t('mfaTipTitle')}</h5>
-              <p>{t('mfaTipMsg')}</p>
-            </Popout>
+      {scratchCodes ? (
+        <>
+          <h3>{t('account:mfaScratchCodes')}</h3>
+          <p>{t('account:mfaScratchCodesMsg1')}</p>
+          <p>{t('account:mfaScratchCodesMsg2')}</p>
+          <div className="hljs my-4">
+            <div className=" flex flex-row justify-between items-center text-xs font-medium text-warning mt-1 border-b border-neutral-content border-opacity-25 px-4 py-1 mb-2 lg:text-sm">
+              <span>{t('account:mfaScratchCodes')}</span>
+              <CopyToClipboard
+                content={
+                  'FreeSewing ' +
+                  t('account:mfaScratchCodes') +
+                  ':\n' +
+                  scratchCodes.map((code) => code + '\n').join('')
+                }
+              />
+            </div>
+            <pre className="language-shell hljs text-base lg:text-lg whitespace-break-spaces overflow-scroll pr-4">
+              {scratchCodes.map((code) => code + '\n')}
+            </pre>
           </div>
-        )}
-      </div>
+        </>
+      ) : (
+        <div className="flex flex-row items-center mt-4">
+          {account.mfaEnabled ? (
+            disable ? null : (
+              <button className="btn btn-primary block w-full" onClick={() => setDisable(true)}>
+                {t('disableMfa')}
+              </button>
+            )
+          ) : enable ? null : (
+            <div>
+              <button className="btn btn-primary block w-full" onClick={enableMfa}>
+                {t('mfaSetup')}
+              </button>
+              <Popout tip>
+                <h5>{t('mfaTipTitle')}</h5>
+                <p>{t('mfaTipMsg')}</p>
+              </Popout>
+            </div>
+          )}
+        </div>
+      )}
       {!welcome && <BackToAccountButton />}
     </div>
   )

@@ -285,7 +285,7 @@ export const Mset = ({ id, publicOnly = false }) => {
 
   const docs = {}
   for (const option of ['name', 'units', 'public', 'notes', 'image']) {
-    docs[option] = <DynamicMdx language={i18n.language} slug={`docs/site/sets/${option}`} />
+    docs[option] = <DynamicMdx language={i18n.language} slug={`docs/about/site/sets/${option}`} />
   }
 
   const heading = (
@@ -1079,7 +1079,8 @@ const SuggestCset = ({ mset, backend, setLoadingStatus, t }) => {
         {t('account:img')}
       </h4>
       <p>
-        {t('account:csetImgMsg')}: <PageLink href="/docs/site/csets">{t('account:docs')}</PageLink>
+        {t('account:csetImgMsg')}:{' '}
+        <PageLink href="/docs/about/site/csets">{t('account:docs')}</PageLink>
       </p>
       <PassiveImageInput
         label={t('account:img')}
