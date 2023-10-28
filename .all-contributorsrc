@@ -1086,6 +1086,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Yash-Ambekar",
+      "name": "Yash Anil Ambekar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96481913?v=4",
+      "profile": "https://github.com/Yash-Ambekar",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,
