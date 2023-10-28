@@ -156,8 +156,12 @@
       "t": "Seat ease",
       "d": "Controls how wide the seat is."
     },
+	"armpitEase": {
+	  "t": "Armpit ease",
+	  "d": "Gives more room in the armpit by shifting the sleeve down the body."
+	},
     "crotchGussetWidth": {
-      "t": "Crotch gusset Width",
+      "t": "Crotch gusset width",
       "d": "Controls how wide the crotch gusset will be. Adjust so that the front and back pieces look smooth and clean around the crotch fork and upper legs. Deeper thighs and abdomens require a larger value, while wider ones require a smaller value."
     },
     "upperLegEase": {
