@@ -1077,6 +1077,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Himanshu1801",
+      "name": "Himanshu Singh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78968566?v=4",
+      "profile": "https://github.com/Himanshu1801",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,
