@@ -119,7 +119,7 @@ export const MfaSettings = ({ title = false, welcome = false }) => {
               current={password}
               update={setPassword}
               placeholder={t('passwordPlaceholder')}
-              valid={(val) => true}
+              valid={() => true}
             />
           </Bullet>
           <Bullet num="2">

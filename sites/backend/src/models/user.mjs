@@ -1550,7 +1550,7 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
       /*
        * Looks good. Generated scratch codes, then update the user record to enable MFA
        */
-      const scratchCodes = Array.from([...'eightpls']).map((val) => randomString(4))
+      const scratchCodes = Array.from([...'eightpls']).map(() => randomString(4))
       const mfaScratchCodes = []
       for (const code of scratchCodes) {
         const hashed = await hash(code)

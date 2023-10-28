@@ -196,7 +196,6 @@ export const StringInput = ({
  * Input for MFA code
  */
 export const MfaInput = ({
-  label, // Label to use
   update, // onChange handler
   current, // The current value
   id = 'mfa', // An id to tie the input to the label
