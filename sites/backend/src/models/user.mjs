@@ -915,14 +915,9 @@ UserModel.prototype.passwordSignIn = async function (req) {
         this.clear.mfaSecret,
         this.clear.data.mfaScratchCodes
       )
-      console.log({
-        stored: this.clear.data.mfaScratchCodes,
-        new: mfaScratchCodes,
-      })
       if (!result) return this.setResponse(401, 'signInFailed')
-      if (result && mfaScratchCodes.length !== this.clear.data.mfaScratchCodes.length) {
+      if (mfaScratchCodes.length !== this.clear.data.mfaScratchCodes.length) {
         // Scratch code was used, update record to remove it
-        console.log('Updating scratch codes to', mfaScratchCodes)
         await this.update({ data: { ...this.clear.data, mfaScratchCodes } })
       }
     }
@@ -1017,8 +1012,7 @@ UserModel.prototype.linkSignIn = async function (req) {
       this.clear.data.mfaScratchCodes
     )
     if (!result) return this.setResponse(401, 'signInFailed')
-    if (result && mfaScratchCodes.length !== this.clear.data.mfaScratchCodes.length) {
-      console.log('Updating scratch codes to', mfaScratchCodes)
+    if (mfaScratchCodes.length !== this.clear.data.mfaScratchCodes.length) {
       // Scratch code was used, update record to remove it
       await this.update({ data: { ...this.clear.data, mfaScratchCodes } })
     }

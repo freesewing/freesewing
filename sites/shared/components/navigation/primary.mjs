@@ -4,14 +4,11 @@ import { useContext } from 'react'
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
 import {
-  CommunityIcon,
   DesignIcon,
   DocsIcon,
   RssIcon,
   ShowcaseIcon,
   UserIcon,
-  MeasieIcon,
-  PatternIcon,
   CodeIcon,
   BulletIcon,
   PlusIcon,

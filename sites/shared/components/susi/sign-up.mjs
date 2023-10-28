@@ -45,10 +45,6 @@ export const SignUp = () => {
     setEmailValid(valid === true ? true : false)
   }
 
-  const triggerSubmit = (evt) => {
-    if (evt.key === 'Enter') signinHandler(evt)
-  }
-
   const signupHandler = async (evt) => {
     evt.preventDefault()
     if (!emailValid) {

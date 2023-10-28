@@ -152,7 +152,7 @@ export const MfaSettings = ({ title = false, welcome = false }) => {
                 }
               />
             </div>
-            <pre class="language-shell hljs text-base lg:text-lg whitespace-break-spaces overflow-scroll pr-4">
+            <pre className="language-shell hljs text-base lg:text-lg whitespace-break-spaces overflow-scroll pr-4">
               {scratchCodes.map((code) => code + '\n')}
             </pre>
           </div>

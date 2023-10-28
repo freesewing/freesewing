@@ -86,7 +86,7 @@ export const SignIn = () => {
       }
     }
     // Sign-in failed
-    if (result?.status === 401) {
+    if (result.status === 401) {
       const msg = magicLink ? t('susi:notFound') : t('susi:signInFailed')
       setSignInFailed(msg)
       setLoadingStatus([true, msg, true, false])
