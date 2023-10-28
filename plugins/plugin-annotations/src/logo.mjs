@@ -1,5 +1,5 @@
 // Export defs
-import { logoPath } from '../../../sites/shared/components/logos/freesewing.mjs'
+import { logoPath } from '../../../config/logo.mjs'
 
 export const logoDefs = [
   {
