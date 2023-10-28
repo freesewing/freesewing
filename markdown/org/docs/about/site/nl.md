@@ -61,7 +61,7 @@ Please enable [Two-Factor Authentication](/account/mfa/) to secure your FreeSewi
 
 ## Make it your own
 
-Now that you have a FreeSewing account, there's more you can do on FreeSewing.org. Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features:
+Now that you have a FreeSewing account, there's more you can do on FreeSewing.org. Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features:
 
 - [Account](/docs/about/site/account)
 - [Maten sets](/docs/about/site/sets)
