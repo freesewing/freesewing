@@ -20,7 +20,7 @@ import {
   FreeSewingIcon,
   UserIcon,
 } from 'shared/components/icons.mjs'
-import { StringInput, PasswordInput } from 'shared/components/inputs.mjs'
+import { MfaInput, StringInput, PasswordInput } from 'shared/components/inputs.mjs'
 
 export const ns = ['susi', 'errors', 'status']
 
@@ -37,6 +37,8 @@ export const SignIn = () => {
   const [signInFailed, setSignInFailed] = useState(false)
   const [magicLinkSent, setMagicLinkSent] = useState(false)
   const [seenBefore, setSeenBefore] = useState(false)
+  const [mfa, setMfa] = useState(false)
+  const [mfaCode, setMfaCode] = useState('')
 
   useEffect(() => {
     if (typeof window !== 'undefined' && signInFailed) {
@@ -64,7 +66,7 @@ export const SignIn = () => {
     setLoadingStatus([true, 'processingUpdate'])
     const result = magicLink
       ? await backend.signIn({ username, password: false })
-      : await backend.signIn({ username, password })
+      : await backend.signIn({ username, password, token: mfaCode })
     // Sign-in succeeded
     if (result.success) {
       if (magicLink) {
@@ -96,6 +98,11 @@ export const SignIn = () => {
       else if (result.data.error === 'passwordMissing') msg = t('susi:passwordMissing')
       setSignInFailed(msg)
       setLoadingStatus([true, msg, true, false])
+    }
+    // MFA active
+    if (result.status === 403 && result.data.error === 'mfaTokenRequired') {
+      setMfa(true)
+      setLoadingStatus([true, t('susi:mfaCodeMsg'), true, true])
     }
   }
 
@@ -131,6 +138,40 @@ export const SignIn = () => {
         <p className="text-inherit text-lg text-center">{t('susi:clickSigninLink')}</p>
         <div className="flex flex-row gap-4 items-center justify-center p-8">
           <button className="btn btn-ghost" onClick={() => setMagicLinkSent(false)}>
+            {t('susi:back')}
+          </button>
+          <Link href="/support" className="btn btn-ghost">
+            {t('susi:contact')}
+          </Link>
+        </div>
+      </>
+    )
+
+  if (mfa)
+    return (
+      <>
+        <h1 className="text-inherit text-3xl lg:text-5xl mb-4 pb-0 text-center">
+          {t('susi:mfaCode')}
+        </h1>
+        <p className="text-inherit text-lg text-center">{t('susi:mfaCodeMsg')}</p>
+        <MfaInput label={t('susi:mfaCode')} update={setMfaCode} value={mfaCode} />
+        <button className={btnClasses} tabIndex="-1" role="button" onClick={signinHandler}>
+          {signInFailed ? (
+            noBueno
+          ) : (
+            <>
+              <span className="hidden lg:block">
+                <KeyIcon />
+              </span>
+              <span className="pl-2">{t('susi:signIn')}</span>
+              <span className="hidden lg:block">
+                <LockIcon />
+              </span>
+            </>
+          )}
+        </button>
+        <div className="flex flex-row gap-4 items-center justify-center p-8">
+          <button className="btn btn-ghost" onClick={() => setMfa(false)}>
             {t('susi:back')}
           </button>
           <Link href="/support" className="btn btn-ghost">

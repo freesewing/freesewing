@@ -193,6 +193,28 @@ export const StringInput = ({
 )
 
 /*
+ * Input for MFA code
+ */
+export const MfaInput = ({
+  label, // Label to use
+  update, // onChange handler
+  current, // The current value
+  id = 'mfa', // An id to tie the input to the label
+}) => {
+  const { t } = useTranslation(['susi'])
+
+  return (
+    <StringInput
+      label={t('susi:mfaCode')}
+      valid={(val) => val.length > 4}
+      {...{ update, current, id }}
+      placeholder={t('susi:mfaCode')}
+      docs={false}
+    />
+  )
+}
+
+/*
  * Input for passwords
  */
 export const PasswordInput = ({
