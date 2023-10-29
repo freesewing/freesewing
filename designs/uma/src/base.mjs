@@ -9,7 +9,6 @@ function draftUmaBase({
   measurements,
   store,
   utils,
-  macro,
   expand,
   units,
   part,
@@ -478,19 +477,6 @@ function draftUmaBase({
         .length()) *
       2
   )
-
-  macro('vd', {
-    from: points.sideWaistband,
-    to: points.sideWaistbandBack,
-    id: 'sdfsd',
-    x: points.sideWaistband.x + 30,
-  })
-  macro('hd', {
-    from: points.cfWaistband,
-    to: points.sideWaistband,
-    id: 'sd',
-    y: points.sideWaistband.y - 30,
-  })
 
   /*
    * Also flag this to the user, as well as the expand possibility

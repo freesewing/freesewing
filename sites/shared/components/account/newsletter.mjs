@@ -40,7 +40,7 @@ export const NewsletterSettings = ({ welcome = false, bare = false }) => {
   const nextHref =
     welcomeSteps[account?.control].length > 2
       ? '/welcome/' + welcomeSteps[account?.control][2]
-      : '/docs/guide'
+      : '/docs/about/guide'
 
   return (
     <div className="max-w-xl">

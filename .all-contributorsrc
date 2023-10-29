@@ -1068,6 +1068,33 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "sohamtembhurne",
+      "name": "Soham Tembhurne",
+      "avatar_url": "https://avatars.githubusercontent.com/u/82658685?v=4",
+      "profile": "https://github.com/sohamtembhurne",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Himanshu1801",
+      "name": "Himanshu Singh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78968566?v=4",
+      "profile": "https://github.com/Himanshu1801",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Yash-Ambekar",
+      "name": "Yash Anil Ambekar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96481913?v=4",
+      "profile": "https://github.com/Yash-Ambekar",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,

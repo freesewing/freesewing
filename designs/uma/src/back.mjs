@@ -73,7 +73,7 @@ function draftUmaBack({
     paths.mirroredBack.hide()
     paths.mirroredMirroredBack.hide()
 
-    if (sa) paths.sa = paths.seam.offset(sa).addClass('fabric sa')
+    if (sa) paths.sa = paths.seam.offset(sa * -1).addClass('fabric sa')
 
     /*
      * Set the cutlist info

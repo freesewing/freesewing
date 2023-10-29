@@ -3,8 +3,9 @@ title: Plugins
 ---
 
 FreeSewing uses a modular approach where functionality can be extended with
-plugins. Plugins can provide macros, store methods, or use any of the lifecycle
-hooks.
+plugins. Plugins can provide [snippets](/reference/snippets), 
+[macros](/reference/macros), [store methods](/reference/store-methods), or 
+use any of the [lifecycle hooks](/reference/hooks).
 
 ## Using plugins
 
@@ -14,16 +15,18 @@ Plugins can be either
 
 To import a plugin for use:
 ```js
-import { namePlugin } from { @freesewing/plugin-name }
-// or
-import { pluginName } from { @freesewing/plugin-name }
+import { plugin } from { @freesewing/plugin-gore }
 ```
 
 <Tip>
 
-For convenience, each plugin is exported in two name formats:
-"plugin\<Name>" and "\<name\>Plugin".
-For example, either `pluginBanner` or `bannerPlugin` can be used.
+For convenience, each plugin is exported as several names exports:
+
+- `plugin`
+- `pluginName`
+- `namePlugin`
+
+For example, `@freesewing/plugin-gore` has named exports `plugin`, `pluginGore`, and `gorePlugin` that all are the same thing.
 
 </Tip>
 

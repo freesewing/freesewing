@@ -2,13 +2,16 @@
 title: round
 ---
 
-The `round` macro creates a rounded corner. It is provided by the [round
-plugin](/reference/plugins/round/).
+The `round` macro creates a rounded corner.
+
+It is provided by [plugin-round](/reference/plugins/round), which is
+part of [core-plugins](/reference/plugins/core) (so it is available by default).
 
 ## Signature
 
 ```js
 macro('round', { 
+  String id = 'round',
   String class,
   Point from,
   Boolean hide,
@@ -42,6 +45,7 @@ macro('round', {
 
 | Property    | Default | Type                | Description |
 |------------:|---------|---------------------|-------------|
+| `id`        | `round` | `string` | The ID of this macro instance |
 | `from`      |         | [Point](/reference/api/point) | The startpoint towards the corner to round |
 | `to`        |         | [Point](/reference/api/point) | The endpoint away from the corner to round |
 | `via`       |         | [Point](/reference/api/point) | The cornerpoint to round |
@@ -50,15 +54,6 @@ macro('round', {
 | `hide`      | `true`  | Boolean             | Whether to hide the path created by this macro |
 | `class`     |         | String              | Class(es) to assign to the path created by this macro |
 
-## Result
-
-| Generated Element | Description |
-|-------------------|-------------|
-| `paths.${prefix}Rounded` | Path for the rounded corner |
-| `points.${prefix}Start` | Point for the start of the rounded corner |
-| `points.${prefix}End` | Point for the end of the rounded corner |
-| `points.${prefix}Cp1` | Control Point used to create the curved path |
-| `points.${prefix}Cp2` | Control Point used to create the curved path |
 
 ## Notes
 

@@ -15,6 +15,7 @@ export function hash(string) {
  *
  * This is not used in anything cryptographic. It is only used as a temporary
  * username to avoid username collisions or to generate (long) API key secrets
+ * and as scratch codes for MFA
  */
 export function randomString(bytes = 8) {
   return randomBytes(bytes).toString('hex')

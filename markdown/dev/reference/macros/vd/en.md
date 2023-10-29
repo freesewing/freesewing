@@ -3,19 +3,22 @@ title: vd
 ---
 
 The `vd` macro adds a _vertical dimension_ to your pattern.
-It is provided by the [annotations plugin](/reference/plugins/annotations).
+
+It is provided by [plugin-annotations](/reference/plugins/annotations), which is
+part of [core-plugins](/reference/plugins/core) (so it is available by default).
 
 ## Signature
 
 ```js
 macro('vd', {
-  String id,
+  String id = 'vd',
   Point from,
   Boolean noEndMarker,
   Boolean noStartMarker,
   String text,
   Point to,
   Number x,
+  Boolean force = false,
 })
 ```
 
@@ -29,6 +32,7 @@ macro('vd', {
     from: new Point(0,0),
     to: new Point(0,40),
     x:10,
+    force: true,
   })
 
   // Prevent clipping
@@ -49,21 +53,11 @@ macro('vd', {
 | `to`            |         | [Point](/reference/api/point) | The endpoint of the dimension |
 | `x`             |         | Number              | The X-value at which to draw the dimension |
 | `text`          | Vertical distance | Number    | The text to go on the dimension if not the from-to vertical distance |
-| `id`            | auto-assigned | String | A custom ID under which paths and points will be created |
+| `id`            | `vd` | `string` | The ID of this macro instance |
 | `noStartMarker` | `false` | Boolean             | Whether to not draw a start marker |
 | `noEndMarker`  | `false` | Boolean             | Whether to not draw an end marker |
-
-## Result
-
-| Generated Element | Description |
-|-------------------|-------------|
-| `paths.${id}` | Path for the span of the dimension |
-| `paths.${id}_ls` | Path for the leader to the start of the dimension |
-| `paths.${id}_le` | Path for the leader to the end of the dimension |
+| `force`      | `false`    | `boolean`  | Set this to `true` to display the macro output even when `paperless` is `false` |
 
 ## Notes
 
-Setting a custom ID will:
-
-- Allow removal of the dimension with [the `rmd` macro](/reference/macros/rmd)
-- Prevent removal of the dimension with [the `rmad` macro](/reference/macros/rmad/)
+This macro takes the `paperless` setting into account and won't output anything when both `paperless` and `force` are `false`.

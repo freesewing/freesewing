@@ -2,8 +2,10 @@
 title: mirror
 ---
 
-The `mirror` macro allows you to mirror points and/or paths around a mirror
-line. It is provided by the [mirror plugin](/reference/plugins/mirror/).
+The `mirror` macro allows you to mirror points and/or paths around a mirror line. 
+
+It is provided by the [mirror plugin](/reference/plugins/mirror/), which is
+part of [core-plugins](/reference/plugins/core) (so it is available by default).
 
 ## Signature
 
@@ -61,12 +63,3 @@ macro('mirror', {
 | `prefix`     | `mirrored` | `string`   | A prefix to apply to the names of the clones points and or paths. Ignored if `nameFormat` is set |
 | `nameFormat` |            | `function` | A method that receives the name of the path or point as a first argument and one of `path` or `point` as the second argument and should return the name for the cloned path and or point |
 
-## Result
-
-If `nameFormat` is set, its method determines the names of cloned, mirrored Points and Paths.
-If it is not set, the names are as below.
-
-| Generated Element | Description |
-|-------------------|-------------|
-| `paths.${prefix}${Pathname}` | The cloned,  mirrored Path(s) (with the first letter of pathname capitalized) |
-| `points.${prefix}${Pointname}` | The cloned, mirrored Point(s) (with the first letter of pointname capitalized) |

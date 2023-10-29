@@ -909,8 +909,17 @@ UserModel.prototype.passwordSignIn = async function (req) {
     if (!req.body.token) return this.setResponse(403, 'mfaTokenRequired')
     /*
      * If there is a token, verify it and if it is not correct, return 401
-     */ else if (!this.mfa.verify(req.body.token, this.clear.mfaSecret)) {
-      return this.setResponse(401, 'signInFailed')
+     */ else {
+      const [result, mfaScratchCodes] = await this.mfa.verify(
+        req.body.token,
+        this.clear.mfaSecret,
+        this.clear.data.mfaScratchCodes
+      )
+      if (!result) return this.setResponse(401, 'signInFailed')
+      if (mfaScratchCodes.length !== this.clear.data.mfaScratchCodes.length) {
+        // Scratch code was used, update record to remove it
+        await this.update({ data: { ...this.clear.data, mfaScratchCodes } })
+      }
     }
   }
 
@@ -930,7 +939,7 @@ UserModel.prototype.passwordSignIn = async function (req) {
   /*
    * Final check for account status and other things before returning
    */
-  const [ok, err, status] = this.isOk()
+  const [ok, err, status] = this.isOk(401, 'signinFailed', true)
   if (ok === true) return this.signInOk()
   else return this.setResponse(status, err)
 }
@@ -996,8 +1005,16 @@ UserModel.prototype.linkSignIn = async function (req) {
     if (!req.body.token) return this.setResponse(403, 'mfaTokenRequired')
     /*
      * If there is a token, verify it and if it is not correct, return 401
-     */ else if (!this.mfa.verify(req.body.token, this.clear.mfaSecret)) {
-      return this.setResponse(401, 'signInFailed')
+     */
+    const [result, mfaScratchCodes] = await this.mfa.verify(
+      req.body.token,
+      this.clear.mfaSecret,
+      this.clear.data.mfaScratchCodes
+    )
+    if (!result) return this.setResponse(401, 'signInFailed')
+    if (mfaScratchCodes.length !== this.clear.data.mfaScratchCodes.length) {
+      // Scratch code was used, update record to remove it
+      await this.update({ data: { ...this.clear.data, mfaScratchCodes } })
     }
   }
 
@@ -1009,7 +1026,7 @@ UserModel.prototype.linkSignIn = async function (req) {
   /*
    * Sign in was a success, run a final check before returning
    */
-  const [ok, err, status] = this.isOk(401, 'signInFailed')
+  const [ok, err, status] = this.isOk(401, 'signInFailed', true)
   if (ok === true) return this.signInOk()
   else return this.setResponse(status, err)
 }
@@ -1485,15 +1502,22 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
     /*
      * Verify the MFA token
      */
-    if (this.mfa.verify(body.token, this.clear.mfaSecret)) {
+    await this.reveal() // First decrypt data
+    const check = await this.mfa.verify(
+      body.token,
+      this.clear.mfaSecret,
+      this.clear.data.mfaScratchCodes
+    )
+    const result = Array.isArray(check) ? check[0] : check
+    if (result) {
       /*
        * Token is valid. Update user record to disable MFA
        */
       try {
-        await this.update({ mfaEnabled: false })
+        await this.update({ mfaEnabled: false, data: { ...this.clear.data, mfaScratchCodes: [] } })
       } catch (err) {
         /*
-         * Problem occured while updating the record. Log warning and reurn 500
+         * Problem occured while updating the record. Log warning and return 500
          */
         log.warn(err, 'Could not disable MFA after token check')
         return this.setResponse(500, 'mfaDeactivationFailed')
@@ -1519,12 +1543,24 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
     /*
      * Verify secret and token
      */
-    if (body.secret === this.clear.mfaSecret && this.mfa.verify(body.token, this.clear.mfaSecret)) {
+    if (
+      body.secret === this.clear.mfaSecret &&
+      (await this.mfa.verify(body.token, this.clear.mfaSecret, false))
+    ) {
       /*
-       * Looks good. Update the user record to enable MFA
+       * Looks good. Generated scratch codes, then update the user record to enable MFA
        */
+      const scratchCodes = Array.from([...'eightpls']).map(() => randomString(4))
+      const mfaScratchCodes = []
+      for (const code of scratchCodes) {
+        const hashed = await hash(code)
+        mfaScratchCodes.push(hashed)
+      }
       try {
-        await this.update({ mfaEnabled: true })
+        await this.update({
+          mfaEnabled: true,
+          data: { ...this.clear.data, mfaScratchCodes },
+        })
       } catch (err) {
         /*
          * Problem occured while updating the record. Log warning and reurn 500
@@ -1539,6 +1575,7 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
       return this.setResponse200({
         result: 'success',
         account: this.asAccount(),
+        scratchCodes,
       })
     } else return this.setResponse(403, 'mfaTokenInvalid')
     /*
@@ -1615,6 +1652,9 @@ UserModel.prototype.asAccount = function () {
   /*
    * Nothing to do here but construct the object to return
    */
+  const data = this.clear.data
+  if (data.mfaScratchCodes) delete data.mfaScratchCodes
+
   return {
     id: this.record.id,
     bio: this.clear.bio,
@@ -1623,7 +1663,7 @@ UserModel.prototype.asAccount = function () {
     control: this.record.control,
     createdAt: this.record.createdAt,
     email: this.clear.email,
-    data: this.clear.data,
+    data,
     ihash: this.record.ihash,
     imperial: this.record.imperial,
     initial: this.clear.initial,
@@ -1755,7 +1795,11 @@ UserModel.prototype.getToken = function () {
 /*
  * Helper method to check an account is ok
  */
-UserModel.prototype.isOk = function (failStatus = 401, failMsg = 'authenticationFailed') {
+UserModel.prototype.isOk = function (
+  failStatus = 401,
+  failMsg = 'authenticationFailed',
+  allowWithoutConsent = false
+) {
   /*
    * These are all the checks we run to see if an account is 'ok'
    */
@@ -1763,14 +1807,14 @@ UserModel.prototype.isOk = function (failStatus = 401, failMsg = 'authentication
     this.exists &&
     this.record &&
     this.record.status > 0 &&
-    this.record.consent > 0 &&
+    (allowWithoutConsent || this.record.consent > 0) &&
     this.record.role &&
     this.record.role !== 'blocked'
   )
     return [true, false]
 
   if (!this.exists) return [false, 'noSuchUser', 404]
-  if (this.record.consent < 1) return [false, 'consentLacking', 451]
+  if (this.record.consent < 1 && !allowWithoutConsent) return [false, 'consentLacking', 451]
   if (this.record.status < 1) return [false, 'statusLacking', 403]
   if (this.record.role === 'blocked') return [false, 'accountBlocked', 403]
 

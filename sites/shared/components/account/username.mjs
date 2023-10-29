@@ -44,7 +44,7 @@ export const UsernameSettings = ({ welcome = false }) => {
   const nextHref =
     welcomeSteps[account.control].length > 4
       ? '/welcome/' + welcomeSteps[account.control][5]
-      : '/docs/guide'
+      : '/docs/about/guide'
 
   let btnClasses = 'btn mt-4 capitalize '
   if (welcome) btnClasses += 'w-64 btn-secondary'
@@ -72,7 +72,7 @@ export const UsernameSettings = ({ welcome = false }) => {
             )}
           </span>
         }
-        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/username`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/username`} />}
       />
       <button className={btnClasses} disabled={!available} onClick={save}>
         <span className="flex flex-row items-center gap-2">

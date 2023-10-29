@@ -114,7 +114,7 @@ export const Migrate = () => {
           current={username}
           update={setUsername}
           valid={(val) => val.length > 1}
-          docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/username`} />}
+          docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/username`} />}
         />
         <PasswordInput
           id="migrate-password"
@@ -123,7 +123,7 @@ export const Migrate = () => {
           current={password}
           update={setPassword}
           valid={(val) => val.length > 1}
-          docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/password`} />}
+          docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/password`} />}
         />
         <button
           className="btn btn-primary btn-lg w-full mt-4"

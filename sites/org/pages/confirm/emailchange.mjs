@@ -19,7 +19,7 @@ import { BackToAccountButton } from 'shared/components/account/shared.mjs'
 import { HelpIcon } from 'shared/components/icons.mjs'
 
 // Translation namespaces used on this page
-const ns = nsMerge(pageNs, 'account')
+const ns = nsMerge(pageNs, 'account', 'susi')
 
 const ConfirmSignUpPage = ({ page }) => {
   // Hooks
