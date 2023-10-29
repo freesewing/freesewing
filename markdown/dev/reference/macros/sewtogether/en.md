@@ -5,17 +5,20 @@ title: sewTogether
 The `sewTogether` macro is used to mark where two parts of the same `part` need 
 to be sewn together. This happens when you want to construct a cone for instance.
 
-It is provided by [plugin-annotations](/reference/plugins/annotations/).
+It is provided by [plugin-annotations](/reference/plugins/annotations), which is
+part of [core-plugins](/reference/plugins/core) (so it is available by default).
 
 ## Signature
 
 ```js
 macro('sewTogether', {
+  String id = 'sewtogether',
   Point from,
   Point to,
   Point middle = null,
   Boolean hinge = false,
   String prefix = 'sewtogether',
+  Boolean force = false,
 })
 ```
 
@@ -54,26 +57,17 @@ macro('sewTogether', {
 
 | Property        | Default  | Type                | Description |
 |----------------:|----------|---------------------|-------------|
+| `id`            | `sewtogether` | `string` | The ID of this macro instance |
 | `from`          |          | [Point](/reference/api/point) | One side of what needs to be sewn together |
 | `to`            |          | [Point](/reference/api/point) | The other side of what needs to be sewn together |
 | `middle`        | null     | [Point](/reference/api/point) | The middle point (when ommitted, it will be halfway between `from` and `to`) |
 | `prefix`        | 'sewtogether'  | String   | The prefix to be used for creating all the points and paths |
 | `hinge `        | `false`  | Boolean  | Draws the hinge line                  |
-
-## Result
-
-| Generated Element | Description |
-|-------------------|-------------|
-| `points.${prefix}From` | Copy of the `from` Point  |
-| `points.${prefix}FromCP` | Control Point of the `from` Point  |
-| `points.${prefix}Middle` | Copy of the `middle` Point  |
-| `points.${prefix}To` | Copy of the `to` Point  |
-| `points.${prefix}ToCP` | Control Point of the `to` Point  |
-| `points.${prefix}Hinge` | Point for the hinge line |
-| `paths.${prefix}SewTogether` | Path forming the line |
-| `paths.${prefix}SewTogetherHinge` | Path forming the hinge line |
+| `force`      | `false`    | `boolean`  | Set this to `true` to display the macro output even when `complete` is `false` |
 
 ## Notes
+
+This macro takes the `complete` setting into account and won't output anything when both complete and `force` are `false`.
 
 This macro is aware of the `sa` setting. Normally it draws the 
 hinge line on the inside of the part (following the counter-clockwise 

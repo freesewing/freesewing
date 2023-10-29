@@ -3,7 +3,9 @@ title: grainline
 ---
 
 The `grainline` macro adds a _grainline_ indicator to your pattern.
-It is provided by the [annotations plugin](/reference/plugins/annotations).
+
+It is provided by [plugin-annotations](/reference/plugins/annotations), which is
+part of [core-plugins](/reference/plugins/core) (so it is available by default).
 
 ## Signature
 
@@ -12,6 +14,7 @@ macro('grainline', {
   Point from,
   Point to,
   String text=grainline,
+  Boolean force = false,
 })
 ```
 
@@ -43,36 +46,11 @@ macro('grainline', {
 | `from`      |             | [Point][1] | The startpoint of the _grainline_ indicator  |
 | `to`        |             | [Point][1] | The endpoint of the _grainline_ indicator    |
 | `text`      | 'grainline' | string     | The text to put on the _grainline_ indicator |
-
-## Result
-
-| Generated Element | Description |
-|-------------------|-------------|
-| `paths.grainline` | The Path for the _grainline_ indicator |
-| `points.grainlineFrom` | Point used to create the path |
-| `points.grainlineTo` | Point used to create the path |
+| `force`      | `false`    | `boolean`  | Set this to `true` to display the macro output even when `complete` is `false` |
 
 [1]: /reference/api/point
 
 ## Notes
 
-### Place outside `complete`
+This macro takes the `complete` setting into account and won't output anything when both complete and `force` are `false`.
 
-The `grainline` macro should be placed outside of `complete` blocks
-in the part's draft method.
-
-This is because it provides information about the part's grainline,
-information that is always needed by the cutting layout regardless of
-whether `complete` details and graphics are shown on the pattern.
-
-The `grainline` macro will automatically show or hide the grainline
-indicator based on the `complete` setting.
-
-### Removing the grainline indicator
-
-If you inherit a part with a grainline indicator and you'd like to remove it,
-you can do so by passing `false` to the macro:
-
-```js
-macro('grainline', false)
-```

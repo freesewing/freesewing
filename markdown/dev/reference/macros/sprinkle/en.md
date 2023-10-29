@@ -3,7 +3,9 @@ title: sprinkle
 ---
 
 The `sprinkle` macro facilitates adding snippets to your pattern in bulk.
-It is provided by the [sprinkle plugin](/reference/plugins/sprinkle).
+
+It is provided by [plugin-sprinkle](/reference/plugins/sprinkle), which is
+part of [core-plugins](/reference/plugins/core) (so it is available by default).
 
 ## Signature
 
@@ -54,8 +56,3 @@ macro('sprinkle', {
 | `scale`     | 1       | number           | Scale for the individual Snippets |
 | `rotate`    | 0       | number           | Rotation for the individual Snippets |
 
-## Result
-
-| Generated Element | Description |
-|-------------------|-------------|
-| `snippets.${pointname}-${snippet}` | The Snippet(s) created |
