@@ -157,6 +157,8 @@
   svg.freesewing.pattern rect.stroke-fabric,
   svg.freesewing.pattern path.fabric,
   svg.freesewing.pattern path.stroke-fabric,
+  svg.freesewing.pattern tspan.stroke-fabric,
+  svg.freesewing.pattern text.stroke-fabric,
   svg.freesewing.pattern circle.fabric,
   svg.freesewing.pattern circle.stroke-fabric {
     @apply fs-stroke-fabric;
@@ -165,6 +167,8 @@
   svg.freesewing.pattern rect.stroke-lining,
   svg.freesewing.pattern path.lining,
   svg.freesewing.pattern path.stroke-lining,
+  svg.freesewing.pattern tspan.stroke-lining,
+  svg.freesewing.pattern text.stroke-lining,
   svg.freesewing.pattern circle.lining,
   svg.freesewing.pattern circle.stroke-lining {
     @apply fs-stroke-lining;
@@ -173,6 +177,8 @@
   svg.freesewing.pattern rect.stroke-interfacing,
   svg.freesewing.pattern path.interfacing,
   svg.freesewing.pattern path.stroke-interfacing,
+  svg.freesewing.pattern text.stroke-interfacing,
+  svg.freesewing.pattern tspan.stroke-interfacing,
   svg.freesewing.pattern circle.interfacing,
   svg.freesewing.pattern circle.stroke-interfacing {
     @apply fs-stroke-interfacing;
@@ -181,6 +187,8 @@
   svg.freesewing.pattern rect.stroke-canvas,
   svg.freesewing.pattern path.canvas,
   svg.freesewing.pattern path.stroke-canvas,
+  svg.freesewing.pattern text.stroke-canvas,
+  svg.freesewing.pattern tspan.stroke-canvas,
   svg.freesewing.pattern circle.canvas,
   svg.freesewing.pattern circle.stroke-canvas {
     @apply fs-stroke-canvas;
@@ -189,6 +197,8 @@
   svg.freesewing.pattern rect.stroke-various,
   svg.freesewing.pattern path.various,
   svg.freesewing.pattern path.stroke-various,
+  svg.freesewing.pattern text.stroke-various,
+  svg.freesewing.pattern tspan.stroke-various,
   svg.freesewing.pattern circle.various,
   svg.freesewing.pattern circle.stroke-various {
     @apply fs-stroke-various;
@@ -197,6 +207,8 @@
   svg.freesewing.pattern rect.stroke-mark,
   svg.freesewing.pattern path.mark,
   svg.freesewing.pattern path.stroke-mark,
+  svg.freesewing.pattern text.stroke-mark,
+  svg.freesewing.pattern tspan.stroke-mark,
   svg.freesewing.pattern circle.mark,
   svg.freesewing.pattern circle.stroke-mark {
     @apply fs-stroke-mark;
@@ -205,6 +217,8 @@
   svg.freesewing.pattern rect.stroke-contrast,
   svg.freesewing.pattern path.contrast,
   svg.freesewing.pattern path.stroke-contrast,
+  svg.freesewing.pattern text.stroke-contrast,
+  svg.freesewing.pattern tspan.stroke-contrast,
   svg.freesewing.pattern circle.contrast,
   svg.freesewing.pattern circle.stroke-contrast {
     @apply fs-stroke-contrast;
@@ -213,6 +227,8 @@
   svg.freesewing.pattern rect.stroke-note,
   svg.freesewing.pattern path.note,
   svg.freesewing.pattern path.stroke-note,
+  svg.freesewing.pattern text.stroke-note,
+  svg.freesewing.pattern tspan.stroke-note,
   svg.freesewing.pattern circle.note,
   svg.freesewing.pattern circle.stroke-note {
     @apply fs-stroke-note;
@@ -245,12 +261,16 @@
   svg.freesewing.pattern path.fill-fabric,
   svg.freesewing.pattern text.fill-fabric,
   svg.freesewing.pattern tspan.fill-fabric,
+  svg.freesewing.pattern text.fabric,
+  svg.freesewing.pattern tspan.fabric,
   svg.freesewing.pattern circle.fill-fabric {
     @apply fs-fill-fabric;
   }
   svg.freesewing.pattern rect.fill-lining,
   svg.freesewing.pattern text.fill-lining,
   svg.freesewing.pattern tspan.fill-lining,
+  svg.freesewing.pattern text.lining,
+  svg.freesewing.pattern tspan.lining,
   svg.freesewing.pattern path.fill-lining,
   svg.freesewing.pattern circle.fill-lining {
     @apply fs-fill-lining;
@@ -258,6 +278,8 @@
   svg.freesewing.pattern rect.fill-interfacing,
   svg.freesewing.pattern text.fill-interfacing,
   svg.freesewing.pattern tspan.fill-interfacing,
+  svg.freesewing.pattern text.interfacing,
+  svg.freesewing.pattern tspan.interfacing,
   svg.freesewing.pattern path.fill-interfacing,
   svg.freesewing.pattern circle.fill-interfacing {
     @apply fs-fill-interfacing;
@@ -265,6 +287,8 @@
   svg.freesewing.pattern rect.fill-canvas,
   svg.freesewing.pattern text.fill-canvas,
   svg.freesewing.pattern tspan.fill-canvas,
+  svg.freesewing.pattern text.canvas,
+  svg.freesewing.pattern tspan.canvas,
   svg.freesewing.pattern path.fill-canvas,
   svg.freesewing.pattern circle.fill-canvas {
     @apply fs-fill-canvas;
@@ -272,6 +296,8 @@
   svg.freesewing.pattern rect.fill-various,
   svg.freesewing.pattern text.fill-various,
   svg.freesewing.pattern tspan.fill-various,
+  svg.freesewing.pattern text.various,
+  svg.freesewing.pattern tspan.various,
   svg.freesewing.pattern path.fill-various,
   svg.freesewing.pattern circle.fill-various {
     @apply fs-fill-various;
@@ -280,12 +306,16 @@
   svg.freesewing.pattern path.fill-mark,
   svg.freesewing.pattern text.fill-mark,
   svg.freesewing.pattern tspan.fill-mark,
+  svg.freesewing.pattern text.mark,
+  svg.freesewing.pattern tspan.mark,
   svg.freesewing.pattern circle.fill-mark {
     @apply fs-fill-mark;
   }
   svg.freesewing.pattern rect.fill-contrast,
   svg.freesewing.pattern text.fill-contrast,
   svg.freesewing.pattern tspan.fill-contrast,
+  svg.freesewing.pattern text.contrast,
+  svg.freesewing.pattern tspan.contrast,
   svg.freesewing.pattern path.fill-contrast,
   svg.freesewing.pattern circle.fill-contrast {
     @apply fs-fill-contrast;
@@ -293,6 +323,8 @@
   svg.freesewing.pattern rect.fill-note,
   svg.freesewing.pattern text.fill-note,
   svg.freesewing.pattern tspan.fill-note,
+  svg.freesewing.pattern text.note,
+  svg.freesewing.pattern tspan.note,
   svg.freesewing.pattern path.fill-note,
   svg.freesewing.pattern circle.fill-note {
     @apply fs-fill-note;
