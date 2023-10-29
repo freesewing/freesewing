@@ -2,17 +2,76 @@
 title: CSS Classes
 ---
 
-We recommend using these classes to style your designs.  Not only are these
+We recommend using these classes to style your designs. Not only are these
 classes implemented in the `@freesewing/plugin-theme` plugin, they are also
-properly styled in our own frontends.
+properly styled in our own frontends. Furthermore, by using a common set
+of class names, anyone can adapt the styling to suit their own needs.
 
 It is this styling that you will see below. What the various classes exactly
-look like will depend on the environment where you use FreeSewing. But what
+look like will depend on the environment where you use FreeSewing, because
+in-browser styling or SVG/PDF styling is slightly different. But what
 doesn't change is the names of the classes and their purpose.
 
-## Stoke colors
+## Contextual colors
 
-These classes set the `stroke` property.
+These are the main classes that you typically want to use.
+The will set either the `stroke` or `fill` property, depending on the element you set them on.
+
+For example, when you use these classes on a path, they will set the `stroke` property.
+But if you use them on text, they will set the `fill` property.
+Which is typically what you want.
+
+<Example caption="An overview of the contextual classes in FreeSewing">
+```mjs
+({ 
+  Point, 
+  Path, 
+  points, 
+  paths, 
+  store, 
+  options, 
+  part 
+}) => {
+  const colors = [
+    'fabric',
+    'lining',
+    'interfacing',
+    'canvas',
+    'various',
+    'mark',
+    'contrast',
+    'note',
+  ]
+  const w = 120
+  let y = 0
+
+  for (const color of colors) {
+    y += 12
+    paths[color] = new Path()
+      .move(new Point(0, y))
+      .line(new Point(w, y))
+      .setClass(color)
+      .addText(`path.${color}`, `left text-sm`)
+    paths[`${color}Text`] = new Path()
+      .move(new Point(0, y))
+      .line(new Point(w, y))
+      .setClass('hidden')
+      .addText(`text.${color}`, `${color} right text-sm`)
+  }
+
+  paths.noClip = new Path()
+    .move(new Point(0, -1))
+    .move(new Point(10, -1))
+
+  return part
+}
+```
+</Example>
+
+
+## Stroke colors
+
+These classes set the `stroke` property explicitly.
 
 <Example caption="An overview of the classes to set the stroke color in FreeSewing">
 ```mjs
@@ -44,7 +103,12 @@ These classes set the `stroke` property.
       .move(new Point(0, y))
       .line(new Point(w, y))
       .setClass(color)
-      .addText(`.${color}`, 'center')
+      .addText(`path.stroke-${color}`, `left text-sm`)
+    paths[`${color}Text`] = new Path()
+      .move(new Point(0, y))
+      .line(new Point(w, y))
+      .setClass('hidden')
+      .addText(`text.stroke-${color}`, `stroke-${color} right text-sm`)
   }
 
   paths.noClip = new Path()
@@ -58,7 +122,8 @@ These classes set the `stroke` property.
 
 ## Fill colors
 
-These classes set the `stroke-fill` property.
+These classes set the `stroke-fill` property. Note that we've applied a background 
+to ensure the text remains readable.
 
 <Example caption="An overview of the classes to set the fill color in FreeSewing">
 ```mjs
@@ -81,28 +146,31 @@ These classes set the `stroke-fill` property.
     'contrast',
     'note',
   ]
-  const w = 55
+  const w = 120
   let row = 1
   let i = 0
-  let y = 20
+  let y = 15
 
   for (const color of colors) {
-    const d = (i%2) ? 0 : 60
-    points[color] = new Point(w/2+d, y*row-6).addText(`.${color}`, 'center')
+    const h = 10
+    points[`${color}PathBg`] = new Point(2, y*row+8).addText(`path.fill-${color}`, 'stroke-interfacing left text-sm')
+    points[`${color}Path`] = new Point(2, y*row+8).addText(`path.fill-${color}`, 'left text-sm')
+    points[`${color}TextBg`] = new Point(w-2, y*row+8).addText(`text.fill-${color}`, 'stroke-interfacing right text-sm')
+    points[`${color}Text`] = new Point(w-2, y*row+8).addText(`text.fill-${color}`, 'right text-sm')
     paths[color] = new Path()
-      .move(new Point(d, y*row))
-      .line(new Point(w+d, y*row-10))
-      .line(new Point(w+d, y*row))
-      .line(new Point(d, y*row-10))
+      .move(new Point(0, y*row))
+      .line(new Point(w, y*row))
+      .line(new Point(w, y*row+h))
+      .line(new Point(0, y*row+h))
       .close()
       .setClass(`fill-${color} no-stroke`)
-    if (i%2) row++
+    row++
     i++
   }
 
   paths.noClip = new Path()
-    .move(new Point(0, -10))
-    .move(new Point(10, -1))
+    .move(new Point(0, 20))
+    .move(new Point(10, 21))
 
   return part
 }
