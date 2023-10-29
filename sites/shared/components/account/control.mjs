@@ -58,7 +58,7 @@ export const ControlSettings = ({ welcome = false, noBack = false }) => {
   const nextHref = welcome
     ? welcomeSteps[selection].length > 1
       ? '/welcome/' + welcomeSteps[selection][1]
-      : '/docs/guide'
+      : '/docs/about/guide'
     : false
 
   return (
@@ -78,7 +78,7 @@ export const ControlSettings = ({ welcome = false, noBack = false }) => {
         }))}
         current={selection}
         update={update}
-        docs={<DynamicMdx language={i18n.language} slug="docs/site/account/control" />}
+        docs={<DynamicMdx language={i18n.language} slug="docs/about/site/account/control" />}
       />
       {welcome ? (
         <>

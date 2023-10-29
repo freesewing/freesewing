@@ -44,7 +44,7 @@ export const GithubSettings = () => {
         update={setGithubEmail}
         valid={(val) => val.length > 0}
         placeholder={'joostdecock'}
-        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/github`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/github`} />}
       />
       <StringInput
         id="account-github-username"
@@ -53,7 +53,7 @@ export const GithubSettings = () => {
         update={setGithubUsername}
         valid={(val) => val.length > 0}
         placeholder={'joost@joost.at'}
-        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/github`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/github`} />}
       />
       <SaveSettingsButton btnProps={{ onClick: save }} />
       <BackToAccountButton />

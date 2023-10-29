@@ -1,4 +1,4 @@
-import { logoPath } from 'shared/components/logos/freesewing.mjs'
+import { logoPath } from 'config/logo.mjs'
 import { useTranslation } from 'next-i18next'
 
 export const ns = ['commom']
