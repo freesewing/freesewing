@@ -1,5 +1,6 @@
 import qrcode from 'qrcode'
 import { authenticator } from '@otplib/preset-default'
+import { hash } from './crypto.mjs'
 
 const dark = '#AAAAAA'
 const light = '#EEEEEE'
@@ -28,6 +29,23 @@ export const mfa = ({ service }) => ({
 
       return { secret, otpauth, qrcode: svg }
     },
-    verify: (token, secret) => authenticator.check(token, secret),
+    verify: async (token, secret, hashedScratchCodes) => {
+      let result = authenticator.check(token, secret)
+      // If it's good, return early
+      if (result) return hashedScratchCodes ? [true, hashedScratchCodes] : true
+
+      // If it fails, it could be a scratch code if we have any
+      if (
+        hashedScratchCodes &&
+        Array.isArray(hashedScratchCodes) &&
+        hashedScratchCodes.length > 0
+      ) {
+        const hashed = await hash(token)
+        if (hashedScratchCodes.includes(hashed))
+          return [true, hashedScratchCodes.filter((val) => val !== hashed)]
+      }
+
+      return hashedScratchCodes ? [false, hashedScratchCodes] : false
+    },
   },
 })

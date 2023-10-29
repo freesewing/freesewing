@@ -854,7 +854,7 @@ function matrixTransform(transformationType, matrix, values) {
 /**
  * Combines an array of (SVG) transforms into a single matrix transform
  *
- * @param {array} transorms - The list of transforms to combine
+ * @param {array} transforms - The list of transforms to combine
  * @return {string} matrixTransform - The combined matrix transform
  */
 export function combineTransforms(transforms = []) {
@@ -878,7 +878,7 @@ export function combineTransforms(transforms = []) {
 /**
  * Applies and (SVG) transform to a point's coordinates (x and y)
  *
- * @param {string} transorm - The transform to apply
+ * @param {string} transform - The transform to apply
  * @param {Point} point - The point of which to update the coordinates
  * @return {Point} point - The point with the transform applied to its coordinates
  */

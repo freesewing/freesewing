@@ -380,7 +380,7 @@ export const Pattern = ({ id }) => {
         original={pattern.name}
         placeholder="Maurits Cornelis Escher"
         valid={(val) => val && val.length > 0}
-        docs={<DynamicMdx language={i18n.language} slug="docs/site/patterns/name" />}
+        docs={<DynamicMdx language={i18n.language} slug="docs/about/site/patterns/name" />}
       />
 
       {/* img: Control level determines whether or not to show this */}
@@ -392,7 +392,7 @@ export const Pattern = ({ id }) => {
           update={setImage}
           current={image}
           valid={(val) => val.length > 0}
-          docs={<DynamicMdx language={i18n.language} slug="docs/site/patterns/image" />}
+          docs={<DynamicMdx language={i18n.language} slug="docs/about/site/patterns/image" />}
         />
       ) : null}
 
@@ -429,7 +429,7 @@ export const Pattern = ({ id }) => {
             },
           ]}
           current={isPublic}
-          docs={<DynamicMdx language={i18n.language} slug="docs/site/patterns/public" />}
+          docs={<DynamicMdx language={i18n.language} slug="docs/about/site/patterns/public" />}
         />
       ) : null}
 
@@ -442,7 +442,7 @@ export const Pattern = ({ id }) => {
           update={setNotes}
           current={notes}
           placeholder={t('mdSupport')}
-          docs={<DynamicMdx language={i18n.language} slug="docs/site/patterns/notes" />}
+          docs={<DynamicMdx language={i18n.language} slug="docs/about/site/patterns/notes" />}
         />
       ) : null}
       <button

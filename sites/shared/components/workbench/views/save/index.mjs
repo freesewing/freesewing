@@ -114,7 +114,7 @@ export const SaveView = ({ design, settings, setView, saveAs }) => {
 
   const docs = {}
   for (const field of ['name', 'notes', 'goto']) {
-    docs[field] = <DynamicMdx language={i18n.language} slug={`docs/site/patterns/${field}`} />
+    docs[field] = <DynamicMdx language={i18n.language} slug={`docs/about/site/patterns/${field}`} />
   }
 
   return (

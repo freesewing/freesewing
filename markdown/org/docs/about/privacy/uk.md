@@ -140,11 +140,11 @@ So far:
 - [Ваші права][2]
 - [Ваша згода][3]
 
+[v]: #how-we-use-your-visitor-data
+
 [2]: /docs/about/rights/
 
 [3]: /account/consent/
-
-[v]: #how-we-use-your-visitor-data
 
 [s]: #how-we-use-your-subscriber-data
 

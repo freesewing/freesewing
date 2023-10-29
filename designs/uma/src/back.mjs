@@ -59,24 +59,21 @@ function draftUmaBack({
     /*
      * Draw the path
      */
-    paths.seam = new Path()
-      .move(points.backGussetSplitFlipped)
-      .curve(
-        points.backGussetSplitCpTopFlipped,
-        points.backGussetSplitCpBottomFlipped,
-        points.sideLegBackFlipped
-      )
-      .line(points.sideWaistbandBackFlipped)
-      ._curve(points.cfWaistbandDipCpBackFlipped, points.cfWaistbandDipBack)
-      .curve_(points.cfWaistbandDipCpBack, points.sideWaistbandBack)
-      .line(points.sideLegBack)
-      .curve(points.backGussetSplitCpBottom, points.backGussetSplitCpTop, points.backGussetSplit)
-      .line(points.backGussetSplitFlipped)
-      .close()
-      .reverse()
-      .addClass('fabric')
+    macro('mirror', {
+      mirror: [new Point(0, 0), new Point(100, 0)],
+      paths: ['back'],
+      clone: true,
+    })
+    macro('mirror', {
+      mirror: [new Point(0, 0), new Point(0, 100)],
+      paths: ['mirroredBack'],
+      clone: true,
+    })
+    paths.seam = paths.mirroredBack.join(paths.mirroredMirroredBack.reverse())
+    paths.mirroredBack.hide()
+    paths.mirroredMirroredBack.hide()
 
-    if (sa) paths.sa = paths.seam.offset(sa).addClass('fabric sa')
+    if (sa) paths.sa = paths.seam.offset(sa * -1).addClass('fabric sa')
 
     /*
      * Set the cutlist info

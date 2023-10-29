@@ -151,7 +151,9 @@ const NewKey = ({ account, setGenerate, backend }) => {
   const { t, i18n } = useTranslation(ns)
   const docs = {}
   for (const option of ['name', 'expiry', 'level']) {
-    docs[option] = <DynamicMdx language={i18n.language} slug={`docs/site/apikeys/${option}`} />
+    docs[option] = (
+      <DynamicMdx language={i18n.language} slug={`docs/about/site/apikeys/${option}`} />
+    )
   }
 
   const levels = account.role === 'admin' ? [0, 1, 2, 3, 4, 5, 6, 7, 8] : [0, 1, 2, 3, 4]

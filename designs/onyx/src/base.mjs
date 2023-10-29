@@ -60,7 +60,13 @@ function draftBase({
   points.raglanCenter = new Point(0, 0)
   points.neckCenter = points.raglanCenter.shift(270, options.neckBalance * neckRadius)
 
-  points.armpitCorner = new Point(chest / 4, armpitYPosition)
+  points.armpitCorner = new Point(chest / 4, armpitYPosition).translate(
+    0,
+    Math.max(
+      0,
+      (measurements.biceps * options.armholeTweakFactor * options.sleeveEase) / (2 * Math.PI)
+    )
+  )
 
   points.neckShoulderCorner = utils.beamIntersectsCircle(
     points.neckCenter,
@@ -284,6 +290,7 @@ export const base = {
   draft: draftBase,
   hide: { self: true },
   measurements: [
+    'biceps',
     'neck',
     'chest',
     'waist',
@@ -362,7 +369,10 @@ export const base = {
         pct,
       menu: 'construction',
     },
-    // How wide to make the section of fabric keeping the zipper away from the wearer's skin. Optional on one-piece pajamas. Crucial on swimwear.
+    // How much ease to put vertically around the armhole and the shoulder joint. Transitions gradually towards wristEase as one goes down the sleeve.
+    sleeveEase: { pct: 0, min: -30, max: 50, menu: 'fit' },
+    // How much larger to make the armhole as a proportion of the biceps measurement.
+    armholeTweakFactor: 1.1,
   },
   optionalMeasurements: ['highBust'],
 }
