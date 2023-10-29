@@ -3,7 +3,7 @@
     "deploymentEnabled": {
       "i18n": false,
       "main": false,
-      "producion-backend": false
+      "production-backend": false
     }
   }
 }
