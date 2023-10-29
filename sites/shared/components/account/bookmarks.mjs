@@ -49,7 +49,9 @@ export const NewBookmark = () => {
   const { t, i18n } = useTranslation(ns)
   const docs = {}
   for (const option of ['title', 'location', 'type']) {
-    docs[option] = <DynamicMdx language={i18n.language} slug={`docs/site/bookmarks/${option}`} />
+    docs[option] = (
+      <DynamicMdx language={i18n.language} slug={`docs/about/site/bookmarks/${option}`} />
+    )
   }
 
   // State

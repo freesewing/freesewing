@@ -179,7 +179,7 @@ export const SignUp = () => {
               </div>
               <Link
                 className={`${horFlexClassesNoSm} w-full btn btn-lg btn-neutral mt-2`}
-                href="/signup"
+                href="/signin"
               >
                 <span className="hidden md:block">
                   <KeyIcon className="h-10 w-10" />

@@ -1,5 +1,5 @@
 ---
-title: "API Keys: Expiry"
+title: Expiry
 ---
 
 Every API key has an **expiry date** after which the key will stop working.

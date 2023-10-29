@@ -16,15 +16,13 @@ import { Popout } from 'shared/components/popout/index.mjs'
 import { ConsentForm, ns as gdprNs } from 'shared/components/gdpr/form.mjs'
 
 // Translation namespaces used on this page
-const ns = nsMerge(pageNs, layoutNs, gdprNs, 'confirm')
+const ns = nsMerge(pageNs, layoutNs, gdprNs, 'confirm', 'susi')
 
 const SignupLinkExpired = () => <Popout fixme>Implement SignupLinkExpired compnonent</Popout>
 
 const ConfirmSignUpPage = () => {
   // Hooks
   const router = useRouter()
-  // Get confirmation ID and check from url
-  //const [confirmationId, confirmationCheck] = router.asPath.slice(1).split('/').slice(2)
 
   const { setAccount, setToken } = useAccount()
   const backend = useBackend()

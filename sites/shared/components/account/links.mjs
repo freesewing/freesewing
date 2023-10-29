@@ -136,7 +136,7 @@ export const AccountLinks = () => {
     control: <ControlScore control={account.control} />,
     github: account.data.githubUsername || account.data.githubEmail || <NoIcon />,
     password: account.passwordType === 'v3' ? <BoolYesIcon /> : <NoIcon />,
-    mfa: <YesNo check={false} />,
+    mfa: <YesNo check={account.mfaEnabled} />,
   }
   for (const social of Object.keys(conf.account.fields.identities).filter((i) => i !== 'github'))
     itemPreviews[social] = account.data[social] || (

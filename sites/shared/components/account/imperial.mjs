@@ -40,7 +40,7 @@ export const ImperialSettings = ({ welcome = false }) => {
   const nextHref =
     welcomeSteps[account?.control].length > 3
       ? '/welcome/' + welcomeSteps[account?.control][3]
-      : '/docs/guide'
+      : '/docs/about/guide'
 
   return (
     <div className="max-w-xl">
@@ -59,7 +59,7 @@ export const ImperialSettings = ({ welcome = false }) => {
         }))}
         current={selection}
         update={update}
-        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/units`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/units`} />}
       />
       {welcome ? (
         <>

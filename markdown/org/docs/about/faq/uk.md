@@ -1,6 +1,5 @@
 ---
-title: Поширені запитання
-order: 150
+title: Frequently Asked Questions
 ---
 
-<ReadMore list />
+<ReadMore recurse />

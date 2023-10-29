@@ -39,7 +39,7 @@ Wir haben uns für den High-Point Shoulder, den sogenannten HPS-Punkt, als Grund
 
 ### Wir haben die Messung "Mitte Rücken zum Nacken" eingestellt
 
-Wie bereits erwähnt, verwenden wir die Messungen vom HPS-Punkt jetzt für die vertikalen Rumpfmessungen . Aus diesem Grund haben wir die alte *Rückenmitte Nacken bis Taille* Messung eingestellt.
+Wie bereits erwähnt, verwenden wir die Messungen vom HPS-Punkt jetzt für die vertikalen Rumpfmessungen . Aus diesem Grund haben wir die alte *Rückenmitte Nacken bis Taille* Messung eingestellt. Aus diesem Grund haben wir die alte *Rückenmitte Nacken bis Taille* Messung eingestellt.
 
 Da dieses Maß nun wegfällt, musst du für bestimmte Muster eventuell ein weiteres Maß hinzufügen.
 

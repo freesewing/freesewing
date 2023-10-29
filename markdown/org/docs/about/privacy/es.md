@@ -96,6 +96,10 @@ Estos datos se almacenan para cualquier persona con una cuenta en nuestro sitio 
 
 ## Other info relevant to this privacy notice
 
+### Uso por menores de 16 años
+
+Por razones legales, usted necesita tener al menos 16 años para usar freesewing.
+
 ### Controlador de datos e información de contacto
 
 Para preguntas sobre este aviso de privacidad, puede contactar a Joost De Cock en joost@joost.at.
@@ -131,10 +135,6 @@ So far:
 - FreeSewing has never provided any law enforcement organization personal data of any of our users or visitors.
 - FreeSewing has never weakened, compromised, or subverted any of its encryption at the request of law enforcement or another third party.
 
-### Uso por menores de 16 años
-
-Por razones legales, usted necesita tener al menos 16 años para usar freesewing.
-
 ### Ver también
 
 - [Tus derechos][2]
@@ -142,7 +142,7 @@ Por razones legales, usted necesita tener al menos 16 años para usar freesewing
 
 [v]: #how-we-use-your-visitor-data
 
-[2]: /docs/various/rights/
+[2]: /docs/about/rights/
 
 [3]: /account/consent/
 

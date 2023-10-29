@@ -13,7 +13,7 @@ import { Spinner } from 'shared/components/spinner.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 
 // Translation namespaces used on this page
-const ns = nsMerge(pageNs, layoutNs, 'confirm', 'locales', 'themes')
+const ns = nsMerge(pageNs, layoutNs, 'confirm', 'locales', 'themes', 'susi')
 
 const SignupLinkExpired = () => <Popout fixme>Implement SignupLinkExpired compnonent</Popout>
 
