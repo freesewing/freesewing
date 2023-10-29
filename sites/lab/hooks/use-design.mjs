@@ -38,6 +38,7 @@ import { Penelope as penelope } from '@freesewing/penelope'
 import { Plugintest as plugintest } from '@freesewing/plugintest'
 import { Rendertest as rendertest } from '@freesewing/rendertest'
 import { Sandy as sandy } from '@freesewing/sandy'
+import { Senya as senya } from '@freesewing/senya'
 import { Shelly as shelly } from '@freesewing/shelly'
 import { Shin as shin } from '@freesewing/shin'
 import { Simon as simon } from '@freesewing/simon'
@@ -93,6 +94,7 @@ const designs = {
   plugintest,
   rendertest,
   sandy,
+  senya,
   shelly,
   shin,
   simon,

@@ -136,6 +136,9 @@ rehype-highlight-lines:
 sandy:
   peer:
     '@freesewing/snapseries': *freesewing
+senya:
+  peer:
+    '@freesewing/snapseries': *freesewing
 shin:
   peer:
     '@freesewing/snapseries': *freesewing

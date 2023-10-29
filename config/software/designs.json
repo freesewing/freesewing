@@ -647,7 +647,8 @@
     "code": ["timorl"],
     "design": "timorl",
     "difficulty": 3,
-    "tags": ["tops"]
+    "tags": ["tops"],
+				"techniques": ["curvedSeam", "hem"]
   },
   "shin": {
     "code": "Joost De Cock",

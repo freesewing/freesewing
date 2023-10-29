@@ -1,5 +1,6 @@
 import { base } from './base.mjs'
-import { draftRingSector, waistlineHeight } from './shared.mjs'
+import { waistlineHeight } from './shared.mjs'
+import { ringsectorPlugin } from '@freesewing/plugin-ringsector'
 
 function senyaBottom({
   utils,
@@ -36,12 +37,21 @@ function senyaBottom({
 
   const radiusHem = radiusMidriffTop + fullLength * options.lengthBonus
 
-  const rotation = angle / 2
+  const ids = macro('ringsector', {
+    angle: angle,
+    insideRadius: radiusMidriffTop,
+    outsideRadius: radiusHem,
+    rotate: true,
+  })
+  const pathId = ids.paths.path
+  paths.seam = paths[pathId].clone().addClass('fabric')
+  paths[pathId].hide()
 
-  paths.seam = draftRingSector(part, rotation, angle, radiusMidriffTop, radiusHem, true).attr(
-    'class',
-    'fabric'
-  )
+  for (const [shortId, uid] of Object.entries(ids.points)) {
+    points[shortId] = points[uid].copy()
+    // Some points are rotated, we need those too
+    if (points[uid + 'Rotated']) points[shortId + 'Rotated'] = points[uid + 'Rotated'].copy()
+  }
 
   points.gridAnchor = points.in2Flipped.clone()
 
@@ -52,10 +62,10 @@ function senyaBottom({
       to: points.ex2Flipped,
       grainline: true,
     })
-    points.logo = points.in2FlippedRotated.shiftFractionTowards(points.ex2FlippedRotated, 0.3)
+    points.logo = points.in2FlippedRotated.shiftFractionTowards(points.ex2FlippedRotated, -0.1)
     snippets.logo = new Snippet('logo', points.logo)
 
-    points.title = points.in2FlippedRotated.shiftFractionTowards(points.ex2FlippedRotated, 0.5)
+    points.title = points.in2FlippedRotated.shiftFractionTowards(points.ex2FlippedRotated, -0.5)
     macro('title', { at: points.title, nr: 3, title: 'bottom' })
 
     macro('sprinkle', {
@@ -143,5 +153,6 @@ export const bottom = {
     circleRatio: { pct: 50, min: 20, max: 90, menu: 'style' },
     hemWidth: { pct: 10, min: 5, max: 15, menu: 'construction' },
   },
+  plugins: ringsectorPlugin,
   draft: senyaBottom,
 }

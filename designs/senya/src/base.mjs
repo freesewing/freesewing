@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-import { withCondition as bustPlugin } from '@freesewing/plugin-bust'
 import { waistlineHeight } from './shared.mjs'
 
 function infinitelyHigh(xCoordinate, Point) {
@@ -216,6 +214,6 @@ export const base = {
     // Advanced
     armholeDepthFactor: { pct: 55, min: 50, max: 70, menu: 'advanced' },
   },
-  plugins: [pluginBundle, bustPlugin],
+  plugins: [],
   draft: draftSenyaBase,
 }
