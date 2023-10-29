@@ -334,7 +334,7 @@ export const base = {
     // How much vertical ease (stretch out/compress) to put in the outseam, from the armpit to the upper leg (use legLength to adjust below that point, and sleeveEase for the armhole). Will generally be zero or slightly positive for wovens, and slightly negative for stretch fabrics.
     outseamEase: { pct: 0, min: -20, max: 5, menu: 'fit' },
     // Shifts the sleeve down the body to give more room to the armpit, as a percentage of the sleeve diameter.
-    armpitEase: { pct: 15, min: 0, max: 50, menu: 'fit' },
+    armpitEase: { pct: 15, min: -20, max: 50, menu: 'fit' },
     // How long the legs on the garment are. 20-60% for shorts, 100% for pants that touch the floor.
     legLength: { pct: 20, min: 0, max: 120, menu: 'style' },
     // How far the neck hole is shifted towards the front. +100% means it's entirely on the front, -100% means it's entirely on the back, and 0 means the front and back are the same.
