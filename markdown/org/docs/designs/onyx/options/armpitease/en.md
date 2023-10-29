@@ -10,4 +10,4 @@ Note: The Raglan scoop length and Raglan scoop depth options also affect the amo
 
 > ##### This option also allows negative values.
 >
-> Negative values will move the sleeves upwards. Use with caution, even on stretch garments, as this can easily cause binding of the armpit.
+> Negative values will move the sleeves upwards. Use with caution, even on stretch garments, as this can easily cause binding at the armpit.
