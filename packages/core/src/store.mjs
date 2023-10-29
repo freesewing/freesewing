@@ -5,17 +5,7 @@ import get from 'lodash.get'
 /*
  * Don't allow setting of these top-level keys in the store
  */
-const avoid = [
-  'set',
-  'setIfUnset',
-  'push',
-  'unset',
-  'get',
-  'extend',
-  'generateMacroIds',
-  'getMacroIds',
-  'removeMacroNodes',
-]
+const avoid = ['set', 'setIfUnset', 'push', 'unset', 'get', 'extend']
 
 //////////////////////////////////////////////
 //               CONSTRUCTOR                //
