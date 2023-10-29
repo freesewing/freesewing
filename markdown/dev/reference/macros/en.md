@@ -49,10 +49,12 @@ Now you can use these macros in your part:
 
 ## Macros we maintain
 
-Below is a list of macros from [the plugins we maintain](/reference/plugins):
+Below is a list of macros from [the plugins we maintain](/reference/plugins).
+
+<Note compact noP>
+
+We use camelCase here, but macro names are case-insensitive
+</Note>
 
 <ReadMore list />
 
-## Notes
-
-We recommend allowing to *undo* a macro by passing `false` as its parameter.
