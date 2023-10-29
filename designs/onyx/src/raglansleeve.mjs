@@ -312,8 +312,6 @@ export const raglanSleeve = {
   draft: draftRaglanSleeve,
   measurements: ['biceps', 'wrist', 'shoulderToWrist'],
   options: {
-    // How much larger to make the armhole as a proportion of the biceps measurement.
-    armholeTweakFactor: 1.1,
     bicepsPosition: 0.2,
     // How much ease to put vertically around the armhole and the shoulder joint. Transitions gradually towards wristEase as one goes down the sleeve.
     sleeveEase: { pct: 0, min: -30, max: 50, menu: 'fit' },
