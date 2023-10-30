@@ -2,6 +2,8 @@
 title: "Neckband length"
 ---
 
+![The neckband length option on Onyx](neckbandlength.svg)
+
 Controls how long to make the neckband, as a percentage of the circumference of the neckline.
 
 Too large a value will make for a loose neckband that doesn't hold its shape properly, while too small a value will cause the fabric around the neckband to be gathered.
