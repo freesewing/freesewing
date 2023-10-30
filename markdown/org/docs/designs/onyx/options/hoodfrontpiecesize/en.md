@@ -2,6 +2,8 @@
 title: "Sleeve length"
 ---
 
+![The sleeve length option on Onyx](sleevelength.svg)
+
 Controls how long the sleeves of your garment will be.
  - 15-30% will make short sleeves.
  - 75% will make three-quarter sleeves.
