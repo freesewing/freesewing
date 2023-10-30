@@ -2,8 +2,6 @@
 title: "Aisance d'assise"
 ---
 
-![The seat ease option on Onyx](seatease.svg)
-
 Controls how wide the garment will be at your seat.
 
 Whatever value you provide here will simply be added to your seat circumference measurement when drafting the garment.
