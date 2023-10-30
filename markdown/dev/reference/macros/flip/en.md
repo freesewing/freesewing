@@ -3,8 +3,17 @@ title: flip
 ---
 
 The `flip` macro flips (mirrors) an entire part vertically around either the
-X-axis or the Y-axis.  It is provided by the [flip
-plugin](/reference/plugins/flip).
+X-axis or the Y-axis.
+
+It is provided by the [flip plugin](/reference/plugins/flip).
+
+<Note>
+##### Not a core-plugins macro
+
+The `flip` macro is not provided by the [core-plugins](/reference/plugins/core),
+so you need to load the [flip plugin](/reference/plugins/flip) explicitly
+if you want to use it.
+</Note>
 
 ## Signature
 

@@ -2,8 +2,6 @@
 title: "Hips ease"
 ---
 
-![The hips ease option on Onyx](hipsease.svg)
-
 Controls how wide the garment will be at your hips.
 
 Whatever value you provide here will simply be added to your hips circumference measurement when drafting the garment.

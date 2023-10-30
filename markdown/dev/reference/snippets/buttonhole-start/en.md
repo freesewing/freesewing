@@ -6,8 +6,8 @@ The `buttonhole-start` snippet is used to mark buttonhole placement.
 This particular snippet places the buttonhole's start on its
 anchor point.
 
-It is provided by [plugin-annotations](/reference/plugins/annotations/).
-
+It is provided by [plugin-annotations](/reference/plugins/annotations/), which is
+part of [core-plugins](/reference/plugins/core) (so it is available by default).
 
 ## Example
 
