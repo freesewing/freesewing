@@ -4,6 +4,6 @@ title: Tour de buste supérieur
 
 La mesure de **tour de buste supérieur** est votre circonférence thoracique mesurée juste sous vos bras, au-dessus de la partie la plus large de votre buste.
 
-Le but de la mesure du tour de buste supérieur est de se faire une idée de la circonférence du buste sans prendre en compte les seins. En tant que telle, cette mesure n'est pertinente que pour les modèles aux seins.
+Le but de la mesure du tour de buste supérieur est de se faire une idée de la circonférence du buste sans prendre en compte les seins. As such, this measurement is most commonly used to fit people with breasts, but it's perfectly fine measurement for people without too.
 
 Pour mesurer votre dessus poitrine, enroulez le mètre ruban autour de votre poitrine juste sous vos bras. Il se peut que vous ne puissiez pas le garder horizontal (parallèle au sol), mais c'est normal.
