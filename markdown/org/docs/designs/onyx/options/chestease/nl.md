@@ -2,8 +2,6 @@
 title: "Overwijdte borst"
 ---
 
-![The chest ease option on Onyx](chestease.svg)
-
 Controls how wide the garment will be at your chest.
 
 De waarde die je hier geeft wordt toegevoegd aan je borstomtrek bij het tekenen van het patroon.
