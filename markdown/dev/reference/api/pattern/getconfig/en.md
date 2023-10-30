@@ -22,11 +22,6 @@ object pattern.getConfig()
 
 ```js
 import { Aaron } from "@freesewing/aaron"
-import { cisFemaleAdult34 } from "@freesewing/models"
 
-const pattern = new Aaron({
-  measurements: cisFemaleAdult34
-})
-
-const config = pattern.getConfig()
+const config = new Aaron().getConfig()
 ```

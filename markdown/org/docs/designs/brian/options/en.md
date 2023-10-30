@@ -38,14 +38,14 @@ there to fit the shoulder.
 
 The width of the sleevecap (and thus the width of the sleeve at the bottom of the armhole)
 is equal to the distance between points 1 and 2. That distance depends on the measurements
-of the model, the amount of ease, the cut of the garment and so on. For our sleevecap, all we
+used, the amount of ease, the cut of the garment and so on. For our sleevecap, all we
 need to know is that we start with a given width. And while that width can be influenced by
 other factors, we can not influence it by any of the sleevecap options.
 
 ![Controlling the top of the sleevecap](sleevecaptop.svg)
 
 The height of the sleevecap is equal to the distance between points 3 and 4. The exact height
-is a trade-off between the measurments of the model, options, ease, sleevecap ease, and the fact
+is a trade-off between the measurements used, options, ease, sleevecap ease, and the fact
 that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control
 the exact value. But there are two options that control the shape of our sleevecap:
 

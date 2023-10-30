@@ -17,7 +17,6 @@ Pattern pattern.addPart(object part)
 
 ```js
 import { Aaron } from "@freesewing/aaron"
-import { cisFemaleAdult34 } from "@freesewing/models"
 
 const extra = {
   name: 'aaron.extra',
@@ -36,9 +35,14 @@ const extra = {
   }
 }
 
-const pattern = new Aaron({
-  measurements: cisFemaleAdult34
-}).addPart(extra)
+// Load some public test measurements from the FreeSewing backend
+const measurements = (
+  await (
+    await fetch("https://backend3.freesewing.org/curated-sets/1.json")
+  ).json()
+).measurements
+
+const pattern = new Aaron({ measurements }).addPart(extra)
 
 const svg = pattern.draft().render()
 ```

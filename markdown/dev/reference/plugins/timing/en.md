@@ -63,13 +63,16 @@ and the values are
 
 ```js
 import { Aaron } from '@freesewing/aaron'
-import { cisFemaleAdult34 } from "@freesewing/models"
 import { pluginTiming } from '@freesewing/plugin-timing'
 
-const pattern = new Aaron({
-  measurements: cisFemaleAdult34,
-})
-  .use(pluginTiming)
+// Load some public test measurements from the FreeSewing backend
+const measurements = (
+  await (
+    await fetch("https://backend3.freesewing.org/curated-sets/1.json")
+  ).json()
+).measurements
+
+const pattern = new Aaron({ measurements }).use(pluginTiming)
 
 const svg = pattern.draft().render()
 

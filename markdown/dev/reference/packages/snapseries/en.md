@@ -2,7 +2,7 @@
 title: snapseries
 ---
 
-Published as [@freesewing/models][1], this package provides series
+Published as [@freesewing/snapseries][1], this package provides series
 of common sizes for elastics and zippers and series of common intervals
 to be used with snapped percentage options.
 
