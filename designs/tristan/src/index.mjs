@@ -10,11 +10,12 @@ import { frontOutside } from './frontoutside.mjs'
 import { backPoints } from './backpoints.mjs'
 import { backInside } from './backinside.mjs'
 import { backOutside } from './backoutside.mjs'
+import { peplum } from './peplum.mjs'
 
 // Create new design
 const Tristan = new Design({
   data,
-  parts: [frontPoints, frontInside, frontOutside, backPoints, backInside, backOutside],
+  parts: [frontPoints, frontInside, frontOutside, backPoints, backInside, backOutside, peplum],
 })
 
 // Named exports
@@ -25,6 +26,7 @@ export {
   backPoints,
   backInside,
   backOutside,
+  peplum,
   i18n,
   Tristan,
 }

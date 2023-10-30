@@ -7,7 +7,7 @@ export const backOutside = {
     paths.cut = new Path()
       .move(points.armhole)
       .curve(points.armholeCutCp, points.strapOutsideCp, points.strapOutside)
-    // .hide()
+      .hide()
 
     paths.dart = new Path()
       .move(points.shoulderDart)
@@ -19,9 +19,6 @@ export const backOutside = {
       .move(points.dartBottomRight)
       .line(points.waistSide)
       .curve_(points.waistSideCp2, points.armhole)
-      // .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
-      // .curve_(points.armholePitchCp2, points.shoulder)
-      // .line(points.shoulderDart)
       .join(paths.cut)
       .join(paths.dart)
       .close()

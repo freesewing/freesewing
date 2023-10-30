@@ -54,8 +54,6 @@ export const frontOutside = {
       to: points.grainTop,
     })
 
-    console.log({ frontSide: points.sideHem.dist(points.armhole) })
-
     store.cutlist.removeCut()
     store.cutlist.addCut()
 
