@@ -2,6 +2,8 @@
 title: "Upper leg ease"
 ---
 
+![The upper leg ease option on Onyx](upperlegease.svg)
+
 Controls how wide the garment will be at your upper leg.
 
 Whatever value you provide here will simply be added to your upper leg circumference measurement when drafting the garment.
