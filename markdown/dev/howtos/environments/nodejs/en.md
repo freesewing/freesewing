@@ -67,7 +67,7 @@ console.log(svg)
 
 - We are using `@freesewing/aaron` as the design, but you could use any design
 - You probably want to [use your own measurements](/reference/settings/measurements)
-  or you could use `@freesewing/models` to load measurements from [our sizing grid](https://freesewing.org/sizes/)
+  or you could use [our curated measurements sets](https://freesewing.org/curated-sets) to load measurements.
 - We are using `@freesewing/plugin-theme` to theme our SVG, but you
   could [pass in your own CSS](/reference/api/svg/style)
 
@@ -82,7 +82,6 @@ Obviously you need Node.js, but you will also need the following packages:
 - `@freesewing/plugin-bundle`: Set of common plugins
 - `@freesewing/aaron` or any design you want to use
 - Any design on which the design you choose is built. In this case, Aaron depends on `@freesewing/brian`
-- `@freesewing/utils`
 
 For the example above, your `package.json` **dependencies** section will look like this:
 
@@ -91,9 +90,6 @@ For the example above, your `package.json` **dependencies** section will look li
     "@freesewing/core": "latest"
     "@freesewing/aaron": "latest",
     "@freesewing/brian": "latest",
-    "@freesewing/models": "latest",
-    "@freesewing/plugin-bundle": "latest",
-    "@freesewing/plugin-theme": "latest",
-    "@freesewing/utils": "latest"
+    "@freesewing/plugin-theme": "latest"
   }
 ```
