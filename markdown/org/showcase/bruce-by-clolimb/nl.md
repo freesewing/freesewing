@@ -2,7 +2,7 @@
 title: "Bruce by CloLimb"
 caption: "This Bruce features a tag of some vintage batik"
 date: 20231027
-intro: "The wearer reports that this Bruce 'fits so well!'"
+intro: "The wearer reports that this Bruce \"fits so well!\""
 designs:
   - "bruce"
 maker: Natalia
