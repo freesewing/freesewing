@@ -1,5 +1,5 @@
 ---
-title: Creating a new pattern design
+title: Creating a new design
 ---
 
 When creating a new design, you have two options. You can create it in a
