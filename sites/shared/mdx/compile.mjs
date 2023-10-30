@@ -35,6 +35,7 @@ export const compileMdx = async ({
   const mdx = String(
     await compile(md, {
       outputFormat: 'function-body',
+      baseUrl: import.meta.url,
       development: false,
       remarkPlugins: [
         remarkFrontmatter,
