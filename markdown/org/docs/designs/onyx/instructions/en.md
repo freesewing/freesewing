@@ -74,7 +74,7 @@ Check around the hips, upper legs, and crotch fork, and make sure that everythin
 Note: If the front or back was cut _on the fold_, skip steps producing center seams.
 Note: These instructions are intended to form the seams such that the side seams extend backwards, and the center seams extend leftwards.
 Note: These instructions assume that the zipper is on the front. If the zipper is on the back or there is no zipper, the directions will have to be modified slightly.
-Note: If you're having the zipper zip up across the neckband (recommended for unisuits), remember that.
+Note: If you're having the zipper zip up across the neckband (recommended for unisuits), remember that when placing the zipper on the center seam.
 
 If not using lining:
 - (if front was _not_ cut _on the fold_) With _good sides together_, place the zipper and neckband into position along the center seam, remembering to take seam allowance into account. Mark where the bottom stop of the zipper is, and serge/overlock the front pieces together starting at the crotch fork and stopping at the bottom stop of the zipper.

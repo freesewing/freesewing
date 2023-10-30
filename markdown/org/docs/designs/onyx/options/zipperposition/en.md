@@ -1,8 +1,6 @@
 ---
-title: Zipper position
+title: "Zipper position"
 ---
-
-![The zipper position option on Onyx](zipperposition.svg)
 
 Choose whether to place the zipper on the front, the back, or to not use a zipper at all.
 
