@@ -28,11 +28,11 @@ pour s'adapter à l'épaule.
 
 </Note>
 
-The width of the sleevecap (and thus the width of the sleeve at the bottom of the armhole) is equal to the distance between points 1 and 2. That distance depends on the measurements of the model, the amount of ease, the cut of the garment and so on. For our sleevecap, all we need to know is that we start with a given width. And while that width can be influenced by other factors, we can not influence it by any of the sleevecap options.
+The width of the sleevecap (and thus the width of the sleeve at the bottom of the armhole) is equal to the distance between points 1 and 2. That distance depends on the measurements used, the amount of ease, the cut of the garment and so on. For our sleevecap, all we need to know is that we start with a given width. And while that width can be influenced by other factors, we can not influence it by any of the sleevecap options.
 
 ![Contrôle du haut de la tête de manche](sleevecaptop.svg)
 
-La hauteur de la tête de manche est égale à la distance entre les points 3 et 4. The exact height is a trade-off between the measurments of the model, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control the exact value. Mais deux options permettent de contrôler la forme de notre tête de manche :
+La hauteur de la tête de manche est égale à la distance entre les points 3 et 4. The exact height is a trade-off between the measurements used, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control the exact value. Mais deux options permettent de contrôler la forme de notre tête de manche :
 
 - [Haut de tête de manche X](/docs/designs/brian/options/sleevecaptopfactorx/) : Contrôle la position horizontale des points 3 et 4
 - [Haut de tête de manche Y](/docs/designs/brian/options/sleevecaptopfactory/) : Contrôle la position verticale du point 4
