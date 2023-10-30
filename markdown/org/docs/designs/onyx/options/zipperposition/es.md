@@ -1,5 +1,5 @@
 ---
-title: "\"Zipper position\n---"
+title: Zipper position
 ---
 
 ![The zipper position option on Onyx](zipperposition.svg)

@@ -208,7 +208,7 @@ backend:
 
 dev:
   _:
-    '@mdx-js/mdx': &mdx '^2.3.0'
+    '@mdx-js/mdx': &mdx '^3.0.0'
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': &mdxRuntime '2.0.0-next.9'
     '@next/bundle-analyzer': &next '13.5.4'
@@ -234,14 +234,14 @@ dev:
     'rehype-stringify': &rehypeStringify '10.0.0'
     # see: https://github.com/npm/cli/issues/2610#issuecomment-1295371753
     'remark-copy-linked-files': &remarkCopyLinkedFiles 'git+https://git@github.com/joostdecock/remark-copy-linked-files'
-    'remark-gfm': &remarkGfm '3.0.1'
+    'remark-gfm': &remarkGfm '4.0.0'
   dev: &nextSiteDevDependencies
     'autoprefixer': &autoprefixer '10.4.16'
     'js-yaml': &jsYaml '4.1.0'
     'postcss': &postcss '8.4.31'
     'remark-extract-frontmatter': '3.2.0'
-    'remark-mdx-frontmatter': &mdxfrontmatter '3.0.0'
-    'tailwindcss': &tailwindcss '3.3.3'
+    'remark-mdx-frontmatter': &mdxfrontmatter '4.0.0'
+    'tailwindcss': &tailwindcss '3.3.5'
     'yaml-loader': '0.8.0'
 
 lab:
@@ -320,7 +320,7 @@ org:
 
 shared:
   _:
-    '@next/mdx': '13.5.4'
+    '@next/mdx': '14.0.0'
     '@resvg/resvg-js': '2.4.1'
     '@tailwindcss/typography': *tailwindTypography
     'Buffer': '0.0.0'
@@ -351,7 +351,7 @@ shared:
     'react-zoom-pan-pinch': &zoompanpinch '3.1.0'
     'rehype-autolink-headings': *rehypeAutolinkHeadings
     'rehype-highlight': *rehypeHighlight
-    'remark-frontmatter': &remarkfrontmatter '4.0.1'
+    'remark-frontmatter': &remarkfrontmatter '5.0.0'
     'remark-mdx-frontmatter': *mdxfrontmatter
     "remark-smartypants": &smartypants "2.0.0"
     'sharp': '0.32.6'
