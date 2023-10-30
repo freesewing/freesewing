@@ -39,6 +39,10 @@ mfaEnabled: Zwei-Faktoren-Authentifizierung ist aktiviert
 mfaDisabled: Die Zwei-Faktoren-Authentifizierung ist deaktiviert
 mfaSetup: Zwei-Faktoren-Authentifizierung einrichten
 mfaAdd: Füge FreeSewing zu deiner Authenticator App hinzu, indem du den QR-Code oben scannst.
+mfaScratchCodes: MFA Scratch Codes
+mfaScratchCodesMsg1: You can use any of these scratch codes as a one-time MFA code when you do not have access to your code-generating app (for example, when you've lost your phone).
+mfaScratchCodesMsg2: You can use each of these codes only once. Write them down, because this is the only time you will get to see them.
+copyToClipboard: Copy to clipboard
 confirmWithPassword: Bitte gib dein Passwort ein, um diese Aktion zu bestätigen
 confirmWithMfa: Bitte gib einen Code aus deiner Authenticator App ein, um diese Aktion zu bestätigen
 enableMfa: Aktiviere die Zwei-Faktor-Authentifizierung
