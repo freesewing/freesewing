@@ -39,7 +39,7 @@
     "daisyui": "3.9.2",
     "echarts": "5.4.3",
     "echarts-for-react": "3.0.2",
-    "jotai": "2.4.3",
+    "jotai": "2.5.0",
     "jotai-location": "0.5.1",
     "lodash.get": "4.4.2",
     "lodash.orderby": "4.6.0",
