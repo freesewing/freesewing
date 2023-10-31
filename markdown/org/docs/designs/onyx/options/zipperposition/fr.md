@@ -2,8 +2,6 @@
 title: Zipper position
 ---
 
-![The zipper position option on Onyx](zipperposition.svg)
-
 Choose whether to place the zipper on the front, the back, or to not use a zipper at all.
 
 Front Zipper: 1: Easy for the wearer to reach the zipper. 2: Allows for a tight neckline. 3: Provides the least mobility of any option.

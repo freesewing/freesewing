@@ -2,8 +2,6 @@
 title: "Overwijdte heup"
 ---
 
-![The hips ease option on Onyx](hipsease.svg)
-
 Controls how wide the garment will be at your hips.
 
 De waarde die je hier geeft wordt toegevoegd aan je heupomtrek bij het tekenen van het patroon.

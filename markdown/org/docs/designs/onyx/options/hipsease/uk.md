@@ -2,8 +2,6 @@
 title: "Легкість стегон"
 ---
 
-![The hips ease option on Onyx](hipsease.svg)
-
 Controls how wide the garment will be at your hips.
 
 Будь-яке значення, яке ви вкажете тут, буде просто додано до обхвату стегон під час побудови викрійки виробу.

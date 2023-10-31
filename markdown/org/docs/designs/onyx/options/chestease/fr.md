@@ -2,8 +2,6 @@
 title: "Aisance de poitrine"
 ---
 
-![The chest ease option on Onyx](chestease.svg)
-
 Controls how wide the garment will be at your chest.
 
 Quelle que soit la valeur que vous entrez ici, elle sera simplement ajoutée à votre tour de poitrine lors de l'élaboration du vêtement.

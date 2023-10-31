@@ -2,8 +2,6 @@
 title: "Zugabe Hüfte"
 ---
 
-![The hips ease option on Onyx](hipsease.svg)
-
 Controls how wide the garment will be at your hips.
 
 Welcher Wert auch immer Sie hier angeben, wird beim Entwurf des Kleidungsstückes einfach zu Ihrer Hüftumfangsmessung hinzugefügt.

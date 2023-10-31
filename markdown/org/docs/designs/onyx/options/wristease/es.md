@@ -2,8 +2,6 @@
 title: "Wrist ease"
 ---
 
-![The wrist ease option on Onyx](wristease.svg)
-
 Affects how wide the end of the sleeve is on some garments. There is no effect for sleeves ending at the biceps or above. There is no effect for sleeves ending at the biceps or above.
 
 > ##### This option allows negative values

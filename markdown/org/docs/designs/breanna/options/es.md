@@ -31,11 +31,11 @@ allí para ajustarse al hombro.
 
 </Note>
 
-The width of the sleevecap (and thus the width of the sleeve at the bottom of the armhole) is equal to the distance between points 1 and 2. That distance depends on the measurements of the model, the amount of ease, the cut of the garment and so on. For our sleevecap, all we need to know is that we start with a given width. And while that width can be influenced by other factors, we can not influence it by any of the sleevecap options.
+The width of the sleevecap (and thus the width of the sleeve at the bottom of the armhole) is equal to the distance between points 1 and 2. That distance depends on the measurements used, the amount of ease, the cut of the garment and so on. For our sleevecap, all we need to know is that we start with a given width. And while that width can be influenced by other factors, we can not influence it by any of the sleevecap options.
 
 ![Controlar la parte superior de la manga](sleevecaptop.svg)
 
-La altura de la manga es igual a la distancia entre los puntos 3 y 4. The exact height is a trade-off between the measurments of the model, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control the exact value. Pero hay dos opciones que controlan la forma de nuestra manguera:
+La altura de la manga es igual a la distancia entre los puntos 3 y 4. The exact height is a trade-off between the measurements used, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control the exact value. Pero hay dos opciones que controlan la forma de nuestra manguera:
 
 - [Sleevecap top X](/docs/designs/breanna/options/sleevecaptopfactorx/) : Controla la colocación horizontal del punto 3 y 4
 - [Sleevecap superior Y](/docs/designs/breanna/options/sleevecaptopfactory/) : Controla la posición vertical del punto 4

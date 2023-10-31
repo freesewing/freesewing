@@ -2,8 +2,6 @@
 title: "Brustumfangszugabe"
 ---
 
-![The chest ease option on Onyx](chestease.svg)
-
 Controls how wide the garment will be at your chest.
 
 Welcher Wert auch immer Sie hier angeben, wird beim Entwurf des Kleidungsstückes einfach zu Ihrer Brustumfangsmessung hinzugefügt.
