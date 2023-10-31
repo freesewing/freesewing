@@ -38,8 +38,21 @@ export const frontPoints = {
     waistDartLength: { pct: 90, min: 75, max: 95, menu: 'advanced' },
 
     // Options
-    // peplum: { bool: false, menu: 'style' },
-    // peplumSize: { pct: 10, min: 5, max: 50, menu: 'peplum' },
+    zipperLocation: { dflt: 'side', list: ['front', 'side', 'back'], menu: 'options' },
+    binding: { bool: false, menu: 'options' },
+    bindingLocation: {
+      dflt: 'back',
+      list: ['front', 'back'],
+      // eslint-disable-next-line no-unused-vars
+      menu: (settings, mergedOptions) => (mergedOptions.binding === false ? false : 'options'),
+    },
+    bindingWidth: {
+      pct: 100,
+      min: 0,
+      max: 50,
+      // eslint-disable-next-line no-unused-vars
+      menu: (settings, mergedOptions) => (mergedOptions.binding === false ? false : 'options'),
+    },
   },
   draft: ({ points, Path, paths, snippets, options, macro, store, part }) => {
     const bCircle = 0.552284749831
