@@ -16,11 +16,10 @@ export const CreateShape = ({
   ratio,
 }) => {
   const double =
-    type == options.zipperLocation || (true == options.binding && type == options.bindingLocation)
+    type == options.zipperLocation || (true == options.lacing && type == options.lacingLocation)
 
   macro('ringsector', {
     id: type + 'Peblum',
-    center: new Point(0, offset),
     angle: (options.peplumFullness / 2) * ratio * (double ? 0.5 : 1),
     insideRadius: radius,
     outsideRadius: radius + width,
@@ -50,7 +49,6 @@ export const CreateShape = ({
 
   if (sa)
     paths[type + 'SA'] = paths['__macro_ringsector_' + type + 'Peblum_path']
-      .reverse()
       .offset(sa)
       .attr('class', 'fabric sa')
 
@@ -79,7 +77,7 @@ export const peplumFront = {
   after: backPoints,
   options: {
     // Options
-    peplum: { bool: false, menu: 'style' },
+    peplum: { bool: false, menu: 'options' },
     peplumSize: {
       pct: 10,
       min: 5,

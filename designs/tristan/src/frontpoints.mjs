@@ -39,23 +39,23 @@ export const frontPoints = {
 
     // Options
     zipperLocation: { dflt: 'side', list: ['front', 'side', 'back'], menu: 'options' },
-    binding: { bool: false, menu: 'options' },
-    bindingLocation: {
+    lacing: { bool: false, menu: 'options' },
+    lacingLocation: {
       dflt: 'back',
       list: ['front', 'back'],
       // eslint-disable-next-line no-unused-vars
-      menu: (settings, mergedOptions) => (mergedOptions.binding === false ? false : 'options'),
+      menu: (settings, mergedOptions) => (mergedOptions.lacing === false ? false : 'options'),
     },
-    bindingWidth: {
-      pct: 100,
+    lacingWidth: {
+      pct: 20,
       min: 0,
       max: 50,
       // eslint-disable-next-line no-unused-vars
-      menu: (settings, mergedOptions) => (mergedOptions.binding === false ? false : 'options'),
+      menu: (settings, mergedOptions) => (mergedOptions.lacing === false ? false : 'options'),
     },
   },
   draft: ({ points, Path, paths, snippets, options, macro, store, part }) => {
-    const bCircle = 0.552284749831
+    const lacing = true == options.lacing && 'front' == options.lacingLocation
 
     // Hide Noble paths
     for (const key of Object.keys(paths)) paths[key].hide()
@@ -104,7 +104,7 @@ export const frontPoints = {
         points.shoulderDartOutside
       )
       .intersectsY(points.cfCut.y)[0]
-      .addCircle(6)
+    // .addCircle(6)
 
     points.cfCutCp = points.cfCut.shiftFractionTowards(
       points.cutSeamInside,
@@ -143,8 +143,21 @@ export const frontPoints = {
       points.sideHem.y = points.waistDartRight.y
     }
 
+    if (lacing) {
+      points.lacingCut = points.cfCut.shift(
+        0,
+        (points.strapInsideCp.x - points.cfCut.x) * options.lacingWidth
+      )
+      points.lacingHem = points.cfHem.shiftTowards(
+        points.waistDartLeft,
+        (points.strapInsideCp.x - points.cfCut.x) * options.lacingWidth
+      )
+    }
     store.set('frontOutsideWaistLength', points.waistDartRight.dist(points.sideHem))
-    store.set('frontInsideWaistLength', points.waistDartLeft.dist(points.cfHem))
+    store.set(
+      'frontInsideWaistLength',
+      points.waistDartLeft.dist(lacing ? points.lacingHem : points.cfHem)
+    )
     store.set('frontLength', points.cfNeck.dist(points.cfHem))
 
     return part

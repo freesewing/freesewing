@@ -30,19 +30,25 @@ export const frontInside = {
     delete points.bustDartMiddle
     delete points.bustDartEdge
 
+    const lacing = true == options.lacing && 'front' == options.lacingLocation
+
     paths.cut = new Path()
       .move(points.strapInside)
-      .curve(points.strapInsideCp, points.cfCutCp, points.cfCut)
+      .curve(points.strapInsideCp, points.cfCutCp, lacing ? points.lacingCut : points.cfCut)
 
     paths.insideSeam = new Path()
-      .move(points.cfHem)
+      .move(lacing ? points.lacingHem : points.cfHem)
       .line(points.waistDartLeft)
       .curve(points.waistDartLeftCp, points.shoulderDartTipCpDownInside, points.shoulderDartTip)
       .line(points.shoulderDartInside)
       .join(paths.cut)
 
     paths.seam = paths.insideSeam
-      .join(new Path().move(points.cfCut).line(points.cfHem))
+      .join(
+        lacing
+          ? new Path().move(points.lacingCut).line(points.lacingHem)
+          : new Path().move(points.cfCut).line(points.cfHem)
+      )
       .close()
       .attr('class', 'fabric')
 
@@ -54,18 +60,29 @@ export const frontInside = {
         .length()
     )
 
-    macro('cutonfold', {
-      from: points.cfCut,
-      to: points.cfHem,
-      grainline: true,
-    })
-
-    if (options.dartPosition == 'shoulder') {
-      snippets.shoulderDartTip = new Snippet('notch', points.shoulderDartTip)
-    } else {
-      snippets.shoulderDartTip = new Snippet('notch', points.armholeDartTipInside)
+    if ('front' != options.zipperLocation) {
+      macro('cutonfold', {
+        from: points.cfCut,
+        to: points.cfHem,
+        grainline: true,
+      })
     }
-    points.titleAnchor = new Point(points.hpsCp2.x * 0.75, points.cfNeckCp1.y * 1.5)
+
+    if (lacing) {
+      paths.originalSide = new Path()
+        .move(points.lacingCut)
+        .line(points.cfCut)
+        .line(points.cfHem)
+        .line(points.lacingHem)
+        .setClass('note dashed')
+    }
+
+    snippets.shoulderDartTip = new Snippet('notch', points.shoulderDartTip)
+
+    points.titleAnchor = points.waistDartLeft.shiftFractionTowards(
+      lacing ? points.lacingCut : points.cfCut,
+      0.75
+    )
     macro('title', {
       at: points.titleAnchor,
       nr: 1,
@@ -77,8 +94,15 @@ export const frontInside = {
     // macro('scalebox', { at: points.scaleboxAnchor, rotate: 270 })
 
     if (sa) {
-      paths.sa = paths.insideSeam.offset(sa).line(points.cfNeck).attr('class', 'fabric sa')
-      paths.sa = paths.sa.move(points.cfHem).line(paths.sa.start())
+      if ('front' == options.zipperLocation) {
+        paths.sa = paths.seam
+          .offset(sa)
+          .line(lacing ? points.lacingCut : points.cfCut)
+          .attr('class', 'fabric sa')
+      } else {
+        paths.sa = paths.insideSeam.offset(sa).line(points.cfCut).attr('class', 'fabric sa')
+        paths.sa = paths.sa.move(points.cfHem).line(paths.sa.start())
+      }
     }
 
     let extraOffset = 0

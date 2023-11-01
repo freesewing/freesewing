@@ -9,6 +9,8 @@ export const backPoints = {
   hide: hidePresets.HIDE_ALL,
   // options,
   draft: ({ points, Path, paths, options, snippets, log, store, part }) => {
+    const lacing = true == options.lacing && 'back' == options.lacingLocation
+
     // Hide Noble paths
     for (const key of Object.keys(paths)) paths[key].hide()
     for (const i in snippets) delete snippets[i]
@@ -58,14 +60,27 @@ export const backPoints = {
       1 - options.cutRoundnessBack
     )
 
-    points.armholeCutCp = points.armhole
-      .shift(180, options.armholeBackIn * points.armhole.dist(points.dartTip))
-      .addCircle(4)
+    points.armholeCutCp = points.armhole.shift(
+      180,
+      options.armholeBackIn * points.armhole.dist(points.dartTip)
+    )
+    // .addCircle(4)
 
     points.strapOutsideCp = points.strapOutside.shiftFractionTowards(
       points.dartTip.shift(points.dartTip.angle(points.shoulderDart) - 90, strapWidth / 2),
       options.armholeFrontDepth
     )
+
+    if (lacing) {
+      points.lacingCut = points.cbCut.shift(
+        0,
+        (points.strapInsideCp.x - points.cbCut.x) * options.lacingWidth
+      )
+      points.lacingWaist = points.waistCenter.shiftTowards(
+        points.dartBottomLeft,
+        (points.strapInsideCp.x - points.cbCut.x) * options.lacingWidth
+      )
+    }
 
     store.set('backOutsideWaistLength', points.dartBottomRight.dist(points.waistSide))
     store.set('backInsideWaistLength', points.dartBottomLeft.dist(points.waistCenter))

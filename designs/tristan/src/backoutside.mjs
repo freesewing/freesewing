@@ -15,7 +15,7 @@ export const backOutside = {
       .curve(points.shoulderDartCpDown, points.dartRightCp, points.dartBottomRight)
       .hide()
 
-    paths.outsideSeam = new Path()
+    paths.seam = new Path()
       .move(points.dartBottomRight)
       .line(points.waistSide)
       .curve_(points.waistSideCp2, points.armhole)
@@ -24,12 +24,16 @@ export const backOutside = {
       .close()
       .attr('class', 'fabric')
 
-    console.log({
-      backSide: new Path()
-        .move(points.waistSide)
-        .curve_(points.waistSideCp2, points.armhole)
-        .length(),
+    points.titleAnchor = points.dartBottomRight.shiftFractionTowards(points.armholeCpTarget, 0.5)
+    macro('title', {
+      at: points.titleAnchor,
+      nr: 4,
+      title: 'backOutside',
     })
+
+    if (sa) {
+      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    }
 
     return part
   },
