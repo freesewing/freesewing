@@ -3,6 +3,8 @@ tags: Tags (étiquettes)
 showLineDrawings: Show line drawings
 showExamples: Show examples
 clearFilter: Clear filter
+showFilters: Show filters
+hideFilters: Hide filters
 difficulty: Difficulté
 learnMoreAboutThing: Learn more about {thing}
 newThingPattern: New {thing} pattern
