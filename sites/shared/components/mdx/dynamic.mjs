@@ -57,7 +57,9 @@ export const Mdx = ({ md }) => {
       try {
         const mdx = await compileMdx({ md })
         setMdx(mdx)
-      } catch {}
+      } catch (err) {
+        console.log(err)
+      }
     }
     loadMdx()
   }, [md])
