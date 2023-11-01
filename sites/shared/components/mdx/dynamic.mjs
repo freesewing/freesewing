@@ -25,6 +25,7 @@ export const DynamicMdx = ({ site = 'org', slug, language, title = 1 }) => {
   const [frontmatter, setFrontmatter] = useState(false)
 
   useEffect(() => {
+    console.log('in effect')
     const loadMdx = async () => {
       const response = await fetch(`${ghPrefix}/${site}/${slug}/${language}.md`)
       const md = await response.text()
@@ -56,7 +57,9 @@ export const Mdx = ({ md }) => {
       try {
         const mdx = await compileMdx({ md })
         setMdx(mdx)
-      } catch {}
+      } catch (err) {
+        console.log(err)
+      }
     }
     loadMdx()
   }, [md])

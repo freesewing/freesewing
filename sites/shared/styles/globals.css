@@ -9,13 +9,13 @@
 @layer components {
   /* Applied styles for common HTML tags */
   h1 {
-    @apply text-base-content text-4xl py-5 font-light lg:text-6xl;
+    @apply text-base-content text-4xl py-5 font-bold lg:text-6xl;
   }
   h2 {
-    @apply text-base-content text-3xl pt-4 pb-3 m-0 font-light lg:text-4xl;
+    @apply text-base-content text-3xl pt-4 pb-3 m-0 font-medium lg:text-4xl;
   }
   h3 {
-    @apply text-base-content text-2xl pt-3 pb-2 m-0 font-normal lg:text-3xl;
+    @apply text-base-content text-2xl pt-3 pb-2 m-0 font-medium lg:text-3xl;
   }
   h4 {
     @apply text-base-content text-xl pt-2 pb-1 m-0 font-medium lg:text-2xl;
