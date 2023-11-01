@@ -11,14 +11,16 @@ export const BaseLayout = ({ children = [] }) => (
  * The left column of the default layout
  */
 export const BaseLayoutLeft = ({ children = [] }) => (
-  <div className="max-w-96 w-1/4 hidden lg:block shrink-0 my-8">{children}</div>
+  <div className="max-w-96 w-1/4 hidden lg:block shrink-0 my-8 sticky top-4 max-h-screen overflow-scroll">
+    {children}
+  </div>
 )
 
 /*
  * The right column of the default layout
  */
 export const BaseLayoutRight = ({ children = [] }) => (
-  <div className="max-w-96 w-1/4 hidden xl:block my-8">{children}</div>
+  <div className="max-w-96 w-1/4 hidden xl:block my-8 sticky top-2">{children}</div>
 )
 
 /*
