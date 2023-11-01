@@ -6,8 +6,7 @@ export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'violet
 export const rating = ['green-400', 'yellow-400', 'amber-500', 'orange-500', 'red-500']
 
 export const theme = {
-  fontFamily:
-    '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+  fontFamily: 'system-ui, sans-serif',
 
   'base-100': colors.neutral['800'],
   'base-200': colors.neutral['700'],

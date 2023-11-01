@@ -43,8 +43,7 @@ export const theme = {
    *
    * You can get more font stacks here: https://modernfontstacks.com/
    */
-  fontFamily:
-    '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+  fontFamily: 'system-ui, sans-serif',
 
   /* COLORS
    *
