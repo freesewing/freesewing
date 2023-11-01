@@ -5,6 +5,7 @@ import {
   optionsMenuStructure,
   optionType,
   cloudflareImageUrl,
+  horFlexClasses,
 } from 'shared/utils.mjs'
 import { designs } from 'shared/config/designs.mjs'
 import { examples } from 'site/components/design-examples.mjs'
@@ -22,11 +23,11 @@ import { Difficulty } from 'shared/components/designs/difficulty.mjs'
 import { PageLink, AnchorLink, Link } from 'shared/components/link.mjs'
 import { DocsLink, DocsTitle } from 'shared/components/mdx/docs-helpers.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
-import { NewPatternIcon } from 'shared/components/icons.mjs'
+import { NewPatternIcon, DocsIcon } from 'shared/components/icons.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 // Translation namespaces used on this page
 export const ns = nsMerge(
-  designNs,
   'account',
   'tags',
   'techniques',
@@ -69,7 +70,7 @@ export const SimpleOptionsList = ({ options, t, design }) => {
   return <ul className="list list-inside pl-2 list-disc">{output}</ul>
 }
 
-export const DesignInfo = ({ design, docs = false, workbench = false }) => {
+export const DesignInfo = ({ design, docs = false, workbench = false, modal = false }) => {
   const { setModal } = useContext(ModalContext)
   const { t, i18n } = useTranslation([...ns, design])
   const { language } = i18n
@@ -96,6 +97,9 @@ export const DesignInfo = ({ design, docs = false, workbench = false }) => {
       <h2 id="docs">{t('account:docs')}</h2>
       <ul className="list list-disc list-inside pl-2">
         <li>
+          <DocsLink site="org" slug={`docs/designs/${design}`} />
+        </li>
+        <li>
           <DocsLink site="org" slug={`docs/designs/${design}/cutting`} />
         </li>
         <li>
@@ -121,13 +125,27 @@ export const DesignInfo = ({ design, docs = false, workbench = false }) => {
     <>
       <h5 className="-mt-6 text-accent font-medium">#FreeSewing{capitalize(design)}</h5>
       <p className="text-xl">{t(`designs:${design}.d`)}</p>
-      {workbench ? null : (
-        <Link className="btn btn-primary btn items-center gap-8" href={`/new/${design}`}>
-          <NewPatternIcon />
-          {t('tags:newThingPattern', { thing: capitalize(design) })}
-        </Link>
-      )}
-      {docs || workbench ? null : (
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
+        {workbench ? null : (
+          <Link
+            className={`${horFlexClasses} btn btn-primary btn-lg flex md:hidden`}
+            href={`/new/${design}`}
+          >
+            <NewPatternIcon className="w-8 h-8" />
+            {t('tags:newThingPattern', { thing: capitalize(design) })}
+          </Link>
+        )}
+        {docs ? null : (
+          <Link
+            className={`${horFlexClasses} btn btn-secondary btn-lg flex md:hidden`}
+            href={`/docs/designs/${design}`}
+          >
+            <DocsIcon className="w-8 h-8" />
+            {t('account:docs')}
+          </Link>
+        )}
+      </div>
+      {docs || workbench || modal ? null : (
         <div className="flex flex-row flex-wrap gap-2 md:gap-4 items-center p-4 border rounded-lg bg-secondary bg-opacity-5 max-w-4xl">
           <b>Jump to:</b>
           <AnchorLink id="notes">
@@ -164,6 +182,12 @@ export const DesignInfo = ({ design, docs = false, workbench = false }) => {
                   format={(t) => t.split(':').pop().trim()}
                 />
               </h2>
+              <DynamicMdx
+                site="org"
+                slug={`docs/designs/${design}/notes`}
+                language={language}
+                title={false}
+              />
             </>
           )}
           {docs ? docsContent : null}
@@ -224,6 +248,12 @@ export const DesignInfo = ({ design, docs = false, workbench = false }) => {
                       format={(t) => t.split(':').pop().trim()}
                     />
                   </h2>
+                  <DynamicMdx
+                    site="org"
+                    slug={`docs/designs/${design}/${page}`}
+                    language={language}
+                    title={false}
+                  />
                 </Fragment>
               ))}
 
@@ -231,6 +261,24 @@ export const DesignInfo = ({ design, docs = false, workbench = false }) => {
         </div>
 
         <div className={`w-full ${docs ? '' : 'md:w-1/3'}`}>
+          {workbench ? null : (
+            <Link
+              className={`${horFlexClasses} btn btn-primary btn-lg hidden md:flex mb-2`}
+              href={`/new/${design}`}
+            >
+              <NewPatternIcon className="w-8 h-8" />
+              {t('tags:newThingPattern', { thing: capitalize(design) })}
+            </Link>
+          )}
+          {docs ? null : (
+            <Link
+              className={`${horFlexClasses} btn btn-secondary btn-lg hidden md:flex`}
+              href={`/docs/designs/${design}`}
+            >
+              <DocsIcon className="w-8 h-8" />
+              {t('account:docs')}
+            </Link>
+          )}
           <h2 id="specs">{t('account:specifications')}</h2>
 
           <h6 className="mt-4">{t('account:design')}</h6>
