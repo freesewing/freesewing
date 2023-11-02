@@ -105,7 +105,7 @@ const NavIcons = ({ setModal, setSearch }) => {
         <I18nIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavButton
-        onClick={() => setSearch(true)}
+        href="/search"
         label={t('header:search')}
         color={spectrum[10]}
         extraClasses="md:px-4"

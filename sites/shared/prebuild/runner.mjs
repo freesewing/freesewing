@@ -12,6 +12,7 @@ import { prebuildDesigns as designs } from './designs.mjs'
 import { prebuildFavicon as favicon } from './favicon.mjs'
 import { prebuildCrowdin as crowdin } from './crowdin.mjs'
 import { prebuildOrg as orgPageTemplates } from './org.mjs'
+import { prebuildSearch as search } from './search.mjs'
 //import { prebuildLab as lab} from './lab.mjs'
 //import { prebuildOgImages as ogImages } from './og/index.mjs'
 
@@ -35,6 +36,7 @@ const handlers = {
   navigation,
   git,
   'Page Templates': true,
+  search,
   // FIXME: This needs work, but perhaps after v3
   //ogImages,
 }

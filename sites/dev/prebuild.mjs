@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import { prebuildRunner } from '../shared/prebuild/runner.mjs'
 
 /*
@@ -81,6 +82,12 @@ prebuildRunner({
      * Will be mocked in development mode to save time
      */
     patrons: 'productionOnly',
+
+    /*
+     * Only index site content to the search backend (Algolia) in production
+     * Will be skipped in development mode to save time
+     */
+    search: true, //'productionOnly',
 
     // NEVER PREBUILD //////////////////////////////////////////////////////////
 
