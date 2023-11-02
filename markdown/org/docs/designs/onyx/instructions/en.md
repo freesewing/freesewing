@@ -226,12 +226,24 @@ Sewing the zipper.
  - Start at the neck on the right side, and sew down until you are a few mm past the zipper stop using a straight stitch. Be careful not to sew into the zipper guard or any loose fabric.
  - Repeat for the other side. This time, when you reach the bottom, turn the fabric 90 degress and sew across the bottom until you meet the first line of stitching, securing the bottom of the zipper and zipper guard.
 
-### Step 7: (Optional) Hemming
+### Step 7a: (Optional) Hemming
 
 - Hem the sleeves, legs, hood, and/or bottom of the skirt using a single-fold hem. A coverstitch machine is ideal, but not necessary. Using a twin needle with a regular sewing machine will add some stretch to the stitching, but in either case the use of a stretch stitch is still recommended for high-stretch fabrics.
 - You may carefully cutaway excess fabric to make a cleaner hem. This is quite optional, since this fabric should stay on the inside.
 - Alternatively, you can overlock or serge the raw edge _without_ folding it over to give it a little bit of substance without adding as much bulk as a folded hem, or you can make a rolled hem.
 - Or you can leave the edges unfinished, particularly if it's swim fabric or some other fabric that does not fray at all.
+
+### Step 7b: (Optional) Ribbed cuffs
+The ribbed cuff pieces can be added to the sleeves in a mannar similar to that used to attach the neckband to the neck hole.
+
+- Fold the ribbed cuff piece opposite the fold line (vertically), with _good sides together_.
+- Serge/overlock along the edge, so that the ribbed cuff piece is now a closed loop.
+- Unfold the ribbed cuff piece.
+- Fold the ribbed cuff piece in half along the fold line (horizontally), with _wrong sides together_.
+- Turn the garment _inside-out_.
+- Place the loop of ribbing around the sleeve of the garment, lining up the edges of the ribbing and the sleeve.
+- Stretch both the sleeve and ribbing together until the folds/gathers in the sleeve are all gone, and clip into place.
+- Serge/overlock _on the round_ along the seam.
 
 ### Step 8: (Options) Adding a skirt
 
