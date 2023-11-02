@@ -10,4 +10,6 @@ Even though it's "only" a rectangle, I tried to put some things into it behind t
 
 The name is taken from James T. Kirk, by the way, who luckily had parents who seemingly liked some debatable Roman emperors.
 
+Rika
+
 <Related compact>Also see [Lunetius Designer Notes](/docs/designs/lunetius/notes) and [Walburga Designer Notes](/docs/designs/walburga/notes).</Related>
