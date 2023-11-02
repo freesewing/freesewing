@@ -13,4 +13,6 @@ Coding the pattern was the easiest part of the whole process.
 
 Oh, and why the name `lunetius`? Well, that actually is the name of the character I made this whole outfit for. And yes, he has a special relationship with the moon.
 
+Rika
+
 <Related compact>Also see [Tiberius Designer Notes](/docs/designs/tiberius/notes) and [Walburga Designer Notes](/docs/designs/walburga/notes).</Related>
