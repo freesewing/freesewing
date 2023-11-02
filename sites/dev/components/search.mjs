@@ -6,7 +6,7 @@ import { ClearIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['search']
 
-const searchClient = algoliasearch(siteConfig.algolia.app, siteConfig.algolia.key)
+const searchClient = algoliasearch(siteConfig.algolia.appId, siteConfig.algolia.apiKey)
 
 const Hit = (props) => (
   <div

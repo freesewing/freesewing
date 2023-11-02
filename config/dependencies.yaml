@@ -232,6 +232,7 @@ dev:
     'rehype-sanitize': &rehypeSanitize '6.0.0'
     'rehype-slug': &rehypeSlug '6.0.0'
     'rehype-stringify': &rehypeStringify '10.0.0'
+    'remark': &remark 15.0.1
     # see: https://github.com/npm/cli/issues/2610#issuecomment-1295371753
     'remark-copy-linked-files': &remarkCopyLinkedFiles 'git+https://git@github.com/joostdecock/remark-copy-linked-files'
     'remark-gfm': &remarkGfm '4.0.0'
@@ -311,6 +312,7 @@ org:
     'rehype-sanitize': *rehypeSanitize
     'rehype-slug': *rehypeSlug
     'rehype-stringify': *rehypeStringify
+    'remark': *remark
     'remark-copy-linked-files': *remarkCopyLinkedFiles
     'remark-gfm': *remarkGfm
     'remark-mdx-frontmatter': *mdxfrontmatter
