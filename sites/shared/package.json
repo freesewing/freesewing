@@ -16,9 +16,9 @@
   "scripts": {},
   "peerDependencies": {},
   "dependencies": {
-    "@next/mdx": "14.0.0",
-    "@resvg/resvg-js": "2.4.1",
-    "@tailwindcss/typography": "0.5.9",
+    "@next/mdx": "14.0.1",
+    "@resvg/resvg-js": "2.6.0",
+    "@tailwindcss/typography": "0.5.10",
     "Buffer": "0.0.0",
     "d3-dispatch": "3.0.1",
     "d3-drag": "3.0.0",
