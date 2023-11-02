@@ -236,6 +236,7 @@ dev:
     # see: https://github.com/npm/cli/issues/2610#issuecomment-1295371753
     'remark-copy-linked-files': &remarkCopyLinkedFiles 'git+https://git@github.com/joostdecock/remark-copy-linked-files'
     'remark-gfm': &remarkGfm '4.0.0'
+    'strip-markdown': &stripMarkdown 6.0.0
   dev: &nextSiteDevDependencies
     'autoprefixer': &autoprefixer '10.4.16'
     'js-yaml': &jsYaml '4.1.0'
@@ -316,6 +317,7 @@ org:
     'remark-copy-linked-files': *remarkCopyLinkedFiles
     'remark-gfm': *remarkGfm
     'remark-mdx-frontmatter': *mdxfrontmatter
+    'strip-markdown': *stripMarkdown
     'use-persisted-state': &use-persisted-state 0.3.3
     'yaml-loader': 0.8.0
   dev: *nextSiteDevDependencies

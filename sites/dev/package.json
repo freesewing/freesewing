@@ -55,7 +55,8 @@
     "rehype-stringify": "10.0.0",
     "remark": "15.0.1",
     "remark-copy-linked-files": "git+https://git@github.com/joostdecock/remark-copy-linked-files",
-    "remark-gfm": "4.0.0"
+    "remark-gfm": "4.0.0",
+    "strip-markdown": "6.0.0"
   },
   "devDependencies": {
     "autoprefixer": "10.4.16",
