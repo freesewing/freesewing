@@ -255,5 +255,4 @@ The ribbed cuff pieces can be added to the sleeves in a mannar similar to that u
 - Use a coverstitch machine or a short and wide zigzag stitch along the top edge of the skirt, forming a lap seam and hiding the edge of the fabric under the coverstitch or zigzag.
 - Make a second coverstitch or zigzag about 6-12mm (1/4" to 1/2") below the first line of stitching, placing it between the two gather threads and being careful not to catch either gather thread under the coverstitch.
 - Remove the gather threads.
-- Remove the gather threads.
 - The the skirt was placed _inside-out_ and _upside-down_, flip it back over.
