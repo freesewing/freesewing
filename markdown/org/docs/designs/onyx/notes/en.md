@@ -1,5 +1,5 @@
 ---
-title: "Shelly Swimshirt: Designer Notes"
+title: "Onyx One-piece: Designer Notes"
 ---
 
 Onyx is my second design. Like Shelly, the design was made to address a need for sensory compression garments (related to autism), as well as the difficulty in finding sleeved and legged gender-neutral one-piece swimsuits sized for adults.
