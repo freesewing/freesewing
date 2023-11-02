@@ -12,4 +12,6 @@ Coding-wise, I spend some time on it because I wanted the triangular termination
 
 The name comes from me thinking about vaguely mediaeval names starting with W, and somehow `walburga` popped into my head.
 
+Rika
+
 <Related compact>Also see [Lunetius Designer Notes](/docs/designs/lunetius/notes) and [Tiberius Designer Notes](/docs/designs/tiberius/notes).</Related>
