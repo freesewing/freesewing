@@ -1,17 +1,12 @@
 import algoliasearch from 'algoliasearch'
 
 export const algoliaClient = () => {
-  let indexed = 0
   let client
   let index
-  let name
   async function init(config) {
-    indexed = 0
     const { appId, apiKey, indexName } = config
-    name = indexName
     client = algoliasearch(appId, apiKey)
     index = client.initIndex(indexName)
-    const set = await algoliaOp(index.getSettings())
     await algoliaOp(
       index.clearObjects(),
       'Failed to initialize Algolia index. Deleting current records failed'
@@ -33,7 +28,6 @@ export const algoliaClient = () => {
   async function indexRecords(records) {
     if (records.length === 0) return
     await appendRecords(records)
-    indexed += records.length
   }
 
   async function algoliaOp(promise, errorMessage) {

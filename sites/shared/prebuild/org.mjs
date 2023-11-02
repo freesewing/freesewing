@@ -42,7 +42,7 @@ const generateEditPatternPages = async (designs, site = 'org') => {
   }
 }
 
-export const prebuildOrg = async (store) => {
+export const prebuildOrg = async () => {
   await generateNewPatternPages(collection)
   await generateEditPatternPages(collection)
 }

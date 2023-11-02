@@ -27,7 +27,7 @@ import { NavButton, NavSpacer, iconSize } from 'shared/components/header.mjs'
 
 export const ns = ['header', 'sections', ...themeNs, ...localeNs]
 
-const NavIcons = ({ setModal, setSearch }) => {
+const NavIcons = ({ setModal }) => {
   const { t } = useTranslation(['header'])
   const { spectrum } = useTheme()
 
