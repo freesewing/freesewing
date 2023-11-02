@@ -97,6 +97,6 @@ prebuildRunner({
      * Only index site content to the search backend (Algolia) in production
      * Will be skipped in development mode to save time
      */
-    search: true, //'productionOnly',
+    search: 'productionOnly',
   },
 })
