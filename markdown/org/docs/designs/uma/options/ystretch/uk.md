@@ -1,6 +1,6 @@
 ---
-title: "Vertical fabric stretch"
+title: "Вертикальна розтяжка тканини"
 ---
 
-Adjust this option for more or less stretchy fabrics, specifically for vertical stretch.
+Налаштуйте цей параметр для більш-менш еластичних тканин, зокрема для вертикального розтягування.
 
