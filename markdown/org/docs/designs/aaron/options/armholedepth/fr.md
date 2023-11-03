@@ -4,6 +4,6 @@ title: "Profondeur d'emmanchure"
 
 Cette option permet de contrôler la profondeur de l'emmanchure.
 
-This option applies to the new v3 way of calculating the armhole depth. If you enable the [legacy armhole depth](/docs/designs/brian/options/legacyarmholedepth) option, this option will not apply, but instead it's legacy version [armhole depth factor](/docs/designs/brian/options/armholedepthfactor) will.
+Cette option s'applique à la nouvelle façon v3 de calculer la profondeur de l'emmanchure. Si tu actives l'option [legacy armhole depth](/docs/designs/brian/options/legacyarmholedepth) , cette option ne s'appliquera pas, mais c'est sa version legacy [armhole depth factor](/docs/designs/brian/options/armholedepthfactor) qui s'appliquera.
 
-In any case, Aaron allows the armhole to drop much further using the [armhole drop](/docs/designs/aaron/options/armholedrop) option. So you probably don't need this option from the underlying block, but it's there if you'd like to tweak it.
+Dans tous les cas, Aaron permet à l'emmanchure de descendre beaucoup plus bas en utilisant l'option [armhole drop](/docs/designs/aaron/options/armholedrop) . Tu n'as donc probablement pas besoin de cette option du bloc sous-jacent, mais elle est là si tu souhaites la modifier.
