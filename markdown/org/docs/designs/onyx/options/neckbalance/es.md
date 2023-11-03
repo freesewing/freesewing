@@ -1,5 +1,5 @@
 ---
-title: "Neck position"
+title: "Posición del cuello"
 ---
 
-Controls where the neck hole is placed on the garment. A value of 0% has the center of the neck hole exactly where the four raglan seams would intersect, with the front and back parts being identical and the sleeve being symmetrical. A positive value shifts the neck towards the front of the garment.
+Controla dónde se coloca el agujero del cuello en la prenda. Un valor de 0% tiene el centro del agujero del cuello exactamente donde se cruzarían las cuatro costuras del raglán, con las partes delantera y trasera idénticas y la manga simétrica. Un valor positivo desplaza el cuello hacia la parte delantera de la prenda.
