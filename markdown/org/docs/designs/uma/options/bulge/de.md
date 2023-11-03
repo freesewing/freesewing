@@ -2,12 +2,12 @@
 title: Wölbung
 ---
 
-This option allows you to create room at the front like on briefs. Room that you can use to hold a snack, or other things that you may want to carry there.
+Diese Option ermöglicht es dir, vorne Platz zu schaffen wie bei einem Slip. Platz, den du für einen Snack oder andere Dinge nutzen kannst, die du vielleicht mitnehmen möchtest.
 
-Enabling this option has a number of side-effects:
+Die Aktivierung dieser Option hat eine Reihe von Nebeneffekten:
 
-- It will override the gusset location
-- It will join the front and gusset into a single part
-- It will no longer be possible to cut the front/gusset on the fold
+- Sie überschreibt die Position des Zwickels
+- Er verbindet die Front und den Zwickel zu einem einzigen Teil
+- Es wird nicht mehr möglich sein, die Vorderseite/den Bund am Falz zu schneiden
 
 
