@@ -1,9 +1,9 @@
 ---
-title: "Gozer the ghost: What You Need"
+title: "Gozer le fantôme : Ce dont tu as besoin"
 ---
 
-To make Gozer, you will need the following:
+Pour fabriquer Gozer, tu auras besoin des éléments suivants :
 
 - [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
-- About 1 bed sheet
+- Environ 1 drap de lit
 
