@@ -104,7 +104,7 @@ show you how to create your first parametric design.
 
 FreeSewing is an open source project maintained by Joost De Cock and financially supported by the FreeSewing patrons.
 
-If you feel FreeSewing is worthwhile, and you can spend a few coind without
+If you feel FreeSewing is worthwhile, and you can spend a few coins without
 hardship, then you should [join us and become a patron](https://freesewing.org/community/join).
 
 ## Links 👩‍💻
