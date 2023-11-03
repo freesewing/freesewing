@@ -2,6 +2,6 @@
 title: Benutzererfahrung
 ---
 
-This setting allows you to control what sort of a user experience you want. One that is more simple, with advanced features hidden. Or one that has all bells and whistles.
+Mit dieser Einstellung kannst du bestimmen, welche Art von Benutzererfahrung du möchtest. Eine, die einfacher ist, mit versteckten erweiterten Funktionen. Oder eine, die mit allem Drum und Dran ausgestattet ist.
 
-FreeSewing is a rather advanced platform, and that can be intimidating for new users. This setting was created to allow people to start simple, and then unlock more features later.
+FreeSewing ist eine ziemlich fortschrittliche Plattform und das kann für neue Nutzer einschüchternd sein. Diese Einstellung wurde geschaffen, um es den Leuten zu ermöglichen, einfach anzufangen und später mehr Funktionen freizuschalten.
