@@ -1,7 +1,7 @@
 ---
-title: "Sleeve ribbing length"
+title: "Longitud del canalé de la manga"
 ---
 
-Controls how long the ribbing around the sleeves is, as a percentage of the sleeve circumference. Setting this to a smaller value will make the cuff tighter and hold onto the arm better, while a larger value will give more room. If making sleeves with thumb holes, it is recommended to set this value a little larger or to use a hem instead to avoid squeezing the hands.
+Controla la longitud del canalé alrededor de las mangas, como porcentaje de la circunferencia de la manga. Si lo ajustas a un valor menor, el manguito quedará más apretado y se sujetará mejor al brazo, mientras que un valor mayor dará más espacio. Si haces mangas con agujeros para los pulgares, se recomienda fijar este valor un poco más grande o utilizar un dobladillo en su lugar para evitar apretar las manos.
 
-Note: This option is only available if the 'sleeve ribbing' option is set to 'ribbing.'
+Nota: Esta opción sólo está disponible si la opción "nervaduras de la manga" está configurada como "nervaduras".
