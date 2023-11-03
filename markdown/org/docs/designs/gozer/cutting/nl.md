@@ -1,6 +1,6 @@
 ---
-title: "Gozer the ghost: Cutting Instructions"
+title: "Gozer het spook: Snij-instructies"
 ---
 
-- **Color 1; Traditionally white**
+- **Kleur 1; Traditioneel wit**
   - Cut **1 Body (color 1)**
