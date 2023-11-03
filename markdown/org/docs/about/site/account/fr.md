@@ -2,7 +2,7 @@
 title: Compte
 ---
 
-Your FreeSewing account is where we store your data. Your account itself can hold the following fields:
+C'est dans ton compte FreeSewing que nous stockons tes données. Ton compte lui-même peut contenir les champs suivants :
 
 <ReadMore recurse />
 
