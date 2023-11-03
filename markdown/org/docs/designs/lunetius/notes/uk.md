@@ -1,5 +1,5 @@
 ---
-title: "Lunetius Lacerna: Designer Notes"
+title: "Лунецій Лацерна: Нотатки дизайнера"
 ---
 
-<Fixme>Rika designed this. They have not written any notes (yet)</Fixme>
+<Fixme>Ріка спроектувала це. Вони не писали жодних нотаток (поки що)</Fixme>
