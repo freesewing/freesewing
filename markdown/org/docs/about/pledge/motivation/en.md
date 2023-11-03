@@ -1,5 +1,5 @@
 ---
-title: Motivation
+title: My reasoning behind FreeSewing's Revenue Pledge
 ---
 
 <Note>
@@ -9,7 +9,7 @@ his motivations for [the FreeSewing revenue pledge](/docs/about/pledge/)
 
 </Note>
 
-You probably assume that we ask for money to keep the servers running. But that's not exactly true.
+You probably assume that I ask for money to keep the servers running. But that's not exactly true.
 
 I don't know if you're familiar with the phrase **noblesse oblige** but it essentially means that privilege entails responsibility.
 
@@ -49,7 +49,7 @@ because FreeSewing is a force for good.
 Here's the tricky part: People give less once they know the money goes to charity.
 I wish it wasn't the case, but it is.
 
-So we're presenting [our subscription options](/community/join) like you would see on a for-profit site.
+So I'm presenting [the subscription options](/patrons/join) like you would see on a for-profit site.
 It seems more intuitive this way, and also just works better.
 
 Yes, everything is free, and the money doesn't actually go to paying the server bills

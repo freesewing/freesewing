@@ -1,10 +1,9 @@
 import axios from 'axios'
 import { freeSewingConfig as config } from '../config/freesewing.config.mjs'
+import { slugToOgImg } from '../utils.mjs'
 import get from 'lodash.get'
 import fs from 'fs'
 import path from 'path'
-
-const slugToImg = (slug, language) => `${language}_${slug.split('/').join('_')}.png`
 
 export const generateImage = async ({ title, intro, site, slug, language }) => {
   let result
@@ -14,7 +13,7 @@ export const generateImage = async ({ title, intro, site, slug, language }) => {
       { title, intro, site, type: 'wide' },
       { responseType: 'arraybuffer' }
     )
-    const file = path.resolve('..', site, 'public', 'img', 'og', slugToImg(slug, language))
+    const file = path.resolve('..', site, 'public', 'img', 'og', slugToOgImg(slug, language))
     await fs.promises.writeFile(file, result.data)
   } catch (err) {
     console.log(err)

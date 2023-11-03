@@ -11,6 +11,7 @@ const BlogPage = ({ dir, page, mdx, frontmatter }) => {
   return (
     <PageWrapper
       {...page}
+      intro={frontmatter.intro}
       title={frontmatter.title}
       layout={(props) => (
         <PostLayout

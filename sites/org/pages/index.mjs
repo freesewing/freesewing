@@ -58,12 +58,13 @@ const HomePage = ({ page }) => {
   }, [account.username])
 
   return (
-    <PageWrapper {...page} layout={BareLayout}>
+    <PageWrapper
+      {...page}
+      layout={BareLayout}
+      title="FreeSewing.org"
+      intro={t('homepage:freePatterns')}
+    >
       <ForceAccountCheck />
-      <Head>
-        <title>FreeSewing.org</title>
-      </Head>
-
       <div className="text-center w-full m-auto">
         <FreeSewingIcon className="w-36 h-36 mt-0 lg:mt-8 lg:w-56 lg:h-=56 mt-4 m-auto pr-6" />
         <h1 className="font-bold -mt-8 lg:-mt-4" style={{ letterSpacing: '-0.1rem' }}>

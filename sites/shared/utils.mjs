@@ -7,6 +7,7 @@ import orderBy from 'lodash.orderby'
 import unset from 'lodash.unset'
 import { cloudflareConfig } from './config/cloudflare.mjs'
 import { mergeOptions } from '@freesewing/core'
+import { freeSewingConfig as config } from './config/freesewing.config.mjs'
 
 const slugifyConfig = {
   replacement: '-', // replace spaces with replacement character, defaults to `-`
@@ -491,3 +492,8 @@ export const workbenchHash = ({ settings = {}, view = 'draft' }) =>
 
 export const getSearchParam = (name = 'id') =>
   typeof window === 'undefined' ? undefined : new URLSearchParams(window.location.search).get(name)
+
+export const slugToOgImg = (slug, language) => `${language}_${slug.split('/').join('_')}.png`
+
+export const ogUrl = ({ site = false, title, intro }) =>
+  `${config.backend}/img/${encodeURIComponent(JSON.stringify({ site, title, intro }))}`

@@ -7,4 +7,7 @@ export function imgRoutes(tools) {
 
   // Generate an image
   app.post('/img', (req, res) => Img.generate(req, res, tools))
+
+  // Generate an image
+  app.get('/img/:data', (req, res) => Img.generate(req, res, tools))
 }

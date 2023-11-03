@@ -5,7 +5,6 @@ import { Lightbox } from 'shared/components/lightbox.mjs'
 import { ImageWrapper } from 'shared/components/wrappers/img.mjs'
 import { TimeAgo, ns as timeagoNs } from 'shared/components/timeago/index.mjs'
 import { useTranslation } from 'next-i18next'
-import { FrontmatterHead } from './docs.mjs'
 import {
   BaseLayout,
   BaseLayoutLeft,
@@ -81,7 +80,6 @@ export const PostLayout = ({ mdx, slug, frontmatter, locale, type, dir }) => {
 
   return (
     <BaseLayout>
-      <FrontmatterHead {...{ frontmatter, slug, locale }} />
       <BaseLayoutLeft>
         <MainSections />
         <NavLinks />
