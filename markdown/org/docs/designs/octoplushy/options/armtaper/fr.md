@@ -1,5 +1,5 @@
 ---
-title: "Arm Taper"
+title: "Cône du bras"
 ---
 
-This setting changes how much the arms taper from the body down to the end.
+Ce paramètre modifie l'ampleur de la réduction des bras depuis le corps jusqu'à l'extrémité.
