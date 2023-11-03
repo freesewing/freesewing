@@ -1,5 +1,5 @@
 ---
-title: Your rights as a FreeSewing user
+title: Je rechten als gebruiker van FreeSewing
 ---
 
 Freesewing past de algemene verordening inzake gegevensbescherming (GDPR) van de Europese Unie (EU) toe.
@@ -20,7 +20,7 @@ EU-burger of niet, voor ons zijn dit je rechten:
 Je hebt het recht om geïnformeerd te worden over het verzamelen en gebruik van je persoonlijke gegevens.
 
 <Tip>
-Read [our privacy notice](/docs/about/privacy/) to inform yourself about the collection and use of your personal data.
+Lees [onze privacyverklaring](/docs/over/privacy/) om jezelf te informeren over het verzamelen en gebruiken van je persoonlijke gegevens.
 </Tip>
 
 ## Het recht op toegang
@@ -29,7 +29,7 @@ Je hebt het recht om toegang te krijgen tot je persoonlijke gegevens.
 
 <Tip>
 
-Go to [/account](/account/) to access your personal data.
+Ga naar [/account](/account/) om toegang te krijgen tot je persoonlijke gegevens.
 </Tip>
 
 ## Het recht op rectificatie
@@ -38,7 +38,7 @@ Je hebt het recht om je persoonlijke gegevens te corrigeren, of aan te vullen al
 
 <Tip>
 
-Go to [/account](/account/) to rectify or complete your personal data.
+Ga naar [/account](/account/) om je persoonlijke gegevens te corrigeren of aan te vullen.
 </Tip>
 
 ## Het recht om te wissen
@@ -46,7 +46,7 @@ Go to [/account](/account/) to rectify or complete your personal data.
 Je hebt het recht om je persoonlijke gegevens te wissen.
 
 <Tip>
-Go to [/account/remove](/account/remove/) to remove all your data.
+Ga naar [/account/remove](/account/remove/) om al je gegevens te verwijderen.
 </Tip>
 
 ## Het recht om de verwerking te beperken
@@ -54,12 +54,12 @@ Go to [/account/remove](/account/remove/) to remove all your data.
 Je hebt het recht een restrictie aan te vragen voor het verwerken van je persoonlijke gegevens.
 
 <Tip>
-Go to [/account/restrict](/account/restrict/) to request FreeSewing restricts processing of your personal data.
+Ga naar [/account/restrict](/account/restrict/) om FreeSewing te verzoeken de verwerking van je persoonlijke gegevens te beperken.
 </Tip>
 
 <Warning>
 
-Your request will be granted immediately, and can only be undone by [contacting support](/support/) to lift the restriction.
+Je verzoek wordt onmiddellijk ingewilligd en kan alleen ongedaan worden gemaakt door [contact op te nemen met support](/support/) om de beperking op te heffen.
 
 </Warning>
 
@@ -68,7 +68,7 @@ Your request will be granted immediately, and can only be undone by [contacting 
 Je hebt het recht om je persoonlijke gegevens te verkrijgen en opnieuw te gebruiken, voor eigen gebruik of bij verschillende diensten.
 
 <Tip>
-Go to [/account/actions/export](/account/export/) to export your personal data.
+Ga naar [/account/acties/export](/account/export/) om je persoonlijke gegevens te exporteren.
 </Tip>
 
 ## Het recht op bezwaar
@@ -76,12 +76,12 @@ Go to [/account/actions/export](/account/export/) to export your personal data.
 Je hebt het recht bezwaar te hebben op het gebruik van je gegevens voor wetenschappelijk onderzoek.
 
 <Tip>
-Go to [/account/consent](/account/consent/) and unselect **Share anonymized measurements as open data** to do so.
+Ga naar [/account/consent](/account/consent/) en vink **Geanonimiseerde metingen delen als open data** uit om dit te doen.
 </Tip>
 
 <Note>
 
-The right to object is broader, but this is how it applies to FreeSewing.
+Het recht om bezwaar te maken is breder, maar dit is hoe het van toepassing is op FreeSewing.
 
 </Note>
 
