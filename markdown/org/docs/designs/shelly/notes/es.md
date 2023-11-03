@@ -1,13 +1,13 @@
 ---
-title: "Shelly Swimshirt: Designer Notes"
+title: "Camiseta de baño Shelly: Notas del diseñador"
 ---
 
-Shelly is my first design. It was born out of the need for shirts that can compress very tight (for sensory needs stemming from autism), and the lack of suitable ready made shirts. Undersized swim shirts are tight enough, but expose the belly and pinch in the armpits, so I set out to design a shirt that would be both comfortable and therapeutic.
+Shelly es mi primer diseño. Nació de la necesidad de camisetas que pudieran comprimirse muy apretadas (por necesidades sensoriales derivadas del autismo), y de la falta de camisetas adecuadas ya confeccionadas. Las camisetas de natación de talla inferior son lo bastante ajustadas, pero dejan al descubierto el vientre y aprietan en las axilas, así que me propuse diseñar una camiseta que fuera cómoda y terapéutica a la vez.
 
-Raglan sleeves are used to provide additional flexibility and mobility in the armpit, and are very important for very tight clothes.
+Las mangas raglán se utilizan para proporcionar flexibilidad y movilidad adicionales en la axila, y son muy importantes para las prendas muy ajustadas.
 
-That said, Shelly is a simple and versatile design capable of making knit tops over a wide range of eases, from tightly compressive compression shirts, to loose raglan tees. It makes a great first knit garment project, as it only uses five pieces of fabric cut from four pattern pieces, and features simple seams that can be entirely made with a serger/overlocker. It's also fairly tolerant of small errors in measuring/cutting/sewing due to the elastic nature of knits, especially swim fabric, and the lack of any fine features requiring too much attention to detail on Shelly.
+Dicho esto, Shelly es un diseño sencillo y versátil, capaz de confeccionar tops de punto con una amplia gama de facilidades, desde camisetas de compresión ajustada hasta camisetas raglán sueltas. Se trata de un magnífico primer proyecto de prenda de punto, ya que sólo utiliza cinco piezas de tela cortadas a partir de cuatro piezas de patrón, y presenta costuras sencillas que pueden realizarse por completo con una overlocker/serger. También es bastante tolerante con los pequeños errores de medida/corte/costura, debido a la naturaleza elástica de los tejidos de punto, especialmente del tejido de baño, y a la falta de rasgos finos que requieran demasiada atención al detalle en Shelly.
 
-The name is chosen because I like the beach and I like seashells.
+El nombre está elegido porque me gusta la playa y me gustan las conchas marinas.
 
 Thrunic
