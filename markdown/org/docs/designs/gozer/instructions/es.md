@@ -1,15 +1,15 @@
 ---
-title: "Gozer the ghost: Sewing Instructions"
+title: "Gozer el fantasma: Instrucciones de costura"
 ---
 
 ## Paso 1: Parte superior del cuerpo
 
-- Cut holes where marked.
+- Haz los agujeros donde estén marcados.
 
-## Step 2: The body
+## Paso 2: El cuerpo
 
-- Hem the body
+- Dobladillo del cuerpo
 
 ## Paso 3: ¡Disfrútalo!
 
-That's it, you are all done. Put it on and scare the neighborhood.
+Ya está, ya has terminado. Póntelo y asusta al vecindario.
