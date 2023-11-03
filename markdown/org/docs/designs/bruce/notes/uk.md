@@ -1,9 +1,9 @@
 ---
-title: "Bruce boxer briefs: Designer Notes"
+title: "Труси-боксери Bruce: Нотатки дизайнера"
 ---
 
-I originally designed Bruce many years ago, and it's gone through a couple of iterations since. Most notably, Bruce can now be adapted to not have any bulge, making it a fully gender-neutral design and a popular choice for people who want a express a more masculine look without sacrificing fit.
+Я розробив Bruce багато років тому, і з тих пір він пройшов кілька ітерацій. Найголовніше, що Брюс тепер можна адаптувати так, щоб він не мав випуклостей, що робить його повністю гендерно нейтральним дизайном і популярним вибором для людей, які хочуть мати більш мужній вигляд, не жертвуючи при цьому зручністю посадки.
 
-I have not worn any other underwear than Bruce for at least a decade. Suffice to say Bruce comes highly recommended.
+Я не носив ніякої іншої білизни, окрім Bruce, щонайменше десять років. Досить сказати, що Брюс дуже рекомендується.
 
 Йост
