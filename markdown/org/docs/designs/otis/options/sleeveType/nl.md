@@ -1,5 +1,5 @@
 ---
-title: "Sleeve Type"
+title: "Type hoes"
 ---
 
-Otis can be made with short or long sleeves.
+Otis kan worden gemaakt met korte of lange mouwen.
