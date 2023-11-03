@@ -17,7 +17,7 @@ Afhankelijk van de stijl zijn de knoppen en elementen optioneel.
 
 - Als je Buttonhole Ear Flaps maakt, kun je de stropdassen weglaten.
 - Als je Tie Ear Flaps maakt, kun je de knop weglaten.
-- Ties can also be made from fabric if you prefer ([see Holmes Cutting](/docs/designs/holmes/cutting/))
-- You can also use different width and type ribbons for the ties if you prefer.
+- Stropdassen kunnen ook van stof gemaakt worden als je dat liever hebt ([zie Holmes Knippen](/docs/designs/holmes/knippen/))
+- Je kunt ook linten van verschillende breedte en soort gebruiken voor de stropdassen als je dat liever hebt.
 
 </Note>
