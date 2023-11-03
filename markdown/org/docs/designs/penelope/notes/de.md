@@ -1,6 +1,6 @@
 ---
-title: "Penelope pencil skirt: Designer Notes"
+title: "Penelope Bleistiftrock: Designer Notes"
 ---
 
-<Fixme>Wouter designed this. They have not written any notes (yet)</Fixme>
+<Fixme>Wouter hat das entworfen. Sie haben (noch) keine Noten geschrieben</Fixme>
 
