@@ -1,13 +1,13 @@
 #These are UI strings
 tags: Теги
-showLineDrawings: Show line drawings
-showExamples: Show examples
-clearFilter: Clear filter
-showFilters: Show filters
-hideFilters: Hide filters
+showLineDrawings: Показати креслення ліній
+showExamples: Показати приклади
+clearFilter: Прозорий фільтр
+showFilters: Показати фільтри
+hideFilters: Приховати фільтри
 difficulty: Складність
-learnMoreAboutThing: Learn more about {thing}
-newThingPattern: New {thing} pattern
+learnMoreAboutThing: Дізнайтеся більше про {thing}
+newThingPattern: Новий шаблон {thing}
 #Actual tags start here
 accessories: Аксесуари
 bags: Сумки
