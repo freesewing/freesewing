@@ -1,6 +1,6 @@
 ---
-title: "Raglan scoop depth"
+title: "Глибина ковша реглан"
 ---
 
-Controls how much extra material to place under the armpits. Larger values will generally provide better mobility and room in the armpits, while smaller values may give a more fitted look and may be better suited to people with skinny arms. This option can usually be left at the default value without issue.
+Контролює, скільки додаткового матеріалу потрібно розмістити під пахвами. Більші значення, як правило, забезпечують кращу рухливість і більше місця в пахвових западинах, тоді як менші значення можуть надавати більш приталений вигляд і краще підходять для людей з худими руками. Зазвичай цей параметр можна залишити за замовчуванням без проблем.
 
