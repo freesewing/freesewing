@@ -1,7 +1,7 @@
 ---
-title: "Skirt"
+title: "Спідниця"
 ---
 
-Select whether or not you want to add a simple gathered skirt around the waist of the garment.
+Виберіть, чи хочете ви додати просту зібрану спідницю навколо талії виробу.
 
-This is a basic skirt intended to not add much bulk to the garment while offering a degree of modesty and flair. It's designed for use with swimwear, but may work well for other types of garments.
+Це базова спідниця, призначена для того, щоб не додавати одягу зайвого об'єму, пропонуючи при цьому певну скромність і витонченість. Він розроблений для використання з купальниками, але може добре підходити і для інших типів одягу.
