@@ -2,6 +2,6 @@
 title: "Свобода облягання"
 ---
 
-Otis is constructed with a considerable amount of ease. This is to allow for nappies, and the fact that infants move around a lot, and loose garments are more comfortable for them. It also allows them to grow a bit without you having to make a new one every week.
+Отіс конструюється з великою легкістю. Це робиться для того, щоб можна було використовувати підгузки, а також для того, що немовлята багато рухаються, і вільний одяг для них зручніший. Це також дозволяє їм трохи підрости, і вам не доведеться робити нову щотижня.
 
-The ease is a percentage of the waist measurement. Default is 14%
+Легкість виражається у відсотках від обхвату талії. За замовчуванням - 14%.
