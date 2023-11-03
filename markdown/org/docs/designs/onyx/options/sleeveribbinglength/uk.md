@@ -1,7 +1,7 @@
 ---
-title: "Sleeve ribbing length"
+title: "Довжина ребра рукава"
 ---
 
-Controls how long the ribbing around the sleeves is, as a percentage of the sleeve circumference. Setting this to a smaller value will make the cuff tighter and hold onto the arm better, while a larger value will give more room. If making sleeves with thumb holes, it is recommended to set this value a little larger or to use a hem instead to avoid squeezing the hands.
+Дозволяє контролювати довжину ребер навколо рукавів у відсотках від довжини рукава. Встановлення меншого значення зробить манжету тугішою і краще триматиметься на руці, тоді як більше значення дасть більше простору. Якщо ви робите рукав з отворами для великих пальців, рекомендується встановити це значення трохи більшим або використовувати підгин, щоб уникнути здавлювання рук.
 
-Note: This option is only available if the 'sleeve ribbing' option is set to 'ribbing.'
+Примітка: Ця опція доступна, тільки якщо для параметра "Окантовка рукава" встановлено значення "Окантовка".
