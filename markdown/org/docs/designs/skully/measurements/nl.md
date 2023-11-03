@@ -1,7 +1,7 @@
 ---
-title: "Skully: Optional Measurements"
+title: "Skully: Optionele metingen"
 ---
 
 <Note>
-Skully does not require any measurements, but it can use the head circumference measurement. If used, Skully will be approximately the same size as your head.
+Skully heeft geen metingen nodig, maar kan wel de meting van de hoofdomtrek gebruiken. Bij gebruik zal Skully ongeveer even groot zijn als je hoofd.
 </Note>
