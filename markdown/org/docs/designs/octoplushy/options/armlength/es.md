@@ -1,5 +1,5 @@
 ---
-title: "Arm Length"
+title: "Longitud del brazo"
 ---
 
-This setting adjusts the length of the arms.
+Esta configuración ajusta la longitud de los brazos.
