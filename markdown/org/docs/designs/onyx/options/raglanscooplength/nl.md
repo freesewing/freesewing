@@ -1,5 +1,5 @@
 ---
-title: "Raglan scoop length"
+title: "Raglan scheplengte"
 ---
 
-Controls how far out from the armhole the raglan seam starts to scoop.
+Bepaalt hoe ver vanaf het armsgat de raglannaad begint te lopen.
