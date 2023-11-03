@@ -1,19 +1,19 @@
 title: Titel
-titleMsg: This will be the main text on the image
-intro: Intro / Byline / Footer
-introMsg: This will appear smaller at the bottom
-type: Variant
-typeMsg: Pick the variant that best suits your needs
-site: Site
-siteMsg: This format can optionally include the site name
-generate: Generate image
-generateAgain: Generate another image
+titleMsg: Dies wird der Haupttext auf dem Bild sein
+intro: Intro / Überschrift / Fußzeile
+introMsg: Dies wird unten kleiner erscheinen
+type: Variante
+typeMsg: Wähle die Variante, die am besten zu deinen Bedürfnissen passt
+site: Website
+siteMsg: Dieses Format kann optional den Namen der Website enthalten
+generate: Bild generieren
+generateAgain: Ein anderes Bild generieren
 preview: Vorschau
-save: Save Image
-tall: Tall
-tallMsg: Generates a tall image, optimized for Instagram stories, TikTok, and other places that prefer portrait mode.
-wide: Wide
-wideMsg: Generates a wide image, optimized for posting on a variety of platforms including Facebook, Mastodon, Reddit, and so on. Also suitable as Open Graph image.
-square: Square
-squareMsg: Generate a square image optimized for Instagram posts and other places where a square aspect ratio works best.
+save: Bild speichern
+tall: Groß
+tallMsg: Erzeugt ein hochformatiges Bild, das für Instagram Stories, TikTok und andere Orte optimiert ist, die den Hochformatmodus bevorzugen.
+wide: Breit
+wideMsg: Erzeugt ein breites Bild, das für das Posten auf einer Vielzahl von Plattformen wie Facebook, Mastodon, Reddit usw. optimiert ist. Auch als Open Graph-Bild geeignet.
+square: Platz
+squareMsg: Erstelle ein quadratisches Bild, das für Instagram-Posts und andere Orte optimiert ist, an denen ein quadratisches Seitenverhältnis am besten funktioniert.
 none: Keine
