@@ -1,7 +1,7 @@
 ---
-title: "Leg ribbing width"
+title: "Largeur des côtes de la jambe"
 ---
 
-Controls how wide the ribbing around the leg is.
+Contrôle la largeur des côtes autour de la jambe.
 
-Note: This option is only available if the 'leg ribbing' option is set to 'ribbing.'
+Remarque : cette option n'est disponible que si l'option 'côtes de jambe' est réglée sur 'côtes'.
