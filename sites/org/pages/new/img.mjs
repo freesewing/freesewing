@@ -6,7 +6,6 @@ import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
-import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { GenerateImage, ns as genImgNs } from 'site/components/genimg/index.mjs'
 
 // Translation namespaces used on this page

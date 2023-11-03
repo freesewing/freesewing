@@ -6,10 +6,6 @@ import { StringInput, ListInput, ns as inputNs } from 'shared/components/inputs.
 
 export const ns = nsMerge('genimg', inputNs)
 
-const binaryToData = (binary) => {
-  const img = new Image()
-}
-
 export const GenerateImage = () => {
   const backend = useBackend()
   const { t } = useTranslation(ns)

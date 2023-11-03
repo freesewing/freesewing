@@ -15,7 +15,7 @@ import {
   ShowcaseIcon,
   RssIcon,
   CsetIcon,
-  OpackIcon,
+  //  OpackIcon,
   KioskIcon,
 } from 'shared/components/icons.mjs'
 
