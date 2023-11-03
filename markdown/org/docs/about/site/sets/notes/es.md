@@ -2,10 +2,10 @@
 title: Notas
 ---
 
-Every measurements set has a **notes** attribute that is optional.
+Cada conjunto de medidas tiene un atributo **notas** que es opcional.
 
-The notes field allows you to add your notes to a measurements set. This field supports markdown, so you can use rich formatting, or even embed images.
+El campo de notas te permite añadir tus notas a un conjunto de medidas. Este campo admite markdown, por lo que puedes utilizar un formato enriquecido, o incluso incrustar imágenes.
 
 <Note>
-If you make your measurements set public, your notes will also be public.
+Si haces público tu conjunto de medidas, tus notas también serán públicas.
 </Note>
