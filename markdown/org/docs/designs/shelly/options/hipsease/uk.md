@@ -2,5 +2,5 @@
 title: "Легкість стегон"
 ---
 
-Controls how wide your shirt will be at the bottom hem. This option is only used if the straight sides option is disabled.
+Контролює, наскільки широкою буде ваша сорочка внизу подолу. Ця опція використовується, тільки якщо вимкнено опцію прямих сторін.
 
