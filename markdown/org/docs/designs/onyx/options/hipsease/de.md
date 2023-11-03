@@ -2,13 +2,13 @@
 title: "Zugabe Hüfte"
 ---
 
-Controls how wide the garment will be at your hips.
+Legt fest, wie weit das Kleidungsstück an den Hüften sein wird.
 
 Welcher Wert auch immer Sie hier angeben, wird beim Entwurf des Kleidungsstückes einfach zu Ihrer Hüftumfangsmessung hinzugefügt.
 
 > ##### Diese Option erlaubt auch negative Werte.
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Du solltest eine negative Leichtigkeit verwenden, wenn du einen dehnbaren Stoff verwendest, der eng anliegen soll. Unteranzüge und Trikots haben in der Regel eine negative Bequemlichkeit, während andere Kleidungsstücke in der Regel eine positive Bequemlichkeit haben.
 
 
 
