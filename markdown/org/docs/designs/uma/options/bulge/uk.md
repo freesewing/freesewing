@@ -2,12 +2,12 @@
 title: Пахова вставка
 ---
 
-This option allows you to create room at the front like on briefs. Room that you can use to hold a snack, or other things that you may want to carry there.
+Ця опція дозволяє створити простір спереду, як на трусах. Приміщення, яке можна використовувати для перекусу або інших речей, які ви захочете взяти з собою.
 
-Enabling this option has a number of side-effects:
+Увімкнення цієї опції має ряд побічних ефектів:
 
-- It will override the gusset location
-- It will join the front and gusset into a single part
-- It will no longer be possible to cut the front/gusset on the fold
+- Він замінить розташування ластовиці
+- Він з'єднає передню частину і ластовицю в єдине ціле
+- Більше не можна буде обрізати передню частину/ластовицю на згині
 
 
