@@ -1,13 +1,13 @@
 ---
-title: "Shelly Swimshirt: Designer Notes"
+title: "Shelly Swimshirt: Designer-Notizen"
 ---
 
-Shelly is my first design. It was born out of the need for shirts that can compress very tight (for sensory needs stemming from autism), and the lack of suitable ready made shirts. Undersized swim shirts are tight enough, but expose the belly and pinch in the armpits, so I set out to design a shirt that would be both comfortable and therapeutic.
+Shelly ist mein erstes Design. Es entstand aus dem Bedarf an Hemden, die sehr eng anliegen können (für sensorische Bedürfnisse aufgrund von Autismus), und aus dem Mangel an geeigneten fertigen Hemden. Untergroße Schwimmshirts sind eng genug, zeigen aber den Bauch und drücken in den Achselhöhlen. Also habe ich mir vorgenommen, ein Shirt zu entwerfen, das sowohl bequem als auch therapeutisch ist.
 
-Raglan sleeves are used to provide additional flexibility and mobility in the armpit, and are very important for very tight clothes.
+Raglanärmel werden verwendet, um zusätzliche Flexibilität und Beweglichkeit in der Achselhöhle zu bieten, und sind sehr wichtig für sehr enge Kleidung.
 
-That said, Shelly is a simple and versatile design capable of making knit tops over a wide range of eases, from tightly compressive compression shirts, to loose raglan tees. It makes a great first knit garment project, as it only uses five pieces of fabric cut from four pattern pieces, and features simple seams that can be entirely made with a serger/overlocker. It's also fairly tolerant of small errors in measuring/cutting/sewing due to the elastic nature of knits, especially swim fabric, and the lack of any fine features requiring too much attention to detail on Shelly.
+Shelly ist ein einfaches und vielseitiges Design, mit dem du eine breite Palette von Strickoberteilen herstellen kannst, von eng anliegenden Kompressionsshirts bis hin zu lockeren Raglan-T-Shirts. Es eignet sich hervorragend als erstes Strickprojekt, da nur fünf Stoffteile benötigt werden, die aus vier Schnittmustern zugeschnitten werden, und es hat einfache Nähte, die komplett mit einem Serger/Overlocker gemacht werden können. Sie ist auch ziemlich tolerant gegenüber kleinen Fehlern beim Messen, Schneiden und Nähen, da Strick, insbesondere Schwimmstoffe, sehr elastisch sind und Shelly keine feinen Details aufweist, die zu viel Aufmerksamkeit erfordern.
 
-The name is chosen because I like the beach and I like seashells.
+Den Namen habe ich gewählt, weil ich den Strand und Muscheln mag.
 
 Thrunic
