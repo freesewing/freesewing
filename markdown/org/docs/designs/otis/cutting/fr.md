@@ -1,18 +1,18 @@
 ---
-title: "Otis, the simple baby romper: Cutting Instructions"
+title: "Otis, la grenouillère simple pour bébé : Instructions de coupe"
 ---
 
 - **Tissu principal**
-  - Cut **1 back** part on fold
+  - Coupe **1 en arrière** partie sur le pli
   - Coupe **1 partie avant** sur le pli
-  - Cut **2 shortSleeve ** parts on fold or
-  - Cut **2 longSleeve** parts on fold
+  - Coupe **2 shortSleeve ** parties sur le pli ou
+  - Coupe **2 longSleeve** parties sur le pli
   - Cut **1 bindingBackNeck** part
-  - Cut **1 bindingFrontNeck** part
-  - Cut **2 bindingLeg** parts
+  - Coupe **1 liageAvantCou** partie
+  - Coupe **2 reliureJambes** pièces
 
 <Note>
 
-Depending on your fabric, it may be useful to add interfacing to the snap placket. 
+Selon ton tissu, il peut être utile d'ajouter de l'entoilage à la patte de boutonnage. 
 
 </Note>
