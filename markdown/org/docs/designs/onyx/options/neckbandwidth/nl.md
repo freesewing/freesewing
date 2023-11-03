@@ -1,7 +1,7 @@
 ---
-title: "Neckband width"
+title: "Nekband breedte"
 ---
 
-Controls how wide to make the finished neckband. For swimwear, 4cm / 1.5in (the default) is a common value. If using rib knit, 5-7.5cm (2-3in) is generally used.
+Bepaalt hoe breed de afgewerkte halsband moet worden. Voor badmode is 4 cm (de standaardwaarde) een gebruikelijke waarde. Als je ribbreiwerk gebruikt, wordt meestal 5-7,5 cm (2-3in) gebruikt.
 
-Note: This option is only available if the 'neck style' option is set to 'neckband.'
+Opmerking: Deze optie is alleen beschikbaar als de optie 'halsstijl' is ingesteld op 'nekband'.
