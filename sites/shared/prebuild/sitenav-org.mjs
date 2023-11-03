@@ -116,6 +116,7 @@ export const extendSiteNav = async (siteNav, lang) => {
       t: 'Curated Measurement Sets',
       s: 'admin/cset',
       _: 1,
+      h: 1,
     },
   }
 

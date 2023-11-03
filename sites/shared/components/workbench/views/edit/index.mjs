@@ -10,7 +10,6 @@ import { useEffect, useState, useRef, useMemo, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Components
 import { CloseIcon } from 'shared/components/icons.mjs'
-import { V3Wip } from 'shared/components/v3-wip.mjs'
 
 export const ns = []
 
@@ -58,8 +57,7 @@ export const EditView = ({ settings, setSettings, design, Design }) => {
 
   return (
     <div className="max-w-screen-xl m-auto h-screen form-control mt-4 flex flex-col">
-      <h2>{t('yamlEditViewTitleThing', { thing: capitalize(design) })}</h2>
-      <V3Wip />
+      <h2>{t('workbench:editSettingsByHand')}</h2>
       <div id="editor" className="h-2/3 my-2 overflow-auto flex flex-col">
         {error && (
           <div className={`w-full shadow bg-base-100 p-0 my-4`}>
@@ -86,8 +84,8 @@ export const EditView = ({ settings, setSettings, design, Design }) => {
           ref={inputRef}
         />
       </div>
-      <button className="btn btn-primary" onClick={onSave}>
-        {t('save')}
+      <button className="btn btn-primary w-64 mx-auto mt-4" onClick={onSave}>
+        {t('workbench:save')}
       </button>
     </div>
   )

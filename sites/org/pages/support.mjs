@@ -16,7 +16,7 @@ import {
   GitHubIcon,
   InstagramIcon,
   RedditIcon,
-  TwitterIcon,
+  MastodonIcon,
   YouTubeIcon,
   CommunityIcon,
   ChatIcon,
@@ -47,12 +47,12 @@ const SupportCard = ({ bg, textColor, title, icon, nr }) => (
 )
 
 const socialIcon = {
+  mastodon: <MastodonIcon />,
+  github: <GitHubIcon />,
   discord: <DiscordIcon />,
   facebook: <FacebookIcon />,
-  github: <GitHubIcon />,
   instagram: <InstagramIcon />,
   reddit: <RedditIcon />,
-  twitter: <TwitterIcon />,
   youtube: <YouTubeIcon fill stroke={0} />,
 }
 
@@ -85,7 +85,7 @@ const SupportPage = ({ page }) => {
       <div className="max-w-7xl mx-auto mb-24 px-4 mt-16">
         <Breadcrumbs />
         <h1>{pageTitle}</h1>
-        <h2>{t('howCanWeSupportYou')}</h2>
+        <h2>{t('support:howCanWeSupportYou')}</h2>
         <div className="flex flex-row flex-wrap gap-4 lg:grid lg:grid-cols-3 lg:gap-8 justify-around -mt-4">
           {/* Community */}
           <div className="w-full md:max-w-md my-8">
@@ -96,7 +96,10 @@ const SupportPage = ({ page }) => {
               title={t('support:communitySupport')}
               icon={<CommunityIcon className="w-10 h-10 lg:w-14 lg:h-14 shrink-0" />}
             />
-            <p className="font-normal text-inherit">{t('support:communitySupport1')}</p>
+            <p
+              className="font-normal text-inherit"
+              dangerouslySetInnerHTML={{ __html: t('support:communitySupport1') }}
+            />
             <p className="font-normal text-inherit">{t('support:communitySupport2')}</p>
             <div className="grid grid-cols-2 gap-2">
               {Object.keys(config.social)
