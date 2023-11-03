@@ -1,8 +1,8 @@
 ---
-title: "Uma undies: Sewing Instructions"
+title: "Sous-vêtements Uma : Instructions de couture"
 ---
 
-### Step 1: Pin/baste the front to the first gusset piece
+### Étape 1 : épingle/colle le devant au premier morceau de gousset.
 
 Placez l'une des pièces scintillantes sur la pièce avant, _de bons côtés ensemble_, afin que les coutures de crotte soient alignées. Épingler ou badigeonner à la marge de couture.
 
@@ -14,7 +14,7 @@ Ouvrir l'appartement. Vous pouvez appuyer si vous le souhaitez, mais qui presse 
 
 ![Ouvrir à plat](step02.png)
 
-### Step 3: Pin/baste the back to the first gusset piece
+### Étape 3 : épingle/colle le dos au premier morceau de gousset.
 
 Placez le verso sur le gusset, les bons côtés ensemble. Épingler ou badigeonner à la marge de couture.
 
