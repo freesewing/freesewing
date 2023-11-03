@@ -1,9 +1,9 @@
 ---
-title: "Leg taper position"
+title: "Положення конуса для ніг"
 ---
 
-Controls how the lower legs are laid out on the pattern.
+Керує розташуванням гомілок на деталі.
 
-Whether the legs taper inwards or outwards or down the middle will slightly affect the fit of the garment, and will affect the shape around the crotch fork and the upper legs. It's recommended to use a value for this option that produces the smoothest looking front and back pattern pieces.
+Те, як звужуються ноги - всередину, назовні чи посередині, - дещо впливає на посадку виробу, а також на форму навколо пахової вилки і верхньої частини гомілок. Рекомендується використовувати значення для цієї опції, яке створює найбільш гладкі передню і задню частини деталі.
 
-Note: Setting this to 100% will generally produce pattern pieces that can be fit more efficiently onto the fabric.
+Примітка: Якщо встановити цей параметр на 100%, то деталі викрійки, як правило, краще припасуватимуться до тканини.
