@@ -14,6 +14,6 @@ title: "Сумочка Гортензія: Що вам потрібно"
 
 <Note>
 
-The amount of fabric you need is dependant on [Hortensia's size option](/docs/designs/hortensia/options/size/). Якщо ви не впевнені, скільки вам потрібно, увімкніть безпаперовий режим під час перегляду викрійки і додайте довжину нижньої частини деталі 1 SidePanel, деталі 2 FrontBackPanel і деталі 3 BottomPanel, щоб отримати приблизну оцінку.
+Кількість тканини залежить від [варіанту розміру Гортензії] (/docs/designs/hortensia/options/size/). Якщо ви не впевнені, скільки вам потрібно, увімкніть безпаперовий режим під час перегляду викрійки і додайте довжину нижньої частини деталі 1 SidePanel, деталі 2 FrontBackPanel і деталі 3 BottomPanel, щоб отримати приблизну оцінку.
 
 </Note>
