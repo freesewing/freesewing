@@ -28,7 +28,7 @@ ${banner}
   entryPoints: ['src/index.mjs'],
   format: 'esm',
   outfile: 'dist/index.mjs',
-  external: ['./local-config.mjs'],
+  external: ['./local-config.mjs', 'sharp'],
   metafile: process.env.VERBOSE ? true : false,
   minify: process.env.NO_MINIFY ? false : true,
   sourcemap: true,

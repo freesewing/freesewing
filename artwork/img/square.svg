@@ -28,16 +28,16 @@
   </g>
   <g>
     <text class="gray-300 tiny italic center">
-      <tspan x="100" y="179">intro_1</tspan>
-      <tspan x="100" y="190">intro_2</tspan>
+      <tspan x="100" y="179">__intro_1__</tspan>
+      <tspan x="100" y="190">__intro_2__</tspan>
     </text>
     <text class="gray-200 big bold center">
-      <tspan x="100" y="95">1title_1</tspan>
-      <tspan x="100" y="90">2title_1</tspan>
-      <tspan x="100" dy="24">2title_2</tspan>
-      <tspan x="100" y="80">3title_1</tspan>
-      <tspan x="100" dy="24">3title_2</tspan>
-      <tspan x="100" dy="24">3title_3</tspan>
+      <tspan x="100" y="95">__1title_1__</tspan>
+      <tspan x="100" y="90">__2title_1__</tspan>
+      <tspan x="100" dy="24">__2title_2__</tspan>
+      <tspan x="100" y="80">__3title_1__</tspan>
+      <tspan x="100" dy="24">__3title_2__</tspan>
+      <tspan x="100" dy="24">__3title_3__</tspan>
     </text>
     <text class="bold" x="6" y="15">
       <tspan dx="0" fill="#f87171">F</tspan>

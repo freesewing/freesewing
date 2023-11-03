@@ -59,7 +59,11 @@ const introAsLines = (intro, type) => {
   // Does it fit on one line?
   if (intro.length <= imgConfig.templates.chars[type].intro) return [intro]
   // Two lines it is
-  return splitLine(intro, imgConfig.templates.chars[type].intro)
+  const lines = splitLine(intro, imgConfig.templates.chars[type].intro)
+  if (lines[1].length > imgConfig.templates.chars[type].intro)
+    lines[1] = lines[1].slice(0, imgConfig.templates.chars[type].intro) + '…'
+
+  return lines
 }
 
 /* Hide unused placeholders */
@@ -67,11 +71,11 @@ const hidePlaceholders = (list, type) => {
   let svg = templates[type]
   for (const i of list) {
     svg = svg
-      .replace(`${i}title_1`, '')
-      .replace(`${i}title_2`, '')
-      .replace(`${i}title_3`, '')
-      .replace(`${i}title_4`, '')
-      .replace(`${i}title_5`, '')
+      .replace(`__${i}title_1__`, '')
+      .replace(`__${i}title_2__`, '')
+      .replace(`__${i}title_3__`, '')
+      .replace(`__${i}title_4__`, '')
+      .replace(`__${i}title_5__`, '')
   }
 
   return svg
@@ -82,61 +86,70 @@ const decorateSvg = (data) => {
   let svg
   // Single title line
   if (data.title.length === 1) {
-    svg = hidePlaceholders([2, 3, 4, 5], data.type).replace(`1title_1`, data.title[0])
+    svg = hidePlaceholders([2, 3, 4, 5], data.type).replace(`__1title_1__`, data.title[0])
   }
   // Double title line
   else if (data.title.length === 2) {
     svg = hidePlaceholders([1, 3, 4, 5], data.type)
-      .replace(`2title_1`, data.title[0])
-      .replace(`2title_2`, data.title[1])
+      .replace(`__2title_1__`, data.title[0])
+      .replace(`__2title_2__`, data.title[1])
   }
   // Triple title line
   else if (data.title.length === 3) {
     svg = hidePlaceholders([1, 2, 4, 5], data.type)
-      .replace(`3title_1`, data.title[0])
-      .replace(`3title_2`, data.title[1])
-      .replace(`3title_3`, data.title[2])
+      .replace(`__3title_1__`, data.title[0])
+      .replace(`__3title_2__`, data.title[1])
+      .replace(`__3title_3__`, data.title[2])
   }
   // Quadruple title line
   else if (data.title.length === 4) {
     svg = hidePlaceholders([1, 2, 3, 5], data.type)
-      .replace(`4title_1`, data.title[0])
-      .replace(`4title_2`, data.title[1])
-      .replace(`4title_3`, data.title[2])
-      .replace(`4title_4`, data.title[3])
+      .replace(`__4title_1__`, data.title[0])
+      .replace(`__4title_2__`, data.title[1])
+      .replace(`__4title_3__`, data.title[2])
+      .replace(`__4title_4__`, data.title[3])
   }
   // Quintuple title line
   else if (data.title.length === 5) {
     svg = hidePlaceholders([1, 2, 3, 4], data.type)
-      .replace(`5title_1`, data.title[0])
-      .replace(`5title_2`, data.title[1])
-      .replace(`5title_3`, data.title[2])
-      .replace(`5title_4`, data.title[3])
-      .replace(`5title_5`, data.title[4])
+      .replace(`__5title_1__`, data.title[0])
+      .replace(`__5title_2__`, data.title[1])
+      .replace(`__5title_3__`, data.title[2])
+      .replace(`__5title_4__`, data.title[3])
+      .replace(`__5title_5__`, data.title[4])
   }
 
   return svg
-    .replace(`intro_1`, data.intro[0] || '')
-    .replace(`intro_2`, data.intro[1] || '')
-    .replace('site', data.site || '')
+    .replace(`__intro_1__`, data.intro[0] || '')
+    .replace(`__intro_2__`, data.intro[1] || '')
+    .replace('__site__', data.site || '')
 }
 
 export function ImgController() {}
+
+const parseInput = (req) => {
+  let input = {}
+  if (req.params.data) {
+    try {
+      input = JSON.parse(decodeURIComponent(req.params.data))
+    } catch (err) {
+      console.log(err)
+    }
+  } else input = req.body
+
+  return input
+}
 
 /*
  * Generate an Open Graph image
  * See: https://freesewing.dev/reference/backend/api
  */
 ImgController.prototype.generate = async (req, res) => {
+  const input = parseInput(req)
   /*
    * Extract body parameters
    */
-  const {
-    site = false,
-    title = 'Please provide a title',
-    intro = 'Please provide an intro',
-    type = 'wide',
-  } = req.body
+  const { site = false, title = '', intro = '', type = 'wide' } = input
   if (site && imgConfig.sites.indexOf(site) === -1)
     return res.status(400).send({ error: 'invalidSite' })
 
