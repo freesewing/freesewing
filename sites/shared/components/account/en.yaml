@@ -274,6 +274,9 @@ showcaseNewInfo: If you would like to share something you (or someone else) made
 blogNew: Create a new blog post
 blogNewInfo: If you would like to write on the FreeSewing blog, you can start a draft blog post here.
 
+imgNew: Generate a social media image
+imgNewInfo: Use our generator to create an image you can share on social media, supports wide (classic), square (Instagram), or tall (stories/TikTok) formats.
+
 csetNew: Suggest a new curated measurements set
 csetNewInfo: We curate a collection of vetted measurments sets that we use to test patterns. You can suggest a measurements set here.
 
