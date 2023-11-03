@@ -1,5 +1,5 @@
 ---
-title: "Sleeve Type"
+title: "Tipo de manguito"
 ---
 
-Otis can be made with short or long sleeves.
+Otis puede hacerse con mangas cortas o largas.
