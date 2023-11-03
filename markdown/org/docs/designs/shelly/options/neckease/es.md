@@ -1,6 +1,6 @@
 ---
-title: "Neck ease"
+title: "Facilidad de cuello"
 ---
 
-Controls how large the neck hole is. Keep in mind that most shirts have neck holes that are substantially larger than the wearer's neck, and that the neckband will further constrict the neck. 0% ease will make a very small neck hole that hugs the neck snugly and is hard to push over the head, even with stretch fabric. +50% will still make what's generally considered a tight neckband appropriate for a swim shirt. For t-shirts or for a loose fit, even larger values are recommended.
+Controla el tamaño del agujero del cuello. Ten en cuenta que la mayoría de las camisas tienen agujeros en el cuello bastante más grandes que el cuello del usuario, y que la cinta para el cuello lo estrechará aún más. 0% de holgura hará un agujero muy pequeño en el cuello que lo abrace bien y sea difícil de pasar por encima de la cabeza, incluso con tejido elástico. Un +50% seguirá haciendo que lo que generalmente se considera un cuello ajustado sea apropiado para una camiseta de baño. Para camisetas o para un corte holgado, se recomiendan valores aún mayores.
 
