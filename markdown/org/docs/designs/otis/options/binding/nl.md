@@ -1,7 +1,7 @@
 ---
-title: "Binding"
+title: "Binden"
 ---
 
-Binding determines the size of the binding for the neck and leg openings.
+Binding bepaalt de grootte van de binding voor de hals- en beenopeningen.
 
-The binding is a percentage of the waist divided by 4. Default is 11%
+De binding is een percentage van de taille gedeeld door 4. Standaard is 11%
