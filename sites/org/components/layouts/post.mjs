@@ -75,7 +75,7 @@ export const PostContent = ({ mdx, dir }) => (
 )
 
 /** layout for a page that displays a blog, showcase or newsletter */
-export const PostLayout = ({ mdx, slug, frontmatter, locale, type, dir }) => {
+export const PostLayout = ({ mdx, frontmatter, type, dir }) => {
   const { t } = useTranslation(ns)
 
   return (

@@ -3,7 +3,6 @@ import { pages } from 'site/prebuild/docs.en.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { loadMdxAsStaticProps } from 'shared/mdx/load.mjs'
-import { freeSewingConfig as config } from 'shared/config/freesewing.config.mjs'
 // Components
 import { PageWrapper, ns } from 'shared/components/wrappers/page.mjs'
 //import { components } from 'shared/components/mdx/index.mjs'

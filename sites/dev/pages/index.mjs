@@ -8,8 +8,6 @@ import { FreeSewingIcon, CisFemaleIcon, CodeIcon } from 'shared/components/icons
 import { CardLink } from 'shared/components/link.mjs'
 import { ReadMore } from 'shared/components/mdx/read-more.mjs'
 
-const title = 'Welcome to FreeSewing.dev'
-
 const Card = ({ bg = 'bg-base-200', textColor = 'text-base-content', title, children, icon }) => (
   <div className={`px-8 ${bg} py-10 rounded-lg block ${textColor} shadow-lg grow`}>
     <h2 className="mb-4 text-inherit flex flex-row gap-4 justify-between items-center font-medium text-left">

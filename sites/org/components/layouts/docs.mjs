@@ -45,7 +45,7 @@ export const DocsLayout = ({ children = [], frontmatter }) => {
         </BaseLayoutProse>
 
         <BaseLayoutRight>
-          <MdxMetaData frontmatter={frontmatter} slug={slug} locale="en" />
+          <MdxMetaData frontmatter={frontmatter} slug={slug} locale={locale} />
           <div className="hidden xl:block">
             <Toc toc={frontmatter.toc} wrap />
           </div>
