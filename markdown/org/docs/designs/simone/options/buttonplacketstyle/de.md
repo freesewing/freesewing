@@ -14,7 +14,7 @@ Nahtlos ist weniger Arbeit, und es sieht großartig aus.
 
 <Note>
 
-As seamless is only possible on a _cut-on_ placket, this option is ignored if you choose a separate button placket.
+Da nahtlos nur bei einer _aufgeschnittenen_ Leiste möglich ist, wird diese Option ignoriert, wenn du eine separate Knopfleiste wählst.
 
 </Note>
 
