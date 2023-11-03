@@ -1,7 +1,7 @@
 ---
-title: "neck guard length"
+title: "довжина захисного кожуха для шиї"
 ---
 
-On garments with a neckband, this option adds extra length to the zipper guard to allow it to wrap around the neckband to protect the neck.
+На одязі з шийною застібкою ця опція додає додаткову довжину захисній планці блискавки, щоб вона могла обертатися навколо шийної застібки для захисту шиї.
 
-Note: This option is only available if the 'neck style' option is set to 'neckband.'
+Примітка: Ця опція доступна, лише якщо для параметра "стиль шиї" встановлено значення "шийна пов'язка".
