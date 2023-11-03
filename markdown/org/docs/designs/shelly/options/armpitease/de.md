@@ -1,13 +1,13 @@
 ---
-title: "Armpit ease"
+title: "Leichtigkeit unter den Achseln"
 ---
 
-Shifts the sleeves downward to give extra room in the armpit, measured as a percentage of the sleeve diameter. If in doubt, go with the default value.
+Verschiebt die Ärmel nach unten, um mehr Platz in der Achselhöhle zu schaffen, gemessen in Prozent des Ärmeldurchmessers. Im Zweifelsfall solltest du den Standardwert verwenden.
 
-Note: This option does not change the diameter of the sleeve. To make the sleeve larger or smaller, use the Sleeve ease option.
+Hinweis: Mit dieser Option wird der Durchmesser der Hülse nicht verändert. Um den Ärmel größer oder kleiner zu machen, verwende die Option Ärmel erleichtern.
 
-Note: The Raglan scoop length and Raglan scoop depth options also affect the amount of ease in the armpit.
+Hinweis: Die Optionen für die Raglan-Schlaufenlänge und die Raglan-Schlaufentiefe wirken sich auch auf den Grad der Erleichterung in der Achselhöhle aus.
 
 > ##### Diese Option erlaubt auch negative Werte.
 > 
-> Negative values will move the sleeves upwards. Use with caution, even on stretch garments, as this can easily cause binding at the armpit.
+> Negative Werte verschieben die Ärmel nach oben. Sei vorsichtig, auch bei Stretch-Kleidung, da dies leicht zu Einschnürungen in der Achselhöhle führen kann.
