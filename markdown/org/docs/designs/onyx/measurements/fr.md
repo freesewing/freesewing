@@ -1,5 +1,5 @@
 ---
-title: "Onyx One-piece: Required Measurements"
+title: "Onyx en une seule pièce : Mesures requises"
 ---
 
 <DesignMeasurements design='onyx' />
