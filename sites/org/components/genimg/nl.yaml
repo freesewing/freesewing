@@ -1,19 +1,19 @@
 title: Titel
-titleMsg: This will be the main text on the image
-intro: Intro / Byline / Footer
-introMsg: This will appear smaller at the bottom
+titleMsg: Dit wordt de hoofdtekst op de afbeelding
+intro: Intro / Bijschrift / Voettekst
+introMsg: Dit wordt onderaan kleiner weergegeven
 type: Variant
-typeMsg: Pick the variant that best suits your needs
+typeMsg: Kies de variant die het beste bij je past
 site: Site
-siteMsg: This format can optionally include the site name
-generate: Generate image
-generateAgain: Generate another image
+siteMsg: Dit formaat kan optioneel de sitenaam bevatten
+generate: Afbeelding genereren
+generateAgain: Nog een afbeelding genereren
 preview: Voorbeeld
-save: Save Image
-tall: Tall
-tallMsg: Generates a tall image, optimized for Instagram stories, TikTok, and other places that prefer portrait mode.
-wide: Wide
-wideMsg: Generates a wide image, optimized for posting on a variety of platforms including Facebook, Mastodon, Reddit, and so on. Also suitable as Open Graph image.
-square: Square
-squareMsg: Generate a square image optimized for Instagram posts and other places where a square aspect ratio works best.
+save: Afbeelding opslaan
+tall: Groot
+tallMsg: Genereert een hoge afbeelding, geoptimaliseerd voor Instagram stories, TikTok en andere plaatsen die de voorkeur geven aan de staande modus.
+wide: Breed
+wideMsg: Genereert een brede afbeelding, geoptimaliseerd voor plaatsing op verschillende platforms, waaronder Facebook, Mastodon, Reddit, enzovoort. Ook geschikt als Open Graph-afbeelding.
+square: Vierkant
+squareMsg: Genereer een vierkante afbeelding die geoptimaliseerd is voor Instagram posts en andere plaatsen waar een vierkante beeldverhouding het beste werkt.
 none: Geen
