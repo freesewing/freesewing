@@ -2,9 +2,9 @@
 title: "Довжина рукава"
 ---
 
-Controls how long the sleeves of your garment will be.
- - 15-30% will make short sleeves.
- - 75% will make three-quarter sleeves.
- - 100% will make long sleeves, stopping at the wrist.
- - 115% will make sleeves covering the knuckles, and is appropriate if using thumb holes.
+Керує довжиною рукавів вашого одягу.
+ - 15-30% складуть короткі рукави.
+ - 75% зроблять рукав три чверті.
+ - 100% зробить довгі рукави, зупиняючись на зап'ясті.
+ - 115% дозволить зробити рукава, що закривають кісточки пальців, і буде доречним, якщо ви використовуєте отвори для великого пальця.
 
