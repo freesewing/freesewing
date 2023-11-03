@@ -1,6 +1,6 @@
 ---
-title: "Skully: Designer Notes"
+title: "Skully: Designer-Notizen"
 ---
 
-<Fixme>Wouter designed this. They have not written any notes (yet)</Fixme>
+<Fixme>Wouter hat das entworfen. Sie haben (noch) keine Noten geschrieben</Fixme>
 
