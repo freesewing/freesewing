@@ -2,12 +2,12 @@
 title: Bulto
 ---
 
-This option allows you to create room at the front like on briefs. Room that you can use to hold a snack, or other things that you may want to carry there.
+Esta opción te permite crear espacio en la parte delantera, como en los calzoncillos. Espacio que puedes utilizar para guardar un tentempié u otras cosas que quieras llevar allí.
 
-Enabling this option has a number of side-effects:
+Activar esta opción tiene una serie de efectos secundarios:
 
-- It will override the gusset location
-- It will join the front and gusset into a single part
-- It will no longer be possible to cut the front/gusset on the fold
+- Anulará la ubicación del fuelle
+- Unirá la parte delantera y el fuelle en una sola pieza
+- Ya no será posible cortar la parte delantera/el fuelle en el pliegue
 
 
