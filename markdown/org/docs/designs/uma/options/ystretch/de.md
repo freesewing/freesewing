@@ -1,6 +1,6 @@
 ---
-title: "Vertical fabric stretch"
+title: "Vertikale Stoffdehnung"
 ---
 
-Adjust this option for more or less stretchy fabrics, specifically for vertical stretch.
+Stelle diese Option für mehr oder weniger dehnbare Stoffe ein, insbesondere für die vertikale Dehnung.
 
