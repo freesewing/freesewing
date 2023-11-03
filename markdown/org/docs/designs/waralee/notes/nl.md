@@ -1,6 +1,6 @@
 ---
-title: "Waralee wrap pants: Designer Notes"
+title: "Waralee wikkelbroek: Ontwerpnotities"
 ---
 
-<Fixme>Wouter designed this. They have not written any notes (yet)</Fixme>
+<Fixme>Wouter heeft dit ontworpen. Ze hebben (nog) geen aantekeningen geschreven</Fixme>
 
