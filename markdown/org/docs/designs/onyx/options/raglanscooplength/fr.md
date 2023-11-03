@@ -1,5 +1,5 @@
 ---
-title: "Raglan scoop length"
+title: "Longueur raglan"
 ---
 
-Controls how far out from the armhole the raglan seam starts to scoop.
+Contrôle à quelle distance de l'emmanchure la couture raglan commence à s'évaser.
