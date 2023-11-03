@@ -1,7 +1,7 @@
 ---
-title: Pointed tie ends
+title: Extrémités de cravate pointues
 ---
 
-This option allows you to generate a pattern where the ties have a pointy end, rather than a straight one.
+Cette option te permet de générer un modèle où les cravates ont une extrémité pointue, plutôt que droite.
 
-Enable this option if you want your ties to have pointy ends. Disable this option (the default) if you want your ties to have straight ends.
+Active cette option si tu veux que tes cravates aient des extrémités pointues. Désactive cette option (par défaut) si tu veux que tes cravates aient des extrémités droites.
