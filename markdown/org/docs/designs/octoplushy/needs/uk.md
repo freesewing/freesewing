@@ -15,9 +15,9 @@ title: "Octoplushy, плюшевий восьминіг: Що вам потрі�
 
 <Note>
 
-This list is based on a default Octoplushy and you may need less or more fabric dependant on the [size you are making Octoplushy](/docs/designs/octoplushy/options/size/). 
+Цей список базується на стандартному Octoplushy, і вам може знадобитися менше або більше тканини, залежно від [розміру Octoplushy, який ви робите] (/docs/designs/octoplushy/options/size/). 
 
-The amount of fabric required is also dependant on the [type of Octoplushy you are making](/docs/designs/octoplushy/options/type/).
+Кількість необхідної тканини також залежить від [типу Octoplushy, який ви виготовляєте] (/docs/designs/octoplushy/options/type/).
 - Версія Octopus потребує приблизно на 50% більше тканини, ніж версія Octoplushy.
 - Версія Squid потребує приблизно на 75% більше тканини, ніж версія Octoplushy.
 
