@@ -2,7 +2,7 @@
 title: "Rugsplit"
 ---
 
-This adds a vent to the back of the skirt.
+Dit voegt een opening toe aan de achterkant van de rok.
 
 
 
