@@ -1,14 +1,14 @@
 ---
-title: "Yuri hoodie: Designer Notes"
+title: "Sudadera con capucha Yuri: Notas del diseñador"
 ---
 
-The idea behind Yuri was to get a hybrid cardigan/sweatshirt that could be easily opened and closed, and sewn without the hassle of zips. When I started sewing, one of the things I hated the most was sewing zips (but now it's ok, yay!).
+La idea de Yuri era conseguir un híbrido de rebeca/sudadera que pudiera abrirse y cerrarse fácilmente, y coserse sin el engorro de las cremalleras. Cuando empecé a coser, una de las cosas que más odiaba era coser cremalleras (pero ahora ya está bien, ¡yupi!).
 
-I wanted a big shape that would be comfortable to wear while cycling or knitting on the couch, plus size or not, with or without breasts :)
+Quería una forma grande que fuera cómoda de llevar mientras montaba en bici o tejía en el sofá, con tallas grandes o no, con o sin pechos :)
 
-This pattern was made in collaboration with @biou, my husband, who's also a programmer. We had a lot of fun creating and testing the pattern together and we were happy to be able to contribute a little to FreeSewing :)
+Este patrón se hizo en colaboración con @biou, mi marido, que también es programador. Nos divertimos mucho creando y probando juntos el patrón y nos alegramos de poder contribuir un poco a FreeSewing :)
 
-We used a mix of the two Huey & Hugo hoodies and reshaped them a bit to change the front/opening and length, and BAM, Yuri was born!
+Utilizamos una mezcla de las dos sudaderas Huey & Hugo y les dimos un poco de forma para cambiar la parte delantera/apertura y la longitud, y BAM, ¡nació Yuri!
 
-I recommend using a soft sweatshirt fabric, you can add a lining but it's not essential. It can be nice in red for a little red hood costume, or a nice gift for a pregnant person :)
+Te recomiendo que utilices una tela suave de sudadera, puedes añadir un forro pero no es imprescindible. Puede ser bonito en rojo para un disfraz de caperucita roja, o un bonito regalo para una embarazada :)
 
