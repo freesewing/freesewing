@@ -2,13 +2,13 @@
 title: "Holgura de asiento"
 ---
 
-Controls how wide the garment will be at your seat.
+Controla la anchura de la prenda en tu asiento.
 
-Whatever value you provide here will simply be added to your seat circumference measurement when drafting the garment.
+El valor que indiques aquí simplemente se añadirá a la medida de la circunferencia de tu asiento al confeccionar la prenda.
 
 > ##### Esta opción también permite valores negativos.
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Debes utilizar la holgura negativa si utilizas un material elástico que quieres que quede bien ajustado. Los monos y los unitardos suelen tener holgura negativa, mientras que otras prendas suelen tener holgura positiva.
 
 
 
