@@ -2,7 +2,6 @@
 // Dependencies
 import yaml from 'js-yaml'
 import { validateSettings } from './settings-validator.mjs'
-import { capitalize } from 'shared/utils.mjs'
 // Context
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
@@ -14,7 +13,7 @@ import { CloseIcon } from 'shared/components/icons.mjs'
 export const ns = []
 
 /** a view for editing the gist as yaml */
-export const EditView = ({ settings, setSettings, design, Design }) => {
+export const EditView = ({ settings, setSettings, Design }) => {
   const inputRef = useRef(null)
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const [error, setError] = useState(false)

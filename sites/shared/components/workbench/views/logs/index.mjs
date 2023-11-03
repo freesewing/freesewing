@@ -70,7 +70,7 @@ const extractLogs = (pattern) => {
   return logs
 }
 
-export const LogView = ({ pattern, settings, setSettings }) => {
+export const LogView = ({ pattern, settings }) => {
   const { t } = useTranslation(ns)
 
   try {
