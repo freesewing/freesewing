@@ -1,7 +1,7 @@
 ---
-title: Pointed tie ends
+title: Puntige dasuiteinden
 ---
 
-This option allows you to generate a pattern where the ties have a pointy end, rather than a straight one.
+Met deze optie kun je een patroon genereren waarbij de stropdassen een puntig uiteinde hebben in plaats van een recht uiteinde.
 
-Enable this option if you want your ties to have pointy ends. Disable this option (the default) if you want your ties to have straight ends.
+Schakel deze optie in als je wilt dat je stropdassen puntige uiteinden hebben. Schakel deze optie (de standaard) uit als je wilt dat je stropdassen rechte uiteinden hebben.
