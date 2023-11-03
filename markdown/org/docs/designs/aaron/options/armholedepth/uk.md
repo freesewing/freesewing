@@ -2,8 +2,8 @@
 title: "Глибина пройми"
 ---
 
-This option controls the depth of the armhole in the Brian block Aaron is based on.
+Цей параметр регулює глибину пройми в блоці Брайана, на якому базується Аарон.
 
-This option applies to the new v3 way of calculating the armhole depth. If you enable the [legacy armhole depth](/docs/designs/brian/options/legacyarmholedepth) option, this option will not apply, but instead it's legacy version [armhole depth factor](/docs/designs/brian/options/armholedepthfactor) will.
+Ця опція застосовується до нового способу розрахунку глибини пройми v3. Якщо ви ввімкнули опцію [застарілої глибини пройми](/docs/designs/brian/options/legacyarmholedepth) , ця опція не буде застосована, а буде застосована застаріла версія [коефіцієнта глибини пройми](/docs/designs/brian/options/armholedepthfactor) .
 
-In any case, Aaron allows the armhole to drop much further using the [armhole drop](/docs/designs/aaron/options/armholedrop) option. So you probably don't need this option from the underlying block, but it's there if you'd like to tweak it.
+У будь-якому випадку, Аарон дозволяє опускати пройму набагато далі за допомогою опції [armhole drop](/docs/designs/aaron/options/armholedrop) . Отже, вам, ймовірно, не потрібна ця опція в базовому блоці, але вона є, якщо ви хочете її налаштувати.
