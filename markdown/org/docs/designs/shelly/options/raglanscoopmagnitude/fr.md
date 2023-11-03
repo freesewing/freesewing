@@ -1,6 +1,6 @@
 ---
-title: "Raglan scoop depth"
+title: "Profondeur raglan"
 ---
 
-Controls how much extra material to place under the armpits. Larger values will generally provide better mobility and room in the armpits, while smaller values may give a more fitted look and may be better suited to people with skinny arms. This option can usually be left at the default value without issue.
+Contrôle la quantité de tissu supplémentaire à placer sous les aisselles. Les valeurs plus grandes offriront généralement une meilleure mobilité et de l'espace au niveau des aisselles, tandis que les valeurs plus petites peuvent donner un aspect plus ajusté et être mieux adaptées aux personnes ayant des bras maigres. Cette option peut généralement être laissée à sa valeur par défaut sans problème.
 
