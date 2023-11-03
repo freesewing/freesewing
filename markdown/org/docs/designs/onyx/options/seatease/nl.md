@@ -2,13 +2,13 @@
 title: "Overwijdte zitvlak"
 ---
 
-Controls how wide the garment will be at your seat.
+Bepaalt hoe breed het kledingstuk wordt bij je zitvlak.
 
-Whatever value you provide here will simply be added to your seat circumference measurement when drafting the garment.
+De waarde die je hier opgeeft, wordt gewoon bij de omtrek van je zitvlak opgeteld wanneer je het kledingstuk ontwerpt.
 
 > ##### Deze optie laat negatieve waarden toe.
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Je moet negatief gemak gebruiken als je een stretchmateriaal gebruikt dat je strak wilt laten aansluiten. Unisuits en unitards hebben meestal een negatieve pasvorm, terwijl andere kledingstukken meestal een positieve pasvorm hebben.
 
 
 
