@@ -14,7 +14,7 @@ import { prebuildCrowdin as crowdin } from './crowdin.mjs'
 import { prebuildOrg as orgPageTemplates } from './org.mjs'
 import { prebuildSearch as search } from './search.mjs'
 //import { prebuildLab as lab} from './lab.mjs'
-//import { prebuildOgImages as ogImages } from './og/index.mjs'
+import { prebuildOgImages as ogImages } from './og.mjs'
 
 /*
  * Are we running in production?
@@ -37,8 +37,7 @@ const handlers = {
   git,
   'Page Templates': true,
   search,
-  // FIXME: This needs work, but perhaps after v3
-  //ogImages,
+  ogImages,
 }
 
 /*

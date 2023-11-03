@@ -127,7 +127,7 @@ export function ImgController() {}
  * Generate an Open Graph image
  * See: https://freesewing.dev/reference/backend/api
  */
-ImgController.prototype.generate = async (req, res, tools) => {
+ImgController.prototype.generate = async (req, res) => {
   /*
    * Extract body parameters
    */
@@ -160,7 +160,7 @@ ImgController.prototype.generate = async (req, res, tools) => {
    */
   sharp(Buffer.from(svg, 'utf-8'))
     .resize({ width: imgConfig.templates.sizes[type] })
-    .toBuffer((err, data, info) => {
+    .toBuffer((err, data) => {
       if (err) console.log(err)
       return res.type('png').send(data)
     })
