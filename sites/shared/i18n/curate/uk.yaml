@@ -1,15 +1,15 @@
 curate: Куратор
-curateSet: Curated measurements set
-curateSets: Curate FreeSewing's measurements sets
-curatePacks: Curate FreeSewing's option packs
-noSuggestedPacks: There are currently no option packs suggested for curation
-noSuggestedSets: There are currently no measurements sets suggested for curation
-optionPack: Option pack
-packs: Option Packs
-published: Published
-publishedDesc: Published records are available to users. If you plan to make changes, you might want to unpublish first.
-unpublished: Unpublished
-unpublishedDesc: Unpublished records are not available to users. Things typically start out unpublished until they are ready for publication.
+curateSet: Кураторський набір вимірювань
+curateSets: Куратор наборів мірок FreeSewing
+curatePacks: Куратор пакетів опцій FreeSewing
+noSuggestedPacks: Наразі для кураторства не запропоновано жодних пакетів опцій
+noSuggestedSets: Наразі для кураторства не запропоновано жодного набору вимірювань
+optionPack: Пакет опцій
+packs: Пакети опцій
+published: Опубліковано
+publishedDesc: Опубліковані записи доступні для користувачів. Якщо ви плануєте внести зміни, ви можете спочатку скасувати публікацію.
+unpublished: Неопублікований
+unpublishedDesc: Неопубліковані записи не доступні користувачам. Зазвичай вони залишаються неопублікованими доти, доки не будуть готові до публікації.
 sets: Набори для вимірювання
-suggestedSets: Measurements sets suggested for curation
-suggestedPacks: Suggested option packs
+suggestedSets: Вимірювальні набори, запропоновані для кураторства
+suggestedPacks: Пропоновані пакети опцій
