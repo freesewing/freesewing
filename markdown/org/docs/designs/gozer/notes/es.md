@@ -1,6 +1,6 @@
 ---
-title: "Gozer the ghost: Designer Notes"
+title: "Gozer el fantasma: Notas del diseñador"
 ---
 
-<Fixme>The designer, nor FreeSewing, are liable for anything that follows the use of this pattern. You've been warned.</Fixme>
+<Fixme>El diseñador, ni FreeSewing, son responsables de nada que se derive del uso de este patrón. Estás avisado.</Fixme>
 
