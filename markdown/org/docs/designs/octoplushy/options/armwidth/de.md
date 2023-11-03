@@ -1,5 +1,5 @@
 ---
-title: "Arm Width"
+title: "Arm Breite"
 ---
 
-The setting adjusts the width of the arms.
+Mit dieser Einstellung wird die Breite der Arme angepasst.
