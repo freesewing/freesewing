@@ -1,8 +1,8 @@
 ---
-title: UI Settings
+title: Налаштування інтерфейсу
 ---
 
-The **UI Settings** menu allows you to tweak certain aspects of the user interface (UI). Those aspects are:
+Меню **Налаштування інтерфейсу** дозволяє вам налаштувати певні аспекти користувацького інтерфейсу (UI). Ці аспекти такі:
 
 <ReadMore />
 
