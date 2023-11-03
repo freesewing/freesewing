@@ -1,13 +1,13 @@
 ---
-title: "Shelly Swimshirt: Designer Notes"
+title: "Купальник Шеллі: Нотатки дизайнера"
 ---
 
-Shelly is my first design. It was born out of the need for shirts that can compress very tight (for sensory needs stemming from autism), and the lack of suitable ready made shirts. Undersized swim shirts are tight enough, but expose the belly and pinch in the armpits, so I set out to design a shirt that would be both comfortable and therapeutic.
+Шеллі - мій перший дизайн. Він народився з потреби в сорочках, які можуть стискатися дуже щільно (для сенсорних потреб, пов'язаних з аутизмом), і відсутності відповідних готових сорочок. Замалі купальники досить тісні, але оголюють живіт і перетискають пахви, тому я поставила собі за мету розробити сорочку, яка була б і зручною, і терапевтичною.
 
-Raglan sleeves are used to provide additional flexibility and mobility in the armpit, and are very important for very tight clothes.
+Рукав-реглан використовується для забезпечення додаткової гнучкості та рухливості в пахвовій западині, що дуже важливо для дуже облягаючого одягу.
 
-That said, Shelly is a simple and versatile design capable of making knit tops over a wide range of eases, from tightly compressive compression shirts, to loose raglan tees. It makes a great first knit garment project, as it only uses five pieces of fabric cut from four pattern pieces, and features simple seams that can be entirely made with a serger/overlocker. It's also fairly tolerant of small errors in measuring/cutting/sewing due to the elastic nature of knits, especially swim fabric, and the lack of any fine features requiring too much attention to detail on Shelly.
+Тим не менш, Шеллі - це простий і універсальний дизайн, здатний створювати трикотажні топи в широкому діапазоні легкості, від щільно облягаючих компресійних сорочок до вільних футболок-реглан. Це чудовий проект для першого в'язаного виробу, адже для нього використовується лише п'ять шматків тканини, викроєних з чотирьох викрійок, і прості шви, які можна повністю виконати за допомогою сергера/оверлока. Вона також досить толерантна до невеликих похибок у вимірах/крої/шитті завдяки еластичній природі трикотажу, особливо для купальників, і відсутності у Шеллі будь-яких дрібних особливостей, що вимагають надмірної уваги до деталей.
 
-The name is chosen because I like the beach and I like seashells.
+Назва обрана тому, що мені подобається пляж і мені подобаються мушлі.
 
-Thrunic
+Трунік.
