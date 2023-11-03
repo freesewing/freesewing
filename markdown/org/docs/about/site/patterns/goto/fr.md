@@ -1,12 +1,12 @@
 ---
-title: What to do after saving a new pattern?
+title: Que faire après avoir enregistré un nouveau modèle ?
 ---
 
-When you create a new pattern in FreeSewing's pattern editor, you have the option to save the pattern to your account.
+Lorsque tu crées un nouveau modèle dans l'éditeur de modèles de FreeSewing, tu as la possibilité d'enregistrer le modèle sur ton compte.
 
-After you save the pattern to your account, there are several options for what you might want to do next:
+Après avoir enregistré le modèle sur ton compte, plusieurs options s'offrent à toi pour la suite :
 
-- Continue editing the saved patter
-- Display the pattern information page
+- Continuer à éditer le modèle sauvegardé
+- Affiche la page d'information sur le modèle
 
-Because we cannot read your mind, you can choose what you would like to happen when you save a new pattern to your account.
+Comme nous ne pouvons pas lire dans tes pensées, tu peux choisir ce que tu veux qu'il se passe lorsque tu enregistres un nouveau modèle sur ton compte.
