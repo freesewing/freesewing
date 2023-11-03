@@ -2,7 +2,7 @@
 title: "Casquette plate Florent : Instructions de coupe"
 ---
 
-To make Floren, cut out the following parts:
+Pour fabriquer Floren, découpe les parties suivantes :
 
 - **Tissu principal**
   - Coupez **1 haut** sur le pli mais n'incluez pas la marge de couture du centre, ou **2 haut** avec la marge de couture du centre.
@@ -19,7 +19,7 @@ To make Floren, cut out the following parts:
 
 La partie inférieure du bord est insérée, tandis que la partie supérieure du bord est décalée de sorte que la couture tombe « sous le bord du bord ». Gardez cela à l'esprit lorsque vous coupez les pièces et marquez-les en conséquence, afin que vous ne finissiez pas avec la couture au-dessus du bord (je ne veux pas vous forcer à ce choix de conception, Je voudrais simplement souligner la différence entre les parties afin que vous en soyez conscient et que vous agissiez en conséquence).
 
-If you want to avoid a seam down the middle of the top part, you can cut 1 top _on the fold_ rather than 2 tops and sew them together. The fold line would be the horizontal stretch of the top part, and you'd only have a seam at the right side where it tapers downwards.
+Si tu veux éviter une couture au milieu de la partie supérieure, tu peux couper 1 haut _sur le pli_ plutôt que 2 hauts et les coudre ensemble. La ligne de pliage correspondrait à l'étirement horizontal de la partie supérieure, et tu n'aurais qu'une couture sur le côté droit, là où elle se rétrécit vers le bas.
 
 Une disposition typique de Florent ressemble à ceci:
 
