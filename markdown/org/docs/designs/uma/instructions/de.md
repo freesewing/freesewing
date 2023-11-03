@@ -1,8 +1,8 @@
 ---
-title: "Uma undies: Sewing Instructions"
+title: "Uma Unterhosen: Anleitung zum Nähen"
 ---
 
-### Step 1: Pin/baste the front to the first gusset piece
+### Schritt 1: Stecke/klebe das Vorderteil an das erste Zwickelstück
 
 Platziere eines der Zwickelstücke auf das Vorderteil, _gute Seiten zusammen_, so dass die Schritt-Nähte zueinander ausgerichtet sind. Stecke oder hefte an der Nahtzugabe.
 
@@ -14,7 +14,7 @@ Platziere eines der Zwickelstücke auf das Vorderteil, _gute Seiten zusammen_, s
 
 ![Öffne flach](step02.png)
 
-### Step 3: Pin/baste the back to the first gusset piece
+### Schritt 3: Stecke/klebe das Rückenteil an das erste Zwickelstück.
 
 Lege die Rückseite an den Zwickel, gute Seiten zusammen. Stecke oder hefte an der Nahtzugabe.
 
