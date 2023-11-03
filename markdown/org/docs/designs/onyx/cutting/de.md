@@ -1,13 +1,13 @@
 ---
-title: "Onyx One-piece: Cutting Instructions"
+title: "Onyx Einteilig: Anleitung zum Schneiden"
 ---
 
-- Cut **1 front** part _on the fold_ -or- cut **2 front parts** (refer to pattern piece)
-- Cut **1 back** part _on the fold_ -or- cut **2 back parts** (refer to pattern piece)
-- Cut **2 sleeve** parts
-- Cut **1 crotch gusset** part _on the fold_
-- Cut **1 zipper guard** part _on the fold_ (optional)
-- Cut **1 neckband** part _on the fold_ (optional)
-- Cut **2 hood** parts (optional)
-- Cut **1 hood front** part _on the fold_ (optional)
-- Cut **1 skirt** part _on the fold_ (optional)
+- Schneide **1 Vorderteil** _an der Falte_ -oder- schneide **2 Vorderteile** (siehe Schnittmusterteil)
+- **1 Rückenteil** _an der Falte_ zuschneiden -oder- **2 Rückenteile** zuschneiden (siehe Schnittmusterteil)
+- Schnitt **2 Hülse** Teile
+- Schneide **1 Schrittzwickel** Teil _an der Falte_
+- Schneide **1 Reißverschlussschutz** Teil _an der Falte_ (optional)
+- Schneide **1 Nackenband** Teil _an der Falte_ (optional)
+- Schneide **2 Haubenteile** (optional)
+- Schneide **1 Kapuzenvorderteil** Teil _an der Falte_ (optional)
+- Schneide **1 Rockteil** _an der Falte_ (optional)
