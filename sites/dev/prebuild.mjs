@@ -75,7 +75,7 @@ prebuildRunner({
      * Only prebuild the Open Graph (og) images in production
      * Will be skipped in development mode to save time
      */
-    ogImages: true, //'productionOnly',
+    ogImages: false, // We currently don't prebuild these images
 
     /*
      * Only prebuild the patron info in production
