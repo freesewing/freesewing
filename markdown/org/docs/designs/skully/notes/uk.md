@@ -2,5 +2,5 @@
 title: "Skully: Designer Notes"
 ---
 
-<Fixme>Wouter designed this. They have not written any notes (yet)</Fixme>
+<Fixme>Воутер розробив це. Вони не писали жодних нотаток (поки що)</Fixme>
 
