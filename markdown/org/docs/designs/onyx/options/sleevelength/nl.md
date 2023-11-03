@@ -2,9 +2,9 @@
 title: "Mouwlengte"
 ---
 
-Controls how long the sleeves of your garment will be.
- - 15-30% will make short sleeves.
- - 75% will make three-quarter sleeves.
- - 100% will make long sleeves, stopping at the wrist.
- - 115% will make sleeves covering the knuckles, and is appropriate if using thumb holes.
+Bepaalt hoe lang de mouwen van je kledingstuk worden.
+ - 15-30% maakt korte mouwen.
+ - 75% maakt driekwart mouwen.
+ - 100% maakt lange mouwen die stoppen bij de pols.
+ - 115% maakt mouwen die de knokkels bedekken en is geschikt als je duimgaten gebruikt.
 
