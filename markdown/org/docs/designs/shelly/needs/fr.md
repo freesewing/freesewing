@@ -1,13 +1,13 @@
 ---
-title: "Shelly shirt: What You Need"
+title: "Chemise Shelly : Ce dont tu as besoin"
 ---
 
-To make Shelly, you will need the following:
+Pour fabriquer Shelly, tu auras besoin des éléments suivants :
 
 - Fourniture de base pour la couture
-- Between 0.5 - 2 meters (0.6 - 2.2 yards) of a suitable fabric, depending on size and style ([see Fabric options](/docs/patterns/shelly/fabric))
-    - A kids' short-sleeve rash guard can probably be made with 0.5 meters with fabric left over.
-    - A looser-fitting long-sleeved swim shirt or t-shirt for a tall adult will take closer to 2 meters.
-    - Two different colors or prints of fabric can be used (one for the sleeves, one for the bodice).
-- (Optional) Ribbing fabric for the neck, if using less stretchy fabric.
-- (Optional) Contrasting color thread, if making exposed seams.
+- Entre 0,5 et 2 mètres d'un tissu approprié, selon la taille et le style ([voir les options de tissu](/docs/patterns/shelly/fabric)).
+    - Un rash guard à manches courtes pour enfants peut probablement être fabriqué avec 0,5 mètre de tissu restant.
+    - Un maillot de bain à manches longues ou un t-shirt plus ample pour un adulte de grande taille prendra plus près de 2 mètres.
+    - Deux couleurs ou imprimés différents de tissu peuvent être utilisés (un pour les manches, un pour le corsage).
+- (Facultatif) Tissu côtelé pour le cou, si tu utilises un tissu moins extensible.
+- (Facultatif) Fil de couleur contrastée, si tu fais des coutures apparentes.
