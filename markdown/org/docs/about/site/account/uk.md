@@ -2,7 +2,7 @@
 title: Обліковий запис
 ---
 
-Your FreeSewing account is where we store your data. Your account itself can hold the following fields:
+Ваш обліковий запис FreeSewing - це місце, де ми зберігаємо ваші дані. Ваш обліковий запис може містити наступні поля:
 
 <ReadMore recurse />
 
