@@ -1,5 +1,5 @@
 ---
-title: Motivation
+title: Meine Beweggründe für FreeSewing's Revenue Pledge
 ---
 
 <Note>
@@ -9,7 +9,7 @@ seine Motivation für [das FreeSewing Einnahmen Versprechen](/docs/various/pledg
 
 </Note>
 
-Du gehst wahrscheinlich davon aus, dass wir um Geld bitten, damit wir die Server weiter betreiben können. Aber das stimmt nicht ganz.
+Du gehst wahrscheinlich davon aus, dass ich Geld verlange, um die Server am Laufen zu halten. Aber das stimmt nicht ganz.
 
 Ich weiß nicht, ob du mit dem Satz **Noblesse oblige** vertraut bist, aber das bedeutet im Wesentlichen, dass Privilegien Verantwortung mit sich bringen.
 
@@ -40,7 +40,7 @@ Darum gehen alle Einnahmen und Spenden, die ich durch FreeSewing erziele, an ein
 
 Hier ist der heikle Teil: Menschen geben weniger, wenn sie wissen, dass das Geld an Wohltätigkeitsorganisationen geht. Ich wünschte, es wäre nicht der Fall, aber es ist so.
 
-Daher präsentieren wir [unsere Abonnementoptionen](/community/join) wie man sie auf einer gewinnorientierten Website sehen würde. Es scheint auf diese Weise intuitiver und funktioniert auch einfach besser.
+Deshalb präsentiere ich auf [die Abo-Optionen](/patrons/join) , wie du sie auf einer gewinnorientierten Website sehen würdest. Es scheint auf diese Weise intuitiver und funktioniert auch einfach besser.
 
 Ja, alles ist kostenlos, und das Geld geht nicht wirklich zur Bezahlung der Serverrechnungen (weil ich sie aus den oben genannten Gründen aus eigener Tasche bezahle). Aber das bedeutet nicht, dass diese Beiträge nicht entscheidend für das Wohlergehen des Projekts sind, oder zumindest seines Maintainers (das wäre ich).
 
