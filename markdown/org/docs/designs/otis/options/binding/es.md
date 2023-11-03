@@ -1,7 +1,7 @@
 ---
-title: "Binding"
+title: "Encuadernación"
 ---
 
-Binding determines the size of the binding for the neck and leg openings.
+El ribete determina el tamaño del ribete para el cuello y las aberturas de las piernas.
 
-The binding is a percentage of the waist divided by 4. Default is 11%
+La ligadura es un porcentaje de la cintura dividido por 4. Por defecto es el 11
