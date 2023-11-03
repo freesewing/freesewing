@@ -1,9 +1,9 @@
 ---
-title: "Tamiko top: Designer Notes"
+title: "Топ Tamiko: Нотатки дизайнера"
 ---
 
-I say a top similar to this when I was in Japan that I liked. So when I got home, I recreated it from memory.
+Я скажу, що подібний топ мені сподобався, коли я був у Японії. Тож коли я повернувся додому, я відтворив його по пам'яті.
 
-It's essentially a zero-waste pattern and _very_ easy to make.
+Це, по суті, безвідходний шаблон, і його _дуже_ легко виготовити.
 
 Йост
