@@ -1,5 +1,5 @@
 ---
-title: "Onyx One-piece: Design Options"
+title: "Онікс Цілісний: Варіанти дизайну"
 ---
 
 <DesignOptions design='onyx' />
