@@ -1,7 +1,7 @@
 ---
-title: "Sleeve ribbing width"
+title: "Breite der Ärmelrippung"
 ---
 
-Controls how wide the ribbing around the sleeve is.
+Legt fest, wie breit die Rippung um den Ärmel herum ist.
 
-Note: This option is only available if the 'sleeve ribbing' option is set to 'ribbing.'
+Hinweis: Diese Option ist nur verfügbar, wenn die Option "Ärmelrippung" auf "Rippung" eingestellt ist.
