@@ -1,7 +1,7 @@
 ---
-title: "Leg hem"
+title: "Поділ для ніг"
 ---
 
-Controls how wide the hem going around the legs will be, as a multiple of the seam allowance. A hem of 2.5cm/1" is a common value.
+Дозволяє визначити, наскільки широким буде поділ навколо ніг, кратний припуску на шов. Підгин 2,5 см/1" - це звичайна величина.
 
-Note: This option is only available if the _Leg ribbing_ option is set to 'hem.'
+Примітка: Ця опція доступна, лише якщо для параметра _Ребра на ніжках_ встановлено значення "підгин".
