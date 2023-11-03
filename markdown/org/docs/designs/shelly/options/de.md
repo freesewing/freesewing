@@ -1,5 +1,5 @@
 ---
-title: "Shelly shirt: Design Options"
+title: "Shelly Shirt: Design Optionen"
 ---
 
 <DesignOptions design='shelly' />
