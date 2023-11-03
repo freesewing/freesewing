@@ -2,8 +2,6 @@
 title: "Легкість у грудях"
 ---
 
-![The chest ease option on Onyx](chestease.svg)
-
 Controls how wide the garment will be at your chest.
 
 Обрану кількість буде додано до заданого об'єму грудей при креслені викрійки.

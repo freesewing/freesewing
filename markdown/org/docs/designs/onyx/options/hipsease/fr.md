@@ -2,8 +2,6 @@
 title: "Aisance des hanches"
 ---
 
-![The hips ease option on Onyx](hipsease.svg)
-
 Controls how wide the garment will be at your hips.
 
 Quelle que soit la valeur que vous indiquez ici, elle sera simplement ajoutée à la mesure de votre tour de hanches lors de l'élaboration du vêtement.

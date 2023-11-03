@@ -26,6 +26,8 @@ err3: Versuche es einfach noch einmal oder wende dich an den Support, damit wir 
 fewerOptions: Fewer options
 haveAV2Account: Have a v2 account?
 joinFreeSewing: FreeSewing beitreten
+mfaCode: MFA code
+mfaCodeMsg: Please provide a one-time MFA code, or a backup scratch code
 migrateItHere: Migrate it here
 migrateNoWorkie: Unable to migrate this account. Typically that means your credentials are invalid.
 migrateV2Account: Migrate your v2 account

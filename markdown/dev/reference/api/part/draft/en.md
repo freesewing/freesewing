@@ -34,12 +34,9 @@ access the following properties:
 || **_Access to utilities_**   |
 | `context`         | Allows access to the pattern object and other things higher in the tree |
 | `getId`           | See [the getId documentation](/reference/api/part/getid) |
-| `hide`            | See [the hide documentation](/reference/api/part/hide) |
 | `log`             | See [the logging documentation](/reference/api/store/log) |
 | `macro`           | See [the macros documentation](/reference/macros/) |
-| `setHidden`       | See [the setHidden documentation](/reference/api/part/sethidden) |
 | `store`           | See [the store documentation](/reference/api/store) |
-| `unhide`          | See [the unhide documentation](/reference/api/part/unhide) |
 | `units`           | A version of [`utils.units()`](/reference/api/utils/units) that is preconfigured with the user's chosenunits |
 | `utils`           | See [the utils documentation](/reference/api/utils) |
 | `Bezier`          | The [bezier-js](https://pomax.github.io/bezierjs/) library's `Bezier` named export |

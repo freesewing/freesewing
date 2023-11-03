@@ -3,19 +3,22 @@ title: hd
 ---
 
 The `hd` macro adds a _horizontal dimension_ to your pattern.
-It is provided by the [annotations plugin](/reference/plugins/annotations).
+
+It is provided by [plugin-annotations](/reference/plugins/annotations), which is
+part of [core-plugins](/reference/plugins/core) (so it is available by default).
 
 ## Signature
 
 ```js
 macro('hd', {
-  String id,
+  String id = 'hd',
   Point from,
   Boolean noEndMarker,
   Boolean noStartMarker,
   String text,
   Point to,
   Number y,
+  Boolean force = false,
 })
 ```
 
@@ -28,7 +31,8 @@ macro('hd', {
   macro('hd', {
     from: new Point(0,0),
     to: new Point(100,0),
-    y:15,
+    y: 15,
+    force: 1,
   })
 
   return part
@@ -43,23 +47,13 @@ macro('hd', {
 | `from`          |          | [Point](/reference/api/point) | The startpoint of the dimension |
 | `to`            |          | [Point](/reference/api/point) | The endpoint of the dimension |
 | `y`             |          | Number              | The Y-value at which to draw the dimension |
-| `id`            | auto-assigned | String | A custom ID under which paths and points will be created |
+| `id`            | `hd`     | `string`            | The ID of this macro instance |
 | `text`          | Horizontal distance | Number   | The text to go on the dimension if not the from-to horizontal distance |
 | `noStartMarker` | `false`  | Boolean             | Whether to not draw a start marker |
 | `noEndMarker`  | `false`  | Boolean             | Whether to not draw an end marker |
-
-## Result
-
-| Generated Element | Description |
-|-------------------|-------------|
-| `paths.${id}` | Path for the span of the dimension |
-| `paths.${id}_ls` | Path for the leader to the start of the dimension |
-| `paths.${id}_le` | Path for the leader to the end of the dimension |
+| `force`      | `false`    | `boolean`  | Set this to `true` to display the macro output even when `paperless` is `false` |
 
 ## Notes
 
-Setting a custom ID will:
-
-- Allow removal of the dimension with [the `rmd` macro](/reference/macros/rmd)
-- Prevent removal of the dimension with [the `rmad` macro](/reference/macros/rmad/)
+This macro takes the `paperless` setting into account and won't output anything when both `paperless` and `force` are `false`.
 

@@ -39,6 +39,10 @@ mfaEnabled: Увімкнено двофакторну автентифікаці
 mfaDisabled: Двофакторну автентифікацію вимкнено
 mfaSetup: Налаштування двофакторної автентифікації
 mfaAdd: Додайте FreeSewing до свого додатку Authenticator, відсканувавши QR-код вище.
+mfaScratchCodes: MFA Scratch Codes
+mfaScratchCodesMsg1: You can use any of these scratch codes as a one-time MFA code when you do not have access to your code-generating app (for example, when you've lost your phone).
+mfaScratchCodesMsg2: You can use each of these codes only once. Write them down, because this is the only time you will get to see them.
+copyToClipboard: Copy to clipboard
 confirmWithPassword: Будь ласка, введіть пароль для підтвердження цієї дії
 confirmWithMfa: Будь ласка, введіть код з вашого додатку Authenticator, щоб підтвердити цю дію
 enableMfa: Увімкнути двофакторну автентифікацію

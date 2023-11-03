@@ -50,7 +50,7 @@ export function draftCurvedWaistband({
     if (points[uid + 'Rotated']) points[shortId + 'Rotated'] = points[uid + 'Rotated'].copy()
   }
 
-  if (sa) paths.sa = paths.seam.offset(sa * -1).addClass('fabric sa')
+  if (sa) paths.sa = paths.seam.offset(sa).addClass('fabric sa')
 
   /*
    * Annotations

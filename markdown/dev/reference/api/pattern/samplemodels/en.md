@@ -53,9 +53,15 @@ identifying your model in the models object.
 
 ```js
 import { Aaron } from "@freesewing/aaron"
-import { cisFemaleAdult } from "@freesewing/models"
 
 const Aaron = new Aaron()
 
-const svg = aaron.sampleModels(cisFemaleAdult, "34").render()
+// Load some public test measurements from the FreeSewing backend
+const measurements = (
+  await (
+    await fetch("https://backend3.freesewing.org/curated-sets/1.json")
+  ).json()
+).measurements
+
+const svg = aaron.sampleModels(measurements, "34").render()
 ```

@@ -23,12 +23,16 @@ you plugin object.
 
 ```js
 import { Aaron } from "@freesewing/aaron"
-import { cisFemaleAdult34 } from "@freesewing/models"
 import { pluginTheme } from "@freesewing/plugin-theme"
 
-const pattern = new Aaron({
-  measurements: cisFemaleAdult34
-}).use(pluginTheme)
+// Load some public test measurements from the FreeSewing backend
+const measurements = (
+  await (
+    await fetch("https://backend3.freesewing.org/curated-sets/1.json")
+  ).json()
+).measurements
+
+const pattern = new Aaron({ measurements }).use(pluginTheme)
 
 const svg = pattern.draft().render()
 ```

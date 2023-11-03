@@ -2,8 +2,6 @@
 title: "Holgura de pecho"
 ---
 
-![The chest ease option on Onyx](chestease.svg)
-
 Controls how wide the garment will be at your chest.
 
 How much room do you want at the chest? Whatever value you provide here will simply be added to your chest circumference measurement when drafting the garment.

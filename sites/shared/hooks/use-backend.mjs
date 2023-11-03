@@ -591,10 +591,10 @@ Backend.prototype.adminPing = async function (token) {
 }
 
 /*
- * Migrate a v2 account
+ * backend.img: Generate a social media image
  */
-Backend.prototype.migrate = async function (data) {
-  return responseHandler(await api.post(`/migrate`, data))
+Backend.prototype.img = async function (data) {
+  return responseHandler(await api.post('/img', data, { responseType: 'arraybuffer' }))
 }
 
 export function useBackend() {

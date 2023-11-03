@@ -30,7 +30,7 @@ export const DocsView = ({ design }) => {
       <Popout tip compact>
         <PageLink txt={t('workbench:learnHowToUseEditor')} href="/docs/about/site/draft" />
       </Popout>
-      <h2>{t(`designs:${design}.t`)}</h2>
+      <h1>{t(`designs:${design}.t`)}</h1>
       <DesignInfo design={design} workbench />
     </div>
   )

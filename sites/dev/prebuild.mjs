@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import { prebuildRunner } from '../shared/prebuild/runner.mjs'
 
 /*
@@ -74,13 +75,19 @@ prebuildRunner({
      * Only prebuild the Open Graph (og) images in production
      * Will be skipped in development mode to save time
      */
-    ogImages: 'productionOnly',
+    ogImages: true, //'productionOnly',
 
     /*
      * Only prebuild the patron info in production
      * Will be mocked in development mode to save time
      */
     patrons: 'productionOnly',
+
+    /*
+     * Only index site content to the search backend (Algolia) in production
+     * Will be skipped in development mode to save time
+     */
+    search: 'productionOnly',
 
     // NEVER PREBUILD //////////////////////////////////////////////////////////
 

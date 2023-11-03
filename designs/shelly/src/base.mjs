@@ -16,18 +16,17 @@ function draftBase({
   Snippet,
   scale,
 }) {
-  let hipsEase = options.hipsEase
-  if (options.straightSides) hipsEase = options.chestEase
+  const sleeveDiameter =
+    (measurements.biceps * options.armholeTweakFactor * (1 + options.sleeveEase)) / Math.PI
+  const hipsEase = options.straightSides ? options.chestEase : options.hipsEase
 
-  const armpitYPosition = measurements.hpsToWaistBack - measurements.waistToArmpit
-  let chest = measurements.chest * (1 + options.chestEase)
-  if (options.straightSides) {
-    chest = Math.max(
-      measurements.chest * (1 + options.chestEase),
-      measurements.hips * (1 + hipsEase)
-    )
-  }
-  chest -= 4 * (options.raglanScoopMagnitude * armpitYPosition)
+  const armpitYPosition =
+    measurements.hpsToWaistBack - measurements.waistToArmpit + sleeveDiameter * options.armpitEase
+  const chest =
+    (options.straightSides
+      ? Math.max(measurements.chest * (1 + options.chestEase), measurements.hips * (1 + hipsEase))
+      : measurements.chest * (1 + options.chestEase)) -
+    4 * (options.raglanScoopMagnitude * armpitYPosition)
   const bodyLength = options.bodyLength * (measurements.hpsToWaistBack + measurements.waistToHips)
   const neckRadius = (measurements.neck * (1 + options.neckEase)) / (2 * Math.PI)
   const hips = measurements.hips * (1 + hipsEase)
@@ -198,6 +197,8 @@ export const base = {
     // If set to true, makes a tubular body based on the chest, ignoring the hips measurements and options.
     straightSides: { bool: true, menu: 'advanced' },
     hipsEase: { pct: 0, min: -30, max: 75, menu: 'advanced' },
+    // Shifts the sleeve down the body to give more room to the armpit, as a percentage of the sleeve diameter.
+    armpitEase: { pct: 15, min: -20, max: 50, menu: 'fit' },
     bodyLength: { pct: 120, min: 20, max: 300, menu: 'style' },
     // How far the neck hole is shifted towards the front. +100% means it's entirely on the front, -100% means it's entirely on the back, and 0 means the front and back are the same.
     neckBalance: { pct: 40, min: 0, max: 80, menu: 'fit' },
