@@ -1,12 +1,12 @@
 ---
-title: What to do after saving a new pattern?
+title: Що робити після збереження нового шаблону?
 ---
 
-When you create a new pattern in FreeSewing's pattern editor, you have the option to save the pattern to your account.
+Коли ви створюєте нову викрійку в редакторі викрійок FreeSewing, у вас є можливість зберегти викрійку до свого облікового запису.
 
-After you save the pattern to your account, there are several options for what you might want to do next:
+Після того, як ви збережете шаблон у своєму акаунті, є кілька варіантів того, що ви можете зробити далі:
 
-- Continue editing the saved patter
-- Display the pattern information page
+- Продовжуйте редагувати збережений патерн
+- Відобразити сторінку з інформацією про шаблон
 
-Because we cannot read your mind, you can choose what you would like to happen when you save a new pattern to your account.
+Оскільки ми не можемо читати ваші думки, ви можете вибрати, що саме ви хочете, щоб відбувалося, коли ви зберігаєте новий шаблон у своєму акаунті.
