@@ -1,6 +1,6 @@
 ---
-title: "Neck position"
+title: "Position am Hals"
 ---
 
-Controls where the neck hole is placed on the shirt. A value of 0% has the center of the neck hole exactly where the four raglan seams would intersect, with the front and back parts being identical. A positive value shifts the neck towards the front of the shirt.
+Steuert, wo das Halsloch auf dem Hemd platziert wird. Bei einem Wert von 0 % liegt die Mitte des Halslochs genau dort, wo sich die vier Raglannähte schneiden würden, wobei die Vorder- und Rückenteile identisch sind. Ein positiver Wert verschiebt den Hals zur Vorderseite des Shirts.
 
