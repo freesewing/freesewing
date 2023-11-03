@@ -2,13 +2,13 @@
 title: "Легкість у грудях"
 ---
 
-Controls how wide the garment will be at your chest.
+Контролює, наскільки широким буде виріб у грудях.
 
 Обрану кількість буде додано до заданого об'єму грудей при креслені викрійки.
 
-> ##### This option allows negative values
+> ##### Ця опція дозволяє від'ємні значення
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Якщо ви використовуєте еластичний матеріал, який потрібно щільно прилягати, слід використовувати від'ємну легкість. Костюми та комбінезони зазвичай мають від'ємну розтяжність, в той час як інший одяг має додатну розтяжність.
 
 
 
