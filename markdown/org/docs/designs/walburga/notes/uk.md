@@ -1,6 +1,6 @@
 ---
-title: "Walburga Wappenrock: Designer Notes"
+title: "Вальбурга Ваппенрок: Дизайнерські нотатки"
 ---
 
-<Fixme>Rika designed this. They have not written any notes (yet)</Fixme>
+<Fixme>Ріка спроектувала це. Вони не писали жодних нотаток (поки що)</Fixme>
 
