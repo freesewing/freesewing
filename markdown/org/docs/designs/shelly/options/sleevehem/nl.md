@@ -1,6 +1,6 @@
 ---
-title: "Sleeve hem"
+title: "Mouwzoom"
 ---
 
-Sets the hem allowance of the hem along the end of the sleeves, as a multiple of the seam allowance.
+Bepaalt de zoomtoeslag van de zoom langs het uiteinde van de mouwen, als een veelvoud van de naadtoeslag.
 
