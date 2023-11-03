@@ -1,6 +1,6 @@
 ---
-title: "Gusset position"
+title: "Zwickelposition"
 ---
 
-This option allows you to shift the gusset forward or backward.
+Mit dieser Option kannst du den Zwickel nach vorne oder hinten verschieben.
 
