@@ -1,6 +1,6 @@
 ---
-title: "Neckband length"
+title: "Longitud de la cinta del cuello"
 ---
 
-Controls how long the neckband is, as a percentage of the circumference of the neckline. Recommended values for this option vary based on the material used for the neckband and the width of the neckband. Stretchier materials and wider neckbands should use a smaller value for this option.
+Controla la longitud de la cinta del cuello, como porcentaje de la circunferencia del escote. Los valores recomendados para esta opción varían en función del material utilizado para la cinta del cuello y de la anchura de ésta. Los materiales más elásticos y los cuellos más anchos deben utilizar un valor menor para esta opción.
 
