@@ -1,5 +1,5 @@
 ---
-title: "Otis, the simple baby romper: Required Measurements"
+title: "Otis, la grenouillère simple pour bébé : Mesures requises"
 ---
 
 <DesignMeasurements design='otis' />

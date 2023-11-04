@@ -1,13 +1,13 @@
 ---
-title: GitHub identity
+title: Identidad en GitHub
 ---
 
-If you add your **GitHub username** and **GitHub email address** to your account, we will use them when interacting with GitHub on your behalf.
+Si añades tu nombre de usuario de GitHub **** y tu dirección de correo electrónico de GitHub **** a tu cuenta, los utilizaremos cuando interactuemos con GitHub en tu nombre.
 
-Note that both your GitHub username and email is public info. This merely allows us to make a link between your FreeSewing account and GitHub account.
+Ten en cuenta que tanto tu nombre de usuario de GitHub como tu correo electrónico son información pública. Esto simplemente nos permite establecer un vínculo entre tu cuenta de FreeSewing y tu cuenta de GitHub.
 
-For example, when you report a problem on this website, we can mention you so you will receive notifications when there is an update. For this, your username is sufficient.
+Por ejemplo, cuando informas de un problema en este sitio web, podemos mencionarte para que recibas notificaciones cuando haya una actualización. Para ello, basta con tu nombre de usuario.
 
-When you submit a showcase post or make changed to our content, we can credit those commits to you if we have both your username and the email address you use on GitHub.
+Cuando envías una publicación de escaparate o realizas cambios en nuestro contenido, podemos acreditarte esos commits si disponemos tanto de tu nombre de usuario como de la dirección de correo electrónico que utilizas en GitHub.
 
-<Note compact>If all of this in confusing, you don't have to provide this info. It's an advanced feature.</Note>
+<Note compact>Si todo esto te resulta confuso, no es necesario que facilites esta información. Es una función avanzada.</Note>

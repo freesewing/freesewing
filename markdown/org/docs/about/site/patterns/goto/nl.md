@@ -1,12 +1,12 @@
 ---
-title: What to do after saving a new pattern?
+title: Wat moet ik doen nadat ik een nieuw patroon heb opgeslagen?
 ---
 
-When you create a new pattern in FreeSewing's pattern editor, you have the option to save the pattern to your account.
+Als je een nieuw patroon maakt in de patroon editor van FreeSewing, heb je de optie om het patroon op te slaan in je account.
 
-After you save the pattern to your account, there are several options for what you might want to do next:
+Nadat je het patroon hebt opgeslagen in je account, zijn er verschillende opties voor wat je daarna wilt doen:
 
-- Continue editing the saved patter
-- Display the pattern information page
+- Het opgeslagen patroon verder bewerken
+- Geef de patrooninformatiepagina weer
 
-Because we cannot read your mind, you can choose what you would like to happen when you save a new pattern to your account.
+Omdat we je gedachten niet kunnen lezen, kun je zelf kiezen wat er moet gebeuren als je een nieuw patroon opslaat in je account.

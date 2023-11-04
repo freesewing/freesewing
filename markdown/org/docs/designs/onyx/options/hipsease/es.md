@@ -2,13 +2,13 @@
 title: "Holgura de cadera"
 ---
 
-Controls how wide the garment will be at your hips.
+Controla lo ancha que será la prenda en tus caderas.
 
 Cualquiera que sea el valor que usted proporcione aquí se añadirá simplemente a su medición de circunstancia de cadera al redactar la prenda.
 
 > ##### Esta opción también permite valores negativos.
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Debes utilizar la holgura negativa si utilizas un material elástico que quieres que quede bien ajustado. Los monos y los unitardos suelen tener holgura negativa, mientras que otras prendas suelen tener holgura positiva.
 
 
 

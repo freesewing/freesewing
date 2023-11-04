@@ -1,8 +1,8 @@
 ---
-title: Title
+title: Назва
 ---
 
-Every bookmark has a **title** attribute that is mandatory.
+Кожна закладка має обов'язковий атрибут **title** .
 
-In other words, you must give each of your bookmarks a title, but that title can be anything you want.
+Іншими словами, ви повинні дати кожній закладці назву, але ця назва може бути будь-якою.
 

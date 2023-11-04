@@ -1,9 +1,9 @@
 ---
-title: "Gozer the ghost: What You Need"
+title: "Gozer de geest: wat je nodig hebt"
 ---
 
-To make Gozer, you will need the following:
+Om Gozer te maken heb je het volgende nodig:
 
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-- About 1 bed sheet
+- Ongeveer 1 laken
 

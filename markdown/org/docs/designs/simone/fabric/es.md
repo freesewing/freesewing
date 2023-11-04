@@ -6,6 +6,6 @@ title: "Camisa Simone: Opciones de tejido"
 
 Por favor, consulte [la documentación de Simon](/docs/patterns/simon/).
 
-Please refer to [the Simon documentation](/docs/designs/simon/).
+Consulta [la documentación de Simon](/docs/designs/simon/).
 
 </Note>

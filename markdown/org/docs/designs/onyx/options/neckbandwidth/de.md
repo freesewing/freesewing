@@ -1,7 +1,7 @@
 ---
-title: "Neckband width"
+title: "Nackenband Breite"
 ---
 
-Controls how wide to make the finished neckband. For swimwear, 4cm / 1.5in (the default) is a common value. If using rib knit, 5-7.5cm (2-3in) is generally used.
+Legt fest, wie breit das fertige Nackenband sein soll. Für Bademode sind 4 cm (der Standardwert) ein üblicher Wert. Wenn du Rippenstrick verwendest, werden in der Regel 5-7,5 cm (2-3 Zoll) verwendet.
 
-Note: This option is only available if the 'neck style' option is set to 'neckband.'
+Hinweis: Diese Option ist nur verfügbar, wenn die Option "Nackenstil" auf "Nackenband" eingestellt ist.

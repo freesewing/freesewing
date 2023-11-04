@@ -1,6 +1,6 @@
 ---
-title: "Gozer the ghost: Cutting Instructions"
+title: "Gozer der Geist: Schneideanleitung"
 ---
 
-- **Color 1; Traditionally white**
+- **Farbe 1; Traditionell weiß**
   - Schnitt **1 Körper**

@@ -2,15 +2,15 @@
 title: Name
 ---
 
-Every API key has a **name** attribute that is mandatory.
+Jeder API-Schlüssel hat ein **name** Attribut, das obligatorisch ist.
 
-In other words, you must give each of your API keys a name, but that name can be anything you want.
+Mit anderen Worten: Du musst jedem deiner API-Schlüssel einen Namen geben, aber dieser Name kann alles sein, was du willst.
 
-Typically, people give names that describe where the key is used, like:
+Normalerweise geben die Leute Namen, die beschreiben, wo der Schlüssel verwendet wird, wie zum Beispiel:
 
-- Production backend
-- GitLab runner
-- Local development on my laptop
+- Produktion Backend
+- GitLab-Läufer
+- Lokale Entwicklung auf meinem Laptop
 
-But you do you.
+Aber du tust es.
 

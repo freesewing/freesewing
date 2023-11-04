@@ -1,5 +1,5 @@
 ---
-title: "Raglan scoop length"
+title: "Raglan-Schaufellänge"
 ---
 
-Controls how far out from the armhole the raglan seam starts to scoop.
+Legt fest, wie weit die Raglannaht vom Armloch entfernt beginnt.

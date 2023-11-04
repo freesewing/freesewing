@@ -1,5 +1,5 @@
 ---
-title: "Raglan scoop depth"
+title: "Raglan schepdiepte"
 ---
 
-Controls how much extra material to place under the armpits.
+Bepaalt hoeveel extra materiaal er onder de oksels moet komen.

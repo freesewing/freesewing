@@ -62,6 +62,6 @@ title: "Пальто карлтон: Інструкція з пошиття"
 
 <Fixme>
 
-Документацію для цього патерну ще потрібно написати. In the meantime their are some preliminary instructions for ([Carlita, Carlton's Counterpart](/docs/designs/carlita/instructions/)) that should help.
+Документацію для цього патерну ще потрібно написати. Тим часом, ось деякі попередні інструкції для ([Карліта, аналог Карлтона] (/docs/designs/carlita/instructions/)), які повинні допомогти.
 
 </Fixme>

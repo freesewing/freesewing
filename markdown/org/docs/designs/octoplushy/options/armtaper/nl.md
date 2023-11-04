@@ -1,5 +1,5 @@
 ---
-title: "Arm Taper"
+title: "Arm Conus"
 ---
 
-This setting changes how much the arms taper from the body down to the end.
+Deze instelling verandert de mate waarin de armen taps toelopen van het lichaam naar het uiteinde.

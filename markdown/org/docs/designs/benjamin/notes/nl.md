@@ -1,6 +1,6 @@
 ---
-title: "Benjamin bow tie: Designer Notes"
+title: "Benjamin vlinderdas: Designer Notities"
 ---
 
-<Fixme>Wouter designed this. They have not written any notes (yet)</Fixme>
+<Fixme>Wouter heeft dit ontworpen. Ze hebben (nog) geen aantekeningen geschreven</Fixme>
 

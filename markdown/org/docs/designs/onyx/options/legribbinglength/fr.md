@@ -1,7 +1,7 @@
 ---
-title: "Leg ribbing length"
+title: "Longueur des côtes de la jambe"
 ---
 
-Controls how long the ribbing around the leg is, as a percentage of the leg circumference. Setting this to a smaller value will make the cuff tighter and hold onto the ankle better, while a larger value will give more room.
+Contrôle la longueur des côtes autour de la jambe, en pourcentage de la circonférence de la jambe. Si tu choisis une valeur plus petite, la manchette sera plus serrée et tiendra mieux à la cheville, tandis qu'une valeur plus grande laissera plus d'espace.
 
-Note: This option is only available if the 'leg ribbing' option is set to 'ribbing.'
+Remarque : cette option n'est disponible que si l'option 'côtes de jambe' est réglée sur 'côtes'.

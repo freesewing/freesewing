@@ -1,9 +1,9 @@
 ---
-title: "Huey hoodie: Designer Notes"
+title: "Худі Huey: Нотатки дизайнера"
 ---
 
-I had a hoodie I liked, but after years of wear it sort of disintegrated. So I reincarnated it in this design and now its spirit can live on forever.
+У мене була худі, яка мені подобалася, але після багатьох років носіння вона трохи розпалася. Тож я реінкарнував його в цьому дизайні, і тепер його дух може жити вічно.
 
-The name choice is a tip of the hat to [Huey P. Newton](https://en.wikipedia.org/wiki/Huey_P._Newton).
+Вибір назви - це привітання для [Г'юї П. Ньютона](https://en.wikipedia.org/wiki/Huey_P._Newton).
 
 Йост

@@ -1,8 +1,8 @@
 ---
-title: "Shelly shirt: Cutting Instructions"
+title: "Camiseta Shelly: Instrucciones de corte"
 ---
 
-- Cut **1 front** part on the fold
+- Corta **1 parte delantera** en el pliegue
 - Corta **1 parte trasera** en el pliegue
-- Cut **2 sleeve** parts
-- Cut **1 neckband** part on the fold
+- Corta **2 manguitos** piezas
+- Corta **1 cinta para el cuello** parte en el pliegue

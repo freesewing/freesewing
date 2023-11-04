@@ -1,5 +1,5 @@
 ---
-title: "Diana draped top: Designer Notes"
+title: "Haut drapé Diana : Notes du créateur"
 ---
 
 This project started because one day I wanted to sew a sleeveless draped top with some leftover fabric I had after making another dress. I used a basic body block from Freesewing, and manually modified the pattern to create a draped neckline. Since I was pretty happy with the result, and the modifications were simple, I decided to create a Freesewing pattern for it, so it could be available for other people.

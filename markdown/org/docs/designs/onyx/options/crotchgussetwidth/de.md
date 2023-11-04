@@ -1,9 +1,9 @@
 ---
-title: "Crotch gusset width"
+title: "Zwickelweite im Schritt"
 ---
 
-Adjusts how wide the crotch gusset will be. The crotch gusset is a rectangular strip of fabric running up one leg, across the crotch fork, and down the other leg. It adds room in the crotch, creates a stronger outfit by avoiding the 4-way seam normally found at the crotch fork, and greatly reduces the need for scoops around the crotch fork.
+Stellt ein, wie breit der Schrittzwickel sein soll. Der Schrittzwickel ist ein rechteckiger Stoffstreifen, der an einem Bein hoch, über die Schrittgabel und am anderen Bein runter läuft. Sie bietet mehr Platz im Schritt, sorgt für ein stärkeres Outfit, indem sie die 4-Wege-Naht vermeidet, die normalerweise an der Schrittgabel zu finden ist, und reduziert den Bedarf an Scoops um die Schrittgabel herum erheblich.
 
-Bodies that are wider than they are deep do not need as wide a gusset, while those with very deep thighs may need a wider gusset.
+Körper, die breiter sind als sie tief sind, brauchen keinen so breiten Zwickel, während Menschen mit sehr tiefen Oberschenkeln einen breiteren Zwickel brauchen.
 
-The width of the crotch gusset will affect how the garment is shaped around the hips, crotch, and upper legs. You may have to adjust the upper leg east, seat ease, and leg taper position along with this option to get a proper fit.
+Die Breite des Schrittzwickels hat Einfluss darauf, wie das Kleidungsstück an den Hüften, im Schritt und an den Oberschenkeln geformt ist. Möglicherweise musst du bei dieser Option die Oberschenkelöffnung, den Sitz und die Beinverjüngung anpassen, um eine gute Passform zu erhalten.

@@ -2,20 +2,20 @@
 title: Patrones
 ---
 
-(sewing) Patterns is why most people end up on FreeSewing.org, so they are an important part of the website.
+(costura) Los patrones son la razón por la que la mayoría de la gente acaba en FreeSewing.org, así que son una parte importante del sitio web.
 
-FreeSewing does not store the pattern itself, instead we store your settings you used to draft the design, this includes:
+FreeSewing no almacena el patrón en sí, en su lugar almacenamos la configuración que utilizaste para redactar el diseño, esto incluye:
 
-- Any design options you tweaked
-- Any core settings you changes
-- The measurements used
+- Cualquier opción de diseño que hayas ajustado
+- Cualquier configuración del núcleo que cambies
+- Las medidas utilizadas
 
-With this, we can regenerate the pattern. So this is all we store.
+Con esto, podemos regenerar el patrón. Así que esto es todo lo que almacenamos.
 
-This also means that if a pattern goes through significant changes, or a new major version with breaking changes is released, we may no longer be able to generate the (old) pattern. For this reason, you should download the pattern as PDF or SVG and save it locally if you want to archive it.
+Esto también significa que si un patrón sufre cambios significativos, o se publica una nueva versión principal con cambios de última hora, es posible que ya no podamos generar el patrón (antiguo). Por esta razón, debes descargar el patrón como PDF o SVG y guardarlo localmente si quieres archivarlo.
 
-<Tldr compact> Backup your patterns if you intent to keep them for a long time</Tldr>
+<Tldr compact> Haz una copia de seguridad de tus patrones si pretendes conservarlos durante mucho tiempo</Tldr>
 
-In addition to the settings required to recreate the pattern, patterns are stored with the following fields:
+Además de los ajustes necesarios para recrear el patrón, los patrones se almacenan con los siguientes campos:
 
 <ReadMore />

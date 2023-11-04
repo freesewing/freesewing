@@ -1,5 +1,5 @@
 ---
-title: "Leg hem ease"
+title: "Aisance au niveau de l'ourlet de la jambe"
 ---
 
-Controls how wide the bottom of the legs of the garment will be. The base value is interpolated between the circumference of the upper legs and the ankles, based on how long the legs on the garment are, and this option is then applied to this.
+Contrôle la largeur du bas des jambes du vêtement. La valeur de base est interpolée entre la circonférence du haut des jambes et celle des chevilles, en fonction de la longueur des jambes du vêtement, et cette option y est ensuite appliquée.

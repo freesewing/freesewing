@@ -1,5 +1,5 @@
 ---
-title: FreeSewing Community Standards
+title: FreeSewing Richtlijnen voor de gemeenschap
 ---
 
 Bedankt om deel uit te maken van de freesewing gemeenschap. Wanneer je met ons of met anderen hier omgaat, onthou dan alstublieft de volgende eenvoudige regels:

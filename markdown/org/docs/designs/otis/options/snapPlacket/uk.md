@@ -1,7 +1,7 @@
 ---
-title: "Snap Placket"
+title: "Затискна планка"
 ---
 
-This option controls the depth of the placket that holds the snaps.
+Цей параметр регулює глибину планки, яка утримує застібки.
 
-It is roughly a percentage of the waist measurement. Default is 5%
+Це приблизно відсоток від обхвату талії. За замовчуванням - 5

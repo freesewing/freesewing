@@ -1,7 +1,7 @@
 ---
-title: "Skirt width"
+title: "Anchura de la falda"
 ---
 
-Controls the width of the skirt at the bottom, as a percentage of the waist measurement.
+Controla la anchura de la falda en la parte inferior, como porcentaje de la medida de la cintura.
 
-The top of the skirt is cut to the same width, and gathered around the waist. As such, a large value for this option will make a more heavily gathered skirt that is wide at the bottom.
+La parte superior de la falda se corta con la misma anchura y se recoge alrededor de la cintura. Por tanto, un valor grande de esta opción hará que la falda sea más fruncida y ancha en la parte inferior.

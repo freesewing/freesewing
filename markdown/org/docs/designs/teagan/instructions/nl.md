@@ -85,7 +85,7 @@ Hoera! Je bent klaar met het lastigste deel! Eventueel kun je de knipranden vast
 
 <Tip>
 
-A more extensive how-to on knit binding can be found in the [Aaron Instuctions](/docs/designs/aaron/instructions).
+Een uitgebreidere how-to voor gebreid binden kun je vinden in de [Aaron Instuctions](/docs/designs/aaron/instructions).
 
 </Tip>
 

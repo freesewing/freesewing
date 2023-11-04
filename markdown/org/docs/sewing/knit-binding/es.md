@@ -111,28 +111,28 @@ De esta manera, no hay que adivinar cuánto tiempo debe ser su vinculación, y l
 
 > Para instrucciones detalladas, consulte [la documentación de Aaron](/docs/designs/aaron/instructions)
 
-## Alternate method
+## Método alternativo
 
-While the above instructions describe one way to attach a knit band or knit binding, it is not the only method that can be used. An alternate method is to cut the exact amount of binding needed, sew it into a ring, and then attach the ring to the garment opening.
+Aunque las instrucciones anteriores describen una forma de fijar una banda de punto o una ligadura de punto, no es el único método que puede utilizarse. Un método alternativo consiste en cortar la cantidad exacta de ribete que necesites, coserlo en una anilla y luego fijar la anilla a la abertura de la prenda.
 
-Some people feel that this is an easier method for novice sewists. They are told exactly how much binding to use, and they do not have to guess how much they should be stretching the binding as they sew.
+Algunas personas opinan que éste es un método más fácil para las costureras principiantes. Se les indica exactamente la cantidad de encuadernación que deben utilizar, y no tienen que adivinar cuánto deben estirar la encuadernación mientras cosen.
 
-1. Measure the garment opening that the binding will cover. Be sure to measure at the seamline, to account for seam allowance.
+1. Mide la abertura de la prenda que cubrirá la encuadernación. Asegúrate de medir en la línea de costura, para tener en cuenta el margen de costura.
 
-2. Check the pattern instructions for the length of binding to use. Or, use a length 80-90% smaller than the opening based on the stretchiness of the binding fabric. (For example, 80% for very stretchy fabric, 90% for less stretchy fabric.)
+2. Comprueba en las instrucciones del patrón la longitud de la cinta que debes utilizar. O bien, utiliza una longitud un 80-90% menor que la abertura en función de la elasticidad de la tela de encuadernación. (Por ejemplo, 80% para tejido muy elástico, 90% para tejido menos elástico).
 
-3. Cut the length of binding required plus seam allowance at each end.
+3. Corta la longitud de ribete necesaria más el margen de costura en cada extremo.
 
-4. Sew the binding ends right sides together to form a closed loop or ring. Trim excess seam allowance.
+4. Cose los extremos de la cinta por el derecho para formar un lazo o anillo cerrado. Recorta el exceso de margen de costura.
 
-5. Fold the ring together at the seam to divide the ring into equal halves. Mark or insert pins at each end fold. One pin will be in the seam, and the other will mark the halfway point around the ring.
+5. Dobla el anillo por la costura para dividirlo en mitades iguales. Marca o inserta alfileres en cada pliegue de los extremos. Un alfiler estará en la costura, y el otro marcará el punto medio alrededor del anillo.
 
-6. Unfold the ring and fold it again into equal halves so the two marks/pins meet together in the middle. Again mark or insert pins into each end fold. Now there are 4 pins or marks dividing the ring into 4 quarters of equal length.
+6. Despliega el anillo y dóblalo de nuevo en mitades iguales, de modo que las dos marcas/alfileres se junten en el centro. Marca de nuevo o inserta alfileres en cada pliegue de los extremos. Ahora hay 4 clavijas o marcas que dividen el anillo en 4 cuartos de igual longitud.
 
-7. Similarly, fold the garment opening and mark or insert pins to divide the garment opening into 4 quarters of equal length.
+7. Del mismo modo, dobla la abertura de la prenda y marca o inserta alfileres para dividir la abertura de la prenda en 4 cuartos de igual longitud.
 
-8. Match the marks or pins on the binding with the ones on the garment opening. (Try to align it so the seam is at the most inconspicuous location in the garment opening. For example, if binding a neck opening align the binding so the seam is at the back of the neck opening.)
+8. Haz coincidir las marcas o alfileres de la encuadernación con los de la abertura de la prenda. (Intenta alinearlo de modo que la costura quede en el lugar más discreto de la abertura de la prenda. Por ejemplo, si vas a encuadernar una abertura del cuello, alinea la encuadernación de modo que la costura quede en la parte posterior de la abertura del cuello).
 
-9. Pin the binding ring to the garment opening at each quarter mark/pin. This ensures that the binding is evenly distributed around the garment opening.
+9. Sujeta con alfileres el anillo de encuadernación a la abertura de la prenda en cada marca de cuarto/alfiler. Esto garantiza que el ribete se distribuya uniformemente alrededor de la prenda abertura.
 
-10. Sew the binding to the opening, one quarter at a time. While sewing, evenly stretch each quarter segment of binding to match the length of the quarter segment of garment opening.
+10. Cose el ribete a la abertura, de cuarto en cuarto. Mientras coses, estira uniformemente cada cuarto de segmento de ribete para que coincida con la longitud del cuarto de segmento de abertura de la prenda.

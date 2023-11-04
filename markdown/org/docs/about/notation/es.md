@@ -4,19 +4,19 @@ title: Guía de notación de patrón
 
 Hopefully our patterns are easy enough to understand, but if you come across something that confuses you, below is a reference of all our pattern notation:
 
-- [Lines](#lines)
+- [Líneas](#lines)
   - [Costuras](#seams)
   - [Margen de costura](#seam-allowance)
   - [Linea de grano](#grainline)
-  - [Cut-on-fold indicator](#cut-on-fold-indicator)
+  - [Indicador de corte al plegar](#cut-on-fold-indicator)
   - [Dimensiones](#dimensions)
   - [Otras líneas](#other-lines)
   - [Anchura de línea y trazos](#line-widths-and-strokes)
-- [Annotations](#annotations)
+- [Anotaciones](#annotations)
   - [Notas](#notches)
-  - [Buttons and Buttonholes](#buttons-and-buttonholes)
+  - [Botones y ojales](#buttons-and-buttonholes)
   - [Bartacks](#bartacks)
-  - [Snaps](#snaps)
+  - [Broches](#snaps)
   - [Titulos](#titles)
   - [Logo](#logo)
   - [Caja de escala](#scale-box)
@@ -31,7 +31,7 @@ y cómo se ve como PDF o SVG descargado.
 
 </Tip>
 
-## Lines
+## Líneas
 
 Lines (and curves) make up the bulk of marking you'll find on any sewing pattern, including FreeSewing's patterns.
 
@@ -65,9 +65,9 @@ Un indicador de la línea de grano
 
 </Legend>
 
-### Cut-on-fold indicator
+### Indicador de corte al plegar
 
-Cut-on-fold indicators look similar to grainline indicators, but point towards the line on which the fabric should be folded:
+Los indicadores de corte sobre plegado tienen un aspecto similar a los indicadores de línea de grano, pero apuntan hacia la línea sobre la que debe plegarse la tela:
 
 <Legend part="cutonfold">
 
@@ -122,7 +122,7 @@ Los diferentes trazos de línea
 
 </Legend>
 
-## Annotations
+## Anotaciones
 
 Annotations are extra embellishments on the pattern that further clarify the designer's intent, help with construction, or otherwise provide value to the pattern.
 
@@ -150,7 +150,7 @@ Cuando una flecha vuela lejos de usted, usted ve sus fletes (mañana).
 
 </Tip>
 
-### Buttons and Buttonholes
+### Botones y ojales
 
 Buttons and buttonholes may come in different sizes, but always have the same shape that represents how they look in real life:
 
@@ -169,7 +169,7 @@ Un remate es una puntada de tamaño y longitud variables que se utiliza para ref
 Así se muestra un bartack en un patrón. 
 </Legend>
 
-### Snaps
+### Broches
 
 Las tomas tienen una parte del socket __ y _del stud_ y también se ven como lo real:
 

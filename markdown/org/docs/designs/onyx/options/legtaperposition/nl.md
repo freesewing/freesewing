@@ -1,9 +1,9 @@
 ---
-title: "Leg taper position"
+title: "Positie been taps toelopend"
 ---
 
-Controls how the lower legs are laid out on the pattern.
+Bepaalt hoe de onderbenen op het patroon worden gelegd.
 
-Whether the legs taper inwards or outwards or down the middle will slightly affect the fit of the garment, and will affect the shape around the crotch fork and the upper legs. It's recommended to use a value for this option that produces the smoothest looking front and back pattern pieces.
+Of de pijpen naar binnen, naar buiten of in het midden taps toelopen, heeft een kleine invloed op de pasvorm van het kledingstuk en beïnvloedt de vorm rond de kruisvork en de bovenbenen. Het is aan te raden om voor deze optie een waarde te gebruiken die de voorste en achterste patroondelen er het gladst uit laat zien.
 
-Note: Setting this to 100% will generally produce pattern pieces that can be fit more efficiently onto the fabric.
+Opmerking: Als je dit op 100% zet, krijg je over het algemeen patroondelen die efficiënter op de stof passen.

@@ -10,6 +10,6 @@ title: "Сорочка \"Симона\": Інструкція з пошиття"
 
 <Note>
 
-Simone is just our [Simon pattern](/designs/simon/) adapted for breasts so you can now just follow [Simon's instructions](/docs/designs/simon/instructions) to finish your Simone :)
+Simone - це просто наша [викрійка Саймона](/designs/simon/), адаптована для грудей, тож тепер ви можете просто слідувати [інструкціям Саймона](/docs/designs/simon/instructions), щоб закінчити свою Simone :)
 
 </Note>

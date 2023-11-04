@@ -1,6 +1,6 @@
 ---
-title: "Vertical fabric stretch"
+title: "Verticale stofstretch"
 ---
 
-Adjust this option for more or less stretchy fabrics, specifically for vertical stretch.
+Pas deze optie aan voor meer of minder rekbare stoffen, specifiek voor verticale stretch.
 

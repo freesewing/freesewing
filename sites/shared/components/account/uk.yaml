@@ -12,7 +12,7 @@ actions: Дії
 created: Створено
 updated: Оновлено
 expires: Закінчується
-role: Role
+role: Роль
 yourProfile: Ваш профіль
 yourPatterns: Ваші візерунки
 yourSets: Ваші набори вимірювань
@@ -39,10 +39,10 @@ mfaEnabled: Увімкнено двофакторну автентифікаці
 mfaDisabled: Двофакторну автентифікацію вимкнено
 mfaSetup: Налаштування двофакторної автентифікації
 mfaAdd: Додайте FreeSewing до свого додатку Authenticator, відсканувавши QR-код вище.
-mfaScratchCodes: MFA Scratch Codes
-mfaScratchCodesMsg1: You can use any of these scratch codes as a one-time MFA code when you do not have access to your code-generating app (for example, when you've lost your phone).
-mfaScratchCodesMsg2: You can use each of these codes only once. Write them down, because this is the only time you will get to see them.
-copyToClipboard: Copy to clipboard
+mfaScratchCodes: Скретч-коди МЗС
+mfaScratchCodesMsg1: Ви можете використовувати будь-який з цих скретч-кодів як одноразовий код MFA, коли у вас немає доступу до програми для генерації кодів (наприклад, коли ви загубили телефон).
+mfaScratchCodesMsg2: Ви можете використати кожен з цих кодів лише один раз. Запишіть їх, бо це єдиний раз, коли ви їх побачите.
+copyToClipboard: Скопіювати в буфер обміну
 confirmWithPassword: Будь ласка, введіть пароль для підтвердження цієї дії
 confirmWithMfa: Будь ласка, введіть код з вашого додатку Authenticator, щоб підтвердити цю дію
 enableMfa: Увімкнути двофакторну автентифікацію
@@ -50,21 +50,21 @@ disableMfa: Вимкнути двофакторну автентифікацію
 language: Мова
 developer: Розробник
 design: Дизайн
-patternMetadata: Pattern metadata
-clonePattern: Clone pattern
-updatePattern: Update pattern
+patternMetadata: Метадані шаблону
+clonePattern: Шаблон клонування
+updatePattern: Шаблон оновлення
 reload: Перезавантажити обліковий запис
 export: Експортуйте Ваші дані
-exportMsg: Click below to export your personal data
-exportNote: The EU's General Data Protection Regulation (GDPR) ensures your so-called right to data portability — the right to obtain and reuse your personal data for your own purposes, or across different services.
-exportDownload: "Your data was exported and is available for download at the following location:"
+exportMsg: Натисніть нижче, щоб експортувати ваші персональні дані
+exportNote: Загальний регламент ЄС про захист даних (GDPR) гарантує вам так зване право на перенесення даних - право на отримання та повторне використання ваших персональних даних для власних цілей або в різних сервісах.
+exportDownload: "Ваші дані були експортовані і доступні для завантаження за наступним посиланням:"
 review: Переглянути вашу згоду
 restrict: Обмежити обробку ваших даних
 disable: Вимкніть свій обліковий запис
 remove: Видалення облікового запису
 proceedWithCaution: Продовжуйте з обережністю
-restrictWarning: While no data will be removed, this will disable your account. Furthermore, you can not undo this on your own, but will have to contact support when you want to restore access to your account.
-noWayBack: There is no way back from this.
+restrictWarning: Хоча жодні дані не будуть видалені, це призведе до відключення вашого акаунта. Крім того, ви не зможете скасувати це самостійно, і вам доведеться звернутися до служби підтримки, коли ви захочете відновити доступ до свого облікового запису.
+noWayBack: Шляху назад немає.
 mdSupport: Скористатися знижкою можна тут
 or: або
 continue: Продовжити
@@ -108,7 +108,7 @@ controlTitle: Якому користувацькому досвіду ви на
 #img
 imgTitle: Як щодо фотографії?
 imgDragAndDropImageHere: Перетягніть зображення сюди
-imgPasteUrlHere: Paste an image location (url) here
+imgPasteUrlHere: Вставте місце розташування зображення (url) сюди
 imgSelectImage: Виберіть зображення
 #newsletter
 newsletterTitle: Хочете переглянути розсилку новин FreeSewing?
@@ -123,7 +123,7 @@ imperialUnitsd: Виберіть цей параметр, якщо ви відд
 unitsTitle: Яким одиницям ви віддаєте перевагу?
 #username
 usernameTitle: Яке ім'я користувача ви б хотіли?
-usernameAvailable: Username is available
+usernameAvailable: Ім'я користувача доступне
 usernameNotAvailable: Ім'я користувача недоступне
 #email
 emailTitle: Де ми можемо зв'язатися з вами, якщо у нас буде на це поважна причина (наприклад, якщо ви забули свій пароль)?
@@ -132,12 +132,12 @@ oneMomentPlease: Будь ласка, зачекайте
 emailChangeConfirmation: Ми надіслали електронного листа на вашу нову адресу, щоб підтвердити цю зміну.
 vagueError: Щось пішло не так, і ми не знаємо, як це виправити. Будь ласка, спробуйте ще раз або залучіть людину для допомоги.
 #github
-githubTitle: Link your GitHub identity
-githubWhy1: Enter your GitHub username and email here and we will use them when interacting with GitHub on your behalf.
-githubWhy2: Note that both your GitHub username and email is public info. This merely allows us to make a link between your FreeSewing account and GitHub account.
-githubWhy3: For example, when you report a problem on this website, we can mention you so you will receive notifications when there is an update. For this, your username is sufficient.
-githubWhy4: When you submit a showcase post or make changed to our content, we can credit those commits to you if we have both your username and the email address you use on GitHub.
-tooComplex: If all of this in confusing, you don't have to provide this info. It's an advanced feature.
+githubTitle: Прив'яжіть свій обліковий запис GitHub
+githubWhy1: Введіть тут своє ім'я користувача GitHub та електронну пошту, і ми будемо використовувати їх при взаємодії з GitHub від вашого імені.
+githubWhy2: Зверніть увагу, що ваше ім'я користувача GitHub та електронна пошта є загальнодоступною інформацією. Це лише дозволяє нам встановити зв'язок між вашим акаунтом FreeSewing і GitHub.
+githubWhy3: Наприклад, коли ви повідомляєте про проблему на цьому веб-сайті, ми можемо згадати вас, щоб ви отримували сповіщення про оновлення. Для цього достатньо вашого імені користувача.
+githubWhy4: Коли ви надсилаєте демонстраційний пост або вносите зміни до нашого контенту, ми можемо зарахувати вам ці комміти, якщо у нас є ваше ім'я користувача та адреса електронної пошти, яку ви використовуєте на GitHub.
+tooComplex: Якщо все це збиває з пантелику, ви можете не надавати цю інформацію. Це розширена функція.
 #languge
 languageTitle: Якій мові ви віддаєте перевагу?
 #password
@@ -163,28 +163,28 @@ cancel: Скасувати
 keySecretWarning: Це єдиний раз, коли ви можете побачити секретний ключ, обов'язково скопіюйте його.
 keyExpired: Термін дії цього ключа API закінчився
 deleteKeyWarning: Видалення ключа API не можна скасувати.
-keyDocsTitle: Refer to FreeSewing.dev for documentation on using API keys (English only)
-keyDocsMsg: This is an advanced feature aimed at developers or anyone who wants to interact with our backend directly.
-apiCalls: API Calls
+keyDocsTitle: Зверніться до FreeSewing.dev за документацією по використанню ключів API (тільки англійською мовою)
+keyDocsMsg: Це розширена функція, призначена для розробників або будь-кого, хто хоче взаємодіяти з нашим бекендом безпосередньо.
+apiCalls: Виклики API
 #bookmarks
-newBookmark: Add a Bookmark
-bookmark: Bookmark
-bookmarks: Bookmarks
+newBookmark: Додати в закладки
+bookmark: Додати в закладки
+bookmarks: Закладки
 type: Тип
-location: Location
-title: Title
+location: Місцезнаходження
+title: Назва
 new: Новий
 designBookmark: Дизайни
 patternBookmark: Викрійки
 setBookmark: Набори для вимірювання
-csetBookmark: Curated Measurements Sets
+csetBookmark: Кураторські набори вимірювань
 docBookmark: Документація
-customBookmark: Custom Bookmarks
-yourBookmarks: Your bookmarks
-bookmarkThisThing: Bookmark this { thing }
-page: Page
+customBookmark: Користувацькі закладки
+yourBookmarks: Ваші закладки
+bookmarkThisThing: Додайте це в закладки { thing }
+page: Сторінка
 #sets
-set: Measurements Set
+set: Набір для вимірювань
 name: Назва
 setNameDesc: Ім'я для ідентифікації цього набору вимірювань
 setNewInfo: Створіть новий набір вимірів, який потім можна використовувати для створення лекал.
@@ -206,81 +206,83 @@ privateSetDesc: Ці вимірювання не можуть бути вико�
 permalink: Перманентне посилання
 editThing: Коригувати {thing}
 saveThing: Зберегти {thing}
-filterByDesign: Filter by design
-noFilter: Do not filter
-filterByDesignDocs: If you have a specific design in mind, you can <b>filter by design</b> to only list those measurements that are required for this design.
-setLacksMeasiesForDesign: This set lacks measurements required for this pattern
-setHasMeasiesForDesign: This set has all measurements required for this pattern
+filterByDesign: Фільтр за дизайном
+noFilter: Не фільтрувати
+filterByDesignDocs: Якщо ви маєте на увазі конкретний дизайн, ви можете <b>відфільтрувати за дизайном</b> , щоб отримати тільки ті виміри, які потрібні для цього дизайну.
+setLacksMeasiesForDesign: У цьому наборі відсутні виміри, необхідні для цієї викрійки
+setHasMeasiesForDesign: У цьому наборі є всі мірки, необхідні для цієї викрійки
 someSetsLacking: Some of your sets lack the measurments required to generate this pattern
-theseSetsReady: These sets have all required measurments to generate this pattern
+theseSetsReady: Ці набори мають всі необхідні виміри для створення цього шаблону
 chooseSet: Будь ласка, оберіть набір вимірів
 patternForWhichSet: Для якого набору вимірів ми повинні згенерувати викрійку?
 bookmarkedSets: Набори вимірювань, які ви додали до закладок
-curatedSets: FreeSewing's curated measurements sets
+curatedSets: Кураторські набори мірок FreeSewing
 curatedSetsAbout: Набори мірок, куратором яких є FreeSewing, які ви можете використовувати для тестування нашої платформи або ваших дизайнів.
-curateCuratedSets: Curate our selection of curated measurements sets
+curateCuratedSets: Курирувати нашу добірку кураторських наборів вимірювань
 useThisSet: Використовуйте цей набір вимірювань
-ownSets: Your own measurements sets
-noOwnSets: You do not have any of your own measurements sets (yet)
-pleaseMtm: Because our patterns are bespokee, we strongly suggest you take accurate measurements.
-noOwnSetsMsg: You can store your measurements as a measurements set, after which you can generate as many patterns as you want for them.
+ownSets: Ваші власні набори вимірів
+noOwnSets: У вас немає власних наборів вимірювань (поки що)
+pleaseMtm: Оскільки наші лекала виготовляються на замовлення, ми наполегливо рекомендуємо вам робити точні виміри.
+noOwnSetsMsg: Ви можете зберегти свої виміри як набір вимірів, після чого створити для них скільки завгодно лекал.
 measurements: Заміри
-chooseASet: Choose a measurements set
-showImage: Show image
-suggestForCuration: Suggest for curation
-suggestCset: Suggest a measurements set for curation
-csetAllMeasies: To ensure curated measurements sets work for all designs, you need to provide a full set of measurements.
-csetMissing: Your measurements set is missing the following measurements
-allMeasiesAvailable: All measurements are available.
-csetHeightMsg1: To allow organizing and presenting our curated sets in a structured way, we organize them by height.
-csetImgMsg: Finally, we need a picture. Please refer to the documentation to see what makes a good picture for a curated measurements set.
+chooseASet: Виберіть набір вимірювань
+showImage: Показати зображення
+suggestForCuration: Подати заявку на кураторство
+suggestCset: Запропонуйте набір вимірювань для кураторства
+csetAllMeasies: Щоб кураторські набори вимірів працювали для всіх дизайнів, вам потрібно надати повний набір вимірів.
+csetMissing: У вашому наборі розмірів відсутні наступні розміри
+allMeasiesAvailable: Всі виміри доступні.
+csetHeightMsg1: Щоб упорядкувати та представити наші кураторські набори у структурований спосіб, ми впорядковуємо їх за висотою.
+csetImgMsg: Нарешті, нам потрібне зображення. Будь ласка, зверніться до документації, щоб дізнатися, як зробити гарне зображення для кураторського набору вимірювань.
 docs: Документація
-csetNotesMsg: If you would like to add any notes, you can do so here.
-thankYouVeryMuch: Thank you very much
-csetSuggestedMsg: Your submission has been registered and will be processed by one of our curators.
-itIsAvailableAt: It is available at
-csetNameMsg: Each curated set has a name. You can suggest your own name or a pseudonym.
+csetNotesMsg: Якщо ви хочете додати будь-які примітки, ви можете зробити це тут.
+thankYouVeryMuch: Щиро дякую
+csetSuggestedMsg: Ваша заявка зареєстрована і буде опрацьована одним з наших кураторів.
+itIsAvailableAt: Вона доступна за посиланням
+csetNameMsg: Кожна кураторська добірка має назву. Ви можете запропонувати власне ім'я або псевдонім.
 patternNew: Створіть новий шаблон
-patternNewInfo: Pick a design, add your measurements set, and we'll generate a bespoke sewing pattern for you.
+patternNewInfo: Виберіть дизайн, додайте свої мірки, і ми створимо для вас індивідуальну викрійку.
 designNew: Створіть новий дизайн
 designNewInfo: Дизайни FreeSewing - це невеликі пакети коду JavaScript, які генерують візерунки. Створювати власні дизайни не складно, і ми маємо детальний підручник, щоб допомогти вам почати.
 pluginNew: Створіть новий плагін
 pluginNewInfo: Функціональність FreeSewing можна ще більше розширити за допомогою плагінів. Створити плагін дуже просто, і у нас є посібник, який проведе вас від початку до кінця.
-showcaseNew: Create a new showcase post
-showcaseNewInfo: If you would like to share something you (or someone else) made based on our designs, you can start a draft showcase post here.
-blogNew: Create a new blog post
-blogNewInfo: If you would like to write on the FreeSewing blog, you can start a draft blog post here.
-csetNew: Suggest a new curated measurements set
-csetNewInfo: We curate a collection of vetted measurments sets that we use to test patterns. You can suggest a measurements set here.
-opackNew: Suggest a new options pack
-opackNewInfo: We curate a collection of vetted option packs for each of our designs. You can suggest your options here.
-newPopular: Most popular
-newShare: Share / Show
-newDev: Design / Develop
+showcaseNew: Створіть нову публікацію у вітрині
+showcaseNewInfo: Якщо ви хочете поділитися чимось, що ви (або хтось інший) зробили на основі наших дизайнів, ви можете почати проект демонстраційного посту тут.
+blogNew: Створіть нову публікацію в блозі
+blogNewInfo: Якщо ви хочете писати в блозі FreeSewing, ви можете почати чернетку блогу тут.
+imgNew: Створіть імідж у соціальних мережах
+imgNewInfo: Використовуйте наш генератор, щоб створити зображення, яким ви можете поділитися в соціальних мережах. Він підтримує широкий (класичний), квадратний (Instagram) або високий (stories/TikTok) формати.
+csetNew: Запропонуйте новий кураторський набір вимірювань
+csetNewInfo: Ми куруємо колекцію перевірених наборів вимірювань, які використовуємо для тестування патернів. Ви можете запропонувати набір вимірювань тут.
+opackNew: Запропонуйте новий пакет опцій
+opackNewInfo: Ми куруємо колекцію перевірених пакетів опцій для кожного з наших дизайнів. Ви можете запропонувати свої варіанти тут.
+newPopular: Найпопулярніші
+newShare: Поділитися / Показати
+newDev: Проектування / розробка
 generateANewThing: "Створіть новий { thing }"
-website: Website
-linkedIdentities: Linked Identities
-websiteTitle: Do you have a website or other URL you'd like to add?
-platformTitle: Who are you on { platform }?
-platformWhy: We do not use this data in any way. This is only here so FreeSewing users can connect the dots across platforms.
-security: Security
-revealPassword: Reveal password
-hidePassword: Hide password
+website: Веб-сайт
+linkedIdentities: Пов'язані ідентичності
+websiteTitle: У вас є веб-сайт або інша URL-адреса, яку ви хотіли б додати?
+platformTitle: Хто ви на { platform }?
+platformWhy: Ми не використовуємо ці дані жодним чином. Це лише для того, щоб користувачі FreeSewing могли з'єднати точки на різних платформах.
+security: Безпека
+revealPassword: Розкрити пароль
+hidePassword: Приховати пароль
 #Design view
 designs: Дизайни
 code: Код
-aboutThing: About { thing }
+aboutThing: Про { thing }
 requiredMeasurements: Необхідні заміри
 optionalMeasurements: Додаткові заміри
 designOptions: Варіанти дизайну
-parts: Parts
-plugins: Plugins
-specifications: Specifications
-visitShowcase: Visit showcase post
+parts: Деталі
+plugins: Плагіни
+specifications: Технічні характеристики
+visitShowcase: Відвідайте пост про вітрину
 examples: Приклади
-noExamples: We currently do not have any examples for this design
-noExamplesMsg: We rely on the FreeSewing community to submit examples in our showcase posts.
-ownPublicPattern: This is the public view on one of your own patterns. For more options, access the private view.
-ownPrivatePattern: This is the private view on your pattern. The public view will work for you even when the pattern is private. It will only work for others when the pattern is public.
-privateView: Private view
-publicView: Public view
+noExamples: Наразі ми не маємо прикладів для цього дизайну
+noExamplesMsg: Ми сподіваємося, що спільнота FreeSewing надасть нам приклади в наших демонстраційних публікаціях.
+ownPublicPattern: Це публічний перегляд одного з ваших шаблонів. Щоб отримати більше можливостей, перейдіть до приватного перегляду.
+ownPrivatePattern: Це приватний перегляд вашого шаблону. Публічний перегляд працюватиме для вас, навіть якщо шаблон є приватним. Для інших він працюватиме лише тоді, коли шаблон буде загальнодоступним.
+privateView: Приватний перегляд
+publicView: Публічний перегляд

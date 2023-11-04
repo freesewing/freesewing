@@ -1,11 +1,11 @@
 ---
-title: "Otis, the simple baby romper: Fabric Options"
+title: "Otis, der einfache Babystrampler: Stoff-Optionen"
 ---
 
 ## Hauptstoff
 
-Rompers are normally made from knit fabric. For best results, use a cotton fabric with just one or two percent of spandex. Jersey works well if it has good recovery.
+Strampler werden normalerweise aus Strickstoff hergestellt. Die besten Ergebnisse erzielst du, wenn du einen Baumwollstoff mit nur ein bis zwei Prozent Elasthananteil verwendest. Jersey funktioniert gut, wenn es eine gute Erholung hat.
 
 ## Einlage
 
-If your fabric has a lot of stretch, it is probably a good idea to put some iron-on interfacing on the snap placket. 
+Wenn dein Stoff sehr dehnbar ist, ist es wahrscheinlich eine gute Idee, die Druckknopfleiste mit einer Bügeleinlage zu versehen. 

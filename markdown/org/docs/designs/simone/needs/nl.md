@@ -6,6 +6,6 @@ title: "Simone overhemd: Wat je nodig hebt"
 
 Raadpleeg [de Simon documentatie](/docs/patterns/simon/).
 
-Please refer to [the Simon documentation](/docs/designs/simon/).
+Raadpleeg [de documentatie van Simon](/docs/designs/simon/).
 
 </Note>

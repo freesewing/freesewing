@@ -2,10 +2,10 @@
 title: Нотатки
 ---
 
-Every measurements set has a **notes** attribute that is optional.
+Кожен набір вимірювань має необов'язковий атрибут **примітки** .
 
-The notes field allows you to add your notes to a measurements set. This field supports markdown, so you can use rich formatting, or even embed images.
+Поле "Примітки" дозволяє додавати свої примітки до набору вимірювань. Це поле підтримує розмітку, тому ви можете використовувати розширене форматування або навіть вставляти зображення.
 
 <Note>
-If you make your measurements set public, your notes will also be public.
+Якщо ви публікуєте свої виміри, ваші нотатки також будуть публічними.
 </Note>

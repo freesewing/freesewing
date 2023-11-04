@@ -1,5 +1,5 @@
 ---
-title: "Bottom to Top Arm Ratio"
+title: "Verhouding tussen onder- en bovenarm"
 ---
 
-This setting adjusts the ratio between the top and the bottom of the arms. The lower the ratio, the more fabric will be associated with the top of the leg. 100% maakt zowel de bovenkant als de onderkant hetzelfde.
+Deze instelling past de verhouding tussen de boven- en onderkant van de armen aan. Hoe lager de verhouding, hoe meer stof er bij de bovenkant van het been hoort. 100% maakt zowel de bovenkant als de onderkant hetzelfde.

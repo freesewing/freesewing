@@ -1,12 +1,12 @@
 ---
-title: "An early Uma"
-caption: "An Uma made of rayon spandex jersey"
+title: "Рання Ума"
+caption: "Ума з трикотажу зі спандекса"
 date: 20231027
-intro: "This pair of Uma undies is made of rayon spandex jersey and finished with wide fold over elastic."
+intro: "Ця пара трусів Uma виготовлена з еластичного трикотажу зі спандексом та оздоблена широкою резинкою в складку."
 designs:
-  - "uma"
-maker: Natalia
+  - "Ума."
+maker: Наталя
 ---
 
-This pair of Uma undies is made of rayon spandex jersey and finished with wide fold over elastic. This is an early version of the design, which has since undergone a few changes.
+Ця пара трусів Uma виготовлена з еластичного трикотажу зі спандексом та оздоблена широкою резинкою в складку. Це рання версія дизайну, яка відтоді зазнала кількох змін.
 

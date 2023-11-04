@@ -1,5 +1,5 @@
 ---
-title: "Florence face mask: Designer Notes"
+title: "Máscara facial Florence: Notas del diseñador"
 ---
 
 When the COVID-pandemic swept the globe in early 2019, and a shortage of PPE followed, it became obvious we were going to need a lot of face masks.

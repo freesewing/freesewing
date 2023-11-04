@@ -1,5 +1,5 @@
 ---
-title: "Uma undies: Design Options"
+title: "Uma ondergoed: Ontwerpopties"
 ---
 
 <DesignOptions design='uma' />

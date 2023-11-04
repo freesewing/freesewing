@@ -1,7 +1,7 @@
 ---
-title: "Zipper length"
+title: "Довжина блискавки"
 ---
 
-Sets the length of the zipper, as a percentage of the vertical trunk. If you're using a precut zipper, you should adjust this option until the value shown below (in cm/in) matches the length of your zipper, measured from the lower stop to the upper stop.
+Задає довжину блискавки у відсотках від вертикального стовбура. Якщо ви використовуєте застібку-блискавку з попереднім розрізом, відрегулюйте цей параметр так, щоб значення, показане нижче (в см/дюйм), відповідало довжині вашої застібки-блискавки, виміряній від нижнього обмежувача до верхнього обмежувача.
 
-Note: This option doesn't directly change the shape of the front or back pieces where the zipper is attached, but the zipper will be drawn onto the appropriate piece for reference, and will be used in drafting the zipper guard piece.
+Примітка: Ця опція безпосередньо не змінює форму передньої або задньої деталі, де пришита застібка-блискавка, але застібка-блискавка буде намальована на відповідній деталі для довідки і буде використана при створенні деталі захисту застібки-блискавки.

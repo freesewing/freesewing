@@ -14,7 +14,7 @@ Naadloos is minder werk, en ziet er geweldig uit.
 
 <Note>
 
-As seamless is only possible on a _cut-on_ placket, this option is ignored if you choose a separate button placket.
+Omdat naadloos alleen mogelijk is bij een _cut-on_ placket, wordt deze optie genegeerd als je kiest voor een placket met losse knopen.
 
 </Note>
 

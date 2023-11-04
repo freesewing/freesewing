@@ -1,7 +1,7 @@
 ---
-title: "Zipper length"
+title: "Longueur de la fermeture éclair"
 ---
 
-Sets the length of the zipper, as a percentage of the vertical trunk. If you're using a precut zipper, you should adjust this option until the value shown below (in cm/in) matches the length of your zipper, measured from the lower stop to the upper stop.
+Définit la longueur de la fermeture éclair, en pourcentage du tronc vertical. Si tu utilises une fermeture à glissière prédécoupée, tu dois régler cette option jusqu'à ce que la valeur indiquée ci-dessous (en cm/in) corresponde à la longueur de ta fermeture à glissière, mesurée de la butée inférieure à la butée supérieure.
 
-Note: This option doesn't directly change the shape of the front or back pieces where the zipper is attached, but the zipper will be drawn onto the appropriate piece for reference, and will be used in drafting the zipper guard piece.
+Remarque : Cette option ne modifie pas directement la forme des pièces avant ou arrière où la fermeture à glissière est attachée, mais la fermeture à glissière sera dessinée sur la pièce appropriée à titre de référence, et sera utilisée pour dessiner la pièce de protection de la fermeture à glissière.

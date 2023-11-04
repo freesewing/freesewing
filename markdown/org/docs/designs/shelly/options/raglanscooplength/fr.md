@@ -1,6 +1,6 @@
 ---
-title: "Raglan scoop length"
+title: "Longueur raglan"
 ---
 
-Controls how far out from the armhole the raglan seam starts to scoop. Larger arms and smaller chests may need to use slightly larger values for this option, but it can usually be left at the default value without issue.
+Contrôle à quelle distance de l'emmanchure la couture raglan commence à s'évaser. Les bras plus grands et les poitrines plus petites peuvent avoir besoin d'utiliser des valeurs légèrement plus grandes pour cette option, mais elle peut généralement être laissée à la valeur par défaut sans problème.
 

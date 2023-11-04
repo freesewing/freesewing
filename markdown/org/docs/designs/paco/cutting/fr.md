@@ -25,9 +25,9 @@ Si une partie de motif n'est pas imprimée, cela signifie que vous n'en avez pas
 
 <Warning>
 
-#### Caveats
+#### Mises en garde
 
-- There is no seam allowance on the interfacing
-- There is extra seam allowance on the waist band and hem
+- Il n'y a pas de surplus de couture sur l'entoilage
+- Il y a un surplus de couture sur la ceinture et l'ourlet.
 
 </Warning>

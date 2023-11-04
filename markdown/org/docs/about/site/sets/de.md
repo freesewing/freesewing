@@ -2,8 +2,8 @@
 title: Maßnahmesets
 ---
 
-A _measurements set_ holds a set of measurements along with meta data.
+Ein _Messdatensatz_ enthält eine Reihe von Messungen zusammen mit Metadaten.
 
-In addition to the measurements -- which is the most important data in a set -- a FreeSewing measurements set also has the following fields:
+Zusätzlich zu den Messwerten - den wichtigsten Daten in einem Set - enthält ein FreeSewing-Messdatensatz auch die folgenden Felder:
 
 <ReadMore />

@@ -1,5 +1,5 @@
 ---
-title: "Otis, the simple baby romper: Design Options"
+title: "Отіс, простий дитячий комбінезон: Варіанти дизайну"
 ---
 
 <DesignOptions design='otis' />

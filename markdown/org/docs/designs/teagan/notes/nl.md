@@ -1,9 +1,9 @@
 ---
-title: "Teagan T-shirt: Designer Notes"
+title: "T-shirt Teagan: Ontwerpnotities"
 ---
 
-This is my go-to T-shirt pattern for most of my T-shirts. It's not the classical T-shape but a bit more fitted with narrower and shorter sleeves and a wider somewhat boat-neck style opening.
+Dit is mijn go-to T-shirt patroon voor de meeste van mijn T-shirts. It's not the classical T-shape but a bit more fitted with narrower and shorter sleeves and a wider somewhat boat-neck style opening.
 
-I like it. Maybe you will too.
+Ik vind het leuk. Misschien jij ook wel.
 
 joost

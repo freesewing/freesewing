@@ -2,5 +2,5 @@
 title: "Свобода прилягання рукава"
 ---
 
-Affects how wide the sleeve is at the armhole on all shirts. For shirts that are less than 100% length, this option also affects how wide the sleeve is at the hem, with shorter sleeves being affected by this option to a greater degree, and longer sleeves being more affected by the wrist ease option. In most cases, this value should be set larger than chest ease, as the shoulders and arms are smaller and the same percentage of ease will translate to a smaller absolute ease. For compression clothes, shoulders also need more mobility than the chest, and very negative eases should generally be avoided for this option.
+Впливає на ширину рукава в проймі на всіх сорочках. Для сорочок, довжина яких менше 100%, цей параметр також впливає на ширину рукава біля подолу, причому на короткі рукави цей параметр впливає більшою мірою, а на довгі рукави більше впливає параметр "Зручність для зап'ястя". У більшості випадків це значення слід встановлювати більшим, ніж обхват грудей, оскільки плечі та руки менші, і той самий відсоток обхвату призведе до меншого абсолютного обхвату. Для компресійного одягу плечі також потребують більшої рухливості, ніж груди, і для цього варіанту слід уникати дуже негативного полегшення.
 

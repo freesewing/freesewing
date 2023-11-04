@@ -1,20 +1,20 @@
 ---
-title: "Simone by Gaëlle"
-caption: "A lovely Simone shirt with beautiful details"
+title: "Simone door Gaëlle"
+caption: "Een mooi Simone shirt met prachtige details"
 date: 20231017
-intro: "This Simone shirt features beautiful details, including coordinated buttons and custom labels."
+intro: "Dit Simone overhemd heeft prachtige details, waaronder gecoördineerde knopen en aangepaste labels."
 designs:
   - "simone"
 maker: Natalia
 ---
 
-The talented Gaëlle shared this Simone shirt. Don't miss the the detail photos.
+De getalenteerde Gaëlle deelde dit shirt van Simone. Mis de detailfoto's niet.
 
-![Another view of the front](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-1/public "Another view of the front")
+![Nog een blik op de voorkant](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-1/public "Nog een blik op de voorkant")
 
-![Collar details](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-2/public "Collar details")
+![Details kraag](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-2/public "Details kraag")
 
-![Cuff button details](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-4/public "Cuff button details")
+![Details manchetknopen](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-4/public "Details manchetknopen")
 
-![Custom label tags](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-5/public "Custom label tags")
+![Labels op maat](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-5/public "Labels op maat")
 

@@ -1,7 +1,7 @@
 ---
-title: "Leg ribbing"
+title: "Côtes de jambe"
 ---
 
-Choose whether to make ribbed knit cuffs for the legs or to use a hem.
+Choisis de faire des poignets en tricot côtelé pour les jambes ou d'utiliser un ourlet.
 
-Note: Setting this option to 'hem' will enable the 'leg hem' option, while setting this option to 'ribbing' will enable the 'leg ribbing length' and 'leg ribbing width' options.
+Remarque : le fait de régler cette option sur 'ourlet' activera l'option 'ourlet de jambe', tandis que le fait de régler cette option sur 'côtes' activera les options 'longueur des côtes de jambe' et 'largeur des côtes de jambe'.

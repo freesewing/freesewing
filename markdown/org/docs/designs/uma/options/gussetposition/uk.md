@@ -1,6 +1,6 @@
 ---
-title: "Gusset position"
+title: "Положення ластовиці"
 ---
 
-This option allows you to shift the gusset forward or backward.
+Ця опція дозволяє змістити ластовицю вперед або назад.
 

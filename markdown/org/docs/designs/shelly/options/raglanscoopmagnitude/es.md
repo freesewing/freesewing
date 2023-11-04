@@ -1,6 +1,6 @@
 ---
-title: "Raglan scoop depth"
+title: "Profundidad de la cuchara raglán"
 ---
 
-Controls how much extra material to place under the armpits. Larger values will generally provide better mobility and room in the armpits, while smaller values may give a more fitted look and may be better suited to people with skinny arms. This option can usually be left at the default value without issue.
+Controla cuánto material extra colocar bajo las axilas. Por lo general, los valores más grandes proporcionarán mayor movilidad y espacio en las axilas, mientras que los valores más pequeños pueden dar un aspecto más ajustado y pueden ser más adecuados para personas con brazos delgados. Esta opción puede dejarse normalmente en el valor por defecto sin problemas.
 

@@ -25,9 +25,9 @@ Als een patroondeel niet is afgedrukt, betekent dit dat je het niet nodig hebt.
 
 <Warning>
 
-#### Caveats
+#### Opmerkingen
 
-- There is no seam allowance on the interfacing
-- There is extra seam allowance on the waist band and hem
+- Er is geen naadtoeslag op de tussenvulling
+- Er is extra naadtoeslag op de tailleband en de zoom.
 
 </Warning>

@@ -1,7 +1,7 @@
 ---
-title: "Snap Placket"
+title: "Tapeta a presión"
 ---
 
-This option controls the depth of the placket that holds the snaps.
+Esta opción controla la profundidad de la tapeta que sujeta los botones a presión.
 
-It is roughly a percentage of the waist measurement. Default is 5%
+Es aproximadamente un porcentaje de la medida de la cintura. Por defecto es 5%.

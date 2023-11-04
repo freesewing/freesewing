@@ -1,5 +1,5 @@
 ---
-title: "Octoplushy, the plushy octopus: Designer Notes"
+title: "Octoplushy, плюшевий восьминіг: Нотатки дизайнера"
 ---
 
-<Fixme>Wouter designed this. They have not written any notes (yet)</Fixme>
+<Fixme>Воутер розробив це. Вони не писали жодних нотаток (поки що)</Fixme>

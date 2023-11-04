@@ -1,5 +1,5 @@
 ---
-title: "Raglan scoop depth"
+title: "Profundidad de la cuchara raglán"
 ---
 
-Controls how much extra material to place under the armpits.
+Controla cuánto material extra colocar bajo las axilas.

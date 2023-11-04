@@ -1,6 +1,6 @@
 ---
-title: "Raglan scoop length"
+title: "Raglan-Schaufellänge"
 ---
 
-Controls how far out from the armhole the raglan seam starts to scoop. Larger arms and smaller chests may need to use slightly larger values for this option, but it can usually be left at the default value without issue.
+Legt fest, wie weit die Raglannaht vom Armloch entfernt beginnt. Bei größeren Armen und kleinerem Brustumfang kann es sein, dass du etwas größere Werte für diese Option verwenden musst, aber in der Regel kannst du den Standardwert ohne Probleme beibehalten.
 

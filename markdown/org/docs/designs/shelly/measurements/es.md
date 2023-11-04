@@ -1,5 +1,5 @@
 ---
-title: "Shelly shirt: Required Measurements"
+title: "Camisa Shelly: Medidas requeridas"
 ---
 
 <DesignMeasurements design='shelly' />

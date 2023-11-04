@@ -2,9 +2,9 @@
 title: Tipo
 ---
 
-Every bookmark has a **type** attribute that is mandatory.
+Cada marcador tiene un atributo **type** que es obligatorio.
 
-When you manually create a bookmark, the type is always **custom** so you cannot choose it.
+Cuando creas manualmente un marcador, el tipo siempre es **personalizado** , por lo que no puedes elegirlo.
 
-Other types include **pattern**, **docs**, or **set** which will automatically be set when you bookmark a pattern, documentation page, or measurements set respectively.
+Otros tipos son **patrón**, **docs**, o **conjunto** que se establecerán automáticamente cuando marques como favorito un patrón, una página de documentación o un conjunto de medidas respectivamente.
 

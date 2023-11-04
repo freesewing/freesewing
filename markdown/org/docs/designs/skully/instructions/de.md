@@ -1,62 +1,62 @@
 ---
-title: "Skully: Sewing Instructions"
+title: "Skully: Anleitung zum Nähen"
 ---
 
 
 <Tip>
 
-A lot of the smaller seams (eyes, nose) are best sewn by hand. 
+Viele der kleineren Nähte (Augen, Nase) lassen sich am besten von Hand nähen. 
 
-Most of the seams will benefit from being basted before being sewn.
+Die meisten Nähte sollten vor dem Nähen geheftet werden.
 
 </Tip>
 
-## Step 1: The darts
+## Schritt 1: Die Darts
 
-There are six darts that need to be closed first. One on each, forhead, head2, and head3 parts. Pin and sew them closed, then remove the bulk by trimming the darts and give them a good press. Repeat for the all six darts.
+Es gibt sechs Pfeile, die zuerst geschlossen werden müssen. Jeweils eine für die Teile forhead, head2 und head3. Stecke sie fest und nähe sie zu. Schneide die Abnäher ab und bügle sie gut aus. Wiederhole den Vorgang für alle sechs Abnäher.
 
 
 ## Schritt 2: Die Augen
 
-Sew together the sides of the eye, so you will make a cone. Trim away any bulk. Repeat for the other eye.
+Näht die Seiten des Auges zusammen, so dass ein Kegel entsteht. Schneide alles weg, was zu viel ist. Wiederhole den Vorgang für das andere Auge.
 
-## Step 3: The nose
+## Schritt 3: Die Nase
 
-Like the eyes, the nose too has parts that need to be sewn together. There are two of these sides that need to be sew together. This creates two connected cones. This is very finicky, so take your time.
+Wie bei den Augen gibt es auch bei der Nase Teile, die zusammengenäht werden müssen. Es gibt zwei dieser Seiten, die zusammengenäht werden müssen. So entstehen zwei miteinander verbundene Kegel. Das ist sehr knifflig, also nimm dir Zeit.
 
-## Step 4: The head
+## Schritt 4: Der Kopf
 
 <Tip>
 
-The Skully pattern is set up to be sewn-by-numbers. Every seam is numbered. Please start at '1', and
-keep going until you reach '21'. This is the seam through which you will fill Skully, so only close
-it partly. 
+Das Skully-Muster ist so aufgebaut, dass es nach Zahlen genäht wird. Jede Naht ist nummeriert. Bitte beginne bei "1" und
+gehe weiter, bis du "21" erreicht hast. Dies ist die Naht, durch die du Skully füllen wirst, also schließe
+sie nur teilweise. 
 
 </Tip>
 
-When you are sewing together the individual parts, you will be making two halves of the skull.
+Wenn du die einzelnen Teile zusammennähst, machst du zwei Hälften des Schädels.
 
-Sewing the eyes and nose to the cheek and forehead parts is best done by hand. You will have to align the different notches to their corresponding ones on the other part.
+Das Annähen der Augen und der Nase an die Wangen- und Stirnteile geht am besten von Hand. Du musst die verschiedenen Kerben auf die entsprechenden Kerben am anderen Teil ausrichten.
 
-Sewing the lowerJaw to the lowerMouth and upperMouth is challenging. You will first be sewing a normal seam between the lowerJaw parts and the lowerMouth part. You will then have to continue this seam along the dashed line (14) on the upperMouth part. Basting or lots of pins are your friend. And make sure you first visualize how this will get together before doing the final sewing.
+Das Zusammennähen des Unterkiefers mit dem Untermund und dem Obermund ist eine Herausforderung. Zuerst nähst du eine normale Naht zwischen den unteren Kieferteilen und dem unteren Mundteil. You will then have to continue this seam along the dashed line (14) on the upperMouth part. Heften oder viele Stecknadeln sind dein Freund. And make sure you first visualize how this will get together before doing the final sewing.
 
-The back of the upperMouth is not sewn to anything. It is just there to provide stability.
+Die Rückseite des upperMouth ist nicht mit irgendetwas vernäht. Sie ist nur da, um Stabilität zu bieten.
 
-## Step 5: Hair
+## Schritt 5: Haare
 
-Now is the time to add hair to skully. When putting the embroidery floss in, make sure you add knots on the inside, or else it is very easy to pull Skully's hair out later.
+Jetzt ist es an der Zeit, dem Skully Haare hinzuzufügen. Achte beim Einsetzen der Stickwatte darauf, dass du auf der Innenseite Knoten anbringst, sonst kannst du Skully später ganz leicht die Haare ausreißen.
 
 ## Schritt 6: Füllung
 
-- Fill the plush toy with stuffing through the opening you left, making sure to fill all the parts well. The areas in the front are the hardest to get to.
+- Fill the plush toy with stuffing through the opening you left, making sure to fill all the parts well. Die Bereiche an der Vorderseite sind am schwersten zu erreichen.
 - _Slipsticth_ oder _whipstitch_ die Öffnung geschlossen.
 
-## Step 7: Tweaks
+## Schritt 7: Tweaks
 
-You can use the long upholstery needle to add some tweaks to Skully. Adding some stitches to attach the back of the eyes to corner of seams 14 and 21 right through the skull will help to keep the eyes from popping out, and can help with giving the head more form. The same applies to the nose.
+Du kannst die lange Polsternadel verwenden, um Skully ein wenig zu bearbeiten. Wenn du einige Stiche hinzufügst, um die Rückseite der Augen an den Ecken der Nähte 14 und 21 durch den Schädel hindurch zu befestigen, verhindert dies, dass die Augen herausspringen, und hilft, dem Kopf mehr Form zu geben. Das Gleiche gilt für die Nase.
 
-It is also a good idea to add stitches between seams 5 and 14, along the length of both seams. This will make the cheek bones more pronounced and adds to the overall shape of the skull.
+Es ist auch eine gute Idee, zwischen den Nähten 5 und 14, entlang der Länge beider Nähte, Stiche hinzuzufügen. Das macht die Wangenknochen ausgeprägter und trägt zur Gesamtform des Schädels bei.
 
 ## Schritt 7: Viel Spaß mit deinem neuen Shirt!
 
-That's it, you are all done. Start planning what pirate sewing ship you'll be joining!
+Das war's, du bist fertig. Fang an zu planen, auf welchem Piratenschiff du nähen wirst!

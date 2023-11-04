@@ -1,5 +1,5 @@
 ---
-title: "Hoodfrontbonus"
+title: "Bonus pour le front de capuche"
 ---
 
-Controls how far forward the hood comes over the forehead.
+Contrôle l'avancée de la capuche sur le front.

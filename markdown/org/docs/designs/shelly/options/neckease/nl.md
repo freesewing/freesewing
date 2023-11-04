@@ -1,6 +1,6 @@
 ---
-title: "Neck ease"
+title: "Nekgemak"
 ---
 
-Controls how large the neck hole is. Keep in mind that most shirts have neck holes that are substantially larger than the wearer's neck, and that the neckband will further constrict the neck. 0% ease will make a very small neck hole that hugs the neck snugly and is hard to push over the head, even with stretch fabric. +50% will still make what's generally considered a tight neckband appropriate for a swim shirt. For t-shirts or for a loose fit, even larger values are recommended.
+Bepaalt hoe groot het halsgat is. Houd er rekening mee dat de meeste shirts nekgaten hebben die aanzienlijk groter zijn dan de nek van de drager, en dat de nekband de nek verder zal vernauwen. 0% gemak maakt een heel klein halsgat dat de nek goed omsluit en moeilijk over het hoofd te duwen is, zelfs met stretchstof. +50% maakt wat over het algemeen als een strakke nekband wordt beschouwd nog steeds geschikt voor een zwemshirt. Voor t-shirts of voor een losse pasvorm worden zelfs grotere waarden aanbevolen.
 

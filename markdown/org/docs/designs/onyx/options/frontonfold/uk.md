@@ -1,13 +1,13 @@
 ---
-title: "Front on fold"
+title: "Спереду на згині"
 ---
 
-Controls if the front is made of of a single piece of fabric cut on the fold, or as two mirrored pieces that are sewn together down the center.
+Контролює, чи передня частина виготовлена з одного шматка тканини, розрізаного по згину, або з двох дзеркальних шматків, зшитих разом по центру.
 
-> Advantages: Saves a construction step, removes a seam, may be more comfortable.
+> Переваги: Заощаджує будівельний крок, прибирає шов, може бути зручніше.
 
-> Disadvantages: Doesn't work with zippers, harder to fit a larger pattern piece on the fabric (may cause more fabric waste).
+> Недоліки: Не працює із застібками-блискавками, важче розмістити на тканині велику деталь викрійки (може призвести до більших відходів тканини).
 
-> ##### Zippers:
+> ##### Блискавки:
 
-If using a front zipper, do _not_ enable this option.
+Якщо ви використовуєте передню застібку-блискавку, увімкніть цю опцію _, а не_ .

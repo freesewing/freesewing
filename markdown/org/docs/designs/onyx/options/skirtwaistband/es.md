@@ -1,7 +1,7 @@
 ---
-title: "Skirt waistband"
+title: "Cintura de la falda"
 ---
 
-Sets the width of the waistband along the top of the skirt, as a multiple of the seam allowance..
+Establece la anchura de la cintura a lo largo de la parte superior de la falda, como múltiplo del margen de costura.
 
-The waistband is a single fold hem that is topstitched into the main garment around the waist. The fold serves to hide and finish the top edge. It only needs to be wide enough to allow the topstitching to secure the skirt in place.
+La cintura es un dobladillo de un solo pliegue que se pespuntea a la prenda principal alrededor de la cintura. El pliegue sirve para ocultar y rematar el borde superior. Sólo tiene que ser lo suficientemente ancha como para permitir que el pespunte fije la falda en su sitio.

@@ -1,13 +1,13 @@
 ---
-title: "Front on fold"
+title: "Voorkant op vouw"
 ---
 
-Controls if the front is made of of a single piece of fabric cut on the fold, or as two mirrored pieces that are sewn together down the center.
+Controleer of de voorkant uit één stuk stof bestaat dat op de vouw is geknipt, of uit twee gespiegelde stukken die in het midden aan elkaar zijn genaaid.
 
-> Advantages: Saves a construction step, removes a seam, may be more comfortable.
+> Voordelen: Bespaart een constructiestap, verwijdert een naad, kan comfortabeler zijn.
 
-> Disadvantages: Doesn't work with zippers, harder to fit a larger pattern piece on the fabric (may cause more fabric waste).
+> Nadelen: Werkt niet met ritsen, moeilijker om een groter patroondeel op de stof te passen (kan meer stofverspilling veroorzaken).
 
-> ##### Zippers:
+> ##### Ritsen:
 
-If using a front zipper, do _not_ enable this option.
+Als je een rits aan de voorkant gebruikt, zet _dan niet_ deze optie aan.

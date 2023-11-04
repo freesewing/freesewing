@@ -1,8 +1,8 @@
 ---
-title: "Sven sweatshirt: Designer Notes"
+title: "Sudadera Sven: Notas del diseñador"
 ---
 
-I don't knit, but I do tend to be cold all the time. So I do like sweaters. Hence why I designed this sweater pattern, because I prefer to make clothes rather than buy them.
+No hago punto, pero tiendo a pasar frío todo el tiempo. Así que me gustan los jerseys. De ahí que haya diseñado este patrón de jersey, porque prefiero hacer ropa a comprarla.
 
 It's a pretty simple design, essentially a light variation of the [Brian block](/designs/brian) that it is based on.
 

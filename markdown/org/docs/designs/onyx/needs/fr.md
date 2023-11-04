@@ -1,12 +1,12 @@
 ---
-title: "Onyx One-Piece: What You Need"
+title: "Monopièce en onyx : Ce dont tu as besoin"
 ---
 
-To make Onyx, you will need the following:
+Pour fabriquer de l'onyx, tu auras besoin des éléments suivants :
 
 - Fourniture de base pour la couture
-- (Recommended) A serger/overlock machine. Light, strong, and stretchy seams are important for this garment.
-- Between 1 - 5 meters (1.1 - 5.5 yards) of a suitable fabric, depending on size and style ([see Fabric options](/docs/patterns/shelly/fabric))
-    - Long sleeves, long legs, use of lining, larger measurements, more ease, use of a hood, and use of a skirt will all increase fabric requirements.
-    - A typical adult unisuit with short sleeves and short legs with a self-lined body will take about 2 meters of fabric.
-- (Optional) Rib knit fabric for the neck, arms, and legs, if desired.
+- (Recommandé) Une surjeteuse/overlock machine. Des coutures légères, solides et extensibles sont importantes pour ce vêtement.
+- Entre 1 et 5 mètres d'un tissu approprié, selon la taille et le style ([voir les options de tissu](/docs/patterns/shelly/fabric)).
+    - Les manches longues, les jambes longues, l'utilisation d'une doublure, des mesures plus grandes, plus d'aisance, l'utilisation d'une capuche et l'utilisation d'une jupe augmenteront toutes les exigences en matière de tissu.
+    - Une combinaison d'adulte typique avec des manches et des jambes courtes avec un corps auto-doublé prendra environ 2 mètres de tissu.
+- (Facultatif) Tricot côtelé pour le cou, les bras et les jambes, si tu le souhaites.

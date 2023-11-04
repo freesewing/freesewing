@@ -85,7 +85,7 @@ Hurra! Du hast den schwierigsten Teil geschafft! Optional kannst du die Schnittk
 
 <Tip>
 
-A more extensive how-to on knit binding can be found in the [Aaron Instuctions](/docs/designs/aaron/instructions).
+Eine ausführlichere Anleitung zum Strickbinden findest du in den [Aaron-Anleitungen](/docs/designs/aaron/instructions).
 
 </Tip>
 

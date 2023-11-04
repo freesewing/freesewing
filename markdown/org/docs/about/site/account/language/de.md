@@ -4,6 +4,6 @@ title: Sprache
 
 This controls the **language** that will be used to generate your patterns, as well send you emails and so on.
 
-It is in other words a central language setting stored in your account.
+Es handelt sich also um eine zentrale Spracheinstellung, die in deinem Konto gespeichert ist.
 
-It does not control the language of the website itself. That setting -- just like the theme you prefer -- is stored on your device, not in our backend.
+Sie kontrolliert nicht die Sprache der Website selbst. Diese Einstellung wird - genau wie das von dir bevorzugte Thema - auf deinem Gerät gespeichert, nicht in unserem Backend.

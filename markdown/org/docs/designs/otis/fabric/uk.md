@@ -1,11 +1,11 @@
 ---
-title: "Otis, the simple baby romper: Fabric Options"
+title: "Отіс, простий дитячий комбінезон: Варіанти тканин"
 ---
 
 ## Основна тканина
 
-Rompers are normally made from knit fabric. For best results, use a cotton fabric with just one or two percent of spandex. Jersey works well if it has good recovery.
+Зазвичай повзунки виготовляють з трикотажу. Для найкращих результатів використовуйте бавовняну тканину з одним-двома відсотками спандексу. Джерсі добре працює, якщо він добре відновлюється.
 
 ## Взаємодія
 
-If your fabric has a lot of stretch, it is probably a good idea to put some iron-on interfacing on the snap placket. 
+Якщо ваша тканина сильно розтягується, можливо, буде гарною ідеєю нанести на застібку-блискавку прокладку, що припрасовується. 

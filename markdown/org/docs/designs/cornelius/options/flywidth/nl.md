@@ -1,8 +1,8 @@
 ---
-title: "Fly guard width"
+title: "Breedte vliegenvanger"
 ---
 
 ***
 
-Controls the width of fly guard.
+Regelt de breedte van de vliegenvanger.
 

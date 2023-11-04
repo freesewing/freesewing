@@ -1,5 +1,5 @@
 ---
-title: "Zipper guard width"
+title: "Breedte ritsbescherming"
 ---
 
-Controls how wide the zipper guard will be. It should be wide enough to fully cover the zipper, with a little extra in case it shirts or stretches while in use.
+Bepaalt hoe breed de ritsbescherming wordt. Het moet breed genoeg zijn om de rits volledig te bedekken, met een beetje extra voor het geval hij gaat scheuren of uitrekt tijdens het gebruik.

@@ -1,5 +1,5 @@
 ---
-title: "Bottom to Top Arm Ratio"
+title: "Verhältnis von unterem zu oberem Arm"
 ---
 
-This setting adjusts the ratio between the top and the bottom of the arms. The lower the ratio, the more fabric will be associated with the top of the leg. 100% bedeutet, dass die Ober- und Unterseite gleich sind.
+Mit dieser Einstellung wird das Verhältnis zwischen dem oberen und dem unteren Teil der Arme angepasst. Je niedriger das Verhältnis, desto mehr Stoff wird mit dem oberen Teil des Beins verbunden. 100% bedeutet, dass die Ober- und Unterseite gleich sind.

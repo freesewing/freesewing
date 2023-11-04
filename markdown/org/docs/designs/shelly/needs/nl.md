@@ -1,13 +1,13 @@
 ---
-title: "Shelly shirt: What You Need"
+title: "Shelly overhemd: Wat je nodig hebt"
 ---
 
-To make Shelly, you will need the following:
+Om Shelly te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- Between 0.5 - 2 meters (0.6 - 2.2 yards) of a suitable fabric, depending on size and style ([see Fabric options](/docs/patterns/shelly/fabric))
-    - A kids' short-sleeve rash guard can probably be made with 0.5 meters with fabric left over.
-    - A looser-fitting long-sleeved swim shirt or t-shirt for a tall adult will take closer to 2 meters.
-    - Two different colors or prints of fabric can be used (one for the sleeves, one for the bodice).
-- (Optional) Ribbing fabric for the neck, if using less stretchy fabric.
-- (Optional) Contrasting color thread, if making exposed seams.
+- Tussen 0,5 - 2 meter van een geschikte stof, afhankelijk van de maat en stijl ([zie Stofopties](/docs/patterns/shelly/fabric))
+    - Een kinderzwembeschermer met korte mouwen kan waarschijnlijk worden gemaakt met 0,5 meter stof die over is.
+    - Een losser vallend zwemshirt met lange mouwen of t-shirt voor een lange volwassene zal dichter bij de 2 meter liggen.
+    - Je kunt twee verschillende kleuren of prints stof gebruiken (een voor de mouwen, een voor het lijfje).
+- (Optioneel) Ribboord voor de hals, als je minder rekbare stof gebruikt.
+- (Optioneel) Contrasterende kleur garen, als je zichtbare naden maakt.

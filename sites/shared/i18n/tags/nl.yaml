@@ -1,13 +1,13 @@
 #These are UI strings
 tags: Labels
-showLineDrawings: Show line drawings
-showExamples: Show examples
-clearFilter: Clear filter
-showFilters: Show filters
-hideFilters: Hide filters
+showLineDrawings: Lijntekeningen weergeven
+showExamples: Voorbeelden tonen
+clearFilter: Filter wissen
+showFilters: Filters tonen
+hideFilters: Verberg filters
 difficulty: Moeilijkheid
-learnMoreAboutThing: Learn more about {thing}
-newThingPattern: New {thing} pattern
+learnMoreAboutThing: Meer informatie over {thing}
+newThingPattern: Nieuw patroon {thing}
 #Actual tags start here
 accessories: Accessoires
 bags: Tassen

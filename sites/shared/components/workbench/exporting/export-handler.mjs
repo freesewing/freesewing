@@ -18,7 +18,7 @@ export const ns = ['cut', 'plugin', 'common']
 export const exportTypes = {
   exportForPrinting: ['a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'legal', 'tabloid'],
   exportForEditing: ['svg', 'pdf'],
-  exportAsData: ['json', 'yaml', 'github gist'],
+  exportAsData: ['json', 'yaml'],
 }
 
 /**
@@ -171,7 +171,7 @@ export const handleExport = async ({
         // add the strings that are used on the cover page
         workerArgs.strings = {
           design: capitalize(design),
-          tagline: t('common:sloganCome') + '. ' + t('common:sloganStay'),
+          tagline: t('common:slogan1') + '. ' + t('common:slogan2'),
           url: window.location.href,
           cuttingLayout: t('cut:cuttingLayout'),
         }
@@ -186,8 +186,8 @@ export const handleExport = async ({
       // add the svg and pages data to the worker args
       workerArgs.pages = pattern.setStores[pattern.activeSet].get('pages')
 
-      // add cutting layouts if requested
-      if (!exportTypes.exportForEditing.includes(format) && pageSettings.cutlist) {
+      // add cutting layouts if requested (commented out for now)
+      if (false && !exportTypes.exportForEditing.includes(format) && pageSettings.cutlist) {
         workerArgs.cutLayouts = generateCutLayouts(pattern, Design, settings, format, t, ui)
       }
     } catch (err) {

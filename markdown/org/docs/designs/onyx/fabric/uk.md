@@ -1,13 +1,13 @@
 ---
-title: "Onyx One-piece: Fabric Options"
+title: "Суцільнокроєний онікс: Варіанти тканин"
 ---
 
-This pattern is designed to work with stretch/knit fabrics, such as swim fabric, fleece, and jersey.
+Ця викрійка призначена для роботи з еластичними/трикотажними тканинами, такими як плавки, фліс і джерсі.
 
-For unisuits, unitards, and other performance-oriented and form-fitting garments, four-way stretch fabric such a 20% spandex blend is strongly recommended. For more casual garments, such as one-piece fleece pajamas, kigurumi, rompers, and jumpsuits, most knit fabrics can be used. Fleece can be used to make warm winter pajamas, while jersey knit can be used to make a summer romper.
+Для костюмів, комбінезонів та іншого одягу, орієнтованого на продуктивність і облягаючий силует, настійно рекомендується використовувати тканину з чотиристороннім розтягуванням, наприклад, суміш 20% спандекса. Для більш повсякденного одягу, такого як цілісні флісові піжами, кігурумі, комбінезони та комбінезони, можна використовувати більшість трикотажних тканин. З флісу можна зробити теплу зимову піжаму, а з трикотажу - літній комбінезон.
 
-The raglan sleeves lend themselves well to using different colors/prints for the body and for the sleeves. Contrasting fabrics can also be used on the skirt or hood.
+Рукава реглан добре піддаються використанню різних кольорів/принтів для тіла та рукавів. Контрастні тканини також можна використовувати на спідниці або капюшоні.
 
-Lined portions of the garment lend themselves well to embroidery, as the stabilizer (strongly recommended) and stitching will be kept away from the wearer's body by the lining. The chest, next to the zipper, is a particularly good spot, both because it's prominent, and because the chest doesn't stretch vertically much, since it's near the zipper.
+Підкладкові частини одягу добре піддаються вишивці, оскільки стабілізатор (настійно рекомендується) і строчки будуть триматися подалі від тіла власника завдяки підкладці. Груди, поруч із застібкою-блискавкою, є особливо вдалим місцем, як тому, що вона помітна, так і тому, що груди не сильно розтягуються по вертикалі, оскільки знаходяться поруч із застібкою-блискавкою.
 
-With swim fabric/spandex, it is recommended to make the neckband out of the same material used for the body. For less stretchy fabric, such as cotton jersey knit, ribbing is recommended.
+Якщо ви використовуєте плавальну тканину/спандекс, рекомендується зробити шийну стрічку з того ж матеріалу, що і для тіла. Для менш еластичних тканин, таких як бавовняний трикотаж, рекомендується використовувати ребра жорсткості.

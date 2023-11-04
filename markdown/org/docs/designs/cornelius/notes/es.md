@@ -1,6 +1,6 @@
 ---
-title: "Cornelius cycling breeches: Designer Notes"
+title: "Pantalón de ciclismo Cornelius: Notas del diseñador"
 ---
 
-<Fixme>Wouter designed this. They have not written any notes (yet)</Fixme>
+<Fixme>Wouter diseñó esto. No han escrito ninguna nota (todavía)</Fixme>
 

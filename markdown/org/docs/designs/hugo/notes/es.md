@@ -1,8 +1,8 @@
 ---
-title: "Hugo hoodie: Designer Notes"
+title: "Sudadera con capucha Hugo: Notas del diseñador"
 ---
 
-I wanted to try my hand on raglan sleeves, so this is what I ended up with. It's a hooded sweater, with raglan sleeves, and an optional kangaroo pocket.
+Quería probar a hacer mangas raglán, así que esto es lo que hice. Es un jersey con capucha, mangas raglán y un bolsillo canguro opcional.
 
 I named it `hugo` in memory of Hugo De Cock, my godfather with a name to make pornstars jealous.
 

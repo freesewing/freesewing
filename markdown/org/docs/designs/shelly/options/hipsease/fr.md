@@ -2,5 +2,5 @@
 title: "Aisance des hanches"
 ---
 
-Controls how wide your shirt will be at the bottom hem. This option is only used if the straight sides option is disabled.
+Contrôle la largeur de ta chemise au niveau de l'ourlet du bas. Cette option n'est utilisée que si l'option des côtés droits est désactivée.
 

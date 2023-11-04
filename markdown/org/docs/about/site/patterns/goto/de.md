@@ -1,12 +1,12 @@
 ---
-title: What to do after saving a new pattern?
+title: Was ist nach dem Speichern eines neuen Musters zu tun?
 ---
 
-When you create a new pattern in FreeSewing's pattern editor, you have the option to save the pattern to your account.
+Wenn du ein neues Muster im FreeSewing-Mustereditor erstellst, hast du die Möglichkeit, das Muster in deinem Konto zu speichern.
 
-After you save the pattern to your account, there are several options for what you might want to do next:
+Nachdem du das Muster in deinem Konto gespeichert hast, gibt es mehrere Möglichkeiten, was du als Nächstes tun möchtest:
 
-- Continue editing the saved patter
-- Display the pattern information page
+- Das gespeicherte Muster weiter bearbeiten
+- Anzeige der Musterinformationsseite
 
-Because we cannot read your mind, you can choose what you would like to happen when you save a new pattern to your account.
+Da wir deine Gedanken nicht lesen können, kannst du wählen, was passieren soll, wenn du ein neues Muster in deinem Konto speicherst.

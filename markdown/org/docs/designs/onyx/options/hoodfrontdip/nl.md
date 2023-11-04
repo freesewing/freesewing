@@ -1,5 +1,5 @@
 ---
-title: "Hoodfrontdip"
+title: "Kapfrontdip"
 ---
 
-Controls far down the front of the hood drops over the forehead. Larger values work best with lightweight/flexible fabrics.
+Controles ver naar beneden de voorkant van de kap valt over het voorhoofd. Grotere waarden werken het beste met lichtgewicht/flexibele stoffen.

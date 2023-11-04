@@ -1,5 +1,5 @@
 ---
-title: "Leg hem ease"
+title: "Bein Saum Leichtigkeit"
 ---
 
-Controls how wide the bottom of the legs of the garment will be. The base value is interpolated between the circumference of the upper legs and the ankles, based on how long the legs on the garment are, and this option is then applied to this.
+Legt fest, wie breit die Unterseite der Beine des Kleidungsstücks sein soll. Je nachdem, wie lang die Beine des Kleidungsstücks sind, wird der Basiswert zwischen dem Umfang der Oberschenkel und der Knöchel interpoliert und diese Option dann darauf angewendet.

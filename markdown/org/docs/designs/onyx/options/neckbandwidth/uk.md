@@ -1,7 +1,7 @@
 ---
-title: "Neckband width"
+title: "Ширина шийної стрічки"
 ---
 
-Controls how wide to make the finished neckband. For swimwear, 4cm / 1.5in (the default) is a common value. If using rib knit, 5-7.5cm (2-3in) is generally used.
+Керує шириною готової шийної стрічки. Для купальників 4 см / 1,5 дюйма (за замовчуванням) є загальним значенням. Якщо використовується ребриста в'язка, зазвичай використовується 5-7,5 см (2-3 дюйми).
 
-Note: This option is only available if the 'neck style' option is set to 'neckband.'
+Примітка: Ця опція доступна, лише якщо для параметра "стиль шиї" встановлено значення "шийна пов'язка".

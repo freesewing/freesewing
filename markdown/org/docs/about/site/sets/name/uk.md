@@ -2,14 +2,14 @@
 title: 'API Keys: Name'
 ---
 
-Every measurements set has a **name** attribute that is mandatory.
+Кожен набір вимірювань має обов'язковий атрибут **name** .
 
-In other words, you must give each of your measurements sets a name, but that name can be anything you want.
+Іншими словами, ви повинні дати кожному з ваших наборів вимірів ім'я, але це ім'я може бути будь-яким.
 
-Typically, people give names that describe the set, like:
+Зазвичай люди дають назви, які описують набір, наприклад:
 
-- Myself, January 2024
-- Tony with binder
-- Jenny post augmentation
+- Я, січень 2024 року
+- Тоні зі зв'язкою
+- Дженні пост-абглютинація
 
-But you do you.
+Але ти знаєш.

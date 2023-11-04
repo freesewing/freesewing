@@ -2,10 +2,10 @@
 title: Notizen
 ---
 
-Every measurements set has a **notes** attribute that is optional.
+Jeder Messdatensatz hat ein Attribut **notes** , das optional ist.
 
-The notes field allows you to add your notes to a measurements set. This field supports markdown, so you can use rich formatting, or even embed images.
+Im Feld Notizen kannst du deine Notizen zu einer Messreihe hinzufügen. Dieses Feld unterstützt Markdown, sodass du umfangreiche Formatierungen verwenden oder sogar Bilder einbetten kannst.
 
 <Note>
-If you make your measurements set public, your notes will also be public.
+Wenn du deine Messungen öffentlich machst, sind auch deine Notizen öffentlich.
 </Note>

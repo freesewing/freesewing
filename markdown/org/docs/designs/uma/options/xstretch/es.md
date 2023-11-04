@@ -1,6 +1,6 @@
 ---
-title: "Horizontal fabric stretch"
+title: "Estiramiento horizontal del tejido"
 ---
 
-Adjust this option for more or less stretchy fabrics, specifically for horizontal stretch.
+Ajusta esta opción para tejidos más o menos elásticos, concretamente para el estiramiento horizontal.
 

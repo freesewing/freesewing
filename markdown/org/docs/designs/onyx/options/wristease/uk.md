@@ -1,9 +1,9 @@
 ---
-title: "Wrist ease"
+title: "Зручність для зап'ястя"
 ---
 
-Affects how wide the end of the sleeve is on some garments. There is no effect for sleeves ending at the biceps or above. For longer sleeves, the wrist measurement and this wrist ease option have a progressively larger effect, reaching full effect for long sleeved garments (sleeve length of 100% or greater).
+Впливає на те, наскільки широкий кінець рукава на деяких видах одягу. Для рукавів, що закінчуються на біцепсі або вище, ефект відсутній. Для довших рукавів вимірювання обхвату зап'ястя і ця опція полегшення зап'ястя мають дедалі більший ефект, досягаючи повного ефекту в одязі з довгими рукавами (довжина рукава 100% або більше).
 
-> ##### This option allows negative values
+> ##### Ця опція дозволяє від'ємні значення
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Якщо ви використовуєте еластичний матеріал, який потрібно щільно прилягати, слід використовувати від'ємну легкість. Костюми та комбінезони зазвичай мають від'ємну розтяжність, в той час як інший одяг має додатну розтяжність.

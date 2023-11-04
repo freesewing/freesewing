@@ -1,62 +1,62 @@
 ---
-title: "Skully: Sewing Instructions"
+title: "Skully: Naai-instructies"
 ---
 
 
 <Tip>
 
-A lot of the smaller seams (eyes, nose) are best sewn by hand. 
+Veel van de kleinere naden (ogen, neus) kun je het beste met de hand naaien. 
 
-Most of the seams will benefit from being basted before being sewn.
+De meeste naden kunnen het beste worden vastgebast voordat ze worden genaaid.
 
 </Tip>
 
-## Step 1: The darts
+## Stap 1: De pijltjes
 
-There are six darts that need to be closed first. One on each, forhead, head2, and head3 parts. Pin and sew them closed, then remove the bulk by trimming the darts and give them a good press. Repeat for the all six darts.
+Er zijn zes pijltjes die eerst gesloten moeten worden. Eén op elk voorhoofd, hoofd2 en hoofd3. Speld en naai ze dicht, verwijder dan de bulk door de coupenaden bij te knippen en pers ze goed. Herhaal dit voor alle zes de darts.
 
 
 ## Stap 2: De ogen
 
-Sew together the sides of the eye, so you will make a cone. Trim away any bulk. Repeat for the other eye.
+Naai de zijkanten van het oog aan elkaar, zodat je een kegel maakt. Knip alle bulk weg. Herhaal dit voor het andere oog.
 
-## Step 3: The nose
+## Stap 3: De neus
 
-Like the eyes, the nose too has parts that need to be sewn together. There are two of these sides that need to be sew together. This creates two connected cones. This is very finicky, so take your time.
+Net als de ogen heeft ook de neus onderdelen die aan elkaar genaaid moeten worden. Er zijn twee van deze kanten die aan elkaar genaaid moeten worden. Hierdoor ontstaan twee verbonden kegels. Dit is erg pietluttig, dus neem je tijd.
 
-## Step 4: The head
+## Stap 4: Het hoofd
 
 <Tip>
 
-The Skully pattern is set up to be sewn-by-numbers. Every seam is numbered. Please start at '1', and
-keep going until you reach '21'. This is the seam through which you will fill Skully, so only close
-it partly. 
+Het Skully-patroon is zo opgezet dat je op nummer kunt naaien. Elke naad is genummerd. Begin bij '1' en
+ga door tot je bij '21' bent. Dit is de naad waardoor je Skully gaat vullen, dus sluit
+maar gedeeltelijk. 
 
 </Tip>
 
-When you are sewing together the individual parts, you will be making two halves of the skull.
+Als je de afzonderlijke delen aan elkaar naait, maak je twee helften van de schedel.
 
-Sewing the eyes and nose to the cheek and forehead parts is best done by hand. You will have to align the different notches to their corresponding ones on the other part.
+Het naaien van de ogen en neus aan de wang- en voorhoofddelen kun je het beste met de hand doen. Je moet de verschillende inkepingen uitlijnen met de corresponderende inkepingen op het andere deel.
 
-Sewing the lowerJaw to the lowerMouth and upperMouth is challenging. You will first be sewing a normal seam between the lowerJaw parts and the lowerMouth part. You will then have to continue this seam along the dashed line (14) on the upperMouth part. Basting or lots of pins are your friend. And make sure you first visualize how this will get together before doing the final sewing.
+Het naaien van de onderkaak aan de ondermond en bovenmond is een uitdaging. Je naait eerst een normale naad tussen de ondersteKaakdelen en het ondersteMonddeel. You will then have to continue this seam along the dashed line (14) on the upperMouth part. Rijgen of veel spelden zijn je vriend. And make sure you first visualize how this will get together before doing the final sewing.
 
-The back of the upperMouth is not sewn to anything. It is just there to provide stability.
+De achterkant van de bovenmond is nergens aan vastgenaaid. Het is er alleen om stabiliteit te bieden.
 
-## Step 5: Hair
+## Stap 5: Haar
 
-Now is the time to add hair to skully. When putting the embroidery floss in, make sure you add knots on the inside, or else it is very easy to pull Skully's hair out later.
+Nu is het tijd om haar toe te voegen aan skully. Als je het borduurgaren erin doet, zorg er dan voor dat je knopen aan de binnenkant maakt, anders is het heel gemakkelijk om Skully's haar er later uit te trekken.
 
 ## Stap 6: Vullen
 
-- Fill the plush toy with stuffing through the opening you left, making sure to fill all the parts well. The areas in the front are the hardest to get to.
+- Fill the plush toy with stuffing through the opening you left, making sure to fill all the parts well. De gebieden aan de voorkant zijn het moeilijkst te bereiken.
 - _Slipsticth_ of _zweepsteek_ de opening dicht.
 
-## Step 7: Tweaks
+## Stap 7: Tweaks
 
-You can use the long upholstery needle to add some tweaks to Skully. Adding some stitches to attach the back of the eyes to corner of seams 14 and 21 right through the skull will help to keep the eyes from popping out, and can help with giving the head more form. The same applies to the nose.
+Je kunt de lange stoffeernaald gebruiken om wat aanpassingen aan Skully te maken. Door wat steken toe te voegen om de achterkant van de ogen vast te maken aan de hoek van naden 14 en 21 dwars door de schedel heen, voorkom je dat de ogen eruit springen en kun je het hoofd meer vorm geven. Hetzelfde geldt voor de neus.
 
-It is also a good idea to add stitches between seams 5 and 14, along the length of both seams. This will make the cheek bones more pronounced and adds to the overall shape of the skull.
+Het is ook een goed idee om steken toe te voegen tussen naden 5 en 14, over de lengte van beide naden. Dit maakt de jukbeenderen meer uitgesproken en draagt bij aan de algehele vorm van de schedel.
 
 ## Stap 7: Geniet!
 
-That's it, you are all done. Start planning what pirate sewing ship you'll be joining!
+Dat is het, je bent helemaal klaar. Begin alvast te plannen aan welk piratennaaischip jij gaat deelnemen!
