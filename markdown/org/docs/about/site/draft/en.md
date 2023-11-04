@@ -56,4 +56,3 @@ This allows you to quickly verify the specific role of a setting or option witho
 
 ## Editor modes
 
-<Fixme>Complete these docs</Fixme>
