@@ -108,11 +108,11 @@ const SupportType = ({ type, active, t, update }) => (
   <ButtonFrame key={type} active={active} onClick={() => update(type)}>
     <div className="w-full flex flex-col gap-2">
       <div className="w-full text-lg leading-5 flex flex-row items-center justify-between grow-0">
-        <span>{t(type)}</span>
+        <span>{t(`support:${type}`)}</span>
         {icons[type]}
       </div>
       <div className="w-full text-normal font-normal normal-case pt-1 leading-5 grow">
-        {t(`${type}Desc`)}
+        {t(`support:${type}Desc`)}
       </div>
     </div>
   </ButtonFrame>
@@ -179,7 +179,7 @@ export const SupportForm = () => {
   if (issue || discussion)
     return (
       <div className="w-full max-w-xl">
-        <h5>{t('requestCreated')}</h5>
+        <h5>{t('support:requestCreated')}</h5>
         <p>
           We have created your request, you can find it here:
           <br />
@@ -190,7 +190,7 @@ export const SupportForm = () => {
         </p>
         <button className="btn btn-secondary" onClick={clear}>
           <LeftIcon />
-          {t('back')}
+          {t('support:back')}
         </button>
       </div>
     )
@@ -205,7 +205,7 @@ export const SupportForm = () => {
         </div>
         <p className="text-right">
           <WebLink
-            txt={t('useGitHubInstead')}
+            txt={t('support:useGitHubInstead')}
             href="https://github.com/freesewing/freesewing/issues/new/choose"
           />
         </p>
@@ -217,15 +217,15 @@ export const SupportForm = () => {
       <SupportType type={type} active={true} update={() => setType(false)} t={t} />
       <StringInput
         id="support-title"
-        label={t('title')}
+        label={t('support:title')}
         update={setTitle}
         current={title}
         valid={(val) => val.length > 10}
         docs={
           <div className="max-w-prose">
-            <h2>{t('title')}</h2>
-            <p>{t('titleDocs1')}</p>
-            <p>{t('titleDocs2')}</p>
+            <h2>{t('support:title')}</h2>
+            <p>{t('support:titleDocs1')}</p>
+            <p>{t('support:titleDocs2')}</p>
           </div>
         }
       />
@@ -239,21 +239,21 @@ export const SupportForm = () => {
           docs={
             <div className="max-w-prose">
               <h2>{t('design')}</h2>
-              <p>{t('designDocs1')}</p>
+              <p>{t('support:designDocs1')}</p>
             </div>
           }
         />
       )}
       <MarkdownInput
         id="support-body"
-        label={t('description')}
+        label={t('support:description')}
         update={setBody}
         current={body}
         valid={(val) => val.length > 10}
         docs={
           <div className="max-w-prose">
-            <h2>{t('description')}</h2>
-            <p>{t('descriptionDocs1')}</p>
+            <h2>{t('support:description')}</h2>
+            <p>{t('support:descriptionDocs1')}</p>
           </div>
         }
       />
@@ -265,14 +265,14 @@ export const SupportForm = () => {
           <Fragment key={key}>
             <ActiveImageInput
               id={`support-img-${key}`}
-              label={`${t('image')} ${key}`}
+              label={`${t('support:image')} ${key}`}
               update={(val) => setSingleImage(key, val)}
               current={images[key]}
               valid={(val) => val.length > 1}
               docs={
                 <div className="max-w-prose">
-                  <h2>{t('image')}</h2>
-                  <p>{t('imageDocs1')}</p>
+                  <h2>{t('support:image')}</h2>
+                  <p>{t('support:imageDocs1')}</p>
                 </div>
               }
               imgType="support"
@@ -281,14 +281,14 @@ export const SupportForm = () => {
             />
             {images[key] && (
               <Popout tip>
-                <span>{t('addImageToMd')}:</span>
+                <span>{t('support:addImageToMd')}:</span>
                 <CodeBox code={markup} title="MarkDown" />
                 <p className="text-right -mt-5">
                   <button
                     className="btn btn-sm btn-accent"
                     onClick={() => setBody(body + '\n\n' + markup)}
                   >
-                    {t('addToDescription')}
+                    {t('support:addToDescription')}
                   </button>
                 </p>
               </Popout>
@@ -298,7 +298,7 @@ export const SupportForm = () => {
       })}
       {Object.keys(images).length < 9 && (
         <button className="btn btn-secondary mt-2" onClick={addImage}>
-          {t('addImage')}
+          {t('support:addImage')}
         </button>
       )}
       <button
@@ -306,7 +306,7 @@ export const SupportForm = () => {
         disabled={title.length < 10}
         onClick={submit}
       >
-        {t('submitSupportRequest')}
+        {t('support:submitSupportRequest')}
       </button>
     </div>
   )

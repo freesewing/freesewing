@@ -47,7 +47,7 @@ export const socialList = (spectrum) => ({
   },
   Bluesky: {
     icon: <CloudIcon {...iconClasses(spectrum[4])} stroke={2} />,
-    href: social.YouTube,
+    href: social.Bluesky,
     community: true,
   },
   Discord: {
