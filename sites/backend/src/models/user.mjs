@@ -919,7 +919,7 @@ UserModel.prototype.passwordSignIn = async function (req) {
       if (Array.isArray(check)) [result, mfaScratchCodes] = check
       else result = check
       if (!result) return this.setResponse(401, 'signInFailed')
-      if (mfaScratchCodes.length !== this.clear.data.mfaScratchCodes.length) {
+      if (mfaScratchCodes && mfaScratchCodes.length !== this.clear.data.mfaScratchCodes.length) {
         // Scratch code was used, update record to remove it
         await this.update({ data: { ...this.clear.data, mfaScratchCodes } })
       }
