@@ -10,7 +10,7 @@ Deze omgeving biedt een groot aantal mogelijkheden en op deze pagina's zullen we
 
 ## De redacteur
 
-Hieronder zie je een screenshot van de patrooneditor van FreeSewing in [kioskmodus](/docs/about/site/draft/ui-settings/kiosk) die de header en footer van de site verbergt en de editor het hele scherm laat innemen. </strong> Ook is het menu **View (links) uitgebreid. Standaard zie je alleen de pictogrammen en niet de tekst van het menu aan de linkerkant.</p>
+Hieronder zie je een screenshot van de patrooneditor van FreeSewing in [kioskmodus](/docs/about/site/draft/ui-settings/kiosk) die de header en footer van de site verbergt en de editor het hele scherm laat innemen. </strong> Ook is het menu **View (links) uitgebreid. Standaard zie je alleen de pictogrammen en niet de tekst van het menu aan de linkerkant.
 
 ![Screenshot van de patroonbewerker van FreeSewing](editor.png "Screenshot van de patroonbewerker van Freesewing")
 
@@ -54,3 +54,4 @@ Je kunt op dat pictogram klikken om de inline documentatie te openen. Hiermee ku
 
 ## Modi redacteur
 
+<Fixme>Complete these docs</Fixme>
