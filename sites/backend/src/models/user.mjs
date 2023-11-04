@@ -910,11 +910,14 @@ UserModel.prototype.passwordSignIn = async function (req) {
     /*
      * If there is a token, verify it and if it is not correct, return 401
      */ else {
-      const [result, mfaScratchCodes] = await this.mfa.verify(
+      const check = await this.mfa.verify(
         req.body.token,
         this.clear.mfaSecret,
         this.clear.data.mfaScratchCodes
       )
+      let result, mfaScratchCodes
+      if (Array.isArray(check)) [result, mfaScratchCodes] = check
+      else result = check
       if (!result) return this.setResponse(401, 'signInFailed')
       if (mfaScratchCodes.length !== this.clear.data.mfaScratchCodes.length) {
         // Scratch code was used, update record to remove it
@@ -1006,11 +1009,14 @@ UserModel.prototype.linkSignIn = async function (req) {
     /*
      * If there is a token, verify it and if it is not correct, return 401
      */
-    const [result, mfaScratchCodes] = await this.mfa.verify(
+    const check = await this.mfa.verify(
       req.body.token,
       this.clear.mfaSecret,
       this.clear.data.mfaScratchCodes
     )
+    let result, mfaScratchCodes
+    if (Array.isArray(check)) [result, mfaScratchCodes] = check
+    else result = check
     if (!result) return this.setResponse(401, 'signInFailed')
     if (mfaScratchCodes.length !== this.clear.data.mfaScratchCodes.length) {
       // Scratch code was used, update record to remove it
@@ -1508,7 +1514,9 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
       this.clear.mfaSecret,
       this.clear.data.mfaScratchCodes
     )
-    const result = Array.isArray(check) ? check[0] : check
+    let result, mfaScratchCodes
+    if (Array.isArray(check)) [result, mfaScratchCodes] = check
+    else result = check
     if (result) {
       /*
        * Token is valid. Update user record to disable MFA
@@ -1543,10 +1551,11 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
     /*
      * Verify secret and token
      */
-    if (
-      body.secret === this.clear.mfaSecret &&
-      (await this.mfa.verify(body.token, this.clear.mfaSecret, false))
-    ) {
+    const check = await this.mfa.verify(body.token, this.clear.mfaSecret, false)
+    let result, mfaScratchCodes
+    if (Array.isArray(check)) [result, mfaScratchCodes] = check
+    else result = check
+    if (body.secret === this.clear.mfaSecret && result) {
       /*
        * Looks good. Generated scratch codes, then update the user record to enable MFA
        */
