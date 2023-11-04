@@ -1,18 +1,18 @@
 ---
-title: "Otis, the simple baby romper: Cutting Instructions"
+title: "Otis, der einfache Babystrampler: Schnittanleitung"
 ---
 
 - **Oberstoff**
-  - Cut **1 back** part on fold
+  - Schneide **1 zurück** Teil auf Falz
   - Schneide **1 vorderen** Teil an der Falte ab
   - Cut **2 shortSleeve ** parts on fold or
-  - Cut **2 longSleeve** parts on fold
+  - Schneide **2 langärmelige** Teile auf Falz
   - Cut **1 bindingBackNeck** part
   - Cut **1 bindingFrontNeck** part
-  - Cut **2 bindingLeg** parts
+  - Schneide **2 bindingLeg** Teile
 
 <Note>
 
-Depending on your fabric, it may be useful to add interfacing to the snap placket. 
+Je nach Stoff kann es sinnvoll sein, die Druckknopfleiste mit einer Einlage zu versehen. 
 
 </Note>

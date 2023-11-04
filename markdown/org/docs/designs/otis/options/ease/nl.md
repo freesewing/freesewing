@@ -2,6 +2,6 @@
 title: "Overwijdte"
 ---
 
-Otis is constructed with a considerable amount of ease. This is to allow for nappies, and the fact that infants move around a lot, and loose garments are more comfortable for them. It also allows them to grow a bit without you having to make a new one every week.
+Otis is met veel gemak gebouwd. Dit is om rekening te houden met luiers en het feit dat baby's veel bewegen en losse kleding voor hen comfortabeler is. Zo kunnen ze ook een beetje groeien zonder dat je elke week een nieuwe hoeft te maken.
 
-The ease is a percentage of the waist measurement. Default is 14%
+Het gemak is een percentage van de taillemaat. Standaard is 14%

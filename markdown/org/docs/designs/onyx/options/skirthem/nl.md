@@ -1,5 +1,5 @@
 ---
-title: "Skirt hem"
+title: "Rokzoom"
 ---
 
-Sets the hem allowance of the hem along the bottom of the skirt, as a multiple of the seam allowance.
+Bepaalt de zoomtoeslag van de zoom langs de onderkant van de rok, als een veelvoud van de naadtoeslag.

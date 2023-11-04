@@ -1,10 +1,10 @@
 ---
-title: "Leg length"
+title: "Beenlengte"
 ---
 
-Controls how long the legs on your garment will be.
- - 15-30% will make short legs.
- - 40-50% will be around knee length.
- - 91% will cover the ankles (appropriate for long-legged swimwear).
- - 100% will reach the floor (appropriate for one-piece pajamas using ribbed cuffs).
+Bepaalt hoe lang de pijpen van je kledingstuk worden.
+ - 15-30% maakt korte benen.
+ - 40-50% zal rond de knielengte zijn.
+ - 91% bedekt de enkels (geschikt voor zwemkleding met lange pijpen).
+ - 100% komt tot de grond (geschikt voor pyjama's uit één stuk met geribde boorden).
 

@@ -1,5 +1,5 @@
 ---
-title: "Leg hem ease"
+title: "Gemakkelijke beenzoom"
 ---
 
-Controls how wide the bottom of the legs of the garment will be. The base value is interpolated between the circumference of the upper legs and the ankles, based on how long the legs on the garment are, and this option is then applied to this.
+Bepaalt hoe breed de onderkant van de pijpen van het kledingstuk worden. De basiswaarde wordt geïnterpoleerd tussen de omtrek van de bovenbenen en de enkels, gebaseerd op hoe lang de benen van het kledingstuk zijn, en deze optie wordt daarop toegepast.

@@ -1,20 +1,20 @@
 ---
-title: "Simone by Gaëlle"
-caption: "A lovely Simone shirt with beautiful details"
+title: "Simone від Gaëlle"
+caption: "Чудова сорочка Simone з красивими деталями"
 date: 20231017
-intro: "This Simone shirt features beautiful details, including coordinated buttons and custom labels."
+intro: "Ця сорочка від Simone вирізняється красивими деталями, зокрема узгодженими ґудзиками та спеціальними етикетками."
 designs:
   - "симона"
-maker: Natalia
+maker: Наталя
 ---
 
-The talented Gaëlle shared this Simone shirt. Don't miss the the detail photos.
+Талановита Гаель поділилася цією сорочкою Сімони. Не пропустіть детальні фото.
 
-![Another view of the front](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-1/public "Another view of the front")
+![Ще один вид спереду](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-1/public "Ще один вид спереду")
 
-![Collar details](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-2/public "Collar details")
+![Деталі коміра](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-2/public "Деталі коміра")
 
-![Cuff button details](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-4/public "Cuff button details")
+![Деталі ґудзиків на манжетах](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-4/public "Деталі ґудзиків на манжетах")
 
-![Custom label tags](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-5/public "Custom label tags")
+![Спеціальні етикетки для етикеток](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-5/public "Спеціальні етикетки для етикеток")
 

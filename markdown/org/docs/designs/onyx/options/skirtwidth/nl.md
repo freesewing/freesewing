@@ -1,7 +1,7 @@
 ---
-title: "Skirt width"
+title: "Breedte rok"
 ---
 
-Controls the width of the skirt at the bottom, as a percentage of the waist measurement.
+Bepaalt de breedte van de rok aan de onderkant, als percentage van de taillemaat.
 
-The top of the skirt is cut to the same width, and gathered around the waist. As such, a large value for this option will make a more heavily gathered skirt that is wide at the bottom.
+De bovenkant van de rok wordt op dezelfde breedte geknipt en rond de taille gerimpeld. Een grote waarde voor deze optie zorgt dus voor een zwaarder gerimpelde rok die wijd is aan de onderkant.

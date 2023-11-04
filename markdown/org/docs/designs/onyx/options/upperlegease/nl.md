@@ -1,14 +1,14 @@
 ---
-title: "Upper leg ease"
+title: "Bovenbeen gemak"
 ---
 
-Controls how wide the garment will be at your upper leg.
+Bepaalt hoe wijd het kledingstuk wordt bij je bovenbeen.
 
-Whatever value you provide here will simply be added to your upper leg circumference measurement when drafting the garment.
+De waarde die je hier opgeeft, wordt gewoon opgeteld bij de omtrek van je bovenbeen als je het kledingstuk ontwerpt.
 
 > ##### Deze optie laat negatieve waarden toe.
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Je moet negatief gemak gebruiken als je een stretchmateriaal gebruikt dat je strak wilt laten aansluiten. Unisuits en unitards hebben meestal een negatieve pasvorm, terwijl andere kledingstukken meestal een positieve pasvorm hebben.
 
 
 

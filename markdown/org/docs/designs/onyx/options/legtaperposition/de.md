@@ -1,9 +1,9 @@
 ---
-title: "Leg taper position"
+title: "Position der Beinverjüngung"
 ---
 
-Controls how the lower legs are laid out on the pattern.
+Steuert, wie die Unterschenkel auf dem Muster angeordnet werden.
 
-Whether the legs taper inwards or outwards or down the middle will slightly affect the fit of the garment, and will affect the shape around the crotch fork and the upper legs. It's recommended to use a value for this option that produces the smoothest looking front and back pattern pieces.
+Ob sich die Beine nach innen oder außen oder in der Mitte verjüngen, wirkt sich leicht auf die Passform des Kleidungsstücks aus und beeinflusst die Form im Bereich der Schrittgabel und der Oberschenkel. Es wird empfohlen, für diese Option einen Wert zu wählen, der die vorderen und hinteren Musterteile am glattesten aussehen lässt.
 
-Note: Setting this to 100% will generally produce pattern pieces that can be fit more efficiently onto the fabric.
+Hinweis: Wenn du hier 100% einstellst, lassen sich die Musterteile in der Regel besser auf den Stoff übertragen.

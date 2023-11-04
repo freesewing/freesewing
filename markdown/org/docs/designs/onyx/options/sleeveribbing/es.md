@@ -1,7 +1,7 @@
 ---
-title: "Sleeve ribbing"
+title: "Canalé de la manga"
 ---
 
-Choose whether to make ribbed knit cuffs for the sleeves or to use a hem.
+Elige si quieres hacer puños de punto de canalé para las mangas o utilizar un dobladillo.
 
-Note: Setting this option to 'hem' will enable the 'sleeve hem' option, while setting this option to 'ribbing' will enable the 'sleeve ribbing length' and 'sleeve ribbing width' options.
+Nota: Si configuras esta opción como "dobladillo", se activará la opción "dobladillo de la manga", mientras que si configuras esta opción como "canalé", se activarán las opciones "longitud del canalé de la manga" y "anchura del canalé de la manga".

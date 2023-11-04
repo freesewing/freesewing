@@ -1,5 +1,5 @@
 ---
-title: "Octoplushy, the plushy octopus: Designer Notes"
+title: "Octoplushy, el pulpo de peluche: Notas del diseñador"
 ---
 
-<Fixme>Wouter designed this. They have not written any notes (yet)</Fixme>
+<Fixme>Wouter diseñó esto. No han escrito ninguna nota (todavía)</Fixme>

@@ -2,8 +2,8 @@
 title: Über mich
 ---
 
-Your account **bio** is the place where you can tell a little bit about yourself.
+Dein Account **bio** ist der Ort, an dem du ein wenig über dich erzählen kannst.
 
-Other FreeSewing users can see your bio, so this is a way to find like-minded people or promote your own content.
+Andere FreeSewing-Nutzer können deine Biografie sehen. So kannst du Gleichgesinnte finden oder deine eigenen Inhalte bewerben.
 
-This field supports Markdown, so you can add links and even images.
+Dieses Feld unterstützt Markdown, sodass du Links und sogar Bilder hinzufügen kannst.

@@ -1,11 +1,11 @@
 ---
-title: "Legacy armhole depth"
+title: "Profondeur de l'emmanchure de l'héritage"
 ---
 
-This option allows you to use the legacy way of calculating the armhole depth in Brian, which Jaeger extends.
+Cette option te permet d'utiliser l'ancienne façon de calculer la profondeur de l'emmanchure en Brian, que Jaeger prolonge.
 
-The legacy (v2) way used the biceps circumference to estimate the armhole depth.
+L'ancienne méthode (v2) utilisait la circonférence du biceps pour estimer la profondeur de l'emmanchure.
 
-The v3 way instead uses the waist to armpit measurement to locate the bottom of the armhole.
+La méthode v3 utilise plutôt la mesure de la taille à l'aisselle pour situer le bas de l'emmanchure.
 
-If you enable this option, the Brian block will revert to the v2 way of calculating the armhole depth, and Jaeger will follow..
+Si tu actives cette option, le bloc Brian reviendra à la façon v2 de calculer la profondeur de l'emmanchure, et Jaeger suivra...

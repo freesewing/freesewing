@@ -10,6 +10,6 @@ title: "Chemise Simone : Instructions de couture"
 
 <Note>
 
-Simone is just our [Simon pattern](/designs/simon/) adapted for breasts so you can now just follow [Simon's instructions](/docs/designs/simon/instructions) to finish your Simone :)
+Simone est simplement notre [modèle Simon](/designs/simon/) adapté pour les poitrines. Tu peux donc suivre les [instructions de Simon](/docs/designs/simon/instructions) pour terminer ta Simone :)
 
 </Note>

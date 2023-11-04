@@ -62,6 +62,6 @@ Vergeet de naadtoeslag voor deze stukken niet bij het knippen als je deze delen 
 
 <Fixme>
 
-Documentatie voor dit patroon moet nog worden geschreven. In the meantime their are some preliminary instructions for ([Carlita, Carlton's Counterpart](/docs/designs/carlita/instructions/)) that should help.
+Documentatie voor dit patroon moet nog worden geschreven. In de tussentijd zijn er wat voorlopige instructies voor ([Carlita, Carlton's Counterpart](/docs/designs/carlita/instructions/)) die zouden moeten helpen.
 
 </Fixme>

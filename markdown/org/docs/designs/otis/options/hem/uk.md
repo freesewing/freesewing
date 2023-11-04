@@ -1,7 +1,7 @@
 ---
-title: "Hem"
+title: "Подол"
 ---
 
-Hem determines the size of the hem on the sleeves.
+Підгин визначає розмір подолу на рукавах.
 
-The hem is a percentage of the distance between the shoulder and the arm opening (of the short sleeve version). Default is 10%
+Довжина подолу - це відсоток від відстані між плечем і проймою (у варіанті з коротким рукавом). За замовчуванням - 10

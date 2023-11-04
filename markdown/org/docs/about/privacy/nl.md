@@ -2,9 +2,9 @@
 title: Privacy melding
 ---
 
-**Last update**: 13 August 2023
+**Laatste update**: 13 augustus 2023
 
-Deze privacy melding beschrijft de persoonlijke gegevens die we opslaan. It outlines why we need the data, how long we keep it, and whether we share it with any third-parties (we do not).
+Deze privacy melding beschrijft de persoonlijke gegevens die we opslaan. Hierin staat waarom we de gegevens nodig hebben, hoe lang we ze bewaren en of we ze delen met derden (dat doen we niet).
 
 We hebben er vertrouwen in dat ons engagement voor privacy aangetoond zal worden.
 
@@ -17,23 +17,23 @@ Voor de duidelijkheid hebben we dit in drie verschillende rollen gesplitst:
 ## Hoe we uw bezoekersgegevens gebruiken
 
 <Note>
-This data is stored for anybody who visits our website and connects to our backend APIs.
+Deze gegevens worden opgeslagen voor iedereen die onze website bezoekt en verbinding maakt met onze backend API's.
 </Note>
 
 ##### Welke persoonlijke gegevens bewaren we?
 
 - Je IP adres
 
-##### Why do we need this data?
+##### Waarom hebben we deze gegevens nodig?
 
-- To protect ourselves from abuse.
-- We use the IP address only to blacklist malicious or abusive clients or investigate security incidents.
+- Om onszelf te beschermen tegen misbruik.
+- We gebruiken het IP-adres alleen om kwaadwillende of misbruikende klanten op een zwarte lijst te zetten of om beveiligingsincidenten te onderzoeken.
 
-##### How long do we keep this data?
+##### Hoe lang bewaren we deze gegevens?
 
 - We houden deze logs niet langer dan 6 maanden.
 
-##### Do we share this data?
+##### Delen we deze gegevens?
 
 - Nee, nooit
 
@@ -75,8 +75,8 @@ Deze gegevens worden opgeslagen voor iedereen met een account op onze website.
 
 - Je e-mailadres
 - Je gebruikersnaam en wachtwoord
-- Body measurements and a (freely chosen) name for any measurements set of pattern you store in your account.
-- Optional: A profile picture, bio, and your GitHub username. An image and notes for each measurements set or pattern stored in your account.
+- Lichaamsmetingen en een (vrij te kiezen) naam voor elke meetset of patroon die je opslaat in je account.
+- Optioneel: Een profielfoto, bio en je GitHub gebruikersnaam. Een afbeelding en aantekeningen voor elke meetset of patroon die is opgeslagen in je account.
 
 ##### Waarom hebben we dit nodig?
 
@@ -86,15 +86,15 @@ Deze gegevens worden opgeslagen voor iedereen met een account op onze website.
 
 ##### Hoe lang houden we dit bij?
 
-- Until your remove your account, or until at least 12 months after the last time you connected to our backend.
-- We will always contact you prior to removing any inactive data.
+- Totdat je je account verwijdert, of tot minstens 12 maanden na de laatste keer dat je verbinding hebt gemaakt met onze backend.
+- We zullen altijd contact met je opnemen voordat we inactieve gegevens verwijderen.
 
 ##### Wordt dit gedeeld?
 
 - Nee, nooit.
 
 
-## Other info relevant to this privacy notice
+## Andere informatie met betrekking tot deze privacyverklaring
 
 ### Gebruik door minderjarigen jonger dan 16
 
@@ -118,22 +118,22 @@ Als je denkt dat je persoonlijke gegevens niet langer veilig zijn, contacteer da
 
 ### Diensten/service
 
-Our hosting providers manage various components of our infrastructure us. Dit omvat hosting, opslag en back-up.
+Onze hostingproviders beheren verschillende onderdelen van onze infrastructuur. Dit omvat hosting, opslag en back-up.
 
 Alhoewel dit betekent dat ze je gegevens verwerken (in de strikte zin van het woord), wil het niet zeggen dat ze toegang nodig hebben tot informatie over jou. Aangezien we profielgegevens versleutelen is het voor hen bovendien niet interessant toegang te krijgen tot deze gegevens, ook al zouden ze dat willen.
 
-### Warrant canaries
+### Kanaries
 
 Ook al hebben we niet de intentie je persoonlijke gegevens op eender welke manier te delen, staan we niet boven de wet.
 
 Als we wettelijk verplicht zijn, of als we vinden dat het de minst erge optie is, zullen we persoonlijke gegevens vrijgeven.
 
-So far:
+Tot nu toe:
 
-- FreeSewing has never turned over our encryption or authentication keys or our customers' encryption or authentication keys to anyone.
-- FreeSewing has never installed any law enforcement software or equipment anywhere on our infrastructure.
-- FreeSewing has never provided any law enforcement organization personal data of any of our users or visitors.
-- FreeSewing has never weakened, compromised, or subverted any of its encryption at the request of law enforcement or another third party.
+- FreeSewing heeft nooit onze encryptie- of verificatiesleutels of de encryptie- of verificatiesleutels van onze klanten aan iemand gegeven.
+- FreeSewing heeft nooit software of apparatuur voor wetshandhaving geïnstalleerd op onze infrastructuur.
+- FreeSewing heeft nooit persoonlijke gegevens van onze gebruikers of bezoekers verstrekt aan rechtshandhavingsinstanties.
+- FreeSewing heeft zijn encryptie nooit verzwakt, gecompromitteerd of ondermijnd op verzoek van wetshandhaving of een andere derde partij.
 
 ### Zie ook
 

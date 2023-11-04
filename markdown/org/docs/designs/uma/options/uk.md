@@ -1,5 +1,5 @@
 ---
-title: "Uma undies: Design Options"
+title: "Ума роздягається: Варіанти дизайну"
 ---
 
 <DesignOptions design='uma' />

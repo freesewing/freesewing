@@ -1,18 +1,18 @@
 ---
-title: "Otis, the simple baby romper: Cutting Instructions"
+title: "Отіс, простий дитячий комбінезон: Інструкція з розкрою"
 ---
 
 - **Основна тканина**
-  - Cut **1 back** part on fold
+  - Виріжте **1 задню** частину на згин
   - Виріжте **1 передню** частину по згину
-  - Cut **2 shortSleeve ** parts on fold or
-  - Cut **2 longSleeve** parts on fold
-  - Cut **1 bindingBackNeck** part
-  - Cut **1 bindingFrontNeck** part
-  - Cut **2 bindingLeg** parts
+  - Виріжте **2 частини короткого рукава ** по згину або
+  - Виріжте **2 деталі з довгим рукавом** на згині
+  - Розріз **1 палітуркаЗадня горловина** частина
+  - Розкрій **1 палітуркаПереднягорловина** частина
+  - Вирізати **2 частини палітурки**
 
 <Note>
 
-Depending on your fabric, it may be useful to add interfacing to the snap placket. 
+Залежно від тканини, може бути корисно додати прокладку до застібки-фіксатора. 
 
 </Note>

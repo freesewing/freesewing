@@ -1,13 +1,13 @@
 ---
-title: "Shelly Swimshirt: Designer Notes"
+title: "Maillot de bain Shelly : Notes du créateur"
 ---
 
-Shelly is my first design. It was born out of the need for shirts that can compress very tight (for sensory needs stemming from autism), and the lack of suitable ready made shirts. Undersized swim shirts are tight enough, but expose the belly and pinch in the armpits, so I set out to design a shirt that would be both comfortable and therapeutic.
+Shelly est mon premier dessin. Elle est née du besoin de chemises pouvant se comprimer très fortement (pour des besoins sensoriels issus de l'autisme), et de l'absence de chemises prêtes à l'emploi adaptées. Les maillots de bain trop petits sont assez serrés, mais exposent le ventre et pincent au niveau des aisselles, j'ai donc entrepris de concevoir un maillot qui serait à la fois confortable et thérapeutique.
 
-Raglan sleeves are used to provide additional flexibility and mobility in the armpit, and are very important for very tight clothes.
+Les manches raglan sont utilisées pour apporter plus de souplesse et de mobilité au niveau de l'aisselle, et sont très importantes pour les vêtements très serrés.
 
-That said, Shelly is a simple and versatile design capable of making knit tops over a wide range of eases, from tightly compressive compression shirts, to loose raglan tees. It makes a great first knit garment project, as it only uses five pieces of fabric cut from four pattern pieces, and features simple seams that can be entirely made with a serger/overlocker. It's also fairly tolerant of small errors in measuring/cutting/sewing due to the elastic nature of knits, especially swim fabric, and the lack of any fine features requiring too much attention to detail on Shelly.
+Cela dit, Shelly est un modèle simple et polyvalent capable de fabriquer des hauts en tricot sur une large gamme d'eases, des chemises de compression serrées, aux tees raglan amples. Il s'agit d'un excellent premier projet de tricot, car il n'utilise que cinq pièces de tissu coupées à partir de quatre pièces de patron, et présente des coutures simples qui peuvent être entièrement réalisées à l'aide d'une surjeteuse. Elle est également assez tolérante aux petites erreurs de mesure/coupe/couture en raison de la nature élastique des tricots, en particulier du tissu de natation, et de l'absence de caractéristiques fines nécessitant une trop grande attention aux détails sur Shelly.
 
-The name is chosen because I like the beach and I like seashells.
+Le nom est choisi parce que j'aime la plage et j'aime les coquillages.
 
 Thrunic

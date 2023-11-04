@@ -4,7 +4,7 @@ title: "Cintas"
 
 ***
 
-Whether to includes ties, yes or no
+Incluir lazos, sí o no
 
 
 

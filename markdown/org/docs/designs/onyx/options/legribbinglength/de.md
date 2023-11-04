@@ -1,7 +1,7 @@
 ---
-title: "Leg ribbing length"
+title: "Länge der Beinrippen"
 ---
 
-Controls how long the ribbing around the leg is, as a percentage of the leg circumference. Setting this to a smaller value will make the cuff tighter and hold onto the ankle better, while a larger value will give more room.
+Legt fest, wie lang die Rippen um das Bein herum sind, und zwar in Prozent des Beinumfangs. Wenn du hier einen kleineren Wert einstellst, wird die Manschette enger und hält besser am Knöchel, während ein größerer Wert mehr Spielraum bietet.
 
-Note: This option is only available if the 'leg ribbing' option is set to 'ribbing.'
+Hinweis: Diese Option ist nur verfügbar, wenn die Option "Beinrippung" auf "Rippung" eingestellt ist.

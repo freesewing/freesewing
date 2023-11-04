@@ -1,6 +1,6 @@
 ---
-title: "Noble body block: Designer Notes"
+title: "Edel lijfblok: Opmerkingen ontwerper"
 ---
 
-<Fixme>Wouter designed this. They have not written any notes (yet)</Fixme>
+<Fixme>Wouter heeft dit ontworpen. Ze hebben (nog) geen aantekeningen geschreven</Fixme>
 

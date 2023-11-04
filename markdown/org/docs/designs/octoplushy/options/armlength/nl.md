@@ -1,5 +1,5 @@
 ---
-title: "Arm Length"
+title: "Lengte arm"
 ---
 
-This setting adjusts the length of the arms.
+Deze instelling past de lengte van de armen aan.

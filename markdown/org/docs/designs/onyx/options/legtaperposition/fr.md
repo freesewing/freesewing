@@ -1,9 +1,9 @@
 ---
-title: "Leg taper position"
+title: "Position du cône de la jambe"
 ---
 
-Controls how the lower legs are laid out on the pattern.
+Contrôle la façon dont les jambes inférieures sont disposées sur le modèle.
 
-Whether the legs taper inwards or outwards or down the middle will slightly affect the fit of the garment, and will affect the shape around the crotch fork and the upper legs. It's recommended to use a value for this option that produces the smoothest looking front and back pattern pieces.
+Le fait que les jambes se rétrécissent vers l'intérieur ou l'extérieur ou vers le milieu aura une légère incidence sur la coupe du vêtement, et affectera la forme autour de la fourche de l'entrejambe et du haut des jambes. Il est recommandé d'utiliser une valeur pour cette option qui produise les pièces de motifs avant et arrière les plus lisses.
 
-Note: Setting this to 100% will generally produce pattern pieces that can be fit more efficiently onto the fabric.
+Remarque : en réglant ce paramètre sur 100 %, on obtient généralement des pièces de patron qui peuvent être ajustées plus efficacement sur le tissu.

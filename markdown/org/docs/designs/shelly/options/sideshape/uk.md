@@ -1,6 +1,6 @@
 ---
-title: "Side shape"
+title: "Форма бічної сторони"
 ---
 
-Controls how the side seam is curved. Zero creates a straight line from the armpit to the side of the hips. Positive values add material and give the side seam a rounded/convex shape, while negative values remove material and give the side seam an hourglass/concave shape. This option will have no effect if the 'straight sides' option is enabled.
+Контролює вигин бічного шва. Нуль створює пряму лінію від пахви до бокової частини стегон. Позитивні значення додають матеріал і надають бічному шву округлу/опуклу форму, тоді як негативні значення видаляють матеріал і надають бічному шву форму пісочного годинника/увігнуту форму. Ця опція не матиме ефекту, якщо увімкнено опцію "прямі сторони".
 

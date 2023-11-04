@@ -2,7 +2,7 @@
 title: Зображення
 ---
 
-If you'd like you can add an **image** to your pattern, for example of the finished make.
+За бажанням ви можете додати до викрійки **зображення** , наприклад, готового виробу.
 
-This can help you remember exactly what this pattern was, which can be useful as you can end up having many patterns saved to your account.
+Це допоможе вам точно запам'ятати, що це був за шаблон, що може бути корисно, оскільки у вашому акаунті може бути збережено багато шаблонів.
 

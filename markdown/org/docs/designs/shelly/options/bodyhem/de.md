@@ -1,6 +1,6 @@
 ---
-title: "Body hem"
+title: "Körpersaum"
 ---
 
-Sets the hem allowance of the hem along the bottom of the body of the shirt, as a multiple of the seam allowance.
+Legt die Saumzugabe des Saums entlang der Unterseite des Hemdkörpers als Vielfaches der Nahtzugabe fest.
 

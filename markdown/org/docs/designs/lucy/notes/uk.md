@@ -1,5 +1,5 @@
 ---
-title: "Lucy tie-on pocket: Designer Notes"
+title: "Кишеня на зав'язці Люсі: Дизайнерські нотатки"
 ---
 
-This is a 18th century pocket pattern based on the hanging pocket in Patterns of Fashion 1 pp. 73. I made it so people could have a historical pocket pattern that is easily adjustable. I would like historical patterns and resources to be more accesible to people so the documentation has some historical context and suggestions on historically accurate ways to make it, but its just as awesome to see people make wild modern versions. 
+Це викрійка кишені 18 століття, заснована на висячій кишені з "Візерунків моди" 1 стор. 73. Я зробив його, щоб люди могли мати історичну модель кишені, яку легко регулювати. Мені б хотілося, щоб історичні зразки і ресурси були більш доступними для людей, щоб документація мала певний історичний контекст і пропозиції щодо історично точних способів її створення, але так само чудово бачити, як люди створюють дикі сучасні версії. 

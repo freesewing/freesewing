@@ -1,13 +1,13 @@
 ---
-title: "Armpit ease"
+title: "Facilidad axilar"
 ---
 
-Shifts the sleeves downward to give extra room in the armpit, measured as a percentage of the sleeve diameter. If in doubt, go with the default value.
+Desplaza las mangas hacia abajo para dejar más espacio en la axila, medido como porcentaje del diámetro de la manga. En caso de duda, utiliza el valor por defecto.
 
-Note: This option does not change the diameter of the sleeve. To make the sleeve larger or smaller, use the Sleeve ease option.
+Nota: Esta opción no modifica el diámetro del manguito. Para hacer la manga más grande o más pequeña, utiliza la opción Facilidad de la manga.
 
-Note: The Raglan scoop length and Raglan scoop depth options also affect the amount of ease in the armpit.
+Nota: Las opciones de longitud y profundidad de la manga raglán también afectan a la holgura en la axila.
 
 > ##### Esta opción también permite valores negativos.
 > 
-> Negative values will move the sleeves upwards. Use with caution, even on stretch garments, as this can easily cause binding at the armpit.
+> Los valores negativos desplazarán las mangas hacia arriba. Utilízalo con precaución, incluso en prendas elásticas, ya que puede provocar fácilmente atascos en la axila.

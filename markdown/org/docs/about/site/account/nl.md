@@ -2,7 +2,7 @@
 title: Account
 ---
 
-Your FreeSewing account is where we store your data. Your account itself can hold the following fields:
+Je FreeSewing account is waar we je gegevens opslaan. Je account zelf kan de volgende velden bevatten:
 
 <ReadMore recurse />
 

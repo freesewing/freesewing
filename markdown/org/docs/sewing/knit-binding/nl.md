@@ -111,28 +111,28 @@ Op deze manier is er geen gegok naar de lengte van je bies, en zit de naad van d
 
 > Voor gedetailleerde instructies, kijk eens bij [Aaron](/docs/designs/aaron/instructions)
 
-## Alternate method
+## Alternatieve methode
 
 While the above instructions describe one way to attach a knit band or knit binding, it is not the only method that can be used. An alternate method is to cut the exact amount of binding needed, sew it into a ring, and then attach the ring to the garment opening.
 
-Some people feel that this is an easier method for novice sewists. They are told exactly how much binding to use, and they do not have to guess how much they should be stretching the binding as they sew.
+Sommige mensen vinden dit een gemakkelijkere methode voor beginnende naaisters. They are told exactly how much binding to use, and they do not have to guess how much they should be stretching the binding as they sew.
 
-1. Measure the garment opening that the binding will cover. Be sure to measure at the seamline, to account for seam allowance.
+1. Meet de opening van het kledingstuk waar de bies overheen komt. Zorg ervoor dat je bij de naadlijn meet, zodat je rekening kunt houden met de naadtoeslag.
 
-2. Check the pattern instructions for the length of binding to use. Or, use a length 80-90% smaller than the opening based on the stretchiness of the binding fabric. (For example, 80% for very stretchy fabric, 90% for less stretchy fabric.)
+2. Controleer de patrooninstructies voor de lengte van de binding die je moet gebruiken. Or, use a length 80-90% smaller than the opening based on the stretchiness of the binding fabric. (Bijvoorbeeld 80% voor zeer rekbare stof, 90% voor minder rekbare stof).
 
-3. Cut the length of binding required plus seam allowance at each end.
+3. Knip de benodigde lengte van de afwerkstrook plus naadtoeslag aan beide uiteinden.
 
-4. Sew the binding ends right sides together to form a closed loop or ring. Trim excess seam allowance.
+4. Naai de binduiteinden met de goede kanten op elkaar tot een gesloten lus of ring. Knip de overtollige naadtoeslag bij.
 
-5. Fold the ring together at the seam to divide the ring into equal halves. Mark or insert pins at each end fold. One pin will be in the seam, and the other will mark the halfway point around the ring.
+5. Vouw de ring bij de naad samen om de ring in gelijke helften te verdelen. Markeer of steek spelden in elke eindvouw. One pin will be in the seam, and the other will mark the halfway point around the ring.
 
-6. Unfold the ring and fold it again into equal halves so the two marks/pins meet together in the middle. Again mark or insert pins into each end fold. Now there are 4 pins or marks dividing the ring into 4 quarters of equal length.
+6. Vouw de ring open en vouw hem weer in gelijke helften zodat de twee merktekens/spelden in het midden bij elkaar komen. Markeer opnieuw of steek spelden in elke eindvouw. Nu zijn er 4 pinnen of merktekens die de ring in 4 kwarten van gelijke lengte verdelen.
 
 7. Similarly, fold the garment opening and mark or insert pins to divide the garment opening into 4 quarters of equal length.
 
-8. Match the marks or pins on the binding with the ones on the garment opening. (Try to align it so the seam is at the most inconspicuous location in the garment opening. For example, if binding a neck opening align the binding so the seam is at the back of the neck opening.)
+8. Zorg dat de markeringen of spelden op de bies overeenkomen met die op de kledingopening. (Try to align it so the seam is at the most inconspicuous location in the garment opening. For example, if binding a neck opening align the binding so the seam is at the back of the neck opening.)
 
-9. Pin the binding ring to the garment opening at each quarter mark/pin. This ensures that the binding is evenly distributed around the garment opening.
+9. Speld de bindring aan de kledingopening bij elke kwart markering/speld. This ensures that the binding is evenly distributed around the garment opening.
 
-10. Sew the binding to the opening, one quarter at a time. While sewing, evenly stretch each quarter segment of binding to match the length of the quarter segment of garment opening.
+10. Naai de binding aan de opening, een kwart per keer. While sewing, evenly stretch each quarter segment of binding to match the length of the quarter segment of garment opening.

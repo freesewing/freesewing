@@ -4,19 +4,19 @@ title: Guide des repères de patron
 
 Nous espérons que nos patrons sont assez faciles à comprendre, mais si vous rencontrez quelque chose qui ne vous paraît pas clair, veuillez trouver ci-dessous une référence de toutes nos repères de patron :
 
-- [Lines](#lines)
+- [Lignes](#lines)
   - [Coutures](#seams)
   - [Marge de couture](#seam-allowance)
   - [Droit fil](#grainline)
-  - [Cut-on-fold indicator](#cut-on-fold-indicator)
+  - [Indicateur de pliage](#cut-on-fold-indicator)
   - [Dimensions](#dimensions)
   - [Autres lignes](#other-lines)
   - [Épaisseur des lignes et traits](#line-widths-and-strokes)
 - [Annotations](#annotations)
   - [Repères](#notches)
-  - [Buttons and Buttonholes](#buttons-and-buttonholes)
+  - [Boutons et boutonnières](#buttons-and-buttonholes)
   - [Point d'arrêt](#bartacks)
-  - [Snaps](#snaps)
+  - [Les boutons-pression](#snaps)
   - [Titres](#titles)
   - [Logo](#logo)
   - [Carré/Rectangle test](#scale-box)
@@ -31,7 +31,7 @@ et son apparence une fois téléchargé en format PDF ou SVG.
 
 </Tip>
 
-## Lines
+## Lignes
 
 Lines (and curves) make up the bulk of marking you'll find on any sewing pattern, including FreeSewing's patterns.
 
@@ -65,9 +65,9 @@ Un indicateur de ligne de droit fil
 
 </Legend>
 
-### Cut-on-fold indicator
+### Indicateur de pliage
 
-Cut-on-fold indicators look similar to grainline indicators, but point towards the line on which the fabric should be folded:
+Les indicateurs de coupe sur le pli ressemblent aux indicateurs de ligne de grain, mais ils pointent vers la ligne sur laquelle le tissu doit être plié :
 
 <Legend part="cutonfold">
 
@@ -150,7 +150,7 @@ Quand une flèche s'enfuit de vous, vous voyez ses plumes(⊗).
 
 </Tip>
 
-### Buttons and Buttonholes
+### Boutons et boutonnières
 
 Les boutons et boutonnières peuvent avoir des tailles différentes, mais ont toujours la même forme que celle à quoi ils ressemblent dans la vie réelle :
 
@@ -169,7 +169,7 @@ Un point d'arrêt est un point de taille et de longueur variables utilisé pour 
 C'est ainsi qu'un point d'arrêt est représenté sur un patron. 
 </Legend>
 
-### Snaps
+### Les boutons-pression
 
 Les boutons pressions ont une partie _mâle_ et _femelle_ et ressemblent également à la réalité :
 

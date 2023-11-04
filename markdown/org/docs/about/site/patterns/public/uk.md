@@ -2,6 +2,6 @@
 title: Громадськість
 ---
 
-This settings controls whether your pattern will accessible by the **public** or not.
+Цей параметр визначає, чи буде ваш шаблон доступним для **публічного** чи ні.
 
-By default, patterns are private and only you can access your own patterns. If you'd like to share your pattern with others -- perhaps because they showed an interest or you are loooking for input -- you should first make it public.
+За замовчуванням шаблони є приватними, і лише ви маєте доступ до власних шаблонів. Якщо ви хочете поділитися своїм шаблоном з іншими - можливо, тому, що вони проявили інтерес, або ви хочете, щоб вони внесли свою лепту, - вам слід спочатку зробити його публічним.

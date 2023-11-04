@@ -1,7 +1,7 @@
 ---
-title: "Skirt waistband"
+title: "Rok tailleband"
 ---
 
-Sets the width of the waistband along the top of the skirt, as a multiple of the seam allowance..
+Bepaalt de breedte van de tailleband langs de bovenkant van de rok, als een veelvoud van de naadtoeslag.
 
-The waistband is a single fold hem that is topstitched into the main garment around the waist. The fold serves to hide and finish the top edge. It only needs to be wide enough to allow the topstitching to secure the skirt in place.
+De tailleband is een enkele vouwzoom die rond de taille in het hoofdkledingstuk is gestikt. De vouw dient om de bovenrand te verbergen en af te werken. Het hoeft alleen breed genoeg te zijn voor het doorstikken om de rok op zijn plaats te houden.

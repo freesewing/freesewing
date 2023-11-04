@@ -1,7 +1,7 @@
 ---
-title: "Skully: Optional Measurements"
+title: "Скаллі: Додаткові виміри"
 ---
 
 <Note>
-Skully does not require any measurements, but it can use the head circumference measurement. If used, Skully will be approximately the same size as your head.
+Скаллі не потребує жодних вимірів, але може використовувати вимірювання окружності голови. Якщо його використовувати, Скаллі буде приблизно такого ж розміру, як ваша голова.
 </Note>

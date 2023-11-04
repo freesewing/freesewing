@@ -1,5 +1,5 @@
 ---
-title: Your rights as a FreeSewing user
+title: Tus derechos como usuario de FreeSewing
 ---
 
 La libertad aplica el Reglamento General de Protección de Datos (PIB) de la Unión Europea (UE).
@@ -20,7 +20,7 @@ Los ciudadanos de la UE o no, para nosotros estos son sus derechos:
 Usted tiene el derecho de ser informado sobre la recogida y el uso de sus datos personales.
 
 <Tip>
-Read [our privacy notice](/docs/about/privacy/) to inform yourself about the collection and use of your personal data.
+Lee [nuestro aviso de privacidad](/docs/about/privacy/) para informarte sobre la recogida y uso de tus datos personales.
 </Tip>
 
 ## El derecho de acceso
@@ -29,7 +29,7 @@ Usted tiene derecho a acceder a sus datos personales.
 
 <Tip>
 
-Go to [/account](/account/) to access your personal data.
+Ve a [/account](/cuenta/) para acceder a tus datos personales.
 </Tip>
 
 ## El derecho a la rectificación
@@ -38,7 +38,7 @@ Usted tiene el derecho de rectificar sus datos personales, o de completarlos en 
 
 <Tip>
 
-Go to [/account](/account/) to rectify or complete your personal data.
+Visita [/account](/cuenta/) para rectificar o completar tus datos personales.
 </Tip>
 
 ## El derecho a borrarse
@@ -46,7 +46,7 @@ Go to [/account](/account/) to rectify or complete your personal data.
 Usted tiene derecho a que sus datos personales sean borrados.
 
 <Tip>
-Go to [/account/remove](/account/remove/) to remove all your data.
+Ve a [/cuenta/eliminar](/cuenta/eliminar/) para eliminar todos tus datos.
 </Tip>
 
 ## El derecho a restringir el procesamiento
@@ -54,12 +54,12 @@ Go to [/account/remove](/account/remove/) to remove all your data.
 Usted tiene el derecho de solicitar una restricción en el tratamiento de sus datos personales.
 
 <Tip>
-Go to [/account/restrict](/account/restrict/) to request FreeSewing restricts processing of your personal data.
+Ve a [/cuenta/restringir](/cuenta/restringir/) para solicitar que FreeSewing restrinja el tratamiento de tus datos personales.
 </Tip>
 
 <Warning>
 
-Your request will be granted immediately, and can only be undone by [contacting support](/support/) to lift the restriction.
+Tu solicitud se concederá inmediatamente, y sólo podrá deshacerse [poniéndote en contacto con el servicio de asistencia](/support/) para levantar la restricción.
 
 </Warning>
 
@@ -68,7 +68,7 @@ Your request will be granted immediately, and can only be undone by [contacting 
 Usted tiene el derecho de obtener y reutilizar sus datos personales para sus propios fines o a través de diferentes servicios.
 
 <Tip>
-Go to [/account/actions/export](/account/export/) to export your personal data.
+Ve a [/cuenta/acciones/exportar](/cuenta/exportar/) para exportar tus datos personales.
 </Tip>
 
 ## El derecho al objeto
@@ -76,12 +76,12 @@ Go to [/account/actions/export](/account/export/) to export your personal data.
 Usted tiene derecho a oponerse a que sus datos personales sean utilizados para la investigación científica.
 
 <Tip>
-Go to [/account/consent](/account/consent/) and unselect **Share anonymized measurements as open data** to do so.
+Ve a [/cuenta/consentimiento](/cuenta/consentimiento/) y desmarca **Compartir mediciones anonimizadas como datos abiertos** para hacerlo.
 </Tip>
 
 <Note>
 
-The right to object is broader, but this is how it applies to FreeSewing.
+El derecho de oposición es más amplio, pero así es como se aplica a FreeSewing.
 
 </Note>
 

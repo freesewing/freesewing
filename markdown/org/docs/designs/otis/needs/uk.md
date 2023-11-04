@@ -1,16 +1,16 @@
 ---
-title: "Otis, the simple baby romper: What You Need"
+title: "Отіс, простий дитячий комбінезон: Що вам потрібно"
 ---
 
-To make Otis, you will need the following:
+Щоб зробити Отіс, вам знадобиться наступне:
 
 - [Базові матеріали для шиття](/docs/sewing/basic-sewing-supplies)
-- About 1 meter (1.1 yards) of a suitable fabric ([see Otis Fabric options](/docs/patterns/otis/fabric/))
-- 3 snaps.
-- A little bit of interfacing if your fabric is very stretchy.
+- Приблизно 1 метр (1,1 ярда) відповідної тканини ([див. варіанти тканини Otis](/docs/patterns/otis/fabric/))
+- 3 клацання.
+- Трохи проміжного шару, якщо тканина дуже еластична.
 
 <Note>
 
-You can use a different color fabric for the bindings to give it some additional flair.
+Ви можете використати тканину іншого кольору для палітурки, щоб надати їй додаткового шарму.
 
 </Note>

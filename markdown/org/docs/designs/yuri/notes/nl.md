@@ -1,14 +1,14 @@
 ---
-title: "Yuri hoodie: Designer Notes"
+title: "Yuri hoodie: Ontwerpnotities"
 ---
 
-The idea behind Yuri was to get a hybrid cardigan/sweatshirt that could be easily opened and closed, and sewn without the hassle of zips. When I started sewing, one of the things I hated the most was sewing zips (but now it's ok, yay!).
+Het idee achter Yuri was om een hybride vest/sweatshirt te maken dat gemakkelijk open en dicht kon en genaaid kon worden zonder gedoe met ritsen. Toen ik begon met naaien, was een van de dingen die ik het meest haatte het naaien van ritsen (maar nu gaat het goed, joepie!).
 
-I wanted a big shape that would be comfortable to wear while cycling or knitting on the couch, plus size or not, with or without breasts :)
+Ik wilde een grote vorm die comfortabel zou zijn om te dragen tijdens het fietsen of breien op de bank, plus size of niet, met of zonder borsten :)
 
-This pattern was made in collaboration with @biou, my husband, who's also a programmer. We had a lot of fun creating and testing the pattern together and we were happy to be able to contribute a little to FreeSewing :)
+Dit patroon is gemaakt in samenwerking met @biou, mijn man, die ook programmeur is. We hebben veel plezier gehad met het samen maken en testen van het patroon en we waren blij dat we een kleine bijdrage konden leveren aan FreeSewing :)
 
-We used a mix of the two Huey & Hugo hoodies and reshaped them a bit to change the front/opening and length, and BAM, Yuri was born!
+We gebruikten een mix van de twee Huey & Hugo hoodies en vervormden ze een beetje om de voorkant/opening en lengte te veranderen, en BAM, Yuri was geboren!
 
-I recommend using a soft sweatshirt fabric, you can add a lining but it's not essential. It can be nice in red for a little red hood costume, or a nice gift for a pregnant person :)
+Ik raad aan om een zachte sweatshirtstof te gebruiken, je kunt een voering toevoegen maar dat is niet essentieel. Het kan leuk zijn in het rood voor een roodkapje, of een leuk cadeau voor een zwangere :)
 

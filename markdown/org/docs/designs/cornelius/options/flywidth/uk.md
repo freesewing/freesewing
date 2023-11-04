@@ -1,8 +1,8 @@
 ---
-title: "Fly guard width"
+title: "Ширина мухобойки"
 ---
 
 ***
 
-Controls the width of fly guard.
+Регулювання ширини мухобойки.
 

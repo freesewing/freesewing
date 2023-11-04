@@ -1,5 +1,5 @@
 ---
-title: "Hoodfrontdip"
+title: "Capuchon d'avant-plongée"
 ---
 
-Controls far down the front of the hood drops over the forehead. Larger values work best with lightweight/flexible fabrics.
+Contrôle tout en bas l'avant de la capuche qui tombe sur le front. Les valeurs plus grandes fonctionnent mieux avec les tissus légers/flexibles.

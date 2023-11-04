@@ -1,11 +1,11 @@
 ---
-title: "Otis, the simple baby romper: Fabric Options"
+title: "Otis, el pelele sencillo para bebés: Opciones de tejido"
 ---
 
 ## Tela principal
 
-Rompers are normally made from knit fabric. For best results, use a cotton fabric with just one or two percent of spandex. Jersey works well if it has good recovery.
+Los peleles suelen ser de punto. Para obtener los mejores resultados, utiliza un tejido de algodón con sólo uno o dos por ciento de elastano. Jersey funciona bien si tiene una buena recuperación.
 
 ## Interfaz
 
-If your fabric has a lot of stretch, it is probably a good idea to put some iron-on interfacing on the snap placket. 
+Si tu tejido tiene mucha elasticidad, probablemente sea buena idea poner un poco de entretela planchable en la tapeta de presión. 

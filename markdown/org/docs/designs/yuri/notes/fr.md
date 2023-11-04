@@ -1,14 +1,14 @@
 ---
-title: "Yuri hoodie: Designer Notes"
+title: "Chandail à capuchon Yuri : Notes du créateur"
 ---
 
-The idea behind Yuri was to get a hybrid cardigan/sweatshirt that could be easily opened and closed, and sewn without the hassle of zips. When I started sewing, one of the things I hated the most was sewing zips (but now it's ok, yay!).
+L'idée derrière Yuri était d'obtenir un hybride cardigan/sweat-shirt qui pourrait être facilement ouvert et fermé, et cousu sans les tracas des fermetures éclair. Quand j'ai commencé à coudre, l'une des choses que je détestais le plus était de coudre des fermetures éclair (mais maintenant c'est bon, youpi !).
 
-I wanted a big shape that would be comfortable to wear while cycling or knitting on the couch, plus size or not, with or without breasts :)
+Je voulais une grande forme qui serait confortable à porter en faisant du vélo ou en tricotant sur le canapé, grande taille ou non, avec ou sans poitrine :).
 
-This pattern was made in collaboration with @biou, my husband, who's also a programmer. We had a lot of fun creating and testing the pattern together and we were happy to be able to contribute a little to FreeSewing :)
+Ce patron a été réalisé en collaboration avec @biou, mon mari, qui est aussi programmeur. Nous nous sommes beaucoup amusés à créer et à tester le modèle ensemble et nous sommes heureux de pouvoir contribuer un peu à FreeSewing :).
 
-We used a mix of the two Huey & Hugo hoodies and reshaped them a bit to change the front/opening and length, and BAM, Yuri was born!
+Nous avons utilisé un mélange des deux sweats à capuche Huey & Hugo et nous les avons remodelés un peu pour changer le devant/l'ouverture et la longueur, et BAM, Yuri était né !
 
-I recommend using a soft sweatshirt fabric, you can add a lining but it's not essential. It can be nice in red for a little red hood costume, or a nice gift for a pregnant person :)
+Je te conseille d'utiliser un tissu doux de type sweat-shirt, tu peux ajouter une doublure mais ce n'est pas indispensable. Il peut être sympa en rouge pour un déguisement de petit chaperon rouge, ou un joli cadeau pour une personne enceinte :).
 

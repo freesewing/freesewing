@@ -2,6 +2,6 @@
 title: "Capuchon hoogte"
 ---
 
-Controls how tall the hood will be.
+Bepaalt hoe hoog de kap wordt.
 
-Note: This option is only available if the 'neck style' option is set to 'hood.'
+Opmerking: Deze optie is alleen beschikbaar als de optie 'halsstijl' is ingesteld op 'capuchon'.

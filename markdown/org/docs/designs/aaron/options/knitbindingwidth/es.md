@@ -1,5 +1,5 @@
 ---
-title: "Knit Binding Width"
+title: "Ancho de la ligadura de punto"
 ---
 
-This option controls the width of the knit binding.
+Esta opción controla la anchura de la ligadura de punto.

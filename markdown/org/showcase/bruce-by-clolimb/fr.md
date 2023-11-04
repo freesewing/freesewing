@@ -1,6 +1,6 @@
 ---
-title: "Bruce by CloLimb"
-caption: "This Bruce features a tag of some vintage batik"
+title: "Bruce par CloLimb"
+caption: "Ce Bruce comporte une étiquette de batik vintage."
 date: 20231027
 intro: "The wearer reports that this Bruce \"fits so well!\""
 designs:
@@ -9,7 +9,7 @@ maker: Natalia
 ---
 
 
-This Bruce was made by CloLimb on GitHub, and has been shared with permission. The wearer says, "It fits so well! ... I made a little tag out of some vintage batik to cover my messy elastic join." We love their fabric and design choices -- what a great looking result.
+Ce Bruce a été réalisé par CloLimb sur GitHub, et a été partagé avec sa permission. La personne qui le porte dit : "Il te va si bien ! ... J'ai fait une petite étiquette avec du batik vintage pour couvrir ma jonction élastique désordonnée." Nous adorons leurs choix de tissus et de motifs - quel beau résultat.
 
 ![Vue de derrière](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-bruce-by-clolimb-1/public "Vue de derrière")
 

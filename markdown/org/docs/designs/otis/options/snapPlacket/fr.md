@@ -1,7 +1,7 @@
 ---
-title: "Snap Placket"
+title: "Patte de boutonnage"
 ---
 
-This option controls the depth of the placket that holds the snaps.
+Cette option permet de contrôler la profondeur de la patte de boutonnage qui maintient les boutons-pression.
 
-It is roughly a percentage of the waist measurement. Default is 5%
+Il s'agit en gros d'un pourcentage du tour de taille. La valeur par défaut est de 5 %

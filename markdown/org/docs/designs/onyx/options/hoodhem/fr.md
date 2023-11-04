@@ -1,7 +1,7 @@
 ---
-title: "Hood hem"
+title: "Ourlet de la capuche"
 ---
 
-Controls how wide the hem going around the front of the hood will be, as a multiple of the seam allowance. A hem of 2.5cm/1" is a common value.
+Contrôle la largeur de l'ourlet qui fait le tour du devant de la capuche, en tant que multiple de la marge de couture. Un ourlet de 2,5 cm est une valeur courante.
 
-Note: This option is only available if the 'neck style' option is set to 'hood.'
+Remarque : cette option n'est disponible que si l'option " style de cou " est réglée sur " capuche ".

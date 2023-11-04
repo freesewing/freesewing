@@ -1,5 +1,5 @@
 ---
-title: "Sleeve Type"
+title: "Type de manchon"
 ---
 
-Otis can be made with short or long sleeves.
+Otis peut être fabriqué avec des manches courtes ou longues.

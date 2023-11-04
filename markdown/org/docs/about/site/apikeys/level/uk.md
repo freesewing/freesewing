@@ -2,17 +2,17 @@
 title: 'API Keys: Permission level'
 ---
 
-Every API key has a **permission level** the controls what the key can do.
+Кожен ключ API має **рівень дозволу** , який контролює, що може робити ключ.
 
-The permission level is a number from `0` to `4` with the following significance:
+Рівень дозволу - це число від `0` до `4` з наступним значенням:
 
-- `0` : Authenticate only
-- `1` : Read access to your own patterns and measurements sets
-- `2` : Read access to all your account data
-- `3` : Write access to your own patterns and measurements sets
+- `0` : Тільки автентифікація
+- `1` : Доступ до власних лекал та наборів мірок
+- `2` : Доступ до всіх даних вашого облікового запису
+- `3` : Запишіть доступ до власних лекал і наборів мірок
 - `4` : Write access to all your account data Link> For more details, refer to \[the backend documentation on FreeSewing.dev\](https://freesewing.dev/reference/backend/rbac#permission-levels) ink> For more details, refer to \[the backend documentation on FreeSewing.dev\](https://freesewing.dev/reference/backend/rbac#permission-levels) ink> For more details, refer to \[the backend documentation on FreeSewing.dev\](https://freesewing.dev/reference/backend/rbac#permission-levels)
 
 <Tip>
 
-For more details, refer to [the backend documentation on FreeSewing.dev](https://freesewing.dev/reference/backend/rbac#permission-levels)
+Для більш детальної інформації зверніться до [внутрішньої документації на FreeSewing.dev] (https://freesewing.dev/reference/backend/rbac#permission-levels)
 </Tip>

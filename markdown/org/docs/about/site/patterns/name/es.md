@@ -2,7 +2,7 @@
 title: Nombre
 ---
 
-Every pattern has a **name** attribute that is mandatory.
+Cada patrón tiene un atributo **name** que es obligatorio.
 
-In other words, you must give each of your patterns sets a name, but that name can be anything you want.
+En otras palabras, debes dar un nombre a cada uno de tus conjuntos de patrones, pero ese nombre puede ser cualquier cosa que desees.
 

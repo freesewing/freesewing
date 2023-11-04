@@ -1,5 +1,5 @@
 ---
-title: "Leg hem ease"
+title: "Facilidad del dobladillo de la pierna"
 ---
 
-Controls how wide the bottom of the legs of the garment will be. The base value is interpolated between the circumference of the upper legs and the ankles, based on how long the legs on the garment are, and this option is then applied to this.
+Controla la anchura de la parte inferior de las piernas de la prenda. El valor base se interpola entre la circunferencia de la parte superior de las piernas y los tobillos, en función de la longitud de las piernas de la prenda, y a continuación se le aplica esta opción.

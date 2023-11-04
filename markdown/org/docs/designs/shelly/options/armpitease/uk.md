@@ -1,13 +1,13 @@
 ---
-title: "Armpit ease"
+title: "Зручність під пахвами"
 ---
 
-Shifts the sleeves downward to give extra room in the armpit, measured as a percentage of the sleeve diameter. If in doubt, go with the default value.
+Зрушує рукава вниз, щоб забезпечити додатковий простір у пахвовій западині, вимірюється у відсотках від діаметра рукава. Якщо ви сумніваєтеся, використовуйте значення за замовчуванням.
 
-Note: This option does not change the diameter of the sleeve. To make the sleeve larger or smaller, use the Sleeve ease option.
+Примітка: Ця опція не змінює діаметр гільзи. Щоб зробити рукав більшим або меншим, скористайтеся опцією "Легкість рукава".
 
-Note: The Raglan scoop length and Raglan scoop depth options also affect the amount of ease in the armpit.
+Примітка: Параметри довжини та глибини горловини "реглан" також впливають на зручність у пахвовій западині.
 
 > ##### Ця опція також допускає від'ємні значення.
 > 
-> Negative values will move the sleeves upwards. Use with caution, even on stretch garments, as this can easily cause binding at the armpit.
+> Від'ємні значення перемістять рукава вгору. Використовуйте з обережністю, навіть на еластичному одязі, оскільки це може легко спричинити застрягання в пахвовій западині.

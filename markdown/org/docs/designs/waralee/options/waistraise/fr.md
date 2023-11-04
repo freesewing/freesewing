@@ -2,7 +2,7 @@
 title: "Hauteur de taille"
 ---
 
-How much to raise the waist from the seat depth measurement. This influences the depth of the crotch cut-out.
+De combien faut-il relever la taille par rapport à la mesure de la profondeur du siège. Cela influence la profondeur de la découpe de l'entrejambe.
 
 
 

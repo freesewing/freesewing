@@ -1,6 +1,6 @@
 ---
-title: "Horizontal fabric stretch"
+title: "Horizontale Stoffdehnung"
 ---
 
-Adjust this option for more or less stretchy fabrics, specifically for horizontal stretch.
+Stelle diese Option für mehr oder weniger dehnbare Stoffe ein, insbesondere für die horizontale Dehnung.
 

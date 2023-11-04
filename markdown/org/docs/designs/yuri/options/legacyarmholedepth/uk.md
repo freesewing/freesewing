@@ -1,11 +1,11 @@
 ---
-title: "Legacy armhole depth"
+title: "Стара глибина пройми"
 ---
 
-This option allows you to use the legacy way of calculating the armhole depth in Brian, which Yuri extends.
+Ця опція дозволяє використовувати застарілий спосіб розрахунку глибини пройми у Браяна, який розширює Юрій.
 
-The legacy (v2) way used the biceps circumference to estimate the armhole depth.
+У старому способі (v2) для визначення глибини пройми використовувався обхват біцепса.
 
-The v3 way instead uses the waist to armpit measurement to locate the bottom of the armhole.
+У способі v3 замість цього використовується вимір від талії до пахв для знаходження низу пройми.
 
-If you enable this option, the Brian block will revert to the v2 way of calculating the armhole depth, and Yuri will follow.
+Якщо ви увімкнете цю опцію, блок Brian повернеться до способу v2 обчислення глибини пройми, а блок Yuri піде за ним.

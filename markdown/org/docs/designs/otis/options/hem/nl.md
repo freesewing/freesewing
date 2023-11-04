@@ -2,6 +2,6 @@
 title: "Zoom"
 ---
 
-Hem determines the size of the hem on the sleeves.
+Hem bepaalt de grootte van de zoom op de mouwen.
 
-The hem is a percentage of the distance between the shoulder and the arm opening (of the short sleeve version). Default is 10%
+De zoom is een percentage van de afstand tussen de schouder en de armopening (van de versie met korte mouwen). Standaard is 10%

@@ -1,7 +1,7 @@
 ---
-title: "Neckband width"
+title: "Ancho de la cinta del cuello"
 ---
 
-Controls how wide to make the finished neckband. For swimwear, 4cm / 1.5in (the default) is a common value. If using rib knit, 5-7.5cm (2-3in) is generally used.
+Controla la anchura de la cinta del cuello terminada. Para los bañadores, 4 cm (el valor por defecto) es un valor común. Si se utiliza punto elástico, se suelen emplear 5-7,5 cm (2-3 pulgadas).
 
-Note: This option is only available if the 'neck style' option is set to 'neckband.'
+Nota: Esta opción sólo está disponible si la opción "estilo de cuello" está configurada como "banda de cuello".

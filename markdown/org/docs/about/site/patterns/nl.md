@@ -2,20 +2,20 @@
 title: Patronen
 ---
 
-(sewing) Patterns is why most people end up on FreeSewing.org, so they are an important part of the website.
+(Naai)Patronen zijn de reden waarom de meeste mensen op FreeSewing.org terechtkomen, dus ze zijn een belangrijk onderdeel van de website.
 
-FreeSewing does not store the pattern itself, instead we store your settings you used to draft the design, this includes:
+FreeSewing slaat niet het patroon zelf op, maar de instellingen die je hebt gebruikt om het ontwerp te maken:
 
-- Any design options you tweaked
-- Any core settings you changes
-- The measurements used
+- Ontwerpopties die je hebt aangepast
+- Alle kerninstellingen die je wijzigt
+- De gebruikte metingen
 
-With this, we can regenerate the pattern. So this is all we store.
+Hiermee kunnen we het patroon regenereren. Dus dit is alles wat we opslaan.
 
-This also means that if a pattern goes through significant changes, or a new major version with breaking changes is released, we may no longer be able to generate the (old) pattern. For this reason, you should download the pattern as PDF or SVG and save it locally if you want to archive it.
+Dit betekent ook dat als een patroon significante wijzigingen ondergaat, of als er een nieuwe grote versie met brekende wijzigingen wordt uitgebracht, we mogelijk niet langer in staat zijn om het (oude) patroon te genereren. Download het patroon daarom als PDF of SVG en sla het lokaal op als je het wilt archiveren.
 
-<Tldr compact> Backup your patterns if you intent to keep them for a long time</Tldr>
+<Tldr compact> Maak een back-up van je patronen als je ze lang wilt bewaren</Tldr>
 
-In addition to the settings required to recreate the pattern, patterns are stored with the following fields:
+Naast de instellingen die nodig zijn om het patroon opnieuw te maken, worden patronen opgeslagen met de volgende velden:
 
 <ReadMore />

@@ -85,7 +85,7 @@ Hourra ! Vous avez terminé la partie la plus délicate ! Tu peux aussi fixer le
 
 <Tip>
 
-A more extensive how-to on knit binding can be found in the [Aaron Instuctions](/docs/designs/aaron/instructions).
+Tu trouveras un mode d'emploi plus complet sur la reliure en tricot dans les [Instuctions d'Aaron](/docs/designs/aaron/instructions).
 
 </Tip>
 

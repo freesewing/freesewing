@@ -12,6 +12,6 @@ Die Stoffbruchlinie wird mit einem doppeltem Pfeil markiert, wie in diesem Beisp
 
 <Tip>
 
-For an overview of all indicators on your pattern, refer to the [pattern notation guide](/docs/about/notation/)
+Eine Übersicht über alle Indikatoren deines Musters findest du in der [Anleitung zur Musternotation](/docs/about/notation/)
 
 </Tip>

@@ -1,10 +1,10 @@
 ---
-title: "Trayvon tie: Designer Notes"
+title: "Cravate Trayvon Designer Notes"
 ---
 
-There's about a million patterns for ties on the internet, so why make another one, right?
+Il y a environ un million de modèles de cravates sur Internet, alors pourquoi en faire un autre, n'est-ce pas ?
 
-Well, this started hen I wanted to make a tie but every pattern I found was cutting corners. Specifically, they all put the seam between the back and the font at the exact tip. Which, sure, is easier to make. But that's not how ties are supposed to be made.
+Tout a commencé quand j'ai voulu faire une cravate, mais tous les patrons que j'ai trouvés étaient des raccourcis. Plus précisément, ils ont tous placé la couture entre le dos et la police à la pointe exacte. Ce qui, bien sûr, est plus facile à faire. Mais ce n'est pas comme ça que les cravates sont censées être faites.
 
 So, I designed this pattern so I could make ties that looks professional, and not home-made.
 

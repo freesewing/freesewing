@@ -14,6 +14,6 @@ Um Hortensia herzustellen, brauchst du Folgendes:
 
 <Note>
 
-The amount of fabric you need is dependant on [Hortensia's size option](/docs/designs/hortensia/options/size/). Wenn du dir nicht sicher bist, wie viel du brauchst, schalte den papierlosen Modus ein, während du das Muster ansiehst, und addiere die unteren Maße von Teil 1 SidePanel, Teil 2 FrontBackPanel und Teil 3 BottomPanel, um dir eine grobe Schätzung zu geben.
+Die Menge an Stoff, die du brauchst, hängt von [Hortensias Größenoption](/docs/designs/hortensia/options/size/) ab. Wenn du dir nicht sicher bist, wie viel du brauchst, schalte den papierlosen Modus ein, während du das Muster ansiehst, und addiere die unteren Maße von Teil 1 SidePanel, Teil 2 FrontBackPanel und Teil 3 BottomPanel, um dir eine grobe Schätzung zu geben.
 
 </Note>

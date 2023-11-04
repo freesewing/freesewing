@@ -1,11 +1,11 @@
 ---
-title: "Otis, the simple baby romper: Fabric Options"
+title: "Otis, de eenvoudige baby romper: Stofopties"
 ---
 
 ## Hoofd stof
 
-Rompers are normally made from knit fabric. For best results, use a cotton fabric with just one or two percent of spandex. Jersey works well if it has good recovery.
+Rompers worden meestal gemaakt van gebreide stof. Voor de beste resultaten gebruik je een katoenen stof met slechts één of twee procent spandex. Jersey werkt goed als het een goed herstel heeft.
 
 ## Tussenvoering
 
-If your fabric has a lot of stretch, it is probably a good idea to put some iron-on interfacing on the snap placket. 
+Als je stof veel rek heeft, is het waarschijnlijk een goed idee om wat strijkbare versteviging op het drukknoopsluiting te doen. 

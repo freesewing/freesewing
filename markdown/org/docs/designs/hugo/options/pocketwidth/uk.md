@@ -2,6 +2,6 @@
 title: "Ширина кишені"
 ---
 
-This option controls the width of the front pocket.
+Ця опція регулює ширину передньої кишені.
 
 

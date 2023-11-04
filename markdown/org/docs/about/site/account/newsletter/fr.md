@@ -2,4 +2,4 @@
 title: Newsletter
 ---
 
-This allows you to subscribe to the FreeSewing newsletter. Or not.
+Cela te permet de t'abonner à la newsletter de FreeSewing. Ou pas.

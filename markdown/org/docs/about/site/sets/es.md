@@ -2,8 +2,8 @@
 title: Conjuntos de medidas
 ---
 
-A _measurements set_ holds a set of measurements along with meta data.
+Un conjunto de mediciones __ contiene un conjunto de mediciones junto con metadatos.
 
-In addition to the measurements -- which is the most important data in a set -- a FreeSewing measurements set also has the following fields:
+Además de las medidas -- que son los datos más importantes de un conjunto -- un conjunto de medidas de FreeSewing también tiene los siguientes campos:
 
 <ReadMore />

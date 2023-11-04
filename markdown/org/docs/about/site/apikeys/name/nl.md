@@ -2,15 +2,15 @@
 title: Naam
 ---
 
-Every API key has a **name** attribute that is mandatory.
+Elke API sleutel heeft een **naam** attribuut dat verplicht is.
 
-In other words, you must give each of your API keys a name, but that name can be anything you want.
+Met andere woorden, je moet al je API sleutels een naam geven, maar die naam mag alles zijn wat je wilt.
 
-Typically, people give names that describe where the key is used, like:
+Meestal geven mensen namen die beschrijven waar de sleutel wordt gebruikt, zoals:
 
-- Production backend
-- GitLab runner
-- Local development on my laptop
+- Productie backend
+- GitLab agent
+- Lokale ontwikkeling op mijn laptop
 
-But you do you.
+Maar je doet maar.
 

@@ -17,8 +17,8 @@ Blokken worden meestal niet gemaakt zoals ze zijn, maar dienen als basis voor an
 
 - Sluit de buste en taille nepen.
 - Sluit de achterste nepen.
-- With _good sides together_ sew the backs to the front at the shoulder seams, _easing_ the backs to fit the front.
-- With _good sides together_ sew the backs to the front at the side seams.
+- Met _goede kanten op elkaar_ naai je de ruggen aan het voorpand bij de schoudernaden, _pas_ de ruggen aan het voorpand.
+- Met _goede kanten op elkaar_ naai je de ruggen bij de zijnaden aan het voorpand vast.
 
 <Tip>
 

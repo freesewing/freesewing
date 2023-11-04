@@ -1,7 +1,7 @@
 ---
-title: "Sleeve ribbing width"
+title: "Breedte mouwboorden"
 ---
 
-Controls how wide the ribbing around the sleeve is.
+Bepaalt hoe breed de ribbels rond de mouw zijn.
 
-Note: This option is only available if the 'sleeve ribbing' option is set to 'ribbing.'
+Opmerking: Deze optie is alleen beschikbaar als de optie 'mouwribbels' is ingesteld op 'ribbels'.

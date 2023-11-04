@@ -1,7 +1,7 @@
 ---
-title: "Leg ribbing"
+title: "Nervadura de la pierna"
 ---
 
-Choose whether to make ribbed knit cuffs for the legs or to use a hem.
+Elige si quieres hacer puños de punto de canalé para las piernas o utilizar un dobladillo.
 
-Note: Setting this option to 'hem' will enable the 'leg hem' option, while setting this option to 'ribbing' will enable the 'leg ribbing length' and 'leg ribbing width' options.
+Nota: Si configuras esta opción como "dobladillo", se activará la opción "dobladillo de la pierna", mientras que si configuras esta opción como "canalé", se activarán las opciones "longitud del canalé de la pierna" y "anchura del canalé de la pierna".

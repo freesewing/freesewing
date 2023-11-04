@@ -1,5 +1,5 @@
 ---
-title: "Sleeve Type"
+title: "Ärmel Typ"
 ---
 
-Otis can be made with short or long sleeves.
+Otis kann mit kurzen oder langen Ärmeln hergestellt werden.

@@ -1,6 +1,6 @@
 ---
-title: "Neckband width"
+title: "Nekband breedte"
 ---
 
-Controls how wide the finished neckband will be, as a percentage of the neckline circumference.
+Bepaalt hoe breed de afgewerkte halsband zal zijn, als percentage van de omtrek van de halslijn.
 

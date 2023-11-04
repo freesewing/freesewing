@@ -1,7 +1,7 @@
 ---
-title: Profile Image
+title: Зображення профілю
 ---
 
-You can choose a **profile image** to further personalize your account.
+Ви можете вибрати зображення профілю **** , щоб ще більше персоналізувати свій обліковий запис.
 
-It can be a picture of you, your cat, your favourite cartoon character. Ти - це ти.
+Це може бути фотографія вас, вашого кота, улюбленого мультяшного героя. Ти - це ти.

@@ -2,8 +2,8 @@
 title: "Tamiko top: Designer Notes"
 ---
 
-I say a top similar to this when I was in Japan that I liked. So when I got home, I recreated it from memory.
+Toen ik in Japan was, vond ik ook zo'n topje. Dus toen ik thuiskwam, heb ik het uit mijn hoofd nagemaakt.
 
-It's essentially a zero-waste pattern and _very_ easy to make.
+Het is in wezen een zero-waste patroon en _heel_ gemakkelijk te maken.
 
 joost

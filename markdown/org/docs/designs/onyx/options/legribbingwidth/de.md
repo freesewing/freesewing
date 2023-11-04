@@ -1,7 +1,7 @@
 ---
-title: "Leg ribbing width"
+title: "Breite der Beinrippen"
 ---
 
-Controls how wide the ribbing around the leg is.
+Steuert, wie breit die Rippen um das Bein herum sind.
 
-Note: This option is only available if the 'leg ribbing' option is set to 'ribbing.'
+Hinweis: Diese Option ist nur verfügbar, wenn die Option "Beinrippung" auf "Rippung" eingestellt ist.

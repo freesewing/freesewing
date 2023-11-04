@@ -1,7 +1,7 @@
 ---
-title: "neck guard length"
+title: "Nackenschutzlänge"
 ---
 
-On garments with a neckband, this option adds extra length to the zipper guard to allow it to wrap around the neckband to protect the neck.
+Bei Kleidungsstücken mit einem Nackenband wird der Reißverschlussschutz mit dieser Option verlängert, damit er um das Nackenband gewickelt werden kann, um den Hals zu schützen.
 
-Note: This option is only available if the 'neck style' option is set to 'neckband.'
+Hinweis: Diese Option ist nur verfügbar, wenn die Option "Nackenstil" auf "Nackenband" eingestellt ist.

@@ -1,8 +1,8 @@
 ---
-title: UI Settings
+title: UI-instellingen
 ---
 
-The **UI Settings** menu allows you to tweak certain aspects of the user interface (UI). Those aspects are:
+Met het menu **UI Settings** kun je bepaalde aspecten van de gebruikersinterface (UI) aanpassen. Die aspecten zijn:
 
 <ReadMore />
 

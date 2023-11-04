@@ -1,82 +1,82 @@
 ---
-title: "Otis, the simple baby romper: Sewing Instructions"
+title: "Отіс, простий дитячий комбінезон: Інструкція з пошиття"
 ---
 
 <Note>
 
-You should use a stretch stitch on your sewing machine. Small zig-zag stitches work really well. The side seams can also be done with a serger.
+На швейній машині слід використовувати розтягуючу строчку. Дрібні зигзагоподібні стібки працюють дуже добре. Бічні шви також можна виконати сергером.
 
 </Note>
 
-## Step 1: Bindings
+## Крок 1: Прив'язки
 
-### Two options
+### Два варіанти
 
-There are two ways to do the bindings. You can use it like double-folded bias binding, or just fold it in two and stitch that to the pieces. The double-folding will look nicer and more finished, but is a lot more involved.
+Існує два способи зробити прив'язку. Ви можете використовувати її як подвійну косую палітурку або просто скласти її вдвічі і пришити до шматків. Подвійне складання виглядатиме гарніше і завершеніше, але воно вимагає набагато більше зусиль.
 
-#### Double-folded
+#### Складений удвічі
 
-  - Fold both bindings along the long side in two, _wrong sides together_, and give it a good press.
-  - Mark the middle of each of the bindings (notch) and of the front and back parts.
-  - Attach the binding to the corresponding part, _good sides together_. Make sure you distribute the binding evenly along the edge.
-  - Sew just shy of the SA.
-  - Press the binding towards the edge and flip your part over.
-  - Now fold the remaining SA under and press.
-  - Sew this side of the binding to the part through all five layers.
+  - Складіть обидві палітурки вздовж довгої сторони вдвічі, _виворітними сторонами разом_, і добре притисніть.
+  - Відмітьте середину кожної з палітурок (надсічка), а також передньої і задньої частин.
+  - Прикріпіть палітурку до відповідної деталі, _лицьовими сторонами разом_. Переконайтеся, що ви рівномірно розподілили палітурку по краю.
+  - Шийте трохи нижче СА.
+  - Притисніть палітурку до краю і переверніть деталь.
+  - Тепер складіть решту SA і притисніть.
+  - Пришийте цей бік палітурки до деталі через усі п'ять шарів.
 
-#### Fold and stitch
+#### Складіть і зшийте
 
-  - Fold both bindings along the long side in two, _wrong sides together_, and give it a good press.
-  - Mark the middle of each of the bindings and of the front and back parts.
-  - Attach the folded binding to the corresponding part, _good sides together_. Make sure you distribute the binding evenly along the edge. You should have three layers pinned together.
-  - Sew just shy of the SA.
-  - Press the binding towards the edge, pressing the SA towards the _wrong side_.
-  - Sew through the part and the SA underneath, holding the folded SA on the _wrong side_.
+  - Складіть обидві палітурки вздовж довгої сторони вдвічі, _виворітними сторонами разом_, і добре притисніть.
+  - Позначте середину кожної з палітурок, а також передньої і задньої частин.
+  - Прикладіть складену палітурку до відповідної частини, _лицьовими сторонами разом_. Переконайтеся, що ви рівномірно розподілили палітурку по краю. У вас повинно бути три шари, скріплених між собою шпильками.
+  - Шийте трохи нижче СА.
+  - Притисніть палітурку до краю, притискаючи SA до _виворітного боку_.
+  - Прошийте через деталь і СА під нею, тримаючи складений СА на _виворітному боці_.
 
-## Step 2: Attach body parts
+## Крок 2: Прикріпіть частини тіла
 
-  - Lay the back and front parts with the _good sides up_, tops facing each other.
-  - Lay the front part shoulders on top of the back part shoulders, aligning the notches on the left and right.
-  - Baste or pin together.
+  - Складіть задню і передню частини лицьовими сторонами _догори_, верхніми частинами один до одного.
+  - Накладіть плечі передньої частини на плечі задньої частини, сумістивши надсічки зліва і справа.
+  - Скріпіть або скріпіть шпильками.
 
 ## Крок 3: Прикріпіть рукава
 
-  - Mark the middle of the shoulder of each sleeve.
-  - Pin the sleeve to the two body parts, aligning the middle of the sleeve with the shoulder notch.
-  - Distribute the sleeve evenly along the opening.
-  - Sew the pieces together.
+  - Позначте середину плеча кожного рукава.
+  - Приколіть рукав до обох частин тіла, сумістивши середину рукава з плечовим вирізом.
+  - Рівномірно розподіліть рукав уздовж отвору.
+  - Зшийте частини між собою.
 
-## Step 4: Prepare snap placket
+## Крок 4: Підготуйте застібку
 
-  - (Optional) If your fabric is flimsy, or very stretchy, cut a piece of iron-on interfacing the size of the snap placket and iron it in place.
-  - Press the SA of the snap placket over, and then press the snap placket in two.
-  - Sew just along the inner edge on the snap placket.
+  - (Необов'язково) Якщо ваша тканина неміцна або дуже еластична, виріжте шматок застібки за розміром застібки і припрасуйте його на місце.
+  - Натисніть на SA засувки, а потім розтисніть засувку надвоє.
+  - Пришийте по внутрішньому краю на застібці-блискавці.
 
-## Step 5: Body<Note> You can reinforce the sleeve openings now if you're so inclined. Add some iron-on interfacing tape to the hem of the sleeve. This will keep the sleeve opening looking nice if you have flimsy or stretchy fabric. </Note>
+## Крок 5: Тіло<Note> Ви можете посилити отвори рукавів зараз, якщо хочете. Додайте трохи запрасованої сполучної стрічки на поділ рукава. Це допоможе зберегти гарний вигляд отвору рукава, якщо у вас тендітна або еластична тканина. </Note>
 
-  - Press the sleeve SA and hem over, so it'll be easier to sew the hem once you've done the next steps.
-  - Pin both front and back sides together, _wrong sides out_, from the leg opening all the way to the arm opening in the sleeve.
-  - Sew the whole seam on both sides.
-  - Turn the romper _good sides out_.
+  - Припрасуйте рукав SA і підгин, щоб було легше пришити підгин, коли ви виконаєте наступні кроки.
+  - Скріпіть передній і задній боки разом, _виворітними сторонами назовні_, від пройми для ніг до пройми для рук в рукаві.
+  - Прошийте весь шов з обох боків.
+  - Виверніть комбінезон _гарними сторонами назовні_.
 
 ## Крок 6: Підшивання
 
-  - Fold the hems on the sleeves in.
-  - Sew them in place.
+  - Підверніть краї рукавів всередину.
+  - Пришийте їх на місце.
 
-## Step 7: Leg binding
+## Крок 7: Прив'язка ніг
 
-  - Fold the leg binding in two length-wise, _wrong sides together_, and press.
-  - Hold the ends _good sides together_, and sew the SA at the ends.
-  - Fold the binding back, _wrong sides together_.
-  - Pin the binding to the leg opening, matching the notch to the side seam, and the beginning and end to the snap placket.
-  - Sew this binding to the leg opening like you did with the earlier bindings.
+  - Складіть палітурку для ніжок вдвічі вздовж, _виворітними сторонами разом_, і припрасуйте.
+  - Складіть кінці _виворітними сторонами разом_, і зшийте на кінцях SA.
+  - Складіть палітурку назад, _виворітними сторонами разом_.
+  - Приколіть палітурку до отвору для штанин, сумістивши надсічку з боковим швом, а початок і кінець - з застібкою.
+  - Пришийте цю палітурку до отвору для ніг, як ви це робили з попередніми палітурками.
 
-## Step 8: Snaps
+## Крок 8: Знімки
 
-  - Mark the position of the snaps along the snap placket, evenly distributed.
-  - Install the studs on the _good side_ of the back part, and the sockets on the _wrong side_ of the front part.
+  - Відмітьте положення застібок уздовж планки, рівномірно розподіливши їх.
+  - Встановіть шпильки на _гарній стороні_ задньої частини, а гнізда на _виворітній стороні_ передньої частини.
 
-## Step 9: Done!
+## Крок 9: Готово!
 
-Give it a good press all around and take a moment to enjoy the new romper. This will be the last time it will ever look this nice.
+Гарненько випрасуйте його з усіх боків і насолоджуйтеся новим комбінезоном. Це буде останній раз, коли він буде виглядати так гарно.

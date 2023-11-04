@@ -2,7 +2,7 @@
 title: Afbeelding
 ---
 
-If you'd like you can add an **image** to your pattern, for example of the finished make.
+Als je wilt kun je een **afbeelding** aan je patroon toevoegen, bijvoorbeeld van het voltooide werk.
 
-This can help you remember exactly what this pattern was, which can be useful as you can end up having many patterns saved to your account.
+Dit kan je helpen om precies te onthouden wat dit patroon was, wat handig kan zijn omdat je uiteindelijk veel patronen in je account kunt hebben opgeslagen.
 
