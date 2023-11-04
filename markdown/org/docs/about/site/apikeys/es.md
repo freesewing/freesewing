@@ -2,7 +2,7 @@
 title: Claves API
 ---
 
-Una clave</em>  de la API _es un identificador único utilizado para autenticar y autorizar una solicitud al backend de FreeSewing. Mientras que un nombre de usuario (y una contraseña) están pensados para los usuarios, las claves API (y el secreto) están pensados para autenticar y autorizar a un robot, programa o script y no a un usuario humano.</p>
+Una clave</em>  de la API _es un identificador único utilizado para autenticar y autorizar una solicitud al backend de FreeSewing. Mientras que un nombre de usuario (y una contraseña) están pensados para los usuarios, las claves API (y el secreto) están pensados para autenticar y autorizar a un robot, programa o script y no a un usuario humano.
 
 Para crear una clave API de FreeSewing, debes proporcionar los siguientes campos:
 
