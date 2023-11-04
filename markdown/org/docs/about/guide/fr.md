@@ -40,7 +40,7 @@ FreeSewing.org est notre atout le plus visible, et pour beaucoup de gens, leur p
 
 ## Modèles et conceptions
 
-</em> Si tu es venue sur ce site à la recherche de patrons de couture _et que tu n'as pas trouvé immédiatement un endroit où les télécharger, c'est parce que tous les patrons de couture de FreeSewing sont **faits sur mesure**.</p>
+Si tu es venue sur ce site à la recherche de patrons de couture _et que tu n'as pas trouvé immédiatement un endroit où les télécharger, c'est parce que tous les patrons de couture de FreeSewing sont **faits sur mesure**.
 
 Nous ne faisons pas de mise à l'échelle ou de gradation des patrons. Au lieu de cela, FreeSewing dessine un modèle fait à tes mesures. Cela se produit en temps réel, dans votre navigateur.
 
