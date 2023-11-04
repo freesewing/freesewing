@@ -41,8 +41,10 @@ editCurrentMeasiesHeader: Редагувати виміри деталі
 editMeasiesByHand: Редагувати вимірювання вручну
 editMeasiesByHandDesc: Вручну встановіть або скасуйте будь-які виміри. Ці зміни будуть застосовані лише до поточної деталі.
 editSettings: Редагування конфігурації
+editSettingsByHand: Edit settings by hand
 elastic: Резинка
 export: Експортувати
+exporting: Exporting
 exportAsData: Експорт даних
 exportForEditing: Експортувати для коригування
 exportForPrinting: Експортувати для друку
@@ -80,6 +82,7 @@ partTransfoYes: Показати кнопки
 partTransfoYesDesc: Включіть ці кнопки у вивід деталей (вони не будуть надруковані)
 pathInfo: Інформація про шлях
 patternBookmarkCreated: Створено закладку шаблону
+patternEditor: Pattern Editor
 patternInspector: Інспектор зразків
 patternLogs: Журнали шаблонів
 patternSaved: Шаблон збережено
@@ -106,6 +109,7 @@ showOnlyThisPart: Показати тільки цю частину деталі
 sleevecap: Окат рукава
 style: Стиль
 test: Тест
+testDesign: Test Design
 testDesignMeasurement: "Тестові вимірювання {design} : {measurement}"
 testDesignOption: "Протестуйте {design} варіанти дизайну: {option}"
 testDesignSets: "Перевірте {design} на різних наборах вимірювань"
