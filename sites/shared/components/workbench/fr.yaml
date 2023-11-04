@@ -40,9 +40,11 @@ editCurrentMeasiesDesc: Les modifications que tu apportes ici ne seront pas enre
 editCurrentMeasiesHeader: Modifier les mesures du motif
 editMeasiesByHand: Modifie les mesures à la main
 editMeasiesByHandDesc: Règle manuellement ou annule toute mesure. Ces changements ne s'appliqueront qu'au modèle en cours.
-editSettings: Modifier la configuration
+editSettings: Edit settings
+editSettingsByHand: Edit settings by hand
 elastic: Élastique
 export: Exporter
+exporting: Exporting
 exportAsData: Exporter en tant que données
 exportForEditing: Exporter pour édition
 exportForPrinting: Exporter pour l'impression
@@ -80,6 +82,7 @@ partTransfoYes: Afficher les boutons
 partTransfoYesDesc: Inclure ces boutons dans la sortie du modèle (ils ne seront pas imprimés).
 pathInfo: Informations sur le chemin
 patternBookmarkCreated: Création d'un signet de patron
+patternEditor: Pattern Editor
 patternInspector: Inspecteur de modèles
 patternLogs: Fiches d'information sur les modèles
 patternSaved: Motif sauvegardé
@@ -106,6 +109,7 @@ showOnlyThisPart: Ne montre que cette partie du modèle
 sleevecap: Tête de manche
 style: Style
 test: Test
+testDesign: Test Design
 testDesignMeasurement: "Teste {design} les mesures : {measurement}"
 testDesignOption: "Teste les options de conception de {design} : {option}"
 testDesignSets: "Test {design} à travers les ensembles de mesures"
