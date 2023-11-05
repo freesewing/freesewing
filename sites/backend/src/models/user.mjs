@@ -1432,9 +1432,13 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
        * Update the email address and ehash
        */
       await this.update({
-        email: this.encrypt(data.email.new),
+        email: data.email.new,
         ehash: hash(clean(data.email.new)),
       })
+      /*
+       * Remove the confirmation
+       */
+      await this.Confirmation.delete()
     }
   }
 
@@ -1515,7 +1519,7 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
       this.clear.data.mfaScratchCodes
     )
     let result, mfaScratchCodes
-    if (Array.isArray(check)) [result, mfaScratchCodes] = check
+    if (Array.isArray(check)) [result] = check
     else result = check
     if (result) {
       /*
@@ -1553,7 +1557,7 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
      */
     const check = await this.mfa.verify(body.token, this.clear.mfaSecret, false)
     let result, mfaScratchCodes
-    if (Array.isArray(check)) [result, mfaScratchCodes] = check
+    if (Array.isArray(check)) [result] = check
     else result = check
     if (body.secret === this.clear.mfaSecret && result) {
       /*
