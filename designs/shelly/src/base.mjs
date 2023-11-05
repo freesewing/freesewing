@@ -144,21 +144,19 @@ function draftBase({
     paths.seam = paths.saBase.join(paths.foldBase).join(paths.hemBase).close().addClass('fabric')
   }
 
-  if (expand) {
-    macro('hd', {
-      id: 'wHem',
-      from: points.sideHem.flipX(),
-      to: points.sideHem,
-      y: points.sideHem.y + (sa + 15),
-    })
-  } else {
-    macro('hd', {
-      id: 'wHem',
-      from: points.cfHem,
-      to: points.sideHem,
-      y: points.sideHem.y + (sa + 15),
-    })
-  }
+  expand
+    ? macro('hd', {
+        id: 'wHem',
+        from: points.sideHem.flipX(),
+        to: points.sideHem,
+        y: points.sideHem.y + (sa + 15),
+      })
+    : macro('hd', {
+        id: 'wHem',
+        from: points.cfHem,
+        to: points.sideHem,
+        y: points.sideHem.y + (sa + 15),
+      })
   macro('vd', {
     id: 'hSide',
     from: points.sideHem,
@@ -198,21 +196,19 @@ function draftBase({
   snippets.logo = new Snippet('logo', points.logo)
 
   if (sa) {
-    if (expand) {
-      paths.sa = new Path()
-        .move(points.sideHem.flipX().translate(0, sa * options.hemWidth))
-        .join(paths.hemBase.offset(sa * options.hemWidth))
-        .join(paths.saBase.offset(sa))
-        .line(points.sideHem.flipX().translate(0, sa * options.hemWidth))
-        .addClass('fabric sa')
-    } else {
-      paths.sa = new Path()
-        .move(points.cfHem)
-        .join(paths.hemBase.offset(sa * options.hemWidth))
-        .join(paths.saBase.offset(sa))
-        .line(points.cfNeck)
-        .addClass('fabric sa')
-    }
+    expand
+      ? (paths.sa = new Path()
+          .move(points.sideHem.flipX().translate(0, sa * options.hemWidth))
+          .join(paths.hemBase.offset(sa * options.hemWidth))
+          .join(paths.saBase.offset(sa))
+          .line(points.sideHem.flipX().translate(0, sa * options.hemWidth))
+          .addClass('fabric sa'))
+      : (paths.sa = new Path()
+          .move(points.cfHem)
+          .join(paths.hemBase.offset(sa * options.hemWidth))
+          .join(paths.saBase.offset(sa))
+          .line(points.cfNeck)
+          .addClass('fabric sa'))
   }
 
   return part

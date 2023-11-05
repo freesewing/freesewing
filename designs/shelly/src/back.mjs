@@ -144,21 +144,19 @@ function draftBack({
   )
   macro('title', { at: points.title, nr: 2, title: 'back' })
 
-  if (expand) {
-    paths.sa = new Path()
-      .move(points.sideHem.flipX().translate(0, sa * options.hemWidth))
-      .join(paths.hemBase.offset(sa * options.hemWidth))
-      .join(paths.saBase.offset(sa))
-      .line(points.sideHem.flipX().translate(0, sa * options.hemWidth))
-      .addClass('fabric sa')
-  } else {
-    paths.sa = new Path()
-      .move(points.cfHem)
-      .join(paths.hemBase.offset(sa * options.hemWidth))
-      .join(paths.saBase.offset(sa))
-      .line(points.cfNeck)
-      .addClass('fabric sa')
-  }
+  expand
+    ? (paths.sa = new Path()
+        .move(points.sideHem.flipX().translate(0, sa * options.hemWidth))
+        .join(paths.hemBase.offset(sa * options.hemWidth))
+        .join(paths.saBase.offset(sa))
+        .line(points.sideHem.flipX().translate(0, sa * options.hemWidth))
+        .addClass('fabric sa'))
+    : (paths.sa = new Path()
+        .move(points.cfHem)
+        .join(paths.hemBase.offset(sa * options.hemWidth))
+        .join(paths.saBase.offset(sa))
+        .line(points.cfNeck)
+        .addClass('fabric sa'))
 
   const neckPath = new Path()
     .move(points.neckShoulderCorner)
