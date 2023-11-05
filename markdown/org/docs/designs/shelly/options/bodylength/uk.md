@@ -1,11 +1,11 @@
 ---
-title: "Body length"
+title: "Довжина тіла"
 ---
 
-Controls how long the shirt is.
-   - Up to 80% or so will produce a crop top.
-   - 100% ends at top of the hip bone.
-   - 120% will produce a typical t-shirt.
-   - 140% will produce a somewhat longer shirt that is less prone to untucking or riding up.
-   - 200%+ can be used to make a simple t-shirt dress. It's suggested that you set straight sides to false, and adjust the side shape (under advanced options) for t-shirt dresses.
+Контролює довжину сорочки.
+   - До 80% або близько того утворюється верхівка.
+   - 100% закінчується у верхній частині стегнової кістки.
+   - 120% - це звичайна футболка.
+   - 140% дасть дещо довшу сорочку, яка менш схильна до розстібання або задирання.
+   - 200%+ можна використати для пошиття простої сукні-футболки. Для прямих боків рекомендується встановити значення false, а для суконь-футболок відрегулювати форму боків (у додаткових опціях).
 

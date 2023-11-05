@@ -1,7 +1,7 @@
 ---
-title: Profile Image
+title: Profiel afbeelding
 ---
 
-You can choose a **profile image** to further personalize your account.
+Je kunt kiezen voor een **profielafbeelding** om je account nog persoonlijker te maken.
 
-It can be a picture of you, your cat, your favourite cartoon character. Jullie doen jullie.
+Het kan een foto van jou, je kat of je favoriete stripfiguur zijn. Jullie doen jullie.

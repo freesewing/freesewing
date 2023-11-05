@@ -1,5 +1,5 @@
 ---
-title: "Otis, the simple baby romper: Required Measurements"
+title: "Отіс, простий дитячий комбінезон: Необхідні виміри"
 ---
 
 <DesignMeasurements design='otis' />

@@ -1,6 +1,6 @@
 ---
-title: "Neckband width"
+title: "Nackenband Breite"
 ---
 
-Controls how wide the finished neckband will be, as a percentage of the neckline circumference.
+Legt fest, wie breit das fertige Halsband in Prozent des Halsumfangs sein soll.
 

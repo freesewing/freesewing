@@ -1,7 +1,7 @@
 ---
-title: "Binding"
+title: "Палітурка"
 ---
 
-Binding determines the size of the binding for the neck and leg openings.
+Обв'язка визначає розмір палітурки для отворів для шиї та ніг.
 
-The binding is a percentage of the waist divided by 4. Default is 11%
+Обхват - це відсоток від обхвату талії, поділений на 4. За замовчуванням - 11%.

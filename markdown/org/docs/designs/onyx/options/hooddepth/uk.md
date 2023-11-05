@@ -2,8 +2,6 @@
 title: "Глибина витяжки"
 ---
 
-![The hood depth option on Onyx](hooddepth.svg)
+Контролює, скільки місця буде в капюшоні навколо потилиці.
 
-Controls how much room will be in the hood around the back of the head.
-
-Note: This option is only available if the 'neck style' option is set to 'hood.'
+Примітка: Ця опція доступна, тільки якщо для параметра "стиль горловини" встановлено значення "капюшон".

@@ -2,17 +2,17 @@
 title: Ключі API
 ---
 
-An _API_  key is a unique identifier used to authenticate and authorize a request to the FreeSewing backend. Whereas a username (and password) are intended for users, API keys (and secret) are intended to authenticate and authorize a robot, program, or script rather than a human user.
+Ключ _API_  - це унікальний ідентифікатор, який використовується для автентифікації та авторизації запиту до бекенду FreeSewing. У той час як ім'я користувача (і пароль) призначені для користувачів, ключі API (і секретні) призначені для автентифікації та авторизації робота, програми або скрипта, а не людини.
 
-To create a FreeSewing API key, you need to provide the following fields:
+Щоб створити ключ FreeSewing API, вам потрібно вказати наступні поля:
 
 <ReadMore />
 
 <Note>
 
-API keys are an advanced feature aimed at developers.
+API-ключі - це розширена функція, призначена для розробників.
 
-<a class="btn btn-secondary" href="/new/apikey/">Create a new API key</a>
+<a class="btn btn-secondary" href="/new/apikey/">Створіть новий ключ API</a>
 
 </Note>
 

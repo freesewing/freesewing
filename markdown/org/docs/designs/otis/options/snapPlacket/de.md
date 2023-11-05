@@ -1,7 +1,7 @@
 ---
-title: "Snap Placket"
+title: "Druckknopf"
 ---
 
-This option controls the depth of the placket that holds the snaps.
+Diese Option bestimmt die Tiefe der Leiste, die die Druckknöpfe hält.
 
-It is roughly a percentage of the waist measurement. Default is 5%
+Er ist ungefähr ein Prozentsatz des Taillenumfangs. Standard ist 5%

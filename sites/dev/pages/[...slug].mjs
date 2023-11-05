@@ -4,7 +4,6 @@ import { pages } from 'site/prebuild/docs.en.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { loadMdxAsStaticProps } from 'shared/mdx/load.mjs'
 // Components
-import Head from 'next/head'
 import { PageWrapper, ns } from 'shared/components/wrappers/page.mjs'
 //import { components } from 'shared/components/mdx/index.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
@@ -27,24 +26,6 @@ import {
  */
 const DocsPage = ({ page, slug, frontmatter, mdx, mdxSlug }) => (
   <PageWrapper {...page} title={frontmatter.title} intro={frontmatter.intro}>
-    <Head>
-      <meta property="og:title" content={frontmatter.title} key="title" />
-      <meta property="og:type" content="article" key="type" />
-      <meta property="og:description" content={frontmatter.intro} key="type" />
-      <meta property="og:article:author" content="Joost De Cock" key="author" />
-      <meta
-        property="og:image"
-        content={`https://canary.backend.freesewing.org/og-img/en/org/${slug}}`}
-        key="image"
-      />
-      <meta property="og:image:type" content="image/png" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
-      <meta property="og:url" content={`https://freesewing.dev/${slug}`} key="url" />
-      <meta property="og:locale" content="en" key="locale" />
-      <meta property="og:site_name" content="freesewing.dev" key="site" />
-      <title>{frontmatter.title}</title>
-    </Head>
     <BaseLayout>
       <BaseLayoutLeft>
         <MainSections />

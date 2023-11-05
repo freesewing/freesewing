@@ -14,6 +14,6 @@ Pour faire Hortensia vous aurez besoin des éléments suivants :
 
 <Note>
 
-The amount of fabric you need is dependant on [Hortensia's size option](/docs/designs/hortensia/options/size/). Si tu n'es pas sûr de la quantité dont tu as besoin, active le mode sans papier pendant que tu regardes le modèle et additionne les mesures du bas de la Partie 1 Panneau latéral, de la Partie 2 Panneau avant et arrière et de la Partie 3 Panneau inférieur pour te donner une estimation approximative.
+La quantité de tissu dont tu as besoin dépend de [l'option de taille d'Hortensia] (/docs/designs/hortensia/options/size/). Si tu n'es pas sûr de la quantité dont tu as besoin, active le mode sans papier pendant que tu regardes le modèle et additionne les mesures du bas de la Partie 1 Panneau latéral, de la Partie 2 Panneau avant et arrière et de la Partie 3 Panneau inférieur pour te donner une estimation approximative.
 
 </Note>

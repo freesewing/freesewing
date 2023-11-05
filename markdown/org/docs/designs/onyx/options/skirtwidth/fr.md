@@ -1,9 +1,7 @@
 ---
-title: "Skirt width"
+title: "Largeur de la jupe"
 ---
 
-![The skirt width option on Onyx](skirtwidth.svg)
+Contrôle la largeur de la jupe en bas, en pourcentage du tour de taille.
 
-Controls the width of the skirt at the bottom, as a percentage of the waist measurement.
-
-The top of the skirt is cut to the same width, and gathered around the waist. As such, a large value for this option will make a more heavily gathered skirt that is wide at the bottom.
+Le haut de la jupe est coupé à la même largeur et froncé autour de la taille. Ainsi, une grande valeur pour cette option donnera une jupe plus fortement froncée et large en bas.

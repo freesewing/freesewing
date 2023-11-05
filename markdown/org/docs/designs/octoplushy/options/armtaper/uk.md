@@ -1,5 +1,5 @@
 ---
-title: "Arm Taper"
+title: "Конус для рук"
 ---
 
-This setting changes how much the arms taper from the body down to the end.
+Цей параметр змінює ступінь звуження рук від тіла до кінця.

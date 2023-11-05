@@ -9,13 +9,13 @@ title: "Appel à tous : voici un patron de masque facial PDF en 1 page ; fabriqu
 
 <Note>
 
-**TL;DR: Please make facemasks for healthcare workers**
+**TL;DR : S'il te plaît, fabrique des masques pour les travailleurs de la santé**
 
 
- - PDF pattern for our Florence face mask:
-   - [A4 facemask pattern](/florence-facemask-freesewing.org.a4.pdf)
-   - [Letter facemask pattern](/florence-facemask-freesewing.org.letter.pdf)
- - [Instructions for the facemask pattern](/docs/designs/florence/instructions/)
+ - Patron PDF pour notre masque de Florence :
+   - [Modèle de masque A4](/florence-facemask-freesewing.org.a4.pdf)
+   - [Modèle de masque lettre](/florence-facemask-freesewing.org.letter.pdf)
+ - [Instructions pour le modèle de masque](/docs/designs/florence/instructions/)
 
 </Note>
 

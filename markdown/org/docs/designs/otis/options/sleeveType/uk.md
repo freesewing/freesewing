@@ -1,5 +1,5 @@
 ---
-title: "Sleeve Type"
+title: "Тип рукава"
 ---
 
-Otis can be made with short or long sleeves.
+Отіс може бути виготовлений з коротким або довгим рукавом.

@@ -15,7 +15,7 @@ Um Hi herzustellen, brauchst du Folgendes:
 
 <Note>
 
-This list is based on a default Hi and you may need less or more fabric dependant on the [size you are making Hi](/docs/designs/hi/options/size/).
+Diese Liste basiert auf einem Standard-Hi. Je nach [Größe, in der du das Hi herstellst] (/docs/designs/hi/options/size/) brauchst du vielleicht weniger oder mehr Stoff.
 
 Ein 500%iges Hi braucht zum Beispiel 5 Meter (1 Meter x 500% = 5 Meter) und ein 50%iges Hi braucht 0,5 Meter (1 Meter x 50% = 0,5 Meter).
 

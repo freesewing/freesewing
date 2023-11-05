@@ -1,6 +1,6 @@
 ---
-title: "Penelope pencil skirt: Designer Notes"
+title: "Falda lápiz Penélope: Notas del diseñador"
 ---
 
-<Fixme>Wouter designed this. They have not written any notes (yet)</Fixme>
+<Fixme>Wouter diseñó esto. No han escrito ninguna nota (todavía)</Fixme>
 

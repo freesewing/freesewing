@@ -12,6 +12,6 @@ This means that only half the pattern piece is printed, and you should cut it ou
 
 <Tip>
 
-For an overview of all indicators on your pattern, refer to the [pattern notation guide](/docs/about/notation/)
+Огляд усіх індикаторів вашого шаблону можна знайти в [посібнику з нотації шаблонів](/docs/about/notation/)
 
 </Tip>

@@ -1,7 +1,5 @@
 ---
-title: "Center seam ease"
+title: "Facilidad de costura central"
 ---
 
-![The center seam ease option on Onyx](centerseamease.svg)
-
-Controls how long the center seam will be, and thus how low the crotch fork of the garment will be.
+Controla lo larga que será la costura central y, por tanto, lo baja que quedará la horquilla de la entrepierna de la prenda.

@@ -1,18 +1,18 @@
 ---
-title: "Otis, the simple baby romper: Cutting Instructions"
+title: "Otis, de eenvoudige baby romper: Knip instructies"
 ---
 
 - **Buitenstof**
-  - Cut **1 back** part on fold
+  - Knip **1 terug** deel op de vouw
   - Snijd **1 voorste deel** op de vouw
   - Cut **2 shortSleeve ** parts on fold or
-  - Cut **2 longSleeve** parts on fold
-  - Cut **1 bindingBackNeck** part
-  - Cut **1 bindingFrontNeck** part
-  - Cut **2 bindingLeg** parts
+  - Snijd **2 longSleeve** delen op de vouw.
+  - Snede **1 bindingAchterhals** deel
+  - Snede **1 bindingVoorNek** deel
+  - Snijd **2 bindLeg** delen
 
 <Note>
 
-Depending on your fabric, it may be useful to add interfacing to the snap placket. 
+Afhankelijk van je stof kan het handig zijn om versteviging toe te voegen aan de drukknoopsluiting. 
 
 </Note>

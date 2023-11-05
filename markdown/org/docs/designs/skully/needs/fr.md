@@ -1,19 +1,19 @@
 ---
-title: "Skully: What You Need"
+title: "Skully : Ce dont tu as besoin"
 ---
 
-To make Skully, you will need the following:
+Pour fabriquer Skully, tu auras besoin des éléments suivants :
 
 - [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
-- About 0.5 meters (0.6 yards) of a suitable fabric ([see Skully Fabric options](/docs/designs/skully/fabric/))
+- Environ 0,5 mètre d'un tissu approprié ([voir les options de tissu Skully](/docs/designs/skully/fabric/)).
 - Farce
-- Embroidery floss for the hair
-- Appropriately sized upholstery needle
+- Fil à broder pour les cheveux
+- Aiguille à tapisserie de taille appropriée.
 
 <Note>
 
-This list is based on a default Skully and you may need less or more fabric dependant on the [size you are making Skully](/docs/designs/skully/options/size/).
+Cette liste est basée sur un Skully par défaut et tu peux avoir besoin de moins ou de plus de tissu selon la [taille de ton Skully] (/docs/designs/skully/options/size/).
 
-For instance a 300% Skully will need 1.5 meters (0.5 meter x 300%  = 1.5 meters) and a 50% skully will need 0.25 meters (0.5 meter x 50% = 0.25 meters).
+Par exemple, un skully à 300 % aura besoin de 1,5 mètre (0,5 mètre x 300 % = 1,5 mètre) et un skully à 50 % aura besoin de 0,25 mètre (0,5 mètre x 50 % = 0,25 mètre).
 
 </Note>

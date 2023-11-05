@@ -2,8 +2,6 @@
 title: "Rok"
 ---
 
-![The skirt option on Onyx](skirt.svg)
+Kies of je wel of niet een eenvoudige gerimpelde rok rond de taille van het kledingstuk wilt toevoegen.
 
-Select whether or not you want to add a simple gathered skirt around the waist of the garment.
-
-This is a basic skirt intended to not add much bulk to the garment while offering a degree of modesty and flair. It's designed for use with swimwear, but may work well for other types of garments.
+Dit is een basisrok die bedoeld is om het kledingstuk niet te vol te maken en toch een zekere mate van bescheidenheid en flair te bieden. Het is ontworpen voor gebruik met zwemkleding, maar kan ook goed werken voor andere soorten kleding.

@@ -12,6 +12,7 @@ const ShowcasePage = ({ dir, page, mdx, frontmatter }) => {
     <PageWrapper
       {...page}
       title={frontmatter.title}
+      intro={frontmatter.intro}
       layout={(props) => (
         <PostLayout
           {...props}

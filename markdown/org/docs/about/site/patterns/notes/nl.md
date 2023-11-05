@@ -2,10 +2,10 @@
 title: Notities
 ---
 
-Every pattern has a **notes** attribute that is optional.
+Elk patroon heeft een **notes** attribuut dat optioneel is.
 
-The notes field allows you to add your notes to a pattern. This field supports markdown, so you can use rich formatting, or even embed images.
+Met het veld notities kun je notities aan een patroon toevoegen. Dit veld ondersteunt markdown, dus je kunt een rijke opmaak gebruiken of zelfs afbeeldingen insluiten.
 
 <Note>
-If you make your pattern public, your notes will also be public.
+Als je je patroon openbaar maakt, zijn je aantekeningen ook openbaar.
 </Note>

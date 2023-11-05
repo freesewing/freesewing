@@ -1,8 +1,8 @@
 ---
-title: "Curved darts"
+title: "Вигнуті дротики"
 ---
 
-The darts can be straight, or curved. Straight darts is what you see in most pencil skirt patterns. Curved darts shape the top of the skirt slightly, hopefully giving a better fit.
+Виточки можуть бути прямими або вигнутими. Прямі виточки - це те, що ви бачите в більшості викрійок спідниць-олівців. Вигнуті виточки злегка формують верхню частину спідниці, що, сподіваємось, забезпечить кращу посадку.
 
 
 

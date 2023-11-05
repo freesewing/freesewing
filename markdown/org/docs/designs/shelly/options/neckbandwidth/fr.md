@@ -1,6 +1,6 @@
 ---
-title: "Neckband width"
+title: "Largeur du tour de cou"
 ---
 
-Controls how wide the finished neckband will be, as a percentage of the neckline circumference.
+Contrôle la largeur de la bande de cou finie, en pourcentage de la circonférence de l'encolure.
 

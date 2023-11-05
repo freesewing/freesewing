@@ -1,6 +1,6 @@
 ---
-title: "Neckband width"
+title: "Ширина шийної стрічки"
 ---
 
-Controls how wide the finished neckband will be, as a percentage of the neckline circumference.
+Дозволяє контролювати ширину готової шийної стрічки у відсотках від обхвату горловини.
 

@@ -1,5 +1,5 @@
 ---
-title: "Knit Binding Width"
+title: "Breiwerk breedte"
 ---
 
-This option controls the width of the knit binding.
+Deze optie bepaalt de breedte van de gebreide binding.

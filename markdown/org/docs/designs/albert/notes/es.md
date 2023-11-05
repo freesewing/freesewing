@@ -1,5 +1,5 @@
 ---
-title: "Albert apron: Designer Notes"
+title: "Delantal Albert: Notas del diseñador"
 ---
 
-<Fixme>Wouter designed this. They have not written any notes (yet)</Fixme>
+<Fixme>Wouter diseñó esto. No han escrito ninguna nota (todavía)</Fixme>

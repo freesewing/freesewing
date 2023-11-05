@@ -1,9 +1,7 @@
 ---
-title: "Leg ribbing width"
+title: "Ширина ребер на ніжках"
 ---
 
-![The leg ribbing width option on Onyx](legribbingwidth.svg)
+Контролює ширину ребер навколо ноги.
 
-Controls how wide the ribbing around the leg is.
-
-Note: This option is only available if the 'leg ribbing' option is set to 'ribbing.'
+Примітка: Ця опція доступна, лише якщо для параметра "Ребра жорсткості" встановлено значення "ребра жорсткості".

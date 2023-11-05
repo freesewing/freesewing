@@ -2,8 +2,6 @@
 title: "Capuchon diepte"
 ---
 
-![The hood depth option on Onyx](hooddepth.svg)
+Bepaalt hoeveel ruimte er in de kap is rond de achterkant van het hoofd.
 
-Controls how much room will be in the hood around the back of the head.
-
-Note: This option is only available if the 'neck style' option is set to 'hood.'
+Opmerking: Deze optie is alleen beschikbaar als de optie 'halsstijl' is ingesteld op 'capuchon'.

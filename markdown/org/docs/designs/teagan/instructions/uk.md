@@ -85,7 +85,7 @@ title: "Футболка Teagan: Інструкція з пошиття"
 
 <Tip>
 
-A more extensive how-to on knit binding can be found in the [Aaron Instuctions](/docs/designs/aaron/instructions).
+Більш детальну інструкцію по в'язанню можна знайти в [Інструкції Аарона] (/docs/designs/aaron/instructions).
 
 </Tip>
 

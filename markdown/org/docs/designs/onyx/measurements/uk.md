@@ -1,5 +1,5 @@
 ---
-title: "Onyx One-piece: Required Measurements"
+title: "Онікс Цілісний: Необхідні виміри"
 ---
 
 <DesignMeasurements design='onyx' />

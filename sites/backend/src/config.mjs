@@ -115,6 +115,39 @@ const baseConfig = {
       uk: crowdinProject + 'invite?h=' + process.env.BACKEND_CROWDIN_INVITE_UK,
     },
   },
+  img: {
+    sites: ['org', 'dev', 'social'],
+    templates: {
+      folder: ['..', '..', 'artwork', 'img'],
+      sizes: {
+        square: 2000,
+        tall: 1080,
+        wide: 2400,
+      },
+      chars: {
+        wide: {
+          title_1: 24,
+          title_2: 26,
+          title_3: 26,
+          intro: 58,
+        },
+        square: {
+          title_1: 20,
+          title_2: 20,
+          title_3: 20,
+          intro: 52,
+        },
+        tall: {
+          title_1: 20,
+          title_2: 20,
+          title_3: 20,
+          title_4: 20,
+          title_5: 20,
+          intro: 52,
+        },
+      },
+    },
+  },
   jwt: {
     secretOrKey: encryptionKey,
     issuer: api,
@@ -224,7 +257,7 @@ if (baseConfig.use.oauth?.github) {
     redirectUri: `${
       process.env.BACKEND_OAUTH_GITHUB_CALLBACK_SITE
         ? process.env.BACKEND_OAUTH_GITHUB_CALLBACK_SITE
-        : 'https://next.freesewing.org'
+        : 'https://freesewing.org'
     }/signin/callback/github`,
   }
   baseConfig.oauth.github.url = (state) =>
@@ -246,7 +279,7 @@ if (baseConfig.use.oauth?.google) {
     redirectUri: `${
       process.env.BACKEND_OAUTH_GOOGLE_CALLBACK_SITE
         ? process.env.BACKEND_OAUTH_GOOGLE_CALLBACK_SITE
-        : 'https://next.freesewing.org'
+        : 'https://freesewing.org'
     }/signin/callback/google`,
   }
   baseConfig.oauth.google.url = (state) =>
@@ -277,6 +310,7 @@ export const github = config.github
 export const instance = config.instance
 export const exports = config.exports
 export const oauth = config.oauth
+export const imgConfig = config.img
 
 const vars = {
   BACKEND_DB_URL: ['required', 'db.url'],

@@ -1,7 +1,5 @@
 ---
-title: "Skirt hem"
+title: "Поділ спідниці"
 ---
 
-![The skirt hem option on Onyx](skirthem.svg)
-
-Sets the hem allowance of the hem along the bottom of the skirt, as a multiple of the seam allowance.
+Встановлює припуск на підгин по низу спідниці, кратний припуску на шов.

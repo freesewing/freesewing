@@ -1,6 +1,6 @@
 ---
-title: "Wrist ease"
+title: "Зручність для зап'ястя"
 ---
 
-Affects how wide the end of the sleeve is on some shirts. There is no effect for sleeves ending at the biceps or above. For longer sleeves, the wrist measurement and this wrist ease option have a progressively larger effect, reaching full effect for long sleeved shirts (sleeve length of 100% or greater).
+Впливає на те, наскільки широкий кінець рукава на деяких сорочках. Для рукавів, що закінчуються на біцепсі або вище, ефект відсутній. Для довших рукавів вимірювання обхвату зап'ястя і ця опція полегшення зап'ястя мають дедалі більший ефект, досягаючи повного ефекту для сорочок з довгими рукавами (довжина рукава 100% або більше).
 

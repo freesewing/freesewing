@@ -1,15 +1,15 @@
 ---
-title: "Gozer the ghost: Sewing Instructions"
+title: "Gozer der Geist: Nähanleitung"
 ---
 
 ## Schritt 1: Die Augen
 
-- Cut holes where marked.
+- Schneide die Löcher an den markierten Stellen.
 
-## Step 2: The body
+## Schritt 2: Der Körper
 
-- Hem the body
+- Den Körper säumen
 
 ## Schritt 3: Viel Spaß!
 
-That's it, you are all done. Put it on and scare the neighborhood.
+Das war's, du bist fertig. Zieh es an und erschrecke die Nachbarschaft.

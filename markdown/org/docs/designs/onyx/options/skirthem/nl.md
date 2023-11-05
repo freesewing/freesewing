@@ -1,7 +1,5 @@
 ---
-title: "Skirt hem"
+title: "Rokzoom"
 ---
 
-![The skirt hem option on Onyx](skirthem.svg)
-
-Sets the hem allowance of the hem along the bottom of the skirt, as a multiple of the seam allowance.
+Bepaalt de zoomtoeslag van de zoom langs de onderkant van de rok, als een veelvoud van de naadtoeslag.

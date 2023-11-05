@@ -1,13 +1,11 @@
 ---
-title: "Neckband length"
+title: "Longitud de la cinta del cuello"
 ---
 
-![The neckband length option on Onyx](neckbandlength.svg)
+Controla la longitud de la cinta del cuello, como porcentaje de la circunferencia del escote.
 
-Controls how long to make the neckband, as a percentage of the circumference of the neckline.
+Un valor demasiado grande hará que la cinta del cuello quede suelta y no mantenga bien su forma, mientras que un valor demasiado pequeño hará que el tejido alrededor de la cinta del cuello quede fruncido.
 
-Too large a value will make for a loose neckband that doesn't hold its shape properly, while too small a value will cause the fabric around the neckband to be gathered.
+Los materiales que se estiran más fácilmente deben utilizar valores menores. 80-85% es un valor razonable cuando se utiliza tejido de baño, y 75% es un valor razonable para el punto elástico.
 
-Materials that stretch more easily should use smaller values. 80-85% is a reasonable value when using swim fabric, and 75% is a reasonable value for rib knit.
-
-Note: This option is only available if the 'neck style' option is set to 'neckband.'
+Nota: Esta opción sólo está disponible si la opción "estilo de cuello" está configurada como "banda de cuello".

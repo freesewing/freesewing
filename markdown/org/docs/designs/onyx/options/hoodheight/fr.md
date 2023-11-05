@@ -2,8 +2,6 @@
 title: "Hauteur de capuche"
 ---
 
-![The hood height option on Onyx](hoodheight.svg)
+Contrôle la hauteur de la hotte.
 
-Controls how tall the hood will be.
-
-Note: This option is only available if the 'neck style' option is set to 'hood.'
+Remarque : cette option n'est disponible que si l'option " style de cou " est réglée sur " capuche ".

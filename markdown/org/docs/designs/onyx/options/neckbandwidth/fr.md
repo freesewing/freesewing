@@ -1,9 +1,7 @@
 ---
-title: "Neckband width"
+title: "Largeur du tour de cou"
 ---
 
-![The neckband width option on Onyx](neckbandwidth.svg)
+Contrôle la largeur de la bande de cou finie. Pour les maillots de bain, 4cm / 1,5in (la valeur par défaut) est une valeur courante. Si tu utilises un tricot côtelé, on utilise généralement 5 à 7,5 cm.
 
-Controls how wide to make the finished neckband. For swimwear, 4cm / 1.5in (the default) is a common value. If using rib knit, 5-7.5cm (2-3in) is generally used.
-
-Note: This option is only available if the 'neck style' option is set to 'neckband.'
+Remarque : cette option n'est disponible que si l'option " style de col " est réglée sur " tour de cou ".

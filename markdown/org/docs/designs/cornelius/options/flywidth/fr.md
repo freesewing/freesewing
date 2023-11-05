@@ -1,8 +1,8 @@
 ---
-title: "Fly guard width"
+title: "Largeur de la protection contre les mouches"
 ---
 
 ***
 
-Controls the width of fly guard.
+Contrôle la largeur de la protection contre les mouches.
 

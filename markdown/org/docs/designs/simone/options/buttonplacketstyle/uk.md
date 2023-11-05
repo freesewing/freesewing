@@ -14,7 +14,7 @@ title: "Планка з ґудзиками"
 
 <Note>
 
-As seamless is only possible on a _cut-on_ placket, this option is ignored if you choose a separate button placket.
+Оскільки безшовний варіант можливий лише для _пришивної_ планки, ця опція ігнорується, якщо ви обираєте окрему планку для ґудзиків.
 
 </Note>
 

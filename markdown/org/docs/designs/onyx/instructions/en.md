@@ -74,7 +74,7 @@ Check around the hips, upper legs, and crotch fork, and make sure that everythin
 Note: If the front or back was cut _on the fold_, skip steps producing center seams.
 Note: These instructions are intended to form the seams such that the side seams extend backwards, and the center seams extend leftwards.
 Note: These instructions assume that the zipper is on the front. If the zipper is on the back or there is no zipper, the directions will have to be modified slightly.
-Note: If you're having the zipper zip up across the neckband (recommended for unisuits), remember that.
+Note: If you're having the zipper zip up across the neckband (recommended for unisuits), remember that when placing the zipper on the center seam.
 
 If not using lining:
 - (if front was _not_ cut _on the fold_) With _good sides together_, place the zipper and neckband into position along the center seam, remembering to take seam allowance into account. Mark where the bottom stop of the zipper is, and serge/overlock the front pieces together starting at the crotch fork and stopping at the bottom stop of the zipper.
@@ -226,11 +226,34 @@ Sewing the zipper.
  - Start at the neck on the right side, and sew down until you are a few mm past the zipper stop using a straight stitch. Be careful not to sew into the zipper guard or any loose fabric.
  - Repeat for the other side. This time, when you reach the bottom, turn the fabric 90 degress and sew across the bottom until you meet the first line of stitching, securing the bottom of the zipper and zipper guard.
 
-### Step 7: (Optional) Hemming
+### Step 7a: (Optional) Ribbed cuffs
+The ribbed cuff pieces can be added to the sleeves and legs in a mannar similar to that used to attach the neckband to the neck hole.
 
-- Hem the sleeves, legs, hood, and/or bottom of the skirt using a single-fold hem. Using a twin needle will add some stretch to the stitching, but in either case the use of a stretch stitch is still recommended for high-stretch fabrics.
+- Fold the ribbed cuff piece opposite the fold line (vertically), with _good sides together_.
+- Serge/overlock along the edge, so that the ribbed cuff piece is now a closed loop.
+- Unfold the ribbed cuff piece.
+- Fold the ribbed cuff piece in half along the fold line (horizontally), with _wrong sides together_.
+- Turn the garment _right side out_.
+- Place the loop of ribbing around the sleeve or leg of the garment, lining up the edges of the ribbing and the sleeve/leg.
+- Stretch both the sleeve/leg and ribbing together until the folds/gathers/slack in the sleeve are all gone, and clip into place.
+- Serge/overlock _on the round_ along the seam.
+- Repeat for the remaining sleeves/legs.
+
+### Step 7b: (Optional) Hemming
+
+- Hem the sleeves, legs, hood, and/or bottom of the skirt using a single-fold hem. A coverstitch machine is ideal, but not necessary. Using a twin needle with a regular sewing machine will add some stretch to the stitching, but in either case the use of a stretch stitch is still recommended for high-stretch fabrics.
 - You may carefully cutaway excess fabric to make a cleaner hem. This is quite optional, since this fabric should stay on the inside.
 - Alternatively, you can overlock or serge the raw edge _without_ folding it over to give it a little bit of substance without adding as much bulk as a folded hem, or you can make a rolled hem.
 - Or you can leave the edges unfinished, particularly if it's swim fabric or some other fabric that does not fray at all.
 
 ### Step 8: (Options) Adding a skirt
+
+- Fold the skirt piece in half along the cut-on-fold line, with _good sides together_, and serge/overlock along the side so that the skirt is closed.
+- (optional) Hem the bottom of the skirt.
+- Gather the skirt along the waist (or top) of the skirt using two gather threads spaced 12mm (1/2") apart. Place the skirt around the garment where it will rest, and adjust the gathers to fit around the garment.
+- The skirt can be either placed _right side out_ on the garment, or _inside-out_ and _upside-down_ on the garment. _Right side out_ will produce a lighter and stronger seam, but the seam will be visible (which may or may not be desirable). _Inside-out_ will hide the seam under the skirt, but will add an extra fold of fabric to the waist.
+- Line up the waist of the skirt with where you want it to rest on the garment, and pin it into place.
+- Use a coverstitch machine or a short and wide zigzag stitch along the top edge of the skirt, forming a lap seam and hiding the edge of the fabric under the coverstitch or zigzag.
+- Make a second coverstitch or zigzag about 6-12mm (1/4" to 1/2") below the first line of stitching, placing it between the two gather threads and being careful not to catch either gather thread under the coverstitch.
+- Remove the gather threads.
+- If the skirt was placed _inside-out_ and _upside-down_, flip it back over.

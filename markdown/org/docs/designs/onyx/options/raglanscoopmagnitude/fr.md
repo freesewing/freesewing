@@ -1,7 +1,5 @@
 ---
-title: "Raglan scoop depth"
+title: "Profondeur raglan"
 ---
 
-![The raglan scoop depth option on Onyx](raglanscoopmagnitude.svg)
-
-Controls how much extra material to place under the armpits.
+Contrôle la quantité de tissu supplémentaire à placer sous les aisselles.

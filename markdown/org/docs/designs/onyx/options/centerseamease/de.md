@@ -1,7 +1,5 @@
 ---
-title: "Center seam ease"
+title: "Leichtigkeit der Mittelnaht"
 ---
 
-![The center seam ease option on Onyx](centerseamease.svg)
-
-Controls how long the center seam will be, and thus how low the crotch fork of the garment will be.
+Legt fest, wie lang die Mittelnaht sein wird und wie tief die Schrittgabel des Kleidungsstücks liegen wird.

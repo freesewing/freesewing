@@ -1,9 +1,7 @@
 ---
-title: "Leg ribbing width"
+title: "Been ribbreedte"
 ---
 
-![The leg ribbing width option on Onyx](legribbingwidth.svg)
+Bepaalt hoe breed de ribbels rond het been zijn.
 
-Controls how wide the ribbing around the leg is.
-
-Note: This option is only available if the 'leg ribbing' option is set to 'ribbing.'
+Opmerking: Deze optie is alleen beschikbaar als de optie 'been ribbels' is ingesteld op 'ribbels'.

@@ -1,5 +1,5 @@
 ---
-title: "Knit Binding Width"
+title: "Largeur de la reliure en tricot"
 ---
 
-This option controls the width of the knit binding.
+Cette option permet de contrôler la largeur de la reliure en tricot.

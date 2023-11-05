@@ -35,11 +35,17 @@ Pattern pattern.sample()
 
 ```js
 import { Aaron } from "@freesewing/aaron"
-import { cisFemaleAdult } from "@freesewing/models"
+
+// Load some public test measurements from the FreeSewing backend
+const measurements = (
+  await (
+    await fetch("https://backend3.freesewing.org/curated-sets/1.json")
+  ).json()
+).measurements
 
 const pattern = new Aaron({
   sample: {
-    models: cisFemaleAdult
+    models: measurements
   }
 })
 

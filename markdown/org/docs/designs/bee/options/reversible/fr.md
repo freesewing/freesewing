@@ -1,6 +1,6 @@
 ---
-title: Reversible
+title: Réversible
 ---
 
-Whether you want to make a fully reversible Bee or not.
+Que tu veuilles faire un Abeille entièrement réversible ou non.
 

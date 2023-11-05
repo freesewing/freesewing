@@ -1,12 +1,12 @@
 ---
-title: "An early Uma"
-caption: "An Uma made of rayon spandex jersey"
+title: "Una Uma temprana"
+caption: "Una Uma de jersey de rayón spandex"
 date: 20231027
-intro: "This pair of Uma undies is made of rayon spandex jersey and finished with wide fold over elastic."
+intro: "Este par de braguitas Uma está confeccionado en punto elástico de rayón y acabado con un amplio pliegue elástico."
 designs:
   - "uma"
 maker: Natalia
 ---
 
-This pair of Uma undies is made of rayon spandex jersey and finished with wide fold over elastic. This is an early version of the design, which has since undergone a few changes.
+Este par de braguitas Uma está confeccionado en punto elástico de rayón y acabado con un amplio pliegue elástico. Se trata de una primera versión del diseño, que desde entonces ha sufrido algunos cambios.
 

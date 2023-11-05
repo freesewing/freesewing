@@ -1,9 +1,7 @@
 ---
-title: "Leg ribbing"
+title: "Been ribbels"
 ---
 
-![The leg ribbing option on Onyx](legribbing.svg)
+Kies of je ribgebreide boorden voor de benen wilt maken of dat je een zoom wilt gebruiken.
 
-Choose whether to make ribbed knit cuffs for the legs or to use a hem.
-
-Note: Setting this option to 'hem' will enable the 'leg hem' option, while setting this option to 'ribbing' will enable the 'leg ribbing length' and 'leg ribbing width' options.
+Opmerking: Als je deze optie instelt op 'zoom', wordt de optie 'beenzoom' ingeschakeld, terwijl als je deze optie instelt op 'ribbels', de opties 'lengte beenribbels' en 'breedte beenribbels' worden ingeschakeld.

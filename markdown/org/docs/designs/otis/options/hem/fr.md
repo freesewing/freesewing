@@ -2,6 +2,6 @@
 title: "Faire les ourlets"
 ---
 
-Hem determines the size of the hem on the sleeves.
+L'ourlet détermine la taille de l'ourlet des manches.
 
-The hem is a percentage of the distance between the shoulder and the arm opening (of the short sleeve version). Default is 10%
+L'ourlet est un pourcentage de la distance entre l'épaule et l'ouverture du bras (de la version à manches courtes). La valeur par défaut est de 10 %

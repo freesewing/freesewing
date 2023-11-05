@@ -17,7 +17,7 @@ Je nach Stil sind die Krawatten und Tasten optional.
 
 If you are making Buttonhole Ear Flaps you can omit the ties.
 If you are making Tie Ear Flaps you can omit the button.
-- Ties can also be made from fabric if you prefer ([see Holmes Cutting](/docs/designs/holmes/cutting/))
-- You can also use different width and type ribbons for the ties if you prefer.
+- Die Krawatten können auch aus Stoff hergestellt werden, wenn du das möchtest ([siehe Holmes Cutting](/docs/designs/holmes/cutting/))
+- Du kannst auch Bänder unterschiedlicher Breite und Art für die Krawatten verwenden, wenn du das möchtest.
 
 </Note>

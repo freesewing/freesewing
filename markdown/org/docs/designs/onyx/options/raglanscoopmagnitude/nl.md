@@ -1,7 +1,5 @@
 ---
-title: "Raglan scoop depth"
+title: "Raglan schepdiepte"
 ---
 
-![The raglan scoop depth option on Onyx](raglanscoopmagnitude.svg)
-
-Controls how much extra material to place under the armpits.
+Bepaalt hoeveel extra materiaal er onder de oksels moet komen.

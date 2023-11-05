@@ -10,13 +10,13 @@ title: "2023 Осінній випуск"
 Ось що ми включили для вас сьогодні:
 
 
-- 🎉 Announcing FreeSewing v3.0 (2-minute read - by joost)
-- ⚠️  Breaking changes in FreeSewing v3 (1-minute read - by joost)
-- 📦 FreeSewing designs are now JBOP  (1-minute read - by joost)
-- 🕵️ Behind the Seams: Jenni (6-minute read - by Jenni & Karen)
-- 🙏 You have measurements, and I want them for our new site (2-minute read - by joost)
-- 🇺🇦  Support for Ukrainian and a newsletter in multiple languages (1-minute read - by joost)
-- 🤔 So when will FreeSewing.org run on version 3? (1-minute read - by joost)
+- 🎉 Анонс FreeSewing v3.0 (2-хвилинне читання - від joost)
+- ⚠️ Основні зміни у FreeSewing v3 (1-хвилинне читання - від joost)
+- FreeSewing дизайни тепер є JBOP (1-хвилинне читання - by joost)
+- 🕵️ За швами: Дженні (6-хвилинне читання - Дженні & Карен)
+- У вас є виміри, і я хочу їх для нашого нового сайту (2-хвилинне читання - by joost)
+- 🇺🇦 Підтримка української мови та інформаційний бюлетень кількома мовами (1 хвилина читання - за допомогою joost)
+- 🤔 Тож коли FreeSewing.org буде працювати на версії 3? (1-хвилинне читання - by joost)
 
 &nbsp;
 
@@ -24,50 +24,34 @@ title: "2023 Осінній випуск"
 
 &nbsp;
 
-## 🎉 Announcing FreeSewing v3.0
+## 🎉 Анонс FreeSewing v3.0
 
-FreeSewing 3.0 is finally here.
+FreeSewing 3.0 нарешті тут.
 
-The 3.0 release culminates more than a year of work, and comes just over four years after the v2.0 release. What I’m saying is: I don’t make announcements like this often, and it’s a big deal. You should get excited.
+Реліз 3.0 є кульмінацією більш ніж річної роботи і вийшов трохи більше ніж через чотири роки після релізу 2.0. Я хочу сказати, що я не часто роблю такі анонси , і це дуже важливо. Ти маєш радіти.
 
-A lot of work went into this release, and I couldn’t possibly cover all of it. To give you a rough idea, FreeSewing's monorepo -- which holds all our code -- was created in early July 2018 when I migrated to a monorepo approach. Its current state is the result of over 92K commits since that day.
+У цей реліз було вкладено багато зусиль, і я не зміг би охопити все це. Щоб дати вам приблизне уявлення, монорепозиторій FreeSewing, в якому зберігається весь наш код - був створений на початку липня 2018 року, коли я перейшов на монорепозиторій. Поточний стан є результатом більш ніж 92 тисяч коммітів з того дня.
 
 Of those 92K commits, more than 45K are the work on v3, as you can see in this output from when I finally got to merge v3 into the main branch (which was frozen since August last year):
 
 ```
 joost@machine:~/git/freesewing$ git status
-On branch main
-Your branch is ahead of 'origin/main' by 45197 commits.
-  (use "git push" to publish your local commits)
+На гілці main
+Ваша гілка випереджає 'origin/main' на 45197 комітів.
+  (використовуйте "git push" для публікації локальних коммітів)
 
-nothing to commit, working tree clean
+нічого не коммітити, робоче дерево чисте
 ```
 
-Would it surprise you if I told you there were a few merge conflicts to resolve?
+Чи здивує вас, якщо я скажу, що було кілька конфліктів при злитті, які потрібно було вирішити?
 
-Anyway, I know commit count is a crude way to measure things. But it's somewhat indicative of the effort expended that the work done over the last 13 months to get to v3 by commit count is roughly similar to the work done in the 4 years prior to that.
+Так чи інакше, я знаю, що кількість коммітів - це грубий спосіб вимірювання. Але дещо свідченням витрачених зусиль є те, що робота, виконана за останні 13 місяців, щоб дійти до v3 за кількістю коммітів, приблизно така ж, як і робота, виконана за 4 роки до цього.
 
-It's been an ambitious leap forward, and as I wrote in the previous edition of this newsletter, at times it felt like I had bitten off more than I can chew. Sticking the landing was also fraught with its own set of challenges, as deciding what the release would look like requierd some tough decisions.
+Це був амбітний стрибок уперед, і, як я писав у попередньому випуску цього ньюзлетера, часом мені здавалося, що я відкусив більше, ніж можу проковтнути. Запуск лендінгу також був пов'язаний зі своїми труднощами, оскільки рішення про те, як буде виглядати реліз, вимагало прийняття складних рішень.
 
-But we're in a great place now. After 15 alpha versions and 1 beta version, version 3.0.0 of FreeSewing is now generally available.
+Але зараз ми в чудовому місці. Після 15 альфа-версій та 1 бета-версії, версія 3.0.0 FreeSewing стала загальнодоступною.
 
-I want to thank FreeSewing's patrons for their continued support, as well as all those who contributed to this release, gave their input and feedback, helped with translation, or just had a few nice words of encouragement to spare. It was all needed to get to where we are today, and I'm very appreciative to all of you.
-
-&nbsp;
-
----
-
-&nbsp;
-
-## ⚠️  Breaking changes in FreeSewing v3
-
-3.0.0 is a major release so there are breaking changes. Listing all of them would be rather challenging, and probably not that useful. But here are three changes that are super obviously going to break your stuff if you rely on FreeSewing code:
-
-- **FreeSewing 3 is ESM only**: Migrating a large Javascript project to ESM modules is enough to make even the most seasoned developers break down and cry, but it’s done.
-- **FreeSewing 3 uses named exports**: There are obviously some places where a default export is required (looking at you NextJS) but whereever we can, we now use named exports exclusively because we all know those are better.
-- **FreeSewing 3 requires Node 18 or newer**: I recommend lts/hydrogen
-
-With that out of the way, let’s talk about what’s new.
+Я хочу подякувати меценатам FreeSewing за їхню постійну підтримку, а також всім тим, хто долучився до створення цього випуску, надав свій внесок та відгуки, допоміг з перекладом, або просто сказав кілька приємних слів підтримки не пошкодував. Це все було необхідно, щоб досягти того, що ми маємо сьогодні, і я дуже вдячний усім вам.
 
 &nbsp;
 
@@ -75,15 +59,31 @@ With that out of the way, let’s talk about what’s new.
 
 &nbsp;
 
-## 📦 FreeSewing designs are now JBOP
+## ⚠️ Основні зміни у FreeSewing v3
+
+3.0.0 - це великий реліз, тому в ньому є суттєві зміни. Перерахувати їх усі було б досить складно, та й, мабуть, не дуже корисно. Але ось три зміни, які, очевидно, зламають ваш , якщо ви покладаєтесь на код FreeSewing:
+
+- **FreeSewing 3 - це тільки ESM**: Міграція великого проекту на Javascript на модулі ESM достатньо, щоб змусити навіть найдосвідченіших розробників зламатися і плакати, але це зроблено.
+- **FreeSewing 3 використовує іменований експорт**: Очевидно, що є місця, де потрібен експорт за замовчуванням (дивлячись на вас, NextJS), але скрізь, де ми можемо, ми зараз використовуємо іменований експорт виключно тому, що ми всі знаємо, що він кращий.
+- **FreeSewing 3 потребує Node 18 або новішої версії**: Я рекомендую lts/hydrogen
+
+З цим покінчено, давайте поговоримо про те, що нового.
+
+&nbsp;
+
+---
+
+&nbsp;
+
+## FreeSewing дизайни тепер JBOP
 
 A big driver for the decision to freeze the v2 branch and start working on v3 was to make it easier to mix-and-match parts from various designs.
 
-Design inheritance was already possible in v2, but because the configuration was handled on the design level, it required careful re-configuration of (required) measurements, options, part dependencies, and so on. It was possible but came with a lot of friction.
+Успадкування дизайну вже було можливим у версії 2, але оскільки конфігурація оброблялася на рівні дизайну, це вимагало ретельного переконфігурування (необхідних) вимірів, опцій, залежностей деталей і так далі. Це було можливо , але супроводжувалося великими труднощами.
 
-In v3, all configuration is moved to the part level, and a design is now not much more than just a bunch of parts (JBOP). It is the parts themselves that configure what they need. This includes anything from the measurements they require, the options they provide, the plugins they use, their dependencies, and so on. This way, you can re-use parts from various designs, and all of their configuration, dependencies, plugins, and so on will follow.
+У версії 3 всю конфігурацію перенесено на рівень деталей, і тепер дизайн - це не набагато більше, ніж просто набір деталей (JBOP). Саме деталі самі налаштовують те, що їм потрібно. Це включає в себе все, починаючи від вимірювань, які вони вимагають, опцій, які вони надають, плагінів, які вони використовують, їх залежностей, і так далі. Таким чином, ви можете повторно використовувати частини з різних проектів, і вся їхня конфігурація, залежності, плагіни і т.д. будуть збережені.
 
-For our own designs, I expect to see this new modularity result in the consolidation of common parts into a number of utility designs that are not intended as stand-alone patterns, but rather as providers of common features. As an example, plenty of designs need welt pockets, and today they each implement their own.  In the future, I expect a welt pocket will be something you can just grab as an *off-the-shelf* part so to speak.
+Щодо наших власних розробок, я очікую, що ця нова модульність призведе до консолідації спільних частин у низку утилітарних розробок, які не призначені як окремі патерни, а скоріше як постачальники спільних функцій. Наприклад, багато моделей потребують прорізних кишень, і сьогодні кожен реалізує свої власні.  В майбутньому, я очікую, що кишеня з прорізним швом стане чимось , що можна буде просто взяти як *готову* деталь, так би мовити.
 
 It's but one example, but it goes to show that the move to part-based configuration not only makes things easier, it also opens up exciting new avenues that weren't previously accessible.
 
@@ -93,39 +93,39 @@ It's but one example, but it goes to show that the move to part-based configurat
 
 &nbsp;
 
-## 🕵️ Behind the Seams: Jenni
+## 🕵️ За швами: Дженні
 
-Fans of the [FreeSewing Discord](https://discord.freesewing.org/) have probably seen some of the awesome clothes Jenni has made for everyone in her family. We chatted with Jenni to learn a little more about her background and journey to becoming a FreeSewing contributor! The interview below has been edited for length, and any errors, oversights, etc. are entirely the fault of the interviewer.
+Шанувальники [FreeSewing Discord](https://discord.freesewing.org/) напевно бачили деякі з чудових речей, які Дженні пошила для всіх членів своєї родини. Ми поспілкувалися з Дженні, щоб дізнатися трохи більше про її біографію та шлях до того, щоб стати дописувачем FreeSewing! Наведене нижче інтерв'ю було відредаговано для обсягу, і будь-які помилки, недогляди тощо є цілковитою провиною інтерв'юера .
 
 ### Коли і чому ви почали шити? Як ви дізналися про FreeSewing? Ви шиєте переважно для себе чи для інших, наприклад, для друзів чи родини?
 
-I gradually became aware of FreeSewing when I first started sewing and was pretty confused by all this idea of 'hacking' patterns and modifying them to fit your body. Being able to take really detailed measurements and then generating a pattern to fit you well seemed like a great idea! I looked at it longingly for a bit, I played with it for a bit but didn't actually try any of the patterns for quite a while. Instead I used the patterns produced by one indie designer in particular - Oliver + S kids patterns and Liesl & Co adult sizes, produced by the same designer. Her patterns are very well explained and the kids' patterns take into consideration the needs of that group very directly (proportions, ease, usability). So I got better at sewing in general. I sewed for myself and some family members and friends, mostly tops for other people, but I also made some clothes for my kids. More and more I found that I was ending up sewing stuff for my eldest more than other family members: my kid is skinny anyway so there are some fitting challenges, but also they were / are going through some gender dysphoria experiences as they grew older and came out as non-binary.
+Я поступово дізналася про FreeSewing, коли тільки почала шити, і була досить збентежена всією цією ідеєю "злому" викрійок і модифікації їх, щоб вони підходили до вашої фігури. Можливість зняти справді детальні мірки, а потім згенерувати викрійку, яка буде добре на вас сидіти, здалася мені чудовою ідеєю! Я трохи подивився на нього з тугою, трохи погрався з ним, але так і не спробував жодного з патернів протягом досить тривалого часу. Натомість я використала викрійки одного інді-дизайнера, зокрема, дитячі викрійки Oliver + S та викрійки Liesl & Co adult розмірів, створені тим самим дизайнером. Її моделі дуже добре пояснюються і дитячі моделі враховують потреби цієї групи дуже безпосередньо (пропорції, легкість, зручність використання). Так я стала краще шити взагалі. Я шила для себе та деяких членів сім'ї і друзів, в основному топи для інших людей, але також робила одяг для своїх дітей. Я все частіше помічала, що шию речі для свого старшого сина більше, ніж для інших членів сім'ї: моя дитина худорлява, тож є певні проблеми з припасуванням, але також вони переживали/переживають гендерну дисфорію, коли дорослішали і ставали небінарними.
 
-There was a tipping point one day when they refused to wear any sort of feminine-gendered swimming costume - and there was school swimming lessons coming up shortly. Sewing to the rescue! I created a pattern for a Teagan and Shin combo to make a swimming costume with separate top and bottom in a gender neutral style that was acceptable. In fact due to timings we also ended up buying a commercial onesie so that they had a choice of options, but being able to confidently assure my kid that yes, there was something we could definitely do, was very helpful in the moment. I made that Shin / Teagan combo for them, but also a pair of Shin trunks for my younger kid (in a smashing flamey lycra!) and one for my partner, who hates flappy boxer type swimmers and was a bit short on useable speedos. My sister saw the Shin in the bright flame pattern lycra and wanted one too, so I made another one! And I can see more being needed as the originals grown out of, so I won't stop there.
+Одного разу настав переломний момент, коли вони відмовилися вдягати будь-які жіночі плавальні костюми - а незабаром були шкільні уроки плавання . Шиття на допомогу! Я створила викрійку для комбінації Тіган і Шин, щоб зробити купальний костюм з окремим верхом і низом в нейтральному гендерному стилі, який був би прийнятним. Насправді, через хронометраж ми також купити комерційні повзунки, щоб у них був вибір, але можливість впевнено запевнити мою дитину, що так, є щось, що ми точно зможемо зробити, була дуже корисною в той момент. Я зробив для них комбінацію Shin / Teagan, , а також пару плавок Shin для моєї молодшої дитини (з приголомшливої полум'яної лайкри!). і один для мого партнера, який ненавидить плавців, що плавають у стилі боксерів, і якому не вистачало придатних для використання плавок. Моя сестра побачила гомілку з яскравим полум'яним візерунком з лайкри і теж захотіла таку, тож я зробила ще одну! І я бачу, що потрібно більше, оскільки оригінали виросли з них, тому я не зупинятимусь на цьому.
 
-I've also made my kid a number of Bruce boxers, with a flat front. They are very gender euphoric as underwear! Lovely and jolly too, because of course you can use all sorts of small bits of various knits so they end up very colourful. And now I am starting to make some Aarons for my kid, to be used instead of a commercial crop top / bralette. I will have to work out how to make them snug without being too compressive although they do like some compression so we will have to iterate I guess.
+Я також зробив своєму синові кілька трусів-боксерів "Брюс", з пласким переднім краєм. Вони дуже гендерно ейфорійні, як нижня білизна! Мило і весело, тому що, звичайно, ви можете використовувати всілякі маленькі шматочки різної в'язки, щоб вони в результаті вийшли дуже барвистими. А зараз я починаю шити кілька Ааронів для моєї дитини, які будуть використовуватися замість комерційного кроп-топа/бралета. Мені доведеться попрацювати над тим, як зробити їх щільними без надмірного стиснення, хоча вони люблять деяке стиснення, тому нам доведеться ітерації, я думаю.
 
 ### Як ви стали дописувачем? Якою була ваша авторська робота до цього часу?
 
-I'm not sure that I am much of a contributor really, despite vaguely wanting to help. What I do do is to share my makes on Discord, and include information about what was challenging and what went well. For instance, using FS patterns for kids does have some difficulties in that clothing can come out as very snug in the body (not enough ease proportionally) or in key areas like the neckline (where it is snug to the neck but not really large enough to get a kid's head through easily - again due to proportions). These are all things that can be handled but it is worth looking out for specifically when trying something new.
+Я не впевнений, що я є справжнім дописувачем, незважаючи на те, що мені дуже хочеться допомогти . Що я роблю, так це ділюся своїми роботами на Discord і додаю інформацію про те, що було складним, а що пройшло добре. Наприклад, використання лекал ФС для дітей має певні труднощі, оскільки одяг може бути дуже щільно на тілі (недостатньо пропорційно легким) або в ключових зонах, таких як виріз горловини (де він щільно прилягає до шиї, але недостатньо великий, щоб дитина могла легко просунути голову - знову ж таки, через пропорції). Це все речі, з якими можна впоратися, але на них варто звернути особливу увагу, коли ви пробуєте щось нове.
 
-I did manage to write a couple of Showcase posts and in principle I would be happy to do some more of that, but I have so much going on at present in my home and work life that realistically it gets squeezed out. For now I will stick to gradually trying new patterns and feeding back on them in Discord!
+Мені вдалося написати кілька постів для вітрини і, в принципі, я був би радий зробити це ще, але у мене зараз так багато справ у моєму домашньому та робочому житті, що це реально витісняє мене з нього. Наразі я продовжуватиму поступово випробовувати нові шаблони та писати відгуки про них у Discord!
 
 ### Яким швейним/кодинговим проектом ви пишаєтеся найбільше?
 
-A standout project was a big cycling cape I made myself, based on the Folkwear Patterns "Australian Drover's Coat". It hearks back to the rugged leather or oilskin coats that you might wear as a rider in the Outback, only with more hi-vis reflection for use in the (not so) mean streets of Oxford, UK. Not sure whether it is the sewing project I am most proud of as such, though I am definitely very pleased to have finished it! It was a real marathon, and putting the press studs in was great fun (though also a bit nerve-wracking). My partner wants me to make one for him, so that's pretty good too - once I can face another marathon!
+Особливим проектом стала велика велосипедна накидка, яку я зробила власноруч, взявши за основу викрійки з сайту Folkwear "Australian Drover's Coat". Він нагадує міцні шкіряні або пальта з олійної шкіри, які ви могли б носити як вершник в глибинці, тільки з більш світловідбиваючим покриттям для використання на (не дуже) брудних вулицях Оксфорда, Великобританія. Не впевнена , що найбільше пишаюся саме швейним проектом як таким, хоча я безумовно дуже рада, що закінчила його! Це був справжній марафон, і вставляти прес-шпильки було дуже весело (хоча й трохи нервово). Мій партнер хоче, щоб я зробив такий для нього, тож це теж непогано - колись я зможу зустріти ще один марафон!
 
 ### Що ти найбільше любиш у шитті? Що ви найбільше ненавидите в шитті? Що для вас найскладніше в шитті?
 
-I enjoy the process of sewing (most of it! Buttonholes are a bit nerve-wracking) and I enjoy the results too - looking at it, looking at others wearing or using it, using it myself. Fitting things well is still a big challenge, I don’t feel I really understand it yet. I want to try Top Down Centre Out for trouser fitting and I think I understand the concept but have been a bit nervous of taking it on properly, I need to dedicate a slot of time.
+Я насолоджуюся процесом шиття (більшу частину! Петельки трохи нервують) і мені подобається результат - дивитися на нього, дивитися на інших , які носять або використовують його, користуватися ним самому. Добре підігнати речі - це все ще великий виклик, і я не відчуваю, що розумію це по-справжньому. Я хочу спробувати Top Down Centre Out для примірки штанів, і я думаю, що розумію концепцію, але трохи хвилююся, як правильно її використовувати, мені потрібно присвятити цьому певний час.
 
 ### Що б ви порадили швачкам-початківцям?
 
-There's a sense in which a certain contradictory set of phrases are both true. People like to say "If a thing's worth doing, it's worth doing properly" and of course that's true; but I think that the converse is also true, at the same time: "If a thing's worth doing, it's worth doing badly". Even if you can't do it fully or completely, still do the thing! If you can only do part of it now and part of it tomorrow and the last bit of it next week, still do the thing! Sewing for kids was very liberating - even if it is far from perfect they will still dig it (and even if it is super perfect they may take against it and never end up actually wearing it). Do it, or don't do it - don't let the question of 'can I do it well' be the thing that holds you back.
+Існує відчуття, що певний суперечливий набір фраз є одночасно правдивим. Люди люблять казати: "Якщо щось варто робити, то це варто робити добре", і, звичайно, це правда; але я вважаю, що і зворотне твердження також вірне, в той же час: "Якщо щось варто робити, то це варто робити погано". Навіть якщо ви не можете зробити повністю або частково, все одно зробіть це! Якщо ви можете зробити лише частину зараз, частину завтра, а останню частину наступного тижня, все одно зробіть це! Шити для дітей дуже розкріпачує - навіть якщо річ далека від досконалості, вони все одно будуть її (і навіть якщо вона супердосконала, вони можуть бути проти і ніколи не носити її насправді). Робити чи не робити - не дозволяйте питанню "чи зможу я зробити це добре" стримувати вас.
 
-Pick a project where even if you do make mistakes it will still bring enjoyment. A project where you learn a lot, or where you can give it away to someone, or where you can enjoy the recipient when they wear it, or where you will love the fabric even if there are things you will change next time.
+Виберіть проект, де навіть якщо ви зробите помилки, він все одно принесе задоволення. Проект, де ви багато чому навчитесь, або де ви зможете віддати його комусь, або де ви зможете насолоджуватися одержувачем, коли він його носитиме, або де ви будете любити тканину, навіть якщо є речі, які ви зміните наступного разу.
 
-More prosaically I would also say a project that either has really good robust instructions or where you can ask others for help is going to be easier than struggling away by yourself. I mean, unless that is the way you personally learn best - for me, I need a scaffolding of understanding first.
+Більш прозаїчно я б сказав, що проект, який або має дійсно хороші та надійні інструкції, або в якому ви можете попросити інших про допомогу, буде легшим, ніж боротися самотужки. Я маю на увазі, якщо тільки це не той спосіб, яким ви особисто навчаєтесь найкраще - для мене, мені спочатку потрібен каркас розуміння.
 
 &nbsp;
 
@@ -133,35 +133,35 @@ More prosaically I would also say a project that either has really good robust i
 
 &nbsp;
 
-## 🙏 You have measurements, and I want them for our new site
+## У вас є виміри, і я хочу їх для нашого нового сайту
 
-TL;DR: I would like to use your measurements. Read on for all details.
+ТЛ;ДР: Я б хотіла скористатися вашими мірками. Читайте далі, щоб дізнатися всі подробиці.
 
-Ok, this requires a bit of backstory to explain so hear me out: FreeSewing is all about made-to-measure sewing patterns. It's our thing, it's what we do, and if you want to get the most value out of FreeSewing, then taking accurate measurements is a necessary first step.
+Гаразд, щоб пояснити це, потрібно трохи передісторії, тож слухайте мене: FreeSewing - це все про викрійки для шиття за індивідуальним замовленням. Це наша справа, це те, що ми робимо, і якщо ви хочете отримати максимальну користь від FreeSewing, то зняття точних мірок є необхідним першим кроком.
 
-But here's the rub: To the casual visitor on our website -- say someone who Googled *free sewing patterns* -- that's *a lot* of effort to go through just to try the platform. This is why at some point we rolled out a range of *standard sizes* that people could use instead of their own measurements.
+Але ось у чому проблема: випадковому відвідувачу нашого сайту - скажімо, тому, хто загуглив *безкоштовні викрійки для шиття* - доведеться *докласти чимало* зусиль, щоб просто спробувати платформу. Ось чому в якийсь момент ми розробили ряд *стандартних розмірів* , які люди можуть використовувати замість власних вимірів.
 
-But there's some obvious issues with this approach. First of all, standard sizing is a lie, and doesn't exist. But it doesn't stop people from complaining that *I know I am an XL but your XL did not fit me*. Which is of course our own fault because when it comes to standard sizes, the only way to win is to not play.
+Але з таким підходом є кілька очевидних проблем. Перш за все, стандартний розмір - це брехня, його не існує. Але це не заважає людям скаржитися, що *Я знаю, що у мене XL, але ваш XL мені не підійшов*. У чому, звичайно, ми самі винні тому що, коли справа доходить до стандартних розмірів, єдиний спосіб виграти - це не грати.
 
-Our sizing tables are also not at all perfect. For one thing, while they are based on real people, the other sizes are graded up or down from there.  So the further you move away from the base model, the less confident I am that they make a whole lot of sense.  That's because for the most part, the proprtions remain largely the same.
+Наші таблиці розмірів також не є ідеальними. З одного боку, хоча вони засновані на реальних людях, інші розміри класифікуються в більшу або меншу сторону від них.  Тож чим далі ви відходите від базової моделі, тим менше я впевнений, що вони мають сенс.  Це тому, що здебільшого принципи роботи залишаються практично незмінними.
 
-And that brings us to the thing that bugs me the most about this approach. You see, we use this sizing table ourself to test the designs we put up at FreeSewing.org. And because the variation in proportions is somewhat limited, we are leaving some people behind, and that's not what we're about.  It would be much better if we could test our patterns not with a smoothly graded up and down range of sizes, but rather on a selection of real people with all of the variation that that entails.
+І це підводить нас до того, що мене найбільше турбує в цьому підході. Ви бачите, ми самі використовуємо цю таблицю розмірів для тестування дизайнів, які розміщуємо на FreeSewing.org. І оскільки варіація пропорцій дещо обмежена, ми залишаємо деяких людей позаду, але це не те, про що ми говоримо.  Було б набагато краще, якби ми могли тестувати наші патерни не на плавно зростаючому і зменшуваному діапазоні розмірів, а на вибірці реальних людей з усіма варіаціями, які це тягне за собою.
 
-In practical terms, we will be moving away from this idea of *standard sizes* and instead FreeSewing will provide a list of *curated measurements sets*. These will be complete sets of measurements from real people that we can use to test our designs, but that will also be available to users who want to try the platform.
+На практиці ми будемо відходити від цієї ідеї *стандартних розмірів* і натомість FreeSewing надаватиме список *кураторських наборів мірок*. Це будуть повні набори вимірювань реальних людей, які ми зможемо використовувати для тестування наших розробок, але вони також будуть доступні для користувачів, які захочуть спробувати платформу .
 
 The new (v3) FreeSewing backend also integrates with our new development environment, so designers will be able to access these early in the design process.
 
-I have high hopes that such a readily available collection of curated measurments will make it much easier for designers to support a wider ranger of people and bodies. But, that is not going to happen until the grand total of available measurements sets gets a bit higher than the number of 1 it stands at today (that would be me).
+Я маю великі сподівання, що така легкодоступна колекція кураторських вимірювань значно полегшить дизайнерам підтримку ширшого рейнджера людей і тіл. Але це не станеться, доки загальна кількість доступних наборів вимірювань на не перевищить цифру 1, яка сьогодні дорівнює (це про мене).
 
-So here is what I am looking for:
+Тож ось що я шукаю:
 
-- You have to be willing to share a complete set of measurements
-- You are also willing to share your height
-- And you are willing to share a full-length frontal pictrue
+- Ви повинні бути готові поділитися повним набором вимірювань
+- Ви також готові поділитися своїм зростом
+- І ви готові поділитися фотографією в повний зріст
 
-Then I'd like to ask if you would consider adding your measurements to FreeSewing's list of curated measurements sets. If so, just hit reply.
+Тоді я хотіла б попросити вас розглянути можливість додати ваші мірки до списку кураторів FreeSewing . Якщо так, просто натисніть "Відповісти".
 
-It would really help me out, and you'd be in good company 😉
+Це б мені дуже допомогло, та й ви були б у хорошій компанії 😉.
 
 
 &nbsp;
@@ -170,13 +170,13 @@ It would really help me out, and you'd be in good company 😉
 
 &nbsp;
 
-## 🇺🇦  Support for Ukrainian and a newsletter in multiple languages
+## 🇺🇦 Підтримка української мови та інформаційний бюлетень кількома мовами
 
-Something else that we've been working on -- spearheaded by some our our users from Ukraine -- is to add support for Ukrainian to the website.  That brings the total of supported languages to 6, with English, Spanish, French, German, Dutch, and now Ukrainian.
+Ще одна річ, над якою ми працюємо - на чолі з деякими нашими користувачами з України - це додавання підтримки української мови на сайт.  Таким чином, підтримує 6 мов: англійську, іспанську, французьку, німецьку, голландську, а тепер і українську.
 
-Internationalisation is a crucial aspect of making FreeSewing available to as many people as possible.  In this case, there's obviously also a great deal of symbolism with the ongoing conflict in Ukraine.  We could have thrown up a banner to say we stand with Ukraine, but instead we opted for something a bit more ambitious and made Ukrainian an officially supported language.
+Інтернаціоналізація є важливим аспектом для того, щоб зробити FreeSewing доступним для якомога більшої кількості людей.  У цьому випадку, очевидно, також є багато символізму з конфліктом, що триває в Україні.  Ми могли б вивісити банер, щоб сказати, що ми з Україною, але замість цього ми обрали дещо більш амбітне і зробили українську мову офіційно підтримуваною.
 
-I also want to extend the same multi-language support to this very newsletter. Once the new website goes live (more on that below) your language preference will be taken into account, and the goal is to deliver you the next newsletter in the language of your choice.
+Я також хочу поширити таку ж багатомовну підтримку і на цю розсилку. Як тільки новий сайт запрацює (про це нижче), ваші мовні уподобання будуть враховані, і метою буде доставити вам наступний інформаційний бюлетень мовою, яку ви обрали.
 
 The real challenge thare is that I will need to learn to not write this thing at the last minute 😂
 
@@ -187,16 +187,16 @@ The real challenge thare is that I will need to learn to not write this thing at
 
 &nbsp;
 
-## 🤔 So when will FreeSewing.org run on version 3?
+## 🤔 Тож коли FreeSewing.org буде працювати на версії 3?
 
 There’s a lot more in v3 that I could write about, but I need to address the elephant in the room: *So we have 3.0 now, when do non-developers get to use this?*
 
-Well… I’m going to need a bit more time. Everything is sort of ready, but some things always take more time because you can’t really do them in advance. Things like translation, and some more testing.
+Ну… Мені потрібно ще трохи часу. Все нібито готове, але деякі речі завжди займають більше часу, тому що ви не можете зробити їх заздалегідь. Такі речі, як переклад і ще деякі тести.
 
-So as a regular user of FreeSewing.org who is not itching to spin up a development environment, you will need to hold on a little longer. But clearly, it’s going to be soon now. I’d say a matter of weeks, rather than months.
+Отже, як постійному користувачеві FreeSewing.org, якому не терпиться створити середовище розробки , вам доведеться почекати ще трохи. Але, очевидно, це буде вже незабаром. Я б сказав, що це питання тижнів, а не місяців.
 
-The biggest outstanding hurdle is migrating the 50k+ users to a completely different infrastructure. I've completely rewritten the FreeSewing backend (can't believe I did not write about the exciting new backend features, but ok), and switched from MongoDB to Sqlite as database, so this not only requires careful planning, it's also slow because all data is encrypted at rest. So everything needs to be decrypted, migrated, then re-encrypted again. And it's like, you start the process before going to bed and then the next morning you find out that user #32062 had some weird setting you didn't think about which caused things to go off the rails, and now you have to start over.
+Найбільшою перешкодою є міграція понад 50 тис. користувачів на абсолютно іншу інфраструктуру. Я повністю переписав бекенд FreeSewing (не можу повірити, що не написав про нові цікаві функції бекенду, але добре), і перейшов з MongoDB на Sqlite в якості бази даних, тому це не тільки вимагає ретельного планування, але й повільно працює, тому що всі дані шифруються в стані спокою. Тому все потрібно розшифрувати, перенести, а потім знову зашифрувати. І це схоже на те, що ви починаєте процес перед сном, а наступного ранку виявляєте, що користувач #32062 зробив якесь дивне налаштування, про яке ви не подумали, що призвело до того, що все зійшло з рейок, і тепер вам доводиться починати все спочатку.
 
-Point is, FreeSewing has grown to a point where migrating all users has become its own mini-project that's too intricate to just throw in with the v3 release. But obviously, it will be my next move once I can uncross my fingers that 3.0.0 is as good as I think it is.
+Справа в тому, що FreeSewing виріс до такої міри, що міграція всіх користувачів стала власним міні-проектом, який занадто складний, щоб просто викинути його з випуском v3. Але, очевидно, це буде моїм наступним кроком, як тільки я зможу схрестити пальці, що 3.0.0 буде настільки хорошим, наскільки я про нього думаю.
 
-Thank you for sticking with me through all this. We're almost there now 😃 
+Дякую, що були зі мною протягом усього цього часу. Ми вже майже на місці 😃 

@@ -1,18 +1,18 @@
 ---
-title: "Breanna dress by Andrea Cretu"
-caption: "Andrea made this lovely dress based on the Breanna block"
+title: "Robe Breanna d'Andrea Cretu"
+caption: "Andrea a confectionné cette jolie robe en se basant sur le bloc Breanna."
 date: 20231017
-intro: "Andrea added a circle skirt to the Breanna block to make this charming dress."
+intro: "Andrea a ajouté une jupe circulaire au bloc Breanna pour créer cette charmante robe."
 designs:
   - "breanna"
 maker: Natalia
 ---
 
-Andrea added a circle skirt to the Breanna block to make this charming dress. We love the choice of fabric and buttons!
+Andrea a ajouté une jupe circulaire au bloc Breanna pour créer cette charmante robe. Nous adorons le choix du tissu et des boutons !
 
-Andrea shared these helpful details:
+Andrea a partagé ces détails utiles :
 
-> Made a dress based on the Breanna body block, with a circle skirt. Next iteration I'll scoop out the armholes and neck and add length to the bottom, so the skirt starts a little lower. Also will make the darts end earlier on the bust and later on the back.
+> Réalise une robe basée sur le bloc corporel Breanna, avec une jupe circulaire. Lors de la prochaine itération, j'éviderai les emmanchures et l'encolure et j'allongerai le bas pour que la jupe commence un peu plus bas. De plus, les pinces se termineront plus tôt sur le buste et plus tard dans le dos.
 
-Andrea is a talented creator, and the owner at [Yarnandy.com](Yarnandy.com). 
+Andrea est une créatrice talentueuse et la propriétaire de [Yarnandy.com](Yarnandy.com). 
 

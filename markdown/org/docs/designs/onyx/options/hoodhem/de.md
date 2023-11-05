@@ -1,9 +1,7 @@
 ---
-title: "Hood hem"
+title: "Kapuzensaum"
 ---
 
-![The hood hem option on Onyx](hoodhem.svg)
+Legt fest, wie breit der Saum, der um die Vorderseite der Kapuze herumgeht, als Vielfaches der Nahtzugabe sein wird. Ein Saum von 2,5cm/1" ist ein üblicher Wert.
 
-Controls how wide the hem going around the front of the hood will be, as a multiple of the seam allowance. A hem of 2.5cm/1" is a common value.
-
-Note: This option is only available if the 'neck style' option is set to 'hood.'
+Hinweis: Diese Option ist nur verfügbar, wenn die Option "Halsstil" auf "Kapuze" eingestellt ist.

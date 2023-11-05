@@ -1,9 +1,7 @@
 ---
-title: "Sleeve hem"
+title: "Ärmelsaum"
 ---
 
-![The sleeve hem option on Onyx](sleevehem.svg)
+Legt fest, wie breit der Saum um jeden Ärmel herum sein wird, und zwar als Vielfaches der Nahtzugabe. Ein Saum von 2,5cm/1" ist ein üblicher Wert.
 
-Controls how wide the hem going around each sleeve will be, as a multiple of the seam allowance. A hem of 2.5cm/1" is a common value.
-
-Note: This option is only available if the _Sleeve ribbing_ option is set to 'hem.'
+Hinweis: Diese Option ist nur verfügbar, wenn die Option _Ärmelrippung_ auf "Saum" eingestellt ist.

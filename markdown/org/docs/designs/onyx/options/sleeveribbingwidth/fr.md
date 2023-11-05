@@ -1,9 +1,7 @@
 ---
-title: "Sleeve ribbing width"
+title: "Largeur des côtes des manches"
 ---
 
-![The sleeve ribbing width option on Onyx](sleeveribbingwidth.svg)
+Contrôle la largeur des côtes autour de la manche.
 
-Controls how wide the ribbing around the sleeve is.
-
-Note: This option is only available if the 'sleeve ribbing' option is set to 'ribbing.'
+Remarque : cette option n'est disponible que si l'option 'côtes de manches' est réglée sur 'côtes'.

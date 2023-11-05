@@ -4,7 +4,6 @@ import { InspectorPattern } from './inspector/pattern.mjs'
 import { DraftMenu, ns as menuNs } from './menu.mjs'
 import { objUpdate, nsMerge } from 'shared/utils.mjs'
 import { PatternWithMenu, ns as wrapperNs } from '../pattern-with-menu.mjs'
-import { V3Wip } from 'shared/components/v3-wip.mjs'
 import { DraftHeader, ns as headerNs } from '../draft/header.mjs'
 
 export const ns = nsMerge(menuNs, wrapperNs, headerNs)
@@ -82,7 +81,6 @@ export const InspectView = ({
         Header: DraftHeader,
         menu: (
           <>
-            <V3Wip />
             <DraftMenu
               {...{
                 design,

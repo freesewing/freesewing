@@ -25,9 +25,9 @@ Si no se imprime una parte de patrón, significa que no la necesita.
 
 <Warning>
 
-#### Caveats
+#### Advertencias
 
-- There is no seam allowance on the interfacing
-- There is extra seam allowance on the waist band and hem
+- No hay margen de costura en la entretela
+- Hay margen de costura adicional en la banda de la cintura y el dobladillo
 
 </Warning>

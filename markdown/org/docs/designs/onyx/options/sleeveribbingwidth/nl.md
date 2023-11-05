@@ -1,9 +1,7 @@
 ---
-title: "Sleeve ribbing width"
+title: "Breedte mouwboorden"
 ---
 
-![The sleeve ribbing width option on Onyx](sleeveribbingwidth.svg)
+Bepaalt hoe breed de ribbels rond de mouw zijn.
 
-Controls how wide the ribbing around the sleeve is.
-
-Note: This option is only available if the 'sleeve ribbing' option is set to 'ribbing.'
+Opmerking: Deze optie is alleen beschikbaar als de optie 'mouwribbels' is ingesteld op 'ribbels'.

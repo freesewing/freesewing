@@ -1,7 +1,5 @@
 ---
-title: "Raglan scoop length"
+title: "Largo raglán"
 ---
 
-![The raglan scoop length option on Onyx](raglanscooplength.svg)
-
-Controls how far out from the armhole the raglan seam starts to scoop.
+Controla a qué distancia de la sisa empieza a abrirse la costura raglán.

@@ -1,15 +1,15 @@
 ---
-title: "Gozer the ghost: Sewing Instructions"
+title: "Gozer het spook: naai-instructies"
 ---
 
 ## Stap 1: De ogen
 
-- Cut holes where marked.
+- Snijd gaten waar gemarkeerd.
 
-## Step 2: The body
+## Stap 2: Het lichaam
 
-- Hem the body
+- Het lichaam omzomen
 
 ## Stap 3: Geniet!
 
-That's it, you are all done. Put it on and scare the neighborhood.
+Dat is het, je bent helemaal klaar. Zet hem op en jaag de buurt de stuipen op het lijf.

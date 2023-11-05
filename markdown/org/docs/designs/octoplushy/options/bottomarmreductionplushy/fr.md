@@ -1,5 +1,5 @@
 ---
-title: "Bottom Arm Reduction (Octoplushy)"
+title: "Réduction du bras inférieur (Octoplushy)"
 ---
 
-This setting adjusts the difference in length between the top and the bottom fabric of the arms for the Octoplushy style. The bigger the difference, the more the arms will want to curl.
+Ce paramètre ajuste la différence de longueur entre le tissu supérieur et le tissu inférieur des bras pour le style Octoplushy. Plus la différence est importante, plus les bras auront envie de s'enrouler.

@@ -1,15 +1,15 @@
 ---
-title: "Gozer the ghost: Sewing Instructions"
+title: "Привид Гозера: інструкція з пошиття"
 ---
 
 ## Крок 1: Очі
 
-- Cut holes where marked.
+- Виріжте отвори там, де позначено.
 
-## Step 2: The body
+## Крок 2: Тіло
 
-- Hem the body
+- Підперезати тіло
 
 ## Крок 3: Насолоджуйтесь!
 
-That's it, you are all done. Put it on and scare the neighborhood.
+Ось і все, ви закінчили. Вдягайте його і лякайте сусідів.

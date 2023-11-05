@@ -1,7 +1,5 @@
 ---
-title: "Raglan scoop depth"
+title: "Raglan Schaufeltiefe"
 ---
 
-![The raglan scoop depth option on Onyx](raglanscoopmagnitude.svg)
-
-Controls how much extra material to place under the armpits.
+Legt fest, wie viel zusätzliches Material unter den Achseln platziert werden soll.

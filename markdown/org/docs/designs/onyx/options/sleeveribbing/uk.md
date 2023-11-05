@@ -1,9 +1,7 @@
 ---
-title: "Sleeve ribbing"
+title: "Ребристість рукавів"
 ---
 
-![The sleeve ribbing option on Onyx](sleeveribbing.svg)
+Вибирайте, чи робити ребристі трикотажні манжети для рукавів, чи використовувати підгин.
 
-Choose whether to make ribbed knit cuffs for the sleeves or to use a hem.
-
-Note: Setting this option to 'hem' will enable the 'sleeve hem' option, while setting this option to 'ribbing' will enable the 'sleeve ribbing length' and 'sleeve ribbing width' options.
+Примітка: Якщо встановити цей параметр на "підгин", увімкнеться опція "підгин рукава", а якщо на "окантовка", увімкнуться опції "довжина окантовки рукава" і "ширина окантовки рукава".

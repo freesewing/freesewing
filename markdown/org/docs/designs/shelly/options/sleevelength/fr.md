@@ -2,9 +2,9 @@
 title: "Longueur des manches"
 ---
 
-Controls how long the sleeves of your shirt will be.
- - 15-30% will make short sleeves.
- - 75% will make three-quarter sleeves.
- - 100% will make long sleeves, stopping at the wrist.
- - 115% will make sleeves covering the knuckles, and is appropriate if using thumb holes.
+Contrôle la longueur des manches de ta chemise.
+ - 15 à 30 % d'entre eux feront des manches courtes.
+ - 75 % d'entre eux feront des manches trois-quarts.
+ - 100 % feront des manches longues, s'arrêtant au poignet.
+ - 115% permettra de faire des manches couvrant les articulations, et est approprié si l'on utilise des trous pour les pouces.
 

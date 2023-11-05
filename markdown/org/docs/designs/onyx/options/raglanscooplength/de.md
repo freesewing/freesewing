@@ -1,7 +1,5 @@
 ---
-title: "Raglan scoop length"
+title: "Raglan-Schaufellänge"
 ---
 
-![The raglan scoop length option on Onyx](raglanscooplength.svg)
-
-Controls how far out from the armhole the raglan seam starts to scoop.
+Legt fest, wie weit die Raglannaht vom Armloch entfernt beginnt.

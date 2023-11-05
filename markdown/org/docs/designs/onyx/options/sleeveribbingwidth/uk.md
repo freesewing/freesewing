@@ -1,9 +1,7 @@
 ---
-title: "Sleeve ribbing width"
+title: "Ширина ребер рукава"
 ---
 
-![The sleeve ribbing width option on Onyx](sleeveribbingwidth.svg)
+Контролює ширину ребер навколо рукава.
 
-Controls how wide the ribbing around the sleeve is.
-
-Note: This option is only available if the 'sleeve ribbing' option is set to 'ribbing.'
+Примітка: Ця опція доступна, тільки якщо для параметра "Окантовка рукава" встановлено значення "Окантовка".

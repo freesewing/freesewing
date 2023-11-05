@@ -1,5 +1,5 @@
 ---
-title: "Arm Width"
+title: "Anchura del brazo"
 ---
 
-The setting adjusts the width of the arms.
+La configuración ajusta la anchura de los brazos.

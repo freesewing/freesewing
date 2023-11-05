@@ -4,19 +4,19 @@ title: Schnittmuster-Notation
 
 Hoffentlich sind unsere Schnittmuster leicht zu verstehen, aber wenn du auf etwas stößt, das dich verwirrt, gibt es hier unten ist eine Referenz für unsere gesamte verwendete Schnittmuster-Notation:
 
-- [Lines](#lines)
+- [Zeilen](#lines)
   - [Nähte](#seams)
   - [Nahtzugabe](#seam-allowance)
   - [Fadenlauf](#grainline)
-  - [Cut-on-fold indicator](#cut-on-fold-indicator)
+  - [Cut-on-Fold-Anzeige](#cut-on-fold-indicator)
   - [Abmessungen](#dimensions)
   - [Andere Linien](#other-lines)
   - [Linienbreite und Striche](#line-widths-and-strokes)
-- [Annotations](#annotations)
+- [Anmerkungen](#annotations)
   - [Knipse](#notches)
-  - [Buttons and Buttonholes](#buttons-and-buttonholes)
+  - [Knöpfe und Knopflöcher](#buttons-and-buttonholes)
   - [Riegelstich/ Raupe](#bartacks)
-  - [Snaps](#snaps)
+  - [Schnappt](#snaps)
   - [Titel](#titles)
   - [Logo](#logo)
   - [Skalierungsbox](#scale-box)
@@ -29,7 +29,7 @@ Aus überraschend komplexen Gründen könnte es sein, dass sich Schriftarten und
 
 </Tip>
 
-## Lines
+## Zeilen
 
 Lines (and curves) make up the bulk of marking you'll find on any sewing pattern, including FreeSewing's patterns.
 
@@ -63,9 +63,9 @@ Ein Indikator für den Fadenlauf
 
 </Legend>
 
-### Cut-on-fold indicator
+### Cut-on-Fold-Anzeige
 
-Cut-on-fold indicators look similar to grainline indicators, but point towards the line on which the fabric should be folded:
+Cut-on-Fold-Indikatoren sehen ähnlich aus wie Fadenlaufindikatoren, zeigen aber auf die Linie, an der der Stoff gefaltet werden soll:
 
 <Legend part="cutonfold">
 
@@ -120,7 +120,7 @@ Die verschiedenen Linienstriche
 
 </Legend>
 
-## Annotations
+## Anmerkungen
 
 Annotations are extra embellishments on the pattern that further clarify the designer's intent, help with construction, or otherwise provide value to the pattern.
 
@@ -147,7 +147,7 @@ Wenn ein Pfeil von dir wegfliegt, siehst du seine Befiederung (⊗).
 
 </Tip>
 
-### Buttons and Buttonholes
+### Knöpfe und Knopflöcher
 
 Knöpfe und Knopflöcher können in verschiedenen Größen auftreten, haben aber immer dieselbe Form, die repräsentiert, wie sie in Wirklichkeit aussehen:
 
@@ -166,7 +166,7 @@ Ein Bartack ist ein Naht von unterschiedlicher Größe und Länge, die zur Verst
 So wird der Riegel auf dem Schnittmuster dargestellt. 
 </Legend>
 
-### Snaps
+### Schnappt
 
 Snaps haben einen _-Stud_ und _Sockel_ Teil und sehen auch wie das echte aus:
 

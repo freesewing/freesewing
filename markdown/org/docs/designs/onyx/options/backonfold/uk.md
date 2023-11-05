@@ -1,15 +1,13 @@
 ---
-title: "Back on fold"
+title: "Повернутися до згину"
 ---
 
-![The backonfold option on Onyx]/backonfold.svg)
+Контролює, чи спинка зроблена з одного шматка тканини, розрізаного по згину, або з двох дзеркальних шматків, зшитих разом по центру.
 
-Controls if the back is made of of a single piece of fabric cut on the fold, or as two mirrored pieces that are sewn together down the center.
+> Переваги: Заощаджує будівельний крок, прибирає шов, може бути зручніше.
 
-> Advantages: Saves a construction step, removes a seam, may be more comfortable.
+> Недоліки: Не працює із застібками-блискавками, важче розмістити на тканині велику деталь викрійки (може призвести до більших відходів тканини).
 
-> Disadvantages: Doesn't work with zippers, harder to fit a larger pattern piece on the fabric (may cause more fabric waste).
+> ##### Блискавки:
 
-> ##### Zippers:
-
-If using a back zipper, do _not_ enable this option.
+Якщо ви використовуєте застібку-блискавку ззаду, увімкніть цю опцію _, а не_ .

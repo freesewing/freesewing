@@ -1,7 +1,5 @@
 ---
-title: "Hoodfrontbonus"
+title: "Kapfrontbonus"
 ---
 
-![The hood front bonus option on Onyx](hoodfrontbonus.svg)
-
-Controls how far forward the hood comes over the forehead.
+Regelt hoe ver de kap over het voorhoofd naar voren komt.

@@ -1,16 +1,16 @@
 ---
-title: "Skully: Cutting Instructions"
+title: "Skully: Instrucciones de corte"
 ---
 
 - **Tela principal**
-  - Cut **2 Cheek**
-  - Cut **2 Forehead**
-  - Cut **2 Head part 1**
-  - Cut **2 Head part 2**
-  - Cut **2 Head part 3**
-  - Cut **2 Cheekbone**
-  - Cut **1 Upper Mouth**
-  - Cut **1 Jaw Floor**
-  - Cut **2 Eye **
-  - Cut **1 Lower Mouth **
-  - Cut **2 Lower Jaw **
+  - Corta **2 Mejilla**
+  - Corta **2 Frente**
+  - Corta **2 Cabeza parte 1**
+  - Corta **2 Cabeza parte 2**
+  - Corta **2 Parte de la cabeza 3**
+  - Corta **2 Pómulo**
+  - Corta **1 Boca superior**
+  - Cortar **Piso de 1 mordaza**
+  - Corte **2 Ojo **
+  - Corte **1 Boca inferior **
+  - Corte **2 Mandíbula inferior **

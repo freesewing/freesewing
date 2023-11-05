@@ -1,6 +1,6 @@
 ---
-title: "Horizontal fabric stretch"
+title: "Tissu extensible à l'horizontale"
 ---
 
-Adjust this option for more or less stretchy fabrics, specifically for horizontal stretch.
+Ajuste cette option pour les tissus plus ou moins extensibles, plus précisément pour l'étirement horizontal.
 

@@ -1,15 +1,13 @@
 ---
-title: "Front on fold"
+title: "Avant sur le pli"
 ---
 
-![The backonfold option on Onyx](frontonfold.svg)
+Contrôle si le devant est fait d'une seule pièce de tissu coupée sur le pli, ou de deux pièces en miroir qui sont cousues ensemble au centre.
 
-Controls if the front is made of of a single piece of fabric cut on the fold, or as two mirrored pieces that are sewn together down the center.
+> Avantages : Permet d'économiser une étape de construction, de supprimer une couture, peut être plus confortable.
 
-> Advantages: Saves a construction step, removes a seam, may be more comfortable.
+> Inconvénients : Ne fonctionne pas avec les fermetures à glissière, il est plus difficile d'ajuster une pièce de patron plus grande sur le tissu (ce qui peut entraîner plus de gaspillage de tissu).
 
-> Disadvantages: Doesn't work with zippers, harder to fit a larger pattern piece on the fabric (may cause more fabric waste).
+> ##### Fermetures à glissière :
 
-> ##### Zippers:
-
-If using a front zipper, do _not_ enable this option.
+Si tu utilises une fermeture éclair sur le devant, ne _pas_ active cette option.

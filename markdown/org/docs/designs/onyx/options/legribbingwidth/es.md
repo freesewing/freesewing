@@ -1,9 +1,7 @@
 ---
-title: "Leg ribbing width"
+title: "Ancho de las nervaduras de la pierna"
 ---
 
-![The leg ribbing width option on Onyx](legribbingwidth.svg)
+Controla la anchura de las nervaduras alrededor de la pierna.
 
-Controls how wide the ribbing around the leg is.
-
-Note: This option is only available if the 'leg ribbing' option is set to 'ribbing.'
+Nota: Esta opción sólo está disponible si la opción "nervaduras de la pierna" está establecida en "nervaduras".

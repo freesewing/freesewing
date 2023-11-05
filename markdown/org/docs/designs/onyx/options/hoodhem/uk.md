@@ -1,9 +1,7 @@
 ---
-title: "Hood hem"
+title: "Поділ капюшона"
 ---
 
-![The hood hem option on Onyx](hoodhem.svg)
+Дозволяє контролювати ширину канта навколо передньої частини капюшона, кратну припуску на шви. Підгин 2,5 см/1" - це звичайна величина.
 
-Controls how wide the hem going around the front of the hood will be, as a multiple of the seam allowance. A hem of 2.5cm/1" is a common value.
-
-Note: This option is only available if the 'neck style' option is set to 'hood.'
+Примітка: Ця опція доступна, тільки якщо для параметра "стиль горловини" встановлено значення "капюшон".

@@ -1,5 +1,5 @@
 ---
-title: "Knit Binding Width"
+title: "Breite des Strickbands"
 ---
 
-This option controls the width of the knit binding.
+Diese Option steuert die Breite der Strickbindung.

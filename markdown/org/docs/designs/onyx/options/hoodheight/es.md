@@ -2,8 +2,6 @@
 title: "Altura de capucha"
 ---
 
-![The hood height option on Onyx](hoodheight.svg)
+Controla la altura del capó.
 
-Controls how tall the hood will be.
-
-Note: This option is only available if the 'neck style' option is set to 'hood.'
+Nota: Esta opción sólo está disponible si la opción "estilo de cuello" está configurada como "capucha".

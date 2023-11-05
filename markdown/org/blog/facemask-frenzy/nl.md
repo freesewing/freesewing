@@ -9,13 +9,13 @@ title: "Oproep aan alle makers: Hier is een PDF patroon voor een mondmasker; Lat
 
 <Note>
 
-**TL;DR: Please make facemasks for healthcare workers**
+**TL;DR: Maak alsjeblieft gezichtsmaskers voor medewerkers in de gezondheidszorg**
 
 
- - PDF pattern for our Florence face mask:
-   - [A4 facemask pattern](/florence-facemask-freesewing.org.a4.pdf)
-   - [Letter facemask pattern](/florence-facemask-freesewing.org.letter.pdf)
- - [Instructions for the facemask pattern](/docs/designs/florence/instructions/)
+ - PDF patroon voor ons Florence gezichtsmasker:
+   - [A4 gezichtsmasker patroon](/florence-facemask-freesewing.org.a4.pdf)
+   - [Letter gezichtsmasker patroon](/florence-facemask-freesewing.org.letter.pdf)
+ - [Instructies voor het gezichtsmasker patroon](/docs/designs/florence/instructions/)
 
 </Note>
 

@@ -15,7 +15,11 @@ const namespaces = nsMerge('designs', 'sections', pageNs)
 
 // Helper object to order posts
 const order = {}
-for (const [slug, props] of Object.entries(meta)) order[props.d] = slug
+let i = 0 // Avoid posts with same date not showing up
+for (const [slug, props] of Object.entries(meta)) {
+  i++
+  order[props.d + i] = slug
+}
 
 export const recentBlogPosts = Object.keys(order)
   .sort()

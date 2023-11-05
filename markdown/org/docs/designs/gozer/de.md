@@ -1,5 +1,5 @@
 ---
-title: Gozer the ghost
+title: Gozer der Geist
 ---
 
 <DesignInfo design='gozer' docs />

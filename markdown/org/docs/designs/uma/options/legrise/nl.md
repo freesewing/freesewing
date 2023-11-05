@@ -1,5 +1,5 @@
 ---
-title: "Leg rise"
+title: "Beenverhoging"
 ---
 
 Deze optie bepaalt hoe hoog de broekspijp is.

@@ -1,7 +1,5 @@
 ---
-title: "Skirt length"
+title: "Länge des Rocks"
 ---
 
-![The skirt length option on Onyx](skirtlength.svg)
-
-Controls the length of the skirt, as a percentage of the waist to upper leg measurement. A length of 100% should make a skirt just long enough to reach the upper leg.
+Steuert die Länge des Rocks in Prozent des Maßes zwischen Taille und Oberschenkel. Bei einer Länge von 100 % sollte der Rock gerade so lang sein, dass er bis zum Oberschenkel reicht.

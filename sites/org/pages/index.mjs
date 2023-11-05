@@ -8,7 +8,6 @@ import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useEffect, useState } from 'react'
 // Components
-import Head from 'next/head'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { ForceAccountCheck } from 'shared/components/account/force-account-check.mjs'
@@ -28,9 +27,8 @@ import { SignUp, ns as susiNs } from 'shared/components/susi/sign-up.mjs'
 import { PleaseSubscribe, ns as subNs } from 'shared/components/patrons/please-subscribe.mjs'
 import { CardLink } from 'shared/components/link.mjs'
 import { ns as nlNs } from 'shared/components/newsletter/index.mjs'
-import { Popout, ns as popoutNs } from 'shared/components/popout/index.mjs'
 
-const ns = nsMerge(pageNs, subNs, susiNs, nlNs, 'homepage', popoutNs)
+const ns = nsMerge(pageNs, subNs, susiNs, nlNs, 'homepage')
 
 const Card = ({ bg = 'bg-base-200', textColor = 'text-base-content', title, children, icon }) => (
   <div className={`px-8 ${bg} py-10 rounded-lg block ${textColor} shadow-lg grow`}>
@@ -59,29 +57,19 @@ const HomePage = ({ page }) => {
   }, [account.username])
 
   return (
-    <PageWrapper {...page} layout={BareLayout}>
+    <PageWrapper
+      {...page}
+      layout={BareLayout}
+      title="FreeSewing.org"
+      intro={t('homepage:freePatterns')}
+    >
       <ForceAccountCheck />
-      <Head>
-        <title>FreeSewing.org</title>
-      </Head>
-
       <div className="text-center w-full m-auto">
         <FreeSewingIcon className="w-36 h-36 mt-0 lg:mt-8 lg:w-56 lg:h-=56 mt-4 m-auto pr-6" />
         <h1 className="font-bold -mt-8 lg:-mt-4" style={{ letterSpacing: '-0.1rem' }}>
           FreeSewing
         </h1>
         <h4 className="-mt-8 text-sm lg:text-2xl">{t('homepage:freePatterns')}</h4>
-        <div className="max-w-2xl m-auto text-left">
-          <Popout comment by="joost">
-            <h5>Everything is new, some things are broken</h5>
-            <p>
-              Hello there
-              <br />
-              This is the new freesewing.org website. It is still a work in progress so if it
-              breaks, you get to keep the pieces.
-            </p>
-          </Popout>
-        </div>
       </div>
 
       <div className="max-w-7xl m-auto px-0 -mt-12 mb-24 md:my-24">

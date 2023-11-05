@@ -85,7 +85,7 @@ Ahora es el momento de coser los extremos de nuestra banda de punto.
 
 <Tip>
 
-A more extensive how-to on knit binding can be found in the [Aaron Instuctions](/docs/designs/aaron/instructions).
+En las [Instrucciones de Aaron] (/docs/diseños/aaron/instrucciones) encontrarás una guía más detallada sobre la encuadernación de punto.
 
 </Tip>
 

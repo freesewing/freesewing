@@ -1,15 +1,13 @@
 ---
-title: "Back on fold"
+title: "Volver al pliegue"
 ---
 
-![The backonfold option on Onyx]/backonfold.svg)
+Controla si la espalda está hecha de una sola pieza de tela cortada en el pliegue, o como dos piezas reflejadas que se cosen juntas por el centro.
 
-Controls if the back is made of of a single piece of fabric cut on the fold, or as two mirrored pieces that are sewn together down the center.
+> Ventajas: Ahorra un paso de construcción, elimina una costura, puede ser más cómodo.
 
-> Advantages: Saves a construction step, removes a seam, may be more comfortable.
+> Desventajas: No funciona con cremalleras, es más difícil encajar una pieza de patrón más grande en la tela (puede causar más desperdicio de tela).
 
-> Disadvantages: Doesn't work with zippers, harder to fit a larger pattern piece on the fabric (may cause more fabric waste).
+> ##### Cremalleras:
 
-> ##### Zippers:
-
-If using a back zipper, do _not_ enable this option.
+Si utilizas una cremallera trasera, _no_ activa esta opción.

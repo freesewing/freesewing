@@ -1,7 +1,5 @@
 ---
-title: "Hoodfrontbonus"
+title: "Bono capucha"
 ---
 
-![The hood front bonus option on Onyx](hoodfrontbonus.svg)
-
-Controls how far forward the hood comes over the forehead.
+Controla lo adelantada que queda la capucha sobre la frente.

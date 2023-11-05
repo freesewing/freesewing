@@ -36,7 +36,7 @@ const ShowcaseIndexPage = ({ page }) => {
       : Object.keys(posts[page.locale])
 
   return (
-    <PageWrapper {...page} layout={BareLayout}>
+    <PageWrapper {...page} title={t('sections:showcase')} layout={BareLayout}>
       <div className="p-4 m-auto">
         <h1 className="text-center">FreeSewing - {t('sections:showcase')}</h1>
         <div className="max-w-7xl m-auto">

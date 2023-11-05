@@ -9,13 +9,13 @@ title: "Звертаюся до всіх творців: Ось 1-сторінк
 
 <Note>
 
-**TL;DR: Please make facemasks for healthcare workers**
+**TL;DR: Будь ласка, зробіть маски для медичних працівників**
 
 
- - PDF pattern for our Florence face mask:
-   - [A4 facemask pattern](/florence-facemask-freesewing.org.a4.pdf)
-   - [Letter facemask pattern](/florence-facemask-freesewing.org.letter.pdf)
- - [Instructions for the facemask pattern](/docs/designs/florence/instructions/)
+ - Шаблон у форматі PDF для нашої маски "Флоренція":
+   - [Шаблон маски А4](/florence-facemask-freesewing.org.a4.pdf)
+   - [Літерний шаблон маски](/florence-facemask-freesewing.org.letter.pdf)
+ - [Інструкція до шаблону маски](/docs/designs/florence/instruction/)
 
 </Note>
 

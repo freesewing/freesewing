@@ -1,5 +1,5 @@
 ---
-title: "Bottom to Top Arm Ratio"
+title: "Співвідношення нижнього і верхнього плеча"
 ---
 
-This setting adjusts the ratio between the top and the bottom of the arms. The lower the ratio, the more fabric will be associated with the top of the leg. 100% робить верх і низ однаковими.
+Цей параметр регулює співвідношення між верхньою і нижньою частиною плечей. Чим нижче співвідношення, тим більше тканини буде асоціюватися з верхньою частиною ноги. 100% робить верх і низ однаковими.

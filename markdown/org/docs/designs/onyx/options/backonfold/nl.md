@@ -1,15 +1,13 @@
 ---
-title: "Back on fold"
+title: "Terug op de vouw"
 ---
 
-![The backonfold option on Onyx]/backonfold.svg)
+Controleer of de achterkant uit één stuk stof bestaat dat op de vouw is geknipt, of uit twee gespiegelde stukken die in het midden aan elkaar zijn genaaid.
 
-Controls if the back is made of of a single piece of fabric cut on the fold, or as two mirrored pieces that are sewn together down the center.
+> Voordelen: Bespaart een constructiestap, verwijdert een naad, kan comfortabeler zijn.
 
-> Advantages: Saves a construction step, removes a seam, may be more comfortable.
+> Nadelen: Werkt niet met ritsen, moeilijker om een groter patroondeel op de stof te passen (kan meer stofverspilling veroorzaken).
 
-> Disadvantages: Doesn't work with zippers, harder to fit a larger pattern piece on the fabric (may cause more fabric waste).
+> ##### Ritsen:
 
-> ##### Zippers:
-
-If using a back zipper, do _not_ enable this option.
+Als je een rits aan de achterkant gebruikt, zet _dan niet_ deze optie aan.

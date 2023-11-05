@@ -1,16 +1,14 @@
 ---
-title: "Upper leg ease"
+title: "Leichtigkeit im Oberschenkel"
 ---
 
-![The upper leg ease option on Onyx](upperlegease.svg)
+Steuert, wie weit das Kleidungsstück an deinem Oberschenkel sein wird.
 
-Controls how wide the garment will be at your upper leg.
-
-Whatever value you provide here will simply be added to your upper leg circumference measurement when drafting the garment.
+Der Wert, den du hier angibst, wird beim Entwerfen des Kleidungsstücks einfach zu deinem Oberschenkelumfang addiert.
 
 > ##### Diese Option erlaubt auch negative Werte.
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Du solltest eine negative Leichtigkeit verwenden, wenn du einen dehnbaren Stoff verwendest, der eng anliegen soll. Unteranzüge und Trikots haben in der Regel eine negative Bequemlichkeit, während andere Kleidungsstücke in der Regel eine positive Bequemlichkeit haben.
 
 
 

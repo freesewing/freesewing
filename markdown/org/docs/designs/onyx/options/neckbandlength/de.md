@@ -1,13 +1,11 @@
 ---
-title: "Neckband length"
+title: "Länge Nackenband"
 ---
 
-![The neckband length option on Onyx](neckbandlength.svg)
+Legt fest, wie lang das Halsband sein soll, in Prozent des Umfangs des Halsausschnitts.
 
-Controls how long to make the neckband, as a percentage of the circumference of the neckline.
+Ein zu großer Wert führt zu einem lockeren Halsband, das seine Form nicht richtig hält, während ein zu kleiner Wert dazu führt, dass der Stoff um das Halsband herum gerafft wird.
 
-Too large a value will make for a loose neckband that doesn't hold its shape properly, while too small a value will cause the fabric around the neckband to be gathered.
+Materialien, die sich leichter dehnen, sollten kleinere Werte verwenden. 80-85% ist ein vernünftiger Wert, wenn du Schwimmstoffe verwendest, und 75% ist ein vernünftiger Wert für Rippstrick.
 
-Materials that stretch more easily should use smaller values. 80-85% is a reasonable value when using swim fabric, and 75% is a reasonable value for rib knit.
-
-Note: This option is only available if the 'neck style' option is set to 'neckband.'
+Hinweis: Diese Option ist nur verfügbar, wenn die Option "Nackenstil" auf "Nackenband" eingestellt ist.

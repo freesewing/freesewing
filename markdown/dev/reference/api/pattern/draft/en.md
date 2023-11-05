@@ -19,11 +19,15 @@ Pattern pattern.draft()
 
 ```js
 import { Aaron } from "@freesewing/aaron"
-import { cisFemaleAdult34 } from "@freesewing/models"
 
-const pattern = new Aaron({
-  measurements: cisFemaleAdult34
-})
+// Load some public test measurements from the FreeSewing backend
+const measurements = (
+  await (
+    await fetch("https://backend3.freesewing.org/curated-sets/1.json")
+  ).json()
+).measurements
+
+const pattern = new Aaron({ measurements })
 
 const svg = pattern.draft().render()
 ```

@@ -1,9 +1,7 @@
 ---
-title: "Sleeve ribbing width"
+title: "Ancho del canalé de la manga"
 ---
 
-![The sleeve ribbing width option on Onyx](sleeveribbingwidth.svg)
+Controla la anchura del canalé alrededor de la manga.
 
-Controls how wide the ribbing around the sleeve is.
-
-Note: This option is only available if the 'sleeve ribbing' option is set to 'ribbing.'
+Nota: Esta opción sólo está disponible si la opción "nervaduras de la manga" está configurada como "nervaduras".

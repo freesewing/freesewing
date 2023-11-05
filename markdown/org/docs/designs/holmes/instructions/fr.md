@@ -62,7 +62,7 @@ If you are uncertain about the length you want for you ties take 1 metre (39") o
 <Note>
 
 Les longueurs ci-dessus sont des recommandations donc n'hésitez pas à aller aussi longtemps ou aussi court que vous le souhaitez avec les attaches.  
-If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/designs/holmes/cutting/) for more info.
+Si tu préfères, tu peux fabriquer tes cravates personnalisées avec du tissu, [voir Holmes cutting](/docs/designs/holmes/cutting/) pour plus d'infos.
 
 </Note>
 

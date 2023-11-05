@@ -1,7 +1,5 @@
 ---
-title: "Raglan scoop depth"
+title: "Глибина ковша реглан"
 ---
 
-![The raglan scoop depth option on Onyx](raglanscoopmagnitude.svg)
-
-Controls how much extra material to place under the armpits.
+Контролює, скільки додаткового матеріалу потрібно розмістити під пахвами.

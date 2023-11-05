@@ -1,7 +1,5 @@
 ---
-title: "Raglan scoop length"
+title: "Довжина черпака реглан"
 ---
 
-![The raglan scoop length option on Onyx](raglanscooplength.svg)
-
-Controls how far out from the armhole the raglan seam starts to scoop.
+Контролює, на якій відстані від пройми починається залом шва реглан.

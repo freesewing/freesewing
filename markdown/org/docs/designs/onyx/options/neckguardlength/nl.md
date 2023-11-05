@@ -1,9 +1,7 @@
 ---
-title: "neck guard length"
+title: "lengte nekbeschermer"
 ---
 
-![The neck guard length option on Onyx](neckguardlength.svg)
+Bij kleding met een nekband voegt deze optie extra lengte toe aan de ritsbeschermer, zodat hij om de nekband kan wikkelen om de nek te beschermen.
 
-On garments with a neckband, this option adds extra length to the zipper guard to allow it to wrap around the neckband to protect the neck.
-
-Note: This option is only available if the 'neck style' option is set to 'neckband.'
+Opmerking: Deze optie is alleen beschikbaar als de optie 'halsstijl' is ingesteld op 'nekband'.

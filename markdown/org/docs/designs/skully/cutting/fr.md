@@ -1,16 +1,16 @@
 ---
-title: "Skully: Cutting Instructions"
+title: "Skully : Instructions de coupe"
 ---
 
 - **Tissu principal**
-  - Cut **2 Cheek**
-  - Cut **2 Forehead**
-  - Cut **2 Head part 1**
-  - Cut **2 Head part 2**
-  - Cut **2 Head part 3**
-  - Cut **2 Cheekbone**
-  - Cut **1 Upper Mouth**
+  - Coupe **2 Joue**
+  - Coupe **2 Front**
+  - Coupe **2 Tête partie 1**
+  - Coupe **2 Tête partie 2**
+  - Coupe **2 Tête partie 3**
+  - Coupe **2 Pommettes**
+  - Coupe **1 Bouche supérieure**
   - Cut **1 Jaw Floor**
-  - Cut **2 Eye **
-  - Cut **1 Lower Mouth **
-  - Cut **2 Lower Jaw **
+  - Coupe **2 Oeil **
+  - Coupe **1 Bouche inférieure **
+  - Coupe **2 Mâchoire inférieure **

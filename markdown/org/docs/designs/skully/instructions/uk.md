@@ -1,62 +1,62 @@
 ---
-title: "Skully: Sewing Instructions"
+title: "Скаллі: Інструкція з пошиття"
 ---
 
 
 <Tip>
 
-A lot of the smaller seams (eyes, nose) are best sewn by hand. 
+Багато дрібних швів (очі, ніс) краще зшивати вручну. 
 
-Most of the seams will benefit from being basted before being sewn.
+Більшість швів буде краще, якщо їх проклеїти перед тим, як зшивати.
 
 </Tip>
 
-## Step 1: The darts
+## Крок 1: Дротики
 
-There are six darts that need to be closed first. One on each, forhead, head2, and head3 parts. Pin and sew them closed, then remove the bulk by trimming the darts and give them a good press. Repeat for the all six darts.
+Є шість дротиків, які потрібно закрити в першу чергу. По одному на кожній з частин лоба, голови2 і голови3. Приколіть і зшийте їх, потім видаліть основну частину, обрізавши виточки, і добре відпрасуйте. Повторіть для всіх шести дротиків.
 
 
 ## Крок 2: Очі
 
-Sew together the sides of the eye, so you will make a cone. Trim away any bulk. Repeat for the other eye.
+Зшийте разом бокові сторони ока, так у вас вийде конус. Обріжте зайве. Повторіть для іншого ока.
 
-## Step 3: The nose
+## Крок 3: Ніс
 
-Like the eyes, the nose too has parts that need to be sewn together. There are two of these sides that need to be sew together. This creates two connected cones. This is very finicky, so take your time.
+Як і очі, ніс теж складається з частин, які потрібно зшити разом. Дві такі сторони потрібно зшити разом. Таким чином утворюються два з'єднані конуси. Це дуже вибагливий продукт, тому не поспішайте.
 
-## Step 4: The head
+## Крок 4: Голова
 
 <Tip>
 
-The Skully pattern is set up to be sewn-by-numbers. Every seam is numbered. Please start at '1', and
-keep going until you reach '21'. This is the seam through which you will fill Skully, so only close
-it partly. 
+Викрійку Скаллі налаштовано на вишивання за номерами. Кожен шов пронумерований. Будь ласка, почніть з "1", а
+продовжуйте, поки не дійдете до "21". Це шов, через який ви будете заповнювати Скаллі, тому закрийте
+його лише частково. 
 
 </Tip>
 
-When you are sewing together the individual parts, you will be making two halves of the skull.
+Коли ви будете зшивати окремі частини разом, у вас вийде дві половинки черепа.
 
-Sewing the eyes and nose to the cheek and forehead parts is best done by hand. You will have to align the different notches to their corresponding ones on the other part.
+Пришивання очей і носа до частин щоки і чола найкраще робити вручну. Вам потрібно буде вирівняти різні насічки з відповідними насічками на іншій частині.
 
-Sewing the lowerJaw to the lowerMouth and upperMouth is challenging. You will first be sewing a normal seam between the lowerJaw parts and the lowerMouth part. You will then have to continue this seam along the dashed line (14) on the upperMouth part. Basting or lots of pins are your friend. And make sure you first visualize how this will get together before doing the final sewing.
+Пришити нижню щелепу до нижнього рота і верхнього рота досить складно. Спочатку ви будете зшивати звичайним швом між частинами нижньої щелепи та нижньої частини рота. Потім вам потрібно буде продовжити цей шов вздовж пунктирної лінії (14) на верхній частині горловини. Набивання або багато шпильок - ваші друзі. І переконайтеся, що ви спочатку візуалізуєте, як це буде виглядати, перш ніж робити остаточне зшивання.
 
-The back of the upperMouth is not sewn to anything. It is just there to provide stability.
+Задня частина верхньої частини рота ні до чого не пришита. Він якраз і забезпечує стабільність.
 
-## Step 5: Hair
+## Крок 5: Волосся
 
-Now is the time to add hair to skully. When putting the embroidery floss in, make sure you add knots on the inside, or else it is very easy to pull Skully's hair out later.
+Зараз саме час додати волосся скалі. Коли вишиваєте ниткою, не забудьте зробити вузлики з внутрішньої сторони, інакше потім буде дуже легко витягнути волосся Скаллі.
 
 ## Крок 6: Фаршируємо
 
-- Fill the plush toy with stuffing through the opening you left, making sure to fill all the parts well. The areas in the front are the hardest to get to.
+- Наповніть плюшеву іграшку начинкою через залишений вами отвір, переконавшись, що всі частини добре заповнені. Найважче дістатися до прифронтових районів.
 - _Сліпстик_ або _хлистовим швом_ отвір закрився.
 
-## Step 7: Tweaks
+## Крок 7: Налаштування
 
-You can use the long upholstery needle to add some tweaks to Skully. Adding some stitches to attach the back of the eyes to corner of seams 14 and 21 right through the skull will help to keep the eyes from popping out, and can help with giving the head more form. The same applies to the nose.
+Ви можете використати довгу голку для оббивки, щоб внести деякі зміни в Скаллі. Додавання декількох стібків, щоб прикріпити задню частину очей до кутів швів 14 і 21 прямо через череп, допоможе запобігти випинанню очей і надати голові більшої форми. Те саме стосується і носа.
 
-It is also a good idea to add stitches between seams 5 and 14, along the length of both seams. This will make the cheek bones more pronounced and adds to the overall shape of the skull.
+Також добре додати стібки між швами 5 і 14, по всій довжині обох швів. Це зробить вилиці більш вираженими і доповнить загальну форму черепа.
 
 ## Крок 7: Насолоджуйтесь!
 
-That's it, you are all done. Start planning what pirate sewing ship you'll be joining!
+Ось і все, ви закінчили. Починайте планувати, до якого піратського швейного корабля ви приєднаєтеся!

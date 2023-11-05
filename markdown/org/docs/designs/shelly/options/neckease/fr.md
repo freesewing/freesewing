@@ -1,6 +1,6 @@
 ---
-title: "Neck ease"
+title: "Aisance au niveau du cou"
 ---
 
-Controls how large the neck hole is. Keep in mind that most shirts have neck holes that are substantially larger than the wearer's neck, and that the neckband will further constrict the neck. 0% ease will make a very small neck hole that hugs the neck snugly and is hard to push over the head, even with stretch fabric. +50% will still make what's generally considered a tight neckband appropriate for a swim shirt. For t-shirts or for a loose fit, even larger values are recommended.
+Contrôle la taille du trou du cou. Garde à l'esprit que la plupart des chemises ont des trous d'encolure nettement plus grands que le cou du porteur, et que le tour de cou resserrera encore plus le cou. 0% d'aisance permet d'obtenir un très petit trou dans le cou qui épouse bien la forme de la nuque et qui est difficile à faire passer par-dessus la tête, même avec un tissu extensible. Avec +50 %, ce qui est généralement considéré comme un tour de cou serré conviendra quand même à un maillot de bain. Pour les t-shirts ou pour une coupe ample, des valeurs encore plus grandes sont recommandées.
 

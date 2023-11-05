@@ -1,9 +1,7 @@
 ---
-title: "Skirt width"
+title: "Breite des Rocks"
 ---
 
-![The skirt width option on Onyx](skirtwidth.svg)
+Steuert die Breite des Rocks am unteren Ende in Prozent des Taillenumfangs.
 
-Controls the width of the skirt at the bottom, as a percentage of the waist measurement.
-
-The top of the skirt is cut to the same width, and gathered around the waist. As such, a large value for this option will make a more heavily gathered skirt that is wide at the bottom.
+Der obere Teil des Rocks wird auf die gleiche Breite zugeschnitten und um die Taille gerafft. Wenn du also einen großen Wert für diese Option wählst, wird der Rock stärker gerafft und ist unten weit.

@@ -1,12 +1,12 @@
 ---
-title: "Onyx One-Piece: What You Need"
+title: "Onyx eendelig stuk: Wat je nodig hebt"
 ---
 
-To make Onyx, you will need the following:
+Om Onyx te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- (Recommended) A serger/overlock machine. Light, strong, and stretchy seams are important for this garment.
-- Between 1 - 5 meters (1.1 - 5.5 yards) of a suitable fabric, depending on size and style ([see Fabric options](/docs/patterns/shelly/fabric))
-    - Long sleeves, long legs, use of lining, larger measurements, more ease, use of a hood, and use of a skirt will all increase fabric requirements.
-    - A typical adult unisuit with short sleeves and short legs with a self-lined body will take about 2 meters of fabric.
-- (Optional) Rib knit fabric for the neck, arms, and legs, if desired.
+- (Aanbevolen) Een overlockmachine. Lichte, sterke en rekbare naden zijn belangrijk voor dit kledingstuk.
+- Tussen 1 - 5 meter van een geschikte stof, afhankelijk van de maat en stijl ([zie Stofopties](/docs/patterns/shelly/fabric))
+    - Lange mouwen, lange pijpen, het gebruik van voering, grotere maten, meer gemak, het gebruik van een capuchon en het gebruik van een rok zorgen er allemaal voor dat er meer stof nodig is.
+    - Voor een typisch unisuit voor volwassenen met korte mouwen en korte pijpen met een zelfgevoerd lijf is ongeveer 2 meter stof nodig.
+- (Optioneel) Ribgebreide stof voor de hals, armen en benen, indien gewenst.

@@ -1,9 +1,7 @@
 ---
-title: "Sleeve ribbing"
+title: "Ärmelrippung"
 ---
 
-![The sleeve ribbing option on Onyx](sleeveribbing.svg)
+Wähle, ob du Rippstrickbündchen für die Ärmel oder einen Saum verwenden möchtest.
 
-Choose whether to make ribbed knit cuffs for the sleeves or to use a hem.
-
-Note: Setting this option to 'hem' will enable the 'sleeve hem' option, while setting this option to 'ribbing' will enable the 'sleeve ribbing length' and 'sleeve ribbing width' options.
+Hinweis: Wenn du diese Option auf "Saum" setzt, wird die Option "Ärmelsaum" aktiviert, während die Option "Rippen" die Optionen "Ärmelrippenlänge" und "Ärmelrippenbreite" aktiviert.

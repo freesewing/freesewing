@@ -2,8 +2,6 @@
 title: "Capuchon hoogte"
 ---
 
-![The hood height option on Onyx](hoodheight.svg)
+Bepaalt hoe hoog de kap wordt.
 
-Controls how tall the hood will be.
-
-Note: This option is only available if the 'neck style' option is set to 'hood.'
+Opmerking: Deze optie is alleen beschikbaar als de optie 'halsstijl' is ingesteld op 'capuchon'.

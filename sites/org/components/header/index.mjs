@@ -27,7 +27,7 @@ import { NavButton, NavSpacer, iconSize } from 'shared/components/header.mjs'
 
 export const ns = ['header', 'sections', ...themeNs, ...localeNs]
 
-const NavIcons = ({ setModal, setSearch }) => {
+const NavIcons = ({ setModal }) => {
   const { t } = useTranslation(['header'])
   const { spectrum } = useTheme()
 
@@ -105,7 +105,7 @@ const NavIcons = ({ setModal, setSearch }) => {
         <I18nIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavButton
-        onClick={() => setSearch(true)}
+        href="/search"
         label={t('header:search')}
         color={spectrum[10]}
         extraClasses="md:px-4"

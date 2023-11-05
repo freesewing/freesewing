@@ -26,7 +26,6 @@ macro('ringsector', {
   Number insideRadius,
   Number outsideRadius,
   Boolean rotate = false,
-  String id='ringsector',
 })
 ```
 
@@ -51,17 +50,18 @@ macro('ringsector', {
 
 | Property       | Default           | Type                | Description |
 |---------------:|-------------------|------------|-------------|
-| `id`         | `ringsector` | `string` | The ID of this macro instance |
+| `id`           | `ringsector`      | String     | The id to use in auto-generate macro points and paths |
 | `center`       | `new Point(0,0)`  | [Point][1] | The center point of the ring sector |
 | `angle`        |                   | Number     | The angle the ring sector should cover |
 | `insideRadius` |                   | Number     | The inside radius of the ring sector |
 | `outsideRadius` |                  | Number     | The outside radius of the ring sector |
 | `rotate`       | `false`           | Boolean    | Whether or not to rotate the ringsector so one of its sides is vertical (see [example below](#example-when-rotatetrue)) |
-| `id`           | `ringsector`      | String     | The id to use in auto-generate macro points and paths |
 
 [1]: /reference/api/point
 
 ## Notes
+
+The `ringsector` macro creates a `path` that can be used as a seam path for a part. If doing so, the left side of the path assumes a `cutOnFold`, as the `sa` is not offset here like it is along the rest of the `path`.
 
 ### Example when rotate=true
 

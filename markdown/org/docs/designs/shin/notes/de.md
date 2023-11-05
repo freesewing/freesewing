@@ -1,7 +1,7 @@
 ---
-title: "Shin swim trunks: Designer Notes"
+title: "Shin Badehose: Designer Notes"
 ---
 
-I needed swim trunks, so I designed Shin. There's not much more to it than that.
+Ich brauchte eine Badehose, also habe ich Shin entworfen. Viel mehr gibt es nicht zu sagen.
 
 joost

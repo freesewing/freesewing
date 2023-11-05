@@ -126,7 +126,7 @@ export const plugin = {
 
       // Flip all the points to generate the full ring sector
       for (const id of ['in2', 'in2c', 'in1c', 'ex1c', 'ex2c', 'ex2']) {
-        points[ids[id + 'Flipped']] = points[ids[id]].flipX()
+        points[ids[id + 'Flipped']] = points[ids[id]].flipX(center)
       }
 
       // Rotate all the points angle/2
@@ -147,12 +147,12 @@ export const plugin = {
       }
       // Construct the path of the full ring sector
       paths[pathIds.path] = new Path()
-        .move(points[ids.in2Flipped])
-        .curve(points[ids.in2cFlipped], points[ids.in1cFlipped], points[ids.in1])
-        .curve(points[ids.in1c], points[ids.in2c], points[ids.in2])
-        .line(points[ids.ex2])
-        .curve(points[ids.ex2c], points[ids.ex1c], points[ids.ex1])
-        .curve(points[ids.ex1cFlipped], points[ids.ex2cFlipped], points[ids.ex2Flipped])
+        .move(points[ids.ex2Flipped])
+        .curve(points[ids.ex2cFlipped], points[ids.ex1cFlipped], points[ids.ex1])
+        .curve(points[ids.ex1c], points[ids.ex2c], points[ids.ex2])
+        .line(points[ids.in2])
+        .curve(points[ids.in2c], points[ids.in1c], points[ids.in1])
+        .curve(points[ids.in1cFlipped], points[ids.in2cFlipped], points[ids.in2Flipped])
         .close()
 
       /*

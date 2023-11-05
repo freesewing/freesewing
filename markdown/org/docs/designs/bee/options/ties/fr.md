@@ -4,7 +4,7 @@ title: "Liens"
 
 ***
 
-Whether to includes ties, yes or no
+Inclure des liens, oui ou non
 
 
 

@@ -1,7 +1,5 @@
 ---
-title: "Center seam ease"
+title: "Gemakkelijk in de middennaad"
 ---
 
-![The center seam ease option on Onyx](centerseamease.svg)
-
-Controls how long the center seam will be, and thus how low the crotch fork of the garment will be.
+Bepaalt hoe lang de middennaad zal zijn en dus hoe laag de kruisvork van het kledingstuk zal zijn.

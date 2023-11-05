@@ -1,9 +1,7 @@
 ---
-title: "Sleeve ribbing width"
+title: "Breite der Ärmelrippung"
 ---
 
-![The sleeve ribbing width option on Onyx](sleeveribbingwidth.svg)
+Legt fest, wie breit die Rippung um den Ärmel herum ist.
 
-Controls how wide the ribbing around the sleeve is.
-
-Note: This option is only available if the 'sleeve ribbing' option is set to 'ribbing.'
+Hinweis: Diese Option ist nur verfügbar, wenn die Option "Ärmelrippung" auf "Rippung" eingestellt ist.

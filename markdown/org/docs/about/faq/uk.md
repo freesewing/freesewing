@@ -1,5 +1,5 @@
 ---
-title: Frequently Asked Questions
+title: Поширені запитання
 ---
 
 <ReadMore recurse />

@@ -1,15 +1,13 @@
 ---
-title: "Back on fold"
+title: "Zurück auf Falz"
 ---
 
-![The backonfold option on Onyx]/backonfold.svg)
+Kontrolliere, ob die Rückseite aus einem einzigen Stück Stoff besteht, das an der Falte geschnitten wird, oder aus zwei gespiegelten Teilen, die in der Mitte zusammengenäht werden.
 
-Controls if the back is made of of a single piece of fabric cut on the fold, or as two mirrored pieces that are sewn together down the center.
+> Vorteile: Spart einen Bauschritt, beseitigt eine Naht, kann bequemer sein.
 
-> Advantages: Saves a construction step, removes a seam, may be more comfortable.
+> Nachteile: Funktioniert nicht mit Reißverschlüssen, es ist schwieriger, ein größeres Musterteil auf den Stoff zu bringen (kann zu mehr Stoffabfall führen).
 
-> Disadvantages: Doesn't work with zippers, harder to fit a larger pattern piece on the fabric (may cause more fabric waste).
+> ##### Reißverschlüsse:
 
-> ##### Zippers:
-
-If using a back zipper, do _not_ enable this option.
+Wenn du einen Rückenreißverschluss verwendest, aktiviere _nicht_ diese Option.

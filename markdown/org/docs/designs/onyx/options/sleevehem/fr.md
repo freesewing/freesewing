@@ -1,9 +1,7 @@
 ---
-title: "Sleeve hem"
+title: "Ourlet des manches"
 ---
 
-![The sleeve hem option on Onyx](sleevehem.svg)
+Contrôle la largeur de l'ourlet autour de chaque manche, en tant que multiple de la marge de couture. Un ourlet de 2,5 cm est une valeur courante.
 
-Controls how wide the hem going around each sleeve will be, as a multiple of the seam allowance. A hem of 2.5cm/1" is a common value.
-
-Note: This option is only available if the _Sleeve ribbing_ option is set to 'hem.'
+Remarque : cette option n'est disponible que si l'option _Sleeve ribbing_ est réglée sur 'hem'.
