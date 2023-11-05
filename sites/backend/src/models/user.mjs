@@ -1432,9 +1432,13 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
        * Update the email address and ehash
        */
       await this.update({
-        email: this.encrypt(data.email.new),
+        email: data.email.new,
         ehash: hash(clean(data.email.new)),
       })
+      /*
+       * Remove the confirmation
+       */
+      await this.Confirmation.delete()
     }
   }
 
