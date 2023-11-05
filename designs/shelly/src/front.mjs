@@ -1,6 +1,18 @@
 import { base } from './base.mjs'
 
-function draftFront({ utils, Path, Point, points, part, store, sa, macro, snippets, Snippet }) {
+function draftFront({
+  utils,
+  Path,
+  Point,
+  points,
+  part,
+  store,
+  sa,
+  macro,
+  snippets,
+  Snippet,
+  expand,
+}) {
   const raglanAngle = store.get('raglanAngle')
   const neckRadius = store.get('neckRadius')
 
@@ -29,26 +41,28 @@ function draftFront({ utils, Path, Point, points, part, store, sa, macro, snippe
   const frontNecklineToRaglanAngle = raglanAngle - (necklineAngleAtRaglan + 180)
   store.set('frontNecklineToRaglanAngle', frontNecklineToRaglanAngle)
 
-  macro('vd', {
-    id: 'hCenterSeam',
-    from: points.cfNeck,
-    to: points.cfHem,
-    x: -(15 + sa),
-  })
-  macro('vd', {
-    id: 'hNeck',
-    from: points.neckShoulderCorner,
-    to: points.cfNeck,
-    x: -(15 + sa),
-    noStartMarker: true,
-    noEndMarker: true,
-  })
-  macro('vd', {
-    id: 'hTotal',
-    from: points.neckShoulderCorner,
-    to: points.cfHem,
-    x: -(30 + sa),
-  })
+  if (!expand) {
+    macro('vd', {
+      id: 'hCenterSeam',
+      from: points.cfNeck,
+      to: points.cfHem,
+      x: -(15 + sa),
+    })
+    macro('vd', {
+      id: 'hNeck',
+      from: points.neckShoulderCorner,
+      to: points.cfNeck,
+      x: -(15 + sa),
+      noStartMarker: true,
+      noEndMarker: true,
+    })
+    macro('vd', {
+      id: 'hTotal',
+      from: points.neckShoulderCorner,
+      to: points.cfHem,
+      x: -(30 + sa),
+    })
+  }
   macro('vd', {
     id: 'hRaglanSeam',
     from: points.armpitCornerScooped,

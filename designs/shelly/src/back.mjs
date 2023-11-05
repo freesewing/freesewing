@@ -13,6 +13,7 @@ function draftBack({
   macro,
   snippets,
   Snippet,
+  expand,
 }) {
   const raglanAngle = store.get('raglanAngle')
   const neckRadius = store.get('neckRadius')
@@ -42,41 +43,64 @@ function draftBack({
   const backNecklineToRaglanAngle = raglanAngle - (necklineAngleAtRaglan + 180)
   store.set('backNecklineToRaglanAngle', backNecklineToRaglanAngle)
 
-  paths.saBase = new Path().move(points.sideHem)
-  if (options.straightSides) paths.saBase.line(points.armpitCornerScooped)
-  else paths.saBase.curve(points.sideCp1, points.sideCp2, points.armpitCornerScooped)
-  paths.saBase
-    .curve(points.armpitScoopCp1, points.armpitScoopCp2, points.armpitScoopEnd)
-    .line(points.neckShoulderCorner)
-    .curve(points.neckCP1, points.neckCP2, points.cfNeck)
-    .hide()
+  if (expand) {
+    paths.saBase = new Path().move(points.sideHem)
+    if (options.straightSides) paths.saBase.line(points.armpitCornerScooped)
+    else paths.saBase.curve(points.sideCp1, points.sideCp2, points.armpitCornerScooped)
+    paths.saBase
+      .curve(points.armpitScoopCp1, points.armpitScoopCp2, points.armpitScoopEnd)
+      .line(points.neckShoulderCorner)
+      .curve(points.neckCP1, points.neckCP2, points.cfNeck)
+      .curve(points.neckCP2.flipX(), points.neckCP1.flipX(), points.neckShoulderCorner.flipX())
+      .line(points.armpitScoopEnd.flipX())
+      .curve(
+        points.armpitScoopCp2.flipX(),
+        points.armpitScoopCp1.flipX(),
+        points.armpitCornerScooped.flipX()
+      )
+    if (options.straightSides) paths.saBase.line(points.sideHem.flipX())
+    else paths.saBase.curve(points.sideCp2.flipX(), points.sideCp1.flipX(), points.sideHem.flipX())
+    paths.saBase.hide()
 
-  paths.foldBase = new Path().move(points.cfNeck).line(points.cfHem).hide()
+    paths.hemBase = new Path().move(points.sideHem.flipX()).line(points.sideHem).hide()
+    paths.seam = paths.saBase.join(paths.hemBase).close().addClass('fabric')
+  } else {
+    paths.saBase = new Path().move(points.sideHem)
+    if (options.straightSides) paths.saBase.line(points.armpitCornerScooped)
+    else paths.saBase.curve(points.sideCp1, points.sideCp2, points.armpitCornerScooped)
+    paths.saBase
+      .curve(points.armpitScoopCp1, points.armpitScoopCp2, points.armpitScoopEnd)
+      .line(points.neckShoulderCorner)
+      .curve(points.neckCP1, points.neckCP2, points.cfNeck)
+      .hide()
 
-  paths.hemBase = new Path().move(points.cfHem).line(points.sideHem).hide()
+    paths.foldBase = new Path().move(points.cfNeck).line(points.cfHem).hide()
+    paths.hemBase = new Path().move(points.cfHem).line(points.sideHem).hide()
+    paths.seam = paths.saBase.join(paths.foldBase).join(paths.hemBase).close().addClass('fabric')
+  }
 
-  paths.seam = paths.saBase.join(paths.foldBase).join(paths.hemBase).close().addClass('fabric')
-
-  macro('vd', {
-    id: 'hCenterSeam',
-    from: points.cfNeck,
-    to: points.cfHem,
-    x: -(15 + sa),
-  })
-  macro('vd', {
-    id: 'hNeck',
-    from: points.neckShoulderCorner,
-    to: points.cfNeck,
-    x: -(15 + sa),
-    noStartMarker: true,
-    noEndMarker: true,
-  })
-  macro('vd', {
-    id: 'hTotal',
-    from: points.neckShoulderCorner,
-    to: points.cfHem,
-    x: -(30 + sa),
-  })
+  if (!expand) {
+    macro('vd', {
+      id: 'hCenterSeam',
+      from: points.cfNeck,
+      to: points.cfHem,
+      x: -(15 + sa),
+    })
+    macro('vd', {
+      id: 'hNeck',
+      from: points.neckShoulderCorner,
+      to: points.cfNeck,
+      x: -(15 + sa),
+      noStartMarker: true,
+      noEndMarker: true,
+    })
+    macro('vd', {
+      id: 'hTotal',
+      from: points.neckShoulderCorner,
+      to: points.cfHem,
+      x: -(30 + sa),
+    })
+  }
   macro('vd', {
     id: 'hRaglanSeam',
     from: points.armpitCornerScooped,
@@ -120,7 +144,14 @@ function draftBack({
   )
   macro('title', { at: points.title, nr: 2, title: 'back' })
 
-  if (sa) {
+  if (expand) {
+    paths.sa = new Path()
+      .move(points.sideHem.flipX().translate(0, sa * options.hemWidth))
+      .join(paths.hemBase.offset(sa * options.hemWidth))
+      .join(paths.saBase.offset(sa))
+      .line(points.sideHem.flipX().translate(0, sa * options.hemWidth))
+      .addClass('fabric sa')
+  } else {
     paths.sa = new Path()
       .move(points.cfHem)
       .join(paths.hemBase.offset(sa * options.hemWidth))
