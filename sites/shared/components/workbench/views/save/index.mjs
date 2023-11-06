@@ -67,8 +67,7 @@ export const SaveView = ({ design, settings, setView, saveAs }) => {
         true,
       ])
       router.push(
-        `/account/patterns/${id}` +
-          (editAfterSaveAs ? '/edit' + workbenchHash({ settings, view: 'draft' }) : '')
+        editAfterSaveAs ? `/account/patterns/${design}/edit?id=${id}` : `/account/pattern?id=${id}`
       )
       if (editAfterSaveAs) setView('draft')
     } else setLoadingStatus([true, 'backendError', true, false])
