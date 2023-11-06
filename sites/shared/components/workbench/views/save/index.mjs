@@ -1,12 +1,6 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
-import {
-  workbenchHash,
-  capitalize,
-  shortDate,
-  notEmpty,
-  horFlexClassesNoSm,
-} from 'shared/utils.mjs'
+import { capitalize, shortDate, notEmpty, horFlexClassesNoSm } from 'shared/utils.mjs'
 import yaml from 'js-yaml'
 // Context
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
