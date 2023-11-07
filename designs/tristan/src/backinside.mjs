@@ -42,9 +42,69 @@ export const backInside = {
       title: 'backInside',
     })
 
+    points.grainlineFrom = new Point(points.hps.x / 4, points.cbCut.y)
+    points.grainlineTo = new Point(points.hps.x / 4, points.waistSide.y)
+    macro('grainline', {
+      from: points.grainlineFrom,
+      to: points.grainlineTo,
+    })
+
+    points.scaleboxAnchor = points.titleAnchor.shiftFractionTowards(points.dartBottomLeft, 0.5)
+    macro('scalebox', { at: points.scaleboxAnchor, rotate: 270 })
+
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
+
+    macro('hd', {
+      from: points.cbCut,
+      to: points.strapInside,
+      y: points.strapInside.y - sa - 15,
+      id: 'cutWidth',
+    })
+    macro('hd', {
+      from: points.cbCut,
+      to: points.shoulderDart,
+      y: points.strapInside.y - sa - 25,
+      id: 'cutToDart',
+    })
+    macro('hd', {
+      from: lacing ? points.lacingWaist : points.waistCenter,
+      to: points.dartBottomLeft,
+      y: points.waistCenter.y + sa + 15,
+      id: 'waistCenterToSide',
+    })
+    macro('hd', {
+      from: points.cbCut,
+      to: points.dartBottomLeft,
+      y: points.waistCenter.y + sa + 25,
+      id: 'waistCutToSide',
+    })
+
+    macro('vd', {
+      from: lacing ? points.lacingWaist : points.waistCenter,
+      to: points.cbCut,
+      x: points.cbCut.x - sa - 15,
+      id: 'waistToCut',
+    })
+    macro('vd', {
+      from: lacing ? points.lacingWaist : points.waistCenter,
+      to: points.strapInside,
+      x: points.cbCut.x - sa - 25,
+      id: 'waistToStrap',
+    })
+    macro('vd', {
+      from: points.dartBottomLeft,
+      to: points.shoulderDart,
+      x: points.shoulderDart.x + sa + 15,
+      id: 'dartToDart',
+    })
+    macro('vd', {
+      from: points.dartBottomLeft,
+      to: points.strapInside,
+      x: points.shoulderDart.x + sa + 25,
+      id: 'dartToStrap',
+    })
 
     return part
   },

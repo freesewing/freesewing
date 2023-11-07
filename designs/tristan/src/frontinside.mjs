@@ -60,23 +60,36 @@ export const frontInside = {
         .length()
     )
 
-    if ('front' != options.zipperLocation) {
-      macro('cutonfold', {
-        from: points.cfCut,
-        to: points.cfHem,
-        grainline: true,
-      })
-    }
-
     if (lacing) {
+      store.cutlist.addCut({ cut: 2, from: 'fabric' })
       paths.originalSide = new Path()
         .move(points.lacingCut)
         .line(points.cfCut)
         .line(points.cfHem)
         .line(points.lacingHem)
         .setClass('note dashed')
+      macro('grainline', {
+        from: points.lacingCut.shift(315, 10),
+        to: points.lacingHem.shift(45, 10),
+        grainline: true,
+      })
+    } else {
+      if ('front' == options.zipperLocation) {
+        store.cutlist.addCut({ cut: 2, from: 'fabric' })
+        macro('grainline', {
+          from: points.cfCut.shift(315, 10),
+          to: points.cfHem.shift(45, 10),
+          grainline: true,
+        })
+      } else {
+        // store.cutlist.addCut({ cut: 1, from: 'fabric' })
+        macro('cutonfold', {
+          from: points.cfCut,
+          to: points.cfHem,
+          grainline: true,
+        })
+      }
     }
-
     snippets.shoulderDartTip = new Snippet('notch', points.shoulderDartTip)
 
     points.titleAnchor = points.waistDartLeft.shiftFractionTowards(
@@ -90,9 +103,6 @@ export const frontInside = {
     })
     points.gridAnchor = points.hps.clone()
 
-    points.scaleboxAnchor = points.titleAnchor.shift(-90, 90).shift(0, 10)
-    // macro('scalebox', { at: points.scaleboxAnchor, rotate: 270 })
-
     if (sa) {
       if ('front' == options.zipperLocation) {
         paths.sa = paths.seam
@@ -105,9 +115,8 @@ export const frontInside = {
       }
     }
 
-    let extraOffset = 0
     macro('hd', {
-      from: points.cfNeck,
+      from: lacing ? points.lacingHem : points.cfHem,
       to: points.shoulderDartInside,
       y: points.hps.y - 25,
       id: 'hpsToDart',
@@ -125,7 +134,7 @@ export const frontInside = {
       id: 'hemToDartTip',
     })
     macro('hd', {
-      from: points.cfBust,
+      from: lacing ? points.lacingHem : points.cfHem,
       to: points.shoulderDartTip,
       y: points.cfHem.y + sa + 25,
       id: 'middleToDartTip',
@@ -133,26 +142,26 @@ export const frontInside = {
 
     macro('vd', {
       from: points.cfHem,
-      to: points.cfNeck,
-      x: 0 - 20 - extraOffset,
+      to: lacing ? points.lacingCut : points.cfCut,
+      x: 0 - 20,
       id: 'hemToNeck',
     })
     macro('vd', {
       from: points.cfHem,
-      to: points.hps,
-      x: 0 - 40 - extraOffset,
+      to: points.strapInside,
+      x: 0 - 40,
       id: 'hemToHps',
     })
     macro('hd', {
-      from: points.cfHem,
+      from: lacing ? points.lacingHem : points.cfHem,
       to: points.waistDartLeft,
       y: points.cfHem.y + sa + 15,
       id: 'middleToDart',
     })
     macro('hd', {
-      from: points.cfNeck,
-      to: points.hps,
-      y: points.hps.y - sa - 15,
+      from: lacing ? points.lacingCut : points.cfCut,
+      to: points.strapInside,
+      y: points.strapInside.y - sa - 15,
       id: 'middleToHps',
     })
 

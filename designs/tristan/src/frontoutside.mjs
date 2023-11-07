@@ -55,7 +55,7 @@ export const frontOutside = {
     })
 
     store.cutlist.removeCut()
-    store.cutlist.addCut()
+    store.cutlist.addCut({ cut: 2, from: 'fabric' })
 
     points.snippet = paths.princessSeam.shiftAlong(
       paths.princessSeam.length() - store.get('shoulderDartTipNotch')
@@ -74,7 +74,8 @@ export const frontOutside = {
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-    let pLeft = paths.princessSeam.edge('left')
+    const pLeft = paths.princessSeam.edge('left')
+
     macro('hd', {
       from: points.waistDartRight,
       to: points.armholeOutsidePitchCp1,
@@ -93,6 +94,24 @@ export const frontOutside = {
       y: points.sideHemInitial.y + sa + 15,
       id: 'leftToSide',
     })
+    macro('hd', {
+      from: points.shoulderDartOutside,
+      to: points.strapOutside,
+      y: points.shoulderDartOutside.y - sa - 15,
+      id: 'dartToShoulder',
+    })
+    macro('hd', {
+      from: points.snippet,
+      to: points.strapOutside,
+      y: points.shoulderDartOutside.y - sa - 25,
+      id: 'dartPointToShoulder',
+    })
+    macro('hd', {
+      from: pLeft,
+      to: points.strapOutside,
+      y: points.shoulderDartOutside.y - sa - 35,
+      id: 'leftToShoulder',
+    })
 
     macro('vd', {
       from: points.armholeOutsidePitchCp1,
@@ -106,35 +125,10 @@ export const frontOutside = {
       x: pLeft.x - sa - 15,
       id: 'hemToLeft',
     })
-
-    macro('hd', {
-      from: points.shoulderDartOutside,
-      to: points.shoulder,
-      y: points.shoulderDartOutside.y - sa - 15,
-      id: 'dartToShoulder',
-    })
-    macro('hd', {
-      from: points.snippet,
-      to: points.shoulder,
-      y: points.shoulderDartOutside.y - sa - 25,
-      id: 'dartPointToShoulder',
-    })
-    macro('hd', {
-      from: pLeft,
-      to: points.shoulder,
-      y: points.shoulderDartOutside.y - sa - 35,
-      id: 'leftToShoulder',
-    })
-    macro('hd', {
-      from: points.waistDartRight,
-      to: points.shoulder,
-      y: points.sideHemInitial.y + sa + 45,
-      id: 'hemDartToShoulder',
-    })
     macro('vd', {
-      from: points.shoulder,
+      from: points.strapOutside,
       to: points.sideHemInitial,
-      x: points.shoulder.x,
+      x: points.sideHemInitial.x + sa + 25,
       id: 'hemToShoulder',
     })
     macro('vd', {
@@ -154,20 +148,6 @@ export const frontOutside = {
       to: points.shoulderDartOutside,
       x: pLeft.x - sa - 15,
       id: 'shoulderDartToDartPoint',
-    })
-
-    const pArmholeLeft = paths.armhole.edge('left')
-    macro('hd', {
-      from: points.waistDartRight,
-      to: pArmholeLeft,
-      y: points.sideHemInitial.y + sa + 5,
-      id: 'hemDartToRight',
-    })
-    macro('vd', {
-      from: pArmholeLeft,
-      to: points.sideHemInitial,
-      x: points.sideHemInitial.x + sa + 25,
-      id: 'hemSideToRight',
     })
 
     return part

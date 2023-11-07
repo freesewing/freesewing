@@ -7,7 +7,6 @@ export const backPoints = {
   from: nobleBackPoints,
   after: frontPoints,
   hide: hidePresets.HIDE_ALL,
-  // options,
   draft: ({ points, Path, paths, options, snippets, log, store, part }) => {
     const lacing = true == options.lacing && 'back' == options.lacingLocation
 
@@ -22,8 +21,6 @@ export const backPoints = {
 
     points.strapInside = points.shoulderDart.shiftTowards(points.hps, strapWidth / 2)
     points.strapOutside = points.shoulderDart.shiftTowards(points.shoulder, strapWidth / 2)
-
-    // points.shoulder = points.strapOutside
 
     points.cbCut = new Path()
       .move(points.cbNeck)
@@ -64,7 +61,6 @@ export const backPoints = {
       180,
       options.armholeBackIn * points.armhole.dist(points.dartTip)
     )
-    // .addCircle(4)
 
     points.strapOutsideCp = points.strapOutside.shiftFractionTowards(
       points.dartTip.shift(points.dartTip.angle(points.shoulderDart) - 90, strapWidth / 2),

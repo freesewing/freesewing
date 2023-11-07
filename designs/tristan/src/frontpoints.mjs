@@ -69,12 +69,6 @@ export const frontPoints = {
     const shoulderWidthOutside = points.shoulderDartOutside.dist(points.shoulder)
     let strapWidth = (shoulderWidthInside + shoulderWidthOutside) * options.strapWidth
 
-    console.log({
-      r: strapWidth / shoulderWidthOutside,
-      sw: shoulderWidthOutside,
-      strap: strapWidth,
-    })
-
     if (strapWidth / 2 > shoulderWidthInside) {
       strapWidth = shoulderWidthInside * 2
     }
@@ -87,7 +81,6 @@ export const frontPoints = {
     points.strapOutside = points.shoulderDartOutside.shiftTowards(points.shoulder, strapWidth / 2)
 
     points.cfCut = points.cfNeck.shiftFractionTowards(points.cfBust, options.cutDepthFront)
-    console.log({ cut: points.cfNeck.dist(points.cfCut) })
 
     points.cutSeamInside = new Path()
       .move(points.waistDartLeft)
@@ -104,7 +97,6 @@ export const frontPoints = {
         points.shoulderDartOutside
       )
       .intersectsY(points.cfCut.y)[0]
-    // .addCircle(6)
 
     points.cfCutCp = points.cfCut.shiftFractionTowards(
       points.cutSeamInside,
@@ -153,6 +145,7 @@ export const frontPoints = {
         (points.strapInsideCp.x - points.cfCut.x) * options.lacingWidth
       )
     }
+
     store.set('frontOutsideWaistLength', points.waistDartRight.dist(points.sideHem))
     store.set(
       'frontInsideWaistLength',

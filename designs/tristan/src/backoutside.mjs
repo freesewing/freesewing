@@ -31,9 +31,84 @@ export const backOutside = {
       title: 'backOutside',
     })
 
+    points.grainlineFrom = new Point(
+      Math.max(points.shoulderDart.x, points.dartBottomRight.x),
+      points.waistSide.y - (points.waistSide.y - points.shoulder.y) * 0.7
+    )
+    points.grainlineTo = new Point(points.grainlineFrom.x, points.dartBottomRight.y * 0.95)
+
+    macro('grainline', {
+      from: points.grainlineFrom,
+      to: points.grainlineTo,
+    })
+
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
+
+    const pLeft = paths.dart.edge('left')
+
+    macro('hd', {
+      from: pLeft,
+      to: points.shoulderDart,
+      y: points.shoulderDart.y - sa - 15,
+      id: 'leftToDart',
+    })
+    macro('hd', {
+      from: pLeft,
+      to: points.strapOutside,
+      y: points.shoulderDart.y - sa - 25,
+      id: 'leftToStrap',
+    })
+    macro('hd', {
+      from: pLeft,
+      to: points.armhole,
+      y: points.shoulderDart.y - sa - 35,
+      id: 'leftToArmhole',
+    })
+    macro('hd', {
+      from: pLeft,
+      to: points.waistSide,
+      y: points.dartBottomRight.y + sa + 25,
+      id: 'leftToWaistSide',
+    })
+    macro('hd', {
+      from: points.dartBottomRight,
+      to: points.waistSide,
+      y: points.dartBottomRight.y + sa + 15,
+      id: 'dartToWaistSide',
+    })
+
+    macro('vd', {
+      from: points.dartBottomRight,
+      to: pLeft,
+      x: pLeft.x - sa - 15,
+      id: 'leftToDart',
+    })
+    macro('vd', {
+      from: points.dartBottomRight,
+      to: points.shoulderDart,
+      x: pLeft.x - sa - 25,
+      id: 'dartToDart',
+    })
+    macro('vd', {
+      from: points.dartBottomRight,
+      to: points.strapOutside,
+      x: points.armhole.x + sa + 35,
+      id: 'dartToStrap',
+    })
+    macro('vd', {
+      from: points.waistSide,
+      to: points.strapOutside,
+      x: points.armhole.x + sa + 25,
+      id: 'sideToStrap',
+    })
+    macro('vd', {
+      from: points.waistSide,
+      to: points.armhole,
+      x: points.armhole.x + sa + 15,
+      id: 'sideToArmhole',
+    })
 
     return part
   },
