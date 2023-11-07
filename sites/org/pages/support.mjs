@@ -21,6 +21,7 @@ import {
   CommunityIcon,
   ChatIcon,
   EmailIcon,
+  CloudIcon,
 } from 'shared/components/icons.mjs'
 import { PleaseSubscribe, ns as subNs } from 'shared/components/patrons/please-subscribe.mjs'
 import { SupportForm, ns as supportNs } from 'shared/components/support/support.mjs'
@@ -48,6 +49,7 @@ const SupportCard = ({ bg, textColor, title, icon, nr }) => (
 )
 
 const socialIcon = {
+  bluesky: <CloudIcon />,
   mastodon: <MastodonIcon />,
   github: <GitHubIcon />,
   discord: <DiscordIcon />,
