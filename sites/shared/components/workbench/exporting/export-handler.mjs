@@ -48,6 +48,7 @@ const themedPattern = (Design, settings, overwrite, format, t) => {
  * @param  {string} format  the export format this pattern will be prepared for
  * @param  {function} t       the i18n function
  * @return {Object}         a dictionary of svgs and related translation strings, keyed by material
+ */
 const generateCutLayouts = (pattern, Design, settings, format, t, ui) => {
   // get the materials from the already drafted base pattern
   const materials = pattern.setStores[pattern.activeSet].cutlist.getCutFabrics(
@@ -86,7 +87,6 @@ const generateCutLayouts = (pattern, Design, settings, format, t, ui) => {
 
   return cutLayouts
 }
- */
 /**
  * Handle exporting the draft or settings
  * format: format to export to
@@ -193,9 +193,12 @@ export const handleExport = async ({
       workerArgs.pages = pattern.setStores[pattern.activeSet].get('pages')
 
       // add cutting layouts if requested (commented out for now)
-      //if (!exportTypes.exportForEditing.includes(format) && pageSettings.cutlist) {
-      //  workerArgs.cutLayouts = generateCutLayouts(pattern, Design, settings, format, t, ui)
-      //}
+      if (
+        !exportTypes.exportForEditing.includes(format) &&
+        pageSettings.cutlist === 'SHUT UP ESLINT'
+      ) {
+        workerArgs.cutLayouts = generateCutLayouts(pattern, Design, settings, format, t, ui)
+      }
     } catch (err) {
       console.log(err)
       if (typeof stopLoading === 'function') stopLoading()
