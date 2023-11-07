@@ -2,11 +2,8 @@
 title: Adding a showcase on freesewing.org
 ---
 
-Showcase posts have been migrated to [Strapi](https://strapi.io/), a headless
-CMS system.
+The [New...](https://freesewing.org/new) page (specifically [FreeSewing.org/new/showcase](https://freesewing.org/new/showcase)) allows you to create/suggest a new showcase post.
 
-Our Strapi instance can be accessed at
-[posts.freesewing.org](https://posts.freesewing.org/).
+This makes it easy for our users to submit their makes.
 
-If you don't have a Strapi account (yet), [reach out to us on
-Discord](https://discord.freesewing.org).
+You must be signed in to your FreeSewing.org account to add a showcase.
