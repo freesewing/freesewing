@@ -114,6 +114,12 @@ export const handleExport = async ({
   // get a worker going
   const worker = new Worker(new URL('./export-worker.js', import.meta.url), { type: 'module' })
 
+  /*
+   * Guard against settings being false, which happens for
+   * fully default designs that do not require measurements
+   */
+  if (settings === false) settings = {}
+
   // listen for the worker's message back
   worker.addEventListener('message', (e) => {
     // on success
