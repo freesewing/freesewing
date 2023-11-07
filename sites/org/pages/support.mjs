@@ -24,10 +24,10 @@ import {
 } from 'shared/components/icons.mjs'
 import { PleaseSubscribe, ns as subNs } from 'shared/components/patrons/please-subscribe.mjs'
 import { SupportForm, ns as supportNs } from 'shared/components/support/support.mjs'
-import { Status } from 'shared/components/support/status.mjs'
+import { Status, ns as statusNs } from 'shared/components/support/status.mjs'
 
 // Translation namespaces used on this page
-const ns = nsMerge(pageNs, supportNs, subNs)
+const ns = nsMerge(pageNs, supportNs, subNs, statusNs)
 
 const SupportCard = ({ bg, textColor, title, icon, nr }) => (
   <div
