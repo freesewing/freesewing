@@ -23,10 +23,11 @@ import {
   EmailIcon,
 } from 'shared/components/icons.mjs'
 import { PleaseSubscribe, ns as subNs } from 'shared/components/patrons/please-subscribe.mjs'
-import { SupportForm, ns as supportNs } from 'shared/components/support.mjs'
+import { SupportForm, ns as supportNs } from 'shared/components/support/support.mjs'
+import { Status, ns as statusNs } from 'shared/components/support/status.mjs'
 
 // Translation namespaces used on this page
-const ns = nsMerge(pageNs, supportNs, subNs)
+const ns = nsMerge(pageNs, supportNs, subNs, statusNs)
 
 const SupportCard = ({ bg, textColor, title, icon, nr }) => (
   <div
@@ -85,6 +86,7 @@ const SupportPage = ({ page }) => {
       <div className="max-w-7xl mx-auto mb-24 px-4 mt-16">
         <Breadcrumbs />
         <h1>{pageTitle}</h1>
+        <Status />
         <h2>{t('support:howCanWeSupportYou')}</h2>
         <div className="flex flex-row flex-wrap gap-4 lg:grid lg:grid-cols-3 lg:gap-8 justify-around -mt-4">
           {/* Community */}
