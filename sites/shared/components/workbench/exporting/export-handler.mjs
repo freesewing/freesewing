@@ -193,9 +193,9 @@ export const handleExport = async ({
       workerArgs.pages = pattern.setStores[pattern.activeSet].get('pages')
 
       // add cutting layouts if requested (commented out for now)
-      if (false && !exportTypes.exportForEditing.includes(format) && pageSettings.cutlist) {
-        workerArgs.cutLayouts = generateCutLayouts(pattern, Design, settings, format, t, ui)
-      }
+      //if (!exportTypes.exportForEditing.includes(format) && pageSettings.cutlist) {
+      //  workerArgs.cutLayouts = generateCutLayouts(pattern, Design, settings, format, t, ui)
+      //}
     } catch (err) {
       console.log(err)
       if (typeof stopLoading === 'function') stopLoading()
