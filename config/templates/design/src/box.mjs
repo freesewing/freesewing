@@ -26,11 +26,13 @@ function draftBox({ options, Point, Path, points, paths, Snippet, snippets, sa, 
   }
 
   macro('hd', {
+    id: 'hWidth',
     from: points.bottomLeft,
     to: points.bottomRight,
     y: points.bottomLeft.y + sa + 15,
   })
   macro('vd', {
+    id: 'vHeight',
     from: points.bottomRight,
     to: points.topRight,
     x: points.topRight.x + sa + 15,
