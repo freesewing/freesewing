@@ -41,7 +41,7 @@ const query = {
   closed:
     'query { ' +
     'repository(owner: "freesewing", name: "freesewing") { ' +
-    '  issues(states: CLOSED, labels: ["statusResolved"], first: 3) { ' +
+    '  issues(states: CLOSED, labels: ["statusResolved"], first: 20) { ' +
     '    nodes { ' +
     '      title body url number createdAt closedAt ' +
     '      author { login url } ' +
