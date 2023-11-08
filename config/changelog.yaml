@@ -54,6 +54,7 @@ Unreleased:
     core:
       - Fix order in mergeOptions method so user settings take precendence over defaults
       - Fix upward snap for snapped percentage option when snap is a simple number
+      - The conditional loading of plugins had a bug causing them to never be loaded
     simon:
       - Replaced all instances of 'seperate' with 'separate' in option names
     plugintest:
