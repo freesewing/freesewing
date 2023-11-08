@@ -22,7 +22,7 @@ function draftBox({ options, Point, Path, points, paths, Snippet, snippets, sa, 
     .attr('data-text-class', 'center')
 
   if (sa) {
-    paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    paths.sa = paths.seam.offset(sa).addClass('fabric sa')
   }
 
   macro('hd', {
