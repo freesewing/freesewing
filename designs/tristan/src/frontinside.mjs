@@ -73,6 +73,18 @@ export const frontInside = {
         to: points.lacingHem.shift(45, 10),
         grainline: true,
       })
+      const lacingDistance = points.lacingHem.y - points.lacingCut.y
+      if (lacingDistance > 15 * 5) {
+        const numberOfEyelets = Math.floor(lacingDistance / 15)
+        const eyeletDistance = lacingDistance / (numberOfEyelets + 1)
+        for (let i = 0; i < numberOfEyelets; i++) {
+          points['eyelet' + i] = new Point(
+            points.lacingCut.x + 10,
+            points.lacingCut.y + i * eyeletDistance + eyeletDistance
+          )
+          snippets['eyelet' + i] = new Snippet('eyelet', points['eyelet' + i])
+        }
+      }
     } else {
       if ('front' == options.zipperLocation) {
         store.cutlist.addCut({ cut: 2, from: 'fabric' })
@@ -82,7 +94,7 @@ export const frontInside = {
           grainline: true,
         })
       } else {
-        // store.cutlist.addCut({ cut: 1, from: 'fabric' })
+        store.cutlist.addCut({ cut: 1, from: 'fabric' })
         macro('cutonfold', {
           from: points.cfCut,
           to: points.cfHem,

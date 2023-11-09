@@ -18,6 +18,18 @@ export const backInside = {
         .curve_(points.cbCutCp2, points.waistCenter)
         .line(points.lacingWaist)
         .setClass('note dashed')
+
+      const lacingDistance = points.lacingWaist.y - points.lacingCut.y
+      if (lacingDistance > 15 * 5) {
+        const numberOfEyelets = Math.floor(lacingDistance / 15)
+        const eyeletDistance = lacingDistance / (numberOfEyelets + 1)
+        const pEyelets = new Path().move(points.lacingCut).line(points.lacingWaist).offset(-10)
+
+        for (let i = 1; i <= numberOfEyelets; i++) {
+          points['eyelet' + i] = pEyelets.shiftAlong(i * eyeletDistance)
+          snippets['eyelet' + i] = new Snippet('eyelet', points['eyelet' + i])
+        }
+      }
     } else {
       paths.cut.curve_(points.cbCutCp2, points.waistCenter)
     }

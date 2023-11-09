@@ -31,11 +31,8 @@ export const backOutside = {
       title: 'backOutside',
     })
 
-    points.grainlineFrom = new Point(
-      Math.max(points.shoulderDart.x, points.dartBottomRight.x),
-      points.waistSide.y - (points.waistSide.y - points.shoulder.y) * 0.7
-    )
-    points.grainlineTo = new Point(points.grainlineFrom.x, points.dartBottomRight.y * 0.95)
+    points.grainlineTo = new Point(points.dartBottomRight.x * 1.1, points.dartBottomRight.y * 0.95)
+    points.grainlineFrom = new Point(points.grainlineTo.x, points.dartTip.y)
 
     macro('grainline', {
       from: points.grainlineFrom,

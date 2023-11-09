@@ -54,7 +54,7 @@ export const frontPoints = {
       menu: (settings, mergedOptions) => (mergedOptions.lacing === false ? false : 'options'),
     },
   },
-  draft: ({ points, Path, paths, snippets, options, macro, store, part }) => {
+  draft: ({ points, Path, paths, snippets, options, macro, store, units, part }) => {
     const lacing = true == options.lacing && 'front' == options.lacingLocation
 
     // Hide Noble paths
@@ -76,6 +76,15 @@ export const frontPoints = {
       strapWidth = shoulderWidthOutside * 2
     }
     store.set('strapWidth', strapWidth)
+
+    if (strapWidth != (shoulderWidthInside + shoulderWidthOutside) * options.strapWidth) {
+      store.flag.info({
+        msg: 'tristan:strapWidthAdjusted',
+        replace: {
+          width: units(strapWidth),
+        },
+      })
+    }
 
     points.strapInside = points.shoulderDartInside.shiftTowards(points.hps, strapWidth / 2)
     points.strapOutside = points.shoulderDartOutside.shiftTowards(points.shoulder, strapWidth / 2)
