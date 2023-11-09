@@ -11,7 +11,10 @@
     "peplumFront": "Peplum front",
     "peplumBack": "Peplum back"
   },
-  "s": {},
+  "s": {
+    "strapWidthAdjusted.t": "The strap width has been adjusted",
+    "strapWidthAdjusted.d": "The strap width has been adjusted to {{{ width }}} to allow for the position of the strap on the shoulder."
+  },
   "o": { 
     "bustSpanEase": {
       "t": "Bust span ease",
@@ -108,6 +111,14 @@
     "lacingLocation": {
       "t": "Location of the lacing",
       "d": "Lacing in the front, or the back"
+    },
+    "lacingLocation.back": {
+      "t": "Lacing in the back",
+      "d": "The lacing will be in the back"
+    },
+    "lacingLocation.front": {
+      "t": "Lacing in the front",
+      "d": "The lacing will be in the front"
     },
     "lacingWidth": {
       "t": "Lacing width",
