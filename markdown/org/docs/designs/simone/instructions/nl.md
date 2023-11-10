@@ -10,6 +10,6 @@ title: "Simone overhemd: Naai-instructies"
 
 <Note>
 
-Simone is gewoon ons [Simon patroon](/designs/simon/) aangepast voor borsten, dus je kunt nu gewoon [Simons instructies](/docs/patterns/simon/instructies) volgen om je Simone af te maken :)
+Simone is gewoon ons [Simon patroon](/designs/simon/) aangepast voor borsten, dus je kunt nu gewoon [Simons instructies](/docs/designs/simon/instructies) volgen om je Simone af te maken :)
 
 </Note>

@@ -5,7 +5,7 @@ title: "Maillot de bain Shin Ce qu'il faut"
 Pour faire du shin, vous aurez besoin des éléments suivants :
 
 - Fourniture de base pour la couture
-- Environ 0.75 mètre (0.8 yard) d'un tissu adapté ([voir Options de tissu](/docs/patterns/shin/fabric))
+- Environ 0.75 mètre (0.8 yard) d'un tissu adapté ([voir Options de tissu](/docs/designs/shin/fabric))
 - deux oeillets et un cordon
 
 > ## Un serge/overlock est sympa, mais facultatif

@@ -17,8 +17,6 @@ Let's have a look at what it all means:
 
 ## New pattern: Breanna is a bodice block for womenswear
 
-<Linedrawing pattern="breanna" />
-
 Meet [Breanna](/designs/breanna/), our bodice block for womenswear. 
 
 A block (or sloper) may not the most exciting pattern to look at, but it plays an important

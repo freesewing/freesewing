@@ -30,5 +30,5 @@ Het is beter om iets langer te gaan dan je verwacht, want het is gemakkelijk om 
 ![Een benadering van het resultaat van de aanpassingen om het Aaron A-shirt te veranderen in een Aaron jurk.](https://posts.freesewing.org/uploads/teagan_dress_481cb6b7b9.svg)
 
 ### Nu komt het makkelijke gedeelte!
-Je hoeft alleen maar de [montage-instructies voor Aaron](https://freesewing.org/docs/patterns/aaron/instructions/)te volgen, behalve met superlange zijnaden. Pas je jurk voordat je hem gaat zomen! Ik heb de mijne op enkellengte gezoomd, maar experimenteer met de zoomdiepte. Dit is vooral belangrijk als je stof rekbaar of drapeerbaar is, want het kan langer uitrekken dan je verwacht.
+Je hoeft alleen maar de [montage-instructies voor Aaron](/docs/designs/aaron/instructions/)te volgen, behalve met superlange zijnaden. Pas je jurk voordat je hem gaat zomen! Ik heb de mijne op enkellengte gezoomd, maar experimenteer met de zoomdiepte. Dit is vooral belangrijk als je stof rekbaar of drapeerbaar is, want het kan langer uitrekken dan je verwacht.
 

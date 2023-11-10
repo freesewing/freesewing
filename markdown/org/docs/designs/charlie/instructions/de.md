@@ -189,13 +189,24 @@ Wenn du fertig bist, drücke die Inseam zu öffnen.
 
 ## Schritt 9: Kreuzung schließen
 
+<tip>
+
+Vergewissere dich, dass dein rechtes und linkes Bein mit den Mustermarkierungen übereinstimmen. Der Schritt des rechten Beins sollte etwas über den des linken hinausgehen. Sieh dir das Schnittmuster an und schneide den Überschuss am linken Bein ab, falls nötig.
+
+Es kann hilfreich sein, mit Kreide oder Faden die **Center Front** an jedem Bein zu markieren. So kannst du sicherstellen, dass die Teile beim Fliegenbau an der richtigen Stelle sitzen.
+
+</tip>
+
 Vergewissern Sie sich, dass ein Bein mit der guten Seite gedreht wird, und die andere mit der guten Seite.
 
 Jetzt steckst du das Bein mit der guten Seite nach außen in das Bein mit der guten Seite nach innen. Auf diese Weise haben sie ihre guten Seiten gegeneinander.
 
-Richte die Quernaht aus, indem du an der hinteren Taille beginnst und beide Hälften zusammensteckst, während du dich auf zum Hosenschlitz vorarbeitest. Halten Sie an der niedrigsten Flugnotch Halt.
+Richte die Quernaht aus, indem du an der hinteren Taille beginnst und beide Hälften zusammensteckst, während du dich auf zum Hosenschlitz vorarbeitest. **Halte an der Schlitzkerbe an** und achte darauf, dass du zurücknähst.
 
 Wenn du fertig bist. Machen Sie es erneut. Die Kreuznaht immer zweimal nähen. Es ist eine der besten Praktiken, die Sie auf eigene Gefahr ignorieren.
+
+![Quernaht schließen](CloseCrossseam.svg)
+
 
 <Tip>
 
@@ -208,7 +219,7 @@ Richtig zu sein ist eines der Dinge, die du am Ende jedes Mal hochschätzst, wen
 
 ## Schritt 10: Konstruktion des Hosenstalls
 
-### Fliegenverlängerung schließen
+### Die Schlitzverlängerung schließen und versäubern
 
 Falten Sie die Fliegenverlängerung auf ihrer Faltlinie mit guten Seiten zusammen.
 
@@ -216,67 +227,82 @@ Nähen Sie nun entlang der Unterseite, um die Fliegenverlängerung zu schließen
 
 Schneiden Sie eine Hälfte des Nahtzuges zurück, um Schüttgut zu entfernen, bevor Sie es gut seitlich ausdrehen und drücken.
 
-### Bediene die Fliegenverlängerung und fliege nach vorne
+#### Bediene die Fliegenverlängerung und fliege nach vorne
 
 Serge (oder Zick-Zack) entlang der offenen Seite der Fliegenverlängerung. Keine Notwendigkeit, die Spitze zu sergen, da die in unserer Taille gefangen werden.
 
 während Sie dabei sind, auch entlang der gesamten Fliegenverkleidungen J-förmige Kante.
 
-### Ausschneiden der zusätzlichen Naht auf der Vorderseite des linken Beins
+![Erweiterung und Serge schließen](CloseExtensionAndSerge.svg)
 
-Es gibt zusätzliche Nahtzustand, die entlang des Flusses verläuft. Das brauchen wir nur auf dem rechten Beinfeld. Schneiden Sie es auf der linken Leiste ab, damit Sie nur noch die reguläre Naht haben.
 
 ### Fliegenanhang anhängen
 
-Nähen Sie die Fliege nach links vorne. Lege sie mit den guten Seiten aneinander und richte die Oberseite aus.
+Nähen Sie die Schlitzleiste an das linke Bein. Du wirst etwas über den Punkt der Kreuznaht hinaus nähen, also achte darauf, dass die Nahtzugabe des rechten Beins nicht im Weg ist, und nähe direkt auf der Kreuznahtlinie.
 
-### In der Spitze der Fliegenfront stecken
+![Verkleidung anbringen](AttachFacing.svg)
 
-Klappen Sie die Naht nach innen hin und sicher mit ein paar Nähten.
+### Beende die Verkleidung der Fliege
 
-### Kantenstich die Fliege mit Blick auf die Naht
+Schneide die Schlitzleiste auf die Hälfte der Nahtzugabe zu.  
+Stecke die Spitze der Schlitzleiste ein und befestige sie mit ein paar Stichen. Steppe die Schlitzleiste an der Nahtzugabe ab. Bügle die Nahtzugabe zum Besatz hin und steppe den Besatz ab, um einen sauberen Abschluss zu erzielen. Achte auch hier darauf, dass die Nahtzugabe für das rechte Bein nicht im Weg ist.
 
-Nähen Sie den fliegenden Blick auf die Nahtzufuhr. Vergewissern Sie sich, dass Sie die Frontleiste aus der Vorderseite herauslassen.
+![Finish Facing](FinishFacing.svg)
 
-### Drücken Sie Quernaht, Fliegenrichtung und Fliegenkante
+### Nähen Sie den Reißverschluss an der Schlitzverlängerung fest.
 
-Drücken Sie die Kreuznaht öffnen. Drücken Sie die Fliege zur Seite.
+<tip>
 
-Dann falten Sie über die zusätzliche Nahtmenge auf der rechten Vorderseite und drücken Sie sie nach unten.
+**Reißverschlusslänge**
 
-### Füge den Reißverschluss in die Fly-Erweiterung ein
+Es ist ratsam, darauf zu achten, dass dein Reißverschluss vor der auf dem Muster angegebenen Maschenlinie endet. So stellst du sicher, dass du nicht über den Reißverschlussanschlag nähst und die Spannung an der Unterseite des Schlitzes verringert wird. Wenn dein Reißverschluss zu lang ist, kannst du einen Zickzackstich der Länge 0 machen, um einen neuen Anschlag zu schaffen (nur am Reißverschluss selbst).
 
-Legen Sie den Reißverschluss am (leicht gebogenen) Rand der Fliegenverlängerung.
+</tip>
 
-Nähen Sie nun entlang der Kante. Es ist nicht nötig, den Reißverschluss näher zu bringen, sondern nur am Rand entlang nähen, um ihn an der Stelle zu halten.
+Nähe an der linken Kante des Reißverschlusses entlang bis zur versäuberten Kante der Schlitzverlängerung, um sie zu fixieren.
 
-### Reißverschluss am Hosenstall befestigen
+![Reißverschluss heften](BasteZipper.svg)
 
-Platzieren Sie nun die rechte Vorderschenkel mit dem zusätzlichen Nahtzustand, den Sie auf der Zippe hinten gefaltet haben.
 
-Benutzen Sie einen Reißverschluss, der Kante am Reißverschluss.
+### Nähen Sie das rechte Bein am Reißverschluss fest.
 
-<Tip>
+Beginne damit, die Nahtzugabe des rechten Beins nach hinten zu bügeln.
 
-Vielleicht solltest du diese zuerst einfügen, um sicher zu gehen, dass sie schön parallel zum Reißverschluss ist. Schließen, aber nicht zu nah.
+<tip>
 
-</Tip>
+Denke daran, dass die Nahtzugabe etwas rechts von der vorderen Mitte beginnt. Die vordere Mitte ist in der Abbildung lila markiert, pass also auf, dass du nicht aus Versehen entlang der vorderen Mitte faltest.
 
-### Nähen Sie den Reißverschluss zur Fliege
+</tip>
 
-Nähen Sie nun die andere Seite des Reißverschlusses. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
+Achte darauf, dass du die gefaltete Kante des rechten Beins genau links von den Reißverschlusszähnen platzierst, damit sich der Stoff nicht im Reißverschluss verfängt.
 
-### Beende die Kreuznaht
+Beende das Nähen an der oberen Aussparung der Schlitzverlängerung, etwas oberhalb der Quernaht, und steppe unbedingt ab. Wenn du das nicht tust, kannst du die Verlängerung beim Nähen der J-Naht nicht aus dem Weg halten.
 
-Nähen Sie das letzte Stück der Kreuznaht bis zur höchsten Fliegenpunkte.
+![Verlängerung am rechten Bein befestigen](AttachExtensionToRightLeg.svg)
+
+
+### Befestige den Reißverschluss an der Schlitzleiste.
+
+Achte darauf, das linke Bein auf der rechten vorderen Mitte auszurichten. Es kann von Vorteil sein, durch den Besatz und die rechte Seite des Reißverschlussbandes zu stechen oder zu heften. (Wir müssen die linke Seite des Reißverschlussbandes an das linke Bein nähen). Achte darauf, dass alles gefüttert ist, und nähe die Schlitzleiste auf die linke Seite des Reißverschlusses. Versuche, nah an den Reißverschluss heranzukommen, aber nicht zu nah.
+
+![Verkleidung am Reißverschluss befestigen](AttachFacingToZipper.svg)
+
 
 ### Nähen Sie die J-Naht der Fliege
 
-Jetzt die so genannte J-Naht der Fliege aufstitten. Achten Sie darauf, die Fliegenverlängerung aus dem Weg zu räumen.
+<tip>
 
-### Bar tackt den unteren Rand des Fliegens
+Verwende ein Stück Papier als Führung, um die J-Naht zu nähen. Dieses kannst du entlang der angegebenen Stichlinie aus deinem Muster ausschneiden.
 
-Jetzt die Flasche der J-Naht (das horizontale Teil), aber dieses Mal vergewissern Sie sich auch, die Fliegenverlängerung zu fangen.
+</tip>
+
+Jetzt die so genannte J-Naht der Fliege aufstitten. Achten Sie darauf, die Fliegenverlängerung aus dem Weg zu räumen. Da du nicht die ganze Länge der Schlitzverlängerung genäht hast, solltest du sie aus dem Weg stechen können.
+
+#### Bar tackt den unteren Rand des Fliegens
+
+Verriegele nun den unteren Teil der J-Naht (den waagerechten Teil), aber achte diesmal darauf, dass du auch die Schlitzverlängerung erwischst. Du kannst auch einen zusätzlichen Riegel entlang der J-Naht anbringen (lila dargestellt).
+
+![Die J-Naht nähen](SewTheJSeam.svg)
 
 ## Schritt 11: Befestige die Gürtelschlaufen
 
@@ -292,11 +318,15 @@ Schneide einen Streifen von 80 cm Länge und 2,8 cm Breite zu.
 
 Serge (oder Zickzag) den langen Rand des Streifens auf beiden Seiten.
 
+![Schlaufenkanten fertigstellen](FinishLoopEdges.svg)
+
 Falte eine Seite nach innen, und die andere Seite darüber. Drücken Sie dann mit Ihrem Eisen herunter. Das Endergebnis sollte ein langer Streifen etwa 1cm breit sein.
 
 Nähen Sie nun entlang der gesamten Länge des Streifens, riechen Sie in der Mitte. Achten Sie darauf, dafür eine großzügige Heftlänge zu verwenden.
 
 Schneiden Sie schließlich Ihre Längenschleifen in 8 gleiche Teile ab, um 8 Gurtschleifen zu bilden.
+
+![Schlaufen nähen und schneiden](StitchAndCutLoops.svg)
 
 ### Befestige die Gürtelschlaufen
 

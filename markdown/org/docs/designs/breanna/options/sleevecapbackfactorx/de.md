@@ -8,7 +8,8 @@ Diese Option steuert die horizontale Platzierung der Ärmelschaltung auf der Rü
 
 <Tip>
 
-Siehe [die Armkugel verstehen](/docs/patterns/brian/options#understanding-the-sleevecap) für eine detaillierte Erklärung, wie die Armkugel konstruiert wird und wie die einzelnen Optionen ihre Form beeinflussen.
+Unter [understanding the sleevecap](/docs/designs/brian/options#understanding-the-sleevecap) findest du unter
+einen detaillierten Einblick in die Konstruktion der Sleevecap und den Einfluss der verschiedenen Optionen auf ihre Form.
 
 </Tip>
 

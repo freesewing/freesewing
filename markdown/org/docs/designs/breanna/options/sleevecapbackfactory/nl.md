@@ -8,8 +8,8 @@ Deze optie bepaalt de verticale plaatsing van het tussenpunt aan de achterkant v
 
 <Tip>
 
-Zie [begrijp de mouwkop](/docs/patterns/brian/options#understanding-the-sleevecap) voor een diepgaande
-kijk hoe de mouwkop is opgebouwd en hoe de invloed van de verschillende opties op de vorm eruit ziet.
+Zie [de mouwkap begrijpen](/docs/designs/brian/options#understanding-the-sleevecap) voor een diepgaande
+kijk in hoe de mouwkap is opgebouwd en de invloed van de verschillende opties op de vorm.
 
 </Tip>
 

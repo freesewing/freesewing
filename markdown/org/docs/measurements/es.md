@@ -1,6 +1,5 @@
 ---
-title: Medidas
-order: 300
+title: Medidas que utilizamos
 ---
 
 <ReadMore list />

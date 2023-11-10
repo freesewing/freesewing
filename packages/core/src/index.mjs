@@ -44,6 +44,7 @@ import { version } from '../data.mjs'
 
 // Named exports
 export {
+  // Constructors
   Attributes,
   Design,
   Pattern,
@@ -52,18 +53,20 @@ export {
   Part,
   Snippet,
   Store,
+  // Various
   version,
   Bezier,
-  //consts
+  // Constants
+  cbqc,
+  goldenRatio,
   hidePresets,
   // Utils
   beamIntersectsCircle,
+  beamIntersectsCurve,
   beamIntersectsX,
   beamIntersectsY,
   beamsIntersect,
-  beamIntersectsCurve,
   capitalize,
-  cbqc,
   circlesIntersect,
   curveEdge,
   curveIntersectsX,
@@ -86,5 +89,4 @@ export {
   splitCurve,
   stretchToScale,
   units,
-  goldenRatio,
 }

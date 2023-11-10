@@ -15,7 +15,11 @@ const namespaces = nsMerge('designs', 'sections', pageNs)
 
 // Helper object to order posts
 const order = {}
-for (const [slug, props] of Object.entries(meta)) order[props.d] = slug
+let i = 0 // Avoid posts with same date not showing up
+for (const [slug, props] of Object.entries(meta)) {
+  i++
+  order[props.d + i] = slug
+}
 
 export const recentBlogPosts = Object.keys(order)
   .sort()
@@ -30,9 +34,11 @@ const textShadow = {
   },
 }
 
+/* eslint-disable @next/next/no-img-element */
 export const BlogPreview = ({ post }) => (
   <Link href={`/${post.s}`} className="aspect-video relative">
     <img
+      alt={post.caption}
       src={cloudflareImageUrl({ id: post.s.replace('/', '-'), variant: 'w1000' })}
       loading="lazy"
       className="rounded md:rounded-lg top-0 left-0"

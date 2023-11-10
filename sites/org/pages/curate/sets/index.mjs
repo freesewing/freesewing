@@ -29,7 +29,7 @@ const CuratorPage = ({ page }) => {
           <h2>{t('curate:suggestedSets')}</h2>
           <CsetSubmissions />
           <h2>{t('curate:sets')}</h2>
-          <CuratedSetsList href={(id) => `/curate/sets/${id}`} />
+          <CuratedSetsList href={(id) => `/curate/set?id=${id}`} />
         </div>
       </AuthWrapper>
     </PageWrapper>

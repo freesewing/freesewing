@@ -5,7 +5,7 @@ title: "Noble carrosserieblok: Wat je nodig hebt"
 Om Noble te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- Ongeveer 0,5 meter van een geschikte stof ([zie Noble Fabric options](/docs/patterns/noble/fabric/))
+- Ongeveer 0,5 meter van een geschikte stof ([zie Noble Fabric options](/docs/designs/noble/fabric/))
 
 Deze lijst is voor een standaard Noble Block. Als je veranderingen aan het blok hebt aangebracht, heb je misschien extra onderdelen nodig, zoals sluitingen, bindingen, enz.
 

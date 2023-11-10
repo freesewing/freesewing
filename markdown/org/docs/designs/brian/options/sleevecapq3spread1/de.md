@@ -10,10 +10,11 @@ Diese Option steuert die Aufwärtsverteilung im dritten Quadranten der Ärmel.
 
 <Tip>
 
-Siehe [die Armkugel verstehen](/docs/patterns/brian/options#understanding-the-sleevecap) für eine detaillierte Erklärung, wie die Armkugel konstruiert wird und wie die einzelnen Optionen ihre Form beeinflussen.
+Unter [understanding the sleevecap](/docs/designs/brian/options#understanding-the-sleevecap) findest du unter
+einen detaillierten Einblick in die Konstruktion der Sleevecap und den Einfluss der verschiedenen Optionen auf ihre Form.
 
 </Tip>
 
-## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](brian_sleevecapq3spread1_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+

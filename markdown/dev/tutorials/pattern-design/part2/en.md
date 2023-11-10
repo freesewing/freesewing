@@ -3,7 +3,7 @@ title: "Part 2: Parametric design"
 ---
 
 Welcome to part 2 of this FreeSewing pattern design tutorial.
-In this part I will show you how to design a made-to-measure 
+In this part I will show you how to design a bespoke
 sewing pattern, start to finish.
 
 <Tip>

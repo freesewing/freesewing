@@ -1,6 +1,5 @@
 ---
-title: Шиття
-order: 300
+title: Швейна термінологія
 ---
 
 <ReadMore list />

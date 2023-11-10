@@ -8,7 +8,8 @@ Cette option contrôle le décalage dans le troisième quadrant de la tête de m
 
 <Tip>
 
-Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-the-sleevecap) pour une explication détaillée de la construction de la tête de manche et de l'influence des différentes options sur sa forme.
+Voir [comprendre le sleevecap](/docs/designs/brian/options#understanding-the-sleevecap) pour un aperçu approfondi
+de la façon dont le sleevecap est construit et de l'influence des différentes options sur sa forme.
 
 </Tip>
 

@@ -1,7 +1,7 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { Pdf, mmToPoints } from './pdf.mjs'
 import SVGtoPDF from 'svg-to-pdfkit'
-import { logoPath } from 'shared/components/logos/freesewing.mjs'
+import { logoPath } from 'config/logo.mjs'
 
 /** an svg of the logo to put on the cover page */
 const logoSvg = `<svg viewBox="0 0 25 25">

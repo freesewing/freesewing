@@ -38,7 +38,7 @@ De cette façon, la poche peut être intégrée dans la découpe princesse un pe
 
 ### Une option supplémentaire : L'intensité de la découpe princesse
 
-Carlita a aussi une option supplémentaire que Carlton n'a pas, du nom un peu élaboré [Intensité de la découpe princesse](/docs/patterns/carlita/options#princessSeamSmoothFactor).
+Carlita a aussi une option supplémentaire que Carlton n'a pas, du nom un peu élaboré [Intensité de la découpe princesse](/docs/designs/carlita/options#princessSeamSmoothFactor).
 
 Cette option permet de régler la netteté de la découpe princesse après avoir ajouté le volume supplémentaire de votre poitrine.
 

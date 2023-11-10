@@ -2,11 +2,7 @@
 import { useTranslation } from 'next-i18next'
 import { analyzeDraftLogLine } from './errors.mjs'
 import { Mdx } from 'shared/components/mdx/dynamic.mjs'
-import {
-  ClearAllButton,
-  ns as coreMenuNs,
-} from 'shared/components/workbench/menus/core-settings/index.mjs'
-import { V3Wip } from 'shared/components/v3-wip.mjs'
+import { ns as coreMenuNs } from 'shared/components/workbench/menus/core-settings/index.mjs'
 
 export const ns = ['logs', ...coreMenuNs]
 
@@ -74,7 +70,7 @@ const extractLogs = (pattern) => {
   return logs
 }
 
-export const LogView = ({ pattern, settings, setSettings }) => {
+export const LogView = ({ pattern, settings }) => {
   const { t } = useTranslation(ns)
 
   try {
@@ -88,9 +84,7 @@ export const LogView = ({ pattern, settings, setSettings }) => {
     <div className="max-w-4xl mx-auto px-4 pb-8">
       <div className="flex">
         <h2 className="grow">{t('logs')}</h2>
-        <ClearAllButton setSettings={setSettings} />
       </div>
-      <V3Wip />
       {Object.entries(logs).map(([type, lines], key) => (
         <DraftLogs key={key} {...{ type, lines, t }} />
       ))}

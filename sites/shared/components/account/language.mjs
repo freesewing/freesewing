@@ -58,7 +58,7 @@ export const LanguageSettings = () => {
         }))}
         current={language}
         update={update}
-        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/language`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/language`} />}
       />
       <BackToAccountButton />
     </div>

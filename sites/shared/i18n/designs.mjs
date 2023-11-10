@@ -34,6 +34,7 @@ import { i18n as lunetius } from '@freesewing/lunetius'
 import { i18n as magde } from '@freesewing/magde'
 import { i18n as noble } from '@freesewing/noble'
 import { i18n as octoplushy } from '@freesewing/octoplushy'
+import { i18n as onyx } from '@freesewing/onyx'
 import { i18n as paco } from '@freesewing/paco'
 import { i18n as penelope } from '@freesewing/penelope'
 import { i18n as plugintest } from '@freesewing/plugintest'
@@ -90,6 +91,7 @@ export const designs = {
   magde,
   noble,
   octoplushy,
+  onyx,
   paco,
   penelope,
   plugintest,

@@ -2,6 +2,6 @@
 title: Metricset Vergelijking
 ---
 
-We can occasionally show how your set of measurements compares to other measurements sets. This allows us to detect potential problems in your measurements or patterns.
+We kunnen af en toe laten zien hoe jouw meetset zich verhoudt tot andere meetsets. Zo kunnen we mogelijke problemen in je metingen of patronen opsporen.
 
 Comparing yourself to others is the fastest way to be unhappy, so if you'd rather not see any comparisons, you can disable this feature altogether.

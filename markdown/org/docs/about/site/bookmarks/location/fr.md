@@ -1,8 +1,8 @@
 ---
-title: "Bookmarks: Location"
+title: Lieu de travail
 ---
 
-Every bookmark has a **loation** attribute that is mandatory. It holds the URL of the bookmark.
+Chaque signet possède un attribut **loation** qui est obligatoire. Il contient l'URL du signet.
 
-A bookmark without a location or URL is useless, as this holds the location the bookmark should point to.
+Un signet sans emplacement ou URL est inutile, car il contient l'emplacement vers lequel le signet doit pointer.
 

@@ -121,6 +121,7 @@ model Set {
 model CuratedSet {
   id        Int       @id @default(autoincrement())
   createdAt DateTime  @default(now())
+  height    Int       @default(1)
   info      String    @default("")
   nameDe    String    @default("")
   nameEn    String    @default("")

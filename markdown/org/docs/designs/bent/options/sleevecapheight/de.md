@@ -2,7 +2,7 @@
 title: "Armkugel Höhe"
 ---
 
-Dieser Faktor steuert die Höhe der Ärmel.
+Dieser Faktor steuert die Höhe der Armkugel.
 
 
 

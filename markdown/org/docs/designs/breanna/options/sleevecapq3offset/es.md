@@ -8,8 +8,8 @@ Esta opción controla el desplazamiento en el tercer cuadrante de la manga.
 
 <Tip>
 
-Consulta [entender la manga de mangaz](/docs/patterns/brian/options#understanding-the-sleevecap) para ver
-en profundidad cómo se construye la manga y la influencia de las diferentes opciones en su forma.
+Consulta [entender el cubremangas](/docs/designs/brian/options#understanding-the-sleevecap) para ver en profundidad en
+cómo se construye el cubremangas y la influencia de las distintas opciones en su forma.
 
 </Tip>
 

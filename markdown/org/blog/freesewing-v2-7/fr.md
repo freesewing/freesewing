@@ -63,7 +63,7 @@ Pour contourner ce problème, vous devriez probablement [recharger votre compte]
 
 Nous avons également apporté quelques modifications au site Web.
 
- - Nous avons ajouté un [guide de notation des patrons](/docs/various/notation/) pour aider à la compréhension de la signification de ces marquages sur votre patron.
+ - Nous avons ajouté un [guide de notation des patrons](/docs/about/notation/) pour aider à la compréhension de la signification de ces marquages sur votre patron.
  - Nous avons ajouté une page [recharger le compte](/account/actions/reload/) pour vous aider à éviter des problèmes liés aux données du compte mises en cache
  - Nous avons changé le style des différentes tailles lorsque vous comparez un patron, et nous avons aussi inclus une légende montrant quel trait correspond à quelle taille.
 

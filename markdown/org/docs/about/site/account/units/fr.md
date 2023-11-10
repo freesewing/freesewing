@@ -2,9 +2,9 @@
 title: Unités
 ---
 
-FreeSewing support both **metric units** (cm) and **imperial units** (inch).
+FreeSewing supporte à la fois **les unités métriques** (cm) et **les unités impériales** (inch).
 
-Here you can choose which type of units you prefer.
+Ici, tu peux choisir le type d'unités que tu préfères.
 
 Note that you can override these default units in various places, such as on a specific pattern or measurements set.
 

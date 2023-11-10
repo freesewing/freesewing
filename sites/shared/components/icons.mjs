@@ -1,5 +1,5 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
-import { logoPath } from 'shared/components/logos/freesewing.mjs'
+import { logoPath } from 'config/logo.mjs'
 
 export const IconWrapper = ({
   className = 'w-6 h-6',
@@ -194,6 +194,12 @@ export const CsetIcon = (props) => (
   </IconWrapper>
 )
 export const CuratedMeasurementsSetIcon = CsetIcon
+
+export const CloudIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
+  </IconWrapper>
+)
 
 export const CutIcon = (props) => (
   <IconWrapper {...props}>
@@ -761,7 +767,7 @@ export const TwitchIcon = (props) => (
 
 export const TwitterIcon = (props) => (
   <IconWrapper {...props} stroke={0} fill>
-    <path d="M 14.283262,10.162362 23.217802,0 h -2.1172 L 13.342742,8.8238362 7.1465624,0 H 2.3925781e-6 L 9.3698424,13.343203 2.3925781e-6,24 H 2.1173224 L 10.309822,14.681729 16.853442,24 h 7.14656 L 14.282742,10.162362 Z M 11.383302,13.46076 10.433942,12.132078 2.8802224,1.5596155 h 3.25208 l 6.0959396,8.5323145 0.94936,1.328682 7.924,11.090702 h -3.25208 l -6.46622,-9.050045 z"/>
+    <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
   </IconWrapper>
 )
 

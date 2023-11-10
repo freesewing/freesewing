@@ -1,6 +1,5 @@
 ---
-title: Afmetingen
-order: 300
+title: Metingen die we gebruiken
 ---
 
 <ReadMore list />

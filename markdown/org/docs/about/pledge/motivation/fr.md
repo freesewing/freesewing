@@ -1,5 +1,5 @@
 ---
-title: Motivation
+title: Mon raisonnement derrière la promesse de revenus de FreeSewing
 ---
 
 <Note>
@@ -9,7 +9,7 @@ ses motivations pour [l'engagement de revenus de FreeSewing](/docs/various/pledg
 
 </Note>
 
-Vous supposez probablement que nous demandons de l'argent pour faire tourner les serveurs. Mais ce n'est pas tout à fait vrai.
+Tu supposes probablement que je demande de l'argent pour faire fonctionner les serveurs. Mais ce n'est pas tout à fait vrai.
 
 Je ne sais pas si vous êtes familier avec l'expression **noblesse oblige** mais cela signifie essentiellement que le privilège implique une responsabilité.
 
@@ -40,7 +40,7 @@ C'est pourquoi tout l'argent récolté par FreeSewing va aux bonnes œuvres. Il 
 
 Voici la partie délicate : les gens donnent moins une fois qu'ils savent que l'argent est reversé aux bonnes œuvres. Je voudrais que ce ne soit pas le cas, mais ça l'est.
 
-Nous présentons donc [nos options d'abonnement](/community/join) comme vous le verriez sur un site à but lucratif. Cela semble plus intuitif ainsi, et ça fonctionne mieux aussi.
+Je présente donc [les options d'abonnement](/patrons/join) comme tu le ferais sur un site à but lucratif. Cela semble plus intuitif ainsi, et ça fonctionne mieux aussi.
 
 Oui, tout est gratuit et l'argent ne va pas vraiment payer les factures des serveurs (parce que je choisis de les payer de ma poche pour les raisons décrites ci-dessus). Mais cela ne signifie pas que ces contributions ne sont pas cruciales pour le bien-être du projet, ou du moins son responsable (c'est-à-dire moi).
 

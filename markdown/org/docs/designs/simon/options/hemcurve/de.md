@@ -14,6 +14,6 @@ If you set this to zero, you'll get a straight hem regardless of what hem style 
 
 </Note>
 
-## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_hemcurve_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+

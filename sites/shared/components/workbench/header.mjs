@@ -108,7 +108,7 @@ const NavIcons = ({ setView, setDense, dense, view, saveAs = false, control }) =
       {control >= controlLevels.views.test && (
         <NavButton
           onClick={() => setView('test')}
-          label={t('workbench:patternTests')}
+          label={t('workbench:testDesign')}
           active={view === 'test'}
         >
           <BeakerIcon className={iconSize} />
@@ -153,7 +153,7 @@ const NavIcons = ({ setView, setDense, dense, view, saveAs = false, control }) =
       {control >= controlLevels.views.edit && (
         <NavButton
           onClick={() => setView('edit')}
-          label={t('workbench:editByHand')}
+          label={t('workbench:editSettingsByHand')}
           active={view === 'edit'}
         >
           <EditIcon className={iconSize} />

@@ -4,7 +4,7 @@ title: "Bänder"
 
 ***
 
-Whether to includes ties, yes or no
+Sollen Bänder hinzugefügt werden, ja oder nein
 
 
 

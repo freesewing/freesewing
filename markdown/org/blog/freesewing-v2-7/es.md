@@ -63,7 +63,7 @@ Para evitarlo, probablemente deberías [recargar tu cuenta](/account/reload/).
 
 También hemos hecho algunos cambios en el sitio web.
 
- - Hemos añadido una guía de notación de patrones [](/docs/various/notation/) para que no tengas que adivinar qué significan esas marcas en tu patrón.
+ - Hemos añadido una guía de notación de patrones [](/docs/about/notation/) para que no tengas que adivinar qué significan esas marcas en tu patrón.
  - Hemos añadido una página [de recarga de la cuenta](/account/actions/reload/) para ayudarte a evitar problemas debidos a los datos de la cuenta almacenados en caché.
  - Hemos cambiado el estilo de las distintas tallas cuando comparas un patrón, además de incluir una leyenda que muestra qué contorno corresponde a cada talla.
 

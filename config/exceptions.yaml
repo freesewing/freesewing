@@ -75,6 +75,8 @@ packageJson:
     author: AlfaLyr (https://github.com/alfalyr)
   shelly:
     author: Thrunic (https://github.com/Thrunic)
+  onyx:
+    author: Thrunic (https://github.com/Thrunic)
   tiberius: *starf
   waralee:
     author: woutervdub (https://github.com/woutervdub)

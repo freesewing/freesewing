@@ -1,8 +1,8 @@
 ---
-title: "Patterns: Name"
+title: 'API Keys: Name'
 ---
 
-Every pattern has a **name** attribute that is mandatory.
+Кожен шаблон має обов'язковий атрибут **name** .
 
-In other words, you must give each of your patterns sets a name, but that name can be anything you want.
+Іншими словами, ви повинні дати кожному набору візерунків ім'я, але це ім'я може бути будь-яким.
 

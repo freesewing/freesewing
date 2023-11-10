@@ -4,7 +4,7 @@ title: "Banden"
 
 ***
 
-Whether to includes ties, yes or no
+Dassen opnemen, ja of nee
 
 
 

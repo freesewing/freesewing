@@ -42,7 +42,7 @@ Als je een overlocker/overlock gebruikt, kun je naden naaien die in één keer f
 
 <Note>
 
-Op het patroon is de inkeping aan de achterkant gemarkeerd als een kruisinkeping (zie [onze patroonnotatiegids](/docs/various/notation/notches/)). Het wordt aangeraden om dit een dubbel merkteken te maken bij het uitknippen van je stukken zodat het merkteken makkelijker te onderscheiden is van voorpand.
+Op het patroon is de inkeping aan de achterkant gemarkeerd als een kruisinkeping (zie [onze patroonnotatiegids](/docs/over/notatie/notches/)). Het wordt aangeraden om dit een dubbel merkteken te maken bij het uitknippen van je stukken zodat het merkteken makkelijker te onderscheiden is van voorpand.
 
 </Note>
 

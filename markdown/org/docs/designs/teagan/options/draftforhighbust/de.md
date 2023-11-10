@@ -16,6 +16,6 @@ Wenn du diese Option aktivierst, passen wir uns deiner großen Oberweite an, ind
 Diese Option hat keine Auswirkung, wenn keine hohe Büstenmessung verfügbar ist
 </Note>
 
-## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](teagan_draftforhighbust_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+

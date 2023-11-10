@@ -1,6 +1,6 @@
 ---
-title: Reversible
+title: Omkeerbaar
 ---
 
-Whether you want to make a fully reversible Bee or not.
+Of je nu een volledig omkeerbare Bee wilt maken of niet.
 

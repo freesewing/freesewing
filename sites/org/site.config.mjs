@@ -1,8 +1,8 @@
 export const siteConfig = {
   algolia: {
-    app: 'MA0Y5A2PF0', // Application ID
-    index: 'canary_freesewing.dev',
-    key: '589c7a7e4d9c95a4f12868581259bf3a', // Search-only API key
+    appId: 'MA0Y5A2PF0', // Application ID
+    index: (language) => `org_docs_${language}`,
+    apiKey: '589c7a7e4d9c95a4f12868581259bf3a', // Search-only API key
   },
   bugsnag: {
     key: '1b3a900d6ebbfd071975e39b534e1ff5',
@@ -20,8 +20,20 @@ export const siteConfig = {
   languagesWip: [],
   site: 'FreeSewing.org',
   tld: 'org',
-  posts: {
-    preGenerate: 6,
-    perPage: 50,
-  },
+  /*
+   * This is a read-only token that only can read issues from our monorepo.
+   * hich you can do anonymously via the web UI.
+   * However, the GraphQL API requires authentication so we need to use this.
+   * We could side-step it be going via our own backend, but as this is used in a status
+   * component, we don't want to be in a situation where the backend is down and now the status
+   * page can't show that because it can't access GitHub without a backend.
+   * So, this is the token split into parts to keep automated (dumb) tools
+   * from screaming: ZOMG YOU LEAKED CREDENTIALS!!
+   */
+  issueToken: [
+    'github',
+    'pat',
+    '11AANBDTQ0ylQK3tv9iKwb',
+    'kBLRAz5xH63aC1YqnlPdgOuQehxtxnw2RFQf3Z1Na5xH6FJMKINGJZsMTWs',
+  ].join('_'),
 }

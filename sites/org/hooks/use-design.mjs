@@ -31,6 +31,7 @@ import { Lucy as lucy } from '@freesewing/lucy'
 import { Lunetius as lunetius } from '@freesewing/lunetius'
 import { Noble as noble } from '@freesewing/noble'
 import { Octoplushy as octoplushy } from '@freesewing/octoplushy'
+import { Onyx as onyx } from '@freesewing/onyx'
 import { Paco as paco } from '@freesewing/paco'
 import { Penelope as penelope } from '@freesewing/penelope'
 import { Sandy as sandy } from '@freesewing/sandy'
@@ -82,6 +83,7 @@ const designs = {
   lunetius,
   noble,
   octoplushy,
+  onyx,
   paco,
   penelope,
   sandy,

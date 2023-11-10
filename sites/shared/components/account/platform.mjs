@@ -46,7 +46,7 @@ export const PlatformSettings = ({ platform }) => {
         update={setPlatformId}
         valid={(val) => val.length > 0}
         placeholder={'joostdecock'}
-        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/platform`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/platform`} />}
       />
       <SaveSettingsButton btnProps={{ onClick: save }} />
       <BackToAccountButton />

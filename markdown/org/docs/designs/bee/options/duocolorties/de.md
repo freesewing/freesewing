@@ -1,8 +1,8 @@
 ---
-title: Duo color ties
+title: Zweifarbige Krawatten
 ---
 
-This option allows you to generate a pattern where the ties use two colors rather than one.
+Mit dieser Option kannst du ein Muster erstellen, bei dem die Krawatten zwei Farben statt einer verwenden.
 
-Enable this option if you want ties using two colors. Leave it disabled (the default) if you want ties using a single color.
+Aktiviere diese Option, wenn du Krawatten in zwei Farben verwenden möchtest. Lass sie deaktiviert (Standardeinstellung), wenn du Krawatten in einer einzigen Farbe binden möchtest.
 

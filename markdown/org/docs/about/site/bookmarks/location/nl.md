@@ -1,8 +1,8 @@
 ---
-title: "Bookmarks: Location"
+title: Locatie
 ---
 
-Every bookmark has a **loation** attribute that is mandatory. It holds the URL of the bookmark.
+Elke bladwijzer heeft een **loation** attribuut dat verplicht is. Deze bevat de URL van de bladwijzer.
 
-A bookmark without a location or URL is useless, as this holds the location the bookmark should point to.
+Een bladwijzer zonder locatie of URL is nutteloos, omdat deze de locatie bevat waarnaar de bladwijzer moet verwijzen.
 

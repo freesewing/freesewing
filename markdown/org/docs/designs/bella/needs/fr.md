@@ -5,7 +5,7 @@ title: "Bloc corporel Bella : Ce dont tu as besoin"
 Pour faire Bella, vous aurez besoin des éléments suivants :
 
 - Fourniture de base pour la couture
-- Environ 0,5 mètre (0,6 yard) d'un tissu approprié ([voir Options de tissu Bella](/docs/patterns/bella/fabric/))
+- Environ 0,5 mètre (0,6 yard) d'un tissu approprié ([voir Options de tissu Bella](/docs/designs/bella/fabric/))
 
 Cette liste est pour un bloc Bella par défaut. Si vous avez apporté des modifications au bloc, vous devrez peut-être vous procurer des éléments supplémentaires tels que des fermetures, des reliures, etc.
 

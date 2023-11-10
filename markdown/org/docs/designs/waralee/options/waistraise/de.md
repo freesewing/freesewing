@@ -2,8 +2,8 @@
 title: "Taillenhöhe"
 ---
 
-Wie viel die Taille von der Sitztiefenmessung anheben. Dies beeinflusst die Tiefe des Schneidausschnitts.
+Wie viel die Taille von der Sitztiefenmessung erhöht werden muss. Dies beeinflusst die Tiefe des Schrittausschnitts.
 
-## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](waralee_waistraise_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+

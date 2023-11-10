@@ -3,7 +3,9 @@ import { backPoints } from './backpoints.mjs'
 export const backOutside = {
   name: 'tristan.backOutside',
   from: backPoints,
-  draft: ({ sa, Point, points, Path, paths, Snippet, snippets, options, macro, part }) => {
+  draft: ({ sa, Point, points, Path, paths, Snippet, snippets, options, store, macro, part }) => {
+    store.cutlist.removeCut()
+
     paths.cut = new Path()
       .move(points.armhole)
       .curve(points.armholeCutCp, points.strapOutsideCp, points.strapOutside)
@@ -38,6 +40,8 @@ export const backOutside = {
       from: points.grainlineFrom,
       to: points.grainlineTo,
     })
+
+    store.cutlist.addCut({ cut: 2, from: 'fabric' })
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')

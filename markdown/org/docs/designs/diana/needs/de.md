@@ -5,7 +5,7 @@ title: "Diana drapiertes Oberteil: Was du brauchst"
 Um Diana zu erstellen, benötigst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
-- Etwa 1.5m (1.7 yards) eines geeigneten Stoffes (oder die Hälfte davon, wenn der Stoff breit genug für Ärmel und Vorder- und Rückenteil ist) ([siehe Stoffoptionen](/docs/patterns/diana/fabric))
+- Etwa 1.5m (1.7 yards) eines geeigneten Stoffes (oder die Hälfte davon, wenn der Stoff breit genug für Ärmel und Vorder- und Rückenteil ist) ([siehe Stoffoptionen](/docs/designs/diana/fabric))
 
 <Note>
 

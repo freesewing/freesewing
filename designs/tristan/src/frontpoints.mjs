@@ -64,6 +64,10 @@ export const frontPoints = {
     // Remove macros from Noble
     macro('rmtitle')
     macro('rmscalebox')
+    macro('rmcutonfold')
+
+    store.cutlist.removeCut()
+    console.log({ t_store: JSON.parse(JSON.stringify(store)) })
 
     const shoulderWidthInside = points.shoulderDartInside.dist(points.hps)
     const shoulderWidthOutside = points.shoulderDartOutside.dist(points.shoulder)

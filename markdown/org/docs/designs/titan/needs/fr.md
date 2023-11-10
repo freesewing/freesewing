@@ -5,7 +5,7 @@ title: "Bloc de pantalons Titan : Ce dont tu as besoin"
 Pour faire Titan, vous aurez besoin des éléments suivants :
 
 - Fourniture de base pour la couture
-- Environ 1,5 mètre de tissu approprié ([voir Titan Fabric options](/docs/patterns/titan/fabric))
+- Environ 1,5 mètre de tissu approprié ([voir Titan Fabric options](/docs/designs/titan/fabric))
 
 <Note>
 

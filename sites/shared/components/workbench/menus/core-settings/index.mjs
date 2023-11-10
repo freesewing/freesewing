@@ -44,7 +44,7 @@ const CoreSetting = ({ name, config, control, updateFunc, current, passProps, ..
       docs={
         <DynamicMdx
           language={rest.language}
-          slug={`docs/site/draft/core-settings/${name.toLowerCase()}`}
+          slug={`docs/about/site/draft/core-settings/${name.toLowerCase()}`}
         />
       }
     />

@@ -63,14 +63,13 @@ SubscriberModel.prototype.guardedCreate = async function ({ body }) {
    */
   const actionUrl = i18nUrl(
     body.language,
-    `/newsletter/${this.record.active ? 'un' : ''}subscribe/${this.record.id}/${ehash}`
+    `/newsletter/${this.record.active ? 'un' : ''}subscribe?id=${this.record.id}&check=${ehash}`
   )
 
   /*
    * Send out confirmation email unless it's a test and we don't want to send test emails
    */
   if (!isTest || this.config.use.tests.email) {
-    console.log({ actionUrl })
     const template = newSubscriber ? 'nlsub' : this.record.active ? 'nlsubact' : 'nlsubinact'
     await this.mailer.send({
       template,

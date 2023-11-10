@@ -1,11 +1,11 @@
 ---
-title: "Apart knopenpat"
+title: "Aparte knoopsluiting"
 ---
 
-![Apart knopenpat](seperatebuttonplacket.svg)
+![Aparte knoopsluiting](separatebuttonplacket.svg)
 
 Kies of je het knopenpat als apart patroondeel wil.
 
-## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_seperatebuttonplacket_sample.svg "Effect van deze optie op het patroon")
+
+

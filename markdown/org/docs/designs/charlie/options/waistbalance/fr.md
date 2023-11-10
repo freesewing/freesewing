@@ -10,6 +10,6 @@ The side effect of shifting the side seam forward is that it's easy to get into 
 
 Cette option vous permet de contrôler ce solde.
 
-## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_waistbalance_sample.svg "Effet de cette option sur le motif")
+
+

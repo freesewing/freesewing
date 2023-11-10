@@ -1,6 +1,5 @@
 ---
-title: Різне
-order: 999
+title: Про FreeSewing
 ---
 
 <ReadMore list />

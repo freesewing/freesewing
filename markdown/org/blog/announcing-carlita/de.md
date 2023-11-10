@@ -38,7 +38,7 @@ Auf diese Weise kann die Tasche in der Prinzessnaht integriert werden, irgendwo 
 
 ### Eine zusätzliche Option: Der Prinzessnaht-Glättungsfaktor
 
-Carlita hat auch eine Option, die Carlton nicht hat, den etwas umständlich benannten [Prinzessnaht-Glättungsfaktor](/docs/patterns/carlita/options#princessSeamSmoothFactor).
+Carlita hat auch eine Option, die Carlton nicht hat, den etwas umständlich benannten [Prinzessnaht-Glättungsfaktor](/docs/designs/carlita/options#princessSeamSmoothFactor).
 
 Dieser legt fest, wie stark die Prinzessinen naht unterhalb der Brust wieder an den Körper anliegt, nach dem sie für die Mehrweite für die Brüste sorgte.
 

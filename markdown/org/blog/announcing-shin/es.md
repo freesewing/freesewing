@@ -20,7 +20,7 @@ Así que, tras algunos retoques más, creo que esto está listo para vosotros, y
 
 Shin viene con opciones, y son muy parecidas a las opciones disponibles para [Bruce](/designs/bruce).
 
-Todas las opciones de [están documentadas](/docs/patterns/shin/options), al igual que las medidas necesarias [](/docs/patterns/shin/measurements), y también he escrito [instrucciones para hacerlo](/docs/patterns/shin).
+Todas las opciones de [están documentadas](/docs/designs/shin/options), al igual que las medidas necesarias [](/docs/designs/shin/measurements), y también he escrito [instrucciones para hacerlo](/docs/designs/shin/instructions).
 
 Todavía tengo que hacer las ilustraciones, pero en realidad no es difícil, así que probablemente te las arregles sin ellas. Esencialmente, puedes ir y hacer esto ahora mismo.
 

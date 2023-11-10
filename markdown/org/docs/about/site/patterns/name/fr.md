@@ -1,8 +1,8 @@
 ---
-title: "Patterns: Name"
+title: Nom
 ---
 
-Every pattern has a **name** attribute that is mandatory.
+Chaque modèle a un attribut **name** qui est obligatoire.
 
-In other words, you must give each of your patterns sets a name, but that name can be anything you want.
+En d'autres termes, tu dois donner un nom à chacun de tes jeux de motifs, mais ce nom peut être ce que tu veux.
 

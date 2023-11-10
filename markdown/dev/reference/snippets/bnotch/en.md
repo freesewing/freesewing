@@ -5,7 +5,8 @@ title: bnotch
 The `bnotch` snippet is intended for notches at the back, or when you
 need an alternative to the default `notch`.
 
-It is provided by [plugin-annotations](/reference/plugins/annotations/).
+It is provided by [plugin-annotations](/reference/plugins/annotations/), which is
+part of [core-plugins](/reference/plugins/core) (so it is available by default).
 
 ## Example
 

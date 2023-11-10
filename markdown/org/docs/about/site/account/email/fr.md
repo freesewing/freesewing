@@ -1,6 +1,6 @@
 ---
-title: Email Address
+title: Adresse électronique
 ---
 
-Your email address ensures we can reach you when it's needed. For example when you have forgotten your password.
+Ton adresse électronique nous permet de te joindre en cas de besoin. Par exemple lorsque tu as oublié ton mot de passe.
 

@@ -1,5 +1,5 @@
 ---
-title: Motivación
+title: Mi razonamiento sobre el compromiso de ingresos de FreeSewing
 ---
 
 <Note>
@@ -9,7 +9,7 @@ sus motivaciones para [el pledge de ingresos de FreeSewing (/docs/various/pledge
 
 </Note>
 
-Probablemente asuma que pedimos dinero para mantener los servidores en funcionamiento. Pero eso no es exactamente cierto.
+Probablemente asumes que pido dinero para mantener los servidores en funcionamiento. Pero eso no es exactamente cierto.
 
 No sé si estás familiarizado con la frase **noblesse oblige** , pero esencialmente significa que el privilegio conlleva responsabilidad.
 
@@ -40,7 +40,7 @@ Por eso todo el dinero recaudado a través de FreeSewing va a la caridad. Esto h
 
 Esta es la parte complicada: la gente da menos una vez que sabe que el dinero va a la caridad. Ojalá no fuera el caso, pero lo es.
 
-Así que presentamos [nuestras opciones de suscripción](/community/join) como lo verías en un sitio con fines de lucro. Parece más intuitivo de esta manera, y también funciona mejor.
+Así que te presento [las opciones de suscripción](/patrons/join) como las que verías en un sitio con ánimo de lucro. Parece más intuitivo de esta manera, y también funciona mejor.
 
 Yes, everything is free, and the money doesn't actually go to paying the server bills (because I choose to pay them out of my pocket for reasons outlined above). But that doesn't mean that these contributions are not crucial to the well-being of the project, or at the very least its maintainer (that would be me).
 

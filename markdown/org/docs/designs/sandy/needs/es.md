@@ -5,11 +5,11 @@ title: "Falda circular Sandy: Lo que necesitas"
 Para hacer Sandy, necesitarás lo siguiente:
 
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
-- Unos 2 - 6 metros (2,2 - 6,6 yardas) de una tela principal adecuada ([consulta las opciones de tela arenosa](/docs/patterns/sandy/fabric))
+- Unos 2 - 6 metros (2,2 - 6,6 yardas) de una tela principal adecuada ([consulta las opciones de tela arenosa](/docs/designs/sandy/fabric))
 - Interfaz para la cintura
 - (Opcional) Revestimiento para el dobladillo.
 - Algún tipo de cierre para la cintura (si no es sin costuras)
-- (Opcional) Unos 2 - 6 metros (2,2 - 6,6 yardas) de tela de forro adecuada ([ver Opciones de tela de arena](/docs/patterns/sandy/fabric))
+- (Opcional) Unos 2 - 6 metros (2,2 - 6,6 yardas) de tela de forro adecuada ([ver Opciones de tela de arena](/docs/designs/sandy/fabric))
 - Elástico (si es necesario)
 
 Debido a los muchos estilos diferentes de Sandy, es difícil decir con precisión lo que necesitas, así que repasaremos algunas de las opciones.

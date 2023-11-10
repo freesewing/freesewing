@@ -11,7 +11,7 @@ Tiberius is een historisch geïnspireerd patroon en als je meer authenticiteit w
 ### Stap 1: Schoudernaden naaien
 
 - Leg beide delen met de goede kanten op elkaar. Naai de schoudernaden en stop bij de inkepingen voor de hoofdopening.
-- Werk de naden af met een methode naar keuze. (Als je de stoffen hebt gebruikt die worden aanbevolen in de [stofopties](/docs/patterns/tiberius/fabric), _zullen ze_gaan rafelen. De naadtoeslag twee keer vouwen, de kniprand insluiten en doorstikken is een optie. Je kunt ook decoratieve doorstiksels gebruiken).
+- Werk de naden af met een methode naar keuze. (Als je de stoffen hebt gebruikt die worden aanbevolen in de [stofopties](/docs/designs/tiberius/fabric), zullen ze _gaan rafelen. De naadtoeslag twee keer vouwen, de kniprand insluiten en doorstikken is een optie. Je kunt ook decoratieve doorstiksels gebruiken).
 
 <Note>
 

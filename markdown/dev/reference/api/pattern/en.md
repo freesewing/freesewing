@@ -4,7 +4,7 @@ title: Pattern
 
 The `Pattern` object in FreeSewing's core library holds all data and logic of a pattern.
 It is the parametric blueprint that when instantiated with a user's settings
-can draft a made-to-measure sewing pattern.
+can draft a bespoke sewing pattern.
 
 ## Creating a Pattern
 

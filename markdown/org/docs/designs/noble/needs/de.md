@@ -5,7 +5,7 @@ title: "Noble Body Block: Was du brauchst"
 Um Noble herzustellen, brauchst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- Etwa 0,5 Meter (0,6 Yards) eines geeigneten Stoffes ([siehe Noble Fabric options](/docs/patterns/noble/fabric/))
+- Etwa 0,5 Meter (0,6 Yards) eines geeigneten Stoffes ([siehe Noble Fabric options](/docs/designs/noble/fabric/))
 
 Diese Liste ist für einen Standard-Nobelblock. Wenn du Änderungen an dem Block vornimmst, musst du eventuell zusätzliche Artikel wie Verschlüsse, Bindungen usw. besorgen.
 

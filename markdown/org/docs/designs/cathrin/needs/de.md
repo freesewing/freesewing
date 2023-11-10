@@ -10,8 +10,8 @@ Du findest eine gute Anleitung zu anderen Werkzeugen unter [Foundations Revealed
 
 Mustervorrätliste:
 
-- Etwa 0,5 Meter (0,6 Yards) Kernstoff ([siehe Stoffoptionen](/docs/patterns/cathrin/fabric))
-- Etwa 0,5 Meter (0,6 Yards) Außenstoff ([siehe Stoffoptionen](/docs/patterns/cathrin/fabric))
+- Etwa 0,5 Meter (0,6 Yards) Kernstoff ([siehe Stoffoptionen](/docs/designs/cathrin/fabric))
+- Etwa 0,5 Meter (0,6 Yards) Außenstoff ([siehe Stoffoptionen](/docs/designs/cathrin/fabric))
 - Boning
 - Grommets (size 2)
 - Ungefähr 2 Meter Voreinstellung

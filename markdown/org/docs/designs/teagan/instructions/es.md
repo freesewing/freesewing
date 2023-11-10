@@ -85,7 +85,7 @@ Ahora es el momento de coser los extremos de nuestra banda de punto.
 
 <Tip>
 
-Se puede encontrar una forma más extensa de enlazar en la [Instucciones de Aaron](/docs/patterns/aaron/instructions).
+En las [Instrucciones de Aaron] (/docs/diseños/aaron/instrucciones) encontrarás una guía más detallada sobre la encuadernación de punto.
 
 </Tip>
 

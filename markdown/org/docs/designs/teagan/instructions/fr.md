@@ -85,7 +85,7 @@ Hourra ! Vous avez terminé la partie la plus délicate ! Tu peux aussi fixer le
 
 <Tip>
 
-Un guide plus complet sur la liaison tricot peut être trouvé dans les [Instuctions Aaron](/docs/patterns/aaron/instructions).
+Tu trouveras un mode d'emploi plus complet sur la reliure en tricot dans les [Instuctions d'Aaron](/docs/designs/aaron/instructions).
 
 </Tip>
 

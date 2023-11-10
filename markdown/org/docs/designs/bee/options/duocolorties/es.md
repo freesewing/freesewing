@@ -1,8 +1,8 @@
 ---
-title: Duo color ties
+title: Corbatas bicolor
 ---
 
-This option allows you to generate a pattern where the ties use two colors rather than one.
+Esta opción te permite generar un patrón en el que los lazos utilicen dos colores en lugar de uno.
 
-Enable this option if you want ties using two colors. Leave it disabled (the default) if you want ties using a single color.
+Activa esta opción si quieres que las corbatas utilicen dos colores. Déjalo desactivado (por defecto) si quieres que los lazos utilicen un solo color.
 

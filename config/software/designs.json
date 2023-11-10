@@ -553,6 +553,16 @@
       "precision"
     ]
   },
+  "onyx": {
+    "lab": true,
+    "org": true,
+    "description": "A FreeSewing pattern for one-piece garments",
+    "code": "Thrunic",
+    "design": "Thrunic",
+    "difficulty": 4,
+    "tags": ["swimwear", "pajamas", "onePiece"],
+    "techniques": ["hem", "curvedSeam", "stretch", "lining", "zipper", "ribbing"]
+  },
   "paco": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern for summer pants",
@@ -787,6 +797,20 @@
     "techniques": [
       "precision",
       "lining"
+    ]
+  },
+  "tristan": {
+    "code": "Wouter van Wageningen",
+    "description": "A FreeSewing pattern for a top",
+    "design": "Natalia Sayang",
+    "difficulty": 3,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "tops"
+    ],
+    "techniques": [
+      "precision"
     ]
   },
   "uma": {

@@ -1,10 +1,10 @@
 ---
-title: "Bookmarks: Type"
+title: Type
 ---
 
-Every bookmark has a **type** attribute that is mandatory.
+Elke bladwijzer heeft een **type** attribuut dat verplicht is.
 
-When you manually create a bookmark, the type is always **custom** so you cannot choose it.
+Als je handmatig een bladwijzer maakt, is het type altijd **custom** zodat je het niet kunt kiezen.
 
-Other types include **pattern** or **docs** which will automatically be set when you bookmark a pattern or documentation page respectively.
+Andere types zijn **patroon**, **docs**, of **set** die automatisch worden ingesteld wanneer je een bladwijzer maakt voor respectievelijk een patroon, documentatiepagina of meetset.
 

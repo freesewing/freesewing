@@ -189,13 +189,24 @@ Strijk de binnennaad open wanneer je klaar bent.
 
 ## Stap 9: Sluit de kruisnaad
 
+<tip>
+
+Controleer of je rechter- en linkerbeen overeenkomen met de markeringen op het patroon. Het kruis van het rechterbeen moet iets verder uitsteken dan het linkerbeen. Raadpleeg het patroon en knip zo nodig overtollig deel van het linkerbeen af.
+
+Het kan waardevol zijn om met krijt of draad de **middenvoor** op elk been te markeren. Zo weet je zeker dat de onderdelen op de juiste plek zitten tijdens het vliegen.
+
+</tip>
+
 Zorg dat de ene broekspijp met de goede kant naar buiten gekeerd is, en de andere de goede kant erin heeft.
 
 Stop nu het been met de goede kant naar buiten in het been met de goede kant naar binnen. Op die manier hebben ze hun goede kanten tegen elkaar.
 
-Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. Stop bij de laagste gulpbel.
+Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. **Stop bij de gulpinkeping** en zorg ervoor dat je doorstikt.
 
 Wanneer je klaar bent. Doe het opnieuw. Stik de kruisnaad altijd twee keer. Het is een van die beste praktijken die je negeert op eigen risico.
+
+![Dichte kruisnaad](CloseCrossseam.svg)
+
 
 <Tip>
 
@@ -208,7 +219,7 @@ Het goed doen is een van die dingen die je uiteindelijk altijd zal koesteren wan
 
 ## Stap 10: Maak de gulp
 
-### Sluit gulp extensie
+### Sluit de gulpverlenging en sergeer
 
 Plooi de gulp op de geplooide lijn met de goede kanten op elkaar.
 
@@ -216,67 +227,82 @@ Stik nu langs de onderkant, om de vlieg extensie te sluiten.
 
 Knip de helft van de naadwaarde terug om bulk te verwijderen voordat je de goede kant naar buiten zet en strijkt.
 
-### Serveer de vliegextensie en vlieg met beleg
+#### Serveer de vliegextensie en vlieg met beleg
 
 Serge (of zigzag) langs de open kant van de vlieg extensie. Het is niet nodig om de top te verstoppen want die wordt gepakt in onze tailleband.
 
 wanneer je er aan toe bent, lock je ook langs het geheel van de gulpbelanden J-vormige rand.
 
-### Knip de extra naadwaarde aan het linkervoorpand weg
+![Sluiten Uitbreiding en Serge](CloseExtensionAndSerge.svg)
 
-Er is extra naadwaarde die langs de vliegen loopt. Dat is alleen nodig aan de rechterzijde. Knip het weg op het linkerpaneel zodat je alleen de naadwaarde aan de linkerkant achterlaat.
 
 ### Bevestig het gulpbeleg
 
-Stik de gulp aan het voorpand. Leg ze met de goede kanten op elkaar en lijn de bovenkant uit.
+Naai het beleg op het linkerbeen. Je naait iets voorbij het kruisnaadpunt, dus zorg ervoor dat je de naadtoeslag van het rechterbeen uit de weg houdt en naai direct bovenop de kruisnaadlijn.
 
-### Trek in de punt van de gulp
+![Facing bevestigen](AttachFacing.svg)
 
-Plooi de onderkant van de gulp naar binnen en bevestig met een paar steken.
+### Maak de fly facing af
 
-### Stik de gulp naar de naad door
+Knip het beleg bij tot de helft van de naadtoeslag.  
+Stop het uiteinde van het beleg in en zet het vast met een paar steken. Naai de voorkant van de gulp aan de naadtoeslag. Pers de naadtoeslag naar het beleg en stik het beleg door voor een nette afwerking. Houd ook hier de naadtoeslag van het rechterbeen uit de weg.
 
-Stik de gulp aan de naadwaarde. Zorg ervoor dat het voorpaneel er buiten blijft.
+![Afwerking Facing](FinishFacing.svg)
 
-### Strijk de kruisnaad, guld en de gulpdeel
+### Naai de rits aan de gulpverlenging
 
-Strijk de kruisnaad open. Strijk het gulpbeleg naar de zijkant.
+<tip>
 
-Plooi vervolgens de extra naadwaarde aan de rechterbovenhoek om en strijk deze omlaag.
+**Ritslengte**
 
-### Drieg de rits naar de gulp extensie
+Het is een goed idee om ervoor te zorgen dat je ritsstop eindigt voor de aangegeven steeklijn op het patroon. Dit zorgt ervoor dat je niet over je ritsstop naait en vermindert de spanning op de onderkant van de gulp. Als je rits te lang is, kun je een zigzagsteek van 0 lengte doen om een nieuwe stop te maken (op alleen de rits zelf).
 
-Leg de rits langs de (licht gebogen) rand van de gulpextensie.
+</tip>
 
-Stik nu langs de rand. Je hoeft niet dicht bij de rits, stik gewoon langs de rand om ze vast te houden.
+Naai langs de linkerrand van de rits aan de doorgestikte rand van het gulpverlengstuk om het op zijn plaats te houden.
 
-### Bevestig de rits aan de gulp
+![Rits rijgen](BasteZipper.svg)
 
-Leg nu de rechterbroekspijp met de extra naadwaarde die je langs de rits heen geplooid hebt.
 
-Gebruik een rits voet langs de rand van de rits door de geplooide rand.
+### Stik het rechterbeen vast aan de rits
 
-<Tip>
+Begin met de naadtoeslag van het rechterbeen naar de achterkant te persen.
 
-Misschien wil je dit eerst driegen om ervoor te zorgen dat het aardig parallel is met de rits. Sluiten, maar niet te dichtbij.
+<tip>
 
-</Tip>
+Denk eraan dat de naadtoeslag iets rechts van het middenvoorpand begint, het middenvoorpand is paars gemarkeerd in de afbeelding, zorg ervoor dat je niet per ongeluk langs de middenvoorlijn vouwt.
 
-### Stik de rits aan de gulpbeleg
+</tip>
 
-Stik nu de andere kant van de rits aan het gulpdeel. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
+Zorg ervoor dat je de gevouwen rand van het rechterbeen net links van de tandjes van de rits legt om te voorkomen dat er stof tussen de rits komt.
 
-### Werk de kruisnaad af
+Stop met naaien bij de bovenste inkeping van de 'fly extention', iets boven de kruisnaad, en naai averechts. Als je dit niet doet, kun je het verlengstuk niet uit de weg houden tijdens het naaien van de J-naad.
 
-Stik het laatste stukje van de kruisnaad tot aan de hoogste gulpbok.
+![Bevestig het verlengstuk aan het rechterbeen](AttachExtensionToRightLeg.svg)
+
+
+### Maak de rits vast aan de voorkant van de gulp.
+
+Let erop dat je het been links uitlijnt op de rechter middenvoor. Het kan waardevol zijn om te spelden of te rijgen door het beleg en de rechterzijkant van het ritsband. (We moeten de linkerkant van het ritsband aan het linkerbeen naaien). Zorg ervoor dat alles gevoerd is en naai het gulpgedeelte aan de linkerkant van de rits. Probeer dicht bij de rits te komen, maar niet te dicht.
+
+![Facing aan rits bevestigen](AttachFacingToZipper.svg)
+
 
 ### Stik de J-naad van de gulp
 
-Stik nu de zogenaamde J-naad van de gulp. Zorg ervoor dat de vliegextensie buiten de weg blijft.
+<tip>
 
-### Balk de onderkant van de gulp aan
+Gebruik een stukje papier als geleider om de J-naad te naaien, dit kun je van je patroon knippen langs de aangegeven steeklijn.
 
-Schiet nu de fles van de J-naad (het horizontale deel) maar deze keer zorg dat je ook de vlieg extensie vangt.
+</tip>
+
+Stik nu de zogenaamde J-naad van de gulp. Zorg ervoor dat de vliegextensie buiten de weg blijft. Omdat je niet helemaal langs het verlengstuk van de gulp hebt genaaid, zou je het uit de weg moeten kunnen spelden.
+
+#### Balk de onderkant van de gulp aan
+
+Maak nu een bartack aan de onderkant van de J-naad (het horizontale deel), maar zorg er dit keer voor dat je ook het verlengstuk van de gulp opvangt. Je kunt er ook voor kiezen om een extra bar tack langs de J-naad toe te voegen (in paars weergegeven).
+
+![De J-naad naaien](SewTheJSeam.svg)
 
 ## Stap 11: Bevestig de riemlusjes
 
@@ -292,11 +318,15 @@ Snijd een strook van 80 cm lang en 2,8 cm breed.
 
 Serge (of zigzag) de lange rand van de strip aan beide zijden.
 
+![Afwerking lusranden](FinishLoopEdges.svg)
+
 Plooi de ene kant naar binnen en de andere kant erover. Druk daarna neer met je ijzer. Het eindresultaat moet een lange strook van ongeveer 1 cm breed zijn.
 
 Stik nu langs de hele strook en knik er middenin. Zorg dat je hier een genereuze stiklengte voor gebruikt.
 
 Knip ten slotte de lengte van de riemlusjes in 8 gelijke delen om 8 riemlusjes te maken.
+
+![Stitch en Cut Lussen](StitchAndCutLoops.svg)
 
 ### Bevestig de riemlusjes
 

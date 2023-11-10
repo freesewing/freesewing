@@ -111,6 +111,17 @@
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
 
+### uma
+
+#### Fixed
+
+ - Changed defaults to have more rise in the back
+ - Increase default rise
+ - Decrease default vertical stretch
+ - Decreased default back waist dip
+ - Increased default front waist dip
+ - Allowed lower values on back exposure, causing back to flare out
+
 ### waralee
 
 #### Fixed

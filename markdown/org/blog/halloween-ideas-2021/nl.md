@@ -1,5 +1,7 @@
 ---
-author: "joostdecock"
+author:
+  - bobgeorgethe3rd
+  - Lexander
 caption: "Tekening van @racerxmachina, Sandy!"
 date: "2021-10-20"
 intro: "Misschien heb je al een idee wat je wilt maken voor Halloween. Of misschien heb je geen idee. Hoe dan ook, hier is wat inspiratie om je op weg te helpen."
@@ -34,7 +36,7 @@ Dit is een maffe outfit die je naar elk informeel feestje kunt dragen. De formel
 [Huey](/designs/huey/), [Hugo](/designs/hugo/), en [Paco](/designs/paco/) zijn perfecte bases om eenvoudige hoodies en broeken met dieren te maken die ook nog eens comfortabel zitten. Er zijn veel dieren die je kunt proberen, dus hier zijn een paar basiswijzigingen en ideeën om je creatieve brein aan het werk te zetten.
 
 #### Een rugnaad maken voor Hugo en Huey
-Voor eenvoudige dingen zoals rugspikes voor dinosaurussen kun je het handig vinden om een rugnaad te maken in [Hugo](/designs/hugo/) of [Huey](/designs/huey/). Dit doe je eenvoudigweg door twee achterste stukken te knippen in plaats van één op de vouw. Vergeet niet om naadtoeslag toe te voegen langs het midden van de rug! Van daaruit maak je je toevoegingen, zoals spikes, en dan rijg je ze op een van de achterste stukken met de goede kanten op elkaar. Speld dan het andere achterstuk over de bovenkant, goede kanten op elkaar en naai. Dit telt nu als je enkele achterstuk in de Huey en [Hugo instructies](https://freesewing.org/docs/patterns/hugo/instructions/).
+Voor eenvoudige dingen zoals rugspikes voor dinosaurussen kun je het handig vinden om een rugnaad te maken in [Hugo](/designs/hugo/) of [Huey](/designs/huey/). Dit doe je eenvoudigweg door twee achterste stukken te knippen in plaats van één op de vouw. Vergeet niet om naadtoeslag toe te voegen langs het midden van de rug! Van daaruit maak je je toevoegingen, zoals spikes, en dan rijg je ze op een van de achterste stukken met de goede kanten op elkaar. Speld dan het andere achterstuk over de bovenkant, goede kanten op elkaar en naai. Dit telt nu als je enkele achterstuk in de Huey en [Hugo instructies](/docs/designs/hugo/instructions/).
 
 Hetzelfde kan gedaan worden met het middenstuk van de motorkap voor [Hugo](/designs/hugo/), en [Huey](/designs/huey/)'s motorkap heeft al een middenachternaad, dus er zijn geen veranderingen nodig voor Huey's motorkap. Je kunt ook de motieven van oor tot oor in tweeën delen als je dingen als oren toevoegt, maar misschien vind je het makkelijker om deze elementen er gewoon met de hand op te naaien.
 

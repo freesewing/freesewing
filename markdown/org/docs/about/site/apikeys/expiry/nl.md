@@ -1,12 +1,12 @@
 ---
-title: "API Keys: Expiry"
+title: Vervaldatum
 ---
 
-Every API key has an **expiry date** after which the key will stop working.
+Elke API-sleutel heeft een **vervaldatum** waarna de sleutel niet meer werkt.
 
-By default, API keys expire after 1 month, but we support up to two years.
+Standaard verlopen API-sleutels na 1 maand, maar we ondersteunen tot twee jaar.
 
 <Note>
-When your key is about to exire, you must replace it with a new one. 
-You cannot extend the expiry date of a key once set.
+Als je sleutel op het punt staat te verlopen, moet je hem vervangen door een nieuwe. 
+Je kunt de vervaldatum van een eenmaal ingestelde sleutel niet verlengen.
 </Note>

@@ -3,12 +3,15 @@ title: title
 ---
 
 The `title` macro adds a title to a pattern part.
-It is provided by the [annotations plugin](/reference/plugins/annotations).
+
+It is provided by [plugin-annotations](/reference/plugins/annotations), which is
+part of [core-plugins](/reference/plugins/core) (so it is available by default).
 
 ## Signature
 
 ```js
 macro('title', {
+  String id = 'title',
   String align,
   Boolean append,
   Point at,
@@ -18,6 +21,7 @@ macro('title', {
   Number rotation,
   Number scale,
   String title,
+  Boolean force = false,
 })
 ```
 
@@ -56,19 +60,15 @@ macro('title', {
 | `append`   | `false` | Boolean             | Set this to `true` to append the `nr` to any text already set in Point `at`'s attributes, rather than overwrite it |
 | `at`       |         | [Point](/reference/api/point) | The point at which to insert the title |
 | `cutlist`  | `true`  | Boolean             | Whether to include cutting instructions |
+| `id`       | `title` | `string` | The ID of this macro instance |
 | `nr`       |         | String              | The number of the pattern part |
 | `title`    |         | String              | The name of the pattern part. If title is not set or is an empty string, this won't be rendered, and the version will go beneath the nr.|
 | `prefix`   |         | String              | A prefix to add to the created points. This allow for more than 1 title per part, as long as you give them a different prefix.|
 | `rotation` | 0       | Number | An optional rotation in degrees |
 | `scale`    | 1       | Number | An optional scaling factor |
+| `force`      | `false`    | `boolean`  | Set this to `true` to display the macro output even when `complete` is `false` |
 
-## Result
+## Notes
 
-| Generated Element | Description |
-|-------------------|-------------|
-| `points._${prefix}_titleNr` | Point anchoring the part number text |
-| `points._${prefix}_titleName` | Point anchoring the part name text |
-| `points._${prefix}_titleCut_${material}_${i}` | Points anchoring the cutting instructions, by material key and instruction index |
-| `points._${prefix}_titlePattern` | Point anchoring the pattern name text |
-| `points._${prefix}_titleFor` | Point anchoring the name of the person for whom the pattern was made, if that information exists |
-| `points._${prefix}_exportDate` | Point anchoring the pattern export date |
+This macro takes the `complete` setting into account and won't output anything when both complete and `force` are `false`.
+
