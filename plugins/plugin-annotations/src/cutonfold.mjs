@@ -35,8 +35,10 @@ export const cutonfoldDefs = [
  * The rmcutonfold macro
  */
 const rmcutonfold = (id = macroDefaults.id, { store, part }) => {
-  store.removeMacroNodes(id, 'cutonfold', part)
-  store.cutlist.setCutOnFold(false)
+  if (store.cutlist.getGrainOrigin() === 'cutonfold') store.cutlist.removeGrainline()
+  store.cutlist.removeCutOnFold()
+
+  return store.removeMacroNodes(id, 'cutonfold', part)
 }
 
 /*
@@ -77,7 +79,7 @@ const cutonfold = function (config, { paths, Path, complete, store, scale, log, 
    * Store cutonfold and optional grainline angle for use in cutlist
    */
   store.cutlist.setCutOnFold(mc.from, mc.to)
-  if (mc.grainline) store.cutlist.setGrain(mc.from.angle(mc.to))
+  if (mc.grainline) store.cutlist.setGrain(mc.from.angle(mc.to), 'cutonfold')
 
   /*
    * Get the list of IDs
