@@ -3,8 +3,10 @@ import { backPoints } from './backpoints.mjs'
 export const backInside = {
   name: 'tristan.backInside',
   from: backPoints,
-  draft: ({ sa, Point, points, Path, paths, Snippet, snippets, options, macro, part }) => {
+  draft: ({ sa, Point, points, Path, paths, Snippet, snippets, options, store, macro, part }) => {
     const lacing = true == options.lacing && 'back' == options.lacingLocation
+
+    store.cutlist.removeCut()
 
     paths.cut = new Path()
       .move(points.strapInside)
@@ -54,15 +56,14 @@ export const backInside = {
       title: 'backInside',
     })
 
-    points.grainlineFrom = new Point(points.hps.x / 4, points.cbCut.y)
-    points.grainlineTo = new Point(points.hps.x / 4, points.waistSide.y)
+    points.grainlineFrom = new Point(points.dartBottomLeft.x - 10, points.cbCut.y)
+    points.grainlineTo = new Point(points.dartBottomLeft.x - 10, points.waistSide.y)
     macro('grainline', {
       from: points.grainlineFrom,
       to: points.grainlineTo,
     })
 
-    points.scaleboxAnchor = points.titleAnchor.shiftFractionTowards(points.dartBottomLeft, 0.5)
-    macro('scalebox', { at: points.scaleboxAnchor, rotate: 270 })
+    store.cutlist.addCut({ cut: 2, from: 'fabric' })
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')

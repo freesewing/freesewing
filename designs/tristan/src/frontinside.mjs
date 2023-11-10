@@ -68,9 +68,10 @@ export const frontInside = {
         .line(points.cfHem)
         .line(points.lacingHem)
         .setClass('note dashed')
+      const pGrainLineTo = points.waistDartLeft.shift(135, 10)
       macro('grainline', {
-        from: points.lacingCut.shift(315, 10),
-        to: points.lacingHem.shift(45, 10),
+        from: new Point(pGrainLineTo.x, points.cfCut.y),
+        to: pGrainLineTo,
         grainline: true,
       })
       const lacingDistance = points.lacingHem.y - points.lacingCut.y
@@ -94,12 +95,12 @@ export const frontInside = {
           grainline: true,
         })
       } else {
-        store.cutlist.addCut({ cut: 1, from: 'fabric' })
         macro('cutonfold', {
           from: points.cfCut,
           to: points.cfHem,
           grainline: true,
         })
+        store.cutlist.addCut({ cut: 1, from: 'fabric' })
       }
     }
     snippets.shoulderDartTip = new Snippet('notch', points.shoulderDartTip)

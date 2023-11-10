@@ -799,6 +799,20 @@
       "lining"
     ]
   },
+  "tristan": {
+    "code": "Wouter van Wageningen",
+    "description": "A FreeSewing pattern for a top",
+    "design": "Natalia Sayang",
+    "difficulty": 3,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "tops"
+    ],
+    "techniques": [
+      "precision"
+    ]
+  },
   "uma": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern for a basic, highly-customizable underwear pattern",
