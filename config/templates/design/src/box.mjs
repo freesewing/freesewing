@@ -16,10 +16,7 @@ function draftBox({ options, Point, Path, points, paths, Snippet, snippets, sa, 
 
   points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
   snippets.logo = new Snippet('logo', points.logo)
-  points.text = points.logo
-    .shift(-90, w / 8)
-    .attr('data-text', 'hello')
-    .attr('data-text-class', 'center')
+  points.text = points.logo.shift(-90, w / 8).addText('hello', 'center')
 
   if (sa) {
     paths.sa = paths.seam.offset(sa).addClass('fabric sa')
