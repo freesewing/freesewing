@@ -34,8 +34,10 @@ export const cutonfoldDefs = [
 /*
  * The rmcutonfold macro
  */
-const rmcutonfold = (id = macroDefaults.id, { store, part }) =>
+const rmcutonfold = (id = macroDefaults.id, { store, part }) => {
   store.removeMacroNodes(id, 'cutonfold', part)
+  store.cutlist.setCutOnFold(false)
+}
 
 /*
  * The cutonfold macro
