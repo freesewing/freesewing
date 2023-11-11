@@ -2,4 +2,4 @@
 title: "Senya shirt"
 ---
 
-<PatternDocs pattern='senya' />
+<DesignDocs design='senya' />

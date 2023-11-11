@@ -1,5 +1,5 @@
 ---
-title: "Sandy circle skirt: Sewing Instructions"
+title: "Senya shirt: Sewing Instructions"
 ---
 
 <Note>

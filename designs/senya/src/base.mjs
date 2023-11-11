@@ -24,20 +24,17 @@ function pointAtX(x, point, Point) {
 }
 
 function centerBack(measurements, options, Point) {
-  var hps = new Point(0, 0)
-  var neck = new Point(0, options.backNeckCutout * measurements.neck)
-  var waistline = new Point(
-    0,
-    waistlineHeight(
-      measurements.waistToUnderbust,
-      measurements.hpsToWaistBack,
-      options.lowerWaistline
-    )
-  )
   return {
-    hps,
-    neck,
-    waistline,
+    hps: new Point(0, 0),
+    neck: new Point(0, options.backNeckCutout * measurements.neck),
+    waistline: new Point(
+      0,
+      waistlineHeight(
+        measurements.waistToUnderbust,
+        measurements.hpsToWaistBack,
+        options.lowerWaistline
+      )
+    ),
   }
 }
 
@@ -78,15 +75,16 @@ function fitCollar(neckCircumverence, collarEase, neck, neckCp2, cbNeck, utils, 
   let target = neckCircumverence * (1 + collarEase)
   let delta = 0
   let run = 0
+  let cfCp1, cp2Front
   do {
     run++
     cf = cf.shift(90, delta / 3)
     // frontNeckCpEdge aux
     let frontNeckCpEdge = utils.beamsIntersect(neck, neckCp2, cf, new Point(20, cf.y))
     // cfNeckCp1 needed
-    var cfCp1 = cf.shiftFractionTowards(frontNeckCpEdge, 0.55)
+    cfCp1 = cf.shiftFractionTowards(frontNeckCpEdge, 0.55)
     // neckCp1Front needed
-    var cp2Front = neck.shiftFractionTowards(frontNeckCpEdge, 0.65)
+    cp2Front = neck.shiftFractionTowards(frontNeckCpEdge, 0.65)
     let neckOpening = new Path()
       .move(cf)
       .curve(cfCp1, cp2Front, neck)
@@ -101,18 +99,7 @@ function fitCollar(neckCircumverence, collarEase, neck, neckCp2, cbNeck, utils, 
   }
 }
 
-function draftSenyaBase({
-  measurements,
-  options,
-  store,
-  points,
-  Point,
-  Path,
-  utils,
-  macro,
-  part,
-  log,
-}) {
+function draftSenyaBase({ measurements, options, store, points, Point, Path, utils, macro, part }) {
   let shoulderEaseValue = shoulderEase(measurements, options)
   store.set('shoulderEase', shoulderEaseValue)
 
@@ -183,7 +170,6 @@ function draftSenyaBase({
   store.set('s3CollarMaxBack', points.hps.dy(points.cbNeck) / 2)
   // Let's leave the actual splitting the curves for the front/back parts
 
-  log.info(`base prepared`)
   return part
 }
 
@@ -214,6 +200,5 @@ export const base = {
     // Advanced
     armholeDepthFactor: { pct: 55, min: 50, max: 70, menu: 'advanced' },
   },
-  plugins: [],
   draft: draftSenyaBase,
 }

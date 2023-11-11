@@ -1,5 +1,6 @@
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n } from '../i18n/index.mjs'
 // Parts
 import { front } from './front.mjs'
 import { back } from './back.mjs'
@@ -12,4 +13,4 @@ const Senya = new Design({
 })
 
 // Named exports
-export { front, back, bottom, Senya }
+export { front, back, bottom, Senya, i18n }

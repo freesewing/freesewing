@@ -11,10 +11,7 @@ function senyaFront({
   snippets,
   options,
   measurements,
-  complete,
-  paperless,
   macro,
-  log,
   part,
 }) {
   points.waistlineCp2 = points.waistline.shift(90, points.armhole.dy(points.waistline) / 3)
@@ -74,75 +71,75 @@ function senyaFront({
     .close()
     .setClass('fabric')
 
-  // Complete pattern?
-  if (complete) {
-    macro('cutonfold', {
-      from: points.cfNeck,
-      to: points.cfWaistline,
-      grainline: true,
-    })
-    points.title = new Point(points.waistline.x / 2, points.armhole.y)
-    macro('title', { at: points.title, nr: 1, title: 'front' })
-    points.logo = points.title.shift(-90, 75)
-    snippets.logo = new Snippet('logo', points.logo)
+  macro('cutonfold', {
+    from: points.cfNeck,
+    to: points.cfWaistline,
+    grainline: true,
+  })
+  points.title = new Point(points.waistline.x / 2, points.armhole.y)
+  macro('title', { at: points.title, nr: 1, title: 'front' })
+  points.logo = points.title.shift(-90, 75)
+  snippets.logo = new Snippet('logo', points.logo)
 
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.cfWaistline)
-        .join(paths.bottomAndSide.offset(sa))
-        .join(paths.sleevecap.offset(sa * 3))
-        .join(paths.shoulderAndNeck.offset(sa))
-        .line(points.cfNeck)
-        .setClass('fabric sa')
-    }
+  if (sa) {
+    paths.sa = new Path()
+      .move(points.cfWaistline)
+      .join(paths.bottomAndSide.offset(sa))
+      .join(paths.sleevecap.offset(sa * 3))
+      .join(paths.shoulderAndNeck.offset(sa))
+      .line(points.cfNeck)
+      .setClass('fabric sa')
   }
 
-  // Paperless?
-  if (paperless) {
-    // These dimensions will be inherited by the back part
-    macro('hd', {
-      from: points.cfWaistline,
-      to: points.waistline,
-      y: points.waistline.y + sa + 15,
-    })
-    macro('vd', {
-      from: points.waistline,
-      to: points.armhole,
-      x: points.armhole.x + sa + 15,
-    })
-    macro('vd', {
-      from: points.waistline,
-      to: points.sleeveEnd,
-      x: points.armhole.x + sa + 30,
-    })
-    macro('vd', {
-      from: points.waistline,
-      to: points.neck,
-      x: points.armhole.x + sa + 45,
-    })
-    macro('hd', {
-      from: points.cfNeck,
-      to: points.neck,
-      y: points.neck.y - sa - 15,
-    })
-    macro('hd', {
-      from: points.cfNeck,
-      to: points.sleeveEnd,
-      y: points.neck.y - sa - 30,
-    })
-    macro('hd', {
-      from: points.cfNeck,
-      to: points.armhole,
-      y: points.neck.y - sa - 45,
-    })
-    macro('vd', {
-      id: 'frontOnly',
-      from: points.cfWaistline,
-      to: points.cfNeck,
-      x: points.cfWaistline.x - sa - 15,
-    })
-  }
-  log.info('front done!')
+  // These dimensions will be inherited by the back part
+  macro('hd', {
+    id: 'midToSide',
+    from: points.cfWaistline,
+    to: points.waistline,
+    y: points.waistline.y + sa + 15,
+  })
+  macro('vd', {
+    id: 'waistlineToArmhole',
+    from: points.waistline,
+    to: points.armhole,
+    x: points.armhole.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'waistlineToSleeveEnd',
+    from: points.waistline,
+    to: points.sleeveEnd,
+    x: points.armhole.x + sa + 30,
+  })
+  macro('vd', {
+    id: 'waistlineToNeckSide',
+    from: points.waistline,
+    to: points.neck,
+    x: points.armhole.x + sa + 45,
+  })
+  macro('hd', {
+    id: 'midToNeckSide',
+    from: points.cfNeck,
+    to: points.neck,
+    y: points.neck.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'midToSleeveEnd',
+    from: points.cfNeck,
+    to: points.sleeveEnd,
+    y: points.neck.y - sa - 30,
+  })
+  macro('hd', {
+    id: 'midToArmhole',
+    from: points.cfNeck,
+    to: points.armhole,
+    y: points.neck.y - sa - 45,
+  })
+  macro('vd', {
+    id: 'waistlineToNeck',
+    from: points.cfWaistline,
+    to: points.cfNeck,
+    x: points.cfWaistline.x - sa - 15,
+  })
 
   return part
 }

@@ -1,21 +1,7 @@
 import { front } from './front.mjs'
 import { shoulderAndNeck } from './shared.mjs'
 
-function senyaBack({
-  sa,
-  Point,
-  points,
-  Path,
-  paths,
-  options,
-  complete,
-  paperless,
-  macro,
-  utils,
-  measurements,
-  part,
-  log,
-}) {
+function senyaBack({ sa, Point, points, Path, paths, options, macro, utils, measurements, part }) {
   // Adjust neckline
   points.cbNeck = new Point(0, points.neck.y + options.backNeckCutout * measurements.neck)
   points.cbNeckCp1 = points.cbNeck.shift(0, points.neck.x / 2)
@@ -39,41 +25,34 @@ function senyaBack({
     .close()
     .setClass('fabric')
 
-  // Complete pattern?
-  if (complete) {
-    macro('cutonfold', {
-      from: points.cfNeck,
-      to: points.cfWaistline,
-      grainline: true,
-    })
+  macro('cutonfold', {
+    from: points.cfNeck,
+    to: points.cfWaistline,
+    grainline: true,
+  })
 
-    macro('title', { at: points.title, nr: 2, title: 'back' })
-    points.scaleboxAnchor = points.scalebox = points.title.shift(90, 100)
-    macro('scalebox', { at: points.scalebox })
+  macro('title', { at: points.title, nr: 2, title: 'back' })
+  points.scaleboxAnchor = points.scalebox = points.title.shift(90, 100)
+  macro('scalebox', { at: points.scalebox })
 
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.cfWaistline)
-        .join(paths.bottomAndSide.offset(sa))
-        .join(paths.sleevecap.offset(sa * 3))
-        .join(paths.shoulderAndNeck.offset(sa))
-        .line(points.cbNeck)
-        .setClass('fabric sa')
-    }
+  if (sa) {
+    paths.sa = new Path()
+      .move(points.cfWaistline)
+      .join(paths.bottomAndSide.offset(sa))
+      .join(paths.sleevecap.offset(sa * 3))
+      .join(paths.shoulderAndNeck.offset(sa))
+      .line(points.cbNeck)
+      .setClass('fabric sa')
   }
 
-  // Paperless?
-  if (paperless) {
-    // Remove dimensions that are front only
-    macro('rmd', { ids: ['frontOnly'] })
-    macro('vd', {
-      id: 'backWaistline',
-      from: points.cbWaistline,
-      to: points.cbNeck,
-      x: points.cbWaistline.x - sa - 15,
-    })
-  }
-  log.info('back done!')
+  // Remove dimensions that are front only
+  macro('rmvd', 'waistlineToNeck')
+  macro('vd', {
+    id: 'backWaistlineToNeck',
+    from: points.cbWaistline,
+    to: points.cbNeck,
+    x: points.cbWaistline.x - sa - 15,
+  })
 
   return part
 }

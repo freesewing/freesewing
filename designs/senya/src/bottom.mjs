@@ -12,11 +12,8 @@ function senyaBottom({
   snippets,
   options,
   measurements,
-  complete,
-  paperless,
   macro,
   part,
-  log,
 }) {
   let topCircumverence = measurements.underbust
   let fullLength =
@@ -49,97 +46,91 @@ function senyaBottom({
 
   for (const [shortId, uid] of Object.entries(ids.points)) {
     points[shortId] = points[uid].copy()
-    // Some points are rotated, we need those too
-    if (points[uid + 'Rotated']) points[shortId + 'Rotated'] = points[uid + 'Rotated'].copy()
   }
 
   points.gridAnchor = points.in2Flipped.clone()
 
-  // Complete pattern?
-  if (complete) {
-    macro('cutonfold', {
-      from: points.in2Flipped,
-      to: points.ex2Flipped,
-      grainline: true,
-    })
-    points.logo = points.in2FlippedRotated.shiftFractionTowards(points.ex2FlippedRotated, -0.1)
-    snippets.logo = new Snippet('logo', points.logo)
+  macro('cutonfold', {
+    from: points.in2Flipped,
+    to: points.ex2Flipped,
+    grainline: true,
+  })
+  points.logo = points.in2FlippedRotated.shiftFractionTowards(points.ex2FlippedRotated, -0.1)
+  snippets.logo = new Snippet('logo', points.logo)
 
-    points.title = points.in2FlippedRotated.shiftFractionTowards(points.ex2FlippedRotated, -0.5)
-    macro('title', { at: points.title, nr: 3, title: 'bottom' })
+  points.title = points.in2FlippedRotated.shiftFractionTowards(points.ex2FlippedRotated, -0.5)
+  macro('title', { at: points.title, nr: 3, title: 'bottom' })
 
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['in1Rotated', 'gridAnchor'],
-    })
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: ['in1Rotated', 'gridAnchor'],
+  })
 
-    if (sa) {
-      paths.hemBase = new Path()
-        .move(points.ex1Rotated)
-        .curve(points.ex1CFlippedRotated, points.ex2CFlippedRotated, points.ex2FlippedRotated)
-        .curve(points.ex1CFlipped, points.ex2CFlipped, points.ex2Flipped)
-        .offset(fullLength * options.lengthBonus * options.hemWidth * -1)
-      paths.saBase = new Path()
-        .move(points.in2Flipped)
-        .curve(points.in2CFlipped, points.in1CFlipped, points.in2FlippedRotated)
-        .curve(points.in2CFlippedRotated, points.in1CFlippedRotated, points.in1Rotated)
-      paths.saBase = paths.saBase.line(points.ex1Rotated)
-      paths.saBase = paths.saBase.offset(sa * -1)
+  if (sa) {
+    paths.hemBase = new Path()
+      .move(points.ex2Flipped)
+      .curve(points.ex2cFlipped, points.ex1cFlipped, points.ex1)
+      .curve(points.ex1c, points.ex2c, points.ex2)
+      .offset(fullLength * options.lengthBonus * options.hemWidth)
+    paths.saBase = new Path()
+      .move(points.in2)
+      .curve(points.in2c, points.in1c, points.in1)
+      .curve(points.in1cFlipped, points.in2cFlipped, points.in2Flipped)
+    paths.saBase = new Path().move(points.ex2).line(points.ex2).join(paths.saBase)
+    paths.saBase = paths.saBase.offset(sa)
 
-      paths.hemBase.hide()
-      paths.saBase.hide()
+    paths.hemBase.hide()
+    paths.saBase.hide()
 
-      paths.sa = new Path()
-        .move(points.in2Flipped)
-        .line(paths.saBase.start())
-        .join(paths.saBase)
-        .line(paths.hemBase.start())
-        .join(paths.hemBase)
-        .line(points.ex2Flipped)
-        .attr('class', 'fabric sa')
-    }
+    paths.sa = new Path()
+      .move(points.ex2Flipped)
+      .line(paths.hemBase.start())
+      .join(paths.hemBase)
+      .line(paths.saBase.start())
+      .join(paths.saBase)
+      .line(points.in2Flipped)
+      .attr('class', 'fabric sa')
   }
 
-  // Paperless?
-  if (paperless) {
+  macro('vd', {
+    id: 'foldToCenter',
+    from: points.ex2Flipped,
+    to: points.in2Flipped,
+    x: points.ex2Flipped.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'fold',
+    from: points.in2Flipped,
+    to: points.center,
+    x: points.ex2Flipped.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'inner',
+    from: points.ex2Flipped,
+    to: points.center,
+    x: points.ex2Flipped.x - sa - 30,
+  })
+  if (options.circleRatio !== 0.5) {
     macro('vd', {
-      from: points.ex2Flipped,
-      to: points.in2Flipped,
-      x: points.ex2Flipped.x - sa - 15,
+      id: 'supposedlyTopToOpeningRight',
+      from: points.ex1Rotated,
+      to: points.in1Rotated,
+      x: options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 15 : points.ex1Rotated.x + sa + 15,
     })
     macro('vd', {
-      from: points.in2Flipped,
+      id: 'supposedlyOpeningRightToCenter',
+      from: points.in1Rotated,
       to: points.center,
-      x: points.ex2Flipped.x - sa - 15,
+      x: options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 15 : points.ex1Rotated.x + sa + 15,
     })
     macro('vd', {
-      from: points.ex2Flipped,
+      id: 'supposedlyHemRightToCenter',
+      from: points.ex1Rotated,
       to: points.center,
-      x: points.ex2Flipped.x - sa - 30,
+      x: options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 30 : points.ex1Rotated.x + sa + 30,
     })
-    if (options.circleRatio !== 0.5) {
-      macro('vd', {
-        from: points.ex1Rotated,
-        to: points.in1Rotated,
-        x:
-          options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 15 : points.ex1Rotated.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.in1Rotated,
-        to: points.center,
-        x:
-          options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 15 : points.ex1Rotated.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.ex1Rotated,
-        to: points.center,
-        x:
-          options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 30 : points.ex1Rotated.x + sa + 30,
-      })
-    }
-    snippets.center = new Snippet('bnotch', points.center)
   }
-  log.info('bottom done!')
+  snippets.center = new Snippet('bnotch', points.center)
   return part
 }
 
