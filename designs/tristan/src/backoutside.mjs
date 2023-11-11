@@ -3,7 +3,7 @@ import { backPoints } from './backpoints.mjs'
 export const backOutside = {
   name: 'tristan.backOutside',
   from: backPoints,
-  draft: ({ sa, Point, points, Path, paths, Snippet, snippets, options, store, macro, part }) => {
+  draft: ({ sa, Point, points, Path, paths, options, store, macro, part }) => {
     store.cutlist.removeCut()
 
     paths.cut = new Path()
@@ -17,9 +17,24 @@ export const backOutside = {
       .curve(points.shoulderDartCpDown, points.dartRightCp, points.dartBottomRight)
       .hide()
 
+    if (options.hem && !options.peplum) {
+      paths.hem = new Path()
+        .move(points.dartBottomRight)
+        .line(points.dartBottomRightHem)
+        .line(points.waistSideHem)
+        .line(points.waistSide)
+        .hide()
+      paths.hemFold = new Path()
+        .move(points.dartBottomRight)
+        .line(points.waistSide)
+        .addClass('note dashed')
+        .addText('hem', 'center note')
+    } else {
+      paths.hem = new Path().move(points.dartBottomRight).line(points.waistSide).hide()
+    }
     paths.seam = new Path()
       .move(points.dartBottomRight)
-      .line(points.waistSide)
+      .join(paths.hem)
       .curve_(points.waistSideCp2, points.armhole)
       .join(paths.cut)
       .join(paths.dart)

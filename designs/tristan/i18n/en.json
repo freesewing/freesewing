@@ -13,7 +13,8 @@
   },
   "s": {
     "strapWidthAdjusted.t": "The strap width has been adjusted",
-    "strapWidthAdjusted.d": "The strap width has been adjusted to {{{ width }}} to allow for the position of the strap on the shoulder."
+    "strapWidthAdjusted.d": "The strap width has been adjusted to {{{ width }}} to allow for the position of the strap on the shoulder.",
+    "hem": "Hem"
   },
   "o": { 
     "bustSpanEase": {
@@ -95,6 +96,22 @@
     "zipperLocation.back": {
       "t": "Back zipper location",
       "d": "The location of the zipper will be in the back"
+    },
+    "hem": {
+      "t": "Hem option",
+      "d": "Add a hem."
+    },
+    "hemYes": {
+      "t": "Add a hem",
+      "d": "Add a hem at the waist"
+    },
+    "hemNo": {
+      "t": "Do not add a hem",
+      "d": "Do not add a hem at the waist"
+    },
+    "hemSize": {
+      "t": "Size of the hem",
+      "d": "Size of the hem, a percentage of the distance between the neckline and the waist"
     },
     "lacing": {
       "t": "Lacing option",
