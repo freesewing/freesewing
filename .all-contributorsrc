@@ -1095,6 +1095,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "SophiaH67",
+      "name": "Sophia",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10786212?v=4",
+      "profile": "https://www.sophiah.gay/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true,

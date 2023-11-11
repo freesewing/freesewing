@@ -27,6 +27,7 @@ import { SignUp, ns as susiNs } from 'shared/components/susi/sign-up.mjs'
 import { PleaseSubscribe, ns as subNs } from 'shared/components/patrons/please-subscribe.mjs'
 import { CardLink } from 'shared/components/link.mjs'
 import { ns as nlNs } from 'shared/components/newsletter/index.mjs'
+import { MastodonVerification } from 'shared/components/social/mastodon-verification.mjs'
 
 const ns = nsMerge(pageNs, subNs, susiNs, nlNs, 'homepage')
 
@@ -177,6 +178,7 @@ const HomePage = ({ page }) => {
           text="While we are all volunteers, we have a good track record of helping people. So don't be shy to reach out."
         />
       </div>
+      <MastodonVerification />
     </PageWrapper>
   )
 }

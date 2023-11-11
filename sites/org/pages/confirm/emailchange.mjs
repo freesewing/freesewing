@@ -55,6 +55,7 @@ const ConfirmSignUpPage = ({ page }) => {
           check: confirmation.data.confirmation.check,
         })
         if (result.success && !updated) {
+          setUpdated(true)
           setLoadingStatus([true, 'status:settingsSaved', true, true])
           setAccount(result.data.account)
           setError(false)
