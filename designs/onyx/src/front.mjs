@@ -6,14 +6,19 @@ function draftFront({
   Point,
   paths,
   points,
+  measurements,
   options,
+  absoluteOptions,
   part,
   store,
   complete,
   sa,
+  expand,
+  units,
   macro,
   snippets,
   Snippet,
+  scale,
 }) {
   const neckRadius = store.get('neckRadius')
 
@@ -136,10 +141,29 @@ function draftFront({
   snippets.armpitScoopEnd = new Snippet('notch', points.armpitScoopEnd)
 
   points.title = new Point(
-    points.armpitCorner.x / 2,
+    points.armpitCorner.x / 4,
     (points.cfCrotch.y + points.armpitCornerScooped.y / 2) / 2
   )
   macro('title', { at: points.title, nr: 1, title: 'front' })
+
+  if (complete && !expand && options.skirt) {
+    const skirtWidth = measurements.waist * Math.max(options.waistEase, options.skirtWidth)
+    const skirtLength = measurements.waistToUpperLeg * options.skirtLength
+    points.skirtInstructions = points.title
+      .translate(0, 50 * scale)
+      .attr('data-text', 'onyx:cutOneSkirt')
+      .attr('data-text', ':\n')
+      .attr(
+        'data-text',
+        `${units(
+          2 * sa + measurements.waist * Math.max(options.waistEase, options.skirtWidth)
+        )} x ${units(
+          measurements.waistToUpperLeg * options.skirtLength +
+            absoluteOptions.skirtHem +
+            absoluteOptions.skirtWaistband
+        )}`
+      )
+  }
 
   const neckPath = new Path()
     .move(points.neckShoulderCorner)

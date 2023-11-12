@@ -175,7 +175,7 @@ function draftBack({
   snippets.armpitScoopEnd = new Snippet('bnotch', points.armpitScoopEnd)
 
   points.title = new Point(
-    points.armpitCorner.x / 2,
+    points.armpitCorner.x / 4,
     (points.cfCrotch.y + points.armpitCornerScooped.y / 2) / 2
   )
   macro('title', { at: points.title, nr: 2, title: 'back' })

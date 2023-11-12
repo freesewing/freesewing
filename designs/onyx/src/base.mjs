@@ -259,12 +259,12 @@ function draftBase({
   })
 
   points.title = new Point(
-    points.armpitCorner.x / 2,
+    points.armpitCorner.x / 4,
     (points.cfCrotch.y + points.armpitCornerScooped.y / 2) / 2
   )
   macro('title', { at: points.title, nr: 5, title: 'base' })
 
-  points.logo = points.title.shift(-90, 70 * scale)
+  points.logo = points.title.translate(32 * scale, -40 * scale)
   snippets.logo = new Snippet('logo', points.logo)
 
   if (sa) {
@@ -377,6 +377,36 @@ export const base = {
     sleeveEase: { pct: 0, min: -30, max: 50, menu: 'fit' },
     // How much larger to make the armhole as a proportion of the biceps measurement.
     armholeTweakFactor: 1.1,
+    // How wide the skirt will be, as a percentage of waist measurement. It will be this width at the bottom, and gathered at the top down to 100%.
+    skirtWidth: {
+      pct: 160,
+      min: 100,
+      max: 250,
+      menu: (settings, mergedOptions) => (mergedOptions.skirt ? 'style' : false),
+    },
+    // How long the skirt will be, as a percentage of waistToUpperLeg.
+    skirtLength: {
+      pct: 100,
+      min: 20,
+      max: 500,
+      menu: (settings, mergedOptions) => (mergedOptions.skirt ? 'style' : false),
+    },
+    // How wide to make the waistband connection, in multiples of the seam allowance.
+    skirtWaistband: {
+      pct: 200,
+      min: 0,
+      max: 800,
+      toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.skirtWaistband,
+      menu: (settings, mergedOptions) => (mergedOptions.skirt ? 'construction' : false),
+    },
+    // How wide to make the bottom hem, in multiples of the seam allowance.
+    skirtHem: {
+      pct: 200,
+      min: 0,
+      max: 800,
+      toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.skirtHem,
+      menu: (settings, mergedOptions) => (mergedOptions.skirt ? 'construction' : false),
+    },
   },
   optionalMeasurements: ['highBust'],
 }

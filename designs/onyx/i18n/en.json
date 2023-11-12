@@ -16,7 +16,8 @@
     "legRibbing": "Leg ribbing"
   },
   "s": {
-	"foldLine": "Fold Line"
+	"foldLine": "Fold Line",
+    "cutOneSkirt": "Cut one rectangle of fabric\nfor the skirt, with dimensions:"
   },
   "o": {
     "neckbandLength": {
