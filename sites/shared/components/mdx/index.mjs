@@ -17,6 +17,8 @@ import { DesignMeasurements } from './design-measurements.mjs'
 import { DesignOptions } from './design-options.mjs'
 import { MeasieImage } from 'shared/components/measurements/image.mjs'
 
+MeasieImage.displayName = 'MdxMeasieImage'
+
 export const components = (site = 'org', slug = []) => {
   const base = {
     Comment: (props) => <Popout {...props} comment />,
