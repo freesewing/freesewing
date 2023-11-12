@@ -11,11 +11,14 @@ function draftCrotchGusset({
   part,
   store,
   sa,
+  expand,
   macro,
   snippets,
   Snippet,
   scale,
 }) {
+  if (!expand) return part.hide()
+
   const crotchGussetLength = store.get('crotchGussetLength')
   const crotchGussetWidth = store.get('crotchGussetWidth')
 

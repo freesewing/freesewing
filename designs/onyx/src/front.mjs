@@ -178,6 +178,22 @@ function draftFront({
       )
   }
 
+  const crotchGussetLength = store.get('crotchGussetLength')
+  const crotchGussetWidth = store.get('crotchGussetWidth')
+  points.crotchGussetInstructions = points.legRibbingInstructions
+  if (complete && !expand) {
+    points.crotchGussetInstructions = points.crotchGussetInstructions
+      .translate(0, 50)
+      .attr('data-text', 'onyx:cutOneCrotchGusset')
+      .attr('data-text', ':\n')
+      .attr(
+        'data-text',
+        `${units(2 * sa + store.get('crotchGussetWidth'))} x ${units(
+          sa + (options.legRibbing ? sa : absoluteOptions.legHem) + store.get('crotchGussetLength')
+        )}`
+      )
+  }
+
   const neckPath = new Path()
     .move(points.neckShoulderCorner)
     .curve(points.neckCp1, points.neckCp2, points.cfNeck)

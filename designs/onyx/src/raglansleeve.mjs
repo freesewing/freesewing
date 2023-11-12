@@ -316,10 +316,6 @@ function draftRaglanSleeve({
   }
 
   points.neckbandInstructions = points.sleeveRibbingInstructions
-  const neckbandLength =
-    (store.get('neckLengthFront') + store.get('neckLengthBack') + store.get('neckLengthSide')) *
-    options.neckbandLength
-  const neckbandWidth = 2 * absoluteOptions.neckbandWidth
   if (complete && !expand && options.legRibbing) {
     points.neckbandInstructions = points.neckbandInstructions
       .translate(0, 50)
