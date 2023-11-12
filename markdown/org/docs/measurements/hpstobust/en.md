@@ -33,3 +33,4 @@ Simply switch your hands around, and you get a more accurate measurement.
 For best results, get a second person to take your measurements (if possible).
 
 </Tip>
+<MeasieImage />
