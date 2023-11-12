@@ -28,3 +28,4 @@ Wechsle einfach die Hände, und du erhältst eine genauere Messung.
 Für die besten Ergebnisse hole dir (falls möglich) eine zweite Person dazu, die deine Maße für dich nimmt.
 
 </Tip>
+<MeasieImage />
