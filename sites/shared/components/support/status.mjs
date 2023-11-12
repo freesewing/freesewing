@@ -199,7 +199,7 @@ const Event = (props) => {
   return <Component {...props} />
 }
 
-const Issue = ({ issue, type, t }) => {
+const Issue = ({ issue, t }) => {
   const [detail, setDetail] = useState(false)
   const btnClasses =
     'w-full my-1 rounded hover:bg-opacity-10 hover:bg-secondary text-left text-base-content p-1 px-2 flex flex-row items-center justify-between'
