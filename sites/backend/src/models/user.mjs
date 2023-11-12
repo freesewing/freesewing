@@ -1518,7 +1518,7 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
       this.clear.mfaSecret,
       this.clear.data.mfaScratchCodes
     )
-    let result, mfaScratchCodes
+    let result
     if (Array.isArray(check)) [result] = check
     else result = check
     if (result) {
@@ -1556,7 +1556,7 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
      * Verify secret and token
      */
     const check = await this.mfa.verify(body.token, this.clear.mfaSecret, false)
-    let result, mfaScratchCodes
+    let result
     if (Array.isArray(check)) [result] = check
     else result = check
     if (body.secret === this.clear.mfaSecret && result) {
