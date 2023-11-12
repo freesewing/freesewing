@@ -22,14 +22,10 @@ const style = { backgroundSize: 'cover' }
 export const MeasieImage = (props) => {
   const { t } = useTranslation(ns)
 
-  const { sarah, tim = false } = props
   const m = props.m ? props.m.toLowerCase() : false
-
   if (!m) return null
 
   const pose = seated.includes(m) ? 'seated' : 'standing'
-
-  const Sarah = sarahImages[m]
 
   return (
     <Tabs tabs="Sarah, Tim">
@@ -52,9 +48,3 @@ export const MeasieImage = (props) => {
     </Tabs>
   )
 }
-
-/*
- * TODO for Tim:
- *
- *   waisttounderbust
- */
