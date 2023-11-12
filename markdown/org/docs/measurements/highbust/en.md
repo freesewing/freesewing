@@ -9,3 +9,4 @@ As such, this measurement is most commonly used to fit people with breasts, but 
 
 To measure your high bust, wrap the tape measure around your chest just under your arms.
 You might not be able to keep it horizontal (parallel to the floor), but that's ok.
+<MeasieImage />
