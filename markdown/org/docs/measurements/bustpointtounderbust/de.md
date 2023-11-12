@@ -4,4 +4,5 @@ title: Brustpunkt zu Unterbrust
 
 Das Maß von **Brustpunkt zu Unterbrust** ist die Entfernung zwischen deinem Brustpunkt/Nippel und deiner Unterbrust.
 
-Es ist die Strecke, die eine Ameise gehen müsste, wenn sie von deinem Brustpunkt/Nippel hinunter zu der Stelle krabbelt, wo deine Brust auf deinen Torso trifft.
+It's the distance an ant would have to walk to go from your bust point/nipple straight down to where your breast meets your torso.
+<MeasieImage />
