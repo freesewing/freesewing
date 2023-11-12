@@ -318,7 +318,7 @@ export const Status = () => {
           )}
         </>
       )}
-      {issues.resolved.length > 0 ? (
+      {issues && issues.resolved.length > 0 ? (
         <>
           <h6 className="flex flex-row gap-2 items-center">
             <BoolYesIcon className="w-6 h-6 text-success" />
