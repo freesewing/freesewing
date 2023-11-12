@@ -7,8 +7,8 @@ export const leg = {
     paths.seam = new Path()
       .move(points.frontSplitHem)
       .join(paths.backSplit.reverse())
-      .join(paths.crossSeamBack.reverse())
-      .join(paths.crossSeamFront)
+      .join(paths.back)
+      .join(paths.front.reverse())
       .join(paths.frontSplit)
       .close()
 
