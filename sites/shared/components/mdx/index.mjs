@@ -17,8 +17,6 @@ import { DesignMeasurements } from './design-measurements.mjs'
 import { DesignOptions } from './design-options.mjs'
 import { MeasieImage } from 'shared/components/measurements/image.mjs'
 
-MeasieImage.displayName = 'MdxMeasieImage'
-
 export const components = (site = 'org', slug = []) => {
   const base = {
     Comment: (props) => <Popout {...props} comment />,
@@ -80,7 +78,9 @@ export const components = (site = 'org', slug = []) => {
   }
 
   if (site === 'org' && slug && slug.length === 2 && slug[0] === 'measurements')
-    specific.MeasieImage = () => <MeasieImage m={slug[1]} />
+    specific.MeasieImage = function MdxMeasieImage() {
+      return <MeasieImage m={slug[1]} />
+    }
 
   return {
     ...base,
