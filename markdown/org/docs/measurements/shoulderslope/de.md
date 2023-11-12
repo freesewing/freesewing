@@ -19,3 +19,4 @@ Solange der Unterschied nicht sehr groß ist, musst du dir keine Gedanken darum 
 Bei lockerer Kleidung wird es nicht auffallen, und bei formeller Kleidung ist es besser, asymmetrische Schulterpolster zu verwenden als ein asymmetrisches Schnittmuster zu erstellen.
 
 </Note>
+<MeasieImage />
