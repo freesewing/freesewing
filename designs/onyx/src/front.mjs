@@ -147,8 +147,6 @@ function draftFront({
   macro('title', { at: points.title, nr: 1, title: 'front' })
 
   if (complete && !expand && options.skirt) {
-    const skirtWidth = measurements.waist * Math.max(options.waistEase, options.skirtWidth)
-    const skirtLength = measurements.waistToUpperLeg * options.skirtLength
     points.skirtInstructions = points.title
       .translate(0, 50 * scale)
       .attr('data-text', 'onyx:cutOneSkirt')
