@@ -4,4 +4,5 @@ title: Kopfumfang
 
 Der **Kopfumfang** umfasst den weitesten Teil deines Kopfes.
 
-Um den Kopfumfang zu messen, wickle das Maßband auf Stirnhöhe um deinen Kopf.
+To measure your head circumference, wrap the tape measure around your head at the height of your forehead.
+<MeasieImage />
