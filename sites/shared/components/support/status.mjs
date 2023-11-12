@@ -13,6 +13,7 @@ import { TimeAgo, ns as timeAgoNs } from 'shared/components/timeago/index.mjs'
 import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import { WebLink } from 'shared/components/link.mjs'
 import { useTranslation } from 'next-i18next'
+import { Spinner } from 'shared/components/spinner.mjs'
 
 export const ns = nsMerge('support', timeAgoNs)
 
@@ -196,8 +197,6 @@ const Event = (props) => {
   const Component = events[props.evt.node.__typename] || Null
 
   return <Component {...props} />
-
-  return <pre>{JSON.stringify(props.evt.node, null, 2)}</pre>
 }
 
 const Issue = ({ issue, type, t }) => {
@@ -268,7 +267,6 @@ export const Status = () => {
   const { t } = useTranslation(ns)
   /*
    * null: We are (still) loading issues
-   * false: No issues, everything is ok
    * Object: Object with 'reported', 'confirmed' and 'resolved' keys each holding an array of issues
    */
   const [issues, setIssues] = useState(null)
@@ -280,11 +278,11 @@ export const Status = () => {
   return (
     <>
       {issues === null ? (
-        <p>Loading...</p>
-      ) : issues === false ? (
+        <Spinner />
+      ) : [...issues.reported, ...issues.confirmed].length < 1 ? (
         <>
           <span className="opacity-80 font-light text-sm pl-1">{t('support:status')}</span>
-          <h6 className="flex flex-row gap-2 items-center bg-success p-2 px-4 rounded-lg bg-opacity-30 border border-success">
+          <h6 className="flex flex-row gap-2 items-center bg-success p-2 px-4 rounded-lg bg-opacity-30 border border-success mb-4">
             <BoolYesIcon className="w-6 h-6 text-warning" />
             {t('support:allOk')}
           </h6>
@@ -318,17 +316,17 @@ export const Status = () => {
               <BoolYesIcon className="w-6 h-6 text-success" /> {t('support:noConfirmedIssues')}
             </h6>
           )}
-          {issues.resolved.length > 0 ? (
-            <>
-              <h6 className="flex flex-row gap-2 items-center">
-                <BoolYesIcon className="w-6 h-6 text-success" />
-                {t('support:recentlyResolvedIssues')}
-              </h6>
-              <Issues issues={issues.resolved} t={t} />
-            </>
-          ) : null}
         </>
       )}
+      {issues.resolved.length > 0 ? (
+        <>
+          <h6 className="flex flex-row gap-2 items-center">
+            <BoolYesIcon className="w-6 h-6 text-success" />
+            {t('support:recentlyResolvedIssues')}
+          </h6>
+          <Issues issues={issues.resolved} t={t} />
+        </>
+      ) : null}
     </>
   )
 }
