@@ -301,37 +301,39 @@ function draftRaglanSleeve({
   )
   macro('scalebox', { at: points.scalebox })
 
-  points.sleeveRibbingInstructions = points.title.translate(5, -30 + 35 * scale)
-  if (complete && !expand && options.sleeveRibbing) {
-    points.sleeveRibbingInstructions = points.sleeveRibbingInstructions
-      .translate(0, 50)
-      .attr('data-text', 'onyx:cutTwoSleeveRibbing')
-      .attr('data-text', ':\n')
-      .attr(
-        'data-text',
-        `${units(2 * sa + store.get('sleeveWidth') * options.sleeveRibbingLength)} x ${units(
-          2 * (sa + absoluteOptions.sleeveRibbingWidth)
-        )}`
-      )
-  }
+  if (complete && !expand) {
+    points.sleeveRibbingInstructions = points.title.translate(5, -30 + 35 * scale)
+    if (options.sleeveRibbing) {
+      points.sleeveRibbingInstructions = points.sleeveRibbingInstructions
+        .translate(0, 50)
+        .attr('data-text', 'onyx:cutTwoSleeveRibbing')
+        .attr('data-text', ':\n')
+        .attr(
+          'data-text',
+          `${units(2 * sa + store.get('sleeveWidth') * options.sleeveRibbingLength)} x ${units(
+            2 * (sa + absoluteOptions.sleeveRibbingWidth)
+          )}`
+        )
+    }
 
-  points.neckbandInstructions = points.sleeveRibbingInstructions
-  if (complete && !expand && options.legRibbing) {
-    points.neckbandInstructions = points.neckbandInstructions
-      .translate(0, 50)
-      .attr('data-text', 'onyx:cutNeckband')
-      .attr('data-text', ':\n')
-      .attr(
-        'data-text',
-        `${units(
-          2 *
-            (sa +
-              (store.get('neckLengthFront') +
-                store.get('neckLengthBack') +
-                store.get('neckLengthSide')) *
-                options.neckbandLength)
-        )} x ${units(2 * (sa + absoluteOptions.neckbandWidth))}`
-      )
+    points.neckbandInstructions = points.sleeveRibbingInstructions
+    if (options.neckStyle === 'neckband') {
+      points.neckbandInstructions = points.neckbandInstructions
+        .translate(0, 50)
+        .attr('data-text', 'onyx:cutNeckband')
+        .attr('data-text', ':\n')
+        .attr(
+          'data-text',
+          `${units(
+            2 *
+              (sa +
+                (store.get('neckLengthFront') +
+                  store.get('neckLengthBack') +
+                  store.get('neckLengthSide')) *
+                  options.neckbandLength)
+          )} x ${units(2 * (sa + absoluteOptions.neckbandWidth))}`
+        )
+    }
   }
 
   if (sa) {

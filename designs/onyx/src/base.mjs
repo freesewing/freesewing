@@ -457,6 +457,28 @@ export const base = {
       menu: (settings, mergedOptions) =>
         mergedOptions.neckStyle == 'neckband' ? 'construction' : false,
     },
+    zipperGuardWidth: {
+      pct: 50,
+      min: 0,
+      max: 100,
+      snap: { metric: 5, imperial: 6.35 },
+      toAbs: (pct, settings, mergedOptions) => mergedOptions.zipperGuardWidth * 100, // Valid range is from 0 to 100mm.
+      menu: 'construction',
+    },
+    // How far to have the zipper guard extend past the neckline so it can be wrapped around the zipper slider and pull to keep it from digging into the wearer's neck. Important on any compression garments/swimwear.
+    neckGuardLength: {
+      pct: 2,
+      min: 0,
+      max: 5,
+      toAbs: (pct, settings, mergedOptions) =>
+        (settings.measurements.hpsToWaistFront +
+          settings.measurements.hpsToWaistBack +
+          settings.measurements.crossSeam) *
+        mergedOptions.neckGuardLength,
+      menu: (settings, mergedOptions) =>
+        mergedOptions.neckStyle == 'neckband' ? 'construction' : false,
+    },
+    zipperGuardTapeCoverMaterial: 0.75,
   },
   optionalMeasurements: ['highBust'],
 }
