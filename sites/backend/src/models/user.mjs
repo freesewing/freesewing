@@ -121,7 +121,7 @@ UserModel.prototype.oauthSignIn = async function ({ body }) {
     /*
      * Final check for account status and other things before returning
      */
-    const [ok, err, status] = this.isOk()
+    const [ok, err, status] = this.isOk(401, 'signInFailed', true)
     if (ok === true) return this.signInOk()
     else return this.setResponse(status, err)
   }
@@ -1819,7 +1819,7 @@ UserModel.prototype.isOk = function (
   if (
     this.exists &&
     this.record &&
-    this.record.status > 0 &&
+    (allowWithoutConsent || this.record.status > 0) &&
     (allowWithoutConsent || this.record.consent > 0) &&
     this.record.role &&
     this.record.role !== 'blocked'
@@ -1828,7 +1828,7 @@ UserModel.prototype.isOk = function (
 
   if (!this.exists) return [false, 'noSuchUser', 404]
   if (this.record.consent < 1 && !allowWithoutConsent) return [false, 'consentLacking', 451]
-  if (this.record.status < 1) return [false, 'statusLacking', 403]
+  if (this.record.status < 1 && !allowWithoutConsent) return [false, 'statusLacking', 403]
   if (this.record.role === 'blocked') return [false, 'accountBlocked', 403]
 
   return [false, failMsg, failStatus]
