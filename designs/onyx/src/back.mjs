@@ -178,7 +178,7 @@ function draftBack({
     points.armpitCorner.x / 4,
     (points.cfCrotch.y + points.armpitCornerScooped.y / 2) / 2
   )
-  macro('title', { at: points.title, nr: 2, title: 'back' })
+  macro('title', { at: points.title, nr: 2, title: 'onyx:back' })
 
   if (sa) {
     paths.sa = new Path()

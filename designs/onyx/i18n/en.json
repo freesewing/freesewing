@@ -11,13 +11,16 @@
     "crotchGusset": "Crotch gusset",
     "hood": "Hood back",
     "hoodFront": "Hood front",
-    "skirt": "Swim skirt",
+    "skirt": "Skirt",
     "sleeveRibbing": "Sleeve ribbing",
     "legRibbing": "Leg ribbing"
   },
   "s": {
 	"foldLine": "Fold Line",
-    "cutOneSkirt": "Cut one rectangle of fabric\nfor the skirt, with dimensions:"
+    "cutOneSkirt": "Cut one rectangle of fabric\nfor the skirt, with dimensions:",
+	"cutTwoSleeveRibbing": "Cut two rectangles of ribbing\nfor the wrists, with dimensions:",
+	"cutTwoLegRibbing": "Cut two rectangles of ribbing\nfor the legs, with dimensions:",
+	"cutNeckband": "Cut one rectangle of\nribbing or main fabric\nfor the neckband, with dimensions:"
   },
   "o": {
     "neckbandLength": {

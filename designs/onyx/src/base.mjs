@@ -407,6 +407,56 @@ export const base = {
       toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.skirtHem,
       menu: (settings, mergedOptions) => (mergedOptions.skirt ? 'construction' : false),
     },
+    // How wide the sleeve ribbing should be, in absolute measure.
+    sleeveRibbingWidth: {
+      pct: 20,
+      min: 0,
+      max: 100,
+      snap: { metric: 5, imperial: 6.35 },
+      toAbs: (pct, settings, mergedOptions) => mergedOptions.sleeveRibbingWidth * 200, // Valid range is from 0 to 200mm.
+      menu: (settings, mergedOptions) => (mergedOptions.sleeveRibbing ? 'construction' : false),
+    },
+    // How long the sleeve ribbing should be, as a percentage of the length around the sleeve.
+    sleeveRibbingLength: {
+      pct: 75,
+      min: 50,
+      max: 100,
+      menu: (settings, mergedOptions) => (mergedOptions.sleeveRibbing ? 'construction' : false),
+    },
+    // How wide the leg ribbing should be, in absolute measure.
+    legRibbingWidth: {
+      pct: 20,
+      min: 0,
+      max: 100,
+      snap: { metric: 5, imperial: 6.35 },
+      toAbs: (pct, settings, mergedOptions) => mergedOptions.legRibbingWidth * 200, // Valid range is from 0 to 200mm.
+      menu: (settings, mergedOptions) => (mergedOptions.legRibbing ? 'construction' : false),
+    },
+    // How long the leg ribbing should be, as a percentage of the length around the leg.
+    legRibbingLength: {
+      pct: 75,
+      min: 50,
+      max: 100,
+      menu: (settings, mergedOptions) => (mergedOptions.legRibbing ? 'construction' : false),
+    },
+    // How long the neckband should be, as a percentage of the length of the neck hole.
+    neckbandLength: {
+      pct: 80,
+      min: 50,
+      max: 100,
+      menu: (settings, mergedOptions) =>
+        mergedOptions.neckStyle == 'neckband' ? 'construction' : false,
+    },
+    // How wide the neckband should be, as a percentage of the neckband length.
+    neckbandWidth: {
+      pct: 20,
+      min: 0,
+      max: 100,
+      snap: { metric: 5, imperial: 6.35 },
+      toAbs: (pct, settings, mergedOptions) => mergedOptions.neckbandWidth * 200, // Valid range is from 0 to 200mm.
+      menu: (settings, mergedOptions) =>
+        mergedOptions.neckStyle == 'neckband' ? 'construction' : false,
+    },
   },
   optionalMeasurements: ['highBust'],
 }

@@ -144,11 +144,12 @@ function draftFront({
     points.armpitCorner.x / 4,
     (points.cfCrotch.y + points.armpitCornerScooped.y / 2) / 2
   )
-  macro('title', { at: points.title, nr: 1, title: 'front' })
+  macro('title', { at: points.title, nr: 1, title: 'onyx:front' })
 
+  points.skirtInstructions = points.title.translate(0, -30 + 35 * scale)
   if (complete && !expand && options.skirt) {
-    points.skirtInstructions = points.title
-      .translate(0, 50 * scale)
+    points.skirtInstructions = points.skirtInstructions
+      .translate(0, 50)
       .attr('data-text', 'onyx:cutOneSkirt')
       .attr('data-text', ':\n')
       .attr(
@@ -159,6 +160,20 @@ function draftFront({
           measurements.waistToUpperLeg * options.skirtLength +
             absoluteOptions.skirtHem +
             absoluteOptions.skirtWaistband
+        )}`
+      )
+  }
+
+  points.legRibbingInstructions = points.skirtInstructions
+  if (complete && !expand && options.legRibbing) {
+    points.legRibbingInstructions = points.legRibbingInstructions
+      .translate(0, 50)
+      .attr('data-text', 'onyx:cutTwoLegRibbing')
+      .attr('data-text', ':\n')
+      .attr(
+        'data-text',
+        `${units(2 * sa + store.get('legWidth') * options.legRibbingLength)} x ${units(
+          2 * (sa + absoluteOptions.legRibbingWidth)
         )}`
       )
   }

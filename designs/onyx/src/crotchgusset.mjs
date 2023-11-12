@@ -82,8 +82,8 @@ function draftCrotchGusset({
   store.cutlist.addCut({ cut: 1, from: 'fabric' })
 
   points.title = new Point(crotchGussetLength / 4, crotchGussetWidth / 2)
-  macro('title', { at: points.title, nr: 5, title: 'crotch gusset' })
-  points.logo = points.title.shift(180, 50 * scale)
+  macro('title', { at: points.title, nr: 5, title: 'onyx:crotchGusset' })
+  points.logo = points.title.translate(-50 * scale, 40 * scale)
   snippets.logo = new Snippet('logo', points.logo)
 
   if (sa) {

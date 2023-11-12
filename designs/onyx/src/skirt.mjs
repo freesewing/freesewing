@@ -77,7 +77,7 @@ function draftSkirt({
   store.cutlist.addCut({ cut: 1, from: 'fabric' })
 
   points.title = new Point(skirtWidth / 4, skirtLength / 2)
-  macro('title', { at: points.title, nr: 9, title: 'skirt' })
+  macro('title', { at: points.title, nr: 9, title: 'onyx:skirt' })
   points.logo = points.title.shift(180, 50 * scale)
   snippets.logo = new Snippet('logo', points.logo)
 
@@ -99,5 +99,4 @@ export const skirt = {
   name: 'onyx.skirt',
   draft: draftSkirt,
   measurements: ['waist'],
-  options: {},
 }
