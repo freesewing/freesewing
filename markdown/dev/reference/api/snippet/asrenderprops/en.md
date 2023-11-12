@@ -19,7 +19,7 @@ This returns Javascript object has the following properties:
 
 | Name | Description |
 | ----:| ----------- |
-| `attributes` | The result of [Path.attributes.asRenderProps()](/reference/api/attribute/asrenderprops) |
+| `attributes` | The result of [Path.attributes.asRenderProps()](/reference/api/attributes/asrenderprops) |
 | `def` | The ID of the snippet's reference in the `defs` section of the SVG (the snippet code) |
 | `anchor` | The [Point](/reference/api/point) on which the snippet is anchored, or rather its [`Point.asRenderProps()`](/reference/api/point/asrenderprops) result |
 
