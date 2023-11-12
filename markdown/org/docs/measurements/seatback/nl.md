@@ -7,3 +7,4 @@ title: Zitvlak achterkant
 To measure your **seat back**, run the tape measure around your bum at the fullest part, and check the length of the back part.
 
 Zorg dat de lintmeter horizontaal blijft. Met andere woorden, parallel met de vloer.
+<MeasieImage />
