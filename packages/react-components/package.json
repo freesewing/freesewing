@@ -43,7 +43,7 @@
     "react": ">=14"
   },
   "dependencies": {
-    "html-react-parser": "^4.2.2"
+    "html-react-parser": "^5.0.6"
   },
   "devDependencies": {},
   "files": [
