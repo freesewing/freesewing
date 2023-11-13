@@ -22,7 +22,11 @@
     "cutTwoLegRibbing": "Cut two rectangles of ribbing\nfor the legs, with dimensions:",
     "cutOneCrotchGusset": "Cut one rectangle of main fabric\nfor the crotch gusset, with dimensions:",
     "cutOneZipperGuard": "Cut one rectangle of main fabric\nfor the zipper guard, with dimensions:",
-    "cutNeckband": "Cut one rectangle of\nribbing or main fabric\nfor the neckband, with dimensions:"
+    "cutNeckband": "Cut one rectangle of\nribbing or main fabric\nfor the neckband, with dimensions:",
+	"frontOnFoldZipper.t":"Front Zipper / Front on Fold",
+	"frontOnFoldZipper.d":"You have selected to place a front zipper, which is not compatible with cutting the front on the fold. When using a front zipper, it is recommended to cut the front as two separate pieces so that you have the seam allowance available to attach the zipper.",
+	"backOnFoldZipper.t":"Back Zipper / Back on Fold",
+	"backOnFoldZipper.d":"You have selected to place a front zipper, which is not compatible with cutting the front on the fold. When using a front zipper, it is recommended to cut the front as two separate pieces so that you have the seam allowance available to attach the zipper."
   },
   "o": {
     "neckbandLength": {

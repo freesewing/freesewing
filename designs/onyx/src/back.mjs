@@ -196,6 +196,12 @@ function draftBack({
     } else paths.sa.close()
   }
 
+  if (options.zipperPosition === 'back' && options.backOnFold) {
+    store.flag.note({
+      msg: `onyx:backOnFoldZipper`,
+    })
+  }
+
   const neckPath = new Path()
     .move(points.neckShoulderCorner)
     .curve(points.neckCp1, points.neckCp2, points.cfNeck)

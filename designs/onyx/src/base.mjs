@@ -319,7 +319,7 @@ export const base = {
     // Are we using ribbing to finish the legs, or just hemming?
     legRibbing: { bool: false, menu: 'construction' },
     // Where, if anywhere, to place the zipper.
-    zipperPosition: { dflt: 'front', list: ['front', 'back', 'none'], menu: 'style' },
+    zipperPosition: { dflt: 'front', list: ['front', 'back', 'none'], menu: 'construction' },
     // How much ease to give for the neck, as a percentage.
     neckEase: { pct: 50, min: -30, max: 150, menu: 'fit' },
     chestEase: { pct: 0, min: -40, max: 50, menu: 'fit' },

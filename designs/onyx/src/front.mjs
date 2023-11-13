@@ -218,6 +218,12 @@ function draftFront({
       )
   }
 
+  if (options.zipperPosition === 'front' && options.frontOnFold) {
+    store.flag.note({
+      msg: `onyx:frontOnFoldZipper`,
+    })
+  }
+
   return part
 }
 
