@@ -26,7 +26,7 @@
 	"frontOnFoldZipper.t":"Front Zipper / Front on Fold",
 	"frontOnFoldZipper.d":"You have selected to place a front zipper, which is not compatible with cutting the front on the fold. When using a front zipper, it is recommended to cut the front as two separate pieces so that you have the seam allowance available to attach the zipper.",
 	"backOnFoldZipper.t":"Back Zipper / Back on Fold",
-	"backOnFoldZipper.d":"You have selected to place a front zipper, which is not compatible with cutting the front on the fold. When using a front zipper, it is recommended to cut the front as two separate pieces so that you have the seam allowance available to attach the zipper."
+	"backOnFoldZipper.d":"You have selected to place a back zipper, which is not compatible with cutting the back on the fold. When using a back zipper, it is recommended to cut the back as two separate pieces so that you have the seam allowance available to attach the zipper."
   },
   "o": {
     "neckbandLength": {
