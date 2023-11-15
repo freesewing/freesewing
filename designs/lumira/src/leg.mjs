@@ -54,6 +54,73 @@ export const leg = {
     utils,
     part,
   }) => {
+    let a
+    const cpDistanceDivider = 3.5
+    const ControlPoints = (p1, p2, p3, t) => {
+      if (p1 === undefined) {
+        a = p2.angle(p3) + 180
+      } else if (p3 === undefined) {
+        a = p2.angle(p1)
+      } else {
+        a = Math.abs(p2.angle(p1) - p2.angle(p3)) / 2
+      }
+      // const t1 = p2.shift(p2.angle(p1) + a - 90, p2.dist(p1) / 3)
+      // const t3 = p2.shift(p2.angle(p3) - a + 90, p2.dist(p3) / 3)
+      return {
+        cp1:
+          p1 !== undefined
+            ? p2.shift(p2.angle(p1) + a - 90, p2.dist(p1) / cpDistanceDivider)
+            : null,
+        cp3:
+          p3 !== undefined
+            ? p2.shift(p2.angle(p3) - a + 90, p2.dist(p3) / cpDistanceDivider)
+            : null,
+      }
+    }
+    const CreateControlPoints = (names) => {
+      for (var i = 0; i < names.length; i++) {
+        var cp = ControlPoints(points[names[i - 1]], points[names[i]], points[names[i + 1]])
+        if (cp.cp1) points[names[i] + 'Cp2'] = cp.cp1.addCircle(3)
+        if (cp.cp3) points[names[i] + 'Cp1'] = cp.cp3.addCircle(3)
+      }
+    }
+
+    const AdjustUpperLegPoints = (prefix) => {
+      var diff = 0
+      var iter = 0
+      const pOriginal = points[prefix + 'UpperLeg'].clone()
+      do {
+        points[prefix + 'UpperLeg'] = points[prefix + 'UpperLeg'].shift(
+          prefix == 'front' ? 0 : 180,
+          diff
+        )
+        // points[prefix + 'UpperLegCp1'] = points[prefix + 'UpperLeg'].shiftFractionTowards(points.centerUpperLeg,.2)
+        CreateControlPoints([prefix + 'Waist', prefix + 'Seat', prefix + 'UpperLeg'])
+        const pCrotch = new Path()
+          .move(points[prefix + 'Waist'])
+          .curve(points[prefix + 'Waist'], points[prefix + 'SeatCp2'], points[prefix + 'Seat'])
+          .curve(
+            points[prefix + 'SeatCp1'],
+            points[prefix + 'UpperLegCp2'],
+            points[prefix + 'UpperLeg']
+          )
+        // const pCrotch = new Path()
+        //   .move(points[prefix+'Waist'])
+        //   .curve(points[prefix+'WaistCp1'],points[prefix+'SeatCp2'],points[prefix+'Seat'])
+        //   .curve(points[prefix+'SeatCp1'],points[prefix+'UpperLegCp2'],points[prefix+'UpperLeg'])
+
+        console.log({ points: JSON.parse(JSON.stringify(points)) })
+
+        diff =
+          (prefix == 'front' ? measurements.crossSeamFront : measurements.crossSeamBack) -
+          pCrotch.length()
+        console.log({ i: iter, d: diff })
+      } while (iter++ < 100 && (diff > 1 || diff < -1))
+      if (iter >= 100) {
+        points[prefix + 'UpperLeg'] = pOriginal.clone()
+      }
+    }
+
     const waistBackFrontRatio = measurements.waistBack / measurements.waistFront
     const seatBackFrontRatio = measurements.seatBack / measurements.seatFront
     const crossSeamBackFrontRatio = measurements.crossSeamBack / measurements.crossSeamFront
@@ -78,12 +145,6 @@ export const leg = {
     // points.frontUpperLegIn = points.frontUpperLeg.shift(180,options.(weird*(measurements.upperLeg/2))/waistBackFrontRatio)
     // points.backUpperLegIn = points.frontUpperLeg.shift(180,options.(weird*(measurements.upperLeg/2))*waistBackFrontRatio)
     // points.frontWaist = points.frontUpperLegIn
-
-    paths.front = new Path()
-      .move(points.frontAnkle)
-      .line(points.frontKnee)
-      .line(points.frontUpperLeg)
-    paths.back = new Path().move(points.backAnkle).line(points.backKnee).line(points.backUpperLeg)
 
     const backWaistAngle = utils.rad2deg(
       Math.asin(
@@ -114,6 +175,44 @@ export const leg = {
       360 - frontWaistAngle,
       measurements.waistFront * 0.5
     )
+    points.backHips = points.centerHips
+      .shift(180 - backWaistAngle, measurements.hips * 0.25)
+      .addCircle(3)
+    points.frontHips = points.centerHips
+      .shift(360 - frontWaistAngle, measurements.hips * 0.25)
+      .addCircle(3)
+    points.backSeat = points.centerSeat
+      .shift(180 - backWaistAngle, measurements.seatBack * 0.5)
+      .addCircle(5)
+    points.frontSeat = points.centerSeat
+      .shift(360 - frontWaistAngle, measurements.seatFront * 0.5)
+      .addCircle(5)
+
+    AdjustUpperLegPoints('front')
+    AdjustUpperLegPoints('back')
+
+    paths.front = new Path()
+      .move(points.frontAnkle)
+      .line(points.frontKnee)
+      .line(points.frontUpperLeg)
+    paths.back = new Path().move(points.backAnkle).line(points.backKnee).line(points.backUpperLeg)
+
+    paths.frontCrotch1 = new Path()
+      .move(points.frontWaist)
+      .curve(points.frontWaist, points.frontSeatCp2, points.frontSeat)
+      .curve(points.frontSeatCp1, points.frontUpperLegCp2, points.frontUpperLeg)
+    paths.backCrotch1 = new Path()
+      .move(points.backWaist)
+      .curve(points.backWaist, points.backSeatCp2, points.backSeat)
+      .curve(points.backSeatCp1, points.backUpperLegCp2, points.backUpperLeg)
+    // paths.frontCrotch1 = new Path()
+    //   .move(points.frontWaist)
+    //   .curve(points.frontWaistCp1,points.frontSeatCp2,points.frontSeat)
+    //   .curve(points.frontSeatCp1,points.frontUpperLegCp2,points.frontUpperLeg)
+    // paths.backCrotch1 = new Path()
+    //   .move(points.backWaist)
+    //   .curve(points.backWaistCp1,points.backSeatCp2,points.backSeat)
+    //   .curve(points.backSeatCp1,points.backUpperLegCp2,points.backUpperLeg)
 
     paths.waist = new Path().move(points.backWaist).line(points.centerWaist).line(points.frontWaist)
 
