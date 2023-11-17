@@ -1,3 +1,5 @@
+import { pctBasedOn } from '@freesewing/core'
+
 export const leg = {
   name: 'lumira.leg',
   measurements: [
@@ -24,19 +26,8 @@ export const leg = {
     weird: 0.3,
 
     // Percentages
-    size: {
-      pct: 100,
-      min: 5,
-      max: 500,
-      menu: 'style',
-      toAbs: (val, { options }) => (options?.length ? options.length * val : length * val),
-      fromAbs: (val, { options }) =>
-        options?.length
-          ? Math.round((10000 * val) / options.length) / 10000
-          : Math.round((10000 * val) / length) / 10000,
-    },
-    nosePointiness: { pct: 0, min: -5, max: +10, menu: 'style' },
-    aggressive: { bool: false, menu: 'style' },
+    waistReduction: { pct: 35, min: 0, max: 60, menu: 'fit' },
+    gussetWidth: { pct: 5, min: 0, max: 60, ...pctBasedOn('crossSeamFront'), menu: 'fit' },
   },
   draft: ({
     measurements,
@@ -56,6 +47,28 @@ export const leg = {
   }) => {
     let a
     const cpDistanceDivider = 3.5
+    const waistReduction = measurements.waistToHips * options.waistReduction
+    const gussetWidth = measurements.crossSeamFront * options.gussetWidth * 0.5
+
+    const ReduceWaist = (pathName) => {
+      console.log({ pathName: pathName, waistReduction: waistReduction, l: paths[pathName] })
+      console.log({ paths: JSON.parse(JSON.stringify(paths)) })
+      console.log({ points: JSON.parse(JSON.stringify(points)) })
+      console.log({ pn: pathName + 'Waist', p: points[pathName + 'Waist'] })
+
+      const newWaist = paths[pathName].shiftAlong(waistReduction)
+      if (newWaist.sitsRoughlyOn(points[pathName + 'Waist'])) {
+        return
+      }
+      points[pathName + 'Waist'] = newWaist
+      const pTemp = paths[pathName].split(points[pathName + 'Waist'])
+      if (pTemp.length != 2) {
+        log.info('couldNotReduceWaist')
+        console.log('couldNotReduceWaist')
+      }
+      paths[pathName] = pTemp[1]
+    }
+
     const ControlPoints = (p1, p2, p3, t) => {
       if (p1 === undefined) {
         a = p2.angle(p3) + 180
@@ -135,6 +148,8 @@ export const leg = {
     points.centerHips = new Point(0, measurements.waistToHips)
     points.centerSeat = new Point(0, measurements.waistToSeat)
 
+    paths.center = new Path().move(points.centerWaist).line(points.centerFloor).hide()
+
     points.frontAnkle = points.centerAnkle.shift(0, measurements.ankle / 2)
     points.backAnkle = points.centerAnkle.shift(180, measurements.ankle / 2)
     points.frontKnee = points.centerKnee.shift(0, measurements.knee / 2)
@@ -188,8 +203,10 @@ export const leg = {
       .shift(360 - frontWaistAngle, measurements.seatFront * 0.5)
       .addCircle(5)
 
-    AdjustUpperLegPoints('front')
-    AdjustUpperLegPoints('back')
+    // AdjustUpperLegPoints('front')
+    // AdjustUpperLegPoints('back')
+    CreateControlPoints(['frontWaist', 'frontSeat', 'frontUpperLeg'])
+    CreateControlPoints(['backWaist', 'backSeat', 'backUpperLeg'])
 
     paths.front = new Path()
       .move(points.frontAnkle)
@@ -214,29 +231,138 @@ export const leg = {
     //   .curve(points.backWaistCp1,points.backSeatCp2,points.backSeat)
     //   .curve(points.backSeatCp1,points.backUpperLegCp2,points.backUpperLeg)
 
+    points.frontUpperLeg1 = points.centerUpperLeg.shift(0, measurements.upperLeg / 2)
+    points.backUpperLeg1 = points.centerUpperLeg.shift(180, measurements.upperLeg / 2)
+    points.frontUpperLegCp2 = points.frontUpperLeg.shiftFractionTowards(points.centerUpperLeg, 0.4)
+    points.backUpperLegCp2 = points.backUpperLeg.shiftFractionTowards(points.centerUpperLeg, 0.4)
+
+    paths.front = new Path()
+      .move(points.frontWaist)
+      ._curve(points.frontUpperLegCp2, points.frontUpperLeg1)
+    paths.back = new Path()
+      .move(points.backWaist)
+      ._curve(points.backUpperLegCp2, points.backUpperLeg1)
+    ;['center', 'front', 'back'].forEach((prefix) => {
+      ReduceWaist(prefix)
+    })
+
+    points.frontGusset = points.frontUpperLeg1.shiftTowards(points.frontKnee, gussetWidth)
+    points.backGusset = points.backUpperLeg1.shiftTowards(points.backKnee, gussetWidth)
+
+    paths.backTempGusset = paths.back.offset(-1 * gussetWidth).hide()
+
+    paths.front = new Path()
+      .move(points.frontWaist)
+      ._curve(points.frontUpperLegCp2, points.frontUpperLeg1)
+      .line(points.frontKnee)
+      .line(points.frontAnkle)
+    paths.back = new Path()
+      .move(points.backWaist)
+      ._curve(points.backUpperLegCp2, points.backUpperLeg1)
+      .line(points.backKnee)
+      .line(points.backAnkle)
+
     paths.waist = new Path().move(points.backWaist).line(points.centerWaist).line(points.frontWaist)
 
     paths.frontCrotch = new Path()
-      .move(points.frontUpperLeg)
+      .move(points.frontUpperLeg1)
       .curve_(
         points.frontUpperLeg.shiftFractionTowards(points.centerUpperLeg, 0.4),
         points.frontWaist
       )
 
-    console.log({ csf: measurements.crossSeamFront, pl: paths.frontCrotch.length() })
+    console.log({ csf: measurements.crossSeamFront, pl: paths.front.length() + waistReduction })
 
     paths.backCrotch = new Path()
-      .move(points.backUpperLeg)
+      .move(points.backUpperLeg1)
       .curve_(
         points.backUpperLeg.shiftFractionTowards(points.centerUpperLeg, 0.4),
         points.backWaist
       )
 
-    console.log({ csb: measurements.crossSeamBack, pl: paths.backCrotch.length() })
+    points.backHips = paths.back.shiftAlong(measurements.waistToHips - waistReduction)
+    const backHips = paths.back.shiftAlong((measurements.waistToHips - waistReduction) * 0.99)
+    const backHipsAngle = points.backHips.angle(backHips) - 90
+
+    points.backUpperLegToHips = new Point(points.backHips.x, points.backUpperLeg.y)
+    points.backCircleMiddle = points.backHips.shiftFractionTowards(points.backUpperLegToHips, 0.5)
+
+    points.backCircleHipsCp1 = points.backHips
+      .shift(backHipsAngle, measurements.hips * 0.25 * 0.5)
+      .addCircle(5)
+    points.backCircleUpperLegCp1 = points.backUpperLegToHips
+      .shift(0, measurements.upperLeg * 0.25)
+      .addCircle(5)
+
+    paths.backTempCircle = new Path()
+      .move(points.backHips)
+      .curve(points.backCircleHipsCp1, points.backCircleUpperLegCp1, points.backUpperLeg)
+      .hide()
+    console.log({ csb: measurements.crossSeamBack, pl: paths.back.length() + waistReduction })
+
+    points.backCircleGusset = paths.backTempCircle.intersects(paths.backTempGusset)[1].addCircle(9)
+    paths.backGusset = paths.backTempGusset.split(points.backCircleGusset)[1]
+    paths.backCircle = paths.backTempCircle.split(points.backCircleGusset)[0]
+
+    const backGussetLength = paths.backGusset.length()
 
     console.log({ points: JSON.parse(JSON.stringify(points)) })
     console.log({ paths: JSON.parse(JSON.stringify(paths)) })
     console.log({ measurements: JSON.parse(JSON.stringify(measurements)) })
+
+    points.backInsertCenterTop = new Point(measurements.upperLeg, 0).addCircle(10)
+    points.backInsertOutsideGusset = points.backInsertCenterTop
+      .shift(
+        270,
+        measurements.crossSeamBack - measurements.waistToHips - waistReduction - backGussetLength
+      )
+      .shift(0, gussetWidth)
+      .addCircle(10)
+    points.backInsertCenterSeat = points.backInsertCenterTop
+      .shift(270, measurements.waistToSeat - waistReduction)
+      .addCircle(10)
+    points.backInsertCenterTopCp1 = points.backInsertCenterTop
+      .shift(0, measurements.hips * 0.25 * 0.5)
+      .addCircle(5)
+    points.backInsertOutsideGussetCp1 = points.backInsertOutsideGusset
+      .shift(0, measurements.upperLeg * 0.25)
+      .addCircle(5)
+
+    var diff = 0
+    var iter = 0
+    do {
+      points.backInsertCenterTopCp1 = points.backInsertCenterTopCp1.shift(0, diff).addCircle(5)
+      points.backInsertOutsideGussetCp1 = points.backInsertOutsideGussetCp1
+        .shift(0, diff)
+        .addCircle(5)
+
+      paths.backInsertCircle = new Path()
+        .move(points.backInsertCenterTop)
+        .curve(
+          points.backInsertCenterTopCp1,
+          points.backInsertOutsideGussetCp1,
+          points.backInsertOutsideGusset
+        )
+        .hide()
+      diff = paths.backCircle.length() - paths.backInsertCircle.length()
+      console.log({ i: iter, d: diff })
+    } while (iter++ < 50 && (diff > 1 || diff < -1))
+
+    points.backInsertOutsideBottom = points.backInsertOutsideGusset.shift(270, backGussetLength)
+    points.backInsertCenterBottom = points.backInsertOutsideBottom.shift(180, gussetWidth)
+
+    paths.backInsert = new Path()
+      .move(points.backInsertCenterTop)
+      .curve(
+        points.backInsertCenterTopCp1,
+        points.backInsertOutsideGussetCp1,
+        points.backInsertOutsideGusset
+      )
+      .line(points.backInsertOutsideBottom)
+      .line(points.backInsertCenterBottom)
+      .line(points.backInsertCenterTop)
+
+    console.log({ bil: paths.backInsertCircle.length(), bcl: paths.backCircle.length() })
 
     return part
   },
