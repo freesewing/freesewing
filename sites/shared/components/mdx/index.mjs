@@ -78,15 +78,22 @@ export const components = (site = 'org', slug = []) => {
       specific.Legend = Legend
   }
 
-  if (
-    site === 'org' &&
-    slug &&
-    ((slug.length === 2 && slug[0] === 'measurements') ||
-      (slug.length === 3 && slug[0] === 'docs' && slug[1] === 'measurements')) // Slug is different for dynamic MDX
-  )
-    specific.MeasieImage = function MdxMeasieImage() {
-      return <MeasieImage m={slug[1]} />
+  // MeasieImage
+  if (site === 'org' && slug) {
+    // Regular MDX - MeasieImage
+    if (slug.length === 2 && slug[0] === 'measurements') {
+      specific.MeasieImage = function MdxMeasieImage() {
+        return <MeasieImage m={slug[1]} />
+      }
     }
+
+    // Dynamic MDX - MeasieImage
+    if (slug.length === 3 && slug[0] === 'docs' && slug[1] === 'measurements') {
+      specific.MeasieImage = function MdxMeasieImage() {
+        return <MeasieImage m={slug[2]} />
+      }
+    }
+  }
 
   return {
     ...base,
