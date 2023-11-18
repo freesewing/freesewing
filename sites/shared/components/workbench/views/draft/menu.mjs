@@ -69,7 +69,7 @@ export const DraftMenu = ({
   ]
 
   const items = []
-  if (control >= uiSettingsConfig.kiosk.control && flags)
+  if (flags)
     items.push([
       <FlagsAccordionTitle flags={flags} key={1} />,
       <FlagsAccordionEntries {...{ update, control, flags }} key={2} />,
