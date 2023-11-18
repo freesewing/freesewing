@@ -96,7 +96,7 @@ function setGrain(store, grain = false, origin = 'grainline') {
 
 /** Method to retrieve the grainOrigin */
 function getGrainOrigin(store) {
-  return store.get(['cutlist', store.get('activePart'), partName, 'grainOrigin'])
+  return store.get(['cutlist', store.get('activePart'), 'grainOrigin'])
 }
 
 /** Method to remove the grain info (called by rmgrainline and rmcutonfold macros) */
