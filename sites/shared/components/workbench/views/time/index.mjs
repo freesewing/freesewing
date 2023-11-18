@@ -7,7 +7,6 @@ import { timingPlugin } from '@freesewing/plugin-timing'
 import { ChartWrapper } from 'shared/components/wrappers/chart.mjs'
 import * as echarts from 'echarts'
 import { useState, useEffect } from 'react'
-import { spectrum } from 'shared/themes/lgbtq.mjs'
 import { useTheme } from 'shared/hooks/use-theme.mjs'
 import tailwindColors from 'tailwindcss/colors'
 import { useTranslation } from 'next-i18next'
@@ -42,9 +41,6 @@ const TimeScore = ({ took, setData }) => {
   } else if (took < 100) {
     msg = t('workbench:slow')
     color = 'warning'
-  } else {
-    msg = t('workbench:tooSlow')
-    color = 'error'
   }
 
   return (
@@ -204,7 +200,7 @@ export const TimeView = ({
                 renderProps,
                 view,
                 setView,
-                flags: pattern.setStores?.[0]?.plugins?.['plugin-annotations']?.flags,
+                flags: pattern.setStores[0]?.plugins?.['plugin-annotations']?.flags,
               }}
             />
           ),
