@@ -193,7 +193,8 @@ function draftFront({
       .attr(
         'data-text',
         `${units(2 * sa + store.get('crotchGussetWidth'))} x ${units(
-          sa + (options.legRibbing ? sa : absoluteOptions.legHem) + store.get('crotchGussetLength')
+          (options.legRibbing ? 2 * sa : 2 * absoluteOptions.legHem) +
+            store.get('crotchGussetLength')
         )}`
       )
 
