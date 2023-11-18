@@ -19,6 +19,7 @@ chooseFromCuratedSetsDesc: Als je ons platform gewoon wilt uitproberen, kun je k
 chooseFromOwnSets: Kies een van je eigen meetsets
 chooseFromOwnSetsDesc: Kies een van je eigen meetsets die alle vereiste afmetingen heeft om dit patroon te genereren.
 chooseNewSet: Kies een nieuwe meetset
+clearTimingData: Clear timing data
 closure: Sluiting
 collar: Kraag
 columns: kolommen
@@ -120,6 +121,7 @@ testOptionsDesc: Test hoe het ontwerp zich aanpast aan veranderingen in een spec
 testPattern: Testpatroon
 testSets: Test meetsets
 testSetsDesc: Test hoe het ontwerp zich aanpast aan verschillende meetsets
+timeDesign: Time Design
 topLeft: Linksboven
 weLackSomeMeasies: We missen { nr } metingen om dit patroon te maken
 whereToGoAfterSaveAs: Wat wil je doen nadat je het nieuwe patroon hebt opgeslagen?
@@ -131,3 +133,9 @@ yamlEditViewTitleThing: 'Patroonconfiguratie bewerken voor {thing}'
 youCanPickOrEnter: Je kunt een meetset kiezen of ze met de hand invoeren, maar zonder deze metingen kunnen we niet verder.
 youUseCustomValue: Je gebruikt de standaardwaarde
 youUseDefaultValue: Je gebruikt een aangepaste waarde
+veryFast: Very fast
+fast: Fast
+average: Average
+slow: Slow
+verySlow: Very slow
+tooSlow: Too slow
