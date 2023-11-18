@@ -88,6 +88,7 @@ export const freeSewingConfig = {
       draft: 1,
       measies: 1,
       test: 3,
+      time: 3,
       print: 1,
       export: 1,
       save: 1,
