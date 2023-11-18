@@ -19,6 +19,7 @@ chooseFromCuratedSetsDesc: Si sólo quieres probar nuestra plataforma, puedes el
 chooseFromOwnSets: Elige uno de tus conjuntos de medidas
 chooseFromOwnSetsDesc: Elige cualquiera de tus conjuntos de medidas que tenga todas las medidas necesarias para generar este patrón.
 chooseNewSet: Elegir un nuevo conjunto de medidas
+clearTimingData: Clear timing data
 closure: Cierre
 collar: Cuello
 columns: columnas
@@ -120,6 +121,7 @@ testOptionsDesc: Prueba cómo se adapta el diseño a los cambios en una opción 
 testPattern: Patrón de prueba
 testSets: Conjuntos de medidas de prueba
 testSetsDesc: Prueba cómo se adapta el diseño a diferentes conjuntos de mediciones
+timeDesign: Time Design
 topLeft: Arriba a la izquierda
 weLackSomeMeasies: Nos faltan las medidas de { nr } para crear este patrón
 whereToGoAfterSaveAs: Después de guardar el nuevo patrón, ¿qué quieres hacer?
@@ -131,3 +133,9 @@ yamlEditViewTitleThing: 'Editar configuración de patrones para {thing}'
 youCanPickOrEnter: Puedes elegir un conjunto de medidas o introducirlas a mano, pero no podemos proceder sin estas medidas.
 youUseCustomValue: Estás utilizando el valor por defecto
 youUseDefaultValue: Estás utilizando un valor personalizado
+veryFast: Very fast
+fast: Fast
+average: Average
+slow: Slow
+verySlow: Very slow
+tooSlow: Too slow
