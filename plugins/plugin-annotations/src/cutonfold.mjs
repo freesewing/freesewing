@@ -35,7 +35,7 @@ export const cutonfoldDefs = [
  * The rmcutonfold macro
  */
 const rmcutonfold = (id = macroDefaults.id, { store, part }) => {
-  if (store.cutlist.getGrainOrigin() === 'cutonfold') store.cutlist.removeGrainline()
+  if (store.cutlist.getGrainOrigin() === 'cutonfold') store.cutlist.removeGrain()
   store.cutlist.removeCutOnFold()
 
   return store.removeMacroNodes(id, 'cutonfold', part)

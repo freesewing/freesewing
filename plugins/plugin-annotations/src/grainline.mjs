@@ -33,7 +33,7 @@ export const grainlineDefs = [
  * The rmgrainline macro
  */
 const rmgrainline = (id = macroDefaults.id, { store, part }) => {
-  if (store.cutlist.getGrainOrigin() === 'grainline') store.cutlist.removeGrainline()
+  if (store.cutlist.getGrainOrigin() === 'grainline') store.cutlist.removeGrain()
 
   return store.removeMacroNodes(id, 'grainline', part)
 }
