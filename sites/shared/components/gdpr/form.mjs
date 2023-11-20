@@ -44,7 +44,7 @@ export const ConsentForm = ({ submit }) => {
   }
 
   return (
-    <>
+    <div className="px-4 lg:px-2 xl:px-0">
       <h1>{t('gdpr:privacyMatters')}</h1>
       <p>{t('gdpr:compliant')}</p>
       <p>{t('gdpr:consentWhyAnswer')}</p>
@@ -80,6 +80,6 @@ export const ConsentForm = ({ submit }) => {
           FreeSewing Privacy Notice
         </Link>
       </p>
-    </>
+    </div>
   )
 }

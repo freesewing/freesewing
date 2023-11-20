@@ -15,3 +15,4 @@ The **high point shoulder (HPS) to waist front** measurement runs from your HPS 
 
 To measure your HPS to waist front, first [localize your HPS point](/docs/measurements/hps/).
 Then measure straight down to your waist line.
+<MeasieImage />
