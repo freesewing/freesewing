@@ -66,6 +66,7 @@ Unreleased:
       - Decreased default back waist dip
       - Increased default front waist dip
       - Allowed lower values on back exposure, causing back to flare out
+      - Fix issue with back part when bulge is on and expand is off
 
     waralee:
       - Pocket opening was not drawn on the facing and pocket pieces. Fixes #4026
