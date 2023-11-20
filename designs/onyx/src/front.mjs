@@ -6,14 +6,19 @@ function draftFront({
   Point,
   paths,
   points,
+  measurements,
   options,
+  absoluteOptions,
   part,
   store,
   complete,
   sa,
+  expand,
+  units,
   macro,
   snippets,
   Snippet,
+  scale,
 }) {
   const neckRadius = store.get('neckRadius')
 
@@ -41,6 +46,13 @@ function draftFront({
 
   const frontNecklineToRaglanAngle = store.get('raglanAngle') - (necklineAngleAtRaglan + 180)
   store.set('frontNecklineToRaglanAngle', frontNecklineToRaglanAngle)
+  store.set(
+    'neckLengthFront',
+    new Path()
+      .move(points.neckShoulderCorner)
+      .curve(points.neckCp1, points.neckCp2, points.cfNeck)
+      .length()
+  )
 
   macro('vd', {
     id: 'hCenterSeam',
@@ -135,16 +147,83 @@ function draftFront({
 
   snippets.armpitScoopEnd = new Snippet('notch', points.armpitScoopEnd)
 
-  points.title = new Point(
-    points.armpitCorner.x / 2,
-    (points.cfCrotch.y + points.armpitCornerScooped.y / 2) / 2
-  )
-  macro('title', { at: points.title, nr: 1, title: 'front' })
+  points.title = new Point(points.armpitCorner.x / 4, points.armpitCornerScooped.y + 50 * scale)
+  macro('title', { at: points.title, nr: 1, title: 'onyx:front' })
+  points.logo = points.title.translate(32 * scale, -40 * scale)
+  snippets.logo = new Snippet('logo', points.logo)
 
-  const neckPath = new Path()
-    .move(points.neckShoulderCorner)
-    .curve(points.neckCp1, points.neckCp2, points.cfNeck)
-  store.set('neckLengthFront', neckPath.length())
+  if (complete && !expand) {
+    points.skirtInstructions = points.title.translate(0, -30 + 35 * scale)
+    if (options.skirt) {
+      points.skirtInstructions = points.skirtInstructions
+        .translate(0, 50)
+        .attr('data-text', 'onyx:cutOneSkirt')
+        .attr('data-text', ':\n')
+        .attr(
+          'data-text',
+          `${units(
+            2 * sa + measurements.waist * Math.max(options.waistEase, options.skirtWidth)
+          )} x ${units(
+            measurements.waistToUpperLeg * options.skirtLength +
+              absoluteOptions.skirtHem +
+              absoluteOptions.skirtWaistband
+          )}`
+        )
+    }
+
+    points.legRibbingInstructions = points.skirtInstructions
+    if (options.legRibbing) {
+      points.legRibbingInstructions = points.legRibbingInstructions
+        .translate(0, 50)
+        .attr('data-text', 'onyx:cutTwoLegRibbing')
+        .attr('data-text', ':\n')
+        .attr(
+          'data-text',
+          `${units(2 * sa + store.get('legWidth') * options.legRibbingLength)} x ${units(
+            2 * (sa + absoluteOptions.legRibbingWidth)
+          )}`
+        )
+    }
+
+    points.crotchGussetInstructions = points.legRibbingInstructions
+    points.crotchGussetInstructions = points.crotchGussetInstructions
+      .translate(0, 50)
+      .attr('data-text', 'onyx:cutOneCrotchGusset')
+      .attr('data-text', ':\n')
+      .attr(
+        'data-text',
+        `${units(2 * sa + store.get('crotchGussetWidth'))} x ${units(
+          (options.legRibbing ? 2 * sa : 2 * absoluteOptions.legHem) +
+            store.get('crotchGussetLength')
+        )}`
+      )
+
+    points.zipperGuardInstructions = points.crotchGussetInstructions
+    const zipperGuardWidth = absoluteOptions.zipperGuardWidth
+    const neckGuardLength =
+      options.neckStyle == 'neckband'
+        ? store.get('verticalTrunk') * options.neckGuardLength
+        : options.zipperGuardTapeCoverMaterial * zipperGuardWidth
+    // How much extra material to put at the bottom of the zipper guard, to cover the parts below the zipper stop.
+    const zipperGuardLength =
+      absoluteOptions.zipperLength +
+      neckGuardLength +
+      zipperGuardWidth * options.zipperGuardTapeCoverMaterial
+    points.zipperGuardInstructions = points.zipperGuardInstructions
+      .translate(0, 50)
+      .attr('data-text', 'onyx:cutOneZipperGuard')
+      .attr('data-text', ':\n')
+      .attr(
+        'data-text',
+        `${units(2 * (sa + zipperGuardWidth))} x ${units(2 * sa + zipperGuardLength)}`
+      )
+  }
+
+  if (options.zipperPosition === 'front' && options.frontOnFold) {
+    store.flag.note({
+      msg: `onyx:frontOnFoldZipper`,
+    })
+  }
 
   return part
 }

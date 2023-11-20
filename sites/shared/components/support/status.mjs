@@ -192,7 +192,7 @@ const events = {
 const Null = () => null
 
 const Event = (props) => {
-  if (!props.evt.node) return <p>{props.evt.node.__typeName}</p> //null
+  if (!props.evt.node) return null
 
   const Component = events[props.evt.node.__typename] || Null
 
