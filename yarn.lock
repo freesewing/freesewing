@@ -13246,10 +13246,10 @@ tiny-inflate@^1.0.0, tiny-inflate@^1.0.3:
   resolved "https://registry.yarnpkg.com/tiny-inflate/-/tiny-inflate-1.0.3.tgz#122715494913a1805166aaf7c93467933eea26c4"
   integrity sha512-pkY1fj1cKHb2seWDy0B16HeWyczlJA9/WW3u3c4z/NiWDsO3DOU5D7nhTLE9CF0yXv/QZFY7sEJmj24dK+Rrqw==
 
-tlds@1.245.0:
-  version "1.245.0"
-  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.245.0.tgz#afd4c0c33be7227f8f2d4578573fc922b839ba84"
-  integrity sha512-fbSQFQr8f41/e9q9IoKKVv7CUFvvE3TVJo7m0JQJZcf7jOOXRRf9DIP4Uf04aovYGKG686OvtV4ZrNY1bOz3aA==
+tlds@1.246.0:
+  version "1.246.0"
+  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.246.0.tgz#b66ea74336965a4d7cbf744bea9a9c32336c1de6"
+  integrity sha512-ZxWlQyGhBMuBsFHYniTSGmKhJfxjQ+swTfRC6W6FdAa5BLs9fMWDPzzak1umZeObMqi5Dx6UScBGNjLtjySkBA==
 
 tmp@^0.0.33:
   version "0.0.33"
