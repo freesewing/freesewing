@@ -19,7 +19,7 @@ chooseFromCuratedSetsDesc: Wenn du unsere Plattform nur ausprobieren möchtest, 
 chooseFromOwnSets: Wähle einen deiner eigenen Messsätze
 chooseFromOwnSetsDesc: Wähle ein beliebiges Maßset aus, das alle erforderlichen Maße enthält, um dieses Muster zu erstellen.
 chooseNewSet: Wähle ein neues Maßnahmeset
-clearTimingData: Clear timing data
+clearTimingData: Timingdaten löschen
 closure: Verschluss
 collar: Kragen
 columns: Spalten
@@ -121,7 +121,7 @@ testOptionsDesc: Teste, wie sich das Design an Änderungen einer bestimmten Desi
 testPattern: Testmuster
 testSets: Test-Messreihen
 testSetsDesc: Teste, wie sich das Design an verschiedene Messreihen anpasst
-timeDesign: Time Design
+timeDesign: Design timen
 topLeft: Oben links
 weLackSomeMeasies: Uns fehlen { nr } Messungen, um dieses Muster zu erstellen
 whereToGoAfterSaveAs: Was willst du tun, nachdem du das neue Muster gespeichert hast?
@@ -133,9 +133,9 @@ yamlEditViewTitleThing: 'Musterkonfiguration bearbeiten für {thing}'
 youCanPickOrEnter: Du kannst entweder einen Satz Messungen auswählen oder sie von Hand eingeben, aber ohne diese Messungen können wir nicht weitermachen.
 youUseCustomValue: Du verwendest den Standardwert
 youUseDefaultValue: Du verwendest einen benutzerdefinierten Wert
-veryFast: Very fast
-fast: Fast
-average: Average
-slow: Slow
-verySlow: Very slow
-tooSlow: Too slow
+veryFast: Sehr schnell
+fast: Schnell
+average: Durchschnittlich
+slow: Langsam
+verySlow: Sehr langsam
+tooSlow: Zu langsam
