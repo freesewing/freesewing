@@ -30,10 +30,10 @@ export const shape = {
 
     // Percentages
     ease: { pct: -10, min: -30, max: 0, menu: 'fit' },
-    waistReduction: { pct: 35, min: 0, max: 60, menu: 'fit' },
+    waistReduction: { pct: 35, min: 0, max: 60, menu: 'style' },
     gussetWidth: { pct: 10, min: 0, max: 60, ...pctBasedOn('crossSeamFront'), menu: 'fit' },
     frontGussetLength: { pct: 12.5, min: 0, max: 90, ...pctBasedOn('crossSeamFront'), menu: 'fit' },
-    frontBulgeSize: { pct: 2.5, min: 0, max: 10, ...pctBasedOn('crossSeamFront'), menu: 'fit' },
+    frontBulgeSize: { pct: 2.5, min: 0, max: 10, ...pctBasedOn('crossSeamFront'), menu: 'style' },
   },
   draft: ({
     measurements,
@@ -272,22 +272,50 @@ export const shape = {
 
     points.frontGussetJoin = paths.front.reverse().shiftAlong(frontGussetLength)
 
-    points.frontGussetCp2 = points.frontGusset.shiftFractionTowards(points.centerUpperLeg, 0.1)
-    paths.frontGusset = new Path()
-      .move(points.frontGussetJoin)
-      ._curve(points.frontGussetCp2, points.frontGusset)
-      .hide()
-    const frontTemp = paths.front.reverse().shiftAlong(frontGussetLength - 1)
-    const frontGussetTemp = paths.front.shiftAlong(1)
-    const frontGussetAngle = Math.abs(
-      points.frontGussetJoin.angle(frontGussetTemp) - frontTemp.angle(points.frontGussetJoin)
-    )
-    store.set('frontGussetAngle', frontGussetAngle * 2)
+    if (options.frontBulge) {
+      // const frontBulgeSize = options.frontBulgeSize *measurements.crossSeamFront
 
-    // paths.front.unhide()
-    paths.frontTempGusset = paths.front.offset(gussetWidth).hide()
+      points.frontGussetCp = points.frontUpperLegCp2.clone()
+      points.frontWaist = points.frontWaist.shiftTowards(points.backWaist, gussetWidth)
 
-    // Need to create thefront paths with the gusset
+      var iter = 0
+      var diff = 0
+      do {
+        points.frontGussetCp = points.frontGussetCp.shift(0, diff)
+        paths.front = new Path()
+          .move(points.frontWaist)
+          ._curve(points.frontGussetCp, points.frontGusset)
+          .hide()
+
+        diff = paths.front.length() - (measurements.crossSeamFront - waistReduction)
+
+        console.log({
+          i: iter,
+          d: diff,
+          fl: paths.front.length(),
+          csf: measurements.crossSeamFront - waistReduction,
+        })
+      } while (iter++ < 50 && (diff > 1 || diff < -1))
+    } else {
+      points.frontGussetCp2 = points.frontGusset.shiftFractionTowards(points.centerUpperLeg, 0.1)
+      paths.frontGusset = new Path()
+        .move(points.frontGussetJoin)
+        ._curve(points.frontGussetCp2, points.frontGusset)
+        .hide()
+      const frontTemp = paths.front.reverse().shiftAlong(frontGussetLength - 1)
+      const frontGussetTemp = paths.front.shiftAlong(1)
+      const frontGussetAngle = Math.abs(
+        points.frontGussetJoin.angle(frontGussetTemp) - frontTemp.angle(points.frontGussetJoin)
+      )
+      store.set('frontGussetAngle', frontGussetAngle * 2)
+
+      // paths.front.unhide()
+      paths.frontTempGusset = paths.front.offset(gussetWidth).hide()
+
+      // paths.frontGusset = paths.frontTempGusset.split(points.backCircleGusset)[1]
+      paths.front = paths.front.split(points.frontGussetJoin)[0].join(paths.frontGusset).hide()
+    }
+    store.set('frontLength', paths.front.length())
 
     paths.backTempGusset = paths.back.offset(-1 * gussetWidth).hide()
 
@@ -333,6 +361,7 @@ export const shape = {
 
     console.log({ points: JSON.parse(JSON.stringify(points)) })
     console.log({ paths: JSON.parse(JSON.stringify(paths)) })
+    console.log({ store: JSON.parse(JSON.stringify(store)) })
     console.log({ measurements: JSON.parse(JSON.stringify(measurements)) })
 
     return part

@@ -95,6 +95,65 @@ export const gusset = {
     console.log({ bil: paths.backInsertCircle.length(), bcl: paths.backCircle.length() })
 
     if (options.frontBulge) {
+      const frontLength = store.get('frontLength')
+      const frontBulgeSize = options.frontBulgeSize * measurements.crossSeamFront
+
+      points.frontCenter = points.backInsertCenterBottom.shift(
+        270,
+        measurements.crossSeamFront - waistReduction
+      )
+      points.frontOutside = points.frontCenter.shift(0, gussetWidth)
+      points.frontOutsideHips = points.frontOutside.shift(
+        90,
+        measurements.waistToHips - waistReduction
+      )
+
+      const gussetCpLength = points.backInsertOutsideGusset.dist(points.backInsertOutsideBottom)
+
+      points.backInsertOutsideBottomCp = points.backInsertOutsideBottom.shift(270, gussetCpLength)
+      points.frontOutsideHipsCp = points.frontOutsideHips.shift(90, gussetCpLength)
+      points.frontOutsideMiddle = points.frontOutsideHips.shift(
+        90,
+        points.frontOutsideHips.dist(points.backInsertOutsideBottom) / 2
+      )
+
+      var diff = 0
+      var iter = 0
+      do {
+        points.frontOutsideMiddle = points.frontOutsideMiddle.shift(0, diff).addCircle(8)
+        points.frontOutsideMiddleCp1 = points.frontOutsideMiddle
+          .shift(90, gussetCpLength)
+          .addCircle(10)
+        points.frontOutsideMiddleCp2 = points.frontOutsideMiddle
+          .shift(270, gussetCpLength)
+          .addCircle(15)
+
+        const frontGussetPath = new Path()
+          .move(points.frontOutside)
+          .line(points.frontOutsideHips)
+          .curve(points.frontOutsideHipsCp, points.frontOutsideMiddleCp2, points.frontOutsideMiddle)
+          .curve(
+            points.frontOutsideMiddleCp1,
+            points.backInsertOutsideBottomCp,
+            points.backInsertOutsideBottom
+          )
+
+        diff = frontLength + frontBulgeSize - frontGussetPath.length()
+
+        console.log({ i: iter, d: diff, fl: frontLength, fgpl: frontGussetPath.length() })
+      } while (iter++ < 3 && (diff > 1 || diff < -1))
+
+      paths.front = new Path()
+        .move(points.backInsertCenterBottom)
+        .line(points.frontCenter)
+        .line(points.frontOutside)
+        .line(points.frontOutsideHips)
+        .curve(points.frontOutsideHipsCp, points.frontOutsideMiddleCp2, points.frontOutsideMiddle)
+        .curve(
+          points.frontOutsideMiddleCp1,
+          points.backInsertOutsideBottomCp,
+          points.backInsertOutsideBottom
+        )
     } else {
       console.log({ store: JSON.parse(JSON.stringify(store)) })
       const frontGussetAngle = store.get('frontGussetAngle')

@@ -37,6 +37,12 @@ export const leg = {
       .line(points.backAnkle)
       .hide()
 
+    // if (options.frontBulge) {
+    //   const gussetWidth = store.get('gussetWidth')
+    //   paths.front = paths.front.offset(gussetWidth)
+    //   points.
+    // }
+
     paths.seam = new Path()
       .move(points.backWaist)
       .join(paths.back)
