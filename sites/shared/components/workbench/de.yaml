@@ -41,8 +41,8 @@ editCurrentMeasiesDesc: Änderungen, die du hier vornimmst, werden nicht in dein
 editCurrentMeasiesHeader: Schnittmuster-Maße bearbeiten
 editMeasiesByHand: Messungen von Hand bearbeiten
 editMeasiesByHandDesc: Setze alle Messungen manuell fest oder setze sie außer Kraft. Diese Änderungen gelten nur für das aktuelle Muster.
-editSettings: Edit settings
-editSettingsByHand: Edit settings by hand
+editSettings: Einstellungen bearbeiten
+editSettingsByHand: Einstellungen manuell bearbeiten
 elastic: Gummi
 export: Exportieren
 exporting: Exporting
@@ -83,7 +83,7 @@ partTransfoYes: Tasten anzeigen
 partTransfoYesDesc: Füge diese Schaltflächen in die Musterausgabe ein (sie werden nicht gedruckt)
 pathInfo: Pfad-Infos
 patternBookmarkCreated: Muster-Lesezeichen erstellt
-patternEditor: Pattern Editor
+patternEditor: Muster-Editor
 patternInspector: Muster-Inspektor
 patternLogs: Musterprotokolle
 patternSaved: Muster gespeichert
