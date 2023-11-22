@@ -31,9 +31,23 @@ export const shape = {
     // Percentages
     ease: { pct: -10, min: -30, max: 0, menu: 'fit' },
     waistReduction: { pct: 35, min: 0, max: 60, menu: 'style' },
-    gussetWidth: { pct: 10, min: 0, max: 60, ...pctBasedOn('crossSeamFront'), menu: 'fit' },
-    frontGussetLength: { pct: 12.5, min: 0, max: 90, ...pctBasedOn('crossSeamFront'), menu: 'fit' },
-    frontBulgeSize: { pct: 2.5, min: 0, max: 10, ...pctBasedOn('crossSeamFront'), menu: 'style' },
+    gussetWidth: { pct: 10, min: 0, max: 30, ...pctBasedOn('crossSeamFront'), menu: 'fit' },
+    frontGussetLength: {
+      pct: 12.5,
+      min: 0,
+      max: 80,
+      ...pctBasedOn('crossSeamFront'),
+      // eslint-disable-next-line no-unused-vars
+      menu: (settings, mergedOptions) => (mergedOptions?.frontBulge ? false : 'style'),
+    },
+    frontBulgeSize: {
+      pct: 2.5,
+      min: 0,
+      max: 10,
+      ...pctBasedOn('crossSeamFront'),
+      // eslint-disable-next-line no-unused-vars
+      menu: (settings, mergedOptions) => (mergedOptions?.frontBulge ? 'style' : false),
+    },
   },
   draft: ({
     measurements,
@@ -249,6 +263,12 @@ export const shape = {
 
     paths.center = new Path().move(points.centerWaist).line(points.centerAnkle).hide()
 
+    // paths.frontT = new Path()
+    //   .move(points.frontWaist)
+    //   ._curve(points.frontUpperLegCp2, points.frontUpperLeg1)
+    // paths.backT = new Path()
+    //   .move(points.backWaist)
+    //   ._curve(points.backUpperLegCp2, points.backUpperLeg1)
     paths.front = new Path()
       .move(points.frontWaist)
       ._curve(points.frontUpperLegCp2, points.frontUpperLeg1)
@@ -270,7 +290,7 @@ export const shape = {
     points.frontGusset = points.frontUpperLeg1.shiftTowards(points.frontKnee, gussetWidth)
     points.backGusset = points.backUpperLeg1.shiftTowards(points.backKnee, gussetWidth)
 
-    points.frontGussetJoin = paths.front.reverse().shiftAlong(frontGussetLength)
+    points.frontGussetJoin = paths.front.reverse().shiftAlong(frontGussetLength) //.addCircle(3).addCircle(5)
 
     if (options.frontBulge) {
       // const frontBulgeSize = options.frontBulgeSize *measurements.crossSeamFront
@@ -297,10 +317,38 @@ export const shape = {
         })
       } while (iter++ < 50 && (diff > 1 || diff < -1))
     } else {
-      points.frontGussetCp2 = points.frontGusset.shiftFractionTowards(points.centerUpperLeg, 0.1)
+      points.frontGussetCp = points.frontGusset.shiftFractionTowards(points.centerUpperLeg, 0.1) //.addCircle(3)
+      if (points.frontGussetCp.x < points.frontGussetJoin.x) {
+        points.frontGussetCp.x = points.frontGussetJoin.x
+      }
+      if (points.frontGussetCp.x > points.frontGusset.x) {
+        points.frontGussetCp.x = points.frontGusset.x
+      }
+
+      const pFrontGusset = new Path()
+        .move(points.frontGussetJoin)
+        ._curve(points.frontGussetCp, points.frontGusset)
+        .hide()
+      const pFrontGussetPoint = pFrontGusset.shiftAlong(1)
+      const pFront = new Path()
+        .move(points.frontWaist)
+        ._curve(points.frontUpperLegCp2, points.frontUpperLeg1)
+        .hide()
+      const pFrontPoint = pFront.shiftAlong(1)
+      if (
+        points.frontGussetJoin.angle(pFrontGussetPoint) > pFrontPoint.angle(points.frontGussetJoin)
+      ) {
+        points.frontGussetJoinCp = points.frontGussetJoin.shift(
+          pFrontPoint.angle(points.frontGussetJoin),
+          frontGussetLength - gussetWidth
+        ) //.addCircle(10)
+      } else {
+        points.frontGussetJoinCp = points.frontGussetJoin.clone() //.addCircle(18).addCircle(12)
+      }
+
       paths.frontGusset = new Path()
         .move(points.frontGussetJoin)
-        ._curve(points.frontGussetCp2, points.frontGusset)
+        .curve(points.frontGussetJoinCp, points.frontGussetCp, points.frontGusset)
         .hide()
       const frontTemp = paths.front.reverse().shiftAlong(frontGussetLength - 1)
       const frontGussetTemp = paths.front.shiftAlong(1)

@@ -48,9 +48,11 @@ export const gusset = {
       )
       .shift(0, gussetWidth)
 
-    points.backInsertCenterSeat = points.backInsertCenterTop
-      .shift(270, measurements.waistToSeat - waistReduction)
-      .addCircle(2)
+    points.backInsertCenterSeat = points.backInsertCenterTop.shift(
+      270,
+      measurements.waistToSeat - waistReduction
+    )
+    // .addCircle(2)
 
     points.backInsertCenterTopCp1 = points.backInsertCenterTop.shift(
       options.backInsertTopCpAngle,
@@ -89,8 +91,8 @@ export const gusset = {
     points.backInsertOutsideBottom = points.backInsertOutsideGusset.shift(270, backGussetLength)
     points.backInsertCenterBottom = points.backInsertOutsideBottom.shift(180, gussetWidth)
 
-    points.backInsertCenterTopCp1.addCircle(6)
-    points.backInsertOutsideGussetCp1.addCircle(8)
+    // points.backInsertCenterTopCp1.addCircle(6)
+    // points.backInsertOutsideGussetCp1.addCircle(8)
 
     console.log({ bil: paths.backInsertCircle.length(), bcl: paths.backCircle.length() })
 
@@ -120,13 +122,11 @@ export const gusset = {
       var diff = 0
       var iter = 0
       do {
-        points.frontOutsideMiddle = points.frontOutsideMiddle.shift(0, diff).addCircle(8)
-        points.frontOutsideMiddleCp1 = points.frontOutsideMiddle
-          .shift(90, gussetCpLength)
-          .addCircle(10)
-        points.frontOutsideMiddleCp2 = points.frontOutsideMiddle
-          .shift(270, gussetCpLength)
-          .addCircle(15)
+        points.frontOutsideMiddle = points.frontOutsideMiddle.shift(0, diff) //.addCircle(8)
+        points.frontOutsideMiddleCp1 = points.frontOutsideMiddle.shift(90, gussetCpLength)
+        // .addCircle(10)
+        points.frontOutsideMiddleCp2 = points.frontOutsideMiddle.shift(270, gussetCpLength)
+        // .addCircle(15)
 
         const frontGussetPath = new Path()
           .move(points.frontOutside)
@@ -154,6 +154,7 @@ export const gusset = {
           points.backInsertOutsideBottomCp,
           points.backInsertOutsideBottom
         )
+        .hide()
     } else {
       console.log({ store: JSON.parse(JSON.stringify(store)) })
       const frontGussetAngle = store.get('frontGussetAngle')
