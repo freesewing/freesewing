@@ -1,13 +1,13 @@
 accountIssue: Account problem
-accountIssueDesc: Do you have trouble with your FreeSewing account?
-addImage: Add an image
-allOk: Everything is awesome
+accountIssueDesc: Hast du Probleme mit deinem FreeSewing-Konto?
+addImage: Bild hochladen
+allOk: Alles ist fantastisch
 by: von
-bugReport: Report a bug
-bugReportDesc: Is something broken, or not working as expected?
-confirmedIssues: Confirmed issues
-createSupportRequest: Create a support request
-commentAdded: Comment added
+bugReport: Fehler melden
+bugReportDesc: Ist etwas kaputt oder funktioniert nicht wie erwartet?
+confirmedIssues: Bekannte Probleme
+createSupportRequest: Supportanfrage erstellen
+commentAdded: Kommentar hinzugefügt
 communitySupport: Unterstützung der Gemeinschaft
 communitySupport1: Die schnellste Antwort erhältst du, wenn du dich auf <b>discord.freesewing.org</b> begibst und deine Frage im Kanal <b>Support</b> stellst.
 communitySupport2: Die FreeSewing-Community ist ein hilfsbereiter Haufen, daher ist die Wahrscheinlichkeit groß, dass sie dir helfen kann.
@@ -15,19 +15,19 @@ contributorSupport: Mitwirkende Unterstützung
 contributorSupport1: Wenn etwas kaputt ist oder du einen Fehler gefunden hast, kannst du <b>einen Fehler auf GitHub</b>erstellen.
 contributorSupport2: Es ist wahrscheinlicher, dass ein Thema die Aufmerksamkeit der Hauptakteure auf sich zieht, aber es dauert länger, bis eine Antwort kommt.
 description: Beschreibung
-descriptionDocs1: This is where you can describe the issue
+descriptionDocs1: Hier kannst du das Problem beschreiben
 design: Gestaltung
-designDocs1: Pick the FreeSewing design this issue applies to
-designIssue: Report an issue with a FreeSewing Design
-designIssueDesc: Are you having trouble with a FreeSewing design or the pattern you are generating from it?
-docsUpdate: Documentation update
-docsUpdateDesc: Is there something to be improved about our documentation?
-featureRequest: Feature request
-featureRequestDesc: Is there something you would like to see happen or implemented?
-howCanWeSupportYou: How can we support you?
-howCanYouSupportFreeSewing: How can you support FreeSewing?
-issueAssigned: Issue assigned
-issueClosed: Issue closed
+designDocs1: Wähle das FreeSewing-Design aus, bei dem dieses Problem auftritt
+designIssue: Melde ein Problem bei einem FreeSewing Design
+designIssueDesc: Hast du Probleme mit einem FreeSewing-Design oder dem Muster, das du daraus erstellst?
+docsUpdate: Aktualisierung der Dokumentation
+docsUpdateDesc: Gibt es etwas, was wir an unserer Dokumentation verbessern können?
+featureRequest: Neue Funktion vorschlagen
+featureRequestDesc: Gibt es etwas, das du gerne umgesetzt sehen würdest?
+howCanWeSupportYou: Wie können wir dich unterstützen?
+howCanYouSupportFreeSewing: Wie kannst du FreeSewing unterstützen?
+issueAssigned: Eintrag zugewiesen
+issueClosed: Eintrag geschlossen
 issueReferenced: Issue referenced
 issueReopened: Issue Re-Openened
 maintainerSupport: Maintainer-Unterstützung
@@ -36,26 +36,26 @@ maintainerSupport2: Auch wenn Joost die Anfragen seiner Kunden mit Priorität be
 noComments: No comments
 noConfirmedIssues: No confirmed issues
 noReportedIssues: No reported issues
-other: Something else
-otherDesc: Do you have something else you required assistance with?
+other: Etwas anderes
+otherDesc: Gibt es etwas anderes, bei dem du Hilfe brauchst?
 patronSponsor: Patrons / Sponsorship
 patronSponsorDesc: Do you have questions about FreeSewing patronship or (corporate) sponsorship?
-question: Question
-questionDesc: Do you have a general question to ask?
+question: Frage
+questionDesc: Hast du eine allgemeine Frage?
 recentlyResolvedIssues: Recently resolved issues
 reported: Reported
 reportedIssues: Reported issues
 security: Sicherheit
-securityDesc: Do you want to report a security issue or incident?
+securityDesc: Willst du ein Sicherheitsproblem oder einen Vorfall melden?
 status: Status
 submitSupportRequest: Submit support request
 support: Hilfe
 title: Titel
-titleDocs1: This is the title of the issue
-titleDocs2: Best to keep it short and to the point
+titleDocs1: Dies ist der Titel des Eintrags
+titleDocs2: Am besten fasst du dich kurz und erfasst das Wesentliche
 to: to
 updates: Updates
-useGitHubInstead: Use GitHub instead
+useGitHubInstead: Verwende stattdessen GitHub
 whatIsDiscord: Was ist Discord?
 whatIsDiscord1: Discord ist eine kostenlose Chat-Plattform, auf der Gemeinschaften zusammenkommen können, um über ihre Interessen zu sprechen.  Sie unterstützt auch (Gruppen-)Sprach- und Videoanrufe.
 whatIsDiscord2: FreeSewing hat seine eigene Discord-Community (ein <em>Server</em> in Discord-Terminologie) unter
