@@ -1,6 +1,5 @@
 ---
-title: Couture
-order: 300
+title: Terminologie de la couture
 ---
 
 <ReadMore list />

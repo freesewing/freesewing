@@ -1,0 +1,9 @@
+{
+  "git": {
+    "deploymentEnabled": {
+      "i18n": false,
+      "main": false,
+      "production-backend": false
+    }
+  }
+}

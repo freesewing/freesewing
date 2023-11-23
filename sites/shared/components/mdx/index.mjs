@@ -15,6 +15,7 @@ import { DesignInfo } from 'shared/components/designs/info.mjs'
 import { collection } from 'site/hooks/use-design.mjs'
 import { DesignMeasurements } from './design-measurements.mjs'
 import { DesignOptions } from './design-options.mjs'
+import { MeasieImage } from 'shared/components/measurements/image.mjs'
 
 export const components = (site = 'org', slug = []) => {
   const base = {
@@ -57,6 +58,7 @@ export const components = (site = 'org', slug = []) => {
     }
 
   const specific = {}
+  if (typeof slug === 'string') slug = slug.split('/')
   if (
     site === 'org' &&
     slug &&
@@ -74,6 +76,23 @@ export const components = (site = 'org', slug = []) => {
     const url = slug.join('/')
     if (url.indexOf('about/notation') !== -1 || url.indexOf('sewing/on-the-fold') !== -1)
       specific.Legend = Legend
+  }
+
+  // MeasieImage
+  if (site === 'org' && slug) {
+    // Regular MDX - MeasieImage
+    if (slug.length === 2 && slug[0] === 'measurements') {
+      specific.MeasieImage = function MdxMeasieImage() {
+        return <MeasieImage m={slug[1]} />
+      }
+    }
+
+    // Dynamic MDX - MeasieImage
+    if (slug.length === 3 && slug[0] === 'docs' && slug[1] === 'measurements') {
+      specific.MeasieImage = function MdxMeasieImage() {
+        return <MeasieImage m={slug[2]} />
+      }
+    }
   }
 
   return {

@@ -59,7 +59,7 @@ export const EmailSettings = () => {
             current={email}
             original={account.email}
             valid={() => valid}
-            docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/email`} />}
+            docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/email`} />}
           />
           <button
             className="btn mt-4 btn-primary w-full"

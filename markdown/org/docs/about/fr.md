@@ -1,6 +1,5 @@
 ---
-title: Divers
-order: 999
+title: À propos de Freesewing
 ---
 
 <ReadMore list />

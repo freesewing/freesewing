@@ -19,6 +19,7 @@ chooseFromCuratedSetsDesc: If you're just looking to try out our platform, you c
 chooseFromOwnSets: Choose one of your own measurements sets
 chooseFromOwnSetsDesc: Pick any of your own measurements sets that have all required measurements to generate this pattern.
 chooseNewSet: Choose a New Measurements Set
+clearTimingData: Clear timing data
 closure: Closure
 collar: Collar
 columns: columns
@@ -40,9 +41,11 @@ editCurrentMeasiesDesc: Changes you make here will not be saved to your measurem
 editCurrentMeasiesHeader: Edit Pattern Measurements
 editMeasiesByHand: Edit measurements by hand
 editMeasiesByHandDesc: Manually set or override any measurements. These changes will only apply to the current pattern.
-editSettings: Edit configuration
+editSettings: Edit settings
+editSettingsByHand: Edit settings by hand
 elastic: Elastic
 export: Export
+exporting: Exporting
 exportAsData: Export as data
 exportForEditing: Export for editing
 exportForPrinting: Export for printing
@@ -80,6 +83,7 @@ partTransfoYes: Show buttons
 partTransfoYesDesc: Include these buttons on the pattern output (they will not be printed)
 pathInfo: Path info
 patternBookmarkCreated: Pattern bookmark created
+patternEditor: Pattern Editor
 patternInspector: Pattern Inspector
 patternLogs: Pattern logs
 patternSaved: Pattern saved
@@ -106,6 +110,7 @@ showOnlyThisPart: Show only this pattern part
 sleevecap: Sleevecap
 style: Style
 test: Test
+testDesign: Test Design
 testDesignMeasurement: "Test {design} measurements: {measurement}"
 testDesignOption: "Test {design} design options: {option}"
 testDesignSets: "Test {design} across measurements sets"
@@ -116,6 +121,7 @@ testOptionsDesc: Test how the design adapts to changes in a specific design opti
 testPattern: Test pattern
 testSets: Test measurements sets
 testSetsDesc: Test how the design adapts across different measurements sets
+timeDesign: Time Design
 topLeft: Top Left
 weLackSomeMeasies: We lack { nr } measurements to create this pattern
 whereToGoAfterSaveAs: After saving the new pattern, what do you want to do?
@@ -127,3 +133,9 @@ yamlEditViewTitleThing: 'Edit Pattern Configuration for {thing}'
 youCanPickOrEnter: You can either pick a measurements set, or enter them by hand, but we cannot proceed without these measurements.
 youUseCustomValue: You are using the default value
 youUseDefaultValue: You are using a custom value
+veryFast: Very fast
+fast: Fast
+average: Average
+slow: Slow
+verySlow: Very slow
+tooSlow: Too slow

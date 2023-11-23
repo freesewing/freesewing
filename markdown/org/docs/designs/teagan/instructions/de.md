@@ -85,7 +85,7 @@ Hurra! Du hast den schwierigsten Teil geschafft! Optional kannst du die Schnittk
 
 <Tip>
 
-Eine ausführlichere Anleitung zur Strickbindung findest du in den [Aaron Instuctions](/docs/patterns/aaron/instructions).
+Eine ausführlichere Anleitung zum Strickbinden findest du in den [Aaron-Anleitungen](/docs/designs/aaron/instructions).
 
 </Tip>
 

@@ -42,7 +42,7 @@ Si vous utilisez une surjeteuse, vous pouvez coudre les coutures qui ont besoin 
 
 <Note>
 
-Sur le patron, le repère arrière est marquée comme un repère en croix (voir [notre guide des repères de patron](/docs/various/notation/notches/)). Il est recommandé d'en faire un double repère lors de la découpe de vos pièces pour faciliter la différenciation de l'arrière par rapport à l'avant.
+Sur le patron, l'encoche arrière est marquée comme une encoche transversale (voir [notre guide de notation des patrons](/docs/about/notation/notches/)). Il est recommandé d'en faire un double repère lors de la découpe de vos pièces pour faciliter la différenciation de l'arrière par rapport à l'avant.
 
 </Note>
 

@@ -4,7 +4,7 @@ title: "Manteau Carlton : Instructions de couture"
 
 ### Étape 1 : Dessiner et découper les parties manquantes de la doublure et du parement
 
-Certaines pièces pour Carlton nécessitent que vous dessiniez des pièces à partir des pièces existantes. Voici une liste des pièces que vous devez ébaucher, [voir Découpes Carlton](/docs/patterns/carlton/cutting/) pour plus de détails sur la façon de les découper.
+Certaines pièces pour Carlton nécessitent que vous dessiniez des pièces à partir des pièces existantes. Voici une liste des pièces que vous devez ébaucher, [voir Découpes Carlton](/docs/designs/carlton/cutting/) pour plus de détails sur la façon de les découper.
 
 #### Rédaction
 
@@ -56,12 +56,12 @@ N'oubliez pas la marge de couture pour ces pièces lors de la découpe si vous f
 
 #### Coupe
 
-- Découpez toutes les parties ci-dessus dans leurs tissus/toiles respectifs. ([voir Découpes de Carlton](/docs/patterns/carlton/cutting/))
+- Découpez toutes les parties ci-dessus dans leurs tissus/toiles respectifs. ([voir Découpes de Carlton](/docs/designs/carlton/cutting/))
 
 ### Étape 2 : Corrigez-moi
 
 <Fixme>
 
-La documentation relative à ce modèle doit encore être rédigée. En attendant, il existe des instructions préliminaires pour ([Carlita, Carlton](/docs/patterns/carlita/instructions/)) qui devraient vous aider.
+La documentation relative à ce modèle doit encore être rédigée. En attendant, tu trouveras des instructions préliminaires pour ([Carlita, l'homologue de Carlton](/docs/designs/carlita/instructions/)) qui devraient t'aider.
 
 </Fixme>

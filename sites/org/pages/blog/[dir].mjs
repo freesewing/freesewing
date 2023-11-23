@@ -1,6 +1,5 @@
-import { nsMerge } from 'shared/utils.mjs'
+import { nsMerge, localePath } from 'shared/utils.mjs'
 import { pages as posts } from 'site/prebuild/blog.mjs'
-import { getPostSlugPaths } from 'site/components/mdx/posts/utils.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { loadMdxAsStaticProps } from 'shared/mdx/load.mjs'
 import { PostLayout, ns as layoutNs } from 'site/components/layouts/post.mjs'
@@ -12,6 +11,7 @@ const BlogPage = ({ dir, page, mdx, frontmatter }) => {
   return (
     <PageWrapper
       {...page}
+      intro={frontmatter.intro}
       title={frontmatter.title}
       layout={(props) => (
         <PostLayout
@@ -47,10 +47,11 @@ export async function getStaticProps({ params, locale }) {
 }
 
 export const getStaticPaths = async () => {
-  return {
-    paths: getPostSlugPaths(posts),
-    fallback: 'blocking',
+  const paths = []
+  for (const lang in posts) {
+    paths.push(...Object.keys(posts[lang]).map((slug) => localePath(lang, slug)))
   }
+  return { paths, fallback: false }
 }
 
 export default BlogPage

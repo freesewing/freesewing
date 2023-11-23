@@ -2,13 +2,13 @@
 title: Повідомлення про конфіденційність
 ---
 
-**Last update**: 13 August 2023
+**Останнє оновлення**: 13 серпня 2023 року
 
-Це повідомлення про конфіденційність описує персональні дані, які ми зберігаємо. It outlines why we need the data, how long we keep it, and whether we share it with any third-parties (we do not).
+Це повідомлення про конфіденційність описує персональні дані, які ми зберігаємо. У ній зазначено, навіщо нам потрібні дані, як довго ми їх зберігаємо і чи передаємо їх третім особам (ми не передаємо).
 
 Ми впевнені, що це продемонструє нашу відданість принципам конфіденційності.
 
-For clarity, we've broken this up in three different types of roles:
+Для наочності ми розділили їх на три різні типи ролей:
 
 - Для **відвідувачів нашого веб-сайту**ми зберігаємо **[дані про відвідувачів][v]**
 - Для **передплатників нашої розсилки**ми зберігаємо **[дані передплатників][s]**
@@ -17,23 +17,23 @@ For clarity, we've broken this up in three different types of roles:
 ## Як ми використовуємо дані про ваших відвідувачів
 
 <Note>
-This data is stored for anybody who visits our website and connects to our backend APIs.
+Ці дані зберігаються для всіх, хто відвідує наш сайт і підключається до наших внутрішніх API.
 </Note>
 
 ##### Які персональні дані ми зберігаємо?
 
 - Ваша IP-адреса
 
-##### Why do we need this data?
+##### Навіщо нам потрібні ці дані?
 
-- To protect ourselves from abuse.
-- We use the IP address only to blacklist malicious or abusive clients or investigate security incidents.
+- Щоб захистити себе від насильства.
+- Ми використовуємо IP-адресу лише для створення чорного списку зловмисних або образливих клієнтів або для розслідування інцидентів, пов'язаних з безпекою.
 
-##### How long do we keep this data?
+##### Як довго ми зберігаємо ці дані?
 
 - Ми зберігаємо ці журнали не довше 6 місяців.
 
-##### Do we share this data?
+##### Чи ділимося ми цими даними?
 
 - Ні, ніколи.
 
@@ -75,8 +75,8 @@ This data is stored for anybody who visits our website and connects to our backe
 
 - Ваша адреса електронної пошти
 - Ваше ім'я користувача та пароль
-- Body measurements and a (freely chosen) name for any measurements set of pattern you store in your account.
-- Optional: A profile picture, bio, and your GitHub username. An image and notes for each measurements set or pattern stored in your account.
+- Мірки тіла та назву (довільну) для будь-якого набору мірок, який ви зберігаєте у своєму обліковому записі.
+- Необов'язково: Зображення профілю, біографія та ваше ім'я користувача GitHub. Зображення і примітки для кожного набору вимірів або деталі, що зберігаються у вашому обліковому записі.
 
 ##### Навіщо він нам потрібен?
 
@@ -86,15 +86,19 @@ This data is stored for anybody who visits our website and connects to our backe
 
 ##### Як довго ми його зберігаємо?
 
-- Until your remove your account, or until at least 12 months after the last time you connected to our backend.
-- We will always contact you prior to removing any inactive data.
+- Поки ви не видалите свій обліковий запис або поки не пройде щонайменше 12 місяців з моменту останнього підключення до нашого бекенду.
+- Ми завжди зв'яжемося з вами перед видаленням неактивних даних.
 
 ##### Чи ділимося ми нею?
 
 - Ні, ніколи.
 
 
-## Other info relevant to this privacy notice
+## Інша інформація, що стосується цього повідомлення про конфіденційність
+
+### Контролер даних та контактна інформація
+
+З питаннями щодо цього повідомлення про конфіденційність ви можете звернутися до Joost De Cock за адресою joost@joost.at.
 
 ### Контролер даних та контактна інформація
 
@@ -104,49 +108,43 @@ This data is stored for anybody who visits our website and connects to our backe
 
 Ця політика може періодично оновлюватися. Ми вкажемо на це в даних **Останнє оновлення** у верхній частині цього документа.
 
-Більш детальний огляд історії цього документу можна знайти на сайті [, а також на GitHub][1].
-
-### Повне розкриття інформації
-
 Якщо ми дізнаємося про порушення систем безпеки, ми повідомимо вас і органи влади.
+
+### Постачальники послуг
+
+Якщо ви вважаєте, що ваші персональні дані були скомпрометовані, будь ласка, зверніться за адресою joost@joost.at.
 
 Якщо ви вважаєте, що ваші персональні дані були скомпрометовані, будь ласка, зверніться за адресою joost@joost.at.
 
 ### Постачальники послуг
 
-Our hosting providers manage various components of our infrastructure us. Це включає в себе хостинг, зберігання та резервне копіювання.
+Наші хостинг-провайдери керують різними компонентами нашої інфраструктури. Це включає в себе хостинг, зберігання та резервне копіювання.
 
 Хоча це означає, що вони обробляють ваші дані (в строгому сенсі цього слова), їм не потрібен доступ до інформації про вас. Крім того, оскільки ми шифруємо дані профілю в стані спокою, їм нетривіально отримати до них доступ, навіть якщо вони цього захочуть.
 
-### Warrant canaries
-
-Хоча ми не маємо наміру ділитися вашими особистими даними, ми не стоїмо над законом.
+### Ордерні канарки
 
 Якщо ми зобов'язані це зробити за законом або якщо ми вважаємо, що це буде меншим злом, ми розкриємо персональні дані.
 
-So far:
+Якщо ми зобов'язані це зробити за законом або якщо ми вважаємо, що це буде меншим злом, ми розкриємо персональні дані.
 
-- FreeSewing has never turned over our encryption or authentication keys or our customers' encryption or authentication keys to anyone.
-- FreeSewing has never installed any law enforcement software or equipment anywhere on our infrastructure.
-- FreeSewing has never provided any law enforcement organization personal data of any of our users or visitors.
-- FreeSewing has never weakened, compromised, or subverted any of its encryption at the request of law enforcement or another third party.
+Поки що:
 
-### Використання неповнолітніми віком до 16 років
-
-З юридичних причин, вам повинно бути не менше 16 років, щоб користуватися фрісейвінгом.
+- FreeSewing ніколи нікому не передавав наші ключі шифрування або автентифікації чи ключі шифрування або автентифікації наших клієнтів.
+- FreeSewing ніколи не встановлював жодного правоохоронного програмного забезпечення чи обладнання на нашій інфраструктурі.
+- FreeSewing ніколи не надавав жодній правоохоронній організації персональні дані наших користувачів або відвідувачів.
+- FreeSewing ніколи не послаблював, не компрометував і не підривав жодне з своїх шифрувань на вимогу правоохоронних органів або іншої третьої сторони.
 
 ### Дивіться також
 
 - [Ваші права][2]
 - [Ваша згода][3]
 
-[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
+[v]: #how-we-use-your-visitor-data
 
-[2]: /docs/various/rights/
+[2]: /docs/about/rights/
 
 [3]: /account/consent/
-
-[v]: #how-we-use-your-visitor-data
 
 [s]: #how-we-use-your-subscriber-data
 

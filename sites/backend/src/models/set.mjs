@@ -1,5 +1,5 @@
 import { log } from '../utils/log.mjs'
-import { replaceImage, storeImage, importImage } from '../utils/cloudflare-images.mjs'
+import { replaceImage, storeImage } from '../utils/cloudflare-images.mjs'
 import { decorateModel } from '../utils/model-decorator.mjs'
 
 /*
@@ -385,80 +385,4 @@ SetModel.prototype.asPublicSet = function () {
   delete data.public
 
   return data
-}
-
-/*
- *
- * Everything below this comment is part of the v2 => v3 migration code
- * and can be removed once that migration is complete
- */
-
-const migratePerson = (v2) => ({
-  createdAt: new Date(v2.created ? v2.created : v2.createdAt),
-  imperial: v2.units === 'imperial',
-  name: v2.name || '--', // Encrypted, so always set _some_ value
-  notes: v2.notes || '--', // Encrypted, so always set _some_ value
-  measies: v2.measurements || {}, // Encrypted, so always set _some_ value
-  updatedAt: new Date(v2.updatedAt),
-})
-
-/*
- * This is a special import route
- */
-SetModel.prototype.migrate = async function (v2user, userId) {
-  const lut = {} // lookup tabel for v2 handle to v3 id
-  for (const [handle, person] of Object.entries(v2user.people)) {
-    const data = { ...migratePerson(person), userId }
-    data.img = 'default-avatar'
-    try {
-      await this.createRecord(data)
-      lut[handle] = this.record.id
-    } catch (err) {
-      log.warn(err, 'Could not create set')
-      console.log(person)
-    }
-  }
-
-  return lut
-}
-/*
- * This is a special route not available for API users
- */
-SetModel.prototype.import = async function (v2user, userId) {
-  const lut = {} // lookup tabel for v2 handle to v3 id
-  for (const [handle, person] of Object.entries(v2user.people)) {
-    const data = { ...migratePerson(person), userId }
-    await this.createRecord(data)
-    // Now that we have an ID, we can handle the image
-    if (person.picture && person.picture.slice(-4) !== '.svg') {
-      const imgId = `set-${this.record.id}`
-      const imgUrl =
-        'https://static.freesewing.org/users/' +
-        encodeURIComponent(v2user.handle.slice(0, 1)) +
-        '/' +
-        encodeURIComponent(v2user.handle) +
-        '/people/' +
-        encodeURIComponent(person.handle) +
-        '/' +
-        encodeURIComponent(person.picture)
-      data.img = await importImage({
-        id: imgId,
-        metadata: {
-          user: userId,
-          v2PersonHandle: handle,
-        },
-        url: imgUrl,
-      })
-      data.img = imgId
-    } else data.img = 'default-avatar'
-    try {
-      await this.createRecord(data)
-      lut[handle] = this.record.id
-    } catch (err) {
-      log.warn(err, 'Could not create set')
-      console.log(person)
-    }
-  }
-
-  return lut
 }

@@ -4,7 +4,7 @@ title: "Abrigo Carlton: Instrucciones de corte"
 
 <Note>
 
-Algunas partes tienen que redactarse a partir de las existentes. En [instructions](/docs/patterns/carlton/instructions) se indica cómo redactarlas.
+Algunas partes tienen que redactarse a partir de las existentes. En [instructions](/docs/designs/carlton/instructions) se indica cómo redactarlas.
 
 </Note>
 

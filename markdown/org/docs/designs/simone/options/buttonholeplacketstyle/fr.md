@@ -18,6 +18,6 @@ Comme le sans couture n'est possible que sur une patte de boutonnage _coupée_, 
 
 </Note>
 
-## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_buttonholeplacketstyle_sample.svg "Effet de cette option sur le motif")
+
+

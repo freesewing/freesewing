@@ -188,13 +188,24 @@ Lorsque vous avez terminé, ouvrez la couture au fer.
 
 ## Étape 9 : Fermer la fourche
 
+<tip>
+
+Vérifie deux fois que tes jambes droite et gauche correspondent aux marques du patron. L'entrejambe de la jambe droite doit dépasser légèrement de la gauche. Reporte-toi au patron et coupe l'excédent sur la jambe gauche si nécessaire.
+
+Il peut être précieux de marquer à la craie ou au fil l'**avant central** de chaque jambe. Cela t'aidera à t'assurer que les pièces sont au bon endroit pendant la construction de la mouche.
+
+</tip>
+
 Assurez-vous qu'une jambe est retournée avec le bon côté dehors, et l'autre a le bon côté dedans.
 
 Maintenant passez la jambe avec l'endroit à l'intérieur de la jambe qui a l'endroit dedans. De cette façon, elles sont endroit contre endroit.
 
-Alignez la couture de fourche, à partir de la taille arrière, en fixant les deux moitiés ensemble pendant que vous vous dirigez vers la braguette. Arrêtez au cran de braguette la plus bas.
+Alignez la couture de fourche, à partir de la taille arrière, en fixant les deux moitiés ensemble pendant que vous vous dirigez vers la braguette. **Arrête-toi à l'encoche de la braguette** et assure-toi de faire un point arrière.
 
 Quand vous avez terminé. Faites-le à nouveau. Coudre toujours la couture de fourche deux fois. C'est l'une de ces bonnes pratiques que vous ignorerez à vos propres risques.
+
+![Couture croisée fermée](CloseCrossseam.svg)
+
 
 <Tip>
 
@@ -207,7 +218,7 @@ C'est une de ces choses que vous finirez par adorer chaque fois que vous les por
 
 ## Étape 10: Construire la braguette
 
-### Extension "Fermer la mouche"
+### Ferme la rallonge de la braguette et fais une surpiqûre
 
 Repliez le rallonge de la mouche sur sa ligne de pliage avec de bons côtés ensemble.
 
@@ -215,67 +226,82 @@ Maintenant coudre le long du fond, pour fermer l'extension de la mouche.
 
 Garnir la moitié de la marge de couture pour retirer en vrac avant de la retirer et de la presser sur le bon côté.
 
-### Serger l'extension de la mouche et faire face
+#### Serger l'extension de la mouche et faire face
 
 Serge (ou zig-zag) le long du côté ouvert de l'extension de la mouche. Pas besoin de serrer le dessus car cela se fera prendre dans notre ceinture.
 
 pendant que vous y êtes, aussi serez-vous le long de la totalité de la mouche face aux bords en forme de J.
 
-### Couper la marge de couture supplémentaire sur le devant de la jambe gauche
+![Close Extension et Serge](CloseExtensionAndSerge.svg)
 
-Il y a une marge de couture supplémentaire qui coule le long de la mouche. Nous avons seulement besoin de cela sur le panneau de droite. Coupez-le sur le panneau de gauche pour que vous ayez la marge de couture habituelle seulement.
 
 ### Fixer la face de la mouche
 
-Coudre la mouche face à gauche. Placer les deux côtés endroit contre endroit, en alignant le haut.
+Couds le revers de la braguette à la jambe gauche. Tu vas coudre légèrement au-delà du point de couture transversale, alors fais attention à ne pas gêner le surplus de couture de la jambe droite et vise à coudre directement sur la ligne de couture transversale.
 
-### Rentre la pointe de la mouche dans la face avant.
+![Fixe la façade](AttachFacing.svg)
 
-Plier le fond de la mouche en faisant face à la couture à l'intérieur et sécuriser avec quelques points.
+### Finis la face de la mouche
 
-### Coudre le bord de la mouche face à la couture
+Coupe le parement de la braguette à la moitié de la marge de couture.  
+Rentre la pointe de la braguette et fixe-la avec quelques points de couture. Couds le bord de la braguette jusqu'à la marge de couture. Repasse le surplus de couture vers le parement et sous-pique le parement pour une finition propre. Encore une fois, en gardant le surplus de couture de la jambe droite à l'écart.
 
-Coudre la mouche face à la marge de couture. Assurez-vous de laisser le panneau avant hors de celui-ci.
+![Finition de la façade](FinishFacing.svg)
 
-### Appuyez sur la couture de croix, la couture de la mouche et le bord de la mouche
+### Couds la fermeture à glissière à l'extension de la braguette.
 
-Appuyez sur ouvrir la couture croisée. Appuyez sur la mouche face au côté.
+<tip>
 
-Pliez ensuite la marge de couture supplémentaire sur la jambe avant droite et appuyez dessus vers le bas.
+**Longueur de la fermeture éclair**
 
-### Collez la fermeture éclair à l'extension de la mouche
+Il est bon de s'assurer que ton arrêt de fermeture éclair se termine avant la ligne de points indiquée sur le modèle. Cela te permettra de ne pas coudre par-dessus ton arrêt de fermeture éclair et de réduire la tension sur le bas de la braguette. Si ta fermeture éclair est trop longue, tu peux faire un point zig zag de longueur 0 pour créer une nouvelle butée (uniquement sur la fermeture éclair elle-même).
 
-Placez la fermeture éclair le long du bord (légèrement courbe) de l'extension de la mouche.
+</tip>
 
-Maintenant coudre le long du bord. Pas besoin de se rapprocher de la fermeture à glissière, il suffit de coudre le long du bord pour les tenir en place.
+Fais un point de bordure le long du bord gauche de la fermeture à glissière jusqu'au bord surpiqué de l'extension de braguette pour la maintenir en place.
 
-### Attacher la fermeture éclair à la mouche
+![Baste Zipper](BasteZipper.svg)
 
-Placez maintenant la mouche de la jambe avant droite avec la marge de couture supplémentaire que vous avez pliée sur le haut de la glissière.
 
-Utilisez une couture au bord du pied zippé, le long du bord zippé.
+### Couds la jambe droite à la fermeture à glissière.
 
-<Tip>
+Commence par repasser le surplus de couture de la jambe droite sur l'arrière.
 
-Vous pourriez vouloir baster cette première fois pour vous assurer qu'elle est bien parallèle à la fermeture à glissière. Fermé, mais pas trop proche.
+<tip>
 
-</Tip>
+N'oublie pas que la marge de couture commence légèrement à droite du devant central, le devant central est marqué en violet sur l'image, assure-toi de ne pas plier le long de la ligne du devant central par erreur.
 
-### Coudre la fermeture éclair sur la mouche
+</tip>
 
-Coudre ensuite l'autre côté de la fermeture à la mouche. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
+Veille à placer le bord plié de la jambe droite juste à gauche des dents de la fermeture éclair pour éviter que le tissu ne se prenne dans la fermeture.
 
-### Terminer la couture de croix
+Arrête de coudre au niveau de l'encoche supérieure de l'extension de la braguette, légèrement au-dessus de la couture transversale, et n'oublie pas de faire un point arrière. Si tu ne le fais pas, tu ne pourras pas maintenir l'extension hors du chemin lorsque tu couds la couture en J.
 
-Coudre le dernier morceau de la couture de croix jusqu'à l'encoche la plus haute.
+![Attache la rallonge à la jambe droite](AttachExtensionToRightLeg.svg)
+
+
+### Attache la fermeture à glissière au parement de la braguette.
+
+Fais attention à aligner la jambe gauche sur le centre droit avant. Il peut être utile d'épingler ou de coudre à travers le parement et le côté droit de la bande de la fermeture à glissière. (Nous devons coudre le côté gauche de la bande de fermeture éclair à la jambe gauche). En t'assurant que tout est doublé, couds le parement de la braguette sur le côté gauche de la fermeture à glissière. Essaie de t'approcher de la fermeture éclair, mais pas trop.
+
+![Fixe la face à la fermeture éclair](AttachFacingToZipper.svg)
+
 
 ### Coudre la couture J-de la mouche
 
-Désormais, renverser la soi-disant couture J-de la mouche. Assurez-vous de ne pas prendre le contrôle de l'extension du vol.
+<tip>
 
-### Tape le bas de la mouche
+Utilise un morceau de papier comme guide pour coudre la couture en J, il peut être découpé dans ton patron le long de la ligne de couture indiquée.
 
-Désormais, abîmez le fond même de la couture J-(la partie horizontale) mais cette fois-ci assurez-vous de prendre également la prolongation de la mouche.
+</tip>
+
+Désormais, renverser la soi-disant couture J-de la mouche. Assurez-vous de ne pas prendre le contrôle de l'extension du vol. Comme tu n'as pas cousu tout le long de l'extension de la braguette, tu devrais pouvoir l'épingler.
+
+#### Tape le bas de la mouche
+
+Maintenant, repasse le bas de la couture en J (la partie horizontale), mais cette fois-ci, assure-toi d'attraper aussi l'extension de la mouche. Tu peux aussi choisir d'ajouter un point d'arrêt supplémentaire le long du joint en J (illustré en violet).
+
+![Coudre la couture en J](SewTheJSeam.svg)
 
 ## Étape 11 : Fixer les boucles de ceinture
 
@@ -291,11 +317,15 @@ Couper une bande de 80 cm de long (32 po) et de 2,8 cm de large (1 1/8 po).
 
 Serge (ou zigzag) le bord long de la bande des deux côtés.
 
+![Finir les bords de la boucle](FinishLoopEdges.svg)
+
 Plier un côté à l'intérieur, et l'autre côté dessus. Ensuite appuyez sur votre fer à repasser. Le résultat final devrait être une bande longue d'environ 1 cm de large.
 
 Maintenant coudre sur toute la longueur de la bande, piquer au milieu de celle-ci. Assurez-vous d'utiliser une longueur de point généreuse pour cela.
 
 Enfin, coupez votre bande de courroies de longueur en 8 parties égales pour faire 8 boucles de courroie.
+
+![Pique et coupe les boucles](StitchAndCutLoops.svg)
 
 ### Attacher les boucles de ceinture
 

@@ -15,6 +15,7 @@ export function hash(string) {
  *
  * This is not used in anything cryptographic. It is only used as a temporary
  * username to avoid username collisions or to generate (long) API key secrets
+ * and as scratch codes for MFA
  */
 export function randomString(bytes = 8) {
   return randomBytes(bytes).toString('hex')
@@ -114,7 +115,7 @@ export function encryption(stringKey, salt = 'FreeSewing') {
  * Salts and hashes a password
  */
 export function hashPassword(input, salt = false) {
-  if (salt === false) salt = Buffer.from(randomBytes(16))
+  if (salt === false) salt = Buffer.from(randomBytes(16), 'hex')
   else salt = Buffer.from(salt, 'hex')
   const hash = scryptSync(input, salt, 64)
 

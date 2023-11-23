@@ -1,5 +1,5 @@
 ---
-title: "Урсула роздягається: Варіанти дизайну"
+title: "Ума роздягається: Варіанти дизайну"
 ---
 
-<DesignOptions design='ursula' />
+<DesignOptions design='uma' />

@@ -11,182 +11,122 @@ function waraleeWaistband(
     paths,
     Snippet,
     snippets,
-    complete,
-    paperless,
     macro,
     sa,
     store,
+    expand,
+    units,
     part,
   }
 ) {
-  const WidthReduction = 6
-  let waistBand = store.get('waistBand')
-  let waistBandLengthFront = points.fWaistSideHem.dist(points.fWaistFrontOverlapHem)
-  let waistBandLengthBack =
+  const waistBand = store.get('waistBand')
+  const waistBandLengthFront = points.fWaistSideHem.dist(points.fWaistFrontOverlapHem)
+  const waistBandLengthBack =
     points.bWaistSideHem.dist(points.bWaistBackHem) +
     points.bWaistBackHem.dist(points.bWaistBackOverlapHem)
 
-  let strapLength = measurements.waist + measurements.crotchDepth * 1.75
+  let waistBandLength = measurements.waist + measurements.crotchDepth * 1.75
   let partNr = 0
 
   switch (type) {
     case 'waistBandFront':
       if (false == options.separateWaistband && 'welt' == options.frontPocketStyle) {
-        return part
+        return part.hide()
       }
       partNr = 9
-      points.tr = points.fWaistSide
-      points.mr = points.fWaistSideHem
-      points.br = points.fWaistSideSeam
-      points.ml = points.fWaistSideHem.shift(180, (waistBandLengthFront / WidthReduction) * 2)
-      points.tl = points.ml.shift(90, waistBand)
-      points.bl = points.ml.shift(270, waistBand)
-
-      macro('hd', {
-        from: points.ml,
-        to: points.mr,
-        y: points.mr.y,
-        text: part.units(waistBandLengthFront),
-      })
-
+      waistBandLength = waistBandLengthFront * 2
       break
 
     case 'waistBandBack':
       if (false == options.separateWaistband && 'welt' == options.frontPocketStyle) {
-        return part
+        return part.hide()
       }
       partNr = 10
-      points.tl = points.bWaistSide
-      points.ml = points.bWaistSideHem
-      points.bl = points.bWaistSideSeam
-      points.mr = points.bWaistSideHem.shift(0, (waistBandLengthBack / WidthReduction) * 2)
-      points.tr = points.mr.shift(90, waistBand)
-      points.br = points.mr.shift(270, waistBand)
-
-      macro('hd', {
-        from: points.ml,
-        to: points.mr,
-        y: points.mr.y,
-        text: part.units(waistBandLengthBack),
-      })
-
+      waistBandLength = waistBandLengthBack * 2
       break
 
     case 'strapFront':
       partNr = 7
-      strapLength -= waistBandLengthFront * 2
-      strapLength += options.knotInFront ? measurements.waist / 2 : 0
-
-      points.mr = new Point(0, 0)
-      points.tr = points.mr.shift(90, waistBand)
-      points.br = points.mr.shift(270, waistBand)
-      points.ml = points.mr.shift(180, (waistBandLengthFront / WidthReduction) * 2)
-      points.tl = points.ml.shift(90, waistBand)
-      points.bl = points.ml.shift(270, waistBand)
-
-      macro('hd', {
-        from: points.ml,
-        to: points.mr,
-        y: points.mr.y,
-        text: part.units(strapLength),
-      })
-
+      waistBandLength -= waistBandLengthFront * 2
+      waistBandLength += options.knotInFront ? measurements.waist / 2 : 0
       break
 
     case 'strapBack':
       partNr = 8
-      strapLength -= waistBandLengthBack * 2
-      strapLength += options.knotInFront ? 0 : measurements.waist / 2
-
-      points.mr = new Point(0, 0)
-      points.tr = points.mr.shift(90, waistBand)
-      points.br = points.mr.shift(270, waistBand)
-      points.ml = points.mr.shift(180, (waistBandLengthFront / WidthReduction) * 2)
-      points.tl = points.ml.shift(90, waistBand)
-      points.bl = points.ml.shift(270, waistBand)
-
-      macro('hd', {
-        from: points.ml,
-        to: points.mr,
-        y: points.mr.y,
-        text: part.units(strapLength),
-      })
-
+      waistBandLength -= waistBandLengthBack * 2
+      waistBandLength += options.knotInFront ? 0 : measurements.waist / 2
       break
   }
 
-  points.zigzagTop = points.tr.shift(180, waistBandLengthFront / WidthReduction)
-  points.zigzagTopR = points.zigzagTop.shift(0, waistBand / 8)
-  points.zigzagTopT = points.zigzagTop.shift(90, waistBand / 4)
-  points.zigzagTopL = points.zigzagTop.shift(180, waistBand / 8)
-  points.zigzagTopB = points.zigzagTop.shift(270, waistBand / 4)
-  points.zigzagBottom = points.br.shift(180, waistBandLengthFront / WidthReduction)
-  points.zigzagBottomR = points.zigzagBottom.shift(0, waistBand / 8)
-  points.zigzagBottomT = points.zigzagBottom.shift(90, waistBand / 4)
-  points.zigzagBottomL = points.zigzagBottom.shift(180, waistBand / 8)
-  points.zigzagBottomB = points.zigzagBottom.shift(270, waistBand / 4)
+  if (!expand) {
+    // Expand is off, do not draw the part but flag this to the user
+    store.flag.note({
+      msg: `waralee:cut` + type,
+      replace: {
+        width: units(waistBand * 2),
+        length: units(waistBandLength),
+      },
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expand')
 
-  paths.ZZtop = new Path()
-    .move(points.zigzagTopR)
-    .line(points.zigzagTopT)
-    .line(points.zigzagTopB)
-    .line(points.zigzagTopL)
-    .attr('class', 'dotted')
-  paths.ZZbottom = new Path()
-    .move(points.zigzagBottomR)
-    .line(points.zigzagBottomT)
-    .line(points.zigzagBottomB)
-    .line(points.zigzagBottomL)
-    .attr('class', 'dotted')
-  paths.right = new Path()
-    .move(points.zigzagBottomR)
-    .line(points.br)
-    .line(points.mr)
-    .line(points.tr)
-    .line(points.zigzagTopR)
-  paths.left = new Path()
-    .move(points.zigzagBottomL)
-    .line(points.bl)
-    .line(points.ml)
-    .line(points.tl)
-    .line(points.zigzagTopL)
+    return part.hide()
+  }
+
+  store.cutlist.addCut({ cut: 1, from: 'fabric' })
+
+  points.tl = new Point(0, 0)
+  points.bl = new Point(0, waistBandLength)
+  points.tm = new Point(waistBand, 0)
+  points.bm = new Point(waistBand, waistBandLength)
+  points.tr = new Point(waistBand * 2, 0)
+  points.br = new Point(waistBand * 2, waistBandLength)
 
   paths.seam = new Path()
     .move(points.br)
-    .line(points.mr)
     .line(points.tr)
     .line(points.tl)
-    .line(points.ml)
     .line(points.bl)
     .line(points.br)
     .close()
-    .hide()
 
-  // Complete?
-  if (complete) {
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+  paths.fold = new Path().move(points.tm).line(points.bm).addClass('fabric dotted').setText('fold')
 
-    points.title = points.tl.shiftFractionTowards(points.br, 0.2).shift(270, 20)
-    macro('title', {
-      nr: partNr,
-      at: points.title,
-      title: type,
-      prefix: 'front',
-      scale: 0.4,
-    })
+  if (sa) paths.sa = paths.seam.offset(sa).addClass('fabric sa')
 
-    points.logo = points.tl.shiftFractionTowards(points.br, 0.8)
-    snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.3)
-  }
-  // Paperless?
-  if (paperless) {
-    macro('vd', {
-      id: 1,
-      from: points.tr,
-      to: points.br,
-      x: points.br.x + sa + 10,
-    })
-  }
+  store.cutlist.addCut({ cut: 1, from: 'fabric' })
+
+  points.title = new Point(waistBand, waistBandLength * 0.2)
+  macro('title', {
+    nr: partNr,
+    at: points.title,
+    title: type,
+    scale: 0.4,
+    align: 'center',
+  })
+
+  points.logo = new Point(waistBand, waistBandLength * 0.4)
+  snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.3)
+
+  macro('hd', {
+    id: 'w',
+    from: points.tl,
+    to: points.tr,
+    y: points.tl.y - sa - 10,
+  })
+  macro('vd', {
+    id: 'h',
+    from: points.tr,
+    to: points.br,
+    x: points.br.x + sa + 10,
+  })
 
   return part
 }

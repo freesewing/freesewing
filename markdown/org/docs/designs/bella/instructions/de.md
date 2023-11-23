@@ -17,8 +17,8 @@ Die Blöcke werden in der Regel nicht so hergestellt, wie sie sind, sondern dien
 
 - Schließe die vorderen Brust- und Taillenabnäher.
 - Hintergrunddarts schließen.
-- With _good sides together_ sew the backs to the front at the shoulder seams, _easing_ the backs to fit the front.
-- With _good sides together_ sew the backs to the front at the side seams.
+- _lege die Rückseiten an den Schulternähten zusammen_ nähe die Rückseiten an die Vorderseite _passe die Rückseiten an die Vorderseite an_ .
+- Lege _gut zusammen_ und nähe die Rückseiten an den Seitennähten an die Vorderseite.
 
 <Tip>
 

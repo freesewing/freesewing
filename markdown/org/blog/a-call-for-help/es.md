@@ -62,9 +62,9 @@ Así que me tomo a pecho el consejo de Julian y pido ayuda. Pero antes de llegar
 
 Para asegurarte de que tus valores están alineados con los de FreeSewing, tómate un momento para familiarizarte con:
 
- - [Nuestras normas comunitarias](/docs/various/community-standards/)
+ - [Nuestras normas comunitarias](/docs/about/community-standards/)
  - [Nuestro código de conducta](https://freesewing.dev/contributors/code-of-conduct/)
- - [Nuestra promesa de ingresos](/docs/various/pledge/)
+ - [Nuestra promesa de ingresos](/docs/about/pledge/)
 
 Si leer eso te ha hecho feliz en lugar de enfadarte, nos vendría bien tu ayuda :)
 
@@ -147,7 +147,7 @@ Sabes hacer cosas bonitas, aunque no estés seguro de cómo hacerlas funcionar r
 
 ### ¿Qué gano yo?
 
-No podemos ofrecerte dinero. Por favor, [lee nuestro compromiso de ingresos](/docs/various/pledge/) para entender por qué es así.
+No podemos ofrecerte dinero. Por favor, [lee nuestro compromiso de ingresos](/docs/about/pledge/) para entender por qué es así.
 
 Lo que podemos ofrecer es responsabilidad, reconocimiento y una participación en algo que se esfuerza por ser una fuerza del bien en este mundo.
 

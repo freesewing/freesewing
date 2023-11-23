@@ -1,7 +1,7 @@
 ---
-title: Profile Image
+title: Imagen de perfil
 ---
 
-You can choose a **profile image** to further personalize your account.
+Puedes elegir una imagen de perfil **** para personalizar aún más tu cuenta.
 
-It can be a picture of you, your cat, your favourite cartoon character. Te haces.
+Puede ser una foto tuya, de tu gato, de tu personaje de dibujos animados favorito. Te haces.

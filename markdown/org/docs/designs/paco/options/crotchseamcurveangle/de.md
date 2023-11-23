@@ -8,6 +8,6 @@ Steuert den Winkel der Nahtkurve im Schritt.
 - Wenn du diese Option erhöhst, wird die Schrittnaht in einem Winkel von 180° gezogen.
 
 
-## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](paco_crotchseamcurveangle_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+

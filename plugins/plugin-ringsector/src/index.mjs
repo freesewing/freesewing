@@ -52,7 +52,7 @@ export const plugin = {
       for (const id of Object.values(store.get([...storeRoot, 'paths']))) delete paths[id]
       for (const id of Object.values(store.get([...storeRoot, 'points']))) delete points[id]
     },
-    ringsector: function (mc, { utils, Point, points, Path, paths, store, part }) {
+    ringsector: function (mc, { utils, Point, points, Path, paths, store }) {
       const {
         angle,
         insideRadius,
@@ -66,7 +66,7 @@ export const plugin = {
        * Get the list of IDs
        */
       const ids = getIds(keys, id)
-      const pathId = getIds(['path'], id).path
+      const pathIds = getIds(['path'], id)
 
       /**
        * Calculates the distance of the control point for the internal
@@ -126,7 +126,7 @@ export const plugin = {
 
       // Flip all the points to generate the full ring sector
       for (const id of ['in2', 'in2c', 'in1c', 'ex1c', 'ex2c', 'ex2']) {
-        points[ids[id + 'Flipped']] = points[ids[id]].flipX()
+        points[ids[id + 'Flipped']] = points[ids[id]].flipX(center)
       }
 
       // Rotate all the points angle/2
@@ -145,21 +145,28 @@ export const plugin = {
           points[ids[id] + 'Rotated'].rotate(deg, points[ids.in2Flipped])
         }
       }
-      // Return the path of the full ring sector
-      paths[pathId] = new Path()
-        .move(points[ids.in2Flipped])
-        .curve(points[ids.in2cFlipped], points[ids.in1cFlipped], points[ids.in1])
-        .curve(points[ids.in1c], points[ids.in2c], points[ids.in2])
-        .line(points[ids.ex2])
-        .curve(points[ids.ex2c], points[ids.ex1c], points[ids.ex1])
-        .curve(points[ids.ex1cFlipped], points[ids.ex2cFlipped], points[ids.ex2Flipped])
+      // Construct the path of the full ring sector
+      paths[pathIds.path] = new Path()
+        .move(points[ids.ex2Flipped])
+        .curve(points[ids.ex2cFlipped], points[ids.ex1cFlipped], points[ids.ex1])
+        .curve(points[ids.ex1c], points[ids.ex2c], points[ids.ex2])
+        .line(points[ids.in2])
+        .curve(points[ids.in2c], points[ids.in1c], points[ids.in1])
+        .curve(points[ids.in1cFlipped], points[ids.in2cFlipped], points[ids.in2Flipped])
         .close()
 
       /*
        * Store all IDs in the store so we can remove this macro with rmringsector
        */
-      store.set(['parts', part.name, 'macros', name, 'ids', id, 'paths'], { path: pathId })
-      store.set(['parts', part.name, 'macros', name, 'ids', id, 'points'], ids)
+      store.storeMacroIds(mc.id, {
+        paths: pathIds,
+        points: ids,
+      })
+
+      /*
+       * Returning ids is a best practice for FreeSewing macros
+       */
+      return store.getMacroIds(mc.id)
     },
   },
 }

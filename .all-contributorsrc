@@ -1050,6 +1050,60 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "TheTanay902",
+      "name": "Tanay Toshniwal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/84577440?v=4",
+      "profile": "https://github.com/TheTanay902",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "biswassushmita947",
+      "name": "Sushmita Biswas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/145688707?v=4",
+      "profile": "https://github.com/biswassushmita947",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "sohamtembhurne",
+      "name": "Soham Tembhurne",
+      "avatar_url": "https://avatars.githubusercontent.com/u/82658685?v=4",
+      "profile": "https://github.com/sohamtembhurne",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Himanshu1801",
+      "name": "Himanshu Singh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78968566?v=4",
+      "profile": "https://github.com/Himanshu1801",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Yash-Ambekar",
+      "name": "Yash Anil Ambekar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96481913?v=4",
+      "profile": "https://github.com/Yash-Ambekar",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "SophiaH67",
+      "name": "Sophia",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10786212?v=4",
+      "profile": "https://www.sophiah.gay/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true,

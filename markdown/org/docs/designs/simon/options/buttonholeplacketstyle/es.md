@@ -18,6 +18,6 @@ Como la ausencia de costuras sólo es posible en una tapeta _cortada_, esta opci
 
 </Note>
 
-## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_buttonholeplacketstyle_sample.svg "Efecto de esta opción en el patrón")
+
+

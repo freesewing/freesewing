@@ -25,5 +25,5 @@ export const TimeAgo = ({ date }) => {
     else if (i.months > 1) ago += `${i.months} ${t('months')}`
   }
 
-  return capitalize(`${ago} ${t('ago')}`)
+  return `${ago} ${t('ago')}`
 }

@@ -1,11 +1,13 @@
 import { designs, tags, techniques } from 'shared/config/designs.mjs'
-import { Design, DesignLink, ns as designNs } from 'shared/components/designs/design.mjs'
+import { DesignCard, DesignLink, ns as designNs } from 'shared/components/designs/design.mjs'
 import { useTranslation } from 'next-i18next'
-import { ShowcaseIcon, CisFemaleIcon, ResetIcon } from 'shared/components/icons.mjs'
+import { useState } from 'react'
+import { FilterIcon, ShowcaseIcon, CisFemaleIcon, ResetIcon } from 'shared/components/icons.mjs'
 import { useAtom } from 'jotai'
 import { atomWithHash } from 'jotai-location'
 import { capitalize, objUpdate } from 'shared/utils.mjs'
 import { Difficulty } from 'shared/components/designs/difficulty.mjs'
+import { collection } from 'site/hooks/use-design.mjs'
 
 export const ns = designNs
 
@@ -18,11 +20,12 @@ export const useFilter = () => {
 export const DesignPicker = ({ linkTo = 'new', altLinkTo = 'docs' }) => {
   const { t } = useTranslation('designs')
   const [filter, setFilter] = useFilter()
+  const [showFilters, setShowFilters] = useState(false)
 
   // Need to sort designs by their translated title
   // let's also apply the filters while we're at it
   const translated = {}
-  for (const d in designs) {
+  for (const d of collection) {
     let skip = false
     if (
       filter.tag &&
@@ -61,79 +64,104 @@ export const DesignPicker = ({ linkTo = 'new', altLinkTo = 'docs' }) => {
               <DesignLink key={d} linkTo={linkTo} altLinkTo={altLinkTo} name={capitalize(d)} />
             ))}
         </div>
-        <h6 className="text-center mb-0 mt-4">
-          Filters ({Object.keys(translated).length}/{Object.keys(designs).length})
-        </h6>
-        <div className="flex flex-row gap-1 items-center justify-center flex-wrap my-2">
-          <b>{t('tags:tags')}:</b>
-          {tags.map((tag) => (
+        {showFilters ? (
+          <>
+            <h6 className="text-center mb-0 mt-4">
+              Filters ({Object.keys(translated).length}/{Object.keys(designs).length})
+            </h6>
+            <div className="flex flex-row gap-1 items-center justify-center flex-wrap my-2">
+              <b>{t('tags:tags')}:</b>
+              {tags.map((tag) => (
+                <button
+                  key={tag}
+                  className={`badge font-medium hover:shadow
+                 ${
+                   filter?.tag && Array.isArray(filter.tag) && filter.tag.includes(tag)
+                     ? 'badge badge-success hover:badge-error'
+                     : 'badge badge-primary hover:badge-success'
+                 }`}
+                  onClick={() => toggle('tag', tag)}
+                >
+                  {t(`tags:${tag}`)}
+                </button>
+              ))}
+            </div>
+            <div className="flex flex-row gap-1 items-center justify-center flex-wrap my-4">
+              <b>{t('techniques:techniques')}:</b>
+              {techniques.map((tech) => (
+                <button
+                  key={tech}
+                  className={`badge font-medium hover:shadow
+                 ${
+                   filter?.tech && Array.isArray(filter.tech) && filter.tech.includes(tech)
+                     ? 'badge badge-success hover:badge-error'
+                     : 'badge badge-accent hover:badge-success'
+                 }`}
+                  onClick={() => toggle('tech', tech)}
+                >
+                  {t(`techniques:${tech}`)}
+                </button>
+              ))}
+            </div>
+            <div className="flex flex-row gap-2 items-center justify-center flex-wrap my-4">
+              <b>{t('tags:difficulty')}:</b>
+              {[1, 2, 3, 4, 5].map((score) => (
+                <button
+                  onClick={() => updateFilter('difficulty', score)}
+                  key={score}
+                  className={`btn btn-sm ${
+                    filter.difficulty === score ? 'btn-secondary btn-outline' : 'btn-ghost'
+                  }`}
+                >
+                  <Difficulty score={score} />
+                </button>
+              ))}
+            </div>
+            <div className="flex flex-row gap-4 items-center justify-center flex-wrap my-2">
+              <button
+                className="btn btn-secondary btn-outline"
+                onClick={() => updateFilter('example', !filter.example)}
+              >
+                {filter.example ? <CisFemaleIcon /> : <ShowcaseIcon />}
+                {filter.example ? t('tags:showLineDrawings') : t('tags:showExamples')}
+              </button>
+              <button
+                className="btn btn-secondary btn-outline"
+                onClick={() => setFilter({ example: 1 })}
+              >
+                <ResetIcon />
+                {t('tags:clearFilter')}
+              </button>
+              <button
+                className="btn btn-secondary btn-outline"
+                onClick={() => setShowFilters(false)}
+              >
+                <FilterIcon />
+                {t('tags:hideFilters')}
+              </button>
+            </div>
+          </>
+        ) : (
+          <div className="flex flex-row gap-4 items-center justify-center flex-wrap my-2">
             <button
-              key={tag}
-              className={`badge font-medium hover:shadow
-             ${
-               filter?.tag && Array.isArray(filter.tag) && filter.tag.includes(tag)
-                 ? 'badge badge-success hover:badge-error'
-                 : 'badge badge-primary hover:badge-success'
-             }`}
-              onClick={() => toggle('tag', tag)}
+              className="btn btn-secondary btn-outline"
+              onClick={() => updateFilter('example', !filter.example)}
             >
-              {t(`tags:${tag}`)}
+              {filter.example ? <CisFemaleIcon /> : <ShowcaseIcon />}
+              {filter.example ? t('tags:showLineDrawings') : t('tags:showExamples')}
             </button>
-          ))}
-        </div>
-        <div className="flex flex-row gap-1 items-center justify-center flex-wrap my-4">
-          <b>{t('techniques:techniques')}:</b>
-          {techniques.map((tech) => (
-            <button
-              key={tech}
-              className={`badge font-medium hover:shadow
-             ${
-               filter?.tech && Array.isArray(filter.tech) && filter.tech.includes(tech)
-                 ? 'badge badge-success hover:badge-error'
-                 : 'badge badge-accent hover:badge-success'
-             }`}
-              onClick={() => toggle('tech', tech)}
-            >
-              {t(`techniques:${tech}`)}
+            <button className="btn btn-secondary btn-outline" onClick={() => setShowFilters(true)}>
+              <FilterIcon />
+              {t('tags:showFilters')}
             </button>
-          ))}
-        </div>
-        <div className="flex flex-row gap-2 items-center justify-center flex-wrap my-4">
-          <b>{t('tags:difficulty')}:</b>
-          {[1, 2, 3, 4, 5].map((score) => (
-            <button
-              onClick={() => updateFilter('difficulty', score)}
-              key={score}
-              className={`btn btn-sm ${
-                filter.difficulty === score ? 'btn-secondary btn-outline' : 'btn-ghost'
-              }`}
-            >
-              <Difficulty score={score} />
-            </button>
-          ))}
-        </div>
-        <div className="flex flex-row gap-4 items-center justify-center flex-wrap my-2">
-          <button
-            className="btn btn-secondary btn-outline"
-            onClick={() => updateFilter('example', !filter.example)}
-          >
-            {filter.example ? <CisFemaleIcon /> : <ShowcaseIcon />}
-            {filter.example ? t('tags:showLineDrawings') : t('tags:showExamples')}
-          </button>
-          <button
-            className="btn btn-secondary btn-outline"
-            onClick={() => setFilter({ example: 1 })}
-          >
-            <ResetIcon />
-            {t('tags:clearFilter')}
-          </button>
-        </div>
+          </div>
+        )}
       </div>
-      <div className="grid grid-cols-1 gap-2 mt-4 justify-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+      <div className="grid grid-cols-2 gap-2 mt-4 justify-center sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 mb-8">
         {Object.keys(translated)
           .sort()
           .map((d) => (
-            <Design
+            <DesignCard
               name={translated[d]}
               key={d}
               linkTo={linkTo}

@@ -4,7 +4,7 @@
 import { $$Design$$ } from 'designs/$$design$$/src/index.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { nsMerge } from 'shared/utils.mjs'
+import { nsMerge, getSearchParam } from 'shared/utils.mjs'
 // Hooks
 import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
@@ -20,11 +20,11 @@ import { Loading } from 'shared/components/spinner.mjs'
 // Translation namespaces used on this page
 const ns = nsMerge('$$design$$', wbNs, pageNs)
 
-const EditDesignComponent = ({ id, design, Design, settings, docs }) => (
-  <Workbench preload={{ settings }} saveAs={{ pattern: id }} {...{ design, Design, docs }} />
+const EditDesignComponent = ({ id, design, Design, settings }) => (
+  <Workbench preload={{ settings }} saveAs={{ pattern: id }} {...{ design, Design }} />
 )
 
-const Edit$$Design$$Page = ({ page, docs, id }) => {
+const Edit$$Design$$Page = ({ page }) => {
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
   const { t } = useTranslation(ns)
@@ -46,8 +46,9 @@ const Edit$$Design$$Page = ({ page, docs, id }) => {
         setLoadingStatus([true, 'backendError', true, false])
       }
     }
+    const id = getSearchParam('id')
     if (id) getPattern()
-  }, [id])
+  }, [backend, setLoadingStatus, t])
 
   return (
     // prettier-ignore
@@ -58,7 +59,6 @@ const Edit$$Design$$Page = ({ page, docs, id }) => {
           settings={pattern.settings}
           design="$$design$$"
           Design={$$Design$$}
-          docs={docs}
         />
       ) : (
         <div>
@@ -72,27 +72,15 @@ const Edit$$Design$$Page = ({ page, docs, id }) => {
 
 export default Edit$$Design$$Page
 
-export async function getStaticProps({ locale, params }) {
+export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ns)),
-      id: params.id,
       page: {
         locale,
-        path: ['account', 'patterns', '$$design$$', params.id, 'edit'],
+        path: ['account', 'patterns', '$$design$$'],
         title: '$$Design$$',
       },
     },
-  }
-}
-
-/*
- * getStaticPaths() is used to specify for which routes (think URLs)
- * this page should be used to generate the result.
- */
-export async function getStaticPaths() {
-  return {
-    paths: [],
-    fallback: 'blocking',
   }
 }

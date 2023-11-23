@@ -5,7 +5,7 @@ title: "Bloque de carrocería Brian: Lo que necesitas"
 Para hacer a Brian, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- Aproximadamente 1,25 - 1,5 metros (1,4 - 1,7 yardas) de una tela adecuada ([ver Brian Opciones de tela](/docs/patterns/brian/fabric/))
+- Aproximadamente 1,25 - 1,5 metros (1,4 - 1,7 yardas) de una tela adecuada ([ver Brian Opciones de tela](/docs/designs/brian/fabric/))
 
 Esta lista es para un Bloque de Brian por defecto. Si has hecho o vas a hacer cambios en el bloque, puede que tengas que conseguir elementos adicionales como cierres, encuadernación, etc.
 

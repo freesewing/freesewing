@@ -2,7 +2,17 @@ import { Bezier } from 'bezier-js'
 import { Path } from './path.mjs'
 import { Point } from './point.mjs'
 
+/*
+ * See: https://en.wikipedia.org/wiki/Golden_ratio
+ */
 export const goldenRatio = 1.618034
+
+/*
+ * cbqc = Cubic Bezier Quarter Circle
+ * The value to best approximate a (quarter) circle with cubic Bézier curves
+ * See: https://spencermortensen.com/articles/bezier-circle/
+ */
+export const cbqc = 0.55191502449351
 
 //////////////////////////////////////////////
 //            PUBLIC  METHODS               //
@@ -844,7 +854,7 @@ function matrixTransform(transformationType, matrix, values) {
 /**
  * Combines an array of (SVG) transforms into a single matrix transform
  *
- * @param {array} transorms - The list of transforms to combine
+ * @param {array} transforms - The list of transforms to combine
  * @return {string} matrixTransform - The combined matrix transform
  */
 export function combineTransforms(transforms = []) {
@@ -868,7 +878,7 @@ export function combineTransforms(transforms = []) {
 /**
  * Applies and (SVG) transform to a point's coordinates (x and y)
  *
- * @param {string} transorm - The transform to apply
+ * @param {string} transform - The transform to apply
  * @param {Point} point - The point of which to update the coordinates
  * @return {Point} point - The point with the transform applied to its coordinates
  */
@@ -894,7 +904,7 @@ export function applyTransformToPoint(transform, point) {
  * Get the bounds of a given object after transforms have been applied
  * @param  {Object}           boundsObj   any object with `topLeft` and `bottomRight` properties
  * @param  {Boolean|String[]} transforms  the transforms to apply to the bounds, structured as they would be for being applied as an svg attribute
- * @return {Object}                       `tl` and `br` for the transformed bounds
+ * @return {Object}                       `topLeft` and `bottomRight` for the transformed bounds
  */
 export function getTransformedBounds(boundsObj, transforms = false) {
   if (!boundsObj.topLeft) return {}
@@ -926,7 +936,7 @@ export function getTransformedBounds(boundsObj, transforms = false) {
   )
 
   return {
-    tl: transformedTl,
-    br: transformedBr,
+    topLeft: transformedTl,
+    bottomRight: transformedBr,
   }
 }

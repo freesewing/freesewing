@@ -93,30 +93,6 @@ export async function removeImage(id) {
 }
 
 /*
- * Method that imports and image from URL and does not bother waiting for the answer
- */
-export async function importImage(props, isTest = false) {
-  if (isTest) return props.id || false
-  // Bypass slow ass upload when testing import
-  if (!config.import) return `default-avatar`
-
-  // Only upload user images for now
-  if (props.id.slice(0, 5) !== 'user-') return `default-avatar`
-
-  const form = getFormData(props)
-  /*
-   * The image may already exist, so swallow the error
-   */
-  try {
-    await axios.post(config.api, form, { headers })
-  } catch {
-    // Do nothing
-  }
-
-  return props.id
-}
-
-/*
  * Helper method to construct the form data for cloudflare
  */
 function getFormData({

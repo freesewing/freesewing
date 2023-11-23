@@ -1,6 +1,5 @@
 ---
-title: Overige
-order: 999
+title: Over FreeSewing
 ---
 
 <ReadMore list />

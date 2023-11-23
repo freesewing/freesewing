@@ -4,12 +4,15 @@ title: bartackFractionAlong
 
 The `bartackFractionAlong` macro allows you to add a _bartack_ marker to your
 sewing pattern. More specifically, a bartack along a fraction of a path.  
-It is provided by the [annotations plugin](/reference/plugins/annotations).
+
+It is provided by [plugin-annotations](/reference/plugins/annotations), which is
+part of [core-plugins](/reference/plugins/core) (so it is available by default).
 
 ## Signature
 
 ```js
-macro('banner', {
+macro('bartackFractionAlong', {
+  String id="bartack",
   Number angle=0,
   Number density=3,
   Number end=1,
@@ -19,6 +22,7 @@ macro('banner', {
   Number start=0,
   String suffix='',
   Number width=3,
+  Boolean force = false,
 })
 ```
 
@@ -58,9 +62,8 @@ macro('banner', {
 | `start`      | `0`        | `number`   | At which fraction of the path length (from `0` to `1`) should the bartack start |
 | `suffix`     |            | `string`   | A suffix to apply to the name of the generated path |
 | `width`      | `3`        | `number`   | Width of the bartack |
+| `force`      | `false`    | `boolean`  | Set this to `true` to display the macro output even when `complete` is `false` |
 
-## Result
+## Notes
 
-| Generated Element | Description |
-|-------------------|-------------|
-| `paths.${prefix}bartack${suffix}` | Path generated for the bartack marker |
+This macro takes the `complete` setting into account and won't output anything when both complete and `force` are `false`.

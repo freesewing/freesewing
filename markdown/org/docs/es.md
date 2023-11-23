@@ -6,7 +6,7 @@ Bienvenido a la documentación de FreeSewing para creadores. Here you will find 
 
 Si eres nuevo en FreeSewing, tómate un momento para leer la documentación de iniciación [](/docs/guide/).
 
-<ReadMore />
+<ReadMore recurse />
 
 <Tip>
 

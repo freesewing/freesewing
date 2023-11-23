@@ -9,6 +9,6 @@ Het komt vaak voor dat de rand van de lapels niet helemaal recht is, maar eerder
 - Verhoog deze optie om de reverspunt naar binnen te verschuiven
 - Verlaag deze optie om de reverspunt naar buiten te verschuiven
 
-## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](jaeger_lapelreduction_sample.svg "Effect van deze optie op het patroon")
+
+

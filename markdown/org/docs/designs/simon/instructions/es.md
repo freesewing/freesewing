@@ -465,7 +465,7 @@ Ahora tienes que anclar la manga en el orificio. Para ello, asegúrese de:
 
 La facilidad de manga por defecto para este patrón es 0.5cm. Si usted tiene facilidad de mangas, usted necesita distribuir esa longitud extra uniformemente entre las muestras.
 
-> Si no está seguro de qué es la facilidad de mangas, eche un vistazo a la documentación de [para la opción de patrón de facilidad de manga](/docs/patterns/simon/options/sleevecapease).
+> Si no está seguro de qué es la facilidad de mangas, eche un vistazo a la documentación de [para la opción de patrón de facilidad de manga](/docs/designs/simon/options/sleevecapease).
 
 #### Golpea la manga en el orificio
 

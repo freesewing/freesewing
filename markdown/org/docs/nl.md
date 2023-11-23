@@ -6,7 +6,7 @@ Welkom bij de FreeSewing documentatie voor makers. Hier vind je alle [documentat
 
 Als je nog niet eerder met FreeSewing hebt gewerkt, neem dan even de tijd om de [Aan de slag documentatie](/docs/guide/)te lezen.
 
-<ReadMore />
+<ReadMore recurse />
 
 <Tip>
 

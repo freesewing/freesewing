@@ -1,10 +1,10 @@
 ---
-title: "Trayvon tie: Designer Notes"
+title: "Corbata Trayvon: Designer Notes"
 ---
 
-There's about a million patterns for ties on the internet, so why make another one, right?
+Hay como un millón de patrones para corbatas en Internet, así que ¿para qué hacer otro, no?
 
-Well, this started hen I wanted to make a tie but every pattern I found was cutting corners. Specifically, they all put the seam between the back and the font at the exact tip. Which, sure, is easier to make. But that's not how ties are supposed to be made.
+Bueno, esto empezó cuando quise hacer una corbata, pero todos los patrones que encontré eran cortantes. Concretamente, todos ponen la costura entre la espalda y la fuente en la punta exacta. Que, claro, es más fácil de hacer. Pero no es así como deben hacerse los lazos.
 
 So, I designed this pattern so I could make ties that looks professional, and not home-made.
 

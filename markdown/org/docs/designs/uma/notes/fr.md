@@ -1,5 +1,5 @@
 ---
-title: "Uma undies: Designer Notes"
+title: "Sous-vêtements Uma : Designer Notes"
 ---
 
 This design is inspired by an earlier design (Ursula) which was created by my friend Natalia.
@@ -8,9 +8,9 @@ In the run-up to the v3 release, we discussed the migration of the various desig
 
 Since it's a rather nice design not to mention a popular one, we agreed that I would reincarnate the pattern. While at it, I also mase some changes that people had been asking for, such as the bulge option to make it gender-neutral.
 
-Long story short:
+Pour faire court :
 
-- Everything that is great about this design is thanks to Natalia.
-- Everything that sucks about this design is on me.
+- Tout ce qui est génial dans cette conception, c'est grâce à Natalia.
+- Tout ce qui est nul dans cette conception est de ma faute.
 
 joost

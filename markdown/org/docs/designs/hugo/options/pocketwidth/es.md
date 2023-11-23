@@ -2,6 +2,6 @@
 title: "Anchura de bolsillo"
 ---
 
-This option controls the width of the front pocket.
+Esta opción controla la anchura del bolsillo delantero.
 
 

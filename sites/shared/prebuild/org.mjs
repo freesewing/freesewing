@@ -30,7 +30,7 @@ export const generateNewPatternPages = async (designs, site = 'org') => {
 const generateEditPatternPages = async (designs, site = 'org') => {
   const page = await loadPageTemplate('edit-pattern.mjs')
   for (const design of designs) {
-    const dir = `../${site}/pages/account/patterns/${design}/[id]`
+    const dir = `../${site}/pages/account/patterns/${design}`
     await fs.promises.mkdir(path.resolve(dir), { recursive: true })
     await fs.promises.writeFile(
       path.resolve(`${dir}/edit.mjs`),

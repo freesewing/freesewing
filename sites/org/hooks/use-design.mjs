@@ -20,6 +20,7 @@ import { Cornelius as cornelius } from '@freesewing/cornelius'
 import { Diana as diana } from '@freesewing/diana'
 import { Florence as florence } from '@freesewing/florence'
 import { Florent as florent } from '@freesewing/florent'
+import { Gozer as gozer } from '@freesewing/gozer'
 import { Hi as hi } from '@freesewing/hi'
 import { Holmes as holmes } from '@freesewing/holmes'
 import { Hortensia as hortensia } from '@freesewing/hortensia'
@@ -30,6 +31,7 @@ import { Lucy as lucy } from '@freesewing/lucy'
 import { Lunetius as lunetius } from '@freesewing/lunetius'
 import { Noble as noble } from '@freesewing/noble'
 import { Octoplushy as octoplushy } from '@freesewing/octoplushy'
+import { Onyx as onyx } from '@freesewing/onyx'
 import { Paco as paco } from '@freesewing/paco'
 import { Penelope as penelope } from '@freesewing/penelope'
 import { Sandy as sandy } from '@freesewing/sandy'
@@ -70,6 +72,7 @@ const designs = {
   diana,
   florence,
   florent,
+  gozer,
   hi,
   holmes,
   hortensia,
@@ -80,6 +83,7 @@ const designs = {
   lunetius,
   noble,
   octoplushy,
+  onyx,
   paco,
   penelope,
   sandy,

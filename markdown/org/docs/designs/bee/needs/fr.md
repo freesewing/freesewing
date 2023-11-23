@@ -5,8 +5,8 @@ title: "Haut bikini Bee: Ce dont vous avez besoin"
 Pour faire Bee, vous aurez besoin des éléments suivants :
 
 - Fourniture de base pour la couture
-- Environ 0.5 à 1 mètre (0.6 - 1.1 yards) d'un tissu adapté ([voir Options de tissu pour Bee](/docs/patterns/bee/fabric/))
-- (Facultatif) Environ 0,5 - 1 mètre (0,6 - 1,1 mètre) de tissu de doublage ([voir les options d'étoffe pour Bee](/docs/patterns/bee/fabric/))
+- Environ 0.5 à 1 mètre (0.6 - 1.1 yards) d'un tissu adapté ([voir Options de tissu pour Bee](/docs/designs/bee/fabric/))
+- (Facultatif) Environ 0,5 - 1 mètre (0,6 - 1,1 mètre) de tissu de doublage ([voir les options d'étoffe pour Bee](/docs/designs/bee/fabric/))
 - (Facultatif) Rubans/rubans/cordons pour les bretelles de cou et les bandes, de la même longueur et largeur que les bretelles et/ou les bandes.
 
 <Note>

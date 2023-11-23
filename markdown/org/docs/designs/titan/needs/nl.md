@@ -5,7 +5,7 @@ title: "Titan broekenblok: Wat je nodig hebt"
 Om Titaan te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- Ongeveer 1,5 meter geschikte stof ([zie Titan Stofopties](/docs/patterns/titan/fabric))
+- Ongeveer 1,5 meter geschikte stof ([zie Titan Stofopties](/docs/designs/titan/fabric))
 
 <Note>
 

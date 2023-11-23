@@ -5,9 +5,9 @@ title: "Cornelius fietsbroek: Wat je nodig hebt"
 Om Cornelius te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- Ongeveer 2 meter van een geschikte stof ([zie Cornelius stofopties](/docs/patterns/cornelius/fabric/))
-- Ongeveer 0,5 meter voeringstof ([zie Cornelius stofopties](/docs/patterns/cornelius/fabric/))
-- Tussenvulling voor de tailleband ([zie Cornelius Stofopties](/docs/patterns/cornelius/fabric/))
+- Ongeveer 2 meter van een geschikte stof ([zie Cornelius stofopties](/docs/designs/cornelius/fabric/))
+- Ongeveer 0,5 meter voeringstof ([zie Cornelius stofopties](/docs/designs/cornelius/fabric/))
+- Tussenvulling voor de tailleband ([zie Cornelius Stofopties](/docs/designs/cornelius/fabric/))
 - Een rits of 3 knopen voor de gulp
 - 3 of 7 knopen voor tailleband en beenbanden
 

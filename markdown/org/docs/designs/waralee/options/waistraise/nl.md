@@ -2,8 +2,8 @@
 title: "Hoogte Taille"
 ---
 
-Hoeveel hoger de taille dan de maat voor de diepte van de zitplaats. Dit beïnvloedt de diepte van de kruissnijding.
+Hoeveel moet de taille omhoog ten opzichte van de zitdiepte. Dit beïnvloedt de diepte van de kruisuitsnijding.
 
-## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](waralee_waistraise_sample.svg "Effect van deze optie op het patroon")
+
+

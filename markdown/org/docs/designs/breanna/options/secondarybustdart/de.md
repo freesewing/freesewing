@@ -2,7 +2,7 @@
 title: "Sekundärer Brustabnäher"
 ---
 
-Optional einen sekundären Büstendart zur Verteilung der Form der Brust.
+Optional kannst du einen zweiten Brustabnäher einbauen, um die Formgebung der Brust zu verteilen.
 
 
 

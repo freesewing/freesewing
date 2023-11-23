@@ -11,7 +11,7 @@ Tiberius ist ein historisch inspiriertes Schnittmuster, und für mehr Authentizi
 ### Schritt 1: Nähen der Schulternähte
 
 - Lege beide Teile mit den guten Seiten zusammen. Nähen Sie die Schulternähte und achten Sie dabei darauf, dass Sie an den Einschnitten für die Kopföffnung aufhören.
-- Bearbeite die Nähte mit einer Methode deiner Wahl. (Wenn du die in den [Stoffoptionen](/docs/patterns/tiberius/fabric)empfohlenen Stoffe verwendest, werden sie __ ausfransen. Du kannst die Nahtzugabe zweimal falten, die Schnittkante einschlagen und absteppen. Du kannst auch dekorative Steppnähte verwenden).
+- Bearbeite die Nähte mit einer Methode deiner Wahl. (Wenn du die in den [Stoffoptionen](/docs/designs/tiberius/fabric)empfohlenen Stoffe verwendest, werden sie __ ausfransen. Du kannst die Nahtzugabe zweimal falten, die Schnittkante einschlagen und absteppen. Du kannst auch dekorative Steppnähte verwenden).
 
 <Note>
 

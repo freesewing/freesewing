@@ -39,7 +39,7 @@ Nous élargissons également nos efforts pour fournir des modèles qui fonctionn
 ##### Nous avons aidé plus de personnes que jamais cette année
 Sur le plan pratique, j'ai prolongé notre revue de l'année de deux semaines pour aller de l'avant. nous allons juste suivre les années calendaires. Avec quelques heures restantes cette année, les revenus de FreeSewing pour 2020 sont à **10.736,82 euros**. Cela fait de 2020 une année de records absolus, et c'est plus que toutes les années précédentes combinées (2015: 256.65€, 2016: 473,50€, 2017 : 673,14€, 2018 : 3162,14€, 2019 : 4109,38€).
 
-Comme toujours, tous les revenus de FreeSewing -- l'ensemble de 10,736,82 euros -- [vont à Médecins Sans Frontières](/docs/various/pledge/).
+Comme toujours, tous les revenus de FreeSewing -- l'ensemble de 10,736,82 euros -- [vont à Médecins Sans Frontières](/docs/about/pledge/).
 
 Je vous suis vraiment reconnaissant de votre soutien et de vos contributions continues. J'ai le sentiment, dans une très petite mesure, que nous sommes en mesure d'apporter un peu de soulagement à la souffrance qui semble parfois omniprésente dans le monde.
 

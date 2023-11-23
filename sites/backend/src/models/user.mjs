@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken'
 import { log } from '../utils/log.mjs'
 import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
-import { replaceImage, importImage, removeImage } from '../utils/cloudflare-images.mjs'
+import { replaceImage, removeImage } from '../utils/cloudflare-images.mjs'
 import { clean, asJson, i18nUrl, writeExportedData } from '../utils/index.mjs'
 import { decorateModel } from '../utils/model-decorator.mjs'
 import { userCard } from '../templates/svg/user-card.mjs'
@@ -121,7 +121,7 @@ UserModel.prototype.oauthSignIn = async function ({ body }) {
     /*
      * Final check for account status and other things before returning
      */
-    const [ok, err, status] = this.isOk()
+    const [ok, err, status] = this.isOk(401, 'signInFailed', true)
     if (ok === true) return this.signInOk()
     else return this.setResponse(status, err)
   }
@@ -171,18 +171,16 @@ UserModel.prototype.oauthSignIn = async function ({ body }) {
    */
   if (oauthData.img) {
     try {
-      const img = await replaceImage({
+      await replaceImage({
         id: `user-${ihash}`,
         metadata: { ihash },
         url: oauthData.img,
       })
-      if (img) data.img = this.encrypt(img)
-      else data.img = this.encrypt(this.config.avatars.user)
     } catch (err) {
       log.info(err, `Unable to update image post-oauth signup for user ${email}`)
       return this.setResponse(500, 'createAccountFailed')
     }
-  } else data.img = this.config.avatars.user
+  }
 
   /*
    * Now attempt to create the record in the database
@@ -697,9 +695,15 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
      */
     let actionUrl = false
     if (this.record.status === 0)
-      actionUrl = i18nUrl(body.language, `/confirm/${type}/${this.Confirmation.record.id}/${check}`)
+      actionUrl = i18nUrl(
+        body.language,
+        `/confirm/${type}?id=${this.Confirmation.record.id}&check=${check}`
+      )
     else if (this.record.status === 1)
-      actionUrl = i18nUrl(body.language, `/confirm/signin/${this.Confirmation.record.id}/${check}`)
+      actionUrl = i18nUrl(
+        body.language,
+        `/confirm/signin?id=${this.Confirmation.record.id}&check=${check}`
+      )
 
     /*
      * Send email unless it's a test and we don't want to send test emails
@@ -763,7 +767,6 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
        */
       data: this.encrypt({}),
       bio: this.encrypt(''),
-      img: this.config.avatars.user,
     }
     /*
      * During tests, users can set their own permission level so you can test admin stuff
@@ -825,7 +828,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
       replacements: {
         actionUrl: i18nUrl(
           this.language,
-          `/confirm/signup/${this.Confirmation.record.id}/${check}`
+          `/confirm/signup?id=${this.Confirmation.record.id}&check=${check}`
         ),
         whyUrl: i18nUrl(this.language, `/docs/faq/email/why-signup`),
         supportUrl: i18nUrl(this.language, `/patrons/join`),
@@ -906,8 +909,20 @@ UserModel.prototype.passwordSignIn = async function (req) {
     if (!req.body.token) return this.setResponse(403, 'mfaTokenRequired')
     /*
      * If there is a token, verify it and if it is not correct, return 401
-     */ else if (!this.mfa.verify(req.body.token, this.clear.mfaSecret)) {
-      return this.setResponse(401, 'signInFailed')
+     */ else {
+      const check = await this.mfa.verify(
+        req.body.token,
+        this.clear.mfaSecret,
+        this.clear.data.mfaScratchCodes
+      )
+      let result, mfaScratchCodes
+      if (Array.isArray(check)) [result, mfaScratchCodes] = check
+      else result = check
+      if (!result) return this.setResponse(401, 'signInFailed')
+      if (mfaScratchCodes && mfaScratchCodes.length !== this.clear.data.mfaScratchCodes.length) {
+        // Scratch code was used, update record to remove it
+        await this.update({ data: { ...this.clear.data, mfaScratchCodes } })
+      }
     }
   }
 
@@ -919,12 +934,15 @@ UserModel.prototype.passwordSignIn = async function (req) {
    * have their password and we know it's good, let's rehash it the v3 way
    * if this happens to be a v2 user.
    */
-  if (updatedPasswordField) await this.update({ password: updatedPasswordField })
+  if (updatedPasswordField) {
+    // We pass the third parameter here to the password field does not get re-hashed
+    await this.update({ password: updatedPasswordField }, {}, { password: true })
+  }
 
   /*
    * Final check for account status and other things before returning
    */
-  const [ok, err, status] = this.isOk()
+  const [ok, err, status] = this.isOk(401, 'signinFailed', true)
   if (ok === true) return this.signInOk()
   else return this.setResponse(status, err)
 }
@@ -990,20 +1008,31 @@ UserModel.prototype.linkSignIn = async function (req) {
     if (!req.body.token) return this.setResponse(403, 'mfaTokenRequired')
     /*
      * If there is a token, verify it and if it is not correct, return 401
-     */ else if (!this.mfa.verify(req.body.token, this.clear.mfaSecret)) {
-      return this.setResponse(401, 'signInFailed')
+     */
+    const check = await this.mfa.verify(
+      req.body.token,
+      this.clear.mfaSecret,
+      this.clear.data.mfaScratchCodes
+    )
+    let result, mfaScratchCodes
+    if (Array.isArray(check)) [result, mfaScratchCodes] = check
+    else result = check
+    if (!result) return this.setResponse(401, 'signInFailed')
+    if (mfaScratchCodes.length !== this.clear.data.mfaScratchCodes.length) {
+      // Scratch code was used, update record to remove it
+      await this.update({ data: { ...this.clear.data, mfaScratchCodes } })
     }
   }
 
   /*
    * Before we return, remove the confirmation so it works only once
    */
-  //await this.Confirmation.delete()
+  await this.Confirmation.delete()
 
   /*
    * Sign in was a success, run a final check before returning
    */
-  const [ok, err, status] = this.isOk(401, 'signInFailed')
+  const [ok, err, status] = this.isOk(401, 'signInFailed', true)
   if (ok === true) return this.signInOk()
   else return this.setResponse(status, err)
 }
@@ -1071,7 +1100,7 @@ UserModel.prototype.sendSigninlink = async function (req) {
       replacements: {
         actionUrl: i18nUrl(
           this.record.language,
-          `/confirm/signin/${this.Confirmation.record.id}/${check}`
+          `/confirm/signin?id=${this.Confirmation.record.id}&check=${check}`
         ),
         whyUrl: i18nUrl(this.record.language, `/docs/faq/email/why-signin-link`),
         supportUrl: i18nUrl(this.record.language, `/patrons/join`),
@@ -1295,7 +1324,7 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
    * Image (img)
    */
   if (typeof body.img === 'string')
-    data.img = await replaceImage({
+    await replaceImage({
       id: `uid-${this.record.ihash}`,
       data: body.img,
     })
@@ -1350,7 +1379,7 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
         replacements: {
           actionUrl: i18nUrl(
             this.record.language,
-            `/confirm/emailchange/${this.Confirmation.record.id}/${check}`
+            `/confirm/emailchange?id=${this.Confirmation.record.id}&check=${check}`
           ),
           whyUrl: i18nUrl(this.record.language, `/docs/faq/email/why-emailchange`),
           supportUrl: i18nUrl(this.record.language, `/patrons/join`),
@@ -1403,9 +1432,13 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
        * Update the email address and ehash
        */
       await this.update({
-        email: this.encrypt(data.email.new),
+        email: data.email.new,
         ehash: hash(clean(data.email.new)),
       })
+      /*
+       * Remove the confirmation
+       */
+      await this.Confirmation.delete()
     }
   }
 
@@ -1479,15 +1512,24 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
     /*
      * Verify the MFA token
      */
-    if (this.mfa.verify(body.token, this.clear.mfaSecret)) {
+    await this.reveal() // First decrypt data
+    const check = await this.mfa.verify(
+      body.token,
+      this.clear.mfaSecret,
+      this.clear.data.mfaScratchCodes
+    )
+    let result
+    if (Array.isArray(check)) [result] = check
+    else result = check
+    if (result) {
       /*
        * Token is valid. Update user record to disable MFA
        */
       try {
-        await this.update({ mfaEnabled: false })
+        await this.update({ mfaEnabled: false, data: { ...this.clear.data, mfaScratchCodes: [] } })
       } catch (err) {
         /*
-         * Problem occured while updating the record. Log warning and reurn 500
+         * Problem occured while updating the record. Log warning and return 500
          */
         log.warn(err, 'Could not disable MFA after token check')
         return this.setResponse(500, 'mfaDeactivationFailed')
@@ -1513,12 +1555,25 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
     /*
      * Verify secret and token
      */
-    if (body.secret === this.clear.mfaSecret && this.mfa.verify(body.token, this.clear.mfaSecret)) {
+    const check = await this.mfa.verify(body.token, this.clear.mfaSecret, false)
+    let result
+    if (Array.isArray(check)) [result] = check
+    else result = check
+    if (body.secret === this.clear.mfaSecret && result) {
       /*
-       * Looks good. Update the user record to enable MFA
+       * Looks good. Generated scratch codes, then update the user record to enable MFA
        */
+      const scratchCodes = Array.from([...'eightpls']).map(() => randomString(4))
+      const mfaScratchCodes = []
+      for (const code of scratchCodes) {
+        const hashed = await hash(code)
+        mfaScratchCodes.push(hashed)
+      }
       try {
-        await this.update({ mfaEnabled: true })
+        await this.update({
+          mfaEnabled: true,
+          data: { ...this.clear.data, mfaScratchCodes },
+        })
       } catch (err) {
         /*
          * Problem occured while updating the record. Log warning and reurn 500
@@ -1533,6 +1588,7 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
       return this.setResponse200({
         result: 'success',
         account: this.asAccount(),
+        scratchCodes,
       })
     } else return this.setResponse(403, 'mfaTokenInvalid')
     /*
@@ -1593,7 +1649,6 @@ UserModel.prototype.asProfile = function () {
   return {
     id: this.record.id,
     bio: this.clear.bio,
-    img: this.record.img,
     ihash: this.record.ihash,
     patron: this.record.patron,
     role: this.record.role,
@@ -1610,6 +1665,9 @@ UserModel.prototype.asAccount = function () {
   /*
    * Nothing to do here but construct the object to return
    */
+  const data = this.clear.data
+  if (data.mfaScratchCodes) delete data.mfaScratchCodes
+
   return {
     id: this.record.id,
     bio: this.clear.bio,
@@ -1618,9 +1676,8 @@ UserModel.prototype.asAccount = function () {
     control: this.record.control,
     createdAt: this.record.createdAt,
     email: this.clear.email,
-    data: this.clear.data,
+    data,
     ihash: this.record.ihash,
-    img: this.record.img,
     imperial: this.record.imperial,
     initial: this.clear.initial,
     jwtCalls: this.record.jwtCalls,
@@ -1751,23 +1808,27 @@ UserModel.prototype.getToken = function () {
 /*
  * Helper method to check an account is ok
  */
-UserModel.prototype.isOk = function (failStatus = 401, failMsg = 'authenticationFailed') {
+UserModel.prototype.isOk = function (
+  failStatus = 401,
+  failMsg = 'authenticationFailed',
+  allowWithoutConsent = false
+) {
   /*
    * These are all the checks we run to see if an account is 'ok'
    */
   if (
     this.exists &&
     this.record &&
-    this.record.status > 0 &&
-    this.record.consent > 0 &&
+    (allowWithoutConsent || this.record.status > 0) &&
+    (allowWithoutConsent || this.record.consent > 0) &&
     this.record.role &&
     this.record.role !== 'blocked'
   )
     return [true, false]
 
   if (!this.exists) return [false, 'noSuchUser', 404]
-  if (this.record.consent < 1) return [false, 'consentLacking', 451]
-  if (this.record.status < 1) return [false, 'statusLacking', 403]
+  if (this.record.consent < 1 && !allowWithoutConsent) return [false, 'consentLacking', 451]
+  if (this.record.status < 1 && !allowWithoutConsent) return [false, 'statusLacking', 403]
   if (this.record.role === 'blocked') return [false, 'accountBlocked', 403]
 
   return [false, failMsg, failStatus]
@@ -1900,151 +1961,4 @@ UserModel.prototype.papersPlease = async function (id, type, payload) {
    * and their consent and status are ok, so so return true and let them through.
    */
   return [true, false]
-}
-
-/*
- * Everything below this comment is migration code.
- * This can all be removed after v3 is in production and all users have been migrated.
- */
-const migrateUser = (v2) => {
-  const email = clean(v2.email)
-  const initial = v2.initial ? clean(v2.initial) : email
-  const data = {
-    bio: v2.bio || '--',
-    consent: 0,
-    createdAt: v2.time?.created ? new Date(v2.time.created) : new Date(),
-    email,
-    ehash: hash(email),
-    data: {},
-    ihash: hash(initial),
-    img: 'default-avatar',
-    initial,
-    imperial: v2.settings.units === 'imperial',
-    language: v2.settings.language,
-    lastSeen: new Date(),
-    lusername: v2.username.toLowerCase(),
-    mfaEnabled: false,
-    newsletter: v2.newsletter === true ? true : false,
-    patron: v2.patron,
-    role: v2._id === '5d62aa44ce141a3b816a3dd9' ? 'admin' : 'user',
-    status: v2.status === 'active' ? 1 : 0,
-    username: v2.username,
-  }
-  if (data.consent.profile) data.consent++
-  if (data.consent.measurements) data.consent++
-  if (data.consent.openData) data.consent++
-
-  return data
-}
-
-/*
- * This is a special migration route
- */
-UserModel.prototype.migrate = async function ({ password, v2 }) {
-  //let lut = false
-  const data = migrateUser(v2.account)
-  if (v2.account.consent.profile && (v2.account.consent.model || v2.account.consent.measurements)) {
-    data.consent++
-    if (v2.account.consent.openData) v2.account.consent++
-  }
-  data.password = password
-  await this.read({ ehash: data.ehash })
-  if (!this.record) {
-    /*
-     * Skip images for now
-     */
-    data.img = 'default-avatar'
-    let available = await this.isLusernameAvailable(data.lusername)
-    while (!available) {
-      data.username += '+'
-      data.lusername += '+'
-      available = await this.isLusernameAvailable(data.lusername)
-    }
-    try {
-      await this.createRecord(data)
-    } catch (err) {
-      log.warn(err, 'Could not create user record')
-      return this.setResponse(500, 'createUserFailed')
-    }
-    // That's the user, now load their people as sets
-    const user = {
-      ...v2.account,
-      people: v2.people,
-      patterns: v2.patterns,
-    }
-    if (user.people) await this.Set.migrate(user, this.record.id)
-    //if (user.people) lut = await this.Set.migrate(user, this.record.id)
-    //if (user.patterns) await this.Pattern.import(user, lut, this.record.id)
-  } else {
-    return this.setResponse(400, 'userExists')
-  }
-
-  /*
-   * Decrypt data so we can return it
-   */
-  await this.reveal()
-
-  /*
-   * Looks like the migration was a success. Return a passwordless sign in
-   */
-  return this.signInOk()
-}
-/*
- * This is a special route not available for API users
- */
-UserModel.prototype.import = async function (user) {
-  if (user.status === 'active') {
-    const data = migrateUser(user)
-    if (user.consent.profile && (user.consent.model || user.consent.measurements)) {
-      data.consent++
-      if (user.consent.openData) data.consent++
-    }
-
-    await this.read({ ehash: data.ehash })
-    if (!this.record) {
-      /*
-       * Skip images for now
-       */
-      if (data.img) {
-        /*
-         * Figure out what image to grab from the FreeSewing v2 backend server
-         */
-        const imgId = `user-${data.ihash}`
-        const imgUrl =
-          'https://static.freesewing.org/users/' +
-          encodeURIComponent(user.handle.slice(0, 1)) +
-          '/' +
-          encodeURIComponent(user.handle) +
-          '/' +
-          encodeURIComponent(data.img)
-        data.img = await importImage({
-          id: imgId,
-          metadata: {
-            user: `v2-${user.handle}`,
-            ihash: data.ihash,
-          },
-          url: imgUrl,
-        })
-        data.img = imgId
-      } else data.img = 'default-avatar'
-      let available = await this.isLusernameAvailable(data.lusername)
-      while (!available) {
-        data.username += '+'
-        data.lusername += '+'
-        available = await this.isLusernameAvailable(data.lusername)
-      }
-      try {
-        await this.createRecord(data)
-      } catch (err) {
-        log.warn(err, 'Could not create user record')
-        return this.setResponse(500, 'createUserFailed')
-      }
-      // That's the user, now load their people as sets
-      let lut = false
-      if (user.people) lut = await this.Set.import(user, this.record.id)
-      if (user.patterns) await this.Pattern.import(user, lut, this.record.id)
-    }
-  }
-
-  return this.setResponse200()
 }

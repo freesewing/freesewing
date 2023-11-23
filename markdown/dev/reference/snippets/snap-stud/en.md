@@ -4,7 +4,9 @@ title: snap-stud
 
 The `snap-stud` snippet is used to mark the stud part of a snap button.
 
-It is provided by [plugin-annotations](/reference/plugins/annotations/).
+It is provided by [plugin-annotations](/reference/plugins/annotations/), which is
+part of [core-plugins](/reference/plugins/core) (so it is available by default).
+
 ## Example
 
 <Example caption="An example of the snap-stud snippet">

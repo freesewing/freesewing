@@ -1,10 +1,10 @@
 ---
-title: "Bookmarks: Type"
+title: Type
 ---
 
-Every bookmark has a **type** attribute that is mandatory.
+Chaque signet possède un attribut **type** qui est obligatoire.
 
-When you manually create a bookmark, the type is always **custom** so you cannot choose it.
+Lorsque tu crées manuellement un signet, le type est toujours **custom** et tu ne peux donc pas le choisir.
 
-Other types include **pattern** or **docs** which will automatically be set when you bookmark a pattern or documentation page respectively.
+D'autres types incluent **pattern**, **docs**, ou **set** qui seront automatiquement mis en place lorsque tu mettras en signet un pattern, une page de documentation ou un jeu de mesures respectivement.
 

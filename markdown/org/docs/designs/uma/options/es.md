@@ -1,5 +1,5 @@
 ---
-title: "Calzoncillos Ursula: Opciones de diseño"
+title: "Ropa interior Uma: Opciones de diseño"
 ---
 
-<DesignOptions design='ursula' />
+<DesignOptions design='uma' />

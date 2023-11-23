@@ -10,26 +10,23 @@ function draftBase({
   options,
   part,
   store,
-  paperless,
-  complete,
   sa,
   macro,
   snippets,
   Snippet,
   scale,
 }) {
-  let hipsEase = options.hipsEase
-  if (options.straightSides) hipsEase = options.chestEase
+  const sleeveDiameter =
+    (measurements.biceps * options.armholeTweakFactor * (1 + options.sleeveEase)) / Math.PI
+  const hipsEase = options.straightSides ? options.chestEase : options.hipsEase
 
-  const armpitYPosition = measurements.hpsToWaistBack - measurements.waistToArmpit
-  let chest = measurements.chest * (1 + options.chestEase)
-  if (options.straightSides) {
-    chest = Math.max(
-      measurements.chest * (1 + options.chestEase),
-      measurements.hips * (1 + hipsEase)
-    )
-  }
-  chest -= 4 * (options.raglanScoopMagnitude * armpitYPosition)
+  const armpitYPosition =
+    measurements.hpsToWaistBack - measurements.waistToArmpit + sleeveDiameter * options.armpitEase
+  const chest =
+    (options.straightSides
+      ? Math.max(measurements.chest * (1 + options.chestEase), measurements.hips * (1 + hipsEase))
+      : measurements.chest * (1 + options.chestEase)) -
+    4 * (options.raglanScoopMagnitude * armpitYPosition)
   const bodyLength = options.bodyLength * (measurements.hpsToWaistBack + measurements.waistToHips)
   const neckRadius = (measurements.neck * (1 + options.neckEase)) / (2 * Math.PI)
   const hips = measurements.hips * (1 + hipsEase)
@@ -39,7 +36,13 @@ function draftBase({
   points.raglanCenter = new Point(0, 0)
   points.neckCenter = points.raglanCenter.shift(270, options.neckBalance * neckRadius)
 
-  points.armpitCorner = new Point(chest / 4, armpitYPosition)
+  points.armpitCorner = new Point(chest / 4, armpitYPosition).translate(
+    0,
+    Math.max(
+      0,
+      (measurements.biceps * options.armholeTweakFactor * options.sleeveEase) / (2 * Math.PI)
+    )
+  )
 
   points.neckShoulderCorner = utils.beamIntersectsCircle(
     points.neckCenter,
@@ -111,40 +114,38 @@ function draftBase({
     .curve(points.armpitScoopCp1, points.armpitScoopCp2, points.armpitScoopEnd)
     .line(points.neckShoulderCorner)
     .curve(points.neckCP1, points.neckCP2, points.cfNeck)
-    .hide(true)
+    .hide()
 
-  paths.foldBase = new Path().move(points.cfNeck).line(points.cfHem).hide(true)
+  paths.foldBase = new Path().move(points.cfNeck).line(points.cfHem).hide()
 
-  paths.hemBase = new Path().move(points.cfHem).line(points.sideHem).hide(true)
+  paths.hemBase = new Path().move(points.cfHem).line(points.sideHem).hide()
 
-  paths.seam = paths.saBase.join(paths.foldBase).join(paths.hemBase).close().attr('class', 'fabric')
+  paths.seam = paths.saBase.join(paths.foldBase).join(paths.hemBase).close().addClass('fabric')
 
-  if (paperless) {
-    macro('hd', {
-      id: 'wHem',
-      from: points.cfHem,
-      to: points.sideHem,
-      y: points.sideHem.y + (sa + 15),
-    })
-    macro('vd', {
-      id: 'hSide',
-      from: points.sideHem,
-      to: points.armpitCornerScooped,
-      x: Math.max(points.sideHem.x, points.armpitCornerScooped.x) + (15 + sa),
-    })
-    macro('vd', {
-      id: 'hArmpitScoop',
-      from: points.armpitCornerScooped,
-      to: points.armpitScoopEnd,
-      x: points.armpitCornerScooped.x + (30 + sa),
-    })
-    macro('hd', {
-      id: 'wArmpitScoop',
-      from: points.armpitScoopEnd,
-      to: points.armpitCornerScooped,
-      y: 0 - (sa + 0),
-    })
-  }
+  macro('hd', {
+    id: 'wHem',
+    from: points.cfHem,
+    to: points.sideHem,
+    y: points.sideHem.y + (sa + 15),
+  })
+  macro('vd', {
+    id: 'hSide',
+    from: points.sideHem,
+    to: points.armpitCornerScooped,
+    x: Math.max(points.sideHem.x, points.armpitCornerScooped.x) + (15 + sa),
+  })
+  macro('vd', {
+    id: 'hArmpitScoop',
+    from: points.armpitCornerScooped,
+    to: points.armpitScoopEnd,
+    x: points.armpitCornerScooped.x + (30 + sa),
+  })
+  macro('hd', {
+    id: 'wArmpitScoop',
+    from: points.armpitScoopEnd,
+    to: points.armpitCornerScooped,
+    y: 0 - (sa + 0),
+  })
 
   points.cutonfoldFrom = points.cfNeck
   points.cutonfoldTo = points.cfHem
@@ -154,24 +155,22 @@ function draftBase({
     grainline: true,
   })
 
-  if (complete) {
-    points.title = new Point(
-      points.armpitCorner.x / 2,
-      (points.cfHem.y + points.armpitCornerScooped.y / 2) / 2
-    )
-    macro('title', { at: points.title, nr: 5, title: 'base' })
+  points.title = new Point(
+    points.armpitCorner.x / 2,
+    (points.cfHem.y + points.armpitCornerScooped.y / 2) / 2
+  )
+  macro('title', { at: points.title, nr: 5, title: 'base' })
 
-    points.logo = points.title.shift(-90, 70 * scale)
-    snippets.logo = new Snippet('logo', points.logo)
+  points.logo = points.title.shift(-90, 70 * scale)
+  snippets.logo = new Snippet('logo', points.logo)
 
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.cfHem)
-        .join(paths.hemBase.offset(sa * options.hemWidth))
-        .join(paths.saBase.offset(sa))
-        .line(points.cfNeck)
-        .attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = new Path()
+      .move(points.cfHem)
+      .join(paths.hemBase.offset(sa * options.hemWidth))
+      .join(paths.saBase.offset(sa))
+      .line(points.cfNeck)
+      .addClass('fabric sa')
   }
 
   return part
@@ -182,7 +181,15 @@ export const base = {
   plugins: [bustPlugin],
   draft: draftBase,
   hide: { self: true },
-  measurements: ['neck', 'chest', 'hips', 'waistToHips', 'hpsToWaistBack', 'waistToArmpit'],
+  measurements: [
+    'biceps',
+    'neck',
+    'chest',
+    'hips',
+    'waistToHips',
+    'hpsToWaistBack',
+    'waistToArmpit',
+  ],
   options: {
     // How much ease to give for the neck, as a percentage.
     neckEase: { pct: 50, min: -30, max: 150, menu: 'fit' },
@@ -190,6 +197,8 @@ export const base = {
     // If set to true, makes a tubular body based on the chest, ignoring the hips measurements and options.
     straightSides: { bool: true, menu: 'advanced' },
     hipsEase: { pct: 0, min: -30, max: 75, menu: 'advanced' },
+    // Shifts the sleeve down the body to give more room to the armpit, as a percentage of the sleeve diameter.
+    armpitEase: { pct: 15, min: -20, max: 50, menu: 'fit' },
     bodyLength: { pct: 120, min: 20, max: 300, menu: 'style' },
     // How far the neck hole is shifted towards the front. +100% means it's entirely on the front, -100% means it's entirely on the back, and 0 means the front and back are the same.
     neckBalance: { pct: 40, min: 0, max: 80, menu: 'fit' },
@@ -202,6 +211,10 @@ export const base = {
     hemWidth: { pct: 200, min: 0, max: 800, menu: 'construction' },
     // How the body curves along the side from the armpit to the side of the hips, as a % of the length of the side seam. Negative values form a concave body and positive values form a convex body.
     sideShape: { pct: 0, min: -20, max: 20, menu: 'advanced' },
+    // How much larger to make the armhole as a proportion of the biceps measurement.
+    armholeTweakFactor: 1.1,
+    // How much ease to put vertically around the armhole and the shoulder joint. Transitions gradually towards wristEase as one goes down the sleeve.
+    sleeveEase: { pct: 0, min: -30, max: 50, menu: 'fit' },
   },
   optionalMeasurements: ['highBust'],
 }

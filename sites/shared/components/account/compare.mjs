@@ -44,7 +44,7 @@ export const CompareSettings = ({ welcome = false }) => {
   const nextHref =
     welcomeSteps[account?.control].length > 3
       ? '/welcome/' + welcomeSteps[account?.control][4]
-      : '/docs/guide'
+      : '/docs/about/guide'
 
   return (
     <div className="max-w-xl">
@@ -67,7 +67,7 @@ export const CompareSettings = ({ welcome = false }) => {
         }))}
         current={selection}
         update={update}
-        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/compare`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/compare`} />}
       />
       {welcome ? (
         <>

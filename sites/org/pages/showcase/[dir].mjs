@@ -1,6 +1,5 @@
-import { nsMerge } from 'shared/utils.mjs'
+import { nsMerge, localePath } from 'shared/utils.mjs'
 import { pages as posts } from 'site/prebuild/showcase.mjs'
-import { getPostSlugPaths } from 'site/components/mdx/posts/utils.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { loadMdxAsStaticProps } from 'shared/mdx/load.mjs'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
@@ -13,6 +12,7 @@ const ShowcasePage = ({ dir, page, mdx, frontmatter }) => {
     <PageWrapper
       {...page}
       title={frontmatter.title}
+      intro={frontmatter.intro}
       layout={(props) => (
         <PostLayout
           {...props}
@@ -20,7 +20,7 @@ const ShowcasePage = ({ dir, page, mdx, frontmatter }) => {
           frontmatter={frontmatter}
           mdx={mdx}
           dir={dir}
-          type="blog"
+          type="showcase"
         />
       )}
     />
@@ -52,10 +52,11 @@ export async function getStaticProps({ params, locale }) {
 }
 
 export const getStaticPaths = async () => {
-  return {
-    paths: getPostSlugPaths(posts),
-    fallback: 'blocking',
+  const paths = []
+  for (const lang in posts) {
+    paths.push(...Object.keys(posts[lang]).map((slug) => localePath(lang, slug)))
   }
+  return { paths, fallback: false }
 }
 
 export default ShowcasePage

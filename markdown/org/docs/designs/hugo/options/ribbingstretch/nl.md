@@ -15,6 +15,6 @@ je moet uitrekken om op 10 cm te komen met een _goede_ stretch.
 
 </Note>
 
-## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](hugo_ribbingstretch_sample.svg "Effect van deze optie op het patroon")
+
+

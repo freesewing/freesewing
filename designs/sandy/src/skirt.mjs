@@ -86,21 +86,13 @@ function sandySkirt({
     radiusWaist + store.get('fullLength') * options.lengthBonus - absoluteOptions.waistbandWidth
 
   // Call the RingSector macro to draft the part
-  macro('ringsector', {
+  const ids = macro('ringsector', {
     angle: an,
     insideRadius: radiusWaist,
     outsideRadius: radiusHem,
     rotate: true,
   })
-  const storeRoot = [
-    'parts',
-    part.name,
-    'macros',
-    '@freesewing/plugin-ringsector',
-    'ids',
-    'ringsector',
-  ]
-  const pathId = store.get([...storeRoot, 'paths', 'path'])
+  const pathId = ids.paths.path
   paths.seam = paths[pathId].clone().addClass('fabric')
   paths[pathId].hide()
 
@@ -108,7 +100,7 @@ function sandySkirt({
    * Macros ensure they can be used more than once in a part, and will generate unique (and complex)
    * point names. Since we're only calling the macro once here, we will simplify these names
    */
-  for (const [shortId, uid] of Object.entries(store.get([...storeRoot, 'points']))) {
+  for (const [shortId, uid] of Object.entries(ids.points)) {
     points[shortId] = points[uid].copy()
     // Some points are rotated, we need those too
     if (points[uid + 'Rotated']) points[shortId + 'Rotated'] = points[uid + 'Rotated'].copy()
@@ -119,40 +111,41 @@ function sandySkirt({
 
   if (sa) {
     paths.hemBase = new Path()
-      .move(points.ex2)
-      .curve(points.ex2c, points.ex1c, points.ex1)
-      .curve(points.ex1cFlipped, points.ex2cFlipped, points.ex2Flipped)
-      .offset(store.get('fullLength') * options.lengthBonus * options.hemWidth * -1)
+      .move(points.ex2Flipped)
+      .curve(points.ex2cFlipped, points.ex1cFlipped, points.ex1)
+      .curve(points.ex1c, points.ex2c, points.ex2)
+      .offset(store.get('fullLength') * options.lengthBonus * options.hemWidth)
     paths.saBase = new Path()
-      .move(points.in2Flipped)
-      .curve(points.in2cFlipped, points.in1cFlipped, points.in1)
-      .curve(points.in1c, points.in2c, points.in2)
+      .move(points.in2)
+      .curve(points.in2c, points.in1c, points.in1)
+      .curve(points.in1cFlipped, points.in2cFlipped, points.in2Flipped)
 
-    if (!options.seamlessFullCircle) paths.saBase = paths.saBase.line(points.ex2)
-    paths.saBase = paths.saBase.offset(sa * -1)
+    if (!options.seamlessFullCircle)
+      paths.saBase = new Path().move(points.ex2).line(points.ex2).join(paths.saBase)
+    paths.saBase = paths.saBase.offset(sa)
 
     paths.hemBase.hide()
     paths.saBase.hide()
 
     if (options.seamlessFullCircle) {
       paths.sa = new Path()
-        .move(points.in2Flipped)
-        .line(paths.saBase.start())
-        .join(paths.saBase)
-        .line(points.in2)
-        .move(points.ex2)
+        .move(points.ex2Flipped)
         .line(paths.hemBase.start())
         .join(paths.hemBase)
-        .line(points.ex2Flipped)
+        .line(points.ex2)
+        .move(points.in2)
+        .line(paths.saBase.start())
+        .join(paths.saBase)
+        .line(points.in2Flipped)
         .attr('class', 'fabric sa')
     } else {
       paths.sa = new Path()
-        .move(points.in2Flipped)
-        .line(paths.saBase.start())
-        .join(paths.saBase)
+        .move(points.ex2Flipped)
         .line(paths.hemBase.start())
         .join(paths.hemBase)
-        .line(points.ex2Flipped)
+        .line(paths.saBase.start())
+        .join(paths.saBase)
+        .line(points.in2Flipped)
         .attr('class', 'fabric sa')
     }
   }
@@ -179,15 +172,24 @@ function sandySkirt({
   }
 
   // Logo
-  points.logo = points.in2FlippedRotated.shiftFractionTowards(points.ex2FlippedRotated, 0.3)
+  points.logo = points.in2FlippedRotated.shiftFractionTowards(
+    points.ex2FlippedRotated,
+    options.seamlessFullCircle ? 0.3 : 0.1
+  )
   snippets.logo = new Snippet('logo', points.logo)
 
   // Title
-  points.title = points.in2FlippedRotated.shiftFractionTowards(points.ex2FlippedRotated, 0.5)
+  points.title = points.in2FlippedRotated.shiftFractionTowards(
+    points.ex2FlippedRotated,
+    options.seamlessFullCircle ? 0.5 : 0.25
+  )
   macro('title', { at: points.title, nr: 1, title: 'skirt' })
 
   // Scalebox
-  points.scalebox = points.in2FlippedRotated.shiftFractionTowards(points.ex2FlippedRotated, 0.7)
+  points.scalebox = points.in2FlippedRotated.shiftFractionTowards(
+    points.ex2FlippedRotated,
+    options.seamlessFullCircle ? 0.7 : 0.45
+  )
   macro('scalebox', { at: points.scalebox })
 
   // Notches

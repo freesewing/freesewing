@@ -12,18 +12,6 @@
  */
 
 export const extendSiteNav = (pages) => {
-  pages.about = {
-    s: 'about',
-    t: 'About FreeSewing',
-  }
-
-  let order = 10
-  for (const slug of ['api', 'design', 'contribute', 'i18n', 'infra', 'about', 'support']) {
-    pages[slug].m = 1
-    pages[slug].o = order
-    order += 10
-  }
-
   pages.search = {
     s: 'search',
     h: 1,
@@ -40,15 +28,13 @@ export const extendSiteNav = (pages) => {
   }
 
   // Make top-level documentation entries appear in i-list
-  order = 10
-  for (const slug of ['tutorials', 'guides', 'howtos', 'reference', 'training']) {
+  let order = 10
+  for (const slug of ['guides', 'howtos', 'reference', 'tutorials', 'training']) {
     pages[slug].o = order
     pages[slug].i = 1
+    pages[slug].m = 1
     order += 10
   }
-
-  // Hide contact from the sitenav
-  pages.contact.h = 1
 
   return pages
 }

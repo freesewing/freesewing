@@ -1,9 +1,6 @@
 ---
-title: "Étendue en tissu"
+title: "Tissu extensible verticalement"
 ---
 
-Ajustez cette option pour des tissus plus ou moins extensifs.
+Ajuste cette option pour les tissus plus ou moins extensibles, plus particulièrement pour l'étirement vertical.
 
-## Effet de cette option sur le motif
-
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](ursula_fabricstretch_sample.svg "Effet de cette option sur le motif")

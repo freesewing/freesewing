@@ -1,6 +1,6 @@
 ---
-title: "Hi the shark: Designer Notes"
+title: "Hoi de haai: Ontwerpnotities"
 ---
 
-<Fixme>Wouter designed this. They have not written any notes (yet)</Fixme>
+<Fixme>Wouter heeft dit ontworpen. Ze hebben (nog) geen aantekeningen geschreven</Fixme>
 

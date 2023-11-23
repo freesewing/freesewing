@@ -35,6 +35,7 @@ OptionPackModel.prototype.guardedCreate = async function ({ body, user }) {
    * Is design set?
    */
   if (!body.design || typeof body.design !== 'string') return this.setResponse(400, 'designMissing')
+
   /*
    * Is nameEn set?
    */
@@ -56,6 +57,11 @@ OptionPackModel.prototype.guardedCreate = async function ({ body, user }) {
     }
   }
   if (body.tags && Array.isArray(body.tags)) data.tags = JSON.stringify(body.tags)
+
+  /*
+   * Add the info
+   */
+  if (body.info) data.info = body.info
 
   /*
    * Add the options if there are any
@@ -188,6 +194,11 @@ OptionPackModel.prototype.guardedUpdate = async function ({ params, body, user }
   }
 
   /*
+   * Handle the info field
+   */
+  if (typeof body.info === 'string') data.info = body.info
+
+  /*
    * Handle the options
    */
   if (typeof body.options === 'object') {
@@ -305,7 +316,10 @@ OptionPackModel.prototype.suggest = async function ({ body, user }) {
  * @returns {optionPack} object - The Option Pack as a plain object
  */
 OptionPackModel.prototype.asOptionPack = function () {
-  return this.record
+  const data = { ...this.record }
+  delete data.info
+
+  return data
 }
 
 /*

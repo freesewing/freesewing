@@ -1,5 +1,5 @@
 ---
-title: How to generating made-to-measure sewing patterns
+title: How to generating bespoke sewing patterns
 ---
 
 Generating custom sewing patterns based on your measurments is the flagship feature of our website.
@@ -56,3 +56,4 @@ This allows you to quickly verify the specific role of a setting or option witho
 
 ## Editor modes
 
+<Fixme>Complete these docs</Fixme>

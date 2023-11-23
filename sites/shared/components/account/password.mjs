@@ -46,7 +46,7 @@ export const PasswordSettings = ({ welcome = false }) => {
         update={setPassword}
         valid={(val) => val.length > 0}
         placeholder={t('passwordTitle')}
-        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/password`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/password`} />}
       />
       <SaveSettingsButton btnProps={{ onClick: save, disabled: password.length < 4 }} />
       {!welcome && <BackToAccountButton />}

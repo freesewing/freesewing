@@ -85,7 +85,7 @@ Hoera! Je bent klaar met het lastigste deel! Eventueel kun je de knipranden vast
 
 <Tip>
 
-Een uitgebreidere manier om te springen is te vinden in de [Aaron Instuctions](/docs/patterns/aaron/instructies).
+Een uitgebreidere how-to voor gebreid binden kun je vinden in de [Aaron Instuctions](/docs/designs/aaron/instructions).
 
 </Tip>
 

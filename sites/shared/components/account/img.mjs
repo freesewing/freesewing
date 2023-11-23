@@ -33,14 +33,14 @@ export const ImgSettings = ({ welcome = false }) => {
     } else setLoadingStatus([true, 'backendError', true, false])
   }
 
-  const nextHref = '/docs/guide'
+  const nextHref = '/docs/about/guide'
 
   return (
     <div className="max-w-xl">
       {!welcome || img !== false ? (
         <img
           alt="img"
-          src={img || cloudflareImageUrl({ id: `user-${account.ihash}`, variant: 'public' })}
+          src={img || cloudflareImageUrl({ id: `uid-${account.ihash}`, variant: 'public' })}
           className="shadow mb-4"
         />
       ) : null}
@@ -51,7 +51,7 @@ export const ImgSettings = ({ welcome = false }) => {
         update={setImg}
         current={img}
         valid={(val) => val.length > 0}
-        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/img`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/img`} />}
       />
       {welcome ? (
         <>

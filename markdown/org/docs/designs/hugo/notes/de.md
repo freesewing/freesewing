@@ -1,8 +1,8 @@
 ---
-title: "Hugo hoodie: Designer Notes"
+title: "Hugo Hoodie: Designer Notes"
 ---
 
-I wanted to try my hand on raglan sleeves, so this is what I ended up with. It's a hooded sweater, with raglan sleeves, and an optional kangaroo pocket.
+Ich wollte mich an Raglanärmeln versuchen, und so ist das Ergebnis entstanden. Er ist ein Kapuzenpullover mit Raglanärmeln und einer optionalen Kängurutasche.
 
 I named it `hugo` in memory of Hugo De Cock, my godfather with a name to make pornstars jealous.
 

@@ -6,6 +6,6 @@ title: "Longitud de la abertura trasera"
 
 Controla la longitud de la ventanilla trasera. Los números más bajos dan como resultado una ventanilla más corta.
 
-## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](jaeger_backventlength_sample.svg "Efecto de esta opción en el patrón")
+
+

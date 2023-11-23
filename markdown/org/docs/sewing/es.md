@@ -1,6 +1,5 @@
 ---
-title: Costura
-order: 300
+title: Terminología de costura
 ---
 
 <ReadMore list />

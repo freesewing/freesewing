@@ -12,6 +12,6 @@ Als je de rughoogte groter maakt zal je korset achteraan hoger komen.
 
 > Aangezien dit een onderborstkorset is, is de stijging aan de achterkant een stijlkeuze en heeft deze geen invloed op de pasvorm.
 
-## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](cathrin_backrise_sample.svg "Effect van deze optie op het patroon")
+
+

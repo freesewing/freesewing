@@ -340,6 +340,20 @@
       "curvedSeam"
     ]
   },
+  "gozer": {
+    "code": "Wouter Van Wageningen",
+    "description": "A FreeSewing pattern for a ghost costume",
+    "design": "Wouter Van Wageningen",
+    "difficulty": 1,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "costumes"
+    ],
+    "techniques": [
+      "hem"
+    ]
+  },
   "hi": {
     "code": "Wouter Van Wageningen",
     "description": "A FreeSewing pattern for a shark plush toy",
@@ -548,6 +562,16 @@
       "curvedSeam",
       "precision"
     ]
+  },
+  "onyx": {
+    "lab": true,
+    "org": true,
+    "description": "A FreeSewing pattern for one-piece garments",
+    "code": "Thrunic",
+    "design": "Thrunic",
+    "difficulty": 4,
+    "tags": ["swimwear", "pajamas", "onePiece"],
+    "techniques": ["hem", "curvedSeam", "stretch", "lining", "zipper", "ribbing"]
   },
   "paco": {
     "code": "Joost De Cock",
@@ -860,7 +884,7 @@
       "bottoms",
       "trousers"
     ],
-    "techniques": []
+    "techniques": ["curvedSeam", "hem", "weltPocket"]
   },
   "yuri": {
     "code": "Hellgy",

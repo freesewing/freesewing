@@ -1,12 +1,12 @@
 ---
-title: "API Keys: Expiry"
+title: 'API Keys: Expiry'
 ---
 
-Every API key has an **expiry date** after which the key will stop working.
+Кожен ключ API має **термін дії** , після якого він перестане працювати.
 
-By default, API keys expire after 1 month, but we support up to two years.
+За замовчуванням термін дії API-ключів закінчується через 1 місяць, але ми підтримуємо до двох років.
 
 <Note>
-When your key is about to exire, you must replace it with a new one. 
-You cannot extend the expiry date of a key once set.
+Коли термін дії вашого ключа закінчується, ви повинні замінити його на новий. 
+Ви не можете продовжити термін дії встановленого ключа.
 </Note>

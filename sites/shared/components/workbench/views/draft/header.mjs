@@ -138,7 +138,7 @@ export const DraftHeader = ({
     <div
       className={`hidden lg:flex sticky top-0 ${
         ui.kiosk ? 'z-50' : 'z-20'
-      }} transition-[top] duration-300 ease-in-out`}
+      }} transition-[top] duration-300 ease-in-out z-10`}
     >
       <div
         className={`hidden lg:flex flex-row flex-wrap gap-4 py-2 w-full bg-neutral text-neutral-content items-center justify-center`}

@@ -23,6 +23,13 @@ function draftUmaBase({
   const gussetLength = measurements.seat * options.gussetLength * stretch.y
 
   /*
+   * Back exposure as used for calculating paths should never be below
+   * 0.25. If it's lower than that, we'll do a specific on the back
+   * part after splitting the curves
+   */
+  const minBackExposure = options.backExposure < 0.25 ? 0.25 : options.backExposure
+
+  /*
    * Create points
    * All center front (cf) points have x=0
    * All side points have positive Y-coordinate
@@ -106,8 +113,9 @@ function draftUmaBase({
   /*
    * Now extend the gusset into the back part
    */
-  for (const flip of ['cfWaist', 'cfWaistband', 'sideWaistband', 'sideLeg'])
+  for (const flip of ['cfWaist', 'cfWaistband', 'sideWaistband', 'sideLeg']) {
     points[`${flip}Back`] = points[flip].flipY(points.cfMiddle)
+  }
 
   /*
    * Dip the waistband at the back
@@ -130,16 +138,34 @@ function draftUmaBase({
   const dipAngleBack = points.sideWaistbandBack.angle(points.cfWaistbandDipCpBack)
   points.sideLegCpBack = points.sideLegBack.shift(
     dipAngleBack,
-    points.sideMiddle.dx(points.sideLegBack) * options.backExposure
+    points.sideMiddle.dx(points.sideLegBack) * minBackExposure
   )
+
+  /*
+   * If the back exposure is very high (more than 80%) we need to draft a thong style
+   * and that requires narrowing the gusset as we make our way from front to back
+   */
+  const thongFactor = minBackExposure > 0.8 ? 1 - (minBackExposure - 0.8) * 4 : 1
 
   /*
    * Now add the back gusset control point
    */
-  points.gussetBackCp = points.sideMiddle.shift(
-    90,
-    points.sideLegCpBack.dy(points.sideMiddle) * options.backExposure
-  )
+  points.gussetBackCp = points.sideMiddle
+    .shift(90, points.sideLegCpBack.dy(points.sideMiddle) * minBackExposure)
+    .shift(180, points.sideMiddle.x * (1 - thongFactor))
+
+  /*
+   * Force the sideMiddle point to lie on the line between front and back
+   * control points. This only kicks in when backExposure > 80 and thus
+   * thongFactor is not 1
+   */
+  if (thongFactor !== 1) {
+    points.sideMiddle = utils.beamIntersectsY(
+      points.gussetFrontCp,
+      points.gussetBackCp,
+      points.sideMiddle.y
+    )
+  }
 
   /*
    * Make checking for bulge easy
@@ -173,15 +199,80 @@ function draftUmaBase({
       .curve_(points.cfWaistbandDipCp, points.cfWaistbandDip)
       .close()
       .addClass('lining')
-    paths.back = new Path()
-      .move(points.cfMiddle)
-      .line(points.cfWaistbandDipBack)
-      .curve_(points.cfWaistbandDipCpBack, points.sideWaistbandBack)
-      .line(points.sideLegBack)
-      .curve(points.sideLegCpBack, points.gussetBackCp, points.sideMiddle)
-      .line(points.cfMiddle)
-      .close()
-      .addClass('note')
+
+    /*
+     * If people want to max out the back exposure, we need to flare
+     * out the back part, which requires some more splits
+     */
+    if (options.backExposure < 0.25) {
+      paths.backCurve = new Path()
+        .move(points.sideMiddle)
+        .curve(points.gussetBackCp, points.sideLegCpBack, points.sideLegBack)
+        .addClass('stroke-xl lining')
+        .hide()
+      points.backCurveGussetSplit = paths.backCurve.shiftFractionAlong(0.15)
+      points.backCurveBackSplit = paths.backCurve.reverse().shiftFractionAlong(0.05)
+      const angle = points.backCurveGussetSplit.angle(points.backCurveBackSplit)
+      const dist = points.backCurveGussetSplit.dist(points.backCurveBackSplit)
+      const shift = points.sideMiddle.x * 2 * (0.25 - options.backExposure)
+      points.backCurveBump = points.backCurveGussetSplit
+        .shiftFractionTowards(points.backCurveBackSplit, 0.5)
+        .shift(angle + 90, shift)
+      points.backCurveBumpCp1 = points.backCurveBump.shift(angle, dist / 4)
+      points.backCurveBumpCp2 = points.backCurveBump.shift(angle, dist / -4)
+
+      let parts = paths.backCurve.split(points.backCurveBackSplit)
+      paths.backCurveBackRest = parts[0].reverse().hide()
+      paths.backCurveBack = parts[1].hide()
+      parts = paths.backCurve.split(points.backCurveGussetSplit)
+      paths.backCurveGusset = parts[0].hide()
+      paths.backCurveGussetRest = parts[1].hide()
+
+      points.backCurveGussetCp = points.backCurveGussetSplit.shiftTowards(
+        paths.backCurveBackRest.ops[1].cp1,
+        shift
+      )
+      points.backCurveBackCp = points.backCurveBackSplit.shiftTowards(
+        paths.backCurveGussetRest.ops[1].cp1,
+        shift
+      )
+      paths.bump = new Path()
+        .move(points.backCurveBackSplit)
+        .curve(points.backCurveBackCp, points.backCurveBumpCp1, points.backCurveBump)
+        .smurve(points.backCurveGussetCp, points.backCurveGussetSplit)
+        .hide()
+
+      paths.back = new Path()
+        .move(points.cfWaistbandDipBack)
+        .curve_(points.cfWaistbandDipCpBack, points.sideWaistbandBack)
+        .line(points.sideLegBack)
+        .join(paths.backCurveBack.reverse())
+        .join(paths.bump)
+        .join(paths.backCurveGusset.reverse())
+        .line(points.cfMiddle)
+        .addClass('note')
+
+      paths.legElastic = new Path()
+        .move(points.sideLegBack)
+        .join(paths.backCurveBack.reverse())
+        .join(paths.bump)
+        .join(paths.backCurveGusset.reverse())
+        .hide()
+    } else {
+      paths.back = new Path()
+        .move(points.cfWaistbandDipBack)
+        .curve_(points.cfWaistbandDipCpBack, points.sideWaistbandBack)
+        .line(points.sideLegBack)
+        .curve(points.sideLegCpBack, points.gussetBackCp, points.sideMiddle)
+        .line(points.cfMiddle)
+        .addClass('note')
+
+      paths.legElastic = new Path()
+        .move(points.sideLegBack)
+        .curve(points.sideLegCpBack, points.gussetBackCp, points.sideMiddle)
+        .addClass('stroke-2xl lining')
+        .hide()
+    }
 
     /*
      * If the users wants a bulge, front and gusset will become 1 part
@@ -209,6 +300,11 @@ function draftUmaBase({
         .curve_(points.cfWaistbandDipCp, points.cfWaistbandDip)
         .line(points.cfWaistbandDip)
         .close()
+
+      paths.legElastic
+        .move(points.backGussetSplitBulge)
+        .curve(points.gussetFrontCpBulge, points.sideLegCp, points.sideLeg)
+        .hide()
     }
 
     /*
@@ -237,6 +333,7 @@ function draftUmaBase({
       .move(points.sideLegBack)
       .curve(points.sideLegCpBack, points.gussetBackCp, points.sideMiddle)
       .split(points.backGussetSplit)
+
     /*
      * Add the controls points of the split path to the part points
      */
@@ -285,28 +382,89 @@ function draftUmaBase({
       .curve_(points.cfWaistbandDipCp, points.cfWaistbandDip)
       .close()
       .addClass('note')
-    paths.back = new Path()
-      .move(points.cfBackGusset)
-      .line(points.cfWaistbandDipBack)
-      .curve_(points.cfWaistbandDipCpBack, points.sideWaistbandBack)
-      .line(points.sideLegBack)
-      .join(backCurveParts[0])
-      .line(points.cfBackGusset)
-      .close()
-      .addClass('note')
+
+    /*
+     * If people want to max out the back exposure, we need to flare
+     * out the back part, which requires some more splits
+     */
+    if (options.backExposure < 0.25) {
+      paths.backCurve = new Path()
+        .move(points.backGussetSplit)
+        .curve(points.backGussetSplitCpTop, points.backGussetSplitCpBottom, points.sideLegBack)
+        .addClass('stroke-xl lining')
+        .hide()
+      const fraction = 0.05
+      points.backCurveGussetSplit = paths.backCurve.shiftFractionAlong(fraction)
+      points.backCurveBackSplit = paths.backCurve.reverse().shiftFractionAlong(fraction)
+      const angle = points.backCurveGussetSplit.angle(points.backCurveBackSplit)
+      const dist = points.backCurveGussetSplit.dist(points.backCurveBackSplit)
+      const shift = points.sideMiddle.x * 2 * (0.25 - options.backExposure)
+      points.backCurveBump = points.backCurveGussetSplit
+        .shiftFractionTowards(points.backCurveBackSplit, 0.5)
+        .shift(angle + 90, shift)
+      points.backCurveBumpCp1 = points.backCurveBump.shift(angle, dist / 4)
+      points.backCurveBumpCp2 = points.backCurveBump.shift(angle, dist / -4)
+
+      let parts = paths.backCurve.split(points.backCurveBackSplit)
+      paths.backCurveBackRest = parts[0].hide()
+      paths.backCurveBack = parts[1].hide()
+      parts = paths.backCurve.split(points.backCurveGussetSplit)
+      paths.backCurveGusset = parts[0].hide()
+      paths.backCurveGussetRest = parts[1].hide()
+
+      points.backCurveGussetCp = points.backCurveGussetSplit.shiftTowards(
+        paths.backCurveBackRest.ops[1].cp1,
+        shift
+      )
+      points.backCurveBackCp = points.backCurveBackSplit.shiftTowards(
+        paths.backCurveGussetRest.ops[1].cp1,
+        shift
+      )
+      paths.bump = new Path()
+        .move(points.backCurveBackSplit)
+        .curve(points.backCurveBackCp, points.backCurveBumpCp1, points.backCurveBump)
+        .smurve(points.backCurveGussetCp, points.backCurveGussetSplit)
+        .hide()
+
+      paths.back = new Path()
+        .move(points.cfWaistbandDipBack)
+        .curve_(points.cfWaistbandDipCpBack, points.sideWaistbandBack)
+        .line(points.sideLegBack)
+        .join(paths.backCurveBack.reverse())
+        .join(paths.bump)
+        .join(paths.backCurveGusset.reverse())
+        .line(points.cfBackGusset)
+        .addClass('note')
+
+      paths.legElastic = new Path()
+        .move(points.sideLegBack)
+        .join(paths.backCurveBack.reverse())
+        .join(paths.bump)
+        .join(paths.backCurveGusset.reverse())
+        .curve(points.gussetBackSplitCpBottom, points.gussetBackSplitCpTop, points.sideMiddle)
+        .curve(points.gussetFrontCp, points.sideLegCp, points.sideLeg)
+        .hide()
+    } else {
+      paths.back = new Path()
+        .move(points.cfWaistbandDipBack)
+        .curve_(points.cfWaistbandDipCpBack, points.sideWaistbandBack)
+        .line(points.sideLegBack)
+        .join(backCurveParts[0])
+        .line(points.cfBackGusset)
+        .addClass('note')
+
+      paths.legElastic = new Path()
+        .move(points.sideLegBack)
+        .curve(points.sideLegCpBack, points.gussetBackCp, points.sideMiddle)
+        .curve(points.gussetFrontCp, points.sideLegCp, points.sideLeg)
+        .hide()
+    }
   }
 
   /*
    * Set the elastic length in the store
    */
-  store.set(
-    'legElasticLength',
-    new Path()
-      .move(points.sideLegBack)
-      .curve(points.sideLegCpBack, points.gussetBackCp, points.sideMiddle)
-      .curve(points.gussetFrontCp, points.sideLegCp, points.sideLeg)
-      .length()
-  )
+  store.set('legElasticLength', paths.legElastic.hide().length())
   store.set(
     'waistbandElasticLength',
     (new Path()
@@ -337,7 +495,7 @@ function draftUmaBase({
   /*
    * Hide this part, others will extend it
    */
-  return part.hide()
+  return part
 }
 
 export const base = {
@@ -349,12 +507,12 @@ export const base = {
     /*
      * xStretch is for the horizontal fabric stretch
      */
-    xStretch: { pct: 15, min: 0, max: 50, menu: 'fit' },
+    xStretch: { pct: 15, min: 0, max: 30, menu: 'fit' },
 
     /*
      * yStretch is for the vertical fabric stretch
      */
-    yStretch: { pct: 15, min: 0, max: 50, menu: 'fit' },
+    yStretch: { pct: 5, min: 0, max: 15, menu: 'fit' },
 
     /*
      * The gusset width, based on the seam measurement
@@ -391,7 +549,7 @@ export const base = {
     /*
      * Rise controls the waist height
      */
-    rise: { pct: 46, min: 30, max: 100, menu: 'style' },
+    rise: { pct: 50, min: 30, max: 100, menu: 'style' },
 
     /*
      * legRise controls how high the leg opening is cut out
@@ -401,7 +559,7 @@ export const base = {
     /*
      * Front dip dips the front waistband
      */
-    frontDip: { pct: 5.0, min: -5, max: 15, menu: 'style' },
+    frontDip: { pct: 10.0, min: 0, max: 25, menu: 'style' },
 
     /*
      * frontExposure determines how much skin is on display at the front
@@ -412,13 +570,14 @@ export const base = {
     /*
      * Front dip dips the back waistband
      */
-    backDip: { pct: 2.5, min: -5, max: 15, menu: 'style' },
+    backDip: { pct: -5, min: -15, max: 10, menu: 'style' },
 
     /*
      * backExposure determines how much skin is on display at the back
      * Note that backDip will also influence this
      */
-    backExposure: { pct: 30, min: 25, max: 125, menu: 'style' },
+    backExposure: { pct: 30, min: 0, max: 115, menu: 'style' },
   },
   draft: draftUmaBase,
+  hide: { self: true },
 }

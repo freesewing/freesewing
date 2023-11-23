@@ -3,45 +3,15 @@ title: Store
 ---
 
 A **Store** object holds a simple key/value store with methods for storing and
-retrieving data.  
+retrieving data. It is shared across the pattern, and is a the recommended way
+to pass data between your parts.
 
-## Signature
+The store can also be extended with additional methods by plugins. Refer to
+[the plugin guide](/guides/plugins) for more details.
 
-```js
-Store Store.extend(Array methods=[])
-```
-
-The constructor takes a single argument, an Array of methods to add to the
-store. Each entry in the array should be an array itself holding a path in
-dot notation and a method. See below for an example.
-
-## Example
-
-```js
-function myCustomMethod() {
- // Do something clever
-}
-
-const store = new Store([
-  ["path.to.the.method", myCustomMethod ]
-])
-```  
-
-With the configuration above, you can call `store.path.to.the.method()` and it
-will run `myCustomMethod()`.
-
-## Methods
+## Methods and Properties
 
 A Store object exposes the following methods and properties:
 
-<ReadMore list />
+<ReadMore recurse />
 
-## Notes
-
-A store is typically used to share information between parts. For example
-the length of the neck opening in one part can be used to calculate the
-length for the collar in another part.
-
-Click below to learn more about:
-
-- [How Stores work](/guides/patterns/store)

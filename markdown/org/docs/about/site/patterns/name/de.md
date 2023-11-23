@@ -1,8 +1,8 @@
 ---
-title: "Patterns: Name"
+title: Name
 ---
 
-Every pattern has a **name** attribute that is mandatory.
+Jedes Muster hat ein **name** Attribut, das obligatorisch ist.
 
-In other words, you must give each of your patterns sets a name, but that name can be anything you want.
+Mit anderen Worten: Du musst jedem deiner Mustersätze einen Namen geben, aber dieser Name kann alles sein, was du willst.
 

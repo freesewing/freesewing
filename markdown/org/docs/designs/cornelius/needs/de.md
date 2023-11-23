@@ -5,9 +5,9 @@ title: "Cornelius Radlerhosen: Was du brauchst"
 Um Cornelius herzustellen, brauchst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- Etwa 2 Meter (2,2 Yards) eines geeigneten Stoffes ([siehe Cornelius Stoffoptionen](/docs/patterns/cornelius/fabric/))
-- Etwa 0,5 Meter (0,6 Yards) Futterstoff ([siehe Cornelius Stoffoptionen](/docs/patterns/cornelius/fabric/))
-- Einlage für den Bund ([siehe Cornelius-Stoffoptionen](/docs/patterns/cornelius/fabric/))
+- Etwa 2 Meter (2,2 Yards) eines geeigneten Stoffes ([siehe Cornelius Stoffoptionen](/docs/designs/cornelius/fabric/))
+- Etwa 0,5 Meter (0,6 Yards) Futterstoff ([siehe Cornelius Stoffoptionen](/docs/designs/cornelius/fabric/))
+- Einlage für den Bund ([siehe Cornelius-Stoffoptionen](/docs/designs/cornelius/fabric/))
 - Ein Reißverschluss oder 3 Knöpfe für den Hosenschlitz
 - 3 oder 7 Knöpfe für Bund und Beinabschlüsse
 

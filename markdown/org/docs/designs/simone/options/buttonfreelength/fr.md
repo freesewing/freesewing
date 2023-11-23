@@ -20,6 +20,6 @@ en veillant à ce qu'elle soit comprise dans le bonus de longueur dont tu dispos
 
 </Note>
 
-## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_buttonfreelength_sample.svg "Effet de cette option sur le motif")
+
+

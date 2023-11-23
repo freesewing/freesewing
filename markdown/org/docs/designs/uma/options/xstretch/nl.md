@@ -1,9 +1,6 @@
 ---
-title: "Stof stretch"
+title: "Horizontale stof stretch"
 ---
 
-Pas deze optie aan voor meer of minder elastische stoffen.
+Pas deze optie aan voor meer of minder rekbare stoffen, specifiek voor horizontale stretch.
 
-## Effect van deze optie op het patroon
-
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](ursula_fabricstretch_sample.svg "Effect van deze optie op het patroon")

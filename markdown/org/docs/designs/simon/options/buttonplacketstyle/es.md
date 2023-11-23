@@ -14,10 +14,10 @@ Sin fisuras es menos trabajo y se ve genial.
 
 <Note>
 
-Como la ausencia de costuras sólo es posible en una tapeta _cortada_, esta opción se ignora si eliges una tapeta de botones separada.
+Como la ausencia de costuras sólo es posible en una tapeta _cortada_, esta opción se ignora si eliges una tapeta de botones separados.
 
 </Note>
 
-## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_buttonplacketstyle_sample.svg "Efecto de esta opción en el patrón")
+
+

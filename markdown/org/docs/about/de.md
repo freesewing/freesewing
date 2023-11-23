@@ -1,6 +1,5 @@
 ---
-title: Verschiedenes
-order: 999
+title: Über FreeSewing
 ---
 
 <ReadMore list />

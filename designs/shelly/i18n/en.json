@@ -8,7 +8,9 @@
     "neckband": "Neckband",
     "raglanSleeve": "Sleeve"
   },
-  "s": {},
+  "s": {
+	"foldLine": "Fold line"
+  },
   "o": {
     "hemWidth": {
       "t": "Hem width",
@@ -46,6 +48,10 @@
     "wristEase": {
       "t": "Wrist ease",
       "d": "Affects how wide the end of the sleeve is on sleeves that extend past the biceps. The effect is greater on longer sleeves."
+    },
+    "armpitEase": {
+      "t": "Armpit ease",
+      "d": "Gives more room in the armpit by shifting the sleeve down the body."
     },
 
     "bodyLength": {

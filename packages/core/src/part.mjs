@@ -358,10 +358,22 @@ Part.prototype.__inject = function (orig) {
 Part.prototype.__macroClosure = function (props) {
   const self = this
   const method = function (key, args) {
-    const macro = utils.__macroName(key)
-    if (typeof self[macro] === 'function') return self[macro](args, props)
-    else if ('context' in self)
-      self.context.store.log.warn('Unknown macro `' + key + '` used in ' + self.name)
+    const macro = utils.__macroName(key.toLowerCase())
+    let parentMacro
+    if (typeof self[macro] === 'function') {
+      if ('context' in self) {
+        parentMacro = self.context.store.get('activeMacro', false)
+        self.context.store.set('activeMacro', key.toLowerCase())
+      }
+      const result = self[macro](args, props)
+      if ('context' in self) {
+        if (parentMacro) self.context.store.set('activeMacro', parentMacro)
+        else self.context.store.unset('activeMacro')
+      }
+
+      return result
+    } else if ('context' in self)
+      self.context.store.log.warn('Unknown macro `' + key.toLowerCase() + '` used in ' + self.name)
   }
 
   return method

@@ -1,7 +1,7 @@
 ---
-title: Pointed tie ends
+title: Extremos de corbata puntiagudos
 ---
 
-This option allows you to generate a pattern where the ties have a pointy end, rather than a straight one.
+Esta opción te permite generar un patrón en el que las corbatas tienen un extremo puntiagudo, en lugar de recto.
 
-Enable this option if you want your ties to have pointy ends. Disable this option (the default) if you want your ties to have straight ends.
+Activa esta opción si quieres que tus corbatas tengan extremos puntiagudos. Desactiva esta opción (por defecto) si quieres que tus corbatas tengan los extremos rectos.

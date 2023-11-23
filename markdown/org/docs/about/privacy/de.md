@@ -1,5 +1,5 @@
 ---
-title: Datenschutzerklärung
+title: FreeSewing Datenschutzhinweis
 ---
 
 **Letztes Update**: 13. Januar 2023
@@ -96,6 +96,10 @@ Diese Daten werden für jede Person mit einem Account auf unserer Website gespei
 
 ## Andere Informationen, die für diesen Datenschutzhinweis relevant sind
 
+### Nutzung von Minderjährigen unter 16 Jahren
+
+Aus rechtlichen Gründen musst du mindestens 16 Jahre alt sein, um Freesewing zu benutzen.
+
 ### Datenverantwortlicher und Kontaktinformationen
 
 Bei Fragen zu dieser Datenschutzerklärung kannst du dich an Joost De Cock unter joost@joost.at wenden.
@@ -118,7 +122,7 @@ Unsere Hosting-Anbieter verwalten verschiedene Komponenten unserer Infrastruktur
 
 Das bedeutet zwar, dass sie (streng genommen) deine Daten verarbeiten, aber sie benötigen keinen Zugang zu Informationen über dich. Außerdem verschlüsseln wir ruhende Profildaten, wodurch es für sie nicht trivial ist auf sie zuzugreifen, selbst wenn sie dies wollten.
 
-### Warrant canaries
+### Warrant Canaries
 
 Wir haben zwar nicht die Absicht, irgendwelche deiner persönlichen Daten weiterzugeben, aber wir stehen nicht über dem Gesetz.
 
@@ -126,14 +130,10 @@ Wenn wir gesetzlich dazu verpflichtet sind oder wenn wir der Meinung sind, dass 
 
 Bisher:
 
-- FreeSewing has never turned over our encryption or authentication keys or our customers' encryption or authentication keys to anyone.
-- FreeSewing has never installed any law enforcement software or equipment anywhere on our infrastructure.
-- FreeSewing has never provided any law enforcement organization personal data of any of our users or visitors.
-- FreeSewing has never weakened, compromised, or subverted any of its encryption at the request of law enforcement or another third party.
-
-### Nutzung von Minderjährigen unter 16 Jahren
-
-Aus rechtlichen Gründen musst du mindestens 16 Jahre alt sein, um Freesewing zu benutzen.
+- FreeSewing hat nie unsere Verschlüsselungs- oder Authentifizierungsschlüssel oder die unserer Kunden an irgendjemanden weitergegeben.
+- FreeSewing hat niemals Software oder Geräte für die Strafverfolgung auf unserer Infrastruktur installiert.
+- FreeSewing hat niemals persönliche Daten unserer Nutzer oder Besucher an Strafverfolgungsbehörden weitergegeben.
+- FreeSewing hat seine Verschlüsselung nie auf Verlangen von Strafverfolgungsbehörden oder anderen Dritten geschwächt, kompromittiert oder unterlaufen.
 
 ### Siehe auch
 
@@ -142,7 +142,7 @@ Aus rechtlichen Gründen musst du mindestens 16 Jahre alt sein, um Freesewing zu
 
 [1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
 
-[2]: /docs/various/rights/
+[2]: /docs/about/rights/
 
 [3]: /account/consent/
 

@@ -14,7 +14,7 @@ Walburga est un modèle d'inspiration historique, et si tu veux plus d'authentic
 
 ### Étape 2 : Finir les coutures et l'ouverture de la tête
 
-- Finis les coutures et les bords bruts au niveau de l'ouverture de la tête, avec la méthode de ton choix. (Si tu as utilisé les tissus recommandés dans les options de tissu [](/docs/patterns/walburga/fabric), ils _s'effilocheront_ . Plier deux fois la marge de couture, entourer le bord brut et surpiquer est une option. Tu peux aussi utiliser des surpiqûres décoratives).
+- Finis les coutures et les bords bruts au niveau de l'ouverture de la tête, avec la méthode de ton choix. (Si tu as utilisé les tissus recommandés dans les options de tissu [](/docs/designs/walburga/fabric), ils _s'effilocheront_ . Plier deux fois la marge de couture, entourer le bord brut et surpiquer est une option. Tu peux aussi utiliser des surpiqûres décoratives).
 
 ### (Facultatif) Étape 3 : Découper des fentes
 

@@ -1,6 +1,5 @@
 ---
-title: Nähen
-order: 300
+title: Terminologie zum Nähen
 ---
 
 <ReadMore list />

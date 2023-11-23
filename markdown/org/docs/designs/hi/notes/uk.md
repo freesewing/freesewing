@@ -1,6 +1,6 @@
 ---
-title: "Hi the shark: Designer Notes"
+title: "Привіт, акуло: Нотатки дизайнера"
 ---
 
-<Fixme>Wouter designed this. They have not written any notes (yet)</Fixme>
+<Fixme>Воутер розробив це. Вони не писали жодних нотаток (поки що)</Fixme>
 

@@ -1,7 +1,7 @@
 ---
-title: "Shin swim trunks: Designer Notes"
+title: "Плавки з гомілкою: Нотатки дизайнера"
 ---
 
-I needed swim trunks, so I designed Shin. There's not much more to it than that.
+Мені потрібні були плавки, тож я розробив Shin. Це не набагато більше, ніж це.
 
 Йост

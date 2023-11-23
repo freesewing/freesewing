@@ -49,7 +49,7 @@ Ik ben meer een vooruitkijker dan een terugkijker, maar als ik terugkijk op het 
 
 Twaalf maanden geleden , [lanceerden we ons mecenaatsproject](/blog/calling-all-patrons). Sindsdien hebben 65 mecenassen - ongeveer gelijk verdeeld over onze 3 niveaus van mecenaat - [naar voren gestapt om freesewing te steunen](/patrons/join). De kettingreactie van deze mensen die zich inzetten om ons werk te steunen, heeft zelfs mijn meest optimistische hoop overtroffen.
 
-Je weet misschien wel of niet dat ik [een belofte heb gedaan](/docs/various/pledge) om alle inkomsten van freesewing aan goede doelen te schenken. Dus vanmorgen heb ik onze hele jaaropbrengst (**3162,14 euro**) overgemaakt naar [Artsen zonder Grenzen](https://www.msf.org/) . Geld dat zal worden gebruikt om hulp te bieden aan de meest kwetsbare mensen op deze planeet.
+Je weet misschien wel of niet dat ik [een belofte heb gedaan](/docs/about/pledge) om alle inkomsten van freesewing aan goede doelen te schenken. Dus vanmorgen heb ik onze hele jaaropbrengst (**3162,14 euro**) overgemaakt naar [Artsen zonder Grenzen](https://www.msf.org/) . Geld dat zal worden gebruikt om hulp te bieden aan de meest kwetsbare mensen op deze planeet.
 
 Jij hebt dat mogelijk gemaakt en als het ook maar een fractie van de vreugde in jouw hart brengt als in het mijne, zul je begrijpen hoeveel jouw mecenaat voor mij betekent.
 

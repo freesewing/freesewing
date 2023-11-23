@@ -4,7 +4,7 @@ title: "Manteau Carlita : Instructions de coupe"
 
 <Note>
 
-Certaines parties doivent être esquissées à partir des pièces existantes. La manière de les rédiger est indiquée dans les [instructions] (/docs/patterns/carlita/instructions).
+Certaines parties doivent être esquissées à partir des pièces existantes. La façon de les rédiger est fournie dans le site [instructions](/docs/designs/carlita/instructions).
 
 </Note>
 

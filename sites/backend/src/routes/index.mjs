@@ -8,8 +8,8 @@ import { curatedSetsRoutes } from './curated-sets.mjs'
 import { optionPacksRoutes } from './option-packs.mjs'
 import { subscribersRoutes } from './subscribers.mjs'
 import { flowsRoutes } from './flows.mjs'
+import { imgRoutes } from './img.mjs'
 import { adminRoutes } from './admin.mjs'
-import { importsRoutes } from './imports.mjs'
 
 export const routes = {
   apikeysRoutes,
@@ -22,6 +22,6 @@ export const routes = {
   optionPacksRoutes,
   subscribersRoutes,
   flowsRoutes,
+  imgRoutes,
   adminRoutes,
-  importsRoutes,
 }
