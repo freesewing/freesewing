@@ -55,6 +55,8 @@ import { Walburga as walburga } from '@freesewing/walburga'
 import { Waralee as waralee } from '@freesewing/waralee'
 import { Yuri as yuri } from '@freesewing/yuri'
 import { Otis as otis } from '@freesewing/otis'
+import { Test5 as test5 } from '@freesewing/test5'
+import { Test5b as test5b } from '@freesewing/test5b'
 
 const designs = {
   aaron,
@@ -110,6 +112,8 @@ const designs = {
   waralee,
   yuri,
   otis,
+  test5,
+  test5b,
 }
 
 export const useDesign = (design) => (designs[design] ? designs[design] : false)
