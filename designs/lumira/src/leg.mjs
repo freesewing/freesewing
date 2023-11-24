@@ -23,14 +23,14 @@ export const leg = {
     paths.center = new Path().move(points.centerWaist).line(points.centerAnkle)
 
     paths.front = new Path()
-      .move(points.frontWaist)
+      .move(points.frontWaistband)
       .join(paths.front)
       .line(points.frontKnee)
       .line(points.frontAnkle)
       .hide()
     paths.back = new Path()
-      .move(points.backWaist)
-      .join(paths.backTop)
+      .move(points.backWaistband)
+      .join(paths.back)
       .join(paths.backCircle)
       .join(paths.backGusset)
       .line(points.backKnee)
@@ -44,7 +44,7 @@ export const leg = {
     // }
 
     paths.seam = new Path()
-      .move(points.backWaist)
+      .move(points.backWaistband)
       .join(paths.back)
       .join(paths.ankle)
       .join(paths.front.reverse())

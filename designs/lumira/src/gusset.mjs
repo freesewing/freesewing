@@ -8,6 +8,7 @@ export const gusset = {
     backInsertTopCpAngle: 0,
     backInsertGussetCp: 0.2,
     backInsertGussetCpAngle: 35,
+    frontBulgeLift: 1.25,
   },
   draft: ({
     measurements,
@@ -25,14 +26,15 @@ export const gusset = {
     utils,
     part,
   }) => {
-    const waistReduction = store.get('waistReduction')
+    const waistLowering = store.get('waistLowering')
+    const waistbandSize = store.get('waistbandSize')
     const gussetWidth = store.get('gussetWidth')
     const backCircleLength = store.get('backCircleLength')
     const backGussetLength = store.get('backGussetLength')
     const ease = 1 + options.ease
 
     console.log({
-      waistReduction: waistReduction,
+      waistLowering: waistLowering,
       gussetWidth: gussetWidth,
       backCircleLength: backCircleLength,
       backGussetLength: backGussetLength,
@@ -44,13 +46,13 @@ export const gusset = {
     points.backInsertOutsideGusset = points.backInsertCenterTop
       .shift(
         270,
-        measurements.crossSeamBack - measurements.waistToHips - waistReduction - backGussetLength
+        measurements.crossSeamBack - measurements.waistToHips - waistLowering - backGussetLength
       )
       .shift(0, gussetWidth)
 
     points.backInsertCenterSeat = points.backInsertCenterTop.shift(
       270,
-      measurements.waistToSeat - waistReduction
+      measurements.waistToSeat - waistLowering
     )
     // .addCircle(2)
 
@@ -85,7 +87,7 @@ export const gusset = {
         )
         .hide()
       diff = backCircleLength - paths.backInsertCircle.length()
-      console.log({ i: iter, d: diff })
+      console.log({ i: iter, d: diff, bcl: backCircleLength, pl: paths.backInsertCircle.length() })
     } while (iter++ < 50 && (diff > 1 || diff < -1))
 
     points.backInsertOutsideBottom = points.backInsertOutsideGusset.shift(270, backGussetLength)
@@ -102,21 +104,27 @@ export const gusset = {
 
       points.frontCenter = points.backInsertCenterBottom.shift(
         270,
-        measurements.crossSeamFront - waistReduction
+        measurements.crossSeamFront - waistLowering - waistbandSize
       )
       points.frontOutside = points.frontCenter.shift(0, gussetWidth)
       points.frontOutsideHips = points.frontOutside.shift(
         90,
-        measurements.waistToHips - waistReduction
+        measurements.waistToHips - waistLowering - waistbandSize
       )
 
       const gussetCpLength = points.backInsertOutsideGusset.dist(points.backInsertOutsideBottom)
 
-      points.backInsertOutsideBottomCp = points.backInsertOutsideBottom.shift(270, gussetCpLength)
-      points.frontOutsideHipsCp = points.frontOutsideHips.shift(90, gussetCpLength)
-      points.frontOutsideMiddle = points.frontOutsideHips.shift(
+      points.backInsertOutsideBottomCp = points.backInsertOutsideBottom.shift(
+        270,
+        gussetCpLength * options.frontBulgeLift
+      )
+      points.frontOutsideHipsCp = points.frontOutsideHips.shift(
         90,
-        points.frontOutsideHips.dist(points.backInsertOutsideBottom) / 2
+        gussetCpLength * (1 / options.frontBulgeLift)
+      )
+      points.frontOutsideMiddle = points.frontOutsideHipsCp.shift(
+        90,
+        points.frontOutsideHipsCp.dist(points.backInsertOutsideBottomCp) / 2
       )
 
       var diff = 0
