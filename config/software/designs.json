@@ -474,6 +474,16 @@
     "lab": false,
     "org": false
   },
+  "lily": {
+    "lab": true,
+    "org": true,
+    "description": "A FreeSewing pattern for leggings",
+    "code": "Anna Puk",
+    "design": "Anna Puk",
+    "difficulty": 2,
+    "tags": ["bottoms", "trousers", "underwear"],
+    "techniques": ["elastic", "curvedSeam", "hem", "stretch"]
+  },
   "lucy": {
     "code": "SeaZeeZee",
     "description": "A FreeSewing pattern for a historical tie-on pocket",
@@ -917,6 +927,18 @@
     "org": true,
     "tags": [],
     "techniques": []
+  },
+  "lily": {
+    "code": "Coder name",
+    "description": "A FreeSewing pattern that needs a description",
+    "design": "Designer name",
+    "difficulty": 1,
+    "tags": [
+      "tagname"
+    ],
+    "techniques": [
+      "techname"
+    ]
   },
   "test5": {
     "code": "Coder name",
