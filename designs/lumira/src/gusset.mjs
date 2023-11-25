@@ -1,3 +1,4 @@
+import { pctBasedOn } from '@freesewing/core'
 import { shape } from './shape.mjs'
 
 export const gusset = {
@@ -7,8 +8,25 @@ export const gusset = {
     backInsertTopCp: 0.3,
     backInsertTopCpAngle: 0,
     backInsertGussetCp: 0.2,
-    backInsertGussetCpAngle: 35,
     frontBulgeLift: 1.25,
+    buttLift: {
+      pct: 30,
+      min: 0,
+      max: 60,
+      // eslint-disable-next-line no-unused-vars
+      menu: (settings, mergedOptions) => (mergedOptions?.cyclingChamois ? false : 'fit'),
+    },
+    frontBulgeSize: {
+      pct: 2.5,
+      min: 0,
+      max: 10,
+      ...pctBasedOn('crossSeamFront'),
+      // eslint-disable-next-line no-unused-vars
+      menu: (settings, mergedOptions) =>
+        mergedOptions?.frontBulge == true && mergedOptions?.cyclingChamois == false
+          ? 'style'
+          : false,
+    },
   },
   draft: ({
     measurements,
@@ -32,15 +50,10 @@ export const gusset = {
     const backCircleLength = store.get('backCircleLength')
     const backGussetLength = store.get('backGussetLength')
     const ease = 1 + options.ease
-
-    console.log({
-      waistLowering: waistLowering,
-      gussetWidth: gussetWidth,
-      backCircleLength: backCircleLength,
-      backGussetLength: backGussetLength,
-    })
-
-    console.log({ Bpoints: JSON.parse(JSON.stringify(points)) })
+    const frontBulge = options.cyclingChamois ? true : options.frontBulge
+    const frontBulgeSize =
+      (options.cyclingChamois ? 0.025 : options.frontBulgeSize) * measurements.crossSeamFront
+    const backInsertGussetCpAngle = options.cyclingChamois ? 0 : 90 * options.buttLift
 
     points.backInsertCenterTop = new Point(0, 0)
     points.backInsertOutsideGusset = points.backInsertCenterTop
@@ -54,15 +67,13 @@ export const gusset = {
       270,
       measurements.waistToSeat - waistLowering
     )
-    // .addCircle(2)
-
     points.backInsertCenterTopCp1 = points.backInsertCenterTop.shift(
       options.backInsertTopCpAngle,
       measurements.hips * 0.25 * ease * options.backInsertTopCp
     )
 
     points.backInsertOutsideGussetCp1 = points.backInsertOutsideGusset.shift(
-      options.backInsertGussetCpAngle,
+      backInsertGussetCpAngle,
       measurements.upperLeg * 0.25 * ease * options.backInsertGussetCp
     )
 
@@ -74,7 +85,7 @@ export const gusset = {
         diff * (options.backInsertTopCp / options.backInsertGussetCp)
       )
       points.backInsertOutsideGussetCp1 = points.backInsertOutsideGussetCp1.shift(
-        options.backInsertGussetCpAngle,
+        backInsertGussetCpAngle,
         diff * (options.backInsertGussetCp / options.backInsertTopCp)
       )
 
@@ -93,14 +104,8 @@ export const gusset = {
     points.backInsertOutsideBottom = points.backInsertOutsideGusset.shift(270, backGussetLength)
     points.backInsertCenterBottom = points.backInsertOutsideBottom.shift(180, gussetWidth)
 
-    // points.backInsertCenterTopCp1.addCircle(6)
-    // points.backInsertOutsideGussetCp1.addCircle(8)
-
-    console.log({ bil: paths.backInsertCircle.length(), bcl: paths.backCircle.length() })
-
-    if (options.frontBulge) {
+    if (frontBulge) {
       const frontLength = store.get('frontLength')
-      const frontBulgeSize = options.frontBulgeSize * measurements.crossSeamFront
 
       points.frontCenter = points.backInsertCenterBottom.shift(
         270,
@@ -130,11 +135,9 @@ export const gusset = {
       var diff = 0
       var iter = 0
       do {
-        points.frontOutsideMiddle = points.frontOutsideMiddle.shift(0, diff) //.addCircle(8)
+        points.frontOutsideMiddle = points.frontOutsideMiddle.shift(0, diff)
         points.frontOutsideMiddleCp1 = points.frontOutsideMiddle.shift(90, gussetCpLength)
-        // .addCircle(10)
         points.frontOutsideMiddleCp2 = points.frontOutsideMiddle.shift(270, gussetCpLength)
-        // .addCircle(15)
 
         const frontGussetPath = new Path()
           .move(points.frontOutside)
@@ -147,8 +150,6 @@ export const gusset = {
           )
 
         diff = frontLength + frontBulgeSize - frontGussetPath.length()
-
-        console.log({ i: iter, d: diff, fl: frontLength, fgpl: frontGussetPath.length() })
       } while (iter++ < 3 && (diff > 1 || diff < -1))
 
       paths.front = new Path()
@@ -203,9 +204,6 @@ export const gusset = {
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
-
-    console.log({ Bpaths: JSON.parse(JSON.stringify(paths)) })
-    console.log({ length: points.backInsertCenterTop.dist(points.backInsertCenterBottom) })
 
     return part
   },

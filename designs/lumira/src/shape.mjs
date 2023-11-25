@@ -23,16 +23,28 @@ export const shape = {
   ],
   options: {
     // Constants
-    weird: 0.3,
 
     // Booleans
-    frontBulge: { bool: false, menu: 'style' },
+    frontBulge: {
+      bool: false,
+      // eslint-disable-next-line no-unused-vars
+      menu: (settings, mergedOptions) => (mergedOptions?.cyclingChamois ? false : 'style'),
+    },
     waistband: { bool: false, menu: 'style' },
+    cyclingChamois: { bool: false, menu: 'style' },
 
     // Percentages
     ease: { pct: -10, min: -30, max: 0, menu: 'fit' },
     waistLowering: { pct: 35, min: 0, max: 60, menu: 'style' },
-    gussetWidth: { pct: 10, min: 0, max: 30, ...pctBasedOn('crossSeamFront'), menu: 'fit' },
+    gussetWidth: {
+      pct: 10,
+      min: 0,
+      max: 30,
+      ...pctBasedOn('crossSeamFront'),
+      // eslint-disable-next-line no-unused-vars
+      menu: (settings, mergedOptions) => (mergedOptions?.cyclingChamois ? false : 'style'),
+    },
+    backGussetWidth: { pct: 50, min: 20, max: 75, ...pctBasedOn('hips'), menu: 'fit' },
     frontGussetLength: {
       pct: 12.5,
       min: 0,
@@ -40,14 +52,6 @@ export const shape = {
       ...pctBasedOn('crossSeamFront'),
       // eslint-disable-next-line no-unused-vars
       menu: (settings, mergedOptions) => (mergedOptions?.frontBulge ? false : 'style'),
-    },
-    frontBulgeSize: {
-      pct: 2.5,
-      min: 0,
-      max: 10,
-      ...pctBasedOn('crossSeamFront'),
-      // eslint-disable-next-line no-unused-vars
-      menu: (settings, mergedOptions) => (mergedOptions?.frontBulge ? 'style' : false),
     },
     waistbandSize: {
       pct: 20,
@@ -92,8 +96,11 @@ export const shape = {
           ? 0.98 - options.waistLowering
           : options.waistbandSize)
       : 0
-    const gussetWidth = measurements.crossSeamFront * options.gussetWidth * 0.5
+    const gussetWidth =
+      measurements.crossSeamFront * (options.cyclingChamois ? 0.075 : options.gussetWidth * 0.5)
+    const backGussetWidth = options.backGussetWidth * 2.34
     const frontGussetLength = measurements.crossSeamFront * options.frontGussetLength
+    const frontBulge = options.cyclingChamois ? true : options.frontBulge
 
     store.set('waistLowering', waistLowering)
     store.set('waistReduction', waistReduction)
@@ -159,7 +166,6 @@ export const shape = {
           prefix == 'front' ? 0 : 180,
           diff
         )
-        // points[prefix + 'UpperLegCp1'] = points[prefix + 'UpperLeg'].shiftFractionTowards(points.centerUpperLeg,.2)
         CreateControlPoints([prefix + 'Waist', prefix + 'Seat', prefix + 'UpperLeg'])
         const pCrotch = new Path()
           .move(points[prefix + 'Waist'])
@@ -169,10 +175,6 @@ export const shape = {
             points[prefix + 'UpperLegCp2'],
             points[prefix + 'UpperLeg']
           )
-        // const pCrotch = new Path()
-        //   .move(points[prefix+'Waist'])
-        //   .curve(points[prefix+'WaistCp1'],points[prefix+'SeatCp2'],points[prefix+'Seat'])
-        //   .curve(points[prefix+'SeatCp1'],points[prefix+'UpperLegCp2'],points[prefix+'UpperLeg'])
 
         console.log({ points: JSON.parse(JSON.stringify(points)) })
 
@@ -208,10 +210,6 @@ export const shape = {
     points.frontUpperLeg = points.centerUpperLeg.shift(0, (measurements.upperLeg / 2) * ease)
     points.backUpperLeg = points.centerUpperLeg.shift(180, (measurements.upperLeg / 2) * ease)
 
-    // points.frontUpperLegIn = points.frontUpperLeg.shift(180,options.(weird*(measurements.upperLeg/2))/waistBackFrontRatio)
-    // points.backUpperLegIn = points.frontUpperLeg.shift(180,options.(weird*(measurements.upperLeg/2))*waistBackFrontRatio)
-    // points.frontWaist = points.frontUpperLegIn
-
     const backWaistAngle = utils.rad2deg(
       Math.asin(
         ((measurements.waistToUpperLeg * seatBackFrontRatio * (crossSeamBackFrontRatio - 1)) /
@@ -228,15 +226,6 @@ export const shape = {
           ease
       )
     )
-    // const backWaistAngle = utils.rad2deg(Math.asin( (waistToInseam * (crossSeamBackFrontRatio - 1)) / measurements.waistBack *.5 ))
-    // const frontWaistAngle = utils.rad2deg(Math.asin( (waistToInseam * (crossSeamBackFrontRatio - 1)) / measurements.waistFront *.5 ))
-
-    console.log({
-      waistBackFrontRatio: waistBackFrontRatio,
-      seatBackFrontRatio: seatBackFrontRatio,
-      crossSeamBackFrontRatio: crossSeamBackFrontRatio,
-    })
-    console.log({ backWaistAngle: backWaistAngle, frontWaistAngle: frontWaistAngle })
 
     points.backWaist = points.centerWaist.shift(
       180 - backWaistAngle,
@@ -340,12 +329,17 @@ export const shape = {
 
     points.frontGussetJoin = paths.front.reverse().shiftAlong(frontGussetLength) //.addCircle(3).addCircle(5)
 
-    if (options.frontBulge) {
+    if (frontBulge) {
       // const frontBulgeSize = options.frontBulgeSize *measurements.crossSeamFront
 
       points.frontGussetCp = points.frontUpperLegCp2.clone()
       points.frontWaistband = points.frontWaistband.shiftTowards(points.backWaistband, gussetWidth)
 
+      console.log({
+        frontGussetCp: points.frontGussetCp,
+        frontWaistband: points.frontWaistband,
+        frontGusset: points.frontGusset,
+      })
       var iter = 0
       var diff = 0
       do {
@@ -433,15 +427,13 @@ export const shape = {
     points.backUpperLegToHips = new Point(points.backHips.x, points.backUpperLeg.y)
     points.backCircleMiddle = points.backHips.shiftFractionTowards(points.backUpperLegToHips, 0.5)
 
-    points.backCircleHipsCp1 = points.backHips.shift(
-      backHipsAngle,
-      measurements.hips * 0.25 * 0.5 * ease
-    )
+    points.backCircleHipsCp1 = points.backHips
+      .shift(backHipsAngle, measurements.hips * 0.25 * 0.5 * ease * backGussetWidth)
+      .addCircle(9)
 
-    points.backCircleUpperLegCp1 = points.backUpperLegToHips.shift(
-      0,
-      measurements.upperLeg * 0.25 * ease
-    )
+    points.backCircleUpperLegCp1 = points.backUpperLegToHips
+      .shift(0, measurements.upperLeg * 0.25 * ease * backGussetWidth)
+      .addCircle(5)
 
     paths.back = paths.back.split(points.backHips)[0].hide()
 
@@ -458,6 +450,15 @@ export const shape = {
     store.set('backGussetLength', paths.backGusset.length())
     store.set('backCircleLength', paths.backCircle.length())
 
+    points.backCircleIntersect = paths.backCircle
+      .intersects(new Path().move(points.backSeat).line(points.centerSeat))[0]
+      .addCircle(10)
+    console.log({
+      dist: points.backCircleIntersect.dist(points.centerSeat),
+      pct:
+        points.backCircleIntersect.dist(points.centerSeat) /
+        points.backSeat.dist(points.centerSeat),
+    })
     console.log({ points: JSON.parse(JSON.stringify(points)) })
     console.log({ paths: JSON.parse(JSON.stringify(paths)) })
     console.log({ store: JSON.parse(JSON.stringify(store)) })
