@@ -25,22 +25,23 @@ function draftLilyBack({
   // work-around: flag it
   let stretchAsEase = -options.fabricStretch/10
   let easeTol = 0.005
-	if (abs(options.waistEase - stretchAsEase) > easeTol || abs(options.seatEase - stretchAsEase) > easeTol || abs(options.kneeEase - stretchAsEase) > easeTol) {
-	  store.flag.note({
-		msg: `lily:adjustEase`,
-		notes: [], // TODO: figure out what to put here
-		replace: {
-		  stretch: units(options.fabricStretch),
-		  ease: stretchAsEase,
-		},
-		suggest: {
-			text: 'adjust ease',
-			icon: '',
-			update: {
-				options: ['waistEase', stretchAsEase, 'seatEase', stretchAsEase, 'kneeEase', stretchAsEase],
-			},
-		},
-	})
+  if (abs(options.waistEase - stretchAsEase) > easeTol || abs(options.seatEase - stretchAsEase) > easeTol || abs(options.kneeEase - stretchAsEase) > easeTol) {
+    store.flag.note({
+      msg: `lily:adjustEase`,
+      notes: [], // TODO: figure out what to put here
+      replace: {
+        stretch: units(options.fabricStretch),
+        ease: stretchAsEase,
+      },
+      suggest: {
+        text: 'adjust ease',
+        icon: '',
+        update: {
+          options: ['waistEase', stretchAsEase, 'seatEase', stretchAsEase, 'kneeEase', stretchAsEase],
+        },
+      },
+    })
+  }
   //TODO: remove lines below once overriding of options works properly
   log.info("under 'Style', set crotch drop and length bonus to zero, and enable fit knee")
   log.info("under 'Advanced', set leg balance and waist balance to 50%")
