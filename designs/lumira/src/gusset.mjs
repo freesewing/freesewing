@@ -52,7 +52,7 @@ export const gusset = {
     const ease = 1 + options.ease
     const frontBulge = options.cyclingChamois ? true : options.frontBulge
     const frontBulgeSize =
-      (options.cyclingChamois ? 0.025 : options.frontBulgeSize) * measurements.crossSeamFront
+      (options.cyclingChamois ? 0.0125 : options.frontBulgeSize) * measurements.crossSeamFront
     const backInsertGussetCpAngle = options.cyclingChamois ? 0 : 90 * options.buttLift
 
     points.backInsertCenterTop = new Point(0, 0)
@@ -152,11 +152,8 @@ export const gusset = {
         diff = frontLength + frontBulgeSize - frontGussetPath.length()
       } while (iter++ < 3 && (diff > 1 || diff < -1))
 
-      paths.front = new Path()
-        .move(points.backInsertCenterBottom)
-        .line(points.frontCenter)
-        .line(points.frontOutside)
-        .line(points.frontOutsideHips)
+      paths.frontBulge = new Path()
+        .move(points.frontOutsideHips)
         .curve(points.frontOutsideHipsCp, points.frontOutsideMiddleCp2, points.frontOutsideMiddle)
         .curve(
           points.frontOutsideMiddleCp1,
@@ -164,8 +161,16 @@ export const gusset = {
           points.backInsertOutsideBottom
         )
         .hide()
+      snippets.front = new Snippet('notch', paths.frontBulge.shiftFractionAlong(0.5))
+
+      paths.front = new Path()
+        .move(points.backInsertCenterBottom)
+        .line(points.frontCenter)
+        .line(points.frontOutside)
+        .line(points.frontOutsideHips)
+        .join(paths.frontBulge)
+        .hide()
     } else {
-      console.log({ store: JSON.parse(JSON.stringify(store)) })
       const frontGussetAngle = store.get('frontGussetAngle')
       const frontGussetLength = store.get('frontGussetLength')
       points.frontCenter = points.backInsertCenterBottom.shift(270, frontGussetLength)
@@ -189,21 +194,31 @@ export const gusset = {
         .hide()
     }
 
-    paths.seam = new Path()
-      .move(points.backInsertCenterTop)
-      .line(points.backInsertCenterBottom)
-      .join(paths.front)
-      .line(points.backInsertOutsideGusset)
+    paths.backGusset = new Path()
+      .move(points.backInsertOutsideGusset)
       .curve(
         points.backInsertOutsideGussetCp1,
         points.backInsertCenterTopCp1,
         points.backInsertCenterTop
       )
+
+    paths.seam = new Path()
+      .move(points.backInsertCenterTop)
+      .line(points.backInsertCenterBottom)
+      .join(paths.front)
+      .line(points.backInsertOutsideGusset)
+      .join(paths.backGusset)
       .close()
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
+
+    snippets.circle5 = new Snippet('notch', points.backInsertOutsideBottom)
+    snippets.circle4 = new Snippet('notch', points.backInsertOutsideGusset)
+    snippets.circle3 = new Snippet('notch', paths.backGusset.shiftFractionAlong(0.25))
+    snippets.circle2 = new Snippet('notch', paths.backGusset.shiftFractionAlong(0.5))
+    snippets.circle1 = new Snippet('notch', paths.backGusset.shiftFractionAlong(0.75))
 
     return part
   },
