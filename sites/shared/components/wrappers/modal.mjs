@@ -82,7 +82,7 @@ export const ModalWrapper = ({
           {!keepOpenOnClick && (
             <button
               className="fixed bottom-2 right-2 btn btn-neutral btn-circle lg:hidden"
-              onClick={keepOpenOnClick ? null : close}
+              onClick={close}
             >
               <CloseIcon className="w-8 h-8" />
             </button>
