@@ -5,6 +5,24 @@ export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'violet
 
 export const rating = ['green-400', 'yellow-400', 'amber-500', 'orange-500', 'red-500']
 
+export const graph = [
+  'red-700',
+  'amber-700',
+  'lime-700',
+  'emerald-700',
+  'cyan-700',
+  'blue-700',
+  'violet-700',
+  'fuchsia-700',
+  'rose-700',
+  'purple-700',
+  'indigo-700',
+  'sky-700',
+  'teal-700',
+  'yellow-700',
+  'orange-700',
+]
+
 export const theme = {
   fontFamily: 'system-ui, sans-serif',
 
