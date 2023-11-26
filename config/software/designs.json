@@ -554,14 +554,25 @@
     ]
   },
   "onyx": {
-    "lab": true,
-    "org": true,
-    "description": "A FreeSewing pattern for one-piece garments",
     "code": "Thrunic",
+    "description": "A FreeSewing pattern for one-piece garments",
     "design": "Thrunic",
     "difficulty": 4,
-    "tags": ["swimwear", "pajamas", "onePiece"],
-    "techniques": ["hem", "curvedSeam", "stretch", "lining", "zipper", "ribbing"]
+    "lab": true,
+    "org": true,
+    "tags": [
+      "swimwear",
+      "pajamas",
+      "onePiece"
+    ],
+    "techniques": [
+      "hem",
+      "curvedSeam",
+      "stretch",
+      "lining",
+      "zipper",
+      "ribbing"
+    ]
   },
   "paco": {
     "code": "Joost De Cock",
@@ -633,14 +644,22 @@
     ]
   },
   "shelly": {
-	"lab": true,
-	"org": true,
-    "description": "A FreeSewing pattern for a raglan shirt, perfect for swimshirts",
     "code": "Thrunic",
+    "description": "A FreeSewing pattern for a raglan shirt, perfect for swimshirts",
     "design": "Thrunic",
     "difficulty": 2,
-    "tags": ["tops", "swimwear"],
-	"techniques": ["hem", "stretch", "curvedSeam", "raglanSleeve"]
+    "lab": true,
+    "org": true,
+    "tags": [
+      "tops",
+      "swimwear"
+    ],
+    "techniques": [
+      "hem",
+      "stretch",
+      "curvedSeam",
+      "raglanSleeve"
+    ]
   },
   "shin": {
     "code": "Joost De Cock",
@@ -699,14 +718,20 @@
     ]
   },
   "skully": {
-    "description": "A FreeSewing pattern for skully, our logo, a plushy toy",
     "code": "Wouter Van Wageningen",
+    "description": "A FreeSewing pattern for skully, our logo, a plushy toy",
     "design": "Wouter Van Wageningen",
     "difficulty": 4,
     "lab": true,
     "org": true,
-    "tags": ["accessories", "toys"],
-    "techniques": ["curvedSeam", "precision"]
+    "tags": [
+      "accessories",
+      "toys"
+    ],
+    "techniques": [
+      "curvedSeam",
+      "precision"
+    ]
   },
   "sven": {
     "code": "Joost De Cock",
@@ -860,7 +885,11 @@
       "bottoms",
       "trousers"
     ],
-    "techniques": ["curvedSeam", "hem", "weltPocket"]
+    "techniques": [
+      "curvedSeam",
+      "hem",
+      "weltPocket"
+    ]
   },
   "yuri": {
     "code": "Hellgy",
@@ -880,13 +909,27 @@
     ]
   },
   "otis": {
-    "description": "A FreeSewing pattern for a baby romper",
     "code": "Wouter Van Wageningen",
+    "description": "A FreeSewing pattern for a baby romper",
     "design": "Wouter Van Wageningen",
     "difficulty": 2,
     "lab": true,
     "org": true,
-    "tags": [  ],
-    "techniques": [ ]
+    "tags": [],
+    "techniques": []
+  },
+  "opal": {
+    "code": "Coder name",
+    "description": "A FreeSewing pattern that needs a description",
+    "design": "Designer name",
+    "difficulty": 1,
+    "lab": true,
+    "org": false,
+    "tags": [
+      "tagname"
+    ],
+    "techniques": [
+      "techname"
+    ]
   }
 }

@@ -1,0 +1,13 @@
+{
+  "t": "Opal",
+  "d": "A FreeSewing design for overalls",
+  "p": {
+    "back": "Back",
+    "front": "Front"
+ },
+  "s": {
+    "crossSeamFrontTooSmall.t": "The **front** cannot be drafted.",
+    "crossSeamFrontTooSmall.d": "The **cross seam front**, of length {{{length}}}, is too short to be drafted onto a body with a seat located {{{depth}}} below the waist and a crotch fork extending {{{girth}}} horizontally beyond the waist. Please check your measurements and options, especially *cross seam front*, *waist to seat*, and *crotch ease*."
+ },
+  "o": { }
+}
