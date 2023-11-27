@@ -23,7 +23,7 @@ export const shape = {
   ],
   options: {
     // Constants
-
+    gussetCompensation: 1.03,
     // Booleans
     frontBulge: {
       bool: false,
@@ -38,7 +38,7 @@ export const shape = {
     waistLowering: { pct: 35, min: 0, max: 60, menu: 'style' },
     gussetWidth: {
       pct: 10,
-      min: 0,
+      min: 1,
       max: 30,
       ...pctBasedOn('crossSeamFront'),
       // eslint-disable-next-line no-unused-vars
@@ -243,7 +243,11 @@ export const shape = {
 
     points.frontUpperLeg1 = points.centerUpperLeg.shift(0, (measurements.upperLeg / 2) * ease)
     points.backUpperLeg1 = points.centerUpperLeg.shift(180, (measurements.upperLeg / 2) * ease)
-    points.frontUpperLegCp2 = points.frontUpperLeg.shiftFractionTowards(points.centerUpperLeg, 0.4)
+    points.frontUpperLegCp2 = points.frontUpperLeg.shiftFractionTowards(points.centerUpperLeg, 0.5)
+    points.frontUpperLegCp2Temp = points.frontUpperLeg.shiftFractionTowards(
+      points.centerUpperLeg,
+      0.5
+    )
     points.backUpperLegCp2 = points.backUpperLeg.shiftFractionTowards(points.centerUpperLeg, 0.4)
 
     paths.center = new Path().move(points.centerWaist).line(points.centerAnkle).hide()
@@ -254,6 +258,11 @@ export const shape = {
     // paths.backT = new Path()
     //   .move(points.backWaist)
     //   ._curve(points.backUpperLegCp2, points.backUpperLeg1)
+    paths.frontTemp = new Path()
+      .move(points.frontWaist)
+      ._curve(points.frontUpperLegCp2Temp, points.frontUpperLeg1)
+      .hide()
+    // .addClass('note')
     paths.front = new Path()
       .move(points.frontWaist)
       ._curve(points.frontUpperLegCp2, points.frontUpperLeg1)
@@ -262,6 +271,8 @@ export const shape = {
       .move(points.backWaist)
       ._curve(points.backUpperLegCp2, points.backUpperLeg1)
       .hide()
+
+    // paths.front2 = paths.front.clone().unhide()
     ;['center', 'front', 'back'].forEach((prefix) => {
       ReduceWaist(prefix, 'Waist', waistLowering)
     })
@@ -299,36 +310,62 @@ export const shape = {
     points.frontGussetJoin = paths.front.reverse().shiftAlong(frontGussetLength) //.addCircle(3).addCircle(5)
 
     if (frontBulge) {
+      // paths.frontBulge = paths.front.offset(gussetWidth)
+      // .addClass('note')
       // const frontBulgeSize = options.frontBulgeSize *measurements.crossSeamFront
 
-      points.frontGussetCp = points.frontUpperLegCp2.clone()
-      points.frontWaist = points.frontWaist.shiftTowards(points.backWaist, gussetWidth)
-      points.frontWaistband = points.frontWaistband.shiftTowards(points.backWaistband, gussetWidth)
-
-      console.log({
-        frontGussetCp: points.frontGussetCp,
-        frontWaistband: points.frontWaistband,
-        frontGusset: points.frontGusset,
-      })
-      var iter = 0
-      var diff = 0
-      do {
-        points.frontGussetCp = points.frontGussetCp.shift(0, diff)
-        paths.front = new Path()
-          .move(points.frontWaistband)
-          ._curve(points.frontGussetCp, points.frontGusset)
-          .hide()
-
-        diff = paths.front.length() - (measurements.crossSeamFront - waistLowering - waistbandSize)
-
+      paths.front = paths.front.offset(gussetWidth).hide()
+      points.frontWaistband = paths.front.intersects(
+        new Path().move(points.frontWaistband).line(points.centerWaistband)
+      )[0]
+      if (false == points.frontWaistband.sitsRoughlyOn(paths.front.ops[0].to)) {
         console.log({
-          i: iter,
-          d: diff,
-          fl: paths.front.length(),
-          csf: measurements.crossSeamFront - waistLowering,
-          p: paths.front,
+          pf: paths.front,
+          p: points.frontWaistband,
+          hi1: paths.front.split(points.frontWaistband),
         })
-      } while (iter++ < 50 && (diff > 1 || diff < -1))
+        paths.front = paths.front.split(points.frontWaistband)[1].hide()
+      }
+      points.frontGusset = paths.front.intersects(
+        new Path().move(points.frontUpperLeg1).line(points.frontKnee)
+      )[0]
+      if (false == points.frontGusset.sitsRoughlyOn(paths.front.reverse().ops[0].to)) {
+        console.log({
+          pf: paths.front,
+          p: points.frontWaistband,
+          hi2: paths.front.split(points.frontGusset),
+        })
+        paths.front = paths.front.split(points.frontGusset)[0].hide()
+      }
+
+      // points.frontGussetCp = points.frontUpperLegCp2.clone()
+      // points.frontWaist = points.frontWaist.shiftTowards(points.backWaist, gussetWidth)
+      // points.frontWaistband = points.frontWaistband.shiftTowards(points.backWaistband, gussetWidth)
+
+      // console.log({
+      //   frontGussetCp: points.frontGussetCp,
+      //   frontWaistband: points.frontWaistband,
+      //   frontGusset: points.frontGusset,
+      // })
+      // var iter = 0
+      // var diff = 0
+      // do {
+      //   points.frontGussetCp = points.frontGussetCp.shift(0, diff)
+      //   paths.front = new Path()
+      //     .move(points.frontWaistband)
+      //     ._curve(points.frontGussetCp, points.frontGusset)
+      //     .hide()
+
+      //   diff = paths.front.length() - ((measurements.crossSeamFront *options.gussetCompensation) - waistLowering - waistbandSize)
+
+      //   console.log({
+      //     i: iter,
+      //     d: diff,
+      //     fl: paths.front.length(),
+      //     csf: measurements.crossSeamFront - waistLowering,
+      //     p: paths.front,
+      //   })
+      // } while (iter++ < 50 && (diff > 1 || diff < -1))
     } else {
       points.frontGussetCp = points.frontGusset.shiftFractionTowards(points.centerUpperLeg, 0.1) //.addCircle(3)
       if (points.frontGussetCp.x < points.frontGussetJoin.x) {
@@ -378,6 +415,13 @@ export const shape = {
     ;['front', 'back'].forEach((prefix) => {
       CreateControlPoints([prefix + 'UpperLeg', prefix + 'Knee', prefix + 'Ankle'])
     })
+    // paths.frontTemp2 = paths.front.clone().addClass('lining').unhide()
+
+    console.log({
+      fc: measurements.crossSeamFront,
+      pl: paths.front.length() + waistLowering + waistbandSize,
+      plt: paths.frontTemp.length(),
+    })
 
     paths.backTempGusset = paths.back.offset(-1 * gussetWidth).hide()
 
@@ -419,7 +463,17 @@ export const shape = {
     console.log({ csb: measurements.crossSeamBack, pl: paths.back.length() + waistLowering })
 
     points.backCircleGusset = paths.backTempCircle.intersects(paths.backTempGusset)[1]
-    paths.backGusset = paths.backTempGusset.split(points.backCircleGusset)[1].hide()
+    const pathBackGusset = paths.backTempGusset.split(points.backCircleGusset)
+    console.log({
+      pathBackGusset: pathBackGusset,
+      t0: undefined === pathBackGusset[0].ops,
+      t1: undefined === pathBackGusset[1].ops,
+    })
+    if (undefined !== pathBackGusset[1].ops) {
+      paths.backGusset = paths.backTempGusset.split(points.backCircleGusset)[1].hide()
+    } else {
+      paths.backGusset = paths.backTempGusset.clone()
+    }
     paths.backCircle = paths.backTempCircle.split(points.backCircleGusset)[0].hide()
 
     store.set('backGussetLength', paths.backGusset.length())
