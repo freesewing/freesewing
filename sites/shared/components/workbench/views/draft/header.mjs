@@ -104,9 +104,11 @@ export const DraftHeader = ({
    * we figure out what's causing it exactly
    */
   useEffect(() => {
-    if (saveAs.edit === 0) savePattern(true)
-    saveAs.edit++
-  }, [saveAs.edit])
+    if (saveAs && saveAs.edit === 0) {
+      savePattern(true)
+      saveAs.edit++
+    }
+  }, [saveAs])
 
   const savePattern = async (silent = false) => {
     if (!silent) setLoadingStatus([true, 'savingPattern'])
