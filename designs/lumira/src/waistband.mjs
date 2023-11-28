@@ -24,11 +24,12 @@ export const waistband = {
       return part.hide()
     }
 
-    const gussetWidth = store.get('gussetWidth')
+    const waistLength = store.get('waistLength')
     const waistbandSize = store.get('waistbandSize')
+    const gussetWidth = options.frontBulge ? store.get('gussetWidth') : 0
 
     const topLength = points.backWaist.dist(points.frontWaist) + gussetWidth
-    const bottomLength = points.backWaistband.dist(points.frontWaistband) + gussetWidth
+    const bottomLength = waistLength + gussetWidth
     const magic1 = 0.35
 
     points.topFront = new Point(Math.min(topLength, bottomLength) / 2, 0)
@@ -103,20 +104,14 @@ export const waistband = {
       .line(points.topFront)
       .close()
 
-    // paths.seam = new Path()
-    //   .move(points.frontWaist)
-    //   .line(points.centerWaist)
-    //   .line(points.backWaist)
-    //   .join(paths.backTop)
-    //   .line(points.centerWaistband)
-    //   .line(points.frontWaistband)
-    //   .join(paths.frontTop.reverse())
-    //   .close()
-
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
 
+    macro('cutonfold', {
+      from: points.bottomFront,
+      to: points.topFront,
+    })
     if (gussetWidth > 0) {
       snippets.gusset = new Snippet('notch', paths.bottom.shiftAlong(gussetWidth))
     }
