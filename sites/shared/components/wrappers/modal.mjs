@@ -67,26 +67,24 @@ export const ModalWrapper = ({
         transform-all duration-150 ${animation}
         bg-${bg} bg-opacity-${bgOpacity} z-50 hover:cursor-pointer
         flex flex-${flex} justify-${justify} items-${items} lg:p-12`}
-      onClick={keepOpenOnClick ? null : close}
+      onClick={close}
     >
       {bare ? (
         children
       ) : (
         <div
-          onClick={stopClick}
+          onClick={keepOpenOnClick ? stopClick : null}
           className={`z-30 bg-base-100 p-4 lg:px-8 lg:rounded-lg lg:shadow-lg max-h-full overflow-auto hover:cursor-default ${
             fullWidth ? 'w-full' : ''
           }`}
         >
           {children}
-          {!keepOpenOnClick && (
-            <button
-              className="fixed bottom-2 right-2 btn btn-neutral btn-circle lg:hidden"
-              onClick={close}
-            >
-              <CloseIcon className="w-8 h-8" />
-            </button>
-          )}
+          <button
+            className="fixed bottom-2 right-2 btn btn-neutral btn-circle lg:hidden"
+            onClick={close}
+          >
+            <CloseIcon className="w-8 h-8" />
+          </button>
         </div>
       )}
     </div>
