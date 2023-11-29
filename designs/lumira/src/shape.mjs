@@ -23,38 +23,38 @@ export const shape = {
   ],
   options: {
     // Constants
-    gussetCompensation: 1.03,
+    gussetcompensation: 1.03,
 
     // Booleans
-    frontBulge: {
+    frontbulge: {
       bool: false,
       // eslint-disable-next-line no-unused-vars
-      menu: (settings, mergedOptions) => (mergedOptions?.cyclingChamois ? false : 'style'),
+      menu: (settings, mergedOptions) => (mergedOptions?.cyclingchamois ? false : 'style'),
     },
     waistband: { bool: false, menu: 'style' },
-    cyclingChamois: { bool: false, menu: 'style' },
+    cyclingchamois: { bool: false, menu: 'style' },
 
     // Percentages
     ease: { pct: -10, min: -30, max: 0, menu: 'fit' },
-    waistLowering: { pct: 35, min: 0, max: 60, menu: 'style' },
-    gussetWidth: {
+    waistlowering: { pct: 35, min: 0, max: 60, menu: 'style' },
+    gussetwidth: {
       pct: 16,
-      min: 1,
+      min: 5,
       max: 30,
       ...pctBasedOn('crossSeamFront'),
       // eslint-disable-next-line no-unused-vars
-      menu: (settings, mergedOptions) => (mergedOptions?.cyclingChamois ? false : 'style'),
+      menu: (settings, mergedOptions) => (mergedOptions?.cyclingchamois ? false : 'style'),
     },
-    backGussetWidth: { pct: 50, min: 20, max: 75, ...pctBasedOn('hips'), menu: 'fit' },
-    frontGussetLength: {
+    backgussetwidth: { pct: 50, min: 20, max: 75, ...pctBasedOn('hips'), menu: 'fit' },
+    frontgussetlength: {
       pct: 12.5,
       min: 0,
       max: 80,
       ...pctBasedOn('crossSeamFront'),
       // eslint-disable-next-line no-unused-vars
-      menu: (settings, mergedOptions) => (mergedOptions?.frontBulge ? false : 'style'),
+      menu: (settings, mergedOptions) => (mergedOptions?.frontbulge ? false : 'style'),
     },
-    waistbandSize: {
+    waistbandsize: {
       pct: 55,
       min: 0,
       max: 90,
@@ -62,7 +62,7 @@ export const shape = {
       // eslint-disable-next-line no-unused-vars
       menu: (settings, mergedOptions) => (mergedOptions?.waistband ? 'style' : false),
     },
-    waistReduction: {
+    waistreduction: {
       pct: 1,
       min: 0,
       max: 10,
@@ -73,19 +73,19 @@ export const shape = {
   },
   draft: ({ measurements, store, Point, points, Path, paths, options, utils, part }) => {
     const cpDistanceDivider = 3.5
-    const waistLowering = measurements.waistToHips * options.waistLowering
-    const waistReduction = options.waistband ? measurements.waist * options.waistReduction : 0
+    const waistLowering = measurements.waistToHips * options.waistlowering
+    const waistReduction = options.waistband ? measurements.waist * options.waistreduction : 0
     const waistbandSize = options.waistband
       ? measurements.waistToHips *
-        (options.waistLowering + options.waistbandSize > 0.98
-          ? 0.98 - options.waistLowering
-          : options.waistbandSize)
+        (options.waistlowering + options.waistbandsize > 0.98
+          ? 0.98 - options.waistlowering
+          : options.waistbandsize)
       : 0
     const gussetWidth =
-      measurements.crossSeamFront * (options.cyclingChamois ? 0.075 : options.gussetWidth * 0.5)
-    const backGussetWidth = options.backGussetWidth * 2.34
-    const frontGussetLength = measurements.crossSeamFront * options.frontGussetLength
-    const frontBulge = options.cyclingChamois ? true : options.frontBulge
+      measurements.crossSeamFront * (options.cyclingcchamois ? 0.075 : options.gussetwidth * 0.5)
+    const backGussetWidth = options.backgussetwidth * 2.34
+    const frontGussetLength = measurements.crossSeamFront * options.frontgussetlength
+    const frontBulge = options.cyclingchamois ? true : options.frontbulge
 
     store.set('waistLowering', waistLowering)
     store.set('waistReduction', waistReduction)
@@ -260,17 +260,25 @@ export const shape = {
 
     if (frontBulge) {
       paths.front = ExtendPath(paths.front.offset(gussetWidth)).hide()
-
+      paths.waistTemp = new Path().move(points.frontWaistband).line(points.centerWaistband)
       points.frontWaistband = paths.front.intersects(
         new Path().move(points.frontWaistband).line(points.centerWaistband)
       )[0]
+      console.log({
+        pf: paths.front,
+        pw: paths.waistTemp,
+        hi1: paths.front.split(points.frontWaistband),
+      })
 
+      // paths.front1 = paths.front.clone().unhide()
       if (false == points.frontWaistband.sitsRoughlyOn(paths.front.start())) {
         console.log({
           pf: paths.front,
           p: points.frontWaistband,
           hi1: paths.front.split(points.frontWaistband),
         })
+        paths.front1a = paths.front.split(points.frontWaistband)[0].addClass('note')
+        paths.front1b = paths.front.split(points.frontWaistband)[1].addClass('lining')
         paths.front = paths.front.split(points.frontWaistband)[1].hide()
       }
 
@@ -278,17 +286,21 @@ export const shape = {
       // something goes wrong here
       //////
 
-      points.frontGusset = paths.front.intersects(
-        new Path().move(points.frontUpperLeg).line(points.frontKnee)
-      )[0]
-      if (false == points.frontGusset.sitsRoughlyOn(paths.front.end())) {
-        console.log({
-          pf: paths.front,
-          p: points.frontWaistband,
-          hi2: paths.front.split(points.frontGusset),
-        })
-        paths.front = paths.front.split(points.frontGusset)[0].hide()
-      }
+      paths.front2 = paths.front.clone().unhide().addClass('lining')
+      paths.kneeToUpperLeg = new Path()
+        .move(points.frontUpperLeg)
+        .line(points.frontKnee)
+        .addClass('note')
+      // console.log({pf: paths.front, ktul: kneeToUpperLeg, inter: ExtendPath(paths.front).intersects(paths.kneeToUpperLeg)})
+      // points.frontGusset = paths.front.intersects(paths.kneeToUpperLeg)[0]
+      // if (false == points.frontGusset.sitsRoughlyOn(paths.front.end())) {
+      //   console.log({
+      //     pf: paths.front,
+      //     p: points.frontWaistband,
+      //     hi2: paths.front.split(points.frontGusset),
+      //   })
+      //   paths.front = paths.front.split(points.frontGusset)[0].hide()
+      // }
     } else {
       points.frontGussetCp = points.frontGusset.shiftFractionTowards(points.centerUpperLeg, 0.1)
       if (points.frontGussetCp.x < points.frontGussetJoin.x) {

@@ -1,32 +1,16 @@
-import { pctBasedOn } from '@freesewing/core'
 import { shape } from './shape.mjs'
 
 export const waistband = {
   name: 'lumira.waistband',
   from: shape,
-  draft: ({
-    measurements,
-    store,
-    sa,
-    Point,
-    points,
-    Path,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    options,
-    macro,
-    utils,
-    part,
-  }) => {
+  draft: ({ store, sa, Point, points, Path, paths, Snippet, snippets, options, macro, part }) => {
     if (false == options.waistband) {
       return part.hide()
     }
 
     const waistLength = store.get('waistLength')
     const waistbandSize = store.get('waistbandSize')
-    const gussetWidth = options.frontBulge ? store.get('gussetWidth') : 0
+    const gussetWidth = options.frontBbulge ? store.get('gussetWidth') : 0
 
     const topLength = points.backWaist.dist(points.frontWaist) + gussetWidth
     const bottomLength = waistLength + gussetWidth
@@ -88,13 +72,6 @@ export const waistband = {
       diff = paths.bottom.length() - bottomLength
       console.log({ i: iter, d: diff })
     } while (iter++ < 100 && (diff < -1 || diff > 1))
-
-    console.log({
-      tl: topLength,
-      ptl: paths.top.length(),
-      bl: bottomLength,
-      bpl: paths.bottom.length(),
-    })
 
     paths.seam = new Path()
       .move(points.topFront)

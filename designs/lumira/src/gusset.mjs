@@ -6,27 +6,27 @@ export const gusset = {
   name: 'lumira.gusset',
   from: shape,
   options: {
-    backInsertTopCp: 0.3,
-    backInsertTopCpAngle: 0,
-    backInsertGussetCp: 0.2,
-    frontBulgeLift: 1.75,
-    frontBulgeForwardPercentage: 0.125,
-    frontBulgeMiddleShift: 0.65,
-    buttLift: {
+    backinserttopcp: 0.3,
+    backinserttopcpangle: 0,
+    backinsertgussetcp: 0.2,
+    frontbulgelift: 1.75,
+    frontbulgeforwardpercentage: 0.125,
+    frontbulgemiddleshift: 0.65,
+    buttlift: {
       pct: 30,
       min: 0,
       max: 60,
       // eslint-disable-next-line no-unused-vars
-      menu: (settings, mergedOptions) => (mergedOptions?.cyclingChamois ? false : 'fit'),
+      menu: (settings, mergedOptions) => (mergedOptions?.cyclingchamois ? false : 'fit'),
     },
-    frontBulgeSize: {
+    frontbulgesize: {
       pct: 2.5,
       min: 0,
       max: 10,
       ...pctBasedOn('crossSeamFront'),
       // eslint-disable-next-line no-unused-vars
       menu: (settings, mergedOptions) =>
-        mergedOptions?.frontBulge == true && mergedOptions?.cyclingChamois == false
+        mergedOptions?.frontbulge == true && mergedOptions?.cyclingchamois == false
           ? 'style'
           : false,
     },
@@ -45,6 +45,7 @@ export const gusset = {
     macro,
     utils,
     log,
+    units,
     part,
   }) => {
     const waistLowering = store.get('waistLowering')
@@ -53,10 +54,32 @@ export const gusset = {
     const backCircleLength = store.get('backCircleLength')
     const backGussetLength = store.get('backGussetLength')
     const ease = 1 + options.ease
-    const frontBulge = options.cyclingChamois ? true : options.frontBulge
+    const frontBulge = options.cyclingchamois ? true : options.frontbulge
+    if (options.frontbulgesize > options.gussetwidth * 0.9) {
+      options.frontbulgesize = options.gussetwidth * 0.9
+
+      store.flag.note({
+        msg: `lumira:bulgeToLarge`,
+        replace: {
+          width: units(1),
+          length: units(1),
+        },
+        // suggest: {
+        //   text: 'flag:show',
+        //   icon: 'expand',
+        //   update: {
+        //     settings: ['expand', 1],
+        //   },
+        // },
+      })
+    }
     const frontBulgeSize =
-      (options.cyclingChamois ? 0.0125 : options.frontBulgeSize) * measurements.crossSeamFront
-    const backInsertGussetCpAngle = options.cyclingChamois ? 0 : 90 * options.buttLift
+      (options.cyclingchamois
+        ? 0.0125
+        : options.frontbulgesize > options.gussetwidth * 0.9
+        ? options.gussetwidth * 0.9
+        : options.frontbulgesize) * measurements.crossSeamFront
+    const backInsertGussetCpAngle = options.cyclingchamois ? 0 : 90 * options.buttlift
 
     points.backInsertCenterTop = new Point(0, 0)
     points.backInsertOutsideGusset = points.backInsertCenterTop
@@ -72,25 +95,25 @@ export const gusset = {
       measurements.waistToSeat - waistLowering
     )
     points.backInsertCenterTopCp1 = points.backInsertCenterTop.shift(
-      options.backInsertTopCpAngle,
-      measurements.hips * 0.25 * ease * options.backInsertTopCp
+      options.backinserttopcpangle,
+      measurements.hips * 0.25 * ease * options.backinserttopcp
     )
 
     points.backInsertOutsideGussetCp1 = points.backInsertOutsideGusset.shift(
       backInsertGussetCpAngle,
-      measurements.upperLeg * 0.25 * ease * options.backInsertGussetCp
+      measurements.upperLeg * 0.25 * ease * options.backinsertgussetcp
     )
 
     var diff = 0
     var iter = 0
     do {
       points.backInsertCenterTopCp1 = points.backInsertCenterTopCp1.shift(
-        options.backInsertTopCpAngle,
-        diff * (options.backInsertTopCp / options.backInsertGussetCp)
+        options.backinserttopcpangle,
+        diff * (options.backinserttopcp / options.backinsertgussetcp)
       )
       points.backInsertOutsideGussetCp1 = points.backInsertOutsideGussetCp1.shift(
         backInsertGussetCpAngle,
-        diff * (options.backInsertGussetCp / options.backInsertTopCp)
+        diff * (options.backinsertgussetcp / options.backinserttopcp)
       )
 
       paths.backInsertCircle = new Path()
@@ -102,17 +125,42 @@ export const gusset = {
         )
         .hide()
       diff = backCircleLength - paths.backInsertCircle.length()
-      console.log({ i: iter, d: diff, bcl: backCircleLength, pl: paths.backInsertCircle.length() })
+      console.log({
+        i: iter,
+        d: diff,
+        bcl: backCircleLength,
+        pl: paths.backInsertCircle.length(),
+        p: paths.backInsertCircle,
+      })
     } while (iter++ < 50 && (diff > 1 || diff < -1))
 
     points.backInsertOutsideBottom = points.backInsertOutsideGusset.shift(270, backGussetLength)
     points.backInsertCenterBottom = points.backInsertOutsideBottom.shift(180, gussetWidth)
 
     if (frontBulge) {
-      const bulgeSplitForward = measurements.crossSeamFront * options.frontBulgeForwardPercentage
+      const bulgeSplitForward = measurements.crossSeamFront * options.frontbulgeforwardpercentage
       const frontLength = store.get('frontLength') - bulgeSplitForward
-      const rotateAngle = utils.rad2deg(Math.acos(frontLength / (frontLength + frontBulgeSize))) / 2
+      // const rotateAngle = utils.rad2deg(Math.acos(frontLength / (frontLength + frontBulgeSize))) *.75
+      var rotateAngle =
+        utils.rad2deg(Math.asin((frontBulgeSize * 0.5) / gussetWidth)) * (0.6 + options.gussetwidth)
 
+      if (rotateAngle > 90) {
+        store.flag.note({
+          msg: `lumira:bulgeToLarge`,
+          replace: {
+            width: units(1),
+            length: units(1),
+          },
+          // suggest: {
+          //   text: 'flag:show',
+          //   icon: 'expand',
+          //   update: {
+          //     settings: ['expand', 1],
+          //   },
+          // },
+        })
+        rotateAngle = 90
+      }
       points.frontOutsideSplit = points.backInsertOutsideBottom.shift(270, bulgeSplitForward)
       points.frontCenterSplit = points.frontOutsideSplit.shift(180, gussetWidth)
       points.frontOutside = points.frontOutsideSplit.shift(270 + rotateAngle, frontLength)
@@ -145,68 +193,54 @@ export const gusset = {
       const frontCenterAngle = points.frontOutside.angle(points.frontOutsideHips) - 90
       console.log({ frontCenterAngle: frontCenterAngle })
       points.frontCenterOutside = points.frontOutside.shift(180 + frontCenterAngle, gussetWidth)
-      // .addCircle(5)
-      // .addCircle(10)
       points.frontCenterHips = points.frontOutsideHips.shift(180 + frontCenterAngle, gussetWidth)
-      // .addCircle(5)
-      // .addCircle(10)
-
-      points.backInsertCenterBottom
-      //.addCircle(4)
 
       const gussetCpLength = points.backInsertCenterGusset.dist(points.backInsertCenterBottom)
 
       points.backInsertCenterBottomCp = points.backInsertCenterBottom.shift(
         270,
         gussetCpLength * 1
-        // gussetCpLength * options.frontBulgeLift
+        // gussetCpLength * options.frontbulgelift
       )
       points.frontCenterSplitCp = points.frontCenterSplit.shift(
         270,
         gussetCpLength * 1
-        // gussetCpLength * options.frontBulgeLift
-      ) //.addCircle(10)
+        // gussetCpLength * options.frontbulgelift
+      )
 
-      // points.frontCenterHipsCp9 = paths.frontOutside.shiftAlong(gussetCpLength).addCircle(20)
-      points.frontCenterHipsCp = paths.frontOutside
-        .shiftAlong(gussetCpLength)
-        .shift(180 + frontCenterAngle, gussetWidth)
-
-      points.frontCenterMiddle = points.frontCenterHipsCp.shift(
-        90 + frontCenterAngle,
-        points.frontCenterHipsCp.dist(points.frontCenterSplitCp) * options.frontBulgeMiddleShift
+      points.frontCenterHipsCp = points.frontCenterHips.shift(
+        frontCenterAngle + 90,
+        gussetCpLength * 0.5
       )
       points.frontCenterMiddle = points.frontCenterHipsCp.shiftFractionTowards(
         points.frontCenterSplitCp,
-        options.frontBulgeMiddleShift
+        options.frontbulgemiddleshift
       )
-
-      // .addCircle(3)
-      // .addCircle(6)
-      // .addCircle(9)
 
       var diff = 0
       var iter = 0
       do {
         points['frontCenterMiddle' + iter] = points.frontCenterMiddle.clone()
 
-        points.frontCenterMiddle = points.frontCenterMiddle.shift(frontCenterAngle * 0.5, diff)
-        // .addCircle(3)
-        // .addCircle(6)
-        // .addCircle(9)
+        points.frontCenterMiddle = points.frontCenterMiddle.shift(frontCenterAngle, diff)
         points.frontCenterMiddleCp1 = points.frontCenterMiddle.shift(
-          90 + frontCenterAngle * 0.6,
-          gussetCpLength * (1 - options.frontBulgeMiddleShift)
+          90 + frontCenterAngle * 0.5,
+          gussetCpLength * 0.2 //(1 - options.frontbulgemiddlemhift)
         )
-        // .addCircle(3)
-        // points.frontCenterMiddleCp1.x = 0
         points.frontCenterMiddleCp2 = points.frontCenterMiddle.shift(
-          270 + frontCenterAngle * 0.6,
-          gussetCpLength * 0.9
+          270 + frontCenterAngle * 0.5,
+          gussetCpLength * 0.5
         )
-        // .addCircle(3)
-        // .addCircle(6)
-        // .addCircle(9)
+
+        if (points.frontCenterMiddle.x < 0) {
+          points.frontCenterMiddle.x = 0
+          points.frontCenterMiddleCp1.x = 0
+          points.frontCenterMiddleCp2.x = 0
+        }
+        if (points.frontCenterMiddleCp1.x < 0) {
+          points.frontCenterMiddleCp1.x = 0
+          // points.frontCenterMiddleCp2.x = 0
+        }
 
         const frontGussetPath = new Path()
           .move(points.frontCenterOutside)
@@ -224,8 +258,8 @@ export const gusset = {
           fl: frontLength + frontBulgeSize,
           pl: frontGussetPath.length(),
         })
-      } while (iter++ < 20 && (diff > 1 || diff < -1))
-      if (iter >= 20) {
+      } while (iter++ < 50 && (diff > 1 || diff < -1))
+      if (iter >= 50) {
         log.info('couldNotFitFrontGussetPath')
       }
 
@@ -248,6 +282,8 @@ export const gusset = {
         .hide()
 
       points.frontCenter = points.frontCenterSplit.clone()
+
+      console.log({ rotateAngle: rotateAngle })
     } else {
       const frontGussetAngle = store.get('frontGussetAngle')
       const frontGussetLength = store.get('frontGussetLength')
