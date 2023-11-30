@@ -170,8 +170,8 @@ export const gusset = {
       const thisCbqc = cbqc * 0.75 //(rotateAngle / 22.5)
       points.frontOutsideSplitCp1 = points.frontOutsideSplit.shift(270, thisCbqc * frontLength)
 
-      var diff = 0
-      var iter = 0
+      diff = 0
+      iter = 0
       do {
         points.frontOutside = points.frontOutside.shiftTowards(points.frontOutsideSplit, diff)
         points.frontOutsideCp = points.frontOutside.shift(
@@ -219,8 +219,8 @@ export const gusset = {
         options.frontbulgemiddleshift
       )
 
-      var diff = 0
-      var iter = 0
+      diff = 0
+      iter = 0
       do {
         // points['frontCenterMiddle' + iter] = points.frontCenterMiddle.clone()
 

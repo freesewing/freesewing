@@ -71,7 +71,7 @@ export const shape = {
       menu: (settings, mergedOptions) => (mergedOptions?.waistband ? 'style' : false),
     },
   },
-  draft: ({ measurements, store, Point, points, Path, paths, options, utils, part }) => {
+  draft: ({ measurements, store, Point, points, Path, paths, options, utils, log, part }) => {
     const cpDistanceDivider = 3.5
     const waistLowering = measurements.waistToHips * options.waistlowering
     const waistReduction = options.waistband ? measurements.waist * options.waistreduction : 0
