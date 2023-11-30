@@ -10,19 +10,21 @@ export const waistband = {
 
     const waistLength = store.get('waistLength')
     const waistbandSize = store.get('waistbandSize')
-    const gussetWidth = options.frontBbulge ? store.get('gussetWidth') : 0
+    const gussetWidth = options.frontbulge ? store.get('gussetWidth') : 0
 
-    const topLength = points.backWaist.dist(points.frontWaist) + gussetWidth
+    const topLength = points.backWaist.dist(points.frontWaist)
     const bottomLength = waistLength + gussetWidth
     const magic1 = 0.35
 
     points.topFront = new Point(Math.min(topLength, bottomLength) / 2, 0)
     points.topBack = new Point(-1 * (Math.min(topLength, bottomLength) / 2), 0)
+    // points.topFront = new Point(topLength *.5, 0)
+    // points.topBack = new Point(topLength *-.5, 0)
 
     const angleBack =
       points.frontWaist.angle(points.backWaist) - points.backWaistband.angle(points.backWaist)
     const angleFront =
-      points.frontWaist.angle(points.backWaist) - points.frontWaistband.angle(points.frontWaist)
+      points.frontWaist.angle(points.backWaist) - paths.frontTop.end().angle(points.frontWaist)
     var angle = angleBack - 90 + (90 - angleFront) / 2
     console.log({ angleFront: angleFront, angleBack: angleBack, angle: angle })
 
@@ -39,11 +41,9 @@ export const waistband = {
         0 - angle,
         points.topBack.dist(points.topFront) * magic1
       )
-
       paths.top = new Path()
         .move(points.topFront)
         .curve(points.topFrontCp, points.topBackCp, points.topBack)
-
       diff = paths.top.length() - topLength
       console.log({ i: iter, d: diff })
     } while (iter++ < 100 && (diff < -1 || diff > 1))
@@ -85,10 +85,22 @@ export const waistband = {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
     }
 
+    points.title = points.bottomFront.shiftFractionTowards(points.topBack, 0.5)
+    macro('title', {
+      at: points.title,
+      nr: 3,
+      title: 'waistband',
+      align: 'center',
+      scale: 0.3,
+    })
+
     macro('cutonfold', {
       from: points.bottomFront,
       to: points.topFront,
     })
+
+    store.cutlist.addCut({ cut: 1, from: 'fabric', onFold: true })
+
     if (gussetWidth > 0) {
       snippets.gusset = new Snippet('notch', paths.bottom.shiftAlong(gussetWidth))
     }

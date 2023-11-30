@@ -26,17 +26,17 @@ export const shape = {
     gussetcompensation: 1.03,
 
     // Booleans
+    waistband: { bool: true, menu: 'style' },
+    cyclingchamois: { bool: false, menu: 'style' },
     frontbulge: {
       bool: false,
       // eslint-disable-next-line no-unused-vars
       menu: (settings, mergedOptions) => (mergedOptions?.cyclingchamois ? false : 'style'),
     },
-    waistband: { bool: false, menu: 'style' },
-    cyclingchamois: { bool: false, menu: 'style' },
 
     // Percentages
     ease: { pct: -10, min: -30, max: 0, menu: 'fit' },
-    waistlowering: { pct: 35, min: 0, max: 60, menu: 'style' },
+    waistlowering: { pct: 35, min: 0, max: 60, ...pctBasedOn('waistToHips'), menu: 'style' },
     gussetwidth: {
       pct: 16,
       min: 5,
@@ -139,7 +139,7 @@ export const shape = {
         .move(path.shiftAlong(1).shiftOutwards(path.start(), length))
         .line(path.start())
         .join(path)
-        .line(path.reverse().shiftAlong(1).shiftOutwards(path.end(), length))
+        .line(path.shiftAlong(path.length() - 1).shiftOutwards(path.end(), length))
     }
 
     const seatBackFrontRatio = measurements.seatBack / measurements.seatFront
@@ -260,25 +260,33 @@ export const shape = {
 
     if (frontBulge) {
       paths.front = ExtendPath(paths.front.offset(gussetWidth)).hide()
-      paths.waistTemp = new Path().move(points.frontWaistband).line(points.centerWaistband)
       points.frontWaistband = paths.front.intersects(
         new Path().move(points.frontWaistband).line(points.centerWaistband)
       )[0]
       console.log({
-        pf: paths.front,
-        pw: paths.waistTemp,
-        hi1: paths.front.split(points.frontWaistband),
+        path: paths.front,
+        // intersectingPath: paths.waistTemp,
+        intersectPoint: points.frontWaistband,
+        results: s,
       })
 
       // paths.front1 = paths.front.clone().unhide()
       if (false == points.frontWaistband.sitsRoughlyOn(paths.front.start())) {
+        var s = paths.front.split(points.frontWaistband)
+        const sl = Math.floor(paths.front.length() * 10)
+        if (sl != Math.floor(s[0].length() + s[1].length())) {
+          paths.front = ExtendPath(paths.front.offset(0.01)).hide()
+          points.frontWaistband = paths.front.intersects(
+            new Path().move(points.frontWaistband).line(points.centerWaistband)
+          )[0]
+        }
         console.log({
           pf: paths.front,
           p: points.frontWaistband,
           hi1: paths.front.split(points.frontWaistband),
         })
-        paths.front1a = paths.front.split(points.frontWaistband)[0].addClass('note')
-        paths.front1b = paths.front.split(points.frontWaistband)[1].addClass('lining')
+        // paths.front1a = paths.front.split(points.frontWaistband)[0].addClass('note')
+        // paths.front1b = paths.front.split(points.frontWaistband)[1].addClass('lining')
         paths.front = paths.front.split(points.frontWaistband)[1].hide()
       }
 
@@ -286,21 +294,22 @@ export const shape = {
       // something goes wrong here
       //////
 
-      paths.front2 = paths.front.clone().unhide().addClass('lining')
-      paths.kneeToUpperLeg = new Path()
-        .move(points.frontUpperLeg)
-        .line(points.frontKnee)
-        .addClass('note')
-      // console.log({pf: paths.front, ktul: kneeToUpperLeg, inter: ExtendPath(paths.front).intersects(paths.kneeToUpperLeg)})
-      // points.frontGusset = paths.front.intersects(paths.kneeToUpperLeg)[0]
-      // if (false == points.frontGusset.sitsRoughlyOn(paths.front.end())) {
-      //   console.log({
-      //     pf: paths.front,
-      //     p: points.frontWaistband,
-      //     hi2: paths.front.split(points.frontGusset),
-      //   })
-      //   paths.front = paths.front.split(points.frontGusset)[0].hide()
-      // }
+      // paths.front2 = paths.front.clone().unhide().addClass('lining')
+      const kneeToUpperLeg = new Path().move(points.frontUpperLeg).line(points.frontKnee)
+      console.log({
+        pf: paths.front,
+        ktul: kneeToUpperLeg,
+        inter: ExtendPath(paths.front).intersects(kneeToUpperLeg),
+      })
+      points.frontGusset = paths.front.intersects(kneeToUpperLeg)[0]
+      if (false == points.frontGusset.sitsRoughlyOn(paths.front.end())) {
+        console.log({
+          pf: paths.front,
+          p: points.frontWaistband,
+          hi2: paths.front.split(points.frontGusset),
+        })
+        paths.front = paths.front.split(points.frontGusset)[0].hide()
+      }
     } else {
       points.frontGussetCp = points.frontGusset.shiftFractionTowards(points.centerUpperLeg, 0.1)
       if (points.frontGussetCp.x < points.frontGussetJoin.x) {

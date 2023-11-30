@@ -6,12 +6,14 @@ export const gusset = {
   name: 'lumira.gusset',
   from: shape,
   options: {
+    // Constants:
     backinserttopcp: 0.3,
     backinserttopcpangle: 0,
     backinsertgussetcp: 0.2,
     frontbulgelift: 1.75,
     frontbulgeforwardpercentage: 0.125,
     frontbulgemiddleshift: 0.65,
+    // Percentages:
     buttlift: {
       pct: 30,
       min: 0,
@@ -220,7 +222,7 @@ export const gusset = {
       var diff = 0
       var iter = 0
       do {
-        points['frontCenterMiddle' + iter] = points.frontCenterMiddle.clone()
+        // points['frontCenterMiddle' + iter] = points.frontCenterMiddle.clone()
 
         points.frontCenterMiddle = points.frontCenterMiddle.shift(frontCenterAngle, diff)
         points.frontCenterMiddleCp1 = points.frontCenterMiddle.shift(
@@ -248,7 +250,7 @@ export const gusset = {
           .curve(points.frontCenterHipsCp, points.frontCenterMiddleCp2, points.frontCenterMiddle)
           .curve(points.frontCenterMiddleCp1, points.frontCenterSplitCp, points.frontCenterSplit)
 
-        paths['frontCenterGussetPath' + iter] = frontGussetPath.clone().addClass('note')
+        // paths['frontCenterGussetPath' + iter] = frontGussetPath.clone().addClass('note')
         console.log({ frontGussetPath: frontGussetPath })
         diff = frontGussetPath.length() - (frontLength + frontBulgeSize)
 
@@ -348,6 +350,16 @@ export const gusset = {
         .attr('class', 'fabric sa')
     }
 
+    points.title = paths.backGusset
+      .shiftFractionAlong(0.25)
+      .shiftFractionTowards(points.backInsertCenterTop, 0.5)
+    macro('title', {
+      at: points.title,
+      nr: 2,
+      title: 'gusset',
+      align: 'center',
+    })
+
     snippets.middle = new Snippet('notch', points.backInsertOutsideBottom)
     snippets.circle4 = new Snippet('notch', points.backInsertOutsideGusset)
     snippets.circle3 = new Snippet('notch', paths.backGusset.shiftFractionAlong(0.25))
@@ -355,18 +367,12 @@ export const gusset = {
     snippets.circle1 = new Snippet('notch', paths.backGusset.shiftFractionAlong(0.75))
     snippets.circle0 = new Snippet('notch', points.backInsertCenterTop)
 
-    console.log({ Gpoints: JSON.parse(JSON.stringify(points)) })
-    console.log({ Gpaths: JSON.parse(JSON.stringify(paths)) })
-
-    console.log({ Gstore: JSON.parse(JSON.stringify(store)) })
-    console.log({ Gmeasurements: JSON.parse(JSON.stringify(measurements)) })
-
     macro('cutonfold', {
       from: points.backInsertCenterTop,
-      to: points.frontCenter,
+      to: points.backInsertCenterBottom,
     })
 
-    store.cutlist.addCut({ cut: 2, from: 'fabric' })
+    store.cutlist.addCut({ cut: 1, from: 'fabric', onFold: true })
 
     return part
   },
