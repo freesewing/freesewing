@@ -36,6 +36,7 @@ export const shape = {
 
     // Percentages
     ease: { pct: -10, min: -30, max: 0, menu: 'fit' },
+    leglength: { pct: 100, min: 10, max: 100, ...pctBasedOn('inseam'), menu: 'style' },
     waistlowering: { pct: 35, min: 0, max: 60, ...pctBasedOn('waistToHips'), menu: 'style' },
     gussetwidth: {
       pct: 16,
@@ -146,6 +147,7 @@ export const shape = {
     const crossSeamBackFrontRatio = measurements.crossSeamBack / measurements.crossSeamFront
     const waistToInseam = measurements.waistToFloor - measurements.inseam
     const ease = 1 + options.ease
+    const legLength = measurements.inseam * options.leglength
 
     points.centerWaist = new Point(0, 0)
     points.centerFloor = new Point(0, measurements.waistToFloor)
@@ -351,7 +353,8 @@ export const shape = {
       )
       store.set('frontGussetAngle', frontGussetAngle * 2)
 
-      paths.front = paths.front.split(points.frontGussetJoin)[0].join(paths.frontGusset).hide()
+      paths.frontTop = paths.front.split(points.frontGussetJoin)[0].hide()
+      paths.front = paths.frontTop.clone().join(paths.frontGusset).hide()
     }
     store.set('frontLength', paths.front.length())
     ;['front', 'back'].forEach((prefix) => {
@@ -359,6 +362,35 @@ export const shape = {
     })
 
     paths.backTempGusset = paths.back.offset(-1 * gussetWidth).hide()
+
+    paths.frontLeg = new Path()
+      .move(points.frontGusset)
+      ._curve(points.frontKneeCp2, points.frontKnee)
+      .curve_(points.frontKneeCp1, points.frontAnkle)
+      .hide()
+    paths.backLeg = new Path()
+      .move(points.backGusset)
+      ._curve(points.backKneeCp2, points.backKnee)
+      .curve_(points.backKneeCp1, points.backAnkle)
+      .hide()
+
+    points.centerBottom = points.centerInseam.shift(270, legLength)
+    if (points.centerBottom.y > points.centerAnkle.y) {
+      points.centerBottom.y = points.centerAnkle.y
+    }
+    const bottom = new Path()
+      .move(points.centerBottom.shift(180, measurements.seat))
+      .line(points.centerBottom.shift(0, measurements.seat))
+
+    points.frontBottom = paths.frontLeg.intersects(bottom)[0]
+    points.backBottom = paths.backLeg.intersects(bottom)[0]
+
+    if (false == points.frontBottom.sitsRoughlyOn(points.frontAnkle)) {
+      paths.frontLeg = paths.frontLeg.split(points.frontBottom)[0].hide()
+    }
+    if (false == points.backBottom.sitsRoughlyOn(points.backAnkle)) {
+      paths.backLeg = paths.backLeg.split(points.backBottom)[0].hide()
+    }
 
     paths.waist = new Path()
       .move(points.frontWaistband)
@@ -370,6 +402,7 @@ export const shape = {
       .line(points.centerAnkle)
       .line(points.frontAnkle)
       .hide()
+    paths.bottom = new Path().move(points.backBottom).line(points.frontBottom).hide()
 
     store.set('waistLength', paths.waist.length())
 
@@ -405,6 +438,8 @@ export const shape = {
       paths.backGusset = paths.backTempGusset.clone()
     }
     paths.backCircle = paths.backTempCircle.split(points.backCircleGusset)[0].hide()
+
+    paths.backGusset = paths.backGusset.split(points.backGusset)[0].hide()
 
     store.set('backGussetLength', paths.backGusset.length())
     store.set('backCircleLength', paths.backCircle.length())

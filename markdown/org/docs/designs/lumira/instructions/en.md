@@ -1,132 +1,47 @@
 ---
-title: "Cornelius cycling breeches: Sewing Instructions"
+title: "Lumira leggings: Sewing Instructions"
 ---
 
-### Step 1: The Front Pockets
-
-- Press under the seam allowances of the non-notched edges of the pokcet facings.
-- Matching notches, pin the wrong sides of pocket facings to right side of pocket bags, _Edgestitch_ the folded edges to the pocket bags.
-- _Baste_ the seam allowances of the notched edges of the pocket facings to the pocket bags.
-- With right sides together matching double notches sew the pocket bags to the front and then press to the wrong side.
-- Fold the pockets in half along the fold line, right sides together. Stitch the bottom of the pocket bag together.
-- Alternatively you can _French Seam_ the bottom seams of the pocket bags together if you prefer.
-- _Baste_ the top and side of the pocket bags to the front seam allowances mathcing notches.
-
 <Note>
 
-Going forward the pockets and fronts will just be referred to as the fronts.
+This is a garment made from a stretch fabric. So use appropriate seam solutions. A serger is a good way to do this, as 
+are specific stitches that certain sewing machine provide. A zigzag stitch will do if that's all you have.
+
+Keep in mind that since these seams are always under tension, it may be a good idea to double them up, or 
+provide a zigzag in addition to serging the seam. 
 
 </Note>
 
-### Step 2: The Fly
+### Step 1: The legs
 
-- With right sides together, from the top _Baste_ along the fly line stopping at the notch on the crotch seam.
-- From where you left off with basting, stitch the crotch seam together making sure to secure your stitches where the basting ends.
-- Press open the fly and seam.
-- Lay the fronts down wrong side up so the right sides of the fly flaps are facing you.
-- Lay zipper face up on the front flaps, with the left side of the zipper touching the seam, with the bottom of the right zipper tape on the curved flap.
-- Sew the right zipper tape to the right flap close to the zipper teeth using a zipper foot. Don't sew it to the front itself!
-- Pull the zipper to the left so the right flap is pulled over.
-- Pin the left zipper tape to the left flap.
-- Sew the left zipper tape to left flap close to the zipper teeth using a zipper foot. Don't sew it to the front itself!
-- Fold the zipper guard in half wrong sides together.
-- Lay the zipper guard on the right flap, right sides touching.
-- Sew the zipper guard to the right flap, _Finish_ the right side to your liking.
-- _Finish_ the left side of the left flap to your liking.
-- Unpick the basted part of the front seam.
-- _Topstitch_ the right flap down, away from the now unpicked seam, as far down as you can.
-- Pin/_Baste_ the zipper protector over to the right side to keep it out of the way for the next step
-- On the outside side, sew the left flap down to the left, following the curved line.
-- On the outside side, _Bar-Tack_ where you like them for reinforcement.
+- Sew each leg along the long seam to itself. This will result in two 'pipes' of your fabric
 
-<Tip>
+### Step 2: Combine
 
-When sewing the left flap down on the outside, you may find it best to make a template to help you.
+- Sew the two pieces together along the back seam. This seam is marked with '+'.
 
-</Tip>
+### Step 3: Gusset preparation
 
-<Note>
+- If you have a front bulge in your gusset, sew the middle 'dart' closed first.
+- If you do not have a front bulge, it is useful to sew the front seam closed. This seam is marked with '-'.
 
-If you wish to orientate the fly the other way change the left to right and right to left in the steps above.  
-If wanting something more historical than omit the zipper and make a buttonhole fly instead.
+### Step 4: Gusset 
 
-</Note>
+- Match all the notches of the gusset with the legs and seams. Be careful, since you'll be sewing a circle 
+to an outline, and that is always tricky to get right. Use a lot of pins, or clips, to keep the fabrics
+aligned. 
+- Sew the seam from one side all the way to the other.
 
-### Step 3: Attaching the front to the back
+### Step 5: Attaching the waistband
 
-- With right sides together sew the back pieces together along the back seam.
-- With right sides together sew the front and back together at the side seams and inner leg seam. Making sure to leave a gap below the notches at the bottom of the side seams. The gap will be referred to as the list when going forward.
+- If you have selected the waistband option, sew the waistband into a circle.
+- Align this seam with the seam in the back.
+- Sew all the way around, attaching the waistband to the legs.
 
-### Step 4: Leg bands
+### Step 6: Finish up
 
-Use the method of the cuff style you chose as they are different depending on which style you are using.
+Now you can add the elastic to the leg openings and waistband if you so prefer. Otherwise finish those
+in any way you like.
 
-#### Traditional and Elegant
 
-- _Finish_ the raw edges of the slits.
-- Press the seam allowances of the slits to the wrongs sides. Stitch in place.
-- Sew one of the leg band pieces to each leg right sides together, matching notches.
-- Press the bands and seam allowance down and away from leg. Trim the seam allowance to reduce bulk.
-- Press the top seam allowance to the wrong side of the remaining leg band pieces. Trim the top seam allowance.
-- With right sides together sew the remaining leg and pieces to the attached leg bands along the bottoms and sides.
-- Turn the leg bands out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
-- Sew the buttonhole. The buttons will be sewn later.
-
-<Note>
-
-If you are worried about a draft you can create a triangle piece of fabric that sits behind the slits out of your pocket fabric. Attaching it before Step 3 to one of the sides of the slits.
-
-</Note>
-
-#### Keystone
-
-- If using construct plackets for the leg slits.
-- Sew the plackets to the leg slits similar to how you would sew a sleeve cuff on a shirt.
-- Close the darts on the leg band pieces.
-- Sew one of the leg band pieces to each leg right sides together, matching notches.
-- Press the bands and seam allowance down and away from leg. Trim the seam allowance to reduce bulk.
-- Press the top seam allowance to the wrong side of the remaining leg band pieces. Trim the top seam allowance.
-- With right sides together sew the remaining leg and pieces to the attached leg bands along the bottoms and sides.
-- Turn the leg bands out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
-- Sew the buttonhole. The buttons will be sewn later.
-
-<Note>
-
-If you are worried about a draft you will need to construct plackets for the leg slits.
-
-</Note>
-
-<Note>
-
-**For both Keystone, Traditional and Elegant Styles**
-
-You can _Edgestitch_ the leg bands together like a modern waistband if you prefer.
-
-</Note>
-
-### Step 5: Waistband
-
-- Face one of the waistband pieces using your preffered method.
-- Sew the faced waistband piece to the top of the legs right sides together.
-- Press the waistband and seam allowance up and away from leg. Trim the seam allowance to reduce bulk.
-- Press the bottom seam allowance to the wrong side of the remaining waistband piece. Trim the bottom seam allowance.
-- With right sides together sew the remaining waistband to the faced waistband along the top and sides.
-- Turn the waistband out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
-- Sew the buttonhole. The buttons will be sewn later.
-
-<Note>
-
-You can _Edgestitch_ the waistband together like a modern waistband if you prefer.
-
-</Note>
-
-### Step 6: Buttons
-
-- Sew the waistband and leg band buttons on.
-
-### Step 7: Enjoy!
-
-You're all done! Now go have a ride in your brilliant new cycling breeches!
+You're all done! Enjoy your Lumina leggings!

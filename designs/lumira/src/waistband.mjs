@@ -105,6 +105,45 @@ export const waistband = {
       snippets.gusset = new Snippet('notch', paths.bottom.shiftAlong(gussetWidth))
     }
 
+    var top = paths.top.edge('top')
+    if (top.y == points.topFront.y) {
+      top = paths.top.edge('bottom')
+    }
+    var bottom = paths.bottom.edge('bottom')
+    if (bottom.y == points.bottomFront.y) {
+      bottom = paths.bottom.edge('top')
+    }
+    macro('hd', {
+      id: 'top',
+      from: points.topBack,
+      to: points.topFront,
+      y: Math.min(points.topFront.y, top.y) - sa - 15,
+    })
+    macro('hd', {
+      id: 'bottom',
+      from: points.bottomBack,
+      to: points.bottomFront,
+      y: Math.max(points.bottomFront.y, bottom.y) + sa + 15,
+    })
+    macro('vd', {
+      id: 'top',
+      from: points.bottomBack,
+      to: top,
+      x: top.x - 15,
+    })
+    macro('vd', {
+      id: 'bottom',
+      from: points.topFront,
+      to: bottom,
+      x: top.x + 15,
+    })
+    macro('ld', {
+      id: 'back',
+      from: points.topBack,
+      to: points.bottomBack,
+      d: 15,
+    })
+
     return part
   },
 }

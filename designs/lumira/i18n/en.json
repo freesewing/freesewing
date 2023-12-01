@@ -7,7 +7,11 @@
     "waistband": "Waistband",
     "couldNotFitFrontGussetPath": "Could not fit the front gusset path"
    },
-  "s": {},
+  "s": {
+    "bulgeToLarge": "The value for the bulge is too large, and this cannot be made to fit. It is adjusted accordingly.",
+    "couldNotFitFrontOutside": "Could not made the front outside to fit",
+    "couldNotFitFrontGussetPath": "Could not made the front gusset path to fit"
+  },
   "o": {
     "waistband": {
       "t": "Waistband",
@@ -48,6 +52,10 @@
     "ease": {
       "t": "Ease",
       "d": "This controls the amount of ease. Since this is a pattern for leggings that is normally made of stretch fabric, the ease is negative, meaning the fabric is stretched around the body."
+    },
+    "leglength": {
+      "t": "Leg length",
+      "d": "The length of the legs. A percentage of the inseam measurement."
     },
     "waistlowering": {
       "t": "Waist lowering",

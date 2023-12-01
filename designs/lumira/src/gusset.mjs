@@ -153,13 +153,6 @@ export const gusset = {
             width: units(1),
             length: units(1),
           },
-          // suggest: {
-          //   text: 'flag:show',
-          //   icon: 'expand',
-          //   update: {
-          //     settings: ['expand', 1],
-          //   },
-          // },
         })
         rotateAngle = 90
       }
@@ -373,6 +366,71 @@ export const gusset = {
     })
 
     store.cutlist.addCut({ cut: 1, from: 'fabric', onFold: true })
+
+    macro('vd', {
+      id: 'insertBottom',
+      from: points.backInsertOutsideBottom,
+      to: points.frontCenter,
+      x: points.backInsertOutsideBottom.x + sa + 15,
+    })
+    macro('vd', {
+      id: 'insertOutsideGusset',
+      from: points.backInsertOutsideGusset,
+      to: points.frontCenter,
+      x: points.backInsertOutsideBottom.x + sa + 25,
+    })
+    const right = paths.seam.edge('right')
+    macro('vd', {
+      id: 'rightGusset',
+      from: right,
+      to: points.frontCenter,
+      x: right.x + sa + 15,
+    })
+    macro('vd', {
+      id: 'rightGusset',
+      from: right,
+      to: points.frontCenter,
+      x: right.x + sa + 15,
+    })
+    macro('vd', {
+      id: 'top',
+      from: points.backInsertCenterTop,
+      to: points.frontCenter,
+      x: right.x + sa + 25,
+    })
+    macro('hd', {
+      id: 'insertBottom',
+      from: points.frontCenter,
+      to: points.backInsertOutsideBottom,
+      y: points.frontCenter.y + sa + 15,
+    })
+    macro('hd', {
+      id: 'right',
+      from: points.frontCenter,
+      to: right,
+      y: points.frontCenter.y + sa + 25,
+    })
+
+    if (frontBulge) {
+      macro('vd', {
+        id: 'bulgeLength',
+        from: points.frontCenter,
+        to: points.frontCenterOutside,
+        x: points.frontOutside.x + sa + 25,
+      })
+      macro('hd', {
+        id: 'bulgeWidth',
+        from: points.frontCenter,
+        to: points.frontOutside,
+        y: points.frontOutside.y + sa + 25,
+      })
+      macro('ld', {
+        id: 'width',
+        from: points.frontCenterOutside,
+        to: points.frontOutside,
+        d: 15,
+      })
+    }
 
     return part
   },
