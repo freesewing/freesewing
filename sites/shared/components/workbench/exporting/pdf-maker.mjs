@@ -136,7 +136,10 @@ export class PdfMaker {
 
     this.lineLevel += 8
     this.pdf.fillColor('#888888')
-    this.addText(this.strings.url, 10)
+    /*
+     * Don't print URL on pattern. See #5526
+     */
+    //this.addText(this.strings.url, 10)
   }
 
   /** generate the title for a cutting layout page */

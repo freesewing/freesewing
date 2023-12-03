@@ -156,8 +156,8 @@ function draftHoodFront({
   store.cutlist.addCut({ cut: 1, from: 'fabric' })
 
   points.title = new Point((points.frontBottom.x * 7) / 8, points.frontBottom.y / 2)
-  macro('title', { at: points.title, nr: 8, title: 'hoodFront' })
-  points.logo = points.title.translate(20 * scale, 70 * scale)
+  macro('title', { at: points.title, nr: 8, title: 'onyx:hoodFront' })
+  points.logo = points.title.translate(40 * scale, -40 * scale)
   snippets.logo = new Snippet('logo', points.logo)
 
   if (sa) {

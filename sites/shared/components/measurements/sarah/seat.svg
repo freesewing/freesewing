@@ -1,0 +1,33 @@
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="2000" height="1500" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 1500">
+    <defs>
+        <path id="path" d="M 0 0 l 179 0 m 399 -5 l 265 0 m 441 10 l 277 0" style="fill: none; stroke-linejoin: round;"/>
+    </defs>
+    <style type="text/css"><![CDATA[
+        path {fill: none; stroke-linejoin: round;}
+        .tape {stroke: #000; stroke-width: 20px; stroke-linecap: butt;}
+        .redtape {stroke: #f00; stroke-width: 1px;stroke-linecap: round;}
+        .color {stroke: #fff86c; stroke-width: 16px; stroke-linecap: butt;}
+        .cm {stroke: #000; stroke-width: 16px; stroke-dasharray: 2 10; stroke-linecap: butt;}
+    ]]></style>
+    
+    <!-- Background image -->
+    <image xlink:href="./standing.jpg" x="0" y="0" width="2000" height="1500" />
+
+    <g transform="translate(244 733)">
+        <use x="0" y="0" xlink:href="#path" class="redtape">
+            <animate attributeType="CSS" attributeName="stroke-width" from="1" to="450" begin="loop.begin+2.5s" dur="0.5s" fill="freeze" />
+            <animate attributeType="CSS" attributeName="stroke-opacity" from="1" to="0" begin="loop.begin+2.7s" dur="0.3s" fill="freeze" />
+        </use>
+        <use x="0" y="0" xlink:href="#path" class="tape"/>
+        <use x="0" y="0" xlink:href="#path" class="color"/>
+        <use x="0" y="0" xlink:href="#path" class="cm"/>
+    </g> 
+
+    <g>
+        <path style="fill: #985b3e; stroke: none;" d="M 344 720 l 11 40 l 35 -5 l -10 -35 " />
+    </g>
+    <!-- timing loop -->
+    <rect height="1" width="1" x="-10" y="-10">
+        <animate attributeType="CSS" attributeName="visibility" from="hide" to="hide" begin="0;loop.end" dur="4s" id="loop" />
+    </rect>
+</svg>

@@ -125,7 +125,7 @@ function draftUmaBack({
       .curve_(points.cfWaistbandDipCpBack, points.sideWaistbandBack)
       .line(points.sideLegBack)
       .curve(points.backGussetSplitCpBottom, points.backGussetSplitCpTop, points.backGussetSplit)
-      .line(points.cfBackGusset)
+      .line(new Point(0, points.backGussetSplit.y))
       .reverse()
       .hide()
 

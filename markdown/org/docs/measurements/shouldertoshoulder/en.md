@@ -10,3 +10,4 @@ top of the shoulder meets the side of the arm.
 It is also where the top of the shoulder seam sits and the sleeve begins
 on a well-fitting dress shirt.
 Then, measure from there across your back to the same point at the other side.
+<MeasieImage />
