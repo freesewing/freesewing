@@ -79,7 +79,7 @@
     "slugify": "^1.6.6",
     "svg-to-pdfkit": "https://git@github.com/eriese/SVG-to-PDFKit",
     "tlds": "1.242.0",
-    "use-persisted-state": "0.3.3",
+    "use-local-storage-state": "19.1.0",
     "web-worker": "1.2.0"
   },
   "devDependencies": {},

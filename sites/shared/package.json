@@ -56,7 +56,7 @@
     "tlds": "1.242.0",
     "to-vfile": "8.0.0",
     "unist-util-visit": "5.0.0",
-    "use-persisted-state": "0.3.3",
+    "use-local-storage-state": "19.1.0",
     "web-worker": "1.2.0"
   },
   "devDependencies": {
