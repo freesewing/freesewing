@@ -45,7 +45,7 @@ currently used by the designs we maintain:
 | `waistToUpperLeg` | Distance from `waist` line to `upperLeg` circumference, along side of body |
 | `wrist` | Wrist circumference |
 
-[hps]: https://freesewing.org/docs/measurements/hps/
+[hps]: https://freesewing.org/docs/sewing/hps/
 
 ## Measurements from `plugin-measurements`
 

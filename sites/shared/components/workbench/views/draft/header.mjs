@@ -3,7 +3,7 @@
 import { capitalize, shortDate } from 'shared/utils.mjs'
 import { controlLevels } from 'shared/config/freesewing.config.mjs'
 // Hooks
-import { useContext, useMemo } from 'react'
+import { useEffect, useContext, useMemo } from 'react'
 import { useMobileAction } from 'shared/context/mobile-menubar-context.mjs'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
@@ -99,19 +99,32 @@ export const DraftHeader = ({
   // add the zoom buttons as an action on the mobile menubar
   useMobileAction('zoom', { order: 0, actionContent: headerZoomButtons })
 
-  const savePattern = async () => {
-    setLoadingStatus([true, 'savingPattern'])
+  /*
+   * This saves the pattern on intial load which side-steps #5534 until
+   * we figure out what's causing it exactly
+   */
+  useEffect(() => {
+    if (saveAs && saveAs.edit === 0) {
+      savePattern(true)
+      saveAs.edit++
+    }
+  }, [saveAs])
+
+  const savePattern = async (silent = false) => {
+    if (!silent) setLoadingStatus([true, 'savingPattern'])
     const result = await backend.updatePattern(saveAs.pattern, { settings })
-    if (result.success)
-      setLoadingStatus([
-        true,
-        <>
-          {t('status:patternSaved')} <small>[#{saveAs.pattern}]</small>
-        </>,
-        true,
-        true,
-      ])
-    else setLoadingStatus([true, 'backendError', true, false])
+    if (!silent) {
+      if (result.success)
+        setLoadingStatus([
+          true,
+          <>
+            {t('status:patternSaved')} <small>[#{saveAs.pattern}]</small>
+          </>,
+          true,
+          true,
+        ])
+      else setLoadingStatus([true, 'backendError', true, false])
+    }
   }
 
   const bookmarkPattern = async () => {
@@ -263,7 +276,7 @@ export const DraftHeader = ({
         </div>
         <Spacer />
         <div className="flex flex-row items-center gap-4">
-          {saveAs && saveAs.pattern ? (
+          {saveAs.pattern ? (
             <button
               onClick={savePattern}
               className={`tooltip tooltip-primary tooltip-bottom flex flex-row items-center disabled:opacity-50`}
