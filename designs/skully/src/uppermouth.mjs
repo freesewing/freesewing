@@ -125,13 +125,13 @@ export const uppermouth = {
     paths.front1 = new Path()
       .move(points.pointM1)
       .curve_(points.pointM1Cp1, points.point1)
-      .setText(complete ? '(16)' : '', textAttribute)
+      .setText(complete ? 'mouthTop' + '(16)' : '', textAttribute)
       .addClass('hidden')
 
     paths.front2 = new Path()
       .move(points.mPoint1)
       .curve_(points.mPointM1Cp1, points.pointM1)
-      .setText(complete ? '(16)' : '', textAttribute)
+      .setText(complete ? 'mouthTop' + '(16)' : '', textAttribute)
       .addClass('hidden')
 
     paths.backOfUpperJaw.curve(points.mPoint6Cp2, points.mPoint5Cp1, points.mPoint5)
