@@ -61,7 +61,7 @@
     "mustache": "4.2.0",
     "next": "13.5.4",
     "next-i18next": "14.0.0",
-    "pdfkit": "0.13.0",
+    "pdfkit": "0.14.0",
     "postcss-for": "2.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
