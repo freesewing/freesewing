@@ -5,7 +5,10 @@ import { Benjamin, BenjaminFront } from 'shared/components/designs/linedrawings/
 import { Bent, BentFront, BentBack } from 'shared/components/designs/linedrawings/bent.mjs'
 import { Bob, BobFront, BobBack } from 'shared/components/designs/linedrawings/bob.mjs'
 import { Bruce, BruceFront, BruceBack } from 'shared/components/designs/linedrawings/bruce.mjs'
+import { Diana, DianaFront, DianaBack } from 'shared/components/designs/linedrawings/diana.mjs'
+import { Florence, FlorenceFront } from 'shared/components/designs/linedrawings/florence.mjs'
 import { Simon, SimonFront, SimonBack } from 'shared/components/designs/linedrawings/simon.mjs'
+import { Uma, UmaFront, UmaBack } from 'shared/components/designs/linedrawings/uma.mjs'
 import { Wahid, WahidFront, WahidBack } from 'shared/components/designs/linedrawings/wahid.mjs'
 
 export const lineDrawingsFront = {
@@ -16,7 +19,10 @@ export const lineDrawingsFront = {
   bent: BentFront,
   bob: BobFront,
   bruce: BruceFront,
+  diana: DianaFront,
+  florence: FlorenceFront,
   simon: SimonFront,
+  uma: UmaFront,
   wahid: WahidFront,
 }
 
@@ -26,7 +32,9 @@ export const lineDrawingsBack = {
   bent: BentBack,
   bob: BobBack,
   bruce: BruceBack,
+  diana: DianaBack,
   simon: SimonBack,
+  uma: UmaBack,
   wahid: WahidBack,
 }
 
@@ -38,6 +46,9 @@ export const lineDrawings = {
   bent: Bent,
   bob: Bob,
   bruce: Bruce,
+  diana: Diana,
+  florence: Florence,
   simon: Simon,
+  uma: Uma,
   wahid: Wahid,
 }
