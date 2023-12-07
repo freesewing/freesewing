@@ -63,7 +63,8 @@ export const jawfloor = {
       .curve(points.point1Cp1, points.point2Cp2, points.point2)
       .curve(points.point2Cp1, points.point3Cp2, points.point3)
       .curve(points.point3Cp1, points.point4Cp2, points.point4)
-      .setText(complete ? 'jawBottom' + ' (15)' : '', textAttribute)
+      .addText(complete ? 'skully:jawBottom' : '', textAttribute)
+      .addText(complete ? ' (15)' : '', textAttribute)
       .addClass('hidden')
 
     paths.bottomJaw2 = new Path()
@@ -73,7 +74,8 @@ export const jawfloor = {
       .curve(points.mPoint2Cp2, points.mPoint1Cp1, points.mPoint1)
       .curve(points.mPoint1Cp2, points.mPoint0Cp1, points.mPoint0)
       .curve_(points.mPoint0Cp2, points.point6)
-      .setText(complete ? 'jawBottom' + ' (15)' : '', textAttribute)
+      .addText(complete ? 'skully:jawBottom' : '', textAttribute)
+      .addText(complete ? ' (15)' : '', textAttribute)
       .addClass('hidden')
 
     paths.back = new Path()
@@ -102,7 +104,7 @@ export const jawfloor = {
       nr: 8,
       at: points.title,
       scale: 0.5,
-      title: 'jawfloor',
+      title: 'skully:jawfloor',
     })
     // points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     // snippets.logo = new Snippet('logo', points.logo)
