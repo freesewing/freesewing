@@ -16,7 +16,7 @@
     "nose": "Nose",
     "upperjaw": "Upper Jaw",
     "mouthTop": "Top of mouth",
-    "upperMouth": "Upper Mouth"
+    "uppermouth": "Upper Mouth"
   },
   "s": {
     "backOfMouth": "Back of mouth",
@@ -37,7 +37,7 @@
     "mouthTop": "Top of mouth",
     "nose": "Nose",
     "upperJaw": "Upper jaw",
-    "upperMouth": "Upper Mouth"
+    "uppermouth": "Upper Mouth"
   },
   "o": {
     "size": {
