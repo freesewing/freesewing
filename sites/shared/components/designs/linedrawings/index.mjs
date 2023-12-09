@@ -7,6 +7,7 @@ import { Bob, BobFront, BobBack } from 'shared/components/designs/linedrawings/b
 import { Bruce, BruceFront, BruceBack } from 'shared/components/designs/linedrawings/bruce.mjs'
 import { Diana, DianaFront, DianaBack } from 'shared/components/designs/linedrawings/diana.mjs'
 import { Florence, FlorenceFront } from 'shared/components/designs/linedrawings/florence.mjs'
+import { Lucy, LucyFront } from 'shared/components/designs/linedrawings/lucy.mjs'
 import { Noble, NobleFront, NobleBack } from 'shared/components/designs/linedrawings/noble.mjs'
 import { Simon, SimonFront, SimonBack } from 'shared/components/designs/linedrawings/simon.mjs'
 import { Uma, UmaFront, UmaBack } from 'shared/components/designs/linedrawings/uma.mjs'
@@ -22,6 +23,7 @@ export const lineDrawingsFront = {
   bruce: BruceFront,
   diana: DianaFront,
   florence: FlorenceFront,
+  lucy: LucyFront,
   noble: NobleFront,
   simon: SimonFront,
   uma: UmaFront,
@@ -51,6 +53,7 @@ export const lineDrawings = {
   bruce: Bruce,
   diana: Diana,
   florence: Florence,
+  lucy: Lucy,
   noble: Noble,
   simon: Simon,
   uma: Uma,
