@@ -28,7 +28,7 @@ Er zijn twee manieren om de bindingen te doen. Je kunt het gebruiken als dubbelg
 
   - Vouw beide bindingen langs de lange kant dubbel, _met de verkeerde kanten op elkaar_, en pers goed.
   - Markeer het midden van elk van de bindingen en van de voor- en achterkant.
-  - Bevestig de gevouwen band aan het corresponderende deel, _goede kanten op elkaar_. Zorg ervoor dat je de binding gelijkmatig over de rand verdeelt. Make sure you distribute the binding evenly along the edge.
+  - Bevestig de gevouwen band aan het corresponderende deel, _goede kanten op elkaar_. Zorg ervoor dat je de binding gelijkmatig over de rand verdeelt. Zorg ervoor dat je de binding gelijkmatig over de rand verdeelt.
   - Naai net niet de SA.
   - Druk de binding naar de rand toe en druk de SA naar de _verkeerde kant_.
   - Naai door het deel en de SA eronder en houd de gevouwen SA op de _met de verkeerde kant_.

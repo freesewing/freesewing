@@ -1,13 +1,13 @@
 frombrian.t: Von Brian
-frombrian.d: Entwirf ein Design, das Brian erweitert, einen Block für Herrenmode
+frombrian.d: Erstelle eine Design-Erweiterung für Brian, einen Grundschnitt für Herrenbekleidung
 frombent.t: Von Bent
-frombent.d: Kreiere ein Design, das Bent verlängert, einen Block für Herrenbekleidung mit einem zweiteiligen Ärmel
+frombent.d: Erstelle eine Design-Erweiterung für Bent, einen Grundschnitt für Herrenbekleidung mit einem zweiteiligen Ärmel
 fromtitan.t: Von Titan
-fromtitan.d: Kreiere ein Design, das Titan erweitert, einen Unisex-Hosenblock
+fromtitan.d: Erstelle eine Design-Erweiterung für Titan, einen Unisex-Hosenschnitt
 frombella.t: Von Bella
-frombella.d: Entwirf ein Design, das Bella, einen Block für Damenmode, erweitert
+frombella.d: Erstelle eine Design-Erweiterung für Bella, einen Grundschnitt für Damenbekleidung
 frombreanna.t: Von Breanna
-frombreanna.d: Entwirf ein Design, das Breanna, einen Block für Damenmode, erweitert
+frombreanna.d: Erstelle eine Design-Erweiterung für Breanna, einen Grundschnitt für Damenbekleidung
 fromscratch.t: Von Grund auf
 fromscratch.d: Beginne deinen Entwurf mit einer leeren Seite
 tutorial.t: Anleitung
@@ -21,7 +21,7 @@ pageLeftBlank: Leere Seite
 pageLeftBlankMsg: Diese Seite wurde absichtlich leer gelassen.
 templatesAvailable: Die folgenden Vorlagen sind verfügbar, um dein nächstes Projekt zu starten
 welcomeToSde: Willkommen in der FreeSewing Entwicklungsumgebung
-signIn: Beachte, dass du dich auch bei deinem FreeSewing-Konto anmelden kannst, damit du deine eigenen Einstellungen und Daten beim Entwerfen wiederverwenden kannst.
+signIn: Beachte, dass du dich bei deinem FreeSewing-Konto anmelden kannst, um deine eigenen Einstellungen und Daten beim Entwerfen wiederzuverwenden.
 signOff: Ich wünsche dir viel Spaß
 ps: "PS: FreeSewing braucht deine Unterstützung, also überlege dir bitte, Gönner zu werden"
 

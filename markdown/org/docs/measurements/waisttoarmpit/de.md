@@ -15,3 +15,4 @@ Wenn du dir nicht sicher bist, wo sich die Lymphknoten unter deinem Arm befinden
 - Dein Zeigefinger sitzt jetzt in der Achselhöhle, die ein bisschen zu hoch ist. Aber dein Mittelfinger ist eine gute Stelle, um den Beginn deiner Achselhöhle zu markieren.
 
 
+<MeasieImage />

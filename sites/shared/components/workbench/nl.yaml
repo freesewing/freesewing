@@ -19,6 +19,7 @@ chooseFromCuratedSetsDesc: Als je ons platform gewoon wilt uitproberen, kun je k
 chooseFromOwnSets: Kies een van je eigen meetsets
 chooseFromOwnSetsDesc: Kies een van je eigen meetsets die alle vereiste afmetingen heeft om dit patroon te genereren.
 chooseNewSet: Kies een nieuwe meetset
+clearTimingData: Clear timing data
 closure: Sluiting
 collar: Kraag
 columns: kolommen
@@ -41,8 +42,10 @@ editCurrentMeasiesHeader: Patroonmetingen bewerken
 editMeasiesByHand: Metingen met de hand bewerken
 editMeasiesByHandDesc: Handmatig metingen instellen of overschrijven. Deze wijzigingen zijn alleen van toepassing op het huidige patroon.
 editSettings: Configuratie bewerken
+editSettingsByHand: Edit settings by hand
 elastic: Elastiek
 export: Exporteren
+exporting: Exporting
 exportAsData: Exporteer als data
 exportForEditing: Exporteren om te bewerken
 exportForPrinting: Exporteren om te printen
@@ -80,6 +83,7 @@ partTransfoYes: Knoppen weergeven
 partTransfoYesDesc: Neem deze knoppen op in de patroonuitvoer (ze worden niet afgedrukt)
 pathInfo: Pad info
 patternBookmarkCreated: Patroonbladwijzer gemaakt
+patternEditor: Pattern Editor
 patternInspector: Patroon Inspecteur
 patternLogs: Patroon logboeken
 patternSaved: Patroon opgeslagen
@@ -106,6 +110,7 @@ showOnlyThisPart: Laat alleen dit patroondeel zien
 sleevecap: Mouwkop
 style: Stijl
 test: Test
+testDesign: Test Design
 testDesignMeasurement: "Test {design} metingen: {measurement}"
 testDesignOption: "Test {design} ontwerpopties: {option}"
 testDesignSets: "Test {design} over meetsets heen"
@@ -116,6 +121,7 @@ testOptionsDesc: Test hoe het ontwerp zich aanpast aan veranderingen in een spec
 testPattern: Testpatroon
 testSets: Test meetsets
 testSetsDesc: Test hoe het ontwerp zich aanpast aan verschillende meetsets
+timeDesign: Time Design
 topLeft: Linksboven
 weLackSomeMeasies: We missen { nr } metingen om dit patroon te maken
 whereToGoAfterSaveAs: Wat wil je doen nadat je het nieuwe patroon hebt opgeslagen?
@@ -127,3 +133,9 @@ yamlEditViewTitleThing: 'Patroonconfiguratie bewerken voor {thing}'
 youCanPickOrEnter: Je kunt een meetset kiezen of ze met de hand invoeren, maar zonder deze metingen kunnen we niet verder.
 youUseCustomValue: Je gebruikt de standaardwaarde
 youUseDefaultValue: Je gebruikt een aangepaste waarde
+veryFast: Very fast
+fast: Fast
+average: Average
+slow: Slow
+verySlow: Very slow
+tooSlow: Too slow

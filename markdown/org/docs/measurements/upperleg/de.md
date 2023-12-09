@@ -13,3 +13,4 @@ Du solltest dies ein wenig unterhalb deines Schrittes messen, siehe die Illustra
 Diese Messungen werden auch als **eine vertikale Referenz** verwendet, um den vertikalen Raum zu bestimmen, in dem der Sitz/Schnitt der Hosen entworfen werden soll. Daher ist die vertikale Positionierung dieser Messung wichtig.
 
 </Tip>
+<MeasieImage />
