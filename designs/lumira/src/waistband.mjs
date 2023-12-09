@@ -26,7 +26,6 @@ export const waistband = {
     const angleFront =
       points.frontWaist.angle(points.backWaist) - paths.frontTop.end().angle(points.frontWaist)
     var angle = angleBack - 90 + (90 - angleFront) / 2
-    console.log({ angleFront: angleFront, angleBack: angleBack, angle: angle })
 
     var iter = 0
     var diff = 0
@@ -45,7 +44,6 @@ export const waistband = {
         .move(points.topFront)
         .curve(points.topFrontCp, points.topBackCp, points.topBack)
       diff = paths.top.length() - topLength
-      console.log({ i: iter, d: diff })
     } while (iter++ < 100 && (diff < -1 || diff > 1))
 
     points.bottomFront = points.topFront.shift(270 + angle, waistbandSize)
@@ -70,19 +68,31 @@ export const waistband = {
         .curve(points.bottomFrontCp, points.bottomBackCp, points.bottomBack)
 
       diff = paths.bottom.length() - bottomLength
-      console.log({ i: iter, d: diff })
     } while (iter++ < 100 && (diff < -1 || diff > 1))
 
-    paths.seam = new Path()
+    paths.seamSA = new Path()
       .move(points.topFront)
       .join(paths.top)
       .line(points.bottomBack)
       .join(paths.bottom.reverse())
+      .hide()
+    paths.seam = new Path()
+      .move(points.topFront)
+      .join(paths.seamSA)
+      // .line(points.bottomBack)
+      // .join(paths.bottom.reverse())
       .line(points.topFront)
       .close()
+      .attr('class', 'fabric')
 
     if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      const seamSA = paths.seamSA.offset(sa)
+      paths.sa = new Path()
+        .move(points.topFront)
+        .line(seamSA.start())
+        .join(seamSA)
+        .line(points.bottomFront)
+        .attr('class', 'fabric sa')
     }
 
     points.title = points.bottomFront.shiftFractionTowards(points.topBack, 0.5)

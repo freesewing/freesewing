@@ -127,13 +127,6 @@ export const gusset = {
         )
         .hide()
       diff = backCircleLength - paths.backInsertCircle.length()
-      console.log({
-        i: iter,
-        d: diff,
-        bcl: backCircleLength,
-        pl: paths.backInsertCircle.length(),
-        p: paths.backInsertCircle,
-      })
     } while (iter++ < 50 && (diff > 1 || diff < -1))
 
     points.backInsertOutsideBottom = points.backInsertOutsideGusset.shift(270, backGussetLength)
@@ -186,7 +179,6 @@ export const gusset = {
         measurements.waistToHips - waistLowering - waistbandSize
       )
       const frontCenterAngle = points.frontOutside.angle(points.frontOutsideHips) - 90
-      console.log({ frontCenterAngle: frontCenterAngle })
       points.frontCenterOutside = points.frontOutside.shift(180 + frontCenterAngle, gussetWidth)
       points.frontCenterHips = points.frontOutsideHips.shift(180 + frontCenterAngle, gussetWidth)
 
@@ -244,29 +236,19 @@ export const gusset = {
           .curve(points.frontCenterMiddleCp1, points.frontCenterSplitCp, points.frontCenterSplit)
 
         // paths['frontCenterGussetPath' + iter] = frontGussetPath.clone().addClass('note')
-        console.log({ frontGussetPath: frontGussetPath })
         diff = frontGussetPath.length() - (frontLength + frontBulgeSize)
-
-        console.log({
-          i: iter,
-          d: diff,
-          fl: frontLength + frontBulgeSize,
-          pl: frontGussetPath.length(),
-        })
       } while (iter++ < 50 && (diff > 1 || diff < -1))
       if (iter >= 50) {
         log.info('couldNotFitFrontGussetPath')
       }
 
       const frontGussetAngle = points.frontCenterMiddle.angle(points.backInsertCenterBottom)
-      console.log({ frontGussetAngle: frontGussetAngle })
 
       paths.frontBulge = new Path()
         .move(points.frontCenterSplit)
         .curve(points.frontCenterSplitCp, points.frontCenterMiddleCp1, points.frontCenterMiddle)
         .curve(points.frontCenterMiddleCp2, points.frontCenterHipsCp, points.frontCenterHips)
         .hide()
-      // snippets.front = new Snippet('notch', paths.frontBulge.shiftFractionAlong(0.5))
 
       paths.front = new Path()
         .move(points.frontCenterSplit)
@@ -277,8 +259,6 @@ export const gusset = {
         .hide()
 
       points.frontCenter = points.frontCenterSplit.clone()
-
-      console.log({ rotateAngle: rotateAngle })
     } else {
       const frontGussetAngle = store.get('frontGussetAngle')
       const frontGussetLength = store.get('frontGussetLength')
@@ -293,8 +273,6 @@ export const gusset = {
       )
 
       paths.front = new Path()
-        // .move(points.backInsertCenterBottom)
-        // .line(points.frontCenter)
         .move(points.frontCenter)
         .curve(
           points.frontCenterCp,

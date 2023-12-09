@@ -1,3 +1,4 @@
+import { pluginTiming } from '@freesewing/plugin-timing'
 import { pctBasedOn } from '@freesewing/core'
 
 export const shape = {
@@ -21,6 +22,7 @@ export const shape = {
     'waistToSeat',
     'waistToHips',
   ],
+  plugins: [pluginTiming],
   options: {
     // Constants
     gussetcompensation: 1.03,
@@ -83,7 +85,7 @@ export const shape = {
           : options.waistbandsize)
       : 0
     const gussetWidth =
-      measurements.crossSeamFront * (options.cyclingcchamois ? 0.075 : options.gussetwidth * 0.5)
+      measurements.crossSeamFront * (options.cyclingchamois ? 0.075 : options.gussetwidth * 0.5)
     const backGussetWidth = options.backgussetwidth * 2.34
     const frontGussetLength = measurements.crossSeamFront * options.frontgussetlength
     const frontBulge = options.cyclingchamois ? true : options.frontbulge
@@ -103,7 +105,6 @@ export const shape = {
       const pTemp = paths[pathName].split(points[pathName + pointName])
       if (pTemp.length != 2) {
         log.info('couldNotReduceWaist')
-        console.log('couldNotReduceWaist')
         return
       }
       paths[pathName] = pTemp[1].hide()
@@ -265,14 +266,7 @@ export const shape = {
       points.frontWaistband = paths.front.intersects(
         new Path().move(points.frontWaistband).line(points.centerWaistband)
       )[0]
-      console.log({
-        path: paths.front,
-        // intersectingPath: paths.waistTemp,
-        intersectPoint: points.frontWaistband,
-        results: s,
-      })
 
-      // paths.front1 = paths.front.clone().unhide()
       if (false == points.frontWaistband.sitsRoughlyOn(paths.front.start())) {
         var s = paths.front.split(points.frontWaistband)
         const sl = Math.floor(paths.front.length() * 10)
@@ -282,34 +276,12 @@ export const shape = {
             new Path().move(points.frontWaistband).line(points.centerWaistband)
           )[0]
         }
-        console.log({
-          pf: paths.front,
-          p: points.frontWaistband,
-          hi1: paths.front.split(points.frontWaistband),
-        })
-        // paths.front1a = paths.front.split(points.frontWaistband)[0].addClass('note')
-        // paths.front1b = paths.front.split(points.frontWaistband)[1].addClass('lining')
         paths.front = paths.front.split(points.frontWaistband)[1].hide()
       }
 
-      //////
-      // something goes wrong here
-      //////
-
-      // paths.front2 = paths.front.clone().unhide().addClass('lining')
       const kneeToUpperLeg = new Path().move(points.frontUpperLeg).line(points.frontKnee)
-      console.log({
-        pf: paths.front,
-        ktul: kneeToUpperLeg,
-        inter: ExtendPath(paths.front).intersects(kneeToUpperLeg),
-      })
       points.frontGusset = paths.front.intersects(kneeToUpperLeg)[0]
       if (false == points.frontGusset.sitsRoughlyOn(paths.front.end())) {
-        console.log({
-          pf: paths.front,
-          p: points.frontWaistband,
-          hi2: paths.front.split(points.frontGusset),
-        })
         paths.front = paths.front.split(points.frontGusset)[0].hide()
       }
     } else {
@@ -381,9 +353,15 @@ export const shape = {
     const bottom = new Path()
       .move(points.centerBottom.shift(180, measurements.seat))
       .line(points.centerBottom.shift(0, measurements.seat))
+    const frontLeg = ExtendPath(paths.frontLeg)
+    const backLeg = ExtendPath(paths.backLeg)
 
-    points.frontBottom = paths.frontLeg.intersects(bottom)[0]
-    points.backBottom = paths.backLeg.intersects(bottom)[0]
+    // paths.bottomTemp = bottom.clone()
+    // paths.frontLeg.unhide()
+    // paths.backLeg.unhide()
+
+    points.frontBottom = frontLeg.intersects(bottom)[0]
+    points.backBottom = backLeg.intersects(bottom)[0]
 
     if (false == points.frontBottom.sitsRoughlyOn(points.frontAnkle)) {
       paths.frontLeg = paths.frontLeg.split(points.frontBottom)[0].hide()
@@ -428,7 +406,6 @@ export const shape = {
       .move(points.backHips)
       .curve(points.backCircleHipsCp1, points.backCircleUpperLegCp1, points.backUpperLeg)
       .hide()
-    console.log({ csb: measurements.crossSeamBack, pl: paths.back.length() + waistLowering })
 
     points.backCircleGusset = paths.backTempCircle.intersects(paths.backTempGusset)[1]
     const pathBackGusset = paths.backTempGusset.split(points.backCircleGusset)
@@ -448,6 +425,11 @@ export const shape = {
     // console.log({ paths: JSON.parse(JSON.stringify(paths)) })
     // console.log({ store: JSON.parse(JSON.stringify(store)) })
     // console.log({ measurements: JSON.parse(JSON.stringify(measurements)) })
+
+    const shapeTook = store.get(['timing', 'parts', 'lumira.shape', 'took'])
+    log.info('The lumira.shape part took ' + shapeTook + ' ms to draft.')
+
+    log.info(JSON.stringify(store.timing))
 
     return part
   },
