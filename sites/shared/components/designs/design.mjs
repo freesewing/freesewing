@@ -100,7 +100,7 @@ export const DesignCard = ({ name, lineDrawing = false }) => {
         >
           {t(`designs:${name}.t`)}
         </h5>
-        <div className={lineDrawing ? 'py-8 px-4' : 'py-8'}>
+        <div className={lineDrawing ? 'p-4 grow w-full' : 'py-8'}>
           <LineDrawing className="h-64 max-w-full m-auto my-4 text-base-content" />
         </div>
         <div
