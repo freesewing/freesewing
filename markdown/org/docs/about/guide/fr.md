@@ -17,7 +17,7 @@ Cela vous convient ? Alors approfondissons :
 
 ## Qu'est-ce que FreeSewing ?
 
-FreeSewing est la principale bibliothèque open source [](https://github.com/freesewing) pour la fabrication de vêtements à la demande.  
+FreeSewing est [la principale bibliothèque open source](https://github.com/freesewing) pour la fabrication de vêtements à la demande.  
 Aimé par les couturiers amateurs et les entrepreneurs de la mode, FreeSewing fournit la pile technologique pour tes projets créatifs.
 
 FreeSewing est le fruit du travail de [Joost De Cock](https://github.com/joostdecock), le responsable de FreeSewing. Various other people have contributed to FreeSewing over the years (the [FreeSewing contributors](/contributors)), and the project is financially supported by [the FreeSewing patrons](/patrons).
@@ -40,7 +40,7 @@ FreeSewing.org est notre atout le plus visible, et pour beaucoup de gens, leur p
 
 ## Modèles et conceptions
 
-Si tu es venue sur ce site à la recherche de patrons de couture _et que tu n'as pas trouvé immédiatement un endroit où les télécharger, c'est parce que tous les patrons de couture de FreeSewing sont **faits sur mesure**.
+Si tu es venue sur ce site à la recherche de patrons de couture et que tu n'as pas trouvé immédiatement un endroit où les télécharger, c'est parce que tous les patrons de couture de FreeSewing sont **faits sur mesure**.
 
 Nous ne faisons pas de mise à l'échelle ou de gradation des patrons. Au lieu de cela, FreeSewing dessine un modèle fait à tes mesures. Cela se produit en temps réel, dans votre navigateur.
 
@@ -77,7 +77,7 @@ et dans le respect de [tes droits](docs/about/rights/).
 
 Une fois que vous avez un compte, vous pouvez commencer à ajouter des mesures. Mais cela soulève rapidement la question suivante : que faire si vous voulez un patron pour vous, mais aussi pour votre partenaire ?
 
-C'est pourquoi nous avons des ensembles de mesures ****. Tu peux ajouter autant de jeux de mesures que tu le souhaites. Avoir juste un pour vous c'est bien aussi.
+C'est pourquoi nous avons des ensembles de mesures. Tu peux ajouter autant de jeux de mesures que tu le souhaites. Avoir juste un pour vous c'est bien aussi.
 
 <Tip>
 

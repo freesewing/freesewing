@@ -19,6 +19,7 @@ import {
   XrayIcon,
   EditIcon,
   ExportIcon,
+  GaugeIcon,
 } from 'shared/components/icons.mjs'
 import Link from 'next/link'
 import { MenuWrapper } from 'shared/components/workbench/menus/shared/menu-wrapper.mjs'
@@ -27,6 +28,7 @@ export const ns = ['workbench', 'sections']
 
 const icons = {
   test: BeakerIcon,
+  time: GaugeIcon,
   export: ExportIcon,
   Edit: EditIcon,
   cut: CutIcon,
@@ -112,6 +114,15 @@ const NavIcons = ({ setView, setDense, dense, view, saveAs = false, control }) =
           active={view === 'test'}
         >
           <BeakerIcon className={iconSize} />
+        </NavButton>
+      )}
+      {control >= controlLevels.views.time && (
+        <NavButton
+          onClick={() => setView('time')}
+          label={t('workbench:timeDesign')}
+          active={view === 'time'}
+        >
+          <GaugeIcon className={iconSize} />
         </NavButton>
       )}
       {control >= controlLevels.views.print && (

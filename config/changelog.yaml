@@ -54,6 +54,7 @@ Unreleased:
     core:
       - Fix order in mergeOptions method so user settings take precendence over defaults
       - Fix upward snap for snapped percentage option when snap is a simple number
+      - The conditional loading of plugins had a bug causing them to never be loaded
     simon:
       - Replaced all instances of 'seperate' with 'separate' in option names
     plugintest:
@@ -65,6 +66,7 @@ Unreleased:
       - Decreased default back waist dip
       - Increased default front waist dip
       - Allowed lower values on back exposure, causing back to flare out
+      - Fix issue with back part when bulge is on and expand is off
 
     waralee:
       - Pocket opening was not drawn on the facing and pocket pieces. Fixes #4026

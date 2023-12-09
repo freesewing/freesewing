@@ -175,10 +175,10 @@ function draftBack({
   snippets.armpitScoopEnd = new Snippet('bnotch', points.armpitScoopEnd)
 
   points.title = new Point(
-    points.armpitCorner.x / 2,
+    points.armpitCorner.x / 4,
     (points.cfCrotch.y + points.armpitCornerScooped.y / 2) / 2
   )
-  macro('title', { at: points.title, nr: 2, title: 'back' })
+  macro('title', { at: points.title, nr: 2, title: 'onyx:back' })
 
   if (sa) {
     paths.sa = new Path()
@@ -194,6 +194,12 @@ function draftBack({
         .line(points.inseamHem.shift(270, options.legRibbing ? sa : absoluteOptions.legHem))
         .addClass('fabric sa')
     } else paths.sa.close()
+  }
+
+  if (options.zipperPosition === 'back' && options.backOnFold) {
+    store.flag.note({
+      msg: `onyx:backOnFoldZipper`,
+    })
   }
 
   const neckPath = new Path()

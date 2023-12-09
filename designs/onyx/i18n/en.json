@@ -11,12 +11,22 @@
     "crotchGusset": "Crotch gusset",
     "hood": "Hood back",
     "hoodFront": "Hood front",
-    "skirt": "Swim skirt",
+    "skirt": "Skirt",
     "sleeveRibbing": "Sleeve ribbing",
     "legRibbing": "Leg ribbing"
   },
   "s": {
-	"foldLine": "Fold Line"
+    "foldLine": "Fold Line",
+    "cutOneSkirt": "Cut one rectangle of fabric\nfor the skirt, with dimensions:",
+    "cutTwoSleeveRibbing": "Cut two rectangles of ribbing\nfor the wrists, with dimensions:",
+    "cutTwoLegRibbing": "Cut two rectangles of ribbing\nfor the legs, with dimensions:",
+    "cutOneCrotchGusset": "Cut one rectangle of main fabric\nfor the crotch gusset, with dimensions:",
+    "cutOneZipperGuard": "Cut one rectangle of main fabric\nfor the zipper guard, with dimensions:",
+    "cutNeckband": "Cut one rectangle of\nribbing or main fabric\nfor the neckband, with dimensions:",
+	"frontOnFoldZipper.t":"Front Zipper / Front on Fold",
+	"frontOnFoldZipper.d":"You have selected to place a front zipper, which is not compatible with cutting the front on the fold. When using a front zipper, it is recommended to cut the front as two separate pieces so that you have the seam allowance available to attach the zipper.",
+	"backOnFoldZipper.t":"Back Zipper / Back on Fold",
+	"backOnFoldZipper.d":"You have selected to place a back zipper, which is not compatible with cutting the back on the fold. When using a back zipper, it is recommended to cut the back as two separate pieces so that you have the seam allowance available to attach the zipper."
   },
   "o": {
     "neckbandLength": {

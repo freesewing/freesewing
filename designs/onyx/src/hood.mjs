@@ -197,7 +197,7 @@ function draftHood({
   store.cutlist.addCut({ cut: 2, from: 'fabric' })
 
   points.title = new Point(neckHalfCircumference / 6, -measurements.head * 0.3)
-  macro('title', { at: points.title, nr: 7, title: 'hood' })
+  macro('title', { at: points.title, nr: 7, title: 'onyx:hood' })
   points.logo = points.title.translate(20 * scale, -70 * scale)
   snippets.logo = new Snippet('logo', points.logo)
 

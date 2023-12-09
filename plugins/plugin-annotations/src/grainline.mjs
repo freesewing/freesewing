@@ -32,8 +32,11 @@ export const grainlineDefs = [
 /*
  * The rmgrainline macro
  */
-const rmgrainline = (id = macroDefaults.id, { store, part }) =>
-  store.removeMacroNodes(id, 'grainline', part)
+const rmgrainline = (id = macroDefaults.id, { store, part }) => {
+  if (store.cutlist.getGrainOrigin() === 'grainline') store.cutlist.removeGrain()
+
+  return store.removeMacroNodes(id, 'grainline', part)
+}
 
 /*
  * The grainline macro
@@ -69,7 +72,7 @@ const grainline = function (config = {}, { paths, Path, Point, complete, store, 
   /*
    * Store angle for use in cutlist
    */
-  store.cutlist.setGrain(mc.from.angle(mc.to))
+  store.cutlist.setGrain(mc.from.angle(mc.to), 'grainline')
 
   /*
    * Get the list of IDs

@@ -67,7 +67,7 @@
     "mocha": "10.2.0",
     "chai": "4.3.10",
     "chai-string": "1.5.0",
-    "sinon": "^16.1.0"
+    "sinon": "^17.0.1"
   },
   "files": [
     "dist/*",

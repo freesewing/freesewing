@@ -8,9 +8,9 @@ Deze omgeving biedt een groot aantal mogelijkheden en op deze pagina's zullen we
 
 <ControlTip />
 
-## De redacteur
+## De editor
 
-Hieronder zie je een screenshot van de patrooneditor van FreeSewing in [kioskmodus](/docs/about/site/draft/ui-settings/kiosk) die de header en footer van de site verbergt en de editor het hele scherm laat innemen. </strong> Ook is het menu **View (links) uitgebreid. Standaard zie je alleen de pictogrammen en niet de tekst van het menu aan de linkerkant.
+Hieronder zie je een screenshot van de patrooneditor van FreeSewing in [kioskmodus](/docs/about/site/draft/ui-settings/kiosk) die de header en footer van de site verbergt en de editor het hele scherm laat innemen. Ook is het menu **View** (links) uitgebreid. Standaard zie je alleen de pictogrammen en niet de tekst van het menu aan de linkerkant.
 
 ![Screenshot van de patroonbewerker van FreeSewing](editor.png "Screenshot van de patroonbewerker van Freesewing")
 
@@ -40,7 +40,7 @@ Aan de rechterkant van het scherm staat het menu **Instellingen** dat weer uit v
 - **Kerninstellingen**: Dit zijn instellingen die niet door het ontwerp worden geleverd, maar door de kernbibliotheek van FreeSewing. Daarom zijn de instellingen die je hier vindt hetzelfde voor alle ontwerpen, omdat ze allemaal dezelfde kernbibliotheek gebruiken. Raadpleeg [Core Settings](/docs/about/site/draft/core-settings) voor alle details, of bekijk de inline documentatie.
 - **UI-instellingen**: Tot slot regelen deze instellingen niet het patroon als zodanig, maar eerder de gebruikersinterface. Hier kun je bijvoorbeeld de kioskmodus inschakelen of de gebruikerservaring instellen om meer of minder functies te zien. Net als de kerninstellingen zijn de UI-instellingen hetzelfde voor elk ontwerp. Raadpleeg [UI Settings](/docs/about/site/draft/ui-settings) of raadpleeg de inline documentatie.
 
-### Het kopmenu
+### Het bovenmenu
 
 Bovenaan staat een kop met pictogrammen die je snel toegang geven tot zowel de Core-instellingen als de UI-instellingen. Er is ook een pictogram om je instellingen te wissen, zowel instellingen als metingen te wissen of om een bladwijzer aan te maken voor het huidige patroon.
 
@@ -52,6 +52,6 @@ De meeste, zo niet alle, instellingen of opties die je gaat aanpassen hebben een
 
 Je kunt op dat pictogram klikken om de inline documentatie te openen. Hiermee kun je snel de specifieke rol van een instelling of optie controleren zonder de editor te hoeven verlaten.
 
-## Modi redacteur
+## Editor modi
 
 <Fixme>Complete these docs</Fixme>

@@ -53,8 +53,8 @@ Beslis over een sluiting.
 - Rompers en jumpsuits kunnen knopen, opgerolde plastic ritsen, onzichtbare ritsen of een groot halsgat gebruiken.
 - LET OP: Dit ontwerp gaat uit van het gebruik van een rits. Als je knopen gebruikt, moet je die zelf toevoegen. Ze zijn niet opgenomen in dit ontwerp.
 
-Beslis of je de voor- en/of achterstukken _op de vouw_knipt:
-- Als je een rits of knopen gebruikt, knip dan _het stuk met de rits _niet in op de vouw_.
+Beslis of je de voor- en/of achterstukken _op de vouw_ knipt:
+- Als je een rits of knopen gebruikt, knip dan het stuk met de rits _niet in op de vouw_.
 - Voor unitards knip je zowel de voor- als achterkant _op de vouw_ (in totaal 2 stukken).
 - Knip voor unisuits de achterkant _op de vouw_ als je een unisuit met voorrits maakt, of de voorkant _op de vouw_ als je een unisuit met achterrits maakt (in totaal 3 stukken).
 - Voor pyjama's, rompers en jumpsuits uit één stuk knip je alleen de achterkant _op de vouw_ (in totaal 3 stukken).

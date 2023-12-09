@@ -180,7 +180,7 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.428.0'
+    '@aws-sdk/client-sesv2': '3.462.0'
     '@prisma/client': &prisma '5.4.2'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
@@ -214,7 +214,7 @@ dev:
     '@next/bundle-analyzer': &next '13.5.4'
     '@tailwindcss/typography': &tailwindTypography '0.5.9'
     'algoliasearch': '4.20.0'
-    'daisyui': &daisyui '3.9.2'
+    'daisyui': &daisyui '4.4.17'
     'lodash.get': *_get
     'lodash.orderby': &_orderby '4.6.0'
     'lodash.set': *_set
@@ -257,7 +257,7 @@ lab:
     'd3-drag': &d3drag '3.0.0'
     'd3-selection': &d3selection '3.0.0'
     'daisyui': *daisyui
-    'i18next': &i18next '23.5.1'
+    'i18next': &i18next '23.7.7'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
@@ -295,7 +295,7 @@ org:
     'daisyui': *daisyui
     'echarts': 5.4.2
     'echarts-for-react': 3.0.2
-    'jotai': &jotai '2.4.3'
+    'jotai': &jotai '2.6.0'
     'jotai-location': &jotai-location '0.5.1'
     'lodash.get': *_get
     'lodash.orderby': *_orderby

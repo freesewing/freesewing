@@ -1095,6 +1095,24 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "SophiaH67",
+      "name": "Sophia",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10786212?v=4",
+      "profile": "https://www.sophiah.gay/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "ArcticCoder",
+      "name": "Vili Sinervä",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39151688?v=4",
+      "profile": "https://github.com/ArcticCoder",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true,

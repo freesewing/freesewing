@@ -25,6 +25,7 @@ import { TestView, ns as testNs } from 'shared/components/workbench/views/test/i
 import { ExportView, ns as exportNs } from 'shared/components/workbench/views/exporting/index.mjs'
 import { LogView, ns as logNs } from 'shared/components/workbench/views/logs/index.mjs'
 import { InspectView, ns as inspectNs } from 'shared/components/workbench/views/inspect/index.mjs'
+import { TimeView, ns as timeNs } from 'shared/components/workbench/views/time/index.mjs'
 import { MeasiesView, ns as measiesNs } from 'shared/components/workbench/views/measies/index.mjs'
 import { DocsView, ns as docsNs } from 'shared/components/workbench/views/docs/index.mjs'
 
@@ -42,6 +43,7 @@ export const ns = nsMerge(
   exportNs,
   logNs,
   inspectNs,
+  timeNs,
   measiesNs,
   headerNs,
   docsNs
@@ -61,6 +63,7 @@ const views = {
   test: TestView,
   logs: LogView,
   inspect: InspectView,
+  time: TimeView,
   measies: MeasiesView,
   docs: DocsView,
 }
