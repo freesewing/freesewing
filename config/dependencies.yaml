@@ -318,7 +318,7 @@ org:
     'remark-gfm': *remarkGfm
     'remark-mdx-frontmatter': *mdxfrontmatter
     'strip-markdown': *stripMarkdown
-    'use-persisted-state': &use-persisted-state 0.3.3
+    'use-local-storage-state': &use-local-storage-state 19.1.0
     'yaml-loader': 0.8.0
   dev: *nextSiteDevDependencies
 
@@ -365,7 +365,7 @@ shared:
     'tlds': &rlds '1.242.0'
     'to-vfile': '8.0.0'
     'unist-util-visit': *unist-util-visit
-    'use-persisted-state': *use-persisted-state
+    'use-local-storage-state': *use-local-storage-state
     'web-worker': &webworker '1.2.0'
   dev:
     'recursive-readdir': '^2.2.3'
@@ -425,6 +425,6 @@ sde:
     "slugify": *slugify
     'svg-to-pdfkit': *svgtopdfkit
     'tlds': *rlds
-    'use-persisted-state': *use-persisted-state
+    'use-local-storage-state': *use-local-storage-state
     'web-worker': *webworker
 

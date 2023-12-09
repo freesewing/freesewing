@@ -7,13 +7,13 @@ title: HPS tot buste
 ###### HPS: hoogste punt schouder
 
 Het *hoogste punten* of *HPS* punt wordt gebruikt als basis voor verschillende verticale metingen.
-Raadpleeg [de hps documentatie](/docs/measurements/hps/) voor informatie over hoe je dit punt kunt vinden.
+Refer to [the hps documentation](/docs/sewing/hps/) for information on how to locate this point.
 
 </Note>
 
 De **hoog schouder punt (HPS) tot buste** afmeting loopt van je HPS tot aan de lijn die je bustewijdte vormt.
 
-Om je HPS tot buste te meten, [bepaal eerst waar je HPS ligt](/docs/measurements/hps/). Meet dan verticaal naar beneden tot aan de lijn die je borstomtrek of bustewijdte bepaalt.
+Om je HPS tot buste te meten, [bepaal eerst waar je HPS ligt](/docs/sewing/hps/). Meet dan verticaal naar beneden tot aan de lijn die je borstomtrek of bustewijdte bepaalt.
 
 Het punt van deze afmeting is bepalen op welke hoogte het volste deel van je bust zich bevindt op je torso.
 
@@ -28,3 +28,4 @@ Verander gewoon je handen rond, dan krijg je een nauwkeurigere meting.
 Neem voor het beste resultaat een tweede persoon om uw metingen te nemen (indien mogelijk).
 
 </Tip>
+<MeasieImage />
