@@ -78,8 +78,8 @@
     "remark-smartypants": "2.0.0",
     "slugify": "^1.6.6",
     "svg-to-pdfkit": "https://git@github.com/eriese/SVG-to-PDFKit",
+    "use-local-storage-state": "19.1.0",
     "tlds": "1.247.0",
-    "use-persisted-state": "0.3.3",
     "web-worker": "1.2.0"
   },
   "devDependencies": {},
