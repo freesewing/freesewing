@@ -190,7 +190,7 @@ export const uppermouth = {
       nr: 7,
       at: points.title,
       scale: 0.5,
-      title: 'skully:upperMouth',
+      title: 'skully:uppermouth',
     })
     // points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     // snippets.logo = new Snippet('logo', points.logo)
