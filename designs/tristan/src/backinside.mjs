@@ -6,6 +6,7 @@ export const backInside = {
   draft: ({ sa, Point, points, Path, paths, Snippet, snippets, options, store, macro, part }) => {
     const lacing = true == options.lacing && 'back' == options.lacingLocation
 
+    macro('rmtitle')
     store.cutlist.removeCut()
 
     paths.cut = new Path()
@@ -36,10 +37,26 @@ export const backInside = {
       paths.cut.curve_(points.cbCutCp2, points.waistCenter)
     }
 
+    if (options.hem && !options.peplum) {
+      paths.hem = new Path()
+        .move(lacing ? points.lacingWaist : points.waistCenter)
+        .line(points.waistCenterHem)
+        .line(points.dartBottomLeftHem)
+        .line(points.dartBottomLeft)
+        .hide()
+      paths.hemFold = new Path()
+        .move(points.waistCenter)
+        .line(points.dartBottomLeft)
+        .addClass('note dashed')
+        .addText('hem', 'center note')
+    } else {
+      paths.hem = new Path().move(points.waistCenter).line(points.dartBottomLeft).hide()
+    }
+
     paths.seam = new Path()
       .move(points.strapInside)
       .join(paths.cut)
-      .line(points.dartBottomLeft)
+      .join(paths.hem)
       .curve(points.dartLeftCp, points.shoulderDartCpDown, points.dartTip)
       .curve(points.shoulderDartCpUp, points.shoulderDart, points.shoulderDart)
       .line(points.strapInside)

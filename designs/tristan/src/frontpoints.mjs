@@ -1,6 +1,23 @@
 import { frontPoints as nobleFrontPoints } from '@freesewing/noble'
 import { pctBasedOn, hidePresets } from '@freesewing/core'
 
+function stringify(obj) {
+  let cache = []
+  let str = JSON.stringify(obj, function (key, value) {
+    if (typeof value === 'object' && value !== null) {
+      if (cache.indexOf(value) !== -1) {
+        // Circular reference found, discard key
+        return
+      }
+      // Store value in our collection
+      cache.push(value)
+    }
+    return value
+  })
+  cache = null // reset the cache
+  return str
+}
+
 export const frontPoints = {
   name: 'tristan.frontPoints',
   from: nobleFrontPoints,
@@ -34,11 +51,24 @@ export const frontPoints = {
     cutRoundnessFront: { pct: 10, min: 0, max: 100, menu: 'style' },
     shoulderDartPosition: { pct: 50, min: 10, max: 90, menu: 'style' },
     strapWidth: { pct: 45, min: 5, max: 90, menu: 'style' },
+    hemSize: {
+      pct: 5.62,
+      min: 1,
+      max: 25,
+      // eslint-disable-next-line no-unused-vars
+      menu: (settings, mergedOptions) =>
+        mergedOptions.hem === false || mergedOptions.peplum === true ? false : 'options',
+    },
     upperDartLength: { pct: 90, min: 80, max: 95, menu: 'advanced' },
     waistDartLength: { pct: 90, min: 75, max: 95, menu: 'advanced' },
 
     // Options
     zipperLocation: { dflt: 'side', list: ['front', 'side', 'back'], menu: 'options' },
+    hem: {
+      bool: false,
+      // eslint-disable-next-line no-unused-vars
+      menu: (settings, mergedOptions) => (mergedOptions.peplum === true ? false : 'options'),
+    },
     lacing: { bool: false, menu: 'options' },
     lacingLocation: {
       dflt: 'back',
@@ -54,7 +84,7 @@ export const frontPoints = {
       menu: (settings, mergedOptions) => (mergedOptions.lacing === false ? false : 'options'),
     },
   },
-  draft: ({ points, Path, paths, snippets, options, macro, store, units, part }) => {
+  draft: ({ points, Path, paths, snippets, options, macro, store, utils, units, sa, part }) => {
     const lacing = true == options.lacing && 'front' == options.lacingLocation
 
     // Hide Noble paths
@@ -66,8 +96,11 @@ export const frontPoints = {
     macro('rmscalebox')
     macro('rmcutonfold')
 
+    points.sideWaist = points.sideHem.clone()
+    points.sideWaistInitial = points.sideHemInitial.clone()
+    points.cfWaist = points.cfHem.clone()
+
     store.cutlist.removeCut()
-    console.log({ t_store: JSON.parse(JSON.stringify(store)) })
 
     const shoulderWidthInside = points.shoulderDartInside.dist(points.hps)
     const shoulderWidthOutside = points.shoulderDartOutside.dist(points.shoulder)
@@ -95,11 +128,12 @@ export const frontPoints = {
 
     points.cfCut = points.cfNeck.shiftFractionTowards(points.cfBust, options.cutDepthFront)
 
-    points.cutSeamInside = new Path()
+    paths.cutSeamInside = new Path()
       .move(points.waistDartLeft)
       .curve(points.waistDartLeftCp, points.shoulderDartTipCpDownInside, points.shoulderDartTip)
       .line(points.shoulderDartInside)
-      .intersectsY(points.cfCut.y)[0]
+      .hide()
+    points.cutSeamInside = paths.cutSeamInside.intersectsY(points.cfCut.y)[0]
 
     points.cutSeamOutside = new Path()
       .move(points.waistDartRight)
@@ -144,8 +178,8 @@ export const frontPoints = {
     }
 
     // armhole adjustment
-    if (points.sideHem.y < points.waistDartRight.y) {
-      points.sideHem.y = points.waistDartRight.y
+    if (points.sideWaist.y < points.waistDartRight.y) {
+      points.sideWaist.y = points.waistDartRight.y
     }
 
     if (lacing) {
@@ -153,18 +187,69 @@ export const frontPoints = {
         0,
         (points.strapInsideCp.x - points.cfCut.x) * options.lacingWidth
       )
-      points.lacingHem = points.cfHem.shiftTowards(
+      points.lacingWaist = points.cfWaist.shiftTowards(
         points.waistDartLeft,
         (points.strapInsideCp.x - points.cfCut.x) * options.lacingWidth
       )
     }
 
-    store.set('frontOutsideWaistLength', points.waistDartRight.dist(points.sideHem))
+    if (options.hem && !options.peplum) {
+      const hemSize = points.cfWaist.dist(points.cfNeck) * options.hemSize
+      store.set('hemSize', hemSize)
+
+      points.cfHem = (lacing ? points.lacingCut : points.cfCut).shiftOutwards(
+        lacing ? points.lacingWaist : points.cfWaist,
+        hemSize
+      )
+      points.cfHemIn = (lacing ? points.lacingWaist : points.cfWaist).shiftTowards(
+        lacing ? points.lacingCut : points.cfCut,
+        hemSize
+      )
+      const waistDartLeftHemInTemp = points.cfHemIn.shift(
+        points.cfWaist.angle(points.waistDartLeft),
+        points.cfWaist.dist(points.waistDartLeft) * 1.5
+      )
+      points.waistDartLeftHem = utils.beamIntersectsCurve(
+        points.cfHemIn,
+        waistDartLeftHemInTemp,
+        points.waistDartLeft,
+        points.waistDartLeftCp,
+        points.shoulderDartTipCpDownInside,
+        points.shoulderDartTip
+      )
+
+      points.sideWaistHem = points.armhole.shiftOutwards(points.sideWaist, hemSize)
+      points.sideWaistHemIn = points.sideWaist.shiftTowards(points.armhole, hemSize)
+      const waistDartRightHemInTemp = points.sideWaistHemIn.shift(
+        points.sideWaist.angle(points.waistDartRight),
+        points.sideWaist.dist(points.waistDartRight) * 1.5
+      )
+      points.waistDartRightHem = utils.beamIntersectsCurve(
+        points.sideWaistHemIn,
+        waistDartRightHemInTemp,
+        points.waistDartRight,
+        points.waistDartRightCp,
+        points.waistUpDartRightCpDown,
+        points.waistUpDartRight
+      )
+      macro('mirror', {
+        clone: false,
+        mirror: [points.cfWaist, points.waistDartLeft],
+        points: ['waistDartLeftHem'],
+      })
+      macro('mirror', {
+        clone: false,
+        mirror: [points.sideWaist, points.waistDartRight],
+        points: ['waistDartRightHem'],
+      })
+    }
+
+    store.set('frontOutsideWaistLength', points.waistDartRight.dist(points.sideWaist))
     store.set(
       'frontInsideWaistLength',
-      points.waistDartLeft.dist(lacing ? points.lacingHem : points.cfHem)
+      points.waistDartLeft.dist(lacing ? points.lacingWaist : points.cfWaist)
     )
-    store.set('frontLength', points.cfNeck.dist(points.cfHem))
+    store.set('frontLength', points.cfNeck.dist(points.cfWaist))
 
     return part
   },

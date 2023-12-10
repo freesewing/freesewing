@@ -14,6 +14,8 @@ export const frontOutside = {
     delete points.bustB
     delete points.bustDartEdge
 
+    console.log({ points: JSON.parse(JSON.stringify(points)) })
+
     macro('rmcutonfold')
     store.cutlist.removeCut()
 
@@ -38,9 +40,26 @@ export const frontOutside = {
       .curve_(points.armholePitchCp2, points.shoulder)
       .hide()
 
+    if (options.hem && !options.peplum) {
+      paths.hem = new Path()
+        .move(points.waistDartRight)
+        .line(points.waistDartRightHem)
+        .line(points.sideWaistHem)
+        .line(points.sideWaist)
+        .hide()
+      paths.hemFold = new Path()
+        .move(points.waistDartRight)
+        .line(points.sideWaist)
+        .addClass('note dashed')
+        .addText('hem', 'center note')
+    } else {
+      paths.hem = new Path().move(points.waistDartRight).hide()
+    }
+
     paths.seam = new Path()
       .move(points.waistDartRight)
-      .line(points.sideHem)
+      .join(paths.hem)
+      .line(points.sideWaist)
       .line(points.armhole)
       .join(paths.cut)
       .line(points.shoulderDartOutside)
@@ -49,7 +68,7 @@ export const frontOutside = {
       .attr('class', 'fabric')
 
     points.grainTop = points.armhole.shift(225, 20)
-    points.grainBottom = points.sideHemInitial.shift(135, 20)
+    points.grainBottom = points.sideWaistInitial.shift(135, 20)
     macro('grainline', {
       from: points.grainBottom,
       to: points.grainTop,
@@ -72,7 +91,7 @@ export const frontOutside = {
     })
     points.gridAnchor = points.armholeCpTarget.clone()
 
-    points.scaleboxAnchor = points.titleAnchor.shiftFractionTowards(points.sideHem, 0.5)
+    points.scaleboxAnchor = points.titleAnchor.shiftFractionTowards(points.sideWaist, 0.5)
     points.scaleboxAnchor.x = points.titleAnchor.x
     macro('miniscale', { at: points.scaleboxAnchor })
 
@@ -82,19 +101,19 @@ export const frontOutside = {
     macro('hd', {
       from: points.waistDartRight,
       to: points.armholeOutsidePitchCp1,
-      y: points.sideHemInitial.y + sa + 35,
+      y: points.sideWaistInitial.y + sa + 35,
       id: 'dartToArmhole',
     })
     macro('hd', {
       from: points.waistDartRight,
-      to: points.sideHemInitial,
-      y: points.sideHemInitial.y + sa + 25,
+      to: points.sideWaistInitial,
+      y: points.sideWaistInitial.y + sa + 25,
       id: 'dartToSide',
     })
     macro('hd', {
       from: pLeft,
-      to: points.sideHemInitial,
-      y: points.sideHemInitial.y + sa + 15,
+      to: points.sideWaistInitial,
+      y: points.sideWaistInitial.y + sa + 15,
       id: 'leftToSide',
     })
     macro('hd', {
@@ -118,33 +137,33 @@ export const frontOutside = {
 
     macro('vd', {
       from: points.armholeOutsidePitchCp1,
-      to: points.sideHemInitial,
-      x: points.sideHemInitial.x + sa + 15,
-      id: 'hemToArmhole',
+      to: points.sideWaistInitial,
+      x: points.sideWaistInitial.x + sa + 15,
+      id: 'waistToArmhole',
     })
     macro('vd', {
       from: points.waistDartRight,
       to: pLeft,
       x: pLeft.x - sa - 15,
-      id: 'hemToLeft',
+      id: 'waistToLeft',
     })
     macro('vd', {
       from: points.strapOutside,
-      to: points.sideHemInitial,
-      x: points.sideHemInitial.x + sa + 25,
-      id: 'hemToShoulder',
+      to: points.sideWaistInitial,
+      x: points.sideWaistInitial.x + sa + 25,
+      id: 'waistToShoulder',
     })
     macro('vd', {
       from: points.shoulderDartOutside,
-      to: points.sideHemInitial,
+      to: points.sideWaistInitial,
       x: points.shoulderDartOutside.x,
-      id: 'sideHemToShoulderDart',
+      id: 'sideWaistToShoulderDart',
     })
     macro('vd', {
       from: points.waistDartRight,
       to: points.shoulderDartOutside,
       x: pLeft.x - sa - 25,
-      id: 'hemToShoulderDart',
+      id: 'waistToShoulderDart',
     })
     macro('vd', {
       from: points.snippet,
@@ -152,9 +171,6 @@ export const frontOutside = {
       x: pLeft.x - sa - 15,
       id: 'shoulderDartToDartPoint',
     })
-
-    // console.log({part:JSON.parse(JSON.stringify(part))})
-    console.log({ store: JSON.parse(JSON.stringify(store)) })
 
     return part
   },

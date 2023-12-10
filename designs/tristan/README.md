@@ -48,7 +48,7 @@
 
 # @freesewing/tristan
 
-A FreeSewing pattern that needs a description
+A FreeSewing pattern for a fitted top
 
 
 
