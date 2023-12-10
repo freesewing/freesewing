@@ -289,12 +289,13 @@ org:
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': *mdxRuntime
+    "@tailwindcss/nesting": &twnesting "^0.0.0-insiders.565cd3e"
     '@tailwindcss/typography': *tailwindTypography
     'algoliasearch': *algoliasearch
     'react-copy-to-clipboard': *reactCopyToClipboard
     'daisyui': *daisyui
-    'echarts': 5.4.2
-    'echarts-for-react': 3.0.2
+    'echarts': &echarts 5.4.2
+    'echarts-for-react': &echartsReact 3.0.2
     'jotai': &jotai '2.6.0'
     'jotai-location': &jotai-location '0.5.1'
     'lodash.get': *_get
@@ -388,6 +389,7 @@ sde:
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': *mdxRuntime
+    "@tailwindcss/nesting": *twnesting
     '@tailwindcss/typography': *tailwindTypography
     'autoprefixer': *autoprefixer
     'axios': &axios
@@ -395,6 +397,8 @@ sde:
     'd3-drag': *d3drag
     'd3-selection': *d3selection
     'daisyui': *daisyui
+    'echarts': *echarts
+    'echarts-for-react': *echartsReact
     'file-saver': *filesaver
     'i18next': *i18next
     'jotai': *jotai
@@ -424,6 +428,7 @@ sde:
     'remark-smartypants': *smartypants
     "slugify": *slugify
     'svg-to-pdfkit': *svgtopdfkit
+    'tailwindcss': *tailwindcss
     'tlds': *rlds
     'use-local-storage-state': *use-local-storage-state
     'web-worker': *webworker
