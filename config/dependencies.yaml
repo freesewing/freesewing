@@ -382,6 +382,7 @@ sde:
     "@freesewing/bella": *freesewing
     "@freesewing/breanna": *freesewing
     "@freesewing/plugin-bust": *freesewing
+    "@freesewing/plugin-timing": *freesewing
     "@freesewing/plugin-theme": *freesewing
     "@freesewing/plugin-i18n": *freesewing
     "@freesewing/snapseries": *freesewing

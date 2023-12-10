@@ -35,6 +35,7 @@
     "@freesewing/bella": "3.0.0",
     "@freesewing/breanna": "3.0.0",
     "@freesewing/plugin-bust": "3.0.0",
+    "@freesewing/plugin-timing": "3.0.0",
     "@freesewing/plugin-theme": "3.0.0",
     "@freesewing/plugin-i18n": "3.0.0",
     "@freesewing/snapseries": "3.0.0",

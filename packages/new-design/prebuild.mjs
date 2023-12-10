@@ -91,6 +91,7 @@ const buildFileList = async () => {
     '../../sites/shared/config',
     '../../sites/shared/context',
     '../../sites/shared/hooks',
+    '../../sites/shared/mdx',
     '../../sites/shared/plugins',
     '../../sites/shared/styles',
     '../../sites/shared/themes',
