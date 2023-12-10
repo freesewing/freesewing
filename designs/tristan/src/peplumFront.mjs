@@ -2,17 +2,15 @@ import { backPoints } from './backpoints.mjs'
 import { plugin as ringsectorPlugin } from '@freesewing/plugin-ringsector'
 
 export const CreateShape = ({
-  Point,
   points,
   paths,
   options,
   macro,
+  store,
   sa,
   type,
-  store,
   radius,
   width,
-  offset,
   ratio,
 }) => {
   const double =

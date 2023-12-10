@@ -84,7 +84,7 @@ export const frontPoints = {
       menu: (settings, mergedOptions) => (mergedOptions.lacing === false ? false : 'options'),
     },
   },
-  draft: ({ points, Path, paths, snippets, options, macro, store, utils, units, sa, part }) => {
+  draft: ({ points, Path, paths, snippets, options, macro, store, utils, units, part }) => {
     const lacing = true == options.lacing && 'front' == options.lacingLocation
 
     // Hide Noble paths
@@ -178,9 +178,9 @@ export const frontPoints = {
     }
 
     // armhole adjustment
-    if (points.sideWaist.y < points.waistDartRight.y) {
-      points.sideWaist.y = points.waistDartRight.y
-    }
+    // if (points.sideWaist.y < points.waistDartRight.y) {
+    //   points.sideWaist.y = points.waistDartRight.y
+    // }
 
     if (lacing) {
       points.lacingCut = points.cfCut.shift(
@@ -250,6 +250,7 @@ export const frontPoints = {
       points.waistDartLeft.dist(lacing ? points.lacingWaist : points.cfWaist)
     )
     store.set('frontLength', points.cfNeck.dist(points.cfWaist))
+    store.set('sideSeamLength', points.armhole.dist(points.sideWaist))
 
     return part
   },

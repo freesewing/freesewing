@@ -56,6 +56,7 @@ export const backOutside = {
       to: points.grainlineTo,
     })
 
+    store.cutlist.removeCut('fabric')
     store.cutlist.addCut({ cut: 2, from: 'fabric' })
 
     if (sa) {
