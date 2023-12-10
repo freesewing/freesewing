@@ -36,6 +36,7 @@ const OauthCallbackPage = ({ page, provider }) => {
       const state = urlParams.get('state')
       const code = urlParams.get('code')
       const result = await backend.oauthSignIn({ state, code, provider })
+      console.log({ state, code, result })
       if (result.data?.account && result.data?.token) {
         setAccount(result.data.account)
         setToken(result.data.token)

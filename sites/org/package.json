@@ -44,7 +44,7 @@
     "lodash.get": "4.4.2",
     "lodash.orderby": "4.6.0",
     "lodash.set": "4.3.2",
-    "luxon": "3.4.4",
+    "luxon": "3.4.3",
     "next": "14.0.4",
     "ora": "7.0.1",
     "react-dropzone": "14.2.3",
