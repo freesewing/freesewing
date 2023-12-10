@@ -105,10 +105,9 @@ export const Workbench = ({ design, Design, saveAs = false, preload = false }) =
   // Handle preload
   useEffect(() => {
     if (preload) {
-      // This will run a few times while variouos things bootstrap
+      // This will run a few times while things bootstrap
       // but should not run after that.
-      if (preload.settings && preloaded < 3) {
-        console.log('preloading settings', { mounted, preloaded })
+      if (preload.settings && preloaded < 2) {
         setSettings(preload.settings)
         setView('draft')
         setPreloaded(preloaded + 1)

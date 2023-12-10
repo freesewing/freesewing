@@ -13,3 +13,4 @@ Je moet dit iets onder je kruis meten, zie de illustratie als richtlijn. Zorg da
 Deze metingen worden ook gebruikt als **een verticale referentie** om de verticale ruimte te bepalen waarin de zit/kruis van een broek geklaard wordt. Daarom is de verticale locatie van deze meting belangrijk.
 
 </Tip>
+<MeasieImage />

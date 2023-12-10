@@ -15,3 +15,4 @@ Of, als je niet zeker weet waar de lymfeklieren onder je arm zitten, kun je deze
 - Je wijsvinger zit nu in de oksel, wat iets te hoog is. Maar je middelvinger is een goede plek om te markeren als het begin van je oksel.
 
 
+<MeasieImage />

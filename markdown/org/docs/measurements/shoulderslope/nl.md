@@ -20,3 +20,4 @@ Het zal niet worden weergegeven voor casual garments, en voor formele draagwijdt
 asymmetrische schoudervullingen toe te voegen, in plaats van een asymmetrisch patroon te creëren.
 
 </Note>
+<MeasieImage />

@@ -8,7 +8,7 @@ Es ist die parametrische Version eines Basisblocks für Damenmode, der in der it
 
 Du kannst hier also sehr weit kommen, vor allem, wenn du nicht zu den schlanken Frauen gehörst, für die Italienerinnen entwerfen.
 
-Weitere Hintergrundinformationen findest du unter [und in dieser FAQ zu den Blöcken für Damenbekleidung](/docs/faq/womenswear-blocks).
+Mehr Hintergrundinformationen findest du in den [FAQs zu den Damenbekleidungs-Grundschnitten ](/docs/about/faq/womenswear-blocks).
 
 joost
 

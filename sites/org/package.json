@@ -28,7 +28,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "@bugsnag/js": "7.22.2",
+    "@bugsnag/js": "7.20.2",
     "@bugsnag/plugin-react": "7.19.0",
     "@mdx-js/mdx": "^3.0.0",
     "@mdx-js/react": "^3.0.0",
@@ -40,12 +40,12 @@
     "echarts": "5.4.2",
     "echarts-for-react": "3.0.2",
     "jotai": "2.6.0",
-    "jotai-location": "0.5.2",
+    "jotai-location": "0.5.1",
     "lodash.get": "4.4.2",
     "lodash.orderby": "4.6.0",
     "lodash.set": "4.3.2",
-    "luxon": "3.4.3",
-    "next": "13.5.4",
+    "luxon": "3.4.4",
+    "next": "14.0.4",
     "ora": "7.0.1",
     "react-dropzone": "14.2.3",
     "react-hotkeys-hook": "4.4.1",
@@ -62,7 +62,7 @@
     "remark-gfm": "4.0.0",
     "remark-mdx-frontmatter": "4.0.0",
     "strip-markdown": "6.0.0",
-    "use-persisted-state": "0.3.3",
+    "use-local-storage-state": "19.1.0",
     "yaml-loader": "0.8.0"
   },
   "devDependencies": {
