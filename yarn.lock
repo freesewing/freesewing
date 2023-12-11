@@ -4403,7 +4403,7 @@ cross-spawn@^7.0.0, cross-spawn@^7.0.1, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-crypto-js@^4.0.0:
+crypto-js@^4.0.0, crypto-js@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-4.2.0.tgz#4d931639ecdfd12ff80e8186dba6af2c2e856631"
   integrity sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==
@@ -8777,10 +8777,10 @@ lru-cache@^7.4.4, lru-cache@^7.5.1, lru-cache@^7.7.1:
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-10.0.1.tgz#0a3be479df549cca0e5d693ac402ff19537a6b7a"
   integrity sha512-IJ4uwUTi2qCccrioU6g9g/5rvvVl13bsdczUUcqbciD9iLr095yj8DQKdObriEvuNSx325N1rV1O0sJFszx75g==
 
-luxon@3.4.3:
-  version "3.4.3"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.4.3.tgz#8ddf0358a9492267ffec6a13675fbaab5551315d"
-  integrity sha512-tFWBiv3h7z+T/tDaoxA8rqTxy1CHV6gHS//QdaH4pulbq/JuBSGgQspQQqcgnwdAx6pNI7cmvz5Sv/addzHmUg==
+luxon@3.4.4:
+  version "3.4.4"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.4.4.tgz#cf20dc27dc532ba41a169c43fdcc0063601577af"
+  integrity sha512-zobTr7akeGHnv7eBOXcRgMeCP6+uyYsczwmeRCauvpvaAltgNyTbLH/+VaEAPUeWBT+1GuNmz4wC/6jtQzbbVA==
 
 magic-string@^0.25.3:
   version "0.25.9"
@@ -11196,6 +11196,16 @@ pdfkit@0.13.0:
     linebreak "^1.0.2"
     png-js "^1.0.0"
 
+pdfkit@0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/pdfkit/-/pdfkit-0.14.0.tgz#1416633d48b1271b8059e7f0f7675635fd42a53e"
+  integrity sha512-Hnor8/78jhHm6ONrxWhrqOwAVALlBnFyWOF8sstBZMiqHZgZ5A6RU+Q3yahhw82plxpT7LOfH3b3qcOX6rzMQg==
+  dependencies:
+    crypto-js "^4.2.0"
+    fontkit "^1.8.1"
+    linebreak "^1.0.2"
+    png-js "^1.0.0"
+
 peberminta@^0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/peberminta/-/peberminta-0.9.0.tgz#8ec9bc0eb84b7d368126e71ce9033501dca2a352"
@@ -11438,9 +11448,9 @@ prettier@^2:
   integrity sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==
 
 prettier@^3.0.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.1.0.tgz#c6d16474a5f764ea1a4a373c593b779697744d5e"
-  integrity sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.1.1.tgz#6ba9f23165d690b6cbdaa88cb0807278f7019848"
+  integrity sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==
 
 pretty-format@^29.7.0:
   version "29.7.0"
@@ -13439,6 +13449,11 @@ tlds@1.242.0:
   version "1.242.0"
   resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.242.0.tgz#da136a9c95b0efa1a4cd57dca8ef240c08ada4b7"
   integrity sha512-aP3dXawgmbfU94mA32CJGHmJUE1E58HCB1KmlKRhBNtqBL27mSQcAEmcaMaQ1Za9kIVvOdbxJD3U5ycDy7nJ3w==
+
+tlds@1.247.0:
+  version "1.247.0"
+  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.247.0.tgz#8ba5a8b77f87e5ea215c0dc14a16a67c211e5d79"
+  integrity sha512-m9G0j6euzOucY3Auzl2/SAnGXJVFA1ibJDRBqUdAx7o4jzMidCCKZXWNQVBDcx5zHISJl1r5yA8aaS6WfWuKMQ==
 
 tmp@^0.0.33:
   version "0.0.33"
