@@ -29,6 +29,7 @@ export const shape = {
 
     // Booleans
     waistband: { bool: true, menu: 'style' },
+    backgusset: { bool: true, menu: 'style' },
     cyclingchamois: { bool: false, menu: 'style' },
     frontbulge: {
       bool: false,
@@ -37,9 +38,9 @@ export const shape = {
     },
 
     // Percentages
-    ease: { pct: -10, min: -30, max: 0, menu: 'fit' },
+    ease: { pct: -5, min: -30, max: 0, menu: 'fit' },
     leglength: { pct: 100, min: 10, max: 100, ...pctBasedOn('inseam'), menu: 'style' },
-    waistlowering: { pct: 35, min: 0, max: 60, ...pctBasedOn('waistToHips'), menu: 'style' },
+    waistlowering: { pct: 35, min: -10, max: 60, ...pctBasedOn('waistToHips'), menu: 'style' },
     gussetwidth: {
       pct: 16,
       min: 5,
@@ -66,7 +67,7 @@ export const shape = {
       menu: (settings, mergedOptions) => (mergedOptions?.waistband ? 'style' : false),
     },
     waistreduction: {
-      pct: 1,
+      pct: 2,
       min: 0,
       max: 10,
       ...pctBasedOn('waist'),
@@ -89,20 +90,27 @@ export const shape = {
     const backGussetWidth = options.backgussetwidth * 2.34
     const frontGussetLength = measurements.crossSeamFront * options.frontgussetlength
     const frontBulge = options.cyclingchamois ? true : options.frontbulge
+    const backGussetLength = measurements.crossSeamFront * options.frontgussetlength
+    const backGusset = options.cyclingchamois ? true : options.backgusset
 
     store.set('waistLowering', waistLowering)
     store.set('waistReduction', waistReduction)
     store.set('waistbandSize', waistbandSize)
     store.set('gussetWidth', gussetWidth)
     store.set('frontGussetLength', frontGussetLength)
+    store.set('backGussetLength', backGussetLength)
 
     const ReduceWaist = (pathName, pointName, distance) => {
-      const newPoint = paths[pathName].shiftAlong(distance)
+      const path = ExtendPath(paths[pathName], 100, 0)
+      const newPoint = path.shiftAlong(distance + 100)
+      // const path = paths[pathName].clone()
+      // const newPoint = path.shiftAlong(distance)
+      // const newPoint = paths[pathName].shiftAlong(distance)
       if (newPoint.sitsRoughlyOn(points[pathName + 'Waist'])) {
         return
       }
       points[pathName + pointName] = newPoint
-      const pTemp = paths[pathName].split(points[pathName + pointName])
+      const pTemp = path.split(points[pathName + pointName])
       if (pTemp.length != 2) {
         log.info('couldNotReduceWaist')
         return
@@ -136,12 +144,72 @@ export const shape = {
         if (cp.cp2) points[names[i] + 'Cp2'] = cp.cp2
       }
     }
-    const ExtendPath = (path, length = 100) => {
+    const ExtendPath = (path, startLength = 100, endLength = 100) => {
       return new Path()
-        .move(path.shiftAlong(1).shiftOutwards(path.start(), length))
+        .move(path.shiftAlong(1).shiftOutwards(path.start(), startLength))
         .line(path.start())
         .join(path)
-        .line(path.shiftAlong(path.length() - 1).shiftOutwards(path.end(), length))
+        .line(path.shiftAlong(path.length() - 1).shiftOutwards(path.end(), endLength))
+    }
+    const CreateGusset = (side, gussetLength) => {
+      points[side + 'GussetCp'] = points[side + 'Gusset'].shiftFractionTowards(
+        points.centerUpperLeg,
+        0.1
+      )
+      const x1 = side == 'front' ? points[side + 'GussetJoin'].x : points[side + 'Gusset'].x
+      const x2 = side == 'front' ? points[side + 'Gusset'].x : points[side + 'GussetJoin'].x
+      if (points[side + 'GussetCp'].x < x1) {
+        points[side + 'GussetCp'].x = points[side + 'GussetJoin'].x
+      }
+      if (points[side + 'GussetCp'].x > x2) {
+        points[side + 'GussetCp'].x = points[side + 'Gusset'].x
+      }
+
+      const pGusset = new Path()
+        .move(points[side + 'GussetJoin'])
+        ._curve(points[side + 'GussetCp'], points[side + 'Gusset'])
+        .hide()
+      const pGussetPoint = pGusset.shiftAlong(1)
+      const path = new Path()
+        .move(points[side + 'Waist'])
+        ._curve(points[side + 'UpperLegCp2'], points[side + 'UpperLeg'])
+        .hide()
+      const pPoint = path.shiftAlong(1)
+
+      const angle1 =
+        side == 'front'
+          ? points[side + 'GussetJoin'].angle(pGussetPoint)
+          : pPoint.angle(points[side + 'GussetJoin'])
+      const angle2 =
+        side == 'front'
+          ? pPoint.angle(points[side + 'GussetJoin'])
+          : points[side + 'GussetJoin'].angle(pGussetPoint)
+      console.log({ s: side, a1: angle1, a2: angle2 })
+      if (angle1 > angle2) {
+        points[side + 'GussetJoinCp'] = points[side + 'GussetJoin'].shift(
+          pPoint.angle(points[side + 'GussetJoin']),
+          gussetLength - gussetWidth
+        )
+      } else {
+        points[side + 'GussetJoinCp'] = points[side + 'GussetJoin'].clone()
+      }
+
+      paths[side + 'Gusset'] = new Path()
+        .move(points[side + 'GussetJoin'])
+        .curve(points[side + 'GussetJoinCp'], points[side + 'GussetCp'], points[side + 'Gusset'])
+        .hide()
+      const frontTemp = paths[side].reverse().shiftAlong(gussetLength - 1)
+      const gussetTemp = paths[side].shiftAlong(1)
+      const gussetAngle = Math.abs(
+        points[side + 'GussetJoin'].angle(gussetTemp) - frontTemp.angle(points[side + 'GussetJoin'])
+      )
+      store.set(side + 'GussetAngle', gussetAngle * 2)
+
+      paths[side + 'Top'] = paths[side].split(points[side + 'GussetJoin'])[0].hide()
+      paths[side] = paths[side + 'Top']
+        .clone()
+        .join(paths[side + 'Gusset'])
+        .hide()
     }
 
     const seatBackFrontRatio = measurements.seatBack / measurements.seatFront
@@ -260,6 +328,7 @@ export const shape = {
     points.backGusset = points.backUpperLeg.shiftTowards(points.backKnee, gussetWidth)
 
     points.frontGussetJoin = paths.front.reverse().shiftAlong(frontGussetLength)
+    points.backGussetJoin = paths.back.reverse().shiftAlong(backGussetLength)
 
     if (frontBulge) {
       paths.front = ExtendPath(paths.front.offset(gussetWidth)).hide()
@@ -285,48 +354,7 @@ export const shape = {
         paths.front = paths.front.split(points.frontGusset)[0].hide()
       }
     } else {
-      points.frontGussetCp = points.frontGusset.shiftFractionTowards(points.centerUpperLeg, 0.1)
-      if (points.frontGussetCp.x < points.frontGussetJoin.x) {
-        points.frontGussetCp.x = points.frontGussetJoin.x
-      }
-      if (points.frontGussetCp.x > points.frontGusset.x) {
-        points.frontGussetCp.x = points.frontGusset.x
-      }
-
-      const pFrontGusset = new Path()
-        .move(points.frontGussetJoin)
-        ._curve(points.frontGussetCp, points.frontGusset)
-        .hide()
-      const pFrontGussetPoint = pFrontGusset.shiftAlong(1)
-      const pFront = new Path()
-        .move(points.frontWaist)
-        ._curve(points.frontUpperLegCp2, points.frontUpperLeg)
-        .hide()
-      const pFrontPoint = pFront.shiftAlong(1)
-      if (
-        points.frontGussetJoin.angle(pFrontGussetPoint) > pFrontPoint.angle(points.frontGussetJoin)
-      ) {
-        points.frontGussetJoinCp = points.frontGussetJoin.shift(
-          pFrontPoint.angle(points.frontGussetJoin),
-          frontGussetLength - gussetWidth
-        )
-      } else {
-        points.frontGussetJoinCp = points.frontGussetJoin.clone()
-      }
-
-      paths.frontGusset = new Path()
-        .move(points.frontGussetJoin)
-        .curve(points.frontGussetJoinCp, points.frontGussetCp, points.frontGusset)
-        .hide()
-      const frontTemp = paths.front.reverse().shiftAlong(frontGussetLength - 1)
-      const frontGussetTemp = paths.front.shiftAlong(1)
-      const frontGussetAngle = Math.abs(
-        points.frontGussetJoin.angle(frontGussetTemp) - frontTemp.angle(points.frontGussetJoin)
-      )
-      store.set('frontGussetAngle', frontGussetAngle * 2)
-
-      paths.frontTop = paths.front.split(points.frontGussetJoin)[0].hide()
-      paths.front = paths.frontTop.clone().join(paths.frontGusset).hide()
+      CreateGusset('front', frontGussetLength)
     }
     store.set('frontLength', paths.front.length())
     ;['front', 'back'].forEach((prefix) => {
@@ -384,43 +412,47 @@ export const shape = {
 
     store.set('waistLength', paths.waist.length())
 
-    const backHips = paths.back.shiftFractionAlong(0.99)
-    const backHipsAngle = points.backHips.angle(backHips) + 90
+    if (backGusset) {
+      // paths.back1 = paths.back.clone().unhide().setClass('note')
+      const backHips = paths.back.shiftFractionAlong(0.99)
+      const backHipsAngle = points.backHips.angle(backHips) + 90
 
-    points.backUpperLegToHips = new Point(points.backHips.x, points.backUpperLeg.y)
-    points.backCircleMiddle = points.backHips.shiftFractionTowards(points.backUpperLegToHips, 0.5)
+      points.backUpperLegToHips = new Point(points.backHips.x, points.backUpperLeg.y)
+      points.backCircleMiddle = points.backHips.shiftFractionTowards(points.backUpperLegToHips, 0.5)
 
-    points.backCircleHipsCp1 = points.backHips.shift(
-      backHipsAngle,
-      measurements.hips * 0.25 * 0.5 * ease * backGussetWidth
-    )
+      points.backCircleHipsCp1 = points.backHips.shift(
+        backHipsAngle,
+        measurements.hips * 0.25 * 0.5 * ease * backGussetWidth
+      )
 
-    points.backCircleUpperLegCp1 = points.backUpperLegToHips.shift(
-      0,
-      measurements.upperLeg * 0.25 * ease * backGussetWidth
-    )
+      points.backCircleUpperLegCp1 = points.backUpperLegToHips.shift(
+        0,
+        measurements.upperLeg * 0.25 * ease * backGussetWidth
+      )
 
-    paths.back = paths.back.split(points.backHips)[0].hide()
+      paths.back = paths.back.split(points.backHips)[0].hide()
 
-    paths.backTempCircle = new Path()
-      .move(points.backHips)
-      .curve(points.backCircleHipsCp1, points.backCircleUpperLegCp1, points.backUpperLeg)
-      .hide()
+      paths.backTempCircle = new Path()
+        .move(points.backHips)
+        .curve(points.backCircleHipsCp1, points.backCircleUpperLegCp1, points.backUpperLeg)
+        .hide()
 
-    points.backCircleGusset = paths.backTempCircle.intersects(paths.backTempGusset)[1]
-    const pathBackGusset = paths.backTempGusset.split(points.backCircleGusset)
-    if (undefined !== pathBackGusset[1].ops) {
-      paths.backGusset = paths.backTempGusset.split(points.backCircleGusset)[1].hide()
+      points.backCircleGusset = paths.backTempCircle.intersects(paths.backTempGusset)[1]
+      const pathBackGusset = paths.backTempGusset.split(points.backCircleGusset)
+      if (undefined !== pathBackGusset[1].ops) {
+        paths.backGusset = paths.backTempGusset.split(points.backCircleGusset)[1].hide()
+      } else {
+        paths.backGusset = paths.backTempGusset.clone()
+      }
+      paths.backCircle = paths.backTempCircle.split(points.backCircleGusset)[0].hide()
+
+      paths.backGusset = paths.backGusset.split(points.backGusset)[0].hide()
+
+      store.set('backGussetLength', paths.backGusset.length())
+      store.set('backCircleLength', paths.backCircle.length())
     } else {
-      paths.backGusset = paths.backTempGusset.clone()
+      CreateGusset('back', backGussetLength)
     }
-    paths.backCircle = paths.backTempCircle.split(points.backCircleGusset)[0].hide()
-
-    paths.backGusset = paths.backGusset.split(points.backGusset)[0].hide()
-
-    store.set('backGussetLength', paths.backGusset.length())
-    store.set('backCircleLength', paths.backCircle.length())
-
     // console.log({ points: JSON.parse(JSON.stringify(points)) })
     // console.log({ paths: JSON.parse(JSON.stringify(paths)) })
     // console.log({ store: JSON.parse(JSON.stringify(store)) })
@@ -430,6 +462,17 @@ export const shape = {
     log.info('The lumira.shape part took ' + shapeTook + ' ms to draft.')
 
     log.info(JSON.stringify(store.timing))
+
+    // for (const pathName in paths) {
+    //   var path = paths[pathName]
+    //   path.unhide()
+    //   path.setText(pathName)
+    // }
+
+    // points.backWaist.addCircle(5).addCircle(10)
+    // points.backHips.addCircle(3).addCircle(6).addCircle(9)
+
+    console.log({ m: measurements.waistToHips, d: points.backWaist.dist(points.backHips) })
 
     return part
   },

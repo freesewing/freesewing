@@ -55,8 +55,31 @@ export const gusset = {
     const gussetWidth = store.get('gussetWidth')
     const backCircleLength = store.get('backCircleLength')
     const backGussetLength = store.get('backGussetLength')
+    const frontGussetLength = store.get('frontGussetLength')
     const ease = 1 + options.ease
     const frontBulge = options.cyclingchamois ? true : options.frontbulge
+    const backGusset = options.cyclingchamois ? true : options.backgusset
+
+    const CreateGusset = (side) => {
+      const gussetAngle = store.get(side + 'GussetAngle') * 0.5 * (side == 'front' ? 1 : -1)
+      const gussetLength = store.get(side + 'GussetLength')
+      console.log({ gussetAngle: gussetAngle, gussetLength: gussetLength })
+      points[side + 'Center'] = points.centerCenter.shift(side == 'front' ? 270 : 90, gussetLength)
+      points[side + 'CenterCp'] = points[side + 'Center'].shift(
+        (side == 'front' ? 90 : 270) - gussetAngle,
+        gussetLength / 3
+      )
+      points[side + 'OutsideCenterCp'] = points.outsideCenter.shift(
+        side == 'front' ? 270 : 90,
+        gussetLength / 3
+      )
+
+      paths[side] = new Path()
+        .move(points[side + 'Center'])
+        .curve(points[side + 'CenterCp'], points[side + 'OutsideCenterCp'], points.outsideCenter)
+        .hide()
+    }
+
     if (options.frontbulgesize > options.gussetwidth * 0.9) {
       options.frontbulgesize = options.gussetwidth * 0.9
 
@@ -83,54 +106,87 @@ export const gusset = {
         : options.frontbulgesize) * measurements.crossSeamFront
     const backInsertGussetCpAngle = options.cyclingchamois ? 0 : 90 * options.buttlift
 
-    points.backInsertCenterTop = new Point(0, 0)
-    points.backInsertOutsideGusset = points.backInsertCenterTop
-      .shift(
-        270,
-        measurements.crossSeamBack - measurements.waistToHips - waistLowering - backGussetLength
-      )
-      .shift(0, gussetWidth)
-    points.backInsertCenterGusset = new Point(0, points.backInsertOutsideGusset.y)
+    points.centerCenter = new Point(0, 0)
+    points.outsideCenter = points.centerCenter.shift(0, gussetWidth)
 
-    points.backInsertCenterSeat = points.backInsertCenterTop.shift(
-      270,
-      measurements.waistToSeat - waistLowering
-    )
-    points.backInsertCenterTopCp1 = points.backInsertCenterTop.shift(
-      options.backinserttopcpangle,
-      measurements.hips * 0.25 * ease * options.backinserttopcp
-    )
-
-    points.backInsertOutsideGussetCp1 = points.backInsertOutsideGusset.shift(
-      backInsertGussetCpAngle,
-      measurements.upperLeg * 0.25 * ease * options.backinsertgussetcp
-    )
-
-    var diff = 0
-    var iter = 0
-    do {
-      points.backInsertCenterTopCp1 = points.backInsertCenterTopCp1.shift(
-        options.backinserttopcpangle,
-        diff * (options.backinserttopcp / options.backinsertgussetcp)
-      )
-      points.backInsertOutsideGussetCp1 = points.backInsertOutsideGussetCp1.shift(
-        backInsertGussetCpAngle,
-        diff * (options.backinsertgussetcp / options.backinserttopcp)
-      )
-
-      paths.backInsertCircle = new Path()
-        .move(points.backInsertCenterTop)
-        .curve(
-          points.backInsertCenterTopCp1,
-          points.backInsertOutsideGussetCp1,
-          points.backInsertOutsideGusset
+    if (backGusset) {
+      points.outsideBackCircleStart = points.outsideCenter.shift(90, backGussetLength)
+      points.centerBackCircleEnd = points.outsideBackCircleStart
+        .shift(
+          90,
+          measurements.crossSeamBack - measurements.waistToHips - waistLowering - backGussetLength
         )
-        .hide()
-      diff = backCircleLength - paths.backInsertCircle.length()
-    } while (iter++ < 50 && (diff > 1 || diff < -1))
+        .shift(180, gussetWidth)
 
-    points.backInsertOutsideBottom = points.backInsertOutsideGusset.shift(270, backGussetLength)
-    points.backInsertCenterBottom = points.backInsertOutsideBottom.shift(180, gussetWidth)
+      points.centerBackCircleStart = new Point(0, points.outsideBackCircleStart.y)
+
+      points.backInsertCenterSeat = points.centerBackCircleEnd.shift(
+        270,
+        measurements.waistToSeat - waistLowering
+      )
+      points.centerBackCircleEndCp1 = points.centerBackCircleEnd.shift(
+        options.backinserttopcpangle,
+        measurements.hips * 0.25 * ease * options.backinserttopcp
+      )
+
+      points.outsideBackCircleStartCp1 = points.outsideBackCircleStart.shift(
+        backInsertGussetCpAngle,
+        measurements.upperLeg * 0.25 * ease * options.backinsertgussetcp
+      )
+
+      var diff = 0
+      var iter = 0
+      do {
+        points.centerBackCircleEndCp1 = points.centerBackCircleEndCp1.shift(
+          options.backinserttopcpangle,
+          diff * (options.backinserttopcp / options.backinsertgussetcp)
+        )
+        points.outsideBackCircleStartCp1 = points.outsideBackCircleStartCp1.shift(
+          backInsertGussetCpAngle,
+          diff * (options.backinsertgussetcp / options.backinserttopcp)
+        )
+
+        paths.backInsertCircle = new Path()
+          .move(points.centerBackCircleEnd)
+          .curve(
+            points.centerBackCircleEndCp1,
+            points.outsideBackCircleStartCp1,
+            points.outsideBackCircleStart
+          )
+          .hide()
+        diff = backCircleLength - paths.backInsertCircle.length()
+      } while (iter++ < 50 && (diff > 1 || diff < -1))
+
+      const pathBack = new Path()
+        .move(points.centerBackCircleEnd)
+        .curve(
+          points.centerBackCircleEndCp1,
+          points.outsideBackCircleStartCp1,
+          points.outsideBackCircleStart
+        )
+
+      paths.back = new Path()
+        .move(points.centerBackCircleEnd)
+        .join(pathBack)
+        .line(points.outsideCenter)
+        .hide()
+
+      points.title = pathBack
+        .shiftFractionAlong(0.75)
+        .shiftFractionTowards(points.centerBackCircleEnd, 0.5)
+
+      snippets.circle4 = new Snippet('notch', points.outsideBackCircleStart)
+      snippets.circle3 = new Snippet('notch', pathBack.shiftFractionAlong(0.25))
+      snippets.circle2 = new Snippet('notch', pathBack.shiftFractionAlong(0.5))
+      snippets.circle1 = new Snippet('notch', pathBack.shiftFractionAlong(0.75))
+      snippets.circle0 = new Snippet('notch', points.centerBackCircleEnd)
+
+      points.backCenter = points.centerBackCircleEnd.clone()
+    } else {
+      CreateGusset('back')
+
+      points.title = points.centerCenter.shiftFractionTowards(points.outsideCenter, 0.5)
+    }
 
     if (frontBulge) {
       const bulgeSplitForward = measurements.crossSeamFront * options.frontbulgeforwardpercentage
@@ -149,7 +205,7 @@ export const gusset = {
         })
         rotateAngle = 90
       }
-      points.frontOutsideSplit = points.backInsertOutsideBottom.shift(270, bulgeSplitForward)
+      points.frontOutsideSplit = points.outsideCenter.shift(270, bulgeSplitForward)
       points.frontCenterSplit = points.frontOutsideSplit.shift(180, gussetWidth)
       points.frontOutside = points.frontOutsideSplit.shift(270 + rotateAngle, frontLength)
 
@@ -179,12 +235,16 @@ export const gusset = {
         measurements.waistToHips - waistLowering - waistbandSize
       )
       const frontCenterAngle = points.frontOutside.angle(points.frontOutsideHips) - 90
-      points.frontCenterOutside = points.frontOutside.shift(180 + frontCenterAngle, gussetWidth)
+      points.frontoutsideCenter = points.frontOutside.shift(180 + frontCenterAngle, gussetWidth)
       points.frontCenterHips = points.frontOutsideHips.shift(180 + frontCenterAngle, gussetWidth)
 
-      const gussetCpLength = points.backInsertCenterGusset.dist(points.backInsertCenterBottom)
+      console.log({ points: JSON.parse(JSON.stringify(points)) })
 
-      points.backInsertCenterBottomCp = points.backInsertCenterBottom.shift(
+      points.outsideBackCircleStart = points.outsideCenter.shift(90, backGussetLength)
+
+      const gussetCpLength = frontGussetLength
+
+      points.centerCenterCp = points.centerCenter.shift(
         270,
         gussetCpLength * 1
         // gussetCpLength * options.frontbulgelift
@@ -230,7 +290,7 @@ export const gusset = {
         }
 
         const frontGussetPath = new Path()
-          .move(points.frontCenterOutside)
+          .move(points.frontoutsideCenter)
           .line(points.frontCenterHips)
           .curve(points.frontCenterHipsCp, points.frontCenterMiddleCp2, points.frontCenterMiddle)
           .curve(points.frontCenterMiddleCp1, points.frontCenterSplitCp, points.frontCenterSplit)
@@ -242,7 +302,7 @@ export const gusset = {
         log.info('couldNotFitFrontGussetPath')
       }
 
-      const frontGussetAngle = points.frontCenterMiddle.angle(points.backInsertCenterBottom)
+      const frontGussetAngle = points.frontCenterMiddle.angle(points.centerCenter)
 
       paths.frontBulge = new Path()
         .move(points.frontCenterSplit)
@@ -253,56 +313,29 @@ export const gusset = {
       paths.front = new Path()
         .move(points.frontCenterSplit)
         .join(paths.frontBulge)
-        .line(points.frontCenterOutside)
+        .line(points.frontoutsideCenter)
         .join(paths.frontOutside)
-        .line(points.backInsertOutsideBottom)
+        .line(points.outsideCenter)
         .hide()
 
       points.frontCenter = points.frontCenterSplit.clone()
     } else {
-      const frontGussetAngle = store.get('frontGussetAngle')
-      const frontGussetLength = store.get('frontGussetLength')
-      points.frontCenter = points.backInsertCenterBottom.shift(270, frontGussetLength)
-      points.frontCenterCp = points.frontCenter.shift(
-        90 - frontGussetAngle / 2,
-        frontGussetLength / 3
-      )
-      points.backInsertOutsideBottomCp = points.backInsertOutsideBottom.shift(
-        270,
-        frontGussetLength / 3
-      )
-
-      paths.front = new Path()
-        .move(points.frontCenter)
-        .curve(
-          points.frontCenterCp,
-          points.backInsertOutsideBottomCp,
-          points.backInsertOutsideBottom
-        )
-        .hide()
+      CreateGusset('front')
     }
-
-    paths.backGusset = new Path()
-      .move(points.backInsertOutsideGusset)
-      .curve(
-        points.backInsertOutsideGussetCp1,
-        points.backInsertCenterTopCp1,
-        points.backInsertCenterTop
-      )
-      .hide()
 
     paths.seamSA = new Path()
       .move(points.frontCenter)
       .join(paths.front)
-      .line(points.backInsertOutsideGusset)
-      .join(paths.backGusset)
+      .join(paths.back.reverse())
       .hide()
 
     paths.seam = new Path()
-      .move(points.backInsertCenterTop)
+      .move(points.backCenter)
       .line(points.frontCenter)
       .join(paths.seamSA)
       .close()
+
+    // console.log({ paths: JSON.parse(JSON.stringify(paths)) })
 
     if (sa) {
       if (frontBulge) {
@@ -311,104 +344,119 @@ export const gusset = {
       } else {
         paths.saOffset = paths.seamSA.offset(sa).hide()
       }
-      paths.sa = new Path()
-        .move(points.frontCenter)
-        .line(points.frontCenter.shift(270, sa))
-        .move(paths.saOffset.start())
-        .join(paths.saOffset)
-        .line(points.backInsertCenterTop.shift(90, sa))
-        .line(points.backInsertCenterTop)
-        .attr('class', 'fabric sa')
+
+      console.log({ points: JSON.parse(JSON.stringify(points)) })
+      console.log({ paths: JSON.parse(JSON.stringify(paths)) })
+
+      if (backGusset) {
+        paths.sa = new Path()
+          .move(points.frontCenter)
+          .line(points.frontCenter.shift(270, sa))
+          .move(paths.saOffset.start())
+          .join(paths.saOffset)
+          .line(points.centerBackCircleEnd.shift(90, sa))
+          .line(points.centerBackCircleEnd)
+          .attr('class', 'fabric sa')
+      } else {
+        paths.sa = new Path()
+          .move(points.frontCenter)
+          .line(points.frontCenter.shift(270, sa))
+          .move(paths.saOffset.start())
+          .join(paths.saOffset)
+          .line(points.backCenter.shift(90, sa))
+          .line(points.backCenter)
+          .attr('class', 'fabric sa')
+      }
     }
 
-    points.title = paths.backGusset
-      .shiftFractionAlong(0.25)
-      .shiftFractionTowards(points.backInsertCenterTop, 0.5)
     macro('title', {
       at: points.title,
       nr: 2,
-      title: 'gusset',
+      title: 'lumira:gusset',
       align: 'center',
+      scale: backGusset ? 1 : 0.25,
     })
 
-    snippets.middle = new Snippet('notch', points.backInsertOutsideBottom)
-    snippets.circle4 = new Snippet('notch', points.backInsertOutsideGusset)
-    snippets.circle3 = new Snippet('notch', paths.backGusset.shiftFractionAlong(0.25))
-    snippets.circle2 = new Snippet('notch', paths.backGusset.shiftFractionAlong(0.5))
-    snippets.circle1 = new Snippet('notch', paths.backGusset.shiftFractionAlong(0.75))
-    snippets.circle0 = new Snippet('notch', points.backInsertCenterTop)
-
-    macro('cutonfold', {
-      from: points.backInsertCenterTop,
-      to: points.backInsertCenterBottom,
-    })
+    snippets.middle = new Snippet('notch', points.outsideCenter)
 
     store.cutlist.addCut({ cut: 1, from: 'fabric', onFold: true })
 
-    macro('vd', {
-      id: 'insertBottom',
-      from: points.backInsertOutsideBottom,
-      to: points.frontCenter,
-      x: points.backInsertOutsideBottom.x + sa + 15,
-    })
-    macro('vd', {
-      id: 'insertOutsideGusset',
-      from: points.backInsertOutsideGusset,
-      to: points.frontCenter,
-      x: points.backInsertOutsideBottom.x + sa + 25,
-    })
-    const right = paths.seam.edge('right')
-    macro('vd', {
-      id: 'rightGusset',
-      from: right,
-      to: points.frontCenter,
-      x: right.x + sa + 15,
-    })
-    macro('vd', {
-      id: 'rightGusset',
-      from: right,
-      to: points.frontCenter,
-      x: right.x + sa + 15,
-    })
-    macro('vd', {
-      id: 'top',
-      from: points.backInsertCenterTop,
-      to: points.frontCenter,
-      x: right.x + sa + 25,
-    })
-    macro('hd', {
-      id: 'insertBottom',
-      from: points.frontCenter,
-      to: points.backInsertOutsideBottom,
-      y: points.frontCenter.y + sa + 15,
-    })
-    macro('hd', {
-      id: 'right',
-      from: points.frontCenter,
-      to: right,
-      y: points.frontCenter.y + sa + 25,
-    })
-
-    if (frontBulge) {
-      macro('vd', {
-        id: 'bulgeLength',
-        from: points.frontCenter,
-        to: points.frontCenterOutside,
-        x: points.frontOutside.x + sa + 25,
+    if (backGusset) {
+      macro('cutonfold', {
+        from: points.centerBackCircleEnd,
+        to: points.centerCenter,
       })
-      macro('hd', {
-        id: 'bulgeWidth',
-        from: points.frontCenter,
-        to: points.frontOutside,
-        y: points.frontOutside.y + sa + 25,
-      })
-      macro('ld', {
-        id: 'width',
-        from: points.frontCenterOutside,
-        to: points.frontOutside,
-        d: 15,
+    } else {
+      macro('cutonfold', {
+        from: points.backCenter,
+        to: points.frontCenter,
       })
     }
+
+    // macro('vd', {
+    //   id: 'insertBottom',
+    //   from: points.outsideCenter,
+    //   to: points.frontCenter,
+    //   x: points.outsideCenter.x + sa + 15,
+    // })
+    // macro('vd', {
+    //   id: 'insertOutsideGusset',
+    //   from: points.outsideBackCircleStart,
+    //   to: points.frontCenter,
+    //   x: points.outsideCenter.x + sa + 25,
+    // })
+    // const right = paths.seam.edge('right')
+    // macro('vd', {
+    //   id: 'rightGusset',
+    //   from: right,
+    //   to: points.frontCenter,
+    //   x: right.x + sa + 15,
+    // })
+    // macro('vd', {
+    //   id: 'rightGusset',
+    //   from: right,
+    //   to: points.frontCenter,
+    //   x: right.x + sa + 15,
+    // })
+    // macro('vd', {
+    //   id: 'top',
+    //   from: points.centerBackCircleEnd,
+    //   to: points.frontCenter,
+    //   x: right.x + sa + 25,
+    // })
+    // macro('hd', {
+    //   id: 'insertBottom',
+    //   from: points.frontCenter,
+    //   to: points.outsideCenter,
+    //   y: points.frontCenter.y + sa + 15,
+    // })
+    // macro('hd', {
+    //   id: 'right',
+    //   from: points.frontCenter,
+    //   to: right,
+    //   y: points.frontCenter.y + sa + 25,
+    // })
+
+    // if (frontBulge) {
+    //   macro('vd', {
+    //     id: 'bulgeLength',
+    //     from: points.frontCenter,
+    //     to: points.frontoutsideCenter,
+    //     x: points.frontOutside.x + sa + 25,
+    //   })
+    //   macro('hd', {
+    //     id: 'bulgeWidth',
+    //     from: points.frontCenter,
+    //     to: points.frontOutside,
+    //     y: points.frontOutside.y + sa + 25,
+    //   })
+    //   macro('ld', {
+    //     id: 'width',
+    //     from: points.frontoutsideCenter,
+    //     to: points.frontOutside,
+    //     d: 15,
+    //   })
+    // }
 
     return part
   },
