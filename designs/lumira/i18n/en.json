@@ -2,6 +2,7 @@
   "t": "Lumira leggings",
   "d": "A FreeSewing pattern for a pair of leggings",
   "p": {
+    "shape": "Shape",
     "leg": "Leg",
     "gusset": "Gusset",
     "waistband": "Waistband",
