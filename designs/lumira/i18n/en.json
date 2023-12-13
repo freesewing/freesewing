@@ -9,8 +9,12 @@
    },
   "s": {
     "bulgeToLarge": "The value for the bulge is too large, and this cannot be made to fit. It is adjusted accordingly.",
+    "couldNotFitCircle": "Could not made the circle fit",
     "couldNotFitFrontOutside": "Could not made the front outside to fit",
-    "couldNotFitFrontGussetPath": "Could not made the front gusset path to fit"
+    "couldNotFitFrontGussetPath": "Could not made the front gusset path to fit",
+    "couldNotCreateWaistCircle": "Could not create the waist curve",
+    "couldNotCreateWaistBack": "Could not create the waist back",
+    "couldNotReduceWaist":  "Could not reduce the waist"
   },
   "o": {
     "waistband": {
@@ -24,6 +28,18 @@
     "waistbandNo": {
       "t": "Without a Waistband",
       "d": "Do not add a separate waistband"
+    },
+    "backgusset": {
+      "t": "Back Gusset",
+      "d": "Add a circular gusset in the back"
+    },
+    "backgussetYes": {
+      "t": "Add a back gusset",
+      "d": "Back gusset with option to butt lift added"
+    },
+    "backgussetNo": {
+      "t": "No circular back gusset",
+      "d": "Simple center gusset"
     },
     "cyclingchamois": {
       "t": "Cycling Chamois",

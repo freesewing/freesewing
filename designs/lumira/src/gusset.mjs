@@ -19,7 +19,8 @@ export const gusset = {
       min: 0,
       max: 60,
       // eslint-disable-next-line no-unused-vars
-      menu: (settings, mergedOptions) => (mergedOptions?.cyclingchamois ? false : 'fit'),
+      menu: (settings, mergedOptions) =>
+        mergedOptions?.cyclingchamois ? false : mergedOptions?.backgusset ? 'fit' : false,
     },
     frontbulgesize: {
       pct: 2.5,
@@ -156,6 +157,9 @@ export const gusset = {
           .hide()
         diff = backCircleLength - paths.backInsertCircle.length()
       } while (iter++ < 50 && (diff > 1 || diff < -1))
+      if (iter >= 50) {
+        log.info('lumira:couldNotFitCircle')
+      }
 
       const pathBack = new Path()
         .move(points.centerBackCircleEnd)
@@ -191,7 +195,6 @@ export const gusset = {
     if (frontBulge) {
       const bulgeSplitForward = measurements.crossSeamFront * options.frontbulgeforwardpercentage
       const frontLength = store.get('frontLength') - bulgeSplitForward
-      // const rotateAngle = utils.rad2deg(Math.acos(frontLength / (frontLength + frontBulgeSize))) *.75
       var rotateAngle =
         utils.rad2deg(Math.asin((frontBulgeSize * 0.5) / gussetWidth)) * (0.6 + options.gussetwidth)
 
@@ -209,7 +212,7 @@ export const gusset = {
       points.frontCenterSplit = points.frontOutsideSplit.shift(180, gussetWidth)
       points.frontOutside = points.frontOutsideSplit.shift(270 + rotateAngle, frontLength)
 
-      const thisCbqc = cbqc * 0.75 //(rotateAngle / 22.5)
+      const thisCbqc = cbqc * 0.75
       points.frontOutsideSplitCp1 = points.frontOutsideSplit.shift(270, thisCbqc * frontLength)
 
       diff = 0
@@ -228,7 +231,7 @@ export const gusset = {
         diff = paths.frontOutside.length() - frontLength
       } while (iter++ < 100 && (diff > 1 || diff < -1))
       if (iter >= 100) {
-        log.info('couldNotFitFrontOutside')
+        log.info('lumira:couldNotFitFrontOutside')
       }
 
       points.frontOutsideHips = paths.frontOutside.shiftAlong(
@@ -267,12 +270,10 @@ export const gusset = {
       diff = 0
       iter = 0
       do {
-        // points['frontCenterMiddle' + iter] = points.frontCenterMiddle.clone()
-
         points.frontCenterMiddle = points.frontCenterMiddle.shift(frontCenterAngle, diff)
         points.frontCenterMiddleCp1 = points.frontCenterMiddle.shift(
           90 + frontCenterAngle * 0.5,
-          gussetCpLength * 0.2 //(1 - options.frontbulgemiddlemhift)
+          gussetCpLength * 0.2
         )
         points.frontCenterMiddleCp2 = points.frontCenterMiddle.shift(
           270 + frontCenterAngle * 0.5,
@@ -286,7 +287,6 @@ export const gusset = {
         }
         if (points.frontCenterMiddleCp1.x < 0) {
           points.frontCenterMiddleCp1.x = 0
-          // points.frontCenterMiddleCp2.x = 0
         }
 
         const frontGussetPath = new Path()
@@ -295,14 +295,11 @@ export const gusset = {
           .curve(points.frontCenterHipsCp, points.frontCenterMiddleCp2, points.frontCenterMiddle)
           .curve(points.frontCenterMiddleCp1, points.frontCenterSplitCp, points.frontCenterSplit)
 
-        // paths['frontCenterGussetPath' + iter] = frontGussetPath.clone().addClass('note')
         diff = frontGussetPath.length() - (frontLength + frontBulgeSize)
       } while (iter++ < 50 && (diff > 1 || diff < -1))
       if (iter >= 50) {
-        log.info('couldNotFitFrontGussetPath')
+        log.info('lumira:couldNotFitFrontGussetPath')
       }
-
-      const frontGussetAngle = points.frontCenterMiddle.angle(points.centerCenter)
 
       paths.frontBulge = new Path()
         .move(points.frontCenterSplit)
@@ -335,8 +332,6 @@ export const gusset = {
       .join(paths.seamSA)
       .close()
 
-    // console.log({ paths: JSON.parse(JSON.stringify(paths)) })
-
     if (sa) {
       if (frontBulge) {
         const pathSA = paths.seamSA.offset(sa)
@@ -344,9 +339,6 @@ export const gusset = {
       } else {
         paths.saOffset = paths.seamSA.offset(sa).hide()
       }
-
-      console.log({ points: JSON.parse(JSON.stringify(points)) })
-      console.log({ paths: JSON.parse(JSON.stringify(paths)) })
 
       if (backGusset) {
         paths.sa = new Path()
@@ -393,70 +385,79 @@ export const gusset = {
       })
     }
 
-    // macro('vd', {
-    //   id: 'insertBottom',
-    //   from: points.outsideCenter,
-    //   to: points.frontCenter,
-    //   x: points.outsideCenter.x + sa + 15,
-    // })
-    // macro('vd', {
-    //   id: 'insertOutsideGusset',
-    //   from: points.outsideBackCircleStart,
-    //   to: points.frontCenter,
-    //   x: points.outsideCenter.x + sa + 25,
-    // })
-    // const right = paths.seam.edge('right')
-    // macro('vd', {
-    //   id: 'rightGusset',
-    //   from: right,
-    //   to: points.frontCenter,
-    //   x: right.x + sa + 15,
-    // })
-    // macro('vd', {
-    //   id: 'rightGusset',
-    //   from: right,
-    //   to: points.frontCenter,
-    //   x: right.x + sa + 15,
-    // })
-    // macro('vd', {
-    //   id: 'top',
-    //   from: points.centerBackCircleEnd,
-    //   to: points.frontCenter,
-    //   x: right.x + sa + 25,
-    // })
-    // macro('hd', {
-    //   id: 'insertBottom',
-    //   from: points.frontCenter,
-    //   to: points.outsideCenter,
-    //   y: points.frontCenter.y + sa + 15,
-    // })
-    // macro('hd', {
-    //   id: 'right',
-    //   from: points.frontCenter,
-    //   to: right,
-    //   y: points.frontCenter.y + sa + 25,
-    // })
+    macro('vd', {
+      id: 'insertBottom',
+      from: points.outsideCenter,
+      to: points.frontCenter,
+      x: points.outsideCenter.x + sa + 15,
+    })
+    macro('hd', {
+      id: 'insertBottom',
+      from: points.frontCenter,
+      to: points.outsideCenter,
+      y: points.frontCenter.y + sa + 15,
+    })
 
-    // if (frontBulge) {
-    //   macro('vd', {
-    //     id: 'bulgeLength',
-    //     from: points.frontCenter,
-    //     to: points.frontoutsideCenter,
-    //     x: points.frontOutside.x + sa + 25,
-    //   })
-    //   macro('hd', {
-    //     id: 'bulgeWidth',
-    //     from: points.frontCenter,
-    //     to: points.frontOutside,
-    //     y: points.frontOutside.y + sa + 25,
-    //   })
-    //   macro('ld', {
-    //     id: 'width',
-    //     from: points.frontoutsideCenter,
-    //     to: points.frontOutside,
-    //     d: 15,
-    //   })
-    // }
+    if (backGusset) {
+      macro('vd', {
+        id: 'insertOutsideGusset',
+        from: points.outsideBackCircleStart,
+        to: points.frontCenter,
+        x: points.outsideCenter.x + sa + 25,
+      })
+      const right = paths.seam.edge('right')
+      macro('vd', {
+        id: 'rightGusset',
+        from: right,
+        to: points.frontCenter,
+        x: right.x + sa + 15,
+      })
+      macro('vd', {
+        id: 'rightGusset',
+        from: right,
+        to: points.frontCenter,
+        x: right.x + sa + 15,
+      })
+      macro('vd', {
+        id: 'top',
+        from: points.centerBackCircleEnd,
+        to: points.frontCenter,
+        x: right.x + sa + 25,
+      })
+      macro('hd', {
+        id: 'right',
+        from: points.frontCenter,
+        to: right,
+        y: points.frontCenter.y + sa + 25,
+      })
+    } else {
+      macro('vd', {
+        id: 'insertTop',
+        from: points.outsideCenter,
+        to: points.backCenter,
+        x: points.outsideCenter.x + sa + 15,
+      })
+    }
+    if (frontBulge) {
+      macro('vd', {
+        id: 'bulgeLength',
+        from: points.frontCenter,
+        to: points.frontoutsideCenter,
+        x: points.frontOutside.x + sa + 25,
+      })
+      macro('hd', {
+        id: 'bulgeWidth',
+        from: points.frontCenter,
+        to: points.frontOutside,
+        y: points.frontOutside.y + sa + 25,
+      })
+      macro('ld', {
+        id: 'width',
+        from: points.frontoutsideCenter,
+        to: points.frontOutside,
+        d: 15,
+      })
+    }
 
     return part
   },

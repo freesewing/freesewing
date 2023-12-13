@@ -3,10 +3,25 @@ import { shape } from './shape.mjs'
 export const waistband = {
   name: 'lumira.waistband',
   from: shape,
-  draft: ({ store, sa, Point, points, Path, paths, Snippet, snippets, options, macro, part }) => {
+  draft: ({
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    options,
+    measurements,
+    macro,
+    part,
+  }) => {
     if (false == options.waistband) {
       return part.hide()
     }
+
+    const backGusset = options.cyclingchamois ? true : options.backgusset
 
     const waistLength = store.get('waistLength')
     const waistbandSize = store.get('waistbandSize')
@@ -18,8 +33,6 @@ export const waistband = {
 
     points.topFront = new Point(Math.min(topLength, bottomLength) / 2, 0)
     points.topBack = new Point(-1 * (Math.min(topLength, bottomLength) / 2), 0)
-    // points.topFront = new Point(topLength *.5, 0)
-    // points.topBack = new Point(topLength *-.5, 0)
 
     const angleBack =
       points.frontWaist.angle(points.backWaist) - points.backWaistband.angle(points.backWaist)
@@ -30,8 +43,8 @@ export const waistband = {
     var iter = 0
     var diff = 0
     do {
-      points.topFront = points.topFront.shift(180, diff / 2)
-      points.topBack = points.topBack.shift(0, diff / 2)
+      points.topFront = points.topFront.shift(180, diff / 2.5)
+      points.topBack = points.topBack.shift(0, diff / 1.5)
       points.topFrontCp = points.topFront.shift(
         180 + angle,
         points.topBack.dist(points.topFront) * magic1
@@ -45,6 +58,9 @@ export const waistband = {
         .curve(points.topFrontCp, points.topBackCp, points.topBack)
       diff = paths.top.length() - topLength
     } while (iter++ < 100 && (diff < -1 || diff > 1))
+    if (iter >= 100) {
+      log.info('lumira:couldNotCreateWaistCircle')
+    }
 
     points.bottomFront = points.topFront.shift(270 + angle, waistbandSize)
     points.bottomBack = points.topBack.shift(270 - angle, waistbandSize)
@@ -52,8 +68,9 @@ export const waistband = {
     iter = 0
     diff = 0
     do {
-      points.bottomFront = points.bottomFront.shift(180, diff / 2)
-      points.bottomBack = points.bottomBack.shift(0, diff / 2)
+      points.bottomFront = points.bottomFront.shift(180, diff / 2.5)
+      points.bottomBack = points.bottomBack.shift(0, diff / 1.5)
+
       points.bottomFrontCp = points.bottomFront.shift(
         180 + angle,
         points.bottomBack.dist(points.bottomFront) * magic1
@@ -66,21 +83,55 @@ export const waistband = {
       paths.bottom = new Path()
         .move(points.bottomFront)
         .curve(points.bottomFrontCp, points.bottomBackCp, points.bottomBack)
+        .hide()
 
       diff = paths.bottom.length() - bottomLength
     } while (iter++ < 100 && (diff < -1 || diff > 1))
+    if (iter >= 100) {
+      log.info('lumira:couldNotCreateWaistCircle')
+    }
+
+    points.bottomCenter = paths.bottom.shiftAlong(store.get('waistLengthFront'))
+    points.bottomCenterCp = paths.bottom.shiftAlong(store.get('waistLengthFront') * 1.1)
+
+    paths.bottomFront = paths.bottom.split(points.bottomCenter)[0]
+
+    points.bottomBackTT = points.topBack.shift(
+      270 - angle,
+      waistbandSize + (backGusset ? 0 : measurements.crossSeamBack * 0.1)
+    )
+    points.bottomBack = points.topBack.shift(
+      270 - angle,
+      waistbandSize + (backGusset ? 0 : measurements.crossSeamBack * 0.1)
+    )
+
+    iter = 0
+    diff = 0
+    do {
+      points.bottomBack = points.bottomBack.shift(0, diff)
+
+      points.bottomBackCp = points.bottomBack.shiftFractionTowards(points.bottomCenterCp, 0.7)
+
+      paths.bottomBack = new Path()
+        .move(points.bottomCenter)
+        .curve(points.bottomCenterCp, points.bottomBackCp, points.bottomBack)
+
+      diff = paths.bottomFront.length() + paths.bottomBack.length() - bottomLength
+    } while (iter++ < 100 && (diff < -1 || diff > 1))
+    if (iter >= 100) {
+      log.info('lumira:couldNotCreateWaistBack')
+    }
 
     paths.seamSA = new Path()
       .move(points.topFront)
       .join(paths.top)
       .line(points.bottomBack)
-      .join(paths.bottom.reverse())
+      .join(paths.bottomBack.reverse())
+      .join(paths.bottomFront.reverse())
       .hide()
     paths.seam = new Path()
       .move(points.topFront)
       .join(paths.seamSA)
-      // .line(points.bottomBack)
-      // .join(paths.bottom.reverse())
       .line(points.topFront)
       .close()
       .attr('class', 'fabric')

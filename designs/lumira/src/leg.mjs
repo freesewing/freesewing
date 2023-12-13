@@ -22,21 +22,7 @@ export const leg = {
       .join(paths.frontLeg)
       .hide()
 
-    if (backGusset) {
-      paths.back = new Path()
-        .move(points.backWaistband)
-        .join(paths.back)
-        .join(paths.backCircle)
-        .join(paths.backGusset)
-        .join(paths.backLeg)
-        .hide()
-
-      // snippets.circle1 = new Snippet('notch', paths.backCircle.shiftFractionAlong(0.25))
-      // snippets.circle2 = new Snippet('notch', paths.backCircle.shiftFractionAlong(0.5))
-      // snippets.circle3 = new Snippet('notch', paths.backCircle.shiftFractionAlong(0.75))
-    } else {
-      paths.back = new Path().move(points.backWaistband).join(paths.back).join(paths.backLeg).hide()
-    }
+    paths.back = new Path().move(points.backWaistband).join(paths.back).join(paths.backLeg).hide()
 
     paths.seam = new Path()
       .move(points.backWaistband)
@@ -51,8 +37,8 @@ export const leg = {
     }
 
     macro('grainline', {
-      from: points.centerHips,
-      to: points.centerKnee,
+      from: points.centerWaistband,
+      to: points.centerBottom,
     })
 
     store.cutlist.addCut({ cut: 2, from: 'fabric' })
@@ -77,98 +63,107 @@ export const leg = {
       at: points.scalebox,
     })
 
-    // snippets.circle4 = new Snippet('notch', points.backHips)
-    // snippets.circle5 = new Snippet('notch', points.backCircleGusset)
-    // snippets.circle6 = new Snippet('notch', points.frontGusset)
+    snippets.circle4 = new Snippet('notch', points.backHips)
+    snippets.circle6 = new Snippet('notch', points.frontGusset)
 
-    // const backCircle = paths.backCircle.edge('right')
-    // macro('hd', {
-    //   id: 'frontBottom',
-    //   from: points.centerBottom,
-    //   to: points.frontBottom,
-    //   y: points.centerBottom.y + sa + 15,
-    // })
-    // macro('hd', {
-    //   id: 'backBottom',
-    //   from: points.backBottom,
-    //   to: points.centerBottom,
-    //   y: points.centerBottom.y + sa + 15,
-    // })
-    // macro('hd', {
-    //   id: 'frontGusset',
-    //   from: points.centerBottom,
-    //   to: points.frontGusset,
-    //   y: points.centerBottom.y + sa + 25,
-    // })
-    // macro('hd', {
-    //   id: 'backGusset',
-    //   from: points.backGusset,
-    //   to: points.centerBottom,
-    //   y: points.centerBottom.y + sa + 25,
-    // })
-    // macro('hd', {
-    //   id: 'frontWaistband',
-    //   from: points.gridAnchor,
-    //   to: points.frontWaistband,
-    //   y: points.backWaistband.y - sa - 15,
-    // })
-    // macro('hd', {
-    //   id: 'backWaistband',
-    //   from: points.backWaistband,
-    //   to: points.gridAnchor,
-    //   y: points.backWaistband.y - sa - 15,
-    // })
-    // macro('hd', {
-    //   id: 'backCircleGusset',
-    //   from: points.backCircleGusset,
-    //   to: points.centerUpperLeg,
-    //   y: points.backCircleGusset.y,
-    // })
-    // macro('hd', {
-    //   id: 'backCircle',
-    //   from: backCircle,
-    //   to: points.centerUpperLeg,
-    //   y: backCircle.y,
-    // })
+    if (backGusset) {
+      snippets.circle5 = new Snippet('notch', points.backCircleGusset)
+      const backCircle = paths.backCircle.edge('right')
+      macro('hd', {
+        id: 'backCircleGusset',
+        from: points.backCircleGusset,
+        to: points.centerUpperLeg,
+        y: points.backCircleGusset.y,
+      })
+      macro('hd', {
+        id: 'backCircle',
+        from: backCircle,
+        to: points.centerUpperLeg,
+        y: backCircle.y,
+      })
+      macro('vd', {
+        id: 'backCircle',
+        from: backCircle,
+        to: points.backHips,
+        x: points.backHips.x - sa - 15,
+      })
+      macro('vd', {
+        id: 'backHips',
+        from: points.backHips,
+        to: points.backWaistband,
+        x: points.backHips.x - sa - 15,
+        noStartMarker: true,
+        noEndMarker: true,
+      })
+    } else {
+      macro('hd', {
+        id: 'backCircleGusset',
+        from: points.backGussetJoin,
+        to: points.centerUpperLeg,
+        y: points.backGussetJoin.y,
+      })
+    }
+    macro('hd', {
+      id: 'frontBottom',
+      from: points.centerBottom,
+      to: points.frontBottom,
+      y: points.centerBottom.y + sa + 15,
+    })
+    macro('hd', {
+      id: 'backBottom',
+      from: points.backBottom,
+      to: points.centerBottom,
+      y: points.centerBottom.y + sa + 15,
+    })
+    macro('hd', {
+      id: 'frontGusset',
+      from: points.centerBottom,
+      to: points.frontGusset,
+      y: points.centerBottom.y + sa + 25,
+    })
+    macro('hd', {
+      id: 'backGusset',
+      from: points.backGusset,
+      to: points.centerBottom,
+      y: points.centerBottom.y + sa + 25,
+    })
+    macro('hd', {
+      id: 'frontWaistband',
+      from: points.gridAnchor,
+      to: points.frontWaistband,
+      y: points.backWaistband.y - sa - 15,
+    })
+    macro('hd', {
+      id: 'backWaistband',
+      from: points.backWaistband,
+      to: points.gridAnchor,
+      y: points.backWaistband.y - sa - 15,
+    })
 
-    // macro('vd', {
-    //   id: 'frontGusset',
-    //   from: points.frontBottom,
-    //   to: points.frontGusset,
-    //   x: points.frontGusset.x + sa + 15,
-    // })
-    // macro('vd', {
-    //   id: 'frontWaistband',
-    //   from: points.frontGusset,
-    //   to: points.frontWaistband,
-    //   x: points.frontGusset.x + sa + 15,
-    // })
-    // macro('vd', {
-    //   id: 'backGusset',
-    //   from: points.backBottom,
-    //   to: points.backGusset,
-    //   x: points.backGusset.x - sa - 15,
-    // })
-    // macro('vd', {
-    //   id: 'backWaistband',
-    //   from: points.backGusset,
-    //   to: points.backWaistband,
-    //   x: points.backGusset.x - sa - 15,
-    // })
-    // macro('vd', {
-    //   id: 'backHips',
-    //   from: points.backHips,
-    //   to: points.backWaistband,
-    //   x: points.backHips.x - sa - 15,
-    //   noStartMarker: true,
-    //   noEndMarker: true,
-    // })
-    // macro('vd', {
-    //   id: 'backCircle',
-    //   from: backCircle,
-    //   to: points.backHips,
-    //   x: points.backHips.x - sa - 15,
-    // })
+    macro('vd', {
+      id: 'frontGusset',
+      from: points.frontBottom,
+      to: points.frontGusset,
+      x: points.frontGusset.x + sa + 15,
+    })
+    macro('vd', {
+      id: 'frontWaistband',
+      from: points.frontGusset,
+      to: points.frontWaistband,
+      x: points.frontGusset.x + sa + 15,
+    })
+    macro('vd', {
+      id: 'backGusset',
+      from: points.backBottom,
+      to: points.backGusset,
+      x: points.backGusset.x - sa - 15,
+    })
+    macro('vd', {
+      id: 'backWaistband',
+      from: points.backGusset,
+      to: points.backWaistband,
+      x: points.backGusset.x - sa - 15,
+    })
 
     if (options.frontbulge || options.cyclingchamois) {
     } else {
@@ -183,6 +178,12 @@ export const leg = {
         from: points.frontGussetJoin,
         to: points.frontWaistband,
         x: points.frontGussetJoin.x + sa + 15,
+      })
+      macro('vd', {
+        id: 'frontGussetJoinToTop',
+        from: points.frontGussetJoin,
+        to: points.centerWaistband,
+        x: points.frontGussetJoin.x + sa + 25,
       })
     }
 
