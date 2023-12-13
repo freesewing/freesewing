@@ -1,4 +1,3 @@
-import { pluginTiming } from '@freesewing/plugin-timing'
 import { pctBasedOn } from '@freesewing/core'
 
 export const shape = {
@@ -22,7 +21,6 @@ export const shape = {
     'waistToSeat',
     'waistToHips',
   ],
-  plugins: [pluginTiming],
   options: {
     // Constants
     gussetcompensation: 1.03,
@@ -426,6 +424,8 @@ export const shape = {
         .join(paths.backGusset)
         .hide()
 
+      paths.backTop = new Path().move(points.backWaistband).line(points.backHips).hide()
+
       store.set('backGussetLength', paths.backGusset.length())
       store.set('backCircleLength', paths.backCircle.length())
     } else {
@@ -483,16 +483,6 @@ export const shape = {
     store.set('waistLength', paths.waist.length())
     store.set('waistLengthFront', points.frontWaistband.dist(points.centerWaistband))
     store.set('waistLengthBack', store.get('waistLength') - store.get('waistLengthFront'))
-
-    // console.log({ points: JSON.parse(JSON.stringify(points)) })
-    // console.log({ paths: JSON.parse(JSON.stringify(paths)) })
-    // console.log({ store: JSON.parse(JSON.stringify(store)) })
-    // console.log({ measurements: JSON.parse(JSON.stringify(measurements)) })
-
-    const shapeTook = store.get(['timing', 'parts', 'lumira.shape', 'took'])
-    log.info('The lumira.shape part took ' + shapeTook + ' ms to draft.')
-
-    log.info(JSON.stringify(store.timing))
 
     return part
   },

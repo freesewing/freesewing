@@ -1,132 +1,63 @@
 ---
-title: "Cornelius fietsbroek: Naai-instructies"
+title: "Lumira leggings: Sewing Instructions"
 ---
 
-### Stap 1: De voorzakken
-
-- Pers onder de naadtoeslagen van de niet-geknipte randen van de pokcet facings.
-- Speld de verkeerde kanten van de zakvullingen op de goede kant van de zakvullingen met dezelfde inkepingen, _Edgestitch_ de gevouwen randen op de zakvullingen.
-- _Rijg_ de naadtoeslagen van de gekerfde randen van de zakvullingen aan de zakzakken.
-- Met de goede kanten op elkaar en de dubbele inkepingen naai je de zakjes aan de voorkant en pers je ze naar de verkeerde kant.
-- Vouw de zakken dubbel langs de vouwlijn, goede kanten op elkaar. Naai de onderkant van de zak aan elkaar.
-- Je kunt ook _Franse naad_ de onderste naden van de zakjes aan elkaar naaien als je dat liever doet.
-- _Rijg_ de bovenkant en zijkant van de zakjes aan de voorste naadtoeslagen met de inkepingen.
-
 <Note>
 
-In het vervolg worden de zakken en voorkanten gewoon voorkanten genoemd.
+This is a garment made from a stretch fabric. So use appropriate seam solutions. A serger is a good way to do this, as 
+are specific stitches that certain sewing machine provide. A zigzag stitch will do if that's all you have.
+
+Keep in mind that since these seams are always under tension, it may be a good idea to double them up, or 
+provide a zigzag in addition to serging the seam. 
 
 </Note>
 
-### Stap 2: De vlieg
+### Step 1: The waistband (optional)
 
-- Met de goede kanten op elkaar, vanaf de bovenkant _Rijg_ langs de gulplijn en stop bij de inkeping op de kruisnaad.
-- Naai de kruisnaad aan elkaar waar je gebleven was met rijgen en zorg ervoor dat je de steken vastzet waar de rijgsteek eindigt.
-- Pers de gulp en naad open.
-- Leg de voorkanten met de verkeerde kant naar boven neer, zodat de goede kanten van de vliegenflappen naar je toe wijzen.
-- Leg de rits met de goede kant naar boven op de voorflappen, met de linkerkant van de rits tegen de naad, met de onderkant van de rechter ritsband op de gebogen flap.
-- Naai het rechter ritsbandje op de rechterflap dicht bij de tandjes van de rits met behulp van een ritsvoetje. Naai het niet aan de voorkant zelf!
-- Trek de rits naar links zodat de rechterflap eroverheen wordt getrokken.
-- Speld de linker ritsband op de linker flap.
-- Naai met een ritsvoetje het linker ritsbandje op de linkerflap dicht bij de tandjes van de rits. Naai het niet aan de voorkant zelf!
-- Vouw de ritsbeschermer dubbel met de verkeerde kanten op elkaar.
-- Leg de ritsbeschermer op de rechterflap met de goede kanten tegen elkaar.
-- Naai de ritsbeschermer aan de rechterflap, _Finish_ de rechterkant naar wens.
-- _Werk de linkerkant van de linkerklep naar wens af op_ .
-- Maak het vastgenaaide deel van de voornaad los.
-- _Stik_ de rechterflap naar beneden, weg van de nu ongestikte naad, zo ver mogelijk naar beneden.
-- Speld/_Rijg_ de ritsbeschermer naar de goede kant om hem uit de weg te houden voor de volgende stap.
-- Naai de linkerklep aan de buitenkant naar links vast, waarbij je de gebogen lijn volgt.
-- Aan de buitenkant _Bar-Tack_ waar je ze wilt hebben ter versteviging.
-
-<Tip>
-
-Als je de linkerklep aan de buitenkant vastnaait, kun je het beste een sjabloon maken om je te helpen.
-
-</Tip>
+- Sew the two pieces to eachother, right sides together, along the top seam.
+- Press the seam open
+- Sew the back seam, right sides together. This creates a loop.
 
 <Note>
-
-Als je de vlieg de andere kant op wilt laten wijzen, verander dan de stappen van links naar rechts en van rechts naar links in de bovenstaande stappen.  
-Als je iets meer historisch wilt, laat dan de rits weg en maak in plaats daarvan een gulp met knoopsgat.
-
+If you want to include elastic into the waistband, now is a good time to do so. You should
+add it to the seam you just sewed.
 </Note>
 
-### Stap 3: De voorkant aan de achterkant vastmaken
+### Step 2: The legs
 
-- Naai de achterpanden met de goede kanten op elkaar langs de achternaad.
-- Naai met de goede kanten op elkaar de voor- en achterkant aan elkaar bij de zijnaden en de binnenbeennaad. Zorg ervoor dat je een opening overlaat onder de inkepingen aan de onderkant van de zijnaden. De kloof zal in het vervolg de lijst worden genoemd.
+- Sew each leg along the long seam to itself. This will result in two 'pipes' of your fabric.
 
-### Stap 4: Beenbanden
+### Step 3: Combine
 
-Gebruik de methode van de manchetstijl die je hebt gekozen, want ze verschillen afhankelijk van welke stijl je gebruikt.
+- Sew the two pieces together along the back seam. This seam is marked with '+'.
 
-#### Traditioneel en elegant
+### Step 4: Gusset preparation
 
-- _Werk de onbewerkte randen van de splitjes af met_ .
-- Strijk de naadtoeslagen van de splitjes naar de verkeerde kanten. Stik vast.
-- Naai een van de delen van de beenband aan elk been met de goede kanten op elkaar en de inkepingen op elkaar.
-- Pers de banden en naadtoeslag naar beneden en weg van het been. Knip de naadtoeslag bij om de bulk te verminderen.
-- Strijk de bovenste naadtoeslag naar de verkeerde kant van de overgebleven delen van de beenband. Knip de naadtoeslag aan de bovenkant bij.
-- Naai met de goede kanten op elkaar de overgebleven beenstukken aan de aangehechte beenbanden langs de onderkant en zijkanten.
-- Draai de beenbanden naar buiten. Pers.
-- _Schuifsteek_ of _Zweepsteek_ de gevouwen rand van de tailleband naar voren, zorg ervoor dat de gevouwen rand het stiksel bedekt.
-- Naai het knoopsgat. De knopen worden later genaaid.
+- If you have a front bulge in your gusset, sew the middle 'dart' closed first.
+- If you do not have a front bulge, it is useful to sew the front seam closed. This seam is marked with '-'.
+
+### Step 5: Gusset 
 
 <Note>
-
-Als je je zorgen maakt over tocht, kun je van je zakstof een driehoekig stuk stof maken dat achter de splitjes zit. Bevestig het voor Stap 3 aan een van de zijkanten van de spleten.
-
+If you do not have the large back gusset option, you just need to sew the little diamond shaped gusset
+in the right spot.
 </Note>
 
-#### Sleutelsteen
+- Match all the notches of the gusset with the legs and seams. Be careful, since you'll be sewing a circle 
+to an outline, and that is always tricky to get right. Use a lot of pins, or clips, to keep the fabrics
+aligned. 
+- Sew the seam from one side all the way to the other.
 
-- Als je haakjes gebruikt voor de beenopeningen.
-- Naai de manchetten aan de beenopeningen op dezelfde manier als je een mouwboord op een overhemd zou naaien.
-- Sluit de coupenaden op de beenbanddelen.
-- Naai een van de delen van de beenband aan elk been met de goede kanten op elkaar en de inkepingen op elkaar.
-- Pers de banden en naadtoeslag naar beneden en weg van het been. Knip de naadtoeslag bij om de bulk te verminderen.
-- Strijk de bovenste naadtoeslag naar de verkeerde kant van de overgebleven delen van de beenband. Knip de naadtoeslag aan de bovenkant bij.
-- Naai met de goede kanten op elkaar de overgebleven beenstukken aan de aangehechte beenbanden langs de onderkant en zijkanten.
-- Draai de beenbanden naar buiten. Pers.
-- _Schuifsteek_ of _Zweepsteek_ de gevouwen rand van de tailleband naar voren, zorg ervoor dat de gevouwen rand het stiksel bedekt.
-- Naai het knoopsgat. De knopen worden later genaaid.
+### Step 6: Attaching the waistband
 
-<Note>
+- Align the waistband seam with the seam in the back.
+- Sew all the way around, attaching the waistband to the legs. Make sure you sew both pieces of the waistband
+into this seam. This seam will combine three layers, both layers of the waistband, and one layer of the leg 
+pieces.
 
-Als je je zorgen maakt over de tocht, moet je haakjes maken voor de beenopeningen.
+### Step 7: Finish up
 
-</Note>
+Now you can add the elastic to the leg openings. Otherwise finish those in any way you like.
 
-<Note>
 
-**Voor zowel Keystone, Traditionele als Elegante stijlen**
-
-Je kunt de beenbanden aan elkaar _Edgestikken_ als een moderne tailleband als je dat liever hebt.
-
-</Note>
-
-### Stap 5: Tailleband
-
-- Strijk een van de stukken van de tailleband met je favoriete methode.
-- Naai het stuk tailleband met de goede kanten op elkaar aan de bovenkant van de benen.
-- Pers de tailleband en naadtoeslag omhoog en weg van het been. Knip de naadtoeslag bij om de bulk te verminderen.
-- Pers de onderste naadtoeslag naar de verkeerde kant van het overgebleven stuk tailleband. Knip de onderste naadtoeslag bij.
-- Naai met de goede kanten op elkaar de overgebleven tailleband langs de bovenkant en zijkanten aan de tailleband.
-- Draai de tailleband naar buiten. Pers.
-- _Schuifsteek_ of _Zweepsteek_ de gevouwen rand van de tailleband naar voren, zorg ervoor dat de gevouwen rand het stiksel bedekt.
-- Naai het knoopsgat. De knopen worden later genaaid.
-
-<Note>
-
-Je kunt de tailleband aan elkaar _Edgestikken_ zoals bij een moderne tailleband als je dat liever doet.
-
-</Note>
-
-### Stap 6: Knoppen
-
-- Naai de tailleband en de knopen van de beenband vast.
-
-### Stap 7: Geniet!
-
-Je bent allemaal klaar! Ga nu fietsen in je briljante nieuwe fietsbroek!
+You're all done! Enjoy your Lumina leggings!

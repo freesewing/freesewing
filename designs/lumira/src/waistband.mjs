@@ -160,7 +160,7 @@ export const waistband = {
       to: points.topFront,
     })
 
-    store.cutlist.addCut({ cut: 1, from: 'fabric', onFold: true })
+    store.cutlist.addCut({ cut: 2, from: 'fabric', onFold: true })
 
     if (gussetWidth > 0) {
       snippets.gusset = new Snippet('notch', paths.bottom.shiftAlong(gussetWidth))

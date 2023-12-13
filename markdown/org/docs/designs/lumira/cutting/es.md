@@ -9,5 +9,5 @@ title: "Lumira leggings: Cutting Instructions"
   - Cut **1 gusset** part on the fold
 
 Optionally
-  - Cut **1 waistband** parts on the fold
+  - Cut **2 waistband** parts on the fold
 
