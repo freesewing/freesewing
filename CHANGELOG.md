@@ -121,6 +121,7 @@
  - Decreased default back waist dip
  - Increased default front waist dip
  - Allowed lower values on back exposure, causing back to flare out
+ - Fix issue with back part when bulge is on and expand is off
 
 ### waralee
 
@@ -165,6 +166,7 @@
 
  - Fix order in mergeOptions method so user settings take precendence over defaults
  - Fix upward snap for snapped percentage option when snap is a simple number
+ - The conditional loading of plugins had a bug causing them to never be loaded
 
 
 ## 3.0.0 (2022-09-30)

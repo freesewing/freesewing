@@ -1,0 +1,52 @@
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="2000" height="1500" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 1500">
+    <defs>
+        <path id="path" d="M 0 0 c -8 40 -14 90 -12 134" style="fill: none; stroke-linejoin: round;"/>
+        <g id="start">
+            <path d="M 0 -25 l 0 50" style="stroke: #000; stroke-width: 3px; stroke-linecap: butt; stroke-linejoin: round;" />
+            <path d="M 0 0 l -15 -15 l 0 30 z" style="stroke: #000; stroke-width: 3px; fill: #000; stroke-linecap: butt; stroke-linejoin: round;" />
+        </g>
+        <g id="end">
+            <path d="M 0 -25 l 0 50" style="stroke: #000; stroke-width: 3px; stroke-linecap: butt; stroke-linejoin: round;" />
+            <path d="M 0 0 l 15 -15 l 0 30 z" style="stroke: #000; stroke-width: 3px; fill: #000; stroke-linecap: butt; stroke-linejoin: round;" />
+        </g>
+    </defs>
+    <style type="text/css"><![CDATA[
+        path {fill: none; stroke-linejoin: round;}
+        .tape {stroke: #000; stroke-width: 20px; stroke-linecap: butt;}
+        .redtape {stroke: #f00; stroke-width: 1px;stroke-linecap: round;}
+        .color {stroke: #fff86c; stroke-width: 16px; stroke-linecap: butt;}
+        .cm {stroke: #000; stroke-width: 16px; stroke-dasharray: 2 10; stroke-linecap: butt;}
+        .line {stroke: #000; stroke-width: 3px; stroke-dasharray: 8 5; stroke-linecap: round;}
+        .white {stroke: #fff;}
+    ]]></style>
+    
+    <!-- Background image -->
+    <image xlink:href="./standing.jpg" x="0" y="0" width="2000" height="1500" />
+
+    <g transform="translate(862 675)">
+        <use x="0" y="0" xlink:href="#path" class="redtape">
+            <animate attributeType="CSS" attributeName="stroke-width" from="1" to="450" begin="loop.begin+2.5s" dur="0.5s" fill="freeze" />
+            <animate attributeType="CSS" attributeName="stroke-opacity" from="1" to="0" begin="loop.begin+2.7s" dur="0.3s" fill="freeze" />
+        </use>
+        <use x="0" y="0" xlink:href="#path" class="tape"/>
+        <use x="0" y="0" xlink:href="#path" class="color"/>
+        <use x="0" y="0" xlink:href="#path" class="cm"/>
+        <use x="0" y="0" xlink:href="#start" transform="rotate(102)" />
+        <use x="134" y="13" xlink:href="#end" transform="rotate(90)" />
+    </g> 
+
+    <!-- Helplines -->
+    <g>
+        <path id="hipline" class="line" d="M 1492 675 l 225 0 M 865 677 c 80 15 170 10 223 -2 M 262 662 l 22 4 m 82 8 l 48 7">
+            <animate attributeType="CSS" attributeName="stroke-dashoffset" from="0" to="13" dur="1s" repeatDur="indefinite" />
+        </path>
+        <path id="upperlegline" class="line white" d="M 260 850 l 123 10 m 475 -50 c 40 15 80 15 120 10 m 632 26 l 120 0" >
+            <animate attributeType="CSS" attributeName="stroke-dashoffset" from="0" to="13" dur="1s" repeatDur="indefinite" />
+        </path>
+    </g>
+    
+    <!-- timing loop -->
+    <rect height="1" width="1" x="-10" y="-10">
+        <animate attributeType="CSS" attributeName="visibility" from="hide" to="hide" begin="0;loop.end" dur="4s" id="loop" />
+    </rect>
+</svg>

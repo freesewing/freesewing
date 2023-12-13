@@ -77,7 +77,7 @@
     "eslint-plugin-yaml": "^0.5.0",
     "husky": "^8.0.3",
     "js-yaml": "^4.0.0",
-    "lerna": "^7.2.0",
+    "lerna": "^8.0.0",
     "lint-staged": "^15.0.1",
     "mocha": "^10.0.0",
     "mustache": "^4.0.1",

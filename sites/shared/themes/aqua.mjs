@@ -9,6 +9,18 @@ export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'blue-2
 
 export const rating = ['blue-300', 'blue-400', 'blue-500', 'blue-600', 'blue-700']
 
+export const graph = [
+  'emerald-500',
+  'cyan-400',
+  'blue-600',
+  'indigo-400',
+  'sky-600',
+  'blue-400',
+  'teal-600',
+  'sky-400',
+  'emerald-500',
+]
+
 export const theme = {
   fontFamily:
     "ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;",
