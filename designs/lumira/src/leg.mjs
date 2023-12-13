@@ -165,8 +165,7 @@ export const leg = {
       x: points.backGusset.x - sa - 15,
     })
 
-    if (options.frontbulge || options.cyclingchamois) {
-    } else {
+    if (!(options.frontbulge || options.cyclingchamois)) {
       macro('hd', {
         id: 'frontGussetJoin',
         from: points.centerUpperLeg,

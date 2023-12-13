@@ -15,6 +15,7 @@ export const waistband = {
     options,
     measurements,
     macro,
+    log,
     part,
   }) => {
     if (false == options.waistband) {
