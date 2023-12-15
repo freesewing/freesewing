@@ -18,7 +18,7 @@ config.rewrites = async () => {
     },
     {
       source: '/sets',
-      destination: '/docs/site/sets',
+      destination: '/docs/about/site/sets',
     },
   ]
 }

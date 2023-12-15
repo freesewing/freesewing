@@ -25,8 +25,8 @@ plugins/*/yarn.lock
 # NPM lock files for sites (we use yarn)
 sites/*/package-lock.json
 
-# Sanity cache
-sites/sanity/.sanity
+# Nx cache
+.nx/cache
 
 # Sites prebuild artifacts
 sites/*/public/locales/*/*.json

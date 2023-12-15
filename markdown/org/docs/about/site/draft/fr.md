@@ -54,3 +54,4 @@ Tu peux cliquer sur cette icône pour ouvrir la documentation en ligne. Cela te 
 
 ## Modes d'édition
 
+<Fixme>Complete these docs</Fixme>
