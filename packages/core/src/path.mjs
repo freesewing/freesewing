@@ -814,10 +814,10 @@ Path.prototype.split = function (point) {
     if (path.ops[1].type === 'line') {
       if (pointOnLine(path.ops[0].to, path.ops[1].to, point)) {
         firstHalf = divided.slice(0, pi)
-        firstHalf.push(new Path().__withLog(this.log).move(path.ops[0].to).line(point.copy()))
+        firstHalf.push(new Path().__withLog(this.log).move(path.ops[0].to).line(point))
         pi++
         secondHalf = divided.slice(pi)
-        secondHalf.unshift(new Path().__withLog(this.log).move(point.copy()).line(path.ops[1].to))
+        secondHalf.unshift(new Path().__withLog(this.log).move(point).line(path.ops[1].to))
         break
       }
     } else if (path.ops[1].type === 'curve') {
