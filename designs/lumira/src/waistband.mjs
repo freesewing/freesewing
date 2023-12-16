@@ -18,7 +18,7 @@ export const waistband = {
     log,
     part,
   }) => {
-    if (false == options.waistband) {
+    if (false === options.waistband) {
       return part.hide()
     }
 
@@ -39,10 +39,10 @@ export const waistband = {
       points.frontWaist.angle(points.backWaist) - points.backWaistband.angle(points.backWaist)
     const angleFront =
       points.frontWaist.angle(points.backWaist) - paths.frontTop.end().angle(points.frontWaist)
-    var angle = angleBack - 90 + (90 - angleFront) / 2
+    let angle = angleBack - 90 + (90 - angleFront) / 2
 
-    var iter = 0
-    var diff = 0
+    let iter = 0
+    let diff = 0
     do {
       points.topFront = points.topFront.shift(180, diff / 2.5)
       points.topBack = points.topBack.shift(0, diff / 1.5)
@@ -167,11 +167,11 @@ export const waistband = {
       snippets.gusset = new Snippet('notch', paths.bottom.shiftAlong(gussetWidth))
     }
 
-    var top = paths.top.edge('top')
+    let top = paths.top.edge('top')
     if (top.y == points.topFront.y) {
       top = paths.top.edge('bottom')
     }
-    var bottom = paths.bottom.edge('bottom')
+    let bottom = paths.bottom.edge('bottom')
     if (bottom.y == points.bottomFront.y) {
       bottom = paths.bottom.edge('top')
     }

@@ -1,6 +1,24 @@
-import { cbqc } from '@freesewing/core'
-import { pctBasedOn } from '@freesewing/core'
+import { cbqc, pctBasedOn } from '@freesewing/core'
 import { shape } from './shape.mjs'
+
+const createGusset = (store, points, paths, Path, side) => {
+  const gussetAngle = store.get(side + 'GussetAngle') * 0.5 * (side == 'front' ? 1 : -1)
+  const gussetLength = store.get(side + 'GussetLength')
+  points[side + 'Center'] = points.centerCenter.shift(side == 'front' ? 270 : 90, gussetLength)
+  points[side + 'CenterCp'] = points[side + 'Center'].shift(
+    (side == 'front' ? 90 : 270) - gussetAngle,
+    gussetLength / 3
+  )
+  points[side + 'OutsideCenterCp'] = points.outsideCenter.shift(
+    side == 'front' ? 270 : 90,
+    gussetLength / 3
+  )
+
+  paths[side] = new Path()
+    .move(points[side + 'Center'])
+    .curve(points[side + 'CenterCp'], points[side + 'OutsideCenterCp'], points.outsideCenter)
+    .hide()
+}
 
 export const gusset = {
   name: 'lumira.gusset',
@@ -54,32 +72,11 @@ export const gusset = {
     const waistLowering = store.get('waistLowering')
     const waistbandSize = store.get('waistbandSize')
     const gussetWidth = store.get('gussetWidth')
-    const backCircleLength = store.get('backCircleLength')
     const backGussetLength = store.get('backGussetLength')
     const frontGussetLength = store.get('frontGussetLength')
     const ease = 1 + options.ease
     const frontBulge = options.cyclingchamois ? true : options.frontbulge
     const backGusset = options.cyclingchamois ? true : options.backgusset
-
-    const CreateGusset = (side) => {
-      const gussetAngle = store.get(side + 'GussetAngle') * 0.5 * (side == 'front' ? 1 : -1)
-      const gussetLength = store.get(side + 'GussetLength')
-      console.log({ gussetAngle: gussetAngle, gussetLength: gussetLength })
-      points[side + 'Center'] = points.centerCenter.shift(side == 'front' ? 270 : 90, gussetLength)
-      points[side + 'CenterCp'] = points[side + 'Center'].shift(
-        (side == 'front' ? 90 : 270) - gussetAngle,
-        gussetLength / 3
-      )
-      points[side + 'OutsideCenterCp'] = points.outsideCenter.shift(
-        side == 'front' ? 270 : 90,
-        gussetLength / 3
-      )
-
-      paths[side] = new Path()
-        .move(points[side + 'Center'])
-        .curve(points[side + 'CenterCp'], points[side + 'OutsideCenterCp'], points.outsideCenter)
-        .hide()
-    }
 
     if (options.frontbulgesize > options.gussetwidth * 0.9) {
       options.frontbulgesize = options.gussetwidth * 0.9
@@ -103,14 +100,16 @@ export const gusset = {
       (options.cyclingchamois
         ? 0.0125
         : options.frontbulgesize > options.gussetwidth * 0.9
-        ? options.gussetwidth * 0.9
-        : options.frontbulgesize) * measurements.crossSeamFront
+          ? options.gussetwidth * 0.9
+          : options.frontbulgesize) * measurements.crossSeamFront
     const backInsertGussetCpAngle = options.cyclingchamois ? 0 : 90 * options.buttlift
 
     points.centerCenter = new Point(0, 0)
     points.outsideCenter = points.centerCenter.shift(0, gussetWidth)
 
     if (backGusset) {
+      const backCircleLength = store.get('backCircleLength')
+
       points.outsideBackCircleStart = points.outsideCenter.shift(90, backGussetLength)
       points.centerBackCircleEnd = points.outsideBackCircleStart
         .shift(
@@ -135,8 +134,8 @@ export const gusset = {
         measurements.upperLeg * 0.25 * ease * options.backinsertgussetcp
       )
 
-      var diff = 0
-      var iter = 0
+      let diff = 0
+      let iter = 0
       do {
         points.centerBackCircleEndCp1 = points.centerBackCircleEndCp1.shift(
           options.backinserttopcpangle,
@@ -187,7 +186,7 @@ export const gusset = {
 
       points.backCenter = points.centerBackCircleEnd.clone()
     } else {
-      CreateGusset('back')
+      createGusset(store, points, paths, Path, 'back')
 
       points.title = points.centerCenter.shiftFractionTowards(points.outsideCenter, 0.5)
     }
@@ -195,7 +194,7 @@ export const gusset = {
     if (frontBulge) {
       const bulgeSplitForward = measurements.crossSeamFront * options.frontbulgeforwardpercentage
       const frontLength = store.get('frontLength') - bulgeSplitForward
-      var rotateAngle =
+      let rotateAngle =
         utils.rad2deg(Math.asin((frontBulgeSize * 0.5) / gussetWidth)) * (0.6 + options.gussetwidth)
 
       if (rotateAngle > 90) {
@@ -215,8 +214,8 @@ export const gusset = {
       const thisCbqc = cbqc * 0.75
       points.frontOutsideSplitCp1 = points.frontOutsideSplit.shift(270, thisCbqc * frontLength)
 
-      diff = 0
-      iter = 0
+      let diff = 0
+      let iter = 0
       do {
         points.frontOutside = points.frontOutside.shiftTowards(points.frontOutsideSplit, diff)
         points.frontOutsideCp = points.frontOutside.shift(
@@ -240,8 +239,6 @@ export const gusset = {
       const frontCenterAngle = points.frontOutside.angle(points.frontOutsideHips) - 90
       points.frontoutsideCenter = points.frontOutside.shift(180 + frontCenterAngle, gussetWidth)
       points.frontCenterHips = points.frontOutsideHips.shift(180 + frontCenterAngle, gussetWidth)
-
-      console.log({ points: JSON.parse(JSON.stringify(points)) })
 
       points.outsideBackCircleStart = points.outsideCenter.shift(90, backGussetLength)
 
@@ -317,7 +314,7 @@ export const gusset = {
 
       points.frontCenter = points.frontCenterSplit.clone()
     } else {
-      CreateGusset('front')
+      createGusset(store, points, paths, Path, 'front')
     }
 
     paths.seamSA = new Path()
