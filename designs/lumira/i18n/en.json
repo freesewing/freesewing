@@ -5,14 +5,13 @@
     "shape": "Shape",
     "leg": "Leg",
     "gusset": "Gusset",
-    "waistband": "Waistband",
-    "couldNotFitFrontGussetPath": "Could not fit the front gusset path"
+    "waistband": "Waistband"
    },
   "s": {
     "bulgeToLarge": "The value for the bulge is too large, and this cannot be made to fit. It is adjusted accordingly.",
-    "couldNotFitCircle": "Could not made the circle fit",
-    "couldNotFitFrontOutside": "Could not made the front outside to fit",
-    "couldNotFitFrontGussetPath": "Could not made the front gusset path to fit",
+    "couldNotFitCircle": "Could not make the circle fit",
+    "couldNotFitFrontOutside": "Could not make the front outside to fit",
+    "couldNotFitFrontGussetPath": "Could not make the front gusset path to fit",
     "couldNotCreateWaistCircle": "Could not create the waist curve",
     "couldNotCreateWaistBack": "Could not create the waist back",
     "couldNotReduceWaist":  "Could not reduce the waist"
