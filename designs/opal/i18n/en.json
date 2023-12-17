@@ -3,11 +3,23 @@
   "d": "A FreeSewing design for overalls",
   "p": {
     "back": "Back",
-    "front": "Front"
+    "front": "Front",
+	"bib": "Bib",
+	"pocketSlash": "Slash pocket",
+	"pocketBack": "Back pocket",
+	"pocketBib": "Bib pocket",
+	"pocketShield": "Pocket\nshield",
+	"pocketCarpenter": "Carpenter\npocket\n(right side)",
+	"pocketCarpenterExtra": "Second\ncarpenter\npocket\n(right side)",
+	"hammerLoop": "Hammer Loop (left side)",
+	"waistband": "Waistband",
+	"bibPlacket": "Bib placket"
  },
   "s": {
     "crossSeamFrontTooSmall.t": "The **front** cannot be drafted.",
-    "crossSeamFrontTooSmall.d": "The **cross seam front**, of length {{{length}}}, is too short to be drafted onto a body with a seat located {{{depth}}} below the waist and a crotch fork extending {{{girth}}} horizontally beyond the waist. Please check your measurements and options, especially *cross seam front*, *waist to seat*, and *crotch ease*."
+    "crossSeamFrontTooSmall.d": "The **cross seam front**, of length {{{length}}}, is too short to be drafted onto a body with a seat located {{{depth}}} below the waist and a crotch fork extending {{{girth}}} horizontally beyond the waist. Please check your measurements and options, especially *cross seam front*, *waist to seat*, and *crotch ease*.",
+	"fold": "Fold",
+	"grainlineEitherWay": "Grainline goes either way"
  },
   "o": { }
 }

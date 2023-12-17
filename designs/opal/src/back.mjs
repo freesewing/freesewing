@@ -1,8 +1,10 @@
 import { front } from './front.mjs'
+import { bib } from './bib.mjs'
 
 function draftBack({
   measurements,
   options,
+  absoluteOptions,
   Point,
   Path,
   points,
@@ -18,23 +20,10 @@ function draftBack({
   utils,
   scale,
 }) {
-  // Todo:
-  // - Make needed changes to make this a back piece.
-  // - Form the back bib/straps (lines).
-  // - Add curves to bib/straps.
+  // The distance from the front waist, over the HPS, and back down to the back waist. This plus the cross seam gives the vertical trunk.
+  const waistToWaist = measurements.hpsToWaistFront + measurements.hpsToWaistBack
 
-  /*
-   * Helper method to determine if the cross seam is too short or too long, adapted from Titan (Joost De Cock).
-   */
-  const crossSeamDelta = () =>
-    new Path()
-      .move(points.cfWaist)
-      .line(points.crossSeamCurveStart)
-      .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
-      .length() - crossSeamBack
-
-  const crossSeamBack = measurements.crossSeamBack * (1 + options.crotchEase)
-
+  // First let's draft the bottoms.
   points.cfWaist = new Point(
     -measurements.waistBackArc * (1 + options.waistEase) * (1 + options.waistBalance),
     0
@@ -54,36 +43,19 @@ function draftBack({
     measurements.waistToUpperLeg * (1 + options.crotchDrop)
   )
 
-  let minX = points.crossSeamCurveStart.x
-  let maxX = -2 * crossSeamBack
-  let delta
-
-  // This is a binary search, so 20 iterations should get us within 1 part in 1 million error.
-  for (let i = 0; i < 1; i++) {
-    const midX = (minX + maxX) / 2
-    //    points.fork.x = midX
-
-    // With the fork moved, recalculate the scoop.
-    points.crossSeamCurveMax = utils.beamsIntersect(
-      points.cfWaist,
-      points.cfSeat,
-      points.fork,
-      points.fork.shift(0, 1337)
-    )
-    points.crossSeamCurveCp1 = points.crossSeamCurveStart.shiftFractionTowards(
-      points.crossSeamCurveMax,
-      options.crossSeamCurveBend
-    )
-    points.crossSeamCurveCp2 = points.fork
-      .shiftFractionTowards(points.crossSeamCurveMax, options.crossSeamCurveBend)
-      .rotate(options.crossSeamCurveAngle, points.fork)
-
-    delta = crossSeamDelta()
-
-    delta < 0 ? (minX = midX) : (maxX = midX)
-  }
-
-  // If this checks true, it means that the crotch fork can't be placed with the given measurements and options.
+  points.crossSeamCurveMax = utils.beamsIntersect(
+    points.cfWaist,
+    points.cfSeat,
+    points.fork,
+    points.fork.shift(0, 1337)
+  )
+  points.crossSeamCurveCp1 = points.crossSeamCurveStart.shiftFractionTowards(
+    points.crossSeamCurveMax,
+    options.crossSeamCurveBend
+  )
+  points.crossSeamCurveCp2 = points.fork
+    .shiftFractionTowards(points.crossSeamCurveMax, options.crossSeamCurveBend)
+    .rotate(options.crossSeamCurveAngle, points.fork)
 
   const legLength = (measurements.waistToFloor - points.fork.y) * options.legLength
   const thighAnkleRatio = Math.min(1, options.legLength / options.anklePosition)
@@ -96,22 +68,311 @@ function draftBack({
   points.outseamHem = new Point(0, points.fork.y + legLength)
   points.waist = new Point(0, 0)
 
+  // Now let's draft the back bib.
+  points.cfWaist.y = store.get('waistYCoordinate')
+  points.waist.y = points.cfWaist.y - waistToWaist * options.outseamHeight
+  const seatWaistInverseSlope = 1 / points.crossSeamCurveStart.slope(points.cfWaist)
+  points.bibHexagonBottom = new Point(
+    0,
+    -measurements.hpsToWaistBack *
+      (options.backBibHexagonVerticalPosition - (1 / 2) * options.backBibHexagonLength)
+  )
+  points.bibHexagonBottom.x =
+    points.cfWaist.x + (1 / 2) * points.bibHexagonBottom.y * seatWaistInverseSlope
+  points.bibHexagonCenter = points.bibHexagonBottom.translate(
+    0,
+    +measurements.hpsToWaistBack * ((-1 / 2) * options.backBibHexagonLength)
+  )
+  points.bibHexagonLowerInside = points.bibHexagonCenter.translate(
+    (measurements.waist / 4) * options.backBibHexagonWidth,
+    measurements.hpsToWaistBack * ((1 / 2) * options.backBibHexagonSideLength)
+  )
+  points.bibHexagonUpperInside = points.bibHexagonCenter.translate(
+    (measurements.waist / 4) * options.backBibHexagonWidth,
+    measurements.hpsToWaistBack * ((-1 / 2) * options.backBibHexagonSideLength)
+  )
+  points.bibHexagonTop = points.bibHexagonCenter.translate(
+    0,
+    +measurements.hpsToWaistBack * ((-1 / 2) * options.backBibHexagonLength)
+  )
+  points.bibHexagonLowerOutside = points.bibHexagonCenter.translate(
+    (-measurements.waist / 4) * options.backBibHexagonWidth,
+    measurements.hpsToWaistBack * ((1 / 2) * options.backBibHexagonSideLength)
+  )
+  points.bibHexagonUpperOutside = points.bibHexagonCenter.translate(
+    (-measurements.waist / 4) * options.backBibHexagonWidth,
+    measurements.hpsToWaistBack * ((-1 / 2) * options.backBibHexagonSideLength)
+  )
+
+  // Next come the straps.
+  const strapLength =
+    (waistToWaist - store.get('bibFrontHeight') + points.bibHexagonTop.y) * options.strapLength
+  const strapWidth = options.strapWidth * waistToWaist
+  points.strapTaperOutside = new Point(
+    points.bibHexagonUpperOutside.x + measurements.waistBack * options.strapPosition,
+    points.bibHexagonTop.y - options.strapTaperPosition * strapLength
+  )
+  points.strapTaperInside = points.strapTaperOutside.translate(strapWidth, 0)
+  points.strapEndOutside = points.strapTaperOutside.translate(
+    0,
+    -strapLength * (1 - options.strapTaperPosition)
+  )
+  points.strapEndInside = points.strapEndOutside.translate(strapWidth, 0)
+
+  // Finally, let's draft the control points for the curves.
   points.forkCp2 = points.crossSeamCurveCp2.rotate(-90, points.fork)
   points.inseamHemCp1 = points.inseamHem.shiftFractionTowards(points.forkCp2, 2 / 3)
 
-  paths.seam = new Path()
-    .move(points.cfWaist)
+  points.bibCurveMax = utils.beamsIntersect(
+    points.waist,
+    points.waist.shift(180 - options.backBibBaseAngle, 9001),
+    points.bibHexagonLowerInside,
+    points.bibHexagonUpperInside
+  )
+  // Avoids an ugly case if backBibBaseCurve would overshoot the hexagon and recurve.
+  if (points.bibCurveMax.y < points.bibHexagonLowerInside.y)
+    points.bibCurveMax.y = points.bibHexagonLowerInside.y
+  points.waistCp2 = points.waist.shiftFractionTowards(points.bibCurveMax, options.backBibBaseCurve)
+  points.bibHexagonLowerInsideCp1 = points.bibHexagonLowerInside.shiftFractionTowards(
+    points.bibCurveMax,
+    options.backBibBaseCurve
+  )
+
+  points.strapTaperCurveMax = utils.beamsIntersect(
+    points.bibHexagonUpperInside,
+    points.bibHexagonTop,
+    points.strapTaperInside,
+    points.strapEndInside
+  )
+  // Avoids an ugly case if the taper point is set too low.
+  if (points.strapTaperInside.y > points.strapTaperCurveMax.y) {
+    points.strapTaperInside.y = points.strapTaperCurveMax.y
+    points.strapTaperOutside.y = points.strapTaperCurveMax.y
+  }
+  points.bibHexagonTopCp2 = points.bibHexagonTop.shiftFractionTowards(
+    points.strapTaperCurveMax,
+    options.strapTaperCurve
+  )
+  points.strapTaperInsideCp1 = points.strapTaperInside.shiftFractionTowards(
+    points.strapTaperCurveMax,
+    options.strapTaperCurve
+  )
+  points.strapTaperOutsideCp2 = points.strapTaperOutside.translate(
+    0,
+    (points.strapTaperOutside.dy(points.bibHexagonUpperOutside) * 1) / 2
+  )
+  points.bibHexagonUpperOutsideCp1 = points.bibHexagonUpperOutside.translate(
+    0,
+    (points.bibHexagonUpperOutside.dy(points.strapTaperOutside) * 1) / 6
+  )
+
+  points.cfBackMax = utils.beamsIntersect(
+    points.bibHexagonBottom,
+    points.bibHexagonTop,
+    points.cfWaist,
+    points.crossSeamCurveStart
+  )
+  points.bibHexagonBottomCp2 = points.bibHexagonBottom.shiftFractionTowards(points.cfBackMax, 2 / 3)
+  points.cfWaistCp1 = points.cfWaist.shiftFractionTowards(points.cfBackMax, 2 / 3)
+
+  // Draft points for the back pocket.
+  const pocketMetric = -points.cfWaist.x
+  points.backPocket = new Point(
+    -pocketMetric * options.pocketBackPositionX,
+    pocketMetric * options.pocketBackPositionY
+  ).addText('opal:pocketBack', 'center')
+  store.set('backPocketCenter', points.backPocket)
+  points.backPocketFrontTop = points.backPocket.translate(
+    (pocketMetric * options.pocketBackWidth) / 2,
+    (-pocketMetric * options.pocketBackHeight) / 2
+  )
+  points.backPocketBackTop = points.backPocketFrontTop.translate(
+    -pocketMetric * options.pocketBackWidth,
+    0
+  )
+  points.backPocketFrontBottom = points.backPocketFrontTop.translate(
+    0,
+    pocketMetric * options.pocketBackHeight
+  )
+  points.backPocketBackBottom = new Point(
+    points.backPocketBackTop.x,
+    points.backPocketFrontBottom.y
+  )
+  points.backPocketBackBottomP1 = points.backPocketBackBottom.shiftFractionTowards(
+    points.backPocketBackTop,
+    options.pocketBackCornerHeight
+  )
+  points.backPocketBackBottomP2 = points.backPocketBackBottom.shiftFractionTowards(
+    points.backPocketFrontBottom,
+    options.pocketBackCornerWidth / 2
+  )
+  points.backPocketFrontBottomP1 = points.backPocketFrontBottom.shiftFractionTowards(
+    points.backPocketBackBottom,
+    options.pocketBackCornerWidth / 2
+  )
+  points.backPocketFrontBottomP2 = points.backPocketFrontBottom.shiftFractionTowards(
+    points.backPocketFrontTop,
+    options.pocketBackCornerHeight
+  )
+
+  // Draft points for the carpenter pockets.
+  points.carpenterPocketTopBack = points.backPocketFrontBottom.translate(
+    pocketMetric * -options.pocketCarpenterAnchorX,
+    pocketMetric * -options.pocketCarpenterAnchorY
+  )
+  points.carpenterPocketTopFront = points.carpenterPocketTopBack.translate(
+    pocketMetric * options.pocketCarpenterAnchorWidth,
+    0
+  )
+  points.carpenterPocketOutseamTop = new Point(
+    0,
+    points.carpenterPocketTopBack.y + pocketMetric * options.pocketCarpenterOpeningHeight
+  )
+  points.carpenterPocketOutseamBottom = new Point(
+    0,
+    points.carpenterPocketTopBack.y + pocketMetric * options.pocketCarpenterHeight
+  )
+  points.carpenterPocketBottomBack = new Point(
+    points.carpenterPocketTopBack.x,
+    points.carpenterPocketOutseamBottom.y
+  )
+  points.carpenterPocketExtraOutseamTop = points.carpenterPocketOutseamBottom.translate(
+    0,
+    pocketMetric * -options.pocketCarpenterExtraHeight
+  )
+  points.carpenterPocketExtraBackTop = new Point(
+    points.carpenterPocketBottomBack.x,
+    points.carpenterPocketExtraOutseamTop.y
+  )
+  points.carpenterPocketLabel = points.carpenterPocketTopBack
+    .shiftFractionTowards(points.carpenterPocketOutseamBottom, 0.4)
+    .addText('opal:pocketCarpenter', 'center')
+  points.carpenterPocketExtraLabel = points.carpenterPocketBottomBack
+    .shiftFractionTowards(points.carpenterPocketExtraOutseamTop, 1 / 2)
+    .addText('opal:pocketCarpenterExtra', 'center')
+  store.set('carpenterPocketLabel', points.carpenterPocketLabel)
+  store.set('carpenterPocketExtraLabel', points.carpenterPocketExtraLabel)
+
+  // Draft points for the hammer loop.
+  points.hammerLoopTop = points.backPocketFrontBottomP1.shiftFractionTowards(
+    points.backPocketFrontBottomP2,
+    0.5
+  )
+  points.hammerLoopMax = points.hammerLoopTop.translate(
+    pocketMetric * options.hammerLoopCornerX,
+    pocketMetric * options.hammerLoopCornerY
+  )
+  points.hammerLoopOutseam = new Point(
+    0,
+    points.hammerLoopTop.y + pocketMetric * options.hammerLoopOutseam
+  )
+  points.hammerLoopCp1 = points.hammerLoopTop.shiftFractionTowards(
+    points.hammerLoopMax,
+    options.hammerLoopCurve
+  )
+  points.hammerLoopCp2 = points.hammerLoopOutseam.shiftFractionTowards(
+    points.hammerLoopMax,
+    options.hammerLoopCurve
+  )
+  const hammerLoopStartAngle = points.hammerLoopTop.angle(points.hammerLoopMax)
+  const hammerLoopEndAngle = points.hammerLoopMax.angle(points.hammerLoopOutseam)
+  const hammerLoopWidth = pocketMetric * options.hammerLoopWidth
+
+  paths.centerSeam = new Path()
+    .move(points.bibHexagonBottom)
+    .curve(points.bibHexagonBottomCp2, points.cfWaistCp1, points.cfWaist)
     .line(points.crossSeamCurveStart)
     .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
     .curve(points.forkCp2, points.inseamHemCp1, points.inseamHem)
-    .line(points.outseamHem)
-    .line(points.waist)
-    .line(points.cfWaist)
-    .close()
-    .attr('class', 'fabric')
+    .addClass('fabric')
+  paths.outseam = new Path().move(points.outseamHem).line(points.waist).addClass('fabric')
+  paths.legHem = new Path().move(points.inseamHem).line(points.outseamHem).addClass('fabric')
+  paths.hem = new Path()
+    .move(points.waist)
+    .curve(points.waistCp2, points.bibHexagonLowerInsideCp1, points.bibHexagonLowerInside)
+    .line(points.bibHexagonUpperInside)
+    .line(points.bibHexagonTop)
+    .curve(points.bibHexagonTopCp2, points.strapTaperInsideCp1, points.strapTaperInside)
+    .line(points.strapEndInside)
+    .line(points.strapEndOutside)
+    .line(points.strapTaperOutside)
+    .curve(
+      points.strapTaperOutsideCp2,
+      points.bibHexagonUpperOutsideCp1,
+      points.bibHexagonUpperOutside
+    )
+    .line(points.bibHexagonLowerOutside)
+    .line(points.bibHexagonBottom)
+    .addClass('fabric')
+  points.inseamHemAllowance = points.inseamHem.translate(-sa, absoluteOptions.legHemAllowance)
+  points.outseamHemAllowance = points.outseamHem.translate(sa, absoluteOptions.legHemAllowance)
+
+  if (options.pocketBack)
+    store.set(
+      'pocketBack',
+      (paths.pocketBack = new Path()
+        .move(points.backPocketFrontTop)
+        .line(points.backPocketBackTop)
+        .line(points.backPocketBackBottomP1)
+        .line(points.backPocketBackBottomP2)
+        .line(points.backPocketFrontBottomP1)
+        .line(points.backPocketFrontBottomP2)
+        .line(points.backPocketFrontTop)
+        .close()
+        .addClass('fabric dashed'))
+    )
+
+  if (options.pocketCarpenter)
+    store.set(
+      'pocketCarpenter',
+      (paths.pocketCarpenter = new Path()
+        .move(points.carpenterPocketTopFront)
+        .line(points.carpenterPocketTopBack)
+        .line(points.carpenterPocketBottomBack)
+        .line(points.carpenterPocketOutseamBottom)
+        .line(points.carpenterPocketOutseamTop)
+        .line(points.carpenterPocketTopFront)
+        .close()
+        .addClass('fabric dashed'))
+    )
+
+  if (options.pocketCarpenterExtra)
+    store.set(
+      'pocketCarpenterExtra',
+      (paths.pocketCarpenterExtra = new Path()
+        .move(points.carpenterPocketExtraOutseamTop)
+        .line(points.carpenterPocketExtraBackTop)
+        .line(points.carpenterPocketBottomBack)
+        .line(points.carpenterPocketOutseamBottom)
+        .line(points.carpenterPocketExtraOutseamTop)
+        .close()
+        .addClass('fabric dashed'))
+    )
+
+  if (options.hammerLoop) {
+    paths.hammerLoopCenter = new Path()
+      .move(points.hammerLoopTop)
+      .curve(points.hammerLoopCp1, points.hammerLoopCp2, points.hammerLoopOutseam)
+      .addClass('various dotted')
+      .addText('opal:hammerLoop', 'center')
+    paths.hammerLoopLeft = paths.hammerLoopCenter
+      .offset(hammerLoopWidth / 2)
+      .addClass('fabric dashed')
+    paths.hammerLoopRight = paths.hammerLoopCenter
+      .offset(-hammerLoopWidth / 2)
+      .addClass('fabric dashed')
+    store.set('hammerLoopLength', paths.hammerLoopCenter.length())
+    store.set('hammerLoopWidth', hammerLoopWidth)
+  }
 
   if (sa) {
-    paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    paths.sa = paths.outseam
+      .offset(sa)
+      .join(paths.hem.offset(absoluteOptions.hemAllowance).join(paths.centerSeam.offset(sa)))
+      .line(points.inseamHemAllowance)
+      .line(points.outseamHemAllowance)
+      .close()
+      .addClass('fabric sa')
   }
 
   if (complete)
@@ -121,17 +382,27 @@ function draftBack({
       .line(points.fork)
       .addClass('note help')
 
+  paths.bibLowerHexagonHint = new Path()
+    .move(points.bibHexagonBottom)
+    .line(points.bibHexagonLowerInside)
+    .addClass('note help')
+
+  paths.bibUpperHexagonHint = new Path()
+    .move(points.bibHexagonTop)
+    .line(points.bibHexagonUpperOutside)
+    .addClass('note help')
+
   macro('hd', {
     id: 'wWaist',
     from: points.cfWaist,
     to: points.waist,
-    y: points.waist.y - (sa + 15),
+    y: points.cfWaist.y,
   })
   macro('hd', {
     id: 'wWaistToCrossSeamCurveStart',
     from: points.crossSeamCurveStart,
     to: points.cfWaist,
-    y: points.waist.y - (sa + 15),
+    y: points.cfWaist.y - (sa + 15),
     noStartMarker: true,
     noEndMarker: true,
   })
@@ -139,7 +410,7 @@ function draftBack({
     id: 'wCrossSeamCurveStartToCrossCurveSeamMax',
     from: points.crossSeamCurveMax,
     to: points.crossSeamCurveStart,
-    y: points.waist.y - (sa + 15),
+    y: points.cfWaist.y - (sa + 15),
     noStartMarker: true,
     noEndMarker: true,
   })
@@ -147,7 +418,7 @@ function draftBack({
     id: 'wCrossSeamCurveMaxToFork',
     from: points.fork,
     to: points.crossSeamCurveMax,
-    y: points.waist.y - (sa + 15),
+    y: points.cfWaist.y - (sa + 15),
     noStartMarker: true,
     noEndMarker: true,
   })
@@ -155,13 +426,13 @@ function draftBack({
     id: 'wCrossSeamCurveStartToFork',
     from: points.fork,
     to: points.crossSeamCurveStart,
-    y: points.waist.y - (sa + 30),
+    y: points.cfWaist.y - (sa + 30),
   })
   macro('hd', {
     id: 'wWidthAtFork',
     from: points.fork,
     to: points.waist,
-    y: points.waist.y - (sa + 45),
+    y: points.outseamHem.y + (sa + 30),
   })
   macro('hd', {
     id: 'wHem',
@@ -175,11 +446,97 @@ function draftBack({
     to: points.inseamHem,
     y: points.inseamHem.y + (sa + 15),
   })
+  macro('hd', {
+    id: 'wStrapWidth',
+    from: points.strapEndOutside,
+    to: points.strapEndInside,
+    y: points.strapEndOutside.y - (absoluteOptions.hemAllowance + 15),
+  })
+  macro('hd', {
+    id: 'wStrapInsideToHexagonTop',
+    from: points.strapEndInside,
+    to: points.bibHexagonTop,
+    y: points.strapEndOutside.y - (absoluteOptions.hemAllowance + 15),
+  })
+  macro('hd', {
+    id: 'wStrapOutsideToHexagonTop',
+    from: points.strapEndOutside,
+    to: points.bibHexagonTop,
+    y: points.strapEndOutside.y - (absoluteOptions.hemAllowance + 30),
+  })
+  macro('hd', {
+    id: 'wHexagonWidth',
+    from: points.bibHexagonLowerOutside,
+    to: points.bibHexagonLowerInside,
+    y: points.bibHexagonLowerOutside.y,
+  })
+  macro('hd', {
+    id: 'wWidthHexagonBottomToOutseam',
+    from: points.bibHexagonBottom,
+    to: points.waist,
+    y: points.bibHexagonBottom.y,
+  })
+  macro('hd', {
+    id: 'wBackBibCurve',
+    from: points.bibHexagonLowerInside,
+    to: points.waist,
+    y: points.bibHexagonLowerInside.y,
+  })
   macro('vd', {
     id: 'vOutseam',
     from: points.waist,
     to: points.outseamHem,
     x: points.waist.x + (sa + 15),
+  })
+  macro('vd', {
+    id: 'vHexagonLowerSideToOutseamTop',
+    from: points.bibHexagonLowerInside,
+    to: points.waist,
+    x: points.waist.x + 0,
+  })
+  macro('vd', {
+    id: 'vHexagonUpperSideToLowerSide',
+    from: points.bibHexagonUpperInside,
+    to: points.bibHexagonLowerInside,
+    x: points.waist.x + 0,
+  })
+  macro('vd', {
+    id: 'vHexagonTopToUpperSide',
+    from: points.bibHexagonTop,
+    to: points.bibHexagonUpperInside,
+    x: points.waist.x + 0,
+  })
+  macro('vd', {
+    id: 'vHexagonTopToOutseam',
+    from: points.bibHexagonTop,
+    to: points.waist,
+    x: points.waist.x + 15,
+  })
+  macro('vd', {
+    id: 'vStrapInsideTaperedHeight',
+    from: points.strapTaperInside,
+    to: points.bibHexagonTop,
+    x: points.waist.x + 0,
+  })
+  macro('vd', {
+    id: 'vStrapInsideStraightHeight',
+    from: points.strapEndInside,
+    to: points.strapTaperInside,
+    x: points.waist.x + 0,
+  })
+  macro('vd', {
+    id: 'vStrapInsideHeight',
+    from: points.strapEndInside,
+    to: points.bibHexagonTop,
+    x: points.waist.x + 15,
+  })
+  macro('vd', {
+    id: 'vLegHemAllowance',
+    from: points.outseamHem,
+    to: points.outseamHemAllowance,
+    x: points.waist.x + (sa + 15),
+    noStartMarker: true,
+    noEndMarker: true,
   })
   macro('vd', {
     id: 'vWaistToCrossSeamCurveStart',
@@ -194,8 +551,8 @@ function draftBack({
     x: points.fork.x - (sa + 15),
   })
   macro('vd', {
-    id: 'vWaistToFork',
-    from: points.cfWaist,
+    id: 'vHexagonBottomToFork',
+    from: points.bibHexagonBottom,
     to: points.fork,
     x: points.fork.x - (sa + 30),
   })
@@ -204,6 +561,60 @@ function draftBack({
     from: points.fork,
     to: points.inseamHem,
     x: points.fork.x - (sa + 30),
+  })
+  macro('vd', {
+    id: 'vHexagonBottomToWaist',
+    from: points.bibHexagonBottom,
+    to: points.cfWaist,
+    x: points.fork.x - (sa + 15),
+  })
+  macro('vd', {
+    id: 'vHexagonLowerSideToHexagonBottom',
+    from: points.bibHexagonLowerOutside,
+    to: points.bibHexagonBottom,
+    x: points.fork.x - (sa + 15),
+  })
+  macro('vd', {
+    id: 'vHexagonUpperSideToHexagonLowerSide',
+    from: points.bibHexagonUpperOutside,
+    to: points.bibHexagonLowerOutside,
+    x: points.fork.x - (sa + 15),
+  })
+  macro('vd', {
+    id: 'vHexagonTopToHexagonUpperSide',
+    from: points.bibHexagonTop,
+    to: points.bibHexagonUpperOutside,
+    x: points.fork.x - (sa + 15),
+  })
+  macro('vd', {
+    id: 'vHexagonHeight',
+    from: points.bibHexagonTop,
+    to: points.bibHexagonBottom,
+    x: points.fork.x - (sa + 30),
+  })
+  macro('vd', {
+    id: 'vStrapStraightHeight',
+    from: points.strapEndOutside,
+    to: points.strapTaperOutside,
+    x: points.fork.x - (sa + 15),
+  })
+  macro('vd', {
+    id: 'vStrapTaperHeight',
+    from: points.strapTaperOutside,
+    to: points.bibHexagonTop,
+    x: points.fork.x - (sa + 15),
+  })
+  macro('vd', {
+    id: 'vStrapHeight',
+    from: points.strapEndOutside,
+    to: points.bibHexagonTop,
+    x: points.fork.x - (sa + 30),
+  })
+  macro('vd', {
+    id: 'vTotal',
+    from: points.strapEndOutside,
+    to: points.inseamHem,
+    x: points.fork.x - (sa + 45),
   })
 
   points.grainlineTop = points.waist.shiftFractionTowards(points.cfWaist, 0.05)
@@ -215,11 +626,13 @@ function draftBack({
 
   store.cutlist.addCut({ cut: 2, from: 'fabric' })
 
-  points.title = points.cfWaist.shiftFractionTowards(points.outseamHem, 0.5)
+  points.title = points.cfWaist
+    .shiftFractionTowards(points.outseamHem, 0.5)
+    .shiftFractionTowards(points.inseamHem, 0.5)
   macro('title', { at: points.title, nr: 2, title: 'onyx:back' })
-  points.logo = points.title.translate(-scale * 20, scale * 35)
+  points.logo = points.title.translate(scale * -20, scale * 35)
   snippets.logo = new Snippet('logo', points.logo)
-  points.scalebox = points.title.translate(0, -scale * 100)
+  points.scalebox = points.title.translate(scale * -10, scale * -80)
   macro('scalebox', { at: points.scalebox })
 
   return part
@@ -230,13 +643,61 @@ export const back = {
   after: front,
   draft: draftBack,
   options: {
-    // Where the back bib is located. 0% refers to the waist, while 100% refers to the HPS.
-    backBibPosition: { pct: 40, min: 10, max: 90, menu: 'style' },
-    // How long the hexagon where the two sides of the back bib cross over is, as a percent of hpsToWaist.
-    backBibLength: { pct: 20, min: 10, max: 40, menu: 'style' },
+    // What angle the back bib leaves the outseam at. 0 is horizontal, 90 is vertical.
+    backBibBaseAngle: { deg: 25, min: 0, max: 90, menu: 'style' },
+    // How deep to make the curve connecting the top of the outseam with the hexagon of the back bib.
+    backBibBaseCurve: { pct: 40, min: 0, max: 100, menu: 'style' },
+    // How high up the hexagon of the back bib is located. 0% refers to the waist, while 100% refers to the HPS.
+    backBibHexagonVerticalPosition: { pct: 50, min: 10, max: 90, menu: 'style' },
+    // How long the hexagon where the two sides of the back bib cross over is, as a percent of hpsToWaistBack.
+    backBibHexagonLength: { pct: 40, min: 10, max: 60, menu: 'style' },
     // How wide the hexagon of the back bib is, as a percent of the waist measurement.
-    backBibWidth: { pct: 40, min: 20, max: 80, menu: 'style' },
-    // How much longer to make the straps, as a percent of the distance between the two bibs.
-    strapBonusLength: { pct: 60, min: 0, max: 120, menu: 'style' },
+    backBibHexagonWidth: { pct: 40, min: 20, max: 80, menu: 'style' },
+    // How long to make the two vertical sides of the back bib hexagon.
+    backBibHexagonSideLength: { pct: 12, min: 5, max: 40, menu: 'style' },
+    // How long to make the straps, as a percent of the distance from the front waist, over the HPS, and down to the back waist. Recommended 100-110% for fixed straps, 130-140% for adjustable straps.
+    strapLength: { pct: 160, min: 100, max: 200, menu: 'style' },
+    strapWidth: {
+      pct: 4,
+      min: 2,
+      max: 10,
+      toAbs: (pct, settings, mergedOptions) =>
+        mergedOptions.strapWidth *
+        (settings.measurements.hpsToWaistFront + settings.measurements.hpsToWaistBack),
+      menu: 'style',
+    },
+    // How the straps are positioned with respect to the hexagon. 0 places the outer edge of each strap lined up with the outer edge of the hexagon. Negative values place the outer edge farther out. 0 is generally the most fabric efficient, while negative values may fit better.
+    strapPosition: { pct: 0, min: -10, max: 0, menu: 'style' },
+    // How long the tapered portion of the straps are. Larger values give a longer, more gradual taper from the back bib's width down to the strap's width.
+    strapTaperPosition: { pct: 50, min: 0, max: 100, menu: 'style' },
+    // Controls the shape of the curve as the back bib tapers into the straps.
+    strapTaperCurve: { pct: 80, min: 0, max: 100, menu: 'style' },
+    // Back pocket percentages are as a percentage of the back waist arc, including any ease.
+    pocketBack: { bool: true, menu: 'style' },
+    pocketBackPositionX: { pct: 60, min: 20, max: 100, menu: 'style' },
+    pocketBackPositionY: { pct: 100, min: 0, max: 160, menu: 'style' },
+    pocketBackWidth: { pct: 60, min: 10, max: 100, menu: 'style' },
+    pocketBackHeight: { pct: 80, min: 10, max: 120, menu: 'style' },
+    pocketBackCornerWidth: { pct: 50, min: 0, max: 100, menu: 'style' },
+    pocketBackCornerHeight: { pct: 10, min: 0, max: 100, menu: 'style' },
+    // Carpenter pocket percentages are as a percentage of the back waist arc, including any ease.
+    pocketCarpenter: { bool: 'true', menu: 'style' },
+    pocketCarpenterHeight: { pct: 120, min: 30, max: 150, menu: 'style' },
+    // How far into the back pocket the carpenter pocket goes. Affects style. Larger values will be more secure, but will add bulk.
+    pocketCarpenterAnchorX: { pct: 20, min: 0, max: 80, menu: 'style' },
+    pocketCarpenterAnchorY: { pct: 10, min: 0, max: 50, menu: 'style' },
+    pocketCarpenterAnchorWidth: { pct: 15, min: 0, max: 80, menu: 'style' },
+    pocketCarpenterOpeningHeight: { pct: 60, min: 40, max: 100, menu: 'style' },
+    pocketCarpenterExtra: { bool: true, menu: 'style' },
+    pocketCarpenterExtraHeight: { pct: 50, min: 10, max: 80, menu: 'style' },
+    hammerLoop: { bool: true, menu: 'style' },
+    hammerLoopWidth: { pct: 10, min: 0, max: 20, menu: 'style' },
+    hammerLoopCornerX: { pct: 0, min: -50, max: 50, menu: 'style' },
+    hammerLoopCornerY: { pct: 20, min: 0, max: 100, menu: 'style' },
+    hammerLoopOutseam: { pct: 20, min: 0, max: 80, menu: 'style' },
+    hammerLoopCurve: { pct: 100, min: 0, max: 100, menu: 'style' },
+    hammerLoopFirstFold: { pct: 90, min: 0, max: 100, menu: 'style' },
+    hammerLoopSecondFold: { pct: 60, min: 0, max: 200, menu: 'style' },
   },
+  after: bib,
 }

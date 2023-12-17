@@ -1,6 +1,7 @@
 function draftFront({
   measurements,
   options,
+  absoluteOptions,
   Point,
   Path,
   points,
@@ -24,9 +25,30 @@ function draftFront({
   // - (DONE) Add logo and dimension box.
   // - (DONE) Add cut instructions (2, mirrored, from main fabric)
   // - (DONE) Add dimensions.
-  // - Onto the back piece.
-  // - Onto the bib.
+  // - (DONE) Onto the back piece.
+  // - (DONE) Onto the bib.
   // - Onto the pockets.
+  //   - (DONE) Slash Pockets
+  //   - (DONE) Bib Pocket
+  //   - (DONE) Back Pockets
+  //   - (DONE) Carpenter Pockets
+  //   - (DONE) Hammer Loop
+  // - (DONE) Fix the bib piece so that the waist seam is equal in length to the front piece's waist seam.
+  // - (DONE) Add the bib placket.
+  // - (DONE) Add the front waistband.
+  // - Add seam and hem allowances, and dimension macros, cutlist, and titles and logo snippets to all parts.
+  //   - (DONE) Front
+  //   - (DONE) Back
+  //   - (DONE) Bib
+  //   - (DONE) Plackets
+  //     - (DONE) Waistband
+  //     - (DONE) Bib
+  //   - Pockets
+  //     - (DONE) Slash
+  //     - Bib
+  //     - Back
+  //     - Carpenter
+  // - (DONE) Fix strap length calculation.
 
   points.cfWaist = new Point(
     -measurements.waistFrontArc * (1 + options.waistEase) * (1 - options.waistBalance),
@@ -74,22 +96,93 @@ function draftFront({
   points.outseamHem = new Point(0, points.fork.y + legLength)
   points.waist = new Point(0, 0)
 
+  // Move the waist points from the natural waist to where they should be for the garment.
+  points.cfWaist = points.cfWaist.shiftFractionTowards(points.cfSeat, -options.waistPosition)
+  points.waist.y = points.cfWaist.y
+
+  // Draft the points for the slash pocket.
+  const waistDist = points.waist.dist(points.cfWaist)
+  points.slashTop = points.waist.shiftTowards(
+    points.cfWaist,
+    waistDist * options.pocketSlashOpeningWidth
+  )
+  points.slashSide = points.waist.shiftTowards(
+    points.outseamHem,
+    waistDist * options.pocketSlashOpeningHeight
+  )
+  // and draft the points for the pocket outline.
+  points.slashOutlineTopOutside = points.waist
+  points.slashOutlineTopInside = points.waist.shiftTowards(
+    points.cfWaist,
+    waistDist * options.pocketSlashWidth
+  )
+  points.slashOutlineBottomOutside = points.waist.shiftTowards(
+    points.outseamHem,
+    waistDist * options.pocketSlashHeight
+  )
+  points.slashOutlineBottomInside = new Point(
+    points.slashOutlineTopInside.x,
+    points.slashOutlineBottomOutside.y
+  )
+
+  // Draft control points for curves.
   points.forkCp2 = points.crossSeamCurveCp2.rotate(-90, points.fork)
   points.inseamHemCp1 = points.inseamHem.shiftFractionTowards(points.forkCp2, 2 / 3)
+  points.slashMax = new Point(points.slashTop.x, points.slashSide.y)
+  points.slashSideCp2 = points.slashSide.shiftFractionTowards(
+    points.slashMax,
+    options.pocketSlashOpeningCurve
+  )
+  points.slashTopCp1 = points.slashTop.shiftFractionTowards(
+    points.slashMax,
+    options.pocketSlashOpeningCurve
+  )
 
-  paths.seam = new Path()
-    .move(points.cfWaist)
-    .line(points.crossSeamCurveStart)
-    .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
-    .curve(points.forkCp2, points.inseamHemCp1, points.inseamHem)
-    .line(points.outseamHem)
-    .line(points.waist)
-    .line(points.cfWaist)
-    .close()
-    .attr('class', 'fabric')
+  store.set('waistYCoordinate', points.cfWaist.y) // Needed for the back.
+  store.set('cfWaist', points.cfWaist) // Needed for the bib.
+  store.set('waist', points.waist) // Needed for the bib.
+  store.set('waistDist', waistDist) // Needed for the slash pockets and the waistband.
+
+  if (options.pocketSlash)
+    paths.slashPocketOutline = new Path()
+      .move(points.slashOutlineTopOutside)
+      .line(points.slashOutlineTopInside)
+      .line(points.slashOutlineBottomInside)
+      .line(points.slashOutlineBottomOutside)
+      .line(points.slashOutlineTopOutside)
+      .close()
+      .addClass('lining dashed')
+
+  options.pocketSlash
+    ? (paths.seam = new Path()
+        .move(points.outseamHem)
+        .line(points.slashSide)
+        .curve(points.slashSideCp2, points.slashTopCp1, points.slashTop)
+        .line(points.cfWaist)
+        .line(points.crossSeamCurveStart)
+        .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
+        .curve(points.forkCp2, points.inseamHemCp1, points.inseamHem)
+        .addClass('fabric'))
+    : (paths.seam = new Path()
+        .move(points.outseamHem)
+        .line(points.waist)
+        .line(points.cfWaist)
+        .line(points.crossSeamCurveStart)
+        .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
+        .curve(points.forkCp2, points.inseamHemCp1, points.inseamHem)
+        .addClass('fabric'))
+
+  paths.hem = new Path().move(points.inseamHem).line(points.outseamHem).addClass('fabric')
+  points.inseamHemAllowance = points.inseamHem.translate(-sa, absoluteOptions.legHemAllowance)
+  points.outseamHemAllowance = points.outseamHem.translate(sa, absoluteOptions.legHemAllowance)
 
   if (sa) {
-    paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    paths.sa = paths.seam
+      .offset(sa)
+      .line(points.inseamHemAllowance)
+      .line(points.outseamHemAllowance)
+      .close()
+      .addClass('fabric sa')
   }
 
   if (complete)
@@ -99,11 +192,25 @@ function draftFront({
       .line(points.fork)
       .addClass('note help')
 
+  if (options.pocketSlash)
+    macro('hd', {
+      id: 'wWaistSlash',
+      from: points.cfWaist,
+      to: points.slashTop,
+      y: points.waist.y - (sa + 15),
+    })
+  if (options.pocketSlash)
+    macro('hd', {
+      id: 'wWaistExSlash',
+      from: points.slashTop,
+      to: points.waist,
+      y: points.waist.y - (sa + 15),
+    })
   macro('hd', {
-    id: 'wWaist',
+    id: 'wWaistTotal',
     from: points.cfWaist,
     to: points.waist,
-    y: points.waist.y - (sa + 15),
+    y: points.waist.y - (sa + 30),
   })
   macro('hd', {
     id: 'wWaistToCrossSeamCurveStart',
@@ -153,11 +260,33 @@ function draftFront({
     to: points.inseamHem,
     y: points.inseamHem.y + (sa + 15),
   })
+  if (options.pocketSlash)
+    macro('vd', {
+      id: 'vSlashOpening',
+      from: points.waist,
+      to: points.slashSide,
+      x: points.waist.x + (sa + 15),
+    })
+  if (options.pocketSlash)
+    macro('vd', {
+      id: 'vOutseam',
+      from: points.slashSide,
+      to: points.outseamHem,
+      x: points.waist.x + (sa + 15),
+    })
   macro('vd', {
-    id: 'vOutseam',
+    id: 'vTotal',
     from: points.waist,
     to: points.outseamHem,
+    x: points.waist.x + (sa + 30),
+  })
+  macro('vd', {
+    id: 'vLegHemAllowance',
+    from: points.outseamHem,
+    to: points.outseamHemAllowance,
     x: points.waist.x + (sa + 15),
+    noStartMarker: true,
+    noEndMarker: true,
   })
   macro('vd', {
     id: 'vWaistToCrossSeamCurveStart',
@@ -184,7 +313,7 @@ function draftFront({
     x: points.fork.x - (sa + 30),
   })
 
-  points.grainlineTop = points.waist.shiftFractionTowards(points.cfWaist, 0.05)
+  points.grainlineTop = points.slashSide.translate(-waistDist * 0.05, 0)
   points.grainlineBottom = new Point(points.grainlineTop.x, points.outseamHem.y)
   macro('grainline', {
     from: points.grainlineTop,
@@ -213,6 +342,7 @@ export const front = {
     'waistToSeat',
     'upperLeg',
     'hpsToWaistFront',
+    'hpsToWaistBack',
     'waistToUpperLeg',
     'waistToArmpit',
     'waistToFloor',
@@ -220,6 +350,22 @@ export const front = {
     'ankle',
   ],
   options: {
+    // How wide to make the hem allowance for everywhere except the legs. The default (150%) is set to make a double-fold hem equal in width to the seam allowance, where the first fold is half the width of the second fold.
+    hemAllowance: {
+      pct: 150,
+      min: 0,
+      max: 400,
+      toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.hemAllowance,
+      menu: 'construction',
+    },
+    // Sets the hem allowance for the legs. Very large values are used for cuffs. If making a regular hem, setting this equal to hemAllowance can work well.
+    legHemAllowance: {
+      pct: 150,
+      min: 0,
+      max: 1600,
+      toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.legHemAllowance,
+      menu: 'construction',
+    },
     waistEase: { pct: 15, min: -30, max: 100, menu: 'fit' },
     // Moves fabric towards the back piece for positive values, and towards the front piece for negative values.
     waistBalance: { pct: 0, min: -15, max: 15, menu: 'fit' },
@@ -246,7 +392,34 @@ export const front = {
     crotchDrop: { pct: 5, min: -10, max: 80, menu: 'fit' },
     // Positive values move more of the fabric to the back piece, negative values to the front piece.
     legBalance: { pct: 0, min: -30, max: 30, menu: 'fit' },
+    // Where to put the waistband on the front of the overalls. 0 is at the natural waist and -100 is at the seat.
+    waistPosition: { pct: 0, min: -50, max: 50, menu: 'style' },
     anklePosition: 0.91,
+    // How far up past the waist the outseam extends, and thus how far up the back bib starts and the front bib starts to taper.
+    outseamHeight: { pct: 5, min: 0, max: 20, menu: 'style' },
+    // How wide to make the waistband between the bib and the front piece.
+    waistbandWidth: {
+      pct: 10,
+      min: 0,
+      max: 20,
+      toAbs: (pct, settings, mergedOptions) =>
+        (settings.measurements.waist / 4) * mergedOptions.waistbandWidth,
+      menu: 'construction',
+    },
+    waistbandLayers: { count: 3, min: 0, max: 8, menu: 'construction' },
+
+    // All slash pocket percentages are with respect to the length of the top of the front piece.
+    pocketSlash: { bool: true, menu: 'style' },
+    // Dimensions of the pocket opening, as a percentage of the distance from.
+    pocketSlashOpeningWidth: { pct: 30, min: 4, max: 60, menu: 'style' },
+    pocketSlashOpeningHeight: { pct: 60, min: 4, max: 100, menu: 'style' },
+    // Shape of the pocket opening. 0 (default) is a straight diagonal line, while positive values make a curve.
+    pocketSlashOpeningCurve: { pct: 0, min: 0, max: 100, menu: 'style' },
+    // Dimensions of the pocket itself, as a percentage of the waistFront.
+    pocketSlashWidth: { pct: 70, min: 20, max: 100, menu: 'style' },
+    pocketSlashHeight: { pct: 90, min: 20, max: 200, menu: 'style' },
+    // How much past the pocket entrance to extend the pocket shield.
+    pocketSlashShieldOverlap: { pct: 30, min: 0, max: 60, menu: 'style' },
   },
   draft: draftFront,
 }
