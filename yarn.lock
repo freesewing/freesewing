@@ -13431,15 +13431,10 @@ tiny-inflate@^1.0.0, tiny-inflate@^1.0.3:
   resolved "https://registry.yarnpkg.com/tiny-inflate/-/tiny-inflate-1.0.3.tgz#122715494913a1805166aaf7c93467933eea26c4"
   integrity sha512-pkY1fj1cKHb2seWDy0B16HeWyczlJA9/WW3u3c4z/NiWDsO3DOU5D7nhTLE9CF0yXv/QZFY7sEJmj24dK+Rrqw==
 
-tlds@1.242.0:
-  version "1.242.0"
-  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.242.0.tgz#da136a9c95b0efa1a4cd57dca8ef240c08ada4b7"
-  integrity sha512-aP3dXawgmbfU94mA32CJGHmJUE1E58HCB1KmlKRhBNtqBL27mSQcAEmcaMaQ1Za9kIVvOdbxJD3U5ycDy7nJ3w==
-
-tlds@1.247.0:
-  version "1.247.0"
-  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.247.0.tgz#8ba5a8b77f87e5ea215c0dc14a16a67c211e5d79"
-  integrity sha512-m9G0j6euzOucY3Auzl2/SAnGXJVFA1ibJDRBqUdAx7o4jzMidCCKZXWNQVBDcx5zHISJl1r5yA8aaS6WfWuKMQ==
+tlds@1.248.0:
+  version "1.248.0"
+  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.248.0.tgz#65bf56eee6d0ace1e918fbc653227ef18a9ddf8d"
+  integrity sha512-noj0KdpWTBhwsKxMOXk0rN9otg4kTgLm4WohERRHbJ9IY+kSDKr3RmjitaQ3JFzny+DyvBOQKlFZhp0G0qNSfg==
 
 tmp@^0.0.33:
   version "0.0.33"
