@@ -67,6 +67,9 @@ export const leg = {
     snippets.circle6 = new Snippet('notch', points.frontGusset)
 
     if (backGusset) {
+      snippets.circle1 = new Snippet('notch', paths.backCircle.shiftFractionAlong(0.25))
+      snippets.circle2 = new Snippet('notch', paths.backCircle.shiftFractionAlong(0.5))
+      snippets.circle3 = new Snippet('notch', paths.backCircle.shiftFractionAlong(0.75))
       snippets.circle5 = new Snippet('notch', points.backCircleGusset)
       const backCircle = paths.backCircle.edge('right')
       macro('hd', {
