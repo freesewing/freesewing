@@ -918,6 +918,23 @@
     "tags": [],
     "techniques": []
   },
+  "lumira": {
+    "code": "Wouter Van Wageningen",
+    "description": "A FreeSewing pattern for leggings",
+    "design": "Wouter Van Wageningen",
+    "difficulty": 3,
+    "lab": true,
+    "org": false,
+    "tags": [
+      "bottoms",
+      "trousers"
+    ],
+    "techniques": [
+      "stretch",
+      "curvedSeam",
+      "elastic"
+    ]
+  },
   "lumina": {
     "code": "Coder name",
     "description": "A FreeSewing pattern that needs a description",
