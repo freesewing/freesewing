@@ -7044,10 +7044,10 @@ htm@^3.0.0:
   resolved "https://registry.yarnpkg.com/htm/-/htm-3.1.1.tgz#49266582be0dc66ed2235d5ea892307cc0c24b78"
   integrity sha512-983Vyg8NwUE7JkZ6NmOqpCZ+sh1bKv2iYTlUkzlWmA5JD2acKoxd4KVxbMmxX/85mtfdnDmTFoNKcg5DGAvxNQ==
 
-html-dom-parser@5.0.4:
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/html-dom-parser/-/html-dom-parser-5.0.4.tgz#2941a762317d088e747db31c8cf290987ec30a55"
-  integrity sha512-azy8THLKd4Ar0OVJpEgX+MSjYvKdNDWlGiRBIlovMqEQYMAnLLXBhhiSwjylDD3RDdcCYT8Utg6uoRDeLHUyHg==
+html-dom-parser@5.0.5:
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/html-dom-parser/-/html-dom-parser-5.0.5.tgz#2cd66b59b4c30e80bd7b3f21987eabb2d621e840"
+  integrity sha512-5mySZPNpPOtahOggt/40JjXu55EW4LR/ZjArloUavF1HUkM+D1k41W3IuXOjBd96U0A8OY51jpSbr83LSggBFQ==
   dependencies:
     domhandler "5.0.3"
     htmlparser2 "9.0.0"
@@ -7065,12 +7065,12 @@ html-parse-stringify@^3.0.1:
     void-elements "3.1.0"
 
 html-react-parser@^5.0.7:
-  version "5.0.7"
-  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-5.0.7.tgz#3ada0420c0ae05dce2915fff78aad2b9d678041f"
-  integrity sha512-00ve/0B7ukLUAcAbmD6Vh74EicB+ktLvAM4APeXJjiBsRiPz2ouochTvyUhOJB8apP2t40xAXvpmd+t50aVnJg==
+  version "5.0.10"
+  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-5.0.10.tgz#1a35a42097c9407ade1a480fe33ab3dfd998b51e"
+  integrity sha512-Vx81XDux53+/yHbUSETbSKdKwtru15oqTO4jDwQ5vma6FoqCmwT7ifqszJRKiR4pnlTIeHBQErDReHpS8SuwGw==
   dependencies:
     domhandler "5.0.3"
-    html-dom-parser "5.0.4"
+    html-dom-parser "5.0.5"
     react-property "2.0.2"
     style-to-js "1.1.10"
 
