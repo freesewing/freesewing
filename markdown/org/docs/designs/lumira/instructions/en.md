@@ -14,7 +14,7 @@ provide a zigzag in addition to serging the seam.
 
 ### Step 1: The waistband (optional)
 
-- Sew the two pieces to eachother, right sides together, along the top seam.
+- Sew the two pieces to each other, right sides together, along the top seam.
 - Press the seam open
 - Sew the back seam, right sides together. This creates a loop.
 

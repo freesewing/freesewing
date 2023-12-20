@@ -155,9 +155,9 @@ export const shape = {
     },
 
     // Percentages
-    ease: { pct: -5, min: -30, max: 0, menu: 'fit' },
+    ease: { pct: -8, min: -30, max: 0, menu: 'fit' },
     leglength: { pct: 100, min: 10, max: 100, ...pctBasedOn('inseam'), menu: 'style' },
-    waistlowering: { pct: 10, min: -10, max: 60, ...pctBasedOn('waistToHips'), menu: 'style' },
+    waistlowering: { pct: 35, min: -10, max: 60, ...pctBasedOn('waistToHips'), menu: 'style' },
     gussetwidth: {
       pct: 16,
       min: 5,

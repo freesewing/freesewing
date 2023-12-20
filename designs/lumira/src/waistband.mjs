@@ -26,7 +26,7 @@ export const waistband = {
 
     const waistLength = store.get('waistLength')
     const waistbandSize = store.get('waistbandSize')
-    const gussetWidth = options.frontbulge ? store.get('gussetWidth') : 0
+    const gussetWidth = options.frontbulge || options.cyclingchamois ? store.get('gussetWidth') : 0
 
     const topLength = points.backWaist.dist(points.frontWaist)
     const bottomLength = waistLength + gussetWidth
