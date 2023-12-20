@@ -110,7 +110,8 @@ export const uppermouth = {
       .curve(points.point2Cp1, points.point3Cp2, points.point3)
       .curve(points.point3Cp1, points.point4Cp2, points.point4)
       .line(points.point5)
-      .setText(complete ? 'upperJaw' + ' (16)' : '', textAttribute)
+      .addText(complete ? 'skully:upperJaw' : '', textAttribute)
+      .addText(complete ? ' (16)' : '', textAttribute)
       .addClass('hidden')
 
     paths.upperJaw2 = new Path()
@@ -119,19 +120,22 @@ export const uppermouth = {
       .curve(points.mPoint4Cp2, points.mPoint3Cp1, points.mPoint3)
       .curve(points.mPoint3Cp2, points.mPoint2Cp1, points.mPoint2)
       .line(points.mPoint1)
-      .setText(complete ? 'upperJaw' + ' (16)' : '', textAttribute)
+      .addText(complete ? 'skully:upperJaw' : '', textAttribute)
+      .addText(complete ? ' (16)' : '', textAttribute)
       .addClass('hidden')
 
     paths.front1 = new Path()
       .move(points.pointM1)
       .curve_(points.pointM1Cp1, points.point1)
-      .setText(complete ? '(16)' : '', textAttribute)
+      .addText(complete ? 'skully:mouthTop' : '', textAttribute)
+      .addText(complete ? ' (16)' : '', textAttribute)
       .addClass('hidden')
 
     paths.front2 = new Path()
       .move(points.mPoint1)
       .curve_(points.mPointM1Cp1, points.pointM1)
-      .setText(complete ? '(16)' : '', textAttribute)
+      .addText(complete ? 'skully:mouthTop' : '', textAttribute)
+      .addText(complete ? ' (16)' : '', textAttribute)
       .addClass('hidden')
 
     paths.backOfUpperJaw.curve(points.mPoint6Cp2, points.mPoint5Cp1, points.mPoint5)
@@ -148,18 +152,21 @@ export const uppermouth = {
     paths.backOfMouth = new Path()
       .move(points.mPoint1)
       .line(points.point1)
-      .setText(complete ? 'backOfMouth' + ' (11)' : '', textAttribute)
+      .addText(complete ? 'skully:backOfMouth' : '', textAttribute)
+      .addText(complete ? ' (11)' : '', textAttribute)
       .setClass('dashed')
 
     paths.lowerJaw1 = new Path()
       .move(points.point2)
       .curve(points.point2ToLowerJaw, points.lowerJawToPoint2, points.lowerJaw)
-      .setText(complete ? 'lowerJaw' + ' (14)' : '', textAttribute)
+      .addText(complete ? 'skully:lowerjaw' : '', textAttribute)
+      .addText(complete ? ' (14)' : '', textAttribute)
       .setClass('dashed')
     paths.lowerJaw2 = new Path()
       .move(points.mPoint2)
       .curve(points.mPoint2ToLowerJaw, points.mLowerJawToPoint2, points.mLowerJaw)
-      .setText(complete ? 'lowerJaw' + ' (14)' : '', textAttribute)
+      .addText(complete ? 'skully:lowerjaw' : '', textAttribute)
+      .addText(complete ? ' (14)' : '', textAttribute)
       .setClass('dashed')
 
     paths.backOfUpperJaw1 = new Path()
@@ -183,7 +190,7 @@ export const uppermouth = {
       nr: 7,
       at: points.title,
       scale: 0.5,
-      title: 'upperMouth',
+      title: 'skully:uppermouth',
     })
     // points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     // snippets.logo = new Snippet('logo', points.logo)

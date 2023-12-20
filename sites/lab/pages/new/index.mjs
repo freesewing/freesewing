@@ -15,7 +15,8 @@ import {
   ShowcaseIcon,
   RssIcon,
   CsetIcon,
-  OpackIcon,
+  //  OpackIcon,
+  KioskIcon,
 } from 'shared/components/icons.mjs'
 
 // Translation namespaces used on this page
@@ -47,6 +48,14 @@ const Box = ({ title, Icon, description, href }) => {
     <Link {...linkProps}>{inner}</Link>
   )
 }
+/*
+            <Box
+              title={t('opackNew')}
+              Icon={OpackIcon}
+              description={t('opackNewInfo')}
+              href="/new/opack"
+            />
+            */
 
 /*
  * Each page MUST be wrapped in the PageWrapper component.
@@ -77,22 +86,22 @@ const NewIndexPage = ({ page }) => {
           <h2>{t('newShare')}</h2>
           <div className="w-full max-w-7xl flex flex-row flex-wrap gap-4">
             <Box
-              title={t('csetNew')}
-              Icon={CsetIcon}
-              description={t('csetNewInfo')}
-              href="/new/cset"
-            />
-            <Box
-              title={t('opackNew')}
-              Icon={OpackIcon}
-              description={t('opackNewInfo')}
-              href="/new/opack"
-            />
-            <Box
               title={t('showcaseNew')}
               Icon={ShowcaseIcon}
               description={t('showcaseNewInfo')}
               href="/new/showcase"
+            />
+            <Box
+              title={t('imgNew')}
+              Icon={KioskIcon}
+              description={t('imgNewInfo')}
+              href="/new/img"
+            />
+            <Box
+              title={t('csetNew')}
+              Icon={CsetIcon}
+              description={t('csetNewInfo')}
+              href="/new/cset"
             />
             <Box
               title={t('blogNew')}

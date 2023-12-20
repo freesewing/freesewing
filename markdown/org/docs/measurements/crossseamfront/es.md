@@ -8,4 +8,5 @@ Para medir tu **frente a la costura cruzada** empata una cuerda alrededor de la 
 
 - Donde se sentaría la horquilla de un par de pantalones aptos para apretarse
 - En la base de tu scrotum
-- En algún lugar hacia el frente de tu perinercia
+- Somewhere towards the front of your perineum
+<MeasieImage />
