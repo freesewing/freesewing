@@ -105,14 +105,21 @@ const createGusset = (points, paths, Path, store, side, gussetWidth, gussetLengt
     .move(points[side + 'GussetJoin'])
     .curve(points[side + 'GussetJoinCp'], points[side + 'GussetCp'], points[side + 'Gusset'])
     .hide()
-  const frontTemp = paths[side].reverse().shiftAlong(gussetLength - 1)
+  const frontTemp = paths[side]
+    .reverse()
+    .shiftAlong(Math.min(gussetLength, paths[side].length()) - 1)
   const gussetTemp = paths[side].shiftAlong(1)
   const gussetAngle = Math.abs(
     points[side + 'GussetJoin'].angle(gussetTemp) - frontTemp.angle(points[side + 'GussetJoin'])
   )
   store.set(side + 'GussetAngle', gussetAngle * 2)
 
-  paths[side + 'Top'] = paths[side].split(points[side + 'GussetJoin'])[0].hide()
+  const sideTop = paths[side].split(points[side + 'GussetJoin'])
+  if (sideTop[0].ops !== undefined) {
+    paths[side + 'Top'] = sideTop[0].hide()
+  } else {
+    paths[side + 'Top'] = paths[side].clone()
+  }
   paths[side] = paths[side + 'Top']
     .clone()
     .join(paths[side + 'Gusset'])
@@ -177,7 +184,7 @@ export const shape = {
     frontgussetlength: {
       pct: 12.5,
       min: 0,
-      max: 40,
+      max: 30,
       ...pctBasedOn('crossSeamFront'),
       // eslint-disable-next-line no-unused-vars
       menu: (settings, mergedOptions) => (mergedOptions?.frontbulge ? false : 'style'),
@@ -362,8 +369,12 @@ export const shape = {
       .offset(gussetWidth * -1)
       .intersects(extendPath(Path, new Path().move(points.backUpperLeg).line(points.backKnee)))[0]
 
-    points.frontGussetJoin = paths.front.reverse().shiftAlong(frontGussetLength)
-    points.backGussetJoin = paths.back.reverse().shiftAlong(backGussetLength)
+    points.frontGussetJoin = paths.front
+      .reverse()
+      .shiftAlong(Math.min(frontGussetLength, paths.front.length()))
+    points.backGussetJoin = paths.back
+      .reverse()
+      .shiftAlong(Math.min(backGussetLength, paths.back.length()))
 
     if (frontBulge) {
       paths.front = extendPath(Path, paths.front.offset(gussetWidth)).hide()
