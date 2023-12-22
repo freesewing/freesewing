@@ -9,12 +9,12 @@ title: Включити припуски на шви
 <Note>
 
 Основна бібліотека FreeSewing потребує лише одного параметра для обробки припусків на шви: `sa`.
-Однак для зручності ми розділили ці параметри на два різних налаштування на сайті:
+However, for convenience, we've split this up into two different settings on the website:
 
-- **[Включити припуски на шви](/docs/site/draft/core-settings/sabool)**: Керує тим, чи включати припуски на шви
-- **[Seam Allowance Size](/docs/site/draft/core-settings/samm)**: Керує розміром припусків на шви, якщо вони включені
+- **[Include Seam Allowance](/docs/about/site/draft/core-settings/sabool)**: Controls whether or not to include seam allowance
+- **[Seam Allowance Size](/docs/about/site/draft/core-settings/samm)**: Controls how big to make the seam allowance, if it is included
 
-Останній параметр буде показано, тільки якщо ви увімкнули перший.
+The latter will only be shown if you've enabled the former.
 
 </Note>
-[core-settings]: /docs/site/draft/core-settings/
+[core-settings]: /docs/about/site/draft/core-settings/

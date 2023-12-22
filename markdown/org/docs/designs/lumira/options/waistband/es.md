@@ -1,11 +1,7 @@
 ---
-title: "Waistband"
+title: Pretina
 ---
 
 ***
 
 Adds a waistband
-
-
-
-

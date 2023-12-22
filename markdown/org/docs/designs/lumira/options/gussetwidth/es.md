@@ -1,11 +1,7 @@
 ---
-title: "Gusset width"
+title: Gusset width
 ---
 
 ***
 
-Controls the width of the gusset.
-
-
-
-
+Controla el ancho del set de ráfaga.
