@@ -2,7 +2,7 @@
 title: Nahtzugabe Größe
 ---
 
-Diese [Kerneinstellung][core-settings] steuert die Grundgröße deiner Nahtzugabe .  Mit anderen Worten, die Standard-Nahtzugabe wird diese Größe haben. Andere Zugaben, die breiter sein sollen, wie z.B. Saumzugaben, sind ein Vielfaches dieser Größe.
+Diese [Kerneinstellung][core-settings] steuert die Grundgröße deiner Nahtzugabe .  Mit anderen Worten, die Standard-Nahtzugabe wird diese Größe haben.  Mit anderen Worten, die Standard-Nahtzugabe wird diese Größe haben. Andere Zugaben, die breiter sein sollen, wie z.B. Saumzugaben, sind ein Vielfaches dieser Größe.
 
 <Note>
 
