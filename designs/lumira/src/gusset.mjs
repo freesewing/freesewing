@@ -193,7 +193,7 @@ export const gusset = {
 
     if (frontBulge) {
       const bulgeSplitForward = measurements.crossSeamFront * options.frontbulgeforwardpercentage
-      const frontLength = store.get('frontLength') - bulgeSplitForward
+      const frontLength = store.get('frontLength') //- bulgeSplitForward
       let rotateAngle =
         utils.rad2deg(Math.asin((frontBulgeSize * 0.5) / gussetWidth)) * (0.6 + options.gussetwidth)
 
@@ -313,6 +313,7 @@ export const gusset = {
         .hide()
 
       points.frontCenter = points.frontCenterSplit.clone()
+      snippets.frontCenter = new Snippet('notch', points.frontCenter)
     } else {
       createGusset(store, points, paths, Path, 'front')
     }
