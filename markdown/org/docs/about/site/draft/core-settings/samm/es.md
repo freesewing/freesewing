@@ -7,12 +7,12 @@ Este [Core Setting][core-settings] controla el tamaño base de tu margen de cost
 <Note>
 
 La biblioteca central de FreeSewing sólo tiene un ajuste para gestionar el margen de costura: `sa`.
-Sin embargo, por comodidad, lo hemos dividido en dos ajustes diferentes en el sitio web:
+However, for convenience, we've split this up into two different settings on the website:
 
-- **[Incluir margen de costura](/docs/site/draft/core-settings/sabool)**: Controla si se incluye o no el margen de costura
-- **[Tamaño del margen de costura](/docs/site/draft/core-settings/samm)**: Controla el tamaño del margen de costura, si se incluye
+- **[Include Seam Allowance](/docs/about/site/draft/core-settings/sabool)**: Controls whether or not to include seam allowance
+- **[Seam Allowance Size](/docs/about/site/draft/core-settings/samm)**: Controls how big to make the seam allowance, if it is included
 
-Este último sólo se mostrará si has activado el primero.
+The latter will only be shown if you've enabled the former.
 
 </Note>
-[core-settings]: /docs/site/draft/core-settings/
+[core-settings]: /docs/about/site/draft/core-settings/
