@@ -85,10 +85,18 @@ yarn-error.log*
         from: `sde/mock/${file}.mjs`,
         to: `shared/components/mdx/${file}.mjs`,
       })),
-      // Mock various React components
+      // Mock various other files
       {
         from: `sde/mock/info.mjs`,
         to: `shared/components/designs/info.mjs`,
+      },
+      {
+        from: `sde/mock/designs.mjs`,
+        to: `shared/config/designs.mjs`,
+      },
+      {
+        from: `sde/mock/linedrawings.mjs`,
+        to: `shared/compoennts/designs/linedrawings/index.mjs`,
       },
       // .env file
       {
