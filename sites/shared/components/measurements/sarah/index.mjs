@@ -1,3 +1,4 @@
+// __SDEFILE__ - This file is a dependency for the stand-alone environment
 import acrossback from './acrossback.svg'
 import ankle from './ankle.svg'
 import biceps from './biceps.svg'
