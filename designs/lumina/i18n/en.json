@@ -2,6 +2,8 @@
   "t": "Lumina",
   "d": "A FreeSewing pattern that needs a description",
   "p": { },
-  "s": { },
+  "s": { 
+    "couldNoFitWaistband": "Could not fit the waistband"
+  },
   "o": { }
 }
