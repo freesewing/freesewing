@@ -1,8 +1,8 @@
 ---
-title: Cómo generar patrones de costura a medida
+title: How to generate bespoke sewing patterns
 ---
 
-Generar patrones de costura personalizados basados en tus medidas es la función estrella de nuestro sitio web. Proporcionamos un entorno en línea que te permite personalizar varios aspectos de tu patrón.
+Generating custom sewing patterns based on your measurements is the flagship feature of our website. We provide an online environment that allows you to customize various aspects of your pattern.
 
 Este entorno proporciona una amplia gama de funciones, y en estas páginas las explicaremos todas.
 
@@ -20,14 +20,14 @@ El menú **Ver** de la izquierda te permite seleccionar la vista. Cada vista tie
 
 - **Editor de patrones**: Aquí es donde puedes ajustar tu patrón
 - **Medidas del patrón**: Aquí puedes elegir qué conjunto de medidas utilizar para generar el patrón, o ajustar las medidas manualmente.
-- **Pruebas de patrón**: Te permite probar el patrón (es una función avanzada).
+- **Pattern tests**: Allows you to test the pattern. Se trata de una función avanzada.
 - **Diseño de impresión**: Te permite organizar manualmente las partes del patrón para optimizar el diseño para la impresión.
 - **Guardar patrón como...**: Te permite guardar el patrón en tu cuenta
 - **Exportar patrón**: Te permite exportar el patrón como PDF o SVG.
 - **Editar ajustes a mano**: Te permite --lo has adivinado-- editar los ajustes para generar el patrón a mano. Se trata de una función avanzada.
 - **Registros del patrón**: Muestra los registros generados al dibujar el patrón. Se trata de una función avanzada.
-- **Inspector de patrones**: Permite al diseñador de patrones inspeccionar varios aspectos del patrón. Esta es una función avanzada.
-- **Documentación**: Proporciona enlaces a la documentación
+- **Inspector de patrones**: Permite al diseñador de patrones inspeccionar varios aspectos del patrón. Se trata de una función avanzada.
+- **Documentation**: Provides links to the documentation.
 
 No dudes en consultar las otras vistas, pero aquí nos centraremos en el editor de patrones ****.
 
@@ -35,7 +35,7 @@ No dudes en consultar las otras vistas, pero aquí nos centraremos en el editor 
 
 En la parte derecha de la pantalla está el menú **Ajustes** que a su vez se compone de cuatro secciones:
 
-- **Mensajes del diseñador**: Contiene información que el diseñador del patrón marcó para tu atención. Ten en cuenta que no se trata de observaciones genéricas sobre el diseño en general (esas van en la documentación), sino de información específica de este mismo patrón. Asegúrate de comprobarlo. Como tales, estos mensajes serán diferentes para cada usuario, conjunto de medidas o incluso combinación de opciones de diseño.
+- **Mensajes del diseñador**: Contiene información que el diseñador del patrón marcó para tu atención. Note that these are not generic remarks about the design in general (those go in the documentation), but rather information specific to this very pattern. Asegúrate de comprobarlo. Como tales, estos mensajes serán diferentes para cada usuario, conjunto de medidas o incluso combinación de opciones de diseño.
 - **Opciones de diseño**: Contiene todas las opciones diferentes que el diseñador ha añadido y que te permiten ajustar tu patrón. Estas opciones serán diferentes para cada diseño. Consulta la documentación del diseño para obtener una lista de todas las opciones disponibles, o consulta la documentación en línea.
 - **Ajustes del núcleo**: Son ajustes que no proporciona el diseño(s), sino la biblioteca del núcleo de FreeSewing. Por tanto, los ajustes que encontrarás aquí son los mismos para todos los diseños, ya que todos utilizan la misma biblioteca central. Consulta [Configuración del núcleo](/docs/about/site/draft/core-settings) para obtener todos los detalles, o consulta la documentación en línea.
 - **Ajustes de interfaz de usuario**: Por último, estos ajustes no controlan el patrón como tal, sino la interfaz de usuario. Por ejemplo, aquí puedes activar el modo quiosco o ajustar la configuración de la experiencia del usuario para ver más o menos funciones. Al igual que los ajustes del núcleo, los ajustes de la IU son los mismos para todos los diseños. Consulta [Configuración de la interfaz de usuario](/docs/about/site/draft/ui-settings) o consulta la documentación en línea.
