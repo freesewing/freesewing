@@ -57,10 +57,6 @@ yarn-error.log*
 
 `,
   fetch: {
-    // account:
-    // sets
-    // shared
-    // control
     config: [
       {
         from: 'measurements.mjs',
@@ -89,6 +85,11 @@ yarn-error.log*
         from: `sde/mock/${file}.mjs`,
         to: `shared/components/mdx/${file}.mjs`,
       })),
+      // Mock various React components
+      {
+        from: `sde/mock/info.mjs`,
+        to: `shared/components/designs/info.mjs`,
+      },
       // .env file
       {
         from: 'sde/env.local',
