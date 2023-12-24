@@ -96,7 +96,7 @@ yarn-error.log*
       },
       {
         from: `sde/mock/linedrawings.mjs`,
-        to: `shared/compoennts/designs/linedrawings/index.mjs`,
+        to: `shared/components/designs/linedrawings/index.mjs`,
       },
       // .env file
       {
