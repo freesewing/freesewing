@@ -42,7 +42,7 @@
     "lodash.set": "4.3.2",
     "next": "14.0.4",
     "next-i18next": "15.1.1",
-    "ora": "7.0.1",
+    "ora": "8.0.1",
     "react": "18.2.0",
     "react-copy-to-clipboard": "5.1.0",
     "react-hotkeys-hook": "4.4.1",
