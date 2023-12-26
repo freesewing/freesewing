@@ -269,6 +269,7 @@ export const points = {
   ],
   options: {
     waistband: { bool: true, menu: 'style' },
+    Lowerwaistbandback: { bool: true, menu: 'style' },
     ease: { pct: -8, min: -25, max: 10, menu: 'fit' },
     length: { pct: 35, min: 10, max: 100, menu: 'fit' },
     waistbandsize: {
@@ -688,9 +689,6 @@ export const points = {
     })
 
     console.log({ wb7: points.backSideWaist })
-    // Lower the back a little more to get a V-shape in the back
-    lowerWaist(paths, Path, points, waistLowering * 0.5, 'back', 'Waistband')
-    console.log({ wb8: points.backSideWaist })
     ;['front', 'back'].forEach((prefix) => {
       ;['Side', 'Split', 'Panel'].forEach((type) => {
         ;['Waist', 'Seat', 'UpperLeg', 'Knee', 'Ankle'].forEach((name) => {
@@ -721,14 +719,54 @@ export const points = {
       'waistLength',
       points.backWaist.dist(points.backSideWaist) + points.frontWaist.dist(points.frontSideWaist)
     )
-    store.set(
-      'waistbandLength',
-      points.backWaistband.dist(points.backSideWaistband) +
-        points.frontWaistband.dist(points.frontSideWaistband)
-    )
 
     // paths.back.unhide()
     // paths.middle.unhide()
+    ;['front', 'back'].forEach((prefix) => {
+      const waistbandLength = points[prefix + 'Waistband'].dist(points[prefix + 'SplitWaistband'])
+      const direction = prefix == 'front' ? 90 : -90
+      let angle = paths[prefix].shiftAlong(1).angle(points[prefix + 'Waistband'])
+      points[prefix + 'WaistbandCp'] = points[prefix + 'Waistband'].shift(
+        angle + direction,
+        waistbandLength * 0.35
+      )
+      angle = paths[prefix + 'Split'].shiftAlong(1).angle(points[prefix + 'SplitWaistband'])
+      points[prefix + 'SplitWaistbandCp'] = points[prefix + 'SplitWaistband'].shift(
+        angle + direction * -1,
+        waistbandLength * 0.35
+      )
+      paths[prefix + 'Waistband'] = new Path()
+        .move(points[prefix + 'Waistband'])
+        .curve(
+          points[prefix + 'WaistbandCp'],
+          points[prefix + 'SplitWaistbandCp'],
+          points[prefix + 'SplitWaistband']
+        )
+        .hide()
+    })
+
+    if (options.Lowerwaistbandback) {
+      // Lower the back a little more to get a V-shape in the back
+      lowerWaist(paths, Path, points, waistLowering * 0.5, 'back', 'Waistband')
+      console.log({ wb8: points.backSideWaist })
+      paths.backWaistband = new Path()
+        .move(points.backWaistband)
+        ._curve(points.backSplitWaistbandCp, points.backSplitWaistband)
+        .hide()
+    }
+
+    store.set(
+      'waistbandLength',
+      paths.backWaistband.length() +
+        paths.frontWaistband.length() +
+        points.frontPanelWaistband.dist(points.backPanelWaistband)
+    )
+    console.log({
+      waistbandLengthBack: paths.backWaistband.length(),
+      waistbandLengthFront: paths.frontWaistband.length(),
+    })
+
+    console.log({ back: paths.back, front: paths.front })
 
     return part.setHidden(hideThis)
   },
