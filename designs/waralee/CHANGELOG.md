@@ -1,7 +1,14 @@
 # Change log for: @freesewing/waralee
 
 
-## 3.0.0 (2022-09-30)
+## 3.1.0 (2023-12-26)
+
+### Fixed
+
+ - Pocket opening was not drawn on the facing and pocket pieces. Fixes
+ - Improve placement of the front welt. Fixes
+
+## 3.0.0 (2023-09-30)
 
 ### Changed
 
