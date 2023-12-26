@@ -373,6 +373,7 @@ export const points = {
     const waistToAnkle = measurements.waistToFloor - measurements.heel / Math.PI
 
     store.set('waistbandSize', waistbandSize)
+    store.set('waistLowering', waistLowering)
 
     measurements['waistToAnkle'] = measurements.waistToFloor - measurements.heel / Math.PI
     const sideFixed = (((measurements.waist - measurements.waistBack) * ease) / 2) * sideRatio
@@ -423,9 +424,11 @@ export const points = {
     points.backSeat = backCrossSeam.shiftAlong(
       measurements.waistToSeat * (measurements.waistToSeat / measurements.waistToUpperLeg)
     )
-    points.backHips = backCrossSeam.shiftAlong(
-      measurements.waistToHips * (measurements.waistToSeat / measurements.waistToUpperLeg)
-    )
+    points.backHips = backCrossSeam
+      .shiftAlong(
+        measurements.waistToHips * (measurements.waistToSeat / measurements.waistToUpperLeg)
+      )
+      .addCircle(4)
     ;['front', 'back'].forEach((prefix) => {
       createSidePoints(
         measurements,
@@ -745,9 +748,17 @@ export const points = {
         .hide()
     })
 
+    store.set(
+      'waistbandLength',
+      paths.backWaistband.length() +
+        paths.frontWaistband.length() +
+        points.frontPanelWaistband.dist(points.backPanelWaistband)
+    )
+
     if (options.Lowerwaistbandback) {
       // Lower the back a little more to get a V-shape in the back
-      lowerWaist(paths, Path, points, waistLowering * 0.5, 'back', 'Waistband')
+      // lowerWaist(paths, Path, points, waistLowering * 0.5, 'back', 'Waistband')
+      lowerWaist(paths, Path, points, (waistLowering + waistbandSize) * 0.5, 'back', 'Waistband')
       console.log({ wb8: points.backSideWaist })
       paths.backWaistband = new Path()
         .move(points.backWaistband)
@@ -755,12 +766,9 @@ export const points = {
         .hide()
     }
 
-    store.set(
-      'waistbandLength',
-      paths.backWaistband.length() +
-        paths.frontWaistband.length() +
-        points.frontPanelWaistband.dist(points.backPanelWaistband)
-    )
+    store.set('waistbandBackLength', paths.backWaistband.length())
+    store.set('waistbandFrontLength', paths.frontWaistband.length())
+    store.set('waistbandPanelLength', points.frontPanelWaistband.dist(points.backPanelWaistband))
     console.log({
       waistbandLengthBack: paths.backWaistband.length(),
       waistbandLengthFront: paths.frontWaistband.length(),

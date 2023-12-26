@@ -25,8 +25,12 @@ export const waistband = {
     }
 
     const waistLength = store.get('waistLength')
+    const waistbandBackLength = store.get('waistbandBackLength')
+    const waistbandFrontLength = store.get('waistbandFrontLength')
+    const waistbandPanelLength = store.get('waistbandPanelLength')
     const waistbandLength = store.get('waistbandLength')
     const waistbandSize = store.get('waistbandSize')
+    const waistLowering = store.get('waistLowering')
     if (waistbandSize <= 0) {
       return part.hide()
     }
@@ -94,53 +98,47 @@ export const waistband = {
       wbpl: paths.waistband.length(),
     })
 
-    return part
+    const rWaistband = paths.waistband.reverse()
+    points.snippetPanelBack = rWaistband.shiftAlong(waistbandFrontLength + waistbandPanelLength)
+    snippets.panelBack = new Snippet('notch', points.snippetPanelBack)
+    points.snippetPanelFront = rWaistband.shiftAlong(waistbandFrontLength)
+    snippets.panelFront = new Snippet('notch', points.snippetPanelFront)
 
-    points.frontTop = new Point(0, 0).addCircle(3)
-    points.frontBottom = points.frontTop.shift(270, waistbandSize).addCircle(5)
+    if (options.Lowerwaistbandback) {
+      paths.waistband = rWaistband.split(points.snippetPanelBack)[0]
+      points.waistbandBackPanel = points.snippetPanelBack.copy()
+      points.waistbandBackPanelCP = points.snippetPanelFront.shiftFractionTowards(
+        points.waistbandBackPanel,
+        1.3
+      )
+      points.waistbandBack = points.waistBack
+        .shiftOutwards(points.waistbandBack, (waistLowering + waistbandSize) * 0.5)
+        .addCircle(3)
+      paths.waistband = new Path()
+        .move(points.waistbandBack)
+        ._curve(points.waistbandBackPanelCP, points.waistbandBackPanel)
+        .join(paths.waistband.reverse())
+    }
 
-    let rotateAngle = 180 * 5
-    do {
-      points.backTop = points.frontTop.shift(rotateAngle * 0.2, waistLength).addCircle(7)
-      points.backBottom = points.frontBottom.shift(rotateAngle * 0.2, waistbandLength).addCircle(9)
-      rotateAngle++
+    paths.seamSA = new Path()
+      .move(points.waistFront)
+      .join(paths.waist.reverse())
+      .line(points.waistbandBack)
+      .join(paths.waistband)
+      .hide()
 
-      const angle = points.backTop.angle(points.backBottom)
-      points.backTopCp = points.backTop.shift(angle + 90, waistLength * cbqc).addCircle(10)
-      points.backBottomCp = points.backBottom.shift(angle + 90, waistbandLength * cbqc)
-    } while (points.backTopCp.y < 0)
+    paths.seam = new Path().move(points.waistbandFront).line(points.waistFront).join(paths.seamSA)
 
-    diff = 0
-    iter = 0
-    const direction = waistLength > waistbandLength ? -1 : 1
+    if (sa) {
+      const seamSA = paths.seamSA.offset(sa)
+      paths.sa = new Path()
+        .move(points.waistFront)
+        .line(seamSA.start())
+        .join(seamSA)
+        .line(points.waistbandFront)
+        .attr('class', 'fabric sa')
+    }
 
-    console.log({ wl: waistLength, wbl: waistbandLength })
-    do {
-      points.frontTopCp = points.frontTop.shift(180, waistLength * cbqc)
-      points.frontBottomCp = points.frontBottom.shift(180, waistbandLength * cbqc)
-
-      const angle = points.backTop.angle(points.backBottom)
-
-      points.backTop = points.backTop.shift(angle, diff)
-      points.backBottom = points.backBottom.shift(angle, diff)
-
-      points.backTopCp = points.backTop.shift(angle + 90, waistLength * cbqc).addCircle(10)
-      points.backBottomCp = points.backBottom.shift(angle + 90, waistbandLength * cbqc)
-
-      paths.top = new Path()
-        .move(points.frontTop)
-        .curve(points.frontTopCp, points.backTopCp, points.backTop)
-      paths.bottom = new Path()
-        .move(points.frontBottom)
-        .curve(points.frontBottomCp, points.backBottomCp, points.backBottom)
-
-      diff = paths.top.length() - waistLength
-      if (diff > -1 && diff < 1) {
-        diff = paths.bottom.length() - waistbandLength
-      }
-
-      console.log({ i: iter, d: diff, t: paths.top.length(), b: paths.bottom.length() })
-    } while (iter++ < 1 && (diff < -1 || diff > 1))
     return part
   },
 }
