@@ -1,7 +1,13 @@
 # Change log for: @freesewing/plugin-bin-pack
 
 
-## 3.0.0 (2022-09-30)
+## 3.1.0 (2023-12-26)
+
+### Added
+
+ - First release of the plugin providing the default packing implementation
+
+## 3.0.0 (2023-09-30)
 
 ### Changed
 

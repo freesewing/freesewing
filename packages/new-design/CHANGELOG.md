@@ -1,7 +1,13 @@
 # Change log for: @freesewing/new-design
 
 
-## 3.0.0 (2022-09-30)
+## 3.1.0 (2023-12-26)
+
+### Fixed
+
+ - Removed unwanted debug output
+
+## 3.0.0 (2023-09-30)
 
 ### Changed
 
