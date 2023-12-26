@@ -1,8 +1,8 @@
 ---
-title: How to generate bespoke sewing patterns
+title: Comment générer des patrons de couture sur mesure
 ---
 
-Generating custom sewing patterns based on your measurements is the flagship feature of our website. We provide an online environment that allows you to customize various aspects of your pattern.
+La création de patrons de couture personnalisés sur la base de vos mesures est la fonction phare de notre site web. Nous proposons un environnement en ligne qui vous permet de personnaliser divers aspects de votre modèle.
 
 Cet environnement offre un large éventail de fonctionnalités, qui seront toutes expliquées dans ces pages.
 
@@ -20,14 +20,14 @@ Le menu **View** à gauche te permet de sélectionner la vue. Chaque vue a un bu
 
 - **Éditeur de motifs**: c'est ici que tu peux modifier ton motif.
 - **Mesures du motif**: Tu peux ici choisir le jeu de mesures à utiliser pour générer le motif, ou modifier les mesures manuellement.
-- **Pattern tests**: Allows you to test the pattern. Il s'agit d'une fonction avancée.
+- **Tests de motifs**: permet de tester le motif (il s'agit d'une fonction avancée). Il s'agit d'une fonction avancée.
 - **Mise en page d'impression**: permet de disposer manuellement les parties du motif afin d'optimiser la mise en page pour l'impression.
 - **Enregistrer le motif sous...**: Permet d'enregistrer le motif dans ton compte.
 - **Exporter le motif**: permet d'exporter le motif au format PDF ou SVG.
 - **Modifier les paramètres à la main**: te permet - tu l'as deviné - de modifier les paramètres pour générer le motif à la main. Il s'agit d'une fonction avancée.
 - **Pattern logs**: Ceci montre les journaux générés lors de l'élaboration du motif. Il s'agit d'une fonction avancée.
 - **Inspecteur de modèle**: permet au concepteur de modèle d'inspecter divers aspects du modèle. Il s'agit d'une fonction avancée.
-- **Documentation**: Provides links to the documentation.
+- **Documentation**: Fournit des liens vers la documentation
 
 N'hésite pas à consulter les autres points de vue, mais nous nous concentrons ici sur l'éditeur de modèles ****.
 
@@ -35,7 +35,7 @@ N'hésite pas à consulter les autres points de vue, mais nous nous concentrons 
 
 Sur le côté droit de l'écran se trouve le menu **Settings** qui est à son tour composé de quatre sections :
 
-- **Messages du créateur**: Contient des informations que le créateur du modèle a signalées à ton attention. Note that these are not generic remarks about the design in general (those go in the documentation), but rather information specific to this very pattern. Ne manque pas de les consulter. Ainsi, ces messages seront différents pour chaque utilisateur, ensemble de mesures ou même combinaison d'options de conception.
+- **Messages du créateur**: Contient des informations que le créateur du modèle a signalées à ton attention. Note qu'il ne s'agit pas de remarques génériques sur la conception en général (elles figurent dans la documentation), mais plutôt d'informations spécifiques à ce modèle. Ne manque pas de les consulter. Ainsi, ces messages seront différents pour chaque utilisateur, ensemble de mesures ou même combinaison d'options de conception.
 - **Options de conception**: contient toutes les différentes options que le concepteur a ajoutées et qui te permettent de modifier ton modèle. Ces options seront différentes pour chaque modèle. Reporte-toi à la documentation de conception pour obtenir une liste de toutes les options disponibles, ou consulte la documentation en ligne.
 - **Paramètres de base**: Il s'agit de paramètres qui ne sont pas fournis par le(s) dessin(s) mais plutôt par la bibliothèque de base de FreeSewing. Ainsi, les paramètres que tu trouveras ici sont les mêmes pour tous les modèles, car ils utilisent tous la même bibliothèque de base. Reporte-toi à [Core Settings](/docs/about/site/draft/core-settings) pour plus de détails, ou consulte la documentation en ligne.
 - **Paramètres de l'interface utilisateur**: Enfin, ces paramètres ne contrôlent pas le motif en tant que tel, mais plutôt l'interface utilisateur. Par exemple, tu peux ici activer le mode kiosque ou peaufiner le paramètre de l'expérience utilisateur pour voir plus ou moins de fonctionnalités. Comme les paramètres de base, les paramètres de l'interface utilisateur sont les mêmes pour chaque dessin. Reporte-toi à [Paramètres de l'interface utilisateur](/docs/about/site/draft/ui-settings) ou consulte la documentation en ligne.
