@@ -181,7 +181,6 @@ function draftBack({
     -pocketMetric * options.pocketBackPositionX,
     pocketMetric * options.pocketBackPositionY
   ).addText('opal:pocketBack', 'center')
-  store.set('backPocketCenter', points.backPocket)
   points.backPocketFrontTop = points.backPocket.translate(
     (pocketMetric * options.pocketBackWidth) / 2,
     (-pocketMetric * options.pocketBackHeight) / 2
@@ -307,47 +306,48 @@ function draftBack({
   points.inseamHemAllowance = points.inseamHem.translate(-sa, absoluteOptions.legHemAllowance)
   points.outseamHemAllowance = points.outseamHem.translate(sa, absoluteOptions.legHemAllowance)
 
-  if (options.pocketBack)
-    store.set(
-      'pocketBack',
-      (paths.pocketBack = new Path()
-        .move(points.backPocketFrontTop)
-        .line(points.backPocketBackTop)
-        .line(points.backPocketBackBottomP1)
-        .line(points.backPocketBackBottomP2)
-        .line(points.backPocketFrontBottomP1)
-        .line(points.backPocketFrontBottomP2)
-        .line(points.backPocketFrontTop)
-        .close()
-        .addClass('fabric dashed'))
-    )
+  if (options.pocketBack) {
+    paths.pocketBackHem = new Path()
+      .move(points.backPocketFrontTop)
+      .line(points.backPocketBackTop)
+      .addClass('fabric dashed')
+    paths.pocketBackSeam = new Path()
+      .move(points.backPocketBackTop)
+      .line(points.backPocketBackBottomP1)
+      .line(points.backPocketBackBottomP2)
+      .line(points.backPocketFrontBottomP1)
+      .line(points.backPocketFrontBottomP2)
+      .line(points.backPocketFrontTop)
+      .addClass('fabric dashed')
+  }
 
-  if (options.pocketCarpenter)
-    store.set(
-      'pocketCarpenter',
-      (paths.pocketCarpenter = new Path()
-        .move(points.carpenterPocketTopFront)
-        .line(points.carpenterPocketTopBack)
-        .line(points.carpenterPocketBottomBack)
-        .line(points.carpenterPocketOutseamBottom)
-        .line(points.carpenterPocketOutseamTop)
-        .line(points.carpenterPocketTopFront)
-        .close()
-        .addClass('fabric dashed'))
-    )
+  if (options.pocketCarpenter) {
+    paths.pocketCarpenterHem = new Path()
+      .move(points.carpenterPocketOutseamTop)
+      .line(points.carpenterPocketTopFront)
+      .addClass('fabric dashed')
 
-  if (options.pocketCarpenterExtra)
-    store.set(
-      'pocketCarpenterExtra',
-      (paths.pocketCarpenterExtra = new Path()
-        .move(points.carpenterPocketExtraOutseamTop)
-        .line(points.carpenterPocketExtraBackTop)
-        .line(points.carpenterPocketBottomBack)
-        .line(points.carpenterPocketOutseamBottom)
-        .line(points.carpenterPocketExtraOutseamTop)
-        .close()
-        .addClass('fabric dashed'))
-    )
+    paths.pocketCarpenterSeam = new Path()
+      .move(points.carpenterPocketTopFront)
+      .line(points.carpenterPocketTopBack)
+      .line(points.carpenterPocketBottomBack)
+      .line(points.carpenterPocketOutseamBottom)
+      .line(points.carpenterPocketOutseamTop)
+      .addClass('fabric dashed')
+  }
+
+  if (options.pocketCarpenterExtra) {
+    paths.pocketCarpenterExtraHem = new Path()
+      .move(points.carpenterPocketExtraOutseamTop)
+      .line(points.carpenterPocketExtraBackTop)
+      .addClass('fabric dashed')
+    paths.pocketCarpenterExtraSeam = new Path()
+      .move(points.carpenterPocketExtraBackTop)
+      .line(points.carpenterPocketBottomBack)
+      .line(points.carpenterPocketOutseamBottom)
+      .line(points.carpenterPocketExtraOutseamTop)
+      .addClass('fabric dashed')
+  }
 
   if (options.hammerLoop) {
     paths.hammerLoopCenter = new Path()

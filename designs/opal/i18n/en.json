@@ -9,9 +9,9 @@
 	"pocketBack": "Back pocket",
 	"pocketBib": "Bib pocket",
 	"pocketShield": "Pocket\nshield",
-	"pocketCarpenter": "Carpenter\npocket\n(right side)",
-	"pocketCarpenterExtra": "Second\ncarpenter\npocket\n(right side)",
-	"hammerLoop": "Hammer Loop (left side)",
+	"pocketCarpenter": "Carpenter pocket",
+	"pocketCarpenterExtra": "2nd Carpenter pocket",
+	"hammerLoop": "Hammer Loop",
 	"waistband": "Waistband",
 	"bibPlacket": "Bib placket"
  },

@@ -45,10 +45,12 @@ function draftFront({
   //     - (DONE) Bib
   //   - Pockets
   //     - (DONE) Slash
-  //     - Bib
-  //     - Back
-  //     - Carpenter
+  //     - (DONE) Bib
+  //     - (DONE) Back
+  //     - (DONE) Carpenter
+  //   - Hammer Loop
   // - (DONE) Fix strap length calculation.
+  // - Hide options that are not applicable (for example, slash pocket options if the slash pocket is disabled.
 
   points.cfWaist = new Point(
     -measurements.waistFrontArc * (1 + options.waistEase) * (1 - options.waistBalance),

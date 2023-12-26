@@ -24,9 +24,9 @@ function draftPocketBib({
   delete paths.hem
   delete paths.sa
   delete paths.placket
-  if (options.bibOnFold) delete paths.cf
-  paths.bibPocketSeam.setClass('fabric')
-  paths.bibPocketHem.setClass('fabric')
+  if (options.bibPocketOnFold) delete paths.cf
+  paths.bibPocketSeam.unhide().setClass('fabric')
+  paths.bibPocketHem.unhide().setClass('fabric')
 
   delete points.bibPocketText
 
@@ -39,16 +39,65 @@ function draftPocketBib({
 
   macro('hd', {
     id: 'wTop',
-    from: options.bibOnFold
+    from: options.bibPocketOnFold
       ? points.pocketCenterTop
       : points.pocketSideTop.flipX(points.pocketCenterTop),
     to: points.pocketSideTop,
     y: points.pocketCenterTop.y - (absoluteOptions.hemAllowance + 15),
   })
+  if (options.pocketBibStyle !== 'rectangle') {
+    if (options.pocketBibStyle !== 'pentagon')
+      macro('hd', {
+        id: 'wBottomCenter',
+        from: options.bibPocketOnFold
+          ? points.pocketCenterBottom
+          : points.pocketSideBottom.flipX(points.pocketCenterTop),
+        to: points.pocketSideBottom,
+        y: points.pocketCenterBottom.y + (sa + 15),
+      })
+    if (options.pocketBibStyle !== 'pentagon')
+      macro('hd', {
+        id: 'wBottomSide',
+        from: points.pocketSideBottom,
+        to: points.pocketFeatureSide,
+        y: points.pocketCenterBottom.y + (sa + 15),
+      })
+    macro('hd', {
+      id: 'wBottom',
+      from: options.bibPocketOnFold
+        ? points.pocketCenterBottom
+        : points.pocketFeatureSide.flipX(points.pocketCenterTop),
+      to: points.pocketFeatureSide,
+      y: points.pocketCenterBottom.y + (sa + 30),
+    })
+    macro('vd', {
+      id: 'hUpperSide',
+      from: points.pocketSideTop,
+      to: points.pocketFeatureSide,
+      x: points.pocketFeatureSide.x + (sa + 15),
+    })
+    macro('vd', {
+      id: 'hLowerSide',
+      from: points.pocketFeatureSide,
+      to: points.pocketCenterBottom,
+      x: points.pocketFeatureSide.x + (sa + 15),
+      noStartMarker: true,
+      noEndMarker: true,
+    })
+  }
+  macro('vd', {
+    id: 'hTotalSide',
+    from: points.pocketSideTop,
+    to: points.pocketCenterBottom,
+    x:
+      options.pocketBibStyle === 'rectangle'
+        ? points.pocketSideBottom.x + (sa + 15)
+        : points.pocketFeatureSide.x + (sa + 30),
+  })
 
   points.grainlineTop = points.pocketCenterTop
   points.grainlineBottom = points.pocketCenterBottom
-  options.bibOnFold
+  options.bibPocketOnFold
     ? macro('cutOnFold', {
         from: points.grainlineTop,
         to: points.grainlineBottom,
@@ -58,14 +107,16 @@ function draftPocketBib({
         to: points.grainlineBottom,
       })
 
-  points.title = store
-    .get('bibPocketCenter')
-    .copy()
+  points.title = points.pocketCenterTop
+    .shiftFractionTowards(points.pocketCenterBottom, 1 / 2)
     .translate(scale * 10, scale * 10)
   macro('title', { at: points.title, nr: 4, title: 'opal:pocketBib' })
-  options.bibOnFold
+  options.bibPocketOnFold
     ? delete snippets.logo
-    : (points.logo = points.title.translate(-scale * 20, scale * 35))
+    : (snippets.logo = new Snippet(
+        'logo',
+        (points.logo = points.title.translate(-scale * 20, scale * 35))
+      ))
 
   return part
 }

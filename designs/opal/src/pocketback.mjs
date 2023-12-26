@@ -3,6 +3,7 @@ import { back } from './back.mjs'
 function draftPocketBack({
   measurements,
   options,
+  absoluteOptions,
   Point,
   Path,
   points,
@@ -17,13 +18,90 @@ function draftPocketBack({
 }) {
   if (!options.pocketBack) return part.hide()
 
-  paths.seam = store.get('pocketBack').clone()
-  paths.seam.setClass('fabric')
+  macro('rmad')
+  macro('rmScalebox')
 
-  points.title = store
-    .get('backPocketCenter')
-    .copy()
-    .translate(scale * 10, scale * 10)
+  delete paths.centerSeam
+  delete paths.hem
+  delete paths.sa
+  delete paths.legHem
+  delete paths.outseam
+  delete paths.pocketCarpenterSeam
+  delete paths.pocketCarpenterHem
+  delete paths.pocketCarpenterExtraHem
+  delete paths.pocketCarpenterExtraSeam
+  delete paths.hint
+  delete paths.bibLowerHexagonHint
+  delete paths.bibUpperHexagonHint
+  delete paths.hammerLoopLeft
+  delete paths.hammerLoopCenter
+  delete paths.hammerLoopRight
+  delete points.carpenterPocketLabel
+  delete points.carpenterPocketExtraLabel
+  points.title = points.backPocket.copy().translate(scale * 10, scale * 10)
+  delete points.backPocket
+
+  paths.pocketBackSeam.setClass('fabric')
+  paths.pocketBackHem.setClass('fabric')
+  if (sa)
+    paths.sa = paths.pocketBackSeam
+      .offset(sa)
+      .join(paths.pocketBackHem.offset(absoluteOptions.hemAllowance))
+      .close()
+      .setClass('fabric sa')
+
+  macro('hd', {
+    id: 'wTop',
+    from: points.backPocketBackTop,
+    to: points.backPocketFrontTop,
+    y: points.backPocketBackTop.y - (absoluteOptions.hemAllowance + 15),
+  })
+  macro('hd', {
+    id: 'wBottomCenter',
+    from: points.backPocketBackBottomP2,
+    to: points.backPocketFrontBottomP1,
+    y: points.backPocketBackBottom.y + (sa + 15),
+  })
+  macro('hd', {
+    id: 'wBottomSide',
+    from: points.backPocketFrontBottomP1,
+    to: points.backPocketFrontBottomP2,
+    y: points.backPocketBackBottom.y + (sa + 15),
+  })
+  macro('vd', {
+    id: 'hSideMain',
+    from: points.backPocketFrontTop,
+    to: points.backPocketFrontBottomP2,
+    x: points.backPocketFrontTop.x + (sa + 15),
+  })
+  macro('vd', {
+    id: 'hSideDiagonal',
+    from: points.backPocketFrontBottomP2,
+    to: points.backPocketFrontBottomP1,
+    x: points.backPocketFrontTop.x + (sa + 15),
+    noStartMarker: true,
+    noEndMarker: true,
+  })
+  macro('vd', {
+    id: 'hSideTotal',
+    from: points.backPocketFrontTop,
+    to: points.backPocketFrontBottomP1,
+    x: points.backPocketFrontTop.x + (sa + 30),
+  })
+
+  points.grainlineTop = points.backPocketBackTop.shiftFractionTowards(
+    points.backPocketFrontTop,
+    0.5
+  )
+  points.grainlineBottom = points.backPocketBackBottom.shiftFractionTowards(
+    points.backPocketFrontBottom,
+    0.5
+  )
+  macro('grainline', {
+    from: points.grainlineTop,
+    to: points.grainlineBottom,
+  })
+
   macro('title', { at: points.title, nr: 7, title: 'opal:pocketBack' })
   points.logo = points.title.translate(-scale * 20, scale * 35)
   snippets.logo = new Snippet('logo', points.logo)
@@ -34,5 +112,5 @@ function draftPocketBack({
 export const pocketBack = {
   name: 'pocketBack',
   draft: draftPocketBack,
-  after: back,
+  from: back,
 }
