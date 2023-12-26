@@ -1,10 +1,11 @@
 import { Tab, Tabs } from '../tabs.mjs'
-import Md from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import { pluginFlip } from '@freesewing/plugin-flip'
 import { pluginGore } from '@freesewing/plugin-gore'
+import { pluginRingsector } from '@freesewing/plugin-ringsector'
 import { Design } from '@freesewing/core'
 import yaml from 'js-yaml'
-import { Pattern, PatternXray } from '@freesewing/react-components'
+import { Pattern, PatternXray } from 'pkgs/react-components/src/index.mjs'
 import { useTranslation } from 'next-i18next'
 
 export const ns = ['tutorial', 'plugin-annotations']
@@ -48,7 +49,7 @@ const buildPattern = (children, settings = { margin: 5 }, tutorial = false, pape
           lengthRatio: { pct: 75, min: 55, max: 85, menu: 'style' },
         }
       : {},
-    plugins: [pluginFlip, pluginGore],
+    plugins: [pluginFlip, pluginGore, pluginRingsector],
   }
   const design = new Design({
     parts: [part],
@@ -61,7 +62,7 @@ const buildPattern = (children, settings = { margin: 5 }, tutorial = false, pape
 }
 
 // Handles display of pattern in mormal or xray mode
-const ShowPattern = ({ renderProps, logs, mode = 'normal' }) => {
+export const ShowPattern = ({ renderProps, logs, mode = 'normal' }) => {
   const { t } = useTranslation(ns)
   if (!renderProps) return null
 
@@ -145,7 +146,7 @@ export const TabbedExample = ({
       </Tabs>
       {caption && (
         <div className="text-center italic -mt-4">
-          <Md>{caption}</Md>
+          <Mdx md={caption} />
         </div>
       )}
     </div>

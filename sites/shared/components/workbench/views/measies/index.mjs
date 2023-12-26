@@ -71,6 +71,7 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
               t={t}
               size="md"
             />,
+            'ownSets',
           ],
           [
             <Fragment key={1}>
@@ -87,6 +88,7 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
               size="md"
               key={2}
             />,
+            'bmSets',
           ],
           [
             <Fragment key={1}>
@@ -97,6 +99,7 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
               <p>{t('workbench:chooseFromCuratedSetsDesc')}</p>
             </Fragment>,
             <CuratedSetPicker design={design} clickHandler={loadMeasurements} t={t} key={2} />,
+            'csets',
           ],
           [
             <Fragment key={1}>
@@ -107,6 +110,7 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
               <p>{t('workbench:editMeasiesByHandDesc')}</p>
             </Fragment>,
             <MeasiesEditor {...{ Design, settings, update }} key={2} />,
+            'editor',
           ],
         ]}
       />

@@ -22,6 +22,6 @@ El lazo de la banda se pasa a través de las fundas de las copas y se anuda cons
 El lazo de la banda y la funda de las copas se sustituyen por una banda cosida con lazos en la espalda.  
 Los lazos del cuello son más largos y se cruzan en la espalda, luego pasan por los lazos de la banda y se anudan entre sí.
 
-## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bee_crossbackties_sample.svg "Efecto de esta opción en el patrón")
+
+

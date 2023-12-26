@@ -1,6 +1,6 @@
 ---
-title: Reversible
+title: Реверсивний
 ---
 
-Whether you want to make a fully reversible Bee or not.
+Незалежно від того, чи хочете ви зробити повністю реверсивну бджолу чи ні.
 

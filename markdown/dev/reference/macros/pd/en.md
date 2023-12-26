@@ -4,7 +4,9 @@ title: pd
 
 The `pd` macro adds a _path dimension_ to your pattern, indicating the length
 of a path.
-It is provided by the [annotations plugin](/reference/plugins/annotations).
+
+It is provided by [plugin-annotations](/reference/plugins/annotations), which is
+part of [core-plugins](/reference/plugins/core) (so it is available by default).
 
 ## Signature
 
@@ -16,6 +18,7 @@ macro('pd', {
   Boolean noEndMarker,
   Boolean noStartMarker,
   String text,
+  Boolean force = false,
 })
 ```
 
@@ -32,6 +35,7 @@ macro('pd', {
   macro('pd', {
     path: paths.example,
     d: 15,
+    force: true,
   })
 
   return part
@@ -46,21 +50,12 @@ macro('pd', {
 | `path`          |         | [Path](/reference/api/path)   | The path to draw the dimension along |
 | `d`             | 10      | Number              | The offset at which to draw the dimension |
 | `text`          | Path length | Number          | The text to go on the dimension if not the length of the path |
-| `id`            | auto-assigned | String | A custom ID under which paths and points will be created |
+| `id`            | `pd` | `string` | The ID of this macro instance |
 | `noStartMarker` | `false` | Boolean             | Whether to not draw a start marker |
 | `noEndMarker`   | `false` | Boolean             | Whether to not draw an end marker |
-
-## Result
-
-| Generated Element | Description |
-|-------------------|-------------|
-| `paths.${id}` | Path for the span of the dimension |
-| `paths.${id}_ls` | Path for the leader to the start of the dimension |
-| `paths.${id}_le` | Path for the leader to the end of the dimension |
+| `force`      | `false`    | `boolean`  | Set this to `true` to display the macro output even when `paperless` is `false` |
 
 ## Notes
 
-Setting a custom ID will:
+This macro takes the `paperless` setting into account and won't output anything when both `paperless` and `force` are `false`.
 
-- Allow removal of the dimension with [the `rmd` macro](/reference/macros/rmd)
-- Prevent removal of the dimension with [the `rmad` macro](/reference/macros/rmad/)

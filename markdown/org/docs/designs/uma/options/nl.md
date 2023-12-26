@@ -1,5 +1,5 @@
 ---
-title: "Ursula onderbroek: Ontwerpopties"
+title: "Uma ondergoed: Ontwerpopties"
 ---
 
-<PatternOptions pattern='ursula' />
+<DesignOptions design='uma' />

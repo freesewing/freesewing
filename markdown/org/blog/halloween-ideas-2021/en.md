@@ -1,5 +1,7 @@
 ---
-author: "joostdecock"
+author: 
+ - bobgeorgethe3rd
+ - Lexander
 caption: "Drawing by @racerxmachina, Sandy!"
 date: "2021-10-20"
 intro: "You may already have an idea for what you want to make for Halloween. Or maybe you have no clue. Either way, here is some inspiration to get you going."
@@ -34,7 +36,7 @@ This is a goofy outfit that can be worn to any informal party. The formal aspect
 [Huey](/designs/huey/), [Hugo](/designs/hugo/), and [Paco](/designs/paco/) are perfect bases to create simple animal hoodies and trousers that will also be comfortable to wear. There are many animals you can try so here are a few basic alterations and ideas to get your creative brain flowing.  
 
 #### Creating a back seam for Hugo and Huey
-For simple things like back spikes for dinosaurs, you may find it useful to create a back seam in [Hugo](/designs/hugo/) or [Huey](/designs/huey/). This is simply done by cutting two back pieces instead of one on the fold. Don't forget to add seam allowance along the center back! From there you would construct your additions, such as spikes, and then baste them to one of the back pieces with right sides together. Then pin the other back piece over the top, right sides together and sew. This will now count as your single back piece in the Huey and [Hugo instructions](https://freesewing.org/docs/patterns/hugo/instructions/).
+For simple things like back spikes for dinosaurs, you may find it useful to create a back seam in [Hugo](/designs/hugo/) or [Huey](/designs/huey/). This is simply done by cutting two back pieces instead of one on the fold. Don't forget to add seam allowance along the center back! From there you would construct your additions, such as spikes, and then baste them to one of the back pieces with right sides together. Then pin the other back piece over the top, right sides together and sew. This will now count as your single back piece in the Huey and [Hugo instructions](/docs/designs/hugo/instructions/).
    
 The same can be done with the hood center piece for [Hugo](/designs/hugo/), and [Huey](/designs/huey/)'s hood already has a center back seam so no changes are required for Huey's hood. Another thing you can do is split the hood patterns in half ear to ear if you are adding stuff like ears but you may find it easier just to hand sew these elements on.  
 

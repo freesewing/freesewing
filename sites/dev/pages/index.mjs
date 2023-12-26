@@ -1,14 +1,13 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
-import Head from 'next/head'
 import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { PageLink } from 'shared/components/link.mjs'
 import { Highlight } from 'shared/components/mdx/highlight.mjs'
 import { FreeSewingIcon, CisFemaleIcon, CodeIcon } from 'shared/components/icons.mjs'
 import { CardLink } from 'shared/components/link.mjs'
-
-const title = 'Welcome to FreeSewing.dev'
+import { ReadMore } from 'shared/components/mdx/read-more.mjs'
+import { MastodonVerification } from 'shared/components/social/mastodon-verification.mjs'
 
 const Card = ({ bg = 'bg-base-200', textColor = 'text-base-content', title, children, icon }) => (
   <div className={`px-8 ${bg} py-10 rounded-lg block ${textColor} shadow-lg grow`}>
@@ -27,26 +26,12 @@ const Card = ({ bg = 'bg-base-200', textColor = 'text-base-content', title, chil
  * or set them manually.
  */
 const HomePage = ({ page }) => (
-  <PageWrapper {...page}>
-    <Head>
-      <meta property="og:type" content="article" key="type" />
-      <meta
-        property="og:description"
-        content="Documentation and tutorials for FreeSewing developers and contributors"
-        key="description"
-      />
-      <meta property="og:article:author" content="Joost De Cock" key="author" />
-      <meta property="og:image" content="https://freesewing.dev/og/og.png" key="image" />
-      <meta property="og:image:type" content="image/png" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
-      <meta property="og:url" content="https://freesewing.dev/" key="url" />
-      <meta property="og:locale" content="en_US" key="locale" />
-      <meta property="og:site_name" content="freesewing.dev" key="site" />
-      <title>{title}</title>
-    </Head>
-
-    <div className="max-w-7xl m-auto px-0 mt-24">
+  <PageWrapper
+    {...page}
+    title="FreeSewing.dev"
+    intro="Documentation and tutorials for FreeSewing developers and contributors"
+  >
+    <div className="max-w-7xl m-auto px-0 mt-24 px-4">
       <FreeSewingIcon className="h-36 w-36 m-auto" />
       <h1 className="text-center font-heavy drop-shadow-md px-4">
         <span style={{ letterSpacing: '-0.2rem' }} className="text-5xl lg:text-6xl">
@@ -82,8 +67,30 @@ const HomePage = ({ page }) => (
         </Card>
       </div>
 
+      <h2 className="lg:text-center mb-4 mt-12">Documentation</h2>
+      <div className="flex flex-col gap-5 md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 lg:gap-4 mt-12 mb-24">
+        <div>
+          <h4>Guides</h4>
+          <ReadMore recurse root="guides" depth={3} />
+        </div>
+        <div>
+          <h4>Howtos</h4>
+          <ReadMore recurse root="howtos" depth={3} />
+        </div>
+        <div>
+          <h4>Reference</h4>
+          <ReadMore recurse root="reference" depth={3} />
+        </div>
+        <div>
+          <h4>Tutorials</h4>
+          <ReadMore recurse root="tutorials" depth={3} />
+          <h4>Training</h4>
+          <ReadMore recurse root="training" depth={3} />
+        </div>
+      </div>
+
       <h2 className="lg:text-center mb-4 mt-12">Using FreeSewing: TL;DR</h2>
-      <div className="flex flex-row flex-wrap gap-4 justify-between">
+      <div className="grid w-full m-auto  md:grid-cols-2 gap-4 justify-between">
         <div className="max-w-xl w-full">
           <h3>
             To go fast, go alone <span role="img">🚀</span>
@@ -123,7 +130,7 @@ const HomePage = ({ page }) => (
         </div>
       </div>
 
-      <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-4 mt-12">
+      <div className="flex flex-col gap-5 md:grid lg:grid-cols-2 lg:gap-4 mt-12">
         <CardLink
           href="/reference/core"
           title="Core API"
@@ -155,6 +162,7 @@ const HomePage = ({ page }) => (
         />
       </div>
     </div>
+    <MastodonVerification />
   </PageWrapper>
 )
 

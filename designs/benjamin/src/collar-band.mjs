@@ -22,6 +22,7 @@ function draftBenjaminCollarBand({
 
   const band = {
     h: utils.units(store.get('collarBandHeight') + 2 * sa),
+    // @woutervdub: Is it expected that the length is not imfluenced by SA? (joost)
     l: utils.units(measurements.neck * (1 + options.collarEase) - store.get('knotWidth') * 2),
   }
 
@@ -39,8 +40,8 @@ function draftBenjaminCollarBand({
 
     // But flag this to the user
     store.flag.note({
-      id: 'cutCollarBand',
       msg: `benjamin:cutCollarBandFlag`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
       replace: {
         height: band.h,
         length: band.l,

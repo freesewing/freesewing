@@ -30,7 +30,7 @@ export const plugin = {
         svg.attributes.set('class', 'freesewing')
         svg.style += sampleStyle(data.stripped)
         svg.style += paperlessStyle(data.stripped)
-        svg.style += buildStylesheet(svg.pattern.settings.scale, data.stripped)
+        svg.style += buildStylesheet(svg.pattern.settings[0].scale, data.stripped)
         let paperless = false
         for (const set of svg.pattern.settings) {
           if (set.paperless) paperless = true

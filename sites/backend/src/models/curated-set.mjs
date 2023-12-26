@@ -9,7 +9,7 @@ import { decorateModel } from '../utils/model-decorator.mjs'
 export function CuratedSetModel(tools) {
   return decorateModel(this, tools, {
     name: 'curatedSet',
-    jsonFields: ['measies', 'tagsDe', 'tagsEn', 'tagsEs', 'tagsFr', 'tagsNl', 'tagsUk'],
+    jsonFields: ['measies', 'tags'],
     models: ['confirmation', 'set'],
   })
 }
@@ -48,9 +48,8 @@ CuratedSetModel.prototype.guardedCreate = async function ({ body, user }) {
       const key = field + capitalize(lang)
       if (body[key] && typeof body[key] === 'string') data[key] = body[key]
     }
-    const key = 'tags' + capitalize(lang)
-    if (body[key] && Array.isArray(body[key])) data[key] = JSON.stringify(body[key])
   }
+  if (body.tags && Array.isArray(body.tags)) data.tags = JSON.stringify(body.tags)
 
   /*
    * Add the (sanitized) measurements if there are any
@@ -59,9 +58,14 @@ CuratedSetModel.prototype.guardedCreate = async function ({ body, user }) {
   else data.measies = '{}'
 
   /*
-   * Set an initial img as we need the record ID to store an image on cloudflare
+   * Add the info
    */
-  data.img = this.config.avatars.set
+  if (body.info) data.info = body.info
+
+  /*
+   * Add the height
+   */
+  if (body.height) data.height = Number(body.height)
 
   /*
    * Create the database record
@@ -69,9 +73,9 @@ CuratedSetModel.prototype.guardedCreate = async function ({ body, user }) {
   await this.createRecord(data)
 
   /*
-   * Now that we have a record and ID, we can update the image after uploading it to cloudflare
+   * Now that we have a record and ID, we can upload the image to cloudflare and set its id
    */
-  const img = await storeImage(
+  await storeImage(
     {
       id: `cset-${this.record.id}`,
       metadata: { user: user.uid },
@@ -79,14 +83,6 @@ CuratedSetModel.prototype.guardedCreate = async function ({ body, user }) {
     },
     this.isTest(body)
   )
-
-  /*
-   * If an image was uploaded, update the record with the image ID
-   */
-  if (img) await this.update({ img })
-  /*
-   * If not, just read the record from the datbasa
-   */ else await this.read({ id: this.record.id })
 
   /*
    * Record created, return data in the proper format
@@ -131,7 +127,7 @@ CuratedSetModel.prototype.allCuratedSets = async function () {
    */
   let curatedSets
   try {
-    curatedSets = await this.prisma.curatedSet.findMany()
+    curatedSets = await this.prisma.curatedSet.findMany({ orderBy: { height: 'asc' } })
   } catch (err) {
     log.warn(`Failed to search curated sets: ${err}`)
   }
@@ -140,18 +136,18 @@ CuratedSetModel.prototype.allCuratedSets = async function () {
    * Iterate over list to do some housekeeping and JSON wrangling
    */
   const list = []
-  for (const curatedSet of curatedSets) {
-    const asPojo = { ...curatedSet }
-    /*
-     * We need to parse this from JSON
-     * See https://github.com/prisma/prisma/issues/3786
-     */
-    asPojo.measies = JSON.parse(asPojo.measies)
-    for (const lang of this.config.languages) {
-      const key = `tags${capitalize(lang)}`
-      asPojo[key] = JSON.parse(asPojo[key] || [])
+  if (curatedSets) {
+    for (const curatedSet of curatedSets) {
+      const asPojo = { ...curatedSet }
+      /*
+       * We need to parse this from JSON
+       * See https://github.com/prisma/prisma/issues/3786
+       */
+      asPojo.measies = JSON.parse(asPojo.measies)
+      asPojo.tags = JSON.parse(asPojo.tags)
+      delete asPojo.info
+      list.push(asPojo)
     }
-    list.push(asPojo)
   }
 
   return list
@@ -234,6 +230,16 @@ CuratedSetModel.prototype.guardedUpdate = async function ({ params, body, user }
   if ([true, false].includes(body.published)) data.published = body.published
 
   /*
+   * Handle the info field
+   */
+  if (typeof body.info === 'string') data.info = body.info
+
+  /*
+   * Handle the info field
+   */
+  if (body.height) data.height = Number(body.height)
+
+  /*
    * Unlike a regular set, curated set have notes and name in each language
    */
   for (const lang of this.config.languages) {
@@ -259,15 +265,14 @@ CuratedSetModel.prototype.guardedUpdate = async function ({ params, body, user }
    * Handle the image, if there is one
    */
   if (typeof body.img === 'string') {
-    const img = await storeImage(
+    await storeImage(
       {
         id: `cset-${this.record.id}`,
-        metadata: { user: this.user.uid },
+        metadata: { user: user.uid },
         b64: body.img,
       },
       this.isTest(body)
     )
-    data.img = img
   }
 
   /*
@@ -369,10 +374,7 @@ CuratedSetModel.prototype.suggest = async function ({ body, user }) {
   /*
    * If an image was uploaded, update the record with the image ID
    */
-  if (img) {
-    data.img = img
-    await this.Confirmation.update({ data })
-  }
+  if (img) await this.Confirmation.update({ data })
 
   /*
    * Return id
@@ -442,8 +444,7 @@ CuratedSetModel.prototype.fromSuggestion = async function ({ params, user }) {
    * Now create the curated set
    */
   await this.createRecord({
-    // This image will need to be replaced
-    img: this.Confirmation.clear.data.img,
+    height: this.Confirmation.record.clear.data.height || 1,
     nameDe: name,
     nameEn: name,
     nameEs: name,
@@ -480,13 +481,14 @@ CuratedSetModel.prototype.fromSuggestion = async function ({ params, user }) {
  * @returns {curatedSet} object - The Cureated Set as a plain object
  */
 CuratedSetModel.prototype.asCuratedSet = function () {
-  return {
-    ...this.record,
-    measies:
-      typeof this.record.measies === 'string'
-        ? JSON.parse(this.record.measies)
-        : this.record.measies,
+  const data = { ...this.record }
+  for (const field of this.jsonFields) {
+    data[field] =
+      typeof this.record[field] === 'string' ? JSON.parse(this.record[field]) : this.record[field]
   }
+  delete data.info
+
+  return data
 }
 
 /*
@@ -503,6 +505,7 @@ CuratedSetModel.prototype.asData = function () {
   }
   data.measurements = data.measies
   delete data.measies
+  delete data.info
 
   return data
 }

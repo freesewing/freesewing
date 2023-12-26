@@ -1,9 +1,9 @@
 ---
-title: "Waist band overlap"
+title: "Chevauchement de la ceinture"
 ---
 
-The width of the overlap by the zipper. This is normally used to hide snaps, buttons, or hooks that reinforce the zipper at the waistband.
+La largeur du chevauchement par la fermeture éclair. This is normally used to hide snaps, buttons, or hooks that reinforce the zipper at the waistband.
 
-## Effet de cette option sur le motif
+
 
 

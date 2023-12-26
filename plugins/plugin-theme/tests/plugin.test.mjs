@@ -38,7 +38,7 @@ describe('Theme Plugin Tests', () => {
   */
 
   it('Should round after applying scale.', () => {
-    pattern.settings.scale = 1 / 3
+    pattern.settings[0].scale = 1 / 3
     pattern.draft().render()
 
     expect(pattern.svg.style).to.contain('svg.freesewing .text-xxl {\n    font-size: 4px')

@@ -3,7 +3,11 @@ tags: Tags
 showLineDrawings: Show line drawings
 showExamples: Show examples
 clearFilter: Clear filter
+showFilters: Show filters
+hideFilters: Hide filters
 difficulty: Difficulty
+learnMoreAboutThing: Learn more about {thing}
+newThingPattern: New {thing} pattern
 # Actual tags start here
 accessories: Accessories
 bags: Bags

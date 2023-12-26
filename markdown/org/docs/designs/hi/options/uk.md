@@ -2,4 +2,4 @@
 title: "Привіт акулі: Варіанти дизайну"
 ---
 
-<PatternOptions pattern='hi' />
+<DesignOptions design='hi' />

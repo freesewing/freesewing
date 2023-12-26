@@ -5,7 +5,7 @@ title: "Gebogener Körperblock: Was du brauchst"
 Um Bent herzustellen, brauchst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- Etwa 1,5 - 2 Meter (1,7 - 2,2 Yards) eines geeigneten Stoffes ([siehe Bent Fabric options](/docs/patterns/bent/fabric/))
+- Etwa 1,5 - 2 Meter (1,7 - 2,2 Yards) eines geeigneten Stoffes ([siehe Bent Fabric options](/docs/designs/bent/fabric/))
 
 Diese Liste ist für einen Standard-Bent Block. Wenn du Änderungen an dem Block vornimmst, musst du eventuell zusätzliche Artikel wie Verschlüsse, Bindungen usw. besorgen.
 

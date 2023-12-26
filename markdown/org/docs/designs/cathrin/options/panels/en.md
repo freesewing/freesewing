@@ -13,6 +13,6 @@ More panels is a bit more work, but also allows the difference between bust/wais
 
 > More curves = more panels
 
-## Effect of this option on the pattern
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](cathrin_panels_sample.svg "Effect of this option on the pattern")
+
+

@@ -1,5 +1,7 @@
 ---
-author: "joostdecock"
+author:
+  - bobgeorgethe3rd
+  - Lexander
 caption: "Dessin de @racerxmachina, Sandy !"
 date: "2021-10-20"
 intro: "Tu as peut-être déjà une idée de ce que tu veux faire pour Halloween. Ou peut-être que tu n'en as aucune idée. Quoi qu'il en soit, voici quelques sources d'inspiration pour te lancer."
@@ -34,7 +36,7 @@ C'est une tenue loufoque qui peut être portée à n'importe quelle fête inform
 [Huey](/designs/huey/), [Hugo](/designs/hugo/), et [Paco](/designs/paco/) sont des bases parfaites pour créer des sweats à capuche et des pantalons d'animaux simples qui seront également confortables à porter. Il y a beaucoup d'animaux que tu peux essayer, alors voici quelques modifications et idées de base pour faire fonctionner ton cerveau créatif.
 
 #### Créer une couture arrière pour Hugo et Huey
-Pour des choses simples comme les pics dorsaux pour les dinosaures, tu peux trouver utile de créer une couture arrière dans [Hugo](/designs/hugo/) ou [Huey](/designs/huey/). Pour cela, il suffit de couper deux morceaux de dos au lieu d'un seul sur le pli. N'oublie pas d'ajouter le surplus de couture au centre du dos ! À partir de là, tu construiras tes ajouts, comme les pointes, et tu les colleras à l'un des morceaux du dos, endroit contre endroit. Puis épingle l'autre pièce du dos sur le dessus, endroit contre endroit, et couds. Cela comptera maintenant comme une seule pièce de dos dans les instructions de Huey et [Hugo](https://freesewing.org/docs/patterns/hugo/instructions/).
+Pour des choses simples comme les pics dorsaux pour les dinosaures, tu peux trouver utile de créer une couture arrière dans [Hugo](/designs/hugo/) ou [Huey](/designs/huey/). Pour cela, il suffit de couper deux morceaux de dos au lieu d'un seul sur le pli. N'oublie pas d'ajouter le surplus de couture au centre du dos ! À partir de là, tu construiras tes ajouts, comme les pointes, et tu les colleras à l'un des morceaux du dos, endroit contre endroit. Puis épingle l'autre pièce du dos sur le dessus, endroit contre endroit, et couds. Cela comptera maintenant comme une seule pièce de dos dans les instructions de Huey et [Hugo](/docs/designs/hugo/instructions/).
 
 Tu peux faire la même chose avec la pièce centrale de la capuche de [Hugo](/designs/hugo/), et de [Huey](/designs/huey/). La capuche de Huey a déjà une couture centrale à l'arrière, donc aucune modification n'est nécessaire pour la capuche de Huey. Tu peux aussi diviser les patrons de la capuche en deux, d'une oreille à l'autre, si tu ajoutes des éléments comme des oreilles, mais tu trouveras peut-être plus facile de coudre ces éléments à la main.
 

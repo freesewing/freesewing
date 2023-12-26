@@ -2,4 +2,4 @@
 title: "Tamiko Oberteil: Erforderliche Maße"
 ---
 
-<PatternMeasurements pattern='tamiko' />
+<DesignMeasurements design='tamiko' />

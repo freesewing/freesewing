@@ -15,7 +15,7 @@ title: "Звертаюся до всіх творців: Ось 1-сторінк
  - Шаблон у форматі PDF для нашої маски "Флоренція":
    - [Шаблон маски А4](/florence-facemask-freesewing.org.a4.pdf)
    - [Літерний шаблон маски](/florence-facemask-freesewing.org.letter.pdf)
- - [Інструкція до шаблону маски](/docs/patterns/florence/instruction/)
+ - [Інструкція до шаблону маски](/docs/designs/florence/instruction/)
 
 </Note>
 
@@ -28,7 +28,7 @@ title: "Звертаюся до всіх творців: Ось 1-сторінк
  - PDF-шаблон для нашої маски для обличчя Флоренція:
    - [Шаблон маски для обличчя А4](/florence-facemask-freesewing.org.a4.pdf)
    - [Літерний шаблон маски для обличчя](/florence-facemask-freesewing.org.letter.pdf)
- - [Інструкція до викрійки маски для обличчя](/docs/patterns/florence/instructions/)
+ - [Інструкція до викрійки маски для обличчя](/docs/designs/florence/instructions/)
 
 Ні, не йди і не збирай купу. Наші медики розраховують на вас!
 

@@ -2,4 +2,4 @@
 title: "Aaron A-Shirt: Design Optionen"
 ---
 
-<PatternOptions pattern='aaron' />
+<DesignOptions design='aaron' />

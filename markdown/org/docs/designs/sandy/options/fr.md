@@ -2,4 +2,4 @@
 title: "Jupe circulaire Sandy : Options de conception"
 ---
 
-<PatternOptions pattern='sandy' />
+<DesignOptions design='sandy' />

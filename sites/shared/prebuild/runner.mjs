@@ -11,8 +11,10 @@ import { prebuildI18n as i18n } from './i18n.mjs'
 import { prebuildDesigns as designs } from './designs.mjs'
 import { prebuildFavicon as favicon } from './favicon.mjs'
 import { prebuildCrowdin as crowdin } from './crowdin.mjs'
+import { prebuildOrg as orgPageTemplates } from './org.mjs'
+import { prebuildSearch as search } from './search.mjs'
 //import { prebuildLab as lab} from './lab.mjs'
-//import { prebuildOgImages as ogImages } from './og/index.mjs'
+import { prebuildOgImages as ogImages } from './og.mjs'
 
 /*
  * Are we running in production?
@@ -33,8 +35,18 @@ const handlers = {
   posts,
   navigation,
   git,
-  // FIXME: This needs work, but perhaps after v3
-  //ogImages,
+  'Page Templates': true,
+  search,
+  ogImages,
+}
+
+/*
+ * Site specific handlers
+ */
+const siteSpecificHandlers = {
+  'Page Templates': {
+    org: orgPageTemplates,
+  },
 }
 
 export const prebuildRunner = async ({
@@ -64,10 +76,14 @@ export const prebuildRunner = async ({
    * above, not the order as passed by the prebuild script
    */
   for (const step in handlers) {
+    const task =
+      typeof siteSpecificHandlers[step]?.[site] === 'undefined'
+        ? handlers[step]
+        : siteSpecificHandlers[step][site]
     if (prebuild[step] === true)
-      await oraPromise(handlers[step](store), { text: `Prebuild ${capitalize(step)}` })
+      await oraPromise(task(store), { text: `Prebuild ${capitalize(step)}` })
     else if (prebuild[step] === 'productionOnly')
-      await oraPromise(handlers[step](store, !PRODUCTION), {
+      await oraPromise(task(store, !PRODUCTION), {
         text: `Prebuild ${capitalize(step)}${PRODUCTION ? '' : ' (mocked)'}`,
       })
     else await oraPromise(() => true, { text: `Prebuild ${capitalize(step)} (skipped)` })

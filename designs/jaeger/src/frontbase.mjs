@@ -208,6 +208,11 @@ export const frontBase = {
     reduceWaistStandardFraction,
     reduceWaistDartFraction,
     reduceHipsStandardFraction,
+    /*
+     * Hide these options from Brian and keep them at their default
+     */
+    s3Collar: 0,
+    s3Armhole: 0,
   },
   draft: jaegerFrontBase,
 }

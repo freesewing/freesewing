@@ -24,6 +24,7 @@ function shinWaistband({
     // Expand is on, do not draw the part but flag this to the user
     store.flag.note({
       msg: `shin:cutWaistband`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
       replace: {
         w: units(height + 2 * sa),
         l: units(store.get('hips') * 2 + 2 * sa),

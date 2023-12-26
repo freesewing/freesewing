@@ -1,7 +1,7 @@
 # Change log for: @freesewing/plugin-sprinkle
 
 
-## 3.0.0 (2022-09-30)
+## 3.0.0 (2023-09-30)
 
 ### Changed
 

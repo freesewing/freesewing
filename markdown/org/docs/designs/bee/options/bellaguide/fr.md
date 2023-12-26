@@ -14,6 +14,6 @@ Il est recommandé d'activer cette option lors du réglage des options de ce mot
 
 </Note>
 
-## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bee_bellaguide_sample.svg "Effet de cette option sur le motif")
+
+

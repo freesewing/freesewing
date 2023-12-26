@@ -1,7 +1,13 @@
 # Change log for: @freesewing/penelope
 
 
-## 3.0.0 (2022-09-30)
+## 3.1.0 (2023-12-26)
+
+### Fixed
+
+ - Fixed wrong use of options in a value method. Fixes
+
+## 3.0.0 (2023-09-30)
 
 ### Changed
 

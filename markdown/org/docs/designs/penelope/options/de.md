@@ -2,4 +2,4 @@
 title: "Penelope Bleistiftrock: Design Optionen"
 ---
 
-<PatternOptions pattern='penelope' />
+<DesignOptions design='penelope' />

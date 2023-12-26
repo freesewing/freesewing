@@ -2,4 +2,4 @@
 title: "Charlie Chinos: Erforderliche Maße"
 ---
 
-<PatternMeasurements pattern='charlie' />
+<DesignMeasurements design='charlie' />

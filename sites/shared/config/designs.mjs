@@ -16,7 +16,6 @@ for (const [name, conf] of Object.entries(allDesigns)) {
 }
 
 export const designs = nonUtilityDesigns
-export const designList = Object.keys(designs)
 
 const allTags = new Set()
 const allTechniques = new Set()

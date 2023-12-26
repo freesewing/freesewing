@@ -2,4 +2,4 @@
 title: "Walburga Wappenrock: Benodigde metingen"
 ---
 
-<PatternMeasurements pattern='walburga' />
+<DesignMeasurements design='walburga' />

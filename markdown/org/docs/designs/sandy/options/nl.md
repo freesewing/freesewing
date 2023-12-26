@@ -2,4 +2,4 @@
 title: "Sandy cirkelrok: Ontwerpopties"
 ---
 
-<PatternOptions pattern='sandy' />
+<DesignOptions design='sandy' />

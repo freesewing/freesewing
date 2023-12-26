@@ -8,6 +8,11 @@ export const back = {
     backNeckCutout: 0.05,
     backlineBend: { pct: 50, min: 25, max: 100, menu: 'style' },
     knitBindingWidth: { pct: 600, min: 300, max: 800, menu: 'style' },
+    // Hide options from brian
+    brianFitSleeve: false,
+    cuffEase: 0,
+    s3Collar: 0,
+    s3Armhole: 0,
   },
   draft: ({
     store,
@@ -89,8 +94,7 @@ export const back = {
         .curve(points.armholeCp2, points.strapRightCp1, points.strapRight)
         .length() +
         store.get('frontArmholeLength')) *
-        0.95 +
-        2 * sa
+        0.95
     )
     store.set(
       'neckBindingLength',
@@ -100,8 +104,7 @@ export const back = {
         .length() +
         store.get('frontNeckOpeningLength')) *
         2 *
-        0.95 +
-        2 * sa
+        0.95
     )
 
     // Warn user is SA > 10 because it makes the binding width rather large

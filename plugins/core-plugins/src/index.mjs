@@ -3,6 +3,7 @@ import { measurementsPlugin } from '../../plugin-measurements/src/index.mjs'
 import { mirrorPlugin } from '../../plugin-mirror/src/index.mjs'
 import { roundPlugin } from '../../plugin-round/src/index.mjs'
 import { sprinklePlugin } from '../../plugin-sprinkle/src/index.mjs'
+import { binpackPlugin } from '../../plugin-bin-pack/src/index.mjs'
 import { name, version } from '../data.mjs'
 
 const bundledPlugins = [
@@ -11,6 +12,7 @@ const bundledPlugins = [
   mirrorPlugin,
   roundPlugin,
   sprinklePlugin,
+  binpackPlugin,
 ]
 
 const hooks = {}

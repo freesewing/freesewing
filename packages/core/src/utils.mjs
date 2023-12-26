@@ -2,7 +2,17 @@ import { Bezier } from 'bezier-js'
 import { Path } from './path.mjs'
 import { Point } from './point.mjs'
 
+/*
+ * See: https://en.wikipedia.org/wiki/Golden_ratio
+ */
 export const goldenRatio = 1.618034
+
+/*
+ * cbqc = Cubic Bezier Quarter Circle
+ * The value to best approximate a (quarter) circle with cubic Bézier curves
+ * See: https://spencermortensen.com/articles/bezier-circle/
+ */
+export const cbqc = 0.55191502449351
 
 //////////////////////////////////////////////
 //            PUBLIC  METHODS               //
@@ -157,7 +167,7 @@ export function circlesIntersect(c1, r1, c2, r2, sort = 'x') {
   let dist = c1.dist(c2)
   // Check for edge cases
   if (dist > parseFloat(r1) + parseFloat(r2)) return false // Circles do not intersect
-  if (dist < parseFloat(r2) - parseFloat(r1)) return false // One circle is contained in the other
+  if (dist < Math.abs(parseFloat(r2) - parseFloat(r1))) return false // One circle is contained in the other
   if (dist === 0 && r1 === r2) return false // Two circles are identical
   let chorddistance = (Math.pow(r1, 2) - Math.pow(r2, 2) + Math.pow(dist, 2)) / (2 * dist)
   let halfchordlength = Math.sqrt(Math.pow(r1, 2) - Math.pow(chorddistance, 2))
@@ -480,7 +490,7 @@ export function mergeI18n(designs, options) {
  * @return {object} result - An object with the merged options and their values
  */
 export function mergeOptions(settings = {}, optionsConfig) {
-  const merged = typeof settings.options === 'undefined' ? {} : { ...settings.option }
+  let merged = {}
   for (const [key, option] of Object.entries(optionsConfig)) {
     if (typeof option === 'object') {
       if (typeof option.pct !== 'undefined') merged[key] = option.pct / 100
@@ -491,6 +501,7 @@ export function mergeOptions(settings = {}, optionsConfig) {
       else if (typeof option.dflt !== 'undefined') merged[key] = option.dflt
     } else merged[key] = option
   }
+  if (typeof settings.options === 'object') merged = { ...merged, ...settings.options }
 
   return merged
 }
@@ -843,7 +854,7 @@ function matrixTransform(transformationType, matrix, values) {
 /**
  * Combines an array of (SVG) transforms into a single matrix transform
  *
- * @param {array} transorms - The list of transforms to combine
+ * @param {array} transforms - The list of transforms to combine
  * @return {string} matrixTransform - The combined matrix transform
  */
 export function combineTransforms(transforms = []) {
@@ -867,7 +878,7 @@ export function combineTransforms(transforms = []) {
 /**
  * Applies and (SVG) transform to a point's coordinates (x and y)
  *
- * @param {string} transorm - The transform to apply
+ * @param {string} transform - The transform to apply
  * @param {Point} point - The point of which to update the coordinates
  * @return {Point} point - The point with the transform applied to its coordinates
  */
@@ -893,7 +904,7 @@ export function applyTransformToPoint(transform, point) {
  * Get the bounds of a given object after transforms have been applied
  * @param  {Object}           boundsObj   any object with `topLeft` and `bottomRight` properties
  * @param  {Boolean|String[]} transforms  the transforms to apply to the bounds, structured as they would be for being applied as an svg attribute
- * @return {Object}                       `tl` and `br` for the transformed bounds
+ * @return {Object}                       `topLeft` and `bottomRight` for the transformed bounds
  */
 export function getTransformedBounds(boundsObj, transforms = false) {
   if (!boundsObj.topLeft) return {}
@@ -925,7 +936,7 @@ export function getTransformedBounds(boundsObj, transforms = false) {
   )
 
   return {
-    tl: transformedTl,
-    br: transformedBr,
+    topLeft: transformedTl,
+    bottomRight: transformedBr,
   }
 }

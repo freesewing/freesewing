@@ -11,7 +11,7 @@ import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { MarkdownInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 import { TipIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['account', 'status']
@@ -50,7 +50,7 @@ export const BioSettings = ({ welcome = false }) => {
   const nextHref =
     welcomeSteps[account.control].length > 5
       ? '/welcome/' + welcomeSteps[account.control][6]
-      : '/docs/guide'
+      : '/docs/about/guide'
 
   return (
     <div className="max-w-xl xl:pl-4">
@@ -60,7 +60,7 @@ export const BioSettings = ({ welcome = false }) => {
         update={setBio}
         current={bio}
         placeholder={t('bioTitle')}
-        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/bio`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/bio`} />}
         labelBL={
           <span className="flex flex-row items-center gap-1">
             <TipIcon className="w-6 h-6 text-success" />

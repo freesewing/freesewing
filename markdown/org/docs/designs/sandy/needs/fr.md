@@ -5,11 +5,11 @@ title: "Jupe circulaire Sandy : Ce qu'il te faut"
 Pour fabriquer Sandy, tu auras besoin des éléments suivants :
 
 - [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
-- Environ 2 à 6 mètres d'un tissu principal approprié ([voir Sandy Fabric options](/docs/patterns/sandy/fabric)).
+- Environ 2 à 6 mètres d'un tissu principal approprié ([voir Sandy Fabric options](/docs/designs/sandy/fabric)).
 - Quelques interfaces pour la ceinture
 - (Facultatif) La doublure pour l'ourlet.
 - Une sorte de fermeture pour la ceinture (si elle n'est pas sans couture).
-- (Facultatif) Environ 2 à 6 mètres de tissu de doublure approprié ([voir Sandy Fabric options](/docs/patterns/sandy/fabric)).
+- (Facultatif) Environ 2 à 6 mètres de tissu de doublure approprié ([voir Sandy Fabric options](/docs/designs/sandy/fabric)).
 - Élastique (si nécessaire)
 
 En raison des nombreux styles différents de Sandy, il est difficile de dire précisément ce dont tu as besoin, c'est pourquoi nous allons passer en revue quelques-unes des options.

@@ -4,7 +4,206 @@
 ## Unreleased
 
 
-## 3.0.0 (2022-09-30)
+## 3.1.0 (2023-12-26)
+
+### aaron
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+#### Fixed
+
+ - Added IDs to dimension macros that missed them, causing them to not be shown
+ - Keep seam allowance out of the binding length calculation
+
+### albert
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### bee
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### benjamin
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### carlton
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### charlie
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### hortensia
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### huey
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### hugo
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### jaeger
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+ - Corrected part mixup in translation of flag message
+
+### octoplushy
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### paco
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### penelope
+
+#### Fixed
+
+ - Fixed wrong use of options in a value method. Fixes
+
+### plugintest
+
+#### Fixed
+
+ - Remove names from old plugins from list option
+
+### sandy
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+ - The skirt and curved waistband are now constructed with the ringsector macro
+
+### shin
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### simon
+
+#### Fixed
+
+ - Replaced all instances of 'seperate' with 'separate' in option names
+
+### skully
+
+#### Added
+
+ - Initial release
+
+### sven
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### uma
+
+#### Fixed
+
+ - Changed defaults to have more rise in the back
+ - Increase default rise
+ - Decrease default vertical stretch
+ - Decreased default back waist dip
+ - Increased default front waist dip
+ - Allowed lower values on back exposure, causing back to flare out
+ - Fix issue with back part when bulge is on and expand is off
+
+### waralee
+
+#### Fixed
+
+ - Pocket opening was not drawn on the facing and pocket pieces. Fixes
+ - Improve placement of the front welt. Fixes
+
+### yuri
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### otis
+
+#### Added
+
+ - Initial release
+
+### plugin-annotations
+
+#### Changed
+
+ - Added support for notes in flags
+
+#### Fixed
+
+ - Removing macros did not always remove the cutlist data in the store. Fixes
+
+### plugin-bin-pack
+
+#### Added
+
+ - First release of the plugin providing the default packing implementation
+
+### plugin-ringsector
+
+#### Added
+
+ - First release of the plugin facilitating drafting a ring sector
+
+### core
+
+#### Added
+
+ - Allow plugins to provide their own packing implementation
+ - Added named export `cbqc` which exports the constant to approximate a circle with Cubic Bézier curves
+ - Core will now set `activeMacro` in the store, keeping track of the running macro - Added the `generateMacroIds`, `getMacroIds`, and `removeMacroNodes` store methods
+
+#### Fixed
+
+ - Fix order in mergeOptions method so user settings take precendence over defaults
+ - Fix upward snap for snapped percentage option when snap is a simple number
+ - The conditional loading of plugins had a bug causing them to never be loaded
+ - Make Path.split() more robust when handling edge-case. Fixes
+ - Prevent utils.circlesIntersect() from running sqrt on a negative number. Fixes
+
+### new-design
+
+#### Fixed
+
+ - Removed unwanted debug output
+
+
+## 3.0.0 (2023-09-30)
 
 ### global
 

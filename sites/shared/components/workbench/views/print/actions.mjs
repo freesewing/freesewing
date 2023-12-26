@@ -52,6 +52,7 @@ export const PrintActions = ({ update, ui }) => {
               ]}
               current={ui.hideMovableButtons ? true : false}
             />,
+            'partTransfo',
           ],
           [
             <div className="w-full flex flex-row gap2 justify-between" key={1}>
@@ -72,6 +73,7 @@ export const PrintActions = ({ update, ui }) => {
                 <span>{t('workbench:resetPrintLayout')}</span>
               </button>
             </Fragment>,
+            'reset',
           ],
         ]}
       />

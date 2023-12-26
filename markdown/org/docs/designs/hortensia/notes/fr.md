@@ -1,6 +1,6 @@
 ---
-title: "Hortensia handbag: Designer Notes"
+title: "Sac à main Hortensia : Designer Notes"
 ---
 
-<Fixme>Wouter designed this with Stoffsuchti. They have not written any notes (yet)</Fixme>
+<Fixme>Wouter a conçu ce projet avec Stoffsuchti. Ils n'ont pas (encore) rédigé de notes</Fixme>
 

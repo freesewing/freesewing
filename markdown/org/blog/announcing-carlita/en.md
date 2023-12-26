@@ -46,7 +46,7 @@ This way, the pocket can be integrated in the princess seam, somewhere in the un
 ### One extra option: The princess seam smooth factor
 
 Carlita also has one extra option that Carlton doesn't have, the somewhat elaborately named 
-[Princess seam smooth factor](/docs/patterns/carlita/options#princessSeamSmoothFactor).
+[Princess seam smooth factor](/docs/designs/carlita/options#princessSeamSmoothFactor).
 
 This controls how sharply the princess seam will revert back after having added the extra volume for your chest.
 

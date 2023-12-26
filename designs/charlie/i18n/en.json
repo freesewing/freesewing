@@ -18,11 +18,11 @@
   },
   "s": {
     "cutBeltloops.t": "The belt loops are not shown",
-    "cutBeltloops.d": "The **Belt loops** are {{{ count }}} rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long (there is no seam allowance). They are not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutBeltloops.d": "The **Belt loops** are {{{ count }}} rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long.",
     "cutBackPocketInterfacing.t": "The back pocket interfacing is not shown",
-    "cutBackPocketInterfacing.d": "The **Back pocket interfacing** is a rectangular piece of fusible interfacing {{{ width }}} wide and {{{ length }}} long (there is no seam allowance). The interfacing is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutBackPocketInterfacing.d": "The **Back pocket interfacing** is a rectangular piece of fusible interfacing {{{ width }}} wide and {{{ length }}} long.",
     "cutWaistband.t": "The waistband is not shown",
-    "cutWaistband.d": "The **Waistband** is a rectangular piece of fusible interfacing {{{ width }}} wide and {{{ length }}} long (there is no seam allowance). The interfacing is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part."
+    "cutWaistband.d": "The **Waistband** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long."
   },
   "o": {
     "backPocketHorizontalPlacement": {

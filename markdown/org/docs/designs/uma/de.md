@@ -1,8 +1,8 @@
 ---
-title: "Uma undies"
+title: "Uma Unterhosen"
 ---
 
-import { DesignInfo } from 'shared/components/designs/info.mjs'
+
 
 <DesignInfo design='uma' docs />
 

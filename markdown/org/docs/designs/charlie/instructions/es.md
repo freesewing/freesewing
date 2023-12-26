@@ -190,13 +190,24 @@ Cuando hayas terminado, presiona Abrirlo.
 
 ## Paso 9: Cerrar el cruce
 
+<tip>
+
+Comprueba que tus piernas derecha e izquierda coinciden con las marcas del patrón. La entrepierna de la pierna derecha debe sobresalir ligeramente de la izquierda. Consulta el patrón y corta el sobrante de la pierna izquierda si es necesario.
+
+Puede ser valioso marcar con tiza o hilo el **Centro delantero** en cada pata. Esto te ayudará a asegurarte de que las piezas están en el lugar correcto durante la construcción de la mosca.
+
+</tip>
+
 Asegúrate de que una pierna esté girada con el lado bueno, y la otra tiene el lado bueno.
 
 Ahora mete la pierna con el lado bueno hacia fuera dentro de la pierna que tiene el lado bueno hacia dentro. De esta manera, tienen su lado bueno entre sí.
 
-Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. Parar en el nivel de vuelo más bajo.
+Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. **Detente en la muesca de la bragueta** y asegúrate de pespuntear.
 
 Cuando haya terminado. Hágalo de nuevo. Siempre coser la costura de la cruz dos veces. Es una de esas mejores prácticas que usted ignora bajo su propio riesgo.
+
+![Costura transversal cerrada](CloseCrossseam.svg)
+
 
 <Tip>
 
@@ -209,7 +220,7 @@ Conseguirlo bien es una de esas cosas que acabarás cherizando cada vez que las 
 
 ## Paso 10: Construir la mosca
 
-### Cerrar extensión de mosca
+### Cierra la extensión de la bragueta y frunce
 
 Doblar la extensión de la mosca en su línea plegable con buenos lados juntos.
 
@@ -217,67 +228,82 @@ Ahora coser a lo largo del fondo, para cerrar la extensión de la mosca.
 
 Recorre la mitad de la franquicia de costura para quitar el granel antes de girar el lado bueno y presionar.
 
-### Sirve la extensión de la mosca y mira a la mosca
+#### Sirve la extensión de la mosca y mira a la mosca
 
 Serge (o zig-zag) a lo largo del lado abierto de la extensión de la mosca. No hay necesidad de servir la parte superior, ya que eso se verá atrapado en nuestra cintura.
 
 mientras estás en él, también siéntate a lo largo de toda la mosca mirando hacia el borde en forma de J.
 
-### Cortar la costura extra en el frente de la pierna izquierda
+![Cerrar Ampliación y Serge](CloseExtensionAndSerge.svg)
 
-Hay una franquicia extra de costura que corre a lo largo de la mosca. Solo necesitamos esto en el panel de la pierna derecha. Corte en el panel izquierdo para que se quede con la franquicia regular de costura solamente.
 
 ### Adjuntar la cara de vuelo
 
-Pase la mosca hacia el frente izquierdo. Colócalos con los lados bien juntos, alineando la parte superior.
+Cose la cara de la bragueta a la pierna izquierda. Coserás un poco más allá del punto de la costura transversal, así que ten cuidado de mantener el margen de costura de la pierna derecha fuera del camino y procura coser directamente encima de la línea de costura transversal.
 
-### Pegado en la punta de la cara de la mosca
+![Colocar el revestimiento](AttachFacing.svg)
 
-Doblar la parte inferior de la franquicia de costura de la mosca hacia adentro y asegurar con unas pocas pulseras.
+### Termina la cara de la mosca
 
-### El borde tira la mosca hacia la costura
+Recorta la tapeta a la mitad del margen de costura.  
+Mete la punta de la tapeta y fíjala con unas puntadas. Cose el borde de la bragueta al margen de costura. Presiona el margen de costura hacia la cara y pespuntea la cara para un acabado limpio. De nuevo, manteniendo el margen de costura de la pierna derecha fuera del camino.
 
-Difunde la mosca hacia la franquicia de costura. Asegúrate de dejar el panel frontal fuera de él.
+![Acabado Revestimiento](FinishFacing.svg)
 
-### Presione la costura cruzada, la cara de la mosca y el borde de la mosca
+### Cose la cremallera a la extensión de la bragueta
 
-Pulse abrir la costura cruzada. Presione el volar hacia el lado.
+<tip>
 
-Luego, doblézcalo sobre la franquicia extra de costura en la parte delantera derecha y presione la parte inferior.
+**Longitud de la cremallera**
 
-### Baste el zipper para la extensión de moscas
+Conviene asegurarse de que el tope de la cremallera termina antes de la línea de puntada indicada en el patrón. Así te asegurarás de no coser por encima del tope de la cremallera y reducirás la tensión en la parte inferior de la bragueta. Si tu cremallera es demasiado larga, puedes hacer una puntada en zigzag de longitud 0 para crear un nuevo tope (sólo en la propia cremallera).
 
-Coloque el zipper a lo largo del borde (ligeramente curvado) de la extensión de la mosca.
+</tip>
 
-Ahora coser a lo largo del borde. No hay necesidad de acercarse al césped, sólo coser a lo largo del borde para mantenerlos en su lugar.
+Puntada de borde a lo largo del borde izquierdo de la cremallera hasta el borde serrado de la extensión de la bragueta para mantenerla en su sitio.
 
-### Adjuntar zipper a la mosca
+![Cremallera](BasteZipper.svg)
 
-Ahora coloque la mosca de la pata delantera derecha con la franquicia extra de costura que se dobló de nuevo en la parte superior de la zipa.
 
-Usa un borde de zipper en el borde plegado a lo largo del borde de zipper.
+### Puntada superior de la pierna derecha a la cremallera
 
-<Tip>
+Empieza presionando el margen de costura de la pierna derecha hacia atrás.
 
-Quizás quieras bastar esto primero para asegurarte de que es muy paralelo al zipper. Cerrar, pero no demasiado cerca.
+<tip>
 
-</Tip>
+Recuerda que el margen de costura comienza ligeramente a la derecha del centro delantero, el centro delantero está marcado en morado en la imagen, asegúrate de no doblar por error a lo largo de la línea del centro delantero.
 
-### Difunde el caparazón hacia la mosca
+</tip>
 
-Ahora coser el otro lado del cipper a la mosca. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
+Asegúrate de colocar el borde doblado de la pernera derecha justo a la izquierda de los dientes de la cremallera para evitar que la tela se enganche en la cremallera.
 
-### Termina la costura cruzada
+Deja de coser en la muesca superior de la "extensión de la bragueta", ligeramente por encima de la costura transversal, y asegúrate de pespuntear. Si no lo haces, no podrás mantener la extensión apartada al coser la costura en J.
 
-Difunde el último trozo de la costura de la cruz hasta la altura más alta de la mosca.
+![Fijar la extensión a la pierna derecha](AttachExtensionToRightLeg.svg)
+
+
+### Coloca la cremallera en la cara de la bragueta.
+
+Ten cuidado de alinear la pierna izquierda en el centro delantero derecho. Puede ser útil prender con alfileres o hilvanar a través de la cara y el lado derecho de la cinta de la cremallera. (Tenemos que coser el lado izquierdo de la cinta de la cremallera a la pierna izquierda). Asegurándote de que todo está forrado, cose la cara de la bragueta al lado izquierdo de la cremallera. Intenta acercarte a la cremallera, pero no demasiado.
+
+![Fijar el revestimiento a la cremallera](AttachFacingToZipper.svg)
+
 
 ### Difunde la costura J de la mosca
 
-Ahora suman la llamada costura J de la mosca. Asegúrese de mantener la extensión de la mosca fuera del camino.
+<tip>
 
-### Barra toca la parte inferior de la mosca
+Utiliza un trozo de papel como guía para coser la costura en J, que puedes recortar de tu patrón a lo largo de la línea de puntada indicada.
 
-Ahora desmenuzan el mismo botton de la costura J-costura (la parte horizontal), pero esta vez asegúrese de capturar también la extensión de la mosca.
+</tip>
+
+Ahora suman la llamada costura J de la mosca. Asegúrese de mantener la extensión de la mosca fuera del camino. Como no has cosido toda la extensión de la bragueta, deberías poder sujetarla con alfileres.
+
+#### Barra toca la parte inferior de la mosca
+
+Ahora, remacha la parte inferior de la costura en J (la parte horizontal), pero esta vez asegúrate de coger también la extensión de la bragueta. También puedes añadir un remate adicional a lo largo de la costura en J (en morado).
+
+![Cose la costura en J](SewTheJSeam.svg)
 
 ## Paso 11: Adjuntar bucles de cinturón
 
@@ -293,11 +319,15 @@ Corta una tira de 80 cm de largo y 2,8 cm de ancho.
 
 Servir (o zigzag) el borde largo de la tira en ambos lados.
 
+![Acabado de los bordes del bucle](FinishLoopEdges.svg)
+
 Doblar un lado hacia adentro, y el otro hacia arriba. Luego presiona con tu hierro. El resultado final debe ser una tira larga de aproximadamente 1cm de largo.
 
 Ahora coser a lo largo de toda la longitud de la raya, huele en medio de ella. Asegúrate de usar una longitud de unión generosa para esto.
 
 Por último, cortar los bucles de la correa de longitud en 8 partes iguales para hacer 8 bucles de la cinta.
+
+![Coser y cortar lazos](StitchAndCutLoops.svg)
 
 ### Adjuntar bucles de la cinta
 

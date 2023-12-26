@@ -10,7 +10,7 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 // Components
 import Link from 'next/link'
 import { Json } from 'shared/components/json.mjs'
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import { AccountRole } from 'shared/components/account/role.mjs'
 import { AccountStatus } from 'shared/components/account/status.mjs'
 import { Loading } from 'shared/components/spinner.mjs'
@@ -73,8 +73,9 @@ export const ShowUser = ({ user, button = null }) => (
     <div
       className="w-52 h-52 bg-base-100 rounded-lg shadow shrink-0"
       style={{
-        backgroundImage: `url(${cloudflareConfig.url}${user.img}/sq500)`,
+        backgroundImage: `url(${cloudflareConfig.url}uid-${user.ihash}/sq500)`,
         backgroundSize: 'cover',
+        backgroundColor: '#ccc',
       }}
     ></div>
     <div className="w-full">
@@ -113,7 +114,7 @@ export const ShowUser = ({ user, button = null }) => (
         <div className="max-w-xs flex flex-col gap-2">{button}</div>
       </div>
       <div className="max-w-full truncate">
-        <Markdown>{user.bio}</Markdown>
+        <Mdx md={user.bio} />
       </div>
     </div>
   </div>
@@ -124,7 +125,7 @@ export const User = ({ user }) => (
     <ShowUser
       user={user}
       button={
-        <Link href={`/admin/user/${user.id}`} className="btn btn-primary">
+        <Link href={`/admin/user?id=${user.id}`} className="btn btn-primary">
           Manage user
         </Link>
       }

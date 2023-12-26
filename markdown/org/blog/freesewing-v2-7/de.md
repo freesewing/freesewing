@@ -63,7 +63,7 @@ Um dies zu umgehen, solltest du wahrscheinlich [dein Konto neu laden](/account/r
 
 Wir haben auch ein paar Änderungen an der Website vorgenommen.
 
- - Wir haben eine Anleitung zur Musternotation [hinzugefügt](/docs/various/notation/) , damit du nicht mehr raten musst, was die Markierungen auf deinem Muster bedeuten.
+ - Wir haben eine Anleitung zur Musternotation [hinzugefügt](/docs/about/notation/) , damit du nicht mehr raten musst, was die Markierungen auf deinem Muster bedeuten.
  - Wir haben eine Seite [hinzugefügt, auf der du dein Konto neu laden kannst](/account/actions/reload/) , um Probleme aufgrund von zwischengespeicherten Kontodaten zu vermeiden
  - Wir haben das Styling der verschiedenen Größen geändert, wenn du ein Muster vergleichst, und eine Legende hinzugefügt, die zeigt, welcher Umriss welcher Größe entspricht.
 

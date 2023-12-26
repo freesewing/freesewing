@@ -20,12 +20,14 @@ function hugoWaistband({
   if (expand) {
     store.flag.preset('expandIsOn')
   } else {
+    const extraSa = sa ? 2 * sa : 0
     // Expand is off, do not draw the part but flag this to the user
     store.flag.note({
       msg: `hugo:cutWaistband`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
       replace: {
-        w: units(width + 2 * sa),
-        l: units(length + 2 * sa),
+        w: units(width + extraSa),
+        l: units(length + extraSa),
       },
       suggest: {
         text: 'flag:show',

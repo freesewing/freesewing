@@ -1,15 +1,15 @@
 curate: samenstellen
-curateSet: Curated measurements set
-curateSets: Curate FreeSewing's measurements sets
-curatePacks: Curate FreeSewing's option packs
-noSuggestedPacks: There are currently no option packs suggested for curation
-noSuggestedSets: There are currently no measurements sets suggested for curation
-optionPack: Option pack
-packs: Option Packs
-published: Published
-publishedDesc: Published records are available to users. If you plan to make changes, you might want to unpublish first.
-unpublished: Unpublished
-unpublishedDesc: Unpublished records are not available to users. Things typically start out unpublished until they are ready for publication.
+curateSet: Verzamelde meetset
+curateSets: De meetsets van FreeSewing samenstellen
+curatePacks: Stel de optiepakketten van FreeSewing samen
+noSuggestedPacks: Er zijn momenteel geen optiepakketten voorgesteld voor curatie
+noSuggestedSets: Er zijn momenteel geen meetsets voorgesteld voor curatie
+optionPack: Optiepakket
+packs: Optiepakketten
+published: Gepubliceerd
+publishedDesc: Gepubliceerde records zijn beschikbaar voor gebruikers. Als je van plan bent om wijzigingen aan te brengen, kun je beter eerst de publicatie ongedaan maken.
+unpublished: Ongepubliceerd
+unpublishedDesc: Ongepubliceerde records zijn niet beschikbaar voor gebruikers. Dingen beginnen meestal ongepubliceerd totdat ze klaar zijn voor publicatie.
 sets: Maten sets
-suggestedSets: Measurements sets suggested for curation
-suggestedPacks: Suggested option packs
+suggestedSets: Meetreeksen voorgesteld voor curatie
+suggestedPacks: Voorgestelde optiepakketten

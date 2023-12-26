@@ -9,7 +9,7 @@ import { decorateModel } from '../utils/model-decorator.mjs'
 export function OptionPackModel(tools) {
   return decorateModel(this, tools, {
     name: 'optionPack',
-    jsonFields: ['options', 'tagsDe', 'tagsEn', 'tagsEs', 'tagsFr', 'tagsNl', 'tagsUk'],
+    jsonFields: ['options', 'tags'],
     models: ['confirmation'],
   })
 }
@@ -35,6 +35,7 @@ OptionPackModel.prototype.guardedCreate = async function ({ body, user }) {
    * Is design set?
    */
   if (!body.design || typeof body.design !== 'string') return this.setResponse(400, 'designMissing')
+
   /*
    * Is nameEn set?
    */
@@ -54,9 +55,13 @@ OptionPackModel.prototype.guardedCreate = async function ({ body, user }) {
       const key = field + capitalize(lang)
       if (body[key] && typeof body[key] === 'string') data[key] = body[key]
     }
-    const key = 'tags' + capitalize(lang)
-    if (body[key] && Array.isArray(body[key])) data[key] = JSON.stringify(body[key])
   }
+  if (body.tags && Array.isArray(body.tags)) data.tags = JSON.stringify(body.tags)
+
+  /*
+   * Add the info
+   */
+  if (body.info) data.info = body.info
 
   /*
    * Add the options if there are any
@@ -147,10 +152,7 @@ OptionPackModel.prototype.allOptionPacks = async function () {
      * See https://github.com/prisma/prisma/issues/3786
      */
     asPojo.options = JSON.parse(asPojo.options)
-    for (const lang of this.config.languages) {
-      const key = `tags${capitalize(lang)}`
-      asPojo[key] = JSON.parse(asPojo[key] || [])
-    }
+    asPojo.tags = JSON.parse(asPojo.tags || [])
     list.push(asPojo)
   }
 
@@ -190,6 +192,11 @@ OptionPackModel.prototype.guardedUpdate = async function ({ params, body, user }
       if (body[key] && typeof body[key] === 'string') data[key] = body[key]
     }
   }
+
+  /*
+   * Handle the info field
+   */
+  if (typeof body.info === 'string') data.info = body.info
 
   /*
    * Handle the options
@@ -309,7 +316,10 @@ OptionPackModel.prototype.suggest = async function ({ body, user }) {
  * @returns {optionPack} object - The Option Pack as a plain object
  */
 OptionPackModel.prototype.asOptionPack = function () {
-  return this.record
+  const data = { ...this.record }
+  delete data.info
+
+  return data
 }
 
 /*

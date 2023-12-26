@@ -8,4 +8,5 @@ Um deinen **vorderen Taille-Schritt-Abstand** zu messen, binde dir einen Faden u
 
 - Wo die Gabelung einer eng angebrachten Hose sitzen würde
 - Die Basis deines Skrotums
-- Irgendwo im Bereich vor deinem Damm
+- Irgendwo im vorderen Bereich deines Perineums
+<MeasieImage />

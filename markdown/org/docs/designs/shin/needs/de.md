@@ -5,7 +5,7 @@ title: "Shin-Badehosen: Was du brauchst"
 Um Shin zu erstellen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- Etwa 0.75 cm (0.8") eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/shin/fabric))
+- Etwa 0.75 cm (0.8") eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/designs/shin/fabric))
 - zwei Ösen und einen Kordelzug
 
 > ## Ein Serger/Overlock ist schön, aber optional

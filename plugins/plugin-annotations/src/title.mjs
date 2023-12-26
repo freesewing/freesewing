@@ -1,5 +1,3 @@
-import { getIds } from './utils.mjs'
-
 /*
  * Defaults for the title macro
  */
@@ -25,23 +23,9 @@ const macroDefaults = {
 }
 
 /*
- * Removing all this is easy as all IDs are available in the store
- * and all we need to remove are points.
- */
-const removeTitleMacro = function (id = macroDefaults.id, { points, store, part }) {
-  for (const pid of Object.values(
-    store.get(['parts', part.name, 'macros', 'title', 'ids', id, 'points'], {})
-  ))
-    delete points[pid]
-}
-
-/*
  * The title macro
  */
-const addTitleMacro = function (
-  config,
-  { Point, points, scale, locale, store, part, log, complete }
-) {
+const title = function (config, { Point, points, scale, locale, store, part, log, complete }) {
   /*
    * Don't add a title when complete is false, unless force is true
    */
@@ -92,7 +76,7 @@ const addTitleMacro = function (
    * Get the list of IDs
    * Initialize the verticle cadence
    */
-  const ids = getIds(['cutlist', 'date', 'for', 'name', 'nr', 'title'], mc.id, 'title')
+  const ids = store.generateMacroIds(['cutlist', 'date', 'for', 'name', 'nr', 'title'], mc.id)
 
   let shift = mc.dy
 
@@ -229,13 +213,16 @@ const addTitleMacro = function (
   /*
    * Store all IDs in the store so we can remove this macro with rmtitle
    */
-  store.set(['parts', part.name, 'macros', 'title', 'ids', mc.id, 'points'], ids)
+  store.storeMacroIds(mc.id, { points: ids })
 
-  return store.getMacroIds(mc.id, 'title')
+  /*
+   * Returning ids is a best practice for FreeSewing macros
+   */
+  return store.getMacroIds(mc.id)
 }
 
 // Export macros
 export const titleMacros = {
-  title: addTitleMacro,
-  rmtitle: removeTitleMacro,
+  title,
+  rmtitle: (id = macroDefaults.id, { store, part }) => store.removeMacroNodes(id, 'title', part),
 }

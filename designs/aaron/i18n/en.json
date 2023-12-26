@@ -7,9 +7,9 @@
   },
   "s": {
     "cutArmBinding.t": "The arm opening knit binding is not shown",
-    "cutArmBinding.d": "The **Arm opening knit binding** are two strips of fabric {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). They are not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutArmBinding.d": "The **Arm opening knit binding** are two strips of fabric {{{ width }}} wide and {{{ length }}} long.",
     "cutNeckBinding.t": "The neck opening knit binding is not shown",
-    "cutNeckBinding.d": "The **Neck opening knit binding** is a strip of fabric {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). It is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutNeckBinding.d": "The **Neck opening knit binding** is a strip of fabric {{{ width }}} wide and {{{ length }}} long.",
     "cutOneStripToFinishTheNeckOpening": "Cut one strip to finish the neck opening",
     "cutTwoStripsToFinishTheArmholes": "Cut two strips to finish the armholes",
     "largeSaAdaptKnitBindingWidth.t": "Consider lowering the knit binding width",

@@ -12,6 +12,6 @@ Vous pouvez augmenter ou diminuer la pince pour modifier l'emmanchure.
 
 > Bien que cette pince soit utilisée pour façonner le patron, vous n'avez pas à coudre la pince parce qu'elle est incorporée dans la pince du devant.
 
-## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_frontscyedart_sample.svg "Effet de cette option sur le motif")
+
+

@@ -25,7 +25,7 @@ const SearchPage = ({ page }) => {
   )
 
   return (
-    <PageWrapper {...page}>
+    <PageWrapper {...page} title="Search" intro="Use the FreeSewing.dev site search">
       <BaseLayout>
         <BaseLayoutLeft>
           <MainSections />

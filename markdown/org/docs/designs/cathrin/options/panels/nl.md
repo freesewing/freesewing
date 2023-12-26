@@ -13,6 +13,6 @@ Meer panelen is een beetje meer werk, maar laat je ook toe het verschil tussen b
 
 > Meer rondingen = meer panelen
 
-## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](cathrin_panels_sample.svg "Effect van deze optie op het patroon")
+
+

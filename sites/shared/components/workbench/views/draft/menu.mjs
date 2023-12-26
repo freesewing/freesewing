@@ -1,5 +1,4 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
-import { loadSettingsConfig as loadUiSettingsConfig } from 'shared/components/workbench/menus/ui-settings/config.mjs'
 import {
   DesignOptions,
   ns as designMenuNs,
@@ -30,7 +29,6 @@ export const DraftMenu = ({
   update,
   language,
   account,
-  DynamicDocs,
   view,
   setView,
   flags = false,
@@ -44,10 +42,8 @@ export const DraftMenu = ({
     update,
     language,
     account,
-    DynamicDocs,
     control,
   }
-  const uiSettingsConfig = loadUiSettingsConfig()
 
   const sections = [
     {
@@ -71,10 +67,11 @@ export const DraftMenu = ({
   ]
 
   const items = []
-  if (control >= uiSettingsConfig.kiosk.control && flags)
+  if (flags)
     items.push([
       <FlagsAccordionTitle flags={flags} key={1} />,
       <FlagsAccordionEntries {...{ update, control, flags }} key={2} />,
+      'flags',
     ])
   items.push(
     ...sections.map((section) => [
@@ -86,6 +83,7 @@ export const DraftMenu = ({
         <p className="text-left">{t(`${section.ns}:${section.name}.d`)}</p>
       </>,
       section.menu,
+      section.name,
     ])
   )
 

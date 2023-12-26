@@ -26,15 +26,7 @@ const flattenOptions = (options, list = false, path = []) => {
 
 const spacer = <span className="px-2 opacity-50">/</span>
 
-export const TestMenu = ({
-  design,
-  patternConfig,
-  settings,
-  update,
-  //language,
-  //account,
-  //DynamicDocs,
-}) => {
+export const TestMenu = ({ design, patternConfig, settings, update }) => {
   const { t } = useTranslation(ns)
 
   const allOptions = flattenOptions(patternConfig.options)
@@ -71,6 +63,7 @@ export const TestMenu = ({
             }}
             current={settings?.sample?.option}
           />,
+          'testOptions',
         ],
         [
           <Fragment key="a">
@@ -92,6 +85,7 @@ export const TestMenu = ({
             }}
             current={settings?.sample?.measurement}
           />,
+          'testMeasurements',
         ],
         // FIXME: Implement this once v3 is ready
         //[
@@ -103,6 +97,7 @@ export const TestMenu = ({
         //    <p>{t('workbench:testSetsDesc')}</p>
         //  </Fragment>,
         //  <V3Wip key="b" />,
+        //  'testSets',
         //],
       ]}
     />

@@ -2,4 +2,4 @@
 title: "Shin zwembroek: Ontwerpopties"
 ---
 
-<PatternOptions pattern='shin' />
+<DesignOptions design='shin' />

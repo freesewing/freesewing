@@ -22,8 +22,8 @@ describe('Snapped options', () => {
     }
     const design = new Design({ parts: [part] })
     new design({ options: { test: 0.13 }, measurements, idPrefix: 'A' }).draft()
-    expect(abs.test).to.equal(60)
-    new design({ options: { test: 0.27 }, measurements, idPrefix: 'B' }).draft()
+    expect(abs.test).to.equal(48)
+    new design({ options: { test: 0.26 }, measurements, idPrefix: 'B' }).draft()
     expect(abs.test).to.equal(108)
     new design({ options: { test: 0.71 }, measurements, idPrefix: 'C' }).draft()
     expect(abs.test).to.equal(288)
@@ -123,5 +123,32 @@ describe('Snapped options', () => {
     expect(patternB.settings[0].absoluteOptions.test).to.equal(101.6)
     expect(patternC.settings[0].absoluteOptions.test).to.equal(388)
     expect(patternD.settings[0].absoluteOptions.test).to.equal(4)
+  })
+
+  it('Should snap a percentage option up/down for an array of numbers', () => {
+    const part = {
+      name: 'test',
+      options: {
+        test: {
+          pct: 30,
+          min: 0,
+          max: 100,
+          toAbs,
+          snap: [10, 20, 30, 40],
+        },
+      },
+      draft: ({ part }) => part,
+    }
+    const design = new Design({ parts: [part] })
+    const patternA = new design({
+      options: { test: 0.026 },
+      measurements,
+    }).draft()
+    const patternB = new design({
+      options: { test: 0.043 },
+      measurements,
+    }).draft()
+    expect(patternA.settings[0].absoluteOptions.test).to.equal(10)
+    expect(patternB.settings[0].absoluteOptions.test).to.equal(20)
   })
 })

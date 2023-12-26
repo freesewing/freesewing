@@ -5,7 +5,7 @@ import { pants } from './pants.mjs'
 import { cutout } from './cutout.mjs'
 import { pocket } from './pocket.mjs'
 import { backPocket } from './backpocket.mjs'
-import { facings } from './facings.mjs'
+import { facingFront, facingBack } from './facings.mjs'
 import { mini } from './mini.mjs'
 import { waistbandFront, waistbandBack, strapFront, strapBack } from './waistband.mjs'
 // Re-export skeleton parts so peope can re-use them
@@ -19,7 +19,8 @@ const Waralee = new Design({
     cutout,
     pocket,
     backPocket,
-    facings,
+    facingFront,
+    facingBack,
     mini,
     waistbandFront,
     waistbandBack,
@@ -34,7 +35,8 @@ export {
   cutout,
   pocket,
   backPocket,
-  facings,
+  facingFront,
+  facingBack,
   mini,
   waistbandFront,
   waistbandBack,

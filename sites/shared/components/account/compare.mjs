@@ -11,7 +11,7 @@ import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { ListInput } from 'shared/components/inputs.mjs'
 import { OkIcon, NoIcon } from 'shared/components/icons.mjs'
-import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = ['account', 'status']
 
@@ -44,7 +44,7 @@ export const CompareSettings = ({ welcome = false }) => {
   const nextHref =
     welcomeSteps[account?.control].length > 3
       ? '/welcome/' + welcomeSteps[account?.control][4]
-      : '/docs/guide'
+      : '/docs/about/guide'
 
   return (
     <div className="max-w-xl">
@@ -67,7 +67,7 @@ export const CompareSettings = ({ welcome = false }) => {
         }))}
         current={selection}
         update={update}
-        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/compare`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/compare`} />}
       />
       {welcome ? (
         <>

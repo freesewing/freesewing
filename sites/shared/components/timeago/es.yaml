@@ -1,11 +1,13 @@
-hour: hour
-hours: hours
-day: day
+hour: hora
+hours: horas
+day: día
 days: días
-month: month
+month: mes
 months: meses
 year: año
 years: años
 oneDay: un día
+oneHour: one hour
 lessThanADay: menos de un día
+lessThanAnHour: less than an hour
 ago: hace

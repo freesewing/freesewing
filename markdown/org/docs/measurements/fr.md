@@ -1,6 +1,5 @@
 ---
-title: Mensurations
-order: 300
+title: Les mesures que nous utilisons
 ---
 
 <ReadMore list />

@@ -1,11 +1,13 @@
-hour: hour
-hours: hours
-day: day
+hour: година
+hours: годин
+day: день
 days: днів
-month: month
+month: місяць
 months: місяці
 year: рік
 years: роки
 oneDay: Одного разу
+oneHour: one hour
 lessThanADay: менше доби
+lessThanAnHour: less than an hour
 ago: назад.

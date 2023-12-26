@@ -9,7 +9,7 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { BackToAccountButton } from './shared.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 import { StringInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = ['account', 'status']
 
@@ -43,8 +43,8 @@ export const GithubSettings = () => {
         current={githubEmail}
         update={setGithubEmail}
         valid={(val) => val.length > 0}
-        placeholder={'joostdecock'}
-        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/github`} />}
+        placeholder={'joost@joost.at'}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/github`} />}
       />
       <StringInput
         id="account-github-username"
@@ -52,8 +52,8 @@ export const GithubSettings = () => {
         current={githubUsername}
         update={setGithubUsername}
         valid={(val) => val.length > 0}
-        placeholder={'joost@joost.at'}
-        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/github`} />}
+        placeholder={'joostdecock'}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/github`} />}
       />
       <SaveSettingsButton btnProps={{ onClick: save }} />
       <BackToAccountButton />

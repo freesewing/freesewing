@@ -112,11 +112,13 @@ export function draftRibbing(part, length) {
     store.flag.preset('expandIsOn')
   } else {
     // Expand is off, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
     store.flag.note({
       msg: `huey:cut${capitalize(part.name.split('.')[1])}`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
       replace: {
-        w: units(height + 2 * sa),
-        l: units(length + 2 * sa),
+        w: units(height + extraSa),
+        l: units(length + extraSa),
       },
       suggest: {
         text: 'flag:show',

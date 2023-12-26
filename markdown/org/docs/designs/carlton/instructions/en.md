@@ -4,7 +4,7 @@ title: "Carlton coat: Sewing Instructions"
 
 ### Step 1: Draft and Cut the missing Lining and Facing Parts
 
-Some parts for Carlton require you to draft parts from the existing parts. The following are a list of what parts you need to draft, [see Carlton Cutting](/docs/patterns/carlton/cutting/) for details on how to cut them.
+Some parts for Carlton require you to draft parts from the existing parts. The following are a list of what parts you need to draft, [see Carlton Cutting](/docs/designs/carlton/cutting/) for details on how to cut them.
 
 #### Drafting
 
@@ -56,12 +56,12 @@ Don't forget the seam allowance for these pieces when cutting if you are making 
 
 #### Cutting
 
-- Cut all the parts above from their respective fabrics/facings. ([see Carlton Cutting](/docs/patterns/carlton/cutting/))
+- Cut all the parts above from their respective fabrics/facings. ([see Carlton Cutting](/docs/designs/carlton/cutting/))
 
 ### Step 2: Fix Me
 
 <Fixme>
 
-Documentation for this pattern still needs to be written. In the meantime their are some preliminary instructions for ([Carlita, Carlton's Counterpart](/docs/patterns/carlita/instructions/)) that should help.
+Documentation for this pattern still needs to be written. In the meantime their are some preliminary instructions for ([Carlita, Carlton's Counterpart](/docs/designs/carlita/instructions/)) that should help.
 
 </Fixme>

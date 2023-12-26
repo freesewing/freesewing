@@ -2,5 +2,5 @@
 title: Reversible
 ---
 
-Whether you want to make a fully reversible Bee or not.
+Tanto si quieres hacer una Abeja totalmente reversible como si no.
 

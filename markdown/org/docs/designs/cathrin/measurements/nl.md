@@ -2,4 +2,4 @@
 title: "Cathrin korset: Benodigde afmetingen"
 ---
 
-<PatternMeasurements pattern='cathrin' />
+<DesignMeasurements design='cathrin' />

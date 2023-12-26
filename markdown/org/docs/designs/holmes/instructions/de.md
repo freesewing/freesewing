@@ -62,7 +62,7 @@ If you are uncertain about the length you want for you ties take 1 metre (39") o
 <Note>
 
 Die oben genannten Längen sind Empfehlungen, so fühlen Sie sich frei zu gehen so lange oder so kurz wie Sie wollen mit den Krawatten.  
-Wenn du es vorziehst, kannst du deine individuellen Krawatten auch mit Stoff herstellen, [siehe Holmes-Schnitt](/docs/patterns/holmes/cutting/) für weitere Informationen.
+Wenn du es vorziehst, kannst du deine individuellen Krawatten auch mit Stoff herstellen, [siehe Holmes-Schnitt](/docs/designs/holmes/cutting/) für weitere Informationen.
 
 </Note>
 

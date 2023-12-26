@@ -1,5 +1,5 @@
 import { frontDimensions } from './shared.mjs'
-import { draftFrontRightClassicSeperate } from './frontright-classic-seperate.mjs'
+import { draftFrontRightClassicSeparate } from './frontright-classic-separate.mjs'
 import { draftFrontRightClassicCuton } from './frontright-classic-cuton.mjs'
 import { draftFrontRightSeamless } from './frontright-seamless.mjs'
 import { front } from './front.mjs'
@@ -25,8 +25,8 @@ function simonFrontRight(params) {
     d: 15 + sa,
   })
 
-  if (options.seperateButtonPlacket) {
-    return draftFrontRightClassicSeperate(params)
+  if (options.separateButtonPlacket) {
+    return draftFrontRightClassicSeparate(params)
   } else if (options.buttonPlacketStyle === 'seamless') {
     return draftFrontRightSeamless(params)
   } else if (options.buttonPlacketStyle === 'classic') {

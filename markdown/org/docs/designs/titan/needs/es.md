@@ -5,7 +5,7 @@ title: "Taco de pantalón Titan: Lo que necesitas"
 Para hacer Titán, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- Aproximadamente 1,5 metros (1,7 yardas) de tela adecuada ([consulta las opciones de tela de Titán](/docs/patterns/titan/fabric))
+- Aproximadamente 1,5 metros (1,7 yardas) de tela adecuada ([consulta las opciones de tela de Titán](/docs/designs/titan/fabric))
 
 <Note>
 

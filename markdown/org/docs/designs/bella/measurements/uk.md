@@ -2,4 +2,4 @@
 title: "Боді-блок Bella: Необхідні виміри"
 ---
 
-<PatternMeasurements pattern='bella' />
+<DesignMeasurements design='bella' />

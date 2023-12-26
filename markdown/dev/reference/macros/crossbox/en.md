@@ -1,5 +1,5 @@
 ---
-title: crossbox
+title: crossBox
 ---
 
 The `crossbox` macro is used to mark a feature on a sewing pattern 
@@ -7,15 +7,18 @@ to attach and reinforce an attachment between two pieces.
 This is regularly done by sewing along the outside of the pieces 
 that needs to be joined, and then sewing along the diagonals too.
 
-It is provided by [plugin-annotations](/reference/plugins/annotations/).
+It is provided by [plugin-annotations](/reference/plugins/annotations), which is
+part of [core-plugins](/reference/plugins/core) (so it is available by default).
 
 ## Signature
 
 ```js
 macro('crossbox', {
-  Point from,
-  Point to,
+  String id='crossbox',
+  Point topLeft,
+  Point bottomRight,
   String text,
+  Boolean force = false,
 })
 ```
 
@@ -24,25 +27,13 @@ macro('crossbox', {
 <Example caption="An example of the crossbox macro">
 ```js
 ({ Point, points, Path, paths, macro, part }) => {
-  points.partTL = new Point(0,0)
-  points.partTR = new Point(0,70)
-  points.partBR = new Point(50,70)
-  points.partBL = new Point(50,0)
-
-  paths.part = new Path()
-    .move(points.partTL)
-    .line(points.partTR)
-    .line(points.partBR)
-    .line(points.partBL)
-    .close()
-    
   points.tl = new Point(5,5)
   points.br = new Point(45,25)
 
   macro('crossbox', {
-    from: points.tl,
-    to: points.br,
-    text: 'attach here',
+    topLeft: new Point(5, 5),
+    bottomRight: new Point(45, 25),
+    text: 'Attach here',
   })
 
   return part
@@ -54,22 +45,13 @@ macro('crossbox', {
 
 | Property        | Default  | Type                | Description |
 |----------------:|----------|---------------------|-------------|
-| `from`          |          | [Point](/reference/api/point) | The top left point of the crossbox |
-| `to`            |          | [Point](/reference/api/point) | The bottom right point of the crossbox |
+| `bottomRight`   |          | [Point](/reference/api/point) | The bottom right point of the crossbox |
+| `topLeft`       |          | [Point](/reference/api/point) | The top left point of the crossbox |
+| `id`            | `crossbox` | `string` | The ID of this macro instance |
 | `text`          |          | String   | Optional text to go in the center of the crossbox |
+| `force`         | `false`    | `boolean`  | Set this to `true` to display the macro output even when `complete` is `false` |
 
-## Result
+## Notes
 
-| Generated Element | Description |
-|-------------------|-------------|
-| `points.${id}_boxTopLeft` | Point Top Left of the outer box |
-| `points.${id}_boxTopRight` | Point Top Right of the outer box |
-| `points.${id}_boxBottomLeft` | Point Bottom Left of the outer box |
-| `points.${id}_boxBottomRight` | Point Bottom Right of the outer box |
-| `points.${id}_topCrossTL` | Point Top Left of the inner box |
-| `points.${id}_topCrossTR` | Point Top Right of the inner box |
-| `points.${id}_topCrossBL` | Point Bottom Left of the inner box |
-| `points.${id}_topCrossBR` | Point Bottom Right of the inner box |
-| `points.${id}_textAnchor` | Point for the text |
-| `paths.${id}crossBox` | Path for the outer box |
-| `paths.${id}_topCross` | Path for the inner box and cross |
+This macro takes the `complete` setting into account and won't output anything when both complete and `force` are `false`.
+

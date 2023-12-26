@@ -46,7 +46,6 @@ export const PrintMenu = ({
   update,
   language,
   account,
-  DynamicDocs,
   exportIt,
   pattern,
 }) => {
@@ -58,7 +57,6 @@ export const PrintMenu = ({
     update,
     language,
     account,
-    DynamicDocs,
     control: account.control,
   }
 
@@ -94,6 +92,7 @@ export const PrintMenu = ({
             <p className="text-left">{t(`${section.ns}:${section.name}.d`)}</p>
           </>,
           section.menu,
+          section.name,
         ])}
       />
     </>

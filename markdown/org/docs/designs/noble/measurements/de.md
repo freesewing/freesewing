@@ -2,4 +2,4 @@
 title: "Edler Körperblock: Erforderliche Maße"
 ---
 
-<PatternMeasurements pattern='noble' />
+<DesignMeasurements design='noble' />

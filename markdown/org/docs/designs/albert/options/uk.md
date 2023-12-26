@@ -2,4 +2,4 @@
 title: "Фартух Альберт: Варіанти дизайну"
 ---
 
-<PatternOptions pattern='albert' />
+<DesignOptions design='albert' />

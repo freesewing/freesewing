@@ -2,4 +2,4 @@
 title: "Вальбурга Ваппенрок: Необхідні виміри"
 ---
 
-<PatternMeasurements pattern='walburga' />
+<DesignMeasurements design='walburga' />

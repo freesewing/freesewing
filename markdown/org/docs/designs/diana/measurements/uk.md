@@ -2,4 +2,4 @@
 title: "Топ з драпіруванням Діана: Необхідні виміри"
 ---
 
-<PatternMeasurements pattern='diana' />
+<DesignMeasurements design='diana' />

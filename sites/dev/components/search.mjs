@@ -6,7 +6,7 @@ import { ClearIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['search']
 
-const searchClient = algoliasearch(siteConfig.algolia.app, siteConfig.algolia.key)
+const searchClient = algoliasearch(siteConfig.algolia.appId, siteConfig.algolia.apiKey)
 
 const Hit = (props) => (
   <div
@@ -44,6 +44,9 @@ const Hit = (props) => (
         <Highlight hit={props.hit} attribute="body" />
       </Link>
     )}
+    <Link href={props.hit.page} className="text-xs sm:text-sm block opacity-70">
+      <Highlight hit={props.hit} attribute="page" />
+    </Link>
   </div>
 )
 

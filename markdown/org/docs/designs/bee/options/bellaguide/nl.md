@@ -14,6 +14,6 @@ Het is aan te raden om dit aan te zetten wanneer je de opties voor dit patroon a
 
 </Note>
 
-## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bee_bellaguide_sample.svg "Effect van deze optie op het patroon")
+
+

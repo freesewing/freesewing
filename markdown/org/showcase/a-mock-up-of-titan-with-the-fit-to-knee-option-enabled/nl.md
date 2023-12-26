@@ -1,16 +1,16 @@
 ---
-title: "A mock-up of Titan with the fit-to-knee option enabled"
-caption: "The front view of Titan"
+title: "Een mock-up van Titan met de fit-to-knee optie ingeschakeld"
+caption: "Het vooraanzicht van Titan"
 date: 20230818
-intro: "This user tested Titan with the fit-to-knee measurement. They reported being overall happy with the results."
+intro: "Deze gebruiker heeft Titan getest met de fit-to-knee meting. Ze gaven aan over het algemeen tevreden te zijn met de resultaten."
 designs:
   - "titan"
-maker: user-3
+maker: gebruiker-3
 ---
 
-A FreeSewing maker shared this mock-up of Titan. She reported being overall very happy with the results for a first attempt. Her main adjustment will be to raise the waist of the back piece. The maker mentioned that she usually has fit issues with off-the-rack pants and is excited that Titan will be a great starting point for clothes that suit her.
+Een FreeSewing-maker deelde deze mock-up van Titan. Ze meldde dat ze over het algemeen erg blij was met de resultaten voor een eerste poging. Haar belangrijkste aanpassing is het verhogen van de taille van het achterstuk. De maakster vertelde dat ze meestal problemen heeft met de pasvorm van confectiebroeken en ze is blij dat Titan een goed uitgangspunt zal zijn voor kleding die bij haar past.
 
-This showcase was submitted anonymously, and is shared with permission.
+Deze vitrine is anoniem ingezonden en wordt met toestemming gedeeld.
 
 ![Achteraanzicht](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-a-mock-up-of-titan-with-the-fit-to-knee-option-enabled-1/public "Achteraanzicht")
 

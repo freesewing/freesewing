@@ -14,7 +14,7 @@ Walburga es un patrón de inspiración histórica, y si quieres más autenticida
 
 ### Paso 2: Acabar las costuras y la abertura de la cabeza
 
-- Remata las costuras y los bordes sin rematar en la abertura de la cabeza, con el método que prefieras. (Si utilizas los tejidos recomendados en las opciones de tejido [](/docs/patterns/walburga/fabric), se deshilacharán __. Una opción es doblar dos veces el margen de costura, encerrar el borde crudo y pespuntear. También puedes utilizar pespuntes decorativos).
+- Remata las costuras y los bordes sin rematar en la abertura de la cabeza, con el método que prefieras. (Si utilizas los tejidos recomendados en las opciones de tejido [](/docs/designs/walburga/fabric), se deshilacharán __. Una opción es doblar dos veces el margen de costura, encerrar el borde crudo y pespuntear. También puedes utilizar pespuntes decorativos).
 
 ### (Opcional) Paso 3: Corta hendiduras
 

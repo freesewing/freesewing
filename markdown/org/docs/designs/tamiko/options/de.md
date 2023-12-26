@@ -2,4 +2,4 @@
 title: "Tamiko Oberteil: Design Optionen"
 ---
 
-<PatternOptions pattern='tamiko' />
+<DesignOptions design='tamiko' />

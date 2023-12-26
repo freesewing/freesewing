@@ -1,0 +1,109 @@
+{
+  "t": "Lumira leggings",
+  "d": "A FreeSewing pattern for a pair of leggings",
+  "p": {
+    "shape": "Shape",
+    "leg": "Leg",
+    "gusset": "Gusset",
+    "waistband": "Waistband"
+   },
+  "s": {
+    "bulgeToLarge": "The value for the bulge is too large, and this cannot be made to fit. It is adjusted accordingly.",
+    "couldNotFitCircle": "Could not make the circle fit",
+    "couldNotFitFrontOutside": "Could not make the front outside to fit",
+    "couldNotFitFrontGussetPath": "Could not make the front gusset path to fit",
+    "couldNotCreateWaistCircle": "Could not create the waist curve",
+    "couldNotCreateWaistBack": "Could not create the waist back",
+    "couldNotReduceWaist":  "Could not reduce the waist"
+  },
+  "o": {
+    "waistband": {
+      "t": "Waistband",
+      "d": "Add a separate waistband to the design"
+    },
+    "waistbandYes": {
+      "t": "With a Waistband",
+      "d": "Add a separate waistband"
+    },
+    "waistbandNo": {
+      "t": "Without a Waistband",
+      "d": "Do not add a separate waistband"
+    },
+    "backgusset": {
+      "t": "Back Gusset",
+      "d": "Add a circular gusset in the back"
+    },
+    "backgussetYes": {
+      "t": "Add a back gusset",
+      "d": "Back gusset with option to butt lift added"
+    },
+    "backgussetNo": {
+      "t": "No circular back gusset",
+      "d": "Simple center gusset"
+    },
+    "cyclingchamois": {
+      "t": "Cycling Chamois",
+      "d": "Allow for a chamois to be added. This sets some of the percentages, and automatically enables certain features"
+    },
+    "cyclingchamoisYes": {
+      "t": "Add Cycling Chamois",
+      "d": "Support for a chamois has been added"
+    },
+    "cyclingchamoisNo": {
+      "t": "No Cycling Chamois",
+      "d": "All settings can be individually set"
+    },
+    "frontbulge": {
+      "t": "Front bulge",
+      "d": "Add a bulge in the front"
+    },
+    "frontbulgeYes": {
+      "t": "Add a front bulge",
+      "d": "Add a bulge in the front"
+    },
+    "frontbulgeNo": {
+      "t": "No front bulge",
+      "d": "Simple seam in the front"
+    },
+    "ease": {
+      "t": "Ease",
+      "d": "This controls the amount of ease. Since this is a pattern for leggings that is normally made of stretch fabric, the ease is negative, meaning the fabric is stretched around the body."
+    },
+    "leglength": {
+      "t": "Leg length",
+      "d": "The length of the legs. A percentage of the inseam measurement."
+    },
+    "waistlowering": {
+      "t": "Waist lowering",
+      "d": "Lowering of the waist. This is a percentage of the Waist-To-Hips measurement."
+    },
+    "gussetwidth": {
+      "t": "Gusset width",
+      "d": "Width of the gusset. This is a percentage of the front cross seam."
+    },
+    "backgussetwidth": {
+      "t": "Back Gusset width",
+      "d": "The width of the gusset in the back. This is a percentage of the hips circumference."
+    },
+    "frontgussetlength": {
+      "t": "Front gusset length",
+      "d": "This configures how far the gusset should extend in the front. This is a percentage of the front cross seam."
+    },
+    "waistbandsize": {
+      "t": "Waistband size",
+      "d": "Size (height) of the waistband. This is a percentage of the Waist-To-Hips measurement."
+    },
+    "waistreduction": {
+      "t": "Waist circumference reduction",
+      "d": "The amount by which the waist should be reduced. This is a percentage of the waist circumference. Only available when the waistband option is selected."
+    },
+    "buttlift": {
+      "t": "Butt lift",
+      "d": "This setting controls the shape of the back gusset, thereby creating more or less support to lift the buttocks"
+    },
+    "frontbulgesize": {
+      "t": "Front bulge size",
+      "d": "The size of the front bulge. This is a percentage of the front cross seam. (Take it easy, you need less than you think, big boy)"
+    }
+  }
+}

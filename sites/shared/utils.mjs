@@ -7,6 +7,7 @@ import orderBy from 'lodash.orderby'
 import unset from 'lodash.unset'
 import { cloudflareConfig } from './config/cloudflare.mjs'
 import { mergeOptions } from '@freesewing/core'
+import { freeSewingConfig as config } from './config/freesewing.config.mjs'
 
 const slugifyConfig = {
   replacement: '-', // replace spaces with replacement character, defaults to `-`
@@ -463,7 +464,7 @@ export const notEmpty = (thing) => `${thing}`.length > 0
  */
 const dec2hex = (dec) => dec.toString(16).padStart(2, '0')
 export const randomString = (len = 42) => {
-  if (typeof window === 'undefined') return '' // Not used in SSR
+  if (typeof window === 'undefined') return '' // eslint-disable-line
   const arr = new Uint8Array(len / 2)
   window.crypto.getRandomValues(arr) // eslint-disable-line
   return Array.from(arr, dec2hex).join('')
@@ -488,3 +489,11 @@ export const workbenchHash = ({ settings = {}, view = 'draft' }) =>
   `#settings=${encodeURIComponent(JSON.stringify(settings))}&view=${encodeURIComponent(
     '"' + view + '"'
   )}`
+
+export const getSearchParam = (name = 'id') =>
+  typeof window === 'undefined' ? undefined : new URLSearchParams(window.location.search).get(name) // eslint-disable-line
+
+export const slugToOgImg = (slug, language) => `${language}_${slug.split('/').join('_')}.png`
+
+export const ogUrl = ({ site = false, title, intro }) =>
+  `${config.backend}/img/${encodeURIComponent(JSON.stringify({ site, title, intro }))}`

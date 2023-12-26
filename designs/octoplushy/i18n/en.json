@@ -16,17 +16,17 @@
     "stichLine": "Stitch line",
     "foldLine": "Fold lines",
     "octopusEye.t": "The octopus eye is not shown",
-    "octopusEye.d": "The **Octopus eye** is a circular piece of fabric with a diameter of {{{ width }}} (this includes seam allowance). It is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "octopusEye.d": "The **Octopus eye** is a circular piece of fabric with a diameter of {{{ width }}}.",
     "octopusPupil.t": "The octopus pupil is not shown",
-    "octopusPupil.d": "The **Octopus pupil** is a circular piece of fabric with a diameter of {{{ width }}} (this includes seam allowance). It is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "octopusPupil.d": "The **Octopus pupil** is a circular piece of fabric with a diameter of {{{ width }}}.",
     "octopusEyebrow.t": "The octopus eyebrow is not shown",
-    "octopusEyebrow.d": "The **Octopus eyebrow** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). It is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "octopusEyebrow.d": "The **Octopus eyebrow** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long.",
     "squidEye.t": "The squid eye is not shown",
-    "squidEye.d": "The **Squid eye** is a circular piece of fabric with a diameter of {{{ width }}} (this includes seam allowance). It is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "squidEye.d": "The **Squid eye** is a circular piece of fabric with a diameter of {{{ width }}}.",
     "squidPupil.t": "The squid pupil is not shown",
-    "squidPupil.d": "The **Squid pupil** is a circular piece of fabric with a diameter of {{{ width }}} (this includes seam allowance). It is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "squidPupil.d": "The **Squid pupil** is a circular piece of fabric with a diameter of {{{ width }}}.",
     "squidEyebrow.t": "The squid eyebrow is not shown",
-    "squidEyebrow.d": "The **Squid eyebrow** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). It is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part."
+    "squidEyebrow.d": "The **Squid eyebrow** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long."
   },
   "o": {
     "size": {

@@ -8,10 +8,11 @@ Cette option permet de contrôler la propagation vers le haut dans le premier qu
 
 <Tip>
 
-Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-the-sleevecap) pour une explication détaillée de la construction de la tête de manche et de l'influence des différentes options sur sa forme.
+Voir [comprendre le sleevecap](/docs/designs/brian/options#understanding-the-sleevecap) pour un aperçu approfondi
+de la façon dont le sleevecap est construit et de l'influence des différentes options sur sa forme.
 
 </Tip>
 
-## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_sleevecapq1spread2_sample.svg "Effet de cette option sur le motif")
+
+

@@ -2,4 +2,4 @@
 title: "Waralee Wickelhose: Erforderliche Maße"
 ---
 
-<PatternMeasurements pattern='waralee' />
+<DesignMeasurements design='waralee' />

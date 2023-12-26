@@ -2,6 +2,6 @@
 title: "Largeur de poche"
 ---
 
-This option controls the width of the front pocket.
+Cette option permet de contrôler la largeur de la poche avant.
 
 

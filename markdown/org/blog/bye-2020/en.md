@@ -42,7 +42,7 @@ We are also expanding our efforts to provide patterns that work for all body typ
 ##### We helped more people than ever this year
 On the practical side of things, I have extended our book year with a couple of weeks so that going forward, we will just follow the calendar years. With a couple of hours left in this year, FreeSewing's revenue for 2020 clocks in at **10.736,82 euro**. That makes 2020 and absolute bumper year, and it's more than all previous years combined (2015: € 256.65, 2016: € 473.50, 2017: € 673.14, 2018: € 3162.14, 2019: € 4109.38).
 
-As always, all of FreeSewing's revenue -- the entire 10.736,82 euro -- [goes to Doctors Without Borders](/docs/various/pledge/).
+As always, all of FreeSewing's revenue -- the entire 10.736,82 euro -- [goes to Doctors Without Borders](/docs/about/pledge/).
 
 I am truly grateful for your continued support and contributions. I feel like in a very small way, we are able to apply some balm to the hurt that seems at times omnipresent in the world.
 

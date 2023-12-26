@@ -1,15 +1,15 @@
 ---
-title: "Breanna body block: Designer Notes"
+title: "Боді-блок Breanna: Нотатки дизайнера"
 ---
 
-With Breanna, I wanted to do two things:
+З Бріанною я хотів зробити дві речі:
 
-- Create a basic block like [Brian](/designs/brian) but for womenswear
-- Try to see in how many different ways I could support the bust dart
+- Створіть базовий блок на кшталт [Brian](/designs/brian) , але для жіночого одягу
+- Подивіться, скільки різних способів підтримки виточки на грудях я можу запропонувати
 
-It hasn't been a complete success. While some people get good results, others do not.
+Це не було повним успіхом. У той час як одні люди отримують хороші результати, інші - ні.
 
-I leave it up because it's know to work for some. You can check [this FAQ on womenswear blocks for more background info](/docs/faq/womenswear-blocks) about the situation with regards to womenswear blocks.
+Я залишаю це, бо знаю, що для деяких це працює. You can check [this FAQ on womenswear blocks for more background info](/docs/about/faq/womenswear-blocks) about the situation with regards to womenswear blocks.
 
 Йост
 

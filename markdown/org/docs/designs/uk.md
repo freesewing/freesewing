@@ -1,6 +1,5 @@
 ---
-title: Дизайни
-order: 300
+title: FreeSewing Designs
 ---
 
 <ReadMore list />

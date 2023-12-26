@@ -1,6 +1,6 @@
 ---
-title: Reversible
+title: Umkehrbar
 ---
 
-Whether you want to make a fully reversible Bee or not.
+Egal, ob du eine vollständig umkehrbare Biene machen willst oder nicht.
 

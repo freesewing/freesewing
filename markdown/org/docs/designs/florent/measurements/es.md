@@ -2,4 +2,4 @@
 title: "Gorra plana Florent: Medidas requeridas"
 ---
 
-<PatternMeasurements pattern='florent' />
+<DesignMeasurements design='florent' />

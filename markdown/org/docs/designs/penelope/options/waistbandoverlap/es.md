@@ -1,9 +1,9 @@
 ---
-title: "Waist band overlap"
+title: "Superposición de la banda de la cintura"
 ---
 
-The width of the overlap by the zipper. This is normally used to hide snaps, buttons, or hooks that reinforce the zipper at the waistband.
+La anchura del solapamiento por la cremallera. This is normally used to hide snaps, buttons, or hooks that reinforce the zipper at the waistband.
 
-## Efecto de esta opción en el patrón
+
 
 

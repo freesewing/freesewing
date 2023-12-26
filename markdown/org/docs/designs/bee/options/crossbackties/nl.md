@@ -22,6 +22,6 @@ De bandjes worden door de omhulsels in de cups gehaald en worden aan de achterka
 Het bandje en het omhulsel op de cups zijn vervangen door een bandje dat aan de achterkant met lusjes is vastgenaaid.  
 De nekbandjes zijn langer en kruisen elkaar op de rug, gaan dan door de lusjes in de band en worden dan met elkaar verbonden.
 
-## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bee_crossbackties_sample.svg "Effect van deze optie op het patroon")
+
+

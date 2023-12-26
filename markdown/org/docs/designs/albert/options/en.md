@@ -2,4 +2,4 @@
 title: "Albert apron: Design Options"
 ---
 
-<PatternOptions pattern='albert' />
+<DesignOptions design='albert' />

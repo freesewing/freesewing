@@ -32,7 +32,7 @@ export const draftFrontLeftSeamless = ({
   if (complete) {
     // Placket help lines
     paths.frontCenter = new Path().move(points.cfNeck).line(points.cfHem).attr('class', 'help')
-    if (!options.seperateButtonPlacket) {
+    if (!options.separateButtonPlacket) {
       // Match lines are only displayed on attached plackets
       paths.frontCenter.addText('simon:matchHere', 'text-xs center')
     }

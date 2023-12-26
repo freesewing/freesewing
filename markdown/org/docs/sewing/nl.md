@@ -1,6 +1,5 @@
 ---
-title: Naaien
-order: 300
+title: Terminologie naaien
 ---
 
 <ReadMore list />

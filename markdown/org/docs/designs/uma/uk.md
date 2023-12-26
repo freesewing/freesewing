@@ -1,8 +1,8 @@
 ---
-title: "Uma undies"
+title: "Ума роздягається."
 ---
 
-import { DesignInfo } from 'shared/components/designs/info.mjs'
+
 
 <DesignInfo design='uma' docs />
 

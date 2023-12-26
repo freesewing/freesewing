@@ -2,4 +2,4 @@
 title: "Simone overhemd: Ontwerpopties"
 ---
 
-<PatternOptions pattern='simone' />
+<DesignOptions design='simone' />

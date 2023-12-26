@@ -2,4 +2,4 @@
 title: "Слюнявчик Боб: Варіанти дизайну"
 ---
 
-<PatternOptions pattern='bob' />
+<DesignOptions design='bob' />

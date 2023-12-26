@@ -33,11 +33,13 @@ export const frontPanel = {
       store.flag.preset('expandIsOn')
     } else {
       // Expand is off, do not draw the part but flag this to the user
+      const extraSa = sa ? 2 * sa : 0
       store.flag.note({
         msg: `hortensia:cutFrontPanel`,
+        notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
         replace: {
-          width: units(w + 2 * sa),
-          length: units(h + 2 * sa),
+          width: units(w + extraSa),
+          length: units(h + extraSa),
         },
         suggest: {
           text: 'flag:show',

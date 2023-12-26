@@ -4,7 +4,7 @@ title: "Carlton jas: Snij-instructies"
 
 <Note>
 
-Bepaalde onderdelen moeten worden afgeleid van de bestaande onderdelen. Hoe je deze opstelt staat in de [instructions](/docs/patterns/carlton/instructions).
+Bepaalde onderdelen moeten worden afgeleid van de bestaande onderdelen. Hoe je deze opstelt staat op [instructions](/docs/designs/carlton/instructions).
 
 </Note>
 

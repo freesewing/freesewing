@@ -23,3 +23,7 @@ credits: Credits
 contentsBy: Inhoud door
 translators: Vertalers
 title: Titel
+xMadeThis: "<strong>{x}</strong> maakte dit"
+xWroteThis: "<strong>{x}</strong> schreef dit"
+by: Door
+

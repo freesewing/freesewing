@@ -1,14 +1,14 @@
 ---
-title: "Bella body block: Designer Notes"
+title: "Bella lichaam blok: Ontwerpnotities"
 ---
 
-This block was a collaboration between myself and an industry insider who prefers to remain anonymous because of her profession.
+Dit blok was een samenwerking tussen mijzelf en een insider uit de industrie die vanwege haar beroep liever anoniem blijft.
 
-It is the parametric version of a base block for womenswear that is used in the industry in Italy to design womenswear. However, while the block will adapt to your measurments, the original block that it is based on is in really not suitable for a very wide sizing range.
+Het is de parametrische versie van een basisblok voor damesmode dat in de industrie in Italië wordt gebruikt om damesmode te ontwerpen. Maar hoewel het blok zich aanpast aan jouw maten, is het originele blok waarop het is gebaseerd eigenlijk niet geschikt voor een heel breed matenbereik.
 
-So your milage may very here, especially when you are further from the kind of skinny ladies Italians tend to design for.
+Het kan dus heel goed uitpakken, vooral als je verder staat dan het soort magere dames waar Italianen vaak voor ontwerpen.
 
-See also [this FAQ on womenswear blocks for more background info](/docs/faq/womenswear-blocks).
+See also [this FAQ on womenswear blocks for more background info](/docs/about/faq/womenswear-blocks).
 
 joost
 

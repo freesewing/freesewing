@@ -1,15 +1,90 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
+// Dependencies
+import * as runtime from 'react/jsx-runtime'
+import { run, runSync } from '@mdx-js/mdx'
+import { useState, useEffect } from 'react'
 // Components that are available in MDX content
 import { components as baseComponents } from 'shared/components/mdx/index.mjs'
+// Loading component when running async
+import { Loading } from 'shared/components/spinner.mjs'
 
-export const PlainMdxWrapper = ({ MDX = false, components = {}, children, site = 'org' }) => {
-  const allComponents = { ...baseComponents(site), ...components }
+/*
+ * This runs MDX that is compiled as function-body
+ * By run, I mean it turns it into a React component
+ * This is the default async version
+ */
+const runMdx = async (mdx) => {
+  const { default: Content } = await run(mdx, runtime)
 
-  return <div className="searchme">{MDX ? <MDX components={allComponents} /> : children}</div>
+  return Content
 }
 
-export const MdxWrapper = ({ MDX = false, components = {}, children = [], site = 'org' }) => (
-  <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-base">
-    <PlainMdxWrapper {...{ MDX, components, children, site }} />
+/*
+ * This runs MDX that is compiled as function-body
+ * By run, I mean it turns it into a React component
+ * This is the sync version because SSR does not run effects
+ */
+const runMdxSync = (mdx) => {
+  const { default: Content } = runSync(mdx, runtime)
+
+  return Content
+}
+
+export const PlainMdxWrapperAsync = ({ mdx = false, components = {}, site = 'org', slug = [] }) => {
+  /*
+   * Merge passed-in components with the base components
+   */
+  const allComponents = { ...baseComponents(site, slug), ...components }
+
+  /*
+   * Set up state for MDX as running it is handled async in useEffect
+   */
+  const [MDX, setMDX] = useState(false)
+
+  /*
+   * Run the mdx compiled as function-body and turn it into a component
+   */
+  useEffect(() => {
+    const run = async () => {
+      const Content = await runMdx(mdx)
+      setMDX(<Content components={allComponents} />)
+    }
+    if (mdx) run()
+  }, [mdx])
+
+  return <div className="searchme">{MDX ? MDX : <Loading />}</div>
+}
+
+export const PlainMdxWrapperSync = ({ mdx = false, components = {}, site = 'org', slug = [] }) => {
+  /*
+   * Merge passed-in components with the base components
+   */
+  const allComponents = { ...baseComponents(site, slug), ...components }
+
+  /*
+   * Run mdx sync
+   */
+  const Content = runMdxSync(mdx)
+
+  return (
+    <div className="searchme">
+      <Content components={allComponents} />
+    </div>
+  )
+}
+
+export const MdxWrapper = ({
+  mdx = false,
+  components = {},
+  site = 'org',
+  async = false,
+  slug = [],
+}) => (
+  <div className="text-base-content mdx max-w-prose text-base-content max-w-prose text-base">
+    {async ? (
+      <PlainMdxWrapperAsync {...{ mdx, components, site, slug }} />
+    ) : (
+      <PlainMdxWrapperSync {...{ mdx, components, site, slug }} />
+    )}
   </div>
 )

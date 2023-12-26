@@ -5,8 +5,8 @@ title: "Octoplushy, der plüschige Oktopus: Was du brauchst"
 Um Octoplushy zu erstellen, benötigst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
-- Etwa 1 Meter (1,1 Yards) eines geeigneten Stoffes (Oberkörper) ([siehe Octoplushy-Stoffoptionen](/docs/patterns/octoplushy/fabric/))
-- Etwa 0,75 Meter (0,85 Yards) eines geeigneten Stoffes (Belly) ([siehe Octoplushy-Stoffoptionen](/docs/patterns/octoplushy/fabric/))
+- Etwa 1 Meter (1,1 Yards) eines geeigneten Stoffes (Oberkörper) ([siehe Octoplushy-Stoffoptionen](/docs/designs/octoplushy/fabric/))
+- Etwa 0,75 Meter (0,85 Yards) eines geeigneten Stoffes (Belly) ([siehe Octoplushy-Stoffoptionen](/docs/designs/octoplushy/fabric/))
 - Entweder 2 Knöpfe oder ein kleines Stück geeigneten, sich aufdröselnden Stoff für die Augen der Octoplushy-Version
 - Kleines Stück schwarzer Stoff für die Pupillen der Tintenfisch- und Krakenversion
 - Kleines Stück weißer Stoff für die Augen der Tintenfisch- und Oktopus-Versionen
@@ -15,9 +15,9 @@ Um Octoplushy zu erstellen, benötigst du Folgendes:
 
 <Note>
 
-Diese Liste basiert auf einem Standard-Octoplushy. Je nach [Größe, in der du den Octoplushy herstellst] (/docs/patterns/octoplushy/options/size/) kannst du weniger oder mehr Stoff benötigen. 
+Diese Liste basiert auf einem Standard-Octoplushy. Je nach [Größe des Octoplushy](/docs/designs/octoplushy/options/size/) brauchst du vielleicht weniger oder mehr Stoff. 
 
-Die Menge des benötigten Stoffes hängt auch von der [Art des Octoplushy, das du herstellst](/docs/patterns/octoplushy/options/type/) ab.
+Die Menge des benötigten Stoffs hängt auch von der [Art des Octoplushy, das du herstellst](/docs/designs/octoplushy/options/type/) ab.
 - Für die Octopus-Version brauchst du etwa 50% mehr Stoff als für die Octoplushy-Version.
 - Für die Squid-Version brauchst du etwa 75% mehr Stoff als für die Octoplushy-Version.
 

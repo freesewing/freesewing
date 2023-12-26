@@ -1,12 +1,12 @@
 ---
-title: "Simone shirt: Designer Notes"
+title: "Camisa Simone: Designer Notes"
 ---
 
-Simone is essentally [Simon](/designs/simon) with a full-bust adjustment.
+Simone es esencialmente [Simon](/designs/simon) con un ajuste de todo el busto.
 
 The initial intent was to allow people with breasts to have a better fitted shirt design, but anyone can choose Simone for a more female-presenting look due to the bust dart.
 
-Simone has all of the options Simon has, it only adds the FBA to it.
+Simone tiene todas las opciones que tiene Simon, sólo le añade la FBA.
 
 joost
 

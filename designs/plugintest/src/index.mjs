@@ -9,11 +9,12 @@ import { measurements } from './plugin-measurements.mjs'
 import { mirror } from './plugin-mirror.mjs'
 import { round } from './plugin-round.mjs'
 import { sprinkle } from './plugin-sprinkle.mjs'
+import { ringsector } from './plugin-ringsector.mjs'
 
 // Setup our new design
 const Plugintest = new Design({
   data,
-  parts: [annotations, flip, gore, i18nStack, measurements, mirror, round, sprinkle],
+  parts: [annotations, flip, gore, i18nStack, measurements, mirror, round, sprinkle, ringsector],
 })
 
 // Named exports
@@ -26,6 +27,7 @@ export {
   mirror,
   round,
   sprinkle,
+  ringsector,
   Plugintest,
   i18n,
 }

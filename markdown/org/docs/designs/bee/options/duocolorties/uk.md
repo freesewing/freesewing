@@ -1,8 +1,8 @@
 ---
-title: Duo color ties
+title: Дуетні кольорові краватки
 ---
 
-This option allows you to generate a pattern where the ties use two colors rather than one.
+Ця опція дозволяє створити візерунок, в якому для зав'язок використовується не один, а два кольори.
 
-Enable this option if you want ties using two colors. Leave it disabled (the default) if you want ties using a single color.
+Увімкніть цю опцію, якщо ви хочете, щоб краватки використовували два кольори. Залиште цей параметр вимкненим (за замовчуванням), якщо ви хочете, щоб краватки використовували один колір.
 

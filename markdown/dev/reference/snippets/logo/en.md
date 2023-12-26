@@ -4,7 +4,8 @@ title: logo
 
 The `logo` snippet inserts the FreeSewing logo.
 
-It is provided by [plugin-annotations](/reference/plugins/annotations/).
+It is provided by [plugin-annotations](/reference/plugins/annotations/), which is
+part of [core-plugins](/reference/plugins/core) (so it is available by default).
 
 ## Example
 

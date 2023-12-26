@@ -1,5 +1,0 @@
----
-title: Ключі API
----
-
-FIXME

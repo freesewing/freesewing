@@ -9,9 +9,9 @@
   "s": {
     "casingStitchingLine": "Sew down casing here",
     "cutBandTie.t": "The band ties are not shown",
-    "cutBandTie.d": "The **band ties** are {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). Refer to the cutting instructions for details on how many of them you should cut. \n\nThey are not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutBandTie.d": "The **band ties** are {{{ width }}} wide and {{{ length }}} long.",
     "cutNeckTie.t": "The neck ties are not shown",
-    "cutNeckTie.d": "The **neck ties** are {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). Refer to the cutting instructions for details on how many of them you should cut. \n\nThey are not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part."
+    "cutNeckTie.d": "The **neck ties** are {{{ width }}} wide and {{{ length }}} long."
   },
   "o": {
     "chestEase": {

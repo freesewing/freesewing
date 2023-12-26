@@ -42,7 +42,7 @@ export const Toc = ({ toc = [], wrap = false }) => {
             border-2 bg-base-200 bg-opacity-30 p-4 rounded-lg border-base-200
           `}
         >
-          <h4>{t('toc')}</h4>
+          <h4>{t('docs:toc')}</h4>
           {ul}
         </div>
       ) : (

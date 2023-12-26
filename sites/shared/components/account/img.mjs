@@ -12,7 +12,7 @@ import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 import { PassiveImageInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = ['account', 'status']
 
@@ -33,14 +33,14 @@ export const ImgSettings = ({ welcome = false }) => {
     } else setLoadingStatus([true, 'backendError', true, false])
   }
 
-  const nextHref = '/docs/guide'
+  const nextHref = '/docs/about/guide'
 
   return (
     <div className="max-w-xl">
       {!welcome || img !== false ? (
         <img
           alt="img"
-          src={img || cloudflareImageUrl({ id: `user-${account.ihash}`, variant: 'public' })}
+          src={img || cloudflareImageUrl({ id: `uid-${account.ihash}`, variant: 'public' })}
           className="shadow mb-4"
         />
       ) : null}
@@ -51,7 +51,7 @@ export const ImgSettings = ({ welcome = false }) => {
         update={setImg}
         current={img}
         valid={(val) => val.length > 0}
-        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/img`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/img`} />}
       />
       {welcome ? (
         <>

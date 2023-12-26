@@ -1,0 +1,51 @@
+{
+  "t": "Otis",
+  "d": "A FreeSewing pattern for a romper",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "shortsleeve": "Short sleeve",
+    "longsleeve": "Long sleeve",
+    "bindingNeckBack": "Neck back binding",
+    "bindingNeckFront": "Neck front binding",
+    "bindingLeg": "Leg binding"
+  },
+  "s": {
+    "bindingNeckBack.t": "The Back Neck Binding is not shown",
+    "bindingNeckBack.d": "The **Back Neck Binding** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "bindingNeckFront.t": "The Front Neck Binding is not shown",
+    "bindingNeckFront.d": "The **Front Neck Binding** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "bindingLeg.t": "The Leg Binding is not shown",
+    "bindingLeg.d": "The **Leg Binding** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long."
+  },
+  "o": {
+    "binding": {
+      "t": "Binding",
+      "d": "Binding determines the size of the binding for the neck and leg openings."
+    },
+    "ease": {
+      "t": "Ease",
+      "d": "The ease is a percentage of the waist measurement. Default is 14%"
+    },
+    "hem": {
+      "t": "Hem",
+      "d": "Hem determines the size of the hem on the sleeves."
+    },
+    "sleeveType": {
+      "t": "Sleeve Type",
+      "d": "Otis can be made with short or long sleeves."
+    },
+    "sleeveType.long": {
+      "t": "Long Sleeve",
+      "d": "Long sleeves, to the wrist."
+    },
+    "sleeveType.short": {
+      "t": "Short Sleeve",
+      "d": "Short sleeves, to the biceps."
+    },
+    "snapPlacket": {
+      "t": "Snap Placket",
+      "d": "This option controls the depth of the placket that holds the snaps. "
+    }
+  }
+}

@@ -64,7 +64,6 @@ model User {
   ehash         String    @unique
   email         String
   ihash         String
-  img           String?
   initial       String
   imperial      Boolean   @default(false)
   jwtCalls      Int       @default(0)
@@ -94,17 +93,13 @@ model Pattern {
   img       String?
   name      String   @default("")
   notes     String
-  set       Set?  @relation(fields: [setId], references: [id])
-  setId     Int?
-  cset      CuratedSet?  @relation(fields: [csetId], references: [id])
-  csetId    Int?
   public    Boolean  @default(false)
   settings  String
   user      User     @relation(fields: [userId], references: [id])
   userId    Int
   updatedAt DateTime @updatedAt
 
-  @@index([userId, setId])
+  @@index([userId, design])
 }
 
 model Set {
@@ -117,7 +112,6 @@ model Set {
   user      User      @relation(fields: [userId], references: [id])
   userId    Int
   measies   String    @default("{}")
-  patterns  Pattern[]
   public    Boolean   @default(false)
   updatedAt DateTime @updatedAt
 
@@ -127,7 +121,8 @@ model Set {
 model CuratedSet {
   id        Int       @id @default(autoincrement())
   createdAt DateTime  @default(now())
-  img       String?
+  height    Int       @default(1)
+  info      String    @default("")
   nameDe    String    @default("")
   nameEn    String    @default("")
   nameEs    String    @default("")
@@ -140,14 +135,8 @@ model CuratedSet {
   notesFr   String    @default("")
   notesNl   String    @default("")
   notesUk   String    @default("")
-  tagsDe    String    @default("{}")
-  tagsEn    String    @default("{}")
-  tagsEs    String    @default("{}")
-  tagsFr    String    @default("{}")
-  tagsNl    String    @default("{}")
-  tagsUk    String    @default("{}")
-  measies   String    @default("{}")
-  patterns  Pattern[]
+  tags      String    @default("{}")
+  measies   String    @default("[]")
   updatedAt DateTime  @updatedAt
   published Boolean   @default(false)
 }
@@ -157,6 +146,7 @@ model OptionPack {
   createdAt DateTime  @default(now())
   design    String    @default("")
   img       String?
+  info      String    @default("")
   nameDe    String    @default("")
   nameEn    String    @default("")
   nameEs    String    @default("")
@@ -169,12 +159,7 @@ model OptionPack {
   notesFr   String    @default("")
   notesNl   String    @default("")
   notesUk   String    @default("")
-  tagsDe    String    @default("{}")
-  tagsEn    String    @default("{}")
-  tagsEs    String    @default("{}")
-  tagsFr    String    @default("{}")
-  tagsNl    String    @default("{}")
-  tagsUk    String    @default("{}")
+  tags      String    @default("[]")
   options   String    @default("{}")
   updatedAt DateTime @updatedAt
 }

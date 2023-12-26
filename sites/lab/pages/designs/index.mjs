@@ -22,9 +22,13 @@ const DesignsPage = ({ page }) => {
 
   return (
     <PageWrapper {...page} layout={BareLayout}>
-      <div className="py-4 m-auto">
+      <div className="px-4 m-auto">
         <h1 className="text-center">FreeSewing {t('account:designs')}</h1>
-        <DesignPicker hrefBuilder={(design) => `/designs/${design}`} />
+        <DesignPicker
+          hrefBuilder={(design) => `/designs/${design}`}
+          linkTo="docs"
+          altLinkTo="new"
+        />
       </div>
     </PageWrapper>
   )

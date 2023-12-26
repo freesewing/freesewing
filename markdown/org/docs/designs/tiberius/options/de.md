@@ -2,4 +2,4 @@
 title: "Tiberius Tunica: Gestaltungsmöglichkeiten"
 ---
 
-<PatternOptions pattern='tiberius' />
+<DesignOptions design='tiberius' />

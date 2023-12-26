@@ -11,8 +11,8 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { BackToAccountButton, Icons, welcomeSteps } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { ListInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 import { ControlScore } from 'shared/components/control/score.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = ['account', 'status']
 
@@ -58,7 +58,7 @@ export const ControlSettings = ({ welcome = false, noBack = false }) => {
   const nextHref = welcome
     ? welcomeSteps[selection].length > 1
       ? '/welcome/' + welcomeSteps[selection][1]
-      : '/docs/guide'
+      : '/docs/about/guide'
     : false
 
   return (
@@ -78,7 +78,7 @@ export const ControlSettings = ({ welcome = false, noBack = false }) => {
         }))}
         current={selection}
         update={update}
-        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/control`} />}
+        docs={<DynamicMdx language={i18n.language} slug="docs/about/site/account/control" />}
       />
       {welcome ? (
         <>

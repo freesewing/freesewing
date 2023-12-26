@@ -5,11 +5,11 @@ title: "Sandiger Kreisrock: Was du brauchst"
 Um Sandy herzustellen, brauchst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
-- Etwa 2 - 6 Meter (2.2 - 6.6 yards) eines geeigneten Hauptstoffes ([siehe Sandy Fabric options](/docs/patterns/sandy/fabric))
+- Etwa 2 - 6 Meter (2.2 - 6.6 yards) eines geeigneten Hauptstoffes ([siehe Sandy Fabric options](/docs/designs/sandy/fabric))
 - Einige Schnittstellen für die Taille
 - (Optional) Verkleidung für den Saum.
 - Eine Art Verschluss für den Bund (falls nicht nahtlos)
-- (Optional) Etwa 2 - 6 Meter (2.2 - 6.6 yards) eines geeigneten Futterstoffes ([siehe Sandy Fabric options](/docs/patterns/sandy/fabric))
+- (Optional) Etwa 2 - 6 Meter (2.2 - 6.6 yards) eines geeigneten Futterstoffes ([siehe Sandy Fabric options](/docs/designs/sandy/fabric))
 - Gummiband (falls erforderlich)
 
 Aufgrund der vielen verschiedenen Arten von Sandy ist es schwierig, genau zu sagen, was du brauchst, also gehen wir einige der Optionen durch.

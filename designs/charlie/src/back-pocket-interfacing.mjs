@@ -22,6 +22,7 @@ function draftCharlieBackPocketInterfacing({
     // Expand is off, do not draw the part but flag this to the user
     store.flag.note({
       msg: `charlie:cutBackPocketInterfacing`,
+      notes: ['flag:saUnused', 'flag:partHiddenByExpand'],
       replace: {
         width: units(w),
         length: units(h),

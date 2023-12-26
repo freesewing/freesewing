@@ -2,4 +2,4 @@
 title: "Плавки від гомілки: Необхідні виміри"
 ---
 
-<PatternMeasurements pattern='shin' />
+<DesignMeasurements design='shin' />

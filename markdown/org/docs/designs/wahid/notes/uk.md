@@ -1,9 +1,9 @@
 ---
-title: "Wahid waistcoat: Designer Notes"
+title: "Жилет з вахіду: Нотатки дизайнера"
 ---
 
-I like waistcoats. I think they are not only pretty to look at, they are also warm, cut down on the amount of shirt ironing you have to do, and have these cute little pockets you can put tiny things in.
+Мені подобаються жилети. Я думаю, що вони не тільки гарно виглядають, вони також теплі, зменшують кількість прасування сорочок, і мають ці милі маленькі кишеньки, в які можна покласти крихітні дрібнички.
 
-So, I designed Wahid so I could make waistcoats for myself.
+Тож я розробив Wahid, щоб робити жилети для себе.
 
 Йост

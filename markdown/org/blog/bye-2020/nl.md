@@ -39,7 +39,7 @@ We breiden onze inspanningen ook uit om patronen aan te bieden die voor alle lic
 ##### We hebben dit jaar meer mensen dan ooit geholpen
 Praktisch gezien heb ik ons boekjaar met een paar weken verlengd, zodat we voortaan gewoon het kalenderjaar volgen. Met nog een paar uur te gaan in dit jaar, zijn de inkomsten van FreeSewing voor 2020 **10.736,82 euro**. Dat maakt 2020 en absoluut topjaar, en het is meer dan alle voorgaande jaren bij elkaar (2015: € 256,65, 2016: € 473,50, 2017: € 673,14, 2018: € 3162,14, 2019: € 4109,38).
 
-Zoals altijd gaan alle inkomsten van FreeSewing -- de volledige 10.736,82 euro -- [naar Artsen zonder Grenzen](/docs/various/pledge/).
+Zoals altijd gaan alle inkomsten van FreeSewing -- de volledige 10.736,82 euro -- [naar Artsen zonder Grenzen](/docs/about/pledge/).
 
 Ik ben echt dankbaar voor jullie voortdurende steun en bijdragen. Ik heb het gevoel dat we op een heel kleine manier wat balsem kunnen aanbrengen op de pijn die soms alomtegenwoordig lijkt in de wereld.
 

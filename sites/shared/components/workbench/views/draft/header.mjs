@@ -1,6 +1,7 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 import { capitalize, shortDate } from 'shared/utils.mjs'
+import { controlLevels } from 'shared/config/freesewing.config.mjs'
 // Hooks
 import { useContext, useMemo } from 'react'
 import { useMobileAction } from 'shared/context/mobile-menubar-context.mjs'
@@ -137,7 +138,7 @@ export const DraftHeader = ({
     <div
       className={`hidden lg:flex sticky top-0 ${
         ui.kiosk ? 'z-50' : 'z-20'
-      }} transition-[top] duration-300 ease-in-out`}
+      }} transition-[top] duration-300 ease-in-out z-10`}
     >
       <div
         className={`hidden lg:flex flex-row flex-wrap gap-4 py-2 w-full bg-neutral text-neutral-content items-center justify-center`}
@@ -145,52 +146,62 @@ export const DraftHeader = ({
         {headerZoomButtons}
         <Spacer />
         <div className="flex flex-row items-center gap-4">
-          <IconButton
-            Icon={SaIcon}
-            dflt={settings.sabool ? false : true}
-            onClick={() => update.toggleSa()}
-            title={t('core-settings:sabool.t')}
-          />
-          <IconButton
-            Icon={PaperlessIcon}
-            dflt={settings.paperless ? false : true}
-            onClick={() => update.settings(['paperless'], !settings.paperless)}
-            title={t('core-settings:paperless.t')}
-          />
-          <IconButton
-            Icon={DetailIcon}
-            dflt={settings.complete}
-            onClick={() =>
-              update.settings(
-                ['complete'],
-                typeof settings.complete === 'undefined' ? 0 : settings.complete ? 0 : 1
-              )
-            }
-            title={t('core-settings:complete.t')}
-          />
-          <IconButton
-            Icon={ExpandIcon}
-            dflt={settings.expand || typeof settings.expand === 'undefined' ? true : false}
-            onClick={() =>
-              update.settings(
-                ['expand'],
-                typeof settings.expand === 'undefined' ? 1 : settings.expand ? 0 : 1
-              )
-            }
-            title={t('core-settings:expand.t')}
-          />
-          <IconButton
-            Icon={
-              settings.units !== 'imperial'
-                ? UnitsIcon
-                : ({ className }) => <UnitsIcon className={`${className} rotate-180 w-6 h-6`} />
-            }
-            dflt={settings.units !== 'imperial'}
-            onClick={() =>
-              update.settings(['units'], settings.units === 'imperial' ? 'metric' : 'imperial')
-            }
-            title={t('core-settings:units.t')}
-          />
+          {control < controlLevels.core.sa ? null : (
+            <IconButton
+              Icon={SaIcon}
+              dflt={settings.sabool ? false : true}
+              onClick={() => update.toggleSa()}
+              title={t('core-settings:sabool.t')}
+            />
+          )}
+          {control < controlLevels.core.paperless ? null : (
+            <IconButton
+              Icon={PaperlessIcon}
+              dflt={settings.paperless ? false : true}
+              onClick={() => update.settings(['paperless'], !settings.paperless)}
+              title={t('core-settings:paperless.t')}
+            />
+          )}
+          {control < controlLevels.core.complete ? null : (
+            <IconButton
+              Icon={DetailIcon}
+              dflt={settings.complete}
+              onClick={() =>
+                update.settings(
+                  ['complete'],
+                  typeof settings.complete === 'undefined' ? 0 : settings.complete ? 0 : 1
+                )
+              }
+              title={t('core-settings:complete.t')}
+            />
+          )}
+          {control < controlLevels.core.expand ? null : (
+            <IconButton
+              Icon={ExpandIcon}
+              dflt={settings.expand || typeof settings.expand === 'undefined' ? true : false}
+              onClick={() =>
+                update.settings(
+                  ['expand'],
+                  typeof settings.expand === 'undefined' ? 1 : settings.expand ? 0 : 1
+                )
+              }
+              title={t('core-settings:expand.t')}
+            />
+          )}
+          {control < controlLevels.core.units ? null : (
+            <IconButton
+              Icon={
+                settings.units !== 'imperial'
+                  ? UnitsIcon
+                  : ({ className }) => <UnitsIcon className={`${className} rotate-180 w-6 h-6`} />
+              }
+              dflt={settings.units !== 'imperial'}
+              onClick={() =>
+                update.settings(['units'], settings.units === 'imperial' ? 'metric' : 'imperial')
+              }
+              title={t('core-settings:units.t')}
+            />
+          )}
         </div>
         <Spacer />
         <div
@@ -252,7 +263,7 @@ export const DraftHeader = ({
         </div>
         <Spacer />
         <div className="flex flex-row items-center gap-4">
-          {saveAs && saveAs.pattern ? (
+          {saveAs.pattern ? (
             <button
               onClick={savePattern}
               className={`tooltip tooltip-primary tooltip-bottom flex flex-row items-center disabled:opacity-50`}

@@ -14,9 +14,9 @@ import { useRouter } from 'next/router'
 import { BackToAccountButton, DisplayRow, NumberBullet } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { LeftIcon, PlusIcon, CopyIcon, RightIcon, TrashIcon } from 'shared/components/icons.mjs'
-import { PageLink, Link } from 'shared/components/link.mjs'
+import { Link, linkClasses } from 'shared/components/link.mjs'
 import { StringInput, ListInput, FormControl } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = ['account', 'status']
 
@@ -83,7 +83,7 @@ const CopyInput = ({ text }) => {
   )
 }
 
-export const Apikey = ({ apikey }) => {
+export const Apikey = ({ apikey, setId }) => {
   const { t } = useTranslation(ns)
   const router = useRouter()
   const { locale } = router
@@ -97,7 +97,7 @@ export const Apikey = ({ apikey }) => {
       <div className="flex flex-row flex-wrap md:gap-2 md:items-center md:justify-between mt-8">
         <button
           className="w-full md:w-auto btn btn-secondary pr-6 flex flex-row items-center gap-2"
-          onClick={() => router.push('/account/apikeys')}
+          onClick={() => setId(null)}
         >
           <LeftIcon />
           {t('apikeys')}
@@ -149,10 +149,11 @@ const NewKey = ({ account, setGenerate, backend }) => {
   const [apikey, setApikey] = useState(false)
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const { t, i18n } = useTranslation(ns)
-  // FIXME: implement a solution for loading docs dynamically the is simple and work as expected
   const docs = {}
   for (const option of ['name', 'expiry', 'level']) {
-    docs[option] = <DynamicOrgDocs language={i18n.language} path={`site/apikeys/${option}`} />
+    docs[option] = (
+      <DynamicMdx language={i18n.language} slug={`docs/about/site/apikeys/${option}`} />
+    )
   }
 
   const levels = account.role === 'admin' ? [0, 1, 2, 3, 4, 5, 6, 7, 8] : [0, 1, 2, 3, 4]
@@ -255,7 +256,7 @@ export const NewApikey = () => {
 }
 
 // Component for the account/apikeys page
-export const Apikeys = () => {
+export const Apikeys = ({ setId }) => {
   const router = useRouter()
   const { locale } = router
 
@@ -368,7 +369,9 @@ export const Apikeys = () => {
                 />
               </td>
               <td className="text-base font-medium">
-                <PageLink href={`/account/apikeys/${apikey.id}`} txt={apikey.name} />
+                <button className={linkClasses} onClick={() => setId(apikey.id)}>
+                  {apikey.name}
+                </button>
               </td>
               <td className="text-base font-medium">
                 {apikey.level}

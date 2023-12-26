@@ -2,4 +2,4 @@
 title: "Gezichtsmasker Florence: Vereiste afmetingen"
 ---
 
-<PatternMeasurements pattern='florence' />
+<DesignMeasurements design='florence' />

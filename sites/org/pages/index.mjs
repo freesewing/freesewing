@@ -8,7 +8,6 @@ import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useEffect, useState } from 'react'
 // Components
-import Head from 'next/head'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { ForceAccountCheck } from 'shared/components/account/force-account-check.mjs'
@@ -21,12 +20,14 @@ import {
   HelpIcon,
   ChatIcon,
   NewsletterIcon,
+  FreeSewingIcon,
 } from 'shared/components/icons.mjs'
 import { HowDoesItWorkAnimation } from 'shared/components/animations/how-does-it-work.mjs'
 import { SignUp, ns as susiNs } from 'shared/components/susi/sign-up.mjs'
 import { PleaseSubscribe, ns as subNs } from 'shared/components/patrons/please-subscribe.mjs'
 import { CardLink } from 'shared/components/link.mjs'
 import { ns as nlNs } from 'shared/components/newsletter/index.mjs'
+import { MastodonVerification } from 'shared/components/social/mastodon-verification.mjs'
 
 const ns = nsMerge(pageNs, subNs, susiNs, nlNs, 'homepage')
 
@@ -57,32 +58,41 @@ const HomePage = ({ page }) => {
   }, [account.username])
 
   return (
-    <PageWrapper {...page} layout={BareLayout}>
+    <PageWrapper
+      {...page}
+      layout={BareLayout}
+      title="FreeSewing.org"
+      intro={t('homepage:freePatterns')}
+    >
       <ForceAccountCheck />
-      <Head>
-        <title>FreeSewing.org</title>
-      </Head>
+      <div className="text-center w-full m-auto">
+        <FreeSewingIcon className="w-36 h-36 mt-0 lg:mt-8 lg:w-56 lg:h-=56 mt-4 m-auto pr-6" />
+        <h1 className="font-bold -mt-8 lg:-mt-4" style={{ letterSpacing: '-0.1rem' }}>
+          FreeSewing
+        </h1>
+        <h4 className="-mt-8 text-sm lg:text-2xl">{t('homepage:freePatterns')}</h4>
+      </div>
 
       <div className="max-w-7xl m-auto px-0 -mt-12 mb-24 md:my-24">
-        <div className="text-center mt-20 md:mt-20">
-          <HowDoesItWorkAnimation t={t} />
-        </div>
-
         <div className="flex flex-col gap-8 md:grid md:grid-cols-2 md:gap-4 mt-12 md:mt-20 md:px-4">
           <Card
-            title={t('whatIsFreeSewing')}
+            title={t('homepage:whatIsFreeSewing')}
             icon={<OkIcon className="w-12 h-12 text-success" stroke={4} />}
           >
             <p className="font-medium text-lg">{t('homepage:what1')}</p>
             <p className="font-medium text-lg">{t('homepage:what3')}</p>
           </Card>
           <Card
-            title={t('whatIsFreeSewingNot')}
+            title={t('homepage:whatIsFreeSewingNot')}
             icon={<NoIcon className="w-12 h-12 text-error" stroke={3} />}
           >
             <p className="font-medium text-lg">{t('homepage:whatNot1')}</p>
             <p className="font-medium text-lg">{t('homepage:whatNot2')}</p>
           </Card>
+        </div>
+
+        <div className="text-center mt-20 md:mt-20">
+          <HowDoesItWorkAnimation t={t} />
         </div>
 
         {!user && (
@@ -137,13 +147,13 @@ const HomePage = ({ page }) => {
           text="Get inspiration from the FreeSewing community, and see how others have applied their creativity to our designs."
         />
         <CardLink
-          href="/docs/guide"
+          href="/docs/about/guide"
           title="Getting Started"
           icon={<DocsIcon className="w-10 h-10 shrink-0" />}
           text="FreeSewing.org is unlike any sewing pattern website you know. Read this short guide to get the most our of our platform."
         />
         <CardLink
-          href="/docs/faq"
+          href="/docs/about/faq"
           title="Frequently Asked Questions"
           icon={<HelpIcon className="w-10 h-10 shrink-0" />}
           text="Some of the questions that come up often when people discover our platform are answered here."
@@ -156,18 +166,19 @@ const HomePage = ({ page }) => {
 
       <div className="flex flex-col md:grid md:grid-cols-2 gap-4 max-w-7xl m-auto mb-24 px-4">
         <CardLink
-          href="/support"
+          href="/newsletter"
           title={`FreeSewing ${t('newsletter:newsletter')}`}
           icon={<NewsletterIcon className="w-10 h-10 shrink-0" />}
           text={t('newsletter:subscribePitch')}
         />
         <CardLink
-          href="/newsletter"
+          href="/support"
           title="Need Help?"
           icon={<ChatIcon className="w-10 h-10 shrink-0" />}
           text="While we are all volunteers, we have a good track record of helping people. So don't be shy to reach out."
         />
       </div>
+      <MastodonVerification />
     </PageWrapper>
   )
 }

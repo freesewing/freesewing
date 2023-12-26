@@ -6,4 +6,4 @@ title: "Bob de Slab: Vereiste afmetingen"
 Bob heeft geen metingen nodig
 </Note>
 
-<PatternMeasurements pattern='bob' />
+<DesignMeasurements design='bob' />

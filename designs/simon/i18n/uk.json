@@ -155,12 +155,12 @@
       "t": "Round back",
       "d": "To fit a round(er) back, this adds length to the center back (at the yoke) that tapers of towards the sides."
     },
-    "seperateButtonholePlacket": {
-      "t": "Seperate buttonhole placket",
+    "separateButtonholePlacket": {
+      "t": "Separate buttonhole placket",
       "d": "Draft a separate buttonhole placket."
     },
-    "seperateButtonPlacket": {
-      "t": "Seperate button placket",
+    "separateButtonPlacket": {
+      "t": "Separate button placket",
       "d": "Draft a separate button placket"
     },
     "sleevePlacketLength": {

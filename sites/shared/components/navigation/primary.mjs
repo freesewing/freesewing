@@ -4,22 +4,20 @@ import { useContext } from 'react'
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
 import {
-  CommunityIcon,
+  CsetIcon,
   DesignIcon,
   DocsIcon,
   RssIcon,
   ShowcaseIcon,
   UserIcon,
-  MeasieIcon,
-  PatternIcon,
   CodeIcon,
-  I18nIcon,
-  WrenchIcon,
-  FreeSewingIcon,
-  HeartIcon,
   BulletIcon,
   PlusIcon,
   GitHubIcon,
+  RocketIcon,
+  TutorialIcon,
+  YouTubeIcon,
+  HeartIcon,
 } from 'shared/components/icons.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
 
@@ -28,13 +26,11 @@ export const ns = ['sections']
 // List of icons matched to top-level slug
 export const icons = {
   // FreeSewing.dev
-  api: (className = '') => <DocsIcon className={className} />,
-  design: (className = '') => <DesignIcon className={className} />,
-  contribute: (className = '') => <CodeIcon className={className} />,
-  i18n: (className = '') => <I18nIcon className={className} />,
-  infra: (className = '') => <WrenchIcon className={className} stroke={1.5} />,
-  about: (className = '') => <FreeSewingIcon className={className} stroke={1.5} />,
-  support: (className = '') => <HeartIcon className={className} stroke={1.5} fill />,
+  guides: (className = '') => <RocketIcon className={className} />,
+  howtos: (className = '') => <DocsIcon className={className} />,
+  reference: (className = '') => <CodeIcon className={className} />,
+  tutorials: (className = '') => <TutorialIcon className={className} />,
+  training: (className = '') => <YouTubeIcon className={className} fill stroke={0} />,
 
   // FreeSewing.org
   account: (className = '') => <UserIcon className={className} />,
@@ -42,10 +38,9 @@ export const icons = {
   designs: (className = '') => <DesignIcon className={className} stroke={3} />,
   docs: (className = '') => <DocsIcon className={className} />,
   showcase: (className = '') => <ShowcaseIcon className={className} />,
-  community: (className = '') => <CommunityIcon className={className} />,
-  sets: (className = '') => <MeasieIcon className={className} />,
-  patterns: (className = '') => <PatternIcon className={className} />,
   new: (className = '') => <PlusIcon className={className} />,
+  support: (className = '') => <HeartIcon className={className} />,
+  csets: (className = '') => <CsetIcon className={className} />,
 
   // Lab
   code: (className = '') => <GitHubIcon className={className} />,

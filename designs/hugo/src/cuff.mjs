@@ -21,11 +21,13 @@ function hugoCuff({
     store.flag.preset('expandIsOn')
   } else {
     // Expand is off, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
     store.flag.note({
       msg: `hugo:cutCuff`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
       replace: {
-        w: units(width + 2 * sa),
-        l: units(length + 2 * sa),
+        w: units(width + extraSa),
+        l: units(length + extraSa),
       },
       suggest: {
         text: 'flag:show',

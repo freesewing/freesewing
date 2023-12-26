@@ -2,7 +2,7 @@
 import { nsMerge } from 'shared/utils.mjs'
 import { MeasieInput, ns as inputNs } from 'shared/components/inputs.mjs'
 import { useTranslation } from 'next-i18next'
-import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = nsMerge('workbench', inputNs)
 
@@ -22,8 +22,10 @@ export const MeasiesEditor = ({ Design, settings, update }) => {
           imperial={settings.units === 'umperial' ? true : false}
           original={settings.measurements?.[m]}
           update={(m, newVal) => onUpdate(m, newVal)}
-          docs={<DynamicOrgDocs language={i18n.language} path={`measurements/${m}`} />}
           id={`edit-${m}`}
+          docs={
+            <DynamicMdx language={i18n.language} slug={`docs/measurements/${m.toLowerCase()}`} />
+          }
         />
       ))}
     </div>

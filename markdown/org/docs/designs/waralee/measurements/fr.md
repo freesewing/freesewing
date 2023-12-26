@@ -2,4 +2,4 @@
 title: "Pantalon enveloppant Waralee : Mesures requises"
 ---
 
-<PatternMeasurements pattern='waralee' />
+<DesignMeasurements design='waralee' />

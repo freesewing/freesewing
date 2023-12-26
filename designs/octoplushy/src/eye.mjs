@@ -4,12 +4,8 @@ function octoplushyEye(
   partNumber,
   { options, Point, Path, points, paths, Snippet, snippets, sa, macro, expand, units, store, part }
 ) {
-  if (options.type == 'octoplushy') {
-    return part
-  }
-  if (partNumber > (options.type == 'squid' ? 1 : 2)) {
-    return part
-  }
+  if (options.type == 'octoplushy') return part
+  if (partNumber > (options.type == 'squid' ? 1 : 2)) return part.hide()
 
   const c = 0.55191502449351
 
@@ -25,14 +21,16 @@ function octoplushyEye(
     store.flag.preset('expandIsOn')
   } else {
     // Expand is off, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
     const message =
       (options.type == 'squid' ? `squid` : 'octopus') +
       (partNumber == 2 ? 'Eyebrow' : partNumber == 1 ? 'Pupil' : 'Eye')
     store.flag.note({
       msg: message,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
       replace: {
-        width: units(eyeCirc + 2 * sa),
-        length: units(eyeBrowWidth * 2 + 2 * sa),
+        width: units(eyeCirc + extraSa),
+        length: units(eyeBrowWidth * 2 + extraSa),
       },
       suggest: {
         text: 'flag:show',
@@ -98,8 +96,8 @@ function octoplushyEye(
       .shiftFractionTowards(points.br, 0.5)
       .shiftFractionTowards(points.bl, 0.3)
   }
-  points.gridAnchor = points.logo.clone()
 
+  points.gridAnchor = points.logo.clone()
   snippets.logo = new Snippet('logo', points.logo).attr('data-scale', logoScale)
 
   macro('title', {

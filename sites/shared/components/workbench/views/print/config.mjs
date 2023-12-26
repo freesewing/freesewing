@@ -1,5 +1,4 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
-import { measurementAsMm } from 'shared/utils.mjs'
 import {
   PageSizeIcon,
   PageOrientationIcon,
@@ -11,19 +10,17 @@ import { isProduction } from 'shared/config/freesewing.config.mjs'
 
 export const printSettingsPath = ['print', 'pages']
 
-export const defaultPrintSettings = (units, inMm = true) => {
-  const margin = units === 'imperial' ? 0.5 : 1
-  return {
-    size: units === 'imperial' ? 'letter' : 'a4',
-    orientation: 'portrait',
-    margin: inMm ? measurementAsMm(margin, units) : margin,
-    coverPage: true,
-    cutlist: true,
-  }
-}
+export const defaultPrintSettings = (units) => ({
+  size: units === 'imperial' ? 'letter' : 'a4',
+  orientation: 'portrait',
+  margin: units === 'imperial' ? 12.7 : 10,
+  coverPage: true,
+  cutlist: true,
+})
+
 const sizes = ['a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'legal', 'tabloid']
 export const loadPrintConfig = (units) => {
-  const defaults = defaultPrintSettings(units, false)
+  const defaults = defaultPrintSettings(units)
   const config = {
     size: {
       control: 2,

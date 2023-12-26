@@ -2,4 +2,4 @@
 title: "Trayvon das: Ontwerpopties"
 ---
 
-<PatternOptions pattern='trayvon' />
+<DesignOptions design='trayvon' />

@@ -1,14 +1,14 @@
 ---
-title: "Bella body block: Designer Notes"
+title: "Bloque de cuerpo Bella: Notas del diseñador"
 ---
 
-This block was a collaboration between myself and an industry insider who prefers to remain anonymous because of her profession.
+Este bloque fue una colaboración entre una persona del sector que prefiere permanecer en el anonimato debido a su profesión y yo.
 
-It is the parametric version of a base block for womenswear that is used in the industry in Italy to design womenswear. However, while the block will adapt to your measurments, the original block that it is based on is in really not suitable for a very wide sizing range.
+Es la versión paramétrica de un bloque base para ropa de mujer que se utiliza en la industria en Italia para diseñar ropa de mujer. Sin embargo, aunque el bloque se adaptará a tus medidas, el bloque original en el que se basa no es realmente adecuado para una gama de tallas muy amplia.
 
-So your milage may very here, especially when you are further from the kind of skinny ladies Italians tend to design for.
+Así que tu kilometraje puede muy aquí, especialmente cuando estás más lejos de la clase de señoras delgadas para las que tienden a diseñar los italianos.
 
-See also [this FAQ on womenswear blocks for more background info](/docs/faq/womenswear-blocks).
+See also [this FAQ on womenswear blocks for more background info](/docs/about/faq/womenswear-blocks).
 
 joost
 

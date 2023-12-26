@@ -1,5 +1,6 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 dump
+production.sqlite
 
 # .env
 .env
@@ -24,8 +25,8 @@ plugins/*/yarn.lock
 # NPM lock files for sites (we use yarn)
 sites/*/package-lock.json
 
-# Sanity cache
-sites/sanity/.sanity
+# Nx cache
+.nx/cache
 
 # Sites prebuild artifacts
 sites/*/public/locales/*/*.json
@@ -34,6 +35,7 @@ sites/*/public/feeds/*
 packages/new-design/shared/public/locales/*/*.json
 packages/new-design/shared/.gitignore
 packages/new-design/lib/banner.mjs
+sites/*/public/img/og/*
 
 # Lab auto-generated content
 sites/lab/lib

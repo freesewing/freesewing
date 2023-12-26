@@ -16,11 +16,13 @@ export function draftStraightWaistband({
   if (expand) store.flag.preset('expandIsOn')
   else {
     // Expand is on, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
     store.flag.note({
       msg: `sandy:cutWaistband`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
       replace: {
-        w: units(absoluteOptions.waistbandWidth * 2 + 2 * sa),
-        l: units(store.get('topCircumference') + store.get('waistbandOverlap') + 2 * sa),
+        w: units(absoluteOptions.waistbandWidth * 2 + extraSa),
+        l: units(store.get('topCircumference') + store.get('waistbandOverlap') + extraSa),
       },
       suggest: {
         text: 'flag:show',

@@ -2,4 +2,4 @@
 title: "Holmes Pirschhut: Design Optionen"
 ---
 
-<PatternOptions pattern='holmes' />
+<DesignOptions design='holmes' />

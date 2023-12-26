@@ -31,6 +31,28 @@ export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'violet
 export const rating = ['green-500', 'yellow-400', 'amber-500', 'orange-500', 'red-500']
 
 /*
+ * Graph is an array of color names from the tailwind colors that
+ * will be used when we want to generate a pretty graph.
+ */
+export const graph = [
+  'red-500',
+  'amber-500',
+  'lime-500',
+  'emerald-500',
+  'cyan-500',
+  'blue-500',
+  'violet-500',
+  'fuchsia-500',
+  'rose-500',
+  'purple-500',
+  'indigo-500',
+  'sky-500',
+  'teal-500',
+  'yellow-500',
+  'orange-500',
+]
+
+/*
  * This export is the Tailwind theme
  */
 export const theme = {
@@ -43,8 +65,7 @@ export const theme = {
    *
    * You can get more font stacks here: https://modernfontstacks.com/
    */
-  fontFamily:
-    '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+  fontFamily: 'system-ui, sans-serif',
 
   /* COLORS
    *
@@ -242,7 +263,7 @@ export const theme = {
   '--pattern-text-4xl': '3rem',
 
   // Pattern overal scale for strokes and text sizes
-  '--pattern-scale': '1',
+  // '--pattern-scale': '1',
   // Pattern xs stroke width
   '--pattern-stroke-xs': '0.2px',
   // Pattern sm stroke width
@@ -266,7 +287,6 @@ export const theme = {
   // Pattern 7xl stroke width
   '--pattern-stroke-7xl': '20px',
 
-  // Pattern sampling styles
   '--pattern-sample-1': colors.red['500'],
   '--pattern-sample-2': colors.orange['500'],
   '--pattern-sample-3': colors.yellow['500'],

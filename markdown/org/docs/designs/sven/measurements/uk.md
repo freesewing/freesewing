@@ -2,4 +2,4 @@
 title: "Світшот Sven: Необхідні виміри"
 ---
 
-<PatternMeasurements pattern='sven' />
+<DesignMeasurements design='sven' />

@@ -8,6 +8,7 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 import { ns as setsNs } from 'shared/components/account/sets.mjs'
 import { DesignPicker, ns as designNs } from 'shared/components/designs/design-picker.mjs'
+import { BareLayout } from 'site/components/layouts/bare.mjs'
 
 // Translation namespaces used on this page
 const ns = nsMerge(designNs, setsNs, authNs, pageNs)
@@ -22,8 +23,11 @@ const NewSetPage = ({ page }) => {
   const { t } = useTranslation(ns)
 
   return (
-    <PageWrapper {...page} title={t('newPattern')}>
-      <DesignPicker />
+    <PageWrapper {...page} layout={BareLayout}>
+      <div className="px-4 m-auto">
+        <h1 className="text-center">{t('newPattern')}</h1>
+        <DesignPicker />
+      </div>
     </PageWrapper>
   )
 }

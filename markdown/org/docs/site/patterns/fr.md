@@ -1,5 +1,0 @@
----
-title: Patrons
----
-
-FIXME

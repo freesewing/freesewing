@@ -28,15 +28,17 @@ function draftCharlieWaistband({
     store.flag.preset('expandIsOn')
   } else {
     // Expand is off, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
     store.flag.note({
       msg: `charlie:cutWaistband`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
       replace: {
-        width: units(absoluteOptions.waistbandWidth + 2 * sa),
+        width: units(2 * absoluteOptions.waistbandWidth + extraSa),
         length: units(
           2 * store.get('waistbandBack') +
             2 * store.get('waistbandFront') +
             store.get('waistbandFly') +
-            2 * sa
+            extraSa
         ),
       },
       suggest: {

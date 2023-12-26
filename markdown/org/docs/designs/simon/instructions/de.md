@@ -465,7 +465,7 @@ Jetzt musst du den Ärmel an das Armloch anbringen. Um dies zu tun, achten Sie a
 
 Die Standard-Ärmel-Leichtigkeit für dieses Muster ist 0,5cm. Wenn Sie die Ärmel bequem haben, müssen Sie diese zusätzliche Länge gleichmäßig auf die Noten verteilen, wie sie gezeigt werden.
 
-> Wenn Sie sich nicht sicher sind, welche Leichtigkeit die Ärmel ist, werfen Sie einen Blick in die [-Dokumentation für die Option „Sleevecap ease“-Muster](/docs/patterns/simon/options/sleevecapease).
+> Wenn Sie sich nicht sicher sind, welche Leichtigkeit die Ärmel ist, werfen Sie einen Blick in die [-Dokumentation für die Option „Sleevecap ease“-Muster](/docs/designs/simon/options/sleevecapease).
 
 #### Ärmel in Armloch nähen
 

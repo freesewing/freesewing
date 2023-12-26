@@ -23,4 +23,4 @@ The [pattern notation guide][1] explains all the different markings and lines on
 
 </Tip>
 
-[1]: /docs/various/notation/
+[1]: /docs/about/notation/

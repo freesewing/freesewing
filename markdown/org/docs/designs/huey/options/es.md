@@ -2,4 +2,4 @@
 title: "Sudadera con capucha Huey: Opciones de diseño"
 ---
 
-<PatternOptions pattern='huey' />
+<DesignOptions design='huey' />

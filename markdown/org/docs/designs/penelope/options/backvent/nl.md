@@ -2,8 +2,8 @@
 title: "Rugsplit"
 ---
 
-Dit versterkt een vent aan de achterkant van de rok.
+Dit voegt een opening toe aan de achterkant van de rok.
 
-## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](penelope_backvent_sample.svg "Effect van deze optie op het patroon")
+
+

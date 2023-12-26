@@ -8,18 +8,16 @@ import { Tab, Tabs } from '../tabs.mjs'
 import { TabbedExample as Example } from './tabbed-example.mjs'
 import { HttpMethod, HttpStatusCode } from './http.mjs'
 import { ControlTip } from '../control/tip.mjs'
-import { Legend } from './legend.mjs'
 import { DocsTitle, DocsLink } from './docs-helpers.mjs'
-import { V3Wip } from '../v3-wip.mjs'
+import { Legend } from './legend.mjs'
+// Extra components
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+import { collection } from 'site/hooks/use-design.mjs'
+import { DesignMeasurements } from './design-measurements.mjs'
+import { DesignOptions } from './design-options.mjs'
+import { MeasieImage } from 'shared/components/measurements/image.mjs'
 
-const WipWithReadMore = (props) => (
-  <>
-    <V3Wip {...props} />
-    <ReadMore />
-  </>
-)
-
-export const components = (site = 'org') => {
+export const components = (site = 'org', slug = []) => {
   const base = {
     Comment: (props) => <Popout {...props} comment />,
     Fixme: (props) => <Popout {...props} fixme />,
@@ -59,13 +57,47 @@ export const components = (site = 'org') => {
       StatusCode: HttpStatusCode,
     }
 
+  const specific = {}
+  if (typeof slug === 'string') slug = slug.split('/')
+  if (
+    site === 'org' &&
+    slug &&
+    slug.length > 1 &&
+    slug[0] === 'designs' &&
+    collection.includes(slug[1])
+  ) {
+    if (slug.length === 2) specific.DesignInfo = DesignInfo
+    if (slug.length === 3 && slug[2] === 'measurements')
+      specific.DesignMeasurements = DesignMeasurements
+    if (slug.length === 3 && slug[2] === 'options') specific.DesignOptions = DesignOptions
+  }
+
+  if (site === 'org' && Array.isArray(slug)) {
+    const url = slug.join('/')
+    if (url.indexOf('about/notation') !== -1 || url.indexOf('sewing/on-the-fold') !== -1)
+      specific.Legend = Legend
+  }
+
+  // MeasieImage
+  if (site === 'org' && slug) {
+    // Regular MDX - MeasieImage
+    if (slug.length === 2 && slug[0] === 'measurements') {
+      specific.MeasieImage = function MdxMeasieImage() {
+        return <MeasieImage m={slug[1]} />
+      }
+    }
+
+    // Dynamic MDX - MeasieImage
+    if (slug.length === 3 && slug[0] === 'docs' && slug[1] === 'measurements') {
+      specific.MeasieImage = function MdxMeasieImage() {
+        return <MeasieImage m={slug[2]} />
+      }
+    }
+  }
+
   return {
     ...base,
     ...extra,
-    PatternDocs: WipWithReadMore,
-    PatternOptions: WipWithReadMore,
-    PatternMeasurements: WipWithReadMore,
-    Gauge: V3Wip,
-    Legend,
+    ...specific,
   }
 }

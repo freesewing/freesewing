@@ -4,7 +4,7 @@ title: Pattern
 
 The `Pattern` object in FreeSewing's core library holds all data and logic of a pattern.
 It is the parametric blueprint that when instantiated with a user's settings
-can draft a made-to-measure sewing pattern.
+can draft a bespoke sewing pattern.
 
 ## Creating a Pattern
 
@@ -76,6 +76,7 @@ It just so happens that in most cases, there will be only one settings object in
 - `Pattern.parts`: Holds the parts used in the pattern
 - `Pattern.plugins`: Holds the plugins used in the pattern
 - `Pattern.settings`: Holds the settings used for the pattern
+- `Pattern.stacks`: Holds the stacks used in the pattern
 - `Pattern.store`: Holds the pattern-wide Store
 - `Pattern.setStores`: Holds an array of stores, one for each set of settings.
 

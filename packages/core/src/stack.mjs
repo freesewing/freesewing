@@ -57,18 +57,21 @@ Stack.prototype.home = function () {
   for (const part of this.getPartList()) {
     part.__boundary()
 
-    const { tl, br } = utils.getTransformedBounds(part, part.attributes.getAsArray('transform'))
+    const { topLeft, bottomRight } = utils.getTransformedBounds(
+      part,
+      part.attributes.getAsArray('transform')
+    )
 
-    if (!tl) {
+    if (!topLeft) {
       continue
     }
 
     // get the top left, the minimum x and y values of any corner
-    this.topLeft.x = Math.min(this.topLeft.x, tl.x)
-    this.topLeft.y = Math.min(this.topLeft.y, tl.y)
+    this.topLeft.x = Math.min(this.topLeft.x, topLeft.x)
+    this.topLeft.y = Math.min(this.topLeft.y, topLeft.y)
     // get the bottom right, the maximum x and y values of any corner
-    this.bottomRight.x = Math.max(this.bottomRight.x, br.x)
-    this.bottomRight.y = Math.max(this.bottomRight.y, br.y)
+    this.bottomRight.x = Math.max(this.bottomRight.x, bottomRight.x)
+    this.bottomRight.y = Math.max(this.bottomRight.y, bottomRight.y)
   }
 
   // Fix infinity if it's not overwritten
