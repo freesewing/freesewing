@@ -1,8 +1,9 @@
 ---
-title: "Vermindering onderbeen"
+title: Vermindering onderbeen
 ---
 
-Deze instelling past het verschil in lengte aan tussen de bovenste en onderste stof van de poten. Hoe groter het verschil, hoe meer de benen zullen willen krullen.
+Deze instelling past het verschil in lengte aan tussen de bovenste en onderste stof van de poten.
+Hoe groter het verschil, hoe meer de benen zullen willen krullen.
 
 ## Effect van deze optie op het patroon
 
