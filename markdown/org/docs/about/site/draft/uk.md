@@ -1,5 +1,5 @@
 ---
-title: How to generate bespoke sewing patterns
+title: Як створювати лекала для шиття на замовлення
 ---
 
 Generating custom sewing patterns based on your measurements is the flagship feature of our website. We provide an online environment that allows you to customize various aspects of your pattern.
@@ -27,7 +27,7 @@ Generating custom sewing patterns based on your measurements is the flagship fea
 - **Редагування налаштувань вручну**: Дозволяє - як ви вже здогадалися - редагувати налаштування для генерації шаблону вручну. Це розширена функція.
 - **Журнали шаблонів**: Тут показано журнали, що генеруються під час створення шаблону. Це розширена функція.
 - **Інспектор шаблонів**: Дозволяє дизайнеру шаблонів перевіряти різні аспекти шаблону. Це розширена функція.
-- **Documentation**: Provides links to the documentation.
+- **Документація**: Надає посилання на документацію
 
 Не соромтеся ознайомитися з іншими програмами, але ми зосередимося на редакторі візерунків ****.
 
