@@ -2,7 +2,7 @@
 title: "Facilidad de muñeca"
 ---
 
-Afecta a la anchura del extremo de la manga en algunas prendas. No hay efecto para las mangas que terminan en el bíceps o por encima. There is no effect for sleeves ending at the biceps or above.
+Afecta a la anchura del extremo de la manga en algunas prendas. No hay efecto para las mangas que terminan en el bíceps o por encima. No hay efecto para las mangas que terminan en el bíceps o por encima.
 
 > ##### Esta opción permite valores negativos
 > 
