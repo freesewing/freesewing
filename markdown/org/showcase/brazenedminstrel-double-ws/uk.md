@@ -1,16 +1,19 @@
 ---
-maker: "нахабний менестрель"
-caption: "Ніжно-фіолетовий Waralees з аксесуарами для поясу"
-date: "2022-08-02"
+maker: нахабний менестрель
+caption: Ніжно-фіолетовий Waralees з аксесуарами для поясу
+date: 2022-08-02
 intro: "brazenedMinstrel нещодавно створив два чудових дизайни Freesewing: перший - це фіолетові варалі з м'якої тканини, доповнені чорним тканинним поясом, знайденим на вулиці, і кольоровим, придбаним на блошиному ринку."
-title: "Waralees та Wahid від brazenedMinstrel"
+title: Waralees та Wahid від brazenedMinstrel
 designs:
-  - "Waralee"
-  - "вахід"
+  - Waralee
+  - вахід
 ---
 
-![waralees2.jpg](https://posts.freesewing.org/uploads/waralees2_0d168a6b7f.jpg) brazenedMinstrel нещодавно створив два чудових дизайни Freesewing: перший - це фіолетові варалі з м'якої тканини, доповнені чорним тканинним поясом, знайденим на вулиці, і кольоровим, придбаним на блошиному ринку.
+![waralees2.jpg](https://posts.freesewing.org/uploads/waralees2_0d168a6b7f.jpg)
+brazenedMinstrel has made two lovely Freesewing designs recently: the first is this pair of purple Waralees in soft fabric accessorized with a black fabric belt found on the street and a colourful one bought on a flea market.
 
-Друга модель - це ще одна річ W - фантастичний жилет Wahid, який повністю двосторонній! ![wahid1.jpg](https://posts.freesewing.org/uploads/wahid1_f973b8e6c0.jpg)
+Друга модель - це ще одна річ W - фантастичний жилет Wahid, який повністю двосторонній!
+![wahid1.jpg](https://posts.freesewing.org/uploads/wahid1_f973b8e6c0.jpg)
 
-![wahid2.jpg](https://posts.freesewing.org/uploads/wahid2_da16cf4cd1.jpg) На фотографіях ви можете побачити обидві сторони жилета. BrazenedMinstrel скористалися порадами своєї досвідченої бабусі-швачки, яка допомогла їм зробити його повністю двостороннім. Замість підкладки, вони використовували 2 x передню і задню частини і зшивали їх лицьовими сторонами разом, перш ніж вивернути і зробити пройми і нижній шов. З обох боків також є кнопки, щоб завершити все це.
+![wahid2.jpg](https://posts.freesewing.org/uploads/wahid2_da16cf4cd1.jpg)
+You can see both sides of the waistcoat in the pictures. BrazenedMinstrel скористалися порадами своєї досвідченої бабусі-швачки, яка допомогла їм зробити його повністю двостороннім. Замість підкладки, вони використовували 2 x передню і задню частини і зшивали їх лицьовими сторонами разом, перш ніж вивернути і зробити пройми і нижній шов. З обох боків також є кнопки, щоб завершити все це.

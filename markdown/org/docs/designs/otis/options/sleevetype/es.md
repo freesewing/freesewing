@@ -1,5 +1,5 @@
 ---
-title: "Tipo de manguito"
+title: Tipo de manguito
 ---
 
 Otis puede hacerse con mangas cortas o largas.

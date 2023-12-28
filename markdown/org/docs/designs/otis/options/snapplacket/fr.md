@@ -1,5 +1,5 @@
 ---
-title: "Patte de boutonnage"
+title: Patte de boutonnage
 ---
 
 Cette option permet de contrôler la profondeur de la patte de boutonnage qui maintient les boutons-pression.

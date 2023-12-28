@@ -1,5 +1,5 @@
 ---
-title: "Druckknopf"
+title: Snap Placket
 ---
 
 Diese Option bestimmt die Tiefe der Leiste, die die Druckknöpfe hält.

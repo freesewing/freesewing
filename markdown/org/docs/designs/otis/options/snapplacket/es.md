@@ -1,5 +1,5 @@
 ---
-title: "Tapeta a presión"
+title: Snap Placket
 ---
 
 Esta opción controla la profundidad de la tapeta que sujeta los botones a presión.
