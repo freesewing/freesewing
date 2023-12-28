@@ -20,7 +20,7 @@ Je m'attends à ce que ce soit, au moins dans un premier temps, une fonction de 
 
 À défaut d'autre chose, je sais que je le ferai.
 
-La \[documentation de référence de l'API REST vit ici] (https\://freesewing.dev/reference/backend), si tu cherches la spécification de l'OpenAPI, alors va sur https\://backend3.freesewing.org/docs/.
+La [documentation de référence de l'API REST vit ici] (https\://freesewing.dev/reference/backend), si tu cherches la spécification de l'OpenAPI, alors va sur https\://backend3.freesewing.org/docs/.
 
 ## Utilise, n'abuse pas
 

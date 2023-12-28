@@ -8,7 +8,7 @@ Es la versión paramétrica de un bloque base para ropa de mujer que se utiliza 
 
 Así que tu kilometraje puede muy aquí, especialmente cuando estás más lejos de la clase de señoras delgadas para las que tienden a diseñar los italianos.
 
-Consulta también [esta FAQ sobre bloques de ropa de mujer para obtener más información de fondo](/docs/faq/womenswear-blocks).
+See also [this FAQ on womenswear blocks for more background info](/docs/about/faq/womenswear-blocks).
 
 joost
 

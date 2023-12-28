@@ -2,7 +2,7 @@
 title: "Polsgemak"
 ---
 
-Heeft invloed op hoe breed het uiteinde van de mouw is bij sommige kledingstukken. Er is geen effect voor mouwen die eindigen bij de biceps of daarboven. There is no effect for sleeves ending at the biceps or above.
+Heeft invloed op hoe breed het uiteinde van de mouw is bij sommige kledingstukken. Er is geen effect voor mouwen die eindigen bij de biceps of daarboven. Er is geen effect voor mouwen die eindigen bij de biceps of daarboven.
 
 > ##### Deze optie staat negatieve waarden toe
 > 

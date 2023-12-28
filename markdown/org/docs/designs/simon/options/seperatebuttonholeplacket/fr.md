@@ -1,5 +1,5 @@
 ---
-title: "Gorge (Patte de boutonnières) séparée"
+title: Gorge (Patte de boutonnières) séparée
 ---
 
 ![Gorge (Patte de boutonnières) séparée](seperatebuttonholeplacket.svg)

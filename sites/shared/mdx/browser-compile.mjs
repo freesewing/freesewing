@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // MDX compiler
 import { compile } from '@mdx-js/mdx'
 // Remark plugins from the ecosystem

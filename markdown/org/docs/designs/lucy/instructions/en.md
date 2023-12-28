@@ -4,11 +4,11 @@ title: "Lucy tie-on pocket: Sewing Instructions"
 
 <Note>
 
-Lucy can be sewn by hand or by machine as you prefer. When sewing by hand, you can use a running stitch to sew the pocket pieces together and bind with a whipstitch. 
+Lucy can be sewn by hand or by machine as you prefer.
 
 </Note>
 
-## Step 1: Constructing the Pocket
+## Step 1: Constructing the Pocket Bag
 
 - Bind the pocket slit.
 - With _wrong sides together_ stitch the two pocket pieces together around the outside.
@@ -22,9 +22,9 @@ If you prefer you can _french seam_ the outer edges of the pocket bag together.
 
 ## Step 2: Binding the top edge and ties.
 
-There are two methods for binding the top edge. One leaves the side edges of the top binding open so the ties can be threaded through. The second uses the tape for the ties to bind the top edge. Read through both methods carefully and decide which one you wish to use.
+There are two methods for binding the top edge. One is to create a loop and the other is to bind with the ties. Read through both methods carefully and decide which one you wish to use.
 
-### Using binding
+### Create a loop
 
 - Cut a piece of binding the length of the top edge + seam allowance.
 - Fold under the short edges of the binging and stitch in place.

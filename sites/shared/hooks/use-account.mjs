@@ -1,13 +1,5 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
-import createPersistedState from 'use-persisted-state'
-
-/*
- * Set up local storage state for account & token
- */
-const usePersistedAccount = createPersistedState('fs-account')
-const usePersistedAdmin = createPersistedState('fs-admin')
-const usePersistedToken = createPersistedState('fs-token')
-const usePersistedSeenUser = createPersistedState('fs-seen-user')
+import useLocalStorageState from 'use-local-storage-state'
 
 /*
  * Make it possible to always check for account.username and account.control
@@ -19,10 +11,10 @@ const noAccount = { username: false, control: 2 }
  */
 export function useAccount() {
   // (persisted) State (saved to local storage)
-  const [account, setAccount] = usePersistedAccount(noAccount)
-  const [admin, setAdmin] = usePersistedAdmin(noAccount)
-  const [token, setToken] = usePersistedToken(null)
-  const [seenUser, setSeenUser] = usePersistedSeenUser(false)
+  const [account, setAccount] = useLocalStorageState('fs-account', { defaultValue: noAccount })
+  const [admin, setAdmin] = useLocalStorageState('fs-admin', { defaultValue: noAccount })
+  const [token, setToken] = useLocalStorageState('fs-token', { defaultValue: null })
+  const [seenUser, setSeenUser] = useLocalStorageState('fs-seen-user', { defaultValue: false })
 
   // Clear user data. This gets called when signing out
   const signOut = () => {

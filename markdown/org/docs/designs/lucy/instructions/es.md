@@ -4,7 +4,7 @@ title: "Lucy: Instructions"
 
 <Note>
 
-Lucy puede coserse a mano o a máquina, como prefieras. Si coses a mano, puedes utilizar una puntada corrida para coser las piezas del bolsillo y unirlas con un pespunte. 
+Lucy puede coserse a mano o a máquina, como prefieras.
 
 </Note>
 
@@ -22,9 +22,9 @@ Si lo prefieres, puedes _coser a la francesa_ los bordes exteriores de la bolsa.
 
 ## bind the top and thread a tie through the binding
 
-Hay dos métodos para encuadernar el borde superior. Uno deja abiertos los bordes laterales de la encuadernación superior para poder pasar los lazos. El segundo utiliza la cinta para los lazos para atar el borde superior. Lee atentamente ambos métodos y decide cuál quieres utilizar.
+Hay dos métodos para encuadernar el borde superior. One is to create a loop and the other is to bind with the ties. Lee atentamente ambos métodos y decide cuál quieres utilizar.
 
-### Utilizar la encuadernación
+### Create a loop
 
 - Corta un trozo de encuadernación de la longitud del borde superior + margen de costura.
 - Dobla por debajo de los bordes cortos del rizo y cóselos en su sitio.

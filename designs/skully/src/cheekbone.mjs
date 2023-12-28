@@ -4,7 +4,7 @@ export const cheekbone = {
   name: 'skully.cheekbone',
   after: cheek,
   draft: ({ Point, Path, points, paths, sa, complete, store, macro, part }) => {
-    const textAttribute = 'text-xs center text-decoration="line-through"'
+    const textAttribute = "text-xs center text-decoration='line-through'"
     const sizeFactor = store.get('sizeFactor')
 
     points.point0 = new Point(0, 0)
@@ -38,7 +38,7 @@ export const cheekbone = {
       at: points.title,
       scale: 0.15,
       rotation: 325,
-      title: 'cheekbone',
+      title: 'skully:cheekbone',
     })
     // points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     // snippets.logo = new Snippet('logo', points.logo)

@@ -27,7 +27,6 @@ import { Hortensia as hortensia } from '@freesewing/hortensia'
 import { Huey as huey } from '@freesewing/huey'
 import { Hugo as hugo } from '@freesewing/hugo'
 import { Jaeger as jaeger } from '@freesewing/jaeger'
-import { Lily as lily } from '@freesewing/lily'
 import { Lucy as lucy } from '@freesewing/lucy'
 import { Lunetius as lunetius } from '@freesewing/lunetius'
 import { Magde as magde } from '@freesewing/magde'
@@ -56,8 +55,7 @@ import { Walburga as walburga } from '@freesewing/walburga'
 import { Waralee as waralee } from '@freesewing/waralee'
 import { Yuri as yuri } from '@freesewing/yuri'
 import { Otis as otis } from '@freesewing/otis'
-import { Test5 as test5 } from '@freesewing/test5'
-import { Test5b as test5b } from '@freesewing/test5b'
+import { Lumira as lumira } from '@freesewing/lumira'
 
 const designs = {
   aaron,
@@ -113,8 +111,7 @@ const designs = {
   waralee,
   yuri,
   otis,
-  test5,
-  test5b,
+  lumira,
 }
 
 export const useDesign = (design) => (designs[design] ? designs[design] : false)
