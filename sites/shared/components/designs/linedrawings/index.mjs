@@ -11,8 +11,13 @@ import {
 } from 'shared/components/designs/linedrawings/breanna.mjs'
 import { Brian, BrianFront, BrianBack } from 'shared/components/designs/linedrawings/brian.mjs'
 import { Bruce, BruceFront, BruceBack } from 'shared/components/designs/linedrawings/bruce.mjs'
+import { Diana, DianaFront, DianaBack } from 'shared/components/designs/linedrawings/diana.mjs'
+import { Florence, FlorenceFront } from 'shared/components/designs/linedrawings/florence.mjs'
+import { Lucy, LucyFront } from 'shared/components/designs/linedrawings/lucy.mjs'
+import { Noble, NobleFront, NobleBack } from 'shared/components/designs/linedrawings/noble.mjs'
 import { Hortensia, HortensiaFront } from 'shared/components/designs/linedrawings/hortensia.mjs'
 import { Simon, SimonFront, SimonBack } from 'shared/components/designs/linedrawings/simon.mjs'
+import { Uma, UmaFront, UmaBack } from 'shared/components/designs/linedrawings/uma.mjs'
 import { Wahid, WahidFront, WahidBack } from 'shared/components/designs/linedrawings/wahid.mjs'
 
 export const lineDrawingsFront = {
@@ -25,8 +30,13 @@ export const lineDrawingsFront = {
   breanna: BreannaFront,
   brian: BrianFront,
   bruce: BruceFront,
+  diana: DianaFront,
+  florence: FlorenceFront,
+  lucy: LucyFront,
+  noble: NobleFront,
   hortensia: HortensiaFront,
   simon: SimonFront,
+  uma: UmaFront,
   wahid: WahidFront,
 }
 
@@ -38,7 +48,10 @@ export const lineDrawingsBack = {
   breanna: BreannaBack,
   brian: BrianBack,
   bruce: BruceBack,
+  diana: DianaBack,
+  noble: NobleBack,
   simon: SimonBack,
+  uma: UmaBack,
   wahid: WahidBack,
 }
 
@@ -52,7 +65,12 @@ export const lineDrawings = {
   breanna: Breanna,
   brian: Brian,
   bruce: Bruce,
+  diana: Diana,
+  florence: Florence,
+  lucy: Lucy,
+  noble: Noble,
   hortensia: Hortensia,
   simon: Simon,
+  uma: Uma,
   wahid: Wahid,
 }
