@@ -20,7 +20,7 @@ Unten siehst du einen Screenshot des Schnittmuster-Editors von FreeSewing im [Ki
 
 - **Muster-Editor**: Hier kannst du dein Muster anpassen
 - **Mustermessungen**: Hier kannst du auswählen, welcher Messsatz für die Erstellung des Musters verwendet werden soll, oder die Messungen manuell anpassen.
-- **Mustertests**: Ermöglicht es dir, das Muster zu testen (dies ist eine erweiterte Funktion) Dies ist eine erweiterte Funktion.
+- **Mustertests**: Ermöglicht es dir, das Muster zu testen (dies ist eine erweiterte Funktion) Dies ist eine erweiterte Funktion. Dies ist eine erweiterte Funktion.
 - **Drucklayout**: Ermöglicht es dir, die Musterteile manuell anzuordnen, um das Layout für den Druck zu optimieren.
 - **Muster speichern unter...**: Ermöglicht es dir, das Muster in deinem Konto zu speichern
 - **Muster exportieren**: Ermöglicht es dir, das Muster als PDF oder SVG zu exportieren.
