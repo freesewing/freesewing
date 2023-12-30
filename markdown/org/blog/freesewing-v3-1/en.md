@@ -1,6 +1,6 @@
 ---
 author: "joostdecock"
-caption: "This post is mostly about our work on progressive disclosure. Also: Three new patterns!"
+caption: "There will be fewer of these version announcement posts going forward."
 date: "2023-12-30"
 intro: "We've just release FreeSewing v3.1 🎉"
 title: "FreeSewing v3.1 is out with two new designs, and a reminder that we now stream updates"
