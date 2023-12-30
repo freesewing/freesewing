@@ -109,7 +109,7 @@ export const waistband = {
       points.waistbandBackPanel = points.snippetPanelBack.copy()
       points.waistbandBackPanelCP = points.snippetPanelFront.shiftFractionTowards(
         points.waistbandBackPanel,
-        1.3
+        1.4
       )
       points.waistbandBack = points.waistBack
         .shiftOutwards(points.waistbandBack, (waistLowering + waistbandSize) * 0.5)
