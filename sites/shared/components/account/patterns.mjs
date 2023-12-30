@@ -585,7 +585,11 @@ export const Patterns = () => {
         <button className="btn btn-error" onClick={removeSelectedPatterns}>
           <TrashIcon /> {selCount} {t('patterns')}
         </button>
-      ) : null}
+      ) : (
+        <button className="btn" onClick={null}>
+          <TrashIcon /> {selCount} {t('patterns')}
+        </button>
+      )}
       <TableWrapper>
         <table className="table table-auto">
           <thead className="border border-base-300 border-b-2 border-t-0 border-x-0">
