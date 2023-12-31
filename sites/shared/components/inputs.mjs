@@ -62,7 +62,12 @@ export const FormControl = ({
             className="btn btn-ghost btn-sm btn-circle hover:btn-secondary"
             onClick={() =>
               setModal(
-                <ModalWrapper flex="col" justify="top lg:justify-center" slideFrom="right">
+                <ModalWrapper
+                  flex="col"
+                  justify="top lg:justify-center"
+                  slideFrom="right"
+                  keepOpenOnClick
+                >
                   <div className="mdx max-w-prose">{docs}</div>
                 </ModalWrapper>
               )
@@ -524,8 +529,8 @@ export const MeasieInput = ({
     typeof original === 'undefined'
       ? original
       : isDegree
-      ? Number(original)
-      : measurementAsUnits(original, units)
+        ? Number(original)
+        : measurementAsUnits(original, units)
   )
   const [validatedVal, setValidatedVal] = useState(measurementAsUnits(original, units))
   const [valid, setValid] = useState(null)

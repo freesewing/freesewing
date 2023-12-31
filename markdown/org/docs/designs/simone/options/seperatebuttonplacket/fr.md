@@ -1,5 +1,5 @@
 ---
-title: "Patte de boutonnage séparée"
+title: Patte de boutonnage séparée
 ---
 
 ![Patte de boutonnage séparée](seperatebuttonplacket.svg)

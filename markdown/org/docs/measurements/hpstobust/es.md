@@ -28,3 +28,4 @@ Simplemente cambie las manos y obtenga una medición más precisa.
 Para obtener mejores resultados, consiga que una segunda persona tome sus mediciones (si es posible).
 
 </Tip>
+<MeasieImage />

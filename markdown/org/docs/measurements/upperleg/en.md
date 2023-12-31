@@ -14,3 +14,4 @@ Make sure to keep the tape measure horizontal to the floor as you measure the ci
 This measurements is also used as **a vertical reference** to determine the vertical space in which to draft the seat/crotch of trousers. As such, the vertical location of this measurement is important.
 
 </Tip>
+<MeasieImage />

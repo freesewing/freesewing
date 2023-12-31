@@ -28,7 +28,7 @@ Es gibt zwei Möglichkeiten, die Bindungen zu erstellen. Du kannst es wie doppel
 
   - Falte beide Einbände an der langen Seite in zwei Teile, _verkehrt herum_, und bügle sie fest.
   - Markiere jeweils die Mitte der Bindung sowie der Vorder- und Rückenteile.
-  - Befestige den gefalteten Einband an dem entsprechenden Teil, _gute Seiten zusammen_. Achte darauf, dass du die Bindung gleichmäßig entlang der Kante verteilst. Make sure you distribute the binding evenly along the edge.
+  - Befestige den gefalteten Einband an dem entsprechenden Teil, _gute Seiten zusammen_. Achte darauf, dass du die Bindung gleichmäßig entlang der Kante verteilst. Achte darauf, dass du die Bindung gleichmäßig entlang der Kante verteilst.
   - Näht kurz vor dem SA.
   - Drücke die Bindung zur Kante hin, wobei du die SA in Richtung der _falschen Seite_drückst.
   - Nähen Sie durch das Teil und die SA darunter, wobei Sie die gefaltete SA auf der _falschen Seite_halten.

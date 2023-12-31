@@ -28,7 +28,7 @@ Il y a deux façons de procéder aux fixations. Tu peux l'utiliser comme un biai
 
   - Plie les deux reliures en deux sur le long côté, _envers contre envers_, et appuie bien dessus.
   - Marque le milieu de chacune des reliures et des parties avant et arrière.
-  - Attache la reliure pliée à la partie correspondante, _bons côtés ensemble_. Veille à répartir uniformément la reliure sur le bord. Tu devrais avoir trois couches épinglées ensemble.
+  - Attache la reliure pliée à la partie correspondante, _bons côtés ensemble_. Veille à répartir uniformément la reliure sur le bord. Veille à répartir uniformément la reliure sur le bord.
   - Couds juste à côté de la SA.
   - Presse la reliure vers le bord, en pressant le SA vers le _mauvais côté_.
   - Couds à travers la pièce et la SA en dessous, en maintenant la SA pliée sur l'envers __.

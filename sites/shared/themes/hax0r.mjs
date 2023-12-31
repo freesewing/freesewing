@@ -11,6 +11,8 @@ export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'lime-5
 
 export const rating = [0, 1, 2, 3, 4].map(() => 'lime-500')
 
+export const graph = ['lime-500', 'lime-400', 'green-600', 'teal-400', 'lime-600']
+
 export const theme = {
   fontFamily: `ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;`,
   'base-100': bg,

@@ -16,7 +16,7 @@ Esto es lo que hemos incluido para ti hoy:
 - 🕵️ Tras las costuras: Jenni (lectura de 6 minutos - por Jenni & Karen)
 - 🙏 Tienes medidas, y las quiero para nuestro nuevo sitio (lectura de 2 minutos - por joost)
 - 🇺🇦 Soporte para ucraniano y un boletín en varios idiomas (1 minuto de lectura - por joost)
-- 🤔 So when will FreeSewing.org run on version 3? (1-minute read - by joost) (1 minuto de lectura - por joost)
+- 🤔 So when will FreeSewing.org run on version 3? (1-minute read - by joost) (1 minuto de lectura - por joost) (1 minuto de lectura - por joost) (1 minuto de lectura - por joost)
 
 &nbsp;
 
@@ -187,7 +187,7 @@ The real challenge thare is that I will need to learn to not write this thing at
 
 &nbsp;
 
-## 🤔 So when will FreeSewing.org run on version 3? (1-minute read - by joost)
+## 🤔 So when will FreeSewing.org run on version 3? (1-minute read - by joost) (1 minuto de lectura - por joost) (1 minuto de lectura - por joost)
 
 There’s a lot more in v3 that I could write about, but I need to address the elephant in the room: *So we have 3.0 now, when do non-developers get to use this?*
 

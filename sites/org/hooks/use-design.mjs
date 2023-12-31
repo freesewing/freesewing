@@ -1,7 +1,3 @@
-/*
- * This file is auto-generated.
- * Any manual changes will be overwritten.
- */
 import { Aaron as aaron } from '@freesewing/aaron'
 import { Albert as albert } from '@freesewing/albert'
 import { Bee as bee } from '@freesewing/bee'
@@ -28,6 +24,7 @@ import { Huey as huey } from '@freesewing/huey'
 import { Hugo as hugo } from '@freesewing/hugo'
 import { Jaeger as jaeger } from '@freesewing/jaeger'
 import { Lucy as lucy } from '@freesewing/lucy'
+import { Lumira as lumira } from '@freesewing/lumira'
 import { Lunetius as lunetius } from '@freesewing/lunetius'
 import { Noble as noble } from '@freesewing/noble'
 import { Octoplushy as octoplushy } from '@freesewing/octoplushy'
@@ -81,6 +78,7 @@ const designs = {
   hugo,
   jaeger,
   lucy,
+  lumira,
   lunetius,
   noble,
   octoplushy,

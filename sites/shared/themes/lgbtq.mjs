@@ -21,6 +21,29 @@ export const spectrum = [
 
 export const rating = ['green-500', 'yellow-400', 'orange-500', 'red-500', 'pink-500']
 
+export const graph = [
+  'red-400',
+  'orange-400',
+  'yellow-400',
+  'lime-400',
+  'green-400',
+  'teal-400',
+  'cyan-400',
+  'blue-400',
+  'indigo-400',
+  'violet-400',
+  'purple-400',
+  'violet-400',
+  'indigo-400',
+  'blue-400',
+  'cyan-400',
+  'teal-400',
+  'green-400',
+  'lime-400',
+  'yellow-400',
+  'orange-400',
+]
+
 export const theme = {
   fontFamily:
     "Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;",

@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import * as echarts from 'echarts'
 import ReactECharts from 'echarts-for-react'
 import { Popout } from 'shared/components/popout/index.mjs'

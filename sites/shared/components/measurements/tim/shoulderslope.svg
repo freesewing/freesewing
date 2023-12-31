@@ -1,0 +1,20 @@
+<!-- __SDEFILE__ - This file is a dependency for the stand-alone environment -->
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="2000" height="1500" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 1500">
+    <style type="text/css"><![CDATA[
+        path {fill: none; stroke-linejoin: round;}
+        .line {stroke: #000; stroke-width: 3px; stroke-linecap: round;}
+        .arrow {stroke: #000; stroke-width: 3px; fill: #000; stroke-linecap: round;}
+        text {font-family: "Roboto condensed"; font-size: 42px;}
+    ]]></style>
+
+    <!-- Background image -->
+    <image xlink:href="./standing.jpg" x="0" y="0" width="2000" height="1500" />
+    <g transform="translate(-55 -10)">
+      <path class="line" d="M 1360 320 l 250 0 l -250 95" />
+      <path class="line" d="M 1380 320 c -5 30 -5 60 5 88" />
+      <path class="arrow" d="M 1380 320 l -8 -20 l 16 0 l -8 20" />
+      <path class="arrow" d="M 1385 405 l -8 20 l 16 0 l -8 -20" />
+      <text class="text" x="1340" y="379">x°</text>
+    </g>
+
+</svg>

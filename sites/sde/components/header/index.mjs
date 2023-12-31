@@ -43,13 +43,17 @@ const NavIcons = ({ setModal }) => {
       >
         <RocketIcon className={iconSize} />
       </NavButton>
-      <NavButton href="/docs" label={t('sde:docs')} color={spectrum[3]}>
+      <NavButton href="https://freesewing.dev/" label={t('sde:docs')} color={spectrum[3]}>
         <DocsIcon className={iconSize} />
       </NavButton>
-      <NavButton href="/code" label={t('sde:code')} color={spectrum[4]}>
+      <NavButton
+        href="http://github.com/freesewing/freesewing"
+        label={t('sde:code')}
+        color={spectrum[4]}
+      >
         <GitHubIcon className={iconSize} />
       </NavButton>
-      <NavButton href="/support" label={t('sde:support')} color={spectrum[5]}>
+      <NavButton href="https://freesewing.org/support" label={t('sde:support')} color={spectrum[5]}>
         <HelpIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
