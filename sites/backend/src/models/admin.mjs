@@ -205,7 +205,7 @@ AdminModel.prototype.getSubscribers = async function ({ user }) {
   for (const sub of [...subscribers, ...users]) {
     const email = await this.decrypt(sub.email)
     if (typeof all[sub.language] === 'undefined') all[sub.language] = []
-    all[sub.language].push(email)
+    all[sub.language].push({ email, ehash: sub.ehash })
   }
 
   /*
