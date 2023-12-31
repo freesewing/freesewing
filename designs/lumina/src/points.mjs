@@ -15,6 +15,7 @@ export const createPath = (paths, Path, points, pathName, names) => {
 }
 
 const lowerWaist = (paths, Path, points, waistLowering, pathName, pointName) => {
+  console.log({ pn: pathName, p: paths[pathName] })
   const newPath = extendPath(Path, paths[pathName], 100, 0)
   const newWaist = newPath.shiftAlong(waistLowering + 100)
   if (newWaist.sitsRoughlyOn(points[pathName + pointName])) {
@@ -76,7 +77,7 @@ const createWaistPoint = (options, measurements, Path, points, utils, front) => 
   }
 }
 
-const createSidePoints = (
+const createSidePoints = ({
   measurements,
   points,
   utils,
@@ -87,11 +88,22 @@ const createSidePoints = (
   ratioFixed,
   ease,
   waistReduction,
-  distanceCompensation
-) => {
+  distanceCompensation,
+  fixedSidePanel,
+}) => {
   let measurement
-  let width
+  // let width
   let lastGood = 0
+  console.log({
+    prefix: prefix,
+    postfix: postfix,
+    ratio: ratio,
+    ratioFixed: ratioFixed,
+    ease: ease,
+    waistReduction: waistReduction,
+    distanceCompensation: distanceCompensation,
+    fixedSidePanel: fixedSidePanel,
+  })
   for (let i = 0; i < names.length; i++) {
     let distance =
       measurements['waistTo' + names[lastGood]] -
@@ -131,18 +143,28 @@ const createSidePoints = (
     measurement /= 2
     measurement *= ease
 
-    width = measurement * ratio
-
+    const width = measurement * ratio
+    // const reduction = (measurement - width) < ratioFixed ? width : measurement - ratioFixed
+    const reduction =
+      ratio == 0
+        ? measurement
+        : fixedSidePanel > 0
+          ? width < measurement - fixedSidePanel
+            ? measurement - fixedSidePanel
+            : width
+          : width
+    // const reduction = ratio == 0 ? measurement : width
+    console.log({ i: i, p: prefix + postfix + names[i], f: fixedSidePanel })
+    console.log({ m: measurement, w: width, mw: measurement - width, rf: ratioFixed })
     if (i == 0) {
       points[prefix + postfix + names[i]] = points[prefix + names[i]].shift(
         prefix == 'front' ? 180 : 0,
-        measurement - width < ratioFixed ? width : measurement - ratioFixed
+        reduction
       )
     } else {
-      const radius = measurement - width < ratioFixed ? width : measurement - ratioFixed
       let ci = utils.circlesIntersect(
         points[prefix + names[i]],
-        radius,
+        reduction,
         points[prefix + postfix + names[lastGood]],
         distance
       )
@@ -210,7 +232,7 @@ export const points = {
     ease: { pct: -8, min: -25, max: 10, menu: 'fit' },
     length: { pct: 35, min: 10, max: 100, menu: 'fit' },
     waistbandsize: {
-      pct: 90,
+      pct: 50,
       min: 0,
       max: 150,
       ...pctBasedOn('waistToHips'),
@@ -261,6 +283,9 @@ export const points = {
 
     measurements['waistToAnkle'] = measurements.waistToFloor - measurements.heel / Math.PI
     const sideFixed = (((measurements.waist - measurements.waistBack) * ease) / 2) * sideRatio
+    const fixedSidePanel =
+      (((measurements.waist - measurements.waistBack - waistReduction) * ease) / 2) *
+      options.sidePanel
 
     points.middleWaist = new Point(0, 0)
     points.middleHips = points.middleWaist.shift(270, measurements.waistToHips)
@@ -310,19 +335,20 @@ export const points = {
       measurements.waistToHips * (measurements.waistToSeat / measurements.waistToUpperLeg)
     )
     ;['front', 'back'].forEach((prefix) => {
-      createSidePoints(
-        measurements,
-        points,
-        utils,
-        prefix,
-        'Side',
-        ['Ankle', 'Knee', 'UpperLeg', 'Seat', 'Waist'],
-        0,
-        0.1,
-        ease,
-        waistReduction,
-        1
-      )
+      createSidePoints({
+        measurements: measurements,
+        points: points,
+        utils: utils,
+        prefix: prefix,
+        postfix: 'Side',
+        names: ['Ankle', 'Knee', 'UpperLeg', 'Seat', 'Waist'],
+        ratio: 0,
+        ratioFixed: 0.1,
+        ease: ease,
+        waistReduction: waistReduction,
+        distanceCompensation: 1,
+        fixedSidePanel: 0,
+      })
       points[prefix + 'SideWaistband'] = points[prefix + 'SideWaist'].clone()
     })
 
@@ -336,36 +362,23 @@ export const points = {
 
     points.middleWaistband = points.middleWaist.clone()
     ;['front', 'back'].forEach((prefix) => {
-      if (options.fixedsidepanel) {
-        createSidePoints(
-          measurements,
-          points,
-          utils,
-          prefix,
-          'Split',
-          ['Ankle', 'Knee', 'UpperLeg', 'Seat', 'Waist'],
-          sideFixed,
-          ease,
-          waistReduction,
+      createSidePoints({
+        measurements: measurements,
+        points: points,
+        utils: utils,
+        prefix: prefix,
+        postfix: 'Split',
+        names: ['Ankle', 'Knee', 'UpperLeg', 'Seat', 'Waist'],
+        ratio: sideRatio,
+        // ratio: 0.1,
+        ratioFixed: sideFixed,
+        ease: ease,
+        waistReduction: waistReduction,
+        distanceCompensation:
           (points.frontAnkle.dist(points.frontCrossSeam) + frontCrossSeam.length()) /
-            (measurements.waistToFloor - measurements.heel / Math.PI)
-        )
-      } else {
-        createSidePoints(
-          measurements,
-          points,
-          utils,
-          prefix,
-          'Split',
-          ['Ankle', 'Knee', 'UpperLeg', 'Seat', 'Waist'],
-          sideRatio,
-          sideFixed,
-          ease,
-          waistReduction,
-          (points.frontAnkle.dist(points.frontCrossSeam) + frontCrossSeam.length()) /
-            (measurements.waistToFloor - measurements.heel / Math.PI)
-        )
-      }
+          (measurements.waistToFloor - measurements.heel / Math.PI),
+        fixedSidePanel: options.fixedsidepanel ? fixedSidePanel : 0,
+      })
       points[prefix + 'SplitWaistband'] = points[prefix + 'SplitWaist'].clone()
     })
 
@@ -525,11 +538,11 @@ export const points = {
         })
       })
     }
-    ;['back'].forEach((prefix) => {
-      ;['Waist', 'Seat', 'UpperLeg', 'Knee', 'Ankle'].forEach((name) => {
-        points[prefix + 'Split' + name]
-      })
-    })
+    // ;['back'].forEach((prefix) => {
+    //   ;['Waist', 'Seat', 'UpperLeg', 'Knee', 'Ankle'].forEach((name) => {
+    //     points[prefix + 'Split' + name]
+    //   })
+    // })
 
     lowerWaist(paths, Path, points, waistLowering, 'middle', 'Waist')
     ;['front', 'back'].forEach((prefix) => {

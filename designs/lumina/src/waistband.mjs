@@ -64,7 +64,6 @@ export const waistband = {
         .curve(points.waistBackCP, points.waistFrontCP, points.waistFront)
 
       diff = waistLength - paths.waist.length()
-      console.log({ i: iter, d: diff, a: angle })
     } while (iter++ < 100 && (diff < -0.5 || diff > 0.5))
     if (iter >= 100) {
       log.info('lumina:couldNoFitWaistband')
@@ -90,14 +89,6 @@ export const waistband = {
       .curve(points.waistbandBackCP, points.waistbandFrontCP, points.waistbandFront)
 
     diff = waistbandLength - paths.waistband.length()
-    console.log({ d: diff, a: angle })
-    console.log({
-      wl: waistLength,
-      wpl: paths.waist.length(),
-      wbl: waistbandLength,
-      wbpl: paths.waistband.length(),
-    })
-
     const rWaistband = paths.waistband.reverse()
     points.snippetPanelBack = rWaistband.shiftAlong(waistbandFrontLength + waistbandPanelLength)
     snippets.panelBack = new Snippet('notch', points.snippetPanelBack)
