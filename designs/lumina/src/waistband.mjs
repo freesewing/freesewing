@@ -35,14 +35,11 @@ export const waistband = {
       return part.hide()
     }
 
-    console.log({ store: JSON.parse(JSON.stringify(store)) })
-
     points.origin = new Point(0, 0) //.addCircle(3)
 
     const angleRad = Math.asin((Math.abs(waistbandLength - waistLength) * 0.5) / waistbandSize)
     const radius = (waistLength * 0.5) / Math.sin(angleRad)
     const baseAngle = waistLength < waistbandLength ? 270 : 90
-    console.log({ baseAngle: baseAngle })
     let angle = utils.rad2deg(angleRad)
 
     let diff = 0
@@ -54,10 +51,10 @@ export const waistband = {
 
       cpDistance = (4 / 3) * Math.tan(Math.PI / (segments * 2)) * radius
 
-      points.waistFront = points.origin.shift(baseAngle + angle, radius).addCircle(2)
-      points.waistBack = points.origin.shift(baseAngle - angle, radius).addCircle(2)
-      points.waistFrontCP = points.waistFront.shift(baseAngle - 90 + angle, cpDistance).addCircle(5)
-      points.waistBackCP = points.waistBack.shift(baseAngle + 90 - angle, cpDistance).addCircle(5)
+      points.waistFront = points.origin.shift(baseAngle + angle, radius)
+      points.waistBack = points.origin.shift(baseAngle - angle, radius)
+      points.waistFrontCP = points.waistFront.shift(baseAngle - 90 + angle, cpDistance)
+      points.waistBackCP = points.waistBack.shift(baseAngle + 90 - angle, cpDistance)
 
       paths.waist = new Path()
         .move(points.waistBack)
@@ -77,12 +74,8 @@ export const waistband = {
       (4 / 3) *
       Math.tan(Math.PI / (segments * 2)) *
       (radius + waistbandSize * (waistLength < waistbandLength ? 1 : -1))
-    points.waistbandFrontCP = points.waistbandFront
-      .shift(baseAngle - 90 + angle, cpDistance)
-      .addCircle(5)
-    points.waistbandBackCP = points.waistbandBack
-      .shift(baseAngle + 90 - angle, cpDistance)
-      .addCircle(5)
+    points.waistbandFrontCP = points.waistbandFront.shift(baseAngle - 90 + angle, cpDistance)
+    points.waistbandBackCP = points.waistbandBack.shift(baseAngle + 90 - angle, cpDistance)
 
     paths.waistband = new Path()
       .move(points.waistbandBack)
@@ -102,9 +95,10 @@ export const waistband = {
         points.waistbandBackPanel,
         1.4
       )
-      points.waistbandBack = points.waistBack
-        .shiftOutwards(points.waistbandBack, (waistLowering + waistbandSize) * 0.5)
-        .addCircle(3)
+      points.waistbandBack = points.waistBack.shiftOutwards(
+        points.waistbandBack,
+        (waistLowering + waistbandSize) * 0.5
+      )
       paths.waistband = new Path()
         .move(points.waistbandBack)
         ._curve(points.waistbandBackPanelCP, points.waistbandBackPanel)
@@ -116,6 +110,7 @@ export const waistband = {
       .join(paths.waist.reverse())
       .line(points.waistbandBack)
       .join(paths.waistband)
+      .reverse()
       .hide()
 
     paths.seam = new Path().move(points.waistbandFront).line(points.waistFront).join(paths.seamSA)

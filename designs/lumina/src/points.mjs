@@ -230,14 +230,14 @@ export const points = {
     waistband: { bool: true, menu: 'style' },
     Lowerwaistbandback: { bool: true, menu: 'style' },
     ease: { pct: -8, min: -25, max: 10, menu: 'fit' },
-    length: { pct: 35, min: 10, max: 100, menu: 'fit' },
+    length: { pct: 35, min: 10, max: 100, menu: 'style' },
     waistbandsize: {
       pct: 50,
       min: 0,
       max: 150,
       ...pctBasedOn('waistToHips'),
       // eslint-disable-next-line no-unused-vars
-      menu: (settings, mergedOptions) => (mergedOptions?.waistband ? 'style' : false),
+      menu: (settings, mergedOptions) => (mergedOptions?.waistband ? 'fit' : false),
     },
     waistlowering: { pct: 10, min: -10, max: 60, ...pctBasedOn('waistToHips'), menu: 'style' },
     waistreduction: {
