@@ -14,3 +14,4 @@ Weitere Informationen zum Auffinden dieses Punktes findest du in der [HPS-Dokume
 Das Maß **Hochpunktschulter (HPS) zum Taillenrücken** läuft von der HPS bis zur Taillenlinie.
 
 Um den Abstand vom HPS zum Taillenrücken zu messen, lokalisiere zuerst [den HPS-Punkt](/docs/measurements/hps/). Dann miss geradeaus runter zur Linie, die deine Taille bildet.
+<MeasieImage />

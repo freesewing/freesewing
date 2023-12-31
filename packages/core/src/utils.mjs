@@ -167,7 +167,7 @@ export function circlesIntersect(c1, r1, c2, r2, sort = 'x') {
   let dist = c1.dist(c2)
   // Check for edge cases
   if (dist > parseFloat(r1) + parseFloat(r2)) return false // Circles do not intersect
-  if (dist < parseFloat(r2) - parseFloat(r1)) return false // One circle is contained in the other
+  if (dist < Math.abs(parseFloat(r2) - parseFloat(r1))) return false // One circle is contained in the other
   if (dist === 0 && r1 === r2) return false // Two circles are identical
   let chorddistance = (Math.pow(r1, 2) - Math.pow(r2, 2) + Math.pow(dist, 2)) / (2 * dist)
   let halfchordlength = Math.sqrt(Math.pow(r1, 2) - Math.pow(chorddistance, 2))

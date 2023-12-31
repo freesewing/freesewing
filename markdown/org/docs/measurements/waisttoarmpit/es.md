@@ -15,3 +15,4 @@ O, si no estás segura de dónde están los ganglios linfáticos de la axila, pu
 - Tu dedo índice estará ahora en el sobaco, que está un poco demasiado alto. Pero tu dedo corazón es un buen punto para marcar como inicio de tu axila.
 
 
+<MeasieImage />

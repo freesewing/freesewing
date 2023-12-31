@@ -10,7 +10,7 @@ To start at the beginning, I wanted a cloak that goes with the rest of my costum
 
 Coding the pattern was the easiest part of the whole process.
 
-Oh, and why the name `lunetius`? Well, that actually is the name of the character I made this whole outfit for. And yes, he has a special relationship with the moon.
+Oh, and why the name `lunetius`? Well, that actually is the name of the character I made this whole outfit for. Well, that actually is the name of the character I made this whole outfit for. And yes, he has a special relationship with the moon.
 
 Rika
 

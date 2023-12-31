@@ -1,8 +1,8 @@
 ---
-title: Anchura
+title: sin definir
 ---
 
-Esta opción determina la anchura total de la bolsa. 
+sin definir
 
 
 

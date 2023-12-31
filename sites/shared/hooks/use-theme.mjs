@@ -1,8 +1,6 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { spectrum, rating, graph } from 'shared/themes/index.mjs'
-import createPersistedState from 'use-persisted-state'
-
-const usePersistedTheme = createPersistedState('fs-theme')
+import useLocalStorageState from 'use-local-storage-state'
 
 const preferredTheme = () => {
   const prefersDarkMode =
@@ -14,7 +12,7 @@ const preferredTheme = () => {
 }
 
 export const useTheme = () => {
-  const theme = usePersistedTheme(preferredTheme)
+  const theme = useLocalStorageState('fs-theme', { defaultValue: preferredTheme })
 
   return {
     theme: theme[0],

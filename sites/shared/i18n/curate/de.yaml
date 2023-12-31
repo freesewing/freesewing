@@ -3,13 +3,13 @@ curateSet: Kuratierte Messungen eingestellt
 curateSets: Kuratieren Sie die FreeSewing-Messreihen
 curatePacks: Kuratiere die FreeSewing Optionspakete
 noSuggestedPacks: Es werden derzeit keine Optionspakete für die Kuration vorgeschlagen
-noSuggestedSets: Derzeit sind keine Messreihen für die Kuratierung vorgeschlagen
-optionPack: Option pack
-packs: Option Packs
+noSuggestedSets: Derzeit sind keine Messreihen zum Kuratieren vorgeschlagen
+optionPack: Optionspaket
+packs: Optionspakete
 published: Veröffentlicht
 publishedDesc: Veröffentlichte Datensätze sind für die Nutzer verfügbar. Wenn du Änderungen vornehmen willst, solltest du die Veröffentlichung zunächst rückgängig machen.
 unpublished: Unveröffentlicht
-unpublishedDesc: Unveröffentlichte Datensätze sind für die Nutzer nicht verfügbar. Normalerweise werden Dinge zunächst unveröffentlicht, bis sie zur Veröffentlichung bereit sind.
+unpublishedDesc: Unveröffentlichte Datensätze sind für die Nutzer nicht verfügbar. Üblicherweise beginnst du dein Projekt unveröffentlicht, bis sie zur Veröffentlichung bereit sind.
 sets: Maßnahmesets
 suggestedSets: Für die Kuration vorgeschlagene Messreihen
 suggestedPacks: Vorgeschlagene Optionspakete

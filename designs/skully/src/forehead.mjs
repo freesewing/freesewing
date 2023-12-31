@@ -52,7 +52,8 @@ export const forehead = {
       .move(points.point2)
       .curve(points.point2Cp1, points.point3Cp2, points.point3)
       .curve(points.point3Cp1, points.point4Cp2, points.point4)
-      .setText(complete ? 'eyeTop' + ' (4)' : '', textAttribute)
+      .addText(complete ? 'skully:eyeTop' : '', textAttribute)
+      .addText(complete ? ' (4)' : '', textAttribute)
       .addClass('hidden')
 
     paths.seam1 = new Path()
@@ -114,7 +115,7 @@ export const forehead = {
       nr: 2,
       at: points.title,
       scale: 0.5,
-      title: 'forehead',
+      title: 'skully:forehead',
     })
 
     snippets.n1 = new Snippet('notch', points.point2)

@@ -41,3 +41,13 @@ AdminController.prototype.impersonateUser = async (req, res, tools) => {
 
   return Admin.User.sendResponse(res)
 }
+
+/*
+ * List newsletter subscribers (emails)
+ */
+AdminController.prototype.getSubscribers = async (req, res, tools) => {
+  const Admin = new AdminModel(tools)
+  await Admin.getSubscribers(req)
+
+  return Admin.sendResponse(res)
+}
