@@ -131,8 +131,8 @@ Ik waardeer Wouter's aanpak echt, waarbij hij zijn eigen behoeften heeft die de 
 
 ## We zijn (nauwelijks) aan het grammen'.
 
-> _Over die titel: Ik _denk_ dat mensen die jonger zijn dan ik naar Instagram verwijzen als _de gram_ en dus heb ik dat genomen en er een werkwoord van gemaakt, want wat is een betere manier om te laten zien dat ik geen idee heb waar ik het over heb._
-> _Het is ook een ingewikkelde callback naar [een blogpost van 6,5 jaar oud](https://freesewing.org/blog/freesewing-goes-jamstack) dus als je dat hebt begrepen, dan mijn complimenten aan jou, maar ik dwaal af._
+> _About that title: I _think_ people younger than me refer to Instagram as _the gram_ and so I took that and made it a verb because what better way to demonstrate that I have no idea what I'm talking about._
+> _It's also a convoluted callback to [a 6-and-a-half year old blogpost](https://freesewing.org/blog/freesewing-goes-jamstack) so if you got that then kudos to you, but I digress._
 >
 > _Instagram. Ik heb het over Instagram. Of meer in het algemeen alle dingen die we doen (en niet doen) om FreeSewing te _promoten_, bewustzijn te creëren, enzovoort. Laten we het **marketing**._ noemen.
 
