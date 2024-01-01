@@ -7,91 +7,36 @@ title: 2024 Wintereditie
 
 Welkom bij de 2024 Winter editie van de FreeSewing nieuwsbrief.
 
-Here's what we've got for you on this new year's day:
+Dit is wat we voor je hebben op deze nieuwjaarsdag:
 
-- 🎉 Happy new year to (most of) you (1-minute read - by joost)
-- 🧵 FreeSewing evenings at De War  (3-minute read - by Lexander)
-- 👖 Announcing Otis and Lumira, two new FreeSewing designs  (2-minute read - by Wouter & joost)
-- 📷 We’re (barely) grammin’ (3-minute read - by joost)
-- 🌎 Anyone else forgot that this newsletter is multilingual now? (1-minuut lezen - door joost)
-- 🙏 Thank you patrons and one-time donors for making it all worthwhile (2-minute read - by joost)
+- 🎉 Gelukkig nieuwjaar voor (de meesten van) jullie (1-minuut lezen - door joost)
+- 🧵 FreeSewing-avonden bij De War (3 minuten lezen - door Lexander)
+- Aankondiging van Otis en Lumira, twee nieuwe FreeSewing ontwerpen (2 minuten lezen - door Wouter & Joost)
+- 📷 We're (barely) grammin' (3 minuten lezen - door joost)
+- 🌎 Iemand anders vergeten dat deze nieuwsbrief nu meertalig is? (1-minuut lezen - door joost)
+- 🙏 Bedankt mecenassen en eenmalige donateurs dat ze het allemaal de moeite waard maken (2 minuten lezen - door joost)
 
-Let's goooooo
-
-&nbsp;
+Laten we gaan
 
 &nbsp;
 
-## 🎉 Happy new year to (most of) you
-
-For those who consider the Gregorian calendar to be the one calendar to rule
-them all -- which I believe to be the vast majority of you -- allow me to start
-by wishing you a happy new year 🎉
-
-I wish you the very best for 2024, and hope that at least in your book, this is
-going to be a great year. Perhaps there's things you're looking forward to, good
-intentions you've spelled out for yourself, or maybe it's just a time to
-reflect and be hopeful.
-
-Whatever floats your boat, I hope things work out for you in 2024.  If nothing
-else, since you are reading this it seems you've made it through another year.
-That in itself is worth celebrating because living ain't easy.  So kudos to
-you, and keep it going.
-
 &nbsp;
 
-***
+## Gelukkig nieuwjaar voor (de meesten van) jullie
 
-&nbsp;
+Voor degenen die de Gregoriaanse kalender beschouwen als de enige kalender die heerst over
+allemaal -- wat volgens mij de overgrote meerderheid van jullie is -- wil ik
+beginnen met jullie een gelukkig nieuwjaar te wensen 🎉
 
-## 🧵 FreeSewing eventings at De War
+Ik wens je het allerbeste voor 2024 en hoop dat dit in ieder geval in jouw boek
+een geweldig jaar wordt. Misschien zijn er dingen waar je naar uitkijkt, goede
+voornemens die je voor jezelf hebt uitgesproken, of misschien is het gewoon een tijd om
+te overdenken en hoopvol te zijn.
 
-You may or may not remember an article in FreeSewing’s Autumn newsletter of
-2022 where I, Lexander, wrote that FreeSewing was invited to be part of an
-exposition, where we did the full FreeSewing garment making process with a
-small group. Well, I’m very happy to tell you that it wasn’t a one time thing:
-FreeSewing evenings have been part of their schedule bi-weekly for almost half
-a year now.
-
-The same organizers from the exposition own a building called De War (named
-after a former owner of their former building) in Amersfoort, The Netherlands,
-where they create and encourage projects for art, technology, science, and
-sustainability. For example, it houses a FabLab and repair café.
-
-The FreeSewing evenings are in their FabLab, where they have laser cutters to
-cut fabric with. We sit around the table and some take measurements, some sew,
-some get to know the site. I also sometimes write code for the Nicky pattern
-I’ve been making - so really, there’s room for any type of FreeSewing
-enthusiast to join!
-
-Feel free to pop by if you have the time.
-
-The FreeSewing evenings are on Thursdays of even weeks from 19:00 to 22:00. The
-upcoming ones are on January 4th and 18th. You can also find the dates on the
-FreeSewing Discord server’s Events tab (located top-left).  You can message me
-at @lexander2002 on Discord or Diana (the main organizer) at
-dianawildschut\@posteo.net to let us know you’re coming :-) You can find De War
-at Heiligenbergerweg 34, 3816 AK, in Amersfoort.  People are invited to make
-use of the facilities, but also to contribute to the livelihood of De War. The
-place works on a donation basis, “perceived value pricing”.
-
-FreeSewing will also be part of their two-day event called Koppelting, where
-Diana will demonstrate how to use their laser cutter to cut a full pattern from
-fabric in one go. This will be on the weekend of 27 & 28 January.
-
-One of De War’s ambitions is to find a way to make durable, sustainable
-clothing more accessible to people. FreeSewing makes made-to-measure accessible
-and (for those with access to a FabLab) the laser cutter simplifies the pattern
-cutting and assembling process. Screen printing can be used to add prints to
-fabric (also available at some FabLabs). Now there is still the complex problem
-of good fabric, because most options today aren’t good for the environment or
-they are yielded through labor exploitation, often both. Perhaps there can be
-found a way to make fabric from local harvest, like flax, hemp, nettle, or
-similar ones - because if they could do this in medieval times, why can’t we
-find a way now? But a good technique to extract the fiber and process it into
-fabric that isn’t environmentally heavy, labor intensive, and costs a lot of
-resources or money to make, hasn’t been found yet. Don’t hesitate to reach out
-with ideas! Until then, we’ll see what the future holds.
+Wat jouw boot ook drijft, ik hoop dat alles goed voor je uitpakt in 2024.  Als er niets anders is
+, aangezien je dit leest, lijkt het erop dat je weer een jaar hebt overleefd.
+Dat is op zich al een feestje waard, want leven is niet gemakkelijk.  Dus complimenten voor
+en ga zo door.
 
 &nbsp;
 
@@ -99,69 +44,54 @@ with ideas! Until then, we’ll see what the future holds.
 
 &nbsp;
 
-## 👖 Announcing Otis and Lumira, two new FreeSewing designs  (1-minute read - by joost)
+## FreeSewing-evenementen bij De War
 
-We've got two new designs up on FreeSewing.org that you may not yet know about. Shout-out to Wouter who signed for both of them, so let's hear what he has to say:
+Je herinnert je misschien een artikel in FreeSewing's herfstnieuwsbrief van
+2022 waar ik, Lexander, schreef dat FreeSewing was uitgenodigd om deel uit te maken van een
+expositie, waar we het volledige FreeSewing kledingmaakproces deden met een
+kleine groep. Nou, ik ben heel blij jullie te kunnen vertellen dat het niet eenmalig was:
+FreeSewing avonden maken nu al bijna een half jaar deel uit van hun tweewekelijkse schema
+.
 
-[Otis](https://freesewing.org/designs/otis) is a baby romper:
+Dezelfde organisatoren van de expositie bezitten een gebouw genaamd De War (
+genoemd naar een voormalige eigenaar van hun voormalige gebouw) in Amersfoort,
+waar ze projecten voor kunst, technologie, wetenschap en
+duurzaamheid creëren en stimuleren. Het herbergt bijvoorbeeld een FabLab en een repair café.
 
-> _When my niece had a baby, I knew just what to do; sew her some clothes for the little one. And I had never made any clothes for infants. What they should look like was easy. I had kids of my own years ago, and the one-piece things should be easy to make._
->
-> _What I did not have was a pattern. That meant that I should get one, or make one. That was not a hard decision; FreeSewing was definitely lacking in the infant-focused designs. Infants have the nicequality that while they are growing, they grow in each direction at the same pace. The only real challenge is that their head is a lot bigger in proportion than older specimens. A normal shirt with opening doesn’t work. But there are easy solutions to that, and these are used by allromper making manufacturers._
->
-> _I incorporated the neck design with a simple body design, and a snap closure. Easy short orlong sleeves completed the design._
+De FreeSewing avonden zijn in hun FabLab, waar ze lasersnijders hebben om
+stof mee te snijden. We zitten rond de tafel en sommigen nemen de maten op, sommigen naaien,
+sommigen leren de site kennen. Ik schrijf soms ook code voor het Nicky-patroon
+dat ik aan het maken ben - dus eigenlijk is er ruimte voor elk type FreeSewing
+enthousiasteling om mee te doen!
 
-and [Lumira](https://freesewing.org/designs/lumira) is a pair of leggings:
+Kom gerust langs als je tijd hebt.
 
-> _I started working on this design when I decided I needed more leggings to cycle in the fall and winter. My previous pair was made with a commercial pattern, and they have served me well. The easy solution would have been to just make some more. But if I need some of these, there should be more people that do._
->
-> _I decided to make this pattern so it allows for a waistband to be part of it. This should make for a good fit on a wide range of body types. It uses a gusset that is relatively large in the back. This is both a nice design feature,and provides support for the rear. To exemplify this, you could use a contrasting fabric for this part._
->
-> _The pattern’s gusset can be extended to the front to allow for a bulge. And since I wanted this pattern to be able to be used for cycling, there is an option to use a chamois, the padding you find in most cycling shorts._
->
-> _This is a pattern that has no outside seams, so interesting designs on the fabric will not be distorted._
+De FreeSewing avonden zijn op donderdag in de even weken van 19:00 tot 22:00 uur. De
+komende zijn op 4 en 18 januari. Je kunt de data ook vinden op de
+FreeSewing Discord server onder het tabblad Events (linksboven).  Je kunt mij een bericht sturen
+op @lexander2002 op Discord of Diana (de hoofdorganisator) op
+dianawildschut\@posteo.net om te laten weten dat je komt :-) Je kunt De War
+vinden aan de Heiligenbergerweg 34, 3816 AK, in Amersfoort.  Mensen worden uitgenodigd om
+gebruik te maken van de faciliteiten, maar ook om bij te dragen aan het levensonderhoud van De War. Op
+wordt gewerkt op basis van donaties, "prijzen van waargenomen waarde".
 
-I really appreciate Wouter's approach where he has his own needs that are the instigator of these designs, but then is willing to go the extra mile to not only solve this problem for himself, but also for all of us. It is in a very tangible way the _raison d'être_ of FreeSewing.
+FreeSewing zal ook deel uitmaken van hun tweedaagse evenement Koppelting, waar
+Diana zal demonstreren hoe je met hun lasersnijder in één keer een volledig patroon kunt snijden uit
+stof. Dit is in het weekend van 27 en 28 januari.
 
-&nbsp;
-
-***
-
-&nbsp;
-
-## 📷 We're (barely) grammin'
-
-> _About that title: I _think_ people younger than me refer to Instagram as _the gram_ and so I took that and made it a verb because what better way to demonstrate that I have no idea what I'm talking about._
-> _It's also a convoluted callback to [a 6-and-a-half year old blogpost](https://freesewing.org/blog/freesewing-goes-jamstack) so if you got that then kudos to you, but I digress._
->
-> _Instagram. I am talking about Instagram. Or more generally all the things we do (and do not do) to _promote_ FreeSewing, raise awwareness, and so on. Let's call it **marketing**._
-
-For the last several months, our Instagram account has been managed by Natalia, who has been a fixture on FreeSewing's all-star team for many years.
-Natalia has indicated her desire to step down as FreeSewing's Instagram maintainer, so for the foreseeable future it will revert back to the usual neglect by yours truly.
-
-The account itself is edging closer to 10k followers which makes it our largest communication channel, or at least it would be if we forget for a moment that this newsletter itself has over 12k subscribers.
-
-Whether it's our Instagram account, this newsletter, or FreeSewing itself, they are all somewhat popular in spite of an almost complete absence of marketing.
-Whereas many moons ago I would have made more efforts to spread the word about FreeSewing, for years now I have done essentially nothing to do so, because there's just so much to do that this sort of stuff never gets to the top of the queue.
-
-However, since version 3 we are also no longer publishing regular new releases, because we don't need to. We are now utilizing what I tend to refer to as a _release stream_ where updates, improvementsand new features are drip-fed to FreeSewing.org as soon as they are finished. Fresh out of the oven so to speak, rather than bundled together in timely releases. We still release things (like v3.1 last week) but we don't need to do so for our own websites. We only do it for the benefit of those people using our software for their own purposes (and to be clear: we will continue to do so).
-
-With a million things on my plate, any sort of _marketing_ or even merely talking/writing about what we've been up to is always that can that gets kicked down the road.
-Releases were a natural stop to all that can-kicking. Whenever we put out a new release, it was a moment where I typically took the time to write about what went into the new release, what was new, improved and so on.
-Now that we'll see fewer releases (not fewer updates) there's even less nudging me to take the time to write/talk about what's going on in FreeSewing land.
-
-I feel like I should do better here, but I'm not entirely certain how to handle this.
-The obvious answer is to join the _content creators_ who use these platforms to push their personal brand or side-hustle.
-But I know from experience that trying to _compete_ in this space is something that tends to negatively impact my mental health, which is something I struggle plenty with without the need for all this.
-It's the reason I (personally) left Instagram in the first place. At that time -- now more than four years ago -- I wrote the following in my goodbye-post:
-
-> _I find that opening the Instagram app has a net negative effect on my motivation to invest the time and effort to make or build the things I believe are worthwhile._
-> _There’s a shallowness that permeates the platform, and that I seem unable to completely block out. Long story short, the bad is now vastly outweighing the good, at least for me personally._
-
-So I'm a little trepidatious about joining the fray again, but I'm also concious of the fact that no amount of work really matters unless people at least can find out about it somehow.
-
-So I'm not sure how I'll manage this, and I'm afraid there's no grand conclusion here. I just wanted to share my thoughts on the matter.
-Guess we'll see how it goes. You can find out for yourself, we're [@freesewing_org](https://www.instagram.com/freesewing_org/) on _the gram_.
+Een van de ambities van De War is om een manier te vinden om duurzame, duurzame
+kleding toegankelijker te maken voor mensen. FreeSewing maakt toegankelijk maatwerk
+en (voor wie toegang heeft tot een FabLab) de lasersnijder vereenvoudigt het patroon
+snijden en in elkaar zetten. Zeefdrukken kan worden gebruikt om prints toe te voegen aan
+stof (ook verkrijgbaar bij sommige FabLabs). Nu is er nog het complexe probleem
+van goede stof, omdat de meeste opties tegenwoordig niet goed zijn voor het milieu of
+ze zijn gemaakt door uitbuiting van arbeidskrachten, vaak allebei. Misschien is er op
+een manier te vinden om stof te maken van plaatselijke oogst, zoals vlas, hennep, brandnetel, of
+vergelijkbaar - want als ze dit in de middeleeuwen konden, waarom kunnen wij
+nu dan geen manier vinden? Maar er is nog geen goede techniek gevonden om de vezel te extraheren en te verwerken tot
+stof die niet milieubelastend en arbeidsintensief is en die veel
+grondstoffen of geld kost om te maken. Aarzel niet om
+te bellen met ideeën! Tot die tijd zien we wel wat de toekomst brengt.
 
 &nbsp;
 
@@ -169,13 +99,29 @@ Guess we'll see how it goes. You can find out for yourself, we're [@freesewing_o
 
 &nbsp;
 
-## 🌎 Anyone else forgot that this newsletter is multilingual now? (1-minuut lezen - door joost)
+## Aankondiging van Otis en Lumira, twee nieuwe FreeSewing ontwerpen (1 minuut lezen - door joost)
 
-Raise your hand of you kinda lost track of the fact that FreeSewing's newsletter is now available in all 6 languages we support (English, Spanish, French, German, Dutch, Ukranian) and spent your new year's eve and day frantically making sure that sending out the newsletter in all those languages actually works.
+We hebben twee nieuwe ontwerpen op FreeSewing.org die je misschien nog niet kent. Shout-out naar Wouter die voor beide heeft getekend, dus laten we horen wat hij te zeggen heeft:
 
-Just me?
+[Otis](https://freesewing.org/designs/otis) is een baby rompertje:
 
-Ok, so here's hoping it all went well in the end. But as a reminder: You can get this newsletter in any of the languages mentioned above.
+> _Toen mijn nichtje een baby kreeg, wist ik precies wat ik moest doen: kleertjes naaien voor de kleine. En ik had nog nooit kleding voor baby's gemaakt. What they should look like was easy. Ik heb zelf jaren geleden kinderen gehad, en die dingen uit één stuk moeten makkelijk te maken zijn._
+>
+> _Wat ik niet had was een patroon. That meant that I should get one, or make one. Dat was niet zo'n moeilijke beslissing; FreeSewing miste absoluut ontwerpen die gericht waren op baby's. Infants have the nicequality that while they are growing, they grow in each direction at the same pace. De enige echte uitdaging is dat hun hoofd in verhouding veel groter is dan dat van oudere exemplaren. Een normaal shirt met opening werkt niet. But there are easy solutions to that, and these are used by allromper making manufacturers._
+>
+> _Ik heb het halsontwerp gecombineerd met een eenvoudig bodyontwerp en een drukknoopsluiting. Easy short orlong sleeves completed the design._
+
+en [Lumira](https://freesewing.org/designs/lumira) is een legging:
+
+> _Ik begon aan dit ontwerp te werken toen ik besloot dat ik meer leggings nodig had om in de herfst en winter te fietsen. Mijn vorige paar was gemaakt met een commercieel patroon en ze hebben me goed gediend. De gemakkelijke oplossing zou zijn geweest om gewoon wat meer te maken. Maar als ik een aantal van deze nodig heb, moeten er meer mensen zijn die dat doen._
+>
+> _Ik besloot dit patroon zo te maken dat er een tailleband bij kan. Dit zou moeten zorgen voor een goede pasvorm op een breed scala aan lichaamstypes. It uses a gusset that is relatively large in the back. This is both a nice design feature,and provides support for the rear. Om dit te illustreren kun je voor dit deel een contrasterende stof gebruiken._
+>
+> _Het kruisje van het patroon kan naar voren worden verlengd voor een bolling. En omdat ik wilde dat dit patroon gebruikt kon worden om mee te fietsen, is er een optie om een zeem te gebruiken, de zeem die je in de meeste fietsbroeken vindt._
+>
+> _Dit is een patroon dat geen buitennaden heeft, zodat interessante ontwerpen op de stof niet vervormd worden._
+
+Ik waardeer Wouter's aanpak echt, waarbij hij zijn eigen behoeften heeft die de aanleiding vormen voor deze ontwerpen, maar vervolgens bereid is om een stap verder te gaan om dit probleem niet alleen voor zichzelf op te lossen, maar ook voor ons allemaal. Het is op een heel tastbare manier de _raison d'être_ van FreeSewing.
 
 &nbsp;
 
@@ -183,23 +129,77 @@ Ok, so here's hoping it all went well in the end. But as a reminder: You can get
 
 &nbsp;
 
-## 🙏 Thank you patrons and one-time donors for making it all worthwhile
+## We zijn (nauwelijks) aan het grammen'.
 
-2023 has not been an easy year for me personally, or for FreeSewing for that matter. The amount of time and effort that went into v3 is something that takes a lot out of you, and I am not ashamed to admit that more than any other year before I've struggled with feelings of _why am I even doing this_.
+> _Over die titel: Ik _denk_ dat mensen die jonger zijn dan ik naar Instagram verwijzen als _de gram_ en dus heb ik dat genomen en er een werkwoord van gemaakt, want wat is een betere manier om te laten zien dat ik geen idee heb waar ik het over heb._
+> _Het is ook een ingewikkelde callback naar [een blogpost van 6,5 jaar oud](https://freesewing.org/blog/freesewing-goes-jamstack) dus als je dat hebt begrepen, dan mijn complimenten aan jou, maar ik dwaal af._
+>
+> _Instagram. Ik heb het over Instagram. Of meer in het algemeen alle dingen die we doen (en niet doen) om FreeSewing te _promoten_, bewustzijn te creëren, enzovoort. Laten we het **marketing**._ noemen.
 
-However, today I feel happy and proud because FreeSewing's revenue for 2023 clocked in at **€10.222,07** ($11.301).
-As you may or may not know, [all of FreeSewing's revenue goes to Doctors Without Borders](https://freesewing.org/docs/about/pledge), which means that's €10.222.07 that went to helping some of the most vulnerable people on this planet.
+De afgelopen maanden werd ons Instagram account beheerd door Natalia, die al vele jaren een vaste waarde is in het all-star team van FreeSewing.
+Natalia heeft aangegeven dat ze wil stoppen als beheerder van FreeSewing's Instagram, dus voor de nabije toekomst wordt het weer de gebruikelijke verwaarlozing door ondergetekende.
 
-I'm particularly happy that we've climbed above the 10k mark again, after having dipped below it a few years in a row.
+Het account zelf nadert de 10k volgers en dat maakt het ons grootste communicatiekanaal, althans dat zou het zijn als we even vergeten dat deze nieuwsbrief zelf meer dan 12k abonnees heeft.
 
-That being said, inflation is also a thing so 10k today doesn't do as much good as 10k yesteryear.
-I'd love to see us get to 12k as somehow 1k/month feels like a really meaningful number.
+Of het nu gaat om ons Instagram account, deze nieuwsbrief of FreeSewing zelf, ze zijn allemaal enigszins populair ondanks een bijna volledige afwezigheid van marketing.
+Terwijl ik vele manen geleden meer moeite zou hebben gedaan om FreeSewing onder de aandacht te brengen, heb ik daar nu al jaren vrijwel niets meer aan gedaan, omdat er gewoon zoveel te doen is dat dit soort dingen nooit boven aan de lijst komen.
 
-Since v3 we've switched from a fixed pricing patron system to a model where you can set your own price, as well as send one-time donations.
-It's something to keep in mind as this season of gifts draws to a close and the days where we hear _Do they know it's Christmas time at all_ 25 times a day are behind us.
+Maar sinds versie 3 publiceren we ook geen regelmatige nieuwe releases meer, omdat dat niet meer nodig is. We maken nu gebruik van wat ik een _release stream_ noem, waarbij updates, verbeteringen en nieuwe functies aan FreeSewing.org worden doorgegeven zodra ze klaar zijn. Vers uit de oven zogezegd, in plaats van gebundeld in tijdige releases. We brengen nog steeds dingen uit (zoals v3.1 vorige week), maar we hoeven dat niet te doen voor onze eigen websites. We doen dit alleen ten behoeve van mensen die onze software voor hun eigen doeleinden gebruiken (en voor alle duidelijkheid: dat zullen we blijven doen).
 
-So, if you want to start the new year with doing some good, I'd appreciate whatever you can spare. And you can be assured it goes to people who really really need it.
+Met een miljoen dingen op mijn bord is elke vorm van _marketing_ of zelfs alleen maar praten/schrijven over wat we hebben gedaan altijd dat blikje dat naar beneden wordt geschopt.
+Releases waren een natuurlijk einde van al dat geschop. Wanneer we een nieuwe release uitbrachten, was dat een moment waarop ik meestal de tijd nam om te schrijven over wat er in de nieuwe release zat, wat er nieuw en verbeterd was, enzovoort.
+Nu we minder releases zien (niet minder updates) is er nog minder dat me aanspoort om de tijd te nemen om te schrijven/praten over wat er gebeurt in FreeSewing-land.
 
-Have a good one
+Ik heb het gevoel dat ik het hier beter zou moeten doen, maar ik weet niet helemaal zeker hoe ik dit moet aanpakken.
+Het voor de hand liggende antwoord is om je aan te sluiten bij de _content creators_ die deze platforms gebruiken om hun persoonlijke merk of side-hustle te promoten.
+Maar ik weet uit ervaring dat proberen te _concurreren_ in deze ruimte iets is dat een negatieve invloed heeft op mijn geestelijke gezondheid, iets waar ik zonder dit alles al genoeg mee worstel.
+Het is de reden dat ik (persoonlijk) Instagram in de eerste plaats heb verlaten. Op dat moment -- nu meer dan vier jaar geleden -- schreef ik het volgende in mijn afscheidspost:
+
+> _Ik merk dat het openen van de Instagram app een netto negatief effect heeft op mijn motivatie om de tijd en moeite te investeren in het maken of bouwen van de dingen die ik de moeite waard vind._
+> _Er is een oppervlakkigheid die het platform doordringt en die ik niet helemaal lijk te kunnen blokkeren. Lang verhaal kort, het slechte weegt nu veel zwaarder dan het goede, althans voor mij persoonlijk._
+
+Dus ik ben een beetje huiverig om weer mee te doen, maar ik ben me ook bewust van het feit dat geen enkele hoeveelheid werk er echt toe doet als mensen er niet op de een of andere manier achter kunnen komen.
+
+Dus ik weet niet zeker hoe ik dit voor elkaar ga krijgen, en ik ben bang dat er geen grote conclusie is. Ik wilde alleen mijn gedachten hierover delen.
+Ik denk dat we wel zullen zien hoe het gaat. Je kunt het zelf ontdekken, we zijn [@freesewing_org](https://www.instagram.com/freesewing_org/) op _the gram_.
+
+&nbsp;
+
+***
+
+&nbsp;
+
+## 🌎 Iemand anders vergeten dat deze nieuwsbrief nu meertalig is? (1-minuut lezen - door joost)
+
+Steek je hand op als je een beetje uit het oog bent verloren dat de nieuwsbrief van FreeSewing nu beschikbaar is in alle 6 talen die we ondersteunen (Engels, Spaans, Frans, Duits, Nederlands, Oekraïens) en je oudejaarsavond en -dag verwoed hebt doorgebracht om ervoor te zorgen dat het versturen van de nieuwsbrief in al die talen ook echt werkt.
+
+Alleen ik?
+
+Ok, hopelijk is het uiteindelijk allemaal goed gegaan. Maar ter herinnering: Je kunt deze nieuwsbrief in elk van de bovenstaande talen krijgen.
+
+&nbsp;
+
+***
+
+&nbsp;
+
+## 🙏 Bedankt mecenassen en eenmalige donateurs die het allemaal de moeite waard maken
+
+2023 is geen gemakkelijk jaar geweest voor mij persoonlijk, of voor FreeSewing trouwens. De hoeveelheid tijd en moeite die in v3 is gaan zitten, vergt veel van je en ik schaam me er niet voor om toe te geven dat ik meer dan in enig ander jaar geworsteld heb met gevoelens van _waarom doe ik dit eigenlijk_.
+
+Maar vandaag voel ik me blij en trots omdat de omzet van FreeSewing voor 2023 is geklokt op **€10.222,07** ($11.301).
+Zoals je misschien wel of niet weet, gaan [alle inkomsten van FreeSewing naar Artsen zonder Grenzen](https://freesewing.org/docs/about/pledge), wat betekent dat er €10.222,07 is gegaan naar het helpen van de meest kwetsbare mensen op deze planeet.
+
+Ik ben vooral blij dat we weer boven de 10k zijn gekomen, nadat we er een paar jaar achter elkaar onder zijn gedoken.
+
+Dat gezegd hebbende, inflatie is ook een dingetje, dus 10k van vandaag is niet zo goed als 10k van vroeger.
+Ik zou graag zien dat we 12k halen, want op de een of andere manier voelt 1k/maand als een echt betekenisvol getal.
+
+Sinds v3 zijn we overgestapt van een patronensysteem met een vaste prijs naar een model waarbij je je eigen prijs kunt bepalen en ook eenmalige donaties kunt sturen.
+Het is iets om in gedachten te houden als dit seizoen van cadeaus ten einde loopt en de dagen dat we 25 keer per dag _Weten ze wel dat het Kerstmis is_ horen, achter ons liggen.
+
+Dus als je het nieuwe jaar wilt beginnen met iets goeds doen, dan stel ik alles wat je kunt missen zeer op prijs. En je kunt er zeker van zijn dat het naar mensen gaat die het echt nodig hebben.
+
+Veel plezier
 
 joost
