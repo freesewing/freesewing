@@ -11,4 +11,3 @@ too negative, the leggings will be too constricting, and limiting movement. If y
 negative enough, the leggings will not hug your legs and torso. The fabric should be stretched in all
 places, without being too tight.
 </Note>
-
