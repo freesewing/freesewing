@@ -67,10 +67,10 @@ Wenn du Zeit hast, kannst du gerne vorbeikommen.
 
 Die FreeSewing-Abende finden donnerstags in geraden Wochen von 19:00 bis 22:00 Uhr statt. Die nächsten
 sind am 4. und 18. Januar. Du kannst die Termine auch auf dem
-FreeSewing Discord Server unter dem Reiter Events (oben links) finden.  Du kannst mir
-unter @lexander2002 auf Discord oder Diana (der Hauptorganisatorin) unter
-dianawildschut\@posteo.net eine Nachricht schicken, damit wir wissen, dass du kommst :-) Du findest De War
-im Heiligenbergerweg 34, 3816 AK, in Amersfoort.  Die Menschen sind eingeladen, die Einrichtungen von
+FreeSewing Discord Server unter dem Reiter Events (oben links) finden.  You can message me
+at @lexander2002 on Discord or Diana (the main organizer) at
+dianawildschut\@posteo.net to let us know you’re coming :-) You can find De War
+at Heiligenbergerweg 34, 3816 AK, in Amersfoort.  Die Menschen sind eingeladen, die Einrichtungen von
 zu nutzen, aber auch einen Beitrag zum Lebensunterhalt von De War zu leisten. Die Website
 arbeitet auf Spendenbasis, also nach dem Prinzip der "wahrgenommenen Wertschätzung".
 
@@ -104,23 +104,23 @@ Wir haben zwei neue Designs auf FreeSewing.org veröffentlicht, die du vielleich
 
 [Otis](https://freesewing.org/designs/otis) ist ein Babystrampler:
 
-> \*Als meine Nichte ein Baby bekam, wusste ich genau, was zu tun war: Ich nähte ihr ein paar Kleider für das Kleine. Und ich hatte noch nie Kleidung für Kleinkinder gemacht. What they should look like was easy. Ich hatte vor Jahren selbst Kinder, und die einteiligen Sachen sollten einfach zu machen sein.
+> _When my niece had a baby, I knew just what to do; sew her some clothes for the little one. Und ich hatte noch nie Kleidung für Kleinkinder gemacht. What they should look like was easy. I had kids of my own years ago, and the one-piece things should be easy to make._
 >
-> _Was ich nicht hatte, war ein Muster. That meant that I should get one, or make one. Die Entscheidung fiel mir nicht schwer, denn FreeSewing hatte definitiv zu wenig Designs für Kleinkinder. Infants have the nicequality that while they are growing, they grow in each direction at the same pace. Die einzige wirkliche Herausforderung ist, dass ihr Kopf im Verhältnis viel größer ist als bei älteren Exemplaren. Ein normales Hemd mit Öffnung funktioniert nicht. But there are easy solutions to that, and these are used by allromper making manufacturers._
+> _What I did not have was a pattern. That meant that I should get one, or make one. Die Entscheidung fiel mir nicht schwer, denn FreeSewing hatte definitiv zu wenig Designs für Kleinkinder. Infants have the nicequality that while they are growing, they grow in each direction at the same pace. Die einzige wirkliche Herausforderung ist, dass ihr Kopf im Verhältnis viel größer ist als bei älteren Exemplaren. Ein normales Hemd mit Öffnung funktioniert nicht. But there are easy solutions to that, and these are used by allromper making manufacturers._
 >
-> _Ich habe das Halsdesign mit einem einfachen Körperdesign und einem Schnappverschluss kombiniert. Easy short orlong sleeves completed the design._
+> _I incorporated the neck design with a simple body design, and a snap closure. Easy short orlong sleeves completed the design._
 
 und [Lumira](https://freesewing.org/designs/lumira) ist ein Paar Leggings:
 
-> \*Ich begann mit der Arbeit an diesem Design, als ich beschloss, dass ich mehr Leggings brauche, um im Herbst und Winter zu radeln. Mein vorheriges Paar wurde mit einem kommerziellen Muster hergestellt und hat mir gute Dienste geleistet. Die einfache Lösung wäre gewesen, einfach mehr zu machen. Aber wenn ich ein paar davon brauche, sollte es mehr Leute geben, die sie brauchen.
+> _I started working on this design when I decided I needed more leggings to cycle in the fall and winter. Mein vorheriges Paar wurde mit einem kommerziellen Muster hergestellt und hat mir gute Dienste geleistet. Die einfache Lösung wäre gewesen, einfach mehr zu machen. But if I need some of these, there should be more people that do._
 >
-> _Ich habe mich entschieden, dieses Schnittmuster so zu gestalten, dass ein Taillenband dazugehört. Das sollte für eine gute Passform bei einer Vielzahl von Körpertypen sorgen. It uses a gusset that is relatively large in the back. This is both a nice design feature,and provides support for the rear. Um dies zu verdeutlichen, könntest du einen kontrastierenden Stoff für diesen Teil verwenden._
+> _I decided to make this pattern so it allows for a waistband to be part of it. Das sollte für eine gute Passform bei einer Vielzahl von Körpertypen sorgen. It uses a gusset that is relatively large in the back. This is both a nice design feature,and provides support for the rear. To exemplify this, you could use a contrasting fabric for this part._
 >
-> \*Der Zwickel des Musters kann nach vorne verlängert werden, um eine Ausbuchtung zu ermöglichen. Und da ich wollte, dass dieses Schnittmuster auch zum Radfahren verwendet werden kann, gibt es die Option, ein Sitzpolster zu verwenden, wie man es in den meisten Radhosen findet.
+> _The pattern’s gusset can be extended to the front to allow for a bulge. And since I wanted this pattern to be able to be used for cycling, there is an option to use a chamois, the padding you find in most cycling shorts._
 >
-> \*Dieses Muster hat keine Außennähte, so dass interessante Motive auf dem Stoff nicht verzerrt werden.
+> _This is a pattern that has no outside seams, so interesting designs on the fabric will not be distorted._
 
-Ich schätze Wouters Ansatz sehr: Er hat seine eigenen Bedürfnisse, die ihn zu diesen Entwürfen veranlassen, aber er ist bereit, die Extrameile zu gehen, um dieses Problem nicht nur für sich selbst, sondern auch für uns alle zu lösen. Das ist auf eine sehr greifbare Weise die _raison d'être_ von FreeSewing.
+Ich schätze Wouters Ansatz sehr: Er hat seine eigenen Bedürfnisse, die ihn zu diesen Entwürfen veranlassen, aber er ist bereit, die Extrameile zu gehen, um dieses Problem nicht nur für sich selbst, sondern auch für uns alle zu lösen. It is in a very tangible way the _raison d'être_ of FreeSewing.
 
 &nbsp;
 
@@ -130,10 +130,10 @@ Ich schätze Wouters Ansatz sehr: Er hat seine eigenen Bedürfnisse, die ihn zu 
 
 ## 📷 Wir sind (kaum) grammatisch
 
-> _Anmerkung zum Titel: Ich _denke_, dass Leute, die jünger sind als ich, Instagram als _The Gram_ bezeichnen, und so habe ich das als Verb benutzt, denn wie könnte ich besser zeigen, dass ich keine Ahnung habe, wovon ich rede._
-> _Es ist auch ein verworrener Rückruf auf [einen 6,5 Jahre alten Blogpost] (https\://freesewing.org/blog/freesewing-goes-jamstack), also wenn du das verstanden hast, dann Hut ab, aber ich schweife ab._
+> _About that title: I _think_ people younger than me refer to Instagram as _the gram_ and so I took that and made it a verb because what better way to demonstrate that I have no idea what I'm talking about._
+> _It's also a convoluted callback to [a 6-and-a-half year old blogpost](https://freesewing.org/blog/freesewing-goes-jamstack) so if you got that then kudos to you, but I digress._
 >
-> \*Instagram. Ich spreche von Instagram. Oder ganz allgemein all die Dinge, die wir tun (und nicht tun), um FreeSewing zu fördern, das Bewusstsein zu schärfen und so weiter. Nennen wir es **marketing**.
+> _Instagram. Ich spreche von Instagram. Or more generally all the things we do (and do not do) to _promote_ FreeSewing, raise awwareness, and so on. Let's call it **marketing**._
 
 Seit einigen Monaten wird unser Instagram-Account von Natalia verwaltet, die schon seit vielen Jahren zum FreeSewing-Allstar-Team gehört.
 Natalia hat ihren Wunsch geäußert, als FreeSewing-Betreuerin auf Instagram zurückzutreten, also wird es in absehbarer Zeit wieder die übliche Vernachlässigung durch meine Wenigkeit geben.
@@ -143,24 +143,24 @@ Der Account selbst nähert sich der 10.000-Follower-Marke, was ihn zu unserem gr
 Ob es nun unser Instagram-Account, dieser Newsletter oder FreeSewing selbst ist, sie sind alle irgendwie beliebt, obwohl wir fast kein Marketing betreiben.
 Während ich mich vor vielen Monden mehr darum bemüht habe, FreeSewing bekannt zu machen, habe ich seit Jahren so gut wie nichts mehr dafür getan, weil es einfach so viel zu tun gibt, dass diese Dinge nie ganz oben auf der Warteliste stehen.
 
-Allerdings veröffentlichen wir seit Version 3 auch keine regelmäßigen neuen Versionen mehr, weil wir das nicht müssen. Wir verwenden jetzt das, was ich als _Release Stream_ bezeichne, bei dem Updates, Verbesserungen und neue Funktionen sofort nach ihrer Fertigstellung in FreeSewing.org eingespeist werden. Sozusagen frisch aus dem Ofen und nicht gebündelt in zeitnahen Veröffentlichungen. Wir veröffentlichen immer noch Dinge (wie v3.1 letzte Woche), aber für unsere eigenen Websites müssen wir das nicht mehr tun. Wir tun dies nur zum Vorteil derjenigen, die unsere Software für ihre eigenen Zwecke nutzen (und um es klar zu sagen: Wir werden dies auch weiterhin tun).
+Allerdings veröffentlichen wir seit Version 3 auch keine regelmäßigen neuen Versionen mehr, weil wir das nicht müssen. We are now utilizing what I tend to refer to as a _release stream_ where updates, improvementsand new features are drip-fed to FreeSewing.org as soon as they are finished. Sozusagen frisch aus dem Ofen und nicht gebündelt in zeitnahen Veröffentlichungen. Wir veröffentlichen immer noch Dinge (wie v3.1 letzte Woche), aber für unsere eigenen Websites müssen wir das nicht mehr tun. Wir tun dies nur zum Vorteil derjenigen, die unsere Software für ihre eigenen Zwecke nutzen (und um es klar zu sagen: Wir werden dies auch weiterhin tun).
 
-Bei einer Million Dinge, die ich zu erledigen habe, ist jede Art von _Marketing_ oder auch nur darüber zu reden/schreiben, was wir so gemacht haben, immer der Tropfen, der das Fass zum Überlaufen bringt.
+With a million things on my plate, any sort of _marketing_ or even merely talking/writing about what we've been up to is always that can that gets kicked down the road.
 Freisetzungen waren ein natürlicher Stopp für all das Dosenschießen. Jedes Mal, wenn wir eine neue Version herausbrachten, nahm ich mir die Zeit, darüber zu schreiben, was in die neue Version eingeflossen ist, was neu ist, was verbessert wurde und so weiter.
 Jetzt, wo wir weniger Veröffentlichungen (nicht weniger Updates) sehen werden, gibt es noch weniger Anreize für mich, mir die Zeit zu nehmen, über die Geschehnisse im FreeSewing-Land zu schreiben/zu sprechen.
 
 Ich habe das Gefühl, dass ich das besser machen sollte, aber ich bin mir nicht ganz sicher, wie ich das machen soll.
-Die offensichtliche Antwort ist, sich den _Inhaltserstellern_ anzuschließen, die diese Plattformen nutzen, um ihre persönliche Marke oder ihren Nebenerwerb voranzutreiben.
-Aber ich weiß aus Erfahrung, dass der Versuch, in diesem Bereich zu _konkurrieren_, sich negativ auf meine psychische Gesundheit auswirkt, mit der ich auch ohne all das zu kämpfen habe.
+The obvious answer is to join the _content creators_ who use these platforms to push their personal brand or side-hustle.
+But I know from experience that trying to _compete_ in this space is something that tends to negatively impact my mental health, which is something I struggle plenty with without the need for all this.
 Das ist der Grund, warum ich (persönlich) Instagram überhaupt erst verlassen habe. Damals - vor nun mehr als vier Jahren - schrieb ich in meinem Abschiedspost Folgendes:
 
-> \*Ich finde, dass das Öffnen der Instagram-App einen negativen Effekt auf meine Motivation hat, Zeit und Mühe zu investieren, um Dinge zu machen oder zu bauen, die ich für lohnenswert halte.
-> \*Es gibt eine Oberflächlichkeit, die die Plattform durchdringt und die ich anscheinend nicht ganz ausblenden kann. Langer Rede kurzer Sinn: Das Schlechte überwiegt jetzt bei weitem das Gute, zumindest für mich persönlich.
+> _I find that opening the Instagram app has a net negative effect on my motivation to invest the time and effort to make or build the things I believe are worthwhile._
+> _There’s a shallowness that permeates the platform, and that I seem unable to completely block out. Long story short, the bad is now vastly outweighing the good, at least for me personally._
 
 Ich bin also ein bisschen ängstlich, wieder mitzumachen, aber ich bin mir auch bewusst, dass jede Arbeit nichts zählt, wenn die Leute nicht irgendwie davon erfahren können.
 
 Ich bin mir also nicht sicher, wie ich das hinbekomme, und ich fürchte, dass es hier keine große Schlussfolgerung gibt. Ich wollte nur meine Gedanken zu diesem Thema teilen.
-Wir werden sehen, wie es läuft. Du kannst es selbst herausfinden, wir sind [@freesewing_org](https://www.instagram.com/freesewing_org/) auf _the gram_.
+Wir werden sehen, wie es läuft. You can find out for yourself, we're [@freesewing_org](https://www.instagram.com/freesewing_org/) on _the gram_.
 
 &nbsp;
 
@@ -184,7 +184,7 @@ Ok, dann hoffen wir mal, dass am Ende alles gut gegangen ist. Aber zur Erinnerun
 
 ## 🙏 Vielen Dank an die Gönner und einmaligen Spender, die das alles möglich gemacht haben.
 
-2023 war kein einfaches Jahr für mich persönlich und auch nicht für FreeSewing. Die Menge an Zeit und Mühe, die in v3 geflossen ist, verlangt einem viel ab, und ich schäme mich nicht, zuzugeben, dass ich mehr als in jedem anderen Jahr zuvor mit dem Gefühl gekämpft habe, _warum mache ich das überhaupt_.
+2023 war kein einfaches Jahr für mich persönlich und auch nicht für FreeSewing. The amount of time and effort that went into v3 is something that takes a lot out of you, and I am not ashamed to admit that more than any other year before I've struggled with feelings of _why am I even doing this_.
 
 Aber heute bin ich glücklich und stolz, weil FreeSewing im Jahr 2023 einen Umsatz von **10.222,07€** ($11.301) erzielt hat.
 Wie du vielleicht weißt, gehen [alle Einnahmen von FreeSewing an Ärzte ohne Grenzen] (https\://freesewing.org/docs/about/pledge). Das bedeutet, dass 10.222,07 € für einige der bedürftigsten Menschen auf diesem Planeten gespendet wurden.
@@ -195,7 +195,7 @@ Allerdings gibt es auch eine Inflation, so dass 10.000 Euro heute nicht mehr so 
 Ich würde mich freuen, wenn wir 12k erreichen, denn irgendwie fühlt sich 1k/Monat wie eine wirklich sinnvolle Zahl an.
 
 Seit Version 3 sind wir von einem Patensystem mit festen Preisen zu einem Modell übergegangen, bei dem du deinen eigenen Preis festlegen und auch einmalige Spenden senden kannst.
-Das sollte man im Hinterkopf behalten, wenn sich die Saison der Geschenke dem Ende zuneigt und die Tage, an denen wir 25 Mal am Tag _Wissen sie überhaupt, dass Weihnachten ist_ hören, hinter uns liegen.
+It's something to keep in mind as this season of gifts draws to a close and the days where we hear _Do they know it's Christmas time at all_ 25 times a day are behind us.
 
 Wenn du also das neue Jahr damit beginnen willst, etwas Gutes zu tun, würde ich mich freuen, wenn du etwas entbehren könntest. Und du kannst sicher sein, dass es an Menschen geht, die es wirklich brauchen.
 
