@@ -35,4 +35,9 @@ export function adminRoutes(tools) {
   app.get('/admin/impersonate/:id/jwt', passport.authenticate(...jwt), (req, res) =>
     Admin.impersonateUser(req, res, tools)
   )
+
+  // Get newsletter subscribers
+  app.get('/admin/subscribers', passport.authenticate(...jwt), (req, res) =>
+    Admin.getSubscribers(req, res, tools)
+  )
 }

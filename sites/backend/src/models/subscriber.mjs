@@ -190,3 +190,26 @@ SubscriberModel.prototype.verifySubscription = async function (body) {
 
   return this
 }
+
+/*
+ * Searches for subscribers
+ *
+ * @param {body} object - The request body
+ * @returns {UserModel} object - The UserModel
+ */
+SubscriberModel.prototype.search = async function (q = {}) {
+  /*
+   * Find subscribers based on passed query
+   */
+  let subscribers
+  try {
+    subscribers = await this.prisma.subscriber.findMany({
+      where: q,
+    })
+  } catch (err) {
+    console.log(err)
+    subscribers = []
+  }
+
+  return subscribers
+}
