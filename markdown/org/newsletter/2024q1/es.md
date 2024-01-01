@@ -155,8 +155,7 @@ La respuesta obvia es unirse a los _creadores de contenido_ que utilizan estas p
 Pero sé por experiencia que intentar _competir_ en este espacio es algo que tiende a repercutir negativamente en mi salud mental, que es algo con lo que lucho bastante sin necesidad de todo esto.
 Es la razón por la que (personalmente) dejé Instagram en primer lugar. En aquel momento -hace ahora más de cuatro años- escribí lo siguiente en mi post de despedida:
 
-> \*Me parece que abrir la aplicación de Instagram tiene un efecto neto negativo en mi motivación para invertir tiempo y esfuerzo en hacer o construir las cosas que creo que merecen la pena.
-> _Hay una superficialidad que impregna la plataforma y que me parece imposible bloquear por completo. Resumiendo, ahora lo malo supera con creces a lo bueno, al menos para mí personalmente._
+> \*Me parece que abrir la aplicación de Instagram tiene un efecto neto negativo en mi motivación para invertir tiempo y esfuerzo en hacer o construir las cosas que creo que merecen la pena. Resumiendo, ahora lo malo supera con creces a lo bueno, al menos para mí personalmente._
 
 Así que me da un poco de miedo volver a unirme a la refriega, pero también soy consciente de que ningún trabajo importa realmente a menos que la gente pueda enterarse de él de alguna manera.
 
