@@ -95,6 +95,51 @@ function draftHammerLoop({
       .addClass('fabric sa')
   }
 
+  macro('hd', {
+    id: 'wWidth',
+    from: points.topLeftFold2,
+    to: points.topRightFold2,
+    y: points.topLeftFold2.y - 15,
+  })
+  macro('vd', {
+    id: 'hBase',
+    from: points.topRightInside,
+    to: points.bottomRightInside,
+    x: points.topRightFold2.x + (sa + 15),
+    noStartMarker: true,
+    noEndMarker: true,
+  })
+  macro('vd', {
+    id: 'hFoldBottom',
+    from: points.bottomRightInside,
+    to: points.bottomRightFold1,
+    x: points.topRightFold2.x + (sa + 15),
+    noStartMarker: true,
+    noEndMarker: true,
+  })
+  macro('vd', {
+    id: 'hFoldTop1',
+    from: points.topRightFold1,
+    to: points.topRightInside,
+    x: points.topRightFold2.x + (sa + 15),
+    noStartMarker: true,
+    noEndMarker: true,
+  })
+  macro('vd', {
+    id: 'hFoldTop2',
+    from: points.topRightFold2,
+    to: points.topRightFold1,
+    x: points.topRightFold2.x + (sa + 15),
+    noStartMarker: true,
+    noEndMarker: true,
+  })
+  macro('vd', {
+    id: 'hTotal',
+    from: points.topRightFold2,
+    to: points.bottomRightFold1,
+    x: points.topRightFold2.x + (sa + 30),
+  })
+
   points.title = points.topLeftFold2
     .shiftFractionTowards(points.bottomLeftFold1, 0.5)
     .translate(scale * 5, 0)
