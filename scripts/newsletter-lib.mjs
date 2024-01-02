@@ -115,7 +115,9 @@ const send = async (test = true) => {
       if (l > 0) {
         const body = mustache.render(template, {
           ...i18n[lang],
-          unsubscribe: `${backend}newsletter/unsubscribe/${sub.ehash}`,
+          unsubscribe: `https://freesewing.org${
+            lang === 'en' ? '/' : '/' + lang + '/'
+          }newsletter/unsubscribe?x=${sub.ehash}`,
           content,
         })
         console.log(`[${lang}] ${l}/${subs} (${i}) Sending to ${sub.email}`)

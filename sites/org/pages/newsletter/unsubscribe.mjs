@@ -27,25 +27,22 @@ const NewsletterPage = ({ page }) => {
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
 
-  const [confirmed, setConfirmed] = useState(false)
-  const [id, setId] = useState()
   const [ehash, setEhash] = useState()
+  const [done, setDone] = useState(false)
 
   useEffect(() => {
-    const newId = getSearchParam('id')
-    const newEhash = getSearchParam('ehash')
-    if (newId !== id) setId(newId)
+    const newEhash = getSearchParam('x')
     if (newEhash !== ehash) setEhash(newEhash)
-  }, [id, ehash])
+  }, [ehash])
 
   const handler = async () => {
     setLoadingStatus([true, 'status:contactingBackend'])
-    await backend.confirmNewsletterUnsubscribe({ id, ehash })
+    await backend.newsletterUnsubscribe(ehash)
     setLoadingStatus([true, 'status:settingsSaved', true, true])
-    setConfirmed(true)
+    setDone(true)
   }
 
-  if (!id || !ehash)
+  if (!ehash)
     return (
       <PageWrapper {...page} title={false}>
         <Hodl />
@@ -55,7 +52,7 @@ const NewsletterPage = ({ page }) => {
   return (
     <PageWrapper {...page} title={false}>
       <div className="max-w-xl">
-        {confirmed ? (
+        {done ? (
           <>
             <h1>{t('newsletter:newsletter')}</h1>
             <p>{t('newsletter:thanksDone')}</p>
@@ -76,7 +73,7 @@ const NewsletterPage = ({ page }) => {
               <p>
                 {t('newsletter:faqLead')}:{' '}
                 <PageLink
-                  href="/docs/faq/newsletter/why-unsubscribe-multiple-clicks"
+                  href="/docs/about/faq/newsletter/why-unsubscribe-multiple-clicks"
                   txt={t('newsletter:unsubscribeWhy')}
                 />
               </p>
