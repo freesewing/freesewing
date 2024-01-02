@@ -95,7 +95,7 @@ export const NewsletterSettings = ({ welcome = false, bare = false }) => {
         <p>{t('newsletter:subscribePs')}</p>
         <p>
           <PageLink
-            href={`/newsletter/unsubscribe?x=${account.ehash}`}
+            href={`/newsletter/unsubscribe?x=${account?.ehash}`}
             txt={t('newsletter:unsubscribeLink')}
           />
         </p>
