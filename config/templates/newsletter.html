@@ -19,7 +19,7 @@
     <!-- Tell iOS not to automatically link certain text strings. -->
     <meta name="color-scheme" content="light" />
     <meta name="supported-color-schemes" content="light" />
-    <title>FreeSewing Newsletter</title>
+    <title>{{ title }}</title>
     <!--   The title tag shows in email notifications, like Android 4.4. -->
 
     <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
@@ -323,7 +323,7 @@
               "
             >
               <a href="https://freesewing.org/patrons/join"
-                ><b>Support FreeSewing: Become a Patron</b></a
+                 ><b>{{ support }}</b></a
               >
             </td>
           </tr>
@@ -356,8 +356,7 @@
               >
               <br /><br />
               <unsubscribe style="color: #ffffff; text-decoration: underline">
-                You can <a href="{{{ unsubscribe }}}">unsubscribe</a> at any time. Or just reply and
-                tell us you want out.
+              <a href="{{{ unsubscribe }}}">{{ unsub1 }}</a><br />{{ unsub2 }}
               </unsubscribe>
             </td>
           </tr>
