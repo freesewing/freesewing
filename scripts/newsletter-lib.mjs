@@ -7,12 +7,13 @@ import remarkRehype from 'remark-rehype'
 import rehypeFormat from 'rehype-format'
 import rehypeStringify from 'rehype-stringify'
 import remarkGfm from 'remark-gfm'
+import remarkSmartypants from 'remark-smartypants'
+import remarkFrontmatter from 'remark-frontmatter'
 import mustache from 'mustache'
 import { testers } from '../config/newsletter-testers.mjs'
 import { fileURLToPath } from 'url'
 import { SESv2Client, SendEmailCommand } from '@aws-sdk/client-sesv2'
 
-console.log({ edition: process.env.NL_EDITION })
 // Current working directory
 const cwd = path.dirname(fileURLToPath(import.meta.url))
 
@@ -43,13 +44,13 @@ const i18n = {
     unsub1: 'Sie können sich jederzeit wieder abmelden',
     unsub2: 'Oder antworten Sie uns und sagen Sie uns, dass Sie nicht mehr wollen',
   },
-  de: {
+  es: {
     title: 'FBoletín FreeSewing',
     support: 'Apoya FreeSewing: Hazte mecenas',
     unsub1: 'Puedes darte de baja en cualquier momento',
     unsub2: 'O contesta y dinos que quieres darte de baja',
   },
-  de: {
+  uk: {
     title: 'Інформаційний бюлетень FreeSewing',
     support: 'Підтримайте FreeSewing: Стати меценатом',
     unsub1: 'Ви можете відписатися в будь-який час',
@@ -61,6 +62,8 @@ const asHtml = async (text) => {
   const content = await unified()
     .use(remarkParse)
     .use(remarkGfm)
+    .use(remarkSmartypants)
+    .use(remarkFrontmatter, ['yaml'])
     .use(remarkRehype)
     .use(rehypeFormat)
     .use(rehypeStringify)
@@ -71,13 +74,13 @@ const asHtml = async (text) => {
 
 const getSubscribers = async (test = true) => {
   if (test) return testers
-  let res = await axios.get(`${backend}admin/subscribers`, {
+  let res = await axios.get(`${backend}admin/subscribers/key`, {
     auth: {
       username: process.env.NL_API_KEY,
       password: process.env.NL_API_SECRET,
     },
   })
-  if (res.data) return res.data
+  if (res.data && res.data.subscribers) return res.data.subscribers
   else return false
 }
 
@@ -90,8 +93,8 @@ const send = async (test = true) => {
   const client = new SESv2Client({ region: 'us-east-1' })
 
   let i = 1
-  let l = 1
   for (const lang in subscribers) {
+    let l = 1
     let edition
     try {
       edition = await axios.get(
@@ -102,25 +105,20 @@ const send = async (test = true) => {
       console.log(err)
       process.exit()
     }
-    console.log(edition.data)
-    const text = edition.data[0].body
+    const text = edition.data
     const content = await asHtml(text)
-
-    console.log(content)
-
-    process.exit()
 
     subscribers[lang].sort()
     let subs = subscribers[lang].length
+
     for (let sub of subscribers[lang]) {
-      if (i > 0) {
-        let unsub = `${backend}newsletter/unsubscribe/${sub.ehash}`
-        inject.unsubscribe = unsub
-        let body = mustache.render(template, {
+      if (l > 0) {
+        const body = mustache.render(template, {
           ...i18n[lang],
+          unsubscribe: `${backend}newsletter/unsubscribe/${sub.ehash}`,
           content,
         })
-        console.log(`[${lang}] ${i}/${subs} Sending to ${sub.email}`)
+        console.log(`[${lang}] ${l}/${subs} (${i}) Sending to ${sub.email}`)
 
         // Via API
         const command = new SendEmailCommand({
@@ -139,7 +137,7 @@ const send = async (test = true) => {
               },
               Subject: {
                 Charset: 'utf-8',
-                Data: 'FreeSewing newsletter: Autumn 2023',
+                Data: i18n[lang].title,
               },
             },
           },
@@ -151,14 +149,15 @@ const send = async (test = true) => {
           //FromEmailAddressIdentityArn: "arn:aws:ses:us-east-1:550348293871:identity/freesewing.org",
           //ReplyToAddresses: us,
         })
-        //try {
-        //  await client.send(command)
-        //} catch (err) {
-        //  console.log(err)
-        //  return false
-        //}
+        try {
+          await client.send(command)
+        } catch (err) {
+          console.log(err)
+          return false
+        }
       }
       i++
+      l++
     }
   }
 }
