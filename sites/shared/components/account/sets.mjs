@@ -710,11 +710,9 @@ export const Sets = () => {
               onClick={toggleSelectAll}
               checked={sets.length === selCount}
             />
-            {selCount ? (
-              <button className="btn btn-error" onClick={removeSelectedSets}>
-                <TrashIcon /> {selCount} {t('sets')}
-              </button>
-            ) : null}
+            <button className="btn btn-error" onClick={removeSelectedSets} disabled={selCount < 1}>
+              <TrashIcon /> {selCount} {t('sets')}
+            </button>
           </div>
         </>
       ) : (
