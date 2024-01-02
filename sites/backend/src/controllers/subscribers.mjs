@@ -25,12 +25,12 @@ SubscribersController.prototype.subscribeConfirm = async (req, res, tools) => {
 }
 
 /*
- * Unsubscribe confirmation
+ * Unsubscribe
  * See: https://freesewing.dev/reference/backend/api
  */
-SubscribersController.prototype.unsubscribeConfirm = async (req, res, tools) => {
+SubscribersController.prototype.unsubscribe = async (req, res, tools) => {
   const Subscriber = new SubscriberModel(tools)
-  await Subscriber.unsubscribeConfirm(req)
+  await Subscriber.unsubscribe(req)
 
   return Subscriber.sendResponse(res)
 }

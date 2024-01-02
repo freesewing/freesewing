@@ -33,7 +33,7 @@ const NewsletterPage = ({ page }) => {
 
   useEffect(() => {
     const newId = getSearchParam('id')
-    const newEhash = getSearchParam('ehash')
+    const newEhash = getSearchParam('check')
     if (newId !== id) setId(newId)
     if (newEhash !== ehash) setEhash(newEhash)
   }, [id, ehash])
@@ -49,6 +49,7 @@ const NewsletterPage = ({ page }) => {
     return (
       <PageWrapper {...page} title={false}>
         <Hodl />
+        <pre>{JSON.stringify({ id, ehash })}</pre>
       </PageWrapper>
     )
 
@@ -63,7 +64,7 @@ const NewsletterPage = ({ page }) => {
               <p>{t('newsletter:subscribePs')}</p>
               <p>
                 <PageLink
-                  href={`/newsletter/unsubscribe/${id}/${ehash}`}
+                  href={`/newsletter/unsubscribe?x=${ehash}`}
                   txt={t('newsletter:unsubscribeLink')}
                 />
               </p>
@@ -85,7 +86,7 @@ const NewsletterPage = ({ page }) => {
               <p>
                 {t('newsletter:faqLead')}:{' '}
                 <PageLink
-                  href="/docs/faq/newsletter/why-subscribe-multiple-clicks"
+                  href="/docs/about/faq/newsletter/why-subscribe-multiple-clicks"
                   txt={t('newsletter:subscribeWhy')}
                 />
               </p>
