@@ -183,7 +183,7 @@ AdminModel.prototype.getSubscribers = async function ({ user }) {
   /*
    * Enforce RBAC
    */
-  if (!this.rbac.admin(user)) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.support(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   const all = {}
 
