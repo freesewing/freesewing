@@ -10183,10 +10183,10 @@ nested-error-stacks@^2.0.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.1.tgz#26c8a3cee6cc05fbcf1e333cd2fc3e003326c0b5"
   integrity sha512-9iN1ka/9zmX1ZvLV9ewJYEk9h7RyRRtqdK0woXcqohu8EWIerfPUjYJPg0ULy0UqP7cslmdGc8xKDJcojlKiaw==
 
-next-i18next@15.1.1:
-  version "15.1.1"
-  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-15.1.1.tgz#9fa04bb0260b55cb315dbc437912a991b1b914fa"
-  integrity sha512-IueFofP7Z9G41VjSPX/LdKhjYDDXq/iLAUFap7Rcz/MlsjLQMC7aktzBslhKH6GBYLOXsuhAO98goBFQBdhelg==
+next-i18next@15.1.2:
+  version "15.1.2"
+  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-15.1.2.tgz#3965f2c470b88763ded56b43f2a59c763354ef4b"
+  integrity sha512-HfGVe0TRba9b+9jU9w7DJmOXobV7PTFxEeTEBYom/7HhKbTCspLzxAfzfhdaQSlCIbCJmXNeQAoWzXQ5wffsmA==
   dependencies:
     "@babel/runtime" "^7.23.2"
     "@types/hoist-non-react-statics" "^3.3.4"
