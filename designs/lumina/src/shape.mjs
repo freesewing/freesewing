@@ -153,9 +153,6 @@ const createSidePoints = ({
             ? measurement - fixedSidePanel
             : width
           : width
-    // const reduction = ratio == 0 ? measurement : width
-    console.log({ i: i, p: prefix + postfix + names[i], f: fixedSidePanel })
-    console.log({ m: measurement, w: width, mw: measurement - width, rf: ratioFixed })
     if (i == 0) {
       points[prefix + postfix + names[i]] = points[prefix + names[i]].shift(
         prefix == 'front' ? 180 : 0,
@@ -205,8 +202,8 @@ const smoothPoints = (points, prefix, postfix, names, smoothness) => {
   }
 }
 
-export const points = {
-  name: 'lumina.points',
+export const shape = {
+  name: 'lumina.shape',
   measurements: [
     'waist',
     'waistBack',
@@ -413,35 +410,17 @@ export const points = {
       .move(points.backWaist)
       .curve(points.backWaistCp, points.backHipsCp2, points.backHips)
       .curve(points.backHipsCp1, points.backCrossSeamCp, points.middleCrossSeam)
-
-    smoothPoints(
-      points,
-      'front',
-      'Side',
-      ['Ankle', 'Knee', 'UpperLeg', 'Seat', 'Waist'],
-      options.smoothing
-    )
-    smoothPoints(
-      points,
-      'front',
-      'Split',
-      ['Ankle', 'Knee', 'UpperLeg', 'Seat', 'Waist'],
-      options.smoothing
-    )
-    smoothPoints(
-      points,
-      'back',
-      'Side',
-      ['Ankle', 'Knee', 'UpperLeg', 'Seat', 'Waist'],
-      options.smoothing
-    )
-    smoothPoints(
-      points,
-      'back',
-      'Split',
-      ['Ankle', 'Knee', 'UpperLeg', 'Seat', 'Waist'],
-      options.smoothing
-    )
+    ;['front', 'back'].forEach((prefix) => {
+      ;['Side', 'Split'].forEach((type) => {
+        smoothPoints(
+          points,
+          prefix,
+          type,
+          ['Ankle', 'Knee', 'UpperLeg', 'Seat', 'Waist'],
+          options.smoothing
+        )
+      })
+    })
 
     paths.middle = new Path().move(points.middleWaist).line(points.middleFloor).setHidden()
     ;['front', 'back'].forEach((prefix) => {
@@ -466,9 +445,6 @@ export const points = {
         ])
       })
     })
-
-    // store.set('frontSplitLength',paths.frontSplit.length())
-    // store.set('backSplitLength',paths.backSplit.length())
     ;['front', 'back'].forEach((prefix) => {
       ;['Waist', 'Waistband', 'Seat', 'UpperLeg', 'Knee', 'Ankle'].forEach((name) => {
         points[prefix + 'Panel' + name] = points['middle' + name].shift(
@@ -497,6 +473,7 @@ export const points = {
     })
 
     const frontSplitlength = paths.frontSplit.length()
+
     while (Math.abs(frontSplitlength - paths.frontPanel.length()) > 1) {
       ;['front', 'back'].forEach((prefix) => {
         const diff = paths[prefix + 'Split'].length() / paths[prefix + 'Panel'].length()
@@ -542,11 +519,6 @@ export const points = {
         })
       })
     }
-    // ;['back'].forEach((prefix) => {
-    //   ;['Waist', 'Seat', 'UpperLeg', 'Knee', 'Ankle'].forEach((name) => {
-    //     points[prefix + 'Split' + name]
-    //   })
-    // })
 
     lowerWaist(paths, Path, points, waistLowering, 'middle', 'Waist')
     ;['front', 'back'].forEach((prefix) => {
@@ -560,24 +532,6 @@ export const points = {
         lowerWaist(paths, Path, points, waistbandSize, prefix + type, 'Waistband')
       })
       lowerWaist(paths, Path, points, waistbandSize, prefix, 'Waistband')
-    })
-    ;['front', 'back'].forEach((prefix) => {
-      ;['Side', 'Split', 'Panel'].forEach((type) => {
-        ;['Waist', 'Seat', 'UpperLeg', 'Knee', 'Ankle'].forEach((name) => {
-          points[prefix + type + name]
-        })
-        points[prefix + type + 'Waistband']
-      })
-      points[prefix + 'Waist']
-      points[prefix + 'Waistband']
-    })
-    ;['front', 'back'].forEach((prefix) => {
-      ;['Side', 'Split', 'Panel'].forEach((type) => {
-        ;['Seat', 'UpperLeg', 'Knee'].forEach((name) => {
-          points[prefix + type + name + 'Cp1']
-          points[prefix + type + name + 'Cp2']
-        })
-      })
     })
 
     store.set(
@@ -631,5 +585,3 @@ export const points = {
     return part.hide()
   },
 }
-
-//http://localhost:8000/new/luminous#view=%22inspect%22&settings=%7B%22measurements%22%3A%7B%22waist%22%3A960%2C%22waistBack%22%3A440%2C%22hips%22%3A884%2C%22seat%22%3A980%2C%22seatBack%22%3A490%2C%22inseam%22%3A790%2C%22waistToSeat%22%3A230%2C%22waistToUpperLeg%22%3A280%2C%22waistToKnee%22%3A610%2C%22waistToHips%22%3A120%2C%22waistToFloor%22%3A1090%2C%22knee%22%3A415%2C%22ankle%22%3A230%2C%22crossSeam%22%3A800%2C%22crossSeamFront%22%3A380%2C%22heel%22%3A300%2C%22upperLeg%22%3A640%7D%7D

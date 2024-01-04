@@ -4,9 +4,7 @@ import { Design } from '@freesewing/core'
 import { i18n } from '../i18n/index.mjs'
 import { data } from '../data.mjs'
 // Parts
-import { points } from './points.mjs'
-import { ipoints } from './ipoints.mjs'
-import { zpoints } from './zpoints.mjs'
+import { shape } from './shape.mjs'
 import { panel } from './panel.mjs'
 import { leg } from './leg.mjs'
 import { pocket } from './pocket.mjs'
@@ -15,11 +13,11 @@ import { waistband } from './waistband.mjs'
 // Create new design
 const Lumina = new Design({
   data,
-  parts: [/*zpoints, ipoints,*/ points, panel, leg, waistband, pocket],
+  parts: [shape, panel, leg, waistband, pocket],
 })
 
 // Named exports
-export { i18n, Lumina, /*zpoints, ipoints,*/ points, panel, leg, waistband, pocket }
+export { i18n, Lumina, shape, panel, leg, waistband, pocket }
 
 // const classes = ['lining','canvas','mark','contrast','note','interfacing','various']
 

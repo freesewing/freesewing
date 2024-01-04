@@ -1,9 +1,8 @@
-import { cbqc } from '@freesewing/core'
-import { points } from './points.mjs'
+import { shape } from './shape.mjs'
 
 export const waistband = {
   name: 'lumina.waistband',
-  after: points,
+  after: shape,
   draft: ({
     store,
     sa,
@@ -110,7 +109,6 @@ export const waistband = {
       .join(paths.waist.reverse())
       .line(points.waistbandBack)
       .join(paths.waistband)
-      .reverse()
       .hide()
 
     paths.seam = new Path().move(points.waistbandFront).line(points.waistFront).join(paths.seamSA)

@@ -1,19 +1,17 @@
 import { pctBasedOn } from '@freesewing/core'
 import { panel } from './panel.mjs'
-import { points } from './points.mjs'
+import { shape } from './shape.mjs'
 
 export const pocket = {
   name: 'lumina.pocket',
-  // from: panel,
-  // after: panel,
-  // hide: hidePresets.HIDE_TREE,
-  from: points,
+  after: panel,
+  from: shape,
   options: {
     pocket: { bool: true, menu: 'style' },
     pocketdepth: {
-      pct: 80,
-      min: 0,
-      max: 100,
+      pct: 90,
+      min: 20,
+      max: 120,
       ...pctBasedOn('waistToSeat'),
       // eslint-disable-next-line no-unused-vars
       menu: (settings, mergedOptions) => (mergedOptions?.pocket ? 'style' : false),
@@ -41,12 +39,6 @@ export const pocket = {
       return part.hide()
     }
 
-    console.log({ s: JSON.parse(JSON.stringify(store)) })
-    console.log({
-      points: JSON.parse(JSON.stringify(points)),
-      paths: JSON.parse(JSON.stringify(paths)),
-    })
-
     const pocketDepth = measurements.waistToSeat * options.pocketdepth
 
     paths.pocketWaistband = new Path()
@@ -61,17 +53,27 @@ export const pocket = {
       .line(points.backPocketHem)
       .addText('bottom', 'note center')
       .setClass('hidden')
-    paths.frontPocket = paths.frontPanel
-      .split(points.frontPocketHem)[0]
-      .unhide()
-      .addText('front', 'note center')
-      .setClass('hidden')
-    paths.backPocket = paths.backPanel
-      .split(points.backPocketHem)[0]
-      .unhide()
-      .reverse()
-      .addText('back', 'note center')
-      .setClass('hidden')
+    const frontPocketSplit = paths.frontPanel.split(points.frontPocketHem)
+    if (frontPocketSplit) {
+      paths.frontPocket = frontPocketSplit[0]
+        .unhide()
+        .addText('front', 'note center')
+        .setClass('hidden')
+    } else {
+      log.info('lumina:couldNotCreatePocket')
+      return part.hide()
+    }
+    const backPocketSplit = paths.backPanel.split(points.backPocketHem)
+    if (backPocketSplit) {
+      paths.backPocket = backPocketSplit[0]
+        .unhide()
+        .reverse()
+        .addText('back', 'note center')
+        .setClass('hidden')
+    } else {
+      log.info('lumina:couldNotCreatePocket')
+      return part.hide()
+    }
 
     paths.seam = new Path()
       .move(points.frontPocketHem)
@@ -82,6 +84,16 @@ export const pocket = {
       .close()
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+
+    for (var i = 1; i < 4; i++) {
+      if (paths.frontPanel.length() * (0.2 * i) < pocketDepth) {
+        snippets['front' + i] = new Snippet('notch', paths.frontPanel.shiftFractionAlong(0.2 * i))
+      }
+
+      if (paths.backPanel.length() * (0.25 * i) < pocketDepth) {
+        snippets['back' + i] = new Snippet('notch', paths.backPanel.shiftFractionAlong(0.25 * i))
+      }
+    }
 
     return part
   },
