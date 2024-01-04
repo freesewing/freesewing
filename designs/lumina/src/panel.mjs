@@ -3,7 +3,7 @@ import { points } from './points.mjs'
 export const panel = {
   name: 'lumina.panel',
   from: points,
-  draft: ({ sa, Point, points, Path, paths, Snippet, snippets, options, macro, part }) => {
+  draft: ({ sa, Point, points, Path, paths, Snippet, snippets, options, macro, store, part }) => {
     paths.panelWaistband = new Path()
       .move(points.backPanelWaistband)
       .line(points.frontPanelWaistband)
@@ -39,6 +39,11 @@ export const panel = {
     snippets.back2 = new Snippet('notch', paths.backPanel.shiftFractionAlong(0.4))
     snippets.back3 = new Snippet('notch', paths.backPanel.shiftFractionAlong(0.6))
     snippets.back4 = new Snippet('notch', paths.backPanel.shiftFractionAlong(0.8))
+
+    store.set('pocket', {
+      paths: paths,
+      points: points,
+    })
 
     return part
   },

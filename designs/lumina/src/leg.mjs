@@ -3,7 +3,7 @@ import { points } from './points.mjs'
 export const leg = {
   name: 'lumina.leg',
   from: points,
-  draft: ({ sa, Point, points, Path, paths, Snippet, snippets, options, macro, part }) => {
+  draft: ({ sa, Point, points, Path, paths, Snippet, snippets, options, macro, store, part }) => {
     paths.front = paths.front.reverse().unhide().addText('front', 'note center').setClass('hidden')
     paths.frontSplit.unhide().addText('front', 'note center').setClass('hidden')
     paths.back.unhide().addText('back', 'note center').setClass('hidden')

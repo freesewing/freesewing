@@ -228,7 +228,11 @@ export const points = {
   ],
   options: {
     waistband: { bool: true, menu: 'style' },
-    Lowerwaistbandback: { bool: true, menu: 'style' },
+    lowerwaistbandback: {
+      bool: true,
+      // eslint-disable-next-line no-unused-vars
+      menu: (settings, mergedOptions) => (mergedOptions?.waistband ? 'style' : false),
+    },
     ease: { pct: -8, min: -25, max: 10, menu: 'fit' },
     length: { pct: 35, min: 10, max: 100, menu: 'style' },
     waistbandsize: {
@@ -239,7 +243,7 @@ export const points = {
       // eslint-disable-next-line no-unused-vars
       menu: (settings, mergedOptions) => (mergedOptions?.waistband ? 'fit' : false),
     },
-    waistlowering: { pct: 10, min: -10, max: 60, ...pctBasedOn('waistToHips'), menu: 'style' },
+    waistlowering: { pct: 35, min: -10, max: 60, ...pctBasedOn('waistToHips'), menu: 'style' },
     waistreduction: {
       pct: 4,
       min: 0,
@@ -610,7 +614,7 @@ export const points = {
         points.frontPanelWaistband.dist(points.backPanelWaistband)
     )
 
-    if (options.Lowerwaistbandback) {
+    if (options.waistband && options.lowerwaistbandback) {
       // Lower the back a little more to get a V-shape in the back
       // lowerWaist(paths, Path, points, waistLowering * 0.5, 'back', 'Waistband')
       lowerWaist(paths, Path, points, (waistLowering + waistbandSize) * 0.5, 'back', 'Waistband')

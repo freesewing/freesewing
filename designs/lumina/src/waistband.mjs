@@ -88,7 +88,7 @@ export const waistband = {
     points.snippetPanelFront = rWaistband.shiftAlong(waistbandFrontLength)
     snippets.panelFront = new Snippet('notch', points.snippetPanelFront)
 
-    if (options.Lowerwaistbandback) {
+    if (options.lowerwaistbandback) {
       paths.waistband = rWaistband.split(points.snippetPanelBack)[0]
       points.waistbandBackPanel = points.snippetPanelBack.copy()
       points.waistbandBackPanelCP = points.snippetPanelFront.shiftFractionTowards(

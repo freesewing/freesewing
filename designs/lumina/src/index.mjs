@@ -9,16 +9,17 @@ import { ipoints } from './ipoints.mjs'
 import { zpoints } from './zpoints.mjs'
 import { panel } from './panel.mjs'
 import { leg } from './leg.mjs'
+import { pocket } from './pocket.mjs'
 import { waistband } from './waistband.mjs'
 
 // Create new design
 const Lumina = new Design({
   data,
-  parts: [/*zpoints, ipoints,*/ points, panel, leg, waistband],
+  parts: [/*zpoints, ipoints,*/ points, panel, leg, waistband, pocket],
 })
 
 // Named exports
-export { i18n, Lumina, /*zpoints, ipoints,*/ points, panel, leg, waistband }
+export { i18n, Lumina, /*zpoints, ipoints,*/ points, panel, leg, waistband, pocket }
 
 // const classes = ['lining','canvas','mark','contrast','note','interfacing','various']
 
