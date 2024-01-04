@@ -27,7 +27,7 @@
     "wbuild": "node build.mjs"
   },
   "dependencies": {
-    "@aws-sdk/client-sesv2": "3.484.0",
+    "@aws-sdk/client-sesv2": "3.485.0",
     "@prisma/client": "5.7.1",
     "bcryptjs": "2.4.3",
     "cors": "2.8.5",
