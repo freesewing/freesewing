@@ -1,3 +1,4 @@
+<!-- __SDEFILE__ - This file is a dependency for the stand-alone environment -->
 <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="2000" height="1500" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 1500">
     <defs>
         <path id="path" d="M 1560 575 l 193 0 M 302 585 l 5 0" style="fill: none; stroke-linejoin: round;"/>

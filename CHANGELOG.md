@@ -3,6 +3,9 @@
 
 ## Unreleased
 
+
+## 3.1.0 (2023-12-26)
+
 ### aaron
 
 #### Changed
@@ -12,6 +15,7 @@
 #### Fixed
 
  - Added IDs to dimension macros that missed them, causing them to not be shown
+ - Keep seam allowance out of the binding length calculation
 
 ### albert
 
@@ -80,6 +84,12 @@
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
 
+### penelope
+
+#### Fixed
+
+ - Fixed wrong use of options in a value method. Fixes
+
 ### plugintest
 
 #### Fixed
@@ -104,6 +114,12 @@
 #### Fixed
 
  - Replaced all instances of 'seperate' with 'separate' in option names
+
+### skully
+
+#### Added
+
+ - Initial release
 
 ### sven
 
@@ -136,11 +152,21 @@
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
 
+### otis
+
+#### Added
+
+ - Initial release
+
 ### plugin-annotations
 
 #### Changed
 
  - Added support for notes in flags
+
+#### Fixed
+
+ - Removing macros did not always remove the cutlist data in the store. Fixes
 
 ### plugin-bin-pack
 
@@ -167,9 +193,17 @@
  - Fix order in mergeOptions method so user settings take precendence over defaults
  - Fix upward snap for snapped percentage option when snap is a simple number
  - The conditional loading of plugins had a bug causing them to never be loaded
+ - Make Path.split() more robust when handling edge-case. Fixes
+ - Prevent utils.circlesIntersect() from running sqrt on a negative number. Fixes
+
+### new-design
+
+#### Fixed
+
+ - Removed unwanted debug output
 
 
-## 3.0.0 (2022-09-30)
+## 3.0.0 (2023-09-30)
 
 ### global
 

@@ -2,7 +2,7 @@
 title: "Hola el tiburón Notas del diseñador"
 ---
 
-¡Hola! This has quite a story behind it.
+¡Hola! ¡Hola! ¡Hola! ¡Hola! This has quite a story behind it.
 
 A while ago rumours started swirling that IKEA would discontinue it's Blåhaj stuffed shark, which is a universally beloved toy. The FreeSewing community was quite agitated by this prospect. No one wanted to see the worlds friendliest shark becoming extinct. And neither did I.
 

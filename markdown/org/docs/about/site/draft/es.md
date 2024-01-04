@@ -20,13 +20,13 @@ El menú **Ver** de la izquierda te permite seleccionar la vista. Cada vista tie
 
 - **Editor de patrones**: Aquí es donde puedes ajustar tu patrón
 - **Medidas del patrón**: Aquí puedes elegir qué conjunto de medidas utilizar para generar el patrón, o ajustar las medidas manualmente.
-- **Pruebas de patrón**: Te permite probar el patrón (es una función avanzada).
+- **Pruebas de patrón**: Te permite probar el patrón (es una función avanzada). Se trata de una función avanzada.
 - **Diseño de impresión**: Te permite organizar manualmente las partes del patrón para optimizar el diseño para la impresión.
 - **Guardar patrón como...**: Te permite guardar el patrón en tu cuenta
 - **Exportar patrón**: Te permite exportar el patrón como PDF o SVG.
 - **Editar ajustes a mano**: Te permite --lo has adivinado-- editar los ajustes para generar el patrón a mano. Se trata de una función avanzada.
 - **Registros del patrón**: Muestra los registros generados al dibujar el patrón. Se trata de una función avanzada.
-- **Inspector de patrones**: Permite al diseñador de patrones inspeccionar varios aspectos del patrón. Esta es una función avanzada.
+- **Inspector de patrones**: Permite al diseñador de patrones inspeccionar varios aspectos del patrón. Se trata de una función avanzada.
 - **Documentación**: Proporciona enlaces a la documentación
 
 No dudes en consultar las otras vistas, pero aquí nos centraremos en el editor de patrones ****.

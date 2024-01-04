@@ -12,7 +12,7 @@ export function AdminModel(tools) {
    */
   return decorateModel(this, tools, {
     name: 'admin',
-    models: ['user'],
+    models: ['user', 'subscriber'],
   })
 }
 
@@ -171,4 +171,45 @@ AdminModel.prototype.impersonateUser = async function ({ params, user }) {
    * Return 200, token, and data
    */
   return this.User.signInOk()
+}
+
+/*
+ * Loads (the emails of) all newsletter subscribers
+ *
+ * @param {user} object - The user as loaded by auth middleware
+ * @returns {AdminModel} object - The AdminModel
+ */
+AdminModel.prototype.getSubscribers = async function ({ user }) {
+  /*
+   * Enforce RBAC
+   */
+  if (!this.rbac.support(user)) return this.setResponse(403, 'insufficientAccessLevel')
+
+  const all = {}
+
+  /*
+   * Load all subscribers from the database
+   */
+  const subscribers = await this.Subscriber.search()
+
+  /*
+   * Load all subscribed users from the database
+   */
+  let users
+  try {
+    users = await this.prisma.user.findMany({ where: { newsletter: true } })
+  } catch (err) {
+    console.log(err)
+  }
+
+  for (const sub of [...subscribers, ...users]) {
+    const email = await this.decrypt(sub.email)
+    if (typeof all[sub.language] === 'undefined') all[sub.language] = []
+    all[sub.language].push({ email, ehash: sub.ehash })
+  }
+
+  /*
+   * Return 200, and subscriber list
+   */
+  return this.setResponse200({ subscribers: all })
 }

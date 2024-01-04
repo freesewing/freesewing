@@ -9,6 +9,7 @@ export function SubscriberModel(tools) {
   return decorateModel(this, tools, {
     name: 'subscriber',
     encryptedFields: ['email'],
+    models: ['user'],
   })
 }
 
@@ -128,32 +129,48 @@ SubscriberModel.prototype.subscribeConfirm = async function ({ body }) {
 }
 
 /*
- * Confirms a pending unsubscription
- * This is an unauthenticated route
+ * Unsubscribe a user
+ * This is an unauthenticated route (has to for newsletter subscribers might not be users)
  *
  * @param {body} object - The request body
  * @returns {SubscriberModal} object - The SubscriberModel
  */
-SubscriberModel.prototype.unsubscribeConfirm = async function ({ params }) {
+SubscriberModel.prototype.unsubscribe = async function ({ params }) {
   /*
-   * Validate input and load subscription record
+   * Is ehash set?
    */
-  await this.verifySubscription(params)
+  if (!params.ehash) return this.setResponse(400, 'ehashMissing')
+
+  const { ehash } = params
 
   /*
-   * If a status code is already set, do not continue
+   * Find the subscription record
    */
-  if (this.response?.status) return this
+  await this.read({ ehash })
 
   /*
-   * Remove the record
+   * If found, remove the record
    */
-  await this.delete({ id: this.record.id })
+  if (this.record) {
+    await this.delete({ id: this.record.id })
+
+    return this.setResponse(204)
+  } else {
+  /*
+   * If not, perhaps it's an account ehash rather than subscriber ehash
+   */
+    await this.User.read({ ehash })
+    if (this.User.record) {
+      await this.User.update({ newsletter: false })
+
+      return this.setResponse(204)
+    }
+  }
 
   /*
-   * Return 204
+   * Return 404
    */
-  return this.setResponse(204)
+  return this.setResponse(404)
 }
 
 /*
@@ -189,4 +206,27 @@ SubscriberModel.prototype.verifySubscription = async function (body) {
   if (!this.record) return this.setResponse(404, 'subscriberNotFound')
 
   return this
+}
+
+/*
+ * Searches for subscribers
+ *
+ * @param {body} object - The request body
+ * @returns {UserModel} object - The UserModel
+ */
+SubscriberModel.prototype.search = async function (q = {}) {
+  /*
+   * Find subscribers based on passed query
+   */
+  let subscribers
+  try {
+    subscribers = await this.prisma.subscriber.findMany({
+      where: q,
+    })
+  } catch (err) {
+    console.log(err)
+    subscribers = []
+  }
+
+  return subscribers
 }

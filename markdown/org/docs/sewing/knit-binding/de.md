@@ -119,7 +119,7 @@ Manche Menschen sind der Meinung, dass dies eine einfachere Methode für Nähanf
 
 1. Miss die Öffnung des Kleidungsstücks ab, die der Einband bedecken soll. Achte darauf, an der Nahtlinie zu messen, um die Nahtzugabe zu berücksichtigen.
 
-2. Schau in der Anleitung des Musters nach, wie lang die Bindung sein muss. Oder du nimmst eine Länge, die 80-90% kleiner ist als die Öffnung, je nachdem, wie dehnbar der Einbandstoff ist . (Zum Beispiel 80% für sehr dehnbaren Stoff, 90% für weniger dehnbaren Stoff).
+2. Schau in der Anleitung des Musters nach, wie lang die Bindung sein muss. Oder du nimmst eine Länge, die 80-90% kleiner ist als die Öffnung, je nachdem, wie dehnbar der Einbandstoff ist . (Zum Beispiel 80% für sehr dehnbaren Stoff, 90% für weniger dehnbaren Stoff). (Zum Beispiel 80% für sehr dehnbaren Stoff, 90% für weniger dehnbaren Stoff).
 
 3. Schneide die benötigte Länge des Einfassbandes plus Nahtzugabe an beiden Enden ab.
 

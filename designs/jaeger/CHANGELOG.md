@@ -1,7 +1,14 @@
 # Change log for: @freesewing/jaeger
 
 
-## 3.0.0 (2022-09-30)
+## 3.1.0 (2023-12-26)
+
+### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+ - Corrected part mixup in translation of flag message
+
+## 3.0.0 (2023-09-30)
 
 ### Changed
 

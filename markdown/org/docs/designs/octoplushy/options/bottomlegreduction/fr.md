@@ -1,8 +1,9 @@
 ---
-title: "Réduction des jambes du bas"
+title: Réduction des jambes du bas
 ---
 
-Ce paramètre permet de régler la différence de longueur entre le tissu supérieur et le tissu inférieur des pieds. Plus la différence est importante, plus les jambes ont envie de s'enrouler.
+Ce paramètre permet de régler la différence de longueur entre le tissu supérieur et le tissu inférieur des pieds.
+Plus la différence est importante, plus les jambes ont envie de s'enrouler.
 
 ## Effet de cette option sur le motif
 

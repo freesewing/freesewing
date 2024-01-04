@@ -1,11 +1,7 @@
 ---
-title: "Gusset width"
+title: Zwickelbreite
 ---
 
 ***
 
-Controls the width of the gusset.
-
-
-
-
+Steuert die Breite des Zwickels.
