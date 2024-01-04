@@ -113,6 +113,13 @@ const title = function (config, { Point, points, scale, locale, store, part, log
    */
   if (mc.cutlist) {
     /*
+     * Remove any cut instructions already defined
+     */
+    const cutlistExp = new RegExp(ids.cutlist)
+    Object.keys(points)
+      .filter((key) => cutlistExp.test(key))
+      .forEach((key) => delete points[key])
+    /*
      * Get cutlist instructions from the store, only proceed if the list is available
      */
     const partCutlist = store.get(['cutlist', part.name], null)
