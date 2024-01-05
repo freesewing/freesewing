@@ -63,7 +63,7 @@ import { exampleBack } from './back.mjs'
 
 const part = {
   name: 'example.front',
-  fom: exampleBack,
+  from: exampleBack,
   draft: ({ part }) => part
 }
 ```
