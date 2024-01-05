@@ -76,7 +76,7 @@ const title = function (config, { Point, points, scale, locale, store, part, log
    * Get the list of IDs
    * Initialize the verticle cadence
    */
-  const ids = store.generateMacroIds(['cutlist', 'date', 'for', 'name', 'nr', 'title'], mc.id)
+  const ids = store.generateMacroIds(['date', 'for', 'name', 'nr', 'title'], mc.id)
 
   let shift = mc.dy
 
@@ -115,10 +115,12 @@ const title = function (config, { Point, points, scale, locale, store, part, log
     /*
      * Remove any cut instructions already defined
      */
-    const cutlistExp = new RegExp(ids.cutlist)
-    Object.keys(points)
-      .filter((key) => cutlistExp.test(key))
-      .forEach((key) => delete points[key])
+    const pids = store.getMacroIds(mc.id)
+    if (pids) {
+      pids.points.cutlist.forEach((p) => {
+        delete points[p]
+      })
+    }
     /*
      * Get cutlist instructions from the store, only proceed if the list is available
      */
@@ -127,13 +129,14 @@ const title = function (config, { Point, points, scale, locale, store, part, log
       /*
        * Iterate over materials
        */
+      ids['cutlist'] = []
       for (const [material, instructions] of Object.entries(partCutlist.materials)) {
         instructions.forEach(({ cut, identical, onBias, onFold }, c) => {
           /*
            * Create point
            */
-          const id = `${ids.cutlist}_${material}_${c}`
-          ids[`cutlist_${material}_${c}`] = id
+          const id = store.generateMacroIds(['cutlist'], mc.id).cutlist
+          ids['cutlist'].push(id)
           points[id] = mc.at
             .clone()
             .shift(-90, shift)
