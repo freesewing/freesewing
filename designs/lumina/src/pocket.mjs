@@ -31,10 +31,6 @@ export const pocket = {
     store,
     part,
   }) => {
-    // const p = store.get('pocket')
-    // paths = p.paths
-    // points = p.points
-
     if (!options.pocket) {
       return part.hide()
     }
@@ -42,20 +38,21 @@ export const pocket = {
     const pocketDepth = measurements.waistToSeat * options.pocketdepth
 
     paths.pocketWaistband = new Path()
-      .move(points.backPanelWaistband)
-      .line(points.frontPanelWaistband)
+      .move(points.frontPanelWaistband)
+      .line(points.backPanelWaistband)
       .addText('top', 'note center')
       .setClass('hidden')
     points.frontPocketHem = paths.frontPanel.shiftAlong(pocketDepth)
     points.backPocketHem = paths.backPanel.shiftAlong(pocketDepth)
     paths.pocketHem = new Path()
-      .move(points.frontPocketHem)
-      .line(points.backPocketHem)
+      .move(points.backPocketHem)
+      .line(points.frontPocketHem)
       .addText('bottom', 'note center')
       .setClass('hidden')
     const frontPocketSplit = paths.frontPanel.split(points.frontPocketHem)
     if (frontPocketSplit) {
       paths.frontPocket = frontPocketSplit[0]
+        .reverse()
         .unhide()
         .addText('front', 'note center')
         .setClass('hidden')
@@ -67,7 +64,6 @@ export const pocket = {
     if (backPocketSplit) {
       paths.backPocket = backPocketSplit[0]
         .unhide()
-        .reverse()
         .addText('back', 'note center')
         .setClass('hidden')
     } else {
@@ -77,11 +73,12 @@ export const pocket = {
 
     paths.seam = new Path()
       .move(points.frontPocketHem)
-      .join(paths.pocketHem)
-      .join(paths.backPocket)
-      .join(paths.pocketWaistband)
-      .join(paths.frontPocket)
+      .join(paths.pocketHem.reverse())
+      .join(paths.backPocket.reverse())
+      .join(paths.pocketWaistband.reverse())
+      .join(paths.frontPocket.reverse())
       .close()
+      .reverse()
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 

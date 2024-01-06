@@ -36,6 +36,11 @@ export const leg = {
     snippets.back2 = new Snippet('notch', paths.backSplit.shiftFractionAlong(0.5))
     snippets.back3 = new Snippet('notch', paths.backSplit.shiftFractionAlong(0.75))
 
+    console.log({
+      front: paths.front.length(),
+      back: paths.back.length(),
+      total: paths.front.length() + paths.back.length(),
+    })
     return part
   },
 }

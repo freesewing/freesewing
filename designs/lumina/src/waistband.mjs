@@ -22,7 +22,6 @@ export const waistband = {
     if (false === options.waistband) {
       return part.hide()
     }
-
     const waistLength = store.get('waistLength')
     const waistbandBackLength = store.get('waistbandBackLength')
     const waistbandFrontLength = store.get('waistbandFrontLength')
@@ -104,6 +103,23 @@ export const waistband = {
         .join(paths.waistband.reverse())
     }
 
+    paths.front = new Path()
+      .move(points.waistbandFront)
+      .line(points.waistFront)
+      .setText('front', 'note center')
+      .setClass('hidden')
+    paths.back = new Path()
+      .move(points.waistBack)
+      .line(points.waistbandBack)
+      .setText('back', 'note center')
+      .setClass('hidden')
+
+    macro('cutonfold', {
+      from: points.waistbandFront,
+      to: points.waistFront,
+    })
+    store.cutlist.addCut({ cut: 2, from: 'fabric', onFold: true })
+
     paths.seamSA = new Path()
       .move(points.waistFront)
       .join(paths.waist.reverse())
@@ -122,6 +138,54 @@ export const waistband = {
         .line(points.waistbandFront)
         .attr('class', 'fabric sa')
     }
+
+    let top = paths.waist.edge('top')
+    if (top.y == points.waistFront.y) {
+      top = paths.waist.edge('bottom')
+    }
+    let bottom = paths.waistband.edge('bottom')
+    if (bottom.y == points.waistbandFront.y) {
+      bottom = paths.waistband.edge('top')
+    }
+
+    macro('hd', {
+      id: 'top',
+      from: points.waistBack,
+      to: points.waistFront,
+      y: Math.min(points.waistFront.y, top.y) - sa - 15,
+    })
+    macro('hd', {
+      id: 'bottom',
+      from: points.waistbandBack,
+      to: points.waistbandFront,
+      y: Math.max(points.waistbandFront.y, bottom.y) + sa + 15,
+    })
+    macro('vd', {
+      id: 'top',
+      from: points.waistBack,
+      to: top,
+      x: top.x - 15,
+      noStartMarker: true,
+      noEndMarker: true,
+    })
+    macro('vd', {
+      id: 'bottom',
+      from: points.waistFront,
+      to: bottom,
+      x: top.x + 15,
+    })
+    macro('ld', {
+      id: 'front',
+      from: points.waistFront,
+      to: points.waistbandFront,
+      d: 15,
+    })
+    macro('ld', {
+      id: 'back',
+      from: points.waistBack,
+      to: points.waistbandBack,
+      d: -15,
+    })
 
     return part
   },

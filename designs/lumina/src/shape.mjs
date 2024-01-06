@@ -15,7 +15,7 @@ export const createPath = (paths, Path, points, pathName, names) => {
 }
 
 const lowerWaist = (paths, Path, points, waistLowering, pathName, pointName) => {
-  console.log({ pn: pathName, p: paths[pathName] })
+  // console.log({ pn: pathName, p: paths[pathName] })
   const newPath = extendPath(Path, paths[pathName], 100, 0)
   const newWaist = newPath.shiftAlong(waistLowering + 100)
   if (newWaist.sitsRoughlyOn(points[pathName + pointName])) {
@@ -94,16 +94,16 @@ const createSidePoints = ({
   let measurement
   // let width
   let lastGood = 0
-  console.log({
-    prefix: prefix,
-    postfix: postfix,
-    ratio: ratio,
-    ratioFixed: ratioFixed,
-    ease: ease,
-    waistReduction: waistReduction,
-    distanceCompensation: distanceCompensation,
-    fixedSidePanel: fixedSidePanel,
-  })
+  // console.log({
+  //   prefix: prefix,
+  //   postfix: postfix,
+  //   ratio: ratio,
+  //   ratioFixed: ratioFixed,
+  //   ease: ease,
+  //   waistReduction: waistReduction,
+  //   distanceCompensation: distanceCompensation,
+  //   fixedSidePanel: fixedSidePanel,
+  // })
   for (let i = 0; i < names.length; i++) {
     let distance =
       measurements['waistTo' + names[lastGood]] -
@@ -259,7 +259,8 @@ export const shape = {
     kneeToWaistLength: 400,
     crotchPointsCP: 2,
   },
-  draft: ({ measurements, options, Point, Path, points, paths, utils, store, part }) => {
+  draft: ({ measurements, options, Point, Path, points, paths, utils, store, units, part }) => {
+    console.log('Shape')
     const inseam =
       measurements.inseam > measurements.waistToFloor - measurements.waistToUpperLeg
         ? measurements.waistToFloor - measurements.waistToUpperLeg
@@ -448,7 +449,7 @@ export const shape = {
     ;['front', 'back'].forEach((prefix) => {
       ;['Waist', 'Waistband', 'Seat', 'UpperLeg', 'Knee', 'Ankle'].forEach((name) => {
         points[prefix + 'Panel' + name] = points['middle' + name].shift(
-          prefix == 'front' ? 180 : 0,
+          prefix == 'front' ? 0 : 180,
           points[prefix + 'Side' + name].dist(points[prefix + 'Split' + name])
         )
       })
@@ -581,6 +582,21 @@ export const shape = {
     store.set('waistbandBackLength', paths.backWaistband.length())
     store.set('waistbandFrontLength', paths.frontWaistband.length())
     store.set('waistbandPanelLength', points.frontPanelWaistband.dist(points.backPanelWaistband))
+
+    store.flag.note({
+      msg: `lumina:dimensions`,
+      replace: {
+        waistbandlength: units(
+          (store.get('waistbandBackLength') +
+            store.get('waistbandFrontLength') +
+            store.get('waistbandPanelLength')) *
+            2
+        ),
+        length: units(
+          store.get('waistbandSize') + points.frontPanelWaistband.dist(points.frontPanelHem)
+        ),
+      },
+    })
 
     return part.hide()
   },
