@@ -524,6 +524,8 @@
     "code": "Joost De Cock",
     "design": ["Naomi Wu", "Joost De Cock"],
     "difficulty": 3,
+    "lab": false,
+    "org": false,
     "tags": ["bottoms", "skirts"],
     "techniques": ["button", "hem", "pocket", "lining"]
   },
