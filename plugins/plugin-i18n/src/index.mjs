@@ -1,7 +1,6 @@
 import { name, version } from '../data.mjs'
 
 const translate = (locale, text, t, pattern) => {
-  let translated = ''
   /*
    * Call oneself recursively if text is an array
    */
