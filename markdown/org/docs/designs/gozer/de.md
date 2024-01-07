@@ -2,9 +2,9 @@
 title: Gozer der Geist
 ---
 
-Not quite sure what to say about this. It was three weeks or so before Halloween, and I was working on a different pattern. Then the thought of a traditional ghost costume popped into my head.
+Ich weiß nicht genau, was ich dazu sagen soll. It was three weeks or so before Halloween, and I was working on a different pattern. Then the thought of a traditional ghost costume popped into my head.
 
-So as a joke I made this, just so I could post it on the discord server. And then Joost asked where the pattern was. So I posted it. And he published it.
+Aus Spaß habe ich das hier gemacht, damit ich es auf dem Discord-Server posten kann. And then Joost asked where the pattern was. Also habe ich es gepostet. Und er hat es veröffentlicht.
 
 Wouter
 
