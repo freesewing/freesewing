@@ -46,15 +46,25 @@ macro('title', {
   store.set('data.for', 'Sorcha')
 
   macro('title', {
-    nr: 9,
-    title: 'The title',
-    at: new Point(0,0)
+    nr: 8,
+    title: 'The Title',
+    at: new Point(0,0),
+    brand: 'Bazooka Crew',
+    notes: [
+      "You can use any brand you want",
+      "\n",
+      "but if you plan to contribute your",
+      "\n",
+      "design, you should use the default",
+      "\n",
+      "(btw: These are the notes)"
+    ]
   })
 
   // Prevent clipping
   paths.diag = new Path()
     .move(new Point(-20,-50))
-    .move(new Point(120,35))
+    .move(new Point(120,55))
 
   return part
 }
