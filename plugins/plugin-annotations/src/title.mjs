@@ -182,7 +182,7 @@ const title = function (config, { Point, points, scale, locale, store, part, log
     }
   }
   if (mc.notes) {
-    if (Array.isArray(notes)) notes.push(...mc.notes)
+    if (Array.isArray(mc.notes)) notes.push(...mc.notes)
     else notes.push(mc.notes)
   }
   if (notes.length > 0) {
