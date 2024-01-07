@@ -15,7 +15,6 @@ export const createPath = (paths, Path, points, pathName, names) => {
 }
 
 const lowerWaist = (paths, Path, points, waistLowering, pathName, pointName) => {
-  // console.log({ pn: pathName, p: paths[pathName] })
   const newPath = extendPath(Path, paths[pathName], 100, 0)
   const newWaist = newPath.shiftAlong(waistLowering + 100)
   if (newWaist.sitsRoughlyOn(points[pathName + pointName])) {
@@ -92,18 +91,7 @@ const createSidePoints = ({
   fixedSidePanel,
 }) => {
   let measurement
-  // let width
   let lastGood = 0
-  // console.log({
-  //   prefix: prefix,
-  //   postfix: postfix,
-  //   ratio: ratio,
-  //   ratioFixed: ratioFixed,
-  //   ease: ease,
-  //   waistReduction: waistReduction,
-  //   distanceCompensation: distanceCompensation,
-  //   fixedSidePanel: fixedSidePanel,
-  // })
   for (let i = 0; i < names.length; i++) {
     let distance =
       measurements['waistTo' + names[lastGood]] -
@@ -139,12 +127,15 @@ const createSidePoints = ({
         break
       default:
         measurement = measurements[names[i].toLowerCase()]
+        // Adjust for thigh size when using positive ease
+        if (ease > 1 && (names[i] == 'Ankle' || names[i] == 'Knee')) {
+          measurement *= 1.2
+        }
     }
     measurement /= 2
     measurement *= ease
 
     const width = measurement * ratio
-    // const reduction = (measurement - width) < ratioFixed ? width : measurement - ratioFixed
     const reduction =
       ratio == 0
         ? measurement
@@ -238,7 +229,7 @@ export const shape = {
       max: 150,
       ...pctBasedOn('waistToHips'),
       // eslint-disable-next-line no-unused-vars
-      menu: (settings, mergedOptions) => (mergedOptions?.waistband ? 'fit' : false),
+      menu: (settings, mergedOptions) => (mergedOptions?.waistband ? 'style' : false),
     },
     waistlowering: { pct: 35, min: -10, max: 60, ...pctBasedOn('waistToHips'), menu: 'style' },
     waistreduction: {
@@ -247,10 +238,10 @@ export const shape = {
       max: 10,
       ...pctBasedOn('waist'),
       // eslint-disable-next-line no-unused-vars
-      menu: (settings, mergedOptions) => (mergedOptions?.waistband ? 'style' : false),
+      menu: (settings, mergedOptions) => (mergedOptions?.waistband ? 'fit' : false),
     },
 
-    sidePanel: { pct: 25, min: 10, max: 40, menu: 'style' },
+    sidepanel: { pct: 25, min: 10, max: 40, menu: 'style' },
     smoothing: { pct: 85, min: 50, max: 100, menu: 'advanced' },
     fixedsidepanel: { bool: false, menu: 'style' },
     crossSeamAngle: 35,
@@ -260,7 +251,6 @@ export const shape = {
     crotchPointsCP: 2,
   },
   draft: ({ measurements, options, Point, Path, points, paths, utils, store, units, part }) => {
-    console.log('Shape')
     const inseam =
       measurements.inseam > measurements.waistToFloor - measurements.waistToUpperLeg
         ? measurements.waistToFloor - measurements.waistToUpperLeg
@@ -274,8 +264,7 @@ export const shape = {
           ? 1.5 - options.waistlowering
           : options.waistbandsize)
       : 0
-    const waistFrontBackRatio = measurements.waistBack / measurements.waist
-    const sideRatio = 1 - options.sidePanel
+    const sideRatio = 1 - options.sidepanel
     // const sideRatio = 3 / 5
     const ease = options.ease + 1
     const waistToAnkle = measurements.waistToFloor - measurements.heel / Math.PI
@@ -287,7 +276,7 @@ export const shape = {
     const sideFixed = (((measurements.waist - measurements.waistBack) * ease) / 2) * sideRatio
     const fixedSidePanel =
       (((measurements.waist - measurements.waistBack - waistReduction) * ease) / 2) *
-      options.sidePanel
+      options.sidepanel
 
     points.middleWaist = new Point(0, 0)
     points.middleHips = points.middleWaist.shift(270, measurements.waistToHips)
@@ -354,14 +343,6 @@ export const shape = {
       points[prefix + 'SideWaistband'] = points[prefix + 'SideWaist'].clone()
     })
 
-    // ;['front', 'back'].forEach((prefix) => {
-    //   ;['Ankle', 'Knee', 'UpperLeg', 'Seat'].forEach((point) => {
-    //     const n = point == 'UpperLeg' ? 'upperLeg' : point.toLowerCase()
-    //     const m = measurements[n] * ease * (point == 'Seat' ? 0.25 : 0.5)
-    //     // console.log({n:prefix+point,m:m,d:points[prefix+'Side' +point].dist(points[prefix+point])-m})
-    //   })
-    // })
-
     points.middleWaistband = points.middleWaist.clone()
     ;['front', 'back'].forEach((prefix) => {
       createSidePoints({
@@ -372,7 +353,6 @@ export const shape = {
         postfix: 'Split',
         names: ['Ankle', 'Knee', 'UpperLeg', 'Seat', 'Waist'],
         ratio: sideRatio,
-        // ratio: 0.1,
         ratioFixed: sideFixed,
         ease: ease,
         waistReduction: waistReduction,

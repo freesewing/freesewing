@@ -92,6 +92,62 @@ export const pocket = {
       }
     }
 
+    store.cutlist.addCut({ cut: 2, from: 'fabric' })
+    points.gridAnchor = points.middleSeat.clone()
+
+    points.title = points.middleSeat.clone()
+    macro('title', {
+      at: points.title,
+      nr: 4,
+      title: 'pocket',
+      align: 'center',
+    })
+
+    const middleTop = points.frontPanelWaistband.shiftFractionTowards(
+      points.backPanelWaistband,
+      0.5
+    )
+    const middleBottom = new Point(middleTop.x, points.frontPocketHem.y)
+    const back = paths.backPocket.edge('left')
+    const front = paths.frontPocket.edge('right')
+
+    macro('hd', {
+      id: 'topFront',
+      from: middleTop,
+      to: points.frontPanelWaistband,
+      y: middleTop.y - sa - 15,
+    })
+    macro('hd', {
+      id: 'topBack',
+      from: points.backPanelWaistband,
+      to: middleTop,
+      y: middleTop.y - sa - 15,
+    })
+    macro('hd', {
+      id: 'bottomFront',
+      from: middleBottom,
+      to: front,
+      y: middleBottom.y + sa + 15,
+    })
+    macro('hd', {
+      id: 'bottomBack',
+      from: back,
+      to: middleBottom,
+      y: middleBottom.y + sa + 15,
+    })
+    macro('vd', {
+      id: 'front',
+      from: points.frontPanelWaistband,
+      to: points.frontPocketHem,
+      x: points.frontPocketHem.x + sa + 15,
+    })
+    macro('vd', {
+      id: 'back',
+      from: points.backPanelWaistband,
+      to: points.backPocketHem,
+      x: points.backPocketHem.x - sa - 15,
+    })
+
     return part
   },
 }

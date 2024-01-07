@@ -13,7 +13,6 @@ export const waistband = {
     Snippet,
     snippets,
     options,
-    measurements,
     macro,
     log,
     utils,
@@ -23,7 +22,6 @@ export const waistband = {
       return part.hide()
     }
     const waistLength = store.get('waistLength')
-    const waistbandBackLength = store.get('waistbandBackLength')
     const waistbandFrontLength = store.get('waistbandFrontLength')
     const waistbandPanelLength = store.get('waistbandPanelLength')
     const waistbandLength = store.get('waistbandLength')
@@ -33,7 +31,7 @@ export const waistband = {
       return part.hide()
     }
 
-    points.origin = new Point(0, 0) //.addCircle(3)
+    points.origin = new Point(0, 0)
 
     const angleRad = Math.asin((Math.abs(waistbandLength - waistLength) * 0.5) / waistbandSize)
     const radius = (waistLength * 0.5) / Math.sin(angleRad)
@@ -114,11 +112,30 @@ export const waistband = {
       .setText('back', 'note center')
       .setClass('hidden')
 
+    let top = paths.waist.edge('top')
+    if (top.y == points.waistFront.y) {
+      top = paths.waist.edge('bottom')
+    }
+    let bottom = paths.waistband.edge('bottom')
+    if (bottom.y == points.waistbandFront.y) {
+      bottom = paths.waistband.edge('top')
+    }
+
     macro('cutonfold', {
       from: points.waistbandFront,
       to: points.waistFront,
     })
     store.cutlist.addCut({ cut: 2, from: 'fabric', onFold: true })
+
+    points.title = points.snippetPanelFront.shiftFractionTowards(points.snippetPanelBack, 0.5)
+    points.title.y = top.y + 20
+    macro('title', {
+      at: points.title,
+      nr: 3,
+      title: 'waistband',
+      align: 'center',
+      scale: 0.35,
+    })
 
     paths.seamSA = new Path()
       .move(points.waistFront)
@@ -137,15 +154,6 @@ export const waistband = {
         .join(seamSA)
         .line(points.waistbandFront)
         .attr('class', 'fabric sa')
-    }
-
-    let top = paths.waist.edge('top')
-    if (top.y == points.waistFront.y) {
-      top = paths.waist.edge('bottom')
-    }
-    let bottom = paths.waistband.edge('bottom')
-    if (bottom.y == points.waistbandFront.y) {
-      bottom = paths.waistband.edge('top')
     }
 
     macro('hd', {
