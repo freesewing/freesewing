@@ -1,5 +1,4 @@
 Unreleased:
-  Added:
 
   Added:
     plugin-annotations:
@@ -10,7 +9,8 @@ Unreleased:
     react-components:
       - This Pattern component now supports translation of nested arrays of strings, giving you more flexibility to concatenate translated parts of strings
 
-    Removed:
+  Removed:
+    plugin-annotations:
       - The `classes.cutlist` config is removed from the title plugin, cutlist info is now included as notes
 
 3.1.0:
