@@ -16,6 +16,7 @@ const macroDefaults = {
   scale: 1,
   title: 'plugin-annotations:noName',
   notes: false,
+  brand: 'FreeSewing',
   classes: {
     notes: 'text-md fill-current',
     date: 'text-sm fill-current',
@@ -135,14 +136,14 @@ const title = function (config, { Point, points, scale, locale, store, part, log
     .clone()
     .shift(-90, shift)
     .addText(
-      `FreeSewing ${capitalize(
+      `${mc.brand} ${capitalize(
         (store.data?.name || 'plugin-annotations:noName').replace('@freesewing/', '')
-      )} v${store.data?.version || 'plugin-annotations:noVersion'} ( `,
+      )} v${store.data?.version || 'plugin-annotations:noVersion'} (`,
 
       `${mc.classes.name} ${mc.align}`
     )
     .addText(store.data?.for ? store.data.for : 'ephemeral')
-    .addText(' )')
+    .addText(')')
     .attr('data-text-transform', transform)
     .attr('data-render-always', 1) // Render even when outside the part bounding box
   shift += mc.dy
@@ -162,7 +163,7 @@ const title = function (config, { Point, points, scale, locale, store, part, log
        * Iterate over materials
        */
       for (const [material, instructions] of Object.entries(partCutlist.materials)) {
-        instructions.forEach(({ cut, identical, onBias, onFold }, c) => {
+        instructions.forEach(({ cut, identical, onBias, onFold }) => {
           /*
            * Concat line
            */
