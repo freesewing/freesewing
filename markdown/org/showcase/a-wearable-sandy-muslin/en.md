@@ -1,6 +1,6 @@
 ---
 title: "A wearable Sandy muslin"
-caption: "Sandy "muslin" but also wearable"
+caption: "Sandy 'muslin' but also wearable"
 date: 20240106
 intro: "Sometimes simple is perfect! RockerKitten made this Sandy skirt as a wearable muslin."
 designs: ["sandy"]
