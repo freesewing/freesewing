@@ -37,7 +37,10 @@ export function adminRoutes(tools) {
   )
 
   // Get newsletter subscribers
-  app.get('/admin/subscribers', passport.authenticate(...jwt), (req, res) =>
+  app.get('/admin/subscribers/jwt', passport.authenticate(...jwt), (req, res) =>
+    Admin.getSubscribers(req, res, tools)
+  )
+  app.get('/admin/subscribers/key', passport.authenticate(...bsc), (req, res) =>
     Admin.getSubscribers(req, res, tools)
   )
 }

@@ -9,31 +9,24 @@ provides the [Point.addText()](/reference/api/point/addtext) and
 [Path.addText()](/reference/api/path/addtext) methods to let you add text to
 points and paths.
 
-<Example caption="An example of adding text" tutorial>
-```design/src/part.mjs
-function draftPart = ({ 
-  Point,
-  points,
-  Path, 
-  paths,
-  part 
-}) {
+In addition, [the `title` macro](/reference/macros/title) not only lets you add a
+title to your part, it also allows you to add notes.
 
-  points.demo = new Point(70,10)
-  // highlight-start
-    .addText('Text on a point', 'center')
-  // highlight-end
+## Wrapping lines
 
-  paths.demo = new Path()
-    .move(new Point(0,0))
-    .line(new Point(100, 40))
-    .addClass('note dotted stroke-sm')
-  // highlight-start
-    .addText('Text on a path', 'center')
-  // highlight-end
+SVG does not provide any line-wrapping, so you will need to be mindful of that when you add longer text.
 
+To facilitate this, FreeSewing will enforce a line break when you use `\n` in your text.
 
-  return part
-}
-```
-</Example>
+## Translation
+
+Text that is added to a pattern typically requires translation. 
+You should break up your text in such a way that it remains possible to translate it.
+
+You can do that either via repeated calls to `addText()` or you can pass an array of strings, or even a nested array of strings, and FreeSewing will translate all individual pieces prior to contatenating them.
+
+<Note compact noP>
+
+Refer to [the `insertText` hook](/reference/hooks/inserttext#notes) for details.
+</Note>
+

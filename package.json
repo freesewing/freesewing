@@ -103,6 +103,7 @@
     "c8": "^8.0.0",
     "eslint-config-next": "^14.0.1",
     "glob": "^10.3.10",
+    "rehype-format": "^5.0.0",
     "yarn": "^1.22.19"
   },
   "packageManager": "yarn@1.22.19"

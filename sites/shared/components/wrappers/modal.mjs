@@ -57,7 +57,13 @@ export const ModalWrapper = ({
     ? `lg:opacity-0 ${slideClasses[slideFrom]} lg:translate-x-0 lg:translate-y-0`
     : 'opacity-100 translate-none'
 
-  const stopClick = (evt) => evt.stopPropagation()
+  const stopClick = (evt) => {
+    /*
+     * Do not keep modal open for links (with a href)
+     * but do keep it open for buttons (like a new modal context)
+     */
+    if (!evt.target.attributes.href) evt.stopPropagation()
+  }
 
   return (
     <div
