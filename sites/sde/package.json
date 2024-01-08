@@ -46,7 +46,7 @@
     "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
     "@tailwindcss/typography": "0.5.10",
     "autoprefixer": "10.4.16",
-    "axios": "1.6.4",
+    "axios": "1.6.5",
     "d3-dispatch": "3.0.1",
     "d3-drag": "3.0.0",
     "d3-selection": "3.0.0",
