@@ -29,8 +29,6 @@ const lowerWaist = (paths, Path, points, log, waistLowering, pathName, pointName
 }
 
 const createWaistPoint = (options, measurements, Path, points, utils, log, front) => {
-  // console.log({front:front})
-
   const kneeTemp = points.middleCrossSeam.shiftFractionTowards(
     points.middleKnee,
     options.crotchToKnee
