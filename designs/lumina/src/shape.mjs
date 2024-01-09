@@ -53,7 +53,7 @@ const createWaistPoint = (options, measurements, Path, points, utils, log, front
   let iter = 0
   do {
     // waist = kneeTemp.shift(angle, kneeToWaist +((diff > 0 ? 1 : -1) *iter))
-    waist = kneeTemp.shift(angle, kneeToWaist + diff * 1.03) //* (diff < 0 ? 1.01 : 0.97)))
+    waist = kneeTemp.shift(angle, kneeToWaist + diff * 1.03)
     // waist = kneeTemp.shift(angle, kneeToWaist *ratio)
     waistCp = waist.shiftFractionTowards(points.middleKnee, options.waistToKneeCP)
 
