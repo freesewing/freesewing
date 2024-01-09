@@ -1,5 +1,8 @@
+import { adult, doll, giant } from '@freesewing/models'
 import { pctBasedOn } from '@freesewing/core'
 import { extendPath, createControlPoints } from '@freesewing/lumira'
+
+const classes = ['lining', 'canvas', 'mark', 'contrast', 'note', 'interfacing', 'various']
 
 export const createPath = (paths, Path, points, pathName, names) => {
   let i
@@ -28,7 +31,9 @@ const lowerWaist = (paths, Path, points, waistLowering, pathName, pointName) => 
   paths[pathName] = pTemp[1].hide()
 }
 
-const createWaistPoint = (options, measurements, Path, points, utils, front) => {
+const createWaistPoint = (options, measurements, Path, points, utils, log, front) => {
+  // console.log({front:front})
+
   const kneeTemp = points.middleCrossSeam.shiftFractionTowards(
     points.middleKnee,
     options.crotchToKnee
@@ -38,26 +43,29 @@ const createWaistPoint = (options, measurements, Path, points, utils, front) => 
     (front
       ? options.crossSeamAngle * (measurements.waistBack / measurements.waist)
       : -1 * options.crossSeamAngle * (1 - measurements.waistBack / measurements.waist))
-  const crossSeam = front ? measurements.crossSeamFront : measurements.crossSeamBack
-  let kneeToWaist = measurements.waistToKnee
-  let ratio = 1
-  let waist = kneeTemp.shift(angle, kneeToWaist * ratio)
+  const crossSeam = front
+    ? measurements.crossSeamFront
+    : measurements.crossSeam - measurements.crossSeamFront
+  let waist = kneeTemp.shift(angle, measurements.waistToKnee)
   const crossSeamCp = points.middleCrossSeam.shiftFractionTowards(
     utils.beamIntersectsY(kneeTemp, waist, points.middleCrossSeam.y),
     options.crotchPointsCP
   )
+  let waistCp = waist.shiftFractionTowards(points.middleKnee, options.waistToKneeCP)
+  const kneeToWaist = measurements.waistToKnee * 0.75
 
-  let waistCp
-  let diff
+  let diff = 0
   let iter = 0
   do {
-    waist = kneeTemp.shift(angle, kneeToWaist * ratio * (ratio < 1 ? 1.05 : 0.95))
+    // waist = kneeTemp.shift(angle, kneeToWaist +((diff > 0 ? 1 : -1) *iter))
+    waist = kneeTemp.shift(angle, kneeToWaist + diff * 1.03) //* (diff < 0 ? 1.01 : 0.97)))
+    // waist = kneeTemp.shift(angle, kneeToWaist *ratio)
     waistCp = waist.shiftFractionTowards(points.middleKnee, options.waistToKneeCP)
 
     const crossSeamPath = new Path().move(points.middleCrossSeam).curve(crossSeamCp, waistCp, waist)
 
     diff = crossSeam - crossSeamPath.length()
-    ratio = crossSeam / crossSeamPath.length()
+    // console.log({i:iter,d:diff,cs:crossSeam,csl:crossSeamPath.length()})
   } while (++iter < 100 && (diff > 1 || diff < -1))
   if (iter >= 100) {
     log.error('lumina:cantFitTheWaistPoint')
@@ -93,9 +101,15 @@ const createSidePoints = ({
   let measurement
   let lastGood = 0
   for (let i = 0; i < names.length; i++) {
-    let distance =
-      measurements['waistTo' + names[lastGood]] -
-      (measurements['waistTo' + names[i]] === undefined ? 0 : measurements['waistTo' + names[i]])
+    let m1 = 0,
+      m2 = 0
+    if (names[i] != 'Waist') {
+      m1 = measurements['waistTo' + names[i]]
+    }
+    if (names[lastGood] != 'Waist') {
+      m2 = measurements['waistTo' + names[lastGood]]
+    }
+    let distance = m2 - m1
     switch (names[i]) {
       case 'UpperLeg':
         measurement = measurements['upperLeg']
@@ -118,11 +132,14 @@ const createSidePoints = ({
         break
       case 'Waist':
         measurement =
-          (prefix == 'front' ? measurements.waistFront : measurements.waistBack) -
+          (prefix == 'front'
+            ? measurements.waist - measurements.waistBack
+            : measurements.waistBack) -
           waistReduction * 0.5
         break
       case 'Seat':
-        measurement = prefix == 'front' ? measurements.seatFront : measurements.seatBack
+        measurement =
+          prefix == 'front' ? measurements.seat - measurements.seatBack : measurements.seatBack
         distance *= distanceCompensation
         break
       default:
@@ -134,7 +151,7 @@ const createSidePoints = ({
     }
     measurement /= 2
     measurement *= ease
-
+    let ci
     const width = measurement * ratio
     const reduction =
       ratio == 0
@@ -150,18 +167,22 @@ const createSidePoints = ({
         reduction
       )
     } else {
-      let ci = utils.circlesIntersect(
-        points[prefix + names[i]],
-        reduction,
-        points[prefix + postfix + names[lastGood]],
-        distance
-      )
-      if (false !== ci) {
-        points[prefix + postfix + names[i]] = ci[prefix == 'front' ? 0 : 1]
-        lastGood = i
-      } else {
-        points[prefix + postfix + names[i]] = points[prefix + postfix + names[lastGood]].clone()
-      }
+      let iter = 0
+      do {
+        ci = utils.circlesIntersect(
+          points[prefix + names[i]],
+          reduction * (1 + iter * 0.02),
+          points[prefix + postfix + names[lastGood]],
+          distance
+        )
+        if (false !== ci) {
+          points[prefix + postfix + names[i]] = ci[prefix == 'front' ? 0 : 1]
+        }
+        if (prefix == 'front' && postfix == 'Side') {
+        }
+      } while (iter++ < 100 && (false == ci || isNaN(ci[prefix == 'front' ? 0 : 1].x)))
+
+      lastGood = i
     }
   }
 }
@@ -250,7 +271,22 @@ export const shape = {
     kneeToWaistLength: 400,
     crotchPointsCP: 2,
   },
-  draft: ({ measurements, options, Point, Path, points, paths, utils, store, units, part }) => {
+  draft: ({
+    measurements,
+    options,
+    Point,
+    Path,
+    points,
+    paths,
+    utils,
+    store,
+    units,
+    log,
+    part,
+  }) => {
+    // measurements = adult['cisFemale'][36]
+    measurements = giant['cisFemale'][200]
+
     const inseam =
       measurements.inseam > measurements.waistToFloor - measurements.waistToUpperLeg
         ? measurements.waistToFloor - measurements.waistToUpperLeg
@@ -302,8 +338,8 @@ export const shape = {
       points.middleFloor =
         points.middleWaist.shift(270, measurements.waistToFloor)
 
-    createWaistPoint(options, measurements, Path, points, utils, true)
-    createWaistPoint(options, measurements, Path, points, utils, false)
+    createWaistPoint(options, measurements, Path, points, utils, log, true)
+    createWaistPoint(options, measurements, Path, points, utils, log, false)
 
     const frontCrossSeam = new Path()
       .move(points.frontWaist)
@@ -578,6 +614,6 @@ export const shape = {
       },
     })
 
-    return part.hide()
+    return part //.hide()
   },
 }

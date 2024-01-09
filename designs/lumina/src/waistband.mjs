@@ -79,6 +79,7 @@ export const waistband = {
 
     diff = waistbandLength - paths.waistband.length()
     const rWaistband = paths.waistband.reverse()
+
     points.snippetPanelBack = rWaistband.shiftAlong(waistbandFrontLength + waistbandPanelLength)
     snippets.panelBack = new Snippet('notch', points.snippetPanelBack)
     points.snippetPanelFront = rWaistband.shiftAlong(waistbandFrontLength)

@@ -95,7 +95,7 @@ export const pocket = {
     store.cutlist.addCut({ cut: 2, from: 'fabric' })
     points.gridAnchor = points.middleSeat.clone()
 
-    points.title = points.middleSeat.clone()
+    points.title = points.frontPocketHem.shiftFractionTowards(points.backPanelWaistband, 0.5)
     macro('title', {
       at: points.title,
       nr: 4,
