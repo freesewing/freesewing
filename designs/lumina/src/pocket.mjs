@@ -29,6 +29,7 @@ export const pocket = {
     options,
     macro,
     store,
+    log,
     part,
   }) => {
     if (!options.pocket) {

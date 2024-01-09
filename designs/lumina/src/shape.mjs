@@ -14,7 +14,7 @@ export const createPath = (paths, Path, points, pathName, names) => {
   return paths[pathName]
 }
 
-const lowerWaist = (paths, Path, points, waistLowering, pathName, pointName) => {
+const lowerWaist = (paths, Path, points, log, waistLowering, pathName, pointName) => {
   const newPath = extendPath(Path, paths[pathName], 100, 0)
   const newWaist = newPath.shiftAlong(waistLowering + 100)
   if (newWaist.sitsRoughlyOn(points[pathName + pointName])) {
@@ -108,7 +108,7 @@ const createSidePoints = ({
     }
     let distance = m2 - m1
     switch (names[i]) {
-      case 'UpperLeg':
+      case 'UpperLeg': {
         measurement = measurements['upperLeg']
         const intersect = utils.beamIntersectsCurve(
           points[prefix + names[i]],
@@ -127,24 +127,28 @@ const createSidePoints = ({
           }
         }
         break
-      case 'Waist':
+      }
+      case 'Waist': {
         measurement =
           (prefix == 'front'
             ? measurements.waist - measurements.waistBack
             : measurements.waistBack) -
           waistReduction * 0.5
         break
-      case 'Seat':
+      }
+      case 'Seat': {
         measurement =
           prefix == 'front' ? measurements.seat - measurements.seatBack : measurements.seatBack
         distance *= distanceCompensation
         break
-      default:
+      }
+      default: {
         measurement = measurements[names[i].toLowerCase()]
         // Adjust for thigh size when using positive ease
         if (ease > 1 && (names[i] == 'Ankle' || names[i] == 'Knee')) {
           measurement *= 1.2
         }
+      }
     }
     measurement /= 2
     measurement *= ease
@@ -174,8 +178,6 @@ const createSidePoints = ({
         )
         if (false !== ci) {
           points[prefix + postfix + names[i]] = ci[prefix == 'front' ? 0 : 1]
-        }
-        if (prefix == 'front' && postfix == 'Side') {
         }
       } while (iter++ < 100 && (false == ci || isNaN(ci[prefix == 'front' ? 0 : 1].x)))
 
@@ -531,18 +533,18 @@ export const shape = {
       })
     }
 
-    lowerWaist(paths, Path, points, waistLowering, 'middle', 'Waist')
+    lowerWaist(paths, Path, points, log, waistLowering, 'middle', 'Waist')
     ;['front', 'back'].forEach((prefix) => {
       ;['Side', 'Split', 'Panel'].forEach((type) => {
-        lowerWaist(paths, Path, points, waistLowering, prefix + type, 'Waist')
+        lowerWaist(paths, Path, points, log, waistLowering, prefix + type, 'Waist')
       })
-      lowerWaist(paths, Path, points, waistLowering, prefix, 'Waist')
+      lowerWaist(paths, Path, points, log, waistLowering, prefix, 'Waist')
     })
     ;['front', 'back'].forEach((prefix) => {
       ;['Side', 'Split', 'Panel'].forEach((type) => {
-        lowerWaist(paths, Path, points, waistbandSize, prefix + type, 'Waistband')
+        lowerWaist(paths, Path, points, log, waistbandSize, prefix + type, 'Waistband')
       })
-      lowerWaist(paths, Path, points, waistbandSize, prefix, 'Waistband')
+      lowerWaist(paths, Path, points, log, waistbandSize, prefix, 'Waistband')
     })
 
     store.set(
@@ -582,7 +584,15 @@ export const shape = {
     if (options.waistband && options.lowerwaistbandback) {
       // Lower the back a little more to get a V-shape in the back
       // lowerWaist(paths, Path, points, waistLowering * 0.5, 'back', 'Waistband')
-      lowerWaist(paths, Path, points, (waistLowering + waistbandSize) * 0.5, 'back', 'Waistband')
+      lowerWaist(
+        paths,
+        Path,
+        points,
+        log,
+        (waistLowering + waistbandSize) * 0.5,
+        'back',
+        'Waistband'
+      )
       paths.backWaistband = new Path()
         .move(points.backWaistband)
         ._curve(points.backSplitWaistbandCp, points.backSplitWaistband)
