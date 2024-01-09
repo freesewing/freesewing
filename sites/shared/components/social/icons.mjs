@@ -24,9 +24,7 @@ export const socialList = (spectrum) => ({
   MSF: {
     icon: <MsfIcon {...iconClasses(spectrum[0])} fill />,
     href:
-      siteConfig.tld === 'org'
-        ? '/docs/various/pledge/'
-        : 'https://freesewing.org/docs/various/pledge',
+      siteConfig.tld === 'org' ? '/docs/about/pledge/' : 'https://freesewing.org/docs/about/pledge',
     name: 'Doctors Without Borders / Médecins Sans Frontières',
     community: false,
   },
