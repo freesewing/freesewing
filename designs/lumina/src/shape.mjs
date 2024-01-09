@@ -1,8 +1,5 @@
-import { adult, doll, giant } from '@freesewing/models'
 import { pctBasedOn } from '@freesewing/core'
 import { extendPath, createControlPoints } from '@freesewing/lumira'
-
-const classes = ['lining', 'canvas', 'mark', 'contrast', 'note', 'interfacing', 'various']
 
 export const createPath = (paths, Path, points, pathName, names) => {
   let i
@@ -284,9 +281,6 @@ export const shape = {
     log,
     part,
   }) => {
-    // measurements = adult['cisFemale'][36]
-    measurements = giant['cisFemale'][200]
-
     const inseam =
       measurements.inseam > measurements.waistToFloor - measurements.waistToUpperLeg
         ? measurements.waistToFloor - measurements.waistToUpperLeg
