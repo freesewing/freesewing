@@ -43,7 +43,7 @@
     "react": "18.2.0",
     "react-copy-to-clipboard": "5.1.0",
     "react-dom": "18.2.0",
-    "react-hotkeys-hook": "4.4.1",
+    "react-hotkeys-hook": "4.4.3",
     "react-instantsearch-dom": "6.40.4",
     "react-instantsearch-hooks-web": "6.47.3",
     "react-swipeable": "7.0.1",
@@ -61,10 +61,10 @@
   "devDependencies": {
     "autoprefixer": "10.4.16",
     "js-yaml": "4.1.0",
-    "postcss": "8.4.32",
+    "postcss": "8.4.33",
     "remark-extract-frontmatter": "3.2.0",
     "remark-mdx-frontmatter": "4.0.0",
-    "tailwindcss": "3.4.0",
+    "tailwindcss": "3.4.1",
     "yaml-loader": "0.8.0"
   },
   "engines": {

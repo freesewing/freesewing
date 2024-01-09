@@ -39,12 +39,12 @@ describe('Title Plugin Tests', () => {
     expect(p.attributes.get('data-text')).to.equal('unitTest')
     expect(p.attributes.get('data-text-class')).to.equal('text-lg fill-current font-bold left')
     expect(p.attributes.get('data-text-x')).to.equal('-12')
-    expect(p.attributes.get('data-text-y')).to.equal('-26')
+    expect(p.attributes.get('data-text-y')).to.equal('-18')
     p = pattern.parts[0].test.points.__macro_title_title_name
-    expect(p.attributes.get('data-text')).to.equal('testPattern v99')
+    expect(p.attributes.get('data-text')).to.equal('FreeSewing TestPattern v99 ( ephemeral )')
     expect(p.attributes.get('data-text-class')).to.equal('fill-note left')
     expect(p.attributes.get('data-text-x')).to.equal('-12')
-    expect(p.attributes.get('data-text-y')).to.equal('-18')
+    expect(p.attributes.get('data-text-y')).to.equal('-10')
     p = pattern.parts[0].test.points.__macro_title_title_date
     expect(p.attributes.get('data-text')).to.include(', 202')
   })
@@ -117,12 +117,12 @@ describe('Title Plugin Tests', () => {
     expect(p.attributes.get('data-text')).to.equal('unitTest')
     expect(p.attributes.get('data-text-class')).to.equal('text-lg fill-current font-bold left')
     expect(p.attributes.get('data-text-x')).to.equal('-12')
-    expect(p.attributes.get('data-text-y')).to.equal('-26')
+    expect(p.attributes.get('data-text-y')).to.equal('-18')
     p = pattern.parts[0].test.points.__macro_title_foo_name
-    expect(p.attributes.get('data-text')).to.equal('testPattern v99')
+    expect(p.attributes.get('data-text')).to.equal('FreeSewing TestPattern v99 ( ephemeral )')
     expect(p.attributes.get('data-text-class')).to.equal('fill-note left')
     expect(p.attributes.get('data-text-x')).to.equal('-12')
-    expect(p.attributes.get('data-text-y')).to.equal('-18')
+    expect(p.attributes.get('data-text-y')).to.equal('-10')
   })
 
   it('Should run the title macro with custom alignment', () => {
@@ -208,5 +208,64 @@ describe('Title Plugin Tests', () => {
       'text-lg fill-current font-bold left'
     )
     expect(p.__macro_title_title_name.attributes.get('data-text-class')).to.equal('fill-note left')
+  })
+
+  it('Should run the title macro with notes', () => {
+    const notes = 'These are the notes\nHere are some more notes'
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, macro, part }) => {
+        points.anchor = new Point(-12, -34)
+        macro('title', {
+          at: points.anchor,
+          nr: 3,
+          title: 'unitTest',
+          notes,
+        })
+
+        return part
+      },
+      plugins: [annotationsPlugin],
+    }
+    // Note that we're not loading core plugins but the local plugin
+    const Pattern = new Design({
+      data: { name: 'testPattern', version: 99 },
+      parts: [part],
+      noCorePlugins: true,
+    })
+    const pattern = new Pattern()
+    pattern.draft().render()
+    let p = pattern.parts[0].test.points.__macro_title_title_notes
+    expect(p.attributes.get('data-text')).to.equal(notes)
+  })
+
+  it('Should run the title macro with a custom brand', () => {
+    const brand = 'Bazooka Patterns'
+    const part = {
+      name: 'test',
+      draft: ({ points, Point, macro, part }) => {
+        points.anchor = new Point(-12, -34)
+        macro('title', {
+          at: points.anchor,
+          nr: 3,
+          title: 'unitTest',
+          brand,
+          id: 'foo',
+        })
+
+        return part
+      },
+      plugins: [annotationsPlugin],
+    }
+    // Note that we're not loading core plugins but the local plugin
+    const Pattern = new Design({
+      data: { name: 'testPattern', version: 99 },
+      parts: [part],
+      noCorePlugins: true,
+    })
+    const pattern = new Pattern()
+    pattern.draft().render()
+    let p = pattern.parts[0].test.points.__macro_title_foo_name
+    expect(p.attributes.get('data-text')).to.equal(`${brand} TestPattern v99 ( ephemeral )`)
   })
 })
