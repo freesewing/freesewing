@@ -1,11 +1,11 @@
 ---
-title: "Окрема планка для петель"
+title: Окрема планка для петель
 ---
 
-![Окрема планка для петель](seperatebuttonholeplacket.svg)
+![Seperate buttonhole placket](seperatebuttonholeplacket.svg)
 
-Незалежно від того, чи хочете ви, щоб планка петлі була окремою деталлю викрійки, чи ні.
+Незалежно від того, чи хочете ви, щоб планка петлі була окремою частиною викрійки, чи ні.
 
 ## Вплив цієї опції на шаблон
 
-![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_seperatebuttonholeplacket_sample.svg "Вплив цієї опції на шаблон")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_seperatebuttonholeplacket_sample.svg "Effect of this option on the pattern")

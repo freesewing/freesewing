@@ -20,13 +20,13 @@ Met het menu **Weergave** aan de linkerkant kun je de weergave selecteren. Elke 
 
 - **Patroonbewerker**: Hier kun je je patroon aanpassen.
 - **Patroonmetingen**: Hier kun je kiezen welke meetset je wilt gebruiken om het patroon te genereren, of de metingen handmatig aanpassen.
-- **Patroon testen**: Hiermee kun je het patroon testen (dit is een geavanceerde functie).
+- **Patroon testen**: Hiermee kun je het patroon testen (dit is een geavanceerde functie). Dit is een geavanceerde functie.
 - **Print lay-out**: Hiermee kun je handmatig de patroondelen rangschikken om de lay-out te optimaliseren voor het printen.
 - **Patroon opslaan als...**: Hiermee kun je het patroon opslaan in je account.
 - **Patroon exporteren**: Hiermee kun je het patroon exporteren als PDF of SVG.
 - **Bewerk instellingen met de hand**: Hiermee kun je -- je raadt het al -- de instellingen bewerken om het patroon met de hand te genereren. Dit is een geavanceerde functie.
 - **Patroonlogs**: Dit toont de logs die zijn gegenereerd tijdens het opstellen van het patroon. Dit is een geavanceerde functie.
-- **Patroon inspecteur**: Hiermee kan de patroonontwerper verschillende aspecten van het patroon inspecteren. Dit is een handige functie.
+- **Patroon inspecteur**: Hiermee kan de patroonontwerper verschillende aspecten van het patroon inspecteren. Dit is een geavanceerde functie.
 - **Documentatie**: Geeft links naar de documentatie
 
 Voel je vrij om de andere weergaven te bekijken, maar onze focus ligt hier op de **Pattern editor**.

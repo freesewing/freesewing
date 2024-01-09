@@ -1,5 +1,6 @@
+<!-- __SDEFILE__ - This file is a dependency for the stand-alone environment -->
 <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="2000" height="1500" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 1500">
-    
+
     <defs>
         <path id="path" d="M 0 0 c -40 10 -20 100 -70 238" style="fill: none; stroke-linejoin: round;"/>
         <g id="start">
@@ -19,7 +20,7 @@
         .cm {stroke: #000; stroke-width: 16px; stroke-dasharray: 2 10; stroke-linecap: butt;}
         .line {stroke: #000; stroke-width: 3px; stroke-dasharray: 8 5; stroke-linecap: round;}
     ]]></style>
-    
+
     <!-- Background image -->
     <image xlink:href="./standing.jpg" x="0" y="0" width="2000" height="1500" />
 
@@ -33,7 +34,7 @@
         <use x="0" y="0" xlink:href="#path" class="cm"/>
         <use x="0" y="0" xlink:href="#start" transform="rotate(166)" />
         <use x="248" y="15" xlink:href="#end" transform="rotate(104)" />
-    </g> 
+    </g>
 
     <!-- Helplines -->
     <g>
@@ -44,7 +45,7 @@
             <animate attributeType="CSS" attributeName="stroke-dashoffset" from="0" to="13" dur="1s" repeatDur="indefinite" />
         </path>
     </g>
-    
+
     <!-- timing loop -->
     <rect height="1" width="1" x="-10" y="-10">
         <animate attributeType="CSS" attributeName="visibility" from="hide" to="hide" begin="0;loop.end" dur="4s" id="loop" />

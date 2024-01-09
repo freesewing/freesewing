@@ -7,13 +7,13 @@ title: HPS zu Brust
 ###### HPS: Hochpunkt Schulter
 
 Der _Hochpunkt Schulter_ oder _HPS_ Punkt wird als Basis für mehrere vertikale Messungen verwendet.
-Refer to [the hps documentation](/docs/sewing/hps/) for information on how to locate this point.
+Weitere Informationen zum Auffinden dieses Punktes findest du in der [HPS-Dokumentation](/docs/measurements/hps/).
 
 </Note>
 
 Das **Hochpunkt Schulter (HPS) zur Brust** Maß läuft vom HPS bis zur einer gedachten Linie, die deine Brustpunkte/Brustwarzen verbindet.
 
-Um den Abstand vom HPS zur Brust zu messen, lokalisiere zuerst [den HPS-Punkt](/docs/sewing/hps/). Miss dann gerade nach unten zu der gedachten Linie, die deine Brustpunkte/Brustwarzen verbindet.
+Um den Abstand vom HPS zur Brust zu messen, lokalisiere zuerst [den HPS-Punkt](/docs/measurements/hps/). Miss dann gerade nach unten zu der gedachten Linie, die deine Brustpunkte/Brustwarzen verbindet.
 
 Der Sinn dieser Messung ist es, den vollsten Teil deiner Brust vertikal an deinen Torso zu lokalisieren.
 

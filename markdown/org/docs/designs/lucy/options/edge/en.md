@@ -1,8 +1,8 @@
 ---
-title: Edge
+title: undefined
 ---
 
-This option controls the width of the top edge of your pocket. 
+undefined
 
 
 

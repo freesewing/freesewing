@@ -7,13 +7,13 @@ title: HPS para quebrar
 ###### HPS: hombro de punto alto
 
 El punto _hombro de punto alto_ o _HPS_ se utiliza como base para varias mediciones verticales.
-Refer to [the hps documentation](/docs/sewing/hps/) for information on how to locate this point.
+Consulte [la documentación de hps](/docs/measurements/hps/) para obtener información sobre cómo localizar este punto.
 
 </Note>
 
 El hombro de **de punto alto (HPS) para descomprimir la medición de** se ejecuta desde el HPS hasta la línea que forma el lapso de bush.
 
-Para medir tu HPS a colapsar, primero [localiza tu punto HPS](/docs/sewing/hps/). A continuación, cuide directamente hacia la línea que forma su rango de circunstancia/caída del pecho.
+Para medir tu HPS a colapsar, primero [localiza tu punto HPS](/docs/measurements/hps/). A continuación, cuide directamente hacia la línea que forma su rango de circunstancia/caída del pecho.
 
 El punto de esta medida es localizar la parte más completa de su busto verticalmente sobre su torso.
 

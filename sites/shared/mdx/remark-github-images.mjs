@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 /*
  * This is a remark plugin that will update the src of local images to
  * load them from Github. It is used when we load markdown/mdx dynamically

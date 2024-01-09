@@ -1,11 +1,7 @@
 ---
-title: "Gusset width"
+title: Gusset width
 ---
 
 ***
 
-Controls the width of the gusset.
-
-
-
-
+Contrôle la largeur du gusset.

@@ -1,11 +1,7 @@
 ---
-title: "Waistband"
+title: Tailleband
 ---
 
 ***
 
 Adds a waistband
-
-
-
-

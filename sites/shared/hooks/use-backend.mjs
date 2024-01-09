@@ -500,10 +500,10 @@ Backend.prototype.confirmNewsletterSubscribe = async function ({ id, ehash }) {
 }
 
 /*
- * Confirm newsletter unsubscribe
+ * Newsletter unsubscribe
  */
-Backend.prototype.confirmNewsletterUnsubscribe = async function ({ id, ehash }) {
-  return responseHandler(await api.delete(`/subscriber/${id}/${ehash}`))
+Backend.prototype.newsletterUnsubscribe = async function (ehash) {
+  return responseHandler(await api.delete(`/subscriber/${ehash}`))
 }
 
 /*

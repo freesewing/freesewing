@@ -1,11 +1,7 @@
 ---
-title: "Gusset width"
+title: Ширина ластовиці
 ---
 
 ***
 
-Controls the width of the gusset.
-
-
-
-
+Керує шириною ластовиці.

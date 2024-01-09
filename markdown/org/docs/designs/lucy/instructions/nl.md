@@ -4,7 +4,7 @@ title: "Lucy: Instructions"
 
 <Note>
 
-Lucy kan naar keuze met de hand of met de machine worden genaaid. Als je met de hand naait, kun je een rijgsteek gebruiken om de zakdelen aan elkaar te naaien en af te binden met een zweepsteek. 
+Lucy kan naar keuze met de hand of met de machine worden genaaid.
 
 </Note>
 
@@ -22,9 +22,9 @@ Als je wilt, kun je de buitenranden van de zak aan elkaar _french seam_ naaien.
 
 ## bind the top and thread a tie through the binding
 
-Er zijn twee methoden om de bovenrand in te binden. De ene laat de zijkanten van de bovenbinding open, zodat de stropdassen erdoorheen kunnen worden geregen. De tweede gebruikt de tape voor de bandjes om de bovenrand te binden. Lees beide methoden zorgvuldig door en beslis welke je wilt gebruiken.
+Er zijn twee methoden om de bovenrand in te binden. One is to create a loop and the other is to bind with the ties. Lees beide methoden zorgvuldig door en beslis welke je wilt gebruiken.
 
-### Bindend gebruiken
+### Create a loop
 
 - Knip een stuk bies in de lengte van de bovenrand + naadtoeslag.
 - Vouw de korte randen van de biezen om en naai vast.

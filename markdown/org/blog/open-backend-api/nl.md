@@ -20,7 +20,7 @@ Ik verwacht dat dit, in eerste instantie althans, een nichefunctie zal zijn. Ik 
 
 Als er niets anders is, weet ik dat ik dat zal doen.
 
-De \[REST API reference documentation lives here] (https\://freesewing.dev/reference/backend), als je op zoek bent naar de OpenAPI Specification, ga dan naar https\://backend3.freesewing.org/docs/.
+De [REST API reference documentation lives here] (https\://freesewing.dev/reference/backend), als je op zoek bent naar de OpenAPI Specification, ga dan naar https\://backend3.freesewing.org/docs/.
 
 ## Gebruiken, niet misbruiken
 

@@ -1,10 +1,10 @@
 ---
-title: "Leg length"
+title: Longitud de la pierna
 ---
 
 ***
 
-Controls the length of the legs. This is a percentage of the inseam. 
+Controls the length of the legs. This is a percentage of the inseam.
 
 <note>
 
@@ -13,7 +13,3 @@ The maximum is beyond the ankle, and is ignored. The slider will not do anything
 for the top 10% or so.
 
 </note>
-
-
-
-

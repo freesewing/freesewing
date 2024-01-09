@@ -519,6 +519,16 @@
     ],
     "techniques": []
   },
+  "naomiwu": {
+    "description": "A FreeSewing pattern for Naomi Wu's signature cargo skirt",
+    "code": "Joost De Cock",
+    "design": ["Naomi Wu", "Joost De Cock"],
+    "difficulty": 3,
+    "lab": false,
+    "org": false,
+    "tags": ["bottoms", "skirts"],
+    "techniques": ["button", "hem", "pocket", "lining"]
+  },
   "noble": {
     "code": "Wouter Van Wageningen",
     "description": "A FreeSewing pattern for a princess seam bodice block",
@@ -924,7 +934,7 @@
     "design": "Wouter Van Wageningen",
     "difficulty": 3,
     "lab": true,
-    "org": false,
+    "org": true,
     "tags": [
       "bottoms",
       "trousers"

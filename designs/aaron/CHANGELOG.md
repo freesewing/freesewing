@@ -1,7 +1,18 @@
 # Change log for: @freesewing/aaron
 
 
-## 3.0.0 (2022-09-30)
+## 3.1.0 (2023-12-26)
+
+### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### Fixed
+
+ - Added IDs to dimension macros that missed them, causing them to not be shown
+ - Keep seam allowance out of the binding length calculation
+
+## 3.0.0 (2023-09-30)
 
 ### Changed
 

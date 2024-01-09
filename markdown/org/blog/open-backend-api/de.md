@@ -20,7 +20,7 @@ Ich gehe davon aus, dass dies zumindest anfangs eine Nischenfunktion sein wird. 
 
 Zumindest weiß ich, dass ich es tun werde.
 
-Die \[REST-API-Referenzdokumentation befindet sich hier] (https\://freesewing.dev/reference/backend), wenn du nach der OpenAPI-Spezifikation suchst, dann gehe auf https\://backend3.freesewing.org/docs/
+Die [REST-API-Referenzdokumentation befindet sich hier] (https\://freesewing.dev/reference/backend), wenn du nach der OpenAPI-Spezifikation suchst, dann gehe auf https\://backend3.freesewing.org/docs/
 
 ## Benutzen, nicht missbrauchen
 

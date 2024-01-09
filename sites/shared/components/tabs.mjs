@@ -32,28 +32,25 @@ export const Tabs = ({ tabs = '', active = 0, children, withModal = false }) => 
           }`
 
           return withModal && activeTab === tabId ? (
-            <div className={`flex flex-row justify-between w-1/${tablist.length}`}>
-              <button key={tabId} className={btnClasses} onClick={() => setActiveTab(tabId)}>
-                {title}
-              </button>
-              <button
-                className={`${btnClasses} px-0`}
-                onClick={() =>
-                  setModal(
-                    <ModalWrapper
-                      flex="col"
-                      justify="top lg:justify-center"
-                      slideFrom="right"
-                      fullWidth
-                    >
-                      {childrenWithTabSetter}
-                    </ModalWrapper>
-                  )
-                }
-              >
-                <KioskIcon className="w-6 h-6 hover:text-secondary" />
-              </button>
-            </div>
+            <button
+              key={tabId}
+              className={btnClasses}
+              onClick={() =>
+                setModal(
+                  <ModalWrapper
+                    flex="col"
+                    justify="top lg:justify-center"
+                    slideFrom="right"
+                    fullWidth
+                  >
+                    {childrenWithTabSetter}
+                  </ModalWrapper>
+                )
+              }
+            >
+              <span className="pr-2">{title}</span>
+              <KioskIcon className="w-6 h-6 hover:text-secondary" />
+            </button>
           ) : (
             <button key={tabId} className={btnClasses} onClick={() => setActiveTab(tabId)}>
               {title}
