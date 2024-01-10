@@ -422,7 +422,7 @@ export const shape = {
       .curve(points.backWaistCp, points.backHipsCp2, points.backHips)
       .curve(points.backHipsCp1, points.backCrossSeamCp, points.middleCrossSeam)
     ;['front', 'back'].forEach((prefix) => {
-      // Semicolon removed to please the Lint:
+      // eslint-disable-next-line no-extra-semi
       ;['Side', 'Split'].forEach((type) => {
         smoothPoints(
           points,
@@ -436,7 +436,7 @@ export const shape = {
 
     paths.middle = new Path().move(points.middleWaist).line(points.middleFloor).setHidden()
     ;['front', 'back'].forEach((prefix) => {
-      // Semicolon removed to please the Lint:
+      // eslint-disable-next-line no-extra-semi
       ;['Side', 'Split'].forEach((type) => {
         createControlPoints(points, 3, [
           prefix + type + 'Waist',
@@ -448,7 +448,7 @@ export const shape = {
       })
     })
     ;['front', 'back'].forEach((prefix) => {
-      // Semicolon removed to please the Lint:
+      // eslint-disable-next-line no-extra-semi
       ;['Side', 'Split'].forEach((type) => {
         createPath(paths, Path, points, prefix + type, [
           prefix + type + 'Waist',
@@ -460,7 +460,7 @@ export const shape = {
       })
     })
     ;['front', 'back'].forEach((prefix) => {
-      // Semicolon removed to please the Lint:
+      // eslint-disable-next-line no-extra-semi
       ;['Waist', 'Waistband', 'Seat', 'UpperLeg', 'Knee', 'Ankle'].forEach((name) => {
         points[prefix + 'Panel' + name] = points['middle' + name].shift(
           prefix == 'front' ? 0 : 180,
@@ -490,7 +490,7 @@ export const shape = {
     const frontSplitlength = paths.frontSplit.length()
 
     while (Math.abs(frontSplitlength - paths.frontPanel.length()) > 1) {
-      // Semicolon removed to please the Lint:
+      // eslint-disable-next-line no-extra-semi
       ;['front', 'back'].forEach((prefix) => {
         const diff = paths[prefix + 'Split'].length() / paths[prefix + 'Panel'].length()
         const names = ['Waist', 'Seat', 'UpperLeg', 'Knee', 'Ankle']
@@ -523,7 +523,7 @@ export const shape = {
     if (options.length < 1) {
       const length = (1 - options.length) * (inseam - (measurements.waistToFloor - waistToAnkle))
       ;['front', 'back'].forEach((prefix) => {
-        // Semicolon removed to please the Lint:
+        // eslint-disable-next-line no-extra-semi
         ;['Side', 'Split', 'Panel'].forEach((type) => {
           points[prefix + type + 'Hem'] = paths[prefix + type].reverse().shiftAlong(length)
           paths[prefix + type] = paths[prefix + type].split(points[prefix + type + 'Hem'])[0]
@@ -531,7 +531,7 @@ export const shape = {
       })
     } else {
       ;['front', 'back'].forEach((prefix) => {
-        // Semicolon removed to please the Lint:
+        // eslint-disable-next-line no-extra-semi
         ;['Side', 'Split', 'Panel'].forEach((type) => {
           points[prefix + type + 'Hem'] = points[prefix + type + 'Ankle']
         })
@@ -540,14 +540,14 @@ export const shape = {
 
     lowerWaist(paths, Path, points, log, waistLowering, 'middle', 'Waist')
     ;['front', 'back'].forEach((prefix) => {
-      // Semicolon removed to please the Lint:
+      // eslint-disable-next-line no-extra-semi
       ;['Side', 'Split', 'Panel'].forEach((type) => {
         lowerWaist(paths, Path, points, log, waistLowering, prefix + type, 'Waist')
       })
       lowerWaist(paths, Path, points, log, waistLowering, prefix, 'Waist')
     })
     ;['front', 'back'].forEach((prefix) => {
-      // Semicolon removed to please the Lint:
+      // eslint-disable-next-line no-extra-semi
       ;['Side', 'Split', 'Panel'].forEach((type) => {
         lowerWaist(paths, Path, points, log, waistbandSize, prefix + type, 'Waistband')
       })
