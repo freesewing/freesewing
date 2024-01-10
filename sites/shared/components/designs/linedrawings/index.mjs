@@ -42,7 +42,7 @@ export const lineDrawingsBack = {
   bruce: BruceBack,
   simon: SimonBack,
   wahid: WahidBack,
-  bee: Bee,
+ 
 }
 
 export const lineDrawings = {
@@ -58,4 +58,5 @@ export const lineDrawings = {
   hortensia: Hortensia,
   simon: Simon,
   wahid: Wahid,
+  bee: Bee,
 }
