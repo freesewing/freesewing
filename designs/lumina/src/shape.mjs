@@ -530,6 +530,7 @@ export const shape = {
         })
       })
     } else {
+      // eslint-disable-next-line no-extra-semi
       ;['front', 'back'].forEach((prefix) => {
         // eslint-disable-next-line no-extra-semi
         ;['Side', 'Split', 'Panel'].forEach((type) => {
