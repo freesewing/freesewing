@@ -13,6 +13,8 @@ Cut your pattern pieces. If you would like to add embroidery or other decoration
 
 ### Step 2: Sew the back inside (Part 3) parts together at center back
 
+![Sew the back inside parts together](step02.png)
+
 Align the back inside (Part 3) parts at center back. Sew them together with _good sides together_.
 
 ### Step 3: Attach back outside (Part 4) parts
@@ -56,20 +58,11 @@ Place the center insides of the main and lining together, _good sides together_.
 
 Stitch down center front.
 
+### Step 9: Stitch your first boning channel
+
 Turn right side out and press.
 
-### Step 9: Topstitch the center front
-
 Stitch 2 mm (0.1 inch) in from center edge.
-
-Repeat on the other side.
-
-<Note>
-##### Switching sides for each step is optional
-These instructions suggest doing each step on each side to keep the stitching lines even and symmetrical, but it’s fine to do all the closure steps on one side then move on the other if you prefer.
-</Note>
-
-### Step 10: Stitch your first boning channel
 
 Allow enough space for your boning, then stitch again.
 
@@ -80,22 +73,26 @@ Repeat on the other side.
 Leave enough wiggle room to allow you to insert your boning. You want the channel to be snug, but not too tight.
 </Note>
 
-### Step 11: Stitch your eyelet channel
+### Step 10: Stitch your second boning channel
 
 Mark the locations of your eyelets/grommets. Allow enough space to install these later, then stitch again.
-
-Repeat on the other side.
-
-### Step 12: Stitch your second boning channel
 
 Allow enough space for another row of boning, then stitch again.
 
 Repeat on the other side.
 
-### Step 13: Insert your boning
+### Step 11: Insert your boning
 
 Cap your boning if appropriate for the type of boning used.
 
-### Step 14: Bind your top
+### Step 12: Install your eyelets/grommets
+
+Install your eyelets or grommets between the two boning channels.
+
+### Step 13: Bind your top
 
 Apply bias binding to the neck hole, armholes, and hem.
+
+### Step 14: You're done!
+
+Enjoy your Tristan top!
