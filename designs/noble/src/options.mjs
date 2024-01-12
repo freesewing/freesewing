@@ -9,6 +9,7 @@ export const bustSpanEase = { pct: 0, min: -5, max: 20, ...pctBasedOn('bustSpan'
 export const backHemSlope = { deg: 2.5, min: 0, max: 5, menu: 'advanced' }
 export const upperDartLength = { pct: 90, min: 80, max: 95, menu: 'darts' }
 export const dartPosition = { dflt: 'shoulder', list: ['shoulder', 'armhole'], menu: 'darts' }
+export const waistdartposition = { pct: 0, min: -100, max: 100, menu: 'darts' }
 export const shoulderDartPosition = {
   pct: 50,
   min: 10,
