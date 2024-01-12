@@ -14,10 +14,10 @@ export const frontOutside = {
     delete points.bustB
     delete points.bustDartEdge
 
-    console.log({ points: JSON.parse(JSON.stringify(points)) })
+    // console.log({ points: JSON.parse(JSON.stringify(points)) })
 
-    macro('rmcutonfold')
-    store.cutlist.removeCut()
+    // macro('rmcutonfold')
+    // store.cutlist.removeCut()
 
     paths.cut = new Path()
       .move(points.armhole)

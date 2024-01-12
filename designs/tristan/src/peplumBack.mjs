@@ -15,7 +15,6 @@ export const peplumBack = {
     const ratio = store.get('peblumratio')
 
     CreateShape({
-      Point: Point,
       points: points,
       paths: paths,
       options: options,
@@ -25,7 +24,6 @@ export const peplumBack = {
       type: 'back',
       radius: radius,
       width: width,
-      offset: 0,
       ratio: 1 - ratio,
     })
 
