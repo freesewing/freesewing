@@ -79,7 +79,7 @@ export const peplumFront = {
     peplumSize: {
       pct: 10,
       min: 5,
-      max: 50,
+      max: 100,
       // eslint-disable-next-line no-unused-vars
       menu: (settings, mergedOptions) => (mergedOptions.peplum === false ? false : 'peplum'),
     },
