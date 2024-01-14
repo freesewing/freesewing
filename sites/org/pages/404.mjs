@@ -1,5 +1,6 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { nsMerge } from 'shared/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
@@ -7,7 +8,7 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
 
 // Translation namespaces used on this page
-const ns = [pageNs, 'status']
+const ns = nsMerge(pageNs, 'status')
 
 const NotFoundPage = ({ page }) => {
   const { t } = useTranslation(ns)
