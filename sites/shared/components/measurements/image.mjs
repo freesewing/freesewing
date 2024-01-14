@@ -27,7 +27,7 @@ export const MeasieImage = (props) => {
   if (!m) return null
 
   const pose = seated.includes(m) ? 'seated' : 'standing'
-  console.log({ img: sarahImages[m] })
+
   return (
     <Tabs tabs="Sarah, Tim">
       <Tab tabId="Sarah">
