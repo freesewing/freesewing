@@ -9,35 +9,51 @@ These instructions are for a lined Tristan top with a center-front lacing closur
 
 ### Step 1: Cut your pieces
 
+![Cut your pieces](step01.png)
+
 Cut your pattern pieces. If you would like to add embroidery or other decoration, now is a good time to do so.
 
-### Step 2: Sew the back inside (Part 3) parts together at center back
+### Step 2: Sew the back inside parts together at center back
+
+![Sew the back inside parts together](step02.png)
 
 Align the back inside (Part 3) parts at center back. Sew them together with _good sides together_.
 
-### Step 3: Attach back outside (Part 4) parts
+### Step 3: Attach back outside parts
+
+![Attach the back outside parts](step03.png)
 
 Attach one back outside (Part 4) part to its matching back inside (Part 3) part, _good sides together_, making sure to match any notches.
 
 Do the same for the other back outside (Part 4) part.
 
-### Step 4: Attach front outside (Part 2) parts at the side seams
+### Step 4: Attach front outside parts at the side seams
+
+![Attach the front outside parts](step04.png)
 
 Attach one front outside (Part 2) part to its matching back outside (Part 3) part, _good sides together_.
 
 Do the same for the other front outside (Part 2) part.
 
-### Step 5: Attach front inside (Part 1) parts
+### Step 5: Attach front inside parts
+
+![Attach the front inside parts](step05.png)
 
 Finally, attach one front inside (Part 1) part to its matching front inside (Part 2) part, _good sides together_.
 
 Do the same for the other front inside (Part 1) part.
 
+![Press](step05b.png)
+
 Press all the seam allowances flat.
 
-### Step 6: Stitch at the shoulders
+### Step 6: Sew at the shoulders
 
-Stitch at the shoulders. Press.
+![Attach the front inside parts](step06.png)
+
+Sew at the shoulders to complete each armhole. Sew _good sides together_.
+
+Press the seam allowances open.
 
 <Note>
 ##### Check the fit
@@ -46,32 +62,33 @@ This is a good time to try on your garment and make any small adjustments. For e
 
 ### Step 7: Repeat with lining fabric
 
+![Repeat with lining fabric](step07.png)
+
 Repeat Steps 1 through 6 with your lining fabric.
 
 You will now have two identical pieces, one with your main fabric and one with your lining.
 
-### Step 8: Begin the closure by stitching down center front
+Turn your lining piece inside out.
+
+### Step 8: Begin the closure by sewing down center front
+
+![Sew down center front](step08.png)
 
 Place the center insides of the main and lining together, _good sides together_.
 
-Stitch down center front.
+Sew down center front.
 
-Turn right side out and press.
+Open flat.
 
-### Step 9: Topstitch the center front
+### Step 9: Sew your first boning channel
 
-Stitch 2 mm (0.1 inch) in from center edge.
+![Sew your first boning channel](step09.png)
 
-Repeat on the other side.
+Turn right side out -- that is, put the two pieces together, _bad sides together_ -- and press.
 
-<Note>
-##### Switching sides for each step is optional
-These instructions suggest doing each step on each side to keep the stitching lines even and symmetrical, but it’s fine to do all the closure steps on one side then move on the other if you prefer.
-</Note>
+Sew 2 mm (0.1 inch) in from center edge.
 
-### Step 10: Stitch your first boning channel
-
-Allow enough space for your boning, then stitch again.
+Allow enough space for your boning, then sew again.
 
 Repeat on the other side.
 
@@ -80,22 +97,32 @@ Repeat on the other side.
 Leave enough wiggle room to allow you to insert your boning. You want the channel to be snug, but not too tight.
 </Note>
 
-### Step 11: Stitch your eyelet channel
+### Step 10: Sew your second boning channel
 
-Mark the locations of your eyelets/grommets. Allow enough space to install these later, then stitch again.
+![Sew your second boning channel](step10.png)
 
-Repeat on the other side.
+Mark the locations of your eyelets/grommets. Allow enough space to install these later, then sew again.
 
-### Step 12: Stitch your second boning channel
-
-Allow enough space for another row of boning, then stitch again.
+Allow enough space for another row of boning, then sew again.
 
 Repeat on the other side.
 
-### Step 13: Insert your boning
+### Step 11: Insert your boning
 
-Cap your boning if appropriate for the type of boning used.
+Cap your boning if appropriate for the type of boning used. Then insert boning in the boning channels.
 
-### Step 14: Bind your top
+### Step 12: Install your eyelets/grommets
+
+Install your eyelets or grommets between the two boning channels.
+
+### Step 13: Bind and lace up your top
 
 Apply bias binding to the neck hole, armholes, and hem.
+
+Lace up your top.
+
+### Step 14: You're done!
+
+![You're done!](step14.png)
+
+Enjoy your Tristan top!
