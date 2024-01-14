@@ -20,7 +20,7 @@ export const Tabs = ({ tabs = '', active = 0, children, withModal = false }) => 
 
   // Pass down activeTab and tabId for conditional rendering
   const childrenWithTabSetter = children.map((child, tabId) =>
-    React.cloneElement(child, { activeTab, tabId })
+    React.cloneElement(child, { activeTab, tabId, key: tabId })
   )
 
   return (
