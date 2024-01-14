@@ -1122,6 +1122,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "jpmunic",
+      "name": "Josh Munic",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13474972?v=4",
+      "profile": "https://github.com/jpmunic",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "skipCi": true,
