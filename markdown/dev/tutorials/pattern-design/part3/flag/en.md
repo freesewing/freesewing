@@ -21,6 +21,11 @@ Finally, keep in mind that we are now straddling the world of the core library
 and frontend integration. These messages won't do anything unless you have a
 frontend the shows them.
 
+In other words **core does not care**. We are merely storing data in the store
+and relying on the frontend to show this data to the user. We merely offer
+standard methods to do so, but you can choose to ignore this info, or show it
+in a different way in your own frontend implementation.
+
 <Example previewFirst tutorial caption="We flagged something for the user">
 ```design/src/bib.mjs
 function draftBib({
@@ -337,4 +342,3 @@ function draftBib({
 ```
 </Example>
 
-Now the first thing you should know is: **core does not care**. We are
