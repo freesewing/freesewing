@@ -7016,13 +7016,13 @@ htm@^3.0.0:
   resolved "https://registry.yarnpkg.com/htm/-/htm-3.1.1.tgz#49266582be0dc66ed2235d5ea892307cc0c24b78"
   integrity sha512-983Vyg8NwUE7JkZ6NmOqpCZ+sh1bKv2iYTlUkzlWmA5JD2acKoxd4KVxbMmxX/85mtfdnDmTFoNKcg5DGAvxNQ==
 
-html-dom-parser@5.0.6:
-  version "5.0.6"
-  resolved "https://registry.yarnpkg.com/html-dom-parser/-/html-dom-parser-5.0.6.tgz#bc7ee4bbf508030d5326eab0800d67e2fcd7d586"
-  integrity sha512-6KSMOgxzAIZZ1Tcc6eNEfRFC/XE0+TiYaWanKNYKHSEQOtdxrR0t8ILKXNDcRea/WbIDltLUIP8mi/tw7dtFvQ==
+html-dom-parser@5.0.7:
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/html-dom-parser/-/html-dom-parser-5.0.7.tgz#33f029b34e8ec4076b7e2624c97debc79abb0c75"
+  integrity sha512-2YD2/yB0QgrlkBIn0CsGaRXC89E1gtuPVpiOGC52NTzPCC83n0WMdGD+5q7lpcKqbCpnWValQbovuy/NI/0kag==
   dependencies:
     domhandler "5.0.3"
-    htmlparser2 "9.0.0"
+    htmlparser2 "9.1.0"
 
 html-escaper@^2.0.0:
   version "2.0.2"
@@ -7037,12 +7037,12 @@ html-parse-stringify@^3.0.1:
     void-elements "3.1.0"
 
 html-react-parser@^5.0.7:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-5.1.0.tgz#93037971c883ca1c2ea708d67b211304e6373357"
-  integrity sha512-9BXtf81EFbi/YZDvDQkiwuPg4y8bXQrrWwrMvpIJxREXPv5HiLS0aQvtjY7YP3z2mYFD4urCWSl2ebSDdrrGwg==
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-5.1.1.tgz#9863709ab1bb5d15bce273253b539a6dd4fa28e2"
+  integrity sha512-L5VK0rKN3VM7uzRH+4wxAL9elvHuCNDjyWKKjcCDR+YWW5Qr7WWSK7+e627DcePVAFi5IMqc+rAU8j/1DpC/Tw==
   dependencies:
     domhandler "5.0.3"
-    html-dom-parser "5.0.6"
+    html-dom-parser "5.0.7"
     react-property "2.0.2"
     style-to-js "1.1.10"
 
@@ -7078,10 +7078,10 @@ htmlparser2@3.8.x:
     entities "1.0"
     readable-stream "1.1"
 
-htmlparser2@9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-9.0.0.tgz#e431142b7eeb1d91672742dea48af8ac7140cddb"
-  integrity sha512-uxbSI98wmFT/G4P2zXx4OVx04qWUmyFPrD2/CNepa2Zo3GPNaCaaxElDgwUrwYWkK1nr9fft0Ya8dws8coDLLQ==
+htmlparser2@9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-9.1.0.tgz#cdb498d8a75a51f739b61d3f718136c369bc8c23"
+  integrity sha512-5zfg6mHUoaer/97TxnGpxmbR7zJtPwIYFMZ/H5ucTlPZhKvtum05yiPK3Mgai3a0DyVxv7qYqoweaEd2nrYQzQ==
   dependencies:
     domelementtype "^2.3.0"
     domhandler "^5.0.3"
