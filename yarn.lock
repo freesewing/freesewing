@@ -5379,10 +5379,12 @@ escape-string-regexp@^5.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-5.0.0.tgz#4683126b500b61762f2dbebace1806e8be31b1c8"
   integrity sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==
 
-eslint-compat-utils@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/eslint-compat-utils/-/eslint-compat-utils-0.1.2.tgz#f45e3b5ced4c746c127cf724fb074cd4e730d653"
-  integrity sha512-Jia4JDldWnFNIru1Ehx1H5s9/yxiRHY/TimCuUc0jNexew3cF1gI6CYZil1ociakfWO3rRqFjl1mskBblB3RYg==
+eslint-compat-utils@^0.2.0:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/eslint-compat-utils/-/eslint-compat-utils-0.2.1.tgz#5aac3f687c84cd8df5e2dd256b7f324916d04db8"
+  integrity sha512-+0mhJhMeVaiMrgtltweI3sThf8g9VSZKVNSna6gdULUycp9HmcTvcYTw+b7YY+OUHAPXmRiJ9fvsDFnQq9i//A==
+  dependencies:
+    semver "^7.5.4"
 
 eslint-config-next@^14.0.1:
   version "14.0.4"
@@ -5470,12 +5472,12 @@ eslint-plugin-import@^2.27.5, eslint-plugin-import@^2.28.1:
     tsconfig-paths "^3.14.2"
 
 eslint-plugin-jsonc@^2.4.0:
-  version "2.11.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-jsonc/-/eslint-plugin-jsonc-2.11.2.tgz#5829ec7b4abd11378be525a85deb3dfbc6348dc7"
-  integrity sha512-F6A0MZhIGRBPOswzzn4tJFXXkPLiLwJaMlQwz/Qj1qx+bV5MCn79vBeJh2ynMmtqqHloi54KDCnsT/KWrcCcnQ==
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jsonc/-/eslint-plugin-jsonc-2.12.0.tgz#49585d8488d339f1b82ceba5c4f7e9998e216d90"
+  integrity sha512-4+MahaRGW+fMDSYQcDKi8MaIj+VKgZDh3dfYpbI8UxmP53asRbdnaySkDzoEwWmzlIYYpEHQruS+ZAHcC4d/pA==
   dependencies:
     "@eslint-community/eslint-utils" "^4.2.0"
-    eslint-compat-utils "^0.1.2"
+    eslint-compat-utils "^0.2.0"
     espree "^9.6.1"
     graphemer "^1.4.0"
     jsonc-eslint-parser "^2.0.4"
