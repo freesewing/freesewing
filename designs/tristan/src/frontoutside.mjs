@@ -14,8 +14,6 @@ export const frontOutside = {
     delete points.bustB
     delete points.bustDartEdge
 
-    // console.log({ points: JSON.parse(JSON.stringify(points)) })
-
     // macro('rmcutonfold')
     // store.cutlist.removeCut()
 
