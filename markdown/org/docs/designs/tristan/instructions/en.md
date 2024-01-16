@@ -9,6 +9,8 @@ These instructions are for a lined Tristan top with a center-front lacing closur
 
 ### Step 1: Cut your pieces
 
+![Cut your pieces](step01.png)
+
 Cut your pattern pieces. If you would like to add embroidery or other decoration, now is a good time to do so.
 
 ### Step 2: Sew the back inside parts together at center back
@@ -60,9 +62,13 @@ This is a good time to try on your garment and make any small adjustments. For e
 
 ### Step 7: Repeat with lining fabric
 
+![Repeat with lining fabric](step07.png)
+
 Repeat Steps 1 through 6 with your lining fabric.
 
 You will now have two identical pieces, one with your main fabric and one with your lining.
+
+Turn your lining piece inside out.
 
 ### Step 8: Begin the closure by sewing down center front
 

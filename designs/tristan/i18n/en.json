@@ -37,6 +37,10 @@
       "t": "Waist ease",
       "d": "Controls the amount of ease at the waist"
     },
+    "waistdartposition": {
+      "t": "Waist dart position",
+      "d": "Controls the position of the waist 'dart', moving it to the center (negative) or side (positive)"
+    },
     "frontShoulderWidth": {
       "t": "Front shoulder width",
       "d": "Controls how much width is added to the shoulder in the front"
