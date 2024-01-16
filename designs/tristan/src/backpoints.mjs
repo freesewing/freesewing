@@ -18,7 +18,6 @@ export const backPoints = {
     delete points.bustDartLeftCp
 
     const strapWidth = store.get('strapWidth')
-    const sideSeamLength = store.get('sideSeamLength')
 
     points.strapInside = points.shoulderDart.shiftTowards(points.hps, strapWidth / 2)
     points.strapOutside = points.shoulderDart.shiftTowards(points.shoulder, strapWidth / 2)
@@ -152,8 +151,6 @@ export const backPoints = {
         points: ['waistSideHem', 'dartBottomRightHem'],
       })
     }
-
-    // console.log({sideSeamLength:sideSeamLength,side:(new Path().move(points.waistSide).curve_(points.waistSideCp2, points.armhole)).length()})
 
     store.set('backOutsideWaistLength', points.dartBottomRight.dist(points.waistSide))
     store.set('backInsideWaistLength', points.dartBottomLeft.dist(points.waistCenter))
