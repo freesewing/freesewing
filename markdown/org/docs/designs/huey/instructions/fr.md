@@ -1,63 +1,63 @@
 ---
-title: "Sweat à capuche Huey Instructions de couture"
+title: "Sweat à capuche Huey: Instructions de couture"
 ---
 
 <Note>
 
-Ce patron peut être cousu avec ou avec une surjeteuse. Si tu n'utilises pas de surjeteuse ou de surjeteuse, tu devras _finir_ les coutures.
+Ce patron peut être cousu avec ou sans surjeteuse. Si tu n'utilises pas de surjeteuse tu devras _finir_ les coutures.
 
 </Note>
 
 ### Étape 1 : Fixer les poches
 
-- Repasse sous le surplus de couture du haut, des bords incurvés et inclinés.
-- _Surpiqûre_ ou _Point de bordure_ la marge de couture incurvée en place. Cela formera les ouvertures des poches.
+- Plis et repasse le surplus de couture du haut, des bords incurvés et des bords inclinés.
+- _Surpique_ la marge de couture incurvée en place. Cela formera les ouvertures des poches.
 - Épingle les poches aux devants en utilisant les lignes directrices et fais correspondre les bords bruts.
 - Bâtis les bords bruts des poches et des devants ensemble.
-- _Surpiqûre_ ou _Surpiqûre_ les bords supérieurs et obliques des poches sur les devants en laissant les bords incurvés ouverts.
+- _Surpique_ les bords supérieurs et obliques des poches sur les devants en laissant les bords incurvés ouverts.
 
-### Étape 2 : Fabrication du corps
+### Étape 2 : Assemblage du corps
 
-- Avec _bons côtés ensemble_, couds les devants aux dos au niveau des coutures des épaules.
-- Avec _bons côtés ensemble_, couds les manches au devant et au dos en faisant correspondre les encoches.
-- Avec _bons côtés ensemble_, couds les manches et les coutures latérales.
+- Avec les _bons côtés ensemble_, couds les devants aux dos au niveau des coutures des épaules.
+- Avec les _bons côtés ensemble_, couds les manches au devant et au dos en faisant correspondre les encoches.
+- Avec les _bons côtés ensemble_, couds les manches et les coutures latérales.
 
 ### Étape 3 : Faire des trous pour le cordon de serrage (facultatif)
 
 Si tu ne souhaites pas ajouter de cordon de serrage, tu peux passer à l'étape 4.
 
-- Prends un jeu assorti des pièces de la capuche, que tu as l'intention de mettre sur l'extérieur du sweat à capuche fini.
-- Marque l'emplacement d'un trou sur chaque pièce de la hotte, le long de la courbe intérieure.
-  - Le trou doit se trouver à environ 1,5-2 cm du bord du tissu. Cela permet de ne pas gêner ta marge de couture.
+- Prends un jeu assorti des pièces de la capuche, celui que tu as l'intention de mettre sur l'extérieur du sweat à capuche fini.
+- Marque l'emplacement d'un trou sur chaque pièce de la capuche, le long de la courbe intérieure.
+  - Le trou doit se trouver à 1,5-2 cm du bord du tissu. Cela permet de prendre en compte la marge de couture.
   - Le trou doit être situé légèrement en haut du bas de la courbe intérieure. Cela permet de l'éloigner des coutures avant.
-- Sur l'envers du tissu, place-toi face à l'endroit où tu fais le trou pour stabiliser le tissu.
-- Faites une boutonnière à votre marque, soit à la main, soit a la machine.
-- Vous pouvez aussi construire ou utiliser des œillets à la marque.
+- Sur l'envers du tissu, entoile l'endroit où tu fais le trou pour stabiliser le tissu.
+- Faites une boutonnière sur la marque, soit à la main, soit à la machine.
+- Vous pouvez aussi construire ou utiliser des œillets sur la marque.
 
 <Tip>
 
-Si vous n'avez pas ou ne souhaitez pas utiliser d'entoilage, vous pouvez utiliser un morceau de tissu robuste tel que le denim.
+Si vous n'avez ou ne souhaitez pas utiliser d'entoilage, vous pouvez utiliser une chute de tissu robuste comme du denim.
 
 </Tip>
 
 <Note>
 
-Les cordons seront enfilés après la construction du sweat à capuche.
+Les cordons seront enfilés à la fin de l'assemblage du sweat à capuche.
 
 </Note>
 
-### Etape 4 : Préparation de la capuche
+### Étape 4 : Préparation de la capuche
 
-- Avec _bons côtés ensemble_, en faisant correspondre les ensembles, couds les pièces de la capuche ensemble le long du bord de la courbe extérieure.
-- Avec _, bons côtés ensemble_, en faisant correspondre les coutures, couds la capuche intérieure à la capuche extérieure le long du bord de la courbe intérieure.
-- Tourne les bons côtés vers l'extérieur.
+- Avec les _bons côtés ensemble_, sur un même jeu, couds les pièces de la capuche le long du bord de la courbe extérieure.
+- Avec les_ bons côtés ensemble_, en faisant correspondre les coutures, couds la capuche intérieure à la capuche extérieure le long du bord de la courbe intérieure.
+- Retourne la capuche à l'endroit.
 - Bâtis les bords bruts de l'avant et de l'arrière ensemble.
-- Crée une enveloppe pour le cordon de serrage en cousant à environ 2,5 cm du bord intérieur sur le côté où se trouvent les trous du cordon.
-- (Au choix) Si tu n'utilises pas de cordon, _surpiqûre_ ou _piqûre de bordure_ la courbe intérieure.
+- Crée un tunnel pour le cordon de serrage en cousant à environ 2,5 cm du bord intérieur sur le côté où se trouvent les trous du cordon.
+- (Optionnel) Si tu n'utilises pas de cordon, _surpique_ la courbe intérieure.
 
 <Note>
 
-Lors de la création du boîtier ou de la surpiqûre, veille à ce que la couture de la courbe intérieure soit légèrement à l'intérieur de la capuche pour l'empêcher de dépasser à l'avenir.
+Lors de la création du tunnel ou de la surpiqûre, veille à ce que la couture de la courbe intérieure soit légèrement à l'intérieur de la capuche pour l'empêcher de dépasser plus tard.
 Si tu n'utilises pas de cordon de serrage, tu peux aussi _sous-pointer_ la couture de la courbe intérieure.
 
 </Note>
