@@ -5,7 +5,7 @@ export const peplumBack = {
   name: 'tristan.peplumBack',
   after: peplumFront,
   plugins: [ringsectorPlugin],
-  draft: ({ Point, points, paths, options, store, macro, sa, part }) => {
+  draft: ({ points, paths, options, store, macro, sa, part }) => {
     if (false == options.peplum) {
       return part.hide()
     }

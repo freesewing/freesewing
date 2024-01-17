@@ -1,23 +1,6 @@
 import { frontPoints as nobleFrontPoints } from '@freesewing/noble'
 import { pctBasedOn, hidePresets } from '@freesewing/core'
 
-function stringify(obj) {
-  let cache = []
-  let str = JSON.stringify(obj, function (key, value) {
-    if (typeof value === 'object' && value !== null) {
-      if (cache.indexOf(value) !== -1) {
-        // Circular reference found, discard key
-        return
-      }
-      // Store value in our collection
-      cache.push(value)
-    }
-    return value
-  })
-  cache = null // reset the cache
-  return str
-}
-
 export const frontPoints = {
   name: 'tristan.frontPoints',
   from: nobleFrontPoints,
@@ -69,9 +52,9 @@ export const frontPoints = {
       // eslint-disable-next-line no-unused-vars
       menu: (settings, mergedOptions) => (mergedOptions.peplum === true ? false : 'options'),
     },
-    lacing: { bool: false, menu: 'options' },
+    lacing: { bool: true, menu: 'options' },
     lacingLocation: {
-      dflt: 'back',
+      dflt: 'front',
       list: ['front', 'back'],
       // eslint-disable-next-line no-unused-vars
       menu: (settings, mergedOptions) => (mergedOptions.lacing === false ? false : 'options'),
