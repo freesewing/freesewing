@@ -263,7 +263,7 @@ The `title` and `scalebox` macros to be precise.
 Before we add the title, we will also set the cutlist via a method that was added to the
 store by one of the core plugins.
 
-As a matter of fact, all of these snippets, macros, and store methods are provided by plugings.
+As a matter of fact, all of these snippets, macros, and store methods are provided by plugins.
 For more details, [refer to the plugin guide](/guides/plugins).
 
 <Example previewFirst tutorial caption="This looks way better">

@@ -88,7 +88,7 @@ Here's a brief summary of the things we've added above:
 - `points`: A container object to hold the part's points
 - `paths`: A container object to hold the part's paths
 
-<Tip compact>Remember: Constructures start with a **C**apital letter</Tip>
+<Tip compact>Remember: Constructors start with a **C**apital letter</Tip>
 
 Long story short: These will make it possible for us to draw points and paths easily.
 
