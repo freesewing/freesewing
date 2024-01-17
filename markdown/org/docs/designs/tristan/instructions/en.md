@@ -100,7 +100,7 @@ Sew 2 mm (0.1 inch) in from center edge.
 
 Allow enough space for your boning, then sew again.
 
-Repeat on the other side.
+Repeat Steps 8 through 10 on the other side.
 
 <Note>
 ##### Leave enough room for your boning
