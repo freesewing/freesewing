@@ -2,19 +2,19 @@
 title: "Hallo der Hai: Designer-Notizen"
 ---
 
-Hallo! This has quite a story behind it.
+Hallo! Dahinter verbirgt sich eine spannende Geschichte.
 
-A while ago rumours started swirling that IKEA would discontinue it's Blåhaj stuffed shark, which is a universally beloved toy. The FreeSewing community was quite agitated by this prospect. No one wanted to see the worlds friendliest shark becoming extinct. And neither did I.
+A while ago rumours started swirling that IKEA would discontinue it's Blåhaj stuffed shark, which is a universally beloved toy. Die FreeSewing-Gemeinschaft war über diese Aussicht ziemlich aufgeregt. No one wanted to see the worlds friendliest shark becoming extinct. Und ich auch nicht.
 
-It turned out that no one in the community had ever taken a Blåhaj apart, and no one had the courage to do so. The only Blåhaj in my household was my daughter's, and I couldn't touch that one.
+Es stellte sich heraus, dass niemand in der Gemeinde jemals einen Blåhaj zerlegt hatte und auch niemand den Mut hatte, es zu tun. The only Blåhaj in my household was my daughter's, and I couldn't touch that one.
 
-This seemed like a great project to work on, and the lack of a Blåhaj was not an insurmountable obstacle. So one day I made a trip to Ikea, and bought me my own shark. I took the seam ripper to the poor animal, and transfered it's innards to a sterile bag. The individual pieces were traced, scanned, and used in InkScape to generate a fully functional shark pattern.
+Das schien ein großartiges Projekt zu sein, an dem man arbeiten konnte, und das Fehlen eines Blåhaj war kein unüberwindbares Hindernis. So one day I made a trip to Ikea, and bought me my own shark. I took the seam ripper to the poor animal, and transfered it's innards to a sterile bag. The individual pieces were traced, scanned, and used in InkScape to generate a fully functional shark pattern.
 
-It can be saled up and down between 50 cm and 5 meter. So there is a shark for everyone.
+Es kann zwischen 50 cm und 5 m größer und kleiner skaliert werden. Es gibt also einen Hai für jede*n.
 
 <Note>
 
-Ikea did not discontinue Blåhaj, and you can still get the blue shark. But if you want one in a different colour, you're at the right spot.
+Ikea hat Blåhaj nicht eingestellt, und du kannst den blauen Hai immer noch bekommen. Aber wenn du einen in einer anderen Farbe willst, bist du hier richtig.
 
 </Note>
 

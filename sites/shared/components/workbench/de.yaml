@@ -45,7 +45,7 @@ editSettings: Einstellungen bearbeiten
 editSettingsByHand: Einstellungen manuell bearbeiten
 elastic: Gummi
 export: Exportieren
-exporting: Exporting
+exporting: Exportieren
 exportAsData: Als Daten exportieren
 exportForEditing: Für die Bearbeitung exportieren
 exportForPrinting: Für den Druck exportieren
@@ -110,7 +110,7 @@ showOnlyThisPart: Nur diesen Teil des Musters anzeigen
 sleevecap: Armkugel
 style: Stil
 test: Test
-testDesign: Test Design
+testDesign: Test-Entwurf
 testDesignMeasurement: "Teste {design} Messungen: {measurement}"
 testDesignOption: "Teste {design} Designoptionen: {option}"
 testDesignSets: "Test {design} über Messreihen hinweg"
