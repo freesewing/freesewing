@@ -336,5 +336,3 @@ function draftBib({
 }
 ```
 </Example>
-
-Now the first thing you should know is: **core does not care**. We are
