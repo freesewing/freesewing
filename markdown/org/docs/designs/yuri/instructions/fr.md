@@ -4,7 +4,7 @@ title: "Sweat à capuche Yuri : Instructions de couture"
 
 <Note>
 
-Ce patron peut être cousu avec ou avec une surjeteuse. Pour _finir_ les coutures sans surjeteuse/sertisseuse, tu peux utiliser ta méthode préférée ou l'une des méthodes ci-dessous :
+Ce patron peut être cousu avec ou sans surjeteuse. Pour _finir_ les coutures sans surjeteuse/sertisseuse, tu peux utiliser ta méthode préférée ou l'une des méthodes ci-dessous :
 
 ##### Méthode de finition 1
 
