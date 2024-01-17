@@ -111,7 +111,7 @@ Leave enough wiggle room to allow you to insert your boning. You want the channe
 
 ![Sew your second boning channel](step10.png)
 
-Mark the locations of your eyelets/grommets. Allow enough space to install these later, then sew again.
+Mark the locations of your eyelets. Allow enough space to install these later, then sew again.
 
 Allow enough space for another row of boning, then sew again.
 
@@ -121,9 +121,9 @@ Repeat on the other side.
 
 Cap your boning if appropriate for the type of boning used. Then insert boning in the boning channels.
 
-### Step 12: Install your eyelets/grommets
+### Step 12: Install your eyelets
 
-Install your eyelets or grommets between the two boning channels.
+Install your eyelets between the two boning channels.
 
 ### Step 13: Bind and lace up your top
 
