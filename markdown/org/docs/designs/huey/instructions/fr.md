@@ -58,7 +58,7 @@ Les cordons seront enfilés à la fin de l'assemblage du sweat à capuche.
 <Note>
 
 Lors de la création du tunnel ou de la surpiqûre, veille à ce que la couture de la courbe intérieure soit légèrement à l'intérieur de la capuche pour l'empêcher de dépasser plus tard.
-Si tu n'utilises pas de cordon de serrage, tu peux aussi _sous-pointer_ la couture de la courbe intérieure.
+Si tu n'utilises pas de cordon de serrage, tu peux aussi _sous-piquer_ la couture de la courbe intérieure.
 
 </Note>
 
@@ -66,80 +66,80 @@ Si tu n'utilises pas de cordon de serrage, tu peux aussi _sous-pointer_ la coutu
 
 Un tour de cou peut être utile pour stabiliser et couvrir les coutures du cou, mais il est facultatif si tu souhaites l'ignorer.
 
-- Découpe une bande de tissu en croix dans ton tissu principal :
-  - Ton ouverture de cou + le double de ton surplus de couture avant long.
-  - Triple la marge de couture du cou en largeur.
+- Découpe une bande de tissu transversal (perpendiculaire au droit fil) dans ton tissu principal :
+  - Ton ouverture de cou + le double de ta marge de couture en longueur
+  - Trois fois ta marge de couture au cou en largeur.
 
-### Étape 6 : Fixer le capuchon
+### Étape 6 : Fixer la capuche
 
-- Epingle la capuche au cou en faisant correspondre la capuche extérieure à _bon côté_ du cou.
-- Si tu l'utilises, épingle le tour de cou _bon côté_ à la capuche intérieure en faisant coïncider les bords bruts.
+- Épingle la capuche au cou avec la capuche extérieure contre le _bon côté_ du cou.
+- Si tu l'utilises, épingle le _bon côté_ du tour de cou à la capuche intérieure en faisant coïncider les bords bruts.
 - Couds la couture du tour de cou.
-- _Finis la couture de_ si tu n'utilises pas de tour de cou, passe à l'étape 7.
-- Appuie sur le tour de cou.
+- _Finis la couture _ si tu n'utilises pas de tour de cou et passe à l'étape 7.
+- Repasse le tour de cou.
 - Sur l'extérieur _Surpiquer_ la bande de cou en place.
 - À l'intérieur, coupez la bande de cou vers le bas pour le surfiler.
 
 ### Étape 7 : Attacher la ceinture
 
 - Pliez la ceinture en 2 dans le sens de la longueur envers contre envers. Repasser.
-- Avec _bons côtés_ ensemble coudre la ceinture au bas du dos et de l'avant.
+- Avec les _bons côtés_ ensemble coudre la ceinture au bas du dos et de l'avant.
 - Repassez la couture vers le haut.
-- _Surpiqûre_ ou _Point de bordure_ le surplus de couture de la ceinture au corps.
+- _Surpiquez_ le surplus de couture de la ceinture au corps.
 
 ### Étape 8 : Attacher les poignets
 
-- Avec _bons côtés ensemble,_ coudre cotés courts des poignets pour créer deux bandes.
+- Avec les _bons côtés ensemble,_ coudre les côtés courts des poignets pour créer deux bandes.
 - Repasser pour ouvrir la marge de couture.
-- (Facultatif) _Point de bordure_ les surplus de couture vers le bas.
+- (Facultatif) _Surpique à 1 mm_ les surplus de couture vers le bas.
 - Pliez les poignets en 2 dans le sens de la longueur envers contre envers. Repasser.
-- En faisant correspondre les coutures et les bords bruts, épingle les poignets aux manches _bons côtés ensemble_.
+- En faisant correspondre les coutures et les bords bruts, épingle les poignets aux manches _endroit contre endroit_.
 - Couds les poignets aux manches.
 - Repasse les surplus de couture vers le haut.
-- _Surpiqûre_ ou _Piqûre d'angle_ les surplus de couture des manchettes aux manches.
+- _Surpique_ les surplus de couture des poignets aux manches.
 
-### Étape 9 : La fermeture éclair
+### Étape 9 : La fermeture Éclair
 
-- Si besoin est, fais face aux bords avant du sweat à capuche.
-- Ouvre partiellement la fermeture à glissière.
-- Plie le haut du ruban de la fermeture à glissière vers le _bon côté_ du ruban de la fermeture à glissière. Découpe si nécessaire.
-- Épingle la fermeture éclair le long d'un des bords avant de la capuche, du devant et de la ceinture. The zipper teeth should just be slightly over the seam line with the edge of the tape either matching or being slightly over from the hoodie edge. Making sure the zipper pull is faced the _good sides_ of the hoodie and the bottoms are lined up.
-- En utilisant un pied pour fermeture à glissière, pique la fermeture à glissière sur le sweat à capuche en utilisant la largeur de ta couture. Lorsque tu arrives à la tirette de la fermeture à glissière, arrête-toi, pose ton aiguille, lève le pied-de-biche, fais passer la tirette de la fermeture à glissière devant le pied-de-biche, abaisse le pied-de-biche. Ensuite, tu peux continuer à faire la couture.
-- Détache la fermeture éclair.
-- Épingle et couds la bande de fermeture éclair non attachée à l'autre côté du sweat à capuche de la même manière.
-- Repasse les coutures à l'intérieur en faisant attention à ne pas faire fondre les dents de la fermeture éclair avec ton fer à repasser.
-- _Surpiqûre_ les rubans de la fermeture éclair en place. Il se peut que tu aies besoin d'utiliser un pied pour fermeture à glissière.
+- Si tu as besoin, tourne le sweat bords avant face à toi.
+- Ouvre partiellement la fermeture Éclair.
+- Plie le haut du ruban de la fermeture à Éclair vers le _bon côté_ du ruban de la fermeture Éclair. Découpe si nécessaire.
+- Épingle la fermeture éclair le long d'un des bords avant de la capuche, du devant et de la ceinture. Fais attention que la tirette de la fermeture est contre le _bon côté_ du sweat et que le bas est aligné. Les dents de la fermeture Éclair doivent être légèrement au-dessus de la ligne de couture, et le bord de la bande doit correspondre au bord de la capuche ou le dépasser légèrement.
+- En utilisant un pied pour fermeture Éclair, pique la fermeture Éclair sur le sweat à capuche en utilisant ta marge de couture. Lorsque tu arrives à la tirette de la fermeture à glissière, arrête-toi, descend ton aiguille, lève le pied-de-biche, fais passer la tirette de la fermeture à glissière devant le pied-de-biche, abaisse le pied-de-biche. Ensuite, tu peux continuer ta couture.
+- Sépare la fermeture Éclair.
+- Épingle et couds la bande de fermeture Éclair séparé de l'autre côté du sweat à capuche de la même manière.
+- Repasse les coutures vers l'intérieur en faisant attention à ne pas faire fondre les dents de la fermeture Éclair avec ton fer à repasser.
+- _Surpique_ les rubans de la fermeture Éclair en place. Il se peut que tu aies besoin d'utiliser un pied pour fermeture Éclair.
 
 <Tip>
 
-Pour t'aider à faire correspondre les poches et les coutures, lorsqu'il est attaché d'un côté et temporairement, marque les dents correspondantes au niveau des poches et de la couture. Tu peux maintenant utiliser ces marques pour aligner la fermeture éclair sur la poche et les coutures de l'autre côté.
+Pour t'aider à faire correspondre les poches et les coutures, lorsque la fermeture est temporairement attachée d'un côté, marque les dents correspondantes au niveau des poches et de la couture. Tu peux maintenant utiliser ces marques pour aligner la fermeture Éclair sur la poche et les coutures de l'autre côté.
 
 </Tip>
 
 <Note>
 
-Tu n'as besoin d'affronter ton tissu que s'il est très extensible ou s'il a besoin d'un peu plus de stabilité.
+Tu n'as besoin d'entoiler ton tissu que s'il est très extensible ou qu'il a besoin d'un peu plus de stabilité.
 
 </Note>
 
 ### Étape 10 : Enfile le cordon de serrage
 
-- Enfile la ficelle de dessin dans les trous du cordon.
-- Si nécessaire, fixe les extrémités du cordon de serrage, par exemple avec des agrafes.
+- Enfile le cordon dans les trous de la capuche prévus à cet effet.
+- Si nécessaire, fixe les extrémités du cordon de serrage, par exemple avec des embouts de cordon.
 
 <Tip>
 
-Utilise une épingle à nourrice pour t'aider à enfiler le cordon.
+Tu peux utiliser une épingle à nourrice pour t'aider à enfiler le cordon.
 
 </Tip>
 
-### Étape 11: Profitez-en!
+### Étape 11: Profites-en!
 
 - Voilà! Vous avez terminé ! Maintenant, va te réchauffer et te mettre à l'aise dans ton nouveau sweat à capuche !
 
 <Note>
 
 Ce patron a été mis en vedette dans le [numéro 27 du magazine HackSpace ](https://hackspace.raspberrypi.org/issues/27),
-l'article contient également des instructions, donc vous pouvez vouloir le consulter.
+l'article contient également des instructions que vous pouvez vouloir consulter.
 
 </Note>
