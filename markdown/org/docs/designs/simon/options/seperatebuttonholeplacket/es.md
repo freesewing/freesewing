@@ -1,5 +1,5 @@
 ---
-title: "Tapeta de ojal separada"
+title: Tapeta de ojal separada
 ---
 
 ![Tapeta de ojal separada](seperatebuttonholeplacket.svg)

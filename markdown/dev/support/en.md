@@ -12,5 +12,5 @@ patron](https://freesewing.org/patrons/join).
 
 ##### Need help?
 If it's not support for FreeSewing you're looking for, but rather
-support for yourself, then the <DocsLink slug="contact" /> page is for you.
+support for yourself, then the [support page](https://freesewing.org/support) is for you.
 </Note>

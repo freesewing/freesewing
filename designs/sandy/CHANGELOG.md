@@ -1,7 +1,14 @@
 # Change log for: @freesewing/sandy
 
 
-## 3.0.0 (2022-09-30)
+## 3.1.0 (2023-12-26)
+
+### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+ - The skirt and curved waistband are now constructed with the ringsector macro
+
+## 3.0.0 (2023-09-30)
 
 ### Changed
 

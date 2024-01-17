@@ -16,3 +16,4 @@ Or, if you're not certain where the lymph nodes under your arm are, you can foll
 - Your index finger will now sit in the armput, which is a bit too high. But your middlefinger is a good spot to mark as the start of your armpit.
 
 
+<MeasieImage />

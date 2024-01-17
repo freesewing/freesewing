@@ -16,38 +16,38 @@ Schauen wir uns an, was das im Einzelnen bedeutet:
 
 ## Neues Schnittmuster: Breanna ist ein Grundschnittblock für Damenoberbekleidung
 
-Schauen Sie sich [Breanna](/designs/breanna/), unser Grundschnittblock für Damenoberbekleidung an.
+Sieh dir [Breanna](/designs/breanna/) an, unser Grundschnitt für Damenoberbekleidung.
 
-Ein Grundschnittblock ist vielleicht nicht das aufregendste Schnittmuster, das es gibt, aber er spielt eine wichtige Rolle, da er die Grundform ist, auf der andere Schnittmuster aufgebaut sind.
+Ein Grundschnitt ist vielleicht nicht das aufregendste Schnittmuster, das es gibt, aber er spielt eine wichtige Rolle, da er die Grundform ist, auf der andere Schnittmuster aufgebaut sind.
 
-Wir haben zum Beispiel einen ähnlichen Block für Herrenbekleidung namens [Brian](/designs/brian/) und unsere [Aaron](/designs/aaron/), [Bent](/designs/bent/), [Carlita](/designs/carlita/), [Carlton](/designs/carlton/), [Huey](/designs/huey/), [Hugo](/designs/hugo/), [Jaeger](/designs/jaeger/), [Simon](/designs/simon/), [Simone](/designs/simone/), [Sven](/designs/sven/), und [Wahid](/designs/wahid/) Muster können alle irgendwie auf Brain zurückgeführt werden.
+Wir haben zum Beispiel einen ähnlichen Grundschnitt für Herrenbekleidung namens [Brian](/designs/brian/) und unsere [Aaron](/designs/aaron/), [Bent](/designs/bent/), [Carlita](/designs/carlita/), [Carlton](/designs/carlton/), [Huey](/designs/huey/), [Hugo](/designs/hugo/), [Jaeger](/designs/jaeger/), [Simon](/designs/simon/), [Simone](/designs/simone/), [Sven](/designs/sven/), und [Wahid](/designs/wahid/) Muster können alle irgendwie auf Brian zurückgeführt werden.
 
-Mit anderen Worten: Breanna ist für uns ein wichtiger Baustein, um unsere Damenkollektion zu erweitern. Das heißt aber nicht, dass es nicht auch für dich eine gute Nachricht ist. Wenn du schon eine Weile für nähst, stehen die Chancen gut, dass das Entwerfen eines eigenen Blocks/Slopers immer auf deiner To-Do-Liste steht. Dann gibt es gute Neuigkeiten, denn hier ist dein Block fertig zum Mitnehmen.
+Mit anderen Worten: Breanna ist für uns ein wichtiger Baustein, um unsere Damenkollektion zu erweitern. Das heißt aber nicht, dass es nicht auch für dich eine gute Nachricht ist. Wenn du schon eine Weile nähst, stehen die Chancen gut, dass das Entwerfen eines eigenen Schnittmusters auf deiner To-Do-Liste steht. Dann gibt es gute Neuigkeiten, denn hier ist dein Block fertig zum Mitnehmen.
 
-Oh, und natürlich hat es all den Schnickschnack, den du von uns erwarten kannst. Schau dir [an, die Musteroptionen](/docs/designs/breanna/options/) und Ich denke, du wirst positiv beeindruckt sein. Zumindest kann dieser Block 1 oder 2 Brustabnäher an 15 verschiedenen Stellen unterbringen, so dass du 120 einzigartige Möglichkeiten hast, deine Brustabnäher zu platzieren.
+Oh, und natürlich hat es all den Schnickschnack, den du von uns erwarten kannst. Schau dir [ die Musteroptionen](/docs/designs/breanna/options/) an, und Ich denke, du wirst positiv beeindruckt sein. Zumindest kann dieser Schnitt 1 oder 2 Brustabnäher an 15 verschiedenen Stellen unterbringen, so dass du 120 einzigartige Möglichkeiten hast, deine(n) Brustabnäher zu platzieren.
 
-Die Entwicklung von Breanna hat eine Weile gedauert und wir würden uns freuen, wenn du uns dein Feedback gibst. Aus einem solchen Block einen Musselin zu machen, ist wirklich nicht viel Arbeit. Wenn du also ein bisschen Zeit hast und uns wissen lässt, wie es gelaufen ist, , wäre das toll.
+Die Entwicklung von Breanna hat eine Weile gedauert und wir würden uns freuen, wenn du uns dein Feedback gibst. Aus einem solchen Block einen Musselin zu machen, ist wirklich nicht viel Arbeit. Wenn du also ein bisschen Zeit hast dies auszuprobieren und uns wissen lässt, wie es gelaufen ist, wäre das großartig.
 
 
 ## Neue/Verschiedene Maße zur besseren Anpassung an Damenbekleidung
 
-Jetzt, wo wir uns der Damenmode zuwenden, haben wir gemerkt, dass die Maße, die wir auf der Website verwenden, etwas schräg zur Herrenmode sind. Außerdem hatten viele Leute Probleme mit der Messung der Schulterneigung. Deshalb haben wir uns entschlossen, unsere Maßstäbe zu überdenken, , und wir haben folgende Änderungen vorgenommen:
+Jetzt, wo wir uns der Damenmode zuwenden, haben wir gemerkt, dass die Maße, die wir auf der Website verwenden, etwas zu nah an der Herrenmode sind. Außerdem hatten viele Leute Probleme mit der Messung der Schulterneigung. Deshalb haben wir uns entschlossen, unsere Maße zu überdenken und haben folgende Änderungen vorgenommen:
 
 ### Wir haben einen Haufen neuer *HPS* Messungen
 
-Wir haben uns für den High-Point Shoulder, den sogenannten HPS-Punkt, als Grundlage für viele der vertikalen Rumpfmaße entschieden. Wenn du dir nicht sicher bist, wo sich der HPS-Punkt befindet, kannst du unter [in der HPS-Dokumentation](/docs/measurements/hps/)nachsehen.
+Wir haben uns für den "High-Point Shoulder", den sogenannten HPS-Punkt, als Grundlage für viele der vertikalen Rumpfmaße entschieden. Wenn du dir nicht sicher bist, wo sich der HPS-Punkt befindet, kannst du [in der HPS-Dokumentation](/docs/measurements/hps/)nachsehen.
 
 ### Wir haben die Messung "Mitte Rücken zum Nacken" eingestellt
 
-Wie bereits erwähnt, verwenden wir die Messungen vom HPS-Punkt jetzt für die vertikalen Rumpfmessungen . Aus diesem Grund haben wir die alte *Rückenmitte Nacken bis Taille* Messung eingestellt. Aus diesem Grund haben wir die alte *Rückenmitte Nacken bis Taille* Messung eingestellt.
+Wie bereits erwähnt, verwenden wir die Messungen vom HPS-Punkt jetzt für die vertikalen Rumpfmessungen. Aus diesem Grund haben wir die alte *Nackenmitte bis Taille* Messung eingestellt.
 
 Da dieses Maß nun wegfällt, musst du für bestimmte Muster eventuell ein weiteres Maß hinzufügen.
 
 ### Wir haben die Art und Weise geändert, wie die Schulterneigung gemessen wird
 
-Wir haben festgestellt, dass die Leute mit der Art und Weise, wie wir sie gebeten haben, [die Schulterneigung zu messen, zu kämpfen haben.](/docs/measurements/shoulderslope) Deshalb haben wir die Vorgehensweise geändert.
+Wir haben festgestellt, dass die Leute Schwierigkeiten hatten, wie wir die [Schulterneigung messen](/docs/measurements/shoulderslope). Deshalb haben wir die Vorgehensweise geändert.
 
-Da die neue Methode eine ganz andere Zahl ergibt (die letztlich dasselbe erfasst , nämlich wie stark deine Schulter nach unten abfällt), mussten wir auch hier alle vorhandenen Daten zurücksetzen. Mit anderen Worten: Du musst die Neigung deiner Schulter neu messen.
+Da die neue Methode eine ganz andere Zahl ergibt (die letztlich dasselbe erfasst, nämlich wie stark deine Schulter nach unten abfällt), mussten wir auch hier alle vorhandenen Daten zurücksetzen. Mit anderen Worten: Du musst die Neigung deiner Schulter neu messen.
 
 ## Erstelle Muster in *Standardgrößen* (kein Konto erforderlich)
 

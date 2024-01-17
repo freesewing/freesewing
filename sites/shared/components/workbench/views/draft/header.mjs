@@ -263,7 +263,7 @@ export const DraftHeader = ({
         </div>
         <Spacer />
         <div className="flex flex-row items-center gap-4">
-          {saveAs && saveAs.pattern ? (
+          {saveAs.pattern ? (
             <button
               onClick={savePattern}
               className={`tooltip tooltip-primary tooltip-bottom flex flex-row items-center disabled:opacity-50`}

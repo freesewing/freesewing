@@ -8,7 +8,7 @@ Het is de parametrische versie van een basisblok voor damesmode dat in de indust
 
 Het kan dus heel goed uitpakken, vooral als je verder staat dan het soort magere dames waar Italianen vaak voor ontwerpen.
 
-Zie ook [deze FAQ over vrouwenmodeblokken voor meer achtergrondinformatie](/docs/faq/womenswear-blocks).
+See also [this FAQ on womenswear blocks for more background info](/docs/about/faq/womenswear-blocks).
 
 joost
 

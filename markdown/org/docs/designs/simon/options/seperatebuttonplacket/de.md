@@ -1,5 +1,5 @@
 ---
-title: "Separate Knopfleiste"
+title: Separate Knopfleiste
 ---
 
 ![Separate Knopfleiste](seperatebuttonplacket.svg)

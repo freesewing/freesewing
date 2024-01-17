@@ -8,7 +8,7 @@ title: "Боді-блок Bella: Нотатки дизайнера"
 
 Тож ваш пробіг може бути дуже великим, особливо якщо ви не схожі на худеньких жінок, на яких розраховані італійські дизайнери.
 
-Дивіться також [це FAQ про блоки жіночого одягу для отримання додаткової довідкової інформації](/docs/faq/womenswear-blocks).
+See also [this FAQ on womenswear blocks for more background info](/docs/about/faq/womenswear-blocks).
 
 Йост
 

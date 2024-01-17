@@ -1,17 +1,4 @@
-function draftBox({
-  options,
-  Point,
-  Path,
-  points,
-  paths,
-  Snippet,
-  snippets,
-  complete,
-  sa,
-  paperless,
-  macro,
-  part,
-}) {
+function draftBox({ options, Point, Path, points, paths, Snippet, snippets, sa, macro, part }) {
   const w = 500 * options.size
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(w, 0)
@@ -27,33 +14,26 @@ function draftBox({
     .close()
     .attr('class', 'fabric')
 
-  // Complete?
-  if (complete) {
-    points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    snippets.logo = new Snippet('logo', points.logo)
-    points.text = points.logo
-      .shift(-90, w / 8)
-      .attr('data-text', 'hello')
-      .attr('data-text-class', 'center')
+  points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+  snippets.logo = new Snippet('logo', points.logo)
+  points.text = points.logo.shift(-90, w / 8).addText('hello', 'center')
 
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = paths.seam.offset(sa).addClass('fabric sa')
   }
 
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15,
-    })
-    macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.topRight.x + sa + 15,
-    })
-  }
+  macro('hd', {
+    id: 'hWidth',
+    from: points.bottomLeft,
+    to: points.bottomRight,
+    y: points.bottomLeft.y + sa + 15,
+  })
+  macro('vd', {
+    id: 'vHeight',
+    from: points.bottomRight,
+    to: points.topRight,
+    x: points.topRight.x + sa + 15,
+  })
 
   return part
 }

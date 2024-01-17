@@ -73,10 +73,10 @@
     @apply pl-2 lg:pl-4 list-decimal list-inside text-base-content;
   }
   .mdx code {
-    @apply bg-neutral-content px-2 rounded text-neutral font-mono font-bold;
+    @apply bg-base-300 px-1.5 text-base-content font-mono font-medium bg-opacity-10 py-0.5 border-base-content rounded border;
   }
   .mdx pre code {
-    @apply bg-inherit;
+    @apply bg-inherit border-0;
   }
   .mdx a.heading-autolink {
     color: currentColor;

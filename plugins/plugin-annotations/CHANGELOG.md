@@ -1,7 +1,17 @@
 # Change log for: @freesewing/plugin-annotations
 
 
-## 3.0.0 (2022-09-30)
+## 3.1.0 (2023-12-26)
+
+### Changed
+
+ - Added support for notes in flags
+
+### Fixed
+
+ - Removing macros did not always remove the cutlist data in the store. Fixes
+
+## 3.0.0 (2023-09-30)
 
 ### Changed
 

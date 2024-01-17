@@ -28,7 +28,7 @@ Hay dos formas de hacer las fijaciones. Puedes usarla como cinta al bies de dobl
 
   - Dobla ambas encuadernaciones por el lado largo en dos, _lados equivocados juntos_, y presiona bien.
   - Marca el centro de cada una de las fijaciones y de las partes delantera y trasera.
-  - Pega la encuadernación doblada a la parte correspondiente, _lados buenos juntos_. Asegúrate de distribuir la ligadura uniformemente a lo largo del borde. Deberías tener tres capas unidas con alfileres.
+  - Pega la encuadernación doblada a la parte correspondiente, _lados buenos juntos_. Asegúrate de distribuir la ligadura uniformemente a lo largo del borde. Asegúrate de distribuir la ligadura uniformemente a lo largo del borde.
   - Cose justo por debajo de la SA.
   - Presiona la encuadernación hacia el borde, presionando el SA hacia el _lado equivocado_.
   - Cose a través de la pieza y el SA por debajo, sujetando el SA doblado en el _lado equivocado_.

@@ -1104,6 +1104,33 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ArcticCoder",
+      "name": "Vili Sinervä",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39151688?v=4",
+      "profile": "https://github.com/ArcticCoder",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "VSinerva",
+      "name": "Vili Sinervä",
+      "avatar_url": "https://avatars.githubusercontent.com/u/39151688?v=4",
+      "profile": "https://github.com/VSinerva",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "jpmunic",
+      "name": "Josh Munic",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13474972?v=4",
+      "profile": "https://github.com/jpmunic",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "skipCi": true,

@@ -4,4 +4,5 @@ title: Omtrek Hiel
 
 De **hellomtrek** maat is de smalste maat die een broekspijp kan hebben zodat je er nog aan toe kunt komen.
 
-Om de omtrek van je hiel te meten strek je je voet, en meet je rond het breedste deel van je hiel.
+To measure your heel circumference, stretch your foot forward, and run the tape measure around your foot at the widest part of your heel.
+<MeasieImage />

@@ -1,8 +1,8 @@
 ---
-title: Länge
+title: undefiniert
 ---
 
-Die Option Länge bestimmt, wie lang deine Tasche sein wird. 
+undefiniert
 
 
 

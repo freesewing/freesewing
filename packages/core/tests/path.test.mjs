@@ -600,6 +600,19 @@ describe('Path', () => {
     expect(halves[1].ops[0].to.y).to.equal(30)
   })
 
+  it('Should split a path on roughly a line joint', () => {
+    const a = new Point(45, 60)
+    const b = new Point(10, 30)
+    const c = new Point(90, 30)
+    const test = new Path().move(a).line(b).line(c)
+
+    let halves = test.split(new Point(10.1, 29.9))
+    expect(halves[0].ops[1].to.x).to.equal(10.1)
+    expect(halves[0].ops[1].to.y).to.equal(29.9)
+    expect(halves[1].ops[0].to.x).to.equal(10.1)
+    expect(halves[1].ops[0].to.y).to.equal(29.9)
+  })
+
   it('Should split a path on a curve joint', () => {
     const a = new Point(45, 60)
     const b = new Point(10, 30)

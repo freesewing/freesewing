@@ -19,6 +19,7 @@ chooseFromCuratedSetsDesc: Wenn du unsere Plattform nur ausprobieren möchtest, 
 chooseFromOwnSets: Wähle einen deiner eigenen Messsätze
 chooseFromOwnSetsDesc: Wähle ein beliebiges Maßset aus, das alle erforderlichen Maße enthält, um dieses Muster zu erstellen.
 chooseNewSet: Wähle ein neues Maßnahmeset
+clearTimingData: Timingdaten löschen
 closure: Verschluss
 collar: Kragen
 columns: Spalten
@@ -40,9 +41,11 @@ editCurrentMeasiesDesc: Änderungen, die du hier vornimmst, werden nicht in dein
 editCurrentMeasiesHeader: Schnittmuster-Maße bearbeiten
 editMeasiesByHand: Messungen von Hand bearbeiten
 editMeasiesByHandDesc: Setze alle Messungen manuell fest oder setze sie außer Kraft. Diese Änderungen gelten nur für das aktuelle Muster.
-editSettings: Konfiguration bearbeiten
+editSettings: Einstellungen bearbeiten
+editSettingsByHand: Einstellungen manuell bearbeiten
 elastic: Gummi
 export: Exportieren
+exporting: Exportieren
 exportAsData: Als Daten exportieren
 exportForEditing: Für die Bearbeitung exportieren
 exportForPrinting: Für den Druck exportieren
@@ -80,6 +83,7 @@ partTransfoYes: Tasten anzeigen
 partTransfoYesDesc: Füge diese Schaltflächen in die Musterausgabe ein (sie werden nicht gedruckt)
 pathInfo: Pfad-Infos
 patternBookmarkCreated: Muster-Lesezeichen erstellt
+patternEditor: Muster-Editor
 patternInspector: Muster-Inspektor
 patternLogs: Musterprotokolle
 patternSaved: Muster gespeichert
@@ -106,6 +110,7 @@ showOnlyThisPart: Nur diesen Teil des Musters anzeigen
 sleevecap: Armkugel
 style: Stil
 test: Test
+testDesign: Test-Entwurf
 testDesignMeasurement: "Teste {design} Messungen: {measurement}"
 testDesignOption: "Teste {design} Designoptionen: {option}"
 testDesignSets: "Test {design} über Messreihen hinweg"
@@ -116,6 +121,7 @@ testOptionsDesc: Teste, wie sich das Design an Änderungen einer bestimmten Desi
 testPattern: Testmuster
 testSets: Test-Messreihen
 testSetsDesc: Teste, wie sich das Design an verschiedene Messreihen anpasst
+timeDesign: Design timen
 topLeft: Oben links
 weLackSomeMeasies: Uns fehlen { nr } Messungen, um dieses Muster zu erstellen
 whereToGoAfterSaveAs: Was willst du tun, nachdem du das neue Muster gespeichert hast?
@@ -127,3 +133,9 @@ yamlEditViewTitleThing: 'Musterkonfiguration bearbeiten für {thing}'
 youCanPickOrEnter: Du kannst entweder einen Satz Messungen auswählen oder sie von Hand eingeben, aber ohne diese Messungen können wir nicht weitermachen.
 youUseCustomValue: Du verwendest den Standardwert
 youUseDefaultValue: Du verwendest einen benutzerdefinierten Wert
+veryFast: Sehr schnell
+fast: Schnell
+average: Durchschnittlich
+slow: Langsam
+verySlow: Sehr langsam
+tooSlow: Zu langsam

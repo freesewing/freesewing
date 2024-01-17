@@ -63,7 +63,7 @@ export const head1 = {
       nr: 3,
       at: points.title,
       scale: 0.5,
-      title: 'head' + '1',
+      title: 'skully:head1',
     })
     // points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     // snippets.logo = new Snippet('logo', points.logo)

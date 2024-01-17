@@ -77,7 +77,7 @@
     "eslint-plugin-yaml": "^0.5.0",
     "husky": "^8.0.3",
     "js-yaml": "^4.0.0",
-    "lerna": "^7.2.0",
+    "lerna": "^8.0.0",
     "lint-staged": "^15.0.1",
     "mocha": "^10.0.0",
     "mustache": "^4.0.1",
@@ -103,6 +103,7 @@
     "c8": "^8.0.0",
     "eslint-config-next": "^14.0.1",
     "glob": "^10.3.10",
+    "rehype-format": "^5.0.0",
     "yarn": "^1.22.19"
   },
   "packageManager": "yarn@1.22.19"

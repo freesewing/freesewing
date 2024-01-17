@@ -64,13 +64,15 @@ export const lowerjaw = {
     paths.mouthBottom = new Path()
       .move(points.point5)
       .curve(points.point5Cp1, points.point0Cp2, points.point0)
-      .setText(complete ? 'mouthBottom' + ' (13)' : '', textAttribute)
+      .addText(complete ? 'skully:mouthBottom' : '', textAttribute)
+      .addText(complete ? ' (13)' : '', textAttribute)
       .addClass('hidden')
 
     paths.lowerJaw = new Path()
       .move(points.point4)
       .curve(points.point4Cp1, points.point5Cp2, points.point5)
-      .setText(complete ? 'lowerJaw' + ' (14)' : '', textAttribute)
+      .addText(complete ? 'skully:lowerjaw' : '', textAttribute)
+      .addText(complete ? ' (14)' : '', textAttribute)
       .addClass('hidden')
 
     paths.front = new Path()
@@ -83,7 +85,8 @@ export const lowerjaw = {
       .curve(points.point1Cp1, points.point2Cp2, points.point2)
       .curve(points.point2Cp1, points.point3Cp2, points.point3)
       .curve(points.point3Cp1, points.point4Cp2, points.point4)
-      .setText(complete ? 'jawBottom' + '(15)' : '', textAttribute)
+      .addText(complete ? 'skully:jawBottom' : '', textAttribute)
+      .addText(complete ? '(15)' : '', textAttribute)
       .addClass('hidden')
 
     paths.seam = new Path()
@@ -104,7 +107,7 @@ export const lowerjaw = {
       nr: 11,
       at: points.title,
       scale: 0.4,
-      title: 'lowerJaw',
+      title: 'skully:lowerjaw',
     })
     // points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     // snippets.logo = new Snippet('logo', points.logo)

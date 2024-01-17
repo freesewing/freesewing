@@ -4,4 +4,5 @@ title: Tour de tête
 
 La mesure de **tour de tête** se fait autour de la partie la plus large de votre tête.
 
-Pour mesurer votre tour de tête, enroulez le mètre-ruban autour de votre tête sur la partie la plus large.
+To measure your head circumference, wrap the tape measure around your head at the height of your forehead.
+<MeasieImage />

@@ -46,7 +46,7 @@ export const Popout = (props) => {
         <div className={`font-bold uppercase text-${color}`}>
           {props.title || (
             <>
-              <span>{t(`popout:${type}`)}</span>
+              <span>{t(`popout:${type}`).toUpperCase()}</span>
               <span className="px-3">|</span>
             </>
           )}
@@ -67,7 +67,7 @@ export const Popout = (props) => {
         <div className={`font-bold flex flex-row gap-1 items-end justify-between`}>
           <div>
             <span className={`font-bold uppercase text-${color}`}>
-              {type === 'tldr' ? 'TL;DR' : t(`popout:${type}`)}
+              {type === 'tldr' ? 'TL;DR' : t(`popout:${type}`).toUpperCase()}
             </span>
             <span className={`font-normal text-base text-${color}`}>
               {type === 'comment' && (

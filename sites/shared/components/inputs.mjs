@@ -62,7 +62,12 @@ export const FormControl = ({
             className="btn btn-ghost btn-sm btn-circle hover:btn-secondary"
             onClick={() =>
               setModal(
-                <ModalWrapper flex="col" justify="top lg:justify-center" slideFrom="right">
+                <ModalWrapper
+                  flex="col"
+                  justify="top lg:justify-center"
+                  slideFrom="right"
+                  keepOpenOnClick
+                >
                   <div className="mdx max-w-prose">{docs}</div>
                 </ModalWrapper>
               )

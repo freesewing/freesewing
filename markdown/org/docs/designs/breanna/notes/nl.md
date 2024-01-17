@@ -9,7 +9,7 @@ Met Breanna wilde ik twee dingen doen:
 
 Het is geen volledig succes geweest. Sommige mensen boeken goede resultaten, maar anderen niet.
 
-Ik laat het staan omdat het voor sommigen weet te werken. You can check [this FAQ on womenswear blocks for more background info](/docs/faq/womenswear-blocks) about the situation with regards to womenswear blocks.
+Ik laat het staan omdat het voor sommigen weet te werken. You can check [this FAQ on womenswear blocks for more background info](/docs/about/faq/womenswear-blocks) about the situation with regards to womenswear blocks.
 
 joost
 

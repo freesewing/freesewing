@@ -9,12 +9,13 @@ function draftSkirt({
   part,
   store,
   sa,
+  expand,
   macro,
   snippets,
   Snippet,
   scale,
 }) {
-  if (!options.skirt) return part.hide()
+  if (!options.skirt || !expand) return part.hide()
 
   // We really don't want the skirt to be smaller than the suit itself, so do a little sanity check here.
   const skirtWidth = measurements.waist * Math.max(options.waistEase, options.skirtWidth)
@@ -76,7 +77,7 @@ function draftSkirt({
   store.cutlist.addCut({ cut: 1, from: 'fabric' })
 
   points.title = new Point(skirtWidth / 4, skirtLength / 2)
-  macro('title', { at: points.title, nr: 9, title: 'skirt' })
+  macro('title', { at: points.title, nr: 9, title: 'onyx:skirt' })
   points.logo = points.title.shift(180, 50 * scale)
   snippets.logo = new Snippet('logo', points.logo)
 
@@ -98,36 +99,4 @@ export const skirt = {
   name: 'onyx.skirt',
   draft: draftSkirt,
   measurements: ['waist'],
-  options: {
-    // How wide the skirt will be, as a percentage of waist measurement. It will be this width at the bottom, and gathered at the top down to 100%.
-    skirtWidth: {
-      pct: 160,
-      min: 100,
-      max: 250,
-      menu: (settings, mergedOptions) => (mergedOptions.skirt ? 'style' : false),
-    },
-    // How long the skirt will be, as a percentage of waistToUpperLeg.
-    skirtLength: {
-      pct: 100,
-      min: 20,
-      max: 500,
-      menu: (settings, mergedOptions) => (mergedOptions.skirt ? 'style' : false),
-    },
-    // How wide to make the waistband connection, in multiples of the seam allowance.
-    skirtWaistband: {
-      pct: 200,
-      min: 0,
-      max: 800,
-      toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.skirtWaistband,
-      menu: (settings, mergedOptions) => (mergedOptions.skirt ? 'construction' : false),
-    },
-    // How wide to make the bottom hem, in multiples of the seam allowance.
-    skirtHem: {
-      pct: 200,
-      min: 0,
-      max: 800,
-      toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.skirtHem,
-      menu: (settings, mergedOptions) => (mergedOptions.skirt ? 'construction' : false),
-    },
-  },
 }

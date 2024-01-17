@@ -1,5 +1,5 @@
 ---
-title: "Apart knopenpat"
+title: Apart knopenpat
 ---
 
 ![Apart knopenpat](seperatebuttonplacket.svg)

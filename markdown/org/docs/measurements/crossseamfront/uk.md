@@ -8,4 +8,5 @@ title: Посадка спереду
 
 - Де збігаються шви легінсів чи тугих штанів
 - До нижньої точки паху
-- Де розміщується тазове дно
+- Somewhere towards the front of your perineum
+<MeasieImage />

@@ -23,7 +23,7 @@ This returns Javascript object has the following properties:
 | `paths` | The part's paths as [Path.asRenderProps()](/reference/api/path/asrenderprops) |
 | `points` | The part's points as [Point.asRenderProps()](/reference/api/point/asrenderprops) |
 | `snippet` | The part's snippets as [Snippet.asRenderProps()](/reference/api/snippet/asrenderprops) |
-| `attributes` | The result of [Part.attributes.asRenderProps()](/reference/api/attribute/asrenderprops) |
+| `attributes` | The result of [Part.attributes.asRenderProps()](/reference/api/attributes/asrenderprops) |
 | `height` | A number indicating the part height in `mm` |
 | `width` | A number indicating the part width in `mm` |
 | `topLeft` | The [Point](/reference/api/point) at the top left of the part, or rather its [`Point.asRenderProps()`](/reference/api/point/asrenderprops) result |

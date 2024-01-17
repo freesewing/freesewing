@@ -2,7 +2,7 @@
 title: "Bequemlichkeitszugabe Ärmel"
 ---
 
-Beeinflusst bei allen Kleidungsstücken, wie weit der Ärmel am Armausschnitt ist. Bei Ärmeln, die weniger als 100 % lang sind, wirkt sich diese Option auch darauf aus, wie breit der Ärmel am Saum ist, wobei kürzere Ärmel von dieser Option stärker betroffen sind und längere Ärmel eher von der Option der Handgelenkserleichterung. In den meisten Fällen sollte dieser Wert größer sein als die Brustweite, da die Schultern und Arme kleiner sind und derselbe prozentuale Wert eine geringere absolute Weite bedeutet. In most cases, this value should be set larger than chest ease, as the shoulders and arms are smaller and the same percentage of ease will translate to a smaller absolute ease.
+Beeinflusst bei allen Kleidungsstücken, wie weit der Ärmel am Armausschnitt ist. Bei Ärmeln, die weniger als 100 % lang sind, wirkt sich diese Option auch darauf aus, wie breit der Ärmel am Saum ist, wobei kürzere Ärmel von dieser Option stärker betroffen sind und längere Ärmel eher von der Option der Handgelenkserleichterung. In den meisten Fällen sollte dieser Wert größer sein als die Brustweite, da die Schultern und Arme kleiner sind und derselbe prozentuale Wert eine geringere absolute Weite bedeutet. In den meisten Fällen sollte dieser Wert größer sein als die Brustweite, da die Schultern und Arme kleiner sind und derselbe prozentuale Wert eine geringere absolute Weite bedeutet.
 
 > ##### Diese Option erlaubt negative Werte
 > 

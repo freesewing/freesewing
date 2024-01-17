@@ -19,6 +19,6 @@ This returns Javascript object has the following properties:
 
 | Name | Description |
 | ----:| ----------- |
-| `attributes` | The result of [Path.attributes.asRenderProps()](/reference/api/attribute/asrenderprops) |
+| `attributes` | The result of [Path.attributes.asRenderProps()](/reference/api/attributes/asrenderprops) |
 | `x` | A number indicating the X-Coordinate of the point |
 | `y` | A number indicating the Y-Coordinate of the point |

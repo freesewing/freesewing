@@ -11,7 +11,7 @@ It hasn't been a complete success.
 While some people get good results, others do not.
 
 I leave it up because it's know to work for some. You can check [this FAQ on
-womenswear blocks for more background info](/docs/faq/womenswear-blocks) about
+womenswear blocks for more background info](/docs/about/faq/womenswear-blocks) about
 the situation with regards to womenswear blocks.
 
 joost

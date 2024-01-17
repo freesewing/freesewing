@@ -31,6 +31,28 @@ export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'violet
 export const rating = ['green-500', 'yellow-400', 'amber-500', 'orange-500', 'red-500']
 
 /*
+ * Graph is an array of color names from the tailwind colors that
+ * will be used when we want to generate a pretty graph.
+ */
+export const graph = [
+  'red-500',
+  'amber-500',
+  'lime-500',
+  'emerald-500',
+  'cyan-500',
+  'blue-500',
+  'violet-500',
+  'fuchsia-500',
+  'rose-500',
+  'purple-500',
+  'indigo-500',
+  'sky-500',
+  'teal-500',
+  'yellow-500',
+  'orange-500',
+]
+
+/*
  * This export is the Tailwind theme
  */
 export const theme = {

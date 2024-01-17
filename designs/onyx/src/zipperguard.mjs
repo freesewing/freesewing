@@ -7,40 +7,35 @@ function draftZipperGuard({
   points,
   options,
   absoluteOptions,
+  expand,
   part,
   store,
   sa,
   macro,
 }) {
-  if (options.zipperPosition === 'none') return part.hide()
+  if (!expand || options.zipperPosition === 'none') return part.hide()
 
-  const zipperGuardTapeCoverMaterial = 0.75
-
-  const verticalTrunk = store.get('verticalTrunk')
-  const zipperLength = absoluteOptions.zipperLength
   const zipperGuardWidth = absoluteOptions.zipperGuardWidth
   const neckGuardLength =
     options.neckStyle == 'neckband'
-      ? verticalTrunk * options.neckGuardLength
-      : zipperGuardTapeCoverMaterial * zipperGuardWidth
+      ? store.get('verticalTrunk') * options.neckGuardLength
+      : options.zipperGuardTapeCoverMaterial * zipperGuardWidth
 
   // How much extra material to put at the bottom of the zipper guard, to cover the parts below the zipper stop.
   const zipperGuardLength =
-    zipperLength + neckGuardLength + zipperGuardWidth * zipperGuardTapeCoverMaterial
+    absoluteOptions.zipperLength +
+    neckGuardLength +
+    zipperGuardWidth * options.zipperGuardTapeCoverMaterial
 
   points.topLeftCorner = new Point(0, 0)
   points.bottomLeftCorner = new Point(0, zipperGuardLength)
   points.bottomRightCorner = new Point(zipperGuardWidth, zipperGuardLength)
   points.topRightCorner = new Point(zipperGuardWidth, 0)
-  //  points.neckGuardBaseRight = new Point(zipperGuardWidth, neckGuardLength)
-  //  points.neckGuardCp = new Point(zipperGuardWidth, 0)
 
   paths.saBase = new Path()
     .move(points.bottomLeftCorner)
     .line(points.bottomRightCorner)
-    //    .line(points.neckGuardBaseRight)
     .line(points.topRightCorner)
-    //    .curve(points.neckGuardCp, points.neckGuardCp, points.topLeftCorner)
     .line(points.topLeftCorner)
     .addClass('fabric')
     .hide()
@@ -73,7 +68,7 @@ function draftZipperGuard({
   store.cutlist.addCut({ cut: 1, from: 'fabric' })
 
   points.title = new Point(zipperGuardWidth / 2, zipperGuardLength / 2)
-  macro('title', { at: points.title, nr: 6, title: 'zipper guard' })
+  macro('title', { at: points.title, nr: 6, title: 'onyx:zipperGuard' })
 
   if (sa) {
     paths.sa = new Path()
@@ -94,27 +89,4 @@ export const zipperGuard = {
   plugins: [],
   draft: draftZipperGuard,
   after: [base],
-  options: {
-    zipperGuardWidth: {
-      pct: 50,
-      min: 0,
-      max: 100,
-      snap: { metric: 5, imperial: 6.35 },
-      toAbs: (pct, settings, mergedOptions) => mergedOptions.zipperGuardWidth * 100, // Valid range is from 0 to 100mm.
-      menu: 'construction',
-    },
-    // How far to have the zipper guard extend past the neckline so it can be wrapped around the zipper slider and pull to keep it from digging into the wearer's neck. Important on any compression garments/swimwear.
-    neckGuardLength: {
-      pct: 2,
-      min: 0,
-      max: 5,
-      toAbs: (pct, settings, mergedOptions) =>
-        (settings.measurements.hpsToWaistFront +
-          settings.measurements.hpsToWaistBack +
-          settings.measurements.crossSeam) *
-        mergedOptions.neckGuardLength,
-      menu: (settings, mergedOptions) =>
-        mergedOptions.neckStyle == 'neckband' ? 'construction' : false,
-    },
-  },
 }

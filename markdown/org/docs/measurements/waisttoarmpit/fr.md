@@ -15,3 +15,4 @@ Ou, si tu n'es pas certain de l'emplacement des ganglions lymphatiques sous ton 
 - Ton index se trouve maintenant dans l'aisselle, ce qui est un peu trop haut. Mais ton majeur est un bon point à marquer comme étant le début de ton aisselle.
 
 
+<MeasieImage />

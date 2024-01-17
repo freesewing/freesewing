@@ -9,6 +9,16 @@ export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'indigo
 
 export const rating = ['green-500', 'yellow-400', 'amber-500', 'orange-500', 'red-500']
 
+export const graph = [
+  'indigo-300',
+  'purple-300',
+  'pink-300',
+  'amber-300',
+  'rose-300',
+  'fuchsia-300',
+  'violet-300',
+]
+
 export const theme = {
   fontFamily: "'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;",
   'base-100': colors.red['50'],

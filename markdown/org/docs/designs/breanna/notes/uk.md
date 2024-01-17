@@ -9,7 +9,7 @@ title: "Боді-блок Breanna: Нотатки дизайнера"
 
 Це не було повним успіхом. У той час як одні люди отримують хороші результати, інші - ні.
 
-Я залишаю це, бо знаю, що для деяких це працює. Ви можете ознайомитися з [цим FAQ щодо блоків жіночого одягу для отримання додаткової довідкової інформації](/docs/faq/womenswear-blocks) про ситуацію щодо блоків жіночого одягу.
+Я залишаю це, бо знаю, що для деяких це працює. You can check [this FAQ on womenswear blocks for more background info](/docs/about/faq/womenswear-blocks) about the situation with regards to womenswear blocks.
 
 Йост
 

@@ -1,8 +1,8 @@
 ---
-title: Bord
+title: indéfini
 ---
 
-Cette option permet de contrôler la largeur du bord supérieur de ta poche. 
+indéfini
 
 
 

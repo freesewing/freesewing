@@ -121,7 +121,7 @@ UserModel.prototype.oauthSignIn = async function ({ body }) {
     /*
      * Final check for account status and other things before returning
      */
-    const [ok, err, status] = this.isOk()
+    const [ok, err, status] = this.isOk(401, 'signInFailed', true)
     if (ok === true) return this.signInOk()
     else return this.setResponse(status, err)
   }
@@ -1518,7 +1518,7 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
       this.clear.mfaSecret,
       this.clear.data.mfaScratchCodes
     )
-    let result, mfaScratchCodes
+    let result
     if (Array.isArray(check)) [result] = check
     else result = check
     if (result) {
@@ -1556,7 +1556,7 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
      * Verify secret and token
      */
     const check = await this.mfa.verify(body.token, this.clear.mfaSecret, false)
-    let result, mfaScratchCodes
+    let result
     if (Array.isArray(check)) [result] = check
     else result = check
     if (body.secret === this.clear.mfaSecret && result) {
@@ -1675,6 +1675,7 @@ UserModel.prototype.asAccount = function () {
     consent: this.record.consent,
     control: this.record.control,
     createdAt: this.record.createdAt,
+    ehash: this.record.ehash,
     email: this.clear.email,
     data,
     ihash: this.record.ihash,
@@ -1819,7 +1820,7 @@ UserModel.prototype.isOk = function (
   if (
     this.exists &&
     this.record &&
-    this.record.status > 0 &&
+    (allowWithoutConsent || this.record.status > 0) &&
     (allowWithoutConsent || this.record.consent > 0) &&
     this.record.role &&
     this.record.role !== 'blocked'
@@ -1828,7 +1829,7 @@ UserModel.prototype.isOk = function (
 
   if (!this.exists) return [false, 'noSuchUser', 404]
   if (this.record.consent < 1 && !allowWithoutConsent) return [false, 'consentLacking', 451]
-  if (this.record.status < 1) return [false, 'statusLacking', 403]
+  if (this.record.status < 1 && !allowWithoutConsent) return [false, 'statusLacking', 403]
   if (this.record.role === 'blocked') return [false, 'accountBlocked', 403]
 
   return [false, failMsg, failStatus]

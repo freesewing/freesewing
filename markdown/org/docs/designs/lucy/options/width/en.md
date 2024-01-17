@@ -1,8 +1,8 @@
 ---
-title: Width
+title: undefined
 ---
 
-This option determines the width of the pocket overall. 
+undefined
 
 
 

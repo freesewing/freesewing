@@ -26,18 +26,21 @@ export const lowermouth = {
     paths.mouth1 = new Path()
       .move(points.point0)
       .curve(points.point0Cp1, points.point1Cp2, points.point1)
-      .setText(complete ? 'mouthBottom' + ' (13)' : '', textAttribute)
+      .addText(complete ? 'skully:mouthBottom' : '', textAttribute)
+      .addText(complete ? ' (13)' : '', textAttribute)
       .addClass('hidden')
     paths.mouth2 = new Path()
       .move(points.point1)
       .curve(points.point1Cp1, points.point2Cp2, points.point2)
-      .setText(complete ? 'mouthBottom' + ' (13)' : '', textAttribute)
+      .addText(complete ? 'skully:mouthBottom' : '', textAttribute)
+      .addText(complete ? ' (13)' : '', textAttribute)
       .addClass('hidden')
 
     paths.backOfMouth = new Path()
       .move(points.point2)
       .line(points.point0)
-      .setText(complete ? 'backOfMouth' + ' (11)' : '', textAttribute)
+      .addText(complete ? 'skully:backOfMouth' : '', textAttribute)
+      .addText(complete ? ' (11)' : '', textAttribute)
       .addClass('hidden')
 
     store.set('mouthWidth', points.point0.dist(points.point2))
@@ -60,7 +63,7 @@ export const lowermouth = {
       at: points.title,
       scale: 0.25,
       rotation: 90,
-      title: 'lowerMouth',
+      title: 'skully:lowermouth',
     })
     // points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     // snippets.logo = new Snippet('logo', points.logo)

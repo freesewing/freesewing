@@ -9,7 +9,7 @@ Avec Breanna, je voulais faire deux choses :
 
 Cela n'a pas été une réussite totale. Si certaines personnes obtiennent de bons résultats, d'autres n'y parviennent pas.
 
-Je le laisse en place parce qu'on sait qu'il fonctionne pour certains. You can check [this FAQ on womenswear blocks for more background info](/docs/faq/womenswear-blocks) about the situation with regards to womenswear blocks.
+Je le laisse en place parce qu'on sait qu'il fonctionne pour certains. You can check [this FAQ on womenswear blocks for more background info](/docs/about/faq/womenswear-blocks) about the situation with regards to womenswear blocks.
 
 joost
 

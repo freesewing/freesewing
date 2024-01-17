@@ -107,7 +107,7 @@ export const ConsentSettings = ({ title = false }) => {
       )}
       <BackToAccountButton />
       <p className="text-center opacity-50 mt-12">
-        <Link href="/docs/various/privacy" className="hover:text-secondary underline">
+        <Link href="/docs/about/privacy" className="hover:text-secondary underline">
           FreeSewing Privacy Notice
         </Link>
       </p>

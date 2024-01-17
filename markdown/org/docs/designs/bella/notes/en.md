@@ -9,7 +9,7 @@ However, while the block will adapt to your measurments, the original block that
 
 So your milage may very here, especially when you are further from the kind of skinny ladies Italians tend to design for.
 
-See also [this FAQ on womenswear blocks for more background info](/docs/faq/womenswear-blocks).
+See also [this FAQ on womenswear blocks for more background info](/docs/about/faq/womenswear-blocks).
 
 joost
 

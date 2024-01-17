@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 import {
   nsMerge,
@@ -49,7 +50,7 @@ const OptionGroup = ({ id, group, t, design }) => (
     <ul className="list list-inside list-disc pl-2">
       {Object.entries(group).map(([sid, entry]) =>
         entry.isGroup ? (
-          <OptionGroup id={sid} key={sid} t={t} group={entry} desing={design} />
+          <OptionGroup id={sid} key={sid} t={t} group={entry} design={design} />
         ) : (
           <Option key={sid} id={sid} option={entry} design={design} />
         )

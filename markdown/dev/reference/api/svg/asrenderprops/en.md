@@ -19,7 +19,7 @@ This returns Javascript object has the following properties:
 
 | Name | Description |
 | ----:| ----------- |
-| `attributes` | The result of [Path.attributes.asRenderProps()](/reference/api/attribute/asrenderprops) |
+| `attributes` | The result of [Path.attributes.asRenderProps()](/reference/api/attributes/asrenderprops) |
 | `layout` | A plain object describing the layout of the SVG |
 | `body` | A string holding the SVG body |
 | `style` | A string holding the SVG style |

@@ -81,7 +81,7 @@
       "d": "The width of the waistband"
     },
     "waistEase": {
-      "t": "Wait ease",
+      "t": "Waist ease",
       "d": "Controls the amount of ease at your waist"
     },
     "grainlinePosition": {

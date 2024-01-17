@@ -30,3 +30,4 @@ Il vous suffit de changer vos mains et vous obtenez une mesure plus précise.
 Pour de meilleurs résultats, demandez à une seconde personne de prendre vos mesures (si possible).
 
 </Tip>
+<MeasieImage />

@@ -18,7 +18,7 @@ Und - ich wiederhole es noch einmal - du bist herzlich eingeladen, dieser Instan
 
 ## Verlassen von Twitter
 
-Ich brauche mehr Arbeit, als ich ein weiteres Loch in meinem Kopf brauche. Deshalb habe ich eine Weile darüber nachgedacht, diese Instanz einzurichten, aber letztendlich habe ich mich dazu entschlossen, weil Twitter - wo sowohl FreeSewing als auch ich einen Account haben - sich in etwas verwandelt hat, mit dem ich ehrlich gesagt nichts mehr zu tun haben möchte.
+Deshalb habe ich eine Weile darüber nachgedacht, diese Instanz einzurichten, aber letztendlich habe ich mich dazu entschlossen, weil Twitter - wo sowohl FreeSewing als auch ich einen Account haben - sich in etwas verwandelt hat, mit dem ich ehrlich gesagt nichts mehr zu tun haben möchte.
 
 Das geht jetzt schon eine Weile so und Twitter zu verlassen ist nicht gerade eine starke Aussage. Es ist nur so, dass ich viel zu tun hatte und sicherlich zu beschäftigt war, um mich damit zu befassen. Also habe ich beschlossen, dass die Umstellung der Website ein guter Zeitpunkt ist, um die offizielle Ankündigung zu machen.
 

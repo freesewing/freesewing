@@ -20,3 +20,4 @@ Il ne se montrera pas pour les vêtements occasionnels, et pour l'usure formelle
 un remplissage asymétrique des épaules plutôt que de créer un motif asymétrique.
 
 </Note>
+<MeasieImage />

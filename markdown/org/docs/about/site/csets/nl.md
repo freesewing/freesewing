@@ -39,8 +39,6 @@ Voor de beste resultaten vraag je een vriend om een foto van verder weg te nemen
 
 <div className="grid grid-cols-2 gap-2">
 
-
-
 ![Een volledige foto van Joost van dichtbij genomen](cset1.jpg "Een foto van dichtbij genomen geeft dit rare vissenoogeffect") ![Een volledige foto van Joost van verderaf genomen](cset2.jpg "Een foto van verderaf genomen en ingezoomd ziet er een stuk beter uit")
 
 </div>

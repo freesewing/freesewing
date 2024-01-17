@@ -8,7 +8,7 @@ Il s'agit de la version paramétrique d'un bloc de base pour les vêtements fém
 
 Donc ton kilométrage peut être très élevé, surtout si tu es loin du genre de femmes maigres pour lesquelles les Italiens ont tendance à créer des modèles.
 
-Voir aussi [cette FAQ sur les blocs de vêtements pour femmes pour plus d'informations](/docs/faq/womenswear-blocks).
+See also [this FAQ on womenswear blocks for more background info](/docs/about/faq/womenswear-blocks).
 
 joost
 

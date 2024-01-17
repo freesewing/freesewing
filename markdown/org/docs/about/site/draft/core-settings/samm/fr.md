@@ -7,12 +7,12 @@ Ce [Réglage de base][core-settings] contrôle la taille de base de votre coutur
 <Note>
 
 La bibliothèque de base de FreeSewing ne prend en compte qu'un seul paramètre pour gérer la marge de couture : `sa`.
-Toutefois, pour des raisons de commodité, nous avons divisé cette fonction en deux paramètres différents sur le site web :
+However, for convenience, we've split this up into two different settings on the website:
 
-- **[Inclure la marge de couture](/docs/site/draft/core-settings/sabool)** : Contrôle l'inclusion ou non de la marge de couture
-- **[Taille de la marge de couture](/docs/site/draft/core-settings/samm)** : Contrôle la taille de la marge de couture, si elle est incluse
+- **[Include Seam Allowance](/docs/about/site/draft/core-settings/sabool)**: Controls whether or not to include seam allowance
+- **[Seam Allowance Size](/docs/about/site/draft/core-settings/samm)**: Controls how big to make the seam allowance, if it is included
 
-Cette dernière option ne sera affichée que si vous avez activé la première.
+The latter will only be shown if you've enabled the former.
 
 </Note>
-[core-settings]: /docs/site/draft/core-settings/
+[core-settings]: /docs/about/site/draft/core-settings/

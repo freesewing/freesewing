@@ -20,3 +20,4 @@ No se mostrará para prendas casuales, y para el uso formal, es mejor añadir
 de relleno asimétrico, en lugar de crear un patrón asimétrico.
 
 </Note>
+<MeasieImage />
