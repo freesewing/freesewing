@@ -78,11 +78,13 @@ You will now have two identical pieces, one with your main fabric and one with y
 
 Turn your lining piece inside out.
 
+The red arrows in the illustration are to help you identify the center insides in the next step.
+
 ### Step 8: Begin the closure by sewing down center front
 
 ![Sew down center front](step08.png)
 
-Place the center insides of the main and lining together, _good sides together_.
+Place the center insides of the main and lining together, _good sides together_. This will become one side of your front opening.
 
 Sew down center front.
 
