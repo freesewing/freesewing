@@ -185,7 +185,7 @@ Si tu utilises une doublure, fais les deux étapes suivantes, sinon passe à la 
 ### Étape 6 : installation de la fermeture éclair.
 Remarque : cette étape est la même avec ou sans doublure. Traite la doublure et le tissu de mode comme une seule et même chose.
  - Pose ton vêtement _à l'endroit_.
- - Détache la fermeture éclair.
+ - Sépare la fermeture Éclair.
  - Place la fermeture éclair _bon côté vers le haut_ le long de la couture centrale et aligne-la soigneusement. L'alignement de l'arrêt supérieur est plus important que celui de l'arrêt inférieur, et essaie de ne pas étirer ou froncer le tissu lorsque tu alignes ta fermeture à glissière.
  - Tourne un côté de la fermeture éclair d'un demi-tour vers l'extérieur, et pose-la le long de la couture ouverte de façon à ce que le bord du ruban adhésif soit le long de la couture et que le bord denté soit orienté vers le gros du tissu. Aligne le bord du tissu avec le bord du ruban adhésif et clipse-le en place.
 
