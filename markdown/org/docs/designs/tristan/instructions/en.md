@@ -13,6 +13,14 @@ These instructions are for a lined Tristan top with a center-front lacing closur
 
 Cut your pattern pieces. If you would like to add embroidery or other decoration, now is a good time to do so.
 
+<Note>
+
+##### Finishing methods affect the seam allowance
+
+If using bias binding, you should cut the neckline and armholes without seam allowance.
+
+</Note>
+
 ### Step 2: Sew the back inside parts together at center back
 
 ![Sew the back inside parts together](step02.png)
