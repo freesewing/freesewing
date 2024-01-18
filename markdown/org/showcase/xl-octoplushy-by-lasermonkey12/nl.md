@@ -1,5 +1,5 @@
 ---
-title: XL Octoplushy by lasermonkey12
+title: XL Octoplushy door lasermonkey12
 caption: Octoplushy, stuffing in progress
 date: 20240106
 intro: "Not sure what to do with your scraps? Let us introduce the best idea ever: an XL Octoplushy."
