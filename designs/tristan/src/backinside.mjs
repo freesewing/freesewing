@@ -63,16 +63,6 @@ export const backInside = {
       .close()
       .attr('class', 'fabric')
 
-    points.titleAnchor = points.dartBottomLeft.shiftFractionTowards(
-      lacing ? points.lacingCut : points.cbCut,
-      0.75
-    )
-    macro('title', {
-      at: points.titleAnchor,
-      nr: 3,
-      title: 'backInside',
-    })
-
     points.grainlineFrom = new Point(points.dartBottomLeft.x - 10, points.cbCut.y)
     points.grainlineTo = new Point(points.dartBottomLeft.x - 10, points.waistSide.y)
     macro('grainline', {
@@ -81,6 +71,16 @@ export const backInside = {
     })
 
     store.cutlist.addCut({ cut: 2, from: 'fabric' })
+
+    points.titleAnchor = points.dartBottomLeft.shiftFractionTowards(
+      lacing ? points.lacingCut : points.cbCut,
+      0.75
+    )
+    macro('title', {
+      at: points.titleAnchor,
+      nr: 3,
+      title: 'tristan:backInside',
+    })
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')

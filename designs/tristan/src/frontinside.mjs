@@ -132,7 +132,7 @@ export const frontInside = {
     macro('title', {
       at: points.titleAnchor,
       nr: 1,
-      title: 'frontInside',
+      title: 'tristan:frontInside',
     })
     points.gridAnchor = points.hps.clone()
 

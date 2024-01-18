@@ -10,9 +10,9 @@ export const peplumBack = {
       return part.hide()
     }
 
-    const radius = store.get('peblumRadius')
-    const width = store.get('peblumWidth')
-    const ratio = store.get('peblumratio')
+    const radius = store.get('peplumRadius')
+    const width = store.get('peplumWidth')
+    const ratio = store.get('peplumratio')
 
     CreateShape({
       points: points,

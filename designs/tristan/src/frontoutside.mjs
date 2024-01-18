@@ -85,7 +85,7 @@ export const frontOutside = {
     macro('title', {
       at: points.titleAnchor,
       nr: 2,
-      title: 'frontOutside',
+      title: 'tristan:frontOutside',
     })
     points.gridAnchor = points.armholeCpTarget.clone()
 

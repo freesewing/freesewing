@@ -23,12 +23,3 @@ If you choose to add a peplum:
 - Cut 1 **Peplum**.
 
 In **all versions**, if you want to line your top, cut the same parts out of your lining fabric.
-
-
-<Note>
-
-##### Finishing methods affect the seam allowance
-
-If using bias binding, you should trim away the seam allowance at the neckline and armholes before cutting.
-
-</Note>

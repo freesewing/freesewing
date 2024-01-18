@@ -7,14 +7,14 @@ To make Tristan, you will need the following:
 - [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
 - About 1 meter (1.1 yards) of a suitable main fabric (see [Fabric options](/docs/designs/tristan/fabric))
 - About 1 meter (1.1 yards) of a suitable lining fabric (if lining)
-- Choice of closure - Either **Zipper**, or **eyelets**, **ribbon/lacing**, and **reinforcement for the eyelets**
+- Choice of closure - either **Zipper**, or **eyelets**, **reinforcement for the eyelets**, and **lacing**
 - If finishing with bias binding, **Bias tape** (about 4 meters (4.4 yards))
 
 <Tip>
 
 ##### Use a separating zipper
 
-We recommend a separating invisible zipper for this garment. Using a separating zipper will make it easier for you to put the top on and off.
+We recommend a separating invisible zipper for this garment. Using a separating zipper will make it easier for you to take the top on and off.
 
 ##### When making Tristan with the lacing option, reinforce the eyelets
 

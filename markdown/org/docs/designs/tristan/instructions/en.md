@@ -13,6 +13,14 @@ These instructions are for a lined Tristan top with a center-front lacing closur
 
 Cut your pattern pieces. If you would like to add embroidery or other decoration, now is a good time to do so.
 
+<Note>
+
+##### Finishing methods affect the seam allowance
+
+If using bias binding, you should cut the neckline and armholes without seam allowance.
+
+</Note>
+
 ### Step 2: Sew the back inside parts together at center back
 
 ![Sew the back inside parts together](step02.png)
@@ -70,11 +78,13 @@ You will now have two identical pieces, one with your main fabric and one with y
 
 Turn your lining piece inside out.
 
+The red arrows in the illustration are to help you identify the center insides in the next step.
+
 ### Step 8: Begin the closure by sewing down center front
 
 ![Sew down center front](step08.png)
 
-Place the center insides of the main and lining together, _good sides together_.
+Place the center insides of the main and lining together, _good sides together_. This will become one side of your front opening.
 
 Sew down center front.
 
@@ -90,7 +100,7 @@ Sew 2 mm (0.1 inch) in from center edge.
 
 Allow enough space for your boning, then sew again.
 
-Repeat on the other side.
+Repeat Steps 8 through 10 on the other side.
 
 <Note>
 ##### Leave enough room for your boning
@@ -101,7 +111,7 @@ Leave enough wiggle room to allow you to insert your boning. You want the channe
 
 ![Sew your second boning channel](step10.png)
 
-Mark the locations of your eyelets/grommets. Allow enough space to install these later, then sew again.
+Mark the locations of your eyelets. Allow enough space to install these later, then sew again.
 
 Allow enough space for another row of boning, then sew again.
 
@@ -111,9 +121,9 @@ Repeat on the other side.
 
 Cap your boning if appropriate for the type of boning used. Then insert boning in the boning channels.
 
-### Step 12: Install your eyelets/grommets
+### Step 12: Install your eyelets
 
-Install your eyelets or grommets between the two boning channels.
+Install your eyelets between the two boning channels.
 
 ### Step 13: Bind and lace up your top
 

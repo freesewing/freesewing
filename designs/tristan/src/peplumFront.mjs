@@ -34,16 +34,16 @@ export const CreateShape = ({
     '__macro_ringsector_' + type + 'Peblum_in2FlippedRotated'
   ].shiftFractionTowards(points['__macro_ringsector_' + type + 'Peblum_ex2FlippedRotated'], 0.5)
 
+  store.cutlist.addCut({ cut: double ? 2 : 1, from: 'fabric', onFold: true })
+
   macro('title', {
     nr: 10 + ('front' == type ? 0 : 1),
     at: points[type + 'TitleAnchor'],
-    id: type + 'Peblum',
-    title: type + 'Peblum',
+    id: type + 'Peplum',
+    title: 'tristan:' + type + 'Peplum',
     align: 'center',
     scale: options.peplumSize * 2,
   })
-
-  store.cutlist.addCut({ cut: double ? 2 : 1, from: 'fabric' })
 
   if (sa)
     paths[type + 'SA'] = paths['__macro_ringsector_' + type + 'Peblum_path']
@@ -79,7 +79,7 @@ export const peplumFront = {
     peplumSize: {
       pct: 10,
       min: 5,
-      max: 100,
+      max: 250,
       // eslint-disable-next-line no-unused-vars
       menu: (settings, mergedOptions) => (mergedOptions.peplum === false ? false : 'peplum'),
     },
@@ -92,7 +92,7 @@ export const peplumFront = {
     },
   },
   plugins: [ringsectorPlugin],
-  draft: ({ sa, Point, points, paths, options, macro, store, part }) => {
+  draft: ({ sa, Point, points, paths, options, macro, store, units, part }) => {
     if (false == options.peplum) {
       return part.hide()
     }
@@ -112,9 +112,16 @@ export const peplumFront = {
     const frontLength = frontInsideWaistLength + frontOutsideWaistLength
     const ratio = frontLength / length
 
-    store.set('peblumRadius', radius)
-    store.set('peblumWidth', width)
-    store.set('peblumratio', ratio)
+    store.set('peplumRadius', radius)
+    store.set('peplumWidth', width)
+    store.set('peplumratio', ratio)
+
+    store.flag.note({
+      msg: `tristan:peplumWidth`,
+      replace: {
+        peblumWidth: units(width),
+      },
+    })
 
     CreateShape({
       Point: Point,

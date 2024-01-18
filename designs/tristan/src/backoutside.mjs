@@ -41,13 +41,6 @@ export const backOutside = {
       .close()
       .attr('class', 'fabric')
 
-    points.titleAnchor = points.dartBottomRight.shiftFractionTowards(points.armholeCpTarget, 0.5)
-    macro('title', {
-      at: points.titleAnchor,
-      nr: 4,
-      title: 'backOutside',
-    })
-
     points.grainlineTo = new Point(points.dartBottomRight.x * 1.1, points.dartBottomRight.y * 0.95)
     points.grainlineFrom = new Point(points.grainlineTo.x, points.dartTip.y)
 
@@ -58,6 +51,13 @@ export const backOutside = {
 
     store.cutlist.removeCut('fabric')
     store.cutlist.addCut({ cut: 2, from: 'fabric' })
+
+    points.titleAnchor = points.dartBottomRight.shiftFractionTowards(points.armholeCpTarget, 0.5)
+    macro('title', {
+      at: points.titleAnchor,
+      nr: 4,
+      title: 'tristan:backOutside',
+    })
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
