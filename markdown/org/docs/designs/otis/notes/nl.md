@@ -15,6 +15,6 @@ romper making manufacturers.
 Ik heb het halsontwerp gecombineerd met een eenvoudig lichaamsontwerp en een drukknoopsluiting. Easy short or
 long sleeves completed the design.
 
-According to my niece, they fit fine!
+Volgens mijn nichtje passen ze prima!
 
 Wouter.
