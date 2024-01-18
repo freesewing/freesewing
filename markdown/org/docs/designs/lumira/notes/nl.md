@@ -1,8 +1,8 @@
 ---
-title: "Lumira leggings: Designer Notes"
+title: "Lumira leggings: Ontwerper Notities"
 ---
 
-I started working on this design when I decided I needed more leggings to cycle in the fall and winter. My previous
+Ik begon aan dit ontwerp te werken toen ik besloot dat ik meer leggings nodig had om in de herfst en winter te fietsen. My previous
 pair was made with a commercial pattern, and they have served me well. The easy solution would have been to just
 make some more. But if I need some of these, there should be more people that do.
 
