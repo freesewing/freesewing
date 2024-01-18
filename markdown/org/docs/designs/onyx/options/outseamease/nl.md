@@ -1,5 +1,5 @@
 ---
-title: Outseam ease
+title: Buitennaad ruimte
 ---
 
-Controls how far down the garment the waist, hips, seat, and upper leg points on the outseam will be.
+Bepaalt hoe ver de taille, heupen, het zitvlak en de bovenste beenpunten op de buitenste naad van het kledingstuk komen te liggen.
