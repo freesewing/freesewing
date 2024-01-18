@@ -810,6 +810,7 @@
       "tops"
     ],
     "techniques": [
+      "curvedSeam",
       "precision"
     ]
   },

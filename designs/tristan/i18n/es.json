@@ -1,6 +1,6 @@
 {
   "t": "Tristan",
-  "d": "A FreeSewing pattern that needs a description",
+  "d": "Tristan is a fitted tank top with prince(ss) seams.",
   "p": { 
     "backInside": "Back inside",
     "backOutside": "Back outside",
@@ -13,7 +13,16 @@
   },
   "s": {
     "strapWidthAdjusted.t": "The strap width has been adjusted",
-    "strapWidthAdjusted.d": "The strap width has been adjusted to {{{ width }}} to allow for the position of the strap on the shoulder."
+    "strapWidthAdjusted.d": "The strap width has been adjusted to {{{ width }}} to allow for the position of the strap on the shoulder.",
+    "peplumWidth.t": "Peplum size",
+    "peplumWidth.d": "The peplum will be {{{ peplumWidth }}} long.",
+    "frontOutside": "Outside front",
+    "frontInside": "Inside front",
+    "backOutside": "Outside back",
+    "backInside": "Inside back",
+    "frontPeplum": "Peplum front",
+    "backPeplum": "Peplum back",
+    "hem": "Hem"
   },
   "o": { 
     "bustSpanEase": {
@@ -35,6 +44,10 @@
     "waistEase": {
       "t": "Waist ease",
       "d": "Controls the amount of ease at the waist"
+    },
+    "waistdartposition": {
+      "t": "Waist dart position",
+      "d": "Controls the position of the waist 'dart', moving it to the center (negative) or side (positive)"
     },
     "frontShoulderWidth": {
       "t": "Front shoulder width",
@@ -95,6 +108,22 @@
     "zipperLocation.back": {
       "t": "Back zipper location",
       "d": "The location of the zipper will be in the back"
+    },
+    "hem": {
+      "t": "Hem option",
+      "d": "Add a hem."
+    },
+    "hemYes": {
+      "t": "Add a hem",
+      "d": "Add a hem at the waist"
+    },
+    "hemNo": {
+      "t": "Do not add a hem",
+      "d": "Do not add a hem at the waist"
+    },
+    "hemSize": {
+      "t": "Size of the hem",
+      "d": "Size of the hem, a percentage of the distance between the neckline and the waist"
     },
     "lacing": {
       "t": "Lacing option",

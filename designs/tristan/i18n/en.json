@@ -14,6 +14,14 @@
   "s": {
     "strapWidthAdjusted.t": "The strap width has been adjusted",
     "strapWidthAdjusted.d": "The strap width has been adjusted to {{{ width }}} to allow for the position of the strap on the shoulder.",
+    "peplumWidth.t": "Peplum size",
+    "peplumWidth.d": "The peplum will be {{{ peplumWidth }}} long.",
+    "frontOutside": "Outside front",
+    "frontInside": "Inside front",
+    "backOutside": "Outside back",
+    "backInside": "Inside back",
+    "frontPeplum": "Peplum front",
+    "backPeplum": "Peplum back",
     "hem": "Hem"
   },
   "o": { 
