@@ -4,13 +4,13 @@ title: "Walburga Wappenrock: Ontwerpers"
 
 <Note compact>Lunetius, Tiberius en Walburga komen eigenlijk als een set. Niet alleen zijn ze op hetzelfde moment geboren, maar zijn ze ook ontworpen om samen een volledige outfit te vormen. Niet dat dit betekent dat ze niet apart gemaakt kunnen worden ;)</Note>
 
-Walburga is de vreemde van de drie patronen, omdat het nog steeds "historisch geïnspireerd" is, maar eigenlijk geen echt historisch kledingstuk volgt. Het is gebaseerd op tabbaarden ("Wappenrock" in het Duits, vandaar de naam die met een W begint), met de hand geplaatst in een West-Europese setting uit de Middeleeuwen. To be honest, it is inspired more by the Legend of Zelda than anything real.
+Walburga is de vreemde van de drie patronen, omdat het nog steeds "historisch geïnspireerd" is, maar eigenlijk geen echt historisch kledingstuk volgt. Het is gebaseerd op tabbaarden ("Wappenrock" in het Duits, vandaar de naam die met een W begint), met de hand geplaatst in een West-Europese setting uit de Middeleeuwen. Eerlijk gezegd is het meer geïnspireerd op de Legend of Zelda dan op iets echts.
 
-I created this pattern because I needed something for my TTRPG character, basically a fantasy Roman, to display his heraldics on, and since I could not find anything in the literature about Romans doing this in a reliably documented way, I went the "it's all fantasy anyway"-route. (And I had a weird fascination with tabards as a kid, so it was a natural fit.)
+Ik heb dit patroon gemaakt omdat ik iets nodig had voor mijn TTRPG-personage, in principe een Romeins fantasiepersonage, om zijn heraldiek mee weer te geven, en omdat ik in de literatuur niets kon vinden over Romeinen die dit deden op een goed gedocumenteerde manier, heb ik de "het is toch allemaal fantasie"-route gekozen. (En ik had als kind al een rare fascinatie voor tabbaarden, dus het was een natuurlijke fit.)
 
-Coding-wise, I spend some time on it because I wanted the triangular terminations to look *just right*, so I fiddled with the golden ratio to ensure it looked nice, no matter what the size.
+Qua codering heb ik er wat tijd in gestoken omdat ik wilde dat de driehoekige uiteinden er *precies goed uitzagen*, dus ik heb met de gulden snede geknoeid om ervoor te zorgen dat het er mooi uitzag, ongeacht de grootte.
 
-The name comes from me thinking about vaguely mediaeval names starting with W, and somehow `walburga` popped into my head.
+De naam komt voort uit mijn gedachten over vage middeleeuwse namen die met een W beginnen, en op de een of andere manier schoot `walburga` me te binnen.
 
 Rika
 
