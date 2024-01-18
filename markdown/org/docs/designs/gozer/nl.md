@@ -2,9 +2,9 @@
 title: Gozer de geest
 ---
 
-Not quite sure what to say about this. It was three weeks or so before Halloween, and I was working on a different pattern. Then the thought of a traditional ghost costume popped into my head.
+Ik weet niet zo goed wat ik hierover moet zeggen. It was three weeks or so before Halloween, and I was working on a different pattern. Then the thought of a traditional ghost costume popped into my head.
 
-So as a joke I made this, just so I could post it on the discord server. And then Joost asked where the pattern was. So I posted it. And he published it.
+Dus als grapje heb ik dit gemaakt, zodat ik het op de discord server kon posten. And then Joost asked where the pattern was. Dus heb ik het gepost. En hij publiceerde het.
 
 Wouter
 
