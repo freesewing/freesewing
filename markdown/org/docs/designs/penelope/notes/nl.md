@@ -2,7 +2,7 @@
 title: "Penelope kokerrok: Ontwerpnotities"
 ---
 
-Penelope is the first garment I made for someone else. I just met my partner after figuring out that I like to sew. So obviously I wanted to sew something for her. A pencil skirt seemed like the apropriate thing to do. I found a drafting method online and made het a skirt. This fitted remarkably well.
+Penelope is het eerste kledingstuk dat ik voor iemand anders heb gemaakt. I just met my partner after figuring out that I like to sew. Dus natuurlijk wilde ik iets voor haar naaien. A pencil skirt seemed like the apropriate thing to do. Ik vond online een tekenmethode en maakte een rok voor haar. This fitted remarkably well.
 
 So when it was time for me to try making another pattern for FreeSewing, this was the obvious choice. I used the same basis for the drafting, but changed everything to percentages, so it would scale from dolls to giants.
 
