@@ -1,19 +1,18 @@
 ---
-title: "Otis romper: Designer Notes"
+title: "Otis romper: Ontwerper Notities"
 ---
 
-When my niece had a baby, I knew just what to do; sew her some clothes for the little one. And I
-had never made any clothes for infants. What they should look like was easy. I had kids of my own
-years ago, and the one-piece things should be easy to make.
+Toen mijn nichtje een baby kreeg, wist ik precies wat ik moest doen: kleertjes naaien voor de kleine. En ik
+had nog nooit kleertjes voor baby's gemaakt. Hoe ze eruit moesten zien was eenvoudig. Ik heb zelf jaren geleden kinderen gehad en die dingen uit één stuk moeten makkelijk te maken zijn.
 
-What I did not have was a pattern. That meant that I should get one, or make one. That was not a hard
-decision; FreeSewing was definitely lacking in the infant-focused designs. Infants have the nice
-quality that while they are growing, they grow in each direction at the same pace. The only real
-challenge is that their head is a lot bigger in proportion than older specimens. A normal shirt
-with opening doesn't work. But there are easy solutions to that, and these are used by all
+Wat ik niet had was een patroon. Dat betekende dat ik er een moest kopen, of maken. Dat was geen moeilijke
+beslissing; FreeSewing miste absoluut ontwerpen voor baby's. Infants have the nice
+quality that while they are growing, they grow in each direction at the same pace. De enige echte uitdaging
+is dat hun hoofd in verhouding een stuk groter is dan dat van oudere exemplaren. Een normaal shirt
+met opening werkt niet. But there are easy solutions to that, and these are used by all
 romper making manufacturers.
 
-I incorporated the neck design with a simple body design, and a snap closure. Easy short or
+Ik heb het halsontwerp gecombineerd met een eenvoudig lichaamsontwerp en een drukknoopsluiting. Easy short or
 long sleeves completed the design.
 
 According to my niece, they fit fine!
