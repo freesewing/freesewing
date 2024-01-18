@@ -2,4 +2,4 @@
 title: Overwijdte taille
 ---
 
-Controls how wide the garment will be around the waist.
+Bepaalt hoe wijd het kledingstuk wordt rond de taille.
