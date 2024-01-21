@@ -21,7 +21,8 @@ You can read about [their motivations for doing so on this page](/docs/about/ple
 | `€10.736,82` | 2020 |
 | `€10.070,77` | 2021 |
 | `€9.325,54`  | 2022 | 
-| `€38.814,94` | **Euro donated to [MSF](https://msf.org/)** |
+| `€10.222,07` | 2023 |
+| `€49.030,01` | **Euro donated to [MSF](https://msf.org/)** |
 
 <Tip>
 
