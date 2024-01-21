@@ -64,9 +64,6 @@ export function PatternConfig(pattern) {
   })
 }
 
-/** @type {Boolean} change me to true to get full debugging of the resolution process */
-const DISTANCE_DEBUG = false
-
 ////////////////////
 // PUBLIC METHODS //
 ////////////////////
@@ -101,12 +98,14 @@ PatternConfig.prototype.addPart = function (part) {
 
 /** Log the final report on part inheritance order */
 PatternConfig.prototype.logPartDistances = function () {
+  const priorities = []
   for (const partName in this.parts) {
-    let qualifier = DISTANCE_DEBUG ? 'final' : ''
-    this.store.log.debug(
-      `⚪️  \`${partName}\` ${qualifier} options priority is __${this.__mutated.partDistance[partName]}__`
-    )
+    const p = this.__mutated.partDistance[partName]
+    if (p in priorities) priorities[p] += ', ' + partName
+    else priorities[p] = partName
   }
+  for (let p = 1; p < priorities.length; p++)
+    this.store.log.debug(`⚪️  Options priority __${p}__ :\`${priorities[p]}\``)
 }
 
 /**
@@ -150,11 +149,6 @@ PatternConfig.prototype.__addPart = function (depChain) {
   if (typeof this.__mutated.partDistance[part.name] === 'undefined') {
     // the longer the chain, the deeper the part is down it
     this.__mutated.partDistance[part.name] = depChain.length
-
-    if (DISTANCE_DEBUG)
-      this.store.log.debug(
-        `Base partDistance for \`${part.name}\` is __${this.__mutated.partDistance[part.name]}__`
-      )
   }
 
   // Handle various hiding possibilities
@@ -213,12 +207,6 @@ PatternConfig.prototype.__addPartOptions = function (part) {
     const option = part.options[optionName]
     // get the priority of this option's current registration
     const optionDistance = this.__mutated.optionDistance[optionName]
-    // debug the comparison
-    if (optionDistance && DISTANCE_DEBUG)
-      this.store.log.debug(
-        `optionDistance for __${optionName}__  is __${optionDistance}__ and partDistance for \`${part.name}\` is __${partDistance}__`
-      )
-
     // if it's never been registered, or it's registered at a further distance
     if (!optionDistance || optionDistance > partDistance) {
       // Keep options immutable in the pattern or risk subtle bugs
@@ -414,8 +402,6 @@ PatternConfig.prototype.__resolvePartDependencies = function (depChain) {
   depTypes.forEach((d) => {
     // if the part has dependencies of that type
     if (part[d]) {
-      if (DISTANCE_DEBUG) this.store.log.debug(`Processing \`${part.name}\` "${d}:"`)
-
       // enforce an array
       const depsOfType = [].concat(part[d])
 
@@ -459,8 +445,6 @@ PatternConfig.prototype.__resolvePartDependencies = function (depChain) {
  */
 PatternConfig.prototype.__addDependency = function (dependencyList, partName, depName) {
   this[dependencyList][partName] = this[dependencyList][partName] || []
-  if (dependencyList == 'resolvedDependencies' && DISTANCE_DEBUG)
-    this.store.log.debug(`add ${depName} to ${partName} dependencyResolution`)
 
   // if it's already in the dependency list, take it out because it needs to be put on the end
   const depIndex = this[dependencyList][partName].indexOf(depName)
@@ -522,10 +506,5 @@ PatternConfig.prototype.__resolveMutatedPartDistance = function (partName) {
       // bump the dependency's dependencies as well
       this.__resolveMutatedPartDistance(dependency)
     }
-
-    if (DISTANCE_DEBUG)
-      this.store.log.debug(
-        `partDistance for \`${dependency}\` is __${this.__mutated.partDistance[dependency]}__`
-      )
   })
 }
