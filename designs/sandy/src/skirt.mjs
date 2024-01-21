@@ -155,7 +155,12 @@ function sandySkirt({
    * Annotations
    */
   // Cutlist
-  store.cutlist.setCut({ cut: 1, from: 'fabric', onFold: true })
+  store.cutlist.setCut({
+    cut: options.seamlessFullCircle ? 1 : Number(options.panels),
+    from: 'fabric',
+    onFold: true,
+    identical: true,
+  })
 
   // Cutonfold
   macro('cutonfold', {
