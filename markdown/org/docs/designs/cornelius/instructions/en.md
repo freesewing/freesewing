@@ -4,13 +4,13 @@ title: "Cornelius cycling breeches: Sewing Instructions"
 
 ### Step 1: The Front Pockets
 
-- Press under the seam allowances of the non-notched edges of the pokcet facings.
+- Press under the seam allowances of the non-notched edges of the pocket facings.
 - Matching notches, pin the wrong sides of pocket facings to right side of pocket bags, _Edgestitch_ the folded edges to the pocket bags.
 - _Baste_ the seam allowances of the notched edges of the pocket facings to the pocket bags.
 - With right sides together matching double notches sew the pocket bags to the front and then press to the wrong side.
 - Fold the pockets in half along the fold line, right sides together. Stitch the bottom of the pocket bag together.
 - Alternatively you can _French Seam_ the bottom seams of the pocket bags together if you prefer.
-- _Baste_ the top and side of the pocket bags to the front seam allowances mathcing notches.
+- _Baste_ the top and side of the pocket bags to the front seam allowances matching notches.
 
 <Note>
 
@@ -70,7 +70,7 @@ Use the method of the cuff style you chose as they are different depending on wh
 - Press the top seam allowance to the wrong side of the remaining leg band pieces. Trim the top seam allowance.
 - With right sides together sew the remaining leg and pieces to the attached leg bands along the bottoms and sides.
 - Turn the leg bands out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
+- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitching.
 - Sew the buttonhole. The buttons will be sewn later.
 
 <Note>
@@ -89,7 +89,7 @@ If you are worried about a draft you can create a triangle piece of fabric that 
 - Press the top seam allowance to the wrong side of the remaining leg band pieces. Trim the top seam allowance.
 - With right sides together sew the remaining leg and pieces to the attached leg bands along the bottoms and sides.
 - Turn the leg bands out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
+- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitching.
 - Sew the buttonhole. The buttons will be sewn later.
 
 <Note>
@@ -108,13 +108,13 @@ You can _Edgestitch_ the leg bands together like a modern waistband if you prefe
 
 ### Step 5: Waistband
 
-- Face one of the waistband pieces using your preffered method.
+- Face one of the waistband pieces using your preferred method.
 - Sew the faced waistband piece to the top of the legs right sides together.
 - Press the waistband and seam allowance up and away from leg. Trim the seam allowance to reduce bulk.
 - Press the bottom seam allowance to the wrong side of the remaining waistband piece. Trim the bottom seam allowance.
 - With right sides together sew the remaining waistband to the faced waistband along the top and sides.
 - Turn the waistband out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
+- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitching.
 - Sew the buttonhole. The buttons will be sewn later.
 
 <Note>

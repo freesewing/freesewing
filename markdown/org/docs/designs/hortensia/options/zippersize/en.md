@@ -12,7 +12,7 @@ Size guide for Hortensia:
 
 | Option | Size in Millimetres (mm) |
 | ---- | ----------- |
-| #Invisble | 0 |
+| #Invisible | 0 |
 | #3 | 4.8 |
 | #4 | 5.4 |
 | #4.5 | 5.9 |

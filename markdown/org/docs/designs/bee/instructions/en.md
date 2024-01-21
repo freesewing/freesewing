@@ -8,7 +8,7 @@ Make sure to use a stretch stitch
 
 <Note>
 
-When making a reversible top the second colour will be refered to as the lining fabric.  
+When making a reversible top the second colour will be referred to as the lining fabric.  
 The notches in this pattern act more like dots so **do not** clip them to mark them.
 
 </Note>
@@ -30,7 +30,7 @@ The notches in this pattern act more like dots so **do not** clip them to mark t
 - Trim the seam allowances and clip the corners.
 - Turn inside out. Press.
 
-<Note>Repeat this for the the remaining neck tie pieces</Note>
+<Note>Repeat this for the remaining neck tie pieces</Note>
 
 ### Step 2: The Cups
 
@@ -53,7 +53,7 @@ The notches in this pattern act more like dots so **do not** clip them to mark t
 If your seam allowance is wide you may find that you need to trim the gaps' seam allowances a little to reduce bulk.  
 If you are having trouble turning the cups you can try one of these methods:
 
-- Create a 2.5cm (1") gap in the front or side seam and turn throught that, either _slipstitch_-ing the gap closed or _edgestitch_-ing it closed during Step 7.
+- Create a 2.5cm (1") gap in the front or side seam and turn through that, either _slipstitch_-ing the gap closed or _edgestitch_-ing it closed during Step 7.
 - Widen one of the existing gaps and turn through that. Then when turned _edgestitch_ or _slipstitch_ the widened part closed.
 
 </Tip>
@@ -85,7 +85,7 @@ There are also notches on either side of the band piece's midpoint to help give 
 
 <Note>
 
-You may prefer to wrap the one cup over the other at the midpoint. To do this place the sides of the cups at the otuer notches and lay their fronts pass the midpoint with the left on top.
+You may prefer to wrap the one cup over the other at the midpoint. To do this place the sides of the cups at the other notches and lay their fronts pass the midpoint with the left on top.
 
 </Note>
 

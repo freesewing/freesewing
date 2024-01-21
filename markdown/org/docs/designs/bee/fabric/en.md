@@ -8,6 +8,6 @@ The main and lining fabric are the same type of material. Bee is made with swimw
 
 <Note>
 
-You only need lining fabric if you intend to make the pattern reversible or if you want the band for the cross back tie variant to be a constrasting fabric. Otherwise you can cut all the required pieces from your main fabric.
+You only need lining fabric if you intend to make the pattern reversible or if you want the band for the cross back tie variant to be a contrasting fabric. Otherwise you can cut all the required pieces from your main fabric.
 
 </Note>

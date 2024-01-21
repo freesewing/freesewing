@@ -28,7 +28,7 @@ finish later.
 
 ## Step 2: Apply bias tape
 
-Wer're going to apply bias tape as a finish around the entire edge of the bib.
+We're going to apply bias tape as a finish around the entire edge of the bib.
 
 You probably want to start at the bottom strap, as this way the joint of the bias
 seam will be covered when the bib is worn.

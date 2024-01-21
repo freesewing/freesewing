@@ -11,7 +11,7 @@ on the internet being rather unappreciative) the original designer was
 reluctant to continue maintaining their design.
 
 Since it's a rather nice design not to mention a popular one, we agreed that I
-would reincarnate the pattern. While at it, I also mase some changes that
+would reincarnate the pattern. While at it, I also made some changes that
 people had been asking for, such as the bulge option to make it gender-neutral.
 
 Long story short:
