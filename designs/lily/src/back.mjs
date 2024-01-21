@@ -19,13 +19,14 @@ function draftLilyBack({
   absoluteOptions,
   part,
   log,
+  units,
 }) {
   
   //TODO: implement stretch setting to replace ease
   // work-around: flag it
   let stretchAsEase = -options.fabricStretch/10
   let easeTol = 0.005
-  if (abs(options.waistEase - stretchAsEase) > easeTol || abs(options.seatEase - stretchAsEase) > easeTol || abs(options.kneeEase - stretchAsEase) > easeTol) {
+  if (Math.abs(options.waistEase - stretchAsEase) > easeTol || Math.abs(options.seatEase - stretchAsEase) > easeTol || Math.abs(options.kneeEase - stretchAsEase) > easeTol) {
     store.flag.note({
       msg: `lily:adjustEase`,
       notes: [], // TODO: figure out what to put here
@@ -42,9 +43,7 @@ function draftLilyBack({
       },
     })
   }
-  //TODO: remove lines below once overriding of options works properly
-  log.info("under 'Style', set crotch drop and length bonus to zero, and enable fit knee")
-  log.info("under 'Advanced', set leg balance and waist balance to 50%")
+
   
   /*
    * Helper method to draw the inseam path

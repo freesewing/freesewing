@@ -474,6 +474,22 @@
     "lab": false,
     "org": false
   },
+  "lily": {
+    "code": "Anna Puk, Joost De Cock",
+    "description": "A FreeSewing pattern for basic leggings",
+    "design": "Anna Puk",
+    "difficulty": 2,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "bottoms"
+    ],
+    "techniques": [
+      "elastic",
+      "curvedSeam",
+      "hem"
+    ]
+  },
   "lucy": {
     "code": "SeaZeeZee",
     "description": "A FreeSewing pattern for a historical tie-on pocket",
@@ -489,7 +505,7 @@
     "techniques": [
       "curvedSeam"
     ]
-  },
+  },  
   "lunetius": {
     "code": "Rika Tamaike",
     "description": "A FreeSewing pattern for a lacerna, a historical Roman cloak",

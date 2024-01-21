@@ -36,11 +36,11 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "axios": "1.6.3",
+    "axios": "1.6.2",
     "chalk": "5.3.0",
     "execa": "8.0.1",
     "mustache": "4.2.0",
-    "ora": "8.0.1",
+    "ora": "7.0.1",
     "prompts": "2.4.2",
     "recursive-readdir": "2.2.3"
   },
