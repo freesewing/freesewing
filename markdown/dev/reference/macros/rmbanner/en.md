@@ -13,4 +13,3 @@ part of [core-plugins](/reference/plugins/core) (so it is available by default).
 ```js
 macro('rmBanner', id = 'banner')
 ```
-  

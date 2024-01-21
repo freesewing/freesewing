@@ -49,7 +49,7 @@ The configuration object takes 3 top-level properties:
 - `p`: Specifies configuration for how to merge the part name translations (under `p` in the translation files)
 - `o`: Specifies configuration for how to merge the option translations (under `p` in the translation files)
 
-For **each of the `s`, `p`, and `o` keys** you can specificy the followig properties:
+For **each of the `s`, `p`, and `o` keys** you can specify the following properties:
 
 - `drop`: An Array with the keys of entries to not merge (drop). Keys that are not in this array will be merged.
 - `keep`: An Array with the keys of entries to merge (keep). Keys that are not in this array will not be merged.

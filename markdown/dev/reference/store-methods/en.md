@@ -6,7 +6,7 @@ Store methods are typically provided by plugins and attached to
 the store to make them available during the drafting process.
 
 Some of FreeSewing's core library functionality is implemented 
-as store methods to allow plugins to override this functinoality.
+as store methods to allow plugins to override this functionality.
 Examples include log handling and pattern layout algorithm.
 
 All store methods below are either provided by plugins we maintain,

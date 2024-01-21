@@ -2,11 +2,11 @@
 title: Public
 ---
 
-Every measurements set has a **public** attribute that controls whether or not the measurments set is public.
+Every measurements set has a **public** attribute that controls whether or not the measurements set is public.
 
 By default, measurements sets are private and you are the only one who can use them.
 
-But, you can choose to make your measurments set public which allows other
+But, you can choose to make your measurements set public which allows other
 users to utilize the measurements in this set to generate or test their own
 patterns.
 
