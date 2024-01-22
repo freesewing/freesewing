@@ -343,9 +343,14 @@ function draftLilyFront({
   } else {
     // define the same three parts of the path as when length reduction is enabled, then combine
     
+    // first define the points (also used for paperless)
+    points.bottom = points.floor
+    points.bottomIn = points.floorIn
+    points.bottomOut = points.floorOut
+       
     paths.bottom = new Path ()
-      .move(points.floorOut)
-      .line(points.floorIn)
+      .move(points.bottomIn)
+      .line(points.bottomOut)
       
     // note: upperInseam contains waist and cross seam as well
     paths.upperInseam = drawInseam()
@@ -360,6 +365,7 @@ function draftLilyFront({
 
   if (complete) {
     points.grainlineTop.y = points.styleWaistInLily.y
+    points.grainlineBottom.y = points.bottom.y    
     macro('grainline', {
       from: points.grainlineTop,
       to: points.grainlineBottom,
@@ -514,7 +520,7 @@ function draftLilyFront({
       paths.hemBase.hide()
     }
 
-    if (paperless && options.titanPaperless) {
+    if (paperless) {
       // Help construct crotch seam
       paths.hint = new Path()
         .move(points.crotchSeamCurveStart)
