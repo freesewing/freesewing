@@ -291,10 +291,15 @@ function draftLilyBack({
     store.set('requestedLength',requestedLength)    
   } else {
     // define the same three parts of the path as when length reduction is enabled, then combine
+
+    // first define the points (also used for paperless)
+    points.bottom = points.floor
+    points.bottomIn = points.floorIn
+    points.bottomOut = points.floorOut
        
     paths.bottom = new Path ()
-      .move(points.floorIn)
-      .line(points.floorOut)
+      .move(points.bottomIn)
+      .line(points.bottomOut)
       
     // note: upperOutseam contains waist and cross seam as well
     paths.upperInseam = drawInseam()
@@ -312,8 +317,8 @@ function draftLilyBack({
   } 
     
   if (complete) {
-    // TODO: fix position of grainline so it doesn't extend below the pattern
     points.grainlineTop.y = points.styleWaistOutLily.y
+    points.grainlineBottom.y = points.bottom.y
     macro('grainline', {
       from: points.grainlineTop,
       to: points.grainlineBottom,
