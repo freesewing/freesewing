@@ -20,7 +20,8 @@ De onderhouder van FreeSewing (joost) heeft de belofte gedaan en deze belofte oo
 | `` `10.736,82` `` | 2020                                                             |
 | `` `10.070,77` `` | 2021                                                             |
 | `` `29.489,40` `` | 2022                                                             |
-|      `€38.814,94` | **Euro gedoneerd aan [Artsen zonder Grenzen](https://msf.org/)** |
+|      `€10.222,07` | 2023                                                             |
+|      `€49.030,01` | **Euro gedoneerd aan [Artsen zonder Grenzen](https://msf.org/)** |
 
 <Tip>
 
