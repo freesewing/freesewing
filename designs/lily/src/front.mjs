@@ -514,7 +514,7 @@ function draftLilyFront({
       paths.hemBase.hide()
     }
 
-    if (paperless && options.titanPaperless) {
+    if (paperless) {
       // Help construct crotch seam
       paths.hint = new Path()
         .move(points.crotchSeamCurveStart)

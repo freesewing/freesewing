@@ -38,7 +38,15 @@ function draftLilyBack({
         text: 'adjust ease',
         icon: '',
         update: {
-          options: ['waistEase', stretchAsEase, 'seatEase', stretchAsEase, 'kneeEase', stretchAsEase],
+          settings: [
+            'options', 
+            {
+              ...options,
+              waistEase: stretchAsEase,
+              seatEase: stretchAsEase,
+              kneeEase: stretchAsEase
+            }
+           ]
         },
       },
     })
@@ -443,7 +451,7 @@ function draftLilyBack({
       paths.hemBase.hide()
     }
 
-    if (paperless && options.titanPaperless) {
+    if (paperless) {
       // Help construct cross seam
       paths.hint = new Path()
         .move(points.crossSeamCurveStart)
@@ -451,22 +459,22 @@ function draftLilyBack({
         .line(points.fork)
         .attr('class', 'note lashed')
       macro('hd', {
-        from: points.floorIn,
-        to: points.floorOut,
-        y: points.floorIn.y - 30,
+        from: points.bottomIn,
+        to: points.bottomOut,
+        y: points.bottomIn.y - 30,
       })
       macro('hd', {
-        from: points.floorIn,
-        to: points.floor,
-        y: points.floorIn.y - 15,
+        from: points.bottomIn,
+        to: points.bottom,
+        y: points.bottomIn.y - 15,
       })
       macro('hd', {
-        from: points.floor,
-        to: points.floorOut,
-        y: points.floorIn.y - 15,
+        from: points.bottom,
+        to: points.bottomOut,
+        y: points.bottomIn.y - 15,
       })
       macro('vd', {
-        from: points.floorOut,
+        from: points.bottomOut,
         to: points.styleWaistOutLily,
         x:
           (points.seatOut.x > points.styleWaistOutLily.x ? points.seatOut.x : points.styleWaistOutLily.x) +
@@ -474,7 +482,7 @@ function draftLilyBack({
           15,
       })
       macro('vd', {
-        from: points.floorIn,
+        from: points.bottomIn,
         to: points.fork,
         x: points.fork.x - sa - 15,
       })
@@ -484,7 +492,7 @@ function draftLilyBack({
         x: points.fork.x - sa - 15,
       })
       macro('vd', {
-        from: points.floorIn,
+        from: points.bottomIn,
         to: points.styleWaistInLily,
         x: points.fork.x - sa - 30,
       })
