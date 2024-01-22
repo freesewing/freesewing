@@ -32,6 +32,7 @@ import lunetius from '@freesewing/lunetius'
 import paco from '@freesewing/paco'
 import penelope from '@freesewing/penelope'
 import sandy from '@freesewing/sandy'
+import senya from '@freesewing/senya'
 import shin from '@freesewing/shin'
 import simon from '@freesewing/simon'
 import simone from '@freesewing/simone'
@@ -85,6 +86,7 @@ export const designs = {
   paco,
   penelope,
   sandy,
+  senya,
   shin,
   simon,
   simone,

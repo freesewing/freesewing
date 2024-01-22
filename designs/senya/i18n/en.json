@@ -1,0 +1,57 @@
+{
+  "t": "Senya shirt",
+  "d": "Senya is a slightly weird shirt.",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "base": "Base",
+    "bottom": "Bottom"
+  },
+  "s": {},
+  "o": {
+    "armholeDepthFactor": {
+      "t": "Armhole depth factor",
+      "d": "Controls the depth of the armhole. Higher values make a deeper armhole."
+    },
+    "backNeckCutout": {
+      "t": "Back neck cutout",
+      "d": "How deep the neck is cut out at the back"
+    },
+    "bicepTopCoverage": {
+      "t": "Bicep top coverage",
+      "d": "How much of the bicep is covered by the sleeves."
+    },
+    "chestEase": {
+      "t": "Chest ease",
+      "d": "The amount of ease at your chest."
+    },
+    "circleRatio": {
+      "t": "Circle ratio",
+      "d": "The percentage of a circle you want the bottom to be."
+    },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "Determines how long the skirt will be."
+    },
+    "lowerWaistline": {
+      "t": "Lower waistline",
+      "d": "How much below the waistline the connection between the top and bottom part of the shirt is."
+    },
+    "necklineBend": {
+      "t": "Neckline curvature",
+      "d": "Controls the curvature of the neckline."
+    },
+    "necklineDepth": {
+      "t": "Neckline depth",
+      "d": "Controls how deep the neck opening plunges down."
+    },
+    "necklineWidth": {
+      "t": "Neckline width",
+      "d": "Controls the width of the neck opening."
+    },
+    "hemWidth": {
+      "t": "Hem width",
+      "d": "Width of the hem"
+    }
+  }
+}

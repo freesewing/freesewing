@@ -16,6 +16,7 @@
 *.env
 *.sh
 *.json
+*.local
 Dockerfile
 LICENSE
 yarn.lock
