@@ -4,15 +4,15 @@
   "p": {
     "shape": "Shape",
     "leg": "Leg",
-    "panel": "Side Pannel",
+    "panel": "Side panel",
     "pocket": "Pocket",
     "waistband": "Waistband"
    },
   "s": { 
-    "couldNotLowerWaist": "Could not lower the waist",
-    "cantFitTheWaistPoint": "Cannot fit the waist point",
-    "couldNoFitWaistband": "Could not fit the waistband",
-    "couldNotCreatePocket": "Could not create the pocket",
+    "couldNotLowerWaist.t": "Could not lower the waist",
+    "cantFitTheWaistPoint.t": "Cannot fit the waist point",
+    "couldNoFitWaistband.t": "Could not fit the waistband",
+    "couldNotCreatePocket.t": "Could not create the pocket",
     "dimensions.d": "Dimensions",
     "dimensions.t": "Waistband will be {{{ waistbandlength }}} long total.\nThe length of the garment along the side will be {{{ length }}}."
   },

@@ -37,6 +37,13 @@ export const waistband = {
     const radius = (waistLength * 0.5) / Math.sin(angleRad)
     const baseAngle = waistLength < waistbandLength ? 270 : 90
     let angle = utils.rad2deg(angleRad)
+    if (isNaN(angle)) {
+      log.info('lumina:couldNoFitWaistband')
+      store.flag.note({
+        msg: `lumina:couldNoFitWaistband`,
+      })
+      return part.hide()
+    }
 
     let diff = 0
     let iter = 0
@@ -114,10 +121,10 @@ export const waistband = {
       .setClass('hidden')
 
     let top = paths.waist.edge('top')
-    if (top.y == points.waistFront.y) {
+    if (top.y == points.waistBack.y) {
       top = paths.waist.edge('bottom')
     }
-    let bottom = paths.waistband.edge('bottom')
+    let bottom = paths.waistband.shiftFractionAlong(0.5)
     if (bottom.y == points.waistbandFront.y) {
       bottom = paths.waistband.edge('top')
     }
@@ -167,7 +174,7 @@ export const waistband = {
       id: 'bottom',
       from: points.waistbandBack,
       to: points.waistbandFront,
-      y: Math.max(points.waistbandFront.y, bottom.y) + sa + 15,
+      y: Math.max(points.waistbandFront.y, Math.max(bottom.y, points.waistbandBack.y)) + sa + 15,
     })
     macro('vd', {
       id: 'top',

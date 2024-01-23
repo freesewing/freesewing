@@ -28,7 +28,7 @@ export const controlPoints = (p1, p2, p3, cpDistanceDivider) => {
     return { cp1: p1.clone(), cp2: cp2 }
   }
   if (p3 !== undefined && p2.sitsRoughlyOn(p3)) {
-    return { cp1: cp1.clone(), cp2: p3.clone() }
+    return { cp1: cp1, cp2: p3.clone() }
   }
   return { cp1: cp1, cp2: cp2 }
 }

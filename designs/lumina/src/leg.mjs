@@ -65,16 +65,16 @@ export const leg = {
     if (!points.frontSplitWaistband.sitsRoughlyOn(front)) {
       macro('hd', {
         id: 'middleToFront',
-        from: points.middleUpperLeg,
-        to: front,
+        from: front,
+        to: points.middleUpperLeg,
         y: top.y - sa - 35,
       })
     }
     if (!points.backSplitWaistband.sitsRoughlyOn(back)) {
       macro('hd', {
         id: 'middleToBack',
-        from: back,
-        to: points.middleUpperLeg,
+        from: points.middleUpperLeg,
+        to: back,
         y: top.y - sa - 35,
       })
     }

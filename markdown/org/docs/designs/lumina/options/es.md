@@ -1,5 +1,5 @@
 ---
-title: "Lumira leggings: Design Options"
+title: "Lumina leggings: Design Options"
 ---
 
-<DesignOptions design='lumira' />
+<DesignOptions design='lumina' />
