@@ -85,7 +85,7 @@ There are also notches on either side of the band piece's midpoint to help give 
 
 <Note>
 
-You may prefer to wrap the one cup over the other at the midpoint. To do this place the sides of the cups at the other notches and lay their fronts pass the midpoint with the left on top.
+You may prefer to wrap the one cup over the other at the midpoint. To do this place the sides of the cups at the outer notches and lay their fronts pass the midpoint with the left on top.
 
 </Note>
 
