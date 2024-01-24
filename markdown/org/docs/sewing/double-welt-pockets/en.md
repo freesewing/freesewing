@@ -119,7 +119,7 @@ Mark the welt pocket as follows:
 - Align the center opening of the pocket with a horizontal line. Let it extend to help you align the welts later
 - Mark two horizontal lines parallel to the center line, at an offset equal to the welt height (0.5cm in our example)
 
-The part of the horizontal lines parallel to the center line that fall in between the verticle lines is where we'll sew our welts in place. This is illustrated by the red lines.
+The part of the horizontal lines parallel to the center line that fall in between the vertical lines is where we'll sew our welts in place. This is illustrated by the red lines.
 
 ### Step 3: Fold and press the welts
 
