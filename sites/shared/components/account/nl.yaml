@@ -108,10 +108,10 @@ controlTitle: Welke gebruikerservaring heeft jouw voorkeur?
 #img
 imgTitle: Wat denk je van een leuke foto?
 imgDragAndDropImageHere: Sleep hier een afbeelding naartoe
-imgPasteUrlHere: Plak hier een afbeeldingslocatie (url)
+imgPasteUrlHere: Paste an image location (URL) here
 imgSelectImage: Selecteer een afbeelding
 #newsletter
-newsletterTitle: Wil je de FreeSewing nieuwsbrief ontvangen?
+newsletterTitle: Wil je graag de FreeSewing nieuwsbrief ontvangen?
 newsletterYes: Ja, ik wil graag de nieuwsbrief ontvangen
 newsletterYesd: Eens om de 3 maanden ontvang je van ons een e-mail met eerlijke, oprechte inhoud. Geen tracking, geen advertenties, geen onzin.
 newsletterNod: Je kunt later altijd van gedachten veranderen. Maar zolang je dat niet doet, sturen we je geen nieuwsbrieven.
@@ -202,7 +202,7 @@ public: Publiek
 publicSet: Publieke maten set
 privateSet: Privé maten set
 publicSetDesc: Anderen kunnen deze maten gebruiken om patronen aan te maken of te testen
-privateSetDesc: Deze maten mogen niet worden gebruikt door anderen om patronen aan te maken of te testen
+privateSetDesc: These measurements cannot be used by other users or visitors
 permalink: Link
 editThing: Bewerk {thing}
 saveThing: Bewaar {thing}
@@ -211,8 +211,8 @@ noFilter: Niet filteren
 filterByDesignDocs: Als je een specifiek ontwerp in gedachten hebt, kun je <b>filteren op ontwerp</b> om alleen de metingen te tonen die nodig zijn voor dit ontwerp.
 setLacksMeasiesForDesign: In deze set ontbreken de afmetingen die nodig zijn voor dit patroon
 setHasMeasiesForDesign: Deze set heeft alle afmetingen die nodig zijn voor dit patroon
-someSetsLacking: Some of your sets lack the measurments required to generate this pattern
-theseSetsReady: Deze sets hebben alle vereiste metingen om dit patroon te genereren
+someSetsLacking: Some of these sets lack the measurements required to generate this pattern
+theseSetsReady: These sets have all required measurements to generate this pattern
 chooseSet: Kies een maten set
 patternForWhichSet: Voor welke maten set moeten we een patroon genereren?
 bookmarkedSets: Maten sets in je bladwijzers
@@ -222,7 +222,7 @@ curateCuratedSets: Stel onze selectie samengestelde meetsets samen
 useThisSet: Gebruik deze maten set
 ownSets: Je eigen meetsets
 noOwnSets: Je hebt (nog) geen eigen meetsets
-pleaseMtm: Omdat onze patronen op maat worden gemaakt, raden we je sterk aan om de maten nauwkeurig op te nemen.
+pleaseMtm: Because our patterns are bespoke, we strongly suggest you take accurate measurements.
 noOwnSetsMsg: Je kunt je metingen opslaan als een meetset, waarna je er zoveel patronen voor kunt genereren als je wilt.
 measurements: Maten
 chooseASet: Kies een meetset
@@ -253,7 +253,7 @@ blogNewInfo: Als je op de FreeSewing blog wilt schrijven, kun je hier een concep
 imgNew: Genereer een social media-imago
 imgNewInfo: Gebruik onze generator om een afbeelding te maken die je kunt delen op sociale media, met ondersteuning voor brede (klassiek), vierkante (Instagram) of hoge (stories/TikTok) formaten.
 csetNew: Een nieuwe set samengestelde metingen voorstellen
-csetNewInfo: We stellen een verzameling doorgelichte meetsets samen die we gebruiken om patronen te testen. Je kunt hier een meetset voorstellen.
+csetNewInfo: We curate a collection of vetted measurements sets that we use to test patterns. You can suggest a measurements set here.
 opackNew: Een nieuw optiepakket voorstellen
 opackNewInfo: Voor elk van onze ontwerpen stellen we een verzameling doorgelichte optiepakketten samen. Je kunt je opties hier voorstellen.
 newPopular: Meest populair
