@@ -12,5 +12,5 @@ FreeSewing ondersteunt momenteel de volgende talen:
 - Duits
 - Nederlands
 
-Je kunt een van deze kiezen en je patroon wordt in deze taal vertaald.
+You can pick any of these and your pattern will be translated in this language.
 
