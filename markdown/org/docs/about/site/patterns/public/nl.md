@@ -4,4 +4,4 @@ title: Publiek
 
 Deze instellingen bepalen of je patroon toegankelijk is voor het **publieke** of niet.
 
-Patronen zijn standaard privé en alleen jij hebt toegang tot je eigen patronen. Als je je patroon wilt delen met anderen -- misschien omdat ze interesse hebben getoond of omdat je op zoek bent naar input -- moet je het eerst openbaar maken.
+Patronen zijn standaard privé en alleen jij hebt toegang tot je eigen patronen. If you'd like to share your pattern with others -- perhaps because they showed an interest or you are looking for input -- you should first make it public.
