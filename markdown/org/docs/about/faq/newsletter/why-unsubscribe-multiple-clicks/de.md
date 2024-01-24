@@ -2,7 +2,7 @@
 title: Warum muss ich erneut klicken, um zu bestätigen, dass ich den Newsletter abbestellen möchte?
 ---
 
-While we could make it so that clicking the link in your email would immeadiatly unsubcribe you, it would be in violation of internet standards. Insbesondere die Definition der __GET-Methode__ des __HTTP__ Protokolls, die besagt, dass:
+While we could make it so that clicking the link in your email would immediately unsubscribe you, it would be in violation of internet standards. Insbesondere die Definition der __GET-Methode__ des __HTTP__ Protokolls, die besagt, dass:
 
 
 <Note>
