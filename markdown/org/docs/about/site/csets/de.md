@@ -20,7 +20,7 @@ We now no longer present users who want to try out the site a range of *standard
 
 Wir sind darauf angewiesen, dass unsere Community Messreihen zur Kuratierung einreicht. Wenn du eine öffentliche Messung auf der Website eingestellt hast, kannst du sie zur Kuratierung vorschlagen.
 
-Um Teil unserer kuratierten Messgeräte-Sammlung zu werden, solltest du folgende Angaben machen:
+To be part of our curated measurements sets collection, you should provide the following:
 
 - **Alle Messungen** der Person. Wir akzeptieren keine unvollständigen Sets, da dies bedeuten würde, dass einige Designs nicht mit ihnen funktionieren würden.
 - **Die Größe** der Person. So können die Nutzerinnen und Nutzer die Maße auswählen, die ihrem eigenen Körper am nächsten kommen.
