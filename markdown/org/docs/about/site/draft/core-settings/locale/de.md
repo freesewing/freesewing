@@ -12,5 +12,5 @@ FreeSewing unterstützt derzeit die folgenden Sprachen:
 - Deutsch
 - Holländisch
 
-Du kannst eine dieser Sprachen auswählen und dein Muster wird in diese Sprache übersetzt.
+You can pick any of these and your pattern will be translated in this language.
 
