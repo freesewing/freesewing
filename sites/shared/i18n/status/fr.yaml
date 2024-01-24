@@ -6,7 +6,7 @@ copiedToClipboard: Copié dans le presse-papier
 dataLoaded: Données chargées depuis le backend de FreeSewing
 generatingPdf: Générer ton PDF, un moment s'il te plaît
 nailedIt: C'est parfait!
-pdfFailed: Une erreur inattendue s'est produite lors de la génération de ton PDF
+pdfFailed: An unexpected error occurred while generating your PDF
 pdfReady: PDF générés
 processingUpdate: Mise à jour du traitement
 settingsSaved: Paramètres sauvegardés
