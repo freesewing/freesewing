@@ -114,7 +114,7 @@ Marca el pocket de la siguiente forma:
 - Alinear la apertura central del bolsillo con una línea horizontal. Deja que se extienda para ayudarte a alinear las soldaduras más tarde
 - Marca dos líneas horizontales paralelas a la línea central, en un desplazamiento igual a la altura de la soldadura (0,5 cm en nuestro ejemplo)
 
-La parte de las líneas horizontales paralelas a la línea central que caen entre las líneas de vértices es donde cosecharemos nuestras soldaduras en su lugar. Esto se ve reflejado en las líneas rojas.
+The part of the horizontal lines parallel to the center line that fall in between the vertical lines is where we'll sew our welts in place. Esto se ve reflejado en las líneas rojas.
 
 ### Paso 3: Plegar y pulsar las soldaduras
 
