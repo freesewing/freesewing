@@ -1131,6 +1131,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "LunaticMuch",
+      "name": "Stefano",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1659414?v=4",
+      "profile": "https://stefanocislaghi.com",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,
