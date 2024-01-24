@@ -6,7 +6,7 @@ copiedToClipboard: Copiado al portapapeles
 dataLoaded: Datos cargados desde el backend de FreeSewing
 generatingPdf: Generando tu PDF, un momento por favor
 nailedIt: Clavado!
-pdfFailed: Se ha producido un error inesperado al generar tu PDF
+pdfFailed: An unexpected error occurred while generating your PDF
 pdfReady: Generados en PDF
 processingUpdate: Actualización del proceso
 settingsSaved: Ajustes guardados
