@@ -10,7 +10,7 @@ The skirt was added in for modesty, primarily for the swimwear, though it does a
 
 Onyx does copy a number of Shelly's features, including raglan sleeves for mobility and the use of symmetrical front and back parts, except for the neck and head.
 
-Onyx is named after the gemstone and its deep black color, which not coincidentially is a great base color for Onyx swimsuits, particularly if one wants them to look like a wetsuit.
+Onyx is named after the gemstone and its deep black color, which not coincidentally is a great base color for Onyx swimsuits, particularly if one wants them to look like a wetsuit.
 
 A bit of history: Onyx may never have been born had it not been for the anti-LGBTQ+ protests and boycotts in the spring of 2023, which led to a unisuit that I particularly liked being pulled from the shelves of a major US retailer, and me needing a suitable replacement.
 

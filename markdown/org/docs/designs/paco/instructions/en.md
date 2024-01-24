@@ -246,7 +246,7 @@ not the inside of your waistband.
 
 Next, align the center backs and pin in place, adding additional pins around the waistband as needed.
 
-Sew the waistband to the pants, as close to the the elastic as you can, but don’t sew into the elastic.
+Sew the waistband to the pants, as close to the elastic as you can, but don’t sew into the elastic.
 
 ![Waistband sewn with simple method](step13.svg)
 
@@ -343,7 +343,7 @@ there are enough.
 
 </Tip>
 
-Sew the cuff to the pants opening, as close to the the elastic as you can, but don’t sew into the elastic.
+Sew the cuff to the pants opening, as close to the elastic as you can, but don’t sew into the elastic.
 
 ![Cuffs sewn with simple method](step16.svg)
 

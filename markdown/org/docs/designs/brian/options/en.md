@@ -52,7 +52,7 @@ the exact value. But there are two options that control the shape of our sleevec
 - [Sleevecap top X](/docs/designs/brian/options/sleevecaptopfactorx/) : Controls the horizontal placement of point 3 and 4
 - [Sleevecap top Y](/docs/designs/brian/options/sleevecaptopfactory/) : Controls the vertical placement of point 4
 
-In other words, point 4 can be made higher and lower and, perhaps less intutitively, it can also
+In other words, point 4 can be made higher and lower and, perhaps less intuitively, it can also
 be changed to lie more to the right or the left, rather than smack in the middle as in our example.
 
 ### The inflection points

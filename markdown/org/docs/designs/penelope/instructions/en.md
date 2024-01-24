@@ -38,7 +38,7 @@ part of the seam where the zipper is behaves differently than the part without i
 you want to try to make it invisible also in movement.
 
 Traditionally, an invisible zipper is used in a pencil skirt but a regular zipper will work just as well.
-You can even use a zipper that constrast your fabric if the fancy takes you.
+You can even use a zipper that contrasts your fabric if the fancy takes you.
 Choose what works for you and the style you're going for. Be creative (or not) it is entirely up to you!
 All though if your fabric is on the heavier side you might want to opt for a different closure entirely.
 
@@ -67,7 +67,7 @@ darts will be included in the front and back pieces.
 We're not going to go into a full explanation on how to create all the individual details
 that make up a pencil skirt. These instructions assume that you know how to sew a dart, insert an invisible
 zipper, make a vent, etc. If not, there are numerous excellent articles available on the
-web, both in writen form, and on video. If you do get stuck, you can always reach out to
+web, both in written form, and on video. If you do get stuck, you can always reach out to
 [other FreeSewers](https://discord.freesewing.org/) in our discord.
 
 </Warning>
@@ -76,7 +76,7 @@ web, both in writen form, and on video. If you do get stuck, you can always reac
 
 - Sew all the darts.
 - Press the darts towards the back.
-  - For the back piece(s), that means you press the darts towards eachother.
+  - For the back piece(s), that means you press the darts towards each other.
   - For the front piece, that means you press the darts towards the side seams.
 
 ### Step 2: The zipper
@@ -102,11 +102,11 @@ You can skip this step if not making a lining.
 - Follow Step 1 - 4 to construct the lining with the following changes:
   - Adjust the darts to compensate for the extra 'ease' in the lining pieces.
   - Do not include the zipper but leave the opening in the zipper seam.
-- Attach the lining to the body in your prefered way. You will need to construct the vent during this and connect the lining to the zipper.
+- Attach the lining to the body in your preferred way. You will need to construct the vent during this and connect the lining to the zipper.
 
 <Note>
 
-How to distribute the extra 'ease' is up to you. You can either add it to the darts by increasing them. or you can add another dart or box pleat in the middle.
+How to distribute the extra 'ease' is up to you. You can either add it to the darts by increasing them. Or you can add another dart or box pleat in the middle.
 
 </Note>
 
@@ -142,7 +142,7 @@ This step is only needed if you have not lined your skirt as the hem and vents w
 - If desired, face the hem and vents.
 - Construct the vents with your preferred method
 - Press under the hem allowances of the skirt.
-- If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent farying.
+- If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent fraying.
 - Secure the hem in place with your preferred method. For instance you can sew from the outside or _Slipstitch_ from the inside. This comes down to how you want the finished product to look.
 
 <Tip>
