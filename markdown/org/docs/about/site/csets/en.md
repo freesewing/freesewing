@@ -32,7 +32,7 @@ pick the one that best represents their own body.
 We rely on our community to submit measurements sets for curation. 
 If you have a public measurements set on the site, you can suggest it for curation.
 
-To be part of our curated measurments sets collection, you should provide the following:
+To be part of our curated measurements sets collection, you should provide the following:
 
 - **All measurements** of the person. We do not accept incomplete sets as that would mean some designs would not work with them.
 - **The height** of the person. This helps users select a measurements set closest to their own body.

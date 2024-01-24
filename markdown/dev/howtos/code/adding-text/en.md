@@ -23,7 +23,7 @@ To facilitate this, FreeSewing will enforce a line break when you use `\n` in yo
 Text that is added to a pattern typically requires translation. 
 You should break up your text in such a way that it remains possible to translate it.
 
-You can do that either via repeated calls to `addText()` or you can pass an array of strings, or even a nested array of strings, and FreeSewing will translate all individual pieces prior to contatenating them.
+You can do that either via repeated calls to `addText()` or you can pass an array of strings, or even a nested array of strings, and FreeSewing will translate all individual pieces prior to concatenating them.
 
 <Note compact noP>
 

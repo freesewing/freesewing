@@ -60,7 +60,7 @@ const part = {
 
 ### hide.inherited
 
-To hide parts that you have not explicitly included in this part that may be pulled in by the explictly included `from` and `after` parts, set `hide.inherited` to a truthy value.
+To hide parts that you have not explicitly included in this part that may be pulled in by the explicitly included `from` and `after` parts, set `hide.inherited` to a truthy value.
 
 <Note>This setting will hide any part included as `from` or `after` by your explicitly included `from` part or its dependency chain. It will also hide any part included as `from` by your explicitly included `after` part or its dependency chain. It will not hide the `after` parts of `after` parts</Note>
 

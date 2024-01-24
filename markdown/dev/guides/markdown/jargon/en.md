@@ -26,7 +26,7 @@ We are migrating from _cjs_ to _esm_ modules
 To add a new jargon term, you need to add it to the jargon file for the
 website you'd like to add it to:
 
-| Website | Jargon file | Github link |
+| Website | Jargon file | GitHub link |
 | ------- | ----------- | ----------- |
 | freesewing.dev | `sites/dev/jargon.mjs` | [jargon.mjs](https://github.com/freesewing/freesewing/blob/develop/sites/dev/jargon.mjs) |
 | freesewing.org | `sites/org/jargon.mjs` | [jargon.mjs](https://github.com/freesewing/freesewing/blob/develop/sites/org/jargon.mjs) |
