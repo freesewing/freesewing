@@ -40,7 +40,7 @@ FreeSewing.org is ons meest zichtbare bezit en voor veel mensen is het hun eerst
 
 ## Patronen vs Ontwerpen
 
-Als je op deze site bent gekomen op zoek naar _naaipatronen_ en niet meteen een plek hebt gevonden om ze te downloaden, dan komt dat omdat alle naaipatronen van FreeSewing **op maat zijn gemaakt**.
+If you came to this site looking for _sewing patterns_ and did not immediately find a place to download them, that's because all of FreeSewing's sewing patterns are **made to measure**.
 
 We schalen of beoordelen patronen niet. We schalen of beoordelen patronen niet. Dat gebeurt in real-time, in je browser.
 
@@ -89,6 +89,6 @@ FreeSewing biedt ook **verzamelde meetsets**. Dit zijn metingen van echte mensen
 
 ## Waar je terecht kunt voor hulp
 
-Als je vastloopt, consule [de ondersteuningspagina](/support/) voor verschillende ondersteuningsopties.
+If you get stuck, consult [the support page](/support/) for various support options.
 
 
