@@ -50,18 +50,20 @@ export const backInside = {
         .addClass('note dashed')
         .addText('hem', 'center note')
     } else {
-      paths.hem = new Path().move(points.waistCenter).line(points.dartBottomLeft).hide()
+      paths.hem = new Path()
+        .move(lacing ? points.lacingWaist : points.waistCenter)
+        .line(points.dartBottomLeft)
+        .hide()
     }
 
-    paths.seam = new Path()
-      .move(points.strapInside)
-      .join(paths.cut)
-      .join(paths.hem)
+    paths.seamSA = new Path()
+      .move(points.dartBottomLeft)
       .curve(points.dartLeftCp, points.shoulderDartCpDown, points.dartTip)
       .curve(points.shoulderDartCpUp, points.shoulderDart, points.shoulderDart)
       .line(points.strapInside)
-      .close()
-      .attr('class', 'fabric')
+      .join(paths.cut)
+
+    paths.seam = paths.seamSA.clone().join(paths.hem).close().attr('class', 'fabric')
 
     points.grainlineFrom = new Point(points.dartBottomLeft.x - 10, points.cbCut.y)
     points.grainlineTo = new Point(points.dartBottomLeft.x - 10, points.waistSide.y)
@@ -83,7 +85,22 @@ export const backInside = {
     })
 
     if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      if (options.hem && !options.peplum) {
+        paths.sa = new Path()
+          .move(points.dartBottomLeftHem)
+          .join(
+            new Path()
+              .move(points.dartBottomLeftHem)
+              .line(points.dartBottomLeft)
+              .join(paths.seamSA)
+              .line(points.waistCenterHem)
+              .offset(sa)
+          )
+          .line(points.waistCenterHem)
+          .attr('class', 'fabric sa')
+      } else {
+        paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      }
     }
 
     macro('hd', {

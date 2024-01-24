@@ -14,9 +14,6 @@ export const frontOutside = {
     delete points.bustB
     delete points.bustDartEdge
 
-    // macro('rmcutonfold')
-    // store.cutlist.removeCut()
-
     paths.cut = new Path()
       .move(points.armhole)
       .curve(points.armholeCutCp, points.strapOutsideCp, points.strapOutside)
@@ -51,19 +48,19 @@ export const frontOutside = {
         .addClass('note dashed')
         .addText('hem', 'center note')
     } else {
-      paths.hem = new Path().move(points.waistDartRight).hide()
+      paths.hem = new Path().move(points.waistDartRight).line(points.sideWaist).hide()
     }
 
-    paths.seam = new Path()
-      .move(points.waistDartRight)
-      .join(paths.hem)
-      .line(points.sideWaist)
+    paths.seamSA = new Path()
+      .move(points.sideWaist)
       .line(points.armhole)
       .join(paths.cut)
       .line(points.shoulderDartOutside)
       .join(paths.princessSeam)
-      .close()
-      .attr('class', 'fabric')
+      .line(points.waistDartRight)
+      .hide()
+
+    paths.seam = paths.seamSA.clone().join(paths.hem).close().unhide().attr('class', 'fabric')
 
     points.grainTop = points.armhole.shift(225, 20)
     points.grainBottom = points.sideWaistInitial.shift(135, 20)
@@ -93,7 +90,23 @@ export const frontOutside = {
     points.scaleboxAnchor.x = points.titleAnchor.x
     macro('miniscale', { at: points.scaleboxAnchor })
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    if (sa) {
+      if (options.hem && !options.peplum) {
+        paths.sa = new Path()
+          .move(points.sideWaistHem)
+          .join(
+            new Path()
+              .move(points.sideWaistHem)
+              .join(paths.seamSA)
+              .line(points.waistDartRightHem)
+              .offset(sa)
+          )
+          .line(points.waistDartRightHem)
+          .attr('class', 'fabric sa')
+      } else {
+        paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      }
+    }
 
     const pLeft = paths.princessSeam.edge('left')
     macro('hd', {

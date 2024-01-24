@@ -45,9 +45,7 @@ export const frontInside = {
 
     if (options.hem && !options.peplum) {
       paths.insideSeam = new Path()
-        .move(lacing ? points.lacingWaist : points.cfWaist)
-        .line(points.cfHem)
-        .line(points.waistDartLeftHem)
+        .move(points.waistDartLeftHem)
         .line(points.waistDartLeft)
         .join(paths.insideSeamTemp)
       paths.hemFold = new Path()
@@ -62,14 +60,14 @@ export const frontInside = {
         .join(paths.insideSeamTemp)
     }
 
-    paths.seam = paths.insideSeam
-      .join(
-        lacing
-          ? new Path().move(points.lacingCut).line(points.lacingWaist)
-          : new Path().move(points.cfCut).line(points.cfWaist)
-      )
-      .close()
-      .attr('class', 'fabric')
+    const lacingPath = lacing
+      ? new Path().move(points.lacingCut).line(points.lacingWaist)
+      : new Path().move(points.cfCut).line(points.cfWaist)
+    if (options.hem && !options.peplum) {
+      lacingPath.line(points.cfHem)
+    }
+
+    paths.seam = paths.insideSeam.clone().join(lacingPath).close().attr('class', 'fabric')
 
     store.set(
       'shoulderDartTipNotch',
@@ -138,13 +136,21 @@ export const frontInside = {
 
     if (sa) {
       if ('front' == options.zipperLocation) {
-        paths.sa = paths.seam
-          .offset(sa)
-          .line(lacing ? points.lacingCut : points.cfCut)
-          .attr('class', 'fabric sa')
+        paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
       } else {
-        paths.sa = paths.insideSeam.offset(sa).line(points.cfCut).attr('class', 'fabric sa')
-        paths.sa = paths.sa.move(points.cfWaist).line(paths.sa.start())
+        if (options.hem && !options.peplum) {
+          paths.sa = new Path()
+            .move(points.waistDartLeftHem)
+            .join(paths.insideSeam.offset(sa))
+            .line(lacing ? points.lacingCut : points.cfCut)
+            .attr('class', 'fabric sa')
+        } else {
+          paths.sa = new Path()
+            .move(lacing ? points.lacingWaist : points.cfWaist)
+            .join(paths.insideSeam.offset(sa))
+            .line(lacing ? points.lacingCut : points.cfCut)
+            .attr('class', 'fabric sa')
+        }
       }
     }
 

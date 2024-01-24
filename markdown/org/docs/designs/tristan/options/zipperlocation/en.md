@@ -1,11 +1,11 @@
 ---
-title: "Lacing location"
+title: "Zipper location"
 ---
 
 ***
 
-The **lacing location** controls where the **lacing** option will be implemented. 
-Options are in the front, or in the back. 
+The **zipper location** controls where the zipper should be inserted. 
+Options are in the front, in the back, or in the side seam. 
 
 
 

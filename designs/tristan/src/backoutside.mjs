@@ -32,14 +32,13 @@ export const backOutside = {
     } else {
       paths.hem = new Path().move(points.dartBottomRight).line(points.waistSide).hide()
     }
-    paths.seam = new Path()
-      .move(points.dartBottomRight)
-      .join(paths.hem)
+    paths.seamSA = new Path()
+      .move(points.waistSide)
       .curve_(points.waistSideCp2, points.armhole)
       .join(paths.cut)
       .join(paths.dart)
-      .close()
-      .attr('class', 'fabric')
+
+    paths.seam = paths.seamSA.clone().join(paths.hem).close().attr('class', 'fabric')
 
     points.grainlineTo = new Point(points.dartBottomRight.x * 1.1, points.dartBottomRight.y * 0.95)
     points.grainlineFrom = new Point(points.grainlineTo.x, points.dartTip.y)
@@ -60,7 +59,22 @@ export const backOutside = {
     })
 
     if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      if (options.hem && !options.peplum) {
+        paths.sa = new Path()
+          .move(points.waistSideHem)
+          .join(
+            new Path()
+              .move(points.waistSideHem)
+              .line(points.waistSide)
+              .join(paths.seamSA)
+              .line(points.dartBottomRightHem)
+              .offset(sa)
+          )
+          .line(points.dartBottomRightHem)
+          .attr('class', 'fabric sa')
+      } else {
+        paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      }
     }
 
     const pLeft = paths.dart.edge('left')

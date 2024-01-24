@@ -30,8 +30,6 @@ export const frontInside = {
     delete points.bustDartMiddle
     delete points.bustDartEdge
 
-    points.shoulderDartTipCpDownInside.addCircle(5)
-
     if (options.dartPosition == 'shoulder') {
       paths.insideSeam = new Path()
         .move(points.cfHem)
