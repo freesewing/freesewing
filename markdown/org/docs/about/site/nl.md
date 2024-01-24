@@ -12,7 +12,7 @@ Op deze pagina's schetsen we een beeld op hoog niveau van hoe je het meeste uit 
 Het kan frustrerend zijn voor bezoekers die hier komen in de verwachting van een website waar ze naaipatronen kunnen downloaden, dat ze de naaipatronen om te downloaden niet lijken te kunnen vinden. Bijna alsof het verbergen van de *downloadknop* een ingewikkeld plan is om hun tijd te verdoen.
 
 Ik weet niet echt hoe ik dit moet oplossen, want ik heb geen controle over de verwachtingen van mensen.
-FreeSewing.org is _heel_ anders dan een website met wat links naar PDF naaipatronen.
+FreeSewing.org is _very_ different from a website with some links to PDF sewing patterns.
 Dus als dat is wat je verwacht, dan moeten we je bijna onttrainen voordat we kunnen praten over wat deze site te bieden heeft.
 
 Dus dat ga ik niet doen. Ik ga ervan uit dat je met een open geest leest.
@@ -51,7 +51,7 @@ Ik wil er een paar uitlichten die je aandacht waard zijn:
 
 ### Gebruikerservaring
 
-Met de instelling [User Experience](/account/control/) kun je geleidelijk meer complexiteit onthullen. Als je een beetje overweldigd bent door alles wat FreeSewing.org te bieden heeft, verberg je door dit op een lagere waarde in te stellen meer functies omwille van de eenvoud. Maar als je hier een hogere waarde instelt, zie je meer mogelijkheden en functionaliteit.
+Met de instelling [User Experience](/account/control/) kun je geleidelijk meer complexiteit onthullen. If you are a little overwhelmed with everything FreeSewing.org has to offer, setting this to a lower value will gradually hide more features for the sake of simplicity. Maar als je hier een hogere waarde instelt, zie je meer mogelijkheden en functionaliteit.
 
 Stel deze instelling lager in als je een eenvoudigere ervaring wilt. Zet hem harder als je meer vermogen wilt, of als sommige dingen waarvan je weet dat ze bestaan niet op je scherm worden getoond.
 
