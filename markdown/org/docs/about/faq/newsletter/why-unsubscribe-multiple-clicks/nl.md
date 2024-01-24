@@ -2,7 +2,7 @@
 title: Waarom moet ik opnieuw klikken om te bevestigen dat ik me wil afmelden voor de nieuwsbrief?
 ---
 
-While we could make it so that clicking the link in your email would immeadiatly unsubcribe you, it would be in violation of internet standards. Specifiek de definitie van het __HTTP__ protocol __GET methode__ waarin staat dat:
+While we could make it so that clicking the link in your email would immediately unsubscribe you, it would be in violation of internet standards. Specifiek de definitie van het __HTTP__ protocol __GET methode__ waarin staat dat:
 
 
 <Note>
