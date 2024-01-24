@@ -2,8 +2,8 @@
 title: "Carlton coat: Designer Notes"
 ---
 
-Carlon is the reverse-engineerd version of the coat worn by benedict
-cumberbatch in [the Sherlock
+Carlon is the reverse-engineered version of the coat worn by Benedict
+Cumberbatch in [the Sherlock
 TV-series](https://en.wikipedia.org/wiki/Sherlock_(TV_series)).
 
 It was painstakingly puzzled together by myself and [my friend Anneke

@@ -54,7 +54,7 @@ relentless advocate for women in STEM and LGBTQ rights.
 
 Despite all prejudice and setbacks due to her gender expression, she managed to grow a large online audience, become a minor celebrity in the 3D-printers community, and at one point single-handedly compelled Chinese companies to take GPL-violations serious. As further testament to her status as a famous maker, she graced the cover of Make magazine in 2018.
 
-As an outspoken Chinese citizen  with a tendency for telling it like it is, and a large international following, Noami drew the heat, and in the summer of 2023 the Chinese government de-facto silenced her. Ever since, her [Twitter](https://twitter.com/realsexycyborg) and [Instagram](https://www.instagram.com/reallysexycyborg/) accounts, and [YouTube channel](
+As an outspoken Chinese citizen  with a tendency for telling it like it is, and a large international following, Naomi drew the heat, and in the summer of 2023 the Chinese government de-facto silenced her. Ever since, her [Twitter](https://twitter.com/realsexycyborg) and [Instagram](https://www.instagram.com/reallysexycyborg/) accounts, and [YouTube channel](
 www.youtube.com/c/SexyCyborg) have fallen silent. Although [her online shop remains available](https://cybernightmarket.com/).
 
 </Note>

@@ -17,7 +17,7 @@ The Sanity content scheme is stored in `sites/sanity/schema` in our monorepo.
 We use two datasets:
 
 - `site-data` holds blog and showcase posts in all languages, as well as
-  newsletter editions. This dataset is publicly avaialble.
+  newsletter editions. This dataset is publicly available.
 - `user-data` holds images uploaded by users, such as for their account image,
   or measurements set image. This dataset is not publicly available.
 
@@ -35,7 +35,7 @@ so if you want to become an editor, you can ask joost to grant you access.
 
 ### Local development
 
-After setting up the monorepo with `yarn kickstart` in the root folder, change your working directoy to `sites/sanity` and run `yarn dev`:
+After setting up the monorepo with `yarn kickstart` in the root folder, change your working directory to `sites/sanity` and run `yarn dev`:
 
 ```sh
 git clone git@github.com:freesewing/freesewing.git

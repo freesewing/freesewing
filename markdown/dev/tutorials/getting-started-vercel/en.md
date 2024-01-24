@@ -49,11 +49,11 @@ Within each repository there can be multiple projects.
 
 _Projects_ are specific build types for the repository.
 For example, one project in your FreeSewing repository could
-be the one that builds the lab.freesewing.dev website.
+be the one that builds the freesewing.org website.
 You would use this project to test new designs or changes
 to existing designs.
-Another project could be the one that builds the freesewing.org
-website, used to test changes to that website.
+Another project could be the one that builds the freesewing.dev
+website, used to test documentation changes on that website.
 
 <Tip compact>
 Free Hobby accounts are limited to 3 Projects per Git repository.
@@ -71,8 +71,8 @@ you make to every branch in your repository.
 The reason why Vercel builds these deployments automatically is so you
 will always have the latest version available to test without
 having to think about it or do any additional work.
-The reason why Vercel builds a deployment for every push and update
-is so you have the ability to easily test different versions, past
+And, because deployments are built for every push and update,
+you have the ability to easily test different versions, past
 and current.
 This ability can help you identify what code change might have introduced
 an issue or change in behavior.
@@ -122,7 +122,7 @@ However, you should instead import your own personal fork of the
 FreeSewing repository.
 
 1. In the dropdown menu, select "Add a GitHub Account".
-2. Select your personal GitHub acccount from the list.
+2. Select your personal GitHub account from the list.
 3. Select the "Only select repositories" radio button.
 4. In "Select repositories" drop-down menu, select your `freesewing`
 repository.
@@ -141,7 +141,6 @@ By default, the default Root Directory will be `sites/dev`.
 The Root Directory setting will determine the build type for the project.
 - `sites/dev` will build a freesewing.dev website
 - `sites/org` will build a freesewing.org website
-- `sites/lab` will build a lab.freesewing.dev website/app
 
 1. Change the name of the project, if you wish.
 Names can consist of alphanumeric lowercase and hyphen characters.
@@ -153,7 +152,7 @@ add `yarn build` as the Build Command override.
 
 Vercel will then create the project and start building the project's first
 deployment based on the current `develop` branch.
-Once the build completes (in about 3-4 minutes or so)
+Once the build completes
 you will see a Congratulations page, with a preview image of the
 website home page.
 
@@ -181,13 +180,16 @@ when you push to GitHub
 when you push to GitHub
 
 If you have multiple projects for the same repository
-(for example, if you have both `sites/lab` and `sites/dev` projects),i
-then multiple deployments will be created everytime you push to GitHub.
+(for example, if you have both `sites/org` and `sites/dev` projects),
+then multiple deployments will be created every time you push to GitHub.
 
 Deployments are automatically created by Vercel.
 However, because free Hobby accounts are limited to 1 concurrent
 build, new deployments might be queued before they start building.
-Once they start, deployments take 3-4 minutes or so to build.
+
+Once they start, deployments take about
+4-5 minutes to build for `/sites/dev` and
+16-18 minutes or so for `sites/org`.
 
 ## The Vercel Dashboard
 
@@ -209,6 +211,8 @@ deployments for that project.
 Click on the __Deployments__ tab to see all of the project's deployments.
 Click on a deployment name to go to its deployment page.
 
+Click on the __Settings__ tab to see the project's settings.
+
 ## Deployment pages
 
 On the default __Deployment__ tab at the top of the deployment page
@@ -224,11 +228,11 @@ commit.
 of that branch.
 
 If you ever want to delete a deployment you can do so on its
-deployment page, under the __...__ three dots menu.
+deployment page, under the "__...__" three dots menu.
 
 ## Usage and Billing
 
-Verce's free Hobby accounts come with
+Vercel's free Hobby accounts come with
 100 GB of bandwidth and 100 hours of build time each month.
 This should be at least 10-15x the amount you will actually use in
 a month, so do not worry about this.
@@ -238,6 +242,16 @@ top of the Dashboard page.
 - A shortcut URL is [https://vercel.com/dashboard/usage][vu]
 - Or, [https://vercel.com/account/billing][vb] will show a summary
 of your usage.
+
+## Disabling automatic deployments
+
+You can disable and enable automatic deployments for a project,
+for example if you wish to temporarily stop them while working on
+a bug that prevents successful builds.
+
+On the Project Settings page, select __Git__ from the menu on the
+left.  Change the __Ignored Build Step__ behavior from "Automatic" to
+"Don't build anything".
 
 [vu]: https://vercel.com/dashboard/usage
 [vb]: https://vercel.com/account/billing

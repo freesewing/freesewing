@@ -13,7 +13,7 @@ Most people will be most interested in [How to generate bespoke sewing patterns]
 It can be frustrating for visitors who come here expecting a website where they can download sewing patterns that they can't seem to find the sewing patterns to download. Almost like hiding the *download button* is some elaborate scheme to waste their time.
 
 I don't really know how to fix this because I cannot control people's expectations.
-FreeSewing.org is _very_ different from the a website with some links to PDF sewing patterns.
+FreeSewing.org is _very_ different from a website with some links to PDF sewing patterns.
 So if that's what you're expecting, we almost have to de-train you before we can talk about what this site offers.
 
 So I'm not going to do that. I'm going to assume you are reading with an open mind.
@@ -55,7 +55,7 @@ I'd like to highlight a couple of them that are worth your attention:
 ### User Experience
 
 The [User Experience setting](/account/control/) allows you to gradually reveal more complexity.
-If you are a little overwhelmed with everything FreeSewing.org has to offer, setting this to a lower value will gardually hide more features for the sake of simplicity. But setting a higher value here will show more features and functionality.
+If you are a little overwhelmed with everything FreeSewing.org has to offer, setting this to a lower value will gradually hide more features for the sake of simplicity. But setting a higher value here will show more features and functionality.
 
 Dial this setting down if you want a simpler experience. Turn it up if you want more power, or some things that you know exists are not shown on your screen.
 

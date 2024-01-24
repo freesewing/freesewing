@@ -71,13 +71,13 @@ stuffing later.
 
 - With _good sides together_ match up the leg parts with the body parts. 
 - Sew each leg from notch B/D down and back around to notch B/D. 
-- If the leg part is slightly shorter than the leg on the head partsm you will have to ease it in while matching it up. Notches have been provided to make this easier.
+- If the leg part is slightly shorter than the leg on the head parts you will have to ease it in while matching it up. Notches have been provided to make this easier.
 
 <Tip>
 
 It is easiest to sew one leg almost to the next B/D notch, stop sewing, pin the next leg, and continue sewing rather than trying to pin and sew all the legs in one go. 
 
-Those who are more confident can do this with the needle down on their machine but if you are less confident you may wish to remove from the machine, pin and then start sewing again a little bit over your originial stitching to secure it.
+Those who are more confident can do this with the needle down on their machine but if you are less confident you may wish to remove from the machine, pin and then start sewing again a little bit over your original stitching to secure it.
   
 </Tip>
 

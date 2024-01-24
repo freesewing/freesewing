@@ -10,7 +10,7 @@ the shape will change considerably due to tensions from the stuffing.
 
 ## Hair
 
-Skully needs hair. Embrodery floss works very well, and can be had in all colors.
+Skully needs hair. Embroidery floss works very well, and can be had in all colors.
 
 ## Stuffing
 

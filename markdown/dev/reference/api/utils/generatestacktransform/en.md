@@ -19,13 +19,13 @@ Array generateStackTransform(
 
 ## Parameters
 
-The first and second paramter set the value of the *translate transform* along the X and Y axis in millimeter.
+The first and second parameters set the value of the *translate transform* along the X and Y axis in millimeter.
 In other words, it moves the stack.
 
 The third parameter sets the *rotate transform* in degrees.
 In other words, it rotates the stack.
 
-The fourth and fifth parameter flip the part along the X or Y axis respectively.
+The fourth and fifth parameters flip the part along the X or Y axis respectively.
 
 <Note compact>
 This is a low-level method to facilitate intervening in the pattern layout late in the draft process.

@@ -53,7 +53,7 @@ The drawstrings will be threaded after the hoodie is constructed.
 - Turn good sides out.
 - Baste the front and bottom raw edges together.
 - Create a casing for the drawstring by stitching about 2.5cm (1 inch) away from the inner edge on the side with the drawstring holes.
-- (Optionaly) If not using a drawstring, _Topstitch_ or _Edgestitch_ the inner curve.
+- (Optionally) If not using a drawstring, _Topstitch_ or _Edgestitch_ the inner curve.
 
 <Note>
 
@@ -87,9 +87,9 @@ A neckband can be useful to stablise and cover the neck seams but it is optional
 - Press the seam allowance up.
 - _Topstitch_ or _Edgestitch_ waistband seam allowance to the body.
 
-### Step 8: Attching the cuffs
+### Step 8: Attaching the cuffs
 
-- With _good sides together_ sew the short egdes of the cuffs together to create two bands.
+- With _good sides together_ sew the short edges of the cuffs together to create two bands.
 - Press open the seam allowances.
 - (Optional) _Edgestitch_ the seam allowances down.
 - Fold the cuffs in half lengthwise matching wrong sides. Press.
@@ -104,7 +104,7 @@ A neckband can be useful to stablise and cover the neck seams but it is optional
 - Unzip the zipper part way.
 - Fold the top of the zipper tape down to the _good side_ of the zipper tape. Trim if need be.
 - Pin the zipper along one of the front edges of the hood, front and waistband. Making sure the zipper pull is faced the _good sides_ of the hoodie and the bottoms are lined up. The zipper teeth should just be slightly over the seam line with the edge of the tape either matching or being slightly over from the hoodie edge.
-- Using a zipper foot stitch the zipper to the hoodie using you seam allownace width. When you reach the zipper pull, stop, put your needle down, lift the presser foot, pull the zipper pull past the presser foot, lower the presser foot. Then you can continue sewing the seam.
+- Using a zipper foot stitch the zipper to the hoodie using you seam allowance width. When you reach the zipper pull, stop, put your needle down, lift the presser foot, pull the zipper pull past the presser foot, lower the presser foot. Then you can continue sewing the seam.
 - Unzip the zipper.
 - Pin and sew the unattached zipper tape to the other side of the hoodie the same way.
 - Press the seams to the inside being careful not to melt the zipper teeth with your iron.
