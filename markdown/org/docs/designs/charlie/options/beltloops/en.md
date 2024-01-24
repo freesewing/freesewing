@@ -2,7 +2,7 @@
 title: "Belt loops"
 ---
 
-Control how many beltloops we'll generate.
+Controls how many beltloops we'll generate.
 
 
 
