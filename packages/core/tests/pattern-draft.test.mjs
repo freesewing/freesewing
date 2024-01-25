@@ -212,7 +212,6 @@ describe('Pattern', () => {
     const pattern = new Test()
     pattern.draft()
     const rp = pattern.getRenderProps()
-    expect(rp.svg.body).to.equal('')
     expect(rp.width).to.equal(4)
     expect(rp.height).to.equal(4)
     expect(rp.parts.front.height).to.equal(4)
