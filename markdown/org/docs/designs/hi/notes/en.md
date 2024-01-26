@@ -12,11 +12,11 @@ It turned out that no one in the community had ever taken a Blåhaj apart, and n
 Blåhaj in my household was my daughter's, and I couldn't touch that one. 
 
 This seemed like a great project to work on, and the lack of a Blåhaj was not an insurmountable obstacle. So one day I 
-made a trip to Ikea, and bought me my own shark. I took the seam ripper to the poor animal, and transfered it's innards
+made a trip to Ikea, and bought me my own shark. I took the seam ripper to the poor animal, and transferred it's innards
 to a sterile bag. The individual pieces were traced, scanned, and used in InkScape to generate a fully functional shark
 pattern. 
 
-It can be saled up and down between 50 cm and 5 meter. So there is a shark for everyone.
+It can be scaled up and down between 50 cm and 5 meter. So there is a shark for everyone.
 
 <Note>
 
