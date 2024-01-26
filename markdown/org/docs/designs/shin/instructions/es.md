@@ -8,13 +8,13 @@ title: "Bañador de espinilla: Instrucciones de costura"
 
 ## Paso 1: Únete a la espalda
 
-Coloque sus dos espaldas encima de la otra con los lados buenos juntos, y coser juntos a lo largo de la costura trasera del centro.
+Put your two backs on top of each other with the good sides together, and sew them together along the center back seam.
 
 ## Paso 2: Únete a los frentes
 
 ### Marcar la costura frontal
 
-Ponga dos de sus frentes en la parte superior con los lados buenos juntos, y coser juntos a lo largo de la costura frontal del centro.
+Put two of your fronts on top of each other with the good sides together, and sew them together along the center front seam.
 
 Repita con los otros dos frentes para que tenga dos conjuntos idénticos.
 
@@ -38,7 +38,7 @@ Keep your swim trunks with the good side inwards (the back at least, the front h
 
 Marca la mitad de la longitud de tu cintura. Fold the waistband double, and mark the middle of the width (do not take the seam allowance into account).
 
-Un poco a la izquierda y a la derecha de esto, puede añadir dos eyelets para pasar una cuerda de dibujo. This will avoid an embarassing situation when you go for that big dive and now suddenly find your swim trunks on your ankles.
+Un poco a la izquierda y a la derecha de esto, puede añadir dos eyelets para pasar una cuerda de dibujo. This will avoid an embarrassing situation when you go for that big dive and now suddenly find your swim trunks on your ankles.
 
 > ### Es mejor añadir refuerzos
 > 
@@ -68,7 +68,7 @@ Find the front of the waistband (easy if there's eyelets, if not just fold it do
 
 Ahora pasea por la cintura de los troncos de natación, fijando la cintura en su lugar.
 
-Then, sew the waistband to the swim trunks, as close to the the elastic as you can, but don't sew into the elastic.
+Then, sew the waistband to the swim trunks, as close to the elastic as you can, but don't sew into the elastic.
 
 It's fine to not sew too close the first time around, and once your elastic is attached and encased, make a second round to sew it a bit more snugly.
 
