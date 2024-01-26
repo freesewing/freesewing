@@ -38,6 +38,6 @@ There are three variations of this pattern. **One Colour**, which is where the b
 
 <Note>
 
-This pattern is easily made reversible by buying a similar fabric to the main fabric and using it as contrast. To save confusion on instructions it will be refered to as the lining fabric.
+This pattern is easily made reversible by buying a similar fabric to the main fabric and using it as contrast. To save confusion on instructions it will be referred to as the lining fabric.
 
 </Note>
