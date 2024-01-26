@@ -88,7 +88,7 @@ Coudre ceci en place le long de la ligne supérieure. Remember this should be sh
 
 #### Coupez l'ouverture de la poche du coffre, tournez et appuyez sur
 
-![Appuyez sur la poitrine](pressChestPocket.svg) Coupez maintenant votre soudure au milieu des deux coutures. Ne coupez pas au bord, mais créez une forme trianngulaire là-bas.
+![Appuyez sur la poitrine](pressChestPocket.svg) Coupez maintenant votre soudure au milieu des deux coutures. Don't cut to the edge, but create a triangular shape there.
 
 Retournez le sac de poche et tendez à l'arrière en passant les deux à travers l'ouverture que vous venez de créer.
 
@@ -108,7 +108,7 @@ Feuilletez une aiguille et finissez la poche de poitrine en cousant les côtés 
 
 Enfin, fermez le sac de poche en couturant les côtés. Faites cela en plaçant le devant vers le bas avec le bon côté vers le haut. Pliez ensuite sur chaque côté et coudez le sac de poche. Lors de la couture de ces côtés, assurez-vous d'attraper ces petits morceaux triangulaires de l'ouverture. Cela renforcera l'ouverture de la poche.
 
-Collez la poche de poitrine fermée pendant que nous fabriquons la veste.
+Baste the chest pocket closed while we construct the jacket.
 
 ### Préparer les devants
 
@@ -163,9 +163,11 @@ Gardez à l'esprit que :
 
 ![Fermer les côtés](closeSides.svg)
 
-Place your front with the good side up, and your side on it with the good side down. Align the front/side seams, pin them in place if you feel like it, and sew them togther.
+Place your front with the good side up, and your side on it with the good side down.  
+Align the front/side seams, pin them in place if you feel like it, and sew them together.
 
-Place this down with the good side up, and place your back on top with the good side down. Align the back/side seams, pin them in place if you feel like it, and sew them togther.
+Place this down with the good side up, and place your back on top with the good side down.  
+Align the back/side seams, pin them in place if you feel like it, and sew them together.
 
 > Assurez-vous que la toile ne soit pas prise dans la couture.
 
@@ -179,7 +181,7 @@ Place this down with the good side up, and place your back on top with the good 
 
 ![Fermer la couture arrière](closeBack.svg)
 
-Avoir vos deux demi-vestes avec les bons côtés ensemble, et fermer la couture arrière.
+Align your two half-jackets with the good sides together, and close the back seam.
 
 <Note>
 
@@ -214,23 +216,23 @@ Assurez-vous donc d'aligner les encoches. « C'est pour cela qu'ils sont là. »
 </Note>
 
 ### Fabrique le collier
-Pour avoir l'air vraiment craquant, le col doit être symétrique des deux côtés. Une différence d'environ 5 mm est déjà visible pour un collier, donc plus tu fais ces étapes avec précision, mieux c'est.
+In order to look real crisp, the collar should be symmetrical on both sides. Une différence d'environ 5 mm est déjà visible pour un collier, donc plus tu fais ces étapes avec précision, mieux c'est.
 
 ### Ajoute des marques aux deux colliers
 Mais les deux cols l'un sur l'autre, bâtis les coins ensemble et coupe le bâtis. Utilise ensuite un crayon de marquage ou un peu de craie pour marquer les bords du collier. Mesure 2 fois pour t'assurer que les cols restants et l'emplacement des coins sont identiques à 100 % sur les deux coins. ![Marque les bords du collier](collarMarkings.svg)
 
 
 #### Ajoute de l'entoilage ou du canevas sur le pied de col extérieur et sous le col.
-Soit tu utilises un entoilage fusible, soit, si tu veux être hardcore, tu utilises une toile de crin. Couds-le au support extérieur du col en utilisant la même technique que pour l'ajout de la toile au revers. ![Ajoute une toile à la collection](collarWithCanvas.svg)
+Either use a fusible interfacing, or, if you want to be hardcore use a horsehair canvas. Stitch it to the outside collar stand using the same technique as when adding canvas to the lapel. ![Add canvas to the collar](collarWithCanvas.svg)
 
 #### Couds le pied de col extérieur au dessous du col, et ajoute-le à la veste.
-Assure-toi que le pied de col extérieur et le sous-col sont bien alignés et couds-les ensemble Couds le pied de col extérieur et le sous-col à l'encolure de la veste Fais de petites coupes dans le tissu autour de l'encolure pour lui donner plus d'aisance Coupe le surplus de couture dans les coins en diagonale pour qu'il soit mieux ajusté
+Make sure the outside collarstand and under collar are aligned and sew together Sew the outside collarstand+undercollar to the neckline of the jacket Give small cuts in the fabric around the neckline to give it more ease Cut the seam allowance in the corners diagonally for a better fit
 
 ![fais de petites entailles dans le SA autour du col](collarCuts.svg)
 
 
 ### Manches
-Couds la manche supérieure à la manche inférieure jusqu'à la séparation.
+Sew the uppersleeve to the undersleeve until the split
 
 #### Crée la fente à l'extrémité de la manche
 
@@ -243,13 +245,13 @@ La poche intérieure est une double poche passepoilée. Ce qui est la même chos
 Tu peux voir les images des poches avant pour plus de détails.
 </note>
 
-Repère la position de la poche sur la doublure intérieure gauche avec du bâti Ajoute de l'entoilage thermocollant autour de la zone Dessine la poche sur l'entoilage. Ajoute les ganses aux côtés supérieur et inférieur de la poche Couds les ganses sur la ligne des deux côtés de la poche. Assure-toi que les soudures se terminent exactement l'une sur l'autre. Coupe l'entrée de la poche à environ 1 ou 2 cm de l'extrémité. Coupe la dernière partie en diagonale pour obtenir une arête de poisson Retourne les ganses, bâtis et repasse Retourne les triangles, bâtis et repasse Couds autour de la poche pour tout mettre en place Prends le sac de poche, couds-le à la ganse inférieure et l'autre partie à la ganse supérieure (voir : poche de poitrine).
+Locate the position of the pocket on the left inner lining with basting Add some fusible interfacing around the area Draw the pocket on the interfacing. Ajoute les ganses aux côtés supérieur et inférieur de la poche Couds les ganses sur la ligne des deux côtés de la poche. Make use the welts end exactly on top of each other. Coupe l'entrée de la poche à environ 1 ou 2 cm de l'extrémité. Cut the last part diagonally so you get a fish bone cut Turn the welts inside out, baste and press Turn the triangles inside out, baste and press Sew around the pocket to put everything in place Take the pocketbag, sew it to the lower welt and the other part to the upper welt (See: chest pocket)
 
 ### Doublure
-Couds la couture arrière de la doublure jusqu'à la fente Couds les coutures des figures dans les parties avant Ajoute toute la doublure ensemble (devant, côté, dos) Ajoute la doublure au parement avant. LE Laisse environ 5 cm ouverts à partir du bas Ferme les épaules Ajoute le pied de col intérieur au col supérieur et ajoute-le à la doublure de la veste Fais de petites coupes dans l'encolure et les coins Ajoute les manches supérieures aux manches inférieures Ajoute les manches à la doublure de la veste
+Sew the lining back seam until the split Sew the figure seams in the front parts Add the whole lining together (front, side, back) Add the from lining to the front facing. Leave about 5cm open from the bottom Close the shoulders Add the inside collar stand to the uppercollar and add to the lining jacket Make small cuts in the neckline and the corners Add upper to lower sleeves Add sleeves to lining jacket
 
 ### Ferme-le
-Mais les vestes + doublures se superposent avec les bons côtés. Couds autour du col et continue jusqu'à la face avant Retourne la veste sur l'endroit Plie les manches en place (assure-toi qu'elles ne sont pas retournées ! !!). Ajoute la doublure des manches à la fente des manches . Assure-toi que les cols sont bien droits l'un sur l'autre (ils s'alignent) et ajoute les marges de couture l'une à l'autre à la main. Ajoute à quelques endroits le SA du devant au SA de la doublure à la main depuis l'intérieur de la veste Crée la fente arrière et ajoute manuellement la doublure au tissu principal Ajoute les boutonnières et les boutons.
+Mais les vestes + doublures se superposent avec les bons côtés. Couds autour du col et continue jusqu'à la face avant Retourne la veste sur l'endroit Plie les manches en place (assure-toi qu'elles ne sont pas retournées ! !!). Add the sleeves lining to the sleeves split Make sure the collars are straight on top of each other (they align) and add the seam allowances to each other by hand. Ajoute à quelques endroits le SA du devant au SA de la doublure à la main depuis l'intérieur de la veste Crée la fente arrière et ajoute manuellement la doublure au tissu principal Ajoute les boutonnières et les boutons.
 
 
 
