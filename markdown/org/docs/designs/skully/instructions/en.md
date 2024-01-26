@@ -91,13 +91,13 @@ Turn it right sides out.
 
 ## Step 5: Hair
 
-Now is the time to add hair to skully. When putting the embroidery floss in, make sure you add knots on the inside, or else it is very easy to pull Skully's hair out later. 
+Now is the time to add hair to Skully. When putting the embroidery floss in, make sure you add knots on the inside, or else it is very easy to pull Skully's hair out later. 
 
 ## Step 6: Stuffing
 
 - Fill the plush toy with stuffing through the opening you left, making sure to fill all the parts 
 well. The areas in the front are the hardest to get to.
-- _Slipsticth_ or _whipstitch_ the opening closed.
+- _Slipstitch_ or _whipstitch_ the opening closed.
 
 ## Step 7: Tweaks
 
