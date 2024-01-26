@@ -2,7 +2,7 @@
 title: "Elevación de la cintura"
 ---
 
-Esta opción controla la altura general de la cintura.
+This option controls the overall height of the waist.
 
 > Cuanto mayor sea el ascenso, mayor será la cintura.
 
