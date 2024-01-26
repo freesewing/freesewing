@@ -88,7 +88,7 @@ Nähen Sie dies an Stelle entlang der oberen Linie. Remember this should be shor
 
 #### Öffnen, drehen und drücken der Brust ausschneiden
 
-![Drücke die Brusttasche](pressChestPocket.svg) Nun schneiden Sie Ihre Welt in der Mitte der beiden Nahtlinien. Schneiden Sie nicht an die Kante, sondern erstellen Sie dort eine dreimalige Form.
+![Drücke die Brusttasche](pressChestPocket.svg) Nun schneiden Sie Ihre Welt in der Mitte der beiden Nahtlinien. Don't cut to the edge, but create a triangular shape there.
 
 Drehen Sie die Tasche und die Welt auf die Rückseite, indem Sie beide durch die gerade erstellte Öffnung passieren.
 
@@ -108,7 +108,7 @@ Gewinde eine Nadel und beende die Brusttasche in der Hand, indem du die Seiten d
 
 Schließen Sie schließlich die Tasche durch Nähen der Seiten. Tun Sie dies, indem Sie die Vorderseite mit der guten Seite nach oben. Dann falten Sie über jede Seite und nähen Sie die Tasche. Beim Nähen dieser Seiten, achten Sie darauf, diese dreieckigen kleinen Stücke der Öffnung zu fangen. Dies stärkt die Taschenöffnung.
 
-Füllen Sie die Brusttasche geschlossen, während wir die Jacke konturieren.
+Baste the chest pocket closed while we construct the jacket.
 
 ### Die Fronten vorbereiten
 
@@ -163,9 +163,11 @@ Denken Sie daran, dass:
 
 ![Seiten schließen](closeSides.svg)
 
-Place your front with the good side up, and your side on it with the good side down. Align the front/side seams, pin them in place if you feel like it, and sew them togther.
+Place your front with the good side up, and your side on it with the good side down.  
+Align the front/side seams, pin them in place if you feel like it, and sew them together.
 
-Place this down with the good side up, and place your back on top with the good side down. Align the back/side seams, pin them in place if you feel like it, and sew them togther.
+Place this down with the good side up, and place your back on top with the good side down.  
+Align the back/side seams, pin them in place if you feel like it, and sew them together.
 
 > Vergewissern Sie sich, dass die Leinwand nicht in der Naht gefangen wird.
 
@@ -179,7 +181,7 @@ Place this down with the good side up, and place your back on top with the good 
 
 ![Rückennaht schließen](closeBack.svg)
 
-Ihre beiden Halbjacken zusammen mit den guten Seiten und schließen Sie die Rückennaht.
+Align your two half-jackets with the good sides together, and close the back seam.
 
 <Note>
 
@@ -214,23 +216,23 @@ Also achten Sie darauf, die Nocken auszurichten. Das ist es, wofür sie da sind.
 </Note>
 
 ### Mach den Kragen
-Damit der Kragen richtig knackig aussieht, sollte er auf beiden Seiten symmetrisch sein. Etwa 5 mm Unterschied sind bereits an einem Halsband sichtbar. Je präziser du diese Schritte also ausführst, desto besser.
+In order to look real crisp, the collar should be symmetrical on both sides. Etwa 5 mm Unterschied sind bereits an einem Halsband sichtbar. Je präziser du diese Schritte also ausführst, desto besser.
 
 ### Markierungen an beiden Halsbändern anbringen
 Lege beide Kragen übereinander, hefte die Ecken zusammen und schneide die Heftung ab. Benutze dann einen Markierungsstift oder Kreide, um die Kanten des Kragens zu markieren. Miss 2 Mal nach, um sicherzustellen, dass die verbleibenden Kragen und die Position der Ecken an beiden Ecken 100% identisch sind. ![Markiere die Kragenkanten](collarMarkings.svg)
 
 
 #### Füge Vlieseline oder Canvas an der Außenseite des Kragens und unter dem Kragen hinzu.
-Verwende entweder eine aufbügelbare Einlage oder, wenn du es ganz genau nehmen willst, eine Rosshaarleinwand. Nähen Sie es mit der gleichen Technik wie beim Hinzufügen von Leinen zum Revers an den äußeren Kragenständer. ![Leinwand zum Collor hinzufügen](collarWithCanvas.svg)
+Either use a fusible interfacing, or, if you want to be hardcore use a horsehair canvas. Stitch it to the outside collar stand using the same technique as when adding canvas to the lapel. ![Add canvas to the collar](collarWithCanvas.svg)
 
 #### Nähen Sie den äußeren Kragenspiegel an den Unterkragen und fügen Sie ihn der Jacke hinzu.
-Vergewissere dich, dass der äußere Kragenspiegel und der Unterkragen alligend sind und nähe sie zusammen Nähe den äußeren Kragenspiegel+Unterkragen an den Halsausschnitt der Jacke Schneide den Stoff rund um den Halsausschnitt leicht ein, um ihn zu lockern Schneide die Nahtzugabe in den Ecken diagonal ein, um eine bessere Passform zu erzielen
+Make sure the outside collarstand and under collar are aligned and sew together Sew the outside collarstand+undercollar to the neckline of the jacket Give small cuts in the fabric around the neckline to give it more ease Cut the seam allowance in the corners diagonally for a better fit
 
 ![kleine Schnitte in SA um den Kragen herum machen](collarCuts.svg)
 
 
 ### Ärmel
-Nähen Sie den Oberärmel an den Unterärmel, bis der Spalt
+Sew the uppersleeve to the undersleeve until the split
 
 #### Erstelle den Spalt am Ende des Ärmels
 
@@ -243,13 +245,13 @@ Die Innentasche ist eine doppelte Leistentasche. Das ist dasselbe wie bei den Vo
 Bitte sieh dir die Bilder an den Vordertaschen für Details an
 </note>
 
-Lege die Position der Tasche auf dem linken Innenfutter mit Heftzwecken fest Füge etwas Vlieseline um den Bereich herum hinzu und zeichne die Tasche auf die Vlieseline. Füge die Säume an der oberen und unteren Seite der Tasche hinzu Nähe die Säume an der Linie auf beiden Seiten der Tasche. Achte darauf, dass die Nähte genau übereinander liegen. Schneide den Tascheneingang etwa 1 bis 2 cm vor dem Ende ab. Schneide den letzten Teil diagonal ein, so dass du einen Fischgrätenschnitt erhältst Wende die Einfassungen um, hefte sie und bügle sie Wende die Dreiecke um, hefte sie und bügle sie Näh um die Tasche herum, um alles an Ort und Stelle zu bringen Nimm den Taschenbeutel, näh ihn an die untere Einfassung und den anderen Teil an die obere Einfassung (siehe: Brusttasche)
+Locate the position of the pocket on the left inner lining with basting Add some fusible interfacing around the area Draw the pocket on the interfacing. Füge die Säume an der oberen und unteren Seite der Tasche hinzu Nähe die Säume an der Linie auf beiden Seiten der Tasche. Make use the welts end exactly on top of each other. Schneide den Tascheneingang etwa 1 bis 2 cm vor dem Ende ab. Cut the last part diagonally so you get a fish bone cut Turn the welts inside out, baste and press Turn the triangles inside out, baste and press Sew around the pocket to put everything in place Take the pocketbag, sew it to the lower welt and the other part to the upper welt (See: chest pocket)
 
 ### Lining
-Nähen Sie die Rückennaht des Futters bis zur Teilung Nähen Sie die Figurennähte in den Vorderteilen Fügen Sie das gesamte Futter zusammen (Vorder-, Seiten- und Rückenteil) Fügen Sie das vom Futter zum Vorderteil. Lasse ca. 5 cm von unten offen Schließe die Schultern Füge den inneren Kragenständer zum Oberkragen hinzu und füge ihn zur Futterjacke hinzu Mache kleine Schnitte am Halsausschnitt und an den Ecken Füge die oberen und unteren Ärmel hinzu Füge die Ärmel zur Futterjacke hinzu
+Sew the lining back seam until the split Sew the figure seams in the front parts Add the whole lining together (front, side, back) Add the from lining to the front facing. Leave about 5cm open from the bottom Close the shoulders Add the inside collar stand to the uppercollar and add to the lining jacket Make small cuts in the neckline and the corners Add upper to lower sleeves Add sleeves to lining jacket
 
 ### Schließen Sie es
-Aber die Jacke + Futterjacken liegen mit den guten Seiten übereinander. Nähen Sie um den Kragen herum und weiter bis zum vorderen Besatz Drehen Sie die Jacke auf die rechte Seite Falten Sie die Ärmel an ihren Platz (achten Sie darauf, dass sie nicht gedreht werden!!) Füge das Ärmelfutter an den geteilten Ärmeln hinzu Achte darauf, dass die Kragen gerade übereinander liegen (sie fluchten) und füge die Nahtzugaben von Hand aneinander. Füge an einigen Stellen von Hand von der Innenseite der Jacke den vorderen SA zum Futter SA hinzu Erstelle den Rückenteil und füge das Futter manuell zum Hauptstoff hinzu Füge Knopflöcher und Knöpfe hinzu
+Aber die Jacke + Futterjacken liegen mit den guten Seiten übereinander. Nähen Sie um den Kragen herum und weiter bis zum vorderen Besatz Drehen Sie die Jacke auf die rechte Seite Falten Sie die Ärmel an ihren Platz (achten Sie darauf, dass sie nicht gedreht werden!!) Add the sleeves lining to the sleeves split Make sure the collars are straight on top of each other (they align) and add the seam allowances to each other by hand. Füge an einigen Stellen von Hand von der Innenseite der Jacke den vorderen SA zum Futter SA hinzu Erstelle den Rückenteil und füge das Futter manuell zum Hauptstoff hinzu Füge Knopflöcher und Knöpfe hinzu
 
 
 
