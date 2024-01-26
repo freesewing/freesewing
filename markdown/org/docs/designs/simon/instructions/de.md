@@ -629,7 +629,7 @@ Jetzt da der Kragen angehängt ist, geben Sie ihm eine gute Presse.
 
 ### Schritt 20: Hem dein Hemd
 
-![Falten und drücken](20a.png) ![Wiederholen und erneut drücken](20b.png) ![Nähen Sie den Saum](20c.png)
+![Falten und drücken](20a.png) ![Fold over again, and press again](20b.png) ![Nähen Sie den Saum](20c.png)
 
 Zeit, den Saum zu beenden (das ist das Teil, das du in deiner Hose steckst).
 
