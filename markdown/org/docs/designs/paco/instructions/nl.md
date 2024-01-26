@@ -205,7 +205,7 @@ niet de binnenkant van je tailleband.
 
 Leg vervolgens de middenruggen en speld samen en voeg extra pinnen om de tailleband toe indien nodig.
 
-Stik de tailleband aan de spelers, zo dicht mogelijk bij het elastiek, maar stik niet in het elastiek.
+Sew the waistband to the pants, as close to the elastic as you can, but don’t sew into the elastic.
 
 ![Besteed tailleband met eenvoudige methode](step13.svg)
 
@@ -288,7 +288,7 @@ er genoeg zijn.
 
 </Tip>
 
-Stik de manchet aan de broek opening, zo dicht mogelijk bij het elastiek, maar stik niet in het elastiek.
+Sew the cuff to the pants opening, as close to the elastic as you can, but don’t sew into the elastic.
 
 ![Snaai manchetten met eenvoudige methode](step16.svg)
 
