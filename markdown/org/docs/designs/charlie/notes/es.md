@@ -8,7 +8,7 @@ Tardé un tiempo porque [Titan](/designs/titan) tardó mucho tiempo en estar en 
 
 This is for the most part a rather straight-forward chino pattern, but it has one twist: The front packets are placed on the side seam. That side seam wraps around towards the front to give the slanted pocket look.
 
-It's a bit of unusual and creative design that I guess I did because I can? Anyway, it's something to be mind ful of because if you do not expect it the front panels look a bit weird. Anyway, it's something to be mind ful of because if you do not expect it the front panels look a bit weird.
+It's a bit of unusual and creative design that I guess I did because I can? Anyway, it's something to be mind ful of because if you do not expect it the front panels look a bit weird. Anyway, it's something to be mindful of because if you do not expect it the front panels look a bit weird.
 
 joost
 
