@@ -3,7 +3,7 @@ title: "Uma undies: Cutting Instructions"
 ---
 
 Uma typically consists of a front, a back, and a lined gusset.
-In that constallation, this is the cut list:
+In that constellation, this is the cut list:
 
 - **Main fabric**
   - Part 1: Cut **1 front**
