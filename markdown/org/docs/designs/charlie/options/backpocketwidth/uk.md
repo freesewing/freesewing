@@ -2,7 +2,7 @@
 title: "Ширина задньої кишені"
 ---
 
-Регулює ширину задніх кишень.
+Controls the width of the back pockets.
 
 
 
