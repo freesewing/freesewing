@@ -25,7 +25,7 @@ Make sure to sew close to the edge so that the stitches will be under the bias t
 
 ## Крок 2: Наклейте скотч
 
-Ми наклеїмо бейку в якості оздоблення по всьому краю нагрудника.
+We're going to apply bias tape as a finish around the entire edge of the bib.
 
 You probably want to start at the bottom strap, as this way the joint of the bias seam will be covered when the bib is worn.
 
