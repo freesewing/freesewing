@@ -51,7 +51,7 @@ macro('cutonfold', {
 | `from`      |         | [Point](/reference/api/point) | The startpoint of the _cut on fold_ indicator |
 | `id`        | `cutonfold` | `string` | The ID of this macro instance |
 | `to`        |         | [Point](/reference/api/point) | The endpoint of the _cut on fold_ indicator |
-| `margin`    | 5       | [Point](/reference/api/point) | The distance in % to keep from the start/end edge |
+| `margin`    | 5       | Number              | The distance in % to keep from the start/end edge |
 | `offset`    | 15      | Number              | The distance in mm to offset from the line from start to end |
 | `prefix`    | 'cutonfold' | String              | A prefix to apply to the names of the generated path and points |
 | `grainline` | `false` | Boolean             | Whether this cutonfold indicator is also the grainline |
