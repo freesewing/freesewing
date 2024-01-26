@@ -2,7 +2,7 @@
 title: "Stretch"
 ---
 
-The amount of overal (horizontal) stretch.
+The amount of overall (horizontal) stretch.
 
 
 
