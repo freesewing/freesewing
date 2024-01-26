@@ -88,7 +88,7 @@ Stik vast langs de bovenste lijn. Remember this should be shorter than the botto
 
 #### Knip de zakopening, keer en strijk
 
-![Strijk de borstzak](pressChestPocket.svg) Knip nu je zakopening open tussen de twee stiklijnen. Knip niet tot aan de rand, maar in een hoek van 45° zodat je aan het uiteinde kleine driehoekjes krijgt.
+![Strijk de borstzak](pressChestPocket.svg) Knip nu je zakopening open tussen de twee stiklijnen. Don't cut to the edge, but create a triangular shape there.
 
 Keer het zakdeel en de paspel naar de achterkant door ze door het gat te halen dat je net gemaakt hebt.
 
@@ -108,7 +108,7 @@ Neem naald en draad en werk de borstzak met de hand af door de zijkanten van de 
 
 Als laatste sluit je de binnenzak door de zijkanten dicht te stikken. Doe die door het voorpand neer te leggen met de goede kant naar boven. Vouw dan de zijkant naar boven en stik het zakdeel aan de twee kanten. Let op dat je die kleine driehoekjes aan de zakopening mee vastnaait. Dit verstevigt de zakopening.
 
-Drieg de bortzak dicht terwijl je de rest van het jasje maakt.
+Baste the chest pocket closed while we construct the jacket.
 
 ### Bereid de voorpanden voor
 
@@ -163,11 +163,11 @@ Onthoud:
 
 ![Sluit de zijnaden](closeSides.svg)
 
-Leg je voorpanden neer met de goede kant omhoog, en je zijpanden erop met de goede kant omlaag.  
-Leg de voor- en zijnaden gelijk, speld ze eventueel samen en stik.
+Place your front with the good side up, and your side on it with the good side down.  
+Align the front/side seams, pin them in place if you feel like it, and sew them together.
 
-Leg dit neer met de goede kant omhoog, en leg je rugpand hierop met de goede kant naar beneden.  
-Leg de rug- en zijnaden gelijk, speld ze eventueel samen en stik.
+Place this down with the good side up, and place your back on top with the good side down.  
+Align the back/side seams, pin them in place if you feel like it, and sew them together.
 
 > Let op dat het haardoek niet mee vastgestikt wordt.
 
@@ -181,7 +181,7 @@ Leg de rug- en zijnaden gelijk, speld ze eventueel samen en stik.
 
 ![Sluit de achternaad](closeBack.svg)
 
-Leg de twee halve jasjes met de goede kanten op elkaar en stik de middenachternaad dicht.
+Align your two half-jackets with the good sides together, and close the back seam.
 
 <Note>
 
@@ -216,23 +216,23 @@ Dus zorg dat je op de merktekens afgaat. Daar dienen ze voor.
 </Note>
 
 ### De kraag maken
-Om er echt strak uit te zien, moet de kraag aan beide kanten symmetrisch zijn. Ongeveer 5 mm verschil is al zichtbaar aan een kraag, dus hoe nauwkeuriger je deze stappen uitvoert, hoe beter.
+In order to look real crisp, the collar should be symmetrical on both sides. Ongeveer 5 mm verschil is al zichtbaar aan een kraag, dus hoe nauwkeuriger je deze stappen uitvoert, hoe beter.
 
 ### Markeringen toevoegen aan beide halsbanden
 Maar beide kragen op elkaar, rijg de hoeken aan elkaar en knip de rijg af. Gebruik dan een markeerpotlood of een krijtje om de randen van de kraag te markeren. Meet 2 keer om er zeker van te zijn dat de resterende kragen en de locatie van de hoeken 100% identiek zijn op beide hoeken. ![Markeer de randen van de kraag](collarMarkings.svg)
 
 
 #### Voeg versteviging of canvas toe aan de buitenkraag en onderkraag.
-Gebruik een opvulbare vlieseline of, als je hardcore wilt zijn, een canvas van paardenhaar. Naai het aan de buitenkant van de kraag met dezelfde techniek als bij het toevoegen van canvas aan de revers. ![Voeg canvas toe aan de collor](collarWithCanvas.svg)
+Either use a fusible interfacing, or, if you want to be hardcore use a horsehair canvas. Stitch it to the outside collar stand using the same technique as when adding canvas to the lapel. ![Add canvas to the collar](collarWithCanvas.svg)
 
 #### Naai de buitenkraag aan de onderkraag en voeg toe aan het jasje.
-Zorg ervoor dat de buitenkraag en onderkraag alligend zijn en naai ze aan elkaar Naai de buitenkraag+onderkraag aan de halslijn van het jasje Maak kleine knipjes in de stof rond de halslijn om het meer gemak te geven Knip de naadtoeslag in de hoeken diagonaal in voor een betere pasvorm
+Make sure the outside collarstand and under collar are aligned and sew together Sew the outside collarstand+undercollar to the neckline of the jacket Give small cuts in the fabric around the neckline to give it more ease Cut the seam allowance in the corners diagonally for a better fit
 
 ![maak kleine sneden in SA rond de kraag](collarCuts.svg)
 
 
 ### Mouwen
-Naai de bovenmouw aan de ondermouw tot de scheiding
+Sew the uppersleeve to the undersleeve until the split
 
 #### Maak de split aan de binnenkant van de mouw
 
@@ -245,13 +245,13 @@ De binnenzak is een dubbele paspelzak. Dat is hetzelfde als de zakken aan de voo
 Zie de afbeeldingen bij de zakken aan de voorkant voor details
 </note>
 
-Bepaal de plaats van de zak op de linkerbinnenvoering met rijgsteek Voeg wat plakvlieseline toe rond het gebied Teken de zak op de versteviging. Voeg de boordsels toe aan de boven- en onderkant van de zak Naai de boordsels op de lijn aan beide kanten van de zak. Zorg ervoor dat de lusjes precies op elkaar eindigen. Snijd de ingang van de zak tot ongeveer 1 of 2 cm van het uiteinde. Snijd het laatste deel diagonaal in zodat je een visgraatsnede krijgt Keer de boordsels binnenstebuiten, rijg vast en pers Keer de driehoeken binnenstebuiten, rijg vast en pers Naai rond de zak om alles op zijn plaats te zetten Neem de zak, naai die aan de onderste boordsel en het andere deel aan de bovenste boordsel (Zie: borstzak).
+Locate the position of the pocket on the left inner lining with basting Add some fusible interfacing around the area Draw the pocket on the interfacing. Voeg de boordsels toe aan de boven- en onderkant van de zak Naai de boordsels op de lijn aan beide kanten van de zak. Make use the welts end exactly on top of each other. Snijd de ingang van de zak tot ongeveer 1 of 2 cm van het uiteinde. Cut the last part diagonally so you get a fish bone cut Turn the welts inside out, baste and press Turn the triangles inside out, baste and press Sew around the pocket to put everything in place Take the pocketbag, sew it to the lower welt and the other part to the upper welt (See: chest pocket)
 
 ### Voering
-Naai de achternaad van de voering tot de split Naai de figuurnaden in de voorpanden Voeg de hele voering samen (voorpand, zijkant, achterpand) Voeg de voering toe aan het voorpand. Laat ongeveer 5 cm open vanaf de onderkant Sluit de schouders Voeg de binnenkraag toe aan de bovenkraag en voeg toe aan het voeringvest Maak kleine insnijdingen in de halslijn en de hoeken Voeg de bovenste en onderste mouwen toe Voeg de mouwen toe aan het voeringvest
+Sew the lining back seam until the split Sew the figure seams in the front parts Add the whole lining together (front, side, back) Add the from lining to the front facing. Leave about 5cm open from the bottom Close the shoulders Add the inside collar stand to the uppercollar and add to the lining jacket Make small cuts in the neckline and the corners Add upper to lower sleeves Add sleeves to lining jacket
 
 ### Sluit het
-Maar de jas + voeringjassen op elkaar met de goede kanten. Naai rond de kraag en ga door tot aan het voorpand Keer het jasje met de goede kant naar buiten Vouw de mouwen vast (zorg ervoor dat ze niet gedraaid zijn!!). Voeg de mouwvoering toe aan de mouwsplit Zorg dat de kragen recht op elkaar liggen (ze sluiten op elkaar aan) en voeg de naadtoeslagen met de hand aan elkaar toe. Voeg op een paar plaatsen voor SA aan voering SA met de hand toe vanaf de binnenkant van het jasje Maak de split aan de achterkant en voeg de voering handmatig toe aan de hoofdstof Voeg knoopsgaten en knopen toe.
+Maar de jas + voeringjassen op elkaar met de goede kanten. Naai rond de kraag en ga door tot aan het voorpand Keer het jasje met de goede kant naar buiten Vouw de mouwen vast (zorg ervoor dat ze niet gedraaid zijn!!). Add the sleeves lining to the sleeves split Make sure the collars are straight on top of each other (they align) and add the seam allowances to each other by hand. Voeg op een paar plaatsen voor SA aan voering SA met de hand toe vanaf de binnenkant van het jasje Maak de split aan de achterkant en voeg de voering handmatig toe aan de hoofdstof Voeg knoopsgaten en knopen toe.
 
 
 
