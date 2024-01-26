@@ -91,12 +91,12 @@ Turn it right sides out.
 
 ## Étape 5 : Les cheveux
 
-C'est le moment d'ajouter des cheveux au skully. Lorsque tu mets le fil à broder, assure-toi d'ajouter des nœuds à l'intérieur, sinon il sera très facile d'arracher les cheveux de Skully plus tard.
+Now is the time to add hair to Skully. Lorsque tu mets le fil à broder, assure-toi d'ajouter des nœuds à l'intérieur, sinon il sera très facile d'arracher les cheveux de Skully plus tard.
 
 ## Étape 6 : Farcir
 
 - Remplis le jouet en peluche de bourre par l'ouverture que tu as laissée, en veillant à bien remplir toutes les parties . Les zones situées à l'avant sont les plus difficiles à atteindre.
-- _Slipsticth_ ou _whipstitch_ l'ouverture est fermée.
+- _Slipstitch_ or _whipstitch_ the opening closed.
 
 ## Étape 7 : Ajustements
 
