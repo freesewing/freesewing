@@ -158,7 +158,7 @@ Prenez votre temps, et soyez **très attentif** à l'endroit où votre surjeteus
 
 ![Faites l'ourlet de la première jambe](step11.png)
 
-Il est temps de faire les ourlets. Procédez comme vous le feriez pour n'importe quel autre tissu extensible. Utilisez un point extensible. Vous pouvez utiliser un point zig-zag ou une double aiguille si vous n'avez pas de point overlock ou de règlage spécial point extensible.
+Il est temps de faire les ourlets. Procédez comme vous le feriez pour n'importe quel autre tissu extensible. Utilisez un point extensible. Vous pouvez utiliser un point zig-zag ou une aiguille double si vous n'avez pas de point overlock ou de réglage spécial point extensible.
 
 <Note>
 
@@ -201,7 +201,7 @@ Si vous utilisez un point overlock, placez l'élastique sur l'endroit, en haut d
 
 <Tip>
 
-La longueur de votre élastique sera plus courte que celle de la taille du boxer, l'élastique devra donc être étiré.
+The length of your elastic will probably differ from the fabric length, as they stretch differently.
 Epingler vous aidera à bien répartir l'étirement.
 
 Divisez votre élastique et la taille de votre boxer en 4 (ou 8) parties. Pin élastique et tissu ensemble à ces points.
