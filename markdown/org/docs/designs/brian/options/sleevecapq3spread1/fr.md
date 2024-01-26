@@ -4,7 +4,7 @@ title: "Tête de manche élévation Q3"
 
 ***
 
-![La propagation vers le haut dans le quadrant de la tête de manche](./sleevecapq3spread1.svg)
+![The upward spread in the third quadrant of the sleevecap](./sleevecapq3spread1.svg)
 
 Cette option permet de contrôler la propagation vers le haut dans le troisième quadrant de la tête de manche.
 
