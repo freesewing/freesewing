@@ -205,7 +205,7 @@ nicht die Innenseite Ihrer Taille.
 
 Als nächstes richten Sie die Mittenstützen und den Pin in der Mitte nach Bedarf mit zusätzlichen Pins um die Taille aus.
 
-Nähen Sie die Taille an die Hose, so nah wie möglich an der Elastik, aber nicht in die Elastik.
+Sew the waistband to the pants, as close to the elastic as you can, but don’t sew into the elastic.
 
 ![Bund genäht mit einfacher Methode](step13.svg)
 
@@ -288,7 +288,7 @@ genug ist.
 
 </Tip>
 
-Nähen Sie die Manschette auf die Hose Öffnung, so nah wie möglich an der elastischen wie möglich, aber nicht in die Elastik.
+Sew the cuff to the pants opening, as close to the elastic as you can, but don’t sew into the elastic.
 
 ![Schnitte genäht mit einfacher Methode](step16.svg)
 
