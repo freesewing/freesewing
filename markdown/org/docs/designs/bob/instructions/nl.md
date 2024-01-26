@@ -25,7 +25,7 @@ Make sure to sew close to the edge so that the stitches will be under the bias t
 
 ## Stap 2: Biaisband aanbrengen
 
-We gaan biaisband aanbrengen als afwerking rond de hele rand van de slab.
+We're going to apply bias tape as a finish around the entire edge of the bib.
 
 You probably want to start at the bottom strap, as this way the joint of the bias seam will be covered when the bib is worn.
 
