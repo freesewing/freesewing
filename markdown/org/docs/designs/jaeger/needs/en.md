@@ -19,7 +19,7 @@ To make Jaeger, you will need the following:
 
 ###### Where to get all this stuff
 
-Making Jaeger is a fun and rewarning project, but getting all the required bits
+Making Jaeger is a fun and rewarding project, but getting all the required bits
 and pieces can be challenging.
 
 That is because this kind of project is somewhat more ambitious than the
