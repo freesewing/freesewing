@@ -98,14 +98,17 @@ PatternConfig.prototype.addPart = function (part) {
 
 /** Log the final report on part inheritance order */
 PatternConfig.prototype.logPartDistances = function () {
-  const priorities = []
-  for (const partName in this.parts) {
+  const priorities = {}
+  for (const partName of Object.keys(this.parts)) {
     const p = this.__mutated.partDistance[partName]
-    if (p in priorities) priorities[p] += ', ' + partName
-    else priorities[p] = partName
+    if (typeof priorities[p] === 'undefined') priorities[p] = new Set()
+    priorities[p].add(partName)
   }
-  for (let p = 1; p < priorities.length; p++)
-    this.store.log.debug(`⚪️  Options priority __${p}__ :\`${priorities[p]}\``)
+  for (const p of Object.keys(priorities))
+    this.store.log.debug(
+      `⚪️  Options priority __${p}__ : ` +
+        `${[...priorities[p]].map((p) => '`' + p + '`').join(', ')}`
+    )
 }
 
 /**
