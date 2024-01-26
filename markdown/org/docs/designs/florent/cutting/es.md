@@ -2,7 +2,7 @@
 title: "Gorra plana Florent: Instrucciones de corte"
 ---
 
-Para hacer a Floren, recorta las siguientes partes:
+To make Florent, cut out the following parts:
 
 - **Tela principal**
   - Corta **1 parte superior** en el pliegue, pero no incluya la asignación de costura central, o **2 top** con la asignación de costura central.
