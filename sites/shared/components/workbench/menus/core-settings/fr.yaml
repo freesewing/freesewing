@@ -31,6 +31,8 @@ fr.t: Français
 fr.d: Utilise ceci pour générer un modèle français
 nl.t: Néerlandais
 nl.d: Utilise ceci pour générer un modèle hollandais
+uk.t: Ukrainian
+uk.d: Use this to generate a Ukrainian pattern
 yes: Yes
 no: No
 completeYes.t: Génère un modèle complet
