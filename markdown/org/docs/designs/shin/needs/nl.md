@@ -12,4 +12,4 @@ Om Shin te maken heb je het volgende nodig:
 > 
 > Zoals met alle gebreide en elastische stoffen maakt een overlock het leven eenvoudiger.
 > 
-> Als je geen overlock hebt, geen zorg. Je hebt het niet echt nodig. Je kan een andere techniek gebruiken voor het naaien van elastische naden, zoals een zigzagsteek, tweelingnaald of elastisch garen.
+> Als je geen overlock hebt, geen zorg. Je hebt het niet echt nodig. You can use another technique for stretch seams, such as a zig-zag stitch, twin needle, or elastic thread.
