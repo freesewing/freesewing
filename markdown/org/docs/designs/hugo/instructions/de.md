@@ -113,5 +113,5 @@ Diese Reihe an 6 Episoden zeigt dir, wie du deinen Hoodie von Anfang bis Ende n�
 - Serge (oder Zickzacksticht) das Band zur Manschette und dehnt sich sanft bis das Band und die Manschette gleich lang sind.  Pins entfernen, bevor sie den Server betreten.
 - Schneiden Sie die Unterkante der Tasche ab, wenn sie an der Taillenkante vorbeigeht.
 - Vergewissern Sie sich, dass das Band so einheitlich wie möglich um die Taille herum gesammelt wird.
-- Serge oder Zick-Zack die Taille, wieder sanft bis zum Band und Taillenband strecken sind die gleiche Länge.  Nähen Sie mit der Hoodie oben, damit Sie sehen können, dass sie in der Naht gefangen wird.
+- Serge or zig-zag the waistband, again gently stretching until the ribbing and waistband are the same length.  Nähen Sie mit der Hoodie oben, damit Sie sehen können, dass sie in der Naht gefangen wird.
 - Topstitch die unteren Taschenkanten an den Körper des Hemdes, um die Unterseite der Tasche zu verankern.
