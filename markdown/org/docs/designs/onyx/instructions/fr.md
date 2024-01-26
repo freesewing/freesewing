@@ -4,9 +4,9 @@ title: "Onyx une pièce : Instructions de couture"
 
 <Note>
 
-L'utilisation d'une surjeteuse est recommandée, pour que la taille des coutures finies reste petite et pour permettre aux coutures de s'étirer. Si tu utilises une surjeteuse avec le couteau engagé, une marge de couture de 1/2 pouce (12 mm) est recommandée. Si tu utilises un pied de surjet sur une machine à coudre, ou si tu effectues une surjeture sans utiliser le couteau, une marge de couture de 1/4 de pouce (6 mm) est recommandée.
+L'utilisation d'une surjeteuse est recommandée, pour que la taille des coutures finies reste petite et pour permettre aux coutures de s'étirer. If using a serger with the knife engaged, a seam allowance of 1/2 inch (12 mm) is recommended. Si tu utilises un pied de surjet sur une machine à coudre, ou si tu effectues une surjeture sans utiliser le couteau, une marge de couture de 1/4 de pouce (6 mm) est recommandée.
 
-Sauf indication contraire, utilise des vestes extensibles pour la construction de ce vêtement. Un point de surjet à 4 fils est recommandé, ou un pied de surjet sur une machine à coudre si une surjeteuse n'est pas disponible.
+Unless otherwise stated, use stretch steams for construction of this garment. Un point de surjet à 4 fils est recommandé, ou un pied de surjet sur une machine à coudre si une surjeteuse n'est pas disponible.
 
 Les ourlets ou les poignets sont facultatifs (puisque le tricot ne s'effiloche pas), mais si tu fais des ourlets ou si tu ajoutes des poignets, assure-toi qu'ils peuvent s'étirer. Ces instructions décrivent comment faire un ourlet à pli simple avec une aiguille double, qui convient aux maillots de bain ou aux vêtements légers, et comment faire un revers en tricot côtelé, qui convient aux pyjamas ou aux kigurumi en laine polaire.
 
