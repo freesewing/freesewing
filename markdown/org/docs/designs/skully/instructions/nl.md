@@ -90,12 +90,12 @@ Turn it right sides out.
 
 ## Stap 5: Haar
 
-Nu is het tijd om haar toe te voegen aan skully. Als je het borduurgaren erin doet, zorg er dan voor dat je knopen aan de binnenkant maakt, anders is het heel gemakkelijk om Skully's haar er later uit te trekken.
+Now is the time to add hair to Skully. Als je het borduurgaren erin doet, zorg er dan voor dat je knopen aan de binnenkant maakt, anders is het heel gemakkelijk om Skully's haar er later uit te trekken.
 
 ## Stap 6: Vullen
 
 - Fill the plush toy with stuffing through the opening you left, making sure to fill all the parts well. De gebieden aan de voorkant zijn het moeilijkst te bereiken.
-- _Slipsticth_ of _zweepsteek_ de opening dicht.
+- _Slipstitch_ or _whipstitch_ the opening closed.
 
 ## Stap 7: Tweaks
 
