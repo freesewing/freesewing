@@ -10,7 +10,7 @@ So I did some research online, and I found [this tutorial by Cathrin
 on drafting an underbust corset.
 
 So, I essentially implemented those instructions in code, and the rest is
-history as the original project got abaondoned.
+history as the original project got abandoned.
 
 This design is named `cathrin` after Cathrin Åhlén who taught me (and others)
 how to draft such a thing.
