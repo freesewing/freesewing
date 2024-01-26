@@ -10,7 +10,7 @@ Der Rock wurde aus Gründen der Bescheidenheit hinzugefügt, vor allem für die 
 
 Onyx kopiert einige Merkmale von Shelly, z. B. die Raglanärmel für mehr Bewegungsfreiheit und die Verwendung symmetrischer Vorder- und Rückenteile, mit Ausnahme von Hals und Kopf.
 
-Onyx ist nach dem Edelstein und seiner tiefschwarzen Farbe benannt, die nicht zufällig eine großartige Grundfarbe für Onyx-Badeanzüge ist, vor allem, wenn man möchte, dass sie wie ein Neoprenanzug aussehen.
+Onyx is named after the gemstone and its deep black color, which not coincidentally is a great base color for Onyx swimsuits, particularly if one wants them to look like a wetsuit.
 
 Ein bisschen Geschichte: Onyx wäre vielleicht nie geboren worden, wenn es im Frühjahr 2023 nicht zu den Anti-LGBTQ+-Protesten und -Boykotten gekommen wäre, die dazu führten, dass ein Anzug, der mir besonders gut gefiel, aus den Regalen eines großen US-Einzelhändlers genommen wurde und ich einen passenden Ersatz brauchte.
 
