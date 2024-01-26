@@ -4,24 +4,24 @@ title: "Sweat à capuche Yuri : Instructions de couture"
 
 <Note>
 
-Ce patron peut être cousu avec ou sans surjeteuse. Pour _finir_ les coutures sans surjeteuse/sertisseuse, tu peux utiliser ta méthode préférée ou l'une des méthodes ci-dessous :
+Ce patron peut être cousu avec ou sans surjeteuse. To _finish_ seams without a overlocker/serger you can either use your preferred method or one of the methods below:
 
-##### Méthode de finition 1
+##### Finishing Method 1
 
-- Ouvre les surplus de couture au fer à repasser.
+- Press open the seam allowances.
 - Ensuite, sur le bon côté, _pique_ à 3 mm (1/8 de pouce) ou plus près des deux côtés de la couture en attrapant les surplus de couture en dessous.
 - Sur le côté envers couper les marges de couture près du bord.
 
-##### Méthode de finition 2
+##### Finishing Method 2
 
-- Coudre les marges de couture avec soit un point zig-zag, éclair ou un point droit et presser sur un côté.
+- Sew the seam allowances together with either a zig-zag, overcast or straight stitch and press to one side.
 - Couper à 1 cm (3/8 po) si nécessaire.
 
 </Note>
 
 <Tip>
 
-Si vous utilisez une surjeteuse, vous pouvez coudre les coutures qui ont besoin d'une finition en une seule fois plutôt que de faire la couture conventionnellement et de le finir.
+If using a overlocker/serger you can sew seams which need finishing in one go rather than sewing the seam conventionally and finishing it.
 
 </Tip>
 
@@ -51,7 +51,7 @@ Sur le patron, l'encoche arrière est marquée comme une encoche transversale (v
 - (Facultatif) Surfiler le bord brut de la manche.
 - Pressez sur l'ourlet sur l'envers du tissu et bâtissez en place près du bord brut.
 - À l’extérieur, cousez plus loin du bord plié, en attrapant l’ourlet en dessous en utilisant le bâti comme guide vers l’endroit où se trouve le bord brut.
-- (Facultatif) À l'extérieur, cousez à 6 mm (1/4 po) parallèlement au premier point le long de l'ourlet.
+- (Optional) On the outside, stitch 6mm (1/4 inch) parallel to original stitch along the hem allowance.
 - Enlevez le fil de bâti.
 
 <Note>
@@ -94,8 +94,8 @@ Il est recommandé d'utiliser **la méthode de finition 1** pour cette étape, q
 - Coudre le bord épinglé ensemble.
 - Couper la marge de couture à 1 cm (3/8 po) si la marge de couture que vous avez choisie est plus grande et que vous n'avez pas utilisée et que vous n'avez pas de surjeteuse. Sinon _ne pas_ couper la la marge.
 - Retournez la capuche vers l'extérieur et repassez les coutures à plat.
-- Sur l'extérieur, surpiquez le long du bord de la capuche, à environ 1,5 - 2cm (5/8 - 3/4 pouces) du bord. Assurez-vous que votre surpiqûre doit proche mais ne prenne pas les marges de couture du bord extérieur de la capuche. Cela créera une bordure décorative, avec la marge de couture proche en rendant la bordure un peu bombée.
-- Avec des bords bruts ensemble, surpiquez ou surjetez le bas de la capuche. Vous pouvez le faire avec une surjeteuse ou un point ziz-zag ou un point overlock sur une machine ordinaire.
+- Sur l'extérieur, surpiquez le long du bord de la capuche, à environ 1,5 - 2cm (5/8 - 3/4 pouces) du bord. Ensure that your topstitching encloses but does not go through the seam allowance of the outer hood edge. Cela créera une bordure décorative, avec la marge de couture proche en rendant la bordure un peu bombée.
+- Avec des bords bruts ensemble, surpiquez ou surjetez le bas de la capuche. You can either do this with an overlocker/serger or a zig-zag or overcast stitch on a regular machine.
 
 <Note>
 
@@ -121,15 +121,15 @@ Vous pouvez également faire une bande pliée de sorte que le col n'ait pas de b
 - Endroit contre endroit, en partant du centre dos, épinglez la capuche à l'encolure, en faisant correspondre les centre dos et que le recouvrement de la capuche se termine au centre devant.
 - Avec l'endroit de la bande d'encolure sur la doublure de la capuche, épinglez la bande à la capuche en faisant correspondre le milieu de la bande au centre dos.
 - Si vous utilisez une surjeteuse, surjetez le cou et le la capuche ensemble en prenant toutes les épaisseurs.
-- Si vous utilisez une machine à coudre, utilisez un point en zig-zag pour coudre toutes les couches du cou et de la capuche ensemble.
+- If using a sewing machine, use a zig-zag stitch to sew all the neck and hood layers together.
 - À l'extérieur, vérifiez l'encolure pour vous assurer que toutes les couches sont cousues.
 - Pressez les marges de coutures vers le corps.
-- Sur l'endroit, surpiquez avec un point droit à environ 1 cm (3/8 po) du bord du cou vers le corps pour attraper et fixer le cou en dessous.
+- On the good side, topstitch with a straight stitch approximately 1cm (3/8 inch) away from the neck edge towards the body to catch and secure the neckband underneath.
 - Coupez l’excès de tissu de l’intérieur.
 
 <Warning>
 
-Si vous utilisez une surjeteuse pour attacher la capuche, vous pouvez d'abord attacher des zones volumineuses avec un point droit comme le devant car une surjeteuse peut avoir du mal à coudre ces pièces.
+If using a overlocker/serger to attach the hood you may want to attach bulky areas down first with a straight stitch such as the front as an overlocker/serger may have trouble sewing these parts.
 
 </Warning>
 
