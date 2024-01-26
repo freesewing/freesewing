@@ -113,5 +113,5 @@ Cette série de 6 épisodes vous montre comment réaliser votre sweat à capuche
 - Surjetez (ou cousez en zig-zag) la bande de poignet, en l'étirant doucement jusqu'à ce que la bande et le manche soient de la même longueur.  Retirez les épingles avant de passer sous la surjeteuse.
 - Coupez le bord inférieur de la poche s'il dépasse le bord de la ceinture.
 - Veillez à ce que la bande soit assemblée de la manière la plus uniforme possible autour de la ceinture.
-- Suejetez ou faites un zig-zag à la ceinture, encore une fois étirant doucement jusqu'à ce que la bande et la ceinture soient de la même longueur.  Cousez avec le sweat sur le dessus de façon à ce que vous puissiez vous assurer qu'il est bien pris dans la couture.
+- Serge or zig-zag the waistband, again gently stretching until the ribbing and waistband are the same length.  Cousez avec le sweat sur le dessus de façon à ce que vous puissiez vous assurer qu'il est bien pris dans la couture.
 - Surpiquez les bords inférieurs de la poche au corps du vêtement pour maintenir le fond de la poche.
