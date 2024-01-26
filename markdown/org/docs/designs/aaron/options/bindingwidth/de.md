@@ -2,7 +2,7 @@
 title: Breite der Bindung
 ---
 
-Steuert die Breite der Kniw-Bindung auf Aaron.
+Controls the width of the knit binding on Aaron.
 
 Die Standardbreite des Strickbands ist 6 x die Nahtzugabe. Für metrische Benutzer mit der Standard-Nahtzugabe von 1 cm ergibt dies ein 1,5 cm breites Strickband, was ein guter Wert ist.
 
@@ -10,5 +10,5 @@ Bei Nutzern mit kaiserlichen Maßen (die eine Standard-Nahtzugabe von 0,5" haben
 
 <Note>
 
-Diese Option wird als Prozentsatz der Nahtzugabe angegeben. Der Standardwert ist also 600%, also das 6-fache der Nahtzugabe.
+This option is expressed in percentage of the seam allowance. So the default is 600%, or 6 time the seam allowance.
 </Note>
