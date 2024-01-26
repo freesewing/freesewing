@@ -2,7 +2,7 @@
 title: "Lunetius Lacerna: Opmerkingen van de ontwerper"
 ---
 
-<Note compact>Lunetius, Tiberius en Walburga komen eigenlijk als een set. Niet alleen zijn ze op hetzelfde moment geboren, maar zijn ze ook ontworpen om samen een volledige outfit te vormen. Niet dat dit betekent dat ze niet apart gemaakt kunnen worden ;)</Note>
+<Note compact>Lunetius, Tiberius en Walburga komen eigenlijk als een set. Niet alleen zijn ze op hetzelfde moment geboren, maar zijn ze ook ontworpen om samen een volledige outfit te vormen. Not that this means that they can't be made separately ;)</Note>
 
 Lunetius de lacerna is het patroon dat de meeste naamsveranderingen en iteraties heeft gehad achter de schermen. Waarom? Omdat ik tegenstrijdige informatie vond in secundaire literatuur over hoe dit type mantel genoemd werd en wie het wanneer droeg.
 
