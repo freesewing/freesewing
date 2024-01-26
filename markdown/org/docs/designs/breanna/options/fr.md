@@ -37,7 +37,7 @@ La hauteur de la tête de manche est égale à la distance entre les points 3 et
 - [Haut de tête de manche X](/docs/designs/breanna/options/sleevecaptopfactorx/) : Contrôle la position horizontale des points 3 et 4
 - [Haut de tête de manche Y](/docs/designs/breanna/options/sleevecaptopfactory/) : Contrôle la position verticale du point 4
 
-In other words, point 4 can be made higher and lower and, perhaps less intutitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
+In other words, point 4 can be made higher and lower and, perhaps less intuitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
 
 ### Les points d'inflexion
 
