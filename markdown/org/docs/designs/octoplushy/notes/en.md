@@ -3,7 +3,7 @@ title: "Octoplushy, the plushy octopus: Designer Notes"
 ---
 
 Octoplushy. This is one of those designs that have no explanation. I was almost done with the `hi` design,
-so I had plushies on my mind. The sea, and it's inhabetants must have been on my mind, for all of a sudden
+so I had plushies on my mind. The sea, and it's inhabitants must have been on my mind, for all of a sudden
 "octoplushy" pops enters my thoughts. Where that came from, I don't know. But with that name, I could not
 ignore what I was apparently destined to work on next.
 
