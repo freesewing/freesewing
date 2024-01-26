@@ -2,7 +2,7 @@
 title: "Walburga Wappenrock: Ontwerpers"
 ---
 
-<Note compact>Lunetius, Tiberius en Walburga komen eigenlijk als een set. Niet alleen zijn ze op hetzelfde moment geboren, maar zijn ze ook ontworpen om samen een volledige outfit te vormen. Niet dat dit betekent dat ze niet apart gemaakt kunnen worden ;)</Note>
+<Note compact>Lunetius, Tiberius en Walburga komen eigenlijk als een set. Niet alleen zijn ze op hetzelfde moment geboren, maar zijn ze ook ontworpen om samen een volledige outfit te vormen. Not that this means that they can't be made separately ;)</Note>
 
 Walburga is de vreemde van de drie patronen, omdat het nog steeds "historisch geïnspireerd" is, maar eigenlijk geen echt historisch kledingstuk volgt. Het is gebaseerd op tabbaarden ("Wappenrock" in het Duits, vandaar de naam die met een W begint), met de hand geplaatst in een West-Europese setting uit de Middeleeuwen. Eerlijk gezegd is het meer geïnspireerd op de Legend of Zelda dan op iets echts.
 
