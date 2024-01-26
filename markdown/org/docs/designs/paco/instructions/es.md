@@ -205,7 +205,7 @@ no hacia el interior de tu cintura.
 
 A continuación, alinear el centro trasero y alfiler en su lugar, añadiendo pines adicionales alrededor de la cintura según sea necesario.
 
-Sujeta la cintura a los pantalones, tan cerca del elástico como puedas, pero no coja en el elástico.
+Sew the waistband to the pants, as close to the elastic as you can, but don’t sew into the elastic.
 
 ![Coser Waistband con método simple](step13.svg)
 
@@ -288,7 +288,7 @@ hay suficiente.
 
 </Tip>
 
-Pase el corte a la apertura de los pantalones, tan cerca del elástico como pueda, pero no coja en el elástico.
+Sew the cuff to the pants opening, as close to the elastic as you can, but don’t sew into the elastic.
 
 ![Cortes cocidas con método simple](step16.svg)
 
