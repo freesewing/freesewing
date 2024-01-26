@@ -205,7 +205,7 @@ title: "Штани пако: Інструкція з пошиття"
 
 Потім вирівняйте центральні частини спинки і приколіть, додавши додаткові шпильки навколо пояса, якщо потрібно.
 
-Пришийте пояс до штанів якомога ближче до резинки, але не вшивайте його в резинку.
+Sew the waistband to the pants, as close to the elastic as you can, but don’t sew into the elastic.
 
 ![Пояс пришитий простим методом](step13.svg)
 
@@ -288,7 +288,7 @@ As you did with the waistband elastic, wrap the elastic for your cuff around you
 
 </Tip>
 
-Пришийте манжету до розрізу штанів, якомога ближче до резинки, але не вшивайте її в резинку.
+Sew the cuff to the pants opening, as close to the elastic as you can, but don’t sew into the elastic.
 
 ![Манжети пришиті простим методом](step16.svg)
 
