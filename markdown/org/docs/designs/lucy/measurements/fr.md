@@ -3,5 +3,5 @@ title: "Poche Lucy à nouer : Mesures requises"
 ---
 
 <Note>
-Luci ne nécessite aucune mesure
+Lucy does not require any measurements
 </Note>
