@@ -4,7 +4,7 @@ title: "Culotte de cyclisme Cornélius : Options de tissu"
 
 ### Tissu principal
 
-N'importe quel tissu lourd **pour le bas (pantalon)** conviendra parfaitement à ce modèle. En règle générale, il est préférable d'éviter les produits de plus de 230 g/m², car ils seront probablement trop rigides et inconfortables. Vous voulez quelque chose qui apporte un peu de chaleur tout en étant capable de se draper, comme les tissus en **velours côtelé ** ou **les tissus de poids moyen**. Si vous recherchez quelque chose de plus historiquement correct, les **combinaisons en laine de poids moyen** sont ce qu'il vous faut. Le **Lin** est également une option, surtout si vous souhaitez quelque chose qui ne soit pas trop chaud.
+N'importe quel tissu lourd **pour le bas (pantalon)** conviendra parfaitement à ce modèle. En règle générale, il est préférable d'éviter les produits de plus de 230 g/m², car ils seront probablement trop rigides et inconfortables. Vous voulez quelque chose qui apporte un peu de chaleur tout en étant capable de se draper, comme les tissus en **velours côtelé ** ou **les tissus de poids moyen**. If you are looking for something more historically correct, then **Medium weight wool suiting** is the way to go. Le **Lin** est également une option, surtout si vous souhaitez quelque chose qui ne soit pas trop chaud.
 
 <Note>
 
