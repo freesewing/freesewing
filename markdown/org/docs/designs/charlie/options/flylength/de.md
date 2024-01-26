@@ -2,7 +2,7 @@
 title: "Fluglänge"
 ---
 
-Bestätigt die Länge der Fliege.
+Steuert die Länge der Fliege.
 
 
 
