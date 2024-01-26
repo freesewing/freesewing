@@ -31,6 +31,8 @@ fr.t: Französisch
 fr.d: Verwende dies, um ein französisches Muster zu erstellen
 nl.t: Holländisch
 nl.d: Verwende dies, um ein niederländisches Muster zu erstellen
+uk.t: Ukrainian
+uk.d: Use this to generate a Ukrainian pattern
 yes: Yes
 no: No
 completeYes.t: Ein vollständiges Muster generieren
