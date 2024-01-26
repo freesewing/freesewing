@@ -8,7 +8,7 @@ Distancia el cuello se sienta al cerrar.
 
 <Note>
 
-Esto es en realidad una elección de estilo, pero un hueco de cuello más ancho (junto con el ángulo de cuello) puede dar lugar a una corbata más ancha (nudo).
+This is really mostly a style choice, but a wider collar gap (together with the collar angle) can accommodate a wider tie (knot).
 
 </Note>
 
