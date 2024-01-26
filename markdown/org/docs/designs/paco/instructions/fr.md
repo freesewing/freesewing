@@ -205,7 +205,7 @@ pas l'intérieur de votre ceinture.
 
 Ensuite, alignez le dos du centre et la broche en place, en ajoutant des épingles supplémentaires autour de la ceinture au besoin.
 
-Coudre la ceinture au pantalon, aussi près que possible de l’élastique, mais ne pas coudre dans l’élastique.
+Sew the waistband to the pants, as close to the elastic as you can, but don’t sew into the elastic.
 
 ![Bande de taille cousue avec méthode simple](step13.svg)
 
@@ -288,7 +288,7 @@ il y en a assez.
 
 </Tip>
 
-Coudre le manchon à l'ouverture du pantalon, aussi près que possible de l'élastique, mais ne pas coudre dans l'élastique.
+Sew the cuff to the pants opening, as close to the elastic as you can, but don’t sew into the elastic.
 
 ![Poignets cousus avec une méthode simple](step16.svg)
 
