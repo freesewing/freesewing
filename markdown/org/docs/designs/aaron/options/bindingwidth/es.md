@@ -10,5 +10,5 @@ Para los usuarios imperiales (que tienen un margen de costura por defecto de 0,5
 
 <Note>
 
-This option is expressed in percentage of the seam allowance. So the default is 600%, or 6 time the seam allowance.
+Esta opción se expresa en porcentaje del margen de costura. Así que el valor por defecto es 600%, o 6 veces el margen de costura.
 </Note>
