@@ -2,7 +2,7 @@
 title: "Ursula Unterhosen: Schnittanleitung"
 ---
 
-Uma besteht in der Regel aus einer Vorderseite, einer Rückseite und einem gefütterten Zwickel. In dieser Konstellation ist dies die Schnittliste:
+Uma besteht in der Regel aus einer Vorderseite, einer Rückseite und einem gefütterten Zwickel. In that constellation, this is the cut list:
 
 - **Oberstoff**
   - Ursula besteht aus einem vorderen Teil, einem hinteren Teil und einem gefütterten Zwickel.
