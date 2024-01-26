@@ -4,13 +4,13 @@ title: "Cornelius fietsbroek: Naai-instructies"
 
 ### Stap 1: De voorzakken
 
-- Pers onder de naadtoeslagen van de niet-geknipte randen van de pokcet facings.
+- Press under the seam allowances of the non-notched edges of the pocket facings.
 - Speld de verkeerde kanten van de zakvullingen op de goede kant van de zakvullingen met dezelfde inkepingen, _Edgestitch_ de gevouwen randen op de zakvullingen.
 - _Rijg_ de naadtoeslagen van de gekerfde randen van de zakvullingen aan de zakzakken.
 - Met de goede kanten op elkaar en de dubbele inkepingen naai je de zakjes aan de voorkant en pers je ze naar de verkeerde kant.
 - Vouw de zakken dubbel langs de vouwlijn, goede kanten op elkaar. Naai de onderkant van de zak aan elkaar.
 - Je kunt ook _Franse naad_ de onderste naden van de zakjes aan elkaar naaien als je dat liever doet.
-- _Rijg_ de bovenkant en zijkant van de zakjes aan de voorste naadtoeslagen met de inkepingen.
+- _Baste_ the top and side of the pocket bags to the front seam allowances matching notches.
 
 <Note>
 
@@ -70,7 +70,7 @@ Gebruik de methode van de manchetstijl die je hebt gekozen, want ze verschillen 
 - Strijk de bovenste naadtoeslag naar de verkeerde kant van de overgebleven delen van de beenband. Knip de naadtoeslag aan de bovenkant bij.
 - Naai met de goede kanten op elkaar de overgebleven beenstukken aan de aangehechte beenbanden langs de onderkant en zijkanten.
 - Draai de beenbanden naar buiten. Pers.
-- _Schuifsteek_ of _Zweepsteek_ de gevouwen rand van de tailleband naar voren, zorg ervoor dat de gevouwen rand het stiksel bedekt.
+- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitching.
 - Naai het knoopsgat. De knopen worden later genaaid.
 
 <Note>
@@ -89,7 +89,7 @@ Als je je zorgen maakt over tocht, kun je van je zakstof een driehoekig stuk sto
 - Strijk de bovenste naadtoeslag naar de verkeerde kant van de overgebleven delen van de beenband. Knip de naadtoeslag aan de bovenkant bij.
 - Naai met de goede kanten op elkaar de overgebleven beenstukken aan de aangehechte beenbanden langs de onderkant en zijkanten.
 - Draai de beenbanden naar buiten. Pers.
-- _Schuifsteek_ of _Zweepsteek_ de gevouwen rand van de tailleband naar voren, zorg ervoor dat de gevouwen rand het stiksel bedekt.
+- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitching.
 - Naai het knoopsgat. De knopen worden later genaaid.
 
 <Note>
@@ -108,13 +108,13 @@ Je kunt de beenbanden aan elkaar _Edgestikken_ als een moderne tailleband als je
 
 ### Stap 5: Tailleband
 
-- Strijk een van de stukken van de tailleband met je favoriete methode.
+- Face one of the waistband pieces using your preferred method.
 - Naai het stuk tailleband met de goede kanten op elkaar aan de bovenkant van de benen.
 - Pers de tailleband en naadtoeslag omhoog en weg van het been. Knip de naadtoeslag bij om de bulk te verminderen.
 - Pers de onderste naadtoeslag naar de verkeerde kant van het overgebleven stuk tailleband. Knip de onderste naadtoeslag bij.
 - Naai met de goede kanten op elkaar de overgebleven tailleband langs de bovenkant en zijkanten aan de tailleband.
 - Draai de tailleband naar buiten. Pers.
-- _Schuifsteek_ of _Zweepsteek_ de gevouwen rand van de tailleband naar voren, zorg ervoor dat de gevouwen rand het stiksel bedekt.
+- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitching.
 - Naai het knoopsgat. De knopen worden later genaaid.
 
 <Note>
