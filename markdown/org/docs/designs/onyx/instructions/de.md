@@ -4,9 +4,9 @@ title: "Onyx einteilig: Anleitung zum Nähen"
 
 <Note>
 
-Es wird empfohlen, einen Serger/Overlocker zu verwenden, um die Größe der fertigen Nähte klein zu halten und die Nähte dehnbar zu machen. Wenn du einen Serger mit eingeschaltetem Messer verwendest, wird eine Nahtzugabe von 1/2 Zoll (12 mm) empfohlen. Wenn du einen Overlocking-Fuß an einer Nähmaschine verwendest oder ohne Messer versäuberst, wird eine Nahtzugabe von 6 mm (1/4 Zoll) empfohlen.
+Es wird empfohlen, einen Serger/Overlocker zu verwenden, um die Größe der fertigen Nähte klein zu halten und die Nähte dehnbar zu machen. If using a serger with the knife engaged, a seam allowance of 1/2 inch (12 mm) is recommended. Wenn du einen Overlocking-Fuß an einer Nähmaschine verwendest oder ohne Messer versäuberst, wird eine Nahtzugabe von 6 mm (1/4 Zoll) empfohlen.
 
-Wenn nicht anders angegeben, solltest du für die Herstellung dieses Kleidungsstücks Stretch-Dampf verwenden. Wir empfehlen einen 4-Faden-Overlockstich oder einen Overlock-Fuß an einer Nähmaschine, wenn du keinen Serger zur Verfügung hast.
+Unless otherwise stated, use stretch steams for construction of this garment. Wir empfehlen einen 4-Faden-Overlockstich oder einen Overlock-Fuß an einer Nähmaschine, wenn du keinen Serger zur Verfügung hast.
 
 Säume oder Bündchen sind optional (da Strick nicht ausfranst), aber wenn du Säume oder Bündchen anbringst, solltest du darauf achten, dass sie sich dehnen können. In dieser Anleitung wird beschrieben, wie du mit einer Doppelnadel einen einfach gefalteten Saum anfertigst, der sich für Bademode oder leichte Kleidungsstücke eignet, und wie du ein Rippenstrickbündchen anfertigst, das sich für Fleece-Pyjamas oder Kigurumi eignet.
 
