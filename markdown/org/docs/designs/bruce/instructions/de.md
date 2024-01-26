@@ -158,7 +158,7 @@ Nimm es langsam und sei **sehr bewusst**, wo deine Sergerklinge schneiden wird.
 
 ![säume das erste Bein](step11.png)
 
-Zeit, die Beine zu säumen. Säume sie genauso wie jeden anderen dehnbaren Strickstoff. Wähle einen flexiblen Stich. Du kannst einen Zick-Zack-Stich oder eine Zwillingsnadel verwenden, falls du keine Coverlock oder einen speziellen dehnbaren Stich hast.
+Zeit, die Beine zu säumen. Säume sie genauso wie jeden anderen dehnbaren Strickstoff. Wähle einen flexiblen Stich. Sie können eine Zick-Zack-Zwillingsstick- oder Zwillingsnadel verwenden, wenn Sie nicht über einen Deckschloss oder eine spezielle flexible Hefteinstellung verfügen.
 
 <Note>
 
@@ -201,7 +201,7 @@ Wenn Sie einen Coverlock verwenden, legen Sie die elastische auf die gute Seite 
 
 <Tip>
 
-Die Länge deines Gummizuges wird wahrscheinlich anders sein als die Länge des Stoffes, weil beide sich unterschiedlich weit dehnen lassen.
+The length of your elastic will probably differ from the fabric length, as they stretch differently.
 Feststecken wird dir dabei helfen, eine gleichmäßige Dehnung zu erzielen.
 
 Teile sowohl deinen Gummizug als auch dein Bund deiner Shorts in 4 (oder 8) Teile auf. Stecke Gummi und Stoff an diesen Stellen zusammen.
