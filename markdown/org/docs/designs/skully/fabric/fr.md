@@ -8,7 +8,7 @@ Il est préférable que ce jouet en peluche soit fabriqué à partir d'un tissu 
 
 ## Cheveux
 
-Skully a besoin de cheveux. Le fil de broderie fonctionne très bien, et on peut en trouver de toutes les couleurs.
+Skully a besoin de cheveux. Embroidery floss works very well, and can be had in all colors.
 
 ## Farce
 
