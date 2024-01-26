@@ -40,7 +40,7 @@ La altura de la manga es igual a la distancia entre los puntos 3 y 4. La altura 
 - [Sleevecap top X](/docs/designs/breanna/options/sleevecaptopfactorx/) : Controla la colocación horizontal del punto 3 y 4
 - [Sleevecap superior Y](/docs/designs/breanna/options/sleevecaptopfactory/) : Controla la posición vertical del punto 4
 
-In other words, point 4 can be made higher and lower and, perhaps less intutitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
+In other words, point 4 can be made higher and lower and, perhaps less intuitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
 
 ### Los puntos de inflexión
 
