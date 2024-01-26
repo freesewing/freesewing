@@ -43,7 +43,7 @@ Vergeet de naadtoeslag voor deze stukken niet bij het knippen als je deze delen 
 - Trek het deel **Back** na.
 - Snijd langs de oranje lijn.
 - Gooi het onderste stuk weg.
-- Verwijder de naadtoeslagen (indien meegeleverd) van het bovenstuk.
+- Verwijder de naadtoeslagen (indien inbegrepen) van het bovenste stuk.
 - Het bovenste stuk is nu het **Rugschouder** deel.
 
 #### Knippen
