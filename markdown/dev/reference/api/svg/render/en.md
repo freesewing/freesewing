@@ -11,19 +11,11 @@ The `Svg.render()` method will render a drafted
 string svg.render()
 ```
 
-## Svg.render() example
+<Warning>
 
-```
-import { Aaron } from "@freesewing/aaron"
+This method is mostly internal and should not be used directly.
+Instead, it is intended that the
+[Pattern.render()](reference/api/pattern/render)
+method be used to render patterns as SVG.
 
-// Load some public test measurements from the FreeSewing backend
-const measurements = (
-  await (
-    await fetch("https://backend3.freesewing.org/curated-sets/1.json")
-  ).json()
-).measurements
-
-const pattern = new Aaron({ measurements })
-
-const svg = new Svg(pattern).render()
-```
+</Warning>
