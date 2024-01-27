@@ -212,9 +212,12 @@ Mark this length, cut the elastic, and join the two ends together.
 
 ## Step 12: Join the waistband
 
-Place the two waistband pieces good sides together, and align the short edges. Sew the short edges
-together, then press open. These will be inside the waistband, so you don't need to finish the edges
-of these seams unless your fabric is particularly likely to fray.
+Fold the waistband in half with good sides together, aligning the two
+short edge ends.
+Sew the short edges together to sew the waistband into a ring.
+Press open the seam.
+They will be inside the waistband, so you don't need to finish the
+edges of these seams unless your fabric is particularly likely to fray.
 
 ![Joined waistband pieces](step12.svg)
 
