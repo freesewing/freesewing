@@ -50,3 +50,22 @@ The value can hold HTML tags, just make sure it's valid HTML and don't go
 overboard.
 
 Note that the definition will be _italic_ by default.
+
+## FreeSewing Jargon Glossary
+
+Below is the jargon which is currently defined and available to use
+on our websites.
+
+### Jargon on freesewing.dev
+
+| Term | Description |
+| ----------- | ----------- |
+| `cjs` | **CJS** stands for CommonJS, it is the JavaScript module format popularized by NodeJS, but now increasingly phased out in favor of **ESM**
+| `esm` | **ESM** stands for EcmaScript Module, it is the standardized module syntax in JavaScript
+
+### Jargon on freesewing.org
+
+| Term | Description |
+| ----------- | ----------- |
+
+_(Currently, no jargon has been defined for the freesewing.org site.)_
