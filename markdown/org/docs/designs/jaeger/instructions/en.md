@@ -242,28 +242,72 @@ So make sure to align the notches. It's what they're there for.
 
 
 ### Make the collar
+
 In order to look real crisp, the collar should be symmetrical on both sides.
 About 5mm difference is already visible to a collar, so the more precise you do these steps, the better.
 
-### Add markings to both collar and under-collar-and-stand
-Put the collar and under-collar-and-stand on top of each other, baste the corners together and cut the basting.
-Then use a marking pencil or some chalk to mark the edges of the finished
-collar.
-Measure 2 times to make sure the location of the finished corners are 100%
-identical on both corners, on both collar and under-collar-and-stand pieces.
+
+#### Add markings to both collar and under-collar-and-stand
+
+Put the collar and under-collar-and-stand on top of each other
+good sides together, and baste the corners together, cutting off
+any excess basting thread.
+
+Then use a marking pencil or some chalk to mark the edges of the
+finished collar on both the collar and under-collar-and-stand fabric..
+
+Measure 2 times to make sure the locations of the finished corners
+are 100% identical on both corners and also on both collar and
+under-collar-and-stand pieces.
 ![Mark the collar Edges](collarMarkings.svg)
 
 
-#### Add interfacing or canvas to the outside collar stand and under-collar-and-stand
-Either use a fusible interfacing, or, if you want to be hardcore use a horsehair canvas.
-Stitch it to the outside collar stand using the same technique as when adding canvas to the lapel.
+#### Baste canvas to the under-collar-and-stand
+
+Use horsehair canvas or, alternately, fusible interfacing.
+Baste the under-collar-and-stand canvas to the wrong side of the
+under-collar-and-stand part, using the same technique as when adding
+canvas to the lapel.
 ![Add canvas to the collar](collarWithCanvas.svg)
 
-#### Sew the outside collarstand to the under-collar-and-stand, and add to jacket
-Make sure the outside collarstand and under-collar-and-stand are aligned and sew together.
-Sew the now attached outside collarstandr+under-collar-and-stand to the neckline of the jacket
-Give small cuts in the fabric around the neckline to give it more ease
-Cut the seam allowance in the corners diagonally for a better fit
+- Keep in mind that the canvas has no seam allowance.
+- Baste it a bit inwards from the seam line so you can fold it away when sewing these seams later.
+- You don't want your canvas to get caught in the seams.
+
+#### Sew the collar to the under-collar-and-stand
+
+Now, with good sides together, sew the collar to the
+under-collar-and-stand, carefully following the line markings you
+made earlier.
+
+- Sew the top and sides of the collar, leaving the bottom open.
+- Be careful to avoid sewing through the canvas and having it get caught
+in the seams.
+
+When finished sewing, clip the seam corners, turn the collar right,
+side out, and press.
+
+#### Sew the collarstand to the collar and under-collar-and-stand
+
+Make sure the collarstand and collar/under-collar-and-stand parts
+are aligned and sew them together.
+
+- Pin the good sides of the collarstand and collar (which
+has already been attached to the under-collar-and-stand)
+- Then pin the good sides of the side seams of the collarstand and
+the under-collar-and-stand.
+- Carefully sew the side and top seams, leaving the bottom open.
+
+When finished sewing, press the seams of the newly-sewn
+collar-and-stand part.
+
+#### Sew the collar-and-stand to the jacket
+
+Sew the completed collar-and-stand part to the neckline of the jacket.
+
+- Clip small cuts into the fabric of the curved seam around the neckline
+to give it more ease.
+- Clip the seam allowance in the corners diagonally for a better fit.
 
 ![make small cuts in SA around collar](collarCuts.svg)
 
