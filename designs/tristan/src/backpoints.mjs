@@ -68,14 +68,16 @@ export const backPoints = {
     )
 
     if (lacing) {
-      points.lacingCut = points.cbCut.shift(
-        0,
-        (points.strapInsideCp.x - points.cbCut.x) * options.lacingWidth
-      )
-      points.lacingWaist = points.waistCenter.shiftTowards(
-        points.dartBottomLeft,
-        (points.strapInsideCp.x - points.cbCut.x) * options.lacingWidth
-      )
+      let lacingWidth = (points.strapInsideCp.x - points.cbCut.x) * options.lacingWidth
+      if (points.waistCenter.dist(points.dartBottomLeft) < lacingWidth) {
+        lacingWidth = points.waistCenter.dist(points.dartBottomLeft) * 0.95
+      }
+      points.lacingCut = points.cbCut.shift(0, lacingWidth)
+      points.lacingWaist = points.waistCenter.shiftTowards(points.dartBottomLeft, lacingWidth)
+    }
+
+    if (points.cbCutCp.x < (lacing ? points.lacingCut : points.cbCut).x) {
+      points.cbCutCp.x = (lacing ? points.lacingCut : points.cbCut).x
     }
 
     if (options.hem && !options.peplum) {
