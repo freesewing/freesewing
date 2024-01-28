@@ -9,7 +9,7 @@ title: "Jaeger jacket: Cutting Instructions"
   - Cut **2 sides** (part 3)
   - Cut **2 topsleeves** (part 4)
   - Cut **2 undersleeves** (part 5)
-  - Cut **1 collar** (part 6)
+  - Cut **1 collar** (part 7)
   - Cut **1 collarstand** (part 8)
   - Cut **2 pockets** (part 9)
   - Cut **1 chest pocket welt** (part 10)
@@ -27,7 +27,7 @@ title: "Jaeger jacket: Cutting Instructions"
   - Cut **2 fronts** on bias (part 1) Note: Don't include seam allowance
   - Cut **2 chest pieces** on bias. Look for the indication on the front part. Note: Don't include seam allowance
 - **Undercollar fabric**
-  - Cut **2 undercollars** (part 7)
+  - Cut **2 under-collar-and-stand** parts (part 6)
 
 <Note>
 
