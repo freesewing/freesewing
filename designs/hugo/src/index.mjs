@@ -11,11 +11,23 @@ import { hoodSide } from './hoodside.mjs'
 import { hoodCenter } from './hoodcenter.mjs'
 import { waistband } from './waistband.mjs'
 import { cuff } from './cuff.mjs'
+import { neckBinding } from './neckbinding.mjs'
 
 // Setup our new design
 const Hugo = new Design({
   data,
-  parts: [back, front, sleeve, pocket, pocketFacing, hoodSide, hoodCenter, waistband, cuff],
+  parts: [
+    back,
+    front,
+    sleeve,
+    pocket,
+    pocketFacing,
+    hoodSide,
+    hoodCenter,
+    waistband,
+    cuff,
+    neckBinding,
+  ],
 })
 
 // Merge translations
@@ -32,6 +44,7 @@ export {
   hoodCenter,
   waistband,
   cuff,
+  neckBinding,
   Hugo,
   i18n,
 }
