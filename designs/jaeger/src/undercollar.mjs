@@ -1,4 +1,4 @@
-import { collarStand } from './collarstand.mjs'
+import { collar } from './collar.mjs'
 
 /*
  * This collar would benefit from a redesign
@@ -7,7 +7,7 @@ import { collarStand } from './collarstand.mjs'
  * experience, or more tailoring exprience.
  */
 
-function jaegerUnderCollar({ sa, snippets, points, macro, store, paths, Path, part }) {
+function jaegerUnderCollar({ sa, snippets, points, macro, store, paths, Path, options, part }) {
   // Clean up
   for (let i of Object.keys(paths)) delete paths[i]
   for (let i of Object.keys(snippets)) delete snippets[i]
@@ -16,38 +16,27 @@ function jaegerUnderCollar({ sa, snippets, points, macro, store, paths, Path, pa
   paths.seam = new Path()
     .move(points.collarCorner)
     ._curve(points.neck, points.collarstandCbBottom)
-    .line(points.collarCbTop)
-    .curve_(points.collarCbTopCp, points.notchTip)
+    .curve_(points.leftNeck, points.leftCollarCorner)
+    .line(points.leftCollarstandTip)
+    .line(points.notchLeft)
+    .line(points.notchTipRollLeft)
+    ._curve(points.collarCbTopCpRollLeft, points.collarCbTopRoll)
+    .curve_(points.collarCbTopCpRoll, points.notchTipRoll)
     .line(points.notch)
     .line(points.collarCorner)
+    .close()
     .attr('class', 'various')
 
-  if (sa) {
-    paths.sa1 = new Path().move(points.collarstandCbBottom).line(points.collarCbTop).offset(sa)
-    paths.sa2 = new Path()
-      .move(points.collarCorner)
-      .line(points.notch)
-      .line(points.notchTip)
-      .offset(-1 * sa)
-    paths.sa = new Path()
-      .move(points.collarstandTip)
-      .line(points.collarCorner)
-      .join(paths.sa2)
-      .line(points.notchTip)
-      .move(points.collarstandCbBottom)
-      .line(paths.sa1.start())
-      .line(paths.sa1.end())
-      .line(points.collarCbTop)
-      .attr('class', 'various sa')
-    paths.sa1.hide()
-    paths.sa2.hide()
-  }
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'various sa')
 
   /*
    * Annotations
    */
   // Cutlist
-  store.cutlist.setCut({ cut: 2, from: 'special' })
+  store.cutlist.setCut([
+    { cut: 1, from: 'special' },
+    { cut: 1, from: 'canvas' },
+  ])
 
   // Title
   points.title = points.collarCbTopCp
@@ -111,6 +100,6 @@ function jaegerUnderCollar({ sa, snippets, points, macro, store, paths, Path, pa
 
 export const underCollar = {
   name: 'jaeger.underCollar',
-  from: collarStand,
+  from: collar,
   draft: jaegerUnderCollar,
 }
