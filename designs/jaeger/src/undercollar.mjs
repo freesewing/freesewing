@@ -54,26 +54,26 @@ function jaegerUnderCollar({ sa, snippets, points, macro, store, paths, Path, op
   macro('rmad')
   macro('hd', {
     id: 'wAtTop',
-    from: points.collarstandCbBottom,
+    from: points.leftCollarCorner,
     to: points.collarCorner,
-    y: points.collarstandCbBottom.y - 15,
+    y: points.collarstandCbBottom.y - 10,
   })
   macro('hd', {
     id: 'wFull',
-    from: points.collarstandCbBottom,
+    from: points.notchLeft,
     to: points.notch,
-    y: points.collarstandCbBottom.y - 30,
+    y: points.collarstandCbBottom.y - 25,
   })
   macro('hd', {
     id: 'wAtBottom',
-    from: points.collarCbTop,
-    to: points.notchTip,
-    y: points.notchTip.y + 15,
+    from: points.notchTipRollLeft,
+    to: points.notchTipRoll,
+    y: points.notchTipRoll.y + 15,
   })
   macro('vd', {
     id: 'hAtCb',
     to: points.collarstandCbBottom,
-    from: points.collarCbTop,
+    from: points.collarCbTopRoll,
     x: points.collarCbTop.x - sa - 15,
   })
   macro('ld', {
@@ -84,13 +84,13 @@ function jaegerUnderCollar({ sa, snippets, points, macro, store, paths, Path, op
   })
   macro('ld', {
     id: 'lBottomSide',
-    from: points.notchTip,
+    from: points.notchTipRoll,
     to: points.notch,
     d: -15 - sa,
   })
   macro('vd', {
     id: 'hFull',
-    from: points.notchTip,
+    from: points.notchTipRoll,
     to: points.collarstandCbBottom,
     x: points.notch.x + sa + 40,
   })
