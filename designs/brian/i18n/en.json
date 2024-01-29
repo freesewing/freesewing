@@ -8,7 +8,12 @@
     "sleevecap": "Sleevecap",
     "sleeve": "Sleeve"
   },
-  "s": {},
+  "s": {
+    "largeShoulderWidth": {
+      "t": "Shoulder Width larger than anticipated",
+      "d": "The pattern was not able to generate an optimal armhole shape using the given measurements and options. Please be aware that the generated pattern may not be correct. Please retake your measurements, verify that they are correct, and try generating a new pattern with the new measurements."
+    }
+  },
   "o": {
     "acrossBackFactor": {
       "t": "Across back factor",
