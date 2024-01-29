@@ -26,4 +26,4 @@ for information about custom Attributes that can be used with Snippets.
 
 Below are all the different snippets we maintain.
 
-<ReadMore list />
+<ReadMore />

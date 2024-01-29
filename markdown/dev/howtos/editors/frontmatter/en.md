@@ -7,4 +7,4 @@ It is used extensively on freesewing.org and freesewing.dev alike.
 
 Here's what you need to know:
 
-<ReadMore list />
+<ReadMore />

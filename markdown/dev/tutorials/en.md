@@ -6,7 +6,7 @@ order: zaa
 You can find a list of all FreeSewing tutorials below:
 
 ## Main sections
-<ReadMore  />
+<ReadMore />
 
 <Related>
 

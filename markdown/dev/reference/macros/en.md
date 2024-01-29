@@ -74,5 +74,5 @@ Below is a list of macros from [the plugins we maintain](/reference/plugins).
 We use camelCase here, but macro names are case-insensitive
 </Note>
 
-<ReadMore list />
+<ReadMore />
 

@@ -12,4 +12,4 @@ want to develop a plugin, or use a custom layout.
 
 ## Svg methods & properties
 
-<ReadMore list />
+<ReadMore />

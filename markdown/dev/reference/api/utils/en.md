@@ -7,4 +7,4 @@ facilitate parametric design.
 
 The following functions are provided by the `utils` object:
 
-<ReadMore list />
+<ReadMore />

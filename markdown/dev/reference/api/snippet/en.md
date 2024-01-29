@@ -51,4 +51,4 @@ for information about custom Attributes that can be used with Snippets.
 
 A Snippet object exposes the following methods:
 
-<ReadMore list />
+<ReadMore />
