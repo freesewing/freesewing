@@ -2,7 +2,7 @@
 title: "Hugo hoodie : Instructions de couture"
 ---
 
-<Note>
+<Fixme>
 
 ###### Documentation sur le montage
 
@@ -11,7 +11,7 @@ Faites défiler vers le bas, elle est intégré dans cette page.
 
 Maintenant, la mauvaise nouvelle : Les instructions écrites pour Hugo ne sont pas encore complètes.
 
-</Note>
+</Fixme>
 
 ## Vidéo
 
