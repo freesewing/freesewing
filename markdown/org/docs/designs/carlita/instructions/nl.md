@@ -4,7 +4,7 @@ title: "Carlita jas: Naai-instructies"
 
 ### Stap 1: De ontbrekende voering- en bekledingsdelen tekenen en snijden
 
-Voor sommige onderdelen voor Carlton moet je onderdelen uit de bestaande onderdelen opstellen. Hieronder staat een lijst met onderdelen die je moet opstellen, [zie Carlton Cutting](/docs/designs/carlton/cutting/) voor meer informatie over hoe je ze moet snijden.
+Some parts for Carlita require you to draft parts from the existing parts. The following are a list of what parts you need to draft, [see Carlita Cutting](/docs/designs/carlita/cutting/) for details on how to cut them.
 
 #### Opstellen
 
@@ -54,13 +54,13 @@ Vergeet de naadtoeslag voor deze stukken niet bij het knippen als je deze delen 
 
 #### Makers notities
 
-<Warning>
+<Fixme>
 
 We hebben nog geen volledige instructies uitgewerkt voor Carlita.
 Hieronder staan wat aantekeningen van [@AnnekeCaramin](/users/AnnekeCaramin) die
 [maakte Carlita](http://www.annekecaramin.com/2018/02/this-is-one-of-those-origin-superhero.html).
 
-</Warning>
+</Fixme>
 
 - Zoek en markeer de rollijn op de revers,
 - Draft back stay & cut from heavy muslin or hair canvas als je absoluut bulletproof wilt zijn
