@@ -2,13 +2,13 @@
 title: "Veste Jaeger : Instructions de couture"
 ---
 
-<Note>
+<Fixme>
 
 ###### La documentation de Jaeger est en cours de construction
 
 Cette documentation n'est pas encore terminée.
 
-</Note>
+</Fixme>
 
 ## Montage
 
