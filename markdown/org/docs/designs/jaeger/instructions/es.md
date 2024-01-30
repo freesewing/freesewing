@@ -2,13 +2,13 @@
 title: "Chaqueta Jaeger Instrucciones de costura"
 ---
 
-<Note>
+<Fixme>
 
 ###### La documentación de Jaeger está en construcción
 
 Esta documentación aún no está terminada.
 
-</Note>
+</Fixme>
 
 ## Construcción
 
