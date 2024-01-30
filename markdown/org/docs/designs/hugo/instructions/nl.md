@@ -2,7 +2,7 @@
 title: "Hugo hoodie: Naai-instructies"
 ---
 
-<Note>
+<Fixme>
 
 ###### Documentatie onder constructie
 
@@ -11,7 +11,7 @@ Scroll wat naar beneden, het staat op deze pagina.
 
 Nu het slechte nieuws: de geschreven instructies voor Hugo zijn nog niet compleet.
 
-</Note>
+</Fixme>
 
 ## Video
 
