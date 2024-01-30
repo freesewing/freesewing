@@ -2,13 +2,13 @@
 title: "Jaeger Jacke: Anleitung zum Nähen"
 ---
 
-<Note>
+<Fixme>
 
 ###### Jaeger Dokumentation ist im Bau
 
 Diese Dokumentation ist noch nicht fertig.
 
-</Note>
+</Fixme>
 
 ## Konstruktion
 
