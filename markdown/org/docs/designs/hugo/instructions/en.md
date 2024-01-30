@@ -2,7 +2,7 @@
 title: "Hugo hoodie: Sewing Instructions"
 ---
 
-<Note>
+<Fixme>
 
 ###### Documentation under construction
 
@@ -11,7 +11,7 @@ Scroll down, it's embedded in this page.
 
 Now the bad news: The written instructions for Hugo are not complete yet.
 
-</Note>
+</Fixme>
 
 ## Video
 
