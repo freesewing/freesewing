@@ -2,7 +2,7 @@
 title: "Hugo Hoodie: Anleitung zum Nähen"
 ---
 
-<Note>
+<Fixme>
 
 ###### Dokumentation im Bau
 
@@ -11,7 +11,7 @@ Scrollen Sie nach unten, es ist eingebettet in diese Seite.
 
 Nun die schlechte Nachricht: Die schriftlichen Anweisungen für Hugo sind noch nicht vollständig.
 
-</Note>
+</Fixme>
 
 ## Video
 
