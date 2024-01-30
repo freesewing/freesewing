@@ -2,13 +2,13 @@
 title: "Jaeger jasje: Naai-instructies"
 ---
 
-<Note>
+<Fixme>
 
 ###### Jaeger documentatie is in constructie
 
 Deze documentatie is nog niet klaar.
 
-</Note>
+</Fixme>
 
 ## Constructie
 
