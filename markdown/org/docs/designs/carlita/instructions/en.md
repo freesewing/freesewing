@@ -4,7 +4,7 @@ title: "Carlita coat: Sewing Instructions"
 
 ### Step 1: Draft and Cut the missing Lining and Facing Parts
 
-Some parts for Carlton require you to draft parts from the existing parts. The following are a list of what parts you need to draft, [see Carlton Cutting](/docs/designs/carlton/cutting/) for details on how to cut them.
+Some parts for Carlita require you to draft parts from the existing parts. The following are a list of what parts you need to draft, [see Carlita Cutting](/docs/designs/carlita/cutting/) for details on how to cut them.
 
 #### Drafting
 
