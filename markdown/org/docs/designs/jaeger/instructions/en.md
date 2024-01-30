@@ -2,13 +2,13 @@
 title: "Jaeger jacket: Sewing Instructions"
 ---
 
-<Note>
+<Fixme>
 
 ###### Jaeger documentation is under construction
 
 This documentation is not yet finished.
 
-</Note>
+</Fixme>
 
 ## Construction
 

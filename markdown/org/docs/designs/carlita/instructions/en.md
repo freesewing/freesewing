@@ -54,13 +54,13 @@ Don't forget the seam allowance for these pieces when cutting if you are making 
 
 #### Maker's notes
 
-<Warning>
+<Fixme>
 
 We don't have fully worked out instructions for Carlita yet.
 Below are some notes from [@AnnekeCaramin](/users/AnnekeCaramin) who
 [made Carlita](http://www.annekecaramin.com/2018/02/this-is-one-of-those-origin-superhero.html).
 
-</Warning>
+</Fixme>
 
 - Find and mark roll line on lapel,
 - Draft back stay & cut from heavy muslin or hair canvas if you want to be absolutely bulletproof
