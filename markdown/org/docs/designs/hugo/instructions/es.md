@@ -2,7 +2,7 @@
 title: "Sudadera con capucha Hugo: Instrucciones de costura"
 ---
 
-<Note>
+<Fixme>
 
 ###### Documentación en construcción
 
@@ -11,7 +11,7 @@ Desplácese hacia abajo, está incrustado en esta página.
 
 Ahora las malas noticias: Las instrucciones escritas para Hugo todavía no están completas.
 
-</Note>
+</Fixme>
 
 ## Vídeo
 
