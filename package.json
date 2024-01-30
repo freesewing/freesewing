@@ -68,7 +68,7 @@
     "chalk": "^4.1.0",
     "codecov": "^3.8.3",
     "cross-env": "^7.0.2",
-    "esbuild": "^0.19.0",
+    "esbuild": "^0.20.0",
     "esbuild-plugin-yaml": "^0.0.1",
     "eslint": "^8.23.1",
     "eslint-plugin-jsonc": "^2.4.0",
