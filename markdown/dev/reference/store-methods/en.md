@@ -23,5 +23,5 @@ as second parameter a single configuration object for the method.
 
 ## Store methods we maintain
 
-<ReadMore list />
+<ReadMore />
 

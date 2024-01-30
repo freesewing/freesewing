@@ -33,7 +33,7 @@ Object settings = {
 
 Below is a complete list of all supported properties in a settings object:
 
-<ReadMore list />
+<ReadMore />
 
 ## Notes
 
