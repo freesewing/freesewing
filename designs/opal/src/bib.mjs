@@ -51,30 +51,22 @@ function draftBib({
   points.outseamTopCp1 = points.cfWaist
     .translate((points.cfWaist.dist(points.outseamWaist) * 1) / 2, 0)
     .shiftFractionTowards(points.outseamWaist, 1 / 3)
-  options.bibCenterTaper != 0
-    ? (paths.waistCurve = new Path()
-        .move(points.cfWaist)
-        .curve(points.cfWaistCp2, points.outseamTopCp1, points.outseamWaist)
-        .hide())
-    : (paths.waistCurve = new Path()
-        .move(points.outseamWaist.flipX(points.cfWaist))
-        .curve(
-          points.outseamTopCp1.flipX(points.cfWaist),
-          points.cfWaistCp2.flipX(points.cfWaist),
-          points.cfWaist
-        )
-        .curve(points.cfWaistCp2, points.outseamTopCp1, points.outseamWaist)
-        .hide())
+  paths.waistCurve = new Path()
+    .move(points.outseamWaist.flipX(points.cfWaist))
+    .curve(
+      points.outseamTopCp1.flipX(points.cfWaist),
+      points.cfWaistCp2.flipX(points.cfWaist),
+      points.cfWaist
+    )
+    .curve(points.cfWaistCp2, points.outseamTopCp1, points.outseamWaist)
+    .hide()
 
   points.outseamTop = points.outseamWaist.translate(0, -waistToWaist * options.outseamHeight)
   points.topSide = new Point(
-    points.cfWaist.x * (1 - options.bibWidth) + measurements.waistFront * options.bibCenterTaper,
+    points.cfWaist.x * (1 - options.bibWidth),
     -measurements.hpsToWaistFront * options.bibHeight
   )
-  points.cfTop = new Point(
-    points.cfWaist.x + measurements.waistFront * options.bibCenterTaper,
-    -measurements.hpsToWaistFront * options.bibHeight
-  )
+  points.cfTop = new Point(points.cfWaist.x, -measurements.hpsToWaistFront * options.bibHeight)
   store.set('bibFrontHeight', -points.cfTop.y)
   points.cfMax = points.cfWaist.translate(0, (-points.cfWaist.dist(points.cfTop) * 1) / 2)
   points.cfTopCp2 = points.cfTop.shiftFractionTowards(points.cfMax, 2 / 3)
@@ -87,11 +79,9 @@ function draftBib({
     points.placketCenterBottom.y
   )
   if (options.bibPlacketLayers > 0) {
-    options.bibCenterTaper != 0
-      ? (paths.placket = new Path().move(points.placketCenterBottom).line(points.placketSideBottom))
-      : (paths.placket = new Path()
-          .move(points.placketSideBottom.flipX(points.placketCenterBottom))
-          .line(points.placketSideBottom))
+    paths.placket = new Path()
+      .move(points.placketSideBottom.flipX(points.placketCenterBottom))
+      .line(points.placketSideBottom)
     paths.placket.setClass('fabric dashed')
     paths.placket.addText('opal:bibPlacket', 'center')
 
@@ -143,36 +133,22 @@ function draftBib({
     )
   }
 
-  if (options.bibCenterTaper != 0) {
-    paths.seam = new Path()
-      .move(points.cfTop)
-      .curve(points.cfTopCp2, points.cfWaistCp1, points.cfWaist)
-      .curve(points.cfWaistCp2, points.outseamTopCp1, points.outseamWaist)
-      .line(points.outseamTop)
-      .addClass('fabric')
-    paths.hem = new Path()
-      .move(points.outseamTop)
-      .line(points.topSide)
-      .line(points.cfTop)
-      .addClass('fabric')
-  } else {
-    paths.seam = new Path()
-      .move(points.outseamTop.flipX(points.cfWaist))
-      .line(points.outseamWaist.flipX(points.cfWaist))
-      .curve(
-        points.outseamTopCp1.flipX(points.cfWaist),
-        points.cfWaistCp2.flipX(points.cfWaist),
-        points.cfWaist
-      )
-      .curve(points.cfWaistCp2, points.outseamTopCp1, points.outseamWaist)
-      .line(points.outseamTop)
-    paths.hem = new Path()
-      .move(points.outseamTop)
-      .line(points.topSide)
-      .line(points.topSide.flipX(points.cfTop))
-      .line(points.outseamTop.flipX(points.cfWaist))
-      .addClass('fabric')
-  }
+  paths.seam = new Path()
+    .move(points.outseamTop.flipX(points.cfWaist))
+    .line(points.outseamWaist.flipX(points.cfWaist))
+    .curve(
+      points.outseamTopCp1.flipX(points.cfWaist),
+      points.cfWaistCp2.flipX(points.cfWaist),
+      points.cfWaist
+    )
+    .curve(points.cfWaistCp2, points.outseamTopCp1, points.outseamWaist)
+    .line(points.outseamTop)
+  paths.hem = new Path()
+    .move(points.outseamTop)
+    .line(points.topSide)
+    .line(points.topSide.flipX(points.cfTop))
+    .line(points.outseamTop.flipX(points.cfWaist))
+    .addClass('fabric')
 
   // Draft the pocket.
   if (options.pocketBib) {
@@ -252,39 +228,22 @@ function draftBib({
         .line(points.pocketSideBottom)
         .line(points.pocketSideTop)
         .addClass('fabric dashed')
-    if (options.pocketBib && options.bibCenterTaper != 0) {
-      paths.bibPocketHem.hide()
-      paths.bibPocketSeam.hide()
-    }
     store.set(
       'bibPocketCenter',
       points.pocketCenterTop.shiftFractionTowards(points.pocketCenterBottom, 1 / 2)
     )
   }
 
-  if (options.bibCenterTaper != 0)
-    points.bibPocketText = points.pocketCenterTop
-      .shiftFractionTowards(points.pocketCenterBottom, 1 / 16)
-      .addText('opal:pocketBib')
-  else
-    points.bibPocketText = points.pocketCenterTop
-      .shiftFractionTowards(points.pocketCenterBottom, 1 / 16)
-      .addText('opal:pocketBib', 'center')
+  points.bibPocketText = points.pocketCenterTop
+    .shiftFractionTowards(points.pocketCenterBottom, 1 / 16)
+    .addText('opal:pocketBib', 'center')
 
   if (sa) {
-    if (options.bibCenterTaper != 0) {
-      paths.sa = paths.seam
-        .offset(sa)
-        .join(paths.hem.offset(absoluteOptions.hemAllowance))
-        .close()
-        .addClass('fabric sa')
-    } else {
-      paths.sa = paths.seam
-        .offset(sa)
-        .join(paths.hem.offset(absoluteOptions.hemAllowance))
-        .close()
-        .addClass('fabric sa')
-    }
+    paths.sa = paths.seam
+      .offset(sa)
+      .join(paths.hem.offset(absoluteOptions.hemAllowance))
+      .close()
+      .addClass('fabric sa')
   }
 
   macro('pd', {
@@ -329,33 +288,18 @@ function draftBib({
     to: points.cfWaist,
     x: points.outseamWaist.x + (sa + 45),
   })
-  if (options.bibCenterTaper != 0) {
-    macro('hd', {
-      id: 'wTop',
-      from: points.cfTop,
-      to: points.topSide,
-      y: points.cfTop.y - (absoluteOptions.hemAllowance + 15),
-    })
-    macro('hd', {
-      id: 'wTotal',
-      from: points.cfTop,
-      to: points.outseamTop,
-      y: points.cfTop.y - (absoluteOptions.hemAllowance + 30),
-    })
-  } else {
-    macro('hd', {
-      id: 'wTop',
-      from: points.topSide.flipX(points.cfTop),
-      to: points.topSide,
-      y: points.topSide.y - (absoluteOptions.hemAllowance + 15),
-    })
-    macro('hd', {
-      id: 'wTotal',
-      from: points.outseamTop.flipX(points.cfTop),
-      to: points.outseamTop,
-      y: points.cfTop.y - (absoluteOptions.hemAllowance + 30),
-    })
-  }
+  macro('hd', {
+    id: 'wTop',
+    from: points.topSide.flipX(points.cfTop),
+    to: points.topSide,
+    y: points.topSide.y - (absoluteOptions.hemAllowance + 15),
+  })
+  macro('hd', {
+    id: 'wTotal',
+    from: points.outseamTop.flipX(points.cfTop),
+    to: points.outseamTop,
+    y: points.cfTop.y - (absoluteOptions.hemAllowance + 30),
+  })
 
   points.grainlineTop = points.cfTop
   points.grainlineBottom = points.cfWaist
@@ -364,14 +308,11 @@ function draftBib({
     to: points.grainlineBottom,
   })
 
-  store.cutlist.addCut({ cut: options.bibCenterTaper != 0 ? 2 : 1, from: 'fabric' })
+  store.cutlist.addCut({ cut: 1, from: 'fabric' })
 
-  points.title =
-    options.bibCenterTaper != 0
-      ? points.cfTop
-          .shiftFractionTowards(points.outseamWaist, 1 / 2)
-          .translate(scale * -20, scale * 35)
-      : points.cfTop.shiftFractionTowards(points.cfWaist, 1 / 2).translate(scale * 20, scale * 15)
+  points.title = points.cfTop
+    .shiftFractionTowards(points.cfWaist, 1 / 2)
+    .translate(scale * 20, scale * 15)
   macro('title', { at: points.title, nr: 3, title: 'opal:bib' })
   points.logo = points.title.translate(-scale * 35, scale * 35)
   snippets.logo = new Snippet('logo', points.logo)
@@ -384,15 +325,12 @@ export const bib = {
   draft: draftBib,
   options: {
     // How much extra fabric to put in the waist, horizontally, to help the overalls fit around the belly. Larger values work better on larger bellies.
-    bibWaistDrop: { pct: 3, min: 0, max: 15, menu: 'fit' },
-    // How much extra fabric to put in the center, vertically, to help the overalls fit around the belly, and helps to avoid sagging on the sides of the bib. Larger values work better on larger bellies. A value of 0 causes the bib to be drafted in one piece. Any other value causes it to be drafted in two pieces.
-    bibCenterTaper: { pct: 2, min: 0, max: 10, menu: 'fit' },
+    bibWaistDrop: { pct: 5, min: 0, max: 15, menu: 'fit' },
     // Height of the front bib, as a percentage of the way from the waist to the HPS. Measured from the natural waist.
     bibHeight: { pct: 70, min: 20, max: 90, menu: 'style' },
     // Width of the top of the bib, as a percentage of the waistFront measurement.
     bibWidth: { pct: 50, min: 20, max: 100, menu: 'style' },
     // Set to true to the bib on the fold, or false to draft the full piece.
-    bibTwoParts: { bool: true, menu: 'construction' },
     bibPocketOnFold: { bool: false, menu: 'construction' },
     // How wide to make the reinforced placket at the top of the bib.
     bibPlacketWidth: {
