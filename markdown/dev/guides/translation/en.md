@@ -34,11 +34,8 @@ When you do, we will send you an email with all further instructions.
 
 <Link compact>
 
-###### [Request a FreeSewing translator invite](https://next.freesewing.org/translation/join)
+###### [Request a FreeSewing translator invite](https://freesewing.org/translation/join)
 </Link>
-
-<Fixme compact>This link above still needs to be implemented in the new v3
-website</Fixme>
 
 <Tip>
 
@@ -57,12 +54,8 @@ a new language with the link below.
 
 <Link compact>
 
-###### [Suggest a new FreeSewing language](https://next.freesewing.org/translation/suggest-language)
+###### [Suggest a new FreeSewing language](https://freesewing.org/translation/suggest-language)
 </Link>
-
-<Fixme compact>
-This link above still needs to be implemented in the new v3 website
-</Fixme>
 
 <Tip>
 
@@ -169,7 +162,7 @@ review process when you submit a pull request on GitHub.
 
 Once your translation is approved, Crowdin will automatically submit a pull
 request on GitHub to update the translation files in our repository. And the
-next time our website or software packages get build, they will include the new
+next time our website or software packages get built, they will include the new
 translations.
 
 ## Machine translation
