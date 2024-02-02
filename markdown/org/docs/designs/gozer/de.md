@@ -8,3 +8,5 @@ Aus Spaß habe ich das hier gemacht, damit ich es auf dem Discord-Server posten 
 
 Wouter
 
+<br />
+<DesignInfo design='gozer' docs />
