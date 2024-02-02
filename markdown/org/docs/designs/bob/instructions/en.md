@@ -20,7 +20,7 @@ as your choice for the front layer, aka the visible one.
 If you decide to go for two layers, simply join them together at the edges before applying
 the bias tape.
 
-You probably want to pin or bast this prior to sewing. The two different types of fabric
+You probably want to pin or baste this prior to sewing. The two different types of fabric
 will behave differently, so secure them in place prior to sewing the together.
 
 Make sure to sew close to the edge so that the stitches will be under the bias tape
@@ -34,12 +34,6 @@ You probably want to start at the bottom strap, as this way the joint of the bia
 seam will be covered when the bib is worn.
 
 Just work your way around, and take your time.
-
-<Fixme>
-
-Provide generic instructions for sewing bias tape
-
-</Fixme>
 
 ## Step 3: Install snaps or button
 
