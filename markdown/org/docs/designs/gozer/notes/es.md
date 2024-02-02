@@ -2,5 +2,5 @@
 title: "Gozer el fantasma: Notas del diseñador"
 ---
 
-<Fixme>El diseñador, ni FreeSewing, son responsables de nada que se derive del uso de este patrón. Estás avisado.</Fixme>
+<Warning>The designer, nor FreeSewing, are liable for anything that follows the use of this pattern. You've been warned.</Warning>
 
