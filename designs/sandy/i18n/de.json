@@ -42,6 +42,10 @@
     "hemWidth": {
       "t": "Saumbreite",
       "d": "Breite des Saumes"
+    },
+    "panels": {
+      "t": "Panels",
+      "d": "Number of panels"
     }
   }
 }
