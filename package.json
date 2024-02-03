@@ -83,7 +83,7 @@
     "mustache": "^4.0.1",
     "nyc": "^15.1.0",
     "prettier": "^3.0.0",
-    "pretty-quick": "^3.0.0",
+    "pretty-quick": "^4.0.0",
     "prop-types": "^15.7.2",
     "react": "^18.2.0",
     "rimraf": "^5.0.0",
