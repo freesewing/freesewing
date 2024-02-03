@@ -15,7 +15,7 @@ Object svg.asRenderProps()
 
 ## Returned object properties
 
-This returns JavaScript object has the following properties:
+The returned JavaScript object has the following properties:
 
 | Name | Description |
 | ----:| ----------- |
