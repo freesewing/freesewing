@@ -8,8 +8,12 @@ Unreleased:
       - This plugin now supports translation of nested arrays of strings, giving you more flexibility to concatenate translated parts of strings
     react-components:
       - This Pattern component now supports translation of nested arrays of strings, giving you more flexibility to concatenate translated parts of strings
+    sandy:
+      - Added a new *panels* option
 
   Fixed:
+    carlton:
+      - Fixed a stray seam allowance path on the collar
     charlie:
       - The back pocket welt (4) and front pocket facing (8) incorrectly indicated to cut 2 instead of 4 in the cutlist. Fixes #5791
 
