@@ -1,6 +1,4 @@
-\--
-title: "Lumira leggings: Sewing Instructions"
----------------------------------------------
+## Lumira leggings: Sewing Instructions
 
 <Note>
 
@@ -59,4 +57,4 @@ in the right spot.
 
 Now you can add the elastic to the leg openings. Otherwise finish those in any way you like.
 
-Vous avez terminé ! Enjoy your Lumira leggings!
+Vous avez terminé ! Enjoy your Lumina leggings!
