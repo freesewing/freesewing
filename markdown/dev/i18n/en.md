@@ -12,7 +12,7 @@ FreeSewing currently is available in the following languages:
 - French
 - Spanish
 - German
-- Ukranian
+- Ukrainian
 
 ## Translation guide
 

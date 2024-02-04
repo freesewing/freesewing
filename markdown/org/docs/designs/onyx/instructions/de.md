@@ -4,9 +4,9 @@ title: "Onyx einteilig: Anleitung zum Nähen"
 
 <Note>
 
-Es wird empfohlen, einen Serger/Overlocker zu verwenden, um die Größe der fertigen Nähte klein zu halten und die Nähte dehnbar zu machen. Wenn du einen Serger mit eingeschaltetem Messer verwendest, wird eine Nahtzugabe von 1/2 Zoll (12 mm) empfohlen. Wenn du einen Overlocking-Fuß an einer Nähmaschine verwendest oder ohne Messer versäuberst, wird eine Nahtzugabe von 6 mm (1/4 Zoll) empfohlen.
+Es wird empfohlen, einen Serger/Overlocker zu verwenden, um die Größe der fertigen Nähte klein zu halten und die Nähte dehnbar zu machen. If using a serger with the knife engaged, a seam allowance of 1/2 inch (12 mm) is recommended. Wenn du einen Overlocking-Fuß an einer Nähmaschine verwendest oder ohne Messer versäuberst, wird eine Nahtzugabe von 6 mm (1/4 Zoll) empfohlen.
 
-Wenn nicht anders angegeben, solltest du für die Herstellung dieses Kleidungsstücks Stretch-Dampf verwenden. Wir empfehlen einen 4-Faden-Overlockstich oder einen Overlock-Fuß an einer Nähmaschine, wenn du keinen Serger zur Verfügung hast.
+Unless otherwise stated, use stretch steams for construction of this garment. Wir empfehlen einen 4-Faden-Overlockstich oder einen Overlock-Fuß an einer Nähmaschine, wenn du keinen Serger zur Verfügung hast.
 
 Säume oder Bündchen sind optional (da Strick nicht ausfranst), aber wenn du Säume oder Bündchen anbringst, solltest du darauf achten, dass sie sich dehnen können. In dieser Anleitung wird beschrieben, wie du mit einer Doppelnadel einen einfach gefalteten Saum anfertigst, der sich für Bademode oder leichte Kleidungsstücke eignet, und wie du ein Rippenstrickbündchen anfertigst, das sich für Fleece-Pyjamas oder Kigurumi eignet.
 
@@ -73,7 +73,7 @@ Die Länge des Halsbandes wird hauptsächlich durch das Material des Halsbandes 
 Hinweis: Wenn die Vorder- oder Rückseite an der Falte _zugeschnitten wurde_, überspringe die Schritte zur Herstellung der Mittelnähte. Hinweis: Diese Anleitung soll die Nähte so formen, dass die Seitennähte nach hinten und die Mittelnähte nach links verlaufen. Hinweis: In dieser Anleitung wird davon ausgegangen, dass sich der Reißverschluss auf der Vorderseite befindet. Wenn sich der Reißverschluss auf der Rückseite befindet oder kein Reißverschluss vorhanden ist, muss die Anleitung leicht abgeändert werden. Note: If you're having the zipper zip up across the neckband (recommended for unisuits), remember that.
 
 Wenn du kein Futter verwendest:
-- (wenn die Vorderseite _nicht_ war, schneide _an der Falte_) Lege den Reißverschluss und das Nackenband entlang der Mittelnaht in Position, wobei du die Nahtzugabe berücksichtigen musst. _lege die Seiten gut zusammen_. Markiere, wo der untere Anschlag des Reißverschlusses ist, und steppe/versäume die Vorderteile zusammen, indem du an der Schrittgabel beginnst und am unteren Anschlag des Reißverschlusses aufhörst.
+- Lege den Reißverschluss _gute Seite nach oben_ entlang der Mittelnaht und richte ihn sorgfältig aus. Die Ausrichtung des oberen Anschlags ist wichtiger als die des unteren Anschlags, und versuche, den Stoff beim Ausrichten des Reißverschlusses nicht zu dehnen oder zu raffen.
 - (wenn das Rückenteil _nicht_ war, schneide _an der Falte_zu) Mit _guten Seiten zusammen_, nähe die Rückenteile zusammen.
 - Lege _gut zusammen_und nähe die Vorder- und Rückenteile entlang der beiden Seitennähte zusammen.
 - Springe zu Schritt 2.
@@ -186,7 +186,7 @@ Wenn du ein Futter verwendest, führe die folgenden zwei Schritte aus, ansonsten
 Hinweis: Dieser Schritt ist mit oder ohne Futter gleich. Behandle das Futter und den Modestoff als Einheit.
  - Lege dein Kleidungsstück _mit der rechten Seite nach außen_.
  - Öffne den Reißverschluss.
- - Lege den Reißverschluss _gute Seite nach oben_ entlang der Mittelnaht und richte ihn sorgfältig aus. Die Ausrichtung des oberen Anschlags ist wichtiger als die des unteren Anschlags, und versuche, den Stoff beim Ausrichten des Reißverschlusses nicht zu dehnen oder zu raffen.
+ - (wenn die Vorderseite _nicht_ war, schneide _an der Falte_) Lege den Reißverschluss und das Nackenband entlang der Mittelnaht in Position, wobei du die Nahtzugabe berücksichtigen musst. _lege die Seiten gut zusammen_. Die Ausrichtung des oberen Anschlags ist wichtiger als die des unteren Anschlags, und versuche, den Stoff beim Ausrichten des Reißverschlusses nicht zu dehnen oder zu raffen.
  - Drehe eine Seite des Reißverschlusses um eine halbe Umdrehung nach außen und lege ihn so entlang der offenen Naht, dass die Bandkante entlang der Naht liegt und die gezahnte Kante zum Großteil des Stoffes zeigt. Richte die Kante des Stoffs an der Kante des Klebebands aus und befestige sie.
 
  - Wenn du Schwimmstoff nähst, nähst du den Stoff und das Reißverschlussband mit einem geraden Strich auf jeder Seite zusammen. Das dient zum einen dazu, alles zusammenzuhalten, und zum anderen, um eine zweite Sicherheitsnaht für den Reißverschluss zu haben. Bei weniger kniffligen Stoffen ist dieser Schritt optional.

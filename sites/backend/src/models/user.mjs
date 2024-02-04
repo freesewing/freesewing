@@ -1675,6 +1675,7 @@ UserModel.prototype.asAccount = function () {
     consent: this.record.consent,
     control: this.record.control,
     createdAt: this.record.createdAt,
+    ehash: this.record.ehash,
     email: this.clear.email,
     data,
     ihash: this.record.ihash,

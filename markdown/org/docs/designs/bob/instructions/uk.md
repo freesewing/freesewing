@@ -19,23 +19,17 @@ title: "Слюнявчик Боб: Інструкція з пошиття"
 
 If you decide to go for two layers, simply join them together at the edges before applying the bias tape.
 
-Можливо, ви захочете приколоти або закріпити його перед тим, як пришивати. Два різних типи тканини поводитимуться по-різному, тому закріпіть їх на місці перед тим, як зшивати разом.
+You probably want to pin or baste this prior to sewing. Два різних типи тканини поводитимуться по-різному, тому закріпіть їх на місці перед тим, як зшивати разом.
 
 Make sure to sew close to the edge so that the stitches will be under the bias tape finish later.
 
 ## Крок 2: Наклейте скотч
 
-Ми наклеїмо бейку в якості оздоблення по всьому краю нагрудника.
+We're going to apply bias tape as a finish around the entire edge of the bib.
 
 You probably want to start at the bottom strap, as this way the joint of the bias seam will be covered when the bib is worn.
 
 Просто пройдіться по колу і не поспішайте.
-
-<Fixme>
-
-Надайте загальні інструкції для пришивання бейки
-
-</Fixme>
 
 ## Крок 3: Встановіть прив'язки або кнопку
 

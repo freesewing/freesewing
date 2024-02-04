@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/new-design",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Initializer package for a new FreeSewing design: npx @freesewing/new-design",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -36,11 +36,11 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "axios": "1.5.1",
+    "axios": "1.6.7",
     "chalk": "5.3.0",
     "execa": "8.0.1",
     "mustache": "4.2.0",
-    "ora": "7.0.1",
+    "ora": "8.0.1",
     "prompts": "2.4.2",
     "recursive-readdir": "2.2.3"
   },
@@ -60,8 +60,8 @@
     "tag": "latest"
   },
   "engines": {
-    "node": "18",
-    "npm": "9"
+    "node": ">=18",
+    "npm": ">=9"
   },
   "bin": {
     "new-design": "./index.mjs"

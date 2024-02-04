@@ -2,7 +2,7 @@
 title: "Schouder neep"
 ---
 
-Wel of geen schouderpas op de rug om de rug af te ronden.
+Whether or not to include a back shoulder dart to round the back.
 
 
 

@@ -2,7 +2,7 @@
 title: Bindbreedte
 ---
 
-Regelt de breedte van de kniw-binding op Aaron.
+Controls the width of the knit binding on Aaron.
 
 De standaard gebreide bindbreedte is 6 x de naadtoeslag. Voor metrische gebruikers met de standaard naadtoeslag van 1 cm resulteert dit in een gebreide binding van 1,5 cm breed, wat een goede waarde is.
 
@@ -10,5 +10,5 @@ Voor imperial gebruikers (die een standaard naadtoeslag van 0,5" hebben) of gebr
 
 <Note>
 
-Deze optie wordt uitgedrukt in procenten van de naadtoeslag. Dus de standaard s600%, of 6 keer de naadtoeslag,.
+This option is expressed in percentage of the seam allowance. So the default is 600%, or 6 time the seam allowance.
 </Note>

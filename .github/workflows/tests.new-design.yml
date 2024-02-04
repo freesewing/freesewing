@@ -1,4 +1,12 @@
 name: Test new-design
+
+on: [push]
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo Noop.
+
   #on:
   #  push:
   #    branches:

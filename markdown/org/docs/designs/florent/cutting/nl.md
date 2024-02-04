@@ -2,7 +2,7 @@
 title: "Florent platte pet: Snij-instructies"
 ---
 
-Om Floren te maken, knip je de volgende delen uit:
+To make Florent, cut out the following parts:
 
 - **Buitenstof**
   - Knip **1 bovenkant** aan de stofvouw (laat dan de naadwaarde aan middenvoor weg) of **2 bovenkant** met naadwaarde middenvoor.

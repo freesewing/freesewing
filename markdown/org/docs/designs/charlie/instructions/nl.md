@@ -193,7 +193,7 @@ Strijk de binnennaad open wanneer je klaar bent.
 
 Controleer of je rechter- en linkerbeen overeenkomen met de markeringen op het patroon. Het kruis van het rechterbeen moet iets verder uitsteken dan het linkerbeen. Raadpleeg het patroon en knip zo nodig overtollig deel van het linkerbeen af.
 
-Het kan waardevol zijn om met krijt of draad de **middenvoor** op elk been te markeren. Zo weet je zeker dat de onderdelen op de juiste plek zitten tijdens het vliegen.
+Het kan waardevol zijn om met krijt of draad de **middenvoor** op elk been te markeren. This will help you make sure the pieces are in the right place during fly construction.
 
 </tip>
 
@@ -276,14 +276,14 @@ Denk eraan dat de naadtoeslag iets rechts van het middenvoorpand begint, het mid
 
 Zorg ervoor dat je de gevouwen rand van het rechterbeen net links van de tandjes van de rits legt om te voorkomen dat er stof tussen de rits komt.
 
-Stop met naaien bij de bovenste inkeping van de 'fly extention', iets boven de kruisnaad, en naai averechts. Als je dit niet doet, kun je het verlengstuk niet uit de weg houden tijdens het naaien van de J-naad.
+Stop sewing at the top 'fly extension' notch, slightly above the cross seam, and be sure to backstitch. Als je dit niet doet, kun je het verlengstuk niet uit de weg houden tijdens het naaien van de J-naad.
 
 ![Bevestig het verlengstuk aan het rechterbeen](AttachExtensionToRightLeg.svg)
 
 
 ### Maak de rits vast aan de voorkant van de gulp.
 
-Let erop dat je het been links uitlijnt op de rechter middenvoor. Het kan waardevol zijn om te spelden of te rijgen door het beleg en de rechterzijkant van het ritsband. (We moeten de linkerkant van het ritsband aan het linkerbeen naaien). Zorg ervoor dat alles gevoerd is en naai het gulpgedeelte aan de linkerkant van de rits. Probeer dicht bij de rits te komen, maar niet te dicht.
+Let erop dat je het been links uitlijnt op de rechter middenvoor. It can be valuable to pin or baste through the facing and right side of the zipper tape. (We moeten de linkerkant van het ritsband aan het linkerbeen naaien). Zorg ervoor dat alles gevoerd is en naai het gulpgedeelte aan de linkerkant van de rits. Probeer dicht bij de rits te komen, maar niet te dicht.
 
 ![Facing aan rits bevestigen](AttachFacingToZipper.svg)
 
@@ -292,15 +292,15 @@ Let erop dat je het been links uitlijnt op de rechter middenvoor. Het kan waarde
 
 <tip>
 
-Gebruik een stukje papier als geleider om de J-naad te naaien, dit kun je van je patroon knippen langs de aangegeven steeklijn.
+Use a piece of paper as a guide to sew the J seam, this can be cut from your pattern along the indicated stitch line.
 
 </tip>
 
-Stik nu de zogenaamde J-naad van de gulp. Zorg ervoor dat de vliegextensie buiten de weg blijft. Omdat je niet helemaal langs het verlengstuk van de gulp hebt genaaid, zou je het uit de weg moeten kunnen spelden.
+Stik nu de zogenaamde J-naad van de gulp. Zorg ervoor dat de vliegextensie buiten de weg blijft. Since you didn't sew all the way along the fly extension, you should be able to pin it out of the way.
 
 #### Balk de onderkant van de gulp aan
 
-Maak nu een bartack aan de onderkant van de J-naad (het horizontale deel), maar zorg er dit keer voor dat je ook het verlengstuk van de gulp opvangt. Je kunt er ook voor kiezen om een extra bar tack langs de J-naad toe te voegen (in paars weergegeven).
+Now, bartack the very bottom of the J-seam (the horizontal part) but this time make sure to also catch the fly extension. Je kunt er ook voor kiezen om een extra bar tack langs de J-naad toe te voegen (in paars weergegeven).
 
 ![De J-naad naaien](SewTheJSeam.svg)
 
@@ -310,7 +310,7 @@ Maak nu een bartack aan de onderkant van de J-naad (het horizontale deel), maar 
 
 <Note>
 
-Voor de efficiëntie, zullen we een lange strook riem herhalen die we in 8 delen zullen verdelen.
+For efficiency, we will construct one long strip of belt loop that we'll divide into 8 parts.
 
 </Note>
 
@@ -360,7 +360,7 @@ Stik een lijn van stiksel aan de binnenkant van de tailleband, dicht bij de rand
 
 Leg de tailleband met de goede kanten op elkaar langs de taille. For the straight waistband, make sure the side with the standard seam allowance is aligned with the waist, and not the side with double seam allowance.
 
-Zorg er ook voor dat je achterliggende naadwaarde voorbij het begin en het einde van de tailleband achterlaat.
+Also make sure to leave sufficient seam allowance beyond the start and end of the waistband.
 
 Stik langs de totale taille en bevestig de tailleband en stik de riemlusjes in één keer.
 
@@ -398,7 +398,7 @@ Dit houdt in dat de achterkant van de tailleband die we gemaakt hebben om iets v
 
 ### Stik de riemlusjes vast om ze breder te maken
 
-Je kunt de riemlussen het beste iets breder maken dan de tailleband, zodat er bredere riemen in passen.
+It's best to make the belt loops a bit wider than the waistband, to accommodate wider belts.
 
 Laat hiervoor de tailleband plat liggen en naai hem vast met een bartack van ongeveer 1,5 cm onder de tailleband.
 

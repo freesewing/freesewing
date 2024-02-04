@@ -6,7 +6,7 @@ title: "Sandy cirkelrok: Stofopties"
 
 Een cirkelrok is een heel veelzijdig kledingstuk en kan van allerlei verschillende stoffen worden gemaakt. Het hangt allemaal af van het beoogde gebruik en de voorkeursstijl.
 
-- Als je een rok voor elke dag wilt die gemakkelijk te wassen is, dan is **Linnen** en **Katoen** de juiste keuze.
+- If you wish for an everyday, easy to wash skirt then **Linen** and **Cotton** is the way to go.
 - Als je op zoek bent naar iets formelers, kun je **Suiting Fabrics**proberen.
 - Als je iets warms wilt voor de winter kun je **Wools**proberen.
 - Als je iets vloeiends wilt dat drapeert, kun je lichtgewicht materialen proberen zoals **Chiffon**.

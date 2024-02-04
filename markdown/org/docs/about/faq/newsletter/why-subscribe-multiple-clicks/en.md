@@ -30,7 +30,7 @@ That's where it would be over. Except for one technical detail that's also impor
 <Warning compact>This is more technical and harder to understand</Warning>
 
 Another reason is that while we could make it so that clicking the link in your 
-email would immeadiatly subcribe you, it would be in violation of internet standards.
+email would immediately subscribe you, it would be in violation of internet standards.
 Specifically, the __HTTP__ protocol's __GET method__ definition which states that:
 
 

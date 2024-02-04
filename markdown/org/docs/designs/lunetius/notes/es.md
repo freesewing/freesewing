@@ -2,7 +2,7 @@
 title: "Lunetius Lacerna: Notas del diseñador"
 ---
 
-<Note compact>Lunetius, Tiberius and Walburga really come as a set. Not only were they born at the same time, they are designed to work together to form a full outfit. Not that this means that they can't be made seperately ;)</Note>
+<Note compact>Lunetius, Tiberius and Walburga really come as a set. Not only were they born at the same time, they are designed to work together to form a full outfit. Not that this means that they can't be made separately ;)</Note>
 
 Lunetius the lacerna is the pattern that went through the most name-changes and iterations behind the scenes. ¿Por qué? Because I found conflicting information in secondary literature about how this type of cloak was called and who wore it when.
 
@@ -10,7 +10,7 @@ To start at the beginning, I wanted a cloak that goes with the rest of my costum
 
 Coding the pattern was the easiest part of the whole process.
 
-Oh, and why the name `lunetius`? Well, that actually is the name of the character I made this whole outfit for. And yes, he has a special relationship with the moon.
+Oh, and why the name `lunetius`? Well, that actually is the name of the character I made this whole outfit for. Well, that actually is the name of the character I made this whole outfit for. And yes, he has a special relationship with the moon.
 
 Rika
 

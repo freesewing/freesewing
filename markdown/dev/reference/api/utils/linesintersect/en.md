@@ -2,7 +2,7 @@
 title: utils.linesIntersect()
 ---
 
-The `utils.linesInersect()` function finds the intersection between two line
+The `utils.linesIntersect()` function finds the intersection between two line
 segments. Returns a [Point](../point) object for the intersection, or `false`
 if the lines don't intersect.
 

@@ -2,7 +2,7 @@
 title: "Поясна виточка"
 ---
 
-Чи варто включати виточку на талії, щоб закруглити спинку.
+Whether or not to include a back waist dart to round the back.
 
 
 

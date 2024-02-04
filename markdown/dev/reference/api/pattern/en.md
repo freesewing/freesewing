@@ -82,4 +82,4 @@ It just so happens that in most cases, there will be only one settings object in
 
 ## Pattern methods
 
-<ReadMore list />
+<ReadMore />

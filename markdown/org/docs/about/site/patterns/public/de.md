@@ -4,4 +4,4 @@ title: Öffentlich
 
 Diese Einstellung legt fest, ob dein Muster über **öffentlich zugänglich ist** oder nicht.
 
-Standardmäßig sind die Muster privat und nur du kannst auf deine eigenen Muster zugreifen. Wenn du dein Muster mit anderen teilen möchtest - vielleicht weil sie Interesse gezeigt haben oder du nach Anregungen suchst - solltest du es zuerst veröffentlichen.
+Standardmäßig sind die Muster privat und nur du kannst auf deine eigenen Muster zugreifen. If you'd like to share your pattern with others -- perhaps because they showed an interest or you are looking for input -- you should first make it public.

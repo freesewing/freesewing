@@ -581,11 +581,9 @@ export const Patterns = () => {
           {t('patternNew')}
         </Link>
       </p>
-      {selCount ? (
-        <button className="btn btn-error" onClick={removeSelectedPatterns}>
-          <TrashIcon /> {selCount} {t('patterns')}
-        </button>
-      ) : null}
+      <button className="btn btn-error" onClick={removeSelectedPatterns} disabled={selCount < 1}>
+        <TrashIcon /> {selCount} {t('patterns')}
+      </button>
       <TableWrapper>
         <table className="table table-auto">
           <thead className="border border-base-300 border-b-2 border-t-0 border-x-0">

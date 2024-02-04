@@ -69,13 +69,13 @@ title: "Octoplushy, плюшевий восьминіг: інструкція з
 
 - За допомогою _гарних сторін разом_ з'єднайте частини ніг з частинами тулуба.
 - Зшийте кожну ніжку від надсічки B/D вниз і назад до надсічки B/D.
-- Якщо ножна частина трохи коротша за ніжку на головній частиніm , вам доведеться полегшити її під час підгонки. Для полегшення цього процесу передбачені насічки.
+- If the leg part is slightly shorter than the leg on the head parts you will have to ease it in while matching it up. Для полегшення цього процесу передбачені насічки.
 
 <Tip>
 
 Найпростіше пришити одну ногу майже до наступної надсічки В/Д, зупинити шиття, приколоти наступну ногу і продовжити шиття, а не намагатися приколоти і пришити всі ноги за один раз. 
 
-Ті, хто більш впевнений у собі, можуть робити це на машині з опущеною голкою, але якщо ви менш впевнені, ви можете витягнути голку з машини, закріпити її шпилькою, а потім почати шити знову, трохи вище початкового стібка, щоб закріпити його.
+Those who are more confident can do this with the needle down on their machine but if you are less confident you may wish to remove from the machine, pin and then start sewing again a little bit over your original stitching to secure it.
   
 </Tip>
 

@@ -4,7 +4,7 @@ title: "Top Tamiko : Instructions de couture"
 
 ### Étape 1 : Terminer l'emmanchure
 
-![Étape : Terminer la couture de la manche](step03.png)
+![Finish the armhole seam](step03.png)
 
 - Terminez la couture de la manche avec un ourlet étroit.
 

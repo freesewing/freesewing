@@ -125,7 +125,7 @@ What we want is for our original pattern to be shown as the background of our de
 To do so, we needed to take a couple of steps:
 
 - Turn it into SVG: Because FreeSewing patterns are SVG
-- Turn it into a JavaSCript file: Because you can't `import` an SVG like that
+- Turn it into a JavaScript file: Because you can't `import` an SVG like that
 - Give it an `id`: So we can use that to reference it when adding the snippet
 - `import` the SVG into our part
 - Create a plugin to add it as a snippet

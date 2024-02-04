@@ -2,7 +2,7 @@
 title: "Walburga Wappenrock: Designer Notes"
 ---
 
-<Note compact>Lunetius, Tiberius and Walburga really come as a set. Not only were they born at the same time, they are designed to work together to form a full outfit. Not that this means that they can't be made seperately ;)</Note>
+<Note compact>Lunetius, Tiberius and Walburga really come as a set. Not only were they born at the same time, they are designed to work together to form a full outfit. Not that this means that they can't be made separately ;)</Note>
 
 Walburga is the odd one out of the three patterns, because it still is "historically inspired", but does not actually follow any real historical garment. It is based on tabards ("Wappenrock" in German, hence the name starting with a W), handwavingly placed in a western European middle ages setting. To be honest, it is inspired more by the Legend of Zelda than anything real.
 

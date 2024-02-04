@@ -1,8 +1,9 @@
 ---
-title: "Unterschenkelverkleinerung (Octoplushy)"
+title: Unterschenkelverkleinerung (Octoplushy)
 ---
 
-Mit dieser Einstellung wird der Längenunterschied zwischen dem oberen und dem unteren Stoff der Beine angepasst. Je größer der Unterschied ist, desto mehr werden sich die Beine einrollen wollen.
+Mit dieser Einstellung wird der Längenunterschied zwischen dem oberen und dem unteren Stoff der Beine angepasst.
+Je größer der Unterschied ist, desto mehr werden sich die Beine einrollen wollen.
 
 ## Effekt dieser Option auf das Schnittmuster
 

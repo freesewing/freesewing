@@ -6,7 +6,7 @@ The goal of our mask is to stop droplets. So you want to go for something that f
 Then again, you need to be able to breath through your mask, so we want fabric that breathes, without letting droplets through.
 
 In addition, we want the inside to be comfortable on our skin. So here I'd suggest a tightly woven cotton or viscose/rayon.
-For the outter fabric, cotton again, or a tightly woven wool.
+For the outer fabric, cotton again, or a tightly woven wool.
 
 <Note>
 

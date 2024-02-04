@@ -17,10 +17,10 @@ Om Jaeger te maken heb je het volgende nodig:
 
 <Note>
 
-###### Waar haal je al deze spullen
+###### Where to get all this stuff
 
-Jaeger maken is een leuk en leerzaam project, maar het kan een uitdaging zijn om alle benodigde onderdelen
-en stukjes te vinden.
+Making Jaeger is a fun and rewarding project, but getting all the required bits
+and pieces can be challenging.
 
 Dat komt omdat dit soort projecten iets ambitieuzer is dan het typische naaiproject voor thuis op
 , en daarom is het onwaarschijnlijk dat je plaatselijke fourniturenwinkel

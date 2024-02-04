@@ -20,7 +20,7 @@ Le menu **View** à gauche te permet de sélectionner la vue. Chaque vue a un bu
 
 - **Éditeur de motifs**: c'est ici que tu peux modifier ton motif.
 - **Mesures du motif**: Tu peux ici choisir le jeu de mesures à utiliser pour générer le motif, ou modifier les mesures manuellement.
-- **Tests de motifs**: permet de tester le motif (il s'agit d'une fonction avancée).
+- **Tests de motifs**: permet de tester le motif (il s'agit d'une fonction avancée). Il s'agit d'une fonction avancée.
 - **Mise en page d'impression**: permet de disposer manuellement les parties du motif afin d'optimiser la mise en page pour l'impression.
 - **Enregistrer le motif sous...**: Permet d'enregistrer le motif dans ton compte.
 - **Exporter le motif**: permet d'exporter le motif au format PDF ou SVG.

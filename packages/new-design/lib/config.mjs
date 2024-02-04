@@ -57,10 +57,6 @@ yarn-error.log*
 
 `,
   fetch: {
-    // account:
-    // sets
-    // shared
-    // control
     config: [
       {
         from: 'measurements.mjs',
@@ -89,6 +85,19 @@ yarn-error.log*
         from: `sde/mock/${file}.mjs`,
         to: `shared/components/mdx/${file}.mjs`,
       })),
+      // Mock various other files
+      {
+        from: `sde/mock/info.mjs`,
+        to: `shared/components/designs/info.mjs`,
+      },
+      {
+        from: `sde/mock/designs.mjs`,
+        to: `shared/config/designs.mjs`,
+      },
+      {
+        from: `sde/mock/linedrawings.mjs`,
+        to: `shared/components/designs/linedrawings/index.mjs`,
+      },
       // .env file
       {
         from: 'sde/env.local',
@@ -102,5 +111,3 @@ yarn-error.log*
     })),
   },
 }
-
-console.log(config.fetch.pkgs)

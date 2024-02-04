@@ -30,7 +30,6 @@ export function Svg(pattern) {
   this.attributes.add('xmlns:freesewing', 'http://freesewing.org/namespaces/freesewing')
   this.attributes.add('freesewing', version)
   this.layout = {}
-  this.body = ''
   this.style = ''
   this.defs = new Defs()
 }
@@ -48,7 +47,6 @@ Svg.prototype.asRenderProps = function () {
   return {
     attributes: this.attributes.asRenderProps(),
     layout: this.layout,
-    body: this.body,
     style: this.style,
     defs: this.defs.asRenderProps(),
   }

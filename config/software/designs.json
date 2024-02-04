@@ -519,6 +519,16 @@
     ],
     "techniques": []
   },
+  "naomiwu": {
+    "description": "A FreeSewing pattern for Naomi Wu's signature cargo skirt",
+    "code": "Joost De Cock",
+    "design": ["Naomi Wu", "Joost De Cock"],
+    "difficulty": 3,
+    "lab": false,
+    "org": false,
+    "tags": ["bottoms", "skirts"],
+    "techniques": ["button", "hem", "pocket", "lining"]
+  },
   "noble": {
     "code": "Wouter Van Wageningen",
     "description": "A FreeSewing pattern for a princess seam bodice block",
@@ -554,14 +564,25 @@
     ]
   },
   "onyx": {
-    "lab": true,
-    "org": true,
-    "description": "A FreeSewing pattern for one-piece garments",
     "code": "Thrunic",
+    "description": "A FreeSewing pattern for one-piece garments",
     "design": "Thrunic",
     "difficulty": 4,
-    "tags": ["swimwear", "pajamas", "onePiece"],
-    "techniques": ["hem", "curvedSeam", "stretch", "lining", "zipper", "ribbing"]
+    "lab": true,
+    "org": true,
+    "tags": [
+      "swimwear",
+      "pajamas",
+      "onePiece"
+    ],
+    "techniques": [
+      "hem",
+      "curvedSeam",
+      "stretch",
+      "lining",
+      "zipper",
+      "ribbing"
+    ]
   },
   "paco": {
     "code": "Joost De Cock",
@@ -633,14 +654,22 @@
     ]
   },
   "shelly": {
-	"lab": true,
-	"org": true,
-    "description": "A FreeSewing pattern for a raglan shirt, perfect for swimshirts",
     "code": "Thrunic",
+    "description": "A FreeSewing pattern for a raglan shirt, perfect for swimshirts",
     "design": "Thrunic",
     "difficulty": 2,
-    "tags": ["tops", "swimwear"],
-	"techniques": ["hem", "stretch", "curvedSeam", "raglanSleeve"]
+    "lab": true,
+    "org": true,
+    "tags": [
+      "tops",
+      "swimwear"
+    ],
+    "techniques": [
+      "hem",
+      "stretch",
+      "curvedSeam",
+      "raglanSleeve"
+    ]
   },
   "shin": {
     "code": "Joost De Cock",
@@ -699,14 +728,20 @@
     ]
   },
   "skully": {
-    "description": "A FreeSewing pattern for skully, our logo, a plushy toy",
     "code": "Wouter Van Wageningen",
+    "description": "A FreeSewing pattern for skully, our logo, a plushy toy",
     "design": "Wouter Van Wageningen",
     "difficulty": 4,
     "lab": true,
     "org": true,
-    "tags": ["accessories", "toys"],
-    "techniques": ["curvedSeam", "precision"]
+    "tags": [
+      "accessories",
+      "toys"
+    ],
+    "techniques": [
+      "curvedSeam",
+      "precision"
+    ]
   },
   "sven": {
     "code": "Joost De Cock",
@@ -799,6 +834,21 @@
       "lining"
     ]
   },
+  "tristan": {
+    "code": "Wouter van Wageningen",
+    "description": "A FreeSewing pattern for a fitted top with prince(ss) seams",
+    "design": "Natalia Sayang",
+    "difficulty": 3,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "tops"
+    ],
+    "techniques": [
+      "curvedSeam",
+      "precision"
+    ]
+  },
   "uma": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern for a basic, highly-customizable underwear pattern",
@@ -860,7 +910,11 @@
       "bottoms",
       "trousers"
     ],
-    "techniques": ["curvedSeam", "hem", "weltPocket"]
+    "techniques": [
+      "curvedSeam",
+      "hem",
+      "weltPocket"
+    ]
   },
   "yuri": {
     "code": "Hellgy",
@@ -880,13 +934,30 @@
     ]
   },
   "otis": {
-    "description": "A FreeSewing pattern for a baby romper",
     "code": "Wouter Van Wageningen",
+    "description": "A FreeSewing pattern for a baby romper",
     "design": "Wouter Van Wageningen",
     "difficulty": 2,
     "lab": true,
     "org": true,
-    "tags": [  ],
-    "techniques": [ ]
+    "tags": [],
+    "techniques": []
+  },
+  "lumira": {
+    "code": "Wouter Van Wageningen",
+    "description": "A FreeSewing pattern for leggings",
+    "design": "Wouter Van Wageningen",
+    "difficulty": 3,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "bottoms",
+      "trousers"
+    ],
+    "techniques": [
+      "stretch",
+      "curvedSeam",
+      "elastic"
+    ]
   }
 }

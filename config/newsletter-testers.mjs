@@ -1,10 +1,14 @@
-export const testers = [
-  {
-    email: 'joost@joost.at',
-    ehash: 'asefsdfsdfsdlfsllehash',
-  },
-  {
-    email: 'joost@decock.org',
-    ehash: 'zlasdadfsdlfsjjuehash',
-  },
-]
+export const testers = {
+  en: [
+    {
+      email: 'joost@joost.at',
+      ehash: 'asefsdfsdfsdlfsllehash',
+    },
+  ],
+  nl: [
+    {
+      email: 'joost@decock.org',
+      ehash: 'zlasdadfsdlfsjjuehash',
+    },
+  ],
+}

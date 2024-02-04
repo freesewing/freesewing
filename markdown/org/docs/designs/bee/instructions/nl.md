@@ -8,7 +8,7 @@ Zorg ervoor dat je een rekbare steek gebruikt
 
 <Note>
 
-Als je een omkeerbare top maakt, wordt de tweede kleur de voeringstof genoemd.  
+When making a reversible top the second colour will be referred to as the lining fabric.  
 De inkepingen in dit patroon werken meer als stippen, dus **klem ze niet** om ze te markeren.
 
 </Note>
@@ -30,7 +30,7 @@ De inkepingen in dit patroon werken meer als stippen, dus **klem ze niet** om ze
 - Knip de naadtoeslagen bij en knip de hoeken af.
 - Keer binnenstebuiten. Pers.
 
-<Note>Herhaal dit voor de overige stropdasdelen</Note>
+<Note>Repeat this for the remaining neck tie pieces</Note>
 
 ### Stap 2: De kopjes
 
@@ -51,9 +51,9 @@ De inkepingen in dit patroon werken meer als stippen, dus **klem ze niet** om ze
 <Tip>
 
 Als je naadtoeslag breed is, moet je de naadtoeslagen van de openingen misschien een beetje bijknippen om de bulk te verminderen.  
-Als je problemen hebt met het keren van de cups, kun je een van de volgende methodes proberen:
+If you are having trouble turning the cups you can try one of these methods:
 
-- Maak een opening van 2,5 cm in de voor- of zijnaad en keer daar doorheen, door de opening dicht te _slippen_ naaien of door de opening dicht te _edgestikken_ naaien tijdens stap 7.
+- Create a 2.5cm (1") gap in the front or side seam and turn through that, either _slipstitch_-ing the gap closed or _edgestitch_-ing it closed during Step 7.
 - Verbreed een van de bestaande openingen en draai daar doorheen. Dan wordt bij het keren _edgestikt_ of _slipsteek_ het verbrede deel gesloten.
 
 </Tip>
@@ -85,7 +85,7 @@ Er zijn ook inkepingen aan weerszijden van het midden van het bandstuk om je een
 
 <Note>
 
-Je kunt er de voorkeur aan geven om de ene cup halverwege over de andere te wikkelen. Om dit te doen plaats je de zijkanten van de cups op de andere inkepingen en leg je de voorkant ervan langs het middelpunt met de linkerkant bovenop.
+Je kunt er de voorkeur aan geven om de ene cup halverwege over de andere te wikkelen. To do this place the sides of the cups at the outer notches and lay their fronts pass the midpoint with the left on top.
 
 </Note>
 

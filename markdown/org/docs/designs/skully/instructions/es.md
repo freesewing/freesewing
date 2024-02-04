@@ -91,12 +91,12 @@ Turn it right sides out.
 
 ## Paso 5: Pelo
 
-Ahora es el momento de añadir pelo al skully. Cuando coloques el hilo de bordar, asegúrate de añadir nudos en la parte interior, o de lo contrario será muy fácil arrancarle el pelo a Skully más tarde.
+Now is the time to add hair to Skully. Cuando coloques el hilo de bordar, asegúrate de añadir nudos en la parte interior, o de lo contrario será muy fácil arrancarle el pelo a Skully más tarde.
 
 ## Step 6: Enjoy!
 
 - Rellena el peluche con relleno por la abertura que has dejado, asegurándote de llenar bien todas las partes . Las zonas de delante son las más difíciles de alcanzar.
-- Usa _punto escondido_ o _sobrehilado_ para cerrar la apertura.
+- _Slipstitch_ or _whipstitch_ the opening closed.
 
 ## Paso 7: Ajustes
 

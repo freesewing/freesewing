@@ -90,7 +90,9 @@ export const PostLayout = ({ mdx, frontmatter, type, dir }) => {
           <Breadcrumbs />
           <h1 className="break-words searchme">{frontmatter.title}</h1>
           <PostMeta frontmatter={frontmatter} t={t} />
-          <PostImage imgId={`${type}-${dir}`} frontmatter={frontmatter} />
+          {type === 'newsletter' ? null : (
+            <PostImage imgId={`${type}-${dir}`} frontmatter={frontmatter} />
+          )}
           <div className="block xl:hidden">
             <Toc toc={frontmatter.toc} wrap />
           </div>

@@ -103,7 +103,7 @@ Con alrededor de 6 cm para ir antes de completar nuestro círculo, es hora de co
 
 ![Marcar como enlace](step03f.png)
 
-Tome uno de los bordes y lo estire a lo largo de los 3 cm separándola desde el punto de partida como lo haría mientras se coser.
+Tome uno de los bordes, y lo estire a lo largo de los 3 cm separándolo del punto de partida como lo haría mientras coser.
 
 Marque el enlace donde llegue al punto de partida. Haga lo mismo con el otro extremo.
 
@@ -113,7 +113,7 @@ Marque el enlace donde llegue al punto de partida. Haga lo mismo con el otro ext
 
 Doblar tu camisa de cualquier manera te hace más fácil colocar ambos extremos de unión con buenos lados juntos, alineando las marcas. Consume a ellos juntos en la marca.
 
-> 6 cm no es mucho, pero debe ser suficiente para conseguir que ambos bordes cómodamente debajo de su máquina de coser para coser togther.
+> 6 cm no es mucho, pero debería ser suficiente para conseguir que ambos bordes cómodamente debajo de su máquina de coser juntos.
 
 ### Terminar los últimos 6 cm de encuadernado
 

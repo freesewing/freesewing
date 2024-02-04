@@ -10,7 +10,7 @@ La falda se añadió por pudor, principalmente para los bañadores, aunque permi
 
 Onyx sí copia algunos rasgos de Shelly, como las mangas raglán para mayor movilidad y el uso de partes delanteras y traseras simétricas, excepto el cuello y la cabeza.
 
-Onyx debe su nombre a la piedra preciosa y a su profundo color negro, que no por casualidad es un gran color de base para los bañadores Onyx, sobre todo si se quiere que parezcan un traje de neopreno.
+Onyx is named after the gemstone and its deep black color, which not coincidentally is a great base color for Onyx swimsuits, particularly if one wants them to look like a wetsuit.
 
 Un poco de historia: Onyx podría no haber nacido nunca de no haber sido por las protestas y boicots anti-LGBTQ+ de la primavera de 2023, que provocaron que un unisuit que me gustaba especialmente fuera retirado de las estanterías de una importante tienda estadounidense, y que yo necesitara un sustituto adecuado.
 

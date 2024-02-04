@@ -1,8 +1,8 @@
 ---
-title: Largeur
+title: indéfini
 ---
 
-Cette option détermine la largeur de la poche dans son ensemble. 
+indéfini
 
 
 

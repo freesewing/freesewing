@@ -12,4 +12,4 @@ Pour faire du shin, vous aurez besoin des éléments suivants :
 > 
 > Comme pour tous les tissus étirés, un serger/overlock vous facilitera la vie.
 > 
-> Si vous n'en avez pas, ne désespérez pas. Vous n'en avez pas vraiment besoin. Vous pouvez utiliser une autre technique pour les coutures étirées, comme une maille en zig-zag, une double aiguille ou un fil élastique.
+> Si vous n'en avez pas, ne désespérez pas. Vous n'en avez pas vraiment besoin. You can use another technique for stretch seams, such as a zig-zag stitch, twin needle, or elastic thread.

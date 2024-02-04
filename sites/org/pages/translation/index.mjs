@@ -65,7 +65,7 @@ const TranslationPage = ({ page }) => {
         <Translators />
 
         <h2>Supported Languages</h2>
-        <p>We currently support the following five languages:</p>
+        <p>We currently support the following languages:</p>
         <ul className="list list-inside list-disc ml-4">
           <li>
             <b>{t('locales:en')}</b>
@@ -83,11 +83,6 @@ const TranslationPage = ({ page }) => {
           <li>
             <b>{t('locales:es')}</b>
           </li>
-        </ul>
-        <p>
-          In addition, comminity members have started initiatives to add the following langauges:
-        </p>
-        <ul className="list list-inside list-disc ml-4">
           <li>
             <b>{t('locales:uk')}</b>
           </li>

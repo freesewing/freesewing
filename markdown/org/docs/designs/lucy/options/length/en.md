@@ -1,8 +1,8 @@
 ---
-title: Length
+title: undefined
 ---
 
-The length option determines how long your pocket will be. 
+undefined
 
 
 

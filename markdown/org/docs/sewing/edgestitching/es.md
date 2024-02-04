@@ -2,7 +2,7 @@
 title: Costura de bordes
 ---
 
-El pespunte es un tipo especial de _pespunte_. Es específico por su ubicación. To edgestitch means to topstitch right next to a seam, typically about 3mm or 1/8 inch next to it.
+Edgestitching is a specific type of _topstitching_. Es específico por su ubicación. To edgestitch means to topstitch right next to a seam, typically about 3mm or 1/8 inch next to it.
 
 ![Bordado en una sudadera Hugo de FreeSewing](edgestitching.jpg)
 

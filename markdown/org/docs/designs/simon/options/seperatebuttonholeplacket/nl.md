@@ -1,8 +1,8 @@
 ---
-title: "Apart knoopsgatenpat"
+title: Apart knoopsgatenpat
 ---
 
-![Apart knoopsgatenpat](seperatebuttonholeplacket.svg)
+![Separate buttonhole placket](seperatebuttonholeplacket.svg)
 
 Kies of je het knoopsgatenpat als apart patroondeel wil.
 

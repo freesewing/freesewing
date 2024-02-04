@@ -7,7 +7,7 @@ Strictly speaking, this tutorial is about learning to use FreeSewing's core
 library to do parametric design, and we made great strides in that regard.
 
 But FreeSewing is a lot more than its core library, and you might be wondering
-how your pattern options magically end up in the development environmnt under
+how your pattern options magically end up in the development environment under
 **Design options**:
 
 ![Design options menu](./options.png)
@@ -29,7 +29,7 @@ options: {
 It's just a silly example, but there's two important take-aways here:
 
 - You don't have to use options in your design. You can add options for things
-  that are not about the desing, but that you still want to capture the user's
+  that are not about the design, but that you still want to capture the user's
   input for (like shipping preferences in this case).
 - You can add extra properties to an option. Each option type has it's required
   properties. But you can add more and use them as you see fit.

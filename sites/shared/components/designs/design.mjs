@@ -80,7 +80,12 @@ export const DesignCard = ({ name, lineDrawing = false }) => {
     <button
       onClick={() =>
         setModal(
-          <ModalWrapper flex="col" justify="top lg:justify-center" slideFrom="right">
+          <ModalWrapper
+            flex="col"
+            justify="top lg:justify-center"
+            slideFrom="right"
+            keepOpenOnClick
+          >
             <h1>{t(`designs:${name}.t`)}</h1>
             <DesignInfo design={name} modal />
           </ModalWrapper>

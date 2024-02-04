@@ -85,15 +85,14 @@ export const jargon = {
 Now import the plugin, and pass it your jargon:
 
 ```js
-var remark = require('remark')
-var html = require('remark-html')
-var plugin = require('remark-jargon')
-var jargon = require('./jargon.js')
+import rehypeJargon from 'rehype-jargon'
+import { jargon } from './jargon.js'
+import {read} from 'to-vfile'
+import {unified} from 'unified'
 
-remark()
-  .use(html)
-  .use(plugin, { jargon: jargon })
-  .process('This is a plugin for _remark_ originally written for _freesewing_.', function (err, file) {
+const file = await unified()
+  .use(rehypeJargon, {jargon: jargon})
+  .process('This is a plugin for _rehype_ originally written for _freesewing_.', function (err, file) {
     console.log(String(file))
   })
 ```
@@ -170,13 +169,6 @@ Typically, you will want to stick to:
 This plugin is written by/for [FreeSewing](https://github.com/freesewing).
 For help or feedback, please stop by [the FreeSewing chat room](https://gitter.im/freesewing/development) or
 [create an issue](https://github.com/freesewing/freesewing/issues/new).
-
-
-## Use with Gatsby
-
-Please see [gatsby-remark-jargon](https://github.com/freesewing/freesewing/tree/develop/packages/gatsby-remark-jargon) for
-info and instructions on how to use this plugin with [Gatsby](https://www.gatsbyjs.org/). 
-
 
 
 ## What am I looking at? 🤔

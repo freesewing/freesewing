@@ -2,7 +2,7 @@
 title: "Pince de taille"
 ---
 
-Inclus ou non une fléchette à la taille pour arrondir le dos.
+Whether or not to include a back waist dart to round the back.
 
 
 

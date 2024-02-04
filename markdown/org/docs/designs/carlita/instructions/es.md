@@ -4,7 +4,7 @@ title: "Abrigo Carlita Instrucciones de costura"
 
 ### Paso 1: Esbozar y cortar las piezas que faltan del forro y del revestimiento
 
-Algunas piezas para Carlton requieren que redactes piezas a partir de las existentes. A continuación encontrarás una lista de las piezas que necesitas calar, [consulta la sección de corte de Carlton](/docs/designs/carlton/cutting/) para saber cómo cortarlas.
+Some parts for Carlita require you to draft parts from the existing parts. The following are a list of what parts you need to draft, [see Carlita Cutting](/docs/designs/carlita/cutting/) for details on how to cut them.
 
 #### Redacción
 
@@ -54,13 +54,13 @@ Las marcas de los botones y los bolsillos no son necesarias para estas piezas, a
 
 #### Notas de Maker
 
-<Warning>
+<Fixme>
 
 Todavía no hemos elaborado las instrucciones para Carlita.
 A continuación encontrarás algunas notas de [@AnnekeCaramin](/usuarios/AnnekeCaramin) que
 [hizo Carlita](http://www.annekecaramin.com/2018/02/this-is-one-of-those-origin-superhero.html).
 
-</Warning>
+</Fixme>
 
 - Encuentra y marca la línea de rollos en el lapel,
 - Si quieres estar absolutamente a prueba de balas de bala & cortarte el muslin pesado o el lienzo de cabello

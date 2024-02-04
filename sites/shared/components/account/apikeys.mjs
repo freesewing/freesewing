@@ -330,11 +330,9 @@ export const Apikeys = ({ setId }) => {
           {t('newApikey')}
         </Link>
       </p>
-      {selCount ? (
-        <button className="btn btn-error" onClick={removeSelectedApikeys}>
-          <TrashIcon /> {selCount} {t('apikeys')}
-        </button>
-      ) : null}
+      <button className="btn btn-error" onClick={removeSelectedApikeys} disabled={selCount < 1}>
+        <TrashIcon /> {selCount} {t('apikeys')}
+      </button>
       <table className="table table-auto">
         <thead className="border border-base-300 border-b-2 border-t-0 border-x-0">
           <tr className="b">

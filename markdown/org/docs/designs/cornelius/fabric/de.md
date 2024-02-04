@@ -4,7 +4,7 @@ title: "Cornelius Radlerhosen: Stoff Optionen"
 
 ### Hauptstoff
 
-Für dieses Muster eignet sich jedes **Hosenmaterial (**). Generell solltest du alles vermeiden, was mehr als 7 oz (230 g/m²) wiegt, da es dann eher zu steif und unbequem ist. Du möchtest etwas, das ein wenig Wärme spendet, aber trotzdem gut drapierbar ist, wie **Corduroy** oder **Medium Weight Suiting** Stoffe. Wenn du nach etwas historisch korrektem suchst, dann ist **Medium weight wool suiting** die richtige Wahl. **Leinen** ist auch eine Option, besonders wenn du etwas möchtest, das nicht zu warm ist.
+Für dieses Muster eignet sich jedes **Hosenmaterial (**). Generell solltest du alles vermeiden, was mehr als 7 oz (230 g/m²) wiegt, da es dann eher zu steif und unbequem ist. Du möchtest etwas, das ein wenig Wärme spendet, aber trotzdem gut drapierbar ist, wie **Corduroy** oder **Medium Weight Suiting** Stoffe. If you are looking for something more historically correct, then **Medium weight wool suiting** is the way to go. **Leinen** ist auch eine Option, besonders wenn du etwas möchtest, das nicht zu warm ist.
 
 <Note>
 

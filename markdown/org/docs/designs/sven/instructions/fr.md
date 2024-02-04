@@ -4,7 +4,7 @@ title: "Sweat-shirt Sven : Instructions de couture"
 
 ### Étape 1 : Fermer les coutures d'épaule
 
-- Placez le dos et l'avant sur les deux côtés avec le bon toghether.
+- Place the back and front on top of each other with the good sides together.
 - Alignez la couture de l'épaule et couvez-la à la marge de couture standard.
 - Répétez pour l'autre couture d'épaule.
 
@@ -38,7 +38,7 @@ title: "Sweat-shirt Sven : Instructions de couture"
 
 - Mesurer la largeur de la manche au manche
 - Couper un morceau de corniche qui est (deux fois cette longueur - 2cm/1po) et 7cm/3" de large
-- Plier la bordure double le long du côté le plus long et coudre ensemble le bord pour avoir un anneau continu
+- Fold the ribbing double along the longest side, and sew together the edge so you have a continuous ring
 - Sortez votre Sven de votre intérieur
 - Pliez l'anneau de corniche avec le bon côté vers l'extérieur, et glissez le côté plié dans votre manche intérieure / extérieure
 - Alignez le côté coupé du cône avec le bord de la manche et fixez-le en place. Le ruban est un peu plus court, donc étirez-le un peu en épinglant pour le mettre dans la manche.
@@ -51,7 +51,7 @@ title: "Sweat-shirt Sven : Instructions de couture"
 - Mesurer la largeur de Sven à l'ourlet
 - Coupez un morceau de corniche 1,9 fois cette longueur et une largeur de 7cm/3"
 - Il se peut que vous deviez attacher des pièces différentes si votre étoffe n'est pas assez large
-- Plier la bordure double le long du côté le plus long et coudre ensemble le bord pour avoir un anneau continu
+- Fold the ribbing double along the longest side, and sew together the edge so you have a continuous ring
 - Sortez votre Sven de votre intérieur
 - Pliez l'anneau de corniche avec le bon côté vers l'extérieur, et glissez le côté plié dans votre corps intérieur / extérieur
 - Alignez le côté coupé du cône avec le bord du corps et fixez-le en place. Le ruban est un peu plus court, donc étirez-le un peu en épinglant pour le mettre dans le corps.

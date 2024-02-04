@@ -2,7 +2,7 @@
 title: Randnaht
 ---
 
-Die Kantensteppung ist eine besondere Form der _Absteppung_. Sie ist aufgrund ihrer Lage besonders. Hierbei wird je nach Abstand zur Naht unter anderem das knappkantige (ca. 3mm bzw. 1/8 inch), oder auch das füßchenbreite (Nähfußkante als Abstandhalter) Absteppen unterschieden.
+Edgestitching is a specific type of _topstitching_. Sie ist aufgrund ihrer Lage besonders. Hierbei wird je nach Abstand zur Naht unter anderem das knappkantige (ca. 3mm bzw. 1/8 inch), oder auch das füßchenbreite (Nähfußkante als Abstandhalter) Absteppen unterschieden.
 
 ![Kantenstich an einem FreeSewing Hugo Hoodie](edgestitching.jpg)
 

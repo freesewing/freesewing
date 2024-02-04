@@ -4,13 +4,13 @@ title: "Cornelius Radlerhosen: Anleitung zum Nähen"
 
 ### Schritt 1: Die Fronttaschen
 
-- Bügle unter die Nahtzugaben der nicht eingekerbten Kanten der Pokcet-Verkleidungen.
+- Press under the seam allowances of the non-notched edges of the pocket facings.
 - Stecke die linke Seite der Taschenbespannung an die rechte Seite der Taschenbeutel, _Kantenstich_ die gefalteten Kanten an die Taschenbeutel.
 - _Hefte_ die Nahtzugaben der eingekerbten Kanten der Taschenbesetzungen an die Taschenbeutel.
 - Nähe die Taschenbeutel rechts auf rechts an die Vorderseite und bügle sie dann auf die linke Seite.
 - Falte die Taschen entlang der Falzlinie in der Mitte und lege sie rechtsherum zusammen. Nähen Sie den Boden des Taschenbeutels zusammen.
 - Alternativ kannst du _French Seam_ die Bodennähte der Taschenbeutel zusammennähen, wenn du das möchtest.
-- _Hefte_ die Oberseite und die Seiten der Taschenbeutel an die vorderen Nahtzugaben, indem du die Kerben einkerbst.
+- _Baste_ the top and side of the pocket bags to the front seam allowances matching notches.
 
 <Note>
 
@@ -70,7 +70,7 @@ Verwende die Methode des von dir gewählten Manschettenstils, da sie je nach Sti
 - Bügle die obere Nahtzugabe auf die linke Seite der verbleibenden Beinbandteile. Schneide die obere Nahtzugabe zurück.
 - Nähen Sie das restliche Bein und die Teile rechts auf rechts an die angebrachten Beinbänder entlang der Unterseite und der Seiten.
 - Drehe die Beinbänder nach außen. Presse.
-- _Steppstich_ oder _Steppstich_ die gefaltete Kante des Bunds nach vorne und achte darauf, dass die gefaltete Kante die Nähte bedeckt.
+- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitching.
 - Nähen Sie das Knopfloch. Die Knöpfe werden später angenäht.
 
 <Note>
@@ -89,7 +89,7 @@ Wenn du dir Sorgen über einen Luftzug machst, kannst du aus deinem Taschenstoff
 - Bügle die obere Nahtzugabe auf die linke Seite der verbleibenden Beinbandteile. Schneide die obere Nahtzugabe zurück.
 - Nähen Sie das restliche Bein und die Teile rechts auf rechts an die angebrachten Beinbänder entlang der Unterseite und der Seiten.
 - Drehe die Beinbänder nach außen. Presse.
-- _Steppstich_ oder _Steppstich_ die gefaltete Kante des Bunds nach vorne und achte darauf, dass die gefaltete Kante die Nähte bedeckt.
+- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitching.
 - Nähen Sie das Knopfloch. Die Knöpfe werden später angenäht.
 
 <Note>
@@ -108,13 +108,13 @@ Du kannst die Beinbänder wie einen modernen Bund zusammennähen, wenn du möcht
 
 ### Schritt 5: Bund
 
-- Bearbeite eines der Bundteile mit der von dir bevorzugten Methode.
+- Face one of the waistband pieces using your preferred method.
 - Nähen Sie das konfektionierte Bundstück rechts auf rechts an die Oberseite der Beine.
 - Bügle den Bund und die Nahtzugabe nach oben und vom Bein weg. Schneide die Nahtzugabe zurück, um das Volumen zu reduzieren.
 - Bügle die untere Nahtzugabe auf die linke Seite des verbleibenden Bundstücks. Schneide die untere Nahtzugabe zurück.
 - Nähe den restlichen Bund rechts auf rechts an den verdeckten Bund entlang der Oberseite und der Seiten.
 - Drehe den Bund nach außen. Presse.
-- _Steppstich_ oder _Steppstich_ die gefaltete Kante des Bunds nach vorne und achte darauf, dass die gefaltete Kante die Nähte bedeckt.
+- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitching.
 - Nähen Sie das Knopfloch. Die Knöpfe werden später angenäht.
 
 <Note>

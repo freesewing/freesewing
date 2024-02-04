@@ -1,3 +1,4 @@
+<!-- __SDEFILE__ - This file is a dependency for the stand-alone environment -->
 <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="2000" height="1500" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 1500">
     <defs>
         <path id="path" d="M 0 0 l 183 0 m 448 10 l 254 0 m 368 10 l 253 0" style="fill: none; stroke-linejoin: round;"/>
@@ -9,7 +10,7 @@
         .color {stroke: #fff86c; stroke-width: 16px; stroke-linecap: butt;}
         .cm {stroke: #000; stroke-width: 16px; stroke-dasharray: 2 10; stroke-linecap: butt;}
     ]]></style>
-    
+
     <!-- Background image -->
     <image xlink:href="./standing.jpg" x="0" y="0" width="2000" height="1500" />
 
@@ -21,7 +22,7 @@
         <use x="0" y="0" xlink:href="#path" class="tape"/>
         <use x="0" y="0" xlink:href="#path" class="color"/>
         <use x="0" y="0" xlink:href="#path" class="cm"/>
-    </g> 
+    </g>
 
     <g>
         <path style="fill: #c2875f; stroke: none;" d="M 322 730 l 25 40 l 52 -5 l -13 -30 z m 790 32 l -10 10 l 10 10 z" />

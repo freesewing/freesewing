@@ -1,4 +1,4 @@
-accountIssue: Account problem
+accountIssue: Konto-Problem
 accountIssueDesc: Hast du Probleme mit deinem FreeSewing-Konto?
 addImage: Bild hochladen
 allOk: Alles ist fantastisch
@@ -29,31 +29,31 @@ howCanYouSupportFreeSewing: Wie kannst du FreeSewing unterstützen?
 issueAssigned: Eintrag zugewiesen
 issueClosed: Eintrag geschlossen
 issueReferenced: Issue referenced
-issueReopened: Issue Re-Openened
+issueReopened: Issue Re-Opened
 maintainerSupport: Maintainer-Unterstützung
 maintainerSupport1: Wenn du <b>ein FreeSewing-Gönner bist</b>, kannst du direkt nach oben gehen und Joost direkt kontaktieren.
 maintainerSupport2: Auch wenn Joost die Anfragen seiner Kunden mit Priorität behandelt, braucht er auch Schlaf. Behalte das also im Hinterkopf, vor allem, wenn du dich in einer anderen Zeitzone befindest.
-noComments: No comments
-noConfirmedIssues: No confirmed issues
-noReportedIssues: No reported issues
+noComments: Keine Kommentare
+noConfirmedIssues: Keine bestätigten Probleme
+noReportedIssues: Keine gemeldeten Probleme
 other: Etwas anderes
 otherDesc: Gibt es etwas anderes, bei dem du Hilfe brauchst?
-patronSponsor: Patrons / Sponsorship
-patronSponsorDesc: Do you have questions about FreeSewing patronship or (corporate) sponsorship?
+patronSponsor: Patrons / Patenschaft
+patronSponsorDesc: Hast du Fragen zur FreeSewing-Patenschaft oder zum (Unternehmens-) Sponsoring?
 question: Frage
 questionDesc: Hast du eine allgemeine Frage?
-recentlyResolvedIssues: Recently resolved issues
-reported: Reported
-reportedIssues: Reported issues
+recentlyResolvedIssues: Kürzlich gelöste Probleme
+reported: Gemeldet
+reportedIssues: Gemeldete Probleme
 security: Sicherheit
 securityDesc: Willst du ein Sicherheitsproblem oder einen Vorfall melden?
 status: Status
-submitSupportRequest: Submit support request
+submitSupportRequest: Supportanfrage einreichen
 support: Hilfe
 title: Titel
 titleDocs1: Dies ist der Titel des Eintrags
 titleDocs2: Am besten fasst du dich kurz und erfasst das Wesentliche
-to: to
+to: zu
 updates: Updates
 useGitHubInstead: Verwende stattdessen GitHub
 whatIsDiscord: Was ist Discord?

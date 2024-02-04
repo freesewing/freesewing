@@ -2,7 +2,7 @@
 title: "Gürtelschlaufen"
 ---
 
-Überzeugen Sie, wie viele Beltloops wir generieren.
+Controls how many beltloops we'll generate.
 
 
 

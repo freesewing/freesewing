@@ -4,7 +4,7 @@ title: Settings
 
 FreeSewing is all about parametric design, and the settings are the parameters
 we pass to a pattern when drafting it.  Perhaps the most important of all
-settings are the measurements, but there's other settings too.
+settings are the measurements, but there are other settings too.
 
 ## Signature
 
@@ -33,11 +33,13 @@ Object settings = {
 
 Below is a complete list of all supported properties in a settings object:
 
-<ReadMore list />
+<ReadMore />
 
 ## Notes
 
-You can pass multiple settings objects to a pattern in an array:
+You can pass a
+[multiple set of settings](/reference/api/pattern#multisets-in-freesewing)
+objects in an array to the pattern constructor:
 
 ```js
 new pattern([
@@ -49,7 +51,4 @@ new pattern([
   },
 ])
 ```
-
-<Fixme>Add link to multiset docs</Fixme>
-
 

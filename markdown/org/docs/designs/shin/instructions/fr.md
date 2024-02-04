@@ -8,13 +8,13 @@ title: "Maillot de bain Shin : Instructions de couture"
 
 ## Étape 1 : Rejoignez le dos
 
-Mettez vos deux dos les uns sur les autres avec les bons côtés ensemble, et cousez-les ensemble tout en allongeant la couture centrale.
+Put your two backs on top of each other with the good sides together, and sew them together along the center back seam.
 
 ## Étape 2 : Rejoignez les devants
 
 ### Coudre la couture avant
 
-Mettez deux de vos devants sur les uns sur les autres avec les bons côtés ensemble, et cousez-les ensemble tout en allongeant la couture centrale avant.
+Put two of your fronts on top of each other with the good sides together, and sew them together along the center front seam.
 
 Répétez avec les deux autres avant afin d'avoir deux ensembles identiques.
 
@@ -38,7 +38,7 @@ Keep your swim trunks with the good side inwards (the back at least, the front h
 
 Marquez le milieu de la longueur de votre ceinture. Fold the waistband double, and mark the middle of the width (do not take the seam allowance into account).
 
-Un peu à gauche et à droite de ceci, vous pouvez ajouter deux oeillets pour passer un cordon à travers. This will avoid an embarassing situation when you go for that big dive and now suddenly find your swim trunks on your ankles.
+Un peu à gauche et à droite de ceci, vous pouvez ajouter deux oeillets pour passer un cordon à travers. This will avoid an embarrassing situation when you go for that big dive and now suddenly find your swim trunks on your ankles.
 
 > ### Il est préférable d'ajouter des renforts
 > 
@@ -68,7 +68,7 @@ Find the front of the waistband (easy if there's eyelets, if not just fold it do
 
 Faites maintenant votre chemin autour de la taille des troncs de nage, en épinglant la ceinture.
 
-Then, sew the waistband to the swim trunks, as close to the the elastic as you can, but don't sew into the elastic.
+Then, sew the waistband to the swim trunks, as close to the elastic as you can, but don't sew into the elastic.
 
 It's fine to not sew too close the first time around, and once your elastic is attached and encased, make a second round to sew it a bit more snugly.
 
