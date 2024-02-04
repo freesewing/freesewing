@@ -1,6 +1,10 @@
 Unreleased:
 
   Added:
+    limina:
+      - Initial release
+    limira:
+      - Initial release
     plugin-annotations:
       - The `title` macro now takes a `notes` and `classes.notes` as its config, allowing you to add notes
       - The `classes.cutlist` config is removed from the title plugin, cutlist info is now included as notes

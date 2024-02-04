@@ -108,12 +108,8 @@ yarn kickstart
 
 **Official channels**
 
- - 💻 Makers website: [FreeSewing.org](https://freesewing.org)
+ - 🪡 Makers website: [FreeSewing.org](https://freesewing.org)
  - 💻 Developers website: [FreeSewing.dev](https://freesewing.dev)
- - ✅ [Support](https://github.com/freesewing/freesewing/issues/new/choose),
-   [Issues](https://github.com/freesewing/freesewing/issues) &
-   [Discussions](https://github.com/freesewing/freesewing/discussions) on
-   [GitHub](https://github.com/freesewing/freesewing)
 
 **Social media**
 
@@ -126,11 +122,6 @@ yarn kickstart
  - 💬 [Facebook](https://www.facebook.com/groups/627769821272714/)
  - 💬 [Reddit](https://www.reddit.com/r/freesewing/)
 
-## License: MIT 🤓
-
-© [Joost De Cock](https://github.com/joostdecock).  
-See [the license file](https://github.com/freesewing/freesewing/blob/develop/LICENSE) for details.
-
 ## Where to get help 🤯
 
 Check our [support page](https://freesewing.org/support), or use 
@@ -138,3 +129,7 @@ the [Issues](https://github.com/freesewing/freesewing/issues) &
 [Discussions](https://github.com/freesewing/freesewing/discussions) on
 [GitHub](https://github.com/freesewing/freesewing).
 
+## License: MIT 🤓
+
+© [Joost De Cock](https://github.com/joostdecock).  
+See [the license file](https://github.com/freesewing/freesewing/blob/develop/LICENSE) for details.
