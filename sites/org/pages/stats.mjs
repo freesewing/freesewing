@@ -1,7 +1,6 @@
-import { NavigationContext } from 'shared/context/navigation-context.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { nsMerge, getSearchParam } from 'shared/utils.mjs'
+import { nsMerge } from 'shared/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 import { useState, useEffect } from 'react'
@@ -25,7 +24,6 @@ const StatsPage = ({ page }) => {
   const { t } = useTranslation(ns)
   const backend = useBackend()
 
-  const [id, setId] = useState()
   const [stats, setStats] = useState(false)
 
   useEffect(() => {

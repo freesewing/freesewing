@@ -1,4 +1,3 @@
-import { NavigationContext } from 'shared/context/navigation-context.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge, getSearchParam } from 'shared/utils.mjs'

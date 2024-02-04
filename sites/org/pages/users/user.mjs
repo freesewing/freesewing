@@ -28,7 +28,7 @@ const UserPage = ({ page }) => {
 
   const [id, setId] = useState()
   const [user, setUser] = useState(false)
-  const { siteNav, slug, updateSiteNav } = useContext(NavigationContext)
+  const { updateSiteNav } = useContext(NavigationContext)
 
   useEffect(() => {
     const loadUser = async () => {
