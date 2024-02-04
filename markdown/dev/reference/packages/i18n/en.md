@@ -7,13 +7,14 @@ for the FreeSewing project.
 
 ## Languages
 
-We currently provide translations in 5 languages:
+We currently provide translations in the following languages:
 
  - English
  - German
  - Spanish
  - French
  - Dutch
+ - Ukrainian
 
 ## How to use these translations
 

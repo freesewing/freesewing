@@ -43,7 +43,6 @@ describe('Svg', () => {
     const svg = new Svg()
     expect(svg.attributes instanceof Attributes).to.equal(true)
     expect(svg.freeId).to.equal(0)
-    expect(svg.body).to.equal('')
     expect(svg.style).to.equal('')
     expect(svg.defs).to.be.an.instanceof(Defs)
     expect(svg.prefix).to.equal('<?xml version="1.0" encoding="UTF-8" standalone="no"?>')

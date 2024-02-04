@@ -42,6 +42,10 @@
     "hemWidth": {
       "t": "Hem width",
       "d": "Largeur de l'ourlet"
+    },
+    "panels": {
+      "t": "Panels",
+      "d": "Number of panels"
     }
   }
 }

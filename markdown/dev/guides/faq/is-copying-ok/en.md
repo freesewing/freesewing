@@ -30,7 +30,7 @@ that's an indie designer who might be depending on the sales of their pattern
 to put food on the table or some big pattern company that you feel should be
 taken down a notch: It doesn't matter. Not cool. Don't do this.
 
-## Do you accept contributrion that are a copy of an existing garment?
+## Do you accept contributions that are a copy of an existing garment?
 
 Yes. 
 

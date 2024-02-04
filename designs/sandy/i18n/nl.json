@@ -42,6 +42,10 @@
     "hemWidth": {
       "t": "Breedte zoom",
       "d": "Breedte van de zoom"
+    },
+    "panels": {
+      "t": "Panels",
+      "d": "Number of panels"
     }
   }
 }
