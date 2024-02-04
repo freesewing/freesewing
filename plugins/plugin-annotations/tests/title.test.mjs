@@ -1,8 +1,6 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { Design } from '@freesewing/core'
 import { annotationsPlugin } from '../src/index.mjs'
-
-const expect = chai.expect
 
 describe('Title Plugin Tests', () => {
   it('Should run the title macro', () => {

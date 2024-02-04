@@ -1,8 +1,6 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { round, Path, Point } from '../src/index.mjs'
 import { pathsProxy } from '../src/path.mjs'
-
-const expect = chai.expect
 
 describe('Path', () => {
   describe('smurve', () => {
