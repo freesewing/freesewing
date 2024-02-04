@@ -42,7 +42,7 @@ export const UsernameSettings = ({ welcome = false }) => {
   }
 
   const nextHref =
-    welcomeSteps[account.control].length > 4
+    welcomeSteps[account.control].length > 5
       ? '/welcome/' + welcomeSteps[account.control][5]
       : '/docs/about/guide'
 
