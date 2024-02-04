@@ -77,7 +77,7 @@ Il est maintenant temps de coudre les extrémités de notre bande de tricot ense
 
 - Maintenant que les extrémités de ta bande sont réunies, il est temps de terminer les 6 derniers centimètres, en étirant et en cousant la bande comme tu l'as fait pour le reste.
 
-Hourra ! Vous avez terminé la partie la plus délicate ! Optionally, you can secure the raw edges by stitching them down to the T-shirt fabric, just inside the knit band with a zig-zag or coverlock stitch. Ce n'est pas obligatoire, mais c'est un détail que tu verras sur de nombreux T-shirts prêts à porter, et cela peut aider ton tour de cou à rester plat.
+Hourra ! Vous avez terminé la partie la plus délicate ! Ce n'est pas obligatoire, mais c'est un détail que tu verras sur de nombreux T-shirts prêts à porter, et cela peut aider ton tour de cou à rester plat. Ce n'est pas obligatoire, mais c'est un détail que tu verras sur de nombreux T-shirts prêts à porter, et cela peut aider ton tour de cou à rester plat.
 
 ![Couds la bande de tricot pour la fixer](step03i.svg)
 
