@@ -14,6 +14,8 @@ Unreleased:
       - This Pattern component now supports translation of nested arrays of strings, giving you more flexibility to concatenate translated parts of strings
     sandy:
       - Added a new *panels* option
+    tristan:
+      - Inital release
 
   Fixed:
     carlton:

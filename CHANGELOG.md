@@ -21,6 +21,12 @@
 
  - Added a new *panels* option
 
+### tristan
+
+#### Added
+
+ - Inital release
+
 ### plugin-annotations
 
 #### Added

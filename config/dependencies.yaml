@@ -4,7 +4,7 @@ _types:
       '@freesewing/core': &freesewing '{{version}}'
     dev:
       'mocha': &mocha '10.2.0'
-      'chai': &chai '4.3.10'
+      'chai': &chai '5.0.3'
       '@freesewing/models': *freesewing
       '@freesewing/plugin-timing': *freesewing
   plugin:
