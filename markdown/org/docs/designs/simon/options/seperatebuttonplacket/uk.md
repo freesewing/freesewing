@@ -2,7 +2,7 @@
 title: Окрема планка для ґудзиків
 ---
 
-![Seperate button placket](seperatebuttonplacket.svg)
+![Separate button placket](seperatebuttonplacket.svg)
 
 Незалежно від того, чи хочете ви, щоб планка ґудзика була окремою деталлю викрійки.
 

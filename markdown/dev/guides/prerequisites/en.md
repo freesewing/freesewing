@@ -9,7 +9,7 @@ but doesn't have to be complicated once you understand a few basic building bloc
 Understanding the concepts that are involved in designing sewing patterns in code will pay dividends later.
 That is why we recommend you familiarize yourself with the following topics:
 
-<ReadMore list />
+<ReadMore />
 
 <Note>
 

@@ -4,13 +4,13 @@ title: "Culotte de cycliste Cornélius : Instructions de couture"
 
 ### Étape 1 : Les poches avant
 
-- Repassez sous les surplus de couture des bords non crantés des parements de poche.
+- Press under the seam allowances of the non-notched edges of the pocket facings.
 - En faisant correspondre les encoches, épinglez l'envers des parements de poche sur l'endroit des sacs de poche, _piquez au point d'orgue_ les bords pliés sur les sacs de poche.
 - _Coller_ les surplus de couture des bords crantés des parements de poche sur les sacs de poche.
 - Endroit contre endroit, en faisant correspondre les doubles encoches, coudre les poches sur le devant, puis repasser sur l'envers.
 - Pliez les poches en deux le long de la ligne de pliage, endroit contre endroit. Coudre le fond de la pochette ensemble.
 - Si vous préférez, vous pouvez également _coudre à la française_ les coutures inférieures des sacs de poche ensemble.
-- _Bâtissez_ le haut et le côté des sacs de poche sur les marges de couture avant en faisant correspondre les encoches.
+- _Baste_ the top and side of the pocket bags to the front seam allowances matching notches.
 
 <Note>
 
@@ -70,7 +70,7 @@ Utilisez la méthode du style de manchette que vous avez choisi, car elle diffè
 - Repassez le surplus de couture supérieur sur l'envers des morceaux de bande de jambe restants. Découpez le surplus de couture supérieur.
 - Endroit contre endroit, coudre le reste de la jambe et des morceaux aux bandes de jambe attachées le long des bas et des côtés.
 - Tournez les bandes de jambe vers l'extérieur. Repasser.
-- _Piquez_ le bord plié de la ceinture sur le devant, en veillant à ce que le bord plié recouvre la piqûre.
+- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitching.
 - Coudre la boutonnière. Les boutons seront cousus plus tard.
 
 <Note>
@@ -89,7 +89,7 @@ Si vous êtes inquiets pour l'esquisse, vous pouvez créer un triangle de tissu 
 - Repassez le surplus de couture supérieur sur l'envers des morceaux de bande de jambe restants. Découpez le surplus de couture supérieur.
 - Endroit contre endroit, coudre le reste de la jambe et des morceaux aux bandes de jambe attachées le long des bas et des côtés.
 - Tournez les bandes de jambe vers l'extérieur. Repasser.
-- _Piquez_ le bord plié de la ceinture sur le devant, en veillant à ce que le bord plié recouvre la piqûre.
+- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitching.
 - Coudre la boutonnière. Les boutons seront cousus plus tard.
 
 <Note>
@@ -108,13 +108,13 @@ Si vous préférez, vous pouvez coudre les bandes de jambe comme une ceinture mo
 
 ### Étape 5 : Taille
 
-- Surfilez l'une des pièces de la ceinture en utilisant la méthode que vous préférez.
+- Face one of the waistband pieces using your preferred method.
 - Coudre le morceau de ceinture sur le dessus des jambes, endroit contre endroit.
 - Repassez la ceinture et le surplus de couture vers le haut et loin de la jambe. Coupez le surplus de couture pour réduire l'encombrement.
 - Repassez le surplus de couture du bas sur l'envers du morceau de ceinture restant. Découpez le surplus de couture du bas.
 - Endroit contre endroit, coudre le reste de la bande de taille à la bande de taille sur le dessus et les côtés.
 - Retournez la ceinture. Repasser.
-- _Piquez_ le bord plié de la ceinture sur le devant, en veillant à ce que le bord plié recouvre la piqûre.
+- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitching.
 - Coudre la boutonnière. Les boutons seront cousus plus tard.
 
 <Note>

@@ -12,7 +12,7 @@ including some more advanced things like rotating a bunch of them out of the
 way.
 
 You've also learned how to draw paths, which are the lines and curves that make up our pattern.
-And we've used macros which can help us with repetetive tasks.
+And we've used macros which can help us with repetitive tasks.
 
 What we've gotten so far is a perfectly suitable sewing pattern. You can print this, 
 and make a nice bib out of it.

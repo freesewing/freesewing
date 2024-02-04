@@ -37,7 +37,7 @@ access the following properties:
 | `log`             | See [the logging documentation](/reference/api/store/log) |
 | `macro`           | See [the macros documentation](/reference/macros/) |
 | `store`           | See [the store documentation](/reference/api/store) |
-| `units`           | A version of [`utils.units()`](/reference/api/utils/units) that is preconfigured with the user's chosenunits |
+| `units`           | A version of [`utils.units()`](/reference/api/utils/units) that is preconfigured with the user's chosen units |
 | `utils`           | See [the utils documentation](/reference/api/utils) |
 | `Bezier`          | The [bezier-js](https://pomax.github.io/bezierjs/) library's `Bezier` named export |
 || **_Return value_**   |

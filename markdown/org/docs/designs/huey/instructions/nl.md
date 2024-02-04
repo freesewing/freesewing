@@ -53,7 +53,7 @@ De trekkoorden worden geregen nadat de hoodie is gemaakt.
 - Draai de goede kanten naar buiten.
 - Rijg de voorste en onderste knipranden aan elkaar.
 - Maak een omhulsel voor het koord door ongeveer 2,5 cm van de binnenrand af te naaien aan de kant met de koordgaten.
-- (Eventueel) Als je geen koord gebruikt, naai dan met _Doorstikken_ of _Kantstikken_ de binnenbocht.
+- (Optionally) If not using a drawstring, _Topstitch_ or _Edgestitch_ the inner curve.
 
 <Note>
 
@@ -87,9 +87,9 @@ Een nekband kan handig zijn om de neknaden te stabiliseren en te bedekken, maar 
 - Pers de naadtoeslag naar boven.
 - _Stik_ of _Edgestitch_ tailleband naadtoeslag aan het lijfje.
 
-### Stap 8: De manchetten vastmaken
+### Step 8: Attaching the cuffs
 
-- Met _goede kanten op elkaar_ naai je de korte kanten van de manchetten aan elkaar tot twee banden.
+- With _good sides together_ sew the short edges of the cuffs together to create two bands.
 - Pers de naadtoeslagen open.
 - (Optioneel) _Kantsteek_ de naadtoeslagen naar beneden.
 - Vouw de manchetten in de lengte dubbel met de verkeerde kanten op elkaar. Pers.
@@ -104,7 +104,7 @@ Een nekband kan handig zijn om de neknaden te stabiliseren en te bedekken, maar 
 - Rits de rits een stukje open.
 - Vouw de bovenkant van het ritsband naar beneden tot de _goede kant_ van het ritsband. Bijsnijden als dat nodig is.
 - Speld de rits langs een van de voorranden van de capuchon, voorkant en tailleband. The zipper teeth should just be slightly over the seam line with the edge of the tape either matching or being slightly over from the hoodie edge. Making sure the zipper pull is faced the _good sides_ of the hoodie and the bottoms are lined up.
-- Gebruik een ritsvoetje om de rits aan de hoodie te naaien met je naadbreedte. Als je bij de ritstrekker bent, stop dan, leg je naald neer, til de naaivoet op, trek de ritstrekker langs de naaivoet en laat de naaivoet zakken. Daarna kun je doorgaan met het naaien van de naad.
+- Using a zipper foot stitch the zipper to the hoodie using you seam allowance width. Als je bij de ritstrekker bent, stop dan, leg je naald neer, til de naaivoet op, trek de ritstrekker langs de naaivoet en laat de naaivoet zakken. Daarna kun je doorgaan met het naaien van de naad.
 - Maak de rits los.
 - Speld en naai de losse ritsband op dezelfde manier aan de andere kant van de hoodie.
 - Strijk de naden naar de binnenkant en let op dat je de tandjes van de rits niet smelt met je strijkijzer.

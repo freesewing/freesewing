@@ -3,5 +3,5 @@ title: "Кишеня на зав'язці Lucy: Необхідні виміри"
 ---
 
 <Note>
-Luci не потребує жодних вимірів
+Lucy does not require any measurements
 </Note>

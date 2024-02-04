@@ -30,9 +30,9 @@ L'emplacement des bretelles ne figure pas sur le patron et doit être détermin�
 
 <Note>
 
-Si vous utilisez des sangles de sac au lieu de sangles en tissu, procédez comme suit,
+If using bag strap webbing instead of fabric made straps do the following,
 
-- Coupez la sangle à la longueur des lanières avec la marge de couture.
+- Cut the webbing to the length of the straps with seam allowance.
 - Repassez sous le surplus de couture du bord court.
 - Fixez la sangle de la même manière que les sangles en tissu.
 
@@ -83,8 +83,8 @@ Il est recommandé de laisser l'espace pour le tournage sur le côté plutôt qu
 - _Endroit contre endroit,_ coudre les panneaux avant et arrière de la doublure sur le panneau de doublure du bas.
 - _Endroit contre endroit_attachez les panneaux de côté de la doublure.
 - Repassez vers le bas les marges de couture.
-- Alernativement vous pouvez mettre un biais sur les bords supérieurs.
-- Placez la doublure à l'intérieur du sac _envers contre envers_.
+- Alternatively you can bind the top edges.
+- Place the lining inside the bag _wrong sides facing_ each other.
 - _Couds_ ou _Couds_ la doublure au panneau de la fermeture à glissière.
 
 ### Étape 10: Profitez-en!

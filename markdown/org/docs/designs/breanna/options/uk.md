@@ -40,7 +40,7 @@ The image above shows a sleevecap, starting at point 1, then going up until poin
 - [Верх рукава X](/docs/designs/breanna/options/sleevecaptopfactorx/) : Контролює горизонтальне розташування точок 3 і 4
 - [Верх рукава Y](/docs/designs/breanna/options/sleevecaptopfactory/) : Керує вертикальним розміщенням точки 4
 
-In other words, point 4 can be made higher and lower and, perhaps less intutitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
+In other words, point 4 can be made higher and lower and, perhaps less intuitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
 
 ### Точки перегину
 

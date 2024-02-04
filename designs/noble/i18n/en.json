@@ -37,6 +37,10 @@
       "t": "Bust span ease",
       "d": "Controls the amount of ease along the bust span"
     },
+    "waistdartposition": {
+      "t": "Waist dart position",
+      "d": "Controls the position of the waist 'dart', moving it to the center (negative) or side (positive)"
+    },
     "backDartHeight": {
       "t": "Controls the height of the back dart",
       "d": "Back dart height"

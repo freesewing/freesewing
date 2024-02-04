@@ -8,7 +8,7 @@ La distance entre le collier et le collier est séparée lorsqu'il est fermé.
 
 <Note>
 
-Il s'agit surtout d'un choix de style, mais un plus grand écart de collier (avec l'angle du col) peut accueillir une cravate plus large (nœud).
+This is really mostly a style choice, but a wider collar gap (together with the collar angle) can accommodate a wider tie (knot).
 
 </Note>
 

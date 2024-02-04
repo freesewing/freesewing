@@ -69,13 +69,13 @@ Antes de coser las cejas por la mitad, puedes rellenarlas para crear unas cejas 
 
 - Con _lados buenos juntos_ haz coincidir las partes de las piernas con las partes del cuerpo.
 - Cose cada pierna desde la muesca B/D hacia abajo y de vuelta a la muesca B/D.
-- Si la parte de la pata es ligeramente más corta que la pata de la parte de la cabezam tendrás que suavizarla mientras la emparejas. Se han previsto muescas para facilitar esta tarea.
+- If the leg part is slightly shorter than the leg on the head parts you will have to ease it in while matching it up. Se han previsto muescas para facilitar esta tarea.
 
 <Tip>
 
 Es más fácil coser una pata casi hasta la siguiente muesca B/D, dejar de coser, prender con alfileres la siguiente pata y seguir cosiendo, que intentar prender con alfileres y coser todas las patas de una sola vez. 
 
-Los que tengan más confianza pueden hacerlo con la aguja bajada en su máquina, pero si tienes menos confianza, puedes retirarla de la máquina, prenderla con alfileres y luego empezar a coser de nuevo un poco por encima de tu puntada original para asegurarla.
+Those who are more confident can do this with the needle down on their machine but if you are less confident you may wish to remove from the machine, pin and then start sewing again a little bit over your original stitching to secure it.
   
 </Tip>
 

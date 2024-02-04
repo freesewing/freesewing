@@ -19,23 +19,17 @@ comme choix pour la couche avant, c'est-à-dire la couche visible.
 
 If you decide to go for two layers, simply join them together at the edges before applying the bias tape.
 
-Tu voudras probablement l'épingler ou le bâtonner avant de le coudre. The two different types of fabric will behave differently, so secure them in place prior to sewing the together.
+You probably want to pin or baste this prior to sewing. The two different types of fabric will behave differently, so secure them in place prior to sewing the together.
 
 Make sure to sew close to the edge so that the stitches will be under the bias tape finish later.
 
 ## Étape 2 : Appliquer le ruban de biais
 
-Nous allons appliquer du ruban de biais en guise de finition sur tout le bord du bavoir.
+We're going to apply bias tape as a finish around the entire edge of the bib.
 
 You probably want to start at the bottom strap, as this way the joint of the bias seam will be covered when the bib is worn.
 
 Contente-toi de te frayer un chemin et de prendre ton temps.
-
-<Fixme>
-
-Donne des instructions génériques pour coudre du ruban de biais.
-
-</Fixme>
 
 ## Étape 3 : Installer les boutons ou les boutons-pression
 

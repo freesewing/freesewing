@@ -2,4 +2,4 @@
 title: Diseños FreeSewing
 ---
 
-<ReadMore list />
+<ReadMore />

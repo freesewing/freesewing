@@ -1,7 +1,5 @@
 import { isUtilityDesign, getShortName } from './config.mjs'
-import chai from 'chai'
-
-const expect = chai.expect
+import { expect } from 'chai'
 
 /*
  * This runs unit tests for the pattern translation files

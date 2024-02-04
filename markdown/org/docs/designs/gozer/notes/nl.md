@@ -2,5 +2,5 @@
 title: "Gozer het spook: Ontwerpnotities"
 ---
 
-<Fixme>De ontwerper, noch FreeSewing, zijn aansprakelijk voor alles wat volgt uit het gebruik van dit patroon. Je bent gewaarschuwd.</Fixme>
+<Warning>The designer, nor FreeSewing, are liable for anything that follows the use of this pattern. You've been warned.</Warning>
 

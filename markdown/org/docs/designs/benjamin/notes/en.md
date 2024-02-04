@@ -8,7 +8,7 @@ him. This seemed like something I could undertake. Since I had no experience wit
 my first attempt should be a simple one. The site already had a pattern for a tie, yet I prefer bow ties. 
 So that would be something I could contribute.
 
-In the concept of MakeMyPattern was the posibility of patterns not only adapting to the measurements of
+In the concept of MakeMyPattern was the possibility of patterns not only adapting to the measurements of
 the sewist, but also that patterns could change depending on the options one would like. So I tried
 to incorporate some options that I thought bow ties should have. 
 

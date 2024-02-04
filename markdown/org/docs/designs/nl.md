@@ -2,4 +2,4 @@
 title: FreeSewing Ontwerpen
 ---
 
-<ReadMore list />
+<ReadMore />

@@ -9,13 +9,13 @@ title: "Shin swim trunks: Sewing Instructions"
 
 ## Step 1: Join the backs
 
-Put your two backs on top of each other with the good sides together, and sew them together allong the center back seam.
+Put your two backs on top of each other with the good sides together, and sew them together along the center back seam.
 
 ## Step 2: Join the fronts
 
 ### Sew the front seam
 
-Put two of your fronts on top of each other with the good sides together, and sew them together allong the center front seam.
+Put two of your fronts on top of each other with the good sides together, and sew them together along the center front seam.
 
 Repeat with the two other fronts so you have two identical sets.
 
@@ -45,7 +45,7 @@ Mark the middle of your waistband length. Fold the waistband double, and mark th
 (do not take the seam allowance into account).
 
 A bit to the left and right of this, you can add two eyelets to pass a drawstring through.
-This will avoid an embarassing situation when you go for that big dive and now suddenly find your
+This will avoid an embarrassing situation when you go for that big dive and now suddenly find your
 swim trunks on your ankles.
 
 > ### It's best to add some reinforcement
@@ -84,7 +84,7 @@ with the front seam. Pin this in place too.
 
 Now make your way around the swim trunks waist, pinning the waistband in place.
 
-Then, sew the waistband to the swim trunks, as close to the the elastic as you can, but don't sew
+Then, sew the waistband to the swim trunks, as close to the elastic as you can, but don't sew
 into the elastic.
 
 It's fine to not sew too close the first time around, and once your elastic is attached and encased,

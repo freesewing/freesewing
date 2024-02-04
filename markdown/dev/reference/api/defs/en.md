@@ -12,5 +12,5 @@ they are documented here to facilitate development of plugins.
 
 ## Defs methods
 
-<ReadMore list />
+<ReadMore />
 

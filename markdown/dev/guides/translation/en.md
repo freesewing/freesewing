@@ -20,7 +20,7 @@ FreeSewing is currently available in the following languages:
 | `es` | **Spanish**    | https://es.freesewing.org/ |
 | `fr` | **French**     | https://fr.freesewing.org/ |
 | `nl` | **Dutch**      | https://nl.freesewing.org/ |
-| `uk` | **Ukranian**   | https://uk.freesewing.org/ |
+| `uk` | **Ukrainian**   | https://uk.freesewing.org/ |
 
 <Note compact>
 English is the translation source language and the working language of the FreeSewing project
@@ -34,11 +34,8 @@ When you do, we will send you an email with all further instructions.
 
 <Link compact>
 
-###### [Request a FreeSewing translator invite](https://next.freesewing.org/translation/join)
+###### [Request a FreeSewing translator invite](https://freesewing.org/translation/join)
 </Link>
-
-<Fixme compact>This link above still needs to be implemented in the new v3
-website</Fixme>
 
 <Tip>
 
@@ -48,7 +45,7 @@ Discord](https://discord.freesewing.org) for any questions that may remain.
 
 ## Adding a new language
 
-We would love to make FreeSewing available in more langauges. If you are
+We would love to make FreeSewing available in more languages. If you are
 interested in starting a new translation effort, that is great.
 
 We ask that you familiarize yourself with this translation guide to understand
@@ -57,12 +54,8 @@ a new language with the link below.
 
 <Link compact>
 
-###### [Suggest a new FreeSewing language](https://next.freesewing.org/translation/suggest-language)
+###### [Suggest a new FreeSewing language](https://freesewing.org/translation/suggest-language)
 </Link>
-
-<Fixme compact>
-This link above still needs to be implemented in the new v3 website
-</Fixme>
 
 <Tip>
 
@@ -124,7 +117,7 @@ The top-priority translations in Crowdin are everything under the `packages`
 and `sites` folder. Do this first.
 </Tip>
 
-### High priority: Translation of Documenation
+### High priority: Translation of Documentation
 This includes all the documentation on FreeSewing.org.
 
 This is a significant amount of text that makes up more than 90% of the top &
@@ -164,12 +157,12 @@ translate smaller snippets,
 
 Once translated, there is a proofreading step that will be handled by one of
 our proofreaders. This is often a formality, but it's an extra step to allow
-qulity assurance and avoid any mistakes from slipping in. Much like the code
+quality assurance and avoid any mistakes from slipping in. Much like the code
 review process when you submit a pull request on GitHub.
 
-Once your translation is approved, Crowdin will automatically submut a pull
+Once your translation is approved, Crowdin will automatically submit a pull
 request on GitHub to update the translation files in our repository. And the
-next time our website or software packages get build, they will include the new
+next time our website or software packages get built, they will include the new
 translations.
 
 ## Machine translation
@@ -179,7 +172,7 @@ we also have to be realistic that the growing body of documentation and other
 FreeSewing content can be a daunting task to take on for translators, especially
 when you want to start a new language.
 
-Furtunately, machine translation has gotten rather good so we can get some help.
+Fortunately, machine translation has gotten rather good so we can get some help.
 Our Crowdin project is integrated with a [DeepL](https://www.deepl.com) 
 subscription, and this can be a great help to translators.
 

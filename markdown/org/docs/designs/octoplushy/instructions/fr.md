@@ -69,13 +69,13 @@ Avant de coudre les sourcils en deux, tu peux les rembourrer pour créer un sour
 
 - Avec _les bons côtés ensemble_ fais correspondre les parties des jambes avec les parties du corps.
 - Couds chaque jambe de l'encoche B/D vers le bas et en arrière jusqu'à l'encoche B/D.
-- Si la partie de la jambe est légèrement plus courte que la jambe de la partie de la tête, tu devras l'adoucir en la faisant correspondre. Des encoches ont été prévues pour faciliter cette opération.
+- If the leg part is slightly shorter than the leg on the head parts you will have to ease it in while matching it up. Des encoches ont été prévues pour faciliter cette opération.
 
 <Tip>
 
 Il est plus facile de coudre une jambe presque jusqu'à l'encoche B/D suivante, d'arrêter de coudre, d'épingler la jambe suivante et de continuer à coudre plutôt que d'essayer d'épingler et de coudre toutes les jambes en une seule fois. 
 
-Les personnes plus confiantes peuvent le faire avec l'aiguille en bas de leur machine, mais si tu es moins confiant, tu peux retirer la machine, épingler et recommencer à coudre un peu au-dessus de ton point d'origine pour le sécuriser.
+Those who are more confident can do this with the needle down on their machine but if you are less confident you may wish to remove from the machine, pin and then start sewing again a little bit over your original stitching to secure it.
   
 </Tip>
 

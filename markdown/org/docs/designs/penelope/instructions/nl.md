@@ -24,7 +24,7 @@ Een tailleband is optioneel op Penelope. If you omit it, there will be quite som
 
 Zonder de rits zal het onmogelijk zijn om in en uit de rok te geraken. So it should be at least the length from your waist to the largest part of your bum. Longer will make it easier to put the skirt on and off. Don't use one that's too long, because the part of the seam where the zipper is behaves differently than the part without it, and you want to try to make it invisible also in movement.
 
-Traditioneel wordt een onzichtbare rits gebruikt in een kokerrok, maar een gewone rits werkt net zo goed. Je kunt zelfs een rits gebruiken die je stof constrasteert als je daar zin in hebt. Kies wat werkt voor jou en de stijl waar je voor gaat. Wees creatief (of niet), dat is helemaal aan jou! Maar als je stof aan de zwaardere kant is, kun je misschien beter voor een andere sluiting kiezen.
+Traditioneel wordt een onzichtbare rits gebruikt in een kokerrok, maar een gewone rits werkt net zo goed. You can even use a zipper that contrasts your fabric if the fancy takes you. Kies wat werkt voor jou en de stijl waar je voor gaat. Wees creatief (of niet), dat is helemaal aan jou! Maar als je stof aan de zwaardere kant is, kun je misschien beter voor een andere sluiting kiezen.
 
 ### Vuur
 
@@ -41,8 +41,8 @@ Nepen worden gebruikt om het verschil tussen je taille en zitvlak te compenseren
 We gaan niet helemaal uit de doeken doen hoe je alle afzonderlijke details
 van een kokerrok kunt maken. These instructions assume that you know how to sew a dart, insert an invisible
 zipper, make a vent, etc. If not, there are numerous excellent articles available on the
-web, both in writen form, and on video. Zo niet, dan zijn er talloze uitstekende artikelen beschikbaar op
-web, zowel in geschreven vorm als op video. Als je vastloopt, kun je altijd contact opnemen met
+web, both in writen form, and on video. If not, there are numerous excellent articles available on the
+web, both in written form, and on video. Als je vastloopt, kun je altijd contact opnemen met
 [andere FreeSewers](https://discord.freesewing.org/) in onze discord.
 
 </Warning>
@@ -51,7 +51,7 @@ web, zowel in geschreven vorm als op video. Als je vastloopt, kun je altijd cont
 
 - Naai alle figuurnaden.
 - Druk de pijltjes naar achteren.
-  - Voor de achterkant(en) betekent dit dat je de figuurnaden naar elkaar toe drukt.
+  - For the back piece(s), that means you press the darts towards each other.
   - Voor het voorpand betekent dit dat je de figuurnaden naar de zijnaden toe perst.
 
 ### Stap 2: De rits
@@ -77,11 +77,11 @@ Je kunt deze stap overslaan als je geen voering maakt.
 - Volg stap 1 - 4 om de voering te maken met de volgende wijzigingen:
   - Pas de figuurnaden aan om het extra 'gemak' in de voeringdelen te compenseren.
   - Neem de rits niet mee, maar laat de opening in de naad van de rits zitten.
-- Bevestig de voering aan het lijfje op de manier die jij het mooist vindt. Hierbij moet je de opening maken en de voering aansluiten op de rits.
+- Attach the lining to the body in your preferred way. Hierbij moet je de opening maken en de voering aansluiten op de rits.
 
 <Note>
 
-Hoe je het extra 'gemak' verdeelt is aan jou. Je kunt het toevoegen aan de darts door ze te verhogen. Of je kunt nog een figuurnaad of plooi in het midden toevoegen.
+Hoe je het extra 'gemak' verdeelt is aan jou. Je kunt het toevoegen aan de darts door ze te verhogen. Or you can add another dart or box pleat in the middle.
 
 </Note>
 
@@ -117,7 +117,7 @@ Deze stap is alleen nodig als je je rok niet hebt gevoerd, omdat de zoom en vent
 - Werk de zoom en ventilatieopeningen desgewenst bij.
 - Construeer de ventilatieopeningen met de methode van je voorkeur
 - Pers onder de zoomtoeslagen van de rok.
-- Als de zoom groot genoeg is en/of de stof aan de bovenkant een klein beetje naar beneden drukt, helpt dit om farying te voorkomen.
+- If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent fraying.
 - Maak de zoom vast met de methode van je voorkeur. Je kunt bijvoorbeeld vanaf de buitenkant naaien of _Slipstitch_ vanaf de binnenkant. Dit hangt af van hoe je wilt dat het eindproduct eruit ziet.
 
 <Tip>

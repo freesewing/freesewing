@@ -629,7 +629,7 @@ Maintenant que votre col est attaché, donnez-lui un bon coup de fer.
 
 ### Étape 20 : Ourler votre chemise
 
-![Repliez et repassez](20a.png) ![Pliez à nouveau, et repassez à nouveau](20b.png) ![Coudre l'ourlet](20c.png)
+![Repliez et repassez](20a.png) ![Fold over again, and press again](20b.png) ![Coudre l'ourlet](20c.png)
 
 Il est temps de faire l'ourlet (c'est la partie que vous glissez dans votre pantalon).
 

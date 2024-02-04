@@ -4,8 +4,8 @@ title: "Schritt-Tiefe"
 
 Steuert wie stark der Schneider gesenkt wird.
 
-Die Reduzierung des Schnäppchens sorgt für eine lockere Passform.  
-Ein deutlich abgesenktes Crotched kann auch eine Stilwahl sein.
+Lowering the crotch makes for a more casual fit.  
+A significantly lowered crotched can also be a style choice.
 
 
 

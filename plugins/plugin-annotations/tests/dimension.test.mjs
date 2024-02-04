@@ -1,8 +1,6 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { Design, round } from '@freesewing/core'
 import { annotationsPlugin } from '../src/index.mjs'
-
-const expect = chai.expect
 
 describe('Dimension Plugin Tests', () => {
   describe('Measures horizontal dimensions', function () {

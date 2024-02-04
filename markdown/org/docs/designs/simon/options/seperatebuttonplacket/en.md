@@ -2,9 +2,9 @@
 title: "Seperate button placket"
 ---
 
-![Seperate button placket](seperatebuttonplacket.svg)
+![Separate button placket](seperatebuttonplacket.svg)
 
-Whether or not you want the button placket to be a seperate pattern part.
+Whether or not you want the button placket to be a separate pattern part.
 
 ## Effect of this option on the pattern
 

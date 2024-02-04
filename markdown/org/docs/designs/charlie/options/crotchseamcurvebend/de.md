@@ -2,7 +2,7 @@
 title: "Crotch Naht Biegen"
 ---
 
-Steuert die Krümmung der Kräuternaht, die die Passform an Ihrem Wurf beeinflusst.
+Controls the curvature of the crotch seam, which influences the fit at your crotch.
 
 
 

@@ -1,6 +1,10 @@
 Unreleased:
 
   Added:
+    lumina:
+      - Initial release
+    lumira:
+      - Initial release
     plugin-annotations:
       - The `title` macro now takes a `notes` and `classes.notes` as its config, allowing you to add notes
       - The `classes.cutlist` config is removed from the title plugin, cutlist info is now included as notes
@@ -8,6 +12,16 @@ Unreleased:
       - This plugin now supports translation of nested arrays of strings, giving you more flexibility to concatenate translated parts of strings
     react-components:
       - This Pattern component now supports translation of nested arrays of strings, giving you more flexibility to concatenate translated parts of strings
+    sandy:
+      - Added a new *panels* option
+    tristan:
+      - Inital release
+
+  Fixed:
+    carlton:
+      - Fixed a stray seam allowance path on the collar
+    charlie:
+      - The back pocket welt (4) and front pocket facing (8) incorrectly indicated to cut 2 instead of 4 in the cutlist. Fixes #5791
 
   Removed:
     plugin-annotations:

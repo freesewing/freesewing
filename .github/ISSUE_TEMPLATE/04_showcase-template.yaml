@@ -36,32 +36,45 @@ body:
         - Charlie
         - Cornelius
         - Diana
+        - Examples
         - Florence
         - Florent
+        - Gozer
         - Hi
         - Holmes
         - Hortensia
         - Huey
         - Hugo
         - Jaeger
+        - Legend
         - Lucy
+        - Lumina
+        - Lumira
         - Lunetius
+        - Magde
+        - Naomiwu
         - Noble
         - Octoplushy
+        - Onyx
+        - Otis
         - Paco
         - Penelope
+        - Plugintest
+        - Rendertest
         - Sandy
+        - Shelly
         - Shin
         - Simon
         - Simone
+        - Skully
         - Sven
         - Tamiko
         - Teagan
         - Tiberius
         - Titan
         - Trayvon
-        - Unice
-        - Ursula
+        - Tristan
+        - Uma
         - Wahid
         - Walburga
         - Waralee
@@ -85,6 +98,7 @@ body:
       value: Looking to tackle this issue? We have [a how-to that shows how to add a showcase to the site](https://freesewing.dev/howtos/editors/showcase/).
   - type: markdown
     attributes:
-      value: Please keep in mind that **FreeSewing is a community project** that depends on **[your support](https://freesewing.org/community/join/)**.
+      value: |
+        Please keep in mind that **FreeSewing is a non-profit project** that depends on **[your support](https://freesewing.org/patrons/join/)**.
 ---
 

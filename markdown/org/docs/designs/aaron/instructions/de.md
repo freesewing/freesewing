@@ -103,7 +103,7 @@ Es ist an der Zeit, die Enden des Bandes zusammenzunähen, bevor wir unseren Kre
 
 ![Ende der Einfassung markieren](step03f.png)
 
-Nimm eins der Enden und dehne es entlang der 3cm ab den Startpunkt, wie du es beim Nähen tun würdest.
+Nehmen Sie eine der Kanten und strecken Sie sie entlang der 3cm vom Startpunkt ab, wie Sie es beim Nähen tun würden.
 
 Markiere die Einfassung, wo sie den Startpunkt erreicht. Tu das Gleiche für das andere Ende.
 
@@ -113,7 +113,7 @@ Markiere die Einfassung, wo sie den Startpunkt erreicht. Tu das Gleiche für das
 
 Falte dein A-Shirt so, dass es am einfachsten ist die guten Enden des Einfassbandes mit rechts auf rechts an der Markierung zusammenzubringen. Nähe die Einfassstreifen auf der Markierung zusammen.
 
-> 6 cm sind nicht viel, aber sollte ausreichen, um beide Enden bequem mit der Nähmaschine zusammen zu nähen.
+> 6 cm ist nicht viel, aber sollte ausreichen, um beide Kanten bequem unter Ihrer Nähmaschine zu nähen.
 
 ### Beende die letzten 6 cm Bindung
 

@@ -24,7 +24,7 @@ Dort wäre es dann vorbei. Bis auf ein technisches Detail, das auch wichtig ist:
 
 <Warning compact>Dies ist technischer und schwieriger zu verstehen</Warning>
 
-Another reason is that while we could make it so that clicking the link in your email would immeadiatly subcribe you, it would be in violation of internet standards. Insbesondere die Definition der __GET-Methode__ des __HTTP__ Protokolls, die besagt, dass:
+Another reason is that while we could make it so that clicking the link in your email would immediately subscribe you, it would be in violation of internet standards. Insbesondere die Definition der __GET-Methode__ des __HTTP__ Protokolls, die besagt, dass:
 
 
 <Note>

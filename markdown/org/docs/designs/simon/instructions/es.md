@@ -629,7 +629,7 @@ Ahora que tu cuello está adjunto, dale una buena prensa.
 
 ### Paso 20: Maneja tu camisa
 
-![Plegar y pulsar](20a.png) ![Antiguo de nuevo, y pulsa de nuevo](20b.png) ![Difunde el sombrero](20c.png)
+![Plegar y pulsar](20a.png) ![Fold over again, and press again](20b.png) ![Difunde el sombrero](20c.png)
 
 Es hora de terminar el hem (esa es la parte que pegaste en tus pantalones).
 

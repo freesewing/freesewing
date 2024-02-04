@@ -4,7 +4,7 @@ title: "Tamiko top: Sewing Instructions"
 
 ### Step 1: Finish the armhole seam
 
-![Finsh the armhole seam](step03.png)
+![Finish the armhole seam](step03.png)
 
 - Finish the armhole seam with a narrow hem.
 

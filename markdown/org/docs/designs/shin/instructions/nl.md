@@ -8,13 +8,13 @@ title: "Shin zwembroek: Naai-instructies"
 
 ## Stap 1: Achternaad
 
-Leg je twee rugpanden op elkaar met de goede kanten samen, en stik langs de middenachternaad.
+Put your two backs on top of each other with the good sides together, and sew them together along the center back seam.
 
 ## Stap 2: Voornaad
 
 ### Naai de voornaad
 
-Leg je twee voorpanden bovenop elkaar met de goede kanten samen, en stik de middenvoornaad.
+Put two of your fronts on top of each other with the good sides together, and sew them together along the center front seam.
 
 Herhaal met de twee andere voorpanden zodat je twee identieke sets hebt.
 
@@ -38,7 +38,7 @@ Keep your swim trunks with the good side inwards (the back at least, the front h
 
 Markeer het midden van de lengte van je tailleband. Fold the waistband double, and mark the middle of the width (do not take the seam allowance into account).
 
-Installeer twee vetergaten links en rechts van deze markering. This will avoid an embarassing situation when you go for that big dive and now suddenly find your swim trunks on your ankles.
+Installeer twee vetergaten links en rechts van deze markering. This will avoid an embarrassing situation when you go for that big dive and now suddenly find your swim trunks on your ankles.
 
 > ### Verstevigen is een goed idee
 > 
@@ -68,7 +68,7 @@ Find the front of the waistband (easy if there's eyelets, if not just fold it do
 
 Speld nu de tailleband langs de hele taille van de zwembroek.
 
-Then, sew the waistband to the swim trunks, as close to the the elastic as you can, but don't sew into the elastic.
+Then, sew the waistband to the swim trunks, as close to the elastic as you can, but don't sew into the elastic.
 
 It's fine to not sew too close the first time around, and once your elastic is attached and encased, make a second round to sew it a bit more snugly.
 

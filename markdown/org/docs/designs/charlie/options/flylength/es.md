@@ -2,7 +2,7 @@
 title: "Longitud del vuelo"
 ---
 
-Construye la longitud de la mosca.
+Controla la longitud de la mosca.
 
 
 

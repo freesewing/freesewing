@@ -8,3 +8,5 @@ So as a joke I made this, just so I could post it on the discord server. And the
 
 Wouter
 
+<br />
+<DesignInfo design='gozer' docs />

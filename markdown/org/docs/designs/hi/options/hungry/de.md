@@ -2,7 +2,7 @@
 title: "Hungrig"
 ---
 
-Diese Einstellung legt fest, wie lange es her ist, dass dein Hi etwas zu essen bekommen hat. Mehr Hunger führt zu einem schlankeren Hai.
+This setting determines how long it has been since your Hi has had something to eat. Mehr Hunger führt zu einem schlankeren Hai.
 
 
 

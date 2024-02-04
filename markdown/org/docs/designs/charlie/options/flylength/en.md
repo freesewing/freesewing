@@ -2,7 +2,7 @@
 title: "Fly length"
 ---
 
-Constrols the length of the fly.
+Controls the length of the fly.
 
 
 

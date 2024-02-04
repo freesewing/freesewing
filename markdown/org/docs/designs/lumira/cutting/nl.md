@@ -1,13 +1,13 @@
 ---
-title: "Lumira leggings: Cutting Instructions"
+title: "Lumira legging: Knip instructies"
 ---
 
 ### Materialen
 
-- **Main fabric**
-  - Cut **2 leg** parts
-  - Cut **1 gusset** part on the fold
+- **Voornaamste stof**
+  - Knip **2 been** delen
+  - Knip **1 inzet** deel op de vouw
 
-Optionally
+Eventueel
 
 - Cut **1 waistband** parts on the fold

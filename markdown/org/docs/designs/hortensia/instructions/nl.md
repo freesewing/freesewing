@@ -30,9 +30,9 @@ De plaatsing van de bandjes staat niet op het patroon en moet worden bepaald. Mi
 
 <Note>
 
-Als je banden voor tasriemen gebruikt in plaats van stoffen banden, doe dan het volgende:
+If using bag strap webbing instead of fabric made straps do the following,
 
-- Knip de banden op de lengte van de banden met naadtoeslag.
+- Cut the webbing to the length of the straps with seam allowance.
 - Pers onder de naadtoeslag van de korte rand.
 - Bevestig de banden op dezelfde manier als de stoffen banden.
 
@@ -83,8 +83,8 @@ Het wordt aanbevolen om de opening voor het draaien aan de zijkant te laten in p
 - Met _goede kanten op elkaar_ naai je de voorste en achterste voeringdelen aan het onderste voeringdeel.
 - Met _goede kanten op elkaar_ bevestig je de zijpanelen van de voering.
 - Pers onder de bovenste naadtoeslagen.
-- Als alternatief kun je de bovenste randen afbinden.
-- Leg de voering in de tas _met de verkeerde kanten naar elkaar toe_ .
+- Alternatively you can bind the top edges.
+- Place the lining inside the bag _wrong sides facing_ each other.
 - _Schuifsteek_ of _Zweepsteek_ de voering aan het ritsdeel.
 
 ### Stap 10: Geniet!

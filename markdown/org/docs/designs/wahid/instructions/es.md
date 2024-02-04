@@ -140,7 +140,7 @@ Girar el bolsillo hacia la parte trasera y presionarlo hacia abajo.
 
 ![Pulsa abajo los triángulos en los lados cortos](05h.png)
 
-Mueva su bolsillo hacia fuera del camino para revelar esos pequeños trajes al lado de su bolsillo.
+Move your pocket facing out of the way to reveal those little triangles at the side of your pocket.
 
 Doblarlos asegurándote de mantener tu bolsillo abriendo un rectángulo limpio y presionándolos hacia abajo.
 
@@ -214,7 +214,7 @@ Coloque el revestimiento en la cintura, los lados buenos juntos. En otras palabr
 
 #### Fijar forro a tela
 
-![Fijar linng a tela](09b.png)
+![Fijar forro a tela](09b.png)
 
 Alinear el revestimiento con el borde de la tela, y fijarlo en su lugar.
 
@@ -222,7 +222,7 @@ Empiece en el centro de atrás y siga la línea del cuello por el cierre delante
 
 #### Manejar el revestimiento a la tela
 
-![Difundir linng a la tela](09c.png)
+![Manejar el revestimiento a la tela](09c.png)
 
 Con su forro anclado bien en su lugar, revestimiento de coser y tejido juntos.
 
@@ -230,7 +230,7 @@ No olvide dejar ese hueco de 15 cm en la parte trasera del centro.
 
 #### Girar cinturón y pulsar bordes
 
-![Gira cintura y presiona el borde](09d.png)
+![Girar cinturón y pulsar bordes](09d.png)
 
 Alcanza el hueco que dejaste abierto en el sombrero y gira tu cinturón.
 
@@ -252,7 +252,7 @@ Ahora doblar el revestimiento un poco antes del borde del orificio y sujetarlo h
 
 #### Coser a mano el revestimiento de la tela
 
-![Forrado a mano de la farbrica](10c.png)
+![Coser a mano el revestimiento de la tela](10c.png)
 
 Utilice un trozo de deslizamiento para coser a mano el forro a la tela a lo largo del orificio.
 

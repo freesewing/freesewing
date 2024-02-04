@@ -6,7 +6,11 @@ title: "Bündchen-Elastizität"
 
 Mit dieser Option kannst du die Dehnung deines Bündchens anpassen.
 
-Wenn du zum Beispiel 90% für jede 10cm an Bündchen auswählst, werden wir nur 9 cm zeichnen. Auf diese Weise werden 9 cm Bänder auf 10 cm gestreckt.
+It's value is the percentage of stretch in the ribbing fabric, and that amount will be subtracted from 100% to determine the final width of fabric used in the pattern.
+
+For example, if you choose 10%, then for every 10 cm of ribbing, we'll only draft 9 cm. This way, 9 cm of ribbing will be stretched to 10 cm.
+
+The option range is between 0% and 10%, with the default set to 5%.
 
 <Note>
 

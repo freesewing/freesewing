@@ -4,13 +4,13 @@ title: "Chemise Shelly : Instructions de couture"
 
 <Note>
 
-L'utilisation d'une surjeteuse ou d'un pied de surjet est recommandée, pour que la taille des coutures finies reste petite. Si tu utilises une surjeteuse, il est recommandé de laisser une marge de couture de 1/2 pouce (12 mm). Si tu utilises un pied de surjet sur une machine à coudre, ou si tu effectues une surjeture sans utiliser le couteau, une marge de couture de 1/4 de pouce (6 mm) est recommandée.
+L'utilisation d'une surjeteuse ou d'un pied de surjet est recommandée, pour que la taille des coutures finies reste petite. If using a serger, a seam allowance of 1/2 inch (12 mm) is recommended. Si tu utilises un pied de surjet sur une machine à coudre, ou si tu effectues une surjeture sans utiliser le couteau, une marge de couture de 1/4 de pouce (6 mm) est recommandée.
 
 Toutes les coutures, y compris la bande de cou, peuvent être réalisées avec le même point, qu'il s'agisse d'une surjeteuse, d'un point de surjet ou d'un point extensible.
 
 Les ourlets sont facultatifs (puisque le tricot ne s'effiloche pas), mais si tu fais des ourlets, assure-toi qu'ils peuvent s'étirer.
 
-Veille à utiliser un point de couture qui peut s'étirer. Si tu couds un tissu extensible, ajuste ta tension pour tenir compte de l'étirement supplémentaire. Sur une surjeteuse, cela signifie généralement qu'il faut baisser la tension de l'aiguille, en particulier l'aiguille droite, et ajuster la tension du boucleur si nécessaire pour que le point ait une apparence décente. Sur une machine à coudre ordinaire, baisse la tension. Teste d'abord ton choix de point sur une chute de tissu, et essaie de façonner la couture d'essai en l'étirant sur toute sa longueur. Il ne devrait craquer qu'après s'être beaucoup étiré. S'il se détache trop facilement, continue à jouer avec tes réglages de points et de tension jusqu'à ce que tu obtiennes quelque chose qui puisse survivre à quelques abus.
+Veille à utiliser un point de couture qui peut s'étirer. Si tu couds un tissu extensible, ajuste ta tension pour tenir compte de l'étirement supplémentaire. Sur une surjeteuse, cela signifie généralement qu'il faut baisser la tension de l'aiguille, en particulier l'aiguille droite, et ajuster la tension du boucleur si nécessaire pour que le point ait une apparence décente. Sur une machine à coudre ordinaire, baisse la tension. Test your choice of stitch first on scrap fabric, and try to shape the test seam by stretching the seam along its length. Il ne devrait craquer qu'après s'être beaucoup étiré. S'il se détache trop facilement, continue à jouer avec tes réglages de points et de tension jusqu'à ce que tu obtiennes quelque chose qui puisse survivre à quelques abus.
 
 Pour faire des t-shirts ou d'autres chemises extensibles dans les deux sens, des réglages réguliers avec un point qui s'étire devraient convenir.
 

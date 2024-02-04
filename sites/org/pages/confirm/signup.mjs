@@ -18,7 +18,7 @@ import { ConsentForm, ns as gdprNs } from 'shared/components/gdpr/form.mjs'
 // Translation namespaces used on this page
 const ns = nsMerge(pageNs, layoutNs, gdprNs, 'confirm', 'susi')
 
-const SignupLinkExpired = () => <Popout fixme>Implement SignupLinkExpired compnonent</Popout>
+const SignupLinkExpired = () => <Popout fixme>Implement SignupLinkExpired component</Popout>
 
 const ConfirmSignUpPage = () => {
   // Hooks

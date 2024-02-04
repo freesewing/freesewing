@@ -14,7 +14,7 @@ one twist: The front packets are placed on the side seam. That side seam wraps
 around towards the front to give the slanted pocket look.
 
 It's a bit of unusual and creative design that I guess I did because I can?
-Anyway, it's something to be mind ful of because if you do not expect it the
+Anyway, it's something to be mindful of because if you do not expect it the
 front panels look a bit weird.
 
 joost

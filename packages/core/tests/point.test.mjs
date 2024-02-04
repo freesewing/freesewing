@@ -1,7 +1,5 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { round, Point } from '../src/index.mjs'
-
-const expect = chai.expect
 
 describe('Point', () => {
   it('Should return point object', () => {

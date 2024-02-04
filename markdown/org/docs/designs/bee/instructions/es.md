@@ -8,7 +8,7 @@ Asegúrate de utilizar una puntada elástica
 
 <Note>
 
-Cuando hagas un top reversible, el segundo color se denominará tela del forro.  
+When making a reversible top the second colour will be referred to as the lining fabric.  
 Las muescas de este patrón actúan más bien como puntos, así que **no** las recortes para marcarlas.
 
 </Note>
@@ -30,7 +30,7 @@ Las muescas de este patrón actúan más bien como puntos, así que **no** las r
 - Recorta los márgenes de costura y recorta las esquinas.
 - Gira al revés. Alísala.
 
-<Note>Repite la operación con el resto de los trozos de corbata</Note>
+<Note>Repeat this for the remaining neck tie pieces</Note>
 
 ### Paso 2: Las copas
 
@@ -51,9 +51,9 @@ Las muescas de este patrón actúan más bien como puntos, así que **no** las r
 <Tip>
 
 Si tu margen de costura es ancho, puede que necesites recortar un poco los márgenes de costura de los huecos para reducir el volumen.  
-Si tienes problemas para girar las copas, puedes probar uno de estos métodos:
+If you are having trouble turning the cups you can try one of these methods:
 
-- Crea un hueco de 2,5 cm (1") en la costura frontal o lateral y gira a través de él, _cosiendo_ el hueco o _cosiéndolo_ durante el paso 7.
+- Create a 2.5cm (1") gap in the front or side seam and turn through that, either _slipstitch_-ing the gap closed or _edgestitch_-ing it closed during Step 7.
 - Ensancha uno de los huecos existentes y gira a través de él. Luego, al girar el _edgestitch_ o el _slipstitch_ se cierra la parte ensanchada.
 
 </Tip>
@@ -85,7 +85,7 @@ También hay muescas a ambos lados del punto medio de la pieza de la banda para 
 
 <Note>
 
-Tal vez prefieras envolver una copa sobre la otra en el punto medio. Para ello, coloca los laterales de las copas en las muescas otuernas y coloca sus frentes pasando el punto medio con el izquierdo encima.
+Tal vez prefieras envolver una copa sobre la otra en el punto medio. To do this place the sides of the cups at the outer notches and lay their fronts pass the midpoint with the left on top.
 
 </Note>
 

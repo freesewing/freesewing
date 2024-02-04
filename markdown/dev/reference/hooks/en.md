@@ -14,6 +14,6 @@ receive two parameters:
 
 Below is a list of all available lifecycle hooks:
 
-<ReadMore list />
+<ReadMore />
 
 

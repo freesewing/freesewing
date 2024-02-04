@@ -51,7 +51,7 @@ Don't forget the seam allowance for these pieces when cutting if you are making 
 - Trace off of **Back** part.
 - Cut along the orange line.
 - Discard lower piece.
-- Remove the seam allowamces (if included) of the upper piece.
+- Remove the seam allowances (if included) of the upper piece.
 - The upper piece is now the **Back shoulder** part.
 
 #### Cutting

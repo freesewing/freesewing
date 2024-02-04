@@ -71,19 +71,19 @@ and load the snippet into the defs section of our SVG document:
 
 ## Styling snippets
 
-Styling snippets is something that can frustrating if you are not familiar with
+Styling snippets is something that can be frustrating if you are not familiar with
 how they are rendered under the hood.  The SVG `use` tag creates a so-called
-*showdow-dom* and styles will behave something different in that shadowy realm.
+*shadow-dom*, and styles will behave something different in that shadowy realm.
 
 For example, you can't just slap [one of our CSS classes](/reference/css) on it
 and call it a day, that won't be enough.
 
 You can of course provide inline styles, but now your snippet can't be themed
-which is a big nono for sites like FreeSewing.org that let users pick differnt
+which is a big no-no for sites like FreeSewing.org that let users pick different
 themes.
 
 As you can see in the example, we used CSS vars, as these do work well in the
-shadow-dom and suppor themeing.  You don't have to follow this approach, but we
+shadow-dom and support theming.  You don't have to follow this approach, but we
 do recommend it.
 
 ## Supporting scale

@@ -8,13 +8,13 @@ title: "Shin-Badehose: Nähanleitung"
 
 ## Schritt 1: Betrete die Rückseite
 
-Legen Sie Ihre zwei Rücken auf einander mit den guten Seiten zusammen, und nähen Sie sie zusammen allong die Mitte hinten.
+Put your two backs on top of each other with the good sides together, and sew them together along the center back seam.
 
 ## Schritt 2: Trete den Fronten bei
 
 ### Nähen Sie die Vordernaht
 
-Legen Sie zwei Ihrer Fronten zusammen mit den guten Seiten auf einander und nähen Sie sie zusammen allong die Mitte Frontnaht.
+Put two of your fronts on top of each other with the good sides together, and sew them together along the center front seam.
 
 Wiederholen Sie sich mit den beiden anderen Fronten, so dass Sie zwei identische Sets haben.
 
@@ -38,7 +38,7 @@ Keep your swim trunks with the good side inwards (the back at least, the front h
 
 Markieren Sie die Mitte Ihrer Taillenlänge. Fold the waistband double, and mark the middle of the width (do not take the seam allowance into account).
 
-Ein bisschen nach links und rechts davon können Sie zwei Ösen hinzufügen, um eine Zeichenfolge durchzulassen. This will avoid an embarassing situation when you go for that big dive and now suddenly find your swim trunks on your ankles.
+Ein bisschen nach links und rechts davon können Sie zwei Ösen hinzufügen, um eine Zeichenfolge durchzulassen. This will avoid an embarrassing situation when you go for that big dive and now suddenly find your swim trunks on your ankles.
 
 > ### Am besten kannst du Verstärkung hinzufügen
 > 
@@ -68,7 +68,7 @@ Find the front of the waistband (easy if there's eyelets, if not just fold it do
 
 Jetzt gehen Sie durch die Taille der Schwimmstämme, die die Taille der Taille anpinnen.
 
-Then, sew the waistband to the swim trunks, as close to the the elastic as you can, but don't sew into the elastic.
+Then, sew the waistband to the swim trunks, as close to the elastic as you can, but don't sew into the elastic.
 
 It's fine to not sew too close the first time around, and once your elastic is attached and encased, make a second round to sew it a bit more snugly.
 

@@ -24,7 +24,7 @@ Ein Taillenband ist optional auf Penelope. If you omit it, there will be quite s
 
 Ohne den Reißverschluss wird es unmöglich sein, aus dem Rock zu kommen. So it should be at least the length from your waist to the largest part of your bum. Longer will make it easier to put the skirt on and off. Don't use one that's too long, because the part of the seam where the zipper is behaves differently than the part without it, and you want to try to make it invisible also in movement.
 
-Traditionell wird für einen Bleistiftrock ein unsichtbarer Reißverschluss verwendet, aber ein normaler Reißverschluss funktioniert genauso gut. Wenn du Lust hast, kannst du auch einen Reißverschluss verwenden, der deinen Stoff einschnürt. Wähle aus, was zu dir und deinem Stil passt. Ob du kreativ bist oder nicht, liegt ganz bei dir! Wenn dein Stoff allerdings etwas schwerer ist, solltest du dich vielleicht für einen anderen Verschluss entscheiden.
+Traditionell wird für einen Bleistiftrock ein unsichtbarer Reißverschluss verwendet, aber ein normaler Reißverschluss funktioniert genauso gut. You can even use a zipper that contrasts your fabric if the fancy takes you. Wähle aus, was zu dir und deinem Stil passt. Ob du kreativ bist oder nicht, liegt ganz bei dir! Wenn dein Stoff allerdings etwas schwerer ist, solltest du dich vielleicht für einen anderen Verschluss entscheiden.
 
 ### Schlitz
 
@@ -40,8 +40,8 @@ Darts werden verwendet, um den Unterschied zwischen Taillen- und Sitzmessungen a
 
 Wir werden nicht ausführlich erklären, wie man all die einzelnen Details
 , die einen Bleistiftrock ausmachen, anfertigt. Diese Anleitung geht davon aus, dass du weißt, wie man einen Abnäher näht, einen unsichtbaren 
-Reißverschluss einfügt, einen Schlitz macht, etc. Falls nicht, findest du im Internet unter
-zahlreiche hervorragende Artikel in schriftlicher Form und als Video. Wenn du nicht weiterkommst, kannst du dich jederzeit an
+Reißverschluss einfügt, einen Schlitz macht, etc. If not, there are numerous excellent articles available on the
+web, both in written form, and on video. Wenn du nicht weiterkommst, kannst du dich jederzeit an
 [andere FreeSewers] (https://discord.freesewing.org/) in unserem Discord wenden.
 
 </Warning>
@@ -50,7 +50,7 @@ zahlreiche hervorragende Artikel in schriftlicher Form und als Video. Wenn du ni
 
 - Nähen Sie alle Abnäher.
 - Drücke die Abnäher nach hinten.
-  - Für die Rückenteile bedeutet das, dass du die Abnäher zueinander drückst.
+  - For the back piece(s), that means you press the darts towards each other.
   - Für das Vorderteil bedeutet das, dass du die Abnäher in Richtung der Seitennähte bügelst.
 
 ### Schritt 2: Der Reißverschluss
@@ -76,11 +76,11 @@ Du kannst diesen Schritt auslassen, wenn du kein Futter herstellst.
 - Befolge die Schritte 1 - 4, um das Futter mit den folgenden Änderungen zu konstruieren:
   - Passe die Abnäher an, um die zusätzliche "Leichtigkeit" in den Futterteilen auszugleichen.
   - Schließe den Reißverschluss nicht mit ein, sondern lasse die Öffnung in der Reißverschlussnaht.
-- Befestige das Futter auf die von dir bevorzugte Weise am Körper. Dabei musst du den Schlitz konstruieren und das Futter mit dem Reißverschluss verbinden.
+- Attach the lining to the body in your preferred way. Dabei musst du den Schlitz konstruieren und das Futter mit dem Reißverschluss verbinden.
 
 <Note>
 
-Wie du die zusätzliche "Leichtigkeit" verteilst, bleibt dir überlassen. Du kannst sie entweder zu den Abnähern hinzufügen, indem du sie erhöhst. oder du kannst einen weiteren Abnäher oder eine Kellerfalte in der Mitte hinzufügen.
+Wie du die zusätzliche "Leichtigkeit" verteilst, bleibt dir überlassen. Du kannst sie entweder zu den Abnähern hinzufügen, indem du sie erhöhst. Or you can add another dart or box pleat in the middle.
 
 </Note>
 
@@ -116,7 +116,7 @@ Dieser Schritt ist nur notwendig, wenn du deinen Rock nicht gefüttert hast, da 
 - Falls gewünscht, stülpe den Saum und die Lüftungsschlitze um.
 - Baue die Lüftungsschlitze mit der von dir bevorzugten Methode
 - Bügle unter die Saumzugaben des Rocks.
-- Wenn der Saum breit genug ist und/oder der Stoff oben ein wenig nach unten gedrückt wird, hilft das, ein Färben zu verhindern.
+- If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent fraying.
 - Befestige den Saum mit der von dir bevorzugten Methode. Du kannst zum Beispiel von außen nähen oder _Steppstich_ von innen. Es kommt darauf an, wie das fertige Produkt aussehen soll.
 
 <Tip>

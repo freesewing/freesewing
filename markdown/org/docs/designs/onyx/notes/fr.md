@@ -10,7 +10,7 @@ La jupe a été ajoutée par souci de pudeur, principalement pour les maillots d
 
 Onyx copie en effet un certain nombre de caractéristiques de Shelly, notamment les manches raglan pour la mobilité et l'utilisation de parties avant et arrière symétriques, à l'exception du cou et de la tête.
 
-Onyx est nommé d'après la pierre précieuse et sa couleur noire profonde, qui n'est pas par hasard une excellente couleur de base pour les maillots de bain Onyx, en particulier si l'on veut qu'ils ressemblent à une combinaison de plongée.
+Onyx is named after the gemstone and its deep black color, which not coincidentally is a great base color for Onyx swimsuits, particularly if one wants them to look like a wetsuit.
 
 Un peu d'histoire : Onyx n'aurait peut-être jamais vu le jour sans les manifestations anti-LGBTQ+ et les boycotts du printemps 2023, qui ont fait qu'une combinaison que j'aimais particulièrement a été retirée des rayons d'un grand détaillant américain, et que j'ai eu besoin d'une solution de remplacement convenable.
 

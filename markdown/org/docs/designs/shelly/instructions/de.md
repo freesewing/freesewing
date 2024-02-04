@@ -4,13 +4,13 @@ title: "Shelly Shirt: Anleitung zum Nähen"
 
 <Note>
 
-Um die Größe der fertigen Nähte klein zu halten, wird die Verwendung eines Sergers oder eines Overlocking-Fußes empfohlen. Wenn du einen Serger verwendest, wird eine Nahtzugabe von 12 mm (1/2 Zoll) empfohlen. Wenn du einen Overlocking-Fuß an einer Nähmaschine verwendest oder ohne Messer versäuberst, wird eine Nahtzugabe von 6 mm (1/4 Zoll) empfohlen.
+Um die Größe der fertigen Nähte klein zu halten, wird die Verwendung eines Sergers oder eines Overlocking-Fußes empfohlen. If using a serger, a seam allowance of 1/2 inch (12 mm) is recommended. Wenn du einen Overlocking-Fuß an einer Nähmaschine verwendest oder ohne Messer versäuberst, wird eine Nahtzugabe von 6 mm (1/4 Zoll) empfohlen.
 
 Alle Nähte, auch das Nackenband, können mit demselben Stich genäht werden, egal ob mit einem Serger, einem Overlockstich oder einem Stretchstich.
 
 Säume sind optional (da Strick nicht ausfranst), aber wenn du Säume anfertigst, solltest du darauf achten, dass sie sich dehnen können.
 
-Achte darauf, dass du eine Naht verwendest, die sich dehnen kann. Wenn du einen dehnbaren Stoff nähst, musst du die Spannung so anpassen, dass sie die zusätzliche Dehnung berücksichtigt. Bei einem Serger bedeutet das in der Regel, dass du die Nadelspannung senkst, vor allem die der rechten Nadel, und die Spannung des Greifers nach Bedarf anpasst, damit die Masche gut aussieht. Bei einer normalen Nähmaschine musst du die Spannung verringern. Teste deine Stichwahl zuerst auf einem Stoffrest und versuche, die Testnaht zu formen, indem du die Naht über ihre Länge dehnst. Sie sollte erst nach einer gewissen Dehnung reißen. Wenn er zu leicht aufspringt, solltest du mit den Einstellungen für die Stiche und die Spannung spielen, bis du etwas bekommst, das auch etwas Missbrauch aushält.
+Achte darauf, dass du eine Naht verwendest, die sich dehnen kann. Wenn du einen dehnbaren Stoff nähst, musst du die Spannung so anpassen, dass sie die zusätzliche Dehnung berücksichtigt. Bei einem Serger bedeutet das in der Regel, dass du die Nadelspannung senkst, vor allem die der rechten Nadel, und die Spannung des Greifers nach Bedarf anpasst, damit die Masche gut aussieht. Bei einer normalen Nähmaschine musst du die Spannung verringern. Test your choice of stitch first on scrap fabric, and try to shape the test seam by stretching the seam along its length. Sie sollte erst nach einer gewissen Dehnung reißen. Wenn er zu leicht aufspringt, solltest du mit den Einstellungen für die Stiche und die Spannung spielen, bis du etwas bekommst, das auch etwas Missbrauch aushält.
 
 Für die Herstellung von T-Shirts oder anderen Hemden mit 2-Wege-Stretch sollten normale Einstellungen mit einer dehnbaren Naht ausreichen.
 

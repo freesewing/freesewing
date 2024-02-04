@@ -1,7 +1,5 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { Design } from '../src/index.mjs'
-
-const expect = chai.expect
 
 const measurements = { head: 400 }
 const toAbs = (val, { measurements }) => measurements.head * val

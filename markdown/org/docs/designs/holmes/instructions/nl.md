@@ -31,7 +31,7 @@ Deze instructies gaan ervan uit dat je naadlijnen hebt gemarkeerd. Ze kunnen moe
 - Pers de naden open. Je moest hiervoor een kleerham gebruiken, als je er geen hebt, kun je flannels of handdoeken gebruiken.
 - (Optioneel) _Kantsteek_ beide kanten van de naad, zorg ervoor dat je de naadtoeslagen opvangt.
 - Herhaal dit tot je twee helften hebt. Als de helft van het aantal kroon een raar getal is, moet je aan elke helft één stuk naaien. bv. Als je 6 kroon stukjes hebt, maak je twee helften van 3 stikken aan elkaar vast.
-- Naai de twee helften aan elkaar met de goede kanten op elkaar en de naadlijnen en pieken op elkaar. Het is mogelijk dat het makkelijker is om de piek samen te doorstikken door bulk of precisie. Deze naad wordt verwezen naar de "middelste kroonnaad" die verder gaat.
+- With right sides together, matching seam lines and peaks, sew the two halves together. Het is mogelijk dat het makkelijker is om de piek samen te doorstikken door bulk of precisie. This seam will be referred to as the "centre crown seam" going forward.
 - (Optioneel) _Kantsteek_ aan beide kanten van de middelste kroonnaad, zorg ervoor dat je de naadtoeslagen opvangt.
 
 <Note>
@@ -44,7 +44,7 @@ Afhankelijk van je naadwaarde wil je misschien naden bijknippen terwijl je bulk 
 
 #### Oorkleppen met bandjes
 
-- Knip twee stukken lint van 30 cm tot 40 cm. Daar zal naar worden verwezen naarmate de banden vorderen.
+- Knip twee stukken lint van 30 cm tot 40 cm. These will be referred to as ties going forward.
 - _Rijg_ een stropdas aan de rechterkant van een oorflap (de verstevigde als je die gebruikt). Herhaal voor andere stropdassen.
 - Naai, met de goede kanten op elkaar en de naadlijnen op elkaar, een oorflap met stropdas aan een oorflap zonder stropdas.
 - Knip in en knip de naadtoeslag bij.
@@ -74,7 +74,7 @@ Als je liever je eigen stropdassen met stof maakt, [zie Holmes knippen](/docs/de
 - Keer binnenstebuiten en pers.
 - (Optioneel) _Stik_ of _Edgestitch_ de gevouwen rand.
 - _Rijg_ de knipranden aan elkaar.
-- Naai het knoopsgat op de methode van je voorkeur.
+- Sew the buttonhole in your preferred method.
 - Herhaal dit voor de resterende oorflap.
 
 <Warning>
@@ -98,7 +98,7 @@ Er zijn twee methoden om de vizieren te maken. Dit komt door de verschillende so
 #### De Visors Methode 1
 
 - Plaats het vizierinzetstuk op één vizierstuk binnen de naadlijnen.
-- Zet het vizierinzetstuk tijdelijk vast op het vizier met een tijdelijk _kussentje. Steken_. Dit wordt voortaan "faced visor" genoemd.
+- Zet het vizierinzetstuk tijdelijk vast op het vizier met een tijdelijk _kussentje. Steken_. This will be referred to as "faced visor" going forward.
 - _Rijg_ vast langs de naadlijn van de binnenbocht van het vizier, en zorg ervoor dat het vizierinzetstuk niet vast komt te zitten.
 - Met de goede kanten op elkaar, de naadlijnen en de middenkanten op elkaar, naai je het vizier aan een ander vizier langs de buitenste ronding dicht bij het vizierinzetstuk, waarbij je ervoor zorgt dat het vizierinzetstuk niet vast komt te zitten.
 - Maak inkepingen en knip de buitenste ronding af en zorg ervoor dat je het stiksel niet afknipt. (Misschien wil je voor deze stap de vorm draaien en controleren)
@@ -120,10 +120,10 @@ Als je liever zou zien dat je tijdelijk de bezoeker bevestigt, dan moet je ander
 
 #### De Visors Methode 2
 
-- Naai, met de goede kanten op elkaar, de naadlijnen en middenvoor op elkaar, de buitenste rondingen van twee vizierstukken aan elkaar.
+- With rights sides together, matching seam lines and centre fronts, sew the outer curve of two visor pieces together.
 - Maak inkepingen en knip (indien nodig) de buitenste ronding bij en zorg ervoor dat je het stiksel niet afknipt. (Misschien wil je voor deze stap de vorm draaien en controleren)
 - Keer binnenstebuiten en pers.
-- Steek het vizierinzetstuk strak in het genaaide vizier, zodat er geen ruimte is aan de buitenste kromming en de naadtoeslagen allemaal aan één kant van het vizierinzetstuk zitten. Dit is de bovenkant van het vizier.
+- Insert visor insert in to sewn visor tightly so there is no gap on the outer curve and the seam allowances are all one on side of the visor insert. Dit is de bovenkant van het vizier.
 - Speld de binnenbocht vast en zorg ervoor dat de buitenrand strak over het vizierinzetstuk wordt getrokken.
 - _Rijg_ zo dicht mogelijk tegen de binnenste ronding van het vizierinzetstuk en zorg dat je de stof strak over de buitenrand trekt terwijl je naait.
 - Herhaal dit voor de overige stukken van het vizier.
@@ -144,7 +144,7 @@ Eens te meer zijn er twee methodes voor de definitieve vergadering en de aanslui
 - Verwijder alle opvul- en rijgsteken.
 - Pers de naadtoeslagen naar binnen en zorg dat het stiksel niet zichtbaar is aan de buitenkant.
 - (Optioneel) Naai de naden losjes met een _whipstitch_ aan de binnenkant van de kroon en zorg ervoor dat het stiksel niet zichtbaar is aan de buitenkant.
-- Construeer de voering op dezelfde manier als de kroon door _edgestikt_weg te laten.
+- Construct lining the same way as the crown omitting _edgestitching_.
 - Vouw en pers onder de onderste naadtoeslag van de voering. Je vindt dat je onder meer moet indrukken om te voorkomen dat de voering wordt weergegeven. Het kan ook zijn dat je _moet rijgen_ de naadtoeslag naar beneden.
 - Speld de voering op de hoed met de verkeerde kanten op elkaar, zodat de middelste kroonnaden en paneelnaden op elkaar aansluiten. Plaats de gevouwen rand langs de stiklijnen.
 - _Naai met een schuifsteek_ of met een _zweepsteek_ de voering vast aan de naadtoeslag van de muts.
@@ -160,8 +160,8 @@ Eens te meer zijn er twee methodes voor de definitieve vergadering en de aanslui
 - Rijg het vizier met de hand op de kroon en zorg dat de rijglijnen van het vizier overeenkomen met de naadlijnen van de kroon. _Het is makkelijker om_ eerst het midden naar beneden te rijgen en dan vanuit het midden naar buiten te werken.
 - (Optioneel) Plak het vizier met de machine op de kroon langs de naadlijnen.
 - Herhaal dit voor het resterende vizier aan de andere kant van de middelste kroonnaad.
-- Construeer de voering op dezelfde manier als de kroon, door _edgestikt_ weg te laten en een opening in de middelste voeringsnaad over te laten die groot genoeg is om de hoed te draaien.
-- Leg, met de goede kanten op elkaar, de middelste kroonnaden, paneelnaden en naadlijnen op elkaar. Stik de voering aan de kroon langs de naadlijnen. Als je grootmoedig bent kun je de voering naden of beide naden bijknippen.
+- Construct lining the same way as the crown omitting _edgestitching_ and leaving a gap in the centre lining seam large enough to turn the hat.
+- Leg, met de goede kanten op elkaar, de middelste kroonnaden, paneelnaden en naadlijnen op elkaar. Sew the lining to the crown along seam lines. Als je grootmoedig bent kun je de voering naden of beide naden bijknippen.
 - Keer de hoed binnenstebuiten en druk de voering naar binnen.
 - (Optioneel/Alternatief) _Onderstik_ voering.
 - Voeringopening dichtgestikt.
@@ -226,7 +226,7 @@ Tenzij je de knoopsgatenvlakken doet hoef je geen knop aan te naaien, maar het k
 <Note>
 
 Hoewel het zeker facultatief is, vind je misschien dat er een knop ontbreekt bij de hoed om het uiterlijk af te maken. Dus als je niet zeker bent van het uiterlijk op dit punt, verzin dan een snelle knop en plaats die er tijdelijk op om te zien of dit is wat er ontbreekt. Neem dit permanent toe als het is.
-Terwijl een gedekte knop wordt aanbevolen, kunt u elke knop gebruiken die u wilt, voel je vrij om te experimenteren!
+Whilst a covered button is recommended you can use whatever button you desire, feel free to experiment!
 
 </Note>
 

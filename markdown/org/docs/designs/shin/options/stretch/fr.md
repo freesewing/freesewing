@@ -2,7 +2,7 @@
 title: "Élasticité"
 ---
 
-Le facteur de stretch horizontal.
+La quantité d'élasticité globale (horizontale).
 
 
 

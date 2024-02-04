@@ -2,11 +2,11 @@
 title: Громадськість
 ---
 
-Кожен набір вимірювань має атрибут **public** , який контролює, чи є набір вимірювань публічним.
+Every measurements set has a **public** attribute that controls whether or not the measurements set is public.
 
 За замовчуванням набори вимірювань є приватними, і тільки ви можете ними користуватися.
 
-But, you can choose to make your measurments set public which allows other users to utilize the measurements in this set to generate or test their own patterns.
+But, you can choose to make your measurements set public which allows other users to utilize the measurements in this set to generate or test their own patterns.
 
 <Note>
 Якщо ви публікуєте свій набір вимірювань, це стосується всіх даних у наборі вимірювань.

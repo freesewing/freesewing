@@ -1,8 +1,6 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { Design } from '@freesewing/core'
 import { annotationsPlugin } from '../src/index.mjs'
-
-const expect = chai.expect
 
 const Pattern = new Design()
 const pattern = new Pattern().use(annotationsPlugin)

@@ -17,7 +17,7 @@ The **crown** pattern piece needs to be cut on the fold to create a whole piece.
 
 ### Optional Fabric Ties
 
-If you don't wish to use ribbon for your ties you can make them out of fabric. Simply cut 4 crossgrain strips of an 1" (2.5cm) or width of your choosen + seam allowances wide and sew two tubes leaving one of the short sides open for turning. Clip the corners and trim seams. Turn out an press. If desired you can _Edgestitch_ or _Topstitch_ the tubes to stop the fabric from shifting. The raw edge of the tubes can then be concealed in the ear flap seam when constructing the ear flaps.
+If you don't wish to use ribbon for your ties you can make them out of fabric. Simply cut 4 crossgrain strips of an 1" (2.5cm) or width of your chosen seam allowances wide and sew two tubes leaving one of the short sides open for turning. Clip the corners and trim seams. Turn out an press. If desired you can _Edgestitch_ or _Topstitch_ the tubes to stop the fabric from shifting. The raw edge of the tubes can then be concealed in the ear flap seam when constructing the ear flaps.
 
 <Note>
 
@@ -26,6 +26,6 @@ It is recommended to draft the pattern nett and use the pattern to trace the sea
 </Note>
 <Warning>
 
-It is recommended to make a mock-up with your crown pattern first before cutting your fabrics. This is to test the length and ease of the crown piece. Make sure to cut off the bottom seam allowance before trying it on. If it is too tight who will need to re-draft the pattern with more head ease just remember the ease is split across each crown. If the peak is too high you may want to re-draft the pattern with the crown length reduced. Once re-drafted make another mock-up to check whether you are satified with the changes or not. Repeat again if you are not satisfied.
+It is recommended to make a mock-up with your crown pattern first before cutting your fabrics. This is to test the length and ease of the crown piece. Make sure to cut off the bottom seam allowance before trying it on. If it is too tight who will need to re-draft the pattern with more head ease just remember the ease is split across each crown. If the peak is too high you may want to re-draft the pattern with the crown length reduced. Once re-drafted make another mock-up to check whether you are satisfied with the changes or not. Repeat again if you are not satisfied.
 
 </Warning>

@@ -6,7 +6,7 @@ copiedToClipboard: Gekopieerd naar het klembord
 dataLoaded: Geladen gegevens van het FreeSewing backend
 generatingPdf: PDF genereren, een ogenblik geduld alstublieft
 nailedIt: Dat is ook weer geregeld!
-pdfFailed: Er is een onverwachte fout opgetreden tijdens het genereren van je PDF
+pdfFailed: An unexpected error occurred while generating your PDF
 pdfReady: PDF gegenereerd
 processingUpdate: Verwerking bijwerken
 settingsSaved: Instellingen opgeslagen

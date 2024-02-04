@@ -10,16 +10,16 @@ De maten zijn gebaseerd op de ritsen van het merk YKK en verwijzen naar de breed
 
 Maattabel voor Hortensia:
 
-| Optie        | Grootte in millimeter (mm) |
-| ------------ | -------------------------- |
-| #Onzichtbaar | 0                          |
-| #3           | 4.8                        |
-| #4           | 5.4                        |
-| #4.5         | 5.9                        |
-| #5           | 6.2                        |
-| #6           | 7                          |
-| #8           | 8                          |
-| #10          | 10.6                       |
+| Optie      | Grootte in millimeter (mm) |
+| ---------- | -------------------------- |
+| #Invisible | 0                          |
+| #3         | 4.8                        |
+| #4         | 5.4                        |
+| #4.5       | 5.9                        |
+| #5         | 6.2                        |
+| #6         | 7                          |
+| #8         | 8                          |
+| #10        | 10.6                       |
 
 <Note>
 

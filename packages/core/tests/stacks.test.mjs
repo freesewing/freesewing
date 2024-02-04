@@ -1,8 +1,6 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { Design, Point, Attributes } from '../src/index.mjs'
 import { Stack } from '../src/stack.mjs'
-
-const expect = chai.expect
 
 describe('Stacks', () => {
   describe('Pattern.__init()', () => {

@@ -2,4 +2,4 @@
 title: "Lucy, die Umbindetasche: Stoffoptionen"
 ---
 
-Any fabric can be used to make Lucy, but if the fabric you are using is very light or sheer you may want to add a lining to both pocket pieces.
+Für Lucy kann jeder Stoff verwendet werden aber wenn er sehr leicht, dünn oder transparent ist, empfiehlt es sich beide Taschenteile mit einem Futter zu versehen.

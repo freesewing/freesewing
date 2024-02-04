@@ -13,15 +13,15 @@ Die meisten Nähte sollten vor dem Nähen geheftet werden.
 
 ## Schritt 1: Die Darts
 
-Es gibt sechs Pfeile, die zuerst geschlossen werden müssen. One on each, forehead (2), head2 (4), and head3 (5) parts. Stecke sie fest und nähe sie zu. Schneide die Abnäher ab und bügle sie gut aus. Repeat for all six darts.
+Es gibt sechs Pfeile, die zuerst geschlossen werden müssen. Jeweils eine auf Stirn (2), Kopf2 (4) und Kopf3 (5). Stecke sie fest und nähe sie zu. Schneide die Abnäher ab und bügle sie gut aus. Wiederhole den Vorgang für alle sechs Abnäher.
 
 ## Schritt 2: Die Augen
 
-Sew together the sides of the eye (9), so you will make a cone. Schneide alles weg, was zu viel ist. Wiederhole den Vorgang für das andere Auge.
+Nähen Sie die Seiten der Öse (9) zusammen, so dass ein Kegel entsteht. Schneide alles weg, was zu viel ist. Wiederhole den Vorgang für das andere Auge.
 
 ## Schritt 3: Die Nase
 
-Like the eyes, the nose (12) too has parts that need to be sewn together. There are two of these sides that need to be sewn together. So entstehen zwei miteinander verbundene Kegel. Das ist sehr knifflig, also nimm dir Zeit.
+Wie die Augen hat auch die Nase (12) Teile, die zusammengenäht werden müssen. Es gibt zwei dieser Seiten, die zusammengenäht werden müssen. So entstehen zwei miteinander verbundene Kegel. Das ist sehr knifflig, also nimm dir Zeit.
 
 ## Schritt 4: Der Kopf
 
@@ -34,9 +34,8 @@ sie nur teilweise.
 </Tip>
 
 <Note>
-Seam 3 is the seam on the eye (9) part that is marked to be sewn together. Seam 10 is the same 
-on the nose (12) part. These are the only seams not marked with a number on the pattern parts. You have 
-already sewn these now.
+Naht 3 ist die Naht am Ösenteil (9), die zum Zusammennähen markiert ist. Die Naht 10 ist die gleiche 
+auf dem Nasenteil (12). Dies sind die einzigen Nähte, die nicht mit einer Nummer auf den Musterteilen markiert sind. Du hast diese jetzt schon genäht.
 </Note>
 
 Wenn du die einzelnen Teile zusammennähst, machst du zwei Hälften des Schädels.
@@ -46,7 +45,7 @@ Das Annähen der Augen und der Nase an die Wangen- und Stirnteile geht am besten
 Die Rückseite des upperMouth ist nicht mit irgendetwas vernäht. Sie ist nur da, um Stabilität zu bieten.
 
 <Note>
-All seams are sewn right sides together except where noted. Most of the instructions below are to be done first with one matching pair of pieces and then repeated with mirrored pieces so that you build up both sides of the skull gradually.
+Alle Nähte werden rechts auf rechts genäht, es sei denn, es ist anders angegeben. Die meisten der folgenden Anweisungen werden zuerst mit einem passenden Paar von Teilen ausgeführt und dann mit gespiegelten Teilen wiederholt, so dass du nach und nach beide Seiten des Schädels aufbaust.
 </Note>
 
 Seams 1 and 2: Sew cheek (1) to forehead (2), matching the dot notch to the dot, and the cross notch to the other cross.
@@ -57,13 +56,13 @@ Seam 5: Sew top of cheek (1) to cheekbone (6)
 
 Seam 6: Sew the other side of the cheekbone (6) to the bottom of the forehead (2) – this is the side that has the dart on it.
 
-Seams 7 and 8: You now have the cheek (1), cheekbone (6), eye (4), and forehead (2) all sewn into one piece on each side of the face. Sew the two sides of the face together at the front, from the top of the forehead to the top of the nose, forming seam 7. And then from the bottom of the nose to the bottom of the cheek, sew the two cheek halves together as well. The top of the face is now complete, leaving a hole for the nose.
+Seams 7 and 8: You now have the cheek (1), cheekbone (6), eye (4), and forehead (2) all sewn into one piece on each side of the face. Nähe die beiden Seiten des Gesichts auf der Vorderseite zusammen, von der Oberseite der Stirn bis zur Oberseite der Nase, und bilde dabei die Naht 7. Dann nähst du von der Unterseite der Nase bis zur Unterseite der Wange auch die beiden Wangenhälften zusammen. Der obere Teil des Gesichts ist nun fertig, wobei ein Loch für die Nase übrig bleibt.
 
-Seam 10: Take the nose (12) and sew the openings of the two cones (nostrils) into the space mentioned above. One cone (nostril) will go on one side of the face, and the other on the other side.
+Naht 10: Nimm die Nase (12) und nähe die Öffnungen der beiden Kegel (Nasenlöcher) in das oben genannte Loch. Ein Kegel (Nasenloch) kommt auf die eine Seite des Gesichts, der andere auf die andere Seite.
 
-Seam 11: Sew the backOfMouth (10) to the underside of the upperMouth (7). The backOfMouth (10) in particular will be visible in the finished Skully, so you should sew the right side of lowerMouth (10) to the wrong side of upperMouth (7).
+Naht 11: Näh die Rückseite des Mundes (10) an die Unterseite des oberen Mundes (7). Vor allem der hintere Teil des Mundes (10) wird im fertigen Skully sichtbar sein. Deshalb solltest du die rechte Seite des unteren Mundes (10) an die linke Seite des oberen Mundes (7) nähen.
 
-Seam 12: Join the two halves of the lowerJaw (11) with this short straight seam.
+Naht 12: Verbinde die beiden Hälften der Unterkiefer (11) mit dieser kurzen geraden Naht.
 
 Seam 13: Sew the curve of the lowerMouth (10) to the lowerJaw (11), taking care to sew on the line marked ‘mouthBottom’
 
@@ -90,12 +89,12 @@ Turn it right sides out.
 
 ## Schritt 5: Haare
 
-Jetzt ist es an der Zeit, dem Skully Haare hinzuzufügen. Achte beim Einsetzen der Stickwatte darauf, dass du auf der Innenseite Knoten anbringst, sonst kannst du Skully später ganz leicht die Haare ausreißen.
+Now is the time to add hair to Skully. Achte beim Einsetzen der Stickwatte darauf, dass du auf der Innenseite Knoten anbringst, sonst kannst du Skully später ganz leicht die Haare ausreißen.
 
 ## Schritt 6: Füllung
 
 - Fill the plush toy with stuffing through the opening you left, making sure to fill all the parts well. Die Bereiche an der Vorderseite sind am schwersten zu erreichen.
-- _Slipsticth_ oder _whipstitch_ die Öffnung geschlossen.
+- _Slipstitch_ or _whipstitch_ the opening closed.
 
 ## Schritt 7: Tweaks
 

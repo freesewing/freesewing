@@ -2,7 +2,7 @@
 title: "Sous-vêtements d'Ursula : Instructions de coupe"
 ---
 
-Uma se compose généralement d'un devant, d'un dos et d'un gousset doublé. Dans ce contexte, voici la liste des coupes à effectuer :
+Uma se compose généralement d'un devant, d'un dos et d'un gousset doublé. In that constellation, this is the cut list:
 
 - **Tissu principal**
   - Couper **1 front**
