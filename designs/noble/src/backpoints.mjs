@@ -24,7 +24,6 @@ export const backPoints = {
     const aDown = points.dartBottomRight.angle(points.dartTip)
     const aDiff = Math.abs(aUp - aDown)
 
-    // let dartCpAdjustment = Math.abs( options.shoulderDartPosition -.5) +.05
     const dartCpAdjustment = aDiff / 50
 
     points.shoulderDartCpUp = points.shoulderDart.shiftFractionTowards(
@@ -48,7 +47,7 @@ export const backPoints = {
     let diff = 0
     let angle = 0
     do {
-      if (length.o) angle = diff * (length.o > length.i ? -0.1 : 0.1)
+      if (length.o) angle = (diff / (length.i / 1300)) * (length.o > length.i ? -0.1 : 0.1)
 
       points.dartBottomRight = points.dartBottomRight.rotate(angle, points.waistSide)
 

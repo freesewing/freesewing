@@ -19,6 +19,11 @@ import { Hortensia, HortensiaFront } from 'shared/components/designs/linedrawing
 import { Simon, SimonFront, SimonBack } from 'shared/components/designs/linedrawings/simon.mjs'
 import { Uma, UmaFront, UmaBack } from 'shared/components/designs/linedrawings/uma.mjs'
 import { Wahid, WahidFront, WahidBack } from 'shared/components/designs/linedrawings/wahid.mjs'
+import {
+  Tristan,
+  TristanFront,
+  TristanBack,
+} from 'shared/components/designs/linedrawings/tristan.mjs'
 
 export const lineDrawingsFront = {
   aaron: AaronFront,
@@ -38,6 +43,7 @@ export const lineDrawingsFront = {
   simon: SimonFront,
   uma: UmaFront,
   wahid: WahidFront,
+  tristan: TristanFront,
 }
 
 export const lineDrawingsBack = {
@@ -53,6 +59,7 @@ export const lineDrawingsBack = {
   simon: SimonBack,
   uma: UmaBack,
   wahid: WahidBack,
+  tristan: TristanBack,
 }
 
 export const lineDrawings = {
@@ -73,4 +80,5 @@ export const lineDrawings = {
   simon: Simon,
   uma: Uma,
   wahid: Wahid,
+  tristan: Tristan,
 }
