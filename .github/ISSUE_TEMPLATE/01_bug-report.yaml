@@ -41,6 +41,7 @@ body:
         - designs/examples
         - designs/florence
         - designs/florent
+        - designs/gozer
         - designs/hi
         - designs/holmes
         - designs/hortensia
@@ -49,37 +50,47 @@ body:
         - designs/jaeger
         - designs/legend
         - designs/lucy
+        - designs/lumina
+        - designs/lumira
         - designs/lunetius
+        - designs/magde
+        - designs/naomiwu
         - designs/noble
         - designs/octoplushy
+        - designs/onyx
+        - designs/otis
         - designs/paco
         - designs/penelope
         - designs/plugintest
         - designs/rendertest
         - designs/sandy
+        - designs/shelly
         - designs/shin
         - designs/simon
         - designs/simone
+        - designs/skully
         - designs/sven
         - designs/tamiko
         - designs/teagan
         - designs/tiberius
         - designs/titan
         - designs/trayvon
-        - designs/tutorial
-        - designs/unice
-        - designs/ursula
+        - designs/tristan
+        - designs/uma
         - designs/wahid
         - designs/walburga
         - designs/waralee
         - designs/yuri
-        - plugins/plugin-bundle
+        - plugins/core-plugins
+        - plugins/plugin-annotations
+        - plugins/plugin-bin-pack
         - plugins/plugin-bust
         - plugins/plugin-flip
         - plugins/plugin-gore
         - plugins/plugin-i18n
         - plugins/plugin-measurements
         - plugins/plugin-mirror
+        - plugins/plugin-ringsector
         - plugins/plugin-round
         - plugins/plugin-sprinkle
         - plugins/plugin-svgattr
@@ -87,25 +98,19 @@ body:
         - plugins/plugin-timing
         - plugins/plugin-versionfree-svg
         - packages/core
-        - packages/i18n
         - packages/models
         - packages/new-design
         - packages/prettier-config
+        - packages/react-components
         - packages/rehype-highlight-lines
         - packages/rehype-jargon
         - packages/snapseries
-  - type: dropdown
-    id: patron
-    attributes:
-      label: Are you a FreeSewing patron? 😃
-      description: 'Patrons support us financially :pray: so they get priority'
-      options:
-        - 'Yes, I am a tier-2 patron ❤️'
-        - 'Yes, I am a tier-4 patron ❤️  💙'
-        - 'Yes, I am a tier-8 patron ❤️  💙 💜'
-        - 'No, I am not 😞'
-    validations:
-      required: true
+        - sites/backend
+        - sites/dev
+        - sites/email
+        - sites/lab
+        - sites/org
+        - sites/sde
   - type: textarea
     id: extra
     attributes:
@@ -114,6 +119,6 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please keep in mind that **FreeSewing is a community project** that depends on **[your support](https://freesewing.org/community/join/)**.
+        Please keep in mind that **FreeSewing is a non-profit project** that depends on **[your support](https://freesewing.org/patrons/join/)**.
 ---
 
