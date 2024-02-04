@@ -1,6 +1,4 @@
-import chai from 'chai'
-
-const expect = chai.expect
+import { expect } from 'chai'
 
 describe('SVG Attributed Plugin Tests', () => {
   it('FIXME: No plugin tests defined', () => {

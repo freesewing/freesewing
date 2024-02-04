@@ -1,4 +1,3 @@
-![FreeSewing](https://static.freesewing.org/banner.png)
 <p align='center'><a
   href="https://www.npmjs.com/package/rehype-jargon"
   title="rehype-jargon on NPM"
@@ -22,7 +21,7 @@
   </a><a
   href="#contributors-"
   title="All Contributors"
-  ><img src="https://img.shields.io/badge/all_contributors-119-pink.svg"
+  ><img src="https://img.shields.io/badge/all_contributors-123-pink.svg"
   alt="All Contributors"/>
   </a></p><p align='center'><a
   href="https://twitter.com/freesewing_org"
@@ -85,14 +84,15 @@ export const jargon = {
 Now import the plugin, and pass it your jargon:
 
 ```js
-import rehypeJargon from 'rehype-jargon'
-import { jargon } from './jargon.js'
-import {read} from 'to-vfile'
-import {unified} from 'unified'
+var remark = require('remark')
+var html = require('remark-html')
+var plugin = require('remark-jargon')
+var jargon = require('./jargon.js')
 
-const file = await unified()
-  .use(rehypeJargon, {jargon: jargon})
-  .process('This is a plugin for _rehype_ originally written for _freesewing_.', function (err, file) {
+remark()
+  .use(html)
+  .use(plugin, { jargon: jargon })
+  .process('This is a plugin for _remark_ originally written for _freesewing_.', function (err, file) {
     console.log(String(file))
   })
 ```
@@ -171,6 +171,22 @@ For help or feedback, please stop by [the FreeSewing chat room](https://gitter.i
 [create an issue](https://github.com/freesewing/freesewing/issues/new).
 
 
+## Use with Gatsby
+
+Please see [gatsby-remark-jargon](https://github.com/freesewing/freesewing/tree/develop/packages/gatsby-remark-jargon) for
+info and instructions on how to use this plugin with [Gatsby](https://www.gatsbyjs.org/). 
+
+
+# FreeSewing
+
+> [!TIP]
+>#### Support FreeSewing: Become a patron, or make a one-time donation 🥰
+>
+> FreeSewing is an open source project maintained by Joost De Cock and financially supported by the FreeSewing patrons.
+>
+> If you feel FreeSewing is worthwhile, and you can spend a few coins without
+hardship, then you should [join us and become a patron](https://freesewing.org/community/join).
+
 ## What am I looking at? 🤔
 
 This repository is the FreeSewing *monorepo* holding all FreeSewing's websites, documentation, designs, plugins, and other NPM packages.
@@ -183,6 +199,7 @@ If you're not entirely sure what to do or how to start, type this command:
 npm run tips
 ```
 
+> [!NOTE]
 > If you don't want to set up a dev environment, you can run it in your browser:
 > 
 > [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/freesewing/freesewing)
@@ -207,7 +224,7 @@ functionality of the platform.
 If you have NodeJS installed, you can try it right now by running:
 
 ```bash
-npx create-freesewing-pattern
+npx @freesewing/new-design
 ```
 
 Getting started guides are available for:
@@ -218,12 +235,22 @@ Getting started guides are available for:
 The [pattern design tutorial](https://freesewing.dev/tutorials/pattern-design/) will
 show you how to create your first parametric design.
 
-## Support FreeSewing: Become a patron 🥰
+## Getting started ⚡ 
 
-FreeSewing is an open source project maintained by Joost De Cock and financially supported by the FreeSewing patrons.
+To get started with FreeSewing, you can spin up our development environment with:
 
-If you feel FreeSewing is worthwhile, and you can spend a few coins without
-hardship, then you should [join us and become a patron](https://freesewing.org/community/join).
+```bash
+npx @freesewing/new-design
+```
+
+To work with FreeSewing's monorepo, you'll need [NodeJS v18](https://nodejs.org), [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.  
+Once you have those, clone (or fork) this repo and run `yarn kickstart`:
+
+```bash
+git clone git@github.com:freesewing/freesewing.git
+cd freesewing
+yarn kickstart
+```
 
 ## Links 👩‍💻
 
