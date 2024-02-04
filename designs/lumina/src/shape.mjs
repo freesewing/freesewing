@@ -48,9 +48,10 @@ const createWaistPoint = (options, measurements, Path, points, utils, log, front
   )
   let waistCp = waist.shiftFractionTowards(points.middleKnee, options.waistToKneeCP)
   const kneeToWaist = measurements.waistToKnee * 0.75
-
   let diff = 0
   let iter = 0
+  let bestDiff = 999
+  let best = {}
   do {
     // waist = kneeTemp.shift(angle, kneeToWaist +((diff > 0 ? 1 : -1) *iter))
     waist = kneeTemp.shift(angle, kneeToWaist + diff * 1.03)
@@ -60,12 +61,22 @@ const createWaistPoint = (options, measurements, Path, points, utils, log, front
     const crossSeamPath = new Path().move(points.middleCrossSeam).curve(crossSeamCp, waistCp, waist)
 
     diff = crossSeam - crossSeamPath.length()
-    // console.log({i:iter,d:diff,cs:crossSeam,csl:crossSeamPath.length()})
+    if (Math.abs(diff) < bestDiff) {
+      best = {
+        waist: waist.copy(),
+        waistCp: waistCp.copy(),
+      }
+      bestDiff = Math.abs(diff)
+    }
   } while (++iter < 100 && (diff > 1 || diff < -1))
   if (iter >= 100) {
-    log.error('lumina:cantFitTheWaistPoint')
+    if (bestDiff > 5) {
+      log.error('lumina:cantFitTheWaistPoint')
+    } else {
+      waist = best.waist
+      waistCp = best.waistCp
+    }
   }
-
   if (front) {
     points.frontWaist = waist.clone()
     points.frontWaistband = waist.clone()
@@ -178,8 +189,11 @@ const createSidePoints = ({
           points[prefix + postfix + names[i]] = ci[prefix == 'front' ? 0 : 1]
         }
       } while (iter++ < 100 && (false == ci || isNaN(ci[prefix == 'front' ? 0 : 1].x)))
-
-      lastGood = i
+      if (iter >= 100) {
+        points[prefix + postfix + names[i]] = points[prefix + postfix + names[lastGood]].clone()
+      } else {
+        lastGood = i
+      }
     }
   }
 }
