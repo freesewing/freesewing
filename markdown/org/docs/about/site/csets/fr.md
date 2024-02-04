@@ -20,7 +20,7 @@ We now no longer present users who want to try out the site a range of *standard
 
 Nous comptons sur notre communauté pour soumettre des ensembles de mesures à la curation. Si tu as un ensemble de mesures publiques sur le site, tu peux le suggérer pour la curation.
 
-Pour faire partie de notre collection d'ensembles de mesures curatées, tu dois fournir les éléments suivants :
+To be part of our curated measurements sets collection, you should provide the following:
 
 - **Toutes les mesures** de la personne. Nous n'acceptons pas les ensembles incomplets, car cela signifierait que certains dessins ne fonctionneraient pas avec eux.
 - **La taille** de la personne. Cela aide les utilisateurs à sélectionner un ensemble de mesures le plus proche de leur propre corps.

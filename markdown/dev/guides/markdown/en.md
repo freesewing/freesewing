@@ -11,7 +11,7 @@ or anywhere where you want rich text while using a plain text editor.
 
 In this guide, we'll look at the following topics:
 
-<ReadMore list />
+<ReadMore />
 
 This will be enough to get you started. If you'd like to learn more,
 visit [markdownguide.org](https://www.markdownguide.org/).

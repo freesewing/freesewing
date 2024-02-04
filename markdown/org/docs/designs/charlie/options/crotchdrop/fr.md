@@ -4,8 +4,8 @@ title: "Hauteur d'enfourchure"
 
 Contrôle à quel point la croche est abaissée.
 
-Abaisser la crotte rend un ajustement plus décontracté.  
-Un crotché significativement baissé peut également être un choix de style.
+Lowering the crotch makes for a more casual fit.  
+A significantly lowered crotched can also be a style choice.
 
 
 

@@ -1,8 +1,6 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { round, Design } from '@freesewing/core'
 import { plugin } from '../src/index.mjs'
-
-const expect = chai.expect
 
 describe('Gore Plugin Tests', () => {
   it('Should create a default gore', () => {

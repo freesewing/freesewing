@@ -1,18 +1,18 @@
 ---
-title: "Everything about FreeSewing v3: Umbrella post"
-caption: Multicolored Umbrella by Alexander Grey
+title: "Alles over FreeSewing v3: Overkoepelende post"
+caption: Veelkleurige paraplu van Alexander Grey
 date: 20231103
-intro: There's a flurry of news about FreeSewing v3, so here's an overview
+intro: Er is een heleboel nieuws over FreeSewing v3, dus hier is een overzicht
 author: joost
 ---
 
-There's a flurry of news and announcements about FreeSewing v3, so this _umbrella post_ gathers all of them into one place.
+Er is een stortvloed aan nieuws en aankondigingen over FreeSewing v3, dus deze _overkoepelende post_ verzamelt het allemaal op één plek.
 
-If you're looking for the best link to share regarding the v3 release and migration, this post is your best bet.
+Als je op zoek bent naar de beste link om te delen over de v3 release en migratie, dan is dit bericht je beste kans.
 
-##### FreeSewing is now pay-what-you-want
+##### FreeSewing is nu betaal-wat-je-wil
 
-[This post outlines the reasoning behind FreeSewing's new pricing](/blog/freesewing-is-now-pay-what-you-want)
+[Dit bericht beschrijft de redenering achter de nieuwe prijsstelling van FreeSewing](/blog/freesewing-is-nu-betaal-wat-je-wilt)
 
 ##### Welkom op de nieuwe FreeSewing.org site, mogelijk gemaakt door v3
 

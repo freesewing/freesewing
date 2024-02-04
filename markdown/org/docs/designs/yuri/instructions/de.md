@@ -4,24 +4,24 @@ title: "Yuri Hoodie: Anleitung zum Nähen"
 
 <Note>
 
-Dieses Muster kann mit oder mit einem Overlocker/Serger genäht werden. Um Nähte ohne Overlocker/Serger zu _bearbeiten_, kannst du entweder deine bevorzugte Methode oder eine der folgenden Methoden anwenden:
+Dieses Muster kann mit oder mit einem Overlocker/Serger genäht werden. To _finish_ seams without a overlocker/serger you can either use your preferred method or one of the methods below:
 
 ##### Finishing Method 1
 
-- Bügle die Nahtzugaben auf.
+- Press open the seam allowances.
 - Dann nähst du auf der guten Seite 3 mm (1/8 Zoll) entfernt oder näher an beiden Seiten der Naht und fängst die Nahtzugaben darunter auf.
 - Auf der falschen Seite die Nahtzuschläge in der Nähe des Kantenstichens abschneiden.
 
-##### Fertigstellungsmethode 2
+##### Finishing Method 2
 
-- Nähen Sie die Nahtzustände entweder mit einem Ziz-Zag, einem Überschlag oder einem geraden Stitch und drücken Sie auf eine Seite.
+- Sew the seam allowances together with either a zig-zag, overcast or straight stitch and press to one side.
 - Bei Bedarf auf 1cm Naht abschneiden.
 
 </Note>
 
 <Tip>
 
-Bei Verwendung eines Overlockers/Sergers können Sie Nähte nähen, die in einem Schritt Finishing benötigen, anstatt die Naht konventionell zu nähen und zu beenden.
+If using a overlocker/serger you can sew seams which need finishing in one go rather than sewing the seam conventionally and finishing it.
 
 </Tip>
 
@@ -51,7 +51,7 @@ Auf dem Schnittmuster ist die hintere Kerbe als Kreuzkerbe gekennzeichnet (siehe
 - (Optional) Die rohe Kante des Ärmels überziehen.
 - Drücken Sie die Saumerlaubnis auf die falsche Seite des Stoffes und Baste in der Nähe der Rohkante.
 - Auf der Außenseite abgenäht von der gefalteten Kante, wobei die Saummenge unter Verwendung des Basters als Richtschnur für die Rohkante gefangen wird.
-- (Optional) Auf der Außenseite ist die Stitch 6mm (1/4 Zoll) parallel zum ursprünglichen Stich entlang der Saumlänge.
+- (Optional) On the outside, stitch 6mm (1/4 inch) parallel to original stitch along the hem allowance.
 - Basting entfernen.
 
 <Note>
@@ -94,8 +94,8 @@ Es wird empfohlen, die **Fertigstellungsmethode 1** für diesen Schritt zu verwe
 - Nähen Sie den angehefteten Rand zusammen.
 - Schneiden Sie die Nahterlaubnis auf 1cm (3/8 Zoll), wenn Ihr gewähltes Nahtgewicht größer ist und Sie nicht verwendet haben und Überlocker/Server. Ansonsten ist _nicht_ die Naht zu schneiden.
 - Drehen Sie die Kapuze gute Seiten aus und drücken Sie die Außenkante flach.
-- Auf der Außenseite der Topstitch am Rand der Kapuze entlang, ca. 1,5 - 2cm von der Kante. Vergewissern Sie sich, dass Ihre Aufstichung umschließt, aber nicht durch die Naht der äußeren Haube Kante geht. Dadurch entsteht ein dekorativer Felgen, wobei die eingeschlossene Naht die Felge ein bisschen poofy macht.
-- Mit rohen Kanten zusammen, den Boden der Kapuze. Sie können dies entweder mit einem Overlocker/Serger oder einem Ziz-Zag oder einem Übergießstich auf einer normalen Maschine tun.
+- Auf der Außenseite der Topstitch am Rand der Kapuze entlang, ca. 1,5 - 2cm von der Kante. Ensure that your topstitching encloses but does not go through the seam allowance of the outer hood edge. Dadurch entsteht ein dekorativer Felgen, wobei die eingeschlossene Naht die Felge ein bisschen poofy macht.
+- Mit rohen Kanten zusammen, den Boden der Kapuze. You can either do this with an overlocker/serger or a zig-zag or overcast stitch on a regular machine.
 
 <Note>
 
@@ -121,15 +121,15 @@ Du kannst auch ein gefaltetes Band machen, so dass das Nackenband keine rohe Kan
 - Mit guten Seiten zusammen, beginnend von der Mitte hinten Pin die Kapuze zum Hals, passend zur Mitte und zum Überlappen der Kapuze endet an der Vorderseite.
 - Stecke das Nackenband an der Kapuze fest, wobei die gute Seite des Nackenbandes an der Futterseite der Kapuze liegt und die Mitte des Nackenbandes an der hinteren Mitte liegt.
 - Bei Verwendung eines Overlockers/Sergers ziehen Hals und Kapuze durch alle Lagen zusammen.
-- Bei Nähmaschine mit Zickzackstich können alle Näh- und Haubenschichten zusammengenäht werden.
+- If using a sewing machine, use a zig-zag stitch to sew all the neck and hood layers together.
 - Überprüfen Sie nach außen die Halslinie, um sicherzustellen, dass alle Schichten gefangen werden.
 - Drucknahtzuschläge in Richtung Körper.
-- Auf der guten Seite Mit einer geraden Sitze ca. 1cm vom Halsrand zum Körper entfernt, um das Halsband darunter zu fangen und zu sichern.
+- On the good side, topstitch with a straight stitch approximately 1cm (3/8 inch) away from the neck edge towards the body to catch and secure the neckband underneath.
 - Schneiden Sie die überschüssige Bindung von innen ab.
 
 <Warning>
 
-Wenn Sie einen Überlocker/Serger verwenden, um die Kapuze zu befestigen, können Sie sperrige Bereiche zuerst mit einem geraden Heftsucher nach unten anbringen, da die Vorderseite als Überlocker/Serger Probleme haben kann, diese Teile zu nähen.
+If using a overlocker/serger to attach the hood you may want to attach bulky areas down first with a straight stitch such as the front as an overlocker/serger may have trouble sewing these parts.
 
 </Warning>
 

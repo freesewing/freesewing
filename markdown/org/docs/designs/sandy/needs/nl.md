@@ -16,7 +16,7 @@ Door de vele verschillende stijlen van Sandy is het moeilijk om precies te zegge
 
 ##### Hoofd stof
 
-De lengte die je nodig hebt hangt af van hoe lang en hoe vol je cirkelrok is. Halve rokken en kleinere rokken zijn voldoende met 2 - 2,5 meter, terwijl een rok met vloerlengte meer nodig heeft. Koop bij twijfel een meter meer dan je denkt. Wees ook niet bang om een stuk te maken als je stof niet breed of lang genoeg is, het is beter om een extra naad te hebben dan om de stof die je mooi vindt niet te gebruiken.
+The length you require is dependant on how long and how full your circle skirt is, mid length and smaller should be sufficient with 2 - 2.5 metres whereas a floor length will require more. Koop bij twijfel een meter meer dan je denkt. Wees ook niet bang om een stuk te maken als je stof niet breed of lang genoeg is, het is beter om een extra naad te hebben dan om de stof die je mooi vindt niet te gebruiken.
 
 <Note>
 
@@ -40,7 +40,7 @@ Om de rok meer flair te geven/vorm te houden kun je misschien een facing aan de 
 
 ##### Sluitingen
 
-Als je geen elastische Sandy maakt, heb je een soort sluiting nodig. Dit kan gewoon een rits zijn die in de tailleband en naad wordt gestoken, of het kunnen knopen, kledinghaken of drukknopen zijn met een overlappende tailleband en een opening, placket of rits bovenaan de naad.
+Als je geen elastische Sandy maakt, heb je een soort sluiting nodig. This can be just a zip that is inserted in to the waistband and seam or it can be buttons, dress hooks, or snaps with an overlapping waistband and an opening, placket or zipper at the top of the seam.
 
 ##### Elastiek
 

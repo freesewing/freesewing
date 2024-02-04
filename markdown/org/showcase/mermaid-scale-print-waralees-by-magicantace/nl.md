@@ -1,11 +1,11 @@
 ---
-title: Mermaid scale print Waralees by MagicantAce
-caption: These Waralees are faintly sparkly!
+title: Zeemeermin opdruk Waralees van MagicantAce
+caption: Deze Waralees zijn wat sprankelend!
 date: 20231227
-intro: We love these awesome, faintly sparkly mermaid scale print Waralees.
+intro: Wij zijn dol op deze geweldige, glinsterende Waralees met zeemeerminnenprint.
 designs:
   - waralee
 maker: Natalia
 ---
 
-We love these awesome, faintly sparkly mermaid scale print Waralees. Maker MagicantAce doesn't usually sew human-sized garments -- be sure to check out his fantastic doll outfits in other FreeSewing showcases -- but did a great job with these. He mentioned that the hardest part was turning the tubes for the ties right side out.
+Wij zijn dol op deze geweldige, glinsterende Waralees met zeemeerminnenprint. Maker MagicantAce naait meestal geen kledingstukken op mensenmaat -- bekijk zeker zijn fantastische poppenoutfits in andere FreeSewing showcases -- maar deed het geweldig met deze. Hij noemde dat het moeilijkste deel was om de buizen voor de dassen met de goede kant naar buiten te draaien.

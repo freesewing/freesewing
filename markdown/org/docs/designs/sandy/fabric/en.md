@@ -6,7 +6,7 @@ title: "Sandy circle skirt: Fabric Options"
 
 A circle skirt is a very versatile garment and can be made from a variety of fabric. It all depends on your intended use and preferred style.
 
-- If you wish for an everday, easy to wash skirt then **Linen** and **Cotton** is the way to go.
+- If you wish for an everyday, easy to wash skirt then **Linen** and **Cotton** is the way to go.
 - If you are looking for something more formal you may want to try **Suiting Fabrics**.
 - If you want something warm for the winter you can try **Wools**.
 - If wish for something flowy that drapes you can try lightweight materials such as **Chiffon**.

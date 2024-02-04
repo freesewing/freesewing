@@ -4,7 +4,7 @@ title: "Tamiko top: Naai-instructies"
 
 ### Stap 1: werk het armsgat af
 
-![Werk het armsgat af](step03.png)
+![Finish the armhole seam](step03.png)
 
 - Werk het armsgat af met een smalle zoom.
 

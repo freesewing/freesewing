@@ -21,7 +21,7 @@ So let's add it as a required measurement.
 In our `src/bib.mjs` file, we will add a `measurements` property to the `bib` object.
 This property will be an Array (a list) holding all required measurements for this part.
 
-I am usign [*the official name* of the measurement](/reference/measurements) here. For head
+I am using [*the official name* of the measurement](/reference/measurements) here. For head
 circumference, that name is `head`.
 
 ```src/bib.mjs

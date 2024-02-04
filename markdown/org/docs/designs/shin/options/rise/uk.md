@@ -2,7 +2,7 @@
 title: "Вставай."
 ---
 
-Цей параметр регулює загальну висоту талії.
+This option controls the overall height of the waist.
 
 > Чим вище підйом, тим вище талія.
 

@@ -4,7 +4,7 @@ title: "Gezichtsmasker Florence: Stof Opties"
 
 Het doel van ons masker is om droplets te stoppen. Dus u wilt iets doen dat de mensen wegjaagt. En nogmaals, je moet door je masker kunnen ademen, zodat we stof willen die adem ademt, zonder droplets door te laten gaan.
 
-Bovendien willen we dat het binnenste zich comfortabel op onze huid bevindt. Dus hier zou ik een sterk geweven katoen of viscose/rayon voorstellen. Voor de buitenstof, katoen opnieuw, of een stevig geweven wol.
+Bovendien willen we dat het binnenste zich comfortabel op onze huid bevindt. Dus hier zou ik een sterk geweven katoen of viscose/rayon voorstellen. For the outer fabric, cotton again, or a tightly woven wool.
 
 <Note>
 

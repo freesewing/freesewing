@@ -646,7 +646,7 @@ Now that your collar is attached, give it a good press.
 ### Step 20: Hem your shirt
 
 ![Fold over and press](20a.png)
-![FOld over again, and press again](20b.png)
+![Fold over again, and press again](20b.png)
 ![Sew the hem](20c.png)
 
 Time to finish the hem (that's the part you tuck in your trousers).

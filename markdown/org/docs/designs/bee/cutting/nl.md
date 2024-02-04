@@ -38,6 +38,6 @@ Er zijn drie variaties van dit patroon. **One Colour**, waarbij het bikinitopje 
 
 <Note>
 
-Dit patroon is gemakkelijk omkeerbaar te maken door een stof te kopen die lijkt op de hoofdstof en die als contrast te gebruiken. Om verwarring in de instructies te voorkomen wordt hiernaar verwezen als de voeringstof.
+Dit patroon is gemakkelijk omkeerbaar te maken door een stof te kopen die lijkt op de hoofdstof en die als contrast te gebruiken. To save confusion on instructions it will be referred to as the lining fabric.
 
 </Note>

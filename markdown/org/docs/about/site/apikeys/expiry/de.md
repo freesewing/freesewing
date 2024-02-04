@@ -7,6 +7,6 @@ Jeder API-Schlüssel hat ein **Ablaufdatum** , nach dem der Schlüssel nicht meh
 Standardmäßig laufen die API-Schlüssel nach einem Monat ab, aber wir unterstützen bis zu zwei Jahre.
 
 <Note>
-Wenn dein Schlüssel bald abläuft, musst du ihn durch einen neuen ersetzen. 
+When your key is about to expire, you must replace it with a new one. 
 Du kannst das Ablaufdatum eines einmal festgelegten Schlüssels nicht verlängern.
 </Note>

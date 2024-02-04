@@ -30,18 +30,22 @@ export const MeasieImage = (props) => {
 
   return (
     <Tabs tabs="Sarah, Tim">
-      <Tab>
+      <Tab tabId="Sarah">
         <img
           className="shadow aspect-[4/3]"
-          {...sarahImages[m]}
+          height={sarahImages[m].height}
+          width={sarahImages[m].height}
+          src={sarahImages[m].height}
           alt={t('measurements:' + m)}
           style={{ ...style, backgroundImage: `url(/img/sarah-${pose}.jpg)` }}
         />
       </Tab>
-      <Tab>
+      <Tab tabId="Tim">
         <img
           className="shadow"
-          {...timImages[m]}
+          height={timImages[m].height}
+          width={timImages[m].height}
+          src={timImages[m].height}
           alt={t('measurements:' + m)}
           style={{ ...style, backgroundImage: `url(/img/tim-${pose}.jpg)` }}
         />

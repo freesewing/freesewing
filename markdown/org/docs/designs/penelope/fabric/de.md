@@ -6,7 +6,7 @@ title: "Penelope Bleistiftrock: Stoff Optionen"
 
 Ein Bleistiftrock ist ein eher formeller Schnitt und wird meist aus einem Anzugstoff gefertigt. Mit anderen Worten, eine **feine Wolle**. Zu den legereren Optionen unter den **mittelschweren** Stoffen gehören **Baumwolle** oder **Denim**.
 
-Einen Stoff mit etwas Dehnbarkeit zu verwenden wird es einfacher machen, eine bequeme Passform zu bekommen, und dir mehr Bewegungsfreiheit geben, da Bleistiftröcke ziemlich eng sitzen. **Scuba** wird oft für Bleistiftröcke verwendet, da es fest ist, Körper hat, sich aber auch dehnt.
+Einen Stoff mit etwas Dehnbarkeit zu verwenden wird es einfacher machen, eine bequeme Passform zu bekommen, und dir mehr Bewegungsfreiheit geben, da Bleistiftröcke ziemlich eng sitzen. **Scuba** is often seen in pencil skirts as it is firm, has body but also stretches.
 
 ### Bindegewebe
 

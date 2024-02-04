@@ -1,7 +1,5 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { Defs } from '../src/defs.mjs'
-
-const expect = chai.expect
 
 describe('Defs', () => {
   let defs = new Defs()

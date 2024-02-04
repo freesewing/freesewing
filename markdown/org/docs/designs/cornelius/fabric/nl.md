@@ -4,7 +4,7 @@ title: "Cornelius fietsbroek: Stof Opties"
 
 ### Hoofd stof
 
-Elke **bodemstof (broekstof)** werkt prima voor dit patroon. Over het algemeen wil je alles dat zwaarder is dan 7oz (230gsm) vermijden, omdat dit waarschijnlijk te stijf en oncomfortabel zal zijn. Je wilt iets dat een beetje warmte biedt en toch kan draperen, zoals **Corduroy** of **Medium Weight Suiting** stoffen. Als je op zoek bent naar iets dat meer historisch correct is, dan is **wollen pakwerk van gemiddelde dikte** iets voor jou. **Linnen** is ook een optie, vooral als je iets wilt dat niet te warm is.
+Elke **bodemstof (broekstof)** werkt prima voor dit patroon. Over het algemeen wil je alles dat zwaarder is dan 7oz (230gsm) vermijden, omdat dit waarschijnlijk te stijf en oncomfortabel zal zijn. Je wilt iets dat een beetje warmte biedt en toch kan draperen, zoals **Corduroy** of **Medium Weight Suiting** stoffen. If you are looking for something more historically correct, then **Medium weight wool suiting** is the way to go. **Linnen** is ook een optie, vooral als je iets wilt dat niet te warm is.
 
 <Note>
 

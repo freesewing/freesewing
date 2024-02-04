@@ -13,4 +13,4 @@ RockerKitten combined Simone and Sandy to make this gorgeous dress. We enjoyed f
 
 ![Side view](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-a-simone-sandy-mashup-with-a-handkerchief-hem-by-rockerkitten-1/public "Side view")
 
-This was made by RockerKitten, [@rockerkitten on Instagram](https://www.instagram.com/rockerkitten/), and has been shared here with permission.
+Deze is gemaakt door RockerKitten, [@rockerkitten op Instagram](https://www.instagram.com/rockerkitten/), en is hier met toestemming gedeeld.

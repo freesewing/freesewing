@@ -2,7 +2,7 @@
 title: "Підгин пахового шва"
 ---
 
-Контролює кривизну кроточного шва, що впливає на облягання промежини.
+Controls the curvature of the crotch seam, which influences the fit at your crotch.
 
 
 

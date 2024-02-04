@@ -2,4 +2,4 @@
 title: Швейна термінологія
 ---
 
-<ReadMore list />
+<ReadMore />

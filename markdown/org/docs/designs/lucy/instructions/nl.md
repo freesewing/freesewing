@@ -22,9 +22,9 @@ Als je wilt, kun je de buitenranden van de zak aan elkaar _french seam_ naaien.
 
 ## bind the top and thread a tie through the binding
 
-Er zijn twee methoden om de bovenrand in te binden. One is to create a loop and the other is to bind with the ties. Lees beide methoden zorgvuldig door en beslis welke je wilt gebruiken.
+Er zijn twee methoden om de bovenrand in te binden. Een is om een lus te maken en de ander is om te binden met de banden. Lees beide methoden zorgvuldig door en beslis welke je wilt gebruiken.
 
-### Create a loop
+### Maak een lus
 
 - Knip een stuk bies in de lengte van de bovenrand + naadtoeslag.
 - Vouw de korte randen van de biezen om en naai vast.

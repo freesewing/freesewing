@@ -39,4 +39,4 @@ Stack objects come with the following properties:
 
 A Stack object exposes the following methods:
 
-<ReadMore list />
+<ReadMore />

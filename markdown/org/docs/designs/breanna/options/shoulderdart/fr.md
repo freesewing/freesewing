@@ -2,7 +2,7 @@
 title: "Pince d'épaule"
 ---
 
-Inclus ou non une fléchette au niveau de l'épaule arrière pour arrondir le dos.
+Whether or not to include a back shoulder dart to round the back.
 
 
 

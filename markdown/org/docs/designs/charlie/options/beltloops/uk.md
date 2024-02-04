@@ -2,7 +2,7 @@
 title: "Поясні петельки"
 ---
 
-Контролюйте, скільки петель ми згенеруємо.
+Controls how many beltloops we'll generate.
 
 
 

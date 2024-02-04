@@ -158,7 +158,7 @@ Tomalo lento, y sé **muy conocido** de dónde corta tu espada serger.
 
 ![Hem la primera pierna](step11.png)
 
-Es hora de cortar las piernas. Cámbielos como lo harías con cualquier otro tejido. Vaya a un stitch flexible. Puedes usar una ranura zig-zag o una aguja gemela si no tienes un candado o un ajuste flexible específico.
+Es hora de cortar las piernas. Cámbielos como lo harías con cualquier otro tejido. Vaya a un stitch flexible. Puedes usar una ranura zig-zag o una aguja gemela si no tienes un candado o un ajuste de stitch flexible específico.
 
 <Note>
 
@@ -202,7 +202,7 @@ Si estás usando una cubierta, pon el elástico en la parte superior del buen la
 
 <Tip>
 
-La longitud de su elástico probablemente difiere de la longitud del tejido, ya que se estiran de forma diferente.
+The length of your elastic will probably differ from the fabric length, as they stretch differently.
 La fijación te ayudará a conseguir un estiramiento uniforme.
 
 Divida su cintura elástica y boxeadora en 4 (o 8) partes. Fijar elástico y tejer juntos en estos puntos.

@@ -114,7 +114,7 @@ Markeer de paspelzak op deze manier:
 - Markeer het midden van de zakopening met een horizontale lijn. Laat ook deze lijn iets verder doorlopen om het je later makkelijker te maken
 - Markeer twee horizontale lijnen, parallel aan de middenlijn, op dezelfde afstand als de paspelhoogte (in ons voorbeeld is dit 0.5 cm)
 
-Het deel van de twee horizontale lijnen parallel met de middenlijn dat tussen de twee verticale lijnen valt is waar we de paspels vast zullen stikken. Dit is aangeduid met de rode lijnen.
+The part of the horizontal lines parallel to the center line that fall in between the vertical lines is where we'll sew our welts in place. Dit is aangeduid met de rode lijnen.
 
 ### Stap 3: Vouw en strijk de paspels
 

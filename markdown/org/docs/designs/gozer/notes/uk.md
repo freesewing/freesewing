@@ -2,5 +2,5 @@
 title: "Привид Гозера: нотатки дизайнера"
 ---
 
-<Fixme>Дизайнер, а також FreeSewing не несуть відповідальності за будь-які наслідки використання цієї викрійки. Тебе попереджено.</Fixme>
+<Warning>The designer, nor FreeSewing, are liable for anything that follows the use of this pattern. You've been warned.</Warning>
 

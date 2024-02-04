@@ -3,5 +3,5 @@ title: "Lucy bindzakje: Benodigde afmetingen"
 ---
 
 <Note>
-Luci vereist geen metingen
+Lucy does not require any measurements
 </Note>

@@ -8,7 +8,7 @@ checkYourInbox: Go check your inbox for an email from
 clickSigninLink: Click the sign-in link in that email to sign in to your FreeSewing account.
 clickSignupLink: Click your personal signup link in that email to create your FreeSewing account.
 consentLacking: We lack consent to process your data
-consentLackingMsg: Getting your consent is part of sign up process. Look for the email you received when you signed up for instracutions. You can sign up again with the same email address to receive the email again.
+consentLackingMsg: Getting your consent is part of sign up process. Look for the email you received when you signed up for instructions. You can sign up again with the same email address to receive the email again.
 contact: Contact support
 contactingGithub: Contacting GitHub
 contactingGoogle: Contacting Google

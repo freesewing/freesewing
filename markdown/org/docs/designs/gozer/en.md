@@ -11,3 +11,5 @@ where the pattern was. So I posted it. And he published it.
 
 Wouter
 
+<br />
+<DesignInfo design='gozer' docs />

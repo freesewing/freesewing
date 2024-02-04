@@ -1,8 +1,8 @@
 ---
-title: Why do I have to click again to confirm I want to unsubscribe from the newsletter?
+title: Waarom moet ik opnieuw klikken om te bevestigen dat ik me wil afmelden voor de nieuwsbrief?
 ---
 
-While we could make it so that clicking the link in your email would immeadiatly unsubcribe you, it would be in violation of internet standards. Specifiek de definitie van het __HTTP__ protocol __GET methode__ waarin staat dat:
+While we could make it so that clicking the link in your email would immediately unsubscribe you, it would be in violation of internet standards. Specifiek de definitie van het __HTTP__ protocol __GET methode__ waarin staat dat:
 
 
 <Note>
@@ -15,17 +15,17 @@ Een _GET request_ is wat er gebeurt als je een link volgt. Merely following a li
 
 For example, when you receive an email, your email client may _preload_ the links in it in the background. So that they are quicker to load should you click on them.
 
-Obviously, this preloading should not unsubscribe you. Which is why you need to click a button to confirm. Because that will trigger a __POST request__ and those can make changes.
+Het is duidelijk dat dit voorladen je niet moet afmelden. Which is why you need to click a button to confirm. Because that will trigger a __POST request__ and those can make changes.
 
 <Tip>
 
-##### This does not apply to users unsubscribing through their account
+##### Dit geldt niet voor gebruikers die zich afmelden via hun account
 
-None of this applies to users who unsubscribe from our newsletter by disabling the
-option in their account. In this case, you are already clicking a button, rather
-than a link in your email.
+Niets hiervan geldt voor gebruikers die zich afmelden voor onze nieuwsbrief door de optie
+in hun account uit te schakelen. In dit geval klik je al op een knop, in plaats van
+op een link in je e-mail.
 
-If you are curious, we use an idempotent __PUT request__ under the hood.
+Als je nieuwsgierig bent, we gebruiken een idempotent __PUT request__ onder de motorkap.
 </Tip>
 
 

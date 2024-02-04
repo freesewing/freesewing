@@ -4,5 +4,5 @@ title: Bustewijdte
 
 De **bustewijdte** is de horizontale afstand tussen de toppen van de buste.
 
-To measure your bust span, run the tape measure horizontally in a straight line from the tip of your one breast to the tip of the other.
+Om je borstwijdte op te meten, houd je het meetlint horizontaal in een rechte lijn van een punt van de borst naar het punt van de ander.
 <MeasieImage />

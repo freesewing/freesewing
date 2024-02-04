@@ -26,7 +26,7 @@ We are migrating from _cjs_ to _esm_ modules
 To add a new jargon term, you need to add it to the jargon file for the
 website you'd like to add it to:
 
-| Website | Jargon file | Github link |
+| Website | Jargon file | GitHub link |
 | ------- | ----------- | ----------- |
 | freesewing.dev | `sites/dev/jargon.mjs` | [jargon.mjs](https://github.com/freesewing/freesewing/blob/develop/sites/dev/jargon.mjs) |
 | freesewing.org | `sites/org/jargon.mjs` | [jargon.mjs](https://github.com/freesewing/freesewing/blob/develop/sites/org/jargon.mjs) |
@@ -50,3 +50,22 @@ The value can hold HTML tags, just make sure it's valid HTML and don't go
 overboard.
 
 Note that the definition will be _italic_ by default.
+
+## FreeSewing Jargon Glossary
+
+Below is the jargon which is currently defined and available to use
+on our websites.
+
+### Jargon on freesewing.dev
+
+| Term | Description |
+| ----------- | ----------- |
+| `cjs` | **CJS** stands for CommonJS, it is the JavaScript module format popularized by NodeJS, but now increasingly phased out in favor of **ESM**
+| `esm` | **ESM** stands for EcmaScript Module, it is the standardized module syntax in JavaScript
+
+### Jargon on freesewing.org
+
+| Term | Description |
+| ----------- | ----------- |
+
+_(Currently, no jargon has been defined for the freesewing.org site.)_

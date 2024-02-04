@@ -8,7 +8,7 @@ title: "Комірний зазор"
 
 <Note>
 
-Це залежить від стилю, але ширший комір (разом з кутом нахилу коміра) може вмістити ширшу краватку (вузол).
+This is really mostly a style choice, but a wider collar gap (together with the collar angle) can accommodate a wider tie (knot).
 
 </Note>
 

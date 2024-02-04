@@ -4,7 +4,7 @@ title: "Pantalón de ciclismo Cornelius: Opciones de tejido"
 
 ### Tela principal
 
-Cualquier material de peso inferior (pantalón) de **** funcionará bien para este patrón. Por lo general, debes evitar todo lo que pese más de 230 g/m², ya que lo más probable es que sea demasiado rígido e incómodo. Quieres algo que proporcione un poco de calor y que, al mismo tiempo, sea capaz de drapear, como los tejidos **Corduroy** o **Medium Weight Suiting** . Si buscas algo más históricamente correcto, entonces **Traje de lana de peso medio** es el camino a seguir. **El lino** también es una opción, sobre todo si quieres algo que no abrigue demasiado.
+Cualquier material de peso inferior (pantalón) de **** funcionará bien para este patrón. Por lo general, debes evitar todo lo que pese más de 230 g/m², ya que lo más probable es que sea demasiado rígido e incómodo. Quieres algo que proporcione un poco de calor y que, al mismo tiempo, sea capaz de drapear, como los tejidos **Corduroy** o **Medium Weight Suiting** . If you are looking for something more historically correct, then **Medium weight wool suiting** is the way to go. **El lino** también es una opción, sobre todo si quieres algo que no abrigue demasiado.
 
 <Note>
 

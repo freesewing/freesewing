@@ -8,7 +8,7 @@ Este juguete de peluche se hace mejor con un tejido de tipo fieltro. Esto propor
 
 ## Pelo
 
-Skully necesita pelo. El hilo de bordar funciona muy bien, y se puede conseguir en todos los colores.
+Skully necesita pelo. Embroidery floss works very well, and can be had in all colors.
 
 ## Relleno
 

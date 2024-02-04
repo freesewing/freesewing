@@ -20,4 +20,4 @@ this guide is for you.
 
 We'll cover the following topics:
 
-<ReadMore list />
+<ReadMore />

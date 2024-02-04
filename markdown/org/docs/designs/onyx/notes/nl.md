@@ -10,7 +10,7 @@ De rok is toegevoegd voor bescheidenheid, voornamelijk voor de zwemkleding, maar
 
 Onyx kopieert een aantal kenmerken van Shelly, zoals raglanmouwen voor mobiliteit en het gebruik van symmetrische voor- en achterkant, behalve de nek en het hoofd.
 
-Onyx is vernoemd naar de edelsteen en zijn diepzwarte kleur, die niet toevallig een geweldige basiskleur is voor Onyx zwempakken, vooral als je wilt dat ze eruit zien als een wetsuit.
+Onyx is named after the gemstone and its deep black color, which not coincidentally is a great base color for Onyx swimsuits, particularly if one wants them to look like a wetsuit.
 
 Een stukje geschiedenis: Onyx was misschien nooit geboren als er geen anti-LGBTQ+ protesten en boycots waren geweest in het voorjaar van 2023, waardoor een unisuit dat ik erg leuk vond uit de schappen van een grote Amerikaanse winkel werd gehaald en ik een geschikte vervanging nodig had.
 

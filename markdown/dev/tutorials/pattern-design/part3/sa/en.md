@@ -49,11 +49,11 @@ function draftBib({
 ```
 </Example>
 
-As you can see from the source, we can descructure an `sa` variable (short for
+As you can see from the source, we can destructure an `sa` variable (short for
 seam allowance) that will hold either:
 
 - `false` if the user does not want seam allowance
-- A value in `mm` indicating how much seam allwance the user wants
+- A value in `mm` indicating how much seam allowance the user wants
 
 To add seam allowance to our path, we just `offset` it by `sa` and add
 some classes to it to style it. But, crucially, only if the user wants

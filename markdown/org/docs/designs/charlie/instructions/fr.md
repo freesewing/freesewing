@@ -192,7 +192,7 @@ Lorsque vous avez terminé, ouvrez la couture au fer.
 
 Vérifie deux fois que tes jambes droite et gauche correspondent aux marques du patron. L'entrejambe de la jambe droite doit dépasser légèrement de la gauche. Reporte-toi au patron et coupe l'excédent sur la jambe gauche si nécessaire.
 
-Il peut être précieux de marquer à la craie ou au fil l'**avant central** de chaque jambe. Cela t'aidera à t'assurer que les pièces sont au bon endroit pendant la construction de la mouche.
+Il peut être précieux de marquer à la craie ou au fil l'**avant central** de chaque jambe. This will help you make sure the pieces are in the right place during fly construction.
 
 </tip>
 
@@ -275,14 +275,14 @@ N'oublie pas que la marge de couture commence légèrement à droite du devant c
 
 Veille à placer le bord plié de la jambe droite juste à gauche des dents de la fermeture éclair pour éviter que le tissu ne se prenne dans la fermeture.
 
-Arrête de coudre au niveau de l'encoche supérieure de l'extension de la braguette, légèrement au-dessus de la couture transversale, et n'oublie pas de faire un point arrière. Si tu ne le fais pas, tu ne pourras pas maintenir l'extension hors du chemin lorsque tu couds la couture en J.
+Stop sewing at the top 'fly extension' notch, slightly above the cross seam, and be sure to backstitch. Si tu ne le fais pas, tu ne pourras pas maintenir l'extension hors du chemin lorsque tu couds la couture en J.
 
 ![Attache la rallonge à la jambe droite](AttachExtensionToRightLeg.svg)
 
 
 ### Attache la fermeture à glissière au parement de la braguette.
 
-Fais attention à aligner la jambe gauche sur le centre droit avant. Il peut être utile d'épingler ou de coudre à travers le parement et le côté droit de la bande de la fermeture à glissière. (Nous devons coudre le côté gauche de la bande de fermeture éclair à la jambe gauche). En t'assurant que tout est doublé, couds le parement de la braguette sur le côté gauche de la fermeture à glissière. Essaie de t'approcher de la fermeture éclair, mais pas trop.
+Fais attention à aligner la jambe gauche sur le centre droit avant. It can be valuable to pin or baste through the facing and right side of the zipper tape. (Nous devons coudre le côté gauche de la bande de fermeture éclair à la jambe gauche). En t'assurant que tout est doublé, couds le parement de la braguette sur le côté gauche de la fermeture à glissière. Essaie de t'approcher de la fermeture éclair, mais pas trop.
 
 ![Fixe la face à la fermeture éclair](AttachFacingToZipper.svg)
 
@@ -291,15 +291,15 @@ Fais attention à aligner la jambe gauche sur le centre droit avant. Il peut êt
 
 <tip>
 
-Utilise un morceau de papier comme guide pour coudre la couture en J, il peut être découpé dans ton patron le long de la ligne de couture indiquée.
+Use a piece of paper as a guide to sew the J seam, this can be cut from your pattern along the indicated stitch line.
 
 </tip>
 
-Désormais, renverser la soi-disant couture J-de la mouche. Assurez-vous de ne pas prendre le contrôle de l'extension du vol. Comme tu n'as pas cousu tout le long de l'extension de la braguette, tu devrais pouvoir l'épingler.
+Désormais, renverser la soi-disant couture J-de la mouche. Assurez-vous de ne pas prendre le contrôle de l'extension du vol. Since you didn't sew all the way along the fly extension, you should be able to pin it out of the way.
 
 #### Tape le bas de la mouche
 
-Maintenant, repasse le bas de la couture en J (la partie horizontale), mais cette fois-ci, assure-toi d'attraper aussi l'extension de la mouche. Tu peux aussi choisir d'ajouter un point d'arrêt supplémentaire le long du joint en J (illustré en violet).
+Now, bartack the very bottom of the J-seam (the horizontal part) but this time make sure to also catch the fly extension. Tu peux aussi choisir d'ajouter un point d'arrêt supplémentaire le long du joint en J (illustré en violet).
 
 ![Coudre la couture en J](SewTheJSeam.svg)
 
@@ -309,7 +309,7 @@ Maintenant, repasse le bas de la couture en J (la partie horizontale), mais cett
 
 <Note>
 
-Pour plus d'efficacité, nous fabriquerons une longue bande de boucle de courroie que nous diviserons en 8 parties.
+For efficiency, we will construct one long strip of belt loop that we'll divide into 8 parts.
 
 </Note>
 
@@ -359,7 +359,7 @@ Coudre une ligne de couture sur la ceinture intérieure, près du bord, à trave
 
 Placez la ceinture avec de bons côtés le long de la taille. For the straight waistband, make sure the side with the standard seam allowance is aligned with the waist, and not the side with double seam allowance.
 
-Assurez-vous également de laisser une marge de couture suffisante au-delà du début et de la fin de la ceinture.
+Also make sure to leave sufficient seam allowance beyond the start and end of the waistband.
 
 Coudre le long de l'intégralité de la taille, attacher la bande de la taille et coudre les boucles de la ceinture en une seule fois.
 
@@ -397,7 +397,7 @@ Cela accrochera l'arrière de la ceinture que nous avons fait pour aller un peu 
 
 ### Coudre les boucles de la ceinture pour les agrandir
 
-Il est préférable que les passants de ceinture soient un peu plus larges que la ceinture, afin d'accueillir des ceintures plus larges.
+It's best to make the belt loops a bit wider than the waistband, to accommodate wider belts.
 
 Pour ce faire, mettez la ceinture à plat et cousez-la avec un point d'arrêt situé à environ 1,5 cm (un demi pouce) sous la ceinture.
 

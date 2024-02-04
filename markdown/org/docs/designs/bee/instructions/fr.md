@@ -8,7 +8,7 @@ Veillez à utiliser un point extensible
 
 <Note>
 
-Lors de la réalisation d'un haut réversible, la seconde couleur sera désignée comme le tissu de doublure.  
+When making a reversible top the second colour will be referred to as the lining fabric.  
 Les encoches de ce motif se comportent davantage comme des points, il ne faut donc **pas** les couper pour les marquer.
 
 </Note>
@@ -30,7 +30,7 @@ Les encoches de ce motif se comportent davantage comme des points, il ne faut do
 - Découpez les surplus de couture et coupez les coins.
 - Retourner à l'envers. Repasser.
 
-<Note>Répétez ceci pour les pièces restantes des bretelles de cou</Note>
+<Note>Repeat this for the remaining neck tie pieces</Note>
 
 ### Étape 2 : Les bonnets
 
@@ -51,9 +51,9 @@ Les encoches de ce motif se comportent davantage comme des points, il ne faut do
 <Tip>
 
 Si votre marge de couture est large, il se peut que vous deviez couper légèrement les marges de couture des espaces pour réduire l’excès de matière.  
-Si vous avez des difficultés à retourner les bonnets, vous pouvez essayer l'une des méthodes suivantes :
+If you are having trouble turning the cups you can try one of these methods:
 
-- Créez un espace de 2,5 cm (1") dans la couture du devant ou du côté et retournez à travers cet espace, soit en le fermant au point de glissement, soit en le fermant au point d'ornement au cours de l'étape 7.
+- Create a 2.5cm (1") gap in the front or side seam and turn through that, either _slipstitch_-ing the gap closed or _edgestitch_-ing it closed during Step 7.
 - Élargir l'une des brèches existantes et retourner le tissus à travers. Ensuite, lorsque les points d'ornement ou point de glissements sont effectués, la partie élargie se referme.
 
 </Tip>
@@ -85,7 +85,7 @@ Des encoches sont également présentes de part et d'autre du point médian de l
 
 <Note>
 
-Vous pouvez préférer enrouler un bonnet sur l'autre au milieu. Pour ce faire, placez les côtés des bonnets sur les encoches extérieures et posez leur face avant sur le point milieu, la gauche sur le dessus.
+Vous pouvez préférer enrouler un bonnet sur l'autre au milieu. To do this place the sides of the cups at the outer notches and lay their fronts pass the midpoint with the left on top.
 
 </Note>
 

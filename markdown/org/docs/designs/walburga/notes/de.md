@@ -2,7 +2,7 @@
 title: "Walburga Wappenrock: Designer-Notizen"
 ---
 
-<Note compact>Lunetius, Tiberius and Walburga really come as a set. Not only were they born at the same time, they are designed to work together to form a full outfit. Not that this means that they can't be made seperately ;)</Note>
+<Note compact>Lunetius, Tiberius and Walburga really come as a set. Not only were they born at the same time, they are designed to work together to form a full outfit. Not that this means that they can't be made separately ;)</Note>
 
 Walburga ist der Sonderling unter den drei Mustern, denn sie ist zwar "historisch inspiriert", folgt aber eigentlich keinem echten historischen Gewand. Es basiert auf dem Wappenrock (daher der Name, der mit einem W beginnt), der in einem westeuropäischen mittelalterlichen Umfeld angesiedelt ist. Um ehrlich zu sein, ist es mehr von The Legend of Zelda inspiriert als von irgendetwas anderem.
 

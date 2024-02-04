@@ -4,9 +4,9 @@ title: "Onyx one-piece: Sewing Instructions"
 
 <Note>
 
-The use of a serger/overlocker is recommended, to keep the size of the finished seams small and to allow the seams to stretch. If using a serger with the knife engaged, a seam allowance of 1/2 inch (12 mm) is recommeded. If using an overlocking foot on a sewing machine, or serging without the use of the knife, a seam allowance of 1/4 inch (6 mm) is recommended.
+The use of a serger/overlocker is recommended, to keep the size of the finished seams small and to allow the seams to stretch. If using a serger with the knife engaged, a seam allowance of 1/2 inch (12 mm) is recommended. If using an overlocking foot on a sewing machine, or serging without the use of the knife, a seam allowance of 1/4 inch (6 mm) is recommended.
 
-Unless otherwise stated, use stretch steams for contruction of this garment. A 4-thread overlock stitch is recommended, or an overlock foot on a sewing machine if a serger is unavailable.
+Unless otherwise stated, use stretch steams for construction of this garment. A 4-thread overlock stitch is recommended, or an overlock foot on a sewing machine if a serger is unavailable.
 
 Hems or cuffs are optional (since knit doesn't fray), but if you do make hems or add cuffs, make sure they can stretch. These instructions describe how to make a single-fold hem with a double needle, which is suitable for swimwear or lightweight garments, and how to make a rib knit cuff, which is suitable for fleece pajamas or kigurumi.
 

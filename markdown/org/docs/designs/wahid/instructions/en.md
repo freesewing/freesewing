@@ -141,7 +141,7 @@ Flip the pocket facing to the back side and press it down.
 
 ![Press down the triangles at the short sides](05h.png)
 
-Move your pocket facing out of the way to reveal those little traingles at the side of your pocket.
+Move your pocket facing out of the way to reveal those little triangles at the side of your pocket.
 
 Fold them back making sure you to keep your pocket opening a clean rectangle, and press them down.
 
@@ -216,7 +216,7 @@ Place your lining in your waistcoat, good sides together. In other words, the wa
 
 #### Pin lining to fabric
 
-![Pin linng to fabric](09b.png)
+![Pin lining to fabric](09b.png)
 
 Align the lining with the fabric edge, and pin it in place.
 
@@ -224,7 +224,7 @@ Start at center back, and follow the neckline down the front closure. Work your 
 
 #### Sew lining to fabric
 
-![Sew linng to fabric](09c.png)
+![Sew lining to fabric](09c.png)
 
 With your lining pinned neatly in place, sew lining and fabric together.
 
@@ -232,7 +232,7 @@ Do not forget to leave that 15cm gap at the center back.
 
 #### Turn waistcoat and press edges
 
-![Turn waistcoat and press edgess](09d.png)
+![Turn waistcoat and press edges](09d.png)
 
 Reach through the gap you left open at the hem, and turn your waistcoat.
 
@@ -254,7 +254,7 @@ Now fold back your lining a bit before the edge of the armhole and pin it down.
 
 #### Hand-sew the lining to the fabric
 
-![Hand-sew teh lining to the farbric](10c.png)
+![Hand-sew the lining to the fabric](10c.png)
 
 Use a slipstitch to hand-sew the lining to the fabric all along the armhole.
 

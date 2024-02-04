@@ -2,7 +2,7 @@
 title: "Sudadera con capucha Hugo: Instrucciones de costura"
 ---
 
-<Note>
+<Fixme>
 
 ###### Documentación en construcción
 
@@ -11,7 +11,7 @@ Desplácese hacia abajo, está incrustado en esta página.
 
 Ahora las malas noticias: Las instrucciones escritas para Hugo todavía no están completas.
 
-</Note>
+</Fixme>
 
 ## Vídeo
 
@@ -113,5 +113,5 @@ Esta serie de 6 episodios muestra cómo hacer que tu sudadera comience a termina
 - Serge (o zig-zag stitch) la costilla hasta el cuff, estirando suavemente hasta que la costilla y el cuff son de la misma longitud.  Retire los pines antes de entrar en el serger.
 - Recorta el borde inferior del bolsillo si se extiende más allá del borde de la cintura.
 - Asegúrese de que la costilla se reúne de la forma más uniforme posible alrededor de la cintura.
-- Servir o zig-zag la cintura, de nuevo estirando suavemente hasta que la costilla y la cintura son de la misma longitud.  Unete con la sudadera en la parte superior para que puedas verla atrapada en la costura.
+- Serge or zig-zag the waistband, again gently stretching until the ribbing and waistband are the same length.  Unete con la sudadera en la parte superior para que puedas verla atrapada en la costura.
 - Topstitch los bordes de pocket inferiores al cuerpo de la camisa para anclar el fondo del bolsillo.

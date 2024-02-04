@@ -114,7 +114,7 @@ Markiere die Paspeltasche wie folgt:
 - Richte die Mitte der Taschenöffnung an einer horizontalen Linie aus. Mache diese Linien etwas länger, damit sie dir später beim Ausrichten der Paspeln helfen
 - Markiere zwei horizontale Linien parallel zur Mittellinie, um die Paspelhöhe versetzt (0,5cm in unserem Beispiel)
 
-Der Teil der horizontalen Linien parallel zur Mittellinie, die zwischen den Vertikellinien fallen, ist, wo wir unsere Schweissen nähen. Dies wird durch die roten Linien veranschaulicht.
+The part of the horizontal lines parallel to the center line that fall in between the vertical lines is where we'll sew our welts in place. Dies wird durch die roten Linien veranschaulicht.
 
 ### Schritt 3: Falte und bügele die Paspeln
 

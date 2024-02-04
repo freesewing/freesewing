@@ -1,11 +1,10 @@
-import chai from 'chai'
+import { expect, AssertionError, Assertion } from 'chai'
 import { Design, hidePresets } from '../src/index.mjs'
 
-const expect = chai.expect
 function hidePartMatcher(partName) {
   const isHidden = this._obj.__isPartHidden(partName)
   if (!this._obj.config.parts[partName]) {
-    throw new chai.AssertionError(`expected part \`${partName}\` to exist in pattern`)
+    throw new AssertionError(`expected part \`${partName}\` to exist in pattern`)
   }
   this.assert(
     isHidden,
@@ -17,7 +16,7 @@ function hidePartMatcher(partName) {
 function hidePartsMatcher(...partNames) {
   const hiddens = partNames.map((n) => {
     if (!this._obj.config.parts[n]) {
-      throw new chai.AssertionError(`expected part \`${n}\` to exist in pattern`)
+      throw new AssertionError(`expected part \`${n}\` to exist in pattern`)
     }
     return this._obj.__isPartHidden(n)
   })
@@ -29,8 +28,8 @@ function hidePartsMatcher(...partNames) {
   )
 }
 
-chai.Assertion.addMethod('hidePart', hidePartMatcher)
-chai.Assertion.addMethod('hideParts', hidePartsMatcher)
+Assertion.addMethod('hidePart', hidePartMatcher)
+Assertion.addMethod('hideParts', hidePartsMatcher)
 
 const blankDraft = ({ part }) => part
 const blankPart = (name, config = {}) => ({

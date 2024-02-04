@@ -6,4 +6,4 @@ Para hacer Walburga, necesitarás lo siguiente:
 
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
 - Aproximadamente 1 metro (1,1 yardas) de una tela adecuada (consulta [Opciones de tela](/docs/designs/walburga/fabric))
-- (opcional) unos 3 metros (3,3 yardas) de cinta al bies o pasamanería para rematar los bordes crudos
+- (optional) about 3 metres (3.3 yards) of bias tape or trimmings to finish the raw edges

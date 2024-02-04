@@ -2,7 +2,7 @@
 title: Why do I have to click again to confirm I want to unsubscribe from the newsletter?
 ---
 
-While we could make it so that clicking the link in your email would immeadiatly unsubcribe you, it would be in violation of internet standards. Зокрема, визначення __запиту GET__ протоколу __HTTP__, в якому вказується, що:
+While we could make it so that clicking the link in your email would immediately unsubscribe you, it would be in violation of internet standards. Зокрема, визначення __запиту GET__ протоколу __HTTP__, в якому вказується, що:
 
 
 <Note>

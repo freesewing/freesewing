@@ -1,9 +1,8 @@
 import { adult, doll, giant } from '@freesewing/models'
 import { getShortName, isUtilityDesign } from './config.mjs'
-import chai from 'chai'
+import { expect } from 'chai'
 import { timingPlugin } from '@freesewing/plugin-timing'
 
-const expect = chai.expect
 const ciTimeout = 10000
 
 /*

@@ -1,13 +1,13 @@
 ---
-title: "Lumira leggings: Designer Notes"
+title: "Lumira leggings: Ontwerper Notities"
 ---
 
-I started working on this design when I decided I needed more leggings to cycle in the fall and winter. My previous
-pair was made with a commercial pattern, and they have served me well. The easy solution would have been to just
-make some more. But if I need some of these, there should be more people that do.
+Ik begon aan dit ontwerp te werken toen ik besloot dat ik meer leggings nodig had om in de herfst en winter te fietsen. Mijn vorige
+paar was gemaakt met een commercieel patroon en ik heb er veel plezier van gehad. De gemakkelijke oplossing zou zijn geweest om er gewoon
+meer te maken. But if I need some of these, there should be more people that do.
 
-I decided to make this pattern so it allows for a waistband to be part of it. This should make for a good fit on
-a wide range of body types. It uses a gusset that is relatively large in the back. This is both a nice design feature,
+Ik besloot dit patroon zo te maken dat er een tailleband bij kan. Dit zou moeten zorgen voor een goede pasvorm op
+een breed scala aan lichaamstypen. It uses a gusset that is relatively large in the back. This is both a nice design feature,
 and provides support for the rear. To exemplify this, you could use a contrasting fabric for this part.
 
 The pattern's gusset can be extended to the front to allow for a bulge. And since I wanted this pattern to be

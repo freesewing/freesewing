@@ -31,7 +31,7 @@ These instructions assume you have marked your seam lines. They may be harder to
 - Press seams open. You made need to use a tailors ham for this, if you do not have one you can use flannels or towels instead.
 - (Optional) _Edgestitch_ both sides of the seam, making sure to catch the seam allowances.
 - Repeat until you have two halves. If half the number of crown pieces is an odd number you will have to sew a single piece to each half. e.g. If you have 6 crown pieces, you make two halves of 3 sewing one piece to two sewn together pieces.
-- With right sides together, matchinig seam lines and peaks, sew the two halves together. You may find it easier to handstitch the peak together due to bulk or for precision. This seam will be refered to as the "centre crown seam" going forward.
+- With right sides together, matching seam lines and peaks, sew the two halves together. You may find it easier to handstitch the peak together due to bulk or for precision. This seam will be referred to as the "centre crown seam" going forward.
 - (Optional) _Edgestitch_ both sides of the centre crown seam, making sure to catch the seam allowances.
 
 <Note>
@@ -44,7 +44,7 @@ Depending on your seam allowance you may want to trim seams as you go to reduce 
 
 #### Ear Flaps with Ties
 
-- Cut two 12" (30cm) - 16" (40cm) length of ribbon. These will be refered to as ties going forward.
+- Cut two 12" (30cm) - 16" (40cm) length of ribbon. These will be referred to as ties going forward.
 - _Baste_ a tie to the right side of an ear flap (the interfaced one if using). Repeat for other tie.
 - With right sides together, matching seam lines, sew a tie ear flap to a non-tie ear flap.
 - Clip and trim seam allowance.
@@ -74,7 +74,7 @@ If you prefer you can make your custom ties with fabric, [see Holmes cutting](/d
 - Turn inside out and press.
 - (Optional) _Topstitch_ or _Edgestitch_ the folded edge.
 - _Baste_ the raw edges together.
-- Sew the buttonhole in your prefered method.
+- Sew the buttonhole in your preferred method.
 - Repeat for the remaining ear flap.
 
 <Warning>
@@ -98,7 +98,7 @@ There are two methods for constructing the visors. This is due to the different 
 #### The Visors Method 1
 
 - Place visor insert on one visor piece inside seam lines.
-- Temporarily secure visor insert to visor with temporary _pad Stitches_. This will be refered to as "faced visor" going forward.
+- Temporarily secure visor insert to visor with temporary _pad Stitches_. This will be referred to as "faced visor" going forward.
 - _Baste_ along the seam line of the inner curve of the faced visor, making sure not to catch the visor insert.
 - With right sides together, matching seam lines and centre fronts, sew the faced visor to another visor piece along the outer curve close to the visor insert, making sure not to catch the visor Insert.
 - Notch and trim the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step)
@@ -120,10 +120,10 @@ If preferred you can temporarily attach the visor insert another way that does n
 
 #### The Visors Method 2
 
-- With rights sides together, matching seam lines and centre fronts, sew the outer curver of two visor pieces together.
+- With rights sides together, matching seam lines and centre fronts, sew the outer curve of two visor pieces together.
 - Notch and trim (if needed) the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step)
 - Turn inside out and press.
-- Insert visor insert in to sewn visor tightly so there is no gap on the outer curver and the seam allowances are all one on side of the visor insert. This will be the upper side of the visor.
+- Insert visor insert in to sewn visor tightly so there is no gap on the outer curve and the seam allowances are all one on side of the visor insert. This will be the upper side of the visor.
 - Pin the inner curve together making sure that the outer edge is pulled tightly over the visor insert.
 - _Baste_ as close as you can to the inner curve of the visor insert, making sure you pull the fabric tightly over the outer edge as you sew.
 - Repeat for the remaining visor pieces.
@@ -144,7 +144,7 @@ Once again there are two methods for final assembly and lining. Read both method
 - Remove all pad and basting stitches.
 - Press the seam allowances inwards, making sure the stitching is not visible on the outside.
 - (Optional) Loosely _whipstitch_ the seams to the inside of the crown making sure the stitching does not show on the outside.
-- Construct lining the same way as the crown ommitting _edgestitching_.
+- Construct lining the same way as the crown omitting _edgestitching_.
 - Fold and Press under the bottom seam allowance of the lining. You may find you need to press under more to prevent the lining from showing. You may also find you need to _baste_ the seam allowance down.
 - Matching centre crown seams and panel seams, pin the lining into the hat wrong sides together. Placing the folded edge along the stitching lines.
 - _Slipstitch_ or _whipstitch_ the lining to the seam allowance of the hat.
@@ -160,8 +160,8 @@ Once again there are two methods for final assembly and lining. Read both method
 - Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.
 - (Optional) Machine-baste the visor to the crown along seam lines.
 - Repeat for the remaining visor on the opposite side of the centre crown seam.
-- Construct lining the same way as the crown ommitting _edgestitching_ and leaving a gap in the centre lining seam large enough to turn the hat.
-- With right sides together, matching centre crown seams, panel seams and seam lines. Sew the lining to the the crown along seam lines. If bulky you may want to trim either the lining seams or both seams.
+- Construct lining the same way as the crown omitting _edgestitching_ and leaving a gap in the centre lining seam large enough to turn the hat.
+- With right sides together, matching centre crown seams, panel seams and seam lines. Sew the lining to the crown along seam lines. If bulky you may want to trim either the lining seams or both seams.
 - Turn hat inside out, pressing lining to inside.
 - (Optional/Alternate) _Understitch_ lining.
 - Slipstitch lining opening closed.
@@ -226,7 +226,7 @@ Unless you are doing the Buttonhole Ear Flaps you do not have to sew a button on
 <Note>
 
 Whilst certainly optional, you may find that a button is what is missing from the hat to finish the look. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. If it is, attach it permanently.
-Whilst a covered button is recommeneded you can use whatever button you desire, feel free to experiment!
+Whilst a covered button is recommended you can use whatever button you desire, feel free to experiment!
 
 </Note>
 

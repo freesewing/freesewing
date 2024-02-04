@@ -33,7 +33,7 @@ export const siteConfig = {
   issueToken: [
     'github',
     'pat',
-    '11AANBDTQ0ylQK3tv9iKwb',
-    'kBLRAz5xH63aC1YqnlPdgOuQehxtxnw2RFQf3Z1Na5xH6FJMKINGJZsMTWs',
+    '11AANBDTQ0kXPqFDzGJ8Yx',
+    'Ul0YwPd8FN15QmulEtIS2XLe5ofwIqm1ri8D38dfr9SQANIHSNEB0vegCmm',
   ].join('_'),
 }

@@ -6,7 +6,7 @@ title: "Sandfarbener Kreisrock: Stoff Optionen"
 
 Ein Tellerrock ist ein sehr vielseitiges Kleidungsstück und kann aus einer Vielzahl von Stoffen hergestellt werden. Das kommt ganz auf deinen Verwendungszweck und deinen bevorzugten Stil an.
 
-- Wenn du dir einen alltagstauglichen, leicht zu waschenden Rock wünschst, dann ist **Leinen** und **Baumwolle** genau das Richtige für dich.
+- If you wish for an everyday, easy to wash skirt then **Linen** and **Cotton** is the way to go.
 - Wenn du nach etwas Formellerem suchst, solltest du **Suiting Fabrics**ausprobieren.
 - Wenn du etwas Warmes für den Winter möchtest, kannst du **Wools**ausprobieren.
 - Wenn du dir etwas Fließendes wünschst, das drapiert, kannst du es mit leichten Materialien wie **Chiffon**versuchen.

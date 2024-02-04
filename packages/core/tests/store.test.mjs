@@ -1,7 +1,5 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { Design, Store } from '../src/index.mjs'
-
-const expect = chai.expect
 
 const store = new Store()
 

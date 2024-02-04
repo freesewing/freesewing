@@ -1131,6 +1131,24 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "LunaticMuch",
+      "name": "Stefano",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1659414?v=4",
+      "profile": "https://stefanocislaghi.com",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "pvidas",
+      "name": "Paula Vidas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38463064?v=4",
+      "profile": "https://github.com/pvidas",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true,

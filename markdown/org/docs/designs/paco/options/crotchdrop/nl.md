@@ -4,8 +4,8 @@ title: "Diepte kruis"
 
 Bepaalt hoeveel het kruis verlaagd is.
 
-Het kruis verlagen zorgt voor een meer casual pasvorm.  
-Een betekenisvol verlaagde kruis kan ook een keus zijn.
+Lowering the crotch makes for a more casual fit.  
+A significantly lowered crotched can also be a style choice.
 
 
 

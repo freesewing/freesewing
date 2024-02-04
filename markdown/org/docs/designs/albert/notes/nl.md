@@ -2,10 +2,10 @@
 title: "Albert schort: Opmerkingen van de ontwerper"
 ---
 
-Albert was something that I didn't plan on making. My daughter, who's a visual artist, asked if I could make her an apron. Of course, I could not deny her such a request. And since I didn't have a pattern, I needed to make one. And that meant that I could just as well make one for FreeSewing while I was at it.
+Albert was iets dat ik niet van plan was om te maken. My daughter, who's a visual artist, asked if I could make her an apron. Natuurlijk kon ik zo'n verzoek niet weigeren. En omdat ik geen patroon had, moest ik er een maken. En dat betekende dat ik er net zo goed een voor FreeSewing kon maken als ik toch bezig was.
 
-The design is simple, since an apron generally is. And yet, where else than at FreeSewing can you get a bespoke apron?
+Het ontwerp is eenvoudig, zoals een schort meestal is. And yet, where else than at FreeSewing can you get a bespoke apron?
 
-This is a very good project for a beginning sewist.
+Dit is een heel goed project voor een beginnende naaister.
 
 Wouter

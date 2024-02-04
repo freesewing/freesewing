@@ -19,23 +19,17 @@ als deine Wahl für die vordere Lage, also die sichtbare.
 
 Wenn du dich für zwei Lagen entscheidest, füge sie einfach an den Kanten zusammen, bevor du das Schrägband anbringst.
 
-Wahrscheinlich willst du das vor dem Nähen feststecken oder heften. Die beiden verschiedenen Arten von Stoff verhalten sich unterschiedlich, deshalb solltest du sie vor dem Zusammennähen sichern.
+You probably want to pin or baste this prior to sewing. Die beiden verschiedenen Arten von Stoff verhalten sich unterschiedlich, deshalb solltest du sie vor dem Zusammennähen sichern.
 
 Achte darauf, dass du dicht an der Kante nähst, damit die Stiche später unter dem Schrägband liegen .
 
 ## Schritt 2: Schrägband anbringen
 
-Wir werden den gesamten Rand des Lätzchens mit Schrägband abschließen.
+We're going to apply bias tape as a finish around the entire edge of the bib.
 
 Wahrscheinlich möchtest du am unteren Träger beginnen, denn so wird die Naht des Schrägbandes verdeckt, wenn das Lätzchen getragen wird.
 
 Arbeite dich einfach vor und lass dir Zeit.
-
-<Fixme>
-
-Allgemeine Anweisungen zum Nähen von Schrägband bereitstellen
-
-</Fixme>
 
 ## Schritt 3: Druckknöpfe oder Knopf anbringen
 

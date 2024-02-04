@@ -19,23 +19,17 @@ como tu elección para la capa delantera, es decir, la visible.
 
 If you decide to go for two layers, simply join them together at the edges before applying the bias tape.
 
-Probablemente quieras prenderlo con alfileres o hilvanarlo antes de coserlo. The two different types of fabric will behave differently, so secure them in place prior to sewing the together.
+You probably want to pin or baste this prior to sewing. The two different types of fabric will behave differently, so secure them in place prior to sewing the together.
 
 Make sure to sew close to the edge so that the stitches will be under the bias tape finish later.
 
 ## Paso 2: Colocar la cinta al bies
 
-Vamos a aplicar cinta al bies como acabado alrededor de todo el borde del babero.
+We're going to apply bias tape as a finish around the entire edge of the bib.
 
 You probably want to start at the bottom strap, as this way the joint of the bias seam will be covered when the bib is worn.
 
 Ábrete camino y tómate tu tiempo.
-
-<Fixme>
-
-Proporcionar instrucciones genéricas para coser cinta al bies
-
-</Fixme>
 
 ## Paso 3: Instalar broches o botón
 

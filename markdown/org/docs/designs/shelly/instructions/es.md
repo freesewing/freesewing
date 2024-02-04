@@ -4,13 +4,13 @@ title: "Camisa Shelly Instrucciones de costura"
 
 <Note>
 
-Se recomienda utilizar una máquina overlock o un prensatelas para que las costuras acabadas sean pequeñas. Si utilizas una máquina overlock, se recomienda un margen de costura de 12 mm (1/2 pulgada). Si utilizas un prensatelas para sobrehilar en una máquina de coser, o si coses sin utilizar la cuchilla, se recomienda un margen de costura de 6 mm (1/4 pulgada).
+Se recomienda utilizar una máquina overlock o un prensatelas para que las costuras acabadas sean pequeñas. If using a serger, a seam allowance of 1/2 inch (12 mm) is recommended. Si utilizas un prensatelas para sobrehilar en una máquina de coser, o si coses sin utilizar la cuchilla, se recomienda un margen de costura de 6 mm (1/4 pulgada).
 
 Todas las costuras, incluida la del cuello, se pueden hacer con la misma puntada, ya sea una overlock, una overger o una puntada elástica.
 
 Los dobladillos son opcionales (ya que el punto no se deshilacha), pero si los haces, asegúrate de que puedan estirarse.
 
-Asegúrate de utilizar una puntada que pueda estirarse. Si coses tejido elástico, ajusta la tensión para tener en cuenta el estiramiento adicional. En una máquina overlock, esto suele significar reducir la tensión de la aguja, especialmente la aguja derecha, y ajustar la tensión de la lanzadera según sea necesario para que la puntada tenga un aspecto decente. En una máquina de coser normal, baja la tensión. Prueba primero la puntada elegida en un retal de tela, e intenta dar forma a la costura de prueba estirando la costura a lo largo. Sólo debería romperse después de estirarse bastante. Si salta con demasiada facilidad, sigue jugando con los ajustes de puntadas/tensión hasta que consigas algo que pueda sobrevivir a cierto abuso.
+Asegúrate de utilizar una puntada que pueda estirarse. Si coses tejido elástico, ajusta la tensión para tener en cuenta el estiramiento adicional. En una máquina overlock, esto suele significar reducir la tensión de la aguja, especialmente la aguja derecha, y ajustar la tensión de la lanzadera según sea necesario para que la puntada tenga un aspecto decente. En una máquina de coser normal, baja la tensión. Test your choice of stitch first on scrap fabric, and try to shape the test seam by stretching the seam along its length. Sólo debería romperse después de estirarse bastante. Si salta con demasiada facilidad, sigue jugando con los ajustes de puntadas/tensión hasta que consigas algo que pueda sobrevivir a cierto abuso.
 
 Para hacer camisetas u otras camisas con elasticidad bidireccional, los ajustes normales con una puntada que se estire deberían estar bien.
 

@@ -1,6 +1,6 @@
 ---
-title: Shorts
-caption: Shorts
+title: Korte broeken
+caption: Korte broeken
 date: 20231118
 intro: "-"
 designs:
@@ -8,4 +8,4 @@ designs:
 maker: Galit
 ---
 
-Shorts for my dauther
+Korte broek voor mijn dochter

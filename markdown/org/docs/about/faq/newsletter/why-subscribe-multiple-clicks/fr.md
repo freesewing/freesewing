@@ -24,7 +24,7 @@ C'est là que ça se terminerait. À l'exception d'un détail technique qui a au
 
 <Warning compact>C'est plus technique et plus difficile à comprendre</Warning>
 
-Another reason is that while we could make it so that clicking the link in your email would immeadiatly subcribe you, it would be in violation of internet standards. Plus précisément, la définition de la méthode GET du protocole HTTP ____ ____ qui stipule ce qui suit :
+Another reason is that while we could make it so that clicking the link in your email would immediately subscribe you, it would be in violation of internet standards. Plus précisément, la définition de la méthode GET du protocole HTTP ____ ____ qui stipule ce qui suit :
 
 
 <Note>
