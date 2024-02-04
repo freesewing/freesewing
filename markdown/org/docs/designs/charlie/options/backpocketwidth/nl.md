@@ -2,7 +2,7 @@
 title: "Breedte achterzak"
 ---
 
-Breedte van de achterzakken.
+Controls the width of the back pockets.
 
 
 

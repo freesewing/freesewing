@@ -30,9 +30,9 @@ La colocación de los tirantes no está en el patrón y hay que determinarla. Pu
 
 <Note>
 
-Si utilizas correas de bolsa en lugar de correas de tela, haz lo siguiente,
+If using bag strap webbing instead of fabric made straps do the following,
 
-- Corta la correa a la longitud de las correas con margen de costura.
+- Cut the webbing to the length of the straps with seam allowance.
 - Plancha por debajo del margen de costura del borde corto.
 - Sujeta las cinchas de la misma forma que las correas de tela.
 
@@ -83,8 +83,8 @@ Se recomienda dejar el hueco para girar en el lateral en lugar de en la parte su
 - Con _los lados bien juntos_ cose los paneles de forro delantero y trasero al panel de forro inferior.
 - Con _los lados bien juntos_ une los paneles laterales del forro.
 - Plancha por debajo de los márgenes de costura superiores.
-- Alternativamente, puedes encuadernar los bordes superiores.
-- Coloca el forro dentro de la bolsa _con los lados opuestos hacia_ .
+- Alternatively you can bind the top edges.
+- Place the lining inside the bag _wrong sides facing_ each other.
 - _Punto deslizante_ o punto elástico __ el forro al panel de la cremallera.
 
 ### Paso 10: ¡Disfrútalo!

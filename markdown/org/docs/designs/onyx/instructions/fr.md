@@ -4,9 +4,9 @@ title: "Onyx une pièce : Instructions de couture"
 
 <Note>
 
-L'utilisation d'une surjeteuse est recommandée, pour que la taille des coutures finies reste petite et pour permettre aux coutures de s'étirer. Si tu utilises une surjeteuse avec le couteau engagé, une marge de couture de 1/2 pouce (12 mm) est recommandée. Si tu utilises un pied de surjet sur une machine à coudre, ou si tu effectues une surjeture sans utiliser le couteau, une marge de couture de 1/4 de pouce (6 mm) est recommandée.
+L'utilisation d'une surjeteuse est recommandée, pour que la taille des coutures finies reste petite et pour permettre aux coutures de s'étirer. If using a serger with the knife engaged, a seam allowance of 1/2 inch (12 mm) is recommended. Si tu utilises un pied de surjet sur une machine à coudre, ou si tu effectues une surjeture sans utiliser le couteau, une marge de couture de 1/4 de pouce (6 mm) est recommandée.
 
-Sauf indication contraire, utilise des vestes extensibles pour la construction de ce vêtement. Un point de surjet à 4 fils est recommandé, ou un pied de surjet sur une machine à coudre si une surjeteuse n'est pas disponible.
+Unless otherwise stated, use stretch steams for construction of this garment. Un point de surjet à 4 fils est recommandé, ou un pied de surjet sur une machine à coudre si une surjeteuse n'est pas disponible.
 
 Les ourlets ou les poignets sont facultatifs (puisque le tricot ne s'effiloche pas), mais si tu fais des ourlets ou si tu ajoutes des poignets, assure-toi qu'ils peuvent s'étirer. Ces instructions décrivent comment faire un ourlet à pli simple avec une aiguille double, qui convient aux maillots de bain ou aux vêtements légers, et comment faire un revers en tricot côtelé, qui convient aux pyjamas ou aux kigurumi en laine polaire.
 
@@ -185,7 +185,7 @@ Si tu utilises une doublure, fais les deux étapes suivantes, sinon passe à la 
 ### Étape 6 : installation de la fermeture éclair.
 Remarque : cette étape est la même avec ou sans doublure. Traite la doublure et le tissu de mode comme une seule et même chose.
  - Pose ton vêtement _à l'endroit_.
- - Détache la fermeture éclair.
+ - Sépare la fermeture Éclair.
  - Place la fermeture éclair _bon côté vers le haut_ le long de la couture centrale et aligne-la soigneusement. L'alignement de l'arrêt supérieur est plus important que celui de l'arrêt inférieur, et essaie de ne pas étirer ou froncer le tissu lorsque tu alignes ta fermeture à glissière.
  - Tourne un côté de la fermeture éclair d'un demi-tour vers l'extérieur, et pose-la le long de la couture ouverte de façon à ce que le bord du ruban adhésif soit le long de la couture et que le bord denté soit orienté vers le gros du tissu. Aligne le bord du tissu avec le bord du ruban adhésif et clipse-le en place.
 

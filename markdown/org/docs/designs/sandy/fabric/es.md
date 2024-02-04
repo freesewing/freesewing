@@ -6,7 +6,7 @@ title: "Falda circular de arena: Opciones de tejido"
 
 Una falda circular es una prenda muy versátil y puede confeccionarse con una gran variedad de tejidos. Todo depende del uso que le vayas a dar y del estilo que prefieras.
 
-- Si deseas una falda para todos los días, fácil de lavar, entonces **Lino** y **Algodón** es el camino a seguir.
+- If you wish for an everyday, easy to wash skirt then **Linen** and **Cotton** is the way to go.
 - Si buscas algo más formal, puedes probar **Suiting Fabrics**.
 - Si quieres algo cálido para el invierno, puedes probar **Wools**.
 - Si deseas algo fluido que tenga caída, puedes probar con materiales ligeros como **Chiffon**.

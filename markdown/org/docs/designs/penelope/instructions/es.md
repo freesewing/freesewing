@@ -24,7 +24,7 @@ Una cintura es opcional en Penelope. If you omit it, there will be quite some st
 
 Sin el zipper será imposible entrar y salir de la cabeza. So it should be at least the length from your waist to the largest part of your bum. Longer will make it easier to put the skirt on and off. Don't use one that's too long, because the part of the seam where the zipper is behaves differently than the part without it, and you want to try to make it invisible also in movement.
 
-Tradicionalmente, en una falda lápiz se utiliza una cremallera invisible, pero una cremallera normal funcionará igual de bien. Si te apetece, puedes utilizar incluso una cremallera que contraste con la tela. Elige lo que te vaya bien a ti y al estilo que buscas. Sé creativo (o no), ¡tú decides! Aunque si tu tejido es más grueso, quizá debas optar por un cierre totalmente distinto.
+Tradicionalmente, en una falda lápiz se utiliza una cremallera invisible, pero una cremallera normal funcionará igual de bien. You can even use a zipper that contrasts your fabric if the fancy takes you. Elige lo que te vaya bien a ti y al estilo que buscas. Sé creativo (o no), ¡tú decides! Aunque si tu tejido es más grueso, quizá debas optar por un cierre totalmente distinto.
 
 ### Ventilador
 
@@ -40,8 +40,8 @@ Los dardos se utilizan para compensar la diferencia entre la cintura y las medic
 
 No vamos a entrar en una explicación completa sobre cómo crear todos los detalles individuales
 que componen una falda lápiz. Estas instrucciones presuponen que sabes coser una pinza, insertar una cremallera invisible
-, hacer una abertura, etc. Si no, hay numerosos artículos excelentes disponibles en la web
-, tanto escritos como en vídeo. Si te quedas atascado, siempre puedes ponerte en contacto con
+, hacer una abertura, etc. If not, there are numerous excellent articles available on the
+web, both in written form, and on video. Si te quedas atascado, siempre puedes ponerte en contacto con
 [otros FreeSewers](https://discord.freesewing.org/) en nuestro discord.
 
 </Warning>
@@ -50,7 +50,7 @@ que componen una falda lápiz. Estas instrucciones presuponen que sabes coser un
 
 - Cose todas las pinzas.
 - Presiona los dardos hacia la espalda.
-  - Para la(s) pieza(s) trasera(s), eso significa que presiones los dardos unos contra otros.
+  - For the back piece(s), that means you press the darts towards each other.
   - Para la pieza delantera, eso significa que prensas los dardos hacia las costuras laterales.
 
 ### Paso 2: La cremallera
@@ -76,11 +76,11 @@ Puedes saltarte este paso si no vas a hacer un forro.
 - Sigue los pasos 1 - 4 para construir el forro con los siguientes cambios:
   - Ajusta las pinzas para compensar la "holgura" adicional de las piezas del forro.
   - No incluyas la cremallera, pero deja la abertura en la costura de la cremallera.
-- Fija el forro al cuerpo de la forma que prefieras. Tendrás que construir el respiradero durante esto y conectar el forro a la cremallera.
+- Attach the lining to the body in your preferred way. Tendrás que construir el respiradero durante esto y conectar el forro a la cremallera.
 
 <Note>
 
-Cómo distribuir la "facilidad" extra depende de ti. Puedes añadirlo a los dardos aumentándolos. o puedes añadir otro dardo o pliegue de caja en el centro.
+Cómo distribuir la "facilidad" extra depende de ti. Puedes añadirlo a los dardos aumentándolos. Or you can add another dart or box pleat in the middle.
 
 </Note>
 
@@ -116,7 +116,7 @@ Este paso sólo es necesario si no has forrado la falda, ya que el dobladillo y 
 - Si lo deseas, encara el dobladillo y los respiraderos.
 - Construye los respiraderos con el método que prefieras
 - Plancha por debajo de los dobladillos de la falda.
-- Si el dobladillo es lo suficientemente grande y/o la tela se presiona un poco por debajo a lo largo de la parte superior, esto ayudará a evitar que se deshilache.
+- If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent fraying.
 - Fija el dobladillo en su sitio con el método que prefieras. Por ejemplo, puedes coser desde el exterior o _Slipstitch_ desde el interior. Esto depende de cómo quieras que sea el producto final.
 
 <Tip>

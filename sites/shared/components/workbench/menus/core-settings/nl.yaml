@@ -31,12 +31,14 @@ fr.t: Frans
 fr.d: Gebruik dit om een Frans patroon te genereren
 nl.t: Nederlands
 nl.d: Gebruik dit om een Nederlands patroon te genereren
+uk.t: Oekraïens
+uk.d: Use this to generate a Ukrainian pattern
 yes: Yes
 no: No
 completeYes.t: Genereer een compleet patroon
 completeYes.d: Dit genereert een compleet patroon met alle notaties, lijnen en markeringen. Gebruik dit als je niet zeker weet wat je moet kiezen.
 completeNo.t: Genereer een patroonoverzicht
-completeNo.d: Genereer alleen de omtrek van de patroondelen. Gebruik dit als je een lasercutter wilt gebruiken of andere specifieke wensen hebt.
+completeNo.d: Only generate the outline of the pattern parts. Use this if you are looking to use a laser cutter or have other specific needs.
 expandYes.t: Alle patroondelen uitvouwen
 expandYes.d: Dit genereert een patroon waarbij alle patroondelen op ware grootte worden getekend, zelfs als het eenvoudige rechthoeken zijn.
 expandNo.t: Houd patronen waar mogelijk compact
@@ -52,7 +54,7 @@ metric.d: Gebruik deze als je het metrische stelsel gebruikt en centimeters en m
 imperial.t: Gebruik imperiale eenheden
 imperial.d: Gebruik dit als je meer vertrouwd bent met inches en fracties of inches dan met centimeters. Dit is vaak de voorkeursoptie voor mensen in het Verenigd Koninkrijk en de Verenigde Staten.
 saNo.t: Exclusief naadtoeslag
-saNo.d: Dit genereert een patroon zonder naadtoeslag. De grootte van de naadtoeslag maakt niet uit, omdat er geen naadtoeslag wordt opgenomen.
+saNo.d: This generates a pattern which does not include any seam allowance. The size of the seam allowance does not matter as no seam allowance will be included.
 saYes.t: Inclusief naadtoeslag
 saYes.d: Dit genereert een patroon met naadtoeslag. De grootte van de naadtoeslag wordt individueel ingesteld.
 clearSettingsNotMeasurements: Instellingen wissen, maar metingen behouden

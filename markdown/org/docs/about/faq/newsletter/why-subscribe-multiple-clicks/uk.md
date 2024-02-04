@@ -24,7 +24,7 @@ title: Чому я маю повторно підтверджувати свою
 
 <Warning compact>Цей пункт є більш технічним та важчим для розуміння</Warning>
 
-Другою причиною є те, що, в той час як ми могли б зробити так, щоб підписка завершилася після натискання покликання, це було б порушенням інтернет-стандартів. Зокрема, визначення __запиту GET__ протоколу __HTTP__, в якому вказується, що:
+Another reason is that while we could make it so that clicking the link in your email would immediately subscribe you, it would be in violation of internet standards. Зокрема, визначення __запиту GET__ протоколу __HTTP__, в якому вказується, що:
 
 
 <Note>

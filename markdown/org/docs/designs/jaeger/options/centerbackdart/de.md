@@ -4,7 +4,7 @@ title: "Abnäher in der hinteren Mitte"
 
 ![Abnäher in der hinteren Mitte](centerbackdart.svg)
 
-Die Reduktion im Zentrum von Schultern auf Hals, die für einen geschwungenen oberen Rücken aufnehmen.
+The reduction at the center back from shoulders to neck, which accommodates for a curved upper back.
 
 
 

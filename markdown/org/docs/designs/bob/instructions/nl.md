@@ -19,23 +19,17 @@ als keuze voor de voorste laag, oftewel de zichtbare laag.
 
 If you decide to go for two layers, simply join them together at the edges before applying the bias tape.
 
-Je wilt dit waarschijnlijk vastspelden of vastbinden voordat je gaat naaien. The two different types of fabric will behave differently, so secure them in place prior to sewing the together.
+You probably want to pin or baste this prior to sewing. The two different types of fabric will behave differently, so secure them in place prior to sewing the together.
 
 Make sure to sew close to the edge so that the stitches will be under the bias tape finish later.
 
 ## Stap 2: Biaisband aanbrengen
 
-We gaan biaisband aanbrengen als afwerking rond de hele rand van de slab.
+We're going to apply bias tape as a finish around the entire edge of the bib.
 
 You probably want to start at the bottom strap, as this way the joint of the bias seam will be covered when the bib is worn.
 
 Werk je gewoon een slag in de rondte en neem je tijd.
-
-<Fixme>
-
-Geef algemene instructies voor het naaien van biaisband
-
-</Fixme>
 
 ## Stap 3: Bevestig drukknopen of knopen
 

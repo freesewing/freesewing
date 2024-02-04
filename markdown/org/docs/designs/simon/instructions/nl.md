@@ -629,7 +629,7 @@ Nu je kraag vasthangt mag je hem nog eens goed strijken.
 
 ### Stap 20: Zoom je hemd
 
-![Plooi en strijk](20a.png) ![Plooi opnieuw, en strijk opnieuw](20b.png) ![Stik de zoom](20c.png)
+![Plooi en strijk](20a.png) ![Fold over again, and press again](20b.png) ![Stik de zoom](20c.png)
 
 Tijd om de zoom af te werken (dat is het stuk dat je in je broek stopt).
 

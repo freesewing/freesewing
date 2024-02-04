@@ -23,35 +23,35 @@ I don't trust Google as far as I can throw them, but Gmail is the best mail clie
 
 Furthermore, as an Android user, this primary not-really-gmail-but-still-a-bit Google account is also tied to my phone, and a host of other things that are important. In other words, I need to have _some_ Google account, so this is it.
 
-That being said, I don't trust Google to not one day accidentally disable my account and I know full well that when that happens, I won't have any way of getting it back because Google doesn't do support. And I can't even blame them as I'm not a paying customer.
-So I want a different email provider, one where I am a paying customer, and that provider is fastmail. I could have migrated the decock.org domain to it, but that poses two problems:
+That being said, I don't trust Google to not one day accidentally disable my account and I know full well that when that happens, I won't have any way of getting it back because Google doesn't do support. En ik kan het ze niet eens kwalijk nemen, want ik ben geen betalende klant.
+Ik wil dus een andere e-mailprovider, een waar ik betalend klant ben, en die provider is fastmail. Ik had het decock.org domein ernaar kunnen migreren, maar dat levert twee problemen op:
 
-- I still need a Google account
-- Some members of my family have a decock.org email address, so I would have to find a solution for them too and they are not too tech-savvy so that would have been a hassle.
+- Ik heb nog steeds een Google-account nodig
+- Sommige leden van mijn familie hebben een decock.org e-mailadres, dus ik zou ook voor hen een oplossing moeten vinden en zij zijn niet zo technisch, dus dat zou een heel gedoe zijn geweest.
 
-So, a couple of years ago I decided to bite the bullet, bought the joost.at domain, and made that my primary email.
+Dus een paar jaar geleden besloot ik het bijltje erbij neer te gooien, kocht ik het domein joost.at en maakte ik daar mijn primaire e-mail van.
 
-Obviously, my previous emails is still used by people and companies, and I have to keep the Google account active too, so now I have two inboxes to manage. I thought I had found a clever solution for that, and that's where things went wrong.
+Uiteraard worden mijn vorige e-mails nog steeds gebruikt door mensen en bedrijven, en moet ik het Google-account ook actief houden, dus nu heb ik twee inboxen om te beheren. Ik dacht dat ik daar een slimme oplossing voor had gevonden en daar ging het mis.
 
-## It worked until it didn't
+## Het werkte totdat het niet meer werkte
 
-I had setup my Google account to pull in email from my fastmail account via POP3. This worked great and since both mailboxes are configured to allow me to send email from both addresses, it's transparent to my correspondents.
+Ik had mijn Google-account ingesteld om e-mail op te halen van mijn fastmail-account via POP3. Dit werkte geweldig en omdat beide mailboxen zo zijn geconfigureerd dat ik vanaf beide adressen e-mails kan versturen, is het transparant voor mijn correspondenten.
 
-That all worked fine. But if I go into the settings and check that rule today, I see this:
+Dat werkte allemaal prima. Maar als ik naar de instellingen ga en die regel vandaag controleer, zie ik dit:
 
 ![The image alt goes here](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/blog-email-breakdown-post-mortem-1/public "An error message saying that emails have not been imported since 29 October 2023")
 
-Google stopped pulling in these emails, and somehow neglected to notify me of this.
-Because of this setup, I had not been checking my Fastmail inbox, so from one day to the next I didn't see anything sent to my new email address.
+Google is gestopt met het ophalen van deze e-mails en heeft op de een of andere manier verzuimd mij hiervan op de hoogte te stellen.
+Door deze opstelling had ik mijn Fastmail inbox niet gecontroleerd, dus van de ene op de andere dag zag ik niets naar mijn nieuwe e-mailadres gestuurd worden.
 
-At this point, you're probably wondering why I didn't notice. The answer is partially that I get a lot of email, but if I'm being honest, at some level I probably suspected something was _off_ but I didn't realize exactly what, and because I was busy looking into it was kicked down the road.
+Op dit moment vraag je je waarschijnlijk af waarom het me niet is opgevallen. The answer is partially that I get a lot of email, but if I'm being honest, at some level I probably suspected something was _off_ but I didn't realize exactly what, and because I was busy looking into it was kicked down the road.
 
-## Going forward
+## Verdergaand
 
 Since I cannot trust Google to reliably pull in the emails from my Fastmail inbox, I will instead pivot to a _inbox double-zero_ approach. By which I mean, I will manage both inboxes and apply _inbox-zero_ as that's how I do things.
 
-Given my neglect of my Fastmail inbox, it had 100k+ unread messages in them. I went through the messages since the end of October and set aside emails that I need to follow-up on. Then I archived the rest and now am back on top of things, albeit with a small pile of backlog to deal with.
+Gezien mijn verwaarlozing van mijn Fastmail inbox, stonden er 100k+ ongelezen berichten in. Ik ben door de berichten gegaan vanaf eind oktober en heb e-mails opzij gezet die ik moet opvolgen. Daarna heb ik de rest gearchiveerd en nu ben ik er weer bovenop, zij het met een kleine achterstallige stapel.
 
-I am particularly sorry for those people who signed up as patrons or donated to FreeSewing and didn't even get as much as an acknowledgment. I admit that this sort of _administrativia_ is not my strong suit, but my response time is not typically measured in months.
+Het spijt me vooral voor de mensen die zich hebben aangemeld als ondersteuner of hebben gedoneerd aan FreeSewing en niet eens een bevestiging hebben gekregen. I admit that this sort of _administrativia_ is not my strong suit, but my response time is not typically measured in months.
 
-Apologies, and I will try to do better this year.
+Excuses, en ik zal proberen het dit jaar beter te doen.

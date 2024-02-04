@@ -53,7 +53,7 @@ Die Kordelzüge werden eingefädelt, wenn der Hoodie fertig ist.
 - Drehe die gute Seite nach außen.
 - Hefte die vorderen und unteren Schnittkanten zusammen.
 - Fertige eine Hülle für den Kordelzug an, indem du auf der Seite mit den Kordellöchern etwa 2,5 cm von der Innenkante entfernt nähst.
-- (Optional) Wenn du keinen Kordelzug verwendest, _Steppstich_ oder _Kantenstich_ die Innenkurve.
+- (Optionally) If not using a drawstring, _Topstitch_ or _Edgestitch_ the inner curve.
 
 <Note>
 
@@ -87,9 +87,9 @@ Ein Nackenband kann nützlich sein, um die Nackennähte zu stabilisieren und zu 
 - Bügle die Nahtzugabe nach oben.
 - _Steppstich_ oder _Kantenstich_ Bundnahtzugabe zum Körper.
 
-### Schritt 8: Anbringen der Manschetten
+### Step 8: Attaching the cuffs
 
-- Lege _mit der guten Seite nach oben_ und nähe die kurzen Seiten der Manschetten zusammen, so dass zwei Bänder entstehen.
+- With _good sides together_ sew the short edges of the cuffs together to create two bands.
 - Bügle die Nahtzugaben auf.
 - (Optional) _Randstich_ die Nahtzugaben nach unten.
 - Falte die Manschetten der Länge nach in der Mitte, so dass sie an den falschen Seiten anliegen. Presse.
@@ -104,7 +104,7 @@ Ein Nackenband kann nützlich sein, um die Nackennähte zu stabilisieren und zu 
 - Öffne den Reißverschluss ein Stück weit.
 - Falte die Oberseite des Reißverschlussbandes nach unten auf die _gute Seite_ des Reißverschlussbandes. Trimme, wenn nötig.
 - Stecke den Reißverschluss entlang einer der vorderen Kanten der Kapuze, der Vorderseite und des Bunds fest. Vergewissere dich, dass der Reißverschlusszug auf die _guten Seiten_ des Hoodies zeigt und die Unterseiten aufeinander liegen. Die Reißverschlusszähne sollten knapp über der Nahtlinie liegen, wobei die Kante des Bandes entweder mit der Kapuzenkante übereinstimmen oder leicht darüber liegen sollte.
-- Verwende einen Reißverschlussfuß, um den Reißverschluss mit der Breite deiner Naht an den Hoodie zu nähen. Wenn du den Reißverschlusszug erreichst, hältst du an, legst deine Nadel ab, hebst den Nähfuß an, ziehst den Reißverschlusszug am Nähfuß vorbei und senkst den Nähfuß. Dann kannst du mit dem Nähen der Naht fortfahren.
+- Using a zipper foot stitch the zipper to the hoodie using you seam allowance width. Wenn du den Reißverschlusszug erreichst, hältst du an, legst deine Nadel ab, hebst den Nähfuß an, ziehst den Reißverschlusszug am Nähfuß vorbei und senkst den Nähfuß. Dann kannst du mit dem Nähen der Naht fortfahren.
 - Öffne den Reißverschluss.
 - Stecke und nähe das nicht befestigte Reißverschlussband auf die gleiche Weise an die andere Seite des Hoodies.
 - Bügle die Nähte nach innen und achte darauf, dass du die Reißverschlusszähne nicht mit deinem Bügeleisen zum Schmelzen bringst.

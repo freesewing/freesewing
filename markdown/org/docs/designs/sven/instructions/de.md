@@ -4,7 +4,7 @@ title: "Sven Sweatshirt: Anleitung zum Nähen"
 
 ### Schritt 1: Schulternähte schließen
 
-- Legen Sie den Rücken und die Vorderseite auf einander mit den guten Seiten toghether.
+- Place the back and front on top of each other with the good sides together.
 - Legen Sie die Schulternaht an und nähen Sie sie mit der Standardnaht ab.
 - Wiederholen für die andere Schulternaht.
 
@@ -38,7 +38,7 @@ title: "Sven Sweatshirt: Anleitung zum Nähen"
 
 - Messen Sie die Breite der Ärmel an der Manschette
 - Schneiden Sie ein Stück Bänder, das doppelt so lang ist - 2cm/1inch und 7cm/3inch breit
-- Falte das Band doppelt entlang der längsten Seite und nähe den Rand zusammen, so dass du einen kontinuierlichen Ring hast
+- Fold the ribbing double along the longest side, and sew together the edge so you have a continuous ring
 - Drehe deinen Sven inside-out
 - Falte den Ribbelring mit der guten Seite nach außen, und rutsche die gefaltete Seite in deinen Innen/Out-Sven-Ärmel
 - Legen Sie die abgeschnittene Seite des Balles mit der Kante des Ärmels an und befestigen Sie sie an der Stelle. Das Band ist etwas kürzer, also strecken Sie es ein bisschen während Sie es anpinnen, um es in den Ärmel zu bearbeiten.
@@ -51,7 +51,7 @@ title: "Sven Sweatshirt: Anleitung zum Nähen"
 - Messen Sie die Breite von Sven am Saum
 - Schneiden Sie ein Stück Bänder, das 1,9-mal so lang und 7cm/3inch breit ist
 - Möglicherweise musst du verschiedene Teile anhängen, wenn dein Bindegewebe nicht breit genug ist
-- Falte das Band doppelt entlang der längsten Seite und nähe den Rand zusammen, so dass du einen kontinuierlichen Ring hast
+- Fold the ribbing double along the longest side, and sew together the edge so you have a continuous ring
 - Drehe deinen Sven inside-out
 - Falte den Ribbelring mit der guten Seite nach außen und rutsche die gefaltete Seite in deinen Innen-/Out-Sven-Körper
 - Legen Sie die abgeschnittene Seite des Balles mit dem Rand des Körpers an und befestigen Sie es an der Stelle. Das Band ist etwas kürzer, also strecken Sie es ein bisschen während Sie es anpinnen, um es in den Körper zu bringen.

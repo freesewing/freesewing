@@ -4,7 +4,7 @@ title: "Sudadera de Sven: Instrucciones de costura"
 
 ### Paso 1: Cerrar costuras del hombro
 
-- Coloque la parte trasera y la parte delantera sobre la otra con los buenos lados toghether.
+- Place the back and front on top of each other with the good sides together.
 - Alinear la costura del hombro y coser o sergarla en la costura estándar.
 - Repetir para la costura del hombro.
 
@@ -38,7 +38,7 @@ title: "Sudadera de Sven: Instrucciones de costura"
 
 - Medir el ancho de la manga en el corte
 - Corta un pedazo de costilla que es (dos veces esta longitud - 2cm/1pulgada) y 7cm/3pulgadas de ancho
-- Doblar la costilla doble por el lado más largo, y coser juntos el borde para que tengas un anillo continuo
+- Fold the ribbing double along the longest side, and sew together the edge so you have a continuous ring
 - Vuelve tu Sven en el interior
 - Doblar el anillo de costillas con el lado bueno hacia afuera, y deslizar el lado plegado en la manga interior / exterior
 - Alinear el corte del lado de la costilla con el borde de la manga y fijarlo en su lugar. La costilla es un poco más corta, así que estirarla un poco mientras se apilan para trabajar esto en la manga.
@@ -51,7 +51,7 @@ title: "Sudadera de Sven: Instrucciones de costura"
 - Medir el ancho de Sven en la sombra
 - Corta un pedazo de costilla que 1,9 veces esta longitud y 7cm/3pulgadas de ancho
 - Puede que necesites colocar diferentes piezas si tu tela de costilla no es lo suficientemente amplia
-- Doblar la costilla doble por el lado más largo, y coser juntos el borde para que tengas un anillo continuo
+- Fold the ribbing double along the longest side, and sew together the edge so you have a continuous ring
 - Vuelve tu Sven en el interior
 - Doble el anillo de costillas con el lado bueno hacia afuera, y desliza el lado plegado en tu cuerpo dentro/afuera Sven
 - Alinear el corte del lado de la costilla con el borde del cuerpo y fijarlo en su lugar. La costilla es un poco más corta, así que estirarla un poco mientras se apilan para trabajar esto en el cuerpo.

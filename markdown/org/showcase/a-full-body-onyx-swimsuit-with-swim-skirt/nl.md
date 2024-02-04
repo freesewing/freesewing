@@ -1,6 +1,6 @@
 ---
-title: A full body Onyx swimsuit with swim skirt
-caption: Full body Onyx swimsuit with swim skirt
+title: Een Onyx badpak voor het hele lichaam met zwemrokje
+caption: Onyx badpak voor het hele lichaam met zwemrok
 date: 20231106
 intro: ""
 designs:
@@ -8,12 +8,12 @@ designs:
 maker: Thrunic
 ---
 
-This is my favorite Onyx so far.
+Dit is mijn favoriete Onyx tot nu toe.
 
-Featuring a hood, thumb holes, and long sleeves and legs, it provides nearly full sun coverage, leaving only the face, feet, and fingers exposed.
+Hij heeft een capuchon, duimgaten en lange mouwen en pijpen en biedt bijna volledige bedekking tegen de zon, zodat alleen het gezicht, de voeten en de vingers worden blootgesteld.
 
-The swim skirt provides additional modesty and adds some flair.
+De zwemrok zorgt voor extra bescheidenheid en voegt wat flair toe.
 
-It is fully lined, including the hood and sleeves, with all but one of the seams hidden inside the lining, and very comfortable. Center seam and outseam ease are 0%, while most eases controlling tightness are set to \~-10%, though wrist is at +11% to give room for the hand, and leg hem is at +10% to help it get over the foot. The skirt length is 100% and width is 126% and is gathered and topstitched into place with no hems or folding.
+Het is volledig gevoerd, inclusief de capuchon en mouwen, met op één na alle naden verborgen in de voering, en zeer comfortabel. Center seam and outseam ease are 0%, while most eases controlling tightness are set to \~-10%, though wrist is at +11% to give room for the hand, and leg hem is at +10% to help it get over the foot. De lengte van de rok is 100% en de wijdte is 126% en is samengekomen en vastgestikt zonder zomen of vouwen.
 
-Fabric used is 80% nylon/20% spandex mid-weight swim fabric for the fashion fabric, and 80% polyester/20% spandex heavyweight swim fabric for the lining. Construction is done using a serger/overlock machine for the seams, and a twin needle using a triple stretch stitch for the hems.
+De gebruikte stof is 80% nylon/20% spandex middelzware zwemstof voor de modestof en 80% polyester/20% spandex zware zwemstof voor de voering. Voor de naden wordt een overlockmachine gebruikt en voor de zomen een tweelingnaald met een drievoudige rekbare steek.

@@ -6,7 +6,7 @@ title: "Jupe crayon Penelope : Options de tissu"
 
 Une jupe crayon est une coupe plutôt formelle, et est le plus souvent réalisée dans une matière de tailleur. En d'autres termes, une laine fine ****. Les options plus décontractées parmi **les tissus de poids moyen** comprennent **le coton** ou **le denim**.
 
-Using a fabric with some stretch will make it easier to get a comfortable fit and give you some more room to move about as pencil skirts fit rather tight. **Scuba** est souvent vu dans les jupes crayon car il est ferme, a du corps mais est aussi extensible.
+Using a fabric with some stretch will make it easier to get a comfortable fit and give you some more room to move about as pencil skirts fit rather tight. **Scuba** is often seen in pencil skirts as it is firm, has body but also stretches.
 
 ### Tissu de rangement
 

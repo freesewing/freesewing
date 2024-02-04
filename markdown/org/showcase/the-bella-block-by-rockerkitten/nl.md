@@ -1,15 +1,15 @@
 ---
-title: The Bella block by RockerKitten
-caption: A muslin of Bella
+title: Het Bella blok van RockerKitten
+caption: Een mousseline van Bella
 date: 20240106
-intro: The Bella block is what brought RockerKitten to FreeSewing -- and we couldn't be more grateful that she found us!
+intro: Het Bella blok heeft RockerKitten naar FreeSewing gebracht -- en we kunnen niet dankbaarder zijn dat ze ons gevonden heeft!
 designs:
   - bella
 maker: Natalia
 ---
 
-The Bella block is what brought RockerKitten to FreeSewing -- and we couldn't be more grateful that she found us! She has dialed in her preferences and measurements to find her ideal fit. This is one of her muslins.
+Het Bella blok heeft RockerKitten naar FreeSewing gebracht -- en we kunnen niet dankbaarder zijn dat ze ons gevonden heeft! Ze heeft haar voorkeuren en maten afgestemd om haar ideale pasvorm te vinden. Dit is een van haar mousselines.
 
-RockerKitten graciously shares tips, encouragement, and advice with folks on [Discord](https://discord.freesewing.org/). Come join the discussion over there if you're interested in trying FreeSewing's blocks!
+RockerKitten deelt vriendelijk tips, aanmoedigingen en advies met mensen op [Discord] (https\://discord.freesewing.org/). Doe mee als je de blokken van FreeSewing wilt proberen!
 
-This was made by RockerKitten, [@rockerkitten on Instagram](https://www.instagram.com/rockerkitten/), and has been shared here with permission.
+Deze is gemaakt door RockerKitten, [@rockerkitten op Instagram](https://www.instagram.com/rockerkitten/), en is hier met toestemming gedeeld.

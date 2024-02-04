@@ -1,13 +1,13 @@
 ---
-title: Onyx by Thrunic
-caption: An embroidered Onyx!
+title: Onyx van Thrunic
+caption: Een geborduurde Onyx!
 date: 20231227
-intro: Thrunic used the same Onyx pattern as a previous version, but made various improvements when sewing this one.
+intro: Thrunic gebruikte hetzelfde Onyx-patroon als een eerdere versie, maar voegde verschillende verbeteringen toe bij het naaien van deze versie.
 designs:
   - onyx
 maker: Natalia
 ---
 
-This is the latest Onyx garment by maker Thrunic. For this version, he greatly improved the quality of the seams and the zipper, and moved the embroideries up a bit so that they show above the bib of his various shortalls.
+Dit is het nieuwste Onyx kledingstuk van maker Thrunic. Voor deze versie heeft hij de kwaliteit van de naden en de rits sterk verbeterd en de borduursels iets naar boven verplaatst, zodat ze boven de slab van zijn verschillende shortalls uitkomen.
 
 ![Embroidery closeup](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-onyx-by-thrunic-1/public "Embroidery closeup")

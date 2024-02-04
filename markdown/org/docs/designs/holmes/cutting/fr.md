@@ -17,7 +17,7 @@ The **gore** pattern piece needs to be cut on the fold to create a whole piece.
 
 ### Morceaux de tissu optionnels
 
-Si vous ne souhaitez pas utiliser de ruban pour vos cravates, vous pouvez les fabriquer en tissu. Coupez simplement 4 bandes de grains croisés d'un 1" (2. cm) ou la largeur de votre choix + couture large et coudre deux tubes laissant un des côtés courts ouverts pour tourner. Couper les coins et couper les coutures. Détruit une presse. Si vous le souhaitez, vous pouvez _pointer au bord_ ou _pointer en haut_ les tubes pour empêcher le tissu de se déplacer. Le bord brut des tubes peut ensuite être dissimulé dans la couture de rabat de l'oreille lors de la construction des clapets de l'oreille.
+Si vous ne souhaitez pas utiliser de ruban pour vos cravates, vous pouvez les fabriquer en tissu. Simply cut 4 crossgrain strips of an 1" (2.5cm) or width of your chosen seam allowances wide and sew two tubes leaving one of the short sides open for turning. Couper les coins et couper les coutures. Détruit une presse. Si vous le souhaitez, vous pouvez _pointer au bord_ ou _pointer en haut_ les tubes pour empêcher le tissu de se déplacer. Le bord brut des tubes peut ensuite être dissimulé dans la couture de rabat de l'oreille lors de la construction des clapets de l'oreille.
 
 <Note>
 
@@ -26,6 +26,6 @@ Il est recommandé de tracer le filet du patron et d'utiliser le motif pour trac
 </Note>
 <Warning>
 
-It is recommended to make a mock-up with your gore pattern first before cutting your fabrics. This is to test the length and ease of the gore piece. Assurez-vous de couper la marge de couture du fond avant de l'essayer. If it is too tight who will need to re-draft the pattern with more ease (longer head circumference) just remember the ease is split across each gore. If the peak is too high you may want to re-draft the pattern with the gore length reduced. Une fois reformulé, faites un autre maquette pour vérifier si vous êtes satifié avec les changements ou non. Répétez à nouveau si vous n'êtes pas satisfait.
+It is recommended to make a mock-up with your gore pattern first before cutting your fabrics. This is to test the length and ease of the gore piece. Assurez-vous de couper la marge de couture du fond avant de l'essayer. If it is too tight who will need to re-draft the pattern with more ease (longer head circumference) just remember the ease is split across each gore. If the peak is too high you may want to re-draft the pattern with the gore length reduced. Once re-drafted make another mock-up to check whether you are satisfied with the changes or not. Répétez à nouveau si vous n'êtes pas satisfait.
 
 </Warning>

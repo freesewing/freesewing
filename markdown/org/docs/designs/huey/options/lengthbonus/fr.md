@@ -2,7 +2,7 @@
 title: "Supplément de longueur"
 ---
 
-La quantité à allonger le vêtement. Une valeur négative la raccourcira.
+La longueur en plus pour le vêtement. Une valeur négative le raccourcira.
 
 
 

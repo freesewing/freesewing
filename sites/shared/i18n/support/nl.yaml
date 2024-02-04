@@ -1,13 +1,13 @@
-accountIssue: Account problem
-accountIssueDesc: Do you have trouble with your FreeSewing account?
-addImage: Add an image
-allOk: Everything is awesome
+accountIssue: Account probleem
+accountIssueDesc: Heb je problemen met je FreeSewing account?
+addImage: Voeg een afbeelding toe
+allOk: Alles is geweldig
 by: door
-bugReport: Report a bug
-bugReportDesc: Is something broken, or not working as expected?
-confirmedIssues: Confirmed issues
-createSupportRequest: Create a support request
-commentAdded: Comment added
+bugReport: Meld een fout
+bugReportDesc: Is er iets kapot, of werkt het niet zoals het moet?
+confirmedIssues: Bevestigde problemen
+createSupportRequest: Maak een hulpverzoek aan
+commentAdded: Opmerking toegevoegd
 communitySupport: Gemeenschapssteun
 communitySupport1: Voor het snelste antwoord ga je naar <b>discord.freesewing.org</b> en stel je je vraag in het <b>Support</b> kanaal.
 communitySupport2: De FreeSewing gemeenschap is een behulpzame groep, dus de kans is groot dat ze je kunnen helpen.
@@ -15,21 +15,21 @@ contributorSupport: Ondersteuning voor medewerkers
 contributorSupport1: Als er iets kapot is of je hebt een bug gevonden, dan kun je <b>een issue aanmaken op GitHub</b>.
 contributorSupport2: Kwesties zullen eerder de aandacht trekken van de belangrijkste medewerkers, maar het duurt meestal langer om een reactie te krijgen.
 description: Beschrijving
-descriptionDocs1: This is where you can describe the issue
+descriptionDocs1: Hier kan je het probleem beschrijven
 design: Ontwerp
-designDocs1: Pick the FreeSewing design this issue applies to
-designIssue: Report an issue with a FreeSewing Design
-designIssueDesc: Are you having trouble with a FreeSewing design or the pattern you are generating from it?
-docsUpdate: Documentation update
-docsUpdateDesc: Is there something to be improved about our documentation?
-featureRequest: Feature request
-featureRequestDesc: Is there something you would like to see happen or implemented?
-howCanWeSupportYou: How can we support you?
-howCanYouSupportFreeSewing: How can you support FreeSewing?
-issueAssigned: Issue assigned
-issueClosed: Issue closed
-issueReferenced: Issue referenced
-issueReopened: Issue Re-Openened
+designDocs1: Kies bij welk FreeSewing ontwerp dit probleem van toepassing is
+designIssue: Een probleem met een FreeSewing ontwerp melden
+designIssueDesc: Heb je problemen met een FreeSewing ontwerp of het patroon dat je ermee genereert?
+docsUpdate: Documentatie update
+docsUpdateDesc: Is er iets wat verbeterd kan worden aan onze documentatie?
+featureRequest: Functie verzoek
+featureRequestDesc: Is er iets wat je graag zou zien gebeuren of geïmplementeerd worden?
+howCanWeSupportYou: Hoe kunnen we je helpen?
+howCanYouSupportFreeSewing: Hoe kun je FreeSewing steunen?
+issueAssigned: Probleem toegewezen
+issueClosed: Probleem gesloten
+issueReferenced: Probleem verwezen
+issueReopened: Issue Re-Opened
 maintainerSupport: Ondersteuning voor beheerders
 maintainerSupport1: Als je <b>een FreeSewing patron</b>bent, kun je meteen naar boven gaan en rechtstreeks contact opnemen met Joost.
 maintainerSupport2: Hoewel Joost verzoeken van klanten met prioriteit behandelt, heeft hij ook slaap nodig. Houd daar dus rekening mee, vooral als je in een andere tijdzone bent.

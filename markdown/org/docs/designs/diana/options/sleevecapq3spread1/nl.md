@@ -2,7 +2,7 @@
 title: "Mouwkop Q3 opwaardse spreiding"
 ---
 
-![De opwaartse spreiding in de thrid quadrant van de mouwkop](./sleevecapq3spread1.svg)
+![The upward spread in the third quadrant of the sleevecap](./sleevecapq3spread1.svg)
 
 Deze optie controleert de opwaartse spreiding in de derde quadrant van de mouwkop.
 

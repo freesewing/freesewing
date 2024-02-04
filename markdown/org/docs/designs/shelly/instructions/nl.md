@@ -4,13 +4,13 @@ title: "Shelly overhemd: Naai-instructies"
 
 <Note>
 
-Het gebruik van een overlockvoet wordt aanbevolen om de naden klein te houden. Als je een overlockmachine gebruikt, wordt een naadtoeslag van 12 mm aanbevolen. Bij gebruik van een overlockvoet op een naaimachine of bij overlocken zonder het mes te gebruiken, wordt een naadtoeslag van 6 mm aanbevolen.
+Het gebruik van een overlockvoet wordt aanbevolen om de naden klein te houden. If using a serger, a seam allowance of 1/2 inch (12 mm) is recommended. Bij gebruik van een overlockvoet op een naaimachine of bij overlocken zonder het mes te gebruiken, wordt een naadtoeslag van 6 mm aanbevolen.
 
 Alle naden, inclusief de nekband, kunnen met dezelfde steek worden gedaan, of het nu een overlocksteek, een overlocksteek of een rekbare steek is.
 
 Zomen zijn optioneel (omdat breiwerk niet rafelt), maar als je zomen maakt, zorg er dan voor dat ze kunnen rekken.
 
-Zorg ervoor dat je een steek gebruikt die kan rekken. Als je elastische stof naait, pas dan je spanning aan voor extra rek. Op een overlockmachine betekent dit meestal het verlagen van de naaldspanning, vooral van de rechternaald, en het aanpassen van de grijperspanning als dat nodig is om de steek er netjes uit te laten zien. Verlaag de spanning op een gewone naaimachine. Test je steekkeuze eerst op reststof en probeer de testnaad te vormen door de naad over de lengte uit te rekken. Het zou pas moeten knappen na flink uitrekken. Als het te gemakkelijk knalt, blijf dan spelen met je steken/spanningsinstellingen tot je iets krijgt dat wel tegen een stootje kan.
+Zorg ervoor dat je een steek gebruikt die kan rekken. Als je elastische stof naait, pas dan je spanning aan voor extra rek. Op een overlockmachine betekent dit meestal het verlagen van de naaldspanning, vooral van de rechternaald, en het aanpassen van de grijperspanning als dat nodig is om de steek er netjes uit te laten zien. Verlaag de spanning op een gewone naaimachine. Test your choice of stitch first on scrap fabric, and try to shape the test seam by stretching the seam along its length. Het zou pas moeten knappen na flink uitrekken. Als het te gemakkelijk knalt, blijf dan spelen met je steken/spanningsinstellingen tot je iets krijgt dat wel tegen een stootje kan.
 
 Voor het maken van t-shirts of andere shirts met 2-weg stretch, zijn gewone instellingen met een steek die rekt prima.
 

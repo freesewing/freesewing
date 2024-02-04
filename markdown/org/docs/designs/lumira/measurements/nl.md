@@ -1,5 +1,5 @@
 ---
-title: "Lumira leggings: Required Measurements"
+title: "Lumira leggings: Benodigde afmetingen"
 ---
 
 <DesignMeasurements design='lumira' />

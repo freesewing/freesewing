@@ -40,7 +40,7 @@ De hoogte van de mouwkop is gelijk aan de afstand tussen de punten 3 en 4. De ex
 - [Mouwkop top X](/docs/designs/brian/options/sleevecaptopfactorx/) : Bepaalt de horizontale plaatsing van punt 3 en 4
 - [Mouwkop top Y](/docs/designs/brian/options/sleevecaptopfactory/) : Bepaalt de verticale plaatsing van punt 4
 
-In other words, point 4 can be made higher and lower and, perhaps less intutitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
+In other words, point 4 can be made higher and lower and, perhaps less intuitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
 
 ### De inflectiepunten
 

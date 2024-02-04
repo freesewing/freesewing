@@ -4,7 +4,7 @@ title: "Florence Gesichtsmaske: Stoff Optionen"
 
 Das Ziel unserer Maske ist es, die Tröpfchen zu stoppen. Du willst dich also für etwas entscheiden, das diese herausfiltert. Andererseits musst du in der Lage sein, durch deine Maske zu atmen, deshalb wollen wir Gewebe, das atmet, ohne Tröpfchen durchzulassen.
 
-Außerdem wollen wir, dass sich das Innere auf unserer Haut gut anfühlt. Hier würde ich also eng gewebte Baumwolle oder Viskose/Rayon vorschlagen. Für den Außenstoff auch Baumwolle oder dicht gewebte Wolle.
+Außerdem wollen wir, dass sich das Innere auf unserer Haut gut anfühlt. Hier würde ich also eng gewebte Baumwolle oder Viskose/Rayon vorschlagen. For the outer fabric, cotton again, or a tightly woven wool.
 
 <Note>
 

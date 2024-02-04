@@ -1,18 +1,18 @@
 ---
 title: Surprise-giant Hi by lasermonkey12
-caption: A hilariously large Hi
+caption: Een hilarisch grote Hi
 date: 20240106
-intro: Bet you can't guess how small this Hi shark packed down.
+intro: Wedden dat je niet kunt raden hoe klein deze Hi haai is ingepakt?
 designs:
   - Hoi
 maker: Natalia
 ---
 
-Bet you can't guess how small this Hi shark packed down. Maker lasermonkey12 shared:
+Wedden dat je niet kunt raden hoe klein deze Hi haai is ingepakt? Maker lasermonkey12 deelde:
 
-> i asked a friend if i could send him an empty plushie with a zipper installed and have him stuff it.  he did not expect me to make it this large (and i intentionally packed it as small as possible)
+> Ik heb een vriend gevraagd of ik hem een lege plushie kon sturen met een rits erin en hem die laten vullen.  hij had niet verwacht dat ik het zo groot zou maken (en ik heb het met opzet zo klein mogelijk ingepakt)
 
-Best. Delivery. Ever.
+Beste. Levering. Ooit.
 
 ![Another view](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-surprise-giant-hi-by-lasermonkey12-1/public "Another view")
 

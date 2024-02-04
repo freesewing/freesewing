@@ -53,7 +53,7 @@ Los cordones se enhebrarán después de construir la sudadera.
 - Dale la vuelta por el lado bueno.
 - Hilvana los bordes crudos delantero e inferior.
 - Crea una funda para el cordón cosiendo a unos 2,5 cm (1 pulgada) del borde interior en el lado con los agujeros para el cordón.
-- (Opcionalmente) Si no utilizas un cordón, _Puntada de remate_ o _Puntada de remate_ la curva interior.
+- (Optionally) If not using a drawstring, _Topstitch_ or _Edgestitch_ the inner curve.
 
 <Note>
 
@@ -87,9 +87,9 @@ Una cinta para el cuello puede ser útil para estabilizar y cubrir las costuras 
 - Presiona el margen de costura hacia arriba.
 - _Puntada de remate_ o _Puntada de remate_ margen de costura de la cintura al cuerpo.
 
-### Paso 8: Fijar los puños
+### Step 8: Attaching the cuffs
 
-- Con _bien juntos_ cose los lados cortos de los puños para crear dos bandas.
+- With _good sides together_ sew the short edges of the cuffs together to create two bands.
 - Presiona para abrir los márgenes de costura.
 - (Opcional) _Canteado_ los márgenes de costura hacia abajo.
 - Dobla los puños por la mitad longitudinalmente haciendo coincidir los lados contrarios. Alísala.
@@ -104,7 +104,7 @@ Una cinta para el cuello puede ser útil para estabilizar y cubrir las costuras 
 - Desabrocha parcialmente la cremallera.
 - Dobla la parte superior de la cinta de la cremallera hacia el _lado bueno_ de la cinta de la cremallera. Recorta si es necesario.
 - Sujeta con alfileres la cremallera a lo largo de uno de los bordes delanteros de la capucha, la parte delantera y la cintura. The zipper teeth should just be slightly over the seam line with the edge of the tape either matching or being slightly over from the hoodie edge. Making sure the zipper pull is faced the _good sides_ of the hoodie and the bottoms are lined up.
-- Utilizando un pie prénsatelas para cremalleras, cose la cremallera a la sudadera utilizando el ancho de tu costura. Cuando llegues al tirador de la cremallera, detente, baja la aguja, levanta el prensatelas, tira del tirador de la cremallera más allá del prensatelas, baja el prensatelas. Luego puedes seguir cosiendo la costura.
+- Using a zipper foot stitch the zipper to the hoodie using you seam allowance width. Cuando llegues al tirador de la cremallera, detente, baja la aguja, levanta el prensatelas, tira del tirador de la cremallera más allá del prensatelas, baja el prensatelas. Luego puedes seguir cosiendo la costura.
 - Desabrocha la cremallera.
 - Sujeta con alfileres y cose del mismo modo la cinta de la cremallera que no está sujeta al otro lado de la sudadera.
 - Presiona las costuras hacia el interior con cuidado de no fundir los dientes de la cremallera con la plancha.

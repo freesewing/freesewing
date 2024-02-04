@@ -16,7 +16,7 @@ Debido a los muchos estilos diferentes de Sandy, es difícil decir con precisió
 
 ##### Tela principal
 
-La longitud que necesites dependerá de la longitud y el volumen de tu falda circular. Las faldas de longitud media y más pequeñas deberían bastar con 2 ó 2,5 metros, mientras que las faldas hasta el suelo necesitarán más. En caso de duda, compra un metro más de lo que crees. Tampoco tengas miedo de hacer piezas si tu tela no es lo suficientemente ancha o larga, es mejor tener una costura de más que no utilizar la tela que te gusta.
+The length you require is dependant on how long and how full your circle skirt is, mid length and smaller should be sufficient with 2 - 2.5 metres whereas a floor length will require more. En caso de duda, compra un metro más de lo que crees. Tampoco tengas miedo de hacer piezas si tu tela no es lo suficientemente ancha o larga, es mejor tener una costura de más que no utilizar la tela que te gusta.
 
 <Note>
 
@@ -40,7 +40,7 @@ Para añadir vuelo/mantener la forma de los dobladillos, puedes añadir un refre
 
 ##### Cierres
 
-Si no haces una Sandy elástica, necesitarás algún tipo de cierre. Puede ser simplemente una cremallera que se inserta en la cintura y la costura, o pueden ser botones, corchetes o broches con una cintura superpuesta y una abertura, tapeta o cremallera en la parte superior de la costura.
+Si no haces una Sandy elástica, necesitarás algún tipo de cierre. This can be just a zip that is inserted in to the waistband and seam or it can be buttons, dress hooks, or snaps with an overlapping waistband and an opening, placket or zipper at the top of the seam.
 
 ##### Elástico
 

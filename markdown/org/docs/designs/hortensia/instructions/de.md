@@ -30,9 +30,9 @@ Die Platzierung der Gurte ist nicht auf dem Muster angegeben und muss selbst bes
 
 <Note>
 
-Wenn du anstelle von Stoffgurten Taschengurtband verwendest, gehe wie folgt vor:
+If using bag strap webbing instead of fabric made straps do the following,
 
-- Schneide das Gurtband mit Nahtzugabe auf die Länge der Gurte zu.
+- Cut the webbing to the length of the straps with seam allowance.
 - Bügle unter die Nahtzugabe der kurzen Kante.
 - Befestige das Gurtband auf die gleiche Weise wie die Stoffgurte.
 
@@ -83,8 +83,8 @@ Es wird empfohlen, den Spalt zum Wenden an der Seite und nicht oben oder unten z
 - Lege _gut zusammen_ und nähe die vorderen und hinteren Futterteile an das untere Futterteil.
 - Lege die _Seiten aneinander_ und befestige die Seitenteile des Futters.
 - Bügle unter die oberen Nahtzugaben.
-- Alternativ kannst du auch die oberen Kanten binden.
-- Lege das Futter in die Tasche _mit den falschen Seiten zueinander_ .
+- Alternatively you can bind the top edges.
+- Place the lining inside the bag _wrong sides facing_ each other.
 - _Steppstich_ oder _Steppstich_ das Futter an der Reißverschlussleiste.
 
 ### Schritt 10: Viel Spaß mit deinem neuen Shirt!

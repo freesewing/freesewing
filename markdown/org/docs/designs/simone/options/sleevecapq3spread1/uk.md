@@ -2,7 +2,7 @@
 title: "Спред по рукавному покриттю Q3 висхідний"
 ---
 
-![Розширення догори в третьому квадранті пілочки рукава](./sleevecapq3spread1.svg)
+![The upward spread in the third quadrant of the sleevecap](./sleevecapq3spread1.svg)
 
 Ця опція контролює розкид вгору в третьому квадранті ковпачка рукава.
 

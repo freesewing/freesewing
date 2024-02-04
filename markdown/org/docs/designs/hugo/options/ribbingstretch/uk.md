@@ -6,7 +6,11 @@ title: "Розтяжка ребристої стрічки"
 
 Ця опція дозволяє налаштувати розтягнення ребер.
 
-Якщо ви виберете 90% (наприклад) на кожні 10 см ребра, ми витягнемо лише 9 см. Таким чином, 9 см ребер будуть розтягнуті до 10 см.
+It's value is the percentage of stretch in the ribbing fabric, and that amount will be subtracted from 100% to determine the final width of fabric used in the pattern.
+
+For example, if you choose 10%, then for every 10 cm of ribbing, we'll only draft 9 cm. This way, 9 cm of ribbing will be stretched to 10 cm.
+
+The option range is between 0% and 10%, with the default set to 5%.
 
 <Note>
 

@@ -4,13 +4,13 @@ title: "Pantalones de ciclista Cornelius: Instrucciones de costura"
 
 ### Paso 1: Los bolsillos delanteros
 
-- Presiona por debajo de los márgenes de costura de los bordes no dentados de las carátulas del pokcet.
+- Press under the seam allowances of the non-notched edges of the pocket facings.
 - Haciendo coincidir las muescas, sujeta con alfileres los lados equivocados de los revestimientos de los bolsillos al lado derecho de las bolsas de bolsillo, _Edgestitch_ los bordes doblados a las bolsas de bolsillo.
 - _Hilvana_ los márgenes de costura de los bordes dentados de las carátulas de los bolsillos a las bolsas de los bolsillos.
 - Con los lados derechos juntos haciendo coincidir las muescas dobles, cose las bolsas de bolsillo a la parte delantera y luego presiona hacia el lado equivocado.
 - Dobla los bolsillos por la mitad siguiendo la línea de pliegue, con los lados derechos juntos. Cose el fondo de la bolsa de bolsillo.
 - Si lo prefieres, puedes unir las costuras inferiores de las bolsas con la _costura francesa_.
-- _Hilvana_ la parte superior y los laterales de las bolsas de los bolsillos a los márgenes de costura delanteros haciendo muescas matemáticas.
+- _Baste_ the top and side of the pocket bags to the front seam allowances matching notches.
 
 <Note>
 
@@ -70,7 +70,7 @@ Utiliza el método del estilo de puño que hayas elegido, ya que son diferentes 
 - Presiona el margen de costura superior hacia el revés de las piezas restantes de la banda para la pierna. Recorta el margen de costura superior.
 - Con los lados derechos juntos, cose el resto de la pierna y las piezas a las bandas de la pierna pegadas a lo largo de los fondos y los lados.
 - Gira las bandas de las piernas hacia fuera. Alísala.
-- _Puntada de deslizamiento_ o _Puntada de cadeneta_ el borde doblado de la cintura hacia delante, asegurándote de que el borde doblado cubre la puntada.
+- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitching.
 - Cose el ojal. Los botones se coserán más tarde.
 
 <Note>
@@ -89,7 +89,7 @@ Si te preocupa que se forme una corriente de aire, puedes crear un triángulo de
 - Presiona el margen de costura superior hacia el revés de las piezas restantes de la banda para la pierna. Recorta el margen de costura superior.
 - Con los lados derechos juntos, cose el resto de la pierna y las piezas a las bandas de la pierna pegadas a lo largo de los fondos y los lados.
 - Gira las bandas de las piernas hacia fuera. Alísala.
-- _Puntada de deslizamiento_ o _Puntada de cadeneta_ el borde doblado de la cintura hacia delante, asegurándote de que el borde doblado cubre la puntada.
+- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitching.
 - Cose el ojal. Los botones se coserán más tarde.
 
 <Note>
@@ -108,13 +108,13 @@ Si lo prefieres, puedes _coser_ las bandas de las perneras como una cinturilla m
 
 ### Paso 5: Cintura
 
-- Enfrenta una de las piezas de la cintura utilizando el método que prefieras.
+- Face one of the waistband pieces using your preferred method.
 - Cose la pieza de cintura encarada a la parte superior de las piernas con los lados derechos juntos.
 - Plancha la cintura y el margen de costura hacia arriba y lejos de la pierna. Recorta el margen de costura para reducir el volumen.
 - Plancha el margen de costura inferior hacia el revés de la pieza restante de la cintura. Recorta el margen de costura inferior.
 - Con los lados derechos juntos, cose la cintura restante a la cintura enfrentada a lo largo de la parte superior y los lados.
 - Gira la cintura hacia fuera. Alísala.
-- _Puntada de deslizamiento_ o _Puntada de cadeneta_ el borde doblado de la cintura hacia delante, asegurándote de que el borde doblado cubre la puntada.
+- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitching.
 - Cose el ojal. Los botones se coserán más tarde.
 
 <Note>

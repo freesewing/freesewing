@@ -69,13 +69,13 @@ Bevor du die Augenbrauen in der Mitte zusammennähst, kannst du sie auffüllen, 
 
 - Mit _guten Seiten zusammen_ ordne die Beinteile den Körperteilen zu.
 - Nähen Sie jedes Bein von der Kerbe B/D nach unten und zurück zur Kerbe B/D.
-- Wenn das Beinteil etwas kürzer ist als das Bein am Kopfteil, musst du es beim Anpassen etwas nachgeben. Um dies zu erleichtern, wurden Kerben angebracht.
+- If the leg part is slightly shorter than the leg on the head parts you will have to ease it in while matching it up. Um dies zu erleichtern, wurden Kerben angebracht.
 
 <Tip>
 
 Es ist am einfachsten, ein Bein fast bis zur nächsten B/D-Kerbe zu nähen, mit dem Nähen aufzuhören, das nächste Bein festzustecken und dann weiterzunähen, anstatt zu versuchen, alle Beine in einem Zug festzustecken und zu nähen. 
 
-Diejenigen, die sich mehr zutrauen, können dies mit der Nadel nach unten auf ihrer Maschine tun. Wenn du dir aber weniger zutraust, kannst du die Maschine abnehmen, die Nadel feststecken und dann wieder mit dem Nähen beginnen, ein wenig über dem ursprünglichen Stich, um ihn zu sichern.
+Those who are more confident can do this with the needle down on their machine but if you are less confident you may wish to remove from the machine, pin and then start sewing again a little bit over your original stitching to secure it.
   
 </Tip>
 

@@ -2,7 +2,7 @@
 title: "Boucles de ceinture"
 ---
 
-Constrol le nombre de convoyeurs que nous allons générer.
+Controls how many beltloops we'll generate.
 
 
 

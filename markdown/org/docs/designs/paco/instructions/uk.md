@@ -178,7 +178,7 @@ title: "Штани пако: Інструкція з пошиття"
 
 ## Крок 12: Приєднайте пояс
 
-Покладіть обидві частини пояса лицьовими сторонами один до одного і вирівняйте короткі краї. Зшийте короткі краї разом, потім натисніть відкрити. Вони будуть всередині пояса, тому вам не потрібно обробляти краї цих швів, якщо тільки ваша тканина не буде особливо схильна до зношування.
+Fold the waistband in half with good sides together, aligning the two short edge ends. Sew the short edges together to sew the waistband into a ring. Press open the seam. They will be inside the waistband, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
 
 ![З'єднані частини пояса](step12.svg)
 
@@ -205,7 +205,7 @@ title: "Штани пако: Інструкція з пошиття"
 
 Потім вирівняйте центральні частини спинки і приколіть, додавши додаткові шпильки навколо пояса, якщо потрібно.
 
-Пришийте пояс до штанів якомога ближче до резинки, але не вшивайте його в резинку.
+Sew the waistband to the pants, as close to the elastic as you can, but don’t sew into the elastic.
 
 ![Пояс пришитий простим методом](step13.svg)
 
@@ -288,7 +288,7 @@ As you did with the waistband elastic, wrap the elastic for your cuff around you
 
 </Tip>
 
-Пришийте манжету до розрізу штанів, якомога ближче до резинки, але не вшивайте її в резинку.
+Sew the cuff to the pants opening, as close to the elastic as you can, but don’t sew into the elastic.
 
 ![Манжети пришиті простим методом](step16.svg)
 

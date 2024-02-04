@@ -2,4 +2,4 @@
 title: Вимірювання, які ми використовуємо
 ---
 
-<ReadMore list />
+<ReadMore />

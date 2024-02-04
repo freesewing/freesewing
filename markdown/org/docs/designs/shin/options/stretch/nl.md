@@ -2,7 +2,7 @@
 title: "Stretch"
 ---
 
-De hoeveelheid algemene (horizontale) stretch.
+De hoeveelheid (horizontaal) stretch.
 
 
 

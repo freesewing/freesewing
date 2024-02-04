@@ -108,10 +108,10 @@ controlTitle: '¿Qué experiencia de usuario prefieres?'
 #img
 imgTitle: '¿Qué tal una foto?'
 imgDragAndDropImageHere: Arrastra y suelta una imagen aquí
-imgPasteUrlHere: Pega aquí la ubicación de una imagen (url)
+imgPasteUrlHere: Paste an image location (URL) here
 imgSelectImage: Selecciona una imagen
 #newsletter
-newsletterTitle: '¿Quieres recibir el boletín de FreeSewing?'
+newsletterTitle: '¿Le gustaría recibir el boletín de noticias FreeSewing?'
 newsletterYes: Sí, deseo recibir el boletín
 newsletterYesd: Una vez cada 3 meses recibirás un correo electrónico nuestro con contenido sano y honesto. Sin seguimiento, sin anuncios, sin tonterías.
 newsletterNod: Siempre puedes cambiar de opinión más adelante. Pero hasta que no lo hagas, no te enviaremos ningún boletín.
@@ -202,7 +202,7 @@ public: Público
 publicSet: Conjunto de medidas públicas
 privateSet: Conjunto de medidas privadas
 publicSetDesc: A otros se les permite utilizar estas mediciones para generar o probar patrones
-privateSetDesc: Estas medidas no pueden ser utilizadas por otros usuarios o visitantes
+privateSetDesc: These measurements cannot be used by other users or visitors
 permalink: Permalink
 editThing: Editar {thing}
 saveThing: Guardar {thing}
@@ -211,8 +211,8 @@ noFilter: No filtrar
 filterByDesignDocs: Si tienes en mente un diseño concreto, puedes <b>filtrar por diseño</b> para que sólo aparezcan las medidas necesarias para ese diseño.
 setLacksMeasiesForDesign: A este conjunto le faltan las medidas necesarias para este patrón
 setHasMeasiesForDesign: Este set tiene todas las medidas necesarias para este patrón
-someSetsLacking: Some of your sets lack the measurments required to generate this pattern
-theseSetsReady: Estos conjuntos tienen todas las medidas necesarias para generar este patrón
+someSetsLacking: Some of these sets lack the measurements required to generate this pattern
+theseSetsReady: These sets have all required measurements to generate this pattern
 chooseSet: Elige una serie de medidas
 patternForWhichSet: '¿Para qué conjunto de medidas debemos generar un patrón?'
 bookmarkedSets: Conjuntos de medidas que has marcado como favoritos
@@ -222,7 +222,7 @@ curateCuratedSets: Curar nuestra selección de conjuntos de medidas curadas
 useThisSet: Utiliza este conjunto de medidas
 ownSets: Tus propios conjuntos de medidas
 noOwnSets: No tienes ningún conjunto de medidas propias (todavía)
-pleaseMtm: Como nuestros patrones son a medida, te recomendamos encarecidamente que tomes las medidas exactas.
+pleaseMtm: Because our patterns are bespoke, we strongly suggest you take accurate measurements.
 noOwnSetsMsg: Puedes almacenar tus medidas como un conjunto de medidas, tras lo cual puedes generar tantos patrones como quieras para ellas.
 measurements: Medidas
 chooseASet: Elige un conjunto de medidas
@@ -253,7 +253,7 @@ blogNewInfo: Si quieres escribir en el blog de FreeSewing, puedes iniciar un bor
 imgNew: Generar una imagen en las redes sociales
 imgNewInfo: Utiliza nuestro generador para crear una imagen que puedas compartir en las redes sociales, admite los formatos ancho (clásico), cuadrado (Instagram) o alto (stories/TikTok).
 csetNew: Sugerir un nuevo conjunto de medidas curadas
-csetNewInfo: Seleccionamos una colección de conjuntos de mediciones verificados que utilizamos para probar patrones. Puedes sugerir un conjunto de medidas aquí.
+csetNewInfo: We curate a collection of vetted measurements sets that we use to test patterns. You can suggest a measurements set here.
 opackNew: Sugerir un nuevo paquete de opciones
 opackNewInfo: Seleccionamos una colección de paquetes de opciones para cada uno de nuestros diseños. Puedes sugerir tus opciones aquí.
 newPopular: Más populares

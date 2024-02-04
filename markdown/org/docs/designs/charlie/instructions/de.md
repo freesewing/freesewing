@@ -193,7 +193,7 @@ Wenn du fertig bist, drücke die Inseam zu öffnen.
 
 Vergewissere dich, dass dein rechtes und linkes Bein mit den Mustermarkierungen übereinstimmen. Der Schritt des rechten Beins sollte etwas über den des linken hinausgehen. Sieh dir das Schnittmuster an und schneide den Überschuss am linken Bein ab, falls nötig.
 
-Es kann hilfreich sein, mit Kreide oder Faden die **Center Front** an jedem Bein zu markieren. So kannst du sicherstellen, dass die Teile beim Fliegenbau an der richtigen Stelle sitzen.
+Es kann hilfreich sein, mit Kreide oder Faden die **Center Front** an jedem Bein zu markieren. This will help you make sure the pieces are in the right place during fly construction.
 
 </tip>
 
@@ -276,14 +276,14 @@ Denke daran, dass die Nahtzugabe etwas rechts von der vorderen Mitte beginnt. Di
 
 Achte darauf, dass du die gefaltete Kante des rechten Beins genau links von den Reißverschlusszähnen platzierst, damit sich der Stoff nicht im Reißverschluss verfängt.
 
-Beende das Nähen an der oberen Aussparung der Schlitzverlängerung, etwas oberhalb der Quernaht, und steppe unbedingt ab. Wenn du das nicht tust, kannst du die Verlängerung beim Nähen der J-Naht nicht aus dem Weg halten.
+Stop sewing at the top 'fly extension' notch, slightly above the cross seam, and be sure to backstitch. Wenn du das nicht tust, kannst du die Verlängerung beim Nähen der J-Naht nicht aus dem Weg halten.
 
 ![Verlängerung am rechten Bein befestigen](AttachExtensionToRightLeg.svg)
 
 
 ### Befestige den Reißverschluss an der Schlitzleiste.
 
-Achte darauf, das linke Bein auf der rechten vorderen Mitte auszurichten. Es kann von Vorteil sein, durch den Besatz und die rechte Seite des Reißverschlussbandes zu stechen oder zu heften. (Wir müssen die linke Seite des Reißverschlussbandes an das linke Bein nähen). Achte darauf, dass alles gefüttert ist, und nähe die Schlitzleiste auf die linke Seite des Reißverschlusses. Versuche, nah an den Reißverschluss heranzukommen, aber nicht zu nah.
+Achte darauf, das linke Bein auf der rechten vorderen Mitte auszurichten. It can be valuable to pin or baste through the facing and right side of the zipper tape. (Wir müssen die linke Seite des Reißverschlussbandes an das linke Bein nähen). Achte darauf, dass alles gefüttert ist, und nähe die Schlitzleiste auf die linke Seite des Reißverschlusses. Versuche, nah an den Reißverschluss heranzukommen, aber nicht zu nah.
 
 ![Verkleidung am Reißverschluss befestigen](AttachFacingToZipper.svg)
 
@@ -292,15 +292,15 @@ Achte darauf, das linke Bein auf der rechten vorderen Mitte auszurichten. Es kan
 
 <tip>
 
-Verwende ein Stück Papier als Führung, um die J-Naht zu nähen. Dieses kannst du entlang der angegebenen Stichlinie aus deinem Muster ausschneiden.
+Use a piece of paper as a guide to sew the J seam, this can be cut from your pattern along the indicated stitch line.
 
 </tip>
 
-Jetzt die so genannte J-Naht der Fliege aufstitten. Achten Sie darauf, die Fliegenverlängerung aus dem Weg zu räumen. Da du nicht die ganze Länge der Schlitzverlängerung genäht hast, solltest du sie aus dem Weg stechen können.
+Jetzt die so genannte J-Naht der Fliege aufstitten. Achten Sie darauf, die Fliegenverlängerung aus dem Weg zu räumen. Since you didn't sew all the way along the fly extension, you should be able to pin it out of the way.
 
 #### Bar tackt den unteren Rand des Fliegens
 
-Verriegele nun den unteren Teil der J-Naht (den waagerechten Teil), aber achte diesmal darauf, dass du auch die Schlitzverlängerung erwischst. Du kannst auch einen zusätzlichen Riegel entlang der J-Naht anbringen (lila dargestellt).
+Now, bartack the very bottom of the J-seam (the horizontal part) but this time make sure to also catch the fly extension. Du kannst auch einen zusätzlichen Riegel entlang der J-Naht anbringen (lila dargestellt).
 
 ![Die J-Naht nähen](SewTheJSeam.svg)
 
@@ -310,7 +310,7 @@ Verriegele nun den unteren Teil der J-Naht (den waagerechten Teil), aber achte d
 
 <Note>
 
-Für die Effizienz werden wir einen langen Streifen Gurtschleifen in 8 Teile zerlegen.
+For efficiency, we will construct one long strip of belt loop that we'll divide into 8 parts.
 
 </Note>
 
@@ -360,7 +360,7 @@ Nähen Sie eine Linie des Nähens auf der Innenbund, in der Nähe der Kante, dur
 
 Legen Sie die Taille mit guten Seiten zusammen entlang der Taille. For the straight waistband, make sure the side with the standard seam allowance is aligned with the waist, and not the side with double seam allowance.
 
-Achten Sie auch darauf, ausreichend Naht über den Anfang und das Ende der Taille zu lassen.
+Also make sure to leave sufficient seam allowance beyond the start and end of the waistband.
 
 Nähen Sie die gesamte Taille entlang und befestigen Sie das Taillenband und nähen Sie die Gürtelschleifen in einem Schritt.
 
@@ -398,7 +398,7 @@ Dies wird die Rückseite des Taillenbands, das wir gemacht haben, um etwas weite
 
 ### Nähen Sie die Gürtelschleifen nach unten um sie breiter zu machen
 
-Am besten machst du die Gürtelschlaufen etwas breiter als den Bund, damit du breitere Gürtel unterbringen kannst.
+It's best to make the belt loops a bit wider than the waistband, to accommodate wider belts.
 
 Dazu lässt du den Bund flach liegen und nähst ihn mit einem Riegel etwa 1,5 cm unterhalb des Bundes fest.
 

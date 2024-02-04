@@ -2,7 +2,7 @@
 title: "Bucles de cinturón"
 ---
 
-Construir cuántos bucles de cinturón vamos a generar.
+Controls how many beltloops we'll generate.
 
 
 

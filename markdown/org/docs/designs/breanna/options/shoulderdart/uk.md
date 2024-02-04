@@ -2,7 +2,7 @@
 title: "Плечова витачка"
 ---
 
-Чи варто включати виточку на спині, щоб закруглити спину.
+Whether or not to include a back shoulder dart to round the back.
 
 
 
