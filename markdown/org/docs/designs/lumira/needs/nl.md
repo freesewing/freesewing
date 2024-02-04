@@ -1,9 +1,9 @@
 ---
-title: "Lumira leggings: What You Need"
+title: "Lumira leggings: Wat je nodig hebt"
 ---
 
-To make Lumira, you will need the following:
+Om Lumira te maken, heb je het volgende nodig:
 
 - Basis naaimateriaal
-- About 1.5 metres (1.7 yards) of a suitable fabric ([see Lumira Fabric options](/docs/designs/lumira/fabric/))
-- Elastic for the leg openings and waist.
+- Ongeveer 1,5 meter (1,7 yard) van een geschikte stof ([zie Lumira stofopties](/docs/designs/lumira/stof/))
+- Elastiek voor de beenopeningen en taille.

@@ -2,9 +2,9 @@
 title: "Seperate buttonhole placket"
 ---
 
-![Seperate buttonhole placket](seperatebuttonholeplacket.svg)
+![Separate buttonhole placket](seperatebuttonholeplacket.svg)
 
-Whether or not you want the buttonhole placket to be a seperate pattern part.
+Whether or not you want the buttonhole placket to be a separate pattern part.
 
 ## Effect of this option on the pattern
 

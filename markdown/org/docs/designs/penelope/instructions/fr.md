@@ -24,7 +24,7 @@ Une bande de taille est optionnelle sur Penelope. If you omit it, there will be 
 
 Sans la fermeture à glissière, il sera impossible d'entrer et de sortir de la jupe. So it should be at least the length from your waist to the largest part of your bum. Longer will make it easier to put the skirt on and off. Don't use one that's too long, because the part of the seam where the zipper is behaves differently than the part without it, and you want to try to make it invisible also in movement.
 
-Traditionnellement, une fermeture éclair invisible est utilisée dans une jupe crayon, mais une fermeture éclair ordinaire fonctionnera tout aussi bien. Tu peux même utiliser une fermeture éclair qui constraste ton tissu si la fantaisie te prend. Choisis ce qui fonctionne pour toi et le style que tu recherches. Sois créatif (ou non), c'est à toi de décider ! Cependant, si ton tissu est plus lourd, tu devrais peut-être opter pour une autre fermeture.
+Traditionnellement, une fermeture éclair invisible est utilisée dans une jupe crayon, mais une fermeture éclair ordinaire fonctionnera tout aussi bien. You can even use a zipper that contrasts your fabric if the fancy takes you. Choisis ce qui fonctionne pour toi et le style que tu recherches. Sois créatif (ou non), c'est à toi de décider ! Cependant, si ton tissu est plus lourd, tu devrais peut-être opter pour une autre fermeture.
 
 ### Fente
 
@@ -40,8 +40,8 @@ Les fléchettes sont utilisées pour compenser la différence entre les mesures 
 
 Nous n'allons pas nous lancer dans une explication complète sur la façon de créer tous les détails individuels
 qui composent une jupe crayon. Ces instructions supposent que tu sais comment coudre une échancrure, insérer une fermeture éclair invisible
-, faire une ouverture, etc. Si ce n'est pas le cas, de nombreux articles excellents sont disponibles sur le site
-, à la fois sous forme écrite et sous forme de vidéo. Si tu es bloqué, tu peux toujours contacter
+, faire une ouverture, etc. If not, there are numerous excellent articles available on the
+web, both in written form, and on video. Si tu es bloqué, tu peux toujours contacter
 [d'autres FreeSewers](https://discord.freesewing.org/) sur notre discord.
 
 </Warning>
@@ -50,7 +50,7 @@ qui composent une jupe crayon. Ces instructions supposent que tu sais comment co
 
 - Couds toutes les pinces.
 - Appuie sur les pinces vers l'arrière.
-  - Pour le(s) morceau(x) du dos, cela signifie que tu appuies sur les pinces l'une vers l'autre.
+  - For the back piece(s), that means you press the darts towards each other.
   - Pour la pièce avant, cela signifie que tu repasses les pinces vers les coutures latérales.
 
 ### Étape 2 : La fermeture éclair
@@ -76,11 +76,11 @@ Tu peux sauter cette étape si tu ne fais pas de doublure.
 - Suis les étapes 1 à 4 pour construire la doublure avec les changements suivants :
   - Ajuste les pinces pour compenser l'"aisance" supplémentaire des pièces de la doublure.
   - N'inclus pas la fermeture éclair mais laisse l'ouverture dans la couture de la fermeture éclair.
-- Attache la doublure au corps de la façon que tu préfères. Tu devras construire l'évent pendant celle-ci et relier la doublure à la fermeture éclair.
+- Attach the lining to the body in your preferred way. Tu devras construire l'évent pendant celle-ci et relier la doublure à la fermeture éclair.
 
 <Note>
 
-C'est à toi de décider comment répartir cette "facilité" supplémentaire. Tu peux soit l'ajouter aux pinces en les augmentant. ou tu peux ajouter une autre fléchette ou un pli creux au milieu.
+C'est à toi de décider comment répartir cette "facilité" supplémentaire. Tu peux soit l'ajouter aux pinces en les augmentant. Or you can add another dart or box pleat in the middle.
 
 </Note>
 
@@ -116,7 +116,7 @@ Cette étape n'est nécessaire que si tu n'as pas doublé ta jupe, car l'ourlet 
 - Si tu le souhaites, fais face à l'ourlet et aux aérations.
 - Construis les évents avec la méthode que tu préfères
 - Repasse sous les marges de l'ourlet de la jupe.
-- Si l'ourlet est assez grand et/ou si le tissu se repasse un peu le long du haut, cela permettra d'éviter les frisottis.
+- If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent fraying.
 - Fixe l'ourlet en place avec la méthode que tu préfères. Par exemple, tu peux coudre de l'extérieur ou _Slipstitch_ de l'intérieur. Tout dépend de l'aspect que tu souhaites donner au produit fini.
 
 <Tip>

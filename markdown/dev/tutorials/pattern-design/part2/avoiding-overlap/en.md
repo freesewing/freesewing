@@ -13,7 +13,7 @@ to rotate.
 
 However, there is a catch. 
 
-## Macros and auto-gerenated IDs
+## Macros and auto-generated IDs
 We have used the `round` macro to help us round the corners
 of our strap, and it added a bunch of auto-generated points to our pattern. We need to
 rotate these points too, but what are their names?

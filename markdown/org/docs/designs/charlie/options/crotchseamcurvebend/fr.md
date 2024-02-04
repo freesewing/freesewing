@@ -2,7 +2,7 @@
 title: "Courbure de la fourche avant"
 ---
 
-Contrôle la courbure de la couture du croth, qui influence l'ajustement à votre croûte.
+Controls the curvature of the crotch seam, which influences the fit at your crotch.
 
 
 

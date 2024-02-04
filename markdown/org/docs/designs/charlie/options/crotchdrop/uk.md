@@ -4,8 +4,8 @@ title: "Посадка"
 
 Контролює, наскільки опускається промежина.
 
-Занижена кльош створює більш невимушену посадку.  
-Значно занижена промежина також може бути вибором стилю.
+Lowering the crotch makes for a more casual fit.  
+A significantly lowered crotched can also be a style choice.
 
 
 

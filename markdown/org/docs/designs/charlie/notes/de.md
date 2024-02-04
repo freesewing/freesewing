@@ -8,7 +8,7 @@ Es hat eine Weile gedauert, denn es hat lange gedauert, bis [Titan](/designs/tit
 
 This is for the most part a rather straight-forward chino pattern, but it has one twist: The front packets are placed on the side seam. That side seam wraps around towards the front to give the slanted pocket look.
 
-Es ist ein etwas ungewöhnliches und kreatives Design, das ich wohl gemacht habe, weil ich es kann? Anyway, it's something to be mind ful of because if you do not expect it the front panels look a bit weird.
+Es ist ein etwas ungewöhnliches und kreatives Design, das ich wohl gemacht habe, weil ich es kann? Anyway, it's something to be mindful of because if you do not expect it the front panels look a bit weird.
 
 joost
 

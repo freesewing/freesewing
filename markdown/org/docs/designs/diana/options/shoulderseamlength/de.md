@@ -4,7 +4,7 @@ title: "Schulternahtlänge"
 
 ![Die Option der Schulternahtlänge auf Diana](./shoulderseamlength.svg)
 
-Diese Option legt fest, wie weit die Halsöffnung ist, indem sie die Länge der Schulternaht kontrolliert.
+This option determines how wide the neck opening is, by controlling the length of the shoulder seam.
 
 
 

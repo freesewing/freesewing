@@ -20,16 +20,17 @@ export const controlPoints = (p1, p2, p3, cpDistanceDivider) => {
   } else {
     angle = Math.abs(p2.angle(p1) - p2.angle(p3)) / 2
   }
-  return {
-    cp1:
-      p3 !== undefined
-        ? p2.shift(p2.angle(p3) - angle + 90, p2.dist(p3) / cpDistanceDivider)
-        : null,
-    cp2:
-      p1 !== undefined
-        ? p2.shift(p2.angle(p1) + angle - 90, p2.dist(p1) / cpDistanceDivider)
-        : null,
+  let cp1 =
+    p3 !== undefined ? p2.shift(p2.angle(p3) - angle + 90, p2.dist(p3) / cpDistanceDivider) : null
+  let cp2 =
+    p1 !== undefined ? p2.shift(p2.angle(p1) + angle - 90, p2.dist(p1) / cpDistanceDivider) : null
+  if (p1 !== undefined && p2.sitsRoughlyOn(p1)) {
+    return { cp1: p1.clone(), cp2: cp2 }
   }
+  if (p3 !== undefined && p2.sitsRoughlyOn(p3)) {
+    return { cp1: cp1, cp2: p3.clone() }
+  }
+  return { cp1: cp1, cp2: cp2 }
 }
 export const createControlPoints = (points, cpDistanceDivider, names) => {
   for (let i = 0; i < names.length; i++) {

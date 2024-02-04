@@ -4,7 +4,7 @@ renderer.t: Moteur de Rendu
 renderer.d: Contrôle comment le patron est restitué (dessiné) à l'écran
 renderWithReact.t: Rendu avec les composants React de FreeSewing
 renderWithReact.d: Rendu en tant que SVG par l'intermédiaire de nos composants React. Permet l'interactivité et est optimisé pour l'écran. Utilise ceci si tu n'es pas sûr de ce que tu dois choisir.
-renderWithCore.t: Rendu avec la bibliothèque Core de Freesewing
+renderWithCore.t: Render with FreeSewing's Core library
 renderWithCore.d: Rendu directement en SVG à partir de Core. Ne permet aucune interactivité et est optimisé pour l'impression. Utilise-le si tu veux savoir à quoi il ressemblera une fois exporté.
 control.t: Expérience de l'utilisateur
 control.d: Quelle expérience utilisateur préfères-tu ? Note qu'il s'agit d'un paramètre de compte, il aura donc un impact sur l'ensemble du site Web.

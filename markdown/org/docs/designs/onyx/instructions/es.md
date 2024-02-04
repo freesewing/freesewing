@@ -4,9 +4,9 @@ title: "Onyx de una pieza: Instrucciones de costura"
 
 <Note>
 
-Se recomienda el uso de una overlocker, para que el tamaño de las costuras acabadas sea pequeño y las costuras puedan estirarse. Si utilizas una máquina overlock con la cuchilla activada, se recomienda un margen de costura de 12 mm (1/2 pulgada). Si utilizas un prensatelas para sobrehilar en una máquina de coser, o si coses sin utilizar la cuchilla, se recomienda un margen de costura de 6 mm (1/4 pulgada).
+Se recomienda el uso de una overlocker, para que el tamaño de las costuras acabadas sea pequeño y las costuras puedan estirarse. If using a serger with the knife engaged, a seam allowance of 1/2 inch (12 mm) is recommended. Si utilizas un prensatelas para sobrehilar en una máquina de coser, o si coses sin utilizar la cuchilla, se recomienda un margen de costura de 6 mm (1/4 pulgada).
 
-A menos que se indique lo contrario, utiliza vapores elásticos para la confección de esta prenda. Se recomienda utilizar una puntada overlock de 4 hilos, o un pie overlock en una máquina de coser si no se dispone de una overlock.
+Unless otherwise stated, use stretch steams for construction of this garment. Se recomienda utilizar una puntada overlock de 4 hilos, o un pie overlock en una máquina de coser si no se dispone de una overlock.
 
 Los dobladillos o los puños son opcionales (ya que el punto no se deshilacha), pero si haces dobladillos o añades puños, asegúrate de que puedan estirarse. Estas instrucciones describen cómo hacer un dobladillo de pliegue simple con aguja doble, adecuado para trajes de baño o prendas ligeras, y cómo hacer un puño de punto elástico, adecuado para pijamas de forro polar o kigurumi.
 

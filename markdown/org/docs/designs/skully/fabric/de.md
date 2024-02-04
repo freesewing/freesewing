@@ -8,7 +8,7 @@ Dieses Plüschtier wird am besten aus einem Filzstoff hergestellt. This will pro
 
 ## Haar
 
-Skully braucht Haare. Embrodery-Zwirn funktioniert sehr gut und ist in allen Farben erhältlich.
+Skully braucht Haare. Embroidery floss works very well, and can be had in all colors.
 
 ## Stuffing
 

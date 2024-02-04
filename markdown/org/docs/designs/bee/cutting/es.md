@@ -38,6 +38,6 @@ Hay tres variaciones de este patrón. **Un color**, que es cuando la parte super
 
 <Note>
 
-Este patrón es fácilmente reversible comprando una tela similar a la tela principal y utilizándola como contraste. Para evitar confusiones en las instrucciones, se denominará tela de forro.
+Este patrón es fácilmente reversible comprando una tela similar a la tela principal y utilizándola como contraste. To save confusion on instructions it will be referred to as the lining fabric.
 
 </Note>

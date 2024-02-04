@@ -105,9 +105,9 @@ We hebben twee nieuwe ontwerpen op FreeSewing.org die je misschien nog niet kent
 
 [Otis](https://freesewing.org/designs/otis) is een baby rompertje:
 
-> _Toen mijn nichtje een baby kreeg, wist ik precies wat ik moest doen: kleertjes naaien voor de kleine. En ik had nog nooit kleding voor baby's gemaakt. What they should look like was easy. Ik heb zelf jaren geleden kinderen gehad, en die dingen uit één stuk moeten makkelijk te maken zijn._
+> _Toen mijn nichtje een baby kreeg, wist ik precies wat ik moest doen: kleertjes naaien voor de kleine. En ik had nog nooit kleding voor baby's gemaakt. Hoe ze eruit moesten zien was eenvoudig. Ik heb zelf jaren geleden kinderen gehad, en die dingen uit één stuk moeten makkelijk te maken zijn._
 >
-> _Wat ik niet had was een patroon. That meant that I should get one, or make one. Dat was niet zo'n moeilijke beslissing; FreeSewing miste absoluut ontwerpen die gericht waren op baby's. Infants have the nicequality that while they are growing, they grow in each direction at the same pace. De enige echte uitdaging is dat hun hoofd in verhouding veel groter is dan dat van oudere exemplaren. Een normaal shirt met opening werkt niet. But there are easy solutions to that, and these are used by allromper making manufacturers._
+> _Wat ik niet had was een patroon. Dat betekende dat ik er een moest kopen, of maken. Dat was niet zo'n moeilijke beslissing; FreeSewing miste absoluut ontwerpen die gericht waren op baby's. Infants have the nicequality that while they are growing, they grow in each direction at the same pace. De enige echte uitdaging is dat hun hoofd in verhouding veel groter is dan dat van oudere exemplaren. Een normaal shirt met opening werkt niet. But there are easy solutions to that, and these are used by allromper making manufacturers._
 >
 > _Ik heb het halsontwerp gecombineerd met een eenvoudig bodyontwerp en een drukknoopsluiting. Easy short orlong sleeves completed the design._
 

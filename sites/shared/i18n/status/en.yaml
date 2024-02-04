@@ -6,7 +6,7 @@ copiedToClipboard: Copied to clipboard
 dataLoaded: Loaded data from the FreeSewing backend
 generatingPdf: Generating your PDF, one moment please
 nailedIt: Nailed it!
-pdfFailed: An unexpected error occured while generating your PDF
+pdfFailed: An unexpected error occurred while generating your PDF
 pdfReady: PDF generated
 processingUpdate: Processing update
 settingsSaved: Settings saved

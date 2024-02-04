@@ -4,7 +4,7 @@ title: "Carlita Mantel: Anleitung zum Nähen"
 
 ### Schritt 1: Zeichne und schneide die fehlenden Futter- und Verkleidungsteile zu
 
-Bei einigen Teilen für Carlton musst du Teile aus den vorhandenen Teilen entwerfen. Im Folgenden findest du eine Liste der Teile, die du entwerfen musst: [. Wie du sie schneidest, erfährst du unter](/docs/designs/carlton/cutting/) .
+Some parts for Carlita require you to draft parts from the existing parts. The following are a list of what parts you need to draft, [see Carlita Cutting](/docs/designs/carlita/cutting/) for details on how to cut them.
 
 #### Entwerfen
 
@@ -54,13 +54,13 @@ Vergiss beim Zuschneiden nicht die Nahtzugabe für diese Teile, wenn du diese Te
 
 #### Notizen des Herstellers
 
-<Warning>
+<Fixme>
 
 Wir haben die Anweisungen für Carlita noch nicht vollständig ausgearbeitet.
 Hier sind einige Notizen von [@AnnekeCaramin](/users/AnnekeCaramin), die
 [made Carlita](http://www.annekecaramin.com/2018/02/this-is-one-of-those-origin-superhero.html).
 
-</Warning>
+</Fixme>
 
 - Rollenlinie auf lapel finden und markieren,
 - Rückzugentwürfe bleiben & von schweren Muslin oder Haar Leinwand geschnitten, wenn Sie absolut kugelsicher sein möchten

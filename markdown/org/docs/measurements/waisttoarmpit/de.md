@@ -4,7 +4,7 @@ title: Taille bis Achselhöhle
 
 Die **Taille bis zur Achselhöhle** ist das Maß von der Taille bis zur Achselhöhle, gemessen an der Seite deines Körpers.
 
-Da _Achselhöhle_ ein wenig zweideutig ist, empfehlen wir, die Höhe des Ärmels zu finden, der so eng wie möglich ist und trotzdem funktioniert. Die Höhe der subkapulären/posterioren Lymphknoten ist in der Regel eine gute Stelle.
+Since _armpit_ is a bit ambiguous, we recommend finding the height that would be about the tightest possible sleeve that could still work. Die Höhe der subkapulären/posterioren Lymphknoten ist in der Regel eine gute Stelle.
 
 Wenn du dir nicht sicher bist, wo sich die Lymphknoten unter deinem Arm befinden, kannst du auch so vorgehen:
 
@@ -12,7 +12,7 @@ Wenn du dir nicht sicher bist, wo sich die Lymphknoten unter deinem Arm befinden
 - Hebe deinen dominanten Arm (den rechten, wenn du Rechtshänder bist, oder den linken, wenn du Linkshänder bist) etwa 30 Grad seitlich von deinem Körper weg.
 - Greife nun mit der anderen Hand zur Seite deines Körpers, lege die Handfläche an die Seite und den Daumen auf die Brust, so dass er nach oben zeigt.
 - Schiebe deine Hand so weit wie möglich nach oben, ohne dass du etwas wegschieben musst.
-- Dein Zeigefinger sitzt jetzt in der Achselhöhle, die ein bisschen zu hoch ist. Aber dein Mittelfinger ist eine gute Stelle, um den Beginn deiner Achselhöhle zu markieren.
+- Your index finger will now sit in the armpit, which is a bit too high. But your middle finger is a good spot to mark as the start of your armpit.
 
 
 <MeasieImage />

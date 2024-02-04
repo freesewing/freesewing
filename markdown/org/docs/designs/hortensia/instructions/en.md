@@ -32,7 +32,7 @@ The placement of the straps are not on the pattern and need to be determined. Yo
 
 If using bag strap webbing instead of fabric made straps do the following,
 
-- Cut the webbing to the the length of the straps with seam allowance.
+- Cut the webbing to the length of the straps with seam allowance.
 - Press under the short edge seam allowance.
 - Attach the webbing the same way as the fabric straps.
 
@@ -83,8 +83,8 @@ It is recommended to leave the gap for turning on the side rather than the top o
 - With _good sides together_ sew the front and back lining panels to the bottom lining panel.
 - With _good sides together_ attach the lining side panels.
 - Press under the top seam allowances.
-- Alernatively you can bind the top edges.
-- Place the lining inside the bag _wrong sides facing_ eachother.
+- Alternatively you can bind the top edges.
+- Place the lining inside the bag _wrong sides facing_ each other.
 - _Slipstitch_ or _Whipstitch_ the lining to the zipper panel.
 
 ### Step 10: Enjoy!

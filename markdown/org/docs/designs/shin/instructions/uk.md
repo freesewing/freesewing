@@ -8,13 +8,13 @@ title: "Плавки з гомілкою: інструкція з пошиття
 
 ## Крок 1: З'єднайте спинки
 
-Покладіть обидві спинки одна на одну виворітними сторонами разом і зшийте їх уздовж центрального шва спинки.
+Put your two backs on top of each other with the good sides together, and sew them together along the center back seam.
 
 ## Крок 2: З'єднайте фронти
 
 ### Зшийте передній шов
 
-Покладіть дві передні частини одна на одну лицьовими сторонами разом і зшийте їх уздовж центрального переднього шва.
+Put two of your fronts on top of each other with the good sides together, and sew them together along the center front seam.
 
 Повторіть це з двома іншими лицьовими сторонами, щоб у вас вийшло два однакових набори.
 
@@ -38,7 +38,7 @@ Keep your swim trunks with the good side inwards (the back at least, the front h
 
 Відзначте середину довжини вашого пояса. Складіть пояс удвічі і позначте середину ширини (припуски на шви не враховуйте).
 
-Трохи лівіше і правіше від цього місця ви можете додати два люверси для протягування шнурка. Це допоможе уникнути незручної ситуації, коли ви підете на велике занурення, а потім раптом виявите, що ваші плавки на щиколотках.
+Трохи лівіше і правіше від цього місця ви можете додати два люверси для протягування шнурка. This will avoid an embarrassing situation when you go for that big dive and now suddenly find your swim trunks on your ankles.
 
 > ### Найкраще додати деяке посилення
 > 
@@ -68,7 +68,7 @@ Keep your swim trunks with the good side inwards (the back at least, the front h
 
 Тепер пройдіться навколо талії плавок, закріпивши пояс на місці.
 
-Then, sew the waistband to the swim trunks, as close to the the elastic as you can, but don't sew into the elastic.
+Then, sew the waistband to the swim trunks, as close to the elastic as you can, but don't sew into the elastic.
 
 It's fine to not sew too close the first time around, and once your elastic is attached and encased, make a second round to sew it a bit more snugly.
 

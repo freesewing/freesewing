@@ -341,4 +341,3 @@ function draftBib({
 }
 ```
 </Example>
-

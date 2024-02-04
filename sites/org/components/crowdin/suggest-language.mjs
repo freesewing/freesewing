@@ -113,7 +113,7 @@ export const SuggestLanguageForm = () => {
           <h5>Are you looking to suggest a language that is not in the list?</h5>
           <p>
             The list of languages above does obviously not include <em>all</em> languages. Instead,
-            it is limimted to the list of langauges that are supported by{' '}
+            it is limited to the list of langauges that are supported by{' '}
             <WebLink href="https://www.deepl.com/" txt="DeepL" />, a machine-learning tool that can
             help translators with suggestions that make for an efficient translation experience.
           </p>
@@ -124,7 +124,7 @@ export const SuggestLanguageForm = () => {
           </p>
           <p>
             If you are committed to translating FreeSewing to a language not in the list above,
-            please <WebLink href="https://discord.freesewing.org/" txt="please readh out to us" />.
+            please <WebLink href="https://discord.freesewing.org/" txt="please reach out to us" />.
           </p>
         </Popout>
       )}

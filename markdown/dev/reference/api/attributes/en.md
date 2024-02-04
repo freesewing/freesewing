@@ -15,7 +15,7 @@ The Attributes constructor takes no arguments.
 ## Methods
 An Attributes object exposes the following methods:
 
-<ReadMore list />
+<ReadMore />
 
 ## Notes
 

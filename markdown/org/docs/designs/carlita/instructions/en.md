@@ -4,7 +4,7 @@ title: "Carlita coat: Sewing Instructions"
 
 ### Step 1: Draft and Cut the missing Lining and Facing Parts
 
-Some parts for Carlton require you to draft parts from the existing parts. The following are a list of what parts you need to draft, [see Carlton Cutting](/docs/designs/carlton/cutting/) for details on how to cut them.
+Some parts for Carlita require you to draft parts from the existing parts. The following are a list of what parts you need to draft, [see Carlita Cutting](/docs/designs/carlita/cutting/) for details on how to cut them.
 
 #### Drafting
 
@@ -43,7 +43,7 @@ Don't forget the seam allowance for these pieces when cutting if you are making 
 - Trace off of **Back** part.
 - Cut along the orange line.
 - Discard lower piece.
-- Remove the seam allowamces (if included) of the upper piece.
+- Remove the seam allowances (if included) of the upper piece.
 - The upper piece is now the **Back shoulder** part.
 
 #### Cutting
@@ -54,13 +54,13 @@ Don't forget the seam allowance for these pieces when cutting if you are making 
 
 #### Maker's notes
 
-<Warning>
+<Fixme>
 
 We don't have fully worked out instructions for Carlita yet.
 Below are some notes from [@AnnekeCaramin](/users/AnnekeCaramin) who
 [made Carlita](http://www.annekecaramin.com/2018/02/this-is-one-of-those-origin-superhero.html).
 
-</Warning>
+</Fixme>
 
 - Find and mark roll line on lapel,
 - Draft back stay & cut from heavy muslin or hair canvas if you want to be absolutely bulletproof

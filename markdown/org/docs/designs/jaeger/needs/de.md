@@ -17,10 +17,10 @@ Um Jaeger zu erstellen, benötigst du Folgendes:
 
 <Note>
 
-###### Woher bekommst du das ganze Zeug
+###### Where to get all this stuff
 
-Jaeger zu bauen ist ein spaßiges und aufregendes Projekt, aber es kann schwierig sein, alle benötigten Teile
-und Teile zu bekommen.
+Making Jaeger is a fun and rewarding project, but getting all the required bits
+and pieces can be challenging.
 
 Das liegt daran, dass diese Art von Projekt etwas ehrgeiziger ist als das
 typische Heimnähprojekt, und deshalb ist es unwahrscheinlich, dass dein lokaler Kurzwarenladen

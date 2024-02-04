@@ -43,13 +43,7 @@ export const SubscribeToNewsletter = ({ hideWhenSubscribed = false }) => {
 
   if (account.newsletter && hideWhenSubscribed) return <p>note</p> //null
 
-  if (account.username)
-    return (
-      <div>
-        <p>{t('newsletter:subscribePitch')}</p>
-        <NewsletterSettings bare />
-      </div>
-    )
+  if (account.username) return <NewsletterSettings bare />
 
   if (sent)
     return (

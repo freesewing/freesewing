@@ -2,7 +2,7 @@
 title: "Calzoncillos Ursula: Instrucciones de corte"
 ---
 
-La uma suele constar de una parte delantera, una trasera y un fuelle forrado. En ese constallation, esta es la lista de corte:
+La uma suele constar de una parte delantera, una trasera y un fuelle forrado. In that constellation, this is the cut list:
 
 - **Tela principal**
   - Cortar **1 frente**

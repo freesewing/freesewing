@@ -2,7 +2,7 @@
 title: "Hugo hoodie: Sewing Instructions"
 ---
 
-<Note>
+<Fixme>
 
 ###### Documentation under construction
 
@@ -11,7 +11,7 @@ Scroll down, it's embedded in this page.
 
 Now the bad news: The written instructions for Hugo are not complete yet.
 
-</Note>
+</Fixme>
 
 ## Video
 
@@ -113,5 +113,5 @@ This 6-episode series shows you how to make your hoodie start to finish:
 - Serge (or zig-zag stitch) the ribbing to the cuff, stretching gently until the ribbing and cuff are the same length.  Remove pins before they enter the serger.
 - Trim the bottom edge of the pocket if it extends past the waistband edge.
 - Ensure the ribbing is gathered as uniformly as possible around the waistband.
-- Serge or zig-zag the waistband, again gently stretching untill the ribbing and waistband are the same length.  Stitch with the hoodie on top so you can see it gets caught in the seam.
+- Serge or zig-zag the waistband, again gently stretching until the ribbing and waistband are the same length.  Stitch with the hoodie on top so you can see it gets caught in the seam.
 - Topstitch the lower pocket edges to the body of the shirt to anchor the bottom of the pocket.

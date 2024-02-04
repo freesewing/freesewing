@@ -45,4 +45,4 @@ for information about custom Attributes that can be used with Points.
 
 A Point object exposes the following methods:
 
-<ReadMore list />
+<ReadMore />

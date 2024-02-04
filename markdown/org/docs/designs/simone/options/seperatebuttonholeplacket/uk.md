@@ -2,9 +2,9 @@
 title: Окрема планка для петель
 ---
 
-![Seperate buttonhole placket](seperatebuttonholeplacket.svg)
+![Separate buttonhole placket](seperatebuttonholeplacket.svg)
 
-Незалежно від того, чи хочете ви, щоб планка петлі була окремою частиною викрійки, чи ні.
+Незалежно від того, чи хочете ви, щоб планка петлі була окремою деталлю викрійки, чи ні.
 
 ## Вплив цієї опції на шаблон
 

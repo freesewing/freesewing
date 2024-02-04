@@ -95,6 +95,21 @@ yarn kickstart
 
 Now you're ready to [start the development environment](/tutorials/getting-started-linux/dev-start).
 
+<Note>
+
+There is another `yarn` command that comes with some Linux distributions,
+installed as part of the `cmdtest` package and used for command line
+scenario testing.
+If you get an `ERROR: There are no scenarios; must have at least one.`
+message when trying to run the `yarn` command, it may be because the wrong
+`yarn` is being used.
+
+Possible workarounds for this include uninstalling the `cmdtest` package
+or making sure that npm `yarn` is installed and comes first in your `PATH`
+environment variable.
+
+</Note>
+
 ## Creating a new design
 
 If you would like to create a new design, run the following command:

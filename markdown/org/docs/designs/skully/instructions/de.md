@@ -89,12 +89,12 @@ Turn it right sides out.
 
 ## Schritt 5: Haare
 
-Jetzt ist es an der Zeit, dem Skully Haare hinzuzufügen. Achte beim Einsetzen der Stickwatte darauf, dass du auf der Innenseite Knoten anbringst, sonst kannst du Skully später ganz leicht die Haare ausreißen.
+Now is the time to add hair to Skully. Achte beim Einsetzen der Stickwatte darauf, dass du auf der Innenseite Knoten anbringst, sonst kannst du Skully später ganz leicht die Haare ausreißen.
 
 ## Schritt 6: Füllung
 
 - Fill the plush toy with stuffing through the opening you left, making sure to fill all the parts well. Die Bereiche an der Vorderseite sind am schwersten zu erreichen.
-- _Slipsticth_ oder _whipstitch_ die Öffnung geschlossen.
+- _Slipstitch_ or _whipstitch_ the opening closed.
 
 ## Schritt 7: Tweaks
 

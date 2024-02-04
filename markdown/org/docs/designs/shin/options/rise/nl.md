@@ -2,7 +2,7 @@
 title: "Hoogte"
 ---
 
-Deze optie bepaalt de algemene hoogte van de taille.
+This option controls the overall height of the waist.
 
 > Hoe hoger de hoogte, hoe hoger je taille.
 

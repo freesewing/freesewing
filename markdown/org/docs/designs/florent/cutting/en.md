@@ -2,7 +2,7 @@
 title: "Florent flat cap: Cutting Instructions"
 ---
 
-To make Floren, cut out the following parts:
+To make Florent, cut out the following parts:
 
 - **Main fabric**
   - Cut **1 top** on the fold but don't include the center seam allowance, or **2 top** with the center seam allowance.

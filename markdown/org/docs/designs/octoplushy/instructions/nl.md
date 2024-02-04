@@ -69,13 +69,13 @@ Voordat je de wenkbrauwen doormidden naait, kun je de wenkbrauwen opvullen om ee
 
 - Met _goede kanten tegen elkaar_ match je de beendelen met de lichaamsdelen.
 - Naai elk been vanaf inkeping B/D naar beneden en terug naar inkeping B/D.
-- Als het beengedeelte iets korter is dan het been op het hoofdgedeelte, moet je het iets minder zwaar maken terwijl je het op elkaar afstemt. Er zijn inkepingen aangebracht om dit gemakkelijker te maken.
+- If the leg part is slightly shorter than the leg on the head parts you will have to ease it in while matching it up. Er zijn inkepingen aangebracht om dit gemakkelijker te maken.
 
 <Tip>
 
 Het is het makkelijkst om een been bijna tot de volgende B/D inkeping te naaien, te stoppen met naaien, het volgende been te spelden en door te gaan met naaien in plaats van te proberen alle benen in één keer te spelden en te naaien. 
 
-Wie meer zelfvertrouwen heeft, kan dit doen met de naald naar beneden op de machine, maar als je minder zelfvertrouwen hebt, kun je de naald van de machine halen, spelden en dan opnieuw beginnen met naaien, een beetje over het oorspronkelijke stiksel heen om het vast te zetten.
+Those who are more confident can do this with the needle down on their machine but if you are less confident you may wish to remove from the machine, pin and then start sewing again a little bit over your original stitching to secure it.
   
 </Tip>
 

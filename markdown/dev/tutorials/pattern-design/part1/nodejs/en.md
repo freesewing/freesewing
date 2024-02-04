@@ -9,7 +9,7 @@ precise. You can switch this website theme from light to dark mode, and
 that would not work without JavaScript.
 
 As a **user** of FreeSewing, this is all you need. To develop with FreeSewing
-you are going to need to be able to run JavaScript *outside* the browswer using
+you are going to need to be able to run JavaScript *outside* the browser using
 a JavaScript *runtime*. Which just means a thing that can *run* JavaScript.
 
 We are going to be using [NodeJS](https://nodejs.org/) in this tutorial. It is

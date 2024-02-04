@@ -10,7 +10,7 @@ The construction is easy when you make it without pockets. And with them, it's s
 that hard for a practiced sewist. 
 
 Keep in mind that `waralee` is basically two large rectangles, and you can easily make
-them by transfering the pattern onto fabric by using the dimensions, and not 
+them by transferring the pattern onto fabric by using the dimensions, and not 
 printing out all the pages. Turn off the `expand` option in the core settings and 
 you'll get a page with all the dimensions on it to mark your fabric. And a handy
 template for the crotch cut-out is provided too.

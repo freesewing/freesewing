@@ -834,6 +834,21 @@
       "lining"
     ]
   },
+  "tristan": {
+    "code": "Wouter van Wageningen",
+    "description": "A FreeSewing pattern for a fitted top with prince(ss) seams",
+    "design": "Natalia Sayang",
+    "difficulty": 3,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "tops"
+    ],
+    "techniques": [
+      "curvedSeam",
+      "precision"
+    ]
+  },
   "uma": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern for a basic, highly-customizable underwear pattern",

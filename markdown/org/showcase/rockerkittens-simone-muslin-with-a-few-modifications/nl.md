@@ -1,14 +1,14 @@
 ---
-title: RockerKitten's Simone muslin with a few modifications
-caption: RockerKitten sewed this muslin of the Simone shirt
+title: RockerKitten's Simone mousseline met een paar aanpassingen
+caption: RockerKitten naaide deze mousseline van het Simone shirt
 date: 20240106
-intro: RockerKitten sewed this muslin of the Simone shirt with a few mods.
+intro: RockerKitten naaide deze mousseline van het Simone shirt met een paar aanpassingen.
 designs:
   - simone
 maker: Natalia
 ---
 
-RockerKitten sewed this muslin of the Simone shirt with a few mods.
+RockerKitten naaide deze mousseline van het Simone shirt met een paar aanpassingen.
 
 ![Another view](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-rockerkittens-simone-muslin-with-a-few-modifications-1/public "Another view")
 
@@ -16,4 +16,4 @@ RockerKitten sewed this muslin of the Simone shirt with a few mods.
 
 ![Details](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-rockerkittens-simone-muslin-with-a-few-modifications-3/public "Details")
 
-This was made by RockerKitten, [@rockerkitten on Instagram](https://www.instagram.com/rockerkitten/), and has been shared here with permission.
+Deze is gemaakt door RockerKitten, [@rockerkitten op Instagram](https://www.instagram.com/rockerkitten/), en is hier met toestemming gedeeld.

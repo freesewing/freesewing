@@ -106,7 +106,7 @@ With about 6cm left to go before we complete our circle, it's time to sew the en
 
 ![Mark binding ends](step03f.png)
 
-Take one of the edges, and stretch it along the 3cm seperating it from the start point as you would while sewing.
+Take one of the edges, and stretch it along the 3cm separating it from the start point as you would while sewing.
 
 Mark the binding where it reaches the start point. Do the same for the other end.
 
@@ -116,7 +116,7 @@ Mark the binding where it reaches the start point. Do the same for the other end
 
 Fold your A-shirt in whatever way makes it easier for you to place both binding ends with good sides together, aligning the marks. Sew them together on the mark.
 
-> 6 cm is not much, but should be enough to get both edges comfortably under your sewing machine to sew them togther.
+> 6 cm is not much, but should be enough to get both edges comfortably under your sewing machine to sew them together.
 
 ### Finish last 6cm of binding
 

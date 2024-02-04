@@ -42,6 +42,10 @@
     "hemWidth": {
       "t": "Hem width",
       "d": "Anchura del dobladillo"
+    },
+    "panels": {
+      "t": "Panels",
+      "d": "Number of panels"
     }
   }
 }

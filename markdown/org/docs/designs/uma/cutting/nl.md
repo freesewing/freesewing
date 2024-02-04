@@ -2,7 +2,7 @@
 title: "Ursula onderbroek: Knip instructies"
 ---
 
-Uma bestaat meestal uit een voorkant, een achterkant en een gevoerd kruisje. In die constellatie is dit de cutlist:
+Uma bestaat meestal uit een voorkant, een achterkant en een gevoerd kruisje. In that constellation, this is the cut list:
 
 - **Buitenstof**
   - Knip **1 voorpand**

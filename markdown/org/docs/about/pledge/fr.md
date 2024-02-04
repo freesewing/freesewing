@@ -20,7 +20,8 @@ La promesse est faite et appliquée par le responsable de FreeSewing (joost). Vo
 | `` `10.736,82` `` | 2020                                     |
 | `` `10.070,77` `` | 2021                                     |
 | `` `29.489,40` `` | 2022                                     |
-|      `€38.814,94` | **Euro donné à [MSF](https://msf.org/)** |
+|      `€10.222,07` | 2023                                     |
+|      `€49.030,01` | **Euro donné à [MSF](https://msf.org/)** |
 
 <Tip>
 

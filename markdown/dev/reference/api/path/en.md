@@ -47,4 +47,4 @@ for information about custom Attributes that can be used with Paths.
 
 A Path object exposes the following methods:
 
-<ReadMore list />
+<ReadMore />

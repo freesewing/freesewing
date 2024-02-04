@@ -2,7 +2,7 @@
 title: "Hugo hoodie: Naai-instructies"
 ---
 
-<Note>
+<Fixme>
 
 ###### Documentatie onder constructie
 
@@ -11,7 +11,7 @@ Scroll wat naar beneden, het staat op deze pagina.
 
 Nu het slechte nieuws: de geschreven instructies voor Hugo zijn nog niet compleet.
 
-</Note>
+</Fixme>
 
 ## Video
 
@@ -113,5 +113,5 @@ Deze zesdelige reeks toont je van begin tot eind hoe je de hoodie in elkaar zet:
 - Lock (of zigzag) de boordstof aan de mouw. Rek de boordstof zachtjes uit tot de manchet en mouwopening even lang zijn.  Verwijder spelden voor ze in de overlock terechtkomen.
 - Knip de onderrand van de zak bij als die langer is dan de onderrand van de trui.
 - Let op dat de tailleband gelijkmatig verdeeld is over de onderrand van de trui.
-- Lock of zigzag de tailleband, en rek deze ook zachtjes uit zodat de boord en trui even lang zijn.  Stik met de hoodie bovenaan zodat je kan zien of alle lagen mee in de naad zitten.
+- Serge or zig-zag the waistband, again gently stretching until the ribbing and waistband are the same length.  Stik met de hoodie bovenaan zodat je kan zien of alle lagen mee in de naad zitten.
 - Stik de onderste randen van de zak aan het voorpand om ze definitief te bevestigen.

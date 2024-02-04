@@ -2,13 +2,13 @@
 title: "Єгерська куртка: Інструкція з пошиття"
 ---
 
-<Note>
+<Fixme>
 
 ###### Документація по Jaeger знаходиться на стадії розробки
 
 Ця документація ще не закінчена.
 
-</Note>
+</Fixme>
 
 ## Пошив
 
@@ -88,7 +88,7 @@ With the fusible in place, thread a needle and baste around the chest pocket to 
 
 #### Розріжте отвір нагрудної кишені, поверніть і притисніть
 
-![Натисніть на нагрудну кишеню](pressChestPocket.svg) Тепер розріжте ваш шов посередині обох швів. Не обрізайте до краю, а створіть там трикутну форму.
+![Натисніть на нагрудну кишеню](pressChestPocket.svg) Тепер розріжте ваш шов посередині обох швів. Don't cut to the edge, but create a triangular shape there.
 
 Переверніть кишенькову сумку і пришийте до вивороту, протягнувши обидві частини через отвір, який ви щойно створили.
 
@@ -108,7 +108,7 @@ On the backside, fold the pocket bag double and sew it to the pocket welt below 
 
 Нарешті, закрийте сумку-кишеню, зшивши бокові сторони. Зробіть це, поклавши лицьовою стороною донизу, а виворітною - догори. Потім складіть з обох боків і зшийте сумку-кишеню. Під час зшивання цих боковин не забудьте захопити трикутні маленькі шматочки отвору. Це зміцнить отвір кишені.
 
-Зшийте нагрудну кишеню, поки ми конструюємо піджак.
+Baste the chest pocket closed while we construct the jacket.
 
 ### Підготуйте фронти
 
@@ -163,11 +163,11 @@ Make sure to make the stitches a bit smaller towards the lapel tip, to make sure
 
 ![Закрийте боки](closeSides.svg)
 
-Покладіть лицьову сторону лицьовим боком догори, а виворітну сторону - лицьовим боком донизу.  
-Вирівняйте лицьовий і боковий шви, приколіть їх, якщо хочете, і зшийте разом.
+Place your front with the good side up, and your side on it with the good side down.  
+Align the front/side seams, pin them in place if you feel like it, and sew them together.
 
-Покладіть його вниз лицьовою стороною догори, а зверху покладіть спинку лицьовою стороною донизу.  
-Вирівняйте шви спинки і боків, за бажанням приколіть їх і зшийте разом.
+Place this down with the good side up, and place your back on top with the good side down.  
+Align the back/side seams, pin them in place if you feel like it, and sew them together.
 
 > Переконайтеся, що полотно не застрягло у шві.
 
@@ -181,7 +181,7 @@ Make sure to make the stitches a bit smaller towards the lapel tip, to make sure
 
 ![Закрийте задній шов](closeBack.svg)
 
-Складіть дві половинки жакета лицьовими боками разом і закрийте задній шов.
+Align your two half-jackets with the good sides together, and close the back seam.
 
 <Note>
 
@@ -216,23 +216,23 @@ Make sure to make the stitches a bit smaller towards the lapel tip, to make sure
 </Note>
 
 ### Зробіть комір
-Для того, щоб виглядати по-справжньому круто, комір повинен бути симетричним з обох боків. Різниця в 5 мм вже помітна на нашийнику, тому чим точніше ви зробите ці кроки, тим краще.
+In order to look real crisp, the collar should be symmetrical on both sides. Різниця в 5 мм вже помітна на нашийнику, тому чим точніше ви зробите ці кроки, тим краще.
 
 ### Додайте маркування до обох нашийників
 Накладіть обидва коміри один на одного, зшийте кути разом і обріжте намітку. Потім за допомогою розмічального олівця або крейди позначте краї нашийника. Виміряйте 2 рази, щоб переконатися, що решта комірів і розташування кутів на 100% збігаються на обох кутах ![Розмітьте краї коміра](collarMarkings.svg)
 
 
 #### Додайте прокладку або полотно до зовнішньої стійки коміра та під комір
-Або використовуйте легкоплавкий інтерфейс, або, якщо ви хочете бути жорстким, використовуйте полотно з кінського волосу. Пришийте його до зовнішньої підставки для колориту, використовуючи ту саму техніку, що й при додаванні полотна до лацкана. ![Додайте полотно до колориту](collarWithCanvas.svg)
+Either use a fusible interfacing, or, if you want to be hardcore use a horsehair canvas. Stitch it to the outside collar stand using the same technique as when adding canvas to the lapel. ![Add canvas to the collar](collarWithCanvas.svg)
 
 #### Пришийте зовнішній комір-стійку до нижнього коміра та додайте до куртки
-Переконайтеся, що зовнішня стійка коміра та підкомір суміщені та зшиті разом Пришийте зовнішню стійку коміра+підкомір до вирізу горловини куртки Зробіть невеликі надрізи в тканині навколо вирізу горловини для більшої зручності Припуски на шви в кутах обріжте по діагоналі для кращого прилягання.
+Make sure the outside collarstand and under collar are aligned and sew together Sew the outside collarstand+undercollar to the neckline of the jacket Give small cuts in the fabric around the neckline to give it more ease Cut the seam allowance in the corners diagonally for a better fit
 
 ![зробіть невеликі розрізи в СА навколо коміра](collarCuts.svg)
 
 
 ### Рукава
-Пришийте верхній рукав до нижнього до розрізу
+Sew the uppersleeve to the undersleeve until the split
 
 #### Створіть розріз на вході втулки
 
@@ -245,13 +245,13 @@ Make sure to make the stitches a bit smaller towards the lapel tip, to make sure
 Будь ласка, дивіться зображення на передніх кишенях для деталей
 </note>
 
-Визначте місце розташування кишені на лівій внутрішній підкладці за допомогою наметування Додайте трохи флізеліну навколо цієї ділянки Намалюйте кишеню на флізеліні. Додайте шви на верхній і нижній стороні кишені Зшийте шви по лінії з обох боків кишені. Використовуйте шви так, щоб вони знаходилися точно один над одним. Обріжте вхід в кишеню приблизно на 1-2 см від кінця. Розріжте останню частину по діагоналі, щоб вийшов зріз риб'ячої кістки Виверніть шви навиворіт, прострочіть і притисніть Виверніть трикутники навиворіт, прострочіть і притисніть Прошийте навколо кишені, щоб все було на своїх місцях Візьміть сумку-кишеню, пришийте її до нижнього шва, а іншу частину до верхнього шва (див.: нагрудна кишеня)
+Locate the position of the pocket on the left inner lining with basting Add some fusible interfacing around the area Draw the pocket on the interfacing. Додайте шви на верхній і нижній стороні кишені Зшийте шви по лінії з обох боків кишені. Make use the welts end exactly on top of each other. Обріжте вхід в кишеню приблизно на 1-2 см від кінця. Cut the last part diagonally so you get a fish bone cut Turn the welts inside out, baste and press Turn the triangles inside out, baste and press Sew around the pocket to put everything in place Take the pocketbag, sew it to the lower welt and the other part to the upper welt (See: chest pocket)
 
 ### Підкладка
-Зшийте підкладку ззаду до розрізу Зшийте фігурні шви в передніх частинах Складіть всю підкладку разом (перед, боковини, спинку) Складіть підкладку з лицьової сторони з лицьовою стороною. Залиште знизу відкритими приблизно 5 см Закрийте плечі Додайте внутрішню стійку коміра до верхнього коміра і додайте до підкладки жакета Зробіть невеликі розрізи у вирізі горловини і по кутах Додайте верхні рукави до нижніх Додайте рукави до підкладки жакета.
+Sew the lining back seam until the split Sew the figure seams in the front parts Add the whole lining together (front, side, back) Add the from lining to the front facing. Leave about 5cm open from the bottom Close the shoulders Add the inside collar stand to the uppercollar and add to the lining jacket Make small cuts in the neckline and the corners Add upper to lower sleeves Add sleeves to lining jacket
 
 ### Закривай.
-Але куртка + підкладка накладаються одна на одну гарними сторонами. Прошийте навколо коміра і продовжуйте аж до лицьового боку Виверніть куртку на виворітний бік Складіть рукави на місце (переконайтеся, що вони не вивернуті!!) Додайте підкладку рукава до розрізу рукава Переконайтеся, що коміри прямо накладені один на одного (вирівняні), і додайте припуски на шви вручну. Додайте в декількох місцях передню частину SA до підкладки SA вручну з внутрішньої сторони піджака Створіть спинку і додайте підкладку до основної тканини вручну Додайте петлі та ґудзики
+Але куртка + підкладка накладаються одна на одну гарними сторонами. Прошийте навколо коміра і продовжуйте аж до лицьового боку Виверніть куртку на виворітний бік Складіть рукави на місце (переконайтеся, що вони не вивернуті!!) Add the sleeves lining to the sleeves split Make sure the collars are straight on top of each other (they align) and add the seam allowances to each other by hand. Додайте в декількох місцях передню частину SA до підкладки SA вручну з внутрішньої сторони піджака Створіть спинку і додайте підкладку до основної тканини вручну Додайте петлі та ґудзики
 
 
 

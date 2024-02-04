@@ -125,6 +125,12 @@ export const base = {
       (measurements.chest * (1 + options.chestEase)) / 4,
       points.cbArmhole.y
     )
+
+    if (points.shoulder.x >= points.armhole.x)
+      store.flag.warn({
+        msg: 'brian:largeShoulderWidth',
+      })
+
     points.waist = new Point(points.armhole.x, points.cbWaist.y)
     points.hips = new Point(points.armhole.x, points.cbHips.y)
     points.hem = new Point(points.armhole.x, points.cbHem.y)

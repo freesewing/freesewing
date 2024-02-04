@@ -43,6 +43,9 @@ These are the types of options supported by the FreeSewing core library:
 6. [**millimeter** options][mm] are supported but not recommended (see warning below)
 7. [**percentage** options][pct] are for percentages (and can optionally be [**snapped percentage** options][snapped])
 
+These options can be [extended][extend] with additional, optional
+information to help with their use outside of the core.
+
 <Tip>
 
 In parametric design, percentage options are by far the most common.
@@ -69,3 +72,4 @@ percentage options][snapped] instead.
 [pct]: /reference/api/part/config/options/pct
 [snapped]: /reference/api/part/config/options/pct/snap
 [mm]: /reference/api/part/config/options/mm
+[extend]: /reference/api/part/config/options/extend

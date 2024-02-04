@@ -72,7 +72,7 @@ Sewing the next seam is challenging. You will first be sewing a normal seam betw
 the dashed line (14) on the upperMouth (7) part. Rijgen of veel spelden zijn je vriend. And make sure you first visualize how this will get together before doing the final sewing.
 </Note>
 
-Seam 14: Sew the top of the lowerJaw (11) to the bottom of the upperMouth (7). This seam starts from the line marked ‘not sewn’ on the upperMouth. First you sew across the piece rather than sewing at the edge – see the dotted line on the pattern piece. Then the remaining part of the upperMouth is sewn onto the down-curved part of the lowerJaw (11).
+Seam 14: Sew the top of the lowerJaw (11) to the bottom of the upperMouth (7). This seam starts from the line marked ‘not sewn’ on the upperMouth. First you sew across the piece rather than sewing at the edge – see the dotted line on the pattern piece. Dan wordt het resterende deel van de bovenmond aan het naar beneden gebogen deel van de onderkaak genaaid (11).
 
 Seam 15: Sew the lower edge of the lowerJaw (11) to the jawfloor (8) to form the base of the whole skull.
 
@@ -90,12 +90,12 @@ Turn it right sides out.
 
 ## Stap 5: Haar
 
-Nu is het tijd om haar toe te voegen aan skully. Als je het borduurgaren erin doet, zorg er dan voor dat je knopen aan de binnenkant maakt, anders is het heel gemakkelijk om Skully's haar er later uit te trekken.
+Now is the time to add hair to Skully. Als je het borduurgaren erin doet, zorg er dan voor dat je knopen aan de binnenkant maakt, anders is het heel gemakkelijk om Skully's haar er later uit te trekken.
 
 ## Stap 6: Vullen
 
 - Fill the plush toy with stuffing through the opening you left, making sure to fill all the parts well. De gebieden aan de voorkant zijn het moeilijkst te bereiken.
-- _Slipsticth_ of _zweepsteek_ de opening dicht.
+- _Slipstitch_ or _whipstitch_ the opening closed.
 
 ## Stap 7: Tweaks
 
