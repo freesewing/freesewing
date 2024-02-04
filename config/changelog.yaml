@@ -1,9 +1,9 @@
 Unreleased:
 
   Added:
-    limina:
+    lumina:
       - Initial release
-    limira:
+    lumira:
       - Initial release
     plugin-annotations:
       - The `title` macro now takes a `notes` and `classes.notes` as its config, allowing you to add notes
