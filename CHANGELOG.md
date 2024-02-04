@@ -3,6 +3,47 @@
 
 ## Unreleased
 
+### carlton
+
+#### Fixed
+
+ - Fixed a stray seam allowance path on the collar
+
+### charlie
+
+#### Fixed
+
+ - The back pocket welt (4) and front pocket facing (8) incorrectly indicated to cut 2 instead of 4 in the cutlist. Fixes
+
+### sandy
+
+#### Added
+
+ - Added a new *panels* option
+
+### plugin-annotations
+
+#### Added
+
+ - The `title` macro now takes a `notes` and `classes.notes` as its config, allowing you to add notes
+ - The `classes.cutlist` config is removed from the title plugin, cutlist info is now included as notes
+
+#### Removed
+
+ - The `classes.cutlist` config is removed from the title plugin, cutlist info is now included as notes
+
+### plugin-i18n
+
+#### Added
+
+ - This plugin now supports translation of nested arrays of strings, giving you more flexibility to concatenate translated parts of strings
+
+### react-components
+
+#### Added
+
+ - This Pattern component now supports translation of nested arrays of strings, giving you more flexibility to concatenate translated parts of strings
+
 
 ## 3.1.0 (2023-12-26)
 
@@ -78,6 +119,12 @@
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
 
+### otis
+
+#### Added
+
+ - Initial release
+
 ### paco
 
 #### Changed
@@ -151,12 +198,6 @@
 #### Changed
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
-
-### otis
-
-#### Added
-
- - Initial release
 
 ### plugin-annotations
 
