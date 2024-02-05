@@ -251,7 +251,7 @@ Locate the position of the pocket on the left inner lining with basting Add some
 Sew the lining back seam until the split Sew the figure seams in the front parts Add the whole lining together (front, side, back) Add the from lining to the front facing. Leave about 5cm open from the bottom Close the shoulders Add the inside collar stand to the uppercollar and add to the lining jacket Make small cuts in the neckline and the corners Add upper to lower sleeves Add sleeves to lining jacket
 
 ### Sluit het
-Maar de jas + voeringjassen op elkaar met de goede kanten. Naai rond de kraag en ga door tot aan het voorpand Keer het jasje met de goede kant naar buiten Vouw de mouwen vast (zorg ervoor dat ze niet gedraaid zijn!!). Add the sleeves lining to the sleeves split Make sure the collars are straight on top of each other (they align) and add the seam allowances to each other by hand. Voeg op een paar plaatsen voor SA aan voering SA met de hand toe vanaf de binnenkant van het jasje Maak de split aan de achterkant en voeg de voering handmatig toe aan de hoofdstof Voeg knoopsgaten en knopen toe.
+Maar de jas + voeringjassen op elkaar met de goede kanten. Naai rond de kraag en ga door tot aan het voorpand Keer het jasje met de goede kant naar buiten Vouw de mouwen vast (zorg ervoor dat ze niet gedraaid zijn!!). Voeg op een paar plaatsen voor SA aan voering SA met de hand toe vanaf de binnenkant van het jasje Maak de split aan de achterkant en voeg de voering handmatig toe aan de hoofdstof Voeg knoopsgaten en knopen toe. Voeg op een paar plaatsen voor SA aan voering SA met de hand toe vanaf de binnenkant van het jasje Maak de split aan de achterkant en voeg de voering handmatig toe aan de hoofdstof Voeg knoopsgaten en knopen toe.
 
 
 
