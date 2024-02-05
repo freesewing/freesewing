@@ -26,6 +26,6 @@ Het wordt aangeraden om het patroondeel nett te tekenen en het patroon te gebrui
 </Note>
 <Warning>
 
-Het is aan te raden om eerst een nep met je kroon patroon te maken voordat je je stof knipt. Dit is om de lengte en de draagwijdte van het kroon te testen. Knip de naadwaarde aan de onderkant, voordat je het probeert. Als het te klein is, wie het patroon moet herschikken met meer gemak, denk er dan aan dat het gemak over elke kroon wordt gesplitst. Als de piek te hoog is, wil je misschien het patroon herschikken en de kroon lengte verkleinen. Once re-drafted make another mock-up to check whether you are satisfied with the changes or not. Herhaal opnieuw als je niet tevreden bent.
+Het is aan te raden om eerst een nep met je kroon patroon te maken voordat je je stof knipt. Dit is om de lengte en de draagwijdte van het kroon te testen. Knip de naadwaarde aan de onderkant, voordat je het probeert. Als het te klein is, wie het patroon moet herschikken met meer gemak, denk er dan aan dat het gemak over elke kroon wordt gesplitst. Als de piek te hoog is, wil je misschien het patroon herschikken en de kroon lengte verkleinen. Herhaal opnieuw als je niet tevreden bent. Herhaal opnieuw als je niet tevreden bent.
 
 </Warning>
