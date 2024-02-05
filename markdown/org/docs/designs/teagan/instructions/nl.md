@@ -77,7 +77,7 @@ Nu is het tijd om de uiteinden van onze gebreide band aan elkaar te naaien.
 
 - Nu de uiteinden van je band aan elkaar zitten, is het tijd om de laatste 6 cm af te werken, door de band uit te rekken en vast te naaien zoals je voor de rest hebt gedaan.
 
-Hoera! Je bent klaar met het lastigste deel! Optionally, you can secure the raw edges by stitching them down to the T-shirt fabric, just inside the knit band with a zig-zag or coverlock stitch. Dit is niet verplicht, maar het is een detail dat je op veel confectie T-shirts ziet en het kan je nekband helpen plat te liggen.
+Hoera! Je bent klaar met het lastigste deel! Dit is niet verplicht, maar het is een detail dat je op veel confectie T-shirts ziet en het kan je nekband helpen plat te liggen. Dit is niet verplicht, maar het is een detail dat je op veel confectie T-shirts ziet en het kan je nekband helpen plat te liggen.
 
 ![Naai gebreide band vast](step03i.svg)
 
