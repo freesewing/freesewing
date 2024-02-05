@@ -1,11 +1,7 @@
 ---
-title: "Довжина верхньої виточки"
+title: Довжина верхньої виточки
 ---
 
 ***
 
-Довжина верхньої виточки **** регулює довжину верхньої виточки, 100% - це довжина до точки обхвату грудей.
-
-
-
-
+The **Upper Dart Length** controls the length of the upper dart, 100% is all the way to the bust point.
