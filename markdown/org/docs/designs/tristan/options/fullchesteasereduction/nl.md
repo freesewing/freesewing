@@ -1,5 +1,5 @@
 ---
-title: "Vermindering van de volle buste overwijdte"
+title: Vermindering van de volle buste overwijdte
 ---
 
 ***
