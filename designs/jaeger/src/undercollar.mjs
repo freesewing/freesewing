@@ -17,7 +17,6 @@ function jaegerUnderCollar({ sa, snippets, points, macro, store, paths, Path, op
     .move(points.collarCorner)
     ._curve(points.neck, points.collarstandCbBottom)
     .curve_(points.leftNeck, points.leftCollarCorner)
-    .line(points.leftCollarstandTip)
     .line(points.notchLeft)
     .line(points.notchTipRollLeft)
     ._curve(points.collarCbTopCpRollLeft, points.collarCbTopRoll)
@@ -27,7 +26,30 @@ function jaegerUnderCollar({ sa, snippets, points, macro, store, paths, Path, op
     .close()
     .attr('class', 'various')
 
-  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'various sa')
+  if (sa) {
+    paths.partialSa1 = new Path()
+      .move(points.leftCollarCorner)
+      .line(points.notchLeft)
+      .line(points.notchTipRollLeft)
+      .offset(sa)
+      .hide()
+    paths.partialSa2 = new Path()
+      .move(points.notchTipRoll)
+      .line(points.notch)
+      .line(points.collarCorner)
+      .offset(sa)
+      .hide()
+    paths.sa1 = new Path()
+      .move(points.leftCollarCorner)
+      .join(paths.partialSa1)
+      .line(points.notchTipRollLeft)
+      .attr('class', 'various sa')
+    paths.sa2 = new Path()
+      .move(points.notchTipRoll)
+      .join(paths.partialSa2)
+      .line(points.collarCorner)
+      .attr('class', 'various sa')
+  }
 
   /*
    * Annotations
