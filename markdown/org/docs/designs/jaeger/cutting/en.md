@@ -26,9 +26,9 @@ title: "Jaeger jacket: Cutting Instructions"
 - **Canvas**
   - Cut **2 fronts** on bias (part 1) Note: Don't include seam allowance
   - Cut **2 chest pieces** on bias. Look for the indication on the front part. Note: Don't include seam allowance
-  - Cut **1 under-collar-and-stand** parts (part 6). Do not include seam allowance.
+  - Cut **1 undercollar** (part 6). Do not include seam allowance.
 - **Undercollar fabric**
-  - Cut **1 under-collar-and-stand** parts (part 6)
+  - Cut **1 undercollar** (part 6)
 
 <Note>
 

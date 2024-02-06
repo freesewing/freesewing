@@ -247,26 +247,26 @@ In order to look real crisp, the collar should be symmetrical on both sides.
 About 5mm difference is already visible to a collar, so the more precise you do these steps, the better.
 
 
-#### Add markings to both collar and under-collar-and-stand
+#### Add markings to both collar and undercollar
 
-Put the collar and under-collar-and-stand on top of each other
+Put the collar and undercollar on top of each other
 good sides together, and baste the corners together, cutting off
 any excess basting thread.
 
 Then use a marking pencil or some chalk to mark the edges of the
-finished collar on both the collar and under-collar-and-stand fabric..
+finished collar on both the collar and undercollar fabric..
 
 Measure 2 times to make sure the locations of the finished corners
 are 100% identical on both corners and also on both collar and
-under-collar-and-stand pieces.
+undercollar pieces.
 ![Mark the collar Edges](collarMarkings.svg)
 
 
-#### Baste canvas to the under-collar-and-stand
+#### Baste canvas to the undercollar
 
 Use horsehair canvas or, alternately, fusible interfacing.
-Baste the under-collar-and-stand canvas to the wrong side of the
-under-collar-and-stand part, using the same technique as when adding
+Baste the undercollar canvas to the wrong side of the
+undercollar, using the same technique as when adding
 canvas to the lapel.
 ![Add canvas to the collar](collarWithCanvas.svg)
 
@@ -274,10 +274,10 @@ canvas to the lapel.
 - Baste it a bit inwards from the seam line so you can fold it away when sewing these seams later.
 - You don't want your canvas to get caught in the seams.
 
-#### Sew the collar to the under-collar-and-stand
+#### Sew the collar to the undercollar
 
 Now, with good sides together, sew the collar to the
-under-collar-and-stand, carefully following the line markings you
+undercollar, carefully following the line markings you
 made earlier.
 
 - Sew the top and sides of the collar, leaving the bottom open.
@@ -287,23 +287,23 @@ in the seams.
 When finished sewing, clip the seam corners, turn the collar right,
 side out, and press.
 
-#### Sew the collarstand to the collar and under-collar-and-stand
+#### Sew the collarstand to the collar and undercollar
 
-Make sure the collarstand and collar/under-collar-and-stand parts
+Make sure the collarstand and collar/undercollar parts
 are aligned and sew them together.
 
 - Pin the good sides of the collarstand and collar (which
-has already been attached to the under-collar-and-stand)
+has already been attached to the undercollar)
 - Then pin the good sides of the side seams of the collarstand and
-the under-collar-and-stand.
+the undercollar.
 - Carefully sew the side and top seams, leaving the bottom open.
 
-When finished sewing, press the seams of the newly-sewn
-collar-and-stand part.
+When finished sewing, press the seams of the now-completed
+collar part.
 
-#### Sew the collar-and-stand to the jacket
+#### Sew the collar to the jacket
 
-Sew the completed collar-and-stand part to the neckline of the jacket.
+Sew the completed collar part to the neckline of the jacket.
 
 - Clip small cuts into the fabric of the curved seam around the neckline
 to give it more ease.

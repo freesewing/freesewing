@@ -46,7 +46,7 @@ function jaegerUnderCollar({ sa, snippets, points, macro, store, paths, Path, op
   macro('title', {
     at: points.title,
     nr: 6,
-    title: 'Under-collar-and-stand',
+    title: 'undercollar',
     scale: 0.6,
   })
 
