@@ -7,7 +7,7 @@ import { collar } from './collar.mjs'
  * experience, or more tailoring exprience.
  */
 
-function jaegerUnderCollar({ sa, snippets, points, macro, store, paths, Path, options, part }) {
+function jaegerUnderCollar({ sa, snippets, points, macro, store, paths, Path, part }) {
   // Clean up
   for (let i of Object.keys(paths)) delete paths[i]
   for (let i of Object.keys(snippets)) delete snippets[i]
