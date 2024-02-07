@@ -888,10 +888,10 @@
   resolved "https://registry.yarnpkg.com/@braintree/sanitize-url/-/sanitize-url-6.0.4.tgz#923ca57e173c6b232bbbb07347b1be982f03e783"
   integrity sha512-s3jaWicZd0pkP0jf5ysyHUI/RE7MHos6qlToFcGWXVp+ykHOy77OUMrfbgJ9it2C5bow7OIQwYYaHjk9XlBQ2A==
 
-"@bugsnag/browser@^7.22.3":
-  version "7.22.3"
-  resolved "https://registry.yarnpkg.com/@bugsnag/browser/-/browser-7.22.3.tgz#123402db4cbc0e5ee4e7ac03222c0a1de1d48799"
-  integrity sha512-TWQSdsCqzxEVmaKzbtmqoBLWF58yjXi/ScC+6L5VNgSj+62jkIQuw5Evjs+7kLQX8WCnaG6XLiDmUJmPx6ZUrA==
+"@bugsnag/browser@^7.22.4":
+  version "7.22.4"
+  resolved "https://registry.yarnpkg.com/@bugsnag/browser/-/browser-7.22.4.tgz#1e095ac14145bb0bd737a2dcb2823560b8373331"
+  integrity sha512-h2o9RZhAEIgJAUsECd7a00IkLnvQvLT7dUyUYx/s8VLvcq89gKa8E59rlM7f15wtkJ5MPfozhErXDpsdOvF4Rg==
   dependencies:
     "@bugsnag/core" "^7.19.0"
 
@@ -911,12 +911,12 @@
   resolved "https://registry.yarnpkg.com/@bugsnag/cuid/-/cuid-3.0.2.tgz#544f8e6e7e3768c8cb618ca5c5fb1eea6aacbb7e"
   integrity sha512-cIwzC93r3PQ/INeuwtZwkZIG2K8WWN0rRLZQhu+mr48Ay+i6sEki4GYfTsflse7hZ1BeDWrNb/Q9vgY3B31xHQ==
 
-"@bugsnag/js@7.22.3":
-  version "7.22.3"
-  resolved "https://registry.yarnpkg.com/@bugsnag/js/-/js-7.22.3.tgz#a7cb4443e0e8820aada0e15e486ac58d1b9fe257"
-  integrity sha512-SAZEElVlmQgZBPLbTdMAyFD2Pp1mP4t3bv+GmDVGSgBi4W6doKQVk0J/K9f5+JGw8fEh9AJHRlyub3XnlGI6Zw==
+"@bugsnag/js@7.22.4":
+  version "7.22.4"
+  resolved "https://registry.yarnpkg.com/@bugsnag/js/-/js-7.22.4.tgz#c432d10450957799d5932d3621ef824b43a8883f"
+  integrity sha512-GjU3YmCNxVl1QZ64e8D4hKSfhHiymHu4hyYlyKxIdqmnhpHvoFnADcdAHEnWPG82O9j9w+JoDXvL460aiOEgHg==
   dependencies:
-    "@bugsnag/browser" "^7.22.3"
+    "@bugsnag/browser" "^7.22.4"
     "@bugsnag/node" "^7.22.3"
 
 "@bugsnag/node@^7.22.3":
