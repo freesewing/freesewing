@@ -19,35 +19,33 @@ function draftLilyFront({
   absoluteOptions,
   part,
 }) {
-  
- 
   /*
    * Helper method to draw the inseam path
    */
-  const drawInseam = () => 
+  const drawInseam = () =>
     new Path()
-          .move(points.floorIn)
-          .curve(points.floorInCp2, points.kneeInCp1, points.kneeIn)
-          .curve(points.kneeInCp2, points.forkCp1, points.fork)
+      .move(points.floorIn)
+      .curve(points.floorInCp2, points.kneeInCp1, points.kneeIn)
+      .curve(points.kneeInCp2, points.forkCp1, points.fork)
   /*
    * Helper method to draw the outseam path
    */
   const drawOutseam = () => {
     let waistOut = points.styleWaistOutLily || points.waistOut
-      if (points.waistOut.x < points.seatOut.x) {
-        //log.info('waistOut smaller')
-        return new Path()
-          .move(waistOut)
-          .curve(points.seatOut, points.kneeOutCp1, points.kneeOut)
-          .curve(points.kneeOutCp2, points.floorOutCp2, points.floorOut)
-      } else {
-        //log.info('waistOut larger')
-        return new Path()
-          .move(waistOut)
-          ._curve(points.seatOutCp1, points.seatOut)
-          .curve(points.seatOutCp2, points.kneeOutCp1, points.kneeOut)
-          .curve(points.kneeOutCp2, points.floorOutCp2, points.floorOut)
-      }
+    if (points.waistOut.x < points.seatOut.x) {
+      //log.info('waistOut smaller')
+      return new Path()
+        .move(waistOut)
+        .curve(points.seatOut, points.kneeOutCp1, points.kneeOut)
+        .curve(points.kneeOutCp2, points.floorOutCp2, points.floorOut)
+    } else {
+      //log.info('waistOut larger')
+      return new Path()
+        .move(waistOut)
+        ._curve(points.seatOutCp1, points.seatOut)
+        .curve(points.seatOutCp2, points.kneeOutCp1, points.kneeOut)
+        .curve(points.kneeOutCp2, points.floorOutCp2, points.floorOut)
+    }
   }
 
   /*
@@ -166,36 +164,35 @@ function draftLilyFront({
         )
       run++
       delta = deltaMethod()
-      console.log('delta',delta)
+      console.log('delta', delta)
     } while (Math.abs(delta) > 1 && run < 20)
-    console.log('run',run)
+    console.log('run', run)
   }
   const adaptOutseam = () => adaptSeam('out')
   const adaptInseam = () => adaptSeam('in')
-  
+
   console.log('test')
 
   // NOTE: majority of points re-used from titan
 
-
   // shape at the ankle (unlike titan)
   let halfAnkle = store.get('halfAnkle')
   // let halfAnkle = store.get('kneeFront') / 2
-                                                             
+
   points.floorOut = points.floor.shift(180, halfAnkle)
   points.floorIn = points.floorOut.flipX(points.floor)
-  
+
   console.log('ankle')
 
   // Control points between knee and ankle
-  points.floorInCp2 = points.floorIn.shift(90,points.knee.dy(points.floor) / 3)
+  points.floorInCp2 = points.floorIn.shift(90, points.knee.dy(points.floor) / 3)
   points.kneeInCp1 = points.kneeIn.shift(90, -points.knee.dy(points.floor) / 3)
-  points.floorOutCp2 = points.floorOut.shift(90,points.knee.dy(points.floor) / 3)
+  points.floorOutCp2 = points.floorOut.shift(90, points.knee.dy(points.floor) / 3)
   points.kneeOutCp2 = points.kneeOut.shift(90, -points.knee.dy(points.floor) / 3)
-  
+
   // other control points have already been calculated in titan
-    // Control points to shape the legs towards the seat
-    // Balance the waist
+  // Control points to shape the legs towards the seat
+  // Balance the waist
 
   // Draw initial crotch seam
   drawCrotchSeam()
@@ -222,20 +219,20 @@ function draftLilyFront({
 
   // Uncomment this to see the outline prior to fitting the inseam & outseam
   //paths.seam2 = drawPath().attr('class', 'dotted interfacing')
-  
+
   /*
    * With the cross seams matched back and front,
    * all that's left is to match the inseam and outseam
    */
-   
+
   // When both are too short/long, adapt the leg length
   if ((inseamDelta() < 0 && outseamDelta() < 0) || (inseamDelta() > 0 && outseamDelta() > 0))
     adaptInseamAndOutseam()
-  
+
   // Now one is ok, the other will be adapted
   adaptOutseam()
   adaptInseam()
-  
+
   // Changing one will ever so slightly impact the other, so let's run both again to be sure
   adaptOutseam()
   adaptInseam()
@@ -258,34 +255,35 @@ function draftLilyFront({
     points.styleWaistOutLily = points.waistOut.clone()
   }
   let test = points.styleWaistInLily.dist(points.styleWaistOutLily)
-  console.log('front waist length',test)
+  console.log('front waist length', test)
   store.set('frontWaist', points.styleWaistInLily.dist(points.styleWaistOutLily))
 
   // Seamline
   paths.seam = drawPath().attr('class', 'fabric')
-  
+
   // adjust the length (at the bottom)
   let extendBeyondKnee = 1
   if (options.lengthReduction > 0) {
     let requestedLength = store.get('requestedLength')
     // leggings must reach to fork at least, so define a minimum
     let waistToFork = points.waistX.dy(points.fork)
+    let waistToKnee = points.waistX.dy(points.knee) // adapting the seams may have shifted the knee up or down
     if (waistToFork > requestedLength) {
       //log.warning('length reduction capped; cutting off at fork') // log only for back part
-    // add one percent to waistToFork to ensure that path length is nonzero
-      requestedLength = waistToFork*1.01
-    }    
-    
+      // add one percent to waistToFork to ensure that path length is nonzero
+      requestedLength = waistToFork * 1.01
+    }
+
     // work-around to avoid splitting exactly at the knee
     //   (due to a bug, splitting a path at a node is not possible)
-    if (0.999 < requestedLength/measurements.waistToKnee && requestedLength/measurements.waistToKnee < 1.001) {
-      requestedLength = 1.001*measurements.waistToKnee
-    }        
-    points.bottom = points.waistX.shift(270,requestedLength)
+    if (0.999 < requestedLength / waistToKnee && requestedLength / waistToKnee < 1.001) {
+      requestedLength = 1.001 * waistToKnee
+    }
+    points.bottom = points.waistX.shift(270, requestedLength)
     let upperPoint, upperCp
-    if (requestedLength < measurements.waistToKnee) {   
+    if (requestedLength < waistToKnee) {
       extendBeyondKnee = 0
-    
+
       // 'cut' between fork and knee
       if (points.waistOut.x < points.seatOut.x) {
         upperPoint = points.styleWaistOutLily
@@ -294,78 +292,77 @@ function draftLilyFront({
         upperPoint = points.seatOut
         upperCp = points.seatOutCp2
       }
-       points.bottomOut = utils.lineIntersectsCurve(
-          points.bottom.shift(0,999),
-          points.bottom.shift(180,999),
-          points.kneeOut,
-          points.kneeOutCp1,
-          upperCp,
-          upperPoint)
-          
-        points.bottomIn = utils.lineIntersectsCurve(
-          points.bottom.shift(0,999),
-          points.bottom.shift(180,999),
-          points.kneeIn,
-          points.kneeInCp2,
-          points.forkCp1,
-          points.fork)     
-    } else {
-      // 'cut' between knee and 'floor'      
       points.bottomOut = utils.lineIntersectsCurve(
-        points.bottom.shift(0,999),
-        points.bottom.shift(180,999),
+        points.bottom.shift(0, 999),
+        points.bottom.shift(180, 999),
+        points.kneeOut,
+        points.kneeOutCp1,
+        upperCp,
+        upperPoint
+      )
+
+      points.bottomIn = utils.lineIntersectsCurve(
+        points.bottom.shift(0, 999),
+        points.bottom.shift(180, 999),
+        points.kneeIn,
+        points.kneeInCp2,
+        points.forkCp1,
+        points.fork
+      )
+    } else {
+      // 'cut' between knee and 'floor'
+      points.bottomOut = utils.lineIntersectsCurve(
+        points.bottom.shift(0, 999),
+        points.bottom.shift(180, 999),
         points.kneeOut,
         points.kneeOutCp2,
         points.floorOutCp2,
-        points.floorOut)
-        
+        points.floorOut
+      )
+
       points.bottomIn = utils.lineIntersectsCurve(
-        points.bottom.shift(0,999),
-        points.bottom.shift(180,999),
+        points.bottom.shift(0, 999),
+        points.bottom.shift(180, 999),
         points.kneeIn,
         points.kneeInCp1,
         points.floorInCp2,
-        points.floorIn)     
+        points.floorIn
+      )
     }
-    
-    // define the three parts of the path, then combine    
-    paths.bottom = new Path ()
-      .move(points.bottomOut)
-      .line(points.bottomIn)
-      
+
+    // define the three parts of the path, then combine
+    paths.bottom = new Path().move(points.bottomOut).line(points.bottomIn)
+
     let halves = paths.seam.split(points.bottomOut)
     paths.upperOutseam = halves[0]
     let halves2 = halves[1].split(points.bottomIn)
     paths.upperInseam = halves2[1]
-      
-    paths.seam = paths.upperOutseam.join(paths.bottom)
-      .join(paths.upperInseam)    
+
+    paths.seam = paths.upperOutseam.join(paths.bottom).join(paths.upperInseam)
   } else {
     // define the same three parts of the path as when length reduction is enabled, then combine
-    
+
     // first define the points (also used for paperless)
     points.bottom = points.floor
     points.bottomIn = points.floorIn
     points.bottomOut = points.floorOut
-       
-    paths.bottom = new Path ()
-      .move(points.bottomIn)
-      .line(points.bottomOut)
-      
+
+    paths.bottom = new Path().move(points.bottomIn).line(points.bottomOut)
+
     // note: upperInseam contains waist and cross seam as well
     paths.upperInseam = drawInseam()
       .curve(points.crotchSeamCurveCp1, points.crotchSeamCurveCp2, points.crotchSeamCurveStart)
       .line(points.styleWaistIn)
-      .line(points.styleWaistOut)    
+      .line(points.styleWaistOut)
     paths.upperOutseam = drawOutseam()
     paths.bottom.hide()
     paths.upperInseam.hide()
     paths.upperOutseam.hide()
-  }     
+  }
 
   if (complete) {
     points.grainlineTop.y = points.styleWaistInLily.y
-    points.grainlineBottom.y = points.bottom.y    
+    points.grainlineBottom.y = points.bottom.y
     macro('grainline', {
       from: points.grainlineTop,
       to: points.grainlineBottom,
@@ -378,7 +375,7 @@ function draftLilyFront({
       title: 'front',
       at: points.titleAnchor,
     })
-    
+
     //notches
     if (options.fitGuides) {
       points.waistMid = points.waistOut.shiftFractionTowards(points.waistIn, 0.5)
@@ -420,60 +417,60 @@ function draftLilyFront({
         // seat appears to be below crotch
         //log.warning('seat estimated to be below crotch; this is probably not accurate')
         // points.seatIn = utils.lineIntersectsCurve(
-          // points.seatMid,
-          // points.seatInTarget,
-          // points.fork,
-          // points.forkCp2,
-          // points.points.KneeInCp1,
-          // points.kneeIn
-        // )   
-          // TODO: fix this
-          points.seatIn = points.fork.clone()   
+        // points.seatMid,
+        // points.seatInTarget,
+        // points.fork,
+        // points.forkCp2,
+        // points.points.KneeInCp1,
+        // points.kneeIn
+        // )
+        // TODO: fix this
+        points.seatIn = points.fork.clone()
       } else {
         // use the intersection with the curved part instead
         // points.seatIn = utils.lineIntersectsCurve(
-          // points.seatMid,
-          // points.seatInTarget,
-          // points.fork,
-          // points.crotchSeamCurveCp1,
-          // points.crotchSeamCurveCp2,
-          // points.crotchSeamCurveStart
+        // points.seatMid,
+        // points.seatInTarget,
+        // points.fork,
+        // points.crotchSeamCurveCp1,
+        // points.crotchSeamCurveCp2,
+        // points.crotchSeamCurveStart
         // )
-          // TODO: fix this
-          points.seatIn = points.fork.clone() 
+        // TODO: fix this
+        points.seatIn = points.fork.clone()
       }
-        if (points.waistOut.x < points.seatOut.x) {
-          //log.info('waist to the left of seat')
-          points.hipsOut = utils.lineIntersectsCurve(
-            points.hipsIn,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
-            points.waistOut,
-            points.seatOut,
-            points.kneeOutCp1,
-            points.kneeOut
-          )
-          points.seatOutNotch = utils.lineIntersectsCurve(
-            points.seatMid,
-            points.seatOutTarget,
-            points.waistOut,
-            points.seatOut,
-            points.kneeOutCp1,
-            points.kneeOut
-          )
-        } else {
-          //log.info('waist to the right of seat')
-          points.hipsOut = utils.lineIntersectsCurve(
-            points.hipsIn,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
-            points.waistOut,
-            points.waistOut,
-            points.seatOutCp1,
-            points.seatOut
-          )
-          points.seatOutNotch = points.seatOut
-        }
-        points.kneeOutNotch = points.kneeOut
-        points.kneeInNotch = points.kneeIn
+      if (points.waistOut.x < points.seatOut.x) {
+        //log.info('waist to the left of seat')
+        points.hipsOut = utils.lineIntersectsCurve(
+          points.hipsIn,
+          points.hipsIn.rotate(180, points.hipsOutTarget),
+          points.waistOut,
+          points.seatOut,
+          points.kneeOutCp1,
+          points.kneeOut
+        )
+        points.seatOutNotch = utils.lineIntersectsCurve(
+          points.seatMid,
+          points.seatOutTarget,
+          points.waistOut,
+          points.seatOut,
+          points.kneeOutCp1,
+          points.kneeOut
+        )
+      } else {
+        //log.info('waist to the right of seat')
+        points.hipsOut = utils.lineIntersectsCurve(
+          points.hipsIn,
+          points.hipsIn.rotate(180, points.hipsOutTarget),
+          points.waistOut,
+          points.waistOut,
+          points.seatOutCp1,
+          points.seatOut
+        )
+        points.seatOutNotch = points.seatOut
+      }
+      points.kneeOutNotch = points.kneeOut
+      points.kneeInNotch = points.kneeIn
       macro('sprinkle', {
         snippet: 'notch',
         on: ['crotchSeamCurveStart', 'seatIn', 'seatOutNotch'],
@@ -506,10 +503,9 @@ function draftLilyFront({
           .attr('data-text-class', 'center')
       }
     }
-   
+
     if (sa) {
-      paths.saBase = paths.upperInseam
-        .join(paths.upperOutseam)
+      paths.saBase = paths.upperInseam.join(paths.upperOutseam)
       paths.hemBase = paths.bottom
       paths.sa = paths.hemBase
         .offset(sa * 3)
@@ -556,7 +552,9 @@ function draftLilyFront({
         from: points.floorIn,
         to: points.styleWaistOutLily,
         x:
-          (points.seatOut.x < points.styleWaistOutLily.x ? points.seatOut.x : points.styleWaistOutLily.x) -
+          (points.seatOut.x < points.styleWaistOutLily.x
+            ? points.seatOut.x
+            : points.styleWaistOutLily.x) -
           sa -
           15,
       })
