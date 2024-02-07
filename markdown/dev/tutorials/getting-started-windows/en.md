@@ -61,7 +61,7 @@ using `nvm install v18.17.0`. For the purposes of debugging it can be useful to
 have the same version of Node.js installed as the main project uses, which you can
 then activate using `nvm use <version>`. You can determine what version the
 FreeSewing project uses by checking
-[freesewing/freesewing/.node-version](https://github.com/freesewing/freesewing/blob/develop/.node-version).
+[freesewing/freesewing/.nvmrc](https://github.com/freesewing/freesewing/blob/develop/.nvmrc).
 
 <Warning> At the time this guide was written the latest version of Node.js/npm has
 a bug in the dependency resolution process which causes the freesewing project
