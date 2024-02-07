@@ -23,5 +23,5 @@ logs: {
 
 Users can override the default logging, so don't assume this is where logs end up.
 
-That's why, you should always use the methods in [Store.log](/reference/api/store/log) to log.
+That's why, you should always use the [Store.log methods](/reference/store-methods#store-methods-we-maintain) to log.
 
