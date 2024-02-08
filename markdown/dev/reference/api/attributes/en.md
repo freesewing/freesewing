@@ -12,6 +12,12 @@ Attributes new Attributes()
 
 The Attributes constructor takes no arguments.
 
+## Properties
+
+An Attributes object comes with the following property:
+
+- `list` : The of individual attributes.
+
 ## Methods
 An Attributes object exposes the following methods:
 
