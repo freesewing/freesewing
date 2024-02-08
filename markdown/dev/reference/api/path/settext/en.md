@@ -7,7 +7,7 @@ The `Path.setText()` method sets text on the path.
 ## Signature
 
 ```js
-Path path.setText(string text, string className)
+Path path.setText(string text[, string className])
 ```
 
 The second argument will optionally be used to set the CSS class for the text.
