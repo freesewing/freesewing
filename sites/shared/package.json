@@ -52,7 +52,7 @@
     "remark-smartypants": "2.1.0",
     "slugify": "^1.6.6",
     "svg-to-pdfkit": "https://git@github.com/eriese/SVG-to-PDFKit",
-    "tlds": "1.249.0",
+    "tlds": "1.250.0",
     "to-vfile": "8.0.0",
     "unist-util-visit": "5.0.0",
     "use-local-storage-state": "19.1.0",
