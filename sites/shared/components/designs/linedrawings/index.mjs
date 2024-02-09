@@ -14,6 +14,8 @@ import { Bruce, BruceFront, BruceBack } from 'shared/components/designs/linedraw
 import { Diana, DianaFront, DianaBack } from 'shared/components/designs/linedrawings/diana.mjs'
 import { Florence, FlorenceFront } from 'shared/components/designs/linedrawings/florence.mjs'
 import { Lucy, LucyFront } from 'shared/components/designs/linedrawings/lucy.mjs'
+import { Lumina, LuminaFront, LuminaBack } from 'shared/components/designs/linedrawings/lumina.mjs'
+import { Lumira, LumiraFront, LumiraBack } from 'shared/components/designs/linedrawings/lumira.mjs'
 import { Noble, NobleFront, NobleBack } from 'shared/components/designs/linedrawings/noble.mjs'
 import { Hortensia, HortensiaFront } from 'shared/components/designs/linedrawings/hortensia.mjs'
 import { Simon, SimonFront, SimonBack } from 'shared/components/designs/linedrawings/simon.mjs'
@@ -40,6 +42,8 @@ export const lineDrawingsFront = {
   diana: DianaFront,
   florence: FlorenceFront,
   lucy: LucyFront,
+  lumina: LuminaFront,
+  lumira: LumiraFront,
   noble: NobleFront,
   hortensia: HortensiaFront,
   simon: SimonFront,
@@ -57,6 +61,8 @@ export const lineDrawingsBack = {
   brian: BrianBack,
   bruce: BruceBack,
   diana: DianaBack,
+  lumina: LuminaBack,
+  lumira: LumiraBack,
   noble: NobleBack,
   simon: SimonBack,
   tristan: TristanBack,
@@ -78,6 +84,8 @@ export const lineDrawings = {
   diana: Diana,
   florence: Florence,
   lucy: Lucy,
+  lumina: Lumina,
+  lumira: Lumira,
   noble: Noble,
   hortensia: Hortensia,
   simon: Simon,
