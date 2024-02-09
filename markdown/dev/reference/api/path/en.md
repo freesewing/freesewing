@@ -14,7 +14,7 @@ The Path constructor takes no arguments.
 
 ## Properties
 
-A Path objects comes with the following properties:
+A Path object comes with the following properties:
 
 - `attributes` : An [Attributes](/reference/api/attributes) instance holding
   the path's attributes
