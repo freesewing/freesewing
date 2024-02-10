@@ -245,12 +245,16 @@ So make sure to align the notches. It's what they're there for.
 In order to look real crisp, the collar should be symmetrical on both sides. 
 About 5mm difference is already visible to a collar, so the more precise you do these steps, the better.
 
-### Add markings to both collars
-But both collars on top of each other, baste the corners together and cut the basting.
+### Add markings to both collar and undercollar
+Put the collar and undercollar on top of each other, baste the corners together and cut the basting.
 Then use a marking pencil or some chalk to mark the edges of the collar. 
 Measure 2 times to make sure the remaining collars and the location of the corners are 100% identical on both corners
 ![Mark the collar Edges](collarMarkings.svg)
 
+<Note compact>
+The undercollar's shape is that of the collar and collarstand parts
+combined.
+</Note>
 
 #### Add interfacing or canvas to the outside collar stand and under collar
 Either use a fusible interfacing, or, if you want to be hardcore use a horsehair canvas. 
@@ -269,7 +273,7 @@ Cut the seam allowance in the corners diagonally for a better fit
 ### Sleeves
 Sew the uppersleeve to the undersleeve until the split
 
-#### Create the split at the eng of the sleeve
+#### Create the split at the end of the sleeve
 
 Sew the other side of the sleeves
 Turn the sleeves with the good side out
