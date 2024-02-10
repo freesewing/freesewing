@@ -155,7 +155,6 @@ describe('Pattern', () => {
     const pattern = new Test()
     pattern.draft()
 
-    console.log(pattern.setStores[pattern.activeSet].logs.error[0])
     expect(pattern.setStores[pattern.activeSet].logs.error[0]).to.include(
       'Could not inject part `otherPart` into part `front`'
     )

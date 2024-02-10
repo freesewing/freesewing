@@ -7,50 +7,43 @@ The `Path.length()` method returns the length of the path.
 ## Signature
 
 ```js
-float path.length()
+float path.length(bool withMoves = false)
 ```
 
 ## Example
 
 <Example caption="Example of the Path.length() method">
 ```js
-({ Point, points, Path, paths, macro, utils, units, part }) => {
+({ Point, points, Path, paths, units, part }) => {
 
-  points.A = new Point(45, 60)
-  points.B = new Point(10, 30)
-  points.BCp2 = new Point(40, 20)
-  points.C = new Point(90, 30)
-  points.CCp1 = new Point(50, -30)
+  points.A1 = new Point(0, 0)
+  points.A2 = new Point(160, 0)
+  points.B1 = new Point(0, 10)
+  points.B2 = new Point(160, 10)
+  points.C1 = new Point(0, 20)
+  points.C2 = new Point(160, 20)
 
-  paths.AB = new Path()
-    .move(points.A)
-    .line(points.B)
+  paths.path1 = new Path()
+    .move(points.A1)
+    .line(points.A2)
+    .move(points.B1)
+    .line(points.B2)
+    .move(points.C1)
+    .line(points.C2)
+    .setClass("various")
 
-  paths.BC = new Path()
-    .move(points.B)
-    .curve(points.BCp2, points.CCp1, points.C)
+  points.label1 = new Point(25, 8).addText('Total length = ' + units(paths.path1.length()))
+  points.label2 = new Point(25, 18).addText('Total length with moves = ' + units(paths.path1.length(true)))
 
-  const lengthABC = paths.AB.length() + paths.BC.length()
-
-  macro("pd", {
-     path: new Path().move(points.B).line(points.A),
-     d: 10
-   })
-
-   macro("pd", {
-     path: new Path().move(points.B).curve(points.BCp2, points.CCp1, points.C),
-     d: -10
-   })
-
-  points.label = new Point(25, 40)
-    .addText('Total length = ' + units(lengthABC))
-
-  // Set a path to prevent clipping
-  paths.noclip = new Path()
-    .move(new Point(10, -15))
-    .move(new Point(90, 60))
 
   return part
 }
 ```
 </Example>
+
+## Notes
+
+By default, `Path.length()` will measure the combined length of all drawing operations in the Path, but skip
+over gaps in the path (caused by move operations). 
+If you want the full length of the Path, including move operations, pass `true` to `Path.length()`.
+

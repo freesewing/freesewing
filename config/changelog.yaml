@@ -1,6 +1,10 @@
 Unreleased:
 
   Added:
+    core:
+      - Added the `Path.combine()` method
+      - `Path.join()` is now variadico
+      - `Path.length()` now takes an parameter to include move operations in the length calculation
     lumina:
       - Initial release
     lumira:
@@ -16,6 +20,10 @@ Unreleased:
       - Added a new *panels* option
     tristan:
       - Inital release
+
+  Deprecated:
+    core:
+      - Calling `Path.join` with a second parameter to indicate that the resulting paths most be closed is now deprecated and will be removed in FreeSewing v4.
 
   Fixed:
     carlton:
