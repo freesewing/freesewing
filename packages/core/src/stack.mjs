@@ -15,6 +15,7 @@ export function Stack(name = null) {
   this.bottomRight = false
   this.width = false
   this.height = false
+  this.anchor = new Point(0, 0)
 
   return this
 }
