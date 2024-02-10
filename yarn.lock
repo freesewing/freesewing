@@ -13306,10 +13306,10 @@ tiny-inflate@^1.0.0, tiny-inflate@^1.0.3:
   resolved "https://registry.yarnpkg.com/tiny-inflate/-/tiny-inflate-1.0.3.tgz#122715494913a1805166aaf7c93467933eea26c4"
   integrity sha512-pkY1fj1cKHb2seWDy0B16HeWyczlJA9/WW3u3c4z/NiWDsO3DOU5D7nhTLE9CF0yXv/QZFY7sEJmj24dK+Rrqw==
 
-tlds@1.249.0:
-  version "1.249.0"
-  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.249.0.tgz#5e10f3428923fef27fa47867770e0aa11b160a35"
-  integrity sha512-PfcE+oqaEhs0U3RDNg4uGg37793cGvlK6+aLAetwR0ImFyV3R2ts1KvU2RfJdtoLn7IFnUEftFFz4br5Wr3caA==
+tlds@1.250.0:
+  version "1.250.0"
+  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.250.0.tgz#6e387c4d789a21c5429c1781137fe3dbaa514f55"
+  integrity sha512-rWsBfFCWKrjM/o2Q1TTUeYQv6tHSd/umUutDjVs6taTuEgRDIreVYIBgWRWW4ot7jp6n0UVUuxhTLWBtUmPu/w==
 
 tmp@^0.0.33:
   version "0.0.33"
