@@ -1241,7 +1241,6 @@ function __bbbbox(boxes) {
  */
 function __combinePaths(...paths) {
   const joint = new Path().__withLog(paths[0].log)
-  const ops = []
   for (const path of paths) joint.ops.push(...path.ops)
 
   return joint
