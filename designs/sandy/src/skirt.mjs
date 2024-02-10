@@ -227,21 +227,39 @@ function sandySkirt({
   if (angle !== 90) {
     macro('vd', {
       id: 'hTopToOpeningRight',
-      from: points.ex1Rotated,
-      to: points.in1Rotated,
-      x: angle > 90 ? points.in1Rotated.x - sa - 15 : points.ex1Rotated.x + sa + 15,
+      from: points.ex2,
+      to: points.in2,
+      x: angle > 90 ? points.in2.x - sa - 15 : points.ex2.x + sa + 15,
     })
     macro('vd', {
       id: 'hOpeningRightToCenter',
-      from: points.in1Rotated,
+      from: points.in2,
       to: points.center,
-      x: angle > 90 ? points.in1Rotated.x - sa - 15 : points.ex1Rotated.x + sa + 15,
+      x: angle > 90 ? points.in2.x - sa - 15 : points.ex2.x + sa + 15,
     })
     macro('vd', {
-      from: points.ex1Rotated,
       id: 'hHemRightToCenter',
+      from: points.ex2,
       to: points.center,
-      x: angle > 90 ? points.in1Rotated.x - sa - 30 : points.ex1Rotated.x + sa + 30,
+      x: angle > 90 ? points.in2.x - sa - 30 : points.ex2.x + sa + 30,
+    })
+    macro('hd', {
+      id: 'wHemToOpeningRight',
+      from: points.ex2,
+      to: points.in2,
+      y: angle < 90 ? points.center.y - sa - 15 : points.ex2.y - sa - 15,
+    })
+    macro('hd', {
+      id: 'wOpeningRightToCenter',
+      from: points.center,
+      to: points.in2,
+      y: angle < 90 ? points.center.y - sa - 15 : points.ex2.y - sa - 15,
+    })
+    macro('hd', {
+      id: 'wHemToCenter',
+      from: points.center,
+      to: points.ex2,
+      y: angle < 90 ? points.center.y - sa - 30 : points.ex2.y - sa - 30,
     })
   }
 
