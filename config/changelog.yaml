@@ -26,6 +26,8 @@ Unreleased:
       - Calling `Path.join` with a second parameter to indicate that the resulting paths most be closed is now deprecated and will be removed in FreeSewing v4.
 
   Fixed:
+    brian:
+      - Take biceps ease into account when calculating armhole depth
     carlton:
       - Fixed a stray seam allowance path on the collar
     charlie:

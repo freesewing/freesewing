@@ -109,7 +109,8 @@ export const base = {
       // The new way uses the waistToArmpit measurement
       points.cbArmhole = new Point(
         0,
-        points.cbWaist.y - measurements.waistToArmpit * (1 - options.armholeDepth)
+        points.cbWaist.y -
+          measurements.waistToArmpit * (1 - options.armholeDepth - options.bicepsEase / 2)
       )
     }
 
