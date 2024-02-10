@@ -219,8 +219,12 @@ Assurez-vous donc d'aligner les encoches. « C'est pour cela qu'ils sont là.
 In order to look real crisp, the collar should be symmetrical on both sides. Une différence d'environ 5 mm est déjà visible pour un collier, donc plus tu fais ces étapes avec précision, mieux c'est.
 
 ### Ajoute des marques aux deux colliers
-Mais les deux cols l'un sur l'autre, bâtis les coins ensemble et coupe le bâtis. Utilise ensuite un crayon de marquage ou un peu de craie pour marquer les bords du collier. Mesure 2 fois pour t'assurer que les cols restants et l'emplacement des coins sont identiques à 100 % sur les deux coins. ![Marque les bords du collier](collarMarkings.svg)
+Put the collar and undercollar on top of each other, baste the corners together and cut the basting. Utilise ensuite un crayon de marquage ou un peu de craie pour marquer les bords du collier. Mesure 2 fois pour t'assurer que les cols restants et l'emplacement des coins sont identiques à 100 % sur les deux coins. ![Marque les bords du collier](collarMarkings.svg)
 
+<Note compact>
+The undercollar's shape is that of the collar and collarstand parts
+combined.
+</Note>
 
 #### Ajoute de l'entoilage ou du canevas sur le pied de col extérieur et sous le col.
 Either use a fusible interfacing, or, if you want to be hardcore use a horsehair canvas. Stitch it to the outside collar stand using the same technique as when adding canvas to the lapel. ![Add canvas to the collar](collarWithCanvas.svg)
