@@ -1,5 +1,5 @@
 ---
-title: "Réduction de l'aisance de la poitrine"
+title: Réduction de l'aisance de la poitrine
 ---
 
 ***

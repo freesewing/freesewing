@@ -15,8 +15,6 @@ En estas páginas, te daremos una idea general de cómo sacar el máximo partido
 
 ##### Where can I download the patterns?
 
-##### Where can I download the patterns?
-
 It can be frustrating for visitors who come here expecting a website where they can download sewing patterns that they can't seem to find the sewing patterns to download.
 
 ##### Where can I download the patterns?
@@ -69,7 +67,7 @@ Me gustaría destacar un par de ellas que merecen tu atención:
 
 ### Experiencia del usuario
 
-El ajuste [Experiencia de usuario](/account/control/) te permite revelar gradualmente una mayor complejidad. If you are a little overwhelmed with everything FreeSewing.org has to offer, setting this to a lower value will gradually hide more features for the sake of simplicity. Pero si estableces aquí un valor más alto, se mostrarán más características y funcionalidades.
+El ajuste [Experiencia de usuario](/account/control/) te permite revelar gradualmente una mayor complejidad. Pero si estableces aquí un valor más alto, se mostrarán más características y funcionalidades. If you are a little overwhelmed with everything FreeSewing.org has to offer, setting this to a lower value will gradually hide more features for the sake of simplicity.
 
 Baja este ajuste si quieres una experiencia más sencilla. Súbelo si quieres más potencia, o algunas cosas que sabes que existen no se muestran en tu pantalla.
 

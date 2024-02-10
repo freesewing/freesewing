@@ -211,7 +211,7 @@ En raison de la forme différente des panneaux avant et arrière du côté du co
 le bord du tissu est différent. Donc, l'alignement de ces bords ne vous donnera pas
 ce dont vous avez besoin.
 
-Assurez-vous donc d'aligner les encoches. « C'est pour cela qu'ils sont là. »
+Assurez-vous donc d'aligner les encoches. « C'est pour cela qu'ils sont là.
 
 </Note>
 

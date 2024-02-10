@@ -26,6 +26,6 @@ Il est recommandé de tracer le filet du patron et d'utiliser le motif pour trac
 </Note>
 <Warning>
 
-It is recommended to make a mock-up with your gore pattern first before cutting your fabrics. This is to test the length and ease of the gore piece. Assurez-vous de couper la marge de couture du fond avant de l'essayer. If it is too tight who will need to re-draft the pattern with more ease (longer head circumference) just remember the ease is split across each gore. If the peak is too high you may want to re-draft the pattern with the gore length reduced. Once re-drafted make another mock-up to check whether you are satisfied with the changes or not. Répétez à nouveau si vous n'êtes pas satisfait.
+It is recommended to make a mock-up with your gore pattern first before cutting your fabrics. This is to test the length and ease of the gore piece. Assurez-vous de couper la marge de couture du fond avant de l'essayer. If it is too tight who will need to re-draft the pattern with more ease (longer head circumference) just remember the ease is split across each gore. If the peak is too high you may want to re-draft the pattern with the gore length reduced. Répétez à nouveau si vous n'êtes pas satisfait. Répétez à nouveau si vous n'êtes pas satisfait.
 
 </Warning>

@@ -161,7 +161,7 @@ Une fois de plus, il y a deux méthodes pour l'assemblage et la doublure finales
 - (Facultatif) Collez à la machine la visière à la couronne le long des lignes de couture.
 - Répétez l'opération pour le reste de la visière, de l'autre côté de la couture centrale de la couronne.
 - Construct lining the same way as the crown omitting _edgestitching_ and leaving a gap in the centre lining seam large enough to turn the hat.
-- Endroit contre endroit, faire correspondre les coutures de la couronne centrale, les coutures des panneaux et les lignes de couture. Sew the lining to the crown along seam lines. Si vous êtes volumineux, vous voudrez peut-être couper les coutures de doublure ou les deux coutures.
+- Endroit contre endroit, faire correspondre les coutures de la couronne centrale, les coutures des panneaux et les lignes de couture. This seam will be referred to as the "centre crown seam" going forward. Si vous êtes volumineux, vous voudrez peut-être couper les coutures de doublure ou les deux coutures.
 - Retourner le chapeau, en pressant la doublure à l'intérieur.
 - (Facultatif/Alternatif) _Doublure en surpiqûre_.
 - Fermeture de la doublure fermée par une surpiqûre.

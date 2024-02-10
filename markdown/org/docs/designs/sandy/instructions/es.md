@@ -5,7 +5,7 @@ title: "Falda circular Sandy: Instrucciones de costura"
 <Warning>
 
 Debido a los diferentes estilos y configuraciones de Sandy, puede que necesites saltarte o reordenar ciertos pasos.
-No vamos a entrar en una explicación completa sobre cómo crear todos los detalles individuales que componen una falda circular. Estas instrucciones presuponen que sabes coser una cremallera, construir bolsillos, etc. If not, there are numerous excellent articles available on the web, both in written form, and on video. Si te quedas atascado, siempre puedes ponerte en contacto con [otros FreeSewers](https://discord.freesewing.org/) en nuestro discord.
+No vamos a entrar en una explicación completa sobre cómo crear todos los detalles individuales que componen una falda circular. Estas instrucciones presuponen que sabes coser una cremallera, construir bolsillos, etc. Si te quedas atascado, siempre puedes ponerte en contacto con [otros FreeSewers](https://discord.freesewing.org/) en nuestro discord. Si te quedas atascado, siempre puedes ponerte en contacto con [otros FreeSewers](https://discord.freesewing.org/) en nuestro discord.
 
 </Warning>
 

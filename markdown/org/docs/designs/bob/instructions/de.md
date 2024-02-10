@@ -19,7 +19,7 @@ als deine Wahl für die vordere Lage, also die sichtbare.
 
 Wenn du dich für zwei Lagen entscheidest, füge sie einfach an den Kanten zusammen, bevor du das Schrägband anbringst.
 
-You probably want to pin or baste this prior to sewing. Die beiden verschiedenen Arten von Stoff verhalten sich unterschiedlich, deshalb solltest du sie vor dem Zusammennähen sichern.
+Wahrscheinlich willst du das vor dem Nähen feststecken oder heften. Die beiden verschiedenen Arten von Stoff verhalten sich unterschiedlich, deshalb solltest du sie vor dem Zusammennähen sichern.
 
 Achte darauf, dass du dicht an der Kante nähst, damit die Stiche später unter dem Schrägband liegen .
 

@@ -51,7 +51,7 @@ Ich möchte ein paar von ihnen hervorheben, die deine Aufmerksamkeit verdienen:
 
 ### Benutzererfahrung
 
-Die Einstellung [User Experience](/account/control/) ermöglicht es dir, schrittweise mehr Komplexität zu enthüllen. If you are a little overwhelmed with everything FreeSewing.org has to offer, setting this to a lower value will gradually hide more features for the sake of simplicity. Wenn du hier einen höheren Wert einstellst, werden mehr Features und Funktionen angezeigt.
+Die Einstellung [User Experience](/account/control/) ermöglicht es dir, schrittweise mehr Komplexität zu enthüllen. Wenn du hier einen höheren Wert einstellst, werden mehr Features und Funktionen angezeigt. If you are a little overwhelmed with everything FreeSewing.org has to offer, setting this to a lower value will gradually hide more features for the sake of simplicity.
 
 Stelle diese Einstellung herunter, wenn du es einfacher haben willst. Drehe ihn auf, wenn du mehr Leistung brauchst oder Dinge, von denen du weißt, dass es sie gibt, nicht auf deinem Bildschirm angezeigt werden.
 
