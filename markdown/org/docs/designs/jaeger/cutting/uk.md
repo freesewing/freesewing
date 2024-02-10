@@ -9,7 +9,7 @@ title: "Єгерська куртка: Інструкція з крою"
   - Виріжте **2 сторони** (частина 3)
   - Викрійка **2 верхніх рукава** (частина 4)
   - Викроїти **2 нижніх рукава** (частина 5)
-  - Крій **1 комір** (частина 6)
+  - Cut **1 collar** (part 7)
   - Крій **1 підставка для коміра** (частина 8)
   - Викрійка **2 кишені** (частина 9)
   - Виріжте **1 шов нагрудної кишені** (частина 10)
@@ -26,8 +26,9 @@ title: "Єгерська куртка: Інструкція з крою"
 - **Полотно**
   - Викроїти **2 лицьові сторони** на зміщення (частина 1) Примітка: не враховувати припуски на шви
   - Вирізаємо **2 частини грудки** по косому зрізу. Шукайте вказівки на передній частині. Примітка: Не враховуйте припуски на шви
+  - Cut **1 undercollar** (part 6). Не враховувати припуски на шви.
 - **Тканина під комір**
-  - Вирізати **2 коміри** (частина 7)
+  - Cut **1 undercollar** (part 6)
 
 <Note>
 
@@ -51,3 +52,19 @@ title: "Єгерська куртка: Інструкція з крою"
 Викресліть лицьову обшивку і підкладку з передньої частини] (cuttingCaveat.svg)
 
 </Warning>
+
+<Comment by="Benjamin F.">
+
+Instead of cutting the canvas parts _nett_ (without seam allowance),
+there is an alternate
+method where seam allowance is included on the canvas parts.
+The idea is that because the canvas parts have seam allowance,
+when they are attached to the main fabric pieces this can allow
+ease to be worked into the garment for a better shape.
+The seam allowance is then trimmed from the canvas at a later point
+in the garment construction process.
+
+However, because this is a more advanced tailoring technique,
+our instructions are instead written with the nett canvas method.
+
+</Comment>
