@@ -10,7 +10,7 @@ export const Cathrin = ({
   stroke = stroke * strokeScale
 
   return (
-    <LineDrawingWrapper viewBox="0 0 288 149" {...{ className, stroke }}>
+    <LineDrawingWrapper viewBox="0 0 288 159" {...{ className, stroke }}>
       <Front stroke={stroke} />
       <Back stroke={stroke} />
     </LineDrawingWrapper>
@@ -28,7 +28,7 @@ export const CathrinFront = ({
   stroke = stroke * strokeScale
 
   return (
-    <LineDrawingWrapper viewBox="0 0 144 149" {...{ className, stroke }}>
+    <LineDrawingWrapper viewBox="0 0 144 159" {...{ className, stroke }}>
       <Front stroke={stroke} />
     </LineDrawingWrapper>
   )
@@ -45,7 +45,7 @@ export const CathrinBack = ({
   stroke = stroke * strokeScale
 
   return (
-    <LineDrawingWrapper viewBox="144 0 144 149" {...{ className, stroke }}>
+    <LineDrawingWrapper viewBox="144 0 144 159" {...{ className, stroke }}>
       <Back stroke={stroke} />
     </LineDrawingWrapper>
   )
