@@ -34,6 +34,7 @@ Unreleased:
       - The back pocket welt (4) and front pocket facing (8) incorrectly indicated to cut 2 instead of 4 in the cutlist. Fixes #5791
     hugo:
       - Fix issue that crashed the design when complete is off. Fixes #6006
+      - Base pocket opening on pocket height, rather than width of the garment. Fixes #6004
 
   Removed:
     plugin-annotations:

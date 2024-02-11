@@ -72,7 +72,7 @@ function hugoFront({
   )
   points.pocketTop = new Point(points.pocketHem.x, points.pocketCf.y)
   points.pocketTip = points.pocketHem
-    .shift(90, points.pocketHem.x / 3)
+    .shift(90, points.pocketTop.dy(points.pocketHem) / 3.5)
     .rotate(-30, points.pocketHem)
   points.pocketTopCp = utils.beamsIntersect(
     points.pocketTop,
