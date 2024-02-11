@@ -106,5 +106,8 @@
     "rehype-format": "^5.0.0",
     "yarn": "^1.22.19"
   },
+  "engines": {
+    "node": ">= 18.17.0 <22"
+  },
   "packageManager": "yarn@1.22.19"
 }
