@@ -1,6 +1,6 @@
-\--
+---
 title: "Lumira leggings: Sewing Instructions"
----------------------------------------------
+---
 
 <Note>
 

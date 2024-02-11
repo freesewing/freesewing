@@ -51,7 +51,6 @@ const BookmarkPage = ({ page }) => {
       else setLoadingStatus([false])
     }
     const newId = getSearchParam('id')
-    console.log({ newId })
     if (newId !== id) {
       setId(newId)
       getBookmark(newId)

@@ -71,7 +71,6 @@ export const ShowPattern = ({ id }) => {
       let result
       try {
         result = await backend.getPattern(id)
-        console.log('first attempt', result)
         if (result.success) {
           setPattern(result.data.pattern)
           setIsOwn(true)

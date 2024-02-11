@@ -45,7 +45,6 @@ const ConfirmSignUpPage = () => {
         router.push('/welcome')
       } else {
         // Something went wrong
-        console.log('something went wrong')
       }
     }
   }

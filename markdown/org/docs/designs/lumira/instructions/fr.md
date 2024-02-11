@@ -1,4 +1,6 @@
-## Lumira leggings: Sewing Instructions
+---
+title: "Lumira leggings: Sewing Instructions"
+---
 
 <Note>
 
