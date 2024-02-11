@@ -13,8 +13,8 @@ instead, thereby overwriting the value of the attribute.
 ```js
 Path path.attr(
   string name,
-  mixed value[,
-  bool overwrite = false]
+  mixed value,
+  bool overwrite = false
 )
 ```
 
