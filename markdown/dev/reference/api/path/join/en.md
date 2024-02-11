@@ -12,11 +12,8 @@ If that's not what you want, you should use
 ## Signature
 
 ```js
-Path path.join(path other, bool closed = false)
+Path path.join(path other)
 ```
-
-The second argument will optionally be used to close the joined path.
-By default the joined path is left unclosed.
 
 ## Examples
 
