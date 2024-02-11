@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/bent",
-  "version": "3.2.0-rc.0",
+  "version": "3.2.0",
   "description": "A FreeSewing pattern for a menswear body block with a two-part sleeve",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -49,16 +49,16 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.2.0-rc.0",
-    "@freesewing/brian": "3.2.0-rc.0",
-    "@freesewing/plugin-bust": "3.2.0-rc.0"
+    "@freesewing/core": "3.2.0",
+    "@freesewing/brian": "3.2.0",
+    "@freesewing/plugin-bust": "3.2.0"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.2.0",
     "chai": "5.0.3",
-    "@freesewing/models": "3.2.0-rc.0",
-    "@freesewing/plugin-timing": "3.2.0-rc.0"
+    "@freesewing/models": "3.2.0",
+    "@freesewing/plugin-timing": "3.2.0"
   },
   "files": [
     "dist/*",
@@ -66,7 +66,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": ">=18",

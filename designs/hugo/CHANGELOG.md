@@ -1,6 +1,13 @@
 # Change log for: @freesewing/hugo
 
 
+## 3.2.0 (2024-02-11)
+
+### Fixed
+
+ - Fix issue that crashed the design when complete is off. Fixes
+ - Base pocket opening on pocket height, rather than width of the garment. Fixes
+
 ## 3.1.0 (2023-12-26)
 
 ### Changed

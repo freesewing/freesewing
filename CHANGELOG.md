@@ -1,7 +1,7 @@
 # Change log for: FreeSewing (global)
 
 
-## Unreleased
+## 3.2.0 (2024-02-11)
 
 ### brian
 
