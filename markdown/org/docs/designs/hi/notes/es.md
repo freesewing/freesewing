@@ -8,7 +8,7 @@ A while ago rumours started swirling that IKEA would discontinue it's Blåhaj st
 
 It turned out that no one in the community had ever taken a Blåhaj apart, and no one had the courage to do so. The only Blåhaj in my household was my daughter's, and I couldn't touch that one.
 
-This seemed like a great project to work on, and the lack of a Blåhaj was not an insurmountable obstacle. So one day I made a trip to Ikea, and bought me my own shark. The individual pieces were traced, scanned, and used in InkScape to generate a fully functional shark pattern. I took the seam ripper to the poor animal, and transfered it's innards to a sterile bag.
+This seemed like a great project to work on, and the lack of a Blåhaj was not an insurmountable obstacle. So one day I made a trip to Ikea, and bought me my own shark. I took the seam ripper to the poor animal, and transfered it's innards to a sterile bag. I took the seam ripper to the poor animal, and transfered it's innards to a sterile bag.
 
 It can be saled up and down between 50 cm and 5 meter. So there is a shark for everyone.
 

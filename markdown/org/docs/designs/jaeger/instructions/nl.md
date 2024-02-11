@@ -221,6 +221,10 @@ In order to look real crisp, the collar should be symmetrical on both sides. Ong
 ### Markeringen toevoegen aan beide halsbanden
 Maar beide kragen op elkaar, rijg de hoeken aan elkaar en knip de rijg af. Gebruik dan een markeerpotlood of een krijtje om de randen van de kraag te markeren. Meet 2 keer om er zeker van te zijn dat de resterende kragen en de locatie van de hoeken 100% identiek zijn op beide hoeken. ![Markeer de randen van de kraag](collarMarkings.svg)
 
+<Note compact>
+The undercollar's shape is that of the collar and collarstand parts
+combined.
+</Note>
 
 #### Voeg versteviging of canvas toe aan de buitenkraag en onderkraag.
 Either use a fusible interfacing, or, if you want to be hardcore use a horsehair canvas. Stitch it to the outside collar stand using the same technique as when adding canvas to the lapel. ![Add canvas to the collar](collarWithCanvas.svg)
@@ -234,7 +238,7 @@ Make sure the outside collarstand and under collar are aligned and sew together 
 ### Mouwen
 Sew the uppersleeve to the undersleeve until the split
 
-#### Maak de split aan de binnenkant van de mouw
+#### Create the split at the end of the sleeve
 
 Naai de andere kant van de mouwen Keer de mouwen met de goede kant naar buiten Voeg de mouwen toe aan het jasje.
 
