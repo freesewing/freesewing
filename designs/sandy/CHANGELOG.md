@@ -1,6 +1,12 @@
 # Change log for: @freesewing/sandy
 
 
+## 3.2.0 (2024-02-11)
+
+### Added
+
+ - Added a new *panels* option
+
 ## 3.1.0 (2023-12-26)
 
 ### Changed

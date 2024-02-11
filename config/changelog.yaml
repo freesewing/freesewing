@@ -1,10 +1,11 @@
-Unreleased:
+3.2.0:
+  date: 2024-02-11
 
   Added:
     core:
       - Added the `Path.combine()` method
-      - `Path.join()` is now variadico
-      - `Path.length()` now takes an parameter to include move operations in the length calculation
+      - The `Path.join()` method is now variadic
+      - The `Path.length()` now takes an parameter to include move operations in the length calculation
     lumina:
       - Initial release
     lumira:

@@ -1,7 +1,13 @@
 # Change log for: FreeSewing (global)
 
 
-## Unreleased
+## 3.2.0 (2024-02-11)
+
+### brian
+
+#### Fixed
+
+ - Take biceps ease into account when calculating armhole depth
 
 ### carlton
 
@@ -14,6 +20,25 @@
 #### Fixed
 
  - The back pocket welt (4) and front pocket facing (8) incorrectly indicated to cut 2 instead of 4 in the cutlist. Fixes
+
+### hugo
+
+#### Fixed
+
+ - Fix issue that crashed the design when complete is off. Fixes
+ - Base pocket opening on pocket height, rather than width of the garment. Fixes
+
+### lumina
+
+#### Added
+
+ - Initial release
+
+### lumira
+
+#### Added
+
+ - Initial release
 
 ### sandy
 
@@ -43,6 +68,18 @@
 #### Added
 
  - This plugin now supports translation of nested arrays of strings, giving you more flexibility to concatenate translated parts of strings
+
+### core
+
+#### Added
+
+ - Added the `Path.combine()` method
+ - The `Path.join()` method is now variadic
+ - The `Path.length()` now takes an parameter to include move operations in the length calculation
+
+#### Deprecated
+
+ - Calling `Path.join` with a second parameter to indicate that the resulting paths most be closed is now deprecated and will be removed in FreeSewing v4.
 
 ### react-components
 

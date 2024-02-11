@@ -1,6 +1,18 @@
 # Change log for: @freesewing/core
 
 
+## 3.2.0 (2024-02-11)
+
+### Added
+
+ - Added the `Path.combine()` method
+ - The `Path.join()` method is now variadic
+ - The `Path.length()` now takes an parameter to include move operations in the length calculation
+
+### Deprecated
+
+ - Calling `Path.join` with a second parameter to indicate that the resulting paths most be closed is now deprecated and will be removed in FreeSewing v4.
+
 ## 3.1.0 (2023-12-26)
 
 ### Added

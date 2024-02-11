@@ -1,6 +1,12 @@
 # Change log for: @freesewing/carlton
 
 
+## 3.2.0 (2024-02-11)
+
+### Fixed
+
+ - Fixed a stray seam allowance path on the collar
+
 ## 3.1.0 (2023-12-26)
 
 ### Changed

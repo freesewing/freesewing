@@ -1,6 +1,12 @@
 # Change log for: @freesewing/lumina
 
 
+## 3.2.0 (2024-02-11)
+
+### Added
+
+ - Initial release
+
 ## 3.0.0 (2023-09-30)
 
 ### Changed

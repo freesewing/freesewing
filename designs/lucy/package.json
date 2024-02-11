@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/lucy",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "A FreeSewing pattern for a historical tie-on pocket",
   "author": "SeaZeeZee (https://github.com/SeaZeeZee)",
   "homepage": "https://freesewing.org/",
@@ -49,14 +49,14 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.1.0"
+    "@freesewing/core": "3.2.0"
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "10.3.0",
+    "mocha": "10.2.0",
     "chai": "5.0.3",
-    "@freesewing/models": "3.1.0",
-    "@freesewing/plugin-timing": "3.1.0"
+    "@freesewing/models": "3.2.0",
+    "@freesewing/plugin-timing": "3.2.0"
   },
   "files": [
     "dist/*",
