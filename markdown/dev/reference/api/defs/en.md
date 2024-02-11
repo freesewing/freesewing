@@ -14,7 +14,7 @@ they are documented here to facilitate development of plugins.
 
 A Defs object comes with the following property:
 
-- `list` : The entries of the `defs` element.
+- `list` : Holds the internal object in which entries of the `defs` element are stored
 
 ## Defs methods
 

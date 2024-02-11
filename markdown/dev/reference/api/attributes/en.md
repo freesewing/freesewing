@@ -16,7 +16,7 @@ The Attributes constructor takes no arguments.
 
 An Attributes object comes with the following property:
 
-- `list` : The of individual attributes.
+- `list` : Holds the internal object in which attributes are stored
 
 ## Methods
 An Attributes object exposes the following methods:
