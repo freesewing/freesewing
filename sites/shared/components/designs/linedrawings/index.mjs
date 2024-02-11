@@ -11,6 +11,21 @@ import {
 } from 'shared/components/designs/linedrawings/breanna.mjs'
 import { Brian, BrianFront, BrianBack } from 'shared/components/designs/linedrawings/brian.mjs'
 import { Bruce, BruceFront, BruceBack } from 'shared/components/designs/linedrawings/bruce.mjs'
+import {
+  Carlita,
+  CarlitaFront,
+  CarlitaBack,
+} from 'shared/components/designs/linedrawings/carlita.mjs'
+import {
+  Carlton,
+  CarltonFront,
+  CarltonBack,
+} from 'shared/components/designs/linedrawings/carlton.mjs'
+import {
+  Cathrin,
+  CathrinFront,
+  CathrinBack,
+} from 'shared/components/designs/linedrawings/cathrin.mjs'
 import { Diana, DianaFront, DianaBack } from 'shared/components/designs/linedrawings/diana.mjs'
 import { Florence, FlorenceFront } from 'shared/components/designs/linedrawings/florence.mjs'
 import { Lucy, LucyFront } from 'shared/components/designs/linedrawings/lucy.mjs'
@@ -39,6 +54,9 @@ export const lineDrawingsFront = {
   breanna: BreannaFront,
   brian: BrianFront,
   bruce: BruceFront,
+  carlita: CarlitaFront,
+  carlton: CarltonFront,
+  cathrin: CathrinFront,
   diana: DianaFront,
   florence: FlorenceFront,
   lucy: LucyFront,
@@ -60,6 +78,9 @@ export const lineDrawingsBack = {
   breanna: BreannaBack,
   brian: BrianBack,
   bruce: BruceBack,
+  carlita: CarlitaBack,
+  carlton: CarltonBack,
+  cathrin: CathrinBack,
   diana: DianaBack,
   lumina: LuminaBack,
   lumira: LumiraBack,
@@ -81,6 +102,9 @@ export const lineDrawings = {
   breanna: Breanna,
   brian: Brian,
   bruce: Bruce,
+  carlita: Carlita,
+  carlton: Carlton,
+  cathrin: Cathrin,
   diana: Diana,
   florence: Florence,
   lucy: Lucy,
