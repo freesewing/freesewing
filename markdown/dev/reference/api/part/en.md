@@ -13,7 +13,7 @@ A Part object comes with the following properties:
 
 - `attributes` : An [Attributes](/reference/api/attributes) instance holding
   the part's attributes
-- `hidden` : When this is `true` the part will be hidden (excluded it from the
+- `hidden` : When this is `true` the part will be hidden (excluding it from the
   output).  See [Part.hide()](/reference/api/part/hide),
   [Part.unhide()](/reference/api/part/unhide), and
   [Part.setHidden()](/reference/api/part/sethidden) for various methods that

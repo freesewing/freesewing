@@ -18,7 +18,7 @@ A Path object comes with the following properties:
 
 - `attributes` : An [Attributes](/reference/api/attributes) instance holding
   the path's attributes
-- `hidden` : When this is `true` the path will be hidden (excluded it from the
+- `hidden` : When this is `true` the path will be hidden (excluding it from the
   output).  See [Path.hide()](/reference/api/path/hide),
   [Path.unhide()](/reference/api/path/unhide), and
   [Path.setHidden()](/reference/api/path/sethidden) for various methods that
