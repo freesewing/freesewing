@@ -2,7 +2,7 @@
 title: Path.combine()
 ---
 
-The `Path.combines()` method combines this path with one or more other paths
+The `Path.combine()` method combines this path with one or more other paths
 into a single Path instance.
 
 Any gaps in the path (caused by move operations) will be left as-is, rather
