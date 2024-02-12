@@ -1,5 +1,5 @@
 ---
-title: "Lumira leggings: Sewing Instructions"
+title: "Lumira leggings: Naai instructies"
 ---
 
 <Note>
