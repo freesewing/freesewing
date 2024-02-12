@@ -59,7 +59,6 @@ export const Breadcrumbs = ({ lead = false }) => {
 
   // Home page?
   if (slug === '') return <ul className="flex flex-row flex-wrap items-center">{crumbs}</ul>
-  console.log(slug)
   // Then split the slug and add a crumb for each
   const chunks = slug.split('/')
   for (let i = 1; i <= chunks.length; i++) {
