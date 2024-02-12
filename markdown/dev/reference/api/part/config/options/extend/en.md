@@ -18,14 +18,14 @@ their options have been extended with menu information.
 ```js
 options: {
   // Fit
-  waistEase: { pct: 2, min: 0, max: 10, menu: 'fit', sort: '100' },
-  seatEase: { pct: 5, min: 0, max: 15, menu: 'fit', sort: '200' },
+  waistEase: { pct: 2, min: 0, max: 10, menu: 'fit', order: '100' },
+  seatEase: { pct: 5, min: 0, max: 15, menu: 'fit', order: '200' },
   // Style
-  waistHeight: { pct: 5, min: 0, max: 100, menu: 'style', sort: '400' },
-  lengthBonus: { pct: 0, min: -15, max: 10, menu: 'style', sort: '300' },
+  waistHeight: { pct: 5, min: 0, max: 100, menu: 'style', order: '400' },
+  lengthBonus: { pct: 0, min: -15, max: 10, menu: 'style', order: '300' },
   elasticatedCuff: { bool: true, menu: 'style' },
-  buttons = { count: 7, min: 4, max: 12, menu: 'style.closure', sort: '800' }
-  extraTopButton = { bool: true, menu: 'style.closure', sort: '850' }
+  buttons = { count: 7, min: 4, max: 12, menu: 'style.closure', order: '800' }
+  extraTopButton = { bool: true, menu: 'style.closure', order: '850' }
 }
 ```
 
@@ -37,16 +37,16 @@ menu while the other options go in the `style` menu.
 - Additionally, the `buttons` and `extraTopButton` options should
 appear in a `closure` submenu under the `style` menu.
 
-The optional 'sort' attributes provide the UI with information about
+The optional 'order' attributes provide the UI with information about
 the order in which options and menus should appear.
 - Within the `fit` menu, `waistEase` should come before `seatEase`.
 - Within the `style` menu, options should be in the order
 `lengthBonus`, `waistHeight`, `buttons`, `extraTopButton`, and
 `elasticatedCuff`.
-- The `elasticatedCuff` option does not have a `sort` attribute,
+- The `elasticatedCuff` option does not have an `order` attribute,
 so it should appear after the options that do.
-- Because the `fit` menu has an option with a sort value that comes
-before any of the sort values for options in the `style` menu,
+- Because the `fit` menu has an option with an `order` value that comes
+before any of the `order` values for options in the `style` menu,
 the `fit` menu should appear before the `style` menu.
 
 <Note>
@@ -56,6 +56,16 @@ the `fit` menu should appear before the `style` menu.
 To be clear, setting this here does not do anything in core.
 It's merely extra metadata you can add on the option to facilitate
 frontend integration.
+
+</Note>
+
+<Note>
+
+freesewing.org UI behavior:
+- After they have been ordered using `order` attribute, if present,
+design options and menus are arranged in alphabetical order.
+- The `advanced` menu, if present, is always ordered after all the
+other menus.
 
 </Note>
 
