@@ -62,10 +62,16 @@ frontend integration.
 <Note>
 
 freesewing.org UI behavior:
+- Ordering is performed using an alphabetic, not numeric, sort.
+For example, `order` value "99" will be placed _after_ "100" because
+"1" comes before "9" alphabetically.
+However, "099" will be placed before "100", so using leading zeros
+can be helpful when using numbers as `order` values.
 - After they have been ordered using `order` attribute, if present,
-design options and menus are arranged in alphabetical order.
-- The `advanced` menu, if present, is always ordered after all the
-other menus.
+design options and menus are arranged in alphabetical order by
+their names.
+- However, the `advanced` menu, if present, is always ordered to
+be the last menu, appearing after all the other menus.
 
 </Note>
 
