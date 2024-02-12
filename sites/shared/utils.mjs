@@ -199,7 +199,7 @@ export const optionsMenuStructure = (options, settings) => {
 
   const menu = {}
   // Fixme: One day we should sort this based on the translation
-  for (const option of orderBy(sorted, ['menu', 'name'], ['asc'])) {
+  for (const option of orderBy(sorted, ['sort', 'menu', 'name'], ['asc', 'asc', 'asc'])) {
     if (typeof option === 'object') {
       const oType = optionType(option)
       option.dflt = option.dflt || option[oType]
