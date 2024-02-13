@@ -34,8 +34,8 @@ export const MeasieImage = (props) => {
         <img
           className="shadow aspect-[4/3]"
           height={sarahImages[m].height}
-          width={sarahImages[m].height}
-          src={sarahImages[m].height}
+          width={sarahImages[m].width}
+          src={sarahImages[m].src}
           alt={t('measurements:' + m)}
           style={{ ...style, backgroundImage: `url(/img/sarah-${pose}.jpg)` }}
         />
@@ -44,8 +44,8 @@ export const MeasieImage = (props) => {
         <img
           className="shadow"
           height={timImages[m].height}
-          width={timImages[m].height}
-          src={timImages[m].height}
+          width={timImages[m].width}
+          src={timImages[m].src}
           alt={t('measurements:' + m)}
           style={{ ...style, backgroundImage: `url(/img/tim-${pose}.jpg)` }}
         />
