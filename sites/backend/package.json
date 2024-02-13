@@ -47,7 +47,7 @@
     "swagger-ui-express": "5.0.0"
   },
   "devDependencies": {
-    "chai": "5.0.3",
+    "chai": "5.1.0",
     "chai-http": "4.4.0",
     "esbuild": "0.20.0",
     "mocha": "10.3.0",
