@@ -206,7 +206,7 @@ describe('Scalebox Plugin Tests', () => {
       pattern.parts[0].test.points.__macro_scalebox_scalebox_textImperial.attributes.get(
         'data-text'
       )
-    ).to.equal('plugin-annotations:theBlackOutsideOfThisBoxShouldMeasure 2″ x 1″')
+    ).to.equal('plugin-annotations:theBlackOutsideOfThisBoxShouldMeasure 2" x 1"')
   })
 
   it('Should apply scale to the miniscale macro', () => {
@@ -247,7 +247,7 @@ describe('Scalebox Plugin Tests', () => {
       '1.6cm x 1.6cm'
     )
     expect(p.__macro_miniscale_miniscale_textImperial.attributes.get('data-text')).to.equal(
-      '⅝″ x ⅝″'
+      '5/8" x 5/8"'
     )
   })
 })
