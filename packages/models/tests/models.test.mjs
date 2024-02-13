@@ -1,4 +1,4 @@
-import chai from 'chai'
+import * as chai from 'chai'
 import * as all from '../src/index.mjs'
 
 const expect = chai.expect
