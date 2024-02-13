@@ -152,46 +152,55 @@ function hugoFront({
   // Paperless?
   if (paperless) {
     macro('vd', {
+      id: 'vFrontNeck',
       from: points.cfRibbing,
       to: points.cfNeck,
       x: points.cfNeck.x - 15,
     })
     macro('vd', {
+      id: 'vFrontAll',
       from: points.cfRibbing,
       to: points.raglanTipFront,
       x: points.cfNeck.x - 30,
     })
     macro('vd', {
+      id: 'vFrontSideSeam',
       from: points.ribbing,
       to: points.armhole,
       x: points.ribbing.x + 15 + sa,
     })
     macro('hd', {
+      id: 'hFrontNeckhole',
       from: points.cfNeck,
       to: points.raglanTipFront,
       y: points.raglanTipFront.y - 15 - sa,
     })
     macro('hd', {
+      id: 'hFrontArmhole',
       from: points.raglanTipFront,
       to: points.armhole,
       y: points.raglanTipFront.y - 15 - sa,
     })
     macro('hd', {
+      id: 'hFrontPocketWidth',
       from: points.cfRibbing,
       to: points.pocketTop,
       y: points.cfRibbing.y + 15 + sa,
     })
     macro('hd', {
+      id: 'hFrontPocketTip',
       from: points.cfRibbing,
       to: points.pocketTip,
       y: points.cfRibbing.y + 30 + sa,
     })
     macro('hd', {
+      id: 'hFrontWidthFull',
       from: points.cfRibbing,
       to: points.ribbing,
       y: points.cfRibbing.y + 45 + sa,
     })
     macro('vd', {
+      id: 'vFrontPocket',
       from: points.pocketHem,
       to: points.pocketTop,
       x: points.pocketTip.x + 15,
