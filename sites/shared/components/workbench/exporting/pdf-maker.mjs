@@ -118,12 +118,44 @@ export class PdfMaker {
 
   /** generate the title for the cover page */
   async generateCoverPageTitle() {
-    this.addText('FreeSewing', 28)
-      .addText(this.strings.tagline, 12, 20)
-      .addText(this.strings.design, 48, -8)
+    // FreeSewing tag
+    this.addText('FreeSewing', 20).addText(this.strings.tagline, 10, 4)
 
-    await SVGtoPDF(this.pdf, logoSvg, this.pdf.page.width - lineStart - 100, lineStart, {
-      width: 100,
+    // Design name
+    this.addText(this.strings.design, 32)
+
+    // Measurement Set
+    this.addText('Measurement Set: ' + this.strings.forName, 10)
+
+    // Date
+    const currentDateTime = new Date().toLocaleString('en', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      timeZoneName: 'short',
+    })
+    this.addText('PDF Generated: ' + currentDateTime, 10)
+
+    // Settings YAML
+    const savedLineLevel = this.lineLevel + 2
+    const savedWidth = this.pdf.widthOfString('Settings: ') + 50
+    this.addText('Settings: ', 10)
+    this.pdf.fontSize(6)
+    this.pdf.text('(Measurement values are in mm.)', savedWidth, savedLineLevel)
+    this.addText(this.strings.yaml, 8)
+
+    // Notes and Warnings
+    if (this.strings.notes) {
+      this.addText('Notes:', 10).addText(this.strings.notes, 8)
+    }
+    if (this.strings.warns) {
+      this.addText('Warnings:', 10).addText(this.strings.warns, 8)
+    }
+
+    await SVGtoPDF(this.pdf, logoSvg, this.pdf.page.width - lineStart - 50, lineStart, {
+      width: 50,
       height: this.lineLevel - lineStart,
       preserveAspectRatio: 'xMaxYMin meet',
     })
@@ -220,7 +252,8 @@ export class PdfMaker {
     this.pdf.fontSize(fontSize)
     this.pdf.text(text, 50, this.lineLevel)
 
-    this.lineLevel += fontSize + marginBottom
+    this.lineLevel += this.pdf.heightOfString(text) + marginBottom
+
     return this
   }
 }
