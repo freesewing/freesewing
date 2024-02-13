@@ -252,7 +252,6 @@ export class PdfMaker {
     this.pdf.fontSize(fontSize)
     this.pdf.text(text, 50, this.lineLevel)
 
-    const lines = text.split(/\r\n|\r|\n/).length
     this.lineLevel += this.pdf.heightOfString(text) + marginBottom
 
     return this
