@@ -817,7 +817,14 @@ export const MsetButton = (props) => <MsetCard {...props} href={false} />
 export const MsetLink = (props) => <MsetCard {...props} onClick={false} useA={false} />
 export const MsetA = (props) => <MsetCard {...props} onClick={false} useA={true} />
 
-export const UserSetPicker = ({ design, t, href, clickHandler, size = 'lg' }) => {
+export const UserSetPicker = ({
+  design,
+  t,
+  href,
+  clickHandler,
+  missingClickHandler,
+  size = 'lg',
+}) => {
   // Hooks
   const backend = useBackend()
   const { control } = useAccount()
@@ -899,9 +906,10 @@ export const UserSetPicker = ({ design, t, href, clickHandler, size = 'lg' }) =>
           </Popout>
           <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
             {lackingSets.map((set) => (
-              <MsetLink
+              <MsetButton
                 {...{ set, control, design }}
-                onClick={clickHandler}
+                onClick={missingClickHandler}
+                href={href}
                 requiredMeasies={measurements[design]}
                 key={set.id}
                 size={size}
