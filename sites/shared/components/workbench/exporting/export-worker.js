@@ -51,6 +51,9 @@ const exportYaml = (settings) => exportBlob(yaml.dump(settings), 'application/x-
 const exportSvg = (svg) => exportBlob(svg, 'image/svg+xml')
 
 const exportPdf = async (data) => {
+  // Save yaml for coversheet
+  data.strings.yaml = yaml.dump(data.settings)
+
   const maker = data.format === 'pdf' ? new SinglePdfMaker(data) : new PdfMaker(data)
   await maker.makePdf()
   postSuccess(await maker.toBlob())
