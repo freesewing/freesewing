@@ -33,6 +33,14 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
     setView('draft')
   }
 
+  const loadMissingMeasurements = (set) => {
+    update.settings([
+      [['measurements'], designMeasurements(Design, set.measies)],
+      [['units'], set.imperial ? 'imperial' : 'metric'],
+    ])
+    setView('measies')
+  }
+
   return (
     <div className="max-w-7xl mt-8 mx-auto px-4">
       <h2>{t('account:measurements')}</h2>
@@ -68,6 +76,7 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
               key={2}
               design={design}
               clickHandler={loadMeasurements}
+              missingClickHandler={loadMissingMeasurements}
               t={t}
               size="md"
             />,
