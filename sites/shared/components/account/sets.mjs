@@ -139,14 +139,31 @@ export const MsetCard = ({
     wrapperProps.style.backgroundPosition = 'bottom right'
 
   let icon = <span></span>
+  let missingMeasies = ''
+  let linebreak = ''
+  const maxLength = 75
   if (design) {
-    const [hasMeasies] = hasRequiredMeasurements(designMeasurements[design], set.measies, true)
+    const [hasMeasies, missing] = hasRequiredMeasurements(
+      designMeasurements[design],
+      set.measies,
+      true
+    )
     const iconClasses = 'w-8 h-8 p-1 rounded-full -mt-2 -ml-2 shadow'
     icon = hasMeasies ? (
       <OkIcon className={`${iconClasses} bg-success text-success-content`} stroke={4} />
     ) : (
       <NoIcon className={`${iconClasses} bg-error text-error-content`} stroke={3} />
     )
+    if (missing.length > 0) {
+      let missingString = 'Missing: ' + missing.toString().replaceAll(',', ', ')
+      if (missingString.length > maxLength) {
+        const lastSpace = missingString.lastIndexOf(' ', maxLength)
+        missingString = missingString.substring(0, lastSpace) + ' and more...'
+      }
+      const measieClasses = 'font-normal text-xs'
+      missingMeasies = <span className={`${measieClasses}`}>{missingString}</span>
+      linebreak = <br />
+    }
   }
 
   const inner = (
@@ -154,6 +171,8 @@ export const MsetCard = ({
       {icon}
       <span className="bg-neutral text-neutral-content px-4 w-full bg-opacity-50 py-2 rounded rounded-t-none font-bold leading-5">
         {language ? set[`name${capitalize(language)}`] : set.name}
+        {linebreak}
+        {missingMeasies}
       </span>
     </>
   )
