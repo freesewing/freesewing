@@ -124,6 +124,7 @@ export const MsetCard = ({
     sm: 36,
   }
   const s = sizes[size]
+  const { t } = useTranslation(ns)
 
   const wrapperProps = {
     className: `bg-base-300 aspect-square h-${s} w-${s} mb-2
@@ -155,10 +156,13 @@ export const MsetCard = ({
       <NoIcon className={`${iconClasses} bg-error text-error-content`} stroke={3} />
     )
     if (missing.length > 0) {
-      let missingString = 'Missing: ' + missing.toString().replaceAll(',', ', ')
+      const translated = missing.map((m) => {
+        return t(m)
+      })
+      let missingString = t('missing') + ': ' + translated.join(', ')
       if (missingString.length > maxLength) {
-        const lastSpace = missingString.lastIndexOf(' ', maxLength)
-        missingString = missingString.substring(0, lastSpace) + ' and more...'
+        const lastSpace = missingString.lastIndexOf(', ', maxLength)
+        missingString = missingString.substring(0, lastSpace) + ', ' + t('andMore') + '...'
       }
       const measieClasses = 'font-normal text-xs'
       missingMeasies = <span className={`${measieClasses}`}>{missingString}</span>
