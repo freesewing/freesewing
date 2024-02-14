@@ -76,7 +76,20 @@ const SetLineup = ({ sets = [], href = false, onClick = false }) => (
       if (onClick) props.onClick = () => onClick(set)
       else if (typeof href === 'function') props.href = href(set.id)
 
-      if (onClick) return <button {...props} key={set.id}></button>
+      const { i18n } = useTranslation(ns)
+      const lang = i18n.language
+      if (onClick)
+        return (
+          <div>
+            <div>
+              <button {...props} key={set.id}></button>
+            </div>
+            <div className="text-xl absolute">
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+              <span>{set[`name${capitalize(lang)}`]}</span>
+            </div>
+          </div>
+        )
       else if (href) return <Link {...props} key={set.id}></Link>
       else return <div {...props} key={set.id}></div>
     })}
