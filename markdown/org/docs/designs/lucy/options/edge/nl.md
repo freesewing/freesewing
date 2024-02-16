@@ -1,8 +1,8 @@
 ---
-title: ongedefinieerd
+title: Rand
 ---
 
-ongedefinieerd
+Deze optie bepaalt de breedte van de bovenrand van je zak. 
 
 
 
