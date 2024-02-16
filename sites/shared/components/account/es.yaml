@@ -240,6 +240,8 @@ thankYouVeryMuch: Muchas gracias
 csetSuggestedMsg: Tu envío ha sido registrado y será procesado por uno de nuestros conservadores.
 itIsAvailableAt: Está disponible en
 csetNameMsg: Cada conjunto curado tiene un nombre. Puedes sugerir tu propio nombre o un seudónimo.
+missing: Missing
+andMore: and more
 patternNew: Generar un nuevo patrón
 patternNewInfo: Elige un diseño, añade tu juego de medidas y generaremos un patrón de costura a medida para ti.
 designNew: Crear un nuevo diseño
