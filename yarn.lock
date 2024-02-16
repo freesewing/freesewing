@@ -13125,10 +13125,10 @@ supports-preserve-symlinks-flag@^1.0.0:
   version "0.1.10"
   resolved "https://git@github.com/eriese/SVG-to-PDFKit#388d8c29a7b6b1353ea6b65f683ed939e4a7725f"
 
-swagger-ui-dist@5.11.4, swagger-ui-dist@>=5.0.0:
-  version "5.11.4"
-  resolved "https://registry.yarnpkg.com/swagger-ui-dist/-/swagger-ui-dist-5.11.4.tgz#bab6d320a7e9c9b73018ea747f695b83b184ef23"
-  integrity sha512-2rxWfHXIKCcCP/V1Y89MV1vmnTc6J0hRLzPAWtkM2BYnolVE0iNrHGGQRneiuo5/g4kYa5Kyk8DxPRqr4WWQ1w==
+swagger-ui-dist@5.11.6, swagger-ui-dist@>=5.0.0:
+  version "5.11.6"
+  resolved "https://registry.yarnpkg.com/swagger-ui-dist/-/swagger-ui-dist-5.11.6.tgz#3980959124c3e156c1e1cb5cf918a1c09cff6051"
+  integrity sha512-K5BpYuMoPpJY7NwCHIWohH6tU9o0fs1+plNT5KJ+3BBlVEh4H1CpeKJV8o91lpscVY9oqb2jmaAassnW3wVoTg==
 
 swagger-ui-express@5.0.0:
   version "5.0.0"
