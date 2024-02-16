@@ -1,8 +1,8 @@
 ---
-title: sin definir
+title: Longitud
 ---
 
-sin definir
+La opción de longitud determina la longitud de tu bolsillo. 
 
 
 
