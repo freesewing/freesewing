@@ -1,3 +1,18 @@
+Unreleased:
+  Changed:
+    plugin-bust:
+      - This plugin now uses the `preSetDraft` rather than `preDraft` lifecycle hook
+      - Conditionality has been moved to the `preSetDraft` lifecycle hook, rather than exposing a `withCondition` named export
+      - The plugin will now always be loaded, but will check for each drafted set whether it should make any changes.
+
+  Deprecated:
+    plugin-bust:
+      - The `withCondition` named  export is deprecated and will always return true.
+
+  Fixed:
+    hugo:
+      - Add missing dimension id attributes
+
 3.2.0:
   date: 2024-02-11
 

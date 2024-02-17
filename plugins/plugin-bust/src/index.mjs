@@ -4,13 +4,12 @@ export const plugin = {
   name,
   version,
   hooks: {
-    preDraft: function ({ settings }) {
-      for (const i in settings) {
-        if (settings[i].measurements) {
-          if (typeof settings[i].measurements.bust === 'undefined') {
-            settings[i].measurements.bust = settings[i].measurements.chest
-            settings[i].measurements.chest = settings[i].measurements.highBust
-          }
+    preSetDraft: function ({ settings, activeSet }) {
+      const set = settings[Number(activeSet)]
+      if (set.measurements && set.options?.draftForHighBust && set.measurements?.highBust) {
+        if (typeof set.measurements.bust === 'undefined') {
+          set.measurements.bust = set.measurements.chest
+          set.measurements.chest = set.measurements.highBust
         }
       }
     },
@@ -24,6 +23,11 @@ export const pluginBust = plugin
 // Helper method to conditionally load this plugin
 export const withCondition = {
   plugin,
-  condition: (settings = false) =>
-    settings?.options?.draftForHighBust && settings?.measurements?.highBust ? true : false,
+  condition: (settings = false) => {
+    console.log(
+      "WARNING: The 'withCondition' named export in @freesewing/plugin-bust is deprecated. Conditionality has moved to the preSetDraft lifecycle hook"
+    )
+
+    return true
+  },
 }
