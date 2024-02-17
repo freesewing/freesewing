@@ -15,6 +15,7 @@ import {
 import get from 'lodash.get'
 import mustache from 'mustache'
 import he from 'he'
+import yaml from 'js-yaml'
 
 export const ns = ['cut', 'plugin', 'common']
 export const exportTypes = {
@@ -185,13 +186,26 @@ export const handleExport = async ({
         }
       }
 
+      // Initialize the pattern stores
+      pattern.getConfig()
+
+      // Save the measurement set name to pattern stores
+      if (settings?.metadata?.setName) {
+        pattern.store.set('data.setName', settings.metadata.setName)
+        for (const store of pattern.setStores) store.set('data.setName', settings.metadata.setName)
+      }
+
       // draft and render the pattern
       pattern.draft()
       workerArgs.svg = pattern.render()
 
-      // Save pattern forName, notes, warnings info for coversheet
+      // Get coversheet info: setName, settings YAML, version, notes, warnings
       const store = pattern.setStores[pattern.activeSet]
-      workerArgs.strings.forName = store.get('data.for', 'ephemeral')
+      workerArgs.strings.setName = settings?.metadata?.setName
+        ? settings.metadata.setName
+        : 'ephemeral'
+      workerArgs.strings.yaml = yaml.dump(settings)
+      workerArgs.strings.version = store?.data?.version ? store.data.version : ''
       const notes = store?.plugins?.['plugin-annotations']?.flags?.note
         ? store?.plugins?.['plugin-annotations']?.flags?.note
         : []
