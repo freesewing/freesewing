@@ -50,51 +50,54 @@ import {
 
 export const ns = ['account', 'patterns', 'status', 'measurements', 'sets', inputNs]
 
-const SetLineup = ({ sets = [], href = false, onClick = false }) => (
-  <div
-    className={`w-full flex flex-row ${
-      sets.length > 1 ? 'justify-start px-8' : 'justify-center'
-    } overflow-x-scroll`}
-    style={{
-      backgroundImage: `url(/img/lineup-backdrop.svg)`,
-      width: 'auto',
-      backgroundSize: 'auto 100%',
-      backgroundRepeat: 'repeat-x',
-    }}
-  >
-    {sets.map((set) => {
-      const props = {
-        className: 'aspect-[1/3] w-auto h-96',
-        style: {
-          backgroundImage: `url(${cloudflareImageUrl({ id: `cset-${set.id}`, type: 'lineup' })})`,
-          width: 'auto',
-          backgroundSize: 'contain',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-        },
-      }
-      if (onClick) props.onClick = () => onClick(set)
-      else if (typeof href === 'function') props.href = href(set.id)
+const SetLineup = ({ sets = [], href = false, onClick = false }) => {
+  const { i18n } = useTranslation(ns)
+  const lang = i18n.language
+  return (
+    <div
+      className={`w-full flex flex-row ${
+        sets.length > 1 ? 'justify-start px-8' : 'justify-center'
+      } overflow-x-scroll`}
+      style={{
+        backgroundImage: `url(/img/lineup-backdrop.svg)`,
+        width: 'auto',
+        backgroundSize: 'auto 100%',
+        backgroundRepeat: 'repeat-x',
+      }}
+    >
+      {sets.map((set) => {
+        const props = {
+          className: 'aspect-[1/3] w-auto h-96',
+          style: {
+            backgroundImage: `url(${cloudflareImageUrl({ id: `cset-${set.id}`, type: 'lineup' })})`,
+            width: 'auto',
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+          },
+        }
 
-      const { i18n } = useTranslation(ns)
-      const lang = i18n.language
-      if (onClick)
-        return (
-          <div>
+        if (onClick) props.onClick = () => onClick(set)
+        else if (typeof href === 'function') props.href = href(set.id)
+
+        if (onClick)
+          return (
             <div>
-              <button {...props} key={set.id}></button>
+              <div>
+                <button {...props} key={set.id}></button>
+              </div>
+              <div className="text-xl absolute">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span>{set[`name${capitalize(lang)}`]}</span>
+              </div>
             </div>
-            <div className="text-xl absolute">
-              <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-              <span>{set[`name${capitalize(lang)}`]}</span>
-            </div>
-          </div>
-        )
-      else if (href) return <Link {...props} key={set.id}></Link>
-      else return <div {...props} key={set.id}></div>
-    })}
-  </div>
-)
+          )
+        else if (href) return <Link {...props} key={set.id}></Link>
+        else return <div {...props} key={set.id}></div>
+      })}
+    </div>
+  )
+}
 
 const ShowCuratedSet = ({ cset }) => {
   const { control } = useAccount()
