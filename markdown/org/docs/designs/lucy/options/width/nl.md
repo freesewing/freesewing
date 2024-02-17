@@ -1,8 +1,8 @@
 ---
-title: ongedefinieerd
+title: Breedte
 ---
 
-ongedefinieerd
+Deze optie bepaalt de totale breedte van de zak. 
 
 
 
