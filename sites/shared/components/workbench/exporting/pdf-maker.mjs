@@ -125,7 +125,6 @@ export class PdfMaker {
     this.addText(this.strings.design, 32)
     let savedLineLevel = this.lineLevel - 27
     let savedWidth = this.pdf.widthOfString(this.strings.design) + 50
-    let nameString = this.strings.design
     const versionSetString = ' v' + this.strings.version + ' ( ' + this.strings.setName + ' )'
     this.pdf.fontSize(18)
     this.pdf.text(versionSetString, savedWidth, savedLineLevel)
