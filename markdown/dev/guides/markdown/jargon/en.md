@@ -4,7 +4,7 @@ order: yyy
 ---
 
 Jargon are terms that could throw off new users.
-Rather than create a glossary on every page, we use a plugin to manage
+Rather than create a glossary on every page, we use MDX to manage
 jargon terms for us. This page shows you how to use it.
 
 <Tip compact>Think of jargon as glossary terms</Tip>
@@ -23,13 +23,13 @@ We are migrating from _cjs_ to _esm_ modules
 
 ## Adding jargon
 
-To add a new jargon term, you need to add it to the jargon file for the
-website you'd like to add it to:
+To add a new jargon term, you first need to document it, than you can add it to
+the jargon component for the website you'd like to add it to:
 
 | Website | Jargon file | GitHub link |
 | ------- | ----------- | ----------- |
-| freesewing.dev | `sites/dev/jargon.mjs` | [jargon.mjs](https://github.com/freesewing/freesewing/blob/develop/sites/dev/jargon.mjs) |
-| freesewing.org | `sites/org/jargon.mjs` | [jargon.mjs](https://github.com/freesewing/freesewing/blob/develop/sites/org/jargon.mjs) |
+| freesewing.dev | `sites/dev/components/jargon.mjs` | [jargon.mjs](https://github.com/freesewing/freesewing/blob/develop/sites/dev/comonents/jargon.mjs) |
+| freesewing.org | `sites/org/components/jargon.mjs` | [jargon.mjs](https://github.com/freesewing/freesewing/blob/develop/sites/org/components/jargon.mjs) |
 
 The file consists of key/value pairs where:
 

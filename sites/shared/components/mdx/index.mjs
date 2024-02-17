@@ -16,6 +16,8 @@ import { collection } from 'site/hooks/use-design.mjs'
 import { DesignMeasurements } from './design-measurements.mjs'
 import { DesignOptions } from './design-options.mjs'
 import { MeasieImage } from 'shared/components/measurements/image.mjs'
+// Dev/Org jargon
+import { Term } from 'site/components/jargon.mjs'
 
 export const components = (site = 'org', slug = []) => {
   const base = {
@@ -30,6 +32,7 @@ export const components = (site = 'org', slug = []) => {
     Tip: (props) => <Popout {...props} tip />,
     Tldr: (props) => <Popout {...props} tldr />,
     Warning: (props) => <Popout {...props} warning />,
+    em: (props) => <Term {...props} />,
   }
   const extra = {
     pre: (props) => <Highlight {...props} />,
