@@ -86,11 +86,7 @@ const SetLineup = ({ sets = [], lang, href = false, onClick = false }) => (
       let img = <div {...props} key={set.id}></div>
       if (onClick) img = <button {...props} key={set.id}></button>
       else if (href) img = <Link {...props} key={set.id}></Link>
-      return (
-        <SetNameWrapper key={set.id} name={set[`name${capitalize(lang)}`]}>
-          {img}
-        </SetNameWrapper>
-      )
+      return <SetNameWrapper name={set[`name${capitalize(lang)}`]}>{img}</SetNameWrapper>
     })}
   </div>
 )
