@@ -1,4 +1,4 @@
-import { withCondition as bustPlugin } from '@freesewing/plugin-bust'
+import { bustPlugin } from '@freesewing/plugin-bust'
 
 export const base = {
   name: 'brian.base',

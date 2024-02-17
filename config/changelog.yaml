@@ -1,5 +1,7 @@
 Unreleased:
   Changed:
+    brian:
+      - Always load plugin-bust due to its changes in how it handle conditionality.
     plugin-bust:
       - This plugin now uses the `preSetDraft` rather than `preDraft` lifecycle hook
       - Conditionality has been moved to the `preSetDraft` lifecycle hook, rather than exposing a `withCondition` named export
