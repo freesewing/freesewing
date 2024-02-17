@@ -17,7 +17,7 @@ export const MeasiesEditor = ({ Design, settings, update }) => {
     <div className="max-w-2xl mx-auto">
       <h5>{t('account:requiredMeasurements')}</h5>
       {Object.keys(Design.patternConfig.measurements).length === 0 ? (
-        <p>(None)</p>
+        <p>({t('account:none')})</p>
       ) : (
         <div>
           {Design.patternConfig.measurements.map((m) => (
@@ -41,7 +41,7 @@ export const MeasiesEditor = ({ Design, settings, update }) => {
       )}
       <h5>{t('account:optionalMeasurements')}</h5>
       {Object.keys(Design.patternConfig.optionalMeasurements).length === 0 ? (
-        <p>(None)</p>
+        <p>({t('account:none')})</p>
       ) : (
         Design.patternConfig.optionalMeasurements.map((m) => (
           <MeasieInput
