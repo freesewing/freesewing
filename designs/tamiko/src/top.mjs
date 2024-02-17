@@ -1,4 +1,4 @@
-import { withCondition as bustPlugin } from '@freesewing/plugin-bust'
+import { bustPlugin } from '@freesewing/plugin-bust'
 
 function tamikoTop({
   sa,
