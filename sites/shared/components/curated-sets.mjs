@@ -50,7 +50,14 @@ import {
 
 export const ns = ['account', 'patterns', 'status', 'measurements', 'sets', inputNs]
 
-const SetLineup = ({ sets = [], href = false, onClick = false }) => (
+const SetNameWrapper = ({ name, children }) => (
+  <div className="flex flex-col items-center">
+    {children}
+    <b>{name}</b>
+  </div>
+)
+
+const SetLineup = ({ sets = [], lang, href = false, onClick = false }) => (
   <div
     className={`w-full flex flex-row ${
       sets.length > 1 ? 'justify-start px-8' : 'justify-center'
@@ -79,6 +86,7 @@ const SetLineup = ({ sets = [], href = false, onClick = false }) => (
       let img = <div {...props} key={set.id}></div>
       if (onClick) img = <button {...props} key={set.id}></button>
       else if (href) img = <Link {...props} key={set.id}></Link>
+
       return (
         <SetNameWrapper key={set.id} name={set[`name${capitalize(lang)}`]}>
           {img}
@@ -100,7 +108,7 @@ const ShowCuratedSet = ({ cset }) => {
     <>
       <h2>{cset[`name${capitalize(lang)}`]}</h2>
       <div className="w-full">
-        <SetLineup sets={[cset]} />
+        <SetLineup sets={[cset]} lang={lang} />
       </div>
 
       <div className="flex flex-wrap flex-row gap-2 w-full mt-4 items-center justify-end">
@@ -211,6 +219,8 @@ export const CuratedSets = ({ href = false, clickHandler = false, published = tr
   // Hooks
   const backend = useBackend()
   const { setLoadingStatus } = useContext(LoadingStatusContext)
+  const { i18n } = useTranslation(ns)
+  const lang = i18n.language
 
   // State
   const [sets, setSets] = useState([])
@@ -241,7 +251,7 @@ export const CuratedSets = ({ href = false, clickHandler = false, published = tr
 
   return (
     <div className="max-w-7xl xl:pl-4">
-      <SetLineup {...lineupProps} />
+      <SetLineup {...lineupProps} lang={lang} />
       {selected && <ShowCuratedSet cset={sets[selected]} />}
     </div>
   )
@@ -250,7 +260,8 @@ export const CuratedSets = ({ href = false, clickHandler = false, published = tr
 // Component for the maintaining the list of curated-sets
 export const CuratedSetsList = ({ href = false }) => {
   // Hooks
-  const { t } = useTranslation(ns)
+  const { t, i18n } = useTranslation(ns)
+  const lang = i18n.language
   const backend = useBackend()
   const { setLoadingStatus, LoadingProgress } = useContext(LoadingStatusContext)
   const [refresh, setRefresh] = useState(0)
@@ -376,7 +387,7 @@ export const CuratedSetsList = ({ href = false }) => {
           ))}
         </tbody>
       </table>
-      <SetLineup {...lineupProps} />
+      <SetLineup {...lineupProps} lang={lang} />
     </div>
   )
 }
