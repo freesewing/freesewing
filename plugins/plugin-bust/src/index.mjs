@@ -23,7 +23,7 @@ export const pluginBust = plugin
 // Helper method to conditionally load this plugin
 export const withCondition = {
   plugin,
-  condition: (settings = false) => {
+  condition: () => {
     console.log(
       "WARNING: The 'withCondition' named export in @freesewing/plugin-bust is deprecated. Conditionality has moved to the preSetDraft lifecycle hook"
     )
