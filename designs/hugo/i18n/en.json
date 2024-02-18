@@ -15,15 +15,15 @@
   },
   "s": {
     "cutPocket.t": "The pocket is not shown",
-    "cutPocket.d": "The **Pocket** (4) is not shown, but you can trace it from the Front part (1), which has the pocket outline on it (not including seam allowance).",
+    "cutPocket.d": "The **Pocket** (4) is not shown, but you can trace it from the Front part (1), which has the pocket outline on it (not including seam allowance). The front part's cut-on-fold-and-grainline is also the pocket's cut-on-fold-and grainline.",
     "cutCuff.t": "The cuff is not shown",
-    "cutCuff.d": "The **Cuff** (9) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long.",
+    "cutCuff.d": "The **Cuff** (9) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long, with the grainline parallel to the width.",
     "cutHoodCenter.t": "The hood center is not shown",
-    "cutHoodCenter.d": "The **Hood center** (7) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long.",
+    "cutHoodCenter.d": "The **Hood center** (7) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long, with the grainline parallel to the width.",
     "cutNeckBinding.t": "The neck binding is not shown",
-    "cutNeckBinding.d": "The **Neck Binding** (10) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long.",
+    "cutNeckBinding.d": "The **Neck Binding** (10) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long, with the grainline parallel to the length.",
     "cutWaistband.t": "The waistband is not shown",
-    "cutWaistband.d": "The **Waistband** (8) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long"
+    "cutWaistband.d": "The **Waistband** (8) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long, with the grainline parallel to the width."
   },
   "o": {
     "ribbingHeight": {
