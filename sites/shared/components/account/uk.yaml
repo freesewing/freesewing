@@ -276,6 +276,7 @@ code: Код
 aboutThing: Про { thing }
 requiredMeasurements: Необхідні заміри
 optionalMeasurements: Додаткові заміри
+none: Жодного
 designOptions: Варіанти дизайну
 parts: Деталі
 plugins: Плагіни
