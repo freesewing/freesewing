@@ -1,4 +1,5 @@
 import { cloudflareImageUrl, nsMerge } from 'shared/utils.mjs'
+import { makers } from 'site/prebuild/makers.mjs'
 // Components
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { Lightbox } from 'shared/components/lightbox.mjs'
@@ -21,6 +22,7 @@ import {
 import { Toc, ns as tocNs } from 'shared/components/mdx/toc.mjs'
 import { PrevNext } from 'shared/components/prev-next.mjs'
 import { Tag } from 'shared/components/tag.mjs'
+import { UserProfile } from 'shared/components/user-profile.mjs'
 
 export const ns = nsMerge(navNs, tocNs, timeagoNs, 'docs')
 
@@ -44,7 +46,7 @@ const PostMeta = ({ frontmatter, t }) => (
     <div>
       By{' '}
       <a href="#maker" className="text-secondary hover:text-secondary-focus">
-        {frontmatter.author || frontmatter.maker || 'FIXME: No displayname'}
+        {makers[frontmatter.author || frontmatter.maker || 1]?.username || '???'}
       </a>
     </div>
   </div>
@@ -74,6 +76,37 @@ export const PostContent = ({ mdx, dir }) => (
   </div>
 )
 
+const ClaimThisPost = ({ t, type }) => (
+  <div id="maker" className="p-4 border rounded-lg shadow">
+    <h3>Claim this post</h3>
+    <p>
+      This post has not (yet) been associated with a FreeSewing account. Please help us assign
+      proper credit:
+    </p>
+    <div className="grid grid-cols-2 gap-2">
+      <button className="btn btn-primary btn-outline">I know who wrote this</button>
+      <button className="btn btn-primary">I wrote this</button>
+    </div>
+  </div>
+)
+
+const Maker = ({ id, type, t }) =>
+  makers[id] ? (
+    <div id="maker" className="p-4 border rounded-lg shadow">
+      <h5
+        dangerouslySetInnerHTML={{
+          __html:
+            t(type === 'blog' ? 'docs:xWroteThis' : 'docs:xMadeThis', { x: makers[id].username }) +
+            ':',
+        }}
+        className="text-center"
+      />
+      <UserProfile user={makers[id]} />
+    </div>
+  ) : (
+    <ClaimThisPost t={t} type={type} />
+  )
+
 /** layout for a page that displays a blog, showcase or newsletter */
 export const PostLayout = ({ mdx, frontmatter, type, dir }) => {
   const { t } = useTranslation(ns)
@@ -101,6 +134,11 @@ export const PostLayout = ({ mdx, frontmatter, type, dir }) => {
           <BaseLayoutProse>
             <article className="mb-12 max-w-7xl">
               <PostContent {...{ mdx }} />
+              <Maker
+                id={type === 'blog' ? frontmatter.author : frontmatter.maker}
+                type={type}
+                t={t}
+              />
               <PrevNext />
             </article>
           </BaseLayoutProse>

@@ -37,7 +37,7 @@ export const UserProfile = ({ user }) => {
           <Role role={user.role} />
         </div>
       </div>
-      <Mdx md={user.bio} />
+      {user.bio !== '--' ? <Mdx md={user.bio} /> : null}
     </>
   )
 }
