@@ -40,9 +40,10 @@ const jargon = {
 }
 ```
 
-## Using jargon terms
+## Using jargon terms in MDX content
 
-To use jargon, it's sufficient to emphasize the term:
+To use jargon inside MDX content (like the markdown of our documentation, blog
+posts, and so on), it's sufficient to emphasize the term:
 
 ```md
 We are migrating from _cjs_ to _esm_ modules
@@ -52,4 +53,14 @@ Which renders as:
 
 We are migrating from _cjs_ to _esm_ modules
 
+## Using jargon terms outside MDX content
 
+Outside MDX content -- more precisely, in React components -- you can achieve the same effect with the `Term` component:
+
+```mjs
+import { Term } from 'site/components/jargon.mjs'
+
+export const MyComponent = () => (
+  <p>Look, it works here too: <Term>esm</Term></p>
+)
+```
