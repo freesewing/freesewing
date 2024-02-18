@@ -10,5 +10,5 @@ For example, JavaScript's `console.log` method is variadic:
 console.log('one')
 console.log('one', 'two')
 console.log('one', 'two', 'three')
-console.log('It', 'word', 'regardless', 'of', 'how', 'many', 'arguments', 'you', 'pass')
+console.log('It', 'works', 'regardless', 'of', 'how', 'many', 'arguments', 'you', 'pass')
 ```

@@ -31,7 +31,7 @@ export const Term = ({ children, site, jargon = {} }) => {
 
   return term ? (
     <button
-      className="italic underline decoration-warning decoration-dotted decoration-2 bg-warning bg-opacity-20 px-1 hover:bg-transparent hover:decoration-solid hover:cursor-help"
+      className="italic underline decoration-warning decoration-dotted decoration-2 bg-warning bg-opacity-10 px-1 hover:bg-transparent hover:decoration-solid hover:cursor-help"
       onClick={() =>
         setModal(
           <ModalWrapper>
