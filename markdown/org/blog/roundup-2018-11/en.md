@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Your login background for December"
 date: "2018-11-30"
 intro: "Monthly roundup - November 2018: New showcases and a (false) security alarm"

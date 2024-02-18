@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Цей пост описує, що нового у версії 2.2 FreeSewing"
 date: "2020-02-22"
 intro: "Погляньте, що нового у FreeSewing 2.2, включаючи Breanna, наш блок ліфів для жіночого одягу"

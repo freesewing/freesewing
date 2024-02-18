@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Zoals geschiedenis? Dan is deze release echt iets voor jou."
 date: "2021-10-17"
 intro: "Ik heb zojuist de hendel overgehaald voor het uitbrengen van versie 2.19 van FreeSewing en er is een hoop in deze release gaan zitten. Voor alle details kun je de changelog bekijken, hier beperk ik me tot de hoogtepunten:"

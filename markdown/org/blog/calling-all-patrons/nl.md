@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "We bouwen een trouwe supportersgroep om mee te werken aan een duurzame toekomst voor FreeSewing.org, onze code, onze patronen en onze community."
 date: "2017-12-10"
 intro: "Oproep aan alle Patrons: sluit je aan bij onze trouwe supportersgroep"

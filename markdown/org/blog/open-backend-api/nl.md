@@ -3,7 +3,7 @@ title: De FreeSewing API voor de achterkant openen
 caption: Een messing versierde Vintage toets op zwart computertoetsenbord, door PixaBay
 date: 20231103
 intro: De FreeSewing backend API ondersteunt nu API keys zodat je er ook mee kunt communiceren
-author: joost
+author: 1
 ---
 
 Mensen uitsluiten van je API lijkt tegenwoordig in de mode te zijn. Met plaatsen als Twitter -- nee, X -- en Reddit die API-toegang blokkeren of ervoor laten betalen.

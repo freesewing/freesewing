@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Deze update bereikt je vanuit Bangkok"
 date: "2018-03-21"
 intro: "We hebben zojuist de knop voor core 1.8.0 ingedrukt. Die hobbel in het kleine getal is meestal omdat we een nieuw patroon hebben, maar in dit geval zijn er twee redenen:"

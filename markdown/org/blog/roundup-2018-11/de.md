@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Dein Login-Hintergrund für Dezember"
 date: "2018-11-30"
 intro: "Monatliche Zusammenfassung - November 2018: Neue Schaukästen und ein (falscher) Sicherheitsalarm"

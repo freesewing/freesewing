@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Halten Sie die selbstgemachte Kleidung sauber während Sie mit der Albert Schürze kochen"
 date: "17.10.2020"
 intro: "Was tun Sie, wenn Ihre Tochter eine Schürze für die Schule benötigt?"

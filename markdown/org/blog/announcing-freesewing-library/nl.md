@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Ik drink niet, maar dit leek me gepast voor een feestpost ¯\_(ツ)_/¯"
 date: "2018-08-25"
 intro: "Het eerste verjaardagsfeestje van FreeSewing.org, en de nieuwe FreeSewing-bibliotheek"

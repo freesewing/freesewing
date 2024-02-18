@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Ab jetzt 24/7 geöffnet"
 date: "2017-08-25"
 intro: "Freesewing.org ist für den Betrieb geöffnet. Das heißt, das Geschäft mit dem Verschenken von kostenlosen Nähmustern"

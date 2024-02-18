@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Je inlogachtergrond voor november"
 date: "2018-11-30"
 intro: "Maandelijkse samenvatting - oktober 2018: Vooruitgang op beta.freesewing.org"

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Foto de Karolina Grabowska de Pexels"
 date: "2021-06-27"
 intro: "Anunciamos Ursula, un patrón básico de ropa interior muy personalizable"

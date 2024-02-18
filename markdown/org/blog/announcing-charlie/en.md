@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Photo by Flo Dahm from Pexels"
 date: "2021-04-18"
 intro: "We've just published FreeSewing v2.15 and it comes with a new pattern: The Charlie Chinos trouser pattern ."

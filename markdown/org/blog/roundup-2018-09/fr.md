@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Ton arrière-plan de connexion pour le mois d'octobre"
 date: "2018-09-30"
 intro: "Tour d'horizon mensuel - septembre 2018 : Shin, des tonnes de JavaScript, et une longue liste TODO."

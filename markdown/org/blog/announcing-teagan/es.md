@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Foto de Alex Andrews de Pexels"
 date: "2020-09-09"
 intro: "Hace un tiempo alguien preguntó si teníamos un patrón de camiseta en freesewing.org y resulta que no."

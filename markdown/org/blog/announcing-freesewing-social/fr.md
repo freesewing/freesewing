@@ -3,7 +3,7 @@ title: Annonce FreeSewing.social
 caption: Photo de silhouette d'un éléphant à l'heure dorée par Renato Conti
 date: 20231103
 intro: FreeSewing a maintenant une maison sur le fediverse, et tu peux aussi t'y inscrire.
-author: joost
+author: 1
 ---
 
 FreeSewing s'est taillé un espace sur le Fediverse et cet espace est [FreeSewing.social](https://freesewing.social). Il s'agit d'une instance Mastodon ouverte à tous les utilisateurs de FreeSewing et à l'ensemble de la communauté.

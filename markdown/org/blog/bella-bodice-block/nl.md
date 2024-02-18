@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Weet je nog dat we naar buiten mochten?"
 date: "2021-01-17"
 intro: "Het Bella bovenstuk basispatroon voor dameskledij"

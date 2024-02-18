@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Quentin omringd door onze toekomstige robotoverheersers."
 date: "2017-12-06"
 intro: "Het Florent Flat Cap patroon is nu beschikbaar in bèta. Dat is nog eens een cadeau gesorteerd."

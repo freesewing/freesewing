@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "No bebo, pero esto me pareció apropiado para un post de celebración ¯\_(ツ)_/¯"
 date: "2018-08-25"
 intro: "Celebrando un año de freesewing.org: Anunciamos la biblioteca freesewing"

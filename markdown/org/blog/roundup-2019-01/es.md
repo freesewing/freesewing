@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Tu fondo de conexión para febrero"
 date: "2019-01-31"
 intro: "¿Realmente estamos a finales de enero? ¿Ya?"

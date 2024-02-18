@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Comme l'histoire ? Dans ce cas, cette publication va te plaire."
 date: "2021-10-17"
 intro: "Je viens de lancer la version 2.19 de FreeSewing et beaucoup de choses ont été prises en compte dans cette version. Pour plus de détails, tu peux consulter le journal des modifications, mais je m'en tiendrai ici aux points essentiels :"

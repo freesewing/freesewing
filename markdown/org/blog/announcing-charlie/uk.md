@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Фотографія Flo Dahm з Pexels"
 date: "2021-04-18"
 intro: "Ми щойно опублікували FreeSewing v2.15 з новою викрійкою: Викрійка штанів Чарлі Чінос ."

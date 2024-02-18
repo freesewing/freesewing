@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Note: ceci est un long message. Bien que nettement moins que ce livre"
 date: "2020-08-30"
 intro: "Aidez à faire grandir FreeSewing au-delà de ce que je peux faire seul"

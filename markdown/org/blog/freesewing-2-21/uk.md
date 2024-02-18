@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Рожевий Hi та його предок BLÅHAJ"
 date: "2022-06-27"
 intro: "FreeSewing 2.21 додає дизайни Bob, Hi, Lucy, Noble та Unice"

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Scales, how do they work?"
 date: "2018-01-04"
 intro: "Freesewing core v1.3.0 is out; Comes with fixes so good that we back-ported them to all your drafts"

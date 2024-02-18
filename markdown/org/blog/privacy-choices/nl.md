@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Foto door <a href='https://pixabay.com/en/users/herbert2512-2929941/' target='_BLANK' rel='nofollow'>Herbert</a>"
 date: "2017-06-16"
 intro: "Het wereldwijde web tast steeds meer je privacy aan. Facebook, Google en een stortvloed aan advertentienetwerken houden allemaal je browsertabbladen in de gaten. Ze volgen je op het web, houden in de gaten welke sites je bezoekt, zodat ze meer informatie over je kunnen verzamelen en die aan adverteerders kunnen verkopen."

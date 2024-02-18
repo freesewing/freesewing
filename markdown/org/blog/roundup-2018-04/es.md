@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Tu fondo de conexión para mayo"
 date: "2018-04-30"
 intro: "Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene."

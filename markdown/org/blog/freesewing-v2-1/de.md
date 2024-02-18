@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "In diesem Beitrag geht es hauptsächlich um unsere Arbeit an der progressiven Offenlegung. Außerdem: Drei neue Schnittmuster!"
 date: "2019-10-06"
 intro: "Wir haben gerade FreeSewing v2.1 veröffentlicht 🎉"

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Este post describe las novedades de la versión 2.2 de FreeSewing"
 date: "2020-02-22"
 intro: "Un vistazo a las novedades de FreeSewing 2.2, incluida Breanna, nuestro bloque de corpiño para ropa de mujer"

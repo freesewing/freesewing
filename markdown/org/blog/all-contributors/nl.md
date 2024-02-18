@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "We bedanken onze medewerkers en willen ervoor zorgen dat hun bijdragen de eer krijgen die ze verdienen"
 date: "2021-11-28"
 intro: "Tijdens onze laatste contributor call hebben we besloten om de All Contributors specificatie te implementeren als een manier om al onze contribuanten te eren."

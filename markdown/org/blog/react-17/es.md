@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Gracias a nappy.co por la foto"
 date: "2021-05-24"
 intro: "FreeSewing 2.16 viene con React 17 y Webpack 5"

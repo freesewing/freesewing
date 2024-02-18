@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Je inlogachtergrond voor februari"
 date: "2019-01-31"
 intro: "Is het echt eind januari? Nu al?"

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Picture by <a href='https://pixabay.com/en/users/herbert2512-2929941/' target='_BLANK' rel='nofollow'>Herbert</a>"
 date: "2017-06-16"
 intro: "The world wide web is increasingly eroding your privacy. Facebook, Google, and an avalanche of ad networks out there are all keeping tabs on your browser tabs. Tracking you on the web, keeping an an eye on the sites your visiting, so that they can gather more info on you, and sell that to advertisers."

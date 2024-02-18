@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Mantén limpia tu ropa casera mientras cocinas con el delantal Albert"
 date: "2020-10-17"
 intro: "¿Qué harías si tu hija necesitara un delantal para el colegio?"

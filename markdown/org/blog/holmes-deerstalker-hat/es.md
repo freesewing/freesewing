@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Screengrab del tutorial de YouTube de Bernadette Banner para este sombrero"
 date: "2020-02-23"
 intro: "Nuevo patrón: El sombrero Holmes Deerstalker"

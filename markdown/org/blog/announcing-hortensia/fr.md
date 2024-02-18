@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Un exemple de Hortensia fait par le designer"
 date: "2021-02-13"
 intro: "Je suis heureuse de t'annoncer la disponibilité immédiate de notre dernier patron FreeSewing : le sac à main Hortensia ."

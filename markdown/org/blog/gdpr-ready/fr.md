@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Le changement le plus important est évidemment que nous sommes passés du violet au noir comme couleur emblématique"
 date: "24-05-2018"
 intro: "Bienvenue sur notre nouveau site Internet. Il est conforme au GDPR, parle 3 langues et sent la peinture mouillée"

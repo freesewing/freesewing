@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Foto de Snapwire - Via pexels.com"
 date: "2022-01-01"
 intro: "No voy a hacer una entrada entera en el blog sobre el tema 2021 porque creo que la mayoría de nosotros queremos pasar página y olvidarnos de ello, pero si buscabas una lectura más larga, aquí tienes el índice de contenidos de nuestra última edición del boletín que también se ha enviado hoy:"

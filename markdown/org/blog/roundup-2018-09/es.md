@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Tu fondo de conexión para octubre"
 date: "2018-09-30"
 intro: "Resumen mensual - Septiembre de 2018: Shin, un montón de JavaScript y una larga lista de TODO"

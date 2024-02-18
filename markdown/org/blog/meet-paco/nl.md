@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Paco op het brein achter de operatie"
 date: "2020-08-10"
 intro: "Hier is Paco: Ons nieuwe unisex patroon voor een stijlvolle zomerbroek"

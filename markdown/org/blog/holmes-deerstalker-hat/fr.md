@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Aperçu issu du tutoriel YouTube de Bernadette Banner pour ce chapeau"
 date: "2020-02-23"
 intro: "Nouveau patron : Chapeau Deerstalker de Sherlock Holmes"
