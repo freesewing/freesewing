@@ -4,9 +4,9 @@ order: 40
 ---
 
 Inside the `freesewing` folder -- which might have a different name if that is
-the choice you made -- you will find a bunch of files and folders.  
+the choice you made -- you will find a bunch of files and folders.
 
-The one that matter is the `design` folder. In it, you will find the followin
+The one that matter is the `design` folder. In it, you will find the following
 subfolders:
 
 - `from-bella`

@@ -2,13 +2,13 @@
 title: "Chaqueta Jaeger Instrucciones de costura"
 ---
 
-<Note>
+<Fixme>
 
 ###### La documentación de Jaeger está en construcción
 
 Esta documentación aún no está terminada.
 
-</Note>
+</Fixme>
 
 ## Construcción
 
@@ -88,7 +88,7 @@ Diviértase en su lugar en la línea superior. Remember this should be shorter t
 
 #### Corta la apertura del bolsillo de cofre, gire y presione
 
-![Presiona el bolsillo](pressChestPocket.svg) Ahora cortar abrir su soldadura en medio de ambas costuras. No cortes al borde, pero crea una forma trianngular allí.
+![Presiona el bolsillo](pressChestPocket.svg) Ahora cortar abrir su soldadura en medio de ambas costuras. Don't cut to the edge, but create a triangular shape there.
 
 Invierte la bolsa de bolsillo y soltarse en la parte trasera pasando ambos a través de la apertura que acabas de crear.
 
@@ -108,7 +108,7 @@ Hile una aguja y termine a mano el cofre cosiendo cosiendo los lados de la solda
 
 Por último, cierre la bolsa de bolsa cosiendo los costados. Haga esto colocando la parte delantera hacia abajo con el lado bueno hacia arriba. Luego doblar sobre cada lado y coser la bolsa de bolsillo. Al coser estos lados, asegúrese de atrapar esas pequeñas piezas triangulares de la abertura. Esto reforzará la apertura del bolsillo.
 
-Borra el bolsillo cerrado mientras contructamos la chaqueta.
+Baste the chest pocket closed while we construct the jacket.
 
 ### Prepara los frentes
 
@@ -163,9 +163,11 @@ Ten en cuenta que:
 
 ![Cerrar los lados](closeSides.svg)
 
-Place your front with the good side up, and your side on it with the good side down. Align the front/side seams, pin them in place if you feel like it, and sew them togther.
+Place your front with the good side up, and your side on it with the good side down.  
+Align the front/side seams, pin them in place if you feel like it, and sew them together.
 
-Place this down with the good side up, and place your back on top with the good side down. Align the back/side seams, pin them in place if you feel like it, and sew them togther.
+Place this down with the good side up, and place your back on top with the good side down.  
+Align the back/side seams, pin them in place if you feel like it, and sew them together.
 
 > Asegúrese de que el lienzo no sea capturado en la costura.
 
@@ -179,7 +181,7 @@ Place this down with the good side up, and place your back on top with the good 
 
 ![Cerrar la costura trasera](closeBack.svg)
 
-Alando sus dos medias chaquetas con los lados buenos juntos, y cerrar la costura de espalda.
+Align your two half-jackets with the good sides together, and close the back seam.
 
 <Note>
 
@@ -214,25 +216,29 @@ Así que asegúrese de alinear las notas. Para eso están ahí.
 </Note>
 
 ### Haz el collar
-Para que parezca realmente nítido, el cuello debe ser simétrico a ambos lados. Unos 5 mm de diferencia ya son visibles para un collarín, así que cuanto más precisos hagas estos pasos, mejor.
+In order to look real crisp, the collar should be symmetrical on both sides. Unos 5 mm de diferencia ya son visibles para un collarín, así que cuanto más precisos hagas estos pasos, mejor.
 
-### Añade marcas a ambos collares
-Pero ambos cuellos uno encima del otro, hilvana las esquinas y corta el hilván. Luego, utiliza un lápiz de marcar o un poco de tiza para marcar los bordes del cuello. Mide 2 veces para asegurarte de que los cuellos restantes y la ubicación de las esquinas son 100% idénticos en ambas esquinas ![Marca los bordes del cuello](collarMarkings.svg)
+### Add markings to both collar and undercollar
+Put the collar and undercollar on top of each other, baste the corners together and cut the basting. Luego, utiliza un lápiz de marcar o un poco de tiza para marcar los bordes del cuello. Mide 2 veces para asegurarte de que los cuellos restantes y la ubicación de las esquinas son 100% idénticos en ambas esquinas ![Marca los bordes del cuello](collarMarkings.svg)
 
+<Note compact>
+The undercollar's shape is that of the collar and collarstand parts
+combined.
+</Note>
 
 #### Añade entretela o tela a la parte exterior del cuello y a la parte inferior del cuello
-Utiliza una entretela fusible o, si quieres ser duro, una tela de crin. Cósela al soporte exterior del cuello utilizando la misma técnica que al añadir la tela a la solapa. ![Añade tela al collor](collarWithCanvas.svg)
+Either use a fusible interfacing, or, if you want to be hardcore use a horsehair canvas. Stitch it to the outside collar stand using the same technique as when adding canvas to the lapel. ![Add canvas to the collar](collarWithCanvas.svg)
 
 #### Cose el soporte exterior del cuello a la parte inferior del cuello y añádelo a la chaqueta
-Asegúrate de que el soporte exterior del cuello y el bajo cuello están alineados y cóselos juntos Cose el soporte exterior del cuello + el bajo cuello al escote de la chaqueta Haz pequeños cortes en la tela alrededor del escote para darle más holgura Corta el margen de costura de las esquinas en diagonal para un mejor ajuste
+Make sure the outside collarstand and under collar are aligned and sew together Sew the outside collarstand+undercollar to the neckline of the jacket Give small cuts in the fabric around the neckline to give it more ease Cut the seam allowance in the corners diagonally for a better fit
 
 ![haz pequeños cortes en SA alrededor del cuello](collarCuts.svg)
 
 
 ### Mangas
-Cose la manga superior a la inferior hasta la división
+Sew the uppersleeve to the undersleeve until the split
 
-#### Crea la hendidura en el eng de la manga
+#### Create the split at the end of the sleeve
 
 Cose el otro lado de las mangas Gira las mangas con el lado bueno hacia fuera Añade las mangas a la chaqueta
 
@@ -243,13 +249,13 @@ El bolsillo interior es un bolsillo de ojal doble. Que es lo mismo que los bolsi
 Para más detalles, consulta las imágenes de los bolsillos delanteros
 </note>
 
-Localiza la posición del bolsillo en el forro interior izquierdo con el hilván Añade un poco de entretela fusible alrededor de la zona Dibuja el bolsillo en la entretela. Añade los ribetes a la parte superior e inferior del bolsillo Cose los ribetes en la línea de ambos lados del bolsillo. Asegúrate de que las ronchas terminan exactamente una encima de la otra. Corta la entrada del bolsillo a 1 ó 2 cm del extremo. Corta la última parte en diagonal de forma que obtengas un corte de espina de pez Da la vuelta a las virolas, hilvana y presiona Da la vuelta a los triángulos, hilvana y presiona Cose alrededor del bolsillo para colocarlo todo en su sitio Coge la bolsa del bolsillo, cósela a la vira inferior y la otra parte a la vira superior (Ver: bolsillo del pecho)
+Locate the position of the pocket on the left inner lining with basting Add some fusible interfacing around the area Draw the pocket on the interfacing. Añade los ribetes a la parte superior e inferior del bolsillo Cose los ribetes en la línea de ambos lados del bolsillo. Make use the welts end exactly on top of each other. Corta la entrada del bolsillo a 1 ó 2 cm del extremo. Cut the last part diagonally so you get a fish bone cut Turn the welts inside out, baste and press Turn the triangles inside out, baste and press Sew around the pocket to put everything in place Take the pocketbag, sew it to the lower welt and the other part to the upper welt (See: chest pocket)
 
 ### Terminal
-Cose la costura trasera del forro hasta la división Cose las costuras de la figura en las partes delanteras Junta todo el forro (delantero, lateral, trasero) Añade el forro de la parte delantera a la parte delantera. DEJA unos 5 cm abiertos desde la parte inferior Cierra los hombros Añade el soporte interior del cuello a la parte superior del cuello y añádelo a la chaqueta de forro Haz pequeños cortes en el escote y en las esquinas Añade las mangas de la parte superior a la inferior Añade las mangas a la chaqueta de forro
+Sew the lining back seam until the split Sew the figure seams in the front parts Add the whole lining together (front, side, back) Add the from lining to the front facing. Leave about 5cm open from the bottom Close the shoulders Add the inside collar stand to the uppercollar and add to the lining jacket Make small cuts in the neckline and the corners Add upper to lower sleeves Add sleeves to lining jacket
 
 ### Ciérralo
-Pero la chaqueta + el forro se colocan uno encima del otro con los lados buenos. Cose alrededor del cuello y continúa hasta la parte delantera Da la vuelta a la chaqueta por el derecho Dobla las mangas en su sitio (¡¡asegúrate de que no estén dobladas!!) Añade el forro de las mangas a la división de las mangas Asegúrate de que los cuellos están rectos uno encima del otro (se alinean) y añade los márgenes de costura entre sí a mano. Añade en algunos lugares la parte delantera SA al forro SA a mano desde el interior de la chaqueta Crea la costura trasera y añade manualmente el forro a la tela principal Añade ojales y botones
+Pero la chaqueta + el forro se colocan uno encima del otro con los lados buenos. Cose alrededor del cuello y continúa hasta la parte delantera Da la vuelta a la chaqueta por el derecho Dobla las mangas en su sitio (¡¡asegúrate de que no estén dobladas!!) Add the sleeves lining to the sleeves split Make sure the collars are straight on top of each other (they align) and add the seam allowances to each other by hand. Añade en algunos lugares la parte delantera SA al forro SA a mano desde el interior de la chaqueta Crea la costura trasera y añade manualmente el forro a la tela principal Añade ojales y botones
 
 
 

@@ -1,8 +1,6 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { Design } from '../src/index.mjs'
 import sinon from 'sinon'
-
-const expect = chai.expect
 
 describe('Pattern', () => {
   describe('.addPart()', () => {

@@ -4,13 +4,13 @@ title: "Shelly shirt: Sewing Instructions"
 
 <Note>
 
-The use of a serger or an overlocking foot is recommended, to keep the size of the finished seams small. If using a serger, a seam allowance of 1/2 inch (12 mm) is recommeded. If using an overlocking foot on a sewing machine, or serging without the use of the knife, a seam allowance of 1/4 inch (6 mm) is recommended.
+The use of a serger or an overlocking foot is recommended, to keep the size of the finished seams small. If using a serger, a seam allowance of 1/2 inch (12 mm) is recommended. If using an overlocking foot on a sewing machine, or serging without the use of the knife, a seam allowance of 1/4 inch (6 mm) is recommended.
 
 All seams, including the neckband, can be done with the same stitch, whether it be a serger, an overlock stitch, or a stretch stitch.
 
 Hems are optional (since knit doesn't fray), but if you do make hems, make sure they can stretch.
 
-Make sure to use a stitch that can stretch. If sewing stretch fabric, adjust your tension to allow for extra stretch. On a serger, this will usually mean lowering the needle tension, especially the right needle, and adjusting the looper tension as needed to keep the stitch looking decent. On a regular sewing machine, lower the tension. Test your choice of stitch first on scrap fabric, and try to shap the test seam by stretching the seam along its length. It should only snap after stretching quite a bit. If it pops too easily, keep playing with your stitches/tension settings until you get something that can survive some abuse.
+Make sure to use a stitch that can stretch. If sewing stretch fabric, adjust your tension to allow for extra stretch. On a serger, this will usually mean lowering the needle tension, especially the right needle, and adjusting the looper tension as needed to keep the stitch looking decent. On a regular sewing machine, lower the tension. Test your choice of stitch first on scrap fabric, and try to shape the test seam by stretching the seam along its length. It should only snap after stretching quite a bit. If it pops too easily, keep playing with your stitches/tension settings until you get something that can survive some abuse.
 
 For making t-shirts or other shirts with 2-way stretch, regular settings with a stitch that stretches should be fine.
 

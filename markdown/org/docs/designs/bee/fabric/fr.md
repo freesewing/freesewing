@@ -8,6 +8,6 @@ Le tissu principal et la doublure sont le même type de matériau. Bee est fabri
 
 <Note>
 
-Vous n'avez besoin de tissu de doublure que si vous avez l'intention de rendre le motif réversible ou si vous voulez que la bande pour la variante à lacets croisés soit un tissu contrastant. Sinon, vous pouvez couper toutes les pièces dans votre tissu principal.
+You only need lining fabric if you intend to make the pattern reversible or if you want the band for the cross back tie variant to be a contrasting fabric. Sinon, vous pouvez couper toutes les pièces dans votre tissu principal.
 
 </Note>

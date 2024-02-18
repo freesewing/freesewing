@@ -11,13 +11,14 @@ import { optionsMenuStructure } from 'shared/utils.mjs'
 
 export const ns = nsMerge('workbench', optionsNs, measieNs)
 
-const flattenOptions = (options, list = false, path = []) => {
-  if (list === false) return flattenOptions(optionsMenuStructure(options), new Set())
+const flattenOptions = (options, settings, list = false, path = []) => {
+  if (list === false)
+    return flattenOptions(optionsMenuStructure(options, settings), settings, new Set())
 
   for (const [key, option] of Object.entries(options)) {
     if (key !== 'isGroup') {
       if (!option.isGroup) list.add({ key, option, path })
-      else list = flattenOptions(option, list, [...path, key])
+      else list = flattenOptions(option, settings, list, [...path, key])
     }
   }
 
@@ -29,7 +30,7 @@ const spacer = <span className="px-2 opacity-50">/</span>
 export const TestMenu = ({ design, patternConfig, settings, update }) => {
   const { t } = useTranslation(ns)
 
-  const allOptions = flattenOptions(patternConfig.options)
+  const allOptions = flattenOptions(patternConfig.options, settings)
 
   return (
     <Accordion

@@ -4,13 +4,13 @@ caption: "Цей топ виготовлений з обрізків бавов�
 date: 20231016
 intro: "Цей топ створений на основі блоку Noble."
 designs:
-  - "ноубл."
+  - "tristan"
 maker: Наталя
 ---
 
-Цей топ зроблений на основі блоку Noble. Власник повідомляє, що його тіло асиметричне, що можна побачити на знімку ззаду. Вони були дуже задоволені цією простою варіацією Noble.
+This top was made based on the Noble block, and later spun off into its own design, Tristan. Власник повідомляє, що його тіло асиметричне, що можна побачити на знімку ззаду. Вони були дуже задоволені цією простою варіацією Noble.
 
-![Вид спереду](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-a-noble-top-for-the-renaissance-festival-1/public "Підпис/назва зображення тут")
+![Вид спереду](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-a-noble-top-for-the-renaissance-festival-1/public "Вид спереду")
 
-![Вид ззаду](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-a-noble-top-for-the-renaissance-festival-2/public "Підпис/назва зображення тут")
+![Вид ззаду](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-a-noble-top-for-the-renaissance-festival-2/public "Вид ззаду")
 

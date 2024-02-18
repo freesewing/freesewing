@@ -35,18 +35,8 @@ Stack objects come with the following properties:
 - `anchor` : A [Point](/reference/api/point) that is used as the anchor to align parts in the stack
 
 
-## Example
-
-<Example caption="Example of the Stack constructor">
-```js
-import { Stack } from '@freesewing/core'
-
-const myStack = new Stack('mystack')
-```
-</Example>
-
 ## Methods
 
 A Stack object exposes the following methods:
 
-<ReadMore list />
+<ReadMore />

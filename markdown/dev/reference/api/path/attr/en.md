@@ -5,7 +5,7 @@ title: Path.attr()
 This `Path.attr()` method can be used to add attributes to the Path object.
 It calls `this.attributes.add()` under the hood, and returns the Path object.
 
-If the third parameter is set to `true` it will call `this.attributes.set()`
+If the optional third parameter is set to `true` it will call `this.attributes.set()`
 instead, thereby overwriting the value of the attribute.
 
 ## Signature

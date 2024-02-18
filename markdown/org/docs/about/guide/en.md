@@ -47,7 +47,7 @@ FreeSewing.org is our most visible asset, and for many people their first encoun
 
 ## Patterns vs Designs
 
-If you came to this site looking for _sewing patterns_ and did not immeadiatly find a place to download them, that's because all of FreeSewing's sewing patterns are **made to measure**.
+If you came to this site looking for _sewing patterns_ and did not immediately find a place to download them, that's because all of FreeSewing's sewing patterns are **made to measure**.
 
 We don’t scale or grade patterns.
 Instead, FreeSewing drafts a design into a pattern made to your measurements.
@@ -103,6 +103,6 @@ FreeSewing also provides **curated measurements sets**. These are measurements s
 
 ## Where to turn to for help
 
-If you get stuck, consule [the support page](/support/) for various support options.
+If you get stuck, consult [the support page](/support/) for various support options.
 
 

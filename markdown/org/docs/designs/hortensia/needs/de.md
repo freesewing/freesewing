@@ -8,7 +8,7 @@ Um Hortensia herzustellen, brauchst du Folgendes:
 - Etwa 0,5 - 2 Meter (0,6 - 2,2 Yards) eines geeigneten Stoffes ([siehe Hortensia Stoffoptionen](/docs/designs/hortensia/fabric/))
 - Etwa 0,5 - 2 Meter Futterstoff ([siehe Hortensia Stoffoptionen](/docs/designs/hortensia/fabric/))
 - Ein Reißverschluss, der kürzer ist als die Reißverschlussblende und der Breite der [Spule entspricht](/docs/designs/hortensia/options/zippersize/) ausgewählt
-- (Optional) Etwa 1 - 2 Meter Schrägband, wenn du die Seitenkanten an der Außenseite binden möchtest.
+- (Optional) About 1 - 2 metres (1.1 - 2.2 yards) of bias binding if you want to bind the side panel edges on the outside.
 - (Optional) Taschengurtband in der doppelten Länge des Gurtteils mit Nahtzugabe und ähnlicher Breite, wenn du keine eigenen Gurte machen möchtest.
 - (Optional) Einlage zur Verstärkung des Stoffes und/oder für das Band
 

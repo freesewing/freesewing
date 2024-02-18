@@ -2,7 +2,7 @@
 title: "Casquette plate Florent : Instructions de coupe"
 ---
 
-Pour fabriquer Floren, découpe les parties suivantes :
+To make Florent, cut out the following parts:
 
 - **Tissu principal**
   - Coupez **1 haut** sur le pli mais n'incluez pas la marge de couture du centre, ou **2 haut** avec la marge de couture du centre.

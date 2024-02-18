@@ -4,7 +4,7 @@ title: Part.asRenderProps()
 
 
 The `Part.asRenderProps()` method will return the data stored in the
-part as a serializable Javascript object. This method is typically
+part as a serializable JavaScript object. This method is typically
 not invoked directly but rather called under the hood as a result of
 calling [`Pattern.getRenderProps()`](/reference/core/pattern/getrenderprops).
 
@@ -16,7 +16,7 @@ Object part.asRenderProps()
 
 ## Returned object properties
 
-This returns Javascript object has the following properties:
+This returns JavaScript object has the following properties:
 
 | Name | Description |
 | ----:| ----------- |

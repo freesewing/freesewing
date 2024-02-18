@@ -5,7 +5,7 @@ title: "Sandy cirkelrok: Naai-instructies"
 <Warning>
 
 Door de verschillende stijlen en configuraties van Sandy kan het zijn dat je bepaalde stappen moet overslaan of anders moet rangschikken.
-We gaan hier niet uitleggen hoe je alle afzonderlijke details van een cirkelrok kunt maken. These instructions assume that you know how to sew a zipper, construct pockets, etc. If not, there are numerous excellent articles available on the web, both in writen form, and on video. Zo niet, dan zijn er talloze uitstekende artikelen beschikbaar op het -web, zowel schriftelijk als op video. Als je vastloopt, kun je altijd contact opnemen met [andere FreeSewers](https://discord.freesewing.org/) in onze discord.
+We gaan hier niet uitleggen hoe je alle afzonderlijke details van een cirkelrok kunt maken. These instructions assume that you know how to sew a zipper, construct pockets, etc. If not, there are numerous excellent articles available on the web, both in writen form, and on video. If not, there are numerous excellent articles available on the web, both in written form, and on video. Als je vastloopt, kun je altijd contact opnemen met [andere FreeSewers](https://discord.freesewing.org/) in onze discord.
 
 </Warning>
 
@@ -111,7 +111,7 @@ Zoom de rok op een van de volgende manieren:
 
 <Note>
 
-Er zijn veel manieren om de onderkant van een rok te zomen. Als je een methode hebt die je voorkeur heeft, gebruik die dan hier.
+There are many ways to hem/face the bottom of a skirt, If you have a preferred method use it here.
 
 </Note>
 

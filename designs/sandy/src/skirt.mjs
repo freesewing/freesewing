@@ -49,7 +49,7 @@ function sandySkirt({
     measurements.waistToFloor - measurements.waistToHips * options.waistbandPosition
   )
 
-  let radiusWaist, an
+  let radiusWaist, angle
   if (options.seamlessFullCircle) {
     /**
      * If the seamless full circle option is selected, the angle
@@ -57,15 +57,16 @@ function sandySkirt({
      * it's not selected, because in this case the fabric is cut
      * in a double fold
      */
-    an = 90
-    radiusWaist = store.get('skirtCircumference') / utils.deg2rad(an) / 4
+    angle = 90
+    radiusWaist = store.get('skirtCircumference') / utils.deg2rad(angle) / 4
   } else {
     /**
      * If the seamless full circle option is not selected, the
      * angle is calculated using the circlePercent option
      */
-    an = 180 * options.circleRatio
-    radiusWaist = store.get('skirtCircumference') / utils.deg2rad(an) / 2
+    const totalAngle = 180 * options.circleRatio
+    angle = totalAngle / options.panels
+    radiusWaist = store.get('skirtCircumference') / utils.deg2rad(totalAngle) / 2
 
     /**
      * If the angle is too large, the seam allowance can fall out
@@ -73,9 +74,9 @@ function sandySkirt({
      * maximum angle calculated so the seam allowance fits in the
      * fabric
      */
-    if (an > 90 && sa) {
-      const maxAn = utils.rad2deg(Math.atan(radiusWaist / sa))
-      if (an > 90 + maxAn) an = 90 + maxAn
+    if (angle > 90 && sa) {
+      const maxAngle = utils.rad2deg(Math.atan(radiusWaist / sa))
+      if (angle > 90 + maxAngle) angle = 90 + maxAngle
     }
   }
   /**
@@ -87,7 +88,7 @@ function sandySkirt({
 
   // Call the RingSector macro to draft the part
   const ids = macro('ringsector', {
-    angle: an,
+    angle: angle,
     insideRadius: radiusWaist,
     outsideRadius: radiusHem,
     rotate: true,
@@ -154,7 +155,12 @@ function sandySkirt({
    * Annotations
    */
   // Cutlist
-  store.cutlist.setCut({ cut: 1, from: 'fabric', onFold: true })
+  store.cutlist.setCut({
+    cut: options.seamlessFullCircle ? 1 : Number(options.panels),
+    from: 'fabric',
+    onFold: true,
+    identical: true,
+  })
 
   // Cutonfold
   macro('cutonfold', {
@@ -218,24 +224,42 @@ function sandySkirt({
     to: points.center,
     x: points.ex2Flipped.x - sa - 30,
   })
-  if (options.circleRatio !== 0.5) {
+  if (angle !== 90) {
     macro('vd', {
       id: 'hTopToOpeningRight',
-      from: points.ex1Rotated,
-      to: points.in1Rotated,
-      x: options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 15 : points.ex1Rotated.x + sa + 15,
+      from: points.ex2,
+      to: points.in2,
+      x: angle > 90 ? points.in2.x - sa - 15 : points.ex2.x + sa + 15,
     })
     macro('vd', {
       id: 'hOpeningRightToCenter',
-      from: points.in1Rotated,
+      from: points.in2,
       to: points.center,
-      x: options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 15 : points.ex1Rotated.x + sa + 15,
+      x: angle > 90 ? points.in2.x - sa - 15 : points.ex2.x + sa + 15,
     })
     macro('vd', {
-      from: points.ex1Rotated,
       id: 'hHemRightToCenter',
+      from: points.ex2,
       to: points.center,
-      x: options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 30 : points.ex1Rotated.x + sa + 30,
+      x: angle > 90 ? points.in2.x - sa - 30 : points.ex2.x + sa + 30,
+    })
+    macro('hd', {
+      id: 'wHemToOpeningRight',
+      from: points.ex2,
+      to: points.in2,
+      y: angle < 90 ? points.center.y - sa - 15 : points.ex2.y - sa - 15,
+    })
+    macro('hd', {
+      id: 'wOpeningRightToCenter',
+      from: points.center,
+      to: points.in2,
+      y: angle < 90 ? points.center.y - sa - 15 : points.ex2.y - sa - 15,
+    })
+    macro('hd', {
+      id: 'wHemToCenter',
+      from: points.center,
+      to: points.ex2,
+      y: angle < 90 ? points.center.y - sa - 30 : points.ex2.y - sa - 30,
     })
   }
 
@@ -267,6 +291,7 @@ export const skirt = {
       dflt: 'straight',
       menu: 'fit',
     },
+    panels: { count: 1, min: 1, max: 8, menu: 'construction' },
   },
   plugins: ringsectorPlugin,
   draft: sandySkirt,

@@ -124,6 +124,7 @@ export const MsetCard = ({
     sm: 36,
   }
   const s = sizes[size]
+  const { t } = useTranslation(ns)
 
   const wrapperProps = {
     className: `bg-base-300 aspect-square h-${s} w-${s} mb-2
@@ -139,14 +140,34 @@ export const MsetCard = ({
     wrapperProps.style.backgroundPosition = 'bottom right'
 
   let icon = <span></span>
+  let missingMeasies = ''
+  let linebreak = ''
+  const maxLength = 75
   if (design) {
-    const [hasMeasies] = hasRequiredMeasurements(designMeasurements[design], set.measies, true)
+    const [hasMeasies, missing] = hasRequiredMeasurements(
+      designMeasurements[design],
+      set.measies,
+      true
+    )
     const iconClasses = 'w-8 h-8 p-1 rounded-full -mt-2 -ml-2 shadow'
     icon = hasMeasies ? (
       <OkIcon className={`${iconClasses} bg-success text-success-content`} stroke={4} />
     ) : (
       <NoIcon className={`${iconClasses} bg-error text-error-content`} stroke={3} />
     )
+    if (missing.length > 0) {
+      const translated = missing.map((m) => {
+        return t(m)
+      })
+      let missingString = t('missing') + ': ' + translated.join(', ')
+      if (missingString.length > maxLength) {
+        const lastSpace = missingString.lastIndexOf(', ', maxLength)
+        missingString = missingString.substring(0, lastSpace) + ', ' + t('andMore') + '...'
+      }
+      const measieClasses = 'font-normal text-xs'
+      missingMeasies = <span className={`${measieClasses}`}>{missingString}</span>
+      linebreak = <br />
+    }
   }
 
   const inner = (
@@ -154,6 +175,8 @@ export const MsetCard = ({
       {icon}
       <span className="bg-neutral text-neutral-content px-4 w-full bg-opacity-50 py-2 rounded rounded-t-none font-bold leading-5">
         {language ? set[`name${capitalize(language)}`] : set.name}
+        {linebreak}
+        {missingMeasies}
       </span>
     </>
   )
@@ -710,11 +733,9 @@ export const Sets = () => {
               onClick={toggleSelectAll}
               checked={sets.length === selCount}
             />
-            {selCount ? (
-              <button className="btn btn-error" onClick={removeSelectedSets}>
-                <TrashIcon /> {selCount} {t('sets')}
-              </button>
-            ) : null}
+            <button className="btn btn-error" onClick={removeSelectedSets} disabled={selCount < 1}>
+              <TrashIcon /> {selCount} {t('sets')}
+            </button>
           </div>
         </>
       ) : (
@@ -819,7 +840,14 @@ export const MsetButton = (props) => <MsetCard {...props} href={false} />
 export const MsetLink = (props) => <MsetCard {...props} onClick={false} useA={false} />
 export const MsetA = (props) => <MsetCard {...props} onClick={false} useA={true} />
 
-export const UserSetPicker = ({ design, t, href, clickHandler, size = 'lg' }) => {
+export const UserSetPicker = ({
+  design,
+  t,
+  href,
+  clickHandler,
+  missingClickHandler,
+  size = 'lg',
+}) => {
   // Hooks
   const backend = useBackend()
   const { control } = useAccount()
@@ -901,9 +929,10 @@ export const UserSetPicker = ({ design, t, href, clickHandler, size = 'lg' }) =>
           </Popout>
           <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
             {lackingSets.map((set) => (
-              <MsetLink
+              <MsetButton
                 {...{ set, control, design }}
-                onClick={clickHandler}
+                onClick={missingClickHandler}
+                href={href}
                 requiredMeasies={measurements[design]}
                 key={set.id}
                 size={size}

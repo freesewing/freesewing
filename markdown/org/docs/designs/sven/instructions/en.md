@@ -4,7 +4,7 @@ title: "Sven sweatshirt: Sewing Instructions"
 
 ### Step 1: Close shoulder seams
 
-- Place the back and front on top of each other with the good sides toghether.
+- Place the back and front on top of each other with the good sides together.
 - Align the shoulder seam, and sew/serge it at the standard seam allowance.
 - Repeat for the other shoulder seam.
 
@@ -38,7 +38,7 @@ title: "Sven sweatshirt: Sewing Instructions"
 
 - Measure the width of the sleeve at the cuff
 - Cut a piece of ribbing that is (twice this length - 2cm/1inch) and 7cm/3inch wide
-- Fold the ribbing double along the longest side, and sew together the edge so you have a continous ring
+- Fold the ribbing double along the longest side, and sew together the edge so you have a continuous ring
 - Turn your Sven inside-out
 - Fold the ribbing ring with the good side outwards, and slip the folded side into your inside/out Sven sleeve
 - Align the cut off side of the ribbing with the edge of the sleeve and pin it in place. The ribbing is a bit shorter, so stretch it a bit while pinning to work this into the sleeve.
@@ -51,7 +51,7 @@ title: "Sven sweatshirt: Sewing Instructions"
 - Measure the width of Sven at the hem
 - Cut a piece of ribbing that 1.9 times this length and 7cm/3inch wide
 - You may need to attach different pieces if your ribbing fabric isn't wide enough
-- Fold the ribbing double along the longest side, and sew together the edge so you have a continous ring
+- Fold the ribbing double along the longest side, and sew together the edge so you have a continuous ring
 - Turn your Sven inside-out
 - Fold the ribbing ring with the good side outwards, and slip the folded side into your inside/out Sven body
 - Align the cut off side of the ribbing with the edge of the body and pin it in place. The ribbing is a bit shorter, so stretch it a bit while pinning to work this into the body.

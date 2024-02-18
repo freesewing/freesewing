@@ -4,7 +4,7 @@ title: "Lucy, die Umbindetasche: Anleitungen"
 
 <Note>
 
-Lucy kann je nach Wunsch von Hand oder mit der Maschine genäht werden.
+Lucy kann je nach Wunsch von Hand oder mit der Maschine genäht werden. Wenn du mit der Hand nähst, kannst du die Taschenteile mit einem Running Stitch zusammennähen und mit einem Peitschenstich binden. 
 
 </Note>
 
@@ -22,9 +22,9 @@ Wenn du möchtest, kannst du die Außenkanten des Taschenbeutels mit einer franz
 
 ## Schritt 2: Binde die obere Kante und die Bänder.
 
-Es gibt zwei Methoden zum Binden der oberen Kante. One is to create a loop and the other is to bind with the ties. Lies dir beide Methoden genau durch und entscheide, welche du verwenden möchtest.
+Es gibt zwei Methoden zum Binden der oberen Kante. Man lässt die Seitenkanten der oberen Bindung offen, damit die Bänder durchgefädelt werden können. Die zweite verwendet das Band für die Bänder, um die obere Kante zu binden. Lies dir beide Methoden genau durch und entscheide, welche du verwenden möchtest.
 
-### Create a loop
+### Bindung verwenden
 
 - Schneide ein Stück Einband in der Länge der Oberkante + Nahtzugabe zu.
 - Falte die kurzen Kanten des Bingings um und nähe sie fest.

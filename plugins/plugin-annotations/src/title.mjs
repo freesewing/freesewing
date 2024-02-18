@@ -1,3 +1,6 @@
+const capitalize = (string) =>
+  typeof string === 'string' ? string.charAt(0).toUpperCase() + string.slice(1) : ''
+
 /*
  * Defaults for the title macro
  */
@@ -12,10 +15,11 @@ const macroDefaults = {
   rotation: 0,
   scale: 1,
   title: 'plugin-annotations:noName',
+  notes: false,
+  brand: 'FreeSewing',
   classes: {
-    cutlist: 'text-md fill-current',
+    notes: 'text-md fill-current',
     date: 'text-sm fill-current',
-    for: 'fill-current font-bold',
     name: 'fill-note',
     nr: 'text-4xl fill-note font-bold',
     title: 'text-lg fill-current font-bold',
@@ -74,9 +78,8 @@ const title = function (config, { Point, points, scale, locale, store, part, log
 
   /*
    * Get the list of IDs
-   * Initialize the verticle cadence
    */
-  const ids = store.generateMacroIds(['cutlist', 'date', 'for', 'name', 'nr', 'title'], mc.id)
+  const ids = store.generateMacroIds(['nr', 'date', 'title', 'name', 'notes'], mc.id)
 
   let shift = mc.dy
 
@@ -94,24 +97,63 @@ const title = function (config, { Point, points, scale, locale, store, part, log
   } else delete ids.nr
 
   /*
+   * Title: date
+   */
+  points[ids.date] = mc.at
+    .shift(-90, shift / 2)
+    .addText(
+      new Date().toLocaleString(locale || 'en', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+      }),
+      `${mc.classes.date} ${mc.align}`
+    )
+    .attr('data-text-transform', transform)
+    .attr('data-render-always', 1) // Render even when outside the part bounding box
+  shift += mc.dy
+
+  /*
    * Title: title
    */
   if (mc.title) {
     points[ids.title] = mc.at
       .clone()
       .shift(-90, shift)
-      .attr('data-text', mc.title, mc.append ? false : true)
-      .attr('data-text-class', `${mc.classes.title} ${mc.align}`)
       .attr('data-text-transform', transform)
       .attr('data-render-always', 1) // Render even when outside the part bounding box
+    if (mc.append) points[ids.title].addText(mc.title, `${mc.classes.title} ${mc.align}`)
+    else points[ids.title].setText(mc.title, `${mc.classes.title} ${mc.align}`)
     shift += mc.dy
     store.set(['partTitles', part.name], mc.title)
   } else delete ids.title
 
   /*
-   * Title: cutlist
+   * Title: name
    */
+  points[ids.name] = mc.at
+    .clone()
+    .shift(-90, shift)
+    .addText(
+      `${mc.brand} ${capitalize(
+        (store.data?.name || 'plugin-annotations:noName').replace('@freesewing/', '')
+      )} v${store.data?.version || 'plugin-annotations:noVersion'} (`,
+
+      `${mc.classes.name} ${mc.align}`
+    )
+    .addText(store.data?.setName ? store.data.setName : 'ephemeral')
+    .addText(')')
+    .attr('data-text-transform', transform)
+    .attr('data-render-always', 1) // Render even when outside the part bounding box
+  shift += mc.dy
+
+  /*
+   * Title: notes
+   */
+  const notes = []
   if (mc.cutlist) {
+    points[ids.notes] = mc.at.clone().shift(-90, shift)
     /*
      * Get cutlist instructions from the store, only proceed if the list is available
      */
@@ -121,94 +163,39 @@ const title = function (config, { Point, points, scale, locale, store, part, log
        * Iterate over materials
        */
       for (const [material, instructions] of Object.entries(partCutlist.materials)) {
-        instructions.forEach(({ cut, identical, onBias, onFold }, c) => {
+        instructions.forEach(({ cut, identical, onBias, onFold }) => {
           /*
-           * Create point
+           * Concat line
            */
-          const id = `${ids.cutlist}_${material}_${c}`
-          ids[`cutlist_${material}_${c}`] = id
-          points[id] = mc.at
-            .clone()
-            .shift(-90, shift)
-            .attr('data-text', 'plugin-annotations:cut')
-            .attr('data-text-class', `${mc.classes.cutlist} ${mc.align}`)
-            .attr('data-text-transform', transform)
-            .attr('data-render-always', 1) // Render even when outside the part bounding box
-            .addText(cut)
-          shift += mc.dy
-
-          /*
-           * Add instructions if parts are mirrored
-           */
-          if (!identical && cut > 1) points[id].addText('plugin-annotations:mirrored')
-
-          /*
-           * Add instructions if parts are cut on fold
-           */
+          notes.push('plugin-annotations:cut')
+          notes.push(cut)
+          if (!identical && cut > 1) notes.push('plugin-annotations:mirrored')
           if (onFold)
-            points[id].addText(
-              onBias ? 'plugin-annotations:onFoldAndBias' : 'plugin-annotations:onFold'
-            )
+            notes.push(onBias ? 'plugin-annotations:onFoldAndBias' : 'plugin-annotations:onFold')
+          else if (onBias) notes.push('plugin-annotations:onBias')
+          notes.push('plugin-annotations:from', 'plugin-annotations:' + material)
           /*
-           * Add instructions if parts on on bias
-           */ else if (onBias) points[id].addText('plugin-annotations:onBias')
-
-          /*
-           * Add 'from' (material) text
+           * Force a line break between materials
            */
-          points[id].addText('plugin-annotations:from').addText('plugin-annotations:' + material)
+          notes.push('\n')
         })
       }
     }
-  } else delete ids.cutlist
-
-  /*
-   * Title: Design name
-   */
-  points[ids.name] = mc.at
-    .clone()
-    .shift(-90, shift)
-    .attr(
-      'data-text',
-      `${(store.data?.name || 'plugin-annotations:noName').replace('@freesewing/', '')} v${
-        store.data?.version || 'plugin-annotations:noVersion'
-      }`
-    )
-    .attr('data-text-class', `${mc.classes.name} ${mc.align}`)
-    .attr('data-text-transform', transform)
-    .attr('data-render-always', 1) // Render even when outside the part bounding box
-  shift += mc.dy
-
-  /*
-   * Title: For (measurements set)
-   */
-  if (store.data.for) {
-    points[ids.for] = mc.at
-      .shift(-90, shift)
-      .attr('data-text', `(${store.data.for})`)
-      .attr('data-text-class', `${mc.classes.for} ${mc.align}`)
+  }
+  if (mc.notes) {
+    if (Array.isArray(mc.notes)) notes.push(...mc.notes)
+    else notes.push(mc.notes)
+  }
+  if (notes.length > 0) {
+    /*
+     * Add all text on a single point
+     */
+    points[ids.notes]
+      .addText(notes, `${mc.classes.notes} ${mc.align}`)
       .attr('data-text-transform', transform)
       .attr('data-render-always', 1) // Render even when outside the part bounding box
-    shift += mc.dy
-  } else delete ids.for
-
-  /*
-   * Title: Date
-   */
-  points[ids.date] = mc.at
-    .shift(-90, shift)
-    .attr(
-      'data-text',
-      new Date().toLocaleString(locale || 'en', {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'short',
-        day: 'numeric',
-      })
-    )
-    .attr('data-text-class', `${mc.classes.date} ${mc.align}`)
-    .attr('data-text-transform', transform)
-    .attr('data-render-always', 1) // Render even when outside the part bounding box
+      .attr('data-text-lineheight', mc.dy)
+  } else delete ids.cutlist
 
   /*
    * Store all IDs in the store so we can remove this macro with rmtitle

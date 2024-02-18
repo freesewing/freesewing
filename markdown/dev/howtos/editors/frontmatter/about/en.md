@@ -19,4 +19,4 @@ order: 20
 ---
 ```
 
-<ReadMore list />
+<ReadMore />

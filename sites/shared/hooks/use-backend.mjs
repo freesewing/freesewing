@@ -239,6 +239,20 @@ Backend.prototype.getProfile = async function (uid) {
 }
 
 /*
+ * Load user count
+ */
+Backend.prototype.getUserCount = async function () {
+  return responseHandler(await api.get(`/info/users`))
+}
+
+/*
+ * Load stats
+ */
+Backend.prototype.getStats = async function () {
+  return responseHandler(await api.get(`/info/stats`))
+}
+
+/*
  * Create bookmark
  */
 Backend.prototype.createBookmark = async function (data) {

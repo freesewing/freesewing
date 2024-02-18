@@ -111,9 +111,11 @@ export const DesignInfo = ({ design, docs = false, workbench = false, modal = fa
         <li>
           <DocsLink site="org" slug={`docs/designs/${design}/fabric`} />
         </li>
-        <li>
-          <DocsLink site="org" slug={`docs/designs/${design}/options`} />
-        </li>
+        {Object.keys(config.options).length > 0 ? (
+          <li>
+            <DocsLink site="org" slug={`docs/designs/${design}/options`} />
+          </li>
+        ) : null}
         <li>
           <DocsLink site="org" slug={`docs/designs/${design}/notes`} />
         </li>
@@ -352,8 +354,12 @@ export const DesignInfo = ({ design, docs = false, workbench = false, modal = fa
             </>
           ) : null}
 
-          <h6 className="mt-4">{t('account:designOptions')}</h6>
-          <SimpleOptionsList options={config.options} t={t} design={design} />
+          {Object.keys(config.options).length > 0 ? (
+            <>
+              <h6 className="mt-4">{t('account:designOptions')}</h6>
+              <SimpleOptionsList options={config.options} t={t} design={design} />
+            </>
+          ) : null}
 
           <h6 className="mt-4">{t('account:parts')}</h6>
           <ul className="list list-disc list-inside pl-2">
@@ -361,6 +367,7 @@ export const DesignInfo = ({ design, docs = false, workbench = false, modal = fa
               <li key={part}>{part}</li>
             ))}
           </ul>
+
           {Object.keys(config.plugins).length > 0 ? (
             <>
               <h6 className="mt-4">{t('account:plugins')}</h6>

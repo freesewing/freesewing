@@ -2,7 +2,7 @@
 title: "Rand lussen"
 ---
 
-Stallen hoeveel bellussen we gaan genereren.
+Controls how many beltloops we'll generate.
 
 
 

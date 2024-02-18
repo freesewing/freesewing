@@ -1,0 +1,178 @@
+{
+  "t": "Tristan top",
+  "d": "Tristan is a fitted tank top with prince(ss) seams.",
+  "p": { 
+    "backInside": "Back inside",
+    "backOutside": "Back outside",
+    "backPoints": "Back base",
+    "frontInside": "Front inside",
+    "frontOutside": "Front outside",
+    "frontPoints": "Front base",
+    "peplumFront": "Peplum front",
+    "peplumBack": "Peplum back"
+  },
+  "s": {
+    "strapWidthAdjusted.t": "The strap width has been adjusted",
+    "strapWidthAdjusted.d": "The strap width has been adjusted to {{{ width }}} to allow for the position of the strap on the shoulder.",
+    "peplumWidth.t": "Peplum size",
+    "peplumWidth.d": "The peplum will be {{{ peplumWidth }}} long.",
+    "frontOutside": "Outside front",
+    "frontInside": "Inside front",
+    "backOutside": "Outside back",
+    "backInside": "Inside back",
+    "frontPeplum": "Peplum front",
+    "backPeplum": "Peplum back",
+    "hem": "Hem"
+  },
+  "o": { 
+    "bustSpanEase": {
+      "t": "Bust span ease",
+      "d": "Controls the amount of ease along the bust span"
+    },
+    "chestEase": {
+      "t": "Chest ease",
+      "d": "Controls the amount of ease at the chest"
+    },
+    "shoulderToShoulderEase": {
+      "t": "Shoulder to shoulder ease",
+      "d": "Controls the amount of ease along the shoulder to shoulder measurement"
+    },
+    "fullChestEaseReduction": {
+      "t": "Full chest ease reduction",
+      "d": "Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at the waist"
+    },
+    "waistdartposition": {
+      "t": "Waist dart position",
+      "d": "Controls the position of the waist 'dart', moving it to the center (negative) or side (positive)"
+    },
+    "frontShoulderWidth": {
+      "t": "Front shoulder width",
+      "d": "Controls how much width is added to the shoulder in the front"
+    },
+    "highBustWidth": {
+      "t": "High bust width",
+      "d": "Controls the width of the high bust"
+    },
+    "armholeDepth": {
+      "t": "Depth of the Armhole",
+      "d": "Controls how deep the armhole is"
+    },
+    "cutDepthBack": {
+      "t": "Depth of the cut in the back",
+      "d": "Controls the depth of the cut in the back"
+    },
+    "cutDepthFront": {
+      "t": "Depth of the cut in the front",
+      "d": "Controls the depth of the cut in the front"
+    },
+    "cutRoundnessBack": {
+      "t": "Roundness of the cut in the back",
+      "d": "Controls how 'round' the cut in the back is, from V to round to square"
+    },
+    "cutRoundnessFront": {
+      "t": "Roundness of the cut in the front",
+      "d": "Controls how 'round' the cut in the front is, from V to round to square"
+    },
+    "shoulderDartPosition": {
+      "t": "Shoulder dart position",
+      "d": "Controls the position of the shoulder dart"
+    },
+    "strapWidth": {
+      "t": "Width of the straps",
+      "d": "Controls the width of the straps"
+    },
+    "upperDartLength": {
+      "t": "Upper dart length",
+      "d": "Controls the length of the upper dart"
+    },
+    "waistDartLength": {
+      "t": "Waist dart length",
+      "d": "Controls the length of the waist dart"
+    },
+    "zipperLocation": {
+      "t": "Zipper location",
+      "d": "The location of the zipper: side, back, or front"
+    },
+    "zipperLocation.front": {
+      "t": "Front zipper location",
+      "d": "The location of the zipper will be in the front"
+    },
+    "zipperLocation.side": {
+      "t": "Side zipper location",
+      "d": "The location of the zipper will be on the side"
+    },
+    "zipperLocation.back": {
+      "t": "Back zipper location",
+      "d": "The location of the zipper will be in the back"
+    },
+    "hem": {
+      "t": "Hem option",
+      "d": "Add a hem."
+    },
+    "hemYes": {
+      "t": "Add a hem",
+      "d": "Add a hem at the waist"
+    },
+    "hemNo": {
+      "t": "Do not add a hem",
+      "d": "Do not add a hem at the waist"
+    },
+    "hemSize": {
+      "t": "Size of the hem",
+      "d": "Size of the hem, a percentage of the distance between the neckline and the waist"
+    },
+    "lacing": {
+      "t": "Lacing option",
+      "d": "This removes part of the seam to create an opening for lacing"
+    },
+    "lacingYes": {
+      "t": "Add Lacing",
+      "d": "Remove part of the seam to create an opening for lacing"
+    },
+    "lacingNo": {
+      "t": "No lacing",
+      "d": "Close the seams normally"
+    },
+    "lacingLocation": {
+      "t": "Location of the lacing",
+      "d": "Lacing in the front, or the back"
+    },
+    "lacingLocation.back": {
+      "t": "Lacing in the back",
+      "d": "The lacing will be in the back"
+    },
+    "lacingLocation.front": {
+      "t": "Lacing in the front",
+      "d": "The lacing will be in the front"
+    },
+    "lacingWidth": {
+      "t": "Lacing width",
+      "d": "Width of the lacing opening"
+    },
+    "peplum": {
+      "t": "Peplum",
+      "d": "Add a peplum"
+    },
+    "peplumYes": {
+      "t": "Add a peplum",
+      "d": "This will generate the peplum part."
+    },
+    "peplumNo": {
+      "t": "No peplum",
+      "d": "Pattern will be generated without a peplum"
+    },
+    "peplumSize": {
+      "t": "Peplum size",
+      "d": "Controls the size of the peplum"
+    },
+    "peplumFullness": {
+      "t": "Peplum fullness",
+      "d": "Controls the 'fullness' of the peplum. Basically from a half-circle to a full-circle."
+    }
+
+  }
+}

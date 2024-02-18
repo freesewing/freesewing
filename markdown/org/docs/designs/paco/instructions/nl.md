@@ -178,7 +178,7 @@ Markeer deze lengte, knip het elastiek en naai de uiteindes aan elkaar.
 
 ## Stap 12: Naai de tailleband
 
-Leg de twee goede kanten van de tailleband op elkaar en leg de korte randen samen. Sew the short edges together, then press open. These will be inside the waistband, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
+Fold the waistband in half with good sides together, aligning the two short edge ends. Sew the short edges together to sew the waistband into a ring. Sew the short edges together, then press open. They will be inside the waistband, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
 
 ![Deelgenomen tailleband stukjes](step12.svg)
 
@@ -205,7 +205,7 @@ niet de binnenkant van je tailleband.
 
 Leg vervolgens de middenruggen en speld samen en voeg extra pinnen om de tailleband toe indien nodig.
 
-Stik de tailleband aan de spelers, zo dicht mogelijk bij het elastiek, maar stik niet in het elastiek.
+Sew the waistband to the pants, as close to the elastic as you can, but don’t sew into the elastic.
 
 ![Besteed tailleband met eenvoudige methode](step13.svg)
 
@@ -288,7 +288,7 @@ er genoeg zijn.
 
 </Tip>
 
-Stik de manchet aan de broek opening, zo dicht mogelijk bij het elastiek, maar stik niet in het elastiek.
+Sew the cuff to the pants opening, as close to the elastic as you can, but don’t sew into the elastic.
 
 ![Snaai manchetten met eenvoudige methode](step16.svg)
 

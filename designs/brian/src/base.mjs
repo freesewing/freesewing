@@ -1,4 +1,4 @@
-import { withCondition as bustPlugin } from '@freesewing/plugin-bust'
+import { bustPlugin } from '@freesewing/plugin-bust'
 
 export const base = {
   name: 'brian.base',
@@ -109,7 +109,8 @@ export const base = {
       // The new way uses the waistToArmpit measurement
       points.cbArmhole = new Point(
         0,
-        points.cbWaist.y - measurements.waistToArmpit * (1 - options.armholeDepth)
+        points.cbWaist.y -
+          measurements.waistToArmpit * (1 - options.armholeDepth - options.bicepsEase / 2)
       )
     }
 
@@ -125,6 +126,12 @@ export const base = {
       (measurements.chest * (1 + options.chestEase)) / 4,
       points.cbArmhole.y
     )
+
+    if (points.shoulder.x >= points.armhole.x)
+      store.flag.warn({
+        msg: 'brian:largeShoulderWidth',
+      })
+
     points.waist = new Point(points.armhole.x, points.cbWaist.y)
     points.hips = new Point(points.armhole.x, points.cbHips.y)
     points.hem = new Point(points.armhole.x, points.cbHem.y)

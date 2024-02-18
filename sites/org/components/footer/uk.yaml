@@ -1,7 +1,7 @@
 cc: Контент на FreeSewing.org доступний за ліцензією Creative Commons
-mit: Вихідний код FreeSewing доступний на Github під ліцензією MIT
+mit: The FreeSewing source code is available on GitHub under the MIT license
 sponsors: Спонсорами FreeSewing є ці чудові компанії
 algolia: Пошук за допомогою Algolia
 crowdin: Переклад зроблено за допомогою Crowdin
-bugsnag: Обробка помилок за допомогою Bugsnag
+bugsnag: Error handling by BugSnag
 vercel: Збірки та хостинг від Vercel

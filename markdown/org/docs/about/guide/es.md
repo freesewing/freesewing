@@ -40,7 +40,7 @@ FreeSewing.org es nuestro activo más visible, y para muchas personas su primer 
 
 ## Patrones vs Diseños
 
-Si has llegado a este sitio buscando patrones de costura __ y no has encontrado inmediatamente un lugar para descargarlos, es porque todos los patrones de costura de FreeSewing son **hechos a medida**.
+If you came to this site looking for _sewing patterns_ and did not immediately find a place to download them, that's because all of FreeSewing's sewing patterns are **made to measure**.
 
 No escalamos ni clasificamos patrones. En su lugar, FreeSewing convierte un diseño en un patrón hecho a tu medida. Eso sucede en tiempo real, en tu navegador.
 
@@ -89,6 +89,6 @@ FreeSewing también proporciona **conjuntos de medidas curadas**. Se trata de me
 
 ## Dónde pedir ayuda
 
-Si te quedas atascado, consule [la página de asistencia](/support/) para conocer las distintas opciones de asistencia.
+If you get stuck, consult [the support page](/support/) for various support options.
 
 

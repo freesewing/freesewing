@@ -42,6 +42,10 @@
     "hemWidth": {
       "t": "Hem width",
       "d": "Width of the hem"
+    },
+    "panels": {
+      "t": "Panels",
+      "d": "Number of panels"
     }
   }
 }

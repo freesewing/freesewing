@@ -63,7 +63,7 @@ export const Flag = ({ data, t, handleUpdate }) => {
   return (
     <div className="flex flex-col gap-2 items-start">
       <div className="first:mt-0 grow md flag">
-        <Mdx md={desc + notes} />
+        <Mdx md={notes ? desc + notes : desc} />
       </div>
       {button ? <div className="mt-2 w-full flex flex-row justify-end">{button}</div> : null}
     </div>

@@ -1,4 +1,3 @@
-![FreeSewing](https://static.freesewing.org/banner.png)
 <p align='center'><a
   href="https://www.npmjs.com/package/@freesewing/core"
   title="@freesewing/core on NPM"
@@ -46,20 +45,20 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
+# FreeSewing
+
+
+> [!TIP]
+>#### Support FreeSewing: Become a patron, or make a one-time donation 🥰
+>
+> FreeSewing is an open source project maintained by Joost De Cock and financially supported by the FreeSewing patrons.
+>
+> If you feel FreeSewing is worthwhile, and you can spend a few coins without
+hardship, then you should [join us and become a patron](https://freesewing.org/community/join).
+
 ## What am I looking at? 🤔
 
 This repository is the FreeSewing *monorepo* holding all FreeSewing's websites, documentation, designs, plugins, and other NPM packages.
-
-## Getting started ⚡ 
-
-As this is a monorepo. You'll need [NodeJS v18](https://nodejs.org), [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.  
-Once you have those, clone (or fork) this repo and run `yarn kickstart`:
-
-```bash
-git clone git@github.com:freesewing/freesewing.git
-cd freesewing
-yarn kickstart
-```
 
 ## About FreeSewing 💀
 
@@ -77,7 +76,7 @@ functionality of the platform.
 If you have NodeJS installed, you can try it right now by running:
 
 ```bash
-npx create-freesewing-pattern
+npx @freesewing/new-design
 ```
 
 Getting started guides are available for:
@@ -88,28 +87,34 @@ Getting started guides are available for:
 The [pattern design tutorial](https://freesewing.dev/tutorials/pattern-design/) will
 show you how to create your first parametric design.
 
-## Support FreeSewing: Become a patron 🥰
+## Getting started ⚡ 
 
-FreeSewing is an open source project maintained by Joost De Cock and financially supported by the FreeSewing patrons.
+To get started with FreeSewing, you can spin up our development environment with:
 
-If you feel FreeSewing is worthwhile, and you can spend a few coins without
-hardship, then you should [join us and become a patron](https://freesewing.org/community/join).
+```bash
+npx @freesewing/new-design
+```
+
+To work with FreeSewing's monorepo, you'll need [NodeJS v18](https://nodejs.org), [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.  
+Once you have those, clone (or fork) this repo and run `yarn kickstart`:
+
+```bash
+git clone git@github.com:freesewing/freesewing.git
+cd freesewing
+yarn kickstart
+```
 
 ## Links 👩‍💻
 
 **Official channels**
 
- - 💻 Makers website: [FreeSewing.org](https://freesewing.org)
+ - 🪡 Makers website: [FreeSewing.org](https://freesewing.org)
  - 💻 Developers website: [FreeSewing.dev](https://freesewing.dev)
- - ✅ [Support](https://github.com/freesewing/freesewing/issues/new/choose),
-   [Issues](https://github.com/freesewing/freesewing/issues) &
-   [Discussions](https://github.com/freesewing/freesewing/discussions) on
-   [GitHub](https://github.com/freesewing/freesewing)
 
 **Social media**
 
- - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
  - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
+ - 🐘 Mastodon: [freesewing.social](https://freesewing.social/)
 
 **Places the FreeSewing community hangs out**
 
@@ -117,15 +122,14 @@ hardship, then you should [join us and become a patron](https://freesewing.org/c
  - 💬 [Facebook](https://www.facebook.com/groups/627769821272714/)
  - 💬 [Reddit](https://www.reddit.com/r/freesewing/)
 
+## Where to get help 🤯
+
+Check our [support page](https://freesewing.org/support), or use 
+the [Issues](https://github.com/freesewing/freesewing/issues) &
+[Discussions](https://github.com/freesewing/freesewing/discussions) on
+[GitHub](https://github.com/freesewing/freesewing).
+
 ## License: MIT 🤓
 
 © [Joost De Cock](https://github.com/joostdecock).  
 See [the license file](https://github.com/freesewing/freesewing/blob/develop/LICENSE) for details.
-
-## Where to get help 🤯
-
-For [Support](https://github.com/freesewing/freesewing/issues/new/choose),
-please use the [Issues](https://github.com/freesewing/freesewing/issues) &
-[Discussions](https://github.com/freesewing/freesewing/discussions) on
-[GitHub](https://github.com/freesewing/freesewing).
-

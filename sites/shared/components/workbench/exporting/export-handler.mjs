@@ -13,6 +13,9 @@ import {
   printSettingsPath,
 } from 'shared/components/workbench/views/print/config.mjs'
 import get from 'lodash.get'
+import mustache from 'mustache'
+import he from 'he'
+import yaml from 'js-yaml'
 
 export const ns = ['cut', 'plugin', 'common']
 export const exportTypes = {
@@ -183,9 +186,34 @@ export const handleExport = async ({
         }
       }
 
+      // Initialize the pattern stores
+      pattern.getConfig()
+
+      // Save the measurement set name to pattern stores
+      if (settings?.metadata?.setName) {
+        pattern.store.set('data.setName', settings.metadata.setName)
+        for (const store of pattern.setStores) store.set('data.setName', settings.metadata.setName)
+      }
+
       // draft and render the pattern
       pattern.draft()
       workerArgs.svg = pattern.render()
+
+      // Get coversheet info: setName, settings YAML, version, notes, warnings
+      const store = pattern.setStores[pattern.activeSet]
+      workerArgs.strings.setName = settings?.metadata?.setName
+        ? settings.metadata.setName
+        : 'ephemeral'
+      workerArgs.strings.yaml = yaml.dump(settings)
+      workerArgs.strings.version = store?.data?.version ? store.data.version : ''
+      const notes = store?.plugins?.['plugin-annotations']?.flags?.note
+        ? store?.plugins?.['plugin-annotations']?.flags?.note
+        : []
+      const warns = store?.plugins?.['plugin-annotations']?.flags?.warn
+        ? store?.plugins?.['plugin-annotations']?.flags?.warn
+        : []
+      workerArgs.strings.notes = flagsToString(notes, mustache, t)
+      workerArgs.strings.warns = flagsToString(warns, mustache, t)
 
       if (format === 'pdf') pageSettings.size = [pattern.width, pattern.height]
 
@@ -208,4 +236,24 @@ export const handleExport = async ({
 
   // post a message to the worker with all needed data
   worker.postMessage(workerArgs)
+}
+
+/**
+ * Convert pattern flags to a formatted string for printing
+ */
+const flagsToString = (flags, mustache, t) => {
+  let first = true
+  let string = ''
+  for (const flag of Object.values(flags)) {
+    let title = flag.replace ? mustache.render(t(flag.title), flag.replace) : t(flag.title)
+    title = he.decode(title)
+    let desc = flag.replace ? mustache.render(t(flag.desc), flag.replace) : t(flag.desc)
+    desc = desc.replaceAll('\n\n', '\n')
+    desc = desc.replaceAll('\n', ' ')
+    desc = he.decode(desc)
+    if (!first) string += '\n'
+    first = false
+    string += '- ' + title + ': ' + desc
+  }
+  return string
 }

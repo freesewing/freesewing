@@ -12,7 +12,7 @@ Sur ces pages, nous te donnons un aperçu de la façon dont tu peux tirer le mei
 Il peut être frustrant pour les visiteurs qui viennent ici en s'attendant à trouver un site Web où ils peuvent télécharger des patrons de couture qu'ils ne parviennent pas à trouver les patrons de couture à télécharger. C'est comme si le fait de cacher le *bouton de téléchargement* était un stratagème élaboré pour leur faire perdre leur temps.
 
 Je ne sais pas vraiment comment régler ce problème car je ne peux pas contrôler les attentes des gens.
-FreeSewing.org est _très_ différent d'un site web avec des liens vers des patrons de couture en PDF.
+FreeSewing.org is _very_ different from a website with some links to PDF sewing patterns.
 Alors si c'est ce à quoi tu t'attends, nous devons presque te désentraver avant de pouvoir parler de ce que ce site offre.
 
 Je ne vais donc pas le faire. Je vais supposer que tu lis avec un esprit ouvert.
@@ -51,7 +51,7 @@ J'aimerais en souligner quelques-unes qui méritent ton attention :
 
 ### Expérience de l'utilisateur
 
-Le réglage de l'expérience utilisateur [](/account/control/) te permet de révéler progressivement plus de complexité. Si tu es un peu submergé par tout ce que FreeSewing.org a à offrir, en réglant ce paramètre sur une valeur inférieure, tu masqueras progressivement plus de fonctions dans un souci de simplicité. Mais en définissant une valeur plus élevée ici, tu afficheras plus de caractéristiques et de fonctionnalités.
+Le réglage de l'expérience utilisateur [](/account/control/) te permet de révéler progressivement plus de complexité. Mais en définissant une valeur plus élevée ici, tu afficheras plus de caractéristiques et de fonctionnalités. If you are a little overwhelmed with everything FreeSewing.org has to offer, setting this to a lower value will gradually hide more features for the sake of simplicity.
 
 Diminue ce paramètre si tu veux une expérience plus simple. Monte le son si tu veux plus de puissance, ou si certaines choses dont tu connais l'existence ne sont pas affichées sur ton écran.
 

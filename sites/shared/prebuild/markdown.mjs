@@ -167,7 +167,8 @@ const loadBlog = async () => {
   for (const lang of Object.keys(titles)) {
     posts[lang] = {}
     for (const post of ordered) {
-      posts[lang][post.s] = { t: post.t }
+      const sortkey = 9999999999 - post.o
+      posts[lang][post.s] = { t: post.t, o: sortkey }
       if (lang === 'en') meta[post.s] = { a: post.a, d: post.o }
     }
   }

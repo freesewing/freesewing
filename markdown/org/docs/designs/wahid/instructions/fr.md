@@ -140,7 +140,7 @@ Retournez le parement de poche vers l'arrière et repassez.
 
 ![Repasser les triangles sur les côtés courts](05h.png)
 
-Déplacez votre parement de poche sur le côté pour révéler ces petits triangles sur le côté de votre poche.
+Move your pocket facing out of the way to reveal those little triangles at the side of your pocket.
 
 Repliez-les vers l'arrière en vous assurant de garder un rectangle parfait pour l'ouverture de poche, puis repassez-les.
 

@@ -1,8 +1,6 @@
 import { measurements, cisFemaleAdult28 } from '@freesewing/models'
 import designs from '../../config/software/designs.json' assert { type: 'json' }
-import chai from 'chai'
-
-const expect = chai.expect
+import { expect, assert } from 'chai'
 
 export const getShortName = (name) => name.split('/').pop()
 export const isUtilityDesign = (name) => typeof designs[name].tags === 'undefined'
@@ -103,7 +101,7 @@ export const testPatternConfig = (Pattern) => {
         const missWarnings = draft.setStores[0].logs.warn.filter((w, i, a) => {
           return w.match(/tried to access `measurements/) && a.indexOf(w) === i
         })
-        chai.assert(
+        assert(
           missWarnings.length === 0,
           `expected part to request all used measurements. \nThe following measurements were requested in the config: ${patternMeasies.join(
             ', '

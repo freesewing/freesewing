@@ -4,7 +4,7 @@ title: "Yuri hoodie: Sewing Instructions"
 
 <Note>
 
-This pattern can be sewn with or with out a overlocker/serger. To _finish_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
+This pattern can be sewn with or with out a overlocker/serger. To _finish_ seams without a overlocker/serger you can either use your preferred method or one of the methods below:
 
 ##### Finishing Method 1
 
@@ -14,14 +14,14 @@ This pattern can be sewn with or with out a overlocker/serger. To _finish_ seams
 
 ##### Finishing Method 2
 
-- Sew the seam allowances together with either a ziz-zag, overcast or straight stitch and press to one side.
+- Sew the seam allowances together with either a zig-zag, overcast or straight stitch and press to one side.
 - Trim to 1cm (3/8 inch) seam allowance if needed.
 
 </Note>
 
 <Tip>
 
-If using a overlocker/serger you can sew seams which need fininshing in one go rather than sewing the seam conventionally and finishing it.
+If using a overlocker/serger you can sew seams which need finishing in one go rather than sewing the seam conventionally and finishing it.
 
 </Tip>
 
@@ -51,7 +51,7 @@ On the pattern the back notch is marked as a cross-notch (see [our pattern notat
 - (Optional) Overcast the raw edge of the sleeve.
 - Press the hem allowance to the wrong side of the fabric and baste in place close to the raw edge.
 - On the outside, stitch away from the folded edge, catching the hem allowance underneath using the basting as guide to where the raw edge is.
-- (Optional) On the outside, stitch 6mm (1/4 inch) parallel to original stich along the hem allowance.
+- (Optional) On the outside, stitch 6mm (1/4 inch) parallel to original stitch along the hem allowance.
 - Remove basting.
 
 <Note>
@@ -94,8 +94,8 @@ It is recommended to use **Finishing Method 1** for this step regardless of whet
 - Sew the pinned edge together.
 - Trim the seam allowance to 1cm (3/8 inch) if your chosen seam allowance is bigger and you have not used and overlocker/serger. Otherwise _do not_ trim the seam.
 - Turn the hood good sides out and press the outer edge flat.
-- On the outside Topstitch along the edge of the hood, about 1.5 - 2cm (5/8 - 3/4 inch) from the edge. Ensure that your topstiching encloses but does not go through the seam allowance of the outer hood edge. This will create a decorative rim, with the enclosed seam allowance making the rim a bit poofy.
-- With raw edges together, overcast the bottom of the hood. You can either do this with an overlocker/serger or a ziz-zag or overcast stitch on a regular machine.
+- On the outside Topstitch along the edge of the hood, about 1.5 - 2cm (5/8 - 3/4 inch) from the edge. Ensure that your topstitching encloses but does not go through the seam allowance of the outer hood edge. This will create a decorative rim, with the enclosed seam allowance making the rim a bit poofy.
+- With raw edges together, overcast the bottom of the hood. You can either do this with an overlocker/serger or a zig-zag or overcast stitch on a regular machine.
 
 <Note>
 
@@ -121,15 +121,15 @@ You can also make a folded band so the neckband does not have a raw edge but thi
 - With good sides together, starting from the centre back pin the hood to the neck, matching the centre backs and overlapping the hood ends at the centre front.
 - With good side of neckband to lining side of hood, pin the neckband to the hood matching middle of the neckband to the centre back.
 - If using an overlocker/serger, serge the neck and hood together through all layers.
-- If using a sewing machine, use a zig-zag stich to sew all the neck and hood layers together.
+- If using a sewing machine, use a zig-zag stitch to sew all the neck and hood layers together.
 - On the outside check around the neckline to make sure all the layers are caught.
 - Press seam allowances towards the body.
-- On the good side, topstitch with a straight sitch approximately 1cm (3/8 inch) away from the neck edge towards the body to catch and secure the neckband underneath.
+- On the good side, topstitch with a straight stitch approximately 1cm (3/8 inch) away from the neck edge towards the body to catch and secure the neckband underneath.
 - Trim the excess binding from the inside.
 
 <Warning>
 
-If using a overlocker/serger to attach the hood you may want to attach bulky areas down first with a straight stitch suchs as the front as an overlocker/serger may have trouble sewing these parts.
+If using a overlocker/serger to attach the hood you may want to attach bulky areas down first with a straight stitch such as the front as an overlocker/serger may have trouble sewing these parts.
 
 </Warning>
 

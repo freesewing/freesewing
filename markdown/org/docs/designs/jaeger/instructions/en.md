@@ -2,13 +2,13 @@
 title: "Jaeger jacket: Sewing Instructions"
 ---
 
-<Note>
+<Fixme>
 
 ###### Jaeger documentation is under construction
 
 This documentation is not yet finished.
 
-</Note>
+</Fixme>
 
 ## Construction
 
@@ -103,7 +103,7 @@ to attach the welt, since you marked 0.5cm inwards from the corners.
 
 ![Press the chest pocket](pressChestPocket.svg)
 Now cut open your welt in the middle of both seamlines.
-Don't cut to the edge, but create a trianngular shape there.
+Don't cut to the edge, but create a triangular shape there.
 
 Flip the pocket bag and welt to the backside by passing both of them through the opening you just created.
 
@@ -126,7 +126,7 @@ Thread a needle and hand-finish the chest pocket by sewing down the sides of the
 Finally, close the pocket bag by sewing the sides.
 Do this by placing the front down with the good side up. Then fold over each side and sew the pocket bag. While sewing these sides, make sure to catch those triangular little pieces of the opening. This will reinforce the pocket opening.
 
-Baste the chest pocket closed while we contruct the jacket.
+Baste the chest pocket closed while we construct the jacket.
 
 ### Prepare the fronts
 
@@ -188,10 +188,10 @@ Keep in mind that:
 ![Close the sides](closeSides.svg)
 
 Place your front with the good side up, and your side on it with the good side down.  
-Align the front/side seams, pin them in place if you feel like it, and sew them togther.
+Align the front/side seams, pin them in place if you feel like it, and sew them together.
 
 Place this down with the good side up, and place your back on top with the good side down.  
-Align the back/side seams, pin them in place if you feel like it, and sew them togther.
+Align the back/side seams, pin them in place if you feel like it, and sew them together.
 
 > Make sure the canvas does not get caught in the seam.
 
@@ -206,7 +206,7 @@ Align the back/side seams, pin them in place if you feel like it, and sew them t
 
 ![Close the back seam](closeBack.svg)
 
-Aling your two half-jackets with the good sides together, and close the back seam.
+Align your two half-jackets with the good sides together, and close the back seam.
 
 <Note>
 
@@ -242,23 +242,27 @@ So make sure to align the notches. It's what they're there for.
 
 
 ### Make the collar
-In order to look real crisp, the collar should be symetrical on both sides. 
+In order to look real crisp, the collar should be symmetrical on both sides. 
 About 5mm difference is already visible to a collar, so the more precise you do these steps, the better.
 
-### Add markings to both collars
-But both collars on top of each other, baste the corners together and cut the basting.
+### Add markings to both collar and undercollar
+Put the collar and undercollar on top of each other, baste the corners together and cut the basting.
 Then use a marking pencil or some chalk to mark the edges of the collar. 
 Measure 2 times to make sure the remaining collars and the location of the corners are 100% identical on both corners
 ![Mark the collar Edges](collarMarkings.svg)
 
+<Note compact>
+The undercollar's shape is that of the collar and collarstand parts
+combined.
+</Note>
 
 #### Add interfacing or canvas to the outside collar stand and under collar
-Either use a fusable interfacing, or, if you want to be hardcore use a horsehair canvas. 
-Stich it to the outside collor stand using the same technique as when adding canvas to the lapel.
-![Add canvas to the collor](collarWithCanvas.svg)
+Either use a fusible interfacing, or, if you want to be hardcore use a horsehair canvas. 
+Stitch it to the outside collar stand using the same technique as when adding canvas to the lapel.
+![Add canvas to the collar](collarWithCanvas.svg)
 
 #### Sew the outside collarstand to the under collar, and add to jacket
-Make sure the outside collarstand and under collar are alligend and sew together
+Make sure the outside collarstand and under collar are aligned and sew together
 Sew the outside collarstand+undercollar to the neckline of the jacket
 Give small cuts in the fabric around the neckline to give it more ease
 Cut the seam allowance in the corners diagonally for a better fit
@@ -267,9 +271,9 @@ Cut the seam allowance in the corners diagonally for a better fit
 
 
 ### Sleeves
-Sew the uppersleeve to the undersleeve untill the split
+Sew the uppersleeve to the undersleeve until the split
 
-#### Create the split at the eng of the sleeve
+#### Create the split at the end of the sleeve
 
 Sew the other side of the sleeves
 Turn the sleeves with the good side out
@@ -283,23 +287,23 @@ Please see images at the front pockets for details
 </note>
 
 Locate the position of the pocket on the left inner lining with basting
-Add some fusible interfacting around the area
+Add some fusible interfacing around the area
 Draw the pocket on the interfacing.
 Add the  welts to the upper and lower side of the pocket
 Sew the welts on the line on both sides of the pocket.
-Make use the welts end exactly on top of eachother.
+Make use the welts end exactly on top of each other.
 Cut the pocket entrance to about 1 or 2 cm from the end.
-Cut the last part diagonally so you get a fish bone fcut
+Cut the last part diagonally so you get a fish bone cut
 Turn the welts inside out, baste and press
 Turn the triangles inside out, baste and press
 Sew around the pocket to put everything in place
 Take the pocketbag, sew it to the lower welt and the other part to the upper welt (See: chest pocket)
 
 ### Lining
-Sew the lining back seam untill the split
+Sew the lining back seam until the split
 Sew the figure seams in the front parts
 Add the whole lining together (front, side, back)
-Add the from lining to the front facing. LEave about 5cm open from the bottom
+Add the from lining to the front facing. Leave about 5cm open from the bottom
 Close the shoulders
 Add the inside collar stand to the uppercollar and add to the lining jacket
 Make small cuts in the neckline and the corners
@@ -312,7 +316,7 @@ Sew around the collar and continue all the way to the front facing
 Turn the jacket right side out
 Fold the sleeves in place (make sure they are not turned!!)
 Add the sleeves lining to the sleeves split
-Make sure the collars are straight on top of each other (they allign) and add the seam allowences to each other by hand.
+Make sure the collars are straight on top of each other (they align) and add the seam allowances to each other by hand.
 Add in a few places front SA to lining SA by hand from the inside of the jacket
 Create the backsplit and manually add the lining to the main fabric
 Add buttonholes and buttons

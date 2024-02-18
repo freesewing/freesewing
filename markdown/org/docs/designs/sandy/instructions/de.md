@@ -5,7 +5,7 @@ title: "Sandy Kreisrock: Anleitung zum Nähen"
 <Warning>
 
 Aufgrund der unterschiedlichen Stile und Konfigurationen von Sandy kann es sein, dass du bestimmte Schritte auslassen oder neu anordnen musst.
-Wir werden hier nicht ausführlich erklären, wie du die einzelnen Details für einen Kreisrock anfertigst. Diese Anleitung setzt voraus, dass du weißt, wie man einen Reißverschluss näht, Taschen konstruiert usw. Wenn nicht, gibt es im Web zahlreiche ausgezeichnete Artikel, sowohl in schriftlicher Form als auch auf Video. Wenn du nicht weiterkommst, kannst du dich jederzeit an [andere FreeSewers] (https://discord.freesewing.org/) in unserem Discord wenden.
+Wir werden hier nicht ausführlich erklären, wie du die einzelnen Details für einen Kreisrock anfertigst. Diese Anleitung setzt voraus, dass du weißt, wie man einen Reißverschluss näht, Taschen konstruiert usw. If not, there are numerous excellent articles available on the web, both in written form, and on video. Wenn du nicht weiterkommst, kannst du dich jederzeit an [andere FreeSewers] (https://discord.freesewing.org/) in unserem Discord wenden.
 
 </Warning>
 
@@ -111,7 +111,7 @@ Säume den Rock auf eine der folgenden Arten:
 
 <Note>
 
-Es gibt viele Möglichkeiten, den unteren Teil eines Rocks zu säumen. Wenn du eine bevorzugte Methode hast, kannst du sie hier anwenden.
+There are many ways to hem/face the bottom of a skirt, If you have a preferred method use it here.
 
 </Note>
 

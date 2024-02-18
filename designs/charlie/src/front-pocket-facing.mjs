@@ -40,7 +40,7 @@ function draftCharlieFrontPocketFacing({
    * Annotations
    */
   // cutlist
-  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+  store.cutlist.setCut({ cut: 4, from: 'fabric' })
 
   // Title
   points.titleAnchor = points.slantBottomNotch.shift(0, 10)

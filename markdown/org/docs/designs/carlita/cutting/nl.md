@@ -60,6 +60,21 @@ Als je hoofdstof heel licht en dun is, moet je misschien alle onderdelen met een
 
 <Note>
 
-De canvas delen moeten netto gesneden worden (zonder naadtoeslagen).
+The canvas parts need to be cut _nett_ (without seam allowances).
 
 </Note>
+
+<Comment by="Benjamin F.">
+
+Instead of cutting the canvas parts nett, there is an alternate
+method where seam allowance is included on the canvas parts.
+The idea is that because the canvas parts have seam allowance,
+when they are attached to the main fabric pieces this can allow
+ease to be worked into the garment for a better shape.
+The seam allowance is then trimmed from the canvas at a later point
+in the garment construction process.
+
+However, because this is a more advanced tailoring technique,
+our instructions are instead written with the nett canvas method.
+
+</Comment>

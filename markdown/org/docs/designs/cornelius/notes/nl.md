@@ -6,8 +6,8 @@ Als kind vertelde mijn vader me verhalen over wandelen in de bergen, iets magisc
 
 Toen ik als dertiger naar de VS verhuisde en zelf ging wandelen, dacht ik vaak terug aan die gesprekken en vond ik het jammer dat ik die knickerbockers niet had geërfd. Toen ik het naaien ontdekte, besloot ik dat ik zelf een paar zou maken, maar er waren geen goede patronen.
 
-Then someone on the Freesewing discord server posted a link to The 'Keystone' Systems, Practical methods of cutting, from around the turn of the century. Daarin stond een tekensysteem voor 'Cycling Breeches', dat dicht in de buurt leek te komen van wat mijn vader vroeger droeg en dat vertaald kon worden naar een Freesewing patroon. Een project was geboren en ik ben blij dat ik de resultaten aan jullie kan presenteren.
+Toen postte iemand op de Freesewing discord server een link naar Het 'Keystone' Systeem, Praktische methoden van snijden, van rond de eeuwwisseling. Daarin stond een tekensysteem voor 'Cycling Breeches', dat dicht in de buurt leek te komen van wat mijn vader vroeger droeg en dat vertaald kon worden naar een Freesewing patroon. Een project was geboren en ik ben blij dat ik de resultaten aan jullie kan presenteren.
 
-These are not designed as hiking breeches, but cycling breeches. That's close enough for me. They work for either activity, and have many more uses.
+Dit is geen wandelbroek, maar een fietsbroek. Dat is dichtbij genoeg voor mij. Ze werken voor beide activiteiten en hebben nog veel meer toepassingen.
 
 Wouter

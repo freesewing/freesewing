@@ -71,7 +71,8 @@ export const getId = ({
 export const translateStrings = (t, list) => {
   let translated = ''
   for (const string of list) {
-    if (string) translated += t(string.toString()).replace(/&quot;/g, '"') + ' '
+    if (Array.isArray(string)) translated += translateStrings(t, string)
+    else if (string) translated += t(string.toString()).replace(/&quot;/g, '"') + ' '
   }
 
   return translated

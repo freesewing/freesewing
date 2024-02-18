@@ -54,4 +54,4 @@ Je kunt op dat pictogram klikken om de inline documentatie te openen. Hiermee ku
 
 ## Editor modi
 
-<Fixme>Complete these docs</Fixme>
+<Fixme>Maak deze documenten af</Fixme>

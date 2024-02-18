@@ -1,8 +1,8 @@
 ---
-title: ongedefinieerd
+title: Lengte
 ---
 
-ongedefinieerd
+De optie lengte bepaalt hoe lang je zak wordt. 
 
 
 

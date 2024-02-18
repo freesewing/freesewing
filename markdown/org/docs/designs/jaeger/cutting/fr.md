@@ -9,7 +9,7 @@ title: "Veste Jaeger : Instructions de coupe"
   - Couper **2 côtés** (partie 3)
   - Couper **2 manches supérieures** (partie 4)
   - Couper **2 manches inférieures** (partie 5)
-  - Couper **1 collier** (partie 6)
+  - Cut **1 collar** (part 7)
   - Couper **1 collier** (partie 8)
   - Couper **2 poches** (partie 9)
   - Couper **1 poche de poitrine** (partie 10)
@@ -26,8 +26,9 @@ title: "Veste Jaeger : Instructions de coupe"
 - **Toile**
   - Couper **2 faces** sur un biais (partie 1) : Ne pas inclure la marge de couture
   - Coupez **2 pièces de poitrine** en parti. Recherchez les indications sur la partie avant. Remarque : Ne pas inclure la marge de couture
+  - Cut **1 undercollar** (part 6). Ne pas inclure la marge de couture.
 - **Tissu de sous-col**
-  - Coupe **2 sous-cols** (partie 7)
+  - Cut **1 undercollar** (part 6)
 
 <Note>
 
@@ -51,3 +52,19 @@ Lorsque vous les coupez individuellement, rappelez-vous qu'elles doivent être l
 ![Trace the front facing and lining from the front part](cuttingCaveat.svg)
 
 </Warning>
+
+<Comment by="Benjamin F.">
+
+Instead of cutting the canvas parts _nett_ (without seam allowance),
+there is an alternate
+method where seam allowance is included on the canvas parts.
+The idea is that because the canvas parts have seam allowance,
+when they are attached to the main fabric pieces this can allow
+ease to be worked into the garment for a better shape.
+The seam allowance is then trimmed from the canvas at a later point
+in the garment construction process.
+
+However, because this is a more advanced tailoring technique,
+our instructions are instead written with the nett canvas method.
+
+</Comment>

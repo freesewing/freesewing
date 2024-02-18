@@ -1,7 +1,5 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { Design } from '../src/index.mjs'
-
-const expect = chai.expect
 
 describe('Pattern', () => {
   describe('Pattern.draft()', () => {
@@ -157,7 +155,6 @@ describe('Pattern', () => {
     const pattern = new Test()
     pattern.draft()
 
-    console.log(pattern.setStores[pattern.activeSet].logs.error[0])
     expect(pattern.setStores[pattern.activeSet].logs.error[0]).to.include(
       'Could not inject part `otherPart` into part `front`'
     )
@@ -212,7 +209,6 @@ describe('Pattern', () => {
     const pattern = new Test()
     pattern.draft()
     const rp = pattern.getRenderProps()
-    expect(rp.svg.body).to.equal('')
     expect(rp.width).to.equal(4)
     expect(rp.height).to.equal(4)
     expect(rp.parts.front.height).to.equal(4)

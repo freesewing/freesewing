@@ -40,7 +40,7 @@ FreeSewing.org ist unser sichtbarster Aktivposten und für viele Menschen die er
 
 ## Muster vs. Designs
 
-Wenn du auf diese Seite gekommen bist, um nach _Nähmustern_ zu suchen, und nicht sofort einen Ort gefunden hast, an dem du sie herunterladen kannst, dann liegt das daran, dass alle Nähmuster von FreeSewing **nach Maß gefertigt werden**.
+If you came to this site looking for _sewing patterns_ and did not immediately find a place to download them, that's because all of FreeSewing's sewing patterns are **made to measure**.
 
 Wir skalieren oder gradieren keine Schnittmuster. Stattdessen entwirft FreeSewing ein Design in ein Muster, das nach deinen Maßen angefertigt wird. Das passiert in Echtzeit, in deinem Browser.
 
@@ -89,6 +89,6 @@ FreeSewing bietet auch **kuratierte Maßsets**. Das sind Messungen von echten Me
 
 ## An wen du dich für Hilfe wenden kannst
 
-[Wenn du nicht weiterkommst, kannst du dich auf der Supportseite](/support/) über die verschiedenen Supportoptionen informieren.
+If you get stuck, consult [the support page](/support/) for various support options.
 
 

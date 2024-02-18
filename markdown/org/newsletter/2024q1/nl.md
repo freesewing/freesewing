@@ -105,9 +105,9 @@ We hebben twee nieuwe ontwerpen op FreeSewing.org die je misschien nog niet kent
 
 [Otis](https://freesewing.org/designs/otis) is een baby rompertje:
 
-> _Toen mijn nichtje een baby kreeg, wist ik precies wat ik moest doen: kleertjes naaien voor de kleine. En ik had nog nooit kleding voor baby's gemaakt. What they should look like was easy. Ik heb zelf jaren geleden kinderen gehad, en die dingen uit één stuk moeten makkelijk te maken zijn._
+> _Toen mijn nichtje een baby kreeg, wist ik precies wat ik moest doen: kleertjes naaien voor de kleine. En ik had nog nooit kleding voor baby's gemaakt. Hoe ze eruit moesten zien was eenvoudig. Ik heb zelf jaren geleden kinderen gehad, en die dingen uit één stuk moeten makkelijk te maken zijn._
 >
-> _Wat ik niet had was een patroon. That meant that I should get one, or make one. Dat was niet zo'n moeilijke beslissing; FreeSewing miste absoluut ontwerpen die gericht waren op baby's. Infants have the nicequality that while they are growing, they grow in each direction at the same pace. De enige echte uitdaging is dat hun hoofd in verhouding veel groter is dan dat van oudere exemplaren. Een normaal shirt met opening werkt niet. But there are easy solutions to that, and these are used by allromper making manufacturers._
+> _Wat ik niet had was een patroon. Dat betekende dat ik er een moest kopen, of maken. Dat was niet zo'n moeilijke beslissing; FreeSewing miste absoluut ontwerpen die gericht waren op baby's. Infants have the nicequality that while they are growing, they grow in each direction at the same pace. De enige echte uitdaging is dat hun hoofd in verhouding veel groter is dan dat van oudere exemplaren. Een normaal shirt met opening werkt niet. But there are easy solutions to that, and these are used by allromper making manufacturers._
 >
 > _Ik heb het halsontwerp gecombineerd met een eenvoudig bodyontwerp en een drukknoopsluiting. Easy short orlong sleeves completed the design._
 
@@ -131,8 +131,8 @@ Ik waardeer Wouter's aanpak echt, waarbij hij zijn eigen behoeften heeft die de 
 
 ## We zijn (nauwelijks) aan het grammen'.
 
-> _Over die titel: Ik _denk_ dat mensen die jonger zijn dan ik naar Instagram verwijzen als _de gram_ en dus heb ik dat genomen en er een werkwoord van gemaakt, want wat is een betere manier om te laten zien dat ik geen idee heb waar ik het over heb._
-> _Het is ook een ingewikkelde callback naar [een blogpost van 6,5 jaar oud](https://freesewing.org/blog/freesewing-goes-jamstack) dus als je dat hebt begrepen, dan mijn complimenten aan jou, maar ik dwaal af._
+> _About that title: I _think_ people younger than me refer to Instagram as _the gram_ and so I took that and made it a verb because what better way to demonstrate that I have no idea what I'm talking about._
+> _It's also a convoluted callback to [a 6-and-a-half year old blogpost](https://freesewing.org/blog/freesewing-goes-jamstack) so if you got that then kudos to you, but I digress._
 >
 > _Instagram. Ik heb het over Instagram. Of meer in het algemeen alle dingen die we doen (en niet doen) om FreeSewing te _promoten_, bewustzijn te creëren, enzovoort. Laten we het **marketing**._ noemen.
 

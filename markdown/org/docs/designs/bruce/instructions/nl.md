@@ -158,7 +158,7 @@ Neem het langzaam, en wees **zeer bewust** waar je overlock in snijdt.
 
 ![Zoom de eerste pijp](step11.png)
 
-Tijd om de pijpen om te zomen. Zoom ze op dezelfde manier als je elke andere elastische gebreide stof zou zomen. Ga voor een elastische steek. Je kan een zigzaksteek of tweelingnaald gebruiken als je geen coverlock of specifieke stretchsteek hebt.
+Tijd om de pijpen om te zomen. Zoom ze op dezelfde manier als je elke andere elastische gebreide stof zou zomen. Ga voor een elastische steek. Je kan een zigzagsteek gebruiken of een tweelingnaald als je geen coverlock of specifieke stretchsteek hebt.
 
 <Note>
 
@@ -201,7 +201,7 @@ Als je een coverlock gebruikt, leg de elastiek bovenop de goede kant van de stof
 
 <Tip>
 
-De lengte van je elastiek is waarschijnlijk niet hetzelfde als de lengte van je stof, aangezien de twee op een andere manier uitrekken.
+The length of your elastic will probably differ from the fabric length, as they stretch differently.
 Een paar spelden helpen om alles gelijk te krijgen.
 
 Verdeel zowel je elastiek als de taille van je boxershort in 4 (of 8) gelijke delen. Speld elastiek en stof samen op deze punten.

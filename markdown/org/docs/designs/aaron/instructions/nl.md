@@ -103,7 +103,7 @@ Met nog een zestal cm te gaan voor de een complete cirkel gemaakt hebben is het 
 
 ![Markeer het einde van je biezen](step03f.png)
 
-Neem een van de uiteindes, en rek het lichtjes uit langs de 3 cm tot aan het startpunt, zoals je zou doen als je aan het naaien was.
+Neem een van de randen en rek het uit over de 3 cm van het beginpunt en je zou het ook tijdens het naaien.
 
 Markeer de bies waar het beginpunt wordt bereikt. Doe hetzelfde voor het andere uiteinde.
 
@@ -113,7 +113,7 @@ Markeer de bies waar het beginpunt wordt bereikt. Doe hetzelfde voor het andere 
 
 Plooi je hemdje op welke manier dan ook om beide uiteindes van de bies met de goede kanten op elkaar te leggen en de markeringen gelijk te leggen. Naai de uiteindes aan elkaar op de markering.
 
-> 6 cm is niet veel, maar zou genoeg moeten zijn om de twee uiteindes makkelijk onder je naaimachine te leggen en aan elkaar te naaien.
+> 6 cm is niet veel, maar zou genoeg moeten zijn om de twee randen comfortabel onder je naaimachine te krijgen om ze aan elkaar te naaien.
 
 ### Stik de laatste 6 cm van de bies vast
 

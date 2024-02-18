@@ -12,4 +12,4 @@ Um Shin zu erstellen, benötigst du Folgendes:
 > 
 > Wie bei allen Stretch-Stoffen wird dir ein Serger/Overlock das Leben erleichtern.
 > 
-> Wenn du keine hast, musst du aber nicht verzweifeln. Du brauchst sie nicht unbedingt. Für Dehnungsnähte kann man eine andere Technik wie Zickzackstich, Zwillingsnadel oder Gummifaden verwenden.
+> Wenn du keine hast, musst du aber nicht verzweifeln. Du brauchst sie nicht unbedingt. You can use another technique for stretch seams, such as a zig-zag stitch, twin needle, or elastic thread.

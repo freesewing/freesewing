@@ -1,8 +1,8 @@
 ---
-title: undefiniert
+title: Breite
 ---
 
-undefiniert
+Diese Option bestimmt die Gesamtbreite der Tasche. 
 
 
 

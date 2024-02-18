@@ -8,7 +8,7 @@ Deze pluche knuffel kun je het beste maken van een vilten soort stof. This will 
 
 ## Haar
 
-Skully heeft haar nodig. Embrodery garen werkt heel goed en is verkrijgbaar in alle kleuren.
+Skully heeft haar nodig. Embroidery floss works very well, and can be had in all colors.
 
 ## Vulling
 

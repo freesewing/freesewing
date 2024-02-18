@@ -1,6 +1,6 @@
 ---
 author: joostdecock
-caption: There will be fewer of these version announcement posts going forward.
+caption: Er zullen in de toekomst minder van deze versie-aankondigingsberichten zijn.
 date: 2023-12-30
 intro: We've just release FreeSewing v3.1 🎉
 title: FreeSewing v3.1 is out with two new designs, and a reminder that we now stream updates

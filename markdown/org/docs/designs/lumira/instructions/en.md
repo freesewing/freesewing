@@ -60,4 +60,4 @@ pieces.
 Now you can add the elastic to the leg openings. Otherwise finish those in any way you like.
 
 
-You're all done! Enjoy your Lumina leggings!
+You're all done! Enjoy your Lumira leggings!

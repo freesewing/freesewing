@@ -1,5 +1,5 @@
 ---
-title: FreeSewing is now pay-what-you-want
+title: FreeSewing is nu betaal-wat-je-wil
 caption: A Person Putting Coin in a Piggy Bank, by Maitree Rimthong
 date: 20231103
 intro: We have updated our pricing, here's why
@@ -10,7 +10,7 @@ I am clearly doing a terrible job at convincing people to [become a FreeSewing p
 
 The rise in users also brings additional costs. Simply put, running FreeSewing.org is getting more expensive year by year, while revenue does not keep up, and that's a trend that has me worried for a while now.
 
-I considered my options for how to deal with this. I could raise prices, but that seems to punish our patrons who are already supporting us, while the vast majority of users does not contribute.
-Having more patrons is the obvious answer, but I don't like asking for money and in general seem to be rather bad at this sort of thing.
+I considered my options for how to deal with this. Ik zou de prijzen kunnen verhogen, maar dat zou de mensen die ons al steunen straffen, terwijl de overgrote meerderheid van de gebruikers niet bijdraagt.
+Meer ondersteuners is het voor de hand liggende antwoord, maar ik vraag niet graag om geld en ben over het algemeen nogal slecht in dit soort dingen.
 
-So, after thinking it over for a while, I have decided to go the other direction. Rather than raise prices, I have removed pricing altogether. FreeSewing is now pay-what-you-want. Yes, you can still have everything for free, but [please consider supporting us with whatever amount you can spare](/patrons/join).
+Dus na er een tijdje over nagedacht te hebben, heb ik besloten de andere kant op te gaan. In plaats van de prijzen te verhogen, heb ik de prijzen helemaal geschrapt. FreeSewing is nu betaal-wat-je-wil. Ja, je kunt alles nog steeds gratis krijgen, maar [overweeg alsjeblieft om ons te steunen met een bedrag dat je kunt missen](/patrons/join).

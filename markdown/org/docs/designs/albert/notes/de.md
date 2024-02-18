@@ -2,10 +2,10 @@
 title: "Albert Schürze: Designer Notes"
 ---
 
-Albert was something that I didn't plan on making. My daughter, who's a visual artist, asked if I could make her an apron. Of course, I could not deny her such a request. And since I didn't have a pattern, I needed to make one. And that meant that I could just as well make one for FreeSewing while I was at it.
+Albert war etwas, das ich nicht vorhatte zu machen. My daughter, who's a visual artist, asked if I could make her an apron. Natürlich konnte ich ihr eine solche Bitte nicht abschlagen. Und da ich kein Schnittmuster hatte, musste ich eins machen. Und das bedeutete, dass ich genauso gut eine für FreeSewing machen konnte, wenn ich schon dabei war.
 
-The design is simple, since an apron generally is. And yet, where else than at FreeSewing can you get a bespoke apron?
+Das Design ist einfach, wie es bei einer Schürze üblich ist. And yet, where else than at FreeSewing can you get a bespoke apron?
 
-This is a very good project for a beginning sewist.
+Das ist ein sehr gutes Projekt für einen Nähanfänger.
 
 Wouter

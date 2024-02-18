@@ -1,6 +1,6 @@
 ---
-title: Short-sleeve, short-leg Onyx swimsuit
-caption: Short-sleeved, short-legged, Lilo & Stitch-themed swimsuit.
+title: Onyx badpak met korte mouwen en korte pijpen
+caption: Badpak met korte mouwen en korte pijpen met Lilo & Stitch-thema.
 date: 20231106
 intro: ""
 designs:
@@ -8,8 +8,8 @@ designs:
 maker: Thrunic
 ---
 
-An Onyx one-piece swimsuit/unisuit made with short sleeves and short legs. It's great for a summer beach day, looking cute and stylish while providing more modesty and sun coverage than traditional swimwear.
+Een Onyx eendelig badpak/unisuit met korte mouwen en korte pijpen. Het is geweldig voor een zomerse stranddag, het ziet er schattig en stijlvol uit terwijl het meer bescheidenheid en zonbedekking biedt dan traditionele zwemkleding.
 
-It uses 80% nylon / 20% spandex mid-weight swim fabric for the fashion layer, and 80% polyester / 20% spandex heavyweight swim fabric for the lining layer.
+De gebruikte stof is 80% nylon/20% spandex middelzware zwemstof voor de modelaag en 80% polyester/20% spandex zware zwemstof voor de voering.
 
-Made with a front zipper, a neckband, \~30% leg and sleeve length, \~-20% ease for chest, waist, hips, upper legs, \~-10% sleeve ease, \~-10% center seam ease. The seams are made with a serger/overlocker. The hems are single-fold and made with a double-needle using a triple stretch stitch. The zipper is a 12" long, #5 gauge molded plastic zipper.
+Made with a front zipper, a neckband, \~30% leg and sleeve length, \~-20% ease for chest, waist, hips, upper legs, \~-10% sleeve ease, \~-10% center seam ease. De naden zijn gemaakt met een overlocker. De zomen zijn enkelvoudig gevouwen en gemaakt met een dubbele naald met een drievoudige stretchsteek. De rits is een 12" lange, maat #5 gegoten plastic rits.

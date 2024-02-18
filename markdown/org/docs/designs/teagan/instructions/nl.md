@@ -77,7 +77,7 @@ Nu is het tijd om de uiteinden van onze gebreide band aan elkaar te naaien.
 
 - Nu de uiteinden van je band aan elkaar zitten, is het tijd om de laatste 6 cm af te werken, door de band uit te rekken en vast te naaien zoals je voor de rest hebt gedaan.
 
-Hoera! Je bent klaar met het lastigste deel! Eventueel kun je de knipranden vastzetten door ze vast te naaien aan de T-shirtstof, net binnen de gebreide band met een sig-zag of coverlocksteek. Dit is niet verplicht, maar het is een detail dat je op veel confectie T-shirts ziet en het kan je nekband helpen plat te liggen.
+Hoera! Je bent klaar met het lastigste deel! Dit is niet verplicht, maar het is een detail dat je op veel confectie T-shirts ziet en het kan je nekband helpen plat te liggen. Dit is niet verplicht, maar het is een detail dat je op veel confectie T-shirts ziet en het kan je nekband helpen plat te liggen.
 
 ![Naai gebreide band vast](step03i.svg)
 
@@ -85,7 +85,7 @@ Hoera! Je bent klaar met het lastigste deel! Eventueel kun je de knipranden vast
 
 <Tip>
 
-Een uitgebreidere how-to voor gebreid binden kun je vinden in de [Aaron Instuctions](/docs/designs/aaron/instructions).
+A more extensive how-to on knit binding can be found in the [Aaron Instructions](/docs/designs/aaron/instructions).
 
 </Tip>
 

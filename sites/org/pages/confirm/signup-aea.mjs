@@ -15,7 +15,7 @@ import { Popout } from 'shared/components/popout/index.mjs'
 // Translation namespaces used on this page
 const ns = nsMerge(pageNs, layoutNs, 'confirm', 'locales', 'themes', 'susi')
 
-const SignupLinkExpired = () => <Popout fixme>Implement SignupLinkExpired compnonent</Popout>
+const SignupLinkExpired = () => <Popout fixme>Implement SignupLinkExpired component</Popout>
 
 const ActiveSignUpPage = () => {
   const backend = useBackend()

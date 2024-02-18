@@ -7,6 +7,6 @@ Elke API-sleutel heeft een **vervaldatum** waarna de sleutel niet meer werkt.
 Standaard verlopen API-sleutels na 1 maand, maar we ondersteunen tot twee jaar.
 
 <Note>
-Als je sleutel op het punt staat te verlopen, moet je hem vervangen door een nieuwe. 
+When your key is about to expire, you must replace it with a new one. 
 Je kunt de vervaldatum van een eenmaal ingestelde sleutel niet verlengen.
 </Note>

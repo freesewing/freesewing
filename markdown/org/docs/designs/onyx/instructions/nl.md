@@ -4,9 +4,9 @@ title: "Onyx uit één stuk: Naai-instructies"
 
 <Note>
 
-Het gebruik van een overlockmachine wordt aanbevolen om de naden klein te houden en de naden te laten rekken. Als je een overlockmachine gebruikt met het mes ingeschakeld, wordt een naadtoeslag van 12 mm aanbevolen. Bij gebruik van een overlockvoet op een naaimachine of bij overlocken zonder het mes te gebruiken, wordt een naadtoeslag van 6 mm aanbevolen.
+Het gebruik van een overlockmachine wordt aanbevolen om de naden klein te houden en de naden te laten rekken. If using a serger with the knife engaged, a seam allowance of 1/2 inch (12 mm) is recommended. Bij gebruik van een overlockvoet op een naaimachine of bij overlocken zonder het mes te gebruiken, wordt een naadtoeslag van 6 mm aanbevolen.
 
-Gebruik, tenzij anders vermeld, stretchstomen voor de constructie van dit kledingstuk. Een 4-draads overlocksteek wordt aanbevolen, of een overlockvoet op een naaimachine als je geen overlockmachine hebt.
+Unless otherwise stated, use stretch steams for construction of this garment. Een 4-draads overlocksteek wordt aanbevolen, of een overlockvoet op een naaimachine als je geen overlockmachine hebt.
 
 Zomen of manchetten zijn optioneel (omdat breiwerk niet rafelt), maar als je zomen maakt of manchetten toevoegt, zorg er dan voor dat ze kunnen rekken. Deze instructies beschrijven hoe je een enkelvoudige zoom maakt met een dubbele naald, die geschikt is voor badmode of lichtgewicht kledingstukken, en hoe je een ribgebreide boord maakt, die geschikt is voor fleece pyjama's of kigurumi's.
 

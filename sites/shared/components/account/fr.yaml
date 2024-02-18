@@ -108,10 +108,10 @@ controlTitle: Quelle expérience utilisateur préfères-tu ?
 #img
 imgTitle: Que dirais-tu d'une photo ?
 imgDragAndDropImageHere: Glisse et dépose une image ici
-imgPasteUrlHere: Colle ici l'emplacement d'une image (url)
+imgPasteUrlHere: Paste an image location (URL) here
 imgSelectImage: Sélectionne une image
 #newsletter
-newsletterTitle: Veux-tu recevoir la lettre d'information de FreeSewing ?
+newsletterTitle: Voulez-vous recevoir la newsletter de FreeSewing ?
 newsletterYes: Oui, je souhaite recevoir la lettre d'information
 newsletterYesd: Une fois tous les trois mois, tu recevras un courriel de notre part avec un contenu sain et honnête. Pas de suivi, pas de publicité, pas de bêtises.
 newsletterNod: Tu peux toujours changer d'avis plus tard. Mais tant que tu ne l'auras pas fait, nous ne t'enverrons pas de bulletin d'information.
@@ -202,7 +202,7 @@ public: Public
 publicSet: Les mesures publiques sont fixées
 privateSet: Ensemble de mesures privées
 publicSetDesc: D'autres personnes sont autorisées à utiliser ces mesures pour générer ou tester des modèles.
-privateSetDesc: Ces mesures ne peuvent pas être utilisées par d'autres utilisateurs ou visiteurs
+privateSetDesc: These measurements cannot be used by other users or visitors
 permalink: Lien permanent
 editThing: Modifier {thing}
 saveThing: Enregistrer {thing}
@@ -211,8 +211,8 @@ noFilter: Ne pas filtrer
 filterByDesignDocs: Si tu as un modèle spécifique en tête, tu peux <b>filtrer par modèle</b> pour ne répertorier que les mesures nécessaires à ce modèle.
 setLacksMeasiesForDesign: Il manque à cet ensemble les mesures nécessaires pour ce modèle
 setHasMeasiesForDesign: Ce set contient toutes les mesures nécessaires pour ce modèle
-someSetsLacking: Some of your sets lack the measurments required to generate this pattern
-theseSetsReady: Ces ensembles ont toutes les mesures requises pour générer ce motif
+someSetsLacking: Some of these sets lack the measurements required to generate this pattern
+theseSetsReady: These sets have all required measurements to generate this pattern
 chooseSet: Choisis un ensemble de mesures
 patternForWhichSet: Pour quel ensemble de mesures devons-nous générer un modèle ?
 bookmarkedSets: Jeux de mesures que tu as mis en favoris
@@ -222,7 +222,7 @@ curateCuratedSets: Consulte notre sélection d'ensembles de mesures curatées.
 useThisSet: Utilise cette série de mesures
 ownSets: Tes propres jeux de mesures
 noOwnSets: Tu n'as pas (encore) de jeux de mesures propres.
-pleaseMtm: Comme nos patrons sont faits sur mesure, nous te conseillons vivement de prendre des mesures exactes.
+pleaseMtm: Because our patterns are bespoke, we strongly suggest you take accurate measurements.
 noOwnSetsMsg: Tu peux enregistrer tes mesures sous forme de jeu de mesures, après quoi tu pourras générer autant de motifs que tu le souhaites pour ces mesures.
 measurements: Mensurations
 chooseASet: Choisis un ensemble de mesures
@@ -240,6 +240,8 @@ thankYouVeryMuch: Merci beaucoup
 csetSuggestedMsg: Ton envoi a été enregistré et sera traité par l'un de nos conservateurs.
 itIsAvailableAt: Il est disponible à l'adresse suivante
 csetNameMsg: Chaque ensemble curaté a un nom. Tu peux proposer ton propre nom ou un pseudonyme.
+missing: Missing
+andMore: and more
 patternNew: Génère un nouveau modèle
 patternNewInfo: Choisis un modèle, ajoute ton jeu de mesures, et nous générerons pour toi un patron de couture sur mesure.
 designNew: Créer un nouveau dessin
@@ -253,7 +255,7 @@ blogNewInfo: Si tu souhaites écrire sur le blog FreeSewing, tu peux commencer u
 imgNew: Génère une image sur les médias sociaux
 imgNewInfo: Utilise notre générateur pour créer une image que tu pourras partager sur les médias sociaux, prend en charge les formats large (classique), carré (Instagram) ou haut (stories/TikTok).
 csetNew: Suggère un nouvel ensemble de mesures curatives
-csetNewInfo: Nous conservons une collection d'ensembles de mesures approuvés que nous utilisons pour tester les modèles. Tu peux suggérer un ensemble de mesures ici.
+csetNewInfo: We curate a collection of vetted measurements sets that we use to test patterns. You can suggest a measurements set here.
 opackNew: Suggère un nouveau pack d'options
 opackNewInfo: Nous rassemblons une collection de packs d'options approuvés pour chacun de nos modèles. Tu peux suggérer tes options ici.
 newPopular: Les plus populaires

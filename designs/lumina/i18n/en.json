@@ -1,0 +1,101 @@
+{
+  "t": "Lumina leggings",
+  "d": "A FreeSewing pattern for a pair of leggings",
+  "p": {
+    "shape": "Shape",
+    "leg": "Leg",
+    "panel": "Side panel",
+    "pocket": "Pocket",
+    "waistband": "Waistband"
+   },
+  "s": { 
+    "couldNotLowerWaist.t": "Could not lower the waist",
+    "cantFitTheWaistPoint.t": "Cannot fit the waist point",
+    "couldNoFitWaistband.t": "Could not fit the waistband",
+    "couldNotCreatePocket.t": "Could not create the pocket",
+    "dimensions.d": "Dimensions",
+    "dimensions.t": "Waistband will be {{{ waistbandlength }}} long total.\nThe length of the garment along the side will be {{{ length }}}."
+  },
+  "o": { 
+    "ease": {
+      "t": "Ease",
+      "d": "This controls the amount of ease. Since this is a pattern for leggings that is normally made of stretch fabric, the ease is negative, meaning the fabric is stretched around the body."
+    },
+    "length": {
+      "t": "Leg length",
+      "d": "The length of the legs. Look in the Messages from the designer for the exact length."
+    },
+    "waistlowering": {
+      "t": "Waist lowering",
+      "d": "Lowering of the waist. This is a percentage of the Waist-To-Hips measurement."
+    },
+    "waistband": {
+      "t": "Waistband",
+      "d": "Add a separate waistband to the design."
+    },
+    "waistbandYes": {
+      "t": "With a Waistband",
+      "d": "Add a separate waistband."
+    },
+    "waistbandNo": {
+      "t": "Without a Waistband",
+      "d": "Do not add a separate waistband."
+    },
+    "lowerwaistbandback": {
+      "t": "Waistband Lowering",
+      "d": "Lower the waistband in the back."
+    },
+    "lowerwaistbandbackYes": {
+      "t": "Lower the Waistband",
+      "d": "Lower the waistband in the back, creating a 'V' shape."
+    },
+    "lowerwaistbandbackNo": {
+      "t": "Straight waistband",
+      "d": "Do not lower the waistband in the back."
+    },
+    "waistbandsize": {
+      "t": "Waistband size",
+      "d": "Size (height) of the waistband. This is a percentage of the Waist-To-Hips measurement."
+    },
+    "waistreduction": {
+      "t": "Waist circumference reduction",
+      "d": "The amount by which the waist should be reduced. This is a percentage of the waist circumference. Only available when the waistband option is selected. Look in the Messages from the designer for the exact size."
+    },
+    "pocket": {
+      "t": "Pocket",
+      "d": "Add pockets"
+    },
+    "pocketYes": {
+      "t": "Add pockets",
+      "d": "Add pockets in the side panel"
+    },
+    "pocketNo": {
+      "t": "No pockets",
+      "d": "Pockets are not added"
+    },
+    "pocketdepth": {
+      "t": "Pocket depth",
+      "d": "Depth (height) of the pocket. This is a percentage of the Waist-To-Seat measurement."
+    },
+    "fixedsidepanel": {
+      "t": "Side panel",
+      "d": "Fixed-width, or shaped side panel"
+    },
+    "fixedsidepanelYes": {
+      "t": "Fixed side panel",
+      "d": "Create a fixed-width side panel"
+    },
+    "fixedsidepanelNo": {
+      "t": "Shaped side panel",
+      "d": "Create a shaped side panel, consisting of a percentage of the leg circumference"
+    },
+    "sidepanel": {
+      "t": "Side Panel size",
+      "d": "Size (width) of the side panel. This is a percentage of the waist circumference."
+    },
+    "smoothing": {
+      "t": "Smoothing",
+      "d": "This setting controls the amount of smoothing that is done to create the side seams (and overall shape of the leggings)."
+    }
+  }
+}

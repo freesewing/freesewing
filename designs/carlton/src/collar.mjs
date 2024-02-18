@@ -167,13 +167,10 @@ function draftCarltonCollar({ sa, points, options, macro, paths, Path, part, sto
     ._curve(points.topLeftCp, points.topLeft)
   paths.seam = paths.saBase.clone().line(points.standTop).close().attr('class', 'fabric')
 
-  if (sa)
-    paths.sa = paths.saBase
-      .offset(sa)
-      .line(points.topLeft)
-      .move(points.standTop)
-      .line(paths.sa.start())
-      .addClass('fabric sa')
+  if (sa) {
+    paths.sa = paths.saBase.offset(sa).line(points.topLeft)
+    paths.sa.move(points.standTop).line(paths.sa.start()).addClass('fabric sa')
+  }
 
   /*
    * Annotations

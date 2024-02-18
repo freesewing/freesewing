@@ -1,8 +1,8 @@
 ---
 title: "Everything about FreeSewing v3: Umbrella post"
-caption: Multicolored Umbrella by Alexander Grey
+caption: Mehrfarbiger Regenschirm von Alexander Grey
 date: 20231103
-intro: There's a flurry of news about FreeSewing v3, so here's an overview
+intro: Es gibt jede Menge Neuigkeiten über FreeSewing v3, hier ist ein Überblick
 author: joost
 ---
 

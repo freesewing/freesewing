@@ -108,10 +108,10 @@ controlTitle: Welches Nutzererlebnis bevorzugst du?
 #img
 imgTitle: Wie wäre es mit einem Bild?
 imgDragAndDropImageHere: Ziehe ein Bild hierher und lege es ab
-imgPasteUrlHere: Füge hier einen Bildstandort (url) ein
+imgPasteUrlHere: Paste an image location (URL) here
 imgSelectImage: Ein Bild auswählen
 #newsletter
-newsletterTitle: Möchtest du den FreeSewing-Newsletter abonnieren?
+newsletterTitle: Würdest du gerne den FreeSewing-Newsletter erhalten?
 newsletterYes: Ja, ich möchte den Newsletter erhalten
 newsletterYesd: Alle 3 Monate erhältst du von uns eine E-Mail mit ehrlichen, gesunden Inhalten. Kein Tracking, keine Werbung, kein Blödsinn.
 newsletterNod: Du kannst deine Meinung später immer noch ändern. Aber bis du das tust, werden wir dir keine Newsletter schicken.
@@ -202,7 +202,7 @@ public: Öffentlich
 publicSet: Öffentliche Messungen eingestellt
 privateSet: Private Messungen eingestellt
 publicSetDesc: Andere dürfen diese Messungen nutzen, um Muster zu erstellen oder zu testen
-privateSetDesc: Diese Messungen können nicht von anderen Nutzern oder Besuchern verwendet werden
+privateSetDesc: These measurements cannot be used by other users or visitors
 permalink: Permalink
 editThing: '{thing} bearbeiten'
 saveThing: '{thing} speichern'
@@ -211,8 +211,8 @@ noFilter: Nicht filtern
 filterByDesignDocs: Wenn du einen bestimmten Entwurf im Kopf hast, kannst du auf <b>nach dem Entwurf filtern</b> und nur die Maße auflisten, die für diesen Entwurf erforderlich sind.
 setLacksMeasiesForDesign: In diesem Set fehlen die für dieses Muster erforderlichen Maße
 setHasMeasiesForDesign: Dieses Set enthält alle für dieses Muster benötigten Maße
-someSetsLacking: Some of your sets lack the measurments required to generate this pattern
-theseSetsReady: Diese Sets haben alle erforderlichen Messungen, um dieses Muster zu erzeugen
+someSetsLacking: Some of these sets lack the measurements required to generate this pattern
+theseSetsReady: These sets have all required measurements to generate this pattern
 chooseSet: Bitte wähle einen Satz von Messungen
 patternForWhichSet: Für welchen Satz von Messungen sollten wir ein Muster erstellen?
 bookmarkedSets: Maßnahmesets, die du mit einem Lesezeichen versehen hast
@@ -222,7 +222,7 @@ curateCuratedSets: Kuratiere unsere Auswahl an kuratierten Messreihen
 useThisSet: Verwende diesen Satz von Messungen
 ownSets: Deine eigenen Messgeräte
 noOwnSets: Du hast (noch) keine eigenen Messreihen
-pleaseMtm: Da unsere Schnittmuster maßgeschneidert sind, empfehlen wir dir dringend, genaue Maße zu nehmen.
+pleaseMtm: Because our patterns are bespoke, we strongly suggest you take accurate measurements.
 noOwnSetsMsg: Du kannst deine Messungen als Messdatensatz speichern und dann beliebig viele Muster für sie erstellen.
 measurements: Maße
 chooseASet: Wähle eine Messreihe
@@ -240,6 +240,8 @@ thankYouVeryMuch: Herzlichen Dank!
 csetSuggestedMsg: Dein Beitrag wurde registriert und wird von einem unserer Kuratoren bearbeitet.
 itIsAvailableAt: Es ist erhältlich unter
 csetNameMsg: Jedes kuratierte Set hat einen Namen. Du kannst deinen eigenen Namen oder ein Pseudonym vorschlagen.
+missing: Missing
+andMore: and more
 patternNew: Ein neues Muster generieren
 patternNewInfo: Wähle ein Design, füge deine Maße hinzu und wir erstellen ein maßgeschneidertes Nähmuster für dich.
 designNew: Ein neues Design erstellen
@@ -253,7 +255,7 @@ blogNewInfo: Wenn du im FreeSewing-Blog schreiben möchtest, kannst du hier eine
 imgNew: Erzeuge ein Image in den sozialen Medien
 imgNewInfo: Verwende unseren Generator, um ein Bild zu erstellen, das du in den sozialen Medien teilen kannst. Er unterstützt die Formate breit (klassisch), quadratisch (Instagram) oder hoch (Stories/TikTok).
 csetNew: Ein neues kuratiertes Messgerät vorschlagen
-csetNewInfo: Wir stellen eine Sammlung geprüfter Messwerte zusammen, die wir zum Testen von Mustern verwenden. Du kannst hier eine Messreihe vorschlagen.
+csetNewInfo: We curate a collection of vetted measurements sets that we use to test patterns. You can suggest a measurements set here.
 opackNew: Ein neues Optionspaket vorschlagen
 opackNewInfo: Wir stellen für jedes unserer Designs eine Sammlung geprüfter Optionspakete zusammen. Hier kannst du deine Optionen vorschlagen.
 newPopular: Am beliebtesten

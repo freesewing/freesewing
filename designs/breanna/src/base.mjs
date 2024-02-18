@@ -69,11 +69,12 @@ function draftBreannaBase({ store, points, Point, measurements, options, utils, 
  * Helper methods to conditionally show/hide options in the menu
  */
 // Option is false by default, so a simple check will do
-const onlyWithShoulderDart = ({ options }) => (options?.shoulderDart ? 'fit' : false)
+const onlyWithShoulderDart = (_settings, mergedOptions) =>
+  mergedOptions?.shoulderDart ? 'fit' : false
 
 // Option is true by default, so if it's missing it's also true
-const onlyWithWaistDart = ({ options }) =>
-  options?.waistDart || typeof options?.waistDart === 'undefined' ? 'fit' : false
+const onlyWithWaistDart = (_settings, mergedOptions) =>
+  mergedOptions?.waistDart || typeof mergedOptions?.waistDart === 'undefined' ? 'fit' : false
 
 export const base = {
   name: 'breanna.base',

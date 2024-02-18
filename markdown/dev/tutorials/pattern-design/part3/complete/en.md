@@ -7,7 +7,7 @@ Laser cutters is merely an example of a situation where your user wants not the
 complete detailed pattern with all annotations, but just the outlines.
 Essentially what we had at the end of part 2 of this tutorial.
 
-Since then, we've added a bunch of embellisments, and perhaps the user does 
+Since then, we've added a bunch of embellishments, and perhaps the user does 
 not want those.
 
 Well, good news: there is a setting for that too. That setting is `complete`, 

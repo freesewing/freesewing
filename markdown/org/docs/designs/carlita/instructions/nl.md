@@ -43,7 +43,7 @@ Vergeet de naadtoeslag voor deze stukken niet bij het knippen als je deze delen 
 - Trek het deel **Back** na.
 - Snijd langs de oranje lijn.
 - Gooi het onderste stuk weg.
-- Verwijder de naadtoeslagen (indien meegeleverd) van het bovenstuk.
+- Verwijder de naadtoeslagen (indien inbegrepen) van het bovenste stuk.
 - Het bovenste stuk is nu het **Rugschouder** deel.
 
 #### Knippen
@@ -54,13 +54,13 @@ Vergeet de naadtoeslag voor deze stukken niet bij het knippen als je deze delen 
 
 #### Makers notities
 
-<Warning>
+<Fixme>
 
 We hebben nog geen volledige instructies uitgewerkt voor Carlita.
 Hieronder staan wat aantekeningen van [@AnnekeCaramin](/users/AnnekeCaramin) die
 [maakte Carlita](http://www.annekecaramin.com/2018/02/this-is-one-of-those-origin-superhero.html).
 
-</Warning>
+</Fixme>
 
 - Zoek en markeer de rollijn op de revers,
 - Draft back stay & cut from heavy muslin or hair canvas als je absoluut bulletproof wilt zijn

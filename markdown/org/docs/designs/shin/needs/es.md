@@ -12,4 +12,4 @@ Para hacer Shin, necesitarás lo siguiente:
 > 
 > Al igual que con todas las telas estiradas, un serpiente o un overlock le hará la vida más fácil.
 > 
-> Si no tienes una no te desesperes. Realmente no la necesitas. Puede utilizar otra técnica para las costuras de estiramiento, como un punto zig-zag, una aguja gemela o un hilo elástico.
+> Si no tienes una no te desesperes. Realmente no la necesitas. You can use another technique for stretch seams, such as a zig-zag stitch, twin needle, or elastic thread.

@@ -58,7 +58,7 @@ option](test-option-lengthratio.png)
 
 ### neckRatio
 
-The `neckRatio` option will determine the size of the neck opening.  For a the
+The `neckRatio` option will determine the size of the neck opening.  For the
 same `head` measurement, varying this option should result in bibs with
 increasingly larger neck opening.
 

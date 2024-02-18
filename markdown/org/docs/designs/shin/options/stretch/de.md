@@ -2,7 +2,7 @@
 title: "Dehnung"
 ---
 
-Die Menge an Overal (horizontal) Strecke.
+Die Höhe der Gesamtstrecke (horizontal).
 
 
 

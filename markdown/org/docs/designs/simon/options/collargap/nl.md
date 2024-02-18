@@ -8,7 +8,7 @@ Hoe ver de kraag uit elkaar zit als hij gesloten is.
 
 <Note>
 
-Dit is meestal een stijlkeuze, maar een bredere kraagopening (samen met de hoek van de kraag) kan ruimte maken voor een bredere das (knoop).
+This is really mostly a style choice, but a wider collar gap (together with the collar angle) can accommodate a wider tie (knot).
 
 </Note>
 

@@ -25,17 +25,11 @@ Achte darauf, dass du dicht an der Kante nähst, damit die Stiche später unter 
 
 ## Schritt 2: Schrägband anbringen
 
-Wir werden den gesamten Rand des Lätzchens mit Schrägband abschließen.
+We're going to apply bias tape as a finish around the entire edge of the bib.
 
 Wahrscheinlich möchtest du am unteren Träger beginnen, denn so wird die Naht des Schrägbandes verdeckt, wenn das Lätzchen getragen wird.
 
 Arbeite dich einfach vor und lass dir Zeit.
-
-<Fixme>
-
-Allgemeine Anweisungen zum Nähen von Schrägband bereitstellen
-
-</Fixme>
 
 ## Schritt 3: Druckknöpfe oder Knopf anbringen
 

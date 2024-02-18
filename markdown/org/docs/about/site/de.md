@@ -12,7 +12,7 @@ Auf diesen Seiten zeigen wir dir, wie du das Beste aus der FreeSewing.org-Websit
 Es kann frustrierend sein, wenn Besucher, die hierher kommen und eine Website erwarten, auf der sie Nähmuster herunterladen können, diese nicht finden. Es ist fast so, als ob das Verstecken des *Download-Buttons* ein ausgeklügelter Plan ist, um ihre Zeit zu verschwenden.
 
 Ich weiß nicht wirklich, wie ich das in Ordnung bringen kann, weil ich die Erwartungen der Leute nicht kontrollieren kann.
-FreeSewing.org unterscheidet sich _sehr_ von einer Website mit einigen Links zu PDF-Nähmustern.
+FreeSewing.org is _very_ different from a website with some links to PDF sewing patterns.
 Wenn du also genau das erwartest, müssen wir dich fast umschulen, bevor wir darüber reden können, was diese Seite bietet.
 
 Also werde ich das nicht tun. Ich gehe davon aus, dass du mit offenem Geist liest.
@@ -51,7 +51,7 @@ Ich möchte ein paar von ihnen hervorheben, die deine Aufmerksamkeit verdienen:
 
 ### Benutzererfahrung
 
-Die Einstellung [User Experience](/account/control/) ermöglicht es dir, schrittweise mehr Komplexität zu enthüllen. Wenn du mit dem Angebot von FreeSewing.org ein wenig überfordert bist, kannst du hier einen niedrigeren Wert einstellen, um der Einfachheit halber mehr Funktionen auszublenden. Wenn du hier einen höheren Wert einstellst, werden mehr Features und Funktionen angezeigt.
+Die Einstellung [User Experience](/account/control/) ermöglicht es dir, schrittweise mehr Komplexität zu enthüllen. Wenn du hier einen höheren Wert einstellst, werden mehr Features und Funktionen angezeigt. If you are a little overwhelmed with everything FreeSewing.org has to offer, setting this to a lower value will gradually hide more features for the sake of simplicity.
 
 Stelle diese Einstellung herunter, wenn du es einfacher haben willst. Drehe ihn auf, wenn du mehr Leistung brauchst oder Dinge, von denen du weißt, dass es sie gibt, nicht auf deinem Bildschirm angezeigt werden.
 

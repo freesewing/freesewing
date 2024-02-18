@@ -4,24 +4,24 @@ title: "Sudadera con capucha Yuri Instrucciones de costura"
 
 <Note>
 
-Este patrón se puede coser con o con un overlocker/serger. Para _acabar_ las costuras sin una remalladora puedes utilizar tu método preferido o uno de los métodos que se indican a continuación:
+Este patrón se puede coser con o con un overlocker/serger. To _finish_ seams without a overlocker/serger you can either use your preferred method or one of the methods below:
 
-##### Método de acabado 1
+##### Finishing Method 1
 
-- Presiona para abrir los márgenes de costura.
+- Press open the seam allowances.
 - Luego, en el lado bueno, _edgestitch_ a 3 mm (1/8 pulgada) de distancia o más cerca a ambos lados de la costura cogiendo los márgenes de costura por debajo.
 - En el lado equivocado recortar las franquicias de costura cerca de la edgestión.
 
-##### Método de finalización 2
+##### Finishing Method 2
 
-- Método de costura junto con ziz-zag, overcast o stitch recto y presione hacia un lado.
+- Sew the seam allowances together with either a zig-zag, overcast or straight stitch and press to one side.
 - Recortar la costura de 1 cm (3/8 pulgadas) si es necesario.
 
 </Note>
 
 <Tip>
 
-Si usas un overlocker/serger puedes coser costuras que necesitan fininshing en una sola vía, en lugar de coser la costura convencionalmente y terminarla.
+If using a overlocker/serger you can sew seams which need finishing in one go rather than sewing the seam conventionally and finishing it.
 
 </Tip>
 
@@ -51,7 +51,7 @@ En el patrón, la muesca trasera está marcada como muesca en cruz (consulta [nu
 - (Opcional) Anular el borde crudo de la manga.
 - Presione la franquicia del hem hacia el lado equivocado de la tela y funda en su lugar cerca del borde crudo.
 - En el exterior, alejarse del borde plegado, atrapando la franquicia de la parte inferior usando el bastión como guía hasta donde está el borde crudo.
-- (Opcional) En el exterior, tira 6 mm (1/4 pulgadas) paralela al palo original a lo largo de la franquicia de la hem .
+- (Optional) On the outside, stitch 6mm (1/4 inch) parallel to original stitch along the hem allowance.
 - Retire el basting.
 
 <Note>
@@ -94,8 +94,8 @@ Se recomienda utilizar **Método de finalización 1** para este paso, independie
 - Dibuja juntos el borde fijado.
 - Recorta la franquicia de costura a 1cm (3/8 pulgadas) si tu franquicia de costura elegida es mayor y no has utilizado ni sobrevendedor/sarga. De lo contrario _no cortes_ la costura.
 - Da la vuelta a los lados de la campana y presiona el borde exterior plano.
-- En el exterior Topstitch a lo largo del borde de la capa, alrededor de 1,5 - 2cm (5/8 - 3/4 pulgadas) del borde. Asegúrese de que el revestimiento se enciende pero no pasa por la costura del borde exterior de la capucha. Esto creará un rin decorativo, con la posibilidad de costura cerrada haciendo el rin un poco poofy.
-- Con bordes crudos juntos, sobrehilan el fondo del capó. Puede hacerlo con un overlocker/serger o un ziz-zag o overcast stitch en una máquina normal.
+- En el exterior Topstitch a lo largo del borde de la capa, alrededor de 1,5 - 2cm (5/8 - 3/4 pulgadas) del borde. Ensure that your topstitching encloses but does not go through the seam allowance of the outer hood edge. Esto creará un rin decorativo, con la posibilidad de costura cerrada haciendo el rin un poco poofy.
+- Con bordes crudos juntos, sobrehilan el fondo del capó. You can either do this with an overlocker/serger or a zig-zag or overcast stitch on a regular machine.
 
 <Note>
 
@@ -121,15 +121,15 @@ También puedes hacer una banda doblada para que la cinta del cuello no tenga el
 - Con buenos lados juntos, comenzando desde el centro de la espalda anclar la capucha al cuello, emparejar las espaldas del centro y superponer la campana termina en el frente central.
 - Con el lado bueno de la cinta del cuello hacia el lado del forro de la capucha, sujeta con alfileres la cinta del cuello a la capucha haciendo coincidir el centro de la cinta del cuello con el centro de la espalda.
 - Si se usa un overlocker/serger, sergue el cuello y la capucha juntos a través de todas las capas.
-- Si se utiliza una máquina de coser, utilice un zig-zag para coser todas las capas del cuello y del capuchón.
+- If using a sewing machine, use a zig-zag stitch to sew all the neck and hood layers together.
 - En el exterior, compruebe alrededor de la línea del cuello para asegurarse de que todas las capas están atrapadas.
 - Presione los permisos de costura hacia el cuerpo.
-- En el lado bueno, Encimera con una estatura recta de aproximadamente 1cm (3/8 pulgadas) de distancia del borde del cuello hacia el cuerpo para atrapar y asegurar el cuello debajo.
+- On the good side, topstitch with a straight stitch approximately 1cm (3/8 inch) away from the neck edge towards the body to catch and secure the neckband underneath.
 - Recortar el exceso de unión desde el interior.
 
 <Warning>
 
-Si usas un overlocker/serger para sujetar la capa, es posible que quieras colocar áreas grandes primero con un stitch derecho como la parte delantera como un overlocker/serger puede tener problemas para coser estas partes.
+If using a overlocker/serger to attach the hood you may want to attach bulky areas down first with a straight stitch such as the front as an overlocker/serger may have trouble sewing these parts.
 
 </Warning>
 

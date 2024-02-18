@@ -38,6 +38,6 @@ Il y a trois variantes de ce patron. **Une couleur**, qui est celle où le haut 
 
 <Note>
 
-Ce motif est facilement rendu réversible en achetant un tissu similaire au tissu principal et en l’utilisant comme contraste. Pour éviter toute confusion dans les instructions, nous l'appellerons le tissu de doublure.
+Ce motif est facilement rendu réversible en achetant un tissu similaire au tissu principal et en l’utilisant comme contraste. To save confusion on instructions it will be referred to as the lining fabric.
 
 </Note>

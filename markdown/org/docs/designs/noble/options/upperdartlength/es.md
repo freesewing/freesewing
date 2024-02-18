@@ -4,7 +4,7 @@ title: "Longitud del dardo superior"
 
 ***
 
-La página **Longitud del dardo superior** controla la longitud del dardo superior, 100% hasta el punto del pecho.
+The **Upper Dart Length** controls the length of the upper dart, 100% is all the way to the bust point.
 
 
 

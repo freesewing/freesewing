@@ -178,7 +178,7 @@ Marquer cette longueur, couper l'élastique, et joindre les deux extrémités en
 
 ## Étape 12 : Rejoignez la ceinture
 
-Placez les deux morceaux de ceinture de bons côtés ensemble et alignez les bords courts. Sew the short edges together, then press open. These will be inside the waistband, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
+Fold the waistband in half with good sides together, aligning the two short edge ends. Sew the short edges together to sew the waistband into a ring. Sew the short edges together, then press open. They will be inside the waistband, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
 
 ![Pièces de ceinture jointes](step12.svg)
 
@@ -205,7 +205,7 @@ pas l'intérieur de votre ceinture.
 
 Ensuite, alignez le dos du centre et la broche en place, en ajoutant des épingles supplémentaires autour de la ceinture au besoin.
 
-Coudre la ceinture au pantalon, aussi près que possible de l’élastique, mais ne pas coudre dans l’élastique.
+Sew the waistband to the pants, as close to the elastic as you can, but don’t sew into the elastic.
 
 ![Bande de taille cousue avec méthode simple](step13.svg)
 
@@ -288,7 +288,7 @@ il y en a assez.
 
 </Tip>
 
-Coudre le manchon à l'ouverture du pantalon, aussi près que possible de l'élastique, mais ne pas coudre dans l'élastique.
+Sew the cuff to the pants opening, as close to the elastic as you can, but don’t sew into the elastic.
 
 ![Poignets cousus avec une méthode simple](step16.svg)
 

@@ -20,7 +20,7 @@ We now no longer present users who want to try out the site a range of *standard
 
 Confiamos en nuestra comunidad para que nos envíe conjuntos de medidas para su curación. Si tienes una medida pública establecida en el sitio, puedes sugerirla para su curación.
 
-Para formar parte de nuestra colección de conjuntos de medidas curadas, debes proporcionar lo siguiente:
+To be part of our curated measurements sets collection, you should provide the following:
 
 - **Todas las medidas** de la persona. No aceptamos conjuntos incompletos, ya que eso significaría que algunos diseños no funcionarían con ellos.
 - **La altura** de la persona. Esto ayuda a los usuarios a seleccionar el conjunto de medidas más cercano a su propio cuerpo.

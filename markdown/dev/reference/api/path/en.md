@@ -14,11 +14,11 @@ The Path constructor takes no arguments.
 
 ## Properties
 
-A Path objects comes with the following properties:
+A Path object comes with the following properties:
 
 - `attributes` : An [Attributes](/reference/api/attributes) instance holding
   the path's attributes
-- `hidden` : When this is `true` the path will be hidden (excluded it from the
+- `hidden` : When this is `true` the path will be hidden (excluding it from the
   output).  See [Path.hide()](/reference/api/path/hide),
   [Path.unhide()](/reference/api/path/unhide), and
   [Path.setHidden()](/reference/api/path/sethidden) for various methods that
@@ -47,4 +47,4 @@ for information about custom Attributes that can be used with Paths.
 
 A Path object exposes the following methods:
 
-<ReadMore list />
+<ReadMore />

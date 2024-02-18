@@ -198,7 +198,7 @@ When you're done, press open the inseam.
 
 Double check that your right and left legs match the pattern markings. The right leg's crotch should extend slightly beyond the left. Refer to the pattern and cut excess on the left leg if necessary.
 
-It can be valuable to mark with chalk or thread mark the **Center Front** on each leg. This will help you make sure the peices are in the right place duing fly construction.
+It can be valuable to mark with chalk or thread mark the **Center Front** on each leg. This will help you make sure the pieces are in the right place during fly construction.
 
 </tip>
 
@@ -286,14 +286,14 @@ Remember that the seam allowance starts slightly right of the center front, the 
 
 Ensure you place the folded edge of the right leg just left of the zipper teeth to prevent fabric from being caught in the zipper.
 
-Stop sewing at the top 'fly extention' notch, slightly above the cross seam, and be sure to backstitch. If you don't do this you won't be able to keep the extension out of the way when sewing the J-Seam.
+Stop sewing at the top 'fly extension' notch, slightly above the cross seam, and be sure to backstitch. If you don't do this you won't be able to keep the extension out of the way when sewing the J-Seam.
 
 ![Attach Extension to Right Leg](AttachExtensionToRightLeg.svg)
 
 
 ### Attach the zipper to the fly facing.
 
-Be careful to align the leg left on the right center front. It can be valuable to pin or baste through the facing and right zide of the zipper tape. (We need to sew the left side of the zipper tape to the left leg).
+Be careful to align the leg left on the right center front. It can be valuable to pin or baste through the facing and right side of the zipper tape. (We need to sew the left side of the zipper tape to the left leg).
 Ensuring everything is lined, sew the fly facing to the left side of the zipper. Try to get close to the zipper, but not too close.
 
 ![Attach Facing to Zipper](AttachFacingToZipper.svg)
@@ -303,15 +303,15 @@ Ensuring everything is lined, sew the fly facing to the left side of the zipper.
 
 <tip>
 
-Use a peice of paper as a guide to sew the J seam, this can be cut from your pattern along the indicated stitch line.
+Use a piece of paper as a guide to sew the J seam, this can be cut from your pattern along the indicated stitch line.
 
 </tip>
 
-Now topstitch the so-called J-seam of the fly. Make sure to keep the fly extension out of the way. Since you didn't sew all the way along the fly extention, you should be able to pin it out of the way.
+Now topstitch the so-called J-seam of the fly. Make sure to keep the fly extension out of the way. Since you didn't sew all the way along the fly extension, you should be able to pin it out of the way.
 
 #### Bar tack the bottom of the fly
 
-Now, bartack the very botton of the J-seam (the horizontal part) but this time make sure to also catch the fly extension.
+Now, bartack the very bottom of the J-seam (the horizontal part) but this time make sure to also catch the fly extension.
 You can choose to add an additional bar tack along the J-Seam as well (shown in purple).
 
 ![Sew the J-Seam](SewTheJSeam.svg)
@@ -322,7 +322,7 @@ You can choose to add an additional bar tack along the J-Seam as well (shown in 
 
 <Note>
 
-For efficiency, we will contruct one long strip of belt loop that we'll divide into 8 parts.
+For efficiency, we will construct one long strip of belt loop that we'll divide into 8 parts.
 
 </Note>
 
@@ -377,7 +377,7 @@ Place the waistband with good sides together along the waist.
 For the straight waistband, make sure the side with the standard seam allowance is aligned with the waist,
 and not the side with double seam allowance.
 
-Also make sure to leave suffucient seam allowance beyond the start and end of the waistband.
+Also make sure to leave sufficient seam allowance beyond the start and end of the waistband.
 
 Sew along the entirety of the waist, attaching the waist band and sewing down the belt loops in one go.
 
@@ -415,7 +415,7 @@ This will catch the back of the waistband which we've made to extend slightly fu
 
 ### Sew the belt loops down to make them wider
 
-It's best to make the belt loops a bit wider than the waistband, to accomodate wider belts.
+It's best to make the belt loops a bit wider than the waistband, to accommodate wider belts.
 
 For this, let the waistband lie flat, and sew it down with a bartack 1.5cm or so (half an inch) below the waistband.
 

@@ -2,7 +2,7 @@
 title: "Florent Flachmütze: Schnittanleitung"
 ---
 
-Um Floren herzustellen, schneide die folgenden Teile aus:
+To make Florent, cut out the following parts:
 
 - **Oberstoff**
   - Schneiden Sie **1 oben** auf der Falte, aber nicht die Mittennahterlaubnis oder **2 Top** mit der Mittennahterlaubnis.

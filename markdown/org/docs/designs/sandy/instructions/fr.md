@@ -5,7 +5,7 @@ title: "Jupe circulaire Sandy : Instructions de couture"
 <Warning>
 
 En raison des différents styles et configurations de Sandy, il se peut que tu doives sauter ou réorganiser certaines étapes.
-Nous n'allons pas nous lancer dans une explication complète sur la façon de créer tous les détails individuels qui composent une jupe en cercle. Ces instructions supposent que vous sachiez coudre une fermeture à glissière, construire des poches, etc... Si ce n'est pas le cas, il existe de nombreux articles excellents disponibles sur le web, à la fois sous forme écrite et sous forme de vidéo. Si tu es bloqué, tu peux toujours contacter [d'autres FreeSewers] (https://discord.freesewing.org/) sur notre discord.
+Nous n'allons pas nous lancer dans une explication complète sur la façon de créer tous les détails individuels qui composent une jupe en cercle. Ces instructions supposent que vous sachiez coudre une fermeture à glissière, construire des poches, etc... If not, there are numerous excellent articles available on the web, both in written form, and on video. Si tu es bloqué, tu peux toujours contacter [d'autres FreeSewers] (https://discord.freesewing.org/) sur notre discord.
 
 </Warning>
 
@@ -111,7 +111,7 @@ Faites un ourlet sur la jupe de l'une des façons suivantes :
 
 <Note>
 
-Il y a de nombreuses façons d'ourler le bas d'une jupe. Si vous avez une méthode préférée, utilisez-la ici.
+There are many ways to hem/face the bottom of a skirt, If you have a preferred method use it here.
 
 </Note>
 
