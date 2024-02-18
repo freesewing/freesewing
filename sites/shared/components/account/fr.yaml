@@ -276,6 +276,7 @@ code: Code
 aboutThing: À propos de { thing }
 requiredMeasurements: Mensurations requises
 optionalMeasurements: Mesures optionnelles
+none: Aucun
 designOptions: Options de design
 parts: Pièces détachées
 plugins: Plugins
