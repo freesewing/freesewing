@@ -26,8 +26,23 @@ import {
   CathrinFront,
   CathrinBack,
 } from 'shared/components/designs/linedrawings/cathrin.mjs'
+import {
+  Charlie,
+  CharlieFront,
+  CharlieBack,
+} from 'shared/components/designs/linedrawings/charlie.mjs'
+import {
+  Cornelius,
+  CorneliusFront,
+  CorneliusBack,
+} from 'shared/components/designs/linedrawings/cornelius.mjs'
 import { Diana, DianaFront, DianaBack } from 'shared/components/designs/linedrawings/diana.mjs'
 import { Florence, FlorenceFront } from 'shared/components/designs/linedrawings/florence.mjs'
+import {
+  Florent,
+  FlorentFront,
+  FlorentBack,
+} from 'shared/components/designs/linedrawings/florent.mjs'
 import { Lucy, LucyFront } from 'shared/components/designs/linedrawings/lucy.mjs'
 import { Lumina, LuminaFront, LuminaBack } from 'shared/components/designs/linedrawings/lumina.mjs'
 import { Lumira, LumiraFront, LumiraBack } from 'shared/components/designs/linedrawings/lumira.mjs'
@@ -57,8 +72,11 @@ export const lineDrawingsFront = {
   carlita: CarlitaFront,
   carlton: CarltonFront,
   cathrin: CathrinFront,
+  charlie: CharlieFront,
+  cornelius: CorneliusFront,
   diana: DianaFront,
   florence: FlorenceFront,
+  florent: FlorentFront,
   lucy: LucyFront,
   lumina: LuminaFront,
   lumira: LumiraFront,
@@ -81,6 +99,8 @@ export const lineDrawingsBack = {
   carlita: CarlitaBack,
   carlton: CarltonBack,
   cathrin: CathrinBack,
+  charlie: CharlieBack,
+  cornelius: CorneliusBack,
   diana: DianaBack,
   lumina: LuminaBack,
   lumira: LumiraBack,
@@ -105,8 +125,11 @@ export const lineDrawings = {
   carlita: Carlita,
   carlton: Carlton,
   cathrin: Cathrin,
+  charlie: Charlie,
+  cornelius: Cornelius,
   diana: Diana,
   florence: Florence,
+  florent: Florent,
   lucy: Lucy,
   lumina: Lumina,
   lumira: Lumira,

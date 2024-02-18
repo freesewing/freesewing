@@ -308,6 +308,7 @@ code: Code
 aboutThing: About { thing }
 requiredMeasurements: Required measurements
 optionalMeasurements: Optional measurements
+none: None
 designOptions: Design options
 parts: Parts
 plugins: Plugins

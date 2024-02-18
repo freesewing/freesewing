@@ -1,8 +1,8 @@
 ---
-title: undefiniert
+title: Kante
 ---
 
-undefiniert
+Diese Option steuert die Breite der oberen Kante deiner Tasche. 
 
 
 

@@ -121,14 +121,17 @@ export class PdfMaker {
     // FreeSewing tag
     this.addText('FreeSewing', 20).addText(this.strings.tagline, 10, 4)
 
-    // Design name
+    // Design name, version, and Measurement Set
     this.addText(this.strings.design, 32)
+    let savedLineLevel = this.lineLevel - 27
+    let savedWidth = this.pdf.widthOfString(this.strings.design) + 50
+    const versionSetString = ' v' + this.strings.version + ' ( ' + this.strings.setName + ' )'
+    this.pdf.fontSize(18)
+    this.pdf.text(versionSetString, savedWidth, savedLineLevel)
 
-    // Measurement Set
-    this.addText('Measurement Set: ' + this.strings.forName, 10)
-
-    // Date
+    // Date and timestamp
     const currentDateTime = new Date().toLocaleString('en', {
+      weekday: 'long',
       year: 'numeric',
       month: 'short',
       day: 'numeric',
@@ -136,12 +139,12 @@ export class PdfMaker {
       minute: 'numeric',
       timeZoneName: 'short',
     })
-    this.addText('PDF Generated: ' + currentDateTime, 10)
+    this.addText(currentDateTime, 10)
 
     // Settings YAML
-    const savedLineLevel = this.lineLevel + 2
-    const savedWidth = this.pdf.widthOfString('Settings: ') + 50
     this.addText('Settings: ', 10)
+    savedLineLevel = this.lineLevel - 9
+    savedWidth = this.pdf.widthOfString('Settings: ') + 50
     this.pdf.fontSize(6)
     this.pdf.text('(Measurement values are in mm.)', savedWidth, savedLineLevel)
     this.addText(this.strings.yaml, 8)

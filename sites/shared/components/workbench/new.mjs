@@ -215,6 +215,13 @@ export const Workbench = ({ design, Design, saveAs = false, preload = false }) =
       if (typeof pattern.getConfig !== 'function') return null
 
       const patternConfig = pattern.getConfig()
+
+      // Save the measurement set name to pattern stores
+      if (settings?.metadata?.setName) {
+        pattern.store.set('data.setName', settings.metadata.setName)
+        for (const store of pattern.setStores) store.set('data.setName', settings.metadata.setName)
+      }
+
       if (ui.renderer === 'svg') {
         // Add theme to svg renderer
         pattern.use(pluginI18n, (key) => t(key))
