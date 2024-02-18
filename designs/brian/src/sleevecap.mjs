@@ -173,12 +173,6 @@ export const sleevecap = {
     sleeveWidthGuarantee: { pct: 90, min: 25, max: 100, menu: 'advanced' },
   },
   draft: ({ store, units, options, Point, points, paths, log, snippets, macro, part }) => {
-    // Clean up from fron
-    for (const path in paths) delete paths[path]
-    delete snippets.logo
-    macro('rmtitle')
-    macro('rmcutonfold')
-
     store.set('sleeveFactor', 1)
     let run = 0
     let delta = 0
