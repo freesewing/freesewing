@@ -13,6 +13,7 @@ created: Erstellt
 updated: Aktualisiert
 expires: Läuft ab
 role: Rolle
+yourApikeys: Your API Keys
 yourProfile: Dein Profil
 yourPatterns: Deine Schnittmuster
 yourSets: Deine Maßeinheiten
@@ -76,7 +77,7 @@ delete: löschen
 nailedIt: Geschafft
 gone: Puff. Verschwunden.
 reloadMsg1: Die in deinem Browser gespeicherten Daten können manchmal nicht mit den in unserem Backend gespeicherten Daten synchronisiert werden.
-reloadMsg2: Damit kannst du deine Kontodaten aus dem Backend neu laden. Es hat denselben Effekt wie das Abmelden und erneute Anmelden
+reloadMsg2: This lets you reload your account data from the backend. It has the same effect as signing out, and then signing in again
 #bio
 bioTitle: Erzähl den Leuten ein bisschen was über dich
 bioPreview: Bio Vorschau
