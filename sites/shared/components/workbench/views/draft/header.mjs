@@ -93,8 +93,10 @@ export const DraftHeader = ({
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const { theme } = useTheme()
 
-  // Override User Experience button color for monochrome theme.
+  // Override button colors for monochrome theme.
   const ueButtonColor = theme !== 'monochrome' ? 'text-primary' : 'text-primary-content'
+  const resetOptionsButtonColor = theme !== 'monochrome' ? 'text-accent' : 'text-warning'
+
   // make the zoom buttons so we can pass them to the mobile menubar
   const headerZoomButtons = useMemo(
     () => <ZoomButtons {...{ t, zoomFunctions, zoomed }} />,
@@ -245,7 +247,9 @@ export const DraftHeader = ({
             <ResetIcon
               stroke={3.5}
               className={`w-6 h-6 ${
-                typeof settings.options === 'undefined' ? 'text-base-100 opacity-30' : 'text-accent'
+                typeof settings.options === 'undefined'
+                  ? 'text-base-100 opacity-30'
+                  : resetOptionsButtonColor
               }`}
             />
           </button>
