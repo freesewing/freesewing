@@ -14,6 +14,7 @@ updated: Updated
 expires: Expires
 role: Role
 
+yourApikeys: Your API Keys
 yourProfile: Your Profile
 yourPatterns: Your Patterns
 yourSets: Your Measurements Sets
@@ -81,7 +82,7 @@ delete: Delete
 nailedIt: Nailed it
 gone: Poof. Gone.
 reloadMsg1: The data stored in your browser can sometimes get out of sync with the data stored in our backend.
-reloadMsg2: This lets you reload your account data from the backend. It has the same effect as signin out, and then signing in again
+reloadMsg2: This lets you reload your account data from the backend. It has the same effect as signing out, and then signing in again
 
 # bio
 bioTitle: Tell people a little bit about yourself
