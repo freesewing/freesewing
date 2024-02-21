@@ -13,6 +13,7 @@ created: Створено
 updated: Оновлено
 expires: Закінчується
 role: Роль
+yourApikeys: Your API Keys
 yourProfile: Ваш профіль
 yourPatterns: Ваші візерунки
 yourSets: Ваші набори вимірювань
@@ -76,7 +77,7 @@ delete: Видалити
 nailedIt: Зрозумів.
 gone: Пуф. Зникла.
 reloadMsg1: Дані, що зберігаються у вашому браузері, іноді можуть не синхронізуватися з даними, що зберігаються в нашому бекенді.
-reloadMsg2: Це дозволяє перезавантажити дані вашого облікового запису з бекенду. Це має той самий ефект, що й вихід з системи, а потім повторний вхід
+reloadMsg2: This lets you reload your account data from the backend. It has the same effect as signing out, and then signing in again
 #bio
 bioTitle: Розкажіть людям трохи про себе
 bioPreview: Попередній перегляд біографії
