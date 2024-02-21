@@ -13,6 +13,7 @@ created: Aangemaakt
 updated: Bijgewerkt
 expires: Verloopt op
 role: Rol
+yourApikeys: Your API Keys
 yourProfile: Jouw profiel
 yourPatterns: Jouw patronen
 yourSets: Jouw maten sets
@@ -76,7 +77,7 @@ delete: Verwijder
 nailedIt: Dat is ook weer geregeld
 gone: Poef. Verdwenen.
 reloadMsg1: De gegevens die zijn opgeslagen in je browser kunnen soms gaan afwijken van de gegevens die zijn opgeslagen in onze backend.
-reloadMsg2: Hiermee kun je je accountgegevens synchroniseren met de backend. Het heeft hetzelfde effect als je afmelden en dan weer aanmelden
+reloadMsg2: This lets you reload your account data from the backend. It has the same effect as signing out, and then signing in again
 #bio
 bioTitle: Vertel wat over jezelf
 bioPreview: Bio Voorbeeld
