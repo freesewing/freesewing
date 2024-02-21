@@ -7,6 +7,7 @@ import { useContext, useMemo } from 'react'
 import { useMobileAction } from 'shared/context/mobile-menubar-context.mjs'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
+import { useTheme } from 'shared/hooks/use-theme.mjs'
 // Context
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Components
@@ -90,7 +91,10 @@ export const DraftHeader = ({
   const { zoomFunctions, zoomed } = useContext(PanZoomContext)
   const backend = useBackend()
   const { setLoadingStatus } = useContext(LoadingStatusContext)
+  const { theme } = useTheme()
 
+  // Override User Experience button color for monochrome theme.
+  const ueButtonColor = theme !== 'monochrome' ? 'text-primary' : 'text-primary-content'
   // make the zoom buttons so we can pass them to the mobile menubar
   const headerZoomButtons = useMemo(
     () => <ZoomButtons {...{ t, zoomFunctions, zoomed }} />,
@@ -209,7 +213,7 @@ export const DraftHeader = ({
           data-tip={t('ui-settings:control.t')}
         >
           {[1, 2, 3, 4, 5].map((score) => (
-            <button onClick={() => update.setControl(score)} className="text-primary" key={score}>
+            <button onClick={() => update.setControl(score)} className={ueButtonColor} key={score}>
               <BulletIcon fill={control >= score ? true : false} />
             </button>
           ))}
