@@ -28,6 +28,6 @@ Ce patron exige que la ceinture soit entoilée. Pour l'entoilage, nous vous reco
 
 <Note>
 
-Si votre tissu principal est assez léger, vous devrez peut-être interfacer vos bandes de jambe et votre protection de fermeture éclair avec un entoilage léger.
+Si votre tissu principal est assez léger, vous devrez peut-être entoiler vos bandes de jambe et votre protection de fermeture Éclair avec un entoilage léger.
 
 </Note>
