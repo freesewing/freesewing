@@ -6,6 +6,12 @@ renderWithReact.t: Render with FreeSewing's React components
 renderWithReact.d: Render as SVG through our React components. Allows interactivity and is optimized for screen. Use this if you are not sure what to pick.
 renderWithCore.t: Render with FreeSewing's Core library
 renderWithCore.d: Render directly to SVG from Core. Allows no interactivity and is optimized for print. Use this if you want to know what it will look like when exported.
+kiosk.t: Kiosk Mode
+kiosk.d: Controls how the web page is shown.
+websiteMode.t: Use website mode
+websiteMode.d: Show the full web page, including header, footer, and navigation.
+kioskMode.t: Use kiosk mode
+kioskMode.d: Show just the pattern drafting portion of the web page, without header, footer, or navigation.
 control.t: User Experience
 control.d: Which user experience do you prefer? Please note that this is an account setting, so it will impact the entire website.
 inspect.t: Inspect
