@@ -292,8 +292,14 @@ newDev: Design / Develop
 
 generateANewThing: "Generate a new { thing }"
 
-website: Website
 linkedIdentities: Linked Identities
+github: GitHub
+instagram: Instagram
+mastodon: Mastodon
+reddit: Reddit
+twitch: Twitch
+tiktok: TikTok
+website: Website
 
 websiteTitle: Do you have a website or other URL you'd like to add?
 platformTitle: Who are you on { platform }?
