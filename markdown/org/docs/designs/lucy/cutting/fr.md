@@ -2,7 +2,7 @@
 title: "Lucy: Cutting"
 ---
 
-- cut two pocket pieces
+- Couper **deux pièces de poche**
 - cut pocket slit into one pocket piece
 
 #### Contexte historique
