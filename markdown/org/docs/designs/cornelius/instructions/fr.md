@@ -4,13 +4,13 @@ title: "Culotte de cycliste Cornélius : Instructions de couture"
 
 ### Étape 1 : Les poches avant
 
-- Press under the seam allowances of the non-notched edges of the pocket facings.
-- En faisant correspondre les encoches, épinglez l'envers des parements de poche sur l'endroit des sacs de poche, _piquez au point d'orgue_ les bords pliés sur les sacs de poche.
-- _Coller_ les surplus de couture des bords crantés des parements de poche sur les sacs de poche.
+- Pliez et repassez les marges de coutures des bords non crantés des parements de poche.
+- En faisant correspondre les encoches, épinglez l'envers des parements de poche sur l'endroit des sacs de poche, _surpiquez_ les bords pliés sur les sacs de poche.
+- _Bâtir_ les marges de couture des bords crantés des parements de poche sur les sacs de poche.
 - Endroit contre endroit, en faisant correspondre les doubles encoches, coudre les poches sur le devant, puis repasser sur l'envers.
-- Pliez les poches en deux le long de la ligne de pliage, endroit contre endroit. Coudre le fond de la pochette ensemble.
-- Si vous préférez, vous pouvez également _coudre à la française_ les coutures inférieures des sacs de poche ensemble.
-- _Baste_ the top and side of the pocket bags to the front seam allowances matching notches.
+- Pliez les poches en deux le long de la ligne de pliage, endroit contre endroit. Coudre le fond du sac de poche ensemble.
+- Si vous préférez, vous pouvez également faire une _couture anglaise_ pour coudre ensemble le bas des sacs de poches.
+- _Bâtir_ le haut et le côté du sac de poche aux marges de couture de l'avant en faisant coïncider les crans.
 
 <Note>
 
