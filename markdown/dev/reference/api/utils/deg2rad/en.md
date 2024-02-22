@@ -7,7 +7,7 @@ The `utils.deg2read()` function returns the degrees you pass to it as radians.
 ## Signature
 
 ```js
-float deg2rad(float degrees)
+float utils.deg2rad(float degrees)
 ```
 
 ## Notes
