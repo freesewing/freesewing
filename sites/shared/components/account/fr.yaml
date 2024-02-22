@@ -23,7 +23,7 @@ bio: Bio
 email: Adresse électronique
 img: Image
 username: Nom d'utilisateur
-compare: Comparaison des ensembles de mesures
+compare: Measurements Sets Comparison
 consent: Consentement et protection de la vie privée
 control: Expérience de l'utilisateur
 imperial: Unité
@@ -83,15 +83,15 @@ bioTitle: Parle aux gens un peu de toi
 bioPreview: Aperçu biologique
 bioPlaceholder: Je fabrique des vêtements et des chaussures. Je conçois des patrons de couture. J'écris du code. Je dirige [FreeSewing](http://freesewing.org)
 #compare
-compareTitle: Es-tu à l'aise avec la comparaison des ensembles de mesures ?
+compareTitle: Are you comfortable with your measurements sets being compared?
 compareYes: Oui, au cas où cela pourrait m'aider
 compareYesd: |
-  Nous montrerons de temps en temps comment ton ensemble de mesures se compare à d'autres ensembles de mesures.
-  Cela nous permet de détecter des problèmes potentiels dans tes mesures ou tes modèles.
+  We will occasionally show how your sets of measurements compare to other measurements sets.
+  This allows us to detect potential problems in your measurements or patterns.
 compareNo: Non, ne compare jamais
 compareNod: |
-  Nous ne comparerons jamais ton jeu de mesures à d'autres jeux de mesures.
-  Cela limitera notre capacité à t'avertir de problèmes potentiels dans tes ensembles de mesures ou tes patrons.
+  We will never compare your sets of measurements to other measurements sets.
+  This will limit our ability to warn you about potential problems in your measurements sets or patterns.
 #control
 showMore: Afficher plus
 control1.t: Fais en sorte que les choses soient aussi simples que possible
@@ -263,8 +263,14 @@ newPopular: Les plus populaires
 newShare: Partager / Montrer
 newDev: Conception / Développement
 generateANewThing: "Génère un nouveau { thing }"
-website: Site web
 linkedIdentities: Identités liées
+github: GitHub
+instagram: Instagram
+mastodon: Mastodon
+reddit: Reddit
+twitch: Twitch
+tiktok: TikTok
+website: Site web
 websiteTitle: As-tu un site Web ou une autre URL que tu aimerais ajouter ?
 platformTitle: Qui es-tu sur { platform }?
 platformWhy: Nous n'utilisons pas ces données de quelque manière que ce soit. Elles ne sont là que pour que les utilisateurs de FreeSewing puissent faire le lien entre les différentes plateformes.
