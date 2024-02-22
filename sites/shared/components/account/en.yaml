@@ -24,7 +24,7 @@ bio: Bio
 email: E-mail Address
 img: Image
 username: Username
-compare: Metricset Comparison
+compare: Measurements Sets Comparison
 consent: Consent & Privacy
 control: User Experience
 imperial: Units
@@ -90,14 +90,14 @@ bioPreview: Bio Preview
 bioPlaceholder: I make clothes and shoes. I design sewing patterns. I write code. I run [FreeSewing](http://freesewing.org)
 
 # compare
-compareTitle: Are you comfortable with measurements sets being compared?
+compareTitle: Are you comfortable with your measurements sets being compared?
 compareYes: Yes, in case it may help me
 compareYesd: |
-  We will occasionally show how your set of measurements compares to other measurements sets.
+  We will occasionally show how your sets of measurements compare to other measurements sets.
   This allows us to detect potential problems in your measurements or patterns.
 compareNo: No, never compare
 compareNod: |
-  We will never compare your set of measurements to other measurements sets.
+  We will never compare your sets of measurements to other measurements sets.
   This will limit our ability to warn you about potential problems in your measurements sets or patterns.
 
 # control
@@ -292,8 +292,14 @@ newDev: Design / Develop
 
 generateANewThing: "Generate a new { thing }"
 
-website: Website
 linkedIdentities: Linked Identities
+github: GitHub
+instagram: Instagram
+mastodon: Mastodon
+reddit: Reddit
+twitch: Twitch
+tiktok: TikTok
+website: Website
 
 websiteTitle: Do you have a website or other URL you'd like to add?
 platformTitle: Who are you on { platform }?
