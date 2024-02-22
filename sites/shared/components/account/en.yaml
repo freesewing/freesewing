@@ -261,6 +261,7 @@ itIsAvailableAt: It is available at
 csetNameMsg: Each curated set has a name. You can suggest your own name or a pseudonym.
 missing: Missing
 andMore: and more
+unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
 
 patternNew: Generate a new pattern
 patternNewInfo: Pick a design, add your measurements set, and we'll generate a bespoke sewing pattern for you.
