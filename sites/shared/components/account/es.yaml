@@ -23,7 +23,7 @@ bio: Bio
 email: Dirección de correo electrónico
 img: Imagen
 username: Nombre de usuario
-compare: Comparación de conjuntos métricos
+compare: Measurements Sets Comparison
 consent: Consentimiento y privacidad
 control: Experiencia del usuario
 imperial: Unidades
@@ -83,15 +83,15 @@ bioTitle: Cuéntale a la gente un poco sobre ti
 bioPreview: Biografía
 bioPlaceholder: Hago ropa y zapatos. Diseño patrones de costura. Escribo código. Dirijo [FreeSewing](http://freesewing.org)
 #compare
-compareTitle: '¿Te sientes cómodo comparando conjuntos de medidas?'
+compareTitle: Are you comfortable with your measurements sets being compared?
 compareYes: Sí, por si puede ayudarme
 compareYesd: |
-  De vez en cuando mostraremos cómo se compara tu conjunto de medidas con otros conjuntos de medidas.
-  Esto nos permite detectar posibles problemas en tus medidas o patrones.
+  We will occasionally show how your sets of measurements compare to other measurements sets.
+  This allows us to detect potential problems in your measurements or patterns.
 compareNo: No, nunca compares
 compareNod: |
-  Nunca compararemos tu conjunto de medidas con otros conjuntos de medidas.
-  Esto limitará nuestra capacidad de advertirte sobre posibles problemas en tus conjuntos de medidas o patrones.
+  We will never compare your sets of measurements to other measurements sets.
+  This will limit our ability to warn you about potential problems in your measurements sets or patterns.
 #control
 showMore: Mostrar más
 control1.t: Hazlo lo más sencillo posible
@@ -263,8 +263,14 @@ newPopular: Más populares
 newShare: Compartir / Mostrar
 newDev: Diseño / Desarrollo
 generateANewThing: "Genera un nuevo { thing }"
-website: Página web
 linkedIdentities: Identidades vinculadas
+github: GitHub
+instagram: Instagram
+mastodon: Mastodon
+reddit: Reddit
+twitch: Twitch
+tiktok: TikTok
+website: Página web
 websiteTitle: '¿Tienes un sitio web u otra URL que quieras añadir?'
 platformTitle: '¿Quién eres tú en { platform }?'
 platformWhy: No utilizamos estos datos de ninguna manera. Esto sólo está aquí para que los usuarios de FreeSewing puedan conectar los puntos entre plataformas.
