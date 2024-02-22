@@ -7915,10 +7915,10 @@ jotai-location@0.5.2:
   resolved "https://registry.yarnpkg.com/jotai-location/-/jotai-location-0.5.2.tgz#9d8ccbaea0cc2ed199c7e15adb7a3b8a3060fa6d"
   integrity sha512-4S9hDh1wYp4SG4Laq3+Xd0GdW7jwnWlbEuL8U22kv3wUZW892n6gXlNhwU0LaoXnWoGG0gtjSLBuFm5iodFKLg==
 
-jotai@2.6.4:
-  version "2.6.4"
-  resolved "https://registry.yarnpkg.com/jotai/-/jotai-2.6.4.tgz#a68a76f0e5cd2b614afae7112cfc52a77dbfe038"
-  integrity sha512-RniwQPX4893YlNR1muOtyUGHYaTD1fhEN4qnOuZJSrDHj6xdEMrqlRSN/hCm2fshwk78ruecB/P2l+NCVWe6TQ==
+jotai@2.6.5:
+  version "2.6.5"
+  resolved "https://registry.yarnpkg.com/jotai/-/jotai-2.6.5.tgz#9b41b7f2b63c05c1a9009a9023f2aa5baf9adb94"
+  integrity sha512-T+yvY42GXKomvJYqs+NeTH0da9Z1tQ3Qk3zppPHIWnvmOBKpN6Qd4j8h/oo9dwxs3w/Z5r6Kk0I8h6z5orQ/HQ==
 
 js-base64@^2.1.9:
   version "2.6.4"
