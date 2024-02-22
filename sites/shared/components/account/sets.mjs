@@ -63,14 +63,18 @@ export const NewSet = () => {
   const backend = useBackend()
   const { t } = useTranslation(ns)
   const router = useRouter()
+  const { account } = useAccount()
 
   // State
   const [name, setName] = useState('')
 
+  // Use account setting for imperial
+  const imperial = account.imperial
+
   // Helper method to create a new set
   const createSet = async () => {
     setLoadingStatus([true, 'processingUpdate'])
-    const result = await backend.createSet({ name })
+    const result = await backend.createSet({ name, imperial })
     if (result.success) {
       setLoadingStatus([true, t('nailedIt'), true, true])
       router.push(`/account/set?id=${result.data.set.id}`)
