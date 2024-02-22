@@ -8,7 +8,7 @@ options from the pattern configuration.
 ## Signature
 
 ```js
-float deg2rad(object settings, object optionsConfig)
+object mergeOptions(object settings, object optionsConfig)
 ```
 
 ## Notes
