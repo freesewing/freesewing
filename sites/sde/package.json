@@ -56,7 +56,7 @@
     "file-saver": "2.0.5",
     "i18next": "23.10.0",
     "jotai": "2.6.5",
-    "jotai-location": "0.5.2",
+    "jotai-location": "0.5.3",
     "js-yaml": "4.1.0",
     "lodash.debounce": "^4.0.8",
     "lodash.get": "4.4.2",
