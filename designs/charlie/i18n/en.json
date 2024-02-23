@@ -103,15 +103,15 @@
     },
     "backpockets": {
       "t": "Back Pockets",
-      "d": "Back Pockets"
+      "d": "menu"
     },
     "frontpockets": {
       "t": "Front Pockets",
-      "d": "Front Pocketsa"
+      "d": "menu"
     },
     "fly": {
       "t": "Fly",
-      "d": "Fly"
+      "d": "menu"
     }
   }
 }
