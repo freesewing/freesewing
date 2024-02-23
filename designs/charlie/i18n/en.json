@@ -102,13 +102,16 @@
       "d": "Controls how curved the waistband is."
     },
     "backpockets": {
-      "t": "Back Pockets"
+      "t": "Back Pockets",
+      "d": "Back Pockets"
     },
     "frontpockets": {
-      "t": "Front Pockets"
+      "t": "Front Pockets",
+      "d": "Front Pocketsa"
     },
     "fly": {
-      "t": "Fly"
+      "t": "Fly",
+      "d": "Fly"
     }
   }
 }
