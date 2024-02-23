@@ -50,7 +50,7 @@ export const TestMenu = ({ design, patternConfig, settings, update }) => {
               label: [
                 ...option.path.map((p) => (
                   <>
-                    <span>{t(`${p}.t`)}</span>
+                    <span>{t([`${design}:${p}.t`, `workbench:${p}`])}</span>
                     {spacer}
                   </>
                 )),
