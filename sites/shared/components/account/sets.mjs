@@ -432,7 +432,7 @@ export const Mset = ({ id, publicOnly = false }) => {
         <h2>{t('data')}</h2>
         <DisplayRow title={t('name')}>{mset.name}</DisplayRow>
         <DisplayRow title={t('units')}>
-          {mset.imperial ? t('imerialUnits') : t('metricUnits')}
+          {mset.imperial ? t('imperialUnits') : t('metricUnits')}
         </DisplayRow>
         {control >= controlLevels.sets.notes && (
           <DisplayRow title={t('notes')}>
