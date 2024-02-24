@@ -214,22 +214,24 @@ export const DraftHeader = ({
             </button>
           ))}
         </div>
-        <div className="flex flex-row items-center gap-4">
-          <IconButton
-            Icon={KioskIcon}
-            dflt={ui.kiosk ? false : true}
-            onClick={() => update.ui(['kiosk'], ui.kiosk ? 0 : 1)}
-            title={t('ui-settings:kiosk.t')}
-          />
-        </div>
-        <div className="flex flex-row items-center gap-4">
-          <IconButton
-            Icon={RocketIcon}
-            dflt={ui.renderer !== 'svg'}
-            onClick={() => update.ui(['renderer'], ui.renderer === 'react' ? 'svg' : 'react')}
-            title={t('ui-settings:renderer.t')}
-          />
-        </div>
+        {control < controlLevels.ui.kiosk ? null : (
+          <div className="flex flex-row items-center gap-4">
+            <IconButton
+              Icon={KioskIcon}
+              dflt={ui.kiosk ? false : true}
+              onClick={() => update.ui(['kiosk'], ui.kiosk ? 0 : 1)}
+              title={t('ui-settings:kiosk.t')}
+            />
+            {control < controlLevels.ui.renderer ? null : (
+              <IconButton
+                Icon={RocketIcon}
+                dflt={ui.renderer !== 'svg'}
+                onClick={() => update.ui(['renderer'], ui.renderer === 'react' ? 'svg' : 'react')}
+                title={t('ui-settings:renderer.t')}
+              />
+            )}
+          </div>
+        )}
         <Spacer />
         <div className="flex flex-row items-center gap-4">
           <button
