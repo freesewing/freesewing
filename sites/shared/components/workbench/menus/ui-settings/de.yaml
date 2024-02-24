@@ -1,5 +1,11 @@
 uiSettings.t: UI Präferenzen
 uiSettings.d: Diese Einstellungen steuern die UI-Aspekte (Benutzeroberfläche) unserer Online-Umgebung für den Entwurf von Mustern.
+missingSettings1.t: (Missing Settings?)
+missingSettings1.d: Can't find a setting (like Seam Allowance, Language, or Included Parts)? Change your User Experience level (using the buttons at the top) to expose settings that have been hidden!
+missingSettings2.t: (Missing Settings?)
+missingSettings2.d: Can't find a setting (like Language, Included Parts, or Details)? Change your User Experience level (using the buttons at the top) to expose settings that have been hidden!
+missingSettings3.t: (Missing Settings?)
+missingSettings3.d: Can't find a setting (like Included Parts, Details, or Expand)? Change your User Experience level (using the buttons at the top) to expose settings that have been hidden!
 renderer.t: Rendering Engine
 renderer.d: Legt fest, wie das Muster auf dem Bildschirm gerendert (gezeichnet) wird
 renderWithReact.t: Rendern mit den React-Komponenten von FreeSewing
