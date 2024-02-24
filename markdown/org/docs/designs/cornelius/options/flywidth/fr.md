@@ -1,8 +1,8 @@
 ---
-title: "Largeur de la protection contre les mouches"
+title: "Largeur de la protection de braguette"
 ---
 
 ***
 
-Contrôle la largeur de la protection contre les mouches.
+Contrôle la largeur de la protection de braguette.
 

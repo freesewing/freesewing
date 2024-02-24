@@ -53,7 +53,7 @@ Les cordons seront enfilés à la fin de l'assemblage du sweat à capuche.
 - Retourne la capuche à l'endroit.
 - Bâtis les bords bruts de l'avant et de l'arrière ensemble.
 - Crée un tunnel pour le cordon de serrage en cousant à environ 2,5 cm du bord intérieur sur le côté où se trouvent les trous du cordon.
-- (Optionally) If not using a drawstring, _Topstitch_ or _Edgestitch_ the inner curve.
+- (Optionnel) Si tu n'utilises pas de cordon, _surpique_ la courbe intérieure.
 
 <Note>
 
@@ -87,9 +87,9 @@ Un tour de cou peut être utile pour stabiliser et couvrir les coutures du cou, 
 - Repassez la couture vers le haut.
 - _Surpiquez_ le surplus de couture de la ceinture au corps.
 
-### Step 8: Attaching the cuffs
+### Étape 8 : Attacher les poignets
 
-- With _good sides together_ sew the short edges of the cuffs together to create two bands.
+- Avec les _bons côtés ensemble, _ coudre les côtés courts des poignets pour créer deux bandes.
 - Repasser pour ouvrir la marge de couture.
 - (Facultatif) _Surpique à 1 mm_ les surplus de couture vers le bas.
 - Pliez les poignets en 2 dans le sens de la longueur envers contre envers. Repasser.
@@ -104,7 +104,7 @@ Un tour de cou peut être utile pour stabiliser et couvrir les coutures du cou, 
 - Ouvre partiellement la fermeture Éclair.
 - Plie le haut du ruban de la fermeture à Éclair vers le _bon côté_ du ruban de la fermeture Éclair. Découpe si nécessaire.
 - Épingle la fermeture éclair le long d'un des bords avant de la capuche, du devant et de la ceinture. Fais attention que la tirette de la fermeture est contre le _bon côté_ du sweat et que le bas est aligné. Les dents de la fermeture Éclair doivent être légèrement au-dessus de la ligne de couture, et le bord de la bande doit correspondre au bord de la capuche ou le dépasser légèrement.
-- Using a zipper foot stitch the zipper to the hoodie using you seam allowance width. Lorsque tu arrives à la tirette de la fermeture à glissière, arrête-toi, descend ton aiguille, lève le pied-de-biche, fais passer la tirette de la fermeture à glissière devant le pied-de-biche, abaisse le pied-de-biche. Ensuite, tu peux continuer ta couture.
+- En utilisant un pied pour fermeture Éclair, pique la fermeture Éclair sur le sweat à capuche en utilisant ta marge de couture. Lorsque tu arrives à la tirette de la fermeture à glissière, arrête-toi, descend ton aiguille, lève le pied-de-biche, fais passer la tirette de la fermeture à glissière devant le pied-de-biche, abaisse le pied-de-biche. Ensuite, tu peux continuer ta couture.
 - Sépare la fermeture Éclair.
 - Épingle et couds la bande de fermeture Éclair séparé de l'autre côté du sweat à capuche de la même manière.
 - Repasse les coutures vers l'intérieur en faisant attention à ne pas faire fondre les dents de la fermeture Éclair avec ton fer à repasser.
