@@ -4,6 +4,7 @@ contactingGitHub: Contacter GitHub
 contactingGoogle: Contacter Google
 copiedToClipboard: Copié dans le presse-papier
 dataLoaded: Données chargées depuis le backend de FreeSewing
+failed: Failed
 generatingPdf: Générer ton PDF, un moment s'il te plaît
 nailedIt: C'est parfait!
 pdfFailed: An unexpected error occurred while generating your PDF
