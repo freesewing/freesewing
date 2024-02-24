@@ -602,35 +602,38 @@ export const Mset = ({ id, publicOnly = false }) => {
       {/* units: Control level determines whether or not to show this */}
       <span id="units"></span>
       {account.control >= conf.account.sets.units ? (
-        <ListInput
-          id="set-units"
-          label={t('units')}
-          update={setImperial}
-          list={[
-            {
-              val: false,
-              label: (
-                <div className="flex flex-row items-center flex-wrap justify-between w-full">
-                  <span>{t('metricUnits')}</span>
-                  <span className="text-inherit text-2xl pr-2">cm</span>
-                </div>
-              ),
-              desc: t('metricUnitsd'),
-            },
-            {
-              val: true,
-              label: (
-                <div className="flex flex-row items-center flex-wrap justify-between w-full">
-                  <span>{t('imperialUnits')}</span>
-                  <span className="text-inherit text-4xl pr-2">″</span>
-                </div>
-              ),
-              desc: t('imperialUnitsd'),
-            },
-          ]}
-          current={imperial}
-          docs={docs.units}
-        />
+        <>
+          <ListInput
+            id="set-units"
+            label={t('units')}
+            update={setImperial}
+            list={[
+              {
+                val: false,
+                label: (
+                  <div className="flex flex-row items-center flex-wrap justify-between w-full">
+                    <span>{t('metricUnits')}</span>
+                    <span className="text-inherit text-2xl pr-2">cm</span>
+                  </div>
+                ),
+                desc: t('metricUnitsd'),
+              },
+              {
+                val: true,
+                label: (
+                  <div className="flex flex-row items-center flex-wrap justify-between w-full">
+                    <span>{t('imperialUnits')}</span>
+                    <span className="text-inherit text-4xl pr-2">″</span>
+                  </div>
+                ),
+                desc: t('imperialUnitsd'),
+              },
+            ]}
+            current={imperial}
+            docs={docs.units}
+          />
+          <span className="text-large text-warning">{t('unitsMustSave')}</span>
+        </>
       ) : null}
 
       {/* notes: Control level determines whether or not to show this */}
