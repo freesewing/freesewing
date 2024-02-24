@@ -107,6 +107,7 @@ export const handleExport = async ({
   t,
   startLoading,
   stopLoading,
+  stopLoadingFail,
   onComplete,
   onError,
   ui,
@@ -134,15 +135,16 @@ export const handleExport = async ({
       }
       // do additional business
       onComplete && onComplete(e)
+      // stop the loader
+      if (typeof stopLoading === 'function') stopLoading()
     }
     // on error
     else {
       console.log(e.data.error)
       onError && onError(e)
+      // stop the loader
+      if (typeof stopLoadingFail === 'function') stopLoadingFail()
     }
-
-    // stop the loader
-    if (typeof stopLoading === 'function') stopLoading()
   })
 
   // pdf settings
@@ -229,7 +231,6 @@ export const handleExport = async ({
       }
     } catch (err) {
       console.log(err)
-      if (typeof stopLoading === 'function') stopLoading()
       onError && onError(err)
     }
   }
