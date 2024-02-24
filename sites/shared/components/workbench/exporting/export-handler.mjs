@@ -176,14 +176,14 @@ export const handleExport = async ({
             setPatternSize: true,
           })
         )
+      }
 
-        // add the strings that are used on the cover page
-        workerArgs.strings = {
-          design: capitalize(design),
-          tagline: t('common:slogan1') + '. ' + t('common:slogan2'),
-          url: window.location.href,
-          cuttingLayout: t('cut:cuttingLayout'),
-        }
+      // add the strings that are used on the cover page
+      workerArgs.strings = {
+        design: capitalize(design),
+        tagline: t('common:slogan1') + '. ' + t('common:slogan2'),
+        url: window.location.href,
+        cuttingLayout: t('cut:cuttingLayout'),
       }
 
       // Initialize the pattern stores
