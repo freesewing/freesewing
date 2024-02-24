@@ -23,7 +23,7 @@ bio: Про мене
 email: Адреса електронної пошти
 img: Зображення
 username: Ім’я користувача
-compare: Measurements Sets Comparison
+compare: Порівняння наборів метрик
 consent: Згода та конфіденційність
 control: Користувацький досвід
 imperial: Одиниці
@@ -77,21 +77,21 @@ delete: Видалити
 nailedIt: Зрозумів.
 gone: Пуф. Зникла.
 reloadMsg1: Дані, що зберігаються у вашому браузері, іноді можуть не синхронізуватися з даними, що зберігаються в нашому бекенді.
-reloadMsg2: This lets you reload your account data from the backend. It has the same effect as signing out, and then signing in again
+reloadMsg2: Це дозволяє перезавантажити дані вашого облікового запису з бекенду. Це має той самий ефект, що й вихід з системи, а потім повторний вхід
 #bio
 bioTitle: Розкажіть людям трохи про себе
 bioPreview: Попередній перегляд біографії
 bioPlaceholder: Виготовляю одяг та взуття. Розробляю викрійки одягу. Пишу код. Керую [FreeSewing](http://freesewing.org)
 #compare
-compareTitle: Are you comfortable with your measurements sets being compared?
+compareTitle: Чи комфортно вам, коли порівнюються набори вимірювань?
 compareYes: Так, якщо це може мені допомогти
 compareYesd: |
-  We will occasionally show how your sets of measurements compare to other measurements sets.
-  This allows us to detect potential problems in your measurements or patterns.
+  Час від часу ми показуватимемо, як ваш набір вимірювань порівнюється з іншими наборами вимірювань.
+  Це дозволяє нам виявити потенційні проблеми у ваших вимірах або лекалах.
 compareNo: Ні, ніколи не порівнюйте
 compareNod: |
-  We will never compare your sets of measurements to other measurements sets.
-  This will limit our ability to warn you about potential problems in your measurements sets or patterns.
+  Ми ніколи не будемо порівнювати ваш набір вимірів з іншими наборами вимірів.
+  Це обмежить нашу здатність попередити вас про потенційні проблеми у ваших наборах вимірів або лекалах.
 #control
 showMore: Показати більше
 control1.t: Зробіть це якомога простіше
@@ -243,6 +243,7 @@ itIsAvailableAt: Вона доступна за посиланням
 csetNameMsg: Кожна кураторська добірка має назву. Ви можете запропонувати власне ім'я або псевдонім.
 missing: Missing
 andMore: and more
+unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
 patternNew: Створіть новий шаблон
 patternNewInfo: Виберіть дизайн, додайте свої мірки, і ми створимо для вас індивідуальну викрійку.
 designNew: Створіть новий дизайн
