@@ -1,8 +1,8 @@
 ---
-title: generateStackTransform
+title: utils.generateStackTransform()
 ---
 
-This method will generate the SVG transform to implement a given layout configuration on [a stack](/reference/api/stack).
+The `utils.generateStackTransform()` function will generate the SVG transform to implement a given layout configuration on [a stack](/reference/api/stack).
 
 ## Signature
 
@@ -28,7 +28,7 @@ In other words, it rotates the stack.
 The fourth and fifth parameters flip the part along the X or Y axis respectively.
 
 <Note compact>
-This is a low-level method to facilitate intervening in the pattern layout late in the draft process.
+This is a low-level function to facilitate intervening in the pattern layout late in the draft process.
 It is unlikely you will want to use this.
 </Note>
 

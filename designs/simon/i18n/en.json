@@ -30,7 +30,7 @@
     "yoke": "Yoke",
     "matchHere": "Match fabric along this line",
     "cutUndercollarSmaller": "Cut the undercollar a little bit smaller",
-    "flatFelledSeamAllowance": "Flat-felled seam allwance"
+    "flatFelledSeamAllowance": "Flat-felled seam allowance"
   },
   "o": {
     "backDarts": {
@@ -79,7 +79,7 @@
     },
     "boxPleatWidth": {
       "t": "Box pleat width",
-      "d": "The total widh of the box pleat"
+      "d": "The total width of the box pleat"
     },
     "boxPleatFold": {
       "t": "Box pleat fold",
@@ -143,7 +143,7 @@
     },
     "collarGap": {
       "t": "Collar gap",
-      "d": "The gap between the the two collar ends."
+      "d": "The gap between the two collar ends."
     },
     "collarRoll": {
       "t": "Collar roll",
@@ -214,8 +214,8 @@
       "d": "Draft a pattern with an extra top button"
     },
     "ffsa": {
-      "t": "Flat-felled seam allowace",
-      "d": "The amount of seam allowance on flet-felled seams as a proportion of the regular seam allowance"
+      "t": "Flat-felled seam allowance",
+      "d": "The amount of seam allowance on flat-felled seams as a proportion of the regular seam allowance"
     },
     "hemCurve": {
       "t": "Hem curve",
@@ -250,11 +250,11 @@
       "d": "Draft a separate buttonhole placket."
     },
     "separateButtonholePlacketNo": {
-      "t": "Do not separate the buttonholeplacket",
-      "d": "Draft a pattern where the buttonholeplacket is attached to the front"
+      "t": "Do not separate the buttonhole placket",
+      "d": "Draft a pattern where the buttonhole placket is attached to the front"
     },
     "separateButtonholePlacketYes": {
-      "t": "Separate the buttonholeplacket",
+      "t": "Separate the buttonhole placket",
       "d": "Draft a pattern where the buttonhole placket is separated from the front, allowing one to use a different fabric or grain for the buttonhole placket"
     },
     "separateButtonPlacket": {
@@ -283,7 +283,7 @@
     },
     "splitYokeNo": {
       "t": "Full-size yoke",
-      "d": "Draft a pattern with a single full-size yok"
+      "d": "Draft a pattern with a single full-size yoke"
     },
     "splitYokeYes": {
       "t": "Split the yoke",

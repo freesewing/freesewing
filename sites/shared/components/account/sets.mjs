@@ -63,14 +63,18 @@ export const NewSet = () => {
   const backend = useBackend()
   const { t } = useTranslation(ns)
   const router = useRouter()
+  const { account } = useAccount()
 
   // State
   const [name, setName] = useState('')
 
+  // Use account setting for imperial
+  const imperial = account.imperial
+
   // Helper method to create a new set
   const createSet = async () => {
     setLoadingStatus([true, 'processingUpdate'])
-    const result = await backend.createSet({ name })
+    const result = await backend.createSet({ name, imperial })
     if (result.success) {
       setLoadingStatus([true, t('nailedIt'), true, true])
       router.push(`/account/set?id=${result.data.set.id}`)
@@ -432,7 +436,7 @@ export const Mset = ({ id, publicOnly = false }) => {
         <h2>{t('data')}</h2>
         <DisplayRow title={t('name')}>{mset.name}</DisplayRow>
         <DisplayRow title={t('units')}>
-          {mset.imperial ? t('imerialUnits') : t('metricUnits')}
+          {mset.imperial ? t('imperialUnits') : t('metricUnits')}
         </DisplayRow>
         {control >= controlLevels.sets.notes && (
           <DisplayRow title={t('notes')}>
@@ -598,35 +602,38 @@ export const Mset = ({ id, publicOnly = false }) => {
       {/* units: Control level determines whether or not to show this */}
       <span id="units"></span>
       {account.control >= conf.account.sets.units ? (
-        <ListInput
-          id="set-units"
-          label={t('units')}
-          update={setImperial}
-          list={[
-            {
-              val: false,
-              label: (
-                <div className="flex flex-row items-center flex-wrap justify-between w-full">
-                  <span>{t('metricUnits')}</span>
-                  <span className="text-inherit text-2xl pr-2">cm</span>
-                </div>
-              ),
-              desc: t('metricUnitsd'),
-            },
-            {
-              val: true,
-              label: (
-                <div className="flex flex-row items-center flex-wrap justify-between w-full">
-                  <span>{t('imperialUnits')}</span>
-                  <span className="text-inherit text-4xl pr-2">″</span>
-                </div>
-              ),
-              desc: t('imperialUnitsd'),
-            },
-          ]}
-          current={imperial}
-          docs={docs.units}
-        />
+        <>
+          <ListInput
+            id="set-units"
+            label={t('units')}
+            update={setImperial}
+            list={[
+              {
+                val: false,
+                label: (
+                  <div className="flex flex-row items-center flex-wrap justify-between w-full">
+                    <span>{t('metricUnits')}</span>
+                    <span className="text-inherit text-2xl pr-2">cm</span>
+                  </div>
+                ),
+                desc: t('metricUnitsd'),
+              },
+              {
+                val: true,
+                label: (
+                  <div className="flex flex-row items-center flex-wrap justify-between w-full">
+                    <span>{t('imperialUnits')}</span>
+                    <span className="text-inherit text-4xl pr-2">″</span>
+                  </div>
+                ),
+                desc: t('imperialUnitsd'),
+              },
+            ]}
+            current={imperial}
+            docs={docs.units}
+          />
+          <span className="text-large text-warning">{t('unitsMustSave')}</span>
+        </>
       ) : null}
 
       {/* notes: Control level determines whether or not to show this */}

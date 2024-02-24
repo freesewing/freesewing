@@ -107,6 +107,7 @@ export const handleExport = async ({
   t,
   startLoading,
   stopLoading,
+  stopLoadingFail,
   onComplete,
   onError,
   ui,
@@ -134,15 +135,16 @@ export const handleExport = async ({
       }
       // do additional business
       onComplete && onComplete(e)
+      // stop the loader
+      if (typeof stopLoading === 'function') stopLoading()
     }
     // on error
     else {
       console.log(e.data.error)
       onError && onError(e)
+      // stop the loader
+      if (typeof stopLoadingFail === 'function') stopLoadingFail()
     }
-
-    // stop the loader
-    if (typeof stopLoading === 'function') stopLoading()
   })
 
   // pdf settings
@@ -176,14 +178,14 @@ export const handleExport = async ({
             setPatternSize: true,
           })
         )
+      }
 
-        // add the strings that are used on the cover page
-        workerArgs.strings = {
-          design: capitalize(design),
-          tagline: t('common:slogan1') + '. ' + t('common:slogan2'),
-          url: window.location.href,
-          cuttingLayout: t('cut:cuttingLayout'),
-        }
+      // add the strings that are used on the cover page
+      workerArgs.strings = {
+        design: capitalize(design),
+        tagline: t('common:slogan1') + '. ' + t('common:slogan2'),
+        url: window.location.href,
+        cuttingLayout: t('cut:cuttingLayout'),
       }
 
       // Initialize the pattern stores
@@ -229,7 +231,6 @@ export const handleExport = async ({
       }
     } catch (err) {
       console.log(err)
-      if (typeof stopLoading === 'function') stopLoading()
       onError && onError(err)
     }
   }
