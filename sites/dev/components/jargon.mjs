@@ -16,6 +16,7 @@ const jargon = {
   en: {
     cjs: 'reference/terms/cjs',
     esm: 'reference/terms/esm',
+    variadic: 'reference/terms/variadic',
   },
 }
 
