@@ -31,7 +31,7 @@
     "cutChestPocketWelt.t": "The chest pocket welt is not shown",
     "cutChestPocketWelt.d": "The **Chest pocket welt** (12) is a rectangular piece of fabric {{{ w }}} wide and {{{ l }}} long.",
     "cutFrontFacing.t": "The front facing is not shown",
-    "cutFrontFacing.d": "The **Front facing** (1a) is not shown, but you can trace it from the Front part (1). Trace the outine left from the facing/lining boundary.",
+    "cutFrontFacing.d": "The **Front facing** (1a) is not shown, but you can trace it from the Front part (1). Trace the outline left from the facing/lining boundary.",
     "cutFrontLining.t": "The front lining is not shown",
     "cutFrontLining.d": "The **Front lining** (1b) is not shown, but you can trace it from the Front part (1). Trace the outline right from the facing/lining boundary.",
     "cutInnerPocketBag.t": "The inner pocket bag is not shown",
