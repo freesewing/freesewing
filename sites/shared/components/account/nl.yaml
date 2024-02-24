@@ -23,7 +23,7 @@ bio: Bio
 email: E-mailadres
 img: Afbeelding
 username: Gebruikersnaam
-compare: Measurements Sets Comparison
+compare: Metricset Vergelijking
 consent: Privacy & Toestemming
 control: Gebruikerservaring
 imperial: Eenheden
@@ -77,21 +77,21 @@ delete: Verwijder
 nailedIt: Dat is ook weer geregeld
 gone: Poef. Verdwenen.
 reloadMsg1: De gegevens die zijn opgeslagen in je browser kunnen soms gaan afwijken van de gegevens die zijn opgeslagen in onze backend.
-reloadMsg2: This lets you reload your account data from the backend. It has the same effect as signing out, and then signing in again
+reloadMsg2: Hiermee kun je je accountgegevens synchroniseren met de backend. Het heeft hetzelfde effect als je afmelden en dan weer aanmelden
 #bio
 bioTitle: Vertel wat over jezelf
 bioPreview: Bio Voorbeeld
 bioPlaceholder: Ik maak kledij en schoenen. Ik ontwerp naaipatronen. Ik schrijf code. Ik beheer [FreeSewing](http://freesewing.org)
 #compare
-compareTitle: Are you comfortable with your measurements sets being compared?
+compareTitle: Voel je je ok als we maten gaan vergelijken?
 compareYes: Ja, voor zover het me kan helpen
 compareYesd: |
-  We will occasionally show how your sets of measurements compare to other measurements sets.
-  This allows us to detect potential problems in your measurements or patterns.
+  We kunnen je tonen hoe jouw maten set zich verhoudt tot andere sets.
+  Dit kan je helpen bij het opsporen van mogelijke foutjes bij het nemen van maten, of problemen in pratronen.
 compareNo: Nee, vergelijk nooit maten
 compareNod: |
-  We will never compare your sets of measurements to other measurements sets.
-  This will limit our ability to warn you about potential problems in your measurements sets or patterns.
+  We zullen jouw maten sets nooit vergelijken met andere maten sets.
+  Dit beperkt onze mogelijkheden om je te waarschuwen over mogelijke problemen in je maten sets of patronen.
 #control
 showMore: Toon meer
 control1.t: Houd het zo eenvoudig mogelijk
@@ -243,6 +243,7 @@ itIsAvailableAt: Het is beschikbaar op
 csetNameMsg: Elke gecureerde set heeft een naam. Je kunt je eigen naam of een pseudoniem voorstellen.
 missing: Missing
 andMore: and more
+unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
 patternNew: Een nieuw patroon genereren
 patternNewInfo: Kies een ontwerp, voeg je maatset toe en wij maken een naaipatroon op maat voor je.
 designNew: Een nieuw ontwerp creëren
