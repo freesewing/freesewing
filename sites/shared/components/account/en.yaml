@@ -159,9 +159,6 @@ languageTitle: Which language do you prefer?
 # password
 passwordTitle: Something only you know
 
-# id
-userId: User ID
-
 # api key
 newApikey: Generate a new API key
 keyNewInfo: Create a new API key to connect to the FreeSewing backend in an automated way.
