@@ -1,5 +1,5 @@
 ---
-maker: 1
+maker: "Joost De Cock"
 caption: "Moar Charlie"
 date: "2021-05-23"
 intro: "Joost made another excellent pair of Charlie Chinos in this tan fabric."
