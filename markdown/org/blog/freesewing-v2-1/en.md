@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "This post is mostly about our work on progressive disclosure. Also: Three new patterns!"
 date: "2019-10-06"
 intro: "We've just release FreeSewing v2.1 🎉"
