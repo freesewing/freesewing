@@ -23,7 +23,12 @@ credits: Crédits
 contentsBy: Contenu par
 translators: Traducteurs
 title: Titre
-xMadeThis: "<strong>{x}</strong> a fait ceci"
-xWroteThis: "<strong>{x}</strong> a écrit ceci"
+writtenBy: Written by
+madeBy: Made by
 by: Par
+claimThisPost: Claim this post
+iKnowWhoMadeThis: I know who made this
+iKnowWhoWroteThis: I know who wrote this
+iWroteThis: I wrote this
+iMadeThis: I made this
 
