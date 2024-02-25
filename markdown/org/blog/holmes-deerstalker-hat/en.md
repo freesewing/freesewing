@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Screengrab from  Bernadette Banner's YouTube tutorial for this hat"
 date: "2020-02-23"
 intro: "New pattern: The Holmes Deerstalker Hat"
