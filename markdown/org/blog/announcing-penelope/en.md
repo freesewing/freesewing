@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "The pattern illustration for Penelope"
 date: "2018-06-29"
 intro: "I'm very happy to announce the immeadiate availability of the Penelope Pencil Skirt , out in beta today."
