@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "As an introvert I don't say this often, but I'd actually like to meet you guys."
 date: "2018-12-10"
 intro: "Let's meet up in 2019! And other end-of-year musings"
