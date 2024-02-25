@@ -143,6 +143,8 @@ tooComplex: Si tout cela te semble confus, tu n'as pas besoin de fournir ces inf
 languageTitle: Quelle langue préfères-tu ?
 #password
 passwordTitle: Quelque chose que tu es le seul à savoir
+#id
+userId: User ID
 #api key
 newApikey: Générer une nouvelle clé API
 keyNewInfo: Crée une nouvelle clé API pour te connecter au backend de FreeSewing de manière automatisée.
