@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "This release really is a sea-change"
 date: "2019-08-25"
 intro: "Welcome to version 2 of FreeSewing, the open source platform for made-to-measure sewing patterns."
