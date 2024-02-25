@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "The most important change is obviously that we moved from purple to black as our signature color"
 date: "2018-05-24"
 intro: "Welcome to our new website. It's GDPR compliant, speaks 3 languages, and smells of wet paint"
