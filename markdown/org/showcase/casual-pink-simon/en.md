@@ -1,5 +1,5 @@
 ---
-maker: 1
+maker: "Joost De Cock"
 caption: "A Simon shirt by Joost"
 date: "2017-03-28"
 intro: "FIXME_no_intro"
