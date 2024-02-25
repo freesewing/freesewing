@@ -3,10 +3,10 @@ title: "Claim your showcase posts for eternal glory"
 caption: "Who's that cat?"
 date: 20240225
 intro: "Showcase posts have alwasy been loosely attributed, we want to fix that"
-author: joost
+author: 1
 ---
 
-There are over 300 showcase posts on FreeSewing.org where our users showcase their makes.
+There are [over 300 showcase posts on FreeSewing.org](/showcase) where our users showcase their makes.
 That's a truly great thing because it's not only nice to see what people come up with, it also gives new visitors to the site a good idea of what to expect from a given design.
 
 Showcase posts have been around for a while and they have survived a number of technical overhauls in how things work under the hood. And that's starting to show.
@@ -17,12 +17,18 @@ At one point, we assigned them to the username, but because users can change the
 
 We'd like to address this growing library of showcase posts and make sure that as many as possible are properly credited to their makers.
 
-For this reason, we've implemented a few changed:
+For this reason, we've implemented a few changes:
 - Showcase posts are now assigned to the user's FreeSewing ID.
 - When a showcase post is credited like this, we'll show the user's bio under the post
 - When there is no user credited, we will show a button to either claim this post as your own, or suggest another user in case you know who is the maker.
 
 This way, given some time and collective effort, we hopefully will soon enough have properly credited all posts.
+
+<Tip>
+##### What is my FreeSewing ID?
+
+You can find your FreeSewing ID on [your account page](/account) or go to [FreeSewing.org/id](/id).
+</Tip>
 
 ## Next steps
 The first thing to do is to make sure everything is properly credited.
