@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Paco on yours truly"
 date: "2020-08-10"
 intro: "Meet Paco: Our new unisex pattern for stylish summer pants"
