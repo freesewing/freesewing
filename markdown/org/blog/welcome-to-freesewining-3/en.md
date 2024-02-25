@@ -3,7 +3,7 @@ title: "Welcome to the new FreeSewing.org site, powered by v3"
 caption: "An image by Johannes Plenio"
 date: 20231103
 intro: "FreeSewing v3 has been out for a while, but now we've also migrated our website"
-author: 1
+author: joost
 ---
 
 FreeSewing version 3 -- the new major version of FreeSewing that's been more than a year in the making -- was released at the end of September. But casual visitors of FreeSewing.org might not even have noticed, for the website was still running on v2, and even [the announcement blog post](/blog/announcing-freesewing-v30) was only available on the new site.
