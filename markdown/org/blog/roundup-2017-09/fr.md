@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Ton nouveau fond d'écran de connexion pour le mois d'octobre"
 date: "2017-09-30"
 intro: "Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernières semaines, et un aperçu de ce qui t'attend le mois prochain."
