@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Remember when we were allowed to go outside?"
 date: "2021-01-17"
 intro: "The Bella bodice block for womenswear"
