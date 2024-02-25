@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Ваша історія входу в систему за листопад"
 date: "2018-11-30"
 intro: "Щомісячний огляд - жовтень 2018: Прогрес на beta.freesewing.org"
