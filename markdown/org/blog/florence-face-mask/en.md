@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Keep those virus-infesed droplets at bay with our Florence face mask"
 date: "2020-02-28"
 intro: "We just published a face mask pattern, because coronavirus"
