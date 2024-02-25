@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Je nieuwe inlogachtergrond voor de maand november"
 date: "2017-10-31"
 intro: "Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt."
