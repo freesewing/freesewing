@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "We are building a bedrock of loyal supporters to ensure a sustainable future for freesewing.org, our code, our patterns, and our community."
 date: "2017-12-10"
 intro: "Calling all Patrons; Join our bedrock of loyal supporters."
