@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "We're saying thanks to our contributors and want to make sure their contributions get the credit they deserve"
 date: "2021-11-28"
 intro: "During our last contributor call , we decided that we would implement the All Contributors specification as a way to honour all our contributors."
