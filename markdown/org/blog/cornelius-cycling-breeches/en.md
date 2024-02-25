@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Cycling like a true gentlemen"
 date: "2021-03-06"
 intro: "Wouter is at it again, this time around he's treating us to classic cycling breeches."
