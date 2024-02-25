@@ -47,7 +47,7 @@ const types = [
   'other',
 ]
 
-const userCard = (id) =>
+export const userCard = (id) =>
   `[![User ${id}](${config.backend}/users/${id}/card)](https://next.freesewing.org/users/${id})`
 
 const templates = {
