@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Note: This post is a long read. Although nowhere near as long as this book"
 date: "2020-08-30"
 intro: "Please help grow FreeSewing beyond what I can do on my own"
