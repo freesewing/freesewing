@@ -6,6 +6,12 @@ renderWithReact.t: Рендер за допомогою React-компонент
 renderWithReact.d: Відтворення у форматі SVG за допомогою наших React-компонентів. Дозволяє інтерактивність та оптимізований для екрану. Використовуйте його, якщо ви не впевнені, що вибрати.
 renderWithCore.t: Render with FreeSewing's Core library
 renderWithCore.d: Рендер безпосередньо в SVG з Core. Не містить інтерактивності та оптимізований для друку. Використовуйте його, якщо хочете знати, як виглядатиме зображення після експорту.
+kiosk.t: Kiosk Mode
+kiosk.d: Controls how the web page is shown.
+websiteMode.t: Use website mode
+websiteMode.d: Show the full web page, including header, footer, and navigation.
+kioskMode.t: Use kiosk mode
+kioskMode.d: Show just the pattern drafting portion of the web page, without header, footer, or navigation.
 control.t: Користувацький досвід
 control.d: Якому користувацькому досвіду ви надаєте перевагу? Зверніть увагу, що це налаштування облікового запису, тому воно вплине на весь веб-сайт.
 inspect.t: Оглянути

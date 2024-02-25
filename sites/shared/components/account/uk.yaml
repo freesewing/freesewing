@@ -13,6 +13,7 @@ created: Створено
 updated: Оновлено
 expires: Закінчується
 role: Роль
+yourApikeys: Your API Keys
 yourProfile: Ваш профіль
 yourPatterns: Ваші візерунки
 yourSets: Ваші набори вимірювань
@@ -22,7 +23,7 @@ bio: Про мене
 email: Адреса електронної пошти
 img: Зображення
 username: Ім’я користувача
-compare: Порівняння наборів метрик
+compare: Measurements Sets Comparison
 consent: Згода та конфіденційність
 control: Користувацький досвід
 imperial: Одиниці
@@ -76,21 +77,21 @@ delete: Видалити
 nailedIt: Зрозумів.
 gone: Пуф. Зникла.
 reloadMsg1: Дані, що зберігаються у вашому браузері, іноді можуть не синхронізуватися з даними, що зберігаються в нашому бекенді.
-reloadMsg2: Це дозволяє перезавантажити дані вашого облікового запису з бекенду. Це має той самий ефект, що й вихід з системи, а потім повторний вхід
+reloadMsg2: This lets you reload your account data from the backend. It has the same effect as signing out, and then signing in again
 #bio
 bioTitle: Розкажіть людям трохи про себе
 bioPreview: Попередній перегляд біографії
 bioPlaceholder: Виготовляю одяг та взуття. Розробляю викрійки одягу. Пишу код. Керую [FreeSewing](http://freesewing.org)
 #compare
-compareTitle: Чи комфортно вам, коли порівнюються набори вимірювань?
+compareTitle: Are you comfortable with your measurements sets being compared?
 compareYes: Так, якщо це може мені допомогти
 compareYesd: |
-  Час від часу ми показуватимемо, як ваш набір вимірювань порівнюється з іншими наборами вимірювань.
-  Це дозволяє нам виявити потенційні проблеми у ваших вимірах або лекалах.
+  We will occasionally show how your sets of measurements compare to other measurements sets.
+  This allows us to detect potential problems in your measurements or patterns.
 compareNo: Ні, ніколи не порівнюйте
 compareNod: |
-  Ми ніколи не будемо порівнювати ваш набір вимірів з іншими наборами вимірів.
-  Це обмежить нашу здатність попередити вас про потенційні проблеми у ваших наборах вимірів або лекалах.
+  We will never compare your sets of measurements to other measurements sets.
+  This will limit our ability to warn you about potential problems in your measurements sets or patterns.
 #control
 showMore: Показати більше
 control1.t: Зробіть це якомога простіше
@@ -262,8 +263,14 @@ newPopular: Найпопулярніші
 newShare: Поділитися / Показати
 newDev: Проектування / розробка
 generateANewThing: "Створіть новий { thing }"
-website: Веб-сайт
 linkedIdentities: Пов'язані ідентичності
+github: GitHub
+instagram: Інстаграм
+mastodon: Mastodon
+reddit: Reddit
+twitch: Twitch
+tiktok: TikTok
+website: Веб-сайт
 websiteTitle: У вас є веб-сайт або інша URL-адреса, яку ви хотіли б додати?
 platformTitle: Хто ви на { platform }?
 platformWhy: Ми не використовуємо ці дані жодним чином. Це лише для того, щоб користувачі FreeSewing могли з'єднати точки на різних платформах.
@@ -276,6 +283,7 @@ code: Код
 aboutThing: Про { thing }
 requiredMeasurements: Необхідні заміри
 optionalMeasurements: Додаткові заміри
+none: Жодного
 designOptions: Варіанти дизайну
 parts: Деталі
 plugins: Плагіни

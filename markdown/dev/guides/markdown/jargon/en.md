@@ -10,7 +10,7 @@ jargon terms for us. This page shows you how to use it.
 
 ## Adding jargon terms
 
-To add a new jargon term, you first need to document it, than you can add it to
+To add a new jargon term, you first need to document it, then you can add it to
 the jargon component for the website you'd like to add it to:
 
 | Website | Jargon file | GitHub link |
@@ -25,7 +25,7 @@ So in your text, you can use `ESM`, `esm`, or even `eSm`, but the key in the jar
 
 The **value** is the URL path to the documentation page for the term.
 You do not need to include the language prefix in the doc path.
-Note that this shoud point to a page that holds MDX content.
+Note that this should point to a page that holds MDX content.
 
 An example will make this more clear:
 

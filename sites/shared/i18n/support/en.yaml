@@ -9,7 +9,7 @@ confirmedIssues: Confirmed issues
 createSupportRequest: Create a support request
 commentAdded: Comment added
 communitySupport: Community Support
-communitySupport1: For the fastest response, head over to <b>discord.freesewing.org</b> and post your question in the <b>Support</b> channel.
+communitySupport1: For the fastest response, head over to <b>discord.freesewing.org</b> and post your question in the <b>need-help</b> channel.
 communitySupport2: The FreeSewing community is a helpful bunch, so there is a good chance they are able to help you.
 contributorSupport: Contributor Support
 contributorSupport1: If something is broken or you have found a bug, you can <b>create an issue on GitHub</b>.

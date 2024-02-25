@@ -13,6 +13,7 @@ created: Aangemaakt
 updated: Bijgewerkt
 expires: Verloopt op
 role: Rol
+yourApikeys: Your API Keys
 yourProfile: Jouw profiel
 yourPatterns: Jouw patronen
 yourSets: Jouw maten sets
@@ -22,7 +23,7 @@ bio: Bio
 email: E-mailadres
 img: Afbeelding
 username: Gebruikersnaam
-compare: Metricset Vergelijking
+compare: Measurements Sets Comparison
 consent: Privacy & Toestemming
 control: Gebruikerservaring
 imperial: Eenheden
@@ -76,21 +77,21 @@ delete: Verwijder
 nailedIt: Dat is ook weer geregeld
 gone: Poef. Verdwenen.
 reloadMsg1: De gegevens die zijn opgeslagen in je browser kunnen soms gaan afwijken van de gegevens die zijn opgeslagen in onze backend.
-reloadMsg2: Hiermee kun je je accountgegevens synchroniseren met de backend. Het heeft hetzelfde effect als je afmelden en dan weer aanmelden
+reloadMsg2: This lets you reload your account data from the backend. It has the same effect as signing out, and then signing in again
 #bio
 bioTitle: Vertel wat over jezelf
 bioPreview: Bio Voorbeeld
 bioPlaceholder: Ik maak kledij en schoenen. Ik ontwerp naaipatronen. Ik schrijf code. Ik beheer [FreeSewing](http://freesewing.org)
 #compare
-compareTitle: Voel je je ok als we maten gaan vergelijken?
+compareTitle: Are you comfortable with your measurements sets being compared?
 compareYes: Ja, voor zover het me kan helpen
 compareYesd: |
-  We kunnen je tonen hoe jouw maten set zich verhoudt tot andere sets.
-  Dit kan je helpen bij het opsporen van mogelijke foutjes bij het nemen van maten, of problemen in pratronen.
+  We will occasionally show how your sets of measurements compare to other measurements sets.
+  This allows us to detect potential problems in your measurements or patterns.
 compareNo: Nee, vergelijk nooit maten
 compareNod: |
-  We zullen jouw maten sets nooit vergelijken met andere maten sets.
-  Dit beperkt onze mogelijkheden om je te waarschuwen over mogelijke problemen in je maten sets of patronen.
+  We will never compare your sets of measurements to other measurements sets.
+  This will limit our ability to warn you about potential problems in your measurements sets or patterns.
 #control
 showMore: Toon meer
 control1.t: Houd het zo eenvoudig mogelijk
@@ -262,8 +263,14 @@ newPopular: Meest populair
 newShare: Delen / Tonen
 newDev: Ontwerpen / Ontwikkelen
 generateANewThing: "Genereer een nieuwe { thing }"
-website: Website
 linkedIdentities: Gekoppelde identiteiten
+github: GitHub
+instagram: Instagram
+mastodon: Mastodon
+reddit: Reddit
+twitch: Twitch
+tiktok: TikTok
+website: Website
 websiteTitle: Heb je een website of andere URL die je wilt toevoegen?
 platformTitle: Wie ben jij op { platform }?
 platformWhy: We gebruiken deze gegevens op geen enkele manier. Dit is er alleen zodat gebruikers van FreeSewing de punten op verschillende platforms met elkaar kunnen verbinden.
@@ -276,6 +283,7 @@ code: Code
 aboutThing: Over { thing }
 requiredMeasurements: Vereiste maten
 optionalMeasurements: Optionele maten
+none: Geen
 designOptions: Design opties
 parts: Onderdelen
 plugins: Plugins
