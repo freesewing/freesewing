@@ -23,7 +23,7 @@ bio: Bio
 email: Adresse électronique
 img: Image
 username: Nom d'utilisateur
-compare: Measurements Sets Comparison
+compare: Comparaison des ensembles de mesures
 consent: Consentement et protection de la vie privée
 control: Expérience de l'utilisateur
 imperial: Unité
@@ -77,21 +77,21 @@ delete: Effacer
 nailedIt: C'est parfait
 gone: Pouf. Disparu.
 reloadMsg1: Les données stockées dans ton navigateur peuvent parfois se désynchroniser avec les données stockées dans notre backend.
-reloadMsg2: This lets you reload your account data from the backend. It has the same effect as signing out, and then signing in again
+reloadMsg2: Cela te permet de recharger les données de ton compte à partir du backend. Cela a le même effet que de se déconnecter, puis de se reconnecter.
 #bio
 bioTitle: Parle aux gens un peu de toi
 bioPreview: Aperçu biologique
 bioPlaceholder: Je fabrique des vêtements et des chaussures. Je conçois des patrons de couture. J'écris du code. Je dirige [FreeSewing](http://freesewing.org)
 #compare
-compareTitle: Are you comfortable with your measurements sets being compared?
+compareTitle: Es-tu à l'aise avec la comparaison des ensembles de mesures ?
 compareYes: Oui, au cas où cela pourrait m'aider
 compareYesd: |
-  We will occasionally show how your sets of measurements compare to other measurements sets.
-  This allows us to detect potential problems in your measurements or patterns.
+  Nous montrerons de temps en temps comment ton ensemble de mesures se compare à d'autres ensembles de mesures.
+  Cela nous permet de détecter des problèmes potentiels dans tes mesures ou tes modèles.
 compareNo: Non, ne compare jamais
 compareNod: |
-  We will never compare your sets of measurements to other measurements sets.
-  This will limit our ability to warn you about potential problems in your measurements sets or patterns.
+  Nous ne comparerons jamais ton jeu de mesures à d'autres jeux de mesures.
+  Cela limitera notre capacité à t'avertir de problèmes potentiels dans tes ensembles de mesures ou tes patrons.
 #control
 showMore: Afficher plus
 control1.t: Fais en sorte que les choses soient aussi simples que possible
@@ -243,6 +243,7 @@ itIsAvailableAt: Il est disponible à l'adresse suivante
 csetNameMsg: Chaque ensemble curaté a un nom. Tu peux proposer ton propre nom ou un pseudonyme.
 missing: Missing
 andMore: and more
+unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
 patternNew: Génère un nouveau modèle
 patternNewInfo: Choisis un modèle, ajoute ton jeu de mesures, et nous générerons pour toi un patron de couture sur mesure.
 designNew: Créer un nouveau dessin

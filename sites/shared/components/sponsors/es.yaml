@@ -1,4 +1,4 @@
 algolia: Búsqueda con Algolia
-bugsnag: Informe de errores por Bugsnag
+bugsnag: Error reporting by BugSnag
 crowdin: Traducción realizada por Crowdin
 vercel: Construcción y alojamiento por Vercel

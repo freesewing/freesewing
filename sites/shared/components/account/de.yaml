@@ -23,7 +23,7 @@ bio: Über mich
 email: E-Mail Adresse
 img: Bild
 username: Benutzername
-compare: Measurements Sets Comparison
+compare: Metrikenvergleich
 consent: Zustimmung & Datenschutz
 control: Benutzererfahrung
 imperial: Einheiten
@@ -77,21 +77,21 @@ delete: löschen
 nailedIt: Geschafft
 gone: Puff. Verschwunden.
 reloadMsg1: Die in deinem Browser gespeicherten Daten können manchmal nicht mit den in unserem Backend gespeicherten Daten synchronisiert werden.
-reloadMsg2: This lets you reload your account data from the backend. It has the same effect as signing out, and then signing in again
+reloadMsg2: Damit kannst du deine Kontodaten aus dem Backend neu laden. Es hat denselben Effekt wie das Abmelden und erneute Anmelden
 #bio
 bioTitle: Erzähl den Leuten ein bisschen was über dich
 bioPreview: Bio Vorschau
 bioPlaceholder: Ich mache Kleidung und Schuhe. Ich entwerfe Nähmuster. Ich schreibe Code. Ich betreibe [FreeSewing](http://freesewing.org)
 #compare
-compareTitle: Are you comfortable with your measurements sets being compared?
+compareTitle: Fühlst du dich wohl, wenn Messreihen verglichen werden?
 compareYes: Ja, falls es mir helfen kann
 compareYesd: |
-  We will occasionally show how your sets of measurements compare to other measurements sets.
-  This allows us to detect potential problems in your measurements or patterns.
+  Gelegentlich zeigen wir, wie deine Messungen im Vergleich zu anderen Messungen abschneiden.
+  So können wir mögliche Probleme in deinen Messungen oder Mustern erkennen.
 compareNo: Nein, niemals vergleichen
 compareNod: |
-  We will never compare your sets of measurements to other measurements sets.
-  This will limit our ability to warn you about potential problems in your measurements sets or patterns.
+  Wir werden deine Maßangaben niemals mit anderen Maßangaben vergleichen.
+  Das schränkt unsere Möglichkeiten ein, dich vor potenziellen Problemen in deinen Messsätzen oder Mustern zu warnen.
 #control
 showMore: Mehr zeigen
 control1.t: Halte es so einfach wie möglich
@@ -243,6 +243,7 @@ itIsAvailableAt: Es ist erhältlich unter
 csetNameMsg: Jedes kuratierte Set hat einen Namen. Du kannst deinen eigenen Namen oder ein Pseudonym vorschlagen.
 missing: Missing
 andMore: and more
+unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
 patternNew: Ein neues Muster generieren
 patternNewInfo: Wähle ein Design, füge deine Maße hinzu und wir erstellen ein maßgeschneidertes Nähmuster für dich.
 designNew: Ein neues Design erstellen

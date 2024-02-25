@@ -1,5 +1,11 @@
 uiSettings.t: UI-voorkeuren
 uiSettings.d: Deze voorkeuren bepalen de UI (User Interface) aspecten van onze online omgeving voor het maken van patronen.
+missingSettings1.t: (Missing Settings?)
+missingSettings1.d: Can't find a setting (like Seam Allowance, Language, or Included Parts)? Change your User Experience level (using the buttons at the top) to expose settings that have been hidden!
+missingSettings2.t: (Missing Settings?)
+missingSettings2.d: Can't find a setting (like Language, Included Parts, or Details)? Change your User Experience level (using the buttons at the top) to expose settings that have been hidden!
+missingSettings3.t: (Missing Settings?)
+missingSettings3.d: Can't find a setting (like Included Parts, Details, or Expand)? Change your User Experience level (using the buttons at the top) to expose settings that have been hidden!
 renderer.t: Render-engine
 renderer.d: Bepaalt hoe het patroon wordt weergegeven (getekend) op het scherm
 renderWithReact.t: Renderen met de React-componenten van FreeSewing
