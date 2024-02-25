@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Photo by Karolina Grabowska from Pexels"
 date: "2021-06-27"
 intro: "Announcing Ursula, a basic, highly-customizable underwear pattern"
