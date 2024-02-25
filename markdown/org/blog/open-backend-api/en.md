@@ -3,7 +3,7 @@ title: "Opening up the FreeSewing backend API"
 caption: "A Brass Ornate Vintage Key on Black Computer Keyboard, by PixaBay"
 date: 20231103
 intro: "The FreeSewing backend API now supports API keys so you can interact with it too"
-author: joost
+author: 1
 ---
 
 Locking out people of your API seems to be the fashionable thing to do these days. With places like Twitter -- nay, X -- and Reddit either locking down API access or charging for access.
