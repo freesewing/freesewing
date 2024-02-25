@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Picture you and him, in matching coats."
 date: "2018-01-26"
 intro: "This one's for the ladies --- and I'm not (just) talking about that picture of heart-throb Benedict Cumberbatch at the top of this post."
