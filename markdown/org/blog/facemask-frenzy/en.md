@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Dr. Dragnea from Antwerp University hospital wearing a Florence facemask"
 date: "2020-03-19"
 intro: "Calling all makers: Here's a 1-page PDF facemask pattern; Now go make some and help beat this thing"
