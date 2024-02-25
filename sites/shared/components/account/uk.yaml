@@ -143,6 +143,8 @@ tooComplex: Якщо все це збиває з пантелику, ви мож
 languageTitle: Якій мові ви віддаєте перевагу?
 #password
 passwordTitle: Щось, що знаєш тільки ти.
+#id
+userId: User ID
 #api key
 newApikey: Згенеруйте новий ключ API
 keyNewInfo: Створіть новий ключ API для автоматичного підключення до бекенду FreeSewing.
