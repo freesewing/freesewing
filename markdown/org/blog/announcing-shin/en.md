@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "I guess this is what augmented reality looks like?"
 date: "2018-09-29"
 intro: "A while ago I found myself in need of some new swim trunks. So I drafted a pattern and made some:"
