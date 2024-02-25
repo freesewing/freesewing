@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "There will be fewer of these version announcement posts going forward."
 date: "2023-12-30"
 intro: "We've just release FreeSewing v3.1 🎉"
