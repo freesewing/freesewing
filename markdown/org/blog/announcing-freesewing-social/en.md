@@ -3,7 +3,7 @@ title: "Announcing FreeSewing.social"
 caption: "Silhouette Photo of Elephant during Golden Hour by Renato Conti"
 date: 20231103
 intro: "FreeSewing now has a home on the fediverse, and you can join too"
-author: joost
+author: 1
 ---
 
 FreeSewing has carved out a spaced for itself on the Fediverse and that space is [FreeSewing.social](https://freesewing.social). It's a Mastodon instance that is open to all FreeSewing users, and the larger community.

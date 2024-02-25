@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Quentin rodeado de nuestros futuros señores robots."
 date: "2017-12-06"
 intro: "El patrón Florent Flat Cap ya está disponible en versión beta. Eso es otro regalo solucionado."

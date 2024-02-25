@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Ils ont dit que j'étais folle de faire une veste zébrée, alors je l'ai faite quand même. Et il s'est enfoncé dans le marais."
 date: "2017-09-04"
 intro: "Pour les non-initiés, le refashioners est un événement/concours annuel organisé par la charmante (et très persuasive) Portia Lawrie ."

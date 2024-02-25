@@ -3,7 +3,7 @@ title: "Email communication breakdown post-mortem"
 caption: "I love email, but it's hard to handle a lot of it"
 date: 20240102
 intro: "From the end of 29 October 2023 until 2 January 2024, some emails sent to me fell between the cracks"
-author: joost
+author: 1
 ---
 
 Between the 29th of October 2023 until the 2nd of January 2024, emails sent to joost@joost.at (my personal email) or various @freesewing.org email addresses went unnoticed. Since noticing the issue today I have gone through the backlog and set aside any messages that I need to deal with.

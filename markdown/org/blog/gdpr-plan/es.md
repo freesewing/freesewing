@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Esta imagen es probablemente lo único del post que puedes hojear en diagonal"
 date: "2018-02-14"
 intro: "El Reglamento General de Protección de Datos de la Unión Europea: Nuestro plan de batalla."

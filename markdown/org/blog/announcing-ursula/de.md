@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Foto von Karolina Grabowska von Pexels"
 date: "2021-06-27"
 intro: "Ankündigung von Ursula, einem einfachen, hochgradig anpassbaren Unterwäschemuster"

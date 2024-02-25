@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Bild von <a href='https://stock.tookapic.com/jenniferforjoy' target='_BLANK' rel='nofollow'>Jennifer</a>"
 date: "2017-06-12"
 intro: "Als wir Ende März freesewing core veröffentlicht haben, habe ich mich sofort auf die Entwicklung unseres Frontends konzentriert, damit freesewing.org makemypattern.com vollständig ersetzen kann."

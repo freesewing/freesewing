@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Estamos construyendo una base de seguidores leales para garantizar un futuro sostenible para freesewing.org, nuestro código, nuestros patrones y nuestra comunidad."
 date: "2017-12-10"
 intro: "Llamamiento a todos los mecenas: Únete a nuestro grupo de fieles seguidores."

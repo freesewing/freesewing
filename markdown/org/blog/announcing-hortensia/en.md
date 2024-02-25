@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "An example Hortensia made by the designer"
 date: "2021-02-13"
 intro: "I'm happy to announce the immeadiate availability of our latest FreeSewing pattern: the Hortensia handbag ."

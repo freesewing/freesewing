@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Tú también puedes llevar este abrigo. Aunque lo del sombrero es cosa tuya. Al menos por ahora."
 date: "2017-12-20"
 intro: "Anunciamos Carlton, alias el abrigo de Sherlock Holmes, y el Bent Body Block"

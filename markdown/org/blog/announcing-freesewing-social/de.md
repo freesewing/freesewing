@@ -3,7 +3,7 @@ title: Ankündigung von FreeSewing.social
 caption: Silhouettenfoto eines Elefanten während der Goldenen Stunde von Renato Conti
 date: 20231103
 intro: FreeSewing hat jetzt ein Zuhause im Fediversum, und du kannst auch mitmachen
-author: joost
+author: 1
 ---
 
 FreeSewing hat sich einen Platz im Fediversum geschaffen und dieser Platz ist [FreeSewing.social](https://freesewing.social). Es ist eine Mastodon-Instanz, die allen FreeSewing-Nutzern und der gesamten Community offensteht.

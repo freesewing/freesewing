@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Tu nuevo fondo de inicio de sesión para el mes de noviembre"
 date: "2017-10-31"
 intro: "Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene."

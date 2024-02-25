@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Ook jij kan deze jas dragen. De pet moet je ergens anders zoeken. Voorlopig toch."
 date: "2017-12-20"
 intro: "We presenteren Carlton, ofwel de Sherlock Holmes jas, en de Bent Basisvorm"

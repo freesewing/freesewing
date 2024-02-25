@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Designer Hellgy zeigt, was er kann, während sein Yuri in einer Sommerbrise fließt"
 date: "2021-09-05"
 intro: "Ankündigung von FreeSewing v2.18: Glückwunsch, es ist ein Juri"

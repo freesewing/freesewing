@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Your login background for July"
 date: "2018-06-30"
 intro: "Monthly roundup - June 2018: German, Penelope, and more womenswear on the horizon"

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Como introvertido no digo esto a menudo, pero en realidad me gustaría conoceros."
 date: "2018-12-10"
 intro: "¡Nos vemos en 2019! Y otras reflexiones de fin de año"

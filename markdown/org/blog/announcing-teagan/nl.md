@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Foto door Alex Andrews van Pexels"
 date: "2020-09-09"
 intro: "Een tijdje geleden vroeg iemand of we een t-shirtpatroon hadden op FreeSewing, en toen bleek dat niet zo te zijn."

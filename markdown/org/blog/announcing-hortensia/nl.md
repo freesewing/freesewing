@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Een voorbeeld Hortensia gemaakt door de ontwerper"
 date: "2021-02-13"
 intro: "Met veel plezier kondig ik de directe beschikbaarheid aan van ons nieuwste FreeSewing patroon: de Hortensia handtas ."

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Your login background for February"
 date: "2019-01-31"
 intro: "Is it really the end of January? Already?"

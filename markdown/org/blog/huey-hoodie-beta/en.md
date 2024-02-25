@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "This purple Huey hoodie is the first of its kind. Now it's your turn"
 date: "2017-10-21"
 intro: "The Huey Hoodie is now available in beta. Which begs the question, what does it mean for a pattern to be in Beta?"

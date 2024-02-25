@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Ton arrière-plan de connexion pour le mois de novembre"
 date: "30-11-2018"
 intro: "Récapitulatif mensuel - octobre 2018 : Progrès sur beta.freesewing.org"

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Open 24/7 from now onwards"
 date: "2017-08-25"
 intro: "Freesewing.org is open for business. That is, the business of giving away free sewing patterns"

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Je inlogachtergrond voor oktober"
 date: "2018-09-30"
 intro: "Maandelijkse samenvatting - september 2018: Shin, heel veel JavaScript en een lange TODO-lijst"

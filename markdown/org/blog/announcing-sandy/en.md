@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Did you know that Sandy was named after Olivia Newton-John's character in the move Grease?"
 date: "2018-08-01"
 intro: "Ladies and gentlemen --- because who says men can't wear skirts --- I am happy to announce the immeadiate availability of our latest freesewing pattern: the Sandy circle skirt ."

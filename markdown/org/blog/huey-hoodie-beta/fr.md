@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Ce sweat à capuche Huey violet est le premier du genre. Maintenant, c'est à toi de jouer"
 date: "2017-10-21"
 intro: "Le sweat à capuche Huey est maintenant disponible en version bêta. Ce qui nous amène à nous demander ce que signifie le fait qu'un modèle soit en version bêta."

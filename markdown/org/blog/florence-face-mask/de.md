@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Halten Sie diese mit Viren infizierten Tröpfchen mit unserer Florence-Gesichtsmaske in Schach"
 date: "2020-02-28"
 intro: "Wir haben gerade ein Gesichtsmaskenmuster wegen des Coronavirus veröffentlicht"

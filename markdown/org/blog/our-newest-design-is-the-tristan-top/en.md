@@ -3,7 +3,7 @@ title: "Our newest design is the Tristan top"
 caption: "This Tristan top features front lacing"
 date: 20240209
 intro: "Several months ago, I customized the Noble block for an outfit for my local Renaissance festival. Wouter – Noble’s designer – reached out to chat about my top’s construction. One thing led to another, and we agreed to collaborate to publish it as a standalone top design."
-author: Natalia
+author: 19867
 ---
 
 Several months ago, I customized the [Noble block](https://freesewing.org/designs/noble) for an outfit for my local Renaissance festival. Wouter – Noble’s designer – reached out to chat about my top’s construction. One thing led to another, and we agreed to collaborate to publish it as a standalone top design.

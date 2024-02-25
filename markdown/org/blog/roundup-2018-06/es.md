@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Tu fondo de conexión para julio"
 date: "2018-06-30"
 intro: "Resumen mensual - Junio de 2018: German, Penelope y más ropa de mujer en el horizonte"

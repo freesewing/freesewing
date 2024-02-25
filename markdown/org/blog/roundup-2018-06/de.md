@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Dein Login-Hintergrund für Juli"
 date: "2018-06-30"
 intro: "Monatliche Zusammenfassung - Juni 2018: German, Penelope und mehr Damenmode am Horizont"

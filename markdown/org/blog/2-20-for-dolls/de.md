@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Foto von Anna Doschechko [via Pexels]"
 date: "24.01.2022"
 intro: "FreeSewing 2.20: Hättest du es gerne kleiner?"

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "You too can wear this coat. Although you're on your own for the hat. At least for now."
 date: "2017-12-20"
 intro: "Announcing Carlton, aka the Sherlock Holmes coat, and the Bent Body Block"

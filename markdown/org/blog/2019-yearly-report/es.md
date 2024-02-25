@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Primer plano de un diente de león sobre fondo rosa"
 date: "2019-12-10"
 intro: "4109 razones para alegrarse de 2019"

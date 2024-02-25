@@ -2,6 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { exec } from 'node:child_process'
 import orderBy from 'lodash.orderby'
+import { loadUserInfo } from './users.mjs'
 
 /*
  * Shared header to include in written .mjs files
@@ -127,6 +128,17 @@ const formatDate = (date, slug, lang) => {
 }
 
 /*
+ * Loads all new users and adds them to the store
+ */
+const loadUsers = async (list, store) => {
+  // Weed out doubles in list
+  for (const user of [...new Set([...list])]) {
+    const id = Number(user)
+    if (id && typeof store.users[id] === 'undefined') store.users[id] = await loadUserInfo(id)
+  }
+}
+
+/*
  * Loads all docs files, titles and order
  */
 const loadDocs = async (site) => {
@@ -141,12 +153,14 @@ const loadDocs = async (site) => {
 /*
  * Loads all blog posts, titles and order
  */
-const loadBlog = async () => {
+const loadBlog = async (store) => {
   const titles = await loadFolderFrontmatter('title', 'org', 'blog')
   // Order is the same for all languages, so only grab EN files
   const order = await loadFolderFrontmatter('date', 'org', 'blog', formatDate, 'en')
   // Author is the same for all languages, so only grab EN files
   const authors = await loadFolderFrontmatter('author', 'org', 'blog', false, 'en')
+  // Load user accounts of authors
+  await loadUsers(Object.values(authors.en), store)
 
   // Merge titles and order for EN
   const merged = {}
@@ -179,12 +193,14 @@ const loadBlog = async () => {
 /*
  * Loads all showcase posts, titles, designs and order
  */
-const loadShowcase = async () => {
+const loadShowcase = async (store) => {
   const titles = await loadFolderFrontmatter('title', 'org', 'showcase')
   // Order is the same for all languages, so only grab EN files
   const order = await loadFolderFrontmatter('date', 'org', 'showcase', formatDate, 'en')
   // Author is the same for all languages, so only grab EN files
   const makers = await loadFolderFrontmatter('maker', 'org', 'showcase', false, 'en')
+  // Load user accounts of authors
+  await loadUsers(Object.values(makers.en), store)
 
   // Merge titles and order for EN
   const merged = {}
@@ -281,9 +297,9 @@ export const prebuildDocs = async (store) => {
  */
 export const prebuildPosts = async (store) => {
   store.posts = {
-    blog: await loadBlog(),
-    showcase: await loadShowcase(),
-    newsletter: { posts: await loadNewsletter() },
+    blog: await loadBlog(store),
+    showcase: await loadShowcase(store),
+    newsletter: { posts: await loadNewsletter(store) },
   }
   await writeFiles('blog', 'org', store.posts.blog.posts)
   await writeFiles('showcase', 'org', store.posts.showcase.posts)
@@ -291,4 +307,5 @@ export const prebuildPosts = async (store) => {
   await writeFile('blog-meta', 'meta', 'org', store.posts.blog.meta)
   await writeFile('showcase-meta', 'meta', 'org', store.posts.showcase.meta)
   await writeFile('design-examples', 'examples', 'org', store.posts.showcase.designShowcases)
+  await writeFile('makers', 'makers', 'org', store.users)
 }

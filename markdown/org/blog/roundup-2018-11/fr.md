@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Ton arrière-plan de connexion pour le mois de décembre"
 date: "30-11-2018"
 intro: "Tour d'horizon mensuel - novembre 2018 : De nouvelles vitrines et une (fausse) alarme de sécurité."

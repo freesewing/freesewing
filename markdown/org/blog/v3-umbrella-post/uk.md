@@ -3,7 +3,7 @@ title: "Everything about FreeSewing v3: Umbrella post"
 caption: Multicolored Umbrella by Alexander Grey
 date: 20231103
 intro: There's a flurry of news about FreeSewing v3, so here's an overview
-author: Йост
+author: 1
 ---
 
 There's a flurry of news and announcements about FreeSewing v3, so this _umbrella post_ gathers all of them into one place.

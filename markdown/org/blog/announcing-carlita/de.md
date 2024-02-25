@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Stell Sie sich und ihn vor, in zusammenpassenden Mänteln."
 date: "26.01.2018"
 intro: "Dieser hier ist für die Damen --- und ich rede nicht (nur) über dieses Bild von Frauenschwarm Benedict Cumberbatch am Anfang dieses Beitrags."

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Bild von <a href='https://pixabay.com/en/users/herbert2512-2929941/' target='_BLANK' rel='nofollow'>Herbert</a>"
 date: "2017-06-16"
 intro: "Das World Wide Web untergräbt immer mehr Ihre Privatsphäre. Facebook, Google und eine ganze Armada an Werbenetzwerken haben ihre Browsertabs im Blick. Sie verfolgen dich im Internet und behalten ein Auge auf die von dir besuchten Seiten, damit sie mehr Informationen über dich sammeln und diese an Werbekunden verkaufen können."

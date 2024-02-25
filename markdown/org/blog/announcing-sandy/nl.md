@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Wist je dat Sandy vernoemd is naar het personage dat Olivia Newton-John speelt in de film Grease?"
 date: "2018-08-01"
 intro: "Dames en heren – want wie zegt dat heren geen rokken kunnen dragen? – het doet me plezier om jullie te kunnen melden dat ons nieuwste FreeSewing-patroon onmiddellijk beschikbaar is: de Sandy-cirkelrok ."

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Este post trata principalmente de nuestro trabajo sobre la divulgación progresiva. También: ¡Tres nuevos patrones!"
 date: "2019-10-06"
 intro: "Acabamos de lanzar FreeSewing v2.1 🎉"
