@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Dein Login-Hintergrund für November"
 date: "2018-11-30"
 intro: "Monatliche Zusammenfassung - Oktober 2018: Fortschritte bei beta.freesewing.org"
