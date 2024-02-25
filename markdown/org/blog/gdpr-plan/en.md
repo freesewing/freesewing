@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "This image is probably the only thing in the post you can skim diagonally"
 date: "2018-02-14"
 intro: "The General Data Protection Regulation of the European Union: Our battle plan."
