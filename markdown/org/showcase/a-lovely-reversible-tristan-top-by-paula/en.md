@@ -5,6 +5,7 @@ date: 20240222
 intro: "We love this Tristan top which is reversible and has boning in the front."
 designs: ["tristan"]
 maker: Natalia
+author: 64919
 ---
 
 We love this very wearable Tristan top which is reversible and has boning in the front.
