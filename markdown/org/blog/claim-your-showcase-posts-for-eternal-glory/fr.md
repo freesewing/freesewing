@@ -6,41 +6,41 @@ intro: Les posts d'expositions ont toujours été vaguement attribués, Nous vou
 author: 1
 ---
 
-There are [over 300 showcase posts on FreeSewing.org](/showcase) where our users showcase their makes.
-That's a truly great thing because it's not only nice to see what people come up with, it also gives new visitors to the site a good idea of what to expect from a given design.
+Il y a [plus de 300 posts d'exposition sur FreeSewing.org](/showcase) où nos utilisateurs présentent leurs créations.
+C'est vraiment une excellente chose, car ce n'est pas seulement agréable de voir les résultats d'autres personnes, mais cela donne aussi aux nouveaux visiteurs du site une bonne idée de ce qu'ils peuvent attendre d'un design donné.
 
-Showcase posts have been around for a while and they have survived a number of technical overhauls in how things work under the hood. And that's starting to show.
+Les posts d'exposition existent depuis un certain temps et ils ont survécu à un certain nombre de révisions techniques dans la façon dont les choses fonctionnent sous le capot. Et cela commence à se voir.
 
-## Who made what?
+## Qui a fait quoi ?
 
-There was a time when showcase posts were attributed by a name or description. Like _tony made this_.
-At one point, we assigned them to the username, but because users can change their username, such a system decays into chaos over time.
+Il fut un temps où les posts d'exposition étaient attribués par un nom ou une description. Comme _tony a fait ça_.
+À un moment donné, nous les avons attribués au nom d'utilisateur, mais comme les utilisateurs peuvent changer leur nom d'utilisateur, un tel système tombe dans le chaos au fil du temps.
 
-We'd like to address this growing library of showcase posts and make sure that as many as possible are properly credited to their makers.
+Nous aimerions nous pencher sur cette bibliothèque croissante de posts d'exposition et nous assurer que le plus grand nombre possible d'entre eux soient crédités correctement à leurs auteurices.
 
-For this reason, we've implemented a few changes:
+Pour cette raison, nous avons mis en œuvre quelques changements :
 
-- Showcase posts are now assigned to the user's FreeSewing ID.
-- When a showcase post is credited like this, we'll show the user's bio under the post
-- When there is no user credited, we will show a button to either claim this post as your own, or suggest another user in case you know who is the maker.
+- Les posts d'exposition sont désormais attribués à l'ID FreeSewing de l'utilisateur.
+- Lorsqu'un post d'exposition est crédité comme ça, nous afficherons la bio de l'utilisateur sous le post
+- Si aucun utilisateur n'est crédité, nous afficherons un bouton permettant de revendiquer ce message comme étant le tiens, ou de suggérer un autre utilisateur au cas où tu saurais qui en est l'auteur.
 
-This way, given some time and collective effort, we hopefully will soon enough have properly credited all posts.
+De cette façon, avec un peu de temps et un effort collectif, nous espérons bientôt pouvoir créditer correctement tous les posts.
 
 <Tip>
-##### What is my FreeSewing ID?
+##### Quel est mon ID FreeSewing ?
 
-You can find your FreeSewing ID on [your account page](/account) or go to [FreeSewing.org/id](/id). </Tip>
+Tu peux trouver ton identifiant FreeSewing sur [la page de ton compte](/account) ou sur [FreeSewing.org/id](/id). </Tip>
 
-## Next steps
+## Prochaines étapes
 
-The first thing to do is to make sure everything is properly credited.
+La première chose à faire est de s'assurer que tout est bien crédité.
 
-Afterwards, we can use this link between the showcase post and user to -- for example -- show a list of showcase posts on a user's profile.
+Ensuite, nous pouvons utiliser ce lien entre l'article de présentation et l'utilisateur pour, par exemple, afficher une liste de posts d'exposition sur le profil d'un utilisateur.
 
-If you have your own showcase posts on FreeSewing, please go ahead and claim them. Or if you know who made them, let us know.
+Si tu as tes propres posts d'exposition sur FreeSewing, n'hésite pas à les revendiquer. Ou si tu sais qui les a fait, fais-le nous savoir.
 
-## Also applies to blog posts
+## S'applique également aux articles de blog
 
-The same principle applies to blog posts, but since all but 2 posts on the site are written by that same dude, it's not really something where we need you help.
+Le même principe s'applique aux articles de blog, mais comme tous les articles du site sauf deux sont écrits par le même gars, ce n'est pas vraiment quelque chose où nous avons besoin de ton aide.
 
-That being said, it does give you a good idea of what things will look like, as you can see below.
+Cela dit, cela te donne une bonne idée de ce à quoi les choses ressembleront, comme tu peux le voir ci-dessous.
