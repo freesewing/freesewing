@@ -14,27 +14,27 @@ Les rôles suivants existent :
 - **support**
 - **admin**
 
-## User
+## Utilisateur
 
-More that 99.99% of FreeSewing users have the **user** role.
-It is the default role, and it is exceedingly rare to have a user that has a different role.
+Plus de 99,99% des utilisateurs de FreeSewing ont le rôle **utilisateur**.
+C'est le rôle par défaut, et il est excessivement rare qu'un utilisateur ait un rôle différent.
 
-## Bughunter
+## Chasseur de bugs
 
-The **bughunter** role grants you permission to read measurments and patterns
-data from other users.
+Le rôle **chasseur de bugs** t'autorise à lire les mesures et les modèles
+des autres utilisateurs.
 
-It is a role that is reserved for people in the community who want to help
-other users troubleshoot their patterns.
+C'est un rôle qui est réservé aux personnes de la communauté qui veulent aider
+les autres utilisateurs à dépanner leurs modèles.
 
 ## Support
 
-The **support** role grants you permission to read all account data from other users.
+Le rôle **support** t'autorise à lire toutes les données de compte des autres utilisateurs.
 
-It is a role reserved for contributors who hunt down bugs reported by users.
+C'est un rôle réservé aux contributeurs qui traquent les bogues signalés par les utilisateurs.
 
 ## Admin
 
-The **admin** role grants you all permissions, including changing the roles of other users.
+Le rôle **admin** te donne toutes les autorisations, y compris celle de modifier les rôles des autres utilisateurs.
 
-Only [joost](/users/user?id=1) holds the admin role.
+Seul [joost](/users/user?id=1) détient le rôle d'administrateur.
