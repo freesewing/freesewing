@@ -15,7 +15,7 @@ title: "Cornelius cycling breeches: Sewing Instructions"
 ![Baste the seam allowances](step3.png)
 - _Baste_ the seam allowances of the notched edges of the pocket facings to the pocket bags.
 
-![The back of the facing on the pocket bag](step3.1.png)
+![The back of the facing on the pocket bag](step3-1.png)
 
 ![The pocket pressed on the wrong side of the pant](step4.png)
 
