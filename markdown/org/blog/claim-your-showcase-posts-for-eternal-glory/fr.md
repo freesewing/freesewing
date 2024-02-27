@@ -1,8 +1,8 @@
 ---
-title: Claim your showcase posts for eternal glory
-caption: Who's that cat?
+title: Réclamez vos posts d'exposition pour la gloire éternelle
+caption: Qui est ce chat ?
 date: 20240225
-intro: Showcase posts have alwasy been loosely attributed, we want to fix that
+intro: Les posts d'expositions ont toujours été vaguement attribués, Nous voulons corriger ça
 author: 1
 ---
 
