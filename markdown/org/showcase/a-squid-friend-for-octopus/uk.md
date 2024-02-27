@@ -6,6 +6,7 @@ intro: That Octoplushy is a squid (variant)!
 designs:
   - восьмипалий
 maker: Наталя
+author: 31287
 ---
 
 That Octoplushy is a squid (variant)! lasermonkey12 made this blue squid as a friend for her previous octopus version.
