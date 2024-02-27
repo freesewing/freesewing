@@ -6,6 +6,7 @@ intro: "Este Teagan es sólo el segundo proyecto de costura de esta creadora de 
 title: "Teagan bicolor"
 designs:
   - "teagan"
+author: 32339
 ---
 
 Este Teagan es sólo el segundo proyecto de costura de esta creadora de FreeSewing. Imunar comparte que hubo que rasgar bastantes costuras al trabajar con el jersey, pero creemos que tienen razón al estar satisfechos con el resultado final. Me encanta la elección de los bloques de color.
