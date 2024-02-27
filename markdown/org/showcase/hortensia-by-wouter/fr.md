@@ -6,6 +6,7 @@ intro: "Wouter n'a pas seulement cousu ce sac à main Hortensia aux illustration
 title: "Hortensia par Wouter"
 designs:
   - "hortensia"
+author: 132
 ---
 
 Wouter n'a pas seulement cousu ce sac à main Hortensia aux illustrations d'Haring, il a aussi conçu le tissu et fait le patron ! Il a partagé qu'il a fait le design du tissu avec sa fille et l'a fait imprimer via Spoonflower.
