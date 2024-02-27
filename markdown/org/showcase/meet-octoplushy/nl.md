@@ -6,6 +6,7 @@ intro: "Deze showcase toont de allereerste voltooide Octoplushy, de standaard va
 title: "Ontmoet Octoplushy"
 designs:
   - "octoplushy"
+author: 132
 ---
 
 Deze showcase toont de allereerste voltooide Octoplushy, de standaard variant.
