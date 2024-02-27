@@ -1,16 +1,16 @@
 title: Titre
 titleMsg: Ce sera le texte principal de l'image
-intro: Intro / Byline / Footer
-introMsg: Elle apparaîtra plus petite en bas
-type: Variante
-typeMsg: Choisis la variante qui correspond le mieux à tes besoins
+intro: Intro / ligne de démarcation / pied de page
+introMsg: Ceci apparaîtra plus petit en bas
+type: Variant
+typeMsg: Choisis le variant qui correspond le mieux à tes besoins
 site: Site
 siteMsg: Ce format peut éventuellement inclure le nom du site
 generate: Générer une image
 generateAgain: Génère une autre image
 preview: Aperçu
 save: Enregistrer l'image
-tall: Grandes
+tall: Grand
 tallMsg: Génère une image haute, optimisée pour les stories Instagram, TikTok et autres endroits qui préfèrent le mode portrait.
 wide: Large
 wideMsg: Génère une image large, optimisée pour être publiée sur diverses plateformes, notamment Facebook, Mastodon, Reddit, etc. Convient également en tant qu'image Open Graph.
