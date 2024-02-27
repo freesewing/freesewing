@@ -12,7 +12,7 @@ Pour fabriquer Lucy, tu auras besoin des éléments suivants :
 
 <Note>
 
-#### Le piquage, c'est un point c'est tout !
+#### L'assemblage est d'époque !
 
 Les poches de ce type n'ont pas besoin d'être fabriquées avec des pièces de tissu entières, tu peux assembler des chutes pour obtenir un morceau suffisamment grand pour y découper ton patron de poche. Il n'est pas non plus nécessaire que les deux côtés soient faits du même tissu. 
 
