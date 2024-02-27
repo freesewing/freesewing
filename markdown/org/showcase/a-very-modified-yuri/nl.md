@@ -6,6 +6,7 @@ intro: RockerKitten heeft Yuri aangepast om dit knusse en schattige kleed te mak
 designs:
   - yuri
 maker: Natalia
+author: 50818
 ---
 
 RockerKitten heeft Yuri aangepast om dit knusse en schattige kleed te maken. Ze veranderden de halslijn, verlengden de capuchon aan de voorkant en maakten het geheel vloerlengte. Ze deelden:
