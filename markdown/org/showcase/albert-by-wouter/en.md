@@ -5,6 +5,7 @@ date: "2020-10-08"
 intro: "The first version of albert, made for his daughter, by Wouter.vdub"
 title: "The first version of albert, made for his daughter, by Wouter.vdub"
 designs: ["albert"]
+author: 132
 ---
 
 ![View of the back ](https://posts.freesewing.org/uploads/albert_by_wouter_albert_back_846f1b89ac.jpg "View of the back ")
