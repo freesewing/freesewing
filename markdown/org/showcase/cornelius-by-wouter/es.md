@@ -6,6 +6,7 @@ intro: "Wouter creó el patrón de pantalones de ciclismo Cornelius basándose e
 title: "Cornelius por Wouter"
 designs:
   - "cornelius"
+author: 132
 ---
 
 Wouter creó el patrón de pantalones de ciclismo Cornelius basándose en los sistemas Keystone. Lee más [en el blog de FreeSewing](https://freesewing.org/blog/cornelius-cycling-breeches/).
