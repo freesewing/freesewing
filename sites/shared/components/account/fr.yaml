@@ -13,7 +13,7 @@ created: Créé
 updated: Mis à jour
 expires: Expire
 role: Rôle
-yourApikeys: Your API Keys
+yourApikeys: Votre clé API
 yourProfile: Ton profil
 yourPatterns: Tes modèles
 yourSets: Tes ensembles de mesures
@@ -83,7 +83,7 @@ bioTitle: Parle aux gens un peu de toi
 bioPreview: Aperçu biologique
 bioPlaceholder: Je fabrique des vêtements et des chaussures. Je conçois des patrons de couture. J'écris du code. Je dirige [FreeSewing](http://freesewing.org)
 #compare
-compareTitle: Es-tu à l'aise avec la comparaison des ensembles de mesures ?
+compareTitle: Es-tu à l'aise avec la comparaison de tes ensembles de mesures ?
 compareYes: Oui, au cas où cela pourrait m'aider
 compareYesd: |
   Nous montrerons de temps en temps comment ton ensemble de mesures se compare à d'autres ensembles de mesures.
@@ -243,8 +243,8 @@ thankYouVeryMuch: Merci beaucoup
 csetSuggestedMsg: Ton envoi a été enregistré et sera traité par l'un de nos conservateurs.
 itIsAvailableAt: Il est disponible à l'adresse suivante
 csetNameMsg: Chaque ensemble curaté a un nom. Tu peux proposer ton propre nom ou un pseudonyme.
-missing: Missing
-andMore: and more
+missing: Manquant
+andMore: et plus
 unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
 patternNew: Génère un nouveau modèle
 patternNewInfo: Choisis un modèle, ajoute ton jeu de mesures, et nous générerons pour toi un patron de couture sur mesure.
