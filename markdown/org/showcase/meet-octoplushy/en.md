@@ -5,6 +5,7 @@ date: "2022-09-03"
 intro: "This showcase features the very first completed Octoplushy, the standard variant."
 title: "Meet Octoplushy"
 designs: ["octoplushy"]
+author: 132
 ---
 
 This showcase features the very first completed Octoplushy, the standard variant.

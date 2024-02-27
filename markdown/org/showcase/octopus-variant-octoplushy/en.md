@@ -5,6 +5,7 @@ date: "2022-09-03"
 intro: "The \"octopus\" variant of Octoplushy"
 title: "The \"octopus\" variant of Octoplushy"
 designs: ["octoplushy"]
+author: 132
 ---
 
 This is the original "octopus" variant of Octoplushy as made by its designer, Wouter.
