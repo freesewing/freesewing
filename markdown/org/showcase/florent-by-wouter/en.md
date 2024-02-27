@@ -5,6 +5,7 @@ date: "2017-12-11"
 intro: "A test of Florent to see if the pattern works for others, by Wouter.vdub"
 title: "A test of Florent to see if the pattern works for others, by Wouter.vdub"
 designs: ["florent"]
+author: 132
 ---
 
 ![View of the back ](https://posts.freesewing.org/uploads/florent_by_wouter_high_back_20ec93b7c1.jpg "View of the back ")
