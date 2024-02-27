@@ -13,7 +13,7 @@ Wouter n'a pas seulement cousu ce sac à main Hortensia aux illustrations d'Hari
 
 Wouter partage également sur [son Instagram @Wouter.vdub](https://www.instagram.com/Wouter.vdub/) et [blogs à ShirtArtistry]https://shirtartistry.blog/).
 
-![Photo de l'avant](https://posts.freesewing.org/uploads/hortensia_by_wouter_hortensia2_ec8a517447.jpg "Photo de l'avant")
+![Vue de l'avant](https://posts.freesewing.org/uploads/hortensia_by_wouter_hortensia2_ec8a517447.jpg "Vue de l'avant")
 
 ![Vue du côté](https://posts.freesewing.org/uploads/hortensia_by_wouter_hortensia3_9946bc8cde.jpg)
 
