@@ -1,13 +1,13 @@
 ---
-title: User ID
+title: ID de l'utilisateur
 ---
 
-Every FreeSewing user has a user ID, sometimes referred to as `UID` or just `ID`.
-It is a number that uniquely identifies one particular user.
+Chaque utilisateur de FreeSewing a un identifiant, parfois appelé `UID` ou simplement `ID`.
+C'est un numéro qui identifie de façon unique un utilisateur particulier.
 
-You can find it on [your account page](/account) under **info**.
-Or navigate to [/id](/id) and  -- if you are logged in -- you will see your ID there.
+Tu peux le trouver sur [la page de ton compte](/account) sous **info**.
+Ou navigue vers [/id](/id) et -- si tu es connecté -- tu y verras ton identifiant.
 
 <Tip compact noP>
-Make sure to always mention your ID when [contacting support](/support).
+Veille à toujours mentionner ton identifiant lorsque tu [contacte l'assistance](/support).
 </Tip>
