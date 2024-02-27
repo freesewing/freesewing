@@ -9,7 +9,7 @@ designs:
 author: 132
 ---
 
-![Vue du dos ](https://posts.freesewing.org/uploads/florent_by_wouter_high_back_20ec93b7c1.jpg "Vue du dos ") ![Photo de l'avant](https://posts.freesewing.org/uploads/florent_by_wouter_high_front_9f28a1eb39.jpg "Photo de l'avant")
+![Vue du dos ](https://posts.freesewing.org/uploads/florent_by_wouter_high_back_20ec93b7c1.jpg "Vue du dos ") ![Vue de l'avant](https://posts.freesewing.org/uploads/florent_by_wouter_high_front_9f28a1eb39.jpg "Vue de l'avant")
 
 Wouter écrit :
 
