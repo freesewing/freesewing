@@ -6,6 +6,7 @@ intro: "Wouter creëerde het Cornelius fietsbroekpatroon op basis van de Keyston
 title: "Cornelius door Wouter"
 designs:
   - "cornelius"
+author: 132
 ---
 
 Wouter creëerde het Cornelius fietsbroekpatroon op basis van de Keystone systemen. Lees meer [op de FreeSewing blog](https://freesewing.org/blog/cornelius-cycling-breeches/).
