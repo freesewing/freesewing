@@ -6,6 +6,7 @@ intro: "Un skully de la vida real, con pelo y aguja"
 designs:
   - "skully"
 maker: joost
+author: 132
 ---
 
 Un día llegó una entrega inesperada a mi puerta. No sabía muy bien qué pensar, porque no recordaba haber pedido nada últimamente. Basta decir que no estaba en absoluto preparada para la maravilla que había dentro, porque cuando abrí la caja me encontré con esta versión real, hecha a mano con mucho cariño, de Skully, el querido logotipo y mascota de FreeSewing.
