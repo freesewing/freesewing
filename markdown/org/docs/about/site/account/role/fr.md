@@ -1,16 +1,16 @@
 ---
-title: Role
+title: Rôle
 ---
 
-Every FreeSewing user has a role that determines their privileges on the site.
+Chaque utilisateur de FreeSewing a un rôle qui détermine ses privilèges sur le site.
 
-You can see your role on [your account page](/account) under **info**.
-Or navigate to [/id](/id) and  -- if you are logged in -- you will see your role there.
+Tu peux trouver ton rôle sur [la page de ton compte](/account) sous **info**.
+Ou navigue vers [/id](/id) et -- si tu es connecté -- tu y verras ton rôle.
 
-The following roles exist:
+Les rôles suivants existent :
 
-- **user**
-- **bughunter**
+- **utilisateur**
+- **chasseur de bugs**
 - **support**
 - **admin**
 
