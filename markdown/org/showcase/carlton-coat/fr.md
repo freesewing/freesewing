@@ -8,10 +8,10 @@ designs:
 maker: Vlad
 ---
 
-Despite of the sleeves, which are not made exactly as the pattern suggested, everything else is similar. We did not make any more changes.
+Malgré les manches, qui ne sont pas faites exactement comme le suggère le patron, tout le reste est similaire. Nous n'avons pas fait d'autres changements.
 
-To specify it a little more - we simply made the sleeves more tight and also increased the angle between arm and forearm.
+Pour le spécifier un peu plus, nous avons simplement rendu les manches plus ajustés et nous avons également augmenté l'angle entre le bras et l'avant-bras.
 
-More images you can find on google disc:
+Tu trouveras d'autres images sur google drive :
 
 https\://drive.google.com/drive/folders/1ERGkaSApfh9PgL4T4CBzmYI9Kd-Z0Pgf?usp=drive_link
