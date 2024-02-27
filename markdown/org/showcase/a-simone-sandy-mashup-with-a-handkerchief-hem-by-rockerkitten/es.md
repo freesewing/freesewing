@@ -7,6 +7,7 @@ designs:
   - simone
   - arena
 maker: Natalia
+author: 50818
 ---
 
 RockerKitten combined Simone and Sandy to make this gorgeous dress. We enjoyed following their progress on [Discord](https://discord.freesewing.org/), from inspo pic to final result! RK has really dialed in their FreeSewing measurements and options, with a fantastic result.
