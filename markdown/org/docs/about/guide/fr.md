@@ -9,38 +9,37 @@ Si tu es nouveau sur FreeSewing, prends quelques minutes pour lire cette page et
 
 - [Ce qu'est FreeSewing](#what-is-freesewing)
 - [Ce qu'est FreeSewing.org](#what-is-freesewingorg)
-- [Quelle est la différence entre les modèles et les dessins ?](#patterns-vs-designs)
-- [Quels sont les ensembles de mesures ?](#measurements-sets)
-- [Vers qui se tourner pour obtenir de l'aide ?](#where-to-turn-to-for-help)
+- [Quelle est la différence entre les modèles et les dessins](#patterns-vs-designs)
+- [Que sont les ensembles de mesure](#measurements-sets)
+- [Vers qui se tourner pour obtenir de l'aide](#where-to-turn-to-for-help)
 
 Cela vous convient ? Alors approfondissons :
 
 ## Qu'est-ce que FreeSewing ?
 
 FreeSewing est [la principale bibliothèque open source](https://github.com/freesewing) pour la fabrication de vêtements à la demande.  
-Aimé par les couturiers amateurs et les entrepreneurs de la mode, FreeSewing fournit la pile technologique pour tes projets créatifs.
+Aimé par les couturiers amateurs et les entrepreneurs de la mode, FreeSewing fournit la base technologique pour tes projets créatifs.
 
-FreeSewing est le fruit du travail de [Joost De Cock](https://github.com/joostdecock), le responsable de FreeSewing. Various other people have contributed to FreeSewing over the years (the [FreeSewing contributors](/contributors)), and the project is financially supported by [the FreeSewing patrons](/patrons).
+FreeSewing est le fruit du travail de [Joost De Cock](https://github.com/joostdecock), le responsable de FreeSewing. Plusieurs autres personnes ont contribué à FreeSewing au fil des ans (les [contributeurs FreeSewing](/contributors)), et le projet est financièrement soutenu par [les patrons FreeSewing](/patrons).
 
 <Tip>
 
 Pour plus d'informations sur FreeSewing -- le projet open source -- réfère-toi à
-[FreeSewing.dev](https://freesewing.dev/) qui héberge de la documentation pour les développeurs, les concepteurs, les contributeurs et les traducteurs de
-.
+[FreeSewing.dev](https://freesewing.dev/) qui héberge de la documentation pour les développeurs, les concepteurs, les contributeurs et les traducteurs.
 
 </Tip>
 
 ## Qu'est-ce que FreeSewing.org ?
 
-Freesewing.org is the FreeSewing project's flagship website where we offer our ever-growing collection of bespoke sewing patterns to makers all over the world.
+Freesewing.org est le site phare du projet FreeSewing où nous proposons notre collection toujours croissante de patrons de couture sur mesure à des créateurices du monde entier .
 
-FreeSewing n'a rien à voir avec la mode, les tendances ou la publication du nouveau modèle à la mode de la saison. Instead, we want to empower makers by distilling the knowledge of the sewing community into parametric designs + documentation, and make that information freely available.
+FreeSewing n'a rien à voir avec la mode, les tendances ou la publication du nouveau modèle à la mode de la saison. Au lieu de cela, nous voulons encourager les créateurs en distillant la connaissance de la communauté de couture dans la conception paramétrique + documentation, et rendre cette information disponible gratuitement.
 
 FreeSewing.org est notre atout le plus visible, et pour beaucoup de gens, leur première rencontre avec le projet FreeSewing.
 
-## Modèles et conceptions
+## Modèles vs Desings
 
-If you came to this site looking for _sewing patterns_ and did not immediately find a place to download them, that's because all of FreeSewing's sewing patterns are **made to measure**.
+Si tu es venue sur ce site à la recherche de _patrons de couture_ et que tu n'as pas trouvé immédiatement un endroit où les télécharger, c'est parce que tous les patrons de couture de FreeSewing sont **faits sur mesure**.
 
 Nous ne faisons pas de mise à l'échelle ou de gradation des patrons. Au lieu de cela, FreeSewing dessine un modèle fait à tes mesures. Cela se produit en temps réel, dans votre navigateur.
 
