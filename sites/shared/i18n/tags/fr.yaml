@@ -2,12 +2,12 @@
 tags: Tags (étiquettes)
 showLineDrawings: Montre les dessins au trait
 showExamples: Montrer des exemples
-clearFilter: Filtre clair
+clearFilter: Supprime les filtres
 showFilters: Afficher les filtres
 hideFilters: Cacher les filtres
 difficulty: Difficulté
 learnMoreAboutThing: En savoir plus sur {thing}
-newThingPattern: Nouveau modèle {thing}
+newThingPattern: Nouveau patron {thing}
 #Actual tags start here
 accessories: Accessoires
 bags: Sacs
