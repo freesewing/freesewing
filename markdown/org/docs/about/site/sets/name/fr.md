@@ -12,4 +12,4 @@ Généralement, les gens donnent des noms qui décrivent l'ensemble, comme par e
 - Tony avec un classeur
 - Jenny après l'augmentation
 
-Mais tu le fais.
+Mais tu fais comme tu veux.
