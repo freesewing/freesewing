@@ -9,7 +9,7 @@ Si tu es nouveau sur FreeSewing, prends quelques minutes pour lire cette page et
 
 - [Ce qu'est FreeSewing](#what-is-freesewing)
 - [Ce qu'est FreeSewing.org](#what-is-freesewingorg)
-- [Quelle est la différence entre les modèles et les dessins](#patterns-vs-designs)
+- [Quelle est la différence entre les patrons et les designs](#patterns-vs-designs)
 - [Que sont les ensembles de mesure](#measurements-sets)
 - [Vers qui se tourner pour obtenir de l'aide](#where-to-turn-to-for-help)
 
@@ -37,23 +37,23 @@ FreeSewing n'a rien à voir avec la mode, les tendances ou la publication du nou
 
 FreeSewing.org est notre atout le plus visible, et pour beaucoup de gens, leur première rencontre avec le projet FreeSewing.
 
-## Modèles vs Desings
+## Patron(Modèles) vs Desings
 
 Si tu es venue sur ce site à la recherche de _patrons de couture_ et que tu n'as pas trouvé immédiatement un endroit où les télécharger, c'est parce que tous les patrons de couture de FreeSewing sont **faits sur mesure**.
 
 Nous ne faisons pas de mise à l'échelle ou de gradation des patrons. Au lieu de cela, FreeSewing dessine un modèle fait à tes mesures. Cela se produit en temps réel, dans votre navigateur.
 
 - **Design**: L'un des styles que nous proposons. Nous avons des dizaines de modèles, et tu peux tous les essayer
-- **Patron**: Le résultat de *l'élaboration du dessin* (le transformer en patron de couture à tes mesures). Nous avons des milliers de patrons stockés pour nos utilisateurs, et certains pourraient être les vôtres
+- **Patron** : Le résultat de *l'élaboration du dessin* (le transformer en patron de couture à tes mesures). Nous avons des milliers de patrons stockés pour nos utilisateurs, et certains pourraient être les vôtres
 
 <Tip>
 
 ##### L'enregistrement est facultatif
 
-Lorsque tu génères un motif sur mesure, tu peux le peaufiner à l'infini grâce à ses différentes options,
+Lorsque tu génères un patron sur mesure, tu peux le peaufiner à l'infini grâce à ses différentes options,
 et l'exporter dans toute une série de formats, y compris le PDF.  
-Mais il reste éphémère jusqu'à ce que tu l'enregistres sur ton compte, de sorte que
-devient l'un de **tous tes motifs**.
+Mais il reste éphémère jusqu'à ce que tu l'enregistres sur ton compte, de sorte qu'il
+devienne l'un de **tes patrons**.
 
 L'enregistrement de votre patron est optionnel, mais il vous permet de re-consulter le patron plus tard, apporter d'autres améliorations ou télécharger le PDF à nouveau.
 
@@ -76,18 +76,18 @@ et dans le respect de [tes droits](docs/about/rights/).
 
 Une fois que vous avez un compte, vous pouvez commencer à ajouter des mesures. Mais cela soulève rapidement la question suivante : que faire si vous voulez un patron pour vous, mais aussi pour votre partenaire ?
 
-C'est pourquoi nous avons des ensembles de mesures. Tu peux ajouter autant de jeux de mesures que tu le souhaites. Avoir juste un pour vous c'est bien aussi.
+C'est pourquoi nous avons des **ensembles de mesures**. Tu peux ajouter autant de jeux de mesures que tu le souhaites. En avoir juste un pour toi c'est aussi bien.
 
 <Tip>
 
 ##### Ensembles de mesures sélectionnées
 
-FreeSewing propose également des **ensembles de mesures sélectionnées**. Ce sont des mesures établies à partir de personnes réelles que nous utilisons pour tester notre plateforme et nos conceptions. Mais tu peux aussi les utiliser pour tester notre plateforme avant de sortir le mètre ruban.
+FreeSewing propose également des **ensembles de mesures sélectionnées**. Ce sont des jeux de mesures établis à partir de personnes réelles que nous utilisons pour tester notre plateforme et nos conceptions. Mais tu peux aussi les utiliser pour tester notre plateforme avant de sortir le mètre ruban.
 
 </Tip>
 
 ## Vers qui se tourner pour obtenir de l'aide ?
 
-If you get stuck, consult [the support page](/support/) for various support options.
+Si tu es bloqué, consulte [la page d'assistance](/support/) pour connaître les différentes options d'assistance.
 
 
