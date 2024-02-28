@@ -1,5 +1,5 @@
 ---
-title: Mon raisonnement derrière la promesse de revenus de FreeSewing
+title: Mon raisonnement derrière l'engagement de revenus de FreeSewing
 ---
 
 <Note>
@@ -40,7 +40,7 @@ C'est pourquoi tout l'argent récolté par FreeSewing va aux bonnes œuvres. Il 
 
 Voici la partie délicate : les gens donnent moins une fois qu'ils savent que l'argent est reversé aux bonnes œuvres. Je voudrais que ce ne soit pas le cas, mais ça l'est.
 
-Je présente donc [les options d'abonnement](/patrons/join) comme tu le ferais sur un site à but lucratif. Cela semble plus intuitif ainsi, et ça fonctionne mieux aussi.
+Je présente donc [les options d'abonnement](/patrons/join) comme on le verrait sur un site à but lucratif. Cela semble plus intuitif ainsi, et ça fonctionne juste mieux.
 
 Oui, tout est gratuit et l'argent ne va pas vraiment payer les factures des serveurs (parce que je choisis de les payer de ma poche pour les raisons décrites ci-dessus). Mais cela ne signifie pas que ces contributions ne sont pas cruciales pour le bien-être du projet, ou du moins son responsable (c'est-à-dire moi).
 
@@ -52,7 +52,7 @@ Pourtant, en quelque sorte, partout où la crise frappe, il y a une bannière fa
 
 La seule chose qui me rappelle toujours que l'humanité n'a pas complètement abandonné ces gens est de voir la bannière de Médecins Sans Frontières. Parfois de manière précaire, parmi les décombres de leurs hôpitaux bombardés, mais toujours là.
 
-Je ne peux imaginer meilleur seul symbole qui nous rappelle que tout n'est pas perdu, et qu'il y a encore de bonnes personnes là-bas.
+Je ne peux imaginer meilleur symbole qui nous rappelle que tout n'est pas perdu, et qu'il y a encore de bonnes personnes là-bas.
 
 C'est aussi l'une des rares organisations qui a la portée mondiale d'aller aider là où il y a le plus besoin. Nous les avons habitués à travailler dans des régions touchées par la pauvreté, mais lorsque la pandémie COVID-19 a déchiré nos systèmes de soins de santé en miettes, _MSF_ a pris les devants, déployant leurs équipes en Europe occidentale, aux États-Unis et partout où le besoin était le plus pressant.
 
