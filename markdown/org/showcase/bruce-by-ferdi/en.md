@@ -5,6 +5,7 @@ date: "2021-11-07"
 intro: "We love the fun fabric choices on these Bruce boxer briefs. Ferdi says:"
 title: "Bruce by Ferdi"
 designs: ["bruce"]
+author: 1972
 ---
 
 We love the fun fabric choices on these Bruce boxer briefs. Ferdi says:
