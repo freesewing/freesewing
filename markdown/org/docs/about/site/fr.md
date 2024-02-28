@@ -66,7 +66,7 @@ Maintenant que tu as un compte FreeSewing, tu peux faire bien d'autres choses su
 - [Compte](/docs/about/site/account)
 - [Jeux de mesures](/docs/about/site/sets)
 - [Patrons](/docs/about/site/patterns)
-- [Séries de mesures sélectionnées](/docs/about/site/csets)
+- [Sets de mesures curatées](/docs/about/site/csets)
 - [Signets](/docs/about/site/bookmarks)
 - [Clés API](/docs/about/site/apikeys)
 
