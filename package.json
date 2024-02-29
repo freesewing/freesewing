@@ -61,7 +61,7 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.1.0",
+    "@commitlint/cli": "^19.0.3",
     "@commitlint/config-conventional": "^18.1.0",
     "all-contributors-cli": "^6.26.1",
     "axios": "^1.5.1",
