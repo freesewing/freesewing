@@ -6,6 +6,7 @@ intro: Manteau Carlton
 designs:
   - carlton
 maker: Vlad
+author: 50461
 ---
 
 Malgré les manches, qui ne sont pas faites exactement comme le suggère le patron, tout le reste est similaire. Nous n'avons pas fait d'autres changements.
