@@ -50,6 +50,20 @@ If all goes well, we'll should see this landing page:
 
 <Tip>
 
+##### More detailed setup tutorials are available
+
+This pattern design tutorial contains only an abbreviated overview
+of the setup process.
+For more detailed instructions, please refer to one of our setup tutorials:
+
+- [Getting started on Linux](/tutorials/getting-started-linux)
+- [Getting started on Mac](/tutorials/getting-started-mac)
+- [Getting started on Windows](/tutorials/getting-started-windows)
+
+</Tip>
+
+<Tip>
+
 ##### Need help?
 
 If you run into any issues, head over to [FreeSewing.org/support](https://next.freesewing.org/support)
