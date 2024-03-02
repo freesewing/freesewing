@@ -84,7 +84,7 @@ const createIssue = async ({ account, setLoadingStatus, title, body, backend, se
   const issueData = {
     title,
     body: account ? `${body}\n\n${userCard(account.id || false)}` : body,
-    labels: [':+1: good first issue'],
+    labels: [':+1: good first issue', 'author claim'],
   }
   const result = await backend.createIssue(issueData)
   if (result.success) {
