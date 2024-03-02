@@ -5,7 +5,6 @@ date: "2023-05-28"
 intro: "We were floored when a FreeSewing user dropped these fabulous pictures of their new Simon in a GitHub issue."
 title: "A blue geometric Simon"
 designs: ["simon"]
-author: 1972
 ---
 
 We were floored when a FreeSewing user dropped these fabulous pictures of their new Simon in a GitHub issue. 
