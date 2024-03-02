@@ -6,6 +6,7 @@ intro: "Wouter створив модель велосипедних бриджі
 title: "Корнеліус від Wouter"
 designs:
   - "Корнеліус"
+author: 132
 ---
 
 Wouter створив модель велосипедних бриджів Cornelius на основі систем Keystone. Читайте більше [на блозі FreeSewing](https://freesewing.org/blog/cornelius-cycling-breeches/).

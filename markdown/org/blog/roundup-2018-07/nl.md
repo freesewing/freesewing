@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Je inlogachtergrond voor augustus"
 date: "2018-07-31"
 intro: "Maandelijkse roundup - juli 2018: Frans en wachten op Sandy"

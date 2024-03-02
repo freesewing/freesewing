@@ -71,7 +71,7 @@ or: або
 continue: Продовжити
 save: Зберегти
 noThanks: Ні, дякую.
-areYouCertain: Ти впевнений?
+areYouCertain: Ви впевнені?
 delete: Видалити
 #reload
 nailedIt: Зрозумів.
@@ -143,6 +143,8 @@ tooComplex: Якщо все це збиває з пантелику, ви мож
 languageTitle: Якій мові ви віддаєте перевагу?
 #password
 passwordTitle: Щось, що знаєш тільки ти.
+#id
+userId: User ID
 #api key
 newApikey: Згенеруйте новий ключ API
 keyNewInfo: Створіть новий ключ API для автоматичного підключення до бекенду FreeSewing.
@@ -284,7 +286,7 @@ code: Код
 aboutThing: Про { thing }
 requiredMeasurements: Необхідні заміри
 optionalMeasurements: Додаткові заміри
-none: Жодного
+none: Жодне
 designOptions: Варіанти дизайну
 parts: Деталі
 plugins: Плагіни

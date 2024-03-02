@@ -2,7 +2,7 @@
 title: Bio
 ---
 
-Ton compte **bio** est l'endroit où tu peux en dire un peu plus sur toi.
+La **bio** de ton compte est l'endroit où tu peux en dire un peu plus sur toi.
 
 Les autres utilisateurs de FreeSewing peuvent voir ta bio, c'est donc un moyen de trouver des personnes partageant les mêmes idées ou de promouvoir ton propre contenu.
 

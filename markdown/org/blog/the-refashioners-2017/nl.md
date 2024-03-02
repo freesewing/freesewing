@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Ze zeiden dat ik gek was om een zebrajasje te maken, dus maakte ik het toch. En het zonk weg in het moeras."
 date: "2017-09-04"
 intro: "Voor niet-ingewijden: de refashioners is een jaarlijks evenement/wedstrijd georganiseerd door de charmante (en zeer overtuigende) Portia Lawrie ."

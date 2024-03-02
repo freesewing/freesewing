@@ -3,7 +3,7 @@ title: "Alles over FreeSewing v3: Overkoepelende post"
 caption: Veelkleurige paraplu van Alexander Grey
 date: 20231103
 intro: Er is een heleboel nieuws over FreeSewing v3, dus hier is een overzicht
-author: 1
+author: joost
 ---
 
 Er is een stortvloed aan nieuws en aankondigingen over FreeSewing v3, dus deze _overkoepelende post_ verzamelt het allemaal op één plek.

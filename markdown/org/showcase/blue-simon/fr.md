@@ -8,7 +8,7 @@ designs:
   - "simon"
 ---
 
-![Photo de l'avant](https://posts.freesewing.org/uploads/blue_simon_front_1a4a8e9897.jpg "Photo de l'avant")
+![Vue de l'avant](https://posts.freesewing.org/uploads/blue_simon_front_1a4a8e9897.jpg "Vue de l'avant")
 
 ![Vue du dos](https://posts.freesewing.org/uploads/blue_simon_back_a038252972.jpg)
 

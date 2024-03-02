@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Vanaf nu 24/7 open"
 date: "2017-08-25"
 intro: "Freesewing.org is open voor business. Dat wil zeggen, het weggeven van gratis naaipatronen"

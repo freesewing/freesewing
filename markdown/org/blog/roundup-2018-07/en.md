@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Your login background for August"
 date: "2018-07-31"
 intro: "Monthly roundup - July 2018: French and waiting for Sandy"

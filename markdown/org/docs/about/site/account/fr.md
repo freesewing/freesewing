@@ -6,4 +6,4 @@ C'est dans ton compte FreeSewing que nous stockons tes données. Ton compte lui-
 
 <ReadMore recurse />
 
-In addition, any [bookmarks](/docs/about/site/bookmarks/), [measurements sets](/docs/about/site/sets/), [patterns](/docs/about/site/patterns/), and [API keys](/docs/about/site/apikeys/) are strictly speaking also part of your _account data_ but they are stored as individual records, rather than as fields in your account.
+En plus, tous les [marques pages](/docs/about/site/bookmarks/), [sets de mesures](/docs/about/site/sets/), [patrons](/docs/about/site/patterns/), et [clefs API](/docs/about/site/apikeys/) font également partie, à proprement parler, des données de ton compte __ mais ils sont stockés en tant qu'enregistrements individuels, plutôt que en tant que champs de ton compte.

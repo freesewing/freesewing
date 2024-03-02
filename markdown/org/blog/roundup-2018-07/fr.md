@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Ton arrière-plan de connexion pour le mois d'août"
 date: "31-07-2018"
 intro: "Tour d'horizon mensuel - juillet 2018 : Français et attente de Sandy"

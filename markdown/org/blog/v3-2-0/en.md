@@ -3,7 +3,7 @@ title: "FreeSewing v3.2.0 is out, brings 3 new designs"
 caption: "Number 32 Painted on White Brick Wall - By ALTEREDSNAPS via Pexels.com"
 date: 20240211
 intro: "Lumina, Lumira, and Tristan, plus bug fixes and improvements"
-author: 1
+author: joost
 ---
 
 FreeSewing v3.2 was released today, and includes three new designs, as well as

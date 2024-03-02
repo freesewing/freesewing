@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Ton arrière-plan de connexion pour le mois de juillet"
 date: "2018-06-30"
 intro: "Tour d'horizon mensuel - juin 2018 : German, Penelope, et plus de vêtements pour femmes à l'horizon."

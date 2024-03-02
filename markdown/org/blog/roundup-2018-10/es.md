@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Tu fondo de conexión para noviembre"
 date: "2018-11-30"
 intro: "Resumen mensual - Octubre de 2018: Avances en beta.freesewing.org"
