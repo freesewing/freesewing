@@ -26,7 +26,7 @@ Sur chaque page de FreeSewing.org se trouve le même en-tête avec des liens ver
 - [Design](/designs/) présente notre collection de design paramétriques à partir desquels tu peux créer des patrons de couture sur mesure
 - [Documentation](/documentation/) contient toute la documentation, pour le site Web, pour nos designs, tout
 - [Blog](/blog/) contient des articles de blog avec des mises à jour et des nouvelles sur FreeSewing
-- [Exposition](/showcase/) montre des exemples de la communauté FreeSewing, des choses qu'ils ont faites avec les patrons FreeSewing
+- [Galerie](/showcase/) montre des exemples de la communauté FreeSewing, des choses qu'ils ont faites avec les patrons FreeSewing
 - [Compte](/account/) est l'endroit où tu peux gérer ton compte FreeSewing
 - [Soutien](/support/) liste tes options pour savoir où trouver de l'aide
 - [La recherche](/search/) peut t'aider à trouver quelque chose si tu n'es pas certain de savoir où commencer à chercher
