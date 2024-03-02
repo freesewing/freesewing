@@ -989,17 +989,19 @@
     ]
   },
   "lily": {
-    "code": "Coder name",
-    "description": "A FreeSewing pattern that needs a description",
-    "design": "Designer name",
-    "difficulty": 1,
+    "code": "Anna Puk, Joost De Cock",
+    "description": "A FreeSewing pattern for basic leggings",
+    "design": "Anna Puk",
+    "difficulty": 2,
     "lab": true,
-    "org": false,
+    "org": true,
     "tags": [
-      "tagname"
+      "bottoms"
     ],
     "techniques": [
-      "techname"
+      "elastic",
+      "curvedSeam",
+      "hem"
     ]
   }
 }

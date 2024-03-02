@@ -1,8 +1,8 @@
 {
   "name": "@freesewing/lily",
   "version": "3.2.0",
-  "description": "A FreeSewing pattern that needs a description",
-  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "description": "A FreeSewing pattern for basic leggings",
+  "author": "Anna Puk (https://github.com/anna-puk)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
   "license": "MIT",
@@ -49,7 +49,8 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.2.0"
+    "@freesewing/core": "3.2.0",
+    "@freesewing/titan": "3.2.0"
   },
   "dependencies": {},
   "devDependencies": {

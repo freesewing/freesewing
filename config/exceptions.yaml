@@ -34,6 +34,8 @@ packageJson:
     private: true
   lab:
     private: true
+  lily:
+    author: Anna Puk (https://github.com/anna-puk)
   lucy:
     author: SeaZeeZee (https://github.com/SeaZeeZee)
   lunetius: &starf
