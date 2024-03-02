@@ -2,83 +2,83 @@
 title: "Sous-vêtements Uma : Instructions de couture"
 ---
 
-### Étape 1 : épingle/colle le devant au premier morceau de gousset.
+### Étape 1 : épingle/bâtis le devant au premier morceau de gousset
 
-Placez l'une des pièces scintillantes sur la pièce avant, _de bons côtés ensemble_, afin que les coutures de crotte soient alignées. Épingler ou badigeonner à la marge de couture.
+Place l'une des pièces du gousset sur la pièce avant, _bons côtés ensemble_, de façon à ce que les coutures de l'entrejambe soient alignées. Épingle ou bâtis au niveau de la marge de couture.
 
-![Coudre le devant à la première pièce du jeu](step01.png)
+![Coudre le devant à la première pièce de gousset](step01.png)
 
 ### Étape 2 : Ouvrir à plat
 
-Ouvrir l'appartement. Vous pouvez appuyer si vous le souhaitez, mais qui presse les sous-vêtements ?
+Ouvrir à plat. Vous pouvez repasser si vous le souhaitez, mais qui repasse les sous-vêtements ?
 
 ![Ouvrir à plat](step02.png)
 
-### Étape 3 : épingle/colle le dos au premier morceau de gousset.
+### Étape 3 : épingle/bâtis l'arrière au premier morceau de gousset
 
-Placez le verso sur le gusset, les bons côtés ensemble. Épingler ou badigeonner à la marge de couture.
+Place la pièce arrière sur le gousset, bons côtés ensemble. Épingle ou bâtis au niveau de la marge de couture.
 
-![Coudre le dos à la première pièce en rafale](step03.png)
+![Coudre le dos à la première pièce de gousset](step03.png)
 
 ### Étape 4 : Ouvrir à plat
 
-Ouvrir l'appartement.
+Ouvrir à plat.
 
 ![Ouvrir à plat](step04.png)
 
-## Étape 5 : Attachez la deuxième pièce de gusset
+## Étape 5 : Attachez la deuxième pièce de gousset
 
-Sortez les pièces avant et arrière du chemin en les roulant au centre.
+Dégage les pièces avant et arrière du chemin en les roulant vers le centre.
 
-Placez la deuxième pièce de bon gusset ensemble sur le dessus de sorte qu'elle soit alignée avec la première pièce en rafale. Les pièces avant et arrière roulées devraient être sandwichées entre vos morceaux de gusset.
+Placer la seconde pièce de gousset bon cotés ensemble sur le dessus de sorte à ce qu'elle s'aligne sur la première pièce de gousset. Les pièces avant et arrière roulées doivent être sandwichées entre vos morceaux de gousset.
 
-Coudre les coutures avant et arrière à votre couture à l'aide d'un sergeur ou d'une couture en zigzag.
+Coudre les coutures avant et arrières du gousset à votre marge de couture à l'aide d'une surjeteuse ou d'un point zigzag.
 
-![Attacher la deuxième pièce de gusset](step05.png)
+![Attacher la deuxième pièce de gousset](step05.png)
 
-## Étape 6 : Sortir du côté droit
+## Étape 6 : Retourner a l'endroit
 
-Sortez les undies du côté droit. Toutes les coutures de gusset doivent être fermées.
+Retourne les sous-vêtements à l'endroit. Toutes les coutures de gousset doivent être enfermés.
 
-![Sortir du côté droit](step06.png)
+![Retourner à l'endroit](step06.png)
 
 ### Étape 7: Coudre les coutures latérales
 
-Épingler le côté couture les bons côtés ensemble. Coudre les coutures latérales à votre couture en utilisant un sergeur ou une couture en zigzag.
+Épingler les côtés, endroit contre endroit. Coudre les coutures latérales à votre marge de couture à l'aide d'une surjeteuse ou d'un point zigzag.
 
-![![Sew the side seams](etape 7)](step07.png)
+![Couds les coutures latérales](step07.png)
 
 <Note>
 
-Bon travail ! Techniquement, vous pouvez laisser les bords bruts car les tissus tricotés ne s'effilochent pas, mais pour aider vos unis à rester debout, vous devriez probablement ajouter de l'élastique aux jambes et à la taille. Continuez à avancer.
+Bon travail ! Techniquement, vous pouvez laisser les bords bruts car les tissus tricotés ne s'effilochent pas, mais pour aider vos sous-vêtements à tenir, vous devriez probablement ajouter de l'élastique aux jambes et à la taille. Continuez à avancer.
 
 </Note>
 
 ### Étape 8 : Préparer l'élastique
 
-Chevauchez les bords de chaque pièce d'élastique par votre marge de couture et coupez ensemble. Vous devriez avoir trois pièces élastiques : une pour la ceinture et deux pour les jambes.
+Superposez les bords de chaque morceau d'élastique par votre marge de couture et cousez-les ensemble. Vous devriez avoir trois morceaux d'élastiques : un pour la ceinture et deux pour les jambes.
 
-Pour assurer que vous étirez l'élastique uniformément, divisez l'élastique en quatre quarts et marquez les points avec des épingles ou de la craie. Faites la même chose avec la taille et les ouvertures des jambes, marquant les points de quart.
+Pour vous assurer que vous étirez l'élastique uniformément, divisez l'élastique en quatre quarts et marquez les points avec des épingles ou de la craie. Faites la même chose avec la taille et les ouvertures des jambes, marquant les points de quart.
 
 ![Préparer l'élastique](step08.png)
 
-![Quart des ouvertures](step08b.png)
+![Divise en 4 les ouvertures](step08b.png)
 
 ### Étape 9 : Coudre l'élastique à l'extérieur du vêtement
 
-Epingler l'élastique à la taille et les ouvertures des jambes sur le bon côté du tissu, en vous assurant d'aligner les marquages des trimestres. Si votre élastique a un bord décoratif, Assurez-vous d'aligner le bord ordinaire (pas le bord décoratif) de l'élastique sur le bord du tissu. Le bord décoratif devrait être orienté vers le vêtement, pas loin de lui.
+Épingler l'élastique à la taille et aux ouvertures des jambes sur le bon côté du tissu, en vous assurant d'aligner les marquages des quarts. Si votre élastique a un bord décoratif, Assurez-vous d'aligner le bord ordinaire (pas le bord décoratif) de l'élastique sur le bord du tissu. Le bord décoratif devrait être orienté vers le vêtement, pas loin de lui.
 
-Coudre l'élastique au vêtement à l'aide d'un point de couture en zigzag. Vous devrez étirer légèrement l'élastique comme vous le faites coudre pour le rendre plat contre le tissu. Évitez d’étirer le tissu lui-même.
+Coudre l'élastique au vêtement à l'aide d'un point de couture en zigzag. Vous devrez étirer légèrement l'élastique pendant la couture pour qu'il soit plat contre le tissu. Évitez d’étirer le tissu lui-même.
 
 ![Coudre l'élastique à l'extérieur du vêtement](step09.png)
 
-Épargnez tout tissu excédentaire qui provoque en vrac ou qui sort de l’élastique.
+Couper tout tissus en trop qui fait des bosses ou qui sort de l’élastique.
 
-### Étape 10 : Pliez l'élastique et courez-le à nouveau
+### Étape 10 : Pliez l'élastique et cousez-le à nouveau
 
-Pliez l'élastique et le tissu à l'intérieur, enfermant le bord brut du tissu sous l'élastique. Vous devriez regarder l'extérieur de l'ondium, un bord plié avec un peu de l'élastique en train de décoller. Coudre en utilisant un point en zigzag.
+Pliez l'élastique et le tissu à l'intérieur, enfermant le bord brut du tissu sous l'élastique. Vous devriez voir à l'extérieur de vos sous-vêtements, un bord plié avec un peu de l'élastique en train de sortir. Coudre en utilisant un point en zigzag.
 
-![Replier l'élastique et la coudre à nouveau](step10.png)
+![Replier l'élastique et le coudre à nouveau](step10.png)
 
 Répétez ces étapes pour chacune des ouvertures de la taille et des jambes.
 
