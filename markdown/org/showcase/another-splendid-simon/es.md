@@ -6,6 +6,7 @@ intro: "Otra estupenda camiseta Simon de Ferdi, que compartió:"
 title: "Otra espléndida camisa Simon de Ferdi"
 designs:
   - "simon"
+author: 1972
 ---
 
 Otra estupenda camiseta Simon de Ferdi, que compartió:
