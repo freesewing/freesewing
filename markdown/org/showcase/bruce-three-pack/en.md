@@ -5,7 +5,6 @@ date: "2018-10-18"
 intro: "Felix made three of these, and he writes:"
 title: "A Bruce three-pack"
 designs: ["bruce"]
-author: 1972
 ---
 
 Felix made three of these, and he writes:
