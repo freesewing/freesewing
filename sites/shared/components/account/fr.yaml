@@ -137,7 +137,7 @@ githubTitle: Lier ton identité GitHub
 githubWhy1: Saisis ton nom d'utilisateur et ton email GitHub ici et nous les utiliserons lorsque nous interagirons avec GitHub en ton nom.
 githubWhy2: Note que ton nom d'utilisateur GitHub et ton email sont tous deux des infos publiques. Cela nous permet simplement de faire un lien entre ton compte FreeSewing et ton compte GitHub.
 githubWhy3: Par exemple, lorsque tu signales un problème sur ce site Internet, nous pouvons te mentionner afin que tu reçoives des notifications lorsqu'il y a une mise à jour. Pour cela, ton nom d'utilisateur suffit.
-githubWhy4: Lorsque tu soumets un post d'exposition ou que tu apportes des modifications à notre contenu, nous pouvons te créditer ces commits si nous avons à la fois ton nom d'utilisateur et l'adresse e-mail que tu utilises sur GitHub.
+githubWhy4: Lorsque tu soumets un post dans la galerie ou que tu apportes des modifications à notre contenu, nous pouvons te créditer ces commits si nous avons à la fois ton nom d'utilisateur et l'adresse e-mail que tu utilises sur GitHub.
 tooComplex: Si tout cela te semble confus, tu n'as pas besoin de fournir ces informations. C'est une fonction avancée.
 #languge
 languageTitle: Quelle langue préfères-tu ?
@@ -252,8 +252,8 @@ designNew: Créer un nouveau dessin
 designNewInfo: Les motifs FreeSewing sont de petits paquets de code JavaScript qui génèrent des motifs. Il n'est pas difficile de créer tes propres motifs, et nous avons un tutoriel détaillé pour te permettre de commencer.
 pluginNew: Créer un nouveau plugin
 pluginNewInfo: Les fonctionnalités de FreeSewing peuvent être étendues grâce à des plugins. Créer un plugin est facile, et nous avons un guide pour te guider du début à la fin.
-showcaseNew: Crée un nouveau post d'exposition
-showcaseNewInfo: Si tu souhaites partager quelque chose que tu as fabriqué (ou que quelqu'un d'autre a fabriqué) en t'inspirant de nos modèles, tu peux commencer à rédiger un projet de post d'exposition ici.
+showcaseNew: Crée un nouveau post pour la galerie
+showcaseNewInfo: Si tu souhaites partager quelque chose que tu as fabriqué (ou que quelqu'un d'autre a fabriqué) en t'inspirant de nos modèles, tu peux commencer à rédiger un projet de post pour la galerie ici.
 blogNew: Crée un nouvel article de blog
 blogNewInfo: Si tu souhaites écrire sur le blog FreeSewing, tu peux commencer un projet d'article de blog ici.
 imgNew: Génère une image sur les médias sociaux
@@ -291,10 +291,10 @@ designOptions: Options de design
 parts: Pièces
 plugins: Plugins
 specifications: Caractéristiques
-visitShowcase: Visiter l'exposition
+visitShowcase: Visiter la galerie
 examples: Exemples
 noExamples: Nous ne disposons actuellement d'aucun exemple pour ce modèle
-noExamplesMsg: Nous comptons sur la communauté FreeSewing pour soumettre des exemples dans nos posts d'exposition.
+noExamplesMsg: Nous comptons sur la communauté FreeSewing pour soumettre des exemples dans la galerie.
 ownPublicPattern: Voici la vue publique d'un de tes propres modèles. Pour plus d'options, accède à la vue privée.
 ownPrivatePattern: Il s'agit de la vue privée de ton modèle. La vue publique fonctionnera pour toi même si le modèle est privé. Elle ne fonctionnera pour les autres que lorsque le modèle sera public.
 privateView: Vue privée
