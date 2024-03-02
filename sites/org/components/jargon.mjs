@@ -1,4 +1,4 @@
-import { Term as SharedTerm } from 'shared/components/jargon.mjs'
+import { Term as SharedTerm, termList } from 'shared/components/jargon.mjs'
 
 /*
  * This object holds jargon terminology for FreeSewing.dev
@@ -13,7 +13,7 @@ import { Term as SharedTerm } from 'shared/components/jargon.mjs'
  *   - Since this uses dynamic MDX loaded from GitHub,it won't work until pushed
  */
 // prettier-ignore
-const jargon = {
+export const jargon = {
   en: {
     // Sewing
     'basic sewing supplies':     'docs/sewing/basic-sewing-supplies',
@@ -234,3 +234,4 @@ const jargon = {
  * DO NOT CHANGE ANYTHING BELOW THIS LINE
  */
 export const Term = ({ children }) => <SharedTerm {...{ jargon, children }} site="org" />
+export const TermList = termList(jargon, 'org')
