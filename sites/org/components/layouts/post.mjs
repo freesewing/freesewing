@@ -135,7 +135,7 @@ const issueData = ({ type, dir, account, body = false }) => ({
     : `The ${type} post ${dir} was claimed as their own by user ${account.id}`,
   body: `This issue is about who should get credit for [this ${type} post](https://freesewing.org/${type}/${dir}).
 
-According to [user ${account.username}](https://freesewing.org.users/user?id=${account.id}) with ID ${account.id},
+According to [user ${account.username}](https://freesewing.org/users/user?id=${account.id}) with ID ${account.id},
 ${body ? 'who wrote:\n\n---\n\n' + body + '\n\n---\n\n' : 'who claimed it as their own'}.
 
 To reflect this on the site, update [this markdown file](https://github.com/freesewing/freesewing/blob/develop/markdown/org/${type}/${dir}/en.md) so that the frontmatter includes this:
