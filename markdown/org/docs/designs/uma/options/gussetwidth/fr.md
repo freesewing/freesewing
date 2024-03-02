@@ -1,6 +1,6 @@
 ---
-title: "Gusset width"
+title: "Largeur du gousset"
 ---
 
-Cette option contrôle la largeur du gusset.
+Cette option contrôle la largeur du gousset.
 
