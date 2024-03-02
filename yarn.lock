@@ -7935,10 +7935,10 @@ jiti@^1.19.1:
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.21.0.tgz#7c97f8fe045724e136a397f7340475244156105d"
   integrity sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==
 
-jotai-location@0.5.3:
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/jotai-location/-/jotai-location-0.5.3.tgz#4eb42467f1cb6354b8016bd63b8376eceb60cb23"
-  integrity sha512-re7rBf0AYX7f8BNkYIkffuHWg7McZ7wJDf8UugEgV1HjsPWmSAkzN/9ZF/Mk3pClBeAZu/JzWUzA+E+0nA7MLQ==
+jotai-location@0.5.4:
+  version "0.5.4"
+  resolved "https://registry.yarnpkg.com/jotai-location/-/jotai-location-0.5.4.tgz#a51dc11706f2cacf7e3ffb53e89644bc95dd8e4d"
+  integrity sha512-IqpyYLAF6HgoDoJVlX66IGvgrugCA1LJybT01NqenpdwypPtUB6u0cnJZMbN6axU+Yl2FTI6l+4x9IWh4WGFRA==
 
 jotai@2.7.0:
   version "2.7.0"
