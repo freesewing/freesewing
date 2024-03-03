@@ -24,4 +24,4 @@ const jargon = {
  * DO NOT CHANGE ANYTHING BELOW THIS LINE
  */
 export const Term = ({ children }) => <SharedTerm {...{ jargon, children }} site="dev" />
-export const TermList = termList(jargon)
+export const TermList = termList(jargon, 'dev')

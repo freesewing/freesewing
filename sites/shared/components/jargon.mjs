@@ -51,43 +51,43 @@ export const Term = ({ children, site, jargon = {} }) => {
   )
 }
 
-const TermList = ({ jargon, site }) => {
-  const router = useRouter()
-  const lang = router.locale
-  const { t } = useTranslation(ns)
-
-  return (
-    <table className="table border-collapse table-auto table-striped min-w-full">
-      <thead>
-        <tr>
-          <th className="text-right font-base-content">{t('docs:term')}</th>
-          <th>MDX</th>
-          <th>{t('docs:docs')}</th>
-        </tr>
-      </thead>
-      <tbody>
-        {Object.keys(jargon[lang])
-          .sort()
-          .map((key, i) => (
-            <tr
-              key={key}
-              className={`${i % 2 === 0 ? 'bgsecondary bg-opacity-10' : 'bg-transparent'} border border-base-300 border-r-0 border-l-0 border-b-0`}
-            >
-              <td className="py-1 text-right font-bold">{key}</td>
-              <td className="py-1 ">
-                <Term site={site} jargon={jargon}>
-                  {key}
-                </Term>
-              </td>
-              <td className="py-1 ">
-                <PageLink href={`/${jargon[lang][key]}`} txt={`/${jargon[lang][key]}`} />
-              </td>
-            </tr>
-          ))}
-      </tbody>
-    </table>
-  )
-}
-
 // This takes a jargon object as input and returns a React component
-export const termList = (jargon, site) => <TermList {...{ jargon, site }} />
+export const termList =
+  (jargon, site) =>
+  ({ jaron, site }) => {
+    const router = useRouter()
+    const lang = router.locale
+    const { t } = useTranslation(ns)
+
+    return (
+      <table className="table border-collapse table-auto table-striped min-w-full">
+        <thead>
+          <tr>
+            <th className="text-right font-base-content">{t('docs:term')}</th>
+            <th>MDX</th>
+            <th>{t('docs:docs')}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {Object.keys(jargon[lang])
+            .sort()
+            .map((key, i) => (
+              <tr
+                key={key}
+                className={`${i % 2 === 0 ? 'bgsecondary bg-opacity-10' : 'bg-transparent'} border border-base-300 border-r-0 border-l-0 border-b-0`}
+              >
+                <td className="py-1 text-right font-bold">{key}</td>
+                <td className="py-1 ">
+                  <Term site={site} jargon={jargon}>
+                    {key}
+                  </Term>
+                </td>
+                <td className="py-1 ">
+                  <PageLink href={`/${jargon[lang][key]}`} txt={`/${jargon[lang][key]}`} />
+                </td>
+              </tr>
+            ))}
+        </tbody>
+      </table>
+    )
+  }
