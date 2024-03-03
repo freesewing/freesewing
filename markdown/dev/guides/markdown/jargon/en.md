@@ -14,8 +14,8 @@ The list of terminology that is defined differs from site to site:
 
 | Site | Terminology List |
 | ---- | ---------------- |
-| FreeSewing.dev | [/reference/terminology](/reference/terminology) |
-| FreeSewing.org | [/docs/about/terminology](https://freesewing.org/docs/about/terminology) |
+| FreeSewing.dev | [/reference/terminology](/reference/terms) |
+| FreeSewing.org | [/docs/about/terminology](https://freesewing.org/docs/about/terms) |
 
 All of the terms listed in the pages above can be used in the markdown/mdx
 content of those websites.
