@@ -1,26 +1,24 @@
 ---
-title: Terminology
+title: Terminologie
 ---
 
-This page includes a glossary of terms that are used on FreeSewing.org.
+Cette page inclus un glossaire des termes qui sont utilisés sur FreeSewing.org.
 
 <Note>
-##### The purpose of this glossary
+##### Le but de ce glossaire
 
-To avoid having to explain what (for example) **edgestitching** means each time
-we use it, we maintain a central list of terminology (jargon) with a link to
-its documentation.
+Pour éviter d'avoir à expliquer ce que (par exemple) **edgestitching** signifie à chaque fois que nous l'utilisons, nous maintenons une liste centrale de termes (jargon) avec un lien vers sa documentation.
 
-##### How to use this glossary
+##### Comment utiliser ce glossaire
 
-We also make it easy for documentation authors to include definitions for
-glossary terms they use by merely emphasising the term, like this:
-_edgestitching_.
+Nous permettons également aux auteurs de documentation d'inclure facilement des définitions pour les termes du glossaire
+qu'ils utilisent en soulignant simplement le terme, comme ceci :
+_surpiqure nervure_.
 
-For more details, refer to [our Markdown guide](https://freesewing.dev/guides/markdown/jargon) on [FreeSewing.dev](https://freesewing.dev/).
+Pour plus de détails, reporte-toi à [notre guide Markdown](https://freesewing.dev/guides/markdown/jargon) sur [FreeSewing.dev](https://freesewing.dev/).
 
 </Note>
 
-## Glossary
+## Glossaire
 
 <TermList />
