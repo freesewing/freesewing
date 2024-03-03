@@ -1,44 +1,24 @@
 ---
-title: Using jargon
+title: Using jargon and terms
 ---
 
-Jargon are terms that could throw off new users.
+Jargon or terms is anything that could throw off new users.
 Rather than create a glossary on every page, we use MDX to manage
-jargon terms for us. This page shows you how to use it.
+jargon/terms for us. This page shows you how to use it.
 
 <Tip compact>Think of jargon as glossary terms</Tip>
 
-## Adding jargon terms
+## Defined terms
 
-To add a new jargon term, you first need to document it, then you can add it to
-the jargon component for the website you'd like to add it to:
+The list of terminology that is defined differs from site to site:
 
-| Website | Jargon file | GitHub link |
-| ------- | ----------- | ----------- |
-| freesewing.dev | `sites/dev/components/jargon.mjs` | [jargon.mjs](https://github.com/freesewing/freesewing/blob/develop/sites/dev/comonents/jargon.mjs) |
-| freesewing.org | `sites/org/components/jargon.mjs` | [jargon.mjs](https://github.com/freesewing/freesewing/blob/develop/sites/org/components/jargon.mjs) |
+| Site | Terminology List |
+| ---- | ---------------- |
+| FreeSewing.dev | [/reference/terminology](/reference/terminology) |
+| FreeSewing.org | [/docs/about/terminology](https://freesewing.org/docs/about/terminology) |
 
-The file holds a `jargon` object that consists of key/value pairs per language.
-
-The **key** is the jargon term. It should always be lowercase because we lowercase the term before matching it.
-So in your text, you can use `ESM`, `esm`, or even `eSm`, but the key in the jargon file should be `esm`.
-
-The **value** is the URL path to the documentation page for the term.
-You do not need to include the language prefix in the doc path.
-Note that this should point to a page that holds MDX content.
-
-An example will make this more clear:
-
-```js
-const jargon = {
-  en: {
-    basting: 'docs/sewing/basting',
-  },
-  nl: {
-    driegen: 'docs/sewing/basting',
-  },
-}
-```
+All of the terms listed in the pages above can be used in the markdown/mdx
+content of those websites.
 
 ## Using jargon terms in MDX content
 
@@ -64,3 +44,4 @@ export const MyComponent = () => (
   <p>Look, it works here too: <Term>esm</Term></p>
 )
 ```
+
