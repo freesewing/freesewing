@@ -6,6 +6,7 @@ intro: "Nos quedamos boquiabiertos cuando un usuario de FreeSewing dejó caer es
 title: "Un Simon geométrico azul"
 designs:
   - "simon"
+author: 1972
 ---
 
 Nos quedamos boquiabiertos cuando un usuario de FreeSewing dejó caer estas fabulosas fotos de su nuevo Simon en un tema de GitHub.

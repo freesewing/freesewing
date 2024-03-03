@@ -88,7 +88,7 @@ Place the center insides of the main and lining together, _good sides together_.
 
 Sew down center front.
 
-Ouvrir l'appartement.
+Ouvrir à plat.
 
 ### Step 9: Sew your first boning channel
 

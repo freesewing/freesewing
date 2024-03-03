@@ -6,6 +6,7 @@ intro: "Ein weiteres tolles Simon-Shirt von Ferdi, der es mit uns geteilt hat:"
 title: "Ein weiteres prächtiges Simon-Hemd von Ferdi"
 designs:
   - "simon"
+author: 1972
 ---
 
 Ein weiteres tolles Simon-Shirt von Ferdi, der es mit uns geteilt hat:

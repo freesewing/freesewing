@@ -6,6 +6,7 @@ intro: "De zesde Simon voor deze naaister, we zijn dol op deze Simon met geometr
 title: "Een bruine geometrische Simon"
 designs:
   - "simon"
+author: 1972
 ---
 
 De zesde Simon voor deze naaister, we zijn dol op deze Simon met geometrisch patroon in een bruine tint die doorkruist wordt door dunne witte lijnen. De maker dropte dit in een GitHub issue om te delen met FreeSewing, en we konden niet meer tevreden zijn.
