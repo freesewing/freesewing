@@ -1,4 +1,4 @@
-import execa from 'execa'
+import { execa } from 'execa'
 import { exec } from 'node:child_process'
 import { gitToAuthor, authors as authorInfo } from '../../../config/authors.mjs'
 import path from 'path'
