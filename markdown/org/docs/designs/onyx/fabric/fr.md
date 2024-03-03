@@ -10,4 +10,4 @@ Les manches raglan se prêtent bien à l'utilisation de couleurs/imprimés diff�
 
 Les parties doublées du vêtement se prêtent bien à la broderie, car l'entoilage (fortement recommandé) et les coutures seront tenus à l'écart du corps du porteur par la doublure. La poitrine, à côté de la fermeture éclair, est un endroit particulièrement bien placé, à la fois parce qu'elle est proéminente et parce que la poitrine ne s'étire pas beaucoup verticalement, puisqu'elle est près de la fermeture éclair.
 
-Avec le tissu de natation/l'élasthanne, il est recommandé de faire le tour de cou dans le même matériau que celui utilisé pour le corps. Pour les tissus moins extensibles, comme la maille jersey de coton, les côtes sont recommandées.
+Avec le tissu de natation/l'élasthanne, il est recommandé de faire le tour de cou dans le même matériau que celui utilisé pour le corps. Pour les tissus moins extensibles, comme le jersey de coton, les côtes sont recommandées.
