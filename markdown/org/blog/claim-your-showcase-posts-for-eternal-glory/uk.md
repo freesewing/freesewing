@@ -27,9 +27,12 @@ For this reason, we've implemented a few changes:
 This way, given some time and collective effort, we hopefully will soon enough have properly credited all posts.
 
 <Tip>
+
 ##### What is my FreeSewing ID?
 
-You can find your FreeSewing ID on [your account page](/account) or go to [FreeSewing.org/id](/id). </Tip>
+You can find your FreeSewing ID on [your account page](/account) or go to [FreeSewing.org/id](/id).
+
+</Tip>
 
 ## Next steps
 
