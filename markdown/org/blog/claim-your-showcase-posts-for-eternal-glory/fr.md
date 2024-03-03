@@ -27,9 +27,12 @@ Pour cette raison, nous avons mis en œuvre quelques changements :
 De cette façon, avec un peu de temps et un effort collectif, nous espérons bientôt pouvoir créditer correctement tous les posts.
 
 <Tip>
+
 ##### Quel est mon ID FreeSewing ?
 
-Tu peux trouver ton identifiant FreeSewing sur [la page de ton compte](/account) ou sur [FreeSewing.org/id](/id). </Tip>
+Tu peux trouver ton identifiant FreeSewing sur [la page de ton compte](/account) ou sur [FreeSewing.org/id](/id). 
+
+</Tip>
 
 ## Prochaines étapes
 
