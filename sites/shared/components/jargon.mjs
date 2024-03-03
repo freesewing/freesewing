@@ -51,8 +51,7 @@ export const Term = ({ children, site, jargon = {} }) => {
   )
 }
 
-// THis takes a jargon object as input and returns a React component
-export const termList = (jargon, site) => () => {
+const TermList = () => {
   const router = useRouter()
   const lang = router.locale
   const { t } = useTranslation(ns)
@@ -88,5 +87,7 @@ export const termList = (jargon, site) => () => {
       </tbody>
     </table>
   )
-  return <pre>{JSON.stringify(jargon, null, 2)}</pre>
 }
+
+// This takes a jargon object as input and returns a React component
+export const termList = (jargon, site) => <TermList {...{ jargon, site }} />
