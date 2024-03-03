@@ -1,5 +1,5 @@
 ---
-maker: 1
+author: 1
 caption: "Una camiseta Simon de Joost"
 date: "2017-04-03"
 intro: "Una camisa Simon con botones rojos en contraste."
