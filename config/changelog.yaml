@@ -20,6 +20,8 @@ Unreleased:
   Fixed:
     hugo:
       - Add missing dimension id attributes
+    uma:
+      - Fix back exposure when expand is off. Fixes #6239
 
 3.2.0:
   date: 2024-02-11
