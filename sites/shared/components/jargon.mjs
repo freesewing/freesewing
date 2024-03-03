@@ -51,7 +51,7 @@ export const Term = ({ children, site, jargon = {} }) => {
   )
 }
 
-const TermList = () => {
+const TermList = ({ jargon, site }) => {
   const router = useRouter()
   const lang = router.locale
   const { t } = useTranslation(ns)
