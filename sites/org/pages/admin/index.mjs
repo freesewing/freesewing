@@ -39,7 +39,7 @@ const AdminPage = ({ page }) => {
 
   return (
     <PageWrapper {...page} title="Administration">
-      <AuthWrapper requiredRole="admin">
+      <AuthWrapper requiredRole="support">
         <p>
           Other admin links:
           <PageLink href="/admin/csets" txt="Curated measurement sets" />
