@@ -1,5 +1,5 @@
 ---
-maker: 1
+author: 1
 date: "2022-04-27"
 intro: "La communauté FreeSewing est tombée sous le charme de ces pantalons Charlie de joost. Elles sont tellement géniales qu'elles lui ont valu - sans blague - des crêpes gratuites."
 title: "Chinos Charlie \"camouflé\" à fleurs"
