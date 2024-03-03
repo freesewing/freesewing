@@ -1,5 +1,5 @@
 ---
-maker: 1
+author: 1
 caption: "Dependiendo de tu trabajo, esto podría ser NSFW"
 date: "2014-09-15"
 intro: "FIXME_no_intro"
