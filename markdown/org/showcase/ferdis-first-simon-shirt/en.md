@@ -5,6 +5,7 @@ date: "2021-11-07"
 intro: "A handsome example of the Simon shirt by Ferdi, who shared:"
 title: "Ferdi's first Simon shirt"
 designs: ["simon"]
+author: 1972
 ---
 
 A handsome example of the Simon shirt by Ferdi, who shared:
