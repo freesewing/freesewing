@@ -6,6 +6,7 @@ intro: Nearly perfect
 designs:
   - simon
 maker: ferdi
+author: 1972
 ---
 
 ![The image alt goes here](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-standard-simon-shirt-1/public "The image caption/title goes here")
