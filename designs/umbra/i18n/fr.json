@@ -1,0 +1,56 @@
+{
+  "t": "Unités d'Umbra",
+  "d": "Umbra est un motif basique et hautement personnalisable.",
+  "p": {
+    "back": "Retour",
+    "elastic": "Elastic",
+    "front": "Avant",
+    "gusset": "Soufflet"
+  },
+  "s": {
+    "cutTwoPiecesOfElasticToFinishTheLegOpenings": "Couper deux élastiques pour finir les ouvertures des jambes",
+    "cutOnePieceOfElasticToFinishTheWaistBand": "Couper une pièce d'élastique pour finir la bande de taille"
+  },
+  "o": {
+    "fabricStretch": {
+      "t": "Étendue en tissu",
+      "d": "Ajuster ceci pour des tissus plus ou moins extensifs"
+    },
+    "gussetWidth": {
+      "t": "Gusset width",
+      "d": "Contrôle la largeur du gusset"
+    },
+    "gussetLength": {
+      "t": "Longueur du Gusset",
+      "d": "Contrôle la longueur du gusset"
+    },
+    "elasticStretch": {
+      "t": "Etendue élastique",
+      "d": "Ajuster ceci pour un élastique plus ou moins extensif"
+    },
+    "rise": {
+      "t": "Élévation de ceinture",
+      "d": "Contrôle la hauteur de la taille"
+    },
+    "legOpening": {
+      "t": "Ouverture des jambes",
+      "d": "Contrôle la hauteur de la jambe découpée"
+    },
+    "frontDip": {
+      "t": "tremper la taille de la taille avant",
+      "d": "Contrôle la quantité de courbes de la taille avant (révélant plus ou moins la peau)"
+    },
+    "backDip": {
+      "t": "trempette à taille arrière",
+      "d": "Contrôle la quantité de courbes de la taille arrière (révélant plus ou moins la peau)"
+    },
+    "taperToGusset": {
+      "t": "Exposition frontale",
+      "d": "Contrôle la quantité de peau exposée à l'avant"
+    },
+    "backExposure": {
+      "t": "Exposition au dos",
+      "d": "Contrôle la quantité de peau exposée au dos"
+    }
+  }
+}
