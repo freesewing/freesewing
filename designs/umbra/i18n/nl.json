@@ -1,0 +1,56 @@
+{
+  "t": "Umbra undies",
+  "d": "Umbra is een fundamenteel, zeer aanpasbaar ondergoed patroon.",
+  "p": {
+    "back": "Achterzijde",
+    "elastic": "Elastic",
+    "front": "Voorzijde",
+    "gusset": "Gusset"
+  },
+  "s": {
+    "cutTwoPiecesOfElasticToFinishTheLegOpenings": "Cut two pieces of elastic to finish the leg openings",
+    "cutOnePieceOfElasticToFinishTheWaistBand": "Cut one piece of elastic to finish the waist band"
+  },
+  "o": {
+    "fabricStretch": {
+      "t": "Stof stretch",
+      "d": "Pas dit aan voor meer of minder elastische stoffen"
+    },
+    "gussetWidth": {
+      "t": "Gusset width",
+      "d": "Bepaalt de breedte van de gusset"
+    },
+    "gussetLength": {
+      "t": "Gusset lengte",
+      "d": "Bepaalt de lengte van de gusset"
+    },
+    "elasticStretch": {
+      "t": "Elastische stretch",
+      "d": "Pas dit aan voor meer of minder elastische elastiek"
+    },
+    "rise": {
+      "t": "Hoogte",
+      "d": "Bepaalt de hoogte van de taille"
+    },
+    "legOpening": {
+      "t": "Been opening",
+      "d": "Bepaalt hoe hoog de broekspijp wordt uitgeknipt"
+    },
+    "frontDip": {
+      "t": "Voorste taille dip",
+      "d": "Bepaalt hoeveel de taillecurven vooraan tonen (min of meer skin)"
+    },
+    "backDip": {
+      "t": "Achterste dip taille",
+      "d": "Bepaalt hoeveel de omgekeerde golfcurves (min of meer skin onthullen)"
+    },
+    "taperToGusset": {
+      "t": "Blootstelling voorzijde",
+      "d": "Bepaalt de hoeveelheid blootgestelde huid aan de voorkant"
+    },
+    "backExposure": {
+      "t": "Blootstelling rug",
+      "d": "Bepaalt de hoeveelheid gelekte huid aan de achterkant"
+    }
+  }
+}

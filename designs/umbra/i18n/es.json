@@ -1,0 +1,56 @@
+{
+  "t": "Umbra, braguitas",
+  "d": "Umbra es un patrón básico de braguitas altamente personalizable.",
+  "p": {
+    "back": "Atrás",
+    "elastic": "Elastic",
+    "front": "Frente",
+    "gusset": "Gusset"
+  },
+  "s": {
+    "cutTwoPiecesOfElasticToFinishTheLegOpenings": "Corta dos trozos de elástico para acabar la abertura de las perneras",
+    "cutOnePieceOfElasticToFinishTheWaistBand": "Corta un trozo de elástico para acabar la cintura"
+  },
+  "o": {
+    "fabricStretch": {
+      "t": "estiramiento de tela",
+      "d": "Ajustar esto para más o menos tela estirada"
+    },
+    "gussetWidth": {
+      "t": "Gusset width",
+      "d": "Controla el ancho del set de ráfaga"
+    },
+    "gussetLength": {
+      "t": "Longitud del Gusset",
+      "d": "Controla la longitud del set de ráfaga"
+    },
+    "elasticStretch": {
+      "t": "Estiramiento elástico",
+      "d": "Ajustar esto para elástico más o menos estirado"
+    },
+    "rise": {
+      "t": "Elevación de la cintura",
+      "d": "Controla la altura de la cintura"
+    },
+    "legOpening": {
+      "t": "Apertura de la pierna",
+      "d": "Controla hasta qué punto se corta la pierna"
+    },
+    "frontDip": {
+      "t": "Buceo de cintura frontal",
+      "d": "Controla cuánto son las curvas de la cintura frontal (revelando más o menos la piel)"
+    },
+    "backDip": {
+      "t": "Buceo de cintura trasera",
+      "d": "Controla cuánto son las curvas de la cintura trasera (revelando más o menos la piel)"
+    },
+    "taperToGusset": {
+      "t": "Exposición frontal",
+      "d": "Controla la cantidad de piel expuesta en la parte frontal"
+    },
+    "backExposure": {
+      "t": "Exposición trasera",
+      "d": "Controla la cantidad de piel expuesta en la espalda"
+    }
+  }
+}

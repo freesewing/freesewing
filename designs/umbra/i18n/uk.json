@@ -1,0 +1,56 @@
+{
+  "t": "Umbra undies",
+  "d": "Umbra is a basic, highly-customizable underwear pattern.",
+  "p": {
+    "back": "Back",
+    "elastic": "Elastic",
+    "front": "Front",
+    "gusset": "Gusset"
+  },
+  "s": {
+    "cutTwoPiecesOfElasticToFinishTheLegOpenings": "Cut two pieces of elastic to finish the leg openings",
+    "cutOnePieceOfElasticToFinishTheWaistBand": "Cut one piece of elastic to finish the waist band"
+  },
+  "o": {
+    "fabricStretch": {
+      "t": "Fabric stretch",
+      "d": "Adjust this for more or less stretchy fabrics"
+    },
+    "gussetWidth": {
+      "t": "Gusset width",
+      "d": "Controls the width of the gusset"
+    },
+    "gussetLength": {
+      "t": "Gusset length",
+      "d": "Controls the length of the gusset"
+    },
+    "elasticStretch": {
+      "t": "Elastic stretch",
+      "d": "Adjust this for more or less stretchy elastic"
+    },
+    "rise": {
+      "t": "Rise",
+      "d": "Controls the height of the waist"
+    },
+    "legOpening": {
+      "t": "Leg opening",
+      "d": "Controls how high the leg is cut out"
+    },
+    "frontDip": {
+      "t": "Front waist dip",
+      "d": "Controls how much the front waist curves (revealing more or less skin)"
+    },
+    "backDip": {
+      "t": "Back waist dip",
+      "d": "Controls how much the back waist curves (revealing more or less skin)"
+    },
+    "taperToGusset": {
+      "t": "Front exposure",
+      "d": "Controls the amount of exposed skin on the front"
+    },
+    "backExposure": {
+      "t": "Back exposure",
+      "d": "Controls the amount of exposed skin on the back"
+    }
+  }
+}

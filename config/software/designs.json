@@ -909,6 +909,22 @@
       "curvedSeam"
     ]
   },
+  "umbra": {
+    "code": "Joost De Cock, Jonathan Haas",
+    "description": "A FreeSewing pattern for a basic, highly-customizable underwear pattern",
+    "design": "Joost De Cock, Jonathan Haas",
+    "difficulty": 2,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "bottoms",
+      "underwear"
+    ],
+    "techniques": [
+      "elastic",
+      "curvedSeam"
+    ]
+  },
   "wahid": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern for a classic fitted waistcoat",
