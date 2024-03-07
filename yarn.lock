@@ -1483,10 +1483,10 @@
   resolved "https://registry.yarnpkg.com/@next/env/-/env-14.1.2.tgz#7ddd06938b11b2a0a83bcfd8b7e47a1f0ce92049"
   integrity sha512-U0iEG+JF86j6qyu330sfPgsMmDVH8vWVmzZadl+an5EU3o5HqdNytOpM+HsFpl58PmhGBTKx3UmM9c+eoLK0mA==
 
-"@next/eslint-plugin-next@14.1.2":
-  version "14.1.2"
-  resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-14.1.2.tgz#810baf9a12a254c0478186f204e5ef6d5e79dc0b"
-  integrity sha512-k9h9NfR1joJI48uwdQd/DuOV1mBgcjlmWaX45eAXCFGT96oc+/6SMjO3s7naVtTXqSKjFAgk2GDlW6Hv41ROXQ==
+"@next/eslint-plugin-next@14.1.3":
+  version "14.1.3"
+  resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-14.1.3.tgz#31ffb36dbd5d04537aff83eb69ec23007d081608"
+  integrity sha512-VCnZI2cy77Yaj3L7Uhs3+44ikMM1VD/fBMwvTBb3hIaTIuqa+DmG4dhUDq+MASu3yx97KhgsVJbsas0XuiKyww==
   dependencies:
     glob "10.3.10"
 
@@ -5412,11 +5412,11 @@ eslint-compat-utils@^0.4.0:
     semver "^7.5.4"
 
 eslint-config-next@^14.0.1:
-  version "14.1.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-14.1.2.tgz#b7b791e36d8fe1179d65fc020adb9fe5b69e443c"
-  integrity sha512-g46mlgWmHoWhHuDbaQS8PLNQtBkVkiQMnVLhFcqnPSXN2I+R4Obom3ihCIQuNLbjVUgiFFHqmEwwtDuWv1wYKA==
+  version "14.1.3"
+  resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-14.1.3.tgz#f5c75c088c5df35da2a02129cbf5dec9defb3f13"
+  integrity sha512-sUCpWlGuHpEhI0pIT0UtdSLJk5Z8E2DYinPTwsBiWaSYQomchdl0i60pjynY48+oXvtyWMQ7oE+G3m49yrfacg==
   dependencies:
-    "@next/eslint-plugin-next" "14.1.2"
+    "@next/eslint-plugin-next" "14.1.3"
     "@rushstack/eslint-patch" "^1.3.3"
     "@typescript-eslint/parser" "^5.4.2 || ^6.0.0"
     eslint-import-resolver-node "^0.3.6"
