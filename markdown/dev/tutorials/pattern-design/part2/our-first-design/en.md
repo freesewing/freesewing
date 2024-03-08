@@ -27,7 +27,7 @@ const FromScratch = new Design({
     name: 'fromScratch',
     version: '0.0.1',
   },
-  parts: [ bib ],
+  parts: [bib],
 })
 
 export { bib, FromScratch, i18n }
@@ -82,7 +82,7 @@ If you are not familiar with this syntax, you'll get the hang of it soon enough.
 
 ## Design constructor
 
-finally the most interesting part of this file is the middle part where we are 
+Finally, the most interesting part of this file is the middle part where we are 
 creating a new design:
 
 ```src/index.mjs
@@ -91,7 +91,7 @@ const FromScratch = new Design({
     name: 'fromScratch',
     version: '0.0.1',
   },
-  parts: [ bib ],
+  parts: [bib],
 })
 ```
 
@@ -104,14 +104,14 @@ to be more accurate, that you can use with the `new` keyword.
 It's a convention that constructor names start with an **C**apital letter.
 </Tip>
 
-We are passing some info to a this `Design` function, but the `data` we are
+We are passing some info to this `Design` function, but the `data` we are
 passing is optional. If we strip that away for a moment, and don't bother 
 assigning the result to a variable, we reveal the essence of what it takes to 
 create a new FreeSewing design:
 
 ```src/index.mjs
 new Design({
-  parts: [ bib ],
+  parts: [bib],
 })
 ```
 
