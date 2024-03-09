@@ -1,5 +1,4 @@
 import { back as titanBack } from '@freesewing/titan'
-//import { front as titanFront } from '@freesewing/titan'
 
 function draftLilyBack({
   points,
@@ -23,8 +22,8 @@ function draftLilyBack({
 }) {
   //TODO: implement stretch setting to replace ease
   // work-around: flag it
-  let stretchAsEase = -options.fabricStretch / 10
-  let easeTol = 0.005
+  const stretchAsEase = -options.fabricStretch / 10
+  const easeTol = 0.005
   if (
     Math.abs(options.waistEase - stretchAsEase) > easeTol ||
     Math.abs(options.seatEase - stretchAsEase) > easeTol ||
@@ -32,14 +31,13 @@ function draftLilyBack({
   ) {
     store.flag.note({
       msg: `lily:adjustEase`,
-      notes: [], // TODO: figure out what to put here
       replace: {
         stretch: units(options.fabricStretch),
         ease: stretchAsEase,
       },
       suggest: {
         text: 'adjust ease',
-        icon: '',
+        icon: 'options',
         update: {
           settings: [
             'options',
@@ -67,7 +65,7 @@ function draftLilyBack({
    * Helper method to draw the outseam path
    */
   const drawOutseam = () => {
-    let waistOut = points.styleWaistOutLily || points.waistOut
+    const waistOut = points.styleWaistOutLily || points.waistOut
     if (points.waistOut.x > points.seatOut.x)
       return new Path()
         .move(points.floorOut)
@@ -84,7 +82,7 @@ function draftLilyBack({
    * Helper method to draw the outline path
    */
   const drawPath = () => {
-    let waistIn = points.styleWaistInLily || points.waistIn
+    const waistIn = points.styleWaistInLily || points.waistIn
     return drawInseam()
       .line(points.floorOut)
       .join(drawOutseam())
@@ -128,16 +126,11 @@ function draftLilyBack({
   // NOTE: majority of points re-used from titan
 
   // shape at the ankle (unlike titan)
-  let halfAnkle
-  if (measurements.ankle * (1 + options.fabricStretch) > measurements.heel) {
-    console.log('using ankle measurement')
-    //let halfAnkle = (1 + stretchAsEase) * (measurements.ankle / 4)
-    halfAnkle = (1 - options.fabricStretch / 10) * (measurements.ankle / 4)
-  } else {
-    // ensure that stretched fabric will accommodate ankle
-    log.info('overriding ankle measurement to accommodate heel (lower leg is broader now)')
-    halfAnkle = measurements.heel / 4 / (1 + options.fabricStretch)
-  } // NOTE: for shortened leggings, this may not have been necessary...
+  const halfAnkle =
+    measurements.ankle * (1 + options.fabricStretch) > measurements.heel
+      ? (1 - options.fabricStretch / 10) * (measurements.ankle / 4)
+      : measurements.heel / 4 / (1 + options.fabricStretch)
+  // NOTE: for shortened leggings, this may not have been necessary...
 
   points.floorOut = points.floor.shift(0, halfAnkle)
   points.floorIn = points.floorOut.flipX(points.floor)
@@ -161,13 +154,13 @@ function draftLilyBack({
 
   // Should we fit the cross seam?
   if (options.fitCrossSeam && options.fitCrossSeamBack) {
-    let rotate = ['waistIn', 'waistOut']
     let delta = crossSeamDelta()
     let run = 0
     do {
       run++
       // Remedy A: Slash and spread
-      for (const i of rotate) points[i] = points[i].rotate(delta / 15, points.seatOut)
+      for (const i of ['waistIn', 'waistOut'])
+        points[i] = points[i].rotate(delta / 15, points.seatOut)
       // Remedy B: Nudge the fork inwards/outwards
       points.fork = points.fork.shift(0, delta / 5)
       points.forkCp2 = points.crossSeamCurveCp2.rotate(-90, points.fork)
@@ -213,7 +206,6 @@ function draftLilyBack({
 
   // adjust the length (at the bottom)
   let extendBeyondKnee = 1
-  log.warn('max')
   if (options.lengthReduction > 0) {
     let requestedLength = (1 - options.lengthReduction) * measurements.waistToFloor
     // leggings must reach to fork at least, so define a minimum
@@ -428,7 +420,7 @@ function draftLilyBack({
       paths.seatline = new Path()
         .move(points.seatIn)
         .line(points.seatOutNotch)
-        .attr('class', 'fabric help')
+        .addClass('fabric help')
         .attr('data-text', 'Seat Line')
         .attr('data-text-class', 'center')
       if (
@@ -447,15 +439,13 @@ function draftLilyBack({
     }
 
     if (sa) {
-      paths.saBase = paths.upperOutseam.join(paths.upperInseam)
-      paths.hemBase = paths.bottom
+      paths.saBase = paths.upperOutseam.join(paths.upperInseam).hide()
+      paths.hemBase = paths.bottom.hide()
       paths.sa = paths.hemBase
         .offset(sa * 3)
         .join(paths.saBase.offset(sa))
         .close()
-        .attr('class', 'fabric sa')
-      paths.saBase.hide()
-      paths.hemBase.hide()
+        .addClass('fabric sa')
     }
 
     if (paperless) {
@@ -464,7 +454,7 @@ function draftLilyBack({
         .move(points.crossSeamCurveStart)
         .line(points.crossSeamCurveMax)
         .line(points.fork)
-        .attr('class', 'note lashed')
+        .addClass('note lashed')
       macro('hd', {
         id: 'wHem',
         from: points.bottomIn,
@@ -583,7 +573,13 @@ export const back = {
     kneeEase: { pct: -4, min: -20, max: 0, menu: 'fit' }, // -fabricStretch/10,
     //test: {pct: back.options.fabricStretch/2, min: 0, max: 50, menu: 'fit'},
     lengthBonus: 0,
-    lengthReduction: { pct: 0, min: 0, max: 100, menu: 'style' },
+    lengthReduction: {
+      pct: 0,
+      min: 0,
+      max: 100,
+      toAbs: (pct, { measurements }) => measurements.waistToFloor * pct,
+      menu: 'style',
+    },
     waistbandWidth: { ...titanBack.options.waistbandWidth, menu: 'style' },
   },
   hide: 'HIDE_TREE',
