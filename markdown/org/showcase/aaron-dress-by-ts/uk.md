@@ -6,6 +6,7 @@ intro: "Агов! Користувач FreeSewing TangerineShark тут! Я мо
 title: "Аарон, переодягнений у сукню"
 designs:
   - "Аароне."
+author: 13050
 ---
 
 Агов! Користувач FreeSewing TangerineShark тут! Я модифікувала цю футболку Аарона, подовживши її на сукню.

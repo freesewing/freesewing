@@ -6,6 +6,7 @@ intro: "Nous pensons que ce gilet Wahid - le premier essai du fabricant - a l'ai
 title: "Gilet Wahid par womp"
 designs:
   - "wahid"
+author: 72337
 ---
 
 Nous pensons que ce gilet Wahid - le premier essai du fabricant - a l'air bien aiguisé !

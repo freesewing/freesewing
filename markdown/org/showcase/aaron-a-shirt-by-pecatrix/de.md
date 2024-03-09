@@ -6,6 +6,7 @@ intro: "Aaron A-shirt by pecatrix"
 title: "Aaron A-shirt by pecatrix"
 designs:
   - "aaron"
+author: 27667
 ---
 
 pecatrix hat Aaron mit einigen Änderungen am Muster gemacht! Sie hat sich mit uns im [Discord](https://discord.freesewing.org/) getroffen, um über die kleinen Anpassungen zu sprechen, die sie in Zukunft vornehmen wird, um eine komplett glatte Bindung zu erhalten und die horizontalen "Bänder" auf der Rückseite zu beseitigen.
