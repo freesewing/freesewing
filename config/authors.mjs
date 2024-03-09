@@ -4,7 +4,7 @@
  * The name is what we'll use as display name
  */
 export const authors = {
-  joostdecock: { id: 0, name: 'Joost De Cock' },
+  joostdecock: { id: 1, name: 'Joost De Cock' },
   'Prof. dr. Sorcha Ní Dhubhghaill': { id: 0, name: 'Prof. dr. Sorcha Ní Dhubhghaill' },
   mocked: { id: 0, name: 'Unknown (mocked in dev)' },
   benjamesben: { id: 0, name: 'Benjamin' },
@@ -32,8 +32,12 @@ export const authors = {
   Natalia: { id: 0, name: 'Natalia Sayang' },
   chri5b: { id: 0, name: 'chri5b' },
   tangerineshark: { id: 0, name: 'tangerineshark' },
-  'bekivo@gmail.com': { id: 0, name: 'Ivo Bek' },
+  'Ivo Bek': { id: 0, name: 'Ivo Bek' },
   Thrunic: { id: 0, name: 'Thrunic' },
+  'Vili Sinervä': { id: 0, name: 'Vili Sinervä' },
+  bijay_d: { id: 0, name: 'bijay_d' },
+  'Paula Vidas': { id: 0, name: 'Paula Vidas' },
+  'Morgan Frost': { id: 0, name: 'Morgan Frost' },
 }
 
 /*
@@ -50,4 +54,9 @@ export const gitToAuthor = {
   '70777269+tangerineshark@users.noreply.github.com': 'tangerineshark',
   'thijs.assies@gmail.com': 'MA-TATAS',
   'Natalia Sayang': 'Natalia',
+  '109869956+BenJamesBen@users.noreply.github.com': 'benjamesben',
+  'vili.m.sinerva@gmail.com': 'Vili Sinervä',
+  'bekivo@gmail.com': 'Ivo Bek',
+  'paulavidas@gmail.com': 'Paula Vidas',
+  '104308146+KaerMorhan@users.noreply.github.com': 'Morgan Frost',
 }

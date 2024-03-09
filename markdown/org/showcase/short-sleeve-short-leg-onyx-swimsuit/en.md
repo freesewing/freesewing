@@ -5,6 +5,7 @@ date: 20231106
 intro: ""
 designs: ["onyx"]
 maker: Thrunic
+author: 33070
 ---
 
 An Onyx one-piece swimsuit/unisuit made with short sleeves and short legs. It's great for a summer beach day, looking cute and stylish while providing more modesty and sun coverage than traditional swimwear.

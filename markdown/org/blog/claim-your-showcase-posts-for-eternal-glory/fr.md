@@ -30,7 +30,7 @@ De cette façon, avec un peu de temps et un effort collectif, nous espérons bie
 
 ##### Quel est mon ID FreeSewing ?
 
-Tu peux trouver ton identifiant FreeSewing sur [la page de ton compte](/account) ou sur [FreeSewing.org/id](/id).
+Tu peux trouver ton identifiant FreeSewing sur [la page de ton compte](/account) ou sur [FreeSewing.org/id](/id). 
 
 </Tip>
 

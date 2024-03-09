@@ -1,4 +1,4 @@
-import { Term as SharedTerm } from 'shared/components/jargon.mjs'
+import { Term as SharedTerm, termList } from 'shared/components/jargon.mjs'
 
 /*
  * This object holds jargon terminology for FreeSewing.dev
@@ -24,3 +24,4 @@ const jargon = {
  * DO NOT CHANGE ANYTHING BELOW THIS LINE
  */
 export const Term = ({ children }) => <SharedTerm {...{ jargon, children }} site="dev" />
+export const TermList = termList(jargon, 'dev')
