@@ -1,5 +1,5 @@
 ---
-maker: 1
+author: 1
 caption: "Вони чудові влітку"
 date: "2013-02-16"
 intro: "FIXME_no_intro"

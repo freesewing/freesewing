@@ -198,9 +198,9 @@ const loadShowcase = async (store) => {
   // Order is the same for all languages, so only grab EN files
   const order = await loadFolderFrontmatter('date', 'org', 'showcase', formatDate, 'en')
   // Author is the same for all languages, so only grab EN files
-  const makers = await loadFolderFrontmatter('maker', 'org', 'showcase', false, 'en')
+  const authors = await loadFolderFrontmatter('author', 'org', 'showcase', false, 'en')
   // Load user accounts of authors
-  await loadUsers(Object.values(makers.en), store)
+  await loadUsers(Object.values(authors.en), store)
 
   // Merge titles and order for EN
   const merged = {}
@@ -209,7 +209,7 @@ const loadShowcase = async (store) => {
       t: titles.en[slug],
       o: order.en[slug],
       s: slug,
-      m: makers.en[slug],
+      m: authors.en[slug],
     }
   // Order based on post data (descending)
   const ordered = orderBy(merged, 'o', 'desc')
@@ -307,5 +307,5 @@ export const prebuildPosts = async (store) => {
   await writeFile('blog-meta', 'meta', 'org', store.posts.blog.meta)
   await writeFile('showcase-meta', 'meta', 'org', store.posts.showcase.meta)
   await writeFile('design-examples', 'examples', 'org', store.posts.showcase.designShowcases)
-  await writeFile('makers', 'makers', 'org', store.users)
+  await writeFile('authors', 'authors', 'org', store.users)
 }

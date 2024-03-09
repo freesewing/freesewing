@@ -4,19 +4,19 @@ title: "Onyx une pièce : Instructions de couture"
 
 <Note>
 
-L'utilisation d'une surjeteuse est recommandée, pour que la taille des coutures finies reste petite et pour permettre aux coutures de s'étirer. If using a serger with the knife engaged, a seam allowance of 1/2 inch (12 mm) is recommended. Si tu utilises un pied de surjet sur une machine à coudre, ou si tu effectues une surjeture sans utiliser le couteau, une marge de couture de 1/4 de pouce (6 mm) est recommandée.
+L'utilisation d'une surjeteuse est recommandée, pour que la taille des coutures finies reste petite et pour permettre aux coutures de s'étirer. If using a serger with the knife engaged, a seam allowance of 1/2 inch (12 mm) is recommended. Si tu utilises un pied de surjet sur une machine à coudre, ou si tu utilises une surjeteuse sans utiliser le couteau, une marge de couture de 1/4 de pouce (6 mm) est recommandée.
 
 Unless otherwise stated, use stretch steams for construction of this garment. Un point de surjet à 4 fils est recommandé, ou un pied de surjet sur une machine à coudre si une surjeteuse n'est pas disponible.
 
 Les ourlets ou les poignets sont facultatifs (puisque le tricot ne s'effiloche pas), mais si tu fais des ourlets ou si tu ajoutes des poignets, assure-toi qu'ils peuvent s'étirer. Ces instructions décrivent comment faire un ourlet à pli simple avec une aiguille double, qui convient aux maillots de bain ou aux vêtements légers, et comment faire un revers en tricot côtelé, qui convient aux pyjamas ou aux kigurumi en laine polaire.
 
-Si tu couds un tissu extensible/de jogging, ajuste ta tension pour qu'il puisse s'étirer davantage. Sur une surjeteuse, cela signifie généralement qu'il faut baisser la tension de l'aiguille, en particulier l'aiguille droite, et ajuster la tension du boucleur si nécessaire pour que le point ait une apparence décente. Sur une machine à coudre ordinaire, baisse la tension. Teste d'abord ton choix de point sur une chute de tissu, et essaie de faire sauter la couture d'essai en l'étirant sur toute sa longueur. Il ne devrait éclater qu'après s'être étiré un peu. S'il se détache trop facilement, continue à jouer avec tes réglages de points et de tension jusqu'à ce que tu obtiennes quelque chose qui puisse survivre à quelques abus.
+Si tu couds un tissu extensible/de jogging, ajuste ta tension pour qu'il puisse s'étirer davantage. Sur une surjeteuse, cela signifie généralement qu'il faut baisser la tension de l'aiguille, en particulier l'aiguille droite, et ajuster la tension du boucleur si nécessaire pour que le point ait une apparence décente. Sur une machine à coudre ordinaire, baisse la tension. Teste d'abord ton choix de point sur une chute de tissu, et essaie de faire sauter la couture d'essai en l'étirant sur toute sa longueur. Il ne devrait éclater qu'après s'être étiré un peu. Si elle craque trop facilement, continue à jouer avec tes réglages de points et de tension jusqu'à ce que tu obtiennes quelque chose qui puisse survivre à quelques abus.
 
 Pour la confection de vêtements utilisant des tricots extensibles dans les deux sens (comme le jersey et le molleton), des réglages réguliers avec un point qui s'étire devraient convenir.
 
 </Note>
 
-### Étape 0 : Personnalisation et ajustement de ton modèle
+### Étape 0 : Personnalisation et ajustement de ton patron
 Décide du type de vêtement que tu vas confectionner. Cette conception prend en charge plusieurs options :
 - Unisuits (maillots de bain de compression d'une seule pièce avec manches et jambes)
 - Pyjama une pièce (vêtement ample en tissu doux, à manches courtes ou longues).

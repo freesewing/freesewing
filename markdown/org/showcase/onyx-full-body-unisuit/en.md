@@ -5,6 +5,7 @@ date: 20231101
 intro: "A blue full-body Onyx unisuit by Thrunic"
 designs: ["onyx"]
 maker: joost
+author: 33070
 ---
 
 This is a full-body Onyx unisuit by Thrunic who created [the Onyx design](/designs/onyx).

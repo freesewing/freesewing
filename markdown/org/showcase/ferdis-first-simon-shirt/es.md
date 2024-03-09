@@ -6,6 +6,7 @@ intro: "Un bonito ejemplo de la camisa Simon de Ferdi, que compartió:"
 title: "La primera camiseta Simon de Ferdi"
 designs:
   - "simon"
+author: 1972
 ---
 
 Un bonito ejemplo de la camisa Simon de Ferdi, que compartió:

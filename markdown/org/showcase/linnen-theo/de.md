@@ -1,5 +1,5 @@
 ---
-maker: 1
+author: 1
 caption: "Diese sind toll im Sommer"
 date: "16.02.2013"
 intro: "FIXME_no_intro"

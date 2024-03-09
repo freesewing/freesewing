@@ -1,6 +1,57 @@
 # Change log for: FreeSewing (global)
 
 
+## Unreleased
+
+### brian
+
+#### Changed
+
+ - Always load plugin-bust due to its changes in how it handle conditionality.
+
+### hugo
+
+#### Fixed
+
+ - Add missing dimension id attributes
+
+### onyx
+
+#### Changed
+
+ - Always load plugin-bust due to its changes in how it handle conditionality.
+
+### shelly
+
+#### Changed
+
+ - Always load plugin-bust due to its changes in how it handle conditionality.
+
+### tamiko
+
+#### Changed
+
+ - Always load plugin-bust due to its changes in how it handle conditionality.
+
+### uma
+
+#### Fixed
+
+ - Fix back exposure when expand is off. Fixes
+
+### plugin-bust
+
+#### Changed
+
+ - This plugin now uses the `preSetDraft` rather than `preDraft` lifecycle hook
+ - Conditionality has been moved to the `preSetDraft` lifecycle hook, rather than exposing a `withCondition` named export
+ - The plugin will now always be loaded, but will check for each drafted set whether it should make any changes.
+
+#### Deprecated
+
+ - The `withCondition` named  export is deprecated and will always return true.
+
+
 ## 3.2.0 (2024-02-11)
 
 ### brian

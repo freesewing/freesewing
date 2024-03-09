@@ -28,8 +28,8 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "@aws-sdk/client-sesv2": "3.504.0",
-    "@prisma/client": "5.9.0",
+    "@aws-sdk/client-sesv2": "3.529.1",
+    "@prisma/client": "5.10.2",
     "bcryptjs": "2.4.3",
     "cors": "2.8.5",
     "dotenv": "16.4.1",
@@ -43,7 +43,7 @@
     "passport-jwt": "4.0.1",
     "pino": "8.17.2",
     "qrcode": "1.5.3",
-    "swagger-ui-dist": "5.11.2",
+    "swagger-ui-dist": "5.11.10",
     "swagger-ui-express": "5.0.0"
   },
   "devDependencies": {

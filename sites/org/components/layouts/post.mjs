@@ -3,7 +3,7 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { cloudflareImageUrl, nsMerge } from 'shared/utils.mjs'
-import { makers } from 'site/prebuild/makers.mjs'
+import { authors } from 'site/prebuild/authors.mjs'
 // Components
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { Lightbox } from 'shared/components/lightbox.mjs'
@@ -54,8 +54,8 @@ const PostMeta = ({ frontmatter, t }) => (
     </div>
     <div>
       By{' '}
-      <a href="#maker" className="text-secondary hover:text-secondary-focus">
-        {makers[frontmatter.author || frontmatter.maker || 1]?.username || '???'}
+      <a href="#author" className="text-secondary hover:text-secondary-focus">
+        {authors[frontmatter.author || 1]?.username || '???'}
       </a>
     </div>
   </div>
@@ -135,7 +135,7 @@ const issueData = ({ type, dir, account, body = false }) => ({
     : `The ${type} post ${dir} was claimed as their own by user ${account.id}`,
   body: `This issue is about who should get credit for [this ${type} post](https://freesewing.org/${type}/${dir}).
 
-According to [user ${account.username}](https://freesewing.org.users/user?id=${account.id}) with ID ${account.id},
+According to [user ${account.username}](https://freesewing.org/users/user?id=${account.id}) with ID ${account.id},
 ${body ? 'who wrote:\n\n---\n\n' + body + '\n\n---\n\n' : 'who claimed it as their own'}.
 
 To reflect this on the site, update [this markdown file](https://github.com/freesewing/freesewing/blob/develop/markdown/org/${type}/${dir}/en.md) so that the frontmatter includes this:
@@ -199,7 +199,7 @@ const ClaimThisPost = ({ t, type, dir }) => {
   const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   return (
-    <div id="maker" className="p-4 border rounded-lg shadow">
+    <div id="author" className="p-4 border rounded-lg shadow">
       <h3>Claim this post</h3>
       <p>
         This post has not (yet) been associated with a FreeSewing account. Please help us assign
@@ -252,11 +252,11 @@ const ClaimThisPost = ({ t, type, dir }) => {
   )
 }
 
-const Maker = ({ id, type, t, dir }) =>
-  makers[id] ? (
-    <div id="maker" className="p-4 border rounded-lg shadow">
+const Author = ({ id, type, t, dir }) =>
+  authors[id] ? (
+    <div id="author" className="p-4 border rounded-lg shadow">
       <h5 className="text-center">{t(`docs:${type === 'blog' ? 'writtenBy' : 'madeBy'}`)}</h5>
-      <UserProfile user={makers[id]} />
+      <UserProfile user={authors[id]} />
     </div>
   ) : (
     <ClaimThisPost t={t} type={type} dir={dir} />
@@ -289,12 +289,7 @@ export const PostLayout = ({ mdx, frontmatter, type, dir }) => {
           <BaseLayoutProse>
             <article className="mb-12 max-w-7xl">
               <PostContent {...{ mdx }} />
-              <Maker
-                id={type === 'blog' ? frontmatter.author : frontmatter.maker}
-                type={type}
-                t={t}
-                dir={dir}
-              />
+              <Author id={frontmatter.author} type={type} t={t} dir={dir} />
               <PrevNext />
             </article>
           </BaseLayoutProse>

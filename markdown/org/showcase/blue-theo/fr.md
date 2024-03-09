@@ -1,5 +1,5 @@
 ---
-maker: 1
+author: 1
 caption: "Mon dieu nous étions si jeunes à l'époque"
 date: "2015-04-13"
 intro: "Voilà. Ce n'est pas tout le message"
