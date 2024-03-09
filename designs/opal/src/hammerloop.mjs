@@ -17,13 +17,13 @@ function draftHammerLoop({
 }) {
   if (!options.hammerLoop) return part.hide()
 
-  const hammerLoopLength = store.get('hammerLoopLength')
+  const hammerLoopLength = store.get('hammerLoopLength') * options.hammerLoopLengthFactor
   const hammerLoopWidth = store.get('hammerLoopWidth')
 
-  points.topLeftInside = new Point(-hammerLoopLength / 2 + sa, -hammerLoopWidth / 2)
-  points.bottomLeftInside = new Point(-hammerLoopLength / 2 + sa, hammerLoopWidth / 2)
-  points.bottomRightInside = new Point(hammerLoopLength / 2 - sa, hammerLoopWidth / 2)
-  points.topRightInside = new Point(hammerLoopLength / 2 - sa, -hammerLoopWidth / 2)
+  points.topLeftInside = new Point(-hammerLoopLength / 2, -hammerLoopWidth / 2)
+  points.bottomLeftInside = new Point(-hammerLoopLength / 2, hammerLoopWidth / 2)
+  points.bottomRightInside = new Point(hammerLoopLength / 2, hammerLoopWidth / 2)
+  points.topRightInside = new Point(hammerLoopLength / 2, -hammerLoopWidth / 2)
 
   points.bottomLeftFold1 = points.bottomLeftInside.translate(
     0,
@@ -152,4 +152,5 @@ export const hammerLoop = {
   name: 'HammerLoop',
   draft: draftHammerLoop,
   after: back,
+  options: { hammerLoopLengthFactor: 1 },
 }

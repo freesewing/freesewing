@@ -153,10 +153,16 @@ function draftPocketSlash({
   }
 
   macro('hd', {
+    id: 'wTopLeft',
+    from: points.topLeft,
+    to: points.centerTop,
+    y: points.topLeft.y - (sa + 15),
+  })
+  macro('hd', {
     id: 'wTop',
     from: points.topLeft,
     to: points.slashTop,
-    y: points.topLeft.y - (sa + 15),
+    y: points.topLeft.y - (sa + 30),
   })
   macro('hd', {
     id: 'wSlash',
@@ -169,6 +175,18 @@ function draftPocketSlash({
     from: points.bottomLeft,
     to: points.bottomRight,
     y: points.bottomLeft.y + (sa + 15),
+  })
+  macro('vd', {
+    id: 'hSlash',
+    from: points.slashTop,
+    to: points.slashSide,
+    x: points.bottomRight.x + (sa + 15),
+  })
+  macro('vd', {
+    id: 'hSide',
+    from: points.slashTop,
+    to: points.bottomRight,
+    x: points.bottomRight.x + (sa + 30),
   })
 
   store.cutlist.addCut({ cut: 2, from: 'lining' })

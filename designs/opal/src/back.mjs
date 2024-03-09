@@ -652,7 +652,7 @@ export const back = {
     // How long the hexagon where the two sides of the back bib cross over is, as a percent of hpsToWaistBack.
     backBibHexagonLength: { pct: 40, min: 10, max: 60, menu: 'style' },
     // How wide the hexagon of the back bib is, as a percent of the waist measurement.
-    backBibHexagonWidth: { pct: 40, min: 20, max: 80, menu: 'style' },
+    backBibHexagonWidth: { pct: 50, min: 20, max: 80, menu: 'style' },
     // How long to make the two vertical sides of the back bib hexagon.
     backBibHexagonSideLength: { pct: 12, min: 5, max: 40, menu: 'style' },
     // How long to make the straps, as a percent of the distance from the front waist, over the HPS, and down to the back waist. Recommended 100-110% for fixed straps, 130-140% for adjustable straps.
@@ -682,7 +682,7 @@ export const back = {
     pocketBackCornerHeight: { pct: 10, min: 0, max: 100, menu: 'style' },
     // Carpenter pocket percentages are as a percentage of the back waist arc, including any ease.
     pocketCarpenter: { bool: 'true', menu: 'style' },
-    pocketCarpenterHeight: { pct: 120, min: 30, max: 150, menu: 'style' },
+    pocketCarpenterHeight: { pct: 100, min: 30, max: 150, menu: 'style' },
     // How far into the back pocket the carpenter pocket goes. Affects style. Larger values will be more secure, but will add bulk.
     pocketCarpenterAnchorX: { pct: 20, min: 0, max: 80, menu: 'style' },
     pocketCarpenterAnchorY: { pct: 10, min: 0, max: 50, menu: 'style' },
