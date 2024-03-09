@@ -524,31 +524,37 @@ function draftLilyFront({
         .line(points.fork)
         .attr('class', 'note lashed')
       macro('hd', {
+        id: 'wHemLeftToPleat',
         from: points.floorOut,
         to: points.floor,
         y: points.floorIn.y - 15,
       })
       macro('hd', {
+        id: 'wHemRightToPleat',
         from: points.floor,
         to: points.floorIn,
         y: points.floorIn.y - 15,
       })
       macro('hd', {
+        id: 'wHem',
         from: points.floorOut,
         to: points.floorIn,
         y: points.floorIn.y - 30,
       })
       macro('vd', {
+        id: 'hHemToFork',
         from: points.floorOut,
         to: points.fork,
         x: points.fork.x + sa + 15,
       })
       macro('vd', {
+        id: 'hForkToCfWaist',
         from: points.fork,
         to: points.styleWaistInLily,
         x: points.fork.x + sa + 15,
       })
       macro('vd', {
+        id: 'hHemToSideWaist',
         from: points.floorIn,
         to: points.styleWaistOutLily,
         x:
@@ -559,38 +565,45 @@ function draftLilyFront({
           15,
       })
       macro('vd', {
+        id: 'hStartCrotchCurveToCfWaist',
         from: points.crotchSeamCurveStart,
         to: points.styleWaistInLily,
         x: points.crotchSeamCurveStart.x + sa + 15,
       })
       macro('hd', {
+        id: 'wSideWaistToPleat',
         from: points.seatOut,
         to: points.grainlineTop,
         y: points.styleWaistInLily.y - sa - 15,
       })
       if (points.styleWaistOutLily.x < points.seatOut.x) {
         macro('hd', {
+          id: 'wSideWaistToPleatAlt',
           from: points.styleWaistOutLily,
           to: points.grainlineTop,
           y: points.styleWaistInLily.y - sa - 30,
         })
       }
       macro('hd', {
+        id: 'wPleatToCfWaist',
         from: points.grainlineTop,
         to: points.styleWaistInLily,
         y: points.styleWaistInLily.y - sa - 15,
       })
       macro('hd', {
+        id: 'wPleatToStartCrotchCurve',
         from: points.grainlineTop,
         to: points.crotchSeamCurveStart,
         y: points.styleWaistInLily.y - sa - 30,
       })
       macro('hd', {
+        id: 'wPleatToCrotchProjection',
         from: points.grainlineTop,
         to: points.crotchSeamCurveMax,
         y: points.styleWaistInLily.y - sa - 45,
       })
       macro('hd', {
+        id: 'wPleatToFork',
         from: points.grainlineTop,
         to: points.fork,
         y: points.styleWaistInLily.y - sa - 60,
