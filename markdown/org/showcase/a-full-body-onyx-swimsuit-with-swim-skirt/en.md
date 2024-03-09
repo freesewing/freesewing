@@ -5,7 +5,6 @@ date: 20231106
 intro: ""
 designs: ["onyx"]
 maker: Thrunic
-author: 33070
 ---
 
 This is my favorite Onyx so far.
