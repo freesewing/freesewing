@@ -6,6 +6,7 @@ intro: "Hey! FreeSewing-Benutzer TangerineShark hier! Ich habe dieses Aaron A-Sh
 title: "Aaron modifiziert zu einem Kleid"
 designs:
   - "aaron"
+author: 13050
 ---
 
 Hey! FreeSewing-Benutzer TangerineShark hier! Ich habe dieses Aaron A-Shirt in ein Kleid umgewandelt und verlängert.
