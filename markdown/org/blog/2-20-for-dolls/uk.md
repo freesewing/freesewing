@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Фото: Анна Дощечко [via Pexels]."
 date: "2022-01-24"
 intro: "FreeSewing 2.20: Хочете, щоб він був меншим?"

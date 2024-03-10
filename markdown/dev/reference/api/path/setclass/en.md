@@ -38,5 +38,5 @@ as the two following calls yield the same result:
 
 ```js
 path.attr('class', 'fabric', true)
-path.addClass('fabric')
+path.setClass('fabric')
 ```

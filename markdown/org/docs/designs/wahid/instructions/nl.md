@@ -140,7 +140,7 @@ Keer het zakbeleg naar de achterkant van de stof en strijk plat.
 
 ![Strijk de driehoekjes aan de korte kanten plat](05h.png)
 
-Leg je zakbeleg uit de weg om die kleine driehoekjes aan het uiteinde van de zakopening zichtbaar te maken.
+Move your pocket facing out of the way to reveal those little triangles at the side of your pocket.
 
 Plooi ze terug, en let op dat je zakopening een mooie rechthoek blijft, en strijk ze plat.
 

@@ -2,6 +2,6 @@
 title: "Jupe"
 ---
 
-Select whether or not you want to add a simple gathered skirt around the waist of the garment.
+Choisis si tu veux ou non ajouter une simple jupe froncée autour de la taille du vêtement.
 
-This is a basic skirt intended to not add much bulk to the garment while offering a degree of modesty and flair. It's designed for use with swimwear, but may work well for other types of garments.
+Il s'agit d'une jupe de base destinée à ne pas ajouter beaucoup de volume au vêtement tout en offrant un certain degré de modestie et d'élégance. Il est conçu pour être utilisé avec les maillots de bain, mais il peut aussi convenir à d'autres types de vêtements.

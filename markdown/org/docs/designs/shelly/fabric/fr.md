@@ -1,13 +1,13 @@
 ---
-title: "Shelly shirt: Fabric Options"
+title: "Chemise Shelly : Options de tissus"
 ---
 
-This pattern is designed to work with stretch/knit fabrics, particularly spandex.
+Ce patron est conçu pour fonctionner avec des tissus extensibles/tricotés, en particulier l'élasthanne.
 
-For swim shirts, rash guards, compression shirts, athletic shirts, and other performance-oriented shirts, four-way stretch fabric is strongly recommended. For more casual raglan t-shirts, two-way stretch jersey should work fine.
+Pour les maillots de bain, les rash guards, les t-shirts de compression, les maillots d'athlétisme et autres maillots axés sur la performance, du tissu extensible dans les quatre sens est fortement recommandé. Pour les t-shirts raglan plus décontractés, le jersey extensible à deux sens devrait faire l'affaire.
 
-For compression clothes and swimwear, a 20:80 ratio of nylon/polyester to spandex/elastane is recommended. More elastic fabrics allow for greater negative ease, will give better mobility, and will be more forgiving to measurement/design errors.
+Pour les vêtements de compression et les maillots de bain, un rapport de 20:80 entre le nylon/polyester et le spandex/élasthanne est recommandé. Les tissus plus élastiques permettent une plus grande aisance négative, donneront une meilleure mobilité et pardonneront davantage les erreurs de mesure ou de conception.
 
-The raglan sleeves lend themselves well to using different colors/prints for the body and for the sleeves.
+Les manches raglan se prêtent bien à l'utilisation de couleurs/imprimés différents pour le corps et pour les manches.
 
-With swim fabric/spandex, it is recommended to make the neckband out of the same material used for the shirt. For less stretchy fabric, such as cotton jersey knit, ribbing is recommended.
+Avec le tissu de maillots de bain/l'élasthanne, il est recommandé de faire le tour de cou dans le même matériau que celui utilisé pour le maillot. Pour les tissus moins extensibles, comme le jersey de coton, les côtes sont recommandées.

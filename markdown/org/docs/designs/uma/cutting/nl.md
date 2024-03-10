@@ -2,14 +2,14 @@
 title: "Ursula onderbroek: Knip instructies"
 ---
 
-Uma typically consists of a front, a back, and a lined gusset. In that constallation, this is the cut list:
+Uma bestaat meestal uit een voorkant, een achterkant en een gevoerd kruisje. In that constellation, this is the cut list:
 
 - **Buitenstof**
   - Knip **1 voorpand**
   - Buitenstof
   - Knip **2 gusset**
 
-However, if you enable the **Bulge** option, the front and gusset will become 1 part. In this case, the cutlist looks like this:
+Als je echter de optie **Bulge** inschakelt, worden de voorkant en het inzetstuk 1 deel. In dit geval ziet de cutlist er als volgt uit:
 
 - **Buitenstof**
   - Knip **1 voorpand**

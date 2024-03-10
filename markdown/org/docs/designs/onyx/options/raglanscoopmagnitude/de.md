@@ -1,5 +1,5 @@
 ---
-title: "Raglan scoop depth"
+title: "Raglan Schaufeltiefe"
 ---
 
-Controls how much extra material to place under the armpits.
+Legt fest, wie viel zusätzliches Material unter den Achseln platziert werden soll.

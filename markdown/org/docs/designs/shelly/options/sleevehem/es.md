@@ -1,6 +1,6 @@
 ---
-title: "Sleeve hem"
+title: "Dobladillo de la manga"
 ---
 
-Sets the hem allowance of the hem along the end of the sleeves, as a multiple of the seam allowance.
+Establece el margen del dobladillo a lo largo del extremo de las mangas, como múltiplo del margen de costura.
 

@@ -2,6 +2,6 @@
 title: "Висота витяжки"
 ---
 
-Controls how tall the hood will be.
+Контролює висоту витяжки.
 
-Note: This option is only available if the 'neck style' option is set to 'hood.'
+Примітка: Ця опція доступна, тільки якщо для параметра "стиль горловини" встановлено значення "капюшон".

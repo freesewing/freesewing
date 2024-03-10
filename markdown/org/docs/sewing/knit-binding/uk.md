@@ -1,12 +1,12 @@
 ---
-title: Трикотажна бійка
+title: Трикотажна бийка
 ---
 
-## Що до біса таке та трикотажна бійка?
+## Що до біса таке та трикотажна бийка?
 
 Трикотажною бійкою називають тип обробки краю виробу, переважно горловини та пройми рукавів футболок та іншого трикотажу.
 
-Існує два види такої обробки країв: за допомогою рібани та справжня трикотажна бійка.
+Існує два види такої обробки країв: за допомогою рібани та справжня трикотажна бийка.
 
 ## Рібана
 
@@ -16,11 +16,11 @@ title: Трикотажна бійка
 
 В такому випадку необроблений край тканини залишається всередині виробу та часто пришивається закріплювальним швом до рібани.
 
-### Трикотажна бійка
+### Трикотажна бийка
 
 ![Сіра майка та біла футболка цієї дівчини мають трикотажну зав'язку біля вирізу горловини.](knit_binding.jpg)
 
-Справжня трикотажна бійка схожа на, власне, звичайну бійку — вона охоплює край тканини, а не пришивається до нього на вивороті.
+Справжня трикотажна бийка схожа на, власне, звичайну бийку — вона охоплює край тканини, а не пришивається до нього на вивороті.
 
 Необроблений край виробу заховується між складеною вдвічі трикотажною бійкою, яка прострочується по краю. Це часто виконується коверлоком, які охайно оброблюють краї на вивороті.
 
@@ -30,7 +30,7 @@ title: Трикотажна бійка
 
 Рібана є більш поширеною і саме її часто можна побачити на горловинах футболок. Вона є більш декоративною.
 
-Трикотажна бійка зустрічається рідше, але часто використовується на майках та спідній білизні. Бійка є більш практичною.
+Трикотажна бийка зустрічається рідше, але часто використовується на майках та спідній білизні. Бийка є більш практичною.
 
 > ##### Все ще розгублені?
 > 
@@ -111,28 +111,28 @@ title: Трикотажна бійка
 
 > Детальні інструкції можна знайти на сайті [та в документації Aaron](/docs/designs/aaron/instructions)
 
-## Alternate method
+## Альтернативний метод
 
-While the above instructions describe one way to attach a knit band or knit binding, it is not the only method that can be used. An alternate method is to cut the exact amount of binding needed, sew it into a ring, and then attach the ring to the garment opening.
+Хоча в наведеній вище інструкції описано один із способів прикріплення трикотажної стрічки або трикотажної палітурки, це не єдиний спосіб, який можна використати. Альтернативний метод - відрізати потрібну кількість палітурки, зшити її в кільце, а потім прикріпити кільце до отвору в одязі.
 
-Some people feel that this is an easier method for novice sewists. They are told exactly how much binding to use, and they do not have to guess how much they should be stretching the binding as they sew.
+Дехто вважає, що це простіший метод для швачок-початківців. Вони точно знають, скільки палітурки потрібно використати, і їм не потрібно гадати, наскільки вони повинні розтягувати палітурку під час шиття.
 
-1. Measure the garment opening that the binding will cover. Be sure to measure at the seamline, to account for seam allowance.
+1. Виміряйте отвір одягу, який буде закривати палітурка. Обов'язково міряйте по лінії шва, щоб врахувати припуски на шви.
 
-2. Check the pattern instructions for the length of binding to use. Or, use a length 80-90% smaller than the opening based on the stretchiness of the binding fabric. (For example, 80% for very stretchy fabric, 90% for less stretchy fabric.)
+2. Ознайомтеся з інструкцією до викрійки, щоб дізнатися, яку довжину палітурки слід використовувати. Або використовуйте довжину на 80-90% меншу, ніж отвір, виходячи з розтяжності палітурної тканини. (Наприклад, 80% для дуже еластичної тканини, 90% для менш еластичної).
 
-3. Cut the length of binding required plus seam allowance at each end.
+3. Відріжте необхідну довжину палітурки плюс припуски на шви з обох кінців.
 
-4. Sew the binding ends right sides together to form a closed loop or ring. Trim excess seam allowance.
+4. Зшийте кінці палітурки прямими боками один до одного, щоб утворилася замкнута петля або кільце. Надлишки припусків швів обрізати.
 
-5. Fold the ring together at the seam to divide the ring into equal halves. Mark or insert pins at each end fold. One pin will be in the seam, and the other will mark the halfway point around the ring.
+5. Складіть кільце по шву, щоб розділити його на рівні половинки. Позначте або вставте шпильки в кожну кінцеву складку. Одна шпилька буде в шві, а інша відзначатиме середину навколо кільця.
 
-6. Unfold the ring and fold it again into equal halves so the two marks/pins meet together in the middle. Again mark or insert pins into each end fold. Now there are 4 pins or marks dividing the ring into 4 quarters of equal length.
+6. Розгорніть кільце і знову складіть його на рівні половинки так, щоб дві позначки/шпильки з'єдналися посередині. Знову позначте або вставте шпильки в кожну торцеву складку. Тепер є 4 шпильки або позначки, що ділять кільце на 4 чверті однакової довжини.
 
 7. Similarly, fold the garment opening and mark or insert pins to divide the garment opening into 4 quarters of equal length.
 
-8. Match the marks or pins on the binding with the ones on the garment opening. (Try to align it so the seam is at the most inconspicuous location in the garment opening. For example, if binding a neck opening align the binding so the seam is at the back of the neck opening.)
+8. Зіставте мітки або шпильки на палітурці з мітками на розрізі одягу. (Намагайтеся вирівняти його так, щоб шов був у найнепомітнішому місці в проймі одягу. Наприклад, при обметуванні горловини вирівняйте обметування так, щоб шов знаходився ззаду горловини).
 
-9. Pin the binding ring to the garment opening at each quarter mark/pin. This ensures that the binding is evenly distributed around the garment opening.
+9. Приколіть скріплювальне кільце до розрізу одягу на кожній чверті мітки/булавки. Це гарантує, що палітурка рівномірно розподілиться навколо отвору одягу .
 
-10. Sew the binding to the opening, one quarter at a time. While sewing, evenly stretch each quarter segment of binding to match the length of the quarter segment of garment opening.
+10. Пришийте палітурку до отвору, по одній чверті за раз. Під час шиття рівномірно розтягуйте кожну чверть сегмента палітурки, щоб вона відповідала довжині чверті сегмента пройми виробу.

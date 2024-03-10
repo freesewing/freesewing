@@ -1,8 +1,8 @@
 ---
-title: Location
+title: Standort
 ---
 
-Every bookmark has a **loation** attribute that is mandatory. It holds the URL of the bookmark.
+Every bookmark has a **location** attribute that is mandatory. Sie enthält die URL des Lesezeichens.
 
-A bookmark without a location or URL is useless, as this holds the location the bookmark should point to.
+Ein Lesezeichen ohne einen Ort oder eine URL ist nutzlos, da dies den Ort enthält, auf den das Lesezeichen zeigen soll.
 

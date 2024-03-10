@@ -1,5 +1,5 @@
 ---
-title: "Neck position"
+title: "Положення шиї"
 ---
 
-Controls where the neck hole is placed on the garment. A value of 0% has the center of the neck hole exactly where the four raglan seams would intersect, with the front and back parts being identical and the sleeve being symmetrical. A positive value shifts the neck towards the front of the garment.
+Контролює розташування отвору для горловини на одязі. Значення 0% - це центр отвору для горловини точно в тому місці, де перетинаються чотири шви реглана, при цьому передня і задня частини ідентичні, а рукав симетричний. Позитивне значення зміщує горловину до передньої частини одягу.

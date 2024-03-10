@@ -1,60 +1,60 @@
 ---
-title: Curated measurements sets
+title: Sets de mesures curatées
 ---
 
-FreeSewing's **curated measurements sets** are a collection of measurements sets that represent real people.
+Les **sets de mesures curatés** de FreeSewing sont une collection d'ensembles de mesures qui représentent des personnes réelles.
 
-These sets are used by designers to test their designs on a variety of bodies, as well as by FreeSewing users to test the platform.
+Ces ensembles sont utilisés par les designers pour tester leurs patrons sur une variété de corps, ainsi que par les utilisateurs de FreeSewing pour tester la plateforme.
 
 ## Historique
 
-FreeSewing is all about bespoke sewing patterns, so perpetuating the myth of *standard sizes* was never something we wanted to be part of.
+FreeSewing se consacre aux patrons de couture sur mesure, alors perpétuer le mythe de *des tailles standard* n'a jamais été quelque chose dont nous voulions faire partie.
 
-In reality, having to take measurements prior to even being able to try the platform adds a lot of friction to the onboarding of new users. So at one point, we added a sizing table with a variety of measurements/sizes so people could see what generating a pattern looked like without having to start measuring themselves.
+En réalité, le fait de devoir prendre des mesures avant même de pouvoir essayer la plateforme ajoute beaucoup de frictions à l'accueil des nouveaux utilisateurs. Ainsi, à un moment, nous avons ajouté un tableau des tailles avec une variété de mesures/tailles pour que les personnes puissent voir à quoi ressemble la création d'un modèle sans avoir à commencer par se mesurer elles-mêmes.
 
-With the release of version 3 of FreeSewing, we wanted to move away from these *made up* measurements and instead work with the data of real people to test our platform.
+Avec la sortie de la version 3 de FreeSewing, nous voulions nous éloigner de ces mesures *inventées* et travailler plutôt avec les données de vraies personnes pour tester notre plateforme.
 
-We now no longer present users who want to try out the site a range of *standard sizes* but rather a collection of measurements sets where they can pick the one that best represents their own body.
+Désormais, nous ne présentons plus aux utilisateurs qui veulent essayer le site une gamme de *tailles standard* mais plutôt une collection d'ensembles de mesures où ils peuvent choisir celle qui représente le mieux leur propre corps.
 
-## Suggesting a measurements set for curation
+## Suggérer un ensemble de mesures pour la curation
 
-We rely on our community to submit measurements sets for curation. If you have a public measurements set on the site, you can suggest it for curation.
+Nous comptons sur notre communauté pour soumettre des ensembles de mesures à la curation. Si tu as un ensemble de mesures publiques sur le site, tu peux le suggérer pour la curation.
 
-To be part of our curated measurments sets collection, you should provide the following:
+Pour faire partie de notre collection de jeux de mesures curatées, tu dois fournir les éléments suivants :
 
-- **All measurements** of the person. We do not accept incomplete sets as that would mean some designs would not work with them.
-- **The height** of the person. This helps users select a measurements set closest to their own body.
-- **A picture** of the person to be featured [in our line-up of curated measurements sets](/curated-sets). See below for tips.
+- **Toutes les mesures** de la personne. Nous n'acceptons pas les sets incomplets, car cela signifierait que certains designs ne fonctionneraient pas avec eux.
+- **La taille** de la personne. Cela aide les utilisateurs à sélectionner un ensemble de mesures le plus proche de leur propre corps.
+- **Une photo** de la personne qui sera présentée [dans notre série de mesures](/curated-sets). Tu trouveras ci-dessous des conseils.
 
 
-## Tips for line-up pictures
+## Conseils pour les photos en lignes
 
-We present measurements sets in a line-up style, so the picture should be a full frontal picture where you are standing straight and relaxed with your arms beside your body.
+Nous présentons les jeux de mesures sur une ligne, la photo doit donc être une photo de face où tu te tiens droit et détendu avec tes bras à côté de ton corps.
 
-Below are some tips on how to get good results:
+Tu trouveras ci-dessous quelques conseils pour obtenir de bons résultats :
 
-### Don't stand too close to the camera
+### Ne te tiens pas trop près de l'appareil photo
 
-For best results, ask a friend to take a picture from further away and zoom in. This helps avoid the *fisheye* effect that you get when taking a picture from up close.
+Pour de meilleurs résultats, demande à un ami de prendre une photo de plus loin et de zoomer. Cela permet d'éviter l'effet *fisheye* que l'on obtient lorsqu'on prend une photo de près.
 
 <div className="grid grid-cols-2 gap-2">
 
-![A full-body picture of Joost taken from close](cset1.jpg "A picture taken from close will give you this weird fish eye lens effect")
+![Une photo du corps entier de Joost prise de près](cset1.jpg "Une photo prise de près te donnera cet effet bizarre de lentille de poisson")
 
-![A full-body picture of Joost taken from further](cset2.jpg "A picture taken from further and zoomed in will look a lot better")
+![Une photo du corps entier de Joost prise de plus loin](cset2.jpg "Une photo prise de plus loin et zoomée aura l'air beaucoup plus belle")
 
 </div>
 
-The picture on the left is taken from (too) close. There's nothing really wrong with this picture, but it looks weird. That's because this is taken with a mobile phone and the wide angle on these types of cameras gives you this subtle fish eye effect.
+La photo de gauche est prise de (trop) près. Il n'y a rien de vraiment mauvais dans cette photo, mais elle a l'air bizarre. C'est parce que cette photo a été prise avec un téléphone portable et que le grand angle de ce type d'appareil photo te donne cet effet subtil d'œil de poisson.
 
-The picture on the right was take further away with zoom. This is a much better representation of reality and the pose looks natural because the fish eye effect is neutralized.
+La photo de droite a été prise plus loin avec le zoom. C'est une bien meilleure représentation de la réalité et la pose semble naturelle car l'effet œil de poisson est neutralisé.
 
-#### Stand in front of a white background
+#### Place-toi devant un fond blanc
 
-We will edit out the background of your picture like this:
+Nous allons éditer l'arrière-plan de ta photo comme ceci :
 
-![A full-body picture of Joost on a white background](joost.png "A picture on a white background makes our life easier")
+![Une photo du corps entier de Joost sur un fond blanc.](joost.png "Une image sur un fond blanc nous facilite la vie.")
 
-So you can make that step a lit easier for us if you can pose in front of a white or plain background.
+Tu peux donc nous faciliter cette étape en posant devant un fond blanc ou uni.
 
 

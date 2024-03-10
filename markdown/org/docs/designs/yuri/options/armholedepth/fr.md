@@ -4,5 +4,5 @@ title: "Profondeur d'emmanchure"
 
 Cette option contrôle la profondeur de l'emmanchure.
 
-This option applies to the new v3 way of calculating the armhole depth. If you enable the [legacy armhole depth](/docs/designs/yuri/options/legacyarmholedepth) option, this option will not apply, but instead it's legacy version [armhole depth factor](/docs/designs/yuri/options/armholedepthfactor) will.
+Cette option s'applique à la nouvelle façon v3 de calculer la profondeur de l'emmanchure. Si tu actives l'option [legacy armhole depth](/docs/designs/yuri/options/legacyarmholedepth) , cette option ne s'appliquera pas, mais c'est sa version legacy [armhole depth factor](/docs/designs/yuri/options/armholedepthfactor) qui s'appliquera.
 

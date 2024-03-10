@@ -1,9 +1,9 @@
 ---
-title: "Wrist ease"
+title: "Facilidad de muñeca"
 ---
 
-Affects how wide the end of the sleeve is on some garments. There is no effect for sleeves ending at the biceps or above. There is no effect for sleeves ending at the biceps or above.
+Afecta a la anchura del extremo de la manga en algunas prendas. No hay efecto para las mangas que terminan en el bíceps o por encima. No hay efecto para las mangas que terminan en el bíceps o por encima.
 
-> ##### This option allows negative values
+> ##### Esta opción permite valores negativos
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Debes utilizar la holgura negativa si utilizas un material elástico que quieres que quede bien ajustado. Los monos y los unitardos suelen tener holgura negativa, mientras que otras prendas suelen tener holgura positiva.

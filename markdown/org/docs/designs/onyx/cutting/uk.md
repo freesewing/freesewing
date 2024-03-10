@@ -1,13 +1,13 @@
 ---
-title: "Onyx One-piece: Cutting Instructions"
+title: "Онікс Цілісний: Інструкція з розкрою"
 ---
 
-- Cut **1 front** part _on the fold_ -or- cut **2 front parts** (refer to pattern piece)
-- Cut **1 back** part _on the fold_ -or- cut **2 back parts** (refer to pattern piece)
-- Cut **2 sleeve** parts
-- Cut **1 crotch gusset** part _on the fold_
-- Cut **1 zipper guard** part _on the fold_ (optional)
-- Cut **1 neckband** part _on the fold_ (optional)
-- Cut **2 hood** parts (optional)
-- Cut **1 hood front** part _on the fold_ (optional)
-- Cut **1 skirt** part _on the fold_ (optional)
+- Виріжте **1 передню** частину _на згині_ -або- виріжте **2 передні частини** (див. викрійку)
+- Виріжте **1 частину спинки** , частину _на згині_ -або- виріжте **2 частини спинки** (див. викрійку)
+- Виріжте **2 частини рукава**
+- Виріжте **1 ластовицю для паху** частину _на згин_
+- Виріз **1 захист блискавки** частина _на згині_ (необов'язково)
+- Виріжте **1 шийну стрічку** частину _на згині_ (за бажанням)
+- Виріжте **2 деталі капюшона** (за бажанням)
+- Викроїти **1 передню частину капюшона** частину _на згин_ (необов'язково)
+- Викроїти **1 спідницю** частину _на згин_ (за бажанням)

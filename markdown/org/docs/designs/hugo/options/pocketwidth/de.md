@@ -2,6 +2,6 @@
 title: "Taschenbreite"
 ---
 
-This option controls the width of the front pocket.
+Diese Option steuert die Breite der Vordertasche.
 
 

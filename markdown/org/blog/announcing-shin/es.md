@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "¿Supongo que esto es lo que parece la realidad aumentada?"
 date: "2018-09-29"
 intro: "Hace un tiempo me vi en la necesidad de comprarme un bañador nuevo. Así que elaboré un patrón e hice algunas:"

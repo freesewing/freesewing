@@ -2,7 +2,7 @@
 title: Bild
 ---
 
-If you'd like you can add an **image** to your pattern, for example of the finished make.
+Wenn du möchtest, kannst du ein **Bild** zu deinem Schnittmuster hinzufügen, zum Beispiel von der fertigen Marke.
 
-This can help you remember exactly what this pattern was, which can be useful as you can end up having many patterns saved to your account.
+Das kann dir helfen, dich genau an dieses Muster zu erinnern, was sehr nützlich sein kann, da du am Ende viele Muster in deinem Konto gespeichert hast.
 

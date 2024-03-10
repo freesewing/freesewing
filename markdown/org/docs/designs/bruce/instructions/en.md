@@ -169,7 +169,7 @@ Take it slow, and be **very aware** of where your serger blade is cutting into.
 
 ![Hem the first leg](step11.png)
 
-Time to hem the legs. Hem them as you would do any other stretchy knit. Go for a flexible stitch. You can use a zig-zag stitch or twin needle if you don't have a coverlock or specific flexible stich setting.
+Time to hem the legs. Hem them as you would do any other stretchy knit. Go for a flexible stitch. You can use a zig-zag stitch or twin needle if you don't have a coverlock or specific flexible stitch setting.
 
 <Note>
 
@@ -212,7 +212,7 @@ If you're using a coverlock, put the elastic on top of the good side of the fabr
 
 <Tip>
 
-The length of your elastic will probably difffer from the fabric length, as they stretch differently.
+The length of your elastic will probably differ from the fabric length, as they stretch differently.
 Pinning will help you achieve an even stretch.
 
 Divide both your elastic and boxer waistline into 4 (or 8) parts. Pin elastic and fabric together at these points.

@@ -2,7 +2,7 @@
 title: Naam
 ---
 
-Every pattern has a **name** attribute that is mandatory.
+Elk patroon heeft een **naam** attribuut dat verplicht is.
 
-In other words, you must give each of your patterns sets a name, but that name can be anything you want.
+Met andere woorden, je moet elk van je patroonsets een naam geven, maar die naam mag alles zijn wat je wilt.
 

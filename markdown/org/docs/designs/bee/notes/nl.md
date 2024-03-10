@@ -1,8 +1,8 @@
 ---
-title: "Bee bikini top: Designer Notes"
+title: "Bikinitopje Bee: Designer Notities"
 ---
 
-I made Bee together with Prudencerabbit, as they wanted to make a swimwear pattern that went along with a previous freesewing pattern. It is based on a garment they made and wanted to make available for other people make as well. We worked of FreeSewing's body block Bella as a base, converting it to a single dart block to make the top. During pattern testing one of our contributors TangerineShark made a vartiant with crossover back ties which we found so cool we added it to Bee! You can get this variation by using [option Cross Back Ties](/docs/designs/bee/options/crossbackties/). Bee can also be made reversible by using options [Reversible](/docs/designs/bee/options/reversible), [Duo Colours Ties](/docs/designs/bee/options/duocolorties) & [Neck Tie Colours](/docs/designs/bee/options/necktiecolours). With the previous pattern being retired you can use [Uma](docs/designs/uma) to make a matching bikini bottom.
+Ik heb Bee samen met Prudencerabbit gemaakt, omdat ze een badmodepatroon wilden maken dat samenging met een eerder freeswingpatroon. Het is gebaseerd op een kledingstuk dat ze hebben gemaakt en beschikbaar wilden maken voor andere mensen om ook te maken. We werkten met FreeSewing's body block Bella als basis en zetten het om in een single dart block om de bovenkant te maken. Je kunt deze variatie krijgen door [optie Cross Back Ties](/docs/designs/bee/options/crossbackties/)te gebruiken. Bee kan ook omkeerbaar worden gemaakt met de opties [Omkeerbaar](/docs/designs/bee/options/reversible), [Duo Colours Ties](/docs/designs/bee/options/duocolorties) & [Neck Tie Colours](/docs/designs/bee/options/necktiecolours). Nu het vorige patroon uit de handel is, kun je [Uma](docs/designs/uma) gebruiken om een bijpassend bikinibroekje te maken. During pattern testing one of our contributors TangerineShark made a variant with crossover back ties which we found so cool we added it to Bee!
 
 _
 

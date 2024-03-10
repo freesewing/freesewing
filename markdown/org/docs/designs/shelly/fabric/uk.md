@@ -1,13 +1,13 @@
 ---
-title: "Shelly shirt: Fabric Options"
+title: "Сорочка Шеллі: Варіанти тканин"
 ---
 
-This pattern is designed to work with stretch/knit fabrics, particularly spandex.
+Ця викрійка призначена для роботи зі стрейчевими/трикотажними тканинами, зокрема зі спандексом.
 
-For swim shirts, rash guards, compression shirts, athletic shirts, and other performance-oriented shirts, four-way stretch fabric is strongly recommended. For more casual raglan t-shirts, two-way stretch jersey should work fine.
+Для плавальних сорочок, захисту від висипу, компресійних сорочок, спортивних сорочок та інших сорочок, орієнтованих на продуктивність, настійно рекомендується використовувати тканину з чотиристороннім розтягуванням. Для більш повсякденних футболок реглан підійде двосторонній еластичний трикотаж.
 
-For compression clothes and swimwear, a 20:80 ratio of nylon/polyester to spandex/elastane is recommended. More elastic fabrics allow for greater negative ease, will give better mobility, and will be more forgiving to measurement/design errors.
+Для компресійного одягу та купальників рекомендується співвідношення нейлону/поліестеру та спандексу/еластану 20:80. Еластичніші тканини дають більшу негативну легкість, забезпечують кращу мобільність і більш поблажливі до помилок у вимірах/дизайні.
 
-The raglan sleeves lend themselves well to using different colors/prints for the body and for the sleeves.
+Рукава реглан добре піддаються використанню різних кольорів/принтів для тіла та рукавів.
 
-With swim fabric/spandex, it is recommended to make the neckband out of the same material used for the shirt. For less stretchy fabric, such as cotton jersey knit, ribbing is recommended.
+Якщо ви використовуєте плавальну тканину/спандекс, рекомендується зробити горловину з того ж матеріалу, що і для сорочки. Для менш еластичних тканин, таких як бавовняний трикотаж, рекомендується використовувати ребра жорсткості.

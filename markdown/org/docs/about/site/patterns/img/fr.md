@@ -2,7 +2,7 @@
 title: Image
 ---
 
-If you'd like you can add an **image** to your pattern, for example of the finished make.
+Si tu le souhaites, tu peux ajouter une** image ** à ton patron, par exemple de la pièce finie.
 
-This can help you remember exactly what this pattern was, which can be useful as you can end up having many patterns saved to your account.
+Cela peut t'aider à te souvenir exactement de ce qu'était ce patron, ce qui peut être utile car tu peux finir par avoir de nombreux patrons enregistrés sur ton compte.
 

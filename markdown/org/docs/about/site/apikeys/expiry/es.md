@@ -1,12 +1,12 @@
 ---
-title: Expiry
+title: Caducidad
 ---
 
-Every API key has an **expiry date** after which the key will stop working.
+Cada clave API tiene una fecha de caducidad **** después de la cual la clave dejará de funcionar.
 
-By default, API keys expire after 1 month, but we support up to two years.
+Por defecto, las claves API caducan al cabo de 1 mes, pero admitimos hasta dos años.
 
 <Note>
-When your key is about to exire, you must replace it with a new one. 
-You cannot extend the expiry date of a key once set.
+When your key is about to expire, you must replace it with a new one. 
+No puedes ampliar la fecha de caducidad de una clave una vez fijada.
 </Note>

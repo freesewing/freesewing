@@ -5,6 +5,7 @@ date: "2023-01-15"
 intro: "A FreeSewing user gave modifying Teagan a try, and we love how the results turned out! Here's a little explanation she shared of how she drafted her Teagan and shaped the side seams for a closer fit."
 title: "A Spectacular Stripey Teagan"
 designs: ["teagan"]
+author: 8
 ---
 
 A FreeSewing user gave modifying Teagan a try, and we love how the results turned out! Here's a little explanation she shared of how she drafted her Teagan and shaped the side seams for a closer fit.

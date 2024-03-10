@@ -2,7 +2,7 @@
 title: Titel
 ---
 
-Every bookmark has a **title** attribute that is mandatory.
+Jedes Lesezeichen hat ein **title** Attribut, das obligatorisch ist.
 
-In other words, you must give each of your bookmarks a title, but that title can be anything you want.
+Mit anderen Worten: Du musst jedem deiner Lesezeichen einen Titel geben, aber dieser Titel kann alles sein, was du willst.
 

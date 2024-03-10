@@ -15,9 +15,9 @@ Om Octoplushy te maken heb je het volgende nodig:
 
 <Note>
 
-This list is based on a default Octoplushy and you may need less or more fabric dependant on the [size you are making Octoplushy](/docs/designs/octoplushy/options/size/). 
+Deze lijst is gebaseerd op een standaard Octoplushy en het kan zijn dat je minder of meer stof nodig hebt, afhankelijk van de [grootte die je Octoplushy maakt] (/docs/designs/octoplushy/options/size/). 
 
-The amount of fabric required is also dependant on the [type of Octoplushy you are making](/docs/designs/octoplushy/options/type/).
+De hoeveelheid stof die nodig is hangt ook af van het [type Octoplushy dat je maakt](/docs/designs/octoplushy/opties/type/).
 - De Octopus versie heeft ongeveer 50% meer stof nodig dan de Octoplushy versie.
 - De Squid versie heeft ongeveer 75% meer stof nodig dan de Octoplushy versie.
 

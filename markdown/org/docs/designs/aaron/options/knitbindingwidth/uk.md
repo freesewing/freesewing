@@ -1,5 +1,5 @@
 ---
-title: "Knit Binding Width"
+title: "Ширина в'язання трикотажної в'язки"
 ---
 
-This option controls the width of the knit binding.
+Цей параметр регулює ширину трикотажного переплетення.

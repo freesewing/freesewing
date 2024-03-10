@@ -1,13 +1,13 @@
 ---
-title: "Onyx One-piece: Fabric Options"
+title: "Onyx eendelig: Stof Opties"
 ---
 
-This pattern is designed to work with stretch/knit fabrics, such as swim fabric, fleece, and jersey.
+Dit patroon is ontworpen om te werken met rekbare/gebreide stoffen, zoals zwemstof, fleece en jersey.
 
-For unisuits, unitards, and other performance-oriented and form-fitting garments, four-way stretch fabric such a 20% spandex blend is strongly recommended. For more casual garments, such as one-piece fleece pajamas, kigurumi, rompers, and jumpsuits, most knit fabrics can be used. Fleece can be used to make warm winter pajamas, while jersey knit can be used to make a summer romper.
+Voor unisuits, unitards en andere prestatiegerichte en nauwsluitende kledingstukken wordt vierwegstretchstof zoals een 20% spandexmix sterk aanbevolen. Voor meer casual kledingstukken, zoals fleece pyjama's uit één stuk, kigurumi, rompers en jumpsuits, kunnen de meeste gebreide stoffen worden gebruikt. Met fleece kun je een warme winterpyjama maken, met tricot kun je een zomerse romper maken.
 
-The raglan sleeves lend themselves well to using different colors/prints for the body and for the sleeves. Contrasting fabrics can also be used on the skirt or hood.
+De raglanmouwen lenen zich goed voor het gebruik van verschillende kleuren/prints voor het lijfje en voor de mouwen. Contrasterende stoffen kunnen ook worden gebruikt op de rok of capuchon.
 
-Lined portions of the garment lend themselves well to embroidery, as the stabilizer (strongly recommended) and stitching will be kept away from the wearer's body by the lining. The chest, next to the zipper, is a particularly good spot, both because it's prominent, and because the chest doesn't stretch vertically much, since it's near the zipper.
+Gevoerde delen van het kledingstuk lenen zich goed voor borduren, omdat de versteviging (sterk aanbevolen) en het stiksel door de voering weggehouden worden van het lichaam van de drager. De borst, naast de rits, is een bijzonder goede plek, zowel omdat hij prominent aanwezig is als omdat de borst verticaal niet veel uitrekt, omdat hij vlakbij de rits zit.
 
-With swim fabric/spandex, it is recommended to make the neckband out of the same material used for the body. For less stretchy fabric, such as cotton jersey knit, ribbing is recommended.
+Bij zwemstof/spandex is het aan te raden om de nekband van hetzelfde materiaal te maken als het lijfje. Voor minder rekbare stof, zoals gebreid katoen jersey, wordt ribboord aanbevolen.

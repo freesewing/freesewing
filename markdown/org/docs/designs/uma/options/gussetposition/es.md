@@ -1,6 +1,6 @@
 ---
-title: "Gusset position"
+title: "Posición del fuelle"
 ---
 
-This option allows you to shift the gusset forward or backward.
+Esta opción te permite desplazar el fuelle hacia delante o hacia atrás.
 

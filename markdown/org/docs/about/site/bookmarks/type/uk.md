@@ -2,9 +2,9 @@
 title: Тип
 ---
 
-Every bookmark has a **type** attribute that is mandatory.
+Кожна закладка має обов'язковий атрибут **типу** .
 
-When you manually create a bookmark, the type is always **custom** so you cannot choose it.
+Коли ви створюєте закладку вручну, тип завжди **користувацький** , тому ви не можете його вибрати.
 
-Other types include **pattern**, **docs**, or **set** which will automatically be set when you bookmark a pattern, documentation page, or measurements set respectively.
+Інші типи включають **деталі**, **документи**або **набір** , які будуть автоматично встановлені, коли ви зробите закладку на деталь, сторінку документації або набір вимірів відповідно.
 

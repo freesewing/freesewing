@@ -31,16 +31,16 @@ om bij de schouder te passen.
 
 </Note>
 
-The width of the sleevecap (and thus the width of the sleeve at the bottom of the armhole) is equal to the distance between points 1 and 2. That distance depends on the measurements used, the amount of ease, the cut of the garment and so on. For our sleevecap, all we need to know is that we start with a given width. And while that width can be influenced by other factors, we can not influence it by any of the sleevecap options.
+The width of the sleevecap (and thus the width of the sleeve at the bottom of the armhole) is equal to the distance between points 1 and 2. Die afstand hangt af van de gebruikte maten , de hoeveelheid gemak, de snit van het kledingstuk enzovoort. For our sleevecap, all we need to know is that we start with a given width. And while that width can be influenced by other factors, we can not influence it by any of the sleevecap options.
 
 ![Onderdeel de bovenkant van de mouwkop](sleevecaptop.svg)
 
-De hoogte van de mouwkop is gelijk aan de afstand tussen de punten 3 en 4. The exact height is a trade-off between the measurements used, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control the exact value. Maar er zijn twee opties die de vorm van onze mouwkop bepalen:
+De hoogte van de mouwkop is gelijk aan de afstand tussen de punten 3 en 4. De exacte hoogte is een afweging tussen de gebruikte maten, opties, gemak, mouwomslaggemak en het feit dat de mouw uiteindelijk in het armsgat moet passen. So the height may vary, and we don't control the exact value. Maar er zijn twee opties die de vorm van onze mouwkop bepalen:
 
 - [Mouwkop top X](/docs/designs/breanna/options/sleevecaptopfactorx/) : Bepaalt de horizontale plaatsing van punt 3 en 4
 - [Mouwkop top Y](/docs/designs/breanna/options/sleevecaptopfactory/) : Bepaalt de verticale plaatsing van punt 4
 
-In other words, point 4 can be made higher and lower and, perhaps less intutitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
+In other words, point 4 can be made higher and lower and, perhaps less intuitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
 
 ### De inflectiepunten
 

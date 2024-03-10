@@ -103,7 +103,7 @@ Vous aurez peut-être besoin de vous entraîner un peu pour y arriver.
 
 ![Marquer les extrémités du biais](step03f.png)
 
-Prenez l'un des bords et étirez-le le long des 3 cm en le séparant du point de départ comme vous le feriez lors de la couture.
+Prenez l'un des bords et étirez-le le le long des 3 cm en le séparant du point de départ comme vous le feriez lors de la couture.
 
 Marquer la liaison où elle atteint le point de départ. Faites la même chose pour l'autre extrémité.
 
@@ -113,7 +113,7 @@ Marquer la liaison où elle atteint le point de départ. Faites la même chose p
 
 Pliez votre débardeur (A-shirt) de la façon dont il vous sera le plus facile pour placer les deux extrémités du biais endroit contre endroit, en alignant les repères. Coudre les extrémités sur les repères.
 
-> 6 cm n'est pas beaucoup, mais ça devrait suffire pour placer les deux bords confortablement sous votre machine pour les coudre.
+> 6 cm, ce n'est pas beaucoup, mais devrait suffire pour que les deux bords soient confortablement sous votre machine à coudre pour les coudre ensemble.
 
 ### Terminer les 6 derniers cm de biais
 

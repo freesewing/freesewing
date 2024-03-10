@@ -1,14 +1,15 @@
 ---
-title: "Our beloved Skully now available in 3d"
-caption: "Doesn't it look sooo good"
+title: "Наша улюблена Скаллі тепер доступна у форматі 3d"
+caption: "Хіба це не виглядає чудово?"
 date: 20231101
-intro: "A real-life skully, with hair and needle"
+intro: "Справжній Скаллі, з волоссям і голкою"
 designs:
-  - "skully"
+  - "Скаллі."
 maker: Йост
+author: 132
 ---
 
-One day there was an unexpected delivery on my doorstep. I wasn't really certain what to make of it because I didn't recall ordering anything lately. Suffice to say I was not at all prepared for the awesomeness inside because when I opened the box I found this lovingly handcrafted real-life version of Skully, FreeSewing's beloved logo and mascot.
+Одного разу на моєму порозі з'явилася несподівана посилка. Я не була впевнена, що з цим робити, тому що не пам'ятаю, щоб я щось замовляла останнім часом. Досить сказати, що я зовсім не була готова до того, що там всередині, тому що коли я відкрила коробку, то побачила цю любовно зроблену вручну реальну версію Скаллі, улюбленого логотипу і талісмана FreeSewing.
 
-This is the wonderful work for Wouter who also made [the design](/designs/skully). So you can go and [make a Skully for yourself](/new/skully). You know you want one!
+Це чудова робота для Wouter, який також зробив [дизайн](/designs/skully). Тож ви можете піти і [зробити Скаллі для себе](/new/skully). Ти знаєш, що хочеш його!
 

@@ -4,14 +4,14 @@ title: "Спред по рукавному покриттю Q3 висхідни�
 
 ***
 
-![Розширення догори в третьому квадранті пілочки рукава](./sleevecapq3spread1.svg)
+![The upward spread in the third quadrant of the sleevecap](./sleevecapq3spread1.svg)
 
 Ця опція контролює розкид вгору в третьому квадранті ковпачка рукава.
 
 <Tip>
 
-See [understanding the sleevecap](/docs/designs/brian/options#understanding-the-sleevecap) for an in-depth
-look into how the sleevecap is constructed and the influence of the different options on its shape.
+Дивіться [розуміння конструкції манжета](/docs/designs/brian/options#understanding-the-sleevecap) для детального
+розгляду того, як побудований манжет і як різні варіанти впливають на його форму.
 
 </Tip>
 

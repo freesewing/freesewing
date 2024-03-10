@@ -1,8 +1,8 @@
 ---
-title: "Waist band overlap"
+title: "Перекриття поясного ременя"
 ---
 
-The width of the overlap by the zipper. This is normally used to hide snaps, buttons, or hooks that reinforce the zipper at the waistband.
+Ширина перекриття застібки-блискавки. Зазвичай це використовується, щоб приховати застібки, кнопки або гачки, які зміцнюють блискавку на поясі.
 
 
 

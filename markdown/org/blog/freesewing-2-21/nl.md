@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Een roze Hi en zijn BLÅHAJ voorouder"
 date: "2022-06-27"
 intro: "FreeSewing 2.21 voegt Bob, Hi, Lucy, Noble en Unice ontwerpen toe"

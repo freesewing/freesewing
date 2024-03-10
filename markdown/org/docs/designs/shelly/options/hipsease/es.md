@@ -2,5 +2,5 @@
 title: "Holgura de cadera"
 ---
 
-Controls how wide your shirt will be at the bottom hem. This option is only used if the straight sides option is disabled.
+Controla lo ancha que será tu camisa en el dobladillo inferior. Esta opción sólo se utiliza si la opción lados rectos está desactivada.
 

@@ -1,14 +1,14 @@
 ---
-title: mergeI18n
+title: utils.mergeI18n()
 ---
 
-The `mergeI18n` method merges translation files from different designs.
+The `utils.mergeI18n()` function merges translation files from different designs.
 
 When your design re-uses parts from other designs, it should provide
 translation for those parts and any strings or options they use.  Rather than
 re-creating this content in your own design, you can pull it out of of the
 design you are using the part from by importing the `i18n` named export, and
-then use this method to merge it with your own translations.
+then use this function to merge it with your own translations.
 
 ## Signature
 
@@ -21,7 +21,7 @@ Object mergeI18n({
 
 ## Use
 
-In its simplest form, this method will receive an Array of translation data
+In its simplest form, this function will receive an Array of translation data
 (typically the `i18n` named export of a design) and merge them:
 
 ```js
@@ -49,7 +49,7 @@ The configuration object takes 3 top-level properties:
 - `p`: Specifies configuration for how to merge the part name translations (under `p` in the translation files)
 - `o`: Specifies configuration for how to merge the option translations (under `p` in the translation files)
 
-For **each of the `s`, `p`, and `o` keys** you can specificy the followig properties:
+For **each of the `s`, `p`, and `o` keys** you can specify the following properties:
 
 - `drop`: An Array with the keys of entries to not merge (drop). Keys that are not in this array will be merged.
 - `keep`: An Array with the keys of entries to merge (keep). Keys that are not in this array will not be merged.
@@ -75,7 +75,7 @@ const i18n = mergeI18n(
 )
 ```
 
-The method will check each key under the `s`, `p`, and `o` top-level keys in the translation files.
+The function will check each key under the `s`, `p`, and `o` top-level keys in the translation files.
 For each it will:
 
 - Check whether there is a `drop` array configured. If there is, it will remove the entry if its key is included in the `drop` Array.

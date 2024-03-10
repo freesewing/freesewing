@@ -1,6 +1,6 @@
 ---
-title: "Side shape"
+title: "Zijvorm"
 ---
 
-Controls how the side seam is curved. Zero creates a straight line from the armpit to the side of the hips. Positive values add material and give the side seam a rounded/convex shape, while negative values remove material and give the side seam an hourglass/concave shape. This option will have no effect if the 'straight sides' option is enabled.
+Bepaalt hoe de zijnaad wordt gebogen. Nul creëert een rechte lijn van de oksel naar de zijkant van de heupen. Positieve waarden voegen materiaal toe en geven de zijnaad een afgeronde/convexe vorm, terwijl negatieve waarden materiaal verwijderen en de zijnaad een zandloper/concave vorm geven. Deze optie heeft geen effect als de optie 'rechte kanten' is ingeschakeld.
 

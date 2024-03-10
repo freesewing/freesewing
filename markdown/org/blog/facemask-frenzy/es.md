@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "El Dr. Dragnea, del hospital universitario de Amberes, con una mascarilla Florence"
 date: "2020-03-19"
 intro: "Llamando a todos los creadores: Aquí hay un patrón de mascarilla en un PDF de una página, ve a hacer algunas y ayuda a vencer este bicho"
@@ -9,13 +9,13 @@ title: "Llamando a todos los creadores: Aquí hay un patrón de mascarilla en un
 
 <Note>
 
-**TL;DR: Please make facemasks for healthcare workers**
+**TL;DR: Por favor, haz mascarillas para el personal sanitario**
 
 
- - PDF pattern for our Florence face mask:
-   - [A4 facemask pattern](/florence-facemask-freesewing.org.a4.pdf)
-   - [Letter facemask pattern](/florence-facemask-freesewing.org.letter.pdf)
- - [Instructions for the facemask pattern](/docs/designs/florence/instructions/)
+ - Patrón en PDF de nuestra mascarilla Florence:
+   - [Patrón de mascarilla A4](/florence-facemask-freesewing.org.a4.pdf)
+   - [Patrón de mascarilla Letter](/florence-facemask-freesewing.org.letter.pdf)
+ - [Instrucciones para el patrón de mascarilla](/docs/designs/florence/instructions/)
 
 </Note>
 

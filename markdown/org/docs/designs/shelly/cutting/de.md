@@ -1,8 +1,8 @@
 ---
-title: "Shelly shirt: Cutting Instructions"
+title: "Shelly Shirt: Schnittanleitung"
 ---
 
-- Cut **1 front** part on the fold
+- Schneide **1 vorderen** Teil auf der Falte
 - Schneide **1 Rücken** Teil auf der Falte
-- Cut **2 sleeve** parts
-- Cut **1 neckband** part on the fold
+- Schnitt **2 Hülse** Teile
+- Schneide **1 Nackenband** Teil auf der Falte

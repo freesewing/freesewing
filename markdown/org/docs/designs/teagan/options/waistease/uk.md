@@ -2,6 +2,6 @@
 title: "Легкість талії"
 ---
 
-If (and only if) you request to [fit the waist](/docs/designs/teagan/options/curvetowaist), this option allows you to control the amount of ease at the waist.
+Якщо (і тільки якщо) ви просите [облягати талію](/docs/designs/teagan/options/curvetowaist), ця опція дозволяє контролювати ступінь свободи в талії.
 
-If the waist is not fitted, this option is ignored.
+Якщо талія не приталена, ця опція ігнорується.

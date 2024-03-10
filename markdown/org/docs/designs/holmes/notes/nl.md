@@ -1,5 +1,5 @@
 ---
-title: "Holmes deerstalker hat: Designer Notes"
+title: "Holmes hertenhoed: Ontwerpnotities"
 ---
 
 The idea of Holmes hat came from [a YouTube video](https://www.youtube.com/watch?v=H24VBFMZJF4) I was watching once, in which Bernadette Banner is making a Sherlock Holmes deerstalker hat, and struggles to find the right shape of the gores to form the dome shape, which ends up doing by trial and error.

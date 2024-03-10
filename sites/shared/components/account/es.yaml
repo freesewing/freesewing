@@ -12,7 +12,8 @@ actions: Acciones
 created: Creado
 updated: Actualizado
 expires: Caduca en
-role: Role
+role: Papel
+yourApikeys: Your API Keys
 yourProfile: Tu perfil
 yourPatterns: Tus patrones
 yourSets: Tus conjuntos de medidas
@@ -39,10 +40,10 @@ mfaEnabled: La autenticación de dos factores está activada
 mfaDisabled: La autenticación de dos factores está desactivada
 mfaSetup: Configura la autenticación de dos factores
 mfaAdd: Añade FreeSewing a tu aplicación Authenticator escaneando el código QR de arriba.
-mfaScratchCodes: MFA Scratch Codes
-mfaScratchCodesMsg1: You can use any of these scratch codes as a one-time MFA code when you do not have access to your code-generating app (for example, when you've lost your phone).
-mfaScratchCodesMsg2: You can use each of these codes only once. Write them down, because this is the only time you will get to see them.
-copyToClipboard: Copy to clipboard
+mfaScratchCodes: Códigos de rascado MFA
+mfaScratchCodesMsg1: Puedes utilizar cualquiera de estos códigos "rasca y gana" como código MFA de un solo uso cuando no tengas acceso a tu aplicación generadora de códigos (por ejemplo, cuando hayas perdido el teléfono).
+mfaScratchCodesMsg2: Puedes utilizar cada uno de estos códigos una sola vez. Anótalos, porque es la única vez que podrás verlos.
+copyToClipboard: Copiar al portapapeles
 confirmWithPassword: Introduce tu contraseña para confirmar esta acción
 confirmWithMfa: Introduce un código de tu aplicación Authenticator para confirmar esta acción
 enableMfa: Activar la autenticación de dos factores
@@ -50,21 +51,21 @@ disableMfa: Desactivar la autenticación de dos factores
 language: Idioma
 developer: Desarrollador
 design: Diseño
-patternMetadata: Pattern metadata
-clonePattern: Clone pattern
-updatePattern: Update pattern
+patternMetadata: Metadatos del patrón
+clonePattern: Patrón de clonación
+updatePattern: Patrón de actualización
 reload: Recargar cuenta
 export: Exporta tus datos
-exportMsg: Click below to export your personal data
-exportNote: The EU's General Data Protection Regulation (GDPR) ensures your so-called right to data portability — the right to obtain and reuse your personal data for your own purposes, or across different services.
-exportDownload: "Your data was exported and is available for download at the following location:"
+exportMsg: Haz clic a continuación para exportar tus datos personales
+exportNote: El Reglamento General de Protección de Datos (RGPD) de la UE garantiza tu llamado derecho a la portabilidad de datos, es decir, el derecho a obtener y reutilizar tus datos personales para tus propios fines, o a través de diferentes servicios.
+exportDownload: "Tus datos se exportaron y están disponibles para su descarga en la siguiente ubicación:"
 review: Revisa tu consentimiento
 restrict: Restringir el procesamiento de sus datos
 disable: Desactivar tu cuenta
 remove: Elimina tu cuenta
 proceedWithCaution: Proceder con cautela
-restrictWarning: While no data will be removed, this will disable your account. Furthermore, you can not undo this on your own, but will have to contact support when you want to restore access to your account.
-noWayBack: There is no way back from this.
+restrictWarning: Aunque no se eliminará ningún dato, esto inhabilitará tu cuenta. Además, no podrás deshacerlo por tu cuenta, sino que tendrás que ponerte en contacto con el servicio de asistencia cuando quieras restablecer el acceso a tu cuenta.
+noWayBack: No hay vuelta atrás.
 mdSupport: Puedes utilizar markdown aquí
 or: o
 continue: Continuar
@@ -108,10 +109,10 @@ controlTitle: '¿Qué experiencia de usuario prefieres?'
 #img
 imgTitle: '¿Qué tal una foto?'
 imgDragAndDropImageHere: Arrastra y suelta una imagen aquí
-imgPasteUrlHere: Paste an image location (url) here
+imgPasteUrlHere: Paste an image location (URL) here
 imgSelectImage: Selecciona una imagen
 #newsletter
-newsletterTitle: '¿Quieres recibir el boletín de FreeSewing?'
+newsletterTitle: '¿Le gustaría recibir el boletín de noticias FreeSewing?'
 newsletterYes: Sí, deseo recibir el boletín
 newsletterYesd: Una vez cada 3 meses recibirás un correo electrónico nuestro con contenido sano y honesto. Sin seguimiento, sin anuncios, sin tonterías.
 newsletterNod: Siempre puedes cambiar de opinión más adelante. Pero hasta que no lo hagas, no te enviaremos ningún boletín.
@@ -123,7 +124,7 @@ imperialUnitsd: Elige esta opción si prefieres las pulgadas a los centímetros.
 unitsTitle: '¿Qué unidades prefieres?'
 #username
 usernameTitle: '¿Qué nombre de usuario te gustaría?'
-usernameAvailable: Username is available
+usernameAvailable: El nombre de usuario está disponible
 usernameNotAvailable: El nombre de usuario no está disponible
 #email
 emailTitle: '¿Dónde podemos localizarte en caso de que tengamos una buena razón para ello (como cuando olvidaste tu contraseña)?'
@@ -132,16 +133,18 @@ oneMomentPlease: Un momento, por favor
 emailChangeConfirmation: Hemos enviado un correo electrónico a tu nueva dirección para confirmar este cambio.
 vagueError: Algo ha ido mal y no estamos seguros de cómo solucionarlo. Por favor, inténtalo de nuevo o pide ayuda a un ser humano.
 #github
-githubTitle: Link your GitHub identity
-githubWhy1: Enter your GitHub username and email here and we will use them when interacting with GitHub on your behalf.
-githubWhy2: Note that both your GitHub username and email is public info. This merely allows us to make a link between your FreeSewing account and GitHub account.
-githubWhy3: For example, when you report a problem on this website, we can mention you so you will receive notifications when there is an update. For this, your username is sufficient.
-githubWhy4: When you submit a showcase post or make changed to our content, we can credit those commits to you if we have both your username and the email address you use on GitHub.
-tooComplex: If all of this in confusing, you don't have to provide this info. It's an advanced feature.
+githubTitle: Vincula tu identidad de GitHub
+githubWhy1: Introduce aquí tu nombre de usuario y correo electrónico de GitHub y los utilizaremos cuando interactuemos con GitHub en tu nombre.
+githubWhy2: Ten en cuenta que tanto tu nombre de usuario de GitHub como tu correo electrónico son información pública. Esto simplemente nos permite establecer un vínculo entre tu cuenta de FreeSewing y tu cuenta de GitHub.
+githubWhy3: Por ejemplo, cuando informas de un problema en este sitio web, podemos mencionarte para que recibas notificaciones cuando haya una actualización. Para ello, basta con tu nombre de usuario.
+githubWhy4: Cuando envías una publicación de escaparate o realizas cambios en nuestro contenido, podemos acreditarte esos commits si disponemos tanto de tu nombre de usuario como de la dirección de correo electrónico que utilizas en GitHub.
+tooComplex: Si todo esto te resulta confuso, no tienes que proporcionar esta información. Es una función avanzada.
 #languge
 languageTitle: '¿Qué lengua prefieres?'
 #password
 passwordTitle: Algo que sólo tú sabes
+#id
+userId: User ID
 #api key
 newApikey: Generar una nueva clave API
 keyNewInfo: Crea una nueva clave API para conectarte al backend de FreeSewing de forma automatizada.
@@ -163,28 +166,28 @@ cancel: Cancelar
 keySecretWarning: Esta es la única vez que puedes ver la clave secreta, asegúrate de copiarla.
 keyExpired: Esta clave API ha caducado
 deleteKeyWarning: Eliminar una clave API no se puede deshacer.
-keyDocsTitle: Refer to FreeSewing.dev for documentation on using API keys (English only)
-keyDocsMsg: This is an advanced feature aimed at developers or anyone who wants to interact with our backend directly.
-apiCalls: API Calls
+keyDocsTitle: Consulta en FreeSewing.dev la documentación sobre el uso de claves API (sólo en inglés)
+keyDocsMsg: Se trata de una función avanzada dirigida a desarrolladores o a cualquiera que desee interactuar directamente con nuestro backend.
+apiCalls: Llamadas a la API
 #bookmarks
-newBookmark: Add a Bookmark
-bookmark: Bookmark
-bookmarks: Bookmarks
+newBookmark: Añadir un favorito
+bookmark: Marca
+bookmarks: Marcadores
 type: Tipo
-location: Location
+location: Ubicación
 title: Título
 new: Nuevo
 designBookmark: Diseños
 patternBookmark: Patrones
 setBookmark: Conjuntos de medidas
-csetBookmark: Curated Measurements Sets
+csetBookmark: Conjuntos de Medidas Curadas
 docBookmark: Documentación
-customBookmark: Custom Bookmarks
-yourBookmarks: Your bookmarks
-bookmarkThisThing: Bookmark this { thing }
-page: Page
+customBookmark: Marcadores personalizados
+yourBookmarks: Tus favoritos
+bookmarkThisThing: Marca este { thing }
+page: Página
 #sets
-set: Measurements Set
+set: Conjunto de medidas
 name: Nombre
 setNameDesc: Un nombre para identificar este conjunto de medidas
 setNewInfo: Crea un nuevo conjunto de medidas que luego podrás utilizar para generar patrones.
@@ -202,87 +205,97 @@ public: Público
 publicSet: Conjunto de medidas públicas
 privateSet: Conjunto de medidas privadas
 publicSetDesc: A otros se les permite utilizar estas mediciones para generar o probar patrones
-privateSetDesc: Estas medidas no pueden ser utilizadas por otros usuarios o visitantes
+privateSetDesc: These measurements cannot be used by other users or visitors
 permalink: Permalink
 editThing: Editar {thing}
 saveThing: Guardar {thing}
-filterByDesign: Filter by design
-noFilter: Do not filter
-filterByDesignDocs: If you have a specific design in mind, you can <b>filter by design</b> to only list those measurements that are required for this design.
-setLacksMeasiesForDesign: This set lacks measurements required for this pattern
-setHasMeasiesForDesign: This set has all measurements required for this pattern
-someSetsLacking: Some of your sets lack the measurments required to generate this pattern
-theseSetsReady: These sets have all required measurments to generate this pattern
+filterByDesign: Filtrar por diseño
+noFilter: No filtrar
+filterByDesignDocs: Si tienes en mente un diseño concreto, puedes <b>filtrar por diseño</b> para que sólo aparezcan las medidas necesarias para ese diseño.
+setLacksMeasiesForDesign: A este conjunto le faltan las medidas necesarias para este patrón
+setHasMeasiesForDesign: Este set tiene todas las medidas necesarias para este patrón
+someSetsLacking: Some of these sets lack the measurements required to generate this pattern
+theseSetsReady: These sets have all required measurements to generate this pattern
 chooseSet: Elige una serie de medidas
 patternForWhichSet: '¿Para qué conjunto de medidas debemos generar un patrón?'
 bookmarkedSets: Conjuntos de medidas que has marcado como favoritos
-curatedSets: FreeSewing's curated measurements sets
+curatedSets: Conjuntos de medidas curadas de FreeSewing
 curatedSetsAbout: Conjuntos de medidas curadas por FreeSewing que puedes utilizar para probar nuestra plataforma, o tus diseños.
-curateCuratedSets: Curate our selection of curated measurements sets
+curateCuratedSets: Curar nuestra selección de conjuntos de medidas curadas
 useThisSet: Utiliza este conjunto de medidas
-ownSets: Your own measurements sets
-noOwnSets: You do not have any of your own measurements sets (yet)
-pleaseMtm: Because our patterns are bespokee, we strongly suggest you take accurate measurements.
-noOwnSetsMsg: You can store your measurements as a measurements set, after which you can generate as many patterns as you want for them.
+ownSets: Tus propios conjuntos de medidas
+noOwnSets: No tienes ningún conjunto de medidas propias (todavía)
+pleaseMtm: Because our patterns are bespoke, we strongly suggest you take accurate measurements.
+noOwnSetsMsg: Puedes almacenar tus medidas como un conjunto de medidas, tras lo cual puedes generar tantos patrones como quieras para ellas.
 measurements: Medidas
-chooseASet: Choose a measurements set
-showImage: Show image
-suggestForCuration: Suggest for curation
-suggestCset: Suggest a measurements set for curation
-csetAllMeasies: To ensure curated measurements sets work for all designs, you need to provide a full set of measurements.
-csetMissing: Your measurements set is missing the following measurements
-allMeasiesAvailable: All measurements are available.
-csetHeightMsg1: To allow organizing and presenting our curated sets in a structured way, we organize them by height.
-csetImgMsg: Finally, we need a picture. Please refer to the documentation to see what makes a good picture for a curated measurements set.
+chooseASet: Elige un conjunto de medidas
+showImage: Mostrar imagen
+suggestForCuration: Sugerir para curar
+suggestCset: Sugiere un conjunto de medidas para la curación
+csetAllMeasies: Para garantizar que los conjuntos de medidas curados funcionan para todos los diseños, tienes que proporcionar un conjunto completo de medidas.
+csetMissing: A tu juego de medidas le faltan las siguientes medidas
+allMeasiesAvailable: Todas las medidas están disponibles.
+csetHeightMsg1: Para poder organizar y presentar nuestros conjuntos comisariados de forma estructurada, los organizamos por altura.
+csetImgMsg: Por último, necesitamos una imagen. Consulta la documentación para ver qué es una buena imagen para un conjunto de medidas curadas.
 docs: Documentación
-csetNotesMsg: If you would like to add any notes, you can do so here.
-thankYouVeryMuch: Thank you very much
-csetSuggestedMsg: Your submission has been registered and will be processed by one of our curators.
-itIsAvailableAt: It is available at
-csetNameMsg: Each curated set has a name. You can suggest your own name or a pseudonym.
+csetNotesMsg: Si quieres añadir alguna nota, puedes hacerlo aquí.
+thankYouVeryMuch: Muchas gracias
+csetSuggestedMsg: Tu envío ha sido registrado y será procesado por uno de nuestros conservadores.
+itIsAvailableAt: Está disponible en
+csetNameMsg: Cada conjunto curado tiene un nombre. Puedes sugerir tu propio nombre o un seudónimo.
+missing: Missing
+andMore: and more
+unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
 patternNew: Generar un nuevo patrón
-patternNewInfo: Pick a design, add your measurements set, and we'll generate a bespoke sewing pattern for you.
+patternNewInfo: Elige un diseño, añade tu juego de medidas y generaremos un patrón de costura a medida para ti.
 designNew: Crear un nuevo diseño
 designNewInfo: Los diseños de FreeSewing son pequeños paquetes de código JavaScript que generan patrones. No es difícil crear tus propios diseños, y tenemos un tutorial detallado para que empieces.
 pluginNew: Crear un nuevo plugin
 pluginNewInfo: La funcionalidad de FreeSewing puede ampliarse aún más con plugins. Crear un plugin es fácil, y tenemos una guía que te llevará de principio a fin.
-showcaseNew: Create a new showcase post
-showcaseNewInfo: If you would like to share something you (or someone else) made based on our designs, you can start a draft showcase post here.
-blogNew: Create a new blog post
-blogNewInfo: If you would like to write on the FreeSewing blog, you can start a draft blog post here.
-imgNew: Generate a social media image
-imgNewInfo: Use our generator to create an image you can share on social media, supports wide (classic), square (Instagram), or tall (stories/TikTok) formats.
-csetNew: Suggest a new curated measurements set
-csetNewInfo: We curate a collection of vetted measurments sets that we use to test patterns. You can suggest a measurements set here.
-opackNew: Suggest a new options pack
-opackNewInfo: We curate a collection of vetted option packs for each of our designs. You can suggest your options here.
-newPopular: Most popular
-newShare: Share / Show
-newDev: Design / Develop
+showcaseNew: Crear una nueva entrada de escaparate
+showcaseNewInfo: Si quieres compartir algo que tú (u otra persona) hayas hecho basándote en nuestros diseños, puedes iniciar un borrador de publicación aquí.
+blogNew: Crear una nueva entrada en el blog
+blogNewInfo: Si quieres escribir en el blog de FreeSewing, puedes iniciar un borrador de entrada aquí.
+imgNew: Generar una imagen en las redes sociales
+imgNewInfo: Utiliza nuestro generador para crear una imagen que puedas compartir en las redes sociales, admite los formatos ancho (clásico), cuadrado (Instagram) o alto (stories/TikTok).
+csetNew: Sugerir un nuevo conjunto de medidas curadas
+csetNewInfo: We curate a collection of vetted measurements sets that we use to test patterns. You can suggest a measurements set here.
+opackNew: Sugerir un nuevo paquete de opciones
+opackNewInfo: Seleccionamos una colección de paquetes de opciones para cada uno de nuestros diseños. Puedes sugerir tus opciones aquí.
+newPopular: Más populares
+newShare: Compartir / Mostrar
+newDev: Diseño / Desarrollo
 generateANewThing: "Genera un nuevo { thing }"
-website: Website
-linkedIdentities: Linked Identities
-websiteTitle: Do you have a website or other URL you'd like to add?
-platformTitle: Who are you on { platform }?
-platformWhy: We do not use this data in any way. This is only here so FreeSewing users can connect the dots across platforms.
-security: Security
-revealPassword: Reveal password
-hidePassword: Hide password
+linkedIdentities: Identidades vinculadas
+github: GitHub
+instagram: Instagram
+mastodon: Mastodon
+reddit: Reddit
+twitch: Twitch
+tiktok: TikTok
+website: Página web
+websiteTitle: '¿Tienes un sitio web u otra URL que quieras añadir?'
+platformTitle: '¿Quién eres tú en { platform }?'
+platformWhy: No utilizamos estos datos de ninguna manera. Esto sólo está aquí para que los usuarios de FreeSewing puedan conectar los puntos entre plataformas.
+security: Seguridad
+revealPassword: Revelar contraseña
+hidePassword: Ocultar contraseña
 #Design view
 designs: Diseños
 code: Código
-aboutThing: About { thing }
+aboutThing: Acerca de { thing }
 requiredMeasurements: Medidas requeridas
 optionalMeasurements: Medidas opcionales
+none: Ninguna
 designOptions: Opciones de diseño
-parts: Parts
+parts: Piezas
 plugins: Plugins
-specifications: Specifications
-visitShowcase: Visit showcase post
+specifications: Especificaciones
+visitShowcase: Visita el escaparate
 examples: Ejemplos
-noExamples: We currently do not have any examples for this design
-noExamplesMsg: We rely on the FreeSewing community to submit examples in our showcase posts.
-ownPublicPattern: This is the public view on one of your own patterns. For more options, access the private view.
-ownPrivatePattern: This is the private view on your pattern. The public view will work for you even when the pattern is private. It will only work for others when the pattern is public.
-privateView: Private view
-publicView: Public view
+noExamples: Actualmente no disponemos de ejemplos de este diseño
+noExamplesMsg: Confiamos en la comunidad FreeSewing para que nos envíe ejemplos en nuestras entradas de escaparate.
+ownPublicPattern: Esta es la vista pública de uno de tus propios patrones. Para más opciones, accede a la vista privada.
+ownPrivatePattern: Esta es la vista privada de tu patrón. La vista pública funcionará para ti aunque el patrón sea privado. Sólo funcionará para los demás cuando el patrón sea público.
+privateView: Vista privada
+publicView: Vista pública

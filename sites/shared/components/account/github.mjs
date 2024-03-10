@@ -43,7 +43,7 @@ export const GithubSettings = () => {
         current={githubEmail}
         update={setGithubEmail}
         valid={(val) => val.length > 0}
-        placeholder={'joostdecock'}
+        placeholder={'joost@joost.at'}
         docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/github`} />}
       />
       <StringInput
@@ -52,7 +52,7 @@ export const GithubSettings = () => {
         current={githubUsername}
         update={setGithubUsername}
         valid={(val) => val.length > 0}
-        placeholder={'joost@joost.at'}
+        placeholder={'joostdecock'}
         docs={<DynamicMdx language={i18n.language} slug={`docs/about/site/account/github`} />}
       />
       <SaveSettingsButton btnProps={{ onClick: save }} />

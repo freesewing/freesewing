@@ -2,4 +2,4 @@
 title: "Hoodfrontbonus"
 ---
 
-Controls how far forward the hood comes over the forehead.
+Контролює, наскільки далеко вперед висувається капюшон над чолом.

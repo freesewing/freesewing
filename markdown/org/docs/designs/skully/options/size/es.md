@@ -2,6 +2,6 @@
 title: "Talla"
 ---
 
-Skully can be made in different sizes. The default is about 75% of a normal human head (about 16cm high).
+Skully puede fabricarse en diferentes tamaños. El valor por defecto es aproximadamente el 75% de una cabeza humana normal (unos 16 cm de altura).
 
-If you set the percentage to 100%, and you enter your own head measurwement, Skully will be approximately the size of your head.
+If you set the percentage to 100%, and you enter your own head measurement, Skully will be approximately the size of your head.

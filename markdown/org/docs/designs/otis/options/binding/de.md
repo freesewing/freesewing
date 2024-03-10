@@ -1,7 +1,7 @@
 ---
-title: "Binding"
+title: "Binden"
 ---
 
-Binding determines the size of the binding for the neck and leg openings.
+Die Bindung bestimmt die Größe der Bindung für den Hals- und Beinausschnitt.
 
-The binding is a percentage of the waist divided by 4. Default is 11%
+Die Bindung ist ein Prozentsatz der Taille geteilt durch 4. Standard ist 11%

@@ -1,6 +1,6 @@
 ---
-title: "Wrist ease"
+title: "Facilidad de muñeca"
 ---
 
-Affects how wide the end of the sleeve is on some shirts. There is no effect for sleeves ending at the biceps or above. For longer sleeves, the wrist measurement and this wrist ease option have a progressively larger effect, reaching full effect for long sleeved shirts (sleeve length of 100% or greater).
+Afecta a la anchura del extremo de la manga en algunas camisas. No hay efecto para las mangas que terminan en el bíceps o por encima. Para las mangas más largas, la medida de la muñeca y esta opción de holgura de muñeca tienen un efecto progresivamente mayor, alcanzando el efecto completo para las camisas de manga larga (longitud de manga del 100% o superior).
 

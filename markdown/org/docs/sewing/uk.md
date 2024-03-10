@@ -1,5 +1,5 @@
 ---
-title: Sewing Terminology
+title: Швейна термінологія
 ---
 
-<ReadMore list />
+<ReadMore />

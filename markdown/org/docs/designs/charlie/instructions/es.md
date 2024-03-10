@@ -192,9 +192,9 @@ Cuando hayas terminado, presiona Abrirlo.
 
 <tip>
 
-Double check that your right and left legs match the pattern markings. The right leg's crotch should extend slightly beyond the left. Refer to the pattern and cut excess on the left leg if necessary.
+Comprueba que tus piernas derecha e izquierda coinciden con las marcas del patrón. La entrepierna de la pierna derecha debe sobresalir ligeramente de la izquierda. Consulta el patrón y corta el sobrante de la pierna izquierda si es necesario.
 
-It can be valuable to mark with chalk or thread mark the **Center Front** on each leg. This will help you make sure the peices are in the right place duing fly construction.
+Puede ser valioso marcar con tiza o hilo el **Centro delantero** en cada pata. This will help you make sure the pieces are in the right place during fly construction.
 
 </tip>
 
@@ -202,11 +202,11 @@ Asegúrate de que una pierna esté girada con el lado bueno, y la otra tiene el 
 
 Ahora mete la pierna con el lado bueno hacia fuera dentro de la pierna que tiene el lado bueno hacia dentro. De esta manera, tienen su lado bueno entre sí.
 
-Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. **Stop at the fly notch** and makes sure to back-stitch.
+Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. **Detente en la muesca de la bragueta** y asegúrate de pespuntear.
 
 Cuando haya terminado. Hágalo de nuevo. Siempre coser la costura de la cruz dos veces. Es una de esas mejores prácticas que usted ignora bajo su propio riesgo.
 
-![Close Crossseam](CloseCrossseam.svg)
+![Costura transversal cerrada](CloseCrossseam.svg)
 
 
 <Tip>
@@ -220,7 +220,7 @@ Conseguirlo bien es una de esas cosas que acabarás cherizando cada vez que las 
 
 ## Paso 10: Construir la mosca
 
-### Close the fly extension and serge
+### Cierra la extensión de la bragueta y frunce
 
 Doblar la extensión de la mosca en su línea plegable con buenos lados juntos.
 
@@ -234,76 +234,76 @@ Serge (o zig-zag) a lo largo del lado abierto de la extensión de la mosca. No h
 
 mientras estás en él, también siéntate a lo largo de toda la mosca mirando hacia el borde en forma de J.
 
-![Close Extension and Serge](CloseExtensionAndSerge.svg)
+![Cerrar Ampliación y Serge](CloseExtensionAndSerge.svg)
 
 
 ### Adjuntar la cara de vuelo
 
-Sew fly facing to left leg. You will be sewing slightly past the cross seam point, so be careful to keep the right leg seam allowance out of the way and aim to sew directly on top of the cross seam line.
+Cose la cara de la bragueta a la pierna izquierda. Coserás un poco más allá del punto de la costura transversal, así que ten cuidado de mantener el margen de costura de la pierna derecha fuera del camino y procura coser directamente encima de la línea de costura transversal.
 
-![Attach Facing](AttachFacing.svg)
+![Colocar el revestimiento](AttachFacing.svg)
 
-### Finish the fly facing
+### Termina la cara de la mosca
 
-Trim the fly facing to half of the seam allowance.  
-Tuck in the tip of the fly facing and secure it with a few stitches. Edge stitch the fly facing to the seam allowance. Press the seam allowance toward the facing and understitch the facing for a clean finish. Again, keeping the right leg  seam allowance out of the way.
+Recorta la tapeta a la mitad del margen de costura.  
+Mete la punta de la tapeta y fíjala con unas puntadas. Cose el borde de la bragueta al margen de costura. Presiona el margen de costura hacia la cara y pespuntea la cara para un acabado limpio. De nuevo, manteniendo el margen de costura de la pierna derecha fuera del camino.
 
-![Finish Facing](FinishFacing.svg)
+![Acabado Revestimiento](FinishFacing.svg)
 
-### Edge stitch the zipper to the fly extension
-
-<tip>
-
-**Zipper Length**
-
-It's a good idea to ensure your zipper stop ends before the indicated stitch line on the pattern. This will ensure you don't sew over your zipper stop and reduces tension on the bottom of the fly. If your zipper is too long, you can do a 0 length zig zag stitch to create a new stop (on just the zipper itself).
-
-</tip>
-
-Edge stitch along the left edge of the zipper to the serged edge of the fly extension to hold it in place.
-
-![Baste Zipper](BasteZipper.svg)
-
-
-### Top stitch the right leg to the zipper
-
-Start by pressing the right leg seam allowance to the back.
+### Cose la cremallera a la extensión de la bragueta
 
 <tip>
 
-Remember that the seam allowance starts slightly right of the center front, the center front is marked in purple in the image, make sure you don't fold along the center front line by mistake.
+**Longitud de la cremallera**
+
+Conviene asegurarse de que el tope de la cremallera termina antes de la línea de puntada indicada en el patrón. Así te asegurarás de no coser por encima del tope de la cremallera y reducirás la tensión en la parte inferior de la bragueta. Si tu cremallera es demasiado larga, puedes hacer una puntada en zigzag de longitud 0 para crear un nuevo tope (sólo en la propia cremallera).
 
 </tip>
 
-Ensure you place the folded edge of the right leg just left of the zipper teeth to prevent fabric from being caught in the zipper.
+Puntada de borde a lo largo del borde izquierdo de la cremallera hasta el borde serrado de la extensión de la bragueta para mantenerla en su sitio.
 
-Stop sewing at the top 'fly extention' notch, slightly above the cross seam, and be sure to backstitch. If you don't do this you won't be able to keep the extension out of the way when sewing the J-Seam.
-
-![Attach Extension to Right Leg](AttachExtensionToRightLeg.svg)
+![Cremallera](BasteZipper.svg)
 
 
-### Attach the zipper to the fly facing.
+### Puntada superior de la pierna derecha a la cremallera
 
-Be careful to align the leg left on the right center front. It can be valuable to pin or baste through the facing and right zide of the zipper tape. (We need to sew the left side of the zipper tape to the left leg). Ensuring everything is lined, sew the fly facing to the left side of the zipper. Try to get close to the zipper, but not too close.
+Empieza presionando el margen de costura de la pierna derecha hacia atrás.
 
-![Attach Facing to Zipper](AttachFacingToZipper.svg)
+<tip>
+
+Recuerda que el margen de costura comienza ligeramente a la derecha del centro delantero, el centro delantero está marcado en morado en la imagen, asegúrate de no doblar por error a lo largo de la línea del centro delantero.
+
+</tip>
+
+Asegúrate de colocar el borde doblado de la pernera derecha justo a la izquierda de los dientes de la cremallera para evitar que la tela se enganche en la cremallera.
+
+Stop sewing at the top 'fly extension' notch, slightly above the cross seam, and be sure to backstitch. Si no lo haces, no podrás mantener la extensión apartada al coser la costura en J.
+
+![Fijar la extensión a la pierna derecha](AttachExtensionToRightLeg.svg)
+
+
+### Coloca la cremallera en la cara de la bragueta.
+
+Ten cuidado de alinear la pierna izquierda en el centro delantero derecho. It can be valuable to pin or baste through the facing and right side of the zipper tape. (Tenemos que coser el lado izquierdo de la cinta de la cremallera a la pierna izquierda). Asegurándote de que todo está forrado, cose la cara de la bragueta al lado izquierdo de la cremallera. Intenta acercarte a la cremallera, pero no demasiado.
+
+![Fijar el revestimiento a la cremallera](AttachFacingToZipper.svg)
 
 
 ### Difunde la costura J de la mosca
 
 <tip>
 
-Use a peice of paper as a guide to sew the J seam, this can be cut from your pattern along the indicated stitch line.
+Use a piece of paper as a guide to sew the J seam, this can be cut from your pattern along the indicated stitch line.
 
 </tip>
 
-Ahora suman la llamada costura J de la mosca. Asegúrese de mantener la extensión de la mosca fuera del camino. Since you didn't sew all the way along the fly extention, you should be able to pin it out of the way.
+Ahora suman la llamada costura J de la mosca. Asegúrese de mantener la extensión de la mosca fuera del camino. Since you didn't sew all the way along the fly extension, you should be able to pin it out of the way.
 
 #### Barra toca la parte inferior de la mosca
 
-Now, bartack the very botton of the J-seam (the horizontal part) but this time make sure to also catch the fly extension. You can choose to add an additional bar tack along the J-Seam as well (shown in purple).
+Now, bartack the very bottom of the J-seam (the horizontal part) but this time make sure to also catch the fly extension. También puedes añadir un remate adicional a lo largo de la costura en J (en morado).
 
-![Sew the J-Seam](SewTheJSeam.svg)
+![Cose la costura en J](SewTheJSeam.svg)
 
 ## Paso 11: Adjuntar bucles de cinturón
 
@@ -311,7 +311,7 @@ Now, bartack the very botton of the J-seam (the horizontal part) but this time m
 
 <Note>
 
-Para la eficiencia, contructaremos una larga franja de bucle de cinturón que dividiremos en 8 partes.
+For efficiency, we will construct one long strip of belt loop that we'll divide into 8 parts.
 
 </Note>
 
@@ -319,7 +319,7 @@ Corta una tira de 80 cm de largo y 2,8 cm de ancho.
 
 Servir (o zigzag) el borde largo de la tira en ambos lados.
 
-![Finish Loop Edges](FinishLoopEdges.svg)
+![Acabado de los bordes del bucle](FinishLoopEdges.svg)
 
 Doblar un lado hacia adentro, y el otro hacia arriba. Luego presiona con tu hierro. El resultado final debe ser una tira larga de aproximadamente 1cm de largo.
 
@@ -327,7 +327,7 @@ Ahora coser a lo largo de toda la longitud de la raya, huele en medio de ella. A
 
 Por último, cortar los bucles de la correa de longitud en 8 partes iguales para hacer 8 bucles de la cinta.
 
-![Stitch and Cut Loops](StitchAndCutLoops.svg)
+![Coser y cortar lazos](StitchAndCutLoops.svg)
 
 ### Adjuntar bucles de la cinta
 
@@ -361,7 +361,7 @@ Difunde una línea de cinta en el interior de la cintura, cerca del borde, a tra
 
 Coloque la cintura con buenos lados junto a la cintura. For the straight waistband, make sure the side with the standard seam allowance is aligned with the waist, and not the side with double seam allowance.
 
-También asegúrese de dejar la costura suficiente más allá del principio y el final de la cintura.
+Also make sure to leave sufficient seam allowance beyond the start and end of the waistband.
 
 Sufrió a lo largo de toda la cintura, uniendo la cintura y cosiendo los bucles de cintura en una sola vez.
 
@@ -399,7 +399,7 @@ Esto cogerá la parte trasera de la cintura que hemos hecho para extenderse un p
 
 ### Difunde los bucles de la cinta para hacerlos más anchos
 
-Es mejor hacer las trabillas un poco más anchas que la cintura, para acomodar cinturones más anchos.
+It's best to make the belt loops a bit wider than the waistband, to accommodate wider belts.
 
 Para ello, deja que la cintura quede plana y cósela con un remate 1,5 cm más o menos (media pulgada) por debajo de la cintura.
 

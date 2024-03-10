@@ -1,11 +1,13 @@
-hour: hour
-hours: hours
-day: day
+hour: uur
+hours: uren
+day: dag
 days: dagen
-month: month
+month: maand
 months: maanden
 year: jaar
 years: jaren
 oneDay: een dag
+oneHour: one hour
 lessThanADay: minder dan een dag
+lessThanAnHour: less than an hour
 ago: geleden

@@ -34,7 +34,7 @@ export const options = {
     max: 70,
     // eslint-disable-next-line no-unused-vars
     toAbs: (value, { measurements, options }, mergedOptions) =>
-      value * (measurements.waistToKnee * (1 + options.lengthBonus)),
+      value * (measurements.waistToKnee * (1 + mergedOptions.lengthBonus)),
     // eslint-disable-next-line no-unused-vars
     menu: (settings, mergedOptions) => (settings?.options?.backVent === false ? false : 'style'),
   },

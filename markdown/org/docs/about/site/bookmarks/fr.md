@@ -1,11 +1,11 @@
 ---
-title: Bookmarks
+title: Marques pages
 ---
 
-FreeSewing bookmarks work just like in your browser. You can bookmark documentation pages, measurements sets, or patterns and we will keep track of them for you.
+Les marques pages de FreeSewing fonctionnent comme dans ton navigateur. Tu peux marquer les pages de documentation, les ensembles de mesures ou les patrons et nous les suivrons pour toi.
 
-This can be handy not only to refer to documentation you use often, but also to bookmark (public) patterns or measurements sets from other FreeSewing users.
+Cela peut être pratique non seulement pour se référer à la documentation que tu utilises souvent, mais aussi pour marquer des patrons (public) ou des sets de mesures d'autres utilisateurs de FreeSewing.
 
-A FreeSewing bookmark has the following fields:
+Un marque page FreeSewing comporte les champs suivants :
 
 <ReadMore />

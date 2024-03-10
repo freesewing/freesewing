@@ -17,8 +17,8 @@ title: "Боді-блок Bella: Інструкція з пошиття"
 
 - Закрийте передню виточку на грудях та виточки на талії.
 - Закрийте задні виточки.
-- With _good sides together_ sew the backs to the front at the shoulder seams, _easing_ the backs to fit the front.
-- With _good sides together_ sew the backs to the front at the side seams.
+- Лицьовими сторонами _разом_ пришийте спинки до переду в плечових швах, _полегшуючи_ спинки, щоб вони прилягали до переду.
+- Лицьовими боками _разом_ пришийте спинки до переду по бокових швах.
 
 <Tip>
 

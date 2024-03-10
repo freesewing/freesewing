@@ -2,7 +2,7 @@
 title: Mot de passe
 ---
 
-Your password guards your account so that only you can access it.
+Ton mot de passe protège ton compte pour que tu sois le seul à pouvoir y accéder.
 
-We do not enforce a password policy, but recommend you enable [Two-Factor Authentication](/docs/site/account/mfa).
+Nous n'appliquons pas de politique de mot de passe, mais nous te recommandons d'activer [l'authentification à deux facteurs](/account/mfa/).
 

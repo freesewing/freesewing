@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Screengrab aus Bernadette Banners YouTube-Tutorial für diesen Hut"
 date: "23.02.2020"
 intro: "Neues Schnittmuster: Die Holmes Deerstalker-Mütze"

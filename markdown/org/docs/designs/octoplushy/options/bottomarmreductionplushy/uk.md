@@ -1,5 +1,5 @@
 ---
-title: "Bottom Arm Reduction (Octoplushy)"
+title: "Зменшення нижнього плеча (Octoplushy)"
 ---
 
-This setting adjusts the difference in length between the top and the bottom fabric of the arms for the Octoplushy style. The bigger the difference, the more the arms will want to curl.
+Цей параметр регулює різницю в довжині між верхньою і нижньою тканиною рукавів для стилю Octoplushy. Чим більша різниця, тим більше руки будуть хотіти скрутитися.

@@ -1,14 +1,14 @@
 ---
-title: "Charlie chinos: Designer Notes"
+title: "Chinos Charlie : Notes du créateur"
 ---
 
-I don't think I have ever had a design where I knew what I was going to name it long before sitting down to actually create it. Charlie Chinos was just too good to not make happen.
+I don't think I have ever had a design where I knew what I was going to name it long before sitting down to actually create it. Charlie Chinos était tout simplement trop bon pour ne pas le faire.
 
-It took a while because it took a long time before [Titan](/designs/titan) was in a state where I was happy with it. Trousers are hard. Trouser blocks double so.
+Cela a pris du temps parce qu'il a fallu beaucoup de temps avant que [Titan](/designs/titan) soit dans un état qui me satisfasse. Les pantalons sont durs. Les blocs de pantalons sont doubles.
 
 This is for the most part a rather straight-forward chino pattern, but it has one twist: The front packets are placed on the side seam. That side seam wraps around towards the front to give the slanted pocket look.
 
-It's a bit of unusual and creative design that I guess I did because I can? Anyway, it's something to be mind ful of because if you do not expect it the front panels look a bit weird.
+C'est un design un peu inhabituel et créatif que j'ai fait parce que je le pouvais ? Anyway, it's something to be mindful of because if you do not expect it the front panels look a bit weird.
 
 joost
 

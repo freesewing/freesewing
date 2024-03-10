@@ -1,40 +1,40 @@
 ---
-title: "Announcing FreeSewing v3.0"
-caption: "This picture by Engin Akyurt seems like the sort of understated celebration that is suitable or this announcement"
+title: "Анонс FreeSewing v3.0"
+caption: "Ця картина Енгіна Акюрта здається такою собі стриманою урочистістю, яка підходить для цього оголошення"
 date: 20230930
-intro: "FreeSewing 3.0 is finally here.  The 3.0 release culminates more than a year of work, and comes just over four years after the v2.0 release. What I’m saying is: I don’t make announcements like this often, and it’s a big deal. You should get excited."
-author: Йост
+intro: "FreeSewing 3.0 нарешті тут.  Реліз 3.0 є кульмінацією більш ніж річної роботи і вийшов трохи більше ніж через чотири роки після релізу v2.0. Я хочу сказати, що я не часто роблю такі оголошення, і це дуже важливо. Ти маєш радіти."
+author: 1
 ---
 
-FreeSewing 3.0 is finally here.
+FreeSewing 3.0 нарешті тут.
 
 FreeSewing is the leading open source platform for made-to-measure sewing patterns, loved by home sewers and fashion entrepreneurs alike.
 
-The 3.0 release culminates more than a year of work, and comes just over four years after the v2.0 release.  What I'm saying is: I don't make announcements like this often, and it's a *big deal*. You should get excited.
+Реліз 3.0 є кульмінацією більш ніж річної роботи і вийшов трохи більше ніж через чотири роки після релізу 2.0.  Я хочу сказати, що я не часто роблю такі оголошення , як це, і це *велика справа*. Ти маєш радіти.
 
-## Breaking changes
+## Кардинальні зміни
 
-Let's start with the obvious: This is a major release so there are breaking changes. Listing all of them would be rather challenging, and probably not that useful. The first pre-release versions of FreeSewing 3 is almost a year old, and all of the people who contributed designs  have either ported their designs, or I did it for them.
+Почнемо з очевидного: це великий реліз, тому в ньому є суттєві зміни. Перерахувати їх усі було б досить складно, та й, мабуть, не дуже корисно. Першій попередній версії FreeSewing 3 вже майже рік, і всі люди, які надали свої дизайни, або портували їх, або я зробила це за них.
 
 Still, I want to list three breaking changes that are super obviously going to break your stuff if you rely on FreeSewing code;
 
-- **FreeSewing 3 is ESM only**: Migrating a large Javascript project to ESM modules is enough to make even the most seasoned developers break down and cry, but it's done.
-- **FreeSewing 3 uses named exports**: There are obviously some places where a default export is required (looking at you NextJS) but whereever we can, we now use named exports exclusively because we all know those are better.
-- **FreeSewing 3 requires Node 18 or newer**: I recommend lts/hydrogen
+- **FreeSewing 3 - це тільки ESM**: Міграція великого проекту на Javascript на модулі ESM достатньо, щоб змусити навіть найдосвідченіших розробників зламатися і плакати, але це зроблено.
+- **FreeSewing 3 використовує іменований експорт**: Очевидно, що є місця, де потрібен експорт за замовчуванням (дивлячись на вас, NextJS), але скрізь, де ми можемо, ми зараз використовуємо іменований експорт виключно тому, що ми всі знаємо, що він кращий.
+- **FreeSewing 3 потребує Node 18 або новішої версії**: Я рекомендую lts/hydrogen
 
-With that out of the way, let's talk about what's new. A lot of work went into this release, and I couldn't possibly cover all of it. But allow me to name-check some of the more fundamental changes.
+З цим покінчено, давайте поговоримо про те, що нового. У цей реліз було вкладено багато зусиль, і я не зміг би охопити все це. Але дозвольте мені перерахувати деякі з найбільш фундаментальних змін.
 
-## Designs are now JBOP
+## Дизайн тепер JBOP
 
 A big driver for the decision to freeze the v2 branch and start working on v3 was to make it easier to mix-and-match parts from various designs.
 
-Design inheritance was already possible in v2, but because the configuration was handled on the design level, it required careful re-configuration of (required) measurements, options, part dependencies, and so on. It was possible but came with a lot of friction.
+Успадкування дизайну вже було можливим у версії 2, але оскільки конфігурація оброблялася на рівні дизайну, це вимагало ретельного переконфігурування (необхідних) вимірів, опцій, залежностей деталей і так далі. Це було можливо , але супроводжувалося великими труднощами.
 
-In v3, all configuration is moved to the part level, and a design is now not much more than *just a bunch of parts* (JBOP).  It is the parts themselves that configure what they need. This includes anything from the measurements they require, the options they provide, the plugins they use, their dependencies, and so on.
+У версії 3 всю конфігурацію перенесено на рівень деталей, і тепер дизайн - це не більше, ніж *, а просто набір деталей* (JBOP).  Саме деталі самі налаштовують те, що їм потрібно. Це включає в себе все, починаючи від вимірювань, які вони вимагають, опцій, які вони надають, плагінів, які вони використовують, їх залежностей, і так далі.
 
 This way, re-use parts from various designs, and all of their configuration, dependencies, plugins, and so on will follow.
 
-## Less boilerplate
+## Менше шаблонів
 
 Creating a design has also become a lot simpler, you essentially pass your list of parts to our `Design` constructor and you're done:
 
@@ -42,33 +42,33 @@ Creating a design has also become a lot simpler, you essentially pass your list 
 import { Design } from '@freesewing/core'
 
 export const MyDesign = new Design({ 
-  parts: [ /* ... your parts here ... */ ]
+  parts: [ /* ... ваші частини тут ... */ ]
 })
 ```
 
-Speaking of less boilerplate, in v2, the most common plugins were already bundled in the `@freesewing/plugin-bundle` package, but you still had to include them in your design.  In v3, those plugins have moved to the `@freesewing/core-plugins` package, and will be loaded by FreeSewing's core library by default (although you can opt out of that).
+Говорячи про меншу шаблонність, у версії 2 найпоширеніші плагіни вже були об'єднані в пакет `@freesewing/plugin-bundle` , але вам все одно потрібно було включити їх у свій дизайн.  У версії 3 ці плагіни переміщено до пакунку `@freesewing/core-plugins` , і за замовчуванням вони завантажуватимуться з основної бібліотеки FreeSewing (хоча ви можете відмовитися від цього).
 
-## Plugins with more powers
+## Плагіни з більшими можливостями
 
 In addition to providing macros, snippets, or tapping into FreeSewing's lifecycle hooks, plugins can now also add methods to the store.
 
-This is allows further extending FreeSewing with whatever exciting thing you can thing of.  As an example, the way logging is handled in the core library was re-implemented based on this.  Which means that if you would like a different logging solution, you can simple provide your own log handler in a plugin.
+Це дозволяє ще більше розширити FreeSewing будь-якими цікавими речами, які ви можете придумати.  Наприклад, спосіб обробки журналювання у базовій бібліотеці було перероблено на основі цього.  Це означає, що якщо вам потрібне інше рішення для ведення журналу, ви можете просто надати свій власний обробник журналу у плагіні .
 
-## New development environment
+## Нове середовище розробки
 
 With the version 3 release comes a new development environment that closely mimics what we will be providing at FreeSewing.org (more on that later).
 
-The development environment ships with various templates that you can use to either start a design from scratch, or extend one of our blocks. You don't have to choose one over the other either, you can use all of these at the same time, and if you want even add more.
+Середовище розробки постачається з різними шаблонами, які ви можете використовувати для , щоб почати дизайн з нуля або розширити один з наших блоків. У вас також немає , щоб обирати один з них, ви можете використовувати всі одночасно, і, якщо хочете, навіть додати більше.
 
-Our new development environment now allows (optionally) integrates with the FreeSewing backend. You can authenticate with your FreeSewing account so you can (re)use your measurements while working on your designs.
+Наше нове середовище розробки тепер дозволяє (за бажанням) інтегруватися з бекендом FreeSewing. Ви можете авторизуватися за допомогою свого облікового запису FreeSewing, щоб використовувати свої мірки під час роботи над дизайном.
 
-## Not everything is versioned
+## Не все є версійним
 
 There's a lot more I could talk about, but I need to address the elephant in the room: So we have 3.0 now, when do non-developers get to use this?
 
-Well... I'm going to need a bit more time. Everything is sort of ready, but some things always a bit more time because you can't really to them in advance. Things like translation, some more testing, not to mention migrating 50k users to a completely different infrastructure.
+Ну... Мені потрібно ще трохи часу. Все нібито готове, але деякі речі завжди потрібно трохи більше часу, тому що ви не можете зробити їх заздалегідь. Такі речі, як переклад, додаткове тестування, не кажучи вже про міграцію 50 тис. користувачів на зовсім іншу інфраструктуру.
 
-So as a regular user of FreeSewing.org who is not itching to spin up a development environment, you will need to hold on a little longer.  But clearly, it's going to be soon now. I'd say a matter of weeks, rather than months.
+Отже, як постійному користувачеві FreeSewing.org, якому не терпиться створити середовище розробки , вам доведеться почекати ще трохи.  Але ясно, що це буде вже скоро. Я б сказав, що це питання тижнів, а не місяців.
 
 In the meanwhile, if you find a problem or bug, create an issue because FreeSewing 3 is now production-ready and fully supported.
 

@@ -2,20 +2,20 @@
 title: Schnittmuster
 ---
 
-(sewing) Patterns is why most people end up on FreeSewing.org, so they are an important part of the website.
+(Näh-)Muster sind der Grund, warum die meisten Menschen auf FreeSewing.org landen, deshalb sind sie ein wichtiger Teil der Website.
 
-FreeSewing does not store the pattern itself, instead we store your settings you used to draft the design, this includes:
+FreeSewing speichert nicht das Muster selbst, sondern deine Einstellungen, die du für den Entwurf des Musters verwendet hast:
 
-- Any design options you tweaked
-- Any core settings you changes
-- The measurements used
+- Alle Designoptionen, die du geändert hast
+- Alle Grundeinstellungen, die du änderst
+- Die verwendeten Messungen
 
-With this, we can regenerate the pattern. So this is all we store.
+Damit können wir das Muster wiederherstellen. Das ist also alles, was wir speichern.
 
-This also means that if a pattern goes through significant changes, or a new major version with breaking changes is released, we may no longer be able to generate the (old) pattern. For this reason, you should download the pattern as PDF or SVG and save it locally if you want to archive it.
+Das bedeutet auch, dass wir nicht mehr in der Lage sind, das (alte) Muster zu generieren, wenn ein Muster erhebliche Änderungen erfährt oder eine neue Hauptversion mit bahnbrechenden Änderungen veröffentlicht wird. Aus diesem Grund solltest du das Muster als PDF oder SVG herunterladen und lokal speichern, wenn du es archivieren möchtest.
 
-<Tldr compact> Backup your patterns if you intent to keep them for a long time</Tldr>
+<Tldr compact> Sichert eure Muster, wenn ihr sie lange behalten wollt</Tldr>
 
-In addition to the settings required to recreate the pattern, patterns are stored with the following fields:
+Zusätzlich zu den Einstellungen, die für die Neuerstellung des Musters erforderlich sind, werden Muster mit den folgenden Feldern gespeichert:
 
 <ReadMore />

@@ -1,13 +1,13 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Diese Version ist wirklich eine grundlegende Veränderung"
 date: "2019-08-25"
 intro: "Ankündigung von der Version 2 von FreeSewing, der Opensourceplattform für Schnittmuster auf Mass."
-title: "Ankündigung von FreeSewing v2.0"
+title: "FreeSewing v2.0 ist da"
 ---
 
 
-# Ankündigung von FreeSewing v2.0
+# FreeSewing v2.0 ist da
 
 Ankündigung von der Version 2 von FreeSewing, der Opensourceplattform für Schnittmuster auf Mass.
 

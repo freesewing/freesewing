@@ -1,7 +1,7 @@
 ---
-title: "Uma undies: Required Measurements"
+title: "Ума роздягається: Необхідні виміри"
 ---
 
 <Note>
-Uma does not require any measurements
+Ума не потребує жодних вимірів
 </Note>

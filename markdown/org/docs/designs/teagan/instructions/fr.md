@@ -77,7 +77,7 @@ Il est maintenant temps de coudre les extrémités de notre bande de tricot ense
 
 - Maintenant que les extrémités de ta bande sont réunies, il est temps de terminer les 6 derniers centimètres, en étirant et en cousant la bande comme tu l'as fait pour le reste.
 
-Hourra ! Vous avez terminé la partie la plus délicate ! Tu peux aussi fixer les bords bruts en les cousant au tissu du T-shirt, juste à l'intérieur de la bande de tricot, à l'aide d'un point sig-zag ou d'un point de recouvrement. Ce n'est pas obligatoire, mais c'est un détail que tu verras sur de nombreux T-shirts prêts à porter, et cela peut aider ton tour de cou à rester plat.
+Hourra ! Vous avez terminé la partie la plus délicate ! Ce n'est pas obligatoire, mais c'est un détail que tu verras sur de nombreux T-shirts prêts à porter, et cela peut aider ton tour de cou à rester plat. Ce n'est pas obligatoire, mais c'est un détail que tu verras sur de nombreux T-shirts prêts à porter, et cela peut aider ton tour de cou à rester plat.
 
 ![Couds la bande de tricot pour la fixer](step03i.svg)
 
@@ -85,7 +85,7 @@ Hourra ! Vous avez terminé la partie la plus délicate ! Tu peux aussi fixer le
 
 <Tip>
 
-A more extensive how-to on knit binding can be found in the [Aaron Instuctions](/docs/designs/aaron/instructions).
+A more extensive how-to on knit binding can be found in the [Aaron Instructions](/docs/designs/aaron/instructions).
 
 </Tip>
 

@@ -17,7 +17,7 @@ The **gore** pattern piece needs to be cut on the fold to create a whole piece.
 
 ### Optionale Stoffbinden
 
-Wenn du kein Band für deine Verbindungen verwenden möchtest, kannst du sie aus dem Stoff herstellen. Schneiden Sie einfach 4 Crosskornstreifen von einem 1" (2. cm) oder Breite Ihrer Wahl + Nahtzustände breit und nähen zwei Röhren, so dass eine der kurzen Seiten offen zum Drehen ist. Clicken Sie die Ecken und schneiden Sie Nähte. Stelle einen Druck aus. Wenn du möchtest, kannst du _Kantenstich_ oder _Steppstich_ die Rohre, damit der Stoff nicht verrutscht. Der rohe Rand der Rohre kann dann beim Bau der Ohrklappen in der Ohrklappe versteckt werden.
+Wenn du kein Band für deine Verbindungen verwenden möchtest, kannst du sie aus dem Stoff herstellen. Simply cut 4 crossgrain strips of an 1" (2.5cm) or width of your chosen seam allowances wide and sew two tubes leaving one of the short sides open for turning. Clicken Sie die Ecken und schneiden Sie Nähte. Stelle einen Druck aus. Wenn du möchtest, kannst du _Kantenstich_ oder _Steppstich_ die Rohre, damit der Stoff nicht verrutscht. Der rohe Rand der Rohre kann dann beim Bau der Ohrklappen in der Ohrklappe versteckt werden.
 
 <Note>
 
@@ -26,6 +26,6 @@ Es wird empfohlen, das Musternetz zu entwerfen und das Muster zu verwenden, um d
 </Note>
 <Warning>
 
-It is recommended to make a mock-up with your gore pattern first before cutting your fabrics. This is to test the length and ease of the gore piece. Stellen Sie sicher, dass Sie den unteren Nahtzuschlag abschneiden, bevor Sie es versuchen. If it is too tight who will need to re-draft the pattern with more ease (longer head circumference) just remember the ease is split across each gore. If the peak is too high you may want to re-draft the pattern with the gore length reduced. Wenn Sie einmal neu entworfen, machen Sie einen weiteren Spruch, um zu überprüfen, ob Sie mit den Änderungen gesättigt sind oder nicht. Wiederholen Sie, wenn Sie nicht zufrieden sind.
+It is recommended to make a mock-up with your gore pattern first before cutting your fabrics. This is to test the length and ease of the gore piece. Stellen Sie sicher, dass Sie den unteren Nahtzuschlag abschneiden, bevor Sie es versuchen. If it is too tight who will need to re-draft the pattern with more ease (longer head circumference) just remember the ease is split across each gore. If the peak is too high you may want to re-draft the pattern with the gore length reduced. Wiederholen Sie, wenn Sie nicht zufrieden sind. Wiederholen Sie, wenn Sie nicht zufrieden sind.
 
 </Warning>

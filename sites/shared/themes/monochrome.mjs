@@ -11,6 +11,8 @@ export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'stone-
 
 export const rating = ['stone-400', 'stone-500', 'stone-600', 'stone-700', 'stone-800']
 
+export const graph = ['stone-500', 'stone-800', 'stone-500', 'stone-200']
+
 export const theme = {
   fontFamily: "Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;",
   'base-100': color['50'],

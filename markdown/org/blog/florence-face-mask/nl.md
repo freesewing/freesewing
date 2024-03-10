@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Hou die druppeltjes vol virussen op afstand met ons Florence mondmasker"
 date: "2020-02-28"
 intro: "We hebben net een gezichtsmaskerpatroon gepubliceerd, omdat het coronavirus"

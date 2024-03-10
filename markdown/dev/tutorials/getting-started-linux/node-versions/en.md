@@ -47,7 +47,7 @@ With multiple Node.js versions installed, `nvm` allows you to switch between dif
 versions. Just tell it which version you want to use:
 
 ```bash
-nvm use v10.22.1
+nvm use lts/hydrogen
 ```
 
 If you picked a version that is not installed, `nvm` will simply tell you

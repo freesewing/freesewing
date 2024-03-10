@@ -1,7 +1,7 @@
 ---
-title: "Uma undies: Required Measurements"
+title: "Uma ondergoed: Vereiste afmetingen"
 ---
 
 <Note>
-Uma does not require any measurements
+Uma heeft geen metingen nodig
 </Note>

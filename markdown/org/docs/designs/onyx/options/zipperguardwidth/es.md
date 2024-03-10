@@ -1,5 +1,5 @@
 ---
-title: "Zipper guard width"
+title: "Ancho del protector de cremallera"
 ---
 
-Controls how wide the zipper guard will be. It should be wide enough to fully cover the zipper, with a little extra in case it shirts or stretches while in use.
+Controla la anchura de la protección de la cremallera. Debe ser lo suficientemente ancha como para cubrir totalmente la cremallera, con un poco más por si se dobla o se estira al usarla.

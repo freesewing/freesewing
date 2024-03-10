@@ -1,7 +1,7 @@
 ---
-title: "Sleeve ribbing width"
+title: "Ancho del canalé de la manga"
 ---
 
-Controls how wide the ribbing around the sleeve is.
+Controla la anchura del canalé alrededor de la manga.
 
-Note: This option is only available if the 'sleeve ribbing' option is set to 'ribbing.'
+Nota: Esta opción sólo está disponible si la opción "nervaduras de la manga" está configurada como "nervaduras".

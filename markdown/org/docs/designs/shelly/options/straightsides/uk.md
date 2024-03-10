@@ -1,6 +1,6 @@
 ---
-title: "Straight sides"
+title: "Прямі сторони"
 ---
 
-Forms a tubular shirt, which is a shirt where the hips and chest are the same width and connected by a straight seam. Set this to true for front and back parts that are perfectly rectangular below the armholes. This setting overrides any values set for the `hips ease` or `side shape` options. For most body types, leaving this option on will result in a reasonable fit that is looser around the belly and tighter around the chest, and generally produces a more fabric-efficient pattern.
+Утворює трубчасту сорочку, тобто сорочку, в якій стегна і груди мають однакову ширину і з'єднані прямим швом. Встановіть це значення для деталей переду і спинки, які мають ідеальну прямокутну форму під проймами. Цей параметр замінює будь-які значення, встановлені для параметрів `hips ease` або `shape of side` . Для більшості типів фігури, якщо залишити цю опцію ввімкненою, ви отримаєте розумну посадку, вільнішу в області живота і щільнішу на грудях, і, як правило, більш економно витрачаєте тканину.
 

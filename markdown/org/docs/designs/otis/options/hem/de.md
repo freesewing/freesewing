@@ -2,6 +2,6 @@
 title: "Hem"
 ---
 
-Hem determines the size of the hem on the sleeves.
+Saum bestimmt die Größe des Saums an den Ärmeln.
 
-The hem is a percentage of the distance between the shoulder and the arm opening (of the short sleeve version). Default is 10%
+Der Saum ist ein Prozentsatz des Abstands zwischen der Schulter und der Armöffnung (bei der Kurzarmversion). Standard ist 10%

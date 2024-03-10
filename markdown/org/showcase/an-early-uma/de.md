@@ -1,12 +1,12 @@
 ---
-title: "An early Uma"
-caption: "An Uma made of rayon spandex jersey"
+title: "Eine frühe Uma"
+caption: "Ein Uma aus Viskose-Elasthan-Jersey"
 date: 20231027
-intro: "This pair of Uma undies is made of rayon spandex jersey and finished with wide fold over elastic."
+intro: "Dieses Paar Uma Unterhosen ist aus Viskose-Elasthan-Jersey gefertigt und mit einem breiten, umklappbaren Gummizug versehen."
 designs:
   - "uma"
 maker: Natalia
 ---
 
-This pair of Uma undies is made of rayon spandex jersey and finished with wide fold over elastic. This is an early version of the design, which has since undergone a few changes.
+Dieses Paar Uma Unterhosen ist aus Viskose-Elasthan-Jersey gefertigt und mit einem breiten, umklappbaren Gummizug versehen. Dies ist eine frühe Version des Designs, das seitdem einige Änderungen erfahren hat.
 

@@ -1,5 +1,5 @@
 ---
-title: Curated measurements sets
+title: Verzamelde meetsets
 ---
 
 FreeSewing's **curated measurements sets** are a collection of measurements sets that represent real people.
@@ -16,45 +16,43 @@ With the release of version 3 of FreeSewing, we wanted to move away from these *
 
 We now no longer present users who want to try out the site a range of *standard sizes* but rather a collection of measurements sets where they can pick the one that best represents their own body.
 
-## Suggesting a measurements set for curation
+## Een meetset voorstellen voor curatie
 
-We rely on our community to submit measurements sets for curation. If you have a public measurements set on the site, you can suggest it for curation.
+We vertrouwen op onze gemeenschap om meetsets in te sturen voor curatie. Als je openbare metingen op de site hebt ingesteld, kun je die voorstellen voor curatie.
 
-To be part of our curated measurments sets collection, you should provide the following:
+Om deel uit te maken van onze verzamelde meetsets moet je het volgende opgeven:
 
-- **All measurements** of the person. We do not accept incomplete sets as that would mean some designs would not work with them.
-- **The height** of the person. This helps users select a measurements set closest to their own body.
-- **A picture** of the person to be featured [in our line-up of curated measurements sets](/curated-sets). See below for tips.
+- **Alle metingen** van de persoon. We accepteren geen incomplete sets, omdat dat zou betekenen dat sommige ontwerpen er niet mee zouden werken.
+- **De lengte** van de persoon. Dit helpt gebruikers een maatset te kiezen die het dichtst bij hun eigen lichaam ligt.
+- **Een foto** van de persoon die te zien zal zijn op [in onze reeks gecureerde meetsets](/curated-sets). Zie hieronder voor tips.
 
 
-## Tips for line-up pictures
+## Tips voor line-up foto's
 
 We present measurements sets in a line-up style, so the picture should be a full frontal picture where you are standing straight and relaxed with your arms beside your body.
 
-Below are some tips on how to get good results:
+Hieronder vind je een aantal tips om goede resultaten te krijgen:
 
-### Don't stand too close to the camera
+### Ga niet te dicht bij de camera staan
 
-For best results, ask a friend to take a picture from further away and zoom in. This helps avoid the *fisheye* effect that you get when taking a picture from up close.
+Voor de beste resultaten vraag je een vriend om een foto van verder weg te nemen en in te zoomen. Dit voorkomt het *fisheye* effect dat je krijgt als je een foto van dichtbij neemt.
 
 <div className="grid grid-cols-2 gap-2">
 
-![A full-body picture of Joost taken from close](cset1.jpg "A picture taken from close will give you this weird fish eye lens effect")
-
-![A full-body picture of Joost taken from further](cset2.jpg "A picture taken from further and zoomed in will look a lot better")
+![Een volledige foto van Joost van dichtbij genomen](cset1.jpg "Een foto van dichtbij genomen geeft dit rare vissenoogeffect") ![Een volledige foto van Joost van verderaf genomen](cset2.jpg "Een foto van verderaf genomen en ingezoomd ziet er een stuk beter uit")
 
 </div>
 
-The picture on the left is taken from (too) close. There's nothing really wrong with this picture, but it looks weird. That's because this is taken with a mobile phone and the wide angle on these types of cameras gives you this subtle fish eye effect.
+De foto links is van (te) dichtbij genomen. Er is eigenlijk niets mis met deze foto, maar hij ziet er wel raar uit. Dat komt omdat dit is genomen met een mobiele telefoon en de groothoek van dit soort camera's zorgt voor dit subtiele vissenoogeffect.
 
-The picture on the right was take further away with zoom. This is a much better representation of reality and the pose looks natural because the fish eye effect is neutralized.
+De foto rechts is verder weg genomen met zoom. Dit is een veel betere weergave van de werkelijkheid en de houding ziet er natuurlijk uit omdat het vissenoogeffect is geneutraliseerd.
 
-#### Stand in front of a white background
+#### Ga voor een witte achtergrond staan
 
-We will edit out the background of your picture like this:
+We bewerken de achtergrond van je foto op deze manier:
 
-![A full-body picture of Joost on a white background](joost.png "A picture on a white background makes our life easier")
+![Een full-body foto van Joost op een witte achtergrond](joost.png "Een foto op een witte achtergrond maakt ons leven gemakkelijker")
 
-So you can make that step a lit easier for us if you can pose in front of a white or plain background.
+Dus je kunt die stap voor ons een beetje makkelijker maken als je voor een witte of effen achtergrond kunt poseren.
 
 

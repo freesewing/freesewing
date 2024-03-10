@@ -1,5 +1,5 @@
 ---
-title: "Bottom Arm Reduction (Octoplushy)"
+title: "Onderarmverkleining (Octoplushy)"
 ---
 
-This setting adjusts the difference in length between the top and the bottom fabric of the arms for the Octoplushy style. The bigger the difference, the more the arms will want to curl.
+Deze instelling past het verschil in lengte aan tussen de bovenste en onderste stof van de armen voor de Octoplushy stijl. Hoe groter het verschil, hoe meer de armen zullen willen krullen.

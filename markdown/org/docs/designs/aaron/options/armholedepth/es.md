@@ -4,6 +4,6 @@ title: "Profundidad del orificio"
 
 Esta opción controla la profundidad del agujero de armadura.
 
-This option applies to the new v3 way of calculating the armhole depth. If you enable the [legacy armhole depth](/docs/designs/brian/options/legacyarmholedepth) option, this option will not apply, but instead it's legacy version [armhole depth factor](/docs/designs/brian/options/armholedepthfactor) will.
+Esta opción se aplica a la nueva forma v3 de calcular la profundidad de la sisa. Si activas la opción [profundidad de sisa heredada](/docs/designs/brian/options/legacyarmholedepth) , esta opción no se aplicará, pero sí lo hará su versión heredada [factor de profundidad de sisa](/docs/designs/brian/options/armholedepthfactor) .
 
-In any case, Aaron allows the armhole to drop much further using the [armhole drop](/docs/designs/aaron/options/armholedrop) option. So you probably don't need this option from the underlying block, but it's there if you'd like to tweak it.
+En cualquier caso, Aaron permite que la sisa caiga mucho más utilizando la opción de caída de sisa [](/docs/designs/aaron/options/armholedrop). Así que probablemente no necesites esta opción del bloque subyacente, pero está ahí por si quieres modificarla.

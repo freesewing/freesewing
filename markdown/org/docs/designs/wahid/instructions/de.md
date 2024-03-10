@@ -140,7 +140,7 @@ Die Tasche nach hinten drehen und nach unten drücken.
 
 ![Drücke die Dreiecke an den kurzen Seiten nach unten](05h.png)
 
-Bewegen Sie Ihre Tasche von der Hand, um die kleinen Traingles an der Seite Ihrer Tasche aufzudecken.
+Move your pocket facing out of the way to reveal those little triangles at the side of your pocket.
 
 Falte sie zurück, um sicherzustellen, dass deine Tasche ein sauberes Rechteck öffnet, und drücke sie herunter.
 
@@ -214,7 +214,7 @@ Legen Sie Ihr Futter in die Weste, gute Seiten zusammen. Mit anderen Worten, die
 
 #### Futter an Stoff anheften
 
-![Nähen an Stoff](09b.png)
+![Futter an Stoff anheften](09b.png)
 
 Legen Sie das Futter mit der Gewebekante an und befestigen Sie es an der Stelle.
 
@@ -222,7 +222,7 @@ Beginnen Sie mit der Mitte nach hinten, und folgen Sie der Halslinie nach unten 
 
 #### Futter für Stoff nähen
 
-![Nähen zum Stoff](09c.png)
+![Futter für Stoff nähen](09c.png)
 
 Das Futter ist sauber angehängt, Nähfutter und Gewebe sind zusammengesetzt.
 
@@ -252,7 +252,7 @@ falten Sie nun das Futter ein bisschen vor dem Rand des Armlochs zurück und pin
 
 #### Handnähen Sie das Futter für den Stoff
 
-![Handgenähtes Futter für die Farbric](10c.png)
+![Handnähen Sie das Futter für den Stoff](10c.png)
 
 Benutzen Sie einen Hausschuh, um das Futter an den Stoff entlang des Armlochs zu nähen.
 

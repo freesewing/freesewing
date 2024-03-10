@@ -1,7 +1,7 @@
 ---
-title: "neck guard length"
+title: "longitud del protector de cuello"
 ---
 
-On garments with a neckband, this option adds extra length to the zipper guard to allow it to wrap around the neckband to protect the neck.
+En las prendas con barboquejo, esta opción añade una longitud adicional al protector de cremallera para que pueda envolver el barboquejo y proteger el cuello.
 
-Note: This option is only available if the 'neck style' option is set to 'neckband.'
+Nota: Esta opción sólo está disponible si la opción "estilo de cuello" está configurada como "banda de cuello".

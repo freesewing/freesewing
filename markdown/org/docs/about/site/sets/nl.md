@@ -2,8 +2,8 @@
 title: Maten sets
 ---
 
-A _measurements set_ holds a set of measurements along with meta data.
+Een _meetset_ bevat een set metingen samen met metagegevens.
 
-In addition to the measurements -- which is the most important data in a set -- a FreeSewing measurements set also has the following fields:
+Naast de metingen - de belangrijkste gegevens in een set - heeft een FreeSewing meetset ook de volgende velden:
 
 <ReadMore />

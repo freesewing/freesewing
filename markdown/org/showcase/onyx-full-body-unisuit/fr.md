@@ -1,17 +1,18 @@
 ---
-title: "A Onyx full-body unisuit"
-caption: "Mirror selfie of this onyx body suit"
+title: "Une combinaison intégrale Onyx"
+caption: "Selfie miroir de ce body en onyx."
 date: 20231101
-intro: "A blue full-body Onyx unisuit by Thrunic"
+intro: "Une combinaison intégrale bleue Onyx de Thrunic"
 designs:
   - "onyx"
 maker: joost
+author: 33070
 ---
 
-This is a full-body Onyx unisuit by Thrunic who created [the Onyx design](/designs/onyx). They write:
+Il s'agit d'une combinaison intégrale Onyx de Thrunic qui a créé [le design Onyx](/designs/onyx). Ils écrivent :
 
-> *A new Onyx full-body unisuit. It's got a hood, long sleeves with thumb holes, and long legs. It's fully lined except for the sleeves. It looks a lot like a wetsuit.*
+> *Une nouvelle combinaison intégrale Onyx. Il a une capuche, des manches longues avec des trous pour les pouces et de longues jambes. Il est entièrement doublé, à l'exception des manches. Cela ressemble beaucoup à une combinaison de plongée.*
 > 
-> *I took it for a test swim in the cool waters around here, and it certainly does confer some warmth, though not nearly as much as a real wetsuit. I think it would work best as a garment for boating or other activities where you'll both get wet and a lot of sun exposure. It's not particularly warm when dry, but doesn't lose much insulation when it gets wet.*
+> *Je l'ai testée pour nager dans les eaux fraîches de la région, et elle apporte une certaine chaleur, mais pas autant qu'une vraie combinaison de plongée. Je pense qu'il conviendrait mieux comme vêtement pour la navigation de plaisance ou d'autres activités où vous serez à la fois mouillés et très exposés au soleil. Il n'est pas particulièrement chaud lorsqu'il est sec, mais ne perd pas beaucoup d'isolation lorsqu'il est mouillé.*
 
 

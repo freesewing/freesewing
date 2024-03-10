@@ -1,5 +1,5 @@
 ---
-title: "Sweat à capuche Huey Ce dont tu as besoin"
+title: "Sweat à capuche Huey: Ce dont tu as besoin"
 ---
 
 Pour fabriquer Huey, tu auras besoin des éléments suivants :

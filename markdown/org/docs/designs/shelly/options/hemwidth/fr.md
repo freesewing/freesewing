@@ -2,4 +2,4 @@
 title: "Hem width"
 ---
 
-Sets the hem allowance of the hem along the waist, as a multiple of the seam allowance.
+Définit la marge de l'ourlet le long de la taille, en tant que multiple de la marge de couture.

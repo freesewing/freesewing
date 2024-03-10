@@ -63,14 +63,18 @@ export const NewSet = () => {
   const backend = useBackend()
   const { t } = useTranslation(ns)
   const router = useRouter()
+  const { account } = useAccount()
 
   // State
   const [name, setName] = useState('')
 
+  // Use account setting for imperial
+  const imperial = account.imperial
+
   // Helper method to create a new set
   const createSet = async () => {
     setLoadingStatus([true, 'processingUpdate'])
-    const result = await backend.createSet({ name })
+    const result = await backend.createSet({ name, imperial })
     if (result.success) {
       setLoadingStatus([true, t('nailedIt'), true, true])
       router.push(`/account/set?id=${result.data.set.id}`)
@@ -124,6 +128,7 @@ export const MsetCard = ({
     sm: 36,
   }
   const s = sizes[size]
+  const { t } = useTranslation(ns)
 
   const wrapperProps = {
     className: `bg-base-300 aspect-square h-${s} w-${s} mb-2
@@ -139,14 +144,34 @@ export const MsetCard = ({
     wrapperProps.style.backgroundPosition = 'bottom right'
 
   let icon = <span></span>
+  let missingMeasies = ''
+  let linebreak = ''
+  const maxLength = 75
   if (design) {
-    const [hasMeasies] = hasRequiredMeasurements(designMeasurements[design], set.measies, true)
+    const [hasMeasies, missing] = hasRequiredMeasurements(
+      designMeasurements[design],
+      set.measies,
+      true
+    )
     const iconClasses = 'w-8 h-8 p-1 rounded-full -mt-2 -ml-2 shadow'
     icon = hasMeasies ? (
       <OkIcon className={`${iconClasses} bg-success text-success-content`} stroke={4} />
     ) : (
       <NoIcon className={`${iconClasses} bg-error text-error-content`} stroke={3} />
     )
+    if (missing.length > 0) {
+      const translated = missing.map((m) => {
+        return t(m)
+      })
+      let missingString = t('missing') + ': ' + translated.join(', ')
+      if (missingString.length > maxLength) {
+        const lastSpace = missingString.lastIndexOf(', ', maxLength)
+        missingString = missingString.substring(0, lastSpace) + ', ' + t('andMore') + '...'
+      }
+      const measieClasses = 'font-normal text-xs'
+      missingMeasies = <span className={`${measieClasses}`}>{missingString}</span>
+      linebreak = <br />
+    }
   }
 
   const inner = (
@@ -154,6 +179,8 @@ export const MsetCard = ({
       {icon}
       <span className="bg-neutral text-neutral-content px-4 w-full bg-opacity-50 py-2 rounded rounded-t-none font-bold leading-5">
         {language ? set[`name${capitalize(language)}`] : set.name}
+        {linebreak}
+        {missingMeasies}
       </span>
     </>
   )
@@ -409,7 +436,7 @@ export const Mset = ({ id, publicOnly = false }) => {
         <h2>{t('data')}</h2>
         <DisplayRow title={t('name')}>{mset.name}</DisplayRow>
         <DisplayRow title={t('units')}>
-          {mset.imperial ? t('imerialUnits') : t('metricUnits')}
+          {mset.imperial ? t('imperialUnits') : t('metricUnits')}
         </DisplayRow>
         {control >= controlLevels.sets.notes && (
           <DisplayRow title={t('notes')}>
@@ -575,35 +602,38 @@ export const Mset = ({ id, publicOnly = false }) => {
       {/* units: Control level determines whether or not to show this */}
       <span id="units"></span>
       {account.control >= conf.account.sets.units ? (
-        <ListInput
-          id="set-units"
-          label={t('units')}
-          update={setImperial}
-          list={[
-            {
-              val: false,
-              label: (
-                <div className="flex flex-row items-center flex-wrap justify-between w-full">
-                  <span>{t('metricUnits')}</span>
-                  <span className="text-inherit text-2xl pr-2">cm</span>
-                </div>
-              ),
-              desc: t('metricUnitsd'),
-            },
-            {
-              val: true,
-              label: (
-                <div className="flex flex-row items-center flex-wrap justify-between w-full">
-                  <span>{t('imperialUnits')}</span>
-                  <span className="text-inherit text-4xl pr-2">″</span>
-                </div>
-              ),
-              desc: t('imperialUnitsd'),
-            },
-          ]}
-          current={imperial}
-          docs={docs.units}
-        />
+        <>
+          <ListInput
+            id="set-units"
+            label={t('units')}
+            update={setImperial}
+            list={[
+              {
+                val: false,
+                label: (
+                  <div className="flex flex-row items-center flex-wrap justify-between w-full">
+                    <span>{t('metricUnits')}</span>
+                    <span className="text-inherit text-2xl pr-2">cm</span>
+                  </div>
+                ),
+                desc: t('metricUnitsd'),
+              },
+              {
+                val: true,
+                label: (
+                  <div className="flex flex-row items-center flex-wrap justify-between w-full">
+                    <span>{t('imperialUnits')}</span>
+                    <span className="text-inherit text-4xl pr-2">″</span>
+                  </div>
+                ),
+                desc: t('imperialUnitsd'),
+              },
+            ]}
+            current={imperial}
+            docs={docs.units}
+          />
+          <span className="text-large text-warning">{t('unitsMustSave')}</span>
+        </>
       ) : null}
 
       {/* notes: Control level determines whether or not to show this */}
@@ -710,11 +740,9 @@ export const Sets = () => {
               onClick={toggleSelectAll}
               checked={sets.length === selCount}
             />
-            {selCount ? (
-              <button className="btn btn-error" onClick={removeSelectedSets}>
-                <TrashIcon /> {selCount} {t('sets')}
-              </button>
-            ) : null}
+            <button className="btn btn-error" onClick={removeSelectedSets} disabled={selCount < 1}>
+              <TrashIcon /> {selCount} {t('sets')}
+            </button>
           </div>
         </>
       ) : (
@@ -819,7 +847,14 @@ export const MsetButton = (props) => <MsetCard {...props} href={false} />
 export const MsetLink = (props) => <MsetCard {...props} onClick={false} useA={false} />
 export const MsetA = (props) => <MsetCard {...props} onClick={false} useA={true} />
 
-export const UserSetPicker = ({ design, t, href, clickHandler, size = 'lg' }) => {
+export const UserSetPicker = ({
+  design,
+  t,
+  href,
+  clickHandler,
+  missingClickHandler,
+  size = 'lg',
+}) => {
   // Hooks
   const backend = useBackend()
   const { control } = useAccount()
@@ -901,9 +936,10 @@ export const UserSetPicker = ({ design, t, href, clickHandler, size = 'lg' }) =>
           </Popout>
           <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
             {lackingSets.map((set) => (
-              <MsetLink
+              <MsetButton
                 {...{ set, control, design }}
-                onClick={clickHandler}
+                onClick={missingClickHandler}
+                href={href}
                 requiredMeasies={measurements[design]}
                 key={set.id}
                 size={size}

@@ -1,15 +1,15 @@
 ---
-title: "Gozer the ghost: Sewing Instructions"
+title: "Gozer le fantôme : Instructions de couture"
 ---
 
 ## Étape 1 : Les yeux
 
-- Cut holes where marked.
+- Découpe les trous à l'endroit indiqué.
 
-## Step 2: The body
+## Étape 2 : Le corps
 
-- Hem the body
+- Ourle le corps
 
 ## Étape 3: Profitez-en!
 
-That's it, you are all done. Put it on and scare the neighborhood.
+Voilà, tu as terminé. Mets-le et fais peur au voisinage.

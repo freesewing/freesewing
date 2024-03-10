@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-mirror",
-  "version": "3.0.0",
+  "version": "3.2.0",
   "description": "A FreeSewing plugin to mirror points or paths",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -49,12 +49,12 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0"
+    "@freesewing/core": "3.2.0"
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "10.2.0",
-    "chai": "4.3.10"
+    "mocha": "10.3.0",
+    "chai": "5.1.0"
   },
   "files": [
     "dist/*",
@@ -65,7 +65,6 @@
     "tag": "latest"
   },
   "engines": {
-    "node": "18",
-    "npm": "9"
+    "node": ">= 18.17.0 <22"
   }
 }

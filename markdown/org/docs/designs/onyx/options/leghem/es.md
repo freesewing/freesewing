@@ -1,7 +1,7 @@
 ---
-title: "Leg hem"
+title: "Dobladillo de la pierna"
 ---
 
-Controls how wide the hem going around the legs will be, as a multiple of the seam allowance. A hem of 2.5cm/1" is a common value.
+Controla la anchura del dobladillo que rodea las piernas, como múltiplo del margen de costura. Un dobladillo de 2,5 cm/1" es un valor común.
 
-Note: This option is only available if the _Leg ribbing_ option is set to 'hem.'
+Nota: Esta opción sólo está disponible si la opción _Canalé de la pierna_ está establecida en 'dobladillo'.

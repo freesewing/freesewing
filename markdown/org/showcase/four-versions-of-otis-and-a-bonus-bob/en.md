@@ -5,6 +5,7 @@ date: 20231017
 intro: "Wouter made four versions of Otis for newborn Otis, and a Bob to complete the ensemble."
 designs: ["otis", "bob"]
 maker: Natalia
+author: 132
 ---
 
 Wouter, the designer, made these:

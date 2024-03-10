@@ -1,8 +1,8 @@
 ---
-title: "Carlita coat: Designer Notes"
+title: "Carlita jas: Designer Notities"
 ---
 
-Carlita is [Carlton](/designs/carlton) with a full bust adjustment worked into a princess seam. It is, in other words, Carlton for people who have breasts, or at least are looking for a more female-presenting cut.
+Carlita is [Carlton](/designs/carlton) met een volledige busteaanpassing verwerkt in een prinsessennaad. Het is, met andere woorden, Carlton voor mensen die borsten hebben, of in ieder geval op zoek zijn naar een meer vrouwelijke snit.
 
 Apart from that, it's pretty much the same, with the exception of the chest pocket which for Carlita is worked into the princess seam.
 

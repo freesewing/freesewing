@@ -178,8 +178,8 @@ export const Bookmarks = () => {
           {t('newBookmark')}
         </Link>
       </p>
-      {selCount ? (
-        <button className="btn btn-error" onClick={removeSelectedBookmarks}>
+      {bookmarks.length > 0 ? (
+        <button className="btn btn-error" onClick={removeSelectedBookmarks} disabled={selCount < 1}>
           <TrashIcon /> {selCount} {t('bookmarks')}
         </button>
       ) : null}

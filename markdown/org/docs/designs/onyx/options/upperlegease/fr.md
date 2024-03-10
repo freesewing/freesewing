@@ -1,14 +1,14 @@
 ---
-title: "Upper leg ease"
+title: "Aisance du haut de la jambe"
 ---
 
-Controls how wide the garment will be at your upper leg.
+Contrôle la largeur du vêtement au niveau du haut de la jambe.
 
-Whatever value you provide here will simply be added to your upper leg circumference measurement when drafting the garment.
+Quelle que soit la valeur que tu indiques ici, elle sera simplement ajoutée à la mesure de la circonférence du haut de la jambe lorsque tu dessineras le vêtement.
 
 > ##### Cette option permet également des valeurs négatives.
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Tu devrais utiliser l'aisance négative si tu utilises un matériau extensible que tu veux bien ajuster. Les combinaisons et les justaucorps ont généralement une aisance négative, tandis que les autres vêtements ont généralement une aisance positive.
 
 
 

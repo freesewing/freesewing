@@ -6,6 +6,7 @@ intro: "Ein schickes Paar Ursula-Unterhosen"
 title: "Ein schickes Paar Ursula-Unterhosen"
 designs:
   - "ursula"
+author: 13050
 ---
 
 Karen hat aus einem dehnbaren Stoffrest dieses lustige Paar Ursulas gemacht! Sie teilte mit, dass sie aufgrund der Testergebnisse den Zwickel bei der nächsten Version schmaler machen und die Passform ein bisschen niedriger wählen wird. Wir finden den "Jazzercise-Effekt" bei dem Testpaar ziemlich lustig :)

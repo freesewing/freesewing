@@ -1,6 +1,6 @@
 ---
-title: "Vertical fabric stretch"
+title: "Estiramiento vertical del tejido"
 ---
 
-Adjust this option for more or less stretchy fabrics, specifically for vertical stretch.
+Ajusta esta opción para tejidos más o menos elásticos, concretamente para el estiramiento vertical.
 

@@ -1,6 +1,6 @@
 ---
-title: "Horizontal fabric stretch"
+title: "Horizontale stof stretch"
 ---
 
-Adjust this option for more or less stretchy fabrics, specifically for horizontal stretch.
+Pas deze optie aan voor meer of minder rekbare stoffen, specifiek voor horizontale stretch.
 

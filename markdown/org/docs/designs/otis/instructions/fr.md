@@ -1,82 +1,82 @@
 ---
-title: "Otis, the simple baby romper: Sewing Instructions"
+title: "Otis, la grenouillère simple pour bébé : Instructions de couture"
 ---
 
 <Note>
 
-You should use a stretch stitch on your sewing machine. Small zig-zag stitches work really well. The side seams can also be done with a serger.
+Tu devrais utiliser un point extensible sur ta machine à coudre. Les petits points zig-zag fonctionnent très bien. Les coutures latérales peuvent également être réalisées avec une surjeteuse.
 
 </Note>
 
-## Step 1: Bindings
+## Étape 1 : Les fixations
 
-### Two options
+### Deux options
 
-There are two ways to do the bindings. You can use it like double-folded bias binding, or just fold it in two and stitch that to the pieces. The double-folding will look nicer and more finished, but is a lot more involved.
+Il y a deux façons de procéder aux fixations. Tu peux l'utiliser comme un biais plié en deux, ou simplement le plier en deux et le coudre sur les pièces. Le double pliage sera plus joli et plus fini, mais il est beaucoup plus complexe.
 
-#### Double-folded
+#### Pliage double
 
-  - Fold both bindings along the long side in two, _wrong sides together_, and give it a good press.
-  - Mark the middle of each of the bindings (notch) and of the front and back parts.
-  - Attach the binding to the corresponding part, _good sides together_. Make sure you distribute the binding evenly along the edge.
-  - Sew just shy of the SA.
-  - Press the binding towards the edge and flip your part over.
-  - Now fold the remaining SA under and press.
-  - Sew this side of the binding to the part through all five layers.
+  - Plie les deux reliures en deux sur le long côté, _envers contre envers_, et appuie bien dessus.
+  - Marque le milieu de chacune des fixations (encoche) et des parties avant et arrière.
+  - Attache la reliure à la partie correspondante, _bons côtés ensemble_. Veille à répartir uniformément la reliure sur le bord.
+  - Couds juste à côté de la SA.
+  - Presse la reliure vers le bord et retourne ta pièce.
+  - Maintenant, replie la SA restante sous elle et presse-la.
+  - Couds ce côté de la reliure à la pièce à travers les cinq couches.
 
-#### Fold and stitch
+#### Plier et coudre
 
-  - Fold both bindings along the long side in two, _wrong sides together_, and give it a good press.
-  - Mark the middle of each of the bindings and of the front and back parts.
-  - Attach the folded binding to the corresponding part, _good sides together_. Make sure you distribute the binding evenly along the edge. You should have three layers pinned together.
-  - Sew just shy of the SA.
-  - Press the binding towards the edge, pressing the SA towards the _wrong side_.
-  - Sew through the part and the SA underneath, holding the folded SA on the _wrong side_.
+  - Plie les deux reliures en deux sur le long côté, _envers contre envers_, et appuie bien dessus.
+  - Marque le milieu de chacune des reliures et des parties avant et arrière.
+  - Attache la reliure pliée à la partie correspondante, _bons côtés ensemble_. Veille à répartir uniformément la reliure sur le bord. Veille à répartir uniformément la reliure sur le bord.
+  - Couds juste à côté de la SA.
+  - Presse la reliure vers le bord, en pressant le SA vers le _mauvais côté_.
+  - Couds à travers la pièce et la SA en dessous, en maintenant la SA pliée sur l'envers __.
 
-## Step 2: Attach body parts
+## Étape 2 : Attacher les parties du corps
 
-  - Lay the back and front parts with the _good sides up_, tops facing each other.
-  - Lay the front part shoulders on top of the back part shoulders, aligning the notches on the left and right.
-  - Baste or pin together.
+  - Pose les parties arrière et avant avec les _bons côtés vers le haut_, les sommets se faisant face.
+  - Pose les épaules de la partie avant sur les épaules de la partie arrière, en alignant les encoches à gauche et à droite.
+  - Bâtis ou épingle ensemble.
 
 ## Étape 3 : Fixer les manches
 
-  - Mark the middle of the shoulder of each sleeve.
-  - Pin the sleeve to the two body parts, aligning the middle of the sleeve with the shoulder notch.
-  - Distribute the sleeve evenly along the opening.
-  - Sew the pieces together.
+  - Marque le milieu de l'épaule de chaque manche.
+  - Epingle la manche aux deux parties du corps, en alignant le milieu de la manche sur l'encoche de l'épaule.
+  - Répartis le manchon uniformément le long de l'ouverture.
+  - Couds les morceaux ensemble.
 
-## Step 4: Prepare snap placket
+## Étape 4 : Préparer la patte de boutonnage
 
-  - (Optional) If your fabric is flimsy, or very stretchy, cut a piece of iron-on interfacing the size of the snap placket and iron it in place.
-  - Press the SA of the snap placket over, and then press the snap placket in two.
-  - Sew just along the inner edge on the snap placket.
+  - (Facultatif) Si ton tissu est fragile ou très extensible, découpe un morceau d'entoilage thermocollant de la taille de la patte de boutonnage et repasse-le en place.
+  - Repasse le SA de la patte de boutonnage par-dessus, puis repasse la patte de boutonnage en deux.
+  - Couds juste le long du bord intérieur de la patte de boutonnage.
 
-## Step 5: Body<Note> You can reinforce the sleeve openings now if you're so inclined. Add some iron-on interfacing tape to the hem of the sleeve. This will keep the sleeve opening looking nice if you have flimsy or stretchy fabric. </Note>
+## Étape 5 : Le corps<Note> Tu peux renforcer les ouvertures des manches maintenant si tu le souhaites. Ajoute un peu de ruban d'entoilage thermocollant à l'ourlet de la manche. Cela permettra à l'ouverture de la manche de rester belle si tu as un tissu flasque ou extensible. </Note>
 
-  - Press the sleeve SA and hem over, so it'll be easier to sew the hem once you've done the next steps.
-  - Pin both front and back sides together, _wrong sides out_, from the leg opening all the way to the arm opening in the sleeve.
-  - Sew the whole seam on both sides.
-  - Turn the romper _good sides out_.
+  - Repasse la manche SA et l'ourlet par-dessus, ainsi il sera plus facile de coudre l'ourlet une fois que tu auras fait les étapes suivantes.
+  - Epingle les deux côtés avant et arrière ensemble, _à l'envers_, de l'ouverture de la jambe jusqu'à l'ouverture du bras dans la manche.
+  - Couds la totalité de la couture sur les deux côtés.
+  - Retourne la grenouillère _du bon côté_.
 
 ## Étape 6 : Ourlet
 
-  - Fold the hems on the sleeves in.
-  - Sew them in place.
+  - Plie les ourlets des manches vers l'intérieur.
+  - Couds-les en place.
 
-## Step 7: Leg binding
+## Étape 7 : Fixation des jambes
 
-  - Fold the leg binding in two length-wise, _wrong sides together_, and press.
-  - Hold the ends _good sides together_, and sew the SA at the ends.
-  - Fold the binding back, _wrong sides together_.
-  - Pin the binding to the leg opening, matching the notch to the side seam, and the beginning and end to the snap placket.
-  - Sew this binding to the leg opening like you did with the earlier bindings.
+  - Plie la bordure de la jambe en deux dans le sens de la longueur, _endroit contre endroit_, et repasse.
+  - Tiens les extrémités _, bons côtés ensemble_, et couds les SA aux extrémités.
+  - Plie la reliure vers l'arrière, _envers contre envers_.
+  - Épingle la reliure à l'ouverture de la jambe, en faisant correspondre l'encoche à la couture latérale, et le début et la fin à la patte de boutonnage.
+  - Couds cette fixation à l'ouverture de la jambe comme tu l'as fait avec les fixations précédentes.
 
-## Step 8: Snaps
+## Étape 8 : Les boutons-pression
 
-  - Mark the position of the snaps along the snap placket, evenly distributed.
-  - Install the studs on the _good side_ of the back part, and the sockets on the _wrong side_ of the front part.
+  - Marque la position des boutons-pression le long de la patte de boutonnage, en les répartissant uniformément.
+  - Installe les goujons sur le bon côté __ de la partie arrière, et les douilles sur le mauvais côté __ de la partie avant.
 
-## Step 9: Done!
+## Étape 9 : Terminé !
 
-Give it a good press all around and take a moment to enjoy the new romper. This will be the last time it will ever look this nice.
+Appuie bien sur tout le pourtour et prends un moment pour apprécier ta nouvelle barboteuse. C'est la dernière fois qu'il sera aussi beau.

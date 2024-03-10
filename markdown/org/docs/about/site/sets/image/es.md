@@ -2,9 +2,9 @@
 title: Imagen
 ---
 
-Every measurements set has a **image** attribute that is optional.
+Cada conjunto de medidas tiene un atributo de imagen **** que es opcional.
 
-A picture says more than a 1000 words, so if you have multiple measurements sets, this can help you tell them apart.
+Una imagen dice más que 1000 palabras, así que si tienes varios conjuntos de medidas, esto puede ayudarte a distinguirlos.
 
-So if you want, you can add an image to your measurements set. It's up to you.
+Así que, si quieres, puedes añadir una imagen a tu conjunto de medidas. Depende de ti.
 

@@ -1,16 +1,16 @@
 ---
-title: "Otis, the simple baby romper: What You Need"
+title: "Otis, der einfache Babystrampler: Was du brauchst"
 ---
 
-To make Otis, you will need the following:
+Um Otis herzustellen, brauchst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
-- About 1 meter (1.1 yards) of a suitable fabric ([see Otis Fabric options](/docs/patterns/otis/fabric/))
-- 3 snaps.
-- A little bit of interfacing if your fabric is very stretchy.
+- Etwa 1 Meter (1,1 Yards) eines geeigneten Stoffes ([siehe Otis Fabric options](/docs/patterns/otis/fabric/))
+- 3 Schnappschüsse.
+- Ein wenig Einlage, wenn dein Stoff sehr dehnbar ist.
 
 <Note>
 
-You can use a different color fabric for the bindings to give it some additional flair.
+Du kannst einen andersfarbigen Stoff für die Einfassungen verwenden, um dem Ganzen noch mehr Flair zu verleihen.
 
 </Note>

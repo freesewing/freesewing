@@ -1,7 +1,19 @@
 # Change log for: @freesewing/uma
 
 
-## 3.0.0 (2022-09-30)
+## 3.1.0 (2023-12-26)
+
+### Fixed
+
+ - Changed defaults to have more rise in the back
+ - Increase default rise
+ - Decrease default vertical stretch
+ - Decreased default back waist dip
+ - Increased default front waist dip
+ - Allowed lower values on back exposure, causing back to flare out
+ - Fix issue with back part when bulge is on and expand is off
+
+## 3.0.0 (2023-09-30)
 
 ### Changed
 

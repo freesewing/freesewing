@@ -4,7 +4,7 @@ title: "Краватки"
 
 ***
 
-Whether to includes ties, yes or no
+Чи включати краватки, так чи ні
 
 
 

@@ -1,7 +1,7 @@
 ---
-title: "Leg ribbing"
+title: "Beinrippung"
 ---
 
-Choose whether to make ribbed knit cuffs for the legs or to use a hem.
+Wähle, ob du Rippstrickbündchen für die Beine oder einen Saum verwenden möchtest.
 
-Note: Setting this option to 'hem' will enable the 'leg hem' option, while setting this option to 'ribbing' will enable the 'leg ribbing length' and 'leg ribbing width' options.
+Hinweis: Wenn du diese Option auf "Saum" setzt, wird die Option "Beinsaum" aktiviert. Wenn du diese Option auf "Rippen" setzt, werden die Optionen "Länge der Beinrippen" und "Breite der Beinrippen" aktiviert.

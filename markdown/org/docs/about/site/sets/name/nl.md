@@ -2,14 +2,14 @@
 title: Naam
 ---
 
-Every measurements set has a **name** attribute that is mandatory.
+Elke meetset heeft een **naam** attribuut dat verplicht is.
 
-In other words, you must give each of your measurements sets a name, but that name can be anything you want.
+Met andere woorden, je moet elk van je meetsets een naam geven, maar die naam mag alles zijn wat je wilt.
 
-Typically, people give names that describe the set, like:
+Meestal geven mensen namen die de set beschrijven, zoals:
 
-- Myself, January 2024
-- Tony with binder
-- Jenny post augmentation
+- Ikzelf, januari 2024
+- Tony met ordner
+- Jenny na de vergroting
 
-But you do you.
+Maar je doet maar.

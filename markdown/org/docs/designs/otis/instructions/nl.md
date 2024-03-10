@@ -1,82 +1,82 @@
 ---
-title: "Otis, the simple baby romper: Sewing Instructions"
+title: "Otis, de eenvoudige baby romper: Naai-instructies"
 ---
 
 <Note>
 
-You should use a stretch stitch on your sewing machine. Small zig-zag stitches work really well. The side seams can also be done with a serger.
+Je moet een rekbare steek gebruiken op je naaimachine. Kleine zigzagsteken werken heel goed. De zijnaden kunnen ook met een overlockmachine worden gedaan.
 
 </Note>
 
-## Step 1: Bindings
+## Stap 1: Bindingen
 
-### Two options
+### Twee opties
 
-There are two ways to do the bindings. You can use it like double-folded bias binding, or just fold it in two and stitch that to the pieces. The double-folding will look nicer and more finished, but is a lot more involved.
+Er zijn twee manieren om de bindingen te doen. Je kunt het gebruiken als dubbelgevouwen biaisband, of gewoon dubbelvouwen en dat op de delen naaien. Het dubbelvouwen ziet er mooier en beter afgewerkt uit, maar is een stuk ingewikkelder.
 
-#### Double-folded
+#### Dubbelgevouwen
 
-  - Fold both bindings along the long side in two, _wrong sides together_, and give it a good press.
-  - Mark the middle of each of the bindings (notch) and of the front and back parts.
-  - Attach the binding to the corresponding part, _good sides together_. Make sure you distribute the binding evenly along the edge.
-  - Sew just shy of the SA.
-  - Press the binding towards the edge and flip your part over.
-  - Now fold the remaining SA under and press.
-  - Sew this side of the binding to the part through all five layers.
+  - Vouw beide bindingen langs de lange kant dubbel, _met de verkeerde kanten op elkaar_, en pers goed.
+  - Markeer het midden van elk van de bindingen (inkeping) en van de voor- en achterkant.
+  - Bevestig de binding aan het corresponderende deel, _goede kanten op elkaar_. Zorg ervoor dat je de binding gelijkmatig over de rand verdeelt.
+  - Naai net niet de SA.
+  - Druk de binding naar de rand toe en draai je deel om.
+  - Vouw nu de overgebleven SA eronder en pers.
+  - Naai deze kant van de binding aan het deel door alle vijf de lagen heen.
 
-#### Fold and stitch
+#### Vouwen en naaien
 
-  - Fold both bindings along the long side in two, _wrong sides together_, and give it a good press.
-  - Mark the middle of each of the bindings and of the front and back parts.
-  - Attach the folded binding to the corresponding part, _good sides together_. Make sure you distribute the binding evenly along the edge. Make sure you distribute the binding evenly along the edge.
-  - Sew just shy of the SA.
-  - Press the binding towards the edge, pressing the SA towards the _wrong side_.
-  - Sew through the part and the SA underneath, holding the folded SA on the _wrong side_.
+  - Vouw beide bindingen langs de lange kant dubbel, _met de verkeerde kanten op elkaar_, en pers goed.
+  - Markeer het midden van elk van de bindingen en van de voor- en achterkant.
+  - Bevestig de gevouwen band aan het corresponderende deel, _goede kanten op elkaar_. Zorg ervoor dat je de binding gelijkmatig over de rand verdeelt. Zorg ervoor dat je de binding gelijkmatig over de rand verdeelt.
+  - Naai net niet de SA.
+  - Druk de binding naar de rand toe en druk de SA naar de _verkeerde kant_.
+  - Naai door het deel en de SA eronder en houd de gevouwen SA op de _met de verkeerde kant_.
 
-## Step 2: Attach body parts
+## Stap 2: Bevestig lichaamsdelen
 
-  - Lay the back and front parts with the _good sides up_, tops facing each other.
-  - Lay the front part shoulders on top of the back part shoulders, aligning the notches on the left and right.
-  - Baste or pin together.
+  - Leg de achterste en voorste delen met de _goede kanten naar boven_, de bovenkanten naar elkaar toe.
+  - Leg de schouders van het voorste deel op de schouders van het achterste deel en lijn de inkepingen links en rechts uit.
+  - Rijg of speld vast.
 
 ## Stap 3: Mouwen bevestigen
 
-  - Mark the middle of the shoulder of each sleeve.
-  - Pin the sleeve to the two body parts, aligning the middle of the sleeve with the shoulder notch.
-  - Distribute the sleeve evenly along the opening.
-  - Sew the pieces together.
+  - Markeer het midden van de schouder van elke mouw.
+  - Speld de mouw aan de twee lichaamsdelen, waarbij je het midden van de mouw uitlijnt met de schouderinkeping.
+  - Verdeel de hoes gelijkmatig over de opening.
+  - Naai de stukken aan elkaar.
 
-## Step 4: Prepare snap placket
+## Stap 4: Kliksluiting voorbereiden
 
-  - (Optional) If your fabric is flimsy, or very stretchy, cut a piece of iron-on interfacing the size of the snap placket and iron it in place.
-  - Press the SA of the snap placket over, and then press the snap placket in two.
-  - Sew just along the inner edge on the snap placket.
+  - (Optioneel) Als je stof dun of erg rekbaar is, knip dan een stukje strijkvlieseline ter grootte van het drukknoopsluiting en strijk het vast.
+  - Druk de SA van de drukknoopsluiting om en druk de drukknoopsluiting in tweeën.
+  - Naai vlak langs de binnenrand op het drukknoopsluiting.
 
-## Step 5: Body<Note> You can reinforce the sleeve openings now if you're so inclined. Add some iron-on interfacing tape to the hem of the sleeve. This will keep the sleeve opening looking nice if you have flimsy or stretchy fabric. </Note>
+## Stap 5: Lichaam<Note> Je kunt nu de mouwopeningen verstevigen als je dat wilt. Doe wat strijkbare verstevigingsband op de zoom van de mouw. Zo blijft de mouwopening mooi als je dunne of rekbare stof hebt. </Note>
 
-  - Press the sleeve SA and hem over, so it'll be easier to sew the hem once you've done the next steps.
-  - Pin both front and back sides together, _wrong sides out_, from the leg opening all the way to the arm opening in the sleeve.
-  - Sew the whole seam on both sides.
-  - Turn the romper _good sides out_.
+  - Pers de mouw SA en zoom om, zodat het makkelijker is om de zoom te naaien als je de volgende stappen hebt gedaan.
+  - Speld de voor- en achterkant op elkaar, _met de verkeerde kanten naar buiten_, vanaf de beenopening helemaal tot aan de armopening in de mouw.
+  - Naai de hele naad aan beide kanten.
+  - Draai de romper _met de goede kanten naar buiten_.
 
 ## Stap 6: Zomen
 
-  - Fold the hems on the sleeves in.
-  - Sew them in place.
+  - Vouw de zomen van de mouwen naar binnen.
+  - Naai ze vast.
 
-## Step 7: Leg binding
+## Stap 7: Benen binden
 
-  - Fold the leg binding in two length-wise, _wrong sides together_, and press.
-  - Hold the ends _good sides together_, and sew the SA at the ends.
-  - Fold the binding back, _wrong sides together_.
-  - Pin the binding to the leg opening, matching the notch to the side seam, and the beginning and end to the snap placket.
-  - Sew this binding to the leg opening like you did with the earlier bindings.
+  - Vouw de beenbies in de lengte dubbel, _met de verkeerde kanten op elkaar_, en pers.
+  - Houd de uiteinden _met de goede kanten op elkaar_en naai de SA aan de uiteinden vast.
+  - Vouw de band terug, _met de verkeerde kanten op elkaar_.
+  - Speld de bies op de beenopening, de inkeping op de zijnaad en het begin en einde op de drukknoopsluiting.
+  - Naai deze bies aan de beenopening zoals je met de eerdere bindingen hebt gedaan.
 
-## Step 8: Snaps
+## Stap 8: Snaps
 
-  - Mark the position of the snaps along the snap placket, evenly distributed.
-  - Install the studs on the _good side_ of the back part, and the sockets on the _wrong side_ of the front part.
+  - Markeer de positie van de drukknopen langs het drukknoopsluiting, gelijkmatig verdeeld.
+  - Installeer de tapeinden op de _goede kant_ van het achterste deel en de tapeinden op de _verkeerde kant_ van het voorste deel.
 
-## Step 9: Done!
+## Stap 9: Klaar!
 
-Give it a good press all around and take a moment to enjoy the new romper. This will be the last time it will ever look this nice.
+Druk het rondom goed aan en neem even de tijd om van het nieuwe rompertje te genieten. Dit is de laatste keer dat het er zo mooi uitziet.

@@ -2,9 +2,9 @@
 title: Одиниці вимірювання
 ---
 
-FreeSewing support both **metric units** (cm) and **imperial units** (inch).
+FreeSewing підтримує як **метричні одиниці** (см), так і **імперські одиниці** (дюйм).
 
-Here you can choose which type of units you prefer.
+Тут ви можете вибрати, якому типу блоків ви віддаєте перевагу.
 
 Note that you can override these default units in various places, such as on a specific pattern or measurements set.
 

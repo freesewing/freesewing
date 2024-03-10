@@ -21,7 +21,7 @@ const UserAdminPage = ({ page }) => {
 
   return (
     <PageWrapper {...page} title={`User ${id}`}>
-      <AuthWrapper requiredRole="admin">{id ? <ManageUser userId={id} /> : null}</AuthWrapper>
+      <AuthWrapper requiredRole="support">{id ? <ManageUser userId={id} /> : null}</AuthWrapper>
     </PageWrapper>
   )
 }

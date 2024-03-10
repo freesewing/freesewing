@@ -1,7 +1,7 @@
 ---
-title: "Shin swim trunks: Designer Notes"
+title: "Short de bain Shin : Notes du créateur"
 ---
 
-I needed swim trunks, so I designed Shin. There's not much more to it than that.
+J'avais besoin d'un maillot de bain, alors j'ai conçu Shin. Il n'y a pas grand-chose de plus que cela.
 
 joost

@@ -1,11 +1,11 @@
 ---
-title: "Otis, the simple baby romper: Fabric Options"
+title: "Otis, la grenouillère simple pour bébé : Options de tissu"
 ---
 
 ## Tissu principal
 
-Rompers are normally made from knit fabric. For best results, use a cotton fabric with just one or two percent of spandex. Jersey works well if it has good recovery.
+Les grenouillères sont normalement fabriquées à partir d'un tricot. Pour de meilleurs résultats, utilise un tissu en coton avec seulement un ou deux pour cent d'élasthanne. Le jersey fonctionne bien s'il a une bonne récupération.
 
 ## Entoilage
 
-If your fabric has a lot of stretch, it is probably a good idea to put some iron-on interfacing on the snap placket. 
+Si ton tissu est très extensible, c'est probablement une bonne idée de mettre de l'entoilage thermocollant sur la patte de boutonnage. 

@@ -2,5 +2,5 @@
 title: "Bequemlichkeitszugabe Ärmel"
 ---
 
-Affects how wide the sleeve is at the armhole on all shirts. For shirts that are less than 100% length, this option also affects how wide the sleeve is at the hem, with shorter sleeves being affected by this option to a greater degree, and longer sleeves being more affected by the wrist ease option. In most cases, this value should be set larger than chest ease, as the shoulders and arms are smaller and the same percentage of ease will translate to a smaller absolute ease. For compression clothes, shoulders also need more mobility than the chest, and very negative eases should generally be avoided for this option.
+Beeinflusst bei allen Hemden, wie weit der Ärmel am Armausschnitt ist. Bei Hemden, die weniger als 100 % lang sind, wirkt sich diese Option auch darauf aus, wie breit der Ärmel am Saum ist, wobei kürzere Ärmel von dieser Option stärker betroffen sind und längere Ärmel eher von der Option "Handgelenkserleichterung" beeinflusst werden. In den meisten Fällen sollte dieser Wert größer sein als die Brustweite, da die Schultern und Arme kleiner sind und derselbe prozentuale Wert eine geringere absolute Weite bedeutet. Bei Kompressionskleidung brauchen auch die Schultern mehr Bewegungsfreiheit als die Brust, und sehr negative Ausschnitte sollten bei dieser Option generell vermieden werden.
 

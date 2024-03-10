@@ -1,6 +1,6 @@
 ---
-title: "Neckband width"
+title: "Ancho de la cinta del cuello"
 ---
 
-Controls how wide the finished neckband will be, as a percentage of the neckline circumference.
+Controla la anchura del escote acabado, como porcentaje de la circunferencia del escote.
 

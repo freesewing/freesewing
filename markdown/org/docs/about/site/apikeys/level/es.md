@@ -1,18 +1,18 @@
 ---
-title: Permission level
+title: Nivel de permiso
 ---
 
-Every API key has a **permission level** the controls what the key can do.
+Cada clave API tiene un nivel de permiso **** que controla lo que puede hacer la clave.
 
-The permission level is a number from `0` to `4` with the following significance:
+El nivel de permiso es un número desde `0` hasta `4` con el siguiente significado:
 
-- `0` : Authenticate only
-- `1` : Read access to your own patterns and measurements sets
-- `2` : Read access to all your account data
-- `3` : Write access to your own patterns and measurements sets
+- `0` : Sólo autentificar
+- `1` : Acceso de lectura a tus propios patrones y conjuntos de medidas
+- `2` : Acceso de lectura a todos los datos de tu cuenta
+- `3` : Escribe el acceso a tus propios patrones y conjuntos de medidas
 - `4` : Write access to all your account data Link> For more details, refer to \[the backend documentation on FreeSewing.dev\](https://freesewing.dev/reference/backend/rbac#permission-levels)
 
 <Tip>
 
-For more details, refer to [the backend documentation on FreeSewing.dev](https://freesewing.dev/reference/backend/rbac#permission-levels)
+Para más detalles, consulta [la documentación del backend en FreeSewing.dev](https://freesewing.dev/reference/backend/rbac#permission-levels)
 </Tip>

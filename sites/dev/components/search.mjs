@@ -44,6 +44,9 @@ const Hit = (props) => (
         <Highlight hit={props.hit} attribute="body" />
       </Link>
     )}
+    <Link href={props.hit.page} className="text-xs sm:text-sm block opacity-70">
+      <Highlight hit={props.hit} attribute="page" />
+    </Link>
   </div>
 )
 

@@ -1,12 +1,12 @@
 ---
-title: "An early Uma"
-caption: "An Uma made of rayon spandex jersey"
+title: "Une première Uma"
+caption: "Un Uma en jersey de rayonne spandex"
 date: 20231027
-intro: "This pair of Uma undies is made of rayon spandex jersey and finished with wide fold over elastic."
+intro: "Cette paire de sous-vêtements Uma est fabriquée en jersey de rayonne spandex et terminée par un large élastique rabattable."
 designs:
   - "uma"
 maker: Natalia
 ---
 
-This pair of Uma undies is made of rayon spandex jersey and finished with wide fold over elastic. This is an early version of the design, which has since undergone a few changes.
+Cette paire de sous-vêtements Uma est fabriquée en jersey de rayonne spandex et terminée par un large élastique rabattable. Il s'agit d'une première version du dessin, qui a depuis subi quelques modifications.
 

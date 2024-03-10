@@ -6,6 +6,7 @@ intro: "Ce pantalon enveloppant Waralee a été fabriqué par Wouter. Ils sont d
 title: "Pantalon enveloppant Waralee de Wouter"
 designs:
   - "waralee"
+author: 132
 ---
 
 Ce pantalon enveloppant Waralee a été fabriqué par Wouter. Ils sont dotés d'ourlets à onglet.

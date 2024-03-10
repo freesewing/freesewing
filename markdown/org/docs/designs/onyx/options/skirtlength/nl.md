@@ -2,4 +2,4 @@
 title: "Roklengte"
 ---
 
-Controls the length of the skirt, as a percentage of the waist to upper leg measurement. A length of 100% should make a skirt just long enough to reach the upper leg.
+Bepaalt de lengte van de rok, als percentage van de taille-bovenbeenlengte. Een lengte van 100% zou een rok net lang genoeg moeten maken om het bovenbeen te bereiken.

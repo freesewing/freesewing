@@ -49,7 +49,7 @@ Can you guess what it means?
 
 - We've added the `options` property to our `bib` object
 - On the `options` property, we have added `neckRatio` which holds the configuration for our option
-- It is a `pct` option -- whcih means it's a percentage
+- It is a `pct` option -- which means it's a percentage
 - Its default value is 90%
 - Its minimum value is 70%
 - Its maximum value is 90%

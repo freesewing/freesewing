@@ -1,7 +1,5 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { round, Design } from '../src/index.mjs'
-
-const expect = chai.expect
 
 describe('Pattern', () => {
   describe('Pattern.sample()', () => {

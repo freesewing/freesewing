@@ -24,11 +24,11 @@ From left to right you can see:
 
 ## Design templates
 
-If you click he **Design** icon it will show this menu:
+If you click the **Design** icon it will show this menu:
 
 ![Design templates provided by the FreeSewing development environment](./templates.png)
 
-It allows you to choose a desing template to start from. The following templates are included:
+It allows you to choose a design template to start from. The following templates are included:
 
 - **From scratch**: Start with an (almost) empty design
 - **Tutorial**: Start with the end result of this very tutorial
@@ -41,7 +41,7 @@ It allows you to choose a desing template to start from. The following templates
 For the following along this tutorial, you have two options:
 
 - Pick **Tutorial** if you prefer to read along, make small changes, and see how they affect the design.
-- Pick **From scratch** if you prefer to actively participate be recreating the desing in this tutorial.
+- Pick **From scratch** if you prefer to actively participate by recreating the design in this tutorial.
 
-I recommend the latter. You will learn (and remember) a lot more if you are activele engaging.
+I recommend the latter. You will learn (and remember) a lot more if you are actively engaging.
 

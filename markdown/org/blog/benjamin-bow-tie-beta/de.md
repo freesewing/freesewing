@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Wenn es Ihnen gefällt, lassen Sie es uns wissen"
 date: "2017-11-14"
 intro: "Unsere Familie an freien und opensource Schnittmustern ist wieder gewachsen, und das neueste Mitglied der Familie ist... Benjamin ."

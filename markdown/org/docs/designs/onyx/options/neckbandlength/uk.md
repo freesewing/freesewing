@@ -1,11 +1,11 @@
 ---
-title: "Neckband length"
+title: "Довжина шийної стрічки"
 ---
 
-Controls how long to make the neckband, as a percentage of the circumference of the neckline.
+Керує довжиною шийної стрічки у відсотках від окружності вирізу горловини.
 
-Too large a value will make for a loose neckband that doesn't hold its shape properly, while too small a value will cause the fabric around the neckband to be gathered.
+Занадто велике значення призведе до того, що шийна стрічка буде вільною і не триматиме форму належним чином, тоді як занадто мале значення призведе до того, що тканина навколо шийної стрічки буде збиратися в складки.
 
-Materials that stretch more easily should use smaller values. 80-85% is a reasonable value when using swim fabric, and 75% is a reasonable value for rib knit.
+Для матеріалів, які легше розтягуються, слід використовувати менші значення. 80-85% - це розумне значення при використанні тканини для плавання, а 75% - для трикотажу з ребрами.
 
-Note: This option is only available if the 'neck style' option is set to 'neckband.'
+Примітка: Ця опція доступна, лише якщо для параметра "стиль шиї" встановлено значення "шийна пов'язка".

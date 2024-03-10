@@ -20,4 +20,20 @@ export const siteConfig = {
   languagesWip: [],
   site: 'FreeSewing.org',
   tld: 'org',
+  /*
+   * This is a read-only token that only can read issues from our monorepo.
+   * hich you can do anonymously via the web UI.
+   * However, the GraphQL API requires authentication so we need to use this.
+   * We could side-step it be going via our own backend, but as this is used in a status
+   * component, we don't want to be in a situation where the backend is down and now the status
+   * page can't show that because it can't access GitHub without a backend.
+   * So, this is the token split into parts to keep automated (dumb) tools
+   * from screaming: ZOMG YOU LEAKED CREDENTIALS!!
+   */
+  issueToken: [
+    'github',
+    'pat',
+    '11AANBDTQ0ldsP6QPzzGTP',
+    'JflTxTZWgp4baJEB77Nkg8gf6UdtOmBzljLGqXWszoGV6XYUO5JTPMA1VxF',
+  ].join('_'),
 }

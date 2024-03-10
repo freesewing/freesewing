@@ -1,7 +1,7 @@
 ---
-title: "Gozer the ghost: Fabric Options"
+title: "Gozer der Geist: Stoffoptionen"
 ---
 
 ## Hauptstoff
 
-Traditionally, white sheets are used.
+Traditionell werden weiße Laken verwendet.

@@ -1,8 +1,8 @@
 ---
-title: "Hugo hoodie: Designer Notes"
+title: "Худі Hugo: Нотатки дизайнера"
 ---
 
-I wanted to try my hand on raglan sleeves, so this is what I ended up with. It's a hooded sweater, with raglan sleeves, and an optional kangaroo pocket.
+Я хотіла спробувати свої сили в рукавах реглан, і ось що в мене вийшло. Це светр з капюшоном, рукавами реглан і додатковою кишенею-кенгуру.
 
 I named it `hugo` in memory of Hugo De Cock, my godfather with a name to make pornstars jealous.
 

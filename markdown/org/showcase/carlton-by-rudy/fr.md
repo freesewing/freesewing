@@ -12,7 +12,7 @@ Ce manteau élégant Carlton a été fait par Rudy qui a partagé :
 
 > Ma version du manteau Carlton. Mon premier grand projet de couture et la première fois en utilisant un patron freesewing. J'ai même fait mes propres boutons :)
 
-![Photo de l'avant](https://posts.freesewing.org/uploads/carlton_by_rudy_carltonrudy2_ff73f3dc38.jpg "Photo de l'avant")
+![Vue de l'avant](https://posts.freesewing.org/uploads/carlton_by_rudy_carltonrudy2_ff73f3dc38.jpg "Vue de l'avant")
 
 ![Vue boutonnée](https://posts.freesewing.org/uploads/carlton_by_rudy_carltonrudy3_dfe71f082f.jpg "Vue boutonnée")
 

@@ -1,14 +1,14 @@
 ---
-title: Binding width
+title: Breite der Bindung
 ---
 
-Controls the width of the kniw binding on Aaron.
+Controls the width of the knit binding on Aaron.
 
-The default knit binding width is 6 x the seam allowance. For metric users with the default 1cm seam allowance, this results in a 1.5cm wide knit binding which is a good value.
+Die Standardbreite des Strickbands ist 6 x die Nahtzugabe. Für metrische Benutzer mit der Standard-Nahtzugabe von 1 cm ergibt dies ein 1,5 cm breites Strickband, was ein guter Wert ist.
 
-For imperial users (who have a default seam allowance of 0.5") or users who choose to use a larger seam allowance, the value of 6 time the seam allowance will probable result in a knit binding that it too wide, so this option allows you to control that.
+Bei Nutzern mit kaiserlichen Maßen (die eine Standard-Nahtzugabe von 0,5" haben) oder Nutzern, die eine größere Nahtzugabe verwenden möchten, wird der Wert 6 für die Nahtzugabe wahrscheinlich zu einer zu breiten Strickbindung führen, daher kannst du das mit dieser Option steuern.
 
 <Note>
 
-This option is expressed in percetage of the seam allowance. So the default s600%, or 6 time the seam allowance,.
+This option is expressed in percentage of the seam allowance. So the default is 600%, or 6 time the seam allowance.
 </Note>

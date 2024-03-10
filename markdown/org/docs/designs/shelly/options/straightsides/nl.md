@@ -1,6 +1,6 @@
 ---
-title: "Straight sides"
+title: "Rechte zijkanten"
 ---
 
-Forms a tubular shirt, which is a shirt where the hips and chest are the same width and connected by a straight seam. Set this to true for front and back parts that are perfectly rectangular below the armholes. This setting overrides any values set for the `hips ease` or `side shape` options. For most body types, leaving this option on will result in a reasonable fit that is looser around the belly and tighter around the chest, and generally produces a more fabric-efficient pattern.
+Vormt een buisvormig overhemd, dat is een overhemd waarbij de heupen en borst dezelfde breedte hebben en verbonden zijn door een rechte naad. Stel dit in op waar voor voor- en achterdelen die perfect rechthoekig zijn onder de armsgaten. Deze instelling overschrijft alle waarden die zijn ingesteld voor de opties `hips ease` of `side shape` . Voor de meeste lichaamstypes zal het aanlaten van deze optie resulteren in een redelijke pasvorm die losser is rond de buik en strakker rond de borst, en over het algemeen een stofzuiniger patroon oplevert.
 

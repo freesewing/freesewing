@@ -15,7 +15,7 @@ title: "Привіт, акуло: Що вам потрібно"
 
 <Note>
 
-This list is based on a default Hi and you may need less or more fabric dependant on the [size you are making Hi](/docs/designs/hi/options/size/).
+Цей список базується на стандартній моделі Hi, і вам може знадобитися менше або більше тканини, залежно від [розміру, який ви робите] (/docs/designs/hi/options/size/).
 
 Наприклад, для 500% Hi потрібно 5 метрів (1 метр х 500% = 5 метрів), а для 50% Hi - 0,5 метра (1 метр х 50% = 0,5 метра).
 

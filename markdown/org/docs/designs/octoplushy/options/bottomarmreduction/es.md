@@ -1,5 +1,5 @@
 ---
-title: "Bottom Arm Reduction"
+title: "Reducción del brazo inferior"
 ---
 
-This setting adjusts the difference in length between the top and the bottom fabric of the arms for the Octopus and Squid styles. The bigger the difference, the more the arms will want to curl.
+Esta configuración ajusta la diferencia de longitud entre la tela superior e inferior de los brazos para los estilos Pulpo y Calamar. Cuanto mayor sea la diferencia, más querrán curvarse los brazos.

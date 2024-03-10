@@ -1,9 +1,9 @@
 ---
-title: "Teagan T-shirt: Designer Notes"
+title: "Футболка Teagan: Нотатки дизайнера"
 ---
 
-This is my go-to T-shirt pattern for most of my T-shirts. It's not the classical T-shape but a bit more fitted with narrower and shorter sleeves and a wider somewhat boat-neck style opening.
+Це мій улюблений візерунок для більшості моїх футболок. Це не класична Т-подібна форма, а трохи більш приталена, з вужчими та коротшими рукавами і ширшим вирізом у стилі "човник".
 
-I like it. Maybe you will too.
+Мені подобається. Можливо, ти теж.
 
 Йост

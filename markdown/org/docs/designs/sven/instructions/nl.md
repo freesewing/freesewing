@@ -4,7 +4,7 @@ title: "Sven sweatshirt: Naai-instructies"
 
 ### Stap 1: Sluit de schoudernaden
 
-- Leg het voorpand op het rugpand met de juiste kanten tegen elkaar.
+- Place the back and front on top of each other with the good sides together.
 - Leg de schoudernaad gelijk, en stik/lock de naad op de standaard naadwaarde.
 - Herhaal voor de tweede schoudernaad.
 
@@ -38,7 +38,7 @@ title: "Sven sweatshirt: Naai-instructies"
 
 - Meet de breedte van de mouw aan de manchet
 - Knip een stuk boordstof dat (twee keer deze lengte - 2 c/1 inc) is en 7 cm/ 3 inch breed
-- Plooi de boordstof dubbel langs de langste kant, en stik de korte uiteindes samen zodat je een ring hebt
+- Fold the ribbing double along the longest side, and sew together the edge so you have a continuous ring
 - Keer je Sven binnenstebuiten
 - Plooi de ring van boordstof met de goede kant naar buiten, en stop de geplooide kant in je binnenstebuiten mouw
 - Leg de onafgewerkte kant van de boordstof gelijk met de rand van de mouw en speld vast. De boorstof is een beetje korter, dus rek ze een beetje uit bij het spelden zodat ze in de mouw past.
@@ -51,7 +51,7 @@ title: "Sven sweatshirt: Naai-instructies"
 - Meet de breedte van Sven aan de zoom
 - Knip een stuk boordstof dat 1.9 keer deze lengte is en 7 cm/ 3 inch breed
 - Als je boordstof niet breed genoeg is moet je verschillende stukken aan elkaar zetten
-- Plooi de boordstof dubbel langs de langste kant, en stik de korte uiteindes samen zodat je een ring hebt
+- Fold the ribbing double along the longest side, and sew together the edge so you have a continuous ring
 - Keer je Sven binnenstebuiten
 - Plooi de boordstof met de goede kant naar buiten, en stop de geplooide kant in je binnenstebuiten trui
 - Leg de onafgewerkte kant van de boordstof samen met de rand van de zoom en speld vast. De boordstof is een beetje korter, dus rek ze een beetje uit tijdens het spelden om dit verschil te verdelen.

@@ -1,243 +1,243 @@
 ---
-title: "Onyx one-piece: Sewing Instructions"
+title: "Суцільнокроєна сукня з оніксу: Інструкція з пошиття"
 ---
 
 <Note>
 
-The use of a serger/overlocker is recommended, to keep the size of the finished seams small and to allow the seams to stretch. If using a serger with the knife engaged, a seam allowance of 1/2 inch (12 mm) is recommeded. If using an overlocking foot on a sewing machine, or serging without the use of the knife, a seam allowance of 1/4 inch (6 mm) is recommended.
+Рекомендується використовувати сергер/оверлок, щоб зберегти невеликий розмір готових швів і дати можливість швам розтягнутися. If using a serger with the knife engaged, a seam allowance of 1/2 inch (12 mm) is recommended. У разі використання оверлочної лапки на швейній машині або зшивання без використання ножа рекомендується робити припуск на шов 1/4 дюйма (6 мм).
 
-Unless otherwise stated, use stretch steams for contruction of this garment. A 4-thread overlock stitch is recommended, or an overlock foot on a sewing machine if a serger is unavailable.
+Unless otherwise stated, use stretch steams for construction of this garment. Рекомендується 4-ниткова оверлочна строчка або лапка на швейній машині, якщо немає сервера.
 
-Hems or cuffs are optional (since knit doesn't fray), but if you do make hems or add cuffs, make sure they can stretch. These instructions describe how to make a single-fold hem with a double needle, which is suitable for swimwear or lightweight garments, and how to make a rib knit cuff, which is suitable for fleece pajamas or kigurumi.
+Подоли або манжети необов'язкові (оскільки трикотаж не зношується), але якщо ви робите подоли або додаєте манжети, переконайтеся, що вони можуть розтягуватися. У цій інструкції описано, як виконати подвійною голкою однофонтурну кайму, яка підходить для купальників або легкого одягу, і як зробити ребристу в'язку манжета, яка підійде для флісової піжами або кігурумі.
 
-If sewing stretch/swim fabric, adjust your tension to allow for extra stretch. On a serger, this will usually mean lowering the needle tension, especially the right needle, and adjusting the looper tension as needed to keep the stitch looking decent. On a regular sewing machine, lower the tension. Test your choice of stitch first on scrap fabric, and try to pop the test seam by stretching the seam along its length. It should only pop after stretching quite a bit. If it pops too easily, keep playing with your stitches/tension settings until you get something that can survive some abuse.
+Якщо ви шиєте еластичну тканину, відрегулюйте натяг, щоб забезпечити додаткове розтягнення. На швейній машині це зазвичай означає послаблення натягу голки, особливо правої, і регулювання натягу петлі за необхідності, щоб стібок виглядав пристойно. На звичайній швейній машині зменшіть натяг. Спершу випробуйте обраний шов на клаптику тканини, а потім спробуйте виконати пробний шов, розтягнувши його по всій довжині. Він повинен вискочити тільки після того, як трохи розтягнеться. Якщо вона розривається надто легко, продовжуйте гратися зі стібками та налаштуваннями натягу, поки не отримаєте щось, що витримає певні зловживання.
 
-For making garments using 2-way stretch knits (such as jersey and fleece), regular settings with a stitch that stretches should be fine.
+Для пошиття одягу з двостороннього еластичного трикотажу (наприклад, трикотажу та флісу) достатньо звичайних налаштувань зі строчкою, що розтягується.
 
 </Note>
 
-### Step 0: Customizing and fitting your pattern
-Decide what type of garment you're going to make. This design supports several options:
-- Unisuits (one-piece compression swimwear with sleeves and legs)
-- One-piece pajamas (loose-fitting garment made with soft fabric, either short or long sleeved)
-- Romper (casual garment with short sleeves and legs)
-- Jumpsuit (casual garment with long sleeves and legs)
-- Unitard (compression garment used for dance)
+### Крок 0: Налаштування та підгонка вашого шаблону
+Вирішіть, який тип одягу ви збираєтесь виготовляти. Цей дизайн підтримує кілька варіантів:
+- Костюми (суцільні компресійні купальники з рукавами та ногами)
+- Цілісна піжама (одяг вільного крою з м'якої тканини, з короткими або довгими рукавами)
+- Ромпер (повсякденний одяг з короткими рукавами та штанинами)
+- Комбінезон (повсякденний одяг з довгими рукавами та штанинами)
+- Унітард (компресійний одяг для танців)
 
-Decide if you want a hood, or to finish the neck with a neckband. If you want a hood, decide if you want a two-piece hood with a center seam, or a three-piece hood that also has a front piece, allowing for ears or other decorative feature to be inserted into the seam.
+Вирішіть, чи хочете ви капюшон, чи завершити горловину шийною пов'язкою. Якщо вам потрібен капюшон, вирішіть, чи хочете ви капюшон з двох частин з центральним швом, або капюшон з трьох частин, який також має передню частину, що дозволяє вставити в шов вушка або інший декоративний елемент.
 
-Decide if you want to add a simple gathered skirt around the waist.
+Вирішіть, чи хочете ви додати просту зібрану спідницю на талії.
 
-Select a fabric (see fabrics for details)
+Виберіть тканину (докладніше див. розділ "Тканини")
 
-Decide what lining to use, if any:
-- Unisuits should use swim lining or a second layer of swim fabric for the body, to give form, to prevent chafing, and to prevent the suit from being see-through. The sleeves may be left unlined. If using multiple layers of lining, treat them as a single layer when constructing the garment.
-- One-piece pajamas are usually not lined, except for the hood, which may or may not be lined with something soft.
-- Rompers or jumpsuits may be lined, depending on preference, fabric, and purpose.
+Вирішіть, яку підкладку використовувати, якщо така є:
+- Для надання форми, запобігання натиранню та запобігання просвічуванню костюма слід використовувати підкладку для плавання або другий шар тканини для плавання для тіла, щоб він не був прозорим. Рукава можна залишити без підкладки. Якщо ви використовуєте кілька шарів підкладки, розглядайте їх як один шар при конструюванні виробу.
+- Цілісні піжами зазвичай не мають підкладки, за винятком капюшона, який може бути підбитий або не підбитий чимось м'яким.
+- Комбінезони або комбінезони можуть бути з підкладкою, залежно від уподобань, тканини та призначення.
 
-Select an appropriate sleeve length:
-- 10-30% for short sleeves.
-- 75% for 3/4 length sleeves.
-- 100% for long sleeves (to the wrist).
-- 115% is a good value if making a shirt with thumb holes (extends to the knuckles).
+Виберіть відповідну довжину рукава:
+- 10-30% для коротких рукавів.
+- 75% для рукавів довжиною 3/4.
+- 100% для довгих рукавів (до зап'ястя).
+- 115% - це хороше значення, якщо ви робите сорочку з отворами для великого пальця (розширюється до кісточок).
 
-Select an appropriate leg length:
-- 20-60% for shorts
-- 90% for ankle-length legs
-- 100% for legs that touch the floor.
+Виберіть відповідну довжину ноги:
+- 20-60% для шортів
+- 90% для ніг довжиною до щиколотки
+- 100% для ніг, які торкаються підлоги.
 
-Decide on a closure.
-- One-piece pajamas usually use a coiled plastic zipper (#3-5 gauge).
-- Unisuits usually use a half-length molded plastic zipper, #5 gauge.
-- Unitards use a large neckhole and no zipper.
-- Rompers and jumpsuits can use buttons, coiled plastic zippers, invisible zippers, or a large neckhole.
-- NOTE: This design assumes the use of a zipper. If using buttons, you will need to add plackets and buttons yourself. They are not included in this design.
+Прийміть рішення про закриття.
+- Цілісні піжами зазвичай використовують пластикову застібку-блискавку (№3-5 калібру).
+- В уніформах зазвичай використовується формована пластикова застібка-блискавка довжиною в половину довжини, калібр №5.
+- У комбінезонів велика горловина і немає застібки-блискавки.
+- У комбінезонах можуть використовуватися кнопки, пластикові застібки-блискавки, невидимі блискавки або великий виріз для горловини.
+- ПРИМІТКА: Цей дизайн передбачає використання застібки-блискавки. Якщо ви використовуєте ґудзики, вам потрібно буде додати планки та кнопки самостійно. Вони не включені в цей дизайн.
 
-Decide whether to cut the front and/or back pieces _on the fold_:
-- If using a zipper or buttons, do _not_ cut the piece containing the zipper _on the fold_.
-- For unitards, cut both the front and back _on the fold_ (total of 2 pieces).
-- For unisuits, cut the back _on the fold_ if making a front-zip unisuit, or the front _on the fold_ is making a back-zip unisuit (total of 3 pieces).
-- For one-piece pajamas, rompers, and jumpsuits, cut only the back _on the fold_ (total of 3 pieces).
+Вирішіть, чи потрібно вирізати передню та/або задню частини _на згині_:
+- Якщо ви використовуєте застібку-блискавку або ґудзики, не _не_ обрізати деталь, що містить застібку-блискавку _на згині_.
+- Для комбінезона виріжте передню і задню частини _по згину_ (всього 2 частини).
+- Для костюмів розріжте задню частину _на згині_ , якщо робите костюм на блискавці спереду, або передню частину _на згині_ , якщо робите костюм на блискавці ззаду (загалом 3 частини).
+- Для суцільнокроєних піжам, комбінезонів і комбінезонів виріжте тільки спинку _на згині_ (всього 3 деталі).
 
-Figure out what kind of fit you want and set your eases accordingly. Make sure you have an appropriate fabric. If in doubt, making the garment too loose is safer than too tight.
-- For unisuits and unitards, you want negative ease. This will allow the stretch/swim fabric to form itself around the wearer's body.
-- For one-piece pajamas, you want positive ease and to smooth out the shape (ie., add extra ease to areas that cut in, like the waist, to give the overall garment a less fitted shape).
-- Rompers and bodysuits use positive ease, with the amount and distribution of the ease varying greatly based on the intended shape of the garment.
+З'ясуйте, яку посадку ви хочете, і встановіть відповідну зручність. Переконайтеся, що у вас є відповідна тканина. Якщо ви сумніваєтеся, то краще зробити одяг занадто вільним, ніж занадто тісним.
+- Для костюмів і комбінезонів вам потрібна негативна легкість. Це дозволить стрейч-тканині облягати тіло власника.
+- Для цільної піжами вам потрібна позитивна легкість і згладжування форми (тобто, додайте додаткової легкості в місцях врізу, наприклад, на талії, щоб надати одягу менш облягаючий вигляд).
+- У комбінезонах і боді використовується позитивна розтяжність, кількість і розподіл якої сильно варіюється в залежності від форми одягу.
 
-The neckband length will be mostly determined by the material of the neckband. Stretch fabric will generally use a length of around 80%. Less stretchy fabric will be longer, but always shorter than 100%, and ribbed knit (traditional t-shirt neckbands) are around 60-70%.
+Довжина шийного ремінця здебільшого визначається матеріалом, з якого він виготовлений. Стретч-тканина, як правило, використовується приблизно на 80% довжини. Менш еластична тканина буде довшою, але завжди коротшою за 100%, а ребристий трикотаж (традиційна горловина футболки) - близько 60-70%.
 
-Check around the hips, upper legs, and crotch fork, and make sure that everything is smooth and looks right. Small errors in measurements or options can cause issues here, and it's best to tweak seat east, upper leg ease, crotch gusset width, and leg taper position until all curves are smooth. The outseam should roughly match the silhouette of the wearer.
+Перевірте стегна, гомілки та пахвинну вилку і переконайтеся, що все гладко і виглядає правильно. Невеликі помилки у вимірах або параметрах можуть спричинити проблеми, тому краще налаштувати нахил сидіння на схід, зручність верхньої частини ноги, ширину промежинної ластовиці та положення конуса ноги, поки всі криві не стануть плавними. Зовнішній шов повинен приблизно відповідати силуету власника.
 
-### Step 1: Forming the body
+### Крок 1: Формуємо тіло
 
-Note: If the front or back was cut _on the fold_, skip steps producing center seams. Note: These instructions are intended to form the seams such that the side seams extend backwards, and the center seams extend leftwards. Note: These instructions assume that the zipper is on the front. If the zipper is on the back or there is no zipper, the directions will have to be modified slightly. Note: If you're having the zipper zip up across the neckband (recommended for unisuits), remember that when placing the zipper on the center seam.
+Примітка: Якщо передня або задня частина була розрізана _по згину_, пропустіть кроки для виконання центральних швів. Примітка: Ці інструкції призначені для формування швів таким чином, щоб бічні шви виходили назад, а центральні - вліво. Примітка: У цій інструкції передбачається, що застібка-блискавка знаходиться спереду. Якщо застібка-блискавка знаходиться на спині або взагалі відсутня, інструкцію доведеться дещо змінити. Примітка: Якщо застібка-блискавка застібається через горловину (рекомендується для костюмів), пам'ятайте про це, розміщуючи застібку-блискавку по центральному шву.
 
-If not using lining:
-- (if front was _not_ cut _on the fold_) With _good sides together_, place the zipper and neckband into position along the center seam, remembering to take seam allowance into account. Mark where the bottom stop of the zipper is, and serge/overlock the front pieces together starting at the crotch fork and stopping at the bottom stop of the zipper.
-- (if back was _not_ cut _on the fold_) With _good sides together_, sew the back pieces together.
-- With _good sides together_, sew the front and the back assemblies together along the two side seams.
-- Skip to step 2.
+Якщо не використовувати підкладку:
+- (якщо перед був _, а не_ , виріжте _на згині_) Складіть _лицьовими сторонами разом_, вкладіть застібку-блискавку і горловину вздовж центрального шва, не забуваючи враховувати припуски на шви. Позначте, де знаходиться нижній обмежувач застібки-блискавки, і зшийте/обметайте передні деталі разом, починаючи з пахової розвилки і зупиняючись біля нижнього обмежувача застібки-блискавки.
+- (якщо спинка була _, а не_ , розріжте _на згині_) Складіть _лицьовими сторонами разом_, зшийте деталі спинки разом.
+- За допомогою _лицьовими сторонами разом_, зшийте передню і задню частини разом уздовж двох бокових швів.
+- Перейдіть до кроку 2.
 
-If using lining: Front (center) seam: (from the point of view of the wearer) Note: Seam will be formed on the right side of the assembly. Layer the pieces as follows, from top to bottom:
- - _wrong side up_: fashion fabric, front-left piece.
- - _good side up_: fashion fabric, front-right piece.
- - _wrong side up_: lining, front-right piece.
- - _good side up_: lining, front-left piece.
-- Line up the four pieces and clip/pin.
-- Place your neckband and zipper on the seam. Remember to take into account seam allowances, that the top stop of the zipper is at the top of the folded neckband, and mark where the bottom stop of the zipper is. Remove the zipper and neckband.
-- Disengage the serger knife (it will cause issues near the zipper where a section would be cut but not sewn).
-  - Alternatively, leave the serger knife engaged, but disengage it right when the knife reaches the point where your seam stops, and then continue without the knife until the stop point reaches the needles.
-- Make sure the layers of fabric are lined up very evenly. Without the knife, you must make sure that every layer gets under the needles of the serger, or there will be holes in the seam of your garment or the lining.
-- Serge/overlock through all 4 layers, stopping at the point you marked where the bottom stop of the zipper is.
-- Flip the top and bottom layers (the front-left pieces) of fabric over.
-- Re-engage the serger knife.
+Якщо використовується підкладка: Передній (центральний) шов: (з точки зору носія) Примітка: Шов формується з правого боку збірки. Викладайте шматочки наступним чином, зверху вниз:
+ - _виворітний бік догори_: модна тканина, передній лівий шматок.
+ - _лицьовим боком догори_: модна тканина, передній правий шматок.
+ - _виворітний бік догори_: підкладка, передня права частина.
+ - _лицьовим боком догори_: підкладка, передній лівий шматок.
+- Вирівняйте чотири частини і скріпіть/закріпіть.
+- Помістіть шийну стрічку і застібку-блискавку на шов. Не забудьте врахувати припуски на шви, щоб верхній обмежувач застібки-блискавки знаходився у верхній частині складеної горловини, і відзначити, де знаходиться нижній обмежувач застібки-блискавки. Зніміть застібку-блискавку і шийну стрічку.
+- Вимкніть сергерний ніж (він може спричинити проблеми біля блискавки, де ділянка буде відрізана, але не пришита).
+  - Крім того, ви можете залишити ніж увімкненим, але вимкнути його, коли він досягне точки зупинки шва, а потім продовжити без ножа, доки точка зупинки не досягне голок.
+- Переконайтеся, що шари тканини викладені дуже рівномірно. Без ножа ви повинні переконатися, що кожен шар потрапляє під голки сергера, інакше в шві вашого одягу або підкладці залишаться дірки.
+- Прострочіть оверлоком всі 4 шари, зупинившись в точці, яку ви відмітили, де знаходиться нижній обмежувач блискавки.
+- Переверніть верхній і нижній шари тканини (передні ліві частини).
+- Знову ввімкніть ніж для нарізки.
 
-Left (side) seam: Note: Seam will be formed on the right side of the assembly. Layer the pieces as follows, from top to bottom:
- - _wrong side up_: fashion fabric, back-left piece.
- - _good side up_: lining+fashion fabric from prior steps.
- - _good side up_: lining, back-left piece.
-- Line up the four pieces, and serge/overlock through all 4 layers.
-- Flip the top and bottom pieces (the back-left pieces) of fabric over.
+Лівий (бічний) шов: Примітка: Шов буде сформовано з правого боку збірки. Викладайте шматочки наступним чином, зверху вниз:
+ - _виворітний бік догори_: модна тканина, задній лівий шматок.
+ - _лицьовим боком догори_: підкладка+модна тканина з попередніх кроків.
+ - _лицьовим боком догори_: підкладка, задній лівий шматок.
+- Вирівняйте чотири частини і прострочіть/прошийте оверлоком всі 4 шари.
+- Переверніть верхній і нижній шматки тканини (задні ліві шматки).
 
 Right (side) seam: Layer the pieces as follows, from top to bottom: Note: Seam will be formed on the left side of the assembly.
- - _wrong side up_: fashion fabric, back-right piece.
- - _good side up_: lining+fashion fabric from prior steps.
- - _good side up_: lining, back-right piece.
-- Line up the four pieces, and serge/overlock through all 4 layers.
-- Flip the top and bottom layers (the back-right pieces) of fabric over.
+ - _виворітний бік догори_: модна тканина, задній правий шматок.
+ - _лицьовим боком догори_: підкладка+модна тканина з попередніх кроків.
+ - _лицьовим боком догори_: підкладка, задній правий шматок.
+- Вирівняйте чотири частини і прострочіть/прошийте оверлоком всі 4 шари.
+- Переверніть верхній і нижній шари тканини (задні праві шматки).
 
-Back (center) seam: Layer the pieces as follows, from top to bottom: Note: Seam will be formed on the left side of the assembly. Note: This is the last seam to complete the body, and the steps are slightly different in order to still have the seam encased between the fashion fabric and the lining once it's finished.
- - _wrong side up_: fashion fabric, back-right piece pulled over the main part.
- - _good side up_: lining+fashion fabric, main part; from prior steps.
- - _good side up_: lining, back-right piece pulled under the main part.
-- Line up the four pieces, and serge/overlock through all 4 layers.
-- Pull the lining right-side-out, so that the main bulk that was locked between the newly sewn parts is freed and the garment is right-side-out.
+Задній (центральний) шов: Складіть деталі наступним чином, зверху вниз: Примітка: Шов буде сформовано з лівого боку збірки. Примітка: Це останній шов для завершення роботи над тілом, і кроки дещо відрізняються, щоб після завершення шва між тканиною і підкладкою залишався шов, закритий підкладкою.
+ - _виворітний бік догори_: модна тканина, задня права частина натягується на основну частину.
+ - _виворітний бік догори_: підкладка+модна тканина, основна частина; з попередніх кроків.
+ - _гарним боком догори_: підкладка, задня права частина підтягнута під основну частину.
+- Вирівняйте чотири частини і прострочіть/прошийте оверлоком всі 4 шари.
+- Витягніть підкладку на виворітний бік, щоб основна маса, яка була затиснута між щойно зшитими деталями, звільнилася і виріб вивернувся на виворіт.
 
-### Step 2: Attaching the gusset
+### Крок 2: Прикріплення ластовиці
 
-If not using lining:
-- Place the garment _inside-out_ and flat on your table, with the front of the garment face-up.
-- With _good sides together_, serge or overlock the crotch gusset up the front of one leg, around the crotch fork, and down the other leg. Be careful to keep the layers of fabric together and aligned when going around the fork.
-- Turn the garment over.
-- With _good sides together_, serge or overlock the crotch gusset up the back of one leg, around the crotch, and down the other leg.
-- Skip to step 3.
+Якщо не використовувати підкладку:
+- Покладіть виріб _навиворіт_ і розкладіть на столі лицьовою стороною догори.
+- Склавши _лицьовими сторонами разом_, прострочіть або прошийте оверлоком ластовицю спереду однієї штанини, навколо пахової розвилки і вниз по іншій штанині. Будьте обережні, щоб шари тканини були разом і вирівняні при обході вилки.
+- Переверніть виріб.
+- Склавши _лицьовими сторонами разом_, прострочіть або прошийте оверлоком ластовицю на задній частині однієї штанини, навколо промежини і вниз по іншій штанині.
+- Перейдіть до кроку 3.
 
 If using lining: Front Inseam:
-- Place the garment _right-side-out_ and flat on your table, with the front of the garment face-up.
-- Push the back crotch and legs out of the way, so you have easy access to only the front crotch and legs.
-- Place the fashion fabric gusset piece on top of the garment and running along the inseam, around the crotch, and back down the other inseam, with the _wrong side up_.
-- Slide the lining gusset piece under the garment with the _good side up_.
-- (optional) Baste the seam, taking care to secure the portion near the crotch, as it has a tendancy to slip and cause a hole in the next step if not well secured.
-- Serge/overlock through all 4 layers to form the front inseam.
+- Покладіть виріб _виворітною стороною_ і розкладіть на столі лицьовою стороною догори.
+- Відсуньте задню частину промежини і ноги, щоб у вас був вільний доступ тільки до передньої частини промежини і ніг.
+- Покладіть деталь ластовиці з модної тканини на верхню частину одягу і прокладіть вздовж вшивання, навколо промежини і назад по іншому вшиванню, виворітним боком _догори_.
+- Просуньте деталь ластовиці підкладки під одяг лицьовим боком _догори_.
+- (необов'язково) Проклейте шов, намагаючись закріпити ділянку біля промежини, оскільки вона може зісковзнути і спричинити дірку на наступному кроці, якщо не буде добре закріплена.
+- Прострочіть оверлоком всі 4 шари, щоб сформувати передній шов.
 
-Back Inseam: Note: It's not possible to hide this seam in between the lining and the fashion fabric, so it'll be on the inside. For adaptive/sensory-friendly clothing, place this seam on the outside instead.
-- Turn the garment inside-out.
-- Flip the garment so that the back is facing you.
-- Line up the gusset (that you attached to the front in the previous step) with the back inseam and clip it together.
-- (optional) Baste the seam, taking care to secure the portion near the crotch, as it has a tendancy to slip and cause a hole in the next step if not well secured.
-- Serge/overlock through all 4 layers to form the back inseam.
+Задній шов: Примітка: Неможливо заховати цей шов між підкладкою і тканиною, тому він буде з внутрішньої сторони. На адаптивному/сенсорному одязі розташуйте цей шов на зовнішній стороні.
+- Виверніть виріб навиворіт.
+- Переверніть виріб так, щоб спинка була до вас обличчям.
+- Вирівняйте ластовицю (яку ви прикріпили спереду на попередньому кроці) зі швом вшивання спинки і скріпіть їх разом.
+- (необов'язково) Проклейте шов, намагаючись закріпити ділянку біля промежини, оскільки вона може зісковзнути і спричинити дірку на наступному кроці, якщо не буде добре закріплена.
+- Прострочіть оверлоком всі 4 шари, щоб сформувати задній шов.
 
-### Step 3: Attaching the sleeves
-- Fold each sleeve and, with _good sides together_, sew the sleeve seam from the hem to the armpit.
+### Крок 3: Прикріплення рукавів
+- Складіть кожен рукав і, _лицьовими сторонами разом_, зшийте рукавний шов від подолу до пахвової западини.
 
-- Turn the garment _right-side-out_.
-- Turn the sleeves _right-side-out_.
-- With _good sides together_, clip each sleeve to the body. The longer side of each sleeve should be clipped to the back, the shorter side to the front, and the sleeve seam should line up with the outseam. Verify that the sleeve is properly attached. Serge or overlock through all 3 layers.
-- Repeat with the other sleeve.
+- Виверніть виріб _навиворіт_.
+- Виверніть рукава _навиворіт_.
+- Склавши _лицьовими сторонами разом_, закріпіть кожен рукав на тілі. Довший бік кожного рукава слід пришити ззаду, коротший - спереду, а рукавний шов повинен бути на одній лінії з виворітним швом. Переконайтеся, що втулка належним чином закріплена. Прострочіть або прошийте оверлоком всі 3 шари.
+- Повторіть з іншим рукавом.
 
-### Step 4a: Attaching the neckband
- - Fold the neckband in half short ways (so it's half as wide) with _wrong sides together_, and clip it at each end and at the midpoint.
- - With _good sides together_, clip the middle of the neckband to the middle of the piece without the slit for the zipper (the back piece if using a front zipper).
- - Clip each end of the neckband to the corresponding side of the zipper slit.
- - Place clips along the length, stretching the neckband evenly along the length of the neck hole.
- - Baste the neckband to the neck hole, taking care to secure the two ends.
- - Serge/overlock through all layers.
- - Turn the neckband over. It should lay flat.
+### Крок 4а: Прикріплення шийної стрічки
+ - Складіть шийну стрічку навпіл короткими сторонами (так, щоб вона стала вдвічі вужчою) _виворітними сторонами разом_, і скріпіть її з обох кінців і посередині.
+ - Склавши _лицьовими сторонами разом_, прикріпіть середину шийної стрічки до середини деталі без розрізу для застібки-блискавки (задньої деталі, якщо використовується передня застібка-блискавка).
+ - Закріпіть кожен кінець шийної стрічки на відповідній стороні розрізу блискавки.
+ - Розмістіть затискачі по всій довжині, рівномірно розтягуючи шийну стрічку по довжині отвору для горловини.
+ - Прикріпіть шийну стрічку до отвору для горловини, не забуваючи закріпити обидва кінці.
+ - Серпантин/оверлок через усі шари.
+ - Переверніть шийну пов'язку. Він повинен лежати рівно.
 
-### Step 4b: Constructing and attaching the hood
+### Крок 4b: Конструювання та кріплення капота
 
-##### Assembling the hood:
- - Place the two main hood pieces together with _good sides together_, and serge/overlock along the center seam (the curved seam running from the back of the neck to the top of the head).
- - If using a front piece, place it against the back pieces with _good sides together_, and serge/overlock along the side seam (the straight seam going up one side, over the head, and down the other side).
+##### Збираємо капюшон:
+ - Складіть дві основні деталі капюшона разом _лицьовими сторонами один до одного_і прострочіть/обметайте по центральному шву (вигнутий шов, що йде від потилиці до верхівки голови).
+ - Якщо ви використовуєте передню частину, прикладіть її до задньої частини _лицьовими сторонами разом_і прострочіть/обметайте вздовж бокового шва (прямий шов йде вгору з одного боку, над головою і вниз з іншого боку).
 
-If using lining, do the following two steps, otherwise skip to attaching the hood.
- - Repeat the previous steps to put together the lining pieces.
- - Place the lining assembly and the main hood assembly together with _wrong sides together_, and clip them together along the neck.
+Якщо ви використовуєте підкладку, виконайте наступні два кроки, інакше перейдіть до прикріплення капюшона.
+ - Повторіть попередні кроки, щоб скласти деталі підкладки.
+ - Складіть підкладку і капюшон разом виворітними сторонами _разом_і скріпіть їх вздовж горловини.
 
-##### Attaching the hood:
- - Lay the garment down _right-side-out_.
- - Place the hood around the neckline, with _good sides together_.
- - Clip the two ends of the hood to the slit in the front where the zipper will go, and clip the back seam of the hood to the middle of the back body piece.
- - Add additional clips to secure the hood to the neck for sewing.
- - Check to make sure that it is assembled correctly.
- - Serge/overlock through all layers.
+##### Прикріплюємо капюшон:
+ - Покладіть виріб вниз _виворітним боком_.
+ - Помістіть капюшон навколо вирізу горловини, _хорошими сторонами разом_.
+ - Закріпіть два кінці капюшона на розрізі спереду, де буде застібка-блискавка, і закріпіть задній шов капюшона до середини задньої частини боді.
+ - Додайте додаткові затискачі, щоб закріпити капюшон на шиї для пришивання.
+ - Перевірте, чи правильно він зібраний.
+ - Серпантин/оверлок через усі шари.
 
-### Step 5: Preparing the zipper guard
- - Fold the zipper guard in half short ways (so it's half as wide) with _good sides together_, and secure it loosely with a clip or two.
- - If needed, flip it so that the open seam is on the right side.
- - Using your sewing machine and a straight stitch, sew a curve starting vertically at a point along the fold about as far down as the zipper guard is wide, and ending horizontally at the top right corner of the zipper guard. The curve should be shaped such that it forms a smooth corner around the top-left corner of the zipper guard.
- - Trim the fabric on the outside of the curve, cutting close to the line of stitching, but not touching it.
- - Unclip the fabric and turn it right-side-out, refolding and reclipping the fabric, this time with _wrong sides together_.
- - Serge/overlock down the length of the zipper guard.
- - Serge/overlock the bottom of the zipper guard.
- - You should have a strip of fabric with a serged/overlocked seam along the right and bottom sides, and a curved corner with a french seam along the top-left.
+### Крок 5: Підготуйте захисну планку блискавки
+ - Складіть захист блискавки навпіл короткими сторонами (так, щоб він став удвічі вужчим) _лицьовими сторонами разом_, і нещільно закріпіть його за допомогою однієї-двох затискачів.
+ - Якщо потрібно, переверніть його так, щоб відкритий шов був з правого боку.
+ - За допомогою швейної машини та прямої строчки прострочіть криву, яка починається вертикально в точці вздовж згину приблизно на рівні ширини захисту блискавки і закінчується горизонтально у верхньому правому куті захисту блискавки. Крива повинна бути сформована таким чином, щоб утворювати плавний кут навколо верхнього лівого кута захисного кожуха блискавки.
+ - Обріжте тканину на зовнішній стороні вигину, обрізаючи близько до лінії строчки, але не торкаючись її.
+ - Відкріпіть тканину і виверніть її навиворіт, переверніть і знову закріпіть тканину, цього разу _виворітними сторонами разом_.
+ - Пришийте/обметайте по довжині планки застібки-блискавки.
+ - Застрочіть/закріпіть нижню частину застібки-блискавки.
+ - У вас повинна бути смужка тканини з простроченим/оверлочним швом вздовж правого і нижнього боків, а також загнутий куточок з французьким швом вздовж верхнього лівого кута.
 
-### Step 6: Installing the zipper.
-Note: This step is the same with or without lining. Treat the lining and the fashion fabric as one.
- - Lay your garment _right side out_.
+### Крок 6: Встановлення блискавки.
+Примітка: Цей крок однаковий як з підкладкою, так і без неї. Ставтеся до підкладки і модної тканини як до єдиного цілого.
+ - Покладіть одяг _виворітною стороною назовні_.
  - Розстебніть блискавку.
- - Place the zipper _good side up_ along the center seam and align it carefully. The alignment of the top stop is more important than that of the bottom stop, and try not to stretch or gather the fabric as you align your zipper.
- - Turn one side of the zipper 1/2 turn outward, and lay it along the open seam so that the tape edge is along the seam and the toothed edge is facing the bulk of the fabric. Line up the edge of the fabric with the edge of the tape and clip in place.
+ - Покладіть застібку-блискавку _лицьовим боком догори_ вздовж центрального шва і ретельно вирівняйте її. Вирівнювання верхнього обмежувача важливіше, ніж нижнього, тому намагайтеся не розтягувати і не збирати тканину, коли вирівнюєте застібку-блискавку.
+ - Виверніть одну сторону застібки-блискавки на 1/2 обороту назовні і покладіть її вздовж відкритого шва так, щоб край стрічки був уздовж шва, а зубчастий край був звернений до основної частини тканини. Вирівняйте край тканини з краєм стрічки і закріпіть на місці.
 
- - If sewing swim fabric, sew the fabric and the zipper tape together with a straight stight down each side. This is both to hold things together, and to provide a second, safety line of stitching for the zipper. For less tricky fabrics, this step is optional.
+ - Якщо ви шиєте тканину для плавання, зшийте тканину і тасьму-блискавку разом, проклавши пряму строчку з обох боків. Це і для того, щоб утримувати речі разом, і для того, щоб забезпечити другу, безпечну лінію строчки для застібки-блискавки. Для менш складних тканин цей крок необов'язковий.
 
- - Turn the zipper back _good side up_, folding the fabric under in the process.
- - Repeat for the other side.
+ - Відверніть застібку-блискавку _лицьовим боком догори_, підгинаючи тканину під себе.
+ - Повторіть з іншого боку.
 
-Installing the zipper guard.
- - Turn the garment _inside-out_.
- - Place the long serged edge of the zipper guard along the left side of the zipper. The edge of the zipper guard should line up with the tape edge of the zipper and should cover the zipper.
- - Adjust the zipper guard vertically. It should extend above the top stop of the zipper by enough so that you can fold the fabric over to hide the zipper pull and protect the neck from the zipper.
- - If you're using a neckband, fold the portion extending above the top zipper stop over to the front of the garment.
- - Clip the zipper guard into place. This will cover up the clips holding the zipper to the garment. Remember not to sew over these clips when sewing.
+Встановлення захисту блискавки.
+ - Виверніть виріб _навиворіт_.
+ - Помістіть довгий зшитий край захисту застібки-блискавки вздовж лівого боку застібки-блискавки. Край застібки-блискавки повинен збігатися з краєм стрічки застібки-блискавки і закривати застібку-блискавку.
+ - Відрегулюйте захист блискавки по вертикалі. Вона повинна виступати над верхнім обмежувачем застібки-блискавки настільки, щоб ви могли підвернути тканину, щоб приховати застібку-блискавку і захистити горловину від застібки-блискавки.
+ - Якщо ви використовуєте шийну стрічку, загніть частину, що виступає над верхнім обмежувачем застібки-блискавки, на передню частину одягу.
+ - Закріпіть захист блискавки на місці. Це приховає затискачі, що кріплять застібку-блискавку до одягу. Не забувайте не перекривати ці кліпси під час шиття.
 
-Sewing the zipper.
- - Switch to a zipper foot.
- - Turn the garment _right side out_.
- - For swim fabric or to have an exposed zipper: Pull the fabric into position, so that the fabric is cleanly folded back from the zipper teeth.
- - For fleece fabric or to have a covered zipper: Pull the fabric into position, leaving a small fold of fabric extending over the zipper.
- - Place the garment into your sewing machine and adjust the needle so that it is a few mm into the fold of the fabric.
- - Start at the neck on the right side, and sew down until you are a few mm past the zipper stop using a straight stitch. Be careful not to sew into the zipper guard or any loose fabric.
- - Repeat for the other side. This time, when you reach the bottom, turn the fabric 90 degress and sew across the bottom until you meet the first line of stitching, securing the bottom of the zipper and zipper guard.
+Пришивання блискавки.
+ - Перейдіть на лапку для застібки-блискавки.
+ - Виверніть виріб _на виворітний бік_.
+ - Для тканини для плавання або для застібки-блискавки: Потягніть тканину в потрібне положення так, щоб тканина була чисто відкинута назад від зубців застібки-блискавки.
+ - Для флісової тканини або для застібки-блискавки: Натягніть тканину в потрібне положення, залишивши невелику складку тканини над блискавкою.
+ - Помістіть виріб у швейну машину і відрегулюйте голку так, щоб вона на кілька міліметрів увійшла у згин тканини.
+ - Почніть від горловини з правого боку і прошивайте вниз, поки не пройдете кілька мм від обмежувача застібки-блискавки, використовуючи пряму строчку. Будьте обережні, щоб не прошити захисний кожух блискавки або будь-яку вільну тканину.
+ - Повторіть з іншого боку. Цього разу, коли ви дійдете до низу, поверніть тканину на 90 градусів і прошийте по низу до першої лінії строчки, закріплюючи нижню частину застібки-блискавки і захисної планки.
 
-### Step 7a: (Optional) Ribbed cuffs
-The ribbed cuff pieces can be added to the sleeves and legs in a mannar similar to that used to attach the neckband to the neck hole.
+### Крок 7а: (необов'язково) Ребристі манжети
+Ребристі манжети можна прикріпити до рукавів і штанин манжетом, подібним до того, яким кріпиться шийна стрічка до отвору для горловини.
 
-- Fold the ribbed cuff piece opposite the fold line (vertically), with _good sides together_.
-- Serge/overlock along the edge, so that the ribbed cuff piece is now a closed loop.
-- Unfold the ribbed cuff piece.
-- Fold the ribbed cuff piece in half along the fold line (horizontally), with _wrong sides together_.
-- Turn the garment _right side out_.
-- Place the loop of ribbing around the sleeve or leg of the garment, lining up the edges of the ribbing and the sleeve/leg.
-- Stretch both the sleeve/leg and ribbing together until the folds/gathers/slack in the sleeve are all gone, and clip into place.
-- Serge/overlock _on the round_ along the seam.
-- Repeat for the remaining sleeves/legs.
+- Складіть ребристу частину манжети навпроти лінії згину (вертикально) лицьовими _сторонами разом_.
+- Обметувати/обметати по краю, щоб ребриста частина манжети стала замкненою петлею.
+- Розгорніть ребристу частину манжети.
+- Ребристу деталь манжета складіть навпіл по лінії згину (горизонтально), _виворітними боками разом_.
+- Виверніть виріб _на виворітний бік_.
+- Оберніть петлю ребра жорсткості навколо рукава або штанини виробу, вирівнявши краї ребра жорсткості та рукава/штанини.
+- Розтягніть рукав/ногу і ребра разом, доки не зникнуть складки/зібрання/слабкість рукава, і закріпіть їх на місці.
+- Серпантин/оверлок _по круглому_ вздовж шва.
+- Повторіть для решти рукавів/штанин.
 
-### Step 7b: (Optional) Hemming
+### Крок 7b: (необов'язково) Підшивання
 
-- Hem the sleeves, legs, hood, and/or bottom of the skirt using a single-fold hem. A coverstitch machine is ideal, but not necessary. Using a twin needle with a regular sewing machine will add some stretch to the stitching, but in either case the use of a stretch stitch is still recommended for high-stretch fabrics.
-- You may carefully cutaway excess fabric to make a cleaner hem. This is quite optional, since this fabric should stay on the inside.
-- Alternatively, you can overlock or serge the raw edge _without_ folding it over to give it a little bit of substance without adding as much bulk as a folded hem, or you can make a rolled hem.
-- Or you can leave the edges unfinished, particularly if it's swim fabric or some other fabric that does not fray at all.
+- Підшийте рукави, штанини, капюшон і/або низ спідниці, використовуючи односторонній підгин. Машина для настилу - ідеальний варіант, але не обов'язковий. Використання подвійної голки на звичайній швейній машині додасть строчці деякого розтягування, але в будь-якому випадку для тканин з високим ступенем розтягування все одно рекомендується використовувати розтяжну строчку.
+- Ви можете акуратно обрізати зайву тканину, щоб зробити чистіший поділ. Це цілком необов'язково, оскільки ця тканина повинна залишатися всередині.
+- Крім того, ви можете обробити необроблений край _без_ підгинання, щоб надати йому трохи об'ємності, не додаючи при цьому стільки об'єму, як при підгинанні, або ж ви можете зробити підгин удвічі.
+- Або ж ви можете залишити краї необробленими, особливо якщо це тканина для плавання або інша тканина, яка зовсім не кошлатиться.
 
-### Step 8: (Options) Adding a skirt
+### Крок 8: (Опції) Додавання спідниці
 
-- Fold the skirt piece in half along the cut-on-fold line, with _good sides together_, and serge/overlock along the side so that the skirt is closed.
-- (optional) Hem the bottom of the skirt.
-- Gather the skirt along the waist (or top) of the skirt using two gather threads spaced 12mm (1/2") apart. Place the skirt around the garment where it will rest, and adjust the gathers to fit around the garment.
-- The skirt can be either placed _right side out_ on the garment, or _inside-out_ and _upside-down_ on the garment. _Right side out_ will produce a lighter and stronger seam, but the seam will be visible (which may or may not be desirable). _Inside-out_ will hide the seam under the skirt, but will add an extra fold of fabric to the waist.
-- Line up the waist of the skirt with where you want it to rest on the garment, and pin it into place.
-- Use a coverstitch machine or a short and wide zigzag stitch along the top edge of the skirt, forming a lap seam and hiding the edge of the fabric under the coverstitch or zigzag.
-- Make a second coverstitch or zigzag about 6-12mm (1/4" to 1/2") below the first line of stitching, placing it between the two gather threads and being careful not to catch either gather thread under the coverstitch.
-- Remove the gather threads.
-- If the skirt was placed _inside-out_ and _upside-down_, flip it back over.
+- Складіть деталь спідниці навпіл по лінії згину, _лицьовими боками разом_, і прострочіть/обметайте по краю так, щоб спідниця була закрита.
+- (необов'язково) Підшийте низ спідниці.
+- Зберіть спідницю вздовж талії (або верхньої частини) спідниці за допомогою двох ниток для збору на відстані 12 мм (1/2") одна від одної. Розмістіть спідницю навколо одягу, де вона буде лежати, і відрегулюйте збірки так, щоб вони прилягали до одягу.
+- Спідницю можна розмістити _лицьовим боком назовні_ на одязі, або _навиворіт_ та _догори дригом_ на одязі. _Виворітною стороною назовні_ створить легший і міцніший шов, але він буде видимим (що може бути, а може і не бути бажаним). _Виворіт_ приховає шов під спідницею, але додасть додаткову складку тканини на талії.
+- Вирівняйте талію спідниці з тим місцем, де вона повинна лежати на одязі, і приколіть її на місці.
+- По верхньому краю спідниці прострочіть машинною гладдю або коротким і широким зигзагом, утворюючи шов внахлест і ховаючи край тканини під гладдю або зигзагом.
+- Зробіть другий закріплювальний стібок або зигзаг приблизно на 6-12 мм (від 1/4" до 1/2") нижче першої лінії стібка, розташувавши його між двома нитками зшивання і намагаючись не зачепити жодну з ниток зшивання під закріплювальним стібком.
+- Видаліть нитки для збору.
+- Якщо спідниця була розміщена _навиворіт_ і _догори ногами_, переверніть її назад.

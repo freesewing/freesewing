@@ -2,7 +2,7 @@
 title: "Aumento de Waist"
 ---
 
-How much to raise the waist from the seat depth measurement. This influences the depth of the crotch cut-out.
+Cuánto hay que elevar la cintura a partir de la medida de profundidad del asiento. Esto influye en la profundidad del recorte de la entrepierna.
 
 
 

@@ -65,7 +65,7 @@ export const prebuildRunner = async ({
   /*
    * Setup a place where we can keep data
    */
-  const store = { site }
+  const store = { site, users: {} }
 
   /*
    * Let the user know what's going to happen

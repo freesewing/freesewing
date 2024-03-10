@@ -1,8 +1,4 @@
-import chai from 'chai'
-//import freesewing from '@freesewing/core'
-//import { plugin } from '../src/index.mjs'
-
-const expect = chai.expect
+import { expect } from 'chai'
 
 describe('Sprinkle Plugin Tests', () => {
   it('FIXME: No plugin tests defined', () => {

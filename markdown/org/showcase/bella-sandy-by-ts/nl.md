@@ -7,6 +7,7 @@ title: "Een hemelse Sanderella"
 designs:
   - "bella"
   - "sandy"
+author: 13050
 ---
 
 Deze jurk is een kruising tussen de [Bella body block](https://freesewing.org/designs/bella/) en de [Sandy circle skirt](https://freesewing.org/designs/sandy/). Ik heb de combo Sanderella genoemd.

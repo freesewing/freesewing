@@ -1,5 +1,5 @@
 ---
-title: "Bottom to Top Arm Ratio"
+title: "Rapport entre le bas et le haut du bras"
 ---
 
-This setting adjusts the ratio between the top and the bottom of the arms. The lower the ratio, the more fabric will be associated with the top of the leg. 100% rend le haut et le bas identiques.
+Ce réglage permet d'ajuster le rapport entre le haut et le bas des bras. Plus le rapport est faible, plus le tissu sera associé au haut de la jambe. 100% rend le haut et le bas identiques.

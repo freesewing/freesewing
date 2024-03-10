@@ -11,6 +11,7 @@ title: Мова
 - Французька
 - Німецька
 - Голландська
+- Українська
 
-Ви можете вибрати будь-яку з них, і ваш шаблон буде перекладено цією мовою.
+You can pick any of these and your pattern will be translated in this language.
 

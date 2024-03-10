@@ -75,7 +75,7 @@ export const Front = ({ stroke }) => (
 )
 
 /*
- * SVG elements for the front
+ * SVG elements for the back
  */
 const Back = ({ stroke }) => (
   <>

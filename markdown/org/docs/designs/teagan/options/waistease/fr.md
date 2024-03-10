@@ -2,6 +2,6 @@
 title: "Aisance à la taille"
 ---
 
-If (and only if) you request to [fit the waist](/docs/designs/teagan/options/curvetowaist), this option allows you to control the amount of ease at the waist.
+Si (et seulement si) tu demandes à [d'ajuster la taille](/docs/designs/teagan/options/curvetowaist), cette option te permet de contrôler l'ampleur de l'aisance à la taille.
 
-If the waist is not fitted, this option is ignored.
+Si la taille n'est pas ajustée, cette option est ignorée.

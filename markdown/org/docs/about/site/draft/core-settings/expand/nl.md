@@ -1,5 +1,5 @@
 ---
-title: Pattern expansion
+title: Patroon uitbreiding
 ---
 
 This option suppresses all efforts to make the pattern consume less space/paper.

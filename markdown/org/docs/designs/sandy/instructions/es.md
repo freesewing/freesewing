@@ -5,7 +5,7 @@ title: "Falda circular Sandy: Instrucciones de costura"
 <Warning>
 
 Debido a los diferentes estilos y configuraciones de Sandy, puede que necesites saltarte o reordenar ciertos pasos.
-No vamos a entrar en una explicación completa sobre cómo crear todos los detalles individuales que componen una falda circular. Estas instrucciones presuponen que sabes coser una cremallera, construir bolsillos, etc. Si no, hay numerosos artículos excelentes disponibles en la web, tanto escritos como en vídeo. Si te quedas atascado, siempre puedes ponerte en contacto con [otros FreeSewers](https://discord.freesewing.org/) en nuestro discord.
+No vamos a entrar en una explicación completa sobre cómo crear todos los detalles individuales que componen una falda circular. Estas instrucciones presuponen que sabes coser una cremallera, construir bolsillos, etc. Si te quedas atascado, siempre puedes ponerte en contacto con [otros FreeSewers](https://discord.freesewing.org/) en nuestro discord. Si te quedas atascado, siempre puedes ponerte en contacto con [otros FreeSewers](https://discord.freesewing.org/) en nuestro discord.
 
 </Warning>
 
@@ -111,7 +111,7 @@ Haz el dobladillo de la falda de una de las siguientes maneras:
 
 <Note>
 
-Hay muchas formas de hacer el dobladillo/recubrir el bajo de una falda, si tienes un método preferido utilízalo aquí.
+There are many ways to hem/face the bottom of a skirt, If you have a preferred method use it here.
 
 </Note>
 

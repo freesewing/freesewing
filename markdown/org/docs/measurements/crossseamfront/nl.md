@@ -8,4 +8,5 @@ Om je **kruisnaad vooraan** te meten knoop je een koordje rond je taille. Then, 
 
 - Waar de naden van een strakke broek elkaar zouden kruisen
 - Aan de basis van je scrotum
-- Ergens vooraan je perineum
+- Naar ergens voor je perineum
+<MeasieImage />

@@ -2,6 +2,6 @@
 title: Öffentlich
 ---
 
-This settings controls whether your pattern will accessible by the **public** or not.
+Diese Einstellung legt fest, ob dein Muster über **öffentlich zugänglich ist** oder nicht.
 
-By default, patterns are private and only you can access your own patterns. If you'd like to share your pattern with others -- perhaps because they showed an interest or you are loooking for input -- you should first make it public.
+Standardmäßig sind die Muster privat und nur du kannst auf deine eigenen Muster zugreifen. If you'd like to share your pattern with others -- perhaps because they showed an interest or you are looking for input -- you should first make it public.

@@ -1,19 +1,19 @@
-title: Title
-titleMsg: This will be the main text on the image
-intro: Intro / Byline / Footer
-introMsg: This will appear smaller at the bottom
-type: Variant
-typeMsg: Pick the variant that best suits your needs
-site: Site
-siteMsg: This format can optionally include the site name
-generate: Generate image
-generateAgain: Generate another image
+title: Назва
+titleMsg: Це буде основним текстом на зображенні
+intro: Вступ / Рядок автора / Нижній колонтитул
+introMsg: Зображатиметься зменшено внизу
+type: Варіант
+typeMsg: Оберіть варіант, що найкраще відповідає Вашим потребам
+site: Сайт
+siteMsg: Цей формат може додатково включати назву сайту
+generate: Створити зображення
+generateAgain: Створити інше зображення
 preview: Попередній перегляд
-save: Save Image
-tall: Tall
-tallMsg: Generates a tall image, optimized for Instagram stories, TikTok, and other places that prefer portrait mode.
-wide: Wide
-wideMsg: Generates a wide image, optimized for posting on a variety of platforms including Facebook, Mastodon, Reddit, and so on. Also suitable as Open Graph image.
-square: Square
-squareMsg: Generate a square image optimized for Instagram posts and other places where a square aspect ratio works best.
-none: Жодного
+save: Зберегти зображення
+tall: Вертикальне
+tallMsg: Створює вертикальне зображення, оптимізоване для історій в Instagram, TikTok та інших місць, які надають перевагу портретному формату.
+wide: Горизонтальне
+wideMsg: Створює горизонтальне зображення, оптимізоване для публікації на різних платформах, включаючи Facebook, Mastodon, Reddit тощо. Також підходить як зображення у форматі Open Graph.
+square: Квадратне
+squareMsg: Створює квадратне зображення, оптимізоване для публікацій в Instagram та інших місцях, де квадратний формат виглядає найкраще.
+none: Жодне

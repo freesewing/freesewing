@@ -1,5 +1,5 @@
 ---
-title: "Raglan scoop depth"
+title: "Глибина ковша реглан"
 ---
 
-Controls how much extra material to place under the armpits.
+Контролює, скільки додаткового матеріалу потрібно розмістити під пахвами.

@@ -2,8 +2,8 @@
 title: Biografie
 ---
 
-Your account **bio** is the place where you can tell a little bit about yourself.
+Je account **bio** is de plek waar je iets over jezelf kunt vertellen.
 
-Other FreeSewing users can see your bio, so this is a way to find like-minded people or promote your own content.
+Andere FreeSewing gebruikers kunnen je bio zien, dus dit is een manier om gelijkgestemden te vinden of je eigen inhoud te promoten.
 
-This field supports Markdown, so you can add links and even images.
+Dit veld ondersteunt Markdown, dus je kunt links en zelfs afbeeldingen toevoegen.

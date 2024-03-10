@@ -1,7 +1,7 @@
 ---
-title: "Gozer the ghost: Fabric Options"
+title: "Gozer el fantasma: Opciones de tejido"
 ---
 
 ## Tela principal
 
-Traditionally, white sheets are used.
+Tradicionalmente, se utilizan sábanas blancas.

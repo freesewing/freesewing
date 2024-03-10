@@ -54,8 +54,14 @@ export const eye = {
     points.pointNotch = paths.eye.shiftAlong(store.get('eyeTop'))
 
     const ps = paths.eye.split(points.pointNotch)
-    paths.eyeTop = ps[0].clone().setText(complete ? 'eyeTop' + ' (4)' : '', textAttribute)
-    paths.eyeBottom = ps[1].clone().setText(complete ? 'eyeBottom' + ' (4)' : '', textAttribute)
+    paths.eyeTop = ps[0]
+      .clone()
+      .addText(complete ? 'skully:eyeTop' : '', textAttribute)
+      .addText(complete ? ' (4)' : '', textAttribute)
+    paths.eyeBottom = ps[1]
+      .clone()
+      .addText(complete ? 'skully:eyeBottom' : '', textAttribute)
+      .addText(complete ? ' (4)' : '', textAttribute)
 
     paths.seam = new Path()
       .move(points.p4)
@@ -72,7 +78,7 @@ export const eye = {
       nr: 9,
       at: points.title,
       scale: 0.3,
-      title: 'eye',
+      title: 'skully:eye',
     })
 
     points.ps3a = points.p2.shiftFractionTowards(points.p4, 0.25)

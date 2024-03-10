@@ -1,60 +1,59 @@
 ---
-title: Getting started with FreeSewing.org
+title: Commencer avec FreeSewing.org
 order: 100
 ---
 
 Bonjour 👋 et bienvenue sur freesewing.org 🙂
 
-If you are new to FreeSewing, please take a few minutes to read this page and learn all about:
+Si tu es nouveau sur FreeSewing, prends quelques minutes pour lire cette page et apprendre tout ce qu'il y a à savoir :
 
-- [What FreeSewing is](#what-is-freesewing)
-- [What FreeSewing.org is](#what-is-freesewingorg)
-- [What the difference is between patterns and designs](#patterns-vs-designs)
-- [What measurements sets are](#measurements-sets)
-- [Where to turn to for support](#where-to-turn-to-for-help)
+- [Ce qu'est FreeSewing](#what-is-freesewing)
+- [Ce qu'est FreeSewing.org](#what-is-freesewingorg)
+- [Quelle est la différence entre les patrons et les designs](#patterns-vs-designs)
+- [Que sont les ensembles de mesure](#measurements-sets)
+- [Vers qui se tourner pour obtenir de l'aide](#where-to-turn-to-for-help)
 
 Cela vous convient ? Alors approfondissons :
 
 ## Qu'est-ce que FreeSewing ?
 
-FreeSewing is the leading [open source library](https://github.com/freesewing) for on-demand garment manufacturing.  
-Loved by home sewers and fashion entrepreneurs alike, FreeSewing provides the tech stack for your creative endeavours.
+FreeSewing est [la principale bibliothèque open source](https://github.com/freesewing) pour la fabrication de vêtements à la demande.  
+Aimé par les couturiers amateurs et les entrepreneurs de la mode, FreeSewing fournit la base technologique pour tes projets créatifs.
 
-FreeSewing is the brain-child of [Joost De Cock](https://github.com/joostdecock), the FreeSewing maintainer. Various other people have contributed to FreeSewing over the years (the [FreeSewing contributors](/contributors)), and the project is financially supported by [the FreeSewing patrons](/patrons).
+FreeSewing est le fruit du travail de [Joost De Cock](https://github.com/joostdecock), le responsable de FreeSewing. Plusieurs autres personnes ont contribué à FreeSewing au fil des ans (les [contributeurs FreeSewing](/contributors)), et le projet est financièrement soutenu par [les patrons FreeSewing](/patrons).
 
 <Tip>
 
-For more info about FreeSewing -- the open source project -- refer to
-[FreeSewing.dev](https://freesewing.dev/) which hosts documentation for
-developers, designers, contributors, and translators.
+Pour plus d'informations sur FreeSewing -- le projet open source -- réfère-toi à
+[FreeSewing.dev](https://freesewing.dev/) qui héberge de la documentation pour les développeurs, les concepteurs, les contributeurs et les traducteurs.
 
 </Tip>
 
-## What is FreeSewing.org?
+## Qu'est-ce que FreeSewing.org ?
 
-Freesewing.org is the FreeSewing project's flagship website where we offer our ever-growing collection of bespoke sewing patterns to makers all over the world.
+Freesewing.org est le site phare du projet FreeSewing où nous proposons notre collection toujours croissante de patrons de couture sur mesure à des créateurices du monde entier .
 
-FreeSewing is not about fashion, trends, or publishing the hot new pattern of the season. Instead, we want to empower makers by distilling the knowledge of the sewing community into parametric designs + documentation, and make that information freely available.
+FreeSewing n'a rien à voir avec la mode, les tendances ou la publication du nouveau modèle à la mode de la saison. Au lieu de cela, nous voulons encourager les créateurs en distillant la connaissance de la communauté de couture dans la conception paramétrique + documentation, et rendre cette information disponible gratuitement.
 
-FreeSewing.org is our most visible asset, and for many people their first encounter with the FreeSewing project.
+FreeSewing.org est notre atout le plus visible, et pour beaucoup de gens, leur première rencontre avec le projet FreeSewing.
 
-## Patterns vs Designs
+## Patron(Modèles) vs Desings
 
-If you came to this site looking for _sewing patterns_ and did not immeadiatly find a place to download them, that's because all of FreeSewing's sewing patterns are **made to measure**.
+Si tu es venue sur ce site à la recherche de _patrons de couture_ et que tu n'as pas trouvé immédiatement un endroit où les télécharger, c'est parce que tous les patrons de couture de FreeSewing sont **faits sur mesure**.
 
-Nous ne faisons pas de mise à l'échelle ou de gradation des patrons. Instead, FreeSewing drafts a design into a pattern made to your measurements. Cela se produit en temps réel, dans votre navigateur.
+Nous ne faisons pas de mise à l'échelle ou de gradation des patrons. Au lieu de cela, FreeSewing dessine un modèle fait à tes mesures. Cela se produit en temps réel, dans votre navigateur.
 
-- **Design**: One of the styles that we offer. We've got dozens of designs, and you can try them all
-- **Pattern**: The result of *drafting the design* (turning it into a sewing pattern to your measurements). Nous avons des milliers de patrons stockés pour nos utilisateurs, et certains pourraient être les vôtres
+- **Design**: L'un des styles que nous proposons. Nous avons des dizaines de modèles, et tu peux tous les essayer
+- **Patron** : Le résultat de *l'élaboration du dessin* (le transformer en patron de couture à tes mesures). Nous avons des milliers de patrons stockés pour nos utilisateurs, et certains pourraient être les vôtres
 
 <Tip>
 
-##### Saving is optional
+##### L'enregistrement est facultatif
 
-When you generate a bespoke pattern, you can tweak it endlessly through its various options,
-and export it to a range of formats, including PDF.  
-But it remains ephemeral until you save it to your account, so it
-becomes one of **your patterns**.
+Lorsque tu génères un patron sur mesure, tu peux le peaufiner à l'infini grâce à ses différentes options,
+et l'exporter dans toute une série de formats, y compris le PDF.  
+Mais il reste éphémère jusqu'à ce que tu l'enregistres sur ton compte, de sorte qu'il
+devienne l'un de **tes patrons**.
 
 L'enregistrement de votre patron est optionnel, mais il vous permet de re-consulter le patron plus tard, apporter d'autres améliorations ou télécharger le PDF à nouveau.
 
@@ -64,31 +63,31 @@ Vous pouvez enregistrer autant de patrons que vous le souhaitez.
 
 <Note>
 
-##### We respect the strictest privacy laws on the planet
-To generate bespoke sewing patterns, we need your measurements.
-Asking for them every time would be rather tedious, so we store them in your account.
+##### Nous respectons les lois sur la protection de la vie privée les plus strictes de la planète
+Pour générer des patrons de couture sur mesure, nous avons besoin de tes mesures.
+Les demander à chaque fois serait plutôt fastidieux, c'est pourquoi nous les stockons dans ton compte.
 
-Your account data is stored on our backend, subject to [our privacy notice](/docs/about/privacy),
-and with respect for [your rights](docs/about/rights/).
+Les données de ton compte sont stockées sur notre backend, sous réserve de [notre avis de confidentialité](/docs/about/privacy),
+et dans le respect de [tes droits](docs/about/rights/).
 
 </Note>
 
-## Measurements sets
+## Jeux de mesures
 
 Une fois que vous avez un compte, vous pouvez commencer à ajouter des mesures. Mais cela soulève rapidement la question suivante : que faire si vous voulez un patron pour vous, mais aussi pour votre partenaire ?
 
-That's why we have **measurements sets**. You can add as many measurements sets as you like. Avoir juste un pour vous c'est bien aussi.
+C'est pourquoi nous avons des **ensembles de mesures**. Tu peux ajouter autant de jeux de mesures que tu le souhaites. En avoir juste un pour toi c'est aussi bien.
 
 <Tip>
 
-##### Curated measurements sets
+##### Ensembles de mesures sélectionnées
 
-FreeSewing also provides **curated measurements sets**. These are measurements set from real people that we use to test our platform and designs. But you can also use them to test-drive our platform before you break out the measuring tape.
+FreeSewing propose également des **ensembles de mesures sélectionnées**. Ce sont des jeux de mesures établis à partir de personnes réelles que nous utilisons pour tester notre plateforme et nos conceptions. Mais tu peux aussi les utiliser pour tester notre plateforme avant de sortir le mètre ruban.
 
 </Tip>
 
-## Where to turn to for help
+## Vers qui se tourner pour obtenir de l'aide ?
 
-If you get stuck, consule [the support page](/support/) for various support options.
+Si tu es bloqué, consulte [la page d'assistance](/support/) pour connaître les différentes options d'assistance.
 
 

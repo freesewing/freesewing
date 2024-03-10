@@ -1,13 +1,13 @@
 #These are UI strings
 tags: Etiquetas
-showLineDrawings: Show line drawings
-showExamples: Show examples
-clearFilter: Clear filter
-showFilters: Show filters
-hideFilters: Hide filters
+showLineDrawings: Mostrar dibujos lineales
+showExamples: Mostrar ejemplos
+clearFilter: Limpiar filtro
+showFilters: Mostrar filtros
+hideFilters: Ocultar filtros
 difficulty: Dificultad
-learnMoreAboutThing: Learn more about {thing}
-newThingPattern: New {thing} pattern
+learnMoreAboutThing: Más información sobre {thing}
+newThingPattern: Nuevo patrón {thing}
 #Actual tags start here
 accessories: Accesorios
 bags: Bolsas

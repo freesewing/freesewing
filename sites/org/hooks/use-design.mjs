@@ -28,10 +28,13 @@ import { Huey as huey } from '@freesewing/huey'
 import { Hugo as hugo } from '@freesewing/hugo'
 import { Jaeger as jaeger } from '@freesewing/jaeger'
 import { Lucy as lucy } from '@freesewing/lucy'
+import { Lumina as lumina } from '@freesewing/lumina'
+import { Lumira as lumira } from '@freesewing/lumira'
 import { Lunetius as lunetius } from '@freesewing/lunetius'
 import { Noble as noble } from '@freesewing/noble'
 import { Octoplushy as octoplushy } from '@freesewing/octoplushy'
 import { Onyx as onyx } from '@freesewing/onyx'
+import { Otis as otis } from '@freesewing/otis'
 import { Paco as paco } from '@freesewing/paco'
 import { Penelope as penelope } from '@freesewing/penelope'
 import { Sandy as sandy } from '@freesewing/sandy'
@@ -46,12 +49,12 @@ import { Teagan as teagan } from '@freesewing/teagan'
 import { Tiberius as tiberius } from '@freesewing/tiberius'
 import { Titan as titan } from '@freesewing/titan'
 import { Trayvon as trayvon } from '@freesewing/trayvon'
+import { Tristan as tristan } from '@freesewing/tristan'
 import { Uma as uma } from '@freesewing/uma'
 import { Wahid as wahid } from '@freesewing/wahid'
 import { Walburga as walburga } from '@freesewing/walburga'
 import { Waralee as waralee } from '@freesewing/waralee'
 import { Yuri as yuri } from '@freesewing/yuri'
-import { Otis as otis } from '@freesewing/otis'
 
 const designs = {
   aaron,
@@ -80,10 +83,13 @@ const designs = {
   hugo,
   jaeger,
   lucy,
+  lumina,
+  lumira,
   lunetius,
   noble,
   octoplushy,
   onyx,
+  otis,
   paco,
   penelope,
   sandy,
@@ -98,12 +104,12 @@ const designs = {
   tiberius,
   titan,
   trayvon,
+  tristan,
   uma,
   wahid,
   walburga,
   waralee,
   yuri,
-  otis,
 }
 
 export const useDesign = (design) => (designs[design] ? designs[design] : false)

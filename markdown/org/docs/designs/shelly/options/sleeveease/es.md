@@ -2,5 +2,5 @@
 title: "Manga fácil"
 ---
 
-Affects how wide the sleeve is at the armhole on all shirts. For shirts that are less than 100% length, this option also affects how wide the sleeve is at the hem, with shorter sleeves being affected by this option to a greater degree, and longer sleeves being more affected by the wrist ease option. In most cases, this value should be set larger than chest ease, as the shoulders and arms are smaller and the same percentage of ease will translate to a smaller absolute ease. For compression clothes, shoulders also need more mobility than the chest, and very negative eases should generally be avoided for this option.
+Afecta a la anchura de la manga en la sisa de todas las camisas. Para las camisas que tienen una longitud inferior al 100%, esta opción también afecta a la anchura de la manga en el dobladillo; las mangas más cortas se ven más afectadas por esta opción, y las mangas más largas se ven más afectadas por la opción de soltura de muñeca. En la mayoría de los casos, este valor debe ser mayor que la holgura del pecho, ya que los hombros y los brazos son más pequeños y el mismo porcentaje de holgura se traducirá en una holgura absoluta menor. En el caso de la ropa de compresión, los hombros también necesitan más movilidad que el pecho, y en general deben evitarse los alargamientos muy negativos para esta opción.
 

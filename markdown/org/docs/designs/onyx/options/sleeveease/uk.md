@@ -2,8 +2,8 @@
 title: "Свобода прилягання рукава"
 ---
 
-Affects how wide the sleeve is at the armhole on all garments. For sleeves that are less than 100% length, this option also affects how wide the sleeve is at the hem, with shorter sleeves being affected by this option to a greater degree, and longer sleeves being more affected by the wrist ease option. In most cases, this value should be set larger than chest ease, as the shoulders and arms are smaller and the same percentage of ease will translate to a smaller absolute ease. For compression clothes, shoulders and armpits also need more mobility than the chest, so very negative eases should generally be avoided for this option.
+Впливає на ширину рукава в проймі на всіх видах одягу. Для рукавів, довжина яких менша за 100%, цей параметр також впливає на ширину рукава біля подолу, причому на коротші рукави цей параметр впливає більшою мірою, а на довші рукави більше впливає параметр "Зручність для зап'ястя". У більшості випадків це значення слід встановлювати більшим, ніж обхват грудей, оскільки плечі та руки менші, і той самий відсоток обхвату призведе до меншого абсолютного обхвату. У компресійному одязі плечі та пахви також потребують більшої рухливості, ніж грудна клітка, тому для цього варіанту слід уникати дуже негативних послаблень.
 
-> ##### This option allows negative values
+> ##### Ця опція дозволяє від'ємні значення
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Якщо ви використовуєте еластичний матеріал, який потрібно щільно прилягати, слід використовувати від'ємну легкість. Костюми та комбінезони зазвичай мають від'ємну розтяжність, в той час як інший одяг має додатну розтяжність.

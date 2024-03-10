@@ -1,9 +1,9 @@
 ---
-title: "Neck ease"
+title: "Aisance au niveau du cou"
 ---
 
-Controls how large the neck hole is. Keep in mind that most garments have neck holes that are substantially larger than the wearer's neck, and that the neckband will further constrict the neck. 0% ease will make a very small neck hole that hugs the neck snugly. +50% will still make what's generally considered a tight neckband appropriate for swimwear. For garments with a loose fit, or that do not use a zipper, even larger values are recommended.
+Contrôle la taille du trou du cou. Garde à l'esprit que la plupart des vêtements ont des trous d'encolure nettement plus grands que le cou du porteur, et que le tour de cou resserrera encore plus le cou. 0% d'aisance fera un tout petit trou de cou qui épouse bien le cou. Avec +50 %, ce qui est généralement considéré comme un tour de cou serré sera toujours approprié pour les maillots de bain. Pour les vêtements à la coupe ample, ou qui n'utilisent pas de fermeture éclair, des valeurs encore plus grandes sont recommandées.
 
-> ##### This option allows negative values
+> ##### Cette option autorise les valeurs négatives
 > 
-> Be careful setting a negative ease for the neck, even on compression garments, as it can get very uncomfortable. Perhaps it could be useful for a garment trying to seal off the body, such as a wetsuit?
+> Attention à fixer une aisance négative pour le cou, même sur les vêtements de compression, car cela peut devenir très inconfortable. Peut-être cela pourrait-il être utile pour un vêtement qui tente d'isoler le corps, comme une combinaison de plongée ?

@@ -1,5 +1,5 @@
 ---
-title: "Zipper guard width"
+title: "Largeur de la protection de la fermeture à glissière"
 ---
 
-Controls how wide the zipper guard will be. It should be wide enough to fully cover the zipper, with a little extra in case it shirts or stretches while in use.
+Contrôle la largeur de la protection de la fermeture éclair. Il doit être assez large pour couvrir entièrement la fermeture éclair, avec un peu plus au cas où elle se déplace ou s'étire pendant l'utilisation.

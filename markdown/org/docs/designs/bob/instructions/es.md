@@ -25,17 +25,11 @@ Make sure to sew close to the edge so that the stitches will be under the bias t
 
 ## Paso 2: Colocar la cinta al bies
 
-Vamos a aplicar cinta al bies como acabado alrededor de todo el borde del babero.
+We're going to apply bias tape as a finish around the entire edge of the bib.
 
 You probably want to start at the bottom strap, as this way the joint of the bias seam will be covered when the bib is worn.
 
 Ábrete camino y tómate tu tiempo.
-
-<Fixme>
-
-Proporcionar instrucciones genéricas para coser cinta al bies
-
-</Fixme>
 
 ## Paso 3: Instalar broches o botón
 

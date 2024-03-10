@@ -1,22 +1,22 @@
 newsletter: Розсилка новин
 subscribe: Підписатися
-subscribeConfirm: Confirm you want to subscribe to the FreeSewing newsletter
-subscribeLead: Once you click the button below, your subscription to the FreeSewing newsletter will be active.
-subscribePs: You can unsubscribe at any time with the link below. This unsubscribe link will also be included at the bottom of  every newsletter we send you, so you do not need to bookmark it, but you can if you want to.
+subscribeConfirm: Підтвердіть, що хочете підписатися на розсилку новин FreeSewing
+subscribeLead: Після того, як ви натиснете кнопку нижче, ваша підписка на розсилку новин FreeSewing стане активною.
+subscribePs: Ви можете відписатися від розсилки в будь-який час за посиланням нижче. Це посилання для відписки також буде внизу кожної розсилки, яку ми вам надсилатимемо, тому вам не обов'язково додавати його до закладок, але ви можете це зробити за бажанням.
 subscribeWhy: Чому я маю повторно підтверджувати свою підписку до розсилки, якщо я вже натиснули на підтверджувальне покликання в електронному листі?
-unsubscribeLink: Unsubscribe link
+unsubscribeLink: Посилання для відписки
 unsubscribe: Відписатися
-unsubscribeConfirm: Confirm you want to unsubscribe from the FreeSewing newsletter
-unsubscribeLead: Once you click the button below, you will be unsubscribed from the FreeSewing newsletter.
-unsubscribeWhy: Why do I have to click again to confirm I want to unsubscribe after I already clicked the newsletter unsubscribe link?
-whyLead: If you are curious why we are making you click yet another time, there is a good reason for that.
-invalidLink: The link you followed to get here is invalid
-faqLead: The answer is covered in our FAQ
-whatsWithTheClicks: What's with all the clicks?
-thanksDone: Thank you, that's all it took.
-subscribeToNewsletter: Subscribe to the FreeSewing newsletter
-subscribePitch: Subscribe to our newsletter and once every 3 months you'll receive an email from us with honest wholesome content. No tracking, no ads, no nonsense.
-confirmationRequired: We will send a confirmation email to this address
-almostThere: Alright, almost there
-checkInbox: We've sent a confirmation to { email }, click the link in it to confirm your subscription to the FreeSewing newsletter.
-confirm: confirm
+unsubscribeConfirm: Підтвердіть, що ви хочете відписатися від розсилки новин FreeSewing
+unsubscribeLead: Після натискання кнопки нижче ви будете відписані від розсилки новин FreeSewing.
+unsubscribeWhy: Чому я повинен повторно натискати кнопку, щоб підтвердити, що хочу відмовитися від розсилки, після того як я вже натиснув на посилання для відписки від розсилки?
+whyLead: Якщо вам цікаво, чому ми змушуємо вас натиснути ще раз, на це є вагома причина.
+invalidLink: Посилання, за яким ви перейшли сюди, недійсне
+faqLead: Відповідь можна знайти в нашому розділі поширених запитань
+whatsWithTheClicks: Що з усіма цими кліками?
+thanksDone: Дякую, це все, що було потрібно.
+subscribeToNewsletter: Підпишіться на розсилку новин FreeSewing
+subscribePitch: Підпишіться на нашу розсилку, і раз на 3 місяці ви отримуватимете від нас листа з чесним і корисним контентом. Ніякого відстеження, ніякої реклами, ніякої нісенітниці.
+confirmationRequired: Ми надішлемо лист з підтвердженням на цю адресу
+almostThere: Гаразд, ми майже на місці
+checkInbox: Ми надіслали підтвердження на адресу { email }, перейдіть за посиланням, щоб підтвердити підписку на розсилку FreeSewing.
+confirm: підтвердити

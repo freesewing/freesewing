@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Dr. Dragnea vom Universitätskrankenhaus Antwerpen trägt eine Gesichtsmaske aus Florenz"
 date: "19.03.2020"
 intro: "Aufruf an alle Macher: Hier ist ein 1-seitiges PDF-Gesichtsmasken-Muster; Jetzt gehen Sie und machen Sie welche und helfen Sie, dieses Ding zu schlagen"
@@ -9,13 +9,13 @@ title: "Aufruf an alle Macher: Hier ist ein 1-seitiges PDF-Gesichtsmasken-Muster
 
 <Note>
 
-**TL;DR: Please make facemasks for healthcare workers**
+**TL;DR: Bitte mach Gesichtsmasken für Beschäftigte im Gesundheitswesen**
 
 
- - PDF pattern for our Florence face mask:
-   - [A4 facemask pattern](/florence-facemask-freesewing.org.a4.pdf)
-   - [Letter facemask pattern](/florence-facemask-freesewing.org.letter.pdf)
- - [Instructions for the facemask pattern](/docs/designs/florence/instructions/)
+ - PDF-Muster für unsere Florence-Gesichtsmaske:
+   - [A4-Gesichtsmaskenmuster](/florence-facemask-freesewing.org.a4.pdf)
+   - [Brief-Gesichtsmaskenmuster](/florence-facemask-freesewing.org.letter.pdf)
+ - [Anleitung für das Gesichtsmaskenmuster](/docs/designs/florence/instructions/)
 
 </Note>
 

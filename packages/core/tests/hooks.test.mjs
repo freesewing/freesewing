@@ -1,7 +1,5 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { Pattern } from '../src/index.mjs'
-
-const expect = chai.expect
 
 describe('Hooks', () => {
   it('Should contain all hooks', () => {

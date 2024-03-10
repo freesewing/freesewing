@@ -1,5 +1,5 @@
 ---
-title: Measurements we use
+title: Messungen, die wir verwenden
 ---
 
-<ReadMore list />
+<ReadMore />

@@ -62,6 +62,6 @@ Las marcas de los botones y los bolsillos no son necesarias para estas piezas, a
 
 <Fixme>
 
-Todavía hay que redactar la documentación de este modelo. In the meantime their are some preliminary instructions for ([Carlita, Carlton's Counterpart](/docs/designs/carlita/instructions/)) that should help.
+Todavía hay que redactar la documentación de este modelo. Mientras tanto, hay unas instrucciones preliminares para ([Carlita, la contraparte de Carlton](/docs/designs/carlita/instructions/)) que deberían ayudarte.
 
 </Fixme>

@@ -1,60 +1,60 @@
 ---
-title: Getting started with FreeSewing.org
+title: Aan de slag met FreeSewing.org
 order: 100
 ---
 
 Hallo 👋 en welkom op FreeSewing.org 🙂
 
-If you are new to FreeSewing, please take a few minutes to read this page and learn all about:
+Als je nieuw bent bij FreeSewing, neem dan een paar minuten de tijd om deze pagina te lezen en alles te leren over:
 
-- [What FreeSewing is](#what-is-freesewing)
-- [What FreeSewing.org is](#what-is-freesewingorg)
-- [What the difference is between patterns and designs](#patterns-vs-designs)
-- [What measurements sets are](#measurements-sets)
-- [Where to turn to for support](#where-to-turn-to-for-help)
+- [Wat FreeSewing is](#what-is-freesewing)
+- [Wat FreeSewing.org is](#what-is-freesewingorg)
+- [Wat het verschil is tussen patronen en ontwerpen](#patterns-vs-designs)
+- [Welke meetsets zijn](#measurements-sets)
+- [Waar je terecht kunt voor ondersteuning](#where-to-turn-to-for-help)
 
 Klinkt goed? Laten we dan direct gaan duiken in:
 
 ## Wat is FreeSewing?
 
-FreeSewing is the leading [open source library](https://github.com/freesewing) for on-demand garment manufacturing.  
-Loved by home sewers and fashion entrepreneurs alike, FreeSewing provides the tech stack for your creative endeavours.
+FreeSewing is de toonaangevende [open source bibliotheek](https://github.com/freesewing) voor kledingproductie op aanvraag.  
+FreeSewing is geliefd bij zowel thuisnaaiers als modeondernemers en biedt de technische stack voor je creatieve inspanningen.
 
-FreeSewing is the brain-child of [Joost De Cock](https://github.com/joostdecock), the FreeSewing maintainer. Various other people have contributed to FreeSewing over the years (the [FreeSewing contributors](/contributors)), and the project is financially supported by [the FreeSewing patrons](/patrons).
+FreeSewing is het geesteskind van [Joost De Cock](https://github.com/joostdecock), de beheerder van FreeSewing. Various other people have contributed to FreeSewing over the years (the [FreeSewing contributors](/contributors)), and the project is financially supported by [the FreeSewing patrons](/patrons).
 
 <Tip>
 
-For more info about FreeSewing -- the open source project -- refer to
-[FreeSewing.dev](https://freesewing.dev/) which hosts documentation for
-developers, designers, contributors, and translators.
+Kijk voor meer informatie over FreeSewing -- het open source project -- op
+[FreeSewing.dev](https://freesewing.dev/) waar documentatie te vinden is voor
+ontwikkelaars, ontwerpers, medewerkers en vertalers.
 
 </Tip>
 
-## What is FreeSewing.org?
+## Wat is FreeSewing.org?
 
 Freesewing.org is the FreeSewing project's flagship website where we offer our ever-growing collection of bespoke sewing patterns to makers all over the world.
 
-FreeSewing is not about fashion, trends, or publishing the hot new pattern of the season. In plaats daarvan willen we makers ondersteunen door de kennis van de naaigemeenschap te bundelen in parametrische ontwerpen + documentatie, en die informatie vrij beschikbaar maken.
+FreeSewing gaat niet over mode, trends of het publiceren van het nieuwste patroon van het seizoen. In plaats daarvan willen we makers ondersteunen door de kennis van de naaigemeenschap te bundelen in parametrische ontwerpen + documentatie, en die informatie vrij beschikbaar maken.
 
-FreeSewing.org is our most visible asset, and for many people their first encounter with the FreeSewing project.
+FreeSewing.org is ons meest zichtbare bezit en voor veel mensen is het hun eerste kennismaking met het FreeSewing project.
 
-## Patterns vs Designs
+## Patronen vs Ontwerpen
 
-If you came to this site looking for _sewing patterns_ and did not immeadiatly find a place to download them, that's because all of FreeSewing's sewing patterns are **made to measure**.
+If you came to this site looking for _sewing patterns_ and did not immediately find a place to download them, that's because all of FreeSewing's sewing patterns are **made to measure**.
 
 We schalen of beoordelen patronen niet. We schalen of beoordelen patronen niet. Dat gebeurt in real-time, in je browser.
 
-- **Design**: One of the styles that we offer. We've got dozens of designs, and you can try them all
-- **Pattern**: The result of *drafting the design* (turning it into a sewing pattern to your measurements). We hebben duizenden patronen voor onze gebruikers opgeslagen, en sommige misschien van u
+- **Ontwerp**: Een van de stijlen die we aanbieden. We hebben tientallen ontwerpen en je kunt ze allemaal proberen
+- **Patroon**: Het resultaat van *bij het maken van het ontwerp* (er een naaipatroon van maken op jouw maten). We hebben duizenden patronen voor onze gebruikers opgeslagen, en sommige misschien van u
 
 <Tip>
 
-##### Saving is optional
+##### Opslaan is optioneel
 
-When you generate a bespoke pattern, you can tweak it endlessly through its various options,
-and export it to a range of formats, including PDF.  
-But it remains ephemeral until you save it to your account, so it
-becomes one of **your patterns**.
+Wanneer je een patroon op maat genereert, kun je het eindeloos tweaken via de verschillende opties,
+en exporteren naar een reeks formaten, waaronder PDF.  
+Maar het blijft vluchtig totdat je het opslaat in je account, dus
+wordt een van **jouw patronen**.
 
 Saving your pattern is optional, but it allows you to re-visit the pattern later, make further tweaks to it or simply download the PDF again.
 
@@ -64,31 +64,31 @@ Je kunt zoveel patronen opslaan als je wilt.
 
 <Note>
 
-##### We respect the strictest privacy laws on the planet
-To generate bespoke sewing patterns, we need your measurements.
-Asking for them every time would be rather tedious, so we store them in your account.
+##### We respecteren de strengste privacywetgeving ter wereld
+Om naaipatronen op maat te maken, hebben we je maten nodig.
+Er elke keer om vragen zou nogal vervelend zijn, dus slaan we ze op in je account.
 
-Your account data is stored on our backend, subject to [our privacy notice](/docs/about/privacy),
-and with respect for [your rights](docs/about/rights/).
+Je accountgegevens worden opgeslagen op onze backend, met inachtneming van [onze privacyverklaring](/docs/about/privacy),
+en met respect voor [je rechten](docs/about/rights/).
 
 </Note>
 
-## Measurements sets
+## Meetreeksen
 
 Zodra je een account hebt, kun je metingen gaan toevoegen. Maar dat brengt snel de volgende vraag op: wat als u een patroon voor u wilt, maar ook voor uw partner?
 
-That's why we have **measurements sets**. You can add as many measurements sets as you like. Het is ook goed om er maar één voor u te hebben.
+Daarom hebben we **meetsets**. Je kunt zoveel meetsets toevoegen als je wilt. Het is ook goed om er maar één voor u te hebben.
 
 <Tip>
 
-##### Curated measurements sets
+##### Verzamelde meetsets
 
-FreeSewing also provides **curated measurements sets**. These are measurements set from real people that we use to test our platform and designs. But you can also use them to test-drive our platform before you break out the measuring tape.
+FreeSewing biedt ook **verzamelde meetsets**. Dit zijn metingen van echte mensen die we gebruiken om ons platform en onze ontwerpen te testen. Maar je kunt ze ook gebruiken om ons platform te testen voordat je het meetlint tevoorschijn haalt.
 
 </Tip>
 
-## Where to turn to for help
+## Waar je terecht kunt voor hulp
 
-If you get stuck, consule [the support page](/support/) for various support options.
+If you get stuck, consult [the support page](/support/) for various support options.
 
 

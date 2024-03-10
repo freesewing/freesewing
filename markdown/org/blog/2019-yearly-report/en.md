@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Close-up of a dandelion against a pink background"
 date: "2019-12-10"
 intro: "4109 reasons to be happy about 2019"

@@ -1,12 +1,13 @@
 ---
-title: "Short-sleeve Shelly rash guard"
-caption: "A tight-fitting short-sleeve Shelly rash guard, by Thrunic."
+title: "Захист від висипу з коротким рукавом Shelly"
+caption: "Облягаюча сорочка з коротким рукавом Shelly від Thrunic."
 date: 20231016
-intro: "A tight-fitting short-sleeve Shelly rash guard, by Thrunic. Made from 20%spandex/80%nylon swim fabric, using a serger for the seams, a double needle for the sleeve hems, and no hem on the waist. Perfect for swimming, water sports, or as an athletic shirt."
+intro: "Облягаюча сорочка з коротким рукавом Shelly від Thrunic. Виготовлений з плавальної тканини 20%spandex/80%nylon, з використанням сержера для швів, подвійної голки для підшивання рукавів і без підшивання на талії. Ідеально підходить для плавання, водних видів спорту або як спортивна сорочка."
 designs:
-  - "shelly"
-maker: Natalia
+  - "шеллі"
+maker: Наталя
+author: 33070
 ---
 
-A tight-fitting short-sleeve Shelly rash guard, by Thrunic. Made from 20%spandex/80%nylon swim fabric, using a serger for the seams, a double needle for the sleeve hems, and no hem on the waist. Perfect for swimming, water sports, or as an athletic shirt.
+Облягаюча сорочка з коротким рукавом Shelly від Thrunic. Виготовлений з плавальної тканини 20%spandex/80%nylon, з використанням сержера для швів, подвійної голки для підшивання рукавів і без підшивання на талії. Ідеально підходить для плавання, водних видів спорту або як спортивна сорочка.
 

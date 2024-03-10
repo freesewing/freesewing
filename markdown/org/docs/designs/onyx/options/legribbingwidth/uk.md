@@ -1,7 +1,7 @@
 ---
-title: "Leg ribbing width"
+title: "Ширина ребер на ніжках"
 ---
 
-Controls how wide the ribbing around the leg is.
+Контролює ширину ребер навколо ноги.
 
-Note: This option is only available if the 'leg ribbing' option is set to 'ribbing.'
+Примітка: Ця опція доступна, лише якщо для параметра "Ребра жорсткості" встановлено значення "ребра жорсткості".

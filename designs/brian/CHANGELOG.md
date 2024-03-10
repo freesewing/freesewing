@@ -1,7 +1,13 @@
 # Change log for: @freesewing/brian
 
 
-## 3.0.0 (2022-09-30)
+## 3.2.0 (2024-02-11)
+
+### Fixed
+
+ - Take biceps ease into account when calculating armhole depth
+
+## 3.0.0 (2023-09-30)
 
 ### Changed
 

@@ -1,13 +1,13 @@
 ---
-title: "Onyx One-piece: Cutting Instructions"
+title: "Onyx uit één stuk: Snij-instructies"
 ---
 
-- Cut **1 front** part _on the fold_ -or- cut **2 front parts** (refer to pattern piece)
-- Cut **1 back** part _on the fold_ -or- cut **2 back parts** (refer to pattern piece)
-- Cut **2 sleeve** parts
-- Cut **1 crotch gusset** part _on the fold_
-- Cut **1 zipper guard** part _on the fold_ (optional)
-- Cut **1 neckband** part _on the fold_ (optional)
-- Cut **2 hood** parts (optional)
-- Cut **1 hood front** part _on the fold_ (optional)
-- Cut **1 skirt** part _on the fold_ (optional)
+- Knip **1 voorstuk** _op de vouw_ -of- knip **2 voorstukken** (zie patroondeel)
+- Knip **1 rugdeel** _op de vouw_ -of- knip **2 rugdelen** (zie patroondeel)
+- Snijd **2 mouw** onderdelen
+- Knip **1 kruisuitsnijding** deel _op de vouw_
+- Knip **1 ritsbeschermer** deel _op de vouw_ (optioneel)
+- Knip **1 nekband** deel _op de vouw_ (optioneel)
+- Snijd **2 kapdelen** (optioneel)
+- Knip **1 deel van de voorkant van de kap** _op de vouw_ (optioneel)
+- Knip **1 rok** deel _op de vouw_ (optioneel)

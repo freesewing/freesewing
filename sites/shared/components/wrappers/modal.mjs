@@ -2,6 +2,7 @@
 import { useState, useEffect, useContext } from 'react'
 import { useSwipeable } from 'react-swipeable'
 import { ModalContext } from 'shared/context/modal-context.mjs'
+import { CloseIcon } from 'shared/components/icons.mjs'
 
 const slideClasses = {
   left: '-translate-x-full',
@@ -56,6 +57,14 @@ export const ModalWrapper = ({
     ? `lg:opacity-0 ${slideClasses[slideFrom]} lg:translate-x-0 lg:translate-y-0`
     : 'opacity-100 translate-none'
 
+  const stopClick = (evt) => {
+    /*
+     * Do not keep modal open for links (with a href)
+     * but do keep it open for buttons (like a new modal context)
+     */
+    if (!evt.target.attributes.href) evt.stopPropagation()
+  }
+
   return (
     <div
       ref={swipeHandlers.ref}
@@ -64,17 +73,24 @@ export const ModalWrapper = ({
         transform-all duration-150 ${animation}
         bg-${bg} bg-opacity-${bgOpacity} z-50 hover:cursor-pointer
         flex flex-${flex} justify-${justify} items-${items} lg:p-12`}
-      onClick={keepOpenOnClick ? null : close}
+      onClick={close}
     >
       {bare ? (
         children
       ) : (
         <div
-          className={`bg-base-100 p-4 lg:px-8 lg:rounded-lg lg:shadow-lg max-h-full overflow-auto ${
+          onClick={keepOpenOnClick ? stopClick : null}
+          className={`z-30 bg-base-100 p-4 lg:px-8 lg:rounded-lg lg:shadow-lg max-h-full overflow-auto hover:cursor-default ${
             fullWidth ? 'w-full' : ''
           }`}
         >
           {children}
+          <button
+            className="fixed bottom-2 right-2 btn btn-neutral btn-circle lg:hidden"
+            onClick={close}
+          >
+            <CloseIcon className="w-8 h-8" />
+          </button>
         </div>
       )}
     </div>

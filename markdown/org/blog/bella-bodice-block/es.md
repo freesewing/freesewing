@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "¿Recuerdas cuando nos dejaban salir fuera?"
 date: "2021-01-17"
 intro: "El bloque de corpiño Bella para mujer"

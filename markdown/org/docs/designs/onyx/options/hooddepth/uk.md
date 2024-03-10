@@ -2,6 +2,6 @@
 title: "Глибина витяжки"
 ---
 
-Controls how much room will be in the hood around the back of the head.
+Контролює, скільки місця буде в капюшоні навколо потилиці.
 
-Note: This option is only available if the 'neck style' option is set to 'hood.'
+Примітка: Ця опція доступна, тільки якщо для параметра "стиль горловини" встановлено значення "капюшон".

@@ -1,5 +1,5 @@
 ---
-title: "Arm Length"
+title: "Довжина руки"
 ---
 
-This setting adjusts the length of the arms.
+Цей параметр регулює довжину рук.

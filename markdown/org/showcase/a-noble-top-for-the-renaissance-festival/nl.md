@@ -1,16 +1,16 @@
 ---
-title: "A Noble top for the Renaissance Festival"
-caption: "This top is made from scrap cotton fabrics"
+title: "Een Nobele top voor het Renaissance Festival"
+caption: "Deze top is gemaakt van restjes katoenen stof"
 date: 20231016
-intro: "This top is based on the Noble block."
+intro: "Deze top is gebaseerd op het Noble blok."
 designs:
-  - "edele"
+  - "tristan"
 maker: Natalia
 ---
 
-This top was made based on the Noble block. The wearer reports that their body is asymmetric, which you can see in the back view. They were very happy with this simple variation of Noble.
+This top was made based on the Noble block, and later spun off into its own design, Tristan. De drager meldt dat zijn lichaam asymmetrisch is, wat je kunt zien in het achteraanzicht. Ze waren erg blij met deze eenvoudige variant van Noble.
 
-![A view of the front](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-a-noble-top-for-the-renaissance-festival-1/public "The image caption/title goes here")
+![Een blik op de voorkant](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-a-noble-top-for-the-renaissance-festival-1/public "Een blik op de voorkant")
 
-![De achterkant](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-a-noble-top-for-the-renaissance-festival-2/public "The image caption/title goes here")
+![De achterkant](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-a-noble-top-for-the-renaissance-festival-2/public "De achterkant")
 

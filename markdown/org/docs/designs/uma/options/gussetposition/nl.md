@@ -1,6 +1,6 @@
 ---
-title: "Gusset position"
+title: "Positie van de inzetrand"
 ---
 
-This option allows you to shift the gusset forward or backward.
+Met deze optie kun je de inzetrand naar voren of naar achteren verschuiven.
 

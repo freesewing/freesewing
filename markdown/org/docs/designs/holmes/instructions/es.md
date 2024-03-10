@@ -31,7 +31,7 @@ Estas instrucciones asumen que has marcado tus líneas de costura. Pueden ser m�
 - Presiona las costuras para abrirlas. Para ello, si no dispone de jamón puede utilizar flanneles o toallas en su lugar.
 - (Opcional) _Canteado_ ambos lados de la costura, asegurándote de coger los márgenes de costura.
 - Repite la operación hasta que tengas dos mitades. Si la mitad del número de piezas de la corona es un número impar, tendrás que coser una sola pieza para cada mitad. Por ejemplo, si usted tiene 6 piezas de la corona, usted hace dos mitades de 3 coser una pieza a dos piezas cocidas juntas.
-- Con los lados derechos juntos, haciendo coincidir las líneas de costura y los picos, cose las dos mitades. Es posible que le resulte más fácil unir la mano debido a la masa o a la precisión. Esta costura será referida como la "costura de la corona central" que avanza.
+- With right sides together, matching seam lines and peaks, sew the two halves together. Es posible que le resulte más fácil unir la mano debido a la masa o a la precisión. This seam will be referred to as the "centre crown seam" going forward.
 - (Opcional) _Canteado_ ambos lados de la costura central de la corona, asegurándote de coger los márgenes de costura.
 
 <Note>
@@ -44,7 +44,7 @@ Dependiendo de su franquicia de costura puede que desee recortar costuras a medi
 
 #### Aleteados con ataduras
 
-- Corta dos trozos de cinta de 30 cm a 40 cm. Se referirán a ellos como lazos que avanzan.
+- Corta dos trozos de cinta de 30 cm a 40 cm. These will be referred to as ties going forward.
 - _Hilvana_ un lazo en el lado derecho de una solapa de la oreja (la entretela si la usas). Repetir para otro empate.
 - Con los lados derechos juntos, haciendo coincidir las líneas de costura, cose una orejera con corbata a una orejera sin corbata.
 - Recorta el margen de costura.
@@ -62,7 +62,7 @@ If you are uncertain about the length you want for you ties take 1 metre (39") o
 <Note>
 
 Las longitudes anteriores son recomendaciones, así que siéntete libre de ir tan largo o corto como quieras con los vínculos.  
-If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/designs/holmes/cutting/) for more info.
+Si lo prefieres, puedes hacer tus corbatas personalizadas con tela, [ver Holmes cortando](/docs/designs/holmes/cutting/) para más información.
 
 </Note>
 
@@ -74,7 +74,7 @@ If you prefer you can make your custom ties with fabric, [see Holmes cutting](/d
 - Dale la vuelta y presiona.
 - (Opcional) _Puntada de remate_ o _Puntada de remate_ el borde doblado.
 - _Hilvana_ juntando los bordes crudos.
-- Cose el ojal con el método que prefieras.
+- Sew the buttonhole in your preferred method.
 - Repite la operación con la orejera restante.
 
 <Warning>
@@ -98,7 +98,7 @@ There are two methods for constructing the bill. This is due to the different ty
 #### The Bill Method 1
 
 - Coloca el inserto de la visera en una pieza de la visera dentro de las líneas de costura.
-- Fija temporalmente el inserto de la visera a la visera con la almohadilla temporal _Puntadas_. A partir de ahora se denominará "visera enfrentada".
+- Fija temporalmente el inserto de la visera a la visera con la almohadilla temporal _Puntadas_. This will be referred to as "faced visor" going forward.
 - _Hilvana_ a lo largo de la línea de costura de la curva interior de la visera frontal, asegurándote de no enganchar el inserto de la visera.
 - Con los lados derechos juntos, haciendo coincidir las líneas de costura y los frentes centrales, cose la visera enfrentada a otra pieza de visera a lo largo de la curva exterior cerca del inserto de la visera, asegurándote de no enganchar el inserto de la visera.
 - Haz una muesca y recorta la curva exterior asegurándote de no cortar la costura. (Es posible que quieras girar y comprobar la forma antes de este paso)
@@ -120,10 +120,10 @@ If preferred you can temporarily attach the bill insert another way that does no
 
 #### The Bill Method 2
 
-- Con los lados derechos juntos, haciendo coincidir las líneas de costura y los frentes centrales, cose el rizo exterior de dos piezas de visera.
+- With rights sides together, matching seam lines and centre fronts, sew the outer curve of two visor pieces together.
 - Haz una muesca y recorta (si es necesario) la curva exterior asegurándote de no cortar la costura. (Es posible que quieras girar y comprobar la forma antes de este paso)
 - Dale la vuelta y presiona.
-- Inserta el inserto de la visera en la visera cosida firmemente, de modo que no quede ningún hueco en la curvatura exterior y los márgenes de costura queden todos a un lado del inserto de la visera. Esta será la parte superior de la visera.
+- Insert visor insert in to sewn visor tightly so there is no gap on the outer curve and the seam allowances are all one on side of the visor insert. Esta será la parte superior de la visera.
 - Une con alfileres la curva interior, asegurándote de que el borde exterior quede bien ajustado sobre el inserto de la visera.
 - _Hilvana_ tan cerca como puedas de la curva interior del inserto de la visera, asegurándote de que tiras de la tela firmemente sobre el borde exterior mientras coses.
 - Repite la operación con el resto de las piezas de la visera.
@@ -144,7 +144,7 @@ Una vez más, hay dos métodos para el montaje final y el revestimiento. Lea amb
 - Retira todas las puntadas de almohadilla e hilvanado.
 - Presiona los márgenes hacia dentro, asegurándote de que las costuras no se vean por fuera.
 - (Opcional) Sin apretar, haz punto elástico __ las costuras hacia el interior de la corona, asegurándote de que las puntadas no se vean por fuera.
-- Construye el forro del mismo modo que la corona omitiendo _edgestitching_.
+- Construct lining the same way as the crown omitting _edgestitching_.
 - Dobla y presiona por debajo del margen de costura inferior del forro. Puede que tenga que pulsar debajo de más para evitar que el revestimiento se muestre. También puede que necesites hilvanar __ el margen de costura hacia abajo.
 - Une con alfileres las costuras del centro de la copa y las costuras de los paneles e introduce el forro en el gorro por el revés. Coloca el borde doblado a lo largo de las líneas de costura.
 - _Haz punto enano_ o punto elástico __ el forro al margen de costura del sombrero.
@@ -160,8 +160,8 @@ Una vez más, hay dos métodos para el montaje final y el revestimiento. Lea amb
 - Hilvana a mano la visera a la corona haciendo coincidir las líneas de hilvanado de la visera con las líneas de costura de la corona. Es más fácil _hilvanar_ primero el centro hacia abajo y luego trabajar desde el centro hacia fuera.
 - (Opcional) Une a máquina la visera a la corona por las líneas de costura.
 - Repite la operación con la visera restante en el lado opuesto de la costura central de la corona.
-- Construye el forro de la misma forma que la corona omitiendo _edgestitching_ y dejando un hueco en la costura central del forro lo suficientemente grande como para dar la vuelta al sombrero.
-- Con los lados derechos juntos, haz coincidir las costuras de la corona central, las costuras de los paneles y las líneas de costura. Difundir el revestimiento a la corona a lo largo de las líneas de costura. Si es voluminoso puede querer recortar las costuras de forro o ambas costuras.
+- Construct lining the same way as the crown omitting _edgestitching_ and leaving a gap in the centre lining seam large enough to turn the hat.
+- Con los lados derechos juntos, haz coincidir las costuras de la corona central, las costuras de los paneles y las líneas de costura. Sew the lining to the crown along seam lines. Si es voluminoso puede querer recortar las costuras de forro o ambas costuras.
 - Gira el sombrero del revés, presionando el forro hacia el interior.
 - (Opcional/Alternativo) _Puntada inferior_ forro.
 - Abertura del forro con pespunte cerrada.
@@ -226,7 +226,7 @@ A menos que esté haciendo las aletas de ojo de botón, no tiene que coser un bo
 <Note>
 
 Aunque sin duda opcional, puede que encuentre un botón es lo que falta en el sombrero para terminar la mirada. Así que si no estás seguro del aspecto en este punto, inventa un botón rápido y colócalo temporalmente para ver si es lo que falta. If it is attach it permanently.
-Mientras que un botón cubierto está cubierto puedes usar cualquier botón que desees, ¡siéntete libre de experimentar!
+Whilst a covered button is recommended you can use whatever button you desire, feel free to experiment!
 
 </Note>
 

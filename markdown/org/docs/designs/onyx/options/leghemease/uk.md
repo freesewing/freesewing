@@ -1,5 +1,5 @@
 ---
-title: "Leg hem ease"
+title: "Зручність подолу для ніг"
 ---
 
-Controls how wide the bottom of the legs of the garment will be. The base value is interpolated between the circumference of the upper legs and the ankles, based on how long the legs on the garment are, and this option is then applied to this.
+Контролює, наскільки широкою буде нижня частина штанин виробу. Базове значення інтерполюється між обхватом верхньої частини ніг і щиколоток, виходячи з того, якої довжини ноги на одязі, а потім до нього застосовується цей параметр.

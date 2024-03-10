@@ -37,6 +37,7 @@ currently used by the designs we maintain:
 | `upperLeg` | Leg circumference near the top of the leg |
 | `waist` | Waist circumference |
 | `waistBack` | Back portion of `waist` circumference |
+| `waistToArmpit` | Distance from `waist` line to the armpit |
 | `waistToFloor` | Distance from `waist` line to floor |
 | `waistToHips` | Distance from `waist` line to `hips` circumference, along side of body |
 | `waistToKnee` | Distance from `waist` line to `knee` circumference, along side of body |
@@ -45,7 +46,7 @@ currently used by the designs we maintain:
 | `waistToUpperLeg` | Distance from `waist` line to `upperLeg` circumference, along side of body |
 | `wrist` | Wrist circumference |
 
-[hps]: https://freesewing.org/docs/measurements/hps/
+[hps]: https://freesewing.org/docs/sewing/hps/
 
 ## Measurements from `plugin-measurements`
 

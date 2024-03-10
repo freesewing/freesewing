@@ -17,7 +17,7 @@ Selon le style, les cravates et les boutons sont optionnels.
 
 - Si vous fabriquez des clapets d'oreille pour trou de bouton, vous pouvez omettre les cravates.
 - Si vous faites des lames de l'oreille attachée, vous pouvez omettre le bouton.
-- Ties can also be made from fabric if you prefer ([see Holmes Cutting](/docs/designs/holmes/cutting/))
-- You can also use different width and type ribbons for the ties if you prefer.
+- Les cravates peuvent aussi être faites en tissu si tu préfères ([voir Holmes Cutting](/docs/designs/holmes/cutting/))
+- Tu peux aussi utiliser des rubans de largeur et de type différents pour les cravates si tu préfères.
 
 </Note>

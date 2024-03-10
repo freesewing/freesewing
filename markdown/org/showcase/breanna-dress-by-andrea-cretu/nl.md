@@ -1,18 +1,18 @@
 ---
-title: "Breanna dress by Andrea Cretu"
-caption: "Andrea made this lovely dress based on the Breanna block"
+title: "Breanna jurk van Andrea Cretu"
+caption: "Andrea maakte deze prachtige jurk op basis van het Breanna-blok"
 date: 20231017
-intro: "Andrea added a circle skirt to the Breanna block to make this charming dress."
+intro: "Andrea voegde een cirkelrok toe aan het Breanna blok om deze charmante jurk te maken."
 designs:
   - "breanna"
 maker: Natalia
 ---
 
-Andrea added a circle skirt to the Breanna block to make this charming dress. We love the choice of fabric and buttons!
+Andrea voegde een cirkelrok toe aan het Breanna blok om deze charmante jurk te maken. We zijn dol op de keuze van de stof en de knopen!
 
-Andrea shared these helpful details:
+Andrea deelde deze nuttige details:
 
-> Made a dress based on the Breanna body block, with a circle skirt. Next iteration I'll scoop out the armholes and neck and add length to the bottom, so the skirt starts a little lower. Also will make the darts end earlier on the bust and later on the back.
+> Een jurk gemaakt op basis van het Breanna lijfje, met een cirkelrok. Bij de volgende versie zal ik de armsgaten en hals uitsnijden en lengte toevoegen aan de onderkant, zodat de rok iets lager begint. Ook zullen de figuurnaden eerder op de buste eindigen en later op de rug.
 
-Andrea is a talented creator, and the owner at [Yarnandy.com](Yarnandy.com). 
+Andrea is een getalenteerde ontwerpster en de eigenaresse van [Yarnandy.com](Yarnandy.com). 
 

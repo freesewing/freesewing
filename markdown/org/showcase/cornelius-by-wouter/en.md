@@ -5,6 +5,7 @@ date: "2021-03-17"
 intro: "Wouter created the Cornelius cycling breeches pattern based on the Keystone systems. Read more on the FreeSewing blog ."
 title: "Cornelius by Wouter"
 designs: ["cornelius"]
+author: 132
 ---
 
 Wouter created the Cornelius cycling breeches pattern based on the Keystone systems. Read more [on the FreeSewing blog](https://freesewing.org/blog/cornelius-cycling-breeches/).

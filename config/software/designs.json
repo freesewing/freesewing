@@ -490,6 +490,40 @@
       "curvedSeam"
     ]
   },
+  "lumina": {
+    "code": "Wouter Van Wageningen",
+    "description": "A FreeSewing pattern for leggings",
+    "design": "Wouter Van Wageningen",
+    "difficulty": 3,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "bottoms",
+      "trousers"
+    ],
+    "techniques": [
+      "stretch",
+      "curvedSeam",
+      "elastic"
+    ]
+  },
+  "lumira": {
+    "code": "Wouter Van Wageningen",
+    "description": "A FreeSewing pattern for leggings",
+    "design": "Wouter Van Wageningen",
+    "difficulty": 3,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "bottoms",
+      "trousers"
+    ],
+    "techniques": [
+      "stretch",
+      "curvedSeam",
+      "elastic"
+    ]
+  },
   "lunetius": {
     "code": "Rika Tamaike",
     "description": "A FreeSewing pattern for a lacerna, a historical Roman cloak",
@@ -518,6 +552,16 @@
       "bags"
     ],
     "techniques": []
+  },
+  "naomiwu": {
+    "description": "A FreeSewing pattern for Naomi Wu's signature cargo skirt",
+    "code": "Joost De Cock",
+    "design": ["Naomi Wu", "Joost De Cock"],
+    "difficulty": 3,
+    "lab": false,
+    "org": false,
+    "tags": ["bottoms", "skirts"],
+    "techniques": ["button", "hem", "pocket", "lining"]
   },
   "noble": {
     "code": "Wouter Van Wageningen",
@@ -573,6 +617,16 @@
       "zipper",
       "ribbing"
     ]
+  },
+  "otis": {
+    "code": "Wouter Van Wageningen",
+    "description": "A FreeSewing pattern for a baby romper",
+    "design": "Wouter Van Wageningen",
+    "difficulty": 2,
+    "lab": true,
+    "org": true,
+    "tags": [],
+    "techniques": []
   },
   "paco": {
     "code": "Joost De Cock",
@@ -824,6 +878,21 @@
       "lining"
     ]
   },
+  "tristan": {
+    "code": "Wouter van Wageningen",
+    "description": "A FreeSewing pattern for a fitted top with prince(ss) seams",
+    "design": "Natalia Sayang",
+    "difficulty": 3,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "tops"
+    ],
+    "techniques": [
+      "curvedSeam",
+      "precision"
+    ]
+  },
   "uma": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern for a basic, highly-customizable underwear pattern",
@@ -907,17 +976,6 @@
       "hem",
       "button"
     ]
-  },
-  "otis": {
-    "code": "Wouter Van Wageningen",
-    "description": "A FreeSewing pattern for a baby romper",
-    "design": "Wouter Van Wageningen",
-    "difficulty": 2,
-    "lab": true,
-    "org": true,
-    "tags": [],
-    "techniques": []
-  },
   "opal": {
     "code": "Coder name",
     "description": "A FreeSewing pattern that needs a description",

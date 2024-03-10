@@ -1,9 +1,9 @@
 ---
-title: "Huey hoodie: Designer Notes"
+title: "Huey hoodie: Ontwerpnotities"
 ---
 
-I had a hoodie I liked, but after years of wear it sort of disintegrated. So I reincarnated it in this design and now its spirit can live on forever.
+Ik had een hoodie die ik leuk vond, maar na jaren dragen viel hij uit elkaar. Dus reïncarneerde ik het in dit ontwerp en nu kan zijn geest voor altijd voortleven.
 
-The name choice is a tip of the hat to [Huey P. Newton](https://en.wikipedia.org/wiki/Huey_P._Newton).
+De naamkeuze is een tip van de hoed naar [Huey P. Newton](https://en.wikipedia.org/wiki/Huey_P._Newton).
 
 joost

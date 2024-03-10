@@ -1,5 +1,5 @@
 ---
-title: "Skirt hem"
+title: "Dobladillo de la falda"
 ---
 
-Sets the hem allowance of the hem along the bottom of the skirt, as a multiple of the seam allowance.
+Establece el margen del dobladillo a lo largo de la parte inferior de la falda, como múltiplo del margen de costura.

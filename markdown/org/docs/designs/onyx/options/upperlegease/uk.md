@@ -1,14 +1,14 @@
 ---
-title: "Upper leg ease"
+title: "Легкість у верхній частині ноги"
 ---
 
-Controls how wide the garment will be at your upper leg.
+Контролює, наскільки широким буде виріб у верхній частині гомілки.
 
-Whatever value you provide here will simply be added to your upper leg circumference measurement when drafting the garment.
+Будь-яке значення, яке ви вкажете тут, буде просто додано до обхвату гомілки під час побудови креслення виробу.
 
 > ##### Ця опція також допускає від'ємні значення.
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Якщо ви використовуєте еластичний матеріал, який потрібно щільно прилягати, слід використовувати від'ємну легкість. Костюми та комбінезони зазвичай мають від'ємну розтяжність, в той час як інший одяг має додатну розтяжність.
 
 
 

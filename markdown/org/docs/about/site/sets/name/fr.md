@@ -2,14 +2,14 @@
 title: Nom
 ---
 
-Every measurements set has a **name** attribute that is mandatory.
+Chaque jeu de mesures possède un attribut **nom** qui est obligatoire.
 
-In other words, you must give each of your measurements sets a name, but that name can be anything you want.
+En d'autres termes, tu dois donner un nom à chacun de tes ensembles de mesures, mais ce nom peut être ce que tu veux.
 
-Typically, people give names that describe the set, like:
+Généralement, les gens donnent des noms qui décrivent l'ensemble, comme par exemple :
 
-- Myself, January 2024
-- Tony with binder
-- Jenny post augmentation
+- Moi-même, janvier 2024
+- Tony avec un classeur
+- Jenny après l'augmentation
 
-But you do you.
+Mais tu fais comme tu veux.

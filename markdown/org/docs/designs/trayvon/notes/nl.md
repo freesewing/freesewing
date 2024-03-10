@@ -1,10 +1,10 @@
 ---
-title: "Trayvon tie: Designer Notes"
+title: "Trayvon stropdas: Designer Notes"
 ---
 
-There's about a million patterns for ties on the internet, so why make another one, right?
+Er zijn ongeveer een miljoen patronen voor dassen te vinden op internet, dus waarom zou je er nog een maken?
 
-Well, this started hen I wanted to make a tie but every pattern I found was cutting corners. Specifically, they all put the seam between the back and the font at the exact tip. Which, sure, is easier to make. But that's not how ties are supposed to be made.
+Nou, dit begon toen ik een stropdas wilde maken, maar bij elk patroon dat ik vond, werd er te veel afgeknipt. Ze plaatsen allemaal de naad tussen de achterkant en het lettertype precies op het puntje. Wat natuurlijk makkelijker te maken is. Maar zo horen dassen niet te zijn.
 
 So, I designed this pattern so I could make ties that looks professional, and not home-made.
 

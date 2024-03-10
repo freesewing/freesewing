@@ -1,19 +1,19 @@
 title: Título
-titleMsg: This will be the main text on the image
-intro: Intro / Byline / Footer
-introMsg: This will appear smaller at the bottom
-type: Variant
-typeMsg: Pick the variant that best suits your needs
-site: Site
-siteMsg: This format can optionally include the site name
-generate: Generate image
-generateAgain: Generate another image
+titleMsg: Este será el texto principal de la imagen
+intro: Intro / Titular / Pie de página
+introMsg: Aparecerá más pequeño en la parte inferior
+type: Variante
+typeMsg: Elige la variante que mejor se adapte a tus necesidades
+site: Página web
+siteMsg: Este formato puede incluir opcionalmente el nombre del sitio
+generate: Generar imagen
+generateAgain: Generar otra imagen
 preview: vista previa
-save: Save Image
-tall: Tall
-tallMsg: Generates a tall image, optimized for Instagram stories, TikTok, and other places that prefer portrait mode.
-wide: Wide
-wideMsg: Generates a wide image, optimized for posting on a variety of platforms including Facebook, Mastodon, Reddit, and so on. Also suitable as Open Graph image.
-square: Square
-squareMsg: Generate a square image optimized for Instagram posts and other places where a square aspect ratio works best.
+save: Guardar imagen
+tall: Alto
+tallMsg: Genera una imagen alta, optimizada para las historias de Instagram, TikTok y otros lugares que prefieren el modo vertical.
+wide: Ancho
+wideMsg: Genera una imagen amplia, optimizada para su publicación en diversas plataformas, como Facebook, Mastodon, Reddit, etc. También es adecuada como imagen Open Graph.
+square: Cuadrado
+squareMsg: Genera una imagen cuadrada optimizada para publicaciones de Instagram y otros lugares donde una relación de aspecto cuadrada funciona mejor.
 none: Ninguna

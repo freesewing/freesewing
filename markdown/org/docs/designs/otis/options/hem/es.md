@@ -2,6 +2,6 @@
 title: "Hem"
 ---
 
-Hem determines the size of the hem on the sleeves.
+El dobladillo determina el tamaño del dobladillo de las mangas.
 
-The hem is a percentage of the distance between the shoulder and the arm opening (of the short sleeve version). Default is 10%
+El dobladillo es un porcentaje de la distancia entre el hombro y la abertura del brazo (de la versión de manga corta). Por defecto es 10%.

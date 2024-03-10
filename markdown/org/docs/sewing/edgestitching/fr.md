@@ -10,6 +10,6 @@ La surpiqûre nervure peut être utilisée pour renforcer les coutures, pour mai
 
 <Tip>
 
-Pour de meilleurs résultats, utilisez une aiguille de couture pour optimiser la surpiqûre
+Pour de meilleurs résultats, utilisez une aiguille de couture optimisée pour la surpiqûre
 
 </Tip>

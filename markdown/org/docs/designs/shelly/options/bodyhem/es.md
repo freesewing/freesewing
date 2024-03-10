@@ -1,6 +1,6 @@
 ---
-title: "Body hem"
+title: "Dobladillo del cuerpo"
 ---
 
-Sets the hem allowance of the hem along the bottom of the body of the shirt, as a multiple of the seam allowance.
+Establece el margen del dobladillo a lo largo de la parte inferior del cuerpo de la camisa, como múltiplo del margen de costura.
 

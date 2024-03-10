@@ -1,25 +1,26 @@
 ---
-title: "Four versions of Otis and a bonus Bob"
-caption: "An Otis baby romper and Bob bib"
+title: "Cuatro versiones de Otis y un bonus Bob"
+caption: "Un pelele Otis y un babero Bob"
 date: 20231017
-intro: "Wouter made four versions of Otis for newborn Otis, and a Bob to complete the ensemble."
+intro: "Wouter hizo cuatro versiones de Otis para el recién nacido Otis, y un Bob para completar el conjunto."
 designs:
   - "otis"
   - "bob"
 maker: Natalia
+author: 132
 ---
 
-Wouter, the designer, made these:
+Las hizo Wouter, el diseñador:
 
-> Four versions of otis. One with long sleeves, and one that is reversible (don’t try this; figuring out how seams go together and in which sequence causes headaches).
+> Cuatro versiones de otis. Una con mangas largas y otra reversible (no lo intentes; averiguar cómo se unen las costuras y en qué secuencia provoca dolores de cabeza).
 
-We are head over heels for his adorable fabric choices. The cute baby doesn't hurt.
+Estamos locos por sus adorables telas. El bebé guapo no hace daño.
 
-![Otis on Otis](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-1/public "Otis on Otis")
+![Otis en Otis](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-1/public "Otis en Otis")
 
-![A polka dot Otis](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-2/public "A polka dot Otis")
+![Un Otis de lunares](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-2/public "Un Otis de lunares")
 
-![This Otis is out of this world](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-3/public "This Otis is out of this world")
+![Este Otis es de otro mundo](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-3/public "Este Otis es de otro mundo")
 
-![A view of the reverse](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-4/public "A view of the reverse")
+![Una vista del reverso](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-4/public "Una vista del reverso")
 

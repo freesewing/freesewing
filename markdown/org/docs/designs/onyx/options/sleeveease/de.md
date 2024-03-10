@@ -2,8 +2,8 @@
 title: "Bequemlichkeitszugabe Ärmel"
 ---
 
-Affects how wide the sleeve is at the armhole on all garments. For sleeves that are less than 100% length, this option also affects how wide the sleeve is at the hem, with shorter sleeves being affected by this option to a greater degree, and longer sleeves being more affected by the wrist ease option. In most cases, this value should be set larger than chest ease, as the shoulders and arms are smaller and the same percentage of ease will translate to a smaller absolute ease. In most cases, this value should be set larger than chest ease, as the shoulders and arms are smaller and the same percentage of ease will translate to a smaller absolute ease.
+Beeinflusst bei allen Kleidungsstücken, wie weit der Ärmel am Armausschnitt ist. Bei Ärmeln, die weniger als 100 % lang sind, wirkt sich diese Option auch darauf aus, wie breit der Ärmel am Saum ist, wobei kürzere Ärmel von dieser Option stärker betroffen sind und längere Ärmel eher von der Option der Handgelenkserleichterung. In den meisten Fällen sollte dieser Wert größer sein als die Brustweite, da die Schultern und Arme kleiner sind und derselbe prozentuale Wert eine geringere absolute Weite bedeutet. In den meisten Fällen sollte dieser Wert größer sein als die Brustweite, da die Schultern und Arme kleiner sind und derselbe prozentuale Wert eine geringere absolute Weite bedeutet.
 
-> ##### This option allows negative values
+> ##### Diese Option erlaubt negative Werte
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Du solltest eine negative Leichtigkeit verwenden, wenn du einen dehnbaren Stoff verwendest, der eng anliegen soll. Unteranzüge und Trikots haben in der Regel eine negative Bequemlichkeit, während andere Kleidungsstücke in der Regel eine positive Bequemlichkeit haben.

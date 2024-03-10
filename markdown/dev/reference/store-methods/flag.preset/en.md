@@ -17,7 +17,7 @@ is on or off respectively.
 undefined Store.flag.preset(string preset)
 ```
 
-Since these methods are not part of FreeSewing's core API, what you pass to this method does depend on your own implemntation.
+Since these methods are not part of FreeSewing's core API, what you pass to this method does depend on your own implementation.
 The example above is from our implementation, which uses the following properties:
 
 ## Configuration

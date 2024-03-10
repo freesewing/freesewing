@@ -1,6 +1,6 @@
 ---
-title: "Sleeve hem"
+title: "Поділ рукава"
 ---
 
-Sets the hem allowance of the hem along the end of the sleeves, as a multiple of the seam allowance.
+Встановлює припуск на підгин по кінцях рукавів, кратний припуску на шов.
 

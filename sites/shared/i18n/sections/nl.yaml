@@ -3,13 +3,13 @@ blogAbout: Nieuws en updates van de FreeSewing gemeenschap
 showcase: Voorbeelden
 showcaseAbout: Voorbeelden en inspiratie van de FreeSewing gemeenschap met onze ontwerpen
 docs: Documentatie
-docsAbout: In-depth documentation for all our designs, our website, and much more
+docsAbout: Uitgebreide documentatie voor al onze ontwerpen, onze website en nog veel meer
 account: Jouw account
-accountAbout: Je accountinstellingen en -voorkeuren en je persoonlijke gegevens beheren
+accountAbout: Manage your account settings and preferences, and your personal data
 designs: Designs
 designsAbout: Onze bibliotheek met ontwerpen die je met een paar klikken kunt omtoveren tot patronen op maat
 community: Gemeenschap
-communityAbout: Meer informatie over de mensen achter FreeSewing en waar je gelijkgestemde makers kunt vinden
+communityAbout: More information about the people behind FreeSewing and where to fine like-minded makers
 apiAbout: Documentatie voor onze core API bibliotheek en onze backend REST API.
 designAbout: Alles wat je moet weten om te beginnen met het ontwerpen van parametrische naaipatronen.
 contributeAbout: Wil je bijdragen aan FreeSewing? Doe het op deze manier.
@@ -28,11 +28,11 @@ sets: Je metingen instellen
 patterns: Jouw patronen
 curate: samenstellen
 curateSets: Sets samenstellen
-curatedSets: Curated Measurements Sets
+curatedSets: Sets samengestelde metingen
 code: Code
 patternsAbout: Toont de patronen die je hebt opgeslagen in je FreeSewing account
 setsAbout: Toont de meetsets die je hebt opgeslagen in je FreeSewing account
 codeAbout: Hier kun je (links naar) de broncode van Freesewing vinden
 new: Nieuw...
-newAbout: Start here if you are looking to create something new
+newAbout: Begin hier als je iets nieuws wilt creëren
 support: Ondersteuning

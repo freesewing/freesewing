@@ -28,3 +28,4 @@ Verander gewoon je handen rond, dan krijg je een nauwkeurigere meting.
 Neem voor het beste resultaat een tweede persoon om uw metingen te nemen (indien mogelijk).
 
 </Tip>
+<MeasieImage />

@@ -1,5 +1,5 @@
 ---
-title: Sewing Terminology
+title: Terminología de costura
 ---
 
-<ReadMore list />
+<ReadMore />

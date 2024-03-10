@@ -1,5 +1,5 @@
 ---
-title: "Onyx One-piece: Design Options"
+title: "Onyx Einteilig: Design Optionen"
 ---
 
 <DesignOptions design='onyx' />

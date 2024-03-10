@@ -1,8 +1,8 @@
 ---
-title: UI Settings
+title: UI-Einstellungen
 ---
 
-The **UI Settings** menu allows you to tweak certain aspects of the user interface (UI). Those aspects are:
+Im Menü **UI Settings** kannst du bestimmte Aspekte der Benutzeroberfläche (UI) anpassen. Diese Aspekte sind:
 
 <ReadMore />
 

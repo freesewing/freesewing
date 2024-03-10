@@ -1,9 +1,9 @@
 ---
-title: "Crotch gusset width"
+title: "Kruisbreedte"
 ---
 
-Adjusts how wide the crotch gusset will be. The crotch gusset is a rectangular strip of fabric running up one leg, across the crotch fork, and down the other leg. It adds room in the crotch, creates a stronger outfit by avoiding the 4-way seam normally found at the crotch fork, and greatly reduces the need for scoops around the crotch fork.
+Hiermee stel je in hoe breed de kruisvoering wordt. De kruisvoering is een rechthoekige strook stof die langs één been omhoog loopt, over de kruisvork en langs het andere been naar beneden. Het voegt ruimte toe in het kruis, creëert een sterkere outfit door de 4-voudige naad te vermijden die normaal bij de kruisvork zit en vermindert de noodzaak voor scoops rond de kruisvork aanzienlijk.
 
-Bodies that are wider than they are deep do not need as wide a gusset, while those with very deep thighs may need a wider gusset.
+Lichamen die breder zijn dan diep hebben niet zo'n brede kruisband nodig, terwijl mensen met hele diepe dijen een bredere kruisband nodig kunnen hebben.
 
-The width of the crotch gusset will affect how the garment is shaped around the hips, crotch, and upper legs. You may have to adjust the upper leg east, seat ease, and leg taper position along with this option to get a proper fit.
+De breedte van de kruisvoering beïnvloedt de vorm van het kledingstuk rond de heupen, het kruis en de bovenbenen. Het kan zijn dat je bij deze optie het bovenbeen oosten, de zitpositie en de beenpositie moet aanpassen om een goede pasvorm te krijgen.

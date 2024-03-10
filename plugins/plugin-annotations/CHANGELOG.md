@@ -1,7 +1,28 @@
 # Change log for: @freesewing/plugin-annotations
 
 
-## 3.0.0 (2022-09-30)
+## 3.2.0 (2024-02-11)
+
+### Added
+
+ - The `title` macro now takes a `notes` and `classes.notes` as its config, allowing you to add notes
+ - The `classes.cutlist` config is removed from the title plugin, cutlist info is now included as notes
+
+### Removed
+
+ - The `classes.cutlist` config is removed from the title plugin, cutlist info is now included as notes
+
+## 3.1.0 (2023-12-26)
+
+### Changed
+
+ - Added support for notes in flags
+
+### Fixed
+
+ - Removing macros did not always remove the cutlist data in the store. Fixes
+
+## 3.0.0 (2023-09-30)
 
 ### Changed
 

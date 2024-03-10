@@ -1,7 +1,7 @@
 ---
-title: "Sleeve ribbing width"
+title: "Largeur des côtes des manches"
 ---
 
-Controls how wide the ribbing around the sleeve is.
+Contrôle la largeur des côtes autour de la manche.
 
-Note: This option is only available if the 'sleeve ribbing' option is set to 'ribbing.'
+Remarque : cette option n'est disponible que si l'option 'côtes de manches' est réglée sur 'côtes'.

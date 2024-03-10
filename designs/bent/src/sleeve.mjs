@@ -192,7 +192,7 @@ export const sleeve = {
     sleeveBend: { deg: 10, min: 0, max: 20, menu: 'fit' },
     draftForHighBust: {
       bool: false,
-      menu: ({ measurements }) => (measurements?.highBust ? 'fit' : false),
+      menu: (settings) => (settings?.measurements?.highBust ? 'fit' : false),
     },
     // Style
     // s3 is short for Shoulder Seam Shift
@@ -210,7 +210,7 @@ export const sleeve = {
       pct: 5,
       min: -10,
       max: 50,
-      menu: ({ options }) => (options?.legacyArmholeDepth ? false : 'advanced'),
+      menu: (_settings, mergedOptions) => (mergedOptions?.legacyArmholeDepth ? false : 'advanced'),
     },
     // Legacy armhole depth
     legacyArmholeDepth: { bool: false, menu: 'advanced' },
@@ -218,7 +218,7 @@ export const sleeve = {
       pct: 60,
       min: 50,
       max: 70,
-      menu: ({ options }) => (options?.legacyArmholeDepth ? 'advanced' : false),
+      menu: (_settings, mergedOptions) => (mergedOptions?.legacyArmholeDepth ? 'advanced' : false),
     },
   },
   draft: draftBentSleeve,

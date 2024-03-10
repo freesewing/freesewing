@@ -1,19 +1,19 @@
 ---
-title: "Skully: What You Need"
+title: "Скаллі: Те, що тобі потрібно."
 ---
 
-To make Skully, you will need the following:
+Щоб зробити Скаллі, вам знадобиться наступне:
 
 - [Базові матеріали для шиття](/docs/sewing/basic-sewing-supplies)
-- About 0.5 meters (0.6 yards) of a suitable fabric ([see Skully Fabric options](/docs/designs/skully/fabric/))
+- Приблизно 0,5 метра (0,6 ярдів) відповідної тканини ([див. варіанти тканини для Скаллі](/docs/designs/skully/fabric/))
 - Начинка
-- Embroidery floss for the hair
-- Appropriately sized upholstery needle
+- Нитки для вишивання для волосся
+- Голка для оббивки відповідного розміру
 
 <Note>
 
-This list is based on a default Skully and you may need less or more fabric dependant on the [size you are making Skully](/docs/designs/skully/options/size/).
+Цей список базується на стандартній Скуллі, і вам може знадобитися менше або більше тканини, залежно від [розміру Скуллі, яку ви робите] (/docs/designs/skully/options/size/).
 
-For instance a 300% Skully will need 1.5 meters (0.5 meter x 300%  = 1.5 meters) and a 50% skully will need 0.25 meters (0.5 meter x 50% = 0.25 meters).
+Наприклад, для 300% Скаллі знадобиться 1,5 метра (0,5 метра х 300% = 1,5 метра), а для 50% Скаллі - 0,25 метра (0,5 метра х 50% = 0,25 метра).
 
 </Note>

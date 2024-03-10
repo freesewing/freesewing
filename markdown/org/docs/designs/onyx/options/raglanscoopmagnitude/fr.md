@@ -1,5 +1,5 @@
 ---
-title: "Raglan scoop depth"
+title: "Profondeur raglan"
 ---
 
-Controls how much extra material to place under the armpits.
+Contrôle la quantité de tissu supplémentaire à placer sous les aisselles.

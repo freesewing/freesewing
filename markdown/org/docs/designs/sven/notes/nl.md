@@ -1,8 +1,8 @@
 ---
-title: "Sven sweatshirt: Designer Notes"
+title: "Sven sweatshirt: Ontwerpnotities"
 ---
 
-I don't knit, but I do tend to be cold all the time. So I do like sweaters. Hence why I designed this sweater pattern, because I prefer to make clothes rather than buy them.
+Ik brei niet, maar ik heb het wel altijd koud. Dus ik hou wel van truien. Daarom heb ik dit patroon voor deze trui ontworpen, omdat ik liever kleding maak dan koop.
 
 It's a pretty simple design, essentially a light variation of the [Brian block](/designs/brian) that it is based on.
 

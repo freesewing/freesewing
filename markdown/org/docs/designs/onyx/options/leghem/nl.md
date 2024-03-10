@@ -1,7 +1,7 @@
 ---
-title: "Leg hem"
+title: "Beenzoom"
 ---
 
-Controls how wide the hem going around the legs will be, as a multiple of the seam allowance. A hem of 2.5cm/1" is a common value.
+Bepaalt hoe breed de zoom rond de benen wordt, als een veelvoud van de naadtoeslag. Een zoom van 2,5 cm is een gebruikelijke waarde.
 
-Note: This option is only available if the _Leg ribbing_ option is set to 'hem.'
+Opmerking: Deze optie is alleen beschikbaar als de optie _Leg ribbing_ is ingesteld op 'zoom'.

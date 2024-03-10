@@ -6,7 +6,7 @@ title: "Jupe circulaire Sandy : Options de tissu"
 
 Une jupe en cercle est un vêtement très polyvalent et peut être fabriquée à partir d'une grande variété de tissus. Tout dépend de l'utilisation que tu veux en faire et du style que tu préfères.
 
-- Si tu souhaites une jupe de tous les jours, facile à laver, alors **Linen** et **Cotton** sont la solution.
+- If you wish for an everyday, easy to wash skirt then **Linen** and **Cotton** is the way to go.
 - Si tu cherches quelque chose de plus formel, tu peux essayer **Suiting Fabrics**.
 - Si tu veux quelque chose de chaud pour l'hiver, tu peux essayer **Wools**.
 - Si tu souhaites quelque chose de fluide qui se drape, tu peux essayer des matières légères comme **Chiffon**.

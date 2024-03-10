@@ -7,6 +7,7 @@ title: "Una Sanderella Celestial"
 designs:
   - "bella"
   - "arena"
+author: 13050
 ---
 
 Este vestido es un híbrido del [Bella body block](https://freesewing.org/designs/bella/) y del [Sandy circle skirt](https://freesewing.org/designs/sandy/). He estado llamando al combo Sanderella.

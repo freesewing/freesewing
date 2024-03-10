@@ -1,4 +1,4 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import {
   Point,
   Design,
@@ -27,8 +27,6 @@ import {
   pctBasedOn,
   generateStackTransform,
 } from '../src/index.mjs'
-
-const { expect } = chai
 
 describe('Utils', () => {
   it('Should find the intersection of two endless line segments', () => {

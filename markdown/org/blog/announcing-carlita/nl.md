@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Beeld je naast hem in, met een matchende jas."
 date: "2018-01-26"
 intro: "Deze is voor de dames - en ik heb het niet (alleen) over die foto van hartenbreker Benedict Cumberbatch bovenaan deze post."

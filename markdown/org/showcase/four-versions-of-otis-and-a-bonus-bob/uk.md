@@ -1,25 +1,26 @@
 ---
-title: "Four versions of Otis and a bonus Bob"
-caption: "An Otis baby romper and Bob bib"
+title: "Чотири версії Отіса та бонусний Боб"
+caption: "Дитячий комбінезон Otis і нагрудник Bob"
 date: 20231017
-intro: "Wouter made four versions of Otis for newborn Otis, and a Bob to complete the ensemble."
+intro: "Воутер зробив чотири версії Отіса для новонародженого Отіса, а також Боба для завершення ансамблю."
 designs:
   - "otis"
   - "боб"
-maker: Natalia
+maker: Наталя
+author: 132
 ---
 
-Wouter, the designer, made these:
+Дизайнер Воутер створив їх:
 
-> Four versions of otis. One with long sleeves, and one that is reversible (don’t try this; figuring out how seams go together and in which sequence causes headaches).
+> Чотири версії отиса. Один з довгими рукавами, а другий - двосторонній (не намагайтеся це зробити; від того, як шви з'єднуються і в якій послідовності, може боліти голова).
 
-We are head over heels for his adorable fabric choices. The cute baby doesn't hurt.
+Ми в захваті від його чудового вибору тканин. Милому малюку не боляче.
 
-![Otis on Otis](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-1/public "Otis on Otis")
+![Отіс на Отісі](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-1/public "Отіс на Отісі")
 
-![A polka dot Otis](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-2/public "A polka dot Otis")
+![Отіс в горошок](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-2/public "Отіс в горошок")
 
-![This Otis is out of this world](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-3/public "This Otis is out of this world")
+![Цей Отіс не з цього світу](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-3/public "Цей Отіс не з цього світу")
 
-![A view of the reverse](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-4/public "A view of the reverse")
+![Погляд з іншого боку](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-4/public "Погляд з іншого боку")
 

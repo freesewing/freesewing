@@ -7,6 +7,7 @@ title: "Une Sanderella céleste"
 designs:
   - "bella"
   - "sandy"
+author: 13050
 ---
 
 Cette robe est un hybride du bloc corporel [Bella](https://freesewing.org/designs/bella/) et de la jupe circulaire [Sandy](https://freesewing.org/designs/sandy/). J'ai appelé le combo Sanderella.

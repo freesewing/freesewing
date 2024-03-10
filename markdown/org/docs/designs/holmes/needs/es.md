@@ -17,7 +17,7 @@ Dependiendo del estilo, los lazos y botones son opcionales.
 
 - Si está haciendo Botellas de Ojo de Botón puede omitir los vínculos.
 - Si está haciendo Tie Ear Flaps puede omitir el botón.
-- Ties can also be made from fabric if you prefer ([see Holmes Cutting](/docs/designs/holmes/cutting/))
-- You can also use different width and type ribbons for the ties if you prefer.
+- Los lazos también se pueden hacer de tela si lo prefieres ([ver Holmes Cutting](/docs/designs/holmes/cutting/))
+- También puedes utilizar cintas de diferente anchura y tipo para los lazos si lo prefieres.
 
 </Note>

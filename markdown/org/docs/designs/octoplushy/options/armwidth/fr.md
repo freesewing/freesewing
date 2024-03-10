@@ -1,5 +1,5 @@
 ---
-title: "Arm Width"
+title: "Largeur du bras"
 ---
 
-The setting adjusts the width of the arms.
+Ce réglage permet d'ajuster la largeur des bras.

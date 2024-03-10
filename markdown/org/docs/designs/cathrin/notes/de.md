@@ -1,12 +1,12 @@
 ---
-title: "Cathrin corset: Designer Notes"
+title: "Cathrin Korsett: Designer Notes"
 ---
 
-Cathrin is a side-effect of a project that never went anywhere.
+Cathrin ist ein Nebeneffekt eines Projekts, das nie zustande kam.
 
-I was going to make an elaborate dress, and I needed a corset to wear under it. So I did some research online, and I found [this tutorial by Cathrin Åhlén](https://katafalk.wordpress.com/2010/06/24/underbust-pattern-tutorial/) on drafting an underbust corset.
+Ich wollte ein aufwändiges Kleid nähen und brauchte ein Korsett, das ich darunter tragen konnte. So I did some research online, and I found [this tutorial by Cathrin Åhlén](https://katafalk.wordpress.com/2010/06/24/underbust-pattern-tutorial/) on drafting an underbust corset.
 
-So, I essentially implemented those instructions in code, and the rest is history as the original project got abaondoned.
+So, I essentially implemented those instructions in code, and the rest is history as the original project got abandoned.
 
 This design is named `cathrin` after Cathrin Åhlén who taught me (and others) how to draft such a thing.
 

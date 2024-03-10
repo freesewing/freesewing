@@ -1,7 +1,35 @@
 # Change log for: @freesewing/core
 
 
-## 3.0.0 (2022-09-30)
+## 3.2.0 (2024-02-11)
+
+### Added
+
+ - Added the `Path.combine()` method
+ - The `Path.join()` method is now variadic
+ - The `Path.length()` now takes an parameter to include move operations in the length calculation
+
+### Deprecated
+
+ - Calling `Path.join` with a second parameter to indicate that the resulting paths most be closed is now deprecated and will be removed in FreeSewing v4.
+
+## 3.1.0 (2023-12-26)
+
+### Added
+
+ - Allow plugins to provide their own packing implementation
+ - Added named export `cbqc` which exports the constant to approximate a circle with Cubic Bézier curves
+ - Core will now set `activeMacro` in the store, keeping track of the running macro - Added the `generateMacroIds`, `getMacroIds`, and `removeMacroNodes` store methods
+
+### Fixed
+
+ - Fix order in mergeOptions method so user settings take precendence over defaults
+ - Fix upward snap for snapped percentage option when snap is a simple number
+ - The conditional loading of plugins had a bug causing them to never be loaded
+ - Make Path.split() more robust when handling edge-case. Fixes
+ - Prevent utils.circlesIntersect() from running sqrt on a negative number. Fixes
+
+## 3.0.0 (2023-09-30)
 
 ### Changed
 

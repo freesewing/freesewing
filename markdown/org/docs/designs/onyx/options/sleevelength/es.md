@@ -2,9 +2,9 @@
 title: "Longitud de la manga"
 ---
 
-Controls how long the sleeves of your garment will be.
- - 15-30% will make short sleeves.
- - 75% will make three-quarter sleeves.
- - 100% will make long sleeves, stopping at the wrist.
- - 115% will make sleeves covering the knuckles, and is appropriate if using thumb holes.
+Controla la longitud de las mangas de tu prenda.
+ - El 15-30% hará mangas cortas.
+ - El 75% hará mangas tres cuartos.
+ - El 100% hará mangas largas, parando en la muñeca.
+ - El 115% hará que las mangas cubran los nudillos, y es adecuado si se utilizan agujeros para los pulgares.
 

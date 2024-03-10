@@ -1,7 +1,13 @@
 # Change log for: @freesewing/plugin-i18n
 
 
-## 3.0.0 (2022-09-30)
+## 3.2.0 (2024-02-11)
+
+### Added
+
+ - This plugin now supports translation of nested arrays of strings, giving you more flexibility to concatenate translated parts of strings
+
+## 3.0.0 (2023-09-30)
 
 ### Changed
 

@@ -1,11 +1,13 @@
-hour: hour
-hours: hours
-day: day
+hour: heure
+hours: heures
+day: jour
 days: jours
-month: month
+month: mois
 months: mois
 year: année
 years: années
 oneDay: un jour
+oneHour: une heure
 lessThanADay: moins d'un jour
+lessThanAnHour: moins d'une heure
 ago: il y a

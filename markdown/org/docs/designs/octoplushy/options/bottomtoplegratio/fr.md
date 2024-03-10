@@ -1,8 +1,10 @@
 ---
-title: "Rapport entre le bas et le haut de la jambe"
+title: Rapport entre le bas et le haut de la jambe
 ---
 
-Ce paramètre permet de régler le rapport entre le haut et le bas des jambes. Plus le rapport est faible, plus le tissu sera associé à la partie supérieure de la jambe. 100% rend le haut et le bas identiques.
+Ce paramètre permet de régler le rapport entre le haut et le bas des jambes.
+Plus le rapport est faible, plus le tissu sera associé à la partie supérieure de la jambe.
+100% rend le haut et le bas identiques.
 
 ## Effet de cette option sur le motif
 

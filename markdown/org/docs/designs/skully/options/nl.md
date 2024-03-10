@@ -1,5 +1,5 @@
 ---
-title: "Skully: Design Options"
+title: "Skully: Ontwerpopties"
 ---
 
 <DesignOptions design='skully' />

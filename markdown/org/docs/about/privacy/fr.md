@@ -1,14 +1,14 @@
 ---
-title: Avis de confidentialité de FreeSewing
+title: Politique de confidentialité de FreeSewing
 ---
 
-**Last update**: 13 August 2023
+**Dernière mise à jour**: 13 août 2023
 
-Cette politique de confidentialité décrit les données personnelles que nous stockons. It outlines why we need the data, how long we keep it, and whether we share it with any third-parties (we do not).
+Cette politique de confidentialité décrit les données personnelles que nous stockons. Elle explique pourquoi nous avons besoin de ces données, combien de temps nous les conservons et si nous les partageons avec des tiers (ce n'est pas le cas).
 
-Nous sommes convaincus que ça prouve notre engagement en faveur de la protection de la vie privée.
+Nous sommes convaincus que ça prouvera notre engagement en faveur de la protection de la vie privée.
 
-Pour plus de clarté, nous avons divisé ceci en trois types de rôles différents :
+Pour plus de clarté, nous l'avons divisée ceci en trois types de rôles :
 
 - Pour **les visiteurs de notre site**, nous stockons **[les données des visiteurs][v]**
 - Pour **les abonnés à notre newsletter**, nous stockons **[les données d'abonné][s]**
@@ -17,23 +17,23 @@ Pour plus de clarté, nous avons divisé ceci en trois types de rôles différen
 ## Comment nous utilisons vos données de visiteur
 
 <Note>
-This data is stored for anybody who visits our website and connects to our backend APIs.
+Ces données sont stockées pour toute personne qui visite notre site web et se connecte à nos API.
 </Note>
 
 ##### Quelles sont les données personnelles que nous stockons ?
 
 - Votre adresse IP
 
-##### Why do we need this data?
+##### Pourquoi avons-nous besoin de ces données ?
 
-- To protect ourselves from abuse.
-- We use the IP address only to blacklist malicious or abusive clients or investigate security incidents.
+- Pour nous protéger contre les abus.
+- Nous utilisons l'adresse IP uniquement pour établir une liste noire des clients malveillants ou abusifs ou pour enquêter sur les incidents de sécurité.
 
-##### How long do we keep this data?
+##### Combien de temps conservons-nous ces données ?
 
 - Nous ne conservons pas ces logs plus de 6 mois.
 
-##### Do we share this data?
+##### Est-ce que nous partageons ces données ?
 
 - Non, jamais
 
@@ -44,7 +44,7 @@ This data is stored for anybody who visits our website and connects to our backe
 
 Ces données sont conservées pour toute personne qui s’abonne à notre newsletter.
 
-Pour les personnes ayant un compte sur le site qui activent l'abonnement à la newsletter dans leurs paramètres de compte, nous ne stockons pas de données personnelles supplémentaires car nous avons déjà leur e-mail dans leur [données de compte][a].
+Pour les personnes ayant un compte sur le site qui activent l'abonnement à la newsletter dans leurs paramètres de compte, nous ne stockons pas de données personnelles supplémentaires car nous avons déjà leur e-mail dans leurs [données de compte][a].
 
 </Note>
 
@@ -75,26 +75,26 @@ Ces données sont stockées pour toute personne ayant un compte sur notre site W
 
 - Votre adresse e-mail
 - Votre nom d'utilisateur et votre mot de passe
-- Body measurements and a (freely chosen) name for any measurements set of pattern you store in your account.
-- Optional: A profile picture, bio, and your GitHub username. An image and notes for each measurements set or pattern stored in your account.
+- Les mesures du corps et un nom (librement choisi) pour tout ensemble de mesures du patron que tu stockes dans ton compte.
+- Facultatif : Une photo de profil, une bio et ton nom d'utilisateur GitHub. Une image et des notes pour chaque jeu de mesures ou motif stocké dans ton compte.
 
 ##### Pourquoi en avons-nous besoin ?
 
 - Pour vous authentifier
 - Pour être en mesure de vous contacter si nécessaire
-- To be able to generate made-to-measure sewing patterns for you
+- Pour pouvoir générer des patrons de couture sur mesure pour toi
 
 ##### Combien de temps les gardons-nous ?
 
-- Until your remove your account, or until at least 12 months after the last time you connected to our backend.
-- We will always contact you prior to removing any inactive data.
+- Jusqu'à ce que tu supprimes ton compte, ou jusqu'à au moins 12 mois après la dernière fois que tu t'es connecté à notre backend.
+- Nous te contacterons toujours avant de supprimer toute donnée inactive.
 
 ##### La partageons-nous ?
 
 - Non, jamais.
 
 
-## Other info relevant to this privacy notice
+## Autres informations relatives à cette politique de confidentialité
 
 ### Utilisation par les mineurs de moins de 16 ans
 
@@ -108,7 +108,7 @@ Pour toute question concernant cette politique de confidentialité, vous pouvez 
 
 Cette politique peut être mise à jour occasionnellement. Nous l'indiquerons dans la date de **Dernière mise à jour** en haut de ce document.
 
-Un aperçu plus complet de l'historique de ce document est [disponible sur GitHub][1]
+Un aperçu plus complet de l'histoire de ce document est [disponible sur GitHub][1]
 
 ### Devoir de transparence
 
@@ -118,29 +118,29 @@ Si vous pensez que vos données personnelles ont été compromises, veuillez con
 
 ### Prestataires de services
 
-Our hosting providers manage various components of our infrastructure us. Cela inclut l'hébergement, le stockage et la sauvegarde.
+Nos fournisseurs d'hébergement gèrent divers composants de notre infrastructure pour nous. Cela inclut l'hébergement, le stockage et la sauvegarde.
 
-Bien que cela signifie qu'ils traitent vos données (au sens strict du mot), ils n'ont pas besoin d'accéder à des informations vous concernant. De plus, comme nous chiffrons les données de profil, ça ne leur sert à rien d'y accéder même s'ils le souhaitent.
+Bien que cela signifie qu'ils traitent vos données (au sens strict du mot), ils n'ont pas besoin d'accéder à des informations vous concernant. De plus, comme nous chiffrons les données de profil, c'est très difficile pour eux d'y accéder même s'ils le souhaitent.
 
-### Warrant canaries
+### Déclaration de non injonction
+
+Bien que nous n'ayons aucune intention de partager vos données personnelles, nous ne sommes pas au-dessus des lois.
 
 Si la loi nous oblige à le faire, ou si nous pensons que ce serait un moindre mal, nous divulguerons des données personnelles.
 
-Si la loi nous oblige à le faire, ou si nous pensons que ce serait un moindre mal, nous divulguerons des données personnelles.
+Jusqu'à présent :
 
-So far:
-
-- FreeSewing has never turned over our encryption or authentication keys or our customers' encryption or authentication keys to anyone.
-- FreeSewing has never installed any law enforcement software or equipment anywhere on our infrastructure.
-- FreeSewing has never provided any law enforcement organization personal data of any of our users or visitors.
-- FreeSewing has never weakened, compromised, or subverted any of its encryption at the request of law enforcement or another third party.
+- FreeSewing n'a jamais transmis à qui que ce soit nos clés de cryptage ou d'authentification, ni les clés de cryptage ou d'authentification de nos clients.
+- FreeSewing n'a jamais installé de logiciel ou d'équipement d'application de la loi sur son infrastructure.
+- FreeSewing n'a jamais fourni à un organisme chargé de l'application de la loi les données personnelles de l'un de nos utilisateurs ou visiteurs.
+- FreeSewing n'a jamais affaibli, compromis ou subverti l'un de ses cryptages à la demande des forces de l'ordre ou d'un autre tiers.
 
 ### Voir aussi
 
 - [Vos droits][2]
 - [Votre consentement][3]
 
-[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
+[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/about/privacy
 
 [2]: /docs/about/rights/
 

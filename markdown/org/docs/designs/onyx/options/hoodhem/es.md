@@ -1,7 +1,7 @@
 ---
-title: "Hood hem"
+title: "Dobladillo de la capucha"
 ---
 
-Controls how wide the hem going around the front of the hood will be, as a multiple of the seam allowance. A hem of 2.5cm/1" is a common value.
+Controla la anchura del dobladillo que rodea la parte delantera de la capucha, como múltiplo del margen de costura. Un dobladillo de 2,5 cm/1" es un valor común.
 
-Note: This option is only available if the 'neck style' option is set to 'hood.'
+Nota: Esta opción sólo está disponible si la opción "estilo de cuello" está configurada como "capucha".

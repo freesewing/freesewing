@@ -1,7 +1,7 @@
 ---
-title: "Skirt width"
+title: "Ширина спідниці"
 ---
 
-Controls the width of the skirt at the bottom, as a percentage of the waist measurement.
+Контролює ширину спідниці внизу, у відсотках від обхвату талії.
 
-The top of the skirt is cut to the same width, and gathered around the waist. As such, a large value for this option will make a more heavily gathered skirt that is wide at the bottom.
+Верхню частину спідниці підрізають до тієї ж ширини і збирають навколо талії. Таким чином, велике значення для цього варіанту матиме більш сильно зібрана спідниця, яка буде широкою внизу.

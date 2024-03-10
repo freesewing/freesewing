@@ -10,8 +10,8 @@ Diese Option steuert den Versatz im ersten Quadranten der Ärmel.
 
 <Tip>
 
-See [understanding the sleevecap](/docs/designs/brian/options#understanding-the-sleevecap) for an in-depth
-look into how the sleevecap is constructed and the influence of the different options on its shape.
+Unter [understanding the sleevecap](/docs/designs/brian/options#understanding-the-sleevecap) findest du unter
+einen detaillierten Einblick in die Konstruktion der Sleevecap und den Einfluss der verschiedenen Optionen auf ihre Form.
 
 </Tip>
 

@@ -1,8 +1,8 @@
 ---
-title: "Fly guard width"
+title: "Anchura del guardabarros"
 ---
 
 ***
 
-Controls the width of fly guard.
+Controla la anchura de la protección antimoscas.
 

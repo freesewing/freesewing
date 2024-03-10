@@ -1,5 +1,5 @@
 ---
-title: "Gozer the ghost: Required Measurements"
+title: "Gozer de geest: vereiste afmetingen"
 ---
 
 <DesignMeasurements design='gozer' />

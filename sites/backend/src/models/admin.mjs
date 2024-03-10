@@ -12,7 +12,7 @@ export function AdminModel(tools) {
    */
   return decorateModel(this, tools, {
     name: 'admin',
-    models: ['user'],
+    models: ['user', 'subscriber', 'pattern', 'set'],
   })
 }
 
@@ -27,7 +27,7 @@ AdminModel.prototype.searchUsers = async function ({ body, user }) {
   /*
    * Enforce RBAC
    */
-  if (!this.rbac.admin(user)) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.support(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   /*
    * Attempt to read the record from the database
@@ -48,7 +48,7 @@ AdminModel.prototype.loadUser = async function ({ params, user }) {
   /*
    * Enforce RBAC
    */
-  if (!this.rbac.admin(user)) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.support(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   /*
    * Is id set?
@@ -58,7 +58,10 @@ AdminModel.prototype.loadUser = async function ({ params, user }) {
   /*
    * Attempt to load the user from the database
    */
-  await this.User.read({ id: Number(params.id) })
+  await this.User.read(
+    { id: Number(params.id) }
+    //{ patterns: true, sets: true, apikeys: true, bookmarks: true }
+  )
 
   /*
    * If the user cannot be found, return 404
@@ -66,9 +69,15 @@ AdminModel.prototype.loadUser = async function ({ params, user }) {
   if (!this.User.record) return this.setResponse(404)
 
   /*
+   * Also fetch patterns and sets
+   */
+  const patterns = await this.Pattern.userPatterns(this.User.record.id)
+  const sets = await this.Set.userSets(this.User.record.id)
+
+  /*
    * Return 200 and user data
    */
-  return this.setResponse200({ user: this.User.asAccount() })
+  return this.setResponse200({ user: this.User.asAccount(), patterns, sets })
 }
 
 /*
@@ -171,4 +180,45 @@ AdminModel.prototype.impersonateUser = async function ({ params, user }) {
    * Return 200, token, and data
    */
   return this.User.signInOk()
+}
+
+/*
+ * Loads (the emails of) all newsletter subscribers
+ *
+ * @param {user} object - The user as loaded by auth middleware
+ * @returns {AdminModel} object - The AdminModel
+ */
+AdminModel.prototype.getSubscribers = async function ({ user }) {
+  /*
+   * Enforce RBAC
+   */
+  if (!this.rbac.support(user)) return this.setResponse(403, 'insufficientAccessLevel')
+
+  const all = {}
+
+  /*
+   * Load all subscribers from the database
+   */
+  const subscribers = await this.Subscriber.search()
+
+  /*
+   * Load all subscribed users from the database
+   */
+  let users
+  try {
+    users = await this.prisma.user.findMany({ where: { newsletter: true } })
+  } catch (err) {
+    console.log(err)
+  }
+
+  for (const sub of [...subscribers, ...users]) {
+    const email = await this.decrypt(sub.email)
+    if (typeof all[sub.language] === 'undefined') all[sub.language] = []
+    all[sub.language].push({ email, ehash: sub.ehash })
+  }
+
+  /*
+   * Return 200, and subscriber list
+   */
+  return this.setResponse200({ subscribers: all })
 }

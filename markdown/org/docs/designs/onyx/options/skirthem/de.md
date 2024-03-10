@@ -1,5 +1,5 @@
 ---
-title: "Skirt hem"
+title: "Rocksaum"
 ---
 
-Sets the hem allowance of the hem along the bottom of the skirt, as a multiple of the seam allowance.
+Legt die Saumzugabe des Saums entlang der Unterseite des Rocks fest, als Vielfaches der Nahtzugabe.

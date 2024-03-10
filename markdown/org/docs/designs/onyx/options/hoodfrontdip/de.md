@@ -2,4 +2,4 @@
 title: "Hoodfrontdip"
 ---
 
-Controls far down the front of the hood drops over the forehead. Larger values work best with lightweight/flexible fabrics.
+Bei Kontrollen weit unten fällt die Vorderseite der Kapuze über die Stirn. Größere Werte funktionieren am besten bei leichten/flexiblen Stoffen.

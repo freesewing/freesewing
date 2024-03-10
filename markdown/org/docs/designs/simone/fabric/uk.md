@@ -6,6 +6,6 @@ title: "Сорочка Simone: Варіанти тканин"
 
 Симона - це наш [візерунок Симона] (/designs/simon/), адаптований для грудей.
 
-Please refer to [the Simon documentation](/docs/designs/simon/).
+Будь ласка, зверніться до [документації Simon] (/docs/designs/simon/).
 
 </Note>

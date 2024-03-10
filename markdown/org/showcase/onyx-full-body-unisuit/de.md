@@ -1,17 +1,18 @@
 ---
-title: "A Onyx full-body unisuit"
-caption: "Mirror selfie of this onyx body suit"
+title: "A Onyx Ganzkörperanzug"
+caption: "Spiegel-Selfie von diesem Onyx-Körperanzug"
 date: 20231101
-intro: "A blue full-body Onyx unisuit by Thrunic"
+intro: "Ein blauer Onyx-Ganzkörperanzug von Thrunic"
 designs:
   - "onyx"
 maker: joost
+author: 33070
 ---
 
-This is a full-body Onyx unisuit by Thrunic who created [the Onyx design](/designs/onyx). They write:
+Dies ist ein Onyx-Ganzkörperanzug von Thrunic, der [das Onyx-Design](/designs/onyx)entworfen hat. Sie schreiben:
 
-> *A new Onyx full-body unisuit. It's got a hood, long sleeves with thumb holes, and long legs. It's fully lined except for the sleeves. It looks a lot like a wetsuit.*
+> *Ein neuer Onyx-Ganzkörperanzug. Sie hat eine Kapuze, lange Ärmel mit Daumenlöchern und lange Beine. Es ist bis auf die Ärmel komplett gefüttert. Er sieht einem Neoprenanzug sehr ähnlich.*
 > 
-> *I took it for a test swim in the cool waters around here, and it certainly does confer some warmth, though not nearly as much as a real wetsuit. I think it would work best as a garment for boating or other activities where you'll both get wet and a lot of sun exposure. It's not particularly warm when dry, but doesn't lose much insulation when it gets wet.*
+> *Ich habe ihn beim Testschwimmen in den kühlen Gewässern hier in der Gegend ausprobiert und er wärmt tatsächlich etwas, wenn auch nicht so sehr wie ein echter Neoprenanzug. Ich denke, es eignet sich am besten als Kleidungsstück für Bootstouren oder andere Aktivitäten, bei denen du nass wirst und viel Sonne abbekommst. Im trockenen Zustand ist sie nicht besonders warm, aber wenn sie nass wird, verliert sie nicht viel an Isolierung.*
 
 

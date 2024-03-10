@@ -1,17 +1,17 @@
 ---
-title: "Onyx One-piece: Designer Notes"
+title: "Onyx eendelig: Opmerkingen van de ontwerper"
 ---
 
-Onyx is my second design. Like Shelly, the design was made to address a need for sensory compression garments (related to autism), as well as the difficulty in finding sleeved and legged gender-neutral one-piece swimsuits sized for adults.
+Onyx is mijn tweede ontwerp. Net als Shelly is het ontwerp gemaakt om te voorzien in een behoefte aan sensorische compressiekleding (in verband met autisme) en de moeilijkheid om genderneutrale eendelige zwempakken met mouwen en benen te vinden voor volwassenen.
 
-What started as a swimsuit/unisuit design turned into a more general design capable of making other forms of casual or athletic one-piece outfits. I've made one-piece pajamas with the Onyx design, and the design should be capable of making simple rompers (such as pajamas rompers), leotards, and unitards, as these garments all share the same general form, varying in fabric, ease, and sleeve/leg length more than in their core design. Options for ribbed cuffs were added to aid in making pajamas with the design, and pajamas were also a major reason for the addition of the optional hood (sun protection is the other reason).
+Wat begon als een zwempak/unisuit ontwerp veranderde in een meer algemeen ontwerp waarmee andere vormen van casual of sportieve eendelige outfits gemaakt kunnen worden. Ik heb pyjama's uit één stuk gemaakt met het Onyx ontwerp en het ontwerp zou in staat moeten zijn om eenvoudige rompertjes (zoals pyjama rompertjes), gympen en unitards te maken, omdat deze kledingstukken allemaal dezelfde algemene vorm hebben en meer variëren in stof, lengte en mouw/beenlengte dan in hun kernontwerp. Opties voor geribde boorden werden toegevoegd om te helpen bij het maken van pyjama's met het ontwerp, en pyjama's waren ook een belangrijke reden voor de toevoeging van de optionele capuchon (zonbescherming is de andere reden).
 
-The skirt was added in for modesty, primarily for the swimwear, though it does allow the Onyx design to be used to make gathered dresses with built-in shorts.
+De rok is toegevoegd voor bescheidenheid, voornamelijk voor de zwemkleding, maar het maakt het ook mogelijk om het Onyx ontwerp te gebruiken om jurken met ingebouwde shorts te maken.
 
-Onyx does copy a number of Shelly's features, including raglan sleeves for mobility and the use of symmetrical front and back parts, except for the neck and head.
+Onyx kopieert een aantal kenmerken van Shelly, zoals raglanmouwen voor mobiliteit en het gebruik van symmetrische voor- en achterkant, behalve de nek en het hoofd.
 
-Onyx is named after the gemstone and its deep black color, which not coincidentially is a great base color for Onyx swimsuits, particularly if one wants them to look like a wetsuit.
+Onyx is named after the gemstone and its deep black color, which not coincidentally is a great base color for Onyx swimsuits, particularly if one wants them to look like a wetsuit.
 
-A bit of history: Onyx may never have been born had it not been for the anti-LGBTQ+ protests and boycotts in the spring of 2023, which led to a unisuit that I particularly liked being pulled from the shelves of a major US retailer, and me needing a suitable replacement.
+Een stukje geschiedenis: Onyx was misschien nooit geboren als er geen anti-LGBTQ+ protesten en boycots waren geweest in het voorjaar van 2023, waardoor een unisuit dat ik erg leuk vond uit de schappen van een grote Amerikaanse winkel werd gehaald en ik een geschikte vervanging nodig had.
 
 Thrunic

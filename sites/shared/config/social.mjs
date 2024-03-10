@@ -7,4 +7,5 @@ export const social = {
   GitHub: 'https://github.com/freesewing',
   Reddit: 'https://www.reddit.com/r/freesewing/',
   Mastodon: 'https://freesewing.social/@freesewing',
+  Bluesky: 'https://bsky.app/profile/freesewing.org',
 }

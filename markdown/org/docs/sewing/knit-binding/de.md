@@ -111,28 +111,28 @@ Auf diese Weise erraten wir nicht, wie lange Ihre Bindung sein sollte, und die b
 
 > Für detaillierte Anweisungen, schaue dir [die Aaron-Dokumentation](/docs/designs/aaron/instructions)
 
-## Alternate method
+## Alternative Methode
 
-While the above instructions describe one way to attach a knit band or knit binding, it is not the only method that can be used. An alternate method is to cut the exact amount of binding needed, sew it into a ring, and then attach the ring to the garment opening.
+Die obige Anleitung beschreibt zwar eine Möglichkeit, ein Strickband oder eine Strickbindung anzubringen, aber das ist nicht die einzige Methode, die verwendet werden kann. Eine alternative Methode besteht darin, genau die benötigte Menge an Bindeband zuzuschneiden, in einen Ring zu nähen und diesen dann an der Öffnung des Kleidungsstücks zu befestigen.
 
-Some people feel that this is an easier method for novice sewists. They are told exactly how much binding to use, and they do not have to guess how much they should be stretching the binding as they sew.
+Manche Menschen sind der Meinung, dass dies eine einfachere Methode für Nähanfängerinnen ist. Ihnen wird genau gesagt, wie viel Bindung sie verwenden sollen, und sie müssen nicht raten, wie stark sie die Bindung beim Nähen dehnen sollen.
 
-1. Measure the garment opening that the binding will cover. Be sure to measure at the seamline, to account for seam allowance.
+1. Miss die Öffnung des Kleidungsstücks ab, die der Einband bedecken soll. Achte darauf, an der Nahtlinie zu messen, um die Nahtzugabe zu berücksichtigen.
 
-2. Check the pattern instructions for the length of binding to use. Or, use a length 80-90% smaller than the opening based on the stretchiness of the binding fabric. (For example, 80% for very stretchy fabric, 90% for less stretchy fabric.)
+2. Schau in der Anleitung des Musters nach, wie lang die Bindung sein muss. Oder du nimmst eine Länge, die 80-90% kleiner ist als die Öffnung, je nachdem, wie dehnbar der Einbandstoff ist . (Zum Beispiel 80% für sehr dehnbaren Stoff, 90% für weniger dehnbaren Stoff). (Zum Beispiel 80% für sehr dehnbaren Stoff, 90% für weniger dehnbaren Stoff).
 
-3. Cut the length of binding required plus seam allowance at each end.
+3. Schneide die benötigte Länge des Einfassbandes plus Nahtzugabe an beiden Enden ab.
 
-4. Sew the binding ends right sides together to form a closed loop or ring. Trim excess seam allowance.
+4. Näht die Enden der Bindung rechts auf rechts zu einer geschlossenen Schlaufe oder einem Ring zusammen. Schneide die überschüssige Nahtzugabe zurück.
 
-5. Fold the ring together at the seam to divide the ring into equal halves. Mark or insert pins at each end fold. One pin will be in the seam, and the other will mark the halfway point around the ring.
+5. Falte den Ring an der Naht zusammen und teile ihn in zwei gleiche Hälften. Markiere oder stecke Stecknadeln an jeder Endfalte ein. Eine Stecknadel wird in die Naht gesteckt und die andere markiert den halben Punkt um den Ring.
 
-6. Unfold the ring and fold it again into equal halves so the two marks/pins meet together in the middle. Again mark or insert pins into each end fold. Now there are 4 pins or marks dividing the ring into 4 quarters of equal length.
+6. Klappe den Ring auf und falte ihn erneut in zwei gleiche Hälften, sodass sich die beiden Markierungen/Stifte in der Mitte treffen. Markiere oder stecke wieder Stecknadeln in jede Endfalte. Jetzt gibt es 4 Stifte oder Markierungen, die den Ring in 4 gleich lange Viertel unterteilen.
 
-7. Similarly, fold the garment opening and mark or insert pins to divide the garment opening into 4 quarters of equal length.
+7. Falte auch die Öffnung des Kleidungsstücks und markiere oder stecke Stecknadeln ein, um die Öffnung des Kleidungsstücks in 4 gleich lange Viertel zu unterteilen.
 
-8. Match the marks or pins on the binding with the ones on the garment opening. (Try to align it so the seam is at the most inconspicuous location in the garment opening. For example, if binding a neck opening align the binding so the seam is at the back of the neck opening.)
+8. Passe die Markierungen oder Stecknadeln auf dem Einband mit denen auf der Öffnung des Kleidungsstücks ab. (Versuche, sie so auszurichten, dass sich die Naht an der unauffälligsten Stelle in der Kleidungsöffnung befindet. Wenn du z.B. einen Halsausschnitt bindest, richte die Bindung so aus, dass die Naht auf der Rückseite des Halsausschnitts liegt).
 
-9. Pin the binding ring to the garment opening at each quarter mark/pin. This ensures that the binding is evenly distributed around the garment opening.
+9. Stecke den Bindering an der Öffnung des Kleidungsstücks an jeder Viertelmarkierung/Nadel fest. Dadurch wird sichergestellt, dass die Bindung gleichmäßig um die Öffnung des Kleidungsstücks verteilt wird.
 
-10. Sew the binding to the opening, one quarter at a time. While sewing, evenly stretch each quarter segment of binding to match the length of the quarter segment of garment opening.
+10. Näht die Bindung an die Öffnung, ein Viertel nach dem anderen. Dehne beim Nähen jedes Viertelsegment des Einfassbandes gleichmäßig, so dass es der Länge des Viertelsegments der Kleidungsöffnung entspricht.

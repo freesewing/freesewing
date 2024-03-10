@@ -1,5 +1,5 @@
 ---
-title: "Bottom Arm Reduction"
+title: "Vermindering onderarm"
 ---
 
-This setting adjusts the difference in length between the top and the bottom fabric of the arms for the Octopus and Squid styles. The bigger the difference, the more the arms will want to curl.
+Deze instelling past het verschil in lengte aan tussen de bovenste en onderste stof van de armen voor de Octopus en Squid stijlen. Hoe groter het verschil, hoe meer de armen zullen willen krullen.

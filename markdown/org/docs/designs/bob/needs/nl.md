@@ -1,5 +1,5 @@
 ---
-title: "Bob the Bib: What You Need"
+title: "Bob de Slab: Wat je nodig hebt"
 ---
 
 Om Bob te maken heb je het volgende nodig:

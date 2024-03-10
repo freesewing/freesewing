@@ -1,7 +1,7 @@
 ---
-title: "Skirt waistband"
+title: "Пояс спідниці"
 ---
 
-Sets the width of the waistband along the top of the skirt, as a multiple of the seam allowance..
+Задає ширину пояса вздовж верхньої частини спідниці, кратну припуску на шов.
 
-The waistband is a single fold hem that is topstitched into the main garment around the waist. The fold serves to hide and finish the top edge. It only needs to be wide enough to allow the topstitching to secure the skirt in place.
+Пояс - це підшивка в одну складку, яка вшивається в основний виріб навколо талії. Складка слугує для того, щоб приховати та оздобити верхній край. Вона повинна бути достатньо широкою, щоб верхня строчка могла закріпити спідницю на місці.

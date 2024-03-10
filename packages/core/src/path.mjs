@@ -267,6 +267,16 @@ Path.prototype.close = function () {
 }
 
 /**
+ * Combines one or more Paths into a single Path instance
+ *
+ * @param {array} paths - The paths to combine
+ * @return {Path} combo - The combined Path instance
+ */
+Path.prototype.combine = function (...paths) {
+  return __combinePaths(this, ...paths)
+}
+
+/**
  * Adds a curve operation via cp1 & cp2 to Point to
  *
  * @param {Point} cp1 - The start control Point
@@ -512,28 +522,63 @@ Path.prototype.intersectsY = function (y) {
 /**
  * Joins this Path with that Path, and closes them if wanted
  *
- * @param {Path} that - The Path to join this Path with
- * @param {bool} closed - Whether or not to close the joint Path
+ * The legacy (prior to v3.2) form of this method too two parameters:
+ *   - The Path to join this path with
+ *   - A boolean expressing whether the joined path should be closed
+ * In retrospect, that was kind of a dumb idea, because if the path
+ * needs tobe closed, you can juse chain the .join() with a .close()
+ *
+ * So now, this method is variadic, and it will join as many paths as you want.
+ * However, we keep it backwards compatible, and raise a deprecation warning when used that way.
+ *
+ * @param {array} paths - The Paths to join this Path with
  * @return {Path} joint - The joint Path instance
  */
-Path.prototype.join = function (that, closed = false) {
-  if (that instanceof Path !== true)
+Path.prototype.join = function (...paths) {
+  if (paths.length < 1) {
     this.log.error('Called `Path.join(that)` but `that` is not a `Path` object')
-  return __joinPaths([this, that], closed)
+    return this
+  }
+
+  /*
+   * Check for legacy signature
+   */
+  if (paths.length === 2 && [true, false].includes(paths[1])) {
+    this.log.warn(
+      '`Path.join()` was called with the legacy signature passing a bool as second parameter. This is deprecated and will be removed in FreeSewing v4'
+    )
+    return paths[1] ? __joinPaths([this, paths[0]]).close() : __joinPaths([this, paths[0]])
+  }
+
+  /*
+   * New variadic approach
+   */
+  let i = 0
+  for (const path of paths) {
+    if (path instanceof Path !== true)
+      this.log.error(
+        `Called \`Path.join(paths)\` but the path with index \`${i}\` is not a \`Path\` object`
+      )
+    i++
+  }
+
+  return __joinPaths([this, ...paths])
 }
 
 /**
  * Return the length of this Path
  *
+ * @param {bool} withMoves - Include length of move operations inside the path
  * @return {float} length - The length of this path
  */
-Path.prototype.length = function () {
+Path.prototype.length = function (withMoves = false) {
   let current, start
   let length = 0
   for (let i in this.ops) {
     let op = this.ops[i]
     if (op.type === 'move') {
-      start = op.to
+      if (typeof start === 'undefined') start = op.to
+      else if (withMoves) length += current.dist(op.to)
     } else if (op.type === 'line') {
       length += current.dist(op.to)
     } else if (op.type === 'curve') {
@@ -802,78 +847,67 @@ Path.prototype.split = function (point) {
   let secondHalf = []
   for (let pi = 0; pi < divided.length; pi++) {
     let path = divided[pi]
+    if (path.ops[0].to.sitsRoughlyOn(point)) {
+      divided[pi].ops[0].to = point.copy()
+      if (pi > 0) {
+        divided[pi - 1].ops[1].to = point.copy()
+      }
+      firstHalf = divided.slice(0, pi)
+      secondHalf = divided.slice(pi)
+      break
+    }
     if (path.ops[1].type === 'line') {
-      if (path.ops[0].to.sitsRoughlyOn(point)) {
-        secondHalf.push(new Path().__withLog(this.log).move(path.ops[0].to).line(path.ops[1].to))
-      } else if (path.ops[1].to.sitsRoughlyOn(point)) {
-        firstHalf.push(new Path().__withLog(this.log).move(path.ops[0].to).line(path.ops[1].to))
-      } else if (pointOnLine(path.ops[0].to, path.ops[1].to, point)) {
+      if (pointOnLine(path.ops[0].to, path.ops[1].to, point)) {
         firstHalf = divided.slice(0, pi)
         firstHalf.push(new Path().__withLog(this.log).move(path.ops[0].to).line(point))
         pi++
         secondHalf = divided.slice(pi)
         secondHalf.unshift(new Path().__withLog(this.log).move(point).line(path.ops[1].to))
+        break
       }
     } else if (path.ops[1].type === 'curve') {
-      if (path.ops[0].to.sitsRoughlyOn(point)) {
-        secondHalf.push(
-          new Path()
-            .__withLog(this.log)
-            .move(path.ops[0].to)
-            .curve(path.ops[1].cp1, path.ops[1].cp2, path.ops[1].to)
+      let t = pointOnCurve(path.ops[0].to, path.ops[1].cp1, path.ops[1].cp2, path.ops[1].to, point)
+      if (t !== false) {
+        let curve = new Bezier(
+          { x: path.ops[0].to.x, y: path.ops[0].to.y },
+          { x: path.ops[1].cp1.x, y: path.ops[1].cp1.y },
+          { x: path.ops[1].cp2.x, y: path.ops[1].cp2.y },
+          { x: path.ops[1].to.x, y: path.ops[1].to.y }
         )
-      } else if (path.ops[1].to.sitsRoughlyOn(point)) {
+
+        let split = curve.split(t)
+        firstHalf = divided.slice(0, pi)
+
         firstHalf.push(
           new Path()
             .__withLog(this.log)
-            .move(path.ops[0].to)
-            .curve(path.ops[1].cp1, path.ops[1].cp2, path.ops[1].to)
+            .move(new Point(split.left.points[0].x, split.left.points[0].y))
+            .curve(
+              new Point(split.left.points[1].x, split.left.points[1].y),
+              new Point(split.left.points[2].x, split.left.points[2].y),
+              point.copy()
+            )
         )
-      } else {
-        let t = pointOnCurve(
-          path.ops[0].to,
-          path.ops[1].cp1,
-          path.ops[1].cp2,
-          path.ops[1].to,
-          point
+        pi++
+
+        secondHalf = divided.slice(pi)
+        secondHalf.unshift(
+          new Path()
+            .__withLog(this.log)
+            .move(point.copy())
+            .curve(
+              new Point(split.right.points[1].x, split.right.points[1].y),
+              new Point(split.right.points[2].x, split.right.points[2].y),
+              new Point(split.right.points[3].x, split.right.points[3].y)
+            )
         )
-        if (t !== false) {
-          let curve = new Bezier(
-            { x: path.ops[0].to.x, y: path.ops[0].to.y },
-            { x: path.ops[1].cp1.x, y: path.ops[1].cp1.y },
-            { x: path.ops[1].cp2.x, y: path.ops[1].cp2.y },
-            { x: path.ops[1].to.x, y: path.ops[1].to.y }
-          )
-          let split = curve.split(t)
-          firstHalf = divided.slice(0, pi)
-          firstHalf.push(
-            new Path()
-              .__withLog(this.log)
-              .move(new Point(split.left.points[0].x, split.left.points[0].y))
-              .curve(
-                new Point(split.left.points[1].x, split.left.points[1].y),
-                new Point(split.left.points[2].x, split.left.points[2].y),
-                new Point(split.left.points[3].x, split.left.points[3].y)
-              )
-          )
-          pi++
-          secondHalf = divided.slice(pi)
-          secondHalf.unshift(
-            new Path()
-              .__withLog(this.log)
-              .move(new Point(split.right.points[0].x, split.right.points[0].y))
-              .curve(
-                new Point(split.right.points[1].x, split.right.points[1].y),
-                new Point(split.right.points[2].x, split.right.points[2].y),
-                new Point(split.right.points[3].x, split.right.points[3].y)
-              )
-          )
-        }
+        break
       }
     }
   }
-  if (firstHalf.length > 0) firstHalf = __joinPaths(firstHalf, false)
-  if (secondHalf.length > 0) secondHalf = __joinPaths(secondHalf, false)
+
+  if (firstHalf.length > 0) firstHalf = __joinPaths(firstHalf)
+  if (secondHalf.length > 0) secondHalf = __joinPaths(secondHalf)
 
   return [firstHalf, secondHalf]
 }
@@ -957,9 +991,9 @@ Path.prototype.trim = function () {
           first = false
         }
         let joint
-        if (trimmedStart.length > 0) joint = __joinPaths(trimmedStart, false).join(glue)
+        if (trimmedStart.length > 0) joint = __joinPaths(trimmedStart).join(glue)
         else joint = glue
-        if (trimmedEnd.length > 0) joint = joint.join(__joinPaths(trimmedEnd, false))
+        if (trimmedEnd.length > 0) joint = joint.join(__joinPaths(trimmedEnd))
 
         return joint.trim()
       }
@@ -1199,6 +1233,20 @@ function __bbbbox(boxes) {
 }
 
 /**
+ * Combines path segments into a single path instance
+ *
+ * @private
+ * @param {Array} paths - An Array of Path objects
+ * @return {object} path - A Path instance
+ */
+function __combinePaths(...paths) {
+  const joint = new Path().__withLog(paths[0].log)
+  for (const path of paths) joint.ops.push(...path.ops)
+
+  return joint
+}
+
+/**
  * Returns an object holding topLeft and bottomRight Points of the bounding box of a curve
  *
  * @private
@@ -1219,10 +1267,9 @@ function __curveBoundingBox(curve) {
  *
  * @private
  * @param {Array} paths - An Array of Path objects
- * @param {bool} closed - Whether or not to close the joined paths
  * @return {object} path - A Path instance
  */
-function __joinPaths(paths, closed = false) {
+function __joinPaths(paths) {
   let joint = new Path().__withLog(paths[0].log).move(paths[0].ops[0].to)
   let current
   for (let p of paths) {
@@ -1242,7 +1289,6 @@ function __joinPaths(paths, closed = false) {
       if (op.to) current = op.to
     }
   }
-  if (closed) joint.close()
 
   return joint
 }
@@ -1346,7 +1392,7 @@ function __pathOffset(path, distance) {
     if (!start) start = current
   }
 
-  return __joinPaths(offset, closed)
+  return closed ? __joinPaths(offset).close() : __joinPaths(offset)
 }
 
 /**

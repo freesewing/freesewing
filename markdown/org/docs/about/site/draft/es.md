@@ -1,5 +1,5 @@
 ---
-title: How to generating bespoke sewing patterns
+title: Cómo generar patrones de costura a medida
 ---
 
 Generar patrones de costura personalizados basados en tus medidas es la función estrella de nuestro sitio web. Proporcionamos un entorno en línea que te permite personalizar varios aspectos de tu patrón.
@@ -8,49 +8,50 @@ Este entorno proporciona una amplia gama de funciones, y en estas páginas las e
 
 <ControlTip />
 
-## The editor
+## El editor
 
-Below is a screenshot of FreeSewing's pattern editor in [kiosk mode](/docs/about/site/draft/ui-settings/kiosk) which hides the site header and footer and lets the editor take up the entire screen. It also has the **View menu** (on the left) expanded. By default you will only see the icons, and not the text of the menu on the left.
+A continuación se muestra una captura de pantalla del editor de patrones de FreeSewing en el modo quiosco [](/docs/about/site/draft/ui-settings/kiosk) , que oculta la cabecera y el pie de página del sitio y permite que el editor ocupe toda la pantalla. También tiene expandido el menú **Ver** (a la izquierda). Por defecto sólo verás los iconos, y no el texto del menú de la izquierda.
 
-![Screenshot of FreeSewing's pattern editor](editor.png "Screenshot of Freesewing's pattern editor")
+![Captura de pantalla del editor de patrones de FreeSewing](editor.png "Captura de pantalla del editor de patrones de Freesewing")
 
-### The view menu
+### El menú Ver
 
-The **View menu** on the left allows you to select the view. Each view serves a different purpose. The different views are:
+El menú **Ver** de la izquierda te permite seleccionar la vista. Cada vista tiene una finalidad distinta. Los diferentes puntos de vista son:
 
-- **Pattern editor**: This is where you can tweak your pattern
-- **Pattern measurements**: This is where you can choose which measurements set to use to generate the pattern, or tweak measurements manually
-- **Pattern tests**: Allows you to thest the pattern (this is an advanced feature)
-- **Print layout**: Allows you to manually arrange the pattern parts to optimize the layout for printing
-- **Save pattern as...**: Allows you to save the pattern to your account
-- **Export pattern**: Allows you to export the pattern as PDF or SVG
-- **Edit settings by hand**: Allows you to -- you guessed it -- edit the settings to generate the pattern by hand. This is an advanced feature.
-- **Pattern logs**: This shows the logs generated when drafting the pattern. This is an advanced feature.
-- **Pattern inspector**: Allows pattern designer to inspect various aspects of the pattern. This is an advaned feature.
-- **Documentation**: Provides links to the documentation
+- **Editor de patrones**: Aquí es donde puedes ajustar tu patrón
+- **Medidas del patrón**: Aquí puedes elegir qué conjunto de medidas utilizar para generar el patrón, o ajustar las medidas manualmente.
+- **Pruebas de patrón**: Te permite probar el patrón (es una función avanzada). Se trata de una función avanzada.
+- **Diseño de impresión**: Te permite organizar manualmente las partes del patrón para optimizar el diseño para la impresión.
+- **Guardar patrón como...**: Te permite guardar el patrón en tu cuenta
+- **Exportar patrón**: Te permite exportar el patrón como PDF o SVG.
+- **Editar ajustes a mano**: Te permite --lo has adivinado-- editar los ajustes para generar el patrón a mano. Se trata de una función avanzada.
+- **Registros del patrón**: Muestra los registros generados al dibujar el patrón. Se trata de una función avanzada.
+- **Inspector de patrones**: Permite al diseñador de patrones inspeccionar varios aspectos del patrón. Se trata de una función avanzada.
+- **Documentación**: Proporciona enlaces a la documentación
 
-Feel free to check out the other views, but our focus here is on the **Pattern editor**.
+No dudes en consultar las otras vistas, pero aquí nos centraremos en el editor de patrones ****.
 
-### The settings menu
+### El menú de ajustes
 
-On the right side of the screen is the **Settings menu** which in turn is made up of four sections:
+En la parte derecha de la pantalla está el menú **Ajustes** que a su vez se compone de cuatro secciones:
 
-- **Messages from the designer**: Holds information the designer of the pattern flagged for your attention. Note that these are not generic remark about the design in general (those go in the documentation), but rather information specific to this very pattern. Make sure to check them out. As such, these messages will be different for every user, measurements set, or even combination of design options.
-- **Design options**: Holds all the different options the designer has added that allow you to tweak your pattern. These options will be different for each design. Refer to the design documentation for a list of all available options, or check the inline documentation.
-- **Core settings**: These are settings that are not provided by the design(er) but rather by FreeSewing's core library. As such, the settings you'll find here are the same accross all designs as they all use the same core library. Refer to [Core Settings](/docs/about/site/draft/core-settings) for all details, or check the inline documentation.
-- **UI settings**: And finally, these settings do not control the pattern as such, but rather the user interface. For example, here you can enable kiosk mode or tweak the user experience setting to see more or less features. Like the core settings, the UI settings are the same for every design. Refer to [UI Settings](/docs/about/site/draft/ui-settings) or check the inline documentation.
+- **Mensajes del diseñador**: Contiene información que el diseñador del patrón marcó para tu atención. Ten en cuenta que no se trata de observaciones genéricas sobre el diseño en general (esas van en la documentación), sino de información específica de este mismo patrón. Asegúrate de comprobarlo. Como tales, estos mensajes serán diferentes para cada usuario, conjunto de medidas o incluso combinación de opciones de diseño.
+- **Opciones de diseño**: Contiene todas las opciones diferentes que el diseñador ha añadido y que te permiten ajustar tu patrón. Estas opciones serán diferentes para cada diseño. Consulta la documentación del diseño para obtener una lista de todas las opciones disponibles, o consulta la documentación en línea.
+- **Ajustes del núcleo**: Son ajustes que no proporciona el diseño(s), sino la biblioteca del núcleo de FreeSewing. Por tanto, los ajustes que encontrarás aquí son los mismos para todos los diseños, ya que todos utilizan la misma biblioteca central. Consulta [Configuración del núcleo](/docs/about/site/draft/core-settings) para obtener todos los detalles, o consulta la documentación en línea.
+- **Ajustes de interfaz de usuario**: Por último, estos ajustes no controlan el patrón como tal, sino la interfaz de usuario. Por ejemplo, aquí puedes activar el modo quiosco o ajustar la configuración de la experiencia del usuario para ver más o menos funciones. Al igual que los ajustes del núcleo, los ajustes de la IU son los mismos para todos los diseños. Consulta [Configuración de la interfaz de usuario](/docs/about/site/draft/ui-settings) o consulta la documentación en línea.
 
-### The header menu
+### El menú de cabecera
 
-At the top is a header with icons to give you quick access to both Core settings and UI settings. There is also an icon to clear your settings, clear both settings and measurements, or to bookmark the current pattern.
+En la parte superior hay una cabecera con iconos que te dan acceso rápido tanto a los ajustes del núcleo como a los de la interfaz de usuario. También hay un icono para borrar tus ajustes, borrar tanto los ajustes como las medidas, o para marcar el patrón actual.
 
-### The inline documentation
+### La documentación en línea
 
-Most, if not all, settings or options that you will tweaks have a little documentation icon next to it (shown in blue in the screenshot below).
+La mayoría, si no todas, las configuraciones u opciones que vas a ajustar tienen un pequeño icono de documentación al lado (mostrado en azul en la captura de pantalla de abajo).
 
-![Screenshot of the docs icon](docs.png)
+![Captura de pantalla del icono docs](docs.png)
 
-You you can click that icon to open the inline documentation. This allows you to quickly verify the specific role of a setting or option without having to leave the editor.
+Puedes hacer clic en ese icono para abrir la documentación en línea. Esto te permite verificar rápidamente la función específica de un ajuste u opción sin tener que salir del editor.
 
-## Editor modes
+## Modos de edición
 
+<Fixme>Complete these docs</Fixme>

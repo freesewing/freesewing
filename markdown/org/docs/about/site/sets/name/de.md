@@ -2,14 +2,14 @@
 title: Name
 ---
 
-Every measurements set has a **name** attribute that is mandatory.
+Jeder Messdatensatz hat ein Attribut **name** , das obligatorisch ist.
 
-In other words, you must give each of your measurements sets a name, but that name can be anything you want.
+Mit anderen Worten: Du musst jedem deiner Messdatensätze einen Namen geben, aber dieser Name kann alles sein, was du willst.
 
-Typically, people give names that describe the set, like:
+Normalerweise geben die Leute Namen, die das Set beschreiben, wie zum Beispiel:
 
-- Myself, January 2024
-- Tony with binder
-- Jenny post augmentation
+- Ich selbst, Januar 2024
+- Tony mit Bindemittel
+- Jenny nach der Vergrößerung
 
-But you do you.
+Aber du tust es.

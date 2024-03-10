@@ -2,4 +2,4 @@
 title: "Hoodfrontdip"
 ---
 
-Controls far down the front of the hood drops over the forehead. Larger values work best with lightweight/flexible fabrics.
+Елементи управління розташовані далеко внизу передньої частини капюшона, що опускається на лоб. Більші значення найкраще поєднуються з легкими/гнучкими тканинами.

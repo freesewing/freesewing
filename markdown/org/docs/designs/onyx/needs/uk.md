@@ -1,12 +1,12 @@
 ---
-title: "Onyx One-Piece: What You Need"
+title: "Онікс цільний: Що вам потрібно"
 ---
 
-To make Onyx, you will need the following:
+Щоб зробити Онікс, вам знадобиться наступне:
 
 - Базові матеріали для шиття
-- (Recommended) A serger/overlock machine. Light, strong, and stretchy seams are important for this garment.
-- Between 1 - 5 meters (1.1 - 5.5 yards) of a suitable fabric, depending on size and style ([see Fabric options](/docs/patterns/shelly/fabric))
-    - Long sleeves, long legs, use of lining, larger measurements, more ease, use of a hood, and use of a skirt will all increase fabric requirements.
-    - A typical adult unisuit with short sleeves and short legs with a self-lined body will take about 2 meters of fabric.
-- (Optional) Rib knit fabric for the neck, arms, and legs, if desired.
+- (Рекомендовано) Розпошивальна / оверлочна машина. Для цього одягу важливі легкі, міцні та еластичні шви.
+- Від 1 до 5 метрів (1,1 - 5,5 ярдів) відповідної тканини, залежно від розміру та стилю ([див. варіанти тканини](/docs/patterns/shelly/fabric))
+    - Довгі рукави, довгі штанини, використання підкладки, більші розміри, більша легкість, використання капюшона і спідниці - все це збільшує вимоги до тканини.
+    - На типовий дорослий комбінезон з короткими рукавами і короткими штанинами з самопідкладкою знадобиться близько 2 метрів тканини.
+- (За бажанням) Ребриста трикотажна тканина для шиї, рук і ніг, за бажанням.

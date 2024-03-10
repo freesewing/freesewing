@@ -1,5 +1,5 @@
 ---
-title: "Arm Taper"
+title: "Armverjüngung"
 ---
 
-This setting changes how much the arms taper from the body down to the end.
+Diese Einstellung ändert, wie stark sich die Arme vom Körper zum Ende hin verjüngen.

@@ -1,8 +1,6 @@
 import { adult, doll, giant } from '@freesewing/models'
 import { getShortName, isUtilityDesign } from './config.mjs'
-import chai from 'chai'
-
-const expect = chai.expect
+import { expect } from 'chai'
 
 // Some patterns are deprecated and won't support more stringent doll/giant tests
 const deprecated = ['theo']

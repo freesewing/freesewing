@@ -1,6 +1,13 @@
 ---
-title: "Cornelius cycling breeches: Designer Notes"
+title: "Велосипедні бриджі Cornelius: Нотатки дизайнера"
 ---
 
-<Fixme>Wouter designed this. They have not written any notes (yet)</Fixme>
+Коли я був дитиною, мій тато розповідав мені історії про походи в гори, щось чарівне для дитини, яка живе в Нідерландах. У нього була валіза з альпіністськими речами, і серед них були "панталони" - мішкуваті штани, що сягали литок.
 
+Коли я переїхав до США в тридцять років і сам почав ходити в походи, я часто згадував ці розмови і сумував, що не успадкував ті панталони. Потім, коли я відкрила для себе шиття, я вирішила, що зроблю собі пару, але хороших викрійок не знайшлося.
+
+Then someone on the Freesewing discord server posted a link to The 'Keystone' Systems, Practical methods of cutting, from around the turn of the century. Він містив систему викрійки "Велосипедні бриджі", яка здавалася близькою до того, що носив мій батько, і могла б бути перекладена на викрійку для вільного крою. Проект народився, і я радий, що можу представити вам його результати.
+
+These are not designed as hiking breeches, but cycling breeches. That's close enough for me. They work for either activity, and have many more uses.
+
+Wouter

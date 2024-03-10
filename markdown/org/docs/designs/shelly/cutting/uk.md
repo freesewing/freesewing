@@ -1,8 +1,8 @@
 ---
-title: "Shelly shirt: Cutting Instructions"
+title: "Сорочка Шеллі: Інструкція з крою"
 ---
 
-- Cut **1 front** part on the fold
+- Виріжте **1 передню** частину на згині
 - Відріжте **1 задню** частину на згині
-- Cut **2 sleeve** parts
-- Cut **1 neckband** part on the fold
+- Виріжте **2 частини рукава**
+- Виріжте **1 горловину** частину на згин

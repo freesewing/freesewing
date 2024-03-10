@@ -1,5 +1,5 @@
 ---
-title: "Arm Length"
+title: "Armlänge"
 ---
 
-This setting adjusts the length of the arms.
+Mit dieser Einstellung wird die Länge der Arme angepasst.

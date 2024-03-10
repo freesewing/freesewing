@@ -1,14 +1,14 @@
 ---
-title: Binding width
+title: Ancho de encuadernación
 ---
 
-Controls the width of the kniw binding on Aaron.
+Controls the width of the knit binding on Aaron.
 
-The default knit binding width is 6 x the seam allowance. For metric users with the default 1cm seam allowance, this results in a 1.5cm wide knit binding which is a good value.
+La anchura predeterminada del ribete de punto es 6 x el margen de costura. Para los usuarios del sistema métrico decimal con el margen de costura predeterminado de 1 cm, esto da como resultado un ribete de punto de 1,5 cm de ancho, que es un buen valor.
 
-For imperial users (who have a default seam allowance of 0.5") or users who choose to use a larger seam allowance, the value of 6 time the seam allowance will probable result in a knit binding that it too wide, so this option allows you to control that.
+Para los usuarios imperiales (que tienen un margen de costura por defecto de 0,5") o los usuarios que eligen utilizar un margen de costura mayor, el valor de 6 veces el margen de costura probablemente dará como resultado una encuadernación de punto demasiado ancha, por lo que esta opción te permite controlarlo.
 
 <Note>
 
-This option is expressed in percetage of the seam allowance. So the default s600%, or 6 time the seam allowance,.
+Esta opción se expresa en porcentaje del margen de costura. Así que el valor por defecto es 600%, o 6 veces el margen de costura.
 </Note>

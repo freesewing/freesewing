@@ -1,6 +1,6 @@
 ---
 maker: "невідомо"
-caption: "Чоловік Анни, Зігвард, є тренером <a target='_BLANK' href='http://fighter.org/'>місцевого клубу кікбоксингу</a>. Hence the name fighter hoodie"
+caption: "Чоловік Анни, Зігвард, є тренером <a target='_BLANK' href='http://fighter.org/'>місцевого клубу кікбоксингу</a>. Звідси і назва худі для винищувачів"
 date: "2017-11-20"
 intro: "Толстовка для бійців: Hugo на блискавці"
 title: "Толстовка для бійців: Hugo на блискавці"

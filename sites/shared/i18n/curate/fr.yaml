@@ -1,15 +1,15 @@
-curate: Curate
-curateSet: Curated measurements set
-curateSets: Curate FreeSewing's measurements sets
-curatePacks: Curate FreeSewing's option packs
-noSuggestedPacks: There are currently no option packs suggested for curation
-noSuggestedSets: There are currently no measurements sets suggested for curation
-optionPack: Option pack
-packs: Option Packs
-published: Published
-publishedDesc: Published records are available to users. If you plan to make changes, you might want to unpublish first.
-unpublished: Unpublished
-unpublishedDesc: Unpublished records are not available to users. Things typically start out unpublished until they are ready for publication.
+curate: Sélectionne
+curateSet: Ensemble de mesures sélectionnées
+curateSets: Sélectionne les ensembles de mesures de FreeSewing
+curatePacks: Sélectionne les packs d'options de FreeSewing
+noSuggestedPacks: Il n'y a actuellement aucun pack d'options suggéré pour la sélection
+noSuggestedSets: Il n'y a actuellement aucun jeu de mesures suggéré pour la sélection
+optionPack: Pack d'options
+packs: Packs d'options
+published: Publié
+publishedDesc: Les enregistrements publiés sont accessibles aux utilisateurs. Si tu prévois d'y apporter des modifications, il est préférable de les dépublier d'abord.
+unpublished: Non publié
+unpublishedDesc: Les documents non publiés ne sont pas accessibles aux utilisateurs. Les choses commencent généralement par être non publiées jusqu'à ce qu'elles soient prêtes à être publiées.
 sets: Jeux de mesures
-suggestedSets: Measurements sets suggested for curation
-suggestedPacks: Suggested option packs
+suggestedSets: Jeux de mesures proposés pour la sélection
+suggestedPacks: Paquets d'options suggérés

@@ -2,6 +2,6 @@
 title: "Kapuzentiefe"
 ---
 
-Controls how much room will be in the hood around the back of the head.
+Steuert, wie viel Platz in der Kapuze um den Hinterkopf herum sein wird.
 
-Note: This option is only available if the 'neck style' option is set to 'hood.'
+Hinweis: Diese Option ist nur verfügbar, wenn die Option "Halsstil" auf "Kapuze" eingestellt ist.

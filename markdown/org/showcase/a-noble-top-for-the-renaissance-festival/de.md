@@ -1,16 +1,16 @@
 ---
-title: "A Noble top for the Renaissance Festival"
-caption: "This top is made from scrap cotton fabrics"
+title: "Ein edles Oberteil für das Renaissance-Festival"
+caption: "Dieses Oberteil ist aus Baumwollstoffresten gemacht"
 date: 20231016
-intro: "This top is based on the Noble block."
+intro: "Dieses Oberteil basiert auf dem Noble-Block."
 designs:
-  - "noble"
+  - "tristan"
 maker: Natalia
 ---
 
-This top was made based on the Noble block. The wearer reports that their body is asymmetric, which you can see in the back view. They were very happy with this simple variation of Noble.
+This top was made based on the Noble block, and later spun off into its own design, Tristan. Die Trägerin berichtet, dass ihr Körper asymmetrisch ist, was du in der Rückenansicht sehen kannst. Sie waren sehr zufrieden mit dieser einfachen Variante von Noble.
 
-![A view of the front](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-a-noble-top-for-the-renaissance-festival-1/public "The image caption/title goes here")
+![Ein Blick auf die Vorderseite](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-a-noble-top-for-the-renaissance-festival-1/public "Ein Blick auf die Vorderseite")
 
-![Die Rückansicht](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-a-noble-top-for-the-renaissance-festival-2/public "The image caption/title goes here")
+![Die Rückansicht](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-a-noble-top-for-the-renaissance-festival-2/public "Die Rückansicht")
 

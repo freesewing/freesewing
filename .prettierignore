@@ -25,5 +25,6 @@ yarn.lock
 .eslintignore
 .gitkeep
 .all-contributorsrc
+.nvmrc
 ansible.cfg
 sites/shared/prebuild/data/*.mjs

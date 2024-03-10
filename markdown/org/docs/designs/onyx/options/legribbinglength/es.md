@@ -1,7 +1,7 @@
 ---
-title: "Leg ribbing length"
+title: "Longitud de los nervios de la pierna"
 ---
 
-Controls how long the ribbing around the leg is, as a percentage of the leg circumference. Setting this to a smaller value will make the cuff tighter and hold onto the ankle better, while a larger value will give more room.
+Controla la longitud de las nervaduras alrededor de la pierna, como porcentaje de la circunferencia de la pierna. Si lo ajustas a un valor menor, el manguito quedará más ajustado y se sujetará mejor al tobillo, mientras que un valor mayor dará más espacio.
 
-Note: This option is only available if the 'leg ribbing' option is set to 'ribbing.'
+Nota: Esta opción sólo está disponible si la opción "nervaduras de la pierna" está establecida en "nervaduras".

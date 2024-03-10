@@ -35,7 +35,13 @@ export const PanZoomPattern = forwardRef((props, ref) => {
         wrapperClass={'pan-zoom-pattern'}
         id="pan-zoom-pattern"
       >
-        {props.children || <Pattern {...{ t, components, renderProps }} ref={ref} />}
+        {props.children || (
+          <Pattern
+            {...{ t, components, renderProps }}
+            ref={ref}
+            className="freesewing pattern w-full"
+          />
+        )}
       </TransformComponent>
     </TransformWrapper>
   )

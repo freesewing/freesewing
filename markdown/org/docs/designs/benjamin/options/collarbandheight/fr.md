@@ -1,6 +1,6 @@
 ---
-title: "Collar band height"
+title: "Hauteur du collier"
 ---
 
-Controls the height of the collar band (the width, if you will).
+Contrôle la hauteur de la bande de collier (la largeur, si tu veux).
 

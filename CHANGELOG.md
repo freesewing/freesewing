@@ -3,6 +3,144 @@
 
 ## Unreleased
 
+### brian
+
+#### Changed
+
+ - Always load plugin-bust due to its changes in how it handle conditionality.
+
+### hugo
+
+#### Fixed
+
+ - Add missing dimension id attributes
+
+### onyx
+
+#### Changed
+
+ - Always load plugin-bust due to its changes in how it handle conditionality.
+
+### shelly
+
+#### Changed
+
+ - Always load plugin-bust due to its changes in how it handle conditionality.
+
+### tamiko
+
+#### Changed
+
+ - Always load plugin-bust due to its changes in how it handle conditionality.
+
+### uma
+
+#### Fixed
+
+ - Fix back exposure when expand is off. Fixes
+
+### plugin-bust
+
+#### Changed
+
+ - This plugin now uses the `preSetDraft` rather than `preDraft` lifecycle hook
+ - Conditionality has been moved to the `preSetDraft` lifecycle hook, rather than exposing a `withCondition` named export
+ - The plugin will now always be loaded, but will check for each drafted set whether it should make any changes.
+
+#### Deprecated
+
+ - The `withCondition` named  export is deprecated and will always return true.
+
+
+## 3.2.0 (2024-02-11)
+
+### brian
+
+#### Fixed
+
+ - Take biceps ease into account when calculating armhole depth
+
+### carlton
+
+#### Fixed
+
+ - Fixed a stray seam allowance path on the collar
+
+### charlie
+
+#### Fixed
+
+ - The back pocket welt (4) and front pocket facing (8) incorrectly indicated to cut 2 instead of 4 in the cutlist. Fixes
+
+### hugo
+
+#### Fixed
+
+ - Fix issue that crashed the design when complete is off. Fixes
+ - Base pocket opening on pocket height, rather than width of the garment. Fixes
+
+### lumina
+
+#### Added
+
+ - Initial release
+
+### lumira
+
+#### Added
+
+ - Initial release
+
+### sandy
+
+#### Added
+
+ - Added a new *panels* option
+
+### tristan
+
+#### Added
+
+ - Inital release
+
+### plugin-annotations
+
+#### Added
+
+ - The `title` macro now takes a `notes` and `classes.notes` as its config, allowing you to add notes
+ - The `classes.cutlist` config is removed from the title plugin, cutlist info is now included as notes
+
+#### Removed
+
+ - The `classes.cutlist` config is removed from the title plugin, cutlist info is now included as notes
+
+### plugin-i18n
+
+#### Added
+
+ - This plugin now supports translation of nested arrays of strings, giving you more flexibility to concatenate translated parts of strings
+
+### core
+
+#### Added
+
+ - Added the `Path.combine()` method
+ - The `Path.join()` method is now variadic
+ - The `Path.length()` now takes an parameter to include move operations in the length calculation
+
+#### Deprecated
+
+ - Calling `Path.join` with a second parameter to indicate that the resulting paths most be closed is now deprecated and will be removed in FreeSewing v4.
+
+### react-components
+
+#### Added
+
+ - This Pattern component now supports translation of nested arrays of strings, giving you more flexibility to concatenate translated parts of strings
+
+
+## 3.1.0 (2023-12-26)
+
 ### aaron
 
 #### Changed
@@ -12,6 +150,7 @@
 #### Fixed
 
  - Added IDs to dimension macros that missed them, causing them to not be shown
+ - Keep seam allowance out of the binding length calculation
 
 ### albert
 
@@ -74,11 +213,23 @@
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
 
+### otis
+
+#### Added
+
+ - Initial release
+
 ### paco
 
 #### Changed
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### penelope
+
+#### Fixed
+
+ - Fixed wrong use of options in a value method. Fixes
 
 ### plugintest
 
@@ -105,6 +256,12 @@
 
  - Replaced all instances of 'seperate' with 'separate' in option names
 
+### skully
+
+#### Added
+
+ - Initial release
+
 ### sven
 
 #### Changed
@@ -121,6 +278,7 @@
  - Decreased default back waist dip
  - Increased default front waist dip
  - Allowed lower values on back exposure, causing back to flare out
+ - Fix issue with back part when bulge is on and expand is off
 
 ### waralee
 
@@ -140,6 +298,10 @@
 #### Changed
 
  - Added support for notes in flags
+
+#### Fixed
+
+ - Removing macros did not always remove the cutlist data in the store. Fixes
 
 ### plugin-bin-pack
 
@@ -165,9 +327,18 @@
 
  - Fix order in mergeOptions method so user settings take precendence over defaults
  - Fix upward snap for snapped percentage option when snap is a simple number
+ - The conditional loading of plugins had a bug causing them to never be loaded
+ - Make Path.split() more robust when handling edge-case. Fixes
+ - Prevent utils.circlesIntersect() from running sqrt on a negative number. Fixes
+
+### new-design
+
+#### Fixed
+
+ - Removed unwanted debug output
 
 
-## 3.0.0 (2022-09-30)
+## 3.0.0 (2023-09-30)
 
 ### global
 

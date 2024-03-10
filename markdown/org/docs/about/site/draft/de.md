@@ -1,5 +1,5 @@
 ---
-title: How to generating bespoke sewing patterns
+title: Wie man maßgeschneiderte Nähmuster erstellt
 ---
 
 Die Erstellung von individuellen Nähmustern auf der Grundlage deiner Maße ist das Aushängeschild unserer Website. Wir bieten eine Online-Umgebung, in der du verschiedene Aspekte deines Musters anpassen kannst.
@@ -8,49 +8,50 @@ Diese Umgebung bietet eine Vielzahl von Funktionen, die wir auf diesen Seiten er
 
 <ControlTip />
 
-## The editor
+## Der Herausgeber
 
-Below is a screenshot of FreeSewing's pattern editor in [kiosk mode](/docs/about/site/draft/ui-settings/kiosk) which hides the site header and footer and lets the editor take up the entire screen. It also has the **View menu** (on the left) expanded. By default you will only see the icons, and not the text of the menu on the left.
+Unten siehst du einen Screenshot des Schnittmuster-Editors von FreeSewing im [Kioskmodus](/docs/about/site/draft/ui-settings/kiosk) , der die Kopf- und Fußzeile der Website ausblendet und den Editor den gesamten Bildschirm einnehmen lässt. Außerdem ist das Menü **Ansicht** (auf der linken Seite) erweitert. Standardmäßig siehst du nur die Symbole, aber nicht den Text des Menüs auf der linken Seite.
 
-![Screenshot of FreeSewing's pattern editor](editor.png "Screenshot of Freesewing's pattern editor")
+![Screenshot des Schnittmuster-Editors von FreeSewing](editor.png "Screenshot des Muster-Editors von Freesewing")
 
-### The view menu
+### Das Menü Ansicht
 
-The **View menu** on the left allows you to select the view. Each view serves a different purpose. The different views are:
+Über das Menü **Ansicht** auf der linken Seite kannst du die Ansicht auswählen. Jede Ansicht dient einem anderen Zweck. Die verschiedenen Ansichten sind:
 
-- **Pattern editor**: This is where you can tweak your pattern
-- **Pattern measurements**: This is where you can choose which measurements set to use to generate the pattern, or tweak measurements manually
-- **Pattern tests**: Allows you to thest the pattern (this is an advanced feature)
-- **Print layout**: Allows you to manually arrange the pattern parts to optimize the layout for printing
-- **Save pattern as...**: Allows you to save the pattern to your account
-- **Export pattern**: Allows you to export the pattern as PDF or SVG
-- **Edit settings by hand**: Allows you to -- you guessed it -- edit the settings to generate the pattern by hand. This is an advanced feature.
-- **Pattern logs**: This shows the logs generated when drafting the pattern. This is an advanced feature.
-- **Pattern inspector**: Allows pattern designer to inspect various aspects of the pattern. This is an advaned feature.
-- **Documentation**: Provides links to the documentation
+- **Muster-Editor**: Hier kannst du dein Muster anpassen
+- **Mustermessungen**: Hier kannst du auswählen, welcher Messsatz für die Erstellung des Musters verwendet werden soll, oder die Messungen manuell anpassen.
+- **Mustertests**: Ermöglicht es dir, das Muster zu testen (dies ist eine erweiterte Funktion) Dies ist eine erweiterte Funktion. Dies ist eine erweiterte Funktion.
+- **Drucklayout**: Ermöglicht es dir, die Musterteile manuell anzuordnen, um das Layout für den Druck zu optimieren.
+- **Muster speichern unter...**: Ermöglicht es dir, das Muster in deinem Konto zu speichern
+- **Muster exportieren**: Ermöglicht es dir, das Muster als PDF oder SVG zu exportieren.
+- **Einstellungen von Hand bearbeiten**: Hier kannst du - du hast es erraten - die Einstellungen bearbeiten, um das Muster von Hand zu erstellen. Dies ist eine erweiterte Funktion.
+- **Musterprotokolle**: Hier werden die Protokolle angezeigt, die beim Zeichnen des Musters erstellt werden. Dies ist eine erweiterte Funktion.
+- **Musterinspektor**: Ermöglicht es dem Musterdesigner, verschiedene Aspekte des Musters zu prüfen. Dies ist eine erweiterte Funktion.
+- **Dokumentation**: Enthält Links zur Dokumentation
 
-Feel free to check out the other views, but our focus here is on the **Pattern editor**.
+Schau dir auch die anderen Ansichten an, aber unser Fokus liegt hier auf dem **Pattern Editor**.
 
-### The settings menu
+### Das Menü Einstellungen
 
-On the right side of the screen is the **Settings menu** which in turn is made up of four sections:
+Auf der rechten Seite des Bildschirms befindet sich das Menü **Einstellungen** , das wiederum aus vier Bereichen besteht:
 
-- **Messages from the designer**: Holds information the designer of the pattern flagged for your attention. Note that these are not generic remark about the design in general (those go in the documentation), but rather information specific to this very pattern. Make sure to check them out. As such, these messages will be different for every user, measurements set, or even combination of design options.
-- **Design options**: Holds all the different options the designer has added that allow you to tweak your pattern. These options will be different for each design. Refer to the design documentation for a list of all available options, or check the inline documentation.
-- **Core settings**: These are settings that are not provided by the design(er) but rather by FreeSewing's core library. As such, the settings you'll find here are the same accross all designs as they all use the same core library. Refer to [Core Settings](/docs/about/site/draft/core-settings) for all details, or check the inline documentation.
-- **UI settings**: And finally, these settings do not control the pattern as such, but rather the user interface. For example, here you can enable kiosk mode or tweak the user experience setting to see more or less features. Like the core settings, the UI settings are the same for every design. Refer to [UI Settings](/docs/about/site/draft/ui-settings) or check the inline documentation.
+- **Nachrichten vom Designer**: Enthält Informationen, die der Designer des Musters für deine Aufmerksamkeit markiert hat. Beachte, dass es sich hierbei nicht um allgemeine Bemerkungen zum Design handelt (die gehören in die Dokumentation), sondern um Informationen, die speziell für dieses Muster gelten. Sieh sie dir unbedingt an. Daher werden diese Meldungen für jeden Nutzer, jede Messreihe und sogar für jede Kombination von Gestaltungsoptionen anders ausfallen.
+- **Designoptionen**: Hier findest du alle Optionen, die der Designer hinzugefügt hat und mit denen du dein Muster anpassen kannst. Diese Optionen sind für jedes Design unterschiedlich. Eine Liste aller verfügbaren Optionen findest du in der Entwurfsdokumentation oder in der Inline-Dokumentation.
+- **Grundeinstellungen**: Das sind Einstellungen, die nicht vom Design(er), sondern von der FreeSewing-Kernbibliothek bereitgestellt werden. Daher sind die Einstellungen, die du hier findest, für alle Designs gleich, da sie alle dieselbe Kernbibliothek verwenden. Alle Details findest du unter [Core Settings](/docs/about/site/draft/core-settings) oder in der Inline-Dokumentation.
+- **UI-Einstellungen**: Und schließlich steuern diese Einstellungen nicht das Muster als solches, sondern die Benutzeroberfläche. Hier kannst du zum Beispiel den Kioskmodus aktivieren oder die Einstellungen für die Benutzerfreundlichkeit anpassen, um mehr oder weniger Funktionen zu sehen. Wie die Grundeinstellungen sind auch die UI-Einstellungen für jedes Design gleich. Siehe [UI Settings](/docs/about/site/draft/ui-settings) oder sieh in der Inline-Dokumentation nach.
 
-### The header menu
+### Das Kopfmenü
 
-At the top is a header with icons to give you quick access to both Core settings and UI settings. There is also an icon to clear your settings, clear both settings and measurements, or to bookmark the current pattern.
+Oben befindet sich eine Kopfzeile mit Symbolen, mit denen du schnell auf die Grundeinstellungen und die Benutzeroberfläche zugreifen kannst. Es gibt auch ein Symbol, mit dem du deine Einstellungen löschen, sowohl Einstellungen als auch Messungen löschen oder ein Lesezeichen für das aktuelle Muster setzen kannst.
 
-### The inline documentation
+### Die Inline-Dokumentation
 
-Most, if not all, settings or options that you will tweaks have a little documentation icon next to it (shown in blue in the screenshot below).
+Die meisten, wenn nicht sogar alle Einstellungen oder Optionen, die du ändern kannst, haben ein kleines Dokumentations-Symbol daneben (im Screenshot unten blau dargestellt).
 
-![Screenshot of the docs icon](docs.png)
+![Screenshot des Docs-Symbols](docs.png)
 
-You you can click that icon to open the inline documentation. This allows you to quickly verify the specific role of a setting or option without having to leave the editor.
+Du kannst auf dieses Symbol klicken, um die Inline-Dokumentation zu öffnen. So kannst du die Rolle einer Einstellung oder Option schnell überprüfen, ohne den Editor verlassen zu müssen.
 
-## Editor modes
+## Editor-Modi
 
+<Fixme>Fülle diese Dokumente aus</Fixme>

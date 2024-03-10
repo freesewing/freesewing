@@ -111,28 +111,28 @@ De cette façon, il ne faut pas deviner la longueur du biais, et la couture s'aj
 
 > Pour des instructions détaillées, consultez [la documentation d'Aaron](/docs/designs/aaron/instructions)
 
-## Alternate method
+## Méthode alternative
 
-While the above instructions describe one way to attach a knit band or knit binding, it is not the only method that can be used. An alternate method is to cut the exact amount of binding needed, sew it into a ring, and then attach the ring to the garment opening.
+Bien que les instructions ci-dessus décrivent une façon d'attacher une bande de jersey ou un biais de jersey, ce n'est pas la seule méthode qui peut être utilisée. Une autre méthode consiste à couper la quantité exacte de biais nécessaire, à la coudre en anneau, puis à fixer l'anneau à l'ouverture du vêtement.
 
-Some people feel that this is an easier method for novice sewists. They are told exactly how much binding to use, and they do not have to guess how much they should be stretching the binding as they sew.
+Certaines personnes pensent que cette méthode est plus facile pour les couturiers débutants. On leur indique exactement la quantité de biais à utiliser, et ils n'ont pas à deviner à quel point ils doivent étirer le biais pendant qu'ils cousent.
 
-1. Measure the garment opening that the binding will cover. Be sure to measure at the seamline, to account for seam allowance.
+1. Mesure l'ouverture du vêtement que le biais couvrira. Veille à mesurer au niveau de la ligne de couture, pour tenir compte de la marge de couture.
 
-2. Check the pattern instructions for the length of binding to use. Or, use a length 80-90% smaller than the opening based on the stretchiness of the binding fabric. (For example, 80% for very stretchy fabric, 90% for less stretchy fabric.)
+2. Vérifie les instructions du modèle pour connaître la longueur de biais à utiliser. Ou bien, utilise une longueur 80-90% plus petite que l'ouverture en fonction de l'extensibilité du tissu de biais. (Par exemple, 80 % pour un tissu très extensible, 90 % pour un tissu moins extensible).
 
-3. Cut the length of binding required plus seam allowance at each end.
+3. Coupe la longueur de biais nécessaire plus la marge de couture à chaque extrémité.
 
-4. Sew the binding ends right sides together to form a closed loop or ring. Trim excess seam allowance.
+4. Couds les extrémités du biais endroit contre endroit pour former une boucle fermée ou un anneau. Coupe l'excédent de marge de couture.
 
-5. Fold the ring together at the seam to divide the ring into equal halves. Mark or insert pins at each end fold. One pin will be in the seam, and the other will mark the halfway point around the ring.
+5. Plie l'anneau au niveau de la couture pour le diviser en deux moitiés égales. Marque ou insère des épingles à chaque pli d'extrémité. Une épingle dans la couture, et l'autre marquera le point médian autour de l'anneau.
 
-6. Unfold the ring and fold it again into equal halves so the two marks/pins meet together in the middle. Again mark or insert pins into each end fold. Now there are 4 pins or marks dividing the ring into 4 quarters of equal length.
+6. Déplie l'anneau et plie-le à nouveau en deux moitiés égales de façon à ce que les deux marques/épingles se rejoignent au milieu. Marque à nouveau ou insère des épingles dans chaque pli d'extrémité. Il y a maintenant 4 épingles ou marques qui divisent l'anneau en 4 quarts de longueur égale.
 
-7. Similarly, fold the garment opening and mark or insert pins to divide the garment opening into 4 quarters of equal length.
+7. De même, plie l'ouverture du vêtement et marque ou insère des épingles pour diviser l'ouverture du vêtement en 4 quarts de longueur égale.
 
-8. Match the marks or pins on the binding with the ones on the garment opening. (Try to align it so the seam is at the most inconspicuous location in the garment opening. For example, if binding a neck opening align the binding so the seam is at the back of the neck opening.)
+8. Fais correspondre les marques ou les épingles du biais avec celles de l'ouverture du vêtement. (Essaie de l'aligner de façon à ce que la couture se trouve à l'endroit le plus discret dans l'ouverture du vêtement. Par exemple, si tu mets du biais sur une encolure, aligne la couture de façon à ce qu'elle se trouve à l'arrière de l'ouverture.)
 
-9. Pin the binding ring to the garment opening at each quarter mark/pin. This ensures that the binding is evenly distributed around the garment opening.
+9. Épingle l'anneau de biais à l'ouverture du vêtement à chaque quart de repère/épingle. Cela permet de répartir uniformément le biais autour de l'ouverture du vêtement.
 
-10. Sew the binding to the opening, one quarter at a time. While sewing, evenly stretch each quarter segment of binding to match the length of the quarter segment of garment opening.
+10. Couds le biais à l'ouverture, un quart à la fois. Pendant la couture, étire uniformément chaque quart de segment de biais pour qu'il corresponde à la longueur du quart de segment de l'ouverture du vêtement.

@@ -14,18 +14,6 @@ body:
       description: Please provide a clear and concise description of what you want to happen
       placeholder: |
         I would like to be able to export patterns as a Gitlab snippet, just like they can be exported as a Github gist
-  - type: dropdown
-    id: patron
-    attributes:
-      label: Are you a FreeSewing patron? 😃
-      description: 'Patrons support us financially :pray: so they get priority'
-      options:
-        - 'Yes, I am a tier-2 patron ❤️'
-        - 'Yes, I am a tier-4 patron ❤️  💙'
-        - 'Yes, I am a tier-8 patron ❤️  💙 💜'
-        - 'No, I am not 😞'
-    validations:
-      required: true
   - type: textarea
     id: extra
     attributes:
@@ -34,6 +22,6 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please keep in mind that **FreeSewing is a community project** that depends on **[your support](https://freesewing.org/community/join/)**.
+        Please keep in mind that **FreeSewing is a non-profit project** that depends on **[your support](https://freesewing.org/patrons/join/)**.
 ---
 

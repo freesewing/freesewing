@@ -1,7 +1,5 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { Point } from '../src/index.mjs'
-
-const expect = chai.expect
 
 const newAttr = () => new Point(0, 0).attributes
 

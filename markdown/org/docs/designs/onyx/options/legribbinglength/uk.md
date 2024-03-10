@@ -1,7 +1,7 @@
 ---
-title: "Leg ribbing length"
+title: "Довжина ребер на ногах"
 ---
 
-Controls how long the ribbing around the leg is, as a percentage of the leg circumference. Setting this to a smaller value will make the cuff tighter and hold onto the ankle better, while a larger value will give more room.
+Дозволяє контролювати довжину ребер навколо ноги у відсотках від окружності ноги. Якщо встановити менше значення, манжета буде тугішою і краще фіксуватиметься на щиколотці, тоді як більше значення дасть більше простору.
 
-Note: This option is only available if the 'leg ribbing' option is set to 'ribbing.'
+Примітка: Ця опція доступна, лише якщо для параметра "Ребра жорсткості" встановлено значення "ребра жорсткості".

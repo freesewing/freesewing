@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Zou je een rijstrook afsluiten omdat een bestuurder zijn muziek te hard afspeelt?"
 date: "2017-09-07"
 intro: "Bedankt voor niets Microsoft; E-mail moet niet zo moeilijk zijn"

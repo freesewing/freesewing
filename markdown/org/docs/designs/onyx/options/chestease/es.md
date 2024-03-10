@@ -2,13 +2,13 @@
 title: "Holgura de pecho"
 ---
 
-Controls how wide the garment will be at your chest.
+Controla la anchura de la prenda en el pecho.
 
 How much room do you want at the chest? Whatever value you provide here will simply be added to your chest circumference measurement when drafting the garment.
 
-> ##### This option allows negative values
+> ##### Esta opción permite valores negativos
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Debes utilizar la holgura negativa si utilizas un material elástico que quieres que quede bien ajustado. Los monos y los unitardos suelen tener holgura negativa, mientras que otras prendas suelen tener holgura positiva.
 
 
 

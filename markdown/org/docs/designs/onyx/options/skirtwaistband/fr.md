@@ -1,7 +1,7 @@
 ---
-title: "Skirt waistband"
+title: "Taille de la jupe"
 ---
 
-Sets the width of the waistband along the top of the skirt, as a multiple of the seam allowance..
+Définit la largeur de la ceinture le long du haut de la jupe, en tant que multiple de la marge de couture.
 
-The waistband is a single fold hem that is topstitched into the main garment around the waist. The fold serves to hide and finish the top edge. It only needs to be wide enough to allow the topstitching to secure the skirt in place.
+La ceinture est un ourlet à pli unique qui est surpiqué dans le vêtement principal autour de la taille. Le pli sert à cacher et à finir le bord supérieur. Elle doit seulement être assez large pour permettre aux surpiqûres de fixer la jupe en place.

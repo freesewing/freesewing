@@ -1,6 +1,6 @@
 ---
-title: "Sleeve hem"
+title: "Ärmelsaum"
 ---
 
-Sets the hem allowance of the hem along the end of the sleeves, as a multiple of the seam allowance.
+Legt die Saumzugabe des Saums am Ende der Ärmel als Vielfaches der Nahtzugabe fest.
 

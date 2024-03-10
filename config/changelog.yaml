@@ -1,10 +1,83 @@
 Unreleased:
+  Changed:
+    brian:
+      - Always load plugin-bust due to its changes in how it handle conditionality.
+    onyx:
+      - Always load plugin-bust due to its changes in how it handle conditionality.
+    plugin-bust:
+      - This plugin now uses the `preSetDraft` rather than `preDraft` lifecycle hook
+      - Conditionality has been moved to the `preSetDraft` lifecycle hook, rather than exposing a `withCondition` named export
+      - The plugin will now always be loaded, but will check for each drafted set whether it should make any changes.
+    shelly:
+      - Always load plugin-bust due to its changes in how it handle conditionality.
+    tamiko:
+      - Always load plugin-bust due to its changes in how it handle conditionality.
+
+  Deprecated:
+    plugin-bust:
+      - The `withCondition` named  export is deprecated and will always return true.
+
+  Fixed:
+    hugo:
+      - Add missing dimension id attributes
+    uma:
+      - Fix back exposure when expand is off. Fixes #6239
+
+3.2.0:
+  date: 2024-02-11
+
+  Added:
+    core:
+      - Added the `Path.combine()` method
+      - The `Path.join()` method is now variadic
+      - The `Path.length()` now takes an parameter to include move operations in the length calculation
+    lumina:
+      - Initial release
+    lumira:
+      - Initial release
+    plugin-annotations:
+      - The `title` macro now takes a `notes` and `classes.notes` as its config, allowing you to add notes
+      - The `classes.cutlist` config is removed from the title plugin, cutlist info is now included as notes
+    plugin-i18n:
+      - This plugin now supports translation of nested arrays of strings, giving you more flexibility to concatenate translated parts of strings
+    react-components:
+      - This Pattern component now supports translation of nested arrays of strings, giving you more flexibility to concatenate translated parts of strings
+    sandy:
+      - Added a new *panels* option
+    tristan:
+      - Inital release
+
+  Deprecated:
+    core:
+      - Calling `Path.join` with a second parameter to indicate that the resulting paths most be closed is now deprecated and will be removed in FreeSewing v4.
+
+  Fixed:
+    brian:
+      - Take biceps ease into account when calculating armhole depth
+    carlton:
+      - Fixed a stray seam allowance path on the collar
+    charlie:
+      - The back pocket welt (4) and front pocket facing (8) incorrectly indicated to cut 2 instead of 4 in the cutlist. Fixes #5791
+    hugo:
+      - Fix issue that crashed the design when complete is off. Fixes #6006
+      - Base pocket opening on pocket height, rather than width of the garment. Fixes #6004
+
+  Removed:
+    plugin-annotations:
+      - The `classes.cutlist` config is removed from the title plugin, cutlist info is now included as notes
+
+3.1.0:
+  date: 2023-12-26
   Added:
     core:
       - Allow plugins to provide their own packing implementation
       - Added named export `cbqc` which exports the constant to approximate a circle with Cubic Bézier curves
       - Core will now set `activeMacro` in the store, keeping track of the running macro
        - Added the `generateMacroIds`, `getMacroIds`, and `removeMacroNodes` store methods
+    otis:
+      - Initial release
+    skully:
+      - Initial release
     plugin-bin-pack:
       - First release of the plugin providing the default packing implementation
     plugin-ringsector:
@@ -51,13 +124,23 @@ Unreleased:
   Fixed:
     aaron:
       - Added IDs to dimension macros that missed them, causing them to not be shown
+      - Keep seam allowance out of the binding length calculation
     core:
       - Fix order in mergeOptions method so user settings take precendence over defaults
       - Fix upward snap for snapped percentage option when snap is a simple number
+      - The conditional loading of plugins had a bug causing them to never be loaded
+      - Make Path.split() more robust when handling edge-case. Fixes #5569
+      - Prevent utils.circlesIntersect() from running sqrt on a negative number. Fixes #5697
+    penelope:
+      - Fixed wrong use of options in a value method. Fixes #5497
     simon:
       - Replaced all instances of 'seperate' with 'separate' in option names
+    new-design:
+      - Removed unwanted debug output
     plugintest:
       - Remove names from old plugins from list option
+    plugin-annotations:
+      - Removing macros did not always remove the cutlist data in the store. Fixes #5448
     uma:
       - Changed defaults to have more rise in the back
       - Increase default rise
@@ -65,13 +148,13 @@ Unreleased:
       - Decreased default back waist dip
       - Increased default front waist dip
       - Allowed lower values on back exposure, causing back to flare out
-
+      - Fix issue with back part when bulge is on and expand is off
     waralee:
       - Pocket opening was not drawn on the facing and pocket pieces. Fixes #4026
       - Improve placement of the front welt. Fixes #4828
 
 3.0.0:
-  date: 2022-09-30
+  date: 2023-09-30
   Changed:
     all:
       - All FreeSewing pacakges are now ESM only.

@@ -2,10 +2,10 @@
 title: Notizen
 ---
 
-Every pattern has a **notes** attribute that is optional.
+Jedes Muster hat ein **notes** Attribut, das optional ist.
 
-The notes field allows you to add your notes to a pattern. This field supports markdown, so you can use rich formatting, or even embed images.
+Im Notizfeld kannst du deine Notizen zu einem Muster hinzufügen. Dieses Feld unterstützt Markdown, sodass du umfangreiche Formatierungen verwenden oder sogar Bilder einbetten kannst.
 
 <Note>
-If you make your pattern public, your notes will also be public.
+Wenn du dein Muster veröffentlichst, sind auch deine Notizen öffentlich.
 </Note>

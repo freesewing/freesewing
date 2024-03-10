@@ -5,6 +5,7 @@ date: "2021-03-06"
 intro: "Not only did Wouter sew this Haring's Hortensia handbag, he also designed the fabric and made the pattern! He shared that he made the fabric design with his daughter and had it printed through Spoonflower."
 title: "Hortensia by Wouter"
 designs: ["hortensia"]
+author: 132
 ---
 
 Not only did Wouter sew this Haring's Hortensia handbag, he also designed the fabric and made the pattern! He shared that he made the fabric design with his daughter and had it printed through Spoonflower.

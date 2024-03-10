@@ -1,11 +1,11 @@
 ---
-title: "Legacy armhole depth"
+title: "Legacy Armlochtiefe"
 ---
 
-This option allows you to use the legacy way of calculating the armhole depth in Brian, which Wahid extends.
+Mit dieser Option kannst du die herkömmliche Methode zur Berechnung der Armlochtiefe in Brian verwenden, die Wahid erweitert.
 
-The legacy (v2) way used the biceps circumference to estimate the armhole depth.
+Bei der alten Methode (v2) wurde der Bizepsumfang verwendet, um die Armlochtiefe zu schätzen.
 
-The v3 way instead uses the waist to armpit measurement to locate the bottom of the armhole.
+Bei der v3-Methode wird stattdessen das Maß von der Taille bis zur Achselhöhle verwendet, um den unteren Rand des Armlochs zu bestimmen.
 
-If you enable this option, the Brian block will revert to the v2 way of calculating the armhole depth, and Wahid will follow.
+Wenn du diese Option aktivierst, kehrt der Brian-Block zur v2-Methode für die Berechnung der Armlochtiefe zurück, und Wahid folgt.

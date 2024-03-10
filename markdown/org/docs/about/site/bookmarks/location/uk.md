@@ -1,8 +1,8 @@
 ---
-title: Location
+title: Місцезнаходження
 ---
 
-Every bookmark has a **loation** attribute that is mandatory. It holds the URL of the bookmark.
+Every bookmark has a **location** attribute that is mandatory. Він містить URL-адресу закладки.
 
-A bookmark without a location or URL is useless, as this holds the location the bookmark should point to.
+Закладка без місцезнаходження або URL-адреси є марною, оскільки вона зберігає місце, на яке має вказувати закладка.
 

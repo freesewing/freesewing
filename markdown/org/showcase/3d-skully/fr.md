@@ -1,14 +1,15 @@
 ---
-title: "Our beloved Skully now available in 3d"
-caption: "Doesn't it look sooo good"
+title: "Notre bien-aimé Skully maintenant disponible en 3D"
+caption: "N'est-ce pas que ça a l'air si bon ?"
 date: 20231101
-intro: "A real-life skully, with hair and needle"
+intro: "Un skully en chair et en os, avec des cheveux et une aiguille."
 designs:
-  - "skully"
+  - "crâne"
 maker: joost
+author: 132
 ---
 
-One day there was an unexpected delivery on my doorstep. I wasn't really certain what to make of it because I didn't recall ordering anything lately. Suffice to say I was not at all prepared for the awesomeness inside because when I opened the box I found this lovingly handcrafted real-life version of Skully, FreeSewing's beloved logo and mascot.
+Un jour, une livraison inattendue est arrivée sur le pas de ma porte. Je ne savais pas trop quoi en penser car je ne me souvenais pas avoir commandé quoi que ce soit dernièrement. En effet, lorsque j'ai ouvert la boîte, j'ai trouvé cette version réelle de Skully, le logo et la mascotte bien-aimés de FreeSewing, fabriquée avec amour et à la main.
 
-This is the wonderful work for Wouter who also made [the design](/designs/skully). So you can go and [make a Skully for yourself](/new/skully). You know you want one!
+C'est le merveilleux travail de Wouter qui a également fait [le design](/designs/skully). Tu peux donc aller sur [et te fabriquer un Skully](/new/skully). Tu sais que tu en veux un !
 

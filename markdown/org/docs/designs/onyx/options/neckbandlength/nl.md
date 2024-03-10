@@ -1,11 +1,11 @@
 ---
-title: "Neckband length"
+title: "Lengte nekband"
 ---
 
-Controls how long to make the neckband, as a percentage of the circumference of the neckline.
+Bepaalt hoe lang de nekband moet worden, als percentage van de omtrek van de halslijn.
 
-Too large a value will make for a loose neckband that doesn't hold its shape properly, while too small a value will cause the fabric around the neckband to be gathered.
+Een te grote waarde zorgt voor een losse nekband die zijn vorm niet goed vasthoudt, terwijl een te kleine waarde ervoor zorgt dat de stof rond de nekband wordt gerimpeld.
 
-Materials that stretch more easily should use smaller values. 80-85% is a reasonable value when using swim fabric, and 75% is a reasonable value for rib knit.
+Materialen die gemakkelijker uitrekken moeten kleinere waarden gebruiken. 80-85% is een redelijke waarde als je zwemstof gebruikt en 75% is een redelijke waarde voor ribtricot.
 
-Note: This option is only available if the 'neck style' option is set to 'neckband.'
+Opmerking: Deze optie is alleen beschikbaar als de optie 'halsstijl' is ingesteld op 'nekband'.

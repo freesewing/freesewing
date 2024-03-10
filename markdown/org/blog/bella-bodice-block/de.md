@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Weißt du noch, als wir nach draußen gehen durften?"
 date: "2021-01-17"
 intro: "Der Bella Miederblock für Damenmode"

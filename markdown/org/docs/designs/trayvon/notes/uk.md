@@ -1,10 +1,10 @@
 ---
-title: "Trayvon tie: Designer Notes"
+title: "Краватка з тройона: Дизайнерські нотатки"
 ---
 
-There's about a million patterns for ties on the internet, so why make another one, right?
+В інтернеті є близько мільйона моделей краваток, тож навіщо створювати ще одну?
 
-Well, this started hen I wanted to make a tie but every pattern I found was cutting corners. Specifically, they all put the seam between the back and the font at the exact tip. Which, sure, is easier to make. But that's not how ties are supposed to be made.
+Все почалося з того, що я захотів зробити краватку, але всі викрійки, які я знайшов, були занадто вузькими. Зокрема, всі вони кладуть шов між спинкою і купіллю точно на кінчику. Що, звісно, легше зробити. Але краватки не повинні зав'язуватися таким чином.
 
 So, I designed this pattern so I could make ties that looks professional, and not home-made.
 

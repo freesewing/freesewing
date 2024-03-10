@@ -2,20 +2,20 @@
 title: Викрійки
 ---
 
-(sewing) Patterns is why most people end up on FreeSewing.org, so they are an important part of the website.
+(шиття) Викрійки - це те, через що більшість людей потрапляють на FreeSewing.org, тому вони є важливою частиною сайту.
 
-FreeSewing does not store the pattern itself, instead we store your settings you used to draft the design, this includes:
+FreeSewing не зберігає саму викрійку, натомість ми зберігаємо ваші налаштування, які ви використовували для створення дизайну:
 
-- Any design options you tweaked
-- Any core settings you changes
-- The measurements used
+- Будь-які варіанти дизайну, які ви змінили
+- Будь-які основні налаштування, які ви змінюєте
+- Використані вимірювання
 
-With this, we can regenerate the pattern. So this is all we store.
+За допомогою цього ми можемо регенерувати візерунок. Тож це все, що ми зберігаємо.
 
-This also means that if a pattern goes through significant changes, or a new major version with breaking changes is released, we may no longer be able to generate the (old) pattern. For this reason, you should download the pattern as PDF or SVG and save it locally if you want to archive it.
+Це також означає, що якщо шаблон зазнає значних змін або виходить нова велика версія з докорінними змінами, ми більше не зможемо згенерувати (старий) шаблон. Тому вам слід завантажити шаблон у форматі PDF або SVG і зберегти його локально, якщо ви хочете заархівувати його.
 
-<Tldr compact> Backup your patterns if you intent to keep them for a long time</Tldr>
+<Tldr compact> Створюйте резервні копії шаблонів, якщо маєте намір зберігати їх тривалий час</Tldr>
 
-In addition to the settings required to recreate the pattern, patterns are stored with the following fields:
+На додаток до параметрів, необхідних для відтворення візерунка, візерунки зберігаються з наступними полями:
 
 <ReadMore />

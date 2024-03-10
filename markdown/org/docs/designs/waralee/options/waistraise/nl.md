@@ -2,7 +2,7 @@
 title: "Hoogte Taille"
 ---
 
-How much to raise the waist from the seat depth measurement. This influences the depth of the crotch cut-out.
+Hoeveel moet de taille omhoog ten opzichte van de zitdiepte. Dit beïnvloedt de diepte van de kruisuitsnijding.
 
 
 

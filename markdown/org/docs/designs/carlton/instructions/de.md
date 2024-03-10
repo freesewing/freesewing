@@ -62,6 +62,6 @@ Vergiss beim Zuschneiden nicht die Nahtzugabe für diese Teile, wenn du diese Te
 
 <Fixme>
 
-Die Dokumentation für dieses Muster muss noch geschrieben werden. In the meantime their are some preliminary instructions for ([Carlita, Carlton's Counterpart](/docs/designs/carlita/instructions/)) that should help.
+Die Dokumentation für dieses Muster muss noch geschrieben werden. In der Zwischenzeit gibt es einige vorläufige Anleitungen für ([Carlita, Carltons Gegenstück](/docs/designs/carlita/instructions/)), die helfen sollten.
 
 </Fixme>

@@ -1,14 +1,14 @@
 ---
-title: Binding width
+title: Bindbreedte
 ---
 
-Controls the width of the kniw binding on Aaron.
+Controls the width of the knit binding on Aaron.
 
-The default knit binding width is 6 x the seam allowance. For metric users with the default 1cm seam allowance, this results in a 1.5cm wide knit binding which is a good value.
+De standaard gebreide bindbreedte is 6 x de naadtoeslag. Voor metrische gebruikers met de standaard naadtoeslag van 1 cm resulteert dit in een gebreide binding van 1,5 cm breed, wat een goede waarde is.
 
-For imperial users (who have a default seam allowance of 0.5") or users who choose to use a larger seam allowance, the value of 6 time the seam allowance will probable result in a knit binding that it too wide, so this option allows you to control that.
+Voor imperial gebruikers (die een standaard naadtoeslag van 0,5" hebben) of gebruikers die kiezen voor een grotere naadtoeslag, zal de waarde van 6 keer de naadtoeslag waarschijnlijk resulteren in een te brede gebreide binding, dus met deze optie kun je dat regelen.
 
 <Note>
 
-This option is expressed in percetage of the seam allowance. So the default s600%, or 6 time the seam allowance,.
+This option is expressed in percentage of the seam allowance. So the default is 600%, or 6 time the seam allowance.
 </Note>

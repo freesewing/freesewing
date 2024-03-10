@@ -1,77 +1,77 @@
 ---
-title: Using the FreeSewing.org website
+title: Utiliser le site FreeSewing.org
 ---
 
-On these pages, we'll paint a high-level picture of how to get the most out of the FreeSewing.org website. Most people will be most interested in [How to generate bespoke sewing patterns](/docs/about/site/draft/).
+Sur ces pages, nous te donnons un aperçu de la façon dont tu peux tirer le meilleur parti du site FreeSewing.org. La plupart des gens seront surtout intéressés par [Comment générer des patrons de couture sur mesure](/docs/about/site/draft/).
 
 
 <Comment by="joost">
 
-##### Where can I download the patterns?
+##### Où puis-je télécharger les patrons ?
 
-It can be frustrating for visitors who come here expecting a website where they can download sewing patterns that they can't seem to find the sewing patterns to download. Almost like hiding the *download button* is some elaborate scheme to waste their time.
+Il peut être frustrant pour les visiteurs qui viennent ici en s'attendant à trouver un site Web où ils peuvent télécharger des patrons de couture qu'ils ne parviennent pas à trouver les patrons de couture à télécharger. C'est comme si le fait de cacher le *bouton de téléchargement* était un stratagème élaboré pour leur faire perdre leur temps.
 
-I don't really know how to fix this because I cannot control people's expectations.
-FreeSewing.org is _very_ different from the a website with some links to PDF sewing patterns.
-So if that's what you're expecting, we almost have to de-train you before we can talk about what this site offers.
+Je ne sais pas vraiment comment régler ce problème car je ne peux pas contrôler les attentes des gens.
+FreeSewing.org est _très_ différent d'un site web avec quelques liens vers des patrons de couture en PDF.
+Alors si c'est ce à quoi tu t'attends, nous devons presque te désentrainer avant de pouvoir parler de ce que ce site offre.
 
-So I'm not going to do that. I'm going to assume you are reading with an open mind.
+Je ne vais donc pas le faire. Je vais supposer que tu lis avec un esprit ouvert.
 
 </Comment>
 
-## Finding your way
+## Trouve ton chemin
 
-On every page of FreeSewing.org is the same header with links to the most important sections of the site:
+Sur chaque page de FreeSewing.org se trouve le même en-tête avec des liens vers les sections les plus importantes du site :
 
-- [Designs](/designs/) shows our collection of parametric designs you can generate bespoke sewing patterns from
-- [Documentation](/documentation/) holds all the documentation, for the website, for our designs, everything
-- [Blog](/blog/) holds blog posts with updates and news about FreeSewing
-- [Showcase](/showcase/) show examples from the FreeSewing community, things they have made with FreeSewing patterns
-- [Account](/account/) is where you can manage your FreeSewing account
-- [Support](/support/) lists your options for where to get help
-- [Search](/search/) can help you find something if you're not certain where to start looking
+- [Design](/designs/) présente notre collection de design paramétriques à partir desquels tu peux créer des patrons de couture sur mesure
+- [Documentation](/documentation/) contient toute la documentation, pour le site Web, pour nos designs, tout
+- [Blog](/blog/) contient des articles de blog avec des mises à jour et des nouvelles sur FreeSewing
+- [Galerie](/showcase/) montre des exemples de la communauté FreeSewing, des choses qu'ils ont faites avec les patrons FreeSewing
+- [Compte](/account/) est l'endroit où tu peux gérer ton compte FreeSewing
+- [Soutien](/support/) liste tes options pour savoir où trouver de l'aide
+- [La recherche](/search/) peut t'aider à trouver quelque chose si tu n'es pas certain de savoir où commencer à chercher
 
-In addition, the header also has buttons to change the **Theme** (or color scheme) and **Language** of the website.
+En outre, l'en-tête comporte également des boutons permettant de modifier le **Thème** (ou schéma de couleurs) et la **Langue** du site Web.
 
-On mobile, the header is at the bottom of the page and because of space constraints not all of these links are shown. However, click the *hamburger icon* to open the menu that contains all of these links.
+Sur mobile, l'en-tête se trouve en bas de la page et en raison des contraintes d'espace, tous ces liens ne sont pas affichés. Cependant, clique sur *l'icône hamburger* pour ouvrir le menu qui contient tous ces liens.
 
-## Signing up or Signing in
+## S'inscrire ou se connecter
 
-You can sign up for a FreeSewing account at [/signin](/signin/). We support signing in with your Google or GitHub account if that is easier for you.
+Tu peux t'inscrire pour obtenir un compte FreeSewing à l'adresse [/signin](/signin/). Nous prenons en charge la connexion avec ton compte Google ou GitHub si c'est plus facile pour toi.
 
-If you already have an account, you can sign in to your account at at [/signin](/signin/).
+Si tu as déjà un compte, tu peux te connecter à ton compte à l'adresse [/signin](/signin/).
 
-Some functionality requires a FreeSewing account. So I will assume you have an account for the remainder of these instructions.
+Certaines fonctionnalités nécessitent un compte FreeSewing. Je vais donc supposer que tu as un compte pour la suite de ces instructions.
 
-## Important account settings
+## Paramètres importants du compte
 
-When your signed in, you can navigate to [/account](/account/) to manage the data stored in your account, which includes various settings.
+Lorsque tu es connecté, tu peux naviguer vers [/account](/account/) pour gérer les données stockées dans ton compte, ce qui inclut divers paramètres.
 
-I'd like to highlight a couple of them that are worth your attention:
+J'aimerais en souligner quelques-unes qui méritent ton attention :
 
 ### Expérience de l'utilisateur
 
-The [User Experience setting](/account/control/) allows you to gradually reveal more complexity. If you are a little overwhelmed with everything FreeSewing.org has to offer, setting this to a lower value will gardually hide more features for the sake of simplicity. But setting a higher value here will show more features and functionality.
+Le réglage de[ l'expérience utilisateur ](/account/control/) te permet de révéler progressivement plus de complexité. Si tu es un peu submergé par tout ce que FreeSewing.org a à offrir, en réglant ce paramètre sur une valeur inférieure, tu masqueras progressivement plus de fonctionnalités dans un souci de simplicité. Mais en définissant une valeur plus élevée ici, tu afficheras plus de caractéristiques et de fonctionnalités.
 
-Dial this setting down if you want a simpler experience. Turn it up if you want more power, or some things that you know exists are not shown on your screen.
+Diminue ce paramètre si tu veux une expérience plus simple. Augmente-le si tu veux plus de puissance, ou si certaines choses dont tu connais l'existence ne sont pas affichées sur ton écran.
 
 ### Authentification à deux facteurs
 
-Please enable [Two-Factor Authentication](/account/mfa/) to secure your FreeSewing account.
+Active [l'authentification a deux facteurs](/account/mfa/) pour sécuriser ton compte FreeSewing.
 
-## Make it your own
+## Fais-le tien
 
-Now that you have a FreeSewing account, there's more you can do on FreeSewing.org. Click through to learn more about the following features:
+Maintenant que tu as un compte FreeSewing, tu peux faire bien d'autres choses sur FreeSewing.org. Clique pour en savoir plus sur les caractéristiques suivantes :
 
 - [Compte](/docs/about/site/account)
 - [Jeux de mesures](/docs/about/site/sets)
 - [Patrons](/docs/about/site/patterns)
-- [Curated measurements sets](/docs/about/site/csets)
-- [Bookmarks](/docs/about/site/bookmarks)
+- [Sets de mesures curatées](/docs/about/site/csets)
+- [Marques pages](/docs/about/site/bookmarks)
 - [Clés API](/docs/about/site/apikeys)
 
 
-## Generating sewing patterns
+## Générer des patrons de couture
 
-With that out of the way, let's move on to [How to generate bespoke sewing patterns](/docs/about/site/draft/).
+Ceci étant dit, passons à [Comment générer des patrons de couture sur mesure](/docs/about/site/draft/).
 

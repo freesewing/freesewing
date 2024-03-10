@@ -1,11 +1,11 @@
 ---
-title: "Legacy armhole depth"
+title: "Legacy armsgat diepte"
 ---
 
-This option allows you to use the legacy way of calculating the armhole depth in Brian, which Teagan extends.
+Met deze optie kun je de oude manier van het berekenen van de armsgatdiepte in Brian gebruiken, die Teagan verlengt.
 
-The legacy (v2) way used the biceps circumference to estimate the armhole depth.
+De oude (v2) manier gebruikte de bicepsomtrek om de armsgatdiepte te schatten.
 
-The v3 way instead uses the waist to armpit measurement to locate the bottom of the armhole.
+De v3 manier gebruikt in plaats daarvan de taille tot oksel meting om de onderkant van het armsgat te bepalen.
 
-If you enable this option, the Brian block will revert to the v2 way of calculating the armhole depth, and Teagan will follow.
+Als je deze optie inschakelt, zal het blok Brian terugkeren naar de v2 manier om de armsgatdiepte te berekenen, en Teagan zal volgen.

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Paco sobre tu servidor"
 date: "2020-08-10"
 intro: "Te presentamos a Paco: Nuestro nuevo patrón unisex para unos elegantes pantalones de verano"

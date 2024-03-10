@@ -10,16 +10,16 @@ Die Größen basieren auf den Reißverschlüssen der Marke YKK und beziehen sich
 
 Größentabelle für Hortensia:
 
-| Option       | Größe in Millimetern (mm) |
-| ------------ | ------------------------- |
-| #Unbesiegbar | 0                         |
-| #3           | 4.8                       |
-| #4           | 5.4                       |
-| #4.5         | 5.9                       |
-| #5           | 6.2                       |
-| #6           | 7                         |
-| #8           | 8                         |
-| #10          | 10.6                      |
+| Option     | Größe in Millimetern (mm) |
+| ---------- | ------------------------- |
+| #Invisible | 0                         |
+| #3         | 4.8                       |
+| #4         | 5.4                       |
+| #4.5       | 5.9                       |
+| #5         | 6.2                       |
+| #6         | 7                         |
+| #8         | 8                         |
+| #10        | 10.6                      |
 
 <Note>
 

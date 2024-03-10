@@ -2,9 +2,9 @@
 title: Bild
 ---
 
-Every measurements set has a **image** attribute that is optional.
+Jeder Messdatensatz hat ein Attribut **image** , das optional ist.
 
-A picture says more than a 1000 words, so if you have multiple measurements sets, this can help you tell them apart.
+Ein Bild sagt mehr als 1000 Worte. Wenn du also mehrere Messgeräte hast, kann dir das helfen, sie zu unterscheiden.
 
-So if you want, you can add an image to your measurements set. It's up to you.
+Wenn du willst, kannst du also ein Bild zu deinem Messgerät hinzufügen. Es liegt an dir.
 

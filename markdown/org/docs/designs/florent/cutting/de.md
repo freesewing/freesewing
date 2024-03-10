@@ -2,7 +2,7 @@
 title: "Florent Flachmütze: Schnittanleitung"
 ---
 
-To make Floren, cut out the following parts:
+To make Florent, cut out the following parts:
 
 - **Oberstoff**
   - Schneiden Sie **1 oben** auf der Falte, aber nicht die Mittennahterlaubnis oder **2 Top** mit der Mittennahterlaubnis.
@@ -19,7 +19,7 @@ To make Floren, cut out the following parts:
 
 Der Unterteil ist eingerückt, während der Oberteil versetzt wird, so dass die Naht "unter den Schwemmkanten" fällt. Denken Sie daran, wenn Sie die Teile schneiden, und markieren Sie sie entsprechend, damit Sie nicht mit der Naht oben auf der Stirn landen (ich möchte Sie nicht zu dieser Designwahl zwingen, Ich möchte lediglich auf den Unterschied zwischen den Teilen hinweisen, damit Sie das kennen und entsprechend handeln).
 
-If you want to avoid a seam down the middle of the top part, you can cut 1 top _on the fold_ rather than 2 tops and sew them together. The fold line would be the horizontal stretch of the top part, and you'd only have a seam at the right side where it tapers downwards.
+Wenn du eine Naht in der Mitte des Oberteils vermeiden willst, kannst du statt 2 Oberteilen 1 Oberteil _an der Falte_ zuschneiden und sie zusammennähen. Die Faltlinie wäre die horizontale Strecke des oberen Teils, und du hättest nur eine Naht an der rechten Seite, wo sie sich nach unten hin verjüngt.
 
 Ein typisches Florent Layout sieht folgendermaßen aus:
 

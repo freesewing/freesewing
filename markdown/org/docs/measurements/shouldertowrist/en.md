@@ -10,3 +10,4 @@ top of the shoulder meets the side of the arm.
 It is also where the top of the shoulder seam sits and the sleeve begins
 on a well-fitting dress shirt.
 Let your arm hang naturally in a slight bend, and measure along your slightly bent arm up to your wrist.
+<MeasieImage />

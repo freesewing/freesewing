@@ -2,10 +2,10 @@
 title: Remarques
 ---
 
-Every measurements set has a **notes** attribute that is optional.
+Chaque jeu de mesures possède un attribut **notes** qui est facultatif.
 
-The notes field allows you to add your notes to a measurements set. This field supports markdown, so you can use rich formatting, or even embed images.
+Le champ des notes te permet d'ajouter tes notes à un ensemble de mesures. Ce champ prend en charge le markdown, tu peux donc utiliser un formatage riche ou même intégrer des images.
 
 <Note>
-If you make your measurements set public, your notes will also be public.
+Si tu rends ton jeu de mesures public, tes notes seront également publiques.
 </Note>

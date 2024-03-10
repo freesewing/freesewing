@@ -1,6 +1,6 @@
 ---
-title: Email Address
+title: E-mailadres
 ---
 
-Your email address ensures we can reach you when it's needed. For example when you have forgotten your password.
+Je e-mailadres zorgt ervoor dat we je kunnen bereiken wanneer dat nodig is. Bijvoorbeeld wanneer je je wachtwoord bent vergeten.
 

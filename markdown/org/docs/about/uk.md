@@ -1,5 +1,5 @@
 ---
-title: About FreeSewing
+title: Про FreeSewing
 ---
 
-<ReadMore list />
+<ReadMore />

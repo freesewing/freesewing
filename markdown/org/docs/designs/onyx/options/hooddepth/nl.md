@@ -2,6 +2,6 @@
 title: "Capuchon diepte"
 ---
 
-Controls how much room will be in the hood around the back of the head.
+Bepaalt hoeveel ruimte er in de kap is rond de achterkant van het hoofd.
 
-Note: This option is only available if the 'neck style' option is set to 'hood.'
+Opmerking: Deze optie is alleen beschikbaar als de optie 'halsstijl' is ingesteld op 'capuchon'.

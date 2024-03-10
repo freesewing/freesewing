@@ -1,9 +1,9 @@
 ---
-title: "Gozer the ghost: What You Need"
+title: "Привид Гозера: що вам потрібно"
 ---
 
-To make Gozer, you will need the following:
+Щоб зробити Гозер, вам знадобиться наступне:
 
 - [Базові матеріали для шиття](/docs/sewing/basic-sewing-supplies)
-- About 1 bed sheet
+- Приблизно 1 простирадло
 

@@ -1,8 +1,8 @@
 ---
-title: Location
+title: Ubicación
 ---
 
-Every bookmark has a **loation** attribute that is mandatory. It holds the URL of the bookmark.
+Every bookmark has a **location** attribute that is mandatory. Contiene la URL del marcador.
 
-A bookmark without a location or URL is useless, as this holds the location the bookmark should point to.
+Un marcador sin una ubicación o URL es inútil, ya que ésta contiene la ubicación a la que debe apuntar el marcador.
 

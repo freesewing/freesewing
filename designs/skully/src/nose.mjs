@@ -53,7 +53,8 @@ export const nose = {
       paths.p1 = new Path()
         .move(points.point0)
         .curve(points.point0Cp1, points.point1Cp2, points.point1)
-        .setText(complete ? 'nose' + ' (10)' : '', textAttribute)
+        .addText(complete ? 'skully:nose' : '', textAttribute)
+        .addText(complete ? ' (10)' : '', textAttribute)
 
       pl = paths.p1.length()
     } while (iterations < 100 && pl - noseSide > 1)
@@ -71,7 +72,8 @@ export const nose = {
     paths.p2 = new Path()
       .move(points.point3)
       .curve(points.point3Cp1, points.point0Cp2, points.point0)
-      .setText(complete ? 'nose' + ' (10)' : '', textAttribute)
+      .addText(complete ? 'skully:nose' : '', textAttribute)
+      .addText(complete ? ' (10)' : '', textAttribute)
 
     paths.seam = new Path()
       .move(points.point0)

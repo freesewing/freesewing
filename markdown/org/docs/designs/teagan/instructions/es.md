@@ -77,7 +77,7 @@ Ahora es el momento de coser los extremos de nuestra banda de punto.
 
 - Ahora que los extremos de la banda están unidos, es el momento de terminar los últimos 6 cm, estirando y cosiendo la banda como hiciste con el resto.
 
-¡Hurra! ¡Has terminado la parte más difícil! Hurray! You've finished the trickiest part! Optionally, you can secure the raw edges by stitching them down to the T-shirt fabric, just inside the knit band with a sig-zag or coverlock stitch. No es obligatorio, pero es un detalle que verás en muchas camisetas listas para llevar, y puede ayudar a que la banda del cuello quede plana.
+¡Hurra! ¡Has terminado la parte más difícil! Optionally, you can secure the raw edges by stitching them down to the T-shirt fabric, just inside the knit band with a zig-zag or coverlock stitch. No es obligatorio, pero es un detalle que verás en muchas camisetas listas para llevar, y puede ayudar a que la banda del cuello quede plana.
 
 ![Cose la banda de punto para fijarla](step03i.svg)
 
@@ -85,7 +85,7 @@ Ahora es el momento de coser los extremos de nuestra banda de punto.
 
 <Tip>
 
-A more extensive how-to on knit binding can be found in the [Aaron Instuctions](/docs/designs/aaron/instructions).
+A more extensive how-to on knit binding can be found in the [Aaron Instructions](/docs/designs/aaron/instructions).
 
 </Tip>
 

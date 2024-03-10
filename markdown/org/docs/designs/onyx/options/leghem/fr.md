@@ -1,7 +1,7 @@
 ---
-title: "Leg hem"
+title: "Ourlet de jambe"
 ---
 
-Controls how wide the hem going around the legs will be, as a multiple of the seam allowance. A hem of 2.5cm/1" is a common value.
+Contrôle la largeur de l'ourlet autour des jambes, en tant que multiple de la marge de couture. Un ourlet de 2,5 cm est une valeur courante.
 
-Note: This option is only available if the _Leg ribbing_ option is set to 'hem.'
+Remarque : cette option n'est disponible que si l'option _Leg ribbing_ est réglée sur 'hem'.

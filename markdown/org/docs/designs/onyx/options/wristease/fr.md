@@ -1,9 +1,9 @@
 ---
-title: "Wrist ease"
+title: "Facilité du poignet"
 ---
 
-Affects how wide the end of the sleeve is on some garments. There is no effect for sleeves ending at the biceps or above. There is no effect for sleeves ending at the biceps or above.
+Affecte la largeur de l'extrémité de la manche sur certains vêtements. Il n'y a pas d'effet pour les manches se terminant au niveau du biceps ou au-dessus. Il n'y a pas d'effet pour les manches se terminant au niveau du biceps ou au-dessus.
 
-> ##### This option allows negative values
+> ##### Cette option autorise les valeurs négatives
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Tu devrais utiliser l'aisance négative si tu utilises un matériau extensible que tu veux bien ajuster. Les combinaisons et les justaucorps ont généralement une aisance négative, tandis que les autres vêtements ont généralement une aisance positive.

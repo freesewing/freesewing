@@ -1,6 +1,6 @@
 ---
-title: "Neck position"
+title: "Posición del cuello"
 ---
 
-Controls where the neck hole is placed on the shirt. A value of 0% has the center of the neck hole exactly where the four raglan seams would intersect, with the front and back parts being identical. A positive value shifts the neck towards the front of the shirt.
+Controla dónde se coloca el agujero del cuello en la camiseta. Un valor de 0% tiene el centro del agujero del cuello exactamente donde se cruzarían las cuatro costuras del raglán, siendo idénticas las partes delantera y trasera. Un valor positivo desplaza el cuello hacia la parte delantera de la camiseta.
 

@@ -2,6 +2,6 @@
 title: "Rock"
 ---
 
-Select whether or not you want to add a simple gathered skirt around the waist of the garment.
+Wähle aus, ob du einen einfachen gerafften Rock um die Taille des Kleidungsstücks hinzufügen möchtest oder nicht.
 
-This is a basic skirt intended to not add much bulk to the garment while offering a degree of modesty and flair. It's designed for use with swimwear, but may work well for other types of garments.
+Dies ist ein einfacher Rock, der das Kleidungsstück nicht zu sehr aufbläht und gleichzeitig ein gewisses Maß an Bescheidenheit und Flair bietet. Es ist für Badebekleidung gedacht, kann aber auch für andere Kleidungsstücke verwendet werden.

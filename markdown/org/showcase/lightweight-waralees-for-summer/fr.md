@@ -6,6 +6,7 @@ intro: "Pas de climatisation au bureau ? Waralee à la rescousse ! Wouter a port
 title: "Waralees légers pour l'été"
 designs:
   - "waralee"
+author: 132
 ---
 
 Pas de climatisation au bureau ? Waralee à la rescousse ! Wouter a porté ces vêtements lors d'une journée plutôt chaude.

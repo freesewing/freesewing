@@ -13,9 +13,8 @@ import { useTranslation } from 'next-i18next'
 // Components
 import { Popout } from 'shared/components/popout/index.mjs'
 import { WebLink } from 'shared/components/link.mjs'
-import { V3Wip } from 'shared/components/v3-wip.mjs'
 
-export const ns = ['exporting', exportNs]
+export const ns = ['exporting', exportNs, 'workbench']
 
 export const ExportView = ({ settings, ui, design, Design }) => {
   const [link, setLink] = useState(false)
@@ -24,6 +23,7 @@ export const ExportView = ({ settings, ui, design, Design }) => {
 
   const startLoading = () => setLoadingStatus([true, 'exporting'])
   const stopLoading = () => setLoadingStatus([true, 'status:nailedIt', true, true])
+  const stopLoadingFail = () => setLoadingStatus([true, 'status:failed', true])
 
   const { t } = useTranslation(ns)
   const doExport = (format) => {
@@ -38,6 +38,7 @@ export const ExportView = ({ settings, ui, design, Design }) => {
       ui,
       startLoading,
       stopLoading,
+      stopLoadingFail,
       onComplete: (e) => {
         if (e.data.link) {
           setLink(e.data.link)
@@ -51,8 +52,7 @@ export const ExportView = ({ settings, ui, design, Design }) => {
 
   return (
     <div className="max-w-screen-xl m-auto py-8">
-      <h2>{t('export')}</h2>
-      <V3Wip />
+      <h2>{t('workbench:export')}</h2>
       <p className="text-lg sm:text-xl">{t('exportPattern-txt')}</p>
       {link && (
         <Popout link compact>
@@ -65,7 +65,11 @@ export const ExportView = ({ settings, ui, design, Design }) => {
           <div key={type} className="flex flex-col gap-2 w-full sm:w-auto">
             <h4>{t(type)}</h4>
             {exportTypes[type].map((format) => (
-              <button key={format} className="btn btn-primary" onClick={() => doExport(format)}>
+              <button
+                key={format}
+                className="btn btn-primary uppercase"
+                onClick={() => doExport(format)}
+              >
                 {type === 'exportForPrinting' ? `${format} pdf` : format}
               </button>
             ))}

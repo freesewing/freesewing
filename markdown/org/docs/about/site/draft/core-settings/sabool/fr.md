@@ -2,9 +2,9 @@
 title: Inclure la marge de couture
 ---
 
-Ce [Paramètre de base][core-settings] détermine s'il faut ou non inclure la couture sur votre modèle.
+Ce [réglage de base][core-settings] contrôle l'inclusion ou non de la marge de couture sur ton patron.
 
-Par défaut, la marge de couture n'est pas incluse. Pour générer un motif avec couture vous devez l'activer en définissant cette option sur **Oui**.
+Par défaut, la marge de couture n'est pas incluse. Pour générer un patron avec la marge de couture vous devez l'activer en définissant cette option sur **Oui**.
 
 <Note>
 
@@ -17,4 +17,4 @@ Toutefois, pour des raisons de commodité, nous avons divisé cette fonction en 
 Cette dernière option ne sera affichée que si vous avez activé la première.
 
 </Note>
-[core-settings]: /docs/site/draft/core-settings/
+[core-settings]: /docs/about/site/draft/core-settings/

@@ -4,7 +4,7 @@ title: "Tamiko Oberteil: Anleitung zum Nähen"
 
 ### Schritt 1: Beende die Rüstungsnaht
 
-![Finsche die Rüstungsnaht](step03.png)
+![Finish the armhole seam](step03.png)
 
 - Beenden Sie die Armlochnaht mit einem schmalen Saum.
 

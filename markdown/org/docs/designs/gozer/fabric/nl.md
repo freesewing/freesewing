@@ -1,7 +1,7 @@
 ---
-title: "Gozer the ghost: Fabric Options"
+title: "Gozer het spook: Stofopties"
 ---
 
 ## Hoofd stof
 
-Traditionally, white sheets are used.
+Traditioneel worden witte lakens gebruikt.

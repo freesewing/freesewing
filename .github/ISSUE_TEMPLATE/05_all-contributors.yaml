@@ -53,6 +53,7 @@ body:
       description: If there is any other info or pictures you'd like to add you can do so here
   - type: markdown
     attributes:
-      value: Please keep in mind that **FreeSewing is a community project** that depends on **[your support](https://freesewing.org/community/join/)**.
+      value: |
+        Please keep in mind that **FreeSewing is a non-profit project** that depends on **[your support](https://freesewing.org/patrons/join/)**.
 ---
 

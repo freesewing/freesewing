@@ -1,82 +1,82 @@
 ---
-title: "Otis, the simple baby romper: Sewing Instructions"
+title: "Otis, der einfache Babystrampler: Anleitung zum Nähen"
 ---
 
 <Note>
 
-You should use a stretch stitch on your sewing machine. Small zig-zag stitches work really well. The side seams can also be done with a serger.
+Du solltest einen Stretchstich an deiner Nähmaschine verwenden. Kleine Zickzackstiche funktionieren sehr gut. Die Seitennähte können auch mit einem Serger bearbeitet werden.
 
 </Note>
 
-## Step 1: Bindings
+## Schritt 1: Bindungen
 
-### Two options
+### Zwei Optionen
 
-There are two ways to do the bindings. You can use it like double-folded bias binding, or just fold it in two and stitch that to the pieces. The double-folding will look nicer and more finished, but is a lot more involved.
+Es gibt zwei Möglichkeiten, die Bindungen zu erstellen. Du kannst es wie doppelt gefaltetes Schrägband verwenden oder es einfach in zwei Teile falten und an die Stücke nähen. Die doppelte Faltung sieht schöner und fertiger aus, ist aber viel aufwändiger.
 
-#### Double-folded
+#### Doppelt gefaltet
 
-  - Fold both bindings along the long side in two, _wrong sides together_, and give it a good press.
-  - Mark the middle of each of the bindings (notch) and of the front and back parts.
-  - Attach the binding to the corresponding part, _good sides together_. Make sure you distribute the binding evenly along the edge.
-  - Sew just shy of the SA.
-  - Press the binding towards the edge and flip your part over.
-  - Now fold the remaining SA under and press.
-  - Sew this side of the binding to the part through all five layers.
+  - Falte beide Einbände an der langen Seite in zwei Teile, _verkehrt herum_, und bügle sie fest.
+  - Markiere jeweils die Mitte der Bindungen (Kerbe) und der Vorder- und Rückenteile.
+  - Befestige die Bindung an dem entsprechenden Teil, _gute Seiten zusammen_. Achte darauf, dass du die Bindung gleichmäßig entlang der Kante verteilst.
+  - Näht kurz vor dem SA.
+  - Drücke die Bindung an den Rand und drehe dein Teil um.
+  - Falte nun die restlichen SA unter und bügle sie.
+  - Nähen Sie diese Seite des Einbandes durch alle fünf Lagen hindurch an das Teil.
 
-#### Fold and stitch
+#### Falten und nähen
 
-  - Fold both bindings along the long side in two, _wrong sides together_, and give it a good press.
-  - Mark the middle of each of the bindings and of the front and back parts.
-  - Attach the folded binding to the corresponding part, _good sides together_. Make sure you distribute the binding evenly along the edge. Make sure you distribute the binding evenly along the edge.
-  - Sew just shy of the SA.
-  - Press the binding towards the edge, pressing the SA towards the _wrong side_.
-  - Sew through the part and the SA underneath, holding the folded SA on the _wrong side_.
+  - Falte beide Einbände an der langen Seite in zwei Teile, _verkehrt herum_, und bügle sie fest.
+  - Markiere jeweils die Mitte der Bindung sowie der Vorder- und Rückenteile.
+  - Befestige den gefalteten Einband an dem entsprechenden Teil, _gute Seiten zusammen_. Achte darauf, dass du die Bindung gleichmäßig entlang der Kante verteilst. Achte darauf, dass du die Bindung gleichmäßig entlang der Kante verteilst.
+  - Näht kurz vor dem SA.
+  - Drücke die Bindung zur Kante hin, wobei du die SA in Richtung der _falschen Seite_drückst.
+  - Nähen Sie durch das Teil und die SA darunter, wobei Sie die gefaltete SA auf der _falschen Seite_halten.
 
-## Step 2: Attach body parts
+## Schritt 2: Körperteile anbringen
 
-  - Lay the back and front parts with the _good sides up_, tops facing each other.
-  - Lay the front part shoulders on top of the back part shoulders, aligning the notches on the left and right.
-  - Baste or pin together.
+  - Lege die Rück- und Vorderteile mit den _guten Seiten nach oben_und den Oberseiten zueinander.
+  - Lege die Schultern des vorderen Teils auf die Schultern des hinteren Teils und richte dabei die Kerben links und rechts aus.
+  - Hefte oder stecke sie zusammen.
 
 ## Schritt 3: Ärmel annähen
 
-  - Mark the middle of the shoulder of each sleeve.
-  - Pin the sleeve to the two body parts, aligning the middle of the sleeve with the shoulder notch.
-  - Distribute the sleeve evenly along the opening.
-  - Sew the pieces together.
+  - Markiere die Mitte der Schulter jedes Ärmels.
+  - Stecke den Ärmel an den beiden Körperteilen fest, wobei du die Mitte des Ärmels an der Schulterkerbe ausrichtest.
+  - Verteile die Hülse gleichmäßig entlang der Öffnung.
+  - Nähen Sie die Teile zusammen.
 
-## Step 4: Prepare snap placket
+## Schritt 4: Druckknopfleiste vorbereiten
 
-  - (Optional) If your fabric is flimsy, or very stretchy, cut a piece of iron-on interfacing the size of the snap placket and iron it in place.
-  - Press the SA of the snap placket over, and then press the snap placket in two.
-  - Sew just along the inner edge on the snap placket.
+  - (Optional) Wenn dein Stoff dünn oder sehr dehnbar ist, schneide ein Stück Bügelvlies in der Größe der Druckknopfleiste zu und bügle es auf.
+  - Drücke die SA der Druckknopfleiste um und bügle dann die Druckknopfleiste in zwei Teile.
+  - Nähen Sie genau an der Innenkante der Druckknopfleiste entlang.
 
-## Step 5: Body<Note> You can reinforce the sleeve openings now if you're so inclined. Add some iron-on interfacing tape to the hem of the sleeve. This will keep the sleeve opening looking nice if you have flimsy or stretchy fabric. </Note>
+## Schritt 5: Körper<Note> Wenn du möchtest, kannst du die Ärmelöffnungen jetzt verstärken. Bringe am Saum des Ärmels etwas Bügeleinlage an. Das sorgt dafür, dass die Ärmelöffnung schön aussieht, wenn du einen dünnen oder dehnbaren Stoff hast. </Note>
 
-  - Press the sleeve SA and hem over, so it'll be easier to sew the hem once you've done the next steps.
-  - Pin both front and back sides together, _wrong sides out_, from the leg opening all the way to the arm opening in the sleeve.
-  - Sew the whole seam on both sides.
-  - Turn the romper _good sides out_.
+  - Bügle den Ärmel SA und den Saum um, damit du den Saum leichter nähen kannst, wenn du die nächsten Schritte gemacht hast.
+  - Stecke die Vorder- und Rückseiten zusammen, _mit der falschen Seite nach außen_, von der Beinöffnung bis zur Armöffnung im Ärmel.
+  - Nähen Sie die gesamte Naht auf beiden Seiten.
+  - Drehe den Strampler _mit der guten Seite nach außen_.
 
 ## Schritt 6: Saum
 
-  - Fold the hems on the sleeves in.
-  - Sew them in place.
+  - Falte die Säume an den Ärmeln nach innen.
+  - Nähen Sie sie fest.
 
-## Step 7: Leg binding
+## Schritt 7: Binden der Beine
 
-  - Fold the leg binding in two length-wise, _wrong sides together_, and press.
-  - Hold the ends _good sides together_, and sew the SA at the ends.
-  - Fold the binding back, _wrong sides together_.
-  - Pin the binding to the leg opening, matching the notch to the side seam, and the beginning and end to the snap placket.
-  - Sew this binding to the leg opening like you did with the earlier bindings.
+  - Falte das Beinband der Länge nach in zwei Teile, _und bügle es linksherum_.
+  - Halte die Enden _gut aneinander_und nähe die SA an den Enden zusammen.
+  - Falte die Bindung zurück, _und lege sie falsch herum zusammen_.
+  - Stecke das Band an der Beinöffnung fest, wobei die Kerbe mit der Seitennaht und der Anfang und das Ende mit der Druckknopfleiste übereinstimmen müssen.
+  - Nähen Sie diese Bindung an die Beinöffnung, wie Sie es bei den früheren Bindungen getan haben.
 
-## Step 8: Snaps
+## Schritt 8: Druckknöpfe
 
-  - Mark the position of the snaps along the snap placket, evenly distributed.
-  - Install the studs on the _good side_ of the back part, and the sockets on the _wrong side_ of the front part.
+  - Markiere die Position der Druckknöpfe entlang der Druckknopfleiste, gleichmäßig verteilt.
+  - Montiere die Bolzen auf der _guten Seite_ des hinteren Teils und die Buchsen auf der _falschen Seite_ des vorderen Teils.
 
 ## Schritt 9: Fertig!
 
-Give it a good press all around and take a moment to enjoy the new romper. This will be the last time it will ever look this nice.
+Drücke ihn rundherum gut fest und nimm dir einen Moment Zeit, um den neuen Strampler zu genießen. Das wird das letzte Mal sein, dass es so schön aussieht.

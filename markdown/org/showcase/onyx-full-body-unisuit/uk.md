@@ -1,17 +1,18 @@
 ---
-title: "A Onyx full-body unisuit"
-caption: "Mirror selfie of this onyx body suit"
+title: "Повноцінний комбінезон Onyx"
+caption: "Дзеркальне селфі цього оніксового боді-костюма"
 date: 20231101
-intro: "A blue full-body Onyx unisuit by Thrunic"
+intro: "Синій напівкомбінезон Onyx від Thrunic"
 designs:
-  - "onyx"
+  - "онікс"
 maker: Йост
+author: 33070
 ---
 
-This is a full-body Onyx unisuit by Thrunic who created [the Onyx design](/designs/onyx). They write:
+Це повноцінний комбінезон Onyx від Thrunic, який створив [дизайн Onyx](/designs/onyx). Вони пишуть:
 
-> *A new Onyx full-body unisuit. It's got a hood, long sleeves with thumb holes, and long legs. It's fully lined except for the sleeves. It looks a lot like a wetsuit.*
+> *Новий комбінезон Onyx на все тіло. Він має капюшон, довгі рукави з отворами для великих пальців і довгі ноги. Він повністю на підкладці, окрім рукавів. Він дуже схожий на гідрокостюм.*
 > 
-> *I took it for a test swim in the cool waters around here, and it certainly does confer some warmth, though not nearly as much as a real wetsuit. I think it would work best as a garment for boating or other activities where you'll both get wet and a lot of sun exposure. It's not particularly warm when dry, but doesn't lose much insulation when it gets wet.*
+> *Я взяв його для пробного запливу в прохолодних тутешніх водах, і він, безумовно, дарує трохи тепла, хоча і не так сильно, як справжній гідрокостюм. Я думаю, що він найкраще підійде як одяг для катання на човнах або інших видів діяльності, де ви будете і мокнути, і перебувати на сонці. Він не дуже теплий у сухому стані, але не втрачає багато теплоізоляції, коли намокає.*
 
 

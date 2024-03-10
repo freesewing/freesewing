@@ -8,4 +8,5 @@ Pour mesurer votre **enfourchure devant**, attachez une corde autour de votre ta
 
 - Là où tombe le croisement de fourche d'un pantalon bien ajusté
 - À la base de votre scrotum
-- Quelque part vers l'avant de votre point périnéal
+- Quelque part vers l'avant de votre périnée
+<MeasieImage />

@@ -1,8 +1,8 @@
 ---
-title: "Carlita coat: Designer Notes"
+title: "Пальто Карліта: Нотатки дизайнера"
 ---
 
-Carlita is [Carlton](/designs/carlton) with a full bust adjustment worked into a princess seam. It is, in other words, Carlton for people who have breasts, or at least are looking for a more female-presenting cut.
+Карліта [Карлтон](/designs/carlton) з повним регулюванням бюста, обробленим швом "принцеса". Іншими словами, це Карлтон для тих, у кого є груди, або, принаймні, хто шукає більш жіночний крій.
 
 Apart from that, it's pretty much the same, with the exception of the chest pocket which for Carlita is worked into the princess seam.
 

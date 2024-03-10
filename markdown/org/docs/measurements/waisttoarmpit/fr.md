@@ -1,17 +1,18 @@
 ---
-title: Waist to armpit
+title: De la taille à l'aisselle
 ---
 
-The **waist to armpit** is the measurement from your waist up towards your armpit, measured on the side of your body.
+**De la taille à l'aisselle** est la mesure de ta taille jusqu'à ton aisselle, mesurée sur le côté de ton corps.
 
-Since _armpit_ is a bit ambigious, we recommend finding the height that would be about the tightest possible sleeve that could still work. The height of the subcapular/posterior lymph nodes is typically a good spot.
+Étant donné que _aisselles_ est un peu ambigu, nous te recommandons de trouver la hauteur qui correspondrait à la manche la plus serrée possible qui pourrait encore fonctionner. La hauteur des ganglions lymphatiques sous-capulaires/postérieurs est généralement un bon point.
 
-Or, if you're not certain where the lymph nodes under your arm are, you can follow this approach:
+Ou, si tu n'es pas certain de l'emplacement des ganglions lymphatiques sous ton bras, tu peux suivre cette approche :
 
-- Stand up straight, yet relaxed, and let your arms hang loosely by your side.
-- Raise your dominant arm (the right if you are right-handed, or the left if you are left-handed) about 30 degrees sideways, away from your body.
-- Now reach to the side of your body with the other hand, placing the palm of your hand against the side, and your thumb on your chest pointing upwards.
-- Slide your hand upwards as far as you can without having to push anything out of the way.
-- Your index finger will now sit in the armput, which is a bit too high. But your middlefinger is a good spot to mark as the start of your armpit.
+- Tiens-toi droit, tout en étant détendu, et laisse tes bras pendre librement le long de ton corps.
+- Lève ton bras dominant (le droit si tu es droitier, ou le gauche si tu es gaucher) d'environ 30 degrés sur le côté, loin de ton corps.
+- Attrape maintenant le côté de ton corps avec l'autre main, en plaçant la paume de ta main contre le côté, et ton pouce sur ta poitrine en pointant vers le haut.
+- Fais glisser ta main vers le haut aussi loin que possible sans avoir à pousser quoi que ce soit.
+- Ton index se trouve maintenant dans l'aisselle, ce qui est un peu trop haut. Mais ton majeur est un bon point à marquer comme étant le début de ton aisselle.
 
 
+<MeasieImage />

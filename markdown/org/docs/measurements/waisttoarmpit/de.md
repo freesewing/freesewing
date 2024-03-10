@@ -1,17 +1,18 @@
 ---
-title: Waist to armpit
+title: Taille bis Achselhöhle
 ---
 
-The **waist to armpit** is the measurement from your waist up towards your armpit, measured on the side of your body.
+Die **Taille bis zur Achselhöhle** ist das Maß von der Taille bis zur Achselhöhle, gemessen an der Seite deines Körpers.
 
-Since _armpit_ is a bit ambigious, we recommend finding the height that would be about the tightest possible sleeve that could still work. The height of the subcapular/posterior lymph nodes is typically a good spot.
+Since _armpit_ is a bit ambiguous, we recommend finding the height that would be about the tightest possible sleeve that could still work. Die Höhe der subkapulären/posterioren Lymphknoten ist in der Regel eine gute Stelle.
 
-Or, if you're not certain where the lymph nodes under your arm are, you can follow this approach:
+Wenn du dir nicht sicher bist, wo sich die Lymphknoten unter deinem Arm befinden, kannst du auch so vorgehen:
 
-- Stand up straight, yet relaxed, and let your arms hang loosely by your side.
-- Raise your dominant arm (the right if you are right-handed, or the left if you are left-handed) about 30 degrees sideways, away from your body.
-- Now reach to the side of your body with the other hand, placing the palm of your hand against the side, and your thumb on your chest pointing upwards.
-- Slide your hand upwards as far as you can without having to push anything out of the way.
-- Your index finger will now sit in the armput, which is a bit too high. But your middlefinger is a good spot to mark as the start of your armpit.
+- Stell dich aufrecht, aber entspannt hin und lass deine Arme locker an der Seite hängen.
+- Hebe deinen dominanten Arm (den rechten, wenn du Rechtshänder bist, oder den linken, wenn du Linkshänder bist) etwa 30 Grad seitlich von deinem Körper weg.
+- Greife nun mit der anderen Hand zur Seite deines Körpers, lege die Handfläche an die Seite und den Daumen auf die Brust, so dass er nach oben zeigt.
+- Schiebe deine Hand so weit wie möglich nach oben, ohne dass du etwas wegschieben musst.
+- Your index finger will now sit in the armpit, which is a bit too high. But your middle finger is a good spot to mark as the start of your armpit.
 
 
+<MeasieImage />

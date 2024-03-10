@@ -1,8 +1,8 @@
 ---
-title: "Tapeta de botones separada"
+title: Tapeta de botones separada
 ---
 
-![Tapeta de botones separada](seperatebuttonplacket.svg)
+![Separate button placket](seperatebuttonplacket.svg)
 
 Si desea o no que la placket de botón sea una parte de patrón separada.
 

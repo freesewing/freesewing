@@ -1,5 +1,5 @@
 ---
-title: Curated measurements sets
+title: Kuratierte Messreihen
 ---
 
 FreeSewing's **curated measurements sets** are a collection of measurements sets that represent real people.
@@ -16,45 +16,45 @@ With the release of version 3 of FreeSewing, we wanted to move away from these *
 
 We now no longer present users who want to try out the site a range of *standard sizes* but rather a collection of measurements sets where they can pick the one that best represents their own body.
 
-## Suggesting a measurements set for curation
+## Vorschlagen einer Messreihe für die Kuration
 
-We rely on our community to submit measurements sets for curation. If you have a public measurements set on the site, you can suggest it for curation.
+Wir sind darauf angewiesen, dass unsere Community Messreihen zur Kuratierung einreicht. Wenn du eine öffentliche Messung auf der Website eingestellt hast, kannst du sie zur Kuratierung vorschlagen.
 
-To be part of our curated measurments sets collection, you should provide the following:
+To be part of our curated measurements sets collection, you should provide the following:
 
-- **All measurements** of the person. We do not accept incomplete sets as that would mean some designs would not work with them.
-- **The height** of the person. This helps users select a measurements set closest to their own body.
-- **A picture** of the person to be featured [in our line-up of curated measurements sets](/curated-sets). See below for tips.
+- **Alle Messungen** der Person. Wir akzeptieren keine unvollständigen Sets, da dies bedeuten würde, dass einige Designs nicht mit ihnen funktionieren würden.
+- **Die Größe** der Person. So können die Nutzerinnen und Nutzer die Maße auswählen, die ihrem eigenen Körper am nächsten kommen.
+- **Ein Bild** der Person, die in unserer Reihe der kuratierten Mess-Sets [vorgestellt werden soll](/curated-sets). Siehe unten für Tipps.
 
 
-## Tips for line-up pictures
+## Tipps für Aufstellungsbilder
 
 We present measurements sets in a line-up style, so the picture should be a full frontal picture where you are standing straight and relaxed with your arms beside your body.
 
-Below are some tips on how to get good results:
+Im Folgenden findest du einige Tipps, wie du gute Ergebnisse erzielen kannst:
 
-### Don't stand too close to the camera
+### Steh nicht zu nah an der Kamera
 
-For best results, ask a friend to take a picture from further away and zoom in. This helps avoid the *fisheye* effect that you get when taking a picture from up close.
+Die besten Ergebnisse erzielst du, wenn du einen Freund oder eine Freundin bittest, ein Bild aus größerer Entfernung zu machen und heranzuzoomen. Dadurch wird der *Fischaugeneffekt* vermieden, der entsteht, wenn du ein Bild aus der Nähe aufnimmst.
 
 <div className="grid grid-cols-2 gap-2">
 
-![A full-body picture of Joost taken from close](cset1.jpg "A picture taken from close will give you this weird fish eye lens effect")
+![Ein Ganzkörperbild von Joost aus der Nähe](cset1.jpg "Ein Bild, das aus der Nähe aufgenommen wurde, gibt dir diesen seltsamen Fischaugeneffekt")
 
-![A full-body picture of Joost taken from further](cset2.jpg "A picture taken from further and zoomed in will look a lot better")
+![Ein Ganzkörperbild von Joost aus der Ferne](cset2.jpg "Ein Bild, das aus der Ferne aufgenommen und herangezoomt wurde, sieht viel besser aus")
 
 </div>
 
-The picture on the left is taken from (too) close. There's nothing really wrong with this picture, but it looks weird. That's because this is taken with a mobile phone and the wide angle on these types of cameras gives you this subtle fish eye effect.
+Das Bild links ist aus (zu) großer Nähe aufgenommen. An diesem Bild ist eigentlich nichts auszusetzen, aber es sieht komisch aus. Das liegt daran, dass diese Aufnahme mit einem Handy gemacht wurde und der Weitwinkel dieser Kameras diesen subtilen Fischaugeneffekt erzeugt.
 
-The picture on the right was take further away with zoom. This is a much better representation of reality and the pose looks natural because the fish eye effect is neutralized.
+Das Bild auf der rechten Seite wurde mit dem Zoom weiter weg aufgenommen. Das ist eine viel bessere Darstellung der Realität und die Pose sieht natürlich aus, weil der Fischaugeneffekt neutralisiert wird.
 
-#### Stand in front of a white background
+#### Stell dich vor einen weißen Hintergrund
 
-We will edit out the background of your picture like this:
+Wir werden den Hintergrund deines Bildes wie folgt bearbeiten:
 
-![A full-body picture of Joost on a white background](joost.png "A picture on a white background makes our life easier")
+![Ein Ganzkörperbild von Joost auf weißem Hintergrund](joost.png "Ein Bild auf weißem Hintergrund macht unser Leben einfacher")
 
-So you can make that step a lit easier for us if you can pose in front of a white or plain background.
+Du kannst uns diesen Schritt also ein wenig erleichtern, wenn du vor einem weißen oder einfarbigen Hintergrund posieren kannst.
 
 

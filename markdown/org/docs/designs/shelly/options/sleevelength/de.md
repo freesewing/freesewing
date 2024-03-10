@@ -2,9 +2,9 @@
 title: "Ärmellänge"
 ---
 
-Controls how long the sleeves of your shirt will be.
- - 15-30% will make short sleeves.
- - 75% will make three-quarter sleeves.
- - 100% will make long sleeves, stopping at the wrist.
- - 115% will make sleeves covering the knuckles, and is appropriate if using thumb holes.
+Legt fest, wie lang die Ärmel deines Hemdes sein sollen.
+ - 15-30% werden kurze Ärmel machen.
+ - 75 % ergeben dreiviertel Ärmel.
+ - 100% machen lange Ärmel, die am Handgelenk enden.
+ - 115% reichen für Ärmel, die die Knöchel bedecken, und sind geeignet, wenn du Daumenlöcher verwendest.
 

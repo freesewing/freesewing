@@ -2,7 +2,7 @@
 title: Taille de la marge de couture
 ---
 
-Ce [Réglage de base][core-settings] contrôle la taille de base de votre couture.  En d'autres termes, la marge de couture par défaut sera de cette taille. Toute autre marge destinée à être plus large, comme la marge d'ourlet, sera un multiple de cette taille.
+Ce [Réglage de base][core-settings] contrôle la taille de votre marge de couture.  En d'autres termes, la marge de couture par défaut sera de cette taille. Toute autre marge destinée à être plus large, comme la marge d'ourlet, sera un multiple de cette taille.
 
 <Note>
 
@@ -15,4 +15,4 @@ Toutefois, pour des raisons de commodité, nous avons divisé cette fonction en 
 Cette dernière option ne sera affichée que si vous avez activé la première.
 
 </Note>
-[core-settings]: /docs/site/draft/core-settings/
+[core-settings]: /docs/about/site/draft/core-settings/

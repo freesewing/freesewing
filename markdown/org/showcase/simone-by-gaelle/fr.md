@@ -1,20 +1,20 @@
 ---
-title: "Simone by Gaëlle"
-caption: "A lovely Simone shirt with beautiful details"
+title: "Simone par Gaëlle"
+caption: "Une belle chemise Simone avec de beaux détails"
 date: 20231017
-intro: "This Simone shirt features beautiful details, including coordinated buttons and custom labels."
+intro: "Cette chemise Simone présente de magnifiques détails, notamment des boutons coordonnés et des étiquettes personnalisées."
 designs:
   - "simone"
 maker: Natalia
 ---
 
-The talented Gaëlle shared this Simone shirt. Don't miss the the detail photos.
+La talentueuse Gaëlle a partagé cette chemise Simone. Ne manque pas les photos de détail.
 
-![Another view of the front](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-1/public "Another view of the front")
+![Une autre vue de la façade](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-1/public "Une autre vue de la façade")
 
-![Collar details](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-2/public "Collar details")
+![Détails du col](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-2/public "Détails du col")
 
-![Cuff button details](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-4/public "Cuff button details")
+![Boutons de manchette](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-4/public "Boutons de manchette")
 
-![Custom label tags](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-5/public "Custom label tags")
+![Étiquettes personnalisées](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-5/public "Étiquettes personnalisées")
 

@@ -1,9 +1,9 @@
 ---
-title: "Crotch gusset width"
+title: "Largeur du gousset d'entrejambe"
 ---
 
-Adjusts how wide the crotch gusset will be. The crotch gusset is a rectangular strip of fabric running up one leg, across the crotch fork, and down the other leg. It adds room in the crotch, creates a stronger outfit by avoiding the 4-way seam normally found at the crotch fork, and greatly reduces the need for scoops around the crotch fork.
+Règle la largeur du gousset d'entrejambe. Le gousset d'entrejambe est une bande de tissu rectangulaire qui remonte le long d'une jambe, traverse la fourche de l'entrejambe et descend le long de l'autre jambe. Il ajoute de l'espace à l'entrejambe, crée une tenue plus solide en évitant la couture à 4 voies que l'on trouve normalement à la fourche de l'entrejambe, et réduit considérablement le besoin d'écopes autour de la fourche de l'entrejambe.
 
-Bodies that are wider than they are deep do not need as wide a gusset, while those with very deep thighs may need a wider gusset.
+Les corps plus larges que profonds n'ont pas besoin d'un gousset aussi large, tandis que ceux qui ont des cuisses très profondes peuvent avoir besoin d'un gousset plus large.
 
-The width of the crotch gusset will affect how the garment is shaped around the hips, crotch, and upper legs. You may have to adjust the upper leg east, seat ease, and leg taper position along with this option to get a proper fit.
+La largeur du gousset d'entrejambe aura une incidence sur la forme du vêtement au niveau des hanches, de l'entrejambe et du haut des jambes. Tu devras peut-être ajuster l'est du haut de la jambe, l'aisance du siège et la position de l'amincissement de la jambe en même temps que cette option pour obtenir un ajustement adéquat.

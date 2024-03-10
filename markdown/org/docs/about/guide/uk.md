@@ -7,54 +7,54 @@ order: 100
 
 Прочитання цього гайду займе близько 10 хвилин та допоможе зорієнтуватися на нашому вебсайті та продуктивно ним користуватися.
 
-- [What FreeSewing is](#what-is-freesewing)
-- [What FreeSewing.org is](#what-is-freesewingorg)
-- [What the difference is between patterns and designs](#patterns-vs-designs)
-- [What measurements sets are](#measurements-sets)
-- [Where to turn to for support](#where-to-turn-to-for-help)
+- [Що таке FreeSewing](#what-is-freesewing)
+- [Що таке FreeSewing.org](#what-is-freesewingorg)
+- [У чому різниця між патернами та дизайнами](#patterns-vs-designs)
+- [Що таке набори вимірювань](#measurements-sets)
+- [Куди звертатися за підтримкою](#where-to-turn-to-for-help)
 
 Звучить непогано? Тоді занурмося:
 
 ## Що таке FreeSewing?
 
-FreeSewing is the leading [open source library](https://github.com/freesewing) for on-demand garment manufacturing.  
-Loved by home sewers and fashion entrepreneurs alike, FreeSewing provides the tech stack for your creative endeavours.
+FreeSewing - це провідна бібліотека [з відкритим вихідним кодом](https://github.com/freesewing) для виготовлення одягу на замовлення.  
+Улюблена як домашніми швачками, так і модними підприємцями, FreeSewing надає технологічний стек для ваших творчих починань.
 
-FreeSewing is the brain-child of [Joost De Cock](https://github.com/joostdecock), the FreeSewing maintainer. Various other people have contributed to FreeSewing over the years (the [FreeSewing contributors](/contributors)), and the project is financially supported by [the FreeSewing patrons](/patrons).
+FreeSewing - це дітище [Joost De Cock](https://github.com/joostdecock), супровідника FreeSewing. Протягом багатьох років до FreeSewing долучалися й інші люди ( [учасники FreeSewing](/contributors)), а фінансово проект підтримують [меценати FreeSewing](/patrons).
 
 <Tip>
 
-For more info about FreeSewing -- the open source project -- refer to
-[FreeSewing.dev](https://freesewing.dev/) which hosts documentation for
-developers, designers, contributors, and translators.
+Для отримання додаткової інформації про FreeSewing - проект з відкритим вихідним кодом - зверніться до
+[FreeSewing.dev](https://freesewing.dev/), де розміщено документацію для
+розробників, дизайнерів, дописувачів і перекладачів.
 
 </Tip>
 
-## What is FreeSewing.org?
+## Що таке FreeSewing.org?
 
 Freesewing.org is the FreeSewing project's flagship website where we offer our ever-growing collection of bespoke sewing patterns to makers all over the world.
 
-FreeSewing is not about fashion, trends, or publishing the hot new pattern of the season. Натомість ми хочемо надати кравцям спільноту та її знання, на базі яких будуються наші викрійки та документація, та зробити цю інформацію доступною.
+FreeSewing - це не про моду, тенденції чи публікацію нової гарячої моделі сезону. Натомість ми хочемо надати кравцям спільноту та її знання, на базі яких будуються наші викрійки та документація, та зробити цю інформацію доступною.
 
-FreeSewing.org is our most visible asset, and for many people their first encounter with the FreeSewing project.
+FreeSewing.org - наш найпомітніший актив, і для багатьох людей це перше знайомство з проектом FreeSewing.
 
-## Patterns vs Designs
+## Патерни проти дизайну
 
-If you came to this site looking for _sewing patterns_ and did not immeadiatly find a place to download them, that's because all of FreeSewing's sewing patterns are **made to measure**.
+If you came to this site looking for _sewing patterns_ and did not immediately find a place to download them, that's because all of FreeSewing's sewing patterns are **made to measure**.
 
-Ми не масштабуємо викрійки та не градуюємо лекала. Instead, FreeSewing drafts a design into a pattern made to your measurements. Це трапляється наживу у Вашому браузері.
+Ми не масштабуємо викрійки та не градуюємо лекала. Замість цього FreeSewing перетворює дизайн на викрійку, виготовлену за вашими мірками. Це трапляється наживу у Вашому браузері.
 
-- **Design**: One of the styles that we offer. We've got dozens of designs, and you can try them all
-- **Pattern**: The result of *drafting the design* (turning it into a sewing pattern to your measurements). Ми маємо тисячі викрійок, що зберігаються для наших користувачів, і деякі з них можуть бути Вашими
+- **Дизайн**: Один зі стилів, які ми пропонуємо. У нас є десятки дизайнів, і ви можете спробувати їх усі
+- **Викрійка**: результат *розробки дизайну* (перетворення його на викрійку за вашими мірками). Ми маємо тисячі викрійок, що зберігаються для наших користувачів, і деякі з них можуть бути Вашими
 
 <Tip>
 
-##### Saving is optional
+##### Збереження необов'язкове
 
-When you generate a bespoke pattern, you can tweak it endlessly through its various options,
-and export it to a range of formats, including PDF.  
-But it remains ephemeral until you save it to your account, so it
-becomes one of **your patterns**.
+Коли ви створюєте шаблон на замовлення, ви можете нескінченно налаштовувати його за допомогою різних опцій,
+і експортувати його в різні формати, включаючи PDF.  
+Але він залишається ефемерним, поки ви не збережете його у своєму акаунті, і він
+стане одним з **ваших шаблонів**.
 
 Збереження викрійки є не обов'язковим, однак воно дозволяє згодом повернутися до викрійки, внести додаткові зміни або просто знову завантажити у вигляді PDF файлу.
 
@@ -64,31 +64,31 @@ becomes one of **your patterns**.
 
 <Note>
 
-##### We respect the strictest privacy laws on the planet
-To generate bespoke sewing patterns, we need your measurements.
-Asking for them every time would be rather tedious, so we store them in your account.
+##### Ми поважаємо найсуворіші закони про конфіденційність на планеті
+Щоб створити викрійки на замовлення, нам потрібні ваші мірки.
+Запитувати їх щоразу було б досить нудно, тому ми зберігаємо їх у вашому акаунті.
 
-Your account data is stored on our backend, subject to [our privacy notice](/docs/about/privacy),
-and with respect for [your rights](docs/about/rights/).
+Дані вашого облікового запису зберігаються на нашому сервері, відповідно до [нашого повідомлення про конфіденційність] (/docs/about/privacy),
+та з повагою до [ваших прав] (docs/about/rights/).
 
 </Note>
 
-## Measurements sets
+## Вимірювальні набори
 
 З моменту створення облікового запису Ви можете додавати заміри. Але тоді виникає питання: що якщо Ви хочете викрійку для себе, але також для свого партнера?
 
-That's why we have **measurements sets**. You can add as many measurements sets as you like. Мати лише одну для себе — теж файно.
+Ось чому у нас є **набори для вимірювань**. Ви можете додати стільки наборів вимірювань, скільки хочете. Мати лише одну для себе — теж файно.
 
 <Tip>
 
-##### Curated measurements sets
+##### Кураторські набори мірок
 
-FreeSewing also provides **curated measurements sets**. These are measurements set from real people that we use to test our platform and designs. But you can also use them to test-drive our platform before you break out the measuring tape.
+FreeSewing також надає **кураторські набори мірок**. Це виміри реальних людей, які ми використовуємо для тестування нашої платформи та дизайну. Але ви також можете використовувати їх для тест-драйву нашої платформи перед тим, як розгорнути рулетку.
 
 </Tip>
 
-## Where to turn to for help
+## Куди звертатися за допомогою
 
-If you get stuck, consule [the support page](/support/) for various support options.
+If you get stuck, consult [the support page](/support/) for various support options.
 
 

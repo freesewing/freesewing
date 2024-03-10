@@ -6,6 +6,7 @@ intro: "Félix hizo tres de éstas, y escribe"
 title: "Un paquete de tres Bruce"
 designs:
   - "bruce"
+author: 1972
 ---
 
 Félix hizo tres de éstas, y escribe

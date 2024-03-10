@@ -1,8 +1,8 @@
 ---
-title: "Uma undies: Sewing Instructions"
+title: "Uma onderbroek: Naai-instructies"
 ---
 
-### Step 1: Pin/baste the front to the first gusset piece
+### Stap 1: Speld/plak de voorkant vast aan het eerste inzetstuk
 
 Leg een van de zweefstukken op het voorpand, _goede kanten op elkaar_, zodat de kruisnaden op één lijn staan. Speld of drieg aan de naadwaarde.
 
@@ -14,7 +14,7 @@ Vlak openen. Je kunt drukken als je wilt, maar wie strijkt er onderweers?
 
 ![Vlak openen](step02.png)
 
-### Step 3: Pin/baste the back to the first gusset piece
+### Stap 3: Speld/plak de achterkant vast aan het eerste inzetstuk
 
 Leg het rugpand op de glans, met de goede kanten op elkaar. Speld of drieg aan de naadwaarde.
 

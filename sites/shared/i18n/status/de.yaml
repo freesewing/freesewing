@@ -1,14 +1,15 @@
 backendError: Backend hat einen Fehler zurückgegeben
-contactingBackend: Contacting the FreeSewing backend
-contactingGitHub: Contacting GitHub
-contactingGoogle: Contacting Google
+contactingBackend: Kontaktaufnahme mit dem FreeSewing Backend
+contactingGitHub: Kontaktaufnahme mit GitHub
+contactingGoogle: Kontaktaufnahme mit Google
 copiedToClipboard: In die Zwischenablage kopiert
-dataLoaded: Loaded data from the FreeSewing backend
-generatingPdf: Generating your PDF, one moment please
+dataLoaded: Geladene Daten aus dem FreeSewing Backend
+failed: Failed
+generatingPdf: Erstelle dein PDF, einen Moment bitte
 nailedIt: Geschafft!
-pdfFailed: An unexpected error occured while generating your PDF
-pdfReady: PDF generated
-processingUpdate: Processing update
+pdfFailed: An unexpected error occurred while generating your PDF
+pdfReady: PDF generiert
+processingUpdate: Update der Verarbeitung
 settingsSaved: Einstellungen gespeichert
-updatingSettings: Updating settings
-
+updatingSettings: Einstellungen aktualisieren
+404: Page Not Found

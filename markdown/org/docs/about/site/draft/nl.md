@@ -1,5 +1,5 @@
 ---
-title: How to generating bespoke sewing patterns
+title: Hoe je op maat gemaakte naaipatronen genereert
 ---
 
 Het genereren van aangepaste naaipatronen op basis van jouw metingen is het paradepaardje van onze website. We bieden een online omgeving waarin je verschillende aspecten van je patroon kunt aanpassen.
@@ -8,49 +8,50 @@ Deze omgeving biedt een groot aantal mogelijkheden en op deze pagina's zullen we
 
 <ControlTip />
 
-## The editor
+## De editor
 
-Below is a screenshot of FreeSewing's pattern editor in [kiosk mode](/docs/about/site/draft/ui-settings/kiosk) which hides the site header and footer and lets the editor take up the entire screen. It also has the **View menu** (on the left) expanded. By default you will only see the icons, and not the text of the menu on the left.
+Hieronder zie je een screenshot van de patrooneditor van FreeSewing in [kioskmodus](/docs/about/site/draft/ui-settings/kiosk) die de header en footer van de site verbergt en de editor het hele scherm laat innemen. Ook is het menu **View** (links) uitgebreid. Standaard zie je alleen de pictogrammen en niet de tekst van het menu aan de linkerkant.
 
-![Screenshot of FreeSewing's pattern editor](editor.png "Screenshot of Freesewing's pattern editor")
+![Screenshot van de patroonbewerker van FreeSewing](editor.png "Screenshot van de patroonbewerker van Freesewing")
 
-### The view menu
+### Het weergavemenu
 
-The **View menu** on the left allows you to select the view. Each view serves a different purpose. The different views are:
+Met het menu **Weergave** aan de linkerkant kun je de weergave selecteren. Elke weergave dient een ander doel. De verschillende standpunten zijn:
 
-- **Pattern editor**: This is where you can tweak your pattern
-- **Pattern measurements**: This is where you can choose which measurements set to use to generate the pattern, or tweak measurements manually
-- **Pattern tests**: Allows you to thest the pattern (this is an advanced feature)
-- **Print layout**: Allows you to manually arrange the pattern parts to optimize the layout for printing
-- **Save pattern as...**: Allows you to save the pattern to your account
-- **Export pattern**: Allows you to export the pattern as PDF or SVG
-- **Edit settings by hand**: Allows you to -- you guessed it -- edit the settings to generate the pattern by hand. This is an advanced feature.
-- **Pattern logs**: This shows the logs generated when drafting the pattern. This is an advanced feature.
-- **Pattern inspector**: Allows pattern designer to inspect various aspects of the pattern. This is an advaned feature.
-- **Documentation**: Provides links to the documentation
+- **Patroonbewerker**: Hier kun je je patroon aanpassen.
+- **Patroonmetingen**: Hier kun je kiezen welke meetset je wilt gebruiken om het patroon te genereren, of de metingen handmatig aanpassen.
+- **Patroon testen**: Hiermee kun je het patroon testen (dit is een geavanceerde functie). Dit is een geavanceerde functie.
+- **Print lay-out**: Hiermee kun je handmatig de patroondelen rangschikken om de lay-out te optimaliseren voor het printen.
+- **Patroon opslaan als...**: Hiermee kun je het patroon opslaan in je account.
+- **Patroon exporteren**: Hiermee kun je het patroon exporteren als PDF of SVG.
+- **Bewerk instellingen met de hand**: Hiermee kun je -- je raadt het al -- de instellingen bewerken om het patroon met de hand te genereren. Dit is een geavanceerde functie.
+- **Patroonlogs**: Dit toont de logs die zijn gegenereerd tijdens het opstellen van het patroon. Dit is een geavanceerde functie.
+- **Patroon inspecteur**: Hiermee kan de patroonontwerper verschillende aspecten van het patroon inspecteren. Dit is een geavanceerde functie.
+- **Documentatie**: Geeft links naar de documentatie
 
-Feel free to check out the other views, but our focus here is on the **Pattern editor**.
+Voel je vrij om de andere weergaven te bekijken, maar onze focus ligt hier op de **Pattern editor**.
 
-### The settings menu
+### Het instellingenmenu
 
-On the right side of the screen is the **Settings menu** which in turn is made up of four sections:
+Aan de rechterkant van het scherm staat het menu **Instellingen** dat weer uit vier secties bestaat:
 
-- **Messages from the designer**: Holds information the designer of the pattern flagged for your attention. Note that these are not generic remark about the design in general (those go in the documentation), but rather information specific to this very pattern. Make sure to check them out. As such, these messages will be different for every user, measurements set, or even combination of design options.
-- **Design options**: Holds all the different options the designer has added that allow you to tweak your pattern. These options will be different for each design. Refer to the design documentation for a list of all available options, or check the inline documentation.
-- **Core settings**: These are settings that are not provided by the design(er) but rather by FreeSewing's core library. As such, the settings you'll find here are the same accross all designs as they all use the same core library. Refer to [Core Settings](/docs/about/site/draft/core-settings) for all details, or check the inline documentation.
-- **UI settings**: And finally, these settings do not control the pattern as such, but rather the user interface. For example, here you can enable kiosk mode or tweak the user experience setting to see more or less features. Like the core settings, the UI settings are the same for every design. Refer to [UI Settings](/docs/about/site/draft/ui-settings) or check the inline documentation.
+- **Berichten van de ontwerper**: Bevat informatie die de ontwerper van het patroon voor je heeft gemarkeerd. Merk op dat dit geen algemene opmerkingen zijn over het ontwerp in het algemeen (die komen in de documentatie), maar eerder informatie die specifiek is voor dit patroon. Zorg ervoor dat je ze bekijkt. Daarom zullen deze berichten voor elke gebruiker, meetset of zelfs combinatie van ontwerpopties anders zijn.
+- **Ontwerpopties**: Bevat alle verschillende opties die de ontwerper heeft toegevoegd waarmee je je patroon kunt aanpassen. Deze opties zullen voor elk ontwerp anders zijn. Raadpleeg de ontwerpdocumentatie voor een lijst met alle beschikbare opties of kijk in de inline documentatie.
+- **Kerninstellingen**: Dit zijn instellingen die niet door het ontwerp worden geleverd, maar door de kernbibliotheek van FreeSewing. Daarom zijn de instellingen die je hier vindt hetzelfde voor alle ontwerpen, omdat ze allemaal dezelfde kernbibliotheek gebruiken. Raadpleeg [Core Settings](/docs/about/site/draft/core-settings) voor alle details, of bekijk de inline documentatie.
+- **UI-instellingen**: Tot slot regelen deze instellingen niet het patroon als zodanig, maar eerder de gebruikersinterface. Hier kun je bijvoorbeeld de kioskmodus inschakelen of de gebruikerservaring instellen om meer of minder functies te zien. Net als de kerninstellingen zijn de UI-instellingen hetzelfde voor elk ontwerp. Raadpleeg [UI Settings](/docs/about/site/draft/ui-settings) of raadpleeg de inline documentatie.
 
-### The header menu
+### Het bovenmenu
 
-At the top is a header with icons to give you quick access to both Core settings and UI settings. There is also an icon to clear your settings, clear both settings and measurements, or to bookmark the current pattern.
+Bovenaan staat een kop met pictogrammen die je snel toegang geven tot zowel de Core-instellingen als de UI-instellingen. Er is ook een pictogram om je instellingen te wissen, zowel instellingen als metingen te wissen of om een bladwijzer aan te maken voor het huidige patroon.
 
-### The inline documentation
+### De inline documentatie
 
-Most, if not all, settings or options that you will tweaks have a little documentation icon next to it (shown in blue in the screenshot below).
+De meeste, zo niet alle, instellingen of opties die je gaat aanpassen hebben een klein documentatiepictogram ernaast (in blauw weergegeven in de schermafbeelding hieronder).
 
-![Screenshot of the docs icon](docs.png)
+![Schermafbeelding van het pictogram docs](docs.png)
 
-You you can click that icon to open the inline documentation. This allows you to quickly verify the specific role of a setting or option without having to leave the editor.
+Je kunt op dat pictogram klikken om de inline documentatie te openen. Hiermee kun je snel de specifieke rol van een instelling of optie controleren zonder de editor te hoeven verlaten.
 
-## Editor modes
+## Editor modi
 
+<Fixme>Maak deze documenten af</Fixme>

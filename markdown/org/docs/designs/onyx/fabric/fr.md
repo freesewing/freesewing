@@ -1,13 +1,13 @@
 ---
-title: "Onyx One-piece: Fabric Options"
+title: "Onyx en une seule pièce : Options de tissus"
 ---
 
-This pattern is designed to work with stretch/knit fabrics, such as swim fabric, fleece, and jersey.
+Ce modèle est conçu pour fonctionner avec des tissus extensibles/tricotés, tels que le tissu de bain, le molleton et le jersey.
 
-For unisuits, unitards, and other performance-oriented and form-fitting garments, four-way stretch fabric such a 20% spandex blend is strongly recommended. For more casual garments, such as one-piece fleece pajamas, kigurumi, rompers, and jumpsuits, most knit fabrics can be used. Fleece can be used to make warm winter pajamas, while jersey knit can be used to make a summer romper.
+Pour les combinaisons, les justaucorps et les autres vêtements performants et moulants, il est fortement recommandé d'utiliser un tissu extensible dans les quatre sens, par exemple un mélange de 20 % de spandex. Pour les vêtements plus décontractés, comme les pyjamas molletonnés d'une seule pièce, les kigurumi, les barboteuses et les combinaisons, la plupart des tricots peuvent être utilisés. La laine polaire peut être utilisée pour fabriquer des pyjamas d'hiver chauds, tandis que la maille jersey peut être utilisée pour fabriquer une barboteuse d'été.
 
-The raglan sleeves lend themselves well to using different colors/prints for the body and for the sleeves. Contrasting fabrics can also be used on the skirt or hood.
+Les manches raglan se prêtent bien à l'utilisation de couleurs/imprimés différents pour le corps et pour les manches. Des tissus contrastés peuvent également être utilisés sur la jupe ou la capuche.
 
-Lined portions of the garment lend themselves well to embroidery, as the stabilizer (strongly recommended) and stitching will be kept away from the wearer's body by the lining. The chest, next to the zipper, is a particularly good spot, both because it's prominent, and because the chest doesn't stretch vertically much, since it's near the zipper.
+Les parties doublées du vêtement se prêtent bien à la broderie, car l'entoilage (fortement recommandé) et les coutures seront tenus à l'écart du corps du porteur par la doublure. La poitrine, à côté de la fermeture éclair, est un endroit particulièrement bien placé, à la fois parce qu'elle est proéminente et parce que la poitrine ne s'étire pas beaucoup verticalement, puisqu'elle est près de la fermeture éclair.
 
-With swim fabric/spandex, it is recommended to make the neckband out of the same material used for the body. For less stretchy fabric, such as cotton jersey knit, ribbing is recommended.
+Avec le tissu de natation/l'élasthanne, il est recommandé de faire le tour de cou dans le même matériau que celui utilisé pour le corps. Pour les tissus moins extensibles, comme le jersey de coton, les côtes sont recommandées.

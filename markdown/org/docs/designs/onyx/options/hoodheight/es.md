@@ -2,6 +2,6 @@
 title: "Altura de capucha"
 ---
 
-Controls how tall the hood will be.
+Controla la altura del capó.
 
-Note: This option is only available if the 'neck style' option is set to 'hood.'
+Nota: Esta opción sólo está disponible si la opción "estilo de cuello" está configurada como "capucha".

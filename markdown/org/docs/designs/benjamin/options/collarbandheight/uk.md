@@ -2,5 +2,5 @@
 title: "Ширина стрічки"
 ---
 
-Controls the height of the collar band (the width, if you will).
+Керує висотою стрічки коміра (шириною, якщо хочете).
 

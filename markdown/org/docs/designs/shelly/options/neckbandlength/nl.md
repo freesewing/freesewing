@@ -1,6 +1,6 @@
 ---
-title: "Neckband length"
+title: "Lengte nekband"
 ---
 
-Controls how long the neckband is, as a percentage of the circumference of the neckline. Recommended values for this option vary based on the material used for the neckband and the width of the neckband. Stretchier materials and wider neckbands should use a smaller value for this option.
+Bepaalt hoe lang de nekband is, als percentage van de omtrek van de halslijn. Aanbevolen waarden voor deze optie variëren afhankelijk van het materiaal dat voor de nekband is gebruikt en de breedte van de nekband. Rekbaardere materialen en bredere nekbanden moeten een kleinere waarde gebruiken voor deze optie.
 

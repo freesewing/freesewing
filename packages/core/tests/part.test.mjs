@@ -1,7 +1,5 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { Design, Part, pctBasedOn } from '../src/index.mjs'
-
-const expect = chai.expect
 
 describe('Part', () => {
   it('Shorthand should contain the part itself', () => {

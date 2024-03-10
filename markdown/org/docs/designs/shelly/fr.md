@@ -1,5 +1,5 @@
 ---
-title: "Shelly shirt"
+title: "Chemise Shelly"
 ---
 
 <DesignInfo design='shelly' docs />

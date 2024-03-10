@@ -1,11 +1,11 @@
 ---
-title: "Body length"
+title: "Longueur du corps"
 ---
 
-Controls how long the shirt is.
-   - Up to 80% or so will produce a crop top.
-   - 100% ends at top of the hip bone.
-   - 120% will produce a typical t-shirt.
-   - 140% will produce a somewhat longer shirt that is less prone to untucking or riding up.
-   - 200%+ can be used to make a simple t-shirt dress. It's suggested that you set straight sides to false, and adjust the side shape (under advanced options) for t-shirt dresses.
+Contrôle la longueur de la chemise.
+   - Jusqu'à 80 % environ produiront un crop top.
+   - 100 % descend au sommet de l'os de la hanche.
+   - 120% produira un t-shirt typique.
+   - Avec 140 %, tu obtiendras une chemise un peu plus longue qui aura moins tendance sortir du pantalon ou à remonter.
+   - 200%+ peuvent être utilisés pour faire une simple robe t-shirt. Il est suggéré de régler les côtés droits sur faux, et d'ajuster la forme des côtés (dans les options avancées) pour les robes t-shirt.
 

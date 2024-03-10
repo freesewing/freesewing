@@ -191,9 +191,9 @@ Strijk de binnennaad open wanneer je klaar bent.
 
 <tip>
 
-Double check that your right and left legs match the pattern markings. The right leg's crotch should extend slightly beyond the left. Refer to the pattern and cut excess on the left leg if necessary.
+Controleer of je rechter- en linkerbeen overeenkomen met de markeringen op het patroon. Het kruis van het rechterbeen moet iets verder uitsteken dan het linkerbeen. Raadpleeg het patroon en knip zo nodig overtollig deel van het linkerbeen af.
 
-It can be valuable to mark with chalk or thread mark the **Center Front** on each leg. This will help you make sure the peices are in the right place duing fly construction.
+Het kan waardevol zijn om met krijt of draad de **middenvoor** op elk been te markeren. This will help you make sure the pieces are in the right place during fly construction.
 
 </tip>
 
@@ -201,11 +201,11 @@ Zorg dat de ene broekspijp met de goede kant naar buiten gekeerd is, en de ander
 
 Stop nu het been met de goede kant naar buiten in het been met de goede kant naar binnen. Op die manier hebben ze hun goede kanten tegen elkaar.
 
-Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. **Stop at the fly notch** and makes sure to back-stitch.
+Align the cross seam, starting at the back waist, pinning both halves together as you make your way towards the fly. **Stop bij de gulpinkeping** en zorg ervoor dat je doorstikt.
 
 Wanneer je klaar bent. Doe het opnieuw. Stik de kruisnaad altijd twee keer. Het is een van die beste praktijken die je negeert op eigen risico.
 
-![Close Crossseam](CloseCrossseam.svg)
+![Dichte kruisnaad](CloseCrossseam.svg)
 
 
 <Tip>
@@ -219,7 +219,7 @@ Het goed doen is een van die dingen die je uiteindelijk altijd zal koesteren wan
 
 ## Stap 10: Maak de gulp
 
-### Close the fly extension and serge
+### Sluit de gulpverlenging en sergeer
 
 Plooi de gulp op de geplooide lijn met de goede kanten op elkaar.
 
@@ -233,76 +233,76 @@ Serge (of zigzag) langs de open kant van de vlieg extensie. Het is niet nodig om
 
 wanneer je er aan toe bent, lock je ook langs het geheel van de gulpbelanden J-vormige rand.
 
-![Close Extension and Serge](CloseExtensionAndSerge.svg)
+![Sluiten Uitbreiding en Serge](CloseExtensionAndSerge.svg)
 
 
 ### Bevestig het gulpbeleg
 
-Sew fly facing to left leg. You will be sewing slightly past the cross seam point, so be careful to keep the right leg seam allowance out of the way and aim to sew directly on top of the cross seam line.
+Naai het beleg op het linkerbeen. Je naait iets voorbij het kruisnaadpunt, dus zorg ervoor dat je de naadtoeslag van het rechterbeen uit de weg houdt en naai direct bovenop de kruisnaadlijn.
 
-![Attach Facing](AttachFacing.svg)
+![Facing bevestigen](AttachFacing.svg)
 
-### Finish the fly facing
+### Maak de fly facing af
 
-Trim the fly facing to half of the seam allowance.  
-Tuck in the tip of the fly facing and secure it with a few stitches. Edge stitch the fly facing to the seam allowance. Press the seam allowance toward the facing and understitch the facing for a clean finish. Again, keeping the right leg  seam allowance out of the way.
+Knip het beleg bij tot de helft van de naadtoeslag.  
+Stop het uiteinde van het beleg in en zet het vast met een paar steken. Naai de voorkant van de gulp aan de naadtoeslag. Pers de naadtoeslag naar het beleg en stik het beleg door voor een nette afwerking. Houd ook hier de naadtoeslag van het rechterbeen uit de weg.
 
-![Finish Facing](FinishFacing.svg)
+![Afwerking Facing](FinishFacing.svg)
 
-### Edge stitch the zipper to the fly extension
-
-<tip>
-
-**Zipper Length**
-
-It's a good idea to ensure your zipper stop ends before the indicated stitch line on the pattern. This will ensure you don't sew over your zipper stop and reduces tension on the bottom of the fly. If your zipper is too long, you can do a 0 length zig zag stitch to create a new stop (on just the zipper itself).
-
-</tip>
-
-Edge stitch along the left edge of the zipper to the serged edge of the fly extension to hold it in place.
-
-![Baste Zipper](BasteZipper.svg)
-
-
-### Top stitch the right leg to the zipper
-
-Start by pressing the right leg seam allowance to the back.
+### Naai de rits aan de gulpverlenging
 
 <tip>
 
-Remember that the seam allowance starts slightly right of the center front, the center front is marked in purple in the image, make sure you don't fold along the center front line by mistake.
+**Ritslengte**
+
+Het is een goed idee om ervoor te zorgen dat je ritsstop eindigt voor de aangegeven steeklijn op het patroon. Dit zorgt ervoor dat je niet over je ritsstop naait en vermindert de spanning op de onderkant van de gulp. Als je rits te lang is, kun je een zigzagsteek van 0 lengte doen om een nieuwe stop te maken (op alleen de rits zelf).
 
 </tip>
 
-Ensure you place the folded edge of the right leg just left of the zipper teeth to prevent fabric from being caught in the zipper.
+Naai langs de linkerrand van de rits aan de doorgestikte rand van het gulpverlengstuk om het op zijn plaats te houden.
 
-Stop sewing at the top 'fly extention' notch, slightly above the cross seam, and be sure to backstitch. If you don't do this you won't be able to keep the extension out of the way when sewing the J-Seam.
-
-![Attach Extension to Right Leg](AttachExtensionToRightLeg.svg)
+![Rits rijgen](BasteZipper.svg)
 
 
-### Attach the zipper to the fly facing.
+### Stik het rechterbeen vast aan de rits
 
-Be careful to align the leg left on the right center front. It can be valuable to pin or baste through the facing and right zide of the zipper tape. (We need to sew the left side of the zipper tape to the left leg). Ensuring everything is lined, sew the fly facing to the left side of the zipper. Try to get close to the zipper, but not too close.
+Begin met de naadtoeslag van het rechterbeen naar de achterkant te persen.
 
-![Attach Facing to Zipper](AttachFacingToZipper.svg)
+<tip>
+
+Denk eraan dat de naadtoeslag iets rechts van het middenvoorpand begint, het middenvoorpand is paars gemarkeerd in de afbeelding, zorg ervoor dat je niet per ongeluk langs de middenvoorlijn vouwt.
+
+</tip>
+
+Zorg ervoor dat je de gevouwen rand van het rechterbeen net links van de tandjes van de rits legt om te voorkomen dat er stof tussen de rits komt.
+
+Stop sewing at the top 'fly extension' notch, slightly above the cross seam, and be sure to backstitch. Als je dit niet doet, kun je het verlengstuk niet uit de weg houden tijdens het naaien van de J-naad.
+
+![Bevestig het verlengstuk aan het rechterbeen](AttachExtensionToRightLeg.svg)
+
+
+### Maak de rits vast aan de voorkant van de gulp.
+
+Let erop dat je het been links uitlijnt op de rechter middenvoor. It can be valuable to pin or baste through the facing and right side of the zipper tape. (We moeten de linkerkant van het ritsband aan het linkerbeen naaien). Zorg ervoor dat alles gevoerd is en naai het gulpgedeelte aan de linkerkant van de rits. Probeer dicht bij de rits te komen, maar niet te dicht.
+
+![Facing aan rits bevestigen](AttachFacingToZipper.svg)
 
 
 ### Stik de J-naad van de gulp
 
 <tip>
 
-Use a peice of paper as a guide to sew the J seam, this can be cut from your pattern along the indicated stitch line.
+Use a piece of paper as a guide to sew the J seam, this can be cut from your pattern along the indicated stitch line.
 
 </tip>
 
-Stik nu de zogenaamde J-naad van de gulp. Zorg ervoor dat de vliegextensie buiten de weg blijft. Since you didn't sew all the way along the fly extention, you should be able to pin it out of the way.
+Stik nu de zogenaamde J-naad van de gulp. Zorg ervoor dat de vliegextensie buiten de weg blijft. Since you didn't sew all the way along the fly extension, you should be able to pin it out of the way.
 
 #### Balk de onderkant van de gulp aan
 
-Now, bartack the very botton of the J-seam (the horizontal part) but this time make sure to also catch the fly extension. You can choose to add an additional bar tack along the J-Seam as well (shown in purple).
+Now, bartack the very bottom of the J-seam (the horizontal part) but this time make sure to also catch the fly extension. Je kunt er ook voor kiezen om een extra bar tack langs de J-naad toe te voegen (in paars weergegeven).
 
-![Sew the J-Seam](SewTheJSeam.svg)
+![De J-naad naaien](SewTheJSeam.svg)
 
 ## Stap 11: Bevestig de riemlusjes
 
@@ -310,7 +310,7 @@ Now, bartack the very botton of the J-seam (the horizontal part) but this time m
 
 <Note>
 
-Voor de efficiëntie, zullen we een lange strook riem herhalen die we in 8 delen zullen verdelen.
+For efficiency, we will construct one long strip of belt loop that we'll divide into 8 parts.
 
 </Note>
 
@@ -318,7 +318,7 @@ Snijd een strook van 80 cm lang en 2,8 cm breed.
 
 Serge (of zigzag) de lange rand van de strip aan beide zijden.
 
-![Finish Loop Edges](FinishLoopEdges.svg)
+![Afwerking lusranden](FinishLoopEdges.svg)
 
 Plooi de ene kant naar binnen en de andere kant erover. Druk daarna neer met je ijzer. Het eindresultaat moet een lange strook van ongeveer 1 cm breed zijn.
 
@@ -326,7 +326,7 @@ Stik nu langs de hele strook en knik er middenin. Zorg dat je hier een genereuze
 
 Knip ten slotte de lengte van de riemlusjes in 8 gelijke delen om 8 riemlusjes te maken.
 
-![Stitch and Cut Loops](StitchAndCutLoops.svg)
+![Stitch en Cut Lussen](StitchAndCutLoops.svg)
 
 ### Bevestig de riemlusjes
 
@@ -360,7 +360,7 @@ Stik een lijn van stiksel aan de binnenkant van de tailleband, dicht bij de rand
 
 Leg de tailleband met de goede kanten op elkaar langs de taille. For the straight waistband, make sure the side with the standard seam allowance is aligned with the waist, and not the side with double seam allowance.
 
-Zorg er ook voor dat je achterliggende naadwaarde voorbij het begin en het einde van de tailleband achterlaat.
+Also make sure to leave sufficient seam allowance beyond the start and end of the waistband.
 
 Stik langs de totale taille en bevestig de tailleband en stik de riemlusjes in één keer.
 
@@ -398,7 +398,7 @@ Dit houdt in dat de achterkant van de tailleband die we gemaakt hebben om iets v
 
 ### Stik de riemlusjes vast om ze breder te maken
 
-Je kunt de riemlussen het beste iets breder maken dan de tailleband, zodat er bredere riemen in passen.
+It's best to make the belt loops a bit wider than the waistband, to accommodate wider belts.
 
 Laat hiervoor de tailleband plat liggen en naai hem vast met een bartack van ongeveer 1,5 cm onder de tailleband.
 

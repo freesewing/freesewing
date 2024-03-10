@@ -4,17 +4,17 @@ title: Patroon notatie gids
 
 Hopelijk zijn onze patronen makkelijk genoeg om te begrijpen, maar als je iets tegenkomt dat je verwart hieronder is een referentie van al onze patroon notatie:
 
-- [Lines](#lines)
+- [Lijnen](#lines)
   - [Naden](#seams)
   - [Naadtoeslag](#seam-allowance)
   - [Draadrichting](#grainline)
-  - [Cut-on-fold indicator](#cut-on-fold-indicator)
+  - [Knip-op-vouw-indicator](#cut-on-fold-indicator)
   - [Afmetingen](#dimensions)
   - [Andere lijnen](#other-lines)
   - [Lijnbreedtes en beroertes](#line-widths-and-strokes)
-- [Annotations](#annotations)
+- [Annotaties](#annotations)
   - [Merktekens](#notches)
-  - [Buttons and Buttonholes](#buttons-and-buttonholes)
+  - [Knopen en knoopsgaten](#buttons-and-buttonholes)
   - [Bartacks](#bartacks)
   - [Snaps](#snaps)
   - [Titels](#titles)
@@ -31,7 +31,7 @@ en hoe het eruitziet als een gedownloade PDF of SVG.
 
 </Tip>
 
-## Lines
+## Lijnen
 
 Lines (and curves) make up the bulk of marking you'll find on any sewing pattern, including FreeSewing's patterns.
 
@@ -65,9 +65,9 @@ Een korrellijnindicator
 
 </Legend>
 
-### Cut-on-fold indicator
+### Knip-op-vouw-indicator
 
-Cut-on-fold indicators look similar to grainline indicators, but point towards the line on which the fabric should be folded:
+Knip-op-vouw indicatoren lijken op nerflijn indicatoren, maar wijzen naar de lijn waarop de stof gevouwen moet worden:
 
 <Legend part="cutonfold">
 
@@ -122,7 +122,7 @@ De verschillende lijnstreken
 
 </Legend>
 
-## Annotations
+## Annotaties
 
 Annotations are extra embellishments on the pattern that further clarify the designer's intent, help with construction, or otherwise provide value to the pattern.
 
@@ -150,7 +150,7 @@ Als een pijl van je wegvliegt, zie je de veer (⊗).
 
 </Tip>
 
-### Buttons and Buttonholes
+### Knopen en knoopsgaten
 
 Buttons and buttonholes may come in different sizes, but always have the same shape that represents how they look in real life:
 

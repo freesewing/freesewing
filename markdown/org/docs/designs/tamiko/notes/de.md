@@ -1,9 +1,9 @@
 ---
-title: "Tamiko top: Designer Notes"
+title: "Tamiko Oberteil: Designer Notes"
 ---
 
-I say a top similar to this when I was in Japan that I liked. So when I got home, I recreated it from memory.
+Als ich in Japan war, habe ich ein ähnliches Top gesehen, das mir gefallen hat. Als ich nach Hause kam, habe ich es aus dem Gedächtnis nachgestellt.
 
-It's essentially a zero-waste pattern and _very_ easy to make.
+Es ist im Grunde ein Zero-Waste-Muster und _sehr_ einfach zu machen.
 
 joost

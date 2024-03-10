@@ -1,7 +1,7 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { Pdf, mmToPoints } from './pdf.mjs'
 import SVGtoPDF from 'svg-to-pdfkit'
-import { logoPath } from 'config/logo.mjs'
+import { logoPath } from 'shared/components/icons.mjs'
 
 /** an svg of the logo to put on the cover page */
 const logoSvg = `<svg viewBox="0 0 25 25">
@@ -118,12 +118,47 @@ export class PdfMaker {
 
   /** generate the title for the cover page */
   async generateCoverPageTitle() {
-    this.addText('FreeSewing', 28)
-      .addText(this.strings.tagline, 12, 20)
-      .addText(this.strings.design, 48, -8)
+    // FreeSewing tag
+    this.addText('FreeSewing', 20).addText(this.strings.tagline, 10, 4)
 
-    await SVGtoPDF(this.pdf, logoSvg, this.pdf.page.width - lineStart - 100, lineStart, {
-      width: 100,
+    // Design name, version, and Measurement Set
+    this.addText(this.strings.design, 32)
+    let savedLineLevel = this.lineLevel - 27
+    let savedWidth = this.pdf.widthOfString(this.strings.design) + 50
+    const versionSetString = ' v' + this.strings.version + ' ( ' + this.strings.setName + ' )'
+    this.pdf.fontSize(18)
+    this.pdf.text(versionSetString, savedWidth, savedLineLevel)
+
+    // Date and timestamp
+    const currentDateTime = new Date().toLocaleString('en', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      timeZoneName: 'short',
+    })
+    this.addText(currentDateTime, 10)
+
+    // Settings YAML
+    this.addText('Settings: ', 10)
+    savedLineLevel = this.lineLevel - 9
+    savedWidth = this.pdf.widthOfString('Settings: ') + 50
+    this.pdf.fontSize(6)
+    this.pdf.text('(Measurement values are in mm.)', savedWidth, savedLineLevel)
+    this.addText(this.strings.yaml, 8)
+
+    // Notes and Warnings
+    if (this.strings.notes) {
+      this.addText('Notes:', 10).addText(this.strings.notes, 8)
+    }
+    if (this.strings.warns) {
+      this.addText('Warnings:', 10).addText(this.strings.warns, 8)
+    }
+
+    await SVGtoPDF(this.pdf, logoSvg, this.pdf.page.width - lineStart - 50, lineStart, {
+      width: 50,
       height: this.lineLevel - lineStart,
       preserveAspectRatio: 'xMaxYMin meet',
     })
@@ -136,7 +171,10 @@ export class PdfMaker {
 
     this.lineLevel += 8
     this.pdf.fillColor('#888888')
-    this.addText(this.strings.url, 10)
+    /*
+     * Don't print URL on pattern. See #5526
+     */
+    //this.addText(this.strings.url, 10)
   }
 
   /** generate the title for a cutting layout page */
@@ -217,7 +255,8 @@ export class PdfMaker {
     this.pdf.fontSize(fontSize)
     this.pdf.text(text, 50, this.lineLevel)
 
-    this.lineLevel += fontSize + marginBottom
+    this.lineLevel += this.pdf.heightOfString(text) + marginBottom
+
     return this
   }
 }

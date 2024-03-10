@@ -1,8 +1,8 @@
 ---
-title: "Hugo hoodie: Designer Notes"
+title: "Chandail à capuchon Hugo : Notes du créateur"
 ---
 
-I wanted to try my hand on raglan sleeves, so this is what I ended up with. It's a hooded sweater, with raglan sleeves, and an optional kangaroo pocket.
+Je voulais m'essayer aux manches raglan, c'est donc ce que j'ai obtenu. C'est un pull à capuche, avec des manches raglan et une poche kangourou en option.
 
 I named it `hugo` in memory of Hugo De Cock, my godfather with a name to make pornstars jealous.
 

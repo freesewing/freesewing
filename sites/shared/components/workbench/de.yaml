@@ -1,33 +1,34 @@
-addNotes: Add notes
-addSettingsToNotes: Add settings to notes
+addNotes: Notizen hinzufügen
+addSettingsToNotes: Einstellungen zu Notizen hinzufügen
 advanced: Fortgeschritten
 appliedMeasies: Wir haben dieses Schnittmuster mit einem neuen Maßsatz versehen.
 armhole: Armloch
 attributes: Eigenschaften
 backPockets: Gesäßtaschen
-bookmarkPattern: Bookmark pattern
+bookmarkPattern: Lesezeichen Muster
 bottomRight: Unten rechts
 changeMeasies: Muster ändern Messungen
-chooseATest: Choose a test scenario to run
-chooseATestDesc: You can test how the design adapts to changes in a specific design option or measurements.
-chooseATestMenuMobileMsg: To do so, open the test menu and select the scenario you want to run.
-chooseATestMenuMsg: To do so, select the test scenario you want to run in the menu on the right.
-chooseFromBookmarkedSets: Choose one of the measurements sets you've bookmarked
-chooseFromBookmarkedSetsDesc: If you've bookmarked any measurements sets, you can select from those too.
-chooseFromCuratedSets: Choose one of FreeSewing's curated measurements sets
-chooseFromCuratedSetsDesc: If you're just looking to try out our platform, you can select from our list of curated measurements sets.
-chooseFromOwnSets: Choose one of your own measurements sets
-chooseFromOwnSetsDesc: Pick any of your own measurements sets that have all required measurements to generate this pattern.
+chooseATest: Wähle ein Testszenario für die Durchführung
+chooseATestDesc: Du kannst testen, wie sich der Entwurf an Änderungen einer bestimmten Entwurfsoption oder von Messungen anpasst.
+chooseATestMenuMobileMsg: Öffne dazu das Testmenü und wähle das Szenario aus, das du ausführen möchtest.
+chooseATestMenuMsg: Wähle dazu im Menü auf der rechten Seite das gewünschte Testszenario aus.
+chooseFromBookmarkedSets: Wähle einen der Messwertsätze, die du mit einem Lesezeichen versehen hast
+chooseFromBookmarkedSetsDesc: Wenn du ein Lesezeichen für eine Messreihe gesetzt hast, kannst du auch aus diesen auswählen.
+chooseFromCuratedSets: Wähle eines der kuratierten Maßsets von FreeSewing
+chooseFromCuratedSetsDesc: Wenn du unsere Plattform nur ausprobieren möchtest, kannst du aus unserer Liste mit kuratierten Messsätzen wählen.
+chooseFromOwnSets: Wähle einen deiner eigenen Messsätze
+chooseFromOwnSetsDesc: Wähle ein beliebiges Maßset aus, das alle erforderlichen Maße enthält, um dieses Muster zu erstellen.
 chooseNewSet: Wähle ein neues Maßnahmeset
+clearTimingData: Timingdaten löschen
 closure: Verschluss
 collar: Kragen
-columns: columns
+columns: Spalten
 configurePattern: Muster konfigurieren
 construction: Konstruktion
-continueEditingTitle: Continue editing
-continueEditingDesc: Load the newly saved pattern in the pattern editor, so you can make more changes.
+continueEditingTitle: Weiter bearbeiten
+continueEditingDesc: Lade das neu gespeicherte Muster in den Muster-Editor, damit du weitere Änderungen vornehmen kannst.
 cuffs: Manschetten
-currentPrintLayout: Current print layout
+currentPrintLayout: Aktuelles Drucklayout
 cutLayout: Layout schneiden
 darts: Abnäher
 designOptions.d: Teste die Auswirkungen einer Option auf das Aussehen dieses Musters
@@ -38,11 +39,13 @@ edit: bearbeiten
 editCurrentMeasies: Aktuelle Maße bearbeiten
 editCurrentMeasiesDesc: Änderungen, die du hier vornimmst, werden nicht in deine Maßsätze gespeichert und wirken sich nur auf dieses Schnittmuster aus.
 editCurrentMeasiesHeader: Schnittmuster-Maße bearbeiten
-editMeasiesByHand: Edit measurements by hand
-editMeasiesByHandDesc: Manually set or override any measurements. These changes will only apply to the current pattern.
-editSettings: Konfiguration bearbeiten
+editMeasiesByHand: Messungen von Hand bearbeiten
+editMeasiesByHandDesc: Setze alle Messungen manuell fest oder setze sie außer Kraft. Diese Änderungen gelten nur für das aktuelle Muster.
+editSettings: Einstellungen bearbeiten
+editSettingsByHand: Einstellungen manuell bearbeiten
 elastic: Gummi
 export: Exportieren
+exporting: Exportieren
 exportAsData: Als Daten exportieren
 exportForEditing: Für die Bearbeitung exportieren
 exportForPrinting: Für den Druck exportieren
@@ -50,52 +53,53 @@ exportPattern-txt: Ein für deinen Heimdrucker geeignetes PDF exportieren, oder 
 exportPattern: Schnittmuster exportieren
 fit: Passform
 frontPockets: Vordere Taschen
-generatePdf: Generate print-ready PDF
+generatePdf: Druckfähiges PDF erzeugen
 giveItAName: Gib ihm einen Namen
-goToPatternTitle: Navigate to the pattern page
-goToPatternDesc: Exit the pattern editor and navigate to the pattern page where you can update the pattern's metadata.
+goToPatternTitle: Navigiere zur Musterseite
+goToPatternDesc: Verlasse den Mustereditor und navigiere zur Musterseite, wo du die Metadaten des Musters aktualisieren kannst.
 height: Höhe
 help: Hilfe
-layoutSettings.d: Additional options to further optimize the printing layout of your pattern.
-layoutSettings.t: Layout settings
+layoutSettings.d: Zusätzliche Optionen, um das Drucklayout deines Musters weiter zu optimieren.
+layoutSettings.t: Layout-Einstellungen
 length: Länge
-learnHowToUseEditor: Learn how to use FreeSewing's online pattern editor
+learnHowToUseEditor: Lerne, wie du den Online-Schnittmuster-Editor von FreeSewing verwendest
 measies: Muster-Messungen
 measiesOk: Wir haben alle erforderlichen Maße, um dieses Muster zu erstellen.
 measurements.d: Teste die Auswirkungen einer Messung auf das Aussehen des Musters
 menu: Menü
 name: Name
 noDesignFound: Wir konnten dieses Design nicht finden. Das sollte nicht passieren, also würden wir uns freuen, wenn du es meldest.
-noInlineDocs: Documention is not included in this build
-noInlineDocsDesc: Please visit FreeSewing.org to access our documentation
+noInlineDocs: Die Dokumentation ist in diesem Build nicht enthalten
+noInlineDocsDesc: Bitte besuche FreeSewing.org, um auf unsere Dokumentation zuzugreifen
 notes: Notizen
-pages: pages
+pages: Seiten
 part: Musterteil
 partInfo: Musterteil Info
-partTransfo: Part transformation buttons
-partTransfoDesc: These buttons allow you to rotate or flip individual pattern parts.
-partTransfoNo: Hide buttons
-partTransfoNoDesc: Do not include these buttons on the pattern output
-partTransfoYes: Show buttons
-partTransfoYesDesc: Include these buttons on the pattern output (they will not be printed)
+partTransfo: Tasten für die Teilumwandlung
+partTransfoDesc: Mit diesen Schaltflächen kannst du einzelne Musterteile drehen oder spiegeln.
+partTransfoNo: Tasten ausblenden
+partTransfoNoDesc: Diese Schaltflächen dürfen nicht in der Musterausgabe enthalten sein
+partTransfoYes: Tasten anzeigen
+partTransfoYesDesc: Füge diese Schaltflächen in die Musterausgabe ein (sie werden nicht gedruckt)
 pathInfo: Pfad-Infos
-patternBookmarkCreated: Pattern bookmark created
+patternBookmarkCreated: Muster-Lesezeichen erstellt
+patternEditor: Muster-Editor
 patternInspector: Muster-Inspektor
 patternLogs: Musterprotokolle
-patternSaved: Pattern saved
+patternSaved: Muster gespeichert
 pockets: Taschen
 printLayout: Layout drucken
-printSettings.d: Configure your pattern so you can print it just the way you like it. Includes page size & orientation, margins, and more.
-printSettings.t: Print settings
+printSettings.d: Konfiguriere dein Muster so, dass du es genau so drucken kannst, wie du es möchtest. Dazu gehören Seitengröße und -ausrichtung, Ränder und mehr.
+printSettings.t: Druckeinstellungen
 reset: Zurücksetzen
-resetPrintLayout: Reset print layout
-resetPrintLayoutDesc: Removes all manual changes to the print layout, and restores the default layout
-rows: rows
+resetPrintLayout: Drucklayout zurücksetzen
+resetPrintLayoutDesc: Entfernt alle manuellen Änderungen am Drucklayout und stellt das Standardlayout wieder her
+rows: Zeilen
 save: Speichern
 savePattern: Schnittmuster speichern
-saveAsNewPattern: Save as new pattern
-savePatternAs: Save pattern as...
-savePatternAsHellip: Save pattern as...
+saveAsNewPattern: Als neues Muster speichern
+savePatternAs: Muster speichern unter...
+savePatternAsHellip: Muster speichern unter...
 saveSettings: Einstellungen speichern
 saveYourPattern: Speichere dein Schnittmuster
 seeMissingMeasies: Siehe fehlende Maße
@@ -106,24 +110,32 @@ showOnlyThisPart: Nur diesen Teil des Musters anzeigen
 sleevecap: Armkugel
 style: Stil
 test: Test
-testDesignMeasurement: "Test {design} measurements: {measurement}"
-testDesignOption: "Test {design} design options: {option}"
-testDesignSets: "Test {design} across measurements sets"
-testMeasurements: Test measurements
-testMeasurementsDesc: Test how the design adapts to changes to a specific measurement
-testOptions: Test design options
-testOptionsDesc: Test how the design adapts to changes in a specific design option
+testDesign: Test-Entwurf
+testDesignMeasurement: "Teste {design} Messungen: {measurement}"
+testDesignOption: "Teste {design} Designoptionen: {option}"
+testDesignSets: "Test {design} über Messreihen hinweg"
+testMeasurements: Test Messungen
+testMeasurementsDesc: Teste, wie sich das Design an Änderungen einer bestimmten Messung anpasst
+testOptions: Designoptionen testen
+testOptionsDesc: Teste, wie sich das Design an Änderungen einer bestimmten Designoption anpasst
 testPattern: Testmuster
-testSets: Test measurements sets
-testSetsDesc: Test how the design adapts across different measurements sets
+testSets: Test-Messreihen
+testSetsDesc: Teste, wie sich das Design an verschiedene Messreihen anpasst
+timeDesign: Design timen
 topLeft: Oben links
 weLackSomeMeasies: Uns fehlen { nr } Messungen, um dieses Muster zu erstellen
-whereToGoAfterSaveAs: After saving the new pattern, what do you want to do?
+whereToGoAfterSaveAs: Was willst du tun, nachdem du das neue Muster gespeichert hast?
 width: Breite
-xTotalPagesSomeBlank: "{total} pages in total but {blank} are blank"
+xTotalPagesSomeBlank: "{total} Seiten insgesamt, aber {blank} sind leer"
 yamlEditViewError: Probleme mit YAML
 yamlEditViewErrorDesc: Wir haben deine Eingabe gespeichert, aber sie funktioniert möglicherweise aus folgenden Gründen nicht
 yamlEditViewTitleThing: 'Musterkonfiguration bearbeiten für {thing}'
 youCanPickOrEnter: Du kannst entweder einen Satz Messungen auswählen oder sie von Hand eingeben, aber ohne diese Messungen können wir nicht weitermachen.
-youUseCustomValue: You are using the default value
-youUseDefaultValue: You are using a custom value
+youUseCustomValue: Du verwendest den Standardwert
+youUseDefaultValue: Du verwendest einen benutzerdefinierten Wert
+veryFast: Sehr schnell
+fast: Schnell
+average: Durchschnittlich
+slow: Langsam
+verySlow: Sehr langsam
+tooSlow: Zu langsam

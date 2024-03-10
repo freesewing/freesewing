@@ -1,7 +1,7 @@
 ---
-title: "Leg ribbing"
+title: "Ребристість ніг"
 ---
 
-Choose whether to make ribbed knit cuffs for the legs or to use a hem.
+Вибирайте, чи робити ребристі трикотажні манжети для ніг, чи використовувати підгин.
 
-Note: Setting this option to 'hem' will enable the 'leg hem' option, while setting this option to 'ribbing' will enable the 'leg ribbing length' and 'leg ribbing width' options.
+Примітка: Якщо встановити цей параметр на "підгин", увімкнеться опція "підгин", а якщо на "окантовка", то увімкнуться опції "довжина окантовки" і "ширина окантовки".

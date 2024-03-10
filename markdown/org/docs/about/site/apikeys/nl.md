@@ -2,17 +2,17 @@
 title: API-keys
 ---
 
-An _API_  key is a unique identifier used to authenticate and authorize a request to the FreeSewing backend. Whereas a username (and password) are intended for users, API keys (and secret) are intended to authenticate and authorize a robot, program, or script rather than a human user.
+Een _API_  sleutel is een unieke identificatie die wordt gebruikt om een verzoek naar de FreeSewing backend te verifiëren en autoriseren. Waar een gebruikersnaam (en wachtwoord) bedoeld zijn voor gebruikers, zijn API sleutels (en geheim) bedoeld om een robot, programma of script te authenticeren en autoriseren in plaats van een menselijke gebruiker.
 
-To create a FreeSewing API key, you need to provide the following fields:
+Om een FreeSewing API-sleutel aan te maken, moet je de volgende velden invullen:
 
 <ReadMore />
 
 <Note>
 
-API keys are an advanced feature aimed at developers.
+API-sleutels zijn een geavanceerde functie voor ontwikkelaars.
 
-<a class="btn btn-secondary" href="/new/apikey/">Create a new API key</a>
+<a class="btn btn-secondary" href="/new/apikey/">Maak een nieuwe API-sleutel</a>
 
 </Note>
 

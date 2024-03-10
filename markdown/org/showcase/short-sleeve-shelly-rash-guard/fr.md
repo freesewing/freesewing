@@ -1,12 +1,13 @@
 ---
-title: "Short-sleeve Shelly rash guard"
-caption: "A tight-fitting short-sleeve Shelly rash guard, by Thrunic."
+title: "Protège-couche Shelly à manches courtes"
+caption: "Un rash guard Shelly à manches courtes et bien ajusté, par Thrunic."
 date: 20231016
-intro: "A tight-fitting short-sleeve Shelly rash guard, by Thrunic. Made from 20%spandex/80%nylon swim fabric, using a serger for the seams, a double needle for the sleeve hems, and no hem on the waist. Perfect for swimming, water sports, or as an athletic shirt."
+intro: "Un rash guard Shelly à manches courtes et bien ajusté, par Thrunic. Fabriqué en tissu de natation 20%spandex/80%nylon, avec une surjeteuse pour les coutures, une aiguille double pour les ourlets des manches, et sans ourlet à la taille. Parfait pour la natation, les sports nautiques ou comme chemise d'athlétisme."
 designs:
   - "shelly"
 maker: Natalia
+author: 33070
 ---
 
-A tight-fitting short-sleeve Shelly rash guard, by Thrunic. Made from 20%spandex/80%nylon swim fabric, using a serger for the seams, a double needle for the sleeve hems, and no hem on the waist. Perfect for swimming, water sports, or as an athletic shirt.
+Un rash guard Shelly à manches courtes et bien ajusté, par Thrunic. Fabriqué en tissu de natation 20%spandex/80%nylon, avec une surjeteuse pour les coutures, une aiguille double pour les ourlets des manches, et sans ourlet à la taille. Parfait pour la natation, les sports nautiques ou comme chemise d'athlétisme.
 

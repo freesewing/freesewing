@@ -8,7 +8,7 @@ A pencil skirt is a rather formal cut, and most commonly is made in a suiting ma
 More casual options among **medium weight** fabrics include **cotton** or **denim**.
 
 Using a fabric with some stretch will make it easier to get a comfortable fit and give you some more room to move about
-as pencil skirts fit rather tight. **Scuba** is often seen in pencil skirts as it is firm, has body but also stretchs.
+as pencil skirts fit rather tight. **Scuba** is often seen in pencil skirts as it is firm, has body but also stretches.
 
 ### Lining Fabric
 

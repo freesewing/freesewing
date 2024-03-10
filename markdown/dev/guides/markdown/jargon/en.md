@@ -1,17 +1,29 @@
 ---
-title: Using jargon
-order: yyy
+title: Using jargon and terms
 ---
 
-Jargon are terms that could throw off new users.
-Rather than create a glossary on every page, we use a plugin to manage
-jargon terms for us. This page shows you how to use it.
+Jargon or terms is anything that could throw off new users.
+Rather than create a glossary on every page, we use MDX to manage
+jargon/terms for us. This page shows you how to use it.
 
 <Tip compact>Think of jargon as glossary terms</Tip>
 
-## Using jargon
+## Defined terms
 
-To use jargon, it's sufficient to emphasize the term:
+The list of terminology that is defined differs from site to site:
+
+| Site | Terminology List |
+| ---- | ---------------- |
+| FreeSewing.dev | [/reference/terminology](/reference/terms) |
+| FreeSewing.org | [/docs/about/terminology](https://freesewing.org/docs/about/terms) |
+
+All of the terms listed in the pages above can be used in the markdown/mdx
+content of those websites.
+
+## Using jargon terms in MDX content
+
+To use jargon inside MDX content (like the markdown of our documentation, blog
+posts, and so on), it's sufficient to emphasize the term:
 
 ```md
 We are migrating from _cjs_ to _esm_ modules
@@ -21,32 +33,15 @@ Which renders as:
 
 We are migrating from _cjs_ to _esm_ modules
 
-## Adding jargon
+## Using jargon terms outside MDX content
 
-To add a new jargon term, you need to add it to the jargon file for the
-website you'd like to add it to:
+Outside MDX content -- more precisely, in React components -- you can achieve the same effect with the `Term` component:
 
-| Website | Jargon file | Github link |
-| ------- | ----------- | ----------- |
-| freesewing.dev | `sites/dev/jargon.mjs` | [jargon.mjs](https://github.com/freesewing/freesewing/blob/develop/sites/dev/jargon.mjs) |
-| freesewing.org | `sites/org/jargon.mjs` | [jargon.mjs](https://github.com/freesewing/freesewing/blob/develop/sites/org/jargon.mjs) |
+```mjs
+import { Term } from 'site/components/jargon.mjs'
 
-The file consists of key/value pairs where:
+export const MyComponent = () => (
+  <p>Look, it works here too: <Term>esm</Term></p>
+)
+```
 
-- The **key** is the jargon term
-- The **value** is the jargon description
-
-### Tips for jargon keys
-
-The key in the jargon file should always be lowercase. That's because we
-lowercase the term before matching it.
-
-So in your text, you can use `ESM`, `esm`, or even `eSm`, but the key in
-the jargon file should be `esm`.
-
-### Tips for jargon values
-
-The value can hold HTML tags, just make sure it's valid HTML and don't go
-overboard.
-
-Note that the definition will be _italic_ by default.

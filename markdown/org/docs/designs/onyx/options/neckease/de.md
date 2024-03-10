@@ -1,9 +1,9 @@
 ---
-title: "Neck ease"
+title: "Leichtigkeit im Nacken"
 ---
 
-Controls how large the neck hole is. Keep in mind that most garments have neck holes that are substantially larger than the wearer's neck, and that the neckband will further constrict the neck. 0% ease will make a very small neck hole that hugs the neck snugly. +50% will still make what's generally considered a tight neckband appropriate for swimwear. For garments with a loose fit, or that do not use a zipper, even larger values are recommended.
+Steuert, wie groß das Halsloch ist. Bedenke, dass die meisten Kleidungsstücke einen Halsausschnitt haben, der wesentlich größer ist als der Hals des Trägers, und dass das Nackenband den Hals noch mehr einengt. 0% ease macht ein sehr kleines Halsloch, das sich eng an den Hals anschmiegt. Mit +50% ist das, was allgemein als enger Halsausschnitt gilt, immer noch für Bademode geeignet. Für Kleidungsstücke mit einer lockeren Passform oder ohne Reißverschluss werden noch größere Werte empfohlen.
 
-> ##### This option allows negative values
+> ##### Diese Option erlaubt negative Werte
 > 
-> Be careful setting a negative ease for the neck, even on compression garments, as it can get very uncomfortable. Perhaps it could be useful for a garment trying to seal off the body, such as a wetsuit?
+> Achte darauf, dass du den Nacken nicht zu stark einschränkst, auch nicht bei Kompressionskleidung, denn das kann sehr unangenehm werden. Vielleicht könnte es für ein Kleidungsstück nützlich sein, das den Körper abdichten soll, wie zum Beispiel ein Neoprenanzug?

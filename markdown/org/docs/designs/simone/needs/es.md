@@ -6,6 +6,6 @@ title: "Camiseta Simone: Lo que necesitas"
 
 Por favor, consulte [la documentación de Simon](/docs/patterns/simon/).
 
-Please refer to [the Simon documentation](/docs/designs/simon/).
+Consulta [la documentación de Simon](/docs/designs/simon/).
 
 </Note>

@@ -23,7 +23,7 @@ const ns = nsMerge(pageNs, 'account', 'susi')
 
 const ConfirmSignUpPage = ({ page }) => {
   // Hooks
-  const { setAccount, setToken, token } = useAccount()
+  const { setAccount, token } = useAccount()
   const backend = useBackend()
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const { t } = useTranslation(ns)
@@ -33,6 +33,7 @@ const ConfirmSignUpPage = ({ page }) => {
   const [error, setError] = useState(false)
   const [id, setId] = useState()
   const [check, setCheck] = useState()
+  const [updated, setUpdated] = useState()
 
   useEffect(() => {
     const newId = getSearchParam('id')
@@ -47,30 +48,24 @@ const ConfirmSignUpPage = ({ page }) => {
     const confirmEmail = async () => {
       setLoadingStatus([true, 'status:contactingBackend'])
       const confirmation = await backend.loadConfirmation({ id, check })
-      if (confirmation?.result === 'success' && confirmation.confirmation) {
+      if (confirmation.success && confirmation.data.confirmation) {
         const result = await backend.updateAccount({
           confirm: 'emailchange',
-          confirmation: confirmation.confirmation.id,
-          check: confirmation.confirmation.check,
+          confirmation: confirmation.data.confirmation.id,
+          check: confirmation.data.confirmation.check,
         })
-        if (result.success) {
+        if (result.success && !updated) {
+          setUpdated(true)
           setLoadingStatus([true, 'status:settingsSaved', true, true])
           setAccount(result.data.account)
-          setToken(result.data.token)
           setError(false)
           router.push('/account')
-        } else {
-          setLoadingStatus([true, 'status:backendError', true, false])
-          setError(true)
         }
-      } else {
-        setLoadingStatus([true, 'status:backendError', true, false])
-        setError(true)
       }
     }
     // Call async methods
-    if (token) confirmEmail()
-  }, [id, check, token, backend, router, setAccount, setToken])
+    if (token && id && check && !updated) confirmEmail()
+  }, [id, check, backend, router, setAccount])
 
   // Update path with dynamic ID
   if (!page) return null

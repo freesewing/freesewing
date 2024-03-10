@@ -3,13 +3,13 @@ blogAbout: Новини та оновлення від спільноти FreeSe
 showcase: Готові проєкти
 showcaseAbout: Приклади та натхнення від спільноти FreeSewing з використанням наших дизайнів
 docs: Документація
-docsAbout: In-depth documentation for all our designs, our website, and much more
+docsAbout: Детальна документація для всіх наших дизайнів, нашого веб-сайту та багато іншого
 account: Ваш обліковий запис
-accountAbout: Керуйте налаштуваннями та уподобаннями свого акаунта, а також пресональними даними
+accountAbout: Manage your account settings and preferences, and your personal data
 designs: Дизайни
 designsAbout: Наша бібліотека дизайнів, які ви можете перетворити на шаблони, виготовлені за індивідуальними розмірами, за кілька кліків
 community: Спільнота
-communityAbout: Більше інформації про людей, які стоять за FreeSewing, та про те, де можна знайти однодумців
+communityAbout: More information about the people behind FreeSewing and where to fine like-minded makers
 apiAbout: Документація для нашої основної бібліотеки API та внутрішнього REST API.
 designAbout: Все, що вам потрібно знати, щоб почати створювати параметричні лекала для шиття.
 contributeAbout: Хочете зробити свій внесок у FreeSewing? Тоді вам сюди.
@@ -28,11 +28,11 @@ sets: Ваші набори вимірювань
 patterns: Ваші візерунки
 curate: Куратор
 curateSets: Кураторські набори
-curatedSets: Curated Measurements Sets
+curatedSets: Кураторські набори вимірювань
 code: Код
 patternsAbout: Перелік викрійок, збережених у вашому обліковому записі FreeSewing
 setsAbout: Перелік наборів мірок, збережених у вашому обліковому записі FreeSewing
 codeAbout: Тут ви можете знайти (посилання на) вихідний код Freesewing
 new: Новий...
-newAbout: Start here if you are looking to create something new
+newAbout: Почніть тут, якщо ви хочете створити щось нове
 support: Підтримати

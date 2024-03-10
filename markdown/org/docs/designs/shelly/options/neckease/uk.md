@@ -1,6 +1,6 @@
 ---
-title: "Neck ease"
+title: "Легкість шиї"
 ---
 
-Controls how large the neck hole is. Keep in mind that most shirts have neck holes that are substantially larger than the wearer's neck, and that the neckband will further constrict the neck. 0% ease will make a very small neck hole that hugs the neck snugly and is hard to push over the head, even with stretch fabric. +50% will still make what's generally considered a tight neckband appropriate for a swim shirt. For t-shirts or for a loose fit, even larger values are recommended.
+Контролює розмір отвору для горловини. Майте на увазі, що більшість сорочок мають отвори для горловини, які значно більші, ніж шия власника, і що шийний ремінь ще більше перетискатиме шию. 0% легкості зробить дуже маленький отвір для горловини, який щільно обхоплює шию і який важко натягнути на голову, навіть за допомогою еластичної тканини. +50% все одно зроблять те, що зазвичай вважається вузькою горловиною, доречним для купальника. Для футболок або для вільного крою рекомендуються ще більші значення.
 

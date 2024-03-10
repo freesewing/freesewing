@@ -1,7 +1,7 @@
 ---
-title: "Leg ribbing length"
+title: "Been ribboord lengte"
 ---
 
-Controls how long the ribbing around the leg is, as a percentage of the leg circumference. Setting this to a smaller value will make the cuff tighter and hold onto the ankle better, while a larger value will give more room.
+Bepaalt hoe lang de ribbels rond het been zijn, als percentage van de omtrek van het been. Als je dit op een kleinere waarde instelt, zal de manchet strakker worden en beter om de enkel blijven zitten, terwijl een grotere waarde meer ruimte geeft.
 
-Note: This option is only available if the 'leg ribbing' option is set to 'ribbing.'
+Opmerking: Deze optie is alleen beschikbaar als de optie 'been ribbels' is ingesteld op 'ribbels'.

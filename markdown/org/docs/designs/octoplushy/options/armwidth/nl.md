@@ -1,5 +1,5 @@
 ---
-title: "Arm Width"
+title: "Arm Breedte"
 ---
 
-The setting adjusts the width of the arms.
+De instelling past de breedte van de armen aan.

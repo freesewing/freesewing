@@ -20,7 +20,7 @@ Freesewing застосовує Загальний регламент захис
 Ви маєте право бути поінформованим про збір та використання ваших персональних даних.
 
 <Tip>
-Read [our privacy notice](/docs/about/privacy/) to inform yourself about the collection and use of your personal data.
+Прочитайте [наше повідомлення про конфіденційність] (/docs/about/privacy/), щоб дізнатися про збір та використання ваших персональних даних.
 </Tip>
 
 ## Право на доступ
@@ -29,7 +29,7 @@ Read [our privacy notice](/docs/about/privacy/) to inform yourself about the col
 
 <Tip>
 
-Go to [/account](/account/) to access your personal data.
+Перейдіть на [/account](/account/), щоб отримати доступ до своїх персональних даних.
 </Tip>
 
 ## Право на виправлення становища
@@ -38,7 +38,7 @@ Go to [/account](/account/) to access your personal data.
 
 <Tip>
 
-Go to [/account](/account/) to rectify or complete your personal data.
+Перейдіть на [/account](/account/), щоб виправити або доповнити свої персональні дані.
 </Tip>
 
 ## Право на видалення
@@ -46,7 +46,7 @@ Go to [/account](/account/) to rectify or complete your personal data.
 Ви маєте право на видалення ваших персональних даних.
 
 <Tip>
-Go to [/account/remove](/account/remove/) to remove all your data.
+Перейдіть до [/account/remove](/account/remove/), щоб видалити всі ваші дані.
 </Tip>
 
 ## Право на обмеження обробки даних
@@ -54,12 +54,12 @@ Go to [/account/remove](/account/remove/) to remove all your data.
 Ви маєте право вимагати обмеження обробки ваших персональних даних.
 
 <Tip>
-Go to [/account/restrict](/account/restrict/) to request FreeSewing restricts processing of your personal data.
+Перейдіть за посиланням [/account/restrict](/account/restrict/), щоб попросити FreeSewing обмежити обробку ваших персональних даних.
 </Tip>
 
 <Warning>
 
-Your request will be granted immediately, and can only be undone by [contacting support](/support/) to lift the restriction.
+Ваш запит буде задоволено негайно, і його можна буде скасувати, лише звернувшись до служби підтримки (/support/), щоб зняти обмеження.
 
 </Warning>
 
@@ -68,7 +68,7 @@ Your request will be granted immediately, and can only be undone by [contacting 
 Ви маєте право отримувати та повторно використовувати свої персональні дані для власних цілей або в різних сервісах.
 
 <Tip>
-Go to [/account/actions/export](/account/export/) to export your personal data.
+Перейдіть до [/account/actions/export](/account/export/), щоб експортувати ваші персональні дані.
 </Tip>
 
 ## Право на заперечення
@@ -76,12 +76,12 @@ Go to [/account/actions/export](/account/export/) to export your personal data.
 Ви маєте право заперечити проти використання ваших персональних даних для наукових досліджень.
 
 <Tip>
-Go to [/account/consent](/account/consent/) and unselect **Share anonymized measurements as open data** to do so.
+Для цього перейдіть до [/account/consent](/account/consent/) і зніміть прапорець **Поширювати анонімні вимірювання як відкриті дані**.
 </Tip>
 
 <Note>
 
-The right to object is broader, but this is how it applies to FreeSewing.
+Право на заперечення ширше, але саме так воно застосовується до FreeSewing.
 
 </Note>
 

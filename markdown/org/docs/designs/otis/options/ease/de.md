@@ -2,6 +2,6 @@
 title: "Zugabe"
 ---
 
-Otis is constructed with a considerable amount of ease. This is to allow for nappies, and the fact that infants move around a lot, and loose garments are more comfortable for them. It also allows them to grow a bit without you having to make a new one every week.
+Otis ist mit viel Leichtigkeit konstruiert. Das liegt an den Windeln und der Tatsache, dass sich Kleinkinder viel bewegen und lockere Kleidung für sie bequemer ist. So können sie auch ein bisschen wachsen, ohne dass du jede Woche eine neue machen musst.
 
-The ease is a percentage of the waist measurement. Default is 14%
+Die Erleichterung ist ein Prozentsatz des Taillenumfangs. Standard ist 14%

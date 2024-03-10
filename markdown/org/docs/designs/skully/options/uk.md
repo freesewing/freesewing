@@ -1,5 +1,5 @@
 ---
-title: "Skully: Design Options"
+title: "Скаллі: Варіанти дизайну"
 ---
 
 <DesignOptions design='skully' />

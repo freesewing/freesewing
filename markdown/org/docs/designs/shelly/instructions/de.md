@@ -1,106 +1,106 @@
 ---
-title: "Shelly shirt: Sewing Instructions"
+title: "Shelly Shirt: Anleitung zum Nähen"
 ---
 
 <Note>
 
-The use of a serger or an overlocking foot is recommended, to keep the size of the finished seams small. If using a serger, a seam allowance of 1/2 inch (12 mm) is recommeded. If using an overlocking foot on a sewing machine, or serging without the use of the knife, a seam allowance of 1/4 inch (6 mm) is recommended.
+Um die Größe der fertigen Nähte klein zu halten, wird die Verwendung eines Sergers oder eines Overlocking-Fußes empfohlen. If using a serger, a seam allowance of 1/2 inch (12 mm) is recommended. Wenn du einen Overlocking-Fuß an einer Nähmaschine verwendest oder ohne Messer versäuberst, wird eine Nahtzugabe von 6 mm (1/4 Zoll) empfohlen.
 
-All seams, including the neckband, can be done with the same stitch, whether it be a serger, an overlock stitch, or a stretch stitch.
+Alle Nähte, auch das Nackenband, können mit demselben Stich genäht werden, egal ob mit einem Serger, einem Overlockstich oder einem Stretchstich.
 
-Hems are optional (since knit doesn't fray), but if you do make hems, make sure they can stretch.
+Säume sind optional (da Strick nicht ausfranst), aber wenn du Säume anfertigst, solltest du darauf achten, dass sie sich dehnen können.
 
-Make sure to use a stitch that can stretch. If sewing stretch fabric, adjust your tension to allow for extra stretch. On a serger, this will usually mean lowering the needle tension, especially the right needle, and adjusting the looper tension as needed to keep the stitch looking decent. On a regular sewing machine, lower the tension. Test your choice of stitch first on scrap fabric, and try to shap the test seam by stretching the seam along its length. It should only snap after stretching quite a bit. If it pops too easily, keep playing with your stitches/tension settings until you get something that can survive some abuse.
+Achte darauf, dass du eine Naht verwendest, die sich dehnen kann. Wenn du einen dehnbaren Stoff nähst, musst du die Spannung so anpassen, dass sie die zusätzliche Dehnung berücksichtigt. Bei einem Serger bedeutet das in der Regel, dass du die Nadelspannung senkst, vor allem die der rechten Nadel, und die Spannung des Greifers nach Bedarf anpasst, damit die Masche gut aussieht. Bei einer normalen Nähmaschine musst du die Spannung verringern. Test your choice of stitch first on scrap fabric, and try to shape the test seam by stretching the seam along its length. Sie sollte erst nach einer gewissen Dehnung reißen. Wenn er zu leicht aufspringt, solltest du mit den Einstellungen für die Stiche und die Spannung spielen, bis du etwas bekommst, das auch etwas Missbrauch aushält.
 
-For making t-shirts or other shirts with 2-way stretch, regular settings with a stitch that stretches should be fine.
+Für die Herstellung von T-Shirts oder anderen Hemden mit 2-Wege-Stretch sollten normale Einstellungen mit einer dehnbaren Naht ausreichen.
 
 </Note>
 
-### Step 0: Customizing and fitting your pattern
+### Schritt 0: Anpassen und Anpassen deines Musters
 
- - Select an appropriate sleeve length.
-   - 10-30% for short sleeves.
-   - 75% for 3/4 length sleeves.
-   - 100% for long sleeves (to the wrist).
-   - 115% is a good value if making a shirt with thumb holes (extends to the knuckles)
+ - Wähle eine angemessene Ärmellänge.
+   - 10-30% für kurze Ärmel.
+   - 75% für 3/4 lange Ärmel.
+   - 100% für lange Ärmel (bis zum Handgelenk).
+   - 115% ist ein guter Wert, wenn du ein Shirt mit Daumenlöchern machst (reicht bis zu den Knöcheln)
 
- - Select an appropriate body length.
-   - Up to 80% or so will produce a crop top.
-   - 100% ends at top of the hip bone.
-   - 120% will produce a typical t-shirt.
-   - 140% will produce a somewhat longer shirt that is less prone to untucking or riding up.
-   - 200%+ can be used to make a simple t-shirt dress. It's suggested that you set straight sides to false, and adjust the side shape (under advanced options) for t-shirt dresses.
- - If in doubt, it's a lot easier to shorten a shirt or a sleeve than to lengthen it.
+ - Wähle eine angemessene Körperlänge.
+   - Bis zu 80 % oder mehr ergeben ein Crop Top.
+   - 100% endet am oberen Ende des Hüftknochens.
+   - 120% ergeben ein typisches T-Shirt.
+   - Bei 140 % wird das Hemd etwas länger und rutscht nicht so leicht aus der Hose oder hoch.
+   - 200%+ können für ein einfaches T-Shirt-Kleid verwendet werden. Es wird empfohlen, gerade Seiten auf falsch zu setzen und die Seitenform (unter Erweiterte Optionen) für T-Shirt-Kleider anzupassen.
+ - Im Zweifelsfall ist es viel einfacher, ein Hemd oder einen Ärmel zu kürzen, als ihn zu verlängern.
 
- - Figure out what kind of fit you want and set your eases accordingly. Make sure you have an appropriate fabric. If in doubt, making the shirt too loose is safer than too tight.
-   - In general, when working with spandex, you want 0% to negative ease. When working with ordinary cotton/polyester t-shirt fabric, you want positive ease, both because the fabric stretches less, and because typical styles using that fabric are looser.
-   - Sensory compression shirts will be the tightest / have the most negative ease.
-     - 4-way stretch fabric is required. Swim fabric or another very stretchy fabric is strongly recommended.
-     - Chest ease: -30% to -20%. This is the most important part to compress for sensory purposes, and is a relatively safe place to put tension.
-     - Sleeve ease: -20% to -10%. Compression here can be beneficial, but you don't want it so tight that you cut off circulation.
-     - Wrist ease: -15% to 0%. Mostly preference.
-     - Neck ease: 25% to 100% (25% will still be a very snug neckband that will take some stretching to get on/off the head, because of how the neckband is constructed and because neckholes usually are quite a bit bigger than the neck to fit over the head.
+ - Finde heraus, welche Art von Passform du willst und stelle deine Erleichterungen entsprechend ein. Achte darauf, dass du einen geeigneten Stoff hast. Im Zweifelsfall ist es sicherer, das Hemd zu locker zu machen als zu eng.
+   - Wenn du mit Spandex arbeitest, willst du in der Regel 0% bis negative Leichtigkeit. Wenn du mit normalem Baumwoll-/Polyester-T-Shirt-Stoff arbeitest, willst du eine positive Bequemlichkeit, weil sich der Stoff weniger dehnt und weil die typischen Schnitte aus diesem Stoff lockerer sind.
+   - Shirts mit sensorischer Kompression sind am engsten / haben den größten negativen Tragekomfort.
+     - 4-Wege-Stretchgewebe ist erforderlich. Ein Schwimmstoff oder ein anderer sehr dehnbarer Stoff wird dringend empfohlen.
+     - Erleichterung in der Brust: -30% bis -20%. Dies ist der wichtigste Teil, den du für die Wahrnehmung komprimieren musst, und ein relativ sicherer Ort, um Spannung aufzubauen.
+     - Ärmellänge: -20% bis -10%. Eine Kompression kann hier von Vorteil sein, aber sie sollte nicht so eng sein, dass sie die Blutzirkulation abschneidet.
+     - Leichtigkeit am Handgelenk: -15% bis 0%. Meistens Vorliebe.
+     - Nackenfreiheit: 25 % bis 100 % (25 % sind immer noch ein sehr eng anliegender Halsausschnitt, der etwas gedehnt werden muss, um ihn auf den Kopf zu bekommen und wieder abzunehmen.
 
-   - Athletic shirt
+   - Sportliches Hemd
 
 <Fixme>
-     - The author hasn't made one yet. If someone knows what eases to use, please let me know.
-       - Highly breathable fabric with some spandex/stretch is recommended.
+     - Der Autor hat noch keins gemacht. Wenn jemand weiß, welche Erleichterungen zu verwenden sind, lass es mich bitte wissen.
+       - Empfohlen wird ein hoch atmungsaktiver Stoff mit etwas Elasthan/Stretch.
 </Fixme>
 
-     - Eases are somewhere between those for a compression shirt and a swim shirt.
+     - Die Erleichterungen liegen irgendwo zwischen denen für ein Kompressionsshirt und ein Badeshirt.
 
-   - Swim shirt (looser fitting stretch shirt meant for swimming)
-     - Swim fabric (spandex/nylon blend or spandex/polyester blend, around 20% spandex)
-     - Chest ease: ~0%
-     - Sleeve ease: 0-15%
-     - Neck ease: 50 to 150% (mostly a style decision). Ease under 50% isn't recommended unless you like very snug neckbands.
+   - Schwimmshirt (locker sitzendes Stretch-Shirt zum Schwimmen)
+     - Schwimmstoff (Spandex/Nylon-Gemisch oder Spandex/Polyester-Gemisch, etwa 20% Spandex)
+     - Leichtigkeit in der Brust: ~0%
+     - Ärmellänge: 0-15%
+     - Leichtigkeit im Nacken: 50 bis 150% (meist eine Stilentscheidung). Eine Erleichterung unter 50 % ist nicht zu empfehlen, es sei denn, du magst sehr enge Halsbänder.
 
    - T-shirt
 <Fixme>
-     - The author hasn't made one yet. If someone knows what eases to use, please let me know.
-       - Eases will be quite a bit more larger (more positive) than for other shirt types.
+     - Der Autor hat noch keins gemacht. Wenn jemand weiß, welche Erleichterungen zu verwenden sind, lass es mich bitte wissen.
+       - Die Erleichterungen werden um einiges größer (positiver) sein als bei anderen Hemdtypen.
 </Fixme>
 
    - Sweatshirt
 <Fixme>
-     - The author hasn't made one yet. If someone knows what eases to use, please let me know.
-       - Eases will be similar to that for a t-shirt, or a little larger.
+     - Der Autor hat noch keins gemacht. Wenn jemand weiß, welche Erleichterungen zu verwenden sind, lass es mich bitte wissen.
+       - Die Erleichterungen werden ähnlich wie bei einem T-Shirt sein, oder etwas größer.
 </Fixme>
 
- - The neckband length will be mostly determined by the material of the neckband. Stretch fabric will generally use a length of around 80%. Less stretchy fabric will be longer, but always shorter than 100%, and ribbed knit (recommended for t-shirt neckbands) are around 60-70%.
+ - Die Länge des Halsbandes wird hauptsächlich durch das Material des Halsbandes bestimmt. Stretch-Stoffe haben in der Regel eine Länge von etwa 80 %. Weniger dehnbare Stoffe sind länger, aber immer kürzer als 100%, und Rippenstrick (empfohlen für T-Shirt-Halsbündchen) liegt bei 60-70%.
 
-### Step 1: Forming the body and attaching the sleeves
+### Schritt 1: Den Körper formen und die Ärmel anbringen
 
-- With _good sides together_, sew the front piece to each sleeve along the raglan seam (the diagonal seam running from the neck to the armpit).
-- With _good sides together_, sew the back piece to each sleeve along the raglan seam. You should now have a single piece with a circular neck hole in the middle.
+- Lege _gut zusammen_und nähe das Vorderteil entlang der Raglannaht (die diagonale Naht, die vom Hals bis zur Achselhöhle verläuft) an jeden Ärmel.
+- Lege _gut zusammen_und nähe das Rückenteil entlang der Raglannaht an jeden Ärmel. Du solltest jetzt ein einziges Stück mit einem runden Halsloch in der Mitte haben.
 
-### Step 2: Attaching the neckband
+### Schritt 2: Anbringen des Halsbandes
 
-- With _good sides together_, fold the neckband in half long ways (so it's half as long) and sew it into a loop.
-- With _wrong sides together_, fold the neckband in half short ways (so it's half as wide).
-- Turn the shirt _good-side_-out
-- Mark the quarter points on your neckband with ball point pins, clips, or chalk.
-- Do the same around the neck hole, marking the center of the front, the center of the back, and the midpoints on either sleeve.
-- With _good sides together_, line up the unfinished edges of the neckband with the edge of the neck hole, and line up the quarter points of the neckband with the quarter points of the neck hole. Stretch the neckband as needed to have all the points line up. Pin or clip the neckband around the neck hole.
- - Sew carefully around the neck hole, making sure to sew through all 3 layers.
- - Turn the neckband over. It should lay flat.
+- Lege _gut zusammen_, falte das Nackenband der Länge nach in die Hälfte (so dass es halb so lang ist) und nähe es zu einer Schlaufe.
+- Lege _falsch herum zusammen_und falte das Nackenband in der Hälfte (so dass es halb so breit ist).
+- Dreh das Hemd _gute Seite_-aus
+- Markiere die Viertelpunkte auf deinem Halsband mit Kugelschreibern, Klammern oder Kreide.
+- Mache dasselbe um das Halsloch herum und markiere dabei die Mitte der Vorderseite, die Mitte der Rückseite und die Mittelpunkte der beiden Ärmel.
+- Lege _mit der guten Seite nach oben_, richte die unbearbeiteten Kanten des Halsbandes an der Kante des Halslochs aus und richte die Viertelpunkte des Halsbandes an den Viertelpunkten des Halslochs aus. Dehne das Nackenband nach Bedarf, damit alle Punkte übereinander liegen. Stecke oder klammere das Halsband um das Halsloch.
+ - Nähe vorsichtig um das Halsloch herum und achte darauf, dass du durch alle 3 Lagen nähst.
+ - Drehe das Nackenband um. Sie sollte flach liegen.
 
-### Step 3: Closing the sleeves and sides
+### Schritt 3: Schließen der Ärmel und Seiten
 
-- Turn the shirt inside-out.
-- With _good sides together_, place the front and back pieces together and pin/clip their sides together.
-- With _good sides together_, close the sleeve and pin/clip it along the sleeve seam.
-- You should have a single seam prepared, going from the end of the sleeve to the bottom hem of the body.
-- Sew it shut.
-- Repeat for the other side.
+- Drehe das Hemd auf links.
+- Lege die vorderen und hinteren Teile mit _gut aneinander_und stecke die Seiten zusammen.
+- Lege _gut zusammen_, schließe den Ärmel und stecke/klammere ihn entlang der Ärmelnaht.
+- Du solltest eine einzelne Naht vorbereiten, die vom Ende des Ärmels bis zum unteren Saum des Körpers reicht.
+- Nähen Sie es zu.
+- Wiederhole den Vorgang auf der anderen Seite.
 
-### Step 4: (Optional) Hemming
+### Schritt 4: (Optional) Säumen
 
-- Hem the sleeves and/or the bottom of the shirt using a single-fold hem. Using a twin needle will add some stretch to the stitching, but in either case the use of a stretch stitch is still recommended for high-stretch fabrics.
-- Alternatively, you can overlock or serge the raw edge _without_ folding it over to give it a little bit of substance without adding as much bulk as a folded hem, or you can make a rolled hem.
-- Or you can leave the edges unfinished, particularly if it's swim fabric or some other fabric that does not fray at all.
+- Säume die Ärmel und/oder den unteren Teil des Hemdes mit einem einfach gefalteten Saum. Wenn du eine Zwillingsnadel verwendest, wird die Naht etwas dehnbarer, aber in jedem Fall wird die Verwendung eines Stretchstichs für hochdehnbare Stoffe empfohlen.
+- Alternativ kannst du die rohe Kante mit der Overlock versäubern oder versäubern _, ohne sie umzufalten (_ ), um ihr ein wenig Substanz zu verleihen, ohne sie so voluminös zu machen wie ein gefalteter Saum, oder du kannst einen Rollsaum machen.
+- Du kannst die Kanten auch unbearbeitet lassen, vor allem, wenn es sich um Schwimmstoff oder einen anderen Stoff handelt, der nicht ausfranst.
 
-### Step 5: Enjoy your new shirt!
+### Schritt 5: Viel Spaß mit deinem neuen Shirt!
 
-- It's time to take your new shirt for a swim, or to show it off at the beach!
+- Es ist an der Zeit, dein neues Hemd zum Schwimmen mitzunehmen oder es am Strand vorzuführen!

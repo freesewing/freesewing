@@ -1,11 +1,11 @@
 ---
-title: "Body length"
+title: "Longitud del cuerpo"
 ---
 
-Controls how long the shirt is.
-   - Up to 80% or so will produce a crop top.
-   - 100% ends at top of the hip bone.
-   - 120% will produce a typical t-shirt.
-   - 140% will produce a somewhat longer shirt that is less prone to untucking or riding up.
-   - 200%+ can be used to make a simple t-shirt dress. It's suggested that you set straight sides to false, and adjust the side shape (under advanced options) for t-shirt dresses.
+Controla la longitud de la camiseta.
+   - Hasta un 80% más o menos producirá un crop top.
+   - El 100% termina en la parte superior del hueso de la cadera.
+   - El 120% producirá una camiseta típica.
+   - El 140% producirá una camisa algo más larga y menos propensa a descoserse o subirse.
+   - 200%+ se puede utilizar para hacer un simple vestido camiseta. Se sugiere que establezcas los lados rectos en falso, y que ajustes la forma de los lados (en opciones avanzadas) para los vestidos camiseta.
 

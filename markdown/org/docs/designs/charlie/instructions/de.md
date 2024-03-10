@@ -191,9 +191,9 @@ Wenn du fertig bist, drücke die Inseam zu öffnen.
 
 <tip>
 
-Double check that your right and left legs match the pattern markings. The right leg's crotch should extend slightly beyond the left. Refer to the pattern and cut excess on the left leg if necessary.
+Vergewissere dich, dass dein rechtes und linkes Bein mit den Mustermarkierungen übereinstimmen. Der Schritt des rechten Beins sollte etwas über den des linken hinausgehen. Sieh dir das Schnittmuster an und schneide den Überschuss am linken Bein ab, falls nötig.
 
-It can be valuable to mark with chalk or thread mark the **Center Front** on each leg. This will help you make sure the peices are in the right place duing fly construction.
+Es kann hilfreich sein, mit Kreide oder Faden die **Center Front** an jedem Bein zu markieren. This will help you make sure the pieces are in the right place during fly construction.
 
 </tip>
 
@@ -201,11 +201,11 @@ Vergewissern Sie sich, dass ein Bein mit der guten Seite gedreht wird, und die a
 
 Jetzt steckst du das Bein mit der guten Seite nach außen in das Bein mit der guten Seite nach innen. Auf diese Weise haben sie ihre guten Seiten gegeneinander.
 
-Richte die Quernaht aus, indem du an der hinteren Taille beginnst und beide Hälften zusammensteckst, während du dich auf zum Hosenschlitz vorarbeitest. **Stop at the fly notch** and makes sure to back-stitch.
+Richte die Quernaht aus, indem du an der hinteren Taille beginnst und beide Hälften zusammensteckst, während du dich auf zum Hosenschlitz vorarbeitest. **Halte an der Schlitzkerbe an** und achte darauf, dass du zurücknähst.
 
 Wenn du fertig bist. Machen Sie es erneut. Die Kreuznaht immer zweimal nähen. Es ist eine der besten Praktiken, die Sie auf eigene Gefahr ignorieren.
 
-![Close Crossseam](CloseCrossseam.svg)
+![Quernaht schließen](CloseCrossseam.svg)
 
 
 <Tip>
@@ -219,7 +219,7 @@ Richtig zu sein ist eines der Dinge, die du am Ende jedes Mal hochschätzst, wen
 
 ## Schritt 10: Konstruktion des Hosenstalls
 
-### Close the fly extension and serge
+### Die Schlitzverlängerung schließen und versäubern
 
 Falten Sie die Fliegenverlängerung auf ihrer Faltlinie mit guten Seiten zusammen.
 
@@ -233,76 +233,76 @@ Serge (oder Zick-Zack) entlang der offenen Seite der Fliegenverlängerung. Keine
 
 während Sie dabei sind, auch entlang der gesamten Fliegenverkleidungen J-förmige Kante.
 
-![Close Extension and Serge](CloseExtensionAndSerge.svg)
+![Erweiterung und Serge schließen](CloseExtensionAndSerge.svg)
 
 
 ### Fliegenanhang anhängen
 
-Sew fly facing to left leg. You will be sewing slightly past the cross seam point, so be careful to keep the right leg seam allowance out of the way and aim to sew directly on top of the cross seam line.
+Nähen Sie die Schlitzleiste an das linke Bein. Du wirst etwas über den Punkt der Kreuznaht hinaus nähen, also achte darauf, dass die Nahtzugabe des rechten Beins nicht im Weg ist, und nähe direkt auf der Kreuznahtlinie.
 
-![Attach Facing](AttachFacing.svg)
+![Verkleidung anbringen](AttachFacing.svg)
 
-### Finish the fly facing
+### Beende die Verkleidung der Fliege
 
-Trim the fly facing to half of the seam allowance.  
-Tuck in the tip of the fly facing and secure it with a few stitches. Edge stitch the fly facing to the seam allowance. Press the seam allowance toward the facing and understitch the facing for a clean finish. Again, keeping the right leg  seam allowance out of the way.
+Schneide die Schlitzleiste auf die Hälfte der Nahtzugabe zu.  
+Stecke die Spitze der Schlitzleiste ein und befestige sie mit ein paar Stichen. Steppe die Schlitzleiste an der Nahtzugabe ab. Bügle die Nahtzugabe zum Besatz hin und steppe den Besatz ab, um einen sauberen Abschluss zu erzielen. Achte auch hier darauf, dass die Nahtzugabe für das rechte Bein nicht im Weg ist.
 
 ![Finish Facing](FinishFacing.svg)
 
-### Edge stitch the zipper to the fly extension
+### Nähen Sie den Reißverschluss an der Schlitzverlängerung fest.
 
 <tip>
 
-**Zipper Length**
+**Reißverschlusslänge**
 
-It's a good idea to ensure your zipper stop ends before the indicated stitch line on the pattern. This will ensure you don't sew over your zipper stop and reduces tension on the bottom of the fly. If your zipper is too long, you can do a 0 length zig zag stitch to create a new stop (on just the zipper itself).
+Es ist ratsam, darauf zu achten, dass dein Reißverschluss vor der auf dem Muster angegebenen Maschenlinie endet. So stellst du sicher, dass du nicht über den Reißverschlussanschlag nähst und die Spannung an der Unterseite des Schlitzes verringert wird. Wenn dein Reißverschluss zu lang ist, kannst du einen Zickzackstich der Länge 0 machen, um einen neuen Anschlag zu schaffen (nur am Reißverschluss selbst).
 
 </tip>
 
-Edge stitch along the left edge of the zipper to the serged edge of the fly extension to hold it in place.
+Nähe an der linken Kante des Reißverschlusses entlang bis zur versäuberten Kante der Schlitzverlängerung, um sie zu fixieren.
 
-![Baste Zipper](BasteZipper.svg)
+![Reißverschluss heften](BasteZipper.svg)
 
 
-### Top stitch the right leg to the zipper
+### Nähen Sie das rechte Bein am Reißverschluss fest.
 
-Start by pressing the right leg seam allowance to the back.
+Beginne damit, die Nahtzugabe des rechten Beins nach hinten zu bügeln.
 
 <tip>
 
-Remember that the seam allowance starts slightly right of the center front, the center front is marked in purple in the image, make sure you don't fold along the center front line by mistake.
+Denke daran, dass die Nahtzugabe etwas rechts von der vorderen Mitte beginnt. Die vordere Mitte ist in der Abbildung lila markiert, pass also auf, dass du nicht aus Versehen entlang der vorderen Mitte faltest.
 
 </tip>
 
-Ensure you place the folded edge of the right leg just left of the zipper teeth to prevent fabric from being caught in the zipper.
+Achte darauf, dass du die gefaltete Kante des rechten Beins genau links von den Reißverschlusszähnen platzierst, damit sich der Stoff nicht im Reißverschluss verfängt.
 
-Stop sewing at the top 'fly extention' notch, slightly above the cross seam, and be sure to backstitch. If you don't do this you won't be able to keep the extension out of the way when sewing the J-Seam.
+Stop sewing at the top 'fly extension' notch, slightly above the cross seam, and be sure to backstitch. Wenn du das nicht tust, kannst du die Verlängerung beim Nähen der J-Naht nicht aus dem Weg halten.
 
-![Attach Extension to Right Leg](AttachExtensionToRightLeg.svg)
+![Verlängerung am rechten Bein befestigen](AttachExtensionToRightLeg.svg)
 
 
-### Attach the zipper to the fly facing.
+### Befestige den Reißverschluss an der Schlitzleiste.
 
-Be careful to align the leg left on the right center front. It can be valuable to pin or baste through the facing and right zide of the zipper tape. (We need to sew the left side of the zipper tape to the left leg). Ensuring everything is lined, sew the fly facing to the left side of the zipper. Try to get close to the zipper, but not too close.
+Achte darauf, das linke Bein auf der rechten vorderen Mitte auszurichten. It can be valuable to pin or baste through the facing and right side of the zipper tape. (Wir müssen die linke Seite des Reißverschlussbandes an das linke Bein nähen). Achte darauf, dass alles gefüttert ist, und nähe die Schlitzleiste auf die linke Seite des Reißverschlusses. Versuche, nah an den Reißverschluss heranzukommen, aber nicht zu nah.
 
-![Attach Facing to Zipper](AttachFacingToZipper.svg)
+![Verkleidung am Reißverschluss befestigen](AttachFacingToZipper.svg)
 
 
 ### Nähen Sie die J-Naht der Fliege
 
 <tip>
 
-Use a peice of paper as a guide to sew the J seam, this can be cut from your pattern along the indicated stitch line.
+Use a piece of paper as a guide to sew the J seam, this can be cut from your pattern along the indicated stitch line.
 
 </tip>
 
-Jetzt die so genannte J-Naht der Fliege aufstitten. Achten Sie darauf, die Fliegenverlängerung aus dem Weg zu räumen. Since you didn't sew all the way along the fly extention, you should be able to pin it out of the way.
+Jetzt die so genannte J-Naht der Fliege aufstitten. Achten Sie darauf, die Fliegenverlängerung aus dem Weg zu räumen. Since you didn't sew all the way along the fly extension, you should be able to pin it out of the way.
 
 #### Bar tackt den unteren Rand des Fliegens
 
-Now, bartack the very botton of the J-seam (the horizontal part) but this time make sure to also catch the fly extension. You can choose to add an additional bar tack along the J-Seam as well (shown in purple).
+Now, bartack the very bottom of the J-seam (the horizontal part) but this time make sure to also catch the fly extension. Du kannst auch einen zusätzlichen Riegel entlang der J-Naht anbringen (lila dargestellt).
 
-![Sew the J-Seam](SewTheJSeam.svg)
+![Die J-Naht nähen](SewTheJSeam.svg)
 
 ## Schritt 11: Befestige die Gürtelschlaufen
 
@@ -310,7 +310,7 @@ Now, bartack the very botton of the J-seam (the horizontal part) but this time m
 
 <Note>
 
-Für die Effizienz werden wir einen langen Streifen Gurtschleifen in 8 Teile zerlegen.
+For efficiency, we will construct one long strip of belt loop that we'll divide into 8 parts.
 
 </Note>
 
@@ -318,7 +318,7 @@ Schneide einen Streifen von 80 cm Länge und 2,8 cm Breite zu.
 
 Serge (oder Zickzag) den langen Rand des Streifens auf beiden Seiten.
 
-![Finish Loop Edges](FinishLoopEdges.svg)
+![Schlaufenkanten fertigstellen](FinishLoopEdges.svg)
 
 Falte eine Seite nach innen, und die andere Seite darüber. Drücken Sie dann mit Ihrem Eisen herunter. Das Endergebnis sollte ein langer Streifen etwa 1cm breit sein.
 
@@ -326,7 +326,7 @@ Nähen Sie nun entlang der gesamten Länge des Streifens, riechen Sie in der Mit
 
 Schneiden Sie schließlich Ihre Längenschleifen in 8 gleiche Teile ab, um 8 Gurtschleifen zu bilden.
 
-![Stitch and Cut Loops](StitchAndCutLoops.svg)
+![Schlaufen nähen und schneiden](StitchAndCutLoops.svg)
 
 ### Befestige die Gürtelschlaufen
 
@@ -360,7 +360,7 @@ Nähen Sie eine Linie des Nähens auf der Innenbund, in der Nähe der Kante, dur
 
 Legen Sie die Taille mit guten Seiten zusammen entlang der Taille. For the straight waistband, make sure the side with the standard seam allowance is aligned with the waist, and not the side with double seam allowance.
 
-Achten Sie auch darauf, ausreichend Naht über den Anfang und das Ende der Taille zu lassen.
+Also make sure to leave sufficient seam allowance beyond the start and end of the waistband.
 
 Nähen Sie die gesamte Taille entlang und befestigen Sie das Taillenband und nähen Sie die Gürtelschleifen in einem Schritt.
 
@@ -398,7 +398,7 @@ Dies wird die Rückseite des Taillenbands, das wir gemacht haben, um etwas weite
 
 ### Nähen Sie die Gürtelschleifen nach unten um sie breiter zu machen
 
-Am besten machst du die Gürtelschlaufen etwas breiter als den Bund, damit du breitere Gürtel unterbringen kannst.
+It's best to make the belt loops a bit wider than the waistband, to accommodate wider belts.
 
 Dazu lässt du den Bund flach liegen und nähst ihn mit einem Riegel etwa 1,5 cm unterhalb des Bundes fest.
 

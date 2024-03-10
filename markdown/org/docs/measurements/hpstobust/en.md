@@ -7,13 +7,13 @@ title: HPS to bust
 ###### HPS: high point shoulder
 
 The _high point shoulder_ or _HPS_ point is used as the base for several vertical measurements.
-Refer to [the hps documentation](/docs/measurements/hps/) for information on how to locate this point.
+Refer to [the hps documentation](/docs/sewing/hps/) for information on how to locate this point.
 
 </Note>
 
 The **high point shoulder (HPS) to bust** measurement runs from your HPS down to the line that forms your bust span.
 
-To measure your HPS to bust, first [localize your HPS point](/docs/measurements/hps/).
+To measure your HPS to bust, first [localize your HPS point](/docs/sewing/hps/).
 Then measure straight down to the line that forms your chest circumference/bust span.
 
 The point of this measurement is to locate the fullest part of your bust vertically on your torso.
@@ -33,3 +33,4 @@ Simply switch your hands around, and you get a more accurate measurement.
 For best results, get a second person to take your measurements (if possible).
 
 </Tip>
+<MeasieImage />

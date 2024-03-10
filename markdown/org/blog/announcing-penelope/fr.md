@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "L'illustration du patron de Pénélope"
 date: "2018-06-29"
 intro: "Je suis très heureuse d'annoncer la disponibilité immédiate de la jupe crayon Pénélope , sortie en version bêta aujourd'hui."

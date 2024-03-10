@@ -2,13 +2,13 @@
 title: "Overwijdte borst"
 ---
 
-Controls how wide the garment will be at your chest.
+Bepaalt hoe wijd het kledingstuk wordt bij je borst.
 
 De waarde die je hier geeft wordt toegevoegd aan je borstomtrek bij het tekenen van het patroon.
 
-> ##### This option allows negative values
+> ##### Deze optie staat negatieve waarden toe
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Je moet negatief gemak gebruiken als je een stretchmateriaal gebruikt dat je strak wilt laten aansluiten. Unisuits en unitards hebben meestal een negatieve pasvorm, terwijl andere kledingstukken meestal een positieve pasvorm hebben.
 
 
 

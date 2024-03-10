@@ -4,6 +4,7 @@ import { useContext } from 'react'
 import Link from 'next/link'
 import orderBy from 'lodash.orderby'
 import {
+  CsetIcon,
   DesignIcon,
   DocsIcon,
   RssIcon,
@@ -39,6 +40,7 @@ export const icons = {
   showcase: (className = '') => <ShowcaseIcon className={className} />,
   new: (className = '') => <PlusIcon className={className} />,
   support: (className = '') => <HeartIcon className={className} />,
+  csets: (className = '') => <CsetIcon className={className} />,
 
   // Lab
   code: (className = '') => <GitHubIcon className={className} />,

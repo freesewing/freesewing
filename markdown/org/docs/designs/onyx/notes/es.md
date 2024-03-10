@@ -1,17 +1,17 @@
 ---
-title: "Onyx One-piece: Designer Notes"
+title: "Onyx De Una Pieza: Notas del diseñador"
 ---
 
-Onyx is my second design. Like Shelly, the design was made to address a need for sensory compression garments (related to autism), as well as the difficulty in finding sleeved and legged gender-neutral one-piece swimsuits sized for adults.
+Onyx es mi segundo diseño. Al igual que Shelly, el diseño se hizo para responder a una necesidad de prendas de compresión sensorial (relacionada con el autismo), así como a la dificultad de encontrar bañadores de una pieza de género neutro con mangas y piernas de tamaño para adultos.
 
-What started as a swimsuit/unisuit design turned into a more general design capable of making other forms of casual or athletic one-piece outfits. I've made one-piece pajamas with the Onyx design, and the design should be capable of making simple rompers (such as pajamas rompers), leotards, and unitards, as these garments all share the same general form, varying in fabric, ease, and sleeve/leg length more than in their core design. Options for ribbed cuffs were added to aid in making pajamas with the design, and pajamas were also a major reason for the addition of the optional hood (sun protection is the other reason).
+Lo que empezó como un diseño de bañador/traje de baño se convirtió en un diseño más general capaz de confeccionar otras formas de trajes de una pieza informales o atléticos. He confeccionado pijamas de una pieza con el diseño Onyx, y el diseño debería ser capaz de confeccionar peleles sencillos (como peleles de pijama), leotardos y unitardos, ya que todas estas prendas comparten la misma forma general, variando en tejido, facilidad y longitud de mangas/piernas más que en su diseño básico. Se añadieron opciones de puños acanalados para ayudar a confeccionar pijamas con el diseño, y los pijamas también fueron una razón importante para añadir la capucha opcional (la protección solar es la otra razón).
 
-The skirt was added in for modesty, primarily for the swimwear, though it does allow the Onyx design to be used to make gathered dresses with built-in shorts.
+La falda se añadió por pudor, principalmente para los bañadores, aunque permite utilizar el diseño Onyx para hacer vestidos fruncidos con pantalones cortos incorporados.
 
-Onyx does copy a number of Shelly's features, including raglan sleeves for mobility and the use of symmetrical front and back parts, except for the neck and head.
+Onyx sí copia algunos rasgos de Shelly, como las mangas raglán para mayor movilidad y el uso de partes delanteras y traseras simétricas, excepto el cuello y la cabeza.
 
-Onyx is named after the gemstone and its deep black color, which not coincidentially is a great base color for Onyx swimsuits, particularly if one wants them to look like a wetsuit.
+Onyx is named after the gemstone and its deep black color, which not coincidentally is a great base color for Onyx swimsuits, particularly if one wants them to look like a wetsuit.
 
-A bit of history: Onyx may never have been born had it not been for the anti-LGBTQ+ protests and boycotts in the spring of 2023, which led to a unisuit that I particularly liked being pulled from the shelves of a major US retailer, and me needing a suitable replacement.
+Un poco de historia: Onyx podría no haber nacido nunca de no haber sido por las protestas y boicots anti-LGBTQ+ de la primavera de 2023, que provocaron que un unisuit que me gustaba especialmente fuera retirado de las estanterías de una importante tienda estadounidense, y que yo necesitara un sustituto adecuado.
 
 Thrunic

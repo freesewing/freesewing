@@ -190,9 +190,9 @@ Lorsque vous avez terminé, ouvrez la couture au fer.
 
 <tip>
 
-Double check that your right and left legs match the pattern markings. The right leg's crotch should extend slightly beyond the left. Refer to the pattern and cut excess on the left leg if necessary.
+Vérifie deux fois que tes jambes droite et gauche correspondent aux marques du patron. L'entrejambe de la jambe droite doit dépasser légèrement de la gauche. Reporte-toi au patron et coupe l'excédent sur la jambe gauche si nécessaire.
 
-It can be valuable to mark with chalk or thread mark the **Center Front** on each leg. This will help you make sure the peices are in the right place duing fly construction.
+Il peut être précieux de marquer à la craie ou au fil l'**avant central** de chaque jambe. This will help you make sure the pieces are in the right place during fly construction.
 
 </tip>
 
@@ -200,11 +200,11 @@ Assurez-vous qu'une jambe est retournée avec le bon côté dehors, et l'autre a
 
 Maintenant passez la jambe avec l'endroit à l'intérieur de la jambe qui a l'endroit dedans. De cette façon, elles sont endroit contre endroit.
 
-Alignez la couture de fourche, à partir de la taille arrière, en fixant les deux moitiés ensemble pendant que vous vous dirigez vers la braguette. **Stop at the fly notch** and makes sure to back-stitch.
+Alignez la couture de fourche, à partir de la taille arrière, en fixant les deux moitiés ensemble pendant que vous vous dirigez vers la braguette. **Arrête-toi à l'encoche de la braguette** et assure-toi de faire un point arrière.
 
 Quand vous avez terminé. Faites-le à nouveau. Coudre toujours la couture de fourche deux fois. C'est l'une de ces bonnes pratiques que vous ignorerez à vos propres risques.
 
-![Close Crossseam](CloseCrossseam.svg)
+![Couture croisée fermée](CloseCrossseam.svg)
 
 
 <Tip>
@@ -218,7 +218,7 @@ C'est une de ces choses que vous finirez par adorer chaque fois que vous les por
 
 ## Étape 10: Construire la braguette
 
-### Close the fly extension and serge
+### Ferme la rallonge de la braguette et fais une surpiqûre
 
 Repliez le rallonge de la mouche sur sa ligne de pliage avec de bons côtés ensemble.
 
@@ -232,76 +232,76 @@ Serge (ou zig-zag) le long du côté ouvert de l'extension de la mouche. Pas bes
 
 pendant que vous y êtes, aussi serez-vous le long de la totalité de la mouche face aux bords en forme de J.
 
-![Close Extension and Serge](CloseExtensionAndSerge.svg)
+![Close Extension et Serge](CloseExtensionAndSerge.svg)
 
 
 ### Fixer la face de la mouche
 
-Sew fly facing to left leg. You will be sewing slightly past the cross seam point, so be careful to keep the right leg seam allowance out of the way and aim to sew directly on top of the cross seam line.
+Couds le revers de la braguette à la jambe gauche. Tu vas coudre légèrement au-delà du point de couture transversale, alors fais attention à ne pas gêner le surplus de couture de la jambe droite et vise à coudre directement sur la ligne de couture transversale.
 
-![Attach Facing](AttachFacing.svg)
+![Fixe la façade](AttachFacing.svg)
 
-### Finish the fly facing
+### Finis la face de la mouche
 
-Trim the fly facing to half of the seam allowance.  
-Tuck in the tip of the fly facing and secure it with a few stitches. Edge stitch the fly facing to the seam allowance. Press the seam allowance toward the facing and understitch the facing for a clean finish. Again, keeping the right leg  seam allowance out of the way.
+Coupe le parement de la braguette à la moitié de la marge de couture.  
+Rentre la pointe de la braguette et fixe-la avec quelques points de couture. Couds le bord de la braguette jusqu'à la marge de couture. Repasse le surplus de couture vers le parement et sous-pique le parement pour une finition propre. Encore une fois, en gardant le surplus de couture de la jambe droite à l'écart.
 
-![Finish Facing](FinishFacing.svg)
+![Finition de la façade](FinishFacing.svg)
 
-### Edge stitch the zipper to the fly extension
+### Couds la fermeture à glissière à l'extension de la braguette.
 
 <tip>
 
-**Zipper Length**
+**Longueur de la fermeture éclair**
 
-It's a good idea to ensure your zipper stop ends before the indicated stitch line on the pattern. This will ensure you don't sew over your zipper stop and reduces tension on the bottom of the fly. If your zipper is too long, you can do a 0 length zig zag stitch to create a new stop (on just the zipper itself).
+Il est bon de s'assurer que ton arrêt de fermeture éclair se termine avant la ligne de points indiquée sur le modèle. Cela te permettra de ne pas coudre par-dessus ton arrêt de fermeture éclair et de réduire la tension sur le bas de la braguette. Si ta fermeture éclair est trop longue, tu peux faire un point zig zag de longueur 0 pour créer une nouvelle butée (uniquement sur la fermeture éclair elle-même).
 
 </tip>
 
-Edge stitch along the left edge of the zipper to the serged edge of the fly extension to hold it in place.
+Fais un point de bordure le long du bord gauche de la fermeture à glissière jusqu'au bord surpiqué de l'extension de braguette pour la maintenir en place.
 
 ![Baste Zipper](BasteZipper.svg)
 
 
-### Top stitch the right leg to the zipper
+### Couds la jambe droite à la fermeture à glissière.
 
-Start by pressing the right leg seam allowance to the back.
+Commence par repasser le surplus de couture de la jambe droite sur l'arrière.
 
 <tip>
 
-Remember that the seam allowance starts slightly right of the center front, the center front is marked in purple in the image, make sure you don't fold along the center front line by mistake.
+N'oublie pas que la marge de couture commence légèrement à droite du devant central, le devant central est marqué en violet sur l'image, assure-toi de ne pas plier le long de la ligne du devant central par erreur.
 
 </tip>
 
-Ensure you place the folded edge of the right leg just left of the zipper teeth to prevent fabric from being caught in the zipper.
+Veille à placer le bord plié de la jambe droite juste à gauche des dents de la fermeture éclair pour éviter que le tissu ne se prenne dans la fermeture.
 
-Stop sewing at the top 'fly extention' notch, slightly above the cross seam, and be sure to backstitch. If you don't do this you won't be able to keep the extension out of the way when sewing the J-Seam.
+Stop sewing at the top 'fly extension' notch, slightly above the cross seam, and be sure to backstitch. Si tu ne le fais pas, tu ne pourras pas maintenir l'extension hors du chemin lorsque tu couds la couture en J.
 
-![Attach Extension to Right Leg](AttachExtensionToRightLeg.svg)
+![Attache la rallonge à la jambe droite](AttachExtensionToRightLeg.svg)
 
 
-### Attach the zipper to the fly facing.
+### Attache la fermeture à glissière au parement de la braguette.
 
-Be careful to align the leg left on the right center front. It can be valuable to pin or baste through the facing and right zide of the zipper tape. (We need to sew the left side of the zipper tape to the left leg). Ensuring everything is lined, sew the fly facing to the left side of the zipper. Try to get close to the zipper, but not too close.
+Fais attention à aligner la jambe gauche sur le centre droit avant. It can be valuable to pin or baste through the facing and right side of the zipper tape. (Nous devons coudre le côté gauche de la bande de fermeture éclair à la jambe gauche). En t'assurant que tout est doublé, couds le parement de la braguette sur le côté gauche de la fermeture à glissière. Essaie de t'approcher de la fermeture éclair, mais pas trop.
 
-![Attach Facing to Zipper](AttachFacingToZipper.svg)
+![Fixe la face à la fermeture éclair](AttachFacingToZipper.svg)
 
 
 ### Coudre la couture J-de la mouche
 
 <tip>
 
-Use a peice of paper as a guide to sew the J seam, this can be cut from your pattern along the indicated stitch line.
+Use a piece of paper as a guide to sew the J seam, this can be cut from your pattern along the indicated stitch line.
 
 </tip>
 
-Désormais, renverser la soi-disant couture J-de la mouche. Assurez-vous de ne pas prendre le contrôle de l'extension du vol. Since you didn't sew all the way along the fly extention, you should be able to pin it out of the way.
+Désormais, renverser la soi-disant couture J-de la mouche. Assurez-vous de ne pas prendre le contrôle de l'extension du vol. Since you didn't sew all the way along the fly extension, you should be able to pin it out of the way.
 
 #### Tape le bas de la mouche
 
-Now, bartack the very botton of the J-seam (the horizontal part) but this time make sure to also catch the fly extension. You can choose to add an additional bar tack along the J-Seam as well (shown in purple).
+Now, bartack the very bottom of the J-seam (the horizontal part) but this time make sure to also catch the fly extension. Tu peux aussi choisir d'ajouter un point d'arrêt supplémentaire le long du joint en J (illustré en violet).
 
-![Sew the J-Seam](SewTheJSeam.svg)
+![Coudre la couture en J](SewTheJSeam.svg)
 
 ## Étape 11 : Fixer les boucles de ceinture
 
@@ -309,7 +309,7 @@ Now, bartack the very botton of the J-seam (the horizontal part) but this time m
 
 <Note>
 
-Pour plus d'efficacité, nous fabriquerons une longue bande de boucle de courroie que nous diviserons en 8 parties.
+For efficiency, we will construct one long strip of belt loop that we'll divide into 8 parts.
 
 </Note>
 
@@ -317,7 +317,7 @@ Couper une bande de 80 cm de long (32 po) et de 2,8 cm de large (1 1/8 po).
 
 Serge (ou zigzag) le bord long de la bande des deux côtés.
 
-![Finish Loop Edges](FinishLoopEdges.svg)
+![Finir les bords de la boucle](FinishLoopEdges.svg)
 
 Plier un côté à l'intérieur, et l'autre côté dessus. Ensuite appuyez sur votre fer à repasser. Le résultat final devrait être une bande longue d'environ 1 cm de large.
 
@@ -325,7 +325,7 @@ Maintenant coudre sur toute la longueur de la bande, piquer au milieu de celle-c
 
 Enfin, coupez votre bande de courroies de longueur en 8 parties égales pour faire 8 boucles de courroie.
 
-![Stitch and Cut Loops](StitchAndCutLoops.svg)
+![Pique et coupe les boucles](StitchAndCutLoops.svg)
 
 ### Attacher les boucles de ceinture
 
@@ -359,7 +359,7 @@ Coudre une ligne de couture sur la ceinture intérieure, près du bord, à trave
 
 Placez la ceinture avec de bons côtés le long de la taille. For the straight waistband, make sure the side with the standard seam allowance is aligned with the waist, and not the side with double seam allowance.
 
-Assurez-vous également de laisser une marge de couture suffisante au-delà du début et de la fin de la ceinture.
+Also make sure to leave sufficient seam allowance beyond the start and end of the waistband.
 
 Coudre le long de l'intégralité de la taille, attacher la bande de la taille et coudre les boucles de la ceinture en une seule fois.
 
@@ -397,7 +397,7 @@ Cela accrochera l'arrière de la ceinture que nous avons fait pour aller un peu 
 
 ### Coudre les boucles de la ceinture pour les agrandir
 
-Il est préférable que les passants de ceinture soient un peu plus larges que la ceinture, afin d'accueillir des ceintures plus larges.
+It's best to make the belt loops a bit wider than the waistband, to accommodate wider belts.
 
 Pour ce faire, mettez la ceinture à plat et cousez-la avec un point d'arrêt situé à environ 1,5 cm (un demi pouce) sous la ceinture.
 

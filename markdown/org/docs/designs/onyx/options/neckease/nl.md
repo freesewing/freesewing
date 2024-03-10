@@ -1,9 +1,9 @@
 ---
-title: "Neck ease"
+title: "Nekgemak"
 ---
 
-Controls how large the neck hole is. Keep in mind that most garments have neck holes that are substantially larger than the wearer's neck, and that the neckband will further constrict the neck. 0% ease will make a very small neck hole that hugs the neck snugly. +50% will still make what's generally considered a tight neckband appropriate for swimwear. For garments with a loose fit, or that do not use a zipper, even larger values are recommended.
+Bepaalt hoe groot het halsgat is. Bepaalt hoe groot het halsgat is. Houd er rekening mee dat de meeste kledingstukken halsgaten hebben die aanzienlijk groter zijn dan de nek van de drager, en dat de nekband de nek verder zal vernauwen. 0% gemak maakt een heel klein halsgat dat de nek goed omsluit. Met +50% is wat over het algemeen als een strakke nekband wordt beschouwd nog steeds geschikt voor badmode. Voor kledingstukken met een losse pasvorm of die geen rits gebruiken, worden zelfs grotere waarden aanbevolen.
 
-> ##### This option allows negative values
+> ##### Deze optie staat negatieve waarden toe
 > 
-> Be careful setting a negative ease for the neck, even on compression garments, as it can get very uncomfortable. Perhaps it could be useful for a garment trying to seal off the body, such as a wetsuit?
+> Wees voorzichtig met het instellen van een negatief gemak voor de nek, zelfs bij compressiekleding, want dat kan erg oncomfortabel worden. Misschien is het handig voor een kledingstuk dat het lichaam probeert af te sluiten, zoals een wetsuit?

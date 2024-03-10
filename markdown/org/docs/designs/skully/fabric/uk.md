@@ -1,19 +1,19 @@
 ---
-title: "Skully: Fabric Options"
+title: "Скаллі: Варіанти тканин"
 ---
 
 ## Основна тканина
 
-This plush toy is best made from a felt type of fabric. This will provide extra rigidity to keep the shape correct, while still allowing it to be a plush toy. Thin and stretchy fabrics are not well suited, because the shape will change considerably due to tensions from the stuffing.
+Таку плюшеву іграшку найкраще робити з фетру. Це забезпечить додаткову жорсткість, щоб тримати форму правильною, водночас дозволяючи їй бути плюшевою іграшкою. Тонкі та еластичні тканини не дуже добре підходять, оскільки форма значно зміниться через напругу від набивання.
 
-## Hair
+## Волосся
 
-Skully needs hair. Embrodery floss works very well, and can be had in all colors.
+Скаллі потрібне волосся. Embroidery floss works very well, and can be had in all colors.
 
 ## Начинка
 
 Оскільки це плюшева іграшка, її потрібно буде набити матеріалом. Здебільшого ви захочете використовувати наповнювач з поліефірного волокна (поліфіл), але якщо у вас є багато обрізків тканини, ви можете використовувати подрібнені обрізки тканини. Однак він може бути важчим і менш м'яким, ніж волокнистий наповнювач. Також варто подумати про те, чи не ризикує ваш Hi забруднитися, чи не захоче він поплавати, адже не всі варіанти наповнювачів можна прати.
 
-## Needle
+## Голка.
 
-Skully has traded his sword for a needle. A needle this size is mostly sold as upholstery needles. This will come in handy when doing some of the touch-ups at the end of the construction.
+Скаллі проміняв свій меч на голку. Голки такого розміру здебільшого продаються як голки для оббивки. Це стане в нагоді, коли ви будете робити деякі доопрацювання в кінці будівництва.

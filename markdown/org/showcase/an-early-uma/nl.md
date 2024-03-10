@@ -1,12 +1,12 @@
 ---
-title: "An early Uma"
-caption: "An Uma made of rayon spandex jersey"
+title: "Een vroege Uma"
+caption: "Een Uma van rayon spandex jersey"
 date: 20231027
-intro: "This pair of Uma undies is made of rayon spandex jersey and finished with wide fold over elastic."
+intro: "Dit onderbroekje van Uma is gemaakt van rayon spandex jersey en afgewerkt met breed omgeslagen elastiek."
 designs:
   - "uma"
 maker: Natalia
 ---
 
-This pair of Uma undies is made of rayon spandex jersey and finished with wide fold over elastic. This is an early version of the design, which has since undergone a few changes.
+Dit onderbroekje van Uma is gemaakt van rayon spandex jersey en afgewerkt met breed omgeslagen elastiek. Dit is een vroege versie van het ontwerp, dat sindsdien enkele wijzigingen heeft ondergaan.
 

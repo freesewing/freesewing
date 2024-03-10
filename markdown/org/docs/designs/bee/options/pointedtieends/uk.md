@@ -1,7 +1,7 @@
 ---
-title: Pointed tie ends
+title: Загострені кінці краваток
 ---
 
-This option allows you to generate a pattern where the ties have a pointy end, rather than a straight one.
+Ця опція дозволяє створити візерунок, де зав'язки мають загострений кінець, а не прямий.
 
-Enable this option if you want your ties to have pointy ends. Disable this option (the default) if you want your ties to have straight ends.
+Увімкніть цю опцію, якщо хочете, щоб краватки мали загострені кінці. Вимкніть цю опцію (за замовчуванням), якщо хочете, щоб краватки мали прямі кінці.

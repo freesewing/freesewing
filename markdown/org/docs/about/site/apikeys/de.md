@@ -2,17 +2,17 @@
 title: API-Schlüssel
 ---
 
-An _API_  key is a unique identifier used to authenticate and authorize a request to the FreeSewing backend. Whereas a username (and password) are intended for users, API keys (and secret) are intended to authenticate and authorize a robot, program, or script rather than a human user.
+Ein _API_  Schlüssel ist eine eindeutige Kennung, die zur Authentifizierung und Autorisierung einer Anfrage an das FreeSewing Backend verwendet wird. Während ein Benutzername (und ein Passwort) für Benutzer gedacht sind, dienen API-Schlüssel (und das Geheimnis) der Authentifizierung und Autorisierung eines Roboters, Programms oder Skripts und nicht eines menschlichen Benutzers.
 
-To create a FreeSewing API key, you need to provide the following fields:
+Um einen FreeSewing-API-Schlüssel zu erstellen, musst du die folgenden Felder ausfüllen:
 
 <ReadMore />
 
 <Note>
 
-API keys are an advanced feature aimed at developers.
+API-Schlüssel sind eine fortschrittliche Funktion, die sich an Entwickler richtet.
 
-<a class="btn btn-secondary" href="/new/apikey/">Create a new API key</a>
+<a class="btn btn-secondary" href="/new/apikey/">Erstelle einen neuen API-Schlüssel</a>
 
 </Note>
 

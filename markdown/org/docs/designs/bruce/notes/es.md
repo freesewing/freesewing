@@ -1,9 +1,9 @@
 ---
-title: "Bruce boxer briefs: Designer Notes"
+title: "Calzoncillos bóxer Bruce: Notas del diseñador"
 ---
 
-I originally designed Bruce many years ago, and it's gone through a couple of iterations since. Most notably, Bruce can now be adapted to not have any bulge, making it a fully gender-neutral design and a popular choice for people who want a express a more masculine look without sacrificing fit.
+Diseñé Bruce hace muchos años, y desde entonces ha sido revisado un par de veces. Lo más destacable es que Bruce ahora puede adaptarse para que no abulte, lo que lo convierte en un diseño totalmente neutro desde el punto de vista del género y en una opción popular para aquellas personas que quieran expresar un aspecto más masculino sin sacrificar el ajuste.
 
-I have not worn any other underwear than Bruce for at least a decade. Suffice to say Bruce comes highly recommended.
+Hace por lo menos una década que no llevo más ropa interior que Bruce. Basta con decir que Bruce es muy recomendable.
 
 joost

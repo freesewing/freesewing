@@ -1,7 +1,7 @@
 ---
-title: "Sleeve ribbing"
+title: "Mouwboord"
 ---
 
-Choose whether to make ribbed knit cuffs for the sleeves or to use a hem.
+Kies of je ribgebreide manchetten voor de mouwen wilt maken of dat je een zoom wilt gebruiken.
 
-Note: Setting this option to 'hem' will enable the 'sleeve hem' option, while setting this option to 'ribbing' will enable the 'sleeve ribbing length' and 'sleeve ribbing width' options.
+Opmerking: Als je deze optie instelt op 'zoom', wordt de optie 'mouwzoom' ingeschakeld, terwijl als je deze optie instelt op 'ribbels', de opties 'mouwboordlengte' en 'mouwboordbreedte' worden ingeschakeld.

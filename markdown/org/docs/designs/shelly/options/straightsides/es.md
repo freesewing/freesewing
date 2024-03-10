@@ -1,6 +1,6 @@
 ---
-title: "Straight sides"
+title: "Lados rectos"
 ---
 
-Forms a tubular shirt, which is a shirt where the hips and chest are the same width and connected by a straight seam. Set this to true for front and back parts that are perfectly rectangular below the armholes. This setting overrides any values set for the `hips ease` or `side shape` options. For most body types, leaving this option on will result in a reasonable fit that is looser around the belly and tighter around the chest, and generally produces a more fabric-efficient pattern.
+Forma una camisa tubular, que es una camisa en la que las caderas y el pecho tienen la misma anchura y están unidos por una costura recta. Ajústalo a verdadero para las partes delantera y trasera que sean perfectamente rectangulares por debajo de las sisas. Este ajuste anula cualquier valor establecido para las opciones `facilidad de caderas` o `forma lateral` . Para la mayoría de los tipos de cuerpo, si se deja activada esta opción se obtendrá un ajuste razonable, más holgado alrededor del vientre y más ceñido alrededor del pecho, y en general se obtendrá un patrón más eficiente en cuanto al tejido.
 

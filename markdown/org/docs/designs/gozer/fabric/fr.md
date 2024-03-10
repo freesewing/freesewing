@@ -1,7 +1,7 @@
 ---
-title: "Gozer the ghost: Fabric Options"
+title: "Gozer le fantôme : Options de tissu"
 ---
 
 ## Tissu principal
 
-Traditionally, white sheets are used.
+Traditionnellement, on utilise des draps blancs.

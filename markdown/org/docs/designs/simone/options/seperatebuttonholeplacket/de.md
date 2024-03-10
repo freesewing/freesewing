@@ -1,8 +1,8 @@
 ---
-title: "Separate Knopflochleiste"
+title: Separate Knopflochleiste
 ---
 
-![Separate Knopflochleiste](seperatebuttonholeplacket.svg)
+![Separate buttonhole placket](seperatebuttonholeplacket.svg)
 
 Ob der Buttonlochplatz ein separates Musterteil sein soll oder nicht.
 

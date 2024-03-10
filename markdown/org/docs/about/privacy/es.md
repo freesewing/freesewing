@@ -2,13 +2,13 @@
 title: Aviso de Privacidad
 ---
 
-**Last update**: 13 August 2023
+**Última actualización**: 13 de agosto de 2023
 
-Este aviso de privacidad describe los datos personales que almacenamos. It outlines why we need the data, how long we keep it, and whether we share it with any third-parties (we do not).
+Este aviso de privacidad describe los datos personales que almacenamos. Explica por qué necesitamos los datos, cuánto tiempo los conservamos y si los compartimos con terceros (no lo hacemos).
 
 Estamos seguros de que demostrará nuestro compromiso con la privacidad.
 
-For clarity, we've broken this up in three different types of roles:
+Para mayor claridad, hemos dividido esto en tres tipos diferentes de funciones:
 
 - For **visitors of our website**, we store **[visitor data][v]**
 - For **subscribers to our newsletter**, we store **[subscriber data][s]**
@@ -17,23 +17,23 @@ For clarity, we've broken this up in three different types of roles:
 ## Cómo utilizamos los datos de tu visitante
 
 <Note>
-This data is stored for anybody who visits our website and connects to our backend APIs.
+Estos datos se almacenan para cualquier persona que visite nuestro sitio web y se conecte a nuestras API de backend.
 </Note>
 
 ##### ¿Qué datos personales almacenamos?
 
 - Su dirección IP
 
-##### Why do we need this data?
+##### ¿Por qué necesitamos estos datos?
 
-- To protect ourselves from abuse.
-- We use the IP address only to blacklist malicious or abusive clients or investigate security incidents.
+- Para protegernos de los abusos.
+- Sólo utilizamos la dirección IP para crear listas negras de clientes maliciosos o abusivos o para investigar incidentes de seguridad.
 
-##### How long do we keep this data?
+##### ¿Cuánto tiempo conservamos estos datos?
 
 - Mantenemos estos registros no más de 6 meses.
 
-##### Do we share this data?
+##### ¿Compartimos estos datos?
 
 - No, nunca
 
@@ -75,8 +75,8 @@ Estos datos se almacenan para cualquier persona con una cuenta en nuestro sitio 
 
 - Su dirección de correo electrónico
 - Tu nombre de usuario y contraseña
-- Body measurements and a (freely chosen) name for any measurements set of pattern you store in your account.
-- Optional: A profile picture, bio, and your GitHub username. An image and notes for each measurements set or pattern stored in your account.
+- Medidas corporales y un nombre (de libre elección) para cualquier conjunto de medidas del patrón que almacenes en tu cuenta.
+- Opcional: Una foto de perfil, biografía y tu nombre de usuario de GitHub. Una imagen y notas para cada conjunto de medidas o patrón almacenado en tu cuenta.
 
 ##### ¿Por qué la necesitamos?
 
@@ -86,15 +86,15 @@ Estos datos se almacenan para cualquier persona con una cuenta en nuestro sitio 
 
 ##### ¿Cuánto tiempo lo mantenemos?
 
-- Until your remove your account, or until at least 12 months after the last time you connected to our backend.
-- We will always contact you prior to removing any inactive data.
+- Hasta que elimines tu cuenta, o hasta al menos 12 meses después de la última vez que te conectaste a nuestro backend.
+- Siempre nos pondremos en contacto contigo antes de eliminar cualquier dato inactivo.
 
 ##### ¿Lo compartimos?
 
 - No, nunca.
 
 
-## Other info relevant to this privacy notice
+## Otra información relevante para este aviso de privacidad
 
 ### Uso por menores de 16 años
 
@@ -118,22 +118,22 @@ Si cree que sus datos personales han sido comprometidos, póngase en contacto co
 
 ### Proveedores de servicios
 
-Our hosting providers manage various components of our infrastructure us. Esto incluye alojamiento, almacenamiento y copia de seguridad.
+Nuestros proveedores de alojamiento nos gestionan varios componentes de nuestra infraestructura. Esto incluye alojamiento, almacenamiento y copia de seguridad.
 
 Aunque esto significa que procesan sus datos (en el sentido estricto de la palabra), no requieren acceso a la información sobre usted. Además, a medida que ciframos los datos de los perfiles en reposo, no es trivial acceder a ellos aunque quisieran.
 
-### Warrant canaries
+### Canarios de guerra
 
 Aunque no tenemos intención de compartir ninguno de sus datos personales, no estamos por encima de la ley.
 
 Si estamos obligados a hacerlo por la ley. o si pensamos que hacerlo sería el mal menor, divulgaremos datos personales.
 
-So far:
+Hasta ahora:
 
-- FreeSewing has never turned over our encryption or authentication keys or our customers' encryption or authentication keys to anyone.
-- FreeSewing has never installed any law enforcement software or equipment anywhere on our infrastructure.
-- FreeSewing has never provided any law enforcement organization personal data of any of our users or visitors.
-- FreeSewing has never weakened, compromised, or subverted any of its encryption at the request of law enforcement or another third party.
+- FreeSewing nunca ha entregado a nadie nuestras claves de encriptación o autenticación ni las claves de encriptación o autenticación de nuestros clientes.
+- FreeSewing nunca ha instalado ningún software o equipo policial en ninguna parte de nuestra infraestructura.
+- FreeSewing nunca ha proporcionado a ninguna organización encargada de hacer cumplir la ley datos personales de ninguno de nuestros usuarios o visitantes.
+- FreeSewing nunca ha debilitado, comprometido o subvertido ninguno de sus cifrados a petición de las fuerzas de seguridad o de terceros.
 
 ### Ver también
 

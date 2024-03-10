@@ -1,7 +1,7 @@
 ---
-title: "Sleeve ribbing length"
+title: "Lengte mouwboorden"
 ---
 
-Controls how long the ribbing around the sleeves is, as a percentage of the sleeve circumference. Setting this to a smaller value will make the cuff tighter and hold onto the arm better, while a larger value will give more room. If making sleeves with thumb holes, it is recommended to set this value a little larger or to use a hem instead to avoid squeezing the hands.
+Bepaalt hoe lang de ribbels rond de mouwen zijn, als percentage van de mouwomtrek. Als je dit op een kleinere waarde instelt, wordt de manchet strakker en blijft hij beter om de arm zitten, terwijl een grotere waarde meer ruimte geeft. Als je mouwen met duimgaten maakt, is het aan te raden om deze waarde iets groter in te stellen of in plaats daarvan een zoom te gebruiken om te voorkomen dat je in je handen knijpt.
 
-Note: This option is only available if the 'sleeve ribbing' option is set to 'ribbing.'
+Opmerking: Deze optie is alleen beschikbaar als de optie 'mouwribbels' is ingesteld op 'ribbels'.

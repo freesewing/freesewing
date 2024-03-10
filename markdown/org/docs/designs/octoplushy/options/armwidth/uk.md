@@ -1,5 +1,5 @@
 ---
-title: "Arm Width"
+title: "Ширина руки"
 ---
 
-The setting adjusts the width of the arms.
+Налаштування регулює ширину рук.

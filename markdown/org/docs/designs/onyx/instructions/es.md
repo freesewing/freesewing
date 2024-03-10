@@ -1,243 +1,243 @@
 ---
-title: "Onyx one-piece: Sewing Instructions"
+title: "Onyx de una pieza: Instrucciones de costura"
 ---
 
 <Note>
 
-The use of a serger/overlocker is recommended, to keep the size of the finished seams small and to allow the seams to stretch. If using a serger with the knife engaged, a seam allowance of 1/2 inch (12 mm) is recommeded. If using an overlocking foot on a sewing machine, or serging without the use of the knife, a seam allowance of 1/4 inch (6 mm) is recommended.
+Se recomienda el uso de una overlocker, para que el tamaño de las costuras acabadas sea pequeño y las costuras puedan estirarse. If using a serger with the knife engaged, a seam allowance of 1/2 inch (12 mm) is recommended. Si utilizas un prensatelas para sobrehilar en una máquina de coser, o si coses sin utilizar la cuchilla, se recomienda un margen de costura de 6 mm (1/4 pulgada).
 
-Unless otherwise stated, use stretch steams for contruction of this garment. A 4-thread overlock stitch is recommended, or an overlock foot on a sewing machine if a serger is unavailable.
+Unless otherwise stated, use stretch steams for construction of this garment. Se recomienda utilizar una puntada overlock de 4 hilos, o un pie overlock en una máquina de coser si no se dispone de una overlock.
 
-Hems or cuffs are optional (since knit doesn't fray), but if you do make hems or add cuffs, make sure they can stretch. These instructions describe how to make a single-fold hem with a double needle, which is suitable for swimwear or lightweight garments, and how to make a rib knit cuff, which is suitable for fleece pajamas or kigurumi.
+Los dobladillos o los puños son opcionales (ya que el punto no se deshilacha), pero si haces dobladillos o añades puños, asegúrate de que puedan estirarse. Estas instrucciones describen cómo hacer un dobladillo de pliegue simple con aguja doble, adecuado para trajes de baño o prendas ligeras, y cómo hacer un puño de punto elástico, adecuado para pijamas de forro polar o kigurumi.
 
-If sewing stretch/swim fabric, adjust your tension to allow for extra stretch. On a serger, this will usually mean lowering the needle tension, especially the right needle, and adjusting the looper tension as needed to keep the stitch looking decent. On a regular sewing machine, lower the tension. Test your choice of stitch first on scrap fabric, and try to pop the test seam by stretching the seam along its length. It should only pop after stretching quite a bit. If it pops too easily, keep playing with your stitches/tension settings until you get something that can survive some abuse.
+Si coses tejido elástico o de nadador, ajusta la tensión para tener en cuenta la elasticidad adicional. En una máquina overlock, esto suele significar reducir la tensión de la aguja, especialmente la aguja derecha, y ajustar la tensión de la lanzadera según sea necesario para que la puntada tenga un aspecto decente. En una máquina de coser normal, baja la tensión. Prueba primero la puntada que has elegido en un trozo de tela, e intenta abrir la costura de prueba estirando la costura en toda su longitud. Sólo debería saltar después de estirar bastante. Si salta con demasiada facilidad, sigue jugando con los ajustes de puntadas/tensión hasta que consigas algo que pueda sobrevivir a cierto abuso.
 
-For making garments using 2-way stretch knits (such as jersey and fleece), regular settings with a stitch that stretches should be fine.
+Para confeccionar prendas de punto elástico en 2 direcciones (como jersey y forro polar), los ajustes normales con una puntada que se estire deberían ser adecuados.
 
 </Note>
 
-### Step 0: Customizing and fitting your pattern
-Decide what type of garment you're going to make. This design supports several options:
-- Unisuits (one-piece compression swimwear with sleeves and legs)
-- One-piece pajamas (loose-fitting garment made with soft fabric, either short or long sleeved)
-- Romper (casual garment with short sleeves and legs)
-- Jumpsuit (casual garment with long sleeves and legs)
-- Unitard (compression garment used for dance)
+### Paso 0: Personalizar y ajustar tu patrón
+Decide qué tipo de prenda vas a confeccionar. Este diseño admite varias opciones:
+- Monos (bañadores de compresión de una pieza con mangas y piernas)
+- Pijama de una pieza (prenda holgada de tejido suave, de manga corta o larga)
+- Romper (prenda informal con mangas y piernas cortas)
+- Mono (prenda informal con mangas y piernas largas)
+- Unitard (prenda de compresión utilizada para la danza)
 
-Decide if you want a hood, or to finish the neck with a neckband. If you want a hood, decide if you want a two-piece hood with a center seam, or a three-piece hood that also has a front piece, allowing for ears or other decorative feature to be inserted into the seam.
+Decide si quieres una capucha o rematar el cuello con una cinta. Si quieres una capucha, decide si quieres una capucha de dos piezas con una costura central, o una capucha de tres piezas que también tenga una pieza frontal, que permita introducir orejas u otro elemento decorativo en la costura.
 
-Decide if you want to add a simple gathered skirt around the waist.
+Decide si quieres añadir un sencillo faldón fruncido alrededor de la cintura.
 
-Select a fabric (see fabrics for details)
+Selecciona un tejido (consulta los tejidos para más detalles)
 
-Decide what lining to use, if any:
-- Unisuits should use swim lining or a second layer of swim fabric for the body, to give form, to prevent chafing, and to prevent the suit from being see-through. The sleeves may be left unlined. If using multiple layers of lining, treat them as a single layer when constructing the garment.
-- One-piece pajamas are usually not lined, except for the hood, which may or may not be lined with something soft.
-- Rompers or jumpsuits may be lined, depending on preference, fabric, and purpose.
+Decide qué forro vas a utilizar, si es que vas a utilizar alguno:
+- Los monos deben llevar un forro de baño o una segunda capa de tejido de baño para el cuerpo, para dar forma, evitar rozaduras e impedir que el traje sea transparente. Las mangas pueden dejarse sin forrar. Si utilizas varias capas de forro, trátalas como una sola capa al construir la prenda.
+- Los pijamas de una pieza no suelen estar forrados, salvo la capucha, que puede o no estar forrada con algo suave.
+- Los mamelucos o monos pueden ir forrados, según las preferencias, el tejido y la finalidad.
 
-Select an appropriate sleeve length:
-- 10-30% for short sleeves.
-- 75% for 3/4 length sleeves.
-- 100% for long sleeves (to the wrist).
-- 115% is a good value if making a shirt with thumb holes (extends to the knuckles).
+Selecciona una longitud de manga adecuada:
+- 10-30% para mangas cortas.
+- 75% para mangas 3/4.
+- 100% para mangas largas (hasta la muñeca).
+- 115% es un buen valor si haces una camiseta con agujeros para el pulgar (se extiende hasta los nudillos).
 
-Select an appropriate leg length:
-- 20-60% for shorts
-- 90% for ankle-length legs
-- 100% for legs that touch the floor.
+Selecciona una longitud de pierna adecuada:
+- 20-60% para pantalones cortos
+- 90% para piernas hasta el tobillo
+- 100% para piernas que tocan el suelo.
 
-Decide on a closure.
-- One-piece pajamas usually use a coiled plastic zipper (#3-5 gauge).
-- Unisuits usually use a half-length molded plastic zipper, #5 gauge.
-- Unitards use a large neckhole and no zipper.
-- Rompers and jumpsuits can use buttons, coiled plastic zippers, invisible zippers, or a large neckhole.
-- NOTE: This design assumes the use of a zipper. If using buttons, you will need to add plackets and buttons yourself. They are not included in this design.
+Decide un cierre.
+- Los pijamas de una pieza suelen utilizar una cremallera de plástico enrollada (calibre 3-5).
+- Los monos suelen utilizar una cremallera de plástico moldeado de media longitud, de calibre 5.
+- Los unitards tienen una gran abertura en el cuello y no llevan cremallera.
+- Los peleles y monos pueden llevar botones, cremalleras de plástico enrolladas, cremalleras invisibles o un gran agujero en el cuello.
+- NOTA: Este diseño presupone el uso de una cremallera. Si utilizas botones, tendrás que añadir tú mismo las taquillas y los botones. No se incluyen en este diseño.
 
-Decide whether to cut the front and/or back pieces _on the fold_:
-- If using a zipper or buttons, do _not_ cut the piece containing the zipper _on the fold_.
-- For unitards, cut both the front and back _on the fold_ (total of 2 pieces).
-- For unisuits, cut the back _on the fold_ if making a front-zip unisuit, or the front _on the fold_ is making a back-zip unisuit (total of 3 pieces).
-- For one-piece pajamas, rompers, and jumpsuits, cut only the back _on the fold_ (total of 3 pieces).
+Decide si cortas las piezas del anverso y/o del reverso _en el pliegue_:
+- Si utilizas una cremallera o botones, no __ cortes la pieza que contiene la cremallera _en el pliegue_.
+- Para los unitardos, corta tanto la parte delantera como la trasera _en el pliegue_ (un total de 2 piezas).
+- Para los monos, corta la espalda _en el pliegue_ si haces un mono con cremallera delantera, o la parte delantera _en el pliegue_ si haces un mono con cremallera trasera (en total 3 piezas).
+- Para pijamas, peleles y monos de una pieza, corta sólo la espalda _en el pliegue_ (total 3 piezas).
 
-Figure out what kind of fit you want and set your eases accordingly. Make sure you have an appropriate fabric. If in doubt, making the garment too loose is safer than too tight.
-- For unisuits and unitards, you want negative ease. This will allow the stretch/swim fabric to form itself around the wearer's body.
-- For one-piece pajamas, you want positive ease and to smooth out the shape (ie., add extra ease to areas that cut in, like the waist, to give the overall garment a less fitted shape).
-- Rompers and bodysuits use positive ease, with the amount and distribution of the ease varying greatly based on the intended shape of the garment.
+Averigua qué tipo de ajuste quieres y ajusta tus facilidades en consecuencia. Asegúrate de que tienes un tejido adecuado. En caso de duda, hacer la prenda demasiado holgada es más seguro que demasiado ajustada.
+- Para monos y unitardos, quieres facilidad negativa. Esto permitirá que el tejido elástico/de natación se moldee alrededor del cuerpo del usuario.
+- En el caso de los pijamas de una pieza, lo que quieres es una holgura positiva y suavizar la forma (es decir, añadir holgura adicional a las zonas que se cortan, como la cintura, para dar a la prenda en general una forma menos entallada).
+- Los mamelucos y los bodies utilizan una holgura positiva, cuya cantidad y distribución varían mucho en función de la forma prevista de la prenda.
 
-The neckband length will be mostly determined by the material of the neckband. Stretch fabric will generally use a length of around 80%. Less stretchy fabric will be longer, but always shorter than 100%, and ribbed knit (traditional t-shirt neckbands) are around 60-70%.
+La longitud de la cinta para el cuello vendrá determinada sobre todo por el material de la cinta. El tejido elástico suele tener una longitud de alrededor del 80%. Los tejidos menos elásticos serán más largos, pero siempre inferiores al 100%, y los tejidos de punto acanalado (las tradicionales cintas de cuello de las camisetas) rondan el 60-70%.
 
-Check around the hips, upper legs, and crotch fork, and make sure that everything is smooth and looks right. Small errors in measurements or options can cause issues here, and it's best to tweak seat east, upper leg ease, crotch gusset width, and leg taper position until all curves are smooth. The outseam should roughly match the silhouette of the wearer.
+Comprueba alrededor de las caderas, la parte superior de las piernas y la horquilla de la entrepierna, y asegúrate de que todo está liso y tiene buen aspecto. Los pequeños errores en las medidas u opciones pueden causar problemas aquí, y es mejor ajustar el este del asiento, la facilidad de la parte superior de la pierna, la anchura del fuelle de la entrepierna y la posición de la conicidad de la pierna hasta que todas las curvas sean suaves. La costura exterior debe coincidir aproximadamente con la silueta del usuario.
 
-### Step 1: Forming the body
+### Paso 1: Formar el cuerpo
 
-Note: If the front or back was cut _on the fold_, skip steps producing center seams. Note: These instructions are intended to form the seams such that the side seams extend backwards, and the center seams extend leftwards. Note: These instructions assume that the zipper is on the front. If the zipper is on the back or there is no zipper, the directions will have to be modified slightly. Note: If you're having the zipper zip up across the neckband (recommended for unisuits), remember that.
+Nota: Si la parte delantera o trasera se cortó _en el pliegue_, sáltate los pasos que producen las costuras centrales. Nota: Estas instrucciones están pensadas para formar las costuras de modo que las costuras laterales se extiendan hacia atrás y las costuras centrales se extiendan hacia la izquierda. Nota: Estas instrucciones suponen que la cremallera está en la parte delantera. Si la cremallera está en la espalda o no hay cremallera, habrá que modificar ligeramente las instrucciones. Note: If you're having the zipper zip up across the neckband (recommended for unisuits), remember that.
 
-If not using lining:
-- (if front was _not_ cut _on the fold_) With _good sides together_, place the zipper and neckband into position along the center seam, remembering to take seam allowance into account. Mark where the bottom stop of the zipper is, and serge/overlock the front pieces together starting at the crotch fork and stopping at the bottom stop of the zipper.
-- (if back was _not_ cut _on the fold_) With _good sides together_, sew the back pieces together.
-- With _good sides together_, sew the front and the back assemblies together along the two side seams.
-- Skip to step 2.
+Si no utilizas forro:
+- (si la parte delantera era _no_ corta _en el pliegue_) Con _los lados bien juntos_, coloca la cremallera y la cinta del cuello en posición a lo largo de la costura central, recordando tener en cuenta el margen de costura. Marca dónde está el tope inferior de la cremallera y une las piezas delanteras empezando por la horquilla de la entrepierna y parando en el tope inferior de la cremallera.
+- (si la espalda era _no_ corta _en el pliegue_) Con _los lados bien juntos_, cose las piezas de la espalda.
+- Con _con los lados bien juntos_, cose los conjuntos delantero y trasero juntos a lo largo de las dos costuras laterales.
+- Salta al paso 2.
 
-If using lining: Front (center) seam: (from the point of view of the wearer) Note: Seam will be formed on the right side of the assembly. Layer the pieces as follows, from top to bottom:
- - _wrong side up_: fashion fabric, front-left piece.
- - _good side up_: fashion fabric, front-right piece.
- - _wrong side up_: lining, front-right piece.
- - _good side up_: lining, front-left piece.
-- Line up the four pieces and clip/pin.
-- Place your neckband and zipper on the seam. Remember to take into account seam allowances, that the top stop of the zipper is at the top of the folded neckband, and mark where the bottom stop of the zipper is. Remove the zipper and neckband.
-- Disengage the serger knife (it will cause issues near the zipper where a section would be cut but not sewn).
-  - Alternatively, leave the serger knife engaged, but disengage it right when the knife reaches the point where your seam stops, and then continue without the knife until the stop point reaches the needles.
-- Make sure the layers of fabric are lined up very evenly. Without the knife, you must make sure that every layer gets under the needles of the serger, or there will be holes in the seam of your garment or the lining.
-- Serge/overlock through all 4 layers, stopping at the point you marked where the bottom stop of the zipper is.
-- Flip the top and bottom layers (the front-left pieces) of fabric over.
-- Re-engage the serger knife.
+If using lining: Front (center) seam: (from the point of view of the wearer) Note: Seam will be formed on the right side of the assembly. Coloca las piezas en capas de la siguiente manera, de arriba abajo:
+ - _revés_: tela de moda, pieza delantera izquierda.
+ - _good side up_: tejido de moda, pieza delantera derecha.
+ - _revés_: forro, pieza delantera derecha.
+ - _lado bueno arriba_: forro, pieza delantera izquierda.
+- Alinea las cuatro piezas y sujétalas con clips o chinchetas.
+- Coloca la cinta del cuello y la cremallera en la costura. Recuerda tener en cuenta los márgenes de costura, que el tope superior de la cremallera está en la parte superior del cuello doblado, y marca dónde está el tope inferior de la cremallera. Quita la cremallera y la cinta del cuello.
+- Desengancha la cuchilla del serger (causará problemas cerca de la cremallera, donde se cortaría una sección pero no se cosería).
+  - Alternativamente, deja la cuchilla de la máquina overlock conectada, pero desconéctala justo cuando la cuchilla llegue al punto donde se detiene tu costura, y luego continúa sin la cuchilla hasta que el punto de detención llegue a las agujas.
+- Asegúrate de que las capas de tela están alineadas de manera muy uniforme. Sin la cuchilla, debes asegurarte de que todas las capas pasen por debajo de las agujas de la máquina overlock, o quedarán agujeros en la costura de tu prenda o en el forro.
+- Sargento/sobrehilo a través de las 4 capas, deteniéndote en el punto que marcaste donde está el tope inferior de la cremallera.
+- Dale la vuelta a las capas superior e inferior (las piezas delanteras izquierdas) de tela.
+- Vuelve a enganchar la cuchilla de la sierra.
 
-Left (side) seam: Note: Seam will be formed on the right side of the assembly. Layer the pieces as follows, from top to bottom:
- - _wrong side up_: fashion fabric, back-left piece.
- - _good side up_: lining+fashion fabric from prior steps.
- - _good side up_: lining, back-left piece.
-- Line up the four pieces, and serge/overlock through all 4 layers.
-- Flip the top and bottom pieces (the back-left pieces) of fabric over.
+Left (side) seam: Note: Seam will be formed on the right side of the assembly. Coloca las piezas en capas de la siguiente manera, de arriba abajo:
+ - _revés_: tela de moda, pieza del revés.
+ - _lado bueno hacia arriba_: forro+tejido de moda de pasos anteriores.
+ - _good side up_: forro, pieza trasera izquierda.
+- Alinea las cuatro piezas y haz una sutura a través de las 4 capas.
+- Dale la vuelta a las piezas superior e inferior (las piezas del revés) de tela.
 
 Right (side) seam: Layer the pieces as follows, from top to bottom: Note: Seam will be formed on the left side of the assembly.
- - _wrong side up_: fashion fabric, back-right piece.
- - _good side up_: lining+fashion fabric from prior steps.
- - _good side up_: lining, back-right piece.
-- Line up the four pieces, and serge/overlock through all 4 layers.
-- Flip the top and bottom layers (the back-right pieces) of fabric over.
+ - _revés_: tela de moda, pieza del revés.
+ - _lado bueno hacia arriba_: forro+tejido de moda de pasos anteriores.
+ - _lado bueno hacia arriba_: forro, pieza trasera derecha.
+- Alinea las cuatro piezas y haz una sutura a través de las 4 capas.
+- Dale la vuelta a las capas superior e inferior (las piezas del revés) de tela.
 
-Back (center) seam: Layer the pieces as follows, from top to bottom: Note: Seam will be formed on the left side of the assembly. Note: This is the last seam to complete the body, and the steps are slightly different in order to still have the seam encased between the fashion fabric and the lining once it's finished.
- - _wrong side up_: fashion fabric, back-right piece pulled over the main part.
- - _good side up_: lining+fashion fabric, main part; from prior steps.
- - _good side up_: lining, back-right piece pulled under the main part.
-- Line up the four pieces, and serge/overlock through all 4 layers.
-- Pull the lining right-side-out, so that the main bulk that was locked between the newly sewn parts is freed and the garment is right-side-out.
+Back (center) seam: Layer the pieces as follows, from top to bottom: Note: Seam will be formed on the left side of the assembly. Nota: Ésta es la última costura para completar el cuerpo, y los pasos son ligeramente diferentes para que la costura quede encajada entre la tela de moda y el forro una vez terminado.
+ - _revés_: tela de moda, pieza del revés tirada sobre la parte principal.
+ - _lado bueno hacia arriba_: forro+tejido de moda, parte principal; de pasos anteriores.
+ - _lado bueno arriba_: forro, pieza trasera derecha metida debajo de la parte principal.
+- Alinea las cuatro piezas y haz una sutura a través de las 4 capas.
+- Tira del forro hacia el derecho, de modo que el grueso que estaba bloqueado entre las partes recién cosidas se libere y la prenda quede hacia el derecho.
 
-### Step 2: Attaching the gusset
+### Paso 2: Colocar el fuelle
 
-If not using lining:
-- Place the garment _inside-out_ and flat on your table, with the front of the garment face-up.
-- With _good sides together_, serge or overlock the crotch gusset up the front of one leg, around the crotch fork, and down the other leg. Be careful to keep the layers of fabric together and aligned when going around the fork.
-- Turn the garment over.
-- With _good sides together_, serge or overlock the crotch gusset up the back of one leg, around the crotch, and down the other leg.
-- Skip to step 3.
+Si no utilizas forro:
+- Coloca la prenda _del revés_ y plana sobre tu mesa, con la parte delantera de la prenda hacia arriba.
+- Con _con los lados sanos juntos_, cose o sobrehila el refuerzo de la entrepierna por la parte delantera de una pierna, alrededor de la horquilla de la entrepierna y por la otra pierna. Ten cuidado de mantener las capas de tela juntas y alineadas al rodear la horquilla.
+- Dale la vuelta a la prenda.
+- Con _con los lados sanos juntos_, cose o sobrehila el refuerzo de la entrepierna por la parte trasera de una pierna, alrededor de la entrepierna y por la otra pierna.
+- Salta al paso 3.
 
 If using lining: Front Inseam:
-- Place the garment _right-side-out_ and flat on your table, with the front of the garment face-up.
-- Push the back crotch and legs out of the way, so you have easy access to only the front crotch and legs.
-- Place the fashion fabric gusset piece on top of the garment and running along the inseam, around the crotch, and back down the other inseam, with the _wrong side up_.
-- Slide the lining gusset piece under the garment with the _good side up_.
-- (optional) Baste the seam, taking care to secure the portion near the crotch, as it has a tendancy to slip and cause a hole in the next step if not well secured.
-- Serge/overlock through all 4 layers to form the front inseam.
+- Coloca la prenda _del derecho_ y plana sobre tu mesa, con la parte delantera de la prenda hacia arriba.
+- Aparta la entrepierna y las piernas traseras, de modo que sólo tengas fácil acceso a la entrepierna y las piernas delanteras.
+- Coloca la pieza de refuerzo de tela de moda en la parte superior de la prenda y recorre la entrepierna, rodea la entrepierna y vuelve a bajar por la otra entrepierna, con el _lado equivocado hacia arriba_.
+- Desliza la pieza del fuelle del forro por debajo de la prenda con el _lado bueno hacia arriba_.
+- (opcional) Hilvana la costura, teniendo cuidado de asegurar la parte cercana a la entrepierna, ya que tiene tendencia a deslizarse y causar un agujero en el paso siguiente si no está bien sujeta.
+- Sargento/sobrehilado a través de las 4 capas para formar la entrepierna delantera.
 
-Back Inseam: Note: It's not possible to hide this seam in between the lining and the fashion fabric, so it'll be on the inside. For adaptive/sensory-friendly clothing, place this seam on the outside instead.
-- Turn the garment inside-out.
-- Flip the garment so that the back is facing you.
-- Line up the gusset (that you attached to the front in the previous step) with the back inseam and clip it together.
-- (optional) Baste the seam, taking care to secure the portion near the crotch, as it has a tendancy to slip and cause a hole in the next step if not well secured.
-- Serge/overlock through all 4 layers to form the back inseam.
+Back Inseam: Note: It's not possible to hide this seam in between the lining and the fashion fabric, so it'll be on the inside. Para prendas adaptadas/sensoriales, coloca esta costura en el exterior.
+- Gira la prenda del revés.
+- Dale la vuelta a la prenda para que la espalda quede mirando hacia ti.
+- Alinea el refuerzo (que has unido a la parte delantera en el paso anterior) con la entrepierna trasera y sujétalo.
+- (opcional) Hilvana la costura, teniendo cuidado de asegurar la parte cercana a la entrepierna, ya que tiene tendencia a deslizarse y causar un agujero en el paso siguiente si no está bien sujeta.
+- Sargento/sobrehilado a través de las 4 capas para formar la entretela trasera.
 
-### Step 3: Attaching the sleeves
-- Fold each sleeve and, with _good sides together_, sew the sleeve seam from the hem to the armpit.
+### Paso 3: Colocar las mangas
+- Dobla cada manga y, con _los lados bien juntos_, cose la costura de la manga desde el dobladillo hasta la axila.
 
-- Turn the garment _right-side-out_.
-- Turn the sleeves _right-side-out_.
-- With _good sides together_, clip each sleeve to the body. The longer side of each sleeve should be clipped to the back, the shorter side to the front, and the sleeve seam should line up with the outseam. Verify that the sleeve is properly attached. Serge or overlock through all 3 layers.
-- Repeat with the other sleeve.
+- Gira la prenda _del derecho_.
+- Gira las mangas _del derecho_.
+- Con _los lados buenos juntos_, sujeta cada manga al cuerpo. El lado más largo de cada manga debe engancharse a la espalda, el lado más corto a la parte delantera, y la costura de la manga debe alinearse con la costura exterior. Comprueba que el manguito está bien colocado. Serrar o sobrehilar las 3 capas.
+- Repite la operación con la otra manga.
 
-### Step 4a: Attaching the neckband
- - Fold the neckband in half short ways (so it's half as wide) with _wrong sides together_, and clip it at each end and at the midpoint.
- - With _good sides together_, clip the middle of the neckband to the middle of the piece without the slit for the zipper (the back piece if using a front zipper).
- - Clip each end of the neckband to the corresponding side of the zipper slit.
- - Place clips along the length, stretching the neckband evenly along the length of the neck hole.
- - Baste the neckband to the neck hole, taking care to secure the two ends.
- - Serge/overlock through all layers.
- - Turn the neckband over. It should lay flat.
+### Paso 4a: Colocación de la cinta para el cuello
+ - Dobla la cinta del cuello por la mitad en sentido corto (para que sea la mitad de ancha) con _los lados equivocados juntos_, y sujétala con pinzas en cada extremo y en el punto medio.
+ - Con _con los lados bien juntos_, sujeta el centro de la cinta del cuello al centro de la pieza sin la abertura para la cremallera (la pieza trasera si utilizas una cremallera delantera).
+ - Engancha cada extremo de la cinta del cuello al lado correspondiente de la abertura de la cremallera.
+ - Coloca pinzas a lo largo, estirando la cinta del cuello uniformemente a lo largo del agujero del cuello.
+ - Hilvana la cinta del cuello al agujero del cuello, teniendo cuidado de asegurar los dos extremos.
+ - Sarga/sobrecarga a través de todas las capas.
+ - Dale la vuelta a la cinta del cuello. Debe quedar plana.
 
-### Step 4b: Constructing and attaching the hood
+### Paso 4b: Construir y fijar la capucha
 
-##### Assembling the hood:
- - Place the two main hood pieces together with _good sides together_, and serge/overlock along the center seam (the curved seam running from the back of the neck to the top of the head).
- - If using a front piece, place it against the back pieces with _good sides together_, and serge/overlock along the side seam (the straight seam going up one side, over the head, and down the other side).
+##### Montaje del capó:
+ - Coloca las dos piezas principales de la capucha juntas con _con los lados bien juntos_, y haz un doblez a lo largo de la costura central (la costura curva que va desde la nuca hasta la parte superior de la cabeza).
+ - Si utilizas una pieza delantera, colócala contra las piezas traseras con _con los lados bien juntos_, y haz una sutura a lo largo de la costura lateral (la costura recta que sube por un lado, pasa por encima de la cabeza y baja por el otro lado).
 
-If using lining, do the following two steps, otherwise skip to attaching the hood.
- - Repeat the previous steps to put together the lining pieces.
- - Place the lining assembly and the main hood assembly together with _wrong sides together_, and clip them together along the neck.
+Si utilizas forro, realiza los dos pasos siguientes; de lo contrario, pasa a la colocación de la capucha.
+ - Repite los pasos anteriores para unir las piezas del forro.
+ - Coloca el conjunto del forro y el conjunto de la capucha principal juntos con _los lados equivocados juntos_, y sujétalos a lo largo del cuello.
 
-##### Attaching the hood:
- - Lay the garment down _right-side-out_.
- - Place the hood around the neckline, with _good sides together_.
- - Clip the two ends of the hood to the slit in the front where the zipper will go, and clip the back seam of the hood to the middle of the back body piece.
- - Add additional clips to secure the hood to the neck for sewing.
- - Check to make sure that it is assembled correctly.
- - Serge/overlock through all layers.
+##### Colocación del capó:
+ - Coloca la prenda _del derecho_.
+ - Coloca la capucha alrededor del escote, con _bien juntos_.
+ - Engancha los dos extremos de la capucha a la hendidura de la parte delantera donde irá la cremallera, y engancha la costura trasera de la capucha al centro de la pieza trasera del cuerpo.
+ - Añade clips adicionales para fijar la capucha al cuello para coserla.
+ - Comprueba que está correctamente montado.
+ - Sarga/sobrecarga a través de todas las capas.
 
-### Step 5: Preparing the zipper guard
- - Fold the zipper guard in half short ways (so it's half as wide) with _good sides together_, and secure it loosely with a clip or two.
- - If needed, flip it so that the open seam is on the right side.
- - Using your sewing machine and a straight stitch, sew a curve starting vertically at a point along the fold about as far down as the zipper guard is wide, and ending horizontally at the top right corner of the zipper guard. The curve should be shaped such that it forms a smooth corner around the top-left corner of the zipper guard.
- - Trim the fabric on the outside of the curve, cutting close to the line of stitching, but not touching it.
- - Unclip the fabric and turn it right-side-out, refolding and reclipping the fabric, this time with _wrong sides together_.
- - Serge/overlock down the length of the zipper guard.
- - Serge/overlock the bottom of the zipper guard.
- - You should have a strip of fabric with a serged/overlocked seam along the right and bottom sides, and a curved corner with a french seam along the top-left.
+### Paso 5: Preparar la protección de la cremallera
+ - Dobla el protector de la cremallera por la mitad en sentido corto (para que tenga la mitad de ancho) con _los lados buenos juntos_, y sujétalo sin apretar con una pinza o dos.
+ - Si es necesario, dale la vuelta para que la costura abierta quede en el lado derecho.
+ - Con tu máquina de coser y una puntada recta, cose una curva que comience verticalmente en un punto a lo largo del pliegue, más o menos tan abajo como ancho sea el protector de la cremallera, y termine horizontalmente en la esquina superior derecha del protector de la cremallera. La curva debe tener una forma tal que forme una esquina suave alrededor de la esquina superior izquierda de la protección de la cremallera.
+ - Recorta la tela por el exterior de la curva, cortando cerca de la línea de costura, pero sin tocarla.
+ - Desabrocha la tela y dale la vuelta, doblándola y volviéndola a abrochar, esta vez con _los lados equivocados juntos_.
+ - Sargento/sobrecierre a lo largo de la protección de la cremallera.
+ - Engancha/desengancha la parte inferior de la protección de la cremallera.
+ - Deberías tener una tira de tela con una costura de sobrehilado a lo largo de los lados derecho e inferior, y una esquina curva con una costura francesa a lo largo de la parte superior izquierda.
 
-### Step 6: Installing the zipper.
-Note: This step is the same with or without lining. Treat the lining and the fashion fabric as one.
- - Lay your garment _right side out_.
+### Paso 6: Instalar la cremallera.
+Nota: Este paso es el mismo con o sin forro. Trata el forro y el tejido de moda como uno solo.
+ - Coloca la prenda _con el lado derecho hacia fuera_.
  - Desabrocha la cremallera.
- - Place the zipper _good side up_ along the center seam and align it carefully. The alignment of the top stop is more important than that of the bottom stop, and try not to stretch or gather the fabric as you align your zipper.
- - Turn one side of the zipper 1/2 turn outward, and lay it along the open seam so that the tape edge is along the seam and the toothed edge is facing the bulk of the fabric. Line up the edge of the fabric with the edge of the tape and clip in place.
+ - Coloca la cremallera _con el lado bueno hacia arriba_ a lo largo de la costura central y alinéala con cuidado. La alineación del tope superior es más importante que la del inferior, e intenta no estirar ni fruncir la tela al alinear la cremallera.
+ - Gira un lado de la cremallera 1/2 vuelta hacia fuera y colócala a lo largo de la costura abierta, de modo que el borde de la cinta quede a lo largo de la costura y el borde dentado quede orientado hacia el grueso de la tela. Alinea el borde de la tela con el borde de la cinta y sujétala en su sitio.
 
- - If sewing swim fabric, sew the fabric and the zipper tape together with a straight stight down each side. This is both to hold things together, and to provide a second, safety line of stitching for the zipper. For less tricky fabrics, this step is optional.
+ - Si coses tela de nadar, cose la tela y la cinta de la cremallera juntas con una recta por cada lado. Esto sirve tanto para mantener las cosas unidas como para proporcionar una segunda línea de costura de seguridad para la cremallera. Para los tejidos menos delicados, este paso es opcional.
 
- - Turn the zipper back _good side up_, folding the fabric under in the process.
- - Repeat for the other side.
+ - Gira la cremallera hacia atrás _lado bueno hacia arriba_, doblando la tela por debajo en el proceso.
+ - Repite la operación con el otro lado.
 
-Installing the zipper guard.
- - Turn the garment _inside-out_.
- - Place the long serged edge of the zipper guard along the left side of the zipper. The edge of the zipper guard should line up with the tape edge of the zipper and should cover the zipper.
- - Adjust the zipper guard vertically. It should extend above the top stop of the zipper by enough so that you can fold the fabric over to hide the zipper pull and protect the neck from the zipper.
- - If you're using a neckband, fold the portion extending above the top zipper stop over to the front of the garment.
- - Clip the zipper guard into place. This will cover up the clips holding the zipper to the garment. Remember not to sew over these clips when sewing.
+Instalar el protector de la cremallera.
+ - Gira la prenda _del revés_.
+ - Coloca el borde largo serrado del protector de cremallera a lo largo del lado izquierdo de la cremallera. El borde del protector de la cremallera debe alinearse con el borde de la cinta de la cremallera y debe cubrir la cremallera.
+ - Ajusta el protector de la cremallera verticalmente. Debe sobresalir del tope superior de la cremallera lo suficiente como para que puedas doblar la tela para ocultar el tirador de la cremallera y proteger el cuello de la cremallera.
+ - Si utilizas una cinta para el cuello, dobla la parte que sobresale por encima del tope superior de la cremallera hacia la parte delantera de la prenda.
+ - Engancha el protector de la cremallera en su sitio. Esto cubrirá los clips que sujetan la cremallera a la prenda. Recuerda no coser por encima de estos clips al coser.
 
-Sewing the zipper.
- - Switch to a zipper foot.
- - Turn the garment _right side out_.
- - For swim fabric or to have an exposed zipper: Pull the fabric into position, so that the fabric is cleanly folded back from the zipper teeth.
- - For fleece fabric or to have a covered zipper: Pull the fabric into position, leaving a small fold of fabric extending over the zipper.
- - Place the garment into your sewing machine and adjust the needle so that it is a few mm into the fold of the fabric.
- - Start at the neck on the right side, and sew down until you are a few mm past the zipper stop using a straight stitch. Be careful not to sew into the zipper guard or any loose fabric.
- - Repeat for the other side. This time, when you reach the bottom, turn the fabric 90 degress and sew across the bottom until you meet the first line of stitching, securing the bottom of the zipper and zipper guard.
+Coser la cremallera.
+ - Cambia a un pie para cremalleras.
+ - Gira la prenda _del derecho_.
+ - Para tela de baño o para tener una cremallera expuesta: Tira de la tela hasta su posición, de modo que quede bien doblada hacia atrás respecto a los dientes de la cremallera.
+ - Para tejido polar o para tener una cremallera cubierta: Tira de la tela hasta su posición, dejando un pequeño pliegue de tela que sobresalga por encima de la cremallera.
+ - Coloca la prenda en tu máquina de coser y ajusta la aguja para que se introduzca unos mm en el pliegue de la tela.
+ - Empieza por el cuello, en el lado derecho, y cose hacia abajo hasta que pases unos mm del tope de la cremallera, utilizando una puntada recta. Ten cuidado de no coser en el protector de la cremallera ni en ningún tejido suelto.
+ - Repite la operación con el otro lado. Esta vez, cuando llegues a la parte inferior, gira la tela 90 grados y cose por la parte inferior hasta que te encuentres con la primera línea de costura, asegurando la parte inferior de la cremallera y el protector de la cremallera.
 
-### Step 7a: (Optional) Ribbed cuffs
-The ribbed cuff pieces can be added to the sleeves and legs in a mannar similar to that used to attach the neckband to the neck hole.
+### Paso 7a: (Opcional) Puños acanalados
+Las piezas acanaladas de los puños pueden añadirse a las mangas y a las piernas con un mannar similar al utilizado para unir la cinta del cuello al agujero del cuello.
 
-- Fold the ribbed cuff piece opposite the fold line (vertically), with _good sides together_.
-- Serge/overlock along the edge, so that the ribbed cuff piece is now a closed loop.
-- Unfold the ribbed cuff piece.
-- Fold the ribbed cuff piece in half along the fold line (horizontally), with _wrong sides together_.
-- Turn the garment _right side out_.
-- Place the loop of ribbing around the sleeve or leg of the garment, lining up the edges of the ribbing and the sleeve/leg.
-- Stretch both the sleeve/leg and ribbing together until the folds/gathers/slack in the sleeve are all gone, and clip into place.
-- Serge/overlock _on the round_ along the seam.
-- Repeat for the remaining sleeves/legs.
+- Dobla la pieza acanalada del puño por el lado opuesto a la línea de pliegue (verticalmente), con _lados buenos juntos_.
+- Sargento/sobrehilo a lo largo del borde, de modo que la pieza acanalada del puño sea ahora un bucle cerrado.
+- Desdobla la pieza acanalada del puño.
+- Dobla la pieza del puño acanalado por la mitad a lo largo de la línea de pliegue (horizontalmente), con _lados equivocados juntos_.
+- Gira la prenda _del derecho_.
+- Coloca el lazo de canalé alrededor de la manga o pierna de la prenda, alineando los bordes del canalé y de la manga/pierna.
+- Estira la manga/pierna y el canalé juntos hasta que desaparezcan todos los pliegues/plumas/flojas de la manga, y sujétalos en su sitio.
+- Serge/overlock _en la ronda_ a lo largo de la costura.
+- Repite la operación con las mangas/piernas restantes.
 
-### Step 7b: (Optional) Hemming
+### Paso 7b: (Opcional) Dobladillo
 
-- Hem the sleeves, legs, hood, and/or bottom of the skirt using a single-fold hem. A coverstitch machine is ideal, but not necessary. Using a twin needle with a regular sewing machine will add some stretch to the stitching, but in either case the use of a stretch stitch is still recommended for high-stretch fabrics.
-- You may carefully cutaway excess fabric to make a cleaner hem. This is quite optional, since this fabric should stay on the inside.
-- Alternatively, you can overlock or serge the raw edge _without_ folding it over to give it a little bit of substance without adding as much bulk as a folded hem, or you can make a rolled hem.
-- Or you can leave the edges unfinished, particularly if it's swim fabric or some other fabric that does not fray at all.
+- Haz un dobladillo en las mangas, las piernas, la capucha y/o la parte inferior de la falda utilizando un dobladillo de un solo pliegue. Una máquina de coser de puntada de cobertura es ideal, pero no necesaria. Utilizar una aguja gemela con una máquina de coser normal añadirá algo de elasticidad a la puntada, pero en cualquier caso se recomienda utilizar una puntada elástica para los tejidos muy elásticos.
+- Puedes recortar con cuidado el exceso de tela para hacer un dobladillo más limpio. Esto es bastante opcional, ya que esta tela debe permanecer en el interior.
+- Como alternativa, puedes sobrehilar o serrar el borde crudo _sin_ doblarlo para darle un poco de sustancia sin añadir tanto volumen como un dobladillo doblado, o puedes hacer un dobladillo enrollado.
+- O puedes dejar los bordes sin rematar, sobre todo si se trata de tela de nadar o de algún otro tejido que no se deshilache en absoluto.
 
-### Step 8: (Options) Adding a skirt
+### Paso 8: (Opciones) Añadir una falda
 
-- Fold the skirt piece in half along the cut-on-fold line, with _good sides together_, and serge/overlock along the side so that the skirt is closed.
-- (optional) Hem the bottom of the skirt.
-- Gather the skirt along the waist (or top) of the skirt using two gather threads spaced 12mm (1/2") apart. Place the skirt around the garment where it will rest, and adjust the gathers to fit around the garment.
-- The skirt can be either placed _right side out_ on the garment, or _inside-out_ and _upside-down_ on the garment. _Right side out_ will produce a lighter and stronger seam, but the seam will be visible (which may or may not be desirable). _Inside-out_ will hide the seam under the skirt, but will add an extra fold of fabric to the waist.
-- Line up the waist of the skirt with where you want it to rest on the garment, and pin it into place.
-- Use a coverstitch machine or a short and wide zigzag stitch along the top edge of the skirt, forming a lap seam and hiding the edge of the fabric under the coverstitch or zigzag.
-- Make a second coverstitch or zigzag about 6-12mm (1/4" to 1/2") below the first line of stitching, placing it between the two gather threads and being careful not to catch either gather thread under the coverstitch.
-- Remove the gather threads.
-- If the skirt was placed _inside-out_ and _upside-down_, flip it back over.
+- Dobla la pieza de la falda por la mitad a lo largo de la línea de corte y pliegue, con _los lados buenos juntos_, y haz un doblez a lo largo del lado para que la falda quede cerrada.
+- (opcional) Haz un dobladillo en la parte inferior de la falda.
+- Frunce la falda a lo largo de la cintura (o parte superior) de la falda utilizando dos hilos de fruncido separados 12 mm (1/2"). Coloca la falda alrededor de la prenda donde vaya a descansar, y ajusta los frunces para que encajen alrededor de la prenda.
+- La falda puede colocarse _del derecho_ sobre la prenda, o _del revés_ y _del derecho_ sobre la prenda. _El derecho_ producirá una costura más ligera y fuerte, pero la costura será visible (lo que puede o no ser deseable). _Del revés_ ocultará la costura bajo la falda, pero añadirá un pliegue extra de tela a la cintura.
+- Alinea la cintura de la falda con el lugar donde quieres que descanse sobre la prenda, y sujétala con alfileres.
+- Utiliza una máquina de puntada de cobertura o una puntada en zigzag corta y ancha a lo largo del borde superior de la falda, formando una costura solapada y ocultando el borde de la tela bajo la puntada de cobertura o el zigzag.
+- Haz una segunda puntada de cobertura o zigzag a unos 6-12 mm por debajo de la primera línea de puntada, colocándola entre los dos hilos fruncidos y teniendo cuidado de no enganchar ninguno de los hilos fruncidos bajo la puntada de cobertura.
+- Retira los hilos reunidos.
+- Si la falda se colocó _del revés_ y _del derecho_, dale la vuelta.

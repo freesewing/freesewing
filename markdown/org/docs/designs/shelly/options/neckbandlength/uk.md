@@ -1,6 +1,6 @@
 ---
-title: "Neckband length"
+title: "Довжина шийної стрічки"
 ---
 
-Controls how long the neckband is, as a percentage of the circumference of the neckline. Recommended values for this option vary based on the material used for the neckband and the width of the neckband. Stretchier materials and wider neckbands should use a smaller value for this option.
+Дозволяє контролювати довжину шийної стрічки у відсотках від обхвату вирізу горловини. Рекомендовані значення для цієї опції залежать від матеріалу, з якого виготовлений шийний ремінь, і ширини ременя. Еластичніші матеріали та ширші шийні стрічки повинні використовувати менше значення для цієї опції.
 

@@ -10,21 +10,22 @@ function draftLegRibbing({
   part,
   store,
   complete,
+  expand,
   sa,
   macro,
 }) {
-  if (!options.legRibbing) return part.hide()
+  if (!expand || !options.legRibbing) return part.hide()
 
   const ribbingLength = store.get('legWidth') * options.legRibbingLength
   const legRibbingWidth = 2 * absoluteOptions.legRibbingWidth
 
   points.topLeftCorner = new Point(0, 0)
   points.bottomLeftCorner = new Point(0, legRibbingWidth)
-  points.bottomRightCorner = new Point(ribbingLength, legRibbingWidth)
-  points.topRightCorner = new Point(ribbingLength, 0)
+  points.bottomRightCorner = new Point(ribbingLength / 2, legRibbingWidth)
+  points.topRightCorner = new Point(ribbingLength / 2, 0)
 
   points.leftCenter = new Point(0, legRibbingWidth / 2)
-  points.rightCenter = new Point(ribbingLength, legRibbingWidth / 2)
+  points.rightCenter = new Point(ribbingLength / 2, legRibbingWidth / 2)
 
   paths.saBase = new Path()
     .move(points.bottomLeftCorner)
@@ -70,7 +71,7 @@ function draftLegRibbing({
   store.cutlist.addCut({ cut: 2, from: 'ribbing' })
 
   points.title = new Point(ribbingLength / 4, legRibbingWidth / 2)
-  macro('title', { at: points.title, nr: 11, title: 'legRibbing' })
+  macro('title', { at: points.title, nr: 11, title: 'onyx:legRibbing' })
 
   if (sa) {
     paths.sa = new Path()
@@ -90,22 +91,4 @@ export const legRibbing = {
   name: 'onyx.legRibbing',
   draft: draftLegRibbing,
   after: [base],
-  options: {
-    // How wide the leg ribbing should be, in absolute measure.
-    legRibbingWidth: {
-      pct: 20,
-      min: 0,
-      max: 100,
-      snap: { metric: 5, imperial: 6.35 },
-      toAbs: (pct, settings, mergedOptions) => mergedOptions.legRibbingWidth * 200, // Valid range is from 0 to 200mm.
-      menu: (settings, mergedOptions) => (mergedOptions.legRibbing ? 'construction' : false),
-    },
-    // How long the leg ribbing should be, as a percentage of the length around the leg.
-    legRibbingLength: {
-      pct: 75,
-      min: 50,
-      max: 100,
-      menu: (settings, mergedOptions) => (mergedOptions.legRibbing ? 'construction' : false),
-    },
-  },
 }

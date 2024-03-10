@@ -1,25 +1,26 @@
 ---
-title: "Four versions of Otis and a bonus Bob"
-caption: "An Otis baby romper and Bob bib"
+title: "Vier Versionen von Otis und ein Bonus-Bob"
+caption: "Ein Otis-Baby-Strampler und Bob-Lätzchen"
 date: 20231017
-intro: "Wouter made four versions of Otis for newborn Otis, and a Bob to complete the ensemble."
+intro: "Wouter hat vier Versionen von Otis für Neugeborene und einen Bob gemacht, um das Ensemble zu vervollständigen."
 designs:
   - "otis"
   - "bob"
 maker: Natalia
+author: 132
 ---
 
-Wouter, the designer, made these:
+Wouter, der Designer, hat sie gemacht:
 
-> Four versions of otis. One with long sleeves, and one that is reversible (don’t try this; figuring out how seams go together and in which sequence causes headaches).
+> Vier Versionen von Otis. Eine mit langen Ärmeln und eine, die wendbar ist (versuch das nicht; herauszufinden, wie die Nähte zusammenpassen und in welcher Reihenfolge, bereitet Kopfschmerzen).
 
-We are head over heels for his adorable fabric choices. The cute baby doesn't hurt.
+Wir sind ganz vernarrt in seine bezaubernde Stoffauswahl. Das süße Baby tut nicht weh.
 
-![Otis on Otis](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-1/public "Otis on Otis")
+![Otis auf Otis](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-1/public "Otis auf Otis")
 
-![A polka dot Otis](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-2/public "A polka dot Otis")
+![Ein Otis mit Tupfen](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-2/public "Ein Otis mit Tupfen")
 
-![This Otis is out of this world](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-3/public "This Otis is out of this world")
+![Dieser Otis ist nicht von dieser Welt](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-3/public "Dieser Otis ist nicht von dieser Welt")
 
-![A view of the reverse](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-4/public "A view of the reverse")
+![Ein Blick auf die Rückseite](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-four-versions-of-otis-and-a-bonus-bob-4/public "Ein Blick auf die Rückseite")
 

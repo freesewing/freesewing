@@ -1,12 +1,12 @@
 ---
-title: What to do after saving a new pattern?
+title: '¿Qué hacer después de guardar un nuevo patrón?'
 ---
 
-When you create a new pattern in FreeSewing's pattern editor, you have the option to save the pattern to your account.
+Cuando creas un nuevo patrón en el editor de patrones de FreeSewing, tienes la opción de guardar el patrón en tu cuenta.
 
-After you save the pattern to your account, there are several options for what you might want to do next:
+Después de guardar el patrón en tu cuenta, hay varias opciones para lo que quieras hacer a continuación:
 
-- Continue editing the saved patter
-- Display the pattern information page
+- Continuar editando el patrón guardado
+- Mostrar la página de información del patrón
 
-Because we cannot read your mind, you can choose what you would like to happen when you save a new pattern to your account.
+Como no podemos leer tu mente, puedes elegir lo que quieres que ocurra cuando guardes un nuevo patrón en tu cuenta.

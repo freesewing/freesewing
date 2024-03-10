@@ -1,6 +1,6 @@
 ---
-title: "Raglan scoop depth"
+title: "Raglan Schaufeltiefe"
 ---
 
-Controls how much extra material to place under the armpits. Larger values will generally provide better mobility and room in the armpits, while smaller values may give a more fitted look and may be better suited to people with skinny arms. This option can usually be left at the default value without issue.
+Legt fest, wie viel zusätzliches Material unter den Achseln platziert werden soll. Größere Werte bieten in der Regel eine bessere Bewegungsfreiheit und mehr Platz in den Achselhöhlen, während kleinere Werte einen taillierteren Look ergeben und besser für Menschen mit dünnen Armen geeignet sind. Diese Option kann normalerweise ohne Probleme auf dem Standardwert belassen werden.
 

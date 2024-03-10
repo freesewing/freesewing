@@ -11,8 +11,10 @@ import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { ListInput } from 'shared/components/inputs.mjs'
 import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 import { OkIcon, NoIcon } from 'shared/components/icons.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
+import { PageLink } from 'shared/components/link.mjs'
 
-export const ns = ['account', 'status']
+export const ns = ['account', 'status', 'newsletter']
 
 export const NewsletterSettings = ({ welcome = false, bare = false }) => {
   // Hooks
@@ -89,6 +91,15 @@ export const NewsletterSettings = ({ welcome = false, bare = false }) => {
       ) : bare ? null : (
         <BackToAccountButton />
       )}
+      <Popout tip>
+        <p>{t('newsletter:subscribePs')}</p>
+        <p>
+          <PageLink
+            href={`/newsletter/unsubscribe?x=${account?.ehash}`}
+            txt={t('newsletter:unsubscribeLink')}
+          />
+        </p>
+      </Popout>
     </div>
   )
 }

@@ -1,243 +1,243 @@
 ---
-title: "Onyx one-piece: Sewing Instructions"
+title: "Onyx une pièce : Instructions de couture"
 ---
 
 <Note>
 
-The use of a serger/overlocker is recommended, to keep the size of the finished seams small and to allow the seams to stretch. If using a serger with the knife engaged, a seam allowance of 1/2 inch (12 mm) is recommeded. If using an overlocking foot on a sewing machine, or serging without the use of the knife, a seam allowance of 1/4 inch (6 mm) is recommended.
+L'utilisation d'une surjeteuse est recommandée, pour que la taille des coutures finies reste petite et pour permettre aux coutures de s'étirer. If using a serger with the knife engaged, a seam allowance of 1/2 inch (12 mm) is recommended. Si tu utilises un pied de surjet sur une machine à coudre, ou si tu utilises une surjeteuse sans utiliser le couteau, une marge de couture de 1/4 de pouce (6 mm) est recommandée.
 
-Unless otherwise stated, use stretch steams for contruction of this garment. A 4-thread overlock stitch is recommended, or an overlock foot on a sewing machine if a serger is unavailable.
+Unless otherwise stated, use stretch steams for construction of this garment. Un point de surjet à 4 fils est recommandé, ou un pied de surjet sur une machine à coudre si une surjeteuse n'est pas disponible.
 
-Hems or cuffs are optional (since knit doesn't fray), but if you do make hems or add cuffs, make sure they can stretch. These instructions describe how to make a single-fold hem with a double needle, which is suitable for swimwear or lightweight garments, and how to make a rib knit cuff, which is suitable for fleece pajamas or kigurumi.
+Les ourlets ou les poignets sont facultatifs (puisque le tricot ne s'effiloche pas), mais si tu fais des ourlets ou si tu ajoutes des poignets, assure-toi qu'ils peuvent s'étirer. Ces instructions décrivent comment faire un ourlet à pli simple avec une aiguille double, qui convient aux maillots de bain ou aux vêtements légers, et comment faire un revers en tricot côtelé, qui convient aux pyjamas ou aux kigurumi en laine polaire.
 
-If sewing stretch/swim fabric, adjust your tension to allow for extra stretch. On a serger, this will usually mean lowering the needle tension, especially the right needle, and adjusting the looper tension as needed to keep the stitch looking decent. On a regular sewing machine, lower the tension. Test your choice of stitch first on scrap fabric, and try to pop the test seam by stretching the seam along its length. It should only pop after stretching quite a bit. If it pops too easily, keep playing with your stitches/tension settings until you get something that can survive some abuse.
+Si tu couds un tissu extensible/de jogging, ajuste ta tension pour qu'il puisse s'étirer davantage. Sur une surjeteuse, cela signifie généralement qu'il faut baisser la tension de l'aiguille, en particulier l'aiguille droite, et ajuster la tension du boucleur si nécessaire pour que le point ait une apparence décente. Sur une machine à coudre ordinaire, baisse la tension. Teste d'abord ton choix de point sur une chute de tissu, et essaie de faire sauter la couture d'essai en l'étirant sur toute sa longueur. Il ne devrait éclater qu'après s'être étiré un peu. Si elle craque trop facilement, continue à jouer avec tes réglages de points et de tension jusqu'à ce que tu obtiennes quelque chose qui puisse survivre à quelques abus.
 
-For making garments using 2-way stretch knits (such as jersey and fleece), regular settings with a stitch that stretches should be fine.
+Pour la confection de vêtements utilisant des tricots extensibles dans les deux sens (comme le jersey et le molleton), des réglages réguliers avec un point qui s'étire devraient convenir.
 
 </Note>
 
-### Step 0: Customizing and fitting your pattern
-Decide what type of garment you're going to make. This design supports several options:
-- Unisuits (one-piece compression swimwear with sleeves and legs)
-- One-piece pajamas (loose-fitting garment made with soft fabric, either short or long sleeved)
-- Romper (casual garment with short sleeves and legs)
-- Jumpsuit (casual garment with long sleeves and legs)
-- Unitard (compression garment used for dance)
+### Étape 0 : Personnalisation et ajustement de ton patron
+Décide du type de vêtement que tu vas confectionner. Cette conception prend en charge plusieurs options :
+- Unisuits (maillots de bain de compression d'une seule pièce avec manches et jambes)
+- Pyjama une pièce (vêtement ample en tissu doux, à manches courtes ou longues).
+- Barboteuse (vêtement décontracté avec des manches et des jambes courtes)
+- Combinaison (vêtement décontracté avec des manches et des jambes longues).
+- Unitard (vêtement de compression utilisé pour la danse)
 
-Decide if you want a hood, or to finish the neck with a neckband. If you want a hood, decide if you want a two-piece hood with a center seam, or a three-piece hood that also has a front piece, allowing for ears or other decorative feature to be inserted into the seam.
+Décide si tu veux une capuche, ou si tu veux finir le cou avec un tour de cou. Si tu veux une capuche, décide si tu veux une capuche en deux pièces avec une couture centrale, ou une capuche en trois pièces qui a aussi une pièce avant, permettant d'insérer des oreilles ou un autre élément décoratif dans la couture.
 
-Decide if you want to add a simple gathered skirt around the waist.
+Décide si tu veux ajouter une simple jupe froncée autour de la taille.
 
-Select a fabric (see fabrics for details)
+Choisis un tissu (voir les tissus pour plus de détails).
 
-Decide what lining to use, if any:
-- Unisuits should use swim lining or a second layer of swim fabric for the body, to give form, to prevent chafing, and to prevent the suit from being see-through. The sleeves may be left unlined. If using multiple layers of lining, treat them as a single layer when constructing the garment.
-- One-piece pajamas are usually not lined, except for the hood, which may or may not be lined with something soft.
-- Rompers or jumpsuits may be lined, depending on preference, fabric, and purpose.
+Décide de la doublure à utiliser, le cas échéant :
+- Les combinaisons doivent utiliser une doublure de bain ou une deuxième couche de tissu de bain pour le corps, afin de donner une forme, d'éviter les frottements et d'empêcher la combinaison d'être transparente. Les manches peuvent être laissées sans doublure. Si tu utilises plusieurs couches de doublure, traite-les comme une seule couche lors de la construction du vêtement.
+- Les pyjamas une pièce ne sont généralement pas doublés, à l'exception de la capuche, qui peut ou non être doublée de quelque chose de doux.
+- Les grenouillères ou les combinaisons peuvent être doublées, selon la préférence, le tissu et l'objectif.
 
-Select an appropriate sleeve length:
-- 10-30% for short sleeves.
-- 75% for 3/4 length sleeves.
-- 100% for long sleeves (to the wrist).
-- 115% is a good value if making a shirt with thumb holes (extends to the knuckles).
+Choisis une longueur de manche appropriée :
+- 10-30% pour les manches courtes.
+- 75 % pour les manches 3/4.
+- 100 % pour les manches longues (jusqu'au poignet).
+- 115% est une bonne valeur si tu fais une chemise avec des trous pour le pouce (s'étend jusqu'aux articulations).
 
-Select an appropriate leg length:
-- 20-60% for shorts
-- 90% for ankle-length legs
-- 100% for legs that touch the floor.
+Choisis une longueur de jambe appropriée :
+- 20-60% pour les shorts
+- 90% pour les jambes de la longueur de la cheville
+- 100 % pour les jambes qui touchent le sol.
 
-Decide on a closure.
-- One-piece pajamas usually use a coiled plastic zipper (#3-5 gauge).
-- Unisuits usually use a half-length molded plastic zipper, #5 gauge.
-- Unitards use a large neckhole and no zipper.
-- Rompers and jumpsuits can use buttons, coiled plastic zippers, invisible zippers, or a large neckhole.
-- NOTE: This design assumes the use of a zipper. If using buttons, you will need to add plackets and buttons yourself. They are not included in this design.
+Décide d'une fermeture.
+- Les pyjamas une pièce utilisent généralement une fermeture à glissière en plastique enroulée (calibre 3-5).
+- Les combinaisons utilisent généralement une fermeture à glissière en plastique moulé de demi-longueur, de calibre 5.
+- Les unitards utilisent une grande encolure et n'ont pas de fermeture éclair.
+- Les grenouillères et les combinaisons peuvent utiliser des boutons, des fermetures à glissière en plastique enroulées, des fermetures à glissière invisibles ou une grande encolure.
+- REMARQUE : ce modèle suppose l'utilisation d'une fermeture à glissière. Si tu utilises des boutons, tu devras ajouter les pattes de boutonnage et les boutons toi-même. Ils ne sont pas inclus dans ce modèle.
 
-Decide whether to cut the front and/or back pieces _on the fold_:
-- If using a zipper or buttons, do _not_ cut the piece containing the zipper _on the fold_.
-- For unitards, cut both the front and back _on the fold_ (total of 2 pieces).
-- For unisuits, cut the back _on the fold_ if making a front-zip unisuit, or the front _on the fold_ is making a back-zip unisuit (total of 3 pieces).
-- For one-piece pajamas, rompers, and jumpsuits, cut only the back _on the fold_ (total of 3 pieces).
+Décide de couper les pièces du devant et/ou du dos _sur le pli_:
+- Si tu utilises une fermeture à glissière ou des boutons, ne _pas_ couper la pièce contenant la fermeture à glissière _sur le pli_.
+- Pour les unitards, coupe le devant et le dos _sur le pli_ (2 pièces au total).
+- Pour les combinaisons, coupe le dos _sur le pli_ si tu fais une combinaison avec fermeture à glissière sur le devant, ou le devant _sur le pli_ si tu fais une combinaison avec fermeture à glissière sur le dos (3 pièces au total).
+- Pour les pyjamas une pièce, les barboteuses et les combinaisons, coupe seulement le dos _sur le pli_ (3 pièces au total).
 
-Figure out what kind of fit you want and set your eases accordingly. Make sure you have an appropriate fabric. If in doubt, making the garment too loose is safer than too tight.
-- For unisuits and unitards, you want negative ease. This will allow the stretch/swim fabric to form itself around the wearer's body.
-- For one-piece pajamas, you want positive ease and to smooth out the shape (ie., add extra ease to areas that cut in, like the waist, to give the overall garment a less fitted shape).
-- Rompers and bodysuits use positive ease, with the amount and distribution of the ease varying greatly based on the intended shape of the garment.
+Détermine le type d'ajustement que tu souhaites et règle tes facilités en conséquence. Assure-toi d'avoir un tissu approprié. En cas de doute, il est plus sûr de rendre le vêtement trop lâche que trop serré.
+- Pour les combinaisons et les justaucorps, tu veux une aisance négative. Cela permettra au tissu extensible/de natation de se former autour du corps de la personne qui le porte.
+- Pour les pyjamas d'une seule pièce, tu veux une aisance positive et adoucir la forme (c'est-à-dire ajouter de l'aisance aux endroits qui se découpent, comme la taille, pour donner à l'ensemble du vêtement une forme moins ajustée).
+- Les grenouillères et les bodys utilisent une aisance positive, la quantité et la répartition de l'aisance variant beaucoup en fonction de la forme prévue du vêtement.
 
-The neckband length will be mostly determined by the material of the neckband. Stretch fabric will generally use a length of around 80%. Less stretchy fabric will be longer, but always shorter than 100%, and ribbed knit (traditional t-shirt neckbands) are around 60-70%.
+La longueur du tour de cou sera principalement déterminée par la matière du tour de cou. Les tissus extensibles utiliseront généralement une longueur d'environ 80 %. Les tissus moins extensibles seront plus longs, mais toujours inférieurs à 100 %, et les tricots côtelés (les tours de cou traditionnels des t-shirts) tournent autour de 60-70 %.
 
-Check around the hips, upper legs, and crotch fork, and make sure that everything is smooth and looks right. Small errors in measurements or options can cause issues here, and it's best to tweak seat east, upper leg ease, crotch gusset width, and leg taper position until all curves are smooth. The outseam should roughly match the silhouette of the wearer.
+Vérifie autour des hanches, le haut des jambes et la fourche de l'entrejambe, et assure-toi que tout est lisse et a l'air correct. De petites erreurs dans les mesures ou les options peuvent causer des problèmes ici, et il est préférable de modifier l'est du siège, l'aisance du haut de la jambe, la largeur du gousset de l'entrejambe et la position de l'amincissement de la jambe jusqu'à ce que toutes les courbes soient lisses. La largeur extérieure doit à peu près correspondre à la silhouette de la personne qui la porte.
 
-### Step 1: Forming the body
+### Étape 1 : Former le corps
 
-Note: If the front or back was cut _on the fold_, skip steps producing center seams. Note: These instructions are intended to form the seams such that the side seams extend backwards, and the center seams extend leftwards. Note: These instructions assume that the zipper is on the front. If the zipper is on the back or there is no zipper, the directions will have to be modified slightly. Note: If you're having the zipper zip up across the neckband (recommended for unisuits), remember that.
+Note : Si le devant ou le dos a été coupé _sur le pli_, saute les étapes de production des coutures centrales. Remarque : ces instructions sont destinées à former les coutures de manière à ce que les coutures latérales s'étendent vers l'arrière et que les coutures centrales s'étendent vers la gauche. Remarque : ces instructions supposent que la fermeture éclair se trouve sur le devant. Si la fermeture éclair se trouve au dos ou s'il n'y a pas de fermeture éclair, les instructions devront être légèrement modifiées. Note: If you're having the zipper zip up across the neckband (recommended for unisuits), remember that.
 
-If not using lining:
-- (if front was _not_ cut _on the fold_) With _good sides together_, place the zipper and neckband into position along the center seam, remembering to take seam allowance into account. Mark where the bottom stop of the zipper is, and serge/overlock the front pieces together starting at the crotch fork and stopping at the bottom stop of the zipper.
-- (if back was _not_ cut _on the fold_) With _good sides together_, sew the back pieces together.
-- With _good sides together_, sew the front and the back assemblies together along the two side seams.
-- Skip to step 2.
+Si tu n'utilises pas la doublure :
+- (si le devant était _et non_ , coupe _sur le pli_) Avec _bons côtés ensemble_, place la fermeture éclair et la bande de cou en position le long de la couture centrale, en n'oubliant pas de prendre en compte le surplus de couture. Marque l'emplacement de l'arrêt inférieur de la fermeture à glissière et surjete les pièces du devant ensemble en commençant par la fourche de l'entrejambe et en t'arrêtant à l'arrêt inférieur de la fermeture à glissière.
+- (si le dos était _et non_ , coupe _sur le pli_) Avec _bons côtés ensemble_, couds les morceaux du dos ensemble.
+- Avec _bons côtés ensemble_, couds les assemblages du devant et du dos ensemble le long des deux coutures latérales.
+- Passe à l'étape 2.
 
-If using lining: Front (center) seam: (from the point of view of the wearer) Note: Seam will be formed on the right side of the assembly. Layer the pieces as follows, from top to bottom:
- - _wrong side up_: fashion fabric, front-left piece.
- - _good side up_: fashion fabric, front-right piece.
- - _wrong side up_: lining, front-right piece.
- - _good side up_: lining, front-left piece.
-- Line up the four pieces and clip/pin.
-- Place your neckband and zipper on the seam. Remember to take into account seam allowances, that the top stop of the zipper is at the top of the folded neckband, and mark where the bottom stop of the zipper is. Remove the zipper and neckband.
-- Disengage the serger knife (it will cause issues near the zipper where a section would be cut but not sewn).
-  - Alternatively, leave the serger knife engaged, but disengage it right when the knife reaches the point where your seam stops, and then continue without the knife until the stop point reaches the needles.
-- Make sure the layers of fabric are lined up very evenly. Without the knife, you must make sure that every layer gets under the needles of the serger, or there will be holes in the seam of your garment or the lining.
-- Serge/overlock through all 4 layers, stopping at the point you marked where the bottom stop of the zipper is.
-- Flip the top and bottom layers (the front-left pieces) of fabric over.
-- Re-engage the serger knife.
+If using lining: Front (center) seam: (from the point of view of the wearer) Note: Seam will be formed on the right side of the assembly. Superpose les pièces comme suit, de haut en bas :
+ - _envers vers le haut_: tissu de mode, pièce à l'avant gauche.
+ - _good side up_: tissu de mode, pièce avant droite.
+ - _à l'envers_: doublure, pièce avant-droite.
+ - _bon côté_: doublure, pièce avant gauche.
+- Aligne les quatre pièces et clipse/épingle.
+- Place ton tour de cou et ta fermeture éclair sur la couture. N'oublie pas de prendre en compte les marges de couture, que l'arrêt supérieur de la fermeture éclair se trouve en haut du tour de cou plié, et marque l'endroit où se trouve l'arrêt inférieur de la fermeture éclair. Retire la fermeture éclair et le tour de cou.
+- Désengage le couteau de la surjeteuse (il causera des problèmes près de la fermeture à glissière où une section serait coupée mais pas cousue).
+  - Sinon, laisse le couteau de la surjeteuse engagé, mais désengage-le juste au moment où le couteau atteint le point où ta couture s'arrête, puis continue sans le couteau jusqu'à ce que le point d'arrêt atteigne les aiguilles.
+- Veille à ce que les couches de tissu soient alignées de façon très régulière. Sans le couteau, tu dois t'assurer que chaque couche passe sous les aiguilles de la surjeteuse, sinon il y aura des trous dans la couture de ton vêtement ou dans la doublure.
+- Surjete les 4 couches, en t'arrêtant à l'endroit où tu as marqué l'arrêt inférieur de la fermeture à glissière.
+- Retourne les couches supérieure et inférieure (les pièces avant gauche) du tissu.
+- Réengage le couteau de la surjeteuse.
 
-Left (side) seam: Note: Seam will be formed on the right side of the assembly. Layer the pieces as follows, from top to bottom:
- - _wrong side up_: fashion fabric, back-left piece.
- - _good side up_: lining+fashion fabric from prior steps.
- - _good side up_: lining, back-left piece.
-- Line up the four pieces, and serge/overlock through all 4 layers.
-- Flip the top and bottom pieces (the back-left pieces) of fabric over.
+Left (side) seam: Note: Seam will be formed on the right side of the assembly. Superpose les pièces comme suit, de haut en bas :
+ - _Envers vers le haut_: tissu de mode, pièce à l'envers.
+ - _bon côté_: doublure+tissu de mode des étapes précédentes.
+ - _good side up_: doublure, pièce arrière gauche.
+- Aligne les quatre pièces, et surjete les 4 couches.
+- Retourne les morceaux du haut et du bas (les morceaux arrière-gauche) du tissu.
 
 Right (side) seam: Layer the pieces as follows, from top to bottom: Note: Seam will be formed on the left side of the assembly.
- - _wrong side up_: fashion fabric, back-right piece.
- - _good side up_: lining+fashion fabric from prior steps.
- - _good side up_: lining, back-right piece.
-- Line up the four pieces, and serge/overlock through all 4 layers.
-- Flip the top and bottom layers (the back-right pieces) of fabric over.
+ - _envers vers le haut_: tissu de mode, pièce arrière droite.
+ - _bon côté_: doublure+tissu de mode des étapes précédentes.
+ - _bon côté_: doublure, pièce arrière-droite.
+- Aligne les quatre pièces, et surjete les 4 couches.
+- Retourne les couches supérieure et inférieure (les morceaux de l'arrière droit) du tissu.
 
-Back (center) seam: Layer the pieces as follows, from top to bottom: Note: Seam will be formed on the left side of the assembly. Note: This is the last seam to complete the body, and the steps are slightly different in order to still have the seam encased between the fashion fabric and the lining once it's finished.
- - _wrong side up_: fashion fabric, back-right piece pulled over the main part.
- - _good side up_: lining+fashion fabric, main part; from prior steps.
- - _good side up_: lining, back-right piece pulled under the main part.
-- Line up the four pieces, and serge/overlock through all 4 layers.
-- Pull the lining right-side-out, so that the main bulk that was locked between the newly sewn parts is freed and the garment is right-side-out.
+Back (center) seam: Layer the pieces as follows, from top to bottom: Note: Seam will be formed on the left side of the assembly. Remarque : il s'agit de la dernière couture pour terminer le corps, et les étapes sont légèrement différentes afin que la couture soit toujours enfermée entre le tissu de mode et la doublure une fois qu'elle est terminée.
+ - _Envers vers le haut_: tissu de mode, pièce arrière droite tirée sur la partie principale.
+ - _bon côté_: doublure+tissu de mode, partie principale ; à partir d'étapes antérieures.
+ - _bon côté_: doublure, pièce arrière-droite tirée sous la partie principale.
+- Aligne les quatre pièces, et surjete les 4 couches.
+- Tire la doublure à l'endroit, de façon à ce que la masse principale qui était bloquée entre les parties nouvellement cousues soit libérée et que le vêtement soit à l'endroit.
 
-### Step 2: Attaching the gusset
+### Étape 2 : Fixer le gousset
 
-If not using lining:
-- Place the garment _inside-out_ and flat on your table, with the front of the garment face-up.
-- With _good sides together_, serge or overlock the crotch gusset up the front of one leg, around the crotch fork, and down the other leg. Be careful to keep the layers of fabric together and aligned when going around the fork.
-- Turn the garment over.
-- With _good sides together_, serge or overlock the crotch gusset up the back of one leg, around the crotch, and down the other leg.
-- Skip to step 3.
+Si tu n'utilises pas la doublure :
+- Place le vêtement _à l'envers_ et à plat sur ta table, le devant du vêtement vers le haut.
+- Avec _bons côtés ensemble_, surpasse le gousset de l'entrejambe sur le devant d'une jambe, autour de la fourche de l'entrejambe, et le long de l'autre jambe. Fais attention à garder les couches de tissu ensemble et alignées lorsque tu fais le tour de la fourche.
+- Retourne le vêtement.
+- En plaçant _sur les bons côtés,_, surpasse le gousset d'entrejambe en remontant l'arrière d'une jambe, en faisant le tour de l'entrejambe et en descendant le long de l'autre jambe.
+- Passe à l'étape 3.
 
 If using lining: Front Inseam:
-- Place the garment _right-side-out_ and flat on your table, with the front of the garment face-up.
-- Push the back crotch and legs out of the way, so you have easy access to only the front crotch and legs.
-- Place the fashion fabric gusset piece on top of the garment and running along the inseam, around the crotch, and back down the other inseam, with the _wrong side up_.
-- Slide the lining gusset piece under the garment with the _good side up_.
-- (optional) Baste the seam, taking care to secure the portion near the crotch, as it has a tendancy to slip and cause a hole in the next step if not well secured.
-- Serge/overlock through all 4 layers to form the front inseam.
+- Place le vêtement _à l'endroit_ et à plat sur ta table, avec le devant du vêtement tourné vers le haut.
+- Pousse l'entrejambe arrière et les jambes hors du chemin, afin de pouvoir accéder facilement uniquement à l'entrejambe avant et aux jambes.
+- Place le gousset en tissu mode sur le dessus du vêtement et fais-le courir le long de l'entrejambe, autour de l'entrejambe et le long de l'autre entrejambe, avec l'envers de _vers le haut_.
+- Glisse le gousset de la doublure sous le vêtement avec le _bon côté vers le haut_.
+- (facultatif) Bâtis la couture, en prenant soin de fixer la partie près de l'entrejambe, car elle a tendance à glisser et à causer un trou à l'étape suivante si elle n'est pas bien fixée.
+- Fais une serge/overlock à travers les 4 couches pour former l'avant de l'entrejambe.
 
-Back Inseam: Note: It's not possible to hide this seam in between the lining and the fashion fabric, so it'll be on the inside. For adaptive/sensory-friendly clothing, place this seam on the outside instead.
-- Turn the garment inside-out.
-- Flip the garment so that the back is facing you.
-- Line up the gusset (that you attached to the front in the previous step) with the back inseam and clip it together.
-- (optional) Baste the seam, taking care to secure the portion near the crotch, as it has a tendancy to slip and cause a hole in the next step if not well secured.
-- Serge/overlock through all 4 layers to form the back inseam.
+Back Inseam: Note: It's not possible to hide this seam in between the lining and the fashion fabric, so it'll be on the inside. Pour les vêtements adaptés/sensoriels, place plutôt cette couture à l'extérieur.
+- Retourne le vêtement à l'envers.
+- Retourne le vêtement de façon à ce que le dos soit face à toi.
+- Aligne le gousset (que tu as fixé sur le devant à l'étape précédente) avec l'entrejambe du dos et attache-les ensemble.
+- (facultatif) Bâtis la couture, en prenant soin de fixer la partie près de l'entrejambe, car elle a tendance à glisser et à causer un trou à l'étape suivante si elle n'est pas bien fixée.
+- Fais une serge/overlock à travers les 4 couches pour former l'entrejambe du dos.
 
-### Step 3: Attaching the sleeves
-- Fold each sleeve and, with _good sides together_, sew the sleeve seam from the hem to the armpit.
+### Étape 3 : Fixer les manches
+- Plie chaque manche et, avec _bons côtés ensemble_, couds la couture de la manche de l'ourlet à l'aisselle.
 
-- Turn the garment _right-side-out_.
-- Turn the sleeves _right-side-out_.
-- With _good sides together_, clip each sleeve to the body. The longer side of each sleeve should be clipped to the back, the shorter side to the front, and the sleeve seam should line up with the outseam. Verify that the sleeve is properly attached. Serge or overlock through all 3 layers.
-- Repeat with the other sleeve.
+- Retourne le vêtement _à l'endroit_.
+- Retourne les manches _à l'endroit_.
+- En plaçant _du bon côté_, attache chaque manche au corps. Le côté le plus long de chaque manche doit être clipsé dans le dos, le côté le plus court sur le devant, et la couture de la manche doit s'aligner sur la couture extérieure. Vérifie que le manchon est correctement fixé. Fais une surpiqûre ou un surjet à travers les trois couches.
+- Répète l'opération avec l'autre manche.
 
-### Step 4a: Attaching the neckband
- - Fold the neckband in half short ways (so it's half as wide) with _wrong sides together_, and clip it at each end and at the midpoint.
- - With _good sides together_, clip the middle of the neckband to the middle of the piece without the slit for the zipper (the back piece if using a front zipper).
- - Clip each end of the neckband to the corresponding side of the zipper slit.
- - Place clips along the length, stretching the neckband evenly along the length of the neck hole.
- - Baste the neckband to the neck hole, taking care to secure the two ends.
- - Serge/overlock through all layers.
- - Turn the neckband over. It should lay flat.
+### Étape 4a : Fixe le tour de cou
+ - Plie le tour de cou en deux dans le sens de la longueur (pour qu'il soit deux fois plus large) avec _endroit contre endroit_, et attache-le à chaque extrémité et au milieu.
+ - Avec _bons côtés ensemble_, clipse le milieu du tour de cou au milieu du morceau sans la fente pour la fermeture éclair (le morceau du dos si tu utilises une fermeture éclair sur le devant).
+ - Clipse chaque extrémité du tour de cou sur le côté correspondant de la fente de la fermeture éclair.
+ - Place les pinces sur la longueur, en étirant le tour de cou uniformément sur la longueur du trou du cou.
+ - Bâtis la bande de cou sur le trou du cou, en prenant soin de fixer les deux extrémités.
+ - Serge/overlock à travers toutes les couches.
+ - Retourne le tour de cou. Il doit être bien à plat.
 
-### Step 4b: Constructing and attaching the hood
+### Étape 4b : Construire et fixer la hotte
 
-##### Assembling the hood:
- - Place the two main hood pieces together with _good sides together_, and serge/overlock along the center seam (the curved seam running from the back of the neck to the top of the head).
- - If using a front piece, place it against the back pieces with _good sides together_, and serge/overlock along the side seam (the straight seam going up one side, over the head, and down the other side).
+##### Assemble la hotte :
+ - Place les deux pièces principales de la capuche ensemble avec _bons côtés ensemble_, et surjete la couture centrale (la couture incurvée qui va de l'arrière du cou au sommet de la tête).
+ - Si tu utilises un morceau de devant, place-le contre les morceaux de dos avec _bons côtés ensemble_, et surjete le long de la couture de côté (la couture droite qui monte d'un côté, passe par-dessus la tête et descend de l'autre côté).
 
-If using lining, do the following two steps, otherwise skip to attaching the hood.
- - Repeat the previous steps to put together the lining pieces.
- - Place the lining assembly and the main hood assembly together with _wrong sides together_, and clip them together along the neck.
+Si tu utilises une doublure, fais les deux étapes suivantes, sinon passe à la fixation de la capuche.
+ - Répète les étapes précédentes pour assembler les pièces de la doublure.
+ - Place l'assemblage de la doublure et l'assemblage principal de la capuche ensemble avec _, endroit contre endroit_, et attache-les ensemble le long du cou.
 
-##### Attaching the hood:
- - Lay the garment down _right-side-out_.
- - Place the hood around the neckline, with _good sides together_.
- - Clip the two ends of the hood to the slit in the front where the zipper will go, and clip the back seam of the hood to the middle of the back body piece.
- - Add additional clips to secure the hood to the neck for sewing.
- - Check to make sure that it is assembled correctly.
- - Serge/overlock through all layers.
+##### Fixe la capuche :
+ - Pose le vêtement sur _à l'endroit_.
+ - Place la capuche autour de l'encolure, avec _bons côtés ensemble_.
+ - Clipse les deux extrémités de la capuche à la fente du devant où ira la fermeture éclair, et clipse la couture arrière de la capuche au milieu de la pièce de carrosserie arrière.
+ - Ajoute des clips supplémentaires pour fixer la capuche au cou pour la couture.
+ - Vérifie qu'il est correctement assemblé.
+ - Serge/overlock à travers toutes les couches.
 
-### Step 5: Preparing the zipper guard
- - Fold the zipper guard in half short ways (so it's half as wide) with _good sides together_, and secure it loosely with a clip or two.
- - If needed, flip it so that the open seam is on the right side.
- - Using your sewing machine and a straight stitch, sew a curve starting vertically at a point along the fold about as far down as the zipper guard is wide, and ending horizontally at the top right corner of the zipper guard. The curve should be shaped such that it forms a smooth corner around the top-left corner of the zipper guard.
- - Trim the fabric on the outside of the curve, cutting close to the line of stitching, but not touching it.
- - Unclip the fabric and turn it right-side-out, refolding and reclipping the fabric, this time with _wrong sides together_.
- - Serge/overlock down the length of the zipper guard.
- - Serge/overlock the bottom of the zipper guard.
- - You should have a strip of fabric with a serged/overlocked seam along the right and bottom sides, and a curved corner with a french seam along the top-left.
+### Étape 5 : Préparation de la protection de la fermeture éclair
+ - Plie la protection de la fermeture à glissière en deux dans le sens de la longueur (pour qu'elle soit deux fois plus large) avec _bons côtés ensemble_, et fixe-la sans serrer avec une ou deux pinces.
+ - Si nécessaire, retourne-le pour que la couture ouverte soit sur l'endroit.
+ - À l'aide de ta machine à coudre et d'un point droit, couds une courbe commençant verticalement à un point situé le long du pli, à peu près à la hauteur de la largeur du protège-fermeture à glissière, et se terminant horizontalement au coin supérieur droit du protège-fermeture à glissière. La courbe doit être façonnée de manière à former un coin lisse autour du coin supérieur gauche de la protection de la fermeture à glissière.
+ - Découpe le tissu à l'extérieur de la courbe, en coupant près de la ligne de couture, mais sans la toucher.
+ - Décroche le tissu et retourne-le à l'endroit, en le repliant et en le recroisant, cette fois-ci avec _à l'envers_.
+ - Serge/overlock sur la longueur de la protection de la fermeture à glissière.
+ - Sertisse/verrouille le bas de la protection de la fermeture à glissière.
+ - Tu dois avoir une bande de tissu avec une couture surjetée le long des côtés droit et inférieur, et un coin incurvé avec une couture française en haut à gauche.
 
-### Step 6: Installing the zipper.
-Note: This step is the same with or without lining. Treat the lining and the fashion fabric as one.
- - Lay your garment _right side out_.
- - Détache la fermeture éclair.
- - Place the zipper _good side up_ along the center seam and align it carefully. The alignment of the top stop is more important than that of the bottom stop, and try not to stretch or gather the fabric as you align your zipper.
- - Turn one side of the zipper 1/2 turn outward, and lay it along the open seam so that the tape edge is along the seam and the toothed edge is facing the bulk of the fabric. Line up the edge of the fabric with the edge of the tape and clip in place.
+### Étape 6 : installation de la fermeture éclair.
+Remarque : cette étape est la même avec ou sans doublure. Traite la doublure et le tissu de mode comme une seule et même chose.
+ - Pose ton vêtement _à l'endroit_.
+ - Sépare la fermeture Éclair.
+ - Place la fermeture éclair _bon côté vers le haut_ le long de la couture centrale et aligne-la soigneusement. L'alignement de l'arrêt supérieur est plus important que celui de l'arrêt inférieur, et essaie de ne pas étirer ou froncer le tissu lorsque tu alignes ta fermeture à glissière.
+ - Tourne un côté de la fermeture éclair d'un demi-tour vers l'extérieur, et pose-la le long de la couture ouverte de façon à ce que le bord du ruban adhésif soit le long de la couture et que le bord denté soit orienté vers le gros du tissu. Aligne le bord du tissu avec le bord du ruban adhésif et clipse-le en place.
 
- - If sewing swim fabric, sew the fabric and the zipper tape together with a straight stight down each side. This is both to hold things together, and to provide a second, safety line of stitching for the zipper. For less tricky fabrics, this step is optional.
+ - Si tu couds du tissu de natation, couds le tissu et la bande de fermeture éclair ensemble avec une ligne droite de chaque côté. Cela permet à la fois de maintenir les choses ensemble et de fournir une deuxième ligne de couture de sécurité pour la fermeture à glissière. Pour les tissus moins délicats, cette étape est facultative.
 
- - Turn the zipper back _good side up_, folding the fabric under in the process.
- - Repeat for the other side.
+ - Retourne la fermeture à glissière _bon côté vers le haut_, en pliant le tissu sous la fermeture.
+ - Répète pour l'autre côté.
 
-Installing the zipper guard.
- - Turn the garment _inside-out_.
- - Place the long serged edge of the zipper guard along the left side of the zipper. The edge of the zipper guard should line up with the tape edge of the zipper and should cover the zipper.
- - Adjust the zipper guard vertically. It should extend above the top stop of the zipper by enough so that you can fold the fabric over to hide the zipper pull and protect the neck from the zipper.
- - If you're using a neckband, fold the portion extending above the top zipper stop over to the front of the garment.
- - Clip the zipper guard into place. This will cover up the clips holding the zipper to the garment. Remember not to sew over these clips when sewing.
+Installe la protection de la fermeture éclair.
+ - Retourne le vêtement _à l'envers_.
+ - Place le long bord dentelé de la protection de la fermeture à glissière le long du côté gauche de la fermeture à glissière. Le bord de la protection de la fermeture à glissière doit s'aligner sur le bord du ruban de la fermeture à glissière et doit recouvrir la fermeture à glissière.
+ - Ajuste la protection de la fermeture éclair à la verticale. Elle doit dépasser l'arrêt supérieur de la fermeture à glissière d'une distance suffisante pour que tu puisses replier le tissu afin de cacher la tirette de la fermeture à glissière et de protéger le cou de la fermeture à glissière.
+ - Si tu utilises un tour de cou, plie la partie qui dépasse l'arrêt de la fermeture à glissière supérieure sur le devant du vêtement.
+ - Clipse la protection de la fermeture éclair en place. Cela couvrira les clips qui maintiennent la fermeture éclair sur le vêtement. N'oublie pas de ne pas coudre par-dessus ces clips lors de la couture.
 
-Sewing the zipper.
- - Switch to a zipper foot.
- - Turn the garment _right side out_.
- - For swim fabric or to have an exposed zipper: Pull the fabric into position, so that the fabric is cleanly folded back from the zipper teeth.
- - For fleece fabric or to have a covered zipper: Pull the fabric into position, leaving a small fold of fabric extending over the zipper.
- - Place the garment into your sewing machine and adjust the needle so that it is a few mm into the fold of the fabric.
- - Start at the neck on the right side, and sew down until you are a few mm past the zipper stop using a straight stitch. Be careful not to sew into the zipper guard or any loose fabric.
- - Repeat for the other side. This time, when you reach the bottom, turn the fabric 90 degress and sew across the bottom until you meet the first line of stitching, securing the bottom of the zipper and zipper guard.
+Couds la fermeture éclair.
+ - Passe à un pied pour fermeture à glissière.
+ - Retourne le vêtement _à l'endroit_.
+ - Pour les tissus de natation ou pour avoir une fermeture éclair apparente : Tire le tissu en position, de façon à ce que le tissu soit proprement replié par rapport aux dents de la fermeture à glissière.
+ - Pour les tissus molletonnés ou pour avoir une fermeture éclair couverte : Tire le tissu en position, en laissant un petit pli de tissu dépasser sur la fermeture à glissière.
+ - Place le vêtement dans ta machine à coudre et règle l'aiguille de façon à ce qu'elle pénètre de quelques mm dans le pli du tissu.
+ - Commence au niveau de l'encolure sur l'endroit, et couds vers le bas jusqu'à ce que tu aies dépassé de quelques millimètres l'arrêt de la fermeture éclair en utilisant un point droit. Fais attention à ne pas coudre dans la protection de la fermeture à glissière ou dans tout autre tissu lâche.
+ - Répète pour l'autre côté. Cette fois, quand tu arrives en bas, tourne le tissu à 90 degrés et couds en travers jusqu'à ce que tu rencontres la première ligne de couture, fixant ainsi le bas de la fermeture à glissière et le protège-fermeture à glissière.
 
-### Step 7a: (Optional) Ribbed cuffs
-The ribbed cuff pieces can be added to the sleeves and legs in a mannar similar to that used to attach the neckband to the neck hole.
+### Étape 7a : (Facultatif) Poignets côtelés
+Les morceaux de manchettes côtelées peuvent être ajoutés aux manches et aux jambes d'une mannière similaire à celle utilisée pour fixer le tour de cou au trou de l'encolure.
 
-- Fold the ribbed cuff piece opposite the fold line (vertically), with _good sides together_.
-- Serge/overlock along the edge, so that the ribbed cuff piece is now a closed loop.
-- Unfold the ribbed cuff piece.
-- Fold the ribbed cuff piece in half along the fold line (horizontally), with _wrong sides together_.
-- Turn the garment _right side out_.
-- Place the loop of ribbing around the sleeve or leg of the garment, lining up the edges of the ribbing and the sleeve/leg.
-- Stretch both the sleeve/leg and ribbing together until the folds/gathers/slack in the sleeve are all gone, and clip into place.
-- Serge/overlock _on the round_ along the seam.
-- Repeat for the remaining sleeves/legs.
+- Plie la manchette côtelée en face de la ligne de pliage (verticalement), avec _bons côtés ensemble_.
+- Serge/overlock le long du bord, de façon à ce que la manchette côtelée soit maintenant une boucle fermée.
+- Déplie la pièce de la manchette côtelée.
+- Plie la manchette côtelée en deux le long de la ligne de pliage (horizontalement), avec _mauvais côtés ensemble_.
+- Retourne le vêtement _à l'endroit_.
+- Place la boucle de côtes autour de la manche ou de la jambe du vêtement, en alignant les bords des côtes et de la manche/jambe.
+- Etire la manche/jambe et la côte ensemble jusqu'à ce qu'il n'y ait plus de plis, de fronces ou de mou dans la manche, et clipse-les en place.
+- Serge/overlock _sur le rond_ le long de la couture.
+- Répète l'opération pour les autres manches/jambes.
 
-### Step 7b: (Optional) Hemming
+### Étape 7b : (Facultatif) Ourlet
 
-- Hem the sleeves, legs, hood, and/or bottom of the skirt using a single-fold hem. A coverstitch machine is ideal, but not necessary. Using a twin needle with a regular sewing machine will add some stretch to the stitching, but in either case the use of a stretch stitch is still recommended for high-stretch fabrics.
-- You may carefully cutaway excess fabric to make a cleaner hem. This is quite optional, since this fabric should stay on the inside.
-- Alternatively, you can overlock or serge the raw edge _without_ folding it over to give it a little bit of substance without adding as much bulk as a folded hem, or you can make a rolled hem.
-- Or you can leave the edges unfinished, particularly if it's swim fabric or some other fabric that does not fray at all.
+- Fais un ourlet sur les manches, les jambes, la capuche et/ou le bas de la jupe à l'aide d'un ourlet à pli simple. Une machine à point de recouvrement est idéale, mais pas nécessaire. L'utilisation d'une aiguille double avec une machine à coudre ordinaire ajoutera un peu d'élasticité à la couture, mais dans les deux cas, l'utilisation d'un point extensible est toujours recommandée pour les tissus très extensibles.
+- Tu peux découper soigneusement l'excédent de tissu pour obtenir un ourlet plus net. C'est tout à fait facultatif, car ce tissu doit rester à l'intérieur.
+- Tu peux aussi surjeter ou surfiler le bord brut _sans_ le replier pour lui donner un peu de substance sans ajouter autant de volume qu'un ourlet plié, ou tu peux faire un ourlet roulé.
+- Tu peux aussi laisser les bords non finis, surtout s'il s'agit de tissu de natation ou d'un autre tissu qui ne s'effiloche pas du tout.
 
-### Step 8: (Options) Adding a skirt
+### Étape 8 : (Options) Ajouter une jupe
 
-- Fold the skirt piece in half along the cut-on-fold line, with _good sides together_, and serge/overlock along the side so that the skirt is closed.
-- (optional) Hem the bottom of the skirt.
-- Gather the skirt along the waist (or top) of the skirt using two gather threads spaced 12mm (1/2") apart. Place the skirt around the garment where it will rest, and adjust the gathers to fit around the garment.
-- The skirt can be either placed _right side out_ on the garment, or _inside-out_ and _upside-down_ on the garment. _Right side out_ will produce a lighter and stronger seam, but the seam will be visible (which may or may not be desirable). _Inside-out_ will hide the seam under the skirt, but will add an extra fold of fabric to the waist.
-- Line up the waist of the skirt with where you want it to rest on the garment, and pin it into place.
-- Use a coverstitch machine or a short and wide zigzag stitch along the top edge of the skirt, forming a lap seam and hiding the edge of the fabric under the coverstitch or zigzag.
-- Make a second coverstitch or zigzag about 6-12mm (1/4" to 1/2") below the first line of stitching, placing it between the two gather threads and being careful not to catch either gather thread under the coverstitch.
-- Remove the gather threads.
-- If the skirt was placed _inside-out_ and _upside-down_, flip it back over.
+- Plie le morceau de jupe en deux le long de la ligne de coupe sur le pli, avec _bons côtés ensemble_, et surjete/overlock le long du côté de façon à ce que la jupe soit fermée.
+- (facultatif) Fais un ourlet au bas de la jupe.
+- Rassemble la jupe le long de la taille (ou du haut) de la jupe en utilisant deux fils de fronçage espacés de 12 mm (1/2"). Place la jupe autour du vêtement où elle reposera, et ajuste les fronces pour qu'elles s'adaptent au vêtement.
+- La jupe peut être placée soit _à l'endroit_ sur le vêtement, soit _à l'envers_ et _à l'endroit_ sur le vêtement. _L'endroit vers l'extérieur_ produira une couture plus légère et plus solide, mais la couture sera visible (ce qui n'est pas forcément souhaitable). _Inside-out_ cachera la couture sous la jupe, mais ajoutera un pli de tissu supplémentaire à la taille.
+- Aligne la taille de la jupe avec l'endroit où tu veux qu'elle repose sur le vêtement, et épingle-la en place.
+- Utilise une machine à point de recouvrement ou un point zigzag court et large le long du bord supérieur de la jupe, en formant une couture de recouvrement et en cachant le bord du tissu sous le point de recouvrement ou le point zigzag.
+- Fais un deuxième point de recouvrement ou un zigzag à environ 6-12 mm (1/4" à 1/2") sous la première ligne de couture, en le plaçant entre les deux fils de fronces et en faisant attention à ne pas attraper l'un ou l'autre des fils de fronces sous le point de recouvrement.
+- Retire les fils de rassemblement.
+- Si la jupe a été placée _à l'envers_ et _à l'endroit_, retourne-la.

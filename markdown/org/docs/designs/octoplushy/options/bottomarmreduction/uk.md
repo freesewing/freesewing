@@ -1,5 +1,5 @@
 ---
-title: "Bottom Arm Reduction"
+title: "Зменшення нижнього плеча"
 ---
 
-This setting adjusts the difference in length between the top and the bottom fabric of the arms for the Octopus and Squid styles. The bigger the difference, the more the arms will want to curl.
+Цей параметр регулює різницю в довжині між верхньою і нижньою тканиною рук для стилів "Восьминіг" і "Кальмар". Чим більша різниця, тим більше руки будуть хотіти скрутитися.

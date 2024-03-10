@@ -1,6 +1,6 @@
 ---
-title: "Neckband length"
+title: "Longueur du tour de cou"
 ---
 
-Controls how long the neckband is, as a percentage of the circumference of the neckline. Recommended values for this option vary based on the material used for the neckband and the width of the neckband. Stretchier materials and wider neckbands should use a smaller value for this option.
+Contrôle la longueur du tour de cou, en pourcentage de la circonférence de l'encolure. Les valeurs recommandées pour cette option varient en fonction du matériau utilisé pour le tour de cou et de la largeur du tour de cou. Les matériaux plus extensibles et les tours de cou plus larges devraient utiliser une valeur plus petite pour cette option.
 

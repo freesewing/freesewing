@@ -1,8 +1,6 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { Design } from '@freesewing/core'
 import { plugin } from '../src/index.mjs'
-
-const expect = chai.expect
 
 describe('Mirror Plugin Tests', () => {
   const part = {

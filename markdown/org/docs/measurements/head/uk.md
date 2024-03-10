@@ -4,4 +4,5 @@ title: Обхват голови
 
 **Обхват голови** вимірюється навколо найширшої частини голови.
 
-Для зняття обхвату голови, повністю охопіть найширшу частину голови, зазвичай ця лінія проходить через лоб.
+To measure your head circumference, wrap the tape measure around your head at the height of your forehead.
+<MeasieImage />

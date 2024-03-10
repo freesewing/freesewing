@@ -15,6 +15,9 @@ import { DesignInfo } from 'shared/components/designs/info.mjs'
 import { collection } from 'site/hooks/use-design.mjs'
 import { DesignMeasurements } from './design-measurements.mjs'
 import { DesignOptions } from './design-options.mjs'
+import { MeasieImage } from 'shared/components/measurements/image.mjs'
+// Dev/Org jargon
+import { Term, TermList } from 'site/components/jargon.mjs'
 
 export const components = (site = 'org', slug = []) => {
   const base = {
@@ -29,7 +32,9 @@ export const components = (site = 'org', slug = []) => {
     Tip: (props) => <Popout {...props} tip />,
     Tldr: (props) => <Popout {...props} tldr />,
     Warning: (props) => <Popout {...props} warning />,
+    em: (props) => <Term {...props} />,
   }
+
   const extra = {
     pre: (props) => <Highlight {...props} />,
     YouTube,
@@ -48,6 +53,12 @@ export const components = (site = 'org', slug = []) => {
 
   if (site === 'sde') return base
 
+  // TermList
+  if (site === 'dev' && Array.isArray(slug) && slug.join('/') === 'reference/terms')
+    extra.TermList = TermList
+  else if (site === 'org' && Array.isArray(slug) && slug.join('/') === 'about/terms')
+    extra.TermList = TermList
+
   if (site === 'dev')
     return {
       ...base,
@@ -57,6 +68,7 @@ export const components = (site = 'org', slug = []) => {
     }
 
   const specific = {}
+  if (typeof slug === 'string') slug = slug.split('/')
   if (
     site === 'org' &&
     slug &&
@@ -74,6 +86,23 @@ export const components = (site = 'org', slug = []) => {
     const url = slug.join('/')
     if (url.indexOf('about/notation') !== -1 || url.indexOf('sewing/on-the-fold') !== -1)
       specific.Legend = Legend
+  }
+
+  // MeasieImage
+  if (site === 'org' && slug) {
+    // Regular MDX - MeasieImage
+    if (slug.length === 2 && slug[0] === 'measurements') {
+      specific.MeasieImage = function MdxMeasieImage() {
+        return <MeasieImage m={slug[1]} />
+      }
+    }
+
+    // Dynamic MDX - MeasieImage
+    if (slug.length === 3 && slug[0] === 'docs' && slug[1] === 'measurements') {
+      specific.MeasieImage = function MdxMeasieImage() {
+        return <MeasieImage m={slug[2]} />
+      }
+    }
   }
 
   return {

@@ -1,14 +1,15 @@
 ---
-title: "Our beloved Skully now available in 3d"
-caption: "Doesn't it look sooo good"
+title: "Onze geliefde Skully nu beschikbaar in 3d"
+caption: "Ziet het er niet zooo lekker uit"
 date: 20231101
-intro: "A real-life skully, with hair and needle"
+intro: "Een levensechte skully, met haar en naald"
 designs:
   - "skully"
 maker: joost
+author: 132
 ---
 
-One day there was an unexpected delivery on my doorstep. I wasn't really certain what to make of it because I didn't recall ordering anything lately. Suffice to say I was not at all prepared for the awesomeness inside because when I opened the box I found this lovingly handcrafted real-life version of Skully, FreeSewing's beloved logo and mascot.
+Op een dag stond er een onverwachte levering op mijn stoep. Ik wist niet zo goed wat ik ervan moest denken, want ik kon me niet herinneren dat ik de laatste tijd iets besteld had. Het volstaat te zeggen dat ik helemaal niet voorbereid was op de geweldigheid binnenin, want toen ik de doos opende vond ik deze liefdevol met de hand gemaakte levensechte versie van Skully, het geliefde logo en de mascotte van FreeSewing.
 
-This is the wonderful work for Wouter who also made [the design](/designs/skully). So you can go and [make a Skully for yourself](/new/skully). You know you want one!
+Dit is het prachtige werk voor Wouter die ook [het ontwerp](/designs/skully)heeft gemaakt. Dus je kunt gaan [maak een Skully voor jezelf](/new/skully). Je weet dat je er een wilt!
 

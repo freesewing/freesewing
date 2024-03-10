@@ -1,8 +1,8 @@
 ---
-title: Duo color ties
+title: Cravates de couleur duo
 ---
 
-This option allows you to generate a pattern where the ties use two colors rather than one.
+Cette option te permet de générer un motif dont les attaches utilisent deux couleurs au lieu d'une.
 
-Enable this option if you want ties using two colors. Leave it disabled (the default) if you want ties using a single color.
+Active cette option si tu veux que les cravates utilisent deux couleurs. Laisse-le désactivé (par défaut) si tu veux que les liens utilisent une seule couleur.
 

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Imagínate a usted y a él, en los abrigos iguales."
 date: "2018-01-26"
 intro: "Esta es para las damas --- y no estoy (solamente) hablando de la imagen del ídolo Benedict Cumberbatch en la parte superior de este post."

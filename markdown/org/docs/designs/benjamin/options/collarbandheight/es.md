@@ -2,5 +2,5 @@
 title: "Anchura de la cinta"
 ---
 
-Controls the height of the collar band (the width, if you will).
+Controla la altura de la banda del cuello (la anchura, si quieres).
 

@@ -2,9 +2,9 @@
 title: Зображення
 ---
 
-Every measurements set has a **image** attribute that is optional.
+Кожен набір вимірювань має необов'язковий атрибут **зображення** .
 
-A picture says more than a 1000 words, so if you have multiple measurements sets, this can help you tell them apart.
+Зображення говорить більше, ніж 1000 слів, тому якщо у вас є кілька наборів вимірювань, це може допомогти вам розрізнити їх.
 
-So if you want, you can add an image to your measurements set. It's up to you.
+Тому, якщо ви хочете, ви можете додати зображення до свого набору вимірювань. Все залежить від тебе.
 

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Логотип freesewing"
 date: "2017-03-24"
 intro: "Я з гордістю оголошую про випуск ядра freesewing v1.0.0 та супровідної документації, яка детально описує проект freesewing."

@@ -1,5 +1,5 @@
 ---
-title: "Skirt length"
+title: "Largo de la falda"
 ---
 
-Controls the length of the skirt, as a percentage of the waist to upper leg measurement. A length of 100% should make a skirt just long enough to reach the upper leg.
+Controla la longitud de la falda, como porcentaje de la medida de la cintura a la parte superior de la pierna. Una longitud del 100% debe hacer que la falda sea lo suficientemente larga como para llegar a la parte superior de la pierna.

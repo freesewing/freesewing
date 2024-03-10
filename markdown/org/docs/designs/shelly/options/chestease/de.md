@@ -2,5 +2,5 @@
 title: "Brustumfangszugabe"
 ---
 
-Controls how wide the shirt will be at your chest. Suggested values range from -30% for a tight sensory compression shirt made out of swim fabric, to 0% for a more casually fitted swim shirt, to +30% or more for a loose-fitting shirt made of less stretchy knit fabrics.
+Legt fest, wie weit das Hemd an der Brust sein soll. Die empfohlenen Werte reichen von -30% für ein eng anliegendes Kompressionsshirt aus Schwimmstoff über 0% für ein locker sitzendes Badeshirt bis hin zu +30% oder mehr für ein locker sitzendes Shirt aus weniger dehnbarem Strickstoff.
 

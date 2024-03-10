@@ -1,5 +1,5 @@
 ---
-title: Your rights as a FreeSewing user
+title: Deine Rechte als FreeSewing-Nutzer
 ---
 
 Freesewing wendet die Datenschutzgrundverordnung (DSGVO) der Europäischen Union (EU) an.
@@ -20,7 +20,7 @@ Ob EU-Bürger/-in oder nicht, für uns sind dies deine Rechte:
 Du hast das Recht, über die Erhebung und Nutzung deiner personenbezogenen Daten informiert zu werden.
 
 <Tip>
-Read [our privacy notice](/docs/about/privacy/) to inform yourself about the collection and use of your personal data.
+Lies [unseren Datenschutzhinweis](/docs/about/privacy/), um dich über die Erhebung und Verwendung deiner persönlichen Daten zu informieren.
 </Tip>
 
 ## Das Recht auf Zugriff
@@ -29,7 +29,7 @@ Du hast das Recht, auf deine persönlichen Daten zuzugreifen.
 
 <Tip>
 
-Go to [/account](/account/) to access your personal data.
+Gehe auf [/account](/account/), um auf deine persönlichen Daten zuzugreifen.
 </Tip>
 
 ## Das Recht auf Berichtigung
@@ -38,7 +38,7 @@ Du hast das Recht, deine persönlichen Daten zu korrigieren oder zu vervollstän
 
 <Tip>
 
-Go to [/account](/account/) to rectify or complete your personal data.
+Gehe auf [/account](/account/), um deine persönlichen Daten zu berichtigen oder zu ergänzen.
 </Tip>
 
 ## Das Recht auf Löschung
@@ -46,7 +46,7 @@ Go to [/account](/account/) to rectify or complete your personal data.
 Du hast das Recht, deine persönlichen Daten löschen zu lassen.
 
 <Tip>
-Go to [/account/remove](/account/remove/) to remove all your data.
+Gehe zu [/account/remove](/account/remove/), um alle deine Daten zu entfernen.
 </Tip>
 
 ## Das Recht, die Verarbeitung einzuschränken
@@ -54,12 +54,12 @@ Go to [/account/remove](/account/remove/) to remove all your data.
 Du hast das Recht, eine Einschränkung der Verarbeitung deiner persönlichen Daten zu beantragen.
 
 <Tip>
-Go to [/account/restrict](/account/restrict/) to request FreeSewing restricts processing of your personal data.
+Gehe zu [/account/restrict](/account/restrict/), um zu beantragen, dass FreeSewing die Verarbeitung deiner personenbezogenen Daten einschränkt.
 </Tip>
 
 <Warning>
 
-Your request will be granted immediately, and can only be undone by [contacting support](/support/) to lift the restriction.
+Deinem Antrag wird sofort stattgegeben und kann nur rückgängig gemacht werden, indem du [den Support](/support/) kontaktierst, um die Einschränkung aufzuheben.
 
 </Warning>
 
@@ -68,7 +68,7 @@ Your request will be granted immediately, and can only be undone by [contacting 
 Du hast das Recht, deine persönlichen Daten zu erhalten und weiterzuverarbeiten, sei es für eigene Zwecke oder über verschiedene Dienstleister hinweg.
 
 <Tip>
-Go to [/account/actions/export](/account/export/) to export your personal data.
+Gehe zu [/account/actions/export](/account/export/), um deine persönlichen Daten zu exportieren.
 </Tip>
 
 ## Das Recht auf Widerspruch
@@ -76,12 +76,12 @@ Go to [/account/actions/export](/account/export/) to export your personal data.
 Du hast das Recht, der Verwendung deiner persönlichen Daten für wissenschaftliche Forschung zu widersprechen.
 
 <Tip>
-Go to [/account/consent](/account/consent/) and unselect **Share anonymized measurements as open data** to do so.
+Gehe zu [/Konto/Zustimmung](/Konto/Zustimmung/) und entferne die Markierung **Anonymisierte Messungen als offene Daten teilen**, um dies zu tun.
 </Tip>
 
 <Note>
 
-The right to object is broader, but this is how it applies to FreeSewing.
+Das Widerspruchsrecht ist weiter gefasst, aber so gilt es für FreeSewing.
 
 </Note>
 

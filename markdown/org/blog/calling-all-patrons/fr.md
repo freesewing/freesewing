@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Nous construisons un cercle de soutiens fidèles pour assurer un avenir durable à freesewing.org, à notre code, à nos modèles et à notre communauté."
 date: "2017-12-10"
 intro: "Appel aux mécènes ; rejoignez notre socle de soutiens fidèles."

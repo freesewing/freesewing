@@ -16,7 +16,7 @@ En raison des nombreux styles différents de Sandy, il est difficile de dire pr�
 
 ##### Tissu principal
 
-La longueur dont tu as besoin dépend de la longueur et de l'ampleur de ta jupe circulaire. Une jupe de longueur moyenne ou plus petite devrait suffire avec 2 à 2,5 mètres, alors qu'une jupe de longueur normale nécessitera plus de longueur. En cas de doute, achète un mètre de plus que ce que tu penses. N'hésite pas non plus à découper si ton tissu n'est pas assez large ou long, il vaut mieux avoir une couture supplémentaire que de ne pas utiliser le tissu que tu aimes.
+The length you require is dependant on how long and how full your circle skirt is, mid length and smaller should be sufficient with 2 - 2.5 metres whereas a floor length will require more. En cas de doute, achète un mètre de plus que ce que tu penses. N'hésite pas non plus à découper si ton tissu n'est pas assez large ou long, il vaut mieux avoir une couture supplémentaire que de ne pas utiliser le tissu que tu aimes.
 
 <Note>
 
@@ -40,7 +40,7 @@ Pour donner de l'ampleur à l'ourlet et lui conserver sa forme, tu peux ajouter 
 
 ##### Fermetures
 
-Si tu ne fais pas de Sandy élastique, tu auras besoin d'un type de fermeture. Il peut s'agir d'une simple fermeture éclair insérée dans la ceinture et la couture ou de boutons, de crochets ou de boutons-pression avec une ceinture qui se chevauche et une ouverture, une patte de boutonnage ou une fermeture éclair en haut de la couture.
+Si tu ne fais pas de Sandy élastique, tu auras besoin d'un type de fermeture. This can be just a zip that is inserted in to the waistband and seam or it can be buttons, dress hooks, or snaps with an overlapping waistband and an opening, placket or zipper at the top of the seam.
 
 ##### Élastique
 

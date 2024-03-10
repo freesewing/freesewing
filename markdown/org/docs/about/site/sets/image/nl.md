@@ -2,9 +2,9 @@
 title: Afbeelding
 ---
 
-Every measurements set has a **image** attribute that is optional.
+Elke meetset heeft een **image** attribuut dat optioneel is.
 
-A picture says more than a 1000 words, so if you have multiple measurements sets, this can help you tell them apart.
+Een foto zegt meer dan 1000 woorden, dus als je meerdere meetsets hebt, kan dit je helpen om ze uit elkaar te houden.
 
-So if you want, you can add an image to your measurements set. It's up to you.
+Dus als je wilt, kun je een afbeelding toevoegen aan je meetreeks. De keuze is aan jou.
 

@@ -2,9 +2,9 @@
 title: Gebruikersnaam
 ---
 
-Your username is special name that uniquely identifies you.
+Je gebruikersnaam is een speciale naam die jou uniek identificeert.
 
-You can choose your own username, so anything goes.
+Je kunt je eigen gebruikersnaam kiezen, dus alles kan.
 
-To avoid consusion, usernames must be unique when lowercased. In other words, the username `Joost` will not be available if a user `joost` exists.
+To avoid confusion, usernames must be unique when lowercased. Met andere woorden, de gebruikersnaam `Joost` zal niet beschikbaar zijn als er een gebruiker `joost` bestaat.
 

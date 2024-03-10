@@ -1,6 +1,6 @@
 ---
-title: "Gozer the ghost: Cutting Instructions"
+title: "Привид Гозера: Інструкція з нарізки"
 ---
 
-- **Color 1; Traditionally white**
+- **Колір 1; Традиційно білий**
   - Зріз **1 Корпус**

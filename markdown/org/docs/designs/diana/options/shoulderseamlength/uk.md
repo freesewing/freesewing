@@ -4,7 +4,7 @@ title: "Довжина плечового шва"
 
 ![Варіант довжини плечового шва на Діані](./shoulderseamlength.svg)
 
-Цей параметр визначає, наскільки широким буде виріз горловини, шляхом регулювання довжини плечового шва.
+This option determines how wide the neck opening is, by controlling the length of the shoulder seam.
 
 
 

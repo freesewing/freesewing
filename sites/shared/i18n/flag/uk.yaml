@@ -1,19 +1,19 @@
-apply: Apply
-decrease: Decrease
-disable: Disable
-dismiss: Dismiss
-expandIsOff.t: This design saves space (and trees) because expand is disabled
-expandIsOff.d: "Because the **expand** core setting is currently disabled, some parts are not fully drawn or not shown at all. Typically, these are simple rectangles that only take up space, or things that can be cut on the fold. \n\nTo expand all pattern parts to their full size, enable the expand setting."
-expandIsOn.t: This design can save space (and trees)
-expandIsOn.d: "Because the **expand** core setting is currently enabled, all parts are fully drawn. You can display this design in a more compact way by disabling the **expand** setting. \n\nDoing so will mean that some parts are not fully drawn or not shown at all. Typically, these are simple rectangles that only take up space, or things that can be cut on the fold."
-enable: Enable
-flagMenu.t: Messages from the designer
-flagMenuOne.d: The designer of this pattern has flagged something about your current draft that deserves your attention.
-flagMenuMany.d: The designer of this pattern has flagged some things about your current draft that deserve your attention.
+apply: Подати заявку
+decrease: Зменшення
+disable: Вимкнути
+dismiss: Звільнити.
+expandIsOff.t: Цей дизайн економить місце (і дерева), оскільки розширення вимкнено
+expandIsOff.d: "Через те, що параметр **розгорнути** ядра наразі вимкнено, деякі частини не намальовані повністю або не показані взагалі. Зазвичай це прості прямокутники, які лише займають місце, або деталі, які можна розрізати на згині. \n\nЩоб розгорнути всі частини деталі до повного розміру, увімкніть цей параметр."
+expandIsOn.t: Така конструкція може заощадити простір (і дерева)
+expandIsOn.d: "Оскільки наразі увімкнено параметр основи **розгорнути**, усі деталі намальовано повністю. Ви можете відобразити цей дизайн компактніше, вимкнувши параметр **розгорнути**. \n\nЦе означатиме, що деякі частини будуть намальовані не повністю або взагалі не будуть показані. Зазвичай це прості прямокутники, які лише займають місце, або деталі, які можна розрізати на згині."
+enable: Увімкнути
+flagMenu.t: Повідомлення від дизайнера
+flagMenuOne.d: Дизайнер цього шаблону помітив щось у вашому поточному чернетці, що заслуговує на вашу увагу.
+flagMenuMany.d: Дизайнер цього шаблону відзначив деякі моменти у вашому поточному проекті, які заслуговують на вашу увагу.
 hide: Приховати
-increase: Increase
+increase: Збільшення
 show: Показати
-saIncluded: (This includes seam allowance)
-saExcluded: (This does not include seam allowance)
-saUnused: (This part does not require any seam allowance)
-partHiddenByExpand: This part is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.
+saIncluded: (Це включає припуски на шви)
+saExcluded: (Сюди не входять припуски на шви)
+saUnused: (Ця частина не потребує припусків на шви)
+partHiddenByExpand: Ця частина не показана, тому що параметр **розгорнути** основи наразі вимкнено. Увімкніть його, щоб показати цю частину деталі.

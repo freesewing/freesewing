@@ -1,6 +1,6 @@
 ---
-title: "Gusset position"
+title: "Position du gousset"
 ---
 
-This option allows you to shift the gusset forward or backward.
+Cette option te permet de décaler le gousset vers l'avant ou vers l'arrière.
 

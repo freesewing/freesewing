@@ -1,7 +1,7 @@
 ---
-title: "Sleeve ribbing length"
+title: "Länge der Ärmelrippung"
 ---
 
-Controls how long the ribbing around the sleeves is, as a percentage of the sleeve circumference. Setting this to a smaller value will make the cuff tighter and hold onto the arm better, while a larger value will give more room. If making sleeves with thumb holes, it is recommended to set this value a little larger or to use a hem instead to avoid squeezing the hands.
+Legt fest, wie lang die Rippen an den Ärmeln sind, und zwar in Prozent des Ärmelumfangs. Wenn du hier einen kleineren Wert einstellst, wird die Manschette enger und hält besser am Arm, während ein größerer Wert mehr Spielraum bietet. Wenn du Ärmel mit Daumenlöchern anfertigst, empfiehlt es sich, diesen Wert etwas größer zu wählen oder stattdessen einen Saum zu verwenden, damit die Hände nicht gequetscht werden.
 
-Note: This option is only available if the 'sleeve ribbing' option is set to 'ribbing.'
+Hinweis: Diese Option ist nur verfügbar, wenn die Option "Ärmelrippung" auf "Rippung" eingestellt ist.

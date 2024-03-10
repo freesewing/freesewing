@@ -7,6 +7,6 @@ The `utils.rad2dag()` function returns the radians you pass to it as degrees.
 ## Signature 
 
 ```js
-float rad2deg(float radians)
+float utils.rad2deg(float radians)
 ```
 

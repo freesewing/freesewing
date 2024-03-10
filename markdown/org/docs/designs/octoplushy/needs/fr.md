@@ -15,9 +15,9 @@ Pour fabriquer Octoplushy, tu auras besoin des éléments suivants :
 
 <Note>
 
-This list is based on a default Octoplushy and you may need less or more fabric dependant on the [size you are making Octoplushy](/docs/designs/octoplushy/options/size/). 
+Cette liste est basée sur une Octoplushy par défaut et tu peux avoir besoin de moins ou de plus de tissu en fonction de la [taille à laquelle tu fais l'Octoplushy](/docs/designs/octoplushy/options/size/). 
 
-The amount of fabric required is also dependant on the [type of Octoplushy you are making](/docs/designs/octoplushy/options/type/).
+La quantité de tissu nécessaire dépend également du [type d'Octoplushy que tu fais] (/docs/designs/octoplushy/options/type/).
 - La version pieuvre nécessite environ 50 % de tissu en plus que la version octoplushy.
 - La version calmar nécessite environ 75 % de tissu en plus que la version octoplushy.
 

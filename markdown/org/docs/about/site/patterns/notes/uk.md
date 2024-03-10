@@ -2,10 +2,10 @@
 title: Нотатки
 ---
 
-Every pattern has a **notes** attribute that is optional.
+Кожен шаблон має необов'язковий атрибут **notes** .
 
-The notes field allows you to add your notes to a pattern. This field supports markdown, so you can use rich formatting, or even embed images.
+Поле "Примітки" дозволяє додавати свої примітки до шаблону. Це поле підтримує розмітку, тому ви можете використовувати розширене форматування або навіть вставляти зображення.
 
 <Note>
-If you make your pattern public, your notes will also be public.
+Якщо ви зробите свій шаблон публічним, ваші нотатки також будуть публічними.
 </Note>

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Nahaufnahme eines Löwenzahns vor rosa Hintergrund"
 date: "2019-12-10"
 intro: "4109 Gründe, sich über 2019 zu freuen"

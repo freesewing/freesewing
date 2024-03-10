@@ -1,4 +1,3 @@
-![FreeSewing](https://static.freesewing.org/banner.png)
 <p align='center'><a
   href="https://www.npmjs.com/package/@freesewing/models"
   title="@freesewing/models on NPM"
@@ -22,7 +21,7 @@
   </a><a
   href="#contributors-"
   title="All Contributors"
-  ><img src="https://img.shields.io/badge/all_contributors-117-pink.svg"
+  ><img src="https://img.shields.io/badge/all_contributors-124-pink.svg"
   alt="All Contributors"/>
   </a></p><p align='center'><a
   href="https://twitter.com/freesewing_org"
@@ -99,6 +98,15 @@ The digits in the model refer to the neck circumference in cm.
 - womenswear: An object with the womenswear models
 
 
+# FreeSewing
+
+> [!TIP]
+>#### Support FreeSewing: Become a patron, or make a one-time donation 🥰
+>
+> FreeSewing is an open source project maintained by Joost De Cock and financially supported by the FreeSewing patrons.
+>
+> If you feel FreeSewing is worthwhile, and you can spend a few coins without
+hardship, then you should [join us and become a patron](https://freesewing.org/community/join).
 
 ## What am I looking at? 🤔
 
@@ -112,6 +120,7 @@ If you're not entirely sure what to do or how to start, type this command:
 npm run tips
 ```
 
+> [!NOTE]
 > If you don't want to set up a dev environment, you can run it in your browser:
 > 
 > [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/freesewing/freesewing)
@@ -136,7 +145,7 @@ functionality of the platform.
 If you have NodeJS installed, you can try it right now by running:
 
 ```bash
-npx create-freesewing-pattern
+npx @freesewing/new-design
 ```
 
 Getting started guides are available for:
@@ -147,12 +156,22 @@ Getting started guides are available for:
 The [pattern design tutorial](https://freesewing.dev/tutorials/pattern-design/) will
 show you how to create your first parametric design.
 
-## Support FreeSewing: Become a patron 🥰
+## Getting started ⚡ 
 
-FreeSewing is an open source project maintained by Joost De Cock and financially supported by the FreeSewing patrons.
+To get started with FreeSewing, you can spin up our development environment with:
 
-If you feel FreeSewing is worthwhile, and you can spend a few coind without
-hardship, then you should [join us and become a patron](https://freesewing.org/community/join).
+```bash
+npx @freesewing/new-design
+```
+
+To work with FreeSewing's monorepo, you'll need [NodeJS v18](https://nodejs.org), [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.  
+Once you have those, clone (or fork) this repo and run `yarn kickstart`:
+
+```bash
+git clone git@github.com:freesewing/freesewing.git
+cd freesewing
+yarn kickstart
+```
 
 ## Links 👩‍💻
 

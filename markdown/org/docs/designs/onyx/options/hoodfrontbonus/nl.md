@@ -1,5 +1,5 @@
 ---
-title: "Hoodfrontbonus"
+title: "Kapfrontbonus"
 ---
 
-Controls how far forward the hood comes over the forehead.
+Regelt hoe ver de kap over het voorhoofd naar voren komt.

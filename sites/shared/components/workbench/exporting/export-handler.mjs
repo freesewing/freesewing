@@ -13,12 +13,15 @@ import {
   printSettingsPath,
 } from 'shared/components/workbench/views/print/config.mjs'
 import get from 'lodash.get'
+import mustache from 'mustache'
+import he from 'he'
+import yaml from 'js-yaml'
 
 export const ns = ['cut', 'plugin', 'common']
 export const exportTypes = {
   exportForPrinting: ['a4', 'a3', 'a2', 'a1', 'a0', 'letter', 'legal', 'tabloid'],
   exportForEditing: ['svg', 'pdf'],
-  exportAsData: ['json', 'yaml', 'github gist'],
+  exportAsData: ['json', 'yaml'],
 }
 
 /**
@@ -35,7 +38,7 @@ const themedPattern = (Design, settings, overwrite, format, t) => {
 
   // add the theme and translation to the pattern
   pattern.use(themePlugin, { stripped: format !== 'svg', skipGrid: ['pages'] })
-  pattern.use(pluginI18n, { t })
+  pattern.use(pluginI18n, (key) => t(key))
 
   return pattern
 }
@@ -104,6 +107,7 @@ export const handleExport = async ({
   t,
   startLoading,
   stopLoading,
+  stopLoadingFail,
   onComplete,
   onError,
   ui,
@@ -113,6 +117,12 @@ export const handleExport = async ({
 
   // get a worker going
   const worker = new Worker(new URL('./export-worker.js', import.meta.url), { type: 'module' })
+
+  /*
+   * Guard against settings being false, which happens for
+   * fully default designs that do not require measurements
+   */
+  if (settings === false) settings = {}
 
   // listen for the worker's message back
   worker.addEventListener('message', (e) => {
@@ -125,15 +135,16 @@ export const handleExport = async ({
       }
       // do additional business
       onComplete && onComplete(e)
+      // stop the loader
+      if (typeof stopLoading === 'function') stopLoading()
     }
     // on error
     else {
       console.log(e.data.error)
       onError && onError(e)
+      // stop the loader
+      if (typeof stopLoadingFail === 'function') stopLoadingFail()
     }
-
-    // stop the loader
-    if (typeof stopLoading === 'function') stopLoading()
   })
 
   // pdf settings
@@ -167,36 +178,83 @@ export const handleExport = async ({
             setPatternSize: true,
           })
         )
+      }
 
-        // add the strings that are used on the cover page
-        workerArgs.strings = {
-          design: capitalize(design),
-          tagline: t('common:sloganCome') + '. ' + t('common:sloganStay'),
-          url: window.location.href,
-          cuttingLayout: t('cut:cuttingLayout'),
-        }
+      // add the strings that are used on the cover page
+      workerArgs.strings = {
+        design: capitalize(design),
+        tagline: t('common:slogan1') + '. ' + t('common:slogan2'),
+        url: window.location.href,
+        cuttingLayout: t('cut:cuttingLayout'),
+      }
+
+      // Initialize the pattern stores
+      pattern.getConfig()
+
+      // Save the measurement set name to pattern stores
+      if (settings?.metadata?.setName) {
+        pattern.store.set('data.setName', settings.metadata.setName)
+        for (const store of pattern.setStores) store.set('data.setName', settings.metadata.setName)
       }
 
       // draft and render the pattern
       pattern.draft()
       workerArgs.svg = pattern.render()
 
+      // Get coversheet info: setName, settings YAML, version, notes, warnings
+      const store = pattern.setStores[pattern.activeSet]
+      workerArgs.strings.setName = settings?.metadata?.setName
+        ? settings.metadata.setName
+        : 'ephemeral'
+      workerArgs.strings.yaml = yaml.dump(settings)
+      workerArgs.strings.version = store?.data?.version ? store.data.version : ''
+      const notes = store?.plugins?.['plugin-annotations']?.flags?.note
+        ? store?.plugins?.['plugin-annotations']?.flags?.note
+        : []
+      const warns = store?.plugins?.['plugin-annotations']?.flags?.warn
+        ? store?.plugins?.['plugin-annotations']?.flags?.warn
+        : []
+      workerArgs.strings.notes = flagsToString(notes, mustache, t)
+      workerArgs.strings.warns = flagsToString(warns, mustache, t)
+
       if (format === 'pdf') pageSettings.size = [pattern.width, pattern.height]
 
       // add the svg and pages data to the worker args
       workerArgs.pages = pattern.setStores[pattern.activeSet].get('pages')
 
-      // add cutting layouts if requested
-      if (!exportTypes.exportForEditing.includes(format) && pageSettings.cutlist) {
+      // add cutting layouts if requested (commented out for now)
+      if (
+        !exportTypes.exportForEditing.includes(format) &&
+        pageSettings.cutlist === 'SHUT UP ESLINT'
+      ) {
         workerArgs.cutLayouts = generateCutLayouts(pattern, Design, settings, format, t, ui)
       }
     } catch (err) {
       console.log(err)
-      if (typeof stopLoading === 'function') stopLoading()
       onError && onError(err)
     }
   }
 
   // post a message to the worker with all needed data
   worker.postMessage(workerArgs)
+}
+
+/**
+ * Convert pattern flags to a formatted string for printing
+ */
+const flagsToString = (flags, mustache, t) => {
+  let first = true
+  let string = ''
+  for (const flag of Object.values(flags)) {
+    let title = flag.replace ? mustache.render(t(flag.title), flag.replace) : t(flag.title)
+    title = he.decode(title)
+    let desc = flag.replace ? mustache.render(t(flag.desc), flag.replace) : t(flag.desc)
+    desc = desc.replaceAll('\n\n', '\n')
+    desc = desc.replaceAll('\n', ' ')
+    desc = he.decode(desc)
+    if (!first) string += '\n'
+    first = false
+    string += '- ' + title + ': ' + desc
+  }
+  return string
 }

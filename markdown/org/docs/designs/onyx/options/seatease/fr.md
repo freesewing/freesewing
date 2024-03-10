@@ -2,13 +2,13 @@
 title: "Aisance d'assise"
 ---
 
-Controls how wide the garment will be at your seat.
+Contrôle la largeur du vêtement au niveau de ton siège.
 
-Whatever value you provide here will simply be added to your seat circumference measurement when drafting the garment.
+Quelle que soit la valeur que tu indiques ici, elle sera simplement ajoutée à la mesure de la circonférence de ton siège lors de la rédaction du vêtement.
 
 > ##### Cette option permet également des valeurs négatives.
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Tu devrais utiliser l'aisance négative si tu utilises un matériau extensible que tu veux bien ajuster. Les combinaisons et les justaucorps ont généralement une aisance négative, tandis que les autres vêtements ont généralement une aisance positive.
 
 
 

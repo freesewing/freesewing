@@ -1,6 +1,6 @@
 ---
-title: "Straight sides"
+title: "Gerade Seiten"
 ---
 
-Forms a tubular shirt, which is a shirt where the hips and chest are the same width and connected by a straight seam. Set this to true for front and back parts that are perfectly rectangular below the armholes. This setting overrides any values set for the `hips ease` or `side shape` options. For most body types, leaving this option on will result in a reasonable fit that is looser around the belly and tighter around the chest, and generally produces a more fabric-efficient pattern.
+Formt ein röhrenförmiges Hemd, also ein Hemd, bei dem die Hüfte und die Brust gleich breit sind und durch eine gerade Naht verbunden sind. Setze dies für Vorder- und Rückenteile, die unterhalb der Armausschnitte perfekt rechteckig sind, auf wahr. Diese Einstellung hat Vorrang vor allen Werten, die für die Optionen `hips ease` oder `side shape` festgelegt wurden. Bei den meisten Körpertypen führt das Aktivieren dieser Option zu einer vernünftigen Passform, die um den Bauch herum lockerer und um die Brust herum enger ist und im Allgemeinen ein stoffsparenderes Muster ergibt.
 

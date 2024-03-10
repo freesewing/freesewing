@@ -10,10 +10,11 @@ function draftNeckband({
   part,
   store,
   complete,
+  expand,
   sa,
   macro,
 }) {
-  if (options.neckStyle !== 'neckband') return part.hide()
+  if (!expand || options.neckStyle !== 'neckband') return part.hide()
 
   const neckbandLength =
     (store.get('neckLengthFront') + store.get('neckLengthBack') + store.get('neckLengthSide')) *
@@ -72,7 +73,7 @@ function draftNeckband({
   store.cutlist.addCut({ cut: 1, from: 'fabric' })
 
   points.title = new Point(neckbandLength / 4, neckbandWidth / 2)
-  macro('title', { at: points.title, nr: 4, title: 'neckband' })
+  macro('title', { at: points.title, nr: 4, title: 'onyx:neckband' })
 
   if (sa) {
     paths.sa = new Path()
@@ -92,24 +93,4 @@ export const neckband = {
   name: 'onyx.neckband',
   draft: draftNeckband,
   after: [raglanSleeve],
-  options: {
-    // How long the neckband should be, as a percentage of the length of the neck hole.
-    neckbandLength: {
-      pct: 80,
-      min: 50,
-      max: 100,
-      menu: (settings, mergedOptions) =>
-        mergedOptions.neckStyle == 'neckband' ? 'construction' : false,
-    },
-    // How wide the neckband should be, as a percentage of the neckband length.
-    neckbandWidth: {
-      pct: 20,
-      min: 0,
-      max: 100,
-      snap: { metric: 5, imperial: 6.35 },
-      toAbs: (pct, settings, mergedOptions) => mergedOptions.neckbandWidth * 200, // Valid range is from 0 to 200mm.
-      menu: (settings, mergedOptions) =>
-        mergedOptions.neckStyle == 'neckband' ? 'construction' : false,
-    },
-  },
 }

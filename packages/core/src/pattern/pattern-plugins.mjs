@@ -171,7 +171,7 @@ PatternPlugins.prototype.__macro = function (key, method) {
  * @param {object} plugin - An object with `plugin` and `condition` keys
  * @return {Pattern} this - The Pattern instance
  */
-PatternPlugins.prototype.__useIf = function (plugin, settings = [{}]) {
+PatternPlugins.prototype.__useIf = function (plugin, data, settings = [{}]) {
   let load = 0
   for (const set of settings) {
     if (plugin.condition(set)) load++
@@ -180,7 +180,7 @@ PatternPlugins.prototype.__useIf = function (plugin, settings = [{}]) {
     this.store.log.info(
       `Condition met: Loaded plugin \`${plugin.plugin.name}:${plugin.plugin.version}\``
     )
-    this.__loadPlugin(plugin.plugin, plugin.data)
+    this.__loadPlugin(plugin.plugin, data)
   } else {
     this.store.log.info(
       `Condition not met: Skipped loading plugin \`${plugin.plugin.name}:${plugin.plugin.version}\``

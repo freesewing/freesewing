@@ -31,7 +31,7 @@ Ces instructions supposent que vous avez marqué vos lignes de couture. Ils peuv
 - Ouvrez les coutures au fer. Vous avez fait besoin d'utiliser un jambon tailleur pour cela, si vous n'en avez pas, vous pouvez utiliser des flanques ou des serviettes à la place.
 - (Facultatif) _Piquer au bord_ des deux côtés de la couture, en veillant à attraper les surplus de couture.
 - Répétez l'opération jusqu'à ce que vous ayez deux moitiés. Si la moitié du nombre de pièces de couronne est un nombre impair, vous devrez coudre une pièce à chaque moitié. Par exemple, si vous avez 6 pièces de couronne, vous fabriquez deux moitiés de 3 pièces cousues ensemble à deux pièces.
-- Endroit contre endroit, en faisant correspondre les lignes de couture et les pointes, coudre les deux moitiés ensemble. Il peut être plus facile de broder le sommet ensemble en raison de la masse ou de la précision. Cette couture sera désignée comme la « couture de couronne centrale » qui va de l'avant.
+- With right sides together, matching seam lines and peaks, sew the two halves together. Il peut être plus facile de broder le sommet ensemble en raison de la masse ou de la précision. This seam will be referred to as the "centre crown seam" going forward.
 - (Facultatif) _Piquer au bord_ des deux côtés de la couture de la couronne centrale, en veillant à attraper les surplus de couture.
 
 <Note>
@@ -44,7 +44,7 @@ Selon votre marge de couture, vous pourriez vouloir couper les coutures au fur e
 
 #### Flaps des oreilles avec des cravates
 
-- Coupez deux longueurs de ruban de 30 cm (12") à 40 cm (16"). Ils seront désignés comme des liens à venir.
+- Coupez deux longueurs de ruban de 30 cm (12") à 40 cm (16"). These will be referred to as ties going forward.
 - _Collez_ une cravate sur le côté droit d'un rabat d'oreille (celui qui est interfacé si vous l'utilisez). Répéter pour une autre cravate.
 - Endroit contre endroit, en faisant coïncider les lignes de couture, coudre un rabat d'oreille à un rabat d'oreille non attaché.
 - Couper et ajuster le surplus de couture.
@@ -62,7 +62,7 @@ If you are uncertain about the length you want for you ties take 1 metre (39") o
 <Note>
 
 Les longueurs ci-dessus sont des recommandations donc n'hésitez pas à aller aussi longtemps ou aussi court que vous le souhaitez avec les attaches.  
-If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/designs/holmes/cutting/) for more info.
+Si tu préfères, tu peux fabriquer tes cravates personnalisées avec du tissu, [voir Holmes cutting](/docs/designs/holmes/cutting/) pour plus d'infos.
 
 </Note>
 
@@ -74,7 +74,7 @@ If you prefer you can make your custom ties with fabric, [see Holmes cutting](/d
 - Retourner et presser.
 - (Facultatif) _Surpiquer_ ou _piquer en biais_ le bord plié.
 - _Collez_ les bords bruts ensemble.
-- Cousez la boutonnière selon votre méthode préférée.
+- Sew the buttonhole in your preferred method.
 - Répéter l'opération pour l'autre rabat de l'oreille.
 
 <Warning>
@@ -98,7 +98,7 @@ There are two methods for constructing the bill. This is due to the different ty
 #### The Bill Method 1
 
 - Placer l'insert de visière sur une pièce de la visière à l'intérieur des lignes de couture.
-- Fixer temporairement l'insert de visière à la visière à l'aide de _points de fixation_ temporaires. Il s'agira dorénavant de la "visière".
+- Fixer temporairement l'insert de visière à la visière à l'aide de _points de fixation_ temporaires. This will be referred to as "faced visor" going forward.
 - _Batir_ le long de la ligne de couture de la courbe intérieure de la visière, assurez-vous de ne pas prendre l'insert de la visière.
 - Bons côtés ensemble, couture et centres alignés, coudre la visière a une autre pièce de visière le long de la courbe extérieur près de l'insert de la visière, en s'assurant de ne pas piquer dans l'insert.
 - Fendre et découper la courbe extérieure en s'assurant de ne pas couper la couture. (Vous pourrez avoir envie de retourner et vérifier la forme avant cette étape)
@@ -120,10 +120,10 @@ If preferred you can temporarily attach the bill insert another way that does no
 
 #### The Bill Method 2
 
-- Endroit contre endroit, en faisant coïncider les lignes de couture et les centres avant, coudre les deux pièces de la visière ensemble.
+- With rights sides together, matching seam lines and centre fronts, sew the outer curve of two visor pieces together.
 - Fendre et découper(si besoin) la courbe extérieure en s'assurant de ne pas couper la couture. (Vous pourrez avoir envie de retourner et vérifier la forme avant cette étape)
 - Retourner et presser.
-- Insérer l'insert de visière pour coudre la visière fermement de sorte qu'il n'y ait pas de trou sur la courbe extérieure et que les marges de coutures sont sur le côté de l'insert de visière. Ce sera la partie haute de la visière.
+- Insert visor insert in to sewn visor tightly so there is no gap on the outer curve and the seam allowances are all one on side of the visor insert. Ce sera la partie haute de la visière.
 - Épingler la courbe intérieure ensemble en s'assurant que le bord extérieur soit bien tiré au-dessus de l'insert de visière.
 - _Collez_ aussi près que possible de la courbe intérieure de l'insert de visière, en vous assurant de bien tirer le tissu sur le bord extérieur pendant que vous cousez.
 - Répéter ceci pour les pièces de visière restantes.
@@ -144,7 +144,7 @@ Une fois de plus, il y a deux méthodes pour l'assemblage et la doublure finales
 - Retirez tous les points de rembourrage et de bâti.
 - Repassez les surplus de couture vers l'intérieur, en veillant à ce que la couture ne soit pas visible sur l'extérieur.
 - (Facultatif) _Cousez _sans serrer les coutures à l'intérieur de la couronne en veillant à ce que les coutures ne soient pas visibles à l'extérieur.
-- Construire la doublure de la même façon que la couronne en omettant les _piqures d'aiguille_.
+- Construct lining the same way as the crown omitting _edgestitching_.
 - Pliez et repassez sous le surplus de couture du bas de la doublure. Il se peut que vous ayez besoin d'appuyer sous plus pour éviter que la doublure ne s'affiche. Il se peut également que vous deviez _bâtir_ la marge de couture vers le bas.
 - En faisant correspondre les coutures centrales de la couronne et les coutures des panneaux, épinglez la doublure dans le chapeau, envers contre envers. Placer le bord plié le long des lignes de couture.
 - _Effectuez un point de chainette_ ou _un point de maille_ sur la doublure sur le surplus de couture du chapeau.
@@ -160,8 +160,8 @@ Une fois de plus, il y a deux méthodes pour l'assemblage et la doublure finales
 - Bâtissez à la main la visière sur la couronne en faisant coïncider les lignes de bâti de la visière avec les lignes de couture de la couronne. Il est plus facile de _bâtir_ le centre vers le bas d'abord, puis de travailler du centre vers l'extérieur.
 - (Facultatif) Collez à la machine la visière à la couronne le long des lignes de couture.
 - Répétez l'opération pour le reste de la visière, de l'autre côté de la couture centrale de la couronne.
-- Réalisez la doublure de la même manière que la couronne en omettant les _piqûres d'arrêt_ et en laissant un espace dans la couture centrale de la doublure suffisamment grand pour pouvoir retourner le chapeau.
-- Endroit contre endroit, faire correspondre les coutures de la couronne centrale, les coutures des panneaux et les lignes de couture. Coudre la doublure à la couronne le long des lignes de couture. Si vous êtes volumineux, vous voudrez peut-être couper les coutures de doublure ou les deux coutures.
+- Construct lining the same way as the crown omitting _edgestitching_ and leaving a gap in the centre lining seam large enough to turn the hat.
+- Endroit contre endroit, faire correspondre les coutures de la couronne centrale, les coutures des panneaux et les lignes de couture. This seam will be referred to as the "centre crown seam" going forward. Si vous êtes volumineux, vous voudrez peut-être couper les coutures de doublure ou les deux coutures.
 - Retourner le chapeau, en pressant la doublure à l'intérieur.
 - (Facultatif/Alternatif) _Doublure en surpiqûre_.
 - Fermeture de la doublure fermée par une surpiqûre.
@@ -226,7 +226,7 @@ Pour déterminer la façon dont vous voulez plier les cravates, il vous sera peu
 <Note>
 
 Bien que facultatif, il se peut que vous trouviez un bouton qui manque dans le chapeau pour finir l'apparence. Par conséquent, si vous n'êtes pas sûr de l'apparence à ce stade, créez un bouton rapide et placez-le temporairement pour voir si c'est ce qui manque. If it is attach it permanently.
-Bien qu'un bouton couvert soit recommandé, vous pouvez utiliser n'importe quel bouton que vous désirez, n'hésitez pas à expérimenter !
+Whilst a covered button is recommended you can use whatever button you desire, feel free to experiment!
 
 </Note>
 

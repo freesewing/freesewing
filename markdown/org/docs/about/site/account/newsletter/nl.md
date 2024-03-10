@@ -2,4 +2,4 @@
 title: Nieuwsbrief
 ---
 
-This allows you to subscribe to the FreeSewing newsletter. Or not.
+Hiermee kun je je aanmelden voor de FreeSewing nieuwsbrief. Of niet.

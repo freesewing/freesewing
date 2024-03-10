@@ -1,6 +1,6 @@
 ---
-title: "Side shape"
+title: "Forma lateral"
 ---
 
-Controls how the side seam is curved. Zero creates a straight line from the armpit to the side of the hips. Positive values add material and give the side seam a rounded/convex shape, while negative values remove material and give the side seam an hourglass/concave shape. This option will have no effect if the 'straight sides' option is enabled.
+Controla cómo se curva la costura lateral. Cero crea una línea recta desde la axila hasta el lado de las caderas. Los valores positivos añaden material y dan a la costura lateral una forma redondeada/convexa, mientras que los valores negativos eliminan material y dan a la costura lateral una forma de reloj de arena/cóncava. Esta opción no tendrá efecto si está activada la opción "lados rectos".
 

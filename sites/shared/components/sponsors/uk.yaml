@@ -1,4 +1,4 @@
 algolia: Пошук за допомогою Algolia
-bugsnag: Повідомлення про помилки за допомогою Bugsnag
-crowdin: Переклад зроблено за допомогою Crowdin
+bugsnag: Error reporting by BugSnag
+crowdin: Переклад виконується через Crowdin
 vercel: Збірки та хостинг від Vercel

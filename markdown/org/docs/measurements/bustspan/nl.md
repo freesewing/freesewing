@@ -4,4 +4,5 @@ title: Bustewijdte
 
 De **bustewijdte** is de horizontale afstand tussen de toppen van de buste.
 
-Om de bustewijdte te bepalen meet je horizontaal en in een rechte lijn de afstand van de ene top van de borst naar de andere.
+Om je borstwijdte op te meten, houd je het meetlint horizontaal in een rechte lijn van een punt van de borst naar het punt van de ander.
+<MeasieImage />

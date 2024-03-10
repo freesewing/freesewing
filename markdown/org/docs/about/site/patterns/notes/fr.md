@@ -2,10 +2,10 @@
 title: Remarques
 ---
 
-Every pattern has a **notes** attribute that is optional.
+Chaque patron possède un attribut **notes** qui est facultatif.
 
-The notes field allows you to add your notes to a pattern. This field supports markdown, so you can use rich formatting, or even embed images.
+Le champ des notes te permet d'ajouter tes notes à un patron. Ce champ prend en charge le markdown, tu peux donc utiliser un formatage riche ou même intégrer des images.
 
 <Note>
-If you make your pattern public, your notes will also be public.
+Si tu rends ton patron public, tes notes seront également publiques.
 </Note>

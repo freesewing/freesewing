@@ -36,7 +36,9 @@ export const NavigationContextProvider = ({ children }) => {
    * @param value {value} to set
    */
   function updateSiteNav(path, value) {
-    setSiteNav(objUpdate(siteNav[locale], path, value))
+    const newNav = { ...siteNav }
+    newNav[locale] = objUpdate({ ...newNav[locale] }, path, value)
+    setSiteNav(newNav)
   }
 
   /*

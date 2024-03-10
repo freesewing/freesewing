@@ -2,8 +2,8 @@
 title: Набори для вимірювання
 ---
 
-A _measurements set_ holds a set of measurements along with meta data.
+Набір вимірювань __ містить набір вимірювань разом з метаданими.
 
-In addition to the measurements -- which is the most important data in a set -- a FreeSewing measurements set also has the following fields:
+На додаток до мірок, які є найважливішими даними в наборі, набір мірок FreeSewing також має наступні поля:
 
 <ReadMore />

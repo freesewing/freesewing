@@ -1,16 +1,16 @@
 ---
-title: "Otis, the simple baby romper: What You Need"
+title: "Otis, el pelele sencillo para bebés: Lo que necesitas"
 ---
 
-To make Otis, you will need the following:
+Para hacer Otis, necesitarás lo siguiente:
 
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
-- About 1 meter (1.1 yards) of a suitable fabric ([see Otis Fabric options](/docs/patterns/otis/fabric/))
-- 3 snaps.
-- A little bit of interfacing if your fabric is very stretchy.
+- Aproximadamente 1 metro (1,1 yardas) de una tela adecuada ([consulta las opciones de tela Otis](/docs/patterns/otis/fabric/))
+- 3 broches.
+- Un poco de entretela si tu tejido es muy elástico.
 
 <Note>
 
-You can use a different color fabric for the bindings to give it some additional flair.
+Puedes utilizar una tela de otro color para los ribetes y darle un toque adicional.
 
 </Note>

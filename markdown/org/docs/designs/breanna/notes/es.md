@@ -1,15 +1,15 @@
 ---
-title: "Breanna body block: Designer Notes"
+title: "Bloque de cuerpo Breanna: Notas del diseñador"
 ---
 
-With Breanna, I wanted to do two things:
+Con Breanna, quería hacer dos cosas:
 
-- Create a basic block like [Brian](/designs/brian) but for womenswear
-- Try to see in how many different ways I could support the bust dart
+- Crea un bloque básico como [Brian](/designs/brian) pero para ropa de mujer
+- Intenta ver de cuántas formas diferentes podría apoyar el dardo del busto
 
-It hasn't been a complete success. While some people get good results, others do not.
+No ha sido un éxito completo. Mientras que algunas personas obtienen buenos resultados, otras no.
 
-I leave it up because it's know to work for some. You can check [this FAQ on womenswear blocks for more background info](/docs/faq/womenswear-blocks) about the situation with regards to womenswear blocks.
+Lo dejo porque se sabe que funciona para algunos. You can check [this FAQ on womenswear blocks for more background info](/docs/about/faq/womenswear-blocks) about the situation with regards to womenswear blocks.
 
 joost
 

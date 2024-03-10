@@ -1,7 +1,7 @@
 ---
-title: Pointed tie ends
+title: Spitz zulaufende Krawattenenden
 ---
 
-This option allows you to generate a pattern where the ties have a pointy end, rather than a straight one.
+Mit dieser Option kannst du ein Muster erstellen, bei dem die Krawatten ein spitzes Ende haben und nicht ein gerades.
 
-Enable this option if you want your ties to have pointy ends. Disable this option (the default) if you want your ties to have straight ends.
+Aktiviere diese Option, wenn du möchtest, dass deine Krawatten spitze Enden haben. Deaktiviere diese Option (Standardeinstellung), wenn du möchtest, dass deine Krawatten gerade Enden haben.

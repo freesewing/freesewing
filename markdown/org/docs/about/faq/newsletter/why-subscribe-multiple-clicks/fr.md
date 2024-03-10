@@ -1,54 +1,53 @@
 ---
-title: Why do I have to click again to confirm I want to subscribe after I already clicked the confirmation link you sent me?
+title: Pourquoi dois-je cliquer à nouveau pour confirmer que je veux m'abonner alors que j'ai déjà cliqué sur le lien de confirmation que tu m'as envoyé ?
 ---
 
-There are two aspects that cause signing up for our newsletter to require multiple clicks:
+Il y a deux aspects qui font que l'inscription à notre bulletin d'information nécessite plusieurs clics :
 
-- [People should only be able to sign up themselves](#people-should-only-be-able-to-sign-up-themselves)
-- [GET requests should not make changes](#get-requests-should-not-make-changes)
+- [Les gens devraient uniquement pouvoir s'inscrire eux-mêmes](#people-should-only-be-able-to-sign-up-themselves)
+- [Les demandes GET ne doivent pas apporter de modifications](#get-requests-should-not-make-changes)
 
-## People should only be able to sign up themselves
+## Les gens devraient uniquement pouvoir s'inscrire eux-mêmes
 
-This one is pretty easy to understand. One should not be able to subscribe somebody else's email address to the FreeSewing newsletter.
+Celle-ci est assez facile à comprendre. Il ne devrait pas être possible d'abonner l'adresse électronique de quelqu'un d'autre à la lettre d'information de FreeSewing.
 
-This is why, after indicating you want to sign up, we sent you a confirmation email to the email address you provided. If you receive this email, it confirms not only that the email address is working, but also that you have access to it.
+C'est pourquoi, après avoir indiqué que tu voulais t'inscrire, nous t'avons envoyé un e-mail de confirmation à l'adresse e-mail que tu as fournie. Si tu reçois cet email, cela confirme non seulement que l'adresse email fonctionne, mais aussi que tu y as accès.
 
-In other words, only after you click the link in the confirmation email can we know for certain that:
+En d'autres termes, ce n'est qu'après que tu ais cliqué sur le lien dans l'e-mail de confirmation que nous pouvons savoir avec certitude que :
 
-- The email address is valid
-- The owner of the email address wants to subscribe
+- L'adresse électronique est valide
+- Le propriétaire de l'adresse électronique veut s'abonner
 
-That's where it would be over. Except for one technical detail that's also important:
+Et ça devrait être tout. À l'exception d'un détail technique qui a aussi son importance :
 
-## GET requests should not make changes
+## Les demandes GET ne doivent pas apporter de modifications
 
-<Warning compact>This is more technical and harder to understand</Warning>
+<Warning compact>C'est plus technique et plus difficile à comprendre</Warning>
 
-Another reason is that while we could make it so that clicking the link in your email would immeadiatly subcribe you, it would be in violation of internet standards. Specifically, the __HTTP__ protocol's __GET method__ definition which states that:
+Une autre raison est que nous pourrions faire en sorte que le fait de cliquer sur le lien dans ton e-mail te permette de t'inscrire immédiatement, mais cela serait contraire aux normes de l'Internet. Plus précisément, la définition de la __méthode GET__ du protocole __HTTP__ qui stipule :
 
 
 <Note>
-<h5>GET requests should only retrieve data and should have no other effect.</h5>
+<h5>Les demandes GET ne doivent récupérer que des données et n'avoir aucun autre effet.</h5>
 
-[wikipedia.org/wiki/HTTP#HTTP/1.1_request_messages](https://en.wikipedia.org/wiki/HTTP#HTTP/1.1_request_messages)
+[wikipedia.org/wiki/Hypertext_Transfer_Protocol#M%C3%A9thodes](https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol#M%C3%A9thodes)
 </Note>
 
-A _GET request_ is what happens when you follow a link. Merely following a link should not make any changes (like subscribing you to a newsletter).
+Une _demande GET_ est ce qui se passe lorsque tu suis un lien. Le simple fait de suivre un lien ne devrait pas apporter de changements (comme l'inscription à une lettre d'information).
 
-For example, when you receive an email, your email client may _preload_ the links in it in the background. So that they are quicker to load should you click on them.
+Par exemple, lorsque tu reçois un e-mail, ton client de messagerie peut _précharger_ les liens qu'il contient en arrière-plan. Pour qu'ils se chargent plus rapidement sur si tu cliques dessus.
 
-Obviously, this preloading should not confirm your subscription. Which is why you need to click a button to confirm. Because that will trigger a __POST request__ and those can make changes.
+Évidemment, ce préchargement ne doit pas confirmer ton abonnement. C'est pourquoi tu dois cliquer sur un bouton pour confirmer. Parce que cela déclenchera une __requête POST__ et que celles-ci peuvent apporter des changements.
 
 <Tip>
 
-##### This does not apply to users subscribing through their account
+##### Cela ne s'applique pas aux utilisateurs qui s'abonnent par l'intermédiaire de leur compte
 
-None of this applies to users who subscribe to our newsletter by enabling the
-option in our account.  In this case, we do not need to go through the email
-validation process, since we already did that when you signed up. 
+Rien de tout cela ne s'applique aux utilisateurs qui s'abonnent à notre newsletter en activant l'option
+dans leur compte.  Dans ce cas, nous n'avons pas besoin de passer par le processus de validation de l'email, puisque nous l'avons déjà fait lorsque tu t'es inscrit. 
 
-For users, subscribing (and unsubscribing) is instant (If you are curious, 
-we use an idempotent __PUT request__ under the hood).
+Pour les utilisateurs, l'abonnement (et le désabonnement) est instantané (si tu es curieux, 
+nous utilisons une __PUT request__ idempotente sous le capot).
 </Tip>
 
 

@@ -1,8 +1,6 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { round, Path, Point } from '../src/index.mjs'
 import { pathsProxy } from '../src/path.mjs'
-
-const expect = chai.expect
 
 describe('Path', () => {
   describe('smurve', () => {
@@ -199,6 +197,7 @@ describe('Path', () => {
       .curve(new Point(0, 40), new Point(123, 34), new Point(230, 4))
     const joint = curve.join(line)
     expect(joint.ops.length).to.equal(4)
+    expect(joint.ops[2].type).to.equal('line')
   })
 
   it('Should join paths that have noop operations', () => {
@@ -211,13 +210,23 @@ describe('Path', () => {
     expect(joint.ops.length).to.equal(6)
   })
 
-  it('Should throw error when joining a closed paths', () => {
+  it('Should throw error when joining a closed path', () => {
     const line = new Path().move(new Point(0, 0)).line(new Point(0, 40))
     const curve = new Path()
       .move(new Point(123, 456))
       .curve(new Point(0, 40), new Point(123, 34), new Point(230, 4))
       .close()
     expect(() => curve.join(line)).to.throw()
+  })
+
+  it('Should combine paths', () => {
+    const line = new Path().move(new Point(0, 0)).line(new Point(0, 40))
+    const curve = new Path()
+      .move(new Point(123, 456))
+      .curve(new Point(0, 40), new Point(123, 34), new Point(230, 4))
+    const combo = curve.combine(line)
+    expect(combo.ops.length).to.equal(4)
+    expect(combo.ops[2].type).to.equal('move')
   })
 
   it('Should shift along a line', () => {
@@ -598,6 +607,19 @@ describe('Path', () => {
     expect(halves[0].ops[1].to.y).to.equal(30)
     expect(halves[1].ops[0].to.x).to.equal(10)
     expect(halves[1].ops[0].to.y).to.equal(30)
+  })
+
+  it('Should split a path on roughly a line joint', () => {
+    const a = new Point(45, 60)
+    const b = new Point(10, 30)
+    const c = new Point(90, 30)
+    const test = new Path().move(a).line(b).line(c)
+
+    let halves = test.split(new Point(10.1, 29.9))
+    expect(halves[0].ops[1].to.x).to.equal(10.1)
+    expect(halves[0].ops[1].to.y).to.equal(29.9)
+    expect(halves[1].ops[0].to.x).to.equal(10.1)
+    expect(halves[1].ops[0].to.y).to.equal(29.9)
   })
 
   it('Should split a path on a curve joint', () => {

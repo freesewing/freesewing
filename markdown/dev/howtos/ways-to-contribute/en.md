@@ -40,7 +40,7 @@ us](https://discord.freesewing.org/).
 
 ##### Who wants a job in the tech sector?
 
-For many in our community, contributring to FreeSewing marked their
+For many in our community, contributing to FreeSewing marked their
 first steps into the world of open source software development.
 
 I (joost) am happy to provide guidance or mentorship to anyone who

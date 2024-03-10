@@ -1,18 +1,18 @@
 ---
-title: "Otis, the simple baby romper: Cutting Instructions"
+title: "Otis, el pelele sencillo para bebés: Instrucciones de corte"
 ---
 
 - **Tela principal**
-  - Cut **1 back** part on fold
+  - Corta **1 parte trasera** en el pliegue
   - Corta **1 parte delantera** en el pliegue
-  - Cut **2 shortSleeve ** parts on fold or
-  - Cut **2 longSleeve** parts on fold
-  - Cut **1 bindingBackNeck** part
-  - Cut **1 bindingFrontNeck** part
-  - Cut **2 bindingLeg** parts
+  - Corta **2 partes de manga corta ** en el pliegue o
+  - Corta **2 piezas de manga larga** en el pliegue
+  - Corta **1 encuadernaciónEspaldaCuello** parte
+  - Corta **1 bindingFrontNeck** part
+  - Corta las piezas de **2 bindingLeg**
 
 <Note>
 
-Depending on your fabric, it may be useful to add interfacing to the snap placket. 
+Dependiendo de tu tejido, puede ser útil añadir entretela a la tapeta. 
 
 </Note>

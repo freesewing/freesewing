@@ -16,7 +16,7 @@ Aufgrund der vielen verschiedenen Arten von Sandy ist es schwierig, genau zu sag
 
 ##### Hauptstoff
 
-Die Länge, die du brauchst, hängt davon ab, wie lang und voll dein Tellerrock ist. Mittellang und kleiner sollten mit 2 - 2,5 Metern ausreichen, wohingegen für einen bodenlangen Rock mehr benötigt wird. Im Zweifelsfall kaufe einen Meter mehr, als du denkst. Scheue dich auch nicht davor, zuzuschneiden, wenn dein Stoff nicht breit oder lang genug ist. Es ist besser, eine zusätzliche Naht zu haben, als den Stoff nicht zu verwenden, der dir gefällt.
+The length you require is dependant on how long and how full your circle skirt is, mid length and smaller should be sufficient with 2 - 2.5 metres whereas a floor length will require more. Im Zweifelsfall kaufe einen Meter mehr, als du denkst. Scheue dich auch nicht davor, zuzuschneiden, wenn dein Stoff nicht breit oder lang genug ist. Es ist besser, eine zusätzliche Naht zu haben, als den Stoff nicht zu verwenden, der dir gefällt.
 
 <Note>
 
@@ -40,7 +40,7 @@ Um die Säume in Form zu halten, kannst du den unteren Teil des Rocks mit einem 
 
 ##### Verschlüsse
 
-Wenn du keinen elastischen Sandy machst, brauchst du eine Art Verschluss. Das kann nur ein Reißverschluss sein, der in den Bund und die Naht eingesetzt wird, oder es können Knöpfe, Kleiderhaken oder Druckknöpfe mit einem überlappenden Bund und einer Öffnung, einer Leiste oder einem Reißverschluss am oberen Ende der Naht sein.
+Wenn du keinen elastischen Sandy machst, brauchst du eine Art Verschluss. This can be just a zip that is inserted in to the waistband and seam or it can be buttons, dress hooks, or snaps with an overlapping waistband and an opening, placket or zipper at the top of the seam.
 
 ##### Gummi
 

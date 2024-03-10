@@ -2,6 +2,6 @@
 title: "Holgura de cintura"
 ---
 
-If (and only if) you request to [fit the waist](/docs/designs/teagan/options/curvetowaist), this option allows you to control the amount of ease at the waist.
+Si (y sólo si) solicitas a [ajustar la cintura](/docs/designs/teagan/options/curvetowaist), esta opción te permite controlar la cantidad de holgura en la cintura.
 
-If the waist is not fitted, this option is ignored.
+Si la cintura no está entallada, esta opción se ignora.

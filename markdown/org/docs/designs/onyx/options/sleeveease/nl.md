@@ -2,8 +2,8 @@
 title: "Overwijdte mouw"
 ---
 
-Affects how wide the sleeve is at the armhole on all garments. For sleeves that are less than 100% length, this option also affects how wide the sleeve is at the hem, with shorter sleeves being affected by this option to a greater degree, and longer sleeves being more affected by the wrist ease option. In most cases, this value should be set larger than chest ease, as the shoulders and arms are smaller and the same percentage of ease will translate to a smaller absolute ease. In most cases, this value should be set larger than chest ease, as the shoulders and arms are smaller and the same percentage of ease will translate to a smaller absolute ease.
+Heeft invloed op hoe wijd de mouw is bij het armsgat op alle kledingstukken. Voor mouwen die minder dan 100% lengte hebben, beïnvloedt deze optie ook hoe wijd de mouw is aan de zoom, waarbij kortere mouwen meer beïnvloed worden door deze optie en langere mouwen meer beïnvloed worden door de optie polsgemak. In de meeste gevallen moet deze waarde groter worden ingesteld dan de borst, omdat de schouders en armen kleiner zijn en hetzelfde percentage buigzaamheid zich vertaalt in een kleinere absolute buigzaamheid. In de meeste gevallen moet deze waarde groter worden ingesteld dan de borst, omdat de schouders en armen kleiner zijn en hetzelfde percentage buigzaamheid zich vertaalt in een kleinere absolute buigzaamheid.
 
-> ##### This option allows negative values
+> ##### Deze optie staat negatieve waarden toe
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Je moet negatief gemak gebruiken als je een stretchmateriaal gebruikt dat je strak wilt laten aansluiten. Unisuits en unitards hebben meestal een negatieve pasvorm, terwijl andere kledingstukken meestal een positieve pasvorm hebben.

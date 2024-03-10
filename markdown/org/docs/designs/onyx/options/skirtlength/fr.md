@@ -1,5 +1,5 @@
 ---
-title: "Skirt length"
+title: "Longueur de la jupe"
 ---
 
-Controls the length of the skirt, as a percentage of the waist to upper leg measurement. A length of 100% should make a skirt just long enough to reach the upper leg.
+Contrôle la longueur de la jupe, en pourcentage de la mesure de la taille au haut de la jambe. Une longueur de 100 % doit permettre de faire une jupe juste assez longue pour atteindre le haut de la jambe.

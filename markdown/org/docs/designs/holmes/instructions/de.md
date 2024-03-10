@@ -31,7 +31,7 @@ Diese Anweisungen gehen davon aus, dass Sie Ihre Nahtlinien markiert haben. Sie 
 - Bügel die Nähte auf. Sie mussten dafür einen Schneider-Schinken verwenden, wenn Sie keinen Schinken haben, können Sie stattdessen Flannels oder Handtücher verwenden.
 - (Optional) _Kantenstich_ beide Seiten der Naht und achte darauf, dass du die Nahtzugaben erwischst.
 - Wiederhole dies, bis du zwei Hälften hast. Wenn die Hälfte der Anzahl der Kronenstücke eine ungerade Zahl ist, müssen Sie zu jeder Hälfte ein einzelnes Stück nähen. z.B. Wenn Sie 6 Kronen haben, machen Sie zwei Hälften von 3 Nähen ein Stück zu zwei zusammengenähten Stücken.
-- Näht die beiden Hälften rechts auf rechts zusammen, wobei die Nahtlinien und Spitzen übereinstimmen. Sie können den Gipfel vielleicht leichter zusammen handnähen durch Schüttgut oder Präzision. Diese Naht wird als "Mittelkronennaht" bezeichnet.
+- Lege rechts auf rechts die mittleren Kronennähte, die Teilungsnähte und die Nahtlinien zusammen. Sie können den Gipfel vielleicht leichter zusammen handnähen durch Schüttgut oder Präzision. This seam will be referred to as the "centre crown seam" going forward.
 - (Optional) _Kantenstich_ beide Seiten der mittleren Kronennaht, wobei du darauf achtest, dass du die Nahtzugaben erwischst.
 
 <Note>
@@ -44,7 +44,7 @@ Je nach Zulage der Naht können Sie Nähte schneiden wollen, während Sie gehen,
 
 #### Ohrklappen mit Binden
 
-- Schneide zwei 30cm (12") - 40cm (16") lange Bänder zu. Diese werden als weitere Bindungen bezeichnet werden.
+- Schneide zwei 30cm (12") - 40cm (16") lange Bänder zu. These will be referred to as ties going forward.
 - _Hefte_ ein Band an die rechte Seite einer Ohrenklappe (die mit Vlieseline, falls du sie verwendest). Wiederholen für andere Krawatte.
 - Nähe rechts auf rechts eine Ohrenklappe mit Krawatte an eine Ohrenklappe ohne Krawatte, wobei die Nahtlinien übereinstimmen.
 - Schneide die Nahtzugabe ab und schneide sie zu.
@@ -62,7 +62,7 @@ If you are uncertain about the length you want for you ties take 1 metre (39") o
 <Note>
 
 Die oben genannten Längen sind Empfehlungen, so fühlen Sie sich frei zu gehen so lange oder so kurz wie Sie wollen mit den Krawatten.  
-If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/designs/holmes/cutting/) for more info.
+Wenn du es vorziehst, kannst du deine individuellen Krawatten auch mit Stoff herstellen, [siehe Holmes-Schnitt](/docs/designs/holmes/cutting/) für weitere Informationen.
 
 </Note>
 
@@ -74,7 +74,7 @@ If you prefer you can make your custom ties with fabric, [see Holmes cutting](/d
 - Umdrehen und bügeln.
 - (Optional) _Steppstich_ oder _Kantenstich_ die gefaltete Kante.
 - _Hefte_ die Schnittkanten zusammen.
-- Nähen Sie das Knopfloch mit der von Ihnen bevorzugten Methode.
+- Sew the buttonhole in your preferred method.
 - Wiederhole den Vorgang für die verbleibende Ohrenklappe.
 
 <Warning>
@@ -98,7 +98,7 @@ There are two methods for constructing the bill. This is due to the different ty
 #### The Bill Method 1
 
 - Lege den Visiereinsatz auf ein Visierteil innerhalb der Nahtlinien.
-- Befestige den Visiereinsatz vorübergehend am Visier mit dem temporären _Stitches_. Dies wird in Zukunft als "Gesichtsvisier" bezeichnet.
+- Befestige den Visiereinsatz vorübergehend am Visier mit dem temporären _Stitches_. This will be referred to as "faced visor" going forward.
 - _Hefte_ entlang der Nahtlinie der inneren Kurve des verkleideten Visiers und achte darauf, dass du den Visiereinsatz nicht erwischst.
 - Näht das verkleidete Visier rechts auf rechts, mit übereinstimmenden Nahtlinien und Mittelfronten, an ein anderes Visierteil entlang der Außenkurve in der Nähe des Visiereinsatzes, wobei ihr darauf achtet, dass ihr den Visiereinsatz nicht erwischt.
 - Schneide die Außenkurve ein und achte darauf, dass du die Nähte nicht einschneidest. (Vielleicht möchtest du die Form vor diesem Schritt drehen und überprüfen)
@@ -120,10 +120,10 @@ If preferred you can temporarily attach the bill insert another way that does no
 
 #### The Bill Method 2
 
-- Lege die rechte Seite zusammen, die Nahtlinien und die vordere Mitte stimmen überein und nähe die äußere Kante der beiden Visierteile zusammen.
+- With rights sides together, matching seam lines and centre fronts, sew the outer curve of two visor pieces together.
 - Kerbe die äußere Kurve ein und beschneide sie (falls nötig), wobei du darauf achtest, dass du die Nähte nicht einschneidest. (Vielleicht möchtest du die Form vor diesem Schritt drehen und überprüfen)
 - Umdrehen und bügeln.
-- Lege den Visiereinsatz fest in das genähte Visier ein, so dass keine Lücke an der Außenkurve entsteht und die Nahtzugaben alle auf einer Seite des Visiereinsatzes liegen. Das wird die Oberseite des Visiers sein.
+- Insert visor insert in to sewn visor tightly so there is no gap on the outer curve and the seam allowances are all one on side of the visor insert. Das wird die Oberseite des Visiers sein.
 - Stecke die innere Kurve zusammen und achte darauf, dass die äußere Kante fest über den Visiereinsatz gezogen wird.
 - _Hefte_ so nah wie möglich an die Innenkurve des Visiereinsatzes und achte darauf, dass du den Stoff beim Nähen fest über die Außenkante ziehst.
 - Wiederhole den Vorgang für die restlichen Visierteile.
@@ -144,7 +144,7 @@ Wieder einmal gibt es zwei Methoden für Endmontage und Verkleidung. Lesen Sie b
 - Entferne alle Polster- und Heftstiche.
 - Bügle die Nahtzugaben nach innen und achte dabei darauf, dass die Naht von außen nicht sichtbar ist.
 - (Optional) Die Nähte an der Innenseite der Krone mit einem lockeren _Steppstich_ absteppen und darauf achten, dass die Nähte nicht nach außen zeigen.
-- Konstruiere das Futter auf die gleiche Weise wie die Krone, indem du _edgestitching_auslässt.
+- Construct lining the same way as the crown omitting _edgestitching_.
 - Falte und bügle unter die untere Nahtzugabe des Futters. Möglicherweise müssen Sie unter mehr drücken, um zu verhindern, dass das Futter gezeigt wird. Es kann auch sein, dass du _heften musst_ die Nahtzugabe nach unten.
 - Stecke das Futter falsch herum in die Mütze, so dass die mittlere Kappennaht und die Teilungsnähte übereinstimmen. Lege die gefaltete Kante entlang der Nahtlinien.
 - _Steppstich_ oder _Steppstich_ das Futter an die Nahtzugabe der Mütze.
@@ -160,8 +160,8 @@ Wieder einmal gibt es zwei Methoden für Endmontage und Verkleidung. Lesen Sie b
 - Hefte das Visier mit der Hand an die Krone, indem du die Heftlinien des Visiers mit den Linien der Kronennaht abstimmst. Es ist einfacher, __ die Mitte nach unten zu heften und dann von der Mitte nach außen zu arbeiten.
 - (Optional) Klebe das Visier mit der Maschine entlang der Nahtlinien an die Krone.
 - Wiederhole den Vorgang für das restliche Visier auf der gegenüberliegenden Seite der mittleren Kronennaht.
-- Fertige das Futter auf die gleiche Weise wie die Krone an, indem du _edgestitching_ auslässt und in der mittleren Futternaht eine Lücke lässt, die groß genug ist, um den Hut zu drehen.
-- Lege rechts auf rechts die mittleren Kronennähte, die Teilungsnähte und die Nahtlinien zusammen. Nähen Sie das Futter zur Krone entlang der Nahtlinien. Wenn Sie sperrig sind, können Sie entweder die Futternähte oder beide Nähte schneiden.
+- Construct lining the same way as the crown omitting _edgestitching_ and leaving a gap in the centre lining seam large enough to turn the hat.
+- Lege rechts auf rechts die mittleren Kronennähte, die Teilungsnähte und die Nahtlinien zusammen. This seam will be referred to as the "centre crown seam" going forward. Wenn Sie sperrig sind, können Sie entweder die Futternähte oder beide Nähte schneiden.
 - Drehe die Mütze von innen nach außen und drücke das Futter nach innen.
 - (Optional/Alternativ) _Untersteppe das_ Futter.
 - Steppstich-Futteröffnung geschlossen.
@@ -226,7 +226,7 @@ Wenn du nicht die Buttonhole Ohrenklappen machst, musst du keinen Knopf einnähe
 <Note>
 
 Sicherlich optional, können Sie feststellen, dass ein Knopf fehlt, um das Aussehen zu beenden. Wenn du dir also nicht sicher bist, wie es aussehen soll, kannst du dir einen Button basteln und ihn vorübergehend anbringen, um zu sehen, ob es das ist, was fehlt. If it is attach it permanently.
-Während ein überdachter Button empfohlen wird, kannst du jeden gewünschten Button verwenden, kannst du es probieren!
+Whilst a covered button is recommended you can use whatever button you desire, feel free to experiment!
 
 </Note>
 

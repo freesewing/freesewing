@@ -1,5 +1,5 @@
 ---
-title: About FreeSewing
+title: Über FreeSewing
 ---
 
-<ReadMore list />
+<ReadMore />

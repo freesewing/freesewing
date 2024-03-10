@@ -1,16 +1,16 @@
 ---
-title: "Aaron A-Shirt: Designer Notes"
+title: "Camiseta Aaron A: Notas del diseñador"
 ---
 
-Aaron is -- like most patterns I design -- born out of nessesity. I needed a A-shirt to wear under shirts when it gets a bit colder, and I try to only wear clothes made from FreeSewing patterns, so Aaron was born.
+Aaron, como la mayoría de los patrones que diseño, nació de la necesidad. I needed an A-shirt to wear under shirts when it gets a bit colder, and I try to only wear clothes made from FreeSewing patterns, so Aaron was born.
 
-Aaron's been around for many years and has been made by several people, so you can consider this a staple of FreeSewing's design catalogue.
+Aaron existe desde hace muchos años y ha sido realizado por varias personas, así que se podría considerar un elemento básico del catálogo de diseño de FreeSewing.
 
-On it's own, it's a rather straight-forward design. It extends [the Brian block](/designs/brian) and has an array of options to tweak the outcome,
+Por sí solo, es un diseño bastante sencillo. It extends [the Brian block](/designs/brian) and has an array of options to tweak the outcome,
 
-There's a few things that are *special* about Aaron, FreeSewing trivia if you will:
+Hay algunas cosas que son *especiales* sobre Aaron, trivialidades de FreeSewing si quieres:
 
-- Aaron is what I refer designers to when they have questions on how to do something. It's always first in the list (because it starts with double A), always the frirst to get new feautres, be migrated to a new version, and so on. Aaron is sort of FreeSerwing's canary design. Everything that happens happens to Aaron first.
-- I named this design `aaron` in memory of [Aaron Swartz](https://en.wikipedia.org/wiki/Aaron_Swartz). Rest in peace brother.
+- Aaron es a quien remito a los diseñadores cuando tienen preguntas sobre cómo hacer algo. Siempre es el primero de la lista (porque empieza por doble A), siempre es el primero para el que se implementan nuevas funciones, el primero en ser migrado a una nueva versión, etc. Aaron es una especie de diseño de prueba de FreeSewing. Todo lo que ocurre le ocurre primero a Aarón.
+- He llamado a este diseño `aaron` en memoria de [Aaron Swartz](https://en.wikipedia.org/wiki/Aaron_Swartz). Descansa en paz hermano.
 
 joost

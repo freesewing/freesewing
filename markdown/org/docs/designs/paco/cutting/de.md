@@ -27,7 +27,7 @@ Wenn ein Musterteil nicht gedruckt wird, bedeutet das, dass Sie es nicht benöti
 
 #### Caveats
 
-- There is no seam allowance on the interfacing
-- There is extra seam allowance on the waist band and hem
+- Es gibt keine Nahtzugabe an der Einlage
+- Es gibt eine zusätzliche Nahtzugabe am Taillenband und am Saum
 
 </Warning>

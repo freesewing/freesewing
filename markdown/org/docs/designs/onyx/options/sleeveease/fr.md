@@ -2,8 +2,8 @@
 title: "Aisance des manches"
 ---
 
-Affects how wide the sleeve is at the armhole on all garments. For sleeves that are less than 100% length, this option also affects how wide the sleeve is at the hem, with shorter sleeves being affected by this option to a greater degree, and longer sleeves being more affected by the wrist ease option. In most cases, this value should be set larger than chest ease, as the shoulders and arms are smaller and the same percentage of ease will translate to a smaller absolute ease. In most cases, this value should be set larger than chest ease, as the shoulders and arms are smaller and the same percentage of ease will translate to a smaller absolute ease.
+Affecte la largeur de la manche à l'emmanchure sur tous les vêtements. Pour les manches dont la longueur est inférieure à 100 %, cette option affecte également la largeur de la manche à l'ourlet, les manches courtes étant plus affectées par cette option, et les manches longues étant plus affectées par l'option d'aisance du poignet. Dans la plupart des cas, cette valeur doit être plus grande que l'aisance de la poitrine, car les épaules et les bras sont plus petits et le même pourcentage d'aisance se traduira par une aisance absolue plus petite. Dans la plupart des cas, cette valeur doit être plus grande que l'aisance de la poitrine, car les épaules et les bras sont plus petits et le même pourcentage d'aisance se traduira par une aisance absolue plus petite.
 
-> ##### This option allows negative values
+> ##### Cette option autorise les valeurs négatives
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Tu devrais utiliser l'aisance négative si tu utilises un matériau extensible que tu veux bien ajuster. Les combinaisons et les justaucorps ont généralement une aisance négative, tandis que les autres vêtements ont généralement une aisance positive.

@@ -1,20 +1,20 @@
 ---
-title: "Simone by Gaëlle"
-caption: "A lovely Simone shirt with beautiful details"
+title: "Simone de Gaëlle"
+caption: "Una preciosa camisa Simone con bonitos detalles"
 date: 20231017
-intro: "This Simone shirt features beautiful details, including coordinated buttons and custom labels."
+intro: "Esta camisa Simone tiene bonitos detalles, como botones coordinados y etiquetas personalizadas."
 designs:
   - "simone"
 maker: Natalia
 ---
 
-The talented Gaëlle shared this Simone shirt. Don't miss the the detail photos.
+La talentosa Gaëlle compartió esta camiseta de Simone. No te pierdas las fotos de los detalles.
 
-![Another view of the front](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-1/public "Another view of the front")
+![Otra vista de la parte delantera](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-1/public "Otra vista de la parte delantera")
 
-![Collar details](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-2/public "Collar details")
+![Detalles del cuello](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-2/public "Detalles del cuello")
 
-![Cuff button details](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-4/public "Cuff button details")
+![Detalles del botón del puño](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-4/public "Detalles del botón del puño")
 
-![Custom label tags](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-5/public "Custom label tags")
+![Etiquetas personalizadas](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-simone-by-gaelle-5/public "Etiquetas personalizadas")
 

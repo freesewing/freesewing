@@ -2,13 +2,13 @@
 title: "Brustumfangszugabe"
 ---
 
-Controls how wide the garment will be at your chest.
+Legt fest, wie weit das Kleidungsstück im Brustbereich sein soll.
 
 Welcher Wert auch immer Sie hier angeben, wird beim Entwurf des Kleidungsstückes einfach zu Ihrer Brustumfangsmessung hinzugefügt.
 
-> ##### This option allows negative values
+> ##### Diese Option erlaubt negative Werte
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Du solltest eine negative Leichtigkeit verwenden, wenn du einen dehnbaren Stoff verwendest, der eng anliegen soll. Unteranzüge und Trikots haben in der Regel eine negative Bequemlichkeit, während andere Kleidungsstücke in der Regel eine positive Bequemlichkeit haben.
 
 
 

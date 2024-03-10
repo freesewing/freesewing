@@ -1,17 +1,18 @@
 ---
-title: Waist to armpit
+title: De la cintura a la axila
 ---
 
-The **waist to armpit** is the measurement from your waist up towards your armpit, measured on the side of your body.
+El **de la cintura a la axila** es la medida desde la cintura hacia la axila, medida en el lado de tu cuerpo.
 
-Since _armpit_ is a bit ambigious, we recommend finding the height that would be about the tightest possible sleeve that could still work. The height of the subcapular/posterior lymph nodes is typically a good spot.
+Since _armpit_ is a bit ambiguous, we recommend finding the height that would be about the tightest possible sleeve that could still work. La altura de los ganglios linfáticos subcapulares/posteriores suele ser un buen punto.
 
-Or, if you're not certain where the lymph nodes under your arm are, you can follow this approach:
+O, si no estás segura de dónde están los ganglios linfáticos de la axila, puedes seguir este planteamiento:
 
-- Stand up straight, yet relaxed, and let your arms hang loosely by your side.
-- Raise your dominant arm (the right if you are right-handed, or the left if you are left-handed) about 30 degrees sideways, away from your body.
-- Now reach to the side of your body with the other hand, placing the palm of your hand against the side, and your thumb on your chest pointing upwards.
-- Slide your hand upwards as far as you can without having to push anything out of the way.
-- Your index finger will now sit in the armput, which is a bit too high. But your middlefinger is a good spot to mark as the start of your armpit.
+- Ponte erguido, pero relajado, y deja que los brazos cuelguen sueltos a los lados.
+- Levanta el brazo dominante (el derecho si eres diestro, o el izquierdo si eres zurdo) unos 30 grados hacia un lado, alejándolo del cuerpo.
+- Ahora extiende la otra mano hacia el costado de tu cuerpo, colocando la palma de la mano contra el costado y el pulgar sobre el pecho apuntando hacia arriba.
+- Desliza la mano hacia arriba todo lo que puedas sin tener que empujar nada.
+- Your index finger will now sit in the armpit, which is a bit too high. But your middle finger is a good spot to mark as the start of your armpit.
 
 
+<MeasieImage />

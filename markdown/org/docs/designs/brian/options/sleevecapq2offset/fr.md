@@ -10,8 +10,8 @@ Cette option permet de contrôler le décalage dans le deuxième quadrant de la 
 
 <Tip>
 
-See [understanding the sleevecap](/docs/designs/brian/options#understanding-the-sleevecap) for an in-depth
-look into how the sleevecap is constructed and the influence of the different options on its shape.
+Voir [comprendre le sleevecap](/docs/designs/brian/options#understanding-the-sleevecap) pour un aperçu approfondi
+de la façon dont le sleevecap est construit et de l'influence des différentes options sur sa forme.
 
 </Tip>
 

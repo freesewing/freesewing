@@ -1,6 +1,6 @@
 {
   "name": "rehype-highlight-lines",
-  "version": "3.0.0",
+  "version": "3.2.0",
   "description": "A Rehype plugin to add highlighted lines to code blocks",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -47,7 +47,6 @@
     "tag": "latest"
   },
   "engines": {
-    "node": "18",
-    "npm": "9"
+    "node": ">= 18.17.0 <22"
   }
 }

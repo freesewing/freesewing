@@ -1,8 +1,8 @@
 ---
-title: Duo color ties
+title: Duo kleur stropdassen
 ---
 
-This option allows you to generate a pattern where the ties use two colors rather than one.
+Met deze optie kun je een patroon genereren waarbij de dassen twee kleuren gebruiken in plaats van één.
 
-Enable this option if you want ties using two colors. Leave it disabled (the default) if you want ties using a single color.
+Schakel deze optie in als je stropdassen met twee kleuren wilt gebruiken. Laat deze optie uitgeschakeld (de standaardinstelling) als je een enkele kleur wilt gebruiken.
 

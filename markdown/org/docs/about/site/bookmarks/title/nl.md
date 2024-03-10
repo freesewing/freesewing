@@ -2,7 +2,7 @@
 title: Titel
 ---
 
-Every bookmark has a **title** attribute that is mandatory.
+Elke bladwijzer heeft een attribuut **title** dat verplicht is.
 
-In other words, you must give each of your bookmarks a title, but that title can be anything you want.
+Met andere woorden, je moet al je bladwijzers een titel geven, maar die titel mag alles zijn wat je wilt.
 

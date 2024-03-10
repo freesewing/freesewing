@@ -1,11 +1,11 @@
 ---
-title: "Legacy armhole depth"
+title: "Profundidad de sisa Legacy"
 ---
 
-This option allows you to use the legacy way of calculating the armhole depth in Brian, which Simon extends.
+Esta opción te permite utilizar la forma heredada de calcular la profundidad de la sisa en Brian, que Simon extiende.
 
-The legacy (v2) way used the biceps circumference to estimate the armhole depth.
+La forma heredada (v2) utilizaba la circunferencia del bíceps para calcular la profundidad de la sisa.
 
-The v3 way instead uses the waist to armpit measurement to locate the bottom of the armhole.
+En cambio, la forma v3 utiliza la medida de la cintura a la axila para localizar la parte inferior de la sisa.
 
-If you enable this option, the Brian block will revert to the v2 way of calculating the armhole depth, and Simon will follow.
+Si activas esta opción, el bloque Brian volverá a la forma v2 de calcular la profundidad de la sisa, y Simon la seguirá.

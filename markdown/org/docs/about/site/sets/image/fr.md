@@ -2,9 +2,9 @@
 title: Image
 ---
 
-Every measurements set has a **image** attribute that is optional.
+Chaque jeu de mesures possède un attribut **image** qui est facultatif.
 
-A picture says more than a 1000 words, so if you have multiple measurements sets, this can help you tell them apart.
+Une image en dit plus que 1000 mots, alors si tu as plusieurs jeux de mesures, cela peut t'aider à les différencier.
 
-So if you want, you can add an image to your measurements set. It's up to you.
+Ainsi, si tu le souhaites, tu peux ajouter une image à ton jeu de mesures. C'est à toi de décider.
 

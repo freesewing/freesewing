@@ -1,27 +1,27 @@
-frombrian.t: From Brian
-frombrian.d: Create a design that extends Brian, a block for menswear
-frombent.t: From Bent
-frombent.d: Create a design that extends Bent, a block for menswear with a two-part sleeve
-fromtitan.t: From Titan
-fromtitan.d: Create a design that extends Titan, a unisex trouser block
-frombella.t: From Bella
-frombella.d: Create a design that extends Bella, a block for womenswear
-frombreanna.t: From Breanna
-frombreanna.d: Create a design that extends Breanna, a block for womenswear
-fromscratch.t: From scratch
-fromscratch.d: Start your design with a blank page
+frombrian.t: Від Брайана.
+frombrian.d: Створіть дизайн, який розширює Brian, блок для чоловічого одягу
+frombent.t: Від Бента
+frombent.d: Створіть дизайн, що подовжує Bent, блок для чоловічого одягу з рукавом, що складається з двох частин
+fromtitan.t: Від Титану
+fromtitan.d: Створіть дизайн, який розширює Titan, брючний блок унісекс
+frombella.t: Від Белли
+frombella.d: Створіть дизайн, який розширює Bella, блок для жіночого одягу
+frombreanna.t: Від Бріанни.
+frombreanna.d: Створіть дизайн, що розширює Breanna, блок для жіночого одягу
+fromscratch.t: З нуля
+fromscratch.d: Почніть свій дизайн з чистого аркуша
 tutorial.t: Урок
-tutorial.d: Follow along with our design tutorial
+tutorial.d: Ви можете слідувати нашому уроку зі створення дизайнів
 design: Дизайн
 support: Підтримати
 code: Код
 docs: Документація
-chooseATemplate: Choose a template
-pageLeftBlank: Blank page
-pageLeftBlankMsg: This page was intentionally left blank.
-templatesAvailable: The following templates are available to jump-start your next project
-welcomeToSde: Welcome to the FreeSewing development environment
-signIn: Note that you can also sign in to your FreeSewing account so you can re-use your own preferences and data while designing.
-signOff: I hope you have fun
-ps: "PS: FreeSewing needs your support, so please consider becoming a patron"
+chooseATemplate: Оберіть шаблон
+pageLeftBlank: Порожня сторінка
+pageLeftBlankMsg: Ми навмисне залишили цю сторінку порожньою.
+templatesAvailable: Наступні шаблони доступні для пришвидшення початку Вашого нового проєкту
+welcomeToSde: Вітаємо в розробницькій студії FreeSewing
+signIn: Зверніть увагу, що Ви також можете увійти до свого облікового запису FreeSewing й повторно використовувати власні налаштування та дані під час проєктування.
+signOff: Сподіваюся, Вам буде весело
+ps: "P.S.: FreeSewing потребує Вашої підтримки, тому, будь ласка, подумайте про те, щоб стати патроном"
 

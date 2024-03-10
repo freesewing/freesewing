@@ -2,6 +2,6 @@
 title: Público
 ---
 
-This settings controls whether your pattern will accessible by the **public** or not.
+Esta configuración controla si tu patrón será accesible por el público de **** o no.
 
-By default, patterns are private and only you can access your own patterns. If you'd like to share your pattern with others -- perhaps because they showed an interest or you are loooking for input -- you should first make it public.
+Por defecto, los patrones son privados y sólo tú puedes acceder a tus propios patrones. If you'd like to share your pattern with others -- perhaps because they showed an interest or you are looking for input -- you should first make it public.

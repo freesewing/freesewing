@@ -6,6 +6,7 @@ intro: "Estos divertidos pantalones envolventes Waralee fueron confeccionados po
 title: "Pantalones Waralee de Wouter"
 designs:
   - "waralee"
+author: 132
 ---
 
 Estos divertidos pantalones envolventes Waralee fueron confeccionados por Wouter. Tienen dobladillos a inglete.

@@ -2,13 +2,13 @@
 title: "Aisance des hanches"
 ---
 
-Controls how wide the garment will be at your hips.
+Contrôle la largeur du vêtement au niveau de tes hanches.
 
 Quelle que soit la valeur que vous indiquez ici, elle sera simplement ajoutée à la mesure de votre tour de hanches lors de l'élaboration du vêtement.
 
 > ##### Cette option permet également des valeurs négatives.
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Tu devrais utiliser l'aisance négative si tu utilises un matériau extensible que tu veux bien ajuster. Les combinaisons et les justaucorps ont généralement une aisance négative, tandis que les autres vêtements ont généralement une aisance positive.
 
 
 

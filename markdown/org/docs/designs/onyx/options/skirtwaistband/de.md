@@ -1,7 +1,7 @@
 ---
-title: "Skirt waistband"
+title: "Bund des Rocks"
 ---
 
-Sets the width of the waistband along the top of the skirt, as a multiple of the seam allowance..
+Legt die Breite des Bunds entlang der Oberseite des Rocks als Vielfaches der Nahtzugabe fest.
 
-The waistband is a single fold hem that is topstitched into the main garment around the waist. The fold serves to hide and finish the top edge. It only needs to be wide enough to allow the topstitching to secure the skirt in place.
+Der Bund ist ein einfach gefalteter Saum, der um die Taille herum mit dem Hauptkleidungsstück abgesteppt wird. Der Falz dient dazu, die obere Kante zu verstecken und abzuschließen. Er muss nur so breit sein, dass die Steppnähte den Rock an seinem Platz halten können.

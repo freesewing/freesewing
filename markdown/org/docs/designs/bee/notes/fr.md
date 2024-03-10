@@ -1,8 +1,8 @@
 ---
-title: "Bee bikini top: Designer Notes"
+title: "Haut de bikini Bee : Notes du créateur"
 ---
 
-I made Bee together with Prudencerabbit, as they wanted to make a swimwear pattern that went along with a previous freesewing pattern. It is based on a garment they made and wanted to make available for other people make as well. We worked of FreeSewing's body block Bella as a base, converting it to a single dart block to make the top. During pattern testing one of our contributors TangerineShark made a vartiant with crossover back ties which we found so cool we added it to Bee! You can get this variation by using [option Cross Back Ties](/docs/designs/bee/options/crossbackties/). Bee can also be made reversible by using options [Reversible](/docs/designs/bee/options/reversible), [Duo Colours Ties](/docs/designs/bee/options/duocolorties) & [Neck Tie Colours](/docs/designs/bee/options/necktiecolours). With the previous pattern being retired you can use [Uma](docs/designs/uma) to make a matching bikini bottom.
+J'ai créé Bee avec Prudencerabbit, car ils voulaient faire un modèle de maillot de bain qui allait de pair avec un modèle freesewing précédent. Il est basé sur un vêtement qu'elles ont confectionné et qu'elles voulaient mettre à la disposition d'autres personnes pour qu'elles le fassent aussi. Nous avons utilisé le bloc de corps Bella de FreeSewing comme base, et nous l'avons converti en un bloc à fléchettes simples pour faire le haut. Tu peux obtenir cette variante en utilisant l'option [Cross Back Ties](/docs/designs/bee/options/crossbackties/). Bee peut également être réversible en utilisant les options [Réversible](/docs/designs/bee/options/reversible), [Cravates Duo Colours](/docs/designs/bee/options/duocolorties) & [Cravates Neck Colours](/docs/designs/bee/options/necktiecolours). Le patron précédent ayant été retiré, tu peux utiliser [Uma](docs/designs/uma) pour faire un bas de bikini assorti. During pattern testing one of our contributors TangerineShark made a variant with crossover back ties which we found so cool we added it to Bee!
 
 _
 

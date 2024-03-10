@@ -1,5 +1,5 @@
 ---
-maker: "Joost De Cock"
+author: 1
 caption: "Ja, dat vintage Atari t-shirt mag er ook wel wezen."
 date: "2017-10-18"
 intro: "Dit bericht is oorspronkelijk verschenen op de Instagram-feed van joostdecock ."

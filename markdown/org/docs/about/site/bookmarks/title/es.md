@@ -2,7 +2,7 @@
 title: Título
 ---
 
-Every bookmark has a **title** attribute that is mandatory.
+Cada marcador tiene un atributo **title** que es obligatorio.
 
-In other words, you must give each of your bookmarks a title, but that title can be anything you want.
+En otras palabras, debes dar un título a cada uno de tus marcadores, pero ese título puede ser cualquier cosa que desees.
 

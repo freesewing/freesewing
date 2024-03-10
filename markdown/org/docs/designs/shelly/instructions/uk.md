@@ -1,106 +1,106 @@
 ---
-title: "Shelly shirt: Sewing Instructions"
+title: "Сорочка Шеллі: Інструкція з пошиття"
 ---
 
 <Note>
 
-The use of a serger or an overlocking foot is recommended, to keep the size of the finished seams small. If using a serger, a seam allowance of 1/2 inch (12 mm) is recommeded. If using an overlocking foot on a sewing machine, or serging without the use of the knife, a seam allowance of 1/4 inch (6 mm) is recommended.
+Рекомендується використовувати сермер або оверлочну лапку, щоб зберегти невеликий розмір готових швів. If using a serger, a seam allowance of 1/2 inch (12 mm) is recommended. У разі використання оверлочної лапки на швейній машині або зшивання без використання ножа рекомендується робити припуск на шов 1/4 дюйма (6 мм).
 
-All seams, including the neckband, can be done with the same stitch, whether it be a serger, an overlock stitch, or a stretch stitch.
+Всі шви, включаючи горловину, можуть бути виконані однією і тією ж строчкою, будь то сергерна, оверлочна або розтяжна строчка.
 
-Hems are optional (since knit doesn't fray), but if you do make hems, make sure they can stretch.
+Підгинання необов'язкове (оскільки трикотаж не зношується), але якщо ви робите підгинання, переконайтеся, що вони можуть розтягуватися.
 
-Make sure to use a stitch that can stretch. If sewing stretch fabric, adjust your tension to allow for extra stretch. On a serger, this will usually mean lowering the needle tension, especially the right needle, and adjusting the looper tension as needed to keep the stitch looking decent. On a regular sewing machine, lower the tension. Test your choice of stitch first on scrap fabric, and try to shap the test seam by stretching the seam along its length. It should only snap after stretching quite a bit. If it pops too easily, keep playing with your stitches/tension settings until you get something that can survive some abuse.
+Переконайтеся, що ви використовуєте стібок, який може розтягуватися. Якщо ви шиєте еластичну тканину, відрегулюйте натяг, щоб забезпечити додаткове розтягнення. На швейній машині це зазвичай означає послаблення натягу голки, особливо правої, і регулювання натягу петлі за необхідності, щоб стібок виглядав пристойно. На звичайній швейній машині зменшіть натяг. Test your choice of stitch first on scrap fabric, and try to shape the test seam by stretching the seam along its length. Він повинен клацнути лише після того, як трохи розтягнеться. Якщо вона розривається надто легко, продовжуйте гратися зі стібками та налаштуваннями натягу, поки не отримаєте щось, що витримає певні зловживання.
 
-For making t-shirts or other shirts with 2-way stretch, regular settings with a stitch that stretches should be fine.
+Для пошиття футболок або інших сорочок з двостороннім розтягуванням підійдуть звичайні налаштування зі строчкою, що розтягується.
 
 </Note>
 
-### Step 0: Customizing and fitting your pattern
+### Крок 0: Налаштування та підгонка вашого шаблону
 
- - Select an appropriate sleeve length.
-   - 10-30% for short sleeves.
-   - 75% for 3/4 length sleeves.
-   - 100% for long sleeves (to the wrist).
-   - 115% is a good value if making a shirt with thumb holes (extends to the knuckles)
+ - Виберіть відповідну довжину рукава.
+   - 10-30% для коротких рукавів.
+   - 75% для рукавів довжиною 3/4.
+   - 100% для довгих рукавів (до зап'ястя).
+   - 115% - це хороше значення, якщо ви робите сорочку з отворами для великих пальців (поширюється на кісточки пальців)
 
- - Select an appropriate body length.
-   - Up to 80% or so will produce a crop top.
-   - 100% ends at top of the hip bone.
-   - 120% will produce a typical t-shirt.
-   - 140% will produce a somewhat longer shirt that is less prone to untucking or riding up.
-   - 200%+ can be used to make a simple t-shirt dress. It's suggested that you set straight sides to false, and adjust the side shape (under advanced options) for t-shirt dresses.
- - If in doubt, it's a lot easier to shorten a shirt or a sleeve than to lengthen it.
+ - Виберіть відповідну довжину тіла.
+   - До 80% або близько того утворюється верхівка.
+   - 100% закінчується у верхній частині стегнової кістки.
+   - 120% - це звичайна футболка.
+   - 140% дасть дещо довшу сорочку, яка менш схильна до розстібання або задирання.
+   - 200%+ можна використати для пошиття простої сукні-футболки. Для прямих боків рекомендується встановити значення false, а для суконь-футболок відрегулювати форму боків (у додаткових опціях).
+ - Якщо ви сумніваєтеся, набагато простіше вкоротити сорочку або рукав, ніж подовжити його.
 
- - Figure out what kind of fit you want and set your eases accordingly. Make sure you have an appropriate fabric. If in doubt, making the shirt too loose is safer than too tight.
-   - In general, when working with spandex, you want 0% to negative ease. When working with ordinary cotton/polyester t-shirt fabric, you want positive ease, both because the fabric stretches less, and because typical styles using that fabric are looser.
-   - Sensory compression shirts will be the tightest / have the most negative ease.
-     - 4-way stretch fabric is required. Swim fabric or another very stretchy fabric is strongly recommended.
-     - Chest ease: -30% to -20%. This is the most important part to compress for sensory purposes, and is a relatively safe place to put tension.
-     - Sleeve ease: -20% to -10%. Compression here can be beneficial, but you don't want it so tight that you cut off circulation.
-     - Wrist ease: -15% to 0%. Mostly preference.
-     - Neck ease: 25% to 100% (25% will still be a very snug neckband that will take some stretching to get on/off the head, because of how the neckband is constructed and because neckholes usually are quite a bit bigger than the neck to fit over the head.
+ - З'ясуйте, яку посадку ви хочете, і встановіть відповідну зручність. Переконайтеся, що у вас є відповідна тканина. Якщо ви сумніваєтеся, то краще зробити сорочку занадто вільною, ніж занадто тісною.
+   - Загалом, при роботі зі спандексом вам потрібна легкість від 0% до від'ємної. Працюючи зі звичайною бавовняною/поліефірною тканиною для футболок, ви прагнете позитивної легкості, як тому, що тканина менше розтягується, так і тому, що типові фасони, які використовують цю тканину, більш вільні.
+   - Сенсорні компресійні сорочки будуть найщільнішими / матимуть найбільш негативну легкість.
+     - Потрібна 4-стороння еластична тканина. Наполегливо рекомендується плавальна тканина або інша дуже еластична тканина.
+     - Полегшення в грудях: від -30% до -20%. Це найважливіша частина для стискання в сенсорних цілях, і це відносно безпечне місце для створення напруги.
+     - Легкість рукава: від -20% до -10%. Компресія тут може бути корисною, але вона не повинна бути настільки щільною, щоб перекрити кровообіг.
+     - Легкість в зап'ясті: -15% до 0%. Здебільшого вподобання.
+     - Зручність для шиї: Від 25% до 100% (25% - це все ще дуже тісний нашийник, який потрібно буде трохи розтягнути, щоб надіти/зняти з голови, через конструкцію нашийника, а також через те, що отвори для шиї зазвичай трохи більші за шию, щоб надягати на голову.
 
-   - Athletic shirt
+   - Спортивна сорочка
 
 <Fixme>
-     - The author hasn't made one yet. If someone knows what eases to use, please let me know.
-       - Highly breathable fabric with some spandex/stretch is recommended.
+     - Автор ще не створив його. Якщо хтось знає, що є простішим у використанні, будь ласка, повідомте мені.
+       - Рекомендується повітропроникна тканина з додаванням спандексу/стрейчу.
 </Fixme>
 
-     - Eases are somewhere between those for a compression shirt and a swim shirt.
+     - Легкість - це щось середнє між компресійним трико та купальником.
 
-   - Swim shirt (looser fitting stretch shirt meant for swimming)
-     - Swim fabric (spandex/nylon blend or spandex/polyester blend, around 20% spandex)
-     - Chest ease: ~0%
-     - Sleeve ease: 0-15%
-     - Neck ease: 50 to 150% (mostly a style decision). Ease under 50% isn't recommended unless you like very snug neckbands.
+   - Майка для плавання (еластична майка вільного крою, призначена для плавання)
+     - Тканина для плавання (суміш спандекс/нейлон або спандекс/поліестер, близько 20% спандексу)
+     - Полегшення в грудях: ~0%
+     - Легкість рукава: 0-15%
+     - Легкість шиї: Від 50 до 150% (здебільшого залежить від стильового рішення). Легкість нижче 50% не рекомендується, якщо тільки ви не любите дуже щільні шийні пов'язки.
 
-   - T-shirt
+   - Футболка.
 <Fixme>
-     - The author hasn't made one yet. If someone knows what eases to use, please let me know.
-       - Eases will be quite a bit more larger (more positive) than for other shirt types.
+     - Автор ще не створив його. Якщо хтось знає, що є простішим у використанні, будь ласка, повідомте мені.
+       - Облягання буде трохи більшим (більш позитивним), ніж для інших типів сорочок.
 </Fixme>
 
-   - Sweatshirt
+   - Світшот
 <Fixme>
-     - The author hasn't made one yet. If someone knows what eases to use, please let me know.
-       - Eases will be similar to that for a t-shirt, or a little larger.
+     - Автор ще не створив його. Якщо хтось знає, що є простішим у використанні, будь ласка, повідомте мені.
+       - Викрійки будуть схожі на ті, що для футболки, або трохи більші.
 </Fixme>
 
- - The neckband length will be mostly determined by the material of the neckband. Stretch fabric will generally use a length of around 80%. Less stretchy fabric will be longer, but always shorter than 100%, and ribbed knit (recommended for t-shirt neckbands) are around 60-70%.
+ - Довжина шийного ремінця здебільшого визначається матеріалом, з якого він виготовлений. Стретч-тканина, як правило, використовується приблизно на 80% довжини. Менш еластична тканина буде довшою, але завжди коротшою за 100%, а ребристий трикотаж (рекомендований для горловин футболок) - близько 60-70%.
 
-### Step 1: Forming the body and attaching the sleeves
+### Крок 1: Формуємо корпус і пришиваємо рукава
 
-- With _good sides together_, sew the front piece to each sleeve along the raglan seam (the diagonal seam running from the neck to the armpit).
-- With _good sides together_, sew the back piece to each sleeve along the raglan seam. You should now have a single piece with a circular neck hole in the middle.
+- Склавши _лицьовими боками разом_, пришийте передню частину до кожного рукава по шву реглан (діагональний шов, що йде від горловини до пахвової западини).
+- Склавши _лицьовими боками разом_, пришийте спинку до кожного рукава вздовж шва реглан. Тепер у вас має вийти одна деталь з круглим отвором для горловини посередині.
 
-### Step 2: Attaching the neckband
+### Крок 2: Прикріплення шийного ремінця
 
-- With _good sides together_, fold the neckband in half long ways (so it's half as long) and sew it into a loop.
-- With _wrong sides together_, fold the neckband in half short ways (so it's half as wide).
-- Turn the shirt _good-side_-out
-- Mark the quarter points on your neckband with ball point pins, clips, or chalk.
-- Do the same around the neck hole, marking the center of the front, the center of the back, and the midpoints on either sleeve.
-- With _good sides together_, line up the unfinished edges of the neckband with the edge of the neck hole, and line up the quarter points of the neckband with the quarter points of the neck hole. Stretch the neckband as needed to have all the points line up. Pin or clip the neckband around the neck hole.
- - Sew carefully around the neck hole, making sure to sew through all 3 layers.
- - Turn the neckband over. It should lay flat.
+- Склавши _лицьовими сторонами разом_, складіть шийну пов'язку вздовж навпіл (так вона стане вдвічі коротшою) і зшийте її в петлю.
+- Складіть _виворітними боками разом_, складіть шийну стрічку навпіл короткими сторонами (щоб вона стала вдвічі вужчою).
+- Виверніть сорочку _лицьовою стороною_-назовні
+- Позначте чверть точки на шийному ремінці за допомогою кулькових шпильок, скріпок або крейди.
+- Зробіть те ж саме навколо отвору для горловини, позначивши центр переду, центр спинки і середні точки на обох рукавах.
+- Складіть _лицьовими боками разом_, сумістіть незакінчені краї горловини з краєм вирізу горловини і сумістіть чверть точки горловини з чверть точками вирізу горловини. Розтягніть шийну стрічку так, щоб усі точки вирівнялися. Закріпіть шийну пов'язку навколо отвору для шиї шпилькою або затискачем.
+ - Обережно прошийте навколо отвору для горловини, обов'язково прошиваючи всі 3 шари.
+ - Переверніть шийну пов'язку. Він повинен лежати рівно.
 
-### Step 3: Closing the sleeves and sides
+### Крок 3: Закриваємо рукави та боки
 
-- Turn the shirt inside-out.
-- With _good sides together_, place the front and back pieces together and pin/clip their sides together.
-- With _good sides together_, close the sleeve and pin/clip it along the sleeve seam.
-- You should have a single seam prepared, going from the end of the sleeve to the bottom hem of the body.
-- Sew it shut.
-- Repeat for the other side.
+- Виверніть сорочку навиворіт.
+- За допомогою _лицьовими сторонами разом_, складіть передню і задню частини разом і скріпіть їх між собою булавками/скріпками.
+- Складіть _лицьовими сторонами разом_, закрийте рукав і приколіть/закріпіть його по шву рукава.
+- У вас повинен бути підготовлений один шов, що йде від кінця рукава до нижнього краю тулуба.
+- Зашивай.
+- Повторіть з іншого боку.
 
-### Step 4: (Optional) Hemming
+### Крок 4: (необов'язково) Підшивання
 
-- Hem the sleeves and/or the bottom of the shirt using a single-fold hem. Using a twin needle will add some stretch to the stitching, but in either case the use of a stretch stitch is still recommended for high-stretch fabrics.
-- Alternatively, you can overlock or serge the raw edge _without_ folding it over to give it a little bit of substance without adding as much bulk as a folded hem, or you can make a rolled hem.
-- Or you can leave the edges unfinished, particularly if it's swim fabric or some other fabric that does not fray at all.
+- Підшийте рукава та/або низ сорочки, використовуючи односторонній підгин. Використання подвійної голки додасть строчці деякого розтягування, але в будь-якому випадку для тканин з високим ступенем розтягування все одно рекомендується використовувати розтяжну строчку.
+- Крім того, ви можете обробити необроблений край _без_ підгинання, щоб надати йому трохи об'ємності, не додаючи при цьому стільки об'єму, як при підгинанні, або ж ви можете зробити підгин удвічі.
+- Або ж ви можете залишити краї необробленими, особливо якщо це тканина для плавання або інша тканина, яка зовсім не кошлатиться.
 
-### Step 5: Enjoy your new shirt!
+### Крок 5: Насолоджуйтесь своєю новою сорочкою!
 
-- It's time to take your new shirt for a swim, or to show it off at the beach!
+- Настав час взяти нову сорочку для купання або для того, щоб похизуватися нею на пляжі!

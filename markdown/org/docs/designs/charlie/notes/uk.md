@@ -1,14 +1,14 @@
 ---
-title: "Charlie chinos: Designer Notes"
+title: "Чарлі чінос: Нотатки дизайнера"
 ---
 
-I don't think I have ever had a design where I knew what I was going to name it long before sitting down to actually create it. Charlie Chinos was just too good to not make happen.
+Не думаю, що у мене коли-небудь був дизайн, коли я знав, як я назву його задовго до того, як сів за роботу над ним. Чарлі Чінос був занадто гарний, щоб не відбутися.
 
-It took a while because it took a long time before [Titan](/designs/titan) was in a state where I was happy with it. Trousers are hard. Trouser blocks double so.
+Це зайняло деякий час, тому що пройшло багато часу, перш ніж [Titan](/designs/titan) був у стані, коли я був ним задоволений. Штани жорсткі. Брючні колодки подвоюються.
 
-This is for the most part a rather straight-forward chino pattern, but it has one twist: The front packets are placed on the side seam. That side seam wraps around towards the front to give the slanted pocket look.
+Здебільшого це досить проста модель чинос, але вона має один нюанс: передні пакети розміщені на боковому шві. Цей бічний шов загортається до переду, щоб надати кишені вигляду похилої.
 
-It's a bit of unusual and creative design that I guess I did because I can? Anyway, it's something to be mind ful of because if you do not expect it the front panels look a bit weird.
+Це трохи незвичний і креативний дизайн, який я зробив, мабуть, тому, що я можу? Anyway, it's something to be mindful of because if you do not expect it the front panels look a bit weird.
 
 Йост
 

@@ -1,8 +1,8 @@
 ---
-title: "Bee bikini top: Designer Notes"
+title: "Bienen-Bikinioberteil: Designer Notes"
 ---
 
-I made Bee together with Prudencerabbit, as they wanted to make a swimwear pattern that went along with a previous freesewing pattern. It is based on a garment they made and wanted to make available for other people make as well. We worked of FreeSewing's body block Bella as a base, converting it to a single dart block to make the top. During pattern testing one of our contributors TangerineShark made a vartiant with crossover back ties which we found so cool we added it to Bee! You can get this variation by using [option Cross Back Ties](/docs/designs/bee/options/crossbackties/). Bee can also be made reversible by using options [Reversible](/docs/designs/bee/options/reversible), [Duo Colours Ties](/docs/designs/bee/options/duocolorties) & [Neck Tie Colours](/docs/designs/bee/options/necktiecolours). With the previous pattern being retired you can use [Uma](docs/designs/uma) to make a matching bikini bottom.
+Ich habe Bee zusammen mit Prudencerabbit gemacht, weil sie ein Bademodenmuster machen wollten, das zu einem früheren Freesewing-Muster passt. Es basiert auf einem Kleidungsstück, das sie selbst hergestellt haben und das sie auch anderen zur Verfügung stellen wollten. Wir haben den Körperblock Bella von FreeSewing als Basis verwendet und ihn für das Oberteil in einen Abnäherblock umgewandelt. Du kannst diese Variante mit der [Option Cross Back Ties](/docs/designs/bee/options/crossbackties/)erhalten. Bee kann auch reversibel gemacht werden, indem du die Optionen [Reversible](/docs/designs/bee/options/reversible), [Duo Colours Ties](/docs/designs/bee/options/duocolorties) & [Neck Tie Colours](/docs/designs/bee/options/necktiecolours)verwendest. Da das vorherige Muster nicht mehr verwendet wird, kannst du [Uma](docs/designs/uma) verwenden, um ein passendes Bikini-Unterteil herzustellen. During pattern testing one of our contributors TangerineShark made a variant with crossover back ties which we found so cool we added it to Bee!
 
 _
 

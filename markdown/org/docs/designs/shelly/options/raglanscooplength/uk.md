@@ -1,6 +1,6 @@
 ---
-title: "Raglan scoop length"
+title: "Довжина черпака реглан"
 ---
 
-Controls how far out from the armhole the raglan seam starts to scoop. Larger arms and smaller chests may need to use slightly larger values for this option, but it can usually be left at the default value without issue.
+Контролює, на якій відстані від пройми починається залом шва реглан. Для більших рук і менших грудей може знадобитися трохи більше значення для цієї опції, але зазвичай її можна залишити за замовчуванням без проблем.
 

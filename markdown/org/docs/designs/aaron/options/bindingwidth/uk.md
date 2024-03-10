@@ -1,14 +1,14 @@
 ---
-title: Binding width
+title: Ширина палітурки
 ---
 
-Controls the width of the kniw binding on Aaron.
+Controls the width of the knit binding on Aaron.
 
-The default knit binding width is 6 x the seam allowance. For metric users with the default 1cm seam allowance, this results in a 1.5cm wide knit binding which is a good value.
+За замовчуванням ширина трикотажної в'язки становить 6 х припуск на шов. Для користувачів метричної системи з припуском на шви за замовчуванням 1 см, це означає, що трикотажна палітурка шириною 1,5 см - це хороша ціна.
 
-For imperial users (who have a default seam allowance of 0.5") or users who choose to use a larger seam allowance, the value of 6 time the seam allowance will probable result in a knit binding that it too wide, so this option allows you to control that.
+Для користувачів, які використовують стандартний припуск на шов 0,5", або користувачів, які вирішили використовувати більший припуск на шов, значення 6-кратного припуску на шов, ймовірно, призведе до того, що в'язане палітурка буде занадто широким, тому ця опція дозволяє контролювати цей параметр.
 
 <Note>
 
-This option is expressed in percetage of the seam allowance. So the default s600%, or 6 time the seam allowance,.
+This option is expressed in percentage of the seam allowance. So the default is 600%, or 6 time the seam allowance.
 </Note>

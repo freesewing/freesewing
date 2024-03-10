@@ -1,8 +1,8 @@
 ---
-title: "Bee bikini top: Designer Notes"
+title: "Топ-бікіні \"Бджілка\": Нотатки дизайнера"
 ---
 
-I made Bee together with Prudencerabbit, as they wanted to make a swimwear pattern that went along with a previous freesewing pattern. It is based on a garment they made and wanted to make available for other people make as well. We worked of FreeSewing's body block Bella as a base, converting it to a single dart block to make the top. During pattern testing one of our contributors TangerineShark made a vartiant with crossover back ties which we found so cool we added it to Bee! You can get this variation by using [option Cross Back Ties](/docs/designs/bee/options/crossbackties/). Bee can also be made reversible by using options [Reversible](/docs/designs/bee/options/reversible), [Duo Colours Ties](/docs/designs/bee/options/duocolorties) & [Neck Tie Colours](/docs/designs/bee/options/necktiecolours). With the previous pattern being retired you can use [Uma](docs/designs/uma) to make a matching bikini bottom.
+Я створила Bee разом з Prudencerabbit, оскільки вони хотіли створити модель купальника, яка б поєднувалася з попередньою моделлю фрісліфтингу. Він заснований на одязі, який вони виготовили і хотіли зробити доступним для інших людей. Ми працювали з боді-блоком Bella від FreeSewing як основою, перетворивши його на блок з однією виточкою для виготовлення верху. During pattern testing one of our contributors TangerineShark made a variant with crossover back ties which we found so cool we added it to Bee! Ви можете отримати цю варіацію, використовуючи [опцію Cross Back Ties](/docs/designs/bee/options/crossbackties/). Бджілку також можна зробити двосторонньою за допомогою опцій [Reversible](/docs/designs/bee/options/reversible), [Duo Colours Tie](/docs/designs/bee/options/duocolorties) & [Neck Tie Colours](/docs/designs/bee/options/necktiecolours). Після того, як попередня викрійка буде знята, ви можете використати [Uma](docs/designs/uma) , щоб зробити відповідну нижню частину бікіні.
 
 _
 

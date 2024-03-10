@@ -3,7 +3,10 @@ export const cutlistStores = [
   ['cutlist.setCut', setCut],
   ['cutlist.removeCut', removeCut],
   ['cutlist.setGrain', setGrain],
+  ['cutlist.removeGrain', removeGrain],
+  ['cutlist.getGrainOrigin', getGrainOrigin],
   ['cutlist.setCutOnFold', setCutOnFold],
+  ['cutlist.removeCutOnFold', removeCutOnFold],
   ['cutlist.getCutFabrics', getCutFabrics],
 ]
 
@@ -70,15 +73,35 @@ function setCut(store, so) {
 }
 
 /** Method to add the grain info (called by grainline and cutonfold macros) */
-function setGrain(store, grain = false) {
+function setGrain(store, grain = false, origin = 'grainline') {
   const partName = store.get('activePart')
   const path = ['cutlist', partName, 'grain']
-  if (grain === false) return store.unset(path)
+  if (grain === false) {
+    store.log.warn('Using setGrain() to remove the grain is deprecated. Use removeGrain() instead')
+    return store.unset(path)
+  }
   if (typeof grain !== 'number') {
     store.log.error('Called part.setGrain() with a value that is not a number')
     return store
   }
+  /*
+   * Since both grainline and cutonfold macros can set the grainline
+   * we need to keep track of who did what so they can remove the grainline
+   * only when it's the one they set. So we store grainOrigin for this
+   */
+  store.set(['cutlist', partName, 'grainOrigin'], origin)
+
   return store.set(path, grain)
+}
+
+/** Method to retrieve the grainOrigin */
+function getGrainOrigin(store) {
+  return store.get(['cutlist', store.get('activePart'), 'grainOrigin'], null)
+}
+
+/** Method to remove the grain info (called by rmgrainline and rmcutonfold macros) */
+function removeGrain(store) {
+  return store.unset(['cutlist', store.get('activePart'), 'grain'])
 }
 
 /** Method to add the cutOnFold info (called by cutonfold macro)  */
@@ -86,6 +109,9 @@ function setCutOnFold(store, p1, p2) {
   const partName = store.get('activePart')
   const path = ['cutlist', partName, 'cutOnFold']
   if (p1 === false && typeof p2 === 'undefined') {
+    store.log.warn(
+      'Using setCutOnFold() to remove the cutonfold is deprecated. Use removeCutOnFold() instead'
+    )
     return store.unset(path)
   }
   if (!isNaN(p1.x) && !isNaN(p1.y) && !isNaN(p2.x) && !isNaN(p2.y)) {
@@ -94,6 +120,11 @@ function setCutOnFold(store, p1, p2) {
     store.log.error('Called part.setCutOnFold() but at least one parameter is not a Point instance')
 
   return store
+}
+
+/** Method to add remove cutOnFold info (called by rmcutonfold macro)  */
+function removeCutOnFold(store) {
+  return store.unset(['cutlist', store.get('activePart'), 'cutOnFold'])
 }
 
 /** Get a list of fabrics used by the pattern for the given settings */

@@ -38,6 +38,6 @@ Es gibt drei Varianten dieses Musters. **One Colour**, bei dem das Bikiniobertei
 
 <Note>
 
-Dieses Muster lässt sich leicht wenden, indem du einen ähnlichen Stoff wie den Hauptstoff kaufst und ihn als Kontrast verwendest. Um Verwirrung in der Anleitung zu vermeiden, wird er als Futterstoff bezeichnet.
+Dieses Muster lässt sich leicht wenden, indem du einen ähnlichen Stoff wie den Hauptstoff kaufst und ihn als Kontrast verwendest. To save confusion on instructions it will be referred to as the lining fabric.
 
 </Note>

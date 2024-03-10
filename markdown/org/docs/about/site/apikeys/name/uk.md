@@ -2,15 +2,15 @@
 title: 'API Keys: Name'
 ---
 
-Every API key has a **name** attribute that is mandatory.
+Кожен ключ API має обов'язковий атрибут **name** .
 
-In other words, you must give each of your API keys a name, but that name can be anything you want.
+Іншими словами, ви повинні дати кожному ключу API ім'я, але це ім'я може бути будь-яким.
 
-Typically, people give names that describe where the key is used, like:
+Зазвичай люди дають назви, які описують, де використовується ключ, наприклад:
 
-- Production backend
-- GitLab runner
-- Local development on my laptop
+- Виробничий бекенд
+- Бігун GitLab
+- Локальна розробка на моєму ноутбуці
 
-But you do you.
+Але ти знаєш.
 

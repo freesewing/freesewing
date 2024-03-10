@@ -2,6 +2,6 @@
 title: "Falda"
 ---
 
-Select whether or not you want to add a simple gathered skirt around the waist of the garment.
+Selecciona si quieres añadir o no un faldón fruncido sencillo alrededor de la cintura de la prenda.
 
-This is a basic skirt intended to not add much bulk to the garment while offering a degree of modesty and flair. It's designed for use with swimwear, but may work well for other types of garments.
+Se trata de una falda básica pensada para no añadir mucho volumen a la prenda y, al mismo tiempo, ofrecer cierto grado de modestia y estilo. Está diseñado para su uso con bañadores, pero puede funcionar bien con otro tipo de prendas.

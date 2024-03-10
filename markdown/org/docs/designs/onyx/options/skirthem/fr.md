@@ -1,5 +1,5 @@
 ---
-title: "Skirt hem"
+title: "Ourlet de la jupe"
 ---
 
-Sets the hem allowance of the hem along the bottom of the skirt, as a multiple of the seam allowance.
+Définit la marge de l'ourlet le long du bas de la jupe, en tant que multiple de la marge de couture.

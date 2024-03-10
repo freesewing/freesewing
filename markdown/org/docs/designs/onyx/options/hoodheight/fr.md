@@ -2,6 +2,6 @@
 title: "Hauteur de capuche"
 ---
 
-Controls how tall the hood will be.
+Contrôle la hauteur de la hotte.
 
-Note: This option is only available if the 'neck style' option is set to 'hood.'
+Remarque : cette option n'est disponible que si l'option " style de cou " est réglée sur " capuche ".

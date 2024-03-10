@@ -1,8 +1,6 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import { round, Design } from '@freesewing/core'
 import { annotationsPlugin } from '../src/index.mjs'
-
-const expect = chai.expect
 
 describe('Bartack plugin Tests', () => {
   it('draws a default bartack from a point', function () {

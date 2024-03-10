@@ -1,5 +1,5 @@
 ---
-title: "Bob the Bib: What You Need"
+title: "Bob le dossard : Ce dont tu as besoin"
 ---
 
 Pour fabriquer Bob, tu auras besoin des éléments suivants :

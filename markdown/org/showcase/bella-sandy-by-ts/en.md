@@ -5,6 +5,7 @@ date: "2021-09-25"
 intro: "This dress is a hybrid of the Bella body block and the Sandy circle skirt . I've been calling the combo Sanderella."
 title: "A Celestial Sanderella"
 designs: ["bella","sandy"]
+author: 13050
 ---
 
 This dress is a hybrid of the [Bella body block](https://freesewing.org/designs/bella/) and the [Sandy circle skirt](https://freesewing.org/designs/sandy/). I've been calling the combo Sanderella.

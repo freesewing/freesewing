@@ -1,9 +1,9 @@
 ---
-title: "Wrist ease"
+title: "Polsgemak"
 ---
 
-Affects how wide the end of the sleeve is on some garments. There is no effect for sleeves ending at the biceps or above. There is no effect for sleeves ending at the biceps or above.
+Heeft invloed op hoe breed het uiteinde van de mouw is bij sommige kledingstukken. Er is geen effect voor mouwen die eindigen bij de biceps of daarboven. Er is geen effect voor mouwen die eindigen bij de biceps of daarboven.
 
-> ##### This option allows negative values
+> ##### Deze optie staat negatieve waarden toe
 > 
-> You should use negative ease if you are using a stretch material that you want to fit tightly. Unisuits and unitards typically have negative ease, while other garments typically have positive ease.
+> Je moet negatief gemak gebruiken als je een stretchmateriaal gebruikt dat je strak wilt laten aansluiten. Unisuits en unitards hebben meestal een negatieve pasvorm, terwijl andere kledingstukken meestal een positieve pasvorm hebben.

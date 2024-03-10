@@ -1,71 +1,71 @@
-accountBlocked: Your account is blocked
-accountBlockedMsg: This is highly unusual but it seems your account is administratively blocked. Your only recourse is to contact support.
-alreadyHaveAnAccount: Already have an account?
+accountBlocked: Tu cuenta está bloqueada
+accountBlockedMsg: Esto es muy inusual, pero parece que tu cuenta está bloqueada administrativamente. Tu único recurso es ponerte en contacto con el servicio de asistencia.
+alreadyHaveAnAccount: '¿Ya tienes una cuenta?'
 back: Atrás
-backToSignIn: Back to sign in
-backToSignUp: Back to sign up
-checkYourInbox: Go check your inbox for an email from
-clickSigninLink: Click the sign-in link in that email to sign in to your FreeSewing account.
-clickSignupLink: Click your personal signup link in that email to create your FreeSewing account.
-consentLacking: We lack consent to process your data
-consentLackingMsg: Getting your consent is part of sign up process. Look for the email you received when you signed up for instracutions. You can sign up again with the same email address to receive the email again.
+backToSignIn: Volver a iniciar sesión
+backToSignUp: Volver a inscribirse
+checkYourInbox: Busca en tu bandeja de entrada un correo electrónico de
+clickSigninLink: Haz clic en el enlace de inicio de sesión de ese correo electrónico para acceder a tu cuenta de FreeSewing.
+clickSignupLink: Haz clic en el enlace de registro personal de ese correo electrónico para crear tu cuenta de FreeSewing.
+consentLacking: Carecemos de consentimiento para tratar tus datos
+consentLackingMsg: Getting your consent is part of sign up process. Look for the email you received when you signed up for instructions. You can sign up again with the same email address to receive the email again.
 contact: Contactar con asistencia
-contactingGithub: Contacting GitHub
-contactingGoogle: Contacting Google
-createAFreeSewingAccount: Create a FreeSewing account
-dontHaveAV2Account: Don't have a v2 account?
-dontHaveAnAccount: Don't have an account yet?
+contactingGithub: Contactar con GitHub
+contactingGoogle: Contactar con Google
+createAFreeSewingAccount: Crear una cuenta FreeSewing
+dontHaveAV2Account: '¿No tienes una cuenta v2?'
+dontHaveAnAccount: '¿Aún no tienes cuenta?'
 emailAddress: Dirección de correo electrónico
-emailMissing: Please provide your E-mail address
-emailSent: Email sent
-emailSignupLink: Email me a sign-up link
-emailSigninLink: Email me a sign-in link
-emailUsernameId: "Your Email address, Username, or User #"
-err2: Unfortunately, we cannot recover from this error, we need a human being to look into this.
-err3: Feel free to try again, or reach out to support so we can assist you.
-fewerOptions: Fewer options
-haveAV2Account: Have a v2 account?
+emailMissing: Indica tu dirección de correo electrónico
+emailSent: Correo electrónico enviado
+emailSignupLink: Envíame un enlace de inscripción por correo electrónico
+emailSigninLink: Envíame un enlace de inicio de sesión por correo electrónico
+emailUsernameId: "Tu dirección de correo electrónico, nombre de usuario o número de usuario"
+err2: Desgraciadamente, no podemos recuperarnos de este error, necesitamos que un ser humano lo investigue.
+err3: No dudes en volver a intentarlo o ponte en contacto con el servicio de asistencia para que podamos ayudarte.
+fewerOptions: Menos opciones
+haveAV2Account: '¿Tienes una cuenta v2?'
 joinFreeSewing: Únete a FreeSewing
-mfaCode: MFA code
-mfaCodeMsg: Please provide a one-time MFA code, or a backup scratch code
-migrateItHere: Migrate it here
-migrateNoWorkie: Unable to migrate this account. Typically that means your credentials are invalid.
-migrateV2Account: Migrate your v2 account
-migrateV2Desc: Enter your v2 username & password to migrate your account.
-migrateV2Info: Your v2 account will not be changed, this will only create a v3 account with the v2 account data.
-migrateV3UserAlreadyExists: Cannot migrate over an existing v3 account. Perhaps just sign in instead?
-moreOptions: More options
-noMagicFound: No such magic (link) found
-noMagicFoundMsg: The magic link you used is either expired, or invalid. Note that each magic link can only be used once.
-noSuchUser: User not found
-noSuchUserMsg: We tried to find the user account you requested, but were unable to find it.
-notFound: No such user was found
+mfaCode: Código AMF
+mfaCodeMsg: Por favor, proporciona un código MFA de un solo uso, o un código scratch de reserva
+migrateItHere: Migrarlo aquí
+migrateNoWorkie: No se ha podido migrar esta cuenta. Normalmente esto significa que tus credenciales no son válidas.
+migrateV2Account: Migrar tu cuenta v2
+migrateV2Desc: Introduce tu nombre de usuario y contraseña de la v2 para migrar tu cuenta.
+migrateV2Info: Tu cuenta v2 no se modificará, esto sólo creará una cuenta v3 con los datos de la cuenta v2.
+migrateV3UserAlreadyExists: No se puede migrar una cuenta v3 existente. ¿Quizá sólo tengas que iniciar sesión?
+moreOptions: Más opciones
+noMagicFound: No se ha encontrado tal magia (enlace)
+noMagicFoundMsg: El enlace mágico que has utilizado ha caducado o no es válido. Ten en cuenta que cada enlace mágico sólo puede utilizarse una vez.
+noSuchUser: Usuario no encontrado
+noSuchUserMsg: Hemos intentado encontrar la cuenta de usuario que solicitaste, pero no ha sido posible.
+notFound: No se ha encontrado dicho usuario
 oneMomentPlease: Un momento, por favor
-password: Your Password
-passwordMissing: Please provide your password
-pleaseProvideValidEmail: Please provide a valid email address
+password: Tu contraseña
+passwordMissing: Introduce tu contraseña
+pleaseProvideValidEmail: Proporciona una dirección de correo electrónico válida
 processing: Procesando
-regainAccess: Re-gain access
+regainAccess: Recuperar el acceso
 signIn: Inicia sesión
-signInAsOtherUser: Sign in as a different user
-signInFailed: Sign in failed
-signInFailedMsg: Not entirely certain why, but it did not work as expected.
-signInHere: Sign in here
-signInToThing: "Sign in to { thing }"
-signInWithProvider: Sign in with { provider }
-signUpHere: Sign up here
+signInAsOtherUser: Iniciar sesión como un usuario diferente
+signInFailed: Fallo al iniciar sesión
+signInFailedMsg: No sé muy bien por qué, pero no funcionó como se esperaba.
+signInHere: Entra aquí
+signInToThing: "Entra en { thing }"
+signInWithProvider: Entra en { provider }
+signUpHere: Inscríbete aquí
 signUpWithProvider: Regístrate con {provider}
-signupAgain: Sign up again
-signupLinkExpired: Signup link expired
+signupAgain: Regístrate de nuevo
+signupLinkExpired: Enlace de registro caducado
 somethingWentWrong: Algo salió mal
-sorry: Sorry
-statusLacking: Your account is in a non-active status
-statusLackingMsg: The current status of your account prohibits us from proceeding. The most common reason for this is that you did not complete the onboarding process and thus your account was never activated. You can sign up again with the same email address to remediate this.
-toReceiveSignupLink: To receive a sign-up link, enter your email address
-tryAgain: Try again
-usePassword: Use your password
-usernameMissing: Please provide your username
+sorry: Lo siento
+statusLacking: Tu cuenta está en estado inactivo
+statusLackingMsg: El estado actual de tu cuenta nos impide continuar. La razón más común es que no completaste el proceso de incorporación y, por tanto, tu cuenta nunca se activó. Puedes registrarte de nuevo con la misma dirección de correo electrónico para remediarlo.
+toReceiveSignupLink: Para recibir un enlace de inscripción, introduce tu dirección de correo electrónico
+tryAgain: Inténtalo de nuevo
+usePassword: Utiliza tu contraseña
+usernameMissing: Indica tu nombre de usuario
 welcome: Bienvenido
-welcomeBackName: "Welcome back { name }"
-welcomeMigrateName: Welcome to FreeSewing v3 {name}. Please note that this is still alpha code.
+welcomeBackName: "Bienvenido de nuevo { name }"
+welcomeMigrateName: Bienvenido a FreeSewing v3 {name}. Ten en cuenta que éste es todavía código alfa.
 

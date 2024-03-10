@@ -2,7 +2,7 @@
 title: Location
 ---
 
-Every bookmark has a **loation** attribute that is mandatory. It holds the URL of the bookmark.
+Chaque marque page possède un attribut **location** qui est obligatoire. Il contient l'URL du marque page.
 
-A bookmark without a location or URL is useless, as this holds the location the bookmark should point to.
+Un marque page sans location ou URL est inutile, car il contient l'emplacement vers lequel le marque page doit pointer.
 

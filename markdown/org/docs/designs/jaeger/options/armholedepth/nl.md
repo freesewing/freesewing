@@ -4,5 +4,5 @@ title: "Diepte armsgat"
 
 Deze optie bepaalt de diepte van het armsgat.
 
-This option applies to the new v3 way of calculating the armhole depth. If you enable the [legacy armhole depth](/docs/designs/jaeger/options/legacyarmholedepth) option, this option will not apply, but instead it's legacy version [armhole depth factor](/docs/designs/jaeger/options/armholedepthfactor) will.
+Deze optie is van toepassing op de nieuwe v3 manier om de armsgatdiepte te berekenen. Als je de optie [legacy armgatdiepte](/docs/designs/jaeger/options/legacyarmholedepth) inschakelt, is deze optie niet van toepassing, maar wel de legacy versie [armgatdieptefactor](/docs/designs/jaeger/options/armholedepthfactor) .
 

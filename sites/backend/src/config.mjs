@@ -257,7 +257,7 @@ if (baseConfig.use.oauth?.github) {
     redirectUri: `${
       process.env.BACKEND_OAUTH_GITHUB_CALLBACK_SITE
         ? process.env.BACKEND_OAUTH_GITHUB_CALLBACK_SITE
-        : 'https://next.freesewing.org'
+        : 'https://freesewing.org'
     }/signin/callback/github`,
   }
   baseConfig.oauth.github.url = (state) =>
@@ -279,7 +279,7 @@ if (baseConfig.use.oauth?.google) {
     redirectUri: `${
       process.env.BACKEND_OAUTH_GOOGLE_CALLBACK_SITE
         ? process.env.BACKEND_OAUTH_GOOGLE_CALLBACK_SITE
-        : 'https://next.freesewing.org'
+        : 'https://freesewing.org'
     }/signin/callback/google`,
   }
   baseConfig.oauth.google.url = (state) =>

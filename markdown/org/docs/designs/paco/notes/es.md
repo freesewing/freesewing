@@ -1,5 +1,5 @@
 ---
-title: "Paco pants: Designer Notes"
+title: "Pantalones Paco: Notas de diseñador"
 ---
 
 I made these because I wanted trousers to wear that were comfortable yet still stylish.

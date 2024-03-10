@@ -2,6 +2,6 @@
 title: "Profundidad de capucha"
 ---
 
-Controls how much room will be in the hood around the back of the head.
+Controla cuánto espacio habrá en la capucha alrededor de la parte posterior de la cabeza.
 
-Note: This option is only available if the 'neck style' option is set to 'hood.'
+Nota: Esta opción sólo está disponible si la opción "estilo de cuello" está configurada como "capucha".

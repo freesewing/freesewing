@@ -2,6 +2,6 @@
 title: "Overwijdte taille"
 ---
 
-If (and only if) you request to [fit the waist](/docs/designs/teagan/options/curvetowaist), this option allows you to control the amount of ease at the waist.
+If (and only if) you request to , this option allows you to control the amount of ease at the waist.
 
-If the waist is not fitted, this option is ignored.
+Als de taille niet getailleerd is, wordt deze optie genegeerd.

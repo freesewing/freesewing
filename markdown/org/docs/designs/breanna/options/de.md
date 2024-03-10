@@ -31,16 +31,16 @@ dort stärker gekrümmt, um sich der Schulter anzupassen.
 
 </Note>
 
-The width of the sleevecap (and thus the width of the sleeve at the bottom of the armhole) is equal to the distance between points 1 and 2. That distance depends on the measurements used, the amount of ease, the cut of the garment and so on. For our sleevecap, all we need to know is that we start with a given width. And while that width can be influenced by other factors, we can not influence it by any of the sleevecap options.
+The width of the sleevecap (and thus the width of the sleeve at the bottom of the armhole) is equal to the distance between points 1 and 2. Dieser Abstand hängt von den Maßen ab, die verwendet hat, von der Größe der Erleichterung, vom Schnitt des Kleidungsstücks und so weiter. For our sleevecap, all we need to know is that we start with a given width. And while that width can be influenced by other factors, we can not influence it by any of the sleevecap options.
 
 ![Oberseite der Ärmel steuern](sleevecaptop.svg)
 
-Die Höhe der Ärmel entspricht der Entfernung zwischen den Punkten 3 und 4. The exact height is a trade-off between the measurements used, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. Die Höhe kann also variieren und wir kontrollieren nicht den exakten Wert. Aber es gibt zwei Optionen, die die Form unserer Ärmel kontrollieren:
+Die Höhe der Ärmel entspricht der Entfernung zwischen den Punkten 3 und 4. Die genaue Höhe ist ein Kompromiss zwischen den verwendeten Maßen, den Optionen, der Bequemlichkeit, der Bequemlichkeit der Ärmelkappe und der Tatsache , dass der Ärmel letztendlich zum Armloch passen muss. Die Höhe kann also variieren und wir kontrollieren nicht den exakten Wert. Aber es gibt zwei Optionen, die die Form unserer Ärmel kontrollieren:
 
 - [Sleevecap Top X](/docs/designs/breanna/options/sleevecaptopfactorx/) : Steuert die horizontale Platzierung von Punkt 3 und 4
 - [Sleevecap oben Y](/docs/designs/breanna/options/sleevecaptopfactory/) : Steuert die vertikale Platzierung von Punkt 4
 
-In other words, point 4 can be made higher and lower and, perhaps less intutitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
+In other words, point 4 can be made higher and lower and, perhaps less intuitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
 
 ### Die Wendepunkte
 

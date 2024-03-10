@@ -1,22 +1,70 @@
+accountIssue: Konto-Problem
+accountIssueDesc: Hast du Probleme mit deinem FreeSewing-Konto?
+addImage: Bild hochladen
+allOk: Alles ist fantastisch
+by: von
+bugReport: Fehler melden
+bugReportDesc: Ist etwas kaputt oder funktioniert nicht wie erwartet?
+confirmedIssues: Bekannte Probleme
+createSupportRequest: Supportanfrage erstellen
+commentAdded: Kommentar hinzugefügt
+communitySupport: Unterstützung der Gemeinschaft
+communitySupport1: For the fastest response, head over to <b>discord.freesewing.org</b> and post your question in the <b>need-help</b> channel.
+communitySupport2: Die FreeSewing-Community ist ein hilfsbereiter Haufen, daher ist die Wahrscheinlichkeit groß, dass sie dir helfen kann.
+contributorSupport: Mitwirkende Unterstützung
+contributorSupport1: Wenn etwas kaputt ist oder du einen Fehler gefunden hast, kannst du <b>einen Fehler auf GitHub</b>erstellen.
+contributorSupport2: Es ist wahrscheinlicher, dass ein Thema die Aufmerksamkeit der Hauptakteure auf sich zieht, aber es dauert länger, bis eine Antwort kommt.
+description: Beschreibung
+descriptionDocs1: Hier kannst du das Problem beschreiben
+design: Gestaltung
+designDocs1: Wähle das FreeSewing-Design aus, bei dem dieses Problem auftritt
+designIssue: Melde ein Problem bei einem FreeSewing Design
+designIssueDesc: Hast du Probleme mit einem FreeSewing-Design oder dem Muster, das du daraus erstellst?
+docsUpdate: Aktualisierung der Dokumentation
+docsUpdateDesc: Gibt es etwas, was wir an unserer Dokumentation verbessern können?
+featureRequest: Neue Funktion vorschlagen
+featureRequestDesc: Gibt es etwas, das du gerne umgesetzt sehen würdest?
+howCanWeSupportYou: Wie können wir dich unterstützen?
+howCanYouSupportFreeSewing: Wie kannst du FreeSewing unterstützen?
+issueAssigned: Eintrag zugewiesen
+issueClosed: Eintrag geschlossen
+issueReferenced: Issue referenced
+issueReopened: Issue Re-Opened
+maintainerSupport: Maintainer-Unterstützung
+maintainerSupport1: Wenn du <b>ein FreeSewing-Gönner bist</b>, kannst du direkt nach oben gehen und Joost direkt kontaktieren.
+maintainerSupport2: Auch wenn Joost die Anfragen seiner Kunden mit Priorität behandelt, braucht er auch Schlaf. Behalte das also im Hinterkopf, vor allem, wenn du dich in einer anderen Zeitzone befindest.
+noComments: Keine Kommentare
+noConfirmedIssues: Keine bestätigten Probleme
+noReportedIssues: Keine gemeldeten Probleme
+other: Etwas anderes
+otherDesc: Gibt es etwas anderes, bei dem du Hilfe brauchst?
+patronSponsor: Patrons / Patenschaft
+patronSponsorDesc: Hast du Fragen zur FreeSewing-Patenschaft oder zum (Unternehmens-) Sponsoring?
+question: Frage
+questionDesc: Hast du eine allgemeine Frage?
+recentlyResolvedIssues: Kürzlich gelöste Probleme
+reported: Gemeldet
+reportedIssues: Gemeldete Probleme
+security: Sicherheit
+securityDesc: Willst du ein Sicherheitsproblem oder einen Vorfall melden?
+status: Status
+submitSupportRequest: Supportanfrage einreichen
 support: Hilfe
-communitySupport: Community Support
-communitySupport1: For the fastest response, head over to <b>discord.freesewing.org</b> and post your question in the <b>Support</b> channel.
-communitySupport2: The FreeSewing community is a helpful bunch, so there is a good chance they are able to help you.
-contributorSupport: Contributor Support
-contributorSupport1: If something is broken or you have found a bug, you can <b>create an issue on GitHub</b>.
-contributorSupport2: Issues are more likely to attract the attention of core contributors, but tend to take longer to get a response.
-maintainerSupport: Maintainer Support
-maintainerSupport1: If you are <b>a FreeSewing patron</b>, you can go straight to the top and contact Joost directly.
-maintainerSupport2: While Joost will treat requests from patrons with priority, he does also needs sleep. So keep that in mind, especially when you are in a different time zone.
-whatIsDiscord: What is Discord?
-whatIsDiscord1: Discord is a free chat platform where communities can come together to chat discuss their interests.  It also supports (group) voice and video calls.
-whatIsDiscord2: FreeSewing has its own Discord community (a <em>server</em> in Discord terminology) at
-whatIsDiscord3: To use Discord, you will need an account, but they are free.
-whatIsDiscord4: You can use Discord in your browser, or download the Discord app for your platform of choice.
-whatIsGitHub: What is GitHub?
-whatIsGitHub1: GitHub is an online platform for hosting software source code and collaborative development. It is popular among open source projects as it provides free hosting.
-whatIsGitHub2: You can find FreeSewing on GitHub at
-whatIsGitHub3: To use GitHub, you will need an account, but they are free.
-whatIsJoost: What is Joost?
-whatIsJoost1: Not what, but who. Joost De Cock is the FreeSewing founder and maintainer.
+title: Titel
+titleDocs1: Dies ist der Titel des Eintrags
+titleDocs2: Am besten fasst du dich kurz und erfasst das Wesentliche
+to: zu
+updates: Updates
+useGitHubInstead: Verwende stattdessen GitHub
+whatIsDiscord: Was ist Discord?
+whatIsDiscord1: Discord ist eine kostenlose Chat-Plattform, auf der Gemeinschaften zusammenkommen können, um über ihre Interessen zu sprechen.  Sie unterstützt auch (Gruppen-)Sprach- und Videoanrufe.
+whatIsDiscord2: FreeSewing hat seine eigene Discord-Community (ein <em>Server</em> in Discord-Terminologie) unter
+whatIsDiscord3: Um Discord zu nutzen, brauchst du einen Account, aber der ist kostenlos.
+whatIsDiscord4: Du kannst Discord in deinem Browser nutzen oder die Discord-App für die Plattform deiner Wahl herunterladen.
+whatIsGitHub: Was ist GitHub?
+whatIsGitHub1: GitHub ist eine Online-Plattform für das Hosting von Software-Quellcode und die gemeinsame Entwicklung. Sie ist bei Open-Source-Projekten sehr beliebt, da sie kostenloses Hosting bietet.
+whatIsGitHub2: Du kannst FreeSewing auf GitHub finden unter
+whatIsGitHub3: Um GitHub zu nutzen, brauchst du ein Konto, aber das ist kostenlos.
+whatIsJoost: Was ist Joost?
+whatIsJoost1: Nicht was, sondern wer. Joost De Cock ist der Gründer und Betreuer von FreeSewing.
 

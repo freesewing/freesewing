@@ -1,6 +1,6 @@
 ---
-title: "Sleeve hem"
+title: "Ourlet des manches"
 ---
 
-Sets the hem allowance of the hem along the end of the sleeves, as a multiple of the seam allowance.
+Définit la marge de l'ourlet le long de l'extrémité des manches, en tant que multiple de la marge de couture.
 

@@ -1,16 +1,16 @@
 ---
-title: "Skully: Cutting Instructions"
+title: "Skully: Anleitung zum Schneiden"
 ---
 
 - **Hauptstoff**
-  - Cut **2 Cheek**
-  - Cut **2 Forehead**
-  - Cut **2 Head part 1**
-  - Cut **2 Head part 2**
-  - Cut **2 Head part 3**
-  - Cut **2 Cheekbone**
-  - Cut **1 Upper Mouth**
-  - Cut **1 Jaw Floor**
-  - Cut **2 Eye **
-  - Cut **1 Lower Mouth **
-  - Cut **2 Lower Jaw **
+  - Schnitt **2 Wange**
+  - Schnitt **2 Stirn**
+  - Schnitt **2 Kopfteil 1**
+  - Schnitt **2 Kopfteil 2**
+  - Schnitt **2 Kopfteil 3**
+  - Schnitt **2 Wangenknochen**
+  - Schnitt **1 Oberer Mund**
+  - Schnitt **1 Backe Boden**
+  - Schnitt **2 Auge **
+  - Schnitt **1 Unterer Mund **
+  - Schnitt **2 Unterkiefer **

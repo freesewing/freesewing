@@ -1,6 +1,6 @@
 ---
-title: "Side shape"
+title: "Seitenform"
 ---
 
-Controls how the side seam is curved. Zero creates a straight line from the armpit to the side of the hips. Positive values add material and give the side seam a rounded/convex shape, while negative values remove material and give the side seam an hourglass/concave shape. This option will have no effect if the 'straight sides' option is enabled.
+Steuert, wie die Seitennaht gebogen wird. Zero bildet eine gerade Linie von der Achselhöhle bis zur Seite der Hüfte. Positive Werte fügen Material hinzu und geben der Seitennaht eine abgerundete/konvexe Form, während negative Werte Material entfernen und der Seitennaht eine Sanduhr/konkave Form geben. Diese Option hat keine Auswirkungen, wenn die Option "Gerade Seiten" aktiviert ist.
 

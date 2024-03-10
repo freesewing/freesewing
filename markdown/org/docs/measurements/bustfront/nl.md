@@ -4,4 +4,5 @@ title: Buste voor
 
 De **bustenfront** is het voorste deel van je borstomtrek.
 
-Om je bustenfront te meten wikkel je de lintmeter horizontaal het breedste deel van je bord, aan de ene kant vanaf de zijkant (naad) en langs de rand van je borsten naar de andere kant.
+To measure your bust front, run the tape measure horizontally across the fullest part of your chest, starting at the side (seam) on one side, across your breasts to the side (seam) on the other side.
+<MeasieImage />

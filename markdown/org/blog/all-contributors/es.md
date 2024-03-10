@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Estamos dando las gracias a nuestros colaboradores y queremos asegurarnos de que sus contribuciones reciben el crédito que merecen"
 date: "2021-11-28"
 intro: "Durante nuestra última convocatoria de colaboradores , decidimos que pondríamos en marcha la especificación Todos los Colaboradores como forma de honrar a todos nuestros colaboradores."

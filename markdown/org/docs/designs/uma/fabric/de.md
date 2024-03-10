@@ -1,5 +1,5 @@
 ---
-title: "Uma undies: Fabric Options"
+title: "Uma Unterhosen: Stoff Optionen"
 ---
 
 Für dieses Schnittmuster braucht man einen Stoff mit viel horizontaler und vertikaler Dehnung (manchmal auch „Vierwegestretch“). Am besten etwas das komfortabel, weich und atmungsaktiv ist.

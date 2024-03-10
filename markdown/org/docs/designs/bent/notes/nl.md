@@ -1,5 +1,5 @@
 ---
-title: "Bent body Block: Designer Notes"
+title: "Gebogen lichaam Blok: Opmerkingen ontwerper"
 ---
 
 I Designed Bent because I wanted to make [Jaeger](/designs/jeager) and back then, FreeSewing had no foundation block with a 2-part sleeve that's used in jackets and coats.

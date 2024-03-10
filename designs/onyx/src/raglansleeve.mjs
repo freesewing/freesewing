@@ -17,10 +17,13 @@ function draftRaglanSleeve({
   part,
   store,
   sa,
+  complete,
+  expand,
   macro,
   snippets,
   Snippet,
   scale,
+  units,
 }) {
   const armholeTweakFactor = options.armholeTweakFactor - options.raglanScoopMagnitude // How much larger to make the armhole as a proportion of the biceps measurement. The constant term is to account for the armhole being a bit wider than the biceps, while subtracting the raglan scoop is to adjust for the extra material that the scoop will insert.
   const bicepsPosition = options.bicepsPosition // How far the biceps measurement is along the arm. 0 means at the armhole. 1 means at the wrist.
@@ -126,6 +129,14 @@ function draftRaglanSleeve({
   paths.hemBase = new Path().move(points.frontSleeve).line(points.backSleeve).hide()
 
   paths.seam = paths.saBase.join(paths.hemBase).close().addClass('fabric')
+
+  store.set(
+    'neckLengthSide',
+    new Path()
+      .move(points.backNeck)
+      .curve(points.neckCp1, points.neckCp2, points.frontNeck)
+      .length()
+  )
 
   macro('vd', {
     id: 'hFrontRaglanSleeveStraightPortion',
@@ -280,12 +291,50 @@ function draftRaglanSleeve({
   snippets.backArmholeScoopEnd = new Snippet('bnotch', points.backArmholeScoopEnd)
 
   points.title = new Point(0, points.backSleeve.y / 3)
-  macro('title', { at: points.title, nr: 3, title: 'sleeve' })
+  macro('title', { at: points.title, nr: 3, title: 'onyx:raglanSleeve' })
 
-  points.logo = points.title.shift(-90, 70 * scale)
+  points.logo = points.title.translate(-20 * scale, 70 * scale)
   snippets.logo = new Snippet('logo', points.logo)
-  points.scalebox = points.logo.shift(-90, 70 * scale)
+  points.scalebox = new Point(
+    points.frontArmholeScooped.x / 2,
+    points.frontArmholeScooped.y + 20 * scale
+  )
   macro('scalebox', { at: points.scalebox })
+
+  if (complete && !expand) {
+    points.sleeveRibbingInstructions = points.title.translate(5, -30 + 35 * scale)
+    if (options.sleeveRibbing) {
+      points.sleeveRibbingInstructions = points.sleeveRibbingInstructions
+        .translate(0, 50)
+        .attr('data-text', 'onyx:cutTwoSleeveRibbing')
+        .attr('data-text', ':\n')
+        .attr(
+          'data-text',
+          `${units(2 * sa + store.get('sleeveWidth') * options.sleeveRibbingLength)} x ${units(
+            2 * (sa + absoluteOptions.sleeveRibbingWidth)
+          )}`
+        )
+    }
+
+    points.neckbandInstructions = points.sleeveRibbingInstructions
+    if (options.neckStyle === 'neckband') {
+      points.neckbandInstructions = points.neckbandInstructions
+        .translate(0, 50)
+        .attr('data-text', 'onyx:cutNeckband')
+        .attr('data-text', ':\n')
+        .attr(
+          'data-text',
+          `${units(
+            2 *
+              (sa +
+                (store.get('neckLengthFront') +
+                  store.get('neckLengthBack') +
+                  store.get('neckLengthSide')) *
+                  options.neckbandLength)
+          )} x ${units(2 * (sa + absoluteOptions.neckbandWidth))}`
+        )
+    }
+  }
 
   if (sa) {
     paths.sa = paths.saBase
@@ -294,14 +343,6 @@ function draftRaglanSleeve({
       .close()
       .addClass('fabric sa')
   }
-
-  store.set(
-    'neckLengthSide',
-    new Path()
-      .move(points.backNeck)
-      .curve(points.neckCp1, points.neckCp2, points.frontNeck)
-      .length()
-  )
 
   return part
 }

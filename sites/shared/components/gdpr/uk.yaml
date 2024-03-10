@@ -2,29 +2,29 @@ clickHere: Натисніть тут, щоб дати свою згоду
 createAccount: Створити обліковий запис
 compliant: "FreeSewing поважає вашу конфіденційність і ваші права. Ми дотримуємося найсуворішого закону про конфіденційність і безпеку в світі: Загального регламенту про захист даних (GDPR) Європейського Союзу (ЄС)."
 consent: Згода
-consentForAccountData: Consent for account data
+consentForAccountData: Згода на використання даних облікового запису
 consentGiven: Згода отримана
 consentNotGiven: Згода не отримана
 consentWhyAnswer: Відповідно до GDPR, обробка ваших персональних даних вимагає детальної згоди - іншими словами, нам потрібен ваш дозвіл на різні способи, якими ми обробляємо ваші дані.
 createMyAccount: Створити обліковий запис
 furtherReading: Подальше вивчення
 hideDetails: Приховати подробиці
-noConsentNoAccount: This consent is required for a FreeSewing account.
-noConsentNoAccountCreation: Without this consent, we cannot create a FreeSewing account.
+noConsentNoAccount: Ця згода необхідна для створення облікового запису FreeSewing.
+noConsentNoAccountCreation: Без цієї згоди ми не можемо створити обліковий запис FreeSewing.
 noIDoNot: 'Ні, не даю'
 openDataInfo: Ці дані використовуються для вивчення і розуміння людського тіла в усіх його формах. Це дозволяє нам покращити наші викрійки та створювати більш підходящий до тіла одяг. Незважаючи на те, що ці дані є анонімними, Ви маєте право не давати згоду на їх обробку.
 openDataQuestion: Поділитися замірами анонімно як відкритими даними
 privacyMatters: Питання конфіденційності
 privacyNotice: Повідомлення про конфіденційність FreeSewing
 processing: Обробляється
-accountQuestion: Do you give your consent to process your account data?
+accountQuestion: Чи даєте ви згоду на обробку даних вашого облікового запису?
 accountShareAnswer: '<b>Ні</b>, ніколи.'
-accountTimingAnswer: '<b>12 months</b> after the last time your connected to our backend, or until you <b>remove</b> your account or <b>revoke</b> this consent.'
+accountTimingAnswer: '<b>12 місяців</b> після останнього підключення до нашого бекенду або до моменту, коли ви <b>видалите</b> свій обліковий запис або <b>відкличете</b> цю згоду.'
 accountWarning: Відкликання згоди видалить усі Ваші данні. Це має той же ефект, що і видалення облікового запису.
-accountWhatAnswerOptional: 'Optional: A <b>picture</b>, <b>bio</b>, or <b>GitHub username</b>'
-accountWhatAnswer: 'Your <b>email address</b>, <b>username</b>, and <b>password</b>, and any <b>body measurements</b> you add to your account.'
-accountWhatQuestion: What is account data?
-accountWhyAnswer: 'To <b>authenticate</b> you, <b>contact</b> you when needed, and generate <b>bespoke</b> sewing patterns.'
+accountWhatAnswerOptional: 'За бажанням:</b>Фотографія <b>, біографія <b>, або</b>, або <b>Ім''я користувача GitHub</b>'
+accountWhatAnswer: 'Ваша <b>адреса електронної пошти</b>, <b>ім''я користувача</b>та <b>пароль</b>, а також будь-які <b>розміри тіла</b> , які ви додасте до свого облікового запису.'
+accountWhatQuestion: Що таке дані облікового запису?
+accountWhyAnswer: 'Щоб <b>аутентифікувати</b> вас, <b>зв''язатися</b> вами, коли це необхідно, і створити <b>індивідуальні</b> викрійки для шиття.'
 readMore: Для отримання додаткової інформації, будь ласка, прочитайте наші умови конфіденційності.
 readRights: Для отримання додаткової інформації, будь ласка, прочитайте про Ваші права.
 revokeConsent: Відкликати згоду

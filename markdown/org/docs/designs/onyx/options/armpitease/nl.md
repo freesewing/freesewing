@@ -1,13 +1,13 @@
 ---
-title: "Armpit ease"
+title: "Okselgemak"
 ---
 
-Shifts the sleeves downward to give extra room in the armpit, measured as a percentage of the sleeve diameter. If in doubt, go with the default value.
+Schuift de mouwen naar beneden om extra ruimte te geven in de oksel, gemeten als percentage van de diameter van de mouw. Gebruik bij twijfel de standaardwaarde.
 
-Note: This option does not change the diameter of the sleeve. To make the sleeve larger or smaller, use the Sleeve ease option.
+Opmerking: Deze optie verandert de diameter van de huls niet. Gebruik de optie Mouwgemak om de mouw groter of kleiner te maken.
 
-Note: The Raglan scoop length and Raglan scoop depth options also affect the amount of ease in the armpit.
+Opmerking: De opties Raglan-looklengte en Raglan-lookdiepte hebben ook invloed op de mate van rek in de oksel.
 
 > ##### Deze optie laat negatieve waarden toe.
 > 
-> Negative values will move the sleeves upwards. Use with caution, even on stretch garments, as this can easily cause binding at the armpit.
+> Negatieve waarden zullen de mouwen omhoog bewegen. Wees voorzichtig, zelfs bij stretchkleding, want dit kan gemakkelijk bindingen bij de oksel veroorzaken.

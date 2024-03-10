@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Ce message traite principalement de notre travail sur la révélation progressive. De plus : trois nouveaux modèles !"
 date: "2019-10-06"
 intro: "Nous venons juste de publier FreeSewing v2.1  🎉"

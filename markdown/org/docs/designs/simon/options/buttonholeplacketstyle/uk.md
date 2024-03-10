@@ -14,7 +14,7 @@ title: "Кокетка з петлями на ґудзиках"
 
 <Note>
 
-As seamless is only possible on a _cut-on_ placket, this option is ignored if you choose a separate buttonhole placket.
+Оскільки безшовний варіант можливий лише на _пришивній_ кокетці, ця опція ігнорується, якщо ви обираєте окрему кокетку з петлями.
 
 </Note>
 

@@ -1,5 +1,5 @@
 ---
-title: "Hoodfrontdip"
+title: "Capó frontal"
 ---
 
-Controls far down the front of the hood drops over the forehead. Larger values work best with lightweight/flexible fabrics.
+Controla hasta abajo la parte delantera de la capucha que cae sobre la frente. Los valores más grandes funcionan mejor con tejidos ligeros/flexibles.

@@ -2,9 +2,9 @@
 title: Nom d'utilisateur
 ---
 
-Your username is special name that uniquely identifies you.
+Ton nom d'utilisateur est un nom spécial qui t'identifie de façon unique.
 
-You can choose your own username, so anything goes.
+Tu peux choisir ton propre nom d'utilisateur, alors tout est permis.
 
-To avoid consusion, usernames must be unique when lowercased. In other words, the username `Joost` will not be available if a user `joost` exists.
+Pour éviter toute confusion, les noms d'utilisateur doivent être uniques lorsqu'ils sont en minuscules. En d'autres termes, le nom d'utilisateur `Joost` ne sera pas disponible si un utilisateur `joost` existe.
 

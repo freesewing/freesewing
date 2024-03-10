@@ -1,12 +1,12 @@
 ---
-title: "Diana draped top: Designer Notes"
+title: "Топ з драпіруванням Діана: Дизайнерські нотатки"
 ---
 
-This project started because one day I wanted to sew a sleeveless draped top with some leftover fabric I had after making another dress. I used a basic body block from Freesewing, and manually modified the pattern to create a draped neckline. Since I was pretty happy with the result, and the modifications were simple, I decided to create a Freesewing pattern for it, so it could be available for other people.
+Цей проект почався з того, що одного разу я захотіла пошити драпірований топ без рукавів із залишків тканини, що залишилися після пошиття іншої сукні. Я використала базовий блок тіла від Freesewing і вручну змінила викрійку, щоб створити драпірований виріз горловини. Оскільки я був задоволений результатом, а модифікації були простими, я вирішив створити для нього шаблон Freesewing, щоб він був доступним для інших людей.
 
-The original top I made had two layers, a nice viscose with a beautiful flower pattern that acted as a lining, and a sheer chiffon on top that let the viscose show through. The nice thing about adding a lining is that you can see it in the drape, which gives a beautiful effect!
+Оригінальний топ, який я зробила, складався з двох шарів: приємної віскози з красивим квітковим візерунком, яка виступала в якості підкладки, і прозорого шифону зверху, через який просвічувалася віскоза . Приємна особливість додавання підкладки полягає в тому, що її можна побачити в драпіровці, що дає гарний ефект!
 
 No interesting story about the name, just the first name that came to my mind that started with the letter D of draped :)
 
-Erica
+Еріка.
 

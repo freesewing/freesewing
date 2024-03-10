@@ -4,7 +4,7 @@ title: "Obere Abnäherlänge"
 
 ***
 
-Die **Upper Dart Length** steuert die Länge des oberen Abnähers, der zu 100 % bis zum Brustansatz reicht.
+The **Upper Dart Length** controls the length of the upper dart, 100% is all the way to the bust point.
 
 
 

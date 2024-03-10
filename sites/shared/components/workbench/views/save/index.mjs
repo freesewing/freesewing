@@ -1,12 +1,6 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
-import {
-  workbenchHash,
-  capitalize,
-  shortDate,
-  notEmpty,
-  horFlexClassesNoSm,
-} from 'shared/utils.mjs'
+import { capitalize, shortDate, notEmpty, horFlexClassesNoSm } from 'shared/utils.mjs'
 import yaml from 'js-yaml'
 // Context
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
@@ -67,8 +61,7 @@ export const SaveView = ({ design, settings, setView, saveAs }) => {
         true,
       ])
       router.push(
-        `/account/patterns/${id}` +
-          (editAfterSaveAs ? '/edit' + workbenchHash({ settings, view: 'draft' }) : '')
+        editAfterSaveAs ? `/account/patterns/${design}/edit?id=${id}` : `/account/pattern?id=${id}`
       )
       if (editAfterSaveAs) setView('draft')
     } else setLoadingStatus([true, 'backendError', true, false])

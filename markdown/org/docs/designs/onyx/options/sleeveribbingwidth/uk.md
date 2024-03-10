@@ -1,7 +1,7 @@
 ---
-title: "Sleeve ribbing width"
+title: "Ширина ребер рукава"
 ---
 
-Controls how wide the ribbing around the sleeve is.
+Контролює ширину ребер навколо рукава.
 
-Note: This option is only available if the 'sleeve ribbing' option is set to 'ribbing.'
+Примітка: Ця опція доступна, тільки якщо для параметра "Окантовка рукава" встановлено значення "Окантовка".

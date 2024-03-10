@@ -1,9 +1,9 @@
 ---
-title: "Neck ease"
+title: "Facilidad de cuello"
 ---
 
-Controls how large the neck hole is. Keep in mind that most garments have neck holes that are substantially larger than the wearer's neck, and that the neckband will further constrict the neck. 0% ease will make a very small neck hole that hugs the neck snugly. +50% will still make what's generally considered a tight neckband appropriate for swimwear. For garments with a loose fit, or that do not use a zipper, even larger values are recommended.
+Controla el tamaño del agujero del cuello. Ten en cuenta que la mayoría de las prendas tienen orificios para el cuello bastante más grandes que el cuello del usuario, y que la cinta para el cuello estrechará aún más el cuello. 0% de facilidad hará un agujero muy pequeño en el cuello que lo abrace cómodamente. Un +50% seguirá haciendo que lo que generalmente se considera un cuello ajustado sea apropiado para un bañador. Para prendas con un corte holgado, o que no utilicen cremallera, se recomiendan valores aún mayores.
 
-> ##### This option allows negative values
+> ##### Esta opción permite valores negativos
 > 
-> Be careful setting a negative ease for the neck, even on compression garments, as it can get very uncomfortable. Perhaps it could be useful for a garment trying to seal off the body, such as a wetsuit?
+> Ten cuidado al fijar una holgura negativa para el cuello, incluso en las prendas de compresión, ya que puede resultar muy incómodo. ¿Quizás podría ser útil para una prenda que intente sellar el cuerpo, como un traje de neopreno?

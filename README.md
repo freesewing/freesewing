@@ -1,4 +1,3 @@
-![FreeSewing](https://static.freesewing.org/banner.png)
 <p align='center'><a
   href="https://www.npmjs.com/package/@freesewing/core"
   title="@freesewing/core on NPM"
@@ -22,7 +21,7 @@
   </a><a 
   href="#contributors-"
   title="All Contributors"
-  ><img src="https://img.shields.io/badge/all_contributors-117-pink.svg"
+  ><img src="https://img.shields.io/badge/all_contributors-124-pink.svg"
   alt="All Contributors"/>
   </a></p><p align='center'><a
   href="https://twitter.com/freesewing_org"
@@ -46,20 +45,20 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
+# FreeSewing
+
+
+> [!TIP]
+>#### Support FreeSewing: Become a patron, or make a one-time donation 🥰
+>
+> FreeSewing is an open source project maintained by Joost De Cock and financially supported by the FreeSewing patrons.
+>
+> If you feel FreeSewing is worthwhile, and you can spend a few coins without
+hardship, then you should [join us and become a patron](https://freesewing.org/community/join).
+
 ## What am I looking at? 🤔
 
 This repository is the FreeSewing *monorepo* holding all FreeSewing's websites, documentation, designs, plugins, and other NPM packages.
-
-## Getting started ⚡ 
-
-As this is a monorepo. You'll need [NodeJS v18](https://nodejs.org), [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.  
-Once you have those, clone (or fork) this repo and run `yarn kickstart`:
-
-```bash
-git clone git@github.com:freesewing/freesewing.git
-cd freesewing
-yarn kickstart
-```
 
 ## About FreeSewing 💀
 
@@ -77,7 +76,7 @@ functionality of the platform.
 If you have NodeJS installed, you can try it right now by running:
 
 ```bash
-npx create-freesewing-pattern
+npx @freesewing/new-design
 ```
 
 Getting started guides are available for:
@@ -88,28 +87,34 @@ Getting started guides are available for:
 The [pattern design tutorial](https://freesewing.dev/tutorials/pattern-design/) will
 show you how to create your first parametric design.
 
-## Support FreeSewing: Become a patron 🥰
+## Getting started ⚡ 
 
-FreeSewing is an open source project maintained by Joost De Cock and financially supported by the FreeSewing patrons.
+To get started with FreeSewing, you can spin up our development environment with:
 
-If you feel FreeSewing is worthwhile, and you can spend a few coind without
-hardship, then you should [join us and become a patron](https://freesewing.org/community/join).
+```bash
+npx @freesewing/new-design
+```
+
+To work with FreeSewing's monorepo, you'll need [NodeJS v18](https://nodejs.org), [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.  
+Once you have those, clone (or fork) this repo and run `yarn kickstart`:
+
+```bash
+git clone git@github.com:freesewing/freesewing.git
+cd freesewing
+yarn kickstart
+```
 
 ## Links 👩‍💻
 
 **Official channels**
 
- - 💻 Makers website: [FreeSewing.org](https://freesewing.org)
+ - 🪡 Makers website: [FreeSewing.org](https://freesewing.org)
  - 💻 Developers website: [FreeSewing.dev](https://freesewing.dev)
- - ✅ [Support](https://github.com/freesewing/freesewing/issues/new/choose),
-   [Issues](https://github.com/freesewing/freesewing/issues) &
-   [Discussions](https://github.com/freesewing/freesewing/discussions) on
-   [GitHub](https://github.com/freesewing/freesewing)
 
 **Social media**
 
- - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
  - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
+ - 🐘 Mastodon: [freesewing.social](https://freesewing.social/)
 
 **Places the FreeSewing community hangs out**
 
@@ -117,18 +122,17 @@ hardship, then you should [join us and become a patron](https://freesewing.org/c
  - 💬 [Facebook](https://www.facebook.com/groups/627769821272714/)
  - 💬 [Reddit](https://www.reddit.com/r/freesewing/)
 
+## Where to get help 🤯
+
+Check our [support page](https://freesewing.org/support), or use 
+the [Issues](https://github.com/freesewing/freesewing/issues) &
+[Discussions](https://github.com/freesewing/freesewing/discussions) on
+[GitHub](https://github.com/freesewing/freesewing).
+
 ## License: MIT 🤓
 
 © [Joost De Cock](https://github.com/joostdecock).  
 See [the license file](https://github.com/freesewing/freesewing/blob/develop/LICENSE) for details.
-
-## Where to get help 🤯
-
-For [Support](https://github.com/freesewing/freesewing/issues/new/choose),
-please use the [Issues](https://github.com/freesewing/freesewing/issues) &
-[Discussions](https://github.com/freesewing/freesewing/discussions) on
-[GitHub](https://github.com/freesewing/freesewing).
-
 
 ## Contributors ✨
 
@@ -189,66 +193,75 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="http://jeroenhoek.nl"><img src="https://avatars.githubusercontent.com/u/683699?v=4?s=100" width="100px;" alt="Jeroen Hoek"/><br /><sub><b>Jeroen Hoek</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=jdhoek" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/joeschofield0"><img src="https://avatars.githubusercontent.com/u/47668691?v=4?s=100" width="100px;" alt="Joe Schofield"/><br /><sub><b>Joe Schofield</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=joeschofield0" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Joebidido"><img src="https://avatars.githubusercontent.com/u/39796210?v=4?s=100" width="100px;" alt="Joebidido"/><br /><sub><b>Joebidido</b></sub></a><br /><a href="#translation-Joebidido" title="Translation">🌍</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/HaasJona"><img src="https://avatars.githubusercontent.com/u/4310707?v=4?s=100" width="100px;" alt="Jonathan Haas"/><br /><sub><b>Jonathan Haas</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=HaasJona" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://joost.at/"><img src="https://avatars.githubusercontent.com/u/1708494?v=4?s=100" width="100px;" alt="Joost De Cock"/><br /><sub><b>Joost De Cock</b></sub></a><br /><a href="#maintenance-joostdecock" title="Maintenance">🚧</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/joshessman"><img src="https://avatars.githubusercontent.com/u/9941074?v=4?s=100" width="100px;" alt="Josh Essman"/><br /><sub><b>Josh Essman</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=joshessman" title="Documentation">📖</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="http://www.earth.li/~kake/"><img src="https://avatars.githubusercontent.com/u/1956810?v=4?s=100" width="100px;" alt="Kake"/><br /><sub><b>Kake</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=KakeLP" title="Documentation">📖</a></td>
     </tr>
     <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/jpmunic"><img src="https://avatars.githubusercontent.com/u/13474972?v=4?s=100" width="100px;" alt="Josh Munic"/><br /><sub><b>Josh Munic</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/issues?q=author%3Ajpmunic" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://www.earth.li/~kake/"><img src="https://avatars.githubusercontent.com/u/1956810?v=4?s=100" width="100px;" alt="Kake"/><br /><sub><b>Kake</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=KakeLP" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://twitter.com/kapunahele"><img src="https://avatars.githubusercontent.com/u/4116963?v=4?s=100" width="100px;" alt="Kapunahele Wong"/><br /><sub><b>Kapunahele Wong</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=kapunahelewong" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/tangerineshark"><img src="https://avatars.githubusercontent.com/u/70777269?v=4?s=100" width="100px;" alt="Karen"/><br /><sub><b>Karen</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=tangerineshark" title="Documentation">📖</a> <a href="#eventOrganizing-tangerineshark" title="Event Organizing">📋</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/mcgnly"><img src="https://avatars.githubusercontent.com/u/5653631?v=4?s=100" width="100px;" alt="Katie McGinley"/><br /><sub><b>Katie McGinley</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=mcgnly" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://www.kieranklaassen.com/"><img src="https://avatars.githubusercontent.com/u/209089?v=4?s=100" width="100px;" alt="Kieran Klaassen"/><br /><sub><b>Kieran Klaassen</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=kieranklaassen" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Kittycatou"><img src="https://avatars.githubusercontent.com/u/48165583?v=4?s=100" width="100px;" alt="Kittycatou"/><br /><sub><b>Kittycatou</b></sub></a><br /><a href="#translation-Kittycatou" title="Translation">🌍</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://www.krishoward.org/"><img src="https://avatars.githubusercontent.com/u/5946286?v=4?s=100" width="100px;" alt="Kris"/><br /><sub><b>Kris</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=web-goddess" title="Documentation">📖</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/kristinruben"><img src="https://avatars.githubusercontent.com/u/17237479?v=4?s=100" width="100px;" alt="Kristin Ruben"/><br /><sub><b>Kristin Ruben</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=kristinruben" title="Code">💻</a></td>
     </tr>
     <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.krishoward.org/"><img src="https://avatars.githubusercontent.com/u/5946286?v=4?s=100" width="100px;" alt="Kris"/><br /><sub><b>Kris</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=web-goddess" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/kristinruben"><img src="https://avatars.githubusercontent.com/u/17237479?v=4?s=100" width="100px;" alt="Kristin Ruben"/><br /><sub><b>Kristin Ruben</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=kristinruben" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/compilin"><img src="https://avatars.githubusercontent.com/u/40794281?v=4?s=100" width="100px;" alt="Lin"/><br /><sub><b>Lin</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=compilin" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Loudepeuter"><img src="https://avatars.githubusercontent.com/u/38081954?v=4?s=100" width="100px;" alt="Loudepeuter"/><br /><sub><b>Loudepeuter</b></sub></a><br /><a href="#translation-Loudepeuter" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/lucibytes"><img src="https://avatars.githubusercontent.com/u/77203781?v=4?s=100" width="100px;" alt="Lucian"/><br /><sub><b>Lucian</b></sub></a><br /><a href="#eventOrganizing-lucibytes" title="Event Organizing">📋</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/luizfzs"><img src="https://avatars.githubusercontent.com/u/6039675?v=4?s=100" width="100px;" alt="Luiz Saggioro"/><br /><sub><b>Luiz Saggioro</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=luizfzs" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/MA-TATAS"><img src="https://avatars.githubusercontent.com/u/125549564?v=4?s=100" width="100px;" alt="MA-TATAS"/><br /><sub><b>MA-TATAS</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=MA-TATAS" title="Documentation">📖</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/manufakturedelweiss"><img src="https://avatars.githubusercontent.com/u/38063391?v=4?s=100" width="100px;" alt="Marcus"/><br /><sub><b>Marcus</b></sub></a><br /><a href="#translation-manufakturedelweiss" title="Translation">🌍</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/martintribo"><img src="https://avatars.githubusercontent.com/u/1613442?v=4?s=100" width="100px;" alt="Martin Tribo"/><br /><sub><b>Martin Tribo</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=martintribo" title="Documentation">📖</a></td>
     </tr>
     <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/manufakturedelweiss"><img src="https://avatars.githubusercontent.com/u/38063391?v=4?s=100" width="100px;" alt="Marcus"/><br /><sub><b>Marcus</b></sub></a><br /><a href="#translation-manufakturedelweiss" title="Translation">🌍</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/martintribo"><img src="https://avatars.githubusercontent.com/u/1613442?v=4?s=100" width="100px;" alt="Martin Tribo"/><br /><sub><b>Martin Tribo</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=martintribo" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/nadege"><img src="https://avatars.githubusercontent.com/u/3792171?v=4?s=100" width="100px;" alt="Nadege Michel"/><br /><sub><b>Nadege Michel</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=nadege" title="Tests">⚠️</a> <a href="https://github.com/freesewing/freesewing/commits?author=nadege" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/nataliasayang"><img src="https://avatars.githubusercontent.com/u/48160791?v=4?s=100" width="100px;" alt="Natalia"/><br /><sub><b>Natalia</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=nataliasayang" title="Code">💻</a> <a href="#design-nataliasayang" title="Design">🎨</a> <a href="#blog-nataliasayang" title="Blogposts">📝</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://yergler.net/"><img src="https://avatars.githubusercontent.com/u/510875?v=4?s=100" width="100px;" alt="Nathan Yergler"/><br /><sub><b>Nathan Yergler</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=nyergler" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/nicholasdower"><img src="https://avatars.githubusercontent.com/u/9117775?v=4?s=100" width="100px;" alt="Nick Dower"/><br /><sub><b>Nick Dower</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=nicholasdower" title="Documentation">📖</a> <a href="https://github.com/freesewing/freesewing/commits?author=nicholasdower" title="Code">💻</a> <a href="https://github.com/freesewing/freesewing/issues?q=author%3Anicholasdower" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/nchilada"><img src="https://avatars.githubusercontent.com/u/692925?v=4?s=100" width="100px;" alt="Nikhil Chelliah"/><br /><sub><b>Nikhil Chelliah</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=nchilada" title="Documentation">📖</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/OysteinHoiby"><img src="https://avatars.githubusercontent.com/u/49735055?v=4?s=100" width="100px;" alt="OysteinHoiby"/><br /><sub><b>OysteinHoiby</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=OysteinHoiby" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://pat.forringer.com/"><img src="https://avatars.githubusercontent.com/u/136456?v=4?s=100" width="100px;" alt="Patrick Forringer"/><br /><sub><b>Patrick Forringer</b></sub></a><br /><a href="#plugin-destos" title="Plugin/utility libraries">🔌</a></td>
     </tr>
     <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/OysteinHoiby"><img src="https://avatars.githubusercontent.com/u/49735055?v=4?s=100" width="100px;" alt="OysteinHoiby"/><br /><sub><b>OysteinHoiby</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=OysteinHoiby" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://pat.forringer.com/"><img src="https://avatars.githubusercontent.com/u/136456?v=4?s=100" width="100px;" alt="Patrick Forringer"/><br /><sub><b>Patrick Forringer</b></sub></a><br /><a href="#plugin-destos" title="Plugin/utility libraries">🔌</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://pd75.github.io/"><img src="https://avatars.githubusercontent.com/u/10294795?v=4?s=100" width="100px;" alt="Paul"/><br /><sub><b>Paul</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=PD75" title="Documentation">📖</a> <a href="#blog-PD75" title="Blogposts">📝</a> <a href="#translation-PD75" title="Translation">🌍</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/pvidas"><img src="https://avatars.githubusercontent.com/u/38463064?v=4?s=100" width="100px;" alt="Paula Vidas"/><br /><sub><b>Paula Vidas</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=pvidas" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/phillipthelen"><img src="https://avatars.githubusercontent.com/u/298062?v=4?s=100" width="100px;" alt="Phillip Thelen"/><br /><sub><b>Phillip Thelen</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=phillipthelen" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Pixieish"><img src="https://avatars.githubusercontent.com/u/32991415?v=4?s=100" width="100px;" alt="Pixieish"/><br /><sub><b>Pixieish</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=Pixieish" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://www.uza.be/persoon/prof-dr-sorcha-ni-dhubhghaill"><img src="https://avatars.githubusercontent.com/u/30624634?v=4?s=100" width="100px;" alt="Prof. dr. Sorcha Ní Dhubhghaill"/><br /><sub><b>Prof. dr. Sorcha Ní Dhubhghaill</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=sorchanidhubhghaill" title="Documentation">📖</a></td>
+    </tr>
+    <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/QuentinFelix"><img src="https://avatars.githubusercontent.com/u/5288091?v=4?s=100" width="100px;" alt="Quentin FELIX"/><br /><sub><b>Quentin FELIX</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=QuentinFelix" title="Code">💻</a> <a href="#design-QuentinFelix" title="Design">🎨</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/RikHekker"><img src="https://avatars.githubusercontent.com/u/31843274?v=4?s=100" width="100px;" alt="Rik Hekker"/><br /><sub><b>Rik Hekker</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/issues?q=author%3ARikHekker" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://resume.livingston-gray.com/faq.html"><img src="https://avatars.githubusercontent.com/u/6462?v=4?s=100" width="100px;" alt="Sam Livingston-Gray"/><br /><sub><b>Sam Livingston-Gray</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=geeksam" title="Documentation">📖</a></td>
-    </tr>
-    <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/sannek"><img src="https://avatars.githubusercontent.com/u/17491062?v=4?s=100" width="100px;" alt="Sanne"/><br /><sub><b>Sanne</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=sannek" title="Code">💻</a> <a href="https://github.com/freesewing/freesewing/commits?author=sannek" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Tyrannogina"><img src="https://avatars.githubusercontent.com/u/19556565?v=4?s=100" width="100px;" alt="Sara Latorre"/><br /><sub><b>Sara Latorre</b></sub></a><br /><a href="#translation-Tyrannogina" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/SeaZeeZee"><img src="https://avatars.githubusercontent.com/u/86711383?v=4?s=100" width="100px;" alt="SeaZeeZee"/><br /><sub><b>SeaZeeZee</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=SeaZeeZee" title="Documentation">📖</a> <a href="https://github.com/freesewing/freesewing/commits?author=SeaZeeZee" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/SimonbJohnson"><img src="https://avatars.githubusercontent.com/u/2110742?v=4?s=100" width="100px;" alt="SimonbJohnson"/><br /><sub><b>SimonbJohnson</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/issues?q=author%3ASimonbJohnson" title="Bug reports">🐛</a></td>
+    </tr>
+    <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/SirCharlotte"><img src="https://avatars.githubusercontent.com/u/63847870?v=4?s=100" width="100px;" alt="SirCharlotte"/><br /><sub><b>SirCharlotte</b></sub></a><br /><a href="#translation-SirCharlotte" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://www.instagram.com/celine_mge/"><img src="https://avatars.githubusercontent.com/u/57619777?v=4?s=100" width="100px;" alt="Slylele"/><br /><sub><b>Slylele</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=Slylele" title="Documentation">📖</a> <a href="#translation-Slylele" title="Translation">🌍</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Soazillon"><img src="https://avatars.githubusercontent.com/u/40845940?v=4?s=100" width="100px;" alt="Soazillon"/><br /><sub><b>Soazillon</b></sub></a><br /><a href="#translation-Soazillon" title="Translation">🌍</a></td>
-    </tr>
-    <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/sohamtembhurne"><img src="https://avatars.githubusercontent.com/u/82658685?v=4?s=100" width="100px;" alt="Soham Tembhurne"/><br /><sub><b>Soham Tembhurne</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=sohamtembhurne" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/SoneaTheBest"><img src="https://avatars.githubusercontent.com/u/64635425?v=4?s=100" width="100px;" alt="SoneaTheBest"/><br /><sub><b>SoneaTheBest</b></sub></a><br /><a href="#translation-SoneaTheBest" title="Translation">🌍</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.sophiah.gay/"><img src="https://avatars.githubusercontent.com/u/10786212?v=4?s=100" width="100px;" alt="Sophia"/><br /><sub><b>Sophia</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=SophiaH67" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://metafly.info/"><img src="https://avatars.githubusercontent.com/u/961256?v=4?s=100" width="100px;" alt="Stefan Sydow"/><br /><sub><b>Stefan Sydow</b></sub></a><br /><a href="#translation-stsydow" title="Translation">🌍</a> <a href="https://github.com/freesewing/freesewing/commits?author=stsydow" title="Documentation">📖</a> <a href="https://github.com/freesewing/freesewing/commits?author=stsydow" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://stefanocislaghi.com"><img src="https://avatars.githubusercontent.com/u/1659414?v=4?s=100" width="100px;" alt="Stefano"/><br /><sub><b>Stefano</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=LunaticMuch" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/biswassushmita947"><img src="https://avatars.githubusercontent.com/u/145688707?v=4?s=100" width="100px;" alt="Sushmita Biswas"/><br /><sub><b>Sushmita Biswas</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=biswassushmita947" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/TheTanay902"><img src="https://avatars.githubusercontent.com/u/84577440?v=4?s=100" width="100px;" alt="Tanay Toshniwal"/><br /><sub><b>Tanay Toshniwal</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=TheTanay902" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/trentonTrama"><img src="https://avatars.githubusercontent.com/u/41126812?v=4?s=100" width="100px;" alt="Trent Trama"/><br /><sub><b>Trent Trama</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=trentonTrama" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/TriploidTree"><img src="https://avatars.githubusercontent.com/u/4170521?v=4?s=100" width="100px;" alt="Tríona"/><br /><sub><b>Tríona</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=TriploidTree" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/theUnmutual"><img src="https://avatars.githubusercontent.com/u/22374635?v=4?s=100" width="100px;" alt="Unmutual"/><br /><sub><b>Unmutual</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=theUnmutual" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ArcticCoder"><img src="https://avatars.githubusercontent.com/u/39151688?v=4?s=100" width="100px;" alt="Vili Sinervä"/><br /><sub><b>Vili Sinervä</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=ArcticCoder" title="Code">💻</a></td>
     </tr>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/theUnmutual"><img src="https://avatars.githubusercontent.com/u/22374635?v=4?s=100" width="100px;" alt="Unmutual"/><br /><sub><b>Unmutual</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=theUnmutual" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/VSinerva"><img src="https://avatars.githubusercontent.com/u/39151688?v=4?s=100" width="100px;" alt="Vili Sinervä"/><br /><sub><b>Vili Sinervä</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=VSinerva" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/woutervdub"><img src="https://avatars.githubusercontent.com/u/24414629?v=4?s=100" width="100px;" alt="Wouter van Wageningen"/><br /><sub><b>Wouter van Wageningen</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=woutervdub" title="Code">💻</a> <a href="#design-woutervdub" title="Design">🎨</a> <a href="#tool-woutervdub" title="Tools">🔧</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Yash-Ambekar"><img src="https://avatars.githubusercontent.com/u/96481913?v=4?s=100" width="100px;" alt="Yash Anil Ambekar"/><br /><sub><b>Yash Anil Ambekar</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=Yash-Ambekar" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/amysews"><img src="https://avatars.githubusercontent.com/u/25280778?v=4?s=100" width="100px;" alt="amysews"/><br /><sub><b>amysews</b></sub></a><br /><a href="https://github.com/freesewing/freesewing/commits?author=amysews" title="Documentation">📖</a></td>

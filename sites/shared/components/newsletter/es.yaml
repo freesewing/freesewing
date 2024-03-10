@@ -1,22 +1,22 @@
 newsletter: Boletín
 subscribe: Suscribir
-subscribeConfirm: Confirm you want to subscribe to the FreeSewing newsletter
-subscribeLead: Once you click the button below, your subscription to the FreeSewing newsletter will be active.
-subscribePs: You can unsubscribe at any time with the link below. This unsubscribe link will also be included at the bottom of  every newsletter we send you, so you do not need to bookmark it, but you can if you want to.
-subscribeWhy: Why do I have to click again to confirm I want to subscribe after I already clicked the confirmation link you sent me?
-unsubscribeLink: Unsubscribe link
+subscribeConfirm: Confirma que quieres suscribirte al boletín de FreeSewing
+subscribeLead: Una vez que hagas clic en el botón de abajo, se activará tu suscripción al boletín de FreeSewing.
+subscribePs: Puedes darte de baja en cualquier momento con el enlace que aparece a continuación. Este enlace para darte de baja también se incluirá al final de cada boletín que te enviemos, por lo que no es necesario que lo marques como favorito, pero puedes hacerlo si quieres.
+subscribeWhy: '¿Por qué tengo que volver a hacer clic para confirmar que quiero suscribirme después de haber hecho clic en el enlace de confirmación que me enviasteis?'
+unsubscribeLink: Enlace para darse de baja
 unsubscribe: Darse de baja
-unsubscribeConfirm: Confirm you want to unsubscribe from the FreeSewing newsletter
-unsubscribeLead: Once you click the button below, you will be unsubscribed from the FreeSewing newsletter.
-unsubscribeWhy: Why do I have to click again to confirm I want to unsubscribe after I already clicked the newsletter unsubscribe link?
-whyLead: If you are curious why we are making you click yet another time, there is a good reason for that.
-invalidLink: The link you followed to get here is invalid
-faqLead: The answer is covered in our FAQ
-whatsWithTheClicks: What's with all the clicks?
-thanksDone: Thank you, that's all it took.
-subscribeToNewsletter: Subscribe to the FreeSewing newsletter
-subscribePitch: Subscribe to our newsletter and once every 3 months you'll receive an email from us with honest wholesome content. No tracking, no ads, no nonsense.
-confirmationRequired: We will send a confirmation email to this address
-almostThere: Alright, almost there
-checkInbox: We've sent a confirmation to { email }, click the link in it to confirm your subscription to the FreeSewing newsletter.
-confirm: confirm
+unsubscribeConfirm: Confirma que quieres darte de baja del boletín de FreeSewing
+unsubscribeLead: Una vez que hagas clic en el botón de abajo, te darás de baja del boletín de FreeSewing.
+unsubscribeWhy: '¿Por qué tengo que volver a hacer clic para confirmar que quiero darme de baja después de haber hecho clic en el enlace de baja del boletín?'
+whyLead: Si tienes curiosidad por saber por qué te hacemos clic una vez más, hay una buena razón para ello.
+invalidLink: El enlace que has seguido para llegar aquí no es válido
+faqLead: La respuesta está en nuestras FAQ
+whatsWithTheClicks: '¿A qué vienen tantos clics?'
+thanksDone: Gracias, es todo lo que hacía falta.
+subscribeToNewsletter: Suscríbete al boletín de FreeSewing
+subscribePitch: Suscríbete a nuestro boletín y una vez cada 3 meses recibirás un correo electrónico nuestro con contenido sano y honesto. Sin seguimiento, sin anuncios, sin tonterías.
+confirmationRequired: Te enviaremos un correo electrónico de confirmación a esta dirección
+almostThere: Muy bien, ya casi está
+checkInbox: Hemos enviado una confirmación a { email }, haz clic en el enlace que aparece en ella para confirmar tu suscripción al boletín de FreeSewing.
+confirm: confirma

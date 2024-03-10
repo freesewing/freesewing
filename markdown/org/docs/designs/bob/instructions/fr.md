@@ -25,17 +25,11 @@ Make sure to sew close to the edge so that the stitches will be under the bias t
 
 ## Étape 2 : Appliquer le ruban de biais
 
-Nous allons appliquer du ruban de biais en guise de finition sur tout le bord du bavoir.
+We're going to apply bias tape as a finish around the entire edge of the bib.
 
 You probably want to start at the bottom strap, as this way the joint of the bias seam will be covered when the bib is worn.
 
 Contente-toi de te frayer un chemin et de prendre ton temps.
-
-<Fixme>
-
-Donne des instructions génériques pour coudre du ruban de biais.
-
-</Fixme>
 
 ## Étape 3 : Installer les boutons ou les boutons-pression
 

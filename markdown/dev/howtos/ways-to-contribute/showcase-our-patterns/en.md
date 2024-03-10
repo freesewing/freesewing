@@ -8,21 +8,26 @@ Anytime somebody has made one of our patterns, we like to Showcase it on [freese
 
 If you've got pictures, there's a few ways you can get them on the site:
 
+- [FreeSewing](#freesewing)
 - [Instagram](#instagram)
-- [Twitter](#tiwtter)
+- [Mastodon](#mastodon)
 - [Facebook](#facebook)
-- [Discord](#discrod)
+- [Discord](#discord)
 - [Reddit](#reddit)
 - [GitHub](#github)
 - [Email](#email)
+
+### FreeSewing
+
+You can share something you (or someone else, with permission) made based on our designs at [FreeSewing.org/new/showcase](https://freesewing.org/new/showcase).
 
 ### Instagram
 
 Post your pictures on Instagram, and tag or mention [@freesewing\_org](https://instagram.com/freesewing_org).
 
-### Twitter
+### Mastodon
 
-Post your pictures — or a link to them — on Twitter, and tag or mention [@freesewing\_org](https://twitter.com/freesewing_org).
+Post your pictures — or a link to them — on freesewing.social (our Mastodon instance), and tag or mention [@freesewing](https://freesewing.social/@freesewing).
 
 ### Facebook
 

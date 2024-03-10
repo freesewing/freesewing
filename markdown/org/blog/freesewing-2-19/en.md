@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Like history? Then this release is going to be right up your alley."
 date: "2021-10-17"
 intro: "I've just pulled the release lever on version 2.19 of FreeSewing and there's a lot that went into this release. For full details, you can check out the changelog , here I'll stick to the highlights:"

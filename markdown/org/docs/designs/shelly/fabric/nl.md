@@ -1,13 +1,13 @@
 ---
-title: "Shelly shirt: Fabric Options"
+title: "Shelly overhemd: Stof opties"
 ---
 
-This pattern is designed to work with stretch/knit fabrics, particularly spandex.
+Dit patroon is ontworpen om te werken met stretch/gebreide stoffen, met name spandex.
 
-For swim shirts, rash guards, compression shirts, athletic shirts, and other performance-oriented shirts, four-way stretch fabric is strongly recommended. For more casual raglan t-shirts, two-way stretch jersey should work fine.
+Voor zwemshirts, huidbeschermers, compressieshirts, sportshirts en andere prestatiegerichte shirts wordt vierwegstretchstof sterk aanbevolen. Voor meer casual raglan t-shirts zou tweeweg stretch jersey prima moeten werken.
 
-For compression clothes and swimwear, a 20:80 ratio of nylon/polyester to spandex/elastane is recommended. More elastic fabrics allow for greater negative ease, will give better mobility, and will be more forgiving to measurement/design errors.
+Voor compressiekleding en zwemkleding wordt een verhouding van 20:80 tussen nylon/polyester en spandex/elastaan aanbevolen. Meer elastische stoffen zorgen voor een groter negatief gemak, geven een betere beweeglijkheid en zijn vergevingsgezinder voor fouten in de maat en het ontwerp.
 
-The raglan sleeves lend themselves well to using different colors/prints for the body and for the sleeves.
+De raglanmouwen lenen zich goed voor het gebruik van verschillende kleuren/prints voor het lijfje en voor de mouwen.
 
-With swim fabric/spandex, it is recommended to make the neckband out of the same material used for the shirt. For less stretchy fabric, such as cotton jersey knit, ribbing is recommended.
+Bij zwemstof/spandex is het aan te raden om de nekband van hetzelfde materiaal te maken als het shirt. Voor minder rekbare stof, zoals gebreid katoen jersey, wordt ribboord aanbevolen.

@@ -1,17 +1,18 @@
 ---
-title: "A Onyx full-body unisuit"
-caption: "Mirror selfie of this onyx body suit"
+title: "Een Onyx overall"
+caption: "Spiegel selfie van dit onyx body suit"
 date: 20231101
-intro: "A blue full-body Onyx unisuit by Thrunic"
+intro: "Een blauw Onyx overallpak van Thrunic"
 designs:
   - "onyx"
 maker: joost
+author: 33070
 ---
 
-This is a full-body Onyx unisuit by Thrunic who created [the Onyx design](/designs/onyx). They write:
+Dit is een full body Onyx unisuit van Thrunic die [het Onyx ontwerp](/designs/onyx)heeft gemaakt. Ze schrijven:
 
-> *A new Onyx full-body unisuit. It's got a hood, long sleeves with thumb holes, and long legs. It's fully lined except for the sleeves. It looks a lot like a wetsuit.*
+> *Een nieuw Onyx overallpak. Het heeft een capuchon, lange mouwen met duimgaten en lange pijpen. Het is volledig gevoerd, behalve de mouwen. Het lijkt veel op een wetsuit.*
 > 
-> *I took it for a test swim in the cool waters around here, and it certainly does confer some warmth, though not nearly as much as a real wetsuit. I think it would work best as a garment for boating or other activities where you'll both get wet and a lot of sun exposure. It's not particularly warm when dry, but doesn't lose much insulation when it gets wet.*
+> *Ik heb er een proefduik mee gemaakt in het koele water hier in de buurt en het geeft zeker wat warmte, maar lang niet zoveel als een echt wetsuit. Ik denk dat het het beste zou werken als kledingstuk voor varen of andere activiteiten waarbij je zowel nat wordt als veel aan de zon wordt blootgesteld. Het is niet bijzonder warm als het droog is, maar verliest niet veel isolatie als het nat wordt.*
 
 

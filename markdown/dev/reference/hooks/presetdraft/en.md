@@ -21,4 +21,15 @@ pattern.on('preSetDraft', pattern => {
 
 ## Notes
 
-The `preSetDraft` hook is rarely used, but it's there if you need it.
+The `preSetDraft` fires once for each set in the pattern.
+
+The pattern tracks the active set on the `activeSet` property. 
+So if you are using this hook and would like to get access to teh active set, you can do so like this:
+
+```js
+pattern.on('preSetDraft', ({ settings, activeSet }) => {
+  const set = settings[Number(activeSet)]
+
+  // Now set holds the active set of settings
+}
+```

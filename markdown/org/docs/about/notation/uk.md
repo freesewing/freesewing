@@ -1,22 +1,22 @@
 ---
-title: Pattern Notation Guide
+title: Посібник з позначення викрійок
 ---
 
 Hopefully our patterns are easy enough to understand, but if you come across something that confuses you, below is a reference of all our pattern notation:
 
-- [Lines](#lines)
+- [Лінії](#lines)
   - [Шви](#seams)
   - [Припуск на шов](#seam-allowance)
   - [Нитка основи](#grainline)
-  - [Cut-on-fold indicator](#cut-on-fold-indicator)
+  - [Індикатор обрізу на згині](#cut-on-fold-indicator)
   - [Розміри](#dimensions)
   - [Інші лінії](#other-lines)
   - [Ширина ліній і штрихів](#line-widths-and-strokes)
-- [Annotations](#annotations)
+- [Анотації](#annotations)
   - [Виїмки](#notches)
-  - [Buttons and Buttonholes](#buttons-and-buttonholes)
+  - [Ґудзики та петлі](#buttons-and-buttonholes)
   - [Бартакс.](#bartacks)
-  - [Snaps](#snaps)
+  - [Клацання](#snaps)
   - [Назви](#titles)
   - [Логотип](#logo)
   - [Коробка для ваг](#scale-box)
@@ -31,7 +31,7 @@ Hopefully our patterns are easy enough to understand, but if you come across som
 
 </Tip>
 
-## Lines
+## Лінії
 
 Lines (and curves) make up the bulk of marking you'll find on any sewing pattern, including FreeSewing's patterns.
 
@@ -65,9 +65,9 @@ Seam allowance is indicated by a dashed line, that has the same width and color 
 
 </Legend>
 
-### Cut-on-fold indicator
+### Індикатор обрізу на згині
 
-Cut-on-fold indicators look similar to grainline indicators, but point towards the line on which the fabric should be folded:
+Індикатори згину схожі на індикатори долевої нитки, але вказують на лінію, по якій потрібно скласти тканину:
 
 <Legend part="cutonfold">
 
@@ -122,7 +122,7 @@ Cut-on-fold indicators look similar to grainline indicators, but point towards t
 
 </Legend>
 
-## Annotations
+## Анотації
 
 Annotations are extra embellishments on the pattern that further clarify the designer's intent, help with construction, or otherwise provide value to the pattern.
 
@@ -150,7 +150,7 @@ Annotations are extra embellishments on the pattern that further clarify the des
 
 </Tip>
 
-### Buttons and Buttonholes
+### Ґудзики та петлі
 
 Buttons and buttonholes may come in different sizes, but always have the same shape that represents how they look in real life:
 
@@ -169,7 +169,7 @@ Buttons and buttonholes may come in different sizes, but always have the same sh
 Так відображається задня частина на деталі. 
 </Legend>
 
-### Snaps
+### Клацання
 
 Застібки мають _шпильку_ і _гніздо_ частини, а також виглядають як справжні:
 

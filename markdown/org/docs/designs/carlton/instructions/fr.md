@@ -62,6 +62,6 @@ N'oubliez pas la marge de couture pour ces pièces lors de la découpe si vous f
 
 <Fixme>
 
-La documentation relative à ce modèle doit encore être rédigée. In the meantime their are some preliminary instructions for ([Carlita, Carlton's Counterpart](/docs/designs/carlita/instructions/)) that should help.
+La documentation relative à ce modèle doit encore être rédigée. En attendant, tu trouveras des instructions préliminaires pour ([Carlita, l'homologue de Carlton](/docs/designs/carlita/instructions/)) qui devraient t'aider.
 
 </Fixme>

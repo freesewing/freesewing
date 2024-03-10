@@ -2,5 +2,5 @@
 title: "Overwijdte heup"
 ---
 
-Controls how wide your shirt will be at the bottom hem. This option is only used if the straight sides option is disabled.
+Bepaalt hoe wijd je shirt wordt aan de onderkant. Deze optie wordt alleen gebruikt als de optie rechte kanten is uitgeschakeld.
 

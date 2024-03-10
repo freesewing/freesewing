@@ -46,11 +46,26 @@ I have grouped them below in different categories:
 
 | Named export   | Description |
 | -------------- | ------------|
-| `cbqc`         | The Cubic Bezier Quarter Circle constant: `0.55191502449351` FIXME: include link |
+| `cbqc`         | The [cubic Bézier quarter circle](https://pomax.github.io/bezierinfo/#circles_cubic) constant: `0.55191502449351` |
 | `hidePresets`  | Presets you can use to [configure your part `hide` option](/reference/api/part/config/hide). |
-| `goldenRatio`  | The golden ratio constant: `1.618034` FIXME: include link |
+| `goldenRatio`  | The [golden ratio](https://en.wikipedia.org/wiki/Golden_ratio) constant: `1.618034` |
 | `version`      | The version of `@freesewing/core` |
 
+<Related>
+
+The `cbqc` cubic Bézier quarter circle constant is used to draw circles
+using Bézier curves.
+An approximate quarter circle curve is:
+
+```js
+const quarterCircle = new Path()
+  .move(new Point(0, radius))
+  .curve(new Point(cbqc, radius),
+    new Point(radius, cbqc),
+    new Point(radius, 0))
+```
+
+</Related>
 
 ### Utilities
 
@@ -85,4 +100,3 @@ I have grouped them below in different categories:
 | `splitCurve`              | See the [splitCurve](/reference/api/utils/splitcurve) documentation |
 | `stretchToScale`          | See the [stretchToScale](/reference/api/utils/stretchtoscale) documentation |
 | `units`                   | See the [units](/reference/api/utils/units) documentation |
-

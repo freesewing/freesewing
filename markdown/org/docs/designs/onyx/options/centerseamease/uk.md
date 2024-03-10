@@ -1,5 +1,5 @@
 ---
-title: "Center seam ease"
+title: "Легкість центрального шва"
 ---
 
-Controls how long the center seam will be, and thus how low the crotch fork of the garment will be.
+Контролює довжину центрального шва, а отже, наскільки низько буде розташована пахова вилка одягу.

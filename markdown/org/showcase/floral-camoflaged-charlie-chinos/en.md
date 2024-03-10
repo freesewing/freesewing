@@ -1,6 +1,5 @@
 ---
-maker: "Joost De Cock"
-caption: "Advance camouflage Charlies"
+author: 1
 date: "2022-04-27"
 intro: "The FreeSewing community fell head over heels for these Charlie chinos by joost. They are so great that they -- no joke -- earned him free pancakes."
 title: "Floral \"camouflaged\" Charlie chinos"

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Si te gusta, ponle un lazo"
 date: "2017-11-14"
 intro: "Nuestra familia de patrones de costura libre ha vuelto a crecer, y el benjamín de la familia es... Benjamin ."

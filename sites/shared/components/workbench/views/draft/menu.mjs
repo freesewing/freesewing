@@ -1,5 +1,4 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
-import { loadSettingsConfig as loadUiSettingsConfig } from 'shared/components/workbench/menus/ui-settings/config.mjs'
 import {
   DesignOptions,
   ns as designMenuNs,
@@ -11,7 +10,7 @@ import {
 import { UiSettings, ns as uiNs } from 'shared/components/workbench/menus/ui-settings/index.mjs'
 import { useTranslation } from 'next-i18next'
 import { patternNsFromPatternConfig, nsMerge } from 'shared/utils.mjs'
-import { SettingsIcon, OptionsIcon, DesktopIcon } from 'shared/components/icons.mjs'
+import { SettingsIcon, OptionsIcon, DesktopIcon, HelpIcon } from 'shared/components/icons.mjs'
 import { Accordion } from 'shared/components/accordion.mjs'
 import {
   FlagsAccordionTitle,
@@ -45,7 +44,6 @@ export const DraftMenu = ({
     account,
     control,
   }
-  const uiSettingsConfig = loadUiSettingsConfig()
 
   const sections = [
     {
@@ -67,9 +65,16 @@ export const DraftMenu = ({
       menu: <UiSettings {...menuProps} {...{ ui, view, setView }} />,
     },
   ]
+  // Show tip for lower User Experiences
+  if (control <= 3)
+    sections.push({
+      name: 'missingSettings' + control,
+      ns: 'ui-settings',
+      icon: <HelpIcon className="w-8 h-8" />,
+    })
 
   const items = []
-  if (control >= uiSettingsConfig.kiosk.control && flags)
+  if (flags)
     items.push([
       <FlagsAccordionTitle flags={flags} key={1} />,
       <FlagsAccordionEntries {...{ update, control, flags }} key={2} />,

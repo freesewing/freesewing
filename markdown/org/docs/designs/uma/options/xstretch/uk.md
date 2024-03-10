@@ -1,6 +1,6 @@
 ---
-title: "Horizontal fabric stretch"
+title: "Горизонтальна розтяжка тканини"
 ---
 
-Adjust this option for more or less stretchy fabrics, specifically for horizontal stretch.
+Налаштуйте цей параметр для більш-менш еластичних тканин, зокрема для горизонтального розтягування.
 

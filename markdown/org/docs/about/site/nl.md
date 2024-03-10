@@ -1,77 +1,77 @@
 ---
-title: Using the FreeSewing.org website
+title: De website FreeSewing.org gebruiken
 ---
 
-On these pages, we'll paint a high-level picture of how to get the most out of the FreeSewing.org website. Most people will be most interested in [How to generate bespoke sewing patterns](/docs/about/site/draft/).
+Op deze pagina's schetsen we een beeld op hoog niveau van hoe je het meeste uit de FreeSewing.org website kunt halen. De meeste mensen zullen het meest geïnteresseerd zijn in [Hoe naaipatronen op maat te genereren](/docs/about/site/draft/).
 
 
 <Comment by="joost">
 
-##### Where can I download the patterns?
+##### Waar kan ik de patronen downloaden?
 
-It can be frustrating for visitors who come here expecting a website where they can download sewing patterns that they can't seem to find the sewing patterns to download. Almost like hiding the *download button* is some elaborate scheme to waste their time.
+Het kan frustrerend zijn voor bezoekers die hier komen in de verwachting van een website waar ze naaipatronen kunnen downloaden, dat ze de naaipatronen om te downloaden niet lijken te kunnen vinden. Bijna alsof het verbergen van de *downloadknop* een ingewikkeld plan is om hun tijd te verdoen.
 
-I don't really know how to fix this because I cannot control people's expectations.
-FreeSewing.org is _very_ different from the a website with some links to PDF sewing patterns.
-So if that's what you're expecting, we almost have to de-train you before we can talk about what this site offers.
+Ik weet niet echt hoe ik dit moet oplossen, want ik heb geen controle over de verwachtingen van mensen.
+FreeSewing.org is _heel_ anders dan een website met wat links naar PDF naaipatronen.
+Dus als dat is wat je verwacht, dan moeten we je bijna onttrainen voordat we kunnen praten over wat deze site te bieden heeft.
 
-So I'm not going to do that. I'm going to assume you are reading with an open mind.
+Dus dat ga ik niet doen. Ik ga ervan uit dat je met een open geest leest.
 
 </Comment>
 
-## Finding your way
+## De weg vinden
 
-On every page of FreeSewing.org is the same header with links to the most important sections of the site:
+Op elke pagina van FreeSewing.org staat dezelfde kop met links naar de belangrijkste onderdelen van de site:
 
-- [Designs](/designs/) shows our collection of parametric designs you can generate bespoke sewing patterns from
-- [Documentation](/documentation/) holds all the documentation, for the website, for our designs, everything
-- [Blog](/blog/) holds blog posts with updates and news about FreeSewing
-- [Showcase](/showcase/) show examples from the FreeSewing community, things they have made with FreeSewing patterns
-- [Account](/account/) is where you can manage your FreeSewing account
-- [Support](/support/) lists your options for where to get help
-- [Search](/search/) can help you find something if you're not certain where to start looking
+- [Ontwerpen](/designs/) toont onze collectie parametrische ontwerpen waaruit je op maat gemaakte naaipatronen kunt genereren.
+- [Documentatie](/documentation/) bevat alle documentatie, voor de website, voor onze ontwerpen, alles
+- [Blog](/blog/) bevat blogberichten met updates en nieuws over FreeSewing
+- [Showcase](/showcase/) laat voorbeelden zien van de FreeSewing gemeenschap, dingen die ze hebben gemaakt met FreeSewing patronen.
+- [Op](/account/) kun je je FreeSewing account beheren.
+- [Ondersteuning](/support/) geeft een overzicht van je opties voor waar je hulp kunt krijgen
+- [Zoeken](/search/) kan je helpen iets te vinden als je niet zeker weet waar je moet beginnen met zoeken
 
-In addition, the header also has buttons to change the **Theme** (or color scheme) and **Language** of the website.
+Daarnaast heeft de header ook knoppen om het **Thema** (of kleurenschema) en **Taal** van de website te veranderen.
 
-On mobile, the header is at the bottom of the page and because of space constraints not all of these links are shown. However, click the *hamburger icon* to open the menu that contains all of these links.
+Op mobiel staat de koptekst onderaan de pagina en vanwege de beperkte ruimte worden niet al deze links getoond. Klik echter op het *hamburgerpictogram* om het menu te openen dat al deze koppelingen bevat.
 
-## Signing up or Signing in
+## Aanmelden of inloggen
 
-You can sign up for a FreeSewing account at [/signin](/signin/). We support signing in with your Google or GitHub account if that is easier for you.
+Je kunt je aanmelden voor een FreeSewing account op [/signin](/signin/). We support signing in with your Google or GitHub account if that is easier for you.
 
-If you already have an account, you can sign in to your account at at [/signin](/signin/).
+Als je al een account hebt, kun je je aanmelden bij je account op [/signin](/signin/).
 
-Some functionality requires a FreeSewing account. So I will assume you have an account for the remainder of these instructions.
+Voor sommige functies heb je een FreeSewing account nodig. Voor de rest van deze instructies ga ik er dus vanuit dat je een account hebt.
 
-## Important account settings
+## Belangrijke accountinstellingen
 
-When your signed in, you can navigate to [/account](/account/) to manage the data stored in your account, which includes various settings.
+Als je bent aangemeld, kun je naar [/account](/account/) gaan om de gegevens te beheren die in je account zijn opgeslagen, waaronder verschillende instellingen.
 
-I'd like to highlight a couple of them that are worth your attention:
+Ik wil er een paar uitlichten die je aandacht waard zijn:
 
 ### Gebruikerservaring
 
-The [User Experience setting](/account/control/) allows you to gradually reveal more complexity. If you are a little overwhelmed with everything FreeSewing.org has to offer, setting this to a lower value will gardually hide more features for the sake of simplicity. But setting a higher value here will show more features and functionality.
+Met de instelling [User Experience](/account/control/) kun je geleidelijk meer complexiteit onthullen. Als je een beetje overweldigd bent door alles wat FreeSewing.org te bieden heeft, verberg je door dit op een lagere waarde in te stellen meer functies omwille van de eenvoud. Als je een beetje overweldigd bent door alles wat FreeSewing.org te bieden heeft, verberg je door dit op een lagere waarde in te stellen meer functies omwille van de eenvoud.
 
-Dial this setting down if you want a simpler experience. Turn it up if you want more power, or some things that you know exists are not shown on your screen.
+Stel deze instelling lager in als je een eenvoudigere ervaring wilt. Zet hem harder als je meer vermogen wilt, of als sommige dingen waarvan je weet dat ze bestaan niet op je scherm worden getoond.
 
 ### Twee-Stappen Authenticatie
 
-Please enable [Two-Factor Authentication](/account/mfa/) to secure your FreeSewing account.
+Schakel [Two-Factor Authentication](/account/mfa/) in om je FreeSewing account te beveiligen.
 
-## Make it your own
+## Maak het je eigen
 
-Now that you have a FreeSewing account, there's more you can do on FreeSewing.org. Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features: Click through to learn more about the following features:
+Now that you have a FreeSewing account, there's more you can do on FreeSewing.org. Klik door voor meer informatie over de volgende functies: Klik door voor meer informatie over de volgende functies: Klik door voor meer informatie over de volgende functies: Klik door voor meer informatie over de volgende functies: Now that you have a FreeSewing account, there's more you can do on FreeSewing.org. Klik door voor meer informatie over de volgende functies: Klik door voor meer informatie over de volgende functies: Klik door voor meer informatie over de volgende functies: Klik door voor meer informatie over de volgende functies: Klik door voor meer informatie over de volgende functies: Now that you have a FreeSewing account, there's more you can do on FreeSewing.org. Klik door voor meer informatie over de volgende functies: Klik door voor meer informatie over de volgende functies: Klik door voor meer informatie over de volgende functies: Klik door voor meer informatie over de volgende functies: Klik door voor meer informatie over de volgende functies:
 
 - [Account](/docs/about/site/account)
 - [Maten sets](/docs/about/site/sets)
 - [Patronen](/docs/about/site/patterns)
-- [Curated measurements sets](/docs/about/site/csets)
-- [Bookmarks](/docs/about/site/bookmarks)
+- [Verzamelde meetsets](/docs/about/site/csets)
+- [Bladwijzers](/docs/about/site/bookmarks)
 - [API-keys](/docs/about/site/apikeys)
 
 
-## Generating sewing patterns
+## Naaipatronen genereren
 
-With that out of the way, let's move on to [How to generate bespoke sewing patterns](/docs/about/site/draft/).
+Nu dat achter de rug is, gaan we verder met [Hoe naaipatronen op maat genereren](/docs/about/site/draft/).
 

@@ -1,5 +1,5 @@
 ---
-title: "Zipper guard width"
+title: "Breite des Reißverschlussschutzes"
 ---
 
-Controls how wide the zipper guard will be. It should be wide enough to fully cover the zipper, with a little extra in case it shirts or stretches while in use.
+Legt fest, wie breit der Reißverschlussschutz sein soll. Er sollte breit genug sein, um den Reißverschluss vollständig zu bedecken, und ein wenig mehr, falls er sich während der Benutzung ausdehnt.

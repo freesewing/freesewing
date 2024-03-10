@@ -1,5 +1,5 @@
 ---
-title: "Onyx One-piece"
+title: "Monopièce Onyx"
 ---
 
 <DesignInfo design='onyx' docs />

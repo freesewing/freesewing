@@ -2,9 +2,9 @@
 title: Ім’я користувача
 ---
 
-Your username is special name that uniquely identifies you.
+Ваше ім'я користувача - це спеціальне ім'я, яке унікально ідентифікує вас.
 
-You can choose your own username, so anything goes.
+Ви можете вибрати власне ім'я користувача, так що підійде що завгодно.
 
-To avoid consusion, usernames must be unique when lowercased. In other words, the username `Joost` will not be available if a user `joost` exists.
+To avoid confusion, usernames must be unique when lowercased. Іншими словами, ім'я користувача `Joost` буде недоступне, якщо існує користувач `joost` .
 

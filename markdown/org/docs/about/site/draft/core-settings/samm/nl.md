@@ -7,12 +7,12 @@ Deze [Core Setting][core-settings] regelt de basismaat van je naad toeslag.  Met
 <Note>
 
 De kernbibliotheek van FreeSewing heeft maar één instelling voor naadtoeslag: `sa`.
-Voor het gemak hebben we dit echter opgesplitst in twee verschillende instellingen op de website:
+However, for convenience, we've split this up into two different settings on the website:
 
-- **[Naadtoeslag opnemen](/docs/site/draft/core-settings/sabool)**: Regelt of de naadtoeslag wel of niet moet worden opgenomen
-- **[Seam Allowance Size](/docs/site/draft/core-settings/samm)**: Regelt hoe groot de naadtoeslag moet zijn, als deze is inbegrepen
+- **[Include Seam Allowance](/docs/about/site/draft/core-settings/sabool)**: Controls whether or not to include seam allowance
+- **[Seam Allowance Size](/docs/about/site/draft/core-settings/samm)**: Controls how big to make the seam allowance, if it is included
 
-De laatste wordt alleen getoond als je de eerste hebt ingeschakeld.
+The latter will only be shown if you've enabled the former.
 
 </Note>
-[core-settings]: /docs/site/draft/core-settings/
+[core-settings]: /docs/about/site/draft/core-settings/

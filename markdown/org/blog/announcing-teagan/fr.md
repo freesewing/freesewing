@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Photo d'Alex Andrews de Pexels"
 date: "2020-09-09"
 intro: "Il y a quelque temps, quelqu'un a demandé si nous avions un patron de T-shirt sur freesewing.org et il s'avère que nous ne l'avions pas."

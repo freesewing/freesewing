@@ -1,7 +1,7 @@
 ---
-title: "Binding"
+title: "Reliure"
 ---
 
-Binding determines the size of the binding for the neck and leg openings.
+La reliure détermine la taille de la reliure pour l'encolure et l'ouverture des jambes.
 
-The binding is a percentage of the waist divided by 4. Default is 11%
+La reliure est un pourcentage de la taille divisé par 4. La valeur par défaut est de 11 %

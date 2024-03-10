@@ -1,18 +1,18 @@
 ---
-title: "Breanna dress by Andrea Cretu"
-caption: "Andrea made this lovely dress based on the Breanna block"
+title: "Сукня Breanna від Andrea Cretu"
+caption: "Андреа зробила цю чудову сукню на основі блоку Breanna"
 date: 20231017
-intro: "Andrea added a circle skirt to the Breanna block to make this charming dress."
+intro: "Андреа додала спідницю-коло до блоку Бріанни, щоб створити цю чарівну сукню."
 designs:
   - "Бріанна."
-maker: Natalia
+maker: Наталя
 ---
 
-Andrea added a circle skirt to the Breanna block to make this charming dress. We love the choice of fabric and buttons!
+Андреа додала спідницю-коло до блоку Бріанни, щоб створити цю чарівну сукню. Нам подобається вибір тканини та ґудзиків!
 
-Andrea shared these helpful details:
+Андреа поділилася цими корисними деталями:
 
-> Made a dress based on the Breanna body block, with a circle skirt. Next iteration I'll scoop out the armholes and neck and add length to the bottom, so the skirt starts a little lower. Also will make the darts end earlier on the bust and later on the back.
+> Зробила сукню на основі боді-блоку Бріанна, зі спідницею по колу. На наступній ітерації я розширю пройми і горловину, а також додам довжину до низу, щоб спідниця починалася трохи нижче. Також виточки закінчуються раніше на грудях і пізніше на спині.
 
-Andrea is a talented creator, and the owner at [Yarnandy.com](Yarnandy.com). 
+Андреа - талановитий творець і власник сайту [Yarnandy.com](Yarnandy.com). 
 

@@ -1,13 +1,13 @@
 ---
-title: "Shelly shirt: Fabric Options"
+title: "Shelly Hemd: Stoff Optionen"
 ---
 
-This pattern is designed to work with stretch/knit fabrics, particularly spandex.
+Dieses Muster ist für Stretch-/Strickstoffe, insbesondere Elasthan, geeignet.
 
-For swim shirts, rash guards, compression shirts, athletic shirts, and other performance-oriented shirts, four-way stretch fabric is strongly recommended. For more casual raglan t-shirts, two-way stretch jersey should work fine.
+Für Schwimmshirts, Rash Guards, Kompressionsshirts, Sportshirts und andere leistungsorientierte Shirts wird Vier-Wege-Stretchgewebe dringend empfohlen. Für lässigere Raglan-T-Shirts sollte Zwei-Wege-Stretch-Jersey gut geeignet sein.
 
-For compression clothes and swimwear, a 20:80 ratio of nylon/polyester to spandex/elastane is recommended. More elastic fabrics allow for greater negative ease, will give better mobility, and will be more forgiving to measurement/design errors.
+Für Kompressionskleidung und Badebekleidung wird ein Verhältnis von 20:80 zwischen Nylon/Polyester und Elasthan/Elastan empfohlen. Elastischere Stoffe ermöglichen eine größere negative Bequemlichkeit, bieten mehr Bewegungsfreiheit und verzeihen eher Mess-/Designfehler.
 
-The raglan sleeves lend themselves well to using different colors/prints for the body and for the sleeves.
+Die Raglanärmel eignen sich gut, um verschiedene Farben/Drucke für den Körper und die Ärmel zu verwenden.
 
-With swim fabric/spandex, it is recommended to make the neckband out of the same material used for the shirt. For less stretchy fabric, such as cotton jersey knit, ribbing is recommended.
+Bei Schwimmstoffen/Elasthan wird empfohlen, das Nackenband aus demselben Material wie das Shirt zu fertigen. Bei weniger dehnbaren Stoffen, wie Baumwolljersey, wird eine Rippung empfohlen.

@@ -5,7 +5,7 @@ export const buttonRow = {
       <table class="sm-w-full sm-mx-auto" border="0" cellpadding="0" cellspacing="0" role="presentation">
         <tr>
           <td align="center" class="hover-bg-blue-600" style="border-radius: 2px; background-color: #262626">
-            <a href="{{ actionUrl}}" target="_blank" class="sm-block sm-p-15px sm-border-0" style="text-decoration: none; border: 1px solid #000; display: inline-block; border-radius: 2px; padding: 15px 25px; font-size: 16px; font-weight: 700; color: #fff">{{ button }} &nbsp;&nbsp;&rarr;</a>
+            <a href="{{{ actionUrl }}}" target="_blank" class="sm-block sm-p-15px sm-border-0" style="text-decoration: none; border: 1px solid #000; display: inline-block; border-radius: 2px; padding: 15px 25px; font-size: 16px; font-weight: 700; color: #fff">{{ button }} &nbsp;&nbsp;&rarr;</a>
           </td>
         </tr>
       </table>
@@ -26,7 +26,7 @@ export const closingRow = {
         joost
         <br><br>
         PS: {{{ ps-pre-link}}}
-        <a href="{{ supportUrl }}" target="_blank" style="text-decoration: underline; color: #262626">
+        <a href="{{{ supportUrl }}}" target="_blank" style="text-decoration: underline; color: #262626">
           <b>{{{ ps-link}}}</b>
         </a> {{{ ps-post-link }}}
       </p>
@@ -83,7 +83,7 @@ export const lead1Row = {
   <tr>
     <td align="left" class="sm-p-15px" style="padding-top: 15px">
       <p style="margin: 0; font-size: 16px; line-height: 25px; color: #262626">
-        <a href="{{ actionUrl }}" target="_blank" style="text-decoration: none; color: #262626">
+        <a href="{{{ actionUrl }}}" target="_blank" style="text-decoration: none; color: #262626">
           <b>{{{ lead }}}</b>
         </a>
       </p>
@@ -101,7 +101,7 @@ export const preLeadRow = {
       <p style="margin: 0; font-size: 16px; line-height: 25px; color: #262626">
         {{{ preLead }}}
         <br><br>
-        <a href="{{ actionUrl }}" target="_blank" style="text-decoration: none; color: #262626">
+        <a href="{{{ actionUrl }}}" target="_blank" style="text-decoration: none; color: #262626">
           <b>{{{ lead }}}</b>
         </a>
       </p>
@@ -234,7 +234,7 @@ export const wrap = {
         {{ notMarketing }}
         <br>
         {{ seeWhy }}&nbsp;
-        <a href="{{ urlWhy }}" target="_blank" style="text-decoration: underline; color: #868e96">{{ whyDidIGetThis }}</a>
+        <a href="{{{ urlWhy }}}" target="_blank" style="text-decoration: underline; color: #868e96">{{ whyDidIGetThis }}</a>
         <br>
         <br>
         FreeSewing

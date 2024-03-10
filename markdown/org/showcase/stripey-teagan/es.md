@@ -6,6 +6,7 @@ intro: "Una usuaria de FreeSewing probó a modificar a Teagan, ¡y nos encanta c
 title: "Una Teagan a rayas espectacular"
 designs:
   - "teagan"
+author: 8
 ---
 
 Una usuaria de FreeSewing probó a modificar a Teagan, ¡y nos encanta cómo quedó el resultado! Aquí tienes una pequeña explicación que compartió sobre cómo dibujó su Teagan y dio forma a las costuras laterales para un ajuste más ceñido.

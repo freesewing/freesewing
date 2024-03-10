@@ -1,14 +1,14 @@
 ---
-title: "Yuri hoodie: Designer Notes"
+title: "Yuri Hoodie: Designer Notes"
 ---
 
-The idea behind Yuri was to get a hybrid cardigan/sweatshirt that could be easily opened and closed, and sewn without the hassle of zips. When I started sewing, one of the things I hated the most was sewing zips (but now it's ok, yay!).
+Die Idee hinter Yuri war, einen Hybrid aus Strickjacke und Sweatshirt zu entwickeln, der sich leicht öffnen und schließen lässt und ohne lästige Reißverschlüsse genäht werden kann. Als ich mit dem Nähen angefangen habe, war eines der Dinge, die ich am meisten gehasst habe, das Nähen von Reißverschlüssen (aber jetzt ist es ok, yay!).
 
-I wanted a big shape that would be comfortable to wear while cycling or knitting on the couch, plus size or not, with or without breasts :)
+Ich wollte eine große Form, die beim Radfahren oder Stricken auf der Couch bequem zu tragen ist, ob mit oder ohne Brüste :)
 
-This pattern was made in collaboration with @biou, my husband, who's also a programmer. We had a lot of fun creating and testing the pattern together and we were happy to be able to contribute a little to FreeSewing :)
+Dieses Muster ist in Zusammenarbeit mit @biou, meinem Mann, entstanden, der auch Programmierer ist. Es hat uns viel Spaß gemacht, das Muster gemeinsam zu entwerfen und zu testen, und wir freuen uns, dass wir einen kleinen Beitrag zu FreeSewing leisten können :)
 
-We used a mix of the two Huey & Hugo hoodies and reshaped them a bit to change the front/opening and length, and BAM, Yuri was born!
+Wir haben eine Mischung aus den beiden Huey & Hugo-Kapuzenpullovern genommen und sie ein bisschen umgestaltet, um die Vorderseite/Öffnung und die Länge zu ändern, und BAM, Yuri war geboren!
 
-I recommend using a soft sweatshirt fabric, you can add a lining but it's not essential. It can be nice in red for a little red hood costume, or a nice gift for a pregnant person :)
+Ich empfehle, einen weichen Sweatshirt-Stoff zu verwenden. Du kannst ein Futter hinzufügen, aber das ist nicht unbedingt notwendig. Es kann in Rot für ein Rotkäppchen-Kostüm oder als Geschenk für eine schwangere Person verwendet werden :)
 

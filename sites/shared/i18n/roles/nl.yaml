@@ -1,10 +1,10 @@
-readNone: Read None
-readSome: Read Some
-readOnly: Read Only
-writeSome: Write Some
-user: User
+readNone: Geen lezen
+readSome: Enkele lezen
+readOnly: Alleen lezen
+writeSome: Schrijf wat
+user: Gebruiker
 curator: Curator
-bughunter: Bug Hunter
+bughunter: Insectenjager
 support: Ondersteuning
 admin: Admin
 

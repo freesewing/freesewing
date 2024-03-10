@@ -1,5 +1,5 @@
 ---
-title: "Zipper guard width"
+title: "Ширина захисту блискавки"
 ---
 
-Controls how wide the zipper guard will be. It should be wide enough to fully cover the zipper, with a little extra in case it shirts or stretches while in use.
+Дозволяє контролювати ширину захисту блискавки. Вона повинна бути достатньо широкою, щоб повністю закривати блискавку, з невеликим запасом на випадок, якщо вона розтягнеться під час використання.

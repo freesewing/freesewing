@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 import { compileMdx } from 'shared/mdx/browser-compile.mjs'
 import * as runtime from 'react/jsx-runtime'
@@ -25,7 +26,6 @@ export const DynamicMdx = ({ site = 'org', slug, language, title = 1 }) => {
   const [frontmatter, setFrontmatter] = useState(false)
 
   useEffect(() => {
-    console.log('in effect')
     const loadMdx = async () => {
       const response = await fetch(`${ghPrefix}/${site}/${slug}/${language}.md`)
       const md = await response.text()

@@ -1,5 +1,5 @@
 ---
-title: Motivatie
+title: Mijn redenering achter de inkomstenbelofte van FreeSewing
 ---
 
 <Note>
@@ -9,7 +9,7 @@ zijn motivaties voor [de FreeSewing revenue pledge](//docs/various/pledge/)
 
 </Note>
 
-Je veronderstelt waarschijnlijk dat we om geld vragen om de servers te laten draaien. Maar dat is niet echt waar.
+Je gaat er waarschijnlijk van uit dat ik geld vraag om de servers draaiende te houden. Maar dat is niet echt waar.
 
 Ik weet niet of de term **noblesse oblige** je bekend is, maar het betekent dat privilege ook verantwoordelijkheid inhoudt.
 
@@ -40,7 +40,7 @@ En daarom gaat al het geld dat FreeSewing binnenbrengt naar een goed doel. Het m
 
 Hier is het lastige deel: mensen geven minder wanneer ze weten dat het geld naar een goed doel gaat. Ik wou dat het niet zo was, maar ja.
 
-Daarom presenteren we onze [abonnementsopties](/community/join) zoals je op een winstmakende site zou zien. Deze manier lijkt intuïtiever, en werkt ook beter.
+Dus ik presenteer [de abonnementsopties](/patrons/join) zoals je zou zien op een site met winstoogmerk. Deze manier lijkt intuïtiever, en werkt ook beter.
 
 Yes, everything is free, and the money doesn't actually go to paying the server bills (because I choose to pay them out of my pocket for reasons outlined above). But that doesn't mean that these contributions are not crucial to the well-being of the project, or at the very least its maintainer (that would be me).
 

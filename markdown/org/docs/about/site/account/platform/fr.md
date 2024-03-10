@@ -1,7 +1,7 @@
 ---
-title: Social media platforms
+title: Plateformes de réseaux sociaux
 ---
 
-You can set your username/identity on other social media platforms in your FreeSewing account.
+Tu peux définir ton nom d'utilisateur/identité sur d'autres plateformes de réseaux sociaux dans ton compte FreeSewing.
 
-We do not use this data in any way. This is only here so FreeSewing users can connect the dots across platforms.
+Nous utilisons ces données d'aucune manière. Ce n'est qu'ici que les utilisateurs de FreeSewing peuvent relier les points entre les plateformes.

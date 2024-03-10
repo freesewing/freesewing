@@ -1,11 +1,11 @@
 ---
-title: "Neckband length"
+title: "Longueur du tour de cou"
 ---
 
-Controls how long to make the neckband, as a percentage of the circumference of the neckline.
+Contrôle la longueur de la bande de cou, en pourcentage de la circonférence de l'encolure.
 
-Too large a value will make for a loose neckband that doesn't hold its shape properly, while too small a value will cause the fabric around the neckband to be gathered.
+Une valeur trop grande donnera un tour de cou lâche qui ne tient pas bien la forme, tandis qu'une valeur trop petite fera que le tissu autour du tour de cou sera froncé.
 
-Materials that stretch more easily should use smaller values. 80-85% is a reasonable value when using swim fabric, and 75% is a reasonable value for rib knit.
+Les matériaux qui s'étirent plus facilement doivent utiliser des valeurs plus petites. 80-85% est une valeur raisonnable lorsque tu utilises du tissu de natation, et 75% est une valeur raisonnable pour le tricot côtelé.
 
-Note: This option is only available if the 'neck style' option is set to 'neckband.'
+Remarque : cette option n'est disponible que si l'option " style de col " est réglée sur " tour de cou ".

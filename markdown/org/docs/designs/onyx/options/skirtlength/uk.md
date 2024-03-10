@@ -1,5 +1,5 @@
 ---
-title: "Skirt length"
+title: "Довжина спідниці"
 ---
 
-Controls the length of the skirt, as a percentage of the waist to upper leg measurement. A length of 100% should make a skirt just long enough to reach the upper leg.
+Контролює довжину спідниці у відсотках від обхвату талії до обхвату гомілки. Довжина 100% повинна бути достатньою для того, щоб спідниця досягала верхньої частини гомілки.

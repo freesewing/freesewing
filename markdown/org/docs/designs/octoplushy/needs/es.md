@@ -15,9 +15,9 @@ Para hacer Octoplushy, necesitarás lo siguiente:
 
 <Note>
 
-This list is based on a default Octoplushy and you may need less or more fabric dependant on the [size you are making Octoplushy](/docs/designs/octoplushy/options/size/). 
+Esta lista se basa en un Octoplushy por defecto y puede que necesites menos o más tela dependiendo del [tamaño al que estés haciendo el Octoplushy](/docs/designs/octoplushy/options/size/). 
 
-The amount of fabric required is also dependant on the [type of Octoplushy you are making](/docs/designs/octoplushy/options/type/).
+La cantidad de tela necesaria también depende del [tipo de Octoplushy que estés haciendo](/docs/designs/octoplushy/options/type/).
 - La versión Octopus requiere aproximadamente un 50% más de tejido que la versión Octoplushy.
 - La versión Calamar requiere aproximadamente un 75% más de tejido que la versión Octoplushy.
 

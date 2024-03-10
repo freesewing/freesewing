@@ -11,6 +11,7 @@ FreeSewing prend actuellement en charge les langues suivantes :
 - Français
 - Allemand
 - Néerlandais
+- Ukrainien
 
-Vous pouvez choisir l'une de ces langues et votre modèle sera traduit dans cette langue.
+Vous pouvez choisir l'une de ces langues et votre patron sera traduit dans cette langue.
 

@@ -1,7 +1,7 @@
 ---
-title: "neck guard length"
+title: "longueur du protège-cou"
 ---
 
-On garments with a neckband, this option adds extra length to the zipper guard to allow it to wrap around the neckband to protect the neck.
+Sur les vêtements dotés d'un tour de cou, cette option ajoute une longueur supplémentaire à la protection de la fermeture éclair pour lui permettre de s'enrouler autour du tour de cou afin de protéger la nuque.
 
-Note: This option is only available if the 'neck style' option is set to 'neckband.'
+Remarque : cette option n'est disponible que si l'option " style de col " est réglée sur " tour de cou ".

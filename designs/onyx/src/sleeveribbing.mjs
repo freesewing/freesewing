@@ -10,21 +10,22 @@ function draftSleeveRibbing({
   part,
   store,
   complete,
+  expand,
   sa,
   macro,
 }) {
-  if (!options.sleeveRibbing) return part.hide()
+  if (!expand || !options.sleeveRibbing) return part.hide()
 
   const ribbingLength = store.get('sleeveWidth') * options.sleeveRibbingLength
   const sleeveRibbingWidth = 2 * absoluteOptions.sleeveRibbingWidth
 
   points.topLeftCorner = new Point(0, 0)
   points.bottomLeftCorner = new Point(0, sleeveRibbingWidth)
-  points.bottomRightCorner = new Point(ribbingLength, sleeveRibbingWidth)
-  points.topRightCorner = new Point(ribbingLength, 0)
+  points.bottomRightCorner = new Point(ribbingLength / 2, sleeveRibbingWidth)
+  points.topRightCorner = new Point(ribbingLength / 2, 0)
 
   points.leftCenter = new Point(0, sleeveRibbingWidth / 2)
-  points.rightCenter = new Point(ribbingLength, sleeveRibbingWidth / 2)
+  points.rightCenter = new Point(ribbingLength / 2, sleeveRibbingWidth / 2)
 
   paths.saBase = new Path()
     .move(points.bottomLeftCorner)
@@ -70,7 +71,7 @@ function draftSleeveRibbing({
   store.cutlist.addCut({ cut: 2, from: 'ribbing' })
 
   points.title = new Point(ribbingLength / 4, sleeveRibbingWidth / 2)
-  macro('title', { at: points.title, nr: 10, title: 'sleeveRibbing' })
+  macro('title', { at: points.title, nr: 10, title: 'onyx:sleeveRibbing' })
 
   if (sa) {
     paths.sa = new Path()
@@ -90,22 +91,4 @@ export const sleeveRibbing = {
   name: 'onyx.sleeveRibbing',
   draft: draftSleeveRibbing,
   after: raglanSleeve,
-  options: {
-    // How wide the sleeve ribbing should be, in absolute measure.
-    sleeveRibbingWidth: {
-      pct: 20,
-      min: 0,
-      max: 100,
-      snap: { metric: 5, imperial: 6.35 },
-      toAbs: (pct, settings, mergedOptions) => mergedOptions.sleeveRibbingWidth * 200, // Valid range is from 0 to 200mm.
-      menu: (settings, mergedOptions) => (mergedOptions.sleeveRibbing ? 'construction' : false),
-    },
-    // How long the sleeve ribbing should be, as a percentage of the length around the sleeve.
-    sleeveRibbingLength: {
-      pct: 75,
-      min: 50,
-      max: 100,
-      menu: (settings, mergedOptions) => (mergedOptions.sleeveRibbing ? 'construction' : false),
-    },
-  },
 }
