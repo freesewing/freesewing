@@ -618,6 +618,25 @@
       "ribbing"
     ]
   },
+  "opal": {
+    "code": "Thrunic",
+    "description": "A FreeSewing pattern for overalls",
+    "design": "Thrunic",
+    "difficulty": 3,
+    "lab": true,
+    "org": true,
+    "tags": [
+	  "overalls",
+	  "onePiece"
+    ],
+    "techniques": [
+      "flatFelledSeam",
+      "hem",
+	  "curvedSeam",
+	  "button",
+	  "pocket"
+    ]
+  },
   "otis": {
     "code": "Wouter Van Wageningen",
     "description": "A FreeSewing pattern for a baby romper",
@@ -976,18 +995,5 @@
       "hem",
       "button"
     ]
-  "opal": {
-    "code": "Coder name",
-    "description": "A FreeSewing pattern that needs a description",
-    "design": "Designer name",
-    "difficulty": 1,
-    "lab": true,
-    "org": false,
-    "tags": [
-      "tagname"
-    ],
-    "techniques": [
-      "techname"
-    ]
-  }
+  },
 }
