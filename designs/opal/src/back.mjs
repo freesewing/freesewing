@@ -629,7 +629,7 @@ function draftBack({
   points.title = points.cfWaist
     .shiftFractionTowards(points.outseamHem, 0.5)
     .shiftFractionTowards(points.inseamHem, 0.5)
-  macro('title', { at: points.title, nr: 2, title: 'onyx:back' })
+  macro('title', { at: points.title, nr: 2, title: 'opal:back' })
   points.logo = points.title.translate(scale * -20, scale * 35)
   snippets.logo = new Snippet('logo', points.logo)
   points.scalebox = points.title.translate(scale * -10, scale * -80)

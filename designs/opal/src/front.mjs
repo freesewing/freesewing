@@ -325,7 +325,7 @@ function draftFront({
   store.cutlist.addCut({ cut: 2, from: 'fabric' })
 
   points.title = points.cfWaist.shiftFractionTowards(points.outseamHem, 0.5)
-  macro('title', { at: points.title, nr: 1, title: 'onyx:front' })
+  macro('title', { at: points.title, nr: 1, title: 'opal:front' })
   points.logo = points.title.translate(-scale * 20, scale * 35)
   snippets.logo = new Snippet('logo', points.logo)
   points.scalebox = points.title.translate(0, -scale * 100)
