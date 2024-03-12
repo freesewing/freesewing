@@ -20,7 +20,7 @@ does.
 
 If you're not familiar with the `({ part })` syntax you see above, this is a
 technique called *parameter destructuring* or more generally, [object
-destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment).
 
 The draft method receives only 1 parameter: An object that holds everything we
 need to draft our method.  Destructuring is a way to *pull things out of the
@@ -63,12 +63,10 @@ Change the function to look like this:
 
 ```src/bib.mjs
 function draftBib({
-  // highlight-start
   Path,
   Point,
   paths,
   points,
-  // highlight-end
   part,
 }) {
 
@@ -76,7 +74,7 @@ function draftBib({
 }
 ```
 
-That's bunch of new lines, but each of one gives us something we'll use in this
+That's a bunch of new lines, but each of one gives us something we'll use in this
 tutorial.
 
 For a complete list of what you can access via destructuring like this, refer

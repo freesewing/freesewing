@@ -32,9 +32,7 @@ function draftBib({ part }) => {
 export const bib = {
   name: 'fromscratch.bib',
   draft: draftBib,
-  // highlight-start
   measurements: [ 'head' ],
-  // highlight-end
 }
 ```
 
