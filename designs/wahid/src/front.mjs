@@ -336,6 +336,7 @@ function wahidFront({
   // Title
   macro('title', {
     at: points.flbCpTop,
+    title: 'front',
     nr: 1,
     align: 'center',
   })
