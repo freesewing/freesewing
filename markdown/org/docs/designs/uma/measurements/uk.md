@@ -2,6 +2,4 @@
 title: "Ума роздягається: Необхідні виміри"
 ---
 
-<Note>
-Ума не потребує жодних вимірів
-</Note>
+<DesignMeasurements design='uma' />
