@@ -340,7 +340,7 @@ export const Mset = ({ id, publicOnly = false }) => {
           ) : (
             <span></span>
           )}
-          {account.control > 2 && mset.userId === account.id ? (
+          {account.control > 2 ? (
             <BookmarkButton slug={`sets/${mset.id}`} title={mset.name} type="set" thing="set" />
           ) : null}
           <button
