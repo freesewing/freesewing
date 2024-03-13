@@ -27,7 +27,7 @@ Like our neck opening, we've only drawn half since we can simply copy the
 points to the other side.
 
 <Example tutorial caption="Now the straps overlap. Which doesn't work for a pattern as it would make it impossible to cut it out of a single piece of fabric. So let's deal with the overlap next.">
-```design/src/bib.mjs
+```src/bib.mjs
 function draftBib({
   Path,
   Point,
@@ -35,27 +35,42 @@ function draftBib({
   points,
   measurements,
   options,
-  // highlight-start
   macro,
-  // highlight-end
   part,
 }) {
 
   /*
    * Construct the quarter neck opening
    */
-  const target = (measurements.head * options.neckRatio) /4
   let tweak = 1
+  let target = (measurements.head * options.neckRatio) /4
   let delta
   do {
-    points.right = new Point(tweak * measurements.head / 10, 0)
-    points.bottom = new Point(0, tweak * measurements.head / 12)
-    points.rightCp1 = points.right.shift( 90, points.bottom.dy(points.right) / 2)
-    points.bottomCp2 = points.bottom.shift( 0, points.bottom.dx(points.right) / 2)
-
+    points.right = new Point(
+      tweak * measurements.head / 10, 
+      0
+    )
+    points.bottom = new Point(
+      0, 
+      tweak * measurements.head / 12
+    )
+  
+    points.rightCp1 = points.right.shift(
+      90, 
+      points.bottom.dy(points.right) / 2
+    )
+    points.bottomCp2 = points.bottom.shift(
+      0, 
+      points.bottom.dx(points.right) / 2
+    )
+  
     paths.quarterNeck = new Path()
       .move(points.right)
-      .curve(points.rightCp1, points.bottomCp2, points.bottom)
+      .curve(
+        points.rightCp1, 
+        points.bottomCp2, 
+        points.bottom
+      )
       .hide()
 
     delta = paths.quarterNeck.length() - target
@@ -134,7 +149,6 @@ function draftBib({
     .curve(points.edgeRightCp, points.edgeTopRightCp, points.edgeTop)
     .close()
 
-  // highlight-start
   // Round the straps
   const strap = points.edgeTop.dy(points.top)
 
@@ -156,7 +170,6 @@ function draftBib({
     via: points.tipRightBottom,
     hide: false
   })
-  // highlight-end
 
   return part
 }
