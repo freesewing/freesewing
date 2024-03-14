@@ -23,8 +23,8 @@ and the head circumference. Let's call it `neckRatio`.
 
 For this, I will add the `options` property to our `bib` object:
 
-```src/bib.mjs
-function draftBib({ part }) => {
+```design/src/bib.mjs
+function draftBib({ part }) {
   return part
 }
 
@@ -32,6 +32,7 @@ export const bib = {
   name: 'fromscratch.bib',
   draft: draftBib,
   measurements: [ 'head' ],
+  // highlight-start
   options: {
     neckRatio: { 
       pct: 80, 
@@ -40,6 +41,7 @@ export const bib = {
       menu: 'fit'
     },
   },
+  // highlight-end
 }
 ```
 
@@ -73,7 +75,7 @@ This is covered in more detail in [Part 3](/tutorials/pattern-design/part3) of t
 
 Let's do something similar for the width and length of our bib:
 
-```src/bib.mjs
+```design/src/bib.mjs
 function draftBib({ part }) => {
   return part
 }
@@ -89,6 +91,8 @@ export const bib = {
       max: 90, 
       menu: 'fit'
     },
+    
+    // highlight-start
     widthRatio: { 
       pct: 45, 
       min: 35, 
@@ -101,6 +105,7 @@ export const bib = {
       max: 85, 
       menu: 'style' 
     },
+    // highlight-end
   },
 }
 ```

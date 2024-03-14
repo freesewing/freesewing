@@ -15,14 +15,16 @@ We'll be adding some points to our pattern to do just that. But we want to have
 access to our measurements and options to do so. For this, we first destructure
 `measurements` and `options` so we can access them:
 
-```src/bib.mjs
+```design/src/bib.mjs
 function draftBib({
   Path,
   Point,
   paths,
   points,
+// highlight-start
   measurements,
   options,
+// highlight-end
   part,
 }) {
 
@@ -37,7 +39,7 @@ Great. Now let's get to work.
 Let's add some points, and use them to draw our first curve:
 
 <Example tutorial caption="Our very first path forms a quarter of our neck opening">
-```src/bib.mjs
+```design/src/bib.mjs
 function draftBib({
   Path,
   Point,
@@ -48,6 +50,7 @@ function draftBib({
   part,
 }) {
 
+// highlight-start
   /*
    * Construct the quarter neck opening
    */
@@ -76,6 +79,7 @@ function draftBib({
       points.bottomCp2, 
       points.bottom
     )
+// highlight-end
 
   return part
 }

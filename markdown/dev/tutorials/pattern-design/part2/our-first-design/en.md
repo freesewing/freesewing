@@ -12,7 +12,7 @@ will live in `design/from-scratch/src/bib.mjs`.
 
 This `bib.mjs` file is where will be doing most of the work here in part 2 of this
 tutorial. But let's start with the `index.mjs` file as an appetizer, because this
-is where a new FreeSewing design is brought to live. It looks like this:
+is where a new FreeSewing design is brought to life. It looks like this:
 
 ```src/index.mjs
 import { Design } from '@freesewing/core'

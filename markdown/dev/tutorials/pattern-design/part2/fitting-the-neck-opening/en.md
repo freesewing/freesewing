@@ -8,7 +8,7 @@ going to make sure it is.  Here's how we'll make sure the neck opening is _just
 right_:
 
 <Example tutorial caption="It might look the same as before, but now it's just right">
-```src/bib.mjs
+```design/src/bib.mjs
 function draftBib({
   Path,
   Point,
@@ -22,17 +22,23 @@ function draftBib({
   /*
    * Construct the quarter neck opening
    */
+// highlight-start
   let tweak = 1
   let target = (measurements.head * options.neckRatio) /4
   let delta
   do {
+// highlight-end
     points.right = new Point(
+// highlight-start
       tweak * measurements.head / 10, 
+// highlight-end
       0
     )
     points.bottom = new Point(
       0, 
+// highlight-start
       tweak * measurements.head / 12
+// highlight-end
     )
 
     points.rightCp1 = points.right.shift(
@@ -52,11 +58,13 @@ function draftBib({
         points.bottom
       )
 
+
+// highlight-start
     delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
     else tweak = tweak * 1.02
   } while (Math.abs(delta) > 1)
-
+// highlight-end
   return part
 }
 ```

@@ -6,8 +6,8 @@ order: 50
 Time to turn our attention to the draft method of our part.
 Inside our `src/bib.mjs` file, this is what it currently looks like:
 
-```src/bib.mjs
-function draftBib({ part }) => {
+```design/src/bib.mjs
+function draftBib({ part }) {
   return part
 }
 ```
@@ -29,7 +29,7 @@ equivalent:
 
 <Tabs tabs="Without destructuring, With destructuring">
 <Tab>
-```src/bib.mjs
+```design/src/bib.mjs
 function draftBib(props) {
 
   return props.part
@@ -38,7 +38,7 @@ function draftBib(props) {
 ```
 </Tab>
 <Tab>
-```src/bib.mjs
+```design/src/bib.mjs
 function draftBib({ part }) {
 
   return part
@@ -61,7 +61,7 @@ If you're new to JavaScript, and don't intuitively _get this_, stick with it. It
 
 Change the function to look like this:
 
-```src/bib.mjs
+```design/src/bib.mjs
 function draftBib({
   Path,
   Point,
