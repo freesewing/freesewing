@@ -9,7 +9,7 @@ import { binpackPlugin } from '../../../plugins/plugin-bin-pack/src/index.mjs'
 /*
  * Quick helper assertion for equalIgnoreSpaces
  */
-use(function (chai, utils) {
+use(function (chai) {
   chai.string = chai.string || {}
 
   function isString(value) {
