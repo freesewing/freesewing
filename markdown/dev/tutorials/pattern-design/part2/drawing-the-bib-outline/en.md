@@ -6,7 +6,7 @@ order: 88
 With our neck opening in place, let us draw the basic outline of our bib.
 
 <Example tutorial caption="Note how the neck opening is the same distance from the left, right, and top edge">
-```src/bib.mjs
+```design/src/bib.mjs
 function draftBib({
   Path,
   Point,
@@ -75,7 +75,10 @@ function draftBib({
     .close()
     .addClass('fabric')
 
-  // Drawing the bib outline
+// highlight-start
+  /*
+   * Drawing the bib outline
+   */
   const width = measurements.head * options.widthRatio
   const length = measurements.head * options.lengthRatio
 
@@ -95,6 +98,7 @@ function draftBib({
     .line(points.topLeft)
     .close()
     .addClass('fabric')
+// highlight-end
 
   return part
 }

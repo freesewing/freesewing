@@ -25,7 +25,7 @@ I am using [*the official name* of the measurement](/reference/measurements) her
 circumference, that name is `head`.
 
 <Fixme>
-The `design/src/bib.mjs` "language" title is out of date. It is used in the tutorial from this point forward to maintain syntax-highlight not yet available for the `src/bib.mjs` title, but should be replaced with `src/bib.mjs`.
+The `design/src/bib.mjs` "language" title on the code snippets is out of date. It is used in the tutorial from this point forward to maintain syntax-highlight not yet available for the `src/bib.mjs` title, but should be replaced with `src/bib.mjs`.
 </Fixme>
 
 ```design/src/bib.mjs

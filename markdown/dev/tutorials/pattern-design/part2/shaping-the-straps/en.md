@@ -17,7 +17,7 @@ As always, [the API docs](/reference/api/point/) have all the details.
 
 
 <Example tutorial caption="All of a sudden, things are starting to look like a bib">
-```src/bib.mjs
+```design/src/bib.mjs
 function draftBib({
   Path,
   Point,
@@ -111,6 +111,7 @@ function draftBib({
     .close()
     .addClass('fabric')
 
+// highlight-start
   /*
    * Shape the straps
    */
@@ -137,6 +138,8 @@ function draftBib({
     .line(points.edgeRight)
     .curve(points.edgeRightCp, points.edgeTopRightCp, points.edgeTop)
     .close()
+
+// highlight-end
 
   return part
 }

@@ -53,7 +53,7 @@ we'll capture these return values from the `round` macros and create
 easy-to-remember points from them:
 
 <Example tutorial caption="It looks the same as before, but now those macro points are accessible to us">
-```src/bib.mjs
+```design/src/bib.mjs
 function draftBib({
   Path,
   Point,
@@ -61,7 +61,9 @@ function draftBib({
   points,
   measurements,
   options,
+// highlight-start
   utils,
+// highlight-end
   macro,
   part,
 }) {
@@ -126,7 +128,9 @@ function draftBib({
     .close()
     .addClass('fabric')
 
-  // Drawing the bib outline
+  /*
+   * Drawing the bib outline
+   */
   const width = measurements.head * options.widthRatio
   const length = measurements.head * options.lengthRatio
 
@@ -169,6 +173,7 @@ function draftBib({
   points.tipRightTop = new Point(points.tipRight.x, points.edgeTop.y)
   points.tipRightBottom = new Point(points.tipRight.x, points.top.y)
 
+  // highlight-start
   /*
    * Macros will return the auto-generated IDs
    */
@@ -197,7 +202,7 @@ function draftBib({
       points[`${side}${utils.capitalize(id)}`] = points[ids1[side].points[id]].copy()
     }
   }
-
+  // highlight-end
    /*
    * Always draw your path at the end
    * after you've manipulated your points

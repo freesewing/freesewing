@@ -27,7 +27,7 @@ Like our neck opening, we've only drawn half since we can simply copy the
 points to the other side.
 
 <Example tutorial caption="Now the straps overlap. Which doesn't work for a pattern as it would make it impossible to cut it out of a single piece of fabric. So let's deal with the overlap next.">
-```src/bib.mjs
+```design/src/bib.mjs
 function draftBib({
   Path,
   Point,
@@ -35,7 +35,9 @@ function draftBib({
   points,
   measurements,
   options,
+  // highlight-start
   macro,
+  // highlight-end
   part,
 }) {
 
@@ -149,6 +151,7 @@ function draftBib({
     .curve(points.edgeRightCp, points.edgeTopRightCp, points.edgeTop)
     .close()
 
+  // highlight-start
   // Round the straps
   const strap = points.edgeTop.dy(points.top)
 
@@ -170,7 +173,7 @@ function draftBib({
     via: points.tipRightBottom,
     hide: false
   })
-
+  // highlight-end
   return part
 }
 ```

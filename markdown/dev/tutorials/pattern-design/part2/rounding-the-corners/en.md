@@ -8,6 +8,8 @@ We already know how to round corners, we'll have the `round` macro take care of 
 With our corners rounded, we should also update our path.
 Fortunately, we merely have to update the start of it.
 
+We'll rename `paths.rect` to `paths.seam`.
+
 <Example tutorial caption="The shape of our bib is now completed">
 ```design/src/bib.mjs
 function draftBib({
