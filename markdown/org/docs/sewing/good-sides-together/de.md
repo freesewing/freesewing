@@ -1,5 +1,6 @@
 ---
 title: Gute Seiten zusammen
+jargon: stimmt
 ---
 
 Wenn ich von guten Seiten spreche, dann kann man sich entweder auf Schnitt oder Nähen beziehen:
