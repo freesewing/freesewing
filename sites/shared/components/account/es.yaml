@@ -123,6 +123,7 @@ metricUnitsd: Elige esta opción si prefieres los centímetros a las pulgadas.
 imperialUnits: Unidades imperiales (pulgadas)
 imperialUnitsd: Elige esta opción si prefieres las pulgadas a los centímetros.
 unitsTitle: '¿Qué unidades prefieres?'
+displayUnits: Display units
 #username
 usernameTitle: '¿Qué nombre de usuario te gustaría?'
 usernameAvailable: El nombre de usuario está disponible
@@ -247,6 +248,8 @@ csetNameMsg: Cada conjunto curado tiene un nombre. Puedes sugerir tu propio nomb
 missing: Missing
 andMore: and more
 unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
+makePublic: Make public
+makePrivate: Make private
 patternNew: Generar un nuevo patrón
 patternNewInfo: Elige un diseño, añade tu juego de medidas y generaremos un patrón de costura a medida para ti.
 designNew: Crear un nuevo diseño
