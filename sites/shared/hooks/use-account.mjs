@@ -55,6 +55,6 @@ export function useAccount() {
     clearAdmin,
     impersonate,
     stopImpersonating,
-    control: account.control || 2,
+    control: account?.control || 2,
   }
 }

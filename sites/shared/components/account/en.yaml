@@ -58,6 +58,7 @@ updatePattern: Update pattern
 
 reload: Reload account
 export: Export your data
+import: Import data
 exportMsg: Click below to export your personal data
 exportNote: The EU's General Data Protection Regulation (GDPR) ensures your so-called right to data portability — the right to obtain and reuse your personal data for your own purposes, or across different services.
 exportDownload: "Your data was exported and is available for download at the following location:"
@@ -333,3 +334,16 @@ ownPublicPattern: This is the public view on one of your own patterns. For more 
 ownPrivatePattern: This is the private view on your pattern. The public view will work for you even when the pattern is private. It will only work for others when the pattern is public.
 privateView: Private view
 publicView: Public view
+
+importHere: This page allows you to import data into your FreeSewing account.
+importSupported: Currently, we support importing the following types of data
+importSets: Import Measurements Sets
+importSet: Import Measurements Set
+cloneSet: Clone Measurements Set
+measieFile: Measurements file
+dragAndDropFileHere: Drag and drop your file here
+importSetTip1: To import a measurement set, you should have a JSON or YAML file that has the following structure
+importSetTip2: Your file can either contain a single measurements set, or an array of multiple measurements sets.
+importing: Importing
+imported: Imported
+importFailed: Import failed

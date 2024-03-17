@@ -23,6 +23,7 @@ import {
   ShieldIcon,
   FingerprintIcon,
   GitHubIcon,
+  ImportIcon,
   InstagramIcon,
   MastodonIcon,
   TwitterIcon,
@@ -40,6 +41,8 @@ import {
   BoolNoIcon,
   OkIcon,
   WrenchIcon,
+  UploadIcon,
+  DownloadIcon,
 } from 'shared/components/icons.mjs'
 import { cloudflareImageUrl, capitalize } from 'shared/utils.mjs'
 import { ControlScore } from 'shared/components/control/score.mjs'
@@ -245,15 +248,21 @@ export const AccountLinks = () => {
           <div className="">
             <h4 className="my-2">{t('actions')}</h4>
             {control > 2 && (
-              <AccountLink href={`/account/reload`} title={t('reload')}>
-                <ReloadIcon />
-                {t('reload')}
+              <AccountLink href={`/account/import`} title={t('import')}>
+                <UploadIcon />
+                {t('import')}
               </AccountLink>
             )}
             {control > 2 && (
               <AccountLink href={`/account/export`} title={t('export')}>
-                <ExportIcon />
+                <DownloadIcon />
                 {t('export')}
+              </AccountLink>
+            )}
+            {control > 2 && (
+              <AccountLink href={`/account/reload`} title={t('reload')}>
+                <ReloadIcon />
+                {t('reload')}
               </AccountLink>
             )}
             {control > 3 && (
