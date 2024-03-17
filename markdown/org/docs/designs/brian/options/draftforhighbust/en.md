@@ -1,8 +1,8 @@
 ---
-title: undefined
+title: Draft for high bust
 ---
 
-undefined
+Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts.
 
 
 
