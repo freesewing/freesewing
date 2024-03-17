@@ -22,10 +22,6 @@ export const Importer = () => {
   const { t } = useTranslation(ns)
   const { setLoadingStatus } = useContext(LoadingStatusContext)
 
-  // State
-  const [setData, setSetData] = useState()
-  const [error, setError] = useState(false)
-
   // Helper method to upload/save a set
   const uploadSet = async (upload) => {
     setLoadingStatus([true, 'processingUpdate'])
@@ -34,7 +30,6 @@ export const Importer = () => {
       const chunks = upload.split(',')
       if (chunks[0].includes('json')) data = JSON.parse(atob(chunks[1]))
       else data = yaml.parse(atob(chunks[1]))
-      setSetData(data)
       if (!Array.isArray(data)) data = [data]
       /*
        * Treat each set
