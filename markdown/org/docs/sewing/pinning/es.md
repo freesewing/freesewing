@@ -1,5 +1,6 @@
 ---
 title: Fijar
+jargon: true
 ---
 
 ![Los alfileres de coser son parte de los suministros básicos de coser](sewing-pins.jpg)
