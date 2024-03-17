@@ -23,6 +23,7 @@ clearTimingData: Clear timing data
 closure: Closure
 collar: Collar
 columns: columns
+conditional: Conditional
 configurePattern: Configure pattern
 construction: Construction
 continueEditingTitle: Continue editing
