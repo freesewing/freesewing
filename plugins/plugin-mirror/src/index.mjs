@@ -19,7 +19,7 @@ const mirrorGen = (start, end) => {
     point.x = uNom / denom
     point.y = vNom / denom
 
-    const mirrorCount = Number(point.attributes.get('data-mirrored'))
+    const mirrorCount = Number(point.attributes.get('data-mirrored-noclone'))
     // some points returned by utils do not have logs
     if (mirrorCount > 0 && point.log)
       point.log.warn(
@@ -27,7 +27,7 @@ const mirrorGen = (start, end) => {
           mirrorCount + 1
         }) which can lead to hard to trace bugs`
       )
-    point.attributes.set('data-mirrored', mirrorCount + 1)
+    point.attributes.set('data-mirrored-noclone', mirrorCount + 1)
 
     return point
   }
