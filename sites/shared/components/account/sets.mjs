@@ -25,6 +25,8 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { BackToAccountButton } from './shared.mjs'
 import { AnchorLink, PageLink, Link } from 'shared/components/link.mjs'
+import { Json } from 'shared/components/json.mjs'
+import { Yaml } from 'shared/components/yaml.mjs'
 import {
   OkIcon,
   NoIcon,
@@ -340,7 +342,7 @@ export const Mset = ({ id, publicOnly = false }) => {
           <MsetCard set={mset} control={control} />
         </div>
         <div className="flex flex-col justify-end gap-2 mb-2 grow">
-          {account.control > 3 && mset.public ? (
+          {account.control > 3 && mset.public && mset.userId !== account.id ? (
             <div className="flex flex-row gap-2 items-center">
               <a
                 className="badge badge-secondary font-bold badge-lg"
@@ -354,6 +356,36 @@ export const Mset = ({ id, publicOnly = false }) => {
               >
                 YAML
               </a>
+            </div>
+          ) : (
+            <span></span>
+          )}
+          {account.control > 3 && mset.userId === account.id ? (
+            <div className="flex flex-row gap-2 items-center">
+              <button
+                className="badge badge-secondary font-bold badge-lg"
+                onClick={() =>
+                  setModal(
+                    <ModalWrapper keepOpenOnClick>
+                      <Json js={mset} />
+                    </ModalWrapper>
+                  )
+                }
+              >
+                JSON
+              </button>
+              <button
+                className="badge badge-success font-bold badge-lg"
+                onClick={() =>
+                  setModal(
+                    <ModalWrapper keepOpenOnClick>
+                      <Yaml js={mset} />
+                    </ModalWrapper>
+                  )
+                }
+              >
+                YAML
+              </button>
             </div>
           ) : (
             <span></span>
