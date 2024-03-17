@@ -35,7 +35,7 @@ Außerdem gibt es in der Kopfzeile Schaltflächen, mit denen du das **Thema** (o
 
 Auf mobilen Geräten befindet sich die Kopfzeile am unteren Ende der Seite und aus Platzgründen werden nicht alle Links angezeigt. Klicke auf das Hamburger-Symbol ** , um das Menü zu öffnen, das alle diese Links enthält.
 
-## Anmelden oder Eintragen
+## Registrieren oder Anmelden
 
 Du kannst dich unter [/signin](/signin/)für ein FreeSewing-Konto anmelden. We support signing in with your Google or GitHub account if that is easier for you.
 

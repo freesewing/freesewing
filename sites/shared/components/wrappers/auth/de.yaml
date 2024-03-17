@@ -1,7 +1,7 @@
 authRequired: Authentifizierung erforderlich
 membersOnly: Diese Funktion erfordert ein FreeSewing-Konto.
-signUp: Anmelden
-signIn: Eintragen
+signUp: Registrieren
+signIn: Anmelden
 statusUnknown: Warnung zum Kontostatus
 statusUnknownMsg: Dein Kontostatus verbietet es uns, deine Daten zu verarbeiten. Bitte kontaktiere den Support.
 consentLacking: Fehlende Zustimmung

@@ -6,7 +6,7 @@ backToSignIn: Zurück zur Anmeldung
 backToSignUp: Zurück zur Anmeldung
 checkYourInbox: Schau in deinem Posteingang nach einer E-Mail von
 clickSigninLink: Klicke auf den Anmeldelink in dieser E-Mail, um dich bei deinem FreeSewing-Konto anzumelden.
-clickSignupLink: Klicke auf deinen persönlichen Anmeldelink in dieser E-Mail, um dein FreeSewing-Konto zu erstellen.
+clickSignupLink: Klicke auf deinen persönlichen Registrierungslink in dieser E-Mail, um dein FreeSewing-Konto zu erstellen.
 consentLacking: Uns fehlt die Zustimmung zur Verarbeitung deiner Daten
 consentLackingMsg: Getting your consent is part of sign up process. Look for the email you received when you signed up for instructions. You can sign up again with the same email address to receive the email again.
 contact: Kontakt Unterstützung
@@ -18,7 +18,7 @@ dontHaveAnAccount: Du hast noch keinen Account?
 emailAddress: E-Mail-Adresse
 emailMissing: Bitte gib deine E-Mail Adresse an
 emailSent: E-Mail versendet
-emailSignupLink: Schick mir einen Anmeldelink
+emailSignupLink: Schick mir einen Registrierungslink
 emailSigninLink: Schick mir einen Anmeldelink
 emailUsernameId: "Deine E-Mail-Adresse, dein Benutzername oder deine Benutzernummer"
 err2: Leider können wir diesen Fehler nicht beheben, wir brauchen einen Menschen, der sich das ansieht.
