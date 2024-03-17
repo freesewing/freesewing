@@ -7,14 +7,8 @@ import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Components
-import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
-import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
-import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { FileInput } from 'shared/components/inputs.mjs'
-import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
-import { TipIcon } from 'shared/components/icons.mjs'
 import { Yaml } from 'shared/components/yaml.mjs'
-import { Json } from 'shared/components/json.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { linkClasses } from 'shared/components/link.mjs'
 
@@ -22,9 +16,9 @@ export const ns = ['account', 'status']
 
 export const Importer = () => {
   // Hooks
-  const { account, setAccount } = useAccount()
+  const { account } = useAccount()
   const backend = useBackend()
-  const { t, i18n } = useTranslation(ns)
+  const { t } = useTranslation(ns)
   const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
@@ -52,7 +46,7 @@ export const Importer = () => {
             name: set.name || 'J. Doe',
             units: set.units || 'metric',
             notes: set.notes || '',
-            measies: set.measurements || {},
+            measies: set.measurements,
             userId: account.id,
           })
           if (result.success) setLoadingStatus([true, `Imported ${name}`, true, true])
