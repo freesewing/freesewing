@@ -133,6 +133,7 @@ metricUnitsd: Pick this if you prefer centimeters over inches.
 imperialUnits: Imperial units (inch)
 imperialUnitsd: Pick this if you prefer inches over centimeters.
 unitsTitle: Which units do you prefer?
+displayUnits: Display units
 
 # username
 usernameTitle: What username would you like?
@@ -266,6 +267,8 @@ csetNameMsg: Each curated set has a name. You can suggest your own name or a pse
 missing: Missing
 andMore: and more
 unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
+makePublic: Make public
+makePrivate: Make private
 
 patternNew: Generate a new pattern
 patternNewInfo: Pick a design, add your measurements set, and we'll generate a bespoke sewing pattern for you.
