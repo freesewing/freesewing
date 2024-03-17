@@ -1,5 +1,6 @@
 ---
 title: Buenas partes juntas
+jargon: true
 ---
 
 Cuando me refiero a las buenas partes juntas puede referirse al corte o a la cobertura:
