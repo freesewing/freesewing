@@ -48,6 +48,7 @@ import Timeago from 'react-timeago'
 import { DisplayRow } from './shared.mjs'
 import {
   StringInput,
+  ToggleInput,
   PassiveImageInput,
   ListInput,
   MarkdownInput,
@@ -237,6 +238,7 @@ export const Mset = ({ id, publicOnly = false }) => {
   const [imperial, setImperial] = useState(mset?.imperial ? true : false)
   const [notes, setNotes] = useState(mset?.notes || '')
   const [measies, setMeasies] = useState({})
+  const [displayAsMetric, setDisplayAsMetric] = useState(mset?.imperial ? false : true)
 
   // Effect
   useEffect(() => {
@@ -309,6 +311,15 @@ export const Mset = ({ id, publicOnly = false }) => {
     if (result.success) {
       setMset(result.data.set)
       setEdit(false)
+      setLoadingStatus([true, 'nailedIt', true, true])
+    } else setLoadingStatus([true, 'backendError', true, false])
+  }
+
+  const togglePublic = async () => {
+    setLoadingStatus([true, 'gatheringInfo'])
+    const result = await backend.updateSet(mset.id, { public: !mset.public })
+    if (result.success) {
+      setMset(result.data.set)
       setLoadingStatus([true, 'nailedIt', true, true])
     } else setLoadingStatus([true, 'backendError', true, false])
   }
@@ -486,18 +497,6 @@ export const Mset = ({ id, publicOnly = false }) => {
     return (
       <div className="max-w-2xl">
         {heading}
-        {Object.keys(mset.measies).length > 0 && (
-          <>
-            <h2>{t('measies')}</h2>
-            {Object.entries(mset.measies).map(([m, val]) =>
-              val > 0 ? (
-                <DisplayRow title={<MeasieVal {...{ m, val, imperial: mset.imperial }} />} key={m}>
-                  <span className="font-medium">{t(m)}</span>
-                </DisplayRow>
-              ) : null
-            )}
-          </>
-        )}
 
         <h2>{t('data')}</h2>
         <DisplayRow title={t('name')}>{mset.name}</DisplayRow>
@@ -512,11 +511,16 @@ export const Mset = ({ id, publicOnly = false }) => {
         {control >= controlLevels.sets.public && (
           <>
             <DisplayRow title={t('public')}>
-              {mset.public ? (
-                <OkIcon className="w-6 h-6 text-success" stroke={4} />
-              ) : (
-                <NoIcon className="w-6 h-6 text-error" stroke={3} />
-              )}
+              <div className="flex flex-row gap-2 items-center justify-between">
+                {mset.public ? (
+                  <OkIcon className="w-6 h-6 text-success" stroke={4} />
+                ) : (
+                  <NoIcon className="w-6 h-6 text-error" stroke={3} />
+                )}
+                <button className="btn btn-secondary btn-sm" onClick={togglePublic}>
+                  {t(`account:make${mset.public ? 'Private' : 'Public'}`)}
+                </button>
+              </div>
             </DisplayRow>
             {mset.public && (
               <DisplayRow title={t('permalink')}>
@@ -540,6 +544,28 @@ export const Mset = ({ id, publicOnly = false }) => {
           </DisplayRow>
         )}
         {control >= controlLevels.sets.id && <DisplayRow title={t('id')}>{mset.id}</DisplayRow>}
+
+        {Object.keys(mset.measies).length > 0 && (
+          <>
+            <h2>{t('measies')}</h2>
+            <ToggleInput
+              label={false}
+              labels={[t('account:metricUnits'), t('account:imperialUnits')]}
+              update={() => setDisplayAsMetric(!displayAsMetric)}
+              current={displayAsMetric}
+            />
+            {Object.entries(mset.measies).map(([m, val]) =>
+              val > 0 ? (
+                <DisplayRow
+                  title={<MeasieVal {...{ m, val, imperial: !displayAsMetric }} />}
+                  key={m}
+                >
+                  <span className="font-medium">{t(m)}</span>
+                </DisplayRow>
+              ) : null
+            )}
+          </>
+        )}
       </div>
     )
 

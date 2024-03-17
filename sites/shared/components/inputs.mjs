@@ -650,3 +650,40 @@ export const FileInput = ({
     </FormControl>
   )
 }
+
+/*
+ * Input for booleans
+ */
+export const ToggleInput = ({
+  label, // Label to use
+  update, // onChange handler
+  current, // The current value
+  disabled = false, // Allows rendering a disabled view
+  list = [true, false], // The values to chose between
+  labels = ['Yes', 'No'], // The labels for the values
+  on = true, // The value that should show the toggle in the 'on' state
+  id = '', // An id to tie the input to the label
+  labelTR = false, // Top-Right label
+  labelBL = false, // Bottom-Left label
+  labelBR = false, // Bottom-Right label
+}) => (
+  <FormControl
+    {...{ labelBL, labelBR, labelTR }}
+    label={
+      label
+        ? `${label} (${current === on ? labels[0] : labels[1]})`
+        : `${current === on ? labels[0] : labels[1]}`
+    }
+    forId={id}
+  >
+    <input
+      id={id}
+      disabled={disabled}
+      type="checkbox"
+      value={current}
+      onChange={() => update(list.indexOf(current) === 0 ? list[1] : list[0])}
+      className="toggle my-3 toggle-primary"
+      checked={list.indexOf(current) === 0 ? true : false}
+    />
+  </FormControl>
+)
