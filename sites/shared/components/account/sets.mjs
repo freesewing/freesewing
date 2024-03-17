@@ -25,6 +25,8 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { BackToAccountButton } from './shared.mjs'
 import { AnchorLink, PageLink, Link } from 'shared/components/link.mjs'
+import { Json } from 'shared/components/json.mjs'
+import { Yaml } from 'shared/components/yaml.mjs'
 import {
   OkIcon,
   NoIcon,
@@ -38,6 +40,7 @@ import {
   CsetIcon,
   BoolYesIcon,
   BoolNoIcon,
+  CloneIcon,
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { Mdx } from 'shared/components/mdx/dynamic.mjs'
@@ -310,6 +313,23 @@ export const Mset = ({ id, publicOnly = false }) => {
     } else setLoadingStatus([true, 'backendError', true, false])
   }
 
+  const importSet = async () => {
+    setLoadingStatus([true, t('account.importing')])
+    // Compile data
+    const data = {
+      ...mset,
+      userId: account.id,
+      measies: { ...mset.measies },
+    }
+    delete data.img
+    const result = await backend.createSet(data)
+    if (result.success) {
+      setMset(result.data.set)
+      setEdit(false)
+      setLoadingStatus([true, 'nailedIt', true, true])
+    } else setLoadingStatus([true, 'backendError', true, false])
+  }
+
   const docs = {}
   for (const option of ['name', 'units', 'public', 'notes', 'image']) {
     docs[option] = <DynamicMdx language={i18n.language} slug={`docs/about/site/sets/${option}`} />
@@ -322,7 +342,7 @@ export const Mset = ({ id, publicOnly = false }) => {
           <MsetCard set={mset} control={control} />
         </div>
         <div className="flex flex-col justify-end gap-2 mb-2 grow">
-          {account.control > 3 && mset.public ? (
+          {account.control > 3 && mset.public && mset.userId !== account.id ? (
             <div className="flex flex-row gap-2 items-center">
               <a
                 className="badge badge-secondary font-bold badge-lg"
@@ -340,6 +360,44 @@ export const Mset = ({ id, publicOnly = false }) => {
           ) : (
             <span></span>
           )}
+          {account.control > 3 && mset.userId === account.id ? (
+            <div className="flex flex-row gap-2 items-center">
+              <button
+                className="badge badge-secondary font-bold badge-lg"
+                onClick={() =>
+                  setModal(
+                    <ModalWrapper keepOpenOnClick>
+                      <Json js={mset} />
+                    </ModalWrapper>
+                  )
+                }
+              >
+                JSON
+              </button>
+              <button
+                className="badge badge-success font-bold badge-lg"
+                onClick={() =>
+                  setModal(
+                    <ModalWrapper keepOpenOnClick>
+                      <Yaml js={mset} />
+                    </ModalWrapper>
+                  )
+                }
+              >
+                YAML
+              </button>
+            </div>
+          ) : (
+            <span></span>
+          )}
+          {account.control > 2 && mset.public && mset.userId !== account.id ? (
+            <button className="btn btn-primary" title={t('account:importSet')} onClick={importSet}>
+              <div className="flex flex-row gap-4 justify-between items-center w-full">
+                <UploadIcon />
+                {t('account:importSet')}
+              </div>
+            </button>
+          ) : null}
           {account.control > 2 ? (
             <BookmarkButton slug={`sets/${mset.id}`} title={mset.name} type="set" thing="set" />
           ) : null}
@@ -402,6 +460,14 @@ export const Mset = ({ id, publicOnly = false }) => {
               )}
             </>
           )}
+          {account.control > 2 && mset.userId === account.id ? (
+            <button className="btn btn-neutral" title={t('account:cloneSet')} onClick={importSet}>
+              <div className="flex flex-row gap-4 justify-between items-center w-full">
+                <CloneIcon />
+                {t('account:cloneSet')}
+              </div>
+            </button>
+          ) : null}
         </div>
       </div>
       <div className="flex flex-row flex-wrap gap-4 text-sm items-center justify-between mb-2"></div>
@@ -723,6 +789,15 @@ export const Sets = () => {
       {sets.length > 0 ? (
         <>
           <p className="text-center md:text-right">
+            <Link
+              className="btn btn-primary btn-outline capitalize w-full md:w-auto mr-2"
+              bottom
+              primary
+              href="/account/import"
+            >
+              <UploadIcon />
+              {t('account:importSets')}
+            </Link>
             <Link
               className="btn btn-primary capitalize w-full md:w-auto"
               bottom
