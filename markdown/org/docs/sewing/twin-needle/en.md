@@ -1,5 +1,6 @@
 ---
 title: Twin needle
+jargon: true
 ---
 
 ![A twin needle from Schmetz](twin-needle.jpg)

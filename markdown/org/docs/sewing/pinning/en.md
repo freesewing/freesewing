@@ -1,5 +1,6 @@
 ---
 title: Pinning
+jargon: true
 ---
 
 ![Sewing pins are part of the basic sewing supplies](sewing-pins.jpg)

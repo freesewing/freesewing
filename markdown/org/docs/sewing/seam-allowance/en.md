@@ -1,5 +1,6 @@
 ---
 title: Seam allowance
+jargon: true
 ---
 
 ![The inside of the leg on a pair of jeans. The SA is the dark narrow stretch of fabric next to the seam. It has been zig-zagged to keep it from fraying](zig-zag.jpg)
