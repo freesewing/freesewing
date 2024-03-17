@@ -1,5 +1,6 @@
 ---
 title: Rayon
+jargon: true
 ---
 
 ![I use rayon for my underwear](rayon.jpg)
