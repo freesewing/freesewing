@@ -1,5 +1,6 @@
 ---
 title: Zwillingsnadel
+jargon: stimmt
 ---
 
 ![Eine Zwillingsnadel von Schmetz](twin-needle.jpg)
