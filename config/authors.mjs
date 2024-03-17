@@ -15,6 +15,7 @@ export const authors = {
   'Prof. dr. Sorcha Ní Dhubhghaill': { id: 9, name: 'Prof. dr. Sorcha Ní Dhubhghaill' },
   woutervdub: { id: 132, name: 'Wouter van Wageningen' },
   tangerineshark: { id: 13050, name: 'tangerineshark' },
+  Zee: { id: 13460, name: 'Zee' },
   Natalia: { id: 19867, name: 'Natalia Sayang' },
 
   // The old guard
@@ -46,7 +47,6 @@ export const authors = {
    */
   'Annie Kao': { id: 8, name: 'Annie Kao' },
   Bart: { id: 8, name: 'Bart' },
-  Zee: { id: 8, name: 'Zee' },
   'James Bradbury': { id: 8, name: 'James Bradbury' },
   'Glenn Matthews': { id: 8, name: 'Glenn Matthews' },
   'Raphael Sizemore': { id: 8, name: 'Raphael Sizemore' },
