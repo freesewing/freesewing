@@ -144,10 +144,8 @@ const loadUsers = async (list, store) => {
 const loadDocs = async (site) => {
   const folder = site === 'org' ? 'docs' : ''
   const titles = await loadFolderFrontmatter('title', site, folder)
-  const terms = await loadFolderFrontmatter('jargon', site, folder)
   // Order is the same for all languages, so only grab EN files
   const order = await loadFolderFrontmatter('order', site, folder, false, 'en')
-  const jargon = await loadFolderFrontmatter('jargon', site, folder)
 
   return mergeOrder(titles, order)
 }
