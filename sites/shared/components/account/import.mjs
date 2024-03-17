@@ -11,6 +11,7 @@ import { FileInput } from 'shared/components/inputs.mjs'
 import { Yaml } from 'shared/components/yaml.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { linkClasses } from 'shared/components/link.mjs'
+import yaml from 'yaml'
 
 export const ns = ['account', 'status']
 
@@ -39,23 +40,26 @@ export const Importer = () => {
        * Treat each set
        */
       for (const set of data) {
-        if (set.measurements) {
+        if (set.measurements || set.measies) {
           const name = set.name || 'J. Doe'
           setLoadingStatus([true, `Importing ${name}`])
           const result = await backend.createSet({
             name: set.name || 'J. Doe',
             units: set.units || 'metric',
             notes: set.notes || '',
-            measies: set.measurements,
+            measies: set.measurements || set.measies,
             userId: account.id,
           })
           if (result.success) setLoadingStatus([true, `Imported ${name}`, true, true])
           else setLoadingStatus([true, `Import of ${name} failed`, true, false])
+        } else {
+          setLoadingStatus([true, `Invalid format`, true, false])
         }
       }
     } catch (err) {
       setError(err)
       console.log(err)
+      setLoadingStatus([true, `Import of ${name} failed`, true, false])
     }
   }
 
