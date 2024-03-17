@@ -1,5 +1,6 @@
 ---
 title: Trampa
+jargon: true
 ---
 
 ![Permiso de costura siendo recortado](trimming.jpg)
