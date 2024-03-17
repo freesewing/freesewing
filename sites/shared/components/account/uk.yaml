@@ -123,6 +123,7 @@ metricUnitsd: Виберіть це, якщо ви віддаєте перева
 imperialUnits: Імперські одиниці (дюйм)
 imperialUnitsd: Виберіть цей параметр, якщо ви віддаєте перевагу дюймам, а не сантиметрам.
 unitsTitle: Яким одиницям ви віддаєте перевагу?
+displayUnits: Display units
 #username
 usernameTitle: Яке ім'я користувача ви б хотіли?
 usernameAvailable: Ім'я користувача доступне
@@ -247,6 +248,8 @@ csetNameMsg: Кожна кураторська добірка має назву.
 missing: Missing
 andMore: and more
 unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
+makePublic: Make public
+makePrivate: Make private
 patternNew: Створіть новий шаблон
 patternNewInfo: Виберіть дизайн, додайте свої мірки, і ми створимо для вас індивідуальну викрійку.
 designNew: Створіть новий дизайн
