@@ -123,6 +123,7 @@ metricUnitsd: Kies deze optie als je de voorkeur geeft aan centimeters over duim
 imperialUnits: Imperiale (Engelse) eenheden (duim)
 imperialUnitsd: Kies deze optie als je de voorkeur geeft aan duimen boven centimeters.
 unitsTitle: Welke eenheden hebben jouw voorkeur?
+displayUnits: Display units
 #username
 usernameTitle: Welke gebruikersnaam wil je?
 usernameAvailable: Gebruikersnaam is beschikbaar
@@ -247,6 +248,8 @@ csetNameMsg: Elke gecureerde set heeft een naam. Je kunt je eigen naam of een ps
 missing: Missing
 andMore: and more
 unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
+makePublic: Make public
+makePrivate: Make private
 patternNew: Een nieuw patroon genereren
 patternNewInfo: Kies een ontwerp, voeg je maatset toe en wij maken een naaipatroon op maat voor je.
 designNew: Een nieuw ontwerp creëren
