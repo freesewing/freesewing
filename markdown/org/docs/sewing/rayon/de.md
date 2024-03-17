@@ -1,5 +1,6 @@
 ---
 title: Rayon
+jargon: stimmt
 ---
 
 ![Ich benutze Strahlen für meine Unterwäsche](rayon.jpg)
