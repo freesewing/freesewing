@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "Pyjama pants"
 date: "2022-12-11"
 intro: "Here’s a pyjama Paco by Gaëlle, without pockets or elasticated cuffs."
