@@ -353,7 +353,7 @@ export const Mset = ({ id, publicOnly = false }) => {
           <MsetCard set={mset} control={control} />
         </div>
         <div className="flex flex-col justify-end gap-2 mb-2 grow">
-          {account.control > 3 && mset.public && mset.userId !== account.id ? (
+          {account.control > 2 && mset.public && mset.userId !== account.id ? (
             <div className="flex flex-row gap-2 items-center">
               <a
                 className="badge badge-secondary font-bold badge-lg"
@@ -401,7 +401,7 @@ export const Mset = ({ id, publicOnly = false }) => {
           ) : (
             <span></span>
           )}
-          {account.control > 2 && mset.public && mset.userId !== account.id ? (
+          {account.id && account.control > 2 && mset.public && mset.userId !== account.id ? (
             <button className="btn btn-primary" title={t('account:importSet')} onClick={importSet}>
               <div className="flex flex-row gap-4 justify-between items-center w-full">
                 <UploadIcon />
@@ -510,18 +510,20 @@ export const Mset = ({ id, publicOnly = false }) => {
         )}
         {control >= controlLevels.sets.public && (
           <>
-            <DisplayRow title={t('public')}>
-              <div className="flex flex-row gap-2 items-center justify-between">
-                {mset.public ? (
-                  <OkIcon className="w-6 h-6 text-success" stroke={4} />
-                ) : (
-                  <NoIcon className="w-6 h-6 text-error" stroke={3} />
-                )}
-                <button className="btn btn-secondary btn-sm" onClick={togglePublic}>
-                  {t(`account:make${mset.public ? 'Private' : 'Public'}`)}
-                </button>
-              </div>
-            </DisplayRow>
+            {mset.userId === account.id && (
+              <DisplayRow title={t('public')}>
+                <div className="flex flex-row gap-2 items-center justify-between">
+                  {mset.public ? (
+                    <OkIcon className="w-6 h-6 text-success" stroke={4} />
+                  ) : (
+                    <NoIcon className="w-6 h-6 text-error" stroke={3} />
+                  )}
+                  <button className="btn btn-secondary btn-sm" onClick={togglePublic}>
+                    {t(`account:make${mset.public ? 'Private' : 'Public'}`)}
+                  </button>
+                </div>
+              </DisplayRow>
+            )}
             {mset.public && (
               <DisplayRow title={t('permalink')}>
                 <PageLink href={`/set?id=${mset.id}`} txt={`/set?id=${mset.id}`} />
