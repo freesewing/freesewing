@@ -1,5 +1,6 @@
 ---
 title: Coverlock
+jargon: true
 ---
 
 ![A hem on a T-shirt, made with a coverlock machine](coverlock-hem.jpg)
