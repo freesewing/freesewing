@@ -1,5 +1,6 @@
 ---
-title: Sommet de l’Épaule (ou PHE)
+title: Point Haut de l'Épaule (ou PHE)
+jargon: vrai
 ---
 
 _Le sommet de l'épaule_ ou _HPS_ est utilisée comme base pour plusieurs mesures verticales.
