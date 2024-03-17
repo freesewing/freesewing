@@ -24,7 +24,7 @@ const AdminPage = ({ page }) => {
   const [results, setResults] = useState()
   const [loading, setLoading] = useState(false)
 
-  const search = async (val) => {
+  const search = async () => {
     /*
      * Search backend
      */
