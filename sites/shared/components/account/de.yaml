@@ -123,6 +123,7 @@ metricUnitsd: Wähle dies, wenn du Zentimeter gegenüber Zoll bevorzugst.
 imperialUnits: Imperiale Einheiten (inch)
 imperialUnitsd: Wähle diese Option, wenn du Zoll statt Zentimeter bevorzugst.
 unitsTitle: Welche Einheiten bevorzugst du?
+displayUnits: Display units
 #username
 usernameTitle: Welchen Benutzernamen hättest du gerne?
 usernameAvailable: Benutzername ist verfügbar
@@ -247,6 +248,8 @@ csetNameMsg: Jedes kuratierte Set hat einen Namen. Du kannst deinen eigenen Name
 missing: Missing
 andMore: and more
 unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
+makePublic: Make public
+makePrivate: Make private
 patternNew: Ein neues Muster generieren
 patternNewInfo: Wähle ein Design, füge deine Maße hinzu und wir erstellen ein maßgeschneidertes Nähmuster für dich.
 designNew: Ein neues Design erstellen
