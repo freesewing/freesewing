@@ -7957,10 +7957,10 @@ jotai-location@0.5.4:
   resolved "https://registry.npmjs.org/jotai-location/-/jotai-location-0.5.4.tgz"
   integrity sha512-IqpyYLAF6HgoDoJVlX66IGvgrugCA1LJybT01NqenpdwypPtUB6u0cnJZMbN6axU+Yl2FTI6l+4x9IWh4WGFRA==
 
-jotai@2.7.0:
-  version "2.7.0"
-  resolved "https://registry.npmjs.org/jotai/-/jotai-2.7.0.tgz"
-  integrity sha512-4qsyFKu4MprI39rj2uoItyhu24NoCHzkOV7z70PQr65SpzV6CSyhQvVIfbNlNqOIOspNMdf5OK+kTXLvqe63Jw==
+jotai@2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/jotai/-/jotai-2.7.1.tgz#5d0db56e75375d4f41a2e9f1a23750e9e5d8cb24"
+  integrity sha512-bsaTPn02nFgWNP6cBtg/htZhCu4s0wxqoklRHePp6l/vlsypR9eLn7diRliwXYWMXDpPvW/LLA2afI8vwgFFaw==
 
 js-base64@^2.1.9:
   version "2.6.4"
