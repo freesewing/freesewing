@@ -20,6 +20,8 @@ Unreleased:
       - The `withCondition` named  export is deprecated and will always return true.
 
   Fixed:
+    huey:
+      - Fixed an issue where ribbing height would distort the pocket under certain conditions. Fixes #6238
     hugo:
       - Add missing dimension id attributes
     uma:
