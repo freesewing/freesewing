@@ -2,5 +2,5 @@
 title: Hauteur taille cuisse
 ---
 
-The **waist to upper leg** is measured from your waist down to where your upper leg circumference measurement is. Elle se mesure sur le côté du corps.
+**De la taille a la cuisse** est mesuré à partir de la taille vers la cuisse, à la hauteur de la mesure de la circonférence de la cuisse. Elle se mesure sur le côté du corps.
 <MeasieImage />
