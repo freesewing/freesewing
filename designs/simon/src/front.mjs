@@ -141,7 +141,7 @@ function simonFront({
    * Annotations
    */
   // Cutlist
-  store.cutlist.setCut({ cut: 1, from: 'farbic' })
+  store.cutlist.setCut({ cut: 1, from: 'main fabric' })
 
   // Grainline
   const grainlineDistance = (points.hem.x - points.cfHem.x) * 0.2
