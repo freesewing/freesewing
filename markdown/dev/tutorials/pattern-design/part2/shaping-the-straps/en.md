@@ -102,6 +102,10 @@ function draftBib({
   points.bottomLeft = points.topLeft.shift(-90, length)
   points.bottomRight = points.topRight.shift(-90, length)
 
+// strikeout-start
+/*
+* Remove this path
+
   paths.rect = new Path()
     .move(points.topLeft)
     .line(points.bottomLeft)
@@ -110,6 +114,8 @@ function draftBib({
     .line(points.topLeft)
     .close()
     .addClass('fabric')
+*/
+// strikeout-end
 
 // highlight-start
   /*

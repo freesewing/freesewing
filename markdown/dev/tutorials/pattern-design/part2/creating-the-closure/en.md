@@ -115,15 +115,6 @@ function draftBib({
   points.bottomLeft = points.topLeft.shift(-90, length)
   points.bottomRight = points.topRight.shift(-90, length)
 
-  paths.rect = new Path()
-    .move(points.topLeft)
-    .line(points.bottomLeft)
-    .line(points.bottomRight)
-    .line(points.topRight)
-    .line(points.topLeft)
-    .close()
-    .addClass('fabric')
-
   /*
    * Shape the straps
    */
@@ -138,18 +129,6 @@ function draftBib({
     0.5
   )
   points.edgeTopRightCp = points.edgeTopLeftCp.flipX()
-
-  /*
-   * Now, adapt our `rect` path so it's no longer a rectangle:
-   */
-  paths.rect = new Path()
-    .move(points.edgeTop)
-    .curve(points.edgeTopLeftCp, points.edgeLeftCp, points.edgeLeft)
-    .line(points.bottomLeft)
-    .line(points.bottomRight)
-    .line(points.edgeRight)
-    .curve(points.edgeRightCp, points.edgeTopRightCp, points.edgeTop)
-    .close()
 
   // highlight-start
   // Round the straps
@@ -174,7 +153,22 @@ function draftBib({
     hide: false
   })
   // highlight-end
+
+    /*
+   * Now, adapt our `rect` path so it's no longer a rectangle:
+   */
+  paths.rect = new Path()
+    .move(points.edgeTop)
+    .curve(points.edgeTopLeftCp, points.edgeLeftCp, points.edgeLeft)
+    .line(points.bottomLeft)
+    .line(points.bottomRight)
+    .line(points.edgeRight)
+    .curve(points.edgeRightCp, points.edgeTopRightCp, points.edgeTop)
+    .close()
+
   return part
 }
 ```
 </Example>
+
+Notice that we always draw our path at the end after we've manipulated our points.

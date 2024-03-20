@@ -63,10 +63,12 @@ Change the function to look like this:
 
 ```design/src/bib.mjs
 function draftBib({
+// highlight-start
   Path,
   Point,
   paths,
   points,
+// highlight-end
   part,
 }) {
 

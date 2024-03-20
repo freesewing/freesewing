@@ -104,19 +104,6 @@ function draftBib({
   points.bottomLeft = points.topLeft.shift(-90, length)
   points.bottomRight = points.topRight.shift(-90, length)
 
-  // strikeout-start
-  /* Remove this path
-  paths.rect = new Path()
-    .move(points.topLeft)
-    .line(points.bottomLeft)
-    .line(points.bottomRight)
-    .line(points.topRight)
-    .line(points.topLeft)
-    .close()
-    .addClass('fabric')
-   */
-  // strikeout-end
-
   /*
    * Shape the straps
    */
@@ -179,6 +166,11 @@ function draftBib({
       points[`${side}${utils.capitalize(id)}`] = points[ids1[side].points[id]].copy()
     }
   }
+
+  /*
+   * This is the list of points we need to rotate
+   * to move our strap out of the way
+   */
 
   const rotateThese = [
     "edgeTopLeftCp",

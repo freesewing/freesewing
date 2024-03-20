@@ -142,15 +142,6 @@ function draftBib({
   points.bottomLeft = points.topLeft.shift(-90, length)
   points.bottomRight = points.topRight.shift(-90, length)
 
-  paths.rect = new Path()
-    .move(points.topLeft)
-    .line(points.bottomLeft)
-    .line(points.bottomRight)
-    .line(points.topRight)
-    .line(points.topLeft)
-    .close()
-    .addClass('fabric')
-
   /*
    * Shape the straps
    */
@@ -203,11 +194,8 @@ function draftBib({
     }
   }
   // highlight-end
+  
    /*
-   * Always draw your path at the end
-   * after you've manipulated your points
-   */
-  /*
    * Now, adapt our `rect` path so it's no longer a rectangle:
    */
   paths.rect = new Path()
@@ -227,7 +215,7 @@ function draftBib({
 Once we have our list of points to rotate, we can rotate them. How far? Until the strap no longer overlaps.
 
 <Example tutorial caption="It is looking pretty wonky now, but we'll deal with that next">
-```src/bib.mjs
+```design/src/bib.mjs
 function draftBib({
   Path,
   Point,
@@ -312,15 +300,6 @@ function draftBib({
   points.bottomLeft = points.topLeft.shift(-90, length)
   points.bottomRight = points.topRight.shift(-90, length)
 
-  paths.rect = new Path()
-    .move(points.topLeft)
-    .line(points.bottomLeft)
-    .line(points.bottomRight)
-    .line(points.topRight)
-    .line(points.topLeft)
-    .close()
-    .addClass('fabric')
-
   /*
    * Shape the straps
    */
@@ -372,6 +351,7 @@ function draftBib({
     }
   }
 
+  // highlight-start
   /*
    * This is the list of points we need to rotate
    * to move our strap out of the way
@@ -427,15 +407,10 @@ function draftBib({
     hide: false,
     classes: 'contrast dotted',
   })
-
+  // highlight-end
   /*
-   * Always draw your path at the end
-   * after you've manipulated your points
-   */
-   /*
    * Now, adapt our `rect` path so it's no longer a rectangle:
    */
-
   paths.rect = new Path()
     .move(points.edgeTop)
     .curve(points.edgeTopLeftCp, points.edgeLeftCp, points.edgeLeft)
@@ -444,7 +419,6 @@ function draftBib({
     .line(points.edgeRight)
     .curve(points.edgeRightCp, points.edgeTopRightCp, points.edgeTop)
     .close()
-  // highlight-end
 
   return part
 }
