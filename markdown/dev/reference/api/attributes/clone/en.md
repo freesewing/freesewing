@@ -21,3 +21,7 @@ const attr = new Attributes()
 const cloned = attr.clone()
 ```
 
+## Notes
+
+Individual attributes with a `key` containing the string `noclone` will not
+be cloned and will be omitted from the new Attributes object.
