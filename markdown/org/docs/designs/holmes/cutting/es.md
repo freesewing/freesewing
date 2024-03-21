@@ -26,6 +26,6 @@ Se recomienda dibujar la red de patrones y utilizar el patrón para rastrear las
 </Note>
 <Warning>
 
-It is recommended to make a mock-up with your gore pattern first before cutting your fabrics. This is to test the length and ease of the gore piece. Asegúrate de cortar la franquicia de costura inferior antes de probarla. If it is too tight who will need to re-draft the pattern with more ease (longer head circumference) just remember the ease is split across each gore. If the peak is too high you may want to re-draft the pattern with the gore length reduced. Once re-drafted make another mock-up to check whether you are satisfied with the changes or not. Repita de nuevo si no está satisfecho.
+It is recommended to make a mock-up with your gore pattern first before cutting your fabrics. This is to test the length and ease of the gore piece. Asegúrate de cortar la franquicia de costura inferior antes de probarla. If it is too tight who will need to re-draft the pattern with more ease (longer head circumference) just remember the ease is split across each gore. If the peak is too high you may want to re-draft the pattern with the gore length reduced. Repita de nuevo si no está satisfecho. Repita de nuevo si no está satisfecho.
 
 </Warning>

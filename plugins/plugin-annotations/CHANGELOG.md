@@ -1,6 +1,17 @@
 # Change log for: @freesewing/plugin-annotations
 
 
+## 3.2.0 (2024-02-11)
+
+### Added
+
+ - The `title` macro now takes a `notes` and `classes.notes` as its config, allowing you to add notes
+ - The `classes.cutlist` config is removed from the title plugin, cutlist info is now included as notes
+
+### Removed
+
+ - The `classes.cutlist` config is removed from the title plugin, cutlist info is now included as notes
+
 ## 3.1.0 (2023-12-26)
 
 ### Changed
@@ -15,8 +26,8 @@
 
 ### Changed
 
- - All FreeSewing pacakges are now ESM only.
- - All FreeSewing pacakges now use named exports.
+ - All FreeSewing packages are now ESM only.
+ - All FreeSewing packages now use named exports.
  - Dropped support for NodeJS 14. NodeJS 18 (LTS/hydrogen) or more recent is now required.
 
 

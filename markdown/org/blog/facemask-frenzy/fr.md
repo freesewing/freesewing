@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Le docteur Dragnea de l'hôpital universitaire d'Anvers porte un masque de Florence."
 date: "2020-03-19"
 intro: "Appel à tous : voici un patron de masque facial PDF en 1 page ; fabriquez-en quelques uns et aidez à vaincre cette chose"

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Deze afbeelding is waarschijnlijk het enige in de post dat je diagonaal kunt bekijken"
 date: "2018-02-14"
 intro: "De Algemene Verordening Gegevensbescherming van de Europese Unie: Ons strijdplan."

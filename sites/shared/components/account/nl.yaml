@@ -13,6 +13,7 @@ created: Aangemaakt
 updated: Bijgewerkt
 expires: Verloopt op
 role: Rol
+yourApikeys: Your API Keys
 yourProfile: Jouw profiel
 yourPatterns: Jouw patronen
 yourSets: Jouw maten sets
@@ -142,6 +143,8 @@ tooComplex: Als dit allemaal verwarrend is, hoef je deze informatie niet te geve
 languageTitle: Aan welke taal geef je de voorkeur?
 #password
 passwordTitle: Iets dat alleen jij kent
+#id
+userId: User ID
 #api key
 newApikey: Een nieuwe API-key aanmaken
 keyNewInfo: Maak een nieuwe API-key aan om verbinding te maken met de FreeSewing backend.
@@ -240,6 +243,9 @@ thankYouVeryMuch: Hartelijk dank
 csetSuggestedMsg: Je inzending is geregistreerd en zal worden verwerkt door een van onze curatoren.
 itIsAvailableAt: Het is beschikbaar op
 csetNameMsg: Elke gecureerde set heeft een naam. Je kunt je eigen naam of een pseudoniem voorstellen.
+missing: Missing
+andMore: and more
+unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
 patternNew: Een nieuw patroon genereren
 patternNewInfo: Kies een ontwerp, voeg je maatset toe en wij maken een naaipatroon op maat voor je.
 designNew: Een nieuw ontwerp creëren
@@ -260,8 +266,14 @@ newPopular: Meest populair
 newShare: Delen / Tonen
 newDev: Ontwerpen / Ontwikkelen
 generateANewThing: "Genereer een nieuwe { thing }"
-website: Website
 linkedIdentities: Gekoppelde identiteiten
+github: GitHub
+instagram: Instagram
+mastodon: Mastodon
+reddit: Reddit
+twitch: Twitch
+tiktok: TikTok
+website: Website
 websiteTitle: Heb je een website of andere URL die je wilt toevoegen?
 platformTitle: Wie ben jij op { platform }?
 platformWhy: We gebruiken deze gegevens op geen enkele manier. Dit is er alleen zodat gebruikers van FreeSewing de punten op verschillende platforms met elkaar kunnen verbinden.
@@ -274,6 +286,7 @@ code: Code
 aboutThing: Over { thing }
 requiredMeasurements: Vereiste maten
 optionalMeasurements: Optionele maten
+none: Geen
 designOptions: Design opties
 parts: Onderdelen
 plugins: Plugins

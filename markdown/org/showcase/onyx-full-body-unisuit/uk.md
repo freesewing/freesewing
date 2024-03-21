@@ -6,6 +6,7 @@ intro: "Синій напівкомбінезон Onyx від Thrunic"
 designs:
   - "онікс"
 maker: Йост
+author: 33070
 ---
 
 Це повноцінний комбінезон Onyx від Thrunic, який створив [дизайн Onyx](/designs/onyx). Вони пишуть:

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Deze paarse Huey hoodie is de eerste in zijn soort. Nu is het jouw beurt"
 date: "2017-10-21"
 intro: "De Huey Hoodie is nu verkrijgbaar in bèta. Wat de vraag oproept: wat betekent het voor een patroon om in Beta te zijn?"

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Si tu l'aimes, mets-y un nœud"
 date: "2017-11-14"
 intro: "Notre famille de patrons de couture libre s'est encore agrandie, et le benjamin de la famille est... Benjamin ."

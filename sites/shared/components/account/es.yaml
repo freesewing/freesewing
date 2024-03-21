@@ -13,6 +13,7 @@ created: Creado
 updated: Actualizado
 expires: Caduca en
 role: Papel
+yourApikeys: Your API Keys
 yourProfile: Tu perfil
 yourPatterns: Tus patrones
 yourSets: Tus conjuntos de medidas
@@ -142,6 +143,8 @@ tooComplex: Si todo esto te resulta confuso, no tienes que proporcionar esta inf
 languageTitle: '¿Qué lengua prefieres?'
 #password
 passwordTitle: Algo que sólo tú sabes
+#id
+userId: User ID
 #api key
 newApikey: Generar una nueva clave API
 keyNewInfo: Crea una nueva clave API para conectarte al backend de FreeSewing de forma automatizada.
@@ -240,6 +243,9 @@ thankYouVeryMuch: Muchas gracias
 csetSuggestedMsg: Tu envío ha sido registrado y será procesado por uno de nuestros conservadores.
 itIsAvailableAt: Está disponible en
 csetNameMsg: Cada conjunto curado tiene un nombre. Puedes sugerir tu propio nombre o un seudónimo.
+missing: Missing
+andMore: and more
+unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
 patternNew: Generar un nuevo patrón
 patternNewInfo: Elige un diseño, añade tu juego de medidas y generaremos un patrón de costura a medida para ti.
 designNew: Crear un nuevo diseño
@@ -260,8 +266,14 @@ newPopular: Más populares
 newShare: Compartir / Mostrar
 newDev: Diseño / Desarrollo
 generateANewThing: "Genera un nuevo { thing }"
-website: Página web
 linkedIdentities: Identidades vinculadas
+github: GitHub
+instagram: Instagram
+mastodon: Mastodon
+reddit: Reddit
+twitch: Twitch
+tiktok: TikTok
+website: Página web
 websiteTitle: '¿Tienes un sitio web u otra URL que quieras añadir?'
 platformTitle: '¿Quién eres tú en { platform }?'
 platformWhy: No utilizamos estos datos de ninguna manera. Esto sólo está aquí para que los usuarios de FreeSewing puedan conectar los puntos entre plataformas.
@@ -274,6 +286,7 @@ code: Código
 aboutThing: Acerca de { thing }
 requiredMeasurements: Medidas requeridas
 optionalMeasurements: Medidas opcionales
+none: Ninguna
 designOptions: Opciones de diseño
 parts: Piezas
 plugins: Plugins

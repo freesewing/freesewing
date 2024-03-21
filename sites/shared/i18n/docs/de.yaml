@@ -1,9 +1,9 @@
 account: Account
 docs: Dokumentation
-controltip.t: Benutzererfahrung
-controltip.d1: The <b>User Experience</b> setting of your FreeSewing account will impact how you experience the FreeSewing website.
+controltip.t: Kontrolle versus Einfachheit
+controltip.d1: Die Einstellung <b>Power versus Simplicity</b> deines FreeSewing-Kontos hat Auswirkungen darauf, wie du die FreeSewing-Website erlebst.
 controltip.d2: Standardmäßig sind einige der fortgeschrittenen Funktionen dieser Website ausgeblendet, um es neuen Nutzern leichter zu machen, sich zurechtzufinden.
-controltip.d3: If you want to sacrifice some of that simplicity to gain more power, you can update your User Experience setting accordingly.
+controltip.d3: If you want to sacrifice some of that simplicity to gain more power, you can update your Power versus Simplicity setting accordingly.
 helpWithDocs: Hilf uns, unsere Dokumentation zu verbessern
 authors: Autoren
 maintainers: Maintainer
@@ -23,7 +23,12 @@ credits: Credits
 contentsBy: Inhalt von
 translators: Übersetzerinnen und Übersetzer
 title: Titel
-xMadeThis: "<strong>{x}</strong> hat dies erstellt"
-xWroteThis: "<strong>{x}</strong> hat dies geschrieben"
+writtenBy: Written by
+madeBy: Made by
 by: Von
-
+claimThisPost: Claim this post
+iKnowWhoMadeThis: I know who made this
+iKnowWhoWroteThis: I know who wrote this
+iWroteThis: I wrote this
+iMadeThis: I made this
+term: Term

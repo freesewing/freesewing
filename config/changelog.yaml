@@ -1,6 +1,40 @@
 Unreleased:
+  Changed:
+    brian:
+      - Always load plugin-bust due to its changes in how it handle conditionality.
+    onyx:
+      - Always load plugin-bust due to its changes in how it handle conditionality.
+    plugin-bust:
+      - This plugin now uses the `preSetDraft` rather than `preDraft` lifecycle hook
+      - Conditionality has been moved to the `preSetDraft` lifecycle hook, rather than exposing a `withCondition` named export
+      - The plugin will now always be loaded, but will check for each drafted set whether it should make any changes.
+    shelly:
+      - Always load plugin-bust due to its changes in how it handle conditionality.
+    tamiko:
+      - Always load plugin-bust due to its changes in how it handle conditionality.
+    wahid:
+      - Add a warning when waist and hip reduction are both zero, so no back dart is required
+
+  Deprecated:
+    plugin-bust:
+      - The `withCondition` named  export is deprecated and will always return true.
+
+  Fixed:
+    huey:
+      - Fixed an issue where ribbing height would distort the pocket under certain conditions. Fixes #6238
+    hugo:
+      - Add missing dimension id attributes
+    uma:
+      - Fix back exposure when expand is off. Fixes #6239
+
+3.2.0:
+  date: 2024-02-11
 
   Added:
+    core:
+      - Added the `Path.combine()` method
+      - The `Path.join()` method is now variadic
+      - The `Path.length()` now takes an parameter to include move operations in the length calculation
     lumina:
       - Initial release
     lumira:
@@ -17,11 +51,20 @@ Unreleased:
     tristan:
       - Inital release
 
+  Deprecated:
+    core:
+      - Calling `Path.join` with a second parameter to indicate that the resulting paths most be closed is now deprecated and will be removed in FreeSewing v4.
+
   Fixed:
+    brian:
+      - Take biceps ease into account when calculating armhole depth
     carlton:
       - Fixed a stray seam allowance path on the collar
     charlie:
       - The back pocket welt (4) and front pocket facing (8) incorrectly indicated to cut 2 instead of 4 in the cutlist. Fixes #5791
+    hugo:
+      - Fix issue that crashed the design when complete is off. Fixes #6006
+      - Base pocket opening on pocket height, rather than width of the garment. Fixes #6004
 
   Removed:
     plugin-annotations:
@@ -118,8 +161,8 @@ Unreleased:
   date: 2023-09-30
   Changed:
     all:
-      - All FreeSewing pacakges are now ESM only.
-      - All FreeSewing pacakges now use named exports.
+      - All FreeSewing packages are now ESM only.
+      - All FreeSewing packages now use named exports.
       - Dropped support for NodeJS 14. NodeJS 18 (LTS/hydrogen) or more recent is now required.
 
   Removed:

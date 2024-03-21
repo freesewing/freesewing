@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Photo par Deeana crée à partir de Pexels"
 date: "2020-07-12"
 intro: "Nous venons de publier FreeSewing v2.7 🎉"

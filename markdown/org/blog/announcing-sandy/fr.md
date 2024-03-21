@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Savais-tu que Sandy a été nommée d'après le personnage d'Olivia Newton-John dans le film Grease ?"
 date: "08-01-2018"
 intro: "Mesdames et messieurs --- parce que qui a dit que les hommes ne pouvaient pas porter de jupes --- je suis heureux de vous annoncer la disponibilité immédiate de notre dernier patron de freesewing : la jupe cercle Sandy ."

@@ -1,13 +1,9 @@
 ---
-title: "Легкість обхвату грудей"
+title: Легкість обхвату грудей
 ---
 
 ***
 
-Параметр **bust span ease** контролює, наскільки полегшено буде застосовано обхват бюста.
+The **bust span ease** option controls how much ease is applied to the bust span.
 
-<Note>Це не додасть одягу легкості, а лише вплине на точку обхвату грудей</Note>
-
-
-
-
+<Note>This will not add ease to the garment, but merely influence the bust point</Note>

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Die Schnittmusterdarstellung für Penelope"
 date: "2018-06-29"
 intro: "Ich freue mich sehr, die sofortige Verfügbarkeit des Penelope Pencil Skirt bekannt zu geben, der seit heute in der Beta-Version erhältlich ist."

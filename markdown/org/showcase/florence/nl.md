@@ -1,5 +1,5 @@
 ---
-maker: "onbekend"
+author: 1
 caption: "Er zijn zoveel mensen die ons gezichtsmasker hebben gemaakt, hier zijn er een paar"
 date: "2020-07-12"
 intro: "Toen we ons gezichtsmasker in februari publiceerden, hadden we niet verwacht dat het zo'n grote vlucht zou nemen."

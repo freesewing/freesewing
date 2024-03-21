@@ -35,7 +35,7 @@ export const DraftView = ({
     }
   } else {
     renderProps = pattern.getRenderProps()
-    output = <ShowPattern {...{ renderProps }} />
+    output = <ShowPattern {...{ renderProps }} design={design} patternLocale={settings.locale} />
   }
 
   return (

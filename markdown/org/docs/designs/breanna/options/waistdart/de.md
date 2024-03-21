@@ -2,7 +2,7 @@
 title: "Taillenabnäher"
 ---
 
-Whether or not to include a back waist dart to round the back.
+Ob du einen Abnäher in der Taille einfügen willst, um den Rücken abzurunden oder nicht.
 
 
 

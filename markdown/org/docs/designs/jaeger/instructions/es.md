@@ -218,9 +218,13 @@ Así que asegúrese de alinear las notas. Para eso están ahí.
 ### Haz el collar
 In order to look real crisp, the collar should be symmetrical on both sides. Unos 5 mm de diferencia ya son visibles para un collarín, así que cuanto más precisos hagas estos pasos, mejor.
 
-### Añade marcas a ambos collares
-Pero ambos cuellos uno encima del otro, hilvana las esquinas y corta el hilván. Luego, utiliza un lápiz de marcar o un poco de tiza para marcar los bordes del cuello. Mide 2 veces para asegurarte de que los cuellos restantes y la ubicación de las esquinas son 100% idénticos en ambas esquinas ![Marca los bordes del cuello](collarMarkings.svg)
+### Add markings to both collar and undercollar
+Put the collar and undercollar on top of each other, baste the corners together and cut the basting. Luego, utiliza un lápiz de marcar o un poco de tiza para marcar los bordes del cuello. Mide 2 veces para asegurarte de que los cuellos restantes y la ubicación de las esquinas son 100% idénticos en ambas esquinas ![Marca los bordes del cuello](collarMarkings.svg)
 
+<Note compact>
+The undercollar's shape is that of the collar and collarstand parts
+combined.
+</Note>
 
 #### Añade entretela o tela a la parte exterior del cuello y a la parte inferior del cuello
 Either use a fusible interfacing, or, if you want to be hardcore use a horsehair canvas. Stitch it to the outside collar stand using the same technique as when adding canvas to the lapel. ![Add canvas to the collar](collarWithCanvas.svg)
@@ -234,7 +238,7 @@ Make sure the outside collarstand and under collar are aligned and sew together 
 ### Mangas
 Sew the uppersleeve to the undersleeve until the split
 
-#### Crea la hendidura en el eng de la manga
+#### Create the split at the end of the sleeve
 
 Cose el otro lado de las mangas Gira las mangas con el lado bueno hacia fuera Añade las mangas a la chaqueta
 

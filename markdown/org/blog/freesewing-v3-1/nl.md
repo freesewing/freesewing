@@ -1,5 +1,5 @@
 ---
-author: joostdecock
+author: 1
 caption: Er zullen in de toekomst minder van deze versie-aankondigingsberichten zijn.
 date: 2023-12-30
 intro: We've just release FreeSewing v3.1 🎉

@@ -1,11 +1,7 @@
 ---
-title: "Holgura de cintura"
+title: Holgura de cintura
 ---
 
 ***
 
-La opción de facilidad de cintura **** controla la cantidad de facilidad en la cintura.
-
-
-
-
+La opción de facilidad de cintura \*\*\*\* controla la cantidad de facilidad en la cintura.

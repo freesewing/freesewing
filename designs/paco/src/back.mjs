@@ -173,7 +173,7 @@ function pacoBack({
       paths.pocket = new Path()
         .move(points.pocketLeft)
         .line(points.pocketRight)
-        .attr('class', 'farbic lashed')
+        .attr('class', 'fabric lashed')
       paths.pocketBag = new Path()
         .move(points.pocketBagWaistLeft)
         .line(points.pocketBagBottomLeft)

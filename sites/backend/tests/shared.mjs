@@ -1,6 +1,6 @@
 import dotenv from 'dotenv'
 import axios from 'axios'
-import chai from 'chai'
+import * as chai from 'chai'
 import http from 'chai-http'
 import { verifyConfig } from '../src/config.mjs'
 import { randomString } from '../src/utils/crypto.mjs'

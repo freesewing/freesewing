@@ -3,7 +3,7 @@ title: "Annonce FreeSewing v3.0"
 caption: "Cette photo d'Engin Akyurt semble être le genre de célébration discrète qui convient à cette annonce."
 date: 20230930
 intro: "FreeSewing 3.0 est enfin là.  La version 3.0 est l'aboutissement de plus d'un an de travail et arrive un peu plus de quatre ans après la version 2.0. Ce que je veux dire, c'est que je ne fais pas souvent d'annonces de ce genre, et que c'est une grosse affaire. Tu devrais t'enthousiasmer."
-author: joost
+author: 1
 ---
 
 FreeSewing 3.0 est enfin là.

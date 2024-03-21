@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Imaginez vous et lui, dans des manteaux assortis."
 date: "2018-01-26"
 intro: "Celui-ci est pour les dames -- et je ne parle pas (juste) de cette image du craquant Benoît Cumberbatch en haut de l'article."

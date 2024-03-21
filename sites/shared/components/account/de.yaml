@@ -13,6 +13,7 @@ created: Erstellt
 updated: Aktualisiert
 expires: Läuft ab
 role: Rolle
+yourApikeys: Your API Keys
 yourProfile: Dein Profil
 yourPatterns: Deine Schnittmuster
 yourSets: Deine Maßeinheiten
@@ -142,6 +143,8 @@ tooComplex: Wenn das alles verwirrend ist, musst du diese Informationen nicht an
 languageTitle: Welche Sprache bevorzugst du?
 #password
 passwordTitle: Etwas, das nur du weißt
+#id
+userId: User ID
 #api key
 newApikey: Erstelle einen neuen API-Schlüssel
 keyNewInfo: Erstelle einen neuen API-Schlüssel, um dich automatisch mit dem FreeSewing-Backend zu verbinden.
@@ -240,6 +243,9 @@ thankYouVeryMuch: Herzlichen Dank!
 csetSuggestedMsg: Dein Beitrag wurde registriert und wird von einem unserer Kuratoren bearbeitet.
 itIsAvailableAt: Es ist erhältlich unter
 csetNameMsg: Jedes kuratierte Set hat einen Namen. Du kannst deinen eigenen Namen oder ein Pseudonym vorschlagen.
+missing: Missing
+andMore: and more
+unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
 patternNew: Ein neues Muster generieren
 patternNewInfo: Wähle ein Design, füge deine Maße hinzu und wir erstellen ein maßgeschneidertes Nähmuster für dich.
 designNew: Ein neues Design erstellen
@@ -260,8 +266,14 @@ newPopular: Am beliebtesten
 newShare: Teilen / Zeigen
 newDev: Entwerfen / Entwickeln
 generateANewThing: "Erstelle eine neue { thing }"
-website: Website
 linkedIdentities: Verknüpfte Identitäten
+github: GitHub
+instagram: Instagram
+mastodon: Mastodon
+reddit: Reddit
+twitch: Twitch
+tiktok: TikTok
+website: Website
 websiteTitle: Hast du eine Website oder eine andere URL, die du hinzufügen möchtest?
 platformTitle: Wer bist du auf { platform }?
 platformWhy: Wir verwenden diese Daten in keiner Weise. Das ist nur hier, damit FreeSewing-Nutzer die Punkte über die Plattformen hinweg verbinden können.
@@ -274,6 +286,7 @@ code: Code
 aboutThing: Über { thing }
 requiredMeasurements: Erforderliche Maße
 optionalMeasurements: Optionale Maße
+none: Keine
 designOptions: Designoptionen
 parts: Teile
 plugins: Plugins

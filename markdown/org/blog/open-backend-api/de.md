@@ -3,7 +3,7 @@ title: Öffnen der FreeSewing Backend API
 caption: Eine verschnörkelte Vintage-Tastatur aus Messing auf einer schwarzen Computertastatur, von PixaBay
 date: 20231103
 intro: Die FreeSewing Backend-API unterstützt jetzt API-Schlüssel, damit du auch mit ihr interagieren kannst
-author: joost
+author: 1
 ---
 
 Es scheint heutzutage in Mode zu sein, Leute von deiner API auszuschließen. Twitter - nein, X - und Reddit haben den API-Zugang entweder gesperrt oder verlangen Gebühren für den Zugang.

@@ -1,11 +1,7 @@
 ---
-title: "Ширина плечей спереду"
+title: Ширина плечей спереду
 ---
 
 ***
 
-Параметр **ширина плечей спереду** регулює ширину плечей спереду відносно спинки.
-
-
-
-
+The **front shoulder width** option controls the width of the shoulders at the front, relative to the back.

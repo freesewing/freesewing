@@ -1,5 +1,6 @@
 ---
 title: Serger
+jargon: true
 ---
 
 ![The finished backside of a serged seam](serged-seam.jpg)

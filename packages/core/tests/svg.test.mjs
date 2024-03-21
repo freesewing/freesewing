@@ -1,5 +1,4 @@
 import { expect, use } from 'chai'
-import chaiString from 'chai-string'
 import { Svg } from '../src/svg.mjs'
 import { Design, Attributes } from '../src/index.mjs'
 import { Defs } from '../src/defs.mjs'
@@ -7,7 +6,25 @@ import { version } from '../data.mjs'
 import render from './fixtures/render.mjs'
 import { binpackPlugin } from '../../../plugins/plugin-bin-pack/src/index.mjs'
 
-use(chaiString)
+/*
+ * Quick helper assertion for equalIgnoreSpaces
+ */
+use(function (chai) {
+  chai.string = chai.string || {}
+
+  function isString(value) {
+    return typeof value === 'string'
+  }
+
+  const { Assertion } = chai
+
+  Assertion.addMethod('equalIgnoreSpaces', function (str1, str2) {
+    if (!isString(str1) || !isString(str2)) {
+      return false
+    }
+    return str1.replace(/\s/g, '') === str2.replace(/\s/g, '')
+  })
+})
 
 const getPattern = (settings = {}, draft = false) => {
   const part = {

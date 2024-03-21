@@ -1,5 +1,5 @@
 ---
-maker: "onbekend"
+author: 1
 caption: "Sorcha draagt een rood en blauw geruit Florence mondmasker"
 date: "2020-03-01"
 intro: "Een Florence mondmasker in rood en blauw"

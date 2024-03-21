@@ -9,7 +9,7 @@ title: "Jaeger Jacke: Schnittanleitung"
   - Schneide **2 Seiten** (Teil 3)
   - Schneide **2 Oberärmel** (Teil 4)
   - Schneide **2 Unterärmel** (Teil 5)
-  - Schneide **1 Kragen** (Teil 6)
+  - Cut **1 collar** (part 7)
   - Schneide **1 Kragensteg** (Teil 8)
   - Schneide **2 Taschen** (Teil 9)
   - Schneide **1 Brusttaschenpaspel** (Teil 10)
@@ -26,8 +26,9 @@ title: "Jaeger Jacke: Schnittanleitung"
 - **Einlage**
   - Schneide **2 Vorderteile** im schrägen Fadenlauf (Teil 1) Hinweis: Keine Nahtzugabe hinzufügen
   - Schneide **2 Brustteile** im schrägen Fadenlauf. Halte Ausschau nach der Markierung auf dem Vorderteil. Hinweis: Keine Nahtzugabe hinzufügen
+  - Cut **1 undercollar** (part 6). Nahtzugabe nicht berücksichtigen.
 - **Stoff für Unterkragen**
-  - Schneide **2 Unterkragen** (Teil 7)
+  - Cut **1 undercollar** (part 6)
 
 <Note>
 
@@ -51,3 +52,19 @@ Wenn du die Teile einzeln ausschneidest, musst du daran denken, dass sie Spiegel
 ![Übertrage den Besatz und das Futter für das Vorderteil](cuttingCaveat.svg)
 
 </Warning>
+
+<Comment by="Benjamin F.">
+
+Instead of cutting the canvas parts _nett_ (without seam allowance),
+there is an alternate
+method where seam allowance is included on the canvas parts.
+The idea is that because the canvas parts have seam allowance,
+when they are attached to the main fabric pieces this can allow
+ease to be worked into the garment for a better shape.
+The seam allowance is then trimmed from the canvas at a later point
+in the garment construction process.
+
+However, because this is a more advanced tailoring technique,
+our instructions are instead written with the nett canvas method.
+
+</Comment>

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Ich schätze, so sieht Augmented Reality aus?"
 date: "2018-09-29"
 intro: "Vor einer Weile stellte ich fest, dass ich Badehosen benötige. Also habe ich ein Schnittmuster gezeichnet und hab mir welche genäht:"

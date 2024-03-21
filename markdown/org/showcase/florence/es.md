@@ -1,5 +1,5 @@
 ---
-maker: "desconocido"
+author: 1
 caption: "Hay tantas personas que han hecho nuestra máscara facial, aquí están algunas de ellas"
 date: "2020-07-12"
 intro: "Cuando publicamos nuestra máscara facial en febrero, no preveíamos que fuera a explotar como lo hizo."

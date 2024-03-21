@@ -9,7 +9,7 @@ title: "Jaeger jacket: Cutting Instructions"
   - Cut **2 sides** (part 3)
   - Cut **2 topsleeves** (part 4)
   - Cut **2 undersleeves** (part 5)
-  - Cut **1 collar** (part 6)
+  - Cut **1 collar** (part 7)
   - Cut **1 collarstand** (part 8)
   - Cut **2 pockets** (part 9)
   - Cut **1 chest pocket welt** (part 10)
@@ -26,8 +26,9 @@ title: "Jaeger jacket: Cutting Instructions"
 - **Canvas**
   - Cut **2 fronts** on bias (part 1) Note: Don't include seam allowance
   - Cut **2 chest pieces** on bias. Look for the indication on the front part. Note: Don't include seam allowance
+  - Cut **1 undercollar** (part 6). Do not include seam allowance.
 - **Undercollar fabric**
-  - Cut **2 undercollars** (part 7)
+  - Cut **1 undercollar** (part 6)
 
 <Note>
 
@@ -51,3 +52,19 @@ When you cut them individually, remember that they need to be mirror images of e
 ![Trace the front facing and lining from the front part](cuttingCaveat.svg)
 
 </Warning>
+
+<Comment by="Benjamin F.">
+
+Instead of cutting the canvas parts _nett_ (without seam allowance),
+there is an alternate
+method where seam allowance is included on the canvas parts.
+The idea is that because the canvas parts have seam allowance,
+when they are attached to the main fabric pieces this can allow
+ease to be worked into the garment for a better shape.
+The seam allowance is then trimmed from the canvas at a later point
+in the garment construction process.
+
+However, because this is a more advanced tailoring technique,
+our instructions are instead written with the nett canvas method.
+
+</Comment>

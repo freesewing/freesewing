@@ -1,5 +1,5 @@
 ---
-maker: "Joost De Cock"
+author: 1
 caption: "El primer par de Chinos Charlie"
 date: "2021-05-23"
 intro: "Joost hizo este par de pantalones Charlie Chinos y toda la comunidad FreeSewing se enamoró inmediatamente del diseño de los pantalones y del tejido. Aunque Joost no pudo decirnos de dónde procedía la tela (era de su alijo), publicó el patrón Charlie unos días después."

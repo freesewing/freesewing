@@ -1,5 +1,5 @@
 ---
-maker: "unknown"
+author: 1
 caption: "This fabric has wool in it a is super warm."
 date: "2017-02-18"
 intro: "FIXME_no_intro"

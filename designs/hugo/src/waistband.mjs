@@ -69,8 +69,8 @@ function hugoWaistband({
 
   // Grainline
   macro('grainline', {
-    from: points.bottomLeft.shift(0, 15),
-    to: points.topLeft.shift(0, 15),
+    from: points.topLeft.shift(290, 25),
+    to: points.topRight.shift(250, 25),
   })
 
   // Dimensions

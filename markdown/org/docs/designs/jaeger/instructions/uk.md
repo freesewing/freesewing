@@ -218,9 +218,13 @@ Align your two half-jackets with the good sides together, and close the back sea
 ### Зробіть комір
 In order to look real crisp, the collar should be symmetrical on both sides. Різниця в 5 мм вже помітна на нашийнику, тому чим точніше ви зробите ці кроки, тим краще.
 
-### Додайте маркування до обох нашийників
-Накладіть обидва коміри один на одного, зшийте кути разом і обріжте намітку. Потім за допомогою розмічального олівця або крейди позначте краї нашийника. Виміряйте 2 рази, щоб переконатися, що решта комірів і розташування кутів на 100% збігаються на обох кутах ![Розмітьте краї коміра](collarMarkings.svg)
+### Add markings to both collar and undercollar
+Put the collar and undercollar on top of each other, baste the corners together and cut the basting. Потім за допомогою розмічального олівця або крейди позначте краї нашийника. Виміряйте 2 рази, щоб переконатися, що решта комірів і розташування кутів на 100% збігаються на обох кутах ![Розмітьте краї коміра](collarMarkings.svg)
 
+<Note compact>
+The undercollar's shape is that of the collar and collarstand parts
+combined.
+</Note>
 
 #### Додайте прокладку або полотно до зовнішньої стійки коміра та під комір
 Either use a fusible interfacing, or, if you want to be hardcore use a horsehair canvas. Stitch it to the outside collar stand using the same technique as when adding canvas to the lapel. ![Add canvas to the collar](collarWithCanvas.svg)
@@ -234,7 +238,7 @@ Make sure the outside collarstand and under collar are aligned and sew together 
 ### Рукава
 Sew the uppersleeve to the undersleeve until the split
 
-#### Створіть розріз на вході втулки
+#### Create the split at the end of the sleeve
 
 Пришийте другий бік рукавів Виверніть рукава лицьовим боком назовні Додайте рукава до куртки
 

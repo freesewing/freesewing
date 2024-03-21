@@ -3,7 +3,7 @@ title: Aankondiging van FreeSewing.social
 caption: Silhouetfoto van Olifant tijdens Gouden Uur door Renato Conti
 date: 20231103
 intro: FreeSewing heeft nu een thuis op de fediverse, en jij kunt ook meedoen
-author: joost
+author: 1
 ---
 
 FreeSewing heeft een plek voor zichzelf ingeruimd op de Fediverse en die plek is [FreeSewing.social](https://freesewing.social). Het is een Mastodon instantie die open staat voor alle FreeSewing gebruikers en de grotere gemeenschap.

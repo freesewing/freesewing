@@ -3,7 +3,7 @@ title: "A lined Tristan top with front lacing"
 caption: "A top made out of fabric scraps. The main fabric was likely upholstery fabric."
 date: 20240116
 intro: "This Tristan top is lined and had bias binding applied to the neck hole, armholes, and hem."
-designs: ["noble"]
+designs: ["tristan"]
 maker: Natalia
 ---
 

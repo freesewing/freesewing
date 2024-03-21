@@ -1,5 +1,5 @@
 ---
-maker: "Joost De Cock"
+author: 1
 caption: "Sí, esa camiseta vintage de Atari también es muy bonita."
 date: "2017-10-18"
 intro: "Este post apareció originalmente en el feed de Instagram de joostdecock ."

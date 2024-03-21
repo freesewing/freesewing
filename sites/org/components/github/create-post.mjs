@@ -12,6 +12,7 @@ import { Popout } from 'shared/components/popout/index.mjs'
 import { AuthWrapper, ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 import { DesignPicker } from './design-picker.mjs'
 import {
+  AuthorInput,
   TitleInput,
   SlugInput,
   ImageInput,
@@ -38,19 +39,16 @@ const Item = ({ title, children }) => (
   </div>
 )
 
-const dataAsMd = ({ title, user, caption, intro, designs, body }, type) => {
+const dataAsMd = ({ title, author, caption, intro, designs, body }, type) => {
   let md = `---
 title: "${title}"
 caption: "${caption}"
 date: ${yyyymmdd()}
-intro: "${intro}"`
+intro: "${intro}"
+author: ${author}`
   if (type === 'showcase')
     md += `
-designs: [${designs.map((design) => `"${design}"`).join(', ')}]
-maker: ${user}`
-  else
-    md += `
-author: ${user}`
+designs: [${designs.map((design) => `"${design}"`).join(', ')}]`
   md += `
 ---
 
@@ -69,6 +67,7 @@ export const CreatePost = ({ type = 'showcase' }) => {
   const { loading, setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
+  const [author, setAuthor] = useState(null)
   const [designs, setDesigns] = useState([])
   const [title, setTitle] = useState('')
   const [slug, setSlug] = useState(false)
@@ -88,7 +87,7 @@ export const CreatePost = ({ type = 'showcase' }) => {
       markdown: dataAsMd(
         {
           title,
-          user: account.username,
+          author,
           caption,
           intro,
           designs,
@@ -127,6 +126,8 @@ export const CreatePost = ({ type = 'showcase' }) => {
 
   const childProps = {
     type,
+    author,
+    setAuthor,
     designs,
     setDesigns,
     title,
@@ -279,12 +280,13 @@ const PostPreview = ({ title, img, caption, body }) => (
     <h1>{title}</h1>
     <PostImage imgId={img} frontmatter={{ caption }} />
     <Mdx md={body} />
-    <pre>{body}</pre>
   </>
 )
 
 const PostEditor = ({
   type,
+  author,
+  setAuthor,
   designs,
   setDesigns,
   title,
@@ -308,6 +310,30 @@ const PostEditor = ({
   <>
     <h2>Create a new {type} post</h2>
     <Tip>{t(`${type}NewInfo`)}</Tip>
+    {type === 'showcase' && (
+      <Item
+        title={
+          <div className="flex flex-row gap-2 items-center">
+            {author ? (
+              <OkIcon stroke={4} className="w-5 h-5 text-success" />
+            ) : (
+              <KoIcon stroke={3} className="w-5 h-5 text-error" />
+            )}
+            <b>Maker/Author:</b>
+            {author ? (
+              <span className="text-base">{author}</span>
+            ) : (
+              <span className="text-error text-base">
+                If you know the user ID, please add it here
+              </span>
+            )}
+          </div>
+        }
+      >
+        <Tip>Enter the FreeSewing user ID of the person who is the maker of this showcase.</Tip>
+        <AuthorInput {...{ author, setAuthor }} />
+      </Item>
+    )}
     {type === 'showcase' && (
       <Item
         title={

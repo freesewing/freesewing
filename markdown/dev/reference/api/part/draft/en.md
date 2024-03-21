@@ -34,7 +34,7 @@ access the following properties:
 || **_Access to utilities_**   |
 | `context`         | Allows access to the pattern object and other things higher in the tree |
 | `getId`           | See [the getId documentation](/reference/api/part/getid) |
-| `log`             | See [the logging documentation](/reference/api/store/log) |
+| `log`             | See [the Store Methods documentation](/reference/store-methods#store-methods-we-maintain) |
 | `macro`           | See [the macros documentation](/reference/macros/) |
 | `store`           | See [the store documentation](/reference/api/store) |
 | `units`           | A version of [`utils.units()`](/reference/api/utils/units) that is preconfigured with the user's chosen units |

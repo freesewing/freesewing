@@ -3,7 +3,7 @@
 import { Fragment } from 'react'
 import { nsMerge } from 'shared/utils.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
-import { designMeasurements, horFlexClasses } from 'shared/utils.mjs'
+import { designMeasurements, horFlexClasses, capitalize } from 'shared/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
@@ -24,13 +24,30 @@ const iconClasses = { className: 'w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink
 
 export const MeasiesView = ({ design, Design, settings, update, missingMeasurements, setView }) => {
   const { t } = useTranslation(['workbench'])
+  const { i18n } = useTranslation(ns)
+  const lang = i18n.language
 
   const loadMeasurements = (set) => {
     update.settings([
       [['measurements'], designMeasurements(Design, set.measies)],
       [['units'], set.imperial ? 'imperial' : 'metric'],
     ])
+    // Save the measurement set name to pattern settings
+    if (set[`name${capitalize(lang)}`])
+      // Curated measurement set
+      update.settings([[['metadata'], { setName: set[`name${capitalize(lang)}`] }]])
+    else if (set?.name)
+      // User measurement set
+      update.settings([[['metadata'], { setName: set.name }]])
     setView('draft')
+  }
+
+  const loadMissingMeasurements = (set) => {
+    update.settings([
+      [['measurements'], designMeasurements(Design, set.measies)],
+      [['units'], set.imperial ? 'imperial' : 'metric'],
+    ])
+    setView('measies')
   }
 
   return (
@@ -68,6 +85,7 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
               key={2}
               design={design}
               clickHandler={loadMeasurements}
+              missingClickHandler={loadMissingMeasurements}
               t={t}
               size="md"
             />,

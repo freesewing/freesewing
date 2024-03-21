@@ -1,9 +1,9 @@
-curate: Curate
+curate: Sélectionne
 curateSet: Ensemble de mesures sélectionnées
-curateSets: Curate les ensembles de mesures de FreeSewing
-curatePacks: Crée les packs d'options de FreeSewing
-noSuggestedPacks: Il n'y a actuellement aucun pack d'options suggéré pour la curation.
-noSuggestedSets: Il n'y a actuellement aucun jeu de mesures suggéré pour la curation.
+curateSets: Sélectionne les ensembles de mesures de FreeSewing
+curatePacks: Sélectionne les packs d'options de FreeSewing
+noSuggestedPacks: Il n'y a actuellement aucun pack d'options suggéré pour la sélection
+noSuggestedSets: Il n'y a actuellement aucun jeu de mesures suggéré pour la sélection
 optionPack: Pack d'options
 packs: Packs d'options
 published: Publié
@@ -11,5 +11,5 @@ publishedDesc: Les enregistrements publiés sont accessibles aux utilisateurs. S
 unpublished: Non publié
 unpublishedDesc: Les documents non publiés ne sont pas accessibles aux utilisateurs. Les choses commencent généralement par être non publiées jusqu'à ce qu'elles soient prêtes à être publiées.
 sets: Jeux de mesures
-suggestedSets: Jeux de mesures proposés pour la curation
+suggestedSets: Jeux de mesures proposés pour la sélection
 suggestedPacks: Paquets d'options suggérés

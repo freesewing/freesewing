@@ -1,17 +1,66 @@
 ---
-title: Using jargon
-order: yyy
+title: Using jargon and terms
 ---
 
-Jargon are terms that could throw off new users.
-Rather than create a glossary on every page, we use a plugin to manage
-jargon terms for us. This page shows you how to use it.
+Jargon or terms is anything that could throw off new users.
+Rather than create a glossary on every page, we use MDX to manage
+jargon/terms for us. This page shows you how to use it.
 
 <Tip compact>Think of jargon as glossary terms</Tip>
 
-## Using jargon
+## Defining terms
 
-To use jargon, it's sufficient to emphasize the term:
+To define a term, we need to establish a link between the term itself, and the documentation page that defines it.
+
+In the most common scenario, the term is the title of the page.
+For example, the title of this page is `Using jargon and terms`:
+
+```mdx
+---
+title: Using jargon and terms
+---
+```
+
+If we wanted to make it available as jargon, we only need to add the `jargon` frontmatter:
+
+```mdx
+---
+title: Using jargon and terms
+jargon: true
+---
+```
+
+## Multiple terms for the same page
+
+We can add additional terms that point to the same page by setting the `terms` in frontmatter to a comma-seperated list of terms.
+
+For example to make both `jargon` and `term` point to this page, we can do this:
+
+
+```mdx
+---
+title: Using jargon and terms
+jargon: true
+terms: jargon, term
+---
+```
+
+## Terminology per site
+
+The following pages show a list of all terminology per site:
+
+| Site | Terminology List |
+| ---- | ---------------- |
+| FreeSewing.dev | [/reference/terminology](/reference/terms) |
+| FreeSewing.org | [/docs/about/terminology](https://freesewing.org/docs/about/terms) |
+
+All of the terms listed in the pages above can be used in the markdown/mdx
+content of those websites.
+
+## Using jargon terms in MDX content
+
+To use jargon inside MDX content (like the markdown of our documentation, blog
+posts, and so on), it's sufficient to emphasize the term:
 
 ```md
 We are migrating from _cjs_ to _esm_ modules
@@ -21,51 +70,15 @@ Which renders as:
 
 We are migrating from _cjs_ to _esm_ modules
 
-## Adding jargon
+## Using jargon terms outside MDX content
 
-To add a new jargon term, you need to add it to the jargon file for the
-website you'd like to add it to:
+Outside MDX content -- more precisely, in React components -- you can achieve the same effect with the `Term` component:
 
-| Website | Jargon file | GitHub link |
-| ------- | ----------- | ----------- |
-| freesewing.dev | `sites/dev/jargon.mjs` | [jargon.mjs](https://github.com/freesewing/freesewing/blob/develop/sites/dev/jargon.mjs) |
-| freesewing.org | `sites/org/jargon.mjs` | [jargon.mjs](https://github.com/freesewing/freesewing/blob/develop/sites/org/jargon.mjs) |
+```mjs
+import { Term } from 'site/components/jargon.mjs'
 
-The file consists of key/value pairs where:
+export const MyComponent = () => (
+  <p>Look, it works here too: <Term>esm</Term></p>
+)
+```
 
-- The **key** is the jargon term
-- The **value** is the jargon description
-
-### Tips for jargon keys
-
-The key in the jargon file should always be lowercase. That's because we
-lowercase the term before matching it.
-
-So in your text, you can use `ESM`, `esm`, or even `eSm`, but the key in
-the jargon file should be `esm`.
-
-### Tips for jargon values
-
-The value can hold HTML tags, just make sure it's valid HTML and don't go
-overboard.
-
-Note that the definition will be _italic_ by default.
-
-## FreeSewing Jargon Glossary
-
-Below is the jargon which is currently defined and available to use
-on our websites.
-
-### Jargon on freesewing.dev
-
-| Term | Description |
-| ----------- | ----------- |
-| `cjs` | **CJS** stands for CommonJS, it is the JavaScript module format popularized by NodeJS, but now increasingly phased out in favor of **ESM**
-| `esm` | **ESM** stands for EcmaScript Module, it is the standardized module syntax in JavaScript
-
-### Jargon on freesewing.org
-
-| Term | Description |
-| ----------- | ----------- |
-
-_(Currently, no jargon has been defined for the freesewing.org site.)_

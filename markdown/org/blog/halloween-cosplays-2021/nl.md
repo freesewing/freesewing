@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Een beetje koud misschien, maar zwembroeken: die hebben we"
 date: "2021-10-20"
 intro: "Je favoriete personage uitbeelden kan een heel leuke Halloween-ervaring zijn! Hier zijn een paar iconische personages om je te inspireren."

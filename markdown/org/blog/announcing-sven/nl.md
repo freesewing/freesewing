@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Een Sven voor op kantoor. Dus euh, best wel saai."
 date: "2017-07-09"
 intro: "Ik heb dit patroon gemaakt omdat het winter was. Ik had het koud en ik had truien nodig. Dus wat doet een mens dan?"

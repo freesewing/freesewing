@@ -1,6 +1,7 @@
 ---
 layout: onecol
 title: Cutting
+jargon: true
 ---
 
 ![Me cutting out some T-shirts](cutting.jpg)

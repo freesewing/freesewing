@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Я не п'ю, але це здалося доречним для святкового посту ¯\_(ツ)_/¯"
 date: "2018-08-25"
 intro: "Святкуємо рік з дня заснування freesewing.org: Анонс бібліотеки freesewing"

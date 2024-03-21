@@ -3,7 +3,7 @@ title: Анонс FreeSewing.social
 caption: Силуетна фотографія слона під час золотої години Ренато Конті
 date: 20231103
 intro: FreeSewing тепер має свою домівку на fediverse, і ви теж можете приєднатися
-author: Йост
+author: 1
 ---
 
 FreeSewing виділив собі місце у Fediverse, і це місце - [FreeSewing.social](https://freesewing.social). Це екземпляр Mastodon, відкритий для всіх користувачів FreeSewing і ширшої спільноти.

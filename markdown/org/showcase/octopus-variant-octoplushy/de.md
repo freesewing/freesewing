@@ -6,6 +6,7 @@ intro: "Die \"Oktopus\"-Variante von Octoplushy"
 title: "Die \"Oktopus\"-Variante von Octoplushy"
 designs:
   - "octoplushy"
+author: 132
 ---
 
 Dies ist die ursprüngliche "Kraken"-Variante von Octoplushy, wie sie von seinem Designer Wouter entworfen wurde.

@@ -11,13 +11,14 @@ import { optionsMenuStructure } from 'shared/utils.mjs'
 
 export const ns = nsMerge('workbench', optionsNs, measieNs)
 
-const flattenOptions = (options, list = false, path = []) => {
-  if (list === false) return flattenOptions(optionsMenuStructure(options), new Set())
+const flattenOptions = (options, settings, list = false, path = []) => {
+  if (list === false)
+    return flattenOptions(optionsMenuStructure(options, settings), settings, new Set())
 
   for (const [key, option] of Object.entries(options)) {
     if (key !== 'isGroup') {
       if (!option.isGroup) list.add({ key, option, path })
-      else list = flattenOptions(option, list, [...path, key])
+      else list = flattenOptions(option, settings, list, [...path, key])
     }
   }
 
@@ -29,7 +30,16 @@ const spacer = <span className="px-2 opacity-50">/</span>
 export const TestMenu = ({ design, patternConfig, settings, update }) => {
   const { t } = useTranslation(ns)
 
-  const allOptions = flattenOptions(patternConfig.options)
+  const allOptions = flattenOptions(patternConfig.options, settings)
+  const allMeasurements = patternConfig.measurements
+    .concat(patternConfig.optionalMeasurements)
+    .sort((a, b) => {
+      const ta = t(`measurements:${a}`)
+      const tb = t(`measurements:${b}`)
+      if (ta < tb) return -1
+      else if (ta > tb) return 1
+      else return 0
+    })
 
   return (
     <Accordion
@@ -49,7 +59,7 @@ export const TestMenu = ({ design, patternConfig, settings, update }) => {
               label: [
                 ...option.path.map((p) => (
                   <>
-                    <span>{t(`${p}.t`)}</span>
+                    <span>{t([`${design}:${p}.t`, `workbench:${p}`])}</span>
                     {spacer}
                   </>
                 )),
@@ -75,8 +85,8 @@ export const TestMenu = ({ design, patternConfig, settings, update }) => {
           </Fragment>,
           <ListInput
             key="b"
-            list={patternConfig.measurements.map((m) => ({
-              label: t(m),
+            list={allMeasurements.map((m) => ({
+              label: t(`measurements:${m}`),
               val: m,
             }))}
             update={(value) => {

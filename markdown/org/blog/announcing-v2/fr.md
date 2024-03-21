@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Cette version est vraiment un changement de vue"
 date: "2019-08-25"
 intro: "Bienvenue sur la version 2 de FreeSewing, la plate-forme open source pour les patrons de couture sur mesure."

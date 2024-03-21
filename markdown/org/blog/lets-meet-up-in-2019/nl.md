@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Als introvert zeg ik dit niet vaak, maar ik zou jullie eigenlijk wel willen ontmoeten."
 date: "2018-12-10"
 intro: "Laten we elkaar ontmoeten in 2019! En andere eindejaarsgedachten"

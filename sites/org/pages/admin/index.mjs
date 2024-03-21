@@ -11,6 +11,7 @@ import { AuthWrapper, ns as authNs } from 'shared/components/wrappers/auth/index
 import { Loading } from 'shared/components/spinner.mjs'
 import { Hits } from 'shared/components/admin.mjs'
 import { PageLink } from 'shared/components/link.mjs'
+import { SearchIcon } from 'shared/components/icons.mjs'
 
 // Translation namespaces used on this page
 const namespaces = nsMerge(pageNs, authNs)
@@ -23,14 +24,12 @@ const AdminPage = ({ page }) => {
   const [results, setResults] = useState()
   const [loading, setLoading] = useState(false)
 
-  const search = async (val) => {
-    setQ(val)
-    if (val.length < 2) return
+  const search = async () => {
     /*
      * Search backend
      */
     setLoading(true)
-    const result = await backend.adminSearchUsers(val)
+    const result = await backend.adminSearchUsers(q)
     if (result.success) {
       setResults(result.data.users)
     }
@@ -39,20 +38,25 @@ const AdminPage = ({ page }) => {
 
   return (
     <PageWrapper {...page} title="Administration">
-      <AuthWrapper requiredRole="admin">
+      <AuthWrapper requiredRole="support">
         <p>
           Other admin links:
           <PageLink href="/admin/csets" txt="Curated measurement sets" />
         </p>
         <h5>Search users</h5>
-        <input
-          autoFocus
-          value={q}
-          onChange={(evt) => search(evt.target.value)}
-          className="input w-full input-bordered flex flex-row"
-          type="text"
-          placeholder="Username, ID, or E-mail address"
-        />
+        <div className="flex flex-row gap-2 items-center">
+          <input
+            autoFocus
+            value={q}
+            onChange={(evt) => setQ(evt.target.value)}
+            className="input w-full input-bordered flex flex-row"
+            type="text"
+            placeholder="Username, ID, or E-mail address"
+          />
+          <button onClick={search} className="btn btn-primary">
+            <SearchIcon />
+          </button>
+        </div>
         {loading ? <Loading /> : <Hits {...{ backend, t, results }} />}
       </AuthWrapper>
     </PageWrapper>

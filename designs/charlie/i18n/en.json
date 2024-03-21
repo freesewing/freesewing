@@ -47,7 +47,7 @@
     },
     "backPocketFacingNo": {
       "t": "Do not include back pocket facing",
-      "d": "Drafts a pattern that does not includes facing for the back pockets, showing the lining when peeking in the back ppcket opening."
+      "d": "Drafts a pattern that does not includes facing for the back pockets, showing the lining when peeking in the back pocket opening."
     },
     "backPocketFacingYes": {
       "t": "Include back pocket facing",

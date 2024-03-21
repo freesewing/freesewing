@@ -6,6 +6,7 @@ intro: "Diese raffinierte Mütze von Florent ist von Ferdi, der sagte:"
 title: "Florentiner Mütze von Ferdi"
 designs:
   - "florent"
+author: 1972
 ---
 
 Diese raffinierte Mütze von Florent ist von Ferdi, der sagte:

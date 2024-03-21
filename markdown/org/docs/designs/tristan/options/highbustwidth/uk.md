@@ -1,11 +1,7 @@
 ---
-title: "Висока ширина бюста"
+title: Висока ширина бюста
 ---
 
 ***
 
-Опція **високої ширини бюста** дозволяє налаштувати високу ширину бюста спереду.
-
-
-
-
+The **high bust width** option allows you to tweak the high bust width at the front.

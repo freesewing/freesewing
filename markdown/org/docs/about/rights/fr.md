@@ -4,7 +4,7 @@ title: Tes droits en tant qu'utilisateur de FreeSewing
 
 Freesewing applique le Règlement Général sur la Protection des Données (RGPD) de l'Union Européenne (UE).
 
-Citoyen de l'UE ou pas, pour nous voici vos droits :
+Citoyen européen ou non, en tant qu'utilisateur de FreeSewing, tu as les droits suivants :
 
 - [Le droit d’être informé](#the-right-to-be-informed)
 - [Le droit d’accès](#the-right-of-access)
@@ -20,7 +20,7 @@ Citoyen de l'UE ou pas, pour nous voici vos droits :
 Vous avez le droit d'être informé de la collecte et de l'utilisation de vos données personnelles.
 
 <Tip>
-Lis [notre avis de confidentialité](/docs/about/privacy/) pour t'informer sur la collecte et l'utilisation de tes données personnelles.
+Lis [notre politique de confidentialité](/docs/about/privacy/) pour t'informer sur la collecte et l'utilisation de tes données personnelles.
 </Tip>
 
 ## Le droit d’accès
@@ -81,7 +81,7 @@ Rends-toi sur [/compte/consentement](/account/consent/) et désélectionne **Par
 
 <Note>
 
-Le droit d'opposition est plus large, mais voici comment il s'applique à FreeSewing.
+Le droit d'opposition est plus large, mais c'est comme ça qu'il s'applique à FreeSewing.
 
 </Note>
 

@@ -6,6 +6,7 @@ intro: "Keine Klimaanlage im Büro? Waralee zur Rettung! Wouter trug sie an eine
 title: "Leichte Waralees für den Sommer"
 designs:
   - "waralee"
+author: 132
 ---
 
 Keine Klimaanlage im Büro? Waralee zur Rettung! Wouter trug sie an einem ziemlich warmen Tag.

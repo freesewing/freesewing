@@ -1,6 +1,6 @@
 ---
 title: Drawing the straps
-order: 230
+order: 93
 ---
 
 All we have to do now is flip a bunch of points on the other side,

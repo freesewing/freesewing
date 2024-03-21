@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Retenez les gouttelettes infestées de virus avec notre masque Florence"
 date: "2020-02-28"
 intro: "Nous venons de publier un patron de masque facial, en raison du coronavirus"

@@ -1,5 +1,5 @@
 ---
-title: "Reducción total de la holgura torácica"
+title: Reducción total de la holgura torácica
 ---
 
 ***

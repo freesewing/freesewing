@@ -1,5 +1,6 @@
 ---
 title: On the fold
+jargon: true
 ---
 
 When you have a pattern piece that is symmetric, the instructions might tell you that it is to be cut _on the fold_.

@@ -1,5 +1,5 @@
 ---
-maker: "onbekend"
+author: 8
 caption: "Een vroeg Bee bikinitopje"
 date: "2021-10-18"
 intro: "Een FreeSewing-maker maakte deze Bee bikinitop. Ze gebruikte de standaardinstellingen en meldde een geweldige pasvorm zonder problemen met gaten of bedekking, maar zei dat ze normaal gesproken niet veel steun nodig heeft."

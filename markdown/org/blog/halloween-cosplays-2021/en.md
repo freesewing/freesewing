@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "A bit cold perhaps, but swimtrunks: we've got'em"
 date: "2021-10-20"
 intro: "Embodying your favourite character can make for a really fun Halloween experience! Here are some iconic characters to get you inspired."

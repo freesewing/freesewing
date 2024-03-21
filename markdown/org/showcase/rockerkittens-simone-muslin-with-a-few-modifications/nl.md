@@ -6,6 +6,7 @@ intro: RockerKitten naaide deze mousseline van het Simone shirt met een paar aan
 designs:
   - simone
 maker: Natalia
+author: 50818
 ---
 
 RockerKitten naaide deze mousseline van het Simone shirt met een paar aanpassingen.

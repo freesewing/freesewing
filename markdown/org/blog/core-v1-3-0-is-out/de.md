@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Skalen, wie funktionieren sie?"
 date: "2018-01-04"
 intro: "Freenewing Core v1.3.0 ist verfügbar; Kommt mit Korrekturen, die so gut sind, dass wir sie zu all Ihren Entwürfen zurückportiert haben"

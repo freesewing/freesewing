@@ -6,6 +6,7 @@ intro: "Quelle version attrayante de la chemise Simon ! Le fabricant dit :"
 title: "Simon en surchemise par Ferdi"
 designs:
   - "simon"
+author: 1972
 ---
 
 Quelle version attrayante de la chemise Simon ! Le fabricant dit :

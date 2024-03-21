@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "El Dr. Dragnea, del hospital universitario de Amberes, con una mascarilla Florence"
 date: "2020-03-19"
 intro: "Llamando a todos los creadores: Aquí hay un patrón de mascarilla en un PDF de una página, ve a hacer algunas y ayuda a vencer este bicho"

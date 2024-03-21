@@ -1,6 +1,12 @@
 # Change log for: @freesewing/charlie
 
 
+## 3.2.0 (2024-02-11)
+
+### Fixed
+
+ - The back pocket welt (4) and front pocket facing (8) incorrectly indicated to cut 2 instead of 4 in the cutlist. Fixes
+
 ## 3.1.0 (2023-12-26)
 
 ### Changed
@@ -11,8 +17,8 @@
 
 ### Changed
 
- - All FreeSewing pacakges are now ESM only.
- - All FreeSewing pacakges now use named exports.
+ - All FreeSewing packages are now ESM only.
+ - All FreeSewing packages now use named exports.
  - Dropped support for NodeJS 14. NodeJS 18 (LTS/hydrogen) or more recent is now required.
 
 ## 2.22.0 (2022-08-23)

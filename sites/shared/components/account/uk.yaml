@@ -13,6 +13,7 @@ created: Створено
 updated: Оновлено
 expires: Закінчується
 role: Роль
+yourApikeys: Your API Keys
 yourProfile: Ваш профіль
 yourPatterns: Ваші візерунки
 yourSets: Ваші набори вимірювань
@@ -70,7 +71,7 @@ or: або
 continue: Продовжити
 save: Зберегти
 noThanks: Ні, дякую.
-areYouCertain: Ти впевнений?
+areYouCertain: Ви впевнені?
 delete: Видалити
 #reload
 nailedIt: Зрозумів.
@@ -142,6 +143,8 @@ tooComplex: Якщо все це збиває з пантелику, ви мож
 languageTitle: Якій мові ви віддаєте перевагу?
 #password
 passwordTitle: Щось, що знаєш тільки ти.
+#id
+userId: User ID
 #api key
 newApikey: Згенеруйте новий ключ API
 keyNewInfo: Створіть новий ключ API для автоматичного підключення до бекенду FreeSewing.
@@ -240,6 +243,9 @@ thankYouVeryMuch: Щиро дякую
 csetSuggestedMsg: Ваша заявка зареєстрована і буде опрацьована одним з наших кураторів.
 itIsAvailableAt: Вона доступна за посиланням
 csetNameMsg: Кожна кураторська добірка має назву. Ви можете запропонувати власне ім'я або псевдонім.
+missing: Missing
+andMore: and more
+unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
 patternNew: Створіть новий шаблон
 patternNewInfo: Виберіть дизайн, додайте свої мірки, і ми створимо для вас індивідуальну викрійку.
 designNew: Створіть новий дизайн
@@ -260,8 +266,14 @@ newPopular: Найпопулярніші
 newShare: Поділитися / Показати
 newDev: Проектування / розробка
 generateANewThing: "Створіть новий { thing }"
-website: Веб-сайт
 linkedIdentities: Пов'язані ідентичності
+github: GitHub
+instagram: Інстаграм
+mastodon: Mastodon
+reddit: Reddit
+twitch: Twitch
+tiktok: TikTok
+website: Веб-сайт
 websiteTitle: У вас є веб-сайт або інша URL-адреса, яку ви хотіли б додати?
 platformTitle: Хто ви на { platform }?
 platformWhy: Ми не використовуємо ці дані жодним чином. Це лише для того, щоб користувачі FreeSewing могли з'єднати точки на різних платформах.
@@ -274,6 +286,7 @@ code: Код
 aboutThing: Про { thing }
 requiredMeasurements: Необхідні заміри
 optionalMeasurements: Додаткові заміри
+none: Жодне
 designOptions: Варіанти дизайну
 parts: Деталі
 plugins: Плагіни

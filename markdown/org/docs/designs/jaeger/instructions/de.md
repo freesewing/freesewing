@@ -218,9 +218,13 @@ Also achten Sie darauf, die Nocken auszurichten. Das ist es, wofür sie da sind.
 ### Mach den Kragen
 In order to look real crisp, the collar should be symmetrical on both sides. Etwa 5 mm Unterschied sind bereits an einem Halsband sichtbar. Je präziser du diese Schritte also ausführst, desto besser.
 
-### Markierungen an beiden Halsbändern anbringen
-Lege beide Kragen übereinander, hefte die Ecken zusammen und schneide die Heftung ab. Benutze dann einen Markierungsstift oder Kreide, um die Kanten des Kragens zu markieren. Miss 2 Mal nach, um sicherzustellen, dass die verbleibenden Kragen und die Position der Ecken an beiden Ecken 100% identisch sind. ![Markiere die Kragenkanten](collarMarkings.svg)
+### Add markings to both collar and undercollar
+Put the collar and undercollar on top of each other, baste the corners together and cut the basting. Benutze dann einen Markierungsstift oder Kreide, um die Kanten des Kragens zu markieren. Miss 2 Mal nach, um sicherzustellen, dass die verbleibenden Kragen und die Position der Ecken an beiden Ecken 100% identisch sind. ![Markiere die Kragenkanten](collarMarkings.svg)
 
+<Note compact>
+The undercollar's shape is that of the collar and collarstand parts
+combined.
+</Note>
 
 #### Füge Vlieseline oder Canvas an der Außenseite des Kragens und unter dem Kragen hinzu.
 Either use a fusible interfacing, or, if you want to be hardcore use a horsehair canvas. Stitch it to the outside collar stand using the same technique as when adding canvas to the lapel. ![Add canvas to the collar](collarWithCanvas.svg)
@@ -234,7 +238,7 @@ Make sure the outside collarstand and under collar are aligned and sew together 
 ### Ärmel
 Sew the uppersleeve to the undersleeve until the split
 
-#### Erstelle den Spalt am Ende des Ärmels
+#### Create the split at the end of the sleeve
 
 Nähen Sie die andere Seite der Ärmel Wenden Sie die Ärmel mit der guten Seite nach außen Fügen Sie die Ärmel der Jacke hinzu
 

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Screengrab van Bernadette Banner's YouTube tutorial voor deze hoed"
 date: "2020-02-23"
 intro: "Nieuw patroon: De Holmes Hertenstafmuts"

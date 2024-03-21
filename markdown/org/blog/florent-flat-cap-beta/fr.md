@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Quentin entouré de nos futurs maîtres robots."
 date: "2017-12-06"
 intro: "Le patron du bonnet plat Florent est maintenant disponible en version bêta. C'est un autre cadeau trié."

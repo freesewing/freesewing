@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Paco über meine Wenigkeit"
 date: "10.08.2020"
 intro: "Darf ich vorstellen: Paco: Unser neues Unisex-Muster für stylische Sommerhosen"

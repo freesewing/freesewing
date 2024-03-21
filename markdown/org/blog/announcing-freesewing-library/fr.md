@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Je ne bois pas, mais cela m'a semblé approprié pour un post de célébration ¯_(ツ)_/¯."
 date: "08-25-2018"
 intro: "C'est le premier anniversaire de freesewing.org : Annonce la bibliothèque freesewing"

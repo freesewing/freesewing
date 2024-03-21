@@ -6,6 +6,7 @@ intro: "Wouter naaide niet alleen deze Haring's Hortensia handtas, hij ontwierp 
 title: "Hortensia door Wouter"
 designs:
   - "hortensia"
+author: 132
 ---
 
 Wouter naaide niet alleen deze Haring's Hortensia handtas, hij ontwierp ook de stof en maakte het patroon! Hij vertelde dat hij het stofontwerp samen met zijn dochter had gemaakt en het via Spoonflower had laten drukken.

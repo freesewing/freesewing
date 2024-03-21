@@ -20,7 +20,7 @@ We now no longer present users who want to try out the site a range of *standard
 
 We vertrouwen op onze gemeenschap om meetsets in te sturen voor curatie. Als je openbare metingen op de site hebt ingesteld, kun je die voorstellen voor curatie.
 
-To be part of our curated measurements sets collection, you should provide the following:
+Om deel uit te maken van onze verzamelde meetsets moet je het volgende opgeven:
 
 - **Alle metingen** van de persoon. We accepteren geen incomplete sets, omdat dat zou betekenen dat sommige ontwerpen er niet mee zouden werken.
 - **De lengte** van de persoon. Dit helpt gebruikers een maatset te kiezen die het dichtst bij hun eigen lichaam ligt.

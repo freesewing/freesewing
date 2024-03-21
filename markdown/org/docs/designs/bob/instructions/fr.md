@@ -19,7 +19,7 @@ comme choix pour la couche avant, c'est-à-dire la couche visible.
 
 If you decide to go for two layers, simply join them together at the edges before applying the bias tape.
 
-You probably want to pin or baste this prior to sewing. The two different types of fabric will behave differently, so secure them in place prior to sewing the together.
+Tu voudras probablement l'épingler ou le bâtonner avant de le coudre. The two different types of fabric will behave differently, so secure them in place prior to sewing the together.
 
 Make sure to sew close to the edge so that the stitches will be under the bias tape finish later.
 

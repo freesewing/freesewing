@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Ein Sven für das Büro. Wie in, irgendwie langweilig"
 date: "2017-07-09"
 intro: "Winter veranlasste mich, dieses Schnitt zu entwerfen. Mir war kalt und ich brauchte ein paar Pullover, also was macht man da?"

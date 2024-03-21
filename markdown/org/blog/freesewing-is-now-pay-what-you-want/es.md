@@ -3,7 +3,7 @@ title: FreeSewing is now pay-what-you-want
 caption: A Person Putting Coin in a Piggy Bank, by Maitree Rimthong
 date: 20231103
 intro: We have updated our pricing, here's why
-author: joost
+author: 1
 ---
 
 I am clearly doing a terrible job at convincing people to [become a FreeSewing patron](/patrons/join), because while user growth is ever increasing, our revenue is not. In addition, inflation is very real, meaning that even when revenue remains the same, we're actually less able to make a difference.

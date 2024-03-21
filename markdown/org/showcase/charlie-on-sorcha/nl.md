@@ -1,5 +1,5 @@
 ---
-maker: "onbekend"
+author: 1
 caption: "Een paar Charlie Chinos bij Sorcha"
 date: "2021-05-16"
 intro: "Sorcha poseert in een paar Charlie chino's ."

@@ -1,11 +1,23 @@
 uiSettings.t: UI-voorkeuren
 uiSettings.d: Deze voorkeuren bepalen de UI (User Interface) aspecten van onze online omgeving voor het maken van patronen.
+missingSettings1.t: (Missing Settings?)
+missingSettings1.d: Can't find a setting (like Seam Allowance, Language, or Included Parts)? Change your User Experience level (using the buttons at the top) to expose settings that have been hidden!
+missingSettings2.t: (Missing Settings?)
+missingSettings2.d: Can't find a setting (like Language, Included Parts, or Details)? Change your User Experience level (using the buttons at the top) to expose settings that have been hidden!
+missingSettings3.t: (Missing Settings?)
+missingSettings3.d: Can't find a setting (like Included Parts, Details, or Expand)? Change your User Experience level (using the buttons at the top) to expose settings that have been hidden!
 renderer.t: Render-engine
 renderer.d: Bepaalt hoe het patroon wordt weergegeven (getekend) op het scherm
 renderWithReact.t: Renderen met de React-componenten van FreeSewing
 renderWithReact.d: Renderen als SVG via onze React-componenten. Maakt interactiviteit mogelijk en is geoptimaliseerd voor het scherm. Gebruik deze als je niet zeker weet wat je moet kiezen.
 renderWithCore.t: Render with FreeSewing's Core library
 renderWithCore.d: Render rechtstreeks naar SVG vanuit Core. Laat geen interactiviteit toe en is geoptimaliseerd voor afdrukken. Gebruik dit als je wilt weten hoe het eruit zal zien als het geëxporteerd wordt.
+kiosk.t: Kiosk Mode
+kiosk.d: Controls how the web page is shown.
+websiteMode.t: Use website mode
+websiteMode.d: Show the full web page, including header, footer, and navigation.
+kioskMode.t: Use kiosk mode
+kioskMode.d: Show just the pattern drafting portion of the web page, without header, footer, or navigation.
 control.t: Gebruikerservaring
 control.d: Welke gebruikerservaring heeft jouw voorkeur? Houd er rekening mee dat dit een accountinstelling is, dus het heeft invloed op de hele website.
 inspect.t: Inspecteer

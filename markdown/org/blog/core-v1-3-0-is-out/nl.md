@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Weegschalen, hoe werken die?"
 date: "2018-01-04"
 intro: "Freesewing core v1.3.0 is uit; komt met fixes die zo goed zijn dat we ze hebben geback-port naar al je drafts"

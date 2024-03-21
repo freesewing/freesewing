@@ -1,5 +1,5 @@
 ---
-title: Normes communautaires
+title: Normes communautaires de FreeSewing
 ---
 
 Merci de faire partie de la communauté freesewing. Lorsque vous vous engagez avec nous, ou lorsque vous vous engagez avec d'autres, souvenez-vous des règles simples suivantes :

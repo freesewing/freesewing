@@ -7,6 +7,7 @@ import { useContext, useMemo } from 'react'
 import { useMobileAction } from 'shared/context/mobile-menubar-context.mjs'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
+import { useTheme } from 'shared/hooks/use-theme.mjs'
 // Context
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Components
@@ -90,6 +91,11 @@ export const DraftHeader = ({
   const { zoomFunctions, zoomed } = useContext(PanZoomContext)
   const backend = useBackend()
   const { setLoadingStatus } = useContext(LoadingStatusContext)
+  const { theme } = useTheme()
+
+  // Override button colors for monochrome theme.
+  const ueButtonColor = theme !== 'monochrome' ? 'text-primary' : 'text-primary-content'
+  const resetOptionsButtonColor = theme !== 'monochrome' ? 'text-accent' : 'text-warning'
 
   // make the zoom buttons so we can pass them to the mobile menubar
   const headerZoomButtons = useMemo(
@@ -209,27 +215,29 @@ export const DraftHeader = ({
           data-tip={t('ui-settings:control.t')}
         >
           {[1, 2, 3, 4, 5].map((score) => (
-            <button onClick={() => update.setControl(score)} className="text-primary" key={score}>
+            <button onClick={() => update.setControl(score)} className={ueButtonColor} key={score}>
               <BulletIcon fill={control >= score ? true : false} />
             </button>
           ))}
         </div>
-        <div className="flex flex-row items-center gap-4">
-          <IconButton
-            Icon={KioskIcon}
-            dflt={ui.kiosk ? false : true}
-            onClick={() => update.ui(['kiosk'], ui.kiosk ? 0 : 1)}
-            title={t('ui-settings:kiosk.t')}
-          />
-        </div>
-        <div className="flex flex-row items-center gap-4">
-          <IconButton
-            Icon={RocketIcon}
-            dflt={ui.renderer !== 'svg'}
-            onClick={() => update.ui(['renderer'], ui.renderer === 'react' ? 'svg' : 'react')}
-            title={t('ui-settings:renderer.t')}
-          />
-        </div>
+        {control < controlLevels.ui.kiosk ? null : (
+          <div className="flex flex-row items-center gap-4">
+            <IconButton
+              Icon={KioskIcon}
+              dflt={ui.kiosk ? false : true}
+              onClick={() => update.ui(['kiosk'], ui.kiosk ? 0 : 1)}
+              title={t('ui-settings:kiosk.t')}
+            />
+            {control < controlLevels.ui.renderer ? null : (
+              <IconButton
+                Icon={RocketIcon}
+                dflt={ui.renderer !== 'svg'}
+                onClick={() => update.ui(['renderer'], ui.renderer === 'react' ? 'svg' : 'react')}
+                title={t('ui-settings:renderer.t')}
+              />
+            )}
+          </div>
+        )}
         <Spacer />
         <div className="flex flex-row items-center gap-4">
           <button
@@ -241,7 +249,9 @@ export const DraftHeader = ({
             <ResetIcon
               stroke={3.5}
               className={`w-6 h-6 ${
-                typeof settings.options === 'undefined' ? 'text-base-100 opacity-30' : 'text-accent'
+                typeof settings.options === 'undefined'
+                  ? 'text-base-100 opacity-30'
+                  : resetOptionsButtonColor
               }`}
             />
           </button>

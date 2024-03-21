@@ -1,5 +1,5 @@
 ---
-title: "Verringerung der Brustumfangszugabe"
+title: Verringerung der Brustumfangszugabe
 ---
 
 ***

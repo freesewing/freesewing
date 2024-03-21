@@ -1,11 +1,7 @@
 ---
-title: "Легкість від плеча до плеча"
+title: Легкість від плеча до плеча
 ---
 
 ***
 
-Опція **Shoulder to Shoulder Ease** дозволяє додати легкості між плечима.
-
-
-
-
+The **Shoulder to Shoulder Ease** option allows you to add ease between the shoulders.

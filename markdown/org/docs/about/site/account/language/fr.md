@@ -2,7 +2,7 @@
 title: Langue
 ---
 
-This controls the **language** that will be used to generate your patterns, as well send you emails and so on.
+Ceci contrôle le langage **** qui sera utilisé pour générer tes patrons, ainsi que pour t'envoyer des courriels et ainsi de suite.
 
 Il s'agit en d'autres termes d'un paramètre linguistique central stocké dans ton compte.
 

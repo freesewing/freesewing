@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Dieser Beitrag beschreibt, was in Version 2.2 von FreeSewing neu ist"
 date: "2020-02-22"
 intro: "Ein Blick auf die Neuerungen in FreeSewing 2.2, darunter Breanna, unser Grundschnittblock für Damenoberbekleidung"

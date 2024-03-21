@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "If you like it, put a bow on it"
 date: "2017-11-14"
 intro: "Our family of freesewing patterns has grown once again, and the benjamin of the family is... Benjamin ."

@@ -2,7 +2,7 @@
 title: "Camiseta Aaron A: Notas del diseñador"
 ---
 
-Aaron, como la mayoría de los patrones que diseño, nació de la necesidad. Necesitaba una camiseta interior para llevar debajo de las camisas cuando hace un poco de frío, e intento llevar sólo ropa hecha con patrones de FreeSewing, por lo que así nació Aaron.
+Aaron, como la mayoría de los patrones que diseño, nació de la necesidad. I needed an A-shirt to wear under shirts when it gets a bit colder, and I try to only wear clothes made from FreeSewing patterns, so Aaron was born.
 
 Aaron existe desde hace muchos años y ha sido realizado por varias personas, así que se podría considerar un elemento básico del catálogo de diseño de FreeSewing.
 

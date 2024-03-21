@@ -1,8 +1,8 @@
 ---
-title: indéfini
+title: Longeur
 ---
 
-indéfini
+L'option longueur détermine la longueur de ta poche. 
 
 
 

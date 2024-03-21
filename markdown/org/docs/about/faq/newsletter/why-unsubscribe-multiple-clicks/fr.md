@@ -1,31 +1,31 @@
 ---
-title: Why do I have to click again to confirm I want to unsubscribe from the newsletter?
+title: Pourquoi dois-je cliquer à nouveau pour confirmer que je veux me désabonner de la lettre d'information ?
 ---
 
-While we could make it so that clicking the link in your email would immediately unsubscribe you, it would be in violation of internet standards. Plus précisément, la définition de la méthode GET du protocole HTTP ____ ____ qui stipule ce qui suit :
+Nous pourrions faire en sorte que le fait de cliquer sur le lien dans ton e-mail te permette de te désinscrire immédiatement, mais cela serait contraire aux normes de l'Internet. Plus précisément, la définition de la __méthode GET__ du protocole __HTTP__ qui stipule :
 
 
 <Note>
 <h5>Les demandes GET ne doivent récupérer que des données et n'avoir aucun autre effet.</h5>
 
-[wikipedia.org/wiki/HTTP#HTTP/1.1_request_messages](https://en.wikipedia.org/wiki/HTTP#HTTP/1.1_request_messages)
+[wikipedia.org/wiki/Hypertext_Transfer_Protocol#M%C3%A9thodes](https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol#M%C3%A9thodes)
 </Note>
 
-Une demande GET __ est ce qui se passe lorsque tu suis un lien. Merely following a link should not make any changes (like unsubscribing you from a newsletter).
+Une _demande GET_ est ce qui se passe lorsque tu suis un lien. Le simple fait de suivre un lien ne devrait pas apporter de changements (comme la désinscription à une lettre d'information).
 
-For example, when you receive an email, your email client may _preload_ the links in it in the background. So that they are quicker to load should you click on them.
+Par exemple, lorsque tu reçois un e-mail, ton client de messagerie peut _précharger_ les liens qu'il contient en arrière-plan. Pour qu'ils se chargent plus rapidement sur si tu cliques dessus.
 
-Obviously, this preloading should not unsubscribe you. Which is why you need to click a button to confirm. Because that will trigger a __POST request__ and those can make changes.
+Évidemment, ce préchargement ne doit pas te désinscrire. C'est pourquoi tu dois cliquer sur un bouton pour confirmer. Parce que cela déclenchera une __requête POST__ et que celles-ci peuvent apporter des changements.
 
 <Tip>
 
-##### This does not apply to users unsubscribing through their account
+##### Cela ne s'applique pas aux utilisateurs qui se désinscrivent par l'intermédiaire de leur compte
 
-None of this applies to users who unsubscribe from our newsletter by disabling the
-option in their account. In this case, you are already clicking a button, rather
-than a link in your email.
+Rien de tout cela ne s'applique aux utilisateurs qui se désinscrivent à notre newsletter en désactivant l'option
+dans leur compte. Dans ce cas, tu cliques déjà sur un bouton, plutôt
+que sur un lien dans ton email.
 
-If you are curious, we use an idempotent __PUT request__ under the hood.
+Si tu es curieux, nous utilisons une __PUT request__ idempotente sous le capot.
 </Tip>
 
 
