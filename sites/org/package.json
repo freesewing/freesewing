@@ -69,7 +69,7 @@
   "devDependencies": {
     "autoprefixer": "10.4.18",
     "js-yaml": "4.1.0",
-    "postcss": "8.4.37",
+    "postcss": "8.4.38",
     "remark-extract-frontmatter": "3.2.0",
     "remark-mdx-frontmatter": "4.0.0",
     "tailwindcss": "3.4.1",
