@@ -59,7 +59,7 @@
     "strip-markdown": "6.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "10.4.18",
+    "autoprefixer": "10.4.19",
     "js-yaml": "4.1.0",
     "postcss": "8.4.38",
     "remark-extract-frontmatter": "3.2.0",
