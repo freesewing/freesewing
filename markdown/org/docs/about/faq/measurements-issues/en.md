@@ -22,6 +22,8 @@ There are a few measurements we've noticed tend to cause problems.
 
 The [waist to armpit](https://freesewing.org/docs/measurements/waisttoarmpit) is a straight vertical measure, not curvilinear (following the curve of the body). It should be at the bottom edge of your armpit, only as high as a shirt would be comfortable sitting (not digging in).
 
+![Waist to armpit](waisttoarmpit.jpg) 
+
 #### High point shoulder (HPS)
 
 [HPS](https://freesewing.org/docs/sewing/hps), which is used in several measurements, is one of the harder spots to get perfect.
@@ -30,11 +32,19 @@ Here are two approaches.
 
 One way is to take a pencil, pen, or small dowel to find the point where your neck meets your shoulder, as well as the highest point as that's where the pencil or dowel will touch the shoulder. If you use that method, you ideally want the tool you're using to be parallel with the floor so you can find that high point.
 
+![High point shoulder with dowel](hps2.jpg) 
+
 Another way is with a ribbon. Take a longer ribbon and put it over your neck/shoulder like a cross body bag. It helps to be able to feel where the neck ends and the shoulder begins with a small amount of pressure on the ribbon. You'll need to determine where the shoulder seam should sit, but the ribbon will tell you where the HPS should sit once you have the shoulder seam determined as it will be where the two lines cross.
+
+![High point shoulder with riibbon](hps.jpg) 
 
 #### High bust
 
 [High bust](https://freesewing.org/docs/measurements/highbust) is a horizontal measurement that does not need to be perfectly horizontal. It should go around your torso at the narrowest part of the upper chest, over the bust, under the arms, and across the back, but does not need to be parallel to the ground all the way around.
+
+![High bust from the side](highbust.jpg) 
+
+![High bust from the front](highbust2.jpg) 
 
 #### Shoulder slope
 
