@@ -93,15 +93,17 @@ function draftHueyFront({
   /*
    * Annotations
    */
-  let zipperLength = store.get('frontNeckSeamLength') + points.cfNeck.dist(points.cfHem)
-  if (options.ribbing) {
-    zipperLength += store.get('ribbingHeight')
-  }
-
   store.flag.note({
     msg: 'huey:zipperLength',
     replace: {
-      length: units(zipperLength),
+      /*
+       * Zipper length is the hood part, plus center front + ribbing (if there is any)
+       */
+      length: units(
+        measurements.head * options.hoodClosure +
+          points.cfNeck.dist(points.cfHem) +
+          (options.ribbing ? store.get('ribbingHeight') : 0)
+      ),
     },
   })
 
