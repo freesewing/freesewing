@@ -96,7 +96,6 @@ export const Breadcrumbs = ({ lead = false }) => {
 export const NavLinks = () => {
   const { slug } = useContext(NavigationContext)
   const chunks = slug.split('/')
-  console.log(chunks[0])
 
   return (
     <div className="mdx my-4 bg">
