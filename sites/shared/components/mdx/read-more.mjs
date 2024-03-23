@@ -2,7 +2,7 @@ import get from 'lodash.get'
 import Link from 'next/link'
 import { useContext } from 'react'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
-import { BulletIcon, RightIcon } from 'shared/components/icons.mjs'
+import { RightIcon } from 'shared/components/icons.mjs'
 import { pageHasChildren } from 'shared/utils.mjs'
 import orderBy from 'lodash.orderby'
 
@@ -25,7 +25,7 @@ const onActivePath = (slug, active) => (active ? active.slice(0, slug.length) ==
 /*
  * This is a recursive function, so it needs to be lean
  */
-const RenderTree = ({ tree, recurse, depth = 1, level = 0, active = false, from = false }) => {
+const RenderTree = ({ tree, recurse, depth = 1, level = 0, active = false }) => {
   const orderedTree = orderBy(tree, ['o', 't'], ['asc', 'asc']).filter(
     (item) => typeof item === 'object'
   )
