@@ -1,5 +1,6 @@
 ---
 title: Hemming
+jargon: true
 ---
 
 ![La lluvia en la parte inferior de una camisa](coverlock-hem.jpg)

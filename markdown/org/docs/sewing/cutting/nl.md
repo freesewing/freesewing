@@ -1,6 +1,7 @@
 ---
 layout: opecol
 title: Knippen
+jargon: true
 ---
 
 ![Ik, druk t-shirts aan het uitknippen](cutting.jpg)

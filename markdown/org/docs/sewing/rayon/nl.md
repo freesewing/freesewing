@@ -1,5 +1,6 @@
 ---
 title: Rayon
+jargon: true
 ---
 
 ![Ik gebruik rayon voor mijn ondergoed](rayon.jpg)

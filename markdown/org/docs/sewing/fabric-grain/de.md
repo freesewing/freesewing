@@ -1,5 +1,6 @@
 ---
 title: Fadenlauf
+jargon: stimmt
 ---
 
 ![Der Fadenlauf verläuft parallel zum Webrand](fabric-grain.jpg)

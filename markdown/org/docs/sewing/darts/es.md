@@ -1,5 +1,6 @@
 ---
 title: Dardos
+jargon: true
 ---
 
 ![Artes de polvo en una blusa](dart.jpg)
