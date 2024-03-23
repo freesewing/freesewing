@@ -1,5 +1,6 @@
 ---
 title: Trimming
+jargon: true
 ---
 
 ![Seam allowance being trimmed](trimming.jpg)

@@ -151,6 +151,30 @@ const loadDocs = async (site) => {
 }
 
 /*
+ * Loads jargon and terms
+ */
+const loadJargon = async (site, docs) => {
+  const folder = site === 'org' ? 'docs' : ''
+  const jargon = await loadFolderFrontmatter('jargon', site, folder)
+  const terms = await loadFolderFrontmatter('terms', site, folder)
+
+  const data = {}
+  for (const lang in jargon) {
+    data[lang] = {}
+    for (const slug in jargon[lang]) {
+      data[lang][docs[lang][slug].t.toLowerCase()] = slug
+      if (terms[lang]?.[slug]) {
+        for (const term of terms[lang][slug].split(',').map((term) => term.trim())) {
+          data[lang][term.toLowerCase()] = slug
+        }
+      }
+    }
+  }
+
+  return data
+}
+
+/*
  * Loads all blog posts, titles and order
  */
 const loadBlog = async (store) => {
@@ -290,6 +314,15 @@ const writeFile = async (filename, exportname, site, content) => {
 export const prebuildDocs = async (store) => {
   store.docs = await loadDocs(store.site)
   await writeFiles('docs', store.site, store.docs)
+
+  // Handle jargon
+  store.jargon = await loadJargon(store.site, store.docs)
+  fs.writeFileSync(
+    path.resolve('..', store.site, 'prebuild', `jargon.mjs`),
+    `${header}
+export const site = "${store.site}"
+export const jargon = ${JSON.stringify(store.jargon, null, 2)}`
+  )
 }
 
 /*

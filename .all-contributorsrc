@@ -1158,6 +1158,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "rachelostic",
+      "name": "Rachel Ostic",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65781290?v=4",
+      "profile": "https://rachel.ostic.ca",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,

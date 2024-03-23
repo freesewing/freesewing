@@ -529,8 +529,8 @@ export const MeasieInput = ({
     typeof original === 'undefined'
       ? original
       : isDegree
-      ? Number(original)
-      : measurementAsUnits(original, units)
+        ? Number(original)
+        : measurementAsUnits(original, units)
   )
   const [validatedVal, setValidatedVal] = useState(measurementAsUnits(original, units))
   const [valid, setValid] = useState(null)
@@ -587,3 +587,103 @@ export const MeasieInput = ({
     </FormControl>
   )
 }
+
+export const FileInput = ({
+  label, // The label
+  valid = () => true, // Method that should return whether the value is valid or not
+  update, // The onChange handler
+  current, // The current value
+  original, // The original value
+  id = '', // An id to tie the input to the label
+  dropzoneConfig = {}, // Configuration for react-dropzone
+}) => {
+  /*
+   * Ondrop handler
+   */
+  const onDrop = useCallback(
+    (acceptedFiles) => {
+      const reader = new FileReader()
+      reader.onload = async () => update(reader.result)
+      acceptedFiles.forEach((file) => reader.readAsDataURL(file))
+    },
+    [update]
+  )
+
+  /*
+   * Dropzone hook
+   */
+  const { getRootProps, getInputProps } = useDropzone({ onDrop, ...dropzoneConfig })
+
+  /*
+   * If we have a current file, return this
+   */
+  if (current)
+    return (
+      <FormControl label={label} isValid={valid(current)}>
+        <div className="bg-base-100 w-full h-36 mb-2 mx-auto flex flex-col items-center text-center justify-center">
+          <button
+            className="btn btn-neutral btn-circle opacity-50 hover:opacity-100"
+            onClick={() => update(original)}
+          >
+            <ResetIcon />
+          </button>
+        </div>
+      </FormControl>
+    )
+
+  /*
+   * Return upload form
+   */
+  return (
+    <FormControl label={label} forId={id} isValid={valid(current)}>
+      <div
+        {...getRootProps()}
+        className={`
+        flex rounded-lg w-full flex-col items-center justify-center
+        sm:p-6 sm:border-4 sm:border-secondary sm:border-dashed
+      `}
+      >
+        <input {...getInputProps()} />
+        <p className="hidden lg:block p-0 m-0">Drag and drop your file here</p>
+        <button className={`btn btn-secondary btn-outline mt-4 px-8`}>Browse...</button>
+      </div>
+    </FormControl>
+  )
+}
+
+/*
+ * Input for booleans
+ */
+export const ToggleInput = ({
+  label, // Label to use
+  update, // onChange handler
+  current, // The current value
+  disabled = false, // Allows rendering a disabled view
+  list = [true, false], // The values to chose between
+  labels = ['Yes', 'No'], // The labels for the values
+  on = true, // The value that should show the toggle in the 'on' state
+  id = '', // An id to tie the input to the label
+  labelTR = false, // Top-Right label
+  labelBL = false, // Bottom-Left label
+  labelBR = false, // Bottom-Right label
+}) => (
+  <FormControl
+    {...{ labelBL, labelBR, labelTR }}
+    label={
+      label
+        ? `${label} (${current === on ? labels[0] : labels[1]})`
+        : `${current === on ? labels[0] : labels[1]}`
+    }
+    forId={id}
+  >
+    <input
+      id={id}
+      disabled={disabled}
+      type="checkbox"
+      value={current}
+      onChange={() => update(list.indexOf(current) === 0 ? list[1] : list[0])}
+      className="toggle my-3 toggle-primary"
+      checked={list.indexOf(current) === 0 ? true : false}
+    />
+  </FormControl>
+)

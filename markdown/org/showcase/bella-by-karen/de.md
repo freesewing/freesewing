@@ -6,6 +6,7 @@ intro: "Karen hat dieses fabelhafte Shirt aus dem Bella-Block genäht. Sie hat d
 title: "Bella von Karen"
 designs:
   - "bella"
+author: 13050
 ---
 
 

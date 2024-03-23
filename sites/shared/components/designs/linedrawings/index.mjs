@@ -38,11 +38,7 @@ import {
 } from 'shared/components/designs/linedrawings/cornelius.mjs'
 import { Diana, DianaFront, DianaBack } from 'shared/components/designs/linedrawings/diana.mjs'
 import { Florence, FlorenceFront } from 'shared/components/designs/linedrawings/florence.mjs'
-import {
-  Florent,
-  FlorentFront,
-  FlorentBack,
-} from 'shared/components/designs/linedrawings/florent.mjs'
+import { Florent, FlorentFront } from 'shared/components/designs/linedrawings/florent.mjs'
 import { Gozer, GozerFront, GozerBack } from 'shared/components/designs/linedrawings/gozer.mjs'
 import { Hi, HiFront } from 'shared/components/designs/linedrawings/hi.mjs'
 import { Holmes, HolmesFront } from 'shared/components/designs/linedrawings/holmes.mjs'

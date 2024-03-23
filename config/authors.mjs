@@ -4,40 +4,58 @@
  * The name is what we'll use as display name
  */
 export const authors = {
+  /*
+   * For these we know their FreeSewing ID and they are ordered by that ID
+   * Which means new users/contributors will typically go at the bottom
+   */
+
+  // The dinosaurs
   joostdecock: { id: 1, name: 'Joost De Cock' },
-  'Prof. dr. Sorcha Ní Dhubhghaill': { id: 0, name: 'Prof. dr. Sorcha Ní Dhubhghaill' },
-  mocked: { id: 0, name: 'Unknown (mocked in dev)' },
-  benjamesben: { id: 0, name: 'Benjamin' },
-  nikhil: { id: 0, name: 'nikhil' },
-  jackseye: { id: 0, name: 'jackseye' },
-  'Annie Kao': { id: 0, name: 'Annie Kao' },
-  Bart: { id: 0, name: 'Bart' },
-  'Enoch Riese': { id: 0, name: 'Enoch Riese' },
-  Zee: { id: 0, name: 'Zee' },
-  'James Bradbury': { id: 0, name: 'James Bradbury' },
-  jgfichte: { id: 0, name: 'jgfichte' },
-  Tríona: { id: 0, name: 'Tríona' },
-  starfetch: { id: 0, name: 'starfetch' },
-  bobgeorgethe3rd: { id: 0, name: 'starfetch' },
-  'Glenn Matthews': { id: 0, name: 'Glenn Matthews' },
-  'Raphael Sizemore': { id: 0, name: 'Raphael Sizemore' },
-  'Joe Schofield': { id: 0, name: 'Joe Schofield' },
-  mergerg: { id: 0, name: 'starfetch' },
-  woutervdub: { id: 0, name: 'Wouter van Wageningen' },
-  'anna-puk': { id: 0, name: 'Anna Puk' },
-  'Nick Dower': { id: 0, name: 'Nick Dower' },
-  'Sanne Kalkman': { id: 0, name: 'Sanne Kalkman' },
-  'Darigov Research': { id: 0, name: 'Darigov Research' },
-  'Jeroen Hoek': { id: 0, name: 'Jeroen Hoek' },
-  Natalia: { id: 0, name: 'Natalia Sayang' },
-  chri5b: { id: 0, name: 'chri5b' },
-  tangerineshark: { id: 0, name: 'tangerineshark' },
-  'Ivo Bek': { id: 0, name: 'Ivo Bek' },
-  Thrunic: { id: 0, name: 'Thrunic' },
-  'Vili Sinervä': { id: 0, name: 'Vili Sinervä' },
-  bijay_d: { id: 0, name: 'bijay_d' },
-  'Paula Vidas': { id: 0, name: 'Paula Vidas' },
-  'Morgan Frost': { id: 0, name: 'Morgan Frost' },
+  mocked: { id: 8, name: 'Unknown (mocked in dev)' },
+  'Prof. dr. Sorcha Ní Dhubhghaill': { id: 9, name: 'Prof. dr. Sorcha Ní Dhubhghaill' },
+  woutervdub: { id: 132, name: 'Wouter van Wageningen' },
+  tangerineshark: { id: 13050, name: 'tangerineshark' },
+  Zee: { id: 13460, name: 'Zee' },
+  Natalia: { id: 19867, name: 'Natalia Sayang' },
+
+  // The old guard
+  'Sanne Kalkman': { id: 20343, name: 'Sanne Kalkman' },
+  bobgeorgethe3rd: { id: 20650, name: 'bobgeorgethe3rd' },
+  Tríona: { id: 22104, name: 'Tríona' },
+  starfetch: { id: 22708, name: 'starfetch' },
+  'Morgan Frost': { id: 23957, name: 'Morgan Frost' },
+  jackseye: { id: 25383, name: 'jackseye' },
+  'Nick Dower': { id: 26126, name: 'Nick Dower' },
+  jgfichte: { id: 26295, name: 'jgfichte' },
+  'anna-puk': { id: 26981, name: 'Anna Puk' },
+  'Enoch Riese': { id: 28119, name: 'Enoch Riese' },
+  benjamesben: { id: 28838, name: 'Benjamin' },
+  'Joe Schofield': { id: 28809, name: 'Joe Schofield' },
+  'Vili Sinervä': { id: 31336, name: 'Vili Sinervä' },
+  Thrunic: { id: 33070, name: 'Thrunic' },
+
+  // The new faces
+  'Paula Vidas': { id: 64919, name: 'Paula Vidas' },
+  'Jonathan Haas': { id: 71843, name: 'Jonathan Haas' },
+
+  /*
+   * For the folowwing authors, we don't have their FreeSewing ID
+   * so if they surface, we should try to get it.
+   * Then again, these are based on git contributions, so it's
+   * entirely possible that they don't have an account.
+   * They are all linked to the anonymous user (id 8)
+   */
+  'Annie Kao': { id: 8, name: 'Annie Kao' },
+  Bart: { id: 8, name: 'Bart' },
+  'James Bradbury': { id: 8, name: 'James Bradbury' },
+  'Glenn Matthews': { id: 8, name: 'Glenn Matthews' },
+  'Raphael Sizemore': { id: 8, name: 'Raphael Sizemore' },
+  mergerg: { id: 9, name: 'mergerg' },
+  'Darigov Research': { id: 8, name: 'Darigov Research' },
+  'Jeroen Hoek': { id: 8, name: 'Jeroen Hoek' },
+  chri5b: { id: 8, name: 'chri5b' },
+  'Ivo Bek': { id: 8, name: 'Ivo Bek' },
+  bijay_d: { id: 8, name: 'bijay_d' },
 }
 
 /*

@@ -17,7 +17,11 @@ import { DesignMeasurements } from './design-measurements.mjs'
 import { DesignOptions } from './design-options.mjs'
 import { MeasieImage } from 'shared/components/measurements/image.mjs'
 // Dev/Org jargon
-import { Term, TermList } from 'site/components/jargon.mjs'
+import { Term as SharedTerm, termList } from 'shared/components/jargon.mjs'
+import { jargon, site } from 'site/prebuild/jargon.mjs'
+
+export const Term = ({ children }) => <SharedTerm {...{ jargon, children, site }} />
+export const TermList = termList(jargon, site)
 
 export const components = (site = 'org', slug = []) => {
   const base = {
