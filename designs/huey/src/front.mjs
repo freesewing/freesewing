@@ -13,6 +13,7 @@ function draftHueyFront({
   complete,
   sa,
   options,
+  units,
   measurements,
   part,
 }) {
@@ -92,6 +93,18 @@ function draftHueyFront({
   /*
    * Annotations
    */
+  let zipperLength = store.get('frontNeckSeamLength') + points.cfNeck.dist(points.cfHem)
+  if (options.ribbing) {
+    zipperLength += store.get('ribbingHeight')
+  }
+
+  store.flag.note({
+    msg: 'huey:zipperLength',
+    replace: {
+      length: units(zipperLength),
+    },
+  })
+
   // Cutlist
   store.cutlist.setCut({ cut: 2, from: 'fabric' })
 
