@@ -1,14 +1,13 @@
 // Dependencies
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { nsMerge, getSearchParam } from 'shared/utils.mjs'
+import { nsMerge } from 'shared/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
-import { useState, useEffect } from 'react'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
-import { ns as setsNs } from 'shared/components/account/sets.mjs'
+import { ns as setsNs } from 'shared/components/account/bookmarks.mjs'
 
 // Translation namespaces used on this page
 const ns = nsMerge(setsNs, authNs, pageNs)
@@ -22,8 +21,8 @@ const DynamicAuthWrapper = dynamic(
   { ssr: false }
 )
 
-const DynamicSet = dynamic(
-  () => import('shared/components/account/sets.mjs').then((mod) => mod.Mset),
+const DynamicImporter = dynamic(
+  () => import('shared/components/account/import.mjs').then((mod) => mod.Importer),
   { ssr: false }
 )
 
@@ -33,25 +32,19 @@ const DynamicSet = dynamic(
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const SetPage = ({ page }) => {
+const AccountImporterPage = ({ page }) => {
   const { t } = useTranslation(ns)
-  const [id, setId] = useState()
-
-  useEffect(() => {
-    const newId = getSearchParam('id')
-    if (newId !== id) setId(newId)
-  }, [id])
 
   return (
-    <PageWrapper {...page} title={`${t('set')}: #${id}`}>
+    <PageWrapper {...page} title={t('import')}>
       <DynamicAuthWrapper>
-        <DynamicSet id={id} />
+        <DynamicImporter />
       </DynamicAuthWrapper>
     </PageWrapper>
   )
 }
 
-export default SetPage
+export default AccountImporterPage
 
 export async function getStaticProps({ locale }) {
   return {
@@ -59,7 +52,7 @@ export async function getStaticProps({ locale }) {
       ...(await serverSideTranslations(locale, ns)),
       page: {
         locale,
-        path: ['account', 'set'],
+        path: ['account', 'import'],
       },
     },
   }

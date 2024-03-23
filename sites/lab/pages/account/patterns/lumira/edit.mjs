@@ -1,7 +1,7 @@
 /*
  * This page is auto-generated. Do not edit it by hand.
  */
-import { Bee } from 'designs/bee/src/index.mjs'
+import { Lumira } from 'designs/lumira/src/index.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge, getSearchParam } from 'shared/utils.mjs'
@@ -18,13 +18,13 @@ import { WorkbenchLayout } from 'site/components/layouts/workbench.mjs'
 import { Loading } from 'shared/components/spinner.mjs'
 
 // Translation namespaces used on this page
-const ns = nsMerge('bee', wbNs, pageNs)
+const ns = nsMerge('lumira', wbNs, pageNs)
 
 const EditDesignComponent = ({ id, design, Design, settings }) => (
   <Workbench preload={{ settings }} saveAs={{ pattern: id }} {...{ design, Design }} />
 )
 
-const EditBeePage = ({ page }) => {
+const EditLumiraPage = ({ page }) => {
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
   const { t } = useTranslation(ns)
@@ -52,13 +52,13 @@ const EditBeePage = ({ page }) => {
 
   return (
     // prettier-ignore
-    <PageWrapper {...page} title="Bee" layout={pattern ? WorkbenchLayout : false} header={null}>
+    <PageWrapper {...page} title="Lumira" layout={pattern ? WorkbenchLayout : false} header={null}>
       {pattern ? (
         <EditDesignComponent
           id={pattern.id}
           settings={pattern.settings}
-          design="bee"
-          Design={Bee}
+          design="lumira"
+          Design={Lumira}
         />
       ) : (
         <div>
@@ -70,7 +70,7 @@ const EditBeePage = ({ page }) => {
   )
 }
 
-export default EditBeePage
+export default EditLumiraPage
 
 export async function getStaticProps({ locale }) {
   return {
@@ -78,8 +78,8 @@ export async function getStaticProps({ locale }) {
       ...(await serverSideTranslations(locale, ns)),
       page: {
         locale,
-        path: ['account', 'patterns', 'bee'],
-        title: 'Bee',
+        path: ['account', 'patterns', 'lumira'],
+        title: 'Lumira',
       },
     },
   }
