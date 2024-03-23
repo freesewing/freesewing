@@ -508,6 +508,15 @@ export const MsfIcon = (props) => (
   </IconWrapper>
 )
 
+/*
+ * NarrowIcon - Looks like two arrow pointing inwards
+ */
+export const NarrowIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M1.5 12 h 7 M 15.5 12 h 7 M 18 8 l -4 4 l 4 4 M 6 8 l 4 4 l -4 4" />
+  </IconWrapper>
+)
+
 export const NewMsetIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
@@ -817,6 +826,15 @@ export const VersionIcon = (props) => (
 export const WarningIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+  </IconWrapper>
+)
+
+/*
+ * WideIcon - Looks like two arrow pointing outwards
+ */
+export const WideIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M3 12 h 7 M 14 12 h 7 M 5.5 8 l -4 4 l 4 4 M 18.5 8 l 4 4 l -4 4" />
   </IconWrapper>
 )
 

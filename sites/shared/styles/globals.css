@@ -537,13 +537,10 @@ progress.progress-white::-moz-progress-bar {
 details {
   user-select: none;
 }
-details > summary > svg.details-toggle {
-  transform: rotate(90deg);
-  opacity: 0.4;
+details > summary > div > svg.details-toggle {
 }
-details[open] > summary > svg.details-toggle {
-  transform: rotate(-90deg);
-  opacity: 0.8;
+details[open] > summary > div > svg.details-toggle {
+  transform: rotate(90deg);
 }
 details[open] summary ~ * {
   animation: ease-opacity-t-b 0.5s ease;
