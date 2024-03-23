@@ -1,5 +1,5 @@
 ---
-author: 23386
+maker: "Ramoth"
 caption: "Ramoth Cathrin Corset ...with butterflies!"
 date: "2023-01-31"
 intro: "Here's a fantastic butterfly Cathrin corset made by Ramoth - their very first! They shared this about future alterations:"
