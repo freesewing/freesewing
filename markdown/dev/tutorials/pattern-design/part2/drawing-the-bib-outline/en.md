@@ -6,7 +6,7 @@ order: 88
 With our neck opening in place, let us draw the basic outline of our bib.
 
 <Example tutorial caption="Note how the neck opening is the same distance from the left, right, and top edge">
-```src/bib.mjs
+```design/src/bib.mjs
 function draftBib({
   Path,
   Point,
@@ -22,23 +22,41 @@ function draftBib({
   let target = (measurements.head * options.neckRatio) /4
   let delta
   do {
-  	points.right = new Point(tweak * measurements.head / 10, 0)
-  	points.bottom = new Point(0, tweak * measurements.head / 12)
-
-  	points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
-  	points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
+    points.right = new Point(
+      tweak * measurements.head / 10, 
+      0
+    )
+    points.bottom = new Point(
+      0, 
+      tweak * measurements.head / 12
+    )
+  
+    points.rightCp1 = points.right.shift(
+      90, 
+      points.bottom.dy(points.right) / 2
+    )
+    points.bottomCp2 = points.bottom.shift(
+      0, 
+      points.bottom.dx(points.right) / 2
+    )
 
   	paths.quarterNeck = new Path()
   	  .move(points.right)
-  	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
-      .hide() // Add this line
+  	  .curve(
+        points.rightCp1, 
+        points.bottomCp2, 
+        points.bottom
+      )
+      .hide()
 
   	delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
     else tweak = tweak * 1.02
   } while (Math.abs(delta) > 1)
 
-  // Construct the complete neck opening
+  /*
+   * Construct the complete neck opening
+   */
   points.rightCp2 = points.rightCp1.flipY()
   points.bottomCp1 = points.bottomCp2.flipX()
   points.left = points.right.flipX()
@@ -57,8 +75,10 @@ function draftBib({
     .close()
     .addClass('fabric')
 
-  // highlight-start
-  // Drawing the bib outline
+// highlight-start
+  /*
+   * Drawing the bib outline
+   */
   const width = measurements.head * options.widthRatio
   const length = measurements.head * options.lengthRatio
 
@@ -78,7 +98,7 @@ function draftBib({
     .line(points.topLeft)
     .close()
     .addClass('fabric')
-  // highlight-end
+// highlight-end
 
   return part
 }

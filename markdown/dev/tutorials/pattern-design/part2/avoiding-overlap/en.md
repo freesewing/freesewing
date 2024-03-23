@@ -52,7 +52,7 @@ Those names aren't very handy to remember. So I will rewrite this code a bit to
 we'll capture these return values from the `round` macros and create 
 easy-to-remember points from them:
 
-<Example tutorial caption="It looks the same as before, but not those macro points are accessible to us">
+<Example tutorial caption="It looks the same as before, but now those macro points are accessible to us">
 ```design/src/bib.mjs
 function draftBib({
   Path,
@@ -61,35 +61,55 @@ function draftBib({
   points,
   measurements,
   options,
-  // highlight-start
+// highlight-start
   utils,
-  // highlight-end
+// highlight-end
   macro,
   part,
 }) {
 
-  // Construct the quarter neck opening
+  /*
+   * Construct the quarter neck opening
+   */
   let tweak = 1
   let target = (measurements.head * options.neckRatio) /4
   let delta
   do {
-    points.right = new Point(tweak * measurements.head / 10, 0)
-    points.bottom = new Point(0, tweak * measurements.head / 12)
-
-    points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
-    points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
-
+    points.right = new Point(
+      tweak * measurements.head / 10, 
+      0
+    )
+    points.bottom = new Point(
+      0, 
+      tweak * measurements.head / 12
+    )
+  
+    points.rightCp1 = points.right.shift(
+      90, 
+      points.bottom.dy(points.right) / 2
+    )
+    points.bottomCp2 = points.bottom.shift(
+      0, 
+      points.bottom.dx(points.right) / 2
+    )
+  
     paths.quarterNeck = new Path()
       .move(points.right)
-      .curve(points.rightCp1, points.bottomCp2, points.bottom)
-      .hide() // Add this line
+      .curve(
+        points.rightCp1, 
+        points.bottomCp2, 
+        points.bottom
+      )
+      .hide()
 
     delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
     else tweak = tweak * 1.02
   } while (Math.abs(delta) > 1)
 
-  // Construct the complete neck opening
+  /*
+   * Construct the complete neck opening
+   */
   points.rightCp2 = points.rightCp1.flipY()
   points.bottomCp1 = points.bottomCp2.flipX()
   points.left = points.right.flipX()
@@ -108,7 +128,9 @@ function draftBib({
     .close()
     .addClass('fabric')
 
-  // Drawing the bib outline
+  /*
+   * Drawing the bib outline
+   */
   const width = measurements.head * options.widthRatio
   const length = measurements.head * options.lengthRatio
 
@@ -120,16 +142,9 @@ function draftBib({
   points.bottomLeft = points.topLeft.shift(-90, length)
   points.bottomRight = points.topRight.shift(-90, length)
 
-  paths.rect = new Path()
-    .move(points.topLeft)
-    .line(points.bottomLeft)
-    .line(points.bottomRight)
-    .line(points.topRight)
-    .line(points.topLeft)
-    .close()
-    .addClass('fabric')
-
-  // Shape the straps
+  /*
+   * Shape the straps
+   */
   points.edgeLeft = new Point(points.topLeft.x, points.left.y)
   points.edgeRight = new Point(points.topRight.x, points.right.y)
   points.edgeTop = new Point(0, points.topLeft.y)
@@ -179,7 +194,10 @@ function draftBib({
     }
   }
   // highlight-end
-
+  
+   /*
+   * Now, adapt our `rect` path so it's no longer a rectangle:
+   */
   paths.rect = new Path()
     .move(points.edgeTop)
     .curve(points.edgeTopLeftCp, points.edgeLeftCp, points.edgeLeft)
@@ -210,28 +228,48 @@ function draftBib({
   part,
 }) {
 
-  // Construct the quarter neck opening
+  /*
+   * Construct the quarter neck opening
+   */
   let tweak = 1
   let target = (measurements.head * options.neckRatio) /4
   let delta
   do {
-    points.right = new Point(tweak * measurements.head / 10, 0)
-    points.bottom = new Point(0, tweak * measurements.head / 12)
-
-    points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
-    points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
-
+    points.right = new Point(
+      tweak * measurements.head / 10, 
+      0
+    )
+    points.bottom = new Point(
+      0, 
+      tweak * measurements.head / 12
+    )
+  
+    points.rightCp1 = points.right.shift(
+      90, 
+      points.bottom.dy(points.right) / 2
+    )
+    points.bottomCp2 = points.bottom.shift(
+      0, 
+      points.bottom.dx(points.right) / 2
+    )
+  
     paths.quarterNeck = new Path()
       .move(points.right)
-      .curve(points.rightCp1, points.bottomCp2, points.bottom)
-      .hide() // Add this line
+      .curve(
+        points.rightCp1, 
+        points.bottomCp2, 
+        points.bottom
+      )
+      .hide()
 
-    delta = paths.quarterNeck.length() - target
-    if (delta > 0) tweak = tweak * 0.99
-    else tweak = tweak * 1.02
-  } while (Math.abs(delta) > 1)
-
-  // Construct the complete neck opening
+      delta = paths.quarterNeck.length() - target
+      if (delta > 0) tweak = tweak * 0.99
+      else tweak = tweak * 1.02
+    } while (Math.abs(delta) > 1)
+  
+  /*
+   * Construct the complete neck opening
+   */
   points.rightCp2 = points.rightCp1.flipY()
   points.bottomCp1 = points.bottomCp2.flipX()
   points.left = points.right.flipX()
@@ -262,16 +300,9 @@ function draftBib({
   points.bottomLeft = points.topLeft.shift(-90, length)
   points.bottomRight = points.topRight.shift(-90, length)
 
-  paths.rect = new Path()
-    .move(points.topLeft)
-    .line(points.bottomLeft)
-    .line(points.bottomRight)
-    .line(points.topRight)
-    .line(points.topLeft)
-    .close()
-    .addClass('fabric')
-
-  // Shape the straps
+  /*
+   * Shape the straps
+   */
   points.edgeLeft = new Point(points.topLeft.x, points.left.y)
   points.edgeRight = new Point(points.topRight.x, points.right.y)
   points.edgeTop = new Point(0, points.topLeft.y)
@@ -354,9 +385,7 @@ function draftBib({
   while (points.tipRightBottomStart.x > -1) {
     for (const p of rotateThese) points[p] = points[p].rotate(1, points.edgeLeft)
   }
-  // highlight-end
 
-  // highlight-start
   /*
    * This is not needed
    * we are merely adding it to show
@@ -379,11 +408,8 @@ function draftBib({
     classes: 'contrast dotted',
   })
   // highlight-end
-
-  // highlight-start
   /*
-   * Always draw your path at the end
-   * after you've manipulated your points
+   * Now, adapt our `rect` path so it's no longer a rectangle:
    */
   paths.rect = new Path()
     .move(points.edgeTop)
@@ -393,7 +419,6 @@ function draftBib({
     .line(points.edgeRight)
     .curve(points.edgeRightCp, points.edgeTopRightCp, points.edgeTop)
     .close()
-  // highlight-end
 
   return part
 }
