@@ -206,6 +206,8 @@ customBookmark: Custom Bookmarks
 yourBookmarks: Your bookmarks
 bookmarkThisThing: Bookmark this { thing }
 page: Page
+doc: Documentation
+pattern: Pattern
 
 # sets
 set: Measurements Set
@@ -270,7 +272,6 @@ unitsMustSave: "Note: You must save after changing Units to have the change take
 makePublic: Make public
 makePrivate: Make private
 
-pattern: Pattern
 patternNew: Generate a new pattern
 patternNewInfo: Pick a design, add your measurements set, and we'll generate a bespoke sewing pattern for you.
 
