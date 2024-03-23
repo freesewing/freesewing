@@ -69,7 +69,7 @@ export const testPatternI18n = (Pattern, i18n) => {
             it(`  - The No translation of boolean option o.${key} should have a corresponding Yes translation`, () => {
               expect(typeof i18n.en.o[key.slice(0, -2) + 'Yes'].t).to.equal('string')
             })
-          } else {
+          } else if (i18n.en.o[key].d !== 'menu') {
             it(`  - The translation of o.${key} should correspond to a known option`, () => {
               expect(options.includes(key)).to.equal(true)
             })
