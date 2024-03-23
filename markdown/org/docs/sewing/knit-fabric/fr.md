@@ -1,5 +1,6 @@
 ---
-title: Tissu Maille
+title: Tissu Tricoté
+jargon: vrai
 ---
 
 ![Un morceau de jersey (French Terry) gris, un tissu maille (tricoté)](fabric.jpg)

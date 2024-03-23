@@ -19,30 +19,52 @@ function draftBib({
   part,
 }) {
 
-  // Construct the quarter neck opening
-  // highlight-start
+  /*
+   * Construct the quarter neck opening
+   */
+// highlight-start
   let tweak = 1
   let target = (measurements.head * options.neckRatio) /4
   let delta
   do {
-  // highlight-end
-    points.right = new Point(tweak * measurements.head / 10, 0)
-    points.bottom = new Point(0, tweak * measurements.head / 12)
+// highlight-end
+    points.right = new Point(
+// highlight-start
+      tweak * measurements.head / 10, 
+// highlight-end
+      0
+    )
+    points.bottom = new Point(
+      0, 
+// highlight-start
+      tweak * measurements.head / 12
+// highlight-end
+    )
 
-    points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
-    points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
+    points.rightCp1 = points.right.shift(
+      90, 
+      points.bottom.dy(points.right) / 2
+    )
+    points.bottomCp2 = points.bottom.shift(
+      0, 
+      points.bottom.dx(points.right) / 2
+    )
 
     paths.quarterNeck = new Path()
       .move(points.right)
-      .curve(points.rightCp1, points.bottomCp2, points.bottom)
+      .curve(
+        points.rightCp1, 
+        points.bottomCp2, 
+        points.bottom
+      )
 
-  // highlight-start
+
+// highlight-start
     delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
     else tweak = tweak * 1.02
   } while (Math.abs(delta) > 1)
-  // highlight-end
-
+// highlight-end
   return part
 }
 ```
@@ -71,4 +93,4 @@ We keep on doing this until `Math.abs(delta)` is less than 1. Meaning that we
 are within 1 mm of our target value.
 
 Now that we're happy with the length of our quarter neck opening, let's
-construct the entire neck opening.
+complete the entire neck opening.

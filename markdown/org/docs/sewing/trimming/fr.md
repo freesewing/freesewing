@@ -1,5 +1,6 @@
 ---
 title: Dégarnir
+jargon: vrai
 ---
 
 ![Dégarnissage en cours](trimming.jpg)
