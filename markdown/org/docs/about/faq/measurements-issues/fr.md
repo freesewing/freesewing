@@ -20,21 +20,21 @@ Nous avons remarqué que certaines mesures ont tendance à poser des problèmes.
 
 #### De la taille à l'aisselle
 
-La mesure [de la taille à l'aisselle] (https\://freesewing.org/docs/measurements/waisttoarmpit) est une mesure verticale droite, et non curviligne (qui suit la courbe du corps). It should be at the bottom edge of your armpit, only as high as a shirt would be comfortable sitting (not digging in).
+La mesure [de la taille à l'aisselle] (https\://freesewing.org/docs/measurements/waisttoarmpit) est une mesure verticale droite, et non curviligne (qui suit la courbe du corps). Il doit se situer au niveau du bord inférieur de ton aisselle, pas plus haut que le max qu'une chemise peux l'être (sans s'enfoncer).
 
-![Waist to armpit](waisttoarmpit.jpg)
+![De la taille à l'aisselle](waisttoarmpit.jpg)
 
-#### High point shoulder (HPS)
+#### Point Haut de l'Épaule (ou PHE)
 
-[HPS](https://freesewing.org/docs/sewing/hps), which is used in several measurements, is one of the harder spots to get perfect.
+[HPS](https://freesewing.org/docs/sewing/hps), qui est utilisé dans plusieurs mesures, est l'un des points les plus difficiles à perfectionner.
 
-Here are two approaches.
+Voici deux approches.
 
-One way is to take a pencil, pen, or small dowel to find the point where your neck meets your shoulder, as well as the highest point as that's where the pencil or dowel will touch the shoulder. If you use that method, you ideally want the tool you're using to be parallel with the floor so you can find that high point.
+Une façon de procéder consiste à prendre un crayon, un stylo ou une petite cheville pour trouver le point où ton cou rencontre ton épaule, ainsi que le point le plus élevé car c'est là que le crayon ou la cheville touchera l'épaule. Si tu utilises cette méthode, l'idéal est que l'outil que tu utilises soit parallèle au sol pour que tu puisses trouver ce point haut.
 
-![High point shoulder with dowel](hps2.jpg)
+[Épaulement en hauteur avec cheville](hps2.jpg)
 
-Another way is with a ribbon. Take a longer ribbon and put it over your neck/shoulder like a cross body bag. It helps to be able to feel where the neck ends and the shoulder begins with a small amount of pressure on the ribbon. You'll need to determine where the shoulder seam should sit, but the ribbon will tell you where the HPS should sit once you have the shoulder seam determined as it will be where the two lines cross.
+Tu peux aussi utiliser un ruban. Prends un ruban plus long et mets-le autour de ton cou/de tes épaules comme une sacoche. It helps to be able to feel where the neck ends and the shoulder begins with a small amount of pressure on the ribbon. You'll need to determine where the shoulder seam should sit, but the ribbon will tell you where the HPS should sit once you have the shoulder seam determined as it will be where the two lines cross.
 
 ![High point shoulder with riibbon](hps.jpg)
 
