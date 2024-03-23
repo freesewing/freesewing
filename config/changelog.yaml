@@ -22,8 +22,8 @@ Unreleased:
   Fixed:
     huey:
       - Fixed an issue where ribbing height would distort the pocket under certain conditions. Fixes #6238
-      - Adding missing translation for rubbing optino
-      - Hiden unused ribbing parts when ribbing option is disabled
+      - Adding missing translation for rubbing option
+      - Hide unused ribbing parts when ribbing option is disabled
     hugo:
       - Add missing dimension id attributes
     uma:
