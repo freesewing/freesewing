@@ -206,6 +206,8 @@ customBookmark: Custom Bookmarks
 yourBookmarks: Your bookmarks
 bookmarkThisThing: Bookmark this { thing }
 page: Page
+doc: Documentation
+pattern: Pattern
 
 # sets
 set: Measurements Set
