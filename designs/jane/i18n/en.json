@@ -1,7 +1,46 @@
 {
   "t": "Jane",
-  "d": "A FreeSewing pattern that needs a description",
-  "p": { },
+  "d": "A FreeSewing pattern for a 1790s shift",
+  "p": {
+    "body": "Body", 
+    "sleeve": "Sleeve", 
+    "gusset": "Gusset"
+   },
   "s": { },
-  "o": { }
+  "o": {
+    "bodyEase": {
+      "t": "Body Ease",
+      "d": "Controls ease in the width of the body"
+    },
+    "neckDepthFront": {
+      "t": "Neckline Depth Front",
+      "d": "Controls depth of the front neckline"
+    },
+    "neckDepthBack": {
+      "t": "Neckline Depth Back",
+      "d": "Controls depth of the back neckline"
+    },
+    "neckWidth": {
+      "t": "Neckline Width",
+      "d": "Controls the width of the neckline"
+    },
+    "shiftLength": {
+      "t": "Shift Length",
+      "d": "Controls the length of the shift"
+    },
+    "gussetSize": {
+      "t": "Gusset Size",
+      "d": "Controls the size of the gusset"
+    },
+    "bicepEase": {
+      "t": "Bicep Ease",
+      "d": "Controls the ease in the sleeve"
+    },
+    "sleeveBonus": {
+      "t": "Sleeve Length",
+      "d": "Controls the length of the sleeve"
+    }
+  
+  
+}
 }
