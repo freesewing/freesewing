@@ -11,8 +11,6 @@ export const gusset = {
     Path,
     points,
     paths,
-    Snippet,
-    snippets,
     complete,
     sa,
     paperless,
