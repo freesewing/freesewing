@@ -1,5 +1,6 @@
 ---
 title: cjs
+jargon: true
 ---
 
 **cjs** stands for **CommonJS**. It is a module system for JavaScript that was

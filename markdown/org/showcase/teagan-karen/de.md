@@ -6,6 +6,7 @@ intro: "Karen hat diese Version des Teagan-T-Shirts für große Oberweite entwor
 title: "Teagan T-Shirt von Karen"
 designs:
   - "teagan"
+author: 13050
 ---
 
 Karen hat diese Version des [Teagan-T-Shirts](/designs/teagan/) für eine hohe Oberweite entworfen. Das ist eine von mehreren Möglichkeiten, das Teagan-T-Shirt genau auf dich abzustimmen!

@@ -13,6 +13,7 @@ function draftHueyFront({
   complete,
   sa,
   options,
+  units,
   measurements,
   part,
 }) {
@@ -29,14 +30,14 @@ function draftHueyFront({
   // Shape side seam
   points.hips.x = (measurements.hips * (1 + options.hipsEase)) / 4
   points.hem.x = points.hips.x
-  points.hemCp2 = new Point(points.hips.x, points.cfWaist.y)
+  points.hemCp2 = new Point(points.hips.x, Math.min(points.cfWaist.y, points.hem.y))
 
   // Front pocket
   points.pocketCfTop = points.cfNeck.shiftFractionTowards(points.cfHem, 1 - options.pocketHeight)
   points.pocketTopRight = points.pocketCfTop.shift(0, points.hem.x * options.pocketWidth)
   points.pocketTip = new Point(
     points.pocketTopRight.x * 1.2,
-    points.cfWaist.y + points.cfWaist.dy(points.hem) * 0.7
+    points.pocketTopRight.y + (points.hem.y - points.pocketTopRight.y) * 0.9
   )
   points.pocketHem = new Point(
     points.pocketTopRight.x + points.pocketTopRight.dx(points.pocketTip) / 2,
@@ -92,6 +93,20 @@ function draftHueyFront({
   /*
    * Annotations
    */
+  store.flag.note({
+    msg: 'huey:zipperLength',
+    replace: {
+      /*
+       * Zipper length is the hood part, plus center front + ribbing (if there is any)
+       */
+      length: units(
+        measurements.head * options.hoodClosure +
+          points.cfNeck.dist(points.cfHem) +
+          (options.ribbing ? store.get('ribbingHeight') : 0)
+      ),
+    },
+  })
+
   // Cutlist
   store.cutlist.setCut({ cut: 2, from: 'fabric' })
 

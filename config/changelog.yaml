@@ -12,12 +12,18 @@ Unreleased:
       - Always load plugin-bust due to its changes in how it handle conditionality.
     tamiko:
       - Always load plugin-bust due to its changes in how it handle conditionality.
+    wahid:
+      - Add a warning when waist and hip reduction are both zero, so no back dart is required
 
   Deprecated:
     plugin-bust:
       - The `withCondition` named  export is deprecated and will always return true.
 
   Fixed:
+    huey:
+      - Fixed an issue where ribbing height would distort the pocket under certain conditions. Fixes #6238
+      - Adding missing translation for ribbing option
+      - Hide unused ribbing parts when ribbing option is disabled
     hugo:
       - Add missing dimension id attributes
     uma:
@@ -157,8 +163,8 @@ Unreleased:
   date: 2023-09-30
   Changed:
     all:
-      - All FreeSewing pacakges are now ESM only.
-      - All FreeSewing pacakges now use named exports.
+      - All FreeSewing packages are now ESM only.
+      - All FreeSewing packages now use named exports.
       - Dropped support for NodeJS 14. NodeJS 18 (LTS/hydrogen) or more recent is now required.
 
   Removed:

@@ -28,7 +28,7 @@ function draftHueyBack({
   // Shape side seam
   points.hips.x = (measurements.hips * (1 + options.hipsEase)) / 4
   points.hem.x = points.hips.x
-  points.hemCp2 = new Point(points.hips.x, points.cbWaist.y)
+  points.hemCp2 = new Point(points.hips.x, Math.min(points.cbWaist.y, points.hem.y))
 
   // Store length of the neck seam
   store.set(

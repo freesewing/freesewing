@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "A fashionable Hi"
 date: "2023-05-03"
 intro: "The color scheme, embroidered eyes, and tiny teeth are some of the details on this mini-Hi."

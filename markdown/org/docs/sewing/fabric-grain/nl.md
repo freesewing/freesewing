@@ -1,5 +1,6 @@
 ---
 title: Draadrichting
+jargon: true
 ---
 
 ![De draadrichting loopt parallel met de zelfkant](fabric-grain.jpg)

@@ -1,5 +1,6 @@
 ---
 title: esm
+jargon: true
 ---
 
 **esm** stands for **ECMAScript Modules** and is the official module system of

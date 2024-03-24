@@ -187,7 +187,7 @@ function draftLilyFront({
   //paths.seam1 = drawPath().attr('class', 'dashed lining')
 
   if (options.fitCrossSeam && options.fitCrossSeamFront) {
-    const delta = crotchSeamDelta()
+    let delta = crotchSeamDelta()
     const rotate = ['waistIn', 'waistOut', 'cfWaist']
     let run = 0
     do {

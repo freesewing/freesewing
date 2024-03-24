@@ -6,6 +6,7 @@ intro: "Deze Charlies zijn gemaakt in een paarse stretch keperstof, met een maxi
 title: "Paarse Charlies"
 designs:
   - "Charlie"
+author: 13050
 ---
 
 

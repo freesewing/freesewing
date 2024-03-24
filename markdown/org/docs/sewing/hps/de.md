@@ -1,5 +1,6 @@
 ---
 title: Hochpunkt Schulter (HPS)
+jargon: stimmt
 ---
 
 Der _Hochpunkt der Schulter_ oder _HPS_ wird als Basis für mehrere vertikale Messungen verwendet.

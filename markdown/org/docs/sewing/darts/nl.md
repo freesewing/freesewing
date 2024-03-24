@@ -1,5 +1,6 @@
 ---
 title: Nepen
+jargon: true
 ---
 
 ![Bustenepen op een blouse](dart.jpg)

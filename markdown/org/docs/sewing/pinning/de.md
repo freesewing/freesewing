@@ -1,5 +1,6 @@
 ---
 title: Stecken
+jargon: stimmt
 ---
 
 ![Stecknadeln sind Teil der Grundausstattung des Nähzubehörs](sewing-pins.jpg)

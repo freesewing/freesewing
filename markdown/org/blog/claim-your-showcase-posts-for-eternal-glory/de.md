@@ -30,7 +30,7 @@ This way, given some time and collective effort, we hopefully will soon enough h
 
 ##### What is my FreeSewing ID?
 
-You can find your FreeSewing ID on [your account page](/account) or go to [FreeSewing.org/id](/id). 
+You can find your FreeSewing ID on [your account page](/account) or go to [FreeSewing.org/id](/id).
 
 </Tip>
 

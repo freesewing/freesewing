@@ -6,6 +6,7 @@ intro: "Hé ! TangerineShark, utilisatrice de FreeSewing, est ici ! J'ai modifi�
 title: "Aaron modifié en robe"
 designs:
   - "aaron"
+author: 13050
 ---
 
 Hé ! TangerineShark, utilisatrice de FreeSewing, est ici ! J'ai modifié ce Aaron A-shirt en le rallongeant pour en faire une robe.

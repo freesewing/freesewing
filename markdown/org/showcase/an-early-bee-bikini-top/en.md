@@ -1,5 +1,5 @@
 ---
-maker: "unknown"
+author: 8
 caption: "An early Bee bikini top"
 date: "2021-10-18"
 intro: "A FreeSewing maker made this Bee bikini top. She used the default settings and reported a great fit with no gaping/coverage issues, but mentioned that she typically does not need a lot of support."

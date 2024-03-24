@@ -6,6 +6,7 @@ intro: ""
 designs:
   - onyx
 maker: Thrunic
+author: 33070
 ---
 
 Een Onyx eendelig badpak/unisuit met korte mouwen en korte pijpen. Het is geweldig voor een zomerse stranddag, het ziet er schattig en stijlvol uit terwijl het meer bescheidenheid en zonbedekking biedt dan traditionele zwemkleding.

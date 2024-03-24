@@ -2,7 +2,7 @@
 title: "Armkugel Q3 Spreizung nach oben"
 ---
 
-![The upward spread in the third quadrant of the sleevecap](./sleevecapq3spread1.svg)
+![Die Aufwärtsverteilung im dritten Quadranten der Ärmel](./sleevecapq3spread1.svg)
 
 Diese Option steuert die Aufwärtsverteilung im dritten Quadranten der Ärmel.
 

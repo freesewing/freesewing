@@ -6,6 +6,7 @@ intro: "Eine andere Version des Teagan-T-Shirts von Karen. Dieses Mal aus schwar
 title: "Teagan T-Shirt mit geschlitztem Saum von Karen"
 designs:
   - "teagan"
+author: 13050
 ---
 
 Eine andere Version von [das Teagan-T-Shirt](/designs/teagan/) von Karen. Dieses Mal aus schwarzem Spitzenstoff und mit einem zusätzlichen Wellenschliff am Saum.

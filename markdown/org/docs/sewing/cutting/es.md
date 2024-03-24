@@ -1,6 +1,7 @@
 ---
 layout: en ecol
 title: Corte
+jargon: true
 ---
 
 ![Cortando camisetas](cutting.jpg)

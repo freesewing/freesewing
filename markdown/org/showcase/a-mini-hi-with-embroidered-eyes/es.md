@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "Una Hi de moda"
 date: "2023-05-03"
 intro: "La combinación de colores, los ojos bordados y los diminutos dientes son algunos de los detalles de esta mini-Hi."

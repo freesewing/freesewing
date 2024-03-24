@@ -1,5 +1,6 @@
 ---
 title: Bolsillos de doble soldadura
+jargon: true
 ---
 
 ## Vídeo

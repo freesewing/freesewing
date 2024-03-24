@@ -6,6 +6,7 @@ intro: ""
 designs:
   - онікс
 maker: Трунік.
+author: 33070
 ---
 
 This is my favorite Onyx so far.

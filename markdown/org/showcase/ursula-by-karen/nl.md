@@ -6,6 +6,7 @@ intro: "Een vrolijk onderbroekje van Ursula"
 title: "Een vrolijk onderbroekje van Ursula"
 designs:
   - "ursula"
+author: 13050
 ---
 
 Karen maakte van een restje rekbare stof dit leuke paar Ursula's! Ze deelde mee dat ze op basis van de testresultaten de kruisjes bij de volgende versie smaller zal maken en de taille iets lager zal maken. We vinden het "Jazzercise effect" op het testpaar erg leuk :)

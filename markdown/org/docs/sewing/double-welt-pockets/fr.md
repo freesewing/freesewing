@@ -1,5 +1,6 @@
 ---
 title: Poche passepoilée
+jargon: vrai
 ---
 
 ## Vidéo

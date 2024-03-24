@@ -1,0 +1,82 @@
+{
+  "name": "@freesewing/org",
+  "version": "3.2.0",
+  "description": "FreeSewing website",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
+  },
+  "scripts": {
+    "build": "next build",
+    "cibuild": "yarn build",
+    "clean": "rimraf prebuild/* && rimraf public/locales/*/* && rimraf public/feeds/* && rimraf ../shared/prebuild/data/*",
+    "dev": "next dev -p 8000",
+    "develop": "next dev -p 8000",
+    "i18n": "SITE=org node --conditions=internal ../shared/prebuild/i18n-only.mjs",
+    "lint": "next lint",
+    "prebuild": "node --conditions=internal --experimental-json-modules ./prebuild.mjs",
+    "start": "yarn prebuild && yarn dev",
+    "wbuild": "next build",
+    "prewbuild": "node --conditions=internal --experimental-json-modules ./prebuild.mjs"
+  },
+  "peerDependencies": {},
+  "dependencies": {
+    "@bugsnag/js": "7.22.4",
+    "@bugsnag/plugin-react": "7.19.0",
+    "@mdx-js/mdx": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
+    "@mdx-js/runtime": "2.0.0-next.9",
+    "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
+    "@tailwindcss/typography": "0.5.10",
+    "algoliasearch": "4.22.1",
+    "react-copy-to-clipboard": "5.1.0",
+    "daisyui": "4.7.3",
+    "echarts": "5.5.0",
+    "echarts-for-react": "3.0.2",
+    "jotai": "2.7.1",
+    "jotai-location": "0.5.4",
+    "lodash.get": "4.4.2",
+    "lodash.orderby": "4.6.0",
+    "lodash.set": "4.3.2",
+    "luxon": "3.4.4",
+    "next": "14.1.4",
+    "ora": "8.0.1",
+    "react-dropzone": "14.2.3",
+    "react-hotkeys-hook": "4.5.0",
+    "react-instantsearch-dom": "6.40.4",
+    "react-swipeable": "7.0.1",
+    "react-timeago": "7.2.0",
+    "rehype-autolink-headings": "7.1.0",
+    "rehype-highlight": "7.0.0",
+    "rehype-sanitize": "6.0.0",
+    "rehype-slug": "6.0.0",
+    "rehype-stringify": "10.0.0",
+    "remark": "15.0.1",
+    "remark-copy-linked-files": "git+https://git@github.com/joostdecock/remark-copy-linked-files",
+    "remark-gfm": "4.0.0",
+    "remark-mdx-frontmatter": "4.0.0",
+    "strip-markdown": "6.0.0",
+    "use-local-storage-state": "19.1.0",
+    "yaml-loader": "0.8.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.19",
+    "js-yaml": "4.1.0",
+    "postcss": "8.4.38",
+    "remark-extract-frontmatter": "3.2.0",
+    "remark-mdx-frontmatter": "4.0.0",
+    "tailwindcss": "3.4.1",
+    "yaml-loader": "0.8.1"
+  },
+  "engines": {
+    "node": ">= 18.17.0 <22"
+  },
+  "private": true
+}

@@ -4,7 +4,7 @@ title: utils.beamIntersectsCurve()
 
 The `utils.beamIntersectsCurve()` function finds the intersection between an endless
 line and a curve described by points
-`start`, `cp1`, `cp2, and `end\`.
+`start`, `cp1`, `cp2`, and `end`.
 
 <Warning>
 

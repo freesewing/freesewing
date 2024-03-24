@@ -1,6 +1,6 @@
 logs: Logs
 error: Error messages
-warning: Warning messages
+warn: Warning messages
 info: Info messages
 debug: Debug messages
 seeLinkOrClick: See { link } or { click }

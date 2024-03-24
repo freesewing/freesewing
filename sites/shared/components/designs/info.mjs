@@ -59,7 +59,7 @@ const OptionGroup = ({ id, group, t, design }) => (
   </li>
 )
 export const SimpleOptionsList = ({ options, t, design }) => {
-  const structure = optionsMenuStructure(options, {})
+  const structure = optionsMenuStructure(options, {}, true)
   const output = []
   for (const [key, entry] of Object.entries(structure)) {
     const shared = { key, t, design, id: key }

@@ -7,6 +7,7 @@ title: "Tropische pacos"
 designs:
   - "paco"
   - "teagan"
+author: 13050
 ---
 
 De Paco's zijn gemaakt van rayon challis, met de standaardopties (en de stijging aan de voorkant iets verlaagd). Ze zijn hier gemodelleerd met een bonus-Teagan T-shirt.

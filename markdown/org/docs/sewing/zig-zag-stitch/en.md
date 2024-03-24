@@ -1,5 +1,6 @@
 ---
 title: Zig-zag stitch
+jargon: true
 ---
 
 ![A zig-zag stitch is used to prevent the SA of the denim from fraying](zig-zag.jpg)

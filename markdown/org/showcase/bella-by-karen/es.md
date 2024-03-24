@@ -6,6 +6,7 @@ intro: "Karen hizo esta fabulosa camiseta bas√°ndose en el bloque Bella. Utiliz√
 title: "Bella por Karen"
 designs:
   - "bella"
+author: 13050
 ---
 
 

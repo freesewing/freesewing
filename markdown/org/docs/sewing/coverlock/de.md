@@ -1,5 +1,6 @@
 ---
 title: Coverlock
+jargon: stimmt
 ---
 
 ![Ein Saum eines T-Shirts, hergestellt mit einer Coverlock-Maschine](coverlock-hem.jpg)
