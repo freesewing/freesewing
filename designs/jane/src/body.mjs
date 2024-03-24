@@ -1,7 +1,5 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 export const body = {
   name: 'jane.body',
-  plugins: [pluginBundle],
   measurements: [
     'chest',
     'hips',

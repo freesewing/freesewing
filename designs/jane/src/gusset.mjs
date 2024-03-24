@@ -1,7 +1,5 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 export const gusset = {
   name: 'jane.gusset',
-  plugins: [pluginBundle],
   measurements: ['biceps', 'shoulderToElbow'],
   options: {
     gussetSize: { pct: 44, min: 44, max: 50, menu: 'fit' },

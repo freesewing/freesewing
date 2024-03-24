@@ -1,7 +1,5 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 export const sleeve = {
   name: 'jane.sleeve',
-  plugins: [pluginBundle],
   measurements: ['biceps', 'shoulderToElbow'],
   options: {
     bicepsEase: { pct: 18, min: 18, max: 51, menu: 'fit' },
