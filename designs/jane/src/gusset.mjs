@@ -53,12 +53,14 @@ export const gusset = {
     // Paperless?
     if (paperless) {
       macro('hd', {
+        id: 'gussetWidth',
         from: points.gussetLeft,
         to: points.gussetRight,
         x: points.gussetLeft.x + sa + 30,
       })
 
       macro('vd', {
+        id: 'gussetLength',
         from: points.gussetLeft,
         to: points.gussetBottomLeft,
         x: points.gussetLeft.x + sa + 30,

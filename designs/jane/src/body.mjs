@@ -173,42 +173,49 @@ export const body = {
     // Paperless?
     if (paperless) {
       macro('hd', {
+        id: 'bodyWidth',
         from: points.topLeft,
         to: points.topRight,
         y: points.topLeft.y + sa + 10,
       })
 
       macro('vd', {
+        id: 'bodyLength',
         from: points.topLeft,
         to: points.bottomLeft,
         x: points.topLeft.y + sa + 30,
       })
 
       macro('vd', {
+        id: 'goreLength',
         from: points.topLeft,
         to: points.gorestartLeft,
         x: points.topLeft.y + sa + 40,
       })
 
       macro('hd', {
+        id: 'goreWidth',
         from: points.rightShoulder,
         to: points.topRight,
         y: points.rightShoulder.y + sa + 20,
       })
 
       macro('vd', {
+        id: 'backNeckDepth',
         from: points.middle,
         to: points.neckBack,
         x: points.middle.x + sa + 15,
       })
 
       macro('vd', {
+        id: 'frontNeckDepth',
         from: points.middle,
         to: points.neckFront,
         x: points.middle.x + sa + 35,
       })
 
       macro('hd', {
+        id: 'neckWidth',
         from: points.neckLeft,
         to: points.middle,
         y: points.leftShoulder.y + sa + 30,

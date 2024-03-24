@@ -70,12 +70,14 @@ export const sleeve = {
     // Paperless?
     if (paperless) {
       macro('vd', {
+        id: 'sleeveLength',
         from: points.sleeveLeft,
         to: points.sleeveBottomLeft,
         x: points.sleeveLeft.x + sa + 30,
       })
 
       macro('hd', {
+        id: 'sleeveWidth',
         from: points.sleeveLeft,
         to: points.sleeveRight,
         y: points.sleeveLeft.y + sa + 30,
