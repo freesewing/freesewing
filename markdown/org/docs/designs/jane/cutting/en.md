@@ -7,12 +7,12 @@ The best way to get a truly straight line for all the straight seams in Jane is 
 There are two different ways to cut Jane, with or without a shoulder seam. The pattern doesn’t include a back and front to save on paper.
 
 If you are cutting Jane with a shoulder seam you:
-- cut one body part with front neckline
-- cut one body part with back neckline
+- cut **one body** part with front neckline
+- cut **one body** part with back neckline
 - cut gore line in front and back part
 - repeat on the other side of the body
-- cut two sleeve parts 
-- cut two sleeve gusset parts 
+- cut **two sleeve** parts 
+- cut **two sleeve** gusset parts 
 
 If you want to cut Jane without a shoulder seam you:
 - cut on fold as indicated on the pattern
@@ -20,8 +20,8 @@ If you want to cut Jane without a shoulder seam you:
 - cut the neckline
 - with body folded at the cut on fold line, cut side gores 
 - repeat on the other side of the body
-- cut two sleeve parts 
-- cut two sleeve gusset parts 
+- cut **two sleeve** parts 
+- cut **two sleeve** gusset parts 
 
 Cutting out without a pattern 
 In the past shifts were generally cut without a paper pattern. If you want to cut without a pattern as well you can use the following instructions: 
