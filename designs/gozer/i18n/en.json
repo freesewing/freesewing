@@ -4,6 +4,9 @@
   "p": {
     "ghost": "ghost"
   },
-  "s": { },
+  "s": {
+  "partialPart.t": "The main part is only partially shown.",
+  "partialPart.d": "The actual part is a circle with a radius of {{{ radius }}}."
+  },
   "o": { }
 }
