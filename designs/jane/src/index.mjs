@@ -1,16 +1,13 @@
-//
-
 import { Design } from '@freesewing/core'
-import { i18n } from '../i18n/index.mjs'
 import { data } from '../data.mjs'
-// Parts
-import { box } from './box.mjs'
+import { body } from './body.mjs'
+import { sleeve } from './sleeve.mjs'
+import { gusset } from './gusset.mjs'
 
 // Create new design
 const Jane = new Design({
   data,
-  parts: [box],
+  parts: [body, sleeve, gusset],
 })
 
-// Named exports
-export { box, i18n, Jane }
+export { body, sleeve, gusset, Jane }
