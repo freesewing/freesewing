@@ -39,7 +39,7 @@
     "mdast-util-toc": "7.0.0",
     "mermaid": "10.9.0",
     "ora": "8.0.1",
-    "pdfkit": "0.14.0",
+    "pdfkit": "0.15.0",
     "postcss-for": "2.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
