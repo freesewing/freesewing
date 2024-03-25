@@ -14,7 +14,7 @@
 #### Fixed
 
  - Fixed an issue where ribbing height would distort the pocket under certain conditions. Fixes
- - Adding missing translation for rubbing option
+ - Adding missing translation for ribbing option
  - Hide unused ribbing parts when ribbing option is disabled
 
 ### hugo
