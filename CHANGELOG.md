@@ -9,6 +9,14 @@
 
  - Always load plugin-bust due to its changes in how it handle conditionality.
 
+### huey
+
+#### Fixed
+
+ - Fixed an issue where ribbing height would distort the pocket under certain conditions. Fixes
+ - Adding missing translation for rubbing option
+ - Hide unused ribbing parts when ribbing option is disabled
+
 ### hugo
 
 #### Fixed
@@ -38,6 +46,12 @@
 #### Fixed
 
  - Fix back exposure when expand is off. Fixes
+
+### wahid
+
+#### Changed
+
+ - Add a warning when waist and hip reduction are both zero, so no back dart is required
 
 ### plugin-bust
 

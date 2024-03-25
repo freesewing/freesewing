@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "Pantalon de pyjama"
 date: "12-11-2022"
 intro: "Voici un pyjama Paco de Gaëlle, sans poches ni poignets élastiques."

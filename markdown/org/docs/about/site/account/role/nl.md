@@ -1,5 +1,6 @@
 ---
 title: Role
+jargon: true
 ---
 
 Every FreeSewing user has a role that determines their privileges on the site.

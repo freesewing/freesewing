@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "Jaeger y Charlie en un divertido tejido de pana"
 date: "2023-05-03"
 intro: "Este bonito conjunto de Jaeger y Waralee está confeccionado con pana de algodón y forro de cupro."

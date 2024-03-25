@@ -93,11 +93,16 @@ export const Breadcrumbs = ({ lead = false }) => {
  * A React component to render sidebar navigation based on the siteNav object and current slug
  * It just re-uses the ReadMore component as we provide to MDX content
  */
-export const NavLinks = () => (
-  <div className="mdx my-4 bg">
-    <ReadMore recurse asMenu />
-  </div>
-)
+export const NavLinks = () => {
+  const { slug } = useContext(NavigationContext)
+  const chunks = slug.split('/')
+
+  return (
+    <div className="mdx my-4 bg">
+      <ReadMore recurse asMenu from={chunks[0]} />
+    </div>
+  )
+}
 
 /*
  * A React component to render sidebar navigation for the main sections

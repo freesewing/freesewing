@@ -1,5 +1,7 @@
 ---
 title: ID de l'utilisateur
+jargon: true
+terms: id, uid
 ---
 
 Chaque utilisateur de FreeSewing a un identifiant, parfois appelé `UID` ou simplement `ID`.

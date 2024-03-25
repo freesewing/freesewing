@@ -1,5 +1,6 @@
 ---
 title: Serger
+jargon: stimmt
 ---
 
 ![Die fertige Rückseite einer gesenkten Naht](serged-seam.jpg)

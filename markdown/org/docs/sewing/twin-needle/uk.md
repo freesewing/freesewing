@@ -1,5 +1,6 @@
 ---
 title: Подвійна голка
+jargon: це правда
 ---
 
 ![Голка-близнюк від Schmetz](twin-needle.jpg)

@@ -1,5 +1,6 @@
 ---
 title: Jersey
+jargon: stimmt
 ---
 
 ![Ein Stück grauer Jersey](knit-fabric.jpg)

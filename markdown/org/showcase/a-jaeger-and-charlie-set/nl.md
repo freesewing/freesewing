@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "Jaeger en Charlie in een leuke ribfluwelen stof"
 date: "2023-05-03"
 intro: "Deze mooie set van Jaeger en Waralee is gemaakt van katoenen ribfluweel en cupro voering."
