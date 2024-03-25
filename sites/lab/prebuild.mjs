@@ -13,6 +13,7 @@ prebuildRunner({
     // Always prebuild
     designs: true,
     i18n: true,
+    jargon: true,
     navigation: true,
     // Prebuild in production
     favicon: 'productionOnly',

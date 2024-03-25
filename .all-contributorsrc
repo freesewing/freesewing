@@ -1167,6 +1167,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "karlnippoldt",
+      "name": "Karl Nippoldt",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7821608?v=4",
+      "profile": "https://karlnippoldt.com",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,

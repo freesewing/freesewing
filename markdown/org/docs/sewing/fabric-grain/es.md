@@ -1,5 +1,6 @@
 ---
 title: Grano de tela
+jargon: true
 ---
 
 ![La graína corre paralela a la vanguardia](fabric-grain.jpg)

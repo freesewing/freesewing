@@ -1,5 +1,6 @@
 ---
 title: Sierstiksel
+jargon: true
 ---
 
 ![Ik gebruikte een hoop contrasterend rood sierstiksel op deze jeans voor mijn petekind Akki](topstitching.jpg)

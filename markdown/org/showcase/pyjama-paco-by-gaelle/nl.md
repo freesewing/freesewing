@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "Pyjamabroek"
 date: "2022-12-11"
 intro: "Hier is een pyjama Paco van Gaëlle, zonder zakken of elastische boorden."

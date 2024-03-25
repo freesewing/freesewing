@@ -1,5 +1,6 @@
 ---
 title: Topstitching
+jargon: true
 ---
 
 ![He usado un montón de cantos en un hilo rojo contraste en estos vaqueros para mi dios Akki](topstitching.jpg)

@@ -1,5 +1,6 @@
 ---
 title: Aiguilles doubles
+jargon: vrai
 ---
 
 ![Une aiguille double de Schmetz](twin-needle.jpg)

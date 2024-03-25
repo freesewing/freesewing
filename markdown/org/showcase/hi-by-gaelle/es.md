@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "Fabricado con tejido vaquero"
 date: "2022-07-29"
 intro: "Hola por Gaëlle"

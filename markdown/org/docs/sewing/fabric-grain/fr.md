@@ -1,5 +1,6 @@
 ---
 title: Droit fil
+jargon: vrai
 ---
 
 ![La ligne de droit fil est parallèle au bord de la lisière](fabric-grain.jpg)

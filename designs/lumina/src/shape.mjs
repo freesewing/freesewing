@@ -640,6 +640,6 @@ export const shape = {
       },
     })
 
-    return part //.hide()
+    return part.hide()
   },
 }

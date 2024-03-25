@@ -1,5 +1,6 @@
 ---
 title: Zickzackstich
+jargon: stimmt
 ---
 
 ![Eine Zick-Zack-Stich wird verwendet, um die Nahtzugabe des Denims am Ausfransen zu hindern](zig-zag.jpg)
