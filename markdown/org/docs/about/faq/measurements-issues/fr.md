@@ -26,17 +26,17 @@ La mesure [de la taille à l'aisselle] (https\://freesewing.org/docs/measurement
 
 #### Point Haut de l'Épaule (ou PHE)
 
-[HPS](https://freesewing.org/docs/sewing/hps), qui est utilisé dans plusieurs mesures, est l'un des points les plus difficiles à perfectionner.
+[PHE](https://freesewing.org/docs/sewing/hps), qui est utilisé dans plusieurs mesures, est l'un des points les plus difficiles à perfectionner.
 
 Voici deux approches.
 
 Une façon de procéder consiste à prendre un crayon, un stylo ou une petite cheville pour trouver le point où ton cou rencontre ton épaule, ainsi que le point le plus élevé car c'est là que le crayon ou la cheville touchera l'épaule. Si tu utilises cette méthode, l'idéal est que l'outil que tu utilises soit parallèle au sol pour que tu puisses trouver ce point haut.
 
-[Épaulement en hauteur avec cheville](hps2.jpg)
+[Point haut de l'épaule avec cheville](hps2.jpg)
 
-Tu peux aussi utiliser un ruban. Prends un ruban plus long et mets-le autour de ton cou/de tes épaules comme une sacoche. Il est utile de pouvoir sentir où se termine le cou et où commence l'épaule en exerçant une petite pression sur le ruban. Tu devras déterminer l'emplacement de la couture de l'épaule, mais le ruban t'indiquera l'emplacement du HPS une fois que tu auras déterminé la couture de l'épaule, car ce sera l'endroit où les deux lignes se croisent.
+Tu peux aussi utiliser un ruban. Prends un ruban plus long et mets-le autour de ton cou/de tes épaules comme une sacoche. Il est utile de pouvoir sentir où se termine le cou et où commence l'épaule en exerçant une petite pression sur le ruban. Tu devras déterminer l'emplacement de la couture de l'épaule, mais le ruban t'indiquera l'emplacement du PHE une fois que tu auras déterminé la couture de l'épaule, car ce sera l'endroit où les deux lignes se croisent.
 
-[Épaulement en hauteur avec ruban](hps2.jpg)
+[Point haut de l'épaule avec ruban](hps2.jpg)
 
 #### Tour de buste supérieur
 
