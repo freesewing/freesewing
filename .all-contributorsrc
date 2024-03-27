@@ -1176,6 +1176,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "RockerKitten",
+      "name": "Corey",
+      "avatar_url": "https://avatars.githubusercontent.com/u/84648053?v=4",
+      "profile": "https://github.com/RockerKitten",
+      "contributions": [
+        "question"
+      ]
     }
   ],
   "skipCi": true,
