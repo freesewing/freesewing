@@ -1,5 +1,5 @@
 ---
-title: "Facilité du poignet"
+title: "Aisance du poignet"
 ---
 
 Affecte la largeur de l'extrémité de la manche sur certains vêtements. Il n'y a pas d'effet pour les manches se terminant au niveau du biceps ou au-dessus. Il n'y a pas d'effet pour les manches se terminant au niveau du biceps ou au-dessus.

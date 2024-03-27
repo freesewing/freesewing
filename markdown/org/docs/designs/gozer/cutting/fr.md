@@ -1,6 +1,6 @@
 ---
-title: "Gozer le fantôme : Instructions de découpage"
+title: "Gozer le fantôme : Instructions de coupe"
 ---
 
 - **Couleur 1 ; traditionnellement blanc**
-  - Cut **1 Body (color 1)**
+  - Coupe **1 Corps**

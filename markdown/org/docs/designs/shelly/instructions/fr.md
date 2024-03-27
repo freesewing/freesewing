@@ -28,24 +28,24 @@ Pour faire des t-shirts ou d'autres chemises avec du tissu extensible dans deux 
    - Jusqu'à 80 % environ produiront un crop top.
    - 100 % descend au sommet de l'os de la hanche.
    - 120% produira un t-shirt typique.
-   - Avec 140 %, tu obtiendras une chemise un peu plus longue qui aura moins tendance sortir du pantalon ou à remonter.
+   - Avec 140 %, tu obtiendras une chemise un peu plus longue qui aura moins tendance à sortir du pantalon ou à remonter.
    - 200%+ peuvent être utilisés pour faire une simple robe t-shirt. Il est suggéré de régler les côtés droits sur faux, et d'ajuster la forme des côtés (dans les options avancées) pour les robes t-shirt.
  - En cas de doute, il est beaucoup plus facile de raccourcir une chemise ou une manche que de la rallonger.
 
- - Détermine le type d'ajustement que tu souhaites et règle tes facilités en conséquence. Assure-toi d'avoir un tissu approprié. En cas de doute, il est plus sûr de rendre la chemise trop lâche que trop serrée.
-   - En général, lorsque tu travailles avec de l'élasthanne, tu veux que l'aisance soit négative à 0 %. Lorsque tu travailles avec un tissu de t-shirt ordinaire en coton/polyester, tu veux une aisance positive, à la fois parce que le tissu s'étire moins et parce que les styles typiques utilisant ce tissu sont plus lâches.
+ - Détermine le type d'ajustement que tu souhaites et règle l'aisance en conséquence. Assure-toi d'avoir un tissu approprié. En cas de doute, il est plus sûr de rendre la chemise trop lâche que trop serrée.
+   - En général, lorsque tu travailles avec de l'élasthanne, tu veux que l'aisance soit à 0 % ou négative. Lorsque tu travailles avec un tissu de t-shirt ordinaire en coton/polyester, tu veux une aisance positive, à la fois parce que le tissu s'étire moins et parce que les styles typiques utilisant ce tissu sont plus lâches.
    - Les chemises de compression sensorielle seront les plus serrées / auront le plus d'aisance négative.
      - Un tissu extensible dans les 4 sens est nécessaire. Le tissu de natation ou un autre tissu très extensible est fortement recommandé.
-     - Allègement de la poitrine : -30% à -20%. C'est la partie la plus importante à comprimer à des fins sensorielles, et c'est un endroit relativement sûr pour mettre de la tension.
-     - Facilité d'utilisation des manches : -20% à -10%. La compression peut être bénéfique, mais tu ne dois pas serrer au point de couper la circulation.
-     - Facilité au poignet : -15% à 0%. La plupart du temps, c'est la préférence.
+     - Aisance de la poitrine : -30% à -20%. C'est la partie la plus importante à comprimer à des fins sensorielles, et c'est un endroit relativement sûr pour mettre de la tension.
+     - Aisance des manches : -20% à -10%. La compression peut être bénéfique, mais tu ne dois pas serrer au point de couper la circulation.
+     - Aisance du poignet : -15% à 0%. La plupart du temps, c'est la préférence.
      - Aisance de l'encolure : 25 % à 100 % (25 % correspondra toujours à un tour de cou très serré qui nécessitera un peu d'étirement pour passer sur la tête, en raison de la façon dont le tour de cou est construit et parce que les trous de cou sont généralement un peu plus grands que le cou pour s'adapter à la tête.
 
    - Chemise athlétique
 
 <Fixme>
-     - L'auteur n'en a pas encore fait. Si quelqu'un sait quelles facilités utiliser, merci de me le faire savoir.
-       - Il est recommandé d'utiliser un tissu très respirant avec un peu d'élasthanne/extensible.
+     - L'auteur n'en a pas encore fait. Si quelqu'un sait quelles aisances utiliser, merci de me le faire savoir.
+       - Il est recommandé d'utiliser un tissu très respirant avec un peu d'élasthanne/elasticité.
 </Fixme>
 
      - Les aisances se situent entre celles d'un maillot de compression et d'un maillot de bain.
@@ -58,13 +58,13 @@ Pour faire des t-shirts ou d'autres chemises avec du tissu extensible dans deux 
 
    - T-shirt
 <Fixme>
-     - L'auteur n'en a pas encore fait. Si quelqu'un sait quelles facilités utiliser, merci de me le faire savoir.
-       - Les assouplissements seront beaucoup plus importants (plus positifs) que pour les autres types de chemises.
+     - L'auteur n'en a pas encore fait. Si quelqu'un sait quelles aisances utiliser, merci de me le faire savoir.
+       - Les aisances seront beaucoup plus importantes (plus positives) que pour les autres types de chemises.
 </Fixme>
 
    - Sweatshirt
 <Fixme>
-     - L'auteur n'en a pas encore fait. Si quelqu'un sait quelles facilités utiliser, merci de me le faire savoir.
+     - L'auteur n'en a pas encore fait. Si quelqu'un sait quelles aisances utiliser, merci de me le faire savoir.
        - Les aisances seront similaires à celles d'un t-shirt, ou un peu plus grandes.
 </Fixme>
 
@@ -78,11 +78,11 @@ Pour faire des t-shirts ou d'autres chemises avec du tissu extensible dans deux 
 ### Étape 2 : Fixer le tour de cou
 
 - Avec _bons côtés ensemble_, plie la bande de cou en deux dans le sens de la longueur (pour qu'elle soit deux fois plus longue) et couds-la pour former une boucle.
-- Avec _endroit contre endroit_, plie la bande de cou en deux dans le sens de la longueur (pour qu'elle soit deux fois plus large).
-- Tourne la chemise _du bon côté_-out
-- Marque les quarts de point sur ton tour de cou avec des épingles à bille, des pinces ou de la craie.
+- _Envers contre envers_, plie la bande de cou en deux dans le sens de la longueur (pour qu'elle soit deux fois moins large).
+- Tourne la chemise _du bon côté_
+- Marque des points aux quarts sur ton tour de cou avec des épingles à bille, des pinces ou de la craie.
 - Fais de même autour du trou du cou, en marquant le centre du devant, le centre du dos et les points médians de chaque manche.
-- Avec _bons côtés ensemble_, aligne les bords non finis de la bande de cou avec le bord du trou du cou, et aligne les quarts de points de la bande de cou avec les quarts de points du trou du cou. Étire le tour de cou si nécessaire pour que tous les points s'alignent. Épingle ou clipse le tour de cou autour du trou de l'encolure.
+- Avec _bons côtés ensemble_, aligne les bords non finis de la bande de cou avec le bord du trou du cou, et aligne les points de quarts de la bande de cou avec les points de quarts du trou du cou. Étire le tour de cou si nécessaire pour que tous les points s'alignent. Épingle ou clipse le tour de cou autour du trou de l'encolure.
  - Couds soigneusement autour du trou du cou, en veillant à coudre à travers les 3 couches.
  - Retourne le tour de cou. Il doit être bien à plat.
 
@@ -90,9 +90,9 @@ Pour faire des t-shirts ou d'autres chemises avec du tissu extensible dans deux 
 
 - Retourne la chemise à l'envers.
 - Avec _bons côtés ensemble_, place les pièces avant et arrière ensemble et épingle/clip leurs côtés ensemble.
-- Avec _sur les bons côtés_, ferme la manche et épingle/clip le long de la couture de la manche.
+- Avec _les bons côtés ensemble_, ferme la manche et épingle/clip le long de la couture de la manche.
 - Tu dois avoir préparé une couture unique, allant de l'extrémité de la manche à l'ourlet inférieur du corps.
-- Couds-le.
+- Couds-la.
 - Répète pour l'autre côté.
 
 ### Étape 4 : (Facultatif) Ourlet

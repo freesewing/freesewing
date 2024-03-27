@@ -86,7 +86,7 @@ Cuando haya terminado, presione Abrir esta costura.
 
 #### Marca a dónde tiene que ir tu bolsillo
 
-![Marca a dónde tiene que ir tu bolsillo](05a.png)
+![Marca a dónde tiene que ir tu bolsillo](05b.png)
 
 Su pieza de patrón frontal tiene una línea de ayuda en ella para mostrar a dónde debe ir el bolsillo de soldadura. Son dos mitad rectángulos que se unieron cuando cerraste el dardo para formar la forma de tu bolsillo de soldadura.
 
@@ -116,7 +116,7 @@ Ahora coser a lo largo de la línea de ayuda que marca el largo borde de tu bols
 
 #### Cortar el bolsillo
 
-![Cortar el bolsillo](05c.png)
+![Cortar el bolsillo](05e.png)
 
 Es hora de cortar cuidadosamente el bolsillo. Empezar en el centro del bolsillo y cortar hacia los bordes más largos hacia el lado.
 
@@ -126,7 +126,7 @@ En los bordes de su bolsillo usted necesita dejar de cortar el centro y en su lu
 
 #### Pulse abrir la costura
 
-![Pulse abrir la costura](05c.png)
+![Pulse abrir la costura](05f.png)
 
 Pulse abrir la costura a lo largo de los bordes largos de su bolsillo.
 

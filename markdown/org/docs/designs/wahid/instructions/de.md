@@ -86,7 +86,7 @@ Wenn Sie fertig sind, drücken Sie diese Naht öffnen.
 
 #### Markieren, wohin deine Tasche gehen muss
 
-![Markieren, wohin deine Tasche gehen muss](05a.png)
+![Markieren, wohin deine Tasche gehen muss](05b.png)
 
 Ihr Frontmusterstück hat eine Helpline um zu zeigen, wohin die Welttasche gehen soll. Es sind zwei halbe Rechtecke, die zusammengeführt wurden, als du den Dart geschlossen hast, um die Form deiner Welttasche zu formen.
 
@@ -116,7 +116,7 @@ Nähen Sie nun entlang der Helpline, die den langen Rand Ihrer Tasche markiert.
 
 #### Die Tasche öffnen
 
-![Die Tasche öffnen](05c.png)
+![Die Tasche öffnen](05e.png)
 
 Zeit, die Tasche sorgfältig zu öffnen. Beginnen Sie in der Mitte der Tasche und schneiden Sie entlang der längsten Kanten zur Seite.
 
@@ -126,7 +126,7 @@ An den Kanten Ihrer Tasche müssen Sie aufhören, die Mitte zu öffnen und statt
 
 #### Öffne die Naht
 
-![Öffne die Naht](05c.png)
+![Öffne die Naht](05f.png)
 
 Drücken Sie die Naht entlang der langen Kanten der Tasche zu öffnen.
 

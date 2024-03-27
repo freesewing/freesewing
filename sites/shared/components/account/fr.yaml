@@ -188,6 +188,8 @@ customBookmark: Marques pages personnalisés
 yourBookmarks: Tes marques pages
 bookmarkThisThing: Ajoute un marque page à { thing }
 page: Page
+doc: Documentation
+pattern: Patron
 #sets
 set: Jeux de mesures
 name: Nom
@@ -250,7 +252,6 @@ andMore: et plus
 unitsMustSave: "Remarque : tu dois enregistrer après avoir modifié les unités pour que le changement prenne effet sur cette page."
 makePublic: Rendre public
 makePrivate: Rendre privé
-pattern: Patron
 patternNew: Génère un nouveau modèle
 patternNewInfo: Choisis un modèle, ajoute ton jeu de mesures, et nous générerons pour toi un patron de couture sur mesure.
 designNew: Créer un nouveau dessin

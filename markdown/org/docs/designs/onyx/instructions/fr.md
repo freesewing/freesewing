@@ -59,7 +59,7 @@ Décide de couper les pièces du devant et/ou du dos _sur le pli_:
 - Pour les combinaisons, coupe le dos _sur le pli_ si tu fais une combinaison avec fermeture à glissière sur le devant, ou le devant _sur le pli_ si tu fais une combinaison avec fermeture à glissière sur le dos (3 pièces au total).
 - Pour les pyjamas une pièce, les barboteuses et les combinaisons, coupe seulement le dos _sur le pli_ (3 pièces au total).
 
-Détermine le type d'ajustement que tu souhaites et règle tes facilités en conséquence. Assure-toi d'avoir un tissu approprié. En cas de doute, il est plus sûr de rendre le vêtement trop lâche que trop serré.
+Détermine le type d'ajustement que tu souhaites et règle l'aisance en conséquence. Assure-toi d'avoir un tissu approprié. En cas de doute, il est plus sûr de rendre le vêtement trop lâche que trop serré.
 - Pour les combinaisons et les justaucorps, tu veux une aisance négative. Cela permettra au tissu extensible/de natation de se former autour du corps de la personne qui le porte.
 - Pour les pyjamas d'une seule pièce, tu veux une aisance positive et adoucir la forme (c'est-à-dire ajouter de l'aisance aux endroits qui se découpent, comme la taille, pour donner à l'ensemble du vêtement une forme moins ajustée).
 - Les grenouillères et les bodys utilisent une aisance positive, la quantité et la répartition de l'aisance variant beaucoup en fonction de la forme prévue du vêtement.

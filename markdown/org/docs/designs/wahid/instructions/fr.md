@@ -86,7 +86,7 @@ Lorsque vous avez terminé, repassez sur cette couture avec les marges ouvertes.
 
 #### Marquer l'emplacement de votre poche
 
-![Marquer l'emplacement de votre poche](05a.png)
+![Marquer l'emplacement de votre poche](05b.png)
 
 Votre pièce de patron avant possède une ligne d'aide pour montrer où doit être placée la poche passepoilée. Il s'agit de deux demi-rectangles réunis lors de la couture de la pince pour créer la forme de votre poche passepoilée.
 
@@ -116,7 +116,7 @@ Cousez maintenant le long de la ligne d’aide qui marque le bord long de votre 
 
 #### Couper et ouvrir la poche
 
-![Couper et ouvrir la poche](05c.png)
+![Couper et ouvrir la poche](05e.png)
 
 Il est temps de couper soigneusement la poche. Commencez au milieu de la poche et coupez le long des bords les plus longs vers le côté.
 
@@ -126,7 +126,7 @@ Aux bords de votre poche, vous devez arrêter d'ouvrir le centre un peu avant et
 
 #### Repasser pour ouvrir la marge de couture
 
-![Repasser pour ouvrir la marge de couture](05c.png)
+![Repasser pour ouvrir la marge de couture](05f.png)
 
 Repassez pour ouvrir la marge de couture le long des bords longs de votre poche.
 
@@ -140,7 +140,7 @@ Retournez le parement de poche vers l'arrière et repassez.
 
 ![Repasser les triangles sur les côtés courts](05h.png)
 
-Move your pocket facing out of the way to reveal those little triangles at the side of your pocket.
+Déplacez votre parement de poche sur le côté pour révéler ces petits triangles sur le côté de votre poche.
 
 Repliez-les vers l'arrière en vous assurant de garder un rectangle parfait pour l'ouverture de poche, puis repassez-les.
 

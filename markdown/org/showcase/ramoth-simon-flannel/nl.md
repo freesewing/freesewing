@@ -1,5 +1,5 @@
 ---
-maker: "Ramoth"
+author: 23386
 caption: "Prachtige motten op deze mooie Simon flanel"
 date: "2023-02-03"
 intro: "Ramoth's Simon Flanel"
