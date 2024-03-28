@@ -17,6 +17,7 @@ function draftLilyFront({
   Snippet,
   sa,
   absoluteOptions,
+  log,
   part,
 }) {
   /*
@@ -396,12 +397,19 @@ function draftLilyFront({
       if (points.seatInTemp.y <= points.crotchSeamCurveStartMid.y) {
         // intersection is above the crotch seam curve start, so on the line segment
         points.seatIn = points.seatInTemp.clone()
-      } else if (points.seatInTemp.y > points.fork) {
+      } else if (points.seatInTemp.y > points.fork.y) {
         // seat appears to be below crotch
         log.warn('seat estimated to be below crotch; this is probably not accurate')
         points.seatIn = points.fork.clone()
       } else {
-        points.seatIn = points.fork.clone()
+        points.seatIn = utils.beamIntersectsCurve(
+          points.seatMid,
+          points.seatInTarget,
+          points.crotchSeamCurveStart,
+          points.crotchSeamCurveCp2,
+          points.crotchSeamCurveCp1,
+          points.fork
+        )
       }
       if (points.waistOut.x < points.seatOut.x) {
         //log.info('waist to the left of seat')
