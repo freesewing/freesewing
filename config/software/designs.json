@@ -468,7 +468,25 @@
       "button"
     ]
   },
-  "legend": {
+  "jane": {
+    "code": "SeaZeeZee",
+    "description": "A FreeSewing pattern for a 1790s shift",
+    "design": "SeaZeeZee",
+    "difficulty": 2,
+    "lab": true,
+    "org": false,
+    "tags": [
+      "tops",
+      "historical",
+      "underwear"
+
+    ],
+    "techniques": [
+      "hem"
+      
+    ]
+  },
+    "legend": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern to document pattern notation",
     "lab": false,
@@ -554,14 +572,25 @@
     "techniques": []
   },
   "naomiwu": {
-    "description": "A FreeSewing pattern for Naomi Wu's signature cargo skirt",
     "code": "Joost De Cock",
-    "design": ["Naomi Wu", "Joost De Cock"],
+    "description": "A FreeSewing pattern for Naomi Wu's signature cargo skirt",
+    "design": [
+      "Naomi Wu",
+      "Joost De Cock"
+    ],
     "difficulty": 3,
     "lab": false,
     "org": false,
-    "tags": ["bottoms", "skirts"],
-    "techniques": ["button", "hem", "pocket", "lining"]
+    "tags": [
+      "bottoms",
+      "skirts"
+    ],
+    "techniques": [
+      "button",
+      "hem",
+      "pocket",
+      "lining"
+    ]
   },
   "noble": {
     "code": "Wouter Van Wageningen",
@@ -977,4 +1006,5 @@
       "button"
     ]
   }
+  
 }

@@ -32,6 +32,8 @@ packageJson:
     author: AlfaLyr (https://github.com/alfalyr)
   i18n:
     private: true
+  jane: 
+    author: SeaZeeZee (https://github.com/SeaZeeZee)
   lab:
     private: true
   lucy:
