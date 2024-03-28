@@ -188,12 +188,11 @@ function draftLilyFront({
 
   if (options.fitCrossSeam && options.fitCrossSeamFront) {
     let delta = crotchSeamDelta()
-    const rotate = ['waistIn', 'waistOut', 'cfWaist']
     let run = 0
     do {
       run++
       // Remedy A: Slash and spread
-      for (const i of rotate) points[i] = points[i].rotate(delta / -15, points.seatOut)
+      for (const i of ['waistIn', 'waistOut', 'cfWaist']) points[i] = points[i].rotate(delta / -15, points.seatOut)
       // Remedy B: Nudge the fork inwards/outwards
       points.fork = points.fork.shift(180, delta / 5)
       drawCrotchSeam()
@@ -449,9 +448,8 @@ function draftLilyFront({
       paths.seatline = new Path()
         .move(points.seatOutNotch)
         .line(points.seatIn)
-        .attr('class', 'fabric help')
-        .attr('data-text', 'Seat Line')
-        .attr('data-text-class', 'center')
+        .addClass('fabric help')
+        .addText('Seat Line','center')
       if (
         measurements.waistToHips * (1 - options.waistHeight) + absoluteOptions.waistbandWidth <
         measurements.waistToHips
@@ -463,9 +461,8 @@ function draftLilyFront({
         paths.hipline = new Path()
           .move(points.hipsOut)
           .line(points.hipsIn)
-          .attr('class', 'fabric help')
-          .attr('data-text', 'Hip Line')
-          .attr('data-text-class', 'center')
+          .addClass('fabric help')
+          .addText('Hip Line','center')
       }
     }
 

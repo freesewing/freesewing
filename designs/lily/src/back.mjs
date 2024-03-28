@@ -417,24 +417,25 @@ function draftLilyBack({
       snippet: 'bnotch',
       on: ['crossSeamCurveStart', 'seatIn'],
     })
-    paths.seatline = new Path()
-      .move(points.seatIn)
-      .line(points.seatOutNotch)
-      .addClass('fabric help')
-      .attr('data-text', 'Seat Line')
-      .attr('data-text-class', 'center')
-    if (
-      measurements.waistToHips * (1 - options.waistHeight) + absoluteOptions.waistbandWidth <
-      measurements.waistToHips
-    ) {
-      snippets.hipsIn = new Snippet('bnotch', points.hipsIn)
-      snippets.hipsOut = new Snippet('notch', points.hipsOut)
-      paths.hipline = new Path()
-        .move(points.hipsIn)
-        .line(points.hipsOut)
-        .attr('class', 'fabric help')
-        .attr('data-text', 'Hip Line')
-        .attr('data-text-class', 'center')
+    
+    if (complete) {
+      paths.seatline = new Path()
+        .move(points.seatIn)
+        .line(points.seatOutNotch)
+        .addClass('fabric help')
+        .addText('Seat Line','center')
+      if (
+        measurements.waistToHips * (1 - options.waistHeight) + absoluteOptions.waistbandWidth <
+        measurements.waistToHips
+      ) {
+        snippets.hipsIn = new Snippet('bnotch', points.hipsIn)
+        snippets.hipsOut = new Snippet('notch', points.hipsOut)
+        paths.hipline = new Path()
+          .move(points.hipsIn)
+          .line(points.hipsOut)
+          .addClass('fabric help')
+          .addText('Hip Line','center')
+      }
     }
   }
 
