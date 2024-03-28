@@ -331,13 +331,13 @@ function draftLilyFront({
     points.bottomIn = points.floorIn
     points.bottomOut = points.floorOut
 
-    paths.bottom = new Path().move(points.bottomIn).line(points.bottomOut)
+    paths.bottom = new Path().move(points.bottomOut).line(points.bottomIn)
 
     // note: upperInseam contains waist and cross seam as well
     paths.upperInseam = drawInseam()
       .curve(points.crotchSeamCurveCp1, points.crotchSeamCurveCp2, points.crotchSeamCurveStart)
-      .line(points.styleWaistIn)
-      .line(points.styleWaistOut)
+      .line(points.styleWaistInLily)
+      .line(points.styleWaistOutLily)
     paths.upperOutseam = drawOutseam()
     paths.bottom.hide()
     paths.upperInseam.hide()
@@ -488,25 +488,25 @@ function draftLilyFront({
         .addClass('note lashed')
       macro('hd', {
         id: 'wHemLeftToPleat',
-        from: points.floorOut,
-        to: points.floor,
-        y: points.floorIn.y - 15,
+        from: points.bottomOut,
+        to: points.bottom,
+        y: points.bottomIn.y - 15,
       })
       macro('hd', {
         id: 'wHemRightToPleat',
-        from: points.floor,
-        to: points.floorIn,
-        y: points.floorIn.y - 15,
+        from: points.bottom,
+        to: points.bottomIn,
+        y: points.bottomIn.y - 15,
       })
       macro('hd', {
         id: 'wHem',
-        from: points.floorOut,
-        to: points.floorIn,
-        y: points.floorIn.y - 30,
+        from: points.bottomOut,
+        to: points.bottomIn,
+        y: points.bottomIn.y - 30,
       })
       macro('vd', {
         id: 'hHemToFork',
-        from: points.floorOut,
+        from: points.bottomOut,
         to: points.fork,
         x: points.fork.x + sa + 15,
       })
@@ -518,7 +518,7 @@ function draftLilyFront({
       })
       macro('vd', {
         id: 'hHemToSideWaist',
-        from: points.floorIn,
+        from: points.bottomIn,
         to: points.styleWaistOutLily,
         x:
           (points.seatOut.x < points.styleWaistOutLily.x

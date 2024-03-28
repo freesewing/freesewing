@@ -301,8 +301,8 @@ function draftLilyBack({
     paths.upperInseam = drawInseam()
     paths.upperOutseam = drawOutseam().join(
       new Path()
-        .move(points.styleWaistOut)
-        .line(points.styleWaistIn)
+        .move(points.styleWaistOutLily)
+        .line(points.styleWaistInLily)
         .line(points.crossSeamCurveStart)
         .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
     )
@@ -317,9 +317,10 @@ function draftLilyBack({
     from: points.grainlineTop,
     to: points.grainlineBottom,
   })
-  macro('scalebox', { at: points.knee })
   points.logoAnchor = new Point(points.crossSeamCurveStart.x / 2, points.fork.y)
   snippets.logo = new Snippet('logo', points.logoAnchor)
+  points.scalebox = points.logoAnchor.shiftFractionTowards(points.styleWaistOutLily.shiftFractionTowards(points.styleWaistInLily,0.5),0.5)
+  macro('scalebox', { at: points.scalebox })
   points.titleAnchor = points.logoAnchor.shift(-90, 60)
   macro('title', {
     nr: 1,
