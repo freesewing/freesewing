@@ -33,7 +33,7 @@
     "@mdx-js/react": "^3.0.0",
     "@mdx-js/runtime": "2.0.0-next.9",
     "@next/bundle-analyzer": "14.1.4",
-    "@tailwindcss/typography": "0.5.11",
+    "@tailwindcss/typography": "0.5.12",
     "algoliasearch": "4.22.1",
     "daisyui": "4.8.0",
     "lodash.get": "4.4.2",
