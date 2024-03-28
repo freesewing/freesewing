@@ -241,6 +241,12 @@ function draftLilyFront({
     points.styleWaistOutLily = points.waistOut.clone()
   }
   store.set('frontWaist', points.styleWaistInLily.dist(points.styleWaistOutLily))
+  
+  // Now that the top of the garment has been lowered, adjust the
+  // crotchSeamCurveStart so it doesn't start above the top of the garment.
+  if (points.crotchSeamCurveStart.y < points.styleWaistInLily.y) {
+    points.crotchSeamCurveStart = points.styleWaistInLily.clone() 
+  }
 
   // Seamline
   paths.seam = drawPath().attr('class', 'fabric')
@@ -483,6 +489,10 @@ function draftLilyFront({
         .close()
         .addClass('fabric sa')
     }
+    
+    // Delete Titan's old hint path (which could start above the top
+    // of the garment)
+    // delete paths.hint    
 
     if (paperless) {
       // Help construct crotch seam
