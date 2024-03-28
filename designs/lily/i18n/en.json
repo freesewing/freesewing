@@ -6,7 +6,11 @@
     "front": "Front",
     "waistband": "Waistband"
    },
-  "s": { },
+  "s": {
+		"adjustEase.t": "Adjust ease settings to match fabric stretch",
+		"adjustEase.d": "Knee, seat and waist ease should be set to fabric stretch * -1/10; click the button to adjust all three.",
+		"adjustEase": "adjust ease"
+	},
   "o": { 
     "lengthReduction": {
       "t": "Length reduction",
