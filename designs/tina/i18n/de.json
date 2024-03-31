@@ -1,0 +1,50 @@
+{
+  "t": "Teagan, das T-Shirt",
+  "d": "Teagan ist ein Schnittmuster für ein passgenaues T-Shirt.",
+  "p": {
+    "back": "Rückseite",
+    "front": "Vorderseite",
+    "sleeve": "Ärmel"
+  },
+  "s": {
+    "fullLengthFromHps": "Volle Länge (vom höchsten Schulterpunkt)"
+  },
+  "o": {
+    "draftForHighBust": {
+      "t": "Entwurf für hohe Büste",
+      "d": "Zeichnen Sie das Muster für die hohe Büstenmessung (falls vorhanden) statt der (vollen) Truhe. Dies wird zu einem besser angepassten Kleidungsstück für Brustkleidung führen."
+    },
+    "sleeveEase": {
+      "t": "Bequemlichkeitszugabe Ärmel",
+      "d": "Größe der Bequemlichkeitszugabe an den Ärmeln"
+    },
+    "sleeveLength": {
+      "t": "Ärmellänge",
+      "d": "Steuert die Länge deiner Ärmel"
+    },
+    "necklineBend": {
+      "t": "Krümmung Halsausschnitt",
+      "d": "Steuert die Krümmung des Halsausschnitts."
+    },
+    "necklineDepth": {
+      "t": "Ausschnitttiefe",
+      "d": "Steuert, wie tief der Halsausschnitt fällt."
+    },
+    "necklineWidth": {
+      "t": "Ausschnittbreite",
+      "d": "Steuert die Breite des Halsausschnitts."
+    },
+    "curveToWaist": {
+      "t": "Fit the waist",
+      "d": "Whether or not to fit the waist or rahter only fit chest and hips."
+    },
+    "curvedWaistEase": {
+      "t": "Waist ease",
+      "d": "Ease at the waist (only applies when the waist is fitted)."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Ease at the hips."
+    }
+  }
+}

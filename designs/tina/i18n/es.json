@@ -1,0 +1,50 @@
+{
+  "t": "Teagan, camiseta",
+  "d": "Teagan es un patrón de camiseta entallada.",
+  "p": {
+    "back": "Atrás",
+    "front": "Frente",
+    "sleeve": "Manga"
+  },
+  "s": {
+    "fullLengthFromHps": "Longitud completa (de HPS)"
+  },
+  "o": {
+    "draftForHighBust": {
+      "t": "Borrador para alta caída",
+      "d": "Borra el patrón para la medición alta del polvo (si está disponible) en lugar del cofre (completo). Esto dará lugar a una prenda más ajustada para las personas con senos."
+    },
+    "sleeveEase": {
+      "t": "Manga fácil",
+      "d": "Cantidad de facilidad de sus mangas"
+    },
+    "sleeveLength": {
+      "t": "Longitud de la manga",
+      "d": "Controla la longitud de las mangas"
+    },
+    "necklineBend": {
+      "t": "Curvatura neckline",
+      "d": "Controla la curvatura del cuello."
+    },
+    "necklineDepth": {
+      "t": "Profundidad del cuello",
+      "d": "Controla la profundidad de la abertura del cuello."
+    },
+    "necklineWidth": {
+      "t": "Neckline width",
+      "d": "Controla el ancho de la abertura del cuello."
+    },
+    "curveToWaist": {
+      "t": "Fit the waist",
+      "d": "Whether or not to fit the waist or rahter only fit chest and hips."
+    },
+    "curvedWaistEase": {
+      "t": "Waist ease",
+      "d": "Ease at the waist (only applies when the waist is fitted)."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Ease at the hips."
+    }
+  }
+}

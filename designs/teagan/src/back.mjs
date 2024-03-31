@@ -71,6 +71,7 @@ function teaganBack({
 
   // Let the user know how long the neck opening is
   store.flag.info({
+    id: 'teagan:neckOpeningLength',
     msg: 'teagan:neckOpeningLength',
     replace: {
       length: units(

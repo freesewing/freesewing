@@ -863,6 +863,24 @@
     ],
     "techniques": []
   },
+  "tina": {
+    "code": "Jonathan Haas",
+    "description": "A FreeSewing pattern for overlap top",
+    "design": [
+      "Jonathan Haas"
+    ],
+    "difficulty": 2,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "tops"
+    ],
+    "techniques": [
+      "curvedSeam",
+      "hem",
+      "flatSleeve"
+    ]
+  },
   "trayvon": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern for a tie",

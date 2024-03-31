@@ -1,0 +1,27 @@
+{
+  "t": "Tina top with overlap",
+  "d": "Tina is a top with overlap at the front",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "sleeve": "Sleeve"
+  },
+  "s": {
+    "seatMeasurement.t": "You might need to adjust the hips ease",
+    "seatMeasurement.d": "The seat measurement is {{{ pct }}} above the circumference of the garment. Increase the hips ease if you don't want the fabric to stretch or ride up.",
+    "plotFitHelpersNo.t": "No",
+    "plotFitHelpersNo.d": "Hide helpers",
+    "plotFitHelpersYes.t": "Yes",
+    "plotFitHelpersYes.d": "Show helpers"
+  },
+  "o": {
+    "frontCoverage": {
+      "t": "Front coverage",
+      "d": "Adjust the angle the wrap around part is cut. A higher value exposes less skin at the front."
+    },
+    "plotFitHelpers": {
+      "t": "Plot measurement helpers",
+      "d": "Plots a mirror of the front, the bust points, the waistline and the body outline below the waist, so you can check the intended fit"
+    }
+  }
+}

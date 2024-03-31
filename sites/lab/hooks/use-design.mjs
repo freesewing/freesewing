@@ -51,6 +51,7 @@ import { Tamiko as tamiko } from '@freesewing/tamiko'
 import { Teagan as teagan } from '@freesewing/teagan'
 import { Tiberius as tiberius } from '@freesewing/tiberius'
 import { Titan as titan } from '@freesewing/titan'
+import { Tina as tina } from '@freesewing/tina'
 import { Trayvon as trayvon } from '@freesewing/trayvon'
 import { Tristan as tristan } from '@freesewing/tristan'
 import { Uma as uma } from '@freesewing/uma'
@@ -109,6 +110,7 @@ const designs = {
   teagan,
   tiberius,
   titan,
+  tina,
   trayvon,
   tristan,
   uma,

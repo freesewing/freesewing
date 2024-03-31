@@ -1,0 +1,50 @@
+{
+  "t": "T-shirt Teagan",
+  "d": "Teagan est un T-shirt ajusté.",
+  "p": {
+    "back": "Retour",
+    "front": "Avant",
+    "sleeve": "Manche"
+  },
+  "s": {
+    "fullLengthFromHps": "Longueur complète (à partir du haut de l'épaule)"
+  },
+  "o": {
+    "draftForHighBust": {
+      "t": "Tracé pour le buste supérieur",
+      "d": "Tracer le patron pour la mesure de tour de poitrine supérieure (si disponible) plutôt que la poitrine (pleine). Il en résultera un vêtement plus ajusté pour les personnes qui ont des seins."
+    },
+    "sleeveEase": {
+      "t": "Aisance des manches",
+      "d": "Quantité d'aisance de vos manches"
+    },
+    "sleeveLength": {
+      "t": "Longueur des manches",
+      "d": "Contrôle la longueur de vos manches"
+    },
+    "necklineBend": {
+      "t": "Courbure de l'encolure",
+      "d": "Contrôle la courbure de l'encolure."
+    },
+    "necklineDepth": {
+      "t": "Profondeur de l'encolure",
+      "d": "Contrôle la profondeur de l'encolure."
+    },
+    "necklineWidth": {
+      "t": "Largeur d'encolure",
+      "d": "Contrôle la largeur de l'encolure."
+    },
+    "curveToWaist": {
+      "t": "Fit the waist",
+      "d": "Whether or not to fit the waist or rahter only fit chest and hips."
+    },
+    "curvedWaistEase": {
+      "t": "Waist ease",
+      "d": "Ease at the waist (only applies when the waist is fitted)."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Ease at the hips."
+    }
+  }
+}
