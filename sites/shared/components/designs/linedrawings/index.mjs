@@ -54,6 +54,7 @@ import { Lunetius, LunetiusFront } from 'shared/components/designs/linedrawings/
 import { Noble, NobleFront, NobleBack } from 'shared/components/designs/linedrawings/noble.mjs'
 import { Simon, SimonFront, SimonBack } from 'shared/components/designs/linedrawings/simon.mjs'
 import { Teagan, TeaganFront, TeaganBack } from 'shared/components/designs/linedrawings/teagan.mjs'
+import { Tina, TinaFront, TinaBack } from 'shared/components/designs/linedrawings/tina.mjs'
 import {
   Tristan,
   TristanFront,
@@ -96,6 +97,7 @@ export const lineDrawingsFront = {
   hortensia: HortensiaFront,
   simon: SimonFront,
   teagan: TeaganFront,
+  tina: TinaFront,
   tristan: TristanFront,
   uma: UmaFront,
   umbra: UmbraFront,
@@ -125,6 +127,7 @@ export const lineDrawingsBack = {
   noble: NobleBack,
   simon: SimonBack,
   teagan: TeaganBack,
+  tina: TinaBack,
   tristan: TristanBack,
   uma: UmaBack,
   umbra: UmbraBack,
@@ -164,6 +167,7 @@ export const lineDrawings = {
   hortensia: Hortensia,
   simon: Simon,
   teagan: Teagan,
+  tina: Tina,
   tristan: Tristan,
   uma: Uma,
   umbra: Umbra,
