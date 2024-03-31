@@ -3,7 +3,6 @@ import { hidePresets } from '@freesewing/core'
 import { formatPercentage } from '@freesewing/shared/utils.mjs'
 
 function tinaFront({
-  utils,
   store,
   sa,
   Point,
@@ -15,8 +14,6 @@ function tinaFront({
   options,
   measurements,
   macro,
-  log,
-  units,
   complete,
   part,
 }) {
@@ -140,106 +137,9 @@ function tinaFront({
 
   store.cutlist.setCut({ cut: 2, from: 'fabric', onFold: false })
 
+  // Replace Teagan title
   macro('rmTitle', 'title')
-
   macro('title', { at: points.title, nr: 1, title: 'front' })
-
-  //
-  // // Store front sleevecap length
-  // store.set(
-  //   'frontArmholeLength',
-  //   new Path()
-  //     .move(points.armhole)
-  //     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
-  //     .curve(points.armholeHollowCp2, points.shoulderCp1, points.shoulder)
-  //     .length()
-  // )
-  //
-  // /*
-  //  * Annotations
-  //  */
-  // // Cutlist
-  // store.cutlist.setCut({ cut: 1, from: 'fabric', onFold: true })
-  //
-  // // Cutonfold
-  // macro('cutonfold', {
-  //   from: points.cfNeck,
-  //   to: points.cfHem,
-  //   grainline: true,
-  // })
-  //
-  // // Title
-  // points.title = new Point(points.waist.x / 2, points.waist.y)
-  // macro('title', { at: points.title, nr: 1, title: 'front' })
-  //
-  // // Logo
-  // points.logo = points.title.shift(-90, 75)
-  // snippets.logo = new Snippet('logo', points.logo)
-  //
-  // // Dimensions
-  // macro('hd', {
-  //   id: 'wAtHem',
-  //   from: points.cfHem,
-  //   to: points.hem,
-  //   y: points.hem.y + sa * 2.5 + 15,
-  // })
-  // if (options.fitWaist) {
-  //   macro('hd', {
-  //     id: 'wHemToWaist',
-  //     from: points.waist,
-  //     to: points.hem,
-  //     y: points.hem.y + sa * 2.5 + 30,
-  //   })
-  //   macro('vd', {
-  //     id: 'hHemToWaist',
-  //     from: points.hem,
-  //     to: points.waist,
-  //     x: points.waist.x - 15,
-  //   })
-  // }
-  // macro('vd', {
-  //   id: 'hHemToArmhole',
-  //   from: points.hem,
-  //   to: points.armhole,
-  //   x: points.armhole.x + sa + 15,
-  // })
-  // macro('vd', {
-  //   id: 'hHemToShoulder',
-  //   from: points.hem,
-  //   to: points.shoulder,
-  //   x: points.armhole.x + sa + 30,
-  // })
-  // macro('vd', {
-  //   id: 'hFull',
-  //   from: points.hem,
-  //   to: points.neck,
-  //   x: points.armhole.x + sa + 45,
-  // })
-  // macro('hd', {
-  //   id: 'wFoldToHps',
-  //   from: points.cfNeck,
-  //   to: points.neck,
-  //   y: points.neck.y - sa - 15,
-  // })
-  // macro('hd', {
-  //   id: 'wFoldToShoulder',
-  //   from: points.cfNeck,
-  //   to: points.shoulder,
-  //   y: points.neck.y - sa - 30,
-  // })
-  // macro('hd', {
-  //   id: 'wFull',
-  //   from: points.cfNeck,
-  //   to: points.armhole,
-  //   y: points.neck.y - sa - 45,
-  // })
-  // // These dimensions are only for the front
-  // macro('vd', {
-  //   id: 'hHemToNeck',
-  //   from: points.cfHem,
-  //   to: points.cfNeck,
-  //   x: points.cfHem.x - sa - 15,
-  // })
 
   return part
 }

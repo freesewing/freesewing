@@ -1,19 +1,7 @@
 import { back as teaganBack } from '@freesewing/teagan'
 import { hidePresets } from '@freesewing/core'
 
-function tinaBack({
-  Path,
-  Snippet,
-  paths,
-  points,
-  part,
-  complete,
-  options,
-  snippets,
-  store,
-  units,
-  sa,
-}) {
+function tinaBack({ Path, Snippet, paths, points, part, complete, options, snippets, store, sa }) {
   paths.saBase = new Path()
     .move(points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
