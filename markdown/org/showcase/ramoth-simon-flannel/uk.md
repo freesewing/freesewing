@@ -1,5 +1,5 @@
 ---
-maker: "Рамот"
+author: 23386
 caption: "Любіть метеликів на цій прекрасній фланелі Simon"
 date: "2023-02-03"
 intro: "Simon Flannel від Ramoth"

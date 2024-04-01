@@ -1,5 +1,5 @@
 ---
-maker: "Ramoth"
+author: 23386
 caption: "Der kurzärmelige Simon von Ramoth, bei dem der Großteil der Formgebung in die hinteren Abnäher verlagert wurde"
 date: "30.09.2021"
 intro: "Das kurzärmelige Simon-Shirt von Ramoth"
