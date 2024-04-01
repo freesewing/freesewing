@@ -16,6 +16,8 @@ import { Text as TextComponent, TextOnPath as TextOnPathComponent } from './patt
 import { getProps, withinPartBounds, getId, translateStrings } from './pattern/utils.mjs'
 // PatternXray
 import { PatternXray as PatternXrayComponent } from './pattern-xray/index.mjs'
+// Editor
+import { PatternEditor as PatternEditorComponent, ns as EditorNs} from './editor/index.mjs'
 
 /*
  * Export all components as named exports
@@ -33,6 +35,8 @@ export const Grid = GridComponent
 export const Text = TextComponent
 export const TextOnPath = TextOnPathComponent
 export const PatternXray = PatternXrayComponent
+export const PatternEditor = PatternEditorComponent
+export const PatternEditorNs = EditorNs
 
 /*
  * Export pattern utils
@@ -43,3 +47,9 @@ export const utils = {
   getId,
   translateStrings,
 }
+
+/**
+ * Translation namespaces used by these components
+ */
+export const ns = ['editor']
+

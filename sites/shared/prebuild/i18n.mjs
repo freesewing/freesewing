@@ -13,12 +13,13 @@ import { plugins } from '../i18n/plugins.mjs'
  * code-adjacent translation source files
  */
 const sitesFolder = path.join(fileURLToPath(import.meta.url), '..', '..', '..')
+const reactFolder = path.join(fileURLToPath(import.meta.url), '..', '..', '..', '..', 'packages', 'react-components', 'src')
 export const folders = {
   backend: [path.join(sitesFolder, 'backend', 'src', 'templates', 'email')],
-  org: [path.join(sitesFolder, 'org', 'pages'), path.join(sitesFolder, 'org', 'components')],
+  org: [path.join(sitesFolder, 'org', 'pages'), path.join(sitesFolder, 'org', 'components'), reactFolder],
   dev: [path.join(sitesFolder, 'dev', 'pages'), path.join(sitesFolder, 'dev', 'components')],
-  lab: [path.join(sitesFolder, 'lab', 'pages'), path.join(sitesFolder, 'lab', 'components')],
-  sde: [path.join(sitesFolder, 'sde', 'pages')],
+  lab: [path.join(sitesFolder, 'lab', 'pages'), path.join(sitesFolder, 'lab', 'components'), reactFolder],
+  sde: [path.join(sitesFolder, 'sde', 'pages'), reactFolder],
   shared: [
     path.join(sitesFolder, 'shared', 'components'),
     path.join(sitesFolder, 'shared', 'i18n'),

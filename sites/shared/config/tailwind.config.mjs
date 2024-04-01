@@ -12,6 +12,7 @@ export default {
     './page-templates/*.mjs',
     '../shared/components/**/*.mjs',
     '../shared/config/tailwind-force.html',
+    '../../packages/react-components/src/**/*.mjs',
   ],
   plugins: [require('daisyui'), require('tailwindcss/nesting')],
   daisyui: {
