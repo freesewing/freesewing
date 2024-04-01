@@ -37,14 +37,13 @@ Tristan wurde von Natalia entworfen, die auch [einen Blogbeitrag über das neue 
 
 Ich gebe dir eine Sekunde, um den Titel noch einmal zu überfliegen, aber ja, es gibt zwei verschiedene Leggings-Muster mit ähnlichen Namen: [die Lumira Leggings] (https\://freesewing.org/designs/lumira) und die [Lumina Leggings] (https\://freesewing.org/designs/lumina).
 
-Beide wurden aus Wouters Wunsch nach guter Fahrradbekleidung geboren. Ich empfehle dir, die Designernotizen für [Lumina] (https\://freesewing.org/designs/lumina#notes) und [Lumira] (https\://freesewing.org/designs/lumira#notes) zu lesen, um den Unterschied zwischen diesen Designs zu verstehen, zu verstehen, warum sie sich unterscheiden und zu wissen, was für dich am besten geeignet ist.
+Ich empfehle dir, die Designernotizen für [Lumina] (https\://freesewing.org/designs/lumina#notes) und [Lumira] (https\://freesewing.org/designs/lumira#notes) zu lesen, um den Unterschied zwischen diesen Designs zu verstehen, zu verstehen, warum sie sich unterscheiden und zu wissen, was für dich am besten geeignet ist.
 
 ### Bug fixes and improvements
 
 Regelmäßige Leserinnen und Leser des Newsletters wissen, dass wir auf
 laufend Verbesserungen vornehmen, die nicht an eine neue Version gebunden sind,
-aber es ist eine gute Gelegenheit, sie aufzulisten. Hier sind also einige Highlights der Fehlerbehebungen
-und Verbesserungen, die in die Version 3.2 eingeflossen sind:
+aber es ist eine gute Gelegenheit, sie aufzulisten.
 
 - Sandy hat eine neue Paneele
   Option, die
@@ -55,8 +54,7 @@ und Verbesserungen, die in die Version 3.2 eingeflossen sind:
   Jaeger] (https\://github.com/freesewing/freesewing/issues/5999) begann, endete mit einer
   Änderung der Art und Weise, wie der Armumfang auf Brian berechnet wird, insbesondere die Tiefe
   des Armlochs. Da Brian unser grundlegendster Block ist, wird dies
-  Auswirkungen auf viele andere Entwürfe haben. Du kannst davon ausgehen, dass
-  der Armcye ein wenig tiefer reichen wird.
+  Auswirkungen auf viele andere Entwürfe haben.
 - In [Carlton](https://freesewing.org/designs/carlton) - und damit auch in
   [Carlita](https://freesewing.org/designs/carlita) - haben wir
   korrigiert, wo die Nahtzugabe am Unterkragen falsch eingezeichnet war.
@@ -69,10 +67,7 @@ und Verbesserungen, die in die Version 3.2 eingeflossen sind:
   immer enger wurde.
 - Wir haben eine neue
   [Path.combine()](https://freesewing.dev/reference/api/path/combine) Methode zu
-  [unserer Kern-API](https://freesewing.dev/reference/api) hinzugefügt. Die Ursprünge liegen in einer
-  Diskussion in issue
-  \#5976, die
-  ursprünglich als Fehlerbericht eingereicht wurde. Dabei ging es darum, wie Path.join() Lücken in den
+  [unserer Kern-API](https://freesewing.dev/reference/api) hinzugefügt. Dabei ging es darum, wie Path.join() Lücken in den
   verbundenen Pfaden - die entweder durch "Verschiebe"-Operationen oder durch einen Unterschied zwischen
   dem End- und dem Startpunkt der verbundenen Pfade verursacht werden - mit einem Liniensegment
   ausgefüllt werden. Dieses Verhalten wird erwartet/beabsichtigt, aber wir haben
@@ -188,8 +183,7 @@ Maintainern ziehen können, die verzweifelt versuchen, einen Teil der Arbeit los
 
 Das Problem, wem man vertrauen kann, ist natürlich nicht neu. Eine Möglichkeit, dem entgegenzuwirken
 , ist der Aufbau eines _Vertrauensnetzes_.  So wird es in größeren
-Open-Source-Softwareprojekten gemacht, an denen viele Freiwillige beteiligt sind, wie z.B. das Debian
-Projekt.
+Open-Source-Softwareprojekten gemacht, an denen viele Freiwillige beteiligt sind, wie z.B.
 
 In der Praxis beruht ein solches Vertrauensnetz auf Beziehungen zwischen
 Menschen, die die wahre Identität des anderen kennen und überprüft haben.  Zum Beispiel
