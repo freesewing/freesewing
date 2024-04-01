@@ -393,6 +393,12 @@ export const I18nIcon = (props) => (
   </IconWrapper>
 )
 
+export const ImportIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m6.75 12-3-3m0 0-3 3m3-3v6m-1.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+  </IconWrapper>
+)
+
 export const IncludeIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
@@ -499,6 +505,15 @@ export const MsfIcon = (props) => (
       stroke="none"
       fill="currentColor"
     />
+  </IconWrapper>
+)
+
+/*
+ * NarrowIcon - Looks like two arrow pointing inwards
+ */
+export const NarrowIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M1.5 12 h 7 M 15.5 12 h 7 M 18 8 l -4 4 l 4 4 M 6 8 l 4 4 l -4 4" />
   </IconWrapper>
 )
 
@@ -811,6 +826,15 @@ export const VersionIcon = (props) => (
 export const WarningIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+  </IconWrapper>
+)
+
+/*
+ * WideIcon - Looks like two arrow pointing outwards
+ */
+export const WideIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M3 12 h 7 M 14 12 h 7 M 5.5 8 l -4 4 l 4 4 M 18.5 8 l 4 4 l -4 4" />
   </IconWrapper>
 )
 

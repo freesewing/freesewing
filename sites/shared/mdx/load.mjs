@@ -1,7 +1,6 @@
 import fs from 'fs'
 import path from 'path'
 import { compileMdx } from './compile.mjs'
-import { jargon } from 'shared/jargon/index.mjs'
 import { ghPrefix } from './remark-github-images.mjs'
 
 /*
@@ -62,7 +61,6 @@ export const loadMdxAsStaticProps = async ({
       md,
       site,
       slug: val,
-      jargon: jargon[language],
     })
     result[key] = { ...mdx, slug: val }
   }

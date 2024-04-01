@@ -86,4 +86,4 @@ This structure of putting the draft method at the top of the file and
 the part object at the bottom is a bit of a convention in FreeSewing.
 </Note>
 
-
+We'll take a deeper look at our part's draft method soon. For now, let's look at adding measurements to our part.

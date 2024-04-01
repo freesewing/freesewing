@@ -44,18 +44,35 @@ function draftBib({
   /*
    * Construct the quarter neck opening
    */
-  const target = (measurements.head * options.neckRatio) /4
   let tweak = 1
+  let target = (measurements.head * options.neckRatio) /4
   let delta
   do {
-    points.right = new Point(tweak * measurements.head / 10, 0)
-    points.bottom = new Point(0, tweak * measurements.head / 12)
-    points.rightCp1 = points.right.shift( 90, points.bottom.dy(points.right) / 2)
-    points.bottomCp2 = points.bottom.shift( 0, points.bottom.dx(points.right) / 2)
-
+    points.right = new Point(
+      tweak * measurements.head / 10, 
+      0
+    )
+    points.bottom = new Point(
+      0, 
+      tweak * measurements.head / 12
+    )
+  
+    points.rightCp1 = points.right.shift(
+      90, 
+      points.bottom.dy(points.right) / 2
+    )
+    points.bottomCp2 = points.bottom.shift(
+      0, 
+      points.bottom.dx(points.right) / 2
+    )
+  
     paths.quarterNeck = new Path()
       .move(points.right)
-      .curve(points.rightCp1, points.bottomCp2, points.bottom)
+      .curve(
+        points.rightCp1, 
+        points.bottomCp2, 
+        points.bottom
+      )
       .hide()
 
     delta = paths.quarterNeck.length() - target
@@ -98,15 +115,6 @@ function draftBib({
   points.bottomLeft = points.topLeft.shift(-90, length)
   points.bottomRight = points.topRight.shift(-90, length)
 
-  paths.rect = new Path()
-    .move(points.topLeft)
-    .line(points.bottomLeft)
-    .line(points.bottomRight)
-    .line(points.topRight)
-    .line(points.topLeft)
-    .close()
-    .addClass('fabric')
-
   /*
    * Shape the straps
    */
@@ -121,18 +129,6 @@ function draftBib({
     0.5
   )
   points.edgeTopRightCp = points.edgeTopLeftCp.flipX()
-
-  /*
-   * Now, adapt our `rect` path so it's no longer a rectangle:
-   */
-  paths.rect = new Path()
-    .move(points.edgeTop)
-    .curve(points.edgeTopLeftCp, points.edgeLeftCp, points.edgeLeft)
-    .line(points.bottomLeft)
-    .line(points.bottomRight)
-    .line(points.edgeRight)
-    .curve(points.edgeRightCp, points.edgeTopRightCp, points.edgeTop)
-    .close()
 
   // highlight-start
   // Round the straps
@@ -158,7 +154,21 @@ function draftBib({
   })
   // highlight-end
 
+    /*
+   * Now, adapt our `rect` path so it's no longer a rectangle:
+   */
+  paths.rect = new Path()
+    .move(points.edgeTop)
+    .curve(points.edgeTopLeftCp, points.edgeLeftCp, points.edgeLeft)
+    .line(points.bottomLeft)
+    .line(points.bottomRight)
+    .line(points.edgeRight)
+    .curve(points.edgeRightCp, points.edgeTopRightCp, points.edgeTop)
+    .close()
+
   return part
 }
 ```
 </Example>
+
+Notice that we always draw our path at the end after we've manipulated our points.

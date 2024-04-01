@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Houd je zelfgemaakte kleren schoon tijdens het koken met het Albert schort"
 date: "2020-10-17"
 intro: "Wat zou je doen als je dochter een schort nodig had voor school?"

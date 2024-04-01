@@ -7,6 +7,7 @@ title: "Bij met kruisband"
 designs:
   - "bij"
   - "ursula"
+author: 13050
 ---
 
 Deze Bee-variatie is gemaakt als patroontest met kruislinks en heeft een paar wijzigingen ten opzichte van de standaard Bee. De bovenkant van de beker is verlaagd en er is een kleine dart langs de onderkant van elke beker die een deel van het verzamelen opneemt. Er is ook doorzichtig elastiek in de naden langs de band genaaid en een laagje power mesh in de cups voor extra ondersteuning.

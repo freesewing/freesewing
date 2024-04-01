@@ -1,5 +1,6 @@
 ---
 title: Doppelpaspeltaschen
+jargon: stimmt
 ---
 
 ## Video

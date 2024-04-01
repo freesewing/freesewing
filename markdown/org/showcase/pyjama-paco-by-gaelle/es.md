@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "Pantalones de pijama"
 date: "2022-12-11"
 intro: "Aquí tienes un pijama Paco de Gaëlle, sin bolsillos ni puños elásticos."

@@ -6,6 +6,7 @@ intro: "Esta refinada gorra Florent es de Ferdi, que dijo"
 title: "Gorra Florent de Ferdi"
 designs:
   - "florent"
+author: 1972
 ---
 
 Esta refinada gorra Florent es de Ferdi, que dijo

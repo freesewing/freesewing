@@ -58,7 +58,7 @@ const BookmarkPage = ({ page }) => {
   }, [id, backend, setLoadingStatus])
 
   return (
-    <PageWrapper {...page} title={`${t('bookmarks')}: ${bookmark?.title}`}>
+    <PageWrapper {...page} title={`${t('bookmark')}: ${bookmark?.title}`}>
       <DynamicAuthWrapper>
         <DynamicBookmark bookmark={bookmark} />
       </DynamicAuthWrapper>

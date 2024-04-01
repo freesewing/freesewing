@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Le logo freesewing"
 date: "2017-03-24"
 intro: "Je suis fier d'annoncer la version 1.0.0 de freesewing core et la documentation qui l'accompagne et qui décrit le projet freesewing en détail."

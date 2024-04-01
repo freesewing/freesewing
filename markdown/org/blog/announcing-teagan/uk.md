@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Фото Алекса Ендрюса з Pexels"
 date: "2020-09-09"
 intro: "Нещодавно хтось запитав, чи є у нас на freesewing.org шаблон футболки, і виявилося, що ні."

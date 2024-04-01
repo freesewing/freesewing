@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Wir bedanken uns bei unseren Mitwirkenden und wollen sicherstellen, dass ihre Beiträge die Anerkennung erhalten, die sie verdienen"
 date: "2021-11-28"
 intro: "Bei unserem letzten Aufruf an die Mitwirkenden haben wir beschlossen, die Spezifikation \"Alle Mitwirkenden\" einzuführen, um alle Mitwirkenden zu ehren."

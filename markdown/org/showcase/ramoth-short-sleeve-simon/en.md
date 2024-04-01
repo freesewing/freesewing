@@ -1,5 +1,5 @@
 ---
-maker: "Ramoth"
+author: 23386
 caption: "Ramoth's short-sleeve Simon with most of the shaping shifted to the back darts"
 date: "2021-09-30"
 intro: "Ramoth's short-sleeve Simon shirt"

@@ -1,5 +1,6 @@
 ---
 title: Edgestitching
+jargon: true
 ---
 
 Edgestitching is a specific type of _topstitching_.

@@ -6,6 +6,7 @@ intro: "Wouter a créé le modèle de culotte cycliste Cornelius en se basant su
 title: "Cornelius par Wouter"
 designs:
   - "cornelius"
+author: 132
 ---
 
 Wouter a créé le modèle de culotte cycliste Cornelius en se basant sur les systèmes Keystone. Lis la suite [sur le blog de FreeSewing](https://freesewing.org/blog/cornelius-cycling-breeches/).

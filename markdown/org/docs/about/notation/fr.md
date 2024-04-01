@@ -2,20 +2,20 @@
 title: Guide des repères de patron
 ---
 
-Nous espérons que nos patrons sont assez faciles à comprendre, mais si vous rencontrez quelque chose qui ne vous paraît pas clair, veuillez trouver ci-dessous une référence de toutes nos repères de patron :
+Nous espérons que nos patrons sont assez faciles à comprendre, mais si vous rencontrez quelque chose qui ne vous paraît pas clair, veuillez trouver ci-dessous une référence de tous nos repères de patron :
 
 - [Lignes](#lines)
   - [Coutures](#seams)
   - [Marge de couture](#seam-allowance)
   - [Droit fil](#grainline)
-  - [Indicateur de pliage](#cut-on-fold-indicator)
+  - [Indicateur de coupe sur le pli](#cut-on-fold-indicator)
   - [Dimensions](#dimensions)
   - [Autres lignes](#other-lines)
   - [Épaisseur des lignes et traits](#line-widths-and-strokes)
 - [Annotations](#annotations)
   - [Repères](#notches)
   - [Boutons et boutonnières](#buttons-and-buttonholes)
-  - [Point d'arrêt](#bartacks)
+  - [Point de renforcement](#bartacks)
   - [Les boutons-pression](#snaps)
   - [Titres](#titles)
   - [Logo](#logo)
@@ -33,7 +33,7 @@ et son apparence une fois téléchargé en format PDF ou SVG.
 
 ## Lignes
 
-Lines (and curves) make up the bulk of marking you'll find on any sewing pattern, including FreeSewing's patterns.
+Les lignes (et les courbes) constituent l'essentiel du marquage que tu trouveras sur n'importe quel patron de couture, y compris les patrons de FreeSewing.
 
 ### Coutures
 
@@ -65,9 +65,9 @@ Un indicateur de ligne de droit fil
 
 </Legend>
 
-### Indicateur de pliage
+### Indicateur de coupe sur le pli
 
-Les indicateurs de coupe sur le pli ressemblent aux indicateurs de ligne de grain, mais ils pointent vers la ligne sur laquelle le tissu doit être plié :
+Les indicateurs de coupe sur le pli ressemblent aux indicateurs de ligne de droit fil, mais ils pointent vers la ligne sur laquelle le tissu doit être plié :
 
 <Legend part="cutonfold">
 
@@ -90,7 +90,7 @@ Un exemple de dimension sur un patron
 Certains patrons peuvent contenir d'autres lignes, il y a 4 styles supplémentaires :
 
 - Note
-- Marquer
+- Marque
 - Contraste
 - Aide
 
@@ -104,7 +104,7 @@ Autres styles de ligne
 
 ## Épaisseur des lignes et traits
 
-Les concepteurs peuvent, s'ils le souhaitent, utiliser les épaisseurs de lignes par défaut ou définir un trait spécifique. Ils peuvent le faire pour ajouter des informations supplémentaires, comme l'endroit où plier un patron ou le contour de l'endroit où va une poche.
+Les concepteurs peuvent, s'ils le souhaitent, remplacer les épaisseurs de lignes par défaut ou définir un trait spécifique. Ils peuvent le faire pour ajouter des informations supplémentaires, comme l'endroit où plier un patron ou le contour de l'endroit où va une poche.
 
 Pour référence, voici les différentes épaisseurs de lignes disponibles :
 
@@ -124,13 +124,13 @@ Les différents styles de trait
 
 ## Annotations
 
-Annotations are extra embellishments on the pattern that further clarify the designer's intent, help with construction, or otherwise provide value to the pattern.
+Les annotations sont des embellissements supplémentaires sur le patron qui clarifient l'intention du concepteur, aident à la construction ou apportent une valeur ajoutée au patron.
 
 ### Repères
 
 Il y a deux types de repères. Le repère par défaut est un point dans un cercle.
 
-Un style alternatif montre une croix dans un cercle. Ce style est utilisé pour indiquer le dos d'un vêtement. Par exemple, sur une tête de manche vous pouvez voir un point et une croix. De cette façon, vous savez quel côté de la tête de manche est le devant (celui avec le repère en croix).
+Un style alternatif montre une croix dans un cercle. Ce style est utilisé pour indiquer le dos d'un vêtement. Par exemple, sur une tête de manche vous pouvez voir un point et une croix. De cette façon, vous savez quel côté de la tête de manche est l'arrière (celui avec le repère en croix).
 
 <Legend part="notches"> 
 
@@ -160,13 +160,13 @@ Un bouton est affiché à gauche, et une boutonnière à droite
 
 </Legend>
 
-### Point d'arrêt
+### Point de renforcement
 
-Un point d'arrêt est un point de taille et de longueur variables utilisé pour renforcer le tissu. Il est souvent utilisé sur les bords des coutures, par exemple au niveau d'une poche ou de l'ouverture d'une braguette.
+Un point de renforcement est un point de taille et de longueur variable utilisé pour renforcer le tissu. Il est souvent utilisé sur les bords des coutures, par exemple au niveau d'une poche ou de l'ouverture d'une braguette.
 
 <Legend part="bartack">
 
-C'est ainsi qu'un point d'arrêt est représenté sur un patron. 
+C'est ainsi qu'un point de renforcement est représenté sur un patron. 
 </Legend>
 
 ### Les boutons-pression
@@ -201,11 +201,11 @@ Le logo FreeSewing
 
 ### Carré/Rectangle test
 
-Le carré/rectangle test vous permet de vérifier que votre patron a été imprimé à la bonne échelle :
+Le carré/rectangle d'échelle vous permet de vérifier que votre patron a été imprimé à la bonne échelle :
 
 <Legend part="scalebox">
 
-La boite à l'échelle
+La boite d'échelle
 
 </Legend>
 

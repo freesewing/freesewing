@@ -6,6 +6,7 @@ intro: "Une utilisatrice de FreeSewing a essayé de modifier Teagan, et nous ado
 title: "Une spectaculaire Teagan à rayures"
 designs:
   - "teagan"
+author: 8
 ---
 
 Une utilisatrice de FreeSewing a essayé de modifier Teagan, et nous adorons le résultat ! Voici une petite explication qu'elle a partagée sur la façon dont elle a dessiné son Teagan et façonné les coutures latérales pour un ajustement plus serré.

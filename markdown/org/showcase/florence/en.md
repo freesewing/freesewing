@@ -1,5 +1,5 @@
 ---
-maker: "unknown"
+author: 1
 caption: "There's so many people who made our face mask, here's just a few of them"
 date: "2020-07-12"
 intro: "When we published our face mask in February, we did not anticipate that it would blow up the way it did."

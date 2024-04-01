@@ -1,44 +1,61 @@
 ---
-title: Using jargon
+title: Using jargon and terms
 ---
 
-Jargon are terms that could throw off new users.
+Jargon or terms is anything that could throw off new users.
 Rather than create a glossary on every page, we use MDX to manage
-jargon terms for us. This page shows you how to use it.
+jargon/terms for us. This page shows you how to use it.
 
 <Tip compact>Think of jargon as glossary terms</Tip>
 
-## Adding jargon terms
+## Defining terms
 
-To add a new jargon term, you first need to document it, than you can add it to
-the jargon component for the website you'd like to add it to:
+To define a term, we need to establish a link between the term itself, and the documentation page that defines it.
 
-| Website | Jargon file | GitHub link |
-| ------- | ----------- | ----------- |
-| freesewing.dev | `sites/dev/components/jargon.mjs` | [jargon.mjs](https://github.com/freesewing/freesewing/blob/develop/sites/dev/comonents/jargon.mjs) |
-| freesewing.org | `sites/org/components/jargon.mjs` | [jargon.mjs](https://github.com/freesewing/freesewing/blob/develop/sites/org/components/jargon.mjs) |
+In the most common scenario, the term is the title of the page.
+For example, the title of this page is `Using jargon and terms`:
 
-The file holds a `jargon` object that consists of key/value pairs per language.
-
-The **key** is the jargon term. It should always be lowercase because we lowercase the term before matching it.
-So in your text, you can use `ESM`, `esm`, or even `eSm`, but the key in the jargon file should be `esm`.
-
-The **value** is the URL path to the documentation page for the term.
-You do not need to include the language prefix in the doc path.
-Note that this shoud point to a page that holds MDX content.
-
-An example will make this more clear:
-
-```js
-const jargon = {
-  en: {
-    basting: 'docs/sewing/basting',
-  },
-  nl: {
-    driegen: 'docs/sewing/basting',
-  },
-}
+```mdx
+---
+title: Using jargon and terms
+---
 ```
+
+If we wanted to make it available as jargon, we only need to add the `jargon` frontmatter:
+
+```mdx
+---
+title: Using jargon and terms
+jargon: true
+---
+```
+
+## Multiple terms for the same page
+
+We can add additional terms that point to the same page by setting the `terms` in frontmatter to a comma-seperated list of terms.
+
+For example to make both `jargon` and `term` point to this page, we can do this:
+
+
+```mdx
+---
+title: Using jargon and terms
+jargon: true
+terms: jargon, term
+---
+```
+
+## Terminology per site
+
+The following pages show a list of all terminology per site:
+
+| Site | Terminology List |
+| ---- | ---------------- |
+| FreeSewing.dev | [/reference/terminology](/reference/terms) |
+| FreeSewing.org | [/docs/about/terminology](https://freesewing.org/docs/about/terms) |
+
+All of the terms listed in the pages above can be used in the markdown/mdx
+content of those websites.
 
 ## Using jargon terms in MDX content
 
@@ -64,3 +81,4 @@ export const MyComponent = () => (
   <p>Look, it works here too: <Term>esm</Term></p>
 )
 ```
+

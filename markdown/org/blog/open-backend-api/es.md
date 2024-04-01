@@ -3,7 +3,7 @@ title: Abrir la API del backend de FreeSewing
 caption: Teclado de ordenador de latón ornamentado vintage en negro, por PixaBay
 date: 20231103
 intro: La API backend de FreeSewing ahora admite claves API para que también puedas interactuar con ella
-author: joost
+author: 1
 ---
 
 Bloquear a la gente de tu API parece ser lo que está de moda hoy en día. Con sitios como Twitter -no, X- y Reddit bloqueando el acceso a la API o cobrando por ello.

@@ -6,6 +6,7 @@ intro: "Nos encantan las divertidas opciones de tejido de estos calzoncillos bó
 title: "Bruce por Ferdi"
 designs:
   - "bruce"
+author: 1972
 ---
 
 Nos encantan las divertidas opciones de tejido de estos calzoncillos bóxer Bruce. dice Ferdi:

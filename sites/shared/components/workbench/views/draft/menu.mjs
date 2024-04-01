@@ -10,7 +10,7 @@ import {
 import { UiSettings, ns as uiNs } from 'shared/components/workbench/menus/ui-settings/index.mjs'
 import { useTranslation } from 'next-i18next'
 import { patternNsFromPatternConfig, nsMerge } from 'shared/utils.mjs'
-import { SettingsIcon, OptionsIcon, DesktopIcon } from 'shared/components/icons.mjs'
+import { SettingsIcon, OptionsIcon, DesktopIcon, HelpIcon } from 'shared/components/icons.mjs'
 import { Accordion } from 'shared/components/accordion.mjs'
 import {
   FlagsAccordionTitle,
@@ -65,6 +65,13 @@ export const DraftMenu = ({
       menu: <UiSettings {...menuProps} {...{ ui, view, setView }} />,
     },
   ]
+  // Show tip for lower User Experiences
+  if (control <= 3)
+    sections.push({
+      name: 'missingSettings' + control,
+      ns: 'ui-settings',
+      icon: <HelpIcon className="w-8 h-8" />,
+    })
 
   const items = []
   if (flags)

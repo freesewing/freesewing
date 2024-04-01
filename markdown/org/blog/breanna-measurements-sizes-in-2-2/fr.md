@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Ce billet décrit les nouveautés de la version 2.2 de FreeSewing."
 date: "02-22-2020"
 intro: "Un aperçu des nouveautés de FreeSewing 2.2, y compris Breanna, notre bloc de corsage pour les vêtements féminins."

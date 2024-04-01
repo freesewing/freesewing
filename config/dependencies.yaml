@@ -3,8 +3,8 @@ _types:
     peer:
       '@freesewing/core': &freesewing '{{version}}'
     dev:
-      'mocha': &mocha '10.2.0'
-      'chai': &chai '5.0.3'
+      'mocha': &mocha '10.3.0'
+      'chai': &chai '5.1.0'
       '@freesewing/models': *freesewing
       '@freesewing/plugin-timing': *freesewing
   plugin:
@@ -55,11 +55,10 @@ core:
     'lodash.unset': &_unset '4.5.2'
     'lodash.clonedeep': '^4.5.0'
   dev:
-    'eslint': &eslint '8.56.0'
+    'eslint': &eslint '8.57.0'
     'nyc': '15.1.0'
     'mocha': *mocha
     'chai': *chai
-    'chai-string': '1.5.0'
     'sinon': &sinon '^17.0.1'
 diana:
   peer:
@@ -88,7 +87,7 @@ jaeger:
     '@freesewing/plugin-bust': *freesewing
 new-design:
   _:
-    'axios': &axios '1.6.7'
+    'axios': &axios '1.6.8'
     'chalk': '5.3.0'
     'execa': '8.0.1'
     'mustache': &mustache '4.2.0'
@@ -180,12 +179,12 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.504.0'
-    '@prisma/client': &prisma '5.9.0'
+    '@aws-sdk/client-sesv2': '3.535.0'
+    '@prisma/client': &prisma '5.11.0'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
-    'dotenv': '16.4.1'
-    'express': '4.18.2'
+    'dotenv': '16.4.5'
+    'express': '4.19.1'
     'js-yaml': &jsyaml '4.1.0'
     'lodash.get': *_get
     'mustache': *mustache
@@ -193,17 +192,17 @@ backend:
     'passport': '0.7.0'
     'passport-http': '0.3.0'
     'passport-jwt': '4.0.1'
-    'pino': '8.17.2'
+    'pino': '8.19.0'
     'qrcode': '1.5.3'
-    'swagger-ui-dist': '5.11.2'
+    'swagger-ui-dist': '5.12.0'
     'swagger-ui-express': '5.0.0'
   dev:
     'chai': *chai
     'chai-http': '4.4.0'
-    'esbuild': '0.20.0'
+    'esbuild': '0.20.2'
     'mocha': *mocha
     'mocha-steps': '1.3.0'
-    'nodemon': '3.0.3'
+    'nodemon': '3.1.0'
     'prisma': *prisma
 
 dev:
@@ -211,10 +210,10 @@ dev:
     '@mdx-js/mdx': &mdx '^3.0.0'
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': &mdxRuntime '2.0.0-next.9'
-    '@next/bundle-analyzer': &next '14.1.0'
+    '@next/bundle-analyzer': &next '14.1.4'
     '@tailwindcss/typography': &tailwindTypography '0.5.10'
     'algoliasearch': '4.22.1'
-    'daisyui': &daisyui '4.6.1'
+    'daisyui': &daisyui '4.7.3'
     'lodash.get': *_get
     'lodash.orderby': &_orderby '4.6.0'
     'lodash.set': *_set
@@ -222,7 +221,7 @@ dev:
     'react': &react '18.2.0'
     'react-copy-to-clipboard': &reactCopyToClipboard '5.1.0'
     'react-dom': *react
-    'react-hotkeys-hook': &reactHotkeysHook '4.4.4'
+    'react-hotkeys-hook': &reactHotkeysHook '4.5.0'
     'react-instantsearch-dom': &reactInstantsearchDom '6.40.4'
     'react-instantsearch-hooks-web': '6.47.3'
     'react-swipeable': &reactSwipeable '7.0.1'
@@ -238,13 +237,13 @@ dev:
     'remark-gfm': &remarkGfm '4.0.0'
     'strip-markdown': &stripMarkdown 6.0.0
   dev: &nextSiteDevDependencies
-    'autoprefixer': &autoprefixer '10.4.17'
+    'autoprefixer': &autoprefixer '10.4.19'
     'js-yaml': &jsYaml '4.1.0'
-    'postcss': &postcss '8.4.33'
+    'postcss': &postcss '8.4.38'
     'remark-extract-frontmatter': '3.2.0'
     'remark-mdx-frontmatter': &mdxfrontmatter '4.0.0'
     'tailwindcss': &tailwindcss '3.4.1'
-    'yaml-loader': '0.8.0'
+    'yaml-loader': '0.8.1'
 
 lab:
   _:
@@ -257,7 +256,7 @@ lab:
     'd3-drag': &d3drag '3.0.0'
     'd3-selection': &d3selection '3.0.0'
     'daisyui': *daisyui
-    'i18next': &i18next '23.8.1'
+    'i18next': &i18next '23.10.1'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
@@ -267,7 +266,7 @@ lab:
     'react': *react
     'react-copy-to-clipboard': *reactCopyToClipboard
     'react-hotkeys-hook': *reactHotkeysHook
-    'react-i18next': &reactI18next '14.0.1'
+    'react-i18next': &reactI18next '14.1.0'
     'react-instantsearch-dom': *reactInstantsearchDom
     'react-swipeable': *reactSwipeable
     'react-timeago': *reactTimeago
@@ -284,7 +283,7 @@ lab:
 
 org:
   _:
-    '@bugsnag/js': &bugsnag 7.22.3
+    '@bugsnag/js': &bugsnag 7.22.4
     '@bugsnag/plugin-react': 7.19.0
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
@@ -294,10 +293,10 @@ org:
     'algoliasearch': *algoliasearch
     'react-copy-to-clipboard': *reactCopyToClipboard
     'daisyui': *daisyui
-    'echarts': &echarts 5.4.3
+    'echarts': &echarts 5.5.0
     'echarts-for-react': &echartsReact 3.0.2
-    'jotai': &jotai '2.6.4'
-    'jotai-location': &jotai-location '0.5.2'
+    'jotai': &jotai '2.7.1'
+    'jotai-location': &jotai-location '0.5.4'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
@@ -320,12 +319,12 @@ org:
     'remark-mdx-frontmatter': *mdxfrontmatter
     'strip-markdown': *stripMarkdown
     'use-local-storage-state': &use-local-storage-state 19.1.0
-    'yaml-loader': 0.8.0
+    'yaml-loader': 0.8.1
   dev: *nextSiteDevDependencies
 
 shared:
   _:
-    '@next/mdx': '14.1.0'
+    '@next/mdx': *next
     '@resvg/resvg-js': '2.6.0'
     '@tailwindcss/typography': *tailwindTypography
     'Buffer': '0.0.0'
@@ -346,14 +345,14 @@ shared:
     'lodash.unset': *_unset
     'lodash.get': *_get
     'mdast-util-toc': '7.0.0'
-    'mermaid': '10.7.0'
+    'mermaid': '10.9.0'
     'ora': *ora
     'pdfkit': &pdfkit '0.14.0'
     'postcss-for': &postcssfor '2.1.1'
     'react': *react
     'react-dom': *react
     'react-timeago': *reactTimeago
-    'react-zoom-pan-pinch': &zoompanpinch '3.4.1'
+    'react-zoom-pan-pinch': &zoompanpinch '3.4.3'
     'rehype-autolink-headings': *rehypeAutolinkHeadings
     'rehype-highlight': *rehypeHighlight
     'remark-frontmatter': &remarkfrontmatter '5.0.0'
@@ -362,7 +361,7 @@ shared:
     "slugify": &slugify "^1.6.6"
     # see: https://github.com/npm/cli/issues/2610#issuecomment-1295371753
     'svg-to-pdfkit': &svgtopdfkit 'https://git@github.com/eriese/SVG-to-PDFKit'
-    'tlds': &rlds '1.249.0'
+    'tlds': &rlds '1.251.0'
     'to-vfile': '8.0.0'
     'unist-util-visit': *unist-util-visit
     'use-local-storage-state': *use-local-storage-state

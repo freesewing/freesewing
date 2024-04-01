@@ -1,5 +1,6 @@
 ---
 title: Spelden
+jargon: true
 ---
 
 ![Kopspelden maken deel uit van de basisbenodigdheden](sewing-pins.jpg)

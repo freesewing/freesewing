@@ -49,7 +49,7 @@
     },
     "shoulderDart": {
       "t": "Shoulder dart",
-      "d": "Whether or not to inlude a dart at the shoulder to round the back"
+      "d": "Whether or not to include a dart at the shoulder to round the back"
     },
     "shoulderDartNo": {
       "t": "Do not draft a shoulder dart",
@@ -157,7 +157,7 @@
     },
     "waistDart": {
       "t": "Waist dart",
-      "d": "Whether or not to inlude a dart at the waist to round the back"
+      "d": "Whether or not to include a dart at the waist to round the back"
     },
     "waistDartNo": {
       "t": "Do not draft a waist dart",

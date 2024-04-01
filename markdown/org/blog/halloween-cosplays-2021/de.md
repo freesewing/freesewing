@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Ein bisschen kalt vielleicht, aber Badehosen: Wir haben sie"
 date: "2021-10-20"
 intro: "Wenn du deinen Lieblingscharakter verkörperst, kann das ein wirklich lustiges Halloween-Erlebnis sein! Hier sind einige ikonische Figuren, die dich inspirieren werden."

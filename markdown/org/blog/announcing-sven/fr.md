@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Un Sven se dirige vers le bureau. Comme dans, un peu ennuyeux"
 date: "2017-07-09"
 intro: "C'est l'hiver qui m'a poussé à concevoir ce modèle. J'avais froid et j'avais besoin de quelques pulls, alors que faire ?"

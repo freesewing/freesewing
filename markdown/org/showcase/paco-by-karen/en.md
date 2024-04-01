@@ -5,6 +5,7 @@ date: "2021-04-01"
 intro: "The Pacos were made in a rayon challis, with the default options (and the front rise lowered a touch). They're modelled here with a bonus Teagan T-shirt."
 title: "Tropical Pacos"
 designs: ["paco","teagan"]
+author: 13050
 ---
 
 The Pacos were made in a rayon challis, with the default options (and the front rise lowered a touch). They're modelled here with a bonus Teagan T-shirt.

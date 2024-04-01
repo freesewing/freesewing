@@ -1,5 +1,5 @@
 ---
-maker: "Joost De Cock"
+author: 1
 caption: "Oui, ce t-shirt vintage Atari est aussi assez chouette."
 date: "2017-10-18"
 intro: "Ce billet est apparu initialement sur le fil Instagram de joostdecock ."

@@ -1,5 +1,5 @@
 ---
-maker: "Joost De Cock"
+author: 1
 caption: "The first ever pair of Charlie Chinos"
 date: "2021-05-23"
 intro: "Joost made this pair of Charlie Chinos trousers and the entire FreeSewing community immediately fell for the trousers' design and the fabric. While Joost couldn't tell us where the fabric came from (it was from his stash), he  release the Charlie pattern a few days later."

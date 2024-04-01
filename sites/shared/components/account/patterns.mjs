@@ -42,6 +42,7 @@ import {
   BoolNoIcon,
   LockIcon,
   PatternIcon,
+  BookmarkIcon,
 } from 'shared/components/icons.mjs'
 import { DisplayRow } from './shared.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
@@ -59,6 +60,7 @@ export const ShowPattern = ({ id }) => {
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
+  const { account } = useAccount()
 
   // State
   const [pattern, setPattern] = useState()
@@ -73,7 +75,7 @@ export const ShowPattern = ({ id }) => {
         result = await backend.getPattern(id)
         if (result.success) {
           setPattern(result.data.pattern)
-          setIsOwn(true)
+          if (result.data.pattern.userId === account.userId) setIsOwn(true)
           setLoadingStatus([true, 'backendLoadingCompleted', true, true])
         } else {
           result = await backend.getPublicPattern(id)
@@ -89,6 +91,26 @@ export const ShowPattern = ({ id }) => {
     }
     if (id) getPattern()
   }, [id])
+
+  const bookmarkPattern = async () => {
+    setLoadingStatus([true, 'creatingBookmark'])
+    const result = await backend.createBookmark({
+      type: 'pattern',
+      title: pattern.name,
+      url: `/patterns?id=${pattern.id}`,
+    })
+    if (result.success) {
+      const id = result.data.bookmark.id
+      setLoadingStatus([
+        true,
+        <>
+          {t('status:bookmarkCreated')} <small>[#{id}]</small>
+        </>,
+        true,
+        true,
+      ])
+    } else setLoadingStatus([true, 'backendError', true, false])
+  }
 
   if (!pattern) return <p>loading</p>
 
@@ -130,6 +152,13 @@ export const ShowPattern = ({ id }) => {
               <img src={cloudflareImageUrl({ id: pattern.img, variant: 'sq500' })} />
             </Lightbox>
           </DisplayRow>
+          {account.id ? (
+            <button className="btn btn-primary btn-outline mb-2 w-full" onClick={bookmarkPattern}>
+              <div className="flex flex-row items-center justify-between w-full">
+                <BookmarkIcon /> {t('bookmark')}
+              </div>
+            </button>
+          ) : null}
           <Link
             href={newPatternUrl({ design: pattern.design, settings: pattern.settings })}
             className={`btn btn-primary ${horFlexClasses}`}

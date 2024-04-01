@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "This post describes what's new in version 2.2 of FreeSewing"
 date: "2020-02-22"
 intro: "A look at what's new in FreeSewing 2.2, including Breanna, our bodice block for womenswear"

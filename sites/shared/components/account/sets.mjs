@@ -25,6 +25,8 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { BackToAccountButton } from './shared.mjs'
 import { AnchorLink, PageLink, Link } from 'shared/components/link.mjs'
+import { Json } from 'shared/components/json.mjs'
+import { Yaml } from 'shared/components/yaml.mjs'
 import {
   OkIcon,
   NoIcon,
@@ -38,6 +40,7 @@ import {
   CsetIcon,
   BoolYesIcon,
   BoolNoIcon,
+  CloneIcon,
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { Mdx } from 'shared/components/mdx/dynamic.mjs'
@@ -45,6 +48,7 @@ import Timeago from 'react-timeago'
 import { DisplayRow } from './shared.mjs'
 import {
   StringInput,
+  ToggleInput,
   PassiveImageInput,
   ListInput,
   MarkdownInput,
@@ -63,14 +67,18 @@ export const NewSet = () => {
   const backend = useBackend()
   const { t } = useTranslation(ns)
   const router = useRouter()
+  const { account } = useAccount()
 
   // State
   const [name, setName] = useState('')
 
+  // Use account setting for imperial
+  const imperial = account.imperial
+
   // Helper method to create a new set
   const createSet = async () => {
     setLoadingStatus([true, 'processingUpdate'])
-    const result = await backend.createSet({ name })
+    const result = await backend.createSet({ name, imperial })
     if (result.success) {
       setLoadingStatus([true, t('nailedIt'), true, true])
       router.push(`/account/set?id=${result.data.set.id}`)
@@ -230,6 +238,7 @@ export const Mset = ({ id, publicOnly = false }) => {
   const [imperial, setImperial] = useState(mset?.imperial ? true : false)
   const [notes, setNotes] = useState(mset?.notes || '')
   const [measies, setMeasies] = useState({})
+  const [displayAsMetric, setDisplayAsMetric] = useState(mset?.imperial ? false : true)
 
   // Effect
   useEffect(() => {
@@ -306,6 +315,32 @@ export const Mset = ({ id, publicOnly = false }) => {
     } else setLoadingStatus([true, 'backendError', true, false])
   }
 
+  const togglePublic = async () => {
+    setLoadingStatus([true, 'gatheringInfo'])
+    const result = await backend.updateSet(mset.id, { public: !mset.public })
+    if (result.success) {
+      setMset(result.data.set)
+      setLoadingStatus([true, 'nailedIt', true, true])
+    } else setLoadingStatus([true, 'backendError', true, false])
+  }
+
+  const importSet = async () => {
+    setLoadingStatus([true, t('account.importing')])
+    // Compile data
+    const data = {
+      ...mset,
+      userId: account.id,
+      measies: { ...mset.measies },
+    }
+    delete data.img
+    const result = await backend.createSet(data)
+    if (result.success) {
+      setMset(result.data.set)
+      setEdit(false)
+      setLoadingStatus([true, 'nailedIt', true, true])
+    } else setLoadingStatus([true, 'backendError', true, false])
+  }
+
   const docs = {}
   for (const option of ['name', 'units', 'public', 'notes', 'image']) {
     docs[option] = <DynamicMdx language={i18n.language} slug={`docs/about/site/sets/${option}`} />
@@ -318,7 +353,7 @@ export const Mset = ({ id, publicOnly = false }) => {
           <MsetCard set={mset} control={control} />
         </div>
         <div className="flex flex-col justify-end gap-2 mb-2 grow">
-          {account.control > 3 && mset.public ? (
+          {account.control > 2 && mset.public && mset.userId !== account.id ? (
             <div className="flex flex-row gap-2 items-center">
               <a
                 className="badge badge-secondary font-bold badge-lg"
@@ -336,7 +371,45 @@ export const Mset = ({ id, publicOnly = false }) => {
           ) : (
             <span></span>
           )}
-          {account.control > 2 && mset.userId === account.id ? (
+          {account.control > 3 && mset.userId === account.id ? (
+            <div className="flex flex-row gap-2 items-center">
+              <button
+                className="badge badge-secondary font-bold badge-lg"
+                onClick={() =>
+                  setModal(
+                    <ModalWrapper keepOpenOnClick>
+                      <Json js={mset} />
+                    </ModalWrapper>
+                  )
+                }
+              >
+                JSON
+              </button>
+              <button
+                className="badge badge-success font-bold badge-lg"
+                onClick={() =>
+                  setModal(
+                    <ModalWrapper keepOpenOnClick>
+                      <Yaml js={mset} />
+                    </ModalWrapper>
+                  )
+                }
+              >
+                YAML
+              </button>
+            </div>
+          ) : (
+            <span></span>
+          )}
+          {account.id && account.control > 2 && mset.public && mset.userId !== account.id ? (
+            <button className="btn btn-primary" title={t('account:importSet')} onClick={importSet}>
+              <div className="flex flex-row gap-4 justify-between items-center w-full">
+                <UploadIcon />
+                {t('account:importSet')}
+              </div>
+            </button>
+          ) : null}
+          {account.control > 2 ? (
             <BookmarkButton slug={`sets/${mset.id}`} title={mset.name} type="set" thing="set" />
           ) : null}
           <button
@@ -398,6 +471,14 @@ export const Mset = ({ id, publicOnly = false }) => {
               )}
             </>
           )}
+          {account.control > 2 && mset.userId === account.id ? (
+            <button className="btn btn-neutral" title={t('account:cloneSet')} onClick={importSet}>
+              <div className="flex flex-row gap-4 justify-between items-center w-full">
+                <CloneIcon />
+                {t('account:cloneSet')}
+              </div>
+            </button>
+          ) : null}
         </div>
       </div>
       <div className="flex flex-row flex-wrap gap-4 text-sm items-center justify-between mb-2"></div>
@@ -416,23 +497,11 @@ export const Mset = ({ id, publicOnly = false }) => {
     return (
       <div className="max-w-2xl">
         {heading}
-        {Object.keys(mset.measies).length > 0 && (
-          <>
-            <h2>{t('measies')}</h2>
-            {Object.entries(mset.measies).map(([m, val]) =>
-              val > 0 ? (
-                <DisplayRow title={<MeasieVal {...{ m, val, imperial: mset.imperial }} />} key={m}>
-                  <span className="font-medium">{t(m)}</span>
-                </DisplayRow>
-              ) : null
-            )}
-          </>
-        )}
 
         <h2>{t('data')}</h2>
         <DisplayRow title={t('name')}>{mset.name}</DisplayRow>
         <DisplayRow title={t('units')}>
-          {mset.imperial ? t('imerialUnits') : t('metricUnits')}
+          {mset.imperial ? t('imperialUnits') : t('metricUnits')}
         </DisplayRow>
         {control >= controlLevels.sets.notes && (
           <DisplayRow title={t('notes')}>
@@ -441,13 +510,20 @@ export const Mset = ({ id, publicOnly = false }) => {
         )}
         {control >= controlLevels.sets.public && (
           <>
-            <DisplayRow title={t('public')}>
-              {mset.public ? (
-                <OkIcon className="w-6 h-6 text-success" stroke={4} />
-              ) : (
-                <NoIcon className="w-6 h-6 text-error" stroke={3} />
-              )}
-            </DisplayRow>
+            {mset.userId === account.id && (
+              <DisplayRow title={t('public')}>
+                <div className="flex flex-row gap-2 items-center justify-between">
+                  {mset.public ? (
+                    <OkIcon className="w-6 h-6 text-success" stroke={4} />
+                  ) : (
+                    <NoIcon className="w-6 h-6 text-error" stroke={3} />
+                  )}
+                  <button className="btn btn-secondary btn-sm" onClick={togglePublic}>
+                    {t(`account:make${mset.public ? 'Private' : 'Public'}`)}
+                  </button>
+                </div>
+              </DisplayRow>
+            )}
             {mset.public && (
               <DisplayRow title={t('permalink')}>
                 <PageLink href={`/set?id=${mset.id}`} txt={`/set?id=${mset.id}`} />
@@ -470,6 +546,28 @@ export const Mset = ({ id, publicOnly = false }) => {
           </DisplayRow>
         )}
         {control >= controlLevels.sets.id && <DisplayRow title={t('id')}>{mset.id}</DisplayRow>}
+
+        {Object.keys(mset.measies).length > 0 && (
+          <>
+            <h2>{t('measies')}</h2>
+            <ToggleInput
+              label={false}
+              labels={[t('account:metricUnits'), t('account:imperialUnits')]}
+              update={() => setDisplayAsMetric(!displayAsMetric)}
+              current={displayAsMetric}
+            />
+            {Object.entries(mset.measies).map(([m, val]) =>
+              val > 0 ? (
+                <DisplayRow
+                  title={<MeasieVal {...{ m, val, imperial: !displayAsMetric }} />}
+                  key={m}
+                >
+                  <span className="font-medium">{t(m)}</span>
+                </DisplayRow>
+              ) : null
+            )}
+          </>
+        )}
       </div>
     )
 
@@ -598,35 +696,38 @@ export const Mset = ({ id, publicOnly = false }) => {
       {/* units: Control level determines whether or not to show this */}
       <span id="units"></span>
       {account.control >= conf.account.sets.units ? (
-        <ListInput
-          id="set-units"
-          label={t('units')}
-          update={setImperial}
-          list={[
-            {
-              val: false,
-              label: (
-                <div className="flex flex-row items-center flex-wrap justify-between w-full">
-                  <span>{t('metricUnits')}</span>
-                  <span className="text-inherit text-2xl pr-2">cm</span>
-                </div>
-              ),
-              desc: t('metricUnitsd'),
-            },
-            {
-              val: true,
-              label: (
-                <div className="flex flex-row items-center flex-wrap justify-between w-full">
-                  <span>{t('imperialUnits')}</span>
-                  <span className="text-inherit text-4xl pr-2">″</span>
-                </div>
-              ),
-              desc: t('imperialUnitsd'),
-            },
-          ]}
-          current={imperial}
-          docs={docs.units}
-        />
+        <>
+          <ListInput
+            id="set-units"
+            label={t('units')}
+            update={setImperial}
+            list={[
+              {
+                val: false,
+                label: (
+                  <div className="flex flex-row items-center flex-wrap justify-between w-full">
+                    <span>{t('metricUnits')}</span>
+                    <span className="text-inherit text-2xl pr-2">cm</span>
+                  </div>
+                ),
+                desc: t('metricUnitsd'),
+              },
+              {
+                val: true,
+                label: (
+                  <div className="flex flex-row items-center flex-wrap justify-between w-full">
+                    <span>{t('imperialUnits')}</span>
+                    <span className="text-inherit text-4xl pr-2">″</span>
+                  </div>
+                ),
+                desc: t('imperialUnitsd'),
+              },
+            ]}
+            current={imperial}
+            docs={docs.units}
+          />
+          <span className="text-large text-warning">{t('unitsMustSave')}</span>
+        </>
       ) : null}
 
       {/* notes: Control level determines whether or not to show this */}
@@ -716,6 +817,15 @@ export const Sets = () => {
       {sets.length > 0 ? (
         <>
           <p className="text-center md:text-right">
+            <Link
+              className="btn btn-primary btn-outline capitalize w-full md:w-auto mr-2"
+              bottom
+              primary
+              href="/account/import"
+            >
+              <UploadIcon />
+              {t('account:importSets')}
+            </Link>
             <Link
               className="btn btn-primary capitalize w-full md:w-auto"
               bottom

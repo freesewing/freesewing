@@ -6,6 +6,7 @@ intro: "De \"octopus\" variant van Octoplushy"
 title: "De \"octopus\" variant van Octoplushy"
 designs:
   - "octoplushy"
+author: 132
 ---
 
 Dit is de originele "octopus" variant van Octoplushy zoals gemaakt door de ontwerper, Wouter.

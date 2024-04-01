@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Cette image est probablement la seule chose dans le article que vous pourrez parcourir en diagonale"
 date: "2018-02-14"
 intro: "Le Règlement Général sur la Protection des Données de l'Union Européenne: Notre plan de bataille."

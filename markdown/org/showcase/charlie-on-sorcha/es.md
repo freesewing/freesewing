@@ -1,5 +1,5 @@
 ---
-maker: "desconocido"
+author: 1
 caption: "Un par de Chinos Charlie en Sorcha"
 date: "2021-05-16"
 intro: "Sorcha posa con unos chinos Charlie ."

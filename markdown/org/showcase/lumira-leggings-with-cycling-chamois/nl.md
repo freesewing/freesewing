@@ -6,6 +6,7 @@ intro: De Lumira legging is ontworpen met veel opties, waaronder een tailleband,
 designs:
   - lumira
 maker: Natalia
+author: 132
 ---
 
 De Lumira legging is ontworpen met veel opties, waaronder een tailleband, optioneel kruis en een opbollingsoptie. Deze versie is met de fietszeem, maar hetzelfde ontwerp werkt ook voor yoga leggings en alles daar tussenin. We zijn allemaal enthousiast om onze kasten te vullen met variaties van Lumira!

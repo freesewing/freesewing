@@ -3,7 +3,7 @@ title: "Anuncio de FreeSewing v3.0"
 caption: "Esta foto de Engin Akyurt parece el tipo de celebración discreta adecuada para este anuncio."
 date: 20230930
 intro: "The 3.0 release culminates more than a year of work, and comes just over four years after the v2.0 release.  What I’m saying is: I don’t make announcements like this often, and it’s a big deal. Deberías emocionarte."
-author: joost
+author: 1
 ---
 
 The 3.0 release culminates more than a year of work, and comes just over four years after the v2.0 release.

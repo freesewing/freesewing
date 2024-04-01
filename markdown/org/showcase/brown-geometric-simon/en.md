@@ -5,6 +5,7 @@ date: "2023-05-28"
 intro: "The sixth Simon for this sewist, we love this geometric patterned Simon in a shade of brown crisscrossed with thin white lines. The creator dropped this in a GitHub issue to share with FreeSewing, and we couldn't be more pleased."
 title: "A brown geometric Simon"
 designs: ["simon"]
+author: 1972
 ---
 
 The sixth Simon for this sewist, we love this geometric patterned Simon in a shade of brown crisscrossed with thin white lines. The creator dropped this in a GitHub issue to share with FreeSewing, and we couldn't be more pleased.

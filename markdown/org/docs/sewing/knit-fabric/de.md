@@ -1,5 +1,6 @@
 ---
 title: Strickstoff
+jargon: stimmt
 ---
 
 ![Ein Stück graues (Französisch Terry) Trikot, ein Strickstoff](fabric.jpg)

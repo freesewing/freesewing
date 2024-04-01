@@ -1,11 +1,23 @@
 uiSettings.t: Préférences de l'interface utilisateur
 uiSettings.d: Ces préférences contrôlent les aspects de l'interface utilisateur de notre environnement de création de patrons en ligne.
+missingSettings1.t: (Paramètres manquants ?)
+missingSettings1.d: Tu ne trouves pas un paramètre (comme la marge de couture, la langue ou les pièces incluses) ? Change de niveau d'expérience utilisateur (à l'aide des boutons en haut) pour faire apparaître les paramètres qui ont été cachés !
+missingSettings2.t: (Paramètres manquants ?)
+missingSettings2.d: Tu ne trouves pas un paramètre (comme la langue, les pièces incluses ou les détails) ? Change de niveau d'expérience utilisateur (à l'aide des boutons en haut) pour faire apparaître les paramètres qui ont été cachés !
+missingSettings3.t: (Paramètres manquants ?)
+missingSettings3.d: Tu ne trouves pas un paramètre (comme les pièces incluses, les détails ou développer) ? Change de niveau d'expérience utilisateur (à l'aide des boutons en haut) pour faire apparaître les paramètres qui ont été cachés !
 renderer.t: Moteur de Rendu
 renderer.d: Contrôle comment le patron est restitué (dessiné) à l'écran
 renderWithReact.t: Rendu avec les composants React de FreeSewing
 renderWithReact.d: Rendu en tant que SVG par l'intermédiaire de nos composants React. Permet l'interactivité et est optimisé pour l'écran. Utilise ceci si tu n'es pas sûr de ce que tu dois choisir.
-renderWithCore.t: Render with FreeSewing's Core library
+renderWithCore.t: Rendu avec la bibliothèque de Freesewing
 renderWithCore.d: Rendu directement en SVG à partir de Core. Ne permet aucune interactivité et est optimisé pour l'impression. Utilise-le si tu veux savoir à quoi il ressemblera une fois exporté.
+kiosk.t: Mode kiosque
+kiosk.d: Contrôle comment la page web est affichée.
+websiteMode.t: Utiliser le mode site web
+websiteMode.d: Affiche la page Web complète, y compris l'en-tête, le pied de page et la navigation.
+kioskMode.t: Utilise le mode kiosque
+kioskMode.d: Affiche uniquement la partie de la page Web consacrée au dessin du patron, sans l'en-tête, le pied de page ou la navigation.
 control.t: Expérience de l'utilisateur
 control.d: Quelle expérience utilisateur préfères-tu ? Note qu'il s'agit d'un paramètre de compte, il aura donc un impact sur l'ensemble du site Web.
 inspect.t: Inspecter

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Als introvertierter Mensch sage ich das nicht oft, aber ich würde Sie eigentlich gerne kennenlernen."
 date: "2018-12-10"
 intro: "Wir treffen uns im 2019! Und andere Jahresendbetrachtungen"

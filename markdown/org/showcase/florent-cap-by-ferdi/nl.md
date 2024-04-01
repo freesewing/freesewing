@@ -6,6 +6,7 @@ intro: "Deze verfijnde Florent pet is van Ferdi, die zei:"
 title: "Florent pet door Ferdi"
 designs:
   - "florent"
+author: 1972
 ---
 
 Deze verfijnde Florent pet is van Ferdi, die zei:

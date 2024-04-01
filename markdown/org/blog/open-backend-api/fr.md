@@ -3,7 +3,7 @@ title: Ouvrir l'API de FreeSewing
 caption: Une touche vintage ornée en laiton sur un clavier d'ordinateur noir, par PixaBay
 date: 20231103
 intro: L'API du backend de FreeSewing prend maintenant en charge les clés d'API afin que tu puisses également interagir avec elle.
-author: joost
+author: 1
 ---
 
 Verrouiller les personnes de ton API semble être la chose à la mode de nos jours. Avec des sites comme Twitter -- nay, X -- et Reddit qui verrouillent l'accès à l'API ou font payer l'accès.

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Foto door Karolina Grabowska van Pexels"
 date: "2021-06-27"
 intro: "Aankondiging van Ursula, een basispatroon voor ondergoed dat je zelf kunt aanpassen"

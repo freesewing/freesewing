@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "El cambio más importante es, obviamente, que hemos pasado del morado al negro como color distintivo."
 date: "2018-05-24"
 intro: "Bienvenido a nuestro nuevo sitio web. Cumple la normativa GDPR, habla 3 idiomas y huele a pintura húmeda"

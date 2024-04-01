@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Doe er een strikje rond"
 date: "2017-11-14"
 intro: "Onze familie van FreeSewing-patronen is opnieuw gegroeid. En de benjamin van de familie is ... Benjamin ."

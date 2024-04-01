@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Je suppose que c'est à cela que ressemble la réalité augmentée ?"
 date: "2018-09-29"
 intro: "Il y a quelque temps, j'ai eu besoin d'un nouveau maillot de bain. J'ai donc dessiné un modèle et j'en ai fabriqué :"

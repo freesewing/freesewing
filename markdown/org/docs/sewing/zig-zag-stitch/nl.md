@@ -1,5 +1,6 @@
 ---
 title: Zigzagsteek
+jargon: true
 ---
 
 ![Een zigzagsteek wordt gebruikt om te voorkomen dat de NT van de jeansstof uitrafelt](zig-zag.jpg)

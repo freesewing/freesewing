@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "A Sven made for the office. As in, kinda boring"
 date: "2017-07-09"
 intro: "Winter caused me to design this pattern. I was cold, and needed some sweaters, so what does one do?"

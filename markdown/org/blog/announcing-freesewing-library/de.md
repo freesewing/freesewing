@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Ich trinke nicht, aber das schien für einen Festbeitrag angemessen zu sein ¯\_(ツ)_/¯"
 date: "2018-08-25"
 intro: "Wir feiern ein Jahr von FreeSewing.org: Ankündigung der FreeSewing-Library"

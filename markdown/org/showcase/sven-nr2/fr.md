@@ -1,5 +1,5 @@
 ---
-maker: "inconnue"
+author: 1
 caption: "Ce tissu contient de la laine et il est super chaud."
 date: "2017-02-18"
 intro: "FIXME_no_intro"

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Deze lancering is echt een aardverschuiving."
 date: "2019-08-25"
 intro: "Welkom aan versie 2 van FreeSewing, het open source-platform voor naaipatronen op maat."

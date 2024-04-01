@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Die wichtigste Änderung ist natürlich, dass wir von Lila zu Schwarz als unsere Signaturfarbe gewechselt haben."
 date: "2018-05-24"
 intro: "Willkommen auf unserer neuen Website. Es ist GDPR-konform, spricht 3 Sprachen und riecht nach nasser Farbe"

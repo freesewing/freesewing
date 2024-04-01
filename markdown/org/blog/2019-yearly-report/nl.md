@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Close-up van een paardebloem op een roze achtergrond"
 date: "2019-12-10"
 intro: "4109 redenen om tevreden te zijn met 2019"

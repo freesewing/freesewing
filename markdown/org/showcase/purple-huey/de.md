@@ -1,5 +1,5 @@
 ---
-maker: "Joost De Cock"
+author: 1
 caption: "Ja, das alte Atari-T-Shirt ist auch ziemlich süß."
 date: "2017-10-18"
 intro: "Dieser Beitrag ist ursprünglich auf dem Instagram-Feed von joostdecock erschienen."

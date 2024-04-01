@@ -6,6 +6,7 @@ intro: "Un utilisateur de FreeSewing a bricolé le tee-shirt de Teagan pour qu'i
 title: "Une belle abeille Teagan en tissu tissé"
 designs:
   - "teagan"
+author: 13050
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "La amiga de Gaëlle con su nueva sudadera Hugo"
 date: "2023-02-15"
 intro: "Gaëlle hizo este Hugo cubierto de alegres monstruitos... bueno, no sé muy bien cómo llamar a estos monstruitos garabateados, pero está claro que son geniales. Es para una amiga, y nos encantaría recibir algo tan fabuloso.  Fíjate en ese impresionante canalé a rayas coordinado."

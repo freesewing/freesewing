@@ -4,6 +4,7 @@ contactingGitHub: Звернення до GitHub
 contactingGoogle: Звернення до Google
 copiedToClipboard: Скопійовано в буфер обміну
 dataLoaded: Завантажені дані з бекенду FreeSewing
+failed: Failed
 generatingPdf: Створюємо ваш PDF, одну хвилину, будь ласка
 nailedIt: Влучив!
 pdfFailed: An unexpected error occurred while generating your PDF

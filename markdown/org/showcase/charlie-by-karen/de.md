@@ -6,6 +6,7 @@ intro: "Diese Charlies wurden aus lilafarbenem Stretch-Twill gefertigt, mit eine
 title: "Lila Charlies"
 designs:
   - "charlie"
+author: 13050
 ---
 
 

@@ -1,5 +1,6 @@
 ---
 title: Knit fabric
+jargon: true
 ---
 
 ![A piece of grey (French Terry) jersey, a knit fabric](fabric.jpg)

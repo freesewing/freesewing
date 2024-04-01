@@ -1,5 +1,5 @@
 ---
-maker: "inconnue"
+author: 1
 caption: "Une paire de Charlie Chinos sur Sorcha"
 date: "2021-05-16"
 intro: "Sorcha pose dans une paire de pantalons Charlie."

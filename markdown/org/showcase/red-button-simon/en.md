@@ -1,5 +1,5 @@
 ---
-maker: "Joost De Cock"
+author: 1
 caption: "A Simon shirt by Joost"
 date: "2017-04-03"
 intro: "A Simon shirt with red contrasting buttons."

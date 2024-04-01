@@ -6,6 +6,7 @@ intro: "Ces Charlies ont été fabriquées dans un sergé extensible violet, ave
 title: "Charlies mauves"
 designs:
   - "charlie"
+author: 13050
 ---
 
 

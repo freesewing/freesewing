@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "¿Sabías que Sandy debe su nombre al personaje de Olivia Newton-John en la movida Grease?"
 date: "2018-08-01"
 intro: "Señoras y señores -porque quién dice que los hombres no pueden llevar faldas-, me complace anunciar la disponibilidad inmediata de nuestro último patrón de costura libre: la falda circular Sandy."

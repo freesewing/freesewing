@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Gardez vos vêtements faits maison propres en cuisinant avec le tablier Albert"
 date: "2020-10-17"
 intro: "Que feriez-vous si votre fille avait besoin d'un tablier pour l'école ?"

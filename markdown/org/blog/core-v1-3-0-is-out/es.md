@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Básculas, ¿cómo funcionan?"
 date: "2018-01-04"
 intro: "Ya está disponible el núcleo de Freesewing v1.3.0; viene con correcciones tan buenas que las hemos retroportado a todos tus borradores"

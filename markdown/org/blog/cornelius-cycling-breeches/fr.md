@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Faire du vélo comme un vrai gentilhomme"
 date: "2021-03-06"
 intro: "Wouter remet ça, cette fois-ci il nous régale avec une culotte cycliste classique."

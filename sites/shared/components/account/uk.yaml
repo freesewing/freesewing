@@ -13,6 +13,7 @@ created: Створено
 updated: Оновлено
 expires: Закінчується
 role: Роль
+yourApikeys: Your API Keys
 yourProfile: Ваш профіль
 yourPatterns: Ваші візерунки
 yourSets: Ваші набори вимірювань
@@ -55,6 +56,7 @@ clonePattern: Шаблон клонування
 updatePattern: Шаблон оновлення
 reload: Перезавантажити обліковий запис
 export: Експортуйте Ваші дані
+import: Import data
 exportMsg: Натисніть нижче, щоб експортувати ваші персональні дані
 exportNote: Загальний регламент ЄС про захист даних (GDPR) гарантує вам так зване право на перенесення даних - право на отримання та повторне використання ваших персональних даних для власних цілей або в різних сервісах.
 exportDownload: "Ваші дані були експортовані і доступні для завантаження за наступним посиланням:"
@@ -70,7 +72,7 @@ or: або
 continue: Продовжити
 save: Зберегти
 noThanks: Ні, дякую.
-areYouCertain: Ти впевнений?
+areYouCertain: Ви впевнені?
 delete: Видалити
 #reload
 nailedIt: Зрозумів.
@@ -121,6 +123,7 @@ metricUnitsd: Виберіть це, якщо ви віддаєте перева
 imperialUnits: Імперські одиниці (дюйм)
 imperialUnitsd: Виберіть цей параметр, якщо ви віддаєте перевагу дюймам, а не сантиметрам.
 unitsTitle: Яким одиницям ви віддаєте перевагу?
+displayUnits: Display units
 #username
 usernameTitle: Яке ім'я користувача ви б хотіли?
 usernameAvailable: Ім'я користувача доступне
@@ -142,6 +145,8 @@ tooComplex: Якщо все це збиває з пантелику, ви мож
 languageTitle: Якій мові ви віддаєте перевагу?
 #password
 passwordTitle: Щось, що знаєш тільки ти.
+#id
+userId: User ID
 #api key
 newApikey: Згенеруйте новий ключ API
 keyNewInfo: Створіть новий ключ API для автоматичного підключення до бекенду FreeSewing.
@@ -242,6 +247,10 @@ itIsAvailableAt: Вона доступна за посиланням
 csetNameMsg: Кожна кураторська добірка має назву. Ви можете запропонувати власне ім'я або псевдонім.
 missing: Missing
 andMore: and more
+unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
+makePublic: Make public
+makePrivate: Make private
+pattern: Викрійка
 patternNew: Створіть новий шаблон
 patternNewInfo: Виберіть дизайн, додайте свої мірки, і ми створимо для вас індивідуальну викрійку.
 designNew: Створіть новий дизайн
@@ -262,8 +271,14 @@ newPopular: Найпопулярніші
 newShare: Поділитися / Показати
 newDev: Проектування / розробка
 generateANewThing: "Створіть новий { thing }"
-website: Веб-сайт
 linkedIdentities: Пов'язані ідентичності
+github: GitHub
+instagram: Інстаграм
+mastodon: Mastodon
+reddit: Reddit
+twitch: Twitch
+tiktok: TikTok
+website: Веб-сайт
 websiteTitle: У вас є веб-сайт або інша URL-адреса, яку ви хотіли б додати?
 platformTitle: Хто ви на { platform }?
 platformWhy: Ми не використовуємо ці дані жодним чином. Це лише для того, щоб користувачі FreeSewing могли з'єднати точки на різних платформах.
@@ -276,6 +291,7 @@ code: Код
 aboutThing: Про { thing }
 requiredMeasurements: Необхідні заміри
 optionalMeasurements: Додаткові заміри
+none: Жодне
 designOptions: Варіанти дизайну
 parts: Деталі
 plugins: Плагіни
@@ -288,3 +304,15 @@ ownPublicPattern: Це публічний перегляд одного з ва�
 ownPrivatePattern: Це приватний перегляд вашого шаблону. Публічний перегляд працюватиме для вас, навіть якщо шаблон є приватним. Для інших він працюватиме лише тоді, коли шаблон буде загальнодоступним.
 privateView: Приватний перегляд
 publicView: Публічний перегляд
+importHere: This page allows you to import data into your FreeSewing account.
+importSupported: Currently, we support importing the following types of data
+importSets: Import Measurements Sets
+importSet: Import Measurements Set
+cloneSet: Clone Measurements Set
+measieFile: Measurements file
+dragAndDropFileHere: Drag and drop your file here
+importSetTip1: To import a measurement set, you should have a JSON or YAML file that has the following structure
+importSetTip2: Your file can either contain a single measurements set, or an array of multiple measurements sets.
+importing: Importing
+imported: Imported
+importFailed: Import failed

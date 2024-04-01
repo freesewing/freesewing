@@ -1,5 +1,5 @@
 ---
-maker: "Ramoth"
+author: 23386
 caption: "Ramoth's impressive first Simon"
 date: "2021-08-24"
 intro: "Ramoth made this fantastic first draft of the Simon shirt and generously shared some helpful fit notes. They said:"

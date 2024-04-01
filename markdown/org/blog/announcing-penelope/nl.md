@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "De patroon illustratie voor Penelope"
 date: "2018-06-29"
 intro: "Ik ben erg blij te kunnen aankondigen dat de Penelope Pencil Skirt, die vandaag uit is in bèta, nu direct verkrijgbaar is."

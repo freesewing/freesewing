@@ -6,6 +6,7 @@ intro: "Een formele Aaron, voor feestjes"
 title: "Een formele Aaron, voor feestjes"
 designs:
   - "aaron"
+author: 13050
 ---
 
 Hoi! Met TangerineShark. Ik heb deze top gemaakt voor een repetitiediner van een bruiloft waar ik in september bij moest zijn (toen het nog warm genoeg was voor de "sun's out, tum's out"-filosofie), en geloof het of niet, het is een Aaron! Misschien is dat niet echt superverrassend, maar het heeft wel een paar aanpassingen om het een beetje formeler te maken.

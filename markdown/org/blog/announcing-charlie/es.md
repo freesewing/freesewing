@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Foto de Flo Dahm de Pexels"
 date: "2021-04-18"
 intro: "Acabamos de publicar FreeSewing v2.15 y viene con un nuevo patrón: El patrón de pantalón Charlie Chinos ."

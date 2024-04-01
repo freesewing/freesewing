@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Il fait peut-être un peu froid, mais les maillots de bain, on les a !"
 date: "2021-10-20"
 intro: "Incarner ton personnage préféré peut te permettre de vivre une expérience d'Halloween vraiment amusante ! Voici quelques personnages emblématiques pour t'inspirer."
