@@ -17,10 +17,10 @@ function tinaBack({ Path, Snippet, paths, points, part, complete, options, snipp
   if (sa)
     paths.sa = new Path()
       .move(points.cfHem)
-      .join(paths.hemBase.offset(sa * 2))
+      .join(paths.hemBase.offset(sa * 3))
       .join(paths.sideSeam.offset(sa))
       .join(paths.saBase.offset(sa))
-      .join(paths.neck.offset(sa * 2))
+      .join(paths.neck.offset(sa * 3))
       .line(points.cbNeck)
       .attr('class', 'fabric sa')
 

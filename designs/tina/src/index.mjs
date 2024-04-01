@@ -6,11 +6,12 @@ import { i18n as tinaI18n } from '../i18n/index.mjs'
 import { front } from './front.mjs'
 import { back } from './back.mjs'
 import { sleeve as teaganSleeve } from '@freesewing/teagan'
+import { frontBottom } from './frontBottom.mjs'
 
 // Setup our new design
 const Tina = new Design({
   data,
-  parts: [back, front, teaganSleeve],
+  parts: [back, front, frontBottom, teaganSleeve],
 })
 
 // Merge translations
@@ -19,4 +20,4 @@ const i18n = mergeI18n([brianI18n, teaganI18n, tinaI18n], {
 })
 
 // Named exports
-export { front, back, teaganSleeve, Tina, i18n }
+export { front, frontBottom, back, teaganSleeve, Tina, i18n }

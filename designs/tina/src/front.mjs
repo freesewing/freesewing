@@ -21,8 +21,9 @@ function tinaFront({
   for (let key of Object.keys(paths)) paths[key].hide()
 
   points.mirroredHem = new Point(-points.hem.x, points.hem.y)
+  let sideOffset
   if (options.frontCoverage > 0) {
-    const sideOffset = points.hem.shiftFractionTowards(points.armhole, options.frontCoverage).y
+    sideOffset = points.hem.shiftFractionTowards(points.armhole, options.frontCoverage).y
     let intersection = paths.sideSeam.intersectsY(sideOffset)
     points.sideJoin = intersection.length > 0 ? intersection[0] : points.armhole
     points.mirroredSideJoin = new Point(-points.sideJoin.x, points.sideJoin.y)
@@ -78,10 +79,12 @@ function tinaFront({
   snippets.sideJoin = new Snippet('notch', points.sideJoin)
   snippets.mirroredSideJoin = new Snippet('notch', points.mirroredSideJoin)
 
+  paths.hemBaseHalf = new Path().move(points.cbHem).line(points.hem).hide()
+
   if (options.frontCoverage > 0) {
     paths.hemBase = new Path().move(points.mirroredHem).line(points.hem).hide()
   } else {
-    paths.hemBase = new Path().move(points.cbHem).line(points.hem).hide()
+    paths.hemBase = paths.hemBaseHalf
   }
 
   paths.tinaSaBase = new Path()
@@ -96,24 +99,104 @@ function tinaFront({
     .curve(points.neckCp2, points.neckCp2, points.mirroredSideJoin)
     .hide()
 
-  if (sa)
-    paths.sa = paths.hemBase
-      .offset(sa * 2)
-      .join(paths.sideSeam.offset(sa))
-      .join(paths.tinaSaBase.offset(sa))
-      .join(paths.tinaDiagonalSeam.offset(sa * 2))
-      .join(paths.mirroredSide.offset(sa * (options.frontCoverage > 0 ? 1 : 2)))
-      .close()
-      .attr('class', 'fabric sa')
+  const splitDist = sa ? sa * 4 : 40
+  store.splitFrontPart =
+    options.frontCoverage > 0 && points.hem.y - points.sideJoin.y > splitDist * 3
 
-  paths.tinaSeam = paths.hemBase
-    .clone()
-    .join(paths.sideSeam)
-    .join(paths.tinaSaBase)
-    .join(paths.tinaDiagonalSeam)
-    .join(paths.mirroredSide)
-    .close()
-    .attr('class', 'fabric')
+  if (store.splitFrontPart) {
+    const splitOffset = sideOffset + splitDist
+    points.cfSplit = new Point(0, splitOffset)
+
+    let intersection = paths.sideSeam.intersectsY(splitOffset)
+    points.sideSplit = intersection[0]
+    points.mirroredSideSplit = new Point(-points.sideSplit.x, points.sideSplit.y)
+
+    const sideSeamSplit = paths.sideSeam.split(points.sideSplit)
+    paths.upperSide = sideSeamSplit[1].hide()
+    paths.lowerSide = sideSeamSplit[0].hide()
+
+    const mirroredSeamSplit = paths.mirroredSide.split(points.mirroredSideSplit)
+    paths.mirroredUpperSide = mirroredSeamSplit[0].hide()
+    paths.mirroredLowerSide = mirroredSeamSplit[1].hide()
+
+    if (sa)
+      paths.tinaSeamSa = paths.upperSide
+        .offset(sa)
+        .join(paths.tinaSaBase.offset(sa))
+        .join(paths.tinaDiagonalSeam.offset(sa * 3))
+        .join(paths.mirroredUpperSide.offset(sa))
+        .join(new Path().move(points.mirroredSideSplit).line(points.sideSplit).offset(sa))
+        .close()
+        .attr('class', 'fabric sa')
+
+    paths.tinaSeam = new Path()
+      .move(points.sideSplit)
+      .join(paths.upperSide)
+      .join(paths.tinaSaBase)
+      .join(paths.tinaDiagonalSeam)
+      .join(paths.mirroredUpperSide)
+      .close()
+      .attr('class', 'fabric')
+
+    paths.tinaSeamBottom = new Path()
+      .move(points.hem)
+      .join(paths.lowerSide)
+      .join(paths.mirroredLowerSide)
+      .join(paths.hemBase)
+      .close()
+      .attr('class', 'fabric')
+      .hide()
+
+    paths.tinaSeamBottomHalf = new Path()
+      .move(points.hem)
+      .join(paths.lowerSide)
+      .line(points.cfSplit)
+      .line(points.cbHem)
+      .close()
+      .attr('class', 'fabric')
+      .hide()
+
+    if (sa) {
+      const tmp1 = paths.hemBaseHalf.offset(sa * 3)
+      const tmp2 = new Path().move(points.hem).join(paths.lowerSide).line(points.cfSplit).offset(sa)
+      paths.tinaSeamBottomHalfSa = new Path()
+        .move(points.cbHem)
+        .join(tmp1)
+        .join(tmp2)
+        .line(points.cfSplit)
+        .attr('class', 'fabric sa')
+        .hide()
+    }
+
+    macro('grainline', {
+      from: points.neck,
+      to: new Point(points.neck.x, points.sideSplit.y),
+    })
+  } else {
+    if (sa)
+      paths.sa = paths.hemBase
+        .offset(sa * 3)
+        .join(paths.sideSeam.offset(sa))
+        .join(paths.tinaSaBase.offset(sa))
+        .join(paths.tinaDiagonalSeam.offset(sa * 3))
+        .join(paths.mirroredSide.offset(sa * (options.frontCoverage > 0 ? 1 : 3)))
+        .close()
+        .attr('class', 'fabric sa')
+
+    paths.tinaSeam = paths.hemBase
+      .clone()
+      .join(paths.sideSeam)
+      .join(paths.tinaSaBase)
+      .join(paths.tinaDiagonalSeam)
+      .join(paths.mirroredSide)
+      .close()
+      .attr('class', 'fabric')
+
+    macro('grainline', {
+      from: points.bust,
+      to: points.cfHem.shift(0, measurements.bustSpan / 2),
+    })
+  }
 
   if (options.plotFitHelpers) {
     snippets.bustPoint = new Snippet('notch', points.bust)
@@ -126,14 +209,21 @@ function tinaFront({
     })
 
     paths.mirroredTinaSeam.attr('class', 'dotted stroke-xs')
+    if (paths.tinaSeamBottom) {
+      paths.tinaSeamBottomPreview = paths.tinaSeamBottom
+        .clone()
+        .unhide()
+        .attr('class', 'dotted stroke-xs')
+    }
   }
 
-  macro('rmCutOnFold', 'cutonfold')
+  points.title = points.mirroredBust
+    .shiftFractionTowards(points.shoulderCp1, 0.6)
+    .shiftFractionTowards(points.hem, options.lengthBonus / 4)
+  points.logo = points.shoulderCp1.clone()
+  snippets.logo = new Snippet('logo', points.logo)
 
-  macro('grainline', {
-    from: points.bust,
-    to: points.cfHem.shift(0, measurements.bustSpan / 2),
-  })
+  macro('rmCutOnFold', 'cutonfold')
 
   store.cutlist.setCut({ cut: 2, from: 'fabric', onFold: false })
 
@@ -174,7 +264,7 @@ export const front = {
     necklineBend: 0.3,
     necklineDepth: 0.3,
     // Tina specific
-    frontCoverage: { pct: 30, min: -75, max: 100, menu: 'style' },
+    frontCoverage: { pct: 30, min: -75, max: 95, menu: 'style' },
     plotFitHelpers: { bool: false, menu: 'advanced' },
   },
   draft: tinaFront,
