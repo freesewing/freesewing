@@ -4,6 +4,7 @@
   "p": {
     "back": "Back",
     "front": "Front",
+    "frontBottom": "Front Bottom",
     "sleeve": "Sleeve"
   },
   "s": {
@@ -17,11 +18,11 @@
   "o": {
     "frontCoverage": {
       "t": "Front coverage",
-      "d": "Adjust the angle the wrap around part is cut. A higher value exposes less skin at the front."
+      "d": "Adjust the angle the wrap around part is cut. A lower value exposes more skin at the front."
     },
     "plotFitHelpers": {
       "t": "Plot measurement helpers",
-      "d": "Plots a mirror of the front, the bust points, the waistline and the body outline below the waist, so you can check the intended fit"
+      "d": "Plots a mirror of the front, the bust points, the waistline and the body outline below the waist onto the front part, so you can preview the intended fit"
     }
   }
 }
