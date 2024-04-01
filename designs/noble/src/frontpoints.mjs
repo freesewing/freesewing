@@ -178,7 +178,6 @@ export const frontPoints = {
       points.bust,
       options.upperDartLength
     )
-    points.bust
     points.armholeCircleInsideCp1 = points.armholeDartInside.shift(
       armholeDartAngle,
       cbqc * points.armholeDartInside.dist(points.armholeDartTip)
