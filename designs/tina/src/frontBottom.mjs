@@ -1,20 +1,6 @@
-import { back as teaganBack } from '@freesewing/teagan'
-import { hidePresets } from '@freesewing/core'
 import { front } from './front.mjs'
 
-function tinaFrontBottom({
-  Path,
-  Snippet,
-  paths,
-  points,
-  part,
-  complete,
-  options,
-  snippets,
-  store,
-  macro,
-  sa,
-}) {
+function tinaFrontBottom({ Snippet, paths, points, part, snippets, store, macro, sa }) {
   for (let key of Object.keys(paths)) paths[key].hide()
   for (let key of Object.keys(snippets)) delete snippets[key]
 
