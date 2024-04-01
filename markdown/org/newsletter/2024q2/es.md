@@ -48,8 +48,7 @@ y mejoras que se han incluido en la versión 3.2:
 
 - Sandy tiene una nueva opción de paneles
   &#x20;que fue
-  añadida por [Paula](https://github.com/freesewing/freesewing/pull/5861).
-  Tú
+  añadida por [Paula](https://github.com/freesewing/freesewing/pull/5861). Tú
   podrías crear tu falda circular a partir de una serie de patrones similares haciendo tú misma la combinación, pero ahora el patrón se encargará de ello por ti.
 - Lo que empezó como un informe de error sobre la facilidad de los bíceps en
   Jaeger acabó con un cambio en
