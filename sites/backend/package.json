@@ -43,7 +43,7 @@
     "passport-jwt": "4.0.1",
     "pino": "8.19.0",
     "qrcode": "1.5.3",
-    "swagger-ui-dist": "5.12.3",
+    "swagger-ui-dist": "5.13.0",
     "swagger-ui-express": "5.0.0"
   },
   "devDependencies": {
