@@ -55,8 +55,7 @@ fixes en verbeteringen die in de 3.2 release zijn opgenomen:
   Jaeger eindigde met een
   wijziging in de manier waarop de armscye wordt berekend op Brian, in het bijzonder de diepte
   van het armsgat. Aangezien Brian ons meest fundamentele blok is, zal dit
-  gevolgen hebben voor veel andere ontwerpen. Je kunt verwachten dat out-of-the-box
-  de armscye iets lager zal reiken.
+  gevolgen hebben voor veel andere ontwerpen.
 - In [Carlton](https://freesewing.org/designs/carlton) - en dus ook in
   [Carlita](https://freesewing.org/designs/carlita) - hebben we
   hersteld en uitgegeven waar de naadtoeslag op de onderkraag verkeerd was getekend.
