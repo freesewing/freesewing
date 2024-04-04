@@ -1,9 +1,8 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { nsMerge, getSearchParam } from 'shared/utils.mjs'
+import { nsMerge } from 'shared/utils.mjs'
 // Hooks
-import { useTranslation } from 'next-i18next'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
@@ -14,7 +13,6 @@ import { SearchIcon } from 'shared/components/icons.mjs'
 const ns = nsMerge(pageNs, authNs)
 
 const SubscribersPage = ({ page }) => {
-  const { t } = useTranslation(ns)
   const [subscribers, setSubscribers] = useState()
   const [q, setQ] = useState()
   const [hits, setHits] = useState([])
