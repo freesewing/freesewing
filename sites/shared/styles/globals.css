@@ -444,6 +444,35 @@
   .pattern-logs code {
     @apply px-1 rounded font-bold bg-neutral bg-opacity-10 font-mono;
   }
+
+  /*
+   * Spoiler
+   */
+  .spoiler-wrapper {
+    position: relative;
+    display: block;
+    overflow: clip;
+  }
+  .spoiler-wrapper > input {
+    display: none;
+  }
+  .spoiler-wrapper > input + .spoiler-blur {
+    filter: blur(2rem) contrast(80%);
+    cursor: pointer;
+    opacity: 80%;
+    transition:
+      100ms filter,
+      100ms opacity;
+  }
+  .spoiler-wrapper > input:hover + .spoiler-blur {
+    filter: blur(2rem);
+    cursor: pointer;
+  }
+  .spoiler-wrapper > input:checked + .spoiler-blur {
+    filter: none;
+    opacity: 100%;
+    cursor: default;
+  }
 }
 
 progress.progress-white {

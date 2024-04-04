@@ -2,6 +2,7 @@
 import { Popout } from 'shared/components/popout/index.mjs'
 import { Highlight } from './highlight.mjs'
 import { YouTube } from './youtube.mjs'
+import { Spoiler } from './spoiler.mjs'
 //import { Figure } from './figure.mjs'
 import { ReadMore } from './read-more.mjs'
 import { Tab, Tabs } from '../tabs.mjs'
@@ -42,6 +43,7 @@ export const components = (site = 'org', slug = []) => {
   const extra = {
     pre: (props) => <Highlight {...props} />,
     YouTube,
+    Spoiler,
     // This Figure component causes hydration errors
     //img: Figure,
     table: (props) => (
