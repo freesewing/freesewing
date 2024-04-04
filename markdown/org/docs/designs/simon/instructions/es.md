@@ -252,6 +252,8 @@ Desde el lado bueno de la camiseta, coser la placa plegada cruzando la zanja.
 
 Para ello, coser exactamente encima de su costura anterior. Como has doblado la tela de la tapeta un poco más allá de esta costura, se enganchará en la parte posterior, fijando tu tapeta doblada en su sitio y bloqueando el margen de costura en el interior.
 
+![Stitch in the ditch](9e.png)
+
 ### Paso 10: Prepara el conjunto de posición del botón
 
 > Si ha elegido un placket, puede omitir los dos primeros subpasos y saltar a Enderstanding un clásico placket.
