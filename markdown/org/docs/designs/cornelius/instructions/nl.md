@@ -7,7 +7,7 @@ title: "Cornelius fietsbroek: Naai-instructies"
 - Press under the seam allowances of the non-notched edges of the pocket facings.
 - Speld de verkeerde kanten van de zakvullingen op de goede kant van de zakvullingen met dezelfde inkepingen, _Edgestitch_ de gevouwen randen op de zakvullingen.
 - _Rijg_ de naadtoeslagen van de gekerfde randen van de zakvullingen aan de zakzakken.
-- Met de goede kanten op elkaar en de dubbele inkepingen naai je de zakjes aan de voorkant en pers je ze naar de verkeerde kant.
+- With right sides together, matching both notches, sew the pocket bags to the front and then press to the wrong side.
 - Vouw de zakken dubbel langs de vouwlijn, goede kanten op elkaar. Naai de onderkant van de zak aan elkaar.
 - Je kunt ook _Franse naad_ de onderste naden van de zakjes aan elkaar naaien als je dat liever doet.
 - _Baste_ the top and side of the pocket bags to the front seam allowances matching notches.
