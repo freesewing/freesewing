@@ -252,6 +252,8 @@ Stik het geplooide knopenpat vast door langs de goede kant van je hemd in de naa
 
 Om dit te doen stik je exact bovenop je eerdere naad. Omdat je de stof van je placket iets voorbij deze naad hebt gevouwen, zal hij aan de achterkant vast komen te zitten, waardoor je gevouwen placket op zijn plaats wordt gefixeerd en de naadtoeslag binnenin wordt opgesloten.
 
+![Stitch in the ditch](9e.png)
+
 ### Stap 10: Bereid het knoopsgatenpat voor
 
 > Als je een aangeknipt knoopsgatenpat gekozen heb kan je de eerste twee substapjes overslaan en verdergaan met Hoe werkt een klassiek knopenpat.
