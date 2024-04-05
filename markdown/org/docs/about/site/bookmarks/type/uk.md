@@ -6,5 +6,5 @@ title: Тип
 
 Коли ви створюєте закладку вручну, тип завжди **користувацький** , тому ви не можете його вибрати.
 
-Інші типи включають **деталі**, **документи**або **набір** , які будуть автоматично встановлені, коли ви зробите закладку на деталь, сторінку документації або набір вимірів відповідно.
+Other types include **pattern**, **doc**, or **set** which will automatically be set when you bookmark a pattern, documentation page, or measurements set respectively.
 

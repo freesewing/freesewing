@@ -1,4 +1,7 @@
 import { SubscriberModel } from '../models/subscriber.mjs'
+// Catch-all page
+import { html as ocunsubOk } from '../html/ocunsub-ok.mjs'
+import { html as ocunsubKo } from '../html/ocunsub-ko.mjs'
 
 export function SubscribersController() {}
 
@@ -47,12 +50,16 @@ SubscribersController.prototype.confirm = async (req, res, tools) => {
 }
 
 /*
- * Unsubscribe from the newsletter
+ * One-Click unsubscribe from the newsletter
  * See: https://freesewing.dev/reference/backend/api
  */
-SubscribersController.unsubscribe = async (req, res, tools) => {
-  const Subscriber = new SubscriberModel(tools)
-  await Subscriber.unsubscribe(req)
+SubscribersController.prototype.ocunsub = async (req, res, tools) => {
+  if (!res.params?.ehash) return res.set('Content-Type', 'text/html').status(200).send(ocunsubKo)
 
-  return Subscriber.sendResponse(res)
+  const Subscriber = new SubscriberModel(tools)
+  const result = await Subscriber.ocunsub(req)
+
+  if (result) return res.set('Content-Type', 'text/html').status(200).send(ocunsubOk)
+
+  return res.set('Content-Type', 'text/html').status(200).send(okunsubKo)
 }
