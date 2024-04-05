@@ -50,7 +50,8 @@
   },
   "peerDependencies": {
     "@freesewing/core": "3.2.0",
-    "@freesewing/titan": "3.2.0"
+    "@freesewing/titan": "3.2.0",
+    "@freesewing/paco": "3.2.0"
   },
   "dependencies": {},
   "devDependencies": {

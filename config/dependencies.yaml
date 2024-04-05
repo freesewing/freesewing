@@ -88,6 +88,7 @@ jaeger:
 lily:
   peer:
     '@freesewing/titan': *freesewing    
+    '@freesewing/paco': *freesewing    
 new-design:
   _:
     'axios': &axios '1.6.8'
