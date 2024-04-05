@@ -1,6 +1,6 @@
 logs: Registros
 error: Mensajes de error
-warning: Mensajes de advertencia
+warn: Mensajes de advertencia
 info: Mensajes informativos
 debug: Mensajes de depuración
 seeLinkOrClick: Ver { link } o { click }
