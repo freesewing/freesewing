@@ -2,7 +2,7 @@ import { frontSideDart as bellaFront } from '@freesewing/bella'
 import { cbqc, hidePresets } from '@freesewing/core'
 import * as options from './options.mjs'
 
-const createTopRightDartPoints = (points, Path, paths, options) => {
+const createTopRightDartPoints = (points, Path, options) => {
   const topPath = new Path()
     .move(points.waistUpDartRight)
     .curve(
@@ -95,7 +95,7 @@ const createRightDartPoints = (points, Path, paths, diff, utils, options) => {
   paths.princessSeam = new Path()
     .move(points.waistDartRight)
     .curve(points.waistCpUp, points.waistUpDartRightCpDown, points.waistUpDartRight)
-    .join(createTopRightDartPoints(points, Path, paths, options))
+    .join(createTopRightDartPoints(points, Path, options))
     .reverse()
     .hide()
   return paths.princessSeam.length()
