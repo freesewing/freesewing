@@ -75,7 +75,6 @@ export const body = {
 
     paths.leftGore = new Path()
       .move(points.leftShoulder)
-      .line(points.leftShoulder)
       .line(points.gorestartLeft)
       .addClass('fabric dashed')
       .close()
