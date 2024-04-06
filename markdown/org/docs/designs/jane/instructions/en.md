@@ -34,11 +34,10 @@ Sew the two side gores together along the longest straight edges to create a kit
 Finish the seam.
 Repeat for other set of side gores.
 
-## Step 6
-Mark the sideseam. This is the space left between the side gores and the sleeve.
-
-## Step 7
-Sew the sideseams
+## Step 4: Prep the Body
+Mark down from the shoulder, along the side seam, half the total width of the sleeve + the sleeve gusset width.
+Sew the front of the body to the back of the body from the mark, down to the corner where the body runs parallel to the grain.
+Repeat for the 3 remaining side seams. 
 
 ## Step 8
 Set in the side gores
