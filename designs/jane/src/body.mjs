@@ -151,7 +151,14 @@ export const body = {
       macro('cutonfold', {
         from: points.topLeft,
         to: points.topRight,
-        grainline: true,
+        grainline: false,
+      })
+     
+      points.grainlineFrom = points.leftShoulder
+      points.grainlineTo = new Point(points.grainlineFrom.x, points.bottomLeft.y)
+      macro('grainline', {
+        from: points.grainlineFrom,
+        to: points.grainlineTo,
       })
     }
 
