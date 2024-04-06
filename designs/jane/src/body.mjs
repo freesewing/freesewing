@@ -92,12 +92,10 @@ export const body = {
     points.neckLeft = points.middle.shiftTowards(points.leftShoulder, neckWidth / 2)
     points.neckRight = points.middle.shiftTowards(points.rightShoulder, neckWidth / 2)
 
-    const neckDepthFront = measurements.hpsToBust * options.neckDepthFront
-
     points.middleHem = points.bottomLeft.shiftTowards(points.bottomRight, widthBody / 2)
 
     points.neckFront = points.middle
-      .shiftTowards(points.middleHem, neckDepthFront)
+      .shiftTowards(points.middleHem, measurements.hpsToBust * options.neckDepthFront)
       .attr('data-text', 'Front Neckline')
       .attr('data-text-class', 'center')
 
