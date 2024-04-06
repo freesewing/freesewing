@@ -23,7 +23,8 @@ If you want to cut Jane without a shoulder seam you:
 - cut **two sleeve** parts 
 - cut **two sleeve** gusset parts 
 
-Cutting out without a pattern 
+### Cutting out without a pattern 
+
 In the past shifts were generally cut without a paper pattern. If you want to cut without a pattern as well you can use the following instructions: 
 
 Cut a rectangle double the body length and the body width. You can cut the side gores all in one go. To do this you fold your fabric at the shoulder line and then mark the halfway point down the length. 
