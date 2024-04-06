@@ -11,7 +11,7 @@ import { Point } from '@freesewing/core'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { WebLink, linkClasses } from 'shared/components/link.mjs'
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch'
-import { UserIcon, MapMarkerIcon, FingerprintIcon, LinkIcon } from 'shared/components/icons.mjs'
+import { UserIcon, MapMarkerIcon, LinkIcon } from 'shared/components/icons.mjs'
 
 /**
  * This displays the trustees as a table
