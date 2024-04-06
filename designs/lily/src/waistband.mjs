@@ -7,7 +7,7 @@ export const waistband = {
   after: [back, front],
   hide: 'HIDE_TREE',
   draft: (sh) => {
-    const { points, part, snippets } = sh
+    const { snippets, part } = sh
 //draft
   pacoWaistband.draft(sh)
 //delete eyelets
