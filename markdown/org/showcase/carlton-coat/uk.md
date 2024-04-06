@@ -15,4 +15,4 @@ To specify it a little more - we simply made the sleeves more tight and also inc
 
 More images you can find on google disc:
 
-https\://drive.google.com/drive/folders/1ERGkaSApfh9PgL4T4CBzmYI9Kd-Z0Pgf?usp=drive_link
+https://drive.google.com/drive/folders/1ERGkaSApfh9PgL4T4CBzmYI9Kd-Z0Pgf?usp=drive_link
