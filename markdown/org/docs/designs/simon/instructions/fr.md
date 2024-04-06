@@ -252,6 +252,8 @@ Retourner la pièce sur l'endroit, et fixer la patte repliée en piquant dans la
 
 Pour cela, coudre exactement sur votre couture précédente. Comme tu as plié le tissu de ta patte de boutonnage un peu au-delà de cette couture, il sera pris à l'arrière, fixant ta patte de boutonnage pliée en place, et bloquant le surplus de couture à l'intérieur.
 
+![Stitch in the ditch](9e.png)
+
 ### Etape 10: Préparer la patte de boutonnage (côté boutonnières)
 
 > Si vous avez choisi une patte intégrée, vous pouvez passer les deux premières sous-étapes et passer à "Replier la patte de boutonnage".

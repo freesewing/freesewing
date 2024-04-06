@@ -7,7 +7,7 @@ title: "Pantalones de ciclista Cornelius: Instrucciones de costura"
 - Press under the seam allowances of the non-notched edges of the pocket facings.
 - Haciendo coincidir las muescas, sujeta con alfileres los lados equivocados de los revestimientos de los bolsillos al lado derecho de las bolsas de bolsillo, _Edgestitch_ los bordes doblados a las bolsas de bolsillo.
 - _Hilvana_ los márgenes de costura de los bordes dentados de las carátulas de los bolsillos a las bolsas de los bolsillos.
-- Con los lados derechos juntos haciendo coincidir las muescas dobles, cose las bolsas de bolsillo a la parte delantera y luego presiona hacia el lado equivocado.
+- With right sides together, matching both notches, sew the pocket bags to the front and then press to the wrong side.
 - Dobla los bolsillos por la mitad siguiendo la línea de pliegue, con los lados derechos juntos. Cose el fondo de la bolsa de bolsillo.
 - Si lo prefieres, puedes unir las costuras inferiores de las bolsas con la _costura francesa_.
 - _Baste_ the top and side of the pocket bags to the front seam allowances matching notches.

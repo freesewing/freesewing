@@ -252,6 +252,8 @@ Von der guten Seite Ihres Hemdes nähen Sie das gefaltete Plakat durch Nähen im
 
 Um dies zu tun, nähen Sie genau auf Ihrer früheren Naht. Da du den Stoff deiner Leiste ein wenig über diese Naht hinaus gefaltet hast, wird sie hinten eingeklemmt, wodurch deine gefaltete Leiste fixiert und die Nahtzugabe innen festgehalten wird.
 
+![Stitch in the ditch](9e.png)
+
 ### Schritt 10: Bereiten Sie das Buttonhole Placket vor
 
 > Wenn Sie einen ausgewachsenen Platz gewählt haben, können Sie die ersten beiden Unterschritte überspringen und einen klassischen Knopflochplatz verstehen.

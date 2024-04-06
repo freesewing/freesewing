@@ -7,5 +7,6 @@ title: "Conjunto de yoga de Paul"
 designs:
   - "aaron"
   - "bruce"
+author: 433
 ---
 
