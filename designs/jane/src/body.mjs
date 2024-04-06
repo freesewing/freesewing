@@ -134,8 +134,6 @@ export const body = {
       .move(points.topLeft)
       .close()
 
-    // Complete?
-    if (complete) {
       points.logo = points.middle.shiftTowards(points.middleHem, maxLength / 4)
       snippets.logo = new Snippet('logo', points.logo)
 
