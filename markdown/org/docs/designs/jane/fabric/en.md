@@ -3,7 +3,7 @@ title: "Jane Shift: Fabric Options"
 ---
 
 ## Historically Accurate Fabrics
-During the Regency period shifts were made out of white linen.  If you want to sew a historically accurate Jane, linen is the only choice you have. Linen is a fabric that could withstand the harsh laundry methods of the past better than silk or wool. Because shifts would be washed more than the clothing that went over them, the way the fabric laundered was a priority. Over time, white linens came to represent cleanliness,and could be easily rid of stains by bleaching.
+During the Regency period shifts were made out of white linen. If you want to sew a historically accurate Jane, linen is the only choice you have. Linen is a fabric that could withstand the harsh laundry methods of the past better than silk or wool. Because shifts would be washed more than the clothing that went over them, the way the fabric laundered was a priority. Over time, white linens came to represent cleanliness,and could be easily rid of stains by bleaching.
 
 Additionally, the weave would universally be a plain or tabby weave. What would vary is the weight of linen used. Everyone wore body linen, to not wear it wasn’t permissible.
 
