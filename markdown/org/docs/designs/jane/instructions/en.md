@@ -40,8 +40,16 @@ Sew the sideseams
 ## Step 8
 Set in the side gores
 
-## Step 9
-Set in the sleeves
+## Step 6: Set in the sleeves
+Sew the sleeve to the body matching the notch to the shoulder. The sleeve should fit in the gap that has been left in the side seam. Make sure to not sew the sleeve shut when attaching.
+Finish the seam.
+Repeat for the other sleeve.
+
+<Note>
+
+You may find it easier to turn the body *wrong sides* out for this. It will depend on your construction method though.
+
+</Note>
 
 ## Step 10
 Hem the bottom of your shift
