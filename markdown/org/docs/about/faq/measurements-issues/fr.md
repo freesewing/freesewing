@@ -40,7 +40,7 @@ Tu peux aussi utiliser un ruban. Prends un ruban plus long et mets-le autour de 
 
 #### Tour de buste supérieur
 
-Le [buste haut] (https\://freesewing.org/docs/measurements/highbust) est une mesure horizontale qui n'a pas besoin d'être parfaitement horizontale. Elle doit faire le tour de ton torse au niveau de la partie la plus étroite du haut de la poitrine, passer sur le buste, sous les bras et dans le dos, mais il n'est pas nécessaire qu'elle soit parallèle au sol sur toute sa longueur.
+Le [buste haut] (https://freesewing.org/docs/measurements/highbust) est une mesure horizontale qui n'a pas besoin d'être parfaitement horizontale. Elle doit faire le tour de ton torse au niveau de la partie la plus étroite du haut de la poitrine, passer sur le buste, sous les bras et dans le dos, mais il n'est pas nécessaire qu'elle soit parallèle au sol sur toute sa longueur.
 
 [Buste haut vu de côté](highbust.jpg)
 
@@ -48,7 +48,7 @@ Le [buste haut] (https\://freesewing.org/docs/measurements/highbust) est une mes
 
 #### Pente d'épaule
 
-Beaucoup ont eu de la chance en utilisant une application d'inclinomètre sur un smartphone pour mesurer [la pente des épaules] (https\://freesewing.org/docs/measurements/shoulderslope).
+Beaucoup ont eu de la chance en utilisant une application d'inclinomètre sur un smartphone pour mesurer [la pente des épaules] (https://freesewing.org/docs/measurements/shoulderslope).
 
 #### Siège et hanches
 
@@ -60,6 +60,6 @@ L'assise se trouve sur la partie la plus large de tes fesses. D'autres sources a
 
 ##### Taille
 
-L'endroit où tu prends les mesures de la [taille] (https\://freesewing.org/docs/measurements/waist) n'est pas nécessairement lié à l'endroit où se trouve, par exemple, une ceinture.
+L'endroit où tu prends les mesures de la [taille] (https://freesewing.org/docs/measurements/waist) n'est pas nécessairement lié à l'endroit où se trouve, par exemple, une ceinture.
 
 Essaie de te pencher sur le côté et de noter l'endroit où ton corps se plisse. (Pour les points bonus, mets ta main sur ta taille et chante "Je suis une petite théière")
