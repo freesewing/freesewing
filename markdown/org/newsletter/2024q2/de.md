@@ -84,7 +84,7 @@ Im [FreeSewing 3.2 Ankündigungs-Blogpost] (https\://freesewing.org/blog/v3-2-0)
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -118,7 +118,7 @@ wieder aufgreifen müssen, wenn es unsere begrenzte Zeit und unsere Ressourcen z
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -225,7 +225,7 @@ den Brunnen vergiften.
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
