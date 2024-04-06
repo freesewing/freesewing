@@ -17,16 +17,16 @@ Sewing in these instructions includes finishing your seam. So if you sew your sl
 ## Step 1
 Hem the neckline with the smallest hem you can manage
 
-## Step 2
-Construct the sleeve by sewing up the sleeve seam with space left for the sleeve gusset
-The sides to seam up are the ones that do not have a notch
-Repeat for the second sleeve
+## Step 2: Prep the Sleeves
 
-## Step 3
-Add the sleeve gusset to your sleeves
-
-## Step 4
-Hem the sleeve ends
+Fold the sleeve in half from the shoulder to the hem. 
+Sew the sleeve together to create a tube, making sure to leave the width of the sleeve gusset open at the top.
+Finish the seam.
+Sew one of the sleeve gusset edges to one side of the gap left in the seam you've just sewn.
+Take the edge of the sleeve gusset that is adjacent to the one you've just sewn and sew it to the gap on the other side of the sleeve. You should now be looking at a diamond with the top two edges connected to the sleeve and the bottom two edges free. 
+Finish the seams.
+Repeat for the second sleeve.
+Hem the bottom of the sleeves.
 
 ## Step 5
 Sew the side  gores together
