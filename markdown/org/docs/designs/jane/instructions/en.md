@@ -39,8 +39,11 @@ Mark down from the shoulder, along the side seam, half the total width of the sl
 Sew the front of the body to the back of the body from the mark, down to the corner where the body runs parallel to the grain.
 Repeat for the 3 remaining side seams. 
 
-## Step 8
-Set in the side gores
+## Step 5: Set in the side gores
+
+Sew the side gore to the front and then to back along the edges that were left free from the corner to bottom of the body.
+Finish the seams.
+Repeat for other side gore.
 
 ## Step 6: Set in the sleeves
 Sew the sleeve to the body matching the notch to the shoulder. The sleeve should fit in the gap that has been left in the side seam. Make sure to not sew the sleeve shut when attaching.
