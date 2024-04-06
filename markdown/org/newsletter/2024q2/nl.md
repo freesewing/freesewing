@@ -88,7 +88,7 @@ De [FreeSewing 3.2 aankondiging blog post](https://freesewing.org/blog/v3-2-0) h
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -122,7 +122,7 @@ misschien opnieuw moeten bekijken als het een steeds groter beslag legt op onze 
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -230,7 +230,7 @@ de bron vergiftigen.
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
