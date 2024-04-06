@@ -37,7 +37,6 @@ export const sleeve = {
       .line(points.sleeveRight)
       .close()
 
-    if (complete) {
       points.title = points.sleeveLeft.shift(300, sleeveLength / 2)
       macro('title', {
         at: points.title,
@@ -60,7 +59,6 @@ export const sleeve = {
       if (sa) {
         paths.sa = paths.sleeve.offset(sa).setClass('fabric sa')
       }
-    }
 
     // Paperless?
     if (paperless) {
