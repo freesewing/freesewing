@@ -13,8 +13,9 @@ Sewing in these instructions includes finishing your seam. So if you sew your sl
 </Note>
 
 
-## Step 1
-Hem the neckline with the smallest hem you can manage
+## Step 1: Hem the neckline
+
+Hem the neckline with the smallest hem you can manage.
 
 ## Step 2: Prep the Sleeves
 
