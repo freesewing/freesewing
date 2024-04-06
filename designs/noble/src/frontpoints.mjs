@@ -2,7 +2,66 @@ import { frontSideDart as bellaFront } from '@freesewing/bella'
 import { cbqc, hidePresets } from '@freesewing/core'
 import * as options from './options.mjs'
 
-const createRightDartPoints = (points, Path, diff, utils) => {
+const createTopRightDartPoints = (points, Path, options) => {
+  const topPath = new Path()
+    .move(points.waistUpDartRight)
+    .curve(
+      points.waistUpDartRightCpUp,
+      points.shoulderDartTipCpDownOutside,
+      points.shoulderDartOutside
+    )
+
+  const split1 = topPath.shiftFractionAlong(0.15 + options.shoulderDartCurvature * -1)
+  const split2 = topPath.shiftFractionAlong(0.5 + options.shoulderDartCurvature * -1)
+  const split3 = topPath.shiftFractionAlong(0.9 + options.shoulderDartCurvature * -0.5)
+
+  const splitPath1 = topPath.split(split1)
+  const splitPath2 = splitPath1[1].split(split2)
+  const splitPath3 = splitPath2[1].split(split3)
+
+  const splittedPath1 = splitPath1[0].clone()
+  const splittedPath2 = splitPath2[0].clone()
+  const splittedPath3 = splitPath3[0].clone()
+  const splittedPath4 = splitPath3[1].clone()
+
+  points.shoulderDartPart1from = splittedPath1.ops[0].to.copy()
+  points.shoulderDartPart1cp1 = splittedPath1.ops[1].cp1.copy()
+  points.shoulderDartPart1cp2 = splittedPath1.ops[1].cp2.copy()
+  points.shoulderDartPart1to = splittedPath1.ops[1].to.copy()
+  points.shoulderDartPart2from = splittedPath2.ops[0].to.copy()
+  points.shoulderDartPart2cp1 = splittedPath2.ops[1].cp1.copy()
+  points.shoulderDartPart2cp2 = splittedPath2.ops[1].cp2.copy()
+  points.shoulderDartPart2to = splittedPath2.ops[1].to.copy()
+  points.shoulderDartPart3from = splittedPath3.ops[0].to.copy()
+  points.shoulderDartPart3cp1 = splittedPath3.ops[1].cp1.copy()
+  points.shoulderDartPart3cp2 = splittedPath3.ops[1].cp2.copy()
+  points.shoulderDartPart3to = splittedPath3.ops[1].to.copy()
+  points.shoulderDartPart4from = splittedPath4.ops[0].to.copy()
+  points.shoulderDartPart4cp1 = splittedPath4.ops[1].cp1.copy()
+  points.shoulderDartPart4cp2 = splittedPath4.ops[1].cp2.copy()
+  points.shoulderDartPart4to = splittedPath4.ops[1].to.copy()
+
+  const sp2cp2a = points.shoulderDartPart2to.angle(points.shoulderDartPart2cp2)
+  const sp2cp2d = points.shoulderDartPart2to.dist(points.shoulderDartPart2cp2)
+  const sp3cp1a = points.shoulderDartPart3from.angle(points.shoulderDartPart3cp1)
+  const sp3cp1d = points.shoulderDartPart3from.dist(points.shoulderDartPart3cp1)
+  points.shoulderDartPart2to = points.shoulderDartPart2to.rotate(
+    options.shoulderDartCurvature * 100,
+    points.shoulderDartPart2from
+  )
+  points.shoulderDartPart3from = points.shoulderDartPart2to.copy()
+  points.shoulderDartPart2cp2 = points.shoulderDartPart2to.shift(sp2cp2a, sp2cp2d)
+  points.shoulderDartPart3cp1 = points.shoulderDartPart3from.shift(sp3cp1a, sp3cp1d)
+
+  return new Path()
+    .move(points.shoulderDartPart1from)
+    .curve(points.shoulderDartPart1cp1, points.shoulderDartPart1cp2, points.shoulderDartPart1to)
+    .curve(points.shoulderDartPart2cp1, points.shoulderDartPart2cp2, points.shoulderDartPart2to)
+    .curve(points.shoulderDartPart3cp1, points.shoulderDartPart3cp2, points.shoulderDartPart3to)
+    .curve(points.shoulderDartPart4cp1, points.shoulderDartPart4cp2, points.shoulderDartPart4to)
+}
+
+const createRightDartPoints = (points, Path, paths, diff, utils, options) => {
   const radius = points.waistDartRight.dist(points.sideHemInitial)
 
   points.waistDartRight = points.waistDartRight.rotate(
@@ -33,15 +92,13 @@ const createRightDartPoints = (points, Path, diff, utils) => {
     -0.5 * cbqc * points.armholeDartInside.dist(points.armholeDartTip)
   )
 
-  return new Path()
+  paths.princessSeam = new Path()
     .move(points.waistDartRight)
     .curve(points.waistCpUp, points.waistUpDartRightCpDown, points.waistUpDartRight)
-    .curve(
-      points.waistUpDartRightCpUp,
-      points.shoulderDartTipCpDownOutside,
-      points.shoulderDartOutside
-    )
-    .length()
+    .join(createTopRightDartPoints(points, Path, options))
+    .reverse()
+    .hide()
+  return paths.princessSeam.length()
 }
 
 const createArmholeDartPoints = (points, paths, Path, direction) => {
@@ -121,7 +178,6 @@ export const frontPoints = {
       points.bust,
       options.upperDartLength
     )
-
     points.armholeCircleInsideCp1 = points.armholeDartInside.shift(
       armholeDartAngle,
       cbqc * points.armholeDartInside.dist(points.armholeDartTip)
@@ -290,15 +346,15 @@ export const frontPoints = {
       -0.5 * cbqc * points.armholeDartOutside.dist(points.armholeDartTip)
     )
     points.shoulderDartTipCpDownOutside = points.shoulderDartTipCpDownOutside
-      .rotate(-2.5, points.shoulderDartOutside)
+      .rotate(2.5, points.shoulderDartOutside)
       .shiftFractionTowards(points.shoulderDartOutside, 0.2)
 
     let iteration = 1
     let diff = 0
 
-    let rightDartLength = createRightDartPoints(points, Path, diff, utils)
+    let rightDartLength = createRightDartPoints(points, Path, paths, diff, utils, options)
     do {
-      rightDartLength = createRightDartPoints(points, Path, diff, utils)
+      rightDartLength = createRightDartPoints(points, Path, paths, diff, utils, options)
 
       diff = shoulderInsideSeam.length() - rightDartLength
       iteration++

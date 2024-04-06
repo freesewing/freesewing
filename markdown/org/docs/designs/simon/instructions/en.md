@@ -256,6 +256,8 @@ From the good side of your shirt, sew down the folded placket by stitching in th
 
 To do so, sew exactly on top of your earlier seam. Since you folded the fabric of your placket a bit past this seam, it will get caught at the back, fixing your folded placket in place, and locking the seam allowance inside.
 
+![Stitch in the ditch](9e.png)
+
 ### Step 10: Prepare the buttonhole placket
 
 > If you have chosen a grown-on placket, you can skip the first two sub-steps and skip ahead to Understanding a classic buttonhole placket.

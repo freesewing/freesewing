@@ -701,7 +701,7 @@ export function __addNonEnumProp(obj, name, value) {
  * @param {string} param - The name of the parameter to use in the logs
  * @param {string} method - The name of the method to use in the logs
  * @param {object} log - A logging object
- * @return {bool} result - True if it is a valid coordinate, false when  not
+ * @return {number} the given value parameter, converted to a number if possible
  */
 export function __asNumber(value, param, method, log) {
   if (typeof value === 'number') return value

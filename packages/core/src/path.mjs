@@ -679,6 +679,42 @@ Path.prototype.reverse = function (cloneAttributes = false) {
 }
 
 /**
+ * Returns a rotated version of this Path
+ * @param {number} deg Angle to rotate, see {@link Point#rotate}
+ * @param {Point} rotationOrigin point to use as rotation origin, see {@link Point#rotate}
+ * @param {boolean} cloneAttributes If the rotated path should receive a copy of the path attributes
+ *
+ * @return {Path} A Path instance that is a rotated copy of this Path
+ */
+Path.prototype.rotate = function (deg, rotationOrigin, cloneAttributes = false) {
+  deg = __asNumber(deg, 'deg', 'Path.rotate', this.log)
+  if (!(rotationOrigin instanceof Point))
+    this.log.warn('Called `Path.rotate(deg,that)` but `rotationOrigin` is not a `Point` object')
+
+  const rotatedPath = new Path().__withLog(this.log)
+
+  for (const op of this.ops) {
+    if (op.type === 'move') {
+      const to = op.to.rotate(deg, rotationOrigin)
+      rotatedPath.move(to)
+    } else if (op.type === 'line') {
+      const to = op.to.rotate(deg, rotationOrigin)
+      rotatedPath.line(to)
+    } else if (op.type === 'curve') {
+      const cp1 = op.cp1.rotate(deg, rotationOrigin)
+      const cp2 = op.cp2.rotate(deg, rotationOrigin)
+      const to = op.to.rotate(deg, rotationOrigin)
+      rotatedPath.curve(cp1, cp2, to)
+    } else if (op.type === 'close') {
+      rotatedPath.close()
+    }
+  }
+  if (cloneAttributes) rotatedPath.attributes = this.attributes.clone()
+
+  return rotatedPath
+}
+
+/**
  * Returns a rough estimate of the length of this path
  *
  * This avoids walking Bezier curves and thus is much faster but not accurate at all
