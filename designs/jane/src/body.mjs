@@ -113,10 +113,8 @@ export const body = {
       .move(points.neckFront)
       .curve(points.neckCp4, points.neckCp3, points.neckLeft)
 
-    const neckDepthBack = measurements.hpsToBust * options.neckDepthBack
-
     points.neckBack = points.middle
-      .shiftTowards(points.neckFront, neckDepthBack)
+      .shiftTowards(points.neckFront, measurements.hpsToBust * options.neckDepthBack)
       .attr('data-text', 'Back Neckline')
       .attr('data-text-class', 'center')
 
