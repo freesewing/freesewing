@@ -18,8 +18,7 @@ export const gusset = {
     measurements,
     part,
   }) {
-    const fullArmhole = measurements.biceps * (1 + 0.85)
-    const gussetMeasure = (fullArmhole / 2) * options.gussetSize
+    const gussetMeasure = measurements.biceps * (0.5 + 0.85) * options.gussetSize
 
     points.gussetLeft = new Point(0, 0)
     points.gussetRight = new Point(gussetMeasure, 0)
