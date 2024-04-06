@@ -32,8 +32,6 @@ export const gusset = {
       .line(points.gussetRight)
       .close()
 
-    // Complete?
-    if (complete) {
       points.title = points.gussetLeft.shift(300, gussetMeasure / 2)
       macro('title', {
         at: points.title,
@@ -44,7 +42,6 @@ export const gusset = {
       if (sa) {
         paths.sa = paths.gusset.offset(sa).setClass('fabric sa')
       }
-    }
 
     // Paperless?
     if (paperless) {
