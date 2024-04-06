@@ -29,9 +29,9 @@ Jetons un coup d'œil aux faits marquants :
 
 ### The Tristan Top
 
-Tout d'abord, il y a [le haut Tristan] (https\://freesewing.org/designs/tristan). Tristan est un haut avec des coutures princesse et un laçage (facultatif) sur le devant ou/et dans le dos. L'histoire de son origine est la nécessité d'un costume pour un festival de la Renaissance, c'est donc probablement un bon indicateur de ce à quoi tu dois t'attendre.
+Tout d'abord, il y a [le haut Tristan] (https://freesewing.org/designs/tristan). Tristan est un haut avec des coutures princesse et un laçage (facultatif) sur le devant ou/et dans le dos. L'histoire de son origine est la nécessité d'un costume pour un festival de la Renaissance, c'est donc probablement un bon indicateur de ce à quoi tu dois t'attendre.
 
-Tristan a été conçu par Natalia qui a également [écrit un article de blog sur le nouveau design de Tristan] (https\://freesewing.org/blog/our-newest-design-is-the-tristan-top), c'est donc un bon endroit pour obtenir tous les détails sur ce nouveau design.
+Tristan a été conçu par Natalia qui a également [écrit un article de blog sur le nouveau design de Tristan] (https://freesewing.org/blog/our-newest-design-is-the-tristan-top), c'est donc un bon endroit pour obtenir tous les détails sur ce nouveau design.
 
 ### The Lumina and Lumira Leggings
 
@@ -84,11 +84,11 @@ et des améliorations qui ont été apportées à la version 3.2 :
   prend désormais en charge la traduction des tableaux imbriqués de chaînes de caractères, ce qui donne aux concepteurs
   plus de flexibilité pour concaténer les parties traduites des chaînes de caractères.
 
-Le [billet de blog sur l'annonce de FreeSewing 3.2] (https\://freesewing.org/blog/v3-2-0) contient tous les détails.
+Le [billet de blog sur l'annonce de FreeSewing 3.2] (https://freesewing.org/blog/v3-2-0) contient tous les détails.
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -122,7 +122,7 @@ si cela devient une contrainte de plus en plus forte sur notre temps et nos ress
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -130,7 +130,7 @@ si cela devient une contrainte de plus en plus forte sur notre temps et nos ress
 
 Selon l'endroit où tu reçois tes nouvelles, tu as peut-être entendu ou lu quelque chose sur
 [la tentative de porte dérobée de l'utilitaire de compression xz
-] (https\://arstechnica.com/security/2024/03/backdoor-found-in-widely-used-linux-utility-breaks-encrypted-ssh-connections/).
+] (https://arstechnica.com/security/2024/03/backdoor-found-in-widely-used-linux-utility-breaks-encrypted-ssh-connections/).
 
 En bref, un acteur malveillant a tenté d'introduire une porte dérobée dans cet utilitaire
 , ce qui, en fin de compte, était une tentative d'introduire clandestinement un exploit RCE dans
@@ -160,7 +160,7 @@ Ou comme je le dis souvent : _Tout ce qui compte fonctionne sous Linux_.
 
 Cette histoire est en cours et j'espère pour ma part qu'elle fera l'objet d'une mini-série sur Netflix
 avec David Cross dans le rôle de [Andres
-Freund] (https\://github.com/anarazel), mais je m'écarte du sujet. C'est la lettre d'information de FreeSewing
+Freund] (https://github.com/anarazel), mais je m'écarte du sujet. C'est la lettre d'information de FreeSewing
 , alors j'ai voulu extraire de cette histoire quelque chose que je pense
 être pertinent pour FreeSewing, ou vraiment pour n'importe quel projet open source.
 
@@ -188,7 +188,7 @@ qui cherchent désespérément à se décharger d'une partie du travail.
 Ce problème de _qui peux-tu croire_ n'est bien sûr pas nouveau. Une façon de la contrer
 est d'établir un _web de confiance_.  C'est ainsi que les choses se passent dans les grands projets
 de logiciels libres impliquant de nombreux bénévoles, tels que [le projet Debian
-] (https\://www\.debian.org/).
+] (https://www.debian.org/).
 
 Concrètement, un tel réseau de confiance repose sur des relations entre
 personnes qui connaissent et ont vérifié la véritable identité de chacune d'entre elles.  Par exemple,
@@ -230,14 +230,14 @@ le puits.
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
 ## 🤔 Comment les défis de FreeSewing se sont déplacés au fil du temps.
 
 Sais-tu que [FreeSewing v1 a été publié il y a 7 ans et 7 jours
-] (https\://freesewing.org/blog/announcing-freesewing) ?  Depuis, nous avons
+] (https://freesewing.org/blog/announcing-freesewing) ?  Depuis, nous avons
 apporté de nombreux changements, petits et grands, et notre bibliothèque de base et notre système de plugins ont
 mûri pour devenir un moyen fiable - et certainement influencé - de concevoir des patrons de couture paramétriques
 .
