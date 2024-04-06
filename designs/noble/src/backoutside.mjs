@@ -3,7 +3,7 @@ import { backPoints } from './backpoints.mjs'
 export const backOutside = {
   name: 'noble.backOutside',
   from: backPoints,
-  draft: ({ sa, Point, points, Path, paths, Snippet, snippets, options, macro, part }) => {
+  draft: ({ sa, Point, points, Path, paths, Snippet, snippets, options, macro, store, part }) => {
     if (options.dartPosition != 'shoulder') {
       return part
     }
@@ -41,6 +41,8 @@ export const backOutside = {
 
     snippets.dartTip = new Snippet('notch', points.dartTip)
 
+    store.cutlist.removeCut()
+    store.cutlist.addCut({ onFold: false })
     points.titleAnchor = points.dartBottomRight
       .shiftFractionTowards(points.waistSide, 0.1)
       .shiftFractionTowards(points.shoulder, 0.3)
