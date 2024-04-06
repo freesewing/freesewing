@@ -15,13 +15,12 @@ If you are cutting Jane with a shoulder seam you:
 - Cut **2 sleeve** gusset parts 
 
 If you want to cut Jane without a shoulder seam you:
-- cut on fold as indicated on the pattern
-- cut the body
-- cut the neckline
-- with body folded at the cut on fold line, cut side gores 
-- repeat on the other side of the body
-- cut **two sleeve** parts 
-- cut **two sleeve** gusset parts 
+- Cut **1 body** part on the fold as indicated on the pattern
+- Cut the neckline on the body part
+- With the body part folded at the fold line, cut the side gores 
+- Repeat on the other side of the body part
+- Cut **2 sleeve** parts 
+- Cut **2 sleeve** gusset parts 
 
 ### Cutting out without a pattern 
 
