@@ -143,10 +143,10 @@ export const body = {
 
     // Complete?
     if (complete) {
-      points.logo = points.middle.shiftTowards(points.middleHem, lengthBody / 4)
+      points.logo = points.middle.shiftTowards(points.middleHem, maxLength / 4)
       snippets.logo = new Snippet('logo', points.logo)
 
-      points.title = points.logo.shiftTowards(points.middle, lengthBody / 12)
+      points.title = points.logo.shiftTowards(points.middle, maxLength / 12)
       macro('title', {
         at: points.title,
         nr: 1,
