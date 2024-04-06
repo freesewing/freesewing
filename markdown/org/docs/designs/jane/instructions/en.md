@@ -55,5 +55,5 @@ You may find it easier to turn the body *wrong sides* out for this. It will depe
 
 Hem the bottom of your shift.
 
-## Step 11
-Wear it as a historical undergarment or however you like!
+## Step 8: Enjoy!
+Now go forth and wear it as a historical undergarment or however you like!
