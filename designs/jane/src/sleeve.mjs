@@ -37,7 +37,6 @@ export const sleeve = {
       .line(points.sleeveRight)
       .close()
 
-    // Complete?
     if (complete) {
       points.title = points.sleeveLeft.shift(300, sleeveLength / 2)
       macro('title', {
