@@ -14,7 +14,6 @@ export const sleeve = {
     points,
     paths,
     snippets,
-    complete,
     sa,
     paperless,
     macro,
