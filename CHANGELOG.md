@@ -23,6 +23,13 @@
 
  - Add missing dimension id attributes
 
+### noble
+
+#### Fixed
+
+ - Fix 'cutonfold' text for Noble's back part. Fixes
+ - Improve dart shaping. Fixes
+
 ### onyx
 
 #### Changed
@@ -40,6 +47,12 @@
 #### Changed
 
  - Always load plugin-bust due to its changes in how it handle conditionality.
+
+### teagan
+
+#### Fixed
+
+ - Fix side seam when length is cropped. Fixes
 
 ### uma
 
@@ -64,6 +77,12 @@
 #### Deprecated
 
  - The `withCondition` named  export is deprecated and will always return true.
+
+### core
+
+#### Added
+
+ - The `Path.rotate()` method was added to the core API.
 
 
 ## 3.2.0 (2024-02-11)

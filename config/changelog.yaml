@@ -1,4 +1,8 @@
 Unreleased:
+  Added:
+    core:
+      - The `Path.rotate()` method was added to the core API.
+
   Changed:
     brian:
       - Always load plugin-bust due to its changes in how it handle conditionality.
@@ -26,6 +30,11 @@ Unreleased:
       - Hide unused ribbing parts when ribbing option is disabled
     hugo:
       - Add missing dimension id attributes
+    noble:
+      - Fix 'cutonfold' text for Noble's back part. Fixes #6447
+      - Improve dart shaping. Fixes #64547
+    teagan:
+      - Fix side seam when length is cropped. Fixes #6480
     uma:
       - Fix back exposure when expand is off. Fixes #6239
 
