@@ -102,15 +102,12 @@ export const body = {
     points.neckCp1 = points.neckRight.shift(90, points.neckFront.dy(points.neckRight) * 0.8)
     points.neckCp2 = points.neckFront.shift(180, points.neckFront.dy(points.neckRight) * 0.8)
 
-    paths.neckLine = new Path()
-      .move(points.neckRight)
-      .curve(points.neckCp1, points.neckCp2, points.neckFront)
-
     points.neckCp3 = points.neckLeft.shift(90, points.neckFront.dy(points.neckLeft) * 0.8)
     points.neckCp4 = points.neckFront.shift(0, points.neckFront.dy(points.neckLeft) * 0.8)
 
-    paths.neckLine2 = new Path()
-      .move(points.neckFront)
+    paths.neckLineFront = new Path()
+    .move(points.neckRight)
+      .curve(points.neckCp1, points.neckCp2, points.neckFront)
       .curve(points.neckCp4, points.neckCp3, points.neckLeft)
 
     points.neckBack = points.middle
