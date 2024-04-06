@@ -49,11 +49,11 @@ export const body = {
 
     points.topLeft = new Point(0, 0)
     points.topRight = new Point(widthBody, 0)
-    points.bottomLeft = new Point(0, lengthBody)
-    points.bottomRight = new Point(widthBody, lengthBody)
+    points.bottomLeft = new Point(0, maxLength )
+    points.bottomRight = new Point(widthBody, maxLength )
 
-    points.gorestartLeft = points.bottomLeft.shiftTowards(points.topLeft, lengthBody / 2)
-    points.gorestartRight = points.bottomRight.shiftTowards(points.topRight, lengthBody / 2)
+    points.gorestartLeft = points.bottomLeft.shiftTowards(points.topLeft, maxLength / 2)
+    points.gorestartRight = points.bottomRight.shiftTowards(points.topRight, maxLength / 2)
 
     points.middle = points.topLeft.shiftTowards(points.topRight, widthBody / 2)
     points.leftShoulder = points.middle.shiftTowards(
