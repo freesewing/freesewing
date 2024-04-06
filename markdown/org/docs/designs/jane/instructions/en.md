@@ -8,7 +8,6 @@ Extant examples are stitched very finely to allow them to stand up to harsh laun
 
 The shift Jane was based on is sewn with a technique called double felling. To do this you baste the edges of your seam back on both pattern pieces and then align them so both the wrong and right side show the folded over edge. Baste the seam in place and then fell the edge on the wrong and the right side down.
 
-
 <Note>
 Sewing in these instructions includes finishing your seam. So if you sew your sleeve gussets to your sleeves you want to also finish those seams before moving on.
 </Note>
