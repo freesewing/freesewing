@@ -55,10 +55,7 @@ export const sleeve = {
         .shiftTowards(points.sleeveBottomRight, sleeveWidth / 2)
         .addText('hem', 'center')
 
-      macro('sprinkle', {
-        snippet: 'notch',
-        on: ['notch'],
-      })
+      snippets.notch = new Snippet ('notch', points.notch)
 
       if (sa) {
         paths.sa = paths.sleeve.offset(sa).setClass('fabric sa')
