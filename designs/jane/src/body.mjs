@@ -26,7 +26,6 @@ export const body = {
     paths,
     Snippet,
     snippets,
-    complete,
     sa,
     paperless,
     macro,
