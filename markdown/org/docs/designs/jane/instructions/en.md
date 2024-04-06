@@ -28,8 +28,11 @@ Finish the seams.
 Repeat for the second sleeve.
 Hem the bottom of the sleeves.
 
-## Step 5
-Sew the side  gores together
+## Step 3: Prep the side gores
+
+Sew the two side gores together along the longest straight edges to create a kite.
+Finish the seam.
+Repeat for other set of side gores.
 
 ## Step 6
 Mark the sideseam. This is the space left between the side gores and the sleeve.
