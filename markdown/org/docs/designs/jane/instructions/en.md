@@ -51,8 +51,9 @@ You may find it easier to turn the body *wrong sides* out for this. It will depe
 
 </Note>
 
-## Step 10
-Hem the bottom of your shift
+## Step 7: Hemming
+
+Hem the bottom of your shift.
 
 ## Step 11
 Wear it as a historical undergarment or however you like!
