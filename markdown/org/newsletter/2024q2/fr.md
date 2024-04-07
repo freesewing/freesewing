@@ -43,8 +43,7 @@ Les deux sont nés du désir de Wouter d'avoir un bon équipement cycliste, et j
 
 Les lecteurs réguliers de la newsletter savent que nous apportons continuellement des améliorations
 sur FreeSewing.org et que celles-ci ne sont pas liées à une nouvelle version,
-mais c'est une bonne occasion de les énumérer. Voici donc quelques points forts des corrections de bugs
-et des améliorations qui ont été apportées à la version 3.2 :
+mais c'est une bonne occasion de les énumérer.
 
 - Sandy a un nouveau panneau
   option qui a été
