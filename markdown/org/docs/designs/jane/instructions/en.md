@@ -6,7 +6,22 @@ You can sew your Jane entirely by machine, or by hand. But it is also possible t
 
 Extant examples are stitched very finely to allow them to stand up to harsh laundering practices. You can stitch your seams with a backstitch and then finish them with a felling stitch.
 
-The shift Jane was based on is sewn with a technique called double felling. To do this you baste the edges of your seam back on both pattern pieces and then align them so both the wrong and right side show the folded over edge. Baste the seam in place and then fell the edge on the wrong and the right side down.
+The shift Jane was based on is sewn with a technique called *double felling* or *german hemming*. This was a common technique for constructing shifts circa 1750s - 1850s so it is a good choice when making a historical Jane. The benefit of this technique is that it allows you to stitch and finish the seam at the same time.
+
+### How to double fell
+
+- Baste the seam allowance to outside on one piece. (*good side*)
+- Baste the seam allowance to the inside the other piece. (*wrong side*)
+- With *good sides facing up*, pin the piece with the edge folded to the inside over the top of the piece with edge folded to the outside, making sure to line the folded edge up with the raw edge.
+- Fell the folded edge on the outside down.
+- Fell the folded edge on the inside down.
+- Remove basting threads
+
+<Note>
+
+It is important to line the weave up of the two pieces when pinning together. You can find out [more about double felling here](https://www.sewncompany.com/felled-seam-german-hemming).
+
+</Note
 
 ## Step 1: Hem the neckline
 
