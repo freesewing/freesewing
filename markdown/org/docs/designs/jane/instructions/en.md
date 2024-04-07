@@ -21,7 +21,7 @@ The shift Jane was based on is sewn with a technique called *double felling* or 
 
 It is important to line the weave up of the two pieces when pinning together. You can find out [more about double felling here](https://www.sewncompany.com/felled-seam-german-hemming).
 
-</Note
+</Note>
 
 ## Step 1: Hem the neckline
 
