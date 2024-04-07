@@ -88,7 +88,7 @@ La [entrada del blog del anuncio de FreeSewing 3.2](https://freesewing.org/blog/
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -122,7 +122,7 @@ si se convierte en una carga cada vez mayor para nuestro tiempo y recursos limit
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -230,7 +230,7 @@ el pozo.
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 

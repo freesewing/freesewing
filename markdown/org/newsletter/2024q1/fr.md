@@ -40,7 +40,7 @@ et continuez comme ça.
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -95,7 +95,7 @@ pour nous faire part de tes idées ! D'ici là, nous verrons ce que l'avenir nou
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -125,7 +125,7 @@ J'apprécie vraiment l'approche de Wouter, qui a ses propres besoins qui sont à
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -165,7 +165,7 @@ Je suppose que nous verrons comment ça se passe. You can find out for yourself,
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -179,7 +179,7 @@ Ok, alors voilà, j'espère que tout s'est bien passé à la fin. Mais pour rapp
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -188,7 +188,7 @@ Ok, alors voilà, j'espère que tout s'est bien passé à la fin. Mais pour rapp
 2023 n'a pas été une année facile pour moi personnellement, ni pour FreeSewing d'ailleurs. The amount of time and effort that went into v3 is something that takes a lot out of you, and I am not ashamed to admit that more than any other year before I've struggled with feelings of _why am I even doing this_.
 
 Cependant, aujourd'hui, je me sens heureuse et fière parce que les recettes de FreeSewing pour 2023 ont atteint **10 222,07** (11 301 $).
-Comme tu le sais peut-être ou non, [tous les revenus de FreeSewing sont reversés à Médecins sans frontières] (https\://freesewing.org/docs/about/pledge), ce qui signifie que 10 222,07 € ont été versés pour aider certaines des personnes les plus vulnérables de cette planète.
+Comme tu le sais peut-être ou non, [tous les revenus de FreeSewing sont reversés à Médecins sans frontières] (https://freesewing.org/docs/about/pledge), ce qui signifie que 10 222,07 € ont été versés pour aider certaines des personnes les plus vulnérables de cette planète.
 
 Je suis particulièrement heureux que nous ayons repassé au-dessus de la barre des 10 000, après être descendus en dessous plusieurs années de suite.
 
