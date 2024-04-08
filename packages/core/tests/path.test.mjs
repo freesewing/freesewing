@@ -118,6 +118,28 @@ describe('Path', () => {
       expect(round(bbox.bottomRight.x)).to.equal(119.86)
       expect(round(bbox.bottomRight.y)).to.equal(43.49)
     })
+
+    it('Should offset small curves', () => {
+      const curve = new Path()
+        .move(new Point(0, 0))
+        .curve(new Point(0.1, 0.1), new Point(0.2, 0.2), new Point(0.1, 1.1))
+      const offset = curve.offset(1)
+      const bbox = offset.bbox()
+      expect(round(bbox.bottomRight.x)).to.equal(-0.9)
+      expect(round(bbox.bottomRight.y)).to.equal(1.19)
+    })
+
+    it('Should offset zero length path', () => {
+      let logged = false
+      const log = { warn: () => (logged = true) }
+      const curve = new Path().__withLog(log).move(new Point(0, 0)).line(new Point(0, 0)).close()
+      expect(logged).to.equal(false)
+      const offset = curve.offset(1)
+      expect(logged).to.equal(true)
+      const bbox = offset.bbox()
+      expect(round(bbox.bottomRight.x)).to.equal(0)
+      expect(round(bbox.bottomRight.y)).to.equal(0)
+    })
   })
 
   describe('length', () => {
@@ -351,6 +373,15 @@ describe('Path', () => {
     expect(round(box.topLeft.x)).to.equal(71.64)
     expect(box.topLeft.y).to.equal(4)
     expect(box.bottomRight.x).to.equal(230)
+    expect(box.bottomRight.y).to.equal(456)
+  })
+
+  it('Should find the bounding box of an empty path', () => {
+    const path = new Path().move(new Point(123, 456)).close()
+    const box = path.bbox()
+    expect(box.topLeft.x).to.equal(123)
+    expect(box.topLeft.y).to.equal(456)
+    expect(box.bottomRight.x).to.equal(123)
     expect(box.bottomRight.y).to.equal(456)
   })
 
