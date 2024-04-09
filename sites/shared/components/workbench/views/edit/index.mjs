@@ -13,7 +13,7 @@ import { CloseIcon } from 'shared/components/icons.mjs'
 export const ns = []
 
 /** a view for editing the gist as yaml */
-export const EditView = ({ settings, setSettings, Design }) => {
+export const EditView = ({ account, settings, setSettings, Design }) => {
   const inputRef = useRef(null)
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const [error, setError] = useState(false)
@@ -38,8 +38,24 @@ export const EditView = ({ settings, setSettings, Design }) => {
 
       // validate it
       const validation = validateSettings(editedAsJson, patternConfig)
+
+      // we might want to let 'invalid' settings get saved anyway
+      // currently only for RangeErrors with user experience == 5
+      let treatErrorsAsValid = false
+
       // if it's not valid, show a warning about errors
       if (!validation.valid) {
+        // If highest user experience, we want to treat settings as valid if all errors are RangeError
+        if (account.control == 5) {
+          treatErrorsAsValid = true
+          Object.entries(validation.errors).forEach(([_, set]) => {
+            Object.entries(set).forEach(
+              ([_, error]) =>
+                (treatErrorsAsValid = error != 'RangeError' ? false : treatErrorsAsValid)
+            )
+          })
+        }
+
         const newError = JSON.stringify(validation.errors, null, 2)
         setError(newError)
       }
@@ -47,7 +63,8 @@ export const EditView = ({ settings, setSettings, Design }) => {
       // save regardless
       setSettings(editedAsJson)
       setSuccess(true)
-      if (validation.valid) setLoadingStatus([true, 'status:settingsSaved', true, true])
+      if (validation.valid || treatErrorsAsValid)
+        setLoadingStatus([true, 'status:settingsSaved', true, true])
     } catch (e) {
       console.log(e)
       setError(e.message)
