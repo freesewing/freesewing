@@ -49,8 +49,8 @@ export const EditView = ({ account, settings, setSettings, Design }) => {
         if (account.control == 5) {
           saveInvalidSettings = true
           Object.entries(validation.errors).forEach(([setName, set]) => {
-            Object.entries(set).forEach(
-              ([_, error]) =>
+            Object.values(set).forEach(
+              (error) =>
                 (saveInvalidSettings =
                   setName != 'options' || error != 'RangeError' ? false : saveInvalidSettings)
             )
