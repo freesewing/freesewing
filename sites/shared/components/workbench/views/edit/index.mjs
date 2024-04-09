@@ -40,18 +40,19 @@ export const EditView = ({ account, settings, setSettings, Design }) => {
       const validation = validateSettings(editedAsJson, patternConfig)
 
       // we might want to let 'invalid' settings get saved anyway
-      // currently only for RangeErrors with user experience == 5
+      // currently only for RangeErrors of options, with user experience == 5
       let treatErrorsAsValid = false
 
       // if it's not valid, show a warning about errors
       if (!validation.valid) {
-        // If highest user experience, we want to treat settings as valid if all errors are RangeError
+        // If highest user experience, we want to treat settings as valid if all errors are RangeErrors for options
         if (account.control == 5) {
           treatErrorsAsValid = true
-          Object.entries(validation.errors).forEach(([_, set]) => {
+          Object.entries(validation.errors).forEach(([setName, set]) => {
             Object.entries(set).forEach(
               ([_, error]) =>
-                (treatErrorsAsValid = error != 'RangeError' ? false : treatErrorsAsValid)
+                (treatErrorsAsValid =
+                  setName != 'options' || error != 'RangeError' ? false : treatErrorsAsValid)
             )
           })
         }
