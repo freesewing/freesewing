@@ -1,7 +1,6 @@
-import chai from 'chai'
+import { expect } from 'chai'
 import * as all from '../src/index.mjs'
 
-const expect = chai.expect
 const { measurements, sizes } = all
 
 describe('Measurements', () => {

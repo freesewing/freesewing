@@ -1,16 +1,8 @@
-[---
-title: "Peplum option"
+---
+title: Peplum fullness
 ---
 
 ***
 
-The **peplum** option creates a peplum along the waist. 
-
-<Note>
-If the size and fullness are large enough, this can become a dress.
-</Note>
-
-
-
-
-](../peplum)
+The **peplum fullness** determines the amount of wrinkles in the peplum. This can
+vary between 180 to 360 degree. Think of it as a half-circle to a full-circle skirt.

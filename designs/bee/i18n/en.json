@@ -80,7 +80,7 @@
     },
     "pointedTieEnds": {
       "t": "Pointed tie ends",
-      "d": "Enable this options if you prefer tie ends to be pointy, rarther than straight"
+      "d": "Enable this options if you prefer tie ends to be pointy, rather than straight"
     },
     "pointedTieEndsYes": {
       "t": "Pointy ends",
@@ -168,7 +168,7 @@
     },
     "reversibleYes": {
       "t": "Make it reversible",
-      "d": "Create a Bee that you can wear with both sides out, posssibly ussing different fabrics"
+      "d": "Create a Bee that you can wear with both sides out, possibly using different fabrics"
     },
     "reversibleNo": {
       "t": "Do not make it reversible",

@@ -1,6 +1,6 @@
 logs: Logboeken
 error: Foutmeldingen
-warning: Waarschuwingsberichten
+warn: Waarschuwingsberichten
 info: Info berichten
 debug: Debugberichten
 seeLinkOrClick: Zie { link } of { click }

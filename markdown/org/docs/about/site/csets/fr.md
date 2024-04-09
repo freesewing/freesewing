@@ -1,35 +1,35 @@
 ---
-title: Séries de mesures sélectionnées
+title: Sets de mesures curatées
 ---
 
-FreeSewing's **curated measurements sets** are a collection of measurements sets that represent real people.
+Les **sets de mesures curatés** de FreeSewing sont une collection d'ensembles de mesures qui représentent des personnes réelles.
 
-These sets are used by designers to test their designs on a variety of bodies, as well as by FreeSewing users to test the platform.
+Ces ensembles sont utilisés par les designers pour tester leurs patrons sur une variété de corps, ainsi que par les utilisateurs de FreeSewing pour tester la plateforme.
 
 ## Historique
 
-FreeSewing is all about bespoke sewing patterns, so perpetuating the myth of *standard sizes* was never something we wanted to be part of.
+FreeSewing se consacre aux patrons de couture sur mesure, alors perpétuer le mythe de *des tailles standard* n'a jamais été quelque chose dont nous voulions faire partie.
 
-In reality, having to take measurements prior to even being able to try the platform adds a lot of friction to the onboarding of new users. So at one point, we added a sizing table with a variety of measurements/sizes so people could see what generating a pattern looked like without having to start measuring themselves.
+En réalité, le fait de devoir prendre des mesures avant même de pouvoir essayer la plateforme ajoute beaucoup de frictions à l'accueil des nouveaux utilisateurs. Ainsi, à un moment, nous avons ajouté un tableau des tailles avec une variété de mesures/tailles pour que les personnes puissent voir à quoi ressemble la création d'un modèle sans avoir à commencer par se mesurer elles-mêmes.
 
-With the release of version 3 of FreeSewing, we wanted to move away from these *made up* measurements and instead work with the data of real people to test our platform.
+Avec la sortie de la version 3 de FreeSewing, nous voulions nous éloigner de ces mesures *inventées* et travailler plutôt avec les données de vraies personnes pour tester notre plateforme.
 
-We now no longer present users who want to try out the site a range of *standard sizes* but rather a collection of measurements sets where they can pick the one that best represents their own body.
+Désormais, nous ne présentons plus aux utilisateurs qui veulent essayer le site une gamme de *tailles standard* mais plutôt une collection d'ensembles de mesures où ils peuvent choisir celle qui représente le mieux leur propre corps.
 
 ## Suggérer un ensemble de mesures pour la curation
 
 Nous comptons sur notre communauté pour soumettre des ensembles de mesures à la curation. Si tu as un ensemble de mesures publiques sur le site, tu peux le suggérer pour la curation.
 
-To be part of our curated measurements sets collection, you should provide the following:
+Pour faire partie de notre collection de jeux de mesures curatées, tu dois fournir les éléments suivants :
 
-- **Toutes les mesures** de la personne. Nous n'acceptons pas les ensembles incomplets, car cela signifierait que certains dessins ne fonctionneraient pas avec eux.
+- **Toutes les mesures** de la personne. Nous n'acceptons pas les sets incomplets, car cela signifierait que certains designs ne fonctionneraient pas avec eux.
 - **La taille** de la personne. Cela aide les utilisateurs à sélectionner un ensemble de mesures le plus proche de leur propre corps.
 - **Une photo** de la personne qui sera présentée [dans notre série de mesures](/curated-sets). Tu trouveras ci-dessous des conseils.
 
 
-## Conseils pour les photos d'alignement
+## Conseils pour les photos en lignes
 
-We present measurements sets in a line-up style, so the picture should be a full frontal picture where you are standing straight and relaxed with your arms beside your body.
+Nous présentons les jeux de mesures sur une ligne, la photo doit donc être une photo de face où tu te tiens droit et détendu avec tes bras à côté de ton corps.
 
 Tu trouveras ci-dessous quelques conseils pour obtenir de bons résultats :
 

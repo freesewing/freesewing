@@ -1,11 +1,7 @@
 ---
-title: "Глибина пройми"
+title: Глибина пройми
 ---
 
 ***
 
-Параметр **глибина пройми** регулює глибину пройми.
-
-
-
-
+The **armhole depth** option controls the depth of the armhole.

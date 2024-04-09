@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "На фото <a href='https://unsplash.com/@onevagabond'>Пауло Сілва</a> зображена порожня Таймс-сквер у Нью-Йорку під час пандемії COVID"
 date: "2021-01-10"
 intro: "Хіба ми всі не раді, що 2020 рік закінчився?"

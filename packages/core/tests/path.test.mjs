@@ -197,6 +197,7 @@ describe('Path', () => {
       .curve(new Point(0, 40), new Point(123, 34), new Point(230, 4))
     const joint = curve.join(line)
     expect(joint.ops.length).to.equal(4)
+    expect(joint.ops[2].type).to.equal('line')
   })
 
   it('Should join paths that have noop operations', () => {
@@ -209,13 +210,23 @@ describe('Path', () => {
     expect(joint.ops.length).to.equal(6)
   })
 
-  it('Should throw error when joining a closed paths', () => {
+  it('Should throw error when joining a closed path', () => {
     const line = new Path().move(new Point(0, 0)).line(new Point(0, 40))
     const curve = new Path()
       .move(new Point(123, 456))
       .curve(new Point(0, 40), new Point(123, 34), new Point(230, 4))
       .close()
     expect(() => curve.join(line)).to.throw()
+  })
+
+  it('Should combine paths', () => {
+    const line = new Path().move(new Point(0, 0)).line(new Point(0, 40))
+    const curve = new Path()
+      .move(new Point(123, 456))
+      .curve(new Point(0, 40), new Point(123, 34), new Point(230, 4))
+    const combo = curve.combine(line)
+    expect(combo.ops.length).to.equal(4)
+    expect(combo.ops[2].type).to.equal('move')
   })
 
   it('Should shift along a line', () => {
@@ -358,6 +369,20 @@ describe('Path', () => {
     expect(tb.bottomRight.y).to.equal(rb.bottomRight.y)
     expect(rev.ops[1].type).to.equal('curve')
     expect(rev.ops[2].type).to.equal('line')
+  })
+
+  it('Should rotate a path', () => {
+    const test = new Path()
+      .move(new Point(123, 456))
+      .line(new Point(12, 23))
+      .curve(new Point(0, 40), new Point(123, 34), new Point(230, 4))
+      .close()
+    let deg = 60
+    let rotationOrigin = new Point(42, 100)
+    let rotated = test.rotate(deg, rotationOrigin, true)
+    expect(test.length()).to.equal(rotated.length())
+    expect(test.ops[0].to.rotate(deg, rotationOrigin).x).to.equal(rotated.ops[0].to.x)
+    expect(test.ops[0].to.rotate(deg, rotationOrigin).y).to.equal(rotated.ops[0].to.y)
   })
 
   it('Should find the edges of a path', () => {
@@ -901,6 +926,21 @@ describe('Path', () => {
       p1.move(b).curve_('a', b)
     } catch (err) {
       expect('' + err).to.contain('copy is not a function')
+    }
+    expect(invalid).to.equal(true)
+  })
+
+  it('Should log a warning when calling rotate with an origin that is not a point', () => {
+    let invalid = false
+    const log = { warn: () => (invalid = true) }
+    const test = new Path().__withLog(log).move(new Point(123, 456)).line(new Point(12, 23))
+
+    expect(invalid).to.equal(false)
+    let deg = 60
+    try {
+      test.rotate(deg, 'someOrigin')
+    } catch (err) {
+      expect('' + err).to.contain('Cannot read properties of')
     }
     expect(invalid).to.equal(true)
   })

@@ -178,7 +178,7 @@ Marca esta longitud, corta el elástico y únete a los dos extremos.
 
 ## Paso 12: Únete a la cintura
 
-Fold the waistband in half with good sides together, aligning the two short edge ends. Sew the short edges together to sew the waistband into a ring. Press open the seam. They will be inside the waistband, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
+Fold the waistband in half with good sides together, aligning the two short edge ends. Sew the short edges together to sew the waistband into a ring. Sew the short edges together, then press open. They will be inside the waistband, so you don't need to finish the edges of these seams unless your fabric is particularly likely to fray.
 
 ![Se unieron piezas de cintura](step12.svg)
 

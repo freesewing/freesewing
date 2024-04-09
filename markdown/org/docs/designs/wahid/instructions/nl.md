@@ -86,7 +86,7 @@ Strijk deze naad open wanneer je klaar bent.
 
 #### Markeer waar je zak moet komen
 
-![Markeer waar je zak moet komen](05a.png)
+![Markeer waar je zak moet komen](05b.png)
 
 Je voorpand heeft een hulplijn om aan te geven waar de paspelzak moet komen. Het zijn twee halve rechthoeken die samenkwamen wanneer je de neep sloot, en samen de vorm van je paspelzak hebben.
 
@@ -116,7 +116,7 @@ Stik nu langs de hulplijnen die de lange rand van je zakopening aangeeft.
 
 #### Knip de zak open
 
-![Knip de zak open](05c.png)
+![Knip de zak open](05e.png)
 
 Tijd om de zak voorzichtig open te knippen. Begin in het midden van de zakopening, en knip langs de lange randen naar de zijkant.
 
@@ -126,7 +126,7 @@ Aan de zijranden van de zakopening moet je stoppen met in het midden te knippen 
 
 #### Strijk de naadwaarde open
 
-![Strijk de naadwaarde open](05c.png)
+![Strijk de naadwaarde open](05f.png)
 
 Strijk de naadwaarde aan de lange kanten van je zakopening open.
 

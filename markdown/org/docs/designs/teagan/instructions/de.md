@@ -77,7 +77,7 @@ Jetzt ist es an der Zeit, die Enden unseres Strickbands zusammenzunähen.
 
 - Jetzt, wo deine Bandenden zusammengefügt sind, ist es an der Zeit, die letzten 6 cm fertigzustellen, indem du das Band dehnst und festnähst, wie du es für den Rest getan hast.
 
-Hurra! Du hast den schwierigsten Teil geschafft! Optionally, you can secure the raw edges by stitching them down to the T-shirt fabric, just inside the knit band with a zig-zag or coverlock stitch. Das ist nicht notwendig, aber ein Detail, das du auf vielen T-Shirts von der Stange siehst, und es kann dazu beitragen, dass dein Nackenband flach liegt.
+Hurra! Du hast den schwierigsten Teil geschafft! Das ist nicht notwendig, aber ein Detail, das du auf vielen T-Shirts von der Stange siehst, und es kann dazu beitragen, dass dein Nackenband flach liegt. Das ist nicht notwendig, aber ein Detail, das du auf vielen T-Shirts von der Stange siehst, und es kann dazu beitragen, dass dein Nackenband flach liegt.
 
 ![Strickband zum Sichern festnähen](step03i.svg)
 

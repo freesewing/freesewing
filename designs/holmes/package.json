@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/holmes",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "A FreeSewing pattern for a Sherlock Holmes hat",
   "author": "AlfaLyr (https://github.com/alfalyr)",
   "homepage": "https://freesewing.org/",
@@ -49,17 +49,17 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.1.0",
-    "@freesewing/plugin-bust": "3.1.0"
+    "@freesewing/core": "3.2.0",
+    "@freesewing/plugin-bust": "3.2.0"
   },
   "dependencies": {
-    "@freesewing/plugin-gore": "3.1.0"
+    "@freesewing/plugin-gore": "3.2.0"
   },
   "devDependencies": {
-    "mocha": "10.2.0",
-    "chai": "5.0.3",
-    "@freesewing/models": "3.1.0",
-    "@freesewing/plugin-timing": "3.1.0"
+    "mocha": "10.3.0",
+    "chai": "5.1.0",
+    "@freesewing/models": "3.2.0",
+    "@freesewing/plugin-timing": "3.2.0"
   },
   "files": [
     "dist/*",
@@ -70,7 +70,6 @@
     "tag": "latest"
   },
   "engines": {
-    "node": ">=18",
-    "npm": ">=9"
+    "node": ">= 18.17.0 <22"
   }
 }

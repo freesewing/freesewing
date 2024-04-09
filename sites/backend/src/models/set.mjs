@@ -377,7 +377,6 @@ SetModel.prototype.asPublicSet = function () {
     about: 'Contains measurements in mm as well as metadata',
     ...this.asSet(),
   }
-  delete data.userId
   data.measurements = data.measies
   delete data.measies
   data.units = data.imperial ? 'imperial' : 'metric'

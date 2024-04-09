@@ -1,12 +1,8 @@
 ---
-title: "Zipper location"
+title: Ubicación de la cremallera
 ---
 
 ***
 
-The **zipper location** controls where the zipper should be inserted. 
-Options are in the front, in the back, or in the side seam. 
-
-
-
-
+The **lacing location** controls where the **lacing** option will be implemented.
+Options are in the front, or in the back.

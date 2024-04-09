@@ -6,6 +6,7 @@ intro: "We zijn dol op de leuke stofkeuzes van deze Bruce boxerslip. zegt Ferdi:
 title: "Bruce door Ferdi"
 designs:
   - "bruce"
+author: 1972
 ---
 
 We zijn dol op de leuke stofkeuzes van deze Bruce boxerslip. zegt Ferdi:

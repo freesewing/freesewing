@@ -13,6 +13,7 @@ import { prebuildFavicon as favicon } from './favicon.mjs'
 import { prebuildCrowdin as crowdin } from './crowdin.mjs'
 import { prebuildOrg as orgPageTemplates } from './org.mjs'
 import { prebuildSearch as search } from './search.mjs'
+import { prebuildJargon as jargon } from './jargon.mjs'
 //import { prebuildLab as lab} from './lab.mjs'
 import { prebuildOgImages as ogImages } from './og.mjs'
 
@@ -32,6 +33,7 @@ const handlers = {
   favicon,
   patrons,
   docs,
+  jargon,
   posts,
   navigation,
   git,
@@ -65,7 +67,7 @@ export const prebuildRunner = async ({
   /*
    * Setup a place where we can keep data
    */
-  const store = { site }
+  const store = { site, users: {} }
 
   /*
    * Let the user know what's going to happen

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Paco sur votre obligé"
 date: "2020-08-10"
 intro: "Découvrez Paco : notre nouveau patron unisexe pour un élégant pantalon d'été"

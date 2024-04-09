@@ -9,7 +9,7 @@ title: "Chaqueta Jaeger: Instrucciones de corte"
   - Corta **2 lados** (parte 3)
   - Corta **2 mangas superiores** (parte 4)
   - Corta **2 mangas bajas** (parte 5)
-  - Cortar **1 collar** (parte 6)
+  - Cut **1 collar** (part 7)
   - Cortar **1 collarstand** (parte 8)
   - Corta **2 bolsillos** (parte 9)
   - Corta **1 soldado de bolsillo de cofre** (parte 10)
@@ -26,8 +26,9 @@ title: "Chaqueta Jaeger: Instrucciones de corte"
 - **Lona**
   - Cortar **2 frentes** en el sesgo (parte 1) Nota: No incluir el permiso de costura
   - Corta **2 piezas de cofre** con parcialidad. Busque la indicación en la parte delantera. Nota: No incluir permisos de costura
+  - Cut **1 undercollar** (part 6). No incluyas el margen de costura.
 - **Tejido bajo cuello**
-  - Corta **2 sotocollares** (parte 7)
+  - Cut **1 undercollar** (part 6)
 
 <Note>
 
@@ -51,3 +52,19 @@ Cuando los cortes individualmente, recuerda que necesitan ser imágenes espejo u
 ![Rastrea el frente y el revestimiento desde la parte delantera](cuttingCaveat.svg)
 
 </Warning>
+
+<Comment by="Benjamin F.">
+
+Instead of cutting the canvas parts _nett_ (without seam allowance),
+there is an alternate
+method where seam allowance is included on the canvas parts.
+The idea is that because the canvas parts have seam allowance,
+when they are attached to the main fabric pieces this can allow
+ease to be worked into the garment for a better shape.
+The seam allowance is then trimmed from the canvas at a later point
+in the garment construction process.
+
+However, because this is a more advanced tailoring technique,
+our instructions are instead written with the nett canvas method.
+
+</Comment>

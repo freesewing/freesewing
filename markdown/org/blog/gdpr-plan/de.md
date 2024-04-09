@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Dieses Bild ist wahrscheinlich das Einzige in der Post, was Sie diagonal überfliegen können"
 date: "2018-02-14"
 intro: "Die Datenschutzgrundverordnung der Europäischen Union: Unser Schlachtplan."

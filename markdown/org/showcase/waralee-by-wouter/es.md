@@ -6,6 +6,7 @@ intro: "Ésta es la primera versión que hizo Wouter tras completar el patrón W
 title: "Waralee por Wouter"
 designs:
   - "waralee"
+author: 132
 ---
 
 Ésta es la primera versión que hizo Wouter tras completar el patrón Waralee.

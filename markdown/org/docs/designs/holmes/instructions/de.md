@@ -31,7 +31,7 @@ Diese Anweisungen gehen davon aus, dass Sie Ihre Nahtlinien markiert haben. Sie 
 - Bügel die Nähte auf. Sie mussten dafür einen Schneider-Schinken verwenden, wenn Sie keinen Schinken haben, können Sie stattdessen Flannels oder Handtücher verwenden.
 - (Optional) _Kantenstich_ beide Seiten der Naht und achte darauf, dass du die Nahtzugaben erwischst.
 - Wiederhole dies, bis du zwei Hälften hast. Wenn die Hälfte der Anzahl der Kronenstücke eine ungerade Zahl ist, müssen Sie zu jeder Hälfte ein einzelnes Stück nähen. z.B. Wenn Sie 6 Kronen haben, machen Sie zwei Hälften von 3 Nähen ein Stück zu zwei zusammengenähten Stücken.
-- With right sides together, matching seam lines and peaks, sew the two halves together. Sie können den Gipfel vielleicht leichter zusammen handnähen durch Schüttgut oder Präzision. This seam will be referred to as the "centre crown seam" going forward.
+- Lege rechts auf rechts die mittleren Kronennähte, die Teilungsnähte und die Nahtlinien zusammen. Sie können den Gipfel vielleicht leichter zusammen handnähen durch Schüttgut oder Präzision. This seam will be referred to as the "centre crown seam" going forward.
 - (Optional) _Kantenstich_ beide Seiten der mittleren Kronennaht, wobei du darauf achtest, dass du die Nahtzugaben erwischst.
 
 <Note>
@@ -161,7 +161,7 @@ Wieder einmal gibt es zwei Methoden für Endmontage und Verkleidung. Lesen Sie b
 - (Optional) Klebe das Visier mit der Maschine entlang der Nahtlinien an die Krone.
 - Wiederhole den Vorgang für das restliche Visier auf der gegenüberliegenden Seite der mittleren Kronennaht.
 - Construct lining the same way as the crown omitting _edgestitching_ and leaving a gap in the centre lining seam large enough to turn the hat.
-- Lege rechts auf rechts die mittleren Kronennähte, die Teilungsnähte und die Nahtlinien zusammen. Sew the lining to the crown along seam lines. Wenn Sie sperrig sind, können Sie entweder die Futternähte oder beide Nähte schneiden.
+- Lege rechts auf rechts die mittleren Kronennähte, die Teilungsnähte und die Nahtlinien zusammen. This seam will be referred to as the "centre crown seam" going forward. Wenn Sie sperrig sind, können Sie entweder die Futternähte oder beide Nähte schneiden.
 - Drehe die Mütze von innen nach außen und drücke das Futter nach innen.
 - (Optional/Alternativ) _Untersteppe das_ Futter.
 - Steppstich-Futteröffnung geschlossen.

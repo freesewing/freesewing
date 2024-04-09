@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Ein rosa Hi und sein BLÅHAJ-Vorfahr"
 date: "2022-06-27"
 intro: "FreeSewing 2.21 fügt Bob, Hi, Lucy, Noble und Unice Designs hinzu"

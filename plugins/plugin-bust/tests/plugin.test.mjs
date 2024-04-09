@@ -6,9 +6,10 @@ const measurements = {
   chest: 100,
   highBust: 90,
 }
+const options = { draftForHighBust: true }
 
 const Pattern = new Design()
-const pattern = new Pattern({ measurements }).use(plugin)
+const pattern = new Pattern({ measurements, options }).use(plugin)
 pattern.draft()
 
 describe('Bust plugin Tests', () => {
@@ -18,9 +19,7 @@ describe('Bust plugin Tests', () => {
   })
 
   it('Should copy measurement from chest to bust and from highBust to chest', function () {
-    const testPattern = new Design({
-      measurements: [],
-    })
+    const testPattern = new Design({ measurements: [], options })
     const pattern = new testPattern().use(plugin)
     const userMeasurements = { chest: 50, highBust: 60 }
     pattern.settings[0].measurements = userMeasurements
@@ -30,7 +29,7 @@ describe('Bust plugin Tests', () => {
   })
 
   it('Should not overwrite existing bust measurements', function () {
-    let config = { measurements: [] }
+    let config = { measurements: [], options }
     const testPattern = new Design(config, plugin)
     let pattern = new testPattern()
     let userMeasurements = { chest: 50, highBust: 60, bust: 55 }

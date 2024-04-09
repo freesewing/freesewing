@@ -114,6 +114,18 @@ function wahidBack({
   paths.dart.hide()
 
   /*
+   * Warn about useless back dart
+   */
+  const wr12 = store.get('wr12')
+  const hr12 = store.get('hr12')
+  if (wr12 === 0 && hr12 === 0) {
+    store.flag.warn({
+      title: 'wahid:noBackDart.t',
+      desc: 'wahid:noBackDart.d',
+    })
+  }
+
+  /*
    * Annotations
    */
   // Cutlist
@@ -122,6 +134,7 @@ function wahidBack({
   // Title
   macro('title', {
     at: points.title,
+    title: 'back',
     nr: 2,
     align: 'center',
   })

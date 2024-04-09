@@ -3,7 +3,7 @@ title: Відкриття бекенд API FreeSewing
 caption: Латунна орнаментована старовинна клавіша на чорній комп'ютерній клавіатурі, від PixaBay
 date: 20231103
 intro: Внутрішній API FreeSewing тепер підтримує ключі API, тому ви також можете взаємодіяти з ним
-author: Йост
+author: 1
 ---
 
 Блокування доступу до вашого API, здається, є модною річчю в наші дні. Такі місця, як Twitter - ні, X - і Reddit або блокують доступ до API, або беруть плату за доступ.
@@ -20,7 +20,7 @@ author: Йост
 
 Принаймні, я знаю, що так і буде.
 
-Довідкова документація [REST API знаходиться тут] (https\://freesewing.dev/reference/backend), якщо ви шукаєте специфікацію OpenAPI, то перейдіть на https\://backend3.freesewing.org/docs/
+Довідкова документація [REST API знаходиться тут] (https://freesewing.dev/reference/backend), якщо ви шукаєте специфікацію OpenAPI, то перейдіть на https://backend3.freesewing.org/docs/
 
 ## Використовуйте, але не зловживайте
 

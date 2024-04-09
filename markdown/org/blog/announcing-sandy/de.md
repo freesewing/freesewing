@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Wusstest du, dass Sandy nach Olivia Newton-Johns Figur im Film \"Grease\" benannt wurde?"
 date: "2018-08-01"
 intro: "Meine Damen und Herren --- denn wer sagt, dass Männer keine Röcke tragen können --- Ich freue mich, die sofortige Verfügbarkeit unseres neuesten FreeSewing-Schnittmusters bekannt zu geben: der Tellerrock Sandy ."

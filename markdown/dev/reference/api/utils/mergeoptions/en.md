@@ -8,7 +8,10 @@ options from the pattern configuration.
 ## Signature
 
 ```js
-float deg2rad(object settings, object optionsConfig)
+Object utils.mergeOptions(
+  Object settings,
+  Object optionsConfig
+)
 ```
 
 ## Notes
@@ -20,7 +23,7 @@ and if it's not get the default value from the pattern config. Furthermore,
 where the default is stored and whether or not it should be further transformed
 depends on the option type.
 
-This method exists to facilitate this. You pass it the user-provided settings,
+This function exists to facilitate this. You pass it the user-provided settings,
 and the pattern config options key, and it will return an object where all
 options are populated with the user-provided values, or their defaults if the
 user did not provide any input.

@@ -24,8 +24,12 @@ This property will be an Array (a list) holding all required measurements for th
 I am using [*the official name* of the measurement](/reference/measurements) here. For head
 circumference, that name is `head`.
 
-```src/bib.mjs
-function draftBib({ part }) => {
+<Fixme>
+The `design/src/bib.mjs` "language" title on the code snippets is out of date. It is used in the tutorial from this point forward to maintain syntax-highlight not yet available for the `src/bib.mjs` title, but should be replaced with `src/bib.mjs`.
+</Fixme>
+
+```design/src/bib.mjs
+function draftBib({ part }) {
   return part
 }
 

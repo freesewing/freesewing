@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Mantén a raya las gotitas infectadas de virus con nuestra mascarilla Florence"
 date: "2020-02-28"
 intro: "Acabamos de publicar un patrón de máscaras faciales, porque el coronavirus"

@@ -3,6 +3,96 @@
 
 ## Unreleased
 
+### brian
+
+#### Changed
+
+ - Always load plugin-bust due to its changes in how it handle conditionality.
+
+### huey
+
+#### Fixed
+
+ - Fixed an issue where ribbing height would distort the pocket under certain conditions. Fixes
+ - Adding missing translation for ribbing option
+ - Hide unused ribbing parts when ribbing option is disabled
+
+### hugo
+
+#### Fixed
+
+ - Add missing dimension id attributes
+
+### noble
+
+#### Fixed
+
+ - Fix 'cutonfold' text for Noble's back part. Fixes
+ - Improve dart shaping. Fixes
+
+### onyx
+
+#### Changed
+
+ - Always load plugin-bust due to its changes in how it handle conditionality.
+
+### shelly
+
+#### Changed
+
+ - Always load plugin-bust due to its changes in how it handle conditionality.
+
+### tamiko
+
+#### Changed
+
+ - Always load plugin-bust due to its changes in how it handle conditionality.
+
+### teagan
+
+#### Fixed
+
+ - Fix side seam when length is cropped. Fixes
+
+### uma
+
+#### Fixed
+
+ - Fix back exposure when expand is off. Fixes
+
+### wahid
+
+#### Changed
+
+ - Add a warning when waist and hip reduction are both zero, so no back dart is required
+
+### plugin-bust
+
+#### Changed
+
+ - This plugin now uses the `preSetDraft` rather than `preDraft` lifecycle hook
+ - Conditionality has been moved to the `preSetDraft` lifecycle hook, rather than exposing a `withCondition` named export
+ - The plugin will now always be loaded, but will check for each drafted set whether it should make any changes.
+
+#### Deprecated
+
+ - The `withCondition` named  export is deprecated and will always return true.
+
+### core
+
+#### Added
+
+ - The `Path.rotate()` method was added to the core API.
+
+
+## 3.2.0 (2024-02-11)
+
+### brian
+
+#### Fixed
+
+ - Take biceps ease into account when calculating armhole depth
+
 ### carlton
 
 #### Fixed
@@ -14,6 +104,25 @@
 #### Fixed
 
  - The back pocket welt (4) and front pocket facing (8) incorrectly indicated to cut 2 instead of 4 in the cutlist. Fixes
+
+### hugo
+
+#### Fixed
+
+ - Fix issue that crashed the design when complete is off. Fixes
+ - Base pocket opening on pocket height, rather than width of the garment. Fixes
+
+### lumina
+
+#### Added
+
+ - Initial release
+
+### lumira
+
+#### Added
+
+ - Initial release
 
 ### sandy
 
@@ -43,6 +152,18 @@
 #### Added
 
  - This plugin now supports translation of nested arrays of strings, giving you more flexibility to concatenate translated parts of strings
+
+### core
+
+#### Added
+
+ - Added the `Path.combine()` method
+ - The `Path.join()` method is now variadic
+ - The `Path.length()` now takes an parameter to include move operations in the length calculation
+
+#### Deprecated
+
+ - Calling `Path.join` with a second parameter to indicate that the resulting paths most be closed is now deprecated and will be removed in FreeSewing v4.
 
 ### react-components
 

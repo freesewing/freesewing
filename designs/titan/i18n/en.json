@@ -14,7 +14,7 @@
   "o": {
     "kneeEase": {
       "t": "Knee ease",
-      "d": "Controls the amout of ease at the knee"
+      "d": "Controls the amount of ease at the knee"
     },
     "waistHeight": {
       "t": "Waist height",

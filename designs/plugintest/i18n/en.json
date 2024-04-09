@@ -40,7 +40,7 @@
     },
     "bartackWidth": {
       "t": "width",
-      "d": "Controls the widht of the (stitches making up the) bartack"
+      "d": "Controls the width of the (stitches making up the) bartack"
     }
   }
 }

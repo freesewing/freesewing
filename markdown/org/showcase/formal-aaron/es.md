@@ -6,6 +6,7 @@ intro: "Un Aarón formal, para fiestas"
 title: "Un Aarón formal, para fiestas"
 designs:
   - "aaron"
+author: 13050
 ---
 
 ¡Hola! Aquí TangerineShark. Hice este top para una cena de ensayo de una boda a la que tuve que asistir en septiembre (cuando todavía hacía bastante calor para la filosofía de "fuera el sol, fuera la cama"), y lo creas o no, ¡es un Aarón! Tal vez no sea muy sorprendente, pero tiene algunas modificaciones para hacerlo un poco más formal.

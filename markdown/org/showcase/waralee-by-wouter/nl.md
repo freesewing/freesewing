@@ -6,6 +6,7 @@ intro: "Dit is de eerste versie die Wouter maakte na het voltooien van het Waral
 title: "Waralee door Wouter"
 designs:
   - "waralee"
+author: 132
 ---
 
 Dit is de eerste versie die Wouter maakte na het voltooien van het Waralee patroon.

@@ -16,6 +16,14 @@ import { collection } from 'site/hooks/use-design.mjs'
 import { DesignMeasurements } from './design-measurements.mjs'
 import { DesignOptions } from './design-options.mjs'
 import { MeasieImage } from 'shared/components/measurements/image.mjs'
+// Dev/Org jargon
+import { Term as SharedTerm, termList } from 'shared/components/jargon.mjs'
+import { jargon, site } from 'site/prebuild/jargon.mjs'
+// Dev web of trust
+import { WebOfTrustMap, WebOfTrustTable } from '../../../dev/components/web-of-trust.mjs'
+
+export const Term = ({ children }) => <SharedTerm {...{ jargon, children, site }} />
+export const TermList = termList(jargon, site)
 
 export const components = (site = 'org', slug = []) => {
   const base = {
@@ -30,7 +38,9 @@ export const components = (site = 'org', slug = []) => {
     Tip: (props) => <Popout {...props} tip />,
     Tldr: (props) => <Popout {...props} tldr />,
     Warning: (props) => <Popout {...props} warning />,
+    em: (props) => <Term {...props} />,
   }
+
   const extra = {
     pre: (props) => <Highlight {...props} />,
     YouTube,
@@ -49,12 +59,20 @@ export const components = (site = 'org', slug = []) => {
 
   if (site === 'sde') return base
 
+  // TermList
+  if (site === 'dev' && Array.isArray(slug) && slug.join('/') === 'reference/terms')
+    extra.TermList = TermList
+  else if (site === 'org' && Array.isArray(slug) && slug.join('/') === 'about/terms')
+    extra.TermList = TermList
+
   if (site === 'dev')
     return {
       ...base,
       ...extra,
       Method: HttpMethod,
       StatusCode: HttpStatusCode,
+      WebOfTrustTable,
+      WebOfTrustMap,
     }
 
   const specific = {}

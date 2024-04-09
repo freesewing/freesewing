@@ -10,9 +10,9 @@ Kelly Hogaboide y Julian Collins hicieron una costura Simon(e) , y tienen videos
 todos los pasos.
 Si estás buscando este patrón, Kelly y Julian pueden guiarte a empezar a terminar.
 
-Puedes encontrar todo el material en el sitio
-de Kelly: [#simonsayssew con Kelly Hogaboom y Julian Collins](https://kelly.Firstaboom.org/2020/07/simon-says-sew-with-kelly-Øaboom-and-ú-únian-collins/)
-
+You can find all the material's on Kelly's
+site: [#simonsayssew with kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
+Note: as of March 19, 2024, this link appears to be down as it's redirecting to a different page. The videos are still available on Vimeo. [[Part 1: Measuring & Drafting](https://vimeo.com/438424557)/[2: Cutting & Marking](https://vimeo.com/438424645)/[3: Cuffs, Collar, Yokes & Darts](https://vimeo.com/441665307)/[4: Front Placket & Shoulder Seams](https://vimeo.com/441667465)/[5: Sleeve Placket & Armscye](https://vimeo.com/441668326)/[6: Side Seams, Cuffs, & Collar](https://vimeo.com/441727449)/[7: Hem, Buttonholes, & Buttons](https://vimeo.com/441731576)]
 </Tip>
 
 ### Paso 1: Fusionar interfaz
@@ -251,6 +251,8 @@ Cuando estés feliz, presiona la placa plegada.
 Desde el lado bueno de la camiseta, coser la placa plegada cruzando la zanja.
 
 Para ello, coser exactamente encima de su costura anterior. Como has doblado la tela de la tapeta un poco más allá de esta costura, se enganchará en la parte posterior, fijando tu tapeta doblada en su sitio y bloqueando el margen de costura en el interior.
+
+![Stitch in the ditch](9e.png)
 
 ### Paso 10: Prepara el conjunto de posición del botón
 

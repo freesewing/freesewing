@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "La ilustración del patrón de Penélope"
 date: "2018-06-29"
 intro: "Me complace anunciar la disponibilidad inmediata de la Falda lápiz Penélope , que sale hoy en versión beta."

@@ -1,6 +1,7 @@
 ---
 layout: onecol
 title: Heften
+jargon: stimmt
 ---
 
 ![Die Form dieser Jeans-Rücktasche ist geheftet bevor die Tasche an das Kleidungsstück abgesteppt wird](basting.jpg)

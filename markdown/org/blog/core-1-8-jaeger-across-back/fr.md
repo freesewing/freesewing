@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Ce communiqué t'est présenté par Bangkok"
 date: "21-03-2018"
 intro: "Nous venons d'appuyer sur le bouton du noyau 1.8.0. Cette augmentation du nombre de mineurs est généralement due à un nouveau modèle, mais dans ce cas, il y a deux raisons :"

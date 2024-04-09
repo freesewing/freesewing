@@ -12,7 +12,7 @@ Si vous cherchez à créer ce modèle, Kelly et Julian peuvent vous guider vers 
 
 Tu peux trouver tout le matériel sur le site de Kelly
 : [#simonsayssew avec kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
-
+Note : en date du 19 mars 2024, ce lien semble être en panne car il redirige vers une autre page. Les vidéos sont toujours disponibles sur Vimeo. [[Partie 1 : Mesure et dessin](https://vimeo.com/438424557)/[2 : Découpe et marquage](https://vimeo.com/438424645)/[3 : Poignets, col, empiècements et pinces](https://vimeo.com/441665307)/[4 : Patte de devant et coutures d'épaules](https://vimeo.com/441667465)/[5 : Patte de manche et emmanchures](https://vimeo.com/441668326)/[6 : Coutures latérales, poignets et col](https://vimeo.com/441727449)/[7 : Ourlet, boutonnières et boutons](https://vimeo.com/441731576)]
 </Tip>
 
 ### Étape 1 : Thermocoller l'entoilage
@@ -251,6 +251,8 @@ Quand vous êtes satisfait, repassez la patte pliée.
 Retourner la pièce sur l'endroit, et fixer la patte repliée en piquant dans la rainure.
 
 Pour cela, coudre exactement sur votre couture précédente. Comme tu as plié le tissu de ta patte de boutonnage un peu au-delà de cette couture, il sera pris à l'arrière, fixant ta patte de boutonnage pliée en place, et bloquant le surplus de couture à l'intérieur.
+
+![Stitch in the ditch](9e.png)
 
 ### Etape 10: Préparer la patte de boutonnage (côté boutonnières)
 

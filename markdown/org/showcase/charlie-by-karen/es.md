@@ -6,6 +6,7 @@ intro: "Estos Charlies se fabricaron en una sarga elástica morada, con una altu
 title: "Charlies morados"
 designs:
   - "charlie"
+author: 13050
 ---
 
 

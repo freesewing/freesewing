@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Dit bericht gaat vooral over ons werk aan progressieve openbaarmaking. Ook: Drie nieuwe patronen!"
 date: "2019-10-06"
 intro: "We hebben zojuist FreeSewing v2.1 uitgebracht 🎉"

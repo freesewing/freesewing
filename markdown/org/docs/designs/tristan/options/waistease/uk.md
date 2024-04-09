@@ -1,11 +1,7 @@
 ---
-title: "Легкість талії"
+title: Легкість талії
 ---
 
 ***
 
-Опція **полегшення талії** контролює ступінь полегшення талії.
-
-
-
-
+The **waist ease** option controls the amount of ease at your waist.

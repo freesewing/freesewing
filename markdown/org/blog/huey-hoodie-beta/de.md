@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Dieser lila Huey Hoodie ist der erste seiner Art. Nun sind Sie an der Reihe"
 date: "2017-10-21"
 intro: "Der Hoodie \"Huey\" ist jetzt als Beta-Version erhältlich. Was die Frage aufwirft, was es bedeutet, wenn ein Schnittmuster in der Beta-Phase ist?"

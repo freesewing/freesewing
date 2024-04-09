@@ -6,6 +6,7 @@ intro: "Un mono azul de cuerpo entero Onyx de Thrunic"
 designs:
   - "ónice"
 maker: joost
+author: 33070
 ---
 
 Se trata de un mono de cuerpo entero Onyx de Thrunic, que creó [el diseño Onyx](/designs/onyx). Escriben:

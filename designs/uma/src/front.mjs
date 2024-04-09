@@ -28,13 +28,11 @@ function draftUmaFront({
   if (store.get('bulge')) {
     /*
      * Return the bulge version of the front which means that:
-     * - Front and gusset togeter form one part
+     * - Front and gusset together form one part
      * - Front cannot be cut on the fold
      */
-    paths.seam = store.get('bulge')
-      ? paths.bulge.clone().setClass('fabric')
-      : paths.frontAndGusset.clone().setClass('fabric')
-    if (store.get('bulge')) delete paths.bulge
+    paths.seam = paths.bulge.clone().setClass('fabric')
+    delete paths.bulge
     delete paths.back
     delete paths.frontAndGusset
 

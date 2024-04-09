@@ -31,6 +31,15 @@ export const TestMenu = ({ design, patternConfig, settings, update }) => {
   const { t } = useTranslation(ns)
 
   const allOptions = flattenOptions(patternConfig.options, settings)
+  const allMeasurements = patternConfig.measurements
+    .concat(patternConfig.optionalMeasurements)
+    .sort((a, b) => {
+      const ta = t(`measurements:${a}`)
+      const tb = t(`measurements:${b}`)
+      if (ta < tb) return -1
+      else if (ta > tb) return 1
+      else return 0
+    })
 
   return (
     <Accordion
@@ -50,7 +59,7 @@ export const TestMenu = ({ design, patternConfig, settings, update }) => {
               label: [
                 ...option.path.map((p) => (
                   <>
-                    <span>{t(`${p}.t`)}</span>
+                    <span>{t([`${design}:${p}.t`, `workbench:${p}`])}</span>
                     {spacer}
                   </>
                 )),
@@ -76,8 +85,8 @@ export const TestMenu = ({ design, patternConfig, settings, update }) => {
           </Fragment>,
           <ListInput
             key="b"
-            list={patternConfig.measurements.map((m) => ({
-              label: t(m),
+            list={allMeasurements.map((m) => ({
+              label: t(`measurements:${m}`),
               val: m,
             }))}
             update={(value) => {

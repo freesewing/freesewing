@@ -16,7 +16,13 @@
     "cutCuff.t": "The cuff is not shown",
     "cutCuff.d": "The **Cuff** (7) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long.",
     "cutWaistband.t": "The waistband is not shown",
-    "cutWaistband.d": "The **Waistband** (6) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long."
+    "cutWaistband.d": "The **Waistband** (6) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long.",
+    "zipperLength.t": "The maximum zipper length is {{ length }}",
+    "zipperLength.d": "You need a zipper with a maximum length of {{ length }}. A slightly shorter zipper will work too.",
+    "ribbingNo.t": "No ribbing",
+    "ribbingNo.d": "Do not include ribbing",
+    "ribbingYes.t": "Include ribbing",
+    "ribbingYes.d": "Include ribbing on sleeve and waistband"
   },
   "o": {
     "pocket": {
@@ -60,7 +66,7 @@
       "d": "Use this to adapt the pattern to how stretchy the ribbing that you are using is."
     },
     "hipsEase": {
-      "t": "Hops ease",
+      "t": "Hips ease",
       "d": "Controls the amount of ease at the hips"
     },
     "pocketWidth": {

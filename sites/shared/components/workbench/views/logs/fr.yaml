@@ -1,6 +1,6 @@
 logs: Journaux
 error: Messages d'erreur
-warning: Messages d'avertissement
+warn: Messages d'avertissement
 info: Messages d'information
 debug: Messages de débogage
 seeLinkOrClick: Voir { link } ou { click }

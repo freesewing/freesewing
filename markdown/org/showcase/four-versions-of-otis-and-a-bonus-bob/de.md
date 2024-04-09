@@ -7,6 +7,7 @@ designs:
   - "otis"
   - "bob"
 maker: Natalia
+author: 132
 ---
 
 Wouter, der Designer, hat sie gemacht:

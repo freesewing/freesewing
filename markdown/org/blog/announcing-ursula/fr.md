@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Photo par Karolina Grabowska de Pexels"
 date: "2021-06-27"
 intro: "Annonce Ursula, un patron de sous-vêtements basique et hautement personnalisable."

@@ -1,5 +1,5 @@
 ---
-maker: "Joost De Cock"
+author: 1
 caption: "Plus de Charlie"
 date: "2021-05-23"
 intro: "Joost a fabriqué une autre excellente paire de Charlie Chinos dans ce tissu beige."

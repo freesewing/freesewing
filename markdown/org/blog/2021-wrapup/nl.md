@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Afbeelding door Snapwire - Via pexels.com"
 date: "2022-01-01"
 intro: "Ik ga niet een hele blogpost maken over 2021, omdat ik het gevoel heb dat de meesten van ons gewoon verder willen gaan en het willen vergeten, maar als je op zoek was naar meer leesvoer, dan is hier de inhoudsopgave van onze laatste nieuwsbrief die vandaag is uitgekomen:"

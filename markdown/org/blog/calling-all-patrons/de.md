@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Wir bauen ein Fundament aus treuen Unterstützern, um eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Schnittmuster und unsere Community zu sichern."
 date: "2017-12-10"
 intro: "Aufruf an alle Gönner; Schließen Sie sich unserem Fundament treuer Unterstützer an."

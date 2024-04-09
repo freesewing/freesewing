@@ -1,11 +1,7 @@
 ---
-title: "Довжина талієвої виточки"
+title: Довжина талієвої виточки
 ---
 
 ***
 
-Параметр **довжина талієвої виточки** регулює довжину талієвої виточки по відношенню до грудей.
-
-
-
-
+The **waist dart length** option controls the length of the waist dart towards the bust.

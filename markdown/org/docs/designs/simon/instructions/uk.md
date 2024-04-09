@@ -10,9 +10,9 @@ title: "Сорочка-символ: Інструкція з пошиття"
 усіма етапами.
 Якщо ви хочете зробити цей візерунок, Келлі та Джуліан допоможуть вам від початку до кінця.
 
-Ви можете знайти всі матеріали на сайті Келлі
-: [#simonsayssew with kelly hogaboom & julian collins] (https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
-
+You can find all the material's on Kelly's
+site: [#simonsayssew with kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
+Note: as of March 19, 2024, this link appears to be down as it's redirecting to a different page. The videos are still available on Vimeo. [[Part 1: Measuring & Drafting](https://vimeo.com/438424557)/[2: Cutting & Marking](https://vimeo.com/438424645)/[3: Cuffs, Collar, Yokes & Darts](https://vimeo.com/441665307)/[4: Front Placket & Shoulder Seams](https://vimeo.com/441667465)/[5: Sleeve Placket & Armscye](https://vimeo.com/441668326)/[6: Side Seams, Cuffs, & Collar](https://vimeo.com/441727449)/[7: Hem, Buttonholes, & Buttons](https://vimeo.com/441731576)]
 </Tip>
 
 ### Крок 1: Взаємодія запобіжників
@@ -251,6 +251,8 @@ title: "Сорочка-символ: Інструкція з пошиття"
 З виворітного боку сорочки пришийте складену кокетку, проклавши стібок у кюветі.
 
 Для цього прошийте точно поверх попереднього шва. Оскільки ви склали тканину планки трохи за цим швом, вона зачепиться ззаду, фіксуючи складену планку на місці і закриваючи припуски шва всередині.
+
+![Пришийте кокетку з петлями для ґудзиків](9e.png)
 
 ### Крок 10: Підготуйте планку для петель
 

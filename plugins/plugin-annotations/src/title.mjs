@@ -142,7 +142,7 @@ const title = function (config, { Point, points, scale, locale, store, part, log
 
       `${mc.classes.name} ${mc.align}`
     )
-    .addText(store.data?.for ? store.data.for : 'ephemeral')
+    .addText(store.data?.setName ? store.data.setName : 'ephemeral')
     .addText(')')
     .attr('data-text-transform', transform)
     .attr('data-render-always', 1) // Render even when outside the part bounding box

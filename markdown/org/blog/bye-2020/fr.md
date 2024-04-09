@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Une photo de <a href='https://unsplash.com/@onevagabond'>Paulo Silva</a> montrant un Times Square vide à New York pendant la pandémie COVID"
 date: "2021-01-10"
 intro: "Ne sommes-nous pas tous heureux que 2020 soit finie ?"

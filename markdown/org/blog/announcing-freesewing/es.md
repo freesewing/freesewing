@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "El logotipo de freesewing"
 date: "2017-03-24"
 intro: "Me enorgullece anunciar el núcleo de freesewing v1.0.0 y la documentación que lo acompaña, que describe el proyecto freesewing en detalle."

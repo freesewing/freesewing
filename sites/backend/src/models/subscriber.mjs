@@ -156,9 +156,9 @@ SubscriberModel.prototype.unsubscribe = async function ({ params }) {
 
     return this.setResponse(204)
   } else {
-  /*
-   * If not, perhaps it's an account ehash rather than subscriber ehash
-   */
+    /*
+     * If not, perhaps it's an account ehash rather than subscriber ehash
+     */
     await this.User.read({ ehash })
     if (this.User.record) {
       await this.User.update({ newsletter: false })
@@ -171,6 +171,43 @@ SubscriberModel.prototype.unsubscribe = async function ({ params }) {
    * Return 404
    */
   return this.setResponse(404)
+}
+
+/*
+ * One-click unsubscribe a user
+ * This is an unauthenticated route (has to for newsletter subscribers might not be users)
+ *
+ * @param {body} object - The request body
+ * @returns {SubscriberModal} object - The SubscriberModel
+ */
+SubscriberModel.prototype.ocunsub = async function ({ params }) {
+  const { ehash } = params
+
+  /*
+   * Find the subscription record
+   */
+  await this.read({ ehash })
+
+  /*
+   * If found, remove the record
+   */
+  if (this.record) {
+    await this.delete({ id: this.record.id })
+
+    return true
+  } else {
+    /*
+     * If not, perhaps it's an account ehash rather than subscriber ehash
+     */
+    await this.User.read({ ehash })
+    if (this.User.record) {
+      await this.User.update({ newsletter: false })
+
+      return true
+    }
+  }
+
+  return false
 }
 
 /*

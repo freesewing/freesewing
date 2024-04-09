@@ -8,7 +8,7 @@ length of the path travelled along the path.
 ## Signature
 
 ```js
-Point path.shiftFractionAlong(float fraction[, int stepsPerMm=25])
+Point path.shiftFractionAlong(float fraction, int stepsPerMm = 25)
 ```
 
 The second parameter controls the precision by which the path will be _walked_.

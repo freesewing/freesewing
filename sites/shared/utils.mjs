@@ -190,7 +190,7 @@ export const measurementAsMm = (value, units = 'metric') => {
   }
 }
 
-export const optionsMenuStructure = (options, settings) => {
+export const optionsMenuStructure = (options, settings, asFullList = false) => {
   if (!options) return options
   const sorted = {}
   for (const [name, option] of Object.entries(options)) {
@@ -199,13 +199,15 @@ export const optionsMenuStructure = (options, settings) => {
 
   const menu = {}
   // Fixme: One day we should sort this based on the translation
-  for (const option of orderBy(sorted, ['menu', 'name'], ['asc'])) {
+  for (const option of orderBy(sorted, ['order', 'menu', 'name'], ['asc', 'asc', 'asc'])) {
     if (typeof option === 'object') {
       const oType = optionType(option)
       option.dflt = option.dflt || option[oType]
       if (oType === 'pct') option.dflt /= 100
       if (typeof option.menu === 'function')
-        option.menu = option.menu(settings, mergeOptions(settings, options))
+        option.menu = asFullList
+          ? 'conditional'
+          : option.menu(settings, mergeOptions(settings, options))
       if (option.menu) {
         // Handle nested groups that don't have any direct children
         if (option.menu.includes('.')) {

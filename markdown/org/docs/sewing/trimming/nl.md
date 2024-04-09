@@ -1,5 +1,6 @@
 ---
 title: Bijknippen
+jargon: true
 ---
 
 ![Naadtoeslag wordt bijgeknipt](trimming.jpg)

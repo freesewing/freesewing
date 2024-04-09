@@ -5,6 +5,7 @@ date: "2022-08-02"
 intro: "Aaron A-shirt by pecatrix"
 title: "Aaron A-shirt by pecatrix"
 designs: ["aaron"]
+author: 27667
 ---
 
 pecatrix made Aaron with some pattern modifications! She joined us in [Discord](https://discord.freesewing.org/) to chat about future minor adjustments she'll make to get a completely smooth binding and eliminate the horizontal "banding" on the back. 

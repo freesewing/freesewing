@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Picture by Snapwire - Via pexels.com"
 date: "2022-01-01"
 intro: "I'm not going to do a whole blog post about 2021 stuff because I feel like most of us just sorta want to move on and forget about it, but if you were looking for a longer read, then here's the table of content of our latest newsletter edition that also went out today:"

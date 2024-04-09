@@ -23,6 +23,7 @@ export const ExportView = ({ settings, ui, design, Design }) => {
 
   const startLoading = () => setLoadingStatus([true, 'exporting'])
   const stopLoading = () => setLoadingStatus([true, 'status:nailedIt', true, true])
+  const stopLoadingFail = () => setLoadingStatus([true, 'status:failed', true])
 
   const { t } = useTranslation(ns)
   const doExport = (format) => {
@@ -37,6 +38,7 @@ export const ExportView = ({ settings, ui, design, Design }) => {
       ui,
       startLoading,
       stopLoading,
+      stopLoadingFail,
       onComplete: (e) => {
         if (e.data.link) {
           setLink(e.data.link)

@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Un Sven hecho para la oficina. Como, un poco aburrido"
 date: "2017-07-09"
 intro: "El invierno me llevó a diseñar este patrón. Tenía frío y necesitaba unos jerseys, así que ¿qué hace uno?"

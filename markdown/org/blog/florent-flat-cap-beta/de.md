@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Quentin umgeben von unseren zukünftigen Roboter-Overlords."
 date: "2017-12-06"
 intro: "Das Schnittmuster der Schiebermütze Florent ist jetzt in der Beta-Version erhältlich. Da ist ein weiteres Geschenk erschienen."

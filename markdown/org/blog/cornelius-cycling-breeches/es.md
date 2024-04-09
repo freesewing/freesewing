@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Pedalea como un auténtico caballero"
 date: "2021-03-06"
 intro: "Wouter vuelve a hacer de las suyas, y esta vez nos regala unos pantalones clásicos de ciclista."

@@ -1,9 +1,9 @@
 account: Compte
 docs: Documentation
 controltip.t: Expérience de l'utilisateur
-controltip.d1: The <b>User Experience</b> setting of your FreeSewing account will impact how you experience the FreeSewing website.
+controltip.d1: Le paramètre <b>Expérience utilisateur</b> de ton compte FreeSewing aura un impact sur la façon dont tu vis le site FreeSewing.
 controltip.d2: Par défaut, certaines des fonctionnalités les plus avancées de ce site sont cachées pour permettre aux nouveaux utilisateurs de s'y retrouver plus facilement.
-controltip.d3: If you want to sacrifice some of that simplicity to gain more power, you can update your User Experience setting accordingly.
+controltip.d3: Si tu veux sacrifier une partie de cette simplicité pour gagner en puissance, tu peux mettre à jour ton expérience utilisateur en conséquence.
 helpWithDocs: Aide-nous à améliorer notre documentation
 authors: Les auteurs
 maintainers: Mainteneurs
@@ -23,7 +23,12 @@ credits: Crédits
 contentsBy: Contenu par
 translators: Traducteurs
 title: Titre
-xMadeThis: "<strong>{x}</strong> a fait ceci"
-xWroteThis: "<strong>{x}</strong> a écrit ceci"
+writtenBy: Écrit par
+madeBy: Créé par
 by: Par
-
+claimThisPost: Revendique ce post
+iKnowWhoMadeThis: Je sais qui a fait ça
+iKnowWhoWroteThis: Je sais qui a écrit ça
+iWroteThis: J'ai écrit ceci
+iMadeThis: J'ai fait ça
+term: Terme

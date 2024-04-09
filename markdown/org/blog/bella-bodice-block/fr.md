@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Vous vous souvenez de quand nous avions le droit de sortir ?"
 date: "2021-01-17"
 intro: "Le bloc de buste Bella pour vêtements féminins"

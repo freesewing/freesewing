@@ -21,7 +21,7 @@ import { Loading } from 'shared/components/spinner.mjs'
 const ns = nsMerge('hi', wbNs, pageNs)
 
 const EditDesignComponent = ({ id, design, Design, settings }) => (
-  <Workbench preload={{ settings }} saveAs={{ pattern: id, edit: 0 }} {...{ design, Design }} />
+  <Workbench preload={{ settings }} saveAs={{ pattern: id }} {...{ design, Design }} />
 )
 
 const EditHiPage = ({ page }) => {

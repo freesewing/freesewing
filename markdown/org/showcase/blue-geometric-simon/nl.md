@@ -6,6 +6,7 @@ intro: "We waren gevloerd toen een gebruiker van FreeSewing deze fantastische fo
 title: "Een blauwe geometrische Simon"
 designs:
   - "simon"
+author: 1972
 ---
 
 We waren gevloerd toen een gebruiker van FreeSewing deze fantastische foto's van zijn nieuwe Simon in een GitHub issue achterliet.

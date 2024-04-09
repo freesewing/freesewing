@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Фото: <a href='https://stock.tookapic.com/jenniferforjoy' target='_BLANK' rel='nofollow'>Дженніфер</a>"
 date: "2017-06-12"
 intro: "Коли ми випустили ядро freesewing наприкінці березня, моя увага одразу ж переключилася на створення нашого фронтенду, щоб freesewing.org міг повністю замінити makemypattern.com ."

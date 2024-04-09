@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "De belangrijkste verandering is natuurlijk dat we van paars naar zwart zijn gegaan als onze huisstijlkleur."
 date: "2018-05-24"
 intro: "Welkom op onze nieuwe website. Het voldoet aan GDPR, spreekt 3 talen en ruikt naar natte verf"

@@ -1,11 +1,7 @@
 ---
-title: "Легкість у грудях"
+title: Легкість у грудях
 ---
 
 ***
 
-Параметр **об'єму грудей** регулює об'єм грудей у найповнішій частині тіла.
-
-
-
-
+The **chest ease** option controls the amount of ease at the fullest part of your chest.

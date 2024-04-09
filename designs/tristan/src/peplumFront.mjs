@@ -119,7 +119,7 @@ export const peplumFront = {
     store.flag.note({
       msg: `tristan:peplumWidth`,
       replace: {
-        peblumWidth: units(width),
+        peplumWidth: units(width),
       },
     })
 

@@ -1,5 +1,5 @@
 ---
-maker: "unknown"
+author: 1
 caption: "Sorcha wears a red and blue tartan Florence face mask"
 date: "2020-03-01"
 intro: "A Florence face mask in red and blue"

@@ -1,5 +1,5 @@
 ---
-maker: "inconnue"
+author: 1
 caption: "Selon votre travail, cela pourrait être une tenue indécente"
 date: "2014-09-15"
 intro: "FIXME_no_intro"

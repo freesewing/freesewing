@@ -6,6 +6,7 @@ intro: "Dit is Hi."
 title: "Hoi de haai heeft ons hart"
 designs:
   - "Hoi"
+author: 132
 ---
 
 Dit is Hi.

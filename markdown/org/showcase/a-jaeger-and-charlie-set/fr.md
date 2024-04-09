@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "Jaeger et Charlie dans un tissu velours côtelé amusant."
 date: "03-05-2023"
 intro: "Ce bel ensemble Jaeger et Waralee est fait d'un velours côtelé en coton et d'une doublure en cupro."

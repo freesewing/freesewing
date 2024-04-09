@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Opmerking: deze post is best lang. Maar bijlange niet zo lang als dit boek"
 date: "2020-08-30"
 intro: "Help me om FreeSewing groter te laten worden dan wat ik zelf kan doen"

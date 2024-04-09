@@ -10,9 +10,9 @@ Kelly Hogaboom en Julian Collins deden een Simon(e) naadong, en ze hebben video'
 alle stappen.
 Als je dit patroon wilt maken, kan Kelly en Julian je begeleiden om te beginnen.
 
-Je kunt al het materiaal vinden op Kelly's
+You can find all the material's on Kelly's
 site: [#simonsayssew with kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
-
+Note: as of March 19, 2024, this link appears to be down as it's redirecting to a different page. The videos are still available on Vimeo. [[Part 1: Measuring & Drafting](https://vimeo.com/438424557)/[2: Cutting & Marking](https://vimeo.com/438424645)/[3: Cuffs, Collar, Yokes & Darts](https://vimeo.com/441665307)/[4: Front Placket & Shoulder Seams](https://vimeo.com/441667465)/[5: Sleeve Placket & Armscye](https://vimeo.com/441668326)/[6: Side Seams, Cuffs, & Collar](https://vimeo.com/441727449)/[7: Hem, Buttonholes, & Buttons](https://vimeo.com/441731576)]
 </Tip>
 
 ### Stap 1: Bevestig tussenvoering
@@ -251,6 +251,8 @@ Als je daarmee blij bent, strijk dan het geplooide knopenpat.
 Stik het geplooide knopenpat vast door langs de goede kant van je hemd in de naad te stikken.
 
 Om dit te doen stik je exact bovenop je eerdere naad. Omdat je de stof van je placket iets voorbij deze naad hebt gevouwen, zal hij aan de achterkant vast komen te zitten, waardoor je gevouwen placket op zijn plaats wordt gefixeerd en de naadtoeslag binnenin wordt opgesloten.
+
+![Stitch in the ditch](9e.png)
 
 ### Stap 10: Bereid het knoopsgatenpat voor
 

@@ -7,7 +7,7 @@ The `Path.addText()` method adds text to the path.
 ## Signature
 
 ```js
-Path path.addText(string text, string className)
+Path path.addText(string text, string className = '')
 ```
 
 The second argument will optionally be used to set the CSS class for the text.

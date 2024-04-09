@@ -5,6 +5,7 @@ date: "2021-11-07"
 intro: "Another great-looking Simon shirt by Ferdi, who shared:"
 title: "Another splendid Simon shirt by Ferdi"
 designs: ["simon"]
+author: 1972
 ---
 
 Another great-looking Simon shirt by Ferdi, who shared:

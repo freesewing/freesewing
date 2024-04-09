@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Les balances, comment ça marche ?"
 date: "2018-01-04"
 intro: "La version 1.3.0 de Freesewing core est sortie ; elle contient des corrections tellement bonnes que nous les avons rétroportées sur tous tes brouillons."

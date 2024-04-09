@@ -1,5 +1,5 @@
 ---
-maker: "Joost De Cock"
+author: 1
 caption: "Het allereerste paar Charlie Chinos"
 date: "2021-05-23"
 intro: "Joost maakte deze Charlie Chinos broek en de hele FreeSewing community viel meteen voor het ontwerp van de broek en de stof. Hoewel Joost ons niet kon vertellen waar de stof vandaan kwam (het was uit zijn voorraad), gaf hij het Charlie patroon een paar dagen later vrij."

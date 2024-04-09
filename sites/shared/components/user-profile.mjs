@@ -1,42 +1,43 @@
+import { useContext } from 'react'
 import { cloudflareImageUrl } from 'shared/utils.mjs'
 import { Fingerprint } from 'shared/components/fingerprint.mjs'
 import { Role } from 'shared/components/role.mjs'
 import { Mdx } from 'shared/components/mdx/dynamic.mjs'
+import { ModalContext } from 'shared/context/modal-context.mjs'
+import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 
-export const UserProfile = ({ user }) => (
-  <>
-    <div className="text-center max-w-prose">
-      <img
-        src={cloudflareImageUrl({ id: `uid-${user.ihash}` })}
-        className="mx-auto max-w-96 shrink-0 grow-0 rounded-full shadow"
-      />
-      <div className="w-2/3 px-8">
-        <h2 className="flex flex-row items-center justify-between w-full">
-          {user.username}
+export const UserProfile = ({ user }) => {
+  const { setModal } = useContext(ModalContext)
+  const img = cloudflareImageUrl({ id: `uid-${user.ihash}` })
+
+  return (
+    <>
+      <div className="text-center max-w-prose">
+        <h3>{user.username}</h3>
+        <button
+          onClick={() =>
+            setModal(
+              <ModalWrapper>
+                <div className="flex flex-col gap-2 items-center">
+                  <img src={img} />
+                  <b>{user.username}</b>
+                </div>
+              </ModalWrapper>
+            )
+          }
+          className="w-52 h-52 rounded-full"
+          style={{
+            backgroundImage: `url(${img})`,
+            backgroundSize: 'cover',
+            backgroundPosition: '50% 50%',
+          }}
+        ></button>
+        <div className="flex flex-row row-wrap items-center justify-center gap-2">
           <Fingerprint id={user.id} />
           <Role role={user.role} />
-          <span>{user.role}</span>
-        </h2>
-        <table>
-          <thead>
-            <tr>
-              <th>k</th>
-              <th>v</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>{user.username}</td>
-              <td>username</td>
-            </tr>
-          </tbody>
-        </table>
+        </div>
       </div>
-      <img
-        src={cloudflareImageUrl({ id: `uid-${user.ihash}` })}
-        className="w-1/3 shrink-0 grow-0 rounded-lg shadow"
-      />
-    </div>
-    <Mdx md={user.bio} />
-  </>
-)
+      {user.bio !== '--' ? <Mdx md={user.bio} /> : null}
+    </>
+  )
+}

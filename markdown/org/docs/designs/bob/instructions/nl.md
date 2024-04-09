@@ -19,7 +19,7 @@ als keuze voor de voorste laag, oftewel de zichtbare laag.
 
 If you decide to go for two layers, simply join them together at the edges before applying the bias tape.
 
-You probably want to pin or baste this prior to sewing. The two different types of fabric will behave differently, so secure them in place prior to sewing the together.
+Je wilt dit waarschijnlijk vastspelden of vastbinden voordat je gaat naaien. The two different types of fabric will behave differently, so secure them in place prior to sewing the together.
 
 Make sure to sew close to the edge so that the stitches will be under the bias tape finish later.
 

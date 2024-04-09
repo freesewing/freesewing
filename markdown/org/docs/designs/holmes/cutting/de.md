@@ -26,6 +26,6 @@ Es wird empfohlen, das Musternetz zu entwerfen und das Muster zu verwenden, um d
 </Note>
 <Warning>
 
-It is recommended to make a mock-up with your gore pattern first before cutting your fabrics. This is to test the length and ease of the gore piece. Stellen Sie sicher, dass Sie den unteren Nahtzuschlag abschneiden, bevor Sie es versuchen. If it is too tight who will need to re-draft the pattern with more ease (longer head circumference) just remember the ease is split across each gore. If the peak is too high you may want to re-draft the pattern with the gore length reduced. Once re-drafted make another mock-up to check whether you are satisfied with the changes or not. Wiederholen Sie, wenn Sie nicht zufrieden sind.
+It is recommended to make a mock-up with your gore pattern first before cutting your fabrics. This is to test the length and ease of the gore piece. Stellen Sie sicher, dass Sie den unteren Nahtzuschlag abschneiden, bevor Sie es versuchen. If it is too tight who will need to re-draft the pattern with more ease (longer head circumference) just remember the ease is split across each gore. If the peak is too high you may want to re-draft the pattern with the gore length reduced. Wiederholen Sie, wenn Sie nicht zufrieden sind. Wiederholen Sie, wenn Sie nicht zufrieden sind.
 
 </Warning>

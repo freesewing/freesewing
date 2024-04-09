@@ -6,6 +6,7 @@ intro: The Lumira leggings are designed with many options, including a waistband
 designs:
   - lumira
 maker: Наталя
+author: 132
 ---
 
 The Lumira leggings are designed with many options, including a waistband, optional gusset, and bulge option. This particular version is with the cycling chamois, but the same design works for yoga leggings and anything in between too. We're all excited to fill our closets with Lumira variations!

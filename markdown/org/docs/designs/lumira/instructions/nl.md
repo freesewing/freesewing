@@ -1,6 +1,6 @@
-\--
-title: "Lumira leggings: Sewing Instructions"
----------------------------------------------
+---
+title: "Lumira leggings: Naai instructies"
+---
 
 <Note>
 
@@ -58,4 +58,4 @@ op de juiste plek te naaien.
 
 Nu kan je het elastiek aan de beenopeningen toevoegen. Of maak ze af zoals jij wilt.
 
-Je bent allemaal klaar! Enjoy your Lumira leggings!
+Je bent allemaal klaar! Enjoy your Lumina leggings!

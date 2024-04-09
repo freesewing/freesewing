@@ -6,6 +6,7 @@ intro: "Wir finden, dass diese Wahid-Weste - der erste Versuch des Herstellers -
 title: "Wahid-Weste von womp"
 designs:
   - "wahid"
+author: 72337
 ---
 
 Wir finden, dass diese Wahid-Weste - der erste Versuch des Herstellers - rasiermesserscharf aussieht!

@@ -7,6 +7,7 @@ title: "Tropische Pacos"
 designs:
   - "paco"
   - "teagan"
+author: 13050
 ---
 
 Die Pacos wurden aus einem Rayon-Challis gefertigt, mit den Standardoptionen (und einer etwas niedrigeren Leibhöhe). Hier sind sie mit einem Teagan-T-Shirt abgebildet.

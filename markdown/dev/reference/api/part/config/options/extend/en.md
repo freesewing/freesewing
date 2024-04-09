@@ -11,31 +11,43 @@ how options are presented.
 
 ## Add menu structure
 
-Because FreeSewing designs hae been written with the expectation that
+Because FreeSewing designs have been written with the expectation that
 they will be used primarily through the freesewing.org website,
 their options have been extended with menu information.
 
 ```js
 options: {
   // Fit
-  waistEase: { pct: 2, min: 0, max: 10, menu: 'fit' },
-  seatEase: { pct: 5, min: 0, max: 15, menu: 'fit' },
+  waistEase: { pct: 2, min: 0, max: 10, menu: 'fit', order: '100' },
+  seatEase: { pct: 5, min: 0, max: 15, menu: 'fit', order: '200' },
   // Style
-  waistHeight: { pct: 5, min: 0, max: 100, menu: 'style' },
-  lengthBonus: { pct: 0, min: -15, max: 10, menu: 'style' },
+  waistHeight: { pct: 5, min: 0, max: 100, menu: 'style', order: '400' },
+  lengthBonus: { pct: 0, min: -15, max: 10, menu: 'style', order: '300' },
   elasticatedCuff: { bool: true, menu: 'style' },
-  buttons = { count: 7, min: 4, max: 12, menu: 'style.closure' }
-  extraTopButton = { bool: true, menu: 'style.closure' }
+  buttons = { count: 7, min: 4, max: 12, menu: 'style.closure', order: '800' }
+  extraTopButton = { bool: true, menu: 'style.closure', order: '850' }
 }
 ```
 
 In the above example, the added `menu` attributes provide the
-the freesewing.org website UI with information about the options
+freesewing.org website UI with information about the options
 should appear in menus.
-The `waistEase` and `seatEase` options should appear in the `fit`
+- The `waistEase` and `seatEase` options should appear in the `fit`
 menu while the other options go in the `style` menu.
-Additionally, the `buttons` and `extraTopButton` options should
+- Additionally, the `buttons` and `extraTopButton` options should
 appear in a `closure` submenu under the `style` menu.
+
+The optional 'order' attributes provide the UI with information about
+the order in which options and menus should appear.
+- Within the `fit` menu, `waistEase` should come before `seatEase`.
+- Within the `style` menu, options should be in the order
+`lengthBonus`, `waistHeight`, `buttons`, `extraTopButton`, and
+`elasticatedCuff`.
+- The `elasticatedCuff` option does not have an `order` attribute,
+so it should appear after the options that do.
+- Because the `fit` menu has an option with an `order` value that comes
+before any of the `order` values for options in the `style` menu,
+the `fit` menu should appear before the `style` menu.
 
 <Note>
 
@@ -44,6 +56,22 @@ appear in a `closure` submenu under the `style` menu.
 To be clear, setting this here does not do anything in core.
 It's merely extra metadata you can add on the option to facilitate
 frontend integration.
+
+</Note>
+
+<Note>
+
+freesewing.org UI behavior:
+- Ordering is performed using an alphabetic, not numeric, sort.
+For example, `order` value "99" will be placed _after_ "100" because
+"1" comes before "9" alphabetically.
+However, "099" will be placed before "100", so using leading zeros
+can be helpful when using numbers as `order` values.
+- After they have been ordered using `order` attribute, if present,
+design options and menus are arranged in alphabetical order by
+their names.
+- However, the `advanced` menu, if present, is always ordered to
+be the last menu, appearing after all the other menus.
 
 </Note>
 

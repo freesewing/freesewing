@@ -1,12 +1,18 @@
 # Change log for: @freesewing/brian
 
 
+## 3.2.0 (2024-02-11)
+
+### Fixed
+
+ - Take biceps ease into account when calculating armhole depth
+
 ## 3.0.0 (2023-09-30)
 
 ### Changed
 
- - All FreeSewing pacakges are now ESM only.
- - All FreeSewing pacakges now use named exports.
+ - All FreeSewing packages are now ESM only.
+ - All FreeSewing packages now use named exports.
  - Dropped support for NodeJS 14. NodeJS 18 (LTS/hydrogen) or more recent is now required.
 
 ## 2.22.0 (2022-08-23)

@@ -18,6 +18,8 @@
     "cutFrontLining.d": "The **Front lining** (1b) is not shown, but you can trace it from the Front part (1). Trace the outline on the right of the facing/lining boundary that extends from the tip of the dart to the shoulder seam. \n\nIt is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
     "cutPocketWelt.t": "The pocket welt is not shown",
     "cutPocketWelt.d": "The **Pocket welt** (3) is a rectangular piece of fabric {{{ w }}} wide and {{{ l }}} long (this part does not use seam allowance). \n\nIt is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "noBackDart.t": "The back dart is not necessary",
+    "noBackDart.d": "Your measurements indicate that a back dart is not necessary, so you can skip this part of the instructions. \n\nSome manual adjustments might be necessary if the chest size measurement is much smaller than the waist and hip size.",
     "cutPocketInterfacing.t": "The pocket interfacing is not shown",
     "cutPocketInterfacing.d": "The **Pocket interfacing** (6) is a rectangular piece of fabric {{{ w }}} wide and {{{ l }}} long (this part does not use seam allowance). \n\nIt is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
     "flbFacingSide": "Facing/Lining boundary : Facing side",

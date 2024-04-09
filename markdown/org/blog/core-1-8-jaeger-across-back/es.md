@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Este comunicado llega desde Bangkok"
 date: "2018-03-21"
 intro: "Acabamos de pulsar el botón del núcleo 1.8.0. Ese bache en el número menor suele deberse a que tenemos un nuevo patrón, pero en este caso, hay dos razones:"

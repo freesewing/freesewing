@@ -1,11 +1,7 @@
 ---
-title: "Положення плечової виточки"
+title: Положення плечової виточки
 ---
 
 ***
 
-Опція **Положення плечової виточки** дозволяє змінювати положення виточки/притачного шва.
-
-
-
-
+The **Shoulder Dart Position** option allows you to move the position of the dart/princess seam.

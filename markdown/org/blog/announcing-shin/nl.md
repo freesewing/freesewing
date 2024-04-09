@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Dit is hoe augmented reality eruitziet ... denk ik?"
 date: "2018-09-29"
 intro: "Een tijdje geleden stelde ik vast dat ik een nieuwe zwembroek nodig had. Dus heb ik een patroon geschetst en er eentje gemaakt:"

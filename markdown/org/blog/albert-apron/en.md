@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Keep those home-made clothes clean while cooking with the Albert apron"
 date: "2020-10-17"
 intro: "What do you do if your daughter needed an apron for school?"

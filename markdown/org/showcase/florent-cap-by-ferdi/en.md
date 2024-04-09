@@ -5,6 +5,7 @@ date: "2021-11-07"
 intro: "This refined Florent cap is by Ferdi, who said:"
 title: "Florent cap by Ferdi"
 designs: ["florent"]
+author: 1972
 ---
 
 This refined Florent cap is by Ferdi, who said:

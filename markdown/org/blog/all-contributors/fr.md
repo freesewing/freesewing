@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Nous disons merci à nos contributeurs et voulons nous assurer que leurs contributions reçoivent le crédit qu'elles méritent"
 date: "2021-11-28"
 intro: "Lors de notre dernier appel aux contributeurs, nous avons décidé de mettre en œuvre la spécification Tous les contributeurs afin d'honorer tous nos contributeurs."

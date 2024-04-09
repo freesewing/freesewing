@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Le designer Hellgy se pavane, tandis que sa Yuri s'écoule dans une brise d'été."
 date: "2021-09-05"
 intro: "Annonce FreeSewing v2.18 : Félicitations, c'est un Yuri !"

@@ -8,7 +8,7 @@ along the path.
 ## Signature
 
 ```js
-Point path.shiftAlong(float distance[, int stepsPerMm=10])
+Point path.shiftAlong(float distance, int stepsPerMm = 10)
 ```
 
 The second parameter controls the precision by which the path will be _walked_.

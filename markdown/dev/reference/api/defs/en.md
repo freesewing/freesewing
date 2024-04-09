@@ -7,8 +7,14 @@ The `Defs` object in FreeSewing's core library represents an SVG document's
 It is not directly exposed, but it is available as the `defs` attribute
 of an [Svg object](/reference/api/svg/defs).
 
-While the methods exposed by this object are typically only used internally,
+While the properties and methods exposed by this object are typically only used internally,
 they are documented here to facilitate development of plugins.
+
+## Properties
+
+A Defs object comes with the following property:
+
+- `list` : Holds the internal object in which entries of the `defs` element are stored
 
 ## Defs methods
 

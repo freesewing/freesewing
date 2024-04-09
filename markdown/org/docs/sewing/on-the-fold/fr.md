@@ -1,5 +1,6 @@
 ---
 title: Au pli
+jargon: vrai
 ---
 
 Quand vous avez un patron qui est symétrique, les instructions peuvent vous demander de le couper _au pli_.

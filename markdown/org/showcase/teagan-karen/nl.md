@@ -6,6 +6,7 @@ intro: "Karen heeft deze versie van het Teagan T-shirt ontworpen voor hoge borst
 title: "Teagan T-shirt van Karen"
 designs:
   - "teagan"
+author: 13050
 ---
 
 Karen heeft deze versie van [het Teagan T-shirt](/designs/teagan/) ontworpen voor hoge borsten, een van de vele opties om het Teagan T-shirt precies goed voor jou te maken!

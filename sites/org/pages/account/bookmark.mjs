@@ -51,7 +51,6 @@ const BookmarkPage = ({ page }) => {
       else setLoadingStatus([false])
     }
     const newId = getSearchParam('id')
-    console.log({ newId })
     if (newId !== id) {
       setId(newId)
       getBookmark(newId)
@@ -59,7 +58,7 @@ const BookmarkPage = ({ page }) => {
   }, [id, backend, setLoadingStatus])
 
   return (
-    <PageWrapper {...page} title={`${t('bookmarks')}: ${bookmark?.title}`}>
+    <PageWrapper {...page} title={`${t('bookmark')}: ${bookmark?.title}`}>
       <DynamicAuthWrapper>
         <DynamicBookmark bookmark={bookmark} />
       </DynamicAuthWrapper>

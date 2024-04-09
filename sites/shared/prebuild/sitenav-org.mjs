@@ -169,6 +169,7 @@ export const extendSiteNav = async (siteNav, lang) => {
 
   // Add curated measurements sets
   siteNav['curated-sets'] = {
+    _: 1,
     m: 1,
     s: 'curated-sets',
     t: t('sections:curatedSets'),
@@ -226,6 +227,7 @@ export const extendSiteNav = async (siteNav, lang) => {
 
   // Add support
   siteNav.support = {
+    _: 1,
     m: 1,
     s: 'support',
     t: t('sections:support'),
