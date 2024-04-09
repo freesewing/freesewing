@@ -41,18 +41,18 @@ export const EditView = ({ account, settings, setSettings, Design }) => {
 
       // we might want to let 'invalid' settings get saved anyway
       // currently only for RangeErrors of options, with user experience == 5
-      let treatErrorsAsValid = false
+      let saveInvalidSettings = false
 
       // if it's not valid, show a warning about errors
       if (!validation.valid) {
-        // If highest user experience, we want to treat settings as valid if all errors are RangeErrors for options
+        // If highest user experience, we want to save invalid settings if all errors are RangeErrors for options
         if (account.control == 5) {
-          treatErrorsAsValid = true
+          saveInvalidSettings = true
           Object.entries(validation.errors).forEach(([setName, set]) => {
             Object.entries(set).forEach(
               ([_, error]) =>
-                (treatErrorsAsValid =
-                  setName != 'options' || error != 'RangeError' ? false : treatErrorsAsValid)
+                (saveInvalidSettings =
+                  setName != 'options' || error != 'RangeError' ? false : saveInvalidSettings)
             )
           })
         }
@@ -64,7 +64,7 @@ export const EditView = ({ account, settings, setSettings, Design }) => {
       // save regardless
       setSettings(editedAsJson)
       setSuccess(true)
-      if (validation.valid || treatErrorsAsValid)
+      if (validation.valid || saveInvalidSettings)
         setLoadingStatus([true, 'status:settingsSaved', true, true])
     } catch (e) {
       console.log(e)
