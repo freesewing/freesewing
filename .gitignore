@@ -49,6 +49,8 @@ sites/lab/public/favicon.ico
 sites/lab/public/mstile-150x150.png
 sites/lab/public/safari-pinned-tab.svg
 sites/lab/public/site.webmanifest
+sites/lab/pages/new
+sites/lab/pages/account/patterns
 
 # sde auto-generated content
 sites/sde/public/android-chrome-192x192.png
@@ -107,6 +109,9 @@ sites/*/out
 sites/*/public/mdx
 sites/*/prebuild
 !sites/shared/prebuild
+sites/shared/prebuild/data/design-options.mjs
+sites/shared/prebuild/data/designs.mjs
+sites/shared/prebuild/data/design-measurements.mjs
 sites/dev/public/og
 
 # misc
