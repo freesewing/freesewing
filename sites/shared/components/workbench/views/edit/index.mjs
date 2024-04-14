@@ -13,7 +13,7 @@ import { CloseIcon } from 'shared/components/icons.mjs'
 export const ns = []
 
 /** a view for editing the gist as yaml */
-export const EditView = ({ account, settings, setSettings, Design }) => {
+export const EditView = ({ settings, setSettings, Design }) => {
   const inputRef = useRef(null)
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const [error, setError] = useState(false)
@@ -40,22 +40,21 @@ export const EditView = ({ account, settings, setSettings, Design }) => {
       const validation = validateSettings(editedAsJson, patternConfig)
 
       // we might want to let 'invalid' settings get saved anyway
-      // currently only for RangeErrors of options, with user experience == 5
+      // currently only for RangeErrors of options
       let saveInvalidSettings = false
 
       // if it's not valid, show a warning about errors
       if (!validation.valid) {
-        // If highest user experience, we want to save invalid settings if all errors are RangeErrors for options
-        if (account.control == 5) {
-          saveInvalidSettings = true
-          Object.entries(validation.errors).forEach(([setName, set]) => {
-            Object.values(set).forEach(
-              (error) =>
-                (saveInvalidSettings =
-                  setName != 'options' || error != 'RangeError' ? false : saveInvalidSettings)
-            )
-          })
-        }
+        // We want to save invalid settings if all errors are RangeErrors for options
+        // this way advanced users (UX >= 4) have some way to set out-of-bounds values
+        saveInvalidSettings = true
+        Object.entries(validation.errors).forEach(([setName, set]) => {
+          Object.values(set).forEach(
+            (error) =>
+              (saveInvalidSettings =
+                setName != 'options' || error != 'RangeError' ? false : saveInvalidSettings)
+          )
+        })
 
         const newError = JSON.stringify(validation.errors, null, 2)
         setError(newError)
