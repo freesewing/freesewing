@@ -6,7 +6,6 @@
  * @param {[string]} namespaces - A string or array of strings of namespaces
  * @return {[string]} namespaces - A merged array of all namespaces
  */
-
 export const nsMerge = (...args) => {
   const ns = new Set()
   for (const arg of args) {
@@ -19,6 +18,34 @@ export const nsMerge = (...args) => {
   return [...ns]
 }
 
+/**
+ * Helper method to determine whether all required measurements for a design are present
+ *
+ * @param {object} Design - The FreeSewing design (or a plain object holding measurements)
+ * @param {object} measies - An object holding the user's measurements
+ * @return {array} result - An array where the first element is true when we
+ * have all measurements, and false if not. The second element is a list of
+ * missing measurements.
+ */
+export const hasRequiredMeasurements = (Design, measies = {}) => {
+  /*
+   * If design is just a plain object holding measurements, restructure it as a Design
+   */
+  if (!Design.patternConfig) Design = { patternConfig: { measurements } }
+
+  /*
+   * Walk required measuremnets, and keep track of what's missing
+   */
+  const missing = []
+  for (const m of Design.patternConfig?.measurements || []) {
+    if (typeof measies[m] === 'undefined') missing.push(m)
+  }
+
+  /*
+   * Return true or false, plus a list of missing measurements
+   */
+  return [missing.length === 0, missing]
+}
 
 
 /*
@@ -335,16 +362,6 @@ export const designMeasurements = (Design, measies = {}, DesignIsMeasurementsPoj
   for (const m of Design.patternConfig?.optionalMeasurements || []) measurements[m] = measies[m]
 
   return measurements
-}
-
-export const hasRequiredMeasurements = (Design, measies = {}, DesignIsMeasurementsPojo = false) => {
-  if (DesignIsMeasurementsPojo) Design = structureMeasurementsAsDesign(Design)
-  const missing = []
-  for (const m of Design.patternConfig?.measurements || []) {
-    if (typeof measies[m] === 'undefined') missing.push(m)
-  }
-
-  return [missing.length === 0, missing]
 }
 
 /*

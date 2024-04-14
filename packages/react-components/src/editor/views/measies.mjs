@@ -1,3 +1,4 @@
+import { Popout } from '../../popout/index.mjs'
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 //import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
@@ -12,7 +13,6 @@ import { Fragment } from 'react'
 //  ns as setsNs,
 //} from 'shared/components/account/sets.mjs'
 //import { CuratedSetPicker } from 'shared/components/curated-sets.mjs'
-//import { Popout } from 'shared/components/popout/index.mjs'
 //import { Accordion } from 'shared/components/accordion.mjs'
 //import { MsetIcon, BookmarkIcon, CsetIcon, EditIcon } from 'shared/components/icons.mjs'
 

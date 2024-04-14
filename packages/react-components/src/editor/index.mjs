@@ -1,11 +1,36 @@
 import { EditorView } from './views/index.mjs'
+// These components can be swizzled
+import { DesignsView } from './views/designs.mjs'
+import { ErrorView } from './views/error.mjs'
+import { TemporaryLoader } from './temporary-loader.mjs'
+// These methods can be swizzled
+import { hasRequiredMeasurements } from '../utils/index.mjs'
+
+/*
+ * Allow people to swizzle these components
+ */
+const defaultEditorComponents = {
+  DesignsView,
+  ErrorView,
+  TemporaryLoader,
+}
+
+/*
+ * Allow people to swizzle these methods
+ */
+const defaultEditorMethods = {
+  hasRequiredMeasurements,
+  t: (key) => key,
+}
 
 /**
  * PatternEditor is the high-level FreeSewing component
  * that provides the entire pattern editing environment
  *
- * @param {[string]} props.designs = An object holding the designs code
- * @param {function} props.t = The translation method
+ * @param {object} props.design = The name of the design we are editing
+ * @param {object} props.designs = An object holding the designs code
+ * @param {object} props.components = An object holding components to swizzle
+ * @param {object} props.methods = An object holding methods to swizzle
  *
  */
 export const PatternEditor = (props) => {
@@ -16,9 +41,25 @@ export const PatternEditor = (props) => {
   if (lackingProps !== false) return <LackingPropsError error={lackingProps} />
 
   /*
+   * Merge default and swizzled components
+   */
+  const components = {
+    ...defaultEditorComponents,
+    ...props.components || {}
+  }
+
+  /*
+   * Merge default and swizzled methods
+   */
+  const methods = {
+    ...defaultEditorMethods,
+    ...props.methods || {}
+  }
+
+  /*
    * Now return the editor view
    */
-  return <EditorView {...props} />
+  return <EditorView {...props} { ...{ components, methods }} />
 }
 
 /**

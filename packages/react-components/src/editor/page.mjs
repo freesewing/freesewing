@@ -1,1 +1,1 @@
-../../../../sites/org/pages/editor.mjs
+../../../../sites/org/pages/fs/index.mjs

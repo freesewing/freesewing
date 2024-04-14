@@ -1,2 +1,3 @@
+pickADesign: Pick a design
 requiredPropsMissing.t: Required props are missing
 requiredPropsMissing.d: The FreeSewing pattern editor needs to be initialized properly. It currently lacks some props to be able to bootstrap.
