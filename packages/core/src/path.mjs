@@ -1065,7 +1065,13 @@ Path.prototype.trim = function () {
               { x: ops[1].cp2.x, y: ops[1].cp2.y },
               { x: ops[1].to.x, y: ops[1].to.y }
             )
-            let t = pointOnCurve(ops[0].to, ops[1].cp1, ops[1].cp2, ops[1].to, intersection)
+            let t = relativeOffsetOnCurve(
+              ops[0].to,
+              ops[1].cp1,
+              ops[1].cp2,
+              ops[1].to,
+              intersection
+            )
             let split = curve.split(t)
             let side
             if (first) side = split.left
