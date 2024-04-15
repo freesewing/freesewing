@@ -649,6 +649,33 @@ describe('Path', () => {
     expect(halves[1].ops[0].to.y).to.equal(30)
   })
 
+  it('Should determine the angle on a path', () => {
+    const a = new Point(0, 0)
+    const b = new Point(0, 40)
+    const c = new Point(40, 40)
+    const d = new Point(100, 40)
+    const e = new Point(100, 0)
+
+    const linePoint = new Point(80, 40)
+    const curvePoint = new Point(5, 35)
+
+    const path = new Path().move(a).curve(b, b, c).line(d).line(e)
+
+    let angleAtStart = path.angleAt(a)
+    let angleOnCurve = path.angleAt(curvePoint)
+    let angleOnJoint = path.angleAt(c)
+    let angleOnLine = path.angleAt(linePoint)
+    let angleOnCorner = path.angleAt(d)
+    let angleOnEnd = path.angleAt(e)
+
+    expect(angleAtStart).to.equal(-90)
+    expect(angleOnCurve).to.equal(-45)
+    expect(angleOnJoint).to.equal(0)
+    expect(angleOnLine).to.equal(0)
+    expect(angleOnCorner).to.equal(0)
+    expect(angleOnEnd).to.equal(90)
+  })
+
   it('Should trim a path when lines overlap', () => {
     const A = new Point(0, 0)
     const B = new Point(100, 100)
