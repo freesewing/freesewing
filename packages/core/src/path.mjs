@@ -7,6 +7,7 @@ import {
   curvesIntersect,
   pointOnLine,
   pointOnCurve,
+  relativeOffsetOnCurve,
   curveEdge,
   round,
   __addNonEnumProp,
@@ -902,7 +903,13 @@ Path.prototype.split = function (point) {
         break
       }
     } else if (path.ops[1].type === 'curve') {
-      let t = pointOnCurve(path.ops[0].to, path.ops[1].cp1, path.ops[1].cp2, path.ops[1].to, point)
+      let t = relativeOffsetOnCurve(
+        path.ops[0].to,
+        path.ops[1].cp1,
+        path.ops[1].cp2,
+        path.ops[1].to,
+        point
+      )
       if (t !== false) {
         let curve = new Bezier(
           { x: path.ops[0].to.x, y: path.ops[0].to.y },

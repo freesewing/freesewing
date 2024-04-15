@@ -541,16 +541,30 @@ export function pointOnBeam(from, to, check, precision = 1e6) {
 /**
  * Finds out whether a Point lies on a (cubic) Bezier curve
  *
- * @param {Point} from - Start of the curve
+ * @param {Point} start - Start of the curve
  * @param {Point} cp1 - Control point at the start of the curve
- * @param {Point} cp1 - Control point at the end of the curve
+ * @param {Point} cp2 - Control point at the end of the curve
  * @param {Point} end - End of the curve
  * @param {Point} check - Point to check
- * @return {bool} result - True of the Point is on the curve, false when not
+ * @return {boolean} result - True of the Point is on the curve, false when not
  */
 export function pointOnCurve(start, cp1, cp2, end, check) {
-  if (start.sitsOn(check)) return true
-  if (end.sitsOn(check)) return true
+  return relativeOffsetOnCurve(start, cp1, cp2, end, check) !== false
+}
+
+/**
+ * Finds where a Point lies on a (cubic) Bezier curve
+ *
+ * @param {Point} start - Start of the curve
+ * @param {Point} cp1 - Control point at the start of the curve
+ * @param {Point} cp2 - Control point at the end of the curve
+ * @param {Point} end - End of the curve
+ * @param {Point} check - Point to check
+ * @return {false|number} result - relative position on the curve (value between 0 and 1), false when not on curve
+ */
+export function relativeOffsetOnCurve(start, cp1, cp2, end, check) {
+  if (start.sitsOn(check)) return 0
+  if (end.sitsOn(check)) return 1
   let curve = new Bezier(
     { x: start.x, y: start.y },
     { x: cp1.x, y: cp1.y },
