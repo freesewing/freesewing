@@ -989,6 +989,9 @@ Path.prototype.angleAt = function (point) {
         )
 
         let normal = curve.normal(t)
+
+        // atan2's first parameter is y, but we're swapping them because
+        // we're interested in the tangent angle, not normal
         return (Math.atan2(normal.x, normal.y) / Math.PI) * 180
       }
     }
