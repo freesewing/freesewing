@@ -63,7 +63,7 @@
     "remark-gfm": "4.0.0",
     "remark-mdx-frontmatter": "4.0.0",
     "strip-markdown": "6.0.0",
-    "use-local-storage-state": "19.1.0",
+    "use-local-storage-state": "19.2.0",
     "yaml-loader": "0.8.1"
   },
   "devDependencies": {
