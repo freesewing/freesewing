@@ -192,6 +192,11 @@ Path.prototype.bbox = function () {
     if (op.to) current = op.to
   }
 
+  if (bbs.length === 0 && current) {
+    // Degenerate case: Line is a point
+    bbs.push(__lineBoundingBox({ from: current, to: current }))
+  }
+
   return __bbbbox(bbs)
 }
 
@@ -646,7 +651,7 @@ Path.prototype.noop = function (id = false) {
 Path.prototype.offset = function (distance) {
   distance = __asNumber(distance, 'distance', 'Path.offset', this.log)
 
-  return __pathOffset(this, distance)
+  return __pathOffset(this, distance, this.log)
 }
 
 /**
@@ -1391,7 +1396,7 @@ function __offsetLine(from, to, distance, log = false) {
  * @param {float} distance - The distance to offset by
  * @return {Path} offsetted - The offsetted Path instance
  */
-function __pathOffset(path, distance) {
+function __pathOffset(path, distance, log) {
   let offset = []
   let current
   let start = false
@@ -1428,7 +1433,24 @@ function __pathOffset(path, distance) {
     if (!start) start = current
   }
 
-  return closed ? __joinPaths(offset).close() : __joinPaths(offset)
+  let result
+
+  if (offset.length !== 0) {
+    result = __joinPaths(offset)
+  } else {
+    // degenerate case: Original path was likely short, so all the "if (segment)" checks returned false
+    // retry treating the path as a simple straight line from start to end
+    // note: do not call __joinPaths in this branch as this could result in "over-optimizing" this short path
+    let segment = __offsetLine(start, current, distance, path.log)
+    if (segment) {
+      result = segment
+    } else {
+      result = new Path().move(start).line(current)
+      log.warn(`Could not properly calculate offset path, the given path is likely too short.`)
+    }
+  }
+
+  return closed ? result.close() : result
 }
 
 /**
