@@ -702,7 +702,12 @@ export const base = {
     /*
      * This option allows you to create extra room in the bulge
      */
-    bulgeFullness: { pct: 75, min: 25, max: 100, menu: 'fit' },
+    bulgeFullness: {
+      pct: 75,
+      min: 25,
+      max: 100,
+      menu: (settings, mergedOptions) => (mergedOptions?.bulge < 2 ? false : 'fit'),
+    },
 
     // Style options
 
@@ -787,7 +792,7 @@ export const base = {
       pct: 25,
       min: 15,
       max: 35,
-      menu: 'style',
+      menu: (settings, mergedOptions) => (mergedOptions?.pockets === 'none' ? false : 'style'),
       toAbs: (val, { measurements }, mergedOptions) =>
         (measurements.hips / 2) * mergedOptions.pocketGap * stretchToScale(mergedOptions.xStretch),
     },
@@ -796,7 +801,7 @@ export const base = {
       pct: 20,
       min: 10,
       max: 30,
-      menu: 'style',
+      menu: (settings, mergedOptions) => (mergedOptions?.pockets === 'none' ? false : 'style'),
     },
 
     /*
