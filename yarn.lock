@@ -1480,10 +1480,10 @@
   resolved "https://registry.npmjs.org/@mdx-js/util/-/util-2.0.0-next.1.tgz"
   integrity sha512-F36kWTFdFXrbNIsM77dhVwYZsZonUIKHkYyYgnuw1NWskBfEn1ET5B5Z5mm58ckKNf7SimchnxR9sKCCtH38WA==
 
-"@next/bundle-analyzer@14.1.4":
-  version "14.1.4"
-  resolved "https://registry.yarnpkg.com/@next/bundle-analyzer/-/bundle-analyzer-14.1.4.tgz#d10e4599f76ea8c00289341763d6208a729e80a3"
-  integrity sha512-IpF/18HcAOcfHRr24tqPOUpMmVKIqvkCxIubMeRYWCXs3jm7niPGrt8Mu74yMDzfGlUwgQA6Xd6BUc5+jQxcEg==
+"@next/bundle-analyzer@14.2.1":
+  version "14.2.1"
+  resolved "https://registry.yarnpkg.com/@next/bundle-analyzer/-/bundle-analyzer-14.2.1.tgz#0e37aefa471b0a06a9cad1928a517bbe6724174e"
+  integrity sha512-Qwy3Mu/dfnu4rs2xzCy7gKZlwzZzYtiq/rjPcK/7xq3BHSyLthkHf1NAF8NNfjVTouDwo2KchisHrmAamUNWWw==
   dependencies:
     webpack-bundle-analyzer "4.10.1"
 
