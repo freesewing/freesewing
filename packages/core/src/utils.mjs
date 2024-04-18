@@ -549,11 +549,17 @@ export function pointOnBeam(from, to, check, precision = 1e6) {
  * @return {boolean} result - True of the Point is on the curve, false when not
  */
 export function pointOnCurve(start, cp1, cp2, end, check) {
-  return relativeOffsetOnCurve(start, cp1, cp2, end, check) !== false
+  return curveParameterFromPoint(start, cp1, cp2, end, check) !== false
 }
 
 /**
- * Finds where a Point lies on a (cubic) Bezier curve
+ * Finds where a Point lies on a (cubic) Bezier curve and returns the curve parameter t of this position.
+ * For example a return value of 0 indicates that the given point is the start of the curve, a return value
+ * of 1 indicated that the given point is identical to the end of the curve.
+ *
+ * A return value of 0.5 indicates that the start point and the first control point had the same influence
+ * as the end point and the second control point, to create the point, but this doesn't necessarily mean
+ * that the point lies exactly half-way on the curve.
  *
  * @param {Point} start - Start of the curve
  * @param {Point} cp1 - Control point at the start of the curve
@@ -562,7 +568,7 @@ export function pointOnCurve(start, cp1, cp2, end, check) {
  * @param {Point} check - Point to check
  * @return {false|number} result - relative position on the curve (value between 0 and 1), false when not on curve
  */
-export function relativeOffsetOnCurve(start, cp1, cp2, end, check) {
+export function curveParameterFromPoint(start, cp1, cp2, end, check) {
   if (start.sitsOn(check)) return 0
   if (end.sitsOn(check)) return 1
   let curve = new Bezier(

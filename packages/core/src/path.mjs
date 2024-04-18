@@ -6,8 +6,7 @@ import {
   lineIntersectsCurve,
   curvesIntersect,
   pointOnLine,
-  pointOnCurve,
-  relativeOffsetOnCurve,
+  curveParameterFromPoint,
   curveEdge,
   round,
   __addNonEnumProp,
@@ -903,7 +902,7 @@ Path.prototype.split = function (point) {
         break
       }
     } else if (path.ops[1].type === 'curve') {
-      let t = relativeOffsetOnCurve(
+      let t = curveParameterFromPoint(
         path.ops[0].to,
         path.ops[1].cp1,
         path.ops[1].cp2,
@@ -973,7 +972,7 @@ Path.prototype.angleAt = function (point) {
         return path.ops[0].to.angle(path.ops[1].to)
       }
     } else if (path.ops[1].type === 'curve') {
-      let t = relativeOffsetOnCurve(
+      let t = curveParameterFromPoint(
         path.ops[0].to,
         path.ops[1].cp1,
         path.ops[1].cp2,
@@ -1065,7 +1064,7 @@ Path.prototype.trim = function () {
               { x: ops[1].cp2.x, y: ops[1].cp2.y },
               { x: ops[1].to.x, y: ops[1].to.y }
             )
-            let t = relativeOffsetOnCurve(
+            let t = curveParameterFromPoint(
               ops[0].to,
               ops[1].cp1,
               ops[1].cp2,
