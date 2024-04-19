@@ -1,0 +1,109 @@
+{
+  "t": "Bibi block body",
+  "d": "Bibi is a multifunctional building block for tops",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "sleeve": "Sleeve"
+  },
+  "s": {
+    "dartNo.t": "No bust dart",
+    "dartNo.d": "Gather fabric instead",
+    "dartYes.t": "Create a bust dart",
+    "dartYes.d": "If necessary, draft a bust dart to match side seam lengths",
+    "sleevesNo.t": "Sleeveless",
+    "sleevesNo.d": "Draft the pattern without sleeves",
+    "sleevesYes.t": "With sleeves",
+    "sleevesYes.d": "Draft the pattern with sleeves",
+    "fitWaistNo.t": "Don't fit the waist",
+    "fitWaistNo.d": "Create a loose fit and a more rectangular shape",
+    "fitWaistYes.t": "Fit the waist",
+    "fitWaistYes.d": "Create a more body-fitting shape",
+    "length.underbust.t": "Underbust",
+    "length.underbust.d": "Create a bralette top that only covers the bust.",
+    "length.waist.t": "Waist",
+    "length.waist.d": "Create a crop top.",
+    "length.hips.t": "Hips",
+    "length.hips.d": "Create a hip-length top.",
+    "length.seat.t": "Seat",
+    "length.seat.d": "Create a seat-length top.",
+    "length.knee.t": "Knee",
+    "length.knee.d": "Create a knee-length dress.",
+    "length.floor.t": "Floor",
+    "length.floor.d": "Create a floor-length dress. Use a negative length bonus to prevent the garment from actually dragging on the floor."
+  },
+  "o": {
+    "draftForHighBust": {
+      "t": "Bust adjustment",
+      "d": "If the pattern should be drafted with a basic full bust adjustment (FBA). This will result in a more fitted garment for people with breasts."
+    },
+    "draftForHighBustYes": {
+      "t": "Draft with bust adjustment",
+      "d": "Suggested for most people with breasts. This option only has an effect if the optional bust-related measurements are available."
+    },
+    "draftForHighBustNo": {
+      "t": "Draft without bust adjustment",
+      "d": "Drafts a pattern using the chest measurement only."
+    },
+    "cuffEase": {
+      "t": "Sleeve fullness",
+      "d": "Controls how wide the sleeves are."
+    },
+    "sleeveLength": {
+      "t": "Sleeve length",
+      "d": "Controls the length of your sleeves"
+    },
+    "necklineBend": {
+      "t": "Neckline curvature",
+      "d": "Controls the curvature of the neckline."
+    },
+    "necklineDepth": {
+      "t": "Neckline depth",
+      "d": "Controls how deep the neck opening plunges down."
+    },
+    "necklineWidth": {
+      "t": "Neckline width",
+      "d": "Controls the width of the neck opening."
+    },
+    "fitWaist": {
+      "t": "Fit the waist",
+      "d": "Whether or not to fit the waist."
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Ease at the waist (only applies when the waist is fitted)."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Ease at the hips."
+    },
+    "seatEase": {
+      "t": "Seat ease",
+      "d": "Ease at the seat."
+    },
+    "bustEase": {
+      "t": "Bust ease",
+      "d": "Ease at the bust. Only applies when bust adjustment is enabled."
+    },
+    "flare": {
+      "t": "Flare",
+      "d": "How much fabric to use at the bottom hem of the design. Only applies when the design goes below the seat."
+    },
+    "dart": {
+      "t": "Allow bust dart",
+      "d": "Allow creating a bust dart if this is necessary"
+    },
+    "sleeves": {
+      "t": "Sleeves",
+      "d": "Draft the pattern with sleeves"
+    },
+    "strapWidth": {
+      "t": "Strap width",
+      "d": "How wide the shoulder straps are. Only applies when sleeves are disabled."
+    },
+    "length": {
+      "t": "Length",
+      "d": "Which measurement line to use for the bottom hem. You can do fine adjustments using the bonus length option."
+    }
+  }
+}

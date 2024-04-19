@@ -1,0 +1,50 @@
+{
+  "t": "Teagan T-shirt",
+  "d": "Teagan is a fitted T-shirt pattern.",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "sleeve": "Sleeve"
+  },
+  "s": {
+    "fullLengthFromHps": "Full length (from HPS)"
+  },
+  "o": {
+    "draftForHighBust": {
+      "t": "Draft for high bust",
+      "d": "Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts."
+    },
+    "sleeveEase": {
+      "t": "Sleeve ease",
+      "d": "Amount of ease of your sleeves"
+    },
+    "sleeveLength": {
+      "t": "Sleeve length",
+      "d": "Controls the length of your sleeves"
+    },
+    "necklineBend": {
+      "t": "Neckline curvature",
+      "d": "Controls the curvature of the neckline."
+    },
+    "necklineDepth": {
+      "t": "Neckline depth",
+      "d": "Controls how deep the neck opening plunges down."
+    },
+    "necklineWidth": {
+      "t": "Neckline width",
+      "d": "Controls the width of the neck opening."
+    },
+    "curveToWaist": {
+      "t": "Fit the waist",
+      "d": "Whether or not to fit the waist or rahter only fit chest and hips."
+    },
+    "curvedWaistEase": {
+      "t": "Waist ease",
+      "d": "Ease at the waist (only applies when the waist is fitted)."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Ease at the hips."
+    }
+  }
+}
