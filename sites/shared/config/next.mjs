@@ -59,7 +59,7 @@ const config = ({ site }) => {
         )
       }
       // Load these from source, rather than compiled package
-      for (const pkg of ['core', 'i18n', 'models', 'snapseries', 'react-components']) {
+      for (const pkg of ['core', 'i18n', 'models', 'snapseries']) {
         config.resolve.alias[`@freesewing/${pkg}`] = path.resolve(
           `../../packages/${pkg}/src/index.mjs`
         )

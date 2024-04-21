@@ -1,7 +1,7 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useState } from 'react'
-import { CloseIcon } from '../icons/index.mjs'
-import { useTranslation } from 'next-i18next'
+import { CloseIcon as DefaultCloseIcon } from './icons.mjs'
+import { useSwizzle } from '../index.mjs'
 
 const colors = {
   comment: 'secondary',
@@ -16,15 +16,17 @@ const colors = {
   none: '',
 }
 
-export const ns = ['popout']
-
 /**
  * This popout component is a way to make some content stand out
  */
 export const Popout = (props) => {
-  const { t } = useTranslation(ns)
   const [hide, setHide] = useState(false)
   if (hide) return null
+
+  /*
+   * Allow swizzling close icon
+   */
+  const { CloseIcon } = useSwizzle()
 
   let type = 'none'
   for (const t in colors) {

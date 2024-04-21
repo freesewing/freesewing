@@ -12,30 +12,26 @@ import { Snippet } from './pattern/snippet.mjs'
 import { Svg } from './pattern/svg.mjs'
 import { Text, TextOnPath } from './pattern/text.mjs'
 // Pattern Utils
-import {
-  getId,
-  getProps,
-  translateStrings,
-  withinPartBounds,
-} from './pattern/utils.mjs'
+import { getId, getProps, translateStrings, withinPartBounds } from './pattern/utils.mjs'
 // Editor & Swizzle hook
-import { PatternEditor } from './editor/index.mjs'
-import { useSwizzle } from './editor/swizzle/index.mjs'
+//import { PatternEditor } from './pattern-editor/index.mjs'
+//import { useSwizzle } from './pattern-editor/swizzle/index.mjs'
 // Links
-import {
-  linkClasses,
-  AnchorLink,
-  CardLink,
-  Link,
-  PageLink,
-  WebLink,
-} from './link/index.mjs'
-// Utils
-import {
-  nsMerge,
-  hasRequiredMeasurements,
-} from './utils/index.mjs'
-
+//import {
+//  linkClasses,
+//  AnchorLink,
+//  CardLink,
+//  Link,
+//  PageLink,
+//  WebLink,
+//} from './pattern-editor/swizzle/components/link.mjs'
+//// Utils
+//import {
+//  nsMerge,
+//  hasRequiredMeasurements,
+//} from './pattern-editor/utils.mjs'
+// Various components
+//import { BaseAccordion, Accordion, SubAccordion } from './pattern-editor/swizzle/components/accordion.mjs'
 
 /**
  * Translation namespaces used by these components
@@ -60,26 +56,29 @@ export {
   Text,
   TextOnPath,
   PatternXray,
-  PatternEditor,
+  //PatternEditor,
   // Various Components
-  AnchorLink,
-  CardLink,
-  Link,
-  PageLink,
-  WebLink,
+  //AnchorLink,
+  //CardLink,
+  //Link,
+  //PageLink,
+  //WebLink,
   // Hooks
-  useSwizzle,
+  //useSwizzle,
   // These are not React components but pattern helpers
   getId,
   getProps,
   translateStrings,
   withinPartBounds,
   // These are not React components but various helpers
-  linkClasses,
+  //linkClasses,
   // Namespaces
   ns,
   // Utils
-  nsMerge,
-  hasRequiredMeasurements,
+  //nsMerge,
+  //hasRequiredMeasurements,
+  // Various components
+  //BaseAccordion,
+  //Accordion,
+  //SubAccordion,
 }
-

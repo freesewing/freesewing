@@ -8,7 +8,8 @@ import { useRouter } from 'next/router'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { EditorLayout } from 'site/components/layouts/editor.mjs'
 // The FreeSewing pattern editor
-import { PatternEditor, ns as editorNs } from '@freesewing/react-components'
+import { PatternEditor, ns as editorNs } from '@freesewing/react-components/editor'
+import { CloseIcon } from '@freesewing/react-components/icons'
 // The useDesign hook and FreeSewing collection
 import { designs } from 'site/hooks/use-design.mjs'
 
@@ -22,11 +23,7 @@ const PatternEditorPage = ({ page, docs }) => {
 
   return (
     <PageWrapper {...page} title="Pattern Editor" layout={EditorLayout} footer={false}>
-      <PatternEditor
-        {...{ designs, locale, }}
-        components={{ DesignsView }}
-        methods={{ t }}
-      />
+      <PatternEditor {...{ designs, locale }} components={{}} methods={{ t }} />
     </PageWrapper>
   )
 }
@@ -45,22 +42,3 @@ export async function getStaticProps({ locale }) {
     },
   }
 }
-
-
-
-export const DesignsView = ({ designs={}, setDesign, t }) => (
-  <div className="text-center mt-8">
-    <h2>{t('pickADesign')} you bitch</h2>
-    <ul className="flex flex-row flex-wrap gap-2 items-center justify-center max-w-2xl px-8 mx-auto">
-      {Object.entries(designs).map(([name, design]) => (
-        <li key={design}>
-          <button
-            onClick={() => setDesign(name)}
-            className={`btn btn-primary btn-outline btn-sm capitalize font-bold `}
-          >{name}</button>
-        </li>
-      ))}
-    </ul>
-  </div>
-)
-

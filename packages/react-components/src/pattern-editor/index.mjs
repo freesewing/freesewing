@@ -1,27 +1,5 @@
-import { EditorView } from './views/index.mjs'
-// These components can be swizzled
-import { DesignsView } from './views/designs.mjs'
-import { ErrorView } from './views/error.mjs'
-import { TemporaryLoader } from './temporary-loader.mjs'
-// These methods can be swizzled
-import { hasRequiredMeasurements } from '../utils/index.mjs'
-
-/*
- * Allow people to swizzle these components
- */
-const defaultEditorComponents = {
-  DesignsView,
-  ErrorView,
-  TemporaryLoader,
-}
-
-/*
- * Allow people to swizzle these methods
- */
-const defaultEditorMethods = {
-  hasRequiredMeasurements,
-  t: (key) => key,
-}
+import { EditorView } from './components/editor-view.mjs'
+import { useCompnents } from './hooks/use-components.mjs'
 
 /**
  * PatternEditor is the high-level FreeSewing component
@@ -31,6 +9,7 @@ const defaultEditorMethods = {
  * @param {object} props.designs = An object holding the designs code
  * @param {object} props.components = An object holding components to swizzle
  * @param {object} props.methods = An object holding methods to swizzle
+ * @param {object} props.defaults = An object holding defaults to swizzle
  *
  */
 export const PatternEditor = (props) => {
@@ -41,25 +20,9 @@ export const PatternEditor = (props) => {
   if (lackingProps !== false) return <LackingPropsError error={lackingProps} />
 
   /*
-   * Merge default and swizzled components
-   */
-  const components = {
-    ...defaultEditorComponents,
-    ...props.components || {}
-  }
-
-  /*
-   * Merge default and swizzled methods
-   */
-  const methods = {
-    ...defaultEditorMethods,
-    ...props.methods || {}
-  }
-
-  /*
    * Now return the editor view
    */
-  return <EditorView {...props} { ...{ components, methods }} />
+  return <EditorView {...props} />
 }
 
 /**
@@ -73,7 +36,8 @@ export const PatternEditor = (props) => {
  * @return {bool} result - Either true or false depending on required props being present
  */
 const lackingPropsCheck = (props) => {
-  if (typeof props.designs !== 'object') return "Please pass a 'designs' prop with the designs supported by this editor"
+  if (typeof props.designs !== 'object')
+    return "Please pass a 'designs' prop with the designs supported by this editor"
   if (Object.keys(props.designs).length < 1) return "The 'designs' prop does not hold any designs"
 
   return false

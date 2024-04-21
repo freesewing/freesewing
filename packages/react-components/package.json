@@ -18,9 +18,11 @@
     "freesewing"
   ],
   "type": "module",
-  "module": "dist/index.mjs",
   "exports": {
-    ".": "./src/index.mjs"
+    "./pattern": "./src/pattern/index.mjs",
+    "./xray": "./src/pattern-xray/index.mjs",
+    "./editor": "./src/pattern-editor/index.mjs",
+    "./icons": "./src/pattern-editor/swizzle/icons.mjs"
   },
   "scripts": {
     "build": "node build.mjs",
@@ -44,6 +46,7 @@
   },
   "devDependencies": {},
   "files": [
+    "src/**",
     "dist/*",
     "README.md"
   ],

@@ -1,4 +1,6 @@
-import { Popout } from '../../popout/index.mjs'
+import { Fragment } from 'react'
+
+//import { Popout } from '../swizzle/components/popout.mjs'
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 //import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
@@ -6,7 +8,6 @@ import { Popout } from '../../popout/index.mjs'
 // Hooks
 //import { useTranslation } from 'next-i18next'
 // Components
-import { Fragment } from 'react'
 //import {
 //  UserSetPicker,
 //  BookmarkedSetPicker,
@@ -15,11 +16,21 @@ import { Fragment } from 'react'
 //import { CuratedSetPicker } from 'shared/components/curated-sets.mjs'
 //import { Accordion } from 'shared/components/accordion.mjs'
 //import { MsetIcon, BookmarkIcon, CsetIcon, EditIcon } from 'shared/components/icons.mjs'
-
+import { useComponents } from '../hooks/use-components.mjs'
 
 const iconClasses = { className: 'w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink-0', stroke: 1.5 }
 
-export const MeasiesView = ({ design, Design, settings, update, missingMeasurements, setView, t }) => {
+export const MeasiesView = ({
+  design,
+  Design,
+  settings,
+  update,
+  missingMeasurements,
+  setView,
+  t,
+  components = {},
+}) => {
+  const { Accordion } = useComponents(components)
 
   const loadMeasurements = (set) => {
     update.settings([
@@ -130,9 +141,8 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
   )
 }
 
-
 const MeasiesEditor = ({ Design, settings, update }) => {
-  const { t, i18n } = useTranslation(ns)
+  //const { t, i18n } = useTranslation(ns)
 
   const onUpdate = (m, newVal) => {
     update.settings(['measurements', m], newVal)
@@ -185,4 +195,3 @@ const MeasiesEditor = ({ Design, settings, update }) => {
     </div>
   )
 }
-
