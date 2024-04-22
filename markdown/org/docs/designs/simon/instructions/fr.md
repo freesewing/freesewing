@@ -239,9 +239,9 @@ Ensuite, pliez à nouveau la patte en veillant à ce que le tissu arrive juste a
 
 Quand vous êtes satisfait, repassez la patte pliée.
 
-#### Fixer la patte de boutonnage
+#### Coucher la marge de couture d'un côté au fer
 
-![Fixer la patte de boutonnage](9c.png)
+![Coucher la marge de couture d'un côté au fer](9c.png)
 
 > Ce qui suit est l'approche classique. Si vous avez choisi une patte de boutonnage intégrée (sans couture), passez cette étape.
 > 
@@ -257,9 +257,9 @@ Pour cela, coudre exactement sur votre couture précédente. Comme tu as plié l
 
 > Si vous avez choisi une patte intégrée, vous pouvez passer les deux premières sous-étapes et passer à "Replier la patte de boutonnage".
 
-#### Fixer la patte de boutonnage (côté boutonnières)
+#### Replier la patte de boutonnières
 
-![Fixer la patte de boutonnage (côté boutonnières)](10a.png)
+![Replier la patte de boutonnières](10a.png)
 
 Si vous avez choisi une patte séparée, cousez-la sur le devant gauche.
 
@@ -568,9 +568,9 @@ Notez également que le bord de votre manche sera plus long que votre poignet (d
 
 > Prenez votre temps pour épingler tout ceci avec soin. Nous allons faire des points de bordure plus tard, il est donc important que l'avant et l'arrière de ta manchette soient bien alignés.
 
-#### Piquer les poignets aux manches
+#### Repassez la couture en couchant la marge de couture côté patte de boutonnage
 
-![Piquer les poignets aux manches](18b.png)
+![Repassez la couture en couchant la marge de couture côté patte de boutonnage](18b.png)
 
 Une fois que tout est épinglé, cousez le long du bord du poignet pour l'attacher à votre manche.
 
@@ -580,9 +580,9 @@ Il est important d'attraper à la fois la couche extérieure et la couche intér
 
 Quand vous avez terminé, donnez un bon coup de fer à vos poignets.
 
-#### Surpiquez les poignets
+#### Coudre la sous-patte de poignet
 
-![Surpiquez les poignets](18c.png)
+![Coudre la sous-patte de poignet](18c.png)
 
 > Assurez-vous que vos poignets ont été repassés au préalable.
 
@@ -604,9 +604,9 @@ Veillez à respecter la marge de couture standard et - important - évitez les p
 > 
 > C'est un peu délicat, donc faites très attention aux parties les plus courbées : là où le dos rejoint les devants.
 
-#### Piquer le col en place
+#### Coucher la marge de couture d'un côté au fer
 
-![Piquer le col en place](19b.png) ![Piquer le col en place](19c.png)
+![Coucher la marge de couture d'un côté au fer](19b.png) ![Coucher la marge de couture d'un côté au fer](19c.png)
 
 Quand vous serez satisfait de la façon dont vous avez bâti votre col en place, il est temps de piquer cette chose.
 
@@ -622,9 +622,9 @@ Piquez à environ la moitié de la marge de couture de votre couture précédent
 
 > Vous devez arrêter quelques cm avant la fin du col (note: fin du col, et non fin du pied de col) de façon à ce que cette couture soit entièrement recouverte lorsque le col est plié.
 
-#### Repasser le col
+#### Surpiquer le col
 
-![Repasser le col](19e.png)
+![Surpiquer le col](19e.png)
 
 Maintenant que votre col est attaché, donnez-lui un bon coup de fer.
 
