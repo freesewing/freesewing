@@ -239,9 +239,9 @@ Ensuite, pliez à nouveau la patte en veillant à ce que le tissu arrive juste a
 
 Quand vous êtes satisfait, repassez la patte pliée.
 
-#### Coucher la marge de couture d'un côté au fer
+#### Coudre la sous-patte de poignet
 
-![Coucher la marge de couture d'un côté au fer](9c.png)
+![Coudre la sous-patte de poignet](9c.png)
 
 > Ce qui suit est l'approche classique. Si vous avez choisi une patte de boutonnage intégrée (sans couture), passez cette étape.
 > 
