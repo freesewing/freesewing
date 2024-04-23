@@ -239,9 +239,9 @@ Plooi het knopenpat opnieuw om, en let op dat de stof tot net voorbij de aanzetn
 
 Als je daarmee blij bent, strijk dan het geplooide knopenpat.
 
-#### Stik het geplooide knopenpat
+#### Kleef de tussenvoering op de manchet
 
-![Stik het geplooide knopenpat](9c.png)
+![Kleef de tussenvoering op de manchet](9c.png)
 
 > Dit is de klassieke aanpak. Als je voor het naadloze knopenpat gekozen heb moet je dit niet doen.
 > 
@@ -379,9 +379,9 @@ Aangezien je deze schoudernaden gestreken hebt zou alles mooi plat moeten liggen
 
 ### Stap 13: Maak het mouwsplit
 
-#### Stik de mouwsplitreep
+#### Sierstiksel op de manchetten
 
-![Stik de mouwsplitreep](13a.png) ![Strijk de mouwsplitreep](13b.png) ![Stik de mouwsplitreep door](13c.png)
+![Sierstiksel op de manchetten](13a.png) ![Strijk de mouwsplitreep](13b.png) ![Stik de mouwsplitreep door](13c.png)
 
 - Leg je mouw met de goede kant naar beneden, en de mouwsplitreep bovenop, ook met de goede kant naar beneden.
 - Leg de rand van de mouwsplitreep (de onderlap van het mouwsplit) gelijk met de knip in de mouw, aan de kant het dichtst bij de zijnaad.
@@ -580,9 +580,9 @@ Het is belangrijk om zowel de buitenste als de binnenste laag van je manchet aan
 
 Strijk alles nog eens grondig als je dit gedaan hebt.
 
-#### Sierstiksel op de manchetten
+#### Strijk de schouderpas
 
-![Sierstiksel op de manchetten](18c.png)
+![Strijk de schouderpas](18c.png)
 
 > Let op dat je je manchetten strijkt voor je dit doet.
 
@@ -604,9 +604,9 @@ Zorg dat je de standaard naadwaarde in het oog houdt en - belangrijk - plooien v
 > 
 > Dat is een beetje lastig, dus wees extra nauwkeurig aan de delen die het meest gebogen zijn: aan de schoudernaden.
 
-#### Stik de kraag smal door
+#### Stik de mouwsplitreep door
 
-![Stik de kraag smal door](19b.png) ![Stik de kraag smal door](19c.png)
+![Stik de mouwsplitreep door](19b.png) ![Stik de mouwsplitreep door](19c.png)
 
 Als je blij bent met hoe je kraag gedriegd is, wordt het tijd om het ding definitief vast te stikken.
 
