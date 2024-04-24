@@ -1,11 +1,11 @@
 ---
-title: A sturdy Albert apron by ojensen
-caption: It was made out of a fairly sturdy duck canvas.
+title: Un tablier Albert robuste par ojensen
+caption: Il était fait d'une toile canard assez solide.
 date: 20240418
-intro: This Albert apron was Oliver's very first sewing project!
+intro: Ce tablier Albert a été le tout premier projet de couture d'Oliver !
 author: null
 designs:
   - albert
 ---
 
-This Albert apron was Oliver's very first sewing project! They made it out of a fairly sturdy duck canvas. We think this is a great intro to sewing and excellent work!
+Ce tablier Albert a été le tout premier projet de couture d'Oliver ! Iel l'a fait d'une toile canard assez solide. Nous pensons que c'est une excellente introduction à la couture et un excellent travail !
