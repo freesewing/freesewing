@@ -264,7 +264,10 @@ export function curveIntersectsY(from, cp1, cp2, to, y) {
  * @return {Boolean} - false when there are no intersections
  */
 export function curvesIntersect(fromA, cp1A, cp2A, toA, fromB, cp1B, cp2B, toB) {
-  let precision = 0.005 // See https://github.com/Pomax/bezierjs/issues/99
+  // use curvesIntersectAlt instead
+  return curvesIntersectAlt(fromA, cp1A, cp2A, toA, fromB, cp1B, cp2B, toB)
+
+  /*   let precision = 0.005 // See https://github.com/Pomax/bezierjs/issues/99
   let intersections = []
   let curveA = new Bezier(
     { x: fromA.x, y: fromA.y },
@@ -296,7 +299,7 @@ export function curvesIntersect(fromA, cp1A, cp2A, toA, fromB, cp1B, cp2B, toB) 
       if (!dupe) unique.push(i)
     }
     return unique.length === 1 ? unique.shift() : unique
-  }
+  } */
 }
 
 /**
@@ -432,7 +435,9 @@ export function linesIntersect(a1, a2, b1, b2) {
  * @return {Array} intersections - An array of Points at the intersections
  */
 export function lineIntersectsCurve(start, end, from, cp1, cp2, to) {
-  let intersections = []
+  // use lineIntersectsCurveAlt instead
+  return lineIntersectsCurveAlt(start, end, from, cp1, cp2, to)
+  /*   let intersections = []
   let bz = new Bezier(
     { x: from.x, y: from.y },
     { x: cp1.x, y: cp1.y },
@@ -450,7 +455,7 @@ export function lineIntersectsCurve(start, end, from, cp1, cp2, to) {
 
   if (intersections.length === 0) return false
   else if (intersections.length === 1) return intersections[0]
-  else return intersections
+  else return intersections */
 }
 
 /**
@@ -1123,7 +1128,7 @@ function boundsIntersect(
   const distToFirstCD = angleBetween < 0 ? cStart.dist(xACc) : dStart.dist(xBDd)
   const distToLastCD = angleBetween < 0 ? dEnd.dist(xBDd) : cEnd.dist(xACc)
 
-  //console.log('crossings', [xAC, xACa, xACc, xBD, xBDb, xBDd])
+  console.log('crossings', [xAC, xACa, xACc, xBD, xBDb, xBDd])
 
   return [distToFirstAB, distToLastAB, distToFirstCD, distToLastCD]
 }
