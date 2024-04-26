@@ -12169,10 +12169,10 @@ remark-rehype@^11.0.0:
     unified "^11.0.0"
     vfile "^6.0.0"
 
-remark-smartypants@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/remark-smartypants/-/remark-smartypants-3.0.0.tgz#5ada743b82360e35da449c11006eacd6b4c32997"
-  integrity sha512-6/xo47aZxWJd1L6VsDWX5EJRtRC2X0+vBRVh6MPD1doayFC6VRrxez6Z8GcEDqznvf9Ly+EtpasNYQptyhy8nQ==
+remark-smartypants@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/remark-smartypants/-/remark-smartypants-3.0.1.tgz#44171381842f0b7ecba296340925b588aa9991a3"
+  integrity sha512-qyshfCl2eLO0i0558e79ZJsfojC5wjnYLByjt0FmjJQN6aYwcRxpoj784LZJSoWCdnA2ubh5rLNGb8Uur/wDng==
   dependencies:
     retext "^9.0.0"
     retext-smartypants "^6.0.0"
