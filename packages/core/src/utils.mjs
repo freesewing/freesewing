@@ -1513,7 +1513,15 @@ export function lineIntersectsCurveAlt(
       )
     }
 
-    // TODO remove any 'false's, check for duplicates
+    // flatten and remove falses
+    if (depth < 1 && intersections instanceof Array) {
+      intersections = intersections.flat(Infinity).filter(Boolean)
+
+      // return false rather than an empty array
+      if (intersections.length < 0) {
+        intersections = false
+      }
+    }
 
     return intersections
   } else {
@@ -1525,7 +1533,7 @@ export function lineIntersectsCurveAlt(
       'iterations; line length',
       start.dist(end),
       ', curve length',
-      new Path().move(to).curve(cp1, cp2, to).length()
+      new Path().move(from).curve(cp1, cp2, to).length()
     )
     return false
   }
@@ -1789,9 +1797,9 @@ export function curvesIntersectAlt(
       // use Bezier.js to split at t = 0.5, which is more efficient
       newFromF = newCurveF.start()
       tempOp = newCurveF.ops[1]
-      newCp1F = tempOpF.cp1
-      newCp2F = tempOpF.cp2
-      newToF = tempOpF.to
+      newCp1F = tempOp.cp1
+      newCp2F = tempOp.cp2
+      newToF = tempOp.to
       let bzF = new Bezier(
         { x: newFromF.x, y: newFromF.y },
         { x: newCp1F.x, y: newCp1F.y },
@@ -1801,7 +1809,7 @@ export function curvesIntersectAlt(
 
       halves = bzF.split(0.5)
 
-      console.log('bezier halves:', halves, 'bezier whole:', bz)
+      console.log('bezier halves:', halves, 'bezier whole:', bzF)
       console.log('split at:', new Point(halves.right.points[0].x, halves.right.points[0].y))
 
       // TODO: find better syntax
@@ -1900,11 +1908,11 @@ export function curvesIntersectAlt(
       }
     } else {
       // repeat the whole thing (recursive function)
-      newFrom = newCurve.start()
-      tempOp = newCurve.ops[1]
-      newCp1 = tempOp.cp1
-      newCp2 = tempOp.cp2
-      newTo = tempOp.to
+      newFromF = newCurveF.start()
+      tempOp = newCurveF.ops[1]
+      newCp1F = tempOp.cp1
+      newCp2F = tempOp.cp2
+      newToF = tempOp.to
 
       // NOTE: swap the order of the curves, so the other curve can also be split
 
@@ -1923,7 +1931,15 @@ export function curvesIntersectAlt(
       )
     }
 
-    // TODO remove any 'false's, check for duplicates
+    // flatten and remove falses
+    if (depth < 1 && intersections instanceof Array) {
+      intersections = intersections.flat(Infinity).filter(Boolean)
+
+      // return false rather than an empty array
+      if (intersections.length < 0) {
+        intersections = false
+      }
+    }
 
     return intersections
   } else {
@@ -1932,10 +1948,10 @@ export function curvesIntersectAlt(
       segmentName,
       'after',
       depth,
-      'iterations; line length',
-      start.dist(end),
-      ', curve length',
-      new Path().move(to).curve(cp1, cp2, to).length()
+      'iterations; first curve length',
+      new Path().move(fromE).curve(cp1E, cp2E, toE).length(),
+      ', second curve length',
+      new Path().move(fromF).curve(cp1F, cp2F, toF).length()
     )
     return false
   }
