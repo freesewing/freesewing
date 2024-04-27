@@ -3,7 +3,7 @@ _types:
     peer:
       '@freesewing/core': &freesewing '{{version}}'
     dev:
-      'mocha': &mocha '10.3.0'
+      'mocha': &mocha '10.4.0'
       'chai': &chai '5.1.0'
       '@freesewing/models': *freesewing
       '@freesewing/plugin-timing': *freesewing
@@ -179,12 +179,12 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.535.0'
-    '@prisma/client': &prisma '5.11.0'
+    '@aws-sdk/client-sesv2': '3.563.0'
+    '@prisma/client': &prisma '5.13.0'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
     'dotenv': '16.4.5'
-    'express': '4.19.1'
+    'express': '4.19.2'
     'js-yaml': &jsyaml '4.1.0'
     'lodash.get': *_get
     'mustache': *mustache
@@ -192,9 +192,9 @@ backend:
     'passport': '0.7.0'
     'passport-http': '0.3.0'
     'passport-jwt': '4.0.1'
-    'pino': '8.19.0'
+    'pino': '8.20.0'
     'qrcode': '1.5.3'
-    'swagger-ui-dist': '5.12.0'
+    'swagger-ui-dist': '5.17.1'
     'swagger-ui-express': '5.0.0'
   dev:
     'chai': *chai
@@ -210,10 +210,10 @@ dev:
     '@mdx-js/mdx': &mdx '^3.0.0'
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': &mdxRuntime '2.0.0-next.9'
-    '@next/bundle-analyzer': &next '14.1.4'
-    '@tailwindcss/typography': &tailwindTypography '0.5.10'
-    'algoliasearch': '4.22.1'
-    'daisyui': &daisyui '4.7.3'
+    '@next/bundle-analyzer': &next '14.2.3'
+    '@tailwindcss/typography': &tailwindTypography '0.5.12'
+    'algoliasearch': '4.23.3'
+    'daisyui': &daisyui '4.10.2'
     'lodash.get': *_get
     'lodash.orderby': &_orderby '4.6.0'
     'lodash.set': *_set
@@ -242,7 +242,7 @@ dev:
     'postcss': &postcss '8.4.38'
     'remark-extract-frontmatter': '3.2.0'
     'remark-mdx-frontmatter': &mdxfrontmatter '4.0.0'
-    'tailwindcss': &tailwindcss '3.4.1'
+    'tailwindcss': &tailwindcss '3.4.3'
     'yaml-loader': '0.8.1'
 
 lab:
@@ -256,7 +256,7 @@ lab:
     'd3-drag': &d3drag '3.0.0'
     'd3-selection': &d3selection '3.0.0'
     'daisyui': *daisyui
-    'i18next': &i18next '23.10.1'
+    'i18next': &i18next '23.11.0'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
@@ -266,7 +266,7 @@ lab:
     'react': *react
     'react-copy-to-clipboard': *reactCopyToClipboard
     'react-hotkeys-hook': *reactHotkeysHook
-    'react-i18next': &reactI18next '14.1.0'
+    'react-i18next': &reactI18next '14.1.1'
     'react-instantsearch-dom': *reactInstantsearchDom
     'react-swipeable': *reactSwipeable
     'react-timeago': *reactTimeago
@@ -283,8 +283,8 @@ lab:
 
 org:
   _:
-    '@bugsnag/js': &bugsnag 7.22.4
-    '@bugsnag/plugin-react': 7.19.0
+    '@bugsnag/js': &bugsnag 7.22.7
+    '@bugsnag/plugin-react': 7.22.7
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': *mdxRuntime
@@ -295,8 +295,8 @@ org:
     'daisyui': *daisyui
     'echarts': &echarts 5.5.0
     'echarts-for-react': &echartsReact 3.0.2
-    'jotai': &jotai '2.7.1'
-    'jotai-location': &jotai-location '0.5.4'
+    'jotai': &jotai '2.8.0'
+    'jotai-location': &jotai-location '0.5.5'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
@@ -318,14 +318,14 @@ org:
     'remark-gfm': *remarkGfm
     'remark-mdx-frontmatter': *mdxfrontmatter
     'strip-markdown': *stripMarkdown
-    'use-local-storage-state': &use-local-storage-state 19.1.0
+    'use-local-storage-state': &use-local-storage-state 19.2.0
     'yaml-loader': 0.8.1
   dev: *nextSiteDevDependencies
 
 shared:
   _:
     '@next/mdx': *next
-    '@resvg/resvg-js': '2.6.0'
+    '@resvg/resvg-js': '2.6.2'
     '@tailwindcss/typography': *tailwindTypography
     'Buffer': '0.0.0'
     'd3-dispatch': '3.0.1'
@@ -347,21 +347,21 @@ shared:
     'mdast-util-toc': '7.0.0'
     'mermaid': '10.9.0'
     'ora': *ora
-    'pdfkit': &pdfkit '0.14.0'
+    'pdfkit': &pdfkit '0.15.0'
     'postcss-for': &postcssfor '2.1.1'
     'react': *react
     'react-dom': *react
     'react-timeago': *reactTimeago
-    'react-zoom-pan-pinch': &zoompanpinch '3.4.3'
+    'react-zoom-pan-pinch': &zoompanpinch '3.4.4'
     'rehype-autolink-headings': *rehypeAutolinkHeadings
     'rehype-highlight': *rehypeHighlight
     'remark-frontmatter': &remarkfrontmatter '5.0.0'
     'remark-mdx-frontmatter': *mdxfrontmatter
-    "remark-smartypants": &smartypants "2.1.0"
+    "remark-smartypants": &smartypants "3.0.1"
     "slugify": &slugify "^1.6.6"
     # see: https://github.com/npm/cli/issues/2610#issuecomment-1295371753
     'svg-to-pdfkit': &svgtopdfkit 'https://git@github.com/eriese/SVG-to-PDFKit'
-    'tlds': &rlds '1.251.0'
+    'tlds': &rlds '1.252.0'
     'to-vfile': '8.0.0'
     'unist-util-visit': *unist-util-visit
     'use-local-storage-state': *use-local-storage-state
