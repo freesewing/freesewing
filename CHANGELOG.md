@@ -46,6 +46,12 @@
 
  - Always load plugin-bust due to its changes in how it handle conditionality.
 
+### simone
+
+#### Fixed
+
+ - Added missing translation for various options
+
 ### tamiko
 
 #### Changed
