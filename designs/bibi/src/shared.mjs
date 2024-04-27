@@ -364,7 +364,10 @@ export function createArmHoles(
       const sleeveCapFactor = (options.sleeveLength + 0.2) * 4
       const capLength = sleeveCapFactor * store.get('sleeveCapHeight')
       console.log('caplength', capLength)
-      points.sleeveCap = points.shoulder.shift(points.neck.angle(points.shoulder) - 15, capLength)
+      points.sleeveCap = points.shoulder.shift(
+        points.neck.angle(points.shoulder) - 15 + options.cuffEase * 15,
+        capLength
+      )
       points.sleeveCapStart = points.shoulder.shift(
         points.neck.angle(points.shoulder),
         capLength * -0.2
@@ -425,11 +428,17 @@ export function plotSideLineMeasurements(points, sideSeam, utils, macro) {
   const strings = Object.keys(offsets)
   for (let i = 0; i < strings.length; i++) {
     const key = strings[i]
-    const y = offsets[key]
+    let y = offsets[key]
     if (!y || y > points.hem.y) {
       continue
     }
     let intersects = sideSeam.intersectsY(y)
+    if (intersects.length === 0) {
+      // Intersecting the path exactly on the corner points sometimes doesn't work
+      // See issue #3367
+      y += 0.001
+      intersects = sideSeam.intersectsY(y)
+    }
     if (intersects.length > 0) {
       const sidePoint = intersects[0]
       const centerPoint = sidePoint.clone()
