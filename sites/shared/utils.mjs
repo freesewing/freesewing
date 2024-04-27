@@ -339,7 +339,7 @@ export const hasRequiredMeasurements = (Design, measies = {}, DesignIsMeasuremen
  * and then check if there are any left. If there are, those are child-pages.
  */
 export const pageHasChildren = (page) =>
-  Object.keys(page).filter((key) => !['t', 's', 'o', 'b', 'h'].includes(key)).length > 0
+  Object.keys(page).filter((key) => !['t', 's', 'o', 'b', 'h', '_'].includes(key)).length > 0
 
 /*
  * Returns the slug of the page above this one
