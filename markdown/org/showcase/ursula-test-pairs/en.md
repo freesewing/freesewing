@@ -5,6 +5,7 @@ date: "2021-06-26"
 intro: "Ursula is a basic, highly-customizable undies pattern. Here are some of the early versions testing different combinations of options, which may be useful to you as you design your own pairs."
 title: "Early tests of Ursula"
 designs: ["ursula"]
+author: 19867
 ---
 
 

@@ -5,6 +5,7 @@ date: "2021-09-16"
 intro: "This Ursula was made made in a cotton spandex knit (94% Cotton, 6% Spandex) with burgundy picot elastic."
 title: "Lower rise Ursula"
 designs: ["ursula"]
+author: 19867
 ---
 
 This Ursula was made made in a cotton spandex knit (94% Cotton, 6% Spandex) with burgundy picot elastic.
