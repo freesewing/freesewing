@@ -11,6 +11,10 @@
 
 ### huey
 
+#### Changed
+
+ - The lengthBonus option default was changed from 0% to 15%. Fixes
+
 #### Fixed
 
  - Fixed an issue where ribbing height would distort the pocket under certain conditions. Fixes
