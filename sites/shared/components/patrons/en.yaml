@@ -6,6 +6,7 @@ period-y: Yearly
 period-x: One time only
 subscribe: Subscribe
 donate: Donate
+dontHaveAPayPalAccount: Don't have a PayPal account?
 yourContribution: Your contribution
 currency: Currency
 presets: Presets
