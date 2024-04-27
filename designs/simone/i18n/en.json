@@ -51,11 +51,11 @@
       "t": "Front darts",
       "d": "Whether to include front darts or not"
     },
-    "frontDarts.no": {
+    "frontDartsNo": {
       "t": "No front darts",
       "d": "Do not include front darts"
     },
-    "frontDarts.yes": {
+    "frontDartsYes": {
       "t": "With front darts",
       "d": "Do include front darts"
     },
