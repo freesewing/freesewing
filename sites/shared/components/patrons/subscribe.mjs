@@ -2,6 +2,7 @@
 import { paypalConfig } from 'shared/config/paypal.mjs'
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
+import { linkClasses } from 'shared/components/link.mjs'
 
 export const ns = ['patrons']
 
@@ -153,6 +154,12 @@ export const Subscribe = ({
         >
           {period === 'x' ? t('patrons:donate') : t('patrons:subscribe')}
         </button>
+        <p className="text-center text-sm text-neutral-content mt-2 opacity-80">
+          {t('patrons:dontHaveAPayPalAccount')}
+          <a href="https://ko-fi.com/freesewing" target="_BLANK" className={`${linkClasses}`}>
+            <b className="text-neutral-content pl-2">Ko-fi.com/FreeSewing</b>
+          </a>
+        </p>
       </form>
     </div>
   )
