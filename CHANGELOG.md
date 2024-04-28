@@ -9,6 +9,13 @@
 
  - Always load plugin-bust due to its changes in how it handle conditionality.
 
+### cathrin
+
+#### Changed
+
+ - Allow negative values in backDrop option
+ - Allow negative values for the frontRise options
+
 ### huey
 
 #### Changed

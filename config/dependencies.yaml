@@ -306,9 +306,11 @@ org:
     'ora': *ora
     'react-dropzone': &dropzone '14.2.3'
     'react-hotkeys-hook': *reactHotkeysHook
+    "react-i18next": *reactI18next
     'react-instantsearch-dom': *reactInstantsearchDom
     'react-swipeable': *reactSwipeable
     'react-timeago': *reactTimeago
+    'react-zoom-pan-pinch': &zoompanpinch '3.4.3'
     'rehype-autolink-headings': *rehypeAutolinkHeadings
     'rehype-highlight': *rehypeHighlight
     'rehype-sanitize': *rehypeSanitize
@@ -353,7 +355,7 @@ shared:
     'react': *react
     'react-dom': *react
     'react-timeago': *reactTimeago
-    'react-zoom-pan-pinch': &zoompanpinch '3.4.3'
+    'react-zoom-pan-pinch': *zoompanpinch
     'rehype-autolink-headings': *rehypeAutolinkHeadings
     'rehype-highlight': *rehypeHighlight
     'remark-frontmatter': &remarkfrontmatter '5.0.0'
