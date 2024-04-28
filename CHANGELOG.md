@@ -13,8 +13,8 @@
 
 #### Changed
 
- - Allow negative values in backDrop option
- - Allow negative values for the frontRise options
+ - Allow negative values in backDrop option. Fixes
+ - Allow negative values for the frontRise options. Fixes
 
 ### huey
 
@@ -52,6 +52,12 @@
 #### Changed
 
  - Always load plugin-bust due to its changes in how it handle conditionality.
+
+### simon
+
+#### Changed
+
+ - Allow negative values for the buttonFreeLength option. Fixes
 
 ### simone
 
