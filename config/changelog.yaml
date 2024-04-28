@@ -31,6 +31,8 @@ Unreleased:
       - The `withCondition` named  export is deprecated and will always return true.
 
   Fixed:
+    charlie:
+      - Fix cut instructions for fly facing, only 1 to be cut. Fixes #6392
     huey:
       - Fixed an issue where ribbing height would distort the pocket under certain conditions. Fixes #6238
       - Adding missing translation for ribbing option

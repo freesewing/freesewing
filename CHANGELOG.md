@@ -16,6 +16,12 @@
  - Allow negative values in backDrop option. Fixes
  - Allow negative values for the frontRise options. Fixes
 
+### charlie
+
+#### Fixed
+
+ - Fix cut instructions for fly facing, only 1 to be cut. Fixes
+
 ### huey
 
 #### Changed
