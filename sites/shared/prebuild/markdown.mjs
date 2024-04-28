@@ -39,17 +39,15 @@ const loadFolderFrontmatter = async (key, site, folder, transform = false, lang 
    * But the biggest task is combing through all the org documentation and for this
    * it's much faster to first run find to limit the number of files to open
    */
-  const cmd = `find . -type f -name "${lang ? lang : '*'}.md" -exec grep "^${key}:" -ism 1 {} +`
-  let grep
-  try {
-    grep = exec(cmd, { cwd, maxBuffer: 2048 * 1024 }, (error, stdout, stderr) => {
-      if (error) console.error('Exec error:', { cwd, cmd, error, stderr })
+  //const cmd = `find . -type f -name "${lang ? lang : '*'}.md" -exec grep "^${key}:" -ism 1 {} +`
+  const cmd = lang
+    ? `find . -type f -name "${lang ? lang : '*'}.md" -exec grep "^${key}:" -ism 1 {} +`
+    : `grep -R "^${key}:" -ism 1 .`
+  const grep = exec(cmd, { cwd, maxBuffer: 2048 * 1024 }, (error, stdout, stderr) => {
+    if (error) console.error('Exec error:', { cwd, cmd, error, stderr })
 
-      return stdout
-    })
-  } catch (err) {
-    console.log('caught', err)
-  }
+    return stdout
+  })
 
   /*
    * Stdout is buffered, so we need to gather all of it
