@@ -35,6 +35,8 @@ Unreleased:
     noble:
       - Fix 'cutonfold' text for Noble's back part. Fixes #6447
       - Improve dart shaping. Fixes #64547
+    simone:
+      - Added missing translation for various options
     teagan:
       - Fix side seam when length is cropped. Fixes #6480
     uma:
