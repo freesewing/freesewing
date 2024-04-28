@@ -32,6 +32,7 @@ export function Svg(pattern) {
   this.layout = {}
   this.style = ''
   this.defs = new Defs()
+  this.symbols = new Defs()
 }
 
 //////////////////////////////////////////////
@@ -49,6 +50,7 @@ Svg.prototype.asRenderProps = function () {
     layout: this.layout,
     style: this.style,
     defs: this.defs.asRenderProps(),
+    symbols: this.symbols.asRenderProps(),
   }
 }
 
@@ -238,6 +240,24 @@ Svg.prototype.__renderDefs = function () {
 }
 
 /**
+ * Returns SVG markup for the symbols
+ *
+ * @private
+ * @return {string} svg - The SVG markup for the symbols
+ */
+Svg.prototype.__renderSymbols = function () {
+  return (
+    this.__nl() +
+    '<!-- Start of symbols -->' +
+    this.__nl() +
+    this.symbols.render() +
+    this.__nl() +
+    +'<!-- End of symbols -->' +
+    this.__nl()
+  )
+}
+
+/**
  * Returns SVG markup for the head section
  *
  * @private
@@ -246,6 +266,7 @@ Svg.prototype.__renderDefs = function () {
 Svg.prototype.__renderHead = function () {
   let svg = this.__renderStyle()
   svg += this.__renderDefs()
+  svg += this.__renderSymbols()
   svg += this.__openGroup(this.idPrefix + 'container')
 
   return svg

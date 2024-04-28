@@ -59,12 +59,7 @@ Defs.prototype.remove = function (name) {
  * @return {string} svg - The SVG code
  */
 Defs.prototype.render = function () {
-  let svg = ''
-  for (let key in this.list) {
-    svg += ` ${key}="${this.list[key]}"`
-  }
-
-  return svg
+  return Object.values(this.list).join('\n')
 }
 
 /**

@@ -9,6 +9,7 @@ import { Stack as DefaultStack } from './stack.mjs'
 import { Part as DefaultPart } from './part.mjs'
 import { Point as DefaultPoint } from './point.mjs'
 import { Snippet as DefaultSnippet } from './snippet.mjs'
+import { Symbols as DefaultSymbols } from './symbols.mjs'
 import { Path as DefaultPath } from './path.mjs'
 import { Grid as DefaultGrid } from './grid.mjs'
 import { Text as DefaultText, TextOnPath as DefaultTextOnPath } from './text.mjs'
@@ -26,6 +27,7 @@ export const defaultPatternComponents = {
   Point: DefaultPoint,
   Path: DefaultPath,
   Snippet: DefaultSnippet,
+  Symbols: DefaultSymbols,
   Grid: DefaultGrid,
   Text: DefaultText,
   TextOnPath: DefaultTextOnPath,
@@ -51,7 +53,7 @@ export const Pattern = forwardRef(
       ...components,
     }
 
-    const { Svg, Defs, Stack, Group } = components
+    const { Svg, Defs, Symbols, Stack, Group } = components
 
     const optionalProps = {}
     if (className) optionalProps.className = className
@@ -65,6 +67,7 @@ export const Pattern = forwardRef(
         ref={ref}
       >
         <Defs {...renderProps} />
+        <Symbols {...renderProps} symbols />
         <style>{`:root { --pattern-scale: ${renderProps.settings.scale || 1}} ${
           renderProps.svg.style
         }`}</style>

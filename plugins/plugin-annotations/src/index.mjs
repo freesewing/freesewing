@@ -39,10 +39,18 @@ export const plugin = {
           ...sewtogetherDefs,
         ]
         for (const def of defs) {
-          svg.defs.setIfUnset(
-            def.name,
-            typeof def.def === 'function' ? def.def(svg.pattern.settings[0].scale) : def.def
-          )
+          if (def.def)
+            svg.defs.setIfUnset(
+              def.name,
+              typeof def.def === 'function' ? def.def(svg.pattern.settings[0].scale) : def.def
+            )
+          else if (def.symbol)
+            svg.symbols.setIfUnset(
+              def.name,
+              typeof def.symbol === 'function'
+                ? def.symbol(svg.pattern.settings[0].scale)
+                : def.symbol
+            )
         }
       },
     ],

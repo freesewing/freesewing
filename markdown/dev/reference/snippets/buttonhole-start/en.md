@@ -25,8 +25,8 @@ part of [core-plugins](/reference/plugins/core) (so it is available by default).
 
   // Prevent clipping
   paths.diag = new Path()
-    .move(new Point(-50,-4))
-    .move(new Point(50,4))
+    .move(new Point(-50,-12))
+    .move(new Point(50,12))
 
   return part
 }

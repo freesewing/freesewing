@@ -250,29 +250,29 @@ svg.freesewing.pattern {
  * This is for styling FreeSewing snippets
  * TODO: Update snippets to use inline styles with CSS vars
  */
-g#notch circle.note,
-g#bnotch path.note,
-g#bnotch circle.note {
+symbol#notch circle.note,
+symbol#bnotch path.note,
+symbol#bnotch circle.note {
   stroke: var(--pattern-note);
   fill: none;
 }
-g#notch circle.fill-note,
-g#bnotch circle.fill-note {
+symbol#notch circle.fill-note,
+symbol#bnotch circle.fill-note {
   fill: var(--pattern-note);
 }
-g#button circle.mark {
+symbol#button circle.mark {
   stroke: var(--pattern-mark);
   fill: none;
 }
-g#button circle.fill-mark {
+symbol#button circle.fill-mark {
   fill: var(--pattern-mark);
 }
-g#button circle.no-stroke {
+symbol#button circle.no-stroke {
   stroke: none;
 }
-g#buttonhole path.mark,
-g#buttonhole-start path.mark,
-g#buttonhole-end path.mark {
+symbol#buttonhole path.mark,
+symbol#buttonhole-start path.mark,
+symbol#buttonhole-end path.mark {
   fill: none;
   stroke: var(--pattern-mark);
 }
