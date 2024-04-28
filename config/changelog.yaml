@@ -6,6 +6,9 @@ Unreleased:
   Changed:
     brian:
       - Always load plugin-bust due to its changes in how it handle conditionality.
+    cathrin:
+      - Allow negative values in backDrop option
+      - Allow negative values for the frontRise options
     huey:
       - The lengthBonus option default was changed from 0% to 15%. Fixes #6596
     onyx:
