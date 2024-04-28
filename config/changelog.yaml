@@ -7,8 +7,8 @@ Unreleased:
     brian:
       - Always load plugin-bust due to its changes in how it handle conditionality.
     cathrin:
-      - Allow negative values in backDrop option
-      - Allow negative values for the frontRise options
+      - Allow negative values in backDrop option. Fixes #6563
+      - Allow negative values for the frontRise options. Fixes #6563
     huey:
       - The lengthBonus option default was changed from 0% to 15%. Fixes #6596
     onyx:
@@ -19,6 +19,8 @@ Unreleased:
       - The plugin will now always be loaded, but will check for each drafted set whether it should make any changes.
     shelly:
       - Always load plugin-bust due to its changes in how it handle conditionality.
+    simon:
+      - Allow negative values for the buttonFreeLength option. Fixes #6508
     tamiko:
       - Always load plugin-bust due to its changes in how it handle conditionality.
     wahid:
