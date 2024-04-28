@@ -97,7 +97,6 @@ export const testPatternConfig = (Pattern) => {
         const draft = new Pattern({
           measurements: requested,
         }).draft()
-        console.log(draft.setStores[0].logs)
         const missWarnings = draft.setStores[0].logs.warn.filter((w, i, a) => {
           return w.match(/tried to access `measurements/) && a.indexOf(w) === i
         })
