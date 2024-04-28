@@ -304,6 +304,7 @@ org:
     'next': *next
     'next-i18next': *nextI18next
     'ora': *ora
+    'react-dom': *react
     'react-dropzone': &dropzone '14.2.3'
     'react-hotkeys-hook': *reactHotkeysHook
     "react-i18next": *reactI18next
