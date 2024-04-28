@@ -967,19 +967,19 @@ export function getTransformedBounds(boundsObj, transforms = false) {
 }
 
 export function projectPointOnBeam(from, to, check, precision = 1e6) {
-  console.log('projectPointOnBeam - ', 'points:', from, to, check)
+  //console.log('projectPointOnBeam - ', 'points:', from, to, check)
   if (from.sitsOn(check, precision)) return 0
   if (to.sitsOn(check, precision)) return 1
   if (from.sitsOn(to, precision)) return 0.5
   let angleBetween = (360 + from.angle(check) - from.angle(to)) % 360 // guaranteed to be in [0 360)
 
-  console.log(
+  /*   console.log(
     'projectPointOnBeam - ',
     'angle:',
     angleBetween,
     'rel. length',
     from.dist(check) / from.dist(to)
-  )
+  ) */
 
   return (Math.cos(deg2rad(angleBetween)) * from.dist(check)) / from.dist(to)
 }
@@ -1000,14 +1000,15 @@ function boundsForLine(start, end, tol) {
     const pathBase = new Path()
       .move(start.shiftTowards(end, -tol / 2))
       .line(end.shiftTowards(start, -tol / 2))
-    console.log('pathBase', pathBase, 'start', start, 'end', end)
+    //console.log('pathBase', pathBase, 'start', start, 'end', end)
     const upperBound = pathBase.offset(tol / 2)
     const lowerBound = pathBase.offset(-tol / 2)
     return [upperBound, lowerBound]
   }
 }
 
-function boundsForCurve(from, cp1, cp2, to, tol) {
+// TODO: get rid of export after debugging
+export function boundsForCurve(from, cp1, cp2, to, tol) {
   // calculate *signed* distance to the straight line between start and end
   const temp_points = [from, cp1, cp2, to]
   const distCp1 =
@@ -1027,22 +1028,26 @@ function boundsForCurve(from, cp1, cp2, to, tol) {
     )
 
   const distToUpper = Math.max(distCp1, distCp2, 0) + tol / 2
-  const distToLower = Math.min(distCp1, distCp2, 0) - tol / 2
+  const distToLower = -Math.min(distCp1, distCp2, 0) + tol / 2
 
   console.log('dist:', [distToUpper, distToLower])
 
+  // NOTE: Point.rotate() uses relative angle, despite the documentation
+  let angleUp = 90
+  let angleDown = 270
+  console.log('angles:', [angleUp, angleDown, from.angle(to)])
   const upperStart = temp_points[0]
     .shiftTowards(temp_points[3], distToUpper)
-    .rotate(90, temp_points[0])
+    .rotate(angleUp, temp_points[0])
   const upperEnd = temp_points[3]
-    .shiftTowards(temp_points[0], distToUpper)
-    .rotate(270, temp_points[3])
+    .shiftTowards(temp_points[0], -distToUpper)
+    .rotate(angleUp, temp_points[3])
   const lowerStart = temp_points[0]
     .shiftTowards(temp_points[3], distToLower)
-    .rotate(90, temp_points[0])
+    .rotate(angleDown, temp_points[0])
   const lowerEnd = temp_points[3]
-    .shiftTowards(temp_points[0], distToLower)
-    .rotate(270, temp_points[3])
+    .shiftTowards(temp_points[0], -distToLower)
+    .rotate(angleDown, temp_points[3])
 
   const upperBound = new Path()
     .move(upperStart.shiftTowards(upperEnd, -tol / 2))
@@ -1069,7 +1074,7 @@ function boundsIntersect(
   angleBetween,
   tol
 ) {
-  console.log([aStart, aEnd, bStart, bEnd, cStart, cEnd, dStart, dEnd])
+  //console.log([aStart, aEnd, bStart, bEnd, cStart, cEnd, dStart, dEnd])
 
   const xAC = linesIntersect(aStart, aEnd, cStart, cEnd)
   const xAD = linesIntersect(aStart, aEnd, dStart, dEnd)
@@ -1141,9 +1146,9 @@ function checkIntersectionLength(start_a, start_b, start_c, start_d, angleBetwee
     const intersectionLength = tol / Math.tan(deg2rad(Math.abs(angleBetween) / 2))
 
     if (intersectionLength > tol) {
-      console.log('expecting long intersection:', intersectionLength)
+      //console.log('expecting long intersection:', intersectionLength)
     } else {
-      console.log('expecting short intersection:', intersectionLength)
+      //console.log('expecting short intersection:', intersectionLength)
     }
 
     return intersectionLength
@@ -1178,7 +1183,7 @@ export function lineIntersectsCurveAlt(
   if (depth < maxIterations) {
     console.log('iteration: ', depth, 'for segment', segmentName)
 
-    console.log('point input:', [start, end, from, cp1, cp2, to])
+    //console.log('point input:', [start, end, from, cp1, cp2, to])
 
     // define bounds for the line
     bounds = boundsForLine(start, end, tol)
@@ -1188,22 +1193,23 @@ export function lineIntersectsCurveAlt(
 
     // reverse the curve if necessary to define bounds consistently
     let angleBetween = (360 + start.angle(end) - from.angle(to)) % 360 // guaranteed to be in [0 360)
-    console.log('angle:', angleBetween)
     temp_points = [from, cp1, cp2, to]
     if (angleBetween >= 90 && angleBetween < 270) {
       // reverse the array defining the path if necessary to ensure that bounds do not run in opposite direction
-      temp_points.reverse()
+      temp_points = temp_points.reverse()
       angleBetween = (180 + angleBetween) % 360
-      console.log('reversed points')
+      //console.log('reversed points')
     }
     // express the angle as a value in [-90 90) instead of [0 360) (with (90 270) cut out)
     angleBetween = ((angleBetween + 90) % 360) - 90
+    console.log('angle between line and curve:', angleBetween)
 
     // define bounds for the curve
     bounds = boundsForCurve(...temp_points, tol)
 
-    const bound_c = bounds[0].addClass('mark')
-    const bound_d = bounds[1].addClass('mark sa')
+    // switch upper and lower if angle < 0, so that AC and BD are the outermost crossings
+    const bound_c = bounds[angleBetween > 0 ? 0 : 1].addClass('mark')
+    const bound_d = bounds[angleBetween > 0 ? 1 : 0].addClass('mark sa')
 
     // find intersections of the bounds
 
@@ -1245,6 +1251,12 @@ export function lineIntersectsCurveAlt(
         'iterations'
       )
       return false
+    } else if (bound_a.length() - (lengthsToRemove[0] + lengthsToRemove[1]) < 0) {
+      // this is a problem
+      console.log('negative remaining length for line segment')
+    } else if (bound_c.length() - (lengthsToRemove[2] + lengthsToRemove[3]) < 0) {
+      // this is also a problem
+      console.log('negative remaining length for curve')
     }
 
     // remove these sections from the line segment
@@ -1261,7 +1273,7 @@ export function lineIntersectsCurveAlt(
       newEnd = end
     }
 
-    console.log('newstartend:', [newStart, newEnd])
+    //console.log('newstartend:', [newStart, newEnd])
 
     // TODO: calculate roughLength first to save time?
     // NOTE: several bezier operations use 100 segments, so 10 * tol ensures that these segments are an order of magnitude smaller than our tolerance
@@ -1277,13 +1289,13 @@ export function lineIntersectsCurveAlt(
       let tempPoint = new Point(tempBzPoint.x, tempBzPoint.y)
       if (newStart.shiftFractionTowards(newEnd, 0.5).dist(tempPoint) < tol) {
         intersections = newStart.shiftFractionTowards(newEnd, 0.5) // got it!
-        console.log(
+        /*         console.log(
           'found intersection in ',
           depth,
           'for segment',
           segmentName,
           'iterations by reducing line length to <10*tol'
-        )
+        ) */
         return intersections
       }
     }
@@ -1292,7 +1304,7 @@ export function lineIntersectsCurveAlt(
 
     // reduce the length by tol to account for both the tolerance itself and the fact that the bounds start tol/2 before the start of the curve
     pathTemp = new Path().move(temp_points[0]).curve(temp_points[1], temp_points[2], temp_points[3])
-    console.log('pathTemp:', pathTemp, 'temp_points:', temp_points)
+    //console.log('pathTemp:', pathTemp, 'temp_points:', temp_points)
     const oldLength = pathTemp.length()
     // don't bother splitting if the section to actually remove (length to remove minus tol) is smaller than tol
     if (lengthsToRemove[2] - tol > tol) {
@@ -1401,8 +1413,8 @@ export function lineIntersectsCurveAlt(
 
       halves = bz.split(0.5)
 
-      console.log('bezier halves:', halves, 'bezier whole:', bz)
-      console.log('split at:', new Point(halves.right.points[0].x, halves.right.points[0].y))
+      // console.log('bezier halves:', halves, 'bezier whole:', bz)
+      // console.log('split at:', new Point(halves.right.points[0].x, halves.right.points[0].y))
 
       // TODO: find better syntax
       const curvePointsA = [
@@ -1473,15 +1485,15 @@ export function lineIntersectsCurveAlt(
             .pop()
             .shiftTowards(flattened_right.shift(), 0.5)
           intersections = [flattened_left, merged_intersection, flattened_right]
-          console.log(
+          /*           console.log(
             'merged intersections for segment',
             segmentName,
             'after',
             depth,
             'iterations after splitting curve'
-          )
+          ) */
         } else {
-          console.log(
+          /*           console.log(
             'no need to merge intersections (left:',
             flattened_left,
             'right:',
@@ -1489,7 +1501,7 @@ export function lineIntersectsCurveAlt(
             'length:',
             intersectionLength,
             ')'
-          )
+          ) */
         }
       }
     } else {
@@ -1573,7 +1585,7 @@ export function curvesIntersectAlt(
   if (depth < maxIterations) {
     console.log('iteration: ', depth, 'for segment', segmentName)
 
-    console.log('point input:', [fromE, cp1E, cp2E, toE, fromF, cp1F, cp2F, toF])
+    // console.log('point input:', [fromE, cp1E, cp2E, toE, fromF, cp1F, cp2F, toF])
 
     // define bounds for the line
     bounds = boundsForCurve(fromE, cp1E, cp2E, toE, tol)
@@ -1583,22 +1595,24 @@ export function curvesIntersectAlt(
 
     // reverse the curve if necessary to define bounds consistently
     let angleBetween = (360 + fromE.angle(toE) - fromF.angle(toF)) % 360 // guaranteed to be in [0 360)
-    console.log('angle:', angleBetween)
     temp_points = [fromF, cp1F, cp2F, toF]
     if (angleBetween >= 90 && angleBetween < 270) {
       // reverse the array defining the path if necessary to ensure that bounds do not run in opposite direction
-      temp_points.reverse()
+      temp_points = temp_points.reverse()
       angleBetween = (180 + angleBetween) % 360
-      console.log('reversed points')
+      //console.log('reversed points')
     }
     // express the angle as a value in [-90 90) instead of [0 360) (with (90 270) cut out)
     angleBetween = ((angleBetween + 90) % 360) - 90
 
+    console.log('angle between curves:', angleBetween)
+
     // define bounds for the curve
     bounds = boundsForCurve(...temp_points, tol)
 
-    const bound_c = bounds[0].addClass('mark')
-    const bound_d = bounds[1].addClass('mark sa')
+    // switch upper and lower if angle < 0, so that AC and BD are the outermost crossings
+    const bound_c = bounds[angleBetween > 0 ? 0 : 1].addClass('mark')
+    const bound_d = bounds[angleBetween > 0 ? 1 : 0].addClass('mark sa')
 
     // find intersections of the bounds
 
@@ -1617,7 +1631,7 @@ export function curvesIntersectAlt(
       tol
     )
 
-    console.log(
+    /*     console.log(
       'lengthsToRemove',
       lengthsToRemove,
       'lengthAB:',
@@ -1628,7 +1642,7 @@ export function curvesIntersectAlt(
       bound_c.length(),
       'remaining:',
       bound_c.length() - (lengthsToRemove[2] + lengthsToRemove[3])
-    )
+    ) */
 
     if (!lengthsToRemove) {
       // no overlap between the bounding boxes ==> no intersection
@@ -1640,6 +1654,12 @@ export function curvesIntersectAlt(
         'iterations'
       )
       return false
+    } else if (bound_a.length() - (lengthsToRemove[0] + lengthsToRemove[1]) < 0) {
+      // this is a problem
+      console.log('negative remaining length for first curve')
+    } else if (bound_c.length() - (lengthsToRemove[2] + lengthsToRemove[3]) < 0) {
+      // this is also a problem
+      console.log('negative remaining length for second curve')
     }
 
     // remove these sections from the line segment
@@ -1705,7 +1725,7 @@ export function curvesIntersectAlt(
 
     // reduce the length by tol to account for both the tolerance itself and the fact that the bounds start tol/2 before the start of the curve
     pathTemp = new Path().move(temp_points[0]).curve(temp_points[1], temp_points[2], temp_points[3])
-    console.log('pathTemp:', pathTemp, 'temp_points:', temp_points)
+    //console.log('pathTemp:', pathTemp, 'temp_points:', temp_points)
     const oldLength = pathTemp.length()
     // don't bother splitting if the section to actually remove (length to remove minus tol) is smaller than tol
     if (lengthsToRemove[2] - tol > tol) {
@@ -1742,7 +1762,7 @@ export function curvesIntersectAlt(
         y: potentialIntersection.y,
       })
 
-      console.log(
+      /*       console.log(
         'hoping to find intersection for segment',
         segmentName,
         ' in ',
@@ -1751,7 +1771,7 @@ export function curvesIntersectAlt(
         potentialIntersection,
         'and closest point',
         closestPointOnCurveE
-      )
+      ) */
 
       if (potentialIntersection.dist(closestPointOnCurveE) < tol) {
         intersections = potentialIntersection // got it!
@@ -1809,8 +1829,8 @@ export function curvesIntersectAlt(
 
       halves = bzF.split(0.5)
 
-      console.log('bezier halves:', halves, 'bezier whole:', bzF)
-      console.log('split at:', new Point(halves.right.points[0].x, halves.right.points[0].y))
+      // console.log('bezier halves:', halves, 'bezier whole:', bzF)
+      // console.log('split at:', new Point(halves.right.points[0].x, halves.right.points[0].y))
 
       // TODO: find better syntax
       const curvePointsA = [
@@ -1887,15 +1907,15 @@ export function curvesIntersectAlt(
             .pop()
             .shiftTowards(flattened_right.shift(), 0.5)
           intersections = [flattened_left, merged_intersection, flattened_right]
-          console.log(
+          /*           console.log(
             'merged intersections for segment',
             segmentName,
             'after',
             depth,
             'iterations after splitting curve'
-          )
+          ) */
         } else {
-          console.log(
+          /*           console.log(
             'no need to merge intersections (left:',
             flattened_left,
             'right:',
@@ -1903,7 +1923,7 @@ export function curvesIntersectAlt(
             'length:',
             intersectionLength,
             ')'
-          )
+          ) */
         }
       }
     } else {
