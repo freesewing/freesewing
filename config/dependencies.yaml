@@ -302,6 +302,7 @@ org:
     'lodash.set': *_set
     'luxon': '3.4.4'
     'next': *next
+    'next-i18next': *nextI18next
     'ora': *ora
     'react-dropzone': &dropzone '14.2.3'
     'react-hotkeys-hook': *reactHotkeysHook
