@@ -223,7 +223,7 @@ dev:
     'react-dom': *react
     'react-hotkeys-hook': &reactHotkeysHook '4.5.0'
     'react-instantsearch-dom': &reactInstantsearchDom '6.40.4'
-    'react-instantsearch-hooks-web': '6.47.3'
+    'react-instantsearch-hooks-web': &reactInstantsearchHooksWeb '6.47.3'
     'react-swipeable': &reactSwipeable '7.0.1'
     'react-timeago': &reactTimeago '7.2.0'
     'rehype-autolink-headings': &rehypeAutolinkHeadings '7.1.0'
@@ -308,6 +308,7 @@ org:
     'react-hotkeys-hook': *reactHotkeysHook
     "react-i18next": *reactI18next
     'react-instantsearch-dom': *reactInstantsearchDom
+    'react-instantsearch-hooks-web': *reactInstantsearchHooksWeb
     'react-swipeable': *reactSwipeable
     'react-timeago': *reactTimeago
     'react-zoom-pan-pinch': &zoompanpinch '3.4.3'
