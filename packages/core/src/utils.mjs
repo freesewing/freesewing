@@ -1192,7 +1192,7 @@ export function lineIntersectsCurveAlt(
     const bound_b = bounds[1].addClass('lining sa')
 
     // reverse the curve if necessary to define bounds consistently
-    let angleBetween = (360 + start.angle(end) - from.angle(to)) % 360 // guaranteed to be in [0 360)
+    let angleBetween = (360 + from.angle(to) - start.angle(end)) % 360 // guaranteed to be in [0 360)
     temp_points = [from, cp1, cp2, to]
     if (angleBetween >= 90 && angleBetween < 270) {
       // reverse the array defining the path if necessary to ensure that bounds do not run in opposite direction
@@ -1207,9 +1207,9 @@ export function lineIntersectsCurveAlt(
     // define bounds for the curve
     bounds = boundsForCurve(...temp_points, tol)
 
-    // switch upper and lower if angle < 0, so that AC and BD are the outermost crossings
-    const bound_c = bounds[angleBetween > 0 ? 0 : 1].addClass('mark')
-    const bound_d = bounds[angleBetween > 0 ? 1 : 0].addClass('mark sa')
+    // mirror/invert the bounds assignment so that AC and BD are the outermost crossings
+    const bound_c = bounds[1].addClass('mark')
+    const bound_d = bounds[0].addClass('mark sa')
 
     // find intersections of the bounds
 
@@ -1594,7 +1594,7 @@ export function curvesIntersectAlt(
     const bound_b = bounds[1].addClass('lining sa')
 
     // reverse the curve if necessary to define bounds consistently
-    let angleBetween = (360 + fromE.angle(toE) - fromF.angle(toF)) % 360 // guaranteed to be in [0 360)
+    let angleBetween = (360 + fromF.angle(toF) - fromE.angle(toE)) % 360 // guaranteed to be in [0 360)
     temp_points = [fromF, cp1F, cp2F, toF]
     if (angleBetween >= 90 && angleBetween < 270) {
       // reverse the array defining the path if necessary to ensure that bounds do not run in opposite direction
@@ -1610,9 +1610,9 @@ export function curvesIntersectAlt(
     // define bounds for the curve
     bounds = boundsForCurve(...temp_points, tol)
 
-    // switch upper and lower if angle < 0, so that AC and BD are the outermost crossings
-    const bound_c = bounds[angleBetween > 0 ? 0 : 1].addClass('mark')
-    const bound_d = bounds[angleBetween > 0 ? 1 : 0].addClass('mark sa')
+    // mirror/invert the bounds assignment so that AC and BD are the outermost crossings
+    const bound_c = bounds[1].addClass('mark')
+    const bound_d = bounds[0].addClass('mark sa')
 
     // find intersections of the bounds
 
