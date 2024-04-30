@@ -7948,10 +7948,10 @@ jiti@^1.19.1:
   resolved "https://registry.npmjs.org/jiti/-/jiti-1.21.0.tgz"
   integrity sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==
 
-jotai-location@0.5.4:
-  version "0.5.4"
-  resolved "https://registry.npmjs.org/jotai-location/-/jotai-location-0.5.4.tgz"
-  integrity sha512-IqpyYLAF6HgoDoJVlX66IGvgrugCA1LJybT01NqenpdwypPtUB6u0cnJZMbN6axU+Yl2FTI6l+4x9IWh4WGFRA==
+jotai-location@0.5.5:
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/jotai-location/-/jotai-location-0.5.5.tgz#2b2622da6ee49493bc4d69e5610e2e5d382894ed"
+  integrity sha512-6QW/7W9IJHjhbn7gRgAw4sC30k0/G6JiC4uPlKi8ZPZGYk7R7r9PyMD2eVhL4XSxxag89JxS1iSyr6BIXsB4Sw==
 
 jotai@2.7.1:
   version "2.7.1"
