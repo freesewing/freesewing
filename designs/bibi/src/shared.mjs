@@ -363,7 +363,6 @@ export function createArmHoles(
     if (store.get('capSleeves')) {
       const sleeveCapFactor = (options.sleeveLength + 0.2) * 4
       const capLength = sleeveCapFactor * store.get('sleeveCapHeight')
-      console.log('caplength', capLength)
       points.sleeveCap = points.shoulder.shift(
         points.neck.angle(points.shoulder) - 15 + options.cuffEase * 15,
         capLength
