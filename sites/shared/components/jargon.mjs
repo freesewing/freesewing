@@ -74,7 +74,9 @@ export const termList =
             .map((key, i) => (
               <tr
                 key={key}
-                className={`${i % 2 === 0 ? 'bgsecondary bg-opacity-10' : 'bg-transparent'} border border-base-300 border-r-0 border-l-0 border-b-0`}
+                className={`${
+                  i % 2 === 0 ? 'bgsecondary bg-opacity-10' : 'bg-transparent'
+                } border border-base-300 border-r-0 border-l-0 border-b-0`}
               >
                 <td className="py-1 text-right font-bold">{key}</td>
                 <td className="py-1 ">
