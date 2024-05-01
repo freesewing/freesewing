@@ -1,5 +1,5 @@
 ---
-title: "Bibi: What You Need"
+title: "Bibi Body Block: What You Need"
 ---
 
 To make Bibi, you will need the following:

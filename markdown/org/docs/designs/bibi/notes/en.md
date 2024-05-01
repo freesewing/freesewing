@@ -1,5 +1,5 @@
 ---
-title: "Bibi: Designer Notes"
+title: "Bibi Body Block: Designer Notes"
 ---
 
 When I was designing Tina, I originally considered basing the pattern on 

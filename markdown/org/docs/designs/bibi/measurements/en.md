@@ -1,5 +1,5 @@
 ---
-title: "Bibi: Required Measurements"
+title: "Bibi Body Block: Required Measurements"
 ---
 
 <DesignMeasurements design='bibi' />

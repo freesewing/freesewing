@@ -400,11 +400,11 @@ export function createArmHoles(
       -strapWidth * points.shoulder.dist(points.hps)
     )
     points.strapTopCp1 = points.strapTop
-      .shiftTowards(
-        points.hps,
-        0.8 * points.strapTop.dy(points.armhole) * (0.2 + options.necklineBend)
-      )
+      .shiftTowards(points.hps, 0.4 * points.strapTop.dy(points.armhole))
       .rotate(90, points.strapTop)
+
+    // Increase weight of armhole to prevent corner
+    points.armholeHollowCp2 = points.armholeHollow.shiftFractionTowards(points.armholeHollowCp2, 3)
     paths.armhole = new Path()
       .move(points.armhole)
       .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)

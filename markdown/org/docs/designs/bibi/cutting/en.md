@@ -1,5 +1,5 @@
 ---
-title: "Bibi: Cutting Instructions"
+title: "Bibi Body Block: Cutting Instructions"
 ---
 
 - Cut 1 back on the fold.
