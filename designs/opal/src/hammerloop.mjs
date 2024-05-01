@@ -1,20 +1,6 @@
 import { back } from './back.mjs'
 
-function draftHammerLoop({
-  measurements,
-  options,
-  Point,
-  Path,
-  points,
-  paths,
-  Snippet,
-  snippets,
-  sa,
-  macro,
-  part,
-  store,
-  scale,
-}) {
+function draftHammerLoop({ options, Point, Path, points, paths, sa, macro, part, store, scale }) {
   if (!options.hammerLoop) return part.hide()
 
   const hammerLoopLength = store.get('hammerLoopLength') * options.hammerLoopLengthFactor

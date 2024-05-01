@@ -1,15 +1,12 @@
 import { front } from './front.mjs'
 
 function draftWaistband({
-  measurements,
   options,
   absoluteOptions,
   Point,
   Path,
   points,
   paths,
-  Snippet,
-  snippets,
   sa,
   macro,
   part,

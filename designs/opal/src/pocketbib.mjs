@@ -1,11 +1,8 @@
 import { bib } from './bib.mjs'
 
 function draftPocketBib({
-  measurements,
   options,
   absoluteOptions,
-  Point,
-  Path,
   points,
   paths,
   Snippet,
@@ -13,7 +10,6 @@ function draftPocketBib({
   sa,
   macro,
   part,
-  store,
   scale,
 }) {
   if (!options.pocketBib) return part.hide()

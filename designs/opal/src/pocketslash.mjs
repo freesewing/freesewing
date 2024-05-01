@@ -1,7 +1,6 @@
 import { front } from './front.mjs'
 
 function draftPocketSlash({
-  measurements,
   options,
   Point,
   Path,

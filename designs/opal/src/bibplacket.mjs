@@ -1,16 +1,12 @@
 import { bib } from './bib.mjs'
 
 function draftBibPlacket({
-  measurements,
   options,
   absoluteOptions,
   Point,
   Path,
   points,
   paths,
-  Snippet,
-  snippets,
-  sa,
   macro,
   part,
   store,

@@ -1,11 +1,8 @@
 import { back } from './back.mjs'
 
 function draftPocketCarpenter({
-  measurements,
   options,
   absoluteOptions,
-  Point,
-  Path,
   points,
   paths,
   Snippet,

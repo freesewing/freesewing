@@ -1,13 +1,9 @@
 import { pocketSlash } from './pocketslash.mjs'
 
 function draftPocketSlashShield({
-  measurements,
   options,
-  Point,
-  Path,
   points,
   paths,
-  Snippet,
   snippets,
   sa,
   macro,

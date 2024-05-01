@@ -626,15 +626,15 @@
     "lab": true,
     "org": true,
     "tags": [
-	  "overalls",
-	  "onePiece"
+      "overalls",
+      "onePiece"
     ],
     "techniques": [
       "flatFelledSeam",
       "hem",
-	  "curvedSeam",
-	  "button",
-	  "pocket"
+      "curvedSeam",
+      "button",
+      "pocket"
     ]
   },
   "otis": {

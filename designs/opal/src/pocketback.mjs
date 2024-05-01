@@ -1,11 +1,8 @@
 import { back } from './back.mjs'
 
 function draftPocketBack({
-  measurements,
   options,
   absoluteOptions,
-  Point,
-  Path,
   points,
   paths,
   Snippet,
@@ -13,7 +10,6 @@ function draftPocketBack({
   sa,
   macro,
   part,
-  store,
   scale,
 }) {
   if (!options.pocketBack) return part.hide()

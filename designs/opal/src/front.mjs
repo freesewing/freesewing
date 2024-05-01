@@ -13,7 +13,6 @@ function draftFront({
   macro,
   part,
   store,
-  units,
   utils,
   scale,
 }) {
