@@ -100,8 +100,8 @@ export const gusset = {
       (options.cyclingchamois
         ? 0.0125
         : options.frontbulgesize > options.gussetwidth * 0.9
-        ? options.gussetwidth * 0.9
-        : options.frontbulgesize) * measurements.crossSeamFront
+          ? options.gussetwidth * 0.9
+          : options.frontbulgesize) * measurements.crossSeamFront
     const backInsertGussetCpAngle = options.cyclingchamois ? 0 : 90 * options.buttlift
 
     points.centerCenter = new Point(0, 0)
