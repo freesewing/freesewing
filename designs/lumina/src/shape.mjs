@@ -167,10 +167,10 @@ const createSidePoints = ({
       ratio == 0
         ? measurement
         : fixedSidePanel > 0
-        ? width < measurement - fixedSidePanel
-          ? measurement - fixedSidePanel
+          ? width < measurement - fixedSidePanel
+            ? measurement - fixedSidePanel
+            : width
           : width
-        : width
     if (i == 0) {
       points[prefix + postfix + names[i]] = points[prefix + names[i]].shift(
         prefix == 'front' ? 180 : 0,
