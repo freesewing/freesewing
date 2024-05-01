@@ -67,7 +67,7 @@
     "tag": "latest"
   },
   "engines": {
-    "node": "18",
+    "node": ">= 18.17.0 <22",
     "npm": "9"
   }
 }
