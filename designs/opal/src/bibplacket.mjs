@@ -58,6 +58,11 @@ function draftBibPlacket({
   }
   paths.seam.line(points.topRight).close().setClass('fabric')
 
+  if (options.bibPlacketLayers == 1) {
+    points.fold1Left = points.bottomLeft
+    points.fold1Right = points.bottomRight
+  }
+
   macro('hd', {
     id: 'wTop',
     from: points.topLeft,
