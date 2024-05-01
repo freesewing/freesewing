@@ -2756,10 +2756,10 @@
     "@types/cookiejar" "*"
     "@types/node" "*"
 
-"@types/ungap__structured-clone@^0.3.0":
-  version "0.3.3"
-  resolved "https://registry.npmjs.org/@types/ungap__structured-clone/-/ungap__structured-clone-0.3.3.tgz"
-  integrity sha512-RNmhIPwoip6K/zZOv3ypksTAqaqLEXvlNSXKyrC93xMSOAHZCR7PifW6xKZCwkbbnbM9dwB9X56PPoNTlNwEqw==
+"@types/ungap__structured-clone@^1.0.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@types/ungap__structured-clone/-/ungap__structured-clone-1.2.0.tgz#12b9fd4ab3e6a82292d60048492b05eb75b4a48f"
+  integrity sha512-ZoaihZNLeZSxESbk9PUAPZOlSpcKx81I1+4emtULDVmBLkYutTcMlCj2K9VNlf9EWODxdO6gkAqEaLorXwZQVA==
 
 "@types/unist@*", "@types/unist@^3.0.0":
   version "3.0.2"
@@ -9092,13 +9092,13 @@ mdast-util-to-string@^4.0.0:
   dependencies:
     "@types/mdast" "^4.0.0"
 
-mdast-util-toc@7.0.0:
-  version "7.0.0"
-  resolved "https://registry.npmjs.org/mdast-util-toc/-/mdast-util-toc-7.0.0.tgz"
-  integrity sha512-C28UcSqjmnWuvgT8d97qpaItHKvySqVPAECUzqQ51xuMyNFFJwcFoKW77KoMjtXrclTidLQFDzLUmTmrshRweA==
+mdast-util-toc@7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/mdast-util-toc/-/mdast-util-toc-7.0.1.tgz#e886e45cd462060fab10a63f160fd2dbe2daf8d8"
+  integrity sha512-mBuhuKtP8F/5vVLNJKeC1fs1W5w2sZqB1uUvKwQK9qftSiBILVkQjKQ8aLVrhIEFPGwbMKCVCB3WAAW+BoVPxg==
   dependencies:
     "@types/mdast" "^4.0.0"
-    "@types/ungap__structured-clone" "^0.3.0"
+    "@types/ungap__structured-clone" "^1.0.0"
     "@ungap/structured-clone" "^1.0.0"
     github-slugger "^2.0.0"
     mdast-util-to-string "^4.0.0"
