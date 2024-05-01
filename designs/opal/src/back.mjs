@@ -273,8 +273,6 @@ function draftBack({
     points.hammerLoopMax,
     options.hammerLoopCurve
   )
-  const hammerLoopStartAngle = points.hammerLoopTop.angle(points.hammerLoopMax)
-  const hammerLoopEndAngle = points.hammerLoopMax.angle(points.hammerLoopOutseam)
   const hammerLoopWidth = pocketMetric * options.hammerLoopWidth
 
   paths.centerSeam = new Path()
@@ -641,7 +639,7 @@ function draftBack({
 
 export const back = {
   name: 'back',
-  after: front,
+  after: bib,
   draft: draftBack,
   options: {
     // What angle the back bib leaves the outseam at. 0 is horizontal, 90 is vertical.
@@ -766,5 +764,4 @@ export const back = {
     hammerLoopFirstFold: { pct: 90, min: 0, max: 100, menu: 'style' },
     hammerLoopSecondFold: { pct: 60, min: 0, max: 200, menu: 'style' },
   },
-  after: bib,
 }
