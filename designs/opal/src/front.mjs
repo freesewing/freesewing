@@ -17,41 +17,6 @@ function draftFront({
   utils,
   scale,
 }) {
-  // Todo:
-  // - (DONE) Derive points from measurements.
-  // - (DONE) Add options.
-  // - (DONE) Derive points from measurements + options.
-  // - (DONE) Scoop the crotch.
-  // - (DONE) Add logo and dimension box.
-  // - (DONE) Add cut instructions (2, mirrored, from main fabric)
-  // - (DONE) Add dimensions.
-  // - (DONE) Onto the back piece.
-  // - (DONE) Onto the bib.
-  // - Onto the pockets.
-  //   - (DONE) Slash Pockets
-  //   - (DONE) Bib Pocket
-  //   - (DONE) Back Pockets
-  //   - (DONE) Carpenter Pockets
-  //   - (DONE) Hammer Loop
-  // - (DONE) Fix the bib piece so that the waist seam is equal in length to the front piece's waist seam.
-  // - (DONE) Add the bib placket.
-  // - (DONE) Add the front waistband.
-  // - Add seam and hem allowances, and dimension macros, cutlist, and titles and logo snippets to all parts.
-  //   - (DONE) Front
-  //   - (DONE) Back
-  //   - (DONE) Bib
-  //   - (DONE) Plackets
-  //     - (DONE) Waistband
-  //     - (DONE) Bib
-  //   - Pockets
-  //     - (DONE) Slash
-  //     - (DONE) Bib
-  //     - (DONE) Back
-  //     - (DONE) Carpenter
-  //   - Hammer Loop
-  // - (DONE) Fix strap length calculation.
-  // - Hide options that are not applicable (for example, slash pocket options if the slash pocket is disabled.
-
   points.cfWaist = new Point(
     -measurements.waistFrontArc * (1 + options.waistEase) * (1 - options.waistBalance),
     0

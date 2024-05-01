@@ -20,7 +20,7 @@ function draftPocketSlash({
 
   const waistDist = store.get('waistDist')
 
-  // and draft the points for the pocket outline.
+  // Draft the points for the pocket outline.
   points.centerTop = new Point(0, 0)
   points.centerBottom = new Point(0, waistDist * options.pocketSlashHeight)
   points.topRight = new Point(waistDist * options.pocketSlashWidth, 0)
