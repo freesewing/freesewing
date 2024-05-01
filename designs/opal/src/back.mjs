@@ -1,4 +1,3 @@
-import { front } from './front.mjs'
 import { bib } from './bib.mjs'
 
 function draftBack({
