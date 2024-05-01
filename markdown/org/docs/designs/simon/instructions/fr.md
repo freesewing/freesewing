@@ -11,8 +11,7 @@ toutes les étapes.
 Si vous cherchez à créer ce modèle, Kelly et Julian peuvent vous guider vers la fin.
 
 Tu peux trouver tout le matériel sur le site de Kelly
-: [#simonsayssew avec kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
-
+: [#simonsayssew avec kelly hogaboom & julian collins](https://agni.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
 </Tip>
 
 ### Étape 1 : Thermocoller l'entoilage
@@ -60,9 +59,9 @@ Placez les 2 pièces de vos poignets (l'une entoilée, l'autre non) endroit cont
 
 Avant de retourner ta manchette, nous devons découper la marge de couture pour la rendre moins volumineuse.
 
-#### Repasser la marge de couture
+#### Repasser la marge de couture arrière
 
-![Repasser la marge de couture](2c.png)
+![Repasser la marge de couture arrière](2c.png)
 
 Replie les surplus de couture de chaque côté de la manchette, là où la manchette s'attache à la manche, et repasse-les.
 
@@ -251,6 +250,8 @@ Quand vous êtes satisfait, repassez la patte pliée.
 Retourner la pièce sur l'endroit, et fixer la patte repliée en piquant dans la rainure.
 
 Pour cela, coudre exactement sur votre couture précédente. Comme tu as plié le tissu de ta patte de boutonnage un peu au-delà de cette couture, il sera pris à l'arrière, fixant ta patte de boutonnage pliée en place, et bloquant le surplus de couture à l'intérieur.
+
+![Coudre dans la pliure](9e.png)
 
 ### Etape 10: Préparer la patte de boutonnage (côté boutonnières)
 
@@ -441,9 +442,9 @@ Ensuite, couds horizontalement l'autre côté de la patte de boutonnage pour ter
 > 
 > Par conséquent, ce sont les coutures et non les bords qui doivent être alignés, donc il faut positionner la manche de façon à ce qu'elle dépasse du bord de 1 cm.
 
-#### Manchon à goupille en place
+#### Épingler la manche en place
 
-![Manchon à goupille en place](14a.png)
+![Épingler la manche en place](14a.png)
 
 Étalez votre chemise sur l'envers, en mettant les deux devants et le dos bien à plat.
 

@@ -6,6 +6,7 @@ intro: "-"
 designs:
   - титан
 maker: Galit
+author: 49445
 ---
 
-Shorts for my dauther
+Shorts for my daughter

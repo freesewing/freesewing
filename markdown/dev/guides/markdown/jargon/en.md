@@ -8,9 +8,46 @@ jargon/terms for us. This page shows you how to use it.
 
 <Tip compact>Think of jargon as glossary terms</Tip>
 
-## Defined terms
+## Defining terms
 
-The list of terminology that is defined differs from site to site:
+To define a term, we need to establish a link between the term itself, and the documentation page that defines it.
+
+In the most common scenario, the term is the title of the page.
+For example, the title of this page is `Using jargon and terms`:
+
+```mdx
+---
+title: Using jargon and terms
+---
+```
+
+If we wanted to make it available as jargon, we only need to add the `jargon` frontmatter:
+
+```mdx
+---
+title: Using jargon and terms
+jargon: true
+---
+```
+
+## Multiple terms for the same page
+
+We can add additional terms that point to the same page by setting the `terms` in frontmatter to a comma-seperated list of terms.
+
+For example to make both `jargon` and `term` point to this page, we can do this:
+
+
+```mdx
+---
+title: Using jargon and terms
+jargon: true
+terms: jargon, term
+---
+```
+
+## Terminology per site
+
+The following pages show a list of all terminology per site:
 
 | Site | Terminology List |
 | ---- | ---------------- |

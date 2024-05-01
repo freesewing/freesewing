@@ -113,11 +113,13 @@ const send = async (test = true) => {
 
     for (let sub of subscribers[lang]) {
       if (l > 0) {
+        const unsubGet = `https://freesewing.org${
+          lang === 'en' ? '/' : '/' + lang + '/'
+        }newsletter/unsubscribe?x=${sub.ehash}`
+        const unsubPost = `https://backend3.freesewing.org/ocunsub/${sub.ehash}`
         const body = mustache.render(template, {
           ...i18n[lang],
-          unsubscribe: `https://freesewing.org${
-            lang === 'en' ? '/' : '/' + lang + '/'
-          }newsletter/unsubscribe?x=${sub.ehash}`,
+          unsubscribe: unsubGet,
           content,
         })
         console.log(`[${lang}] ${l}/${subs} (${i}) Sending to ${sub.email}`)
@@ -141,6 +143,16 @@ const send = async (test = true) => {
                 Charset: 'utf-8',
                 Data: i18n[lang].title,
               },
+              Headers: [
+                {
+                  Name: 'List-Unsubscribe',
+                  Value: unsubPost,
+                },
+                {
+                  Name: 'List-Unsubscribe-Post',
+                  Value: 'List-Unsubscribe=One-Click',
+                },
+              ],
             },
           },
           Destination: {

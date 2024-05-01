@@ -56,6 +56,7 @@ clonePattern: Klon-Muster
 updatePattern: Muster aktualisieren
 reload: Account neu laden
 export: Exportiere deine Daten
+import: Import data
 exportMsg: Klicke unten, um deine persönlichen Daten zu exportieren
 exportNote: Die EU-Datenschutzgrundverordnung (GDPR) gewährleistet dein sogenanntes Recht auf Datenübertragbarkeit - das Recht, deine personenbezogenen Daten für deine eigenen Zwecke oder für verschiedene Dienste zu erhalten und wiederzuverwenden.
 exportDownload: "Deine Daten wurden exportiert und stehen an folgendem Ort zum Download bereit:"
@@ -122,6 +123,7 @@ metricUnitsd: Wähle dies, wenn du Zentimeter gegenüber Zoll bevorzugst.
 imperialUnits: Imperiale Einheiten (inch)
 imperialUnitsd: Wähle diese Option, wenn du Zoll statt Zentimeter bevorzugst.
 unitsTitle: Welche Einheiten bevorzugst du?
+displayUnits: Display units
 #username
 usernameTitle: Welchen Benutzernamen hättest du gerne?
 usernameAvailable: Benutzername ist verfügbar
@@ -186,6 +188,8 @@ customBookmark: Benutzerdefinierte Lesezeichen
 yourBookmarks: Deine Lesezeichen
 bookmarkThisThing: Setze ein Lesezeichen für diese Seite { thing }
 page: Seite
+doc: Dokumentation
+pattern: Schnittmuster
 #sets
 set: Maßnahmeset
 name: Name
@@ -246,6 +250,8 @@ csetNameMsg: Jedes kuratierte Set hat einen Namen. Du kannst deinen eigenen Name
 missing: Missing
 andMore: and more
 unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
+makePublic: Make public
+makePrivate: Make private
 patternNew: Ein neues Muster generieren
 patternNewInfo: Wähle ein Design, füge deine Maße hinzu und wir erstellen ein maßgeschneidertes Nähmuster für dich.
 designNew: Ein neues Design erstellen
@@ -299,3 +305,15 @@ ownPublicPattern: Dies ist die öffentliche Ansicht für eines deiner eigenen Mu
 ownPrivatePattern: Dies ist die private Ansicht deines Musters. Die öffentliche Ansicht funktioniert für dich auch, wenn das Muster privat ist. Für andere funktioniert sie nur, wenn das Muster öffentlich ist.
 privateView: Privatansicht
 publicView: Öffentliche Ansicht
+importHere: This page allows you to import data into your FreeSewing account.
+importSupported: Currently, we support importing the following types of data
+importSets: Import Measurements Sets
+importSet: Import Measurements Set
+cloneSet: Clone Measurements Set
+measieFile: Measurements file
+dragAndDropFileHere: Drag and drop your file here
+importSetTip1: To import a measurement set, you should have a JSON or YAML file that has the following structure
+importSetTip2: Your file can either contain a single measurements set, or an array of multiple measurements sets.
+importing: Importing
+imported: Imported
+importFailed: Import failed

@@ -1,6 +1,6 @@
 ---
 title: Drawing the straps
-order: 230
+order: 93
 ---
 
 All we have to do now is flip a bunch of points on the other side,
@@ -12,7 +12,7 @@ remove the earlier paths we drew to see what we are doing.
 The `round` macro we added earlier is still required to calculate the points we
 need to construct the half-circle. But we don't want it to draw the half-circle
 path. As it happens, that is the default behaviour, so we merely have to remove
-it's `hidden: false` property.
+its `hidden: false` property.
 
 <Example tutorial caption="It is starting to look good. But this sharp corners at the bottom don't exactly say baby, do they?">
 ```design/src/bib.mjs
@@ -31,27 +31,45 @@ function draftBib({
   /*
    * Construct the neck opening
    */
-  const target = (measurements.head * options.neckRatio) / 4
   let tweak = 1
+  let target = (measurements.head * options.neckRatio) /4
   let delta
   do {
-    points.right = new Point(tweak * measurements.head / 10, 0)
-    points.bottom = new Point(0, tweak * measurements.head / 12)
-
-    points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
-    points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
-
+    points.right = new Point(
+      tweak * measurements.head / 10, 
+      0
+    )
+    points.bottom = new Point(
+      0, 
+      tweak * measurements.head / 12
+    )
+  
+    points.rightCp1 = points.right.shift(
+      90, 
+      points.bottom.dy(points.right) / 2
+    )
+    points.bottomCp2 = points.bottom.shift(
+      0, 
+      points.bottom.dx(points.right) / 2
+    )
+  
     paths.quarterNeck = new Path()
       .move(points.right)
-      .curve(points.rightCp1, points.bottomCp2, points.bottom)
-      .hide() // Add this line
+      .curve(
+        points.rightCp1, 
+        points.bottomCp2, 
+        points.bottom
+      )
+      .hide()
 
     delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
     else tweak = tweak * 1.02
   } while (Math.abs(delta) > 1)
 
-  // Construct the complete neck opening
+  /*
+   * Construct the complete neck opening
+   */
   points.rightCp2 = points.rightCp1.flipY()
   points.bottomCp1 = points.bottomCp2.flipX()
   points.left = points.right.flipX()
@@ -86,20 +104,9 @@ function draftBib({
   points.bottomLeft = points.topLeft.shift(-90, length)
   points.bottomRight = points.topRight.shift(-90, length)
 
-  // strikeout-start
-  /* Remove this path
-  paths.rect = new Path()
-    .move(points.topLeft)
-    .line(points.bottomLeft)
-    .line(points.bottomRight)
-    .line(points.topRight)
-    .line(points.topLeft)
-    .close()
-    .addClass('fabric')
+  /*
+   * Shape the straps
    */
-  // strikeout-end
-
-  // Shape the straps
   points.edgeLeft = new Point(points.topLeft.x, points.left.y)
   points.edgeRight = new Point(points.topRight.x, points.right.y)
   points.edgeTop = new Point(0, points.topLeft.y)
@@ -160,6 +167,11 @@ function draftBib({
     }
   }
 
+  /*
+   * This is the list of points we need to rotate
+   * to move our strap out of the way
+   */
+
   const rotateThese = [
     "edgeTopLeftCp",
     "edgeTop",
@@ -177,9 +189,18 @@ function draftBib({
     "top",
     "topCp2"
   ]
-  while (points.tipRightBottomStart.x > -1) {
-    for (const p of rotateThese) points[p] = points[p].rotate(1, points.edgeLeft)
-  }
+    /*
+     * We're rotating all the points in
+     * the `rotateThese` array around
+     * the `edgeLeft` point.
+     *
+     * We're using increments of 1 degree
+     * until the `tipRightBottomStart` point
+     * is 1 mm beyond the center of our bib.
+     */
+    while (points.tipRightBottomStart.x > -1) {
+      for (const p of rotateThese) points[p] = points[p].rotate(1, points.edgeLeft)
+    }
 
   // strikeout-start
   /* Remove this repetition

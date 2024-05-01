@@ -11,8 +11,7 @@ alle Schritte.
 Wenn Sie dieses Muster herstellen wollen, können Kelly und Julian Ihnen den Weg zum Ende weisen.
 
 Du findest das gesamte Material auf Kellys Website
-: [#simonsayssew mit kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
-
+: [#simonsayssew mit kelly hogaboom & julian collins](https://agni.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
 </Tip>
 
 ### Schritt 1: Sicherungsschnittstelle
@@ -251,6 +250,8 @@ Wenn Sie zufrieden sind, drücken Sie die gefaltete Platte.
 Von der guten Seite Ihres Hemdes nähen Sie das gefaltete Plakat durch Nähen im Graben.
 
 Um dies zu tun, nähen Sie genau auf Ihrer früheren Naht. Da du den Stoff deiner Leiste ein wenig über diese Naht hinaus gefaltet hast, wird sie hinten eingeklemmt, wodurch deine gefaltete Leiste fixiert und die Nahtzugabe innen festgehalten wird.
+
+![Stitch in the ditch](9e.png)
 
 ### Schritt 10: Bereiten Sie das Buttonhole Placket vor
 

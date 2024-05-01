@@ -1,6 +1,7 @@
 ---
 layout: opecol
 title: Driegen
+jargon: true
 ---
 
 ![De vorm van deze achterzak is gedriegd voor de zak op de jeansbroek gestikt wordt](basting.jpg)

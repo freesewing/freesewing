@@ -5,6 +5,7 @@ date: "2022-06-12"
 intro: "The maker shared:"
 title: "Modified Tamiko as a nursing cover"
 designs: ["tamiko"]
+author: 19867
 ---
 
 The maker shared:

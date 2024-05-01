@@ -1,5 +1,6 @@
 ---
 title: Slipstitch
+jargon: true
 ---
 
 A slipstitch is a hand-sewing technique that allows you to join layers

@@ -3,7 +3,7 @@ import { backPoints } from './backpoints.mjs'
 export const backInside = {
   name: 'noble.backInside',
   from: backPoints,
-  draft: ({ sa, Point, points, Path, paths, Snippet, snippets, options, macro, part }) => {
+  draft: ({ sa, Point, points, Path, paths, Snippet, snippets, options, macro, store, part }) => {
     if (options.dartPosition != 'shoulder') {
       paths.insideSeam = paths.seam.clone().unhide()
     } else {
@@ -32,6 +32,8 @@ export const backInside = {
 
     snippets.dartTip = new Snippet('notch', points.dartTip)
 
+    store.cutlist.removeCut()
+    store.cutlist.addCut({ onFold: false })
     macro('title', {
       at: points.titleAnchor,
       nr: 3,

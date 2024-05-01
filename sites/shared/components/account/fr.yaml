@@ -56,6 +56,7 @@ clonePattern: Clone le patron
 updatePattern: Mettre à jour le patron
 reload: Recharger le compte
 export: Exportez vos données
+import: Importer des données
 exportMsg: Clique ci-dessous pour exporter tes données personnelles
 exportNote: Le règlement général sur la protection des données (RGPD) de l'UE garantit ce que l'on appelle ton droit à la portabilité des données - le droit d'obtenir et de réutiliser tes données personnelles à tes propres fins, ou à travers différents services.
 exportDownload: "Tes données ont été exportées et sont disponibles au téléchargement à l'endroit suivant :"
@@ -122,6 +123,7 @@ metricUnitsd: Choisis cette option si tu préfères les centimètres aux pouces.
 imperialUnits: Unités impériales (pouces)
 imperialUnitsd: Choisis cette option si tu préfères les pouces aux centimètres.
 unitsTitle: Quelles sont les unités que tu préfères ?
+displayUnits: Unités d'affichage
 #username
 usernameTitle: Quel nom d'utilisateur aimerais-tu ?
 usernameAvailable: Le nom d'utilisateur est disponible
@@ -186,6 +188,8 @@ customBookmark: Marques pages personnalisés
 yourBookmarks: Tes marques pages
 bookmarkThisThing: Ajoute un marque page à { thing }
 page: Page
+doc: Documentation
+pattern: Patron
 #sets
 set: Jeux de mesures
 name: Nom
@@ -246,6 +250,8 @@ csetNameMsg: Chaque ensemble curaté a un nom. Tu peux proposer ton propre nom o
 missing: Manquant
 andMore: et plus
 unitsMustSave: "Remarque : tu dois enregistrer après avoir modifié les unités pour que le changement prenne effet sur cette page."
+makePublic: Rendre public
+makePrivate: Rendre privé
 patternNew: Génère un nouveau modèle
 patternNewInfo: Choisis un modèle, ajoute ton jeu de mesures, et nous générerons pour toi un patron de couture sur mesure.
 designNew: Créer un nouveau dessin
@@ -299,3 +305,15 @@ ownPublicPattern: Voici la vue publique d'un de tes propres modèles. Pour plus 
 ownPrivatePattern: Il s'agit de la vue privée de ton modèle. La vue publique fonctionnera pour toi même si le modèle est privé. Elle ne fonctionnera pour les autres que lorsque le modèle sera public.
 privateView: Vue privée
 publicView: Vue du public
+importHere: Cette page te permet d'importer des données dans ton compte FreeSewing.
+importSupported: Actuellement, nous prenons en charge l'importation des types de données suivants
+importSets: Importer des ensembles de mesures
+importSet: Importer des ensembles de mesures
+cloneSet: Duplique tes ensembles de mesures
+measieFile: Fichier de mesures
+dragAndDropFileHere: Faites glisser et déposez votre fichier ici
+importSetTip1: Pour importer un jeu de mesures, tu dois disposer d'un fichier JSON ou YAML qui a la structure suivante
+importSetTip2: Ton fichier peut contenir un seul jeu de mesures ou un tableau de plusieurs jeux de mesures.
+importing: Importation en cours
+imported: Importé
+importFailed: Échec de l'importation

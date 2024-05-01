@@ -11,8 +11,7 @@ all the steps.
 If you're looking to make this pattern, Kelly and Julian can guide you start to finish.
 
 You can find all the material's on Kelly's
-site: [#simonsayssew with kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
-
+site: [#simonsayssew with kelly hogaboom & julian collins](https://agni.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
 </Tip>
 
 ### Step 1: Fuse interfacing
@@ -255,6 +254,8 @@ When you're happy, press the folded placket.
 From the good side of your shirt, sew down the folded placket by stitching in the ditch.
 
 To do so, sew exactly on top of your earlier seam. Since you folded the fabric of your placket a bit past this seam, it will get caught at the back, fixing your folded placket in place, and locking the seam allowance inside.
+
+![Stitch in the ditch](9e.png)
 
 ### Step 10: Prepare the buttonhole placket
 

@@ -1,5 +1,6 @@
 ---
 title: Surjeteuse
+jargon: vrai
 ---
 
 ![L'arrière d'une couture faite à la surjeteuse](serged-seam.jpg)

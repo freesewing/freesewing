@@ -90,14 +90,24 @@ SetModel.prototype.guardedCreate = async function ({ body, user }) {
  */
 SetModel.prototype.guardedRead = async function ({ params, user }) {
   /*
-   * Enforce RBAC
-   */
-  if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
-
-  /*
-   * Attempt to read the record from the database
+   * If the set is public, we do not need to enforce RBAC
+   * So let's load it first
    */
   await this.read({ id: parseInt(params.id) })
+
+  /*
+   * If it's public, return early
+   */
+  if (this.record?.public)
+    return this.setResponse(200, false, {
+      result: 'success',
+      set: this.asSet(),
+    })
+
+  /*
+   * If it's not public, enforce RBAC
+   */
+  if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   /*
    * If it does not exist, send a 404
@@ -377,7 +387,6 @@ SetModel.prototype.asPublicSet = function () {
     about: 'Contains measurements in mm as well as metadata',
     ...this.asSet(),
   }
-  delete data.userId
   data.measurements = data.measies
   delete data.measies
   data.units = data.imperial ? 'imperial' : 'metric'

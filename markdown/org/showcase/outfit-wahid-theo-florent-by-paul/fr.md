@@ -8,6 +8,7 @@ designs:
   - "florent"
   - "theo"
   - "wahid"
+author: 433
 ---
 
 ![Tenue par Paul](/img/showcase/outfit-wahid-theodore-florent-by-paul/high_back.jpg "Tenue par Paul")

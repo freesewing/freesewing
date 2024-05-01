@@ -1158,6 +1158,42 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "rachelostic",
+      "name": "Rachel Ostic",
+      "avatar_url": "https://avatars.githubusercontent.com/u/65781290?v=4",
+      "profile": "https://rachel.ostic.ca",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "karlnippoldt",
+      "name": "Karl Nippoldt",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7821608?v=4",
+      "profile": "https://karlnippoldt.com",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "RockerKitten",
+      "name": "Corey",
+      "avatar_url": "https://avatars.githubusercontent.com/u/84648053?v=4",
+      "profile": "https://github.com/RockerKitten",
+      "contributions": [
+        "question"
+      ]
+    },
+    {
+      "login": "GeniaHarrietBoeing",
+      "name": "Niabon",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73827848?v=4",
+      "profile": "https://github.com/GeniaHarrietBoeing",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,

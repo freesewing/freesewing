@@ -5,6 +5,7 @@ date: "2023-01-27"
 intro: "Guin made this great modified Simon by giving it fun lantern sleeves in a contrasting color that definitely has nothing to do with running out of navy gingham. All's well that ends well, though - his shirt turned out awesome. Also loving the way the stripe matching turned out across the front."
 title: "Guin's Gingham Lantern Simon"
 designs: ["simon"]
+author: 27042
 ---
 
 Guin made this great modified Simon by giving it fun lantern sleeves in a contrasting color that definitely has nothing to do with running out of navy gingham. All's well that ends well, though - his shirt turned out awesome. Also loving the way the stripe matching turned out across the front.

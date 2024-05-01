@@ -1,5 +1,5 @@
 ---
-maker: "Ramoth"
+author: 23386
 caption: "Corset Ramoth Cathrin ...avec des papillons !"
 date: "2023-01-31"
 intro: "Voici un fantastique corset Cathrin en forme de papillon fabriqué par Ramoth - leur tout premier ! Ils ont partagé ceci à propos des futures modifications :"

@@ -39,12 +39,12 @@ const loadFolderFrontmatter = async (key, site, folder, transform = false, lang 
    * But the biggest task is combing through all the org documentation and for this
    * it's much faster to first run find to limit the number of files to open
    */
-  const cmd = `find . -type f -name "${lang ? lang : '*'}.md" -exec grep "^${key}:" -ism 1 {} +`
+  //const cmd = `find . -type f -name "${lang ? lang : '*'}.md" -exec grep "^${key}:" -ism 1 {} +`
+  const cmd = lang
+    ? `find . -type f -name "${lang ? lang : '*'}.md" -exec grep "^${key}:" -ism 1 {} +`
+    : `grep -R "^${key}:" -ism 1 .`
   const grep = exec(cmd, { cwd, maxBuffer: 2048 * 1024 }, (error, stdout, stderr) => {
-    if (error) {
-      console.error(`exec error: ${error} - ${stderr}`)
-      return
-    }
+    if (error) console.error('Exec error:', { cwd, cmd, error, stderr })
 
     return stdout
   })
@@ -148,6 +148,30 @@ const loadDocs = async (site) => {
   const order = await loadFolderFrontmatter('order', site, folder, false, 'en')
 
   return mergeOrder(titles, order)
+}
+
+/*
+ * Loads jargon and terms
+ */
+const loadJargon = async (site, docs) => {
+  const folder = site === 'org' ? 'docs' : ''
+  const jargon = await loadFolderFrontmatter('jargon', site, folder)
+  const terms = await loadFolderFrontmatter('terms', site, folder)
+
+  const data = {}
+  for (const lang in jargon) {
+    data[lang] = {}
+    for (const slug in jargon[lang]) {
+      data[lang][docs[lang][slug].t.toLowerCase()] = slug
+      if (terms[lang]?.[slug]) {
+        for (const term of terms[lang][slug].split(',').map((term) => term.trim())) {
+          data[lang][term.toLowerCase()] = slug
+        }
+      }
+    }
+  }
+
+  return data
 }
 
 /*
@@ -290,6 +314,15 @@ const writeFile = async (filename, exportname, site, content) => {
 export const prebuildDocs = async (store) => {
   store.docs = await loadDocs(store.site)
   await writeFiles('docs', store.site, store.docs)
+
+  // Handle jargon
+  store.jargon = await loadJargon(store.site, store.docs)
+  fs.writeFileSync(
+    path.resolve('..', store.site, 'prebuild', `jargon.mjs`),
+    `${header}
+export const site = "${store.site}"
+export const jargon = ${JSON.stringify(store.jargon, null, 2)}`
+  )
 }
 
 /*

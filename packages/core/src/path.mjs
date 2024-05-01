@@ -6,7 +6,7 @@ import {
   lineIntersectsCurve,
   curvesIntersect,
   pointOnLine,
-  pointOnCurve,
+  curveParameterFromPoint,
   curveEdge,
   round,
   __addNonEnumProp,
@@ -190,6 +190,11 @@ Path.prototype.bbox = function () {
       )
     }
     if (op.to) current = op.to
+  }
+
+  if (bbs.length === 0 && current) {
+    // Degenerate case: Line is a point
+    bbs.push(__lineBoundingBox({ from: current, to: current }))
   }
 
   return __bbbbox(bbs)
@@ -646,7 +651,7 @@ Path.prototype.noop = function (id = false) {
 Path.prototype.offset = function (distance) {
   distance = __asNumber(distance, 'distance', 'Path.offset', this.log)
 
-  return __pathOffset(this, distance)
+  return __pathOffset(this, distance, this.log)
 }
 
 /**
@@ -676,6 +681,42 @@ Path.prototype.reverse = function (cloneAttributes = false) {
   if (cloneAttributes) rev.attributes = this.attributes.clone()
 
   return rev
+}
+
+/**
+ * Returns a rotated version of this Path
+ * @param {number} deg Angle to rotate, see {@link Point#rotate}
+ * @param {Point} rotationOrigin point to use as rotation origin, see {@link Point#rotate}
+ * @param {boolean} cloneAttributes If the rotated path should receive a copy of the path attributes
+ *
+ * @return {Path} A Path instance that is a rotated copy of this Path
+ */
+Path.prototype.rotate = function (deg, rotationOrigin, cloneAttributes = false) {
+  deg = __asNumber(deg, 'deg', 'Path.rotate', this.log)
+  if (!(rotationOrigin instanceof Point))
+    this.log.warn('Called `Path.rotate(deg,that)` but `rotationOrigin` is not a `Point` object')
+
+  const rotatedPath = new Path().__withLog(this.log)
+
+  for (const op of this.ops) {
+    if (op.type === 'move') {
+      const to = op.to.rotate(deg, rotationOrigin)
+      rotatedPath.move(to)
+    } else if (op.type === 'line') {
+      const to = op.to.rotate(deg, rotationOrigin)
+      rotatedPath.line(to)
+    } else if (op.type === 'curve') {
+      const cp1 = op.cp1.rotate(deg, rotationOrigin)
+      const cp2 = op.cp2.rotate(deg, rotationOrigin)
+      const to = op.to.rotate(deg, rotationOrigin)
+      rotatedPath.curve(cp1, cp2, to)
+    } else if (op.type === 'close') {
+      rotatedPath.close()
+    }
+  }
+  if (cloneAttributes) rotatedPath.attributes = this.attributes.clone()
+
+  return rotatedPath
 }
 
 /**
@@ -834,7 +875,7 @@ Path.prototype.smurve_ = function (to) {
 }
 
 /**
- * Splits path on point, and retuns both halves as Path instances
+ * Splits path on point, and returns both halves as Path instances
  *
  * @param {Point} point - The Point to split this Path on
  * @return {Array} halves - An array holding the two Path instances that make the split halves
@@ -866,7 +907,13 @@ Path.prototype.split = function (point) {
         break
       }
     } else if (path.ops[1].type === 'curve') {
-      let t = pointOnCurve(path.ops[0].to, path.ops[1].cp1, path.ops[1].cp2, path.ops[1].to, point)
+      let t = curveParameterFromPoint(
+        path.ops[0].to,
+        path.ops[1].cp1,
+        path.ops[1].cp2,
+        path.ops[1].to,
+        point
+      )
       if (t !== false) {
         let curve = new Bezier(
           { x: path.ops[0].to.x, y: path.ops[0].to.y },
@@ -910,6 +957,51 @@ Path.prototype.split = function (point) {
   if (secondHalf.length > 0) secondHalf = __joinPaths(secondHalf)
 
   return [firstHalf, secondHalf]
+}
+
+/**
+ * Determines the angle (tangent) of this path at the given point. If the given point is a sharp corner of this path,
+ * this method returns the angle directly before the point.
+ *
+ * @param {Point} point - The Point to determine the angle of relative to this Path
+ * @return {number|false} the angle of degrees at that point or false if the given Point doesn't lie on this Path
+ */
+Path.prototype.angleAt = function (point) {
+  if (!(point instanceof Point))
+    this.log.error('Called `Path.angleAt(point)` but `point` is not a `Point` object')
+  let divided = this.divide()
+  for (let pi = 0; pi < divided.length; pi++) {
+    let path = divided[pi]
+    if (path.ops[1].type === 'line') {
+      if (pointOnLine(path.ops[0].to, path.ops[1].to, point)) {
+        return path.ops[0].to.angle(path.ops[1].to)
+      }
+    } else if (path.ops[1].type === 'curve') {
+      let t = curveParameterFromPoint(
+        path.ops[0].to,
+        path.ops[1].cp1,
+        path.ops[1].cp2,
+        path.ops[1].to,
+        point
+      )
+      if (t !== false) {
+        const curve = new Bezier(
+          { x: path.ops[0].to.x, y: path.ops[0].to.y },
+          { x: path.ops[1].cp1.x, y: path.ops[1].cp1.y },
+          { x: path.ops[1].cp2.x, y: path.ops[1].cp2.y },
+          { x: path.ops[1].to.x, y: path.ops[1].to.y }
+        )
+
+        let normal = curve.normal(t)
+
+        // atan2's first parameter is y, but we're swapping them because
+        // we're interested in the tangent angle, not normal
+        return (Math.atan2(normal.x, normal.y) / Math.PI) * 180
+      }
+    }
+  }
+
+  return false
 }
 
 /**
@@ -977,7 +1069,13 @@ Path.prototype.trim = function () {
               { x: ops[1].cp2.x, y: ops[1].cp2.y },
               { x: ops[1].to.x, y: ops[1].to.y }
             )
-            let t = pointOnCurve(ops[0].to, ops[1].cp1, ops[1].cp2, ops[1].to, intersection)
+            let t = curveParameterFromPoint(
+              ops[0].to,
+              ops[1].cp1,
+              ops[1].cp2,
+              ops[1].to,
+              intersection
+            )
             let split = curve.split(t)
             let side
             if (first) side = split.left
@@ -1355,7 +1453,7 @@ function __offsetLine(from, to, distance, log = false) {
  * @param {float} distance - The distance to offset by
  * @return {Path} offsetted - The offsetted Path instance
  */
-function __pathOffset(path, distance) {
+function __pathOffset(path, distance, log) {
   let offset = []
   let current
   let start = false
@@ -1392,7 +1490,24 @@ function __pathOffset(path, distance) {
     if (!start) start = current
   }
 
-  return closed ? __joinPaths(offset).close() : __joinPaths(offset)
+  let result
+
+  if (offset.length !== 0) {
+    result = __joinPaths(offset)
+  } else {
+    // degenerate case: Original path was likely short, so all the "if (segment)" checks returned false
+    // retry treating the path as a simple straight line from start to end
+    // note: do not call __joinPaths in this branch as this could result in "over-optimizing" this short path
+    let segment = __offsetLine(start, current, distance, path.log)
+    if (segment) {
+      result = segment
+    } else {
+      result = new Path().move(start).line(current)
+      log.warn(`Could not properly calculate offset path, the given path is likely too short.`)
+    }
+  }
+
+  return closed ? result.close() : result
 }
 
 /**

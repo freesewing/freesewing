@@ -43,3 +43,5 @@ Depending on the choice you made, you will need to edit files in a different fol
 - Edit files in `design/tutorial` if you are using the **Tutorial** template
 
 You can choose either, or even switch back and forth between both.
+
+To follow along step-by-step with the tutorial, go to the `design/from-scratch` folder.

@@ -56,6 +56,7 @@ clonePattern: Шаблон клонування
 updatePattern: Шаблон оновлення
 reload: Перезавантажити обліковий запис
 export: Експортуйте Ваші дані
+import: Import data
 exportMsg: Натисніть нижче, щоб експортувати ваші персональні дані
 exportNote: Загальний регламент ЄС про захист даних (GDPR) гарантує вам так зване право на перенесення даних - право на отримання та повторне використання ваших персональних даних для власних цілей або в різних сервісах.
 exportDownload: "Ваші дані були експортовані і доступні для завантаження за наступним посиланням:"
@@ -122,6 +123,7 @@ metricUnitsd: Виберіть це, якщо ви віддаєте перева
 imperialUnits: Імперські одиниці (дюйм)
 imperialUnitsd: Виберіть цей параметр, якщо ви віддаєте перевагу дюймам, а не сантиметрам.
 unitsTitle: Яким одиницям ви віддаєте перевагу?
+displayUnits: Display units
 #username
 usernameTitle: Яке ім'я користувача ви б хотіли?
 usernameAvailable: Ім'я користувача доступне
@@ -186,6 +188,8 @@ customBookmark: Користувацькі закладки
 yourBookmarks: Ваші закладки
 bookmarkThisThing: Додайте це в закладки { thing }
 page: Сторінка
+doc: Документація
+pattern: Викрійка
 #sets
 set: Набір для вимірювань
 name: Назва
@@ -246,6 +250,8 @@ csetNameMsg: Кожна кураторська добірка має назву.
 missing: Missing
 andMore: and more
 unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
+makePublic: Make public
+makePrivate: Make private
 patternNew: Створіть новий шаблон
 patternNewInfo: Виберіть дизайн, додайте свої мірки, і ми створимо для вас індивідуальну викрійку.
 designNew: Створіть новий дизайн
@@ -299,3 +305,15 @@ ownPublicPattern: Це публічний перегляд одного з ва�
 ownPrivatePattern: Це приватний перегляд вашого шаблону. Публічний перегляд працюватиме для вас, навіть якщо шаблон є приватним. Для інших він працюватиме лише тоді, коли шаблон буде загальнодоступним.
 privateView: Приватний перегляд
 publicView: Публічний перегляд
+importHere: This page allows you to import data into your FreeSewing account.
+importSupported: Currently, we support importing the following types of data
+importSets: Import Measurements Sets
+importSet: Import Measurements Set
+cloneSet: Clone Measurements Set
+measieFile: Measurements file
+dragAndDropFileHere: Drag and drop your file here
+importSetTip1: To import a measurement set, you should have a JSON or YAML file that has the following structure
+importSetTip2: Your file can either contain a single measurements set, or an array of multiple measurements sets.
+importing: Importing
+imported: Imported
+importFailed: Import failed

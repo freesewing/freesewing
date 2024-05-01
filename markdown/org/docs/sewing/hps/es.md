@@ -1,5 +1,6 @@
 ---
 title: Hombro de punto alto (HPS)
+jargon: true
 ---
 
 El hombro de _punto alto_ o _HPS_ se utiliza como base para varias medidas verticales.

@@ -56,6 +56,7 @@ clonePattern: Kloonpatroon
 updatePattern: Patroon bijwerken
 reload: Account herladen
 export: Exporteer je gegevens
+import: Import data
 exportMsg: Klik hieronder om je persoonlijke gegevens te exporteren
 exportNote: De General Data Protection Regulation (GDPR) van de EU waarborgt je zogenaamde recht op dataportabiliteit - het recht om je persoonlijke gegevens te verkrijgen en te hergebruiken voor je eigen doeleinden of voor verschillende diensten.
 exportDownload: "Je gegevens zijn geëxporteerd en kunnen worden gedownload op de volgende locatie:"
@@ -122,6 +123,7 @@ metricUnitsd: Kies deze optie als je de voorkeur geeft aan centimeters over duim
 imperialUnits: Imperiale (Engelse) eenheden (duim)
 imperialUnitsd: Kies deze optie als je de voorkeur geeft aan duimen boven centimeters.
 unitsTitle: Welke eenheden hebben jouw voorkeur?
+displayUnits: Display units
 #username
 usernameTitle: Welke gebruikersnaam wil je?
 usernameAvailable: Gebruikersnaam is beschikbaar
@@ -186,6 +188,8 @@ customBookmark: Aangepaste bladwijzers
 yourBookmarks: Je bladwijzers
 bookmarkThisThing: Bookmark deze { thing }
 page: Pagina
+doc: Documentatie
+pattern: Patroon
 #sets
 set: Meetset
 name: Naam
@@ -246,6 +250,8 @@ csetNameMsg: Elke gecureerde set heeft een naam. Je kunt je eigen naam of een ps
 missing: Missing
 andMore: and more
 unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
+makePublic: Make public
+makePrivate: Make private
 patternNew: Een nieuw patroon genereren
 patternNewInfo: Kies een ontwerp, voeg je maatset toe en wij maken een naaipatroon op maat voor je.
 designNew: Een nieuw ontwerp creëren
@@ -299,3 +305,15 @@ ownPublicPattern: Dit is de openbare weergave van een van je eigen patronen. Ga 
 ownPrivatePattern: Dit is de privéweergave van je patroon. De openbare weergave werkt ook voor jou als het patroon privé is. Het werkt alleen voor anderen als het patroon openbaar is.
 privateView: Privé bekijken
 publicView: Openbare weergave
+importHere: This page allows you to import data into your FreeSewing account.
+importSupported: Currently, we support importing the following types of data
+importSets: Import Measurements Sets
+importSet: Import Measurements Set
+cloneSet: Clone Measurements Set
+measieFile: Measurements file
+dragAndDropFileHere: Drag and drop your file here
+importSetTip1: To import a measurement set, you should have a JSON or YAML file that has the following structure
+importSetTip2: Your file can either contain a single measurements set, or an array of multiple measurements sets.
+importing: Importing
+imported: Imported
+importFailed: Import failed

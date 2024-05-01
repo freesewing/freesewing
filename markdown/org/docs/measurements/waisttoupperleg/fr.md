@@ -2,5 +2,5 @@
 title: Hauteur taille cuisse
 ---
 
-La **hauteur taille cuisse** est mesurée de votre tour à la taille jusqu'au sommet de votre jambe. Elle se mesure sur le côté du corps.
+**De la taille a la cuisse** est mesuré à partir de la taille vers la cuisse, à la hauteur de la mesure de la circonférence de la cuisse. Elle se mesure sur le côté du corps.
 <MeasieImage />

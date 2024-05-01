@@ -23,6 +23,18 @@
       "t": "Bust-aligned buttons",
       "d": "Optional button spacing strategies to ensure a button at the bustline"
     },
+    "bustAlignedButtons.even": {
+      "t": "Even spacing",
+      "d": "Button spacing is calculated for buttons above the bustline, and this spacing is used for all buttons."
+    },
+    "bustAlignedButtons.split": {
+      "t": "Split spacing",
+      "d": "Different button spacings are calculated and used for buttons above and below the bustline."
+    },
+    "bustAlignedButtons.disabled": {
+      "t": "Disabled",
+      "d": "Different button spacings are calculated and used for buttons above and below the bustline."
+    },
     "bustDartAngle": {
       "t": "Bust dart angle",
       "d": "Controls the angle by which the (side) bust dart slopes downward"
@@ -38,6 +50,14 @@
     "frontDarts": {
       "t": "Front darts",
       "d": "Whether to include front darts or not"
+    },
+    "frontDartsNo": {
+      "t": "No front darts",
+      "d": "Do not include front darts"
+    },
+    "frontDartsYes": {
+      "t": "With front darts",
+      "d": "Do include front darts"
     },
     "frontDartLength": {
       "t": "Front dart length",

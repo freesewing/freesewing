@@ -12,7 +12,7 @@ import {
 
 const PctOptionInput = (props) => {
   const { config, settings, changed } = props
-  const currentOrDefault = changed ? props.current : config.dflt / 100
+  const currentOrDefault = changed ? props.current : config.dflt
 
   return (
     <PctInput {...props}>
