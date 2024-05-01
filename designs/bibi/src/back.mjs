@@ -83,7 +83,8 @@ export const back = {
     },
     sleeves: { bool: true, menu: 'style.sleeves' },
 
-    backNeckCutout: { pct: 10, min: 6, max: 30, menu: 'style' },
+    backNeckCutout: { pct: 15, min: 6, max: 110, menu: 'style' },
+    backNeckBend: { pct: 50, min: 0, max: 70, menu: 'style' },
   },
   draft: bibiBack,
 }
@@ -112,33 +113,21 @@ function bibiBack({
   points.armholePitch = points.backArmholePitch
   points.armholePitchCp2 = points.backArmholePitchCp2
 
-  // clean up some unnecessary points
+  // clean up some unnecessary/confusing points
   delete points.frontArmholePitchCp1
   delete points.frontArmholePitch
   delete points.frontArmholePitchCp2
   delete points.backArmholePitchCp1
   delete points.backArmholePitch
   delete points.backArmholePitchCp2
+  delete points.cfNeck
+  delete points.cfNeckCp1
 
   constructBackPoints(points, Point, measurements, options)
 
   adjustSidePoints(points, options)
 
   correctArmHole(points, paths, Path, options, utils)
-  //
-  // points.cfNeck = new Point(0, options.necklineDepth * measurements.hpsToWaistFront)
-  // points.cfNeckCp1 = points.cfNeck.shift(0, points.neck.x * options.necklineBend * 2)
-  // points.neck = points.hps.shiftFractionTowards(
-  //   points.shoulder,
-  //   options.necklineWidth * (1 - options.strapWidth)
-  // )
-  // points.neckCp2 = points.neck
-  //   .shiftTowards(points.shoulder, points.neck.dy(points.cfNeck) * (0.2 + options.necklineBend))
-  //   .rotate(-90, points.neck)
-  //
-  // paths.frontNeck = new Path()
-  //   .move(points.neck)
-  //   .curve(points.neckCp2, points.cfNeckCp1, points.cfNeck)
 
   points.cbHem = new Point(0, points.cbWaist.y + measurements.waistToHips * options.lengthBonus)
 
@@ -154,22 +143,16 @@ function bibiBack({
 
   points.cbNeck = new Point(
     0,
-    points.neck.y + options.backNeckCutout * points.neck.dy(points.armhole)
+    points.neck.y + options.backNeckCutout * points.neck.dy(points.cbChest)
   )
-
-  // points.cbNeckCp1 = points.cfNeck.shift(0, points.neck.x * options.necklineBend * 2)
-  // points.neckCp2 = points.neck
-  //   .shiftTowards(points.shoulder, points.neck.dy(points.cfNeck) * (0.2 + options.necklineBend))
-  //   .rotate(-90, points.neck)
-
-  points.neckCp2 = points.neck.shiftTowards(points.shoulder, 10).rotate(-90, points.neck)
-  points.neckCp2 = utils.beamIntersectsY(points.neck, points.neckCp2, points.cbNeck.y)
-
-  points.neckCp1 = new Point(points.neck.x / 3, points.cbNeck.y)
+  points.cbNeckCp1 = points.cbNeck.shift(0, points.hps.x * options.backNeckBend * 2)
+  points.neckCp2 = points.neck
+    .shiftTowards(points.shoulder, points.neck.dy(points.cbNeck) * (0.2 + options.backNeckBend))
+    .rotate(-90, points.neck)
 
   paths.backNeck = new Path()
     .move(points.neck)
-    .curve(points.neckCp2, points.neckCp1, points.cbNeck)
+    .curve(points.neckCp2, points.cbNeckCp1, points.cbNeck)
     .addClass('fabric')
   createArmHoles(options, store, points, paths, Path, snippets, Snippet, strapWidth, 'bnotch')
 
@@ -204,7 +187,7 @@ function bibiBack({
   }
 
   macro('cutonfold', {
-    from: points.cfNeck,
+    from: points.cbNeck,
     to: points.cbHem,
     grainline: true,
   })

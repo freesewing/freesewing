@@ -54,12 +54,20 @@
       "d": "Controls the length of your sleeves"
     },
     "necklineBend": {
-      "t": "Neckline curvature",
-      "d": "Controls the curvature of the neckline."
+      "t": "Front Neckline curvature",
+      "d": "Controls the curvature of the front neckline."
+    },
+    "backNeckBend": {
+      "t": "Back Neckline curvature",
+      "d": "Controls the curvature of the back neckline."
     },
     "necklineDepth": {
-      "t": "Neckline depth",
-      "d": "Controls how deep the neck opening plunges down."
+      "t": "Front Neckline depth",
+      "d": "Controls how deep the neck opening plunges down at the front."
+    },
+    "backNeckCutout": {
+      "t": "Back Neckline depth",
+      "d": "Controls how deep the neck opening plunges down on the back."
     },
     "necklineWidth": {
       "t": "Neckline width",

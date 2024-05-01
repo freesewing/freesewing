@@ -1,8 +1,8 @@
 ---
-title: "Neckline curvature"
+title: "Front Neckline curvature"
 ---
 
-Controls the curvature of the neck opening.
+Controls the curvature of the neck opening on the front.
 
 
 

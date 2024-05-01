@@ -1,9 +1,8 @@
 ---
-title: "Back neck cutout"
+title: "Back Neckline depth"
 ---
 
-Controls how deep the neck opening is cut out in the back of the garment.
-In other words, increasing this will shift the neck opening to the back.
+Controls the depth of the neck opening at the back. A value of 100% puts the opening on the bust line.
 
 
 

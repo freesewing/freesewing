@@ -37,8 +37,7 @@ export const front = {
       menu: (settings, mergedOptions) => (mergedOptions.draftForHighBust ? 'fit' : false),
       order: 'EAA',
     },
-
-    necklineDepth: { pct: 25, min: 20, max: 60, menu: 'style' },
+    necklineDepth: { pct: 25, min: 20, max: 110, menu: 'style' },
     necklineWidth: { pct: 50, min: 10, max: 90, menu: 'style' },
     necklineBend: { pct: 50, min: 0, max: 70, menu: 'style' },
   },
@@ -69,7 +68,7 @@ function bibiFront({
   points.armholePitch = points.frontArmholePitch
   points.armholePitchCp2 = points.frontArmholePitchCp2
 
-  // clean up some unnecessary points
+  // clean up some unnecessary/confusing points
   delete points.frontArmholePitchCp1
   delete points.frontArmholePitch
   delete points.frontArmholePitchCp2
@@ -77,6 +76,7 @@ function bibiFront({
   delete points.backArmholePitch
   delete points.backArmholePitchCp2
   delete points.cbHem
+  delete points.cbNeck
 
   constructFrontPoints(points, Point, measurements, options)
 
@@ -112,13 +112,17 @@ function bibiFront({
 
   correctArmHole(points, paths, Path, options, utils)
 
-  points.cfNeck = new Point(0, options.necklineDepth * measurements.hpsToWaistFront)
-  points.cfNeckCp1 = points.cfNeck.shift(0, points.neck.x * options.necklineBend * 2)
   let strapWidth = options.sleeves ? 0 : options.strapWidth
   points.neck = points.hps.shiftFractionTowards(
     points.shoulder,
     options.necklineWidth * (1 - strapWidth)
   )
+
+  points.cfNeck = new Point(
+    0,
+    points.neck.y + options.necklineDepth * points.neck.dy(points.cfBust)
+  )
+  points.cfNeckCp1 = points.cfNeck.shift(0, points.hps.x * options.necklineBend * 2)
   points.neckCp2 = points.neck
     .shiftTowards(points.shoulder, points.neck.dy(points.cfNeck) * (0.2 + options.necklineBend))
     .rotate(-90, points.neck)
@@ -326,9 +330,9 @@ function bibiFront({
       to: points.endDart,
       d: sa + 15,
     })
-
-    snippets.bustPoint = new Snippet('notch', points.bust)
   }
+
+  snippets.bustPoint = new Snippet('notch', points.bust)
 
   plotSideLineMeasurements(points, paths.sideSeamWithDart, utils, macro)
 
