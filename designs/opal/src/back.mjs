@@ -75,33 +75,33 @@ function draftBack({
   points.bibHexagonBottom = new Point(
     0,
     -measurements.hpsToWaistBack *
-      (options.backBibHexagonVerticalPosition - (1 / 2) * options.backBibHexagonLength)
+      (options.backBibHexagonVerticalPosition - (1 / 2) * options.backBibHexagonHeight)
   )
   points.bibHexagonBottom.x =
     points.cfWaist.x + (1 / 2) * points.bibHexagonBottom.y * seatWaistInverseSlope
   points.bibHexagonCenter = points.bibHexagonBottom.translate(
     0,
-    +measurements.hpsToWaistBack * ((-1 / 2) * options.backBibHexagonLength)
+    +measurements.hpsToWaistBack * ((-1 / 2) * options.backBibHexagonHeight)
   )
   points.bibHexagonLowerInside = points.bibHexagonCenter.translate(
     (measurements.waist / 4) * options.backBibHexagonWidth,
-    measurements.hpsToWaistBack * ((1 / 2) * options.backBibHexagonSideLength)
+    measurements.hpsToWaistBack * ((1 / 2) * options.backBibHexagonSideHeight)
   )
   points.bibHexagonUpperInside = points.bibHexagonCenter.translate(
     (measurements.waist / 4) * options.backBibHexagonWidth,
-    measurements.hpsToWaistBack * ((-1 / 2) * options.backBibHexagonSideLength)
+    measurements.hpsToWaistBack * ((-1 / 2) * options.backBibHexagonSideHeight)
   )
   points.bibHexagonTop = points.bibHexagonCenter.translate(
     0,
-    +measurements.hpsToWaistBack * ((-1 / 2) * options.backBibHexagonLength)
+    +measurements.hpsToWaistBack * ((-1 / 2) * options.backBibHexagonHeight)
   )
   points.bibHexagonLowerOutside = points.bibHexagonCenter.translate(
     (-measurements.waist / 4) * options.backBibHexagonWidth,
-    measurements.hpsToWaistBack * ((1 / 2) * options.backBibHexagonSideLength)
+    measurements.hpsToWaistBack * ((1 / 2) * options.backBibHexagonSideHeight)
   )
   points.bibHexagonUpperOutside = points.bibHexagonCenter.translate(
     (-measurements.waist / 4) * options.backBibHexagonWidth,
-    measurements.hpsToWaistBack * ((-1 / 2) * options.backBibHexagonSideLength)
+    measurements.hpsToWaistBack * ((-1 / 2) * options.backBibHexagonSideHeight)
   )
 
   // Next come the straps.
@@ -303,8 +303,7 @@ function draftBack({
     .line(points.bibHexagonLowerOutside)
     .line(points.bibHexagonBottom)
     .addClass('fabric')
-  points.inseamHemAllowance = points.inseamHem.translate(-sa, absoluteOptions.legHemAllowance)
-  points.outseamHemAllowance = points.outseamHem.translate(sa, absoluteOptions.legHemAllowance)
+  console.log(absoluteOptions.legHemAllowance)
 
   if (options.pocketBack) {
     paths.pocketBackHem = new Path()
@@ -366,6 +365,8 @@ function draftBack({
   }
 
   if (sa) {
+    points.inseamHemAllowance = points.inseamHem.translate(-sa, absoluteOptions.legHemAllowance)
+    points.outseamHemAllowance = points.outseamHem.translate(sa, absoluteOptions.legHemAllowance)
     paths.sa = paths.outseam
       .offset(sa)
       .join(paths.hem.offset(absoluteOptions.hemAllowance).join(paths.centerSeam.offset(sa)))
@@ -649,12 +650,12 @@ export const back = {
     backBibBaseCurve: { pct: 40, min: 0, max: 100, menu: 'style' },
     // How high up the hexagon of the back bib is located. 0% refers to the waist, while 100% refers to the HPS.
     backBibHexagonVerticalPosition: { pct: 50, min: 10, max: 90, menu: 'style' },
-    // How long the hexagon where the two sides of the back bib cross over is, as a percent of hpsToWaistBack.
-    backBibHexagonLength: { pct: 40, min: 10, max: 60, menu: 'style' },
+    // How tall the hexagon where the two sides of the back bib cross over is, as a percent of hpsToWaistBack.
+    backBibHexagonHeight: { pct: 40, min: 10, max: 60, menu: 'style' },
     // How wide the hexagon of the back bib is, as a percent of the waist measurement.
     backBibHexagonWidth: { pct: 50, min: 20, max: 80, menu: 'style' },
     // How long to make the two vertical sides of the back bib hexagon.
-    backBibHexagonSideLength: { pct: 12, min: 5, max: 40, menu: 'style' },
+    backBibHexagonSideHeight: { pct: 12, min: 5, max: 40, menu: 'style' },
     // How long to make the straps, as a percent of the distance from the front waist, over the HPS, and down to the back waist. Recommended 100-110% for fixed straps, 130-140% for adjustable straps.
     strapLength: { pct: 160, min: 100, max: 200, menu: 'style' },
     strapWidth: {
@@ -668,34 +669,100 @@ export const back = {
     },
     // How the straps are positioned with respect to the hexagon. 0 places the outer edge of each strap lined up with the outer edge of the hexagon. Negative values place the outer edge farther out. 0 is generally the most fabric efficient, while negative values may fit better.
     strapPosition: { pct: 0, min: -10, max: 0, menu: 'style' },
-    // How long the tapered portion of the straps are. Larger values give a longer, more gradual taper from the back bib's width down to the strap's width.
+    // How long the tapered portions of the straps are. Larger values give a longer, more gradual taper from the back bib's width down to the strap's width.
     strapTaperPosition: { pct: 50, min: 0, max: 100, menu: 'style' },
     // Controls the shape of the curve as the back bib tapers into the straps.
     strapTaperCurve: { pct: 80, min: 0, max: 100, menu: 'style' },
     // Back pocket percentages are as a percentage of the back waist arc, including any ease.
     pocketBack: { bool: true, menu: 'style' },
-    pocketBackPositionX: { pct: 60, min: 20, max: 100, menu: 'style' },
-    pocketBackPositionY: { pct: 100, min: 0, max: 160, menu: 'style' },
-    pocketBackWidth: { pct: 60, min: 10, max: 100, menu: 'style' },
-    pocketBackHeight: { pct: 80, min: 10, max: 120, menu: 'style' },
-    pocketBackCornerWidth: { pct: 50, min: 0, max: 100, menu: 'style' },
-    pocketBackCornerHeight: { pct: 10, min: 0, max: 100, menu: 'style' },
+    pocketBackPositionX: {
+      pct: 60,
+      min: 20,
+      max: 100,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketBack ? 'style' : false),
+    },
+
+    pocketBackPositionY: {
+      pct: 100,
+      min: 0,
+      max: 160,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketBack ? 'style' : false),
+    },
+    pocketBackWidth: {
+      pct: 60,
+      min: 10,
+      max: 100,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketBack ? 'style' : false),
+    },
+
+    pocketBackHeight: {
+      pct: 80,
+      min: 10,
+      max: 120,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketBack ? 'style' : false),
+    },
+    pocketBackCornerWidth: {
+      pct: 50,
+      min: 0,
+      max: 100,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketBack ? 'style' : false),
+    },
+    pocketBackCornerHeight: {
+      pct: 10,
+      min: 0,
+      max: 100,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketBack ? 'style' : false),
+    },
     // Carpenter pocket percentages are as a percentage of the back waist arc, including any ease.
-    pocketCarpenter: { bool: 'true', menu: 'style' },
-    pocketCarpenterHeight: { pct: 100, min: 30, max: 150, menu: 'style' },
+    pocketCarpenter: { bool: true, menu: 'style' },
+    pocketCarpenterHeight: {
+      pct: 100,
+      min: 30,
+      max: 150,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketCarpenter ? 'style' : false),
+    },
     // How far into the back pocket the carpenter pocket goes. Affects style. Larger values will be more secure, but will add bulk.
-    pocketCarpenterAnchorX: { pct: 20, min: 0, max: 80, menu: 'style' },
-    pocketCarpenterAnchorY: { pct: 10, min: 0, max: 50, menu: 'style' },
-    pocketCarpenterAnchorWidth: { pct: 15, min: 0, max: 80, menu: 'style' },
-    pocketCarpenterOpeningHeight: { pct: 60, min: 40, max: 100, menu: 'style' },
-    pocketCarpenterExtra: { bool: true, menu: 'style' },
-    pocketCarpenterExtraHeight: { pct: 50, min: 10, max: 80, menu: 'style' },
+    pocketCarpenterAnchorX: {
+      pct: 20,
+      min: 0,
+      max: 80,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketCarpenter ? 'style' : false),
+    },
+    pocketCarpenterAnchorY: {
+      pct: 10,
+      min: 0,
+      max: 50,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketCarpenter ? 'style' : false),
+    },
+    pocketCarpenterAnchorWidth: {
+      pct: 15,
+      min: 0,
+      max: 80,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketCarpenter ? 'style' : false),
+    },
+    pocketCarpenterOpeningHeight: {
+      pct: 60,
+      min: 40,
+      max: 100,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketCarpenter ? 'style' : false),
+    },
+    pocketCarpenterExtra: {
+      bool: true,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketCarpenter ? 'style' : false),
+    },
+    pocketCarpenterExtraHeight: {
+      pct: 50,
+      min: 10,
+      max: 80,
+      menu: (settings, mergedOptions) =>
+        mergedOptions.pocketCarpenter && mergedOptions.pocketCarpenterExtra ? 'style' : false,
+    },
     hammerLoop: { bool: true, menu: 'style' },
     hammerLoopWidth: { pct: 10, min: 0, max: 20, menu: 'style' },
     hammerLoopCornerX: { pct: 0, min: -50, max: 50, menu: 'style' },
     hammerLoopCornerY: { pct: 20, min: 0, max: 100, menu: 'style' },
-    hammerLoopOutseam: { pct: 20, min: 0, max: 80, menu: 'style' },
     hammerLoopCurve: { pct: 100, min: 0, max: 100, menu: 'style' },
+    hammerLoopOutseam: { pct: 20, min: 0, max: 80, menu: 'style' },
     hammerLoopFirstFold: { pct: 90, min: 0, max: 100, menu: 'style' },
     hammerLoopSecondFold: { pct: 60, min: 0, max: 200, menu: 'style' },
   },

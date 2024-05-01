@@ -331,7 +331,11 @@ export const bib = {
     // Width of the top of the bib, as a percentage of the waistFront measurement.
     bibWidth: { pct: 50, min: 20, max: 100, menu: 'style' },
     // Set to true to the bib on the fold, or false to draft the full piece.
-    bibPocketOnFold: { bool: false, menu: 'construction' },
+    bibPocketOnFold: {
+      bool: false,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketBib ? 'construction' : false),
+    },
+
     // How wide to make the reinforced placket at the top of the bib.
     bibPlacketWidth: {
       pct: 15,
@@ -343,20 +347,54 @@ export const bib = {
     },
     bibPlacketLayers: { count: 3, min: 0, max: 8, menu: 'construction' },
     pocketBib: { bool: true, menu: 'style' },
-    pocketBibVerticalPosition: { pct: 50, min: 20, max: 80, menu: 'style' },
+    pocketBibVerticalPosition: {
+      pct: 50,
+      min: 20,
+      max: 80,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketBib ? 'style' : false),
+    },
     pocketBibStyle: {
       dflt: 'pentagon',
       list: ['pentagon', 'hexagon', 'curvedBottom', 'rectangle'],
-      menu: 'style',
+      menu: (settings, mergedOptions) => (mergedOptions.pocketBib ? 'style' : false),
     },
-    pocketBibWidth: { pct: 40, min: 20, max: 80, menu: 'style' },
-    pocketBibHeight: { pct: 60, min: 20, max: 80, menu: 'style' },
+    pocketBibWidth: {
+      pct: 40,
+      min: 20,
+      max: 80,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketBib ? 'style' : false),
+    },
+
+    pocketBibHeight: {
+      pct: 60,
+      min: 20,
+      max: 80,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketBib ? 'style' : false),
+    },
+
     // How wide the bottom feature is. For pentagons, this is the width at the widest part as a percent of the bib width, for hexagons and curved bottoms, this is the width of the straight section at the bottom as a percent of the pocket width, and this is ignored for rectangles.
-    pocketBibFeatureWidth: { pct: 50, min: 0, max: 80, menu: 'style' },
+    pocketBibFeatureWidth: {
+      pct: 50,
+      min: 0,
+      max: 80,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketBib ? 'style' : false),
+    },
+
     // How far up the bottom feature extends. This is ignored for rectangles.
-    pocketBibFeatureHeight: { pct: 5, min: 0, max: 20, menu: 'style' },
+    pocketBibFeatureHeight: {
+      pct: 5,
+      min: 0,
+      max: 20,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketBib ? 'style' : false),
+    },
+
     // Used for curvedBottom style only.
-    pocketBibFeatureCurve: { pct: 50, min: 0, max: 100, menu: 'style' },
+    pocketBibFeatureCurve: {
+      pct: 50,
+      min: 0,
+      max: 100,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketBib ? 'style' : false),
+    },
   },
   after: front,
 }

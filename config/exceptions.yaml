@@ -77,6 +77,8 @@ packageJson:
     author: Thrunic (https://github.com/Thrunic)
   onyx:
     author: Thrunic (https://github.com/Thrunic)
+  opal:
+    author: Thrunic (https://github.com/Thrunic)
   tiberius: *starf
   waralee:
     author: woutervdub (https://github.com/woutervdub)

@@ -175,10 +175,10 @@ function draftFront({
         .addClass('fabric'))
 
   paths.hem = new Path().move(points.inseamHem).line(points.outseamHem).addClass('fabric')
-  points.inseamHemAllowance = points.inseamHem.translate(-sa, absoluteOptions.legHemAllowance)
-  points.outseamHemAllowance = points.outseamHem.translate(sa, absoluteOptions.legHemAllowance)
 
   if (sa) {
+    points.inseamHemAllowance = points.inseamHem.translate(-sa, absoluteOptions.legHemAllowance)
+    points.outseamHemAllowance = points.outseamHem.translate(sa, absoluteOptions.legHemAllowance)
     paths.sa = paths.seam
       .offset(sa)
       .line(points.inseamHemAllowance)
@@ -371,15 +371,14 @@ export const front = {
     waistEase: { pct: 15, min: -30, max: 100, menu: 'fit' },
     // Moves fabric towards the back piece for positive values, and towards the front piece for negative values.
     waistBalance: { pct: 0, min: -15, max: 15, menu: 'fit' },
-    // Moves fabric towards the back piece for positive values, and towards the front piece for negative values.
     seatEase: { pct: 10, min: -30, max: 100, menu: 'fit' },
-    // Ratio between the circumference around both legs individually (2 * upperLeg) vs. around both legs together (like 'seat', but measured at the fork). Larger for deeper and narrower thighs.
     seatBalance: { pct: 0, min: -15, max: 15, menu: 'fit' },
+    // Ratio between the circumference around both legs individually (2 * upperLeg) vs. around both legs together (like 'seat', but measured at the fork). Larger for deeper and narrower thighs.
     thighShape: { pct: 122, min: 116, max: 135, menu: 'advanced' },
     // How much ease to have where the leg ends, wherever that may be.
     legHemEase: { pct: 20, min: -30, max: 200, menu: 'fit' },
     // How long the legs on the garment are, measured from the waist to the floor: 40-70% for shorts, ~93% for ankle-length legs, 100% for legs that touch the floor.
-    legLength: { pct: 20, min: 10, max: 120, menu: 'style' },
+    legLength: { pct: 30, min: 10, max: 120, menu: 'style' },
     crossSeamCurveStart: { pct: 85, min: 60, max: 100, menu: 'advanced' },
     crossSeamCurveBend: { pct: 65, min: 45, max: 85, menu: 'advanced' },
     crossSeamCurveAngle: { deg: 12, min: 0, max: 45, menu: 'advanced' },
@@ -387,7 +386,7 @@ export const front = {
     crotchSeamCurveBend: { pct: 80, min: 45, max: 100, menu: 'advanced' },
     crotchSeamCurveAngle: { deg: 25, min: 0, max: 45, menu: 'advanced' },
     // Positive values move more of the fabric to the back piece, negative values to the front piece.
-    crotchForkBalance: { pct: 10, min: -20, max: 40, menu: 'advanced' },
+    crotchForkBalance: { pct: 10, min: -20, max: 40, menu: 'fit' },
     // Horizontal ease at the crotch fork.
     crotchEase: { pct: 10, min: -30, max: 100, menu: 'fit' },
     // Vertical ease at the crotch fork.
@@ -413,15 +412,50 @@ export const front = {
     // All slash pocket percentages are with respect to the length of the top of the front piece.
     pocketSlash: { bool: true, menu: 'style' },
     // Dimensions of the pocket opening, as a percentage of the distance from.
-    pocketSlashOpeningWidth: { pct: 30, min: 4, max: 60, menu: 'style' },
-    pocketSlashOpeningHeight: { pct: 60, min: 4, max: 100, menu: 'style' },
+    pocketSlashOpeningWidth: {
+      pct: 30,
+      min: 4,
+      max: 60,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketSlash ? 'style' : false),
+    },
+
+    pocketSlashOpeningHeight: {
+      pct: 60,
+      min: 4,
+      max: 100,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketSlash ? 'style' : false),
+    },
+
     // Shape of the pocket opening. 0 (default) is a straight diagonal line, while positive values make a curve.
-    pocketSlashOpeningCurve: { pct: 0, min: 0, max: 100, menu: 'style' },
+    pocketSlashOpeningCurve: {
+      pct: 0,
+      min: 0,
+      max: 100,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketSlash ? 'style' : false),
+    },
+
     // Dimensions of the pocket itself, as a percentage of the waistFront.
-    pocketSlashWidth: { pct: 70, min: 20, max: 100, menu: 'style' },
-    pocketSlashHeight: { pct: 90, min: 20, max: 200, menu: 'style' },
+    pocketSlashWidth: {
+      pct: 70,
+      min: 20,
+      max: 100,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketSlash ? 'style' : false),
+    },
+
+    pocketSlashHeight: {
+      pct: 90,
+      min: 20,
+      max: 200,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketSlash ? 'style' : false),
+    },
+
     // How much past the pocket entrance to extend the pocket shield.
-    pocketSlashShieldOverlap: { pct: 30, min: 0, max: 60, menu: 'style' },
+    pocketSlashShieldOverlap: {
+      pct: 30,
+      min: 0,
+      max: 60,
+      menu: (settings, mergedOptions) => (mergedOptions.pocketSlash ? 'style' : false),
+    },
   },
   draft: draftFront,
 }

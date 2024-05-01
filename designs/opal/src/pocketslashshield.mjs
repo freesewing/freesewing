@@ -22,7 +22,7 @@ function draftPocketSlashShield({
   delete paths.seam
   delete paths.sa
   delete paths.fold
-  paths.saShield.unhide()
+  if (sa) paths.saShield.unhide()
   paths.shield.setClass('fabric')
   points.shieldText.setText(null)
   delete snippets.logo
