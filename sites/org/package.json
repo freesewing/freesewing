@@ -53,7 +53,7 @@
     "react-dom": "18.3.1",
     "react-dropzone": "14.2.3",
     "react-hotkeys-hook": "4.5.0",
-    "react-i18next": "14.1.0",
+    "react-i18next": "14.1.1",
     "react-instantsearch-dom": "6.40.4",
     "react-instantsearch-hooks-web": "6.47.3",
     "react-swipeable": "7.0.1",
