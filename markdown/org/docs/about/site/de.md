@@ -37,7 +37,7 @@ Auf mobilen Geräten befindet sich die Kopfzeile am unteren Ende der Seite und a
 
 ## Registrieren oder Anmelden
 
-Du kannst dich unter [/signin](/signin/)für ein FreeSewing-Konto anmelden. We support signing in with your Google or GitHub account if that is easier for you.
+Du kannst dich unter [/signin](/signin/)für ein FreeSewing-Konto anmelden. Wir unterstützen die Registrierung mit deinem Google- oder GitHub-Account, falls das für dich einfacher ist.
 
 Wenn du bereits ein Konto hast, kannst du dich unter [/signin](/signin/)bei deinem Konto anmelden.
 

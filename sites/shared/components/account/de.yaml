@@ -1,31 +1,31 @@
-account: Account
+account: Konto
 yourAccount: Dein Konto
 newPattern: Neues Schnittmuster
-newSet: Einen neuen Satz an Maßen erstellen
+newSet: Einen neuen Satz Maße erstellen
 links: Links
 info: Info
 settings: Einstellungen
 data: Daten
-sets: Maßnahmesets
+sets: Maßsätze
 patterns: Schnittmuster
 actions: Aktionen
 created: Erstellt
 updated: Aktualisiert
 expires: Läuft ab
 role: Rolle
-yourApikeys: Your API Keys
+yourApikeys: Deine API-Schlüssel
 yourProfile: Dein Profil
 yourPatterns: Deine Schnittmuster
-yourSets: Deine Maßeinheiten
+yourSets: Deine Maßsätze
 signOut: Abmelden
 politeOhCrap: Ohje
 bio: Über mich
-email: E-Mail Adresse
-img: Bild
+email: E-Mail-Adresse
+img: Profilbild
 username: Benutzername
-compare: Metrikenvergleich
+compare: Maße vergleichen
 consent: Zustimmung & Datenschutz
-control: Benutzererfahrung
+control: Funktionsumfang
 imperial: Einheiten
 units: Maßeinheiten
 apikeys: API-Schlüssel
@@ -33,40 +33,40 @@ newsletter: Newsletter-Abonnement
 password: Passwort
 newPasswordPlaceholder: Gib dein neues Passwort hier ein
 passwordPlaceholder: Gib dein Passwort hier ein
-mfa: Zwei-Faktoren-Authentifizierung
+mfa: Zwei-Faktor-Authentifizierung
 mfaTipTitle: Bitte erwäge die Aktivierung der Zwei-Faktor-Authentifizierung
 mfaTipMsg: Wir erzwingen keine Passwortrichtlinien, aber wir empfehlen dir, die Zwei-Faktor-Authentifizierung zu aktivieren, um dein FreeSewing-Konto sicher zu halten.
-mfaEnabled: Zwei-Faktoren-Authentifizierung ist aktiviert
-mfaDisabled: Die Zwei-Faktoren-Authentifizierung ist deaktiviert
-mfaSetup: Zwei-Faktoren-Authentifizierung einrichten
-mfaAdd: Füge FreeSewing zu deiner Authenticator App hinzu, indem du den QR-Code oben scannst.
+mfaEnabled: Zwei-Faktor-Authentifizierung ist aktiviert
+mfaDisabled: Die Zwei-Faktor-Authentifizierung ist deaktiviert
+mfaSetup: Zwei-Faktor-Authentifizierung einrichten
+mfaAdd: Füge FreeSewing zu deiner Authenticator App hinzu, indem du den QR-Code scannst.
 mfaScratchCodes: MFA-Scratch-Codes
 mfaScratchCodesMsg1: Du kannst jeden dieser Scratch-Codes als einmaligen MFA-Code verwenden, wenn du keinen Zugriff auf die App hast, die den Code generiert (z. B. wenn du dein Telefon verloren hast).
-mfaScratchCodesMsg2: Du kannst jeden dieser Codes nur einmal verwenden. Schreib sie auf, denn du wirst sie nur einmal zu Gesicht bekommen.
+mfaScratchCodesMsg2: Du kannst jeden dieser Codes nur einmal verwenden. Schreib sie auf, denn sie werden nur einmal angezeigt.
 copyToClipboard: In die Zwischenablage kopieren
 confirmWithPassword: Bitte gib dein Passwort ein, um diese Aktion zu bestätigen
 confirmWithMfa: Bitte gib einen Code aus deiner Authenticator App ein, um diese Aktion zu bestätigen
 enableMfa: Aktiviere die Zwei-Faktor-Authentifizierung
-disableMfa: Zwei-Faktoren-Authentifizierung deaktivieren
+disableMfa: Zwei-Faktor-Authentifizierung deaktivieren
 language: Sprache
 developer: Entwickler
 design: Gestaltung
 patternMetadata: Muster-Metadaten
 clonePattern: Klon-Muster
 updatePattern: Muster aktualisieren
-reload: Account neu laden
-export: Exportiere deine Daten
-import: Import data
+reload: Konto neu laden
+export: Deine Daten exportieren
+import: Daten importieren
 exportMsg: Klicke unten, um deine persönlichen Daten zu exportieren
 exportNote: Die EU-Datenschutzgrundverordnung (GDPR) gewährleistet dein sogenanntes Recht auf Datenübertragbarkeit - das Recht, deine personenbezogenen Daten für deine eigenen Zwecke oder für verschiedene Dienste zu erhalten und wiederzuverwenden.
 exportDownload: "Deine Daten wurden exportiert und stehen an folgendem Ort zum Download bereit:"
 review: Überprüfe deine Einwilligungen
 restrict: Verarbeitung deiner Daten einschränken
 disable: Deaktiviere dein Konto
-remove: Entferne deinen Account
+remove: Dein Konto löschen
 proceedWithCaution: Bitte mit Vorsicht fortfahren
 restrictWarning: Es werden zwar keine Daten gelöscht, aber dein Konto wird deaktiviert. Außerdem kannst du dies nicht selbst rückgängig machen, sondern musst dich an den Support wenden, wenn du den Zugriff auf dein Konto wiederherstellen willst.
-noWayBack: Es gibt keinen Weg zurück von hier.
+noWayBack: Diese Aktion kann nicht rückgängig gemacht werden.
 mdSupport: Hier kannst du Markdown verwenden
 or: oder
 continue: Fortsetzen
@@ -78,40 +78,40 @@ delete: löschen
 nailedIt: Geschafft
 gone: Puff. Verschwunden.
 reloadMsg1: Die in deinem Browser gespeicherten Daten können manchmal nicht mit den in unserem Backend gespeicherten Daten synchronisiert werden.
-reloadMsg2: Damit kannst du deine Kontodaten aus dem Backend neu laden. Es hat denselben Effekt wie das Abmelden und erneute Anmelden
+reloadMsg2: Damit kannst du deine Kontodaten aus dem Backend neu laden. Es hat denselben Effekt wie das Abmelden und erneute Anmelden.
 #bio
 bioTitle: Erzähl den Leuten ein bisschen was über dich
 bioPreview: Bio Vorschau
 bioPlaceholder: Ich mache Kleidung und Schuhe. Ich entwerfe Nähmuster. Ich schreibe Code. Ich betreibe [FreeSewing](http://freesewing.org)
 #compare
-compareTitle: Fühlst du dich wohl, wenn Messreihen verglichen werden?
+compareTitle: Fühlst du dich wohl, wenn deine Maße mit denen Anderer verglichen werden?
 compareYes: Ja, falls es mir helfen kann
 compareYesd: |
-  Gelegentlich zeigen wir, wie deine Messungen im Vergleich zu anderen Messungen abschneiden.
-  So können wir mögliche Probleme in deinen Messungen oder Mustern erkennen.
+  Gelegentlich zeigen wir dir Vergleiche deiner Maße und Proportionen mit denen Anderer.
+  So können wir mögliche Probleme in deinen Maßen oder Mustern erkennen.
 compareNo: Nein, niemals vergleichen
 compareNod: |
-  Wir werden deine Maßangaben niemals mit anderen Maßangaben vergleichen.
-  Das schränkt unsere Möglichkeiten ein, dich vor potenziellen Problemen in deinen Messsätzen oder Mustern zu warnen.
+  Wir werden deine Maße niemals mit Maßen Anderer vergleichen.
+  Das schränkt unsere Möglichkeiten ein, dich vor potenziellen Problemen in deinen Maßsätzen oder Mustern zu warnen.
 #control
 showMore: Mehr zeigen
-control1.t: Halte es so einfach wie möglich
-control1.d: Blendet alle Funktionen außer den wichtigsten aus.
-control2.t: Halte es einfach, aber nicht zu einfach
+control1.t: So einfach wie möglich
+control1.d: Zeigt nur die wichtigsten Funktionen.
+control2.t: Einfach, aber nicht zu einfach
 control2.d: Blendet die meisten Funktionen aus.
-control3.t: Balance zwischen Einfachheit und Leistung
+control3.t: Balance zwischen Einfachheit und Detail
 control3.d: Zeigt die meisten Funktionen an, aber nicht alle.
-control4.t: Gib mir alle Macht, aber beschütze mich
-control4.d: Zeigt alle Funktionen, hält Handläufe und Sicherheitschecks ein.
+control4.t: Alle Funktionen, aber mit Überprüfungen
+control4.d: Zeigt alle Funktionen, warnt aber vor Problemen, die aus bestimmten Einstellungen entstehen können.
 control5.t: Geh mir aus dem Weg
-control5.d: Legt alle Funktionen frei, entfernt alle Handläufe und überprüft die Sicherheit.
+control5.d: Zeigt alle Funktionen und entfernt alle Warnungen.
 controlShowMore: Mehr Optionen anzeigen
-controlTitle: Welches Nutzererlebnis bevorzugst du?
+controlTitle: Möchtest du eine einfachere Bedienung oder mehr Möglichkeiten?
 #img
 imgTitle: Wie wäre es mit einem Bild?
 imgDragAndDropImageHere: Ziehe ein Bild hierher und lege es ab
-imgPasteUrlHere: Paste an image location (URL) here
-imgSelectImage: Ein Bild auswählen
+imgPasteUrlHere: kopiere die URL eines Bilds hier rein
+imgSelectImage: wähle ein Bild von deinem Computer
 #newsletter
 newsletterTitle: Würdest du gerne den FreeSewing-Newsletter erhalten?
 newsletterYes: Ja, ich möchte den Newsletter erhalten
@@ -152,16 +152,16 @@ newApikey: Erstelle einen neuen API-Schlüssel
 keyNewInfo: Erstelle einen neuen API-Schlüssel, um dich automatisch mit dem FreeSewing-Backend zu verbinden.
 keyName: Name des Schlüssels
 keyNameDesc: Ein eindeutiger Name für diesen API-Schlüssel. Nur für dich sichtbar.
-keyExpires: Schlüsselverfall
-keyExpiresDesc: "Der Schlüssel läuft am ab:"
-keyLevel: Schlüsselberechtigungsstufe
+keyExpires: Gültigkeit begrenzen
+keyExpiresDesc: "Der Schlüssel läuft ab am:"
+keyLevel: Berechtigungsstufe des Schlüssels
 keyLevel0: Nur authentifizieren
-keyLevel1: Lese den Zugang zu deinen eigenen Mustern und Messsätzen
+keyLevel1: Lesezugriff auf deine eigenen Muster und Maßsätze
 keyLevel2: Lesezugriff auf alle deine Kontodaten
-keyLevel3: Schreibzugang zu deinen eigenen Mustern und Messsätzen
+keyLevel3: Schreibzugriff auf deine eigenen Muster und Maßsätze
 keyLevel4: Schreibzugriff auf alle deine Kontodaten
-keyLevel5: Lesezugriff auf Muster und Messreihen anderer Nutzer
-keyLevel6: Schreibzugriff auf Muster und Messreihen anderer Nutzer
+keyLevel5: Lesezugriff auf Muster und Maßsätze anderer Nutzer
+keyLevel6: Schreibzugriff auf Muster und Maßsätze anderer Nutzer
 keyLevel7: Schreibzugriff auf alle Kontodaten von anderen Nutzern
 keyLevel8: Sich als anderer Benutzer ausgeben, voller Schreibzugriff auf alle Daten
 cancel: Abbrechen
@@ -170,7 +170,7 @@ keyExpired: Dieser API-Schlüssel ist abgelaufen
 deleteKeyWarning: Das Entfernen eines API-Schlüssels kann nicht rückgängig gemacht werden.
 keyDocsTitle: Die Dokumentation zur Verwendung von API-Schlüsseln findest du auf FreeSewing.dev (nur auf Englisch)
 keyDocsMsg: Dies ist eine fortgeschrittene Funktion, die sich an Entwickler und alle richtet, die direkt mit unserem Backend interagieren wollen.
-apiCalls: API-Aufrufe
+apiCalls: API-Aufruf
 #bookmarks
 newBookmark: Lesezeichen hinzufügen
 bookmark: Lesezeichen
@@ -181,8 +181,8 @@ title: Titel
 new: Neu
 designBookmark: Entwurf
 patternBookmark: Schnittmuster
-setBookmark: Maßnahmesets
-csetBookmark: Kuratierte Maßnahmesets
+setBookmark: Maßsätze
+csetBookmark: Kuratierte Maßsätze
 docBookmark: Dokumentation
 customBookmark: Benutzerdefinierte Lesezeichen
 yourBookmarks: Deine Lesezeichen
@@ -191,53 +191,53 @@ page: Seite
 doc: Dokumentation
 pattern: Schnittmuster
 #sets
-set: Maßnahmeset
+set: Satz Maße
 name: Name
-setNameDesc: Ein Name zur Identifizierung dieser Messreihe
-setNewInfo: Erstelle einen neuen Satz von Messungen, für die du dann Muster erstellen kannst.
+setNameDesc: Ein Name zur Identifizierung dieses Satzes Maße
+setNewInfo: Erstelle einen neuen Satz Maße, für die du dann Muster erstellen kannst.
 notes: Notizen
-setNotesDesc: Alle Notizen, die du zu dieser Messreihe aufbewahren möchtest
+setNotesDesc: Alle Notizen, die du zu diesem Satz Maße aufbewahren möchtest
 description: Beschreibung
-deleteSetWarning: Das Entfernen einer Messreihe kann nicht rückgängig gemacht werden.
+deleteSetWarning: Das Entfernen eines Satzes Maße kann nicht rückgängig gemacht werden.
 image: Bild
 measies: Maße
-setUnitsMsgTitle: Diese Einstellung gilt nur für diesen Messsatz
+setUnitsMsgTitle: Diese Einstellung gilt nur für diesen Satz Maße
 setUnitsMsgDesc: |
   Dies sind die Einheiten, die wir verwenden, wenn wir die Maße in diesem Set aktualisieren oder anzeigen.
   Überall sonst auf dieser Website verwenden wir die in deinem Konto eingestellten Einheiten.
 public: Öffentlich
-publicSet: Öffentliche Messungen eingestellt
-privateSet: Private Messungen eingestellt
-publicSetDesc: Andere dürfen diese Messungen nutzen, um Muster zu erstellen oder zu testen
-privateSetDesc: These measurements cannot be used by other users or visitors
+publicSet: Öffentlicher Satz Maße eingestellt
+privateSet: Privater Satz Maße eingestellt
+publicSetDesc: Andere dürfen diesen Satz Maße nutzen, um Muster zu erstellen oder zu testen
+privateSetDesc: Dieser Satz Maße kann nicht von Anderen gesehen werden
 permalink: Permalink
 editThing: '{thing} bearbeiten'
 saveThing: '{thing} speichern'
 filterByDesign: Nach Design filtern
 noFilter: Nicht filtern
 filterByDesignDocs: Wenn du einen bestimmten Entwurf im Kopf hast, kannst du auf <b>nach dem Entwurf filtern</b> und nur die Maße auflisten, die für diesen Entwurf erforderlich sind.
-setLacksMeasiesForDesign: In diesem Set fehlen die für dieses Muster erforderlichen Maße
-setHasMeasiesForDesign: Dieses Set enthält alle für dieses Muster benötigten Maße
-someSetsLacking: Some of these sets lack the measurements required to generate this pattern
-theseSetsReady: These sets have all required measurements to generate this pattern
-chooseSet: Bitte wähle einen Satz von Messungen
-patternForWhichSet: Für welchen Satz von Messungen sollten wir ein Muster erstellen?
-bookmarkedSets: Maßnahmesets, die du mit einem Lesezeichen versehen hast
-curatedSets: FreeSewing's kuratierte Maßsets
-curatedSetsAbout: Von FreeSewing kuratierte Messreihen, die du nutzen kannst, um unsere Plattform oder deine Designs zu testen.
-curateCuratedSets: Kuratiere unsere Auswahl an kuratierten Messreihen
-useThisSet: Verwende diesen Satz von Messungen
-ownSets: Deine eigenen Messgeräte
-noOwnSets: Du hast (noch) keine eigenen Messreihen
+setLacksMeasiesForDesign: In diesem Satz fehlen die für dieses Muster erforderlichen Maße.
+setHasMeasiesForDesign: Dieser Satz enthält alle für dieses Muster benötigten Maße.
+someSetsLacking: Manchen dieser Sätze fehlen Maße, die zur Erstellung dieses Musters benötigt werden.
+theseSetsReady: Diese Sätze haben alle Maße, die zur Erstellung dieses Musters benötigt werdn.
+chooseSet: Bitte wähle einen Satz Maße
+patternForWhichSet: Für welchen Satz Maße sollten wir ein Muster erstellen?
+bookmarkedSets: Maßsätze, die du mit einem Lesezeichen versehen hast
+curatedSets: FreeSewing's kuratierte Maßsätze
+curatedSetsAbout: Von FreeSewing kuratierte Maßsätze, die du nutzen kannst, um unsere Plattform oder deine Designs zu testen.
+curateCuratedSets: Kuratiere unsere Auswahl an kuratierten Maßsätzen
+useThisSet: Verwende diesen Satz Maße
+ownSets: Deine eigenen Maßsätze
+noOwnSets: Du hast (noch) keine eigenen Maßsätze
 pleaseMtm: Because our patterns are bespoke, we strongly suggest you take accurate measurements.
-noOwnSetsMsg: Du kannst deine Messungen als Messdatensatz speichern und dann beliebig viele Muster für sie erstellen.
+noOwnSetsMsg: Du kannst deinen Satz Maße speichern und dann beliebig viele Muster dafür erstellen.
 measurements: Maße
-chooseASet: Wähle eine Messreihe
+chooseASet: Wähle einen Satz Maße
 showImage: Bild anzeigen
 suggestForCuration: Für die Kuration vorschlagen
-suggestCset: Schlage eine Messreihe für die Kuration vor
+suggestCset: Schlage einen Satz Maße für die Kuration vor
 csetAllMeasies: Um sicherzustellen, dass die kuratierten Maßsets für alle Designs funktionieren, musst du einen vollständigen Satz an Maßen angeben.
-csetMissing: In deinem Messdatensatz fehlen die folgenden Messungen
+csetMissing: In deinem Satz Maße fehlen die folgenden Maße
 allMeasiesAvailable: Alle Maße sind verfügbar.
 csetHeightMsg1: Um unsere kuratierten Sets strukturiert zu organisieren und zu präsentieren, ordnen wir sie nach Höhe.
 csetImgMsg: Schließlich brauchen wir noch ein Bild. In der Dokumentation erfährst du, was ein gutes Bild für ein kuratiertes Maßset ist.
@@ -250,8 +250,8 @@ csetNameMsg: Jedes kuratierte Set hat einen Namen. Du kannst deinen eigenen Name
 missing: Missing
 andMore: and more
 unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
-makePublic: Make public
-makePrivate: Make private
+makePublic: Veröffentlichen
+makePrivate: Privat machen
 patternNew: Ein neues Muster generieren
 patternNewInfo: Wähle ein Design, füge deine Maße hinzu und wir erstellen ein maßgeschneidertes Nähmuster für dich.
 designNew: Ein neues Design erstellen
@@ -264,7 +264,7 @@ blogNew: Einen neuen Blogbeitrag erstellen
 blogNewInfo: Wenn du im FreeSewing-Blog schreiben möchtest, kannst du hier einen Entwurf für einen Blogbeitrag erstellen.
 imgNew: Erzeuge ein Image in den sozialen Medien
 imgNewInfo: Verwende unseren Generator, um ein Bild zu erstellen, das du in den sozialen Medien teilen kannst. Er unterstützt die Formate breit (klassisch), quadratisch (Instagram) oder hoch (Stories/TikTok).
-csetNew: Ein neues kuratiertes Messgerät vorschlagen
+csetNew: Einen neuen Satz Maße zur Kuration vorschlagen
 csetNewInfo: We curate a collection of vetted measurements sets that we use to test patterns. You can suggest a measurements set here.
 opackNew: Ein neues Optionspaket vorschlagen
 opackNewInfo: Wir stellen für jedes unserer Designs eine Sammlung geprüfter Optionspakete zusammen. Hier kannst du deine Optionen vorschlagen.
@@ -305,15 +305,15 @@ ownPublicPattern: Dies ist die öffentliche Ansicht für eines deiner eigenen Mu
 ownPrivatePattern: Dies ist die private Ansicht deines Musters. Die öffentliche Ansicht funktioniert für dich auch, wenn das Muster privat ist. Für andere funktioniert sie nur, wenn das Muster öffentlich ist.
 privateView: Privatansicht
 publicView: Öffentliche Ansicht
-importHere: This page allows you to import data into your FreeSewing account.
-importSupported: Currently, we support importing the following types of data
-importSets: Import Measurements Sets
-importSet: Import Measurements Set
-cloneSet: Clone Measurements Set
-measieFile: Measurements file
-dragAndDropFileHere: Drag and drop your file here
-importSetTip1: To import a measurement set, you should have a JSON or YAML file that has the following structure
-importSetTip2: Your file can either contain a single measurements set, or an array of multiple measurements sets.
-importing: Importing
-imported: Imported
-importFailed: Import failed
+importHere: Hier kannst du Daten in deinen FreeSewing-Account importieren.
+importSupported: Im Moment unterstützen wir das Importieren der folgenden Datentypen:
+importSets: Maßsätze importieren
+importSet: Einen Satz Maße importieren
+cloneSet: Einen Satz Maße kopieren
+measieFile: Datei des Satzes Maße
+dragAndDropFileHere: Ziehe deine Datei hier hin
+importSetTip1: Um einen Satz Maße zu impoertiern, benötigst du eine JSON- oder YAML-Datei mit der folgenden Struktur:
+importSetTip2: Deine Datei kann entweder einen einzelnen Satz Maße enthalten, oder ein Array mit mehreren Maßsätzen.
+importing: Wird importiert
+imported: Importiert
+importFailed: Import fehlgeschlagen
