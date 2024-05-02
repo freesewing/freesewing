@@ -33,6 +33,8 @@ export const gusset = {
       .addClass('fabric')
       .close()
 
+    store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
     points.title = points.gussetLeft.shift(300, gussetMeasure / 2)
     macro('title', {
       at: points.title,

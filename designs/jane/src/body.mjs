@@ -139,6 +139,8 @@ export const body = {
     points.logo = points.middle.shiftTowards(points.middleHem, maxLength / 4)
     snippets.logo = new Snippet('logo', points.logo)
 
+    store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
     points.title = points.logo.shiftTowards(points.middle, maxLength / 12)
     macro('title', {
       at: points.title,
