@@ -96,8 +96,7 @@ export const body = {
 
     points.neckFront = points.middle
       .shiftTowards(points.middleHem, measurements.hpsToBust * options.neckDepthFront)
-      .attr('data-text', 'Front Neckline')
-      .attr('data-text-class', 'center')
+      .addText(`Front Neckline`, 'center')
 
     points.neckCp1 = points.neckRight.shift(90, points.neckFront.dy(points.neckRight) * 0.8)
     points.neckCp2 = points.neckFront.shift(180, points.neckFront.dy(points.neckRight) * 0.8)
@@ -113,8 +112,7 @@ export const body = {
 
     points.neckBack = points.middle
       .shiftTowards(points.neckFront, measurements.hpsToBust * options.neckDepthBack)
-      .attr('data-text', 'Back Neckline')
-      .attr('data-text-class', 'center')
+      .addText(`Back Neckline`, 'center')
 
     points.neckBackCp1 = points.neckBack.shift(0, points.neckFront.dy(points.neckLeft) * 0.8)
     points.neckBackCp2 = points.neckBack.shift(180, points.neckFront.dy(points.neckRight) * 0.8)

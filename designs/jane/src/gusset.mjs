@@ -30,18 +30,19 @@ export const gusset = {
       .line(points.gussetBottomLeft)
       .line(points.gussetBottomRight)
       .line(points.gussetRight)
+      .addClass('fabric')
       .close()
 
-      points.title = points.gussetLeft.shift(300, gussetMeasure / 2)
-      macro('title', {
-        at: points.title,
-        nr: 3,
-        title: 'sleeveGusset',
-      })
+    points.title = points.gussetLeft.shift(300, gussetMeasure / 2)
+    macro('title', {
+      at: points.title,
+      nr: 3,
+      title: 'sleeveGusset',
+    })
 
-      if (sa) {
-        paths.sa = paths.gusset.offset(sa).setClass('fabric sa')
-      }
+    if (sa) {
+      paths.sa = paths.gusset.offset(sa).setClass('fabric sa')
+    }
 
     // Paperless?
     if (paperless) {

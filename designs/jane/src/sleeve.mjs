@@ -37,28 +37,28 @@ export const sleeve = {
       .line(points.sleeveRight)
       .close()
 
-      points.title = points.sleeveLeft.shift(300, sleeveLength / 2)
-      macro('title', {
-        at: points.title,
-        nr: 2,
-        title: 'sleeve',
-      })
+    points.title = points.sleeveLeft.shift(300, sleeveLength / 2)
+    macro('title', {
+      at: points.title,
+      nr: 2,
+      title: 'sleeve',
+    })
 
-      points.notch = new Point(0, sleeveWidth / 2).addText('shoulder', 'center')
+    points.notch = new Point(0, sleeveWidth / 2).addText('shoulder', 'center')
 
-      points.text1 = new Point(sleeveLength / 2, 10).addText('seam', 'center')
+    points.text1 = new Point(sleeveLength / 2, 10).addText('seam', 'center')
 
-      points.text2 = new Point(sleeveLength / 2, sleeveWidth).addText('seam', 'center')
+    points.text2 = new Point(sleeveLength / 2, sleeveWidth).addText('seam', 'center')
 
-      points.text3 = points.sleeveRight
-        .shiftTowards(points.sleeveBottomRight, sleeveWidth / 2)
-        .addText('hem', 'center')
+    points.text3 = points.sleeveRight
+      .shiftTowards(points.sleeveBottomRight, sleeveWidth / 2)
+      .addText('hem', 'center')
 
-      snippets.notch = new Snippet ('notch', points.notch)
+    snippets.notch = new Snippet('notch', points.notch)
 
-      if (sa) {
-        paths.sa = paths.sleeve.offset(sa).setClass('fabric sa')
-      }
+    if (sa) {
+      paths.sa = paths.sleeve.offset(sa).setClass('fabric sa')
+    }
 
     // Paperless?
     if (paperless) {
