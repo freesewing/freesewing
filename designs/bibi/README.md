@@ -14,14 +14,14 @@
   ><img src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg"
   alt="Code quality on DeepScan"/>
   </a><a
-  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Atina"
+  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Abibi"
   title="Open issues tagged pkg:bibi"
   ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:bibi.svg?label=Issues"
   alt="Open issues tagged pkg:bibi"/>
   </a><a
   href="#contributors-"
   title="All Contributors"
-  ><img src="https://img.shields.io/badge/all_contributors-127-pink.svg"
+  ><img src="https://img.shields.io/badge/all_contributors-128-pink.svg"
   alt="All Contributors"/>
   </a></p><p align='center'><a
   href="https://twitter.com/freesewing_org"
@@ -47,7 +47,7 @@
 
 # @freesewing/bibi
 
-A FreeSewing pattern for overlap top
+A FreeSewing pattern for a knit top body block
 
 
 

@@ -106,7 +106,7 @@ function bibiBack({
   part,
 }) {
   // Hide Brian paths
-  for (let key of Object.keys(paths)) paths[key].hide()
+  for (const key of Object.keys(paths)) paths[key].hide()
 
   // Re-use points for deeper armhole at the front
   points.armholePitchCp1 = points.backArmholePitchCp1
@@ -135,7 +135,7 @@ function bibiBack({
 
   store.set('backSideSeamLength', paths.sideSeam.length())
 
-  let strapWidth = options.sleeves ? 0 : options.strapWidth
+  const strapWidth = options.sleeves ? 0 : options.strapWidth
   points.neck = points.hps.shiftFractionTowards(
     points.shoulder,
     options.necklineWidth * (1 - strapWidth)

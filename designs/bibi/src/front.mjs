@@ -61,7 +61,7 @@ function bibiFront({
   part,
 }) {
   // Hide Brian paths
-  for (let key of Object.keys(paths)) paths[key].hide()
+  for (const key of Object.keys(paths)) paths[key].hide()
 
   // Re-use points for deeper armhole at the front
   points.armholePitchCp1 = points.frontArmholePitchCp1
@@ -112,7 +112,7 @@ function bibiFront({
 
   correctArmHole(points, paths, Path, options, utils)
 
-  let strapWidth = options.sleeves ? 0 : options.strapWidth
+  const strapWidth = options.sleeves ? 0 : options.strapWidth
   points.neck = points.hps.shiftFractionTowards(
     points.shoulder,
     options.necklineWidth * (1 - strapWidth)
@@ -134,42 +134,42 @@ function bibiFront({
   constructFrontHem(points, measurements, options, Point, paths, Path)
 
   store.set('frontSideSeamLength', paths.sideSeam.length())
-  let frontLength = store.get('frontSideSeamLength')
-  let backLength = store.get('backSideSeamLength') ?? 0
-  let dartLength = frontLength - backLength
+  const frontLength = store.get('frontSideSeamLength')
+  const backLength = store.get('backSideSeamLength') ?? 0
+  const dartLength = frontLength - backLength
   const constructDart = (path, tip, dartLength) => {
-    let length = path.length()
+    const length = path.length()
 
     dartLength = Math.max(0, Math.min(dartLength, length / 2))
 
-    let gatherArea = (store.get('gatherAreaLength') ?? 0) + dartLength
-    let offset = length - (store.get('gatherAreaStart') ?? 0) - gatherArea
+    const gatherArea = (store.get('gatherAreaLength') ?? 0) + dartLength
+    const offset = length - (store.get('gatherAreaStart') ?? 0) - gatherArea
 
-    let startSplit = path.shiftAlong(offset)
-    let startDartAlpha = path.shiftAlong(offset + (gatherArea - dartLength) * 0.5)
-    let endDartAlpha = path.shiftAlong(offset + (gatherArea + dartLength) * 0.5)
-    let endSplit = path.shiftAlong(offset + gatherArea)
+    const startSplit = path.shiftAlong(offset)
+    const startDartAlpha = path.shiftAlong(offset + (gatherArea - dartLength) * 0.5)
+    const endDartAlpha = path.shiftAlong(offset + (gatherArea + dartLength) * 0.5)
+    const endSplit = path.shiftAlong(offset + gatherArea)
 
     let tmp = path.split(startSplit)
-    let pathBefore = tmp[0]
+    const pathBefore = tmp[0]
     tmp = tmp[1].split(endSplit)
-    let pathGather = tmp[0]
-    let pathAfter = tmp[1]
-    let angleBefore = path.angleAt(startSplit)
-    let angleAfter = path.angleAt(endSplit)
-    let cpBefore = startSplit.shift(angleBefore, dartLength / 3)
-    let cpAfter = endSplit.shift(angleAfter, -dartLength / 3)
+    const pathGather = tmp[0]
+    const pathAfter = tmp[1]
+    const angleBefore = path.angleAt(startSplit)
+    const angleAfter = path.angleAt(endSplit)
+    const cpBefore = startSplit.shift(angleBefore, dartLength / 3)
+    const cpAfter = endSplit.shift(angleAfter, -dartLength / 3)
 
-    let dartDist = Math.max(tip.dist(startDartAlpha), tip.dist(endDartAlpha))
+    const dartDist = Math.max(tip.dist(startDartAlpha), tip.dist(endDartAlpha))
 
-    let startDart = tip.shiftTowards(startDartAlpha, dartDist)
-    let endDart = tip.shiftTowards(endDartAlpha, dartDist)
-    let dartMid = startDart.shiftFractionTowards(endDart, 0.5)
-    let tipShifted = tip.shiftFractionTowards(dartMid, 0.25)
-    let dartCpStart = tipShifted
+    const startDart = tip.shiftTowards(startDartAlpha, dartDist)
+    const endDart = tip.shiftTowards(endDartAlpha, dartDist)
+    const dartMid = startDart.shiftFractionTowards(endDart, 0.5)
+    const tipShifted = tip.shiftFractionTowards(dartMid, 0.25)
+    const dartCpStart = tipShifted
       .shiftFractionTowards(dartMid, 0.25)
       .shiftFractionTowards(startDart, 0.25)
-    let dartCpEnd = tipShifted
+    const dartCpEnd = tipShifted
       .shiftFractionTowards(dartMid, 0.25)
       .shiftFractionTowards(endDart, 0.25)
 
@@ -178,8 +178,8 @@ function bibiFront({
     const dartAngle = dartAngleBefore * 2 - dartAngleMain
     let dartInnerAngle = tipShifted.angle(endDart) - tipShifted.angle(startDart)
     if (dartInnerAngle < -180) dartInnerAngle += 360
-    let cpSplitStart = startDart.shift(dartAngle - dartInnerAngle / 2, -dartLength / 4)
-    let cpSplitEnd = endDart.shift(dartAngle + dartInnerAngle / 2, dartLength / 4)
+    const cpSplitStart = startDart.shift(dartAngle - dartInnerAngle / 2, -dartLength / 4)
+    const cpSplitEnd = endDart.shift(dartAngle + dartInnerAngle / 2, dartLength / 4)
 
     return {
       beforeDart: pathBefore.clone().curve(cpBefore, cpSplitStart, startDart),
