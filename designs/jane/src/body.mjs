@@ -133,6 +133,7 @@ export const body = {
       .move(points.topTopRight)
       .move(points.topTopLeft)
       .move(points.topLeft)
+      .addClass('fabric hidden')
       .close()
 
     points.logo = points.middle.shiftTowards(points.middleHem, maxLength / 4)

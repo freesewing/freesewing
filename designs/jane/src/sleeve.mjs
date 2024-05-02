@@ -35,6 +35,7 @@ export const sleeve = {
       .line(points.sleeveBottomLeft)
       .line(points.sleeveBottomRight)
       .line(points.sleeveRight)
+      .addClass('fabric')
       .close()
 
     points.title = points.sleeveLeft.shift(300, sleeveLength / 2)
@@ -57,7 +58,7 @@ export const sleeve = {
     snippets.notch = new Snippet('notch', points.notch)
 
     if (sa) {
-      paths.sa = paths.sleeve.offset(sa).setClass('fabric sa')
+      paths.sa = paths.sleeve.offset(sa).setClass('fabric sa').close()
     }
 
     // Paperless?
