@@ -48,8 +48,8 @@ export const body = {
 
     points.topLeft = new Point(0, 0)
     points.topRight = new Point(widthBody, 0)
-    points.bottomLeft = new Point(0, maxLength )
-    points.bottomRight = new Point(widthBody, maxLength )
+    points.bottomLeft = new Point(0, maxLength)
+    points.bottomRight = new Point(widthBody, maxLength)
 
     points.gorestartLeft = points.bottomLeft.shiftTowards(points.topLeft, maxLength / 2)
     points.gorestartRight = points.bottomRight.shiftTowards(points.topRight, maxLength / 2)
@@ -64,12 +64,13 @@ export const body = {
       measurements.shoulderToShoulder / 2
     )
 
-    paths.sideseam = new Path()
+    paths.body = new Path()
       .move(points.topRight)
       .line(points.topLeft)
       .line(points.bottomLeft)
       .line(points.bottomRight)
       .line(points.topRight)
+      .addClass('fabric')
       .close()
 
     paths.leftGore = new Path()
@@ -105,9 +106,10 @@ export const body = {
     points.neckCp4 = points.neckFront.shift(0, points.neckFront.dy(points.neckLeft) * 0.8)
 
     paths.neckLineFront = new Path()
-    .move(points.neckRight)
+      .move(points.neckRight)
       .curve(points.neckCp1, points.neckCp2, points.neckFront)
       .curve(points.neckCp4, points.neckCp3, points.neckLeft)
+      .addClass('fabric')
 
     points.neckBack = points.middle
       .shiftTowards(points.neckFront, measurements.hpsToBust * options.neckDepthBack)
@@ -123,6 +125,7 @@ export const body = {
       .move(points.neckRight)
       .curve(points.neckBackCp4, points.neckBackCp2, points.neckBack)
       .curve(points.neckBackCp1, points.neckBackCp3, points.neckLeft)
+      .addClass('fabric')
 
     points.topTopLeft = points.topLeft.shift(90, 20)
     points.topTopRight = points.topRight.shift(90, 20)
@@ -134,33 +137,32 @@ export const body = {
       .move(points.topLeft)
       .close()
 
-      points.logo = points.middle.shiftTowards(points.middleHem, maxLength / 4)
-      snippets.logo = new Snippet('logo', points.logo)
+    points.logo = points.middle.shiftTowards(points.middleHem, maxLength / 4)
+    snippets.logo = new Snippet('logo', points.logo)
 
-      points.title = points.logo.shiftTowards(points.middle, maxLength / 12)
-      macro('title', {
-        at: points.title,
-        nr: 1,
-        title: 'body',
-      })
+    points.title = points.logo.shiftTowards(points.middle, maxLength / 12)
+    macro('title', {
+      at: points.title,
+      nr: 1,
+      title: 'body',
+    })
 
-      if (sa) {
-        paths.sa = paths.sideseam.offset(sa).setClass('fabric sa')
-      }
-
-      macro('cutonfold', {
-        from: points.topLeft,
-        to: points.topRight,
-        grainline: false,
-      })
-     
-      points.grainlineFrom = points.leftShoulder
-      points.grainlineTo = new Point(points.grainlineFrom.x, points.bottomLeft.y)
-      macro('grainline', {
-        from: points.grainlineFrom,
-        to: points.grainlineTo,
-      })
+    if (sa) {
+      paths.sa = paths.sideseam.offset(sa).setClass('fabric sa')
     }
+
+    macro('cutonfold', {
+      from: points.topLeft,
+      to: points.topRight,
+      grainline: false,
+    })
+
+    points.grainlineFrom = points.leftShoulder
+    points.grainlineTo = new Point(points.grainlineFrom.x, points.bottomLeft.y)
+    macro('grainline', {
+      from: points.grainlineFrom,
+      to: points.grainlineTo,
+    })
 
     // Paperless?
     if (paperless) {
