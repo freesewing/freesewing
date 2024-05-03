@@ -17,25 +17,12 @@ function draftPocketBack({
   macro('rmad')
   macro('rmScalebox')
 
-  delete paths.centerSeam
-  delete paths.hem
-  delete paths.sa
-  delete paths.legHem
-  delete paths.outseam
-  delete paths.pocketCarpenterSeam
-  delete paths.pocketCarpenterHem
-  delete paths.pocketCarpenterExtraHem
-  delete paths.pocketCarpenterExtraSeam
-  delete paths.hint
-  delete paths.bibLowerHexagonHint
-  delete paths.bibUpperHexagonHint
-  delete paths.hammerLoopLeft
-  delete paths.hammerLoopCenter
-  delete paths.hammerLoopRight
-  delete points.carpenterPocketLabel
-  delete points.carpenterPocketExtraLabel
   points.title = points.backPocket.copy().translate(scale * 10, scale * 10)
-  delete points.backPocket
+
+  const keepPaths = ['pocketBackSeam', 'pocketBackHem']
+  for (const name in paths) {
+    if (keepPaths.indexOf(name) === -1) delete paths[name]
+  }
 
   paths.pocketBackSeam.setClass('fabric')
   paths.pocketBackHem.setClass('fabric')

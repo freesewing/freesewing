@@ -16,10 +16,11 @@ function draftPocketBib({
 
   macro('rmad')
 
-  delete paths.seam
-  delete paths.hem
-  delete paths.sa
-  delete paths.placket
+  const keepPaths = ['bibPocketSeam', 'bibPocketHem', 'cf']
+  for (const name in paths) {
+    if (keepPaths.indexOf(name) === -1) delete paths[name]
+  }
+
   if (options.bibPocketOnFold) delete paths.cf
   paths.bibPocketSeam.unhide().setClass('fabric')
   paths.bibPocketHem.unhide().setClass('fabric')
