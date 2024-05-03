@@ -4684,10 +4684,10 @@ dagre-d3-es@7.0.10:
     d3 "^7.8.2"
     lodash-es "^4.17.21"
 
-daisyui@4.7.3:
-  version "4.7.3"
-  resolved "https://registry.npmjs.org/daisyui/-/daisyui-4.7.3.tgz"
-  integrity sha512-R8jUpBMAUm4rSyxzGa9QqFdJTkzREtb1QahXdDoOfElGiF4VbSuu5bfqQoOro1kkSagPy+aTKu5WtSSXmH3u3g==
+daisyui@4.10.4:
+  version "4.10.4"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-4.10.4.tgz#130d876d17ff7c3272a5002ffbe9ffaaff044dcc"
+  integrity sha512-B2zCnUPL96aO0GJUWNCIKotmM9n6aFw7F+2kuhd+D3piOIJGH7tgXJX84Jsfkl8pfftK+iOnlKxNv35EYil4VQ==
   dependencies:
     css-selector-tokenizer "^0.8"
     culori "^3"
