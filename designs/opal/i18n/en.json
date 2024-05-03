@@ -31,7 +31,7 @@
       "d": "Sets how wide the hems around the legs are, as a percent of the seam allowance."
     },
     "waistEase": {
-      "t": "Hem allowance",
+      "t": "Waist ease",
       "d": "Controls how wide the garment will be around the waist."
     },
     "waistBalance": {
