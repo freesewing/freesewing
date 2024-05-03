@@ -18,7 +18,7 @@ function jaegerBack({
 }) {
   // Back vent(s)
   const ventY = points.cbHips.y - points.cbWaistCp2.dy(points.cbHips) * options.backVentLength
-  if (options.backVent === 1) {
+  if (Number(options.backVent) === 1) {
     // Single back vent
     // Vent tip
     points.ventStart = utils.curveIntersectsY(
@@ -44,7 +44,7 @@ function jaegerBack({
       points.cbWaistCp2,
       points.cbWaist
     )
-  } else if (options.backVent === 2) {
+  } else if (Number(options.backVent) === 2) {
     // Double back vent
     // Vent tip
     points.ventStart = utils.curveIntersectsY(
@@ -80,7 +80,7 @@ function jaegerBack({
   for (let i of Object.keys(snippets)) delete snippets[i]
 
   // Paths
-  if (options.backVent === 2) {
+  if (Number(options.backVent) === 2) {
     paths.saBase = paths.vent
       .clone()
       .reverse()
@@ -109,7 +109,7 @@ function jaegerBack({
     paths.saBase = paths.saBase._curve(points.cbChestCp1, points.cbChest)
   else paths.saBase = paths.saBase.line(points.cbChest)
   paths.saBase = paths.saBase.curve(points.cbChestCp2, points.cbWaistCp1, points.cbWaist)
-  if (options.backVent === 1) {
+  if (Number(options.backVent) === 1) {
     paths.saBase = paths.saBase
       .join(
         new Path()
@@ -126,8 +126,9 @@ function jaegerBack({
   }
   paths.saBase.hide()
 
-  if (options.backVent === 2) paths.hemBase = new Path().move(points.cbHem).line(paths.vent.end())
-  else if (options.backVent === 1)
+  if (Number(options.backVent) === 2)
+    paths.hemBase = new Path().move(points.cbHem).line(paths.vent.end())
+  else if (Number(options.backVent) === 1)
     paths.hemBase = new Path().move(paths.vent.end()).line(points.hem)
   else paths.hemBase = new Path().move(points.cbHem).line(points.hem)
   paths.hemBase.hide()
