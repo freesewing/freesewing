@@ -9,7 +9,7 @@ title: "Charlie chinos: Cutting Instructions"
 - Part **4**: **4 x**
 - Part **6**: **2 x**
 - Part **8**: **4 x** (2 pairs _with good sides together_)
-- Part **9**: **2 x** _with good sides together_
+- Part **9**: **1 x**
 - Part **10**: **1 x** on the fold
 - Part **11**: **1 x** if making a straight waistband
 - Part **11**: **2 x** _with good sides together_ if making a curved waistband

@@ -26,9 +26,10 @@ const onActivePath = (slug, active) => (active ? active.slice(0, slug.length) ==
  * This is a recursive function, so it needs to be lean
  */
 const RenderTree = ({ tree, recurse, depth = 1, level = 0, active = false }) => {
-  const orderedTree = orderBy(tree, ['o', 't'], ['asc', 'asc']).filter(
-    (item) => typeof item === 'object'
-  )
+  const orderedTree = orderBy(tree, ['o', 't'], ['asc', 'asc'])
+    .filter((item) => typeof item === 'object')
+    .filter((item) => !item.h)
+    .filter((item) => !item._)
 
   return (
     <ul className="w-full list">

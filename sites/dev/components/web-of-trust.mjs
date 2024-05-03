@@ -195,6 +195,7 @@ export const WebOfTrustMap = () => {
   )
 }
 
+/* eslint-disable */
 /*
  * React version of https://upload.wikimedia.org/wikipedia/commons/b/bc/BlankMap-World-Compact.svg
  */
@@ -9510,3 +9511,4 @@ const world = (
     </g>
   </>
 )
+/* eslint-enable */

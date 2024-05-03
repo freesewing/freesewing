@@ -9,7 +9,7 @@ export const boxPleatFold = { pct: 15, min: 10, max: 20, menu: 'advanced' }
 export const boxPleatWidth = { pct: 7, min: 4, max: 10, menu: 'advanced' }
 export const roundBack = { pct: 0, min: 0, max: 10, menu: 'fit' }
 // Front
-export const buttonFreeLength = { pct: 2, min: 0, max: 15, menu: 'style.closure' }
+export const buttonFreeLength = { pct: 2, min: -10, max: 15, menu: 'style.closure' }
 export const buttonholePlacketStyle = {
   list: ['classic', 'seamless'],
   dflt: 'seamless',
