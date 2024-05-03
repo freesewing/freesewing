@@ -44,7 +44,7 @@
     },
     "seatBalance": {
       "t": "Seat balance",
-      "d": "Controls how much of the garment is part of the front piece and how much is part of the back piece at the height of the seat."
+      "d": "Controls how much of the seat is part of the front piece and how much is part of the back piece."
     },
     "thighShape": {
       "t": "Thigh shape",
