@@ -18,23 +18,11 @@ function draftPocketCarpenter({
   macro('rmad')
   macro('rmScalebox')
 
-  delete paths.centerSeam
-  delete paths.hem
-  delete paths.sa
-  delete paths.legHem
-  delete paths.outseam
-  delete paths.pocketCarpenterExtraHem
-  delete paths.pocketCarpenterExtraSeam
-  delete paths.hint
-  delete paths.bibLowerHexagonHint
-  delete paths.bibUpperHexagonHint
-  delete paths.hammerLoopLeft
-  delete paths.hammerLoopCenter
-  delete paths.hammerLoopRight
-  delete paths.pocketBackHem
-  delete paths.pocketBackSeam
-  delete points.carpenterPocketLabel
-  delete points.carpenterPocketExtraLabel
+  const keepPaths = ['pocketCarpenterSeam', 'pocketCarpenterHem']
+  for (const name in paths) {
+    if (keepPaths.indexOf(name) === -1) delete paths[name]
+  }
+
   delete snippets.logo
 
   paths.pocketCarpenterHem.setClass('fabric')

@@ -15,9 +15,11 @@ function draftPocketSlashShield({
 
   macro('rmad')
 
-  delete paths.seam
-  delete paths.sa
-  delete paths.fold
+  const keepPaths = ['shield', 'saShield']
+  for (const name in paths) {
+    if (keepPaths.indexOf(name) === -1) delete paths[name]
+  }
+
   if (sa) paths.saShield.unhide()
   paths.shield.setClass('fabric')
   points.shieldText.setText(null)
