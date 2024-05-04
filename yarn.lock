@@ -910,10 +910,10 @@
     pump "^3.0.0"
     stack-generator "^2.0.3"
 
-"@bugsnag/plugin-react@7.19.0":
-  version "7.19.0"
-  resolved "https://registry.npmjs.org/@bugsnag/plugin-react/-/plugin-react-7.19.0.tgz"
-  integrity sha512-owC4QXYJWGllMoOPcH5P7sbDIDuFLMCbjGAU6FwH5mBMObSQo+1ViSKImlTJQUFXATM8ySISTBVt7w3C6FFHng==
+"@bugsnag/plugin-react@7.22.7":
+  version "7.22.7"
+  resolved "https://registry.yarnpkg.com/@bugsnag/plugin-react/-/plugin-react-7.22.7.tgz#9f308cc4c043ee765d77686fca4e4404dc1c88d0"
+  integrity sha512-CDyCHK5+KMkpf/2vmVC7xqqP4ys25Yuj9M8xVrmP7LC02nFUPt/UzEIt43MSO4Jfw254ZimbsQrhIweabQNyxQ==
 
 "@bugsnag/safe-json-stringify@^6.0.0":
   version "6.0.0"
