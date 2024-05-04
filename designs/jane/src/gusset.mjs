@@ -16,6 +16,7 @@ export const gusset = {
     macro,
     measurements,
     part,
+    store,
   }) {
     const gussetMeasure = measurements.biceps * (0.5 + 0.85) * options.gussetSize
 
