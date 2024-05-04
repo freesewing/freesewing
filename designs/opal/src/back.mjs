@@ -299,7 +299,6 @@ function draftBack({
     .line(points.bibHexagonLowerOutside)
     .line(points.bibHexagonBottom)
     .addClass('fabric')
-  console.log(absoluteOptions.legHemAllowance)
 
   if (options.pocketBack) {
     paths.pocketBackHem = new Path()
