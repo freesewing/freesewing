@@ -312,15 +312,15 @@
     },
     "hammerLoopCornerX": {
       "t": "Hammer loop corner horizontal position",
-      "d": "Controls how the hammer loop curves. Used for calculating its length."
+      "d": "Controls where the hammer loop curves towards. Used for calculating its length."
     },
     "hammerLoopCornerY": {
       "t": "Hammer loop corner vertical position",
-      "d": "Controls how the hammer loop curves. Used for calculating its length."
+      "d": "Controls where the hammer loop curves towards. Used for calculating its length."
     },
     "hammerLoopCurve": {
       "t": "Hammer loop curve",
-      "d": "Controls how the hammer loop curves. Used for calculating its length."
+      "d": "Controls how deeply the hammer loop is curved. Used for calculating its length."
     },
     "hammerLoopOutseam": {
       "t": "Hammer loop outseam",
