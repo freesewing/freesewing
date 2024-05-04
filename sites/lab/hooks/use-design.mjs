@@ -60,6 +60,7 @@ import { Wahid as wahid } from '@freesewing/wahid'
 import { Walburga as walburga } from '@freesewing/walburga'
 import { Waralee as waralee } from '@freesewing/waralee'
 import { Yuri as yuri } from '@freesewing/yuri'
+import { Jane as jane } from '@freesewing/jane'
 import { Lily as lily } from '@freesewing/lily'
 
 const designs = {
@@ -121,6 +122,7 @@ const designs = {
   walburga,
   waralee,
   yuri,
+  jane,
   lily,
 }
 

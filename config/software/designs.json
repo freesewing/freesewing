@@ -487,7 +487,23 @@
       "button"
     ]
   },
-  "legend": {
+  "jane": {
+    "code": "SeaZeeZee",
+    "description": "A FreeSewing pattern for a 1790s shift",
+    "design": "SeaZeeZee",
+    "difficulty": 2,
+    "lab": true,
+    "org": false,
+    "tags": [
+      "tops",
+      "historical",
+      "underwear"
+    ],
+    "techniques": [
+      "hem"
+    ]
+  },
+    "legend": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern to document pattern notation",
     "lab": false,

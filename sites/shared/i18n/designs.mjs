@@ -63,6 +63,7 @@ import { i18n as wahid } from '@freesewing/wahid'
 import { i18n as walburga } from '@freesewing/walburga'
 import { i18n as waralee } from '@freesewing/waralee'
 import { i18n as yuri } from '@freesewing/yuri'
+import { i18n as jane } from '@freesewing/jane'
 import { i18n as lily } from '@freesewing/lily'
 
 export const designs = {
@@ -127,5 +128,6 @@ export const designs = {
   walburga,
   waralee,
   yuri,
+  jane,
   lily,
 }
