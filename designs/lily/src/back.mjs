@@ -198,7 +198,6 @@ function draftLilyBack({
   // Adapt the vertical placement of the seat control point to the lowered waist
   points.seatOutCp2.y = points.seatOut.y - points.styleWaistOutLily.dy(points.seatOut) / 2
   let test = points.styleWaistInLily.dist(points.styleWaistOutLily)
-  console.log('back waist length', test)
   store.set('backWaist', points.styleWaistInLily.dist(points.styleWaistOutLily))
 
   // Paths
