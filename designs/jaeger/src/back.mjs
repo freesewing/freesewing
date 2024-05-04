@@ -221,54 +221,56 @@ function jaegerBack({
     to: points.bsArmholeHollow,
     x: points.hem.x + sa + 45,
   })
-  macro('hd', {
-    id: 'wVent',
-    from: paths.vent.start(),
-    to: points.ventSlopeStart,
-    y: points.ventSlopeStart.y + 25,
-  })
-  macro('hd', {
-    id: 'wAtHem',
-    from: paths.vent.end(),
-    to: points.hem,
-    y: points.hem.y + 3 * sa + 15,
-  })
-  macro('vd', {
-    id: 'hVentTip',
-    from: paths.vent.end(),
-    to: paths.vent.start(),
-    x: paths.vent.end().x - sa - 15,
-  })
-  macro('vd', {
-    id: 'hVentFull',
-    from: paths.vent.end(),
-    to: points.ventSlopeStart,
-    x: paths.vent.end().x - sa - 30,
-  })
-  macro('vd', {
-    id: 'hHemToWaist2',
-    from: paths.vent.end(),
-    to: points.cbWaist,
-    x: paths.vent.end().x - sa - 45,
-  })
-  macro('vd', {
-    id: 'hHemToChest',
-    from: paths.vent.end(),
-    to: points.cbChest,
-    x: paths.vent.end().x - sa - 60,
-  })
-  macro('vd', {
-    id: 'hHemToCbNeck',
-    from: paths.vent.end(),
-    to: points.cbNeck,
-    x: paths.vent.end().x - sa - 75,
-  })
-  macro('vd', {
-    id: 'hFull',
-    from: paths.vent.end(),
-    to: points.neck,
-    x: paths.vent.end().x - sa - 90,
-  })
+  if (Number(options.backVent) > 0) {
+    macro('hd', {
+      id: 'wVent',
+      from: paths.vent.start(),
+      to: points.ventSlopeStart,
+      y: points.ventSlopeStart.y + 25,
+    })
+    macro('hd', {
+      id: 'wAtHem',
+      from: paths.vent.end(),
+      to: points.hem,
+      y: points.hem.y + 3 * sa + 15,
+    })
+    macro('vd', {
+      id: 'hVentTip',
+      from: paths.vent.end(),
+      to: paths.vent.start(),
+      x: paths.vent.end().x - sa - 15,
+    })
+    macro('vd', {
+      id: 'hVentFull',
+      from: paths.vent.end(),
+      to: points.ventSlopeStart,
+      x: paths.vent.end().x - sa - 30,
+    })
+    macro('vd', {
+      id: 'hHemToWaist2',
+      from: paths.vent.end(),
+      to: points.cbWaist,
+      x: paths.vent.end().x - sa - 45,
+    })
+    macro('vd', {
+      id: 'hHemToChest',
+      from: paths.vent.end(),
+      to: points.cbChest,
+      x: paths.vent.end().x - sa - 60,
+    })
+    macro('vd', {
+      id: 'hHemToCbNeck',
+      from: paths.vent.end(),
+      to: points.cbNeck,
+      x: paths.vent.end().x - sa - 75,
+    })
+    macro('vd', {
+      id: 'hFull',
+      from: paths.vent.end(),
+      to: points.neck,
+      x: paths.vent.end().x - sa - 90,
+    })
+  }
   macro('ld', {
     id: 'wAtWaist',
     from: points.cbWaist,
