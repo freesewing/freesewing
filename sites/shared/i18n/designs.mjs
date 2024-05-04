@@ -29,6 +29,7 @@ import { i18n as hortensia } from '@freesewing/hortensia'
 import { i18n as huey } from '@freesewing/huey'
 import { i18n as hugo } from '@freesewing/hugo'
 import { i18n as jaeger } from '@freesewing/jaeger'
+import { i18n as jane } from '@freesewing/jane'
 import { i18n as legend } from '@freesewing/legend'
 import { i18n as lucy } from '@freesewing/lucy'
 import { i18n as lumina } from '@freesewing/lumina'
@@ -63,7 +64,6 @@ import { i18n as wahid } from '@freesewing/wahid'
 import { i18n as walburga } from '@freesewing/walburga'
 import { i18n as waralee } from '@freesewing/waralee'
 import { i18n as yuri } from '@freesewing/yuri'
-import { i18n as jane } from '@freesewing/jane'
 import { i18n as lily } from '@freesewing/lily'
 
 export const designs = {
@@ -94,6 +94,7 @@ export const designs = {
   huey,
   hugo,
   jaeger,
+  jane,
   legend,
   lucy,
   lumina,
@@ -128,6 +129,5 @@ export const designs = {
   walburga,
   waralee,
   yuri,
-  jane,
   lily,
 }

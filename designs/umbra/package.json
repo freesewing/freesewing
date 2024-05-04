@@ -51,11 +51,12 @@
   "peerDependencies": {
     "@freesewing/core": "3.2.0"
   },
+  "dependencies": {},
   "devDependencies": {
-    "@freesewing/models": "3.2.0",
-    "@freesewing/plugin-timing": "3.2.0",
+    "mocha": "10.4.0",
     "chai": "5.1.0",
-    "mocha": "10.3.0"
+    "@freesewing/models": "3.2.0",
+    "@freesewing/plugin-timing": "3.2.0"
   },
   "files": [
     "dist/*",
