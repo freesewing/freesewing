@@ -1,0 +1,56 @@
+{
+  "t": "Umbra, die Unterwäsche",
+  "d": "Umbra ist ein elementares, stark anpassbares Schnittmuster für Unterwäsche.",
+  "p": {
+    "back": "Rückseite",
+    "elastic": "Elastic",
+    "front": "Vorderseite",
+    "gusset": "Zwickel"
+  },
+  "s": {
+    "cutTwoPiecesOfElasticToFinishTheLegOpenings": "Schneide zwei Stücke Gummiband um die Beinöffnungen zu versäubern",
+    "cutOnePieceOfElasticToFinishTheWaistBand": "Schneide ein Stück Gummiband um das Taillenband zu versäubern"
+  },
+  "o": {
+    "fabricStretch": {
+      "t": "Stoffdehnbarkeit",
+      "d": "Passe dies für mehr oder weniger dehnbaren Stoff an"
+    },
+    "gussetWidth": {
+      "t": "Zwickelbreite",
+      "d": "Steuert die Breite des Zwickels"
+    },
+    "gussetLength": {
+      "t": "Zwickellänge",
+      "d": "Steuert die Länge des Zwickels"
+    },
+    "elasticStretch": {
+      "t": "Dehnbarkeit des Gummis",
+      "d": "Passe dies für mehr oder weniger dehnbaren Gummi an"
+    },
+    "rise": {
+      "t": "Sitz",
+      "d": "Steuert die Höhe der Taille"
+    },
+    "legOpening": {
+      "t": "Beinöffnung",
+      "d": "Legt fest, wie hoch das Bein ausgeschnitten wird"
+    },
+    "frontDip": {
+      "t": "Absenkung der vorderen Taille",
+      "d": "Steuert, wie stark die vordere Taille gekümmt ist (legt dadurch mehr oder weniger Haut frei)"
+    },
+    "backDip": {
+      "t": "Absenkung hintere Taille",
+      "d": "Steuert, wie stark die hintere Taille gekümmt ist (legt dadurch mehr oder weniger Haut frei)"
+    },
+    "taperToGusset": {
+      "t": "Vordere Freilegung",
+      "d": "Steuert die Menge an freigelegter Haut auf der vorderen Seite"
+    },
+    "backExposure": {
+      "t": "Hintere Freilegung",
+      "d": "Steuert die Menge an freigelegter Haut auf der hinteren Seite"
+    }
+  }
+}

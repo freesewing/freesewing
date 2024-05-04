@@ -52,6 +52,7 @@ import { Titan as titan } from '@freesewing/titan'
 import { Trayvon as trayvon } from '@freesewing/trayvon'
 import { Tristan as tristan } from '@freesewing/tristan'
 import { Uma as uma } from '@freesewing/uma'
+import { Umbra as umbra } from '@freesewing/umbra'
 import { Wahid as wahid } from '@freesewing/wahid'
 import { Walburga as walburga } from '@freesewing/walburga'
 import { Waralee as waralee } from '@freesewing/waralee'
@@ -109,6 +110,7 @@ const designs = {
   trayvon,
   tristan,
   uma,
+  umbra,
   wahid,
   walburga,
   waralee,
