@@ -85,6 +85,10 @@ jaeger:
     '@freesewing/brian': *freesewing
     '@freesewing/bent': *freesewing
     '@freesewing/plugin-bust': *freesewing
+lily:
+  peer:
+    '@freesewing/titan': *freesewing    
+    '@freesewing/paco': *freesewing    
 new-design:
   _:
     'axios': &axios '1.6.8'

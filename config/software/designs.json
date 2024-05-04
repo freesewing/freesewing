@@ -573,14 +573,25 @@
     "techniques": []
   },
   "naomiwu": {
-    "description": "A FreeSewing pattern for Naomi Wu's signature cargo skirt",
     "code": "Joost De Cock",
-    "design": ["Naomi Wu", "Joost De Cock"],
+    "description": "A FreeSewing pattern for Naomi Wu's signature cargo skirt",
+    "design": [
+      "Naomi Wu",
+      "Joost De Cock"
+    ],
     "difficulty": 3,
     "lab": false,
     "org": false,
-    "tags": ["bottoms", "skirts"],
-    "techniques": ["button", "hem", "pocket", "lining"]
+    "tags": [
+      "bottoms",
+      "skirts"
+    ],
+    "techniques": [
+      "button",
+      "hem",
+      "pocket",
+      "lining"
+    ]
   },
   "noble": {
     "code": "Wouter Van Wageningen",
@@ -994,6 +1005,22 @@
       "flatSleeve",
       "hem",
       "button"
+    ]
+  },
+  "lily": {
+    "code": "Anna Puk, Joost De Cock",
+    "description": "A FreeSewing pattern for basic leggings",
+    "design": "Anna Puk",
+    "difficulty": 2,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "bottoms"
+    ],
+    "techniques": [
+      "elastic",
+      "curvedSeam",
+      "hem"
     ]
   }
 }
