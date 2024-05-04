@@ -44,6 +44,19 @@ export const back = {
       menu: (settings, mergedOptions) =>
         mergedOptions?.legacyArmholeDepth ? false : 'style.sleeves',
     },
+    armholeCurveBack: {
+      pct: 30,
+      min: -10,
+      max: 120,
+      menu: (settings, mergedOptions) => (mergedOptions.sleeves ? false : 'style.sleeves'),
+    },
+    armholeDropBack: {
+      pct: 20,
+      min: -50,
+      max: 50,
+      menu: (settings, mergedOptions) => (mergedOptions.sleeves ? false : 'style.sleeves'),
+    },
+
     lengthBonus: { pct: 0, min: -30, max: 30, menu: 'style.length' },
     draftForHighBust: { bool: true, menu: 'fit' },
     // Bibi specific
@@ -75,6 +88,7 @@ export const back = {
           ? 'style.length'
           : false,
     },
+    necklineWidth: { pct: 30, min: 10, max: 90, menu: 'style' },
     strapWidth: {
       pct: 40,
       min: 5,
@@ -154,7 +168,20 @@ function bibiBack({
     .move(points.neck)
     .curve(points.neckCp2, points.cbNeckCp1, points.cbNeck)
     .addClass('fabric')
-  createArmHoles(options, store, points, paths, Path, snippets, Snippet, strapWidth, 'bnotch')
+  createArmHoles(
+    options,
+    store,
+    points,
+    paths,
+    Path,
+    snippets,
+    Snippet,
+    strapWidth,
+    options.armholeCurveBack,
+    options.armholeDropBack,
+    utils,
+    'bnotch'
+  )
 
   paths.centerLine = new Path().move(points.cbNeck).line(points.cbHem).addClass('fabric')
 
@@ -192,13 +219,9 @@ function bibiBack({
     grainline: true,
   })
 
-  points.scaleboxAnchor = points.logo.shift(-90, 10)
+  delete snippets.logo
 
-  macro('scalebox', {
-    at: points.scaleboxAnchor,
-  })
-
-  snippets.logo = new Snippet('logo', points.logo)
+  points.title = points.cbHem.shift(45, 60)
 
   macro('title', { at: points.title, nr: 2, title: 'back' })
 

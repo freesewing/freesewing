@@ -38,8 +38,13 @@ export const front = {
       order: 'EAA',
     },
     necklineDepth: { pct: 25, min: 20, max: 110, menu: 'style' },
-    necklineWidth: { pct: 50, min: 10, max: 90, menu: 'style' },
     necklineBend: { pct: 50, min: 0, max: 70, menu: 'style' },
+    armholeCurveFront: {
+      pct: 15,
+      min: -10,
+      max: 30,
+      menu: (settings, mergedOptions) => (mergedOptions.sleeves ? false : 'style.sleeves'),
+    },
   },
   draft: bibiFront,
 }
@@ -231,9 +236,23 @@ function bibiFront({
         .addText('gather', 'center various help')
     }
   }
-  createArmHoles(options, store, points, paths, Path, snippets, Snippet, strapWidth)
+  createArmHoles(
+    options,
+    store,
+    points,
+    paths,
+    Path,
+    snippets,
+    Snippet,
+    strapWidth,
+    options.armholeCurveFront,
+    0,
+    utils
+  )
 
   paths.centerLine = new Path().move(points.cfNeck).line(points.cfHem).addClass('fabric')
+
+  points.title = points.bust.shift(0, 5)
 
   macro('title', { at: points.title, nr: 1, title: 'front' })
 

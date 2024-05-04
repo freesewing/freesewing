@@ -109,6 +109,18 @@
       "t": "Strap width",
       "d": "How wide the shoulder straps are. Only applies when sleeves are disabled."
     },
+    "armholeCurveFront": {
+      "t": "Armhole curve front",
+      "d": "How round the armhole curve is at the front. Higher options expose more skin."
+    },
+    "armholeCurveBack": {
+      "t": "Armhole curve back",
+      "d": "How round the armhole curve is at the back. Higher options leave the shoulder blades free."
+    },
+    "armholeDropBack": {
+      "t": "Armhole drop back",
+      "d": "How much the back armhole curves towards the bottom."
+    },
     "length": {
       "t": "Length",
       "d": "Which measurement line to use for the bottom hem. You can do fine adjustments using the bonus length option."

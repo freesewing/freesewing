@@ -357,6 +357,9 @@ export function createArmHoles(
   snippets,
   Snippet,
   strapWidth,
+  armholeCurve,
+  armholeDrop,
+  utils,
   notchType = 'notch'
 ) {
   if (options.sleeves) {
@@ -400,15 +403,35 @@ export function createArmHoles(
       -strapWidth * points.shoulder.dist(points.hps)
     )
     points.strapTopCp1 = points.strapTop
-      .shiftTowards(points.hps, 0.4 * points.strapTop.dy(points.armhole))
+      .shiftTowards(points.hps, 0.2 * points.strapTop.dy(points.armhole))
       .rotate(90, points.strapTop)
 
-    // Increase weight of armhole to prevent corner
-    points.armholeHollowCp2 = points.armholeHollow.shiftFractionTowards(points.armholeHollowCp2, 3)
+    // Increase weight of armhole control points because we don't use armholeHollow here anymore
+    points.armholeCp2 = points.armhole.shiftFractionTowards(points.armholeCp2, 3)
+
+    points.armholeIntersection = utils.beamsIntersect(
+      points.strapTop,
+      points.strapTopCp1,
+      points.armhole,
+      points.armholeCp2
+    )
+    points.armholeIntersectionDrop = points.armholeIntersection.shiftFractionTowards(
+      points.strapTop,
+      -armholeDrop
+    )
+
+    points.armholeCp2 = points.armholeCp2.shiftFractionTowards(
+      points.armholeIntersection,
+      armholeCurve
+    )
+    points.strapTopCp1 = points.strapTopCp1.shiftFractionTowards(
+      points.armholeIntersectionDrop,
+      armholeCurve
+    )
+
     paths.armhole = new Path()
       .move(points.armhole)
-      .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
-      .curve(points.armholeHollowCp2, points.strapTopCp1, points.strapTop)
+      .curve(points.armholeCp2, points.strapTopCp1, points.strapTop)
       .addClass('fabric')
     paths.shoulder = new Path().move(points.strapTop).line(points.neck).addClass('fabric')
   }
