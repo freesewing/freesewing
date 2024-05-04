@@ -33,7 +33,7 @@ export function constructFrontPoints(points, Point, measurements, options) {
     measurements.hpsToBust
   )
   points.cbWaist = new Point(0, measurements.hpsToWaistBack)
-  points.cfWaist = new Point(0, measurements.hpsToWaistFront)
+  points.cfWaist = new Point(0, Math.max(measurements.hpsToWaistBack, measurements.hpsToWaistFront))
   points.waist = new Point((measurements.waist * (1 + options.waistEase)) / 4, points.cfWaist.y)
   points.cfArmhole = new Point(
     0,
