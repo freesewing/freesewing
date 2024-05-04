@@ -188,6 +188,8 @@ customBookmark: Aangepaste bladwijzers
 yourBookmarks: Je bladwijzers
 bookmarkThisThing: Bookmark deze { thing }
 page: Pagina
+doc: Documentatie
+pattern: Patroon
 #sets
 set: Meetset
 name: Naam
@@ -250,7 +252,6 @@ andMore: and more
 unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
 makePublic: Make public
 makePrivate: Make private
-pattern: Patroon
 patternNew: Een nieuw patroon genereren
 patternNewInfo: Kies een ontwerp, voeg je maatset toe en wij maken een naaipatroon op maat voor je.
 designNew: Een nieuw ontwerp creëren

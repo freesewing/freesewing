@@ -85,6 +85,10 @@ jaeger:
     '@freesewing/brian': *freesewing
     '@freesewing/bent': *freesewing
     '@freesewing/plugin-bust': *freesewing
+lily:
+  peer:
+    '@freesewing/titan': *freesewing    
+    '@freesewing/paco': *freesewing    
 new-design:
   _:
     'axios': &axios '1.6.8'
@@ -192,9 +196,9 @@ backend:
     'passport': '0.7.0'
     'passport-http': '0.3.0'
     'passport-jwt': '4.0.1'
-    'pino': '8.19.0'
+    'pino': '9.0.0'
     'qrcode': '1.5.3'
-    'swagger-ui-dist': '5.12.0'
+    'swagger-ui-dist': '5.17.2'
     'swagger-ui-express': '5.0.0'
   dev:
     'chai': *chai
@@ -218,12 +222,12 @@ dev:
     'lodash.orderby': &_orderby '4.6.0'
     'lodash.set': *_set
     'next': *next
-    'react': &react '18.2.0'
+    'react': &react '18.3.1'
     'react-copy-to-clipboard': &reactCopyToClipboard '5.1.0'
     'react-dom': *react
     'react-hotkeys-hook': &reactHotkeysHook '4.5.0'
     'react-instantsearch-dom': &reactInstantsearchDom '6.40.4'
-    'react-instantsearch-hooks-web': '6.47.3'
+    'react-instantsearch-hooks-web': &reactInstantsearchHooksWeb '6.47.3'
     'react-swipeable': &reactSwipeable '7.0.1'
     'react-timeago': &reactTimeago '7.2.0'
     'rehype-autolink-headings': &rehypeAutolinkHeadings '7.1.0'
@@ -256,7 +260,7 @@ lab:
     'd3-drag': &d3drag '3.0.0'
     'd3-selection': &d3selection '3.0.0'
     'daisyui': *daisyui
-    'i18next': &i18next '23.10.1'
+    'i18next': &i18next '23.11.2'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
@@ -302,12 +306,18 @@ org:
     'lodash.set': *_set
     'luxon': '3.4.4'
     'next': *next
+    'next-i18next': *nextI18next
     'ora': *ora
+    'react': *react
+    'react-dom': *react
     'react-dropzone': &dropzone '14.2.3'
     'react-hotkeys-hook': *reactHotkeysHook
+    "react-i18next": *reactI18next
     'react-instantsearch-dom': *reactInstantsearchDom
+    'react-instantsearch-hooks-web': *reactInstantsearchHooksWeb
     'react-swipeable': *reactSwipeable
     'react-timeago': *reactTimeago
+    'react-zoom-pan-pinch': &zoompanpinch '3.4.3'
     'rehype-autolink-headings': *rehypeAutolinkHeadings
     'rehype-highlight': *rehypeHighlight
     'rehype-sanitize': *rehypeSanitize
@@ -352,7 +362,7 @@ shared:
     'react': *react
     'react-dom': *react
     'react-timeago': *reactTimeago
-    'react-zoom-pan-pinch': &zoompanpinch '3.4.3'
+    'react-zoom-pan-pinch': *zoompanpinch
     'rehype-autolink-headings': *rehypeAutolinkHeadings
     'rehype-highlight': *rehypeHighlight
     'remark-frontmatter': &remarkfrontmatter '5.0.0'

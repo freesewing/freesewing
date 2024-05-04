@@ -17,4 +17,13 @@ export function subscribersRoutes(tools) {
 
   // Unsubscribe from newsletter
   app.delete('/subscriber/:ehash', (req, res) => Subscriber.unsubscribe(req, res, tools))
+
+  // One-Click unsubscribe (ocunsub) from newsletter needs to be a POST request.
+  // See https://datatracker.ietf.org/doc/html/rfc8058
+  app.post('/ocunsub/:ehash', (req, res) => Subscriber.ocunsub(req, res, tools))
+
+  // Just in case somebody lands here with a GET request
+  app.get('/ocunsub/:ehash', (req, res) =>
+    res.redirect(`https://freesewing.org/newsletter/unsubscribe?i=${req.params.ehash}`)
+  )
 }

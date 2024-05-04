@@ -1,0 +1,123 @@
+{
+  "t": "Umbra undies",
+  "d": "Umbra is a basic, highly-customizable underwear pattern.",
+  "p": {
+    "back": "Back",
+    "elastic": "Elastic",
+    "front": "Front",
+    "base": "Base"
+  },
+  "s": {
+    "legElasticLength.t": "You need 2x {{{ length }}} elastic to finish the legs (optional)",
+    "legElasticLength.d": "If you want to add elastic to your legs, you need two times {{{ length }}}.",
+    "legMeasure": "Leg elastic: 2x ",
+    "waistbandElasticLength.t": "You need 1x {{{ length }}} elastic to finish the waistband",
+    "waistbandElasticLength.d": "You need {{{ length }}} of elastic to finish the waistband opening.",
+    "waistbandMeasure": "Waistband elastic: ",
+    "minStretch.t": "You need fabric with a minimum stretch of {{ pct }}",
+    "minStretch.d": "Your waistband and fabric needs a minimum stretch of {{ pct }} so that you can comfortably fit through the waistband opening.",
+    "flipBackYes.t": "Flip upright",
+    "flipBackYes.d": "Flips the back part, which is constructed upside down, to an upright orientation",
+    "flipBackNo.t": "Keep upside down",
+    "flipBackNo.d": "Keeps the back part in its original orientation, which might help in the pattern inspector view",
+    "pockets.none.t": "No Pockets",
+    "pockets.none.d": "Create the design without any pockets (default)",
+    "pockets.inside.t": "Inside Pockets",
+    "pockets.inside.d": "Create two secret pockets on the insides and a center front pouch",
+    "pockets.zipper.t": "Front pockets with zippers",
+    "pockets.zipper.d": "Create two front pockets with zippers",
+    "foldLining": "Fold lining",
+    "pocketSeam": "Pocket seam",
+    "zipper": "Zipper"
+  },
+  "o": {
+    "bulge": {
+      "t": "Bulge",
+      "d": "Increase the bugle angle to create more room in the front pouch. Doesn't kick in below 2 degrees."
+    },
+    "bulgeFullness": {
+      "t": "Bulge fullness",
+      "d": "Determines the roundness of the bulge. Doesn't have an effect if the bulge is disabled."
+    },
+    "splitPosition": {
+      "t": "Crotch seam",
+      "d": "Determines the position of the crotch seam"
+    },
+    "gussetPosition": {
+      "t": "Gusset position",
+      "d": "Shift the gusset (crotch position with the smallest width) forwards or backwards. The default position equals the cross seam front measurement."
+    },
+    "gussetWidth": {
+      "t": "Gusset width",
+      "d": "Controls the minimum width in the crotch area"
+    },
+    "xStretch": {
+      "t": "Horizontal fabric stretch",
+      "d": "Adjust this for more or less stretchy fabric in the horizontal direction"
+    },
+    "yStretch": {
+      "t": "Vertical fabric stretch",
+      "d": "Adjust this for more or less stretchy fabric in the vertical direction"
+    },
+    "elasticStretch": {
+      "t": "Elastic stretch",
+      "d": "Adjust how much the elastics are stretched relative to the fabric"
+    },
+    "rise": {
+      "t": "Rise",
+      "d": "Controls the height of the waist. A value of 100% puts the waistband onto the measured hip line."
+    },
+    "legRise": {
+      "t": "Leg rise",
+      "d": "Controls how high the leg is cut out"
+    },
+    "frontDip": {
+      "t": "Front waist dip",
+      "d": "Controls how much the front waist curves (revealing more or less skin)"
+    },
+    "frontDipShape": {
+      "t": "Front waist dip shape",
+      "d": "Controls the shape of the front waist dip. Doesn't have much effect if the front waist dip is zero."
+    },
+    "backDip": {
+      "t": "Back waist dip",
+      "d": "Controls how much the back waist curves (revealing more or less skin)"
+    },
+    "backDipShape": {
+      "t": "Back waist dip shape",
+      "d": "Controls the shape of the back waist dip. Doesn't have much effect if the back waist dip is zero."
+    },
+    "frontExposure": {
+      "t": "Front exposure",
+      "d": "Controls the amount of exposed skin on the front"
+    },
+    "frontReduction": {
+      "t": "Front narrowing",
+      "d": "Controls by how much the front part is slimmer than the back part"
+    },
+    "pockets": {
+      "t": "Pockets",
+      "d": "Choose if you want pockets"
+    },
+    "pocketHeight": {
+      "t": "Pocket height",
+      "d": "Controls the position of the pocket hem or the zippers. Increasing this option results in shorter pockets. Only has an effect with pockets enabled."
+    },
+    "pocketGap": {
+      "t": "Pocket gap",
+      "d": "Controls how much space is left in the front between both pockets. Only has an effect with pockets enabled."
+    },
+    "backExposure": {
+      "t": "Back exposure",
+      "d": "Controls the amount of exposed skin on the back"
+    },
+    "minFabricWidth":{
+      "t": "Minimum fabric width",
+      "d": "Controls the minimum width of the thong strip and side band. Does not have an effect if the back exposure and the leg rise is low."
+    },
+    "flipBack": {
+      "t": "Flip back",
+      "d": "Determines if the back part should be rendered upside down"
+    }
+  }
+}

@@ -1,5 +1,5 @@
 ---
-maker: "Ramoth"
+author: 23386
 caption: "Ramoth Cathrin Corset ...met vlinders!"
 date: "2023-01-31"
 intro: "Hier is een fantastisch vlinderkorset van Cathrin gemaakt door Ramoth - hun allereerste! Dit deelden ze over toekomstige aanpassingen:"

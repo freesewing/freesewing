@@ -13,4 +13,4 @@ An Onyx one-piece swimsuit/unisuit made with short sleeves and short legs. It's 
 
 It uses 80% nylon / 20% spandex mid-weight swim fabric for the fashion layer, and 80% polyester / 20% spandex heavyweight swim fabric for the lining layer.
 
-Made with a front zipper, a neckband, \~30% leg and sleeve length, \~-20% ease for chest, waist, hips, upper legs, \~-10% sleeve ease, \~-10% center seam ease. The seams are made with a serger/overlocker. The hems are single-fold and made with a double-needle using a triple stretch stitch. The zipper is a 12" long, #5 gauge molded plastic zipper.
+Made with a front zipper, a neckband, ~30% leg and sleeve length, ~-20% ease for chest, waist, hips, upper legs, ~-10% sleeve ease, ~-10% center seam ease. The seams are made with a serger/overlocker. The hems are single-fold and made with a double-needle using a triple stretch stitch. The zipper is a 12" long, #5 gauge molded plastic zipper.

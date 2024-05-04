@@ -103,6 +103,25 @@
       "setSleeve"
     ]
   },
+  "bibi": {
+    "code": "Jonathan Haas",
+    "description": "A FreeSewing pattern for a knit top body block",
+    "design": [
+      "Jonathan Haas"
+    ],
+    "difficulty": 2,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "blocks",
+      "tops"
+    ],
+    "techniques": [
+      "curvedSeam",
+      "hem",
+      "flatSleeve"
+    ]
+  },
   "bob": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern for a bib",
@@ -936,6 +955,22 @@
       "curvedSeam"
     ]
   },
+  "umbra": {
+    "code": "Joost De Cock, Jonathan Haas",
+    "description": "A FreeSewing pattern for a basic, highly-customizable underwear pattern",
+    "design": "Joost De Cock, Jonathan Haas",
+    "difficulty": 2,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "bottoms",
+      "underwear"
+    ],
+    "techniques": [
+      "elastic",
+      "curvedSeam"
+    ]
+  },
   "wahid": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern for a classic fitted waistcoat",
@@ -1003,6 +1038,21 @@
       "hem",
       "button"
     ]
+  },
+  "lily": {
+    "code": "Anna Puk, Joost De Cock",
+    "description": "A FreeSewing pattern for basic leggings",
+    "design": "Anna Puk",
+    "difficulty": 2,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "bottoms"
+    ],
+    "techniques": [
+      "elastic",
+      "curvedSeam",
+      "hem"
+    ]
   }
-  
 }

@@ -13,6 +13,9 @@ function teaganSleeve({
   store,
   part,
 }) {
+  // Hide sleevecap from brian
+  paths.sleevecap.hide()
+
   const height = points.bicepsRight.x * options.sleeveLength
   let width = measurements.biceps * (1 + options.bicepsEase) * (1 + options.sleeveEase)
   if (width > points.bicepsRight.x * 2) width = points.bicepsRight.x * 2

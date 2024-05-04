@@ -8,6 +8,7 @@ import { i18n as bee } from '@freesewing/bee'
 import { i18n as bella } from '@freesewing/bella'
 import { i18n as benjamin } from '@freesewing/benjamin'
 import { i18n as bent } from '@freesewing/bent'
+import { i18n as bibi } from '@freesewing/bibi'
 import { i18n as bob } from '@freesewing/bob'
 import { i18n as breanna } from '@freesewing/breanna'
 import { i18n as brian } from '@freesewing/brian'
@@ -57,11 +58,13 @@ import { i18n as titan } from '@freesewing/titan'
 import { i18n as trayvon } from '@freesewing/trayvon'
 import { i18n as tristan } from '@freesewing/tristan'
 import { i18n as uma } from '@freesewing/uma'
+import { i18n as umbra } from '@freesewing/umbra'
 import { i18n as wahid } from '@freesewing/wahid'
 import { i18n as walburga } from '@freesewing/walburga'
 import { i18n as waralee } from '@freesewing/waralee'
 import { i18n as yuri } from '@freesewing/yuri'
 import { i18n as jane } from '@freesewing/jane'
+import { i18n as lily } from '@freesewing/lily'
 
 export const designs = {
   aaron,
@@ -70,6 +73,7 @@ export const designs = {
   bella,
   benjamin,
   bent,
+  bibi,
   bob,
   breanna,
   brian,
@@ -119,9 +123,11 @@ export const designs = {
   trayvon,
   tristan,
   uma,
+  umbra,
   wahid,
   walburga,
   waralee,
   yuri,
   jane,
+  lily,
 }

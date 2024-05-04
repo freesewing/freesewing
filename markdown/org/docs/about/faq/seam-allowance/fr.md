@@ -1,7 +1,7 @@
 ---
-title: Why are seam allowances not included by default?
+title: Pourquoi les marges de couture ne sont-elles pas incluses par défaut ?
 ---
 
-We don't include seam allowance by default because it's computationally expensive to add seam allowance since there is no closed form integral solution for offsetting a cubic Bezier curve.
+Nous n'incluons pas la marge de couture par défaut parce qu'il est coûteux de calculer la marge de couture étant donné qu'il n'y a pas de solution intégrale explicite pour compenser une courbe de Bézier cubique.
 
-We have a YouTube video with more information: [A look at the FreeSewing Timing Plugin](https://youtu.be/pn6w-O6nFbI)
+Nous avons une vidéo YouTube qui contient plus d'informations : [Un regard sur le plugin FreeSewing Timing](https://youtu.be/pn6w-O6nFbI)

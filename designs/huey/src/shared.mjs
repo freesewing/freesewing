@@ -117,7 +117,7 @@ export function draftRibbing(part, length) {
       msg: `huey:cut${capitalize(part.name.split('.')[1])}`,
       notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
       replace: {
-        w: units(height + extraSa),
+        w: units(2 * height + extraSa),
         l: units(length + extraSa),
       },
       suggest: {

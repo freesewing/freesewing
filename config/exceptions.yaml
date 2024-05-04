@@ -36,6 +36,8 @@ packageJson:
     author: SeaZeeZee (https://github.com/SeaZeeZee)
   lab:
     private: true
+  lily:
+    author: Anna Puk (https://github.com/anna-puk)
   lucy:
     author: SeaZeeZee (https://github.com/SeaZeeZee)
   lunetius: &starf

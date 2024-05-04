@@ -7,7 +7,7 @@ title: "Cornelius Radlerhosen: Anleitung zum Nähen"
 - Press under the seam allowances of the non-notched edges of the pocket facings.
 - Stecke die linke Seite der Taschenbespannung an die rechte Seite der Taschenbeutel, _Kantenstich_ die gefalteten Kanten an die Taschenbeutel.
 - _Hefte_ die Nahtzugaben der eingekerbten Kanten der Taschenbesetzungen an die Taschenbeutel.
-- Nähe die Taschenbeutel rechts auf rechts an die Vorderseite und bügle sie dann auf die linke Seite.
+- With right sides together, matching both notches, sew the pocket bags to the front and then press to the wrong side.
 - Falte die Taschen entlang der Falzlinie in der Mitte und lege sie rechtsherum zusammen. Nähen Sie den Boden des Taschenbeutels zusammen.
 - Alternativ kannst du _French Seam_ die Bodennähte der Taschenbeutel zusammennähen, wenn du das möchtest.
 - _Baste_ the top and side of the pocket bags to the front seam allowances matching notches.

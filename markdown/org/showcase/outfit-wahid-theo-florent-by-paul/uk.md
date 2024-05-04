@@ -8,6 +8,7 @@ designs:
   - "флорентійський"
   - "Тео."
   - "вахід"
+author: 433
 ---
 
 ![Вбрання від Павла](/img/showcase/outfit-wahid-theodore-florent-by-paul/high_back.jpg "Вбрання від Павла")
