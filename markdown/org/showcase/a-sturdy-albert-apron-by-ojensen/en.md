@@ -5,6 +5,7 @@ date: 20240418
 intro: "This Albert apron was Oliver's very first sewing project!"
 author: null
 designs: ["albert"]
+author: 29576
 ---
 
 This Albert apron was Oliver's very first sewing project! They made it out of a fairly sturdy duck canvas. We think this is a great intro to sewing and excellent work!
