@@ -5,7 +5,7 @@ title: "Bust adjustment"
 If the pattern should be drafted with a basic full bust adjustment (FBA). 
 This will result in a more fitted garment for people with breasts.
 
-If you don't enable this option, Tina will essentially be drafted
+If you don't enable this option, Bibi will essentially be drafted
 for a body without breasts that has the same chest circumference as
 your body with breasts. For people with breasts, this will cause a 
 bunch of extra fabric at the chest and armholes that will make the 
