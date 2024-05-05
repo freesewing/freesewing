@@ -127,7 +127,7 @@ function bibiFront({
     0,
     points.neck.y + options.necklineDepth * points.neck.dy(points.cfBust)
   )
-  points.cfNeckCp1 = points.cfNeck.shift(0, points.hps.x * options.necklineBend * 2)
+  points.cfNeckCp1 = points.cfNeck.shift(0, points.neck.x * options.necklineBend)
   points.neckCp2 = points.neck
     .shiftTowards(points.shoulder, points.neck.dy(points.cfNeck) * (0.2 + options.necklineBend))
     .rotate(-90, points.neck)

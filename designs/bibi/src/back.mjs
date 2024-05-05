@@ -22,12 +22,14 @@ export const back = {
     s3Armhole: 0,
     brianFitSleeve: true,
     brianFitCollar: false,
-    bicepsEase: 0.05,
+    bicepsEase: { pct: 5, min: 0, max: 50, menu: 'fit' },
     collarEase: 0,
     shoulderSlopeReduction: 0,
     sleeveWidthGuarantee: 0.85,
     frontArmholeDeeper: 0.01,
     legacyArmholeDepth: false,
+    // Unused as legacyArmholeDepth is disabled, hide option in documentation
+    armholeDepthFactor: 0.5,
     shoulderEase: { pct: 0, min: -2, max: 6, menu: 'fit' },
     // Note: we reuse Brian's cuff ease as "armhole fullness"
     cuffEase: {
@@ -88,7 +90,7 @@ export const back = {
           ? 'style.length'
           : false,
     },
-    necklineWidth: { pct: 30, min: 10, max: 90, menu: 'style' },
+    necklineWidth: { pct: 15, min: -5, max: 90, menu: 'style' },
     strapWidth: {
       pct: 40,
       min: 5,
@@ -97,7 +99,7 @@ export const back = {
     },
     sleeves: { bool: true, menu: 'style.sleeves' },
 
-    backNeckCutout: { pct: 15, min: 6, max: 110, menu: 'style' },
+    backNeckCutout: { pct: 6, min: 2, max: 110, menu: 'style' },
     backNeckBend: { pct: 50, min: 0, max: 70, menu: 'style' },
   },
   draft: bibiBack,
@@ -159,7 +161,7 @@ function bibiBack({
     0,
     points.neck.y + options.backNeckCutout * points.neck.dy(points.cbChest)
   )
-  points.cbNeckCp1 = points.cbNeck.shift(0, points.hps.x * options.backNeckBend * 2)
+  points.cbNeckCp1 = points.cbNeck.shift(0, points.neck.x * options.backNeckBend)
   points.neckCp2 = points.neck
     .shiftTowards(points.shoulder, points.neck.dy(points.cbNeck) * (0.2 + options.backNeckBend))
     .rotate(-90, points.neck)
