@@ -326,7 +326,21 @@ function bibiFront({
     id: 'hNeckToArmhole',
     from: points.neck,
     to: points.armhole,
+    x: points.armhole.x + sa + 30,
+  })
+
+  macro('vd', {
+    id: 'hShoulderToArmhole',
+    from: points.shoulder,
+    to: points.armhole,
     x: points.armhole.x + sa + 15,
+  })
+
+  macro('vd', {
+    id: 'hSide',
+    from: points.armhole,
+    to: points.hem,
+    x: points.hem.x + sa + 15,
   })
 
   if (paths.dart) {

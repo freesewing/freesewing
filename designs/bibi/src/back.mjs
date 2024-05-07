@@ -263,10 +263,24 @@ function bibiBack({
   })
 
   macro('vd', {
+    id: 'hShoulderToArmhole',
+    from: points.shoulder,
+    to: points.armhole,
+    x: points.armhole.x + sa + 15,
+  })
+
+  macro('vd', {
+    id: 'hSide',
+    from: points.armhole,
+    to: points.hem,
+    x: points.hem.x + sa + 15,
+  })
+
+  macro('vd', {
     id: 'hNeckToArmhole',
     from: points.neck,
     to: points.armhole,
-    x: points.armhole.x + sa + 15,
+    x: points.armhole.x + sa + 30,
   })
 
   plotSideLineMeasurements(points, paths.sideSeam, utils, macro)
