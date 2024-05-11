@@ -13,4 +13,4 @@ To make Opal, you will need the following:
 	- Long legs and a looser fit will increase fabric requirements. Pockets usually can be fit on the otherwise wasted portion of the fabric, and don't change the fabric length requirement.
 	- A pair of shortalls for a typical adult will need about 2 meters of fabric.
 	
-</Warning
+</Warning>
