@@ -4,7 +4,7 @@ _types:
       '@freesewing/core': &freesewing '{{version}}'
     dev:
       'mocha': &mocha '10.4.0'
-      'chai': &chai '5.1.0'
+      'chai': &chai '5.1.1'
       '@freesewing/models': *freesewing
       '@freesewing/plugin-timing': *freesewing
   plugin:
@@ -93,7 +93,7 @@ new-design:
   _:
     'axios': &axios '1.6.8'
     'chalk': '5.3.0'
-    'execa': '8.0.1'
+    'execa': '9.0.1'
     'mustache': &mustache '4.2.0'
     'ora': &ora '8.0.1'
     'prompts': '2.4.2'
@@ -183,7 +183,7 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.535.0'
+    '@aws-sdk/client-sesv2': '3.572.0'
     '@prisma/client': &prisma '5.13.0'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
@@ -198,12 +198,12 @@ backend:
     'passport-jwt': '4.0.1'
     'pino': '9.0.0'
     'qrcode': '1.5.3'
-    'swagger-ui-dist': '5.17.2'
+    'swagger-ui-dist': '5.17.7'
     'swagger-ui-express': '5.0.0'
   dev:
     'chai': *chai
     'chai-http': '4.4.0'
-    'esbuild': '0.20.2'
+    'esbuild': '0.21.1'
     'mocha': *mocha
     'mocha-steps': '1.3.0'
     'nodemon': '3.1.0'
@@ -216,8 +216,8 @@ dev:
     '@mdx-js/runtime': &mdxRuntime '2.0.0-next.9'
     '@next/bundle-analyzer': &next '14.2.3'
     '@tailwindcss/typography': &tailwindTypography '0.5.13'
-    'algoliasearch': '4.22.1'
-    'daisyui': &daisyui '4.10.4'
+    'algoliasearch': &algoliasearch '4.23.3'
+    'daisyui': &daisyui '4.11.1'
     'lodash.get': *_get
     'lodash.orderby': &_orderby '4.6.0'
     'lodash.set': *_set
@@ -255,12 +255,12 @@ lab:
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': *mdxRuntime
     '@tailwindcss/typography': *tailwindTypography
-    'algoliasearch': &algoliasearch '4.22.1'
+    'algoliasearch': *algoliasearch
     'd3-dispatch': &d3dispatch '3.0.1'
     'd3-drag': &d3drag '3.0.0'
     'd3-selection': &d3selection '3.0.0'
     'daisyui': *daisyui
-    'i18next': &i18next '23.11.2'
+    'i18next': &i18next '23.11.3'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
@@ -287,7 +287,7 @@ lab:
 
 org:
   _:
-    '@bugsnag/js': &bugsnag 7.22.4
+    '@bugsnag/js': &bugsnag 7.23.0
     '@bugsnag/plugin-react': 7.22.7
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
@@ -335,7 +335,7 @@ org:
 shared:
   _:
     '@next/mdx': *next
-    '@resvg/resvg-js': '2.6.0'
+    '@resvg/resvg-js': '2.6.2'
     '@tailwindcss/typography': *tailwindTypography
     'Buffer': '0.0.0'
     'd3-dispatch': '3.0.1'
@@ -357,7 +357,7 @@ shared:
     'mdast-util-toc': '7.0.1'
     'mermaid': '10.9.0'
     'ora': *ora
-    'pdfkit': &pdfkit '0.14.0'
+    'pdfkit': &pdfkit '0.15.0'
     'postcss-for': &postcssfor '2.1.1'
     'react': *react
     'react-dom': *react
