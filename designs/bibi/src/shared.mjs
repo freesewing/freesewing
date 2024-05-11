@@ -367,15 +367,16 @@ export function createArmHoles(
       const sleeveCapFactor = (options.sleeveLength + 0.2) * 4
       const capLength = sleeveCapFactor * store.get('sleeveCapHeight')
       points.sleeveCap = points.shoulder.shift(
-        points.neck.angle(points.shoulder) - 15 + options.cuffEase * 15,
+        points.neck.angle(points.shoulder) - 30 + options.cuffEase * 15,
         capLength
       )
       points.sleeveCapStart = points.shoulder.shift(
         points.neck.angle(points.shoulder),
         capLength * -0.2
       )
+      points.armholePitchCp1 = points.sleeveCapStart.rotate(90, points.sleeveCap)
       points.sleeveCapCp = points.sleeveCap
-        .shiftTowards(points.armholePitchCp1, capLength * 0.2)
+        .shiftTowards(points.armholePitchCp1, capLength * 0.3)
         .rotate(-90, points.sleeveCap)
       paths.shoulder = new Path()
         .move(points.sleeveCap)
