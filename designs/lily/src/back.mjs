@@ -197,7 +197,6 @@ function draftLilyBack({
   }
   // Adapt the vertical placement of the seat control point to the lowered waist
   points.seatOutCp2.y = points.seatOut.y - points.styleWaistOutLily.dy(points.seatOut) / 2
-  let test = points.styleWaistInLily.dist(points.styleWaistOutLily)
   store.set('backWaist', points.styleWaistInLily.dist(points.styleWaistOutLily))
 
   // Paths
@@ -573,7 +572,6 @@ export const back = {
     waistEase: { pct: -4, min: -20, max: 0, menu: 'fit' }, // -fabricStretch/10,
     seatEase: { pct: -4, min: -20, max: 0, menu: 'fit' }, // -fabricStretch/10,
     kneeEase: { pct: -4, min: -20, max: 0, menu: 'fit' }, // -fabricStretch/10,
-    //test: {pct: back.options.fabricStretch/2, min: 0, max: 50, menu: 'fit'},
     lengthBonus: 0,
     lengthReduction: {
       pct: 0,
