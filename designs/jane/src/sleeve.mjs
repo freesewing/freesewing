@@ -19,6 +19,7 @@ export const sleeve = {
     macro,
     measurements,
     part,
+    store,
   }) {
     const sleeveWidth = measurements.biceps * (1 + options.bicepsEase)
 

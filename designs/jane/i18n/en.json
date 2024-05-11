@@ -1,5 +1,5 @@
 {
-  "t": "Jane",
+  "t": "Jane 1790's shift",
   "d": "A FreeSewing pattern for a 1790s shift",
   "p": {
     "body": "Body", 
@@ -32,7 +32,7 @@
       "t": "Gusset Size",
       "d": "Controls the size of the gusset"
     },
-    "bicepEase": {
+    "bicepsEase": {
       "t": "Bicep Ease",
       "d": "Controls the ease in the sleeve"
     },

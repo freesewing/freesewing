@@ -31,6 +31,7 @@ export const body = {
     macro,
     measurements,
     part,
+    store,
   }) {
     //body
     const lengthBody =
