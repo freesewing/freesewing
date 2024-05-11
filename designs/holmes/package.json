@@ -57,7 +57,7 @@
   },
   "devDependencies": {
     "mocha": "10.4.0",
-    "chai": "5.1.0",
+    "chai": "5.1.1",
     "@freesewing/models": "3.2.0",
     "@freesewing/plugin-timing": "3.2.0"
   },
