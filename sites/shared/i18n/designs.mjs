@@ -40,6 +40,7 @@ import { i18n as naomiwu } from '@freesewing/naomiwu'
 import { i18n as noble } from '@freesewing/noble'
 import { i18n as octoplushy } from '@freesewing/octoplushy'
 import { i18n as onyx } from '@freesewing/onyx'
+import { i18n as opal } from '@freesewing/opal'
 import { i18n as otis } from '@freesewing/otis'
 import { i18n as paco } from '@freesewing/paco'
 import { i18n as penelope } from '@freesewing/penelope'
@@ -105,6 +106,7 @@ export const designs = {
   noble,
   octoplushy,
   onyx,
+  opal,
   otis,
   paco,
   penelope,
