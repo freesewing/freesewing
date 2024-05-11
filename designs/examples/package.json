@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/examples",
-  "version": "3.2.0",
+  "version": "3.3.0-rc.1",
   "description": "A FreeSewing pattern holding examples for our documentation",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -44,15 +44,15 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.2.0",
-    "@freesewing/plugin-gore": "3.2.0"
+    "@freesewing/core": "3.3.0-rc.1",
+    "@freesewing/plugin-gore": "3.3.0-rc.1"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.4.0",
     "chai": "5.1.1",
-    "@freesewing/models": "3.2.0",
-    "@freesewing/plugin-timing": "3.2.0"
+    "@freesewing/models": "3.3.0-rc.1",
+    "@freesewing/plugin-timing": "3.3.0-rc.1"
   },
   "files": [
     "dist/*",
@@ -60,7 +60,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">= 18.17.0 <22"
