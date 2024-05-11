@@ -2,4 +2,4 @@
 title: "Jane"
 ---
 
-<PatternDocs pattern='jane' />
+<DesignDocs pattern='jane' />
