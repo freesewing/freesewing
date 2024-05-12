@@ -29,6 +29,7 @@ import { Popout } from '../swizzle/popout.mjs'
 import { TemporaryLoader } from '../swizzle/loaders.mjs'
 // Views
 import { DesignsView } from '../swizzle/designs-view.mjs'
+import { ErrorView } from '../swizzle/error-view.mjs'
 import { MeasurementsView } from '../swizzle/measurements-view.mjs'
 
 /*
@@ -46,5 +47,16 @@ export const useComponents = (props) => ({
   Popout: props?.Popout || Popout,
   // Views
   DesignsView: props?.DesignsView || DesignsView,
+  ErrorView: props?.ErrorView || ErrorView,
   MeasurementsView: props?.MeasurementsView || MeasurementsView,
+})
+
+/*
+ * This hook returns all view that can be swizzled
+ * So either the passed-in view, or the default one
+ */
+export const useViews = (props) => ({
+  designs: props?.DesignsView || DesignsView,
+  error: props?.ErrorView || ErrorView,
+  measurements: props?.MeasurementsView || MeasurementsView,
 })

@@ -1,5 +1,10 @@
-import { EditorView } from './components/editor-view.mjs'
+import { ViewWrapper } from './components/view-wrapper.mjs'
 import { useCompnents } from './hooks/use-components.mjs'
+
+/*
+ * Namespaces used by the pattern editor
+ */
+export const ns = ['pe']
 
 /**
  * PatternEditor is the high-level FreeSewing component
@@ -20,9 +25,9 @@ export const PatternEditor = (props) => {
   if (lackingProps !== false) return <LackingPropsError error={lackingProps} />
 
   /*
-   * Now return the editor view
+   * Now return the view wrapper
    */
-  return <EditorView {...props} />
+  return <ViewWrapper {...props} />
 }
 
 /**
