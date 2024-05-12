@@ -1,5 +1,5 @@
 ---
-title: "Jane"
+title: "Jane 1790's shift"
 ---
 
-<DesignDocs pattern='jane' />
+<DesignInfo design='jane' docs />

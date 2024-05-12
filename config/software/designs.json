@@ -493,7 +493,7 @@
     "design": "SeaZeeZee",
     "difficulty": 2,
     "lab": true,
-    "org": false,
+    "org": true,
     "tags": [
       "tops",
       "historical",

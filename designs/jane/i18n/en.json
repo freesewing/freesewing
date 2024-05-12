@@ -2,8 +2,8 @@
   "t": "Jane 1790's shift",
   "d": "A FreeSewing pattern for a 1790s shift",
   "p": {
-    "body": "Body", 
-    "sleeve": "Sleeve", 
+    "body": "Body",
+    "sleeve": "Sleeve",
     "gusset": "Gusset"
    },
   "s": { },
@@ -36,9 +36,9 @@
       "t": "Bicep Ease",
       "d": "Controls the ease in the sleeve"
     },
-    "sleeveBonus": {
+    "sleeveLength": {
       "t": "Sleeve Length",
       "d": "Controls the length of the sleeve"
     }
-}
+  }
 }
