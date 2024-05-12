@@ -1,10 +1,12 @@
 import { ViewWrapper } from './components/view-wrapper.mjs'
-import { useCompnents } from './hooks/use-components.mjs'
+import { useComponents } from './hooks/use-components.mjs'
+import { useHooks } from './hooks/use-hooks.mjs'
+import { useMethods } from './hooks/use-methods.mjs'
 
 /*
  * Namespaces used by the pattern editor
  */
-export const ns = ['pe']
+export const ns = ['pe', 'measurements']
 
 /**
  * PatternEditor is the high-level FreeSewing component
@@ -13,11 +15,19 @@ export const ns = ['pe']
  * @param {object} props.design = The name of the design we are editing
  * @param {object} props.designs = An object holding the designs code
  * @param {object} props.components = An object holding components to swizzle
+ * @param {object} props.hooks = An object holding hooks to swizzle
  * @param {object} props.methods = An object holding methods to swizzle
  * @param {object} props.defaults = An object holding defaults to swizzle
  *
  */
 export const PatternEditor = (props) => {
+  /*
+   * Allow swizzling of components and methods
+   */
+  const methods = useMethods(props.methods)
+  const components = useComponents(props.components, methods)
+  const hooks = useHooks(props.hooks, methods)
+
   /*
    * First of all, make sure we have all the required props
    */
@@ -27,7 +37,7 @@ export const PatternEditor = (props) => {
   /*
    * Now return the view wrapper
    */
-  return <ViewWrapper {...props} />
+  return <ViewWrapper {...props} {...{ components, methods, hooks }} />
 }
 
 /**

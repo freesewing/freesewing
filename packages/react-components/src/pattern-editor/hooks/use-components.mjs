@@ -22,41 +22,83 @@
  * Import of components that can be swizzled
  */
 // Accordion
-import { BaseAccordion, SubAccordion, Accordion } from '../swizzle/accordion.mjs'
+import { BaseAccordion, SubAccordion, Accordion } from '../swizzle/components/accordion.mjs'
 // Popout
-import { Popout } from '../swizzle/popout.mjs'
+import { Popout } from '../swizzle/components/popout.mjs'
 // Loader
-import { TemporaryLoader } from '../swizzle/loaders.mjs'
+import { TemporaryLoader } from '../swizzle/components/loaders.mjs'
+// (curated) Sets
+import {
+  UserSetPicker,
+  BookmarkedSetPicker,
+  CuratedSetPicker,
+} from '../swizzle/components/sets.mjs'
+// Icons
+import { CloseIcon } from '../swizzle/components/icons.mjs'
+// Measurements Editor
+import { MeasurementsEditor } from '../swizzle/components/measurements-editor.mjs'
+// inputs
+import {
+  FormControl,
+  ButtonFrame,
+  NumberInput,
+  StringInput,
+  DesignDropdown,
+  ListInput,
+  MarkdownInput,
+  MeasurementInput,
+  ToggleInput,
+} from '../swizzle/components/inputs.mjs'
 // Views
-import { DesignsView } from '../swizzle/designs-view.mjs'
-import { ErrorView } from '../swizzle/error-view.mjs'
-import { MeasurementsView } from '../swizzle/measurements-view.mjs'
+import { DesignsView } from '../swizzle/components/designs-view.mjs'
+import { ErrorView } from '../swizzle/components/error-view.mjs'
+import { MeasurementsView } from '../swizzle/components/measurements-view.mjs'
+
+/**
+ * This object holds all components that can be swizzled
+ */
+const defaultComponents = {
+  Accordion,
+  BaseAccordion,
+  BookmarkedSetPicker,
+  ButtonFrame,
+  CloseIcon,
+  CuratedSetPicker,
+  DesignDropdown,
+  DesignsView,
+  ErrorView,
+  FormControl,
+  ListInput,
+  MarkdownInput,
+  MeasurementInput,
+  MeasurementsView,
+  MeasurementsEditor,
+  NumberInput,
+  Popout,
+  StringInput,
+  SubAccordion,
+  TemporaryLoader,
+  ToggleInput,
+  UserSetPicker,
+}
 
 /*
  * This hook returns a component that can be swizzled
  * So either the passed-in component, or the default one
  */
-export const useComponents = (props) => ({
-  // accordion.mjs
-  Accordion: props?.Accordion || Accordion,
-  BaseAccordion: props?.BaseAccordion || Accordion,
-  SubAccordion: props?.SubAccordion || SubAccordion,
-  // loaders.mjs
-  TemporaryLoader: props?.TemporaryLoader || TemporaryLoader,
-  // popout.mjs
-  Popout: props?.Popout || Popout,
-  // Views
-  DesignsView: props?.DesignsView || DesignsView,
-  ErrorView: props?.ErrorView || ErrorView,
-  MeasurementsView: props?.MeasurementsView || MeasurementsView,
-})
+export const useComponents = (components = {}, methods = {}) => {
+  /*
+   * We need to pass down the resulting components, swizzled or not
+   * So we put this in this object so we can pass that down
+   */
+  const all = {}
+  for (let [name, Component] of Object.entries(defaultComponents)) {
+    if (components[name]) Component = components[name]
+    all[name] = (props) => <Component {...props} components={all} methods={methods} />
+  }
 
-/*
- * This hook returns all view that can be swizzled
- * So either the passed-in view, or the default one
- */
-export const useViews = (props) => ({
-  designs: props?.DesignsView || DesignsView,
-  error: props?.ErrorView || ErrorView,
-  measurements: props?.MeasurementsView || MeasurementsView,
-})
+  /*
+   * Return all components
+   */
+  return all
+}

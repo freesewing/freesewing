@@ -20,10 +20,15 @@ const PatternEditorPage = ({ page, docs }) => {
   const { t } = useTranslation(ns)
   const router = useRouter()
   const { locale } = router
+  /*
+   * Swizzled methods get an object holding swizzled methods as their
+   * first parameter. So we need to strip that out.
+   */
+  const altT = (methods, ...params) => t(...params)
 
   return (
     <PageWrapper {...page} title="Pattern Editor" layout={EditorLayout} footer={false}>
-      <PatternEditor {...{ designs, locale }} components={{}} methods={{ t }} />
+      <PatternEditor {...{ designs, locale }} components={{}} methods={{ t: altT }} />
     </PageWrapper>
   )
 }

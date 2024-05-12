@@ -19,65 +19,57 @@
  *************************************************************************/
 
 /*
- * This hook returns methods that can be swizzled
- * So either the passed-in methods, or the default ones
+ * Import of methods that can be swizzled
  */
-export const useMethods = (props) => ({
-  hasRequiredMeasurements: props?.hasRequiredMeasurements || hasRequiredMeasurements,
-  nsMerge: props?.nsMerge || nsMerge,
-  t: props?.t || t,
-})
+import { hasRequiredMeasurements } from '../swizzle/methods/has-required-measurements.mjs'
+import { isDegreeMeasurement } from '../swizzle/methods/is-degree-measurement.mjs'
+import { measurementAsMm } from '../swizzle/methods/measurement-as-mm.mjs'
+import { measurementAsUnits } from '../swizzle/methods/measurement-as-units.mjs'
+import { nsMerge } from '../swizzle/methods/ns-merge.mjs'
+import { objUpdate } from '../swizzle/methods/obj-update.mjs'
+import { parseDistanceInput } from '../swizzle/methods/parse-distance-input.mjs'
+import { round } from '../swizzle/methods/round.mjs'
+import { t } from '../swizzle/methods/t.mjs'
+/*
+ * Placeholder for methods that need to be swizzled or won't be available
+ */
+import { noop } from '../swizzle/methods/noop.mjs'
 
 /**
- * Helper method to merge arrays of translation namespaces
- *
- * Note that this method is variadic
- *
- * @param {[string]} namespaces - A string or array of strings of namespaces
- * @return {[string]} namespaces - A merged array of all namespaces
+ * This object holds all methods that can be swizzled
  */
-const nsMerge = (...args) => {
-  const ns = new Set()
-  for (const arg of args) {
-    if (typeof arg === 'string') ns.add(arg)
-    else if (Array.isArray(arg)) {
-      for (const el of nsMerge(...arg)) ns.add(el)
-    }
-  }
-
-  return [...ns]
-}
-
-/**
- * Helper method to determine whether all required measurements for a design are present
- *
- * @param {object} Design - The FreeSewing design (or a plain object holding measurements)
- * @param {object} measies - An object holding the user's measurements
- * @return {array} result - An array where the first element is true when we
- * have all measurements, and false if not. The second element is a list of
- * missing measurements.
- */
-const hasRequiredMeasurements = (Design, measies = {}) => {
-  /*
-   * If design is just a plain object holding measurements, restructure it as a Design
-   */
-  if (!Design.patternConfig) Design = { patternConfig: { measurements } }
-
-  /*
-   * Walk required measuremnets, and keep track of what's missing
-   */
-  const missing = []
-  for (const m of Design.patternConfig?.measurements || []) {
-    if (typeof measies[m] === 'undefined') missing.push(m)
-  }
-
-  /*
-   * Return true or false, plus a list of missing measurements
-   */
-  return [missing.length === 0, missing]
+const defaultMethods = {
+  hasRequiredMeasurements,
+  isDegreeMeasurement,
+  measurementAsMm,
+  measurementAsUnits,
+  nsMerge,
+  objUpdate,
+  parseDistanceInput,
+  round,
+  setModal: noop,
+  t,
 }
 
 /*
- * A translation fallback method in case none is passed in
+ * This hook returns methods that can be swizzled
+ * So either the passed-in methods, or the default ones
  */
-const t = (key) => key
+export const useMethods = (methods) => {
+  /*
+   * We need to pass down the resulting methods, swizzled or not
+   * because some methods rely on other (possibly swizzled) methods.
+   * So we put this in this object so we can pass that down
+   */
+  const all = {}
+  for (let [name, method] of Object.entries(defaultMethods)) {
+    if (methods[name]) method = methods[name]
+    console.log({ name, method })
+    all[name] = (...params) => method(all, ...params)
+  }
+
+  /*
+   * Return all methods
+   */
+  return all
+}

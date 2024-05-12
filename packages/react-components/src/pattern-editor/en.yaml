@@ -1,3 +1,23 @@
+# Popout component
+comment: Comment
+note: Note
+tip: Tip
+warning: Warning
+fixme: FIXME
+link: Link
+related: Related
+
+# Designs view
 pickADesign: Pick a design
+
+# Mesurements view
+measurements: Measurements
+measurementsAreOk: We have all required measurements to draft this pattern.
+editMeasurements: Edit Measurments
+editMeasurementsDesc: You can manually set or override measurements below.
+requiredMeasurements: Required Measurements
+optionalMeasurements: Optional Measurements
+
+# View wrapper
 requiredPropsMissing.t: Required props are missing
 requiredPropsMissing.d: The FreeSewing pattern editor needs to be initialized properly. It currently lacks some props to be able to bootstrap.

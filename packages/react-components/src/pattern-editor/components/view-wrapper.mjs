@@ -1,26 +1,7 @@
 // Hooks
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { usePatternSettings } from '../hooks/use-pattern-settings.mjs'
 import { useDefaults } from '../hooks/use-defaults.mjs'
-import { useMethods } from '../hooks/use-methods.mjs'
-import { useViews } from '../hooks/use-components.mjs'
-
-/*
- * Object holding all views
- */
-const views = {
-  //  measies: MeasiesView,
-  //  draft: DraftView,
-  //  print: PrintView,
-  //  cut: CutView,
-  //  export: ExportView,
-  //  edit: EditView,
-  //  test: TestView,
-  //  logs: LogView,
-  //  inspect: InspectView,
-  //  time: TimeView,
-  //  docs: DocsView,
-}
 
 /**
  * The editor view wrapper component
@@ -29,6 +10,7 @@ const views = {
  * and handles state for the pattern, inclding the view
  *
  * @param {object} props.components - An object holding all components that might be swizzled
+ * @param {object} props.hooks - An object holding all hooks that might be swizzled
  * @param {object} props.methods - An object holding all methods that might be swizzled
  * @param {object} props.defaults - An object holding all defaults that might be swizzled
  * @param {object} props.designs - An object holding all designs
@@ -37,8 +19,26 @@ const views = {
  * @param {function} props.t - Translation method
  */
 export const ViewWrapper = (props) => {
-  // Swizzled defaults
+  /*
+   * Get swizzled defaults
+   */
   const { ui: defaultUi } = useDefaults(props.defaults)
+
+  /*
+   * Get swizzled useAccount and useControlState hooks
+   */
+  const { useAccount, useControlState } = props.hooks
+
+  /*
+   * Get swizzled objUpdate method
+   */
+  const { objUpdate } = props.methods
+
+  /*
+   * Load account data and control state
+   */
+  const { account } = useAccount()
+  const controlState = useControlState()
 
   // React state
   const [design, setDesign] = useState()
@@ -52,14 +52,44 @@ export const ViewWrapper = (props) => {
   //useEffect(() => {
   //},[])
 
+  // Helper methods for settings/ui updates
+  const update = useMemo(
+    () => ({
+      settings: (path, val) =>
+        setSettings((curSettings) => objUpdate({ ...curSettings }, path, val)),
+      ui: (path, val) => setUi((curUi) => objUpdate({ ...curUi }, path, val)),
+      toggleSa: () => {
+        setSettings((curSettings) => {
+          const sa = curSettings.samm || (account?.imperial ? 15.3125 : 10)
+
+          if (curSettings.sabool)
+            return objUpdate({ ...curSettings }, [
+              [['sabool'], 0],
+              [['sa'], 0],
+              [['samm'], sa],
+            ])
+          else {
+            return objUpdate({ ...curSettings }, [
+              [['sabool'], 1],
+              [['sa'], sa],
+              [['samm'], sa],
+            ])
+          }
+        })
+      },
+      setControl: controlState.update,
+    }),
+    [setSettings, setUi, account, controlState]
+  )
+
   // Figure out what view to load
   const [View, viewProps] = viewfinder({
     ...props,
-    state: { view, setView, design, setDesign },
+    state: { view, setView, design, setDesign, settings },
   })
 
   // Render the view
-  return <View {...viewProps} />
+  return <View {...viewProps} update={update} />
 }
 
 /**
@@ -77,82 +107,52 @@ export const ViewWrapper = (props) => {
  */
 const viewfinder = (props) => {
   /*
-   * Allow swizzling of methods
+   * Grab design from props or state
    */
-  const { t } = useMethods(props.methods)
+  const design = props.design || props.state?.design
+  const Design = design ? props.designs[design] : false
 
   /*
-   * Allow swizzling of views
+   * Shared props to pass down to all views
    */
-  const views = useViews(props.components)
+  const sharedProps = {
+    components: props.components,
+    methods: props.methods,
+    design,
+    Design,
+    locale: props.locale || 'en',
+    ...props.state,
+  }
+
+  /*
+   * Construct object holding all views from swizzled components
+   */
+  const views = {
+    designs: props.components.DesignsView,
+    measurements: props.components.MeasurementsView,
+    error: props.components.ErrorView,
+  }
 
   /*
    * If no design is set, return the designs view
    */
-  if (!props.designs[props.design] && !props.designs[props.state?.design])
-    return [
-      views.designs,
-      {
-        t: props.methods.t,
-        designs: props.designs,
-        setDesign: props.state.setDesign,
-      },
-    ]
+  if (!props.designs[design]) return [views.designs, { ...sharedProps, designs: props.designs }]
+
+  /*
+   * If we have a design, do we have the measurements?
+   */
+  const [measurementsOk, missing] = props.methods.hasRequiredMeasurements(props.designs[design])
+  if (!measurementsOk) return [views.measurements, { ...sharedProps, missingMeasurements: missing }]
 
   /*
    * If no view is set, return view picker
    */
-  if (typeof props.state?.view === 'undefined')
-    return [
-      views.error,
-      {
-        locale: props.locale || 'en',
-        t: props.methods.t,
-        state: props.state,
-      },
-    ]
+  if (!props.state?.view) return [views.error, sharedProps]
 
   /*
-   * If a view is set, don't fight it
+   * If a view is set, return that
    */
   if (props.state?.view && views[props.state?.view]) return [views[props.state?.view], props]
 
-  /*
-   * Do we have a design?
-   */
-  if (!props.designs[props.design] && !props.designs[props.state?.design])
-    return [
-      views.designs,
-      {
-        designs: props.designs,
-        locale: props.locale || 'en',
-        t: props.methods.t,
-        setDesign: props.state.setDesign,
-      },
-    ]
-
-  /*
-   * Do we have the measurements?
-   */
-  const [measiesOk, missing] = props.methods.hasRequiredMeasurements(
-    props.designs[props.design || props.state?.design]
-  )
-  if (!measiesOk)
-    return [
-      views.measies,
-      {
-        locale: props.locale || 'en',
-        t: props.methods.t,
-        ...props.state,
-      },
-    ]
-
-  return [
-    views.error,
-    {
-      locale: props.locale || 'en',
-      t: props.methods.t,
-      setView: props.state.setView,
-    },
-  ]
+  return [views.error, sharedProps]
 }

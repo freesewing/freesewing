@@ -123,6 +123,8 @@ plugintest:
 react-components:
   _:
     html-react-parser: "^5.0.7"
+    use-local-storage-state: "19.1.0"
+    axios: *axios
   peer:
     react: '>=14'
 rehype-jargon:

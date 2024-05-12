@@ -1,7 +1,5 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useState } from 'react'
-import { CloseIcon as DefaultCloseIcon } from './icons.mjs'
-import { useSwizzle } from '../index.mjs'
 
 const colors = {
   comment: 'secondary',
@@ -18,15 +16,23 @@ const colors = {
 
 /**
  * This popout component is a way to make some content stand out
+ *
+ * @param {object} components - Object holding possibly swizzled components
+ * @param {object} methods - Object holding possibly swizzled methods
  */
 export const Popout = (props) => {
-  const [hide, setHide] = useState(false)
-  if (hide) return null
+  /*
+   * Load (swizzled) components
+   */
+  const { CloseIcon } = props.components
 
   /*
-   * Allow swizzling close icon
+   * Load (swizzled) methods
    */
-  const { CloseIcon } = useSwizzle()
+  const { t } = props.methods
+
+  const [hide, setHide] = useState(false)
+  if (hide) return null
 
   let type = 'none'
   for (const t in colors) {
@@ -51,7 +57,7 @@ export const Popout = (props) => {
         <div className={`font-bold uppercase text-${color}`}>
           {props.title || (
             <>
-              <span>{t(`popout:${type}`).toUpperCase()}</span>
+              <span>{t(`pe:${type}`).toUpperCase()}</span>
               <span className="px-3">|</span>
             </>
           )}
@@ -72,7 +78,7 @@ export const Popout = (props) => {
         <div className={`font-bold flex flex-row gap-1 items-end justify-between`}>
           <div>
             <span className={`font-bold uppercase text-${color}`}>
-              {type === 'tldr' ? 'TL;DR' : t(`popout:${type}`).toUpperCase()}
+              {type === 'tldr' ? 'TL;DR' : t(`pe:${type}`).toUpperCase()}
             </span>
             <span className={`font-normal text-base text-${color}`}>
               {type === 'comment' && (
