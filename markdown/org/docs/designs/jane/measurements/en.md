@@ -2,4 +2,4 @@
 title: "Jane Shift: Required Measurements"
 ---
 
-<PatternMeasurements pattern='jane' />
+<DesignMeasurements design='jane' />

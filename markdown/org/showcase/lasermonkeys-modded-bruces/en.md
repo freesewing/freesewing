@@ -1,6 +1,6 @@
 ---
 title: "Lasermonkey's modded Bruces"
-caption: "This is the pair that kicked off "the underwear thing""
+caption: "This is the pair that kicked off 'the underwear thing'"
 date: 20240429
 intro: "The FreeSewing community on Discord has enjoyed following along the journey of these Bruce modifications."
 author: 31287
