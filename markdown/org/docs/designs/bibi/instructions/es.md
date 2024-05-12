@@ -1,5 +1,5 @@
 ---
-title: "Bibi Body Block: Sewing Instructions"
+title: "Bibi body block: Sewing Instructions"
 ---
 
 <Note>

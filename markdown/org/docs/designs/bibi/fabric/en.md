@@ -1,5 +1,5 @@
 ---
-title: "Bibi Body Block: Fabric Options"
+title: "Bibi body block: Fabric Options"
 ---
 
 Bibi is by default designed as a close-fitting top and is best suited to knit fabrics with some stretch, such as jersey.

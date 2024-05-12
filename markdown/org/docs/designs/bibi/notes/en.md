@@ -1,8 +1,8 @@
 ---
-title: "Bibi Body Block: Designer Notes"
+title: "Bibi body block: Designer Notes"
 ---
 
-When I was designing the Tina top, I originally was basing the pattern on 
+When I was designing my (in progress) Tina top, I originally was basing the pattern on 
 Teagan and Brian. However, Tina is supposed to work for people with breasts
 and Brian is mostly designed for menswear and doesn't support much body
 and bust fitting. So I created Bibi as a base for Tina.
