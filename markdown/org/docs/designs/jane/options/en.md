@@ -1,5 +1,5 @@
 ---
-title: "Jane Shift: Design Options"
+title: "Jane 1970's Shift: Design Options"
 ---
 
 <DesignOptions design='jane' />

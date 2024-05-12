@@ -1,5 +1,5 @@
 ---
-title: "Jane Shift: Fabric Options"
+title: "Jane 1970's Shift: Fabric Options"
 ---
 
 ## Historically Accurate Fabrics
