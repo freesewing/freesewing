@@ -42,6 +42,8 @@ import { Florent, FlorentFront } from 'shared/components/designs/linedrawings/fl
 import { Gozer, GozerFront, GozerBack } from 'shared/components/designs/linedrawings/gozer.mjs'
 import { Hi, HiFront } from 'shared/components/designs/linedrawings/hi.mjs'
 import { Holmes, HolmesFront } from 'shared/components/designs/linedrawings/holmes.mjs'
+import { Hugo, HugoFront, HugoBack } from 'shared/components/designs/linedrawings/hugo.mjs'
+import { Huey, HueyFront, HueyBack } from 'shared/components/designs/linedrawings/huey.mjs'
 import { Lucy, LucyFront } from 'shared/components/designs/linedrawings/lucy.mjs'
 import { Lumina, LuminaFront, LuminaBack } from 'shared/components/designs/linedrawings/lumina.mjs'
 import { Lumira, LumiraFront, LumiraBack } from 'shared/components/designs/linedrawings/lumira.mjs'
@@ -80,6 +82,8 @@ export const lineDrawingsFront = {
   gozer: GozerFront,
   hi: HiFront,
   holmes: HolmesFront,
+  huey: HueyFront,
+  hugo: HugoFront,
   lucy: LucyFront,
   lumina: LuminaFront,
   lumira: LumiraFront,
@@ -107,6 +111,8 @@ export const lineDrawingsBack = {
   cornelius: CorneliusBack,
   diana: DianaBack,
   gozer: GozerBack,
+  huey: HueyBack,
+  hugo: HugoBack,
   lumina: LuminaBack,
   lumira: LumiraBack,
   noble: NobleBack,
@@ -139,6 +145,8 @@ export const lineDrawings = {
   gozer: Gozer,
   hi: Hi,
   holmes: Holmes,
+  huey: Huey,
+  hugo: Hugo,
   lucy: Lucy,
   lumina: Lumina,
   lumira: Lumira,
