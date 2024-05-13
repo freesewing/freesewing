@@ -2,4 +2,4 @@
 title: Shift Length
 ---
 
-<Fixme>This option is not yet documented</Fixme>
+This option controls the overall length of the shift. Historical shifts have different lengths, anywhere between knee and calf would be appropriate. 
