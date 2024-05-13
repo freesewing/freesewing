@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-ringsector",
-  "version": "3.2.0",
+  "version": "3.3.0-rc.1",
   "description": "A FreeSewing plugin to draft a ring sector (think part of a donut)",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -49,12 +49,12 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.2.0"
+    "@freesewing/core": "3.3.0-rc.1"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.4.0",
-    "chai": "5.1.0"
+    "chai": "5.1.1"
   },
   "files": [
     "dist/*",
@@ -62,7 +62,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">= 18.17.0 <22"

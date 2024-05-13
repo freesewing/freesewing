@@ -17,7 +17,7 @@ function jaegerSide({
   part,
 }) {
   // Double back vent
-  if (options.backVent === 2) {
+  if (Number(options.backVent) === 2) {
     let ventY = points.bsHips.y - points.bsWaistCp1.dy(points.bsHips) * options.backVentLength
     // Vent tip
     points.ventStart = utils.curveIntersectsY(
@@ -57,7 +57,7 @@ function jaegerSide({
 
   // Paths
   paths.hemBase = new Path().move(points.sideHem).line(points.bsHem)
-  if (options.backVent === 2) {
+  if (Number(options.backVent === 2)) {
     paths.hemBase.line(points.ventHem).line(paths.vent.end())
     paths.saBase = paths.vent
       .clone()

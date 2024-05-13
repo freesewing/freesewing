@@ -38,7 +38,7 @@ const RenderTree = ({ tree, recurse, depth = 1, level = 0, active = false }) => 
          * Does this have children?
          */
         const hasChildren =
-          recurse && (!depth || level < depth) && pageHasChildren(item)
+          recurse && item.s && (!depth || level < depth) && pageHasChildren(item)
             ? item.s.replaceAll('/', '')
             : false
 

@@ -5,6 +5,7 @@ date: "2021-11-07"
 intro: "We love this Simone shirt by Jackseye, who shared:"
 title: "Simone by Jackseye"
 designs: ["simone"]
+author: 28890
 ---
 
 We love this Simone shirt by Jackseye, who shared:
