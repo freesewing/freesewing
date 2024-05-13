@@ -3,7 +3,7 @@ export const sleeve = {
   measurements: ['biceps', 'shoulderToElbow'],
   options: {
     bicepsEase: { pct: 18, min: 18, max: 51, menu: 'fit' },
-    sleeveLength: { pct: 80, min: 60, max: 100, menu: 'style' },
+    sleeveLengthBonus: { pct: 80, min: 60, max: 100, menu: 'style' },
   },
 
   draft: function draftJaneSleeve({
@@ -23,7 +23,7 @@ export const sleeve = {
   }) {
     const sleeveWidth = measurements.biceps * (1 + options.bicepsEase)
 
-    const sleeveLength = measurements.shoulderToElbow * options.sleeveLength
+    const sleeveLength = measurements.shoulderToElbow * options.sleeveLengthBonus
 
     points.sleeveLeft = new Point(0, 0)
     points.sleeveRight = new Point(sleeveLength, 0)

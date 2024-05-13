@@ -33,11 +33,11 @@
       "d": "Controls the size of the gusset"
     },
     "bicepsEase": {
-      "t": "Bicep Ease",
+      "t": "Biceps Ease",
       "d": "Controls the ease in the sleeve"
     },
-    "sleeveLength": {
-      "t": "Sleeve Length",
+    "sleeveLengthBonus": {
+      "t": "Sleeve Length Bonus",
       "d": "Controls the length of the sleeve"
     }
   }
