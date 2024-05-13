@@ -38,7 +38,7 @@
     },
     "sleeveLengthBonus": {
       "t": "Sleeve Length Bonus",
-      "d": "Controls the length of the sleeve"
+      "d": "Controls the additional length added to the sleeve"
     }
   }
 }
