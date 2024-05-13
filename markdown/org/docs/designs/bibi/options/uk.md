@@ -1,5 +1,5 @@
 ---
-title: "Bibi Body Block: Design Options"
+title: "Bibi body block: Design Options"
 ---
 
 <DesignOptions design='bibi' />
