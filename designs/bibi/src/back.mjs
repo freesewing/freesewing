@@ -120,6 +120,7 @@ function bibiBack({
   complete,
   utils,
   part,
+  log,
 }) {
   // Hide Brian paths
   for (const key of Object.keys(paths)) paths[key].hide()
@@ -147,7 +148,7 @@ function bibiBack({
 
   points.cbHem = new Point(0, points.cbWaist.y + measurements.waistToHips * options.lengthBonus)
 
-  constructBackHem(points, measurements, options, Point, paths, Path)
+  constructBackHem(points, measurements, options, Point, paths, Path, log)
 
   store.set('backSideSeamLength', paths.sideSeam.length())
 
