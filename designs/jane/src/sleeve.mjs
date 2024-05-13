@@ -23,7 +23,7 @@ export const sleeve = {
   }) {
     const sleeveWidth = measurements.biceps * (1 + options.bicepsEase)
 
-    const sleeveLength = measurements.shoulderToElbow * options.sleeveLengthBonus
+    const sleeveLength = measurements.shoulderToElbow * options.sleeveLength
 
     points.sleeveLeft = new Point(0, 0)
     points.sleeveRight = new Point(sleeveLength, 0)
