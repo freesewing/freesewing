@@ -205,15 +205,15 @@
     "@aws-sdk/util-utf8-browser" "^3.0.0"
     tslib "^1.11.1"
 
-"@aws-sdk/client-sesv2@3.572.0":
-  version "3.572.0"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/client-sesv2/-/client-sesv2-3.572.0.tgz#bdfab327638ab096d18f48ea6cd2e45eae5e7b8a"
-  integrity sha512-qhYtf8aqwAGuPAhqcPQ2zbV1EbXu2uJH8Me8gzo/7TspMkYL4+MAfZVYAsFxTyrJ0xQESkVz73ig00TdSrYXwQ==
+"@aws-sdk/client-sesv2@3.574.0":
+  version "3.574.0"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/client-sesv2/-/client-sesv2-3.574.0.tgz#ccc40a308a5a8ea86cb3cd0943371d1c9fb0ff0e"
+  integrity sha512-ADGsMl+I9Fv/4+tepWt8LJfcynGYb2C/hhYeeC5peFmEfq3NBKsI8jPaaKIntufcK44H6OyJx6pF0I3ifYuRhA==
   dependencies:
     "@aws-crypto/sha256-browser" "3.0.0"
     "@aws-crypto/sha256-js" "3.0.0"
-    "@aws-sdk/client-sso-oidc" "3.572.0"
-    "@aws-sdk/client-sts" "3.572.0"
+    "@aws-sdk/client-sso-oidc" "3.574.0"
+    "@aws-sdk/client-sts" "3.574.0"
     "@aws-sdk/core" "3.572.0"
     "@aws-sdk/credential-provider-node" "3.572.0"
     "@aws-sdk/middleware-host-header" "3.567.0"
@@ -252,14 +252,14 @@
     "@smithy/util-utf8" "^2.3.0"
     tslib "^2.6.2"
 
-"@aws-sdk/client-sso-oidc@3.572.0":
-  version "3.572.0"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/client-sso-oidc/-/client-sso-oidc-3.572.0.tgz#0abe3282c0900f0641770a928d31221a06df494d"
-  integrity sha512-S6C/S6xYesDakEuzYvlY1DMMKLtKQxdbbygq3hfeG2R0jUt9KpRLsQXK8qrBuVCKa3WcnjN/30hp4g/iUWFU/w==
+"@aws-sdk/client-sso-oidc@3.574.0":
+  version "3.574.0"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/client-sso-oidc/-/client-sso-oidc-3.574.0.tgz#f4bc74ab213cf461e56d60b19d80829396f36083"
+  integrity sha512-WcR8AnFhx7bqhYwfSl3OrF0Pu0LfHGgSOnmmORHqRF7ykguE09M/WUlCCjTGmZjJZ1we3uF5Xg8Jg12eiD+bmw==
   dependencies:
     "@aws-crypto/sha256-browser" "3.0.0"
     "@aws-crypto/sha256-js" "3.0.0"
-    "@aws-sdk/client-sts" "3.572.0"
+    "@aws-sdk/client-sts" "3.574.0"
     "@aws-sdk/core" "3.572.0"
     "@aws-sdk/credential-provider-node" "3.572.0"
     "@aws-sdk/middleware-host-header" "3.567.0"
@@ -342,14 +342,14 @@
     "@smithy/util-utf8" "^2.3.0"
     tslib "^2.6.2"
 
-"@aws-sdk/client-sts@3.572.0":
-  version "3.572.0"
-  resolved "https://registry.yarnpkg.com/@aws-sdk/client-sts/-/client-sts-3.572.0.tgz#75437254cb314a0a0cdb7b28887d502442167408"
-  integrity sha512-jCQuH2qkbWoSY4wckLSfzf3OPh7zc7ZckEbIGGVUQar/JVff6EIbpQ+uNG29DDEOpdPPd8rrJsVuUlA/nvJdXA==
+"@aws-sdk/client-sts@3.574.0":
+  version "3.574.0"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/client-sts/-/client-sts-3.574.0.tgz#3f1d52886e9f9f7cf5a2a0faeff558a64d95c0f3"
+  integrity sha512-WNDSG9nipap/L1gGDkCQvU2u413HmVxMJKr41lBCibioz42Z4i6XkCr1etYwIjuVfGF6QPrsEsYLqRwlAC/BQg==
   dependencies:
     "@aws-crypto/sha256-browser" "3.0.0"
     "@aws-crypto/sha256-js" "3.0.0"
-    "@aws-sdk/client-sso-oidc" "3.572.0"
+    "@aws-sdk/client-sso-oidc" "3.574.0"
     "@aws-sdk/core" "3.572.0"
     "@aws-sdk/credential-provider-node" "3.572.0"
     "@aws-sdk/middleware-host-header" "3.567.0"
