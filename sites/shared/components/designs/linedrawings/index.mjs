@@ -47,6 +47,7 @@ import { Huey, HueyFront, HueyBack } from 'shared/components/designs/linedrawing
 import { Lucy, LucyFront } from 'shared/components/designs/linedrawings/lucy.mjs'
 import { Lumina, LuminaFront, LuminaBack } from 'shared/components/designs/linedrawings/lumina.mjs'
 import { Lumira, LumiraFront, LumiraBack } from 'shared/components/designs/linedrawings/lumira.mjs'
+import { Lunetius, LunetiusFront } from 'shared/components/designs/linedrawings/lunetius.mjs'
 import { Noble, NobleFront, NobleBack } from 'shared/components/designs/linedrawings/noble.mjs'
 import { Hortensia, HortensiaFront } from 'shared/components/designs/linedrawings/hortensia.mjs'
 import { Simon, SimonFront, SimonBack } from 'shared/components/designs/linedrawings/simon.mjs'
@@ -87,6 +88,7 @@ export const lineDrawingsFront = {
   lucy: LucyFront,
   lumina: LuminaFront,
   lumira: LumiraFront,
+  lunetius: LunetiusFront,
   noble: NobleFront,
   hortensia: HortensiaFront,
   simon: SimonFront,
@@ -150,6 +152,7 @@ export const lineDrawings = {
   lucy: Lucy,
   lumina: Lumina,
   lumira: Lumira,
+  lunetius: Lunetius,
   noble: Noble,
   hortensia: Hortensia,
   simon: Simon,
