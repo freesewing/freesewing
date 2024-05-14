@@ -503,7 +503,7 @@
       "hem"
     ]
   },
-    "legend": {
+  "legend": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern to document pattern notation",
     "lab": false,
@@ -1072,6 +1072,23 @@
       "elastic",
       "curvedSeam",
       "hem"
+    ]
+  },
+  "barbara": {
+    "code": "Lou Pratter",
+    "description": "A FreeSewing pattern for a sport bra or bralette",
+    "design": "Lou Pratter",
+    "difficulty": 3,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "tops",
+      "underwear"
+    ],
+    "techniques": [
+      "elastic",
+      "curvedSeam",
+      "stretch"
     ]
   }
 }
