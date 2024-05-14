@@ -243,7 +243,7 @@ function getBottomSmoothness(bottom, points) {
   return (Math.min(bottom, points.seat.y) - points.armhole.y) * 0.3
 }
 
-export function constructBackHem(points, measurements, options, Point, paths, Path) {
+export function constructBackHem(points, measurements, options, Point, paths, Path, log) {
   let centerPoint
 
   // Extra length for butt
@@ -280,11 +280,12 @@ export function constructBackHem(points, measurements, options, Point, paths, Pa
     centerPoint = points.cbSeat
   }
 
-  const hemBottom = centerPoint.y + bonusLengthMeasurement * options.lengthBonus
-  points.cbHem = new Point(
-    0,
-    centerPoint.y + bonusLengthMeasurement * options.lengthBonus + extraBackLength
-  )
+  let hemBottom = centerPoint.y + bonusLengthMeasurement * options.lengthBonus
+  if (hemBottom <= points.armhole.y * 1.1) {
+    log.warn('Adjusting hem as it would be above or too close to armhole.')
+    hemBottom = points.armhole.y * 1.1
+  }
+  points.cbHem = new Point(0, hemBottom + extraBackLength)
   points.midHem = new Point(points.hem.x * 0.66, points.cbHem.y)
   paths.sideSeam = constructSideSeam(
     Path,
@@ -300,7 +301,7 @@ export function constructBackHem(points, measurements, options, Point, paths, Pa
     .addClass('fabric')
 }
 
-export function constructFrontHem(points, measurements, options, Point, paths, Path) {
+export function constructFrontHem(points, measurements, options, Point, paths, Path, log) {
   let centerPoint
   let bonusLengthMeasurement = measurements.hpsToWaistBack
   switch (options.length) {
@@ -331,8 +332,12 @@ export function constructFrontHem(points, measurements, options, Point, paths, P
     centerPoint = points.cfSeat
   }
 
-  const hemBottom = centerPoint.y + bonusLengthMeasurement * options.lengthBonus
-  points.cfHem = new Point(0, centerPoint.y + bonusLengthMeasurement * options.lengthBonus)
+  let hemBottom = centerPoint.y + bonusLengthMeasurement * options.lengthBonus
+  if (hemBottom <= points.armhole.y * 1.1) {
+    log.warn('Adjusting hem as it would be above or too close to armhole.')
+    hemBottom = points.armhole.y * 1.1
+  }
+  points.cfHem = new Point(0, hemBottom)
   points.midHem = new Point(points.hem.x * 0.66, points.cfHem.y)
   paths.sideSeam = constructSideSeam(
     Path,

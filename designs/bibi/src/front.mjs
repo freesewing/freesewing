@@ -64,6 +64,7 @@ function bibiFront({
   complete,
   utils,
   part,
+  log,
 }) {
   // Hide Brian paths
   for (const key of Object.keys(paths)) paths[key].hide()
@@ -136,7 +137,7 @@ function bibiFront({
     .move(points.neck)
     .curve(points.neckCp2, points.cfNeckCp1, points.cfNeck)
     .addClass('fabric')
-  constructFrontHem(points, measurements, options, Point, paths, Path)
+  constructFrontHem(points, measurements, options, Point, paths, Path, log)
 
   store.set('frontSideSeamLength', paths.sideSeam.length())
   const frontLength = store.get('frontSideSeamLength')
@@ -145,14 +146,17 @@ function bibiFront({
   const constructDart = (path, tip, dartLength) => {
     const length = path.length()
 
-    dartLength = Math.max(0, Math.min(dartLength, length / 2))
+    dartLength = Math.max(0, Math.min(dartLength, length))
 
     const gatherArea = (store.get('gatherAreaLength') ?? 0) + dartLength
-    const offset = length - (store.get('gatherAreaStart') ?? 0) - gatherArea
+    // The length of both the beforeDart and afterDart paths,
+    // which are used to create a smooth transition to the dart
+    let auxLength = (gatherArea - dartLength) * 0.5
 
+    const offset = length - (store.get('gatherAreaStart') ?? 0) - gatherArea
     const startSplit = path.shiftAlong(offset)
-    const startDartAlpha = path.shiftAlong(offset + (gatherArea - dartLength) * 0.5)
-    const endDartAlpha = path.shiftAlong(offset + (gatherArea + dartLength) * 0.5)
+    const startDartAlpha = path.shiftAlong(offset + auxLength)
+    const endDartAlpha = path.shiftAlong(offset + auxLength + dartLength)
     const endSplit = path.shiftAlong(offset + gatherArea)
 
     let tmp = path.split(startSplit)
@@ -162,8 +166,8 @@ function bibiFront({
     const pathAfter = tmp[1]
     const angleBefore = path.angleAt(startSplit)
     const angleAfter = path.angleAt(endSplit)
-    const cpBefore = startSplit.shift(angleBefore, dartLength / 3)
-    const cpAfter = endSplit.shift(angleAfter, -dartLength / 3)
+    const cpBefore = startSplit.shift(angleBefore, auxLength / 3)
+    const cpAfter = endSplit.shift(angleAfter, -auxLength / 3)
 
     const dartDist = Math.max(tip.dist(startDartAlpha), tip.dist(endDartAlpha))
 
@@ -183,8 +187,8 @@ function bibiFront({
     const dartAngle = dartAngleBefore * 2 - dartAngleMain
     let dartInnerAngle = tipShifted.angle(endDart) - tipShifted.angle(startDart)
     if (dartInnerAngle < -180) dartInnerAngle += 360
-    const cpSplitStart = startDart.shift(dartAngle - dartInnerAngle / 2, -dartLength / 4)
-    const cpSplitEnd = endDart.shift(dartAngle + dartInnerAngle / 2, dartLength / 4)
+    const cpSplitStart = startDart.shift(dartAngle - dartInnerAngle / 2, -auxLength / 3)
+    const cpSplitEnd = endDart.shift(dartAngle + dartInnerAngle / 2, auxLength / 3)
 
     return {
       beforeDart: pathBefore.clone().curve(cpBefore, cpSplitStart, startDart),

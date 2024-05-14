@@ -1,5 +1,5 @@
 ---
-title: "Bibi Body Block: Designer Notes"
+title: "Bibi body block: Designer Notes"
 ---
 
 When I was designing the Tina top, I originally was basing the pattern on 
