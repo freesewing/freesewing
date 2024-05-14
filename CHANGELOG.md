@@ -9,7 +9,24 @@
 
  - Always load plugin-bust due to its changes in how it handle conditionality.
 
+### cathrin
+
+#### Changed
+
+ - Allow negative values in backDrop option. Fixes
+ - Allow negative values for the frontRise options. Fixes
+
+### charlie
+
+#### Fixed
+
+ - Fix cut instructions for fly facing, only 1 to be cut. Fixes
+
 ### huey
+
+#### Changed
+
+ - The lengthBonus option default was changed from 0% to 15%. Fixes
 
 #### Fixed
 
@@ -41,6 +58,18 @@
 #### Changed
 
  - Always load plugin-bust due to its changes in how it handle conditionality.
+
+### simon
+
+#### Changed
+
+ - Allow negative values for the buttonFreeLength option. Fixes
+
+### simone
+
+#### Fixed
+
+ - Added missing translation for various options
 
 ### tamiko
 

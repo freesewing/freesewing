@@ -10,9 +10,8 @@ title: "Сорочка-символ: Інструкція з пошиття"
 усіма етапами.
 Якщо ви хочете зробити цей візерунок, Келлі та Джуліан допоможуть вам від початку до кінця.
 
-You can find all the material's on Kelly's
-site: [#simonsayssew with kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
-Note: as of March 19, 2024, this link appears to be down as it's redirecting to a different page. The videos are still available on Vimeo. [[Part 1: Measuring & Drafting](https://vimeo.com/438424557)/[2: Cutting & Marking](https://vimeo.com/438424645)/[3: Cuffs, Collar, Yokes & Darts](https://vimeo.com/441665307)/[4: Front Placket & Shoulder Seams](https://vimeo.com/441667465)/[5: Sleeve Placket & Armscye](https://vimeo.com/441668326)/[6: Side Seams, Cuffs, & Collar](https://vimeo.com/441727449)/[7: Hem, Buttonholes, & Buttons](https://vimeo.com/441731576)]
+Ви можете знайти всі матеріали на сайті Келлі
+: [#simonsayssew with kelly hogaboom & julian collins] (https://agni.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
 </Tip>
 
 ### Крок 1: Взаємодія запобіжників
@@ -112,9 +111,9 @@ Note: as of March 19, 2024, this link appears to be down as it's redirecting to 
 
 ### Крок 4: З'єднайте нашийник і стійку нашийника
 
-#### Помістіть нашийник між стійками для нашийників і закріпіть його на місці
+#### Помістіть нашийник між стійками для нашийників і закріпіть на місці
 
-![Помістіть нашийник між стійками для нашийників і закріпіть його на місці](4a.png)
+![Помістіть нашийник між стійками для нашийників і закріпіть на місці](4a.png)
 
 Позначте шпилькою середню точку коміра і стійки коміра. Середня точка кожної стійки для коміра насправді трохи зміщена від центру, оскільки один кінець довший за інший. Замість цього знайдіть середню точку між двома надрізами.
 
@@ -334,9 +333,9 @@ Note: as of March 19, 2024, this link appears to be down as it's redirecting to 
 > 
 > Якщо ви знайомі з методом буріто, то вже знаєте, що робити. Якщо ні, то читайте далі, як акуратно закрити плечові шви сорочки, при цьому приховавши всі незавершені краї від сторонніх очей.
 
-#### Приколіть передню частину до зовнішньої кокетки
+#### Приколіть передні частини до зовнішньої кокетки
 
-![Приколіть передню частину до зовнішньої кокетки](11a.png) ![Приколіть передню частину до зовнішньої кокетки](11b.png)
+![Приколіть передні частини до зовнішньої кокетки](11a.png) ![Приколіть передні частини до зовнішньої кокетки](11b.png)
 
 Покладіть спину на підлогу доброю стороною догори, але будьте обережні, щоб скласти внутрішнє ярмо донизу (як показано пунктиром).
 

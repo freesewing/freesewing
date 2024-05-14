@@ -49,6 +49,7 @@ import { Noble, NobleFront, NobleBack } from 'shared/components/designs/linedraw
 import { Hortensia, HortensiaFront } from 'shared/components/designs/linedrawings/hortensia.mjs'
 import { Simon, SimonFront, SimonBack } from 'shared/components/designs/linedrawings/simon.mjs'
 import { Uma, UmaFront, UmaBack } from 'shared/components/designs/linedrawings/uma.mjs'
+import { Umbra, UmbraFront, UmbraBack } from 'shared/components/designs/linedrawings/umbra.mjs'
 import { Wahid, WahidFront, WahidBack } from 'shared/components/designs/linedrawings/wahid.mjs'
 import { Bee, BeeFront } from 'shared/components/designs/linedrawings/bee.mjs'
 import {
@@ -87,6 +88,7 @@ export const lineDrawingsFront = {
   simon: SimonFront,
   tristan: TristanFront,
   uma: UmaFront,
+  umbra: UmbraFront,
   wahid: WahidFront,
 }
 
@@ -111,6 +113,7 @@ export const lineDrawingsBack = {
   simon: SimonBack,
   tristan: TristanBack,
   uma: UmaBack,
+  umbra: UmbraBack,
   wahid: WahidBack,
 }
 
@@ -144,5 +147,6 @@ export const lineDrawings = {
   simon: Simon,
   tristan: Tristan,
   uma: Uma,
+  umbra: Umbra,
   wahid: Wahid,
 }

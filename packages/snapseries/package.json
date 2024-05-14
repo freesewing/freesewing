@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/snapseries",
-  "version": "3.2.0",
+  "version": "3.3.0-rc.1",
   "description": "A series of common sizes for elastics and other series to be used with snapped percentage options",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -48,7 +48,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">= 18.17.0 <22"
