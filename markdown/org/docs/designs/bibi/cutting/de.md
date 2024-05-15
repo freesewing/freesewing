@@ -1,5 +1,7 @@
 ---
 title: "Bibi body block: Cutting Instructions"
+maintainers:
+  - Jonathan Haas
 ---
 
 - Cut 1 back on the fold.

@@ -1,5 +1,7 @@
 ---
 title: "Back waist dip shape"
+maintainers:
+  - Jonathan Haas
 ---
 
 This option controls the curve of the back waist dip. This option only has an effect if the back waist dip is set to a nonzero value.

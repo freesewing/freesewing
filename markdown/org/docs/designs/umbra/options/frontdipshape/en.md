@@ -1,5 +1,7 @@
 ---
 title: "Front waist dip shape"
+maintainers:
+  - Jonathan Haas
 ---
 
 This option controls the curve of the front waist dip. This option only has an effect if the front waist dip is set to a nonzero value.

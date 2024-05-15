@@ -1,5 +1,7 @@
 ---
 title: "Sleevecap ease"
+maintainers:
+  - Jonathan Haas
 ---
 
 Determines the amount of sleevecap ease.

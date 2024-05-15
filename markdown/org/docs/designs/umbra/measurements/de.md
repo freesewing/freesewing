@@ -1,5 +1,7 @@
 ---
 title: "Umbra Unterhosen: Erforderliche Maße"
+maintainers:
+  - Jonathan Haas
 ---
 
 <DesignMeasurements design='umbra' />

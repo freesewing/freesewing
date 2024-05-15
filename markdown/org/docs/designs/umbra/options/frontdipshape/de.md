@@ -1,5 +1,7 @@
 ---
 title: "Verlauf der vorderen Taillenkurve"
+maintainers:
+  - Jonathan Haas
 ---
 
 Diese Option steuert die Kurve der vorderen Taillenabsenkung. Diese Option wirkt sich nur aus, wenn die vorderen Taillenabsenkung auf einen Wert ungleich Null eingestellt ist.

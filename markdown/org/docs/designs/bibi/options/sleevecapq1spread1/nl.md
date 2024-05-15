@@ -1,5 +1,9 @@
 ---
 title: "Sleevecap Q1 downward spread"
+maintainers:
+  - Jonathan Haas
+maintainers:
+  - Jonathan Haas
 ---
 
 ![The downward spread in the first quadrant of the sleevecap](./sleevecapq1downwardspread.svg)

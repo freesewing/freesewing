@@ -1,5 +1,7 @@
 ---
 title: "Fit the waist"
+maintainers:
+  - Jonathan Haas
 ---
 
 Enable this option to fit the waist of your Teagan, rather than draft a straight T-shirt shape.

@@ -1,5 +1,9 @@
 ---
 title: "Sleevecap top X"
+maintainers:
+  - Jonathan Haas
+maintainers:
+  - Jonathan Haas
 ---
 
 ![The horizontal location of the sleevecap top](./sleevecaptopfactorx.svg)

@@ -1,5 +1,7 @@
 ---
 title: "Umbra undies: Required Measurements"
+maintainers:
+  - Jonathan Haas
 ---
 
 <DesignMeasurements design='umbra' />

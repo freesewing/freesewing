@@ -1,5 +1,7 @@
 ---
 title: "Sleevecap Q3 offset"
+maintainers:
+  - Jonathan Haas
 ---
 
 ![The offset in the third quarter of the sleevecap](./sleevecapq3offset.svg)

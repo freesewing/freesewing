@@ -1,5 +1,7 @@
 ---
 title: "Bibi body block: Sewing Instructions"
+maintainers:
+  - Jonathan Haas
 ---
 
 <Note>

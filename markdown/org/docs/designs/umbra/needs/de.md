@@ -1,5 +1,7 @@
 ---
 title: "Umbra Unterhosen: Was du brauchst"
+maintainers:
+  - Jonathan Haas
 ---
 
 Um Umbra herzustellen, brauchst du Folgendes:
