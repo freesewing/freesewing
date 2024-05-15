@@ -37,7 +37,7 @@
     "lodash.unset": "4.5.2",
     "lodash.get": "4.4.2",
     "mdast-util-toc": "7.0.1",
-    "mermaid": "10.9.0",
+    "mermaid": "10.9.1",
     "ora": "8.0.1",
     "pdfkit": "0.15.0",
     "postcss-for": "2.1.1",
