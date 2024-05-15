@@ -1,5 +1,7 @@
 ---
 title: "Umbra undies: Sewing Instructions"
+maintainers:
+  - Jonathan Haas
 ---
 
 ### Step 1: Sew the bulge

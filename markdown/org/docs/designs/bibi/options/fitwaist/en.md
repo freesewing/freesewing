@@ -1,5 +1,7 @@
 ---
 title: "Fit the waist"
+maintainers:
+  - Jonathan Haas
 ---
 
 Enable this option to fit the waist, rather than drafting a straight rectangular shape.

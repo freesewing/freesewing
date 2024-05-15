@@ -1,5 +1,7 @@
 ---
 title: Elastikband-Dehnung
+maintainers:
+  - Jonathan Haas
 ---
 
 Diese Option steuert, wie stark das elastische Band im Verhältnis zum Stoff gedehnt wird.

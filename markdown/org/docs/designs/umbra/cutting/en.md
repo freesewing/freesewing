@@ -1,5 +1,7 @@
 ---
 title: "Umbra undies: Cutting Instructions"
+maintainers:
+  - Jonathan Haas
 ---
 
 Umbra consists of a back piece and a lined front piece.

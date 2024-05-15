@@ -1,5 +1,7 @@
 ---
 title: "Minimale Stoffbreite"
+maintainers:
+  - Jonathan Haas
 ---
 
 Steuert wie breit der Tanga-Riemen und das Seitenband minimal sein sollen.

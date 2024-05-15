@@ -1,5 +1,7 @@
 ---
 title: "Minimum fabric width"
+maintainers:
+  - Jonathan Haas
 ---
 
 Controls the minimum width of the thong strip and side band. 

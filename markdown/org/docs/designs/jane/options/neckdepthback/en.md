@@ -2,4 +2,4 @@
 title: Neckline Depth Back
 ---
 
-<Fixme>This option is not yet documented</Fixme>
+This option controls how deep the back neckline is. A historical shift would be low enough to be below the neckline of the dress it goes under. 

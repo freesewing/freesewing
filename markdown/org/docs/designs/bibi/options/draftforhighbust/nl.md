@@ -1,5 +1,7 @@
 ---
 title: "Bust adjustment"
+maintainers:
+  - Jonathan Haas
 ---
 
 If the pattern should be drafted with a basic full bust adjustment (FBA). 

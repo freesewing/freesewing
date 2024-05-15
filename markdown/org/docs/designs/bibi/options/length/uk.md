@@ -1,5 +1,7 @@
 ---
 title: "Length"
+maintainers:
+  - Jonathan Haas
 ---
 
 Which measurement to use for the hem. Of the length bonus is zero, the bottom of the garment will be at exactly the selected measurement.

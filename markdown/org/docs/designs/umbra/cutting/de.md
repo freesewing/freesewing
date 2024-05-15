@@ -1,5 +1,7 @@
 ---
 title: "Umbra Unterhosen: Schnittanleitung"
+maintainers:
+  - Jonathan Haas
 ---
 
 Umbra besteht aus einem Rückenteil und einem gefütterten Vorderteil.

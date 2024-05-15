@@ -1,5 +1,7 @@
 ---
 title: "Umbra undies: Designer Notes"
+maintainers:
+  - Jonathan Haas
 ---
 
 Umbra is a comfortable and flexible underwear briefs design that aims to be inclusive for as many people as possible.

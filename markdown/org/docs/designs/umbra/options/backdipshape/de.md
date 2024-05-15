@@ -1,5 +1,7 @@
 ---
 title: "Verlauf der Rückentaillenkurve"
+maintainers:
+  - Jonathan Haas
 ---
 
 Diese Option steuert die Kurve der hinteren Taillenabsenkung. Diese Option wirkt sich nur aus, wenn die hintere Taillenabsenkung auf einen Wert ungleich Null eingestellt ist.

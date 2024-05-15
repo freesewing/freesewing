@@ -1,5 +1,7 @@
 ---
 title: "Flare"
+maintainers:
+  - Jonathan Haas
 ---
 
 If the garment is longer than the seat, this option controls how much it flares out towards the hem.

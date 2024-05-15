@@ -1,5 +1,7 @@
 ---
 title: "Umbra Unterhosen: Designer Notes"
+maintainers:
+  - Jonathan Haas
 ---
 
 Umbra ist ein bequemer und flexibler Slip, der so vielen Menschen wie möglich gerecht werden soll.
