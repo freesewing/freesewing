@@ -14,15 +14,6 @@ const PaypalFormBody = ({ amount, period, currency, language }) => (
     ].map(([name, value]) => (
       <input type="hidden" {...{ name, value }} key={name} />
     ))}
-    <input
-      type="hidden"
-      name="item_number"
-      value={
-        period === 'x'
-          ? `donate-${amount}-${currency}`
-          : `subscribe-${amount}-${currency}-${period}`
-      }
-    />
     {period === 'x' ? (
       <>
         <input type="hidden" name="item_number" value={`donate-${amount}-${currency}`} />
@@ -71,8 +62,10 @@ export const Subscribe = ({
             <span className="label-text-alt text-inherit">{t('patrons:yourContribution')}</span>
           </label>
           <input
-            type="number"
+            type="text"
+            inputMode="decimal"
             placeholder="Enter amount here"
+            pattern="[0-9]+([.][0-9]+)?"
             className="input input-bordered w-full text-base-content"
             value={amount}
             onChange={(evt) => setAmount(evt.target.value)}
@@ -149,7 +142,7 @@ export const Subscribe = ({
         <PaypalFormBody {...{ currency, amount, period, language }} />
         <button
           className={`btn btn-${color} w-full mt-4`}
-          disabled={Number(amount) < 1}
+          disabled={!(Number(amount) > 0)}
           type="submit"
         >
           {period === 'x' ? t('patrons:donate') : t('patrons:subscribe')}

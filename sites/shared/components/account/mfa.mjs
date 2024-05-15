@@ -103,7 +103,9 @@ export const MfaSettings = ({ title = false, welcome = false }) => {
             value={code}
             onChange={(evt) => setCode(evt.target.value)}
             className="input w-64 m-auto text-4xl  input-bordered input-lg flex flex-row text-center mb-8 tracking-widest"
-            type="number"
+            type="text"
+            inputMode="numeric"
+            pattern="[0-9]{6}"
             placeholder={t('000000')}
           />
           <button className="btn btn-success btn-lg block w-full" onClick={confirmMfa}>
