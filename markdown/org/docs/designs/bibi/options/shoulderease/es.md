@@ -1,5 +1,7 @@
 ---
 title: "Shoulder ease"
+maintainers:
+  - Jonathan Haas
 ---
 
 ![Shoulder ease](./shoulderease.svg)

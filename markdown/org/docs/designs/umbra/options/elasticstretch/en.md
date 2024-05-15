@@ -1,5 +1,7 @@
 ---
 title: Elastic stretch
+maintainers:
+  - Jonathan Haas
 ---
 
 This option controls how much the elastic band is stretched relative to the fabric.

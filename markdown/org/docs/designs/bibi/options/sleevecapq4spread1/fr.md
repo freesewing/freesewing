@@ -1,5 +1,9 @@
 ---
 title: "Sleevecap Q4 upward spread"
+maintainers:
+  - Jonathan Haas
+maintainers:
+  - Jonathan Haas
 ---
 
 ![The upward spread in the fourth quadrant of the sleevecap](./sleevecapq4spread1.svg)

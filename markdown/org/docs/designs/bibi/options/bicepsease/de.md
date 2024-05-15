@@ -1,5 +1,7 @@
 ---
 title: "Bizeps Zugabe"
+maintainers:
+  - Jonathan Haas
 ---
 
 ![Der Beizeps-Leichtigkeitsfaktor auf Brian](./bicepsease.svg)

@@ -1,5 +1,7 @@
 ---
 title: "Umbra undies: Fabric Options"
+maintainers:
+  - Jonathan Haas
 ---
 
 You need a fabric with plenty of horizontal and vertical stretch (sometimes called “four-way stretch”) for this pattern. Preferably something that is comfortable, soft, and breathable.

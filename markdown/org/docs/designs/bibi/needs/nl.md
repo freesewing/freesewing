@@ -1,5 +1,7 @@
 ---
 title: "Bibi body block: What You Need"
+maintainers:
+  - Jonathan Haas
 ---
 
 To make Bibi, you will need the following:

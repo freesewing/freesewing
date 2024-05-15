@@ -1,5 +1,7 @@
 ---
 title: "Umbra undies: What You Need"
+maintainers:
+  - Jonathan Haas
 ---
 
 To make Umbra, you will need the following:

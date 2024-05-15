@@ -1,5 +1,7 @@
 ---
 title: "Bibi body block: Designer Notes"
+maintainers:
+  - Jonathan Haas
 ---
 
 When I was designing my (in progress) Tina top, I originally was basing the pattern on 
