@@ -120,7 +120,7 @@ export const NumberInput = ({
   return (
     <input
       type="text"
-      inputMode="number"
+      inputMode="decimal"
       className={`input input-secondary ${className || 'input-sm grow text-base-content'}
         ${valid.current === false && 'input-error'}
         ${valid.current && 'input-success'}
@@ -247,8 +247,8 @@ export const ListInput = ({
     const titleKey = config.choiceTitles
       ? config.choiceTitles[entry]
       : isDesignOption
-      ? `${design}:${name}.${entry}`
-      : `${name}.o.${entry}`
+        ? `${design}:${name}.${entry}`
+        : `${name}.o.${entry}`
     const title = config.titleMethod ? config.titleMethod(entry, t) : t(`${titleKey}.t`)
     const desc = config.valueMethod ? config.valueMethod(entry, t) : t(`${titleKey}.d`)
     const sideBySide = config.sideBySide || desc.length + title.length < 42
