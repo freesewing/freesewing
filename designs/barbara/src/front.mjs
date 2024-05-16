@@ -54,7 +54,10 @@ export const front = {
     )
     points.strapRightBase = points.neckLeft.shift(
       180 + measurements.shoulderSlope,
-      (measurements.shoulderToShoulder / 2 - points.neckLeft.dx(points.middleBottom)) *
+      (measurements.shoulderToShoulder / 2 -
+        points.neckLeft.dx(points.middleBottom) -
+        (measurements.shoulderToShoulder / 2 - points.neckLeft.dx(points.middleBottom)) *
+          options.shoulderStrapWidth) *
         options.shoulderStrapPlacement
     )
     points.strapRight = points.strapRightBase.shift(
