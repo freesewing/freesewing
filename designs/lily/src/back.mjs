@@ -208,7 +208,7 @@ function draftLilyBack({
     let requestedLength = (1 - options.lengthReduction) * measurements.waistToFloor
     // leggings must reach to fork at least, so define a minimum
     const waistToFork = points.waistX.dy(points.fork)
-    if (waistToFork >= 0.999 * requestedLength) {
+    if (waistToFork >= 0.99 * requestedLength) {
       log.warn('length reduction capped; cutting off at fork')
       // add one percent to waistToFork to ensure that path length is nonzero
       requestedLength = waistToFork * 1.01
