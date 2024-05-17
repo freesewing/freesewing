@@ -5,6 +5,7 @@ export const front = {
     'hpsToBust',
     'bustPointToUnderbust',
     'highBustFront',
+    'bustFront',
     'bustSpan',
     'shoulderToShoulder',
     'shoulderSlope',
@@ -29,6 +30,7 @@ export const front = {
     shoulderStrapPlacement: { pct: 30, min: 10, max: 85, menu: 'style' },
     shoulderStrapWidth: { pct: 14, min: 10, max: 20, menu: 'style' },
     strapHeight: { pct: 0, min: 0, max: 100, menu: 'style' },
+    dartLength: { pct: 0, min: 0, max: 45, menu: 'style' },
   },
   draft: ({ part, Path, Point, paths, points, options, measurements, macro, utils }) => {
     // Construct the bottom of the front
@@ -116,6 +118,28 @@ export const front = {
       points.neckLeft.y + measurements.hpsToBust
     )
 
+    // Construct the underbust dart
+    let dartAngle =
+      (45 *
+        (4 * measurements.bustPointToUnderbust -
+          (2 * measurements.bustFront - measurements.underbust))) /
+      measurements.bustPointToUnderbust
+
+    points.dartTop = points.apex.shift(-90, points.apex.dy(points.wingBottom) * options.dartLength)
+
+    points.dartLeft = utils.beamsIntersect(
+      points.apex,
+      points.apex.shift(-90 - dartAngle / 2, 100),
+      points.wingBottom,
+      points.middleBottom
+    )
+    points.dartRight = utils.beamsIntersect(
+      points.apex,
+      points.apex.shift(-90 + dartAngle / 2, 100),
+      points.wingBottom,
+      points.middleBottom
+    )
+
     paths.strapOnChest = new Path()
       .move(points.wingBottom)
       .line(points.middleBottom)
@@ -127,6 +151,9 @@ export const front = {
 
     paths.strapToShoulder = new Path()
       .move(points.wingBottom)
+      .line(points.dartLeft)
+      .line(points.dartTop)
+      .line(points.dartRight)
       .line(points.middleBottom)
       .line(points.middleTop)
       .curve(points.middleTopCp1, points.strapRightCp2, points.strapRight)
