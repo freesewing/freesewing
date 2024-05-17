@@ -142,6 +142,9 @@ export const front = {
 
     paths.strapOnChest = new Path()
       .move(points.wingBottom)
+      .line(points.dartLeft)
+      .line(points.dartTop)
+      .line(points.dartRight)
       .line(points.middleBottom)
       .line(points.middleTop)
       .curve(points.middleTopCp1, points.strapRightCp2, points.strapRight)
