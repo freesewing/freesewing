@@ -4,13 +4,19 @@ maintainers:
   - Jonathan Haas
 ---
 
-- Cut 1 back on the fold.
-- Cut 1 front on the fold.
-- Cut 2 sleeves _with good sides together_ (optional)
-  - If you cut sleeves separately, remember that one has to be a mirror image of the other.
-  - There is no sleeve part if sleeves are disabled or the sleeve length setting is below 5%
+- **Main fabric**
+  - Cut 1 *Front* on the fold
+  - Cut 1 *Back* on the fold
+  - Cut 2 *Sleeve(s)* mirrored (if enabled)
+- **Ribbing**
+  - Cut 1 *Neck Binding*
+  - Cut 2 *Armhole Binding(s)* or *Cuff(s)* (depending on selected options)
+  - Cut 1 *Waistband* (if enabled)
 
 ## Caveats
 
-- There is extra hem allowance at the hem.
-- Depending on how you want to finish the neck and armholes, choose an appropriate seam allowance.
+- There is extra hem allowance at the bottom hem if there is no *Waistband* part.
+- There is extra hem allowance at the sleeve part if there is no *Cuff* part.
+- There is no seam allowance on the neck opening.
+- There is no seam allowance on the armhole if the sleeve is disabled.
+- There is no seam allowance on the long sides of the *Armhole Binding* and *Neck Binding* parts.

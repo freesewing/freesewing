@@ -2,8 +2,6 @@
 title: "Sleevecap back Y"
 maintainers:
   - Jonathan Haas
-maintainers:
-  - Jonathan Haas
 ---
 
 ![The vertical location of the back inflection point](./sleevecapbackfactory.svg)
