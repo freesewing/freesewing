@@ -1,4 +1,7 @@
-function createLowerPoints(points, measurements, options, prefix) {
+import { capitalize } from '@freesewing/core'
+
+function createLowerPoints(part, prefix) {
+  const { measurements, options, points } = part.shorthand()
   // These lengths are typically not critical, so use a rough estimate if not given
   // We don't want the user to need these measurements, as this design can also be used for shorter tops
   if (typeof measurements.waistToKnee !== 'undefined') {
@@ -20,7 +23,8 @@ function createLowerPoints(points, measurements, options, prefix) {
   points.sideTarget = points[prefix + 'Knee'].translate(points.seatBase.x * (1 + options.flare), 0)
 }
 
-export function constructFrontPoints(points, Point, measurements, options) {
+export function constructFrontPoints(part) {
+  const { measurements, options, points, Point } = part.shorthand()
   points.cfBust = new Point(0, measurements.hpsToBust)
   if (measurements.bustSpan) {
     points.bust = new Point(measurements.bustSpan / 2, measurements.hpsToBust)
@@ -61,10 +65,11 @@ export function constructFrontPoints(points, Point, measurements, options) {
   points.seat = seatAdjustment(points.seatBase, points.hips, -seatExtra)
   // points.cfSeat = points.cfSeat.shift(-90, -seatExtra * 2)
 
-  createLowerPoints(points, measurements, options, 'cf')
+  createLowerPoints(part, 'cf')
 }
 
-export function constructBackPoints(points, Point, measurements, options) {
+export function constructBackPoints(part) {
+  const { measurements, options, points, Point } = part.shorthand()
   points.chest = new Point(
     (measurements.chest * (1 + options.chestEase)) / 4,
     measurements.hpsToBust
@@ -89,7 +94,7 @@ export function constructBackPoints(points, Point, measurements, options) {
   points.seat = seatAdjustment(points.seatBase, points.hips, seatExtra)
   // points.cbSeat = points.cbSeat.shift(-90, seatExtra * 2)
 
-  createLowerPoints(points, measurements, options, 'cb')
+  createLowerPoints(part, 'cb')
 }
 
 function seatAdjustment(seatBase, anchor, seatExtra) {
@@ -133,7 +138,8 @@ export function calculateFba(anchor, bust, side, dx, Point) {
   }
 }
 
-export function correctArmHole(points, paths, Path, options, utils) {
+export function correctArmHole(part) {
+  const { options, points, utils } = part.shorthand()
   points.armholeCp1 = points.chest
 
   if (!options.sleeves && points.armhole.y > points.chest.y) {
@@ -158,7 +164,8 @@ function extendSideLine(points, intersectionY) {
   return points.seat.shiftFractionTowards(points.sideTarget, fraction)
 }
 
-export function constructSideSeam(Path, Point, points, height, bottomSmoothness) {
+export function constructSideSeam(part, height, bottomSmoothness) {
+  const { points, Path, Point } = part.shorthand()
   const base = new Path()
     .move(points.armhole)
     .curve(points.armholeCp1, points.waistCp2, points.waist)
@@ -204,7 +211,8 @@ export function constructSideSeam(Path, Point, points, height, bottomSmoothness)
   return result.curve(intersectionCp1, intersectionCp2, bottom).reverse()
 }
 
-export function adjustSidePoints(points, options) {
+export function adjustSidePoints(part) {
+  const { options, points } = part.shorthand()
   // Remove waist fitting if option is disabled
   if (!options.fitWaist || points.waist.x > points.armhole.x) {
     if (points.waist.x < points.armhole.x) {
@@ -243,7 +251,8 @@ function getBottomSmoothness(bottom, points) {
   return (Math.min(bottom, points.seat.y) - points.armhole.y) * 0.3
 }
 
-export function constructBackHem(points, measurements, options, Point, paths, Path, log) {
+export function constructBackHem(part, bonusLength = 0) {
+  const { measurements, options, points, paths, Path, Point, log } = part.shorthand()
   let centerPoint
 
   // Extra length for butt
@@ -280,28 +289,31 @@ export function constructBackHem(points, measurements, options, Point, paths, Pa
     centerPoint = points.cbSeat
   }
 
-  let hemBottom = centerPoint.y + bonusLengthMeasurement * options.lengthBonus
+  let hemBottom = centerPoint.y + bonusLengthMeasurement * options.lengthBonus + bonusLength
   if (hemBottom <= points.armhole.y * 1.1) {
     log.warn('Adjusting hem as it would be above or too close to armhole.')
     hemBottom = points.armhole.y * 1.1
   }
+  if (hemBottom <= points.underbust.y) {
+    log.warn('Adjusting hem as it would be above the underbust.')
+    hemBottom = points.underbust.y
+  }
   points.cbHem = new Point(0, hemBottom + extraBackLength)
-  points.midHem = new Point(points.hem.x * 0.66, points.cbHem.y)
   paths.sideSeam = constructSideSeam(
-    Path,
-    Point,
-    points,
+    part,
     hemBottom,
     getBottomSmoothness(hemBottom, points)
   ).addClass('fabric')
 
+  points.midHem = new Point(points.hem.x * 0.66, points.cbHem.y)
   paths.hem = new Path()
     .move(points.cbHem)
     .curve(points.midHem, points.midHem, points.hem)
     .addClass('fabric')
 }
 
-export function constructFrontHem(points, measurements, options, Point, paths, Path, log) {
+export function constructFrontHem(part, bonusLength = 0) {
+  const { measurements, options, points, paths, Path, Point, log } = part.shorthand()
   let centerPoint
   let bonusLengthMeasurement = measurements.hpsToWaistBack
   switch (options.length) {
@@ -332,20 +344,22 @@ export function constructFrontHem(points, measurements, options, Point, paths, P
     centerPoint = points.cfSeat
   }
 
-  let hemBottom = centerPoint.y + bonusLengthMeasurement * options.lengthBonus
+  let hemBottom = centerPoint.y + bonusLengthMeasurement * options.lengthBonus + bonusLength
   if (hemBottom <= points.armhole.y * 1.1) {
     log.warn('Adjusting hem as it would be above or too close to armhole.')
     hemBottom = points.armhole.y * 1.1
   }
+  if (hemBottom <= points.underbust.y) {
+    log.warn('Adjusting hem as it would be above the underbust.')
+    hemBottom = points.underbust.y
+  }
   points.cfHem = new Point(0, hemBottom)
-  points.midHem = new Point(points.hem.x * 0.66, points.cfHem.y)
   paths.sideSeam = constructSideSeam(
-    Path,
-    Point,
-    points,
+    part,
     hemBottom,
     getBottomSmoothness(hemBottom, points)
   ).addClass('fabric')
+  points.midHem = new Point(points.hem.x * 0.66, points.cfHem.y)
 
   paths.hem = new Path()
     .move(points.cfHem)
@@ -353,20 +367,8 @@ export function constructFrontHem(points, measurements, options, Point, paths, P
     .addClass('fabric')
 }
 
-export function createArmHoles(
-  options,
-  store,
-  points,
-  paths,
-  Path,
-  snippets,
-  Snippet,
-  strapWidth,
-  armholeCurve,
-  armholeDrop,
-  utils,
-  notchType = 'notch'
-) {
+export function createArmHoles(part, strapWidth, armholeCurve, armholeDrop, notchType = 'notch') {
+  const { store, options, points, paths, Path, snippets, Snippet, utils } = part.shorthand()
   if (options.sleeves) {
     if (store.get('capSleeves')) {
       const sleeveCapFactor = (options.sleeveLength + 0.2) * 4
@@ -379,7 +381,10 @@ export function createArmHoles(
         points.neck.angle(points.shoulder),
         capLength * -0.2
       )
-      points.armholePitchCp1 = points.sleeveCapStart.rotate(90, points.sleeveCap)
+      points.armholePitchCp1 = points.sleeveCap.shiftFractionTowards(
+        points.sleeveCapStart.rotate(90, points.sleeveCap),
+        0.5
+      )
       points.sleeveCapCp = points.sleeveCap
         .shiftTowards(points.armholePitchCp1, capLength * 0.3)
         .rotate(-90, points.sleeveCap)
@@ -443,7 +448,8 @@ export function createArmHoles(
   }
 }
 
-export function plotSideLineMeasurements(points, sideSeam, utils, macro) {
+export function plotSideLineMeasurements(part, sideSeam) {
+  const { points, macro, utils } = part.shorthand()
   const offsets = {
     seat: points.seat.y,
     hips: points.hips.y,
@@ -488,4 +494,176 @@ export function plotSideLineMeasurements(points, sideSeam, utils, macro) {
       })
     }
   }
+}
+
+export function draftRibbing(part, length) {
+  const { store, measurements, options, points, paths, Path, Point, expand, sa, macro, units } =
+    part.shorthand()
+  // Don't run this every time, except when sampling
+  if (typeof store.get('ribbingHeight') === 'undefined' || part.context.settings.sample) {
+    store.set(
+      'ribbingHeight',
+      (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight
+    )
+  }
+  const height = store.get('ribbingHeight')
+
+  if (expand) {
+    store.flag.preset('expandIsOn')
+  } else {
+    // Expand is off, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
+    store.flag.note({
+      msg: `bibi:cut${capitalize(part.name.split('.')[1])}`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
+      replace: {
+        w: units(2 * height + extraSa),
+        l: units(length + extraSa),
+      },
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
+
+  points.topLeft = new Point(0, 0)
+  points.topRight = new Point(height * 2, 0)
+  points.topFold = new Point(height, 0)
+  points.bottomLeft = new Point(0, length)
+  points.bottomRight = new Point(points.topRight.x, length)
+  points.bottomFold = new Point(points.topFold.x, length)
+
+  paths.seam = new Path()
+    .move(points.bottomRight)
+    .line(points.topRight)
+    .line(points.topLeft)
+    .line(points.bottomLeft)
+    .line(points.bottomRight)
+    .close()
+    .addClass('various')
+
+  paths.fold = new Path().move(points.topFold).line(points.bottomFold).addClass('various help')
+
+  if (sa) paths.sa = paths.seam.offset(sa).addClass('various sa')
+
+  /*
+   * Annotations
+   */
+  // Title
+  points.title = new Point(points.bottomRight.x / 3, points.bottomRight.y / 3)
+
+  // Dimensions
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottomRight,
+    to: points.topRight,
+    x: points.topRight.x + sa + 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.topLeft,
+    to: points.topRight,
+    y: points.topRight.y - sa - 15,
+  })
+}
+
+export function draftKnitBinding(part, length) {
+  const { store, absoluteOptions, points, paths, Path, Point, expand, sa, macro, units } =
+    part.shorthand()
+  // Don't run this every time, except when sampling
+  if (typeof store.get('bindingHeight') === 'undefined' || part.context.settings.sample) {
+    store.set('bindingHeight', absoluteOptions.bindingHeight)
+  }
+  const height = store.get('bindingHeight')
+
+  if (expand) {
+    store.flag.preset('expandIsOn')
+  } else {
+    // Expand is off, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
+    store.flag.note({
+      msg: `bibi:cut${capitalize(part.name.split('.')[1])}`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
+      replace: {
+        w: units(4 * height),
+        l: units(length + extraSa),
+      },
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
+
+  points.topLeft = new Point(0, 0)
+  points.topRight = new Point(height * 4, 0)
+  points.topFold = new Point(height, 0)
+  points.bottomLeft = new Point(0, length)
+  points.bottomRight = new Point(points.topRight.x, length)
+  points.bottomFold = new Point(points.topFold.x, length)
+
+  paths.seam = new Path()
+    .move(points.bottomRight)
+    .line(points.topRight)
+    .line(points.topLeft)
+    .line(points.bottomLeft)
+    .line(points.bottomRight)
+    .close()
+    .addClass('various')
+
+  paths.fold = new Path().move(points.topFold).line(points.bottomFold).addClass('various help')
+
+  if (sa) {
+    paths.sa = new Path()
+      .move(points.topLeft)
+      .line(points.topLeft.translate(0, -sa))
+      .line(points.topRight.translate(0, -sa))
+      .line(points.topRight)
+      .move(points.bottomLeft)
+      .line(points.bottomLeft.translate(0, sa))
+      .line(points.bottomRight.translate(0, sa))
+      .line(points.bottomRight)
+      .addClass('various sa')
+  }
+
+  /*
+   * Annotations
+   */
+  // Title
+  points.title = new Point(points.bottomRight.x / 3, points.bottomRight.y / 3)
+
+  // Dimensions
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottomRight,
+    to: points.topRight,
+    x: points.topRight.x + sa + 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.topLeft,
+    to: points.topRight,
+    y: points.topRight.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wFold',
+    from: points.bottomFold,
+    to: points.bottomRight,
+    y: points.bottomFold.y + sa + 15,
+  })
 }

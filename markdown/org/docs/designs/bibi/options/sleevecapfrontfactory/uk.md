@@ -2,8 +2,6 @@
 title: "Sleevecap front Y"
 maintainers:
   - Jonathan Haas
-maintainers:
-  - Jonathan Haas
 ---
 
 ![The vertical location of the front inflection point](./sleevecapfrontfactory.svg)

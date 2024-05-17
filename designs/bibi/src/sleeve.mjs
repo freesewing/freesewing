@@ -1,22 +1,17 @@
 import { sleevecap as brianSleeveCap } from '@freesewing/brian'
 import { hidePresets } from '@freesewing/core'
+import { cuff } from './cuff.mjs'
 
 export const sleeve = {
   name: 'bibi.sleeve',
   from: brianSleeveCap,
+  after: cuff,
   hide: hidePresets.HIDE_TREE,
   options: {
     sleeveLength: {
       pct: 20,
       min: -20,
       max: 110,
-      menu: (settings, mergedOptions) =>
-        mergedOptions.sleeves === false ? false : 'style.sleeves',
-    },
-    cuffEase: {
-      pct: 20,
-      min: 0,
-      max: 200,
       menu: (settings, mergedOptions) =>
         mergedOptions.sleeves === false ? false : 'style.sleeves',
     },
@@ -38,6 +33,7 @@ function bibiSleeve({
   snippets,
   Snippet,
   part,
+  utils,
 }) {
   points.sleeveTip = paths.sleevecap.edge('top')
   points.sleeveTop = new Point(0, points.sleeveTip.y) // Always in center
@@ -46,14 +42,17 @@ function bibiSleeve({
   store.set('sleeveLength', measurements.shoulderToWrist * options.sleeveLength)
 
   store.set('capSleeves', options.sleeveLength < 0.05)
+  store.set('separateSleeves', true)
 
   store.set('sleeveCapHeight', -points.sleeveTop.y)
   if (store.get('capSleeves')) {
+    store.set('separateSleeves', false)
     return part.hide()
   }
 
   if (!options.sleeves) {
     store.set('sleeveLength', 0)
+    store.set('separateSleeves', false)
     return part.hide()
   }
 
@@ -67,6 +66,18 @@ function bibiSleeve({
     options.sleeveLength
   )
   points.cuffLeft = points.bicepsLeft.shiftFractionTowards(points.wristLeft, options.sleeveLength)
+
+  if (store.cuffSize > 0) {
+    let intersectionY
+    if (points.bicepsLeft.dy(points.cuffLeft) > store.ribbingHeight * 1.5) {
+      intersectionY = points.cuffLeft.y - store.ribbingHeight
+    } else {
+      intersectionY = store.ribbingHeight * 0.5
+    }
+    points.cuffLeft = utils.beamIntersectsY(points.bicepsLeft, points.cuffLeft, intersectionY)
+    points.cuffRight = utils.beamIntersectsY(points.bicepsRight, points.cuffRight, intersectionY)
+  }
+
   points.centerCuff = points.cuffRight.shiftFractionTowards(points.cuffLeft, 0.5)
 
   // Paths
@@ -80,7 +91,20 @@ function bibiSleeve({
     .close()
     .attr('class', 'fabric')
 
-  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+  if (sa)
+    paths.sa = new Path()
+      .move(points.bicepsLeft)
+      .join(
+        new Path()
+          .move(points.cuffLeft)
+          .line(points.cuffRight)
+          .offset(store.cuffSize > 0 ? 0 : sa * 2)
+      )
+      .line(points.bicepsRight)
+      .join(paths.sleevecap)
+      .close()
+      .offset(sa)
+      .attr('class', 'fabric sa')
 
   /*
    * Annotations
@@ -103,7 +127,7 @@ function bibiSleeve({
   snippets.logo = new Snippet('logo', points.logo)
 
   // Title
-  macro('title', { at: points.centerBiceps, nr: 3, title: 'sleeve' })
+  macro('title', { at: points.centerBiceps, nr: 4, title: 'sleeve' })
 
   // Notches
   points.frontNotch = paths.sleevecap.shiftAlong(store.get('frontArmholeToArmholePitch'))

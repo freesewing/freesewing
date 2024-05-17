@@ -2,8 +2,6 @@
 title: "Sleevecap Q4 offset"
 maintainers:
   - Jonathan Haas
-maintainers:
-  - Jonathan Haas
 ---
 
 ![The offset in the fourth quarter of the sleevecap](./sleevecapq4offset.svg)

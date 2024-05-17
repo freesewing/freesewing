@@ -2,8 +2,6 @@
 title: "Sleevecap front X"
 maintainers:
   - Jonathan Haas
-maintainers:
-  - Jonathan Haas
 ---
 
 ![The horizontal location of the front inflection point](./sleevecapfrontfactorx.svg)
