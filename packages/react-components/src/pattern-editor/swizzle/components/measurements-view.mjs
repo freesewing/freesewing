@@ -16,7 +16,6 @@
  */
 export const MeasurementsView = (props) => {
   const { Design, settings, update, missingMeasurements, setView, methods } = props
-  console.log('mview props', props)
   const { Accordion, Popout, MeasurementsEditor } = props.components
   const { t } = methods
 

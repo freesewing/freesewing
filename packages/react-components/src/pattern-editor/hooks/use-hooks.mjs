@@ -25,6 +25,7 @@
 import { useAccount } from '../swizzle/hooks/use-account.mjs'
 import { useBackend } from '../swizzle/hooks/use-backend.mjs'
 import { useControlState } from '../swizzle/hooks/use-control-state.mjs'
+import { useEditorState } from '../swizzle/hooks/use-editor-state.mjs'
 
 /**
  * This object holds all hooks that can be swizzled
@@ -33,6 +34,7 @@ const defaultHooks = {
   useAccount,
   useBackend,
   useControlState,
+  useEditorState,
 }
 
 /*

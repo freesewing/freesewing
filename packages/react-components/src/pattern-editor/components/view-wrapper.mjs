@@ -1,6 +1,5 @@
 // Hooks
 import { useState, useEffect, useMemo } from 'react'
-import { usePatternSettings } from '../hooks/use-pattern-settings.mjs'
 import { useDefaults } from '../hooks/use-defaults.mjs'
 
 /**
@@ -27,7 +26,7 @@ export const ViewWrapper = (props) => {
   /*
    * Get swizzled useAccount and useControlState hooks
    */
-  const { useAccount, useControlState } = props.hooks
+  const { useAccount, useControlState, useEditorState } = props.hooks
 
   /*
    * Get swizzled objUpdate method
@@ -41,46 +40,37 @@ export const ViewWrapper = (props) => {
   const controlState = useControlState()
 
   // React state
-  const [design, setDesign] = useState()
-  const [view, setView] = useState()
-  const [settings, setSettings] = usePatternSettings(props.preloadSettings || {})
+  const [state, setState, update] = useEditorState({
+    settings: props.preloadSettings,
+    ui: props.preloadUi || defaultUi,
+  })
   const [ui, setUi] = useState(props.preloadUi || defaultUi)
 
-  //const [preloaded, setPreloaded] = useState(0)
-  //const [mounted, setMounted] = useState(false)
-
-  //useEffect(() => {
-  //},[])
-
   // Helper methods for settings/ui updates
-  const update = useMemo(
-    () => ({
-      settings: (path, val) =>
-        setSettings((curSettings) => objUpdate({ ...curSettings }, path, val)),
-      ui: (path, val) => setUi((curUi) => objUpdate({ ...curUi }, path, val)),
-      toggleSa: () => {
-        setSettings((curSettings) => {
-          const sa = curSettings.samm || (account?.imperial ? 15.3125 : 10)
+  //const toggleSa = useMemo(
+  //  () => ({
+  //    setSettings((curSettings) => {
+  //      const sa = curSettings.samm || (account?.imperial ? 15.3125 : 10)
 
-          if (curSettings.sabool)
-            return objUpdate({ ...curSettings }, [
-              [['sabool'], 0],
-              [['sa'], 0],
-              [['samm'], sa],
-            ])
-          else {
-            return objUpdate({ ...curSettings }, [
-              [['sabool'], 1],
-              [['sa'], sa],
-              [['samm'], sa],
-            ])
-          }
-        })
-      },
-      setControl: controlState.update,
-    }),
-    [setSettings, setUi, account, controlState]
-  )
+  //      if (curSettings.sabool)
+  //        return objUpdate({ ...curSettings }, [
+  //          [['sabool'], 0],
+  //          [['sa'], 0],
+  //          [['samm'], sa],
+  //        ])
+  //      else {
+  //        return objUpdate({ ...curSettings }, [
+  //          [['sabool'], 1],
+  //          [['sa'], sa],
+  //          [['samm'], sa],
+  //        ])
+  //      }
+  //    })
+  //  },
+  //  setControl: controlState.update,
+  //  }),
+  //  [setSettings, setUi, account, controlState]
+  //)
 
   // Figure out what view to load
   const [View, viewProps] = viewfinder({
