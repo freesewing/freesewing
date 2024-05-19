@@ -84,27 +84,41 @@ function bibiSleeve({
   paths.sleevecap.hide()
   paths.seam = new Path()
     .move(points.bicepsLeft)
-    .move(points.cuffLeft)
-    .move(points.cuffRight)
+    .line(points.cuffLeft)
+    .line(points.cuffRight)
     .line(points.bicepsRight)
     .join(paths.sleevecap)
     .close()
     .attr('class', 'fabric')
 
-  if (sa)
+  if (sa) {
+    if (store.cuffSize === 0) {
+      // modify seam allowance to add mirrored/hourglass shape
+      points.hemLeft = utils
+        .beamIntersectsY(points.bicepsRight, points.cuffRight, points.cuffRight.y + sa * 2)
+        .translate(points.cuffRight.dx(points.cuffLeft), 0)
+      points.hemRight = utils
+        .beamIntersectsY(points.bicepsLeft, points.cuffLeft, points.cuffLeft.y + sa * 2)
+        .translate(points.cuffLeft.dx(points.cuffRight), 0)
+      paths.saBottom = new Path()
+        .move(points.cuffLeft)
+        .line(points.hemLeft)
+        .line(points.hemRight)
+        .line(points.cuffRight)
+        .hide()
+    } else {
+      paths.saBottom = new Path().move(points.cuffLeft).line(points.cuffRight).hide()
+    }
+
     paths.sa = new Path()
       .move(points.bicepsLeft)
-      .join(
-        new Path()
-          .move(points.cuffLeft)
-          .line(points.cuffRight)
-          .offset(store.cuffSize > 0 ? 0 : sa * 2)
-      )
+      .join(paths.saBottom)
       .line(points.bicepsRight)
       .join(paths.sleevecap)
       .close()
       .offset(sa)
       .attr('class', 'fabric sa')
+  }
 
   /*
    * Annotations
