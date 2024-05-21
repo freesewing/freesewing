@@ -2,6 +2,8 @@
 title: "Lily leggings: Designer Notes"
 ---
 
-Placeholder
+<Fixme>
+Placeholder for designer note
+</Fixme>
 
 Anna Puk
