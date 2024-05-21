@@ -225,6 +225,12 @@ export const front = {
       y: points.strapRight.y - 15,
     })
     if (options.strapHeight != 0) {
+      macro('hd', {
+        id: 'wStrapToWing',
+        from: points.wingTop,
+        to: points.strapLeftAlt,
+        y: points.strapRight.y - 15,
+      })
       macro('ld', {
         id: 'wStrap',
         from: points.strapLeftAlt,
@@ -234,6 +240,12 @@ export const front = {
         d: 15,
       })
     } else {
+      macro('hd', {
+        id: 'wStrapToWing',
+        from: points.wingTop,
+        to: points.strapLeft,
+        y: points.strapRight.y - 15,
+      })
       macro('ld', {
         id: 'wStrap',
         from: points.strapLeft,
