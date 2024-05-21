@@ -1,5 +1,5 @@
 ---
-title: "Lumira leggings: Required Measurements"
+title: "Lily leggings: Required Measurements"
 ---
 
-<DesignMeasurements design='lumira' />
+<DesignMeasurements design='lily' />
