@@ -31,6 +31,7 @@ export const front = {
     shoulderStrapWidth: { pct: 14, min: 0, max: 50, menu: 'style' },
     strapHeight: { pct: 0, min: 0, max: 100, menu: 'style' },
     dartLength: { pct: 0, min: 0, max: 45, menu: 'style' },
+    withDart: { bool: false, menu: 'advanced' },
   },
   draft: ({ part, Path, Point, paths, points, options, measurements, macro, utils }) => {
     // Construct the bottom of the front
@@ -142,6 +143,15 @@ export const front = {
 
     paths.strapOnChest = new Path()
       .move(points.wingBottom)
+      .line(points.middleBottom)
+      .line(points.middleTop)
+      .curve(points.middleTopCp1, points.strapRightCp2, points.strapRight)
+      .line(points.strapLeftAlt)
+      .curve(points.strapLeftCp1, points.wingTopCp2, points.wingTop)
+      .close()
+
+    paths.strapOnChestWithDart = new Path()
+      .move(points.wingBottom)
       .line(points.dartLeft)
       .line(points.dartTop)
       .line(points.dartRight)
@@ -153,6 +163,15 @@ export const front = {
       .close()
 
     paths.strapToShoulder = new Path()
+      .move(points.wingBottom)
+      .line(points.middleBottom)
+      .line(points.middleTop)
+      .curve(points.middleTopCp1, points.strapRightCp2, points.strapRight)
+      .line(points.strapLeft)
+      .curve(points.strapLeftCp1, points.wingTopCp2, points.wingTop)
+      .close()
+
+    paths.strapToShoulderWithDart = new Path()
       .move(points.wingBottom)
       .line(points.dartLeft)
       .line(points.dartTop)
@@ -166,8 +185,18 @@ export const front = {
 
     if (options.strapHeight != 0) {
       paths.strapToShoulder.hide()
+      paths.strapToShoulderWithDart.hide()
     } else {
       paths.strapOnChest.hide()
+      paths.strapOnChestWithDart.hide()
+    }
+
+    if (options.withDart) {
+      paths.strapToShoulder.hide()
+      paths.strapOnChest.hide()
+    } else {
+      paths.strapToShoulderWithDart.hide()
+      paths.strapOnChestWithDart.hide()
     }
 
     // Paperless support
