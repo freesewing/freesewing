@@ -22,13 +22,13 @@ export const front = {
     // Style
     armSideBend: { pct: 50, min: 0, max: 100, menu: 'style' },
     armSideDrop: { pct: 50, min: 0, max: 100, menu: 'style' },
-    wingHeight: { pct: 80, min: 10, max: 100, menu: 'style' },
+    wingHeight: { pct: 80, min: 0, max: 100, menu: 'style' },
     necklineDrop: { pct: 25, min: 0, max: 75, menu: 'style' },
     necklineBend: { pct: 100, min: 0, max: 100, menu: 'style' },
     strapArmAngle: { pct: 100, min: 0, max: 100, menu: 'style' },
     strapNecklineAngle: { pct: 0, min: 0, max: 100, menu: 'style' },
     shoulderStrapPlacement: { pct: 30, min: 10, max: 85, menu: 'style' },
-    shoulderStrapWidth: { pct: 14, min: 10, max: 20, menu: 'style' },
+    shoulderStrapWidth: { pct: 14, min: 0, max: 50, menu: 'style' },
     strapHeight: { pct: 0, min: 0, max: 100, menu: 'style' },
     dartLength: { pct: 0, min: 0, max: 45, menu: 'style' },
   },
@@ -41,7 +41,7 @@ export const front = {
     )
     points.middleTop = points.middleBottom.shift(
       90,
-      measurements.bustPointToUnderbust + measurements.hpsToBust * options.necklineDrop
+      (measurements.bustPointToUnderbust + measurements.hpsToBust) * options.necklineDrop
     )
     points.armpit = new Point(
       points.middleBottom.x - measurements.highBustFront * options.highBustFrontFactor,
