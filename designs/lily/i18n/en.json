@@ -44,10 +44,6 @@
       "t": "Crotch drop",
       "d": "Lowers the crotch for a more relaxed fit"
     },
-    "fitKnee": {
-      "t": "Fit the knee",
-      "d": "Fits the legs from based on the knee circumference, rather than seat circumference"
-    },
     "crossSeamCurveStart": {
       "t": "Start of the cross seam curve",
       "d": "Controls how far into the cross seam we start to curve"
