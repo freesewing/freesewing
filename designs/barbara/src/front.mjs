@@ -15,7 +15,6 @@ export const front = {
   ],
   options: {
     // Static
-    underbustFactor: 0.25,
     highBustFrontFactor: 0.5,
     // Fit
     underbustEase: { pct: 10, min: 0, max: 20, menu: 'fit' },
@@ -36,10 +35,7 @@ export const front = {
   draft: ({ part, Path, Point, paths, points, options, measurements, macro, utils }) => {
     // Construct the bottom of the front
     points.wingBottom = new Point(0, 0)
-    points.middleBottom = points.wingBottom.shift(
-      0,
-      measurements.underbust * options.underbustFactor
-    )
+    points.middleBottom = points.wingBottom.shift(0, measurements.underbust / 4)
     points.middleTop = points.middleBottom.shift(
       90,
       (measurements.bustPointToUnderbust + measurements.hpsToBust) * options.necklineDrop
