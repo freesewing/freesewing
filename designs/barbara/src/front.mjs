@@ -212,17 +212,17 @@ export const front = {
       to: points.middleTop,
       x: points.middleBottom.x + 15,
     })
-    macro('vd', {
-      id: 'hWing',
-      from: points.wingBottom,
-      to: points.wingTop,
-      x: points.wingBottom.x - 15,
-    })
     macro('hd', {
       id: 'wMiddleToStrap',
       from: points.strapRight,
       to: points.middleBottom,
       y: points.strapRight.y - 15,
+    })
+    macro('ld', {
+      id: 'hWing',
+      from: points.wingBottom,
+      to: points.wingTop,
+      d: 15,
     })
     if (options.strapHeight != 0) {
       macro('hd', {
