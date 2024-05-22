@@ -5,7 +5,7 @@ export const back = {
     // Style
     backStyle: { dflt: 'crossedStraps', list: ['crossedStraps', 'parallelStraps'], menu: 'style' },
     bandHeight: { pct: 15, min: 0, max: 95, menu: 'style' },
-    crossedStrapsWidth: { pct: 70, min: 50, max: 90, menu: 'style' },
+    crossedStrapsBandWidth: { pct: 70, min: 50, max: 90, menu: 'style' },
   },
   draft: ({ part, Path, Point, paths, points, options, measurements, macro, utils, store }) => {
     // Construct the bottom of the back
@@ -30,7 +30,7 @@ export const back = {
     // Construct the crossed straps variant
     points.crossedMiddleBottom = points.bandLeftBottom.shift(
       0,
-      (measurements.underbust / 4) * options.crossedStrapsWidth
+      (measurements.underbust / 4) * options.crossedStrapsBandWidth
     )
     points.crossedStrapLeft = points.neckRightBack.shift(
       -measurements.shoulderSlope,
