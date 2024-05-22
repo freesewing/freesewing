@@ -150,6 +150,7 @@ function draftFront({
       .close()
       .addClass('fabric sa')
   }
+
   if (complete)
     paths.hint = new Path()
       .move(points.crossSeamCurveStart)
