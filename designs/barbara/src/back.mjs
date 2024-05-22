@@ -6,6 +6,8 @@ export const back = {
     backStyle: { dflt: 'crossedStraps', list: ['crossedStraps', 'parallelStraps'], menu: 'style' },
     bandHeight: { pct: 15, min: 0, max: 95, menu: 'style' },
     crossedStrapsBandWidth: { pct: 70, min: 50, max: 90, menu: 'style' },
+    crossedCurveBend: { pct: 75, min: 0, max: 100, menu: 'style' },
+    crossedCurveStart: { pct: 95, min: 0.1, max: 100, menu: 'style' },
   },
   draft: ({ part, Path, Point, paths, points, options, measurements, macro, utils, store }) => {
     // Construct the bottom of the back
@@ -40,6 +42,33 @@ export const back = {
       -measurements.shoulderSlope,
       store.get('front.strapRightStrapLeft.dist')
     )
+    points.crossedStrapBottomBase = utils.beamIntersectsY(
+      points.crossedStrapLeft,
+      points.crossedStrapLeft.shift(
+        points.crossedStrapRight.angle(points.crossedMiddleBottom),
+        100
+      ),
+      points.bandLeftTop.y
+    )
+    points.crossedStrapBottom = points.crossedStrapLeft.shiftFractionTowards(
+      points.crossedStrapBottomBase,
+      options.crossedCurveStart
+    )
+    // Construct the curve of the crossed straps variant
+    points.crossedCurveCorner = utils.beamsIntersect(
+      points.bandLeftTop,
+      points.bandLeftTop.shift(-store.get('front.wingTopArmCorner.angle'), 100),
+      points.crossedStrapLeft,
+      points.crossedStrapBottom
+    )
+    points.crossedStrapBottomCp1 = points.crossedStrapBottom.shiftFractionTowards(
+      points.crossedCurveCorner,
+      options.crossedCurveBend
+    )
+    points.crossedBandLeftTopCp2 = points.bandLeftTop.shiftFractionTowards(
+      points.crossedCurveCorner,
+      options.crossedCurveBend
+    )
 
     paths.test = new Path()
       .move(points.bandLeftBottom)
@@ -47,13 +76,17 @@ export const back = {
       .line(points.bandMiddleTop)
       .line(points.bandLeftTop)
       .close(points.bandLeftBottom)
-    paths.test.hide()
+      .hide()
 
-    paths.crossedStrapsTest = new Path()
+    paths.crossedStraps = new Path()
       .move(points.bandLeftBottom)
       .line(points.crossedMiddleBottom)
       .line(points.crossedStrapRight)
       .line(points.crossedStrapLeft)
+      .line(points.crossedStrapBottom)
+      .curve(points.crossedStrapBottomCp1, points.crossedBandLeftTopCp2, points.bandLeftTop)
+      .close(points.bandLeftBottom)
+      .setHidden(options.backStyle != 'crossedStraps')
 
     return part
   },
