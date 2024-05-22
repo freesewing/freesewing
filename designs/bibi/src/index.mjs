@@ -20,6 +20,8 @@ import {
   constructFrontHem,
   createArmHoles,
   plotSideLineMeasurements,
+  draftRibbing,
+  draftKnitBinding,
 } from './shared.mjs'
 
 // Setup our new design
@@ -52,6 +54,8 @@ export {
   constructFrontHem,
   createArmHoles,
   plotSideLineMeasurements,
+  draftRibbing,
+  draftKnitBinding,
   Bibi,
   i18n,
 }
