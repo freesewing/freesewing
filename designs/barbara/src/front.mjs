@@ -47,8 +47,9 @@ export const front = {
     points.wingTop = points.wingBottom.shiftFractionTowards(points.armpit, options.wingHeight)
 
     // Construct the shoudler strap from the edge of the neck
+    let neckRadius = measurements.neck / (2 * 3.14)
     points.neckLeft = points.middleBottom.translate(
-      -(measurements.neck / (2 * 3.14)),
+      -neckRadius,
       -(measurements.bustPointToUnderbust + measurements.hpsToBust)
     )
     points.strapRightBase = points.neckLeft.shift(
@@ -198,6 +199,9 @@ export const front = {
     // Store data
     store.set('front.wingTopAngle', points.wingBottom.angle(points.wingTop))
     store.set('front.wingTopDist', points.wingBottom.dist(points.wingTop))
+    store.set('neckRadius', neckRadius)
+    store.set('front.neckLeftStrapRightBase.dist', points.neckLeft.dist(points.strapRightBase))
+    store.set('front.strapRightStrapLeft.dist', points.strapRight.dist(points.strapLeft))
 
     // Paperless support
     macro('vd', {
