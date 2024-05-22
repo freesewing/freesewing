@@ -150,7 +150,6 @@ function draftFront({
       .close()
       .addClass('fabric sa')
   }
-
   if (complete)
     paths.hint = new Path()
       .move(points.crossSeamCurveStart)
@@ -249,7 +248,7 @@ function draftFront({
   macro('vd', {
     id: 'vLegHemAllowance',
     from: points.outseamHem,
-    to: points.outseamHemAllowance,
+    to: sa ? points.outseamHemAllowance : points.outseamHem,
     x: points.waist.x + (sa + 15),
     noStartMarker: true,
     noEndMarker: true,
@@ -278,7 +277,6 @@ function draftFront({
     to: points.inseamHem,
     x: points.fork.x - (sa + 30),
   })
-
   points.grainlineTop = points.slashSide.translate(-waistDist * 0.05, 0)
   points.grainlineBottom = new Point(points.grainlineTop.x, points.outseamHem.y)
   macro('grainline', {
