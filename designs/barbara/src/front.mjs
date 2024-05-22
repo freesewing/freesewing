@@ -32,7 +32,7 @@ export const front = {
     dartLength: { pct: 0, min: 0, max: 45, menu: 'style' },
     withDart: { bool: false, menu: 'advanced' },
   },
-  draft: ({ part, Path, Point, paths, points, options, measurements, macro, utils }) => {
+  draft: ({ part, Path, Point, paths, points, options, measurements, macro, utils, store }) => {
     // Construct the bottom of the front
     points.wingBottom = new Point(0, 0)
     points.middleBottom = points.wingBottom.shift(0, measurements.underbust / 4)
@@ -194,6 +194,10 @@ export const front = {
       paths.strapToShoulderWithDart.hide()
       paths.strapOnChestWithDart.hide()
     }
+
+    // Store data
+    store.set('front.wingTopAngle', points.wingBottom.angle(points.wingTop))
+    store.set('front.wingTopDist', points.wingBottom.dist(points.wingTop))
 
     // Paperless support
     macro('vd', {
