@@ -88,6 +88,47 @@ export const back = {
       .close(points.bandLeftBottom)
       .setHidden(options.backStyle != 'crossedStraps')
 
+    // Paperless support
+    if (options.backStyle == 'crossedStraps') {
+      macro('vd', {
+        id: 'hUnderbustToStrap',
+        from: points.crossedMiddleBottom,
+        to: points.crossedStrapRight,
+        x: points.crossedStrapRight.x + 15,
+      })
+      macro('vd', {
+        id: 'hStrapTop',
+        from: points.crossedStrapBottom,
+        to: points.crossedStrapLeft,
+        x: points.crossedStrapBottom.x - 15,
+      })
+      macro('hd', {
+        id: 'wStrapTop',
+        from: points.crossedStrapBottom,
+        to: points.crossedStrapLeft,
+        y: points.crossedStrapLeft.y - 15,
+      })
+      macro('hd', {
+        id: 'wBand',
+        from: points.bandLeftBottom,
+        to: points.crossedMiddleBottom,
+        y: points.bandLeftBottom.y + 15,
+      })
+      macro('hd', {
+        id: 'wStrapBottom',
+        from: points.crossedMiddleBottom,
+        to: points.crossedStrapRight,
+        y: points.crossedMiddleBottom.y + 15,
+      })
+    }
+
+    macro('ld', {
+      id: 'lWing',
+      from: points.bandLeftBottom,
+      to: points.bandLeftTop,
+      d: 15,
+    })
+
     return part
   },
 }
