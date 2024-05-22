@@ -19,18 +19,19 @@ export const front = {
     // Fit
     underbustEase: { pct: 10, min: 0, max: 20, menu: 'fit' },
     // Style
-    armSideBend: { pct: 50, min: 0, max: 100, menu: 'style' },
-    armSideDrop: { pct: 50, min: 0, max: 100, menu: 'style' },
+    armSideBend: { pct: 50, min: 0, max: 100, menu: 'style.armSide' },
+    armSideDrop: { pct: 50, min: 0, max: 100, menu: 'style.armSide' },
     wingHeight: { pct: 80, min: 0, max: 100, menu: 'style' },
-    necklineDrop: { pct: 25, min: 0, max: 75, menu: 'style' },
-    necklineBend: { pct: 100, min: 0, max: 100, menu: 'style' },
-    strapArmAngle: { pct: 100, min: 0, max: 100, menu: 'style' },
-    strapNecklineAngle: { pct: 0, min: 0, max: 100, menu: 'style' },
+    necklineDrop: { pct: 25, min: 0, max: 75, menu: 'style.neckline' },
+    necklineBend: { pct: 100, min: 0, max: 100, menu: 'style.neckline' },
+    strapArmAngle: { pct: 100, min: 0, max: 100, menu: 'style.armSide' },
+    strapNecklineAngle: { pct: 0, min: 0, max: 100, menu: 'style.neckline' },
     shoulderStrapPlacement: { pct: 30, min: 10, max: 85, menu: 'style' },
     shoulderStrapWidth: { pct: 14, min: 0, max: 50, menu: 'style' },
     strapHeight: { pct: 0, min: 0, max: 100, menu: 'style' },
-    dartLength: { pct: 0, min: 0, max: 45, menu: 'style' },
+    // Advanced
     withDart: { bool: false, menu: 'advanced' },
+    dartLength: { pct: 0, min: 0, max: 45, menu: 'Advanced' },
   },
   draft: ({ part, Path, Point, paths, points, options, measurements, macro, utils, store }) => {
     // Construct the bottom of the front

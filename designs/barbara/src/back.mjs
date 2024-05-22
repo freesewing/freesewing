@@ -5,9 +5,9 @@ export const back = {
     // Style
     backStyle: { dflt: 'crossedStraps', list: ['crossedStraps', 'parallelStraps'], menu: 'style' },
     bandHeight: { pct: 15, min: 0, max: 95, menu: 'style' },
-    crossedStrapsBandWidth: { pct: 70, min: 50, max: 90, menu: 'style' },
-    crossedCurveBend: { pct: 75, min: 0, max: 100, menu: 'style' },
-    crossedCurveStart: { pct: 95, min: 0.1, max: 100, menu: 'style' },
+    crossedStrapsBandWidth: { pct: 70, min: 50, max: 90, menu: 'style.crossedStrapsVariant' },
+    crossedCurveBend: { pct: 75, min: 0, max: 100, menu: 'style.crossedStrapsVariant' },
+    crossedCurveStart: { pct: 95, min: 0.1, max: 100, menu: 'style.crossedStrapsVariant' },
   },
   draft: ({ part, Path, Point, paths, points, options, measurements, macro, utils, store }) => {
     // Construct the bottom of the back
