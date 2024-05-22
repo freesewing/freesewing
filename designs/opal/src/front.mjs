@@ -320,7 +320,8 @@ export const front = {
       pct: 150,
       min: 0,
       max: 400,
-      toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.hemAllowance,
+      toAbs: (pct, settings, mergedOptions) =>
+        settings.sa ? settings.sa : 0 * mergedOptions.hemAllowance,
       menu: 'construction',
     },
     // Sets the hem allowance for the legs. Very large values are used for cuffs. If making a regular hem, setting this equal to hemAllowance can work well.
