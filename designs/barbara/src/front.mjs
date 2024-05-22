@@ -196,12 +196,13 @@ export const front = {
       paths.strapOnChestWithDart.hide()
     }
 
-    // Store data
+    // Data storage
     store.set('front.wingTopAngle', points.wingBottom.angle(points.wingTop))
     store.set('front.wingTopDist', points.wingBottom.dist(points.wingTop))
     store.set('neckRadius', neckRadius)
     store.set('front.neckLeftStrapRightBase.dist', points.neckLeft.dist(points.strapRightBase))
     store.set('front.strapRightStrapLeft.dist', points.strapRight.dist(points.strapLeft))
+    store.set('front.wingTopArmCorner.angle', points.wingTop.angle(points.armCorner))
 
     // Paperless support
     macro('vd', {
