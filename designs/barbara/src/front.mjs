@@ -31,7 +31,7 @@ export const front = {
     strapHeight: { pct: 0, min: 0, max: 100, menu: 'style' },
     // Advanced
     withDart: { bool: false, menu: 'advanced' },
-    dartLength: { pct: 0, min: 0, max: 45, menu: 'Advanced' },
+    dartLength: { pct: 0, min: 0, max: 45, menu: 'advanced' },
   },
   draft: ({ part, Path, Point, paths, points, options, measurements, macro, utils, store }) => {
     // Construct the bottom of the front
