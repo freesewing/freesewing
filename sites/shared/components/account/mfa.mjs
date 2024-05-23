@@ -97,6 +97,7 @@ export const MfaSettings = ({ title = false, welcome = false }) => {
           <div className="flex flex-row items-center justify-center px-8 lg:px-36">
             <div dangerouslySetInnerHTML={{ __html: enable.qrcode }} />
           </div>
+          <p className="flex flex-row items-center justify-center">{enable.secret}</p>
           <Bullet num="1">{t('mfaAdd')}</Bullet>
           <Bullet num="2">{t('confirmWithMfa')}</Bullet>
           <input
