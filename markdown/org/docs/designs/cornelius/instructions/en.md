@@ -7,7 +7,7 @@ title: "Cornelius cycling breeches: Sewing Instructions"
 - Press under the seam allowances of the non-notched edges of the pocket facings.
 - Matching notches, pin the wrong sides of pocket facings to right side of pocket bags, _Edgestitch_ the folded edges to the pocket bags.
 - _Baste_ the seam allowances of the notched edges of the pocket facings to the pocket bags.
-- With right sides together matching double notches sew the pocket bags to the front and then press to the wrong side.
+- With right sides together, matching both notches, sew the pocket bags to the front and then press to the wrong side.
 - Fold the pockets in half along the fold line, right sides together. Stitch the bottom of the pocket bag together.
 - Alternatively you can _French Seam_ the bottom seams of the pocket bags together if you prefer.
 - _Baste_ the top and side of the pocket bags to the front seam allowances matching notches.

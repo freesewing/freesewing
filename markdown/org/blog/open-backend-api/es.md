@@ -20,7 +20,7 @@ Supongo que, al menos al principio, será una función muy especializada. Sin em
 
 Por lo menos, sé que lo haré.
 
-La [documentación de referencia de la API REST vive aquí](https://freesewing.dev/reference/backend), si buscas la Especificación OpenAPI, entonces ve a https\://backend3.freesewing.org/docs/
+La [documentación de referencia de la API REST vive aquí](https://freesewing.dev/reference/backend), si buscas la Especificación OpenAPI, entonces ve a https://backend3.freesewing.org/docs/
 
 ## Usa, no abuses
 

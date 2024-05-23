@@ -6,6 +6,7 @@ intro: "-"
 designs:
   - titan
 maker: Galit
+author: 49445
 ---
 
-Korte broek voor mijn dochter
+Shorts for my daughter

@@ -33,7 +33,7 @@ function draftCharlieFlyFacing({ points, Point, paths, Path, macro, snippets, st
   /*
    * Annotations
    */
-  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+  store.cutlist.setCut({ cut: 1, from: 'fabric' })
 
   // Grainline
   points.grainlineTop = points.flyTop.shiftFractionTowards(points.styleWaistIn, 0.5)

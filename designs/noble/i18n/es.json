@@ -35,6 +35,10 @@
       "t": "Longitud del dart de Waist",
       "d": "Controla la longitud del dardo de la cintura"
     },
+    "shoulderDartCurvature": {
+      "t": "Shoulder dart curvature",
+      "d": "Controls the curvature of the upper part of the shoulder dart"
+    },
     "shoulderDartPosition": {
       "t": "Shoulder dart position",
       "d": "Controls the position of the shoulder dart"

@@ -40,7 +40,7 @@ en ga zo door.
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -95,7 +95,7 @@ te bellen met ideeën! Tot die tijd zien we wel wat de toekomst brengt.
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -125,7 +125,7 @@ Ik waardeer Wouter's aanpak echt, waarbij hij zijn eigen behoeften heeft die de 
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -165,7 +165,7 @@ Ik denk dat we wel zullen zien hoe het gaat. Je kunt het zelf ontdekken, we zijn
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -179,7 +179,7 @@ Ok, hopelijk is het uiteindelijk allemaal goed gegaan. Maar ter herinnering: Je 
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 

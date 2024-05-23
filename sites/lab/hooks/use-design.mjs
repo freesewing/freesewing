@@ -8,6 +8,7 @@ import { Bee as bee } from '@freesewing/bee'
 import { Bella as bella } from '@freesewing/bella'
 import { Benjamin as benjamin } from '@freesewing/benjamin'
 import { Bent as bent } from '@freesewing/bent'
+import { Bibi as bibi } from '@freesewing/bibi'
 import { Bob as bob } from '@freesewing/bob'
 import { Breanna as breanna } from '@freesewing/breanna'
 import { Brian as brian } from '@freesewing/brian'
@@ -27,6 +28,7 @@ import { Hortensia as hortensia } from '@freesewing/hortensia'
 import { Huey as huey } from '@freesewing/huey'
 import { Hugo as hugo } from '@freesewing/hugo'
 import { Jaeger as jaeger } from '@freesewing/jaeger'
+import { Jane as jane } from '@freesewing/jane'
 import { Lucy as lucy } from '@freesewing/lucy'
 import { Lumina as lumina } from '@freesewing/lumina'
 import { Lumira as lumira } from '@freesewing/lumira'
@@ -35,6 +37,7 @@ import { Magde as magde } from '@freesewing/magde'
 import { Noble as noble } from '@freesewing/noble'
 import { Octoplushy as octoplushy } from '@freesewing/octoplushy'
 import { Onyx as onyx } from '@freesewing/onyx'
+import { Opal as opal } from '@freesewing/opal'
 import { Otis as otis } from '@freesewing/otis'
 import { Paco as paco } from '@freesewing/paco'
 import { Penelope as penelope } from '@freesewing/penelope'
@@ -54,10 +57,12 @@ import { Titan as titan } from '@freesewing/titan'
 import { Trayvon as trayvon } from '@freesewing/trayvon'
 import { Tristan as tristan } from '@freesewing/tristan'
 import { Uma as uma } from '@freesewing/uma'
+import { Umbra as umbra } from '@freesewing/umbra'
 import { Wahid as wahid } from '@freesewing/wahid'
 import { Walburga as walburga } from '@freesewing/walburga'
 import { Waralee as waralee } from '@freesewing/waralee'
 import { Yuri as yuri } from '@freesewing/yuri'
+import { Lily as lily } from '@freesewing/lily'
 
 const designs = {
   aaron,
@@ -66,6 +71,7 @@ const designs = {
   bella,
   benjamin,
   bent,
+  bibi,
   bob,
   breanna,
   brian,
@@ -85,6 +91,7 @@ const designs = {
   huey,
   hugo,
   jaeger,
+  jane,
   lucy,
   lumina,
   lumira,
@@ -93,6 +100,7 @@ const designs = {
   noble,
   octoplushy,
   onyx,
+  opal,
   otis,
   paco,
   penelope,
@@ -112,10 +120,12 @@ const designs = {
   trayvon,
   tristan,
   uma,
+  umbra,
   wahid,
   walburga,
   waralee,
   yuri,
+  lily,
 }
 
 export const useDesign = (design) => (designs[design] ? designs[design] : false)

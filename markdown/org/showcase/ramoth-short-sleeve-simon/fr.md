@@ -1,5 +1,5 @@
 ---
-maker: "Ramoth"
+author: 23386
 caption: "Simon à manches courtes de Ramoth, dont la plupart des formes ont été déplacées vers les pinces du dos."
 date: "30-09-2021"
 intro: "La chemise Simon à manches courtes de Ramoth"

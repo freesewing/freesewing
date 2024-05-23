@@ -6,6 +6,7 @@ intro: "-"
 designs:
   - titan
 maker: Galit
+author: 49445
 ---
 
-Shorts for my dauther
+Short pour ma fille

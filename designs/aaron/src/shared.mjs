@@ -18,7 +18,7 @@ export function dimensions(macro, points, sa) {
     y: points.neck.y - sa - 30,
   })
   macro('vd', {
-    text: 'hHemToArmhole',
+    id: 'hHemToArmhole',
     from: points.hem,
     to: points.armhole,
     x: points.armhole.x + sa + 15,

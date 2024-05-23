@@ -13,7 +13,7 @@ In the example below we have two such paths:
 - `paths.saBase` is the path that will require regular seam allowance
 - `paths.hemBase` is the path that will require more seam allowance, or hem allowance
 
-When creating them, we disable rendering, effectively hiding them.
+When creating them, we hide the new paths to avoid drawing the same path multiple times.
 Then we string together our real path and our seam allowance based on them:
 
 ```js
@@ -22,11 +22,11 @@ Then we string together our real path and our seam allowance based on them:
     .line(points.tip)
     .curve(points.tipCpBottom, points.tipCpTop, points.topLeft)
     .line(points.bottomLeft)
-    .setRender(false)
+    .hide()
   paths.hemBase = new Path()
     .move(points.bottomLeft)
     .line(points.bottomRight)
-    .setRender(false)
+    .hide()
 
   paths.seam = paths.saBase.join(paths.hemBase)
     .close()

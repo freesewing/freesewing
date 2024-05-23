@@ -1176,6 +1176,24 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "RockerKitten",
+      "name": "Corey",
+      "avatar_url": "https://avatars.githubusercontent.com/u/84648053?v=4",
+      "profile": "https://github.com/RockerKitten",
+      "contributions": [
+        "question"
+      ]
+    },
+    {
+      "login": "GeniaHarrietBoeing",
+      "name": "Niabon",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73827848?v=4",
+      "profile": "https://github.com/GeniaHarrietBoeing",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,

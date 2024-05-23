@@ -1,12 +1,12 @@
 ---
-title: J'ai des difficultés avec les mesures. Que faut-il pour que je vérifie?
+title: J'ai des difficultés avec les mesures. Que faut-il que je vérifie?
 ---
 
 Chacune de nos [mesures] (https\://freesewing.org/docs/measurements) est documentée par une description et deux visuels. S'y référer résout la plupart des problèmes.
 
 Nous travaillons sur une fonctionnalité d'assurance qualité qui détecte les problèmes éventuels et les porte à l'attention de l'utilisateur d'une manière qui _a du sens_.
 
-En attendant, voici quelques endroits pour commencer à chercher si tu as des problèmes avec tes mesures.
+En attendant, voici quelques endroits où commencer à chercher si tu as des problèmes avec tes mesures.
 
 ### Remarques générales
 
@@ -20,46 +20,46 @@ Nous avons remarqué que certaines mesures ont tendance à poser des problèmes.
 
 #### De la taille à l'aisselle
 
-La mesure [de la taille à l'aisselle] (https\://freesewing.org/docs/measurements/waisttoarmpit) est une mesure verticale droite, et non curviligne (qui suit la courbe du corps). It should be at the bottom edge of your armpit, only as high as a shirt would be comfortable sitting (not digging in).
+La mesure [de la taille à l'aisselle] (https\://freesewing.org/docs/measurements/waisttoarmpit) est une mesure verticale droite, et non curviligne (qui suit la courbe du corps). Il doit se situer au niveau du bord inférieur de ton aisselle, pas plus haut que le max qu'une chemise peux l'être (sans s'enfoncer).
 
-![Waist to armpit](waisttoarmpit.jpg)
+![De la taille à l'aisselle](waisttoarmpit.jpg)
 
-#### High point shoulder (HPS)
+#### Point Haut de l'Épaule (ou PHE)
 
-[HPS](https://freesewing.org/docs/sewing/hps), which is used in several measurements, is one of the harder spots to get perfect.
+[PHE](https://freesewing.org/docs/sewing/hps), qui est utilisé dans plusieurs mesures, est l'un des points les plus difficiles à perfectionner.
 
-Here are two approaches.
+Voici deux approches.
 
-One way is to take a pencil, pen, or small dowel to find the point where your neck meets your shoulder, as well as the highest point as that's where the pencil or dowel will touch the shoulder. If you use that method, you ideally want the tool you're using to be parallel with the floor so you can find that high point.
+Une façon de procéder consiste à prendre un crayon, un stylo ou une petite cheville pour trouver le point où ton cou rencontre ton épaule, ainsi que le point le plus élevé car c'est là que le crayon ou la cheville touchera l'épaule. Si tu utilises cette méthode, l'idéal est que l'outil que tu utilises soit parallèle au sol pour que tu puisses trouver ce point haut.
 
-![High point shoulder with dowel](hps2.jpg)
+[Point haut de l'épaule avec cheville](hps2.jpg)
 
-Another way is with a ribbon. Take a longer ribbon and put it over your neck/shoulder like a cross body bag. It helps to be able to feel where the neck ends and the shoulder begins with a small amount of pressure on the ribbon. You'll need to determine where the shoulder seam should sit, but the ribbon will tell you where the HPS should sit once you have the shoulder seam determined as it will be where the two lines cross.
+Tu peux aussi utiliser un ruban. Prends un ruban plus long et mets-le autour de ton cou/de tes épaules comme une sacoche. Il est utile de pouvoir sentir où se termine le cou et où commence l'épaule en exerçant une petite pression sur le ruban. Tu devras déterminer l'emplacement de la couture de l'épaule, mais le ruban t'indiquera l'emplacement du PHE une fois que tu auras déterminé la couture de l'épaule, car ce sera l'endroit où les deux lignes se croisent.
 
-![High point shoulder with riibbon](hps.jpg)
+[Point haut de l'épaule avec ruban](hps2.jpg)
 
 #### Tour de buste supérieur
 
-[High bust](https://freesewing.org/docs/measurements/highbust) is a horizontal measurement that does not need to be perfectly horizontal. It should go around your torso at the narrowest part of the upper chest, over the bust, under the arms, and across the back, but does not need to be parallel to the ground all the way around.
+Le [buste haut] (https://freesewing.org/docs/measurements/highbust) est une mesure horizontale qui n'a pas besoin d'être parfaitement horizontale. Elle doit faire le tour de ton torse au niveau de la partie la plus étroite du haut de la poitrine, passer sur le buste, sous les bras et dans le dos, mais il n'est pas nécessaire qu'elle soit parallèle au sol sur toute sa longueur.
 
-![High bust from the side](highbust.jpg)
+[Buste haut vu de côté](highbust.jpg)
 
-![High bust from the front](highbust2.jpg)
+[Buste haut de face](highbust2.jpg)
 
 #### Pente d'épaule
 
-Many have had luck using an inclinometer app on a smartphone to measure [shoulder slope](https://freesewing.org/docs/measurements/shoulderslope).
+Beaucoup ont eu de la chance en utilisant une application d'inclinomètre sur un smartphone pour mesurer [la pente des épaules] (https://freesewing.org/docs/measurements/shoulderslope).
 
-#### Seat and hips
+#### Siège et hanches
 
-Sometimes people have [seat](https://freesewing.org/docs/measurements/seat) and [hips](https://freesewing.org/docs/measurements/hips) reversed.
+Parfois, les gens ont [siège](https://freesewing.org/docs/measurements/seat) et [hanches](https://freesewing.org/docs/measurements/hips) inversés.
 
-In FreeSewing terms, hips is measured at the upper point of the hip bones. Some other sources call this the "high hip".
+En termes de FreeSewing, les hanches sont mesurées au point supérieur des os de la hanche. D'autres sources appellent cela la "hanche haute".
 
-Seat is across the fullest part of your butt. Some other sources call this the "hip".
+L'assise se trouve sur la partie la plus large de tes fesses. D'autres sources appellent cela la "hanche".
 
-##### Waist
+##### Taille
 
-Where you take the [waist](https://freesewing.org/docs/measurements/waist) measurements is not necessarily connected to where, for instance, a waistband is.
+L'endroit où tu prends les mesures de la [taille] (https://freesewing.org/docs/measurements/waist) n'est pas nécessairement lié à l'endroit où se trouve, par exemple, une ceinture.
 
-Try bending sideways and noting the point where your body creases. (For bonus points, put your hand on your waist and sing "I'm a little teapot".)
+Essaie de te pencher sur le côté et de noter l'endroit où ton corps se plisse. (Pour les points bonus, mets ta main sur ta taille et chante "Je suis une petite théière")

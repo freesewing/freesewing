@@ -6,6 +6,7 @@ intro: This Tristan top is lined and had bias binding applied to the neck hole, 
 designs:
   - tristan
 maker: Natalia
+author: 60164
 ---
 
 This Tristan top is lined and had bias binding applied to the neck hole, armholes, and hem. It laces in the front to make it easier to wear. This top is technically reversible, although the eyelets are a bit rough on the back side. The boning used is lightweight plastic boning. It gives a nice amount of structure, and support for the lacing.

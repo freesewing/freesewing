@@ -6,7 +6,7 @@ intro: From the end of 29 October 2023 until 2 January 2024, some emails sent to
 author: 1
 ---
 
-Between the 29th of October 2023 until the 2nd of January 2024, emails sent to joost\@joost.at (my personal email) or various @freesewing.org email addresses went unnoticed. Since noticing the issue today I have gone through the backlog and set aside any messages that I need to deal with.
+Between the 29th of October 2023 until the 2nd of January 2024, emails sent to joost@joost.at (my personal email) or various @freesewing.org email addresses went unnoticed. Since noticing the issue today I have gone through the backlog and set aside any messages that I need to deal with.
 
 However, this is a manual and tedious process so it's possible that I'll miss a few. In addition, it's also very possible that emails sent to me 2 months ago required a speedier response.
 
@@ -18,7 +18,7 @@ I'd like to apologize to all those who I should have been in touch with but didn
 
 To understand what happened, I should start by explaining my email setup.
 
-I have historically used joost\@decock.org as my personal email. It's tied to Google in the way that is no longer possible today, using one of those grandfathered-in domain setups that they don't allow you to have any longer.
+I have historically used joost@decock.org as my personal email. It's tied to Google in the way that is no longer possible today, using one of those grandfathered-in domain setups that they don't allow you to have any longer.
 I don't trust Google as far as I can throw them, but Gmail is the best mail client for my needs because I don't want to spend my time carefully organizing email, I just want to search and find what I'm looking for. Nothing comes close to Gmail when it comes to that.
 
 Furthermore, as an Android user, this primary not-really-gmail-but-still-a-bit Google account is also tied to my phone, and a host of other things that are important. In other words, I need to have _some_ Google account, so this is it.

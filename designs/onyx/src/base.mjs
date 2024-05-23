@@ -349,7 +349,8 @@ export const base = {
       pct: 200,
       min: 0,
       max: 800,
-      toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.legHem,
+      toAbs: (pct, settings, mergedOptions) =>
+        settings.sa ? settings.sa * mergedOptions.legHem : 0,
       menu: (settings, mergedOptions) => (mergedOptions.legRibbing ? false : 'construction'),
     },
     // How wide the scoop to each side of the crotch sweeps (excluding the gusset, as a % of the verticalTrunk.
@@ -396,7 +397,8 @@ export const base = {
       pct: 200,
       min: 0,
       max: 800,
-      toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.skirtWaistband,
+      toAbs: (pct, settings, mergedOptions) =>
+        settings.sa ? settings.sa * mergedOptions.skirtWaistband : 0,
       menu: (settings, mergedOptions) => (mergedOptions.skirt ? 'construction' : false),
     },
     // How wide to make the bottom hem, in multiples of the seam allowance.
@@ -404,7 +406,8 @@ export const base = {
       pct: 200,
       min: 0,
       max: 800,
-      toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.skirtHem,
+      toAbs: (pct, settings, mergedOptions) =>
+        settings.sa ? settings.sa * mergedOptions.skirtHem : 0,
       menu: (settings, mergedOptions) => (mergedOptions.skirt ? 'construction' : false),
     },
     // How wide the sleeve ribbing should be, in absolute measure.
