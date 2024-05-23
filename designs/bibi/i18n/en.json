@@ -115,7 +115,7 @@
     },
     "flare": {
       "t": "Flare",
-      "d": "How much fabric to use at the bottom hem of the design. Only applies when the design goes below the seat."
+      "d": "How much fabric to use at the bottom hem of the design. Only applies when the design goes below the waist."
     },
     "dart": {
       "t": "Allow bust dart",
@@ -164,6 +164,14 @@
     "bindingHeight": {
       "t": "Knit binding height",
       "d": "Controls the height of the knit binding for neck and armhole."
+    },
+    "seatBackAdjustment": {
+      "t": "Seat back adjustment",
+      "d": "Controls the influence of the seat back measurement."
+    },
+    "curvatureAdjustment": {
+      "t": "Curvature adjustment",
+      "d": "Controls how straight the side seam is above the hem."
     }
   }
 }

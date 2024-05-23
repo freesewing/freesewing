@@ -33,11 +33,13 @@ export const waistband = {
       menu: 'style.length',
     },
     flare: {
-      pct: 5,
+      pct: 0,
       min: 0,
       max: 150,
       menu: (settings, mergedOptions) =>
-        (mergedOptions.length === 'seat' && mergedOptions.lengthBonus > 0) ||
+        (mergedOptions.length === 'waist' && mergedOptions.lengthBonus > 0) ||
+        mergedOptions.length === 'hips' ||
+        mergedOptions.length === 'seat' ||
         mergedOptions.length === 'knee' ||
         mergedOptions.length === 'floor'
           ? 'style.length'

@@ -98,7 +98,7 @@ function bibiCuff({ part, store, measurements, options, paths, points, Point, ma
   store.set('cuffSize', points.cuffLeft.dist(points.cuffRight))
 
   // clean up temporary stuff
-  delete paths.sleevecap
+  paths.sleevecap.hide()
 
   draftRibbing(part, store.cuffSize * (1 - options.ribbingStretch))
 

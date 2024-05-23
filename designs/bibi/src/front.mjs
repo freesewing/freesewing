@@ -8,6 +8,7 @@ import {
   correctArmHole,
   createArmHoles,
   plotSideLineMeasurements,
+  verticalSplit,
 } from './shared.mjs'
 
 export const front = {
@@ -144,7 +145,7 @@ function bibiFront({
   const dartLength = frontLength - backLength
   const constructDart = (path, tip, dartLength) => {
     const length = path.length()
-
+    console.log('dart', length, path)
     dartLength = Math.max(0, Math.min(dartLength, length))
 
     const gatherArea = (store.get('gatherAreaLength') ?? 0) + dartLength
@@ -158,9 +159,9 @@ function bibiFront({
     const endDartAlpha = path.shiftAlong(offset + auxLength + dartLength)
     const endSplit = path.shiftAlong(offset + gatherArea)
 
-    let tmp = path.split(startSplit)
+    let tmp = verticalSplit(Path, path, startSplit)
     const pathBefore = tmp[0]
-    tmp = tmp[1].split(endSplit)
+    tmp = verticalSplit(Path, tmp[1], endSplit)
     const pathGather = tmp[0]
     const pathAfter = tmp[1]
     const angleBefore = path.angleAt(startSplit)
