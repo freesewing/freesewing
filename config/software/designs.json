@@ -276,7 +276,7 @@
     ],
     "techniques": [
       "weltPocket",
-      "curvedSeams",
+      "curvedSeam",
       "interfacing",
       "fly",
       "zipper",
@@ -298,7 +298,7 @@
       "trousers"
     ],
     "techniques": [
-      "curvedSeams",
+      "curvedSeam",
       "fly",
       "zipper",
       "button",
