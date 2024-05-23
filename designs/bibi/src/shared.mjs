@@ -62,8 +62,7 @@ export function constructFrontPoints(part) {
   const seatExtra = (measurements.seatBack - seatFront) / 4
   points.cfSeat = new Point(0, points.cfWaist.y + measurements.waistToSeat)
   points.seatBase = new Point((measurements.seat * (1 + options.seatEase)) / 4, points.cfSeat.y)
-  points.seat = seatAdjustment(points.seatBase, points.hips, -seatExtra)
-  // points.cfSeat = points.cfSeat.shift(-90, -seatExtra * 2)
+  points.seat = seatAdjustment(points.seatBase, points.hips, -seatExtra * options.buttAdjustment)
 
   createLowerPoints(part, 'cf')
 }
@@ -91,10 +90,22 @@ export function constructBackPoints(part) {
   const seatFront = measurements.seat - measurements.seatBack
   const seatExtra = (measurements.seatBack - seatFront) / 4
   points.seatBase = new Point((measurements.seat * (1 + options.seatEase)) / 4, points.cbSeat.y)
-  points.seat = seatAdjustment(points.seatBase, points.hips, seatExtra)
+  points.seat = seatAdjustment(points.seatBase, points.hips, seatExtra * options.buttAdjustment)
   // points.cbSeat = points.cbSeat.shift(-90, seatExtra * 2)
 
   createLowerPoints(part, 'cb')
+}
+
+function newtonIterationStep(t, f) {
+  return t - (t * t * (3 - 2 * t) - f) / (-6 * (t - 1) * t)
+}
+
+function findT(f) {
+  let t = 0.5
+  for (let i = 0; i < 10; i++) {
+    t = newtonIterationStep(t, f)
+  }
+  return t
 }
 
 function seatAdjustment(seatBase, anchor, seatExtra) {
@@ -164,51 +175,111 @@ function extendSideLine(points, intersectionY) {
   return points.seat.shiftFractionTowards(points.sideTarget, fraction)
 }
 
+function constructShortSideSeam(Path, Point, start, cp1, cp2, end) {
+  cp1 = cp1 ?? start.translate(0, start.dy(end) * 0.2)
+  cp2 = cp2 ?? end.translate(0, start.dy(end) * -0.2)
+  return new Path().move(start).curve(cp1, cp2, end)
+}
+
+function calculateControlPointsForHipCurve(Point, start, inBetweenPoints, end, d) {
+  outer: for (;;) {
+    let resultB = null
+    for (const point of inBetweenPoints) {
+      const factor = start.dx(point) / start.dx(end)
+      const c = start.dy(point) / start.dy(end)
+      const maxFactor = 0.95
+      if (factor > maxFactor) {
+        continue
+      }
+      const t = findT(factor)
+      let b = (c - 3 * (1 - d) * (1 - t) * t * t - t * t * t) / (3 * (1 - t) * (1 - t) * t)
+      console.log(factor, c, b)
+
+      if (b < 0) {
+        end = end.translate(1, 0)
+        continue outer
+      }
+      b = Math.min(b, 0.2)
+      if (resultB === null || b < resultB) resultB = b
+    }
+
+    if (resultB === null) {
+      resultB = 0.2
+    }
+
+    return [start.translate(0, resultB * start.dy(end)), end.translate(0, -d * start.dy(end)), end]
+  }
+}
+
+function getIntersectionY(path, sideOffset) {
+  const y = path.intersectsY(sideOffset)
+  if (y.length > 0) return y
+  // Sometimes the intersection is directly on a node of the sidepath
+  // (especially with the default front coverage of 30 for some reason).
+  // So shift the y coordinate a little bit.
+  // Intersecting the path exactly on the corner points sometimes doesn't work.
+  // See issue #3367
+  sideOffset += 0.001
+  return path.intersectsY(sideOffset)
+}
+
 export function constructSideSeam(part, height, bottomSmoothness) {
-  const { points, Path, Point } = part.shorthand()
+  const { points, paths, Path, Point } = part.shorthand()
+
+  const tempPoints = calculateControlPointsForHipCurve(
+    Point,
+    points.waist,
+    [points.hips],
+    points.seat,
+    0.5
+  )
+
   const base = new Path()
     .move(points.armhole)
     .curve(points.armholeCp1, points.waistCp2, points.waist)
-    .smurve(points.hipsCp2, points.hips)
-    .smurve(points.seatCp2, points.seat)
-  const intersectionY = Math.min(height, points.seat.y) - bottomSmoothness
-  let bottom = base.intersectsY(height)[0]
+    .curve(tempPoints[0], tempPoints[1], tempPoints[2])
+
+  let bottom = getIntersectionY(base, height)[0]
   if (!bottom) {
     // below seat
     bottom = extendSideLine(points, height)
   }
   points.hem = bottom
-  let intersection = base.intersectsY(intersectionY)[0]
+  let result
+  if (points.hem.y < points.waist.y) {
+    result = constructShortSideSeam(
+      Path,
+      Point,
+      points.armhole,
+      points.armholeCp1,
+      null,
+      points.hem
+    )
+  } else {
+    result = new Path().move(points.armhole).curve(points.armholeCp1, points.waistCp2, points.waist)
 
-  if (!intersection) {
-    if (intersectionY >= points.seat.y) {
-      // below seat
-      intersection = extendSideLine(points, intersectionY)
+    let controlPoints
+    let inBetweenPoints
+    if (points.hem.y <= points.hips.y) {
+      inBetweenPoints = []
+    } else if (points.hem.y <= points.seat.y) {
+      inBetweenPoints = [points.hips]
     } else {
-      //above armhole
-      intersection = points.armhole
+      inBetweenPoints = [points.hips, points.seat]
     }
+    controlPoints = calculateControlPointsForHipCurve(
+      Point,
+      points.waist,
+      inBetweenPoints,
+      points.hem,
+      0.5
+    )
+    points.waistCp1 = controlPoints[0]
+    points.hemCp2 = controlPoints[1]
+    points.hem = controlPoints[2]
+    result = result.curve(points.waistCp1, points.hemCp2, points.hem)
   }
-
-  bottom.x = (bottom.x + intersection.x) / 2 // creates a smoother bottom as the bottom is vertical
-
-  points.intersection = intersection
-
-  const angle = base.angleAt(intersection)
-  if (!angle) {
-    return base
-  }
-  const intersectionCp1 = intersection.shift(angle, bottomSmoothness * 0.3)
-  const intersectionCp2 = new Point(bottom.x, bottom.y - bottomSmoothness * 0.3)
-
-  points.intersectionCp1 = intersectionCp1
-  points.intersectionCp2 = intersectionCp2
-
-  let result = base.split(intersection)[0]
-  if (!result.curve) {
-    result = new Path().move(points.armhole)
-  }
-  return result.curve(intersectionCp1, intersectionCp2, bottom).reverse()
+  return result.reverse()
 }
 
 export function adjustSidePoints(part) {
@@ -227,18 +298,6 @@ export function adjustSidePoints(part) {
   // prevent barrel shape
   if (points.hips.x < points.waist.x) {
     points.hips.x = points.waist.x
-  }
-  // prevent excessive hips narrowing
-  if (points.hips.x < (points.waist.x + points.seat.x) / 2) {
-    points.hips.x = (points.waist.x + points.seat.x) / 2
-  }
-  // prevent smaller seat than hips
-  if (points.seat.x < points.hips.x) {
-    points.seat.x = points.hips.x
-  }
-  // prevent excessive waist narrowing
-  if (points.waist.x < 2 * points.hips.x - points.seat.x) {
-    points.waist.x = 2 * points.hips.x - points.seat.x
   }
 
   // curve points
@@ -667,3 +726,5 @@ export function draftKnitBinding(part, length) {
     y: points.bottomFold.y + sa + 15,
   })
 }
+
+console.log(findT(0.01) + findT(0.99))

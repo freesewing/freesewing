@@ -26,6 +26,12 @@ export const back = {
       menu: (settings, mergedOptions) => (mergedOptions.sleeves ? false : 'style.sleeves'),
     },
     sleeves: { bool: true, menu: 'style.sleeves' },
+    buttAdjustment: {
+      pct: 0,
+      min: 0,
+      max: 100,
+      menu: 'fit',
+    },
   },
   draft: bibiBack,
 }
