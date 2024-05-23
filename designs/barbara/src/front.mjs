@@ -224,6 +224,12 @@ export const front = {
       to: points.middleBottom,
       y: points.strapRight.y - 15,
     })
+    macro('hd', {
+      id: 'wFront',
+      from: points.wingBottom,
+      to: points.middleBottom,
+      y: points.wingBottom.y + 15,
+    })
     macro('ld', {
       id: 'hWing',
       from: points.wingBottom,
