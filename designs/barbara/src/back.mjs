@@ -8,8 +8,22 @@ export const back = {
     crossedStrapsBandWidth: { pct: 70, min: 50, max: 90, menu: 'style.crossedStrapsVariant' },
     crossedCurveBend: { pct: 75, min: 0, max: 100, menu: 'style.crossedStrapsVariant' },
     crossedCurveStart: { pct: 95, min: 0.1, max: 100, menu: 'style.crossedStrapsVariant' },
+    parallelCurveBend: { pct: 50, min: 0, max: 100, menu: 'style.parallelStrapsVariant' },
   },
-  draft: ({ part, Path, Point, paths, points, options, measurements, macro, utils, store }) => {
+  draft: ({
+    part,
+    Path,
+    Point,
+    paths,
+    points,
+    options,
+    measurements,
+    macro,
+    utils,
+    store,
+    Snippet,
+    snippets,
+  }) => {
     // Construct the bottom of the back
     points.bandLeftBottom = new Point(0, 0)
     points.bandMiddleBottom = points.bandLeftBottom.shift(0, measurements.underbust / 4)
@@ -61,22 +75,56 @@ export const back = {
       points.crossedStrapLeft,
       points.crossedStrapBottom
     )
-    points.crossedStrapBottomCp1 = points.crossedStrapBottom.shiftFractionTowards(
+    points.crossedCurveCp1 = points.crossedStrapBottom.shiftFractionTowards(
       points.crossedCurveCorner,
       options.crossedCurveBend
     )
-    points.crossedBandLeftTopCp2 = points.bandLeftTop.shiftFractionTowards(
+    points.crossedCurveCp2 = points.bandLeftTop.shiftFractionTowards(
       points.crossedCurveCorner,
       options.crossedCurveBend
     )
 
-    paths.test = new Path()
+    // Construct the parallel straps variant
+    points.parallelStrapRight = points.neckLeftBack.shift(
+      180 + measurements.shoulderSlope,
+      store.get('front.neckLeftStrapRightBase.dist')
+    )
+    points.parallelCurveCorner = utils.beamsIntersect(
+      points.bandLeftTop,
+      points.bandLeftTop.shift(-store.get('front.wingTopArmCorner.angle'), 100),
+      points.bandMiddleTop,
+      points.bandMiddleTop.shift(0, 100)
+    )
+    points.parallelCurveCp1 = points.bandMiddleTop.shiftFractionTowards(
+      points.parallelCurveCorner,
+      options.parallelCurveBend
+    )
+    points.parallelCurveCp2 = points.bandLeftTop.shiftFractionTowards(
+      points.parallelCurveCorner,
+      options.parallelCurveBend
+    )
+    // Put a notch were the right edge of the strap should be sewn
+    if (options.backStyle == 'parallelStraps') {
+      snippets.backStrapRight = new Snippet(
+        'notch',
+        utils.beamIntersectsCurve(
+          points.parallelStrapRight,
+          points.parallelStrapRight.shift(-90, 100),
+          points.bandMiddleTop,
+          points.parallelCurveCp1,
+          points.parallelCurveCp2,
+          points.bandLeftTop
+        )
+      )
+    }
+
+    paths.parallelStraps = new Path()
       .move(points.bandLeftBottom)
       .line(points.bandMiddleBottom)
       .line(points.bandMiddleTop)
-      .line(points.bandLeftTop)
+      .curve(points.parallelCurveCp1, points.parallelCurveCp2, points.bandLeftTop)
       .close(points.bandLeftBottom)
-      .hide()
+      .setHidden(options.backStyle != 'parallelStraps')
 
     paths.crossedStraps = new Path()
       .move(points.bandLeftBottom)
@@ -84,7 +132,7 @@ export const back = {
       .line(points.crossedStrapRight)
       .line(points.crossedStrapLeft)
       .line(points.crossedStrapBottom)
-      .curve(points.crossedStrapBottomCp1, points.crossedBandLeftTopCp2, points.bandLeftTop)
+      .curve(points.crossedCurveCp1, points.crossedCurveCp2, points.bandLeftTop)
       .close(points.bandLeftBottom)
       .setHidden(options.backStyle != 'crossedStraps')
 
@@ -119,6 +167,21 @@ export const back = {
         from: points.crossedMiddleBottom,
         to: points.crossedStrapRight,
         y: points.crossedMiddleBottom.y + 15,
+      })
+    }
+
+    if (options.backStyle == 'parallelStraps') {
+      macro('hd', {
+        id: 'wParallelBand',
+        from: points.bandLeftBottom,
+        to: points.bandMiddleBottom,
+        y: points.bandMiddleBottom.y + 15,
+      })
+      macro('vd', {
+        id: 'hParallelBand',
+        from: points.bandMiddleBottom,
+        to: points.bandMiddleTop,
+        x: points.bandMiddleBottom.x + 15,
       })
     }
 
