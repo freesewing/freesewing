@@ -433,10 +433,11 @@ export function constructBackHem(part, bonusLength = 0) {
     getBottomSmoothness(hemBottom, points)
   ).addClass('fabric')
 
-  points.midHem = new Point(points.hem.x * 0.66, points.cbHem.y)
+  points.midHemCp1 = new Point(points.hem.x * 0.66, points.cbHem.y)
+  points.midHemCp2 = new Point(points.hem.x * 0.9, points.hem.y)
   paths.hem = new Path()
     .move(points.cbHem)
-    .curve(points.midHem, points.midHem, points.hem)
+    .curve(points.midHemCp1, points.midHemCp2, points.hem)
     .addClass('fabric')
 }
 
