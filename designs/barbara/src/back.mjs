@@ -9,6 +9,7 @@ export const back = {
     crossedCurveBend: { pct: 75, min: 0, max: 100, menu: 'style.crossedStrapsVariant' },
     crossedCurveStart: { pct: 95, min: 0.1, max: 100, menu: 'style.crossedStrapsVariant' },
     parallelCurveBend: { pct: 50, min: 0, max: 100, menu: 'style.parallelStrapsVariant' },
+    parallelBandWidth: { pct: 100, min: 0, max: 100, menu: 'style.parallelStrapsVariant' },
   },
   draft: ({
     part,
@@ -26,7 +27,10 @@ export const back = {
   }) => {
     // Construct the bottom of the back
     points.bandLeftBottom = new Point(0, 0)
-    points.bandMiddleBottom = points.bandLeftBottom.shift(0, measurements.underbust / 4)
+    points.bandMiddleBottom = points.bandLeftBottom.shift(
+      0,
+      (measurements.underbust / 4) * options.parallelBandWidth
+    )
     points.bandMiddleTop = points.bandMiddleBottom.shift(
       90,
       measurements.hpsToWaistBack * options.bandHeight
@@ -89,6 +93,10 @@ export const back = {
       180 + measurements.shoulderSlope,
       store.get('front.neckLeftStrapRightBase.dist')
     )
+    points.parallelStrapLeft = points.neckLeftBack.shiftOutwards(
+      points.parallelStrapRight,
+      store.get('front.strapRightStrapLeft.dist')
+    )
     points.parallelCurveCorner = utils.beamsIntersect(
       points.bandLeftTop,
       points.bandLeftTop.shift(-store.get('front.wingTopArmCorner.angle'), 100),
@@ -103,13 +111,24 @@ export const back = {
       points.parallelCurveCorner,
       options.parallelCurveBend
     )
-    // Put a notch were the right edge of the strap should be sewn
+    // Put a notch were the right and left edge of the strap should be sewn
     if (options.backStyle == 'parallelStraps') {
       snippets.backStrapRight = new Snippet(
         'notch',
         utils.beamIntersectsCurve(
           points.parallelStrapRight,
           points.parallelStrapRight.shift(-90, 100),
+          points.bandMiddleTop,
+          points.parallelCurveCp1,
+          points.parallelCurveCp2,
+          points.bandLeftTop
+        )
+      )
+      snippets.backStrapLeft = new Snippet(
+        'notch',
+        utils.beamIntersectsCurve(
+          points.parallelStrapLeft,
+          points.parallelStrapLeft.shift(-90, 100),
           points.bandMiddleTop,
           points.parallelCurveCp1,
           points.parallelCurveCp2,
