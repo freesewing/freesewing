@@ -26,17 +26,17 @@ export const back = {
       menu: (settings, mergedOptions) => (mergedOptions.sleeves ? false : 'style.sleeves'),
     },
     sleeves: { bool: true, menu: 'style.sleeves' },
-    buttAdjustment: {
+    seatBackAdjustment: {
       pct: 20,
       min: 0,
       max: 100,
-      menu: 'fit',
+      menu: 'advanced',
     },
-    hemSmoothness: {
+    curvatureAdjustment: {
       pct: 20,
       min: 0,
       max: 100,
-      menu: 'fit',
+      menu: 'advanced',
     },
   },
   draft: bibiBack,

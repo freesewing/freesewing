@@ -62,7 +62,11 @@ export function constructFrontPoints(part) {
   const seatExtra = (measurements.seatBack - seatFront) / 4
   points.cfSeat = new Point(0, points.cfWaist.y + measurements.waistToSeat)
   points.seatBase = new Point((measurements.seat * (1 + options.seatEase)) / 4, points.cfSeat.y)
-  points.seat = seatAdjustment(points.seatBase, points.hips, -seatExtra * options.buttAdjustment)
+  points.seat = seatAdjustment(
+    points.seatBase,
+    points.hips,
+    -seatExtra * options.seatBackAdjustment
+  )
 
   createLowerPoints(part, 'cf')
 }
@@ -90,7 +94,7 @@ export function constructBackPoints(part) {
   const seatFront = measurements.seat - measurements.seatBack
   const seatExtra = (measurements.seatBack - seatFront) / 4
   points.seatBase = new Point((measurements.seat * (1 + options.seatEase)) / 4, points.cbSeat.y)
-  points.seat = seatAdjustment(points.seatBase, points.hips, seatExtra * options.buttAdjustment)
+  points.seat = seatAdjustment(points.seatBase, points.hips, seatExtra * options.seatBackAdjustment)
   // points.cbSeat = points.cbSeat.shift(-90, seatExtra * 2)
 
   createLowerPoints(part, 'cb')
@@ -151,21 +155,21 @@ export function calculateFba(anchor, bust, side, dx, Point) {
 
 export function correctArmHole(part) {
   const { options, points, utils } = part.shorthand()
-  points.armholeCp1 = points.chest
+
+  points.chestBelowArmhole = points.chest.y > points.armhole.y ? points.chest : points.armhole
+
+  points.armholeCp1 = points.chest.shiftFractionTowards(points.armhole, -1)
 
   if (!options.sleeves && points.armhole.y > points.chest.y) {
     points.armhole = utils.beamIntersectsY(points.chest, points.waist, points.armhole.y)
     points.armholeCp2 = points.armhole.shift(180, points._tmp1.dx(points.armhole) / 4)
   }
 
-  if (points.armhole.y > points.armholeCp1.y * 0.8) {
-    const frac = Math.min(
-      1,
-      (points.armhole.y - points.armholeCp1.y * 0.8) / (0.2 * points.armholeCp1.y)
-    )
-    points.armholeCp1 = points.chest.shiftFractionTowards(
-      points.armholeCp2.rotate(90, points.armhole),
-      frac
+  if (points.armhole.y > points.chest.y * 0.8) {
+    const frac = Math.min(1, (points.armhole.y - points.chest.y * 0.8) / (0.2 * points.chest.y))
+    points.armholeCp1 = points.chestBelowArmhole.shift(
+      points.armholeCp2.angle(points.armhole) - 90,
+      points.chest.y * 0.2
     )
   }
 }
@@ -287,20 +291,23 @@ function getIntersectionY(path, sideOffset) {
 }
 
 export function constructSideSeam(part, height, bottomSmoothness) {
-  const { points, options, Path, Point } = part.shorthand()
+  const { points, options, paths, Path, Point } = part.shorthand()
 
   const tempPoints = calculateControlPointsForHipCurve(
     Point,
     points.waist,
     [points.hips],
     points.seat,
-    options.hemSmoothness
+    options.curvatureAdjustment
   )
 
   const base = new Path()
     .move(points.armhole)
+    .line(points.chestBelowArmhole)
     .curve(points.armholeCp1, points.waistCp2, points.waist)
     .curve(tempPoints[0], tempPoints[1], tempPoints[2])
+
+  paths.base = base.hide()
 
   points.baseBottom = tempPoints[2]
 
@@ -312,17 +319,25 @@ export function constructSideSeam(part, height, bottomSmoothness) {
   points.hem = bottom
   let result
   if (points.hem.y < points.waist.y) {
-    result = constructShortSideSeam(
-      Path,
-      Point,
-      points.armhole,
-      points.armholeCp1,
-      null,
-      points.hem,
-      options.hemSmoothness
-    )
+    result = new Path()
+      .move(points.armhole)
+      .line(points.chestBelowArmhole)
+      .join(
+        constructShortSideSeam(
+          Path,
+          Point,
+          points.armhole,
+          points.armholeCp1,
+          null,
+          points.hem,
+          options.curvatureAdjustment
+        )
+      )
   } else {
-    result = new Path().move(points.armhole).curve(points.armholeCp1, points.waistCp2, points.waist)
+    result = new Path()
+      .move(points.armhole)
+      .line(points.chestBelowArmhole)
+      .curve(points.armholeCp1, points.waistCp2, points.waist)
 
     let controlPoints
     let inBetweenPoints
@@ -338,7 +353,7 @@ export function constructSideSeam(part, height, bottomSmoothness) {
       points.waist,
       inBetweenPoints,
       points.hem,
-      options.hemSmoothness
+      options.curvatureAdjustment
     )
     points.waistCp1 = controlPoints[0]
     points.hemCp2 = controlPoints[1]
