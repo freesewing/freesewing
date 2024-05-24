@@ -20,9 +20,10 @@ export const front = {
     underbustEase: { pct: 10, min: 0, max: 20, menu: 'fit' },
     // Style
     armSideBend: { pct: 50, min: 0, max: 100, menu: 'style.armSide' },
-    armSideDrop: { pct: 50, min: 0, max: 100, menu: 'style.armSide' },
+    armSideDropAngle: { pct: 50, min: 0, max: 100, menu: 'style.armSide' },
     wingHeight: { pct: 80, min: 0, max: 100, menu: 'style' },
     necklineDrop: { pct: 25, min: 0, max: 75, menu: 'style.neckline' },
+    necklineDropAngle: { pct: 0, min: 0, max: 100, menu: 'style.neckline' },
     necklineBend: { pct: 100, min: 0, max: 100, menu: 'style.neckline' },
     strapArmAngle: { pct: 100, min: 0, max: 100, menu: 'style.armSide' },
     strapNecklineAngle: { pct: 0, min: 0, max: 100, menu: 'style.neckline' },
@@ -76,7 +77,7 @@ export const front = {
         options.shoulderStrapWidth
     )
 
-    // Construct the chest curve
+    // Construct the neckline
     points.necklineCorner = utils.beamsIntersect(
       points.strapRight,
       points.strapLeft.rotate(
@@ -84,7 +85,7 @@ export const front = {
         points.strapRight
       ),
       points.middleTop,
-      points.middleBottom.rotate(-90, points.middleTop)
+      points.middleTop.shift(180 - 45 * options.necklineDropAngle, 100)
     )
     points.middleTopCp1 = points.middleTop.shiftFractionTowards(
       points.necklineCorner,
@@ -103,7 +104,7 @@ export const front = {
         points.strapLeft
       ),
       points.wingTop,
-      points.wingTop.shift(45 * options.armSideDrop, 100)
+      points.wingTop.shift(45 * options.armSideDropAngle, 100)
     )
     points.strapLeftCp1 = points.strapLeft.shiftFractionTowards(
       points.armCorner,
