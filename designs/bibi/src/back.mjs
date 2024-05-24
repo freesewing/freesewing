@@ -27,7 +27,13 @@ export const back = {
     },
     sleeves: { bool: true, menu: 'style.sleeves' },
     buttAdjustment: {
-      pct: 0,
+      pct: 20,
+      min: 0,
+      max: 100,
+      menu: 'fit',
+    },
+    hemSmoothness: {
+      pct: 20,
       min: 0,
       max: 100,
       menu: 'fit',

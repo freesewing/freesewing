@@ -171,43 +171,107 @@ export function correctArmHole(part) {
 }
 
 function extendSideLine(points, intersectionY) {
-  const fraction = (intersectionY - points.seat.y) / points.seat.dy(points.sideTarget)
-  return points.seat.shiftFractionTowards(points.sideTarget, fraction)
+  const fraction = (intersectionY - points.baseBottom.y) / points.baseBottom.dy(points.sideTarget)
+  return points.baseBottom.shiftFractionTowards(points.sideTarget, fraction)
 }
 
-function constructShortSideSeam(Path, Point, start, cp1, cp2, end) {
+function constructShortSideSeam(Path, Point, start, cp1, cp2, end, endSmoothness) {
   cp1 = cp1 ?? start.translate(0, start.dy(end) * 0.2)
-  cp2 = cp2 ?? end.translate(0, start.dy(end) * -0.2)
+  cp2 = cp2 ?? end.translate(0, start.dy(end) * -endSmoothness)
   return new Path().move(start).curve(cp1, cp2, end)
 }
 
-function calculateControlPointsForHipCurve(Point, start, inBetweenPoints, end, d) {
+function calculateControlPointsForHipCurve(
+  Point,
+  start,
+  inBetweenPoints,
+  end,
+  defaultEndSmoothness
+) {
+  // loop used for correction if we don't find a solution
   outer: for (;;) {
     let resultB = null
+    let resultD = null
+    // ensure the end point is right of the in-between points
     for (const point of inBetweenPoints) {
-      const factor = start.dx(point) / start.dx(end)
+      if (point.x > end.x) {
+        end = new Point(point.x, end.y)
+      }
+    }
+    for (const point of inBetweenPoints) {
+      const xFactor = start.dx(point) / start.dx(end)
+      const yFactor = start.dy(point) / start.dy(end)
       const c = start.dy(point) / start.dy(end)
       const maxFactor = 0.95
-      if (factor > maxFactor) {
+      if (xFactor > maxFactor && yFactor > maxFactor) {
+        // ignore points that are very close to the end point
         continue
       }
-      const t = findT(factor)
-      let b = (c - 3 * (1 - d) * (1 - t) * t * t - t * t * t) / (3 * (1 - t) * (1 - t) * t)
-      console.log(factor, c, b)
+      // Find the parameter t on the bezier curve for the in-between point
+      // based on its x location relative to start and end point
+      const t = findT(xFactor)
 
+      /* The resulting curve roughly looks like this, start and end are always vertical:
+
+        O Start
+        |
+        | b
+        |
+        O Cp1
+
+                 O Cp2
+                 |
+                 | d
+                 |
+                 O End
+
+        Start and End are given, and we need to figure out the distances b and d so the curve goes through the
+        in-between point. d defaults to the defaultEndSmoothness given as parameter and b needs to be figured out.
+
+        The general formula for the in-between point on the curve is |inBetweenPoint = (b)(3(1-t)²t)+(1-d)(3(1-t)t²)+t³|
+
+        This formula assumes end is at (1/1) and start is at (0/0), which is why we calculated the xFactor and yFactor above.
+       */
+
+      /* First we check if we need to increase d above its default value, to catch an in-between point that's very
+       for on the upper right. For this we assume some "normal" b value and calculate d */
+      let defaultB = 0.5
+      let tmpD = 1 - (c - 3 * defaultB * (1 - t) * (1 - t) * t - t * t * t) / (3 * (1 - t) * t * t)
+      // if d is above defaultEndSmoothness, increase it (but not more than 1.0)
+      tmpD = Math.max(defaultEndSmoothness, Math.min(tmpD, 1))
+      // now let's calculate the b for this d value
+      let b = (c - 3 * (1 - tmpD) * (1 - t) * t * t - t * t * t) / (3 * (1 - t) * (1 - t) * t)
       if (b < 0) {
-        end = end.translate(1, 0)
+        // We haven't found a good solution. Let's shift the end point to the right and try again
+        end = end.translate(5, 0)
         continue outer
       }
-      b = Math.min(b, 0.2)
-      if (resultB === null || b < resultB) resultB = b
+      // limit b to sensible values
+      b = Math.min(0.5, b)
+      // calculate d again, as mit might have changed because we limited b
+      tmpD = 1 - (c - 3 * b * (1 - t) * (1 - t) * t - t * t * t) / (3 * (1 - t) * t * t)
+      // limit d to sensible values, dont go below defaultEndSmoothness so the end stays vertical even
+      // if it could go inwards directly
+      tmpD = Math.max(defaultEndSmoothness, Math.min(tmpD, 1))
+
+      // if we had multiple in-between-points find the one with the smallest b
+      if (tmpD > 0 && (resultB === null || b < resultB)) {
+        resultB = b
+        resultD = tmpD
+      }
     }
 
     if (resultB === null) {
-      resultB = 0.2
+      // We had no relevant in-between points at all, so just generate a smooth curve
+      resultB = 0.5
+      resultD = defaultEndSmoothness
     }
 
-    return [start.translate(0, resultB * start.dy(end)), end.translate(0, -d * start.dy(end)), end]
+    return [
+      start.translate(0, resultB * start.dy(end)),
+      end.translate(0, -resultD * start.dy(end)),
+      end,
+    ]
   }
 }
 
@@ -215,7 +279,6 @@ function getIntersectionY(path, sideOffset) {
   const y = path.intersectsY(sideOffset)
   if (y.length > 0) return y
   // Sometimes the intersection is directly on a node of the sidepath
-  // (especially with the default front coverage of 30 for some reason).
   // So shift the y coordinate a little bit.
   // Intersecting the path exactly on the corner points sometimes doesn't work.
   // See issue #3367
@@ -224,20 +287,22 @@ function getIntersectionY(path, sideOffset) {
 }
 
 export function constructSideSeam(part, height, bottomSmoothness) {
-  const { points, paths, Path, Point } = part.shorthand()
+  const { points, options, Path, Point } = part.shorthand()
 
   const tempPoints = calculateControlPointsForHipCurve(
     Point,
     points.waist,
     [points.hips],
     points.seat,
-    0.5
+    options.hemSmoothness
   )
 
   const base = new Path()
     .move(points.armhole)
     .curve(points.armholeCp1, points.waistCp2, points.waist)
     .curve(tempPoints[0], tempPoints[1], tempPoints[2])
+
+  points.baseBottom = tempPoints[2]
 
   let bottom = getIntersectionY(base, height)[0]
   if (!bottom) {
@@ -253,7 +318,8 @@ export function constructSideSeam(part, height, bottomSmoothness) {
       points.armhole,
       points.armholeCp1,
       null,
-      points.hem
+      points.hem,
+      options.hemSmoothness
     )
   } else {
     result = new Path().move(points.armhole).curve(points.armholeCp1, points.waistCp2, points.waist)
@@ -272,7 +338,7 @@ export function constructSideSeam(part, height, bottomSmoothness) {
       points.waist,
       inBetweenPoints,
       points.hem,
-      0.5
+      options.hemSmoothness
     )
     points.waistCp1 = controlPoints[0]
     points.hemCp2 = controlPoints[1]
@@ -298,6 +364,9 @@ export function adjustSidePoints(part) {
   // prevent barrel shape
   if (points.hips.x < points.waist.x) {
     points.hips.x = points.waist.x
+  }
+  if (points.seat.x < points.hips.x) {
+    points.seat.x = points.hips.x
   }
 
   // curve points
