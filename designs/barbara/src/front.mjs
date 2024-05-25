@@ -140,63 +140,42 @@ export const front = {
       points.middleBottom
     )
 
-    paths.strapOnChest = new Path()
+    paths.front = new Path()
       .move(points.wingBottom)
+      .noop('underbustDart')
       .line(points.middleBottom)
       .line(points.middleTop)
       .curve(points.middleTopCp1, points.strapRightCp2, points.strapRight)
-      .line(points.strapLeftAlt)
+      .noop('strapLeft')
       .curve(points.strapLeftCp1, points.wingTopCp2, points.wingTop)
       .close()
+      .hide()
 
-    paths.strapOnChestWithDart = new Path()
-      .move(points.wingBottom)
-      .line(points.dartLeft)
-      .line(points.dartTop)
-      .line(points.dartRight)
-      .line(points.middleBottom)
-      .line(points.middleTop)
-      .curve(points.middleTopCp1, points.strapRightCp2, points.strapRight)
-      .line(points.strapLeftAlt)
-      .curve(points.strapLeftCp1, points.wingTopCp2, points.wingTop)
-      .close()
+    paths.strapOnChest = paths.front
+      .clone()
+      .insop('strapLeft', new Path().line(points.strapLeftAlt))
+      .setHidden(!(options.strapHeight != 0 && !options.withDart))
 
-    paths.strapToShoulder = new Path()
-      .move(points.wingBottom)
-      .line(points.middleBottom)
-      .line(points.middleTop)
-      .curve(points.middleTopCp1, points.strapRightCp2, points.strapRight)
-      .line(points.strapLeft)
-      .curve(points.strapLeftCp1, points.wingTopCp2, points.wingTop)
-      .close()
+    paths.strapOnChestWithDart = paths.strapOnChest
+      .clone()
+      .insop(
+        'underbustDart',
+        new Path().line(points.dartLeft).line(points.dartTop).line(points.dartRight)
+      )
+      .setHidden(!(options.strapHeight != 0 && options.withDart))
 
-    paths.strapToShoulderWithDart = new Path()
-      .move(points.wingBottom)
-      .line(points.dartLeft)
-      .line(points.dartTop)
-      .line(points.dartRight)
-      .line(points.middleBottom)
-      .line(points.middleTop)
-      .curve(points.middleTopCp1, points.strapRightCp2, points.strapRight)
-      .line(points.strapLeft)
-      .curve(points.strapLeftCp1, points.wingTopCp2, points.wingTop)
-      .close()
+    paths.strapToShoulder = paths.front
+      .clone()
+      .insop('strapLeft', new Path().line(points.strapLeft))
+      .setHidden(!(options.strapHeight == 0 && !options.withDart))
 
-    if (options.strapHeight != 0) {
-      paths.strapToShoulder.hide()
-      paths.strapToShoulderWithDart.hide()
-    } else {
-      paths.strapOnChest.hide()
-      paths.strapOnChestWithDart.hide()
-    }
-
-    if (options.withDart) {
-      paths.strapToShoulder.hide()
-      paths.strapOnChest.hide()
-    } else {
-      paths.strapToShoulderWithDart.hide()
-      paths.strapOnChestWithDart.hide()
-    }
+    paths.strapToShoulderWithDart = paths.strapToShoulder
+      .clone()
+      .insop(
+        'underbustDart',
+        new Path().line(points.dartLeft).line(points.dartTop).line(points.dartRight)
+      )
+      .setHidden(!(options.strapHeight == 0 && options.withDart))
 
     // Data storage
     store.set('front.wingTopAngle', points.wingBottom.angle(points.wingTop))
