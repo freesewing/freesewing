@@ -144,6 +144,7 @@ export const back = {
       .curve(points.parallelCurveCp1, points.parallelCurveCp2, points.bandLeftTop)
       .close(points.bandLeftBottom)
       .setHidden(options.backStyle != 'parallelStraps')
+      .addClass('fabric')
 
     paths.crossedStraps = new Path()
       .move(points.bandLeftBottom)
@@ -154,6 +155,7 @@ export const back = {
       .curve(points.crossedCurveCp1, points.crossedCurveCp2, points.bandLeftTop)
       .close(points.bandLeftBottom)
       .setHidden(options.backStyle != 'crossedStraps')
+      .addClass('fabric')
 
     // Paperless support
     if (options.backStyle == 'crossedStraps') {

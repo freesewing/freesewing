@@ -150,6 +150,7 @@ export const front = {
       .curve(points.strapLeftCp1, points.wingTopCp2, points.wingTop)
       .close()
       .hide()
+      .addClass('fabric')
 
     paths.strapOnChest = paths.front
       .clone()
