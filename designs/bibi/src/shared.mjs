@@ -354,7 +354,7 @@ export function constructSideSeam(part, height) {
       .join(
         constructShortSideSeam(
           Path,
-          points.armhole,
+          points.chestBelowArmhole,
           points.armholeCp1,
           null,
           points.hem,
