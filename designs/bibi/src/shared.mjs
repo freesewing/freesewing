@@ -275,7 +275,7 @@ function calculateControlPointsForHipCurve(
       }
       // limit b to sensible values
       b = Math.min(0.5, b)
-      // calculate d again, as mit might have changed because we limited b
+      // calculate d again, as it might have changed because we limited b
       tmpD = 1 - (c - 3 * b * (1 - t) * (1 - t) * t - t * t * t) / (3 * (1 - t) * t * t)
       // limit d to sensible values, dont go below defaultEndSmoothness so the end stays vertical even
       // if it could go inwards directly
