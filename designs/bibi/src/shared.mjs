@@ -178,12 +178,31 @@ function extendSideLine(points, intersectionY) {
   return points.baseBottom.shiftFractionTowards(points.sideTarget, fraction)
 }
 
-function constructShortSideSeam(Path, Point, start, cp1, cp2, end, endSmoothness) {
+/**
+ * Constructs a simple side seam curve, used for the part between the armpit/chest point and the waist
+ * @param Path path constructor
+ * @param {Point} start upper point
+ * @param {Point|null} cp1 first control point, can be null to use default
+ * @param {Point|null} cp2 second control point, can be null to use default
+ * @param end lower point (typically waist)
+ * @param endSmoothness relative length of the control point below end, determines curve
+ * @returns Psth
+ */
+function constructShortSideSeam(Path, start, cp1, cp2, end, endSmoothness) {
   cp1 = cp1 ?? start.translate(0, start.dy(end) * 0.2)
   cp2 = cp2 ?? end.translate(0, start.dy(end) * -endSmoothness)
   return new Path().move(start).curve(cp1, cp2, end)
 }
 
+/**
+ * Calculates the control points for the side seam below the waist using bezier maths.
+ * @param Point point constructor
+ * @param start start point; This is typically the waist point
+ * @param {[Point]} inBetweenPoints array of points that the line should go through (or at least go right of)
+ * @param end end point, this is typically the point where the waistband meets the bottom hem
+ * @param defaultEndSmoothness relative length of the control point above the end point
+ * @returns {[Point, Point, Point]} cp1, cp2 and the end point (which might have been adjusted)
+ */
 function calculateControlPointsForHipCurve(
   Point,
   start,
@@ -222,6 +241,8 @@ function calculateControlPointsForHipCurve(
         |
         O Cp1
 
+              O ← in between point
+
                  O Cp2
                  |
                  | d
@@ -231,13 +252,16 @@ function calculateControlPointsForHipCurve(
         Start and End are given, and we need to figure out the distances b and d so the curve goes through the
         in-between point. d defaults to the defaultEndSmoothness given as parameter and b needs to be figured out.
 
-        The general formula for the in-between point on the curve is |inBetweenPoint = (b)(3(1-t)²t)+(1-d)(3(1-t)t²)+t³|
+        The general formula for the y coordinate of the
+        in-between point on the curve is |inBetweenPoint = (b)(3(1-t)²t)+(1-d)(3(1-t)t²)+t³|
 
-        This formula assumes end is at (1/1) and start is at (0/0), which is why we calculated the xFactor and yFactor above.
+        This formula assumes End is at (1/1) and Start is at (0/0), which is why we calculated the xFactor and yFactor above.
        */
 
       /* First we check if we need to increase d above its default value, to catch an in-between point that's very
-       for on the upper right. For this we assume some "normal" b value and calculate d */
+       far on the upper right.
+       For this we assume some "default" b value and calculate d
+        */
       let defaultB = 0.5
       let tmpD = 1 - (c - 3 * defaultB * (1 - t) * (1 - t) * t - t * t * t) / (3 * (1 - t) * t * t)
       // if d is above defaultEndSmoothness, increase it (but not more than 1.0)
@@ -278,6 +302,12 @@ function calculateControlPointsForHipCurve(
   }
 }
 
+/**
+ * does the same as path.intersectsY(sideOffset) with a small bugfix
+ * @param path Path
+ * @param sideOffset y coordinate
+ * @returns {[Point]} intersections
+ */
 function getIntersectionY(path, sideOffset) {
   const y = path.intersectsY(sideOffset)
   if (y.length > 0) return y
@@ -324,7 +354,6 @@ export function constructSideSeam(part, height) {
       .join(
         constructShortSideSeam(
           Path,
-          Point,
           points.armhole,
           points.armholeCp1,
           null,
