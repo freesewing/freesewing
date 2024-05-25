@@ -166,7 +166,6 @@ export function correctArmHole(part) {
   }
 
   if (points.armhole.y > points.chest.y * 0.8) {
-    const frac = Math.min(1, (points.armhole.y - points.chest.y * 0.8) / (0.2 * points.chest.y))
     points.armholeCp1 = points.chestBelowArmhole.shift(
       points.armholeCp2.angle(points.armhole) - 90,
       points.chest.y * 0.2
@@ -290,7 +289,7 @@ function getIntersectionY(path, sideOffset) {
   return path.intersectsY(sideOffset)
 }
 
-export function constructSideSeam(part, height, bottomSmoothness) {
+export function constructSideSeam(part, height) {
   const { points, options, paths, Path, Point } = part.shorthand()
 
   const tempPoints = calculateControlPointsForHipCurve(
@@ -390,10 +389,6 @@ export function adjustSidePoints(part) {
   points.hipsCp2 = points.waist.shiftFractionTowards(points.hips, 0.6)
 }
 
-function getBottomSmoothness(bottom, points) {
-  return (Math.min(bottom, points.seat.y) - points.armhole.y) * 0.3
-}
-
 export function constructBackHem(part, bonusLength = 0) {
   const { measurements, options, points, paths, Path, Point, log } = part.shorthand()
   let centerPoint
@@ -442,11 +437,7 @@ export function constructBackHem(part, bonusLength = 0) {
     hemBottom = points.underbust.y
   }
   points.cbHem = new Point(0, hemBottom + extraBackLength)
-  paths.sideSeam = constructSideSeam(
-    part,
-    hemBottom,
-    getBottomSmoothness(hemBottom, points)
-  ).addClass('fabric')
+  paths.sideSeam = constructSideSeam(part, hemBottom).addClass('fabric')
 
   points.midHemCp1 = new Point(points.hem.x * 0.66, points.cbHem.y)
   points.midHemCp2 = new Point(points.hem.x * 0.9, points.hem.y)
@@ -498,11 +489,7 @@ export function constructFrontHem(part, bonusLength = 0) {
     hemBottom = points.underbust.y
   }
   points.cfHem = new Point(0, hemBottom)
-  paths.sideSeam = constructSideSeam(
-    part,
-    hemBottom,
-    getBottomSmoothness(hemBottom, points)
-  ).addClass('fabric')
+  paths.sideSeam = constructSideSeam(part, hemBottom).addClass('fabric')
   points.midHem = new Point(points.hem.x * 0.66, points.cfHem.y)
 
   paths.hem = new Path()
