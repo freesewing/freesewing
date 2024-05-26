@@ -150,7 +150,7 @@ export const body = {
     })
 
     if (sa) {
-      paths.sa = paths.sideseam.offset(sa).setClass('fabric sa')
+      paths.sa = paths.body.offset(sa).setClass('fabric sa')
     }
 
     macro('cutonfold', {
