@@ -3,6 +3,7 @@ import { Albert, AlbertFront } from 'shared/components/designs/linedrawings/albe
 import { Bella, BellaFront, BellaBack } from 'shared/components/designs/linedrawings/bella.mjs'
 import { Benjamin, BenjaminFront } from 'shared/components/designs/linedrawings/benjamin.mjs'
 import { Bent, BentFront, BentBack } from 'shared/components/designs/linedrawings/bent.mjs'
+import { Bibi, BibiFront, BibiBack } from 'shared/components/designs/linedrawings/bibi.mjs'
 import { Bob, BobFront, BobBack } from 'shared/components/designs/linedrawings/bob.mjs'
 import {
   Breanna,
@@ -54,6 +55,7 @@ import { Simon, SimonFront, SimonBack } from 'shared/components/designs/linedraw
 import { Uma, UmaFront, UmaBack } from 'shared/components/designs/linedrawings/uma.mjs'
 import { Umbra, UmbraFront, UmbraBack } from 'shared/components/designs/linedrawings/umbra.mjs'
 import { Wahid, WahidFront, WahidBack } from 'shared/components/designs/linedrawings/wahid.mjs'
+import { Teagan, TeaganFront, TeaganBack } from 'shared/components/designs/linedrawings/teagan.mjs'
 import { Bee, BeeFront } from 'shared/components/designs/linedrawings/bee.mjs'
 import {
   Tristan,
@@ -68,6 +70,7 @@ export const lineDrawingsFront = {
   bella: BellaFront,
   benjamin: BenjaminFront,
   bent: BentFront,
+  bibi: BibiFront,
   bob: BobFront,
   breanna: BreannaFront,
   brian: BrianFront,
@@ -92,6 +95,7 @@ export const lineDrawingsFront = {
   noble: NobleFront,
   hortensia: HortensiaFront,
   simon: SimonFront,
+  teagan: TeaganFront,
   tristan: TristanFront,
   uma: UmaFront,
   umbra: UmbraFront,
@@ -102,6 +106,7 @@ export const lineDrawingsBack = {
   aaron: AaronBack,
   bella: BellaBack,
   bent: BentBack,
+  bibi: BibiBack,
   bob: BobBack,
   breanna: BreannaBack,
   brian: BrianBack,
@@ -119,6 +124,7 @@ export const lineDrawingsBack = {
   lumira: LumiraBack,
   noble: NobleBack,
   simon: SimonBack,
+  teagan: TeaganBack,
   tristan: TristanBack,
   uma: UmaBack,
   umbra: UmbraBack,
@@ -132,6 +138,7 @@ export const lineDrawings = {
   bella: Bella,
   benjamin: Benjamin,
   bent: Bent,
+  bibi: Bibi,
   bob: Bob,
   breanna: Breanna,
   brian: Brian,
@@ -156,6 +163,7 @@ export const lineDrawings = {
   noble: Noble,
   hortensia: Hortensia,
   simon: Simon,
+  teagan: Teagan,
   tristan: Tristan,
   uma: Uma,
   umbra: Umbra,
