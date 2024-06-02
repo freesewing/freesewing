@@ -34,6 +34,11 @@ prebuildRunner({
     docs: true,
 
     /*
+     * Always prebuild the MD raw file list
+     */
+    mdRaw: true,
+
+    /*
      * Always prebuild the translation files
      * Even if we only support English on FreeSewing.dev,
      * we still rely on the (English) translation of strings
