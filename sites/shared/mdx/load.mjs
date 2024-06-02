@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { compileMdx } from './compile.mjs'
-import { ghPrefix } from './remark-github-images.mjs'
+import { remotePrefix } from './remark-remote-images.mjs'
 
 /*
  * Loads markdown/mdx from disk
@@ -30,14 +30,14 @@ export const loadMdxFromDisk = async ({
 }
 
 /*
- * Loads markdown/mdx from Github
+ * Loads markdown/mdx from server
  */
-export const loadMdxFromGithub = async ({
+export const loadMdxFromRemote = async ({
   language, // The language code of the markdown to load (like 'en')
   site, // The site folder, one of 'dev' or 'org'
   slug, // The slug below that folder, like 'guides/plugins'
 }) => {
-  const response = await fetch(`${ghPrefix}/${site}/${slug}/${language}.md`)
+  const response = await fetch(`${remotePrefix}/${site}/${slug}/${language}.md`)
   const md = await response.text()
 
   return md

@@ -11,7 +11,7 @@ import smartypants from 'remark-smartypants'
 // FreeSewing custom remark plugins
 import { remarkIntroAsFrontmatter } from './remark-intro-as-frontmatter.mjs'
 import { remarkTocAsFrontmatter } from './remark-toc-as-frontmatter.mjs'
-import { remarkGithubImages } from './remark-github-images.mjs'
+import { remarkRemoteImages } from './remark-remote-images.mjs'
 // Rehype plugins from the ecosystem
 import rehypeHighlight from 'rehype-highlight'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
@@ -25,7 +25,7 @@ export const compileMdx = async ({
   md, // A string holding the markdown
   site, // The site folder, one of 'org' or 'dev'
   slug, // The slug to the page below the folder (like 'guides/plugins')
-  fromGithub = false, // Set this to true when dynamically loading mdx from Github
+  fromRemote = false, // Set this to true when dynamically loading mdx from the server
 }) => {
   const mdx = String(
     await compile(md, {
@@ -37,8 +37,8 @@ export const compileMdx = async ({
         remarkMdxFrontmatter,
         remarkGfm,
         smartypants,
-        fromGithub
-          ? remarkGithubImages
+        fromRemote
+          ? remarkRemoteImages
           : [
               remarkCopyLinkedFiles,
               {
