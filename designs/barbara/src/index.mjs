@@ -6,12 +6,13 @@ import { data } from '../data.mjs'
 // Parts
 import { front } from './front.mjs'
 import { back } from './back.mjs'
+import { wire } from './wire.mjs'
 
 // Create new design
 const Barbara = new Design({
   data,
-  parts: [front, back],
+  parts: [front, back, wire],
 })
 
 // Named exports
-export { front, back, i18n, Barbara }
+export { front, back, wire, i18n, Barbara }
