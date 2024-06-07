@@ -5889,10 +5889,10 @@ execa@8.0.1, execa@^8.0.1:
     signal-exit "^4.1.0"
     strip-final-newline "^3.0.0"
 
-execa@9.0.2:
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/execa/-/execa-9.0.2.tgz#9590a079f6632cc6381cb724cc03ae2489cbdea7"
-  integrity sha512-oO281GF7ksH/Ogv1xyDf1prvFta/6/XkGKxRUvA3IB2MU1rCJGlFs86HRZhdooow1ISkR0Np0rOxUCIJVw36Rg==
+execa@9.2.0:
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/execa/-/execa-9.2.0.tgz#ec5e9de67a714d0f47ce073d37a851fbf0c2f688"
+  integrity sha512-vpOyYg7UAVKLAWWtRS2gAdgkT7oJbCn0me3gmUmxZih4kd3MF/oo8kNTBTIbkO3yuuF5uB4ZCZfn8BOolITYhg==
   dependencies:
     "@sindresorhus/merge-streams" "^4.0.0"
     cross-spawn "^7.0.3"
