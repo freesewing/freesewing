@@ -153,6 +153,7 @@ export const plugin = {
         .line(points[ids.in2])
         .curve(points[ids.in2c], points[ids.in1c], points[ids.in1])
         .curve(points[ids.in1cFlipped], points[ids.in2cFlipped], points[ids.in2Flipped])
+        .line(points[ids.ex2Flipped])
         .close()
 
       /*
