@@ -17,6 +17,7 @@ export default (options) => {
   const isJargon = (node) => {
     if (
       node.tagName === 'em' &&
+      node.children.every((n) => n.type === 'text') &&
       Object.keys(options.jargon).indexOf(node.children[0].value.toLowerCase()) !== -1
     )
       return true
