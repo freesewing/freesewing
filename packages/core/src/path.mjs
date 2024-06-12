@@ -898,7 +898,12 @@ Path.prototype.split = function (point) {
       break
     }
     if (path.ops[1].type === 'line') {
-      if (pointOnLine(path.ops[0].to, path.ops[1].to, point)) {
+      if (path.ops[1].to.sitsRoughlyOn(point)) {
+        pi++
+        firstHalf = divided.slice(0, pi)
+        secondHalf = divided.slice(pi)
+        break
+      } else if (pointOnLine(path.ops[0].to, path.ops[1].to, point)) {
         firstHalf = divided.slice(0, pi)
         firstHalf.push(new Path().__withLog(this.log).move(path.ops[0].to).line(point))
         pi++
@@ -953,8 +958,9 @@ Path.prototype.split = function (point) {
     }
   }
 
-  if (firstHalf.length > 0) firstHalf = __joinPaths(firstHalf)
-  if (secondHalf.length > 0) secondHalf = __joinPaths(secondHalf)
+  firstHalf = firstHalf.length > 0 && firstHalf[0].ops.length > 1 ? __joinPaths(firstHalf) : null
+  secondHalf =
+    secondHalf.length > 0 && secondHalf[0].ops.length > 1 ? __joinPaths(secondHalf) : null
 
   return [firstHalf, secondHalf]
 }
