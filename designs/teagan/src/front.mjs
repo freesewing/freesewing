@@ -263,7 +263,7 @@ export const front = {
     // Brian overrides
     chestEase: { pct: 12, min: 5, max: 25, menu: 'fit' },
     sleeveLength: { pct: 30, min: 20, max: 100, menu: 'fit' },
-    lengthBonus: { pct: 5, min: -20, max: 60, menu: 'style' },
+    lengthBonus: { pct: 15, min: -20, max: 60, menu: 'style' },
     backNeckCutout: { pct: 8, min: 4, max: 12, menu: 'fit' },
     // Teagan specific
     draftForHighBust: { bool: false, menu: 'fit' },
