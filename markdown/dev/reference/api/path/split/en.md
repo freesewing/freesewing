@@ -45,3 +45,25 @@ array path.split(Point splitPoint)
 }
 ```
 </Example>
+
+## Notes
+
+### The returned array will hold null for edge cases
+
+Typically, the returned array will hold a `Path` object for each half.
+But in some cases, one of the array entries can hold `null` if the split failed to find a path.
+For example because you are splitting a `Path` on its start or end point.
+
+```mjs
+// Return value for a normal case
+[Path, Path]
+// Return value when calling Path.split() on/near the path's start point
+[null, Path]
+// Return value when calling Path.split() on/near the path's end point
+[Path, null]
+```
+
+### This method will snap the split point to start or end points
+This method will also _snap_ to the start or end point if you are splitting a path
+(very) close to it, as it checks with [`Point.sitsRoughlyOn()`](/reference/api/point/sitsroughlyon).
+

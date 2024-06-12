@@ -661,10 +661,10 @@ describe('Path', () => {
     const test = new Path().move(a).line(b).line(c)
 
     let halves = test.split(new Point(10.1, 29.9))
-    expect(halves[0].ops[1].to.x).to.equal(10.1)
-    expect(halves[0].ops[1].to.y).to.equal(29.9)
-    expect(halves[1].ops[0].to.x).to.equal(10.1)
-    expect(halves[1].ops[0].to.y).to.equal(29.9)
+    expect(halves[0].ops[1].to.x).to.equal(10)
+    expect(halves[0].ops[1].to.y).to.equal(30)
+    expect(halves[1].ops[0].to.x).to.equal(10)
+    expect(halves[1].ops[0].to.y).to.equal(30)
   })
 
   it('Should split a path on a curve joint', () => {
@@ -678,6 +678,34 @@ describe('Path', () => {
     expect(halves[0].ops[1].to.y).to.equal(30)
     expect(halves[1].ops[0].to.x).to.equal(10)
     expect(halves[1].ops[0].to.y).to.equal(30)
+  })
+
+  // Issue 6816: https://github.com/freesewing/freesewing/issues/6816
+  it('Should split a path on the start of that same path', () => {
+    const A = new Point(45, 60)
+    const B = new Point(10, 30)
+
+    const test = new Path().move(A).line(B)
+    let halves = test.split(A)
+    expect(halves[0]).to.equal(null)
+    expect(halves[1].ops[0].to.x).to.equal(45)
+    expect(halves[1].ops[0].to.y).to.equal(60)
+    expect(halves[1].ops[1].to.x).to.equal(10)
+    expect(halves[1].ops[1].to.y).to.equal(30)
+  })
+
+  // Issue 6816: https://github.com/freesewing/freesewing/issues/6816
+  it('Should split a path on the end of that same path', () => {
+    const A = new Point(45, 60)
+    const B = new Point(10, 30)
+
+    const test = new Path().move(A).line(B)
+    let halves = test.split(B)
+    expect(halves[1]).to.equal(null)
+    expect(halves[0].ops[0].to.x).to.equal(45)
+    expect(halves[0].ops[0].to.y).to.equal(60)
+    expect(halves[0].ops[1].to.x).to.equal(10)
+    expect(halves[0].ops[1].to.y).to.equal(30)
   })
 
   it('Should determine the angle on a path', () => {
