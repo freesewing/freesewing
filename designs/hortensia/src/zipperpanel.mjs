@@ -45,7 +45,10 @@ export const zipperPanel = {
       .close()
       .attr('class', 'fabric')
 
-    store.cutlist.addCut({ cut: 2, from: 'fabric' })
+    store.cutlist.addCut([
+      { cut: 2, from: 'fabric' },
+      { cut: 2, from: 'lining' },
+    ])
 
     paths.text = new Path()
       .move(points.topLeft)
