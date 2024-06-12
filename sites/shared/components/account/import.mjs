@@ -45,8 +45,8 @@ export const Importer = () => {
             measies: set.measurements || set.measies,
             userId: account.id,
           })
-          if (result.success) setLoadingStatus([true, `Imported ${name || 'file'}`, true, true])
-          else setLoadingStatus([true, `Import of ${name || 'file'} failed`, true, false])
+          if (result.success) setLoadingStatus([true, `Imported ${name}`, true, true])
+          else setLoadingStatus([true, `Import of ${name} failed`, true, false])
         } else {
           setLoadingStatus([true, `Invalid format`, true, false])
         }
