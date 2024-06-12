@@ -529,7 +529,7 @@ function draftBack({
   macro('vd', {
     id: 'vLegHemAllowance',
     from: points.outseamHem,
-    to: points.outseamHemAllowance,
+    to: sa ? points.outseamHemAllowance : points.outseamHem,
     x: points.waist.x + (sa + 15),
     noStartMarker: true,
     noEndMarker: true,

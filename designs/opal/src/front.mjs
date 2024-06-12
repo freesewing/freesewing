@@ -249,7 +249,7 @@ function draftFront({
   macro('vd', {
     id: 'vLegHemAllowance',
     from: points.outseamHem,
-    to: points.outseamHemAllowance,
+    to: sa ? points.outseamHemAllowance : points.outseamHem,
     x: points.waist.x + (sa + 15),
     noStartMarker: true,
     noEndMarker: true,
@@ -278,7 +278,6 @@ function draftFront({
     to: points.inseamHem,
     x: points.fork.x - (sa + 30),
   })
-
   points.grainlineTop = points.slashSide.translate(-waistDist * 0.05, 0)
   points.grainlineBottom = new Point(points.grainlineTop.x, points.outseamHem.y)
   macro('grainline', {
@@ -321,7 +320,8 @@ export const front = {
       pct: 150,
       min: 0,
       max: 400,
-      toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.hemAllowance,
+      toAbs: (pct, settings, mergedOptions) =>
+        settings.sa ? settings.sa : 0 * mergedOptions.hemAllowance,
       menu: 'construction',
     },
     // Sets the hem allowance for the legs. Very large values are used for cuffs. If making a regular hem, setting this equal to hemAllowance can work well.
