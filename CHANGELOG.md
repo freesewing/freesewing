@@ -79,6 +79,10 @@
 
 ### teagan
 
+#### Changed
+
+ - Increased default lengthBonus from 5% to 15%. Fixes
+
 #### Fixed
 
  - Fix side seam when length is cropped. Fixes
@@ -112,6 +116,10 @@
 #### Added
 
  - The `Path.rotate()` method was added to the core API.
+
+#### Fixed
+
+ - Fix an issue when splitting path on start or end point. Fixes
 
 
 ## 3.2.0 (2024-02-11)
