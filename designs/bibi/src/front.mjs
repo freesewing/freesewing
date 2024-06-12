@@ -145,7 +145,6 @@ function bibiFront({
   const dartLength = frontLength - backLength
   const constructDart = (path, tip, dartLength) => {
     const length = path.length()
-    console.log('dart', length, path)
     dartLength = Math.max(0, Math.min(dartLength, length))
 
     const gatherArea = (store.get('gatherAreaLength') ?? 0) + dartLength

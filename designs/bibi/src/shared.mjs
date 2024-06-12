@@ -860,5 +860,3 @@ export function draftKnitBinding(part, length) {
     y: points.bottomFold.y + sa + 15,
   })
 }
-
-console.log(findT(0.01) + findT(0.99))
