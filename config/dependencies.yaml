@@ -59,7 +59,7 @@ core:
     'nyc': '15.1.0'
     'mocha': *mocha
     'chai': *chai
-    'sinon': &sinon '^17.0.1'
+    'sinon': &sinon '^18.0.0'
 diana:
   peer:
     '@freesewing/brian': *freesewing
@@ -91,9 +91,9 @@ lily:
     '@freesewing/paco': *freesewing
 new-design:
   _:
-    'axios': &axios '1.6.8'
+    'axios': &axios '1.7.2'
     'chalk': '5.3.0'
-    'execa': '9.0.1'
+    'execa': '9.2.0'
     'mustache': &mustache '4.2.0'
     'ora': &ora '8.0.1'
     'prompts': '2.4.2'
@@ -183,8 +183,8 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.572.0'
-    '@prisma/client': &prisma '5.13.0'
+    '@aws-sdk/client-sesv2': '3.592.0'
+    '@prisma/client': &prisma '5.15.0'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
     'dotenv': '16.4.5'
@@ -196,14 +196,14 @@ backend:
     'passport': '0.7.0'
     'passport-http': '0.3.0'
     'passport-jwt': '4.0.1'
-    'pino': '9.0.0'
+    'pino': '9.2.0'
     'qrcode': '1.5.3'
-    'swagger-ui-dist': '5.17.7'
+    'swagger-ui-dist': '5.17.10'
     'swagger-ui-express': '5.0.0'
   dev:
     'chai': *chai
     'chai-http': '4.4.0'
-    'esbuild': '0.21.1'
+    'esbuild': '0.21.3'
     'mocha': *mocha
     'mocha-steps': '1.3.0'
     'nodemon': '3.1.0'
@@ -260,7 +260,7 @@ lab:
     'd3-drag': &d3drag '3.0.0'
     'd3-selection': &d3selection '3.0.0'
     'daisyui': *daisyui
-    'i18next': &i18next '23.11.3'
+    'i18next': &i18next '23.11.5'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
@@ -270,7 +270,7 @@ lab:
     'react': *react
     'react-copy-to-clipboard': *reactCopyToClipboard
     'react-hotkeys-hook': *reactHotkeysHook
-    'react-i18next': &reactI18next '14.1.1'
+    'react-i18next': &reactI18next '14.1.2'
     'react-instantsearch-dom': *reactInstantsearchDom
     'react-swipeable': *reactSwipeable
     'react-timeago': *reactTimeago
@@ -299,7 +299,7 @@ org:
     'daisyui': *daisyui
     'echarts': &echarts 5.5.0
     'echarts-for-react': &echartsReact 3.0.2
-    'jotai': &jotai '2.8.0'
+    'jotai': &jotai '2.8.3'
     'jotai-location': &jotai-location '0.5.5'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
@@ -355,7 +355,7 @@ shared:
     'lodash.unset': *_unset
     'lodash.get': *_get
     'mdast-util-toc': '7.0.1'
-    'mermaid': '10.9.0'
+    'mermaid': '10.9.1'
     'ora': *ora
     'pdfkit': &pdfkit '0.15.0'
     'postcss-for': &postcssfor '2.1.1'
