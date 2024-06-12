@@ -563,7 +563,7 @@ export const back = {
   ],
   options: {
     fitGuides: { bool: false, menu: 'advanced' },
-    fitKnee: { bool: true, hide: true },
+    fitKnee: true,
     legBalance: 0.5, // between back and front parts
     waistBalance: 0.5,
     crotchDrop: { pct: 0, min: 0, max: 15, menu: 'advanced' }, // 'downgrade' to advanced menu
