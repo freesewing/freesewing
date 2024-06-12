@@ -16,22 +16,18 @@ import { useDefaults } from '../hooks/use-defaults.mjs'
  * @param {string} props.design - The design we are editing
  * @param {string} props.locale - Current locale/language
  * @param {function} props.t - Translation method
+ * @param {object} props.preload - Object holding state to preload
  */
 export const ViewWrapper = (props) => {
   /*
-   * Get swizzled defaults
-   */
-  const { ui: defaultUi } = useDefaults(props.defaults)
-
-  /*
-   * Get swizzled useAccount and useControlState hooks
+   * Get swizzled useAccount, useControlState, and useEditorState hooks
    */
   const { useAccount, useControlState, useEditorState } = props.hooks
 
   /*
    * Get swizzled objUpdate method
    */
-  const { objUpdate } = props.methods
+  //const { objUpdate } = props.methods
 
   /*
    * Load account data and control state
@@ -39,12 +35,10 @@ export const ViewWrapper = (props) => {
   const { account } = useAccount()
   const controlState = useControlState()
 
-  // React state
-  const [state, setState, update] = useEditorState({
-    settings: props.preloadSettings,
-    ui: props.preloadUi || defaultUi,
-  })
-  const [ui, setUi] = useState(props.preloadUi || defaultUi)
+  // Editor state
+  const [state, setState, update] = useEditorState(
+    initialEditorState(props.defaults, props.preload)
+  )
 
   // Helper methods for settings/ui updates
   //const toggleSa = useMemo(
@@ -73,13 +67,10 @@ export const ViewWrapper = (props) => {
   //)
 
   // Figure out what view to load
-  const [View, viewProps] = viewfinder({
-    ...props,
-    state: { view, setView, design, setDesign, settings },
-  })
+  const [View, viewProps] = viewfinder({ ...props, state })
 
   // Render the view
-  return <View {...viewProps} update={update} />
+  return <View {...viewProps} state={state} update={update} />
 }
 
 /**
@@ -111,7 +102,6 @@ const viewfinder = (props) => {
     design,
     Design,
     locale: props.locale || 'en',
-    ...props.state,
   }
 
   /*
@@ -145,4 +135,38 @@ const viewfinder = (props) => {
   if (props.state?.view && views[props.state?.view]) return [views[props.state?.view], props]
 
   return [views.error, sharedProps]
+}
+
+/*
+ * This helper method constructs the initial state object.
+ *
+ * It will look for preloadSettings and preloadUi and use those to set the initial state.
+ * If they are not present, it will fall back to the relevant defaults
+ * @param {object} defaults - The defaults prop passed to the ViewWrapper component
+ * @return {object} initial - The initial Editor State object
+ */
+const initialEditorState = (defaults = {}, preload = {}) => {
+  /*
+   * Get swizzled defaults
+   */
+  const { ui: defaultUi, settings: defaultSettings } = useDefaults(defaults)
+
+  /*
+   * Create initial state object
+   */
+  const initial = { settings: false, ui: false }
+
+  /*
+   * Set preload state
+   */
+  if (typeof preload.settings === 'object') initial.settings = { ...preload.settings }
+  if (typeof preload.ui === 'object') initial.ui = { ...preload.ui }
+
+  /*
+   * Fall-back to default state
+   */
+  if (initial.settings === false) initial.settings = { ...defaultSettings }
+  if (initial.ui === false) initial.ui = { ...defaultUi }
+
+  return initial
 }

@@ -64,7 +64,6 @@ export const useMethods = (methods) => {
   const all = {}
   for (let [name, method] of Object.entries(defaultMethods)) {
     if (methods[name]) method = methods[name]
-    console.log({ name, method })
     all[name] = (...params) => method(all, ...params)
   }
 

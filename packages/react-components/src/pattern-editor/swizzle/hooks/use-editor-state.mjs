@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 
 /**
  * Helper method to push a prefix to a set path
@@ -23,7 +23,7 @@ const unshift = (prefix, path) => {
  */
 export const useEditorState = (hooks, methods, init = {}) => {
   const [state, setState] = useState(init)
-
+  const { objUpdate } = methods
   /*
    * Helper methods for specific state updates
    */
@@ -48,5 +48,5 @@ export const useEditorState = (hooks, methods, init = {}) => {
     [setState]
   )
 
-  return [get, set, update]
+  return [state, setState, update]
 }

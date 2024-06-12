@@ -12,7 +12,10 @@
  * To use a custom default, simply pas it as a prop into the editor      *
  * under the 'defaults' key. So to pass custom 'ui' defaults, you do:    *
  *                                                                       *
- * <PatternEditor defaults={{ ui: { kiosk: true } }} />              *
+ * <PatternEditor defaults={{ ui: { kiosk: true } }} />                  *
+ *                                                                       *
+ * You can also pass in a function, in which case the defaults will be   *
+ * the result of the function call.                                      *
  *                                                                       *
  *************************************************************************/
 
@@ -21,8 +24,14 @@
  * So either the passed-in methods, or the default ones
  */
 export const useDefaults = (props) => ({
+  settings: props?.settings || settings,
   ui: props?.ui || ui,
 })
+
+/*
+ * Default pattern settings
+ */
+const settings = {}
 
 /*
  * Default UI settings
