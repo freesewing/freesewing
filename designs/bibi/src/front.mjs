@@ -8,6 +8,7 @@ import {
   correctArmHole,
   createArmHoles,
   plotSideLineMeasurements,
+  verticalSplit,
 } from './shared.mjs'
 
 export const front = {
@@ -59,12 +60,11 @@ function bibiFront({
   Snippet,
   snippets,
   options,
+  absoluteOptions,
   measurements,
   macro,
   complete,
-  utils,
   part,
-  log,
 }) {
   // Hide Brian paths
   for (const key of Object.keys(paths)) paths[key].hide()
@@ -84,7 +84,7 @@ function bibiFront({
   delete points.cbHem
   delete points.cbNeck
 
-  constructFrontPoints(points, Point, measurements, options)
+  constructFrontPoints(part)
 
   // FBA
   points.originalChest = points.chest
@@ -114,9 +114,9 @@ function bibiFront({
     points.shoulderCp1 = fba.rotateUpper(points.shoulderCp1)
     points.shoulder = fba.rotateUpper(points.shoulder)
   }
-  adjustSidePoints(points, options)
+  adjustSidePoints(part)
 
-  correctArmHole(points, paths, Path, options, utils)
+  correctArmHole(part)
 
   const strapWidth = options.sleeves ? 0 : options.strapWidth
   points.neck = points.hps.shiftFractionTowards(
@@ -137,7 +137,7 @@ function bibiFront({
     .move(points.neck)
     .curve(points.neckCp2, points.cfNeckCp1, points.cfNeck)
     .addClass('fabric')
-  constructFrontHem(points, measurements, options, Point, paths, Path, log)
+  constructFrontHem(part, options.useWaistRibbing ? -store.get('ribbingHeight') : 0)
 
   store.set('frontSideSeamLength', paths.sideSeam.length())
   const frontLength = store.get('frontSideSeamLength')
@@ -145,7 +145,6 @@ function bibiFront({
   const dartLength = frontLength - backLength
   const constructDart = (path, tip, dartLength) => {
     const length = path.length()
-
     dartLength = Math.max(0, Math.min(dartLength, length))
 
     const gatherArea = (store.get('gatherAreaLength') ?? 0) + dartLength
@@ -159,9 +158,9 @@ function bibiFront({
     const endDartAlpha = path.shiftAlong(offset + auxLength + dartLength)
     const endSplit = path.shiftAlong(offset + gatherArea)
 
-    let tmp = path.split(startSplit)
+    let tmp = verticalSplit(Path, path, startSplit)
     const pathBefore = tmp[0]
-    tmp = tmp[1].split(endSplit)
+    tmp = verticalSplit(Path, tmp[1], endSplit)
     const pathGather = tmp[0]
     const pathAfter = tmp[1]
     const angleBefore = path.angleAt(startSplit)
@@ -240,19 +239,10 @@ function bibiFront({
         .addText('gather', 'center various help')
     }
   }
-  createArmHoles(
-    options,
-    store,
-    points,
-    paths,
-    Path,
-    snippets,
-    Snippet,
-    strapWidth,
-    options.armholeCurveFront,
-    0,
-    utils
-  )
+  createArmHoles(part, strapWidth, options.armholeCurveFront, 0)
+
+  store.set('armholeSizeFront', paths.armhole.length())
+  store.set('neckSizeFront', paths.frontNeck.length())
 
   paths.centerLine = new Path().move(points.cfNeck).line(points.cfHem).addClass('fabric')
 
@@ -267,32 +257,43 @@ function bibiFront({
   })
 
   if (sa) {
-    if (paths.sideSeam1)
+    if (paths.sideSeam1) {
       paths.sa = new Path()
         .move(points.cfHem)
-        .join(paths.hem.offset(sa * 3))
+        .join(paths.hem.offset(sa * (options.useWaistRibbing ? 1 : 3)))
         .join(paths.sideSeam1.offset(sa))
         .join(paths.sideSeam2.offset(sa))
-        .join(paths.armhole.offset(sa))
+        .join(paths.armhole.offset(sa * (store.separateSleeves ? 1 : 0)))
         .join(paths.shoulder.offset(sa))
-        .join(paths.frontNeck.offset(sa))
-        .line(points.cfNeck)
+        .line(points.neck)
         .attr('class', 'fabric sa')
-    else
+    } else {
       paths.sa = new Path()
         .move(points.cfHem)
-        .join(paths.hem.offset(sa * 3))
+        .join(paths.hem.offset(sa * (options.useWaistRibbing ? 1 : 3)))
         .join(paths.sideSeam.offset(sa))
-        .join(paths.armhole.offset(sa))
+        .join(paths.armhole.offset(sa * (store.separateSleeves ? 1 : 0)))
         .join(paths.shoulder.offset(sa))
-        .join(paths.frontNeck.offset(sa))
-        .line(points.cfNeck)
+        .line(points.neck)
         .attr('class', 'fabric sa')
+    }
   }
 
-  // Waist line
-  if (complete && points.hem.y > points.waist.y)
-    paths.waist = new Path().move(points.cfWaist).line(points.waist).attr('class', 'help')
+  if (complete) {
+    // Waist line
+    if (points.hem.y > points.waist.y) {
+      paths.waist = new Path().move(points.cfWaist).line(points.waist).attr('class', 'help')
+    }
+
+    if (!store.separateSleeves) {
+      paths.armholeBinding = paths.armhole
+        .offset(-absoluteOptions.bindingHeight)
+        .addClass('various help')
+    }
+    paths.neckBinding = paths.frontNeck
+      .offset(-absoluteOptions.bindingHeight)
+      .addClass('various help')
+  }
 
   macro('pd', {
     id: 'pArmhole',
@@ -371,7 +372,7 @@ function bibiFront({
 
   snippets.bustPoint = new Snippet('notch', points.bust)
 
-  plotSideLineMeasurements(points, paths.sideSeamWithDart, utils, macro)
+  plotSideLineMeasurements(part, paths.sideSeamWithDart)
 
   return part
 }

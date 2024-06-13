@@ -2,8 +2,6 @@
 title: "Sleevecap back X"
 maintainers:
   - Jonathan Haas
-maintainers:
-  - Jonathan Haas
 ---
 
 ![The horizontal location of the back inflection point](./sleevecapbackfactorx.svg)

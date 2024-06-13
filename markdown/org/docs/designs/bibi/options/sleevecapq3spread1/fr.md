@@ -2,8 +2,6 @@
 title: "Sleevecap Q3 upward spread"
 maintainers:
   - Jonathan Haas
-maintainers:
-  - Jonathan Haas
 ---
 
 ![The upward spread in the third quadrant of the sleevecap](./sleevecapq3spread1.svg)

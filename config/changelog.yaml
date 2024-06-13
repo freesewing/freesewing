@@ -9,6 +9,10 @@ Unreleased:
     cathrin:
       - Allow negative values in backDrop option. Fixes #6563
       - Allow negative values for the frontRise options. Fixes #6563
+    bibi:
+      - Changed the algorithm to draft the side seam, so the measurements are followed more precisely
+      - Reduced default influence of the seat back measurement and added an option to adjust it.
+      - Added various options for ribbing and knit binding on waistband, armscyes/cuffs and neck hole and included more documentation
     huey:
       - The lengthBonus option default was changed from 0% to 15%. Fixes #6596
     onyx:
