@@ -28,15 +28,50 @@ export const IconWrapper = ({
     <> {children} </>
   )
 
+export const BookmarkIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+  </IconWrapper>
+)
+
 export const CloseIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M6 18L18 6M6 6l12 12" />
   </IconWrapper>
 )
 
+export const EditIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+  </IconWrapper>
+)
+
+export const MeasurementsSetIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+  </IconWrapper>
+)
+
+export const NoIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M6,6 L 18,18 M 18,6 L 6,18" />
+  </IconWrapper>
+)
+
+export const OkIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M4.5 12.75l6 6 9-13.5" />
+  </IconWrapper>
+)
+
+export const PlusIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </IconWrapper>
+)
+
 /*
  * Not used inside the pattern editor
- */
 // Used in several icons
 const page =
   'M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z'
@@ -53,11 +88,6 @@ export const BioIcon = (props) => (
   </IconWrapper>
 )
 
-export const BookmarkIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
-  </IconWrapper>
-)
 
 export const BoolNoIcon = ({ size = 6 }) => (
   <NoIcon className={`w-${size} h-${size} text-error`} stroke={4} />
@@ -283,12 +313,6 @@ export const DownloadIcon = (props) => (
   </IconWrapper>
 )
 
-export const EditIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-  </IconWrapper>
-)
-
 export const EmailIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
@@ -496,11 +520,6 @@ export const MenuAltIcon = (props) => (
   </IconWrapper>
 )
 
-export const MsetIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
-  </IconWrapper>
-)
 export const MeasurementsSetIcon = MsetIcon
 
 export const MsfIcon = (props) => (
@@ -513,9 +532,7 @@ export const MsfIcon = (props) => (
   </IconWrapper>
 )
 
-/*
- * NarrowIcon - Looks like two arrow pointing inwards
- */
+// NarrowIcon - Looks like two arrow pointing inwards
 export const NarrowIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M1.5 12 h 7 M 15.5 12 h 7 M 18 8 l -4 4 l 4 4 M 6 8 l 4 4 l -4 4" />
@@ -534,21 +551,9 @@ export const NewsletterIcon = (props) => (
   </IconWrapper>
 )
 
-export const NoIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M6,6 L 18,18 M 18,6 L 6,18" />
-  </IconWrapper>
-)
-
 export const NoteIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-  </IconWrapper>
-)
-
-export const OkIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M4.5 12.75l6 6 9-13.5" />
   </IconWrapper>
 )
 
@@ -630,11 +635,6 @@ export const PluginIcon = (props) => (
   </IconWrapper>
 )
 
-export const PlusIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-  </IconWrapper>
-)
 
 export const PrintIcon = (props) => (
   <IconWrapper {...props}>
@@ -834,9 +834,7 @@ export const WarningIcon = (props) => (
   </IconWrapper>
 )
 
-/*
- * WideIcon - Looks like two arrow pointing outwards
- */
+// WideIcon - Looks like two arrow pointing outwards
 export const WideIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M3 12 h 7 M 14 12 h 7 M 5.5 8 l -4 4 l 4 4 M 18.5 8 l 4 4 l -4 4" />
@@ -872,3 +870,4 @@ export const ZoomOutIcon = (props) => (
     <path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM13.5 10.5h-6" />
   </IconWrapper>
 )
+*/

@@ -10,9 +10,10 @@
  */
 export const hasRequiredMeasurements = (methods, Design, measurements = {}) => {
   /*
-   * If design is just a plain object holding measurements, restructure it as a Design
+   * If design is just a plain object holding measurements, we restructure it as a Design
+   * AS it happens, this method is smart enough to test for this, so we call it always
    */
-  if (!Design.patternConfig) Design = { patternConfig: { measurements } }
+  Design = methods.structureMeasurementsAsDesign(Design)
 
   /*
    * Walk required measuremnets, and keep track of what's missing

@@ -85,6 +85,7 @@ export const ViewWrapper = (props) => {
  * @param (object) props.state - React state passed down from the wrapper view
  * @param (object) props.methods - All possible swizzled methods
  * @param (object) props.components - All possible swizzled components
+ * @param (object) props.config - Pattern editor swizzled configuration
  */
 const viewfinder = (props) => {
   /*
@@ -99,6 +100,8 @@ const viewfinder = (props) => {
   const sharedProps = {
     components: props.components,
     methods: props.methods,
+    hooks: props.hooks,
+    config: props.config,
     design,
     Design,
     locale: props.locale || 'en',

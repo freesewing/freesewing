@@ -26,7 +26,7 @@ export const MeasurementsEditor = (props) => {
   }
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-2xl">
       <h5>{t('pe:requiredMeasurements')}</h5>
       {Object.keys(Design.patternConfig.measurements).length === 0 ? (
         <p>({t('account:none')})</p>

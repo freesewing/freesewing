@@ -1,65 +1,4 @@
-//  __SDEFILE__ - This file is a dependency for the stand-alone environment
-// Dependencies
-//import { measurements } from 'config/measurements.mjs'
-//import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
-//import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'
-//import { isDegreeMeasurement } from 'config/measurements.mjs'
-//import {
-//  shortDate,
-//  cloudflareImageUrl,
-//  formatMm,
-//  hasRequiredMeasurements,
-//  capitalize,
-//  horFlexClasses,
-//} from 'shared/utils.mjs'
-//// Hooks
-//import { useState, useEffect, useContext } from 'react'
-//import { useTranslation } from 'next-i18next'
-//import { useAccount } from 'shared/hooks/use-account.mjs'
-//import { useBackend } from 'shared/hooks/use-backend.mjs'
-//import { useRouter } from 'next/router'
-//// Context
-//import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
-//import { ModalContext } from 'shared/context/modal-context.mjs'
-//// Components
-//import { Popout } from 'shared/components/popout/index.mjs'
-//import { BackToAccountButton } from './shared.mjs'
-//import { AnchorLink, PageLink, Link } from 'shared/components/link.mjs'
-//import { Json } from 'shared/components/json.mjs'
-//import { Yaml } from 'shared/components/yaml.mjs'
-//import {
-//  OkIcon,
-//  NoIcon,
-//  TrashIcon,
-//  EditIcon,
-//  UploadIcon,
-//  ResetIcon,
-//  PlusIcon,
-//  WarningIcon,
-//  CameraIcon,
-//  CsetIcon,
-//  BoolYesIcon,
-//  BoolNoIcon,
-//  CloneIcon,
-//} from 'shared/components/icons.mjs'
-//import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-//import { Mdx } from 'shared/components/mdx/dynamic.mjs'
-//import Timeago from 'react-timeago'
-//import { DisplayRow } from './shared.mjs'
-//import {
-//  StringInput,
-//  ToggleInput,
-//  PassiveImageInput,
-//  ListInput,
-//  MarkdownInput,
-//  MeasieInput,
-//  DesignDropdown,
-//  ns as inputNs,
-//} from 'shared/components/inputs.mjs'
-//import { BookmarkButton } from 'shared/components/bookmarks.mjs'
-//import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
-
-//export const ns = [inputNs, 'account', 'patterns', 'status', 'measurements', 'sets']
+import { useState, useEffect } from 'react'
 
 export const MeasieVal = ({ val, m, imperial }) =>
   isDegreeMeasurement(m) ? (
@@ -68,21 +7,25 @@ export const MeasieVal = ({ val, m, imperial }) =>
     <span dangerouslySetInnerHTML={{ __html: formatMm(val, imperial) }}></span>
   )
 
-export const MsetButton = (props) => <MsetCard {...props} href={false} />
-export const MsetLink = (props) => <MsetCard {...props} onClick={false} useA={false} />
-export const MsetA = (props) => <MsetCard {...props} onClick={false} useA={true} />
-
 export const UserSetPicker = ({
-  design,
-  t,
+  Design,
   href,
   clickHandler,
   missingClickHandler,
   size = 'lg',
+  components,
+  hooks,
+  methods,
+  config,
 }) => {
-  // Hooks
+  // Components that can be swizzled
+  const { Popout, Link, PlusIcon, MeasurementsSetCard } = components
+  // Hooks that can be swizzled
+  const { useBackend, useAccount } = hooks
   const backend = useBackend()
   const { control } = useAccount()
+  // Methods that can be swizzled
+  const { t, hasRequiredMeasurements } = methods
 
   // State
   const [sets, setSets] = useState({})
@@ -99,18 +42,13 @@ export const UserSetPicker = ({
     }
     getSets()
   }, [backend])
-
   let hasSets = false
   const okSets = []
   const lackingSets = []
   if (Object.keys(sets).length > 0) {
     hasSets = true
     for (const setId in sets) {
-      const [hasMeasies] = hasRequiredMeasurements(
-        designMeasurements[design],
-        sets[setId].measies,
-        true
-      )
+      const [hasMeasies] = hasRequiredMeasurements(Design, sets[setId].measies)
       if (hasMeasies) okSets.push(sets[setId])
       else lackingSets.push(sets[setId])
     }
@@ -120,20 +58,19 @@ export const UserSetPicker = ({
     return (
       <div className="w-full max-w-3xl mx-auto">
         <Popout tip>
-          <h5>{t('account:noOwnSets')}</h5>
-          <p className="text-lg">{t('account:pleaseMtm')}</p>
-          <p className="text-lg">{t('account:noOwnSetsMsg')}</p>
-          <p className="text-center md:text-right">
-            <Link
-              className="btn btn-primary capitalize w-full md:w-auto"
-              bottom
-              primary
-              href="/new/set"
+          <h5>{t('pe:noOwnSets')}</h5>
+          <p className="">{t('pe:noOwnSetsMsg')}</p>
+          {config.hrefNewSet ? (
+            <a
+              href={config.hrefNewSet}
+              className="btn btn-accent capitalize"
+              target="_BLANK"
+              rel="nofollow"
             >
-              <PlusIcon />
-              {t('account:newSet')}
-            </Link>
-          </p>
+              {t('pe:newSet')}
+            </a>
+          ) : null}
+          <p className="text-sm">{t('pe:pleaseMtm')}</p>
         </Popout>
       </div>
     )
@@ -143,36 +80,36 @@ export const UserSetPicker = ({
       {okSets.length > 0 && (
         <div className="flex flex-row flex-wrap gap-2">
           {okSets.map((set) => (
-            <MsetButton
-              {...{ set, control, design }}
+            <MeasurementsSetCard
+              href={false}
+              {...{ set, control, Design, methods, config }}
               onClick={clickHandler}
               href={href}
-              requiredMeasies={measurements[design]}
               key={set.id}
               size={size}
             />
           ))}
         </div>
       )}
-      {lackingSets.length > 0 && (
+      {lackingSets.length > 0 ? (
         <div className="my-4">
           <Popout note compact>
-            {t('account:someSetsLacking')}
+            {t('pe:someSetsLacking')}
           </Popout>
           <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
             {lackingSets.map((set) => (
-              <MsetButton
-                {...{ set, control, design }}
+              <MeasurementsSetCard
+                href={false}
+                {...{ set, control, Design }}
                 onClick={missingClickHandler}
                 href={href}
-                requiredMeasies={measurements[design]}
                 key={set.id}
                 size={size}
               />
             ))}
           </div>
         </div>
-      )}
+      ) : null}
     </>
   )
 }
@@ -237,7 +174,7 @@ export const BookmarkedSetPicker = ({ design, clickHandler, t, size, href }) => 
       {lackingSets.length > 0 && (
         <div className="my-4">
           <Popout note compact>
-            {t('account:someSetsLacking')}
+            {t('pe:someSetsLacking')}
           </Popout>
           <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
             {lackingSets.map((set) => (

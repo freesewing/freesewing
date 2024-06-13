@@ -18,6 +18,17 @@ editMeasurementsDesc: You can manually set or override measurements below.
 requiredMeasurements: Required Measurements
 optionalMeasurements: Optional Measurements
 missingMeasurements: Missing Measurements
+missingMeasurementsInfo1: To generate this pattern, we need the following additional measurements
+missingMeasurementsInfo2: Please provide them below.
+
+# Measurements sets
+noOwnSets: You do not have any of your own measurements sets (yet)
+pleaseMtm: Because our patterns are bespoke, we strongly suggest you take accurate measurements.
+noOwnSetsMsg: You can store your measurements as a measurements set, after which you can generate as many patterns as you want for them.
+chooseFromOwnSets: Choose one of your own measurements sets
+chooseFromOwnSetsDesc: Pick any of your own measurements sets that have all required measurements to generate this pattern.
+newSet: Create a new measurements set
+someSetsLacking: Some of your measurements sets lack the measurements required to generate this pattern
 
 # View wrapper
 requiredPropsMissing.t: Required props are missing

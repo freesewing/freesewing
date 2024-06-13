@@ -33,8 +33,17 @@ import {
   BookmarkedSetPicker,
   CuratedSetPicker,
 } from '../swizzle/components/sets.mjs'
+import { MeasurementsSetCard } from '../swizzle/components/measurements-set-card.mjs'
 // Icons
-import { CloseIcon } from '../swizzle/components/icons.mjs'
+import {
+  BookmarkIcon,
+  CloseIcon,
+  EditIcon,
+  MeasurementsSetIcon,
+  NoIcon,
+  OkIcon,
+  PlusIcon,
+} from '../swizzle/components/icons.mjs'
 // Measurements Editor
 import { MeasurementsEditor } from '../swizzle/components/measurements-editor.mjs'
 // inputs
@@ -62,7 +71,6 @@ const defaultComponents = {
   BaseAccordion,
   BookmarkedSetPicker,
   ButtonFrame,
-  CloseIcon,
   CuratedSetPicker,
   DesignDropdown,
   DesignsView,
@@ -71,6 +79,7 @@ const defaultComponents = {
   ListInput,
   MarkdownInput,
   MeasurementInput,
+  MeasurementsSetCard,
   MeasurementsView,
   MeasurementsEditor,
   NumberInput,
@@ -80,6 +89,14 @@ const defaultComponents = {
   TemporaryLoader,
   ToggleInput,
   UserSetPicker,
+  // icons
+  BookmarkIcon,
+  CloseIcon,
+  EditIcon,
+  MeasurementsSetIcon,
+  NoIcon,
+  OkIcon,
+  PlusIcon,
 }
 
 /*
