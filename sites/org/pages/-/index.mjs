@@ -28,7 +28,7 @@ const PatternEditorPage = ({ page, docs }) => {
 
   return (
     <PageWrapper {...page} title="Pattern Editor" layout={EditorLayout} footer={false}>
-      <PatternEditor {...{ designs, locale }} components={{}} methods={{ t: altT }} />
+      <PatternEditor {...{ designs, locale }} components={{}} methods={{ t: altT }} config={{}} />
     </PageWrapper>
   )
 }

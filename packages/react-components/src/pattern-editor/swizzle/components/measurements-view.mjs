@@ -35,7 +35,7 @@ export const MeasurementsView = (props) => {
     EditIcon,
   } = props.components
   // Passed down methods
-  const { t } = props.methods
+  const { t, designMeasurements, capitalize } = props.methods
   // Passed down hooks
   const { useBackend, useAccount } = props.hooks
   // Passed down ViewWrapper state
@@ -47,13 +47,13 @@ export const MeasurementsView = (props) => {
       [['units'], set.imperial ? 'imperial' : 'metric'],
     ])
     // Save the measurement set name to pattern settings
-    if (set[`name${capitalize(lang)}`])
+    if (set[`name${capitalize(props.locale)}`])
       // Curated measurement set
       update.settings([[['metadata'], { setName: set[`name${capitalize(lang)}`] }]])
     else if (set?.name)
       // User measurement set
       update.settings([[['metadata'], { setName: set.name }]])
-    setView('draft')
+    //setView('draft')
   }
 
   const loadMissingMeasurements = (set) => {
@@ -61,7 +61,7 @@ export const MeasurementsView = (props) => {
       [['measurements'], designMeasurements(Design, set.measies)],
       [['units'], set.imperial ? 'imperial' : 'metric'],
     ])
-    setView('measurements')
+    //setView('measurements')
   }
 
   // Construct accordion items based on the editor configuration
@@ -79,7 +79,7 @@ export const MeasurementsView = (props) => {
         key={2}
         Design={Design}
         clickHandler={loadMeasurements}
-        missingClickHandler={loadMissingMeasurements}
+        missingClickHandler={loadMeasurements}
         t={t}
         size="md"
         hooks={props.hooks}
@@ -111,11 +111,7 @@ export const MeasurementsView = (props) => {
       <h2>{t('pe:measurements')}</h2>
       {missingMeasurements && (
         <Popout note dense noP>
-          <h5>
-            {t('pe:missingMeasurements', { nr: missingMeasurements.length })} (
-            {missingMeasurements.length})
-          </h5>
-          <p>{t('pe:missingMeasurementsInfo1')}</p>
+          <h5>{t('pe:missingMeasurementsInfo')}:</h5>
           <ol className="list list-inside flex flex-row flex-wrap">
             {missingMeasurements.map((m, i) => (
               <li key={i}>
@@ -124,7 +120,9 @@ export const MeasurementsView = (props) => {
               </li>
             ))}
           </ol>
-          <p>{t('pe:missingMeasurementsInfo2')}</p>
+          <p className="text-sm m-0 p-0 pt-2">
+            ({missingMeasurements.length} {t('pe:missingMeasurements')})
+          </p>
         </Popout>
       )}
       {!missingMeasurements && (

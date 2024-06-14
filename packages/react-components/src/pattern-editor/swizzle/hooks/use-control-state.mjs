@@ -47,5 +47,5 @@ export const useControlState = (hooks, methods) => {
     }
   }
 
-  return { selection, update }
+  return { control: selection, setControl: update }
 }

@@ -36,13 +36,34 @@ import {
 import { MeasurementsSetCard } from '../swizzle/components/measurements-set-card.mjs'
 // Icons
 import {
+  BeakerIcon,
   BookmarkIcon,
   CloseIcon,
+  DocsIcon,
   EditIcon,
+  ExportIcon,
+  GaugeIcon,
+  ListIcon,
   MeasurementsSetIcon,
   NoIcon,
   OkIcon,
+  OptionsIcon,
   PlusIcon,
+  PrintIcon,
+  SaveIcon,
+  UploadIcon,
+  XrayIcon,
+  ViewDraftIcon,
+  ViewMeasurementsIcon,
+  ViewTestIcon,
+  ViewTimingIcon,
+  ViewPrintLayoutIcon,
+  ViewSaveIcon,
+  ViewExportIcon,
+  ViewEditSettingsIcon,
+  ViewLogsIcon,
+  ViewInspectIcon,
+  ViewDocsIcon,
 } from '../swizzle/components/icons.mjs'
 // Measurements Editor
 import { MeasurementsEditor } from '../swizzle/components/measurements-editor.mjs'
@@ -62,6 +83,7 @@ import {
 import { DesignsView } from '../swizzle/components/designs-view.mjs'
 import { ErrorView } from '../swizzle/components/error-view.mjs'
 import { MeasurementsView } from '../swizzle/components/measurements-view.mjs'
+import { ViewPicker } from '../swizzle/components/view-picker.mjs'
 
 /**
  * This object holds all components that can be swizzled
@@ -89,14 +111,35 @@ const defaultComponents = {
   TemporaryLoader,
   ToggleInput,
   UserSetPicker,
+  ViewPicker,
   // icons
+  BeakerIcon,
   BookmarkIcon,
   CloseIcon,
+  DocsIcon,
   EditIcon,
+  GaugeIcon,
+  ListIcon,
   MeasurementsSetIcon,
   NoIcon,
   OkIcon,
+  OptionsIcon,
   PlusIcon,
+  PrintIcon,
+  SaveIcon,
+  UploadIcon,
+  XrayIcon,
+  ViewDraftIcon,
+  ViewMeasurementsIcon,
+  ViewTestIcon,
+  ViewTimingIcon,
+  ViewPrintLayoutIcon,
+  ViewSaveIcon,
+  ViewExportIcon,
+  ViewEditSettingsIcon,
+  ViewLogsIcon,
+  ViewInspectIcon,
+  ViewDocsIcon,
 }
 
 /*

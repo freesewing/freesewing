@@ -36,8 +36,17 @@ export const useEditorState = (hooks, methods, init = {}) => {
       /*
        * These hold an object, so we take a path
        */
-      settings: (path, val) =>
-        setState((cur) => objUpdate({ ...cur }, unshift('settings', path), val)),
+      settings: (path = null, val = null) => {
+        /*
+         * Allow passing an array of update operations.
+         * Note that we're not doing rigorous checking on the structure of the array.
+         * If you mess it up, it's on you.
+         */
+        if (Array.isArray(path) && val === null) {
+          for (const sub of path)
+            setState((cur) => objUpdate({ ...cur }, unshift('settings', sub[0]), sub[1]))
+        } else setState((cur) => objUpdate({ ...cur }, unshift('settings', path), val))
+      },
       ui: (path, val) => setState((cur) => objUpdate({ ...cur }, unshift('ui', path), val)),
       /*
        * These only hold a string, so we only take a value

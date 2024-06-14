@@ -3,7 +3,6 @@
  */
 export const cloudImageUrl = (methods, { id = 'default-avatar', variant = 'public' }) => {
   const config = methods.getConfig()
-  console.log({ config })
   /*
    * Return something default so that people will actually change it
    */

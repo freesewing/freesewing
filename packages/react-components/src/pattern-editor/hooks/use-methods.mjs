@@ -21,6 +21,7 @@
 /*
  * Import of methods that can be swizzled
  */
+import { capitalize } from '../swizzle/methods/capitalize.mjs'
 import { cloudImageUrl } from '../swizzle/methods/cloud-image-url.mjs'
 import { designMeasurements } from '../swizzle/methods/design-measurements.mjs'
 import { hasRequiredMeasurements } from '../swizzle/methods/has-required-measurements.mjs'
@@ -42,6 +43,7 @@ import { noop } from '../swizzle/methods/noop.mjs'
  * This object holds all methods that can be swizzled
  */
 const defaultMethods = {
+  capitalize,
   cloudImageUrl,
   designMeasurements,
   hasRequiredMeasurements,

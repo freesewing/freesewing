@@ -19,6 +19,7 @@ export const ns = ['pe', 'measurements']
  * @param {object} props.hooks = An object holding hooks to swizzle
  * @param {object} props.methods = An object holding methods to swizzle
  * @param {object} props.config = An object holding the editor config to swizzle
+ * @param {object} props.locale = The locale (language) code
  *
  */
 export const PatternEditor = (props) => {

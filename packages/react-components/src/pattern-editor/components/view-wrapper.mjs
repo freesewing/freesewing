@@ -17,6 +17,7 @@ import { useDefaults } from '../hooks/use-defaults.mjs'
  * @param {string} props.locale - Current locale/language
  * @param {function} props.t - Translation method
  * @param {object} props.preload - Object holding state to preload
+ * @param {object} props.locale - The locale (language) code
  */
 export const ViewWrapper = (props) => {
   /*
@@ -33,7 +34,7 @@ export const ViewWrapper = (props) => {
    * Load account data and control state
    */
   const { account } = useAccount()
-  const controlState = useControlState()
+  const { control, setControl } = useControlState()
 
   // Editor state
   const [state, setState, update] = useEditorState(
@@ -70,7 +71,7 @@ export const ViewWrapper = (props) => {
   const [View, viewProps] = viewfinder({ ...props, state })
 
   // Render the view
-  return <View {...viewProps} state={state} update={update} />
+  return <View {...viewProps} {...{ state, update, control, setControl }} />
 }
 
 /**
@@ -102,6 +103,7 @@ const viewfinder = (props) => {
     methods: props.methods,
     hooks: props.hooks,
     config: props.config,
+    locale: props.locale,
     design,
     Design,
     locale: props.locale || 'en',
@@ -114,6 +116,7 @@ const viewfinder = (props) => {
     designs: props.components.DesignsView,
     measurements: props.components.MeasurementsView,
     error: props.components.ErrorView,
+    picker: props.components.ViewPicker,
   }
 
   /*
@@ -124,20 +127,22 @@ const viewfinder = (props) => {
   /*
    * If we have a design, do we have the measurements?
    */
-  const [measurementsOk, missing] = props.methods.hasRequiredMeasurements(props.designs[design])
+  const [measurementsOk, missing] = props.methods.hasRequiredMeasurements(
+    props.designs[design],
+    props.state.settings.measurements
+  )
   if (!measurementsOk) return [views.measurements, { ...sharedProps, missingMeasurements: missing }]
-
-  /*
-   * If no view is set, return view picker
-   */
-  if (!props.state?.view) return [views.error, sharedProps]
 
   /*
    * If a view is set, return that
    */
-  if (props.state?.view && views[props.state?.view]) return [views[props.state?.view], props]
+  if (props.state?.view && views[props.state?.view])
+    return [views[props.state?.view], { ...sharedProps, ...props, missingMeasurements: missing }]
 
-  return [views.error, sharedProps]
+  /*
+   * If no obvious view was found, return the view picker
+   */
+  return [views.picker, sharedProps]
 }
 
 /*

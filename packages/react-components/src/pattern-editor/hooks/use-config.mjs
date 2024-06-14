@@ -33,6 +33,10 @@ const defaultConfig = {
   cloudImageUrl: 'https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/',
   // Cloud image variants
   cloudImageVariants: ['public', 'sq100', 'sq200', 'sq500', 'w200', 'w500', 'w1000', 'w2000'],
+  // Views
+  mainViews: ['draft', 'save', 'export'],
+  extraViews: ['measurements', 'printLayout', 'editSettings', 'docs'],
+  devViews: ['inspect', 'logs', 'test', 'timing'],
 }
 
 /*
