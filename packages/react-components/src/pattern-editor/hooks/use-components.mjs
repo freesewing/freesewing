@@ -27,18 +27,22 @@ import { BaseAccordion, SubAccordion, Accordion } from '../swizzle/components/ac
 import { Popout } from '../swizzle/components/popout.mjs'
 // Loader
 import { TemporaryLoader } from '../swizzle/components/loaders.mjs'
-// (curated) Sets
+// Measurements Sets
 import {
   UserSetPicker,
   BookmarkedSetPicker,
   CuratedSetPicker,
 } from '../swizzle/components/sets.mjs'
+// Curated Measurements Sets
+import { CuratedMeasurementsSetLineup } from '../swizzle/components/curated-sets.mjs'
 import { MeasurementsSetCard } from '../swizzle/components/measurements-set-card.mjs'
 // Icons
 import {
   BeakerIcon,
   BookmarkIcon,
   CloseIcon,
+  CuratedMeasurementsSetIcon,
+  DesignIcon,
   DocsIcon,
   EditIcon,
   ExportIcon,
@@ -64,6 +68,7 @@ import {
   ViewLogsIcon,
   ViewInspectIcon,
   ViewDocsIcon,
+  ViewDesignsIcon,
 } from '../swizzle/components/icons.mjs'
 // Measurements Editor
 import { MeasurementsEditor } from '../swizzle/components/measurements-editor.mjs'
@@ -93,6 +98,8 @@ const defaultComponents = {
   BaseAccordion,
   BookmarkedSetPicker,
   ButtonFrame,
+  CuratedMeasurementsSetIcon,
+  CuratedMeasurementsSetLineup,
   CuratedSetPicker,
   DesignDropdown,
   DesignsView,
@@ -116,6 +123,7 @@ const defaultComponents = {
   BeakerIcon,
   BookmarkIcon,
   CloseIcon,
+  DesignIcon,
   DocsIcon,
   EditIcon,
   GaugeIcon,
@@ -140,6 +148,7 @@ const defaultComponents = {
   ViewLogsIcon,
   ViewInspectIcon,
   ViewDocsIcon,
+  ViewDesignsIcon,
 }
 
 /*

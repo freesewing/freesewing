@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import orderBy from 'lodash.orderby'
 
 export const MeasieVal = ({ val, m, imperial }) =>
   isDegreeMeasurement(m) ? (
@@ -114,10 +115,24 @@ export const UserSetPicker = ({
   )
 }
 
-export const BookmarkedSetPicker = ({ design, clickHandler, t, size, href }) => {
-  // Hooks
-  const { control } = useAccount()
+export const BookmarkedSetPicker = ({
+  Design,
+  clickHandler,
+  missingClickHandler,
+  size = 'lg',
+  components,
+  hooks,
+  methods,
+  config,
+}) => {
+  // Components that can be swizzled
+  const { Popout, Link, PlusIcon, MeasurementsSetCard } = components
+  // Hooks that can be swizzled
+  const { useBackend, useAccount } = hooks
   const backend = useBackend()
+  const { control } = useAccount()
+  // Methods that can be swizzled
+  const { t, hasRequiredMeasurements } = methods
 
   // State
   const [sets, setSets] = useState({})
@@ -135,11 +150,7 @@ export const BookmarkedSetPicker = ({ design, clickHandler, t, size, href }) => 
           try {
             set = await backend.getSet(bookmark.url.slice(6))
             if (set.success) {
-              const [hasMeasies] = hasRequiredMeasurements(
-                designMeasurements[design],
-                set.data.set.measies,
-                true
-              )
+              const [hasMeasies] = hasRequiredMeasurements(Design, set.data.set.measies)
               loadedSets[set.data.set.id] = { ...set.data.set, hasMeasies }
             }
           } catch (err) {
@@ -160,11 +171,10 @@ export const BookmarkedSetPicker = ({ design, clickHandler, t, size, href }) => 
       {okSets.length > 0 && (
         <div className="flex flex-row flex-wrap gap-2">
           {okSets.map((set) => (
-            <MsetButton
-              {...{ set, control, design }}
+            <MeasurementsSetCard
+              href={false}
+              {...{ set, control, Design, methods, config }}
               onClick={clickHandler}
-              href={href}
-              requiredMeasies={designMeasurements[design]}
               key={set.id}
               size={size}
             />
@@ -178,10 +188,10 @@ export const BookmarkedSetPicker = ({ design, clickHandler, t, size, href }) => 
           </Popout>
           <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
             {lackingSets.map((set) => (
-              <MsetLink
-                {...{ set, control, design }}
-                onClick={clickHandler}
-                requiredMeasies={designMeasurements[design]}
+              <MeasurementsSetCard
+                href={false}
+                {...{ set, control, Design }}
+                onClick={missingClickHandler}
                 key={set.id}
                 size={size}
               />
@@ -193,44 +203,47 @@ export const BookmarkedSetPicker = ({ design, clickHandler, t, size, href }) => 
   )
 }
 
-export const CuratedSetPicker = ({ href = false, clickHandler = false, published = true }) => {
-  // Hooks
+export const CuratedSetPicker = ({
+  Design,
+  clickHandler,
+  missingClickHandler,
+  size = 'lg',
+  components,
+  hooks,
+  methods,
+  config,
+  locale,
+}) => {
+  // Components that can be swizzled
+  const { CuratedMeasurementsSetLineup } = components
+  // Hooks that can be swizzled
+  const { useBackend } = hooks
   const backend = useBackend()
-  const { setLoadingStatus } = useContext(LoadingStatusContext)
-  const { i18n } = useTranslation(ns)
-  const lang = i18n.language
 
   // State
   const [sets, setSets] = useState([])
-  const [selected, setSelected] = useState(false)
 
   // Effects
   useEffect(() => {
     const getSets = async () => {
-      setLoadingStatus([true, 'contactingBackend'])
       const result = await backend.getCuratedSets()
       if (result.success) {
         const allSets = {}
         for (const set of result.data.curatedSets) {
-          if (!published || set.published) allSets[set.id] = set
+          if (set.published) allSets[set.id] = set
         }
         setSets(allSets)
-        setLoadingStatus([true, 'status:dataLoaded', true, true])
-      } else setLoadingStatus([true, 'status:backendError', true, false])
+      }
     }
     getSets()
   }, [])
 
-  const lineupProps = {
-    sets: orderBy(sets, 'height', 'asc'),
-  }
-  if (typeof href === 'function') lineupProps.href = href
-  else lineupProps.onClick = clickHandler ? clickHandler : (set) => setSelected(set.id)
-
   return (
     <div className="max-w-7xl xl:pl-4">
-      <SetLineup {...lineupProps} lang={lang} />
-      {selected && <ShowCuratedSet cset={sets[selected]} />}
+      <CuratedMeasurementsSetLineup
+        {...{ locale, clickHandler }}
+        sets={orderBy(sets, 'height', 'asc')}
+      />
     </div>
   )
 }

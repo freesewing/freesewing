@@ -34,9 +34,30 @@ const defaultConfig = {
   // Cloud image variants
   cloudImageVariants: ['public', 'sq100', 'sq200', 'sq500', 'w200', 'w500', 'w1000', 'w2000'],
   // Views
-  mainViews: ['draft', 'save', 'export'],
+  mainViews: ['draft', 'designs', 'save', 'export'],
   extraViews: ['measurements', 'printLayout', 'editSettings', 'docs'],
   devViews: ['inspect', 'logs', 'test', 'timing'],
+  mainViewColors: {
+    draft: 'primary',
+    save: 'none',
+    export: 'none',
+    designs: 'accent',
+  },
+  // View components
+  draftViewComponent: 'ViewPicker',
+  saveViewComponent: 'ViewPicker',
+  exportViewComponent: 'ViewPicker',
+  measurementsViewComponent: 'MeasurementsView',
+  printLayoutViewComponent: 'ViewPicker',
+  editSettingsViewComponent: 'ViewPicker',
+  docsViewComponent: 'ViewPicker',
+  inspectViewComponent: 'ViewPicker',
+  logsViewComponent: 'ViewPicker',
+  testViewComponent: 'ViewPicker',
+  timingViewComponent: 'ViewPicker',
+  designsViewComponent: 'DesignsView',
+  errorViewComponent: 'ErrorView',
+  pickerViewComponent: 'ViewPicker',
 }
 
 /*

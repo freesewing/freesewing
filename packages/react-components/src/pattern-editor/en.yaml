@@ -8,8 +8,7 @@ link: Link
 related: Related
 
 # Designs view
-pickADesign: Pick a design
-
+chooseADesign: Choose a Design
 # Mesurements view
 measurements: Measurements
 measurementsAreOk: We have all required measurements to draft this pattern.
@@ -28,6 +27,10 @@ chooseFromOwnSets: Choose one of your own measurements sets
 chooseFromOwnSetsDesc: Pick any of your own measurements sets that have all required measurements to generate this pattern.
 newSet: Create a new measurements set
 someSetsLacking: Some of your measurements sets lack the measurements required to generate this pattern
+chooseFromBookmarkedSets: Choose one of the measurements sets you've bookmarked
+chooseFromBookmarkedSetsDesc: If you've bookmarked any measurements sets, you can select from those too.
+chooseFromCuratedSets: Choose one of FreeSewing's curated measurements sets
+chooseFromCuratedSetsDesc: If you're just looking to try out our platform, you can select from our list of curated measurements sets.
 
 # View wrapper
 requiredPropsMissing.t: Required props are missing
@@ -58,5 +61,7 @@ view.inspect.t: Pattern inspector
 view.inspect.d: Load the pattern in the inspector, giving you in-depth info about a pattern's components
 view.docs.t: Documentation
 view.docs.d: More information and links to documentation
+view.designs.t: Choose a different Design
+view.designs.d: "Current design: {- design }"
 showAdvancedOptions: Show advanced options
 hideAdvancedOptions: Hide advanced options

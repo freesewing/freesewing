@@ -9,7 +9,7 @@ export const TemporaryLoader = () => <div className="">One moment please</div>
  */
 const DefaultDesignsView = ({ designs = {}, setView, t }) => (
   <div className="text-center mt-8">
-    <h2>{t('pickADesign')}</h2>
+    <h2>{t('pe:view.designs.t')}</h2>
     <ul className="flex flex-row flex-wrap gap-2 items-center justify-center max-w-2xl px-8 mx-auto">
       {Object.entries(designs).map(([name, design]) => (
         <li key={design}>

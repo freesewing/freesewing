@@ -71,7 +71,12 @@ export const ViewWrapper = (props) => {
   const [View, viewProps] = viewfinder({ ...props, state })
 
   // Render the view
-  return <View {...viewProps} {...{ state, update, control, setControl }} />
+  return (
+    <>
+      <p>{state.view}</p>
+      <View {...viewProps} {...{ state, update, control, setControl }} />
+    </>
+  )
 }
 
 /**

@@ -10,13 +10,16 @@
  */
 export const DesignsView = ({ designs = {}, methods, update }) => (
   <div className="text-center mt-8 mb-24">
-    <h2>{methods.t('pe:pickADesign')}</h2>
+    <h2>{methods.t('pe:chooseADesign')}</h2>
     <ul className="flex flex-row flex-wrap gap-2 items-center justify-center max-w-2xl px-8 mx-auto">
       {Object.entries(designs).map(([name, design]) => (
         <li key={name}>
           <button
             className={`btn btn-primary btn-outline btn-sm capitalize font-bold `}
-            onClick={() => update.design(name)}
+            onClick={() => {
+              update.design(name)
+              update.view()
+            }}
           >
             {name}
           </button>

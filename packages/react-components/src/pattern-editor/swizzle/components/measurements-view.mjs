@@ -18,6 +18,7 @@ const iconClasses = { className: 'w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink
  * @param {object} props.methods - The possibly swizzled methods
  * @param {function} props.methods.t - The translation method
  * @param {object} props.config - The possibly swizzled pattern editor configuration
+ * @param {object} props.locale - The language code (locale) currently used
  * @return {function} MeasurementsView - React component
  */
 export const MeasurementsView = (props) => {
@@ -32,6 +33,8 @@ export const MeasurementsView = (props) => {
     UserSetPicker,
     BookmarkIcon,
     BookmarkedSetPicker,
+    CuratedMeasurementsSetIcon,
+    CuratedSetPicker,
     EditIcon,
   } = props.components
   // Passed down methods
@@ -57,11 +60,10 @@ export const MeasurementsView = (props) => {
     // Save the measurement set name to pattern settings
     if (set[`name${capitalize(props.locale)}`])
       // Curated measurement set
-      update.settings([[['metadata'], { setName: set[`name${capitalize(lang)}`] }]])
+      update.settings([[['metadata'], { setName: set[`name${capitalize(props.locale)}`] }]])
     else if (set?.name)
       // User measurement set
       update.settings([[['metadata'], { setName: set.name }]])
-    //setView('draft')
   }
 
   const loadMissingMeasurements = (set) => {
@@ -75,27 +77,68 @@ export const MeasurementsView = (props) => {
   // Construct accordion items based on the editor configuration
   const items = []
   if (props.config.enableBackend)
-    items.push([
-      <Fragment key={1}>
-        <div className={horFlexClasses}>
-          <h5 id="ownsets">{t('pe:chooseFromOwnSets')}</h5>
-          <MeasurementsSetIcon {...iconClasses} />
-        </div>
-        <p className="text-left">{t('pe:chooseFromOwnSetsDesc')}</p>
-      </Fragment>,
-      <UserSetPicker
-        key={2}
-        Design={Design}
-        clickHandler={loadMeasurements}
-        missingClickHandler={loadMeasurements}
-        t={t}
-        size="md"
-        hooks={props.hooks}
-        components={props.components}
-        config={props.config}
-      />,
-      'ownSets',
-    ])
+    items.push(
+      [
+        <Fragment key={1}>
+          <div className={horFlexClasses}>
+            <h5 id="ownsets">{t('pe:chooseFromOwnSets')}</h5>
+            <MeasurementsSetIcon {...iconClasses} />
+          </div>
+          <p className="text-left">{t('pe:chooseFromOwnSetsDesc')}</p>
+        </Fragment>,
+        <UserSetPicker
+          key={2}
+          Design={Design}
+          clickHandler={loadMeasurements}
+          missingClickHandler={loadMeasurements}
+          t={t}
+          size="md"
+          hooks={props.hooks}
+          components={props.components}
+          config={props.config}
+        />,
+        'ownSets',
+      ],
+      [
+        <Fragment key={1}>
+          <div className={horFlexClasses}>
+            <h5 id="bookmarkedsets">{t('pe:chooseFromBookmarkedSets')}</h5>
+            <BookmarkIcon {...iconClasses} />
+          </div>
+          <p className="text-left">{t('pe:chooseFromBookmarkedSetsDesc')}</p>
+        </Fragment>,
+        <BookmarkedSetPicker
+          Design={Design}
+          clickHandler={loadMeasurements}
+          missingClickHandler={loadMeasurements}
+          t={t}
+          size="md"
+          key={2}
+          hooks={props.hooks}
+          components={props.components}
+          config={props.config}
+        />,
+        'bmSets',
+      ],
+      [
+        <Fragment key={1}>
+          <div className={horFlexClasses}>
+            <h5 id="curatedsets">{t('pe:chooseFromCuratedSets')}</h5>
+            <CuratedMeasurementsSetIcon {...iconClasses} />
+          </div>
+          <p className="text-left">{t('pe:chooseFromCuratedSetsDesc')}</p>
+        </Fragment>,
+        <CuratedSetPicker
+          Design={Design}
+          clickHandler={loadMeasurements}
+          hooks={props.hooks}
+          components={props.components}
+          config={props.config}
+          key={2}
+        />,
+        'csets',
+      ]
+    )
   // Manual editing is always an option
   items.push([
     <Fragment key={1}>
@@ -112,6 +155,7 @@ export const MeasurementsView = (props) => {
       state={props.state}
       methods={props.methods}
     />,
+    'edit',
   ])
 
   return (
@@ -135,12 +179,12 @@ export const MeasurementsView = (props) => {
       ) : (
         <Popout tip dense noP>
           <h5>{t('pe:measurementsAreOk')}</h5>
-          <div className="flex flex-row gap-2 mt-2">
-            <button className="btn btn-primary btn-lg" onClick={() => update.view('draft')}>
+          <div className="flex flex-row flex-wrap gap-2 mt-2">
+            <button className="btn btn-primary lg:btn-lg" onClick={() => update.view('draft')}>
               {t('pe:view.draft.t')}
             </button>
             <button
-              className="btn btn-primary btn-outline btn-lg"
+              className="btn btn-primary btn-outline lg:btn-lg"
               onClick={() => update.view('picker')}
             >
               {t('pe:chooseAnotherActivity')}
@@ -152,46 +196,3 @@ export const MeasurementsView = (props) => {
     </div>
   )
 }
-
-/*
-          [
-            <Fragment key={1}>
-              <div className={horFlexClasses}>
-                <h5 id="bookmarkedsets">{t('workbench:chooseFromBookmarkedSets')}</h5>
-                <BookmarkIcon {...iconClasses} />
-              </div>
-              <p>{t('workbench:chooseFromBookmarkedSetsDesc')}</p>
-            </Fragment>,
-            <BookmarkedSetPicker
-              Design={Design}
-              clickHandler={loadMeasurements}
-              t={t}
-              size="md"
-              key={2}
-            />,
-            'bmSets',
-          ],
-          [
-            <Fragment key={1}>
-              <div className={horFlexClasses}>
-                <h5 id="curatedsets">{t('workbench:chooseFromCuratedSets')}</h5>
-                <CsetIcon {...iconClasses} />
-              </div>
-              <p>{t('workbench:chooseFromCuratedSetsDesc')}</p>
-            </Fragment>,
-            <CuratedSetPicker design={design} clickHandler={loadMeasurements} t={t} key={2} />,
-            'csets',
-          ],
-          [
-            <Fragment key={1}>
-              <div className={horFlexClasses}>
-                <h5 id="editmeasies">{t('workbench:editMeasiesByHand')}</h5>
-                <EditIcon {...iconClasses} />
-              </div>
-              <p>{t('workbench:editMeasiesByHandDesc')}</p>
-            </Fragment>,
-            <MeasiesEditor {...{ Design, settings, update }} key={2} />,
-            'editor',
-          ],
-
-*/

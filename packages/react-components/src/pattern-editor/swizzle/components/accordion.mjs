@@ -38,9 +38,9 @@ export const BaseAccordion = ({
     <nav>
       {items
         .filter((item) => item[0])
-        .map((item) =>
+        .map((item, i) =>
           active === item[2] ? (
-            <div key={item[2]} {...propsGetter(true)}>
+            <div key={i} {...propsGetter(true)}>
               <Component onClick={setActive} className="w-full hover:cursor-pointer">
                 {item[0]}
               </Component>
@@ -48,7 +48,7 @@ export const BaseAccordion = ({
             </div>
           ) : (
             <Component
-              key={item[2]}
+              key={i}
               {...propsGetter(active === item[2])}
               onClick={() => setActive(item[2])}
             >
