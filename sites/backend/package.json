@@ -44,7 +44,7 @@
     "pino": "9.2.0",
     "qrcode": "1.5.3",
     "swagger-ui-dist": "5.17.14",
-    "swagger-ui-express": "5.0.0"
+    "swagger-ui-express": "5.0.1"
   },
   "devDependencies": {
     "chai": "5.1.1",
