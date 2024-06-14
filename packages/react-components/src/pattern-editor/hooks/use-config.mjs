@@ -42,4 +42,16 @@ const defaultConfig = {
 /*
  * This hook returns the swizzled configuration
  */
-export const useConfig = (config = {}) => ({ ...defaultConfig, ...config })
+export const useConfig = (config = {}) => {
+  const mergedConfig = {
+    ...defaultConfig,
+    ...config,
+  }
+  mergedConfig.views = [
+    ...mergedConfig.mainViews,
+    ...mergedConfig.extraViews,
+    ...mergedConfig.devViews,
+  ]
+
+  return mergedConfig
+}

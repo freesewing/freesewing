@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { Fragment, useEffect } from 'react'
 import { horFlexClasses } from '../../utils.mjs'
 
 const iconClasses = { className: 'w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink-0', stroke: 1.5 }
@@ -40,6 +40,14 @@ export const MeasurementsView = (props) => {
   const { useBackend, useAccount } = props.hooks
   // Passed down ViewWrapper state
   const { settings } = props.state
+
+  /*
+   * If there is no view set, completing measurements will switch to the view picker
+   * Which is a bit confusing. So in this case, set the view to measurements.
+   */
+  useEffect(() => {
+    if (!props.config.views.includes(props.state.view)) update.view('measurements')
+  }, [props.state.view])
 
   const loadMeasurements = (set) => {
     update.settings([
@@ -109,7 +117,7 @@ export const MeasurementsView = (props) => {
   return (
     <div className="max-w-7xl mt-8 mx-auto px-4">
       <h2>{t('pe:measurements')}</h2>
-      {missingMeasurements && (
+      {missingMeasurements && missingMeasurements.length > 0 ? (
         <Popout note dense noP>
           <h5>{t('pe:missingMeasurementsInfo')}:</h5>
           <ol className="list list-inside flex flex-row flex-wrap">
@@ -124,12 +132,20 @@ export const MeasurementsView = (props) => {
             ({missingMeasurements.length} {t('pe:missingMeasurements')})
           </p>
         </Popout>
-      )}
-      {!missingMeasurements && (
-        <Popout note ompact>
-          <span className="text-lg">{t('pe:measurementsAreOk')}</span>
-          <pre>{JSON.stringify(typeof missingMeasurements, null, 2)}</pre>
-          test
+      ) : (
+        <Popout tip dense noP>
+          <h5>{t('pe:measurementsAreOk')}</h5>
+          <div className="flex flex-row gap-2 mt-2">
+            <button className="btn btn-primary btn-lg" onClick={() => update.view('draft')}>
+              {t('pe:view.draft.t')}
+            </button>
+            <button
+              className="btn btn-primary btn-outline btn-lg"
+              onClick={() => update.view('picker')}
+            >
+              {t('pe:chooseAnotherActivity')}
+            </button>
+          </div>
         </Popout>
       )}
       {items.length > 1 ? <Accordion items={items} /> : items}

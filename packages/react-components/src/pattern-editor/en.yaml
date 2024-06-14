@@ -35,6 +35,7 @@ requiredPropsMissing.d: The FreeSewing pattern editor needs to be initialized pr
 
 # View picker
 chooseAnActivity: Choose an activity
+chooseAnotherActivity: Choose a different activity
 view.draft.t: Draft Pattern
 view.draft.d: Choose this if you are not certain what to pick
 view.measurements.t: Pattern Measurements

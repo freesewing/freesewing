@@ -43,13 +43,14 @@ export const ViewPicker = ({ designs = {}, methods, components, update, config, 
   )
 }
 
-const MainCard = ({ view, components, methods }) => {
+const MainCard = ({ view, components, methods, update }) => {
   const Icon = components[`View${methods.capitalize(view)}Icon`]
   const { NoIcon } = components
   return (
     <button
       className="border shadow p-4 rounded-lg w-full bg-primary hover:bg-opacity-90 flex flex-col"
       title={methods.t(`pe:view.${view}.t`)}
+      onClick={() => update.view(view)}
     >
       <h4 className="flex flex-row items-center justify-between p-0 text-primary-content mb-2 text-left">
         {methods.t(`pe:view.${view}.t`)}
@@ -62,13 +63,14 @@ const MainCard = ({ view, components, methods }) => {
   )
 }
 
-const ExtraCard = ({ view, components, methods }) => {
+const ExtraCard = ({ view, components, methods, update }) => {
   const Icon = components[`View${methods.capitalize(view)}Icon`]
   const { NoIcon } = components
   return (
     <button
       className="max-w-72 border shadow p-3 rounded-lg w-full bg-secondary bg-opacity-5 hover:bg-secondary hover:bg-opacity-20 flex flex-col"
       title={methods.t(`pe:view.${view}.t`)}
+      onClick={() => update.view(view)}
     >
       <h5 className="flex flex-row items-center justify-between p-0 mb-1 text-left">
         {methods.t(`pe:view.${view}.t`)}
@@ -79,13 +81,14 @@ const ExtraCard = ({ view, components, methods }) => {
   )
 }
 
-const DevCard = ({ view, components, methods }) => {
+const DevCard = ({ view, components, methods, update }) => {
   const Icon = components[`View${methods.capitalize(view)}Icon`]
   const { NoIcon } = components
   return (
     <button
       className="max-w-72 border shadow p-3 rounded-lg w-full bg-neutral bg-opacity-5 hover:bg-opacity-20 flex flex-col"
       title={methods.t(`pe:view.${view}.t`)}
+      onClick={() => update.view(view)}
     >
       <h5 className="flex flex-row items-center justify-between p-0 mb-1 text-left">
         {methods.t(`pe:view.${view}.t`)}
