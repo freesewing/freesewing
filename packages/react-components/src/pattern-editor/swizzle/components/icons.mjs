@@ -84,6 +84,13 @@ export const ExportIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks lik a flag
+export const FlagIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+  </IconWrapper>
+)
+
 // Looks like a gauge or speedometer
 export const GaugeIcon = (props) => (
   <IconWrapper {...props}>
@@ -145,6 +152,21 @@ export const PlusIcon = (props) => (
 export const PrintIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+  </IconWrapper>
+)
+
+// Looks like a gear
+export const SettingsIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+    <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+  </IconWrapper>
+)
+
+// Looks like a desktop screen
+export const UiIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
   </IconWrapper>
 )
 
@@ -360,12 +382,6 @@ export const CuttingLayoutIcon = (props) => (
   </IconWrapper>
 )
 
-export const DesktopIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
-  </IconWrapper>
-)
-
 export const DetailIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M 12,3.8533453 V 20.547919 M 1.5305595,3.53056 H 22.46944 V 20.469444 H 1.5305595 Z" />
@@ -443,12 +459,6 @@ export const FilterIcon = (props) => (
 export const FingerprintIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
-  </IconWrapper>
-)
-
-export const FlagIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
   </IconWrapper>
 )
 
@@ -665,12 +675,6 @@ export const OpenSourceIcon = (props) => (
   </IconWrapper>
 )
 
-export const OptionsIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
-  </IconWrapper>
-)
-
 export const PageMarginIcon = (props) => (
   <IconWrapper {...props}>
     <path
@@ -799,13 +803,6 @@ export const ScaleIcon = (props) => (
 export const SearchIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-  </IconWrapper>
-)
-
-export const SettingsIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-    <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
   </IconWrapper>
 )
 

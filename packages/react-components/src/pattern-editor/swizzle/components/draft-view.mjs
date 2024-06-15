@@ -25,6 +25,7 @@ export const DraftView = (props) => {
   // Passed down components
   const {
     Accordion,
+    DraftMenu,
     Popout,
     MeasurementsEditor,
     MeasurementsSetIcon,
@@ -48,7 +49,6 @@ export const DraftView = (props) => {
    * First, attempt to draft
    */
   const { pattern, errors, failure } = draft(Design, settings)
-  console.log({ pattern, errors, failure })
 
   let output = null
   let renderProps = false
@@ -65,16 +65,22 @@ export const DraftView = (props) => {
     }
   } else {
     renderProps = pattern.getRenderProps()
-    output = (
-      <ZoomablePattern {...{ renderProps }} Design={Design} patternLocale={settings.locale} />
-    )
+    output = <ZoomablePattern renderProps={renderProps} patternLocale={settings.locale} />
   }
 
   return (
     <PatternLayout
       state={props.state}
       components={props.components}
-      {...{ update, control, Design, pattern: output }}
+      {...{ update, control, Design, output }}
+      menu={
+        <DraftMenu
+          {...{ Design, pattern }}
+          state={props.state}
+          methods={props.methods}
+          components={props.components}
+        />
+      }
     />
   )
 }

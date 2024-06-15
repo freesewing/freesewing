@@ -46,6 +46,7 @@ import {
   DocsIcon,
   EditIcon,
   ExportIcon,
+  FlagIcon,
   GaugeIcon,
   ListIcon,
   MeasurementsSetIcon,
@@ -55,6 +56,8 @@ import {
   PlusIcon,
   PrintIcon,
   SaveIcon,
+  SettingsIcon,
+  UiIcon,
   UploadIcon,
   XrayIcon,
   ViewDraftIcon,
@@ -93,6 +96,13 @@ import { DraftView } from '../swizzle/components/draft-view.mjs'
 import { ErrorView } from '../swizzle/components/error-view.mjs'
 import { MeasurementsView } from '../swizzle/components/measurements-view.mjs'
 import { ViewPicker } from '../swizzle/components/view-picker.mjs'
+// Pattern
+import { Pattern } from '../../pattern/index.mjs'
+// Menus
+import { DraftMenu } from '../swizzle/components/draft-menu.mjs'
+import { DesignOptionsMenu } from '../swizzle/components/design-options-menu.mjs'
+// Flags
+import { Flags, FlagsAccordionTitle, FlagsAccordionEntries } from '../swizzle/components/flags.mjs'
 
 /**
  * This object holds all components that can be swizzled
@@ -106,9 +116,14 @@ const defaultComponents = {
   CuratedMeasurementsSetLineup,
   CuratedSetPicker,
   DesignDropdown,
+  DesignOptionsMenu,
   DesignsView,
+  DraftMenu,
   DraftView,
   ErrorView,
+  Flags,
+  FlagsAccordionTitle,
+  FlagsAccordionEntries,
   FormControl,
   ListInput,
   MarkdownInput,
@@ -117,6 +132,7 @@ const defaultComponents = {
   MeasurementsView,
   MeasurementsEditor,
   NumberInput,
+  Pattern,
   PatternLayout,
   Popout,
   StringInput,
@@ -126,6 +142,7 @@ const defaultComponents = {
   UserSetPicker,
   ViewPicker,
   ZoomablePattern,
+  ZoomContextProvider,
   // icons
   BeakerIcon,
   BookmarkIcon,
@@ -133,6 +150,7 @@ const defaultComponents = {
   DesignIcon,
   DocsIcon,
   EditIcon,
+  FlagIcon,
   GaugeIcon,
   ListIcon,
   MeasurementsSetIcon,
@@ -142,6 +160,8 @@ const defaultComponents = {
   PlusIcon,
   PrintIcon,
   SaveIcon,
+  SettingsIcon,
+  UiIcon,
   UploadIcon,
   XrayIcon,
   ViewDraftIcon,

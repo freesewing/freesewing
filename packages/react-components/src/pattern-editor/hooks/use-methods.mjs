@@ -35,6 +35,8 @@ import { round } from '../swizzle/methods/round.mjs'
 import { structureMeasurementsAsDesign } from '../swizzle/methods/structure-measurements-as-design.mjs'
 import { t } from '../swizzle/methods/t.mjs'
 import { draft } from '../swizzle/methods/draft.mjs'
+import { optionsMenuStructure } from '../swizzle/methods/options-menu-structure.mjs'
+import { optionType } from '../swizzle/methods/option-type.mjs'
 /*
  * Placeholder for methods that need to be swizzled or won't be available
  */
@@ -54,6 +56,8 @@ const defaultMethods = {
   measurementAsUnits,
   nsMerge,
   objUpdate,
+  optionsMenuStructure,
+  optionType,
   parseDistanceInput,
   round,
   setModal: noop,

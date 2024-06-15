@@ -38,13 +38,19 @@ export const PatternLayout = (props) => {
     update,
   } = props
   const { ZoomContextProvider } = props.components
-  console.log({ ZoomContextProvider })
 
   return (
     <ZoomContextProvider>
       <div className="flex flex-col h-full">
         <div className="flex lg:flex-row grow lg:max-h-[90vh] max-h-[calc(100vh-3rem)] h-full py-4 lg:mt-6">
-          <div className="lg:w-2/3 flex flex-col h-full grow px-4"></div>
+          <div className="lg:w-2/3 flex flex-col h-full grow px-4">{props.output}</div>
+          {menu ? (
+            <div
+              className={`hidden lg:block w-1/3 shrink grow-0 lg:p-4 max-w-2xl h-full overflow-scroll`}
+            >
+              {menu}
+            </div>
+          ) : null}
         </div>
       </div>
     </ZoomContextProvider>
@@ -78,5 +84,3 @@ export const PatternLayout = (props) => {
     </ZoomContextProvider>
   )
 }
-
-//{menu && <MenuWrapper order={1}>{menu}</MenuWrapper>}
