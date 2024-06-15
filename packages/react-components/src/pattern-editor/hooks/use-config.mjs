@@ -58,6 +58,10 @@ const defaultConfig = {
   designsViewComponent: 'DesignsView',
   errorViewComponent: 'ErrorView',
   pickerViewComponent: 'ViewPicker',
+  // i18n
+  i18nPatternNamespaces: ['plugin-annotations'],
+  // State backend (one of 'react', 'storage', 'session', or 'url')
+  stateBackend: 'react',
 }
 
 /*

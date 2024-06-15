@@ -72,6 +72,9 @@ import {
 } from '../swizzle/components/icons.mjs'
 // Measurements Editor
 import { MeasurementsEditor } from '../swizzle/components/measurements-editor.mjs'
+// Zoomable pattern
+import { ZoomablePattern, ZoomContextProvider } from '../swizzle/components/zoomable-pattern.mjs'
+import { PatternLayout } from '../swizzle/components/pattern-layout.mjs'
 // inputs
 import {
   FormControl,
@@ -86,6 +89,7 @@ import {
 } from '../swizzle/components/inputs.mjs'
 // Views
 import { DesignsView } from '../swizzle/components/designs-view.mjs'
+import { DraftView } from '../swizzle/components/draft-view.mjs'
 import { ErrorView } from '../swizzle/components/error-view.mjs'
 import { MeasurementsView } from '../swizzle/components/measurements-view.mjs'
 import { ViewPicker } from '../swizzle/components/view-picker.mjs'
@@ -103,6 +107,7 @@ const defaultComponents = {
   CuratedSetPicker,
   DesignDropdown,
   DesignsView,
+  DraftView,
   ErrorView,
   FormControl,
   ListInput,
@@ -112,6 +117,7 @@ const defaultComponents = {
   MeasurementsView,
   MeasurementsEditor,
   NumberInput,
+  PatternLayout,
   Popout,
   StringInput,
   SubAccordion,
@@ -119,6 +125,7 @@ const defaultComponents = {
   ToggleInput,
   UserSetPicker,
   ViewPicker,
+  ZoomablePattern,
   // icons
   BeakerIcon,
   BookmarkIcon,

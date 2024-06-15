@@ -25,29 +25,44 @@
 import { useAccount } from '../swizzle/hooks/use-account.mjs'
 import { useBackend } from '../swizzle/hooks/use-backend.mjs'
 import { useControlState } from '../swizzle/hooks/use-control-state.mjs'
-import { useEditorState } from '../swizzle/hooks/use-editor-state.mjs'
+import {
+  useReactEditorState,
+  useStorageEditorState,
+  useSessionEditorState,
+  useUrlEditorState,
+} from '../swizzle/hooks/use-editor-state.mjs'
+
+/*
+ * We support different state backend, so let's handle those
+ */
+const stateBackends = {
+  react: useReactEditorState,
+  storage: useStorageEditorState,
+  session: useSessionEditorState,
+  url: useUrlEditorState,
+}
 
 /**
  * This object holds all hooks that can be swizzled
  */
-const defaultHooks = {
+const defaultHooks = (config) => ({
   useAccount,
   useBackend,
   useControlState,
-  useEditorState,
-}
+  useEditorState: stateBackends[config.stateBackend] || useReactEditorState,
+})
 
 /*
  * This hook returns hooks that can be swizzled (so meta)
  * So either the passed-in methods, or the default ones
  */
-export const useHooks = (hooks = {}, methods) => {
+export const useHooks = (hooks = {}, methods, config) => {
   /*
    * We need to pass down the resulting hooks, swizzled or not
    * So we put this in this object so we can pass that down
    */
   const all = {}
-  for (let [name, hook] of Object.entries(defaultHooks)) {
+  for (let [name, hook] of Object.entries(defaultHooks(config))) {
     if (hooks[name]) hook = hooks[name]
     all[name] = (...params) => hook(all, methods, ...params)
   }

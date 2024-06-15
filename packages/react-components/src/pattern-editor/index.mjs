@@ -29,7 +29,7 @@ export const PatternEditor = (props) => {
   const config = useConfig(props.config)
   const methods = useMethods(props.methods, config)
   const components = useComponents(props.components, methods)
-  const hooks = useHooks(props.hooks, methods)
+  const hooks = useHooks(props.hooks, methods, config)
 
   /*
    * First of all, make sure we have all the required props

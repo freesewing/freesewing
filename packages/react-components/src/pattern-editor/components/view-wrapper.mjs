@@ -73,7 +73,7 @@ export const ViewWrapper = (props) => {
   // Render the view
   return (
     <>
-      <p>{state.view}</p>
+      <p>{state?.view}</p>
       <View {...viewProps} {...{ state, update, control, setControl }} />
     </>
   )
@@ -119,6 +119,7 @@ const viewfinder = (props) => {
    */
   const views = {
     designs: props.components.DesignsView,
+    draft: props.components.DraftView,
     measurements: props.components.MeasurementsView,
     error: props.components.ErrorView,
     picker: props.components.ViewPicker,
