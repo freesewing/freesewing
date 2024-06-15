@@ -61,7 +61,7 @@ const defaultConfig = {
   // i18n
   i18nPatternNamespaces: ['plugin-annotations'],
   // State backend (one of 'react', 'storage', 'session', or 'url')
-  stateBackend: 'react',
+  stateBackend: 'url',
 }
 
 /*

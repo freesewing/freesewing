@@ -2,6 +2,7 @@ import React, { useMemo, useState, useEffect } from 'react'
 import useLocalStorageState from 'use-local-storage-state'
 import useSessionStorageState from 'use-session-storage-state'
 import { useQueryState, createParser } from 'nuqs'
+import { useSearchParams } from 'next/navigation'
 
 /**
  * Helper method to push a prefix to a set path
@@ -111,6 +112,7 @@ export const useSessionEditorState = (hooks, methods, init = {}) => {
  * @return {array} return - And array with get, set, and update methods
  */
 export const useUrlEditorState = (hooks, methods, init = {}) => {
+  const searchParams = useSearchParams()
   const [state, setState] = useQueryState('s', pojoParser)
   const update = useMemo(
     () => updateFactory({ setState, objUpdate: methods.objUpdate }),
@@ -121,7 +123,19 @@ export const useUrlEditorState = (hooks, methods, init = {}) => {
    * Set the initial state
    */
   useEffect(() => {
-    setState(init)
+    // Handle state on a hard reload or cold start
+    if (typeof URLSearchParams !== 'undefined') {
+      let urlState = false
+      try {
+        const params = new URLSearchParams(document.location.search)
+        const s = params.get('s')
+        if (typeof s === 'string' && s.length > 0) urlState = JSON.parse(s)
+        if (urlState) setState(urlState)
+        else setState(init)
+      } catch (err) {
+        setState(init)
+      }
+    }
   }, [])
 
   return [state, setState, update]
