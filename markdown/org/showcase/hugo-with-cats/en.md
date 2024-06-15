@@ -1,5 +1,5 @@
 ---
-maker: "comixminx"
+author: 22141
 caption: "A red and gray Hugo with cartoon cat faces all over the body"
 date: "2023-01-16"
 intro: "Another amazing FreeSewing make from comixminx, showcasing a great way of solving for a fitting challenge. This kid-sized Hugo hoodie (minus hoodl) turned out a little extra tricky because the proportions didn’t come out quite as expected. So, she made a few adjustments partway through sewing it up (like adding in a sleeve gusset because the sleeves came out very narrow and hard to get into)."
