@@ -1,5 +1,5 @@
 ---
-maker: "comixminx"
+author: 22141
 caption: "A galactically good pair of Bruces"
 date: "2023-01-16"
 intro: "There's well-established precedent that once you make a pair of Bruces you like, you'll end up making tons more of them. FreeSewing  extraordinaire follows in this grand tradition, crafting several Bruces with a flat front for a family member. We love the mix-and-match patterns and contrasting elastic on these awesome undies."

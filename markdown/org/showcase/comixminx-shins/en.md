@@ -1,5 +1,5 @@
 ---
-maker: "unknown"
+author: 22141
 caption: "Navy Shin trunks for a matched swimming costume"
 date: "2023-01-16"
 intro: "FreeSewing user comixminx sewed up a storm over the winter holiday season, including these fantastic Shin swimming trunks for several family members!"
