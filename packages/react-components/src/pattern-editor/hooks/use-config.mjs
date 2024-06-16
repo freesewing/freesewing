@@ -58,6 +58,23 @@ const defaultConfig = {
   designsViewComponent: 'DesignsView',
   errorViewComponent: 'ErrorView',
   pickerViewComponent: 'ViewPicker',
+  // Facilitate lookup of menu value components
+  menuValueComponents: {
+    bool: 'BoolValue',
+    constant: 'ConstantOptionValue',
+    count: 'CountOptionValue',
+    deg: 'DegOptionValue',
+    list: 'ListOptionValue',
+    mm: 'MmOptionValue',
+    pct: 'PctOptionValue',
+  },
+  menuGroupEmojis: {
+    advanced: '🤓',
+    fit: '👕',
+    style: '💃🏽',
+    dflt: '🕹️',
+    groupDflt: '📁',
+  },
   // i18n
   i18nPatternNamespaces: ['plugin-annotations'],
   // State backend (one of 'react', 'storage', 'session', or 'url')

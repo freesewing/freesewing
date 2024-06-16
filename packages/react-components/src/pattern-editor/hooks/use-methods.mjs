@@ -35,8 +35,14 @@ import { round } from '../swizzle/methods/round.mjs'
 import { structureMeasurementsAsDesign } from '../swizzle/methods/structure-measurements-as-design.mjs'
 import { t } from '../swizzle/methods/t.mjs'
 import { draft } from '../swizzle/methods/draft.mjs'
-import { optionsMenuStructure } from '../swizzle/methods/options-menu-structure.mjs'
-import { optionType } from '../swizzle/methods/option-type.mjs'
+import { menuOptionsStructure } from '../swizzle/methods/menu-options-structure.mjs'
+import { menuOptionType } from '../swizzle/methods/menu-option-type.mjs'
+import {
+  menuRoundPct,
+  menuValidateNumericValue,
+  menuValueWasChanged,
+} from '../swizzle/methods/menus.mjs'
+import { formatPercentage } from '../swizzle/methods/format-percentage.mjs'
 /*
  * Placeholder for methods that need to be swizzled or won't be available
  */
@@ -50,14 +56,18 @@ const defaultMethods = {
   cloudImageUrl,
   designMeasurements,
   draft,
+  formatPercentage,
   hasRequiredMeasurements,
   isDegreeMeasurement,
   measurementAsMm,
   measurementAsUnits,
+  menuOptionsStructure,
+  menuOptionType,
+  menuRoundPct,
+  menuValidateNumericValue,
+  menuValueWasChanged,
   nsMerge,
   objUpdate,
-  optionsMenuStructure,
-  optionType,
   parseDistanceInput,
   round,
   setModal: noop,

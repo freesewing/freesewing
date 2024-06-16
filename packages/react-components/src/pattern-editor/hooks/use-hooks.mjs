@@ -31,6 +31,7 @@ import {
   useSessionEditorState,
   useUrlEditorState,
 } from '../swizzle/hooks/use-editor-state.mjs'
+import { useDebouncedHandlers } from '../swizzle/hooks/use-debounced-handlers.mjs'
 
 /*
  * We support different state backend, so let's handle those
@@ -49,6 +50,7 @@ const defaultHooks = (config) => ({
   useAccount,
   useBackend,
   useControlState,
+  useDebouncedHandlers,
   useEditorState: stateBackends[config.stateBackend] || useReactEditorState,
 })
 

@@ -18,8 +18,10 @@ export const DraftMenu = (props) => {
     state: props.state,
     components: props.components,
     methods: props.methods,
+    hooks: props.hooks,
     control: props.control,
     pattern: props.pattern,
+    update,
   }
 
   const sections = [

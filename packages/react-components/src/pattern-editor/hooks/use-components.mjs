@@ -40,6 +40,8 @@ import { MeasurementsSetCard } from '../swizzle/components/measurements-set-card
 import {
   BeakerIcon,
   BookmarkIcon,
+  BoolNoIcon,
+  BoolYesIcon,
   CloseIcon,
   CuratedMeasurementsSetIcon,
   DesignIcon,
@@ -48,6 +50,7 @@ import {
   ExportIcon,
   FlagIcon,
   GaugeIcon,
+  GroupIcon,
   ListIcon,
   MeasurementsSetIcon,
   NoIcon,
@@ -55,6 +58,7 @@ import {
   OptionsIcon,
   PlusIcon,
   PrintIcon,
+  ResetIcon,
   SaveIcon,
   SettingsIcon,
   UiIcon,
@@ -99,8 +103,33 @@ import { ViewPicker } from '../swizzle/components/view-picker.mjs'
 // Pattern
 import { Pattern } from '../../pattern/index.mjs'
 // Menus
-import { DraftMenu } from '../swizzle/components/draft-menu.mjs'
-import { DesignOptionsMenu } from '../swizzle/components/design-options-menu.mjs'
+import { DraftMenu } from '../swizzle/components/menus/draft-menu.mjs'
+import { DesignOptionsMenu } from '../swizzle/components/menus/design-options-menu.mjs'
+import { MenuItem, MenuItemGroup, MenuItemTitle } from '../swizzle/components/menus/containers.mjs'
+import {
+  MenuBoolInput,
+  MenuConstantInput,
+  MenuDegInput,
+  MenuListInput,
+  MenuListToggle,
+  MenuMmInput,
+  MenuNumberInput,
+  MenuPctInput,
+  MenuSliderInput,
+} from '../swizzle/components/menus/shared-inputs.mjs'
+import {
+  MenuBoolValue,
+  MenuConstantOptionValue,
+  MenuCountOptionValue,
+  MenuDegOptionValue,
+  MenuHighlightValue,
+  MenuListOptionValue,
+  MenuListValue,
+  MenuMmOptionValue,
+  MenuMmValue,
+  MenuPctOptionValue,
+  MenuShowValue,
+} from '../swizzle/components/menus/shared-values.mjs'
 // Flags
 import { Flags, FlagsAccordionTitle, FlagsAccordionEntries } from '../swizzle/components/flags.mjs'
 
@@ -146,12 +175,15 @@ const defaultComponents = {
   // icons
   BeakerIcon,
   BookmarkIcon,
+  BoolNoIcon,
+  BoolYesIcon,
   CloseIcon,
   DesignIcon,
   DocsIcon,
   EditIcon,
   FlagIcon,
   GaugeIcon,
+  GroupIcon,
   ListIcon,
   MeasurementsSetIcon,
   NoIcon,
@@ -159,6 +191,7 @@ const defaultComponents = {
   OptionsIcon,
   PlusIcon,
   PrintIcon,
+  ResetIcon,
   SaveIcon,
   SettingsIcon,
   UiIcon,
@@ -176,6 +209,30 @@ const defaultComponents = {
   ViewInspectIcon,
   ViewDocsIcon,
   ViewDesignsIcon,
+  // menus
+  MenuItem,
+  MenuItemGroup,
+  MenuItemTitle,
+  MenuBoolInput,
+  MenuConstantInput,
+  MenuDegInput,
+  MenuListInput,
+  MenuListToggle,
+  MenuMmInput,
+  MenuNumberInput,
+  MenuPctInput,
+  MenuSliderInput,
+  MenuBoolValue,
+  MenuConstantOptionValue,
+  MenuCountOptionValue,
+  MenuDegOptionValue,
+  MenuHighlightValue,
+  MenuListOptionValue,
+  MenuListValue,
+  MenuMmOptionValue,
+  MenuMmValue,
+  MenuPctOptionValue,
+  MenuShowValue,
 }
 
 /*

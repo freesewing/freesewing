@@ -75,10 +75,11 @@ export const DraftView = (props) => {
       {...{ update, control, Design, output }}
       menu={
         <DraftMenu
-          {...{ Design, pattern }}
+          {...{ Design, pattern, update }}
           state={props.state}
           methods={props.methods}
           components={props.components}
+          hooks={props.hooks}
         />
       }
     />

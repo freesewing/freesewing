@@ -1,4 +1,4 @@
-export const optionType = (option) => {
+export const menuOptionType = (methods, option) => {
   if (typeof option?.pct !== 'undefined') return 'pct'
   if (typeof option?.bool !== 'undefined') return 'bool'
   if (typeof option?.count !== 'undefined') return 'count'

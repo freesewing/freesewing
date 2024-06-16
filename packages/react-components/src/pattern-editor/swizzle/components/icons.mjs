@@ -35,6 +35,16 @@ export const BeakerIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks like a red X
+export const BoolNoIcon = ({ size = 6 }) => (
+  <NoIcon className={`w-${size} h-${size} text-error`} stroke={4} />
+)
+
+// Looks like a green checkbox
+export const BoolYesIcon = ({ size = 6 }) => (
+  <OkIcon className={`w-${size} h-${size} text-success`} stroke={4} />
+)
+
 // Looks like a bookmark
 export const BookmarkIcon = (props) => (
   <IconWrapper {...props}>
@@ -99,6 +109,13 @@ export const GaugeIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks like abox
+export const GroupIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+  </IconWrapper>
+)
+
 // Looks like a tape measure
 export const MeasurementsIcon = (props) => (
   <IconWrapper {...props}>
@@ -152,6 +169,13 @@ export const PlusIcon = (props) => (
 export const PrintIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+  </IconWrapper>
+)
+
+// Looks like a rewind arrow
+export const ResetIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="m 2.447878,2.716835 v 4.38448 h 4.38448 M 3.1307,6.882055 c 1.771085,-3.0536 5.075566,-5.10727 8.859706,-5.10727 5.65253,0 10.234811,4.58228 10.234811,10.23481 0,5.65253 -4.582281,10.23481 -10.234811,10.23481 -5.440329,0 -9.889258,-4.24469 -10.215624,-9.60291" />
   </IconWrapper>
 )
 
@@ -217,13 +241,6 @@ export const BioIcon = (props) => (
   </IconWrapper>
 )
 
-
-export const BoolNoIcon = ({ size = 6 }) => (
-  <NoIcon className={`w-${size} h-${size} text-error`} stroke={4} />
-)
-export const BoolYesIcon = ({ size = 6 }) => (
-  <OkIcon className={`w-${size} h-${size} text-success`} stroke={4} />
-)
 
 export const BoxIcon = (props) => (
   <IconWrapper {...props}>
@@ -752,12 +769,6 @@ export const RedditIcon = (props) => (
 export const ReloadIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
-  </IconWrapper>
-)
-
-export const ResetIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="m 2.447878,2.716835 v 4.38448 h 4.38448 M 3.1307,6.882055 c 1.771085,-3.0536 5.075566,-5.10727 8.859706,-5.10727 5.65253,0 10.234811,4.58228 10.234811,10.23481 0,5.65253 -4.582281,10.23481 -10.234811,10.23481 -5.440329,0 -9.889258,-4.24469 -10.215624,-9.60291" />
   </IconWrapper>
 )
 
