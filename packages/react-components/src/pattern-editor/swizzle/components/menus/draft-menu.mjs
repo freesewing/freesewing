@@ -1,6 +1,9 @@
-export const DraftMenu = (props) => {
-  const { control, Design, update, methods, components } = props
-  const { t } = methods
+export const DraftMenu = ({ Design, pattern, state, swizzled, update }) => {
+  // Editor state
+  const { control } = state
+  // Swizzled methods
+  const { t } = swizzled.methods
+  // Swizzled components
   const {
     OptionsIcon,
     DesignOptionsMenu,
@@ -11,18 +14,9 @@ export const DraftMenu = (props) => {
     FlagsAccordionTitle,
     FlagsAccordionEntries,
     Accordion,
-  } = components
+  } = swizzled.components
 
-  const menuProps = {
-    Design: props.Design,
-    state: props.state,
-    components: props.components,
-    methods: props.methods,
-    hooks: props.hooks,
-    control: props.control,
-    pattern: props.pattern,
-    update,
-  }
+  const menuProps = { Design, state, swizzled, pattern, update }
 
   const sections = [
     {
@@ -54,12 +48,12 @@ export const DraftMenu = (props) => {
     })
 
   const items = []
-  const flags = props.pattern.setStores?.[0]?.plugins?.['plugin-annotations']?.flags
+  const flags = pattern.setStores?.[0]?.plugins?.['plugin-annotations']?.flags
 
   if (flags)
     items.push([
-      <FlagsAccordionTitle key={1} {...{ flags, methods, components }} />,
-      <FlagsAccordionEntries {...{ update, control, flags }} key={2} />,
+      <FlagsAccordionTitle key={1} {...{ flags, swizzled }} />,
+      <FlagsAccordionEntries {...{ update, state, flags }} key={2} />,
       'flags',
     ])
   items.push(

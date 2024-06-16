@@ -20,22 +20,30 @@ const iconButtonClass = 'btn btn-xs btn-ghost px-0 text-accent'
  */
 export const MenuItem = ({
   name,
-  config,
+  swizzled,
   current,
   updateHandler,
-  t,
   passProps = {},
   changed,
   Input = () => {},
   allowOverride = false,
   control = Infinity,
   docs,
+  config,
   Design,
-  components,
 }) => {
-  // state for knowing whether the override input should be shown
+  // Swizzled components
+  const { FormControl, ResetIcon, EditIcon } = swizzled.components
+  // Swizzled methods
+  const { t } = swizzled.methods
+
+  // Local state - whether the override input should be shown
   const [override, setOverride] = useState(false)
-  const { FormControl, ResetIcon, EditIcon } = components
+
+  if (!config) {
+    console.log({ name, current, config })
+    return null
+  }
 
   // generate properties to pass to the Input
   const drillProps = useMemo(
@@ -93,7 +101,7 @@ export const MenuItem = ({
 
   return (
     <FormControl
-      label={<span className="text-base font-normal">{t([`${name}.d`, name])}</span>}
+      label={<span className="text-base font-normal">{t(`${name}.d`)}</span>}
       id={config.name}
       labelBR={<div className="flex flex-row items-center gap-2">{buttons}</div>}
       labelBL={
@@ -129,49 +137,29 @@ export const MenuItem = ({
  * @param  {Boolean}  topLevel             is this group the top level group? false for nested
  * @param  {Function}  t                   translation function
  */
-export const MenuItemGroup = (props) => {
-  // {
-  // collapsible = true,
-  // control,
-  // //name,
-  // currentValues = {},
-  // structure,
-  // Icon,
-  // Item = MenuItem,
-  // values = {},
-  // inputs = {},
-  // passProps = {},
-  // emojis = {},
-  // updateFunc,
-  // topLevel = false,
-  // t,
-  // language,
-  // isDesignOptionsGroup = false,
-  // docs = false,
-  // design,
-  // //
-  // components,
-  // methods,
-  // config,
-  // state
-  //}) => {
-
-  const { t, menuValueWasChanged, menuOptionType } = props.methods
-  const { GroupIcon, OptionsIcon, MenuItem, SubAccordion } = props.components
-  const {
-    structure,
-    currentValues,
-    topLevel = false,
-    control,
-    Icon,
-    Item = MenuItem,
-    inputs,
-    values,
-    passProps = {},
-    updateHandler,
-    isDesignOptionsGroup = false,
-    Design,
-  } = props
+export const MenuItemGroup = ({
+  collapsible = true,
+  control,
+  name,
+  currentValues = {},
+  structure,
+  Icon,
+  Item = false,
+  inputs = {},
+  values = {},
+  passProps = {},
+  updateHandler,
+  topLevel = false,
+  isDesignOptionsGroup = false,
+  Design,
+  swizzled,
+  state,
+}) => {
+  // Swizzled methods
+  const { t, menuValueWasChanged, menuOptionType } = swizzled.methods
+  // Swizzled components
+  const { GroupIcon, OptionsIcon, MenuItem, SubAccordion } = swizzled.components
+  if (!Item) Item = MenuItem
 
   // map the entries in the structure
   const content = Object.entries(structure).map(([itemName, item]) => {
@@ -212,7 +200,7 @@ export const MenuItemGroup = (props) => {
             config={item}
             t={t}
             changed={menuValueWasChanged(currentValues[itemName], item)}
-            Design={props.Design}
+            Design={Design}
           />
         </div>
       </div>,
@@ -223,7 +211,7 @@ export const MenuItemGroup = (props) => {
             collapsible: true,
             // it's the top level if the previous level was top but not wrapped
             topLevel: topLevel && !collapsible,
-            control,
+            state,
             name: itemName,
             currentValues,
             structure: item,
@@ -233,12 +221,9 @@ export const MenuItemGroup = (props) => {
             inputs,
             passProps,
             updateHandler,
-            t,
-            locale: props.locale,
             isDesignOptionsGroup,
             Design,
-            methods: props.methods,
-            components: props.components,
+            swizzled,
           }}
         />
       ) : (
@@ -248,17 +233,14 @@ export const MenuItemGroup = (props) => {
             name: itemName,
             current: currentValues[itemName],
             config: item,
-            control,
+            state,
             changed: menuValueWasChanged(currentValues[itemName], item),
             Value: values[itemName],
             Input: inputs[itemName],
-            t,
             updateHandler,
             passProps,
-            language: props.locale || 'en',
             Design,
-            components: props.components,
-            methods: props.methods,
+            swizzled,
           }}
         />
       ),

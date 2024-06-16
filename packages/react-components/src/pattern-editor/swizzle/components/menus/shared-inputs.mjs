@@ -3,7 +3,7 @@ import { useMemo, useCallback } from 'react'
 /** A boolean version of {@see MenuListInput} that sets up the necessary configuration */
 export const MenuBoolInput = (props) => {
   const { name, config } = props
-  const { MenuListInput } = props.components
+  const { MenuListInput } = props.swizzled.components
   const boolConfig = useBoolConfig(name, config)
 
   return <MenuListInput {...props} config={boolConfig} />
@@ -15,7 +15,6 @@ export const MenuConstantInput = ({
   name,
   current,
   updateHandler,
-  //t,
   changed,
   config,
 }) => (
@@ -35,8 +34,8 @@ export const MenuConstantInput = ({
 /** A {@see MenuSliderInput} to handle degree values */
 export const MenuDegInput = (props) => {
   const { updateHandler } = props
-  const { MenuSliderInput } = props.components
-  const { round } = props.methods
+  const { MenuSliderInput } = props.swizzled.components
+  const { round } = props.swizzled.methods
   const degUpdateHandler = useCallback(
     (path, newVal) => {
       updateHandler(path, newVal === undefined ? undefined : Number(newVal))
@@ -139,7 +138,7 @@ export const MenuListToggle = ({ config, changed, updateHandler, name }) => {
 
 export const MenuMmInput = (props) => {
   const { units, updateHandler, current, config } = props
-  const { MenuSliderInput } = props.components
+  const { MenuSliderInput } = props.swizzled.components
   const mmUpdateHandler = useCallback(
     (path, newCurrent) => {
       const calcCurrent =
@@ -189,9 +188,9 @@ export const MenuNumberInput = ({
   fractions = true,
   min = -Infinity,
   max = Infinity,
-  hooks,
+  swizzled,
 }) => {
-  const { useDebouncedHandlers } = hooks
+  const { useDebouncedHandlers } = swizzled.hooks
   const valid = useRef(validateVal(value, fractions, min, max))
 
   // this is the change handler that will be debounced by the debounce handler
@@ -295,9 +294,9 @@ export const MenuSliderInput = ({
   setReset,
   children,
   changed,
-  hooks,
+  swizzled,
 }) => {
-  const { useDebouncedHandlers } = hooks
+  const { useDebouncedHandlers } = swizzled.hooks
   const { max, min } = config
   const handleChange = useSharedHandlers({
     current,

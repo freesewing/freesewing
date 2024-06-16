@@ -5,4 +5,4 @@
  * @param {string} key - The input
  * @return {string} key - The input is returned
  */
-const t = (methods, key) => key
+const t = (methods, key) => (Array.isArray(key) ? key[0] : key)

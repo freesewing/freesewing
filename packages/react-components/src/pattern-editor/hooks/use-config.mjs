@@ -21,7 +21,7 @@
 /*
  * Default config for the FreeSewing pattern editor
  */
-const defaultConfig = {
+export const defaultConfig = {
   // Enable use of a (FreeSewing) backend to load data from
   enableBackend: true,
   // Link to create a new measurements set, set to false to disable
@@ -44,20 +44,23 @@ const defaultConfig = {
     designs: 'accent',
   },
   // View components
-  draftViewComponent: 'ViewPicker',
-  saveViewComponent: 'ViewPicker',
-  exportViewComponent: 'ViewPicker',
-  measurementsViewComponent: 'MeasurementsView',
-  printLayoutViewComponent: 'ViewPicker',
-  editSettingsViewComponent: 'ViewPicker',
-  docsViewComponent: 'ViewPicker',
-  inspectViewComponent: 'ViewPicker',
-  logsViewComponent: 'ViewPicker',
-  testViewComponent: 'ViewPicker',
-  timingViewComponent: 'ViewPicker',
-  designsViewComponent: 'DesignsView',
-  errorViewComponent: 'ErrorView',
-  pickerViewComponent: 'ViewPicker',
+  // Facilitate lookup of view components
+  viewComponents: {
+    draft: 'DraftView',
+    designs: 'DesignsView',
+    save: 'ViewPicker',
+    export: 'ViewPicker',
+    measurements: 'MeasurementsView',
+    printLayout: 'ViewPicker',
+    editSettings: 'ViewPicker',
+    docs: 'ViewPicker',
+    inspect: 'ViewPicker',
+    logs: 'ViewPicker',
+    test: 'ViewPicker',
+    timing: 'ViewPicker',
+    picker: 'ViewPicker',
+    error: 'ViewPicker',
+  },
   // Facilitate lookup of menu value components
   menuValueComponents: {
     bool: 'BoolValue',

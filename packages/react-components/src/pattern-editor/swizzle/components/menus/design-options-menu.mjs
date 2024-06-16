@@ -1,17 +1,4 @@
 import { useCallback, useMemo } from 'react'
-// REMOVEME
-// Components
-//import { OptionsIcon } from 'shared/components/icons.mjs'
-//import { optionsMenuStructure, optionType } from 'shared/utils.mjs'
-//import { values } from './values.mjs'
-//import { inputs } from './inputs.mjs'
-//import { WorkbenchMenu } from '../shared/index.mjs'
-//import { MenuItem } from '../shared/menu-item.mjs'
-//import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
-
-//import { formatMm, formatPercentage } from 'shared/utils.mjs'
-//import { ListValue, HighlightedValue, PlainValue, BoolValue } from '../shared/values'
-//import { mergeOptions } from '@freesewing/core'
 
 /**
  * The design options menu
@@ -22,17 +9,10 @@ import { useCallback, useMemo } from 'react'
  * @param  {String}  options.language      the menu language
  * @param  {Object}  options.account       the user account data
  */
-export const DesignOptionsMenu = (props) => {
-  //  design,
-  //  patternConfig,
-  //  settings,
-  //  update,
-  //  language,
-  //  account,
-  //  isFirst = true,
-  //}) => {
-  const { config, isFirst = true, update } = props
-  const { menuOptionType } = props.methods
+export const DesignOptionsMenu = ({ isFirst = true, update, swizzled, state, Design }) => {
+  // Swizzled methods
+  const { menuOptionType, menuOptionsStructure } = swizzled.methods
+  // Swizzled components
   const {
     BoolNoIcon,
     BoolYesIcon,
@@ -55,23 +35,18 @@ export const DesignOptionsMenu = (props) => {
     MenuPctOptionValue,
     MenuSliderInput,
     OptionsIcon,
-  } = props.components
+  } = swizzled.components
 
   const structure = useMemo(
-    () =>
-      props.methods.menuOptionsStructure(props.Design.patternConfig.options, props.state.settings),
-    [props.Design.patternConfig, props.state.settings]
+    () => menuOptionsStructure(Design.patternConfig.options, state.settings),
+    [Design.patternConfig, state.settings]
   )
   const updateHandler = useCallback(
     (name, value) => update.settings(['options', ...name], value),
     [update.settings]
   )
 
-  const drillProps = {
-    components: props.components,
-    hooks: props.hooks,
-    methods: props.methods,
-  }
+  const drillProps = { swizzled, control: state.control }
   const inputs = {
     bool: (props) => <MenuBoolInput {...props} {...drillProps} />,
     constant: (props) => <MenuConstantInput {...props} {...drillProps} />,
@@ -97,23 +72,24 @@ export const DesignOptionsMenu = (props) => {
     <MenuItemGroup
       {...{
         structure,
-        control: props.control,
-        currentValues: props.state.settings.options || {},
+        control: state.control,
+        currentValues: state.settings.options || {},
         Icon: OptionsIcon,
         Item: (props) => (
-          <DesignOption {...props} {...{ menuOptionType, inputs, values, MenuItem }} />
+          <DesignOption
+            {...props}
+            {...{ menuOptionType, inputs, values, MenuItem, swizzled, update, Design }}
+          />
         ),
         isFirst,
         name: 'design-options:designOptions',
-        language: props.locale,
-        passProps: { settings: props.state.settings, patternConfig: props.Design.patternConfig },
+        language: state.locale,
+        passProps: { settings: state.settings, patternConfig: Design.patternConfig },
         updateHandler,
         isDesignOptionsGroup: true,
-        components: props.components,
-        methods: props.methods,
-        state: props.state,
-        config: props.config,
-        Design: props.Design,
+        swizzled,
+        state,
+        Design,
         inputs,
         values,
       }}
@@ -131,13 +107,13 @@ const DesignOption = ({
   config,
   settings,
   control,
-  menuOptionType,
   inputs,
   values,
   MenuItem,
+  swizzled,
   ...rest
 }) => {
-  const type = menuOptionType(config)
+  const type = swizzled.methods.menuOptionType(config)
   const Input = inputs[type]
   const Value = values[type]
   const allowOverride = ['pct', 'count', 'deg'].includes(type)
@@ -153,6 +129,7 @@ const DesignOption = ({
         config,
         control,
         ...rest,
+        swizzled,
         Input,
         Value,
         allowOverride,

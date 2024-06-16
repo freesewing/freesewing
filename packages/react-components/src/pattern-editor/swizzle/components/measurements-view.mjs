@@ -8,23 +8,24 @@ const iconClasses = { className: 'w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink
  *
  * It will be automatically loaded if we do not have all required measurements for a design.
  *
- * @param {object} props - The component's props
- * @param {function} props.Design - The design constructor
- * @param {object} props.state - The ViewWrapper state object
- * @param {object} props.state.settings - The current settings
- * @param {object} props.update - Helper object for updating the ViewWrapper state
- * @param {array} props.missingMeasurements - List of missing measurements for the current design
- * @param {object} props.components - The possibly swizzled components
- * @param {object} props.methods - The possibly swizzled methods
- * @param {function} props.methods.t - The translation method
- * @param {object} props.config - The possibly swizzled pattern editor configuration
- * @param {object} props.locale - The language code (locale) currently used
- * @return {function} MeasurementsView - React component
+ * @param {Object} props - All the props
+ * @param {Object} props.swizzled - An object with swizzled components, hooks, methods, config, and defaults
+ * @param {Function} props.Design - The design constructor
+ * @param {string} props.design - The design name
+ * @param {Object} props.state - The editor state object
+ * @param {Object} props.update - Helper object for updating the ViewWrapper state
+ * @param {Array} props.missingMeasurements - List of missing measurements for the current design
+ * @return {Function} MeasurementsView - React component
  */
-export const MeasurementsView = (props) => {
-  // Passed down regular props
-  const { Design, missingMeasurements, update } = props
-  // Passed down components
+export const MeasurementsView = ({
+  Design,
+  design,
+  missingMeasurements,
+  update,
+  swizzled,
+  state,
+}) => {
+  // Swizzled components
   const {
     Accordion,
     Popout,
@@ -36,21 +37,23 @@ export const MeasurementsView = (props) => {
     CuratedMeasurementsSetIcon,
     CuratedSetPicker,
     EditIcon,
-  } = props.components
-  // Passed down methods
-  const { t, designMeasurements, capitalize } = props.methods
-  // Passed down hooks
-  const { useBackend, useAccount } = props.hooks
-  // Passed down ViewWrapper state
-  const { settings } = props.state
+  } = swizzled.components
+  // Swizzled methods
+  const { t, designMeasurements, capitalize } = swizzled.methods
+  // Swizzled hooks
+  const { useBackend, useAccount } = swizzled.hooks
+  // Swizzled config
+  const { config } = swizzled
+  // Editor state
+  const { locale } = state
 
   /*
    * If there is no view set, completing measurements will switch to the view picker
    * Which is a bit confusing. So in this case, set the view to measurements.
    */
   useEffect(() => {
-    if (!props.config.views.includes(props.state.view)) update.view('measurements')
-  }, [props.state.view])
+    if (!config.views.includes(state.view)) update.view('measurements')
+  }, [state.view])
 
   const loadMeasurements = (set) => {
     update.settings([
@@ -58,9 +61,9 @@ export const MeasurementsView = (props) => {
       [['units'], set.imperial ? 'imperial' : 'metric'],
     ])
     // Save the measurement set name to pattern settings
-    if (set[`name${capitalize(props.locale)}`])
+    if (set[`name${capitalize(locale)}`])
       // Curated measurement set
-      update.settings([[['metadata'], { setName: set[`name${capitalize(props.locale)}`] }]])
+      update.settings([[['metadata'], { setName: set[`name${capitalize(locale)}`] }]])
     else if (set?.name)
       // User measurement set
       update.settings([[['metadata'], { setName: set.name }]])
@@ -76,7 +79,7 @@ export const MeasurementsView = (props) => {
 
   // Construct accordion items based on the editor configuration
   const items = []
-  if (props.config.enableBackend)
+  if (config.enableBackend)
     items.push(
       [
         <Fragment key={1}>
@@ -88,14 +91,10 @@ export const MeasurementsView = (props) => {
         </Fragment>,
         <UserSetPicker
           key={2}
-          Design={Design}
+          size="md"
           clickHandler={loadMeasurements}
           missingClickHandler={loadMeasurements}
-          t={t}
-          size="md"
-          hooks={props.hooks}
-          components={props.components}
-          config={props.config}
+          {...{ swizzled, Design }}
         />,
         'ownSets',
       ],
@@ -108,15 +107,11 @@ export const MeasurementsView = (props) => {
           <p className="text-left">{t('pe:chooseFromBookmarkedSetsDesc')}</p>
         </Fragment>,
         <BookmarkedSetPicker
-          Design={Design}
+          key={2}
+          size="md"
           clickHandler={loadMeasurements}
           missingClickHandler={loadMeasurements}
-          t={t}
-          size="md"
-          key={2}
-          hooks={props.hooks}
-          components={props.components}
-          config={props.config}
+          {...{ swizzled, Design }}
         />,
         'bmSets',
       ],
@@ -129,12 +124,9 @@ export const MeasurementsView = (props) => {
           <p className="text-left">{t('pe:chooseFromCuratedSetsDesc')}</p>
         </Fragment>,
         <CuratedSetPicker
-          Design={Design}
-          clickHandler={loadMeasurements}
-          hooks={props.hooks}
-          components={props.components}
-          config={props.config}
           key={2}
+          clickHandler={loadMeasurements}
+          {...{ swizzled, Design, locale }}
         />,
         'csets',
       ]
@@ -148,13 +140,7 @@ export const MeasurementsView = (props) => {
       </div>
       <p className="text-left">{t('pe:editMeasurementsDesc')}</p>
     </Fragment>,
-    <MeasurementsEditor
-      key={2}
-      Design={Design}
-      update={props.update}
-      state={props.state}
-      methods={props.methods}
-    />,
+    <MeasurementsEditor key={2} {...{ Design, swizzled, update, state }} />,
     'edit',
   ])
 

@@ -3,6 +3,7 @@ import { useComponents } from './hooks/use-components.mjs'
 import { useHooks } from './hooks/use-hooks.mjs'
 import { useMethods } from './hooks/use-methods.mjs'
 import { useConfig } from './hooks/use-config.mjs'
+import { useDefaults } from './hooks/use-defaults.mjs'
 
 /*
  * Namespaces used by the pattern editor
@@ -20,12 +21,14 @@ export const ns = ['pe', 'measurements']
  * @param {object} props.methods = An object holding methods to swizzle
  * @param {object} props.config = An object holding the editor config to swizzle
  * @param {object} props.locale = The locale (language) code
+ * @param {object} props.preload = Any state to preload
  *
  */
 export const PatternEditor = (props) => {
   /*
    * Allow swizzling of components and methods
    */
+  const defaults = useDefaults(props.defaults)
   const config = useConfig(props.config)
   const methods = useMethods(props.methods, config)
   const components = useComponents(props.components, methods)
@@ -38,9 +41,19 @@ export const PatternEditor = (props) => {
   if (lackingProps !== false) return <LackingPropsError error={lackingProps} />
 
   /*
-   * Now return the view wrapper
+   * Extract props we care about
    */
-  return <ViewWrapper {...props} {...{ components, methods, hooks, config }} />
+  const { designs = {}, locale = 'en', preload } = props
+
+  /*
+   * Now return the view wrapper and pass it the relevant props and the swizzled props
+   */
+  return (
+    <ViewWrapper
+      {...{ designs, locale, preload }}
+      swizzled={{ components, methods, hooks, config, defaults }}
+    />
+  )
 }
 
 /**

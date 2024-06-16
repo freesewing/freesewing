@@ -1,28 +1,18 @@
-//import { PanZoomPattern as ShowPattern } from 'shared/components/workbench/pan-zoom-pattern.mjs'
-//import { DraftMenu, ns as menuNs } from './menu.mjs'
-//import { PatternWithMenu } from '../pattern-with-menu.mjs'
-//import { DraftHeader, ns as headerNs } from './header.mjs'
-
 /**
  * The draft view allows users to tweak their pattern
  *
- * @param {object} props - The component's props
+ * @param (object) props - All the props
  * @param {function} props.Design - The design constructor
+ * @param {array} props.missingMeasurements - List of missing measurements for the current design
+ * @param {object} props.locale - The language code (locale) currently used
  * @param {object} props.state - The ViewWrapper state object
+ * @param {object} props.swizzled - An object with swizzled components, hooks, methods, config, and defaults
  * @param {object} props.state.settings - The current settings
  * @param {object} props.update - Helper object for updating the ViewWrapper state
- * @param {array} props.missingMeasurements - List of missing measurements for the current design
- * @param {object} props.components - The possibly swizzled components
- * @param {object} props.methods - The possibly swizzled methods
- * @param {function} props.methods.t - The translation method
- * @param {object} props.config - The possibly swizzled pattern editor configuration
- * @param {object} props.locale - The language code (locale) currently used
- * @return {function} MeasurementsView - React component
+ * @return {function} DraftView - React component
  */
-export const DraftView = (props) => {
-  // Passed down regular props
-  const { Design, missingMeasurements, update, control } = props
-  // Passed down components
+export const DraftView = ({ Design, locale, missingMeasurements, state, swizzled, update }) => {
+  // Swizzled components
   const {
     Accordion,
     DraftMenu,
@@ -37,13 +27,13 @@ export const DraftView = (props) => {
     EditIcon,
     PatternLayout,
     ZoomablePattern,
-  } = props.components
-  // Passed down methods
-  const { t, designMeasurements, capitalize, draft } = props.methods
-  // Passed down hooks
-  const { useBackend, useAccount } = props.hooks
-  // Passed down ViewWrapper state
-  const { settings, ui } = props.state
+  } = swizzled.components
+  // Swizzled methods
+  const { t, designMeasurements, capitalize, draft } = swizzled.methods
+  // Swizzled hooks
+  const { useBackend, useAccount } = swizzled.hooks
+  // Passed down editor state
+  const { settings, ui, control } = state
 
   /*
    * First, attempt to draft
@@ -70,38 +60,8 @@ export const DraftView = (props) => {
 
   return (
     <PatternLayout
-      state={props.state}
-      components={props.components}
-      {...{ update, control, Design, output }}
-      menu={
-        <DraftMenu
-          {...{ Design, pattern, update }}
-          state={props.state}
-          methods={props.methods}
-          components={props.components}
-          hooks={props.hooks}
-        />
-      }
+      {...{ update, control, Design, output, state, swizzled }}
+      menu={<DraftMenu {...{ Design, pattern, update, state, swizzled }} />}
     />
   )
 }
-/*
-        menu: (
-          <DraftMenu
-            {...{
-              Design,
-              pattern,
-              patternConfig,
-              settings,
-              ui,
-              update,
-              language,
-              renderProps,
-              view,
-              setView,
-              flags: pattern.setStores?.[0]?.plugins?.['plugin-annotations']?.flags,
-            }}
-          />
-        ),
-
-*/

@@ -14,21 +14,20 @@ export const UserSetPicker = ({
   clickHandler,
   missingClickHandler,
   size = 'lg',
-  components,
-  hooks,
-  methods,
-  config,
+  swizzled,
 }) => {
-  // Components that can be swizzled
-  const { Popout, Link, PlusIcon, MeasurementsSetCard } = components
-  // Hooks that can be swizzled
-  const { useBackend, useAccount } = hooks
+  // Swizzled components
+  const { Popout, Link, PlusIcon, MeasurementsSetCard } = swizzled.components
+  // Swizzled hooks
+  const { useBackend, useAccount } = swizzled.hooks
   const backend = useBackend()
   const { control } = useAccount()
-  // Methods that can be swizzled
-  const { t, hasRequiredMeasurements } = methods
+  // Swizzled methods
+  const { t, hasRequiredMeasurements } = swizzled.methods
+  // Swizzled config
+  const { config } = swizzled
 
-  // State
+  // Local state
   const [sets, setSets] = useState({})
 
   // Effects
@@ -120,21 +119,20 @@ export const BookmarkedSetPicker = ({
   clickHandler,
   missingClickHandler,
   size = 'lg',
-  components,
-  hooks,
-  methods,
-  config,
+  swizzled,
 }) => {
-  // Components that can be swizzled
-  const { Popout, Link, PlusIcon, MeasurementsSetCard } = components
-  // Hooks that can be swizzled
-  const { useBackend, useAccount } = hooks
+  // Swizzled components
+  const { Popout, Link, PlusIcon, MeasurementsSetCard } = swizzled.components
+  // Swizzled hooks
+  const { useBackend, useAccount } = swizzled.hooks
   const backend = useBackend()
   const { control } = useAccount()
-  // Methods that can be swizzled
-  const { t, hasRequiredMeasurements } = methods
+  // Swizzled methods
+  const { t, hasRequiredMeasurements } = swizzled.methods
+  // Swizzled config
+  const { config } = swizzled
 
-  // State
+  // Local state
   const [sets, setSets] = useState({})
 
   // Effects
@@ -208,19 +206,16 @@ export const CuratedSetPicker = ({
   clickHandler,
   missingClickHandler,
   size = 'lg',
-  components,
-  hooks,
-  methods,
-  config,
+  swizzled,
   locale,
 }) => {
-  // Components that can be swizzled
-  const { CuratedMeasurementsSetLineup } = components
-  // Hooks that can be swizzled
-  const { useBackend } = hooks
+  // Swizzled components
+  const { CuratedMeasurementsSetLineup } = swizzled.components
+  // Swizzled hooks
+  const { useBackend } = swizzled.hooks
   const backend = useBackend()
 
-  // State
+  // Local state
   const [sets, setSets] = useState([])
 
   // Effects
