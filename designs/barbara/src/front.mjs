@@ -1,5 +1,8 @@
+import { wire } from './wire.mjs'
+
 export const front = {
   name: 'barbara.front',
+  after: wire,
   measurements: [
     'underbust',
     'hpsToBust',
@@ -12,14 +15,6 @@ export const front = {
     'neck',
     'waistToArmpit',
     'waistToUnderbust',
-    'breastRootWidth',
-    'breastRootDepth',
-    'breastRootFirstHalfDepth',
-    'breastRootSecondHalfDepth',
-    'breastRootAngle',
-    'breastRootLeftAngle',
-    'breastRootRightAngle',
-    'breastRootBottomAngle',
   ],
   options: {
     // Static
@@ -148,58 +143,6 @@ export const front = {
       points.middleBottom
     )
 
-    // Construct the underwire
-    points.wireLeft = new Point(0, 0)
-    points.wireRight = points.wireLeft.shift(
-      measurements.breastRootAngle,
-      measurements.breastRootWidth
-    )
-    points.wireMiddle = points.wireLeft
-      .shiftFractionTowards(points.wireRight, 0.5)
-      .shift(measurements.breastRootAngle - 90, measurements.breastRootDepth)
-
-    let cpYFirstHalf = (measurements.breastRootFirstHalfDepth - 0.25) / 0.75
-    let cpYSecondHalf = (measurements.breastRootSecondHalfDepth - 0.25) / 0.75
-
-    points.wireLeftCp1 = utils.beamsIntersect(
-      points.wireLeft,
-      points.wireLeft.shift(measurements.breastRootAngle - measurements.breastRootLeftAngle, 100),
-      points.wireLeft.shift(measurements.breastRootAngle - 135, cpYFirstHalf),
-      points.wireMiddle.shift(measurements.breastRootAngle - 135, cpYFirstHalf)
-    )
-    points.wireMiddleCp2 = utils.beamsIntersect(
-      points.wireMiddle,
-      points.wireMiddle.shift(
-        measurements.breastRootAngle + 90 + (180 - measurements.breastRootBottomAngle),
-        100
-      ),
-      points.wireLeft.shift(measurements.breastRootAngle - 135, cpYFirstHalf),
-      points.wireMiddle.shift(measurements.breastRootAngle - 135, cpYFirstHalf)
-    )
-    points.wireMiddleCp1 = utils.beamsIntersect(
-      points.wireMiddle,
-      points.wireMiddle.shift(
-        measurements.breastRootAngle + 90 - measurements.breastRootBottomAngle,
-        100
-      ),
-      points.wireRight.shift(measurements.breastRootAngle - 45, cpYSecondHalf),
-      points.wireMiddle.shift(measurements.breastRootAngle - 45, cpYSecondHalf)
-    )
-    points.wireRightCp2 = utils.beamsIntersect(
-      points.wireRight,
-      points.wireRight.shift(measurements.breastRootAngle - measurements.breastRootRightAngle, 100),
-      points.wireRight.shift(measurements.breastRootAngle - 45, cpYSecondHalf),
-      points.wireMiddle.shift(measurements.breastRootAngle - 45, cpYSecondHalf)
-    )
-    // Mark the bottom of the wire with a point
-    points.wireBottom = utils.curveIntersectsX(
-      points.wireLeft,
-      points.wireLeftCp1,
-      points.wireMiddleCp2,
-      points.wireMiddle,
-      points.wireLeft.shift(measurements.breastRootAngle, measurements.breastRootWidth / 2).x
-    )
-
     paths.front = new Path()
       .move(points.wingBottom)
       .noop('underbustDart')
@@ -237,11 +180,6 @@ export const front = {
         new Path().line(points.dartLeft).line(points.dartTop).line(points.dartRight)
       )
       .setHidden(!(options.strapHeight == 0 && options.withDart))
-
-    paths.underwire = new Path()
-      .move(points.wireLeft)
-      .curve(points.wireLeftCp1, points.wireMiddleCp2, points.wireMiddle)
-      .curve(points.wireMiddleCp1, points.wireRightCp2, points.wireRight)
 
     // Data storage
     store.set('front.wingTopAngle', points.wingBottom.angle(points.wingTop))
