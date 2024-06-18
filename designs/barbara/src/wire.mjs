@@ -2,14 +2,22 @@ export const wire = {
   name: 'barbara.wire',
   measurements: [
     'underbust',
-    'breastRootWidth',
-    'breastRootDepth',
-    'breastRootFirstHalfDepth',
-    'breastRootSecondHalfDepth',
-    'breastRootAngle',
-    'breastRootLeftAngle',
-    'breastRootRightAngle',
-    'breastRootBottomAngle',
+    'leftBreastRootWidth',
+    'leftBreastRootDepth',
+    'leftBreastRootFirstHalfDepth',
+    'leftBreastRootSecondHalfDepth',
+    'leftBreastRootAngle',
+    'leftBreastRootLeftAngle',
+    'leftBreastRootRightAngle',
+    'leftBreastRootBottomAngle',
+    'rightBreastRootWidth',
+    'rightBreastRootDepth',
+    'rightBreastRootFirstHalfDepth',
+    'rightBreastRootSecondHalfDepth',
+    'rightBreastRootAngle',
+    'rightBreastRootLeftAngle',
+    'rightBreastRootRightAngle',
+    'rightBreastRootBottomAngle',
     'interBreastsRoots',
   ],
   options: {
@@ -26,52 +34,52 @@ export const wire = {
     // Construct the left underwire
     points.wireLRight = new Point(points.rootsMiddle.x - measurements.interBreastsRoots / 2, 0)
     points.wireLLeft = points.wireLRight.shift(
-      -measurements.breastRootAngle + 180,
-      measurements.breastRootWidth
+      -measurements.leftBreastRootAngle + 180,
+      measurements.leftBreastRootWidth
     )
     points.wireLMiddle = points.wireLRight
       .shiftFractionTowards(points.wireLLeft, 0.5)
-      .shift(-measurements.breastRootAngle - 90, measurements.breastRootDepth)
+      .shift(-measurements.leftBreastRootAngle - 90, measurements.leftBreastRootDepth)
 
     // Calculate the y coordinates of each control points
-    let cpYLeftFirstHalf = (measurements.breastRootFirstHalfDepth - 0.25) / 0.75
-    let cpYLeftSecondHalf = (measurements.breastRootSecondHalfDepth - 0.25) / 0.75
+    let cpYLeftFirstHalf = (measurements.leftBreastRootFirstHalfDepth - 0.25) / 0.75
+    let cpYLeftSecondHalf = (measurements.leftBreastRootSecondHalfDepth - 0.25) / 0.75
 
     points.wireLRightCp1 = utils.beamsIntersect(
       points.wireLRight,
       points.wireLRight.shift(
-        -measurements.breastRootAngle + 180 + measurements.breastRootLeftAngle,
+        -measurements.leftBreastRootAngle + 180 + measurements.leftBreastRootLeftAngle,
         100
       ),
-      points.wireLRight.shift(-measurements.breastRootAngle + 180 + 135, cpYLeftFirstHalf),
-      points.wireLMiddle.shift(-measurements.breastRootAngle + 180 + 135, cpYLeftFirstHalf)
+      points.wireLRight.shift(-measurements.leftBreastRootAngle + 180 + 135, cpYLeftFirstHalf),
+      points.wireLMiddle.shift(-measurements.leftBreastRootAngle + 180 + 135, cpYLeftFirstHalf)
     )
     points.wireLMiddleCp2 = utils.beamsIntersect(
       points.wireLMiddle,
       points.wireLMiddle.shift(
-        -measurements.breastRootAngle + 90 + (180 + measurements.breastRootBottomAngle),
+        -measurements.leftBreastRootAngle + 90 + (180 + measurements.leftBreastRootBottomAngle),
         100
       ),
-      points.wireLRight.shift(-measurements.breastRootAngle + 180 + 135, cpYLeftFirstHalf),
-      points.wireLMiddle.shift(-measurements.breastRootAngle + 180 + 135, cpYLeftFirstHalf)
+      points.wireLRight.shift(-measurements.leftBreastRootAngle + 180 + 135, cpYLeftFirstHalf),
+      points.wireLMiddle.shift(-measurements.leftBreastRootAngle + 180 + 135, cpYLeftFirstHalf)
     )
     points.wireLMiddleCp1 = utils.beamsIntersect(
       points.wireLMiddle,
       points.wireLMiddle.shift(
-        -measurements.breastRootAngle + 90 + measurements.breastRootBottomAngle,
+        -measurements.leftBreastRootAngle + 90 + measurements.leftBreastRootBottomAngle,
         100
       ),
-      points.wireLLeft.shift(-measurements.breastRootAngle + 180 + 45, cpYLeftSecondHalf),
-      points.wireLMiddle.shift(-measurements.breastRootAngle + 180 + 45, cpYLeftSecondHalf)
+      points.wireLLeft.shift(-measurements.leftBreastRootAngle + 180 + 45, cpYLeftSecondHalf),
+      points.wireLMiddle.shift(-measurements.leftBreastRootAngle + 180 + 45, cpYLeftSecondHalf)
     )
     points.wireLLeftCp2 = utils.beamsIntersect(
       points.wireLLeft,
       points.wireLLeft.shift(
-        -measurements.breastRootAngle + 180 + measurements.breastRootRightAngle,
+        -measurements.leftBreastRootAngle + 180 + measurements.leftBreastRootRightAngle,
         100
       ),
-      points.wireLLeft.shift(-measurements.breastRootAngle + 180 + 45, cpYLeftSecondHalf),
-      points.wireLMiddle.shift(-measurements.breastRootAngle + 180 + 45, cpYLeftSecondHalf)
+      points.wireLLeft.shift(-measurements.leftBreastRootAngle + 180 + 45, cpYLeftSecondHalf),
+      points.wireLMiddle.shift(-measurements.leftBreastRootAngle + 180 + 45, cpYLeftSecondHalf)
     )
 
     // Mark the bottom of the wire with a point
@@ -80,56 +88,61 @@ export const wire = {
       points.wireLRightCp1,
       points.wireLMiddleCp2,
       points.wireLMiddle,
-      points.wireLRight.shift(180 - measurements.breastRootAngle, measurements.breastRootWidth / 2)
-        .x
+      points.wireLRight.shift(
+        180 - measurements.leftBreastRootAngle,
+        measurements.leftBreastRootWidth / 2
+      ).x
     )
 
     // Construct the right underwire
     points.wireRLeft = new Point(points.rootsMiddle.x + measurements.interBreastsRoots / 2, 0)
     points.wireRRight = points.wireRLeft.shift(
-      measurements.breastRootAngle,
-      measurements.breastRootWidth
+      measurements.rightBreastRootAngle,
+      measurements.rightBreastRootWidth
     )
     points.wireRMiddle = points.wireRLeft
       .shiftFractionTowards(points.wireRRight, 0.5)
-      .shift(measurements.breastRootAngle - 90, measurements.breastRootDepth)
+      .shift(measurements.rightBreastRootAngle - 90, measurements.rightBreastRootDepth)
 
     // Calculate the y coordinates of each control points
-    let cpYRightFirstHalf = (measurements.breastRootFirstHalfDepth - 0.25) / 0.75
-    let cpYRightSecondHalf = (measurements.breastRootSecondHalfDepth - 0.25) / 0.75
+    let cpYRightFirstHalf = (measurements.rightBreastRootFirstHalfDepth - 0.25) / 0.75
+    let cpYRightSecondHalf = (measurements.rightBreastRootSecondHalfDepth - 0.25) / 0.75
 
     points.wireRLeftCp1 = utils.beamsIntersect(
       points.wireRLeft,
-      points.wireRLeft.shift(measurements.breastRootLeftAngle - measurements.breastRootAngle, 100),
-      points.wireRLeft.shift(measurements.breastRootAngle - 135, cpYRightFirstHalf),
-      points.wireRMiddle.shift(measurements.breastRootAngle - 135, cpYRightFirstHalf)
+      points.wireRLeft.shift(
+        measurements.rightBreastRootLeftAngle - measurements.rightBreastRootAngle,
+        100
+      ),
+      points.wireRLeft.shift(measurements.rightBreastRootAngle - 135, cpYRightFirstHalf),
+      points.wireRMiddle.shift(measurements.rightBreastRootAngle - 135, cpYRightFirstHalf)
     )
     points.wireRMiddleCp2 = utils.beamsIntersect(
       points.wireRMiddle,
       points.wireRMiddle.shift(
-        measurements.breastRootAngle + 90 + (180 - measurements.breastRootBottomAngle),
+        measurements.rightBreastRootAngle + 90 + (180 - measurements.rightBreastRootBottomAngle),
         100
       ),
-      points.wireRLeft.shift(measurements.breastRootAngle - 135, cpYRightFirstHalf),
-      points.wireRMiddle.shift(measurements.breastRootAngle - 135, cpYRightFirstHalf)
+      points.wireRLeft.shift(measurements.rightBreastRootAngle - 135, cpYRightFirstHalf),
+      points.wireRMiddle.shift(measurements.rightBreastRootAngle - 135, cpYRightFirstHalf)
     )
     points.wireRMiddleCp1 = utils.beamsIntersect(
       points.wireRMiddle,
       points.wireRMiddle.shift(
-        measurements.breastRootAngle + 90 - measurements.breastRootBottomAngle,
+        measurements.rightBreastRootAngle + 90 - measurements.rightBreastRootBottomAngle,
         100
       ),
-      points.wireRRight.shift(measurements.breastRootAngle - 45, cpYRightSecondHalf),
-      points.wireRMiddle.shift(measurements.breastRootAngle - 45, cpYRightSecondHalf)
+      points.wireRRight.shift(measurements.rightBreastRootAngle - 45, cpYRightSecondHalf),
+      points.wireRMiddle.shift(measurements.rightBreastRootAngle - 45, cpYRightSecondHalf)
     )
     points.wireRRightCp2 = utils.beamsIntersect(
       points.wireRRight,
       points.wireRRight.shift(
-        measurements.breastRootAngle - measurements.breastRootRightAngle,
+        measurements.rightBreastRootAngle - measurements.rightBreastRootRightAngle,
         100
       ),
-      points.wireRRight.shift(measurements.breastRootAngle - 45, cpYRightSecondHalf),
-      points.wireRMiddle.shift(measurements.breastRootAngle - 45, cpYRightSecondHalf)
+      points.wireRRight.shift(measurements.rightBreastRootAngle - 45, cpYRightSecondHalf),
+      points.wireRMiddle.shift(measurements.rightBreastRootAngle - 45, cpYRightSecondHalf)
     )
 
     // Mark the bottom of the wire with a point
@@ -138,7 +151,10 @@ export const wire = {
       points.wireRLeftCp1,
       points.wireRMiddleCp2,
       points.wireRMiddle,
-      points.wireRLeft.shift(measurements.breastRootAngle, measurements.breastRootWidth / 2).x
+      points.wireRLeft.shift(
+        measurements.rightBreastRootAngle,
+        measurements.rightBreastRootWidth / 2
+      ).x
     )
 
     paths.underwireLeft = new Path()
