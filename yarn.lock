@@ -14251,10 +14251,10 @@ urlgrey@1.0.0:
   dependencies:
     fast-url-parser "^1.1.3"
 
-use-local-storage-state@19.2.0:
-  version "19.2.0"
-  resolved "https://registry.yarnpkg.com/use-local-storage-state/-/use-local-storage-state-19.2.0.tgz#eac2f18c8f4762931d3b6661097be0b2c00f65de"
-  integrity sha512-z5+n406vi3FzPJW6+lzuL/LJr4VLhXsUq1TWWeHQABL37bnJ159dSUmO7XuwqvACX93ZA9P2vkB8GMDgq1rr7A==
+use-local-storage-state@19.3.1:
+  version "19.3.1"
+  resolved "https://registry.yarnpkg.com/use-local-storage-state/-/use-local-storage-state-19.3.1.tgz#06826e2f2af4d8ac37b081a4fb0d7b78aaa7724f"
+  integrity sha512-y3Z1dODXvZXZB4qtLDNN8iuXbsYD6TAxz61K58GWB9/yKwrNG9ynI0GzCTHi/Je1rMiyOwMimz0oyFsZn+Kj7Q==
 
 use-sync-external-store@^1.0.0:
   version "1.2.0"
