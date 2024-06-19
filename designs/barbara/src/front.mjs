@@ -63,7 +63,30 @@ export const front = {
       points.middleBottom.x - measurements.highBustFront * options.highBustFrontFactor,
       points.wingBottom.y - (measurements.waistToArmpit - measurements.waistToUnderbust)
     )
-    points.wingTop = points.wingBottom.shiftFractionTowards(points.armpit, options.wingHeight)
+
+    // Transfer of points from barbara.wire
+    points.wireLRight = store
+      .get('wire.pointsLeft')[0]
+      .translate(0, store.get('wire.underwireLeftHeight'))
+    points.wireLLeft = store
+      .get('wire.pointsLeft')[6]
+      .translate(0, store.get('wire.underwireLeftHeight'))
+    points.wireMiddle = utils.beamIntersectsY(
+      points.middleBottom,
+      points.middleTop,
+      points.wireLRight.y
+    )
+
+    if (options.braType == 'bralette' || options.braType == 'sportBra') {
+      points.wingTop = points.wingBottom.shiftFractionTowards(points.armpit, options.wingHeight)
+    } else {
+      points.wingTopMax = utils.beamIntersectsY(
+        points.armpit,
+        points.wingBottom2,
+        points.wireLLeft.y
+      )
+      points.wingTop = points.wingBottom.shiftFractionTowards(points.wingTopMax, options.wingHeight)
+    }
 
     // Construct the shoudler strap from the edge of the neck
     let neckRadius = measurements.neck / (2 * 3.14)
@@ -155,19 +178,6 @@ export const front = {
       points.apex.shift(-90 + dartAngle / 2, 100),
       points.wingBottom2,
       points.middleBottom2
-    )
-
-    // Transfer of points from barbara.wire
-    points.wireLRight = store
-      .get('wire.pointsLeft')[0]
-      .translate(0, store.get('wire.underwireLeftHeight'))
-    points.wireLLeft = store
-      .get('wire.pointsLeft')[6]
-      .translate(0, store.get('wire.underwireLeftHeight'))
-    points.wireMiddle = utils.beamIntersectsY(
-      points.middleBottom,
-      points.middleTop,
-      points.wireLRight.y
     )
 
     paths.underwireLeft = store
