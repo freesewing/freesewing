@@ -3,7 +3,7 @@ export const back = {
   measurements: ['underbust', 'hpsToWaistBack', 'shoulderSlope'],
   options: {
     // Style
-    backStyle: { dflt: 'crossedStraps', list: ['crossedStraps', 'parallelStraps'], menu: 'style' },
+    backStyle: { dflt: 'parallelStraps', list: ['crossedStraps', 'parallelStraps'], menu: 'style' },
     bandHeight: { pct: 15, min: 0, max: 95, menu: 'style' },
     crossedStrapsBandWidth: { pct: 70, min: 50, max: 90, menu: 'style.crossedStrapsVariant' },
     crossedCurveBend: { pct: 75, min: 0, max: 100, menu: 'style.crossedStrapsVariant' },
