@@ -23,7 +23,7 @@ export const wire = {
   options: {
     interBreastsRootsShift: { pct: 100, min: 95, max: 105, menu: 'fit' },
   },
-  draft: ({ part, Path, paths, Point, points, options, measurements, utils, macro }) => {
+  draft: ({ part, Path, paths, Point, points, options, measurements, utils, macro, store }) => {
     /**
      *  The point of this part is to be able to replicate the underwire of a bra on freesewing
      *  to be later used to shape the cups
@@ -161,14 +161,40 @@ export const wire = {
       .move(points.wireLRight)
       .curve(points.wireLRightCp1, points.wireLMiddleCp2, points.wireLMiddle)
       .curve(points.wireLMiddleCp1, points.wireLLeftCp2, points.wireLLeft)
-      .addClass('fabric')
       .reverse()
+      .addClass('fabric')
 
     paths.underwireRight = new Path()
       .move(points.wireRLeft)
       .curve(points.wireRLeftCp1, points.wireRMiddleCp2, points.wireRMiddle)
       .curve(points.wireRMiddleCp1, points.wireRRightCp2, points.wireRRight)
       .addClass('fabric')
+
+    // Data storage
+    store.set('wire.underwireLeft', paths.underwireLeft)
+    store.set('wire.underwireRight', paths.underwireRight)
+    store.set('wire.underwireLeftHeight', points.wireLBottom.dy(points.wireLRight))
+    store.set('wire.underwireRightHeight', points.wireRBottom.dy(points.wireRLeft))
+    store.set('wire.pointsLeft', [
+      points.wireLRight,
+      points.wireLRightCp1,
+      points.wireLMiddleCp2,
+      points.wireLMiddle,
+      points.wireLMiddleCp1,
+      points.wireLLeftCp2,
+      points.wireLLeft,
+      points.wireLBottom,
+    ])
+    store.set('wire.pointsRight', [
+      points.wireRLeft,
+      points.wireRLeftCp1,
+      points.wireRMiddleCp2,
+      points.wireRMiddle,
+      points.wireRMiddleCp1,
+      points.wireRRightCp2,
+      points.wireRRight,
+      points.wireRBottom,
+    ])
 
     macro('pd', {
       id: 'lengthUnderwireLeft',

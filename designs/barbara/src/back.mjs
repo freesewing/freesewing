@@ -1,10 +1,17 @@
 export const back = {
   name: 'barbara.back',
-  measurements: ['underbust', 'hpsToWaistBack', 'shoulderSlope'],
+  measurements: ['underbust', 'hpsToWaistBack', 'shoulderSlope', 'waistToUnderbust'],
   options: {
     // Style
-    backStyle: { dflt: 'parallelStraps', list: ['crossedStraps', 'parallelStraps'], menu: 'style' },
-    bandHeight: { pct: 15, min: 0, max: 95, menu: 'style' },
+    backStyle: {
+      dflt: 'parallelStraps',
+      list: ['crossedStraps', 'parallelStraps'],
+      menu: (_settings, mergedOptions) =>
+        mergedOptions?.braType == 'wiredBra' || mergedOptions?.braType == 'wirelessBra'
+          ? false
+          : 'style',
+    },
+    bandHeight: { pct: 100, min: 0, max: 100, menu: 'style.parallelStrapsVariant' },
     crossedStrapsBandWidth: { pct: 70, min: 50, max: 90, menu: 'style.crossedStrapsVariant' },
     crossedCurveBend: { pct: 75, min: 0, max: 100, menu: 'style.crossedStrapsVariant' },
     crossedCurveStart: { pct: 95, min: 0.1, max: 100, menu: 'style.crossedStrapsVariant' },
@@ -25,30 +32,42 @@ export const back = {
     Snippet,
     snippets,
   }) => {
+    if (store.get('braType') == 'wiredBra' || store.get('braType') == 'wirelessBra') {
+      options.backStyle = 'parallelStraps'
+    }
+
     // Construct the bottom of the back
-    points.bandLeftBottom = new Point(0, 0)
-    points.bandMiddleBottom = points.bandLeftBottom.shift(
+    points.bandLeftBottomAnchor = new Point(0, 0)
+    points.bandMiddleBottomAnchor = points.bandLeftBottomAnchor.shift(
       0,
       (measurements.underbust / 4) * options.parallelBandWidth
     )
-    points.bandMiddleTop = points.bandMiddleBottom.shift(
-      90,
-      measurements.hpsToWaistBack * options.bandHeight
+    points.bandLeftBottom = points.bandLeftBottomAnchor.shift(
+      -90,
+      measurements.waistToUnderbust * options.bandDepth
     )
-    points.bandLeftTop = points.bandLeftBottom.shift(
+    points.bandMiddleBottom = points.bandMiddleBottomAnchor.shift(
+      -90,
+      measurements.waistToUnderbust * options.bandDepth
+    )
+    points.bandLeftTop = points.bandLeftBottomAnchor.shift(
       store.get('front.wingTopAngle'),
       store.get('front.wingTopDist')
     )
+    points.bandMiddleTop = points.bandMiddleBottom.shift(
+      90,
+      points.bandLeftTop.dy(points.bandLeftBottom) * options.bandHeight
+    )
 
     // Place the sides of the neck
-    points.neckLeftBack = points.bandMiddleBottom.translate(
+    points.neckLeftBack = points.bandMiddleBottomAnchor.translate(
       -store.get('neckRadius'),
       -measurements.hpsToWaistBack
     )
     points.neckRightBack = points.neckLeftBack.shift(0, store.get('neckRadius') * 2)
 
     // Construct the crossed straps variant
-    points.crossedMiddleBottom = points.bandLeftBottom.shift(
+    points.crossedMiddleBottom = points.bandLeftBottomAnchor.shift(
       0,
       (measurements.underbust / 4) * options.crossedStrapsBandWidth
     )
@@ -111,6 +130,7 @@ export const back = {
       points.parallelCurveCorner,
       options.parallelCurveBend
     )
+
     // Put a notch were the right and left edge of the strap should be sewn
     if (options.backStyle == 'parallelStraps') {
       snippets.backStrapRight = new Snippet(
@@ -142,18 +162,18 @@ export const back = {
       .line(points.bandMiddleBottom)
       .line(points.bandMiddleTop)
       .curve(points.parallelCurveCp1, points.parallelCurveCp2, points.bandLeftTop)
-      .close(points.bandLeftBottom)
+      .close()
       .setHidden(options.backStyle != 'parallelStraps')
       .addClass('fabric')
 
     paths.crossedStraps = new Path()
-      .move(points.bandLeftBottom)
+      .move(points.bandLeftBottomAnchor)
       .line(points.crossedMiddleBottom)
       .line(points.crossedStrapRight)
       .line(points.crossedStrapLeft)
       .line(points.crossedStrapBottom)
       .curve(points.crossedCurveCp1, points.crossedCurveCp2, points.bandLeftTop)
-      .close(points.bandLeftBottom)
+      .close(points.bandLeftBottomAnchor)
       .setHidden(options.backStyle != 'crossedStraps')
       .addClass('fabric')
 
@@ -179,9 +199,9 @@ export const back = {
       })
       macro('hd', {
         id: 'wBand',
-        from: points.bandLeftBottom,
+        from: points.bandLeftBottomAnchor,
         to: points.crossedMiddleBottom,
-        y: points.bandLeftBottom.y + 15,
+        y: points.bandLeftBottomAnchor.y + 15,
       })
       macro('hd', {
         id: 'wStrapBottom',
@@ -202,7 +222,7 @@ export const back = {
         id: 'hParallelBand',
         from: points.bandMiddleBottom,
         to: points.bandMiddleTop,
-        x: points.bandMiddleBottom.x + 15,
+        x: points.bandMiddleBottomAnchor.x + 15,
       })
     }
 
