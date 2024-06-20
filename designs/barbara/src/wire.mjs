@@ -112,7 +112,7 @@ export const wire = {
     points.wireRLeftCp1 = utils.beamsIntersect(
       points.wireRLeft,
       points.wireRLeft.shift(
-        measurements.rightBreastRootLeftAngle - measurements.rightBreastRootAngle,
+        measurements.rightBreastRootAngle - measurements.rightBreastRootLeftAngle,
         100
       ),
       points.wireRLeft.shift(measurements.rightBreastRootAngle - 135, cpYRightFirstHalf),
