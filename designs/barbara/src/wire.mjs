@@ -22,7 +22,7 @@ export const wire = {
   ],
   options: {
     interBreastsRootsShift: { pct: 100, min: 95, max: 105, menu: 'fit' },
-    showBreastsRoots: { bool: true, menu: 'Advanced' },
+    showBreastsRoots: { bool: true, menu: 'advanced' },
   },
   draft: ({ part, Path, paths, Point, points, options, measurements, utils, macro, store }) => {
     /**
