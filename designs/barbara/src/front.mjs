@@ -43,7 +43,19 @@ export const front = {
     withDart: { bool: false, menu: 'advanced' },
     dartLength: { pct: 0, min: 0, max: 45, menu: 'advanced' },
   },
-  draft: ({ part, Path, Point, paths, points, options, measurements, macro, utils, store }) => {
+  draft: ({
+    part,
+    Path,
+    Point,
+    paths,
+    points,
+    options,
+    measurements,
+    macro,
+    utils,
+    store,
+    expand,
+  }) => {
     // Construct the bottom of the front
     points.wingBottom = new Point(0, 0)
     points.middleBottom = points.wingBottom.shift(0, measurements.underbust / 4)
@@ -76,6 +88,12 @@ export const front = {
       points.middleTop,
       points.wireLRight.y
     )
+    points.wireRLeft = store
+      .get('wire.pointsRight')[0]
+      .translate(0, store.get('wire.underwireRightHeight'))
+    points.wireRRight = store
+      .get('wire.pointsRight')[6]
+      .translate(0, store.get('wire.underwireRightHeight'))
 
     if (options.braType == 'bralette' || options.braType == 'sportBra') {
       points.wingTop = points.wingBottom.shiftFractionTowards(points.armpit, options.wingHeight)
@@ -180,14 +198,22 @@ export const front = {
       points.middleBottom2
     )
 
+    // Support for expand setting
+
     paths.underwireLeft = store
       .get('wire.underwireLeft')
       .translate(0, store.get('wire.underwireLeftHeight'))
+
+    paths.underwireRight = store
+      .get('wire.underwireRight')
+      .translate(0, store.get('wire.underwireRightHeight'))
+      .hide()
 
     if (options.braType == 'wiredBra' || options.braType == 'wirelessBra') {
       paths.braBand = new Path()
         .move(points.wingBottom2)
         .line(points.middleBottom2)
+        .noop('braBandExpand')
         .line(points.wireMiddle)
         .line(points.wireLRight)
         .combine(paths.underwireLeft)
@@ -195,6 +221,21 @@ export const front = {
         .line(points.wingTop)
         .line(points.wingBottom2)
         .addClass('fabric')
+        .setHidden(!expand)
+
+      paths.braBandExpand = paths.braBand
+        .clone()
+        .insop(
+          'braBandExpand',
+          new Path()
+            .line(points.wingBottom2.flipX(points.middleBottom))
+            .line(points.wingTop.flipX(points.middleBottom))
+            .line(points.wireRRight)
+            .combine(paths.underwireRight)
+            .move(points.wireRLeft)
+        )
+        .addClass('fabric')
+        .setHidden(expand)
     } else {
       paths.front = new Path()
         .move(points.wingBottom)
