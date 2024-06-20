@@ -5771,13 +5771,13 @@ eslint-plugin-react@^7.32.2, eslint-plugin-react@^7.33.2:
     semver "^6.3.1"
     string.prototype.matchall "^4.0.8"
 
-eslint-plugin-yaml@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.npmjs.org/eslint-plugin-yaml/-/eslint-plugin-yaml-0.5.0.tgz"
-  integrity sha512-Z6km4HEiRptSuvzc96nXBND1Vlg57b7pzRmIJOgb9+3PAE+XpaBaiMx+Dg+3Y15tSrEMKCIZ9WoZMwkwUbPI8A==
+eslint-plugin-yaml@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-yaml/-/eslint-plugin-yaml-1.0.1.tgz#740688e3a87bec6a47e0e4e5dd5d51c2ce43e36f"
+  integrity sha512-Pq7x22T4oIzQ1e7SerCU3ObWn95wCCDsKsmYJjfhUM/DA9bFv7aFTzOwTBUlc3Xsl1XavYs/hHk0mWLeWt+KDg==
   dependencies:
     js-yaml "^4.1.0"
-    jshint "^2.13.0"
+    jshint "^2.13.6"
 
 eslint-scope@5.1.1:
   version "5.1.1"
@@ -8238,9 +8238,9 @@ jsesc@~0.5.0:
   resolved "https://registry.npmjs.org/jsesc/-/jsesc-0.5.0.tgz"
   integrity sha512-uZz5UnB7u4T9LvwmFqXii7pZSouaRPorGs5who1Ip7VO0wxanFvBL7GkM6dTHlgX+jhBApRetaWpnDabOeTcnA==
 
-jshint@^2.13.0:
+jshint@^2.13.6:
   version "2.13.6"
-  resolved "https://registry.npmjs.org/jshint/-/jshint-2.13.6.tgz"
+  resolved "https://registry.yarnpkg.com/jshint/-/jshint-2.13.6.tgz#3679a2687a3066fa9034ef85d8c305613a31eec6"
   integrity sha512-IVdB4G0NTTeQZrBoM8C5JFVLjV2KtZ9APgybDA1MK73xb09qFs0jCXyQLnCOp1cSZZZbvhq/6mfXHUTaDkffuQ==
   dependencies:
     cli "~1.0.0"
