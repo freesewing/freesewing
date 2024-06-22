@@ -30,6 +30,7 @@ export const wire = {
      *  to be later used to shape the cups
      */
 
+    // Use rootsMiddle to have the ability to shift the breast roots horizontaly for fitting
     points.rootsMiddle = new Point((measurements.underbust / 4) * options.interBreastsRootsShift, 0)
 
     // Construct the left underwire
