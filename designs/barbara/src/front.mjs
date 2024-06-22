@@ -55,6 +55,7 @@ export const front = {
     utils,
     store,
     expand,
+    sa,
   }) => {
     // Construct the bottom of the front
     points.wingBottom = new Point(0, 0)
@@ -203,6 +204,7 @@ export const front = {
     paths.underwireLeft = store
       .get('wire.underwireLeft')
       .translate(0, store.get('wire.underwireLeftHeight'))
+      .hide()
 
     paths.underwireRight = store
       .get('wire.underwireRight')
@@ -216,12 +218,12 @@ export const front = {
         .noop('braBandExpand')
         .line(points.wireMiddle)
         .line(points.wireLRight)
-        .combine(paths.underwireLeft)
+        .combine(paths.underwireLeft.reverse())
         .move(points.wireLLeft)
         .line(points.wingTop)
         .line(points.wingBottom2)
         .addClass('fabric')
-        .setHidden(!expand)
+        .setHidden(expand)
 
       paths.braBandExpand = paths.braBand
         .clone()
@@ -231,11 +233,11 @@ export const front = {
             .line(points.wingBottom2.flipX(points.middleBottom))
             .line(points.wingTop.flipX(points.middleBottom))
             .line(points.wireRRight)
-            .combine(paths.underwireRight)
+            .combine(paths.underwireRight.reverse())
             .move(points.wireRLeft)
         )
         .addClass('fabric')
-        .setHidden(expand)
+        .setHidden(!expand)
     } else {
       paths.front = new Path()
         .move(points.wingBottom)
