@@ -9,10 +9,10 @@ const AnchorLink = ({ id, txt = false, children }) => (
   </a>
 )
 
-const PageLink = ({ href, txt = false, children }) => (
-  <Link href={href} className={linkClasses} title={txt ? txt : ''}>
+const PageLink = ({ href, txt = false, children, Swizzled }) => (
+  <Swizzled.components.Link href={href} className={linkClasses} title={txt ? txt : ''}>
     {children ? children : txt}
-  </Link>
+  </Swizzled.components.Link>
 )
 
 const WebLink = ({ href, txt = false, children }) => (
@@ -28,8 +28,9 @@ const CardLink = ({
   title,
   text,
   icon,
+  Swizzled,
 }) => (
-  <Link
+  <Swizzled.components.Link
     href={href}
     className={`px-8 ${bg} py-10 rounded-lg block ${textColor}
     hover:bg-secondary hover:bg-opacity-10 shadow-lg
@@ -40,7 +41,7 @@ const CardLink = ({
       <span className="shrink-0">{icon}</span>
     </h2>
     <p className="font-medium text-inherit italic text-lg">{text}</p>
-  </Link>
+  </Swizzled.components.Link>
 )
 
 export { linkClasses, Link, AnchorLink, PageLink, WebLink, CardLink }

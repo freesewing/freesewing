@@ -1,12 +1,12 @@
 /*
  * Parses value that should be a distance (cm or inch)
  *
- * @param {object} methods - An object holding possibly swizzled methods
+ * @param {object} Swizzled - Swizzled code, including methods
  * @param {number} val - The input value
  * @param {bool} imperial - True if the units are imperial, false for metric
  * @return {number} result - The distance in the relevant units
  */
-export const parseDistanceInput = (methods, val = false, imperial = false) => {
+export const parseDistanceInput = (Swizzled, val = false, imperial = false) => {
   // No input is not valid
   if (!val) return false
 
@@ -20,7 +20,7 @@ export const parseDistanceInput = (methods, val = false, imperial = false) => {
   if (!val.match(regex)) return false
 
   // if fractions are allowed, parse for fractions, otherwise use the number as a value
-  if (imperial) val = methods.fractionToDecimal(val)
+  if (imperial) val = Swizzled.methods.fractionToDecimal(val)
 
   return isNaN(val) ? false : Number(val)
 }

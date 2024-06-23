@@ -1,8 +1,8 @@
 /*
  * A translation fallback method in case none is passed in
  *
- * @param {object} methods - An object holding possibly swizzled methods (unused here)
+ * @param {object} Swizzled - Swizzled code, not used here
  * @param {string} key - The input
  * @return {string} key - The input is returned
  */
-const t = (methods, key) => (Array.isArray(key) ? key[0] : key)
+export const t = (Swizzled, key) => (Array.isArray(key) ? key[0] : key)

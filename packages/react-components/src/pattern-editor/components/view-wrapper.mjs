@@ -42,7 +42,7 @@ export const ViewWrapper = ({
         {...extraProps}
         state={{ ...state, control, locale }}
         update={{ ...update, control: setControl }}
-        {...{ designs, Swizzled }}
+        {...{ designs }}
       />
     </>
   )

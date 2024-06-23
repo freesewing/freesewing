@@ -31,14 +31,13 @@ export const PatternEditor = (props) => {
 
   useEffect(() => {
     if (!swizzled) {
-      const config = swizzleConfig(props.config)
       const merged = {
-        config,
+        config: swizzleConfig(props.config),
         defaults: swizzleDefaults(props.defaults),
-        methods: swizzleMethods(props.methods),
-        components: swizzleComponents(props.components),
-        hooks: swizzleHooks(props.hooks, config),
       }
+      merged.methods = swizzleMethods(props.methods, merged)
+      merged.components = swizzleComponents(props.components, merged)
+      merged.hooks = swizzleHooks(props.hooks, merged)
       setSwizzled(merged)
     }
   }, [swizzled])

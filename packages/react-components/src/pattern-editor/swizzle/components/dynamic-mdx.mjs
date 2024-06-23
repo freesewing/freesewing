@@ -7,8 +7,6 @@
  *
  * <PatternEditor components={{ DynamicMdx: MyComponent }} />
  */
-export const DynamicMdx = (props) => {
-  const { Popout } = props.components
-
-  return <Popout note>Not working</Popout>
-}
+export const DynamicMdx = ({ Swizzled }) => (
+  <Swizzled.components.Popout node>Not implemented</Swizzled.components.Popout>
+)

@@ -1,11 +1,11 @@
 /**
  * Converts a value that contain a fraction to a decimal
  *
- * @param {object} methods - An object holding possibly swizzled methods (unused here)
+ * @param {object} Swizzled - Swizzled code, not used here
  * @param {number} value - The input value
  * @return {number} result - The resulting decimal value
  */
-export const fractionToDecimal = (methods, value) => {
+export const fractionToDecimal = (Swizzled, value) => {
   // if it's just a number, return it
   if (!isNaN(value)) return value
 

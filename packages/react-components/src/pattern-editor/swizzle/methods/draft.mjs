@@ -1,12 +1,12 @@
 /*
  * This method drafts the pattern
  *
- * @param {objects} methods - Possibly swizzled methods, not used here
+ * @param {object} Swizzled - Swizzled code, not used here
  * @param {function} Design - The Design constructor
  * @param {object} settings - The settings for the pattern
  * @return {object} data - The drafted pattern, along with errors and failure data
  */
-export const draft = (methods, Design, settings) => {
+export const draft = (Swizzled, Design, settings) => {
   const data = {
     // The pattern
     pattern: new Design(settings),

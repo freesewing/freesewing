@@ -26,7 +26,7 @@ export const DraftView = ({ Design, locale, missingMeasurements, state, update, 
     try {
       const __html = pattern.render()
       output = (
-        <Swizzled.components.ZoomablePattern Swizzled={Swizzled}>
+        <Swizzled.components.ZoomablePattern>
           <div className="w-full h-full" dangerouslySetInnerHTML={{ __html }} />
         </Swizzled.components.ZoomablePattern>
       )
@@ -39,15 +39,14 @@ export const DraftView = ({ Design, locale, missingMeasurements, state, update, 
       <Swizzled.components.ZoomablePattern
         renderProps={renderProps}
         patternLocale={settings.locale}
-        Swizzled={Swizzled}
       />
     )
   }
 
   return (
     <Swizzled.components.PatternLayout
-      {...{ update, control, Design, output, state, Swizzled }}
-      menu={<Swizzled.components.DraftMenu {...{ Design, pattern, update, state, Swizzled }} />}
+      {...{ update, control, Design, output, state }}
+      menu={<Swizzled.components.DraftMenu {...{ Design, pattern, update, state }} />}
     />
   )
 }

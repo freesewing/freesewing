@@ -1,4 +1,4 @@
-export const CuratedMeasurementsSetLineup = ({ sets = [], locale, clickHandler, methods }) => (
+export const CuratedMeasurementsSetLineup = ({ sets = [], locale, clickHandler, Swizzled }) => (
   <div
     className={`w-full flex flex-row ${
       sets.length > 1 ? 'justify-start px-8' : 'justify-center'
@@ -14,7 +14,10 @@ export const CuratedMeasurementsSetLineup = ({ sets = [], locale, clickHandler, 
       const props = {
         className: 'aspect-[1/3] w-auto h-96',
         style: {
-          backgroundImage: `url(${methods.cloudImageUrl({ id: `cset-${set.id}`, type: 'lineup' })})`,
+          backgroundImage: `url(${Swizzled.methods.cloudImageUrl({
+            id: `cset-${set.id}`,
+            type: 'lineup',
+          })})`,
           width: 'auto',
           backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
@@ -26,7 +29,7 @@ export const CuratedMeasurementsSetLineup = ({ sets = [], locale, clickHandler, 
       return (
         <div className="flex flex-col items-center" key={set.id}>
           <button {...props} key={set.id}></button>
-          <b>{set[`name${methods.capitalize(locale)}`]}</b>
+          <b>{set[`name${Swizzled.methods.capitalize(locale)}`]}</b>
         </div>
       )
     })}

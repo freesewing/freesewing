@@ -9,16 +9,12 @@ export const MenuCountOptionValue = ({ config, current, changed }) => (
 )
 
 /** Displays a degree value */
-export const MenuDegOptionValue = ({ config, current, changed, components }) => {
-  const { MenuHighlightValue } = components
-
-  return (
-    <MenuHighlightValue changed={changed}>
-      {' '}
-      {changed ? current : config.deg}&deg;
-    </MenuHighlightValue>
-  )
-}
+export const MenuDegOptionValue = ({ config, current, changed, Swizzled }) => (
+  <Swizzled.components.MenuHighlightValue changed={changed}>
+    {' '}
+    {changed ? current : config.deg}&deg;
+  </Swizzled.components.MenuHighlightValue>
+)
 
 /**
  * A component to highlight a changed value
@@ -78,19 +74,15 @@ export const MenuMmOptionValue = () => (
 )
 
 /** Displays a formated mm value based on the current units */
-export const MenuMmValue = ({ current, config, units, changed, components, methods }) => {
-  const { MenuHighlightValue } = components
-
-  return (
-    <MenuHighlightValue changed={changed}>
-      <span
-        dangerouslySetInnerHTML={{
-          __html: methods.formatMm(changed ? current : config.dflt, units),
-        }}
-      />
-    </MenuHighlightValue>
-  )
-}
+export const MenuMmValue = ({ current, config, units, changed, Swizzled }) => (
+  <Swizzled.components.MenuHighlightValue changed={changed}>
+    <span
+      dangerouslySetInnerHTML={{
+        __html: Swizzled.methods.formatMm(changed ? current : config.dflt, units),
+      }}
+    />
+  </Swizzled.components.MenuHighlightValue>
+)
 
 /** Displays the current percentage value, and the absolute value if configured
  *
@@ -134,3 +126,15 @@ export const MenuShowValue = ({ current, dflt, changed, components }) => {
 
   return <MenuHighlightValue changed={changed}> {changed ? current : dflt} </MenuHighlightValue>
 }
+
+export const MenuScaleSettingValue = ({ Swizzled, current, config, changed }) => (
+  <Swizzled.components.MenuHighlightValue current={current} dflt={config.dflt} changed={changed} />
+)
+
+export const MenuOnlySettingValue = ({ Swizzled, current, config }) => (
+  <Swizzled.components.MenuHighlightValue
+    current={current?.length}
+    dflt={config.parts.length}
+    changed={current !== undefined}
+  />
+)

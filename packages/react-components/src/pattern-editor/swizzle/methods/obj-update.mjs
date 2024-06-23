@@ -11,7 +11,7 @@ const UNSET = '__UNSET__'
  * @param {mixed} val - The new value to set or 'unset' to unset the value
  * @return {object} result - The updated object
  */
-export const objUpdate = (methods, obj = {}, path, val = '__UNSET__') => {
+export const objUpdate = (Swizzled, obj = {}, path, val = '__UNSET__') => {
   if (val === UNSET) {
     if (Array.isArray(path) && Array.isArray(path[0])) {
       for (const [ipath, ival = UNSET] of path) {

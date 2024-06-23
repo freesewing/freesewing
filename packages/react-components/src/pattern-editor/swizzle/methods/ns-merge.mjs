@@ -7,7 +7,7 @@
  * @param {[string]} namespaces - A string or array of strings of namespaces
  * @return {[string]} namespaces - A merged array of all namespaces
  */
-export const nsMerge = (methods, ...args) => {
+export const nsMerge = (Swizzled, ...args) => {
   const ns = new Set()
   for (const arg of args) {
     if (typeof arg === 'string') ns.add(arg)

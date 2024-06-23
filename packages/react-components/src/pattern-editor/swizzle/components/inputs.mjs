@@ -114,9 +114,8 @@ export const NumberInput = ({
   max = 0,
   min = 220,
   step = 1,
-  methods, // Object holding swizzled methods
 }) => (
-  <FormControl {...{ label, labelBL, labelBR, docs, methods }} forId={id}>
+  <FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
     <input
       id={id}
       type="number"
@@ -145,9 +144,8 @@ export const StringInput = ({
   id = '', // An id to tie the input to the label
   labelBL = false, // Bottom-Left label
   labelBR = false, // Bottom-Right label
-  methods, // Object holding swizzled methods
 }) => (
-  <FormControl {...{ label, labelBL, labelBR, docs, methods }} forId={id}>
+  <FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
     <input
       id={id}
       type="text"
@@ -171,12 +169,12 @@ export const DesignDropdown = ({
   docs = false, // Docs to load, if any
   firstOption = null, // Any first option to add in addition to designs
   id = '', // An id to tie the input to the label
-  methods, // Object holding swizzled methods
+  Swizzled, // Swizzled code
 }) => {
-  const { t } = methods
+  const { t } = Swizzled.methods
 
   return (
-    <FormControl label={label} docs={docs} forId={id} methods={methods}>
+    <FormControl label={label} docs={docs} forId={id}>
       <select
         id={id}
         className="select select-bordered w-full"
@@ -203,9 +201,8 @@ export const ListInput = ({
   list, // The list of items to present { val, label, desc }
   current, // The (value of the) current item
   docs = false, // Docs to load, if any
-  methods, // Object holding swizzled methods
 }) => (
-  <FormControl label={label} docs={docs} methods={methods}>
+  <FormControl label={label} docs={docs}>
     {list.map((item, i) => (
       <ButtonFrame key={i} active={item.val === current} onClick={() => update(item.val)}>
         <div className="w-full flex flex-col gap-2">
@@ -233,9 +230,8 @@ export const MarkdownInput = ({
   id = '', // An id to tie the input to the label
   labelBL = false, // Bottom-Left label
   labelBR = false, // Bottom-Right label
-  methods, // Object holding swizzled methods
 }) => (
-  <FormControl {...{ label, labelBL, labelBR, docs, methods }} forId={id}>
+  <FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
     <Tabs tabs={['edit', 'preview']}>
       <Tab key="edit">
         <div className="flex flex-row items-center mt-4">
@@ -266,10 +262,10 @@ export const MeasurementInput = ({
   placeholder, // The placeholder content
   docs = false, // Docs to load, if any
   id = '', // An id to tie the input to the label
-  methods, // Object holding swizzled methods
+  Swizzled, // Swizzled code
 }) => {
-  const { t } = methods
-  const isDegree = methods.isDegreeMeasurement(m)
+  const { t } = Swizzled.methods
+  const isDegree = Swizzled.methods.isDegreeMeasurement(m)
   const units = imperial ? 'imperial' : 'metric'
 
   const [localVal, setLocalVal] = useState(
@@ -277,17 +273,21 @@ export const MeasurementInput = ({
       ? original
       : isDegree
       ? Number(original)
-      : methods.measurementAsUnits(original, units)
+      : Swizzled.methods.measurementAsUnits(original, units)
   )
-  const [validatedVal, setValidatedVal] = useState(methods.measurementAsUnits(original, units))
+  const [validatedVal, setValidatedVal] = useState(
+    Swizzled.methods.measurementAsUnits(original, units)
+  )
   const [valid, setValid] = useState(null)
 
   // Update onChange
   const localUpdate = (newVal) => {
     setLocalVal(newVal)
-    const parsedVal = isDegree ? Number(newVal) : methods.parseDistanceInput(newVal, imperial)
+    const parsedVal = isDegree
+      ? Number(newVal)
+      : Swizzled.methods.parseDistanceInput(newVal, imperial)
     if (parsedVal) {
-      update(m, isDegree ? parsedVal : methods.measurementAsMm(parsedVal, units))
+      update(m, isDegree ? parsedVal : Swizzled.methods.measurementAsMm(parsedVal, units))
       setValid(true)
       setValidatedVal(parsedVal)
     } else setValid(false)
@@ -322,7 +322,6 @@ export const MeasurementInput = ({
       docs={docs}
       forId={id}
       labelBL={bottomLeftLabel}
-      methods={methods}
     >
       <input
         id={id}
@@ -351,10 +350,9 @@ export const ToggleInput = ({
   labelTR = false, // Top-Right label
   labelBL = false, // Bottom-Left label
   labelBR = false, // Bottom-Right label
-  methods, // Object holding swizzled methods
 }) => (
   <FormControl
-    {...{ labelBL, labelBR, labelTR, methods }}
+    {...{ labelBL, labelBR, labelTR }}
     label={
       label
         ? `${label} (${current === on ? labels[0] : labels[1]})`

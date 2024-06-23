@@ -1,7 +1,8 @@
 /*
  * Returns the URL of a cloud-hosted image (cloudflare in this case) based on the ID and Variant
+ * @param {object} Swizzled - Swizzled code, not used here
  */
-export const cloudImageUrl = (methods, { id = 'default-avatar', variant = 'public' }) => {
+export const cloudImageUrl = (Swizzled, { id = 'default-avatar', variant = 'public' }) => {
   const config = methods.getConfig()
   /*
    * Return something default so that people will actually change it

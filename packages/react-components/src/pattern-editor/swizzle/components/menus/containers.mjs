@@ -86,7 +86,7 @@ export const MenuItem = ({
       disabled={disabled}
       onClick={(evt) => {
         evt.stopPropagation()
-        updateHandler([name])
+        updateHandler([name], '__UNSET__')
       }}
     >
       <Swizzled.components.ResetIcon />

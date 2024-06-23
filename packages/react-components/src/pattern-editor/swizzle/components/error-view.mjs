@@ -2,6 +2,7 @@
  * The error view is loaded if and only an error occurs that we can't handle
  *
  * @param {object} props - The component's props
+ * @param {object} props.Swizzled - Swizzled code
  * @param {function} props.Design - The design constructor
  * @param {object} props.state - The ViewWrapper state object
  * @param {object} props.state.settings - The current settings
@@ -13,9 +14,9 @@
  * @param {object} props.config - The possibly swizzled pattern editor configuration
  * @return {function} MeasurementsView - React component
  */
-export const ErrorView = ({ methods, state }) => (
+export const ErrorView = ({ Swizzled, state }) => (
   <div className="text-center mt-8">
-    <h2>{methods.t('oops')}</h2>
+    <h2>{Swizzled.methods.t('oops')}</h2>
     <p>FIXME: Something went wrong</p>
     <pre>{JSON.stringify(state, null, 2)}</pre>
   </div>

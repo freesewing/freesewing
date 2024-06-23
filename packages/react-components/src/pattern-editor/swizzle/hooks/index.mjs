@@ -56,14 +56,16 @@ const defaultHooks = (config) => ({
  * This method returns hooks that can be swizzled
  * So either the passed-in methods, or the default ones
  */
-export const swizzleHooks = (hooks = {}, config) => {
+export const swizzleHooks = (hooks = {}, Swizzled) => {
   /*
    * We need to return the resulting hooks, swizzled or not
    * So we put this in this object so we can pass that down
    */
   const all = {}
-  for (const [name, hook] of Object.entries(defaultHooks(config))) {
-    all[name] = hooks[name] ? hooks[name] : hook
+  for (const [name, hook] of Object.entries(defaultHooks(Swizzled.config))) {
+    all[name] = hooks[name]
+      ? (props) => hooks[name]({ Swizzled, ...props })
+      : (props) => hook({ Swizzled, ...props })
   }
 
   /*

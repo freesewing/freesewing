@@ -18,7 +18,7 @@ export const DesignOptionsMenu = ({ Design, isFirst = true, state, update, Swizz
     [update.settings]
   )
 
-  const drillProps = { Design, state, update, Swizzled }
+  const drillProps = { Design, state, update }
   const inputs = {
     bool: (props) => <Swizzled.components.MenuBoolInput {...drillProps} {...props} />,
     constant: (props) => <Swizzled.components.MenuConstantInput {...drillProps} {...props} />,

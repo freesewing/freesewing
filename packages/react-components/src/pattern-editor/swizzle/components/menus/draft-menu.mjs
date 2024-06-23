@@ -4,31 +4,21 @@ export const DraftMenu = ({ Design, pattern, state, Swizzled, update }) => {
   // Swizzled methods
   const { t } = Swizzled.methods
   // Swizzled components
-  const {
-    OptionsIcon,
-    DesignOptionsMenu,
-    SettingsIcon,
-    CoreSettingsMenu,
-    UiIcon,
-    UiSettingsMenu,
-    FlagsAccordionTitle,
-    FlagsAccordionEntries,
-    Accordion,
-  } = Swizzled.components
+  const { FlagsAccordionTitle, FlagsAccordionEntries, Accordion } = Swizzled.components
 
   const menuProps = { Design, state, Swizzled, pattern, update }
 
   const sections = [
     {
       name: 'designOptions',
-      icon: <OptionsIcon className="w-8 h-8" />,
-      menu: <DesignOptionsMenu {...menuProps} />,
+      icon: <Swizzled.components.OptionsIcon className="w-8 h-8" />,
+      menu: <Swizzled.components.DesignOptionsMenu {...menuProps} />,
     },
-    //{
-    //  name: 'coreSettings',
-    //  icon: <SettingsIcon className="w-8 h-8" />,
-    //  menu: <CoreSettingsMenu {...menuProps} />,
-    //},
+    {
+      name: 'coreSettings',
+      icon: <Swizzled.components.SettingsIcon className="w-8 h-8" />,
+      menu: <Swizzled.components.CoreSettingsMenu {...menuProps} />,
+    },
     //{
     //  name: 'uiSettings',
     //  icon: <UiIcon className="w-8 h-8" />,

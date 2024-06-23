@@ -33,8 +33,8 @@ export const MenuConstantInput = ({
 /** A {@see MenuSliderInput} to handle degree values */
 export const MenuDegInput = (props) => {
   const { updateHandler } = props
-  const { MenuSliderInput } = props.swizzled.components
-  const { round } = props.swizzled.methods
+  const { MenuSliderInput } = props.Swizzled.components
+  const { round } = props.Swizzled.methods
   const degUpdateHandler = useCallback(
     (path, newVal) => {
       updateHandler(path, newVal === undefined ? undefined : Number(newVal))
@@ -136,11 +136,13 @@ export const MenuListToggle = ({ config, changed, updateHandler, name }) => {
 
 export const MenuMmInput = (props) => {
   const { units, updateHandler, current, config } = props
-  const { MenuSliderInput } = props.swizzled.components
+  const { MenuSliderInput } = props.Swizzled.components
   const mmUpdateHandler = useCallback(
     (path, newCurrent) => {
       const calcCurrent =
-        typeof newCurrent === 'undefined' ? undefined : measurementAsMm(newCurrent, units)
+        typeof newCurrent === 'undefined'
+          ? undefined
+          : props.Swizzled.methods.measurementAsMm(newCurrent, units)
       updateHandler(path, calcCurrent)
     },
     [updateHandler, units]
@@ -156,11 +158,15 @@ export const MenuMmInput = (props) => {
         config: {
           step: defaultStep,
           ...config,
-          dflt: measurementAsUnits(config.dflt, units),
+          dflt: props.Swizzled.methods.measurementAsUnits(config.dflt, units),
         },
-        current: current === undefined ? undefined : measurementAsUnits(current, units),
+        current:
+          current === undefined
+            ? undefined
+            : props.Swizzled.methods.measurementAsUnits(current, units),
         updateHandler: mmUpdateHandler,
-        valFormatter: (val) => (units === 'imperial' ? formatFraction128(val, null) : val),
+        valFormatter: (val) =>
+          units === 'imperial' ? props.Swizzle.methods.formatFraction128(val, null) : val,
         suffix: units === 'imperial' ? '"' : 'cm',
       }}
     />
@@ -400,4 +406,29 @@ const useBoolConfig = (name, config) => {
     }),
     [name, config]
   )
+}
+
+/** an input for the 'only' setting. toggles individual parts*/
+export const MenuOnlySettingInput = (props) => {
+  const { Swizzled, config } = props
+  const { t } = Swizzled.methods
+  config.sideBySide = true
+  config.titleMethod = (entry, t) => {
+    const chunks = entry.split('.')
+    return <span className="font-medium text-base">{t(`${chunks[0]}:${chunks[1]}`)}</span>
+  }
+  config.valueMethod = (entry) => (
+    <span className="text-sm">{Swizzled.methods.capitalize(entry.split('.')[0])}</span>
+  )
+  config.dense = true
+  // Sort alphabetically (translated)
+  const order = []
+  for (const part of config.list) {
+    const [ns, name] = part.split('.')
+    order.push(t(`${ns}:${name}`) + `|${part}`)
+  }
+  order.sort()
+  config.list = order.map((entry) => entry.split('|')[1])
+
+  return <Swizzled.components.MenuListInput {...props} />
 }

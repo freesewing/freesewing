@@ -24,12 +24,12 @@ export const Popout = (props) => {
   /*
    * Load (swizzled) components
    */
-  const { CloseIcon } = props.components
+  const { CloseIcon } = props.Swizzled.components
 
   /*
    * Load (swizzled) methods
    */
-  const { t } = props.methods
+  const { t } = props.Swizzled.methods
 
   const [hide, setHide] = useState(false)
   if (hide) return null

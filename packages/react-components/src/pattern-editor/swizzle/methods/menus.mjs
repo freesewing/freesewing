@@ -5,11 +5,12 @@
  * roundPct(0.72, 100) === 72
  * roundPct(7.5, 0.01) === 0.075
  * roundPct(7.50, 0.01) === 0.0750
+ * @param {object} Swizzled - Swizzled code, not used here
  * @param  {Number} num the number to be operated on
  * @param  {Number} factor the number to multiply by
  * @return {Number}     the given num multiplied by the factor, rounded appropriately
  */
-export const menuRoundPct = (methods, num, factor) => {
+export const menuRoundPct = (Swizzled, num, factor) => {
   const { round } = methods
   // stringify
   const str = '' + num
@@ -27,6 +28,7 @@ const menuFractionInputMatcher = /^-?[0-9]*(\s?[0-9]+\/|[.,eE])?[0-9]+$/ // matc
 
 /**
  * Validate and parse a value that should be a number
+ * @param {object} Swizzled - Swizzled code, not used here
  * @param  {any}  val            the value to validate
  * @param  {Boolean} allowFractions should fractions be considered valid input?
  * @param  {Number}  min            the minimum allowable value
@@ -36,7 +38,7 @@ const menuFractionInputMatcher = /^-?[0-9]*(\s?[0-9]+\/|[.,eE])?[0-9]+$/ // matc
  *                                  or the value parsed to a number if it is valid
  */
 export const menuValidateNumericValue = (
-  methods,
+  Swizzled,
   val,
   allowFractions = true,
   min = -Infinity,
@@ -66,12 +68,12 @@ export const menuValidateNumericValue = (
 
 /**
  * Check to see if a value is different from its default
- * @param  {Object} methods - Possibly swizzled methods, not used here
- * @param  {Number|String|Boolean} current the current value
- * @param  {Object} config  configuration containing a dflt key
+ * @param {object} Swizzled - Swizzled code, not used here
+ * @param {Number|String|Boolean} current the current value
+ * @param {Object} config  configuration containing a dflt key
  * @return {Boolean}         was the value changed?
  */
-export const menuValueWasChanged = (methods, current, config) => {
+export const menuValueWasChanged = (Swizzled, current, config) => {
   if (typeof current === 'undefined') return false
   if (current == config.dflt) return false
 

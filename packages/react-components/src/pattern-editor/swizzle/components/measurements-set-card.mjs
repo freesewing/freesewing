@@ -8,13 +8,12 @@ export const MeasurementsSetCard = ({
   Design = false,
   language = false,
   size = 'lg',
-  methods,
-  components,
+  Swizzled,
   config,
 }) => {
   const s = sizes[size]
-  const { t, imageUrl, hasRequiredMeasurements } = methods
-  const { NoIcon, OkIcon } = components
+  const { t, imageUrl, hasRequiredMeasurements } = Swizzled.methods
+  const { NoIcon, OkIcon } = Swizzled.components
 
   const wrapperProps = {
     className: `bg-base-300 aspect-square h-${s} w-${s} mb-2

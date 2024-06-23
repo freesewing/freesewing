@@ -21,6 +21,7 @@
 /*
  * Import of components that can be swizzled
  */
+import Link from 'next/link'
 // Accordion
 import { BaseAccordion, SubAccordion, Accordion } from './accordion.mjs'
 // Popout
@@ -100,6 +101,7 @@ import { ViewPicker } from './view-picker.mjs'
 import { Pattern } from '@freesewing/react-components/pattern'
 // Menus
 import { DraftMenu } from './menus/draft-menu.mjs'
+import { CoreSettingsMenu, CoreSetting } from './menus/core-settings-menu.mjs'
 import { DesignOptionsMenu, DesignOption } from './menus/design-options-menu.mjs'
 import { MenuItem, MenuItemGroup, MenuItemTitle } from './menus/containers.mjs'
 import {
@@ -110,6 +112,7 @@ import {
   MenuListToggle,
   MenuMmInput,
   MenuNumberInput,
+  MenuOnlySettingInput,
   MenuPctInput,
   MenuSliderInput,
 } from './menus/shared-inputs.mjs'
@@ -123,7 +126,9 @@ import {
   MenuListValue,
   MenuMmOptionValue,
   MenuMmValue,
+  MenuOnlySettingValue,
   MenuPctOptionValue,
+  MenuScaleSettingValue,
   MenuShowValue,
 } from './menus/shared-values.mjs'
 // Flags
@@ -137,6 +142,8 @@ const defaultComponents = {
   BaseAccordion,
   BookmarkedSetPicker,
   ButtonFrame,
+  CoreSetting,
+  CoreSettingsMenu,
   CuratedMeasurementsSetIcon,
   CuratedMeasurementsSetLineup,
   CuratedSetPicker,
@@ -151,6 +158,7 @@ const defaultComponents = {
   FlagsAccordionTitle,
   FlagsAccordionEntries,
   FormControl,
+  Link,
   ListInput,
   MarkdownInput,
   MeasurementInput,
@@ -217,6 +225,7 @@ const defaultComponents = {
   MenuListToggle,
   MenuMmInput,
   MenuNumberInput,
+  MenuOnlySettingInput,
   MenuPctInput,
   MenuSliderInput,
   MenuBoolValue,
@@ -228,7 +237,9 @@ const defaultComponents = {
   MenuListValue,
   MenuMmOptionValue,
   MenuMmValue,
+  MenuOnlySettingValue,
   MenuPctOptionValue,
+  MenuScaleSettingValue,
   MenuShowValue,
 }
 
@@ -236,14 +247,16 @@ const defaultComponents = {
  * This method returns a component that can be swizzled
  * So either the passed-in component, or the default one
  */
-export const swizzleComponents = (components = {}) => {
+export const swizzleComponents = (components = {}, Swizzled) => {
   /*
    * We need to return all resulting components, swizzled or not
    * So we create this object so we can pass that down
    */
   const all = {}
   for (let [name, Component] of Object.entries(defaultComponents)) {
-    all[name] = components[name] ? components[name] : defaultComponents[name]
+    all[name] = components[name]
+      ? (props) => components[name]({ Swizzled, ...props })
+      : (props) => <Component {...props} Swizzled={Swizzled} />
   }
 
   /*

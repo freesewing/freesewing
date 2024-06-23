@@ -33,7 +33,7 @@
 // This is also the order in which they will be displayed
 export const flagTypes = ['error', 'warn', 'note', 'info', 'tip', 'fixme']
 
-export const Flag = ({ data, t, handleUpdate }) => {
+export const Flag = ({ Swizzled, data, t, handleUpdate }) => {
   const BtnIcon = data.suggest?.icon ? flagIcons[data.suggest.icon] : false
 
   const button =

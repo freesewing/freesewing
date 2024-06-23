@@ -69,6 +69,12 @@ export const defaultConfig = {
     mm: 'MmOptionValue',
     pct: 'PctOptionValue',
   },
+  // Facilitate custom handlers for core settings
+  menuSettingsHandlerMethods: {
+    only: 'menuSettingsOnlyHandler',
+    sabool: 'menuSettingsSaboolHandler',
+    samm: 'menuSettingsSammHandler',
+  },
   menuGroupEmojis: {
     advanced: '🤓',
     fit: '👕',
@@ -80,6 +86,36 @@ export const defaultConfig = {
   i18nPatternNamespaces: ['plugin-annotations'],
   // State backend (one of 'react', 'storage', 'session', or 'url')
   stateBackend: 'url',
+  // Control levels
+  controlLevels: {
+    core: {
+      sa: 2,
+      paperless: 2,
+      units: 1,
+      complete: 4,
+      expand: 4,
+      only: 4,
+      scale: 4,
+      margin: 4,
+    },
+    ui: {
+      renderer: 4,
+      kiosk: 2,
+    },
+    views: {
+      draft: 1,
+      measurements: 1,
+      test: 3,
+      time: 3,
+      print: 1,
+      export: 1,
+      save: 1,
+      edit: 4,
+      logs: 2,
+      inspect: 4,
+      docs: 1,
+    },
+  },
 }
 
 /*
