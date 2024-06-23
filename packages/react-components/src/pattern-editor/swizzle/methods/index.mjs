@@ -35,9 +35,10 @@ import { round } from './round.mjs'
 import { structureMeasurementsAsDesign } from './structure-measurements-as-design.mjs'
 import { t } from './t.mjs'
 import { draft } from './draft.mjs'
-import { menuSettingsStructure } from './menu-settings-structure.mjs'
-import { menuOptionsStructure } from './menu-options-structure.mjs'
-import { menuOptionType } from './menu-option-type.mjs'
+import { menuCoreSettingsStructure } from './menu-core-settings-structure.mjs'
+import { menuDesignOptionsStructure } from './menu-design-options-structure.mjs'
+import { menuUiPreferencesStructure } from './menu-ui-preferences-structure.mjs'
+import { menuDesignOptionType } from './menu-design-option-type.mjs'
 import { menuRoundPct, menuValidateNumericValue, menuValueWasChanged } from './menus.mjs'
 import { formatPercentage } from './format-percentage.mjs'
 import { defaultSa } from './default-sa.mjs'
@@ -46,10 +47,10 @@ import { formatImperial } from './format-imperial.mjs'
 import { formatMm } from './format-mm.mjs'
 import { roundMm } from './round-mm.mjs'
 import {
-  menuSettingsOnlyHandler,
-  menuSettingsSammHandler,
-  menuSettingsSaboolHandler,
-} from './menu-settings-handlers.mjs'
+  menuCoreSettingsOnlyHandler,
+  menuCoreSettingsSammHandler,
+  menuCoreSettingsSaboolHandler,
+} from './menu-core-settings-handlers.mjs'
 import { defaultSamm } from './default-samm.mjs'
 
 /*
@@ -75,12 +76,13 @@ const defaultMethods = {
   isDegreeMeasurement,
   measurementAsMm,
   measurementAsUnits,
-  menuSettingsStructure,
-  menuSettingsOnlyHandler,
-  menuSettingsSammHandler,
-  menuSettingsSaboolHandler,
-  menuOptionsStructure,
-  menuOptionType,
+  menuCoreSettingsStructure,
+  menuCoreSettingsOnlyHandler,
+  menuCoreSettingsSammHandler,
+  menuCoreSettingsSaboolHandler,
+  menuDesignOptionsStructure,
+  menuDesignOptionType,
+  menuUiPreferencesStructure,
   menuRoundPct,
   menuValidateNumericValue,
   menuValueWasChanged,

@@ -1,4 +1,4 @@
-export const menuOptionType = (Swizzled, option) => {
+export const menuDesignOptionType = (Swizzled, option) => {
   if (typeof option?.pct !== 'undefined') return 'pct'
   if (typeof option?.bool !== 'undefined') return 'bool'
   if (typeof option?.count !== 'undefined') return 'count'

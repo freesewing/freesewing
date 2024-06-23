@@ -70,10 +70,10 @@ export const defaultConfig = {
     pct: 'PctOptionValue',
   },
   // Facilitate custom handlers for core settings
-  menuSettingsHandlerMethods: {
-    only: 'menuSettingsOnlyHandler',
-    sabool: 'menuSettingsSaboolHandler',
-    samm: 'menuSettingsSammHandler',
+  menuCoreSettingsHandlerMethods: {
+    only: 'menuCoreSettingsOnlyHandler',
+    sabool: 'menuCoreSettingsSaboolHandler',
+    samm: 'menuCoreSettingsSammHandler',
   },
   menuGroupEmojis: {
     advanced: '🤓',
@@ -81,6 +81,12 @@ export const defaultConfig = {
     style: '💃🏽',
     dflt: '🕹️',
     groupDflt: '📁',
+  },
+  menuOptionEditLabels: {
+    pct: '%',
+    count: '#',
+    deg: '°',
+    mm: 'mm',
   },
   // i18n
   i18nPatternNamespaces: ['plugin-annotations'],

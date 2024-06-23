@@ -24,27 +24,19 @@ export const ViewWrapper = ({
   /*
    * Load control state
    */
-  const { control, setControl } = Swizzled.hooks.useControlState(Swizzled)
+  const { control, setControl } = Swizzled.hooks.useControlState()
 
   // Editor state
-  const [state, setState, update] = Swizzled.hooks?.useEditorState
-    ? Swizzled.hooks.useEditorState(Swizzled, initialEditorState(Swizzled, preload))
-    : [null, null, null]
+  const [state, setState, update] = Swizzled.hooks.useEditorState(
+    initialEditorState(Swizzled, preload, { locale, control })
+  )
 
   // Figure out what view to load
   const [View, extraProps] = viewfinder({ design, designs, preload, state, Swizzled })
 
   // Render the view
   return (
-    <>
-      <p>{state?.view}</p>
-      <View
-        {...extraProps}
-        state={{ ...state, control, locale }}
-        update={{ ...update, control: setControl }}
-        {...{ designs }}
-      />
-    </>
+    <View {...extraProps} update={{ ...update, control: setControl }} {...{ designs, state }} />
   )
 }
 
@@ -77,7 +69,7 @@ const viewfinder = ({ design, designs, preload, state, Swizzled }) => {
    */
   const [measurementsOk, missing] = Swizzled.methods.hasRequiredMeasurements(
     designs[design],
-    state.settings.measurements
+    state.settings?.measurements
   )
   if (!measurementsOk)
     return [
@@ -108,7 +100,7 @@ const getViewComponent = (view = false, Swizzled) =>
  * @param {object} defaults - The defaults prop passed to the ViewWrapper component
  * @return {object} initial - The initial Editor State object
  */
-const initialEditorState = (Swizzled, preload = {}) => {
+const initialEditorState = (Swizzled, preload = {}, locale = 'en', extra = {}) => {
   /*
    * Get swizzled defaults
    */
@@ -117,7 +109,7 @@ const initialEditorState = (Swizzled, preload = {}) => {
   /*
    * Create initial state object
    */
-  const initial = { settings: false, ui: false }
+  const initial = { settings: false, ui: false, locale, ...extra }
 
   /*
    * Set preload state

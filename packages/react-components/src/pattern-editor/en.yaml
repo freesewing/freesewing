@@ -151,4 +151,4 @@ save.d: Save the current pattern to your FreeSewing account
 export.t: Export your pattern
 export.d: Allows you to export this pattern to a variety of formats
 logs.t: Pattern logs
-
+enterCustomValue: Enter a custom value

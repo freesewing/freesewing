@@ -3,17 +3,16 @@
  * @param {object} Swizzled - Swizzled code, not used here
  */
 export const cloudImageUrl = (Swizzled, { id = 'default-avatar', variant = 'public' }) => {
-  const config = methods.getConfig()
   /*
    * Return something default so that people will actually change it
    */
-  if (!id || id === 'default-avatar') return config.cloudImageDflt
+  if (!id || id === 'default-avatar') return Swizzled.config.cloudImageDflt
 
   /*
    * If the variant is invalid, set it to the smallest thumbnail so
    * people don't load enourmous images by accident
    */
-  if (!config.cloudImageVariants.includes(variant)) variant = 'sq100'
+  if (!Swizzled.config.cloudImageVariants.includes(variant)) variant = 'sq100'
 
-  return `${config.cloudImageUrl}${id}/${variant}`
+  return `${Swizzled.config.cloudImageUrl}${id}/${variant}`
 }

@@ -2,7 +2,7 @@ import { mergeOptions } from '@freesewing/core'
 import set from 'lodash.set'
 import orderBy from 'lodash.orderby'
 
-export const menuOptionsStructure = (Swizzled, options, settings, asFullList = false) => {
+export const menuDesignOptionsStructure = (Swizzled, options, settings, asFullList = false) => {
   if (!options) return options
   const sorted = {}
   for (const [name, option] of Object.entries(options)) {
@@ -13,7 +13,7 @@ export const menuOptionsStructure = (Swizzled, options, settings, asFullList = f
   // Fixme: One day we should sort this based on the translation
   for (const option of orderBy(sorted, ['order', 'menu', 'name'], ['asc', 'asc', 'asc'])) {
     if (typeof option === 'object') {
-      const oType = Swizzled.methods.menuOptionType(option)
+      const oType = Swizzled.methods.menuDesignOptionType(option)
       option.dflt = option.dflt || option[oType]
       if (oType === 'pct') option.dflt /= 100
       if (typeof option.menu === 'function')

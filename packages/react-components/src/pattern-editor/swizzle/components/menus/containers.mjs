@@ -177,7 +177,7 @@ export const MenuItemGroup = ({
           </div>
         )
       : isDesignOptionsGroup
-      ? values[Swizzled.methods.menuOptionType(item)]
+      ? values[Swizzled.methods.menuDesignOptionType(item)]
       : values[itemName]
       ? values[itemName]
       : () => <span>¯\_(ツ)_/¯</span>

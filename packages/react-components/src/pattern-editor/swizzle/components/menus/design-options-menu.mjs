@@ -10,7 +10,7 @@ import { useCallback, useMemo } from 'react'
  */
 export const DesignOptionsMenu = ({ Design, isFirst = true, state, update, Swizzled }) => {
   const structure = useMemo(
-    () => Swizzled.methods.menuOptionsStructure(Design.patternConfig.options, state.settings),
+    () => Swizzled.methods.menuDesignOptionsStructure(Design.patternConfig.options, state.settings),
     [Design.patternConfig, state.settings]
   )
   const updateHandler = useCallback(
@@ -86,7 +86,7 @@ export const DesignOptionsMenu = ({ Design, isFirst = true, state, update, Swizz
  * @param  {Object} options.rest     the rest of the props
  */
 export const DesignOption = ({ config, settings, control, inputs, values, Swizzled, ...rest }) => {
-  const type = Swizzled.methods.menuOptionType(config)
+  const type = Swizzled.methods.menuDesignOptionType(config)
   const Input = inputs[type]
   const Value = values[type]
   const allowOverride = ['pct', 'count', 'deg'].includes(type)

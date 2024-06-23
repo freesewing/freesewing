@@ -10,13 +10,7 @@ import { useMemo } from 'react'
  * @param {object} props.Swizzled - An object holding swizzled code
  */
 export const CoreSettingsMenu = ({ update, state, language, control, Design, Swizzled }) => {
-  //const structure = useMemo(() => Swizzled.methods.menuSettingsStructure({
-  //  language,
-  //  units: state.settings.units,
-  //  sabool: state.settings.sabool,
-  //  parts: Design.patternConfig.draftOrder,
-  //}),[])
-  const structure = Swizzled.methods.menuSettingsStructure({
+  const structure = Swizzled.methods.menuCoreSettingsStructure({
     language,
     units: state.settings.units,
     sabool: state.settings.sabool,
@@ -113,8 +107,10 @@ export const CoreSetting = ({
   /*
    * Load a specific update handler if one is configured
    */
-  const handler = Swizzled.config.menuSettingsHandlerMethods?.[name.toLowerCase()]
-    ? Swizzled.methods[Swizzled.config.menuSettingsHandlerMethods[name.toLowerCase()]](handlerArgs)
+  const handler = Swizzled.config.menuCoreSettingsHandlerMethods?.[name.toLowerCase()]
+    ? Swizzled.methods[Swizzled.config.menuCoreSettingsHandlerMethods[name.toLowerCase()]](
+        handlerArgs
+      )
     : updateHandler
 
   return (

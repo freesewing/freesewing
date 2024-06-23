@@ -11,7 +11,7 @@
  * @return {Number}     the given num multiplied by the factor, rounded appropriately
  */
 export const menuRoundPct = (Swizzled, num, factor) => {
-  const { round } = methods
+  const { round } = Swizzled.methods
   // stringify
   const str = '' + num
   // get the index of the decimal point in the number

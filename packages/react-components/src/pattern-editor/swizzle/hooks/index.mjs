@@ -64,8 +64,8 @@ export const swizzleHooks = (hooks = {}, Swizzled) => {
   const all = {}
   for (const [name, hook] of Object.entries(defaultHooks(Swizzled.config))) {
     all[name] = hooks[name]
-      ? (props) => hooks[name]({ Swizzled, ...props })
-      : (props) => hook({ Swizzled, ...props })
+      ? (...params) => hooks[name](Swizzled, ...params)
+      : (...params) => hook(Swizzled, ...params)
   }
 
   /*

@@ -1,4 +1,4 @@
-export const menuSettingsStructure = (
+export const menuCoreSettingsStructure = (
   Swizzled,
   { language = 'en', units = 'metric', sabool = false, parts = [] }
 ) => ({

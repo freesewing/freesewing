@@ -1,5 +1,5 @@
 /** custom event handlers for inputs that need them */
-export const menuSettingsOnlyHandler =
+export const menuCoreSettingsOnlyHandler =
   (Swizzled, { updateHandler, current }) =>
   (path, part) => {
     // if there's no part being set, it's a reset
@@ -18,7 +18,7 @@ export const menuSettingsOnlyHandler =
     updateHandler(path, newParts)
   }
 
-export const menuSettingsSammHandler =
+export const menuCoreSettingsSammHandler =
   (Swizzled, { updateHandler, config }) =>
   (_path, newCurrent) => {
     // convert to millimeters if there's a value
@@ -30,7 +30,7 @@ export const menuSettingsSammHandler =
     ])
   }
 
-export const menuSettingsSaboolHandler =
+export const menuCoreSettingsSaboolHandler =
   (Swizzled, { updateHandler, samm }) =>
   (_path, newCurrent) => {
     updateHandler([

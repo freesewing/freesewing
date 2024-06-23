@@ -17,15 +17,15 @@ export const UserSetPicker = ({
   Swizzled,
 }) => {
   // Swizzled components
-  const { Popout, Link, PlusIcon, MeasurementsSetCard } = swizzled.components
+  const { Popout, Link, PlusIcon, MeasurementsSetCard } = Swizzled.components
   // Swizzled hooks
-  const { useBackend, useAccount } = swizzled.hooks
+  const { useBackend, useAccount } = Swizzled.hooks
   const backend = useBackend()
-  const { control } = useAccount(Swizzle)
+  const { control } = useAccount()
   // Swizzled methods
-  const { t, hasRequiredMeasurements } = swizzled.methods
+  const { t, hasRequiredMeasurements } = Swizzled.methods
   // Swizzled config
-  const { config } = swizzled
+  const { config } = Swizzled
 
   // Local state
   const [sets, setSets] = useState({})
@@ -122,15 +122,15 @@ export const BookmarkedSetPicker = ({
   Swizzled,
 }) => {
   // Swizzled components
-  const { Popout, Link, PlusIcon, MeasurementsSetCard } = swizzled.components
+  const { Popout, Link, PlusIcon, MeasurementsSetCard } = Swizzled.components
   // Swizzled hooks
-  const { useBackend, useAccount } = swizzled.hooks
-  const backend = useBackend(Swizzled)
-  const { control } = useAccount(Swizzled)
+  const { useBackend, useAccount } = Swizzled.hooks
+  const backend = useBackend()
+  const { control } = useAccount()
   // Swizzled methods
-  const { t, hasRequiredMeasurements } = swizzled.methods
+  const { t, hasRequiredMeasurements } = Swizzled.methods
   // Swizzled config
-  const { config } = swizzled
+  const { config } = Swizzled
 
   // Local state
   const [sets, setSets] = useState({})
@@ -206,13 +206,13 @@ export const CuratedSetPicker = ({
   clickHandler,
   missingClickHandler,
   size = 'lg',
-  swizzled,
+  Swizzled,
   locale,
 }) => {
   // Swizzled components
-  const { CuratedMeasurementsSetLineup } = swizzled.components
+  const { CuratedMeasurementsSetLineup } = Swizzled.components
   // Swizzled hooks
-  const { useBackend } = swizzled.hooks
+  const { useBackend } = Swizzled.hooks
   const backend = useBackend()
 
   // Local state

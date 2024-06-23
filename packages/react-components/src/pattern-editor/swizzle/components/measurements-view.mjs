@@ -41,7 +41,7 @@ export const MeasurementsView = ({
   // Swizzled methods
   const { t, designMeasurements, capitalize } = Swizzled.methods
   // Swizzled config
-  const { config } = swizzled
+  const { config } = Swizzled
   // Editor state
   const { locale } = state
 

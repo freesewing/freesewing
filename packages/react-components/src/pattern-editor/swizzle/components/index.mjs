@@ -24,6 +24,8 @@
 import Link from 'next/link'
 // Accordion
 import { BaseAccordion, SubAccordion, Accordion } from './accordion.mjs'
+// Control
+import { Control } from './control.mjs'
 // Popout
 import { Popout } from './popout.mjs'
 // Loader
@@ -35,11 +37,14 @@ import { CuratedMeasurementsSetLineup } from './curated-sets.mjs'
 import { MeasurementsSetCard } from './measurements-set-card.mjs'
 // Icons
 import {
+  ApplyIcon,
   BeakerIcon,
   BookmarkIcon,
   BoolNoIcon,
   BoolYesIcon,
+  CircleIcon,
   CloseIcon,
+  ControlIcon,
   CuratedMeasurementsSetIcon,
   DesignIcon,
   DocsIcon,
@@ -48,6 +53,7 @@ import {
   FlagIcon,
   GaugeIcon,
   GroupIcon,
+  KioskIcon,
   ListIcon,
   MeasurementsSetIcon,
   NoIcon,
@@ -56,6 +62,7 @@ import {
   PlusIcon,
   PrintIcon,
   ResetIcon,
+  RocketIcon,
   SaveIcon,
   SettingsIcon,
   UiIcon,
@@ -103,15 +110,18 @@ import { Pattern } from '@freesewing/react-components/pattern'
 import { DraftMenu } from './menus/draft-menu.mjs'
 import { CoreSettingsMenu, CoreSetting } from './menus/core-settings-menu.mjs'
 import { DesignOptionsMenu, DesignOption } from './menus/design-options-menu.mjs'
+import { UiPreferencesMenu, UiPreference } from './menus/ui-preferences-menu.mjs'
 import { MenuItem, MenuItemGroup, MenuItemTitle } from './menus/containers.mjs'
 import {
   MenuBoolInput,
   MenuConstantInput,
   MenuDegInput,
+  MenuEditOption,
   MenuListInput,
   MenuListToggle,
   MenuMmInput,
   MenuNumberInput,
+  MenuControlSettingInput,
   MenuOnlySettingInput,
   MenuPctInput,
   MenuSliderInput,
@@ -142,6 +152,8 @@ const defaultComponents = {
   BaseAccordion,
   BookmarkedSetPicker,
   ButtonFrame,
+  CircleIcon,
+  Control,
   CoreSetting,
   CoreSettingsMenu,
   CuratedMeasurementsSetIcon,
@@ -173,22 +185,27 @@ const defaultComponents = {
   SubAccordion,
   TemporaryLoader,
   ToggleInput,
+  UiPreferencesMenu,
+  UiPreference,
   UserSetPicker,
   ViewPicker,
   ZoomablePattern,
   ZoomContextProvider,
   // icons
+  ApplyIcon,
   BeakerIcon,
   BookmarkIcon,
   BoolNoIcon,
   BoolYesIcon,
   CloseIcon,
+  ControlIcon,
   DesignIcon,
   DocsIcon,
   EditIcon,
   FlagIcon,
   GaugeIcon,
   GroupIcon,
+  KioskIcon,
   ListIcon,
   MeasurementsSetIcon,
   NoIcon,
@@ -197,6 +214,7 @@ const defaultComponents = {
   PlusIcon,
   PrintIcon,
   ResetIcon,
+  RocketIcon,
   SaveIcon,
   SettingsIcon,
   UiIcon,
@@ -221,10 +239,12 @@ const defaultComponents = {
   MenuBoolInput,
   MenuConstantInput,
   MenuDegInput,
+  MenuEditOption,
   MenuListInput,
   MenuListToggle,
   MenuMmInput,
   MenuNumberInput,
+  MenuControlSettingInput,
   MenuOnlySettingInput,
   MenuPctInput,
   MenuSliderInput,

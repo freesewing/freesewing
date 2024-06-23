@@ -1,4 +1,4 @@
-import { useMemo, useCallback } from 'react'
+import { useMemo, useCallback, useState } from 'react'
 
 /** A boolean version of {@see MenuListInput} that sets up the necessary configuration */
 export const MenuBoolInput = (props) => {
@@ -293,7 +293,7 @@ export const MenuSliderInput = ({
   setReset,
   children,
   changed,
-  swizzled,
+  Swizzled,
 }) => {
   const { max, min } = config
   const handleChange = useSharedHandlers({
@@ -306,32 +306,37 @@ export const MenuSliderInput = ({
 
   const val = typeof current === 'undefined' ? config.dflt : current
 
-  return (
-    <>
-      <div className="flex flex-row justify-between">
-        {override ? (
-          <EditCount
+  if (override)
+    return (
+      <>
+        <div className="flex flex-row justify-between">
+          <Swizzled.components.MenuEditOption
             {...{
+              config,
+              Swizzled,
               current: val,
               handleChange,
               min,
               max,
-              t,
             }}
           />
-        ) : (
-          <>
-            <span className="opacity-50">
-              <span dangerouslySetInnerHTML={{ __html: valFormatter(min) + suffix }} />
-            </span>
-            <span className={`font-bold ${val === config.dflt ? 'text-secondary' : 'text-accent'}`}>
-              <span dangerouslySetInnerHTML={{ __html: valFormatter(val) + suffix }} />
-            </span>
-            <span className="opacity-50">
-              <span dangerouslySetInnerHTML={{ __html: valFormatter(max) + suffix }} />
-            </span>
-          </>
-        )}
+        </div>
+        {children}
+      </>
+    )
+
+  return (
+    <>
+      <div className="flex flex-row justify-between">
+        <span className="opacity-50">
+          <span dangerouslySetInnerHTML={{ __html: valFormatter(min) + suffix }} />
+        </span>
+        <span className={`font-bold ${val === config.dflt ? 'text-secondary' : 'text-accent'}`}>
+          <span dangerouslySetInnerHTML={{ __html: valFormatter(val) + suffix }} />
+        </span>
+        <span className="opacity-50">
+          <span dangerouslySetInnerHTML={{ __html: valFormatter(max) + suffix }} />
+        </span>
       </div>
       <input
         type="range"
@@ -347,9 +352,11 @@ export const MenuSliderInput = ({
   )
 }
 
-/** A component that shows a number input to edit a value */
-const MenuEditCount = (props) => {
-  const { handleChange } = props
+export const MenuEditOption = (props) => {
+  const [manualEdit, setManualEdit] = useState(props.current)
+  const { config, handleChange, Swizzled } = props
+  const type = Swizzled.methods.menuDesignOptionType(config)
+
   const onUpdate = useCallback(
     (validVal) => {
       if (validVal !== null && validVal !== false) handleChange(validVal)
@@ -357,16 +364,21 @@ const MenuEditCount = (props) => {
     [handleChange]
   )
 
+  if (!['pct', 'count', 'deg', 'mm'].includes(type))
+    return <p>This design option type does not have a component to handle manual input.</p>
+
   return (
     <div className="form-control mb-2 w-full">
-      <label className="label">
-        <span className="label-text text-base-content">{props.min}</span>
-        <span className="label-text font-bold text-base-content">{props.current}</span>
-        <span className="label-text text-base-content">{props.max}</span>
+      <label className="label font-medium text-accent">
+        <em>
+          {Swizzled.methods.t('pe:enterCustomValue')} ({Swizzled.config.menuOptionEditLabels[type]})
+        </em>
       </label>
-      <label className="input-group input-group-sm">
-        <NumberInput value={props.current} onUpdate={onUpdate} min={props.min} max={props.max} />
-        <span className="text-base-content font-bold">#</span>
+      <label className="input-group input-group-sm flex flex-row items-center gap-2 -mt-4">
+        <Swizzled.components.NumberInput value={manualEdit} update={setManualEdit} />
+        <button className="btn btn-secondary mt-4" onClick={() => onUpdate(manualEdit)}>
+          <Swizzled.components.ApplyIcon />
+        </button>
       </label>
     </div>
   )
@@ -431,4 +443,17 @@ export const MenuOnlySettingInput = (props) => {
   config.list = order.map((entry) => entry.split('|')[1])
 
   return <Swizzled.components.MenuListInput {...props} />
+}
+
+export const MenuControlSettingInput = (props) => {
+  const { state, update, Swizzled } = props
+
+  return (
+    <Swizzled.components.MenuListInput
+      {...props}
+      updateHandler={update.control}
+      current={state.control}
+      compact={state.control < 2}
+    />
+  )
 }

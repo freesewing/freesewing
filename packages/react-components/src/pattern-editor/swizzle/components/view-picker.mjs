@@ -16,18 +16,18 @@ export const ViewPicker = ({ designs, design, Design, Swizzled, update, state })
       <h2>{Swizzled.methods.t('Choose an activity')}</h2>
       <div className="max-w-6xl grid grid-cols-1 lg:grid-cols-2 mx-auto justify-center gap-2 lg:gap-4 mt-4">
         {Swizzled.config.mainViews.map((view) => (
-          <MainCard key={view} {...{ view, update, Design }} />
+          <MainCard key={view} {...{ view, update, Design, Swizzled }} />
         ))}
       </div>
       <div className="max-w-6xl grid grid-cols-1 lg:grid-cols-4 mx-auto justify-center gap-2 lg:gap-4 mt-4">
         {Swizzled.config.extraViews.map((view) => (
-          <ExtraCard key={view} {...{ view, update }} />
+          <ExtraCard key={view} {...{ view, update, Swizzled }} />
         ))}
       </div>
       {showDev || state.control > 3 ? (
         <div className="max-w-6xl grid grid-cols-1 lg:grid-cols-4 mx-auto justify-center gap-2 lg:gap-4 mt-4">
           {Swizzled.config.devViews.map((view) => (
-            <ExtraCard key={view} {...{ view, update }} />
+            <ExtraCard key={view} {...{ view, update, Swizzled }} />
           ))}
         </div>
       ) : null}

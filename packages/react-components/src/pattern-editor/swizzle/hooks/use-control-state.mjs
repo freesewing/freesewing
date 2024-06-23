@@ -7,12 +7,12 @@ export const useControlState = (Swizzled) => {
   /*
    * Load account data through useAccount hook
    */
-  const { account, setAccount, token } = Swizzled.hooks.useAccount(Swizzled)
+  const { account, setAccount, token } = Swizzled.hooks.useAccount()
 
   /*
    * Load backend client through useBackend hook
    */
-  const backend = Swizzled.hooks.useBackend(Swizzled)
+  const backend = Swizzled.hooks.useBackend()
 
   // State
   const [selection, setSelection] = useState(account.control)

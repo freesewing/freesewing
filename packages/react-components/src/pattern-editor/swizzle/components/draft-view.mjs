@@ -4,25 +4,21 @@
  * @param (object) props - All the props
  * @param {function} props.Design - The design constructor
  * @param {array} props.missingMeasurements - List of missing measurements for the current design
- * @param {object} props.locale - The language code (locale) currently used
  * @param {object} props.state - The ViewWrapper state object
  * @param {object} props.state.settings - The current settings
  * @param {object} props.update - Helper object for updating the ViewWrapper state
  * @param {object} props.Swizzled - An object holding swizzled code
  * @return {function} DraftView - React component
  */
-export const DraftView = ({ Design, locale, missingMeasurements, state, update, Swizzled }) => {
-  // Passed down editor state
-  const { settings, ui, control } = state
-
+export const DraftView = ({ Design, missingMeasurements, state, update, Swizzled }) => {
   /*
    * First, attempt to draft
    */
-  const { pattern, errors, failure } = Swizzled.methods.draft(Design, settings)
+  const { pattern, errors, failure } = Swizzled.methods.draft(Design, state.settings)
 
   let output = null
   let renderProps = false
-  if (ui.renderer === 'svg') {
+  if (state.ui?.renderer === 'svg') {
     try {
       const __html = pattern.render()
       output = (
@@ -38,14 +34,14 @@ export const DraftView = ({ Design, locale, missingMeasurements, state, update, 
     output = (
       <Swizzled.components.ZoomablePattern
         renderProps={renderProps}
-        patternLocale={settings.locale}
+        patternLocale={state.locale || 'en'}
       />
     )
   }
 
   return (
     <Swizzled.components.PatternLayout
-      {...{ update, control, Design, output, state }}
+      {...{ update, Design, output, state }}
       menu={<Swizzled.components.DraftMenu {...{ Design, pattern, update, state }} />}
     />
   )

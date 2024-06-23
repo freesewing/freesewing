@@ -19,7 +19,7 @@ export const MeasurementsSetCard = ({
     className: `bg-base-300 aspect-square h-${s} w-${s} mb-2
       mx-auto flex flex-col items-start text-center justify-between rounded-none md:rounded shadow`,
     style: {
-      backgroundImage: `url(${methods.cloudImageUrl({ type: 'w500', id: set.img })})`,
+      backgroundImage: `url(${Swizzled.methods.cloudImageUrl({ type: 'w500', id: set.img })})`,
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '50%',
