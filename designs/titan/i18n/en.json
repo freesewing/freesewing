@@ -9,7 +9,11 @@
     "crossSeamFitFailedBack.t": "Back cross seam compromised",
     "crossSeamFitFailedBack.d": "No solution was found to fit the cross seam in the back part. As a compromise, we've used the best available solution instead.\n\nPlease verify your measurements before contacting support.",
     "crossSeamFitFailedFront.t": "Front cross seam compromised",
-    "crossSeamFitFailedFront.d": "No solution was found to fit the cross seam in the front part. As a compromise, we've used the best available solution instead.\n\nPlease verify your measurements before contacting support."
+    "crossSeamFitFailedFront.d": "No solution was found to fit the cross seam in the front part. As a compromise, we've used the best available solution instead.\n\nPlease verify your measurements before contacting support.",
+    "lowFrontHeight.t": "Front waist too low",
+    "lowFrontHeight.d": "The front cross seam curve was adjusted as the front waistband was unexpectedly low.\n\nThe generated pattern is likely not correct. Please verify your measurements before contacting support.",
+    "lowBackHeight.t": "Back waist too low",
+    "lowBackHeight.d": "The back cross seam curve was adjusted as the back waistband was unexpectedly low.\n\nThe generated pattern is likely not correct. Please verify your measurements before contacting support."
   },
   "o": {
     "kneeEase": {

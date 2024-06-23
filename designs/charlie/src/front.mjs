@@ -117,21 +117,24 @@ function draftCharlieFront({
 
   // Too small to draw for dolls
   if (measurements.waist > 500) {
-    paths.completeJseam = JseamCurve.split(points.flyBottomSeamLine)[0]
-      .clone()
-      .setClass('dashed')
-      .addText('jseamStitchLine', 'center text-sm')
+    const splitElement = JseamCurve.split(points.flyBottomSeamLine)[0]
+    if (splitElement) {
+      paths.completeJseam = splitElement
+        .clone()
+        .setClass('dashed')
+        .addText('jseamStitchLine', 'center text-sm')
 
-    paths.flyRightLegExtension = crotchCurve
-      .clone()
-      .split(points.flyBottom)[1]
-      .offset(topStitchDist)
-      .line(points.styleWaistIn)
-      .reverse()
-      .line(points.flyExtensionBottom)
-      .reverse()
-      .setClass('fabric')
-      .addText('rightLegSeamline', 'center fill-note text-sm')
+      paths.flyRightLegExtension = crotchCurve
+        .clone()
+        .split(points.flyBottom)[1]
+        .offset(topStitchDist)
+        .line(points.styleWaistIn)
+        .reverse()
+        .line(points.flyExtensionBottom)
+        .reverse()
+        .setClass('fabric')
+        .addText('rightLegSeamline', 'center fill-note text-sm')
+    }
   }
 
   // Construct pocket slant
