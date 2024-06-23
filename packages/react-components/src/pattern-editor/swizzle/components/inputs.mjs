@@ -1,23 +1,6 @@
 // Hooks
 import { useState } from 'react'
 
-// Dependencies
-//import { cloudflareImageUrl } from 'shared/utils.mjs'
-//import { collection } from 'site/hooks/use-design.mjs'
-//// Context
-//import { ModalContext } from 'shared/context/modal-context.mjs'
-//import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
-//import { useTranslation } from 'next-i18next'
-//import { useDropzone } from 'react-dropzone'
-//import { useBackend } from 'shared/hooks/use-backend.mjs'
-//// Components
-//import { Mdx } from 'shared/components/mdx/dynamic.mjs'
-//import { ResetIcon, DocsIcon, UploadIcon } from 'shared/components/icons.mjs'
-//import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-//import { isDegreeMeasurement } from 'config/measurements.mjs'
-//import { measurementAsMm, measurementAsUnits, parseDistanceInput } from 'shared/utils.mjs'
-//import { Tabs, Tab } from 'shared/components/tabs.mjs'
-
 /*
  * Helper component to wrap a form control with a label
  */
@@ -28,10 +11,8 @@ export const FormControl = ({
   labelBL = false, // Optional bottom-left label
   labelBR = false, // Optional bottom-right label
   forId = false, // ID of the for element we are wrapping
-  methods, // Object holding swizzled methods
+  Swizzled, // Object holding swizzled code
 }) => {
-  const { setModal } = methods
-
   if (labelBR && !labelBL) labelBL = <span></span>
 
   const topLabelChildren = (
@@ -42,7 +23,7 @@ export const FormControl = ({
           <button
             className="btn btn-ghost btn-sm btn-circle hover:btn-secondary"
             onClick={() =>
-              setModal(
+              Swizzled.methods.setModal(
                 <ModalWrapper
                   flex="col"
                   justify="top lg:justify-center"
@@ -295,8 +276,8 @@ export const MeasurementInput = ({
     typeof original === 'undefined'
       ? original
       : isDegree
-        ? Number(original)
-        : methods.measurementAsUnits(original, units)
+      ? Number(original)
+      : methods.measurementAsUnits(original, units)
   )
   const [validatedVal, setValidatedVal] = useState(methods.measurementAsUnits(original, units))
   const [valid, setValid] = useState(null)

@@ -5,8 +5,7 @@ import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch'
  * A pattern you can pan and zoom
  */
 export const ZoomablePattern = forwardRef((props, ref) => {
-  const { components, locale, renderProps } = props
-  const { Pattern } = components
+  const { locale, renderProps, Swizzled } = props
   //const { renderProps = false, components = {}, design, patternLocale } = props
   //const { locale } = useRouter()
 
@@ -53,9 +52,9 @@ export const ZoomablePattern = forwardRef((props, ref) => {
         id="pan-zoom-pattern"
       >
         {props.children || (
-          <Pattern
+          <Swizzled.components.Pattern
             {...{ renderProps }}
-            t={props.methods.t}
+            t={Swizzled.methods.t}
             ref={ref}
             className="freesewing pattern w-full"
           />

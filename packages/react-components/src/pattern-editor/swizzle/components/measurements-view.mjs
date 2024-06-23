@@ -9,7 +9,7 @@ const iconClasses = { className: 'w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink
  * It will be automatically loaded if we do not have all required measurements for a design.
  *
  * @param {Object} props - All the props
- * @param {Object} props.swizzled - An object with swizzled components, hooks, methods, config, and defaults
+ * @param {Object} props.Swizzled - An object with swizzled components, hooks, methods, config, and defaults
  * @param {Function} props.Design - The design constructor
  * @param {string} props.design - The design name
  * @param {Object} props.state - The editor state object
@@ -22,7 +22,7 @@ export const MeasurementsView = ({
   design,
   missingMeasurements,
   update,
-  swizzled,
+  Swizzled,
   state,
 }) => {
   // Swizzled components
@@ -37,11 +37,9 @@ export const MeasurementsView = ({
     CuratedMeasurementsSetIcon,
     CuratedSetPicker,
     EditIcon,
-  } = swizzled.components
+  } = Swizzled.components
   // Swizzled methods
-  const { t, designMeasurements, capitalize } = swizzled.methods
-  // Swizzled hooks
-  const { useBackend, useAccount } = swizzled.hooks
+  const { t, designMeasurements, capitalize } = Swizzled.methods
   // Swizzled config
   const { config } = swizzled
   // Editor state
@@ -94,7 +92,7 @@ export const MeasurementsView = ({
           size="md"
           clickHandler={loadMeasurements}
           missingClickHandler={loadMeasurements}
-          {...{ swizzled, Design }}
+          {...{ Swizzled, Design }}
         />,
         'ownSets',
       ],
@@ -111,7 +109,7 @@ export const MeasurementsView = ({
           size="md"
           clickHandler={loadMeasurements}
           missingClickHandler={loadMeasurements}
-          {...{ swizzled, Design }}
+          {...{ Swizzled, Design }}
         />,
         'bmSets',
       ],
@@ -126,7 +124,7 @@ export const MeasurementsView = ({
         <CuratedSetPicker
           key={2}
           clickHandler={loadMeasurements}
-          {...{ swizzled, Design, locale }}
+          {...{ Swizzled, Design, locale }}
         />,
         'csets',
       ]
@@ -140,7 +138,7 @@ export const MeasurementsView = ({
       </div>
       <p className="text-left">{t('pe:editMeasurementsDesc')}</p>
     </Fragment>,
-    <MeasurementsEditor key={2} {...{ Design, swizzled, update, state }} />,
+    <MeasurementsEditor key={2} {...{ Design, Swizzled, update, state }} />,
     'edit',
   ])
 

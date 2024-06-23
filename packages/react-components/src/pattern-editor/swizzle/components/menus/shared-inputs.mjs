@@ -2,11 +2,10 @@ import { useMemo, useCallback } from 'react'
 
 /** A boolean version of {@see MenuListInput} that sets up the necessary configuration */
 export const MenuBoolInput = (props) => {
-  const { name, config } = props
-  const { MenuListInput } = props.swizzled.components
+  const { name, config, Swizzled } = props
   const boolConfig = useBoolConfig(name, config)
 
-  return <MenuListInput {...props} config={boolConfig} />
+  return <Swizzled.components.MenuListInput {...props} config={boolConfig} />
 }
 
 /** A placeholder for an input to handle constant values */
@@ -68,9 +67,8 @@ export const MenuListInput = ({
   changed,
   design,
   isDesignOption = false,
-  components,
+  Swizzled,
 }) => {
-  const { ButtonFrame } = components
   const handleChange = useSharedHandlers({
     dflt: config.dflt,
     updateHandler,
@@ -88,7 +86,7 @@ export const MenuListInput = ({
     const sideBySide = config.sideBySide || desc.length + title.length < 42
 
     return (
-      <ButtonFrame
+      <Swizzled.components.ButtonFrame
         dense={config.dense || false}
         key={entry}
         active={
@@ -108,7 +106,7 @@ export const MenuListInput = ({
           <div className="font-bold text-lg shrink-0">{title}</div>
           {compact ? null : <div className="text-base font-normal">{desc}</div>}
         </div>
-      </ButtonFrame>
+      </Swizzled.components.ButtonFrame>
     )
   })
 }
@@ -190,13 +188,8 @@ export const MenuNumberInput = ({
   max = Infinity,
   swizzled,
 }) => {
-  const { useDebouncedHandlers } = swizzled.hooks
   const valid = useRef(validateVal(value, fractions, min, max))
 
-  // this is the change handler that will be debounced by the debounce handler
-  // we check validity inside this debounced function because
-  // we need to call the debounce handler on change regardless of validity
-  // if we don't, the displayed value won't update
   const handleChange = useCallback(
     (newVal) => {
       // only actually update if the value is valid
@@ -207,9 +200,6 @@ export const MenuNumberInput = ({
     [onUpdate, valid]
   )
 
-  // get a debounce handler
-  const { debouncedHandleChange, displayVal } = useDebouncedHandlers({ handleChange, val: value })
-
   // onChange
   const onChange = useCallback(
     (evt) => {
@@ -218,10 +208,12 @@ export const MenuNumberInput = ({
       valid.current = validateVal(newVal, fractions, min, max)
 
       // handle the change
-      debouncedHandleChange(newVal)
+      handleChange(newVal)
     },
-    [debouncedHandleChange, fractions, min, max, valid]
+    [fractions, min, max, valid]
   )
+
+  const val = typeof value === 'undefined' ? config.dflt : value
 
   useEffect(() => {
     if (typeof onMount === 'function') {
@@ -237,33 +229,34 @@ export const MenuNumberInput = ({
         ${valid.current === false && 'input-error'}
         ${valid.current && 'input-success'}
       `}
-      value={displayVal}
+      value={val}
       onChange={onChange}
     />
   )
 }
 
 /** A {@see SliderInput} to handle percentage values */
-export const MenuPctInput = ({ current, changed, updateHandler, config, ...rest }) => {
-  const { MenuSliderInput } = rest.components
-  const { menuRoundPct, round } = rest.methods
+export const MenuPctInput = ({ current, changed, updateHandler, config, Swizzled, ...rest }) => {
   const factor = 100
-  let pctCurrent = changed ? menuRoundPct(current, factor) : current
+  let pctCurrent = changed ? Swizzled.methods.menuRoundPct(current, factor) : current
   const pctUpdateHandler = useCallback(
     (path, newVal) =>
-      updateHandler(path, newVal === undefined ? undefined : menuRoundPct(newVal, 1 / factor)),
+      updateHandler(
+        path,
+        newVal === undefined ? undefined : Swizzled.methods.menuRoundPct(newVal, 1 / factor)
+      ),
     [updateHandler]
   )
 
   return (
-    <MenuSliderInput
+    <Swizzled.components.MenuSliderInput
       {...{
         ...rest,
-        config: { ...config, dflt: menuRoundPct(config.dflt, factor) },
+        config: { ...config, dflt: Swizzled.methods.menuRoundPct(config.dflt, factor) },
         current: pctCurrent,
         updateHandler: pctUpdateHandler,
         suffix: '%',
-        valFormatter: round,
+        valFormatter: Swizzled.methods.round,
         changed,
       }}
     />
@@ -296,7 +289,6 @@ export const MenuSliderInput = ({
   changed,
   swizzled,
 }) => {
-  const { useDebouncedHandlers } = swizzled.hooks
   const { max, min } = config
   const handleChange = useSharedHandlers({
     current,
@@ -306,10 +298,7 @@ export const MenuSliderInput = ({
     setReset,
   })
 
-  const { debouncedHandleChange, displayVal } = useDebouncedHandlers({
-    handleChange,
-    val: changed ? current : config.dflt,
-  })
+  const val = typeof current === 'undefined' ? config.dflt : current
 
   return (
     <>
@@ -317,7 +306,7 @@ export const MenuSliderInput = ({
         {override ? (
           <EditCount
             {...{
-              current: displayVal,
+              current: val,
               handleChange,
               min,
               max,
@@ -329,12 +318,8 @@ export const MenuSliderInput = ({
             <span className="opacity-50">
               <span dangerouslySetInnerHTML={{ __html: valFormatter(min) + suffix }} />
             </span>
-            <span
-              className={`font-bold ${
-                displayVal === config.dflt ? 'text-secondary' : 'text-accent'
-              }`}
-            >
-              <span dangerouslySetInnerHTML={{ __html: valFormatter(displayVal) + suffix }} />
+            <span className={`font-bold ${val === config.dflt ? 'text-secondary' : 'text-accent'}`}>
+              <span dangerouslySetInnerHTML={{ __html: valFormatter(val) + suffix }} />
             </span>
             <span className="opacity-50">
               <span dangerouslySetInnerHTML={{ __html: valFormatter(max) + suffix }} />
@@ -344,8 +329,8 @@ export const MenuSliderInput = ({
       </div>
       <input
         type="range"
-        {...{ min, max, value: displayVal, step: config.step || 0.1 }}
-        onChange={(evt) => debouncedHandleChange(evt.target.value)}
+        {...{ min, max, value: val, step: config.step || 0.1 }}
+        onChange={(evt) => handleChange(evt.target.value)}
         className={`
           range range-sm mt-1
           ${changed ? 'range-accent' : 'range-secondary'}
@@ -355,62 +340,6 @@ export const MenuSliderInput = ({
     </>
   )
 }
-
-//  __SDEFILE__ - This file is a dependency for the stand-alone environment
-//import { useCallback, useMemo, useState, useEffect, useRef } from 'react'
-//import {
-//  round,
-//  measurementAsMm,
-//  measurementAsUnits,
-//  formatFraction128,
-//  fractionToDecimal,
-//} from 'shared/utils.mjs'
-//import debounce from 'lodash.debounce'
-//import { ButtonFrame } from 'shared/components/inputs.mjs'
-
-/*******************************************************************************************
- * REMOVEME
- * This file contains the base components to be used by inputs in menus in the workbench
- * For the purposes of our menus, we have two main types:
- * Sliders for changing numbers
- * Lists for changing everything else
- *
- * Inputs that deal with more specific use cases should wrap one of the above base inputs
- *******************************************************************************************/
-
-/**
- * Validate and parse a value that should be a number
- * @param  {any}  val            the value to validate
- * @param  {Boolean} allowFractions should fractions be considered valid input?
- * @param  {Number}  min            the minimum allowable value
- * @param  {Number}  max            the maximum allowable value
- * @return {null|false|Number}      null if the value is empty,
- *                                  false if the value is invalid,
- *                                  or the value parsed to a number if it is valid
- */
-// Is now: menuValidateNumnericValue
-//const validateVal = (val, allowFractions = true, min = -Infinity, max = Infinity) => {
-//  // if it's empty, we're neutral
-//  if (typeof val === 'undefined' || val === '') return null
-//
-//  // make sure it's a string
-//  val = ('' + val).trim()
-//
-//  // get the appropriate match pattern and check for a match
-//  const matchPattern = numberInputMatchers[Number(allowFractions)]
-//  if (!val.match(matchPattern)) return false
-//
-//  // replace comma with period
-//  const parsedVal = val.replace(',', '.')
-//  // if fractions are allowed, parse for fractions, otherwise use the number as a value
-//  const useVal = allowFractions ? fractionToDecimal(parsedVal) : parsedVal
-//
-//  // check that it's a number and it's in the range
-//  if (isNaN(useVal) || useVal > max || useVal < min) return false
-//
-//  // all checks passed. return the parsed value
-//  return useVal
-//}
 
 /** A component that shows a number input to edit a value */
 const MenuEditCount = (props) => {
@@ -446,8 +375,8 @@ const MenuEditCount = (props) => {
  */
 const useSharedHandlers = ({ dflt, updateHandler, name }) => {
   return useCallback(
-    (newCurrent) => {
-      if (newCurrent === dflt) newCurrent = undefined
+    (newCurrent = '__UNSET__') => {
+      if (newCurrent === dflt) newCurrent = '__UNSET__'
       updateHandler([name], newCurrent)
     },
     [dflt, updateHandler, name]

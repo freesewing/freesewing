@@ -14,14 +14,14 @@ export const UserSetPicker = ({
   clickHandler,
   missingClickHandler,
   size = 'lg',
-  swizzled,
+  Swizzled,
 }) => {
   // Swizzled components
   const { Popout, Link, PlusIcon, MeasurementsSetCard } = swizzled.components
   // Swizzled hooks
   const { useBackend, useAccount } = swizzled.hooks
   const backend = useBackend()
-  const { control } = useAccount()
+  const { control } = useAccount(Swizzle)
   // Swizzled methods
   const { t, hasRequiredMeasurements } = swizzled.methods
   // Swizzled config
@@ -119,14 +119,14 @@ export const BookmarkedSetPicker = ({
   clickHandler,
   missingClickHandler,
   size = 'lg',
-  swizzled,
+  Swizzled,
 }) => {
   // Swizzled components
   const { Popout, Link, PlusIcon, MeasurementsSetCard } = swizzled.components
   // Swizzled hooks
   const { useBackend, useAccount } = swizzled.hooks
-  const backend = useBackend()
-  const { control } = useAccount()
+  const backend = useBackend(Swizzled)
+  const { control } = useAccount(Swizzled)
   // Swizzled methods
   const { t, hasRequiredMeasurements } = swizzled.methods
   // Swizzled config

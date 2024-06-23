@@ -1,14 +1,12 @@
 /*************************************************************************
  *                                                                       *
- * FreeSewing's pattern editor useConfig hook, with swizzle support      *
+ * FreeSewing's pattern editor allows swizzling the config               *
  *                                                                       *
- * To 'swizzle' means to replace the default implementation of a         *
- * method with a custom one. It allows one to customize                  *
- * the pattern editor.                                                   *
+ * To 'swizzle' means to replace a default implementation with a         *
+ * custom one. It allows one to customize the pattern editor.            *
  *                                                                       *
- * This file holds the 'useConfig' hook that will load the pattern       *
- * editor configuration. It's a plain object for which all keys can be   *
- * overwritten.                                                          *
+ * This file holds the 'swizzleConfig' method that will return           *
+ * the merged configuration.                                             *
  *                                                                       *
  * To use a custom config, simply pas it as a prop into the editor       *
  * under the 'config' key. So to pass a custom 'newSet' link (used to    *
@@ -85,9 +83,9 @@ export const defaultConfig = {
 }
 
 /*
- * This hook returns the swizzled configuration
+ * This method returns the swizzled configuration
  */
-export const useConfig = (config = {}) => {
+export const swizzleConfig = (config = {}) => {
   const mergedConfig = {
     ...defaultConfig,
     ...config,

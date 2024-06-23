@@ -1,9 +1,10 @@
+import { useState, useEffect } from 'react'
+import { swizzleConfig } from './swizzle/config.mjs'
+import { swizzleDefaults } from './swizzle/defaults.mjs'
+import { swizzleComponents } from './swizzle/components/index.mjs'
+import { swizzleHooks } from './swizzle/hooks/index.mjs'
+import { swizzleMethods } from './swizzle/methods/index.mjs'
 import { ViewWrapper } from './components/view-wrapper.mjs'
-import { useComponents } from './hooks/use-components.mjs'
-import { useHooks } from './hooks/use-hooks.mjs'
-import { useMethods } from './hooks/use-methods.mjs'
-import { useConfig } from './hooks/use-config.mjs'
-import { useDefaults } from './hooks/use-defaults.mjs'
 
 /*
  * Namespaces used by the pattern editor
@@ -20,20 +21,29 @@ export const ns = ['pe', 'measurements']
  * @param {object} props.hooks = An object holding hooks to swizzle
  * @param {object} props.methods = An object holding methods to swizzle
  * @param {object} props.config = An object holding the editor config to swizzle
+ * @param {object} props.defaults = An object holding any custom defaults to swizzle
  * @param {object} props.locale = The locale (language) code
  * @param {object} props.preload = Any state to preload
  *
  */
 export const PatternEditor = (props) => {
-  /*
-   * Allow swizzling of components and methods
-   */
-  const defaults = useDefaults(props.defaults)
-  const config = useConfig(props.config)
-  const methods = useMethods(props.methods, config)
-  const components = useComponents(props.components, methods)
-  const hooks = useHooks(props.hooks, methods, config)
+  const [swizzled, setSwizzled] = useState(false)
 
+  useEffect(() => {
+    if (!swizzled) {
+      const config = swizzleConfig(props.config)
+      const merged = {
+        config,
+        defaults: swizzleDefaults(props.defaults),
+        methods: swizzleMethods(props.methods),
+        components: swizzleComponents(props.components),
+        hooks: swizzleHooks(props.hooks, config),
+      }
+      setSwizzled(merged)
+    }
+  }, [swizzled])
+
+  if (!swizzled?.hooks) return <p>One moment please....</p>
   /*
    * First of all, make sure we have all the required props
    */
@@ -48,12 +58,7 @@ export const PatternEditor = (props) => {
   /*
    * Now return the view wrapper and pass it the relevant props and the swizzled props
    */
-  return (
-    <ViewWrapper
-      {...{ designs, locale, preload }}
-      swizzled={{ components, methods, hooks, config, defaults }}
-    />
-  )
+  return <ViewWrapper {...{ designs, locale, preload }} Swizzled={swizzled} />
 }
 
 /**

@@ -1,14 +1,14 @@
 /*************************************************************************
  *                                                                       *
- * FreeSewing's pattern editor useHooks hook, with swizzle support       *
+ * FreeSewing's pattern editor allows swizzling hooks                    *
  *                                                                       *
  * To 'swizzle' means to replace the default implementation of a         *
- * method with a custom one. It allows one to customize                  *
+ * hook with a custom one. It allows one to customize                    *
  * the pattern editor.                                                   *
  *                                                                       *
- * This file holds the 'useHooks' hook that will load the various        *
- * hook methods that can be swizzled, as well as their default versions  *
- * that can be overridden.                                               *
+ * This file holds the 'swizzleHooks' method that will return            *
+ * the various hooks that can be swizzled, or their default              *
+ * implementation.                                                       *
  *                                                                       *
  * To use a custom version, simply pas it as a prop into the editor      *
  * under the 'hooks' key. So to pass a custom 'useAccount' method        *
@@ -22,16 +22,15 @@
  * Import of components that can be swizzled
  */
 // useAccount
-import { useAccount } from '../swizzle/hooks/use-account.mjs'
-import { useBackend } from '../swizzle/hooks/use-backend.mjs'
-import { useControlState } from '../swizzle/hooks/use-control-state.mjs'
+import { useAccount } from './use-account.mjs'
+import { useBackend } from './use-backend.mjs'
+import { useControlState } from './use-control-state.mjs'
 import {
   useReactEditorState,
   useStorageEditorState,
   useSessionEditorState,
   useUrlEditorState,
-} from '../swizzle/hooks/use-editor-state.mjs'
-import { useDebouncedHandlers } from '../swizzle/hooks/use-debounced-handlers.mjs'
+} from './use-editor-state.mjs'
 
 /*
  * We support different state backend, so let's handle those
@@ -50,23 +49,21 @@ const defaultHooks = (config) => ({
   useAccount,
   useBackend,
   useControlState,
-  useDebouncedHandlers,
   useEditorState: stateBackends[config.stateBackend] || useReactEditorState,
 })
 
 /*
- * This hook returns hooks that can be swizzled (so meta)
+ * This method returns hooks that can be swizzled
  * So either the passed-in methods, or the default ones
  */
-export const useHooks = (hooks = {}, methods, config) => {
+export const swizzleHooks = (hooks = {}, config) => {
   /*
-   * We need to pass down the resulting hooks, swizzled or not
+   * We need to return the resulting hooks, swizzled or not
    * So we put this in this object so we can pass that down
    */
   const all = {}
-  for (let [name, hook] of Object.entries(defaultHooks(config))) {
-    if (hooks[name]) hook = hooks[name]
-    all[name] = (...params) => hook(all, methods, ...params)
+  for (const [name, hook] of Object.entries(defaultHooks(config))) {
+    all[name] = hooks[name] ? hooks[name] : hook
   }
 
   /*

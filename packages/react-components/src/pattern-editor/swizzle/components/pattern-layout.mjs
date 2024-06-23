@@ -1,8 +1,3 @@
-import { PanZoomContextProvider } from 'shared/components/workbench/pattern/pan-zoom-context.mjs'
-import { MenuWrapper } from 'shared/components/workbench/menus/shared/menu-wrapper.mjs'
-
-export const ns = ['common', 'core-settings', 'ui-settings']
-
 /**
  * A layout for views that include a drafted pattern
  *
@@ -12,20 +7,9 @@ export const ns = ['common', 'core-settings', 'ui-settings']
  * @param {integer} control - The control value
  * @param {function} Design - The Design contructor
  * @param {object] pattern - The drafted pattern
+ * @param {object} props.Swizzled - An object holding swizzled code
  */
 export const PatternLayout = (props) => {
-  //  settings,
-  //  ui,
-  //  update,
-  //  control,
-  //  account,
-  //  design,
-  //  title,
-  //  pattern,
-  //  menu,
-  //  setSettings,
-  //  saveAs,
-  //  Header = false,
   const {
     Header = false,
     menu = null,
@@ -36,11 +20,11 @@ export const PatternLayout = (props) => {
     settings,
     ui,
     update,
+    Swizzled,
   } = props
-  const { ZoomContextProvider } = props.components
 
   return (
-    <ZoomContextProvider>
+    <Swizzled.components.ZoomContextProvider>
       <div className="flex flex-col h-full">
         <div className="flex lg:flex-row grow lg:max-h-[90vh] max-h-[calc(100vh-3rem)] h-full py-4 lg:mt-6">
           <div className="lg:w-2/3 flex flex-col h-full grow px-4">{props.output}</div>
@@ -53,11 +37,11 @@ export const PatternLayout = (props) => {
           ) : null}
         </div>
       </div>
-    </ZoomContextProvider>
+    </Swizzled.components.ZoomContextProvider>
   )
 
   return (
-    <ZoomContextProvider>
+    <Swizzled.components.ZoomContextProvider>
       <div className="flex flex-col h-full">
         {Header ? (
           <Header
@@ -81,6 +65,6 @@ export const PatternLayout = (props) => {
           {menu ? menu : null}
         </div>
       </div>
-    </ZoomContextProvider>
+    </Swizzled.components.ZoomContextProvider>
   )
 }

@@ -3,12 +3,12 @@
  *
  * @param {Object} props - All the props
  * @param {Object} designs - Object holding all designs
- * @param {Object} props.swizzled - An object with swizzled components, hooks, methods, config, and defaults
+ * @param {object} props.Swizzled - An object holding swizzled code
  * @param {Object} update - ViewWrapper state update object
  */
-export const DesignsView = ({ designs = {}, swizzled, update }) => (
+export const DesignsView = ({ designs = {}, Swizzled, update }) => (
   <div className="text-center mt-8 mb-24">
-    <h2>{swizzled.methods.t('pe:chooseADesign')}</h2>
+    <h2>{Swizzled.methods.t('pe:chooseADesign')}</h2>
     <ul className="flex flex-row flex-wrap gap-2 items-center justify-center max-w-2xl px-8 mx-auto">
       {Object.entries(designs).map(([name, design]) => (
         <li key={name}>

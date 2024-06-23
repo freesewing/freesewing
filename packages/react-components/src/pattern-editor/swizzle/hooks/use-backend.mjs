@@ -620,12 +620,11 @@ Backend.prototype.img = async function (data) {
   return responseHandler(await api.post('/img', data, { responseType: 'arraybuffer' }))
 }
 
-export function useBackend(hooks) {
+export function useBackend(Swizzled) {
   /*
    * Load swizzled useAccount hook and use it
    */
-  const { useAccount } = hooks
-  const { token } = useAccount()
+  const { token } = Swizzled.hooks.useAccount()
 
   /*
    * This backend object is what we'll end up returning

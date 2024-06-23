@@ -88,9 +88,9 @@ const flattenFlags = (flags) => {
   return [all, ns]
 }
 
-export const FlagsAccordionTitle = ({ flags, methods, components }) => {
-  const { t } = methods
-  const { FlagIcon } = components
+export const FlagsAccordionTitle = ({ flags, Swizzled }) => {
+  const { t } = Swizzled.methods
+  const { FlagIcon } = Swizzled.components
   const [flagList] = flattenFlags(flags)
 
   if (Object.keys(flagList).length < 1) return null

@@ -2,92 +2,74 @@ import { useCallback, useMemo } from 'react'
 
 /**
  * The design options menu
- * @param  {String}  options.design        the name of the design
- * @param  {Object}  options.patternConfig the configuration from the pattern
- * @param  {Object}  options.settings      core settings
- * @param  {Object}  options.update        settings and ui update functions
- * @param  {String}  options.language      the menu language
- * @param  {Object}  options.account       the user account data
+ * @param {object} props.Design - An object holding the Design instance
+ * @param {String} props.isFirst - Boolean indicating whether this is the first/top entry of the menu
+ * @param {Object} props.state - Object holding state
+ * @param {Object} props.update - Object holding state handlers
+ * @param {object} props.Swizzled - An object holding swizzled code
  */
-export const DesignOptionsMenu = ({ isFirst = true, update, swizzled, state, Design }) => {
-  // Swizzled methods
-  const { menuOptionType, menuOptionsStructure } = swizzled.methods
-  // Swizzled components
-  const {
-    BoolNoIcon,
-    BoolYesIcon,
-    ButtonFrame,
-    DesignIcon,
-    MenuBoolInput,
-    MenuBoolValue,
-    MenuConstantInput,
-    MenuConstantOptionValue,
-    MenuCountOptionValue,
-    MenuDegInput,
-    MenuDegOptionValue,
-    MenuHighlightValue,
-    MenuItem,
-    MenuItemGroup,
-    MenuListInput,
-    MenuListOptionValue,
-    MenuMmOptionValue,
-    MenuPctInput,
-    MenuPctOptionValue,
-    MenuSliderInput,
-    OptionsIcon,
-  } = swizzled.components
-
+export const DesignOptionsMenu = ({ Design, isFirst = true, state, update, Swizzled }) => {
   const structure = useMemo(
-    () => menuOptionsStructure(Design.patternConfig.options, state.settings),
+    () => Swizzled.methods.menuOptionsStructure(Design.patternConfig.options, state.settings),
     [Design.patternConfig, state.settings]
   )
   const updateHandler = useCallback(
-    (name, value) => update.settings(['options', ...name], value),
+    (name, value = '__UNSET__') => update.settings(['options', ...name], value),
     [update.settings]
   )
 
-  const drillProps = { swizzled, control: state.control }
+  const drillProps = { Design, state, update, Swizzled }
   const inputs = {
-    bool: (props) => <MenuBoolInput {...props} {...drillProps} />,
-    constant: (props) => <MenuConstantInput {...props} {...drillProps} />,
+    bool: (props) => <Swizzled.components.MenuBoolInput {...drillProps} {...props} />,
+    constant: (props) => <Swizzled.components.MenuConstantInput {...drillProps} {...props} />,
     count: (props) => (
-      <MenuSliderInput {...props} {...drillProps} config={{ ...props.config, step: 1 }} />
+      <Swizzled.components.MenuSliderInput
+        {...drillProps}
+        {...props}
+        config={{ ...props.config, step: 1 }}
+      />
     ),
-    deg: (props) => <MenuDegInput {...props} {...drillProps} />,
-    list: (props) => <MenuListInput {...props} {...drillProps} isDesignOption />,
+    deg: (props) => <Swizzled.components.MenuDegInput {...drillProps} {...props} />,
+    list: (props) => (
+      <Swizzled.components.MenuListInput {...drillProps} {...props} isDesignOption />
+    ),
     mm: () => <span>FIXME: Mm options are deprecated. Please report this </span>,
-    pct: (props) => <MenuPctInput {...props} {...drillProps} />,
+    pct: (props) => <Swizzled.components.MenuPctInput {...drillProps} {...props} />,
   }
   const values = {
-    bool: (props) => <MenuBoolValue {...props} {...drillProps} />,
-    constant: (props) => <MenuConstantOptionValue {...props} {...drillProps} />,
-    count: (props) => <MenuCountOptionValue {...props} {...drillProps} />,
-    deg: (props) => <MenuDegOptionValue {...props} {...drillProps} />,
-    list: (props) => <MenuListOptionValue {...props} {...drillProps} />,
-    mm: (props) => <MenuMmOptionValue {...props} {...drillProps} />,
-    pct: (props) => <MenuPctOptionValue {...props} {...drillProps} />,
+    bool: (props) => <Swizzled.components.MenuBoolValue {...drillProps} {...props} />,
+    constant: (props) => <Swizzled.components.MenuConstantOptionValue {...drillProps} {...props} />,
+    count: (props) => <Swizzled.components.MenuCountOptionValue {...drillProps} {...props} />,
+    deg: (props) => <Swizzled.components.MenuDegOptionValue {...drillProps} {...props} />,
+    list: (props) => <Swizzled.components.MenuListOptionValue {...drillProps} {...props} />,
+    mm: (props) => <Swizzled.components.MenuMmOptionValue {...drillProps} {...props} />,
+    pct: (props) => <Swizzled.components.MenuPctOptionValue {...drillProps} {...props} />,
   }
 
   return (
-    <MenuItemGroup
+    <Swizzled.components.MenuItemGroup
       {...{
         structure,
         control: state.control,
         currentValues: state.settings.options || {},
-        Icon: OptionsIcon,
+        Icon: Swizzled.components.OptionsIcon,
         Item: (props) => (
-          <DesignOption
+          <Swizzled.components.DesignOption
+            {...{ inputs, values, Swizzled, update, Design }}
             {...props}
-            {...{ menuOptionType, inputs, values, MenuItem, swizzled, update, Design }}
           />
         ),
         isFirst,
-        name: 'design-options:designOptions',
+        name: 'pe:designOptions',
         language: state.locale,
-        passProps: { settings: state.settings, patternConfig: Design.patternConfig },
+        passProps: {
+          control: state.control,
+          settings: state.settings,
+          patternConfig: Design.patternConfig,
+        },
         updateHandler,
         isDesignOptionsGroup: true,
-        swizzled,
+        Swizzled,
         state,
         Design,
         inputs,
@@ -103,17 +85,8 @@ export const DesignOptionsMenu = ({ isFirst = true, update, swizzled, state, Des
  * @param  {Object}    options.settings core settings
  * @param  {Object} options.rest     the rest of the props
  */
-const DesignOption = ({
-  config,
-  settings,
-  control,
-  inputs,
-  values,
-  MenuItem,
-  swizzled,
-  ...rest
-}) => {
-  const type = swizzled.methods.menuOptionType(config)
+export const DesignOption = ({ config, settings, control, inputs, values, Swizzled, ...rest }) => {
+  const type = Swizzled.methods.menuOptionType(config)
   const Input = inputs[type]
   const Value = values[type]
   const allowOverride = ['pct', 'count', 'deg'].includes(type)
@@ -124,12 +97,12 @@ const DesignOption = ({
   if (config?.hide || (typeof config?.hide === 'function' && config.hide(settings))) return null
 
   return (
-    <MenuItem
+    <Swizzled.components.MenuItem
       {...{
         config,
         control,
         ...rest,
-        swizzled,
+        Swizzled,
         Input,
         Value,
         allowOverride,

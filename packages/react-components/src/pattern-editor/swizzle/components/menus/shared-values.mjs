@@ -33,7 +33,7 @@ export const MenuHighlightValue = ({ changed, children }) => (
 export const MenuListOptionValue = (props) => (
   <MenuListValue
     {...props}
-    t={(input) => props.t(`${props.design}:${props.config.name}.${input}.t`)}
+    t={(input) => props.Swizzled.methods.t(`${props.design}:${props.config.name}.${input}.t`)}
   />
 )
 
@@ -43,9 +43,9 @@ export const MenuListOptionValue = (props) => (
  * @param  {Function} options.t       a translation function
  * @param  {Object} options.config  the item config
  * @param  {Boolean} options.changed has the value been changed?
+ * @param {object} props.Swizzled - An object holding swizzled code
  */
-export const MenuListValue = ({ current, t, config, changed, components }) => {
-  const { BoolNoIcon, BoolYesIcon, MenuHighlightValue } = components
+export const MenuListValue = ({ current, config, changed, Swizzled }) => {
   // get the values
   const val = changed ? current : config.dflt
 
@@ -56,16 +56,21 @@ export const MenuListValue = ({ current, t, config, changed, components }) => {
   // if not, is the value a string
   else if (typeof val === 'string') key = val
   // otherwise stringify booleans
-  else if (val) key = <BoolYesIcon />
-  else key = <BoolNoIcon />
+  else if (val) key = <Swizzled.components.BoolYesIcon />
+  else key = <Swizzled.components.BoolNoIcon />
 
-  const translated = config.doNotTranslate || typeof key !== 'string' ? key : t(key)
+  const translated =
+    config.doNotTranslate || typeof key !== 'string' ? key : Swizzled.methods.t(key)
 
-  return <MenuHighlightValue changed={changed}>{translated}</MenuHighlightValue>
+  return (
+    <Swizzled.components.MenuHighlightValue changed={changed}>
+      {translated}
+    </Swizzled.components.MenuHighlightValue>
+  )
 }
 
 /** Displays the corrent, translated value for a boolean */
-export const MenuBoolValue = MenuListValue
+export const MenuBoolValue = MenuListOptionValue
 
 /** Displays the MmOptions are not supported */
 export const MenuMmOptionValue = () => (
@@ -87,28 +92,34 @@ export const MenuMmValue = ({ current, config, units, changed, components, metho
   )
 }
 
-/** Displays the current percentage value, and the absolute value if configured */
+/** Displays the current percentage value, and the absolute value if configured
+ *
+ **************************************************************************
+ * SliderIcon  Title                                                 THIS *
+ * min%                                                              max% *
+ * ----------------------0----------------------------------------------- *
+ * msg                                               PencilIcon ResetIcon *
+ **************************************************************************
+ * */
 export const MenuPctOptionValue = ({
   config,
   current,
   settings,
   changed,
   patternConfig,
-  components,
-  methods,
+  Swizzled,
 }) => {
-  const { MenuHighlightValue } = components
   const val = changed ? current : config.pct / 100
 
   return (
-    <MenuHighlightValue changed={changed}>
-      {methods.formatPercentage(val)}
+    <Swizzled.components.MenuHighlightValue changed={changed}>
+      {Swizzled.methods.formatPercentage(val)}
       {config.toAbs && settings?.measurements
-        ? ` | ${methods.formatMm(
+        ? ` | ${Swizzled.methods.formatMm(
             config.toAbs(val, settings, mergeOptions(settings, patternConfig.options))
           )}`
         : null}
-    </MenuHighlightValue>
+    </Swizzled.components.MenuHighlightValue>
   )
 }
 

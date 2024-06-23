@@ -3,26 +3,16 @@ import { useState } from 'react'
 /**
  * A hook to update the account control settings
  */
-export const useControlState = (hooks, methods) => {
-  /*
-   * Load swizzled account and backend hooks
-   */
-  const { useAccount, useBackend } = hooks
-
+export const useControlState = (Swizzled) => {
   /*
    * Load account data through useAccount hook
    */
-  const { account, setAccount, token } = useAccount()
+  const { account, setAccount, token } = Swizzled.hooks.useAccount(Swizzled)
 
   /*
    * Load backend client through useBackend hook
    */
-  const backend = useBackend()
-
-  /*
-   * Load swizzled setLoadingStatus method
-   */
-  const { setLoadingStatus } = methods
+  const backend = Swizzled.hooks.useBackend(Swizzled)
 
   // State
   const [selection, setSelection] = useState(account.control)
@@ -31,13 +21,11 @@ export const useControlState = (hooks, methods) => {
   const update = async (control) => {
     if (control !== selection) {
       if (token) {
-        setLoadingStatus([true, 'processingUpdate'])
         const result = await backend.updateAccount({ control })
         if (result.success) {
           setSelection(control)
           setAccount(result.data.account)
-          setLoadingStatus([true, 'settingsSaved', true, true])
-        } else setLoadingStatus([true, 'backendError', true, true])
+        }
       }
       //fallback for guest users
       else {

@@ -65,3 +65,90 @@ view.designs.t: Choose a different Design
 view.designs.d: "Current design: {- design }"
 showAdvancedOptions: Show advanced options
 hideAdvancedOptions: Hide advanced options
+
+# menus
+youAreUsingTheDefaultValue: You are using the default value
+youAreUsingACustomValue: You are using a custom value
+designOptions.t: Design Options
+designOptions.d: These options are specific to this design. You can use them to customize your pattern in a variety of ways.
+fit.t: Fit
+style.t: Style
+advanced.t: Advanced
+coreSettings.t: Core Settings
+coreSettings.d: These settings are not specific to the design, but instead allow you to customize various parameters of the FreeSewing core library, which generates the design for you.
+paperless.t: Paperless
+paperless.d: Trees are awesome, and taping together sewing patterns is not much fun. Try our paperless mode to avoid the need to print out your pattern altogether.
+samm.t: Seam Allowance Size
+samm.d: Controls the amount of seam allowance used in your pattern
+sabool.t: Include Seam Allowance
+sabool.d: Controls whether or not to include seam allowance in your pattern
+complete.t: Details
+complete.d: Controls how detailed the pattern is; Either a complete pattern with all details, or a basic outline of the pattern parts
+expand.t: Expand
+expand.d: Controls efforts to save paper. Disable this to expand all pattern parts at the cost of using more space.
+only.t: Included Parts
+only.d: Use this to control exactly which pattern parts will be included in your pattern
+units.t: Units
+units.d: This setting determines how unit are displayed on your pattern
+margin.t: Margin
+margin.d: Controls the margin around pattern parts
+scale.t: Scale
+scale.d: Controls the overall line width, font size, and other elements that do not scale with the pattern's measurements
+yes: Yes
+no: No
+completeYes.t: Generate a complete pattern
+completeYes.d: This will generate a complete pattern with all notations, lines, markings. Use this if you are not certain what to choose.
+completeNo.t: Generate a pattern outline
+completeNo.d: Only generate the outline of the pattern parts. Use this if you are looking to use a laser cutter or have other specific needs.
+expandYes.t: Expand all pattern parts
+expandYes.d: This will generate a pattern where all pattern parts are drawn to their full size, even if they are simple rectangles.
+expandNo.t: Keep patterns parts compact where possible
+expandNo.d: This will draw a more dense representation of the pattern which includes all info without using up too much space & paper.
+paperlessNo.t: Generate a regular pattern
+paperlessNo.d: This will generate a regular pattern, which you can then print out.
+paperlessYes.t: Generate a paperless pattern
+paperlessYes.d:  This generates a pattern with dimensions and a grid, which allows you to transfer it on fabric or another medium without the need to print out the pattern.
+metric: Metric
+uiSettings.t: UI Preferences
+uiSettings.d: These preferences control the UI (User Interface) aspects of our online pattern drafting environment.
+renderer.t: Render Engine
+renderer.d: Controls how the pattern is rendered (drawn) on the screen
+renderWithReact.t: Render with FreeSewing's React components
+renderWithReact.d: Render as SVG through our React components. Allows interactivity and is optimized for screen. Use this if you are not sure what to pick.
+renderWithCore.t: Render with FreeSewing's Core library
+renderWithCore.d: Render directly to SVG from Core. Allows no interactivity and is optimized for print. Use this if you want to know what it will look like when exported.
+kiosk.t: Kiosk Mode
+kiosk.d: Controls how the web page is shown.
+websiteMode.t: Use website mode
+websiteMode.d: Show the full web page, including header, footer, and navigation.
+kioskMode.t: Use kiosk mode
+kioskMode.d: Show just the pattern drafting portion of the web page, without header, footer, or navigation.
+control.t: User Experience
+control.d: Which user experience do you prefer? Please note that this is an account setting, so it will impact the entire website.
+inspect.t: Inspect
+inspect.d: Enabling this will allow you to drill down into the pattern, and pull up information about its various parts, paths, and points.
+inspectNo.t: Disable the inspector
+inspectNo.d: This is the default, the pattern inspector is disabled and the pattern is displayed as usual.
+inspectYes.t: Enable the inspector
+inspectYes.d: With the pattern inspector enabled and the React rendering engine selected, we will add interactivity to the pattern to allow you to inspect the various elements that make up the pattern.
+draft: Draft
+test: Test
+print: Print layout
+cut: Cut Layout
+save: Save
+export: Export
+edit: Edit
+draft.t: Draft your pattern
+draft.d: Launches FreeSewing flagship pattern editor, where you can tweak your pattern to your heart's desire
+test.t: Test your pattern
+test.d: See how your pattern adapts to changes in options, or measurements
+print.t: Print Layout
+print.d: Allows you to arrange your pattern pieces so you can printing your pattern on as little pages as possible
+cut.t: Cutting layout
+cut.d: Allows you to arrange your pattern pieces so you can determine exactly how much fabric you need to make it.
+save.t: Save your pattern
+save.d: Save the current pattern to your FreeSewing account
+export.t: Export your pattern
+export.d: Allows you to export this pattern to a variety of formats
+logs.t: Pattern logs
+

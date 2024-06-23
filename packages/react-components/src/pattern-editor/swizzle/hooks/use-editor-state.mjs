@@ -57,10 +57,10 @@ export const updateFactory = ({ setState, objUpdate }) => ({
  * @params {object} init - Initial pattern settings
  * @return {array} return - And array with get, set, and update methods
  */
-export const useReactEditorState = (hooks, methods, init = {}) => {
+export const useReactEditorState = (Swizzled, init = {}) => {
   const [state, setState] = useState(init)
   const update = useMemo(
-    () => updateFactory({ setState, objUpdate: methods.objUpdate }),
+    () => updateFactory({ setState, objUpdate: Swizzled.methods.objUpdate }),
     [setState]
   )
 
@@ -75,10 +75,10 @@ export const useReactEditorState = (hooks, methods, init = {}) => {
  * @params {object} init - Initial pattern settings
  * @return {array} return - And array with get, set, and update methods
  */
-export const useStorageEditorState = (hooks, methods, init = {}) => {
+export const useStorageEditorState = (Swizzled, init = {}) => {
   const [state, setState] = useLocalStorageState('fs-editor', { defaultValue: init })
   const update = useMemo(
-    () => updateFactory({ setState, objUpdate: methods.objUpdate }),
+    () => updateFactory({ setState, objUpdate: Swizzled.methods.objUpdate }),
     [setState]
   )
 
@@ -93,10 +93,10 @@ export const useStorageEditorState = (hooks, methods, init = {}) => {
  * @params {object} init - Initial pattern settings
  * @return {array} return - And array with get, set, and update methods
  */
-export const useSessionEditorState = (hooks, methods, init = {}) => {
+export const useSessionEditorState = (Swizzled, init = {}) => {
   const [state, setState] = useSessionStorageState('fs-editor', { defaultValue: init })
   const update = useMemo(
-    () => updateFactory({ setState, objUpdate: methods.objUpdate }),
+    () => updateFactory({ setState, objUpdate: Swizzled.methods.objUpdate }),
     [setState]
   )
 
@@ -111,11 +111,11 @@ export const useSessionEditorState = (hooks, methods, init = {}) => {
  * @params {object} init - Initial pattern settings
  * @return {array} return - And array with get, set, and update methods
  */
-export const useUrlEditorState = (hooks, methods, init = {}) => {
+export const useUrlEditorState = (Swizzled, init = {}) => {
   const searchParams = useSearchParams()
   const [state, setState] = useQueryState('s', pojoParser)
   const update = useMemo(
-    () => updateFactory({ setState, objUpdate: methods.objUpdate }),
+    () => updateFactory({ setState, objUpdate: Swizzled.methods.objUpdate }),
     [setState]
   )
 

@@ -6,39 +6,19 @@
  * @param {array} props.missingMeasurements - List of missing measurements for the current design
  * @param {object} props.locale - The language code (locale) currently used
  * @param {object} props.state - The ViewWrapper state object
- * @param {object} props.swizzled - An object with swizzled components, hooks, methods, config, and defaults
  * @param {object} props.state.settings - The current settings
  * @param {object} props.update - Helper object for updating the ViewWrapper state
+ * @param {object} props.Swizzled - An object holding swizzled code
  * @return {function} DraftView - React component
  */
-export const DraftView = ({ Design, locale, missingMeasurements, state, swizzled, update }) => {
-  // Swizzled components
-  const {
-    Accordion,
-    DraftMenu,
-    Popout,
-    MeasurementsEditor,
-    MeasurementsSetIcon,
-    UserSetPicker,
-    BookmarkIcon,
-    BookmarkedSetPicker,
-    CuratedMeasurementsSetIcon,
-    CuratedSetPicker,
-    EditIcon,
-    PatternLayout,
-    ZoomablePattern,
-  } = swizzled.components
-  // Swizzled methods
-  const { t, designMeasurements, capitalize, draft } = swizzled.methods
-  // Swizzled hooks
-  const { useBackend, useAccount } = swizzled.hooks
+export const DraftView = ({ Design, locale, missingMeasurements, state, update, Swizzled }) => {
   // Passed down editor state
   const { settings, ui, control } = state
 
   /*
    * First, attempt to draft
    */
-  const { pattern, errors, failure } = draft(Design, settings)
+  const { pattern, errors, failure } = Swizzled.methods.draft(Design, settings)
 
   let output = null
   let renderProps = false
@@ -46,22 +26,28 @@ export const DraftView = ({ Design, locale, missingMeasurements, state, swizzled
     try {
       const __html = pattern.render()
       output = (
-        <ZoomablePattern>
+        <Swizzled.components.ZoomablePattern Swizzled={Swizzled}>
           <div className="w-full h-full" dangerouslySetInnerHTML={{ __html }} />
-        </ZoomablePattern>
+        </Swizzled.components.ZoomablePattern>
       )
     } catch (err) {
       console.log(err)
     }
   } else {
     renderProps = pattern.getRenderProps()
-    output = <ZoomablePattern renderProps={renderProps} patternLocale={settings.locale} />
+    output = (
+      <Swizzled.components.ZoomablePattern
+        renderProps={renderProps}
+        patternLocale={settings.locale}
+        Swizzled={Swizzled}
+      />
+    )
   }
 
   return (
-    <PatternLayout
-      {...{ update, control, Design, output, state, swizzled }}
-      menu={<DraftMenu {...{ Design, pattern, update, state, swizzled }} />}
+    <Swizzled.components.PatternLayout
+      {...{ update, control, Design, output, state, Swizzled }}
+      menu={<Swizzled.components.DraftMenu {...{ Design, pattern, update, state, Swizzled }} />}
     />
   )
 }

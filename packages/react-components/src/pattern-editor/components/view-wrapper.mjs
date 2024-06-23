@@ -1,6 +1,5 @@
 // Hooks
 import { useState, useEffect, useMemo } from 'react'
-import { useDefaults } from '../hooks/use-defaults.mjs'
 
 /**
  * The editor view wrapper component
@@ -9,66 +8,31 @@ import { useDefaults } from '../hooks/use-defaults.mjs'
  * and handles state for the pattern, inclding the view
  *
  * @param (object) props - All the props
- * @param {object} props.swizzled - An object with swizzled components, hooks, methods, config, and defaults
  * @param {object} props.designs - An object holding all designs
  * @param {object} props.preload - Object holding state to preload
  * @param {object} props.locale - The locale (language) code
  * @param {object} props.design - A design name to force the editor to use this design
+ * @param {object} props.Swizzled - An object holding swizzled code
  */
 export const ViewWrapper = ({
-  swizzled,
   designs = {},
   preload = {},
   locale = 'en',
   design = false,
+  Swizzled,
 }) => {
   /*
-   * Get swizzled useAccount, useControlState, and useEditorState hooks
+   * Load control state
    */
-  const { useAccount, useControlState, useEditorState } = swizzled.hooks
-
-  /*
-   * Load account data and control state
-   */
-  const { account } = useAccount()
-  const { control, setControl } = useControlState()
+  const { control, setControl } = Swizzled.hooks.useControlState(Swizzled)
 
   // Editor state
-  const [state, setState, update] = useEditorState(initialEditorState(swizzled.defaults, preload))
-
-  /*
-   * Get swizzled objUpdate method
-   */
-  //const { objUpdate } = props.methods
-
-  // Helper methods for settings/ui updates
-  //const toggleSa = useMemo(
-  //  () => ({
-  //    setSettings((curSettings) => {
-  //      const sa = curSettings.samm || (account?.imperial ? 15.3125 : 10)
-
-  //      if (curSettings.sabool)
-  //        return objUpdate({ ...curSettings }, [
-  //          [['sabool'], 0],
-  //          [['sa'], 0],
-  //          [['samm'], sa],
-  //        ])
-  //      else {
-  //        return objUpdate({ ...curSettings }, [
-  //          [['sabool'], 1],
-  //          [['sa'], sa],
-  //          [['samm'], sa],
-  //        ])
-  //      }
-  //    })
-  //  },
-  //  setControl: controlState.update,
-  //  }),
-  //  [setSettings, setUi, account, controlState]
-  //)
+  const [state, setState, update] = Swizzled.hooks?.useEditorState
+    ? Swizzled.hooks.useEditorState(Swizzled, initialEditorState(Swizzled, preload))
+    : [null, null, null]
 
   // Figure out what view to load
-  const [View, extraProps] = viewfinder({ swizzled, design, designs, preload, state })
+  const [View, extraProps] = viewfinder({ design, designs, preload, state, Swizzled })
 
   // Render the view
   return (
@@ -78,7 +42,7 @@ export const ViewWrapper = ({
         {...extraProps}
         state={{ ...state, control, locale }}
         update={{ ...update, control: setControl }}
-        {...{ swizzled, designs }}
+        {...{ designs, Swizzled }}
       />
     </>
   )
@@ -90,12 +54,12 @@ export const ViewWrapper = ({
  * the props we need for it.
  *
  * @param (object) props - All the props
- * @param {object} props.swizzled - An object with swizzled components, hooks, methods, config, and defaults
+ * @param {object} props.design - The (name of the) current design
  * @param {object} props.designs - An object holding all designs
  * @param {object} props.preload - Object holding state to preload
  * @param (object) props.state - React state passed down from the wrapper view
  */
-const viewfinder = ({ swizzled, design, designs, preload, state }) => {
+const viewfinder = ({ design, designs, preload, state, Swizzled }) => {
   /*
    * Grab Design from props or state and make them extra props
    */
@@ -106,35 +70,35 @@ const viewfinder = ({ swizzled, design, designs, preload, state }) => {
   /*
    * If no design is set, return the designs view
    */
-  if (!designs[design]) return [getViewComponent('designs', swizzled), extraProps]
+  if (!designs[design]) return [getViewComponent('designs', Swizzled), extraProps]
 
   /*
    * If we have a design, do we have the measurements?
    */
-  const [measurementsOk, missing] = swizzled.methods.hasRequiredMeasurements(
+  const [measurementsOk, missing] = Swizzled.methods.hasRequiredMeasurements(
     designs[design],
     state.settings.measurements
   )
   if (!measurementsOk)
     return [
-      getViewComponent('measurements', swizzled),
+      getViewComponent('measurements', Swizzled),
       { ...extraProps, missingMeasurements: missing },
     ]
 
   /*
    * If a view is set, return that
    */
-  const view = getViewComponent(state?.view, swizzled)
+  const view = getViewComponent(state?.view, Swizzled)
   if (view) return [view, { ...extraProps, missingMeasurements: missing }]
 
   /*
    * If no obvious view was found, return the view picker
    */
-  return [getViewComponent('picker', swizzled), extraProps]
+  return [getViewComponent('picker', Swizzled), extraProps]
 }
 
-const getViewComponent = (view = false, swizzled) =>
-  view ? swizzled.components[swizzled.config.viewComponents[view]] : false
+const getViewComponent = (view = false, Swizzled) =>
+  view ? Swizzled.components[Swizzled.config.viewComponents[view]] : false
 
 /*
  * This helper method constructs the initial state object.
@@ -144,11 +108,11 @@ const getViewComponent = (view = false, swizzled) =>
  * @param {object} defaults - The defaults prop passed to the ViewWrapper component
  * @return {object} initial - The initial Editor State object
  */
-const initialEditorState = (defaults = {}, preload = {}) => {
+const initialEditorState = (Swizzled, preload = {}) => {
   /*
    * Get swizzled defaults
    */
-  const { ui: defaultUi, settings: defaultSettings } = useDefaults(defaults)
+  const { ui: defaultUi, settings: defaultSettings } = Swizzled.defaults
 
   /*
    * Create initial state object

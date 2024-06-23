@@ -1,8 +1,8 @@
-export const DraftMenu = ({ Design, pattern, state, swizzled, update }) => {
+export const DraftMenu = ({ Design, pattern, state, Swizzled, update }) => {
   // Editor state
   const { control } = state
   // Swizzled methods
-  const { t } = swizzled.methods
+  const { t } = Swizzled.methods
   // Swizzled components
   const {
     OptionsIcon,
@@ -14,26 +14,23 @@ export const DraftMenu = ({ Design, pattern, state, swizzled, update }) => {
     FlagsAccordionTitle,
     FlagsAccordionEntries,
     Accordion,
-  } = swizzled.components
+  } = Swizzled.components
 
-  const menuProps = { Design, state, swizzled, pattern, update }
+  const menuProps = { Design, state, Swizzled, pattern, update }
 
   const sections = [
     {
       name: 'designOptions',
-      ns: 'design-options',
       icon: <OptionsIcon className="w-8 h-8" />,
       menu: <DesignOptionsMenu {...menuProps} />,
     },
     //{
     //  name: 'coreSettings',
-    //  ns: 'core-settings',
     //  icon: <SettingsIcon className="w-8 h-8" />,
     //  menu: <CoreSettingsMenu {...menuProps} />,
     //},
     //{
     //  name: 'uiSettings',
-    //  ns: 'ui-settings',
     //  icon: <UiIcon className="w-8 h-8" />,
     //  menu: <UiSettingsMenu {...menuProps} {...{ ui, view, setView }} />,
     //},
@@ -43,7 +40,6 @@ export const DraftMenu = ({ Design, pattern, state, swizzled, update }) => {
   if (control <= 3)
     sections.push({
       name: 'missingSettings' + control,
-      ns: 'ui-settings',
       icon: <HelpIcon className="w-8 h-8" />,
     })
 
@@ -52,7 +48,7 @@ export const DraftMenu = ({ Design, pattern, state, swizzled, update }) => {
 
   if (flags)
     items.push([
-      <FlagsAccordionTitle key={1} {...{ flags, swizzled }} />,
+      <FlagsAccordionTitle key={1} {...{ flags, Swizzled }} />,
       <FlagsAccordionEntries {...{ update, state, flags }} key={2} />,
       'flags',
     ])
@@ -60,10 +56,10 @@ export const DraftMenu = ({ Design, pattern, state, swizzled, update }) => {
     ...sections.map((section) => [
       <>
         <h5 className="flex flex-row gap-2 items-center justify-between w-full">
-          <span>{t(`${section.ns}:${section.name}.t`)}</span>
+          <span>{t(`pe:${section.name}.t`)}</span>
           {section.icon}
         </h5>
-        <p className="text-left">{t(`${section.ns}:${section.name}.d`)}</p>
+        <p className="text-left">{t(`pe:${section.name}.d`)}</p>
       </>,
       section.menu,
       section.name,

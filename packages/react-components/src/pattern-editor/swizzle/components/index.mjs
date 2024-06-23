@@ -1,14 +1,14 @@
 /*************************************************************************
  *                                                                       *
- * FreeSewing's pattern editor useComponents hook, with swizzle support  *
+ * FreeSewing's pattern editor allows swizzling components               *
  *                                                                       *
  * To 'swizzle' means to replace the default implementation of a         *
  * component with a custom one. It allows one to customize               *
  * the pattern editor.                                                   *
  *                                                                       *
- * This file holds the 'useComponents' hook that will load the various   *
- * components that can be swizzled, as well as their default versions    *
- * that can be overridden.                                               *
+ * This file holds the 'swizzleComponents' method that will return       *
+ * the various components that can be swizzled, or their default         *
+ * implementation.                                                       *
  *                                                                       *
  * To use a custom version, simply pas it as a prop into the editor      *
  * under the 'components' key. So to pass a custom 'TemporaryLoader'     *
@@ -22,20 +22,16 @@
  * Import of components that can be swizzled
  */
 // Accordion
-import { BaseAccordion, SubAccordion, Accordion } from '../swizzle/components/accordion.mjs'
+import { BaseAccordion, SubAccordion, Accordion } from './accordion.mjs'
 // Popout
-import { Popout } from '../swizzle/components/popout.mjs'
+import { Popout } from './popout.mjs'
 // Loader
-import { TemporaryLoader } from '../swizzle/components/loaders.mjs'
+import { TemporaryLoader } from './loaders.mjs'
 // Measurements Sets
-import {
-  UserSetPicker,
-  BookmarkedSetPicker,
-  CuratedSetPicker,
-} from '../swizzle/components/sets.mjs'
+import { UserSetPicker, BookmarkedSetPicker, CuratedSetPicker } from './sets.mjs'
 // Curated Measurements Sets
-import { CuratedMeasurementsSetLineup } from '../swizzle/components/curated-sets.mjs'
-import { MeasurementsSetCard } from '../swizzle/components/measurements-set-card.mjs'
+import { CuratedMeasurementsSetLineup } from './curated-sets.mjs'
+import { MeasurementsSetCard } from './measurements-set-card.mjs'
 // Icons
 import {
   BeakerIcon,
@@ -76,12 +72,12 @@ import {
   ViewInspectIcon,
   ViewDocsIcon,
   ViewDesignsIcon,
-} from '../swizzle/components/icons.mjs'
+} from './icons.mjs'
 // Measurements Editor
-import { MeasurementsEditor } from '../swizzle/components/measurements-editor.mjs'
+import { MeasurementsEditor } from './measurements-editor.mjs'
 // Zoomable pattern
-import { ZoomablePattern, ZoomContextProvider } from '../swizzle/components/zoomable-pattern.mjs'
-import { PatternLayout } from '../swizzle/components/pattern-layout.mjs'
+import { ZoomablePattern, ZoomContextProvider } from './zoomable-pattern.mjs'
+import { PatternLayout } from './pattern-layout.mjs'
 // inputs
 import {
   FormControl,
@@ -93,19 +89,19 @@ import {
   MarkdownInput,
   MeasurementInput,
   ToggleInput,
-} from '../swizzle/components/inputs.mjs'
+} from './inputs.mjs'
 // Views
-import { DesignsView } from '../swizzle/components/designs-view.mjs'
-import { DraftView } from '../swizzle/components/draft-view.mjs'
-import { ErrorView } from '../swizzle/components/error-view.mjs'
-import { MeasurementsView } from '../swizzle/components/measurements-view.mjs'
-import { ViewPicker } from '../swizzle/components/view-picker.mjs'
+import { DesignsView } from './designs-view.mjs'
+import { DraftView } from './draft-view.mjs'
+import { ErrorView } from './error-view.mjs'
+import { MeasurementsView } from './measurements-view.mjs'
+import { ViewPicker } from './view-picker.mjs'
 // Pattern
-import { Pattern } from '../../pattern/index.mjs'
+import { Pattern } from '@freesewing/react-components/pattern'
 // Menus
-import { DraftMenu } from '../swizzle/components/menus/draft-menu.mjs'
-import { DesignOptionsMenu } from '../swizzle/components/menus/design-options-menu.mjs'
-import { MenuItem, MenuItemGroup, MenuItemTitle } from '../swizzle/components/menus/containers.mjs'
+import { DraftMenu } from './menus/draft-menu.mjs'
+import { DesignOptionsMenu, DesignOption } from './menus/design-options-menu.mjs'
+import { MenuItem, MenuItemGroup, MenuItemTitle } from './menus/containers.mjs'
 import {
   MenuBoolInput,
   MenuConstantInput,
@@ -116,7 +112,7 @@ import {
   MenuNumberInput,
   MenuPctInput,
   MenuSliderInput,
-} from '../swizzle/components/menus/shared-inputs.mjs'
+} from './menus/shared-inputs.mjs'
 import {
   MenuBoolValue,
   MenuConstantOptionValue,
@@ -129,9 +125,9 @@ import {
   MenuMmValue,
   MenuPctOptionValue,
   MenuShowValue,
-} from '../swizzle/components/menus/shared-values.mjs'
+} from './menus/shared-values.mjs'
 // Flags
-import { Flags, FlagsAccordionTitle, FlagsAccordionEntries } from '../swizzle/components/flags.mjs'
+import { Flags, FlagsAccordionTitle, FlagsAccordionEntries } from './flags.mjs'
 
 /**
  * This object holds all components that can be swizzled
@@ -145,6 +141,7 @@ const defaultComponents = {
   CuratedMeasurementsSetLineup,
   CuratedSetPicker,
   DesignDropdown,
+  DesignOption,
   DesignOptionsMenu,
   DesignsView,
   DraftMenu,
@@ -236,18 +233,17 @@ const defaultComponents = {
 }
 
 /*
- * This hook returns a component that can be swizzled
+ * This method returns a component that can be swizzled
  * So either the passed-in component, or the default one
  */
-export const useComponents = (components = {}, methods = {}) => {
+export const swizzleComponents = (components = {}) => {
   /*
-   * We need to pass down the resulting components, swizzled or not
-   * So we put this in this object so we can pass that down
+   * We need to return all resulting components, swizzled or not
+   * So we create this object so we can pass that down
    */
   const all = {}
   for (let [name, Component] of Object.entries(defaultComponents)) {
-    if (components[name]) Component = components[name]
-    all[name] = (props) => <Component {...props} components={all} methods={methods} />
+    all[name] = components[name] ? components[name] : defaultComponents[name]
   }
 
   /*
