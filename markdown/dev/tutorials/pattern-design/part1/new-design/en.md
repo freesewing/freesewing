@@ -3,7 +3,10 @@ title: Setting up the development environment
 order: 20
 ---
 
-FreeSewing provides a development environment that visualizes your design for you.
+FreeSewing provides a development environment that visualizes your design for
+you. This tutorial is for the stand-alone development environment, not the
+monorepo development environment (which you may have set up if you followed a
+getting started tutorial).
 
 To set it up, I will open a terminal and enter the following command:
 
