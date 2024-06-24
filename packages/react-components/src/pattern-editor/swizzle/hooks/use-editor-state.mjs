@@ -47,6 +47,7 @@ export const updateFactory = ({ setState, objUpdate }) => ({
    */
   design: (val) => setState((cur) => objUpdate({ ...cur }, 'design', val)),
   view: (val) => setState((cur) => objUpdate({ ...cur }, 'view', val)),
+  control: (val) => setState((cur) => objUpdate({ ...cur }, 'control', val)),
 })
 
 /**

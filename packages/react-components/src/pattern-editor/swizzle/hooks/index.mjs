@@ -24,7 +24,6 @@
 // useAccount
 import { useAccount } from './use-account.mjs'
 import { useBackend } from './use-backend.mjs'
-import { useControlState } from './use-control-state.mjs'
 import {
   useReactEditorState,
   useStorageEditorState,
@@ -48,7 +47,6 @@ const stateBackends = {
 const defaultHooks = (config) => ({
   useAccount,
   useBackend,
-  useControlState,
   useEditorState: stateBackends[config.stateBackend] || useReactEditorState,
 })
 

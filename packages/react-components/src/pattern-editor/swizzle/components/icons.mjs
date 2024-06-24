@@ -165,6 +165,13 @@ export const KioskIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks like a left pointing chevron
+export const LeftIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M15 19l-7-7 7-7" />
+  </IconWrapper>
+)
+
 // Looks like a bullet list
 export const ListIcon = (props) => (
   <IconWrapper {...props}>
@@ -225,6 +232,13 @@ export const PrintIcon = (props) => (
 export const ResetIcon = (props) => (
   <IconWrapper {...props}>
     <path d="m 2.447878,2.716835 v 4.38448 h 4.38448 M 3.1307,6.882055 c 1.771085,-3.0536 5.075566,-5.10727 8.859706,-5.10727 5.65253,0 10.234811,4.58228 10.234811,10.23481 0,5.65253 -4.582281,10.23481 -10.234811,10.23481 -5.440329,0 -9.889258,-4.24469 -10.215624,-9.60291" />
+  </IconWrapper>
+)
+
+// Looks like a right pointing chevron
+export const RightIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M9 5l7 7-7 7" />
   </IconWrapper>
 )
 
@@ -627,12 +641,6 @@ export const LabelIcon = (props) => (
   </IconWrapper>
 )
 
-export const LeftIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M15 19l-7-7 7-7" />
-  </IconWrapper>
-)
-
 export const LeftRightIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
@@ -818,12 +826,6 @@ export const RedditIcon = (props) => (
 export const ReloadIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
-  </IconWrapper>
-)
-
-export const RightIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M9 5l7 7-7 7" />
   </IconWrapper>
 )
 

@@ -62,6 +62,7 @@ import {
   GaugeIcon,
   GroupIcon,
   KioskIcon,
+  LeftIcon,
   ListIcon,
   MeasurementsSetIcon,
   NoIcon,
@@ -70,6 +71,7 @@ import {
   PlusIcon,
   PrintIcon,
   ResetIcon,
+  RightIcon,
   RocketIcon,
   SaveIcon,
   SettingsIcon,
@@ -151,6 +153,8 @@ import {
 } from './menus/shared-values.mjs'
 // Flags
 import { Flag, Flags, FlagTypeIcon, FlagsAccordionTitle, FlagsAccordionEntries } from './flags.mjs'
+// View Menu
+import { ViewMenu, ViewMenuIcons, ViewMenuButton } from './view-menu.mjs'
 
 /**
  * This object holds all components that can be swizzled
@@ -198,6 +202,9 @@ const defaultComponents = {
   UiPreferencesMenu,
   UiPreference,
   UserSetPicker,
+  ViewMenu,
+  ViewMenuIcons,
+  ViewMenuButton,
   ViewPicker,
   ZoomablePattern,
   ZoomContextProvider,
@@ -224,6 +231,7 @@ const defaultComponents = {
   GaugeIcon,
   GroupIcon,
   KioskIcon,
+  LeftIcon,
   ListIcon,
   MeasurementsSetIcon,
   NoIcon,
@@ -232,6 +240,7 @@ const defaultComponents = {
   PlusIcon,
   PrintIcon,
   ResetIcon,
+  RightIcon,
   RocketIcon,
   SaveIcon,
   SettingsIcon,

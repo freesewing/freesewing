@@ -122,6 +122,7 @@ export const defaultConfig = {
       docs: 1,
     },
   },
+  defaultControl: 4,
   // Flag types
   flagTypes: ['error', 'warn', 'note', 'info', 'tip', 'fixme'],
 }

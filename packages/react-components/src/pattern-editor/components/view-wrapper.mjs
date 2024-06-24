@@ -21,22 +21,25 @@ export const ViewWrapper = ({
   design = false,
   Swizzled,
 }) => {
-  /*
-   * Load control state
-   */
-  const { control, setControl } = Swizzled.hooks.useControlState()
-
   // Editor state
   const [state, setState, update] = Swizzled.hooks.useEditorState(
-    initialEditorState(Swizzled, preload, { locale, control })
+    initialEditorState(Swizzled, preload, { locale })
   )
+
+  // Don't bother before state is initialized
+  if (!state) return <Swizzled.components.TemporaryLoader />
 
   // Figure out what view to load
   const [View, extraProps] = viewfinder({ design, designs, preload, state, Swizzled })
 
-  // Render the view
+  // Render the view & view menu
   return (
-    <View {...extraProps} update={{ ...update, control: setControl }} {...{ designs, state }} />
+    <div className="flex flex-row items-top">
+      <Swizzled.components.ViewMenu {...{ update, state }} />
+      <div className="grow w-full">
+        <View {...extraProps} {...{ update, state, designs }} />
+      </div>
+    </div>
   )
 }
 
@@ -109,7 +112,13 @@ const initialEditorState = (Swizzled, preload = {}, locale = 'en', extra = {}) =
   /*
    * Create initial state object
    */
-  const initial = { settings: false, ui: false, locale, ...extra }
+  const initial = {
+    settings: false,
+    ui: false,
+    locale,
+    control: Swizzled.config.defaultControl,
+    ...extra,
+  }
 
   /*
    * Set preload state
