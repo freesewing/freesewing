@@ -59,6 +59,13 @@ export const BookmarkIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks lik a speech bubble
+export const ChatIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+  </IconWrapper>
+)
+
 // Looks like a circle
 export const CircleIcon = (props) => (
   <IconWrapper {...props}>
@@ -105,6 +112,20 @@ export const DocsIcon = (props) => (
 export const EditIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+  </IconWrapper>
+)
+
+// Looks like FIXME
+export const ErrorIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+  </IconWrapper>
+)
+
+// Looks like arrows pointing outwards
+export const ExpandIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
   </IconWrapper>
 )
 
@@ -222,6 +243,13 @@ export const SettingsIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks like a light bulb
+export const TipIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+  </IconWrapper>
+)
+
 // Looks like a desktop screen
 export const UiIcon = (props) => (
   <IconWrapper {...props}>
@@ -233,6 +261,20 @@ export const UiIcon = (props) => (
 export const UploadIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+  </IconWrapper>
+)
+
+// Looks like an ! in a triangle
+export const WarningIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+  </IconWrapper>
+)
+
+// Looks like a wrench
+export const WrenchIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
   </IconWrapper>
 )
 
@@ -257,6 +299,15 @@ export const ViewLogsIcon = ListIcon
 export const ViewInspectIcon = XrayIcon
 export const ViewDocsIcon = DocsIcon
 export const ViewDesignsIcon = DesignIcon
+// Flag icons
+export const FlagNoteIcon = ChatIcon
+export const FlagInfoIcon = DocsIcon
+export const FlagTipIcon = TipIcon
+export const FlagWarningIcon = WarningIcon
+export const FlagErrorIcon = ErrorIcon
+export const FlagFixmeIcon = WrenchIcon
+export const FlagExpandIcon = ExpandIcon
+export const FlagOtionsIcon = OptionsIcon
 
 /*
  * Not used inside the pattern editor
@@ -321,12 +372,6 @@ export const CcByIcon = (props) => (
       stroke="none"
       fill="currentColor"
     />
-  </IconWrapper>
-)
-
-export const ChatIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
   </IconWrapper>
 )
 
@@ -470,19 +515,6 @@ export const EmailIcon = (props) => (
     <path d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
   </IconWrapper>
 )
-
-export const ErrorIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
-  </IconWrapper>
-)
-
-export const ExpandIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
-  </IconWrapper>
-)
-
 
 export const FacebookIcon = (props) => (
   <IconWrapper {...props} stroke={0} fill>
@@ -871,12 +903,6 @@ export const TikTokIcon = (props) => (
   </IconWrapper>
 )
 
-export const TipIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-  </IconWrapper>
-)
-
 export const TutorialIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -932,22 +958,10 @@ export const VersionIcon = (props) => (
   </IconWrapper>
 )
 
-export const WarningIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
-  </IconWrapper>
-)
-
 // WideIcon - Looks like two arrow pointing outwards
 export const WideIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M3 12 h 7 M 14 12 h 7 M 5.5 8 l -4 4 l 4 4 M 18.5 8 l 4 4 l -4 4" />
-  </IconWrapper>
-)
-
-export const WrenchIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
   </IconWrapper>
 )
 

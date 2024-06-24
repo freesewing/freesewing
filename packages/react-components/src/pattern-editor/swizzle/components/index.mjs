@@ -51,6 +51,14 @@ import {
   EditIcon,
   ExportIcon,
   FlagIcon,
+  FlagNoteIcon,
+  FlagInfoIcon,
+  FlagTipIcon,
+  FlagWarningIcon,
+  FlagErrorIcon,
+  FlagFixmeIcon,
+  FlagExpandIcon,
+  FlagOtionsIcon,
   GaugeIcon,
   GroupIcon,
   KioskIcon,
@@ -142,7 +150,7 @@ import {
   MenuShowValue,
 } from './menus/shared-values.mjs'
 // Flags
-import { Flags, FlagsAccordionTitle, FlagsAccordionEntries } from './flags.mjs'
+import { Flag, Flags, FlagTypeIcon, FlagsAccordionTitle, FlagsAccordionEntries } from './flags.mjs'
 
 /**
  * This object holds all components that can be swizzled
@@ -166,9 +174,11 @@ const defaultComponents = {
   DraftMenu,
   DraftView,
   ErrorView,
+  Flag,
   Flags,
   FlagsAccordionTitle,
   FlagsAccordionEntries,
+  FlagTypeIcon,
   FormControl,
   Link,
   ListInput,
@@ -203,6 +213,14 @@ const defaultComponents = {
   DocsIcon,
   EditIcon,
   FlagIcon,
+  FlagNoteIcon,
+  FlagInfoIcon,
+  FlagTipIcon,
+  FlagWarningIcon,
+  FlagErrorIcon,
+  FlagFixmeIcon,
+  FlagExpandIcon,
+  FlagOtionsIcon,
   GaugeIcon,
   GroupIcon,
   KioskIcon,

@@ -52,6 +52,7 @@ import {
   menuCoreSettingsSaboolHandler,
 } from './menu-core-settings-handlers.mjs'
 import { defaultSamm } from './default-samm.mjs'
+import { flattenFlags } from './flatten-flags.mjs'
 
 /*
  * Placeholder for methods that need to be swizzled or won't be available
@@ -68,6 +69,7 @@ const defaultMethods = {
   defaultSamm,
   designMeasurements,
   draft,
+  flattenFlags,
   formatFraction128,
   formatImperial,
   formatMm,

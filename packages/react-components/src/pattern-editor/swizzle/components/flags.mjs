@@ -1,5 +1,5 @@
+import mustache from 'mustache'
 //// Dependencies
-//import mustache from 'mustache'
 //import { nsMerge } from 'shared/utils.mjs'
 //// Hooks
 //import { useTranslation } from 'next-i18next'
@@ -29,22 +29,28 @@
 //  expand: ExpandIcon,
 //  options: OptionsIcon,
 //}
+//
+export const FlagTypeIcon = ({ Swizzled, type, className = 'w-6 h-6' }) => {
+  const Icon = Swizzled.components[`Flag${Swizzled.methods.capitalize(type)}Icon`]
 
-// This is also the order in which they will be displayed
-export const flagTypes = ['error', 'warn', 'note', 'info', 'tip', 'fixme']
+  return Icon ? <Icon className={className} /> : null
+}
 
-export const Flag = ({ Swizzled, data, t, handleUpdate }) => {
-  const BtnIcon = data.suggest?.icon ? flagIcons[data.suggest.icon] : false
+export const Flag = ({ Swizzled, data, handleUpdate }) => {
+  const btnIcon = data.suggest?.icon ? (
+    <Swizzled.components.FlagTypeIcon type={data.suggest.icon} className="w-5 h-6 sm:w-6 h-6" />
+  ) : null
+  const { t } = Swizzled.methods
 
   const button =
     data.suggest?.text && data.suggest?.update ? (
       <button
         className={`btn btn-secondary btn-outline flex flex-row items-center ${
-          BtnIcon ? 'gap-6' : ''
+          btnIcon ? 'gap-6' : ''
         }`}
         onClick={() => handleUpdate(data.suggest.update)}
       >
-        {BtnIcon && <BtnIcon className="w-5 h-6 sm:w-6 h-6" />}
+        {btnIcon}
         {t(data.suggest.text)}
       </button>
     ) : null
@@ -62,36 +68,19 @@ export const Flag = ({ Swizzled, data, t, handleUpdate }) => {
   return (
     <div className="flex flex-col gap-2 items-start">
       <div className="first:mt-0 grow md flag">
-        <Mdx md={notes ? desc + notes : desc} />
+        <pre>{desc}</pre>
+        <pre>{notes}</pre>
       </div>
       {button ? <div className="mt-2 w-full flex flex-row justify-end">{button}</div> : null}
     </div>
   )
 }
-
-const flattenFlags = (flags) => {
-  const all = {}
-  const ns = ['flag']
-  for (const type of flagTypes) {
-    let i = 0
-    if (flags[type]) {
-      for (const flag of Object.values(flags[type])) {
-        i++
-        all[`${type}-${i}`] = { ...flag, type }
-        if (flag.ns) ns.push(flag.ns)
-        if (flag.title.includes(':')) ns.push(flag.title.split(':').shift())
-        if (flag.desc.includes(':')) ns.push(flag.desc.split(':').shift())
-      }
-    }
-  }
-
-  return [all, ns]
-}
+//<Mdx md={notes ? desc + notes : desc} />
 
 export const FlagsAccordionTitle = ({ flags, Swizzled }) => {
   const { t } = Swizzled.methods
   const { FlagIcon } = Swizzled.components
-  const [flagList] = flattenFlags(flags)
+  const flagList = Swizzled.methods.flattenFlags(flags)
 
   if (Object.keys(flagList).length < 1) return null
 
@@ -101,7 +90,7 @@ export const FlagsAccordionTitle = ({ flags, Swizzled }) => {
         <span className="text-left">
           {t('flag:flagMenu.t')} ({Object.keys(flagList).length})
         </span>
-        <FlagIcon className="w-8 h-8" />
+        <Swizzled.components.FlagTypeIcon className="w-8 h-8" />
       </h5>
       <p className="text-left">
         {Object.keys(flagList).length > 1 ? t('flag:flagMenuMany.d') : t('flag:flagMenuOne.d')}
@@ -110,9 +99,9 @@ export const FlagsAccordionTitle = ({ flags, Swizzled }) => {
   )
 }
 
-export const FlagsAccordionEntries = ({ flags, update }) => {
-  const [flagList, ns] = flattenFlags(flags)
-  const { t } = useTranslation(nsMerge(ns))
+export const FlagsAccordionEntries = ({ flags, update, Swizzled }) => {
+  const flagList = Swizzled.methods.flattenFlags(flags)
+  const { t } = Swizzled.methods
 
   if (Object.keys(flagList).length < 1) return null
 
@@ -122,22 +111,21 @@ export const FlagsAccordionEntries = ({ flags, update }) => {
   }
 
   return (
-    <SubAccordion
+    <Swizzled.components.SubAccordion
       items={Object.entries(flagList).map(([key, flag], i) => {
-        const Icon = flagIcons[flag.type]
         const title = flag.replace ? mustache.render(t(flag.title), flag.replace) : t(flag.title)
 
         return [
           <div className="w-full flex flex-row gap2 justify-between" key={i}>
             <div className="flex flex-row items-center gap-2">
               <div className="no-shrink">
-                <Icon />
+                <Swizzled.components.FlagIcon type={flag.type} />
               </div>
               <span className="font-medium text-left">{title}</span>
             </div>
             <span className="uppercase font-bold">{flag.type}</span>
           </div>,
-          <Flag key={key} t={t} data={flag} handleUpdate={handleUpdate} />,
+          <Swizzled.components.Flag key={key} t={t} data={flag} handleUpdate={handleUpdate} />,
           key,
         ]
       })}
