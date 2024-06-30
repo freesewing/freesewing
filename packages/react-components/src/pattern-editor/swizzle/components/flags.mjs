@@ -88,12 +88,12 @@ export const FlagsAccordionTitle = ({ flags, Swizzled }) => {
     <>
       <h5 className="flex flex-row gap-2 items-center justify-between w-full">
         <span className="text-left">
-          {t('flag:flagMenu.t')} ({Object.keys(flagList).length})
+          {t('pe:flagMenu.t')} ({Object.keys(flagList).length})
         </span>
         <Swizzled.components.FlagTypeIcon className="w-8 h-8" />
       </h5>
       <p className="text-left">
-        {Object.keys(flagList).length > 1 ? t('flag:flagMenuMany.d') : t('flag:flagMenuOne.d')}
+        {Object.keys(flagList).length > 1 ? t('pe:flagMenuMany.d') : t('pe:flagMenuOne.d')}
       </p>
     </>
   )

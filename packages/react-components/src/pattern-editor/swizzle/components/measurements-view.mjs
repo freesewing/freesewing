@@ -143,40 +143,43 @@ export const MeasurementsView = ({
   ])
 
   return (
-    <div className="max-w-7xl mt-8 mx-auto px-4">
-      <h2>{t('pe:measurements')}</h2>
-      {missingMeasurements && missingMeasurements.length > 0 ? (
-        <Popout note dense noP>
-          <h5>{t('pe:missingMeasurementsInfo')}:</h5>
-          <ol className="list list-inside flex flex-row flex-wrap">
-            {missingMeasurements.map((m, i) => (
-              <li key={i}>
-                {i > 0 ? <span className="pr-2">,</span> : null}
-                <span className="font-medium">{t(`measurements:${m}`)}</span>
-              </li>
-            ))}
-          </ol>
-          <p className="text-sm m-0 p-0 pt-2">
-            ({missingMeasurements.length} {t('pe:missingMeasurements')})
-          </p>
-        </Popout>
-      ) : (
-        <Popout tip dense noP>
-          <h5>{t('pe:measurementsAreOk')}</h5>
-          <div className="flex flex-row flex-wrap gap-2 mt-2">
-            <button className="btn btn-primary lg:btn-lg" onClick={() => update.view('draft')}>
-              {t('pe:view.draft.t')}
-            </button>
-            <button
-              className="btn btn-primary btn-outline lg:btn-lg"
-              onClick={() => update.view('picker')}
-            >
-              {t('pe:chooseAnotherActivity')}
-            </button>
-          </div>
-        </Popout>
-      )}
-      {items.length > 1 ? <Accordion items={items} /> : items}
-    </div>
+    <>
+      <Swizzled.components.HeaderMenu state={state} {...{ Swizzled, update }} />
+      <div className="max-w-7xl mt-8 mx-auto px-4">
+        <h2>{t('pe:measurements')}</h2>
+        {missingMeasurements && missingMeasurements.length > 0 ? (
+          <Popout note dense noP>
+            <h5>{t('pe:missingMeasurementsInfo')}:</h5>
+            <ol className="list list-inside flex flex-row flex-wrap">
+              {missingMeasurements.map((m, i) => (
+                <li key={i}>
+                  {i > 0 ? <span className="pr-2">,</span> : null}
+                  <span className="font-medium">{t(`measurements:${m}`)}</span>
+                </li>
+              ))}
+            </ol>
+            <p className="text-sm m-0 p-0 pt-2">
+              ({missingMeasurements.length} {t('pe:missingMeasurements')})
+            </p>
+          </Popout>
+        ) : (
+          <Popout tip dense noP>
+            <h5>{t('pe:measurementsAreOk')}</h5>
+            <div className="flex flex-row flex-wrap gap-2 mt-2">
+              <button className="btn btn-primary lg:btn-lg" onClick={() => update.view('draft')}>
+                {t('pe:view.draft.t')}
+              </button>
+              <button
+                className="btn btn-primary btn-outline lg:btn-lg"
+                onClick={() => update.view('picker')}
+              >
+                {t('pe:chooseAnotherActivity')}
+              </button>
+            </div>
+          </Popout>
+        )}
+        {items.length > 1 ? <Accordion items={items} /> : items}
+      </div>
+    </>
   )
 }

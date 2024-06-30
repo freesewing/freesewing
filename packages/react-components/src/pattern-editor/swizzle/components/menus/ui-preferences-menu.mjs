@@ -29,7 +29,7 @@ export const UiPreferencesMenu = ({ Swizzled, update, state, Design }) => {
           />
         ),
         isFirst: true,
-        name: 'pe:uiSettings',
+        name: 'pe:uiPreferences',
         language: state.locale,
         passProps: {
           control: state.ui.control,

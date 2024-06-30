@@ -18,7 +18,7 @@ export const DraftMenu = ({ Design, pattern, state, Swizzled, update }) => {
       menu: <Swizzled.components.CoreSettingsMenu {...menuProps} />,
     },
     {
-      name: 'uiSettings',
+      name: 'uiPreferences',
       icon: <Swizzled.components.UiIcon className="w-8 h-8" />,
       menu: <Swizzled.components.UiPreferencesMenu {...menuProps} />,
     },

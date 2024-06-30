@@ -76,6 +76,7 @@ import {
   RocketIcon,
   SaveIcon,
   SettingsIcon,
+  TrashIcon,
   UiIcon,
   UploadIcon,
   XrayIcon,
@@ -153,6 +154,19 @@ import {
   MenuScaleSettingValue,
   MenuShowValue,
 } from './menus/shared-values.mjs'
+import {
+  HeaderMenu,
+  HeaderMenuAllViews,
+  HeaderMenuDraftView,
+  HeaderMenuButton,
+  HeaderMenuDropdown,
+  HeaderMenuDropdowns,
+  HeaderMenuDraftViewDesignOptions,
+  HeaderMenuDraftViewCoreSettings,
+  HeaderMenuDraftViewUiPreferences,
+  HeaderMenuDraftViewFlags,
+  HeaderMenuViewMenu,
+} from './header-menu.mjs'
 // Flags
 import { Flag, Flags, FlagTypeIcon, FlagsAccordionTitle, FlagsAccordionEntries } from './flags.mjs'
 // View Menu
@@ -163,6 +177,7 @@ import {
   ViewMenuSpacer,
   ViewTypeIcon,
 } from './view-menu.mjs'
+import { Null } from './null.mjs'
 
 /**
  * This object holds all components that can be swizzled
@@ -192,6 +207,16 @@ const defaultComponents = {
   FlagsAccordionEntries,
   FlagTypeIcon,
   FormControl,
+  HeaderMenu,
+  HeaderMenuAllViews,
+  HeaderMenuDraftView,
+  HeaderMenuDraftViewDesignOptions,
+  HeaderMenuDraftViewCoreSettings,
+  HeaderMenuDraftViewUiPreferences,
+  HeaderMenuDraftViewFlags,
+  HeaderMenuButton,
+  HeaderMenuDropdown,
+  HeaderMenuDropdowns,
   Link,
   ListInput,
   MarkdownInput,
@@ -200,6 +225,7 @@ const defaultComponents = {
   MeasurementsView,
   MeasurementsEditor,
   NumberInput,
+  Null,
   Pattern,
   PatternLayout,
   Popout,
@@ -214,6 +240,7 @@ const defaultComponents = {
   ViewMenuIcons,
   ViewMenuButton,
   ViewMenuSpacer,
+  HeaderMenuViewMenu,
   ViewPicker,
   ViewTypeIcon,
   ZoomablePattern,
@@ -255,6 +282,7 @@ const defaultComponents = {
   RocketIcon,
   SaveIcon,
   SettingsIcon,
+  TrashIcon,
   UiIcon,
   UploadIcon,
   XrayIcon,

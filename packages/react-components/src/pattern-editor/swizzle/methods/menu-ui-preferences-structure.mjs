@@ -1,6 +1,6 @@
 export const menuUiPreferencesStructure = (Swizzled) => {
   const uiControl = Swizzled.config.controlLevels.ui
-  const uiSettings = {
+  const uiPreferences = {
     control: {
       control: uiControl.control,
       emoji: '🖥️',
@@ -39,6 +39,8 @@ export const menuUiPreferencesStructure = (Swizzled) => {
     },
   }
 
-  uiSettings.control.list.forEach((i) => (uiSettings.control.choiceTitles[i] = 'pe:control' + i))
-  return uiSettings
+  uiPreferences.control.list.forEach(
+    (i) => (uiPreferences.control.choiceTitles[i] = 'pe:control' + i)
+  )
+  return uiPreferences
 }

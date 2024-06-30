@@ -10,6 +10,8 @@ export const IconWrapper = ({
   children = null,
   fill = false,
   fillOpacity = 1,
+  strokeOpacity = 1,
+  dasharray = null,
   wrapped = true,
 }) =>
   wrapped ? (
@@ -17,11 +19,13 @@ export const IconWrapper = ({
       xmlns="http://www.w3.org/2000/svg"
       fill={fill ? 'currentColor' : 'none'}
       fillOpacity={fillOpacity}
+      strokeOpacity={fillOpacity}
       viewBox="0 0 24 24"
       strokeWidth={stroke}
       stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
+      strokeDasharray={dasharray ? dasharray : ''}
       className={className + ' icon'}
     >
       {children}
@@ -270,6 +274,13 @@ export const SettingsIcon = (props) => (
 export const TipIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+  </IconWrapper>
+)
+
+// Looks like a trashcan
+export const TrashIcon = (props) => (
+  <IconWrapper {...props} stroke={props.stroke || 2}>
+    <path d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
   </IconWrapper>
 )
 
@@ -914,12 +925,6 @@ export const TutorialIcon = (props) => (
     <path d="M12 14l9-5-9-5-9 5 9 5z" />
     <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
     <path d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
-  </IconWrapper>
-)
-
-export const TrashIcon = (props) => (
-  <IconWrapper {...props} stroke={props.stroke || 2}>
-    <path d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
   </IconWrapper>
 )
 
