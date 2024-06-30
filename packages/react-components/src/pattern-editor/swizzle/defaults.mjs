@@ -39,9 +39,12 @@ export const swizzleDefaults = (customDefaults = {}) => {
  * The default defaults :)
  */
 const normalDefaults = {
-  settings: {},
+  settings: {
+    test: 'ikkel',
+  },
   ui: {
     renderer: 'react',
     kiosk: false,
+    control: 4,
   },
 }

@@ -50,7 +50,7 @@ export const DesignOptionsMenu = ({ Design, isFirst = true, state, update, Swizz
     <Swizzled.components.MenuItemGroup
       {...{
         structure,
-        control: state.control,
+        control: state.ui.control,
         currentValues: state.settings.options || {},
         Icon: Swizzled.components.OptionsIcon,
         Item: (props) => (
@@ -63,7 +63,7 @@ export const DesignOptionsMenu = ({ Design, isFirst = true, state, update, Swizz
         name: 'pe:designOptions',
         language: state.locale,
         passProps: {
-          control: state.control,
+          control: state.ui.control,
           settings: state.settings,
           patternConfig: Design.patternConfig,
         },

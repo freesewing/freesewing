@@ -53,7 +53,8 @@ import {
 } from './menu-core-settings-handlers.mjs'
 import { defaultSamm } from './default-samm.mjs'
 import { flattenFlags } from './flatten-flags.mjs'
-
+import { stateUpdateFactory } from './state-update-factory.mjs'
+import { statePrefixPath } from './state-prefix-path.mjs'
 /*
  * Placeholder for methods that need to be swizzled or won't be available
  */
@@ -94,6 +95,8 @@ const defaultMethods = {
   round,
   roundMm,
   setModal: noop,
+  stateUpdateFactory,
+  statePrefixPath,
   structureMeasurementsAsDesign,
   t,
 }

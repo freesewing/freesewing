@@ -61,6 +61,7 @@ import {
   FlagOtionsIcon,
   GaugeIcon,
   GroupIcon,
+  HelpIcon,
   KioskIcon,
   LeftIcon,
   ListIcon,
@@ -90,6 +91,7 @@ import {
   ViewInspectIcon,
   ViewDocsIcon,
   ViewDesignsIcon,
+  ViewViewPickerIcon,
 } from './icons.mjs'
 // Measurements Editor
 import { MeasurementsEditor } from './measurements-editor.mjs'
@@ -154,7 +156,13 @@ import {
 // Flags
 import { Flag, Flags, FlagTypeIcon, FlagsAccordionTitle, FlagsAccordionEntries } from './flags.mjs'
 // View Menu
-import { ViewMenu, ViewMenuIcons, ViewMenuButton } from './view-menu.mjs'
+import {
+  ViewMenu,
+  ViewMenuIcons,
+  ViewMenuButton,
+  ViewMenuSpacer,
+  ViewTypeIcon,
+} from './view-menu.mjs'
 
 /**
  * This object holds all components that can be swizzled
@@ -205,7 +213,9 @@ const defaultComponents = {
   ViewMenu,
   ViewMenuIcons,
   ViewMenuButton,
+  ViewMenuSpacer,
   ViewPicker,
+  ViewTypeIcon,
   ZoomablePattern,
   ZoomContextProvider,
   // icons
@@ -230,6 +240,7 @@ const defaultComponents = {
   FlagOtionsIcon,
   GaugeIcon,
   GroupIcon,
+  HelpIcon,
   KioskIcon,
   LeftIcon,
   ListIcon,
@@ -259,6 +270,7 @@ const defaultComponents = {
   ViewInspectIcon,
   ViewDocsIcon,
   ViewDesignsIcon,
+  ViewViewPickerIcon,
   // menus
   MenuItem,
   MenuItemGroup,

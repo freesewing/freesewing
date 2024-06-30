@@ -1,10 +1,8 @@
 export const DraftMenu = ({ Design, pattern, state, Swizzled, update }) => {
-  // Editor state
-  const { control } = state
   // Swizzled methods
   const { t } = Swizzled.methods
   // Swizzled components
-  const { FlagsAccordionTitle, FlagsAccordionEntries, Accordion } = Swizzled.components
+  const { FlagsAccordionTitle, FlagsAccordionEntries, Accordion, HelpIcon } = Swizzled.components
 
   const menuProps = { Design, state, Swizzled, pattern, update }
 
@@ -27,9 +25,9 @@ export const DraftMenu = ({ Design, pattern, state, Swizzled, update }) => {
   ]
 
   // Show tip for lower User Experiences
-  if (control <= 3)
+  if (state.ui.control <= 3)
     sections.push({
-      name: 'missingSettings' + control,
+      name: 'missingSettings' + state.ui.control,
       icon: <HelpIcon className="w-8 h-8" />,
     })
 

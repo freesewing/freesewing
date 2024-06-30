@@ -28,7 +28,7 @@ export const MenuItem = ({
   changed,
   Input = () => {},
   allowOverride = false,
-  control = Infinity,
+  control = 5,
   docs,
   config,
   Design,

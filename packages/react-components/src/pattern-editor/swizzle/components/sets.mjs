@@ -21,7 +21,6 @@ export const UserSetPicker = ({
   // Swizzled hooks
   const { useBackend, useAccount } = Swizzled.hooks
   const backend = useBackend()
-  const { control } = useAccount()
   // Swizzled methods
   const { t, hasRequiredMeasurements } = Swizzled.methods
   // Swizzled config
@@ -82,7 +81,7 @@ export const UserSetPicker = ({
           {okSets.map((set) => (
             <MeasurementsSetCard
               href={false}
-              {...{ set, control, Design, methods, config }}
+              {...{ set, Design, methods, config }}
               onClick={clickHandler}
               href={href}
               key={set.id}
@@ -100,7 +99,7 @@ export const UserSetPicker = ({
             {lackingSets.map((set) => (
               <MeasurementsSetCard
                 href={false}
-                {...{ set, control, Design }}
+                {...{ set, Design }}
                 onClick={missingClickHandler}
                 href={href}
                 key={set.id}
@@ -126,7 +125,6 @@ export const BookmarkedSetPicker = ({
   // Swizzled hooks
   const { useBackend, useAccount } = Swizzled.hooks
   const backend = useBackend()
-  const { control } = useAccount()
   // Swizzled methods
   const { t, hasRequiredMeasurements } = Swizzled.methods
   // Swizzled config
@@ -171,7 +169,7 @@ export const BookmarkedSetPicker = ({
           {okSets.map((set) => (
             <MeasurementsSetCard
               href={false}
-              {...{ set, control, Design, methods, config }}
+              {...{ set, Design, methods, config }}
               onClick={clickHandler}
               key={set.id}
               size={size}
@@ -188,7 +186,7 @@ export const BookmarkedSetPicker = ({
             {lackingSets.map((set) => (
               <MeasurementsSetCard
                 href={false}
-                {...{ set, control, Design }}
+                {...{ set, Design }}
                 onClick={missingClickHandler}
                 key={set.id}
                 size={size}

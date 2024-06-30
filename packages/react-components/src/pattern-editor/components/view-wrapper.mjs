@@ -32,12 +32,38 @@ export const ViewWrapper = ({
   // Figure out what view to load
   const [View, extraProps] = viewfinder({ design, designs, preload, state, Swizzled })
 
-  // Render the view & view menu
-  return (
+  /*
+   * Almost all editor state has a default settings, and when that is selected
+   * we just unset that value in the state. This way, state holds only what is
+   * customized, and it makes it a lot easier to see how a pattern was edited.
+   * The big exception is the 'ui.control' setting. If it is unset, a bunch of
+   * components will not function properly. We could guard against this by passing
+   * the default to all of these components, but instead, we just check that state
+   * is undefined, and if so pass down the default control value here.
+   * This way, should more of these exceptions get added over time, we can use
+   * the same centralized solution.
+   */
+  const passDownState =
+    typeof state.ui.control === 'undefined'
+      ? { ...state, ui: { ...state.ui, control: Swizzled.config.defaultControl } }
+      : state
+
+  return state.ui.kiosk ? (
     <div className="flex flex-row items-top">
-      <Swizzled.components.ViewMenu {...{ update, state }} />
+      <Swizzled.components.ViewMenu update={update} state={passDownState} />
+      <div
+        className={
+          state.ui.kiosk ? 'z-30 w-screen h-screen fixed top-0 left-0 bg-base-100' : 'grow w-full'
+        }
+      >
+        <View {...extraProps} {...{ update, designs }} state={passDownState} />
+      </div>
+    </div>
+  ) : (
+    <div className="flex flex-row items-top">
+      <Swizzled.components.ViewMenu update={update} state={passDownState} />
       <div className="grow w-full">
-        <View {...extraProps} {...{ update, state, designs }} />
+        <View {...extraProps} {...{ update, designs }} state={passDownState} />
       </div>
     </div>
   )
@@ -116,7 +142,6 @@ const initialEditorState = (Swizzled, preload = {}, locale = 'en', extra = {}) =
     settings: false,
     ui: false,
     locale,
-    control: Swizzled.config.defaultControl,
     ...extra,
   }
 

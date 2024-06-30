@@ -1,45 +1,4 @@
 import { useState } from 'react'
-//  __SDEFILE__ - This file is a dependency for the stand-alone environment
-//import { controlLevels } from 'shared/config/freesewing.config.mjs'
-//// Hooks
-//import { useTranslation } from 'next-i18next'
-//// Components
-//import {
-//  BeakerIcon,
-//  CodeIcon,
-//  CutIcon,
-//  OptionsIcon,
-//  PrintIcon,
-//  SaveIcon,
-//  SaveAsIcon,
-//  RightIcon,
-//  LeftIcon,
-//  DocsIcon,
-//  MeasieIcon,
-//  XrayIcon,
-//  EditIcon,
-//  ExportIcon,
-//  GaugeIcon,
-//} from 'shared/components/icons.mjs'
-//import Link from 'next/link'
-//import { MenuWrapper } from 'shared/components/workbench/menus/shared/menu-wrapper.mjs'
-//
-//export const ns = ['workbench', 'sections']
-//
-//const icons = {
-//  test: BeakerIcon,
-//  time: GaugeIcon,
-//  export: ExportIcon,
-//  Edit: EditIcon,
-//  cut: CutIcon,
-//  draft: OptionsIcon,
-//  print: PrintIcon,
-//  save: SaveIcon,
-//  saveas: SaveAsIcon,
-//  logs: CodeIcon,
-//  inspect: XrayIcon,
-//  measies: MeasieIcon,
-//}
 
 export const ViewMenuButton = ({
   href,
@@ -71,12 +30,13 @@ export const ViewMenuButton = ({
 }
 
 export const ViewTypeIcon = ({ Swizzled, view, className = 'h-6 w-6 grow-0' }) => {
-  const Icon = Swizzled.components[`View${capitalize(view)}Icon`]
-  console.log({ Icon })
+  const Icon = Swizzled.components[`View${Swizzled.methods.capitalize(view)}Icon`]
   if (!Icon) return <Swizzled.components.OptionsIcon />
 
   return <Icon className={className} />
 }
+
+export const ViewMenuSpacer = () => <hr className="my-1 w-full opacity-20 font-bold border-t-2" />
 
 export const ViewMenuIcons = ({ state, update, setDense, dense, Swizzled }) => {
   const { t } = Swizzled.methods
@@ -85,7 +45,15 @@ export const ViewMenuIcons = ({ state, update, setDense, dense, Swizzled }) => {
   const output = [
     <Swizzled.components.ViewMenuButton
       onClick={() => setDense(!dense)}
-      label=""
+      label={
+        dense ? (
+          ''
+        ) : (
+          <b>
+            <em className="pl-4 opacity-60">Editor Views</em>
+          </b>
+        )
+      }
       extraClasses="hidden lg:flex text-accent bg-neutral hover:bg-accent hover:text-neutral-content"
     >
       {dense ? (
@@ -99,25 +67,38 @@ export const ViewMenuIcons = ({ state, update, setDense, dense, Swizzled }) => {
     </Swizzled.components.ViewMenuButton>,
   ]
 
-  for (const view of Swizzled.config.views) {
-    if (state.control >= Swizzled.config.controlLevels.views[view])
+  let i = 1
+  for (const view of [
+    'spacer',
+    ...Swizzled.config.mainViews,
+    'spacer',
+    ...Swizzled.config.extraViews,
+    'spacerOver3',
+    ...Swizzled.config.devViews,
+    'spacer',
+    'viewPicker',
+  ]) {
+    if (view === 'spacer') output.push(<Swizzled.components.ViewMenuSpacer key={i} />)
+    else if (view === 'spacerOver3')
+      output.push(state.ui.control > 3 ? <Swizzled.components.ViewMenuSpacer key={i} /> : null)
+    else if (state.ui.control >= Swizzled.config.controlLevels.views[view])
       output.push(
         <Swizzled.components.ViewMenuButton
           key={view}
           onClick={() => update.view(view)}
-          label={t(`pe:views.${view}.t`)}
+          label={t(`pe:view.${view}.t`)}
           active={state.view === view}
         >
           <Swizzled.components.ViewTypeIcon view={view} />
         </Swizzled.components.ViewMenuButton>
       )
+    i++
   }
 
   return output
 }
 
 export const ViewMenu = ({ Swizzled, view, update, saveAs = false, state }) => {
-  console.log('in view meny', state)
   const [dense, setDense] = useState(true)
   return (
     <div

@@ -4,7 +4,6 @@
  * @param {object} settings - The pattern settings/state
  * @param {object} ui - The UI settings/state
  * @param {object} update - Object holding methods to manipulate state
- * @param {integer} control - The control value
  * @param {function} Design - The Design contructor
  * @param {object] pattern - The drafted pattern
  * @param {object} props.Swizzled - An object holding swizzled code
@@ -14,7 +13,6 @@ export const PatternLayout = (props) => {
     Header = false,
     menu = null,
     title = '',
-    control,
     Design,
     pattern,
     settings,
@@ -49,7 +47,6 @@ export const PatternLayout = (props) => {
               settings,
               ui,
               update,
-              control,
               account,
               design,
               setSettings,

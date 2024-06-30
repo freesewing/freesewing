@@ -10,7 +10,7 @@ export const UiPreferencesMenu = ({ Swizzled, update, state, Design }) => {
     renderer: (props) => <Swizzled.components.MenuListInput {...drillProps} {...props} />,
   }
   const values = {
-    control: (props) => <Swizzled.components.Control control={state.control} {...props} />,
+    control: (props) => <Swizzled.components.Control control={state.ui.control} {...props} />,
     kiosk: Swizzled.components.MenuListValue,
     renderer: Swizzled.components.MenuListValue,
   }
@@ -19,9 +19,8 @@ export const UiPreferencesMenu = ({ Swizzled, update, state, Design }) => {
     <Swizzled.components.MenuItemGroup
       {...{
         structure,
-        control: state.control,
+        control: state.ui.control,
         currentValues: state.ui || {},
-        //    Icon: Swizzled.components.UiIcon,
         Item: (props) => (
           <Swizzled.components.UiPreference
             updateHandler={update}
@@ -33,7 +32,7 @@ export const UiPreferencesMenu = ({ Swizzled, update, state, Design }) => {
         name: 'pe:uiSettings',
         language: state.locale,
         passProps: {
-          control: state.control,
+          control: state.ui.control,
           settings: state.settings,
           patternConfig: Design.patternConfig,
         },

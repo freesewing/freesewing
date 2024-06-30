@@ -9,7 +9,7 @@ import { useMemo } from 'react'
  * @param  {Object} options.account       the user account data
  * @param {object} props.Swizzled - An object holding swizzled code
  */
-export const CoreSettingsMenu = ({ update, state, language, control, Design, Swizzled }) => {
+export const CoreSettingsMenu = ({ update, state, language, Design, Swizzled }) => {
   const structure = Swizzled.methods.menuCoreSettingsStructure({
     language,
     units: state.settings.units,
@@ -53,7 +53,7 @@ export const CoreSettingsMenu = ({ update, state, language, control, Design, Swi
     <Swizzled.components.MenuItemGroup
       {...{
         structure,
-        control: state.control,
+        control: state.ui.control,
         currentValues: state.settings || {},
         Icon: Swizzled.components.SettingsIcon,
         Item: (props) => (
@@ -67,7 +67,7 @@ export const CoreSettingsMenu = ({ update, state, language, control, Design, Swi
         name: 'pe:designOptions',
         language: state.locale,
         passProps: {
-          control: state.control,
+          control: state.ui.control,
           settings: state.settings,
           patternConfig: Design.patternConfig,
         },

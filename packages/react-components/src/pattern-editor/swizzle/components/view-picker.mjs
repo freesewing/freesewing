@@ -24,14 +24,14 @@ export const ViewPicker = ({ designs, design, Design, Swizzled, update, state })
           <ExtraCard key={view} {...{ view, update, Swizzled }} />
         ))}
       </div>
-      {showDev || state.control > 3 ? (
+      {showDev || state.ui.control > 3 ? (
         <div className="max-w-6xl grid grid-cols-1 lg:grid-cols-4 mx-auto justify-center gap-2 lg:gap-4 mt-4">
           {Swizzled.config.devViews.map((view) => (
             <ExtraCard key={view} {...{ view, update, Swizzled }} />
           ))}
         </div>
       ) : null}
-      {state.control < 4 ? (
+      {state.ui.control < 4 ? (
         <button className="btn btn-ghost mt-2" onClick={() => setShowDev(!showDev)}>
           {Swizzled.methods.t(`pe:${showDev ? 'hide' : 'show'}AdvancedOptions`)}
         </button>

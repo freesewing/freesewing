@@ -36,7 +36,7 @@ export const DegOptionValue = ({ config, current, changed }) => (
 
 /** Displays the MmOptions are not supported */
 export const MmOptionValue = () => (
-  <span className="text-error">FIXME: No Mm Options are not supported</span>
+  <span className="text-error">FIXME: Mm Options are not supported</span>
 )
 
 /** Displays that constant values are not implemented in the front end */

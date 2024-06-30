@@ -5,52 +5,6 @@ import { useQueryState, createParser } from 'nuqs'
 import { useSearchParams } from 'next/navigation'
 
 /**
- * Helper method to push a prefix to a set path
- *
- * By 'set path' we mean a path to be passed to the
- * objUpdate method, which uses lodash's set under the hood.
- *
- * @param {string} prefix - The prefix path to add
- * @param {string|array} path - The path to prefix either as array or a string in dot notation
- * @return {array} newPath - The prefixed path
- */
-export const unshift = (prefix, path) => {
-  if (Array.isArray(path)) return [prefix, ...path]
-  else return [prefix, ...path.split('.')]
-}
-
-/*
- * This creates the helper object for state updates
- */
-export const updateFactory = ({ setState, objUpdate }) => ({
-  /*
-   * This allows raw access to the entire state object
-   */
-  state: (path, val) => setState((cur) => objUpdate({ ...cur }, path, val)),
-  /*
-   * These hold an object, so we take a path
-   */
-  settings: (path = null, val = null) => {
-    /*
-     * Allow passing an array of update operations.
-     * Note that we're not doing rigorous checking on the structure of the array.
-     * If you mess it up, it's on you.
-     */
-    if (Array.isArray(path) && val === null) {
-      for (const sub of path)
-        setState((cur) => objUpdate({ ...cur }, unshift('settings', sub[0]), sub[1]))
-    } else setState((cur) => objUpdate({ ...cur }, unshift('settings', path), val))
-  },
-  ui: (path, val) => setState((cur) => objUpdate({ ...cur }, unshift('ui', path), val)),
-  /*
-   * These only hold a string, so we only take a value
-   */
-  design: (val) => setState((cur) => objUpdate({ ...cur }, 'design', val)),
-  view: (val) => setState((cur) => objUpdate({ ...cur }, 'view', val)),
-  control: (val) => setState((cur) => objUpdate({ ...cur }, 'control', val)),
-})
-
-/**
  * react
  * This holds the editor state, using React state.
  * It also provides helper methods to manipulate state.
@@ -60,10 +14,7 @@ export const updateFactory = ({ setState, objUpdate }) => ({
  */
 export const useReactEditorState = (Swizzled, init = {}) => {
   const [state, setState] = useState(init)
-  const update = useMemo(
-    () => updateFactory({ setState, objUpdate: Swizzled.methods.objUpdate }),
-    [setState]
-  )
+  const update = useMemo(() => Swizzled.methods.stateUpdateFactory(setState), [setState])
 
   return [state, setState, update]
 }
@@ -78,10 +29,7 @@ export const useReactEditorState = (Swizzled, init = {}) => {
  */
 export const useStorageEditorState = (Swizzled, init = {}) => {
   const [state, setState] = useLocalStorageState('fs-editor', { defaultValue: init })
-  const update = useMemo(
-    () => updateFactory({ setState, objUpdate: Swizzled.methods.objUpdate }),
-    [setState]
-  )
+  const update = useMemo(() => Swizzled.methods.stateUpdateFactory(setState), [setState])
 
   return [state, setState, update]
 }
@@ -96,10 +44,7 @@ export const useStorageEditorState = (Swizzled, init = {}) => {
  */
 export const useSessionEditorState = (Swizzled, init = {}) => {
   const [state, setState] = useSessionStorageState('fs-editor', { defaultValue: init })
-  const update = useMemo(
-    () => updateFactory({ setState, objUpdate: Swizzled.methods.objUpdate }),
-    [setState]
-  )
+  const update = useMemo(() => Swizzled.methods.stateUpdateFactory(setState), [setState])
 
   return [state, setState, update]
 }
@@ -115,10 +60,7 @@ export const useSessionEditorState = (Swizzled, init = {}) => {
 export const useUrlEditorState = (Swizzled, init = {}) => {
   const searchParams = useSearchParams()
   const [state, setState] = useQueryState('s', pojoParser)
-  const update = useMemo(
-    () => updateFactory({ setState, objUpdate: Swizzled.methods.objUpdate }),
-    [setState]
-  )
+  const update = useMemo(() => Swizzled.methods.stateUpdateFactory(setState), [setState])
 
   /*
    * Set the initial state

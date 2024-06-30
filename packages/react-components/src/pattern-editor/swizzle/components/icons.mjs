@@ -9,12 +9,14 @@ export const IconWrapper = ({
   stroke = 2,
   children = null,
   fill = false,
+  fillOpacity = 1,
   wrapped = true,
 }) =>
   wrapped ? (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill={fill ? 'currentColor' : 'none'}
+      fillOpacity={fillOpacity}
       viewBox="0 0 24 24"
       strokeWidth={stroke}
       stroke="currentColor"
@@ -155,6 +157,13 @@ export const GaugeIcon = (props) => (
 export const GroupIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+  </IconWrapper>
+)
+
+// Looks like a question mark in a circle
+export const HelpIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
   </IconWrapper>
 )
 
@@ -313,6 +322,7 @@ export const ViewLogsIcon = ListIcon
 export const ViewInspectIcon = XrayIcon
 export const ViewDocsIcon = DocsIcon
 export const ViewDesignsIcon = DesignIcon
+export const ViewViewPickerIcon = UiIcon
 // Flag icons
 export const FlagNoteIcon = ChatIcon
 export const FlagInfoIcon = DocsIcon
@@ -588,12 +598,6 @@ export const GoogleIcon = (props) => (
 export const HeartIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-  </IconWrapper>
-)
-
-export const HelpIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
   </IconWrapper>
 )
 

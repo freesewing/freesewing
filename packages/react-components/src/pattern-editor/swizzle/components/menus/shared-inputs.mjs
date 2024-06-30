@@ -451,9 +451,8 @@ export const MenuControlSettingInput = (props) => {
   return (
     <Swizzled.components.MenuListInput
       {...props}
-      updateHandler={update.control}
-      current={state.control}
-      compact={state.control < 2}
+      updateHandler={update.ui}
+      current={state.ui.control}
     />
   )
 }

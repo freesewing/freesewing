@@ -63,6 +63,7 @@ view.docs.t: Documentation
 view.docs.d: More information and links to documentation
 view.designs.t: Choose a different Design
 view.designs.d: "Current design: {- design }"
+view.viewPicker.t: Choose a different view
 showAdvancedOptions: Show advanced options
 hideAdvancedOptions: Hide advanced options
 
@@ -118,13 +119,13 @@ renderWithReact.d: Render as SVG through our React components. Allows interactiv
 renderWithCore.t: Render with FreeSewing's Core library
 renderWithCore.d: Render directly to SVG from Core. Allows no interactivity and is optimized for print. Use this if you want to know what it will look like when exported.
 kiosk.t: Kiosk Mode
-kiosk.d: Controls how the web page is shown.
-websiteMode.t: Use website mode
-websiteMode.d: Show the full web page, including header, footer, and navigation.
+kiosk.d: Controls how the pattern editor is embedded in the web page.
+websiteMode.t: Use inline mode
+websiteMode.d: Embeds the pattern editor in the natural flow of the web page.
 kioskMode.t: Use kiosk mode
-kioskMode.d: Show just the pattern drafting portion of the web page, without header, footer, or navigation.
+kioskMode.d: Breaks out the pattern editor to fill the entire page.
 control.t: User Experience
-control.d: Which user experience do you prefer? Please note that this is an account setting, so it will impact the entire website.
+control.d: Which user experience do you prefer? From keep it simple, to give me all the powers.
 inspect.t: Inspect
 inspect.d: Enabling this will allow you to drill down into the pattern, and pull up information about its various parts, paths, and points.
 inspectNo.t: Disable the inspector
@@ -152,3 +153,16 @@ export.t: Export your pattern
 export.d: Allows you to export this pattern to a variety of formats
 logs.t: Pattern logs
 enterCustomValue: Enter a custom value
+
+# control
+control1.t: Keep it as simple as possible
+control1.d: Hides all but the most essential features.
+control2.t: Keep it simple, but not too simple
+control2.d: Hides the majority of features.
+control3.t: Balance simplicity with power
+control3.d: Reveals the majority of features, but not all.
+control4.t: Give me all powers, but keep me safe
+control4.d: Reveals all features, keeps handrails and safety checks.
+control5.t: Get out of my way
+control5.d: Reveals all features, removes all handrails and safety checks.
+
