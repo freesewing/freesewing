@@ -6,6 +6,7 @@ intro: "Nous adorons cette chemise Simone de Jackseye, qui l'a partagée :"
 title: "Simone par Jackseye"
 designs:
   - "simone"
+author: 28890
 ---
 
 Nous adorons cette chemise Simone de Jackseye, qui l'a partagée :
