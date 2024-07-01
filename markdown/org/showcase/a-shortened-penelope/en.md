@@ -2,7 +2,7 @@
 title: "A shortened Penelope"
 caption: "This Penelope was made in a mini length"
 date: 20240522
-intro: "The maker said:  "Made a bunch of changes to fit this in some teeny fabric remnants."
+intro: "The maker said: 'Made a bunch of changes to fit this in some teeny fabric remnants.'"
 author: 19867
 designs: ["penelope"]
 ---
