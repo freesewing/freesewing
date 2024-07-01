@@ -1,0 +1,7 @@
+---
+title: Réduction de la pente d'épaule
+maintainers:
+  - Jonathan Haas
+---
+
+La quantité par laquelle la pente des épaules est réduite pour permettre un ajustement aux épaules.
