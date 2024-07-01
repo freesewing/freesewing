@@ -6,6 +6,7 @@ intro: "Guin hat diesen tollen Simon abgeändert, indem sie ihm lustige Laternen
 title: "Guin's Gingham Laterne Simon"
 designs:
   - "simon"
+author: 27042
 ---
 
 Guin hat diesen tollen Simon abgeändert, indem sie ihm lustige Laternenärmel in einer Kontrastfarbe verpasst hat, die definitiv nichts damit zu tun hat, dass die marinefarbenen Gingham-Karos ausgegangen sind. Aber Ende gut, alles gut - sein Hemd ist fantastisch geworden. Außerdem gefällt mir die Art und Weise, wie die Streifen auf der Vorderseite aufeinander abgestimmt sind.
