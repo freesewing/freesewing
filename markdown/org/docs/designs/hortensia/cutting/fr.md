@@ -15,3 +15,4 @@ title: "Sac à main Hortensia : Instructions de coupe"
   - Couper **2 pièces latérales**
   - Couper **2 parties avant **
   - Couper **1 partie inférieure**
+  - Coupe **1 ZipperPanel** partie
