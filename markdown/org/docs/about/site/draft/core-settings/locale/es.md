@@ -11,7 +11,7 @@ FreeSewing admite actualmente los siguientes idiomas:
 - Francés
 - Alemán
 - Holandés
-- Ukrainian
+- Ucraniano
 
-You can pick any of these and your pattern will be translated in this language.
+Puedes escoger cualquiera de ellos, y tu patrón se traducirá a ese idioma.
 
