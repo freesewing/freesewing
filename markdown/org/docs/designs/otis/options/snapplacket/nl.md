@@ -2,6 +2,6 @@
 title: Drukknoopsluiting
 ---
 
-This option controls the depth of the placket that holds the snaps.
+Deze optie bepaalt de diepte van de sluiting die de drukknopen vasthoudt.
 
 Het is ongeveer een percentage van de taillemaat. Standaard is 5%
