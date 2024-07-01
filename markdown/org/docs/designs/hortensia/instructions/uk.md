@@ -40,7 +40,7 @@ If using bag strap webbing instead of fabric made straps do the following,
 
 ### Крок 4: Застібка-блискавка
 
-- Вставте застібку-блискавку в панель застібки-блискавки, переконавшись, що тяга застібки-блискавки знаходиться на _хорошій стороні_.
+- With _good sides together_ sew a zipper panel to each side of the zipper. We will now refer to this as **the zipper panel**.
 
 ### (Крок 5: Створіть вкладки.
 
@@ -82,10 +82,11 @@ If using bag strap webbing instead of fabric made straps do the following,
 
 - Лицьовими боками _разом_ пришийте передню і задню підкладкові панелі до нижньої підкладкової панелі.
 - За допомогою _лицьовими сторонами разом_ прикріпіть підкладкові бокові панелі.
+- With _good sides together_ attach the lining zipper panels to the side panels.
 - Припрасуйте під припуски верхнього шва.
 - Alternatively you can bind the top edges.
 - Place the lining inside the bag _wrong sides facing_ each other.
-- _Шов "ковзання"_ або _Шов "хлистик"_ пришийте підкладку до панелі на блискавці.
+- _Slipstitch_ or _Whipstitch_ the lining to the sides of the zipper.
 
 ### Крок 10: Насолоджуйтесь!
 
