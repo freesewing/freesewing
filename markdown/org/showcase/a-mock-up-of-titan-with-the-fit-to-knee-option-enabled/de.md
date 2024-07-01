@@ -6,6 +6,7 @@ intro: "Dieser Benutzer hat Titan mit der Passform-Knie-Messung getestet. Sie be
 designs:
   - "titan"
 maker: Benutzer-3
+author: 8
 ---
 
 Ein FreeSewing-Macher hat dieses Mock-up von Titan geteilt. Sie berichtete, dass sie mit den Ergebnissen für einen ersten Versuch insgesamt sehr zufrieden war. Ihre Hauptanpassung wird darin bestehen, die Taille des Rückenteils zu erhöhen. Die Herstellerin erwähnte, dass sie normalerweise Probleme mit der Passform von Hosen von der Stange hat und freut sich, dass Titan ein guter Ausgangspunkt für Kleidung ist, die ihr passt.
