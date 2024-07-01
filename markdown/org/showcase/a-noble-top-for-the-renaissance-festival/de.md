@@ -5,7 +5,7 @@ date: 20231016
 intro: "Dieses Oberteil basiert auf dem Noble-Block."
 designs:
   - "tristan"
-maker: Natalia
+author: 19867
 ---
 
 This top was made based on the Noble block, and later spun off into its own design, Tristan. Die Trägerin berichtet, dass ihr Körper asymmetrisch ist, was du in der Rückenansicht sehen kannst. Sie waren sehr zufrieden mit dieser einfachen Variante von Noble.
