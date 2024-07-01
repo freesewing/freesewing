@@ -6,6 +6,7 @@ intro: "Le créateur a partagé :"
 title: "Modifié Tamiko comme couverture d'allaitement"
 designs:
   - "tamiko"
+author: 19867
 ---
 
 Le créateur a partagé :
