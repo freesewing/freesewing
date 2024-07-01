@@ -1,11 +1,7 @@
 ---
-title: "Waistband"
+title: Ceinture
 ---
 
 ***
 
 Adds a waistband
-
-
-
-
