@@ -24,7 +24,7 @@ Also werde ich das nicht tun. Ich gehe davon aus, dass du mit offenem Geist lies
 Auf jeder Seite von FreeSewing.org gibt es die gleiche Kopfzeile mit Links zu den wichtigsten Bereichen der Website:
 
 - [Designs](/designs/) zeigt unsere Sammlung von parametrischen Designs, aus denen du maßgeschneiderte Nähmuster erstellen kannst
-- [Dokumentation](/documentation/) enthält die gesamte Dokumentation, für die Website, für unsere Designs, alles
+- [Dokumentation](/docs/) enthält die gesamte Dokumentation, für die Website, für unsere Designs, alles
 - [Blog](/blog/) enthält Blogbeiträge mit Updates und Neuigkeiten über FreeSewing
 - [Showcase](/showcase/) zeigt Beispiele aus der FreeSewing-Community, Dinge, die sie mit FreeSewing-Mustern genäht haben.
 - [Konto](/account/) ist der Ort, an dem du dein FreeSewing-Konto verwalten kannst.
@@ -37,7 +37,7 @@ Auf mobilen Geräten befindet sich die Kopfzeile am unteren Ende der Seite und a
 
 ## Anmelden oder Eintragen
 
-Du kannst dich unter [/signin](/signin/)für ein FreeSewing-Konto anmelden. We support signing in with your Google or GitHub account if that is easier for you.
+Du kannst dich unter [/signin](/signin/)für ein FreeSewing-Konto anmelden. Wir unterstützen die Registrierung mit deinem Google- oder GitHub-Account, falls das für dich einfacher ist.
 
 Wenn du bereits ein Konto hast, kannst du dich unter [/signin](/signin/)bei deinem Konto anmelden.
 
