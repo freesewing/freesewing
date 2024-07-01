@@ -6,6 +6,7 @@ intro: "Een groen Cathrin korset met 11 panelen"
 title: "Een groen Cathrin korset met 11 panelen"
 designs:
   - "cathrin"
+author: 19867
 ---
 
 ![kathrin1.jpg](https://posts.freesewing.org/uploads/cathrin1_4e664dbf4c.jpg)
