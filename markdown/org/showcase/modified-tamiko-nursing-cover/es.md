@@ -6,6 +6,7 @@ intro: "El fabricante compartió:"
 title: "Tamiko modificada como funda de lactancia"
 designs:
   - "tamiko"
+author: 19867
 ---
 
 El fabricante compartió:
