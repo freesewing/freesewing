@@ -9,7 +9,7 @@ title: "Chinos Charlie: Instrucciones de corte"
 - Parte **4**: **4 x**
 - Parte **6**: **2 x**
 - Pieza **8**: **4 x** (2 pares _con los lados buenos juntos_)
-- Parte **9**: **2 x** _con buenos lados juntos_
+- Part **9**: **1 x**
 - Parte **10**: **1 x** en plegado
 - Parte **11**: **1 x** si hace una pulsera recta
 - Parte **11**: **2 x** _con buenos lados juntos_ si hace una cintura curvada
