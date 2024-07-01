@@ -6,6 +6,7 @@ intro: "Зелений 11-панельний корсет Cathrin"
 title: "Зелений 11-панельний корсет Cathrin"
 designs:
   - "катрін"
+author: 19867
 ---
 
 ![cathrin1.jpg](https://posts.freesewing.org/uploads/cathrin1_4e664dbf4c.jpg)
