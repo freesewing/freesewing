@@ -7,7 +7,7 @@ title: "Сумочка Гортензія: Що вам потрібно"
 - Базові матеріали для шиття
 - Приблизно 0,5 - 2 метри (0,6 - 2,2 ярда) відповідної тканини ([див. варіанти тканини Hortensia](/docs/designs/hortensia/fabric/))
 - Приблизно 0,5 - 2 метри (0,6 - 2,2 ярда) підкладкової тканини ([див. варіанти тканини Hortensia](/docs/designs/hortensia/fabric/))
-- Застібка-блискавка коротша за довжину панелі блискавки та відповідна до ширини котушки [](/docs/designs/hortensia/options/zippersize/) обрана
+- A zipper the length of the zipper panels and matching the [coil width](/docs/designs/hortensia/options/zippersize/) selected
 - (Optional) About 1 - 2 metres (1.1 - 2.2 yards) of bias binding if you want to bind the side panel edges on the outside.
 - (Необов'язково) Тасьма для ремінця сумки вдвічі довша за довжину ремінця з припуском на шви і такої ж ширини, якщо ви не бажаєте виготовляти ремінці самостійно
 - (Необов'язково) Інтерфейс, якщо це необхідно для зміцнення тканини та/або ремінця
