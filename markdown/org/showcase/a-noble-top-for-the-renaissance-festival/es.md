@@ -5,7 +5,7 @@ date: 20231016
 intro: "Este top se basa en el bloque Noble."
 designs:
   - "tristan"
-maker: Natalia
+author: 19867
 ---
 
 This top was made based on the Noble block, and later spun off into its own design, Tristan. El usuario informa de que su cuerpo es asimétrico, lo que puedes ver en la vista posterior. Quedaron muy contentos con esta sencilla variación de Noble.
