@@ -6,6 +6,7 @@ intro: "Este usuario probó Titán con la medida de ajuste a la rodilla. En gene
 designs:
   - "titán"
 maker: usuario-3
+author: 8
 ---
 
 Un fabricante de FreeSewing compartió esta maqueta de Titán. Afirmó estar muy contenta en general con los resultados para ser un primer intento. Su principal ajuste consistirá en elevar la cintura de la pieza trasera. La creadora mencionó que suele tener problemas de ajuste con los pantalones de venta libre y le entusiasma que Titán sea un gran punto de partida para conseguir ropa que le quede bien.
