@@ -6,6 +6,7 @@ intro: "Cet utilisateur a testé Titan avec la mesure de l'ajustement au genou. 
 designs:
   - "titan"
 maker: utilisateur-3
+author: 8
 ---
 
 Une créatrice de FreeSewing a partagé cette maquette de Titan. Elle s'est déclarée globalement très satisfaite des résultats pour une première tentative. Son principal ajustement consistera à relever la taille de la pièce de dos. La créatrice a mentionné qu'elle a généralement des problèmes de taille avec les pantalons du commerce et qu'elle est ravie que Titan soit un excellent point de départ pour trouver des vêtements qui lui conviennent.
