@@ -1,8 +1,5 @@
 ---
-title: "Lumina leggings"
+title: Lumina leggings
 ---
 
-
-
 <DesignInfo design='lumina' docs />
-
