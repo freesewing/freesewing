@@ -40,7 +40,7 @@ If using bag strap webbing instead of fabric made straps do the following,
 
 ### Schritt 4: Der Reißverschluss
 
-- Führe den Reißverschluss in die Reißverschlussblende ein und achte darauf, dass sich der Reißverschlusszug auf der _guten Seite_befindet.
+- With _good sides together_ sew a zipper panel to each side of the zipper. We will now refer to this as **the zipper panel**.
 
 ### (Optional) Schritt 5: Konstruiere Registerkarten.
 
@@ -82,10 +82,11 @@ Es wird empfohlen, den Spalt zum Wenden an der Seite und nicht oben oder unten z
 
 - Lege _gut zusammen_ und nähe die vorderen und hinteren Futterteile an das untere Futterteil.
 - Lege die _Seiten aneinander_ und befestige die Seitenteile des Futters.
+- With _good sides together_ attach the lining zipper panels to the side panels.
 - Bügle unter die oberen Nahtzugaben.
 - Alternatively you can bind the top edges.
 - Place the lining inside the bag _wrong sides facing_ each other.
-- _Steppstich_ oder _Steppstich_ das Futter an der Reißverschlussleiste.
+- _Slipstitch_ or _Whipstitch_ the lining to the sides of the zipper.
 
 ### Schritt 10: Viel Spaß mit deinem neuen Shirt!
 
