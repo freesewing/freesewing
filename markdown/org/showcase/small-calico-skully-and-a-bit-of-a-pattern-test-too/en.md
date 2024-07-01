@@ -4,7 +4,7 @@ caption: "Skully grins at you! A small handmade skull stuffed with scraps made i
 date: 20231205
 intro: "A cute little handsewn skull can be yours! This is a fairly quick project with some challenging moments and a very worthwhile result."
 designs: ["skully"]
-maker: comixminx
+author: 22141
 ---
 
 I was intrigued at the time that the Skully pattern was launched; it looked cool and like it might be a fun challenge. Come the run up to Christmas, I had some calico and the idea to make a small Skully, partly as a trial and partly as a present.
