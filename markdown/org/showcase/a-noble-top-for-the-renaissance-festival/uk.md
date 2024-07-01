@@ -5,7 +5,7 @@ date: 20231016
 intro: "Цей топ створений на основі блоку Noble."
 designs:
   - "tristan"
-maker: Наталя
+author: 19867
 ---
 
 This top was made based on the Noble block, and later spun off into its own design, Tristan. Власник повідомляє, що його тіло асиметричне, що можна побачити на знімку ззаду. Вони були дуже задоволені цією простою варіацією Noble.
