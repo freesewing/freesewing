@@ -1,5 +1,5 @@
 ---
-maker: "comixminx"
+author: 22141
 caption: "Een rood met grijze Hugo met cartoonkattengezichtjes over het hele lichaam"
 date: "2023-01-16"
 intro: "Nog een geweldige FreeSewing-make van comixminx, die een geweldige manier laat zien om een passende uitdaging op te lossen. Deze Hugo hoodie op kindermaat (zonder capuchon) bleek een beetje extra lastig omdat de verhoudingen niet helemaal uitkwamen zoals verwacht. Dus maakte ze halverwege het naaien een paar aanpassingen (zoals het toevoegen van een mouwinzet omdat de mouwen erg smal werden en moeilijk in te naaien waren)."
