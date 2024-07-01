@@ -9,7 +9,7 @@ title: "Charlie chino's: Knip instructies"
 - Deel **4**: **4 x**
 - Deel **6**: **2 x**
 - Onderdeel **8**: **4 x** (2 paar _met goede kanten op elkaar_)
-- Deel **9**: **2 x** _met de goede kanten op elkaar_
+- Part **9**: **1 x**
 - Deel **10**: **1 x** aan de stofvouw
 - Deel **11**: **1 x** als je een rechte tailleband maakt
 - Deel **11**: **2 x** _met goede kanten op elkaar_ als je een gebogen tailleband maakt
