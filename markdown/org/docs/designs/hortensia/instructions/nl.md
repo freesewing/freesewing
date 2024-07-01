@@ -40,7 +40,7 @@ If using bag strap webbing instead of fabric made straps do the following,
 
 ### Stap 4: De rits
 
-- Plaats de rits in het ritspaneel en zorg ervoor dat de ritstrekker aan de _goede kant zit_.
+- With _good sides together_ sew a zipper panel to each side of the zipper. We will now refer to this as **the zipper panel**.
 
 ### (Optioneel) Stap 5: Maak tabbladen.
 
@@ -82,10 +82,11 @@ Het wordt aanbevolen om de opening voor het draaien aan de zijkant te laten in p
 
 - Met _goede kanten op elkaar_ naai je de voorste en achterste voeringdelen aan het onderste voeringdeel.
 - Met _goede kanten op elkaar_ bevestig je de zijpanelen van de voering.
+- With _good sides together_ attach the lining zipper panels to the side panels.
 - Pers onder de bovenste naadtoeslagen.
 - Alternatively you can bind the top edges.
 - Place the lining inside the bag _wrong sides facing_ each other.
-- _Schuifsteek_ of _Zweepsteek_ de voering aan het ritsdeel.
+- _Slipstitch_ or _Whipstitch_ the lining to the sides of the zipper.
 
 ### Stap 10: Geniet!
 
