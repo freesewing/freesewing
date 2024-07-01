@@ -6,6 +6,7 @@ intro: "Het maken van deze mini Shins is gefotografeerd om illustraties te maken
 title: "Mini Shin zwembroek"
 designs:
   - "shin"
+author: 19867
 ---
 
 Het maken van deze mini Shins is gefotografeerd om illustraties te maken voor de instructies. Terwijl daar aan gewerkt wordt -- of als je liever foto's dan tekeningen hebt -- kun je de hele serie foto's [bekijken op Discord](https://discord.com/channels/698854858052075530/787402509543145532/973065355763253289).
