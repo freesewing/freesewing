@@ -5,7 +5,7 @@ date: 20231205
 intro: Een schattig handgenaaid doodshoofdje kan van jou zijn! Dit is een vrij snel project met een aantal uitdagende momenten en een zeer de moeite waard resultaat.
 designs:
   - skully
-maker: comixminx
+author: 22141
 ---
 
 Ik was geïntrigeerd toen het Skully patroon werd vrijgegeven; het zag er cool uit en het leek me een leuke uitdaging. In de aanloop naar Kerstmis had ik wat calico en het idee om een kleine Skully te maken, deels als proef en deels als cadeau.
