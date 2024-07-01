@@ -1,13 +1,13 @@
-accountIssue: Account problem
-accountIssueDesc: Do you have trouble with your FreeSewing account?
-addImage: Add an image
-allOk: Everything is awesome
+accountIssue: Problema de cuenta
+accountIssueDesc: '¿Tienes problemas con tu cuenta de FreeSewing?'
+addImage: Añadir una imagen
+allOk: Todo es genial
 by: por
-bugReport: Report a bug
-bugReportDesc: Is something broken, or not working as expected?
-confirmedIssues: Confirmed issues
-createSupportRequest: Create a support request
-commentAdded: Comment added
+bugReport: Informar de un error
+bugReportDesc: '¿Se ha roto algo o no funciona como se esperaba?'
+confirmedIssues: Problemas confirmados
+createSupportRequest: Crear una solicitud de asistencia
+commentAdded: Comentario añadido
 communitySupport: Apoyo comunitario
 communitySupport1: For the fastest response, head over to <b>discord.freesewing.org</b> and post your question in the <b>need-help</b> channel.
 communitySupport2: La comunidad FreeSewing es un grupo muy servicial, así que es muy probable que puedan ayudarte.
@@ -33,29 +33,29 @@ issueReopened: Issue Re-Opened
 maintainerSupport: Apoyo a los mantenedores
 maintainerSupport1: Si eres <b>un patrón de FreeSewing</b>, puedes ir directamente a la parte superior y ponerte en contacto con Joost directamente.
 maintainerSupport2: Aunque Joost tratará las peticiones de los usuarios con prioridad, también necesita dormir. Así que tenlo en cuenta, especialmente cuando estés en una zona horaria diferente.
-noComments: No comments
-noConfirmedIssues: No confirmed issues
-noReportedIssues: No reported issues
-other: Something else
-otherDesc: Do you have something else you required assistance with?
-patronSponsor: Patrons / Sponsorship
+noComments: No hay comentarios
+noConfirmedIssues: No hay problemas confirmados
+noReportedIssues: No se han notificado problemas
+other: Otra cosa
+otherDesc: '¿Tienes algo más para lo que necesites ayuda?'
+patronSponsor: Mecenas / Patrocinio
 patronSponsorDesc: Do you have questions about FreeSewing patronship or (corporate) sponsorship?
-question: Question
-questionDesc: Do you have a general question to ask?
-recentlyResolvedIssues: Recently resolved issues
-reported: Reported
-reportedIssues: Reported issues
+question: Pregunta
+questionDesc: '¿Tienes alguna pregunta general que hacer?'
+recentlyResolvedIssues: Problemas resueltos recientemente
+reported: Reportado
+reportedIssues: Problemas comunicados
 security: Seguridad
 securityDesc: Do you want to report a security issue or incident?
-status: Status
-submitSupportRequest: Submit support request
+status: Estado
+submitSupportRequest: Enviar una solicitud de soporte
 support: Soporte
 title: Título
-titleDocs1: This is the title of the issue
-titleDocs2: Best to keep it short and to the point
-to: to
-updates: Updates
-useGitHubInstead: Use GitHub instead
+titleDocs1: Este es el título del problema
+titleDocs2: Es mejor ser breve y directo
+to: para
+updates: Actualizaciones
+useGitHubInstead: Utiliza GitHub en su lugar
 whatIsDiscord: '¿Qué es la Discordia?'
 whatIsDiscord1: Discord es una plataforma de chat gratuita donde las comunidades pueden reunirse para charlar sobre sus intereses.  También admite llamadas (grupales) de voz y vídeo.
 whatIsDiscord2: FreeSewing tiene su propia comunidad de Discord (un servidor <em></em> en terminología de Discord) en
