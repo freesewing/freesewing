@@ -1,5 +1,5 @@
 ---
-maker: "inconnue"
+author: 22141
 caption: "Un short Shin bleu marine pour un maillot de bain assorti."
 date: "2023-01-16"
 intro: "L'utilisateur de FreeSewing comixminx a cousu une tempête pendant les vacances d'hiver, y compris ces fantastiques maillots de bain Shin pour plusieurs membres de la famille !"
