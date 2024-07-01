@@ -39,7 +39,7 @@ mfaTipMsg: We dringen je geen wachtwoordbeleid op, maar we raden je wel aan om T
 mfaEnabled: Twee-Stappen Authenticatie is ingeschakeld
 mfaDisabled: Twee-Stappen Authenticatie is uitgeschakeld
 mfaSetup: Twee-Stappen Authenticatie instellen
-mfaAdd: Voeg FreeSewing toe aan je Authenticator App door de QR code hierboven te scannen.
+mfaAdd: Add FreeSewing to your Authenticator App by scanning the QR code above. If you can't scan the QR code, you can manually enter the secret below it.
 mfaScratchCodes: MFA krascodes
 mfaScratchCodesMsg1: Je kunt elk van deze krascodes gebruiken als een eenmalige MFA-code wanneer je geen toegang hebt tot je app die de code genereert (bijvoorbeeld wanneer je je telefoon kwijt bent).
 mfaScratchCodesMsg2: Je kunt elk van deze codes maar één keer gebruiken. Schrijf ze op, want dit is de enige keer dat je ze te zien krijgt.
