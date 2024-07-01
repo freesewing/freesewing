@@ -1,5 +1,5 @@
 ---
-maker: "comixminx"
+author: 22141
 caption: "Een galactisch goed paar Bruces"
 date: "2023-01-16"
 intro: "Er is een gevestigd precedent dat als je eenmaal een paar Bruces hebt gemaakt dat je leuk vindt, je er nog veel meer van zult maken. FreeSewing extraordinaire volgt deze grote traditie en maakt verschillende Bruces met een platte voorkant voor een familielid. We zijn dol op de mix-and-match patronen en het contrasterende elastiek op deze geweldige onderbroek."
