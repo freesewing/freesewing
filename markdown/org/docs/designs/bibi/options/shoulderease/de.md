@@ -1,0 +1,11 @@
+---
+title: Schulter Zugabe
+maintainers:
+  - Jonathan Haas
+---
+
+![Shoulder ease](./shoulderease.svg)
+
+Steuert die Höhe der Leichtigkeit auf der Schulter zu Schultermessung.
+
+Diese Option erlaubt es dir, etwas zusätzliche Zugabe an den Schultern hinzuzufügen, was die Schulternaht mehr nach außen und von der Schulter herunter bewegt. Dadurch wird zusätzlicher Raum für zusätzliche Kleidungsschichten oder gepolsterte Schultern geschaffen.
