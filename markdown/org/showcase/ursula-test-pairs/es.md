@@ -6,6 +6,7 @@ intro: "Ursula es un patrón básico de calzoncillos muy personalizable. Aquí t
 title: "Primeras pruebas de Úrsula"
 designs:
   - "ursula"
+author: 19867
 ---
 
 
