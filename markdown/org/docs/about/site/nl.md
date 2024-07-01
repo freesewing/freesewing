@@ -24,7 +24,7 @@ Dus dat ga ik niet doen. Ik ga ervan uit dat je met een open geest leest.
 Op elke pagina van FreeSewing.org staat dezelfde kop met links naar de belangrijkste onderdelen van de site:
 
 - [Ontwerpen](/designs/) toont onze collectie parametrische ontwerpen waaruit je op maat gemaakte naaipatronen kunt genereren.
-- [Documentatie](/documentation/) bevat alle documentatie, voor de website, voor onze ontwerpen, alles
+- [Documentatie](/docs/) bevat alle documentatie, voor de website, voor onze ontwerpen, alles
 - [Blog](/blog/) bevat blogberichten met updates en nieuws over FreeSewing
 - [Showcase](/showcase/) laat voorbeelden zien van de FreeSewing gemeenschap, dingen die ze hebben gemaakt met FreeSewing patronen.
 - [Op](/account/) kun je je FreeSewing account beheren.
