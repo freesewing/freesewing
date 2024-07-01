@@ -9,12 +9,12 @@ Por defecto, no se incluye el margen de costura. Para generar un patrón con mar
 <Note>
 
 La biblioteca central de FreeSewing sólo tiene un ajuste para gestionar el margen de costura: `sa`.
-However, for convenience, we've split this up into two different settings on the website:
+Sin embargo, por comodidad, lo hemos dividido en dos ajustes diferentes en la web:
 
-- **[Include Seam Allowance](/docs/about/site/draft/core-settings/sabool)**: Controls whether or not to include seam allowance
-- **[Seam Allowance Size](/docs/about/site/draft/core-settings/samm)**: Controls how big to make the seam allowance, if it is included
+- **[Incluir margen de costura](/docs/site/draft/core-settings/sabool)**: Controla si se incluye o no el margen de costura
+- **[Tamaño del margen de costura](/docs/site/draft/core-settings/samm)**: Controla el tamaño del margen de costura, si se incluye
 
-The latter will only be shown if you've enabled the former.
+Este último sólo se mostrará si has habilitado el primero.
 
 </Note>
 [core-settings]: /docs/about/site/draft/core-settings/
