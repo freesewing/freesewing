@@ -2,7 +2,8 @@
 title: "Trampoline Punk: A Punk Suit Made from a Trampoline Using the Jaeger Jacket and Charlie Chinos Patterns"
 caption: "Jaeger Jacket and Charlie Chinos from the back, with a skull applique on the jacket"
 date: 20240412
-intro: "Trampoline Punk attempts to answer the question "Can you sew a formal suit from a trampoline?" The answer: sort of, but you have to be willing to bleed for it."
+intro: |
+  Trampoline Punk attempts to answer the question "Can you sew a formal suit from a trampoline?" The answer: sort of, but you have to be willing to bleed for it.
 author: 65187
 designs: ["jaeger", "charlie"]
 ---
