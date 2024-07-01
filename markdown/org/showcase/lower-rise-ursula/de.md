@@ -6,6 +6,7 @@ intro: "Diese Ursula wurde aus einem Baumwoll-Elasthan-Strick (94% Baumwolle, 6%
 title: "Niedrigerer Anstieg Ursula"
 designs:
   - "ursula"
+author: 19867
 ---
 
 Diese Ursula wurde aus einem Baumwoll-Elasthan-Strick (94% Baumwolle, 6% Elasthan) mit burgunderfarbenem Picot-Gummizug gefertigt.
