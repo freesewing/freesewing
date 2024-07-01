@@ -6,6 +6,7 @@ intro: "Guin a fait ce grand Simon modifié en lui donnant des manches lanternes
 title: "Lanterne vichy de Guin Simon"
 designs:
   - "simon"
+author: 27042
 ---
 
 Guin a fait ce grand Simon modifié en lui donnant des manches lanternes amusantes dans une couleur contrastante qui n'a définitivement rien à voir avec le fait d'être à court de vichy marine. Tout est bien qui finit bien, cependant - sa chemise est devenue géniale. J'adore aussi la façon dont l'assortiment de rayures s'est transformé sur le devant.
