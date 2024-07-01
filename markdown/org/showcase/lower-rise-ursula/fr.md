@@ -6,6 +6,7 @@ intro: "Cette Ursula a été fabriquée en tricot de coton spandex (94 % de coto
 title: "Montée inférieure Ursula"
 designs:
   - "ursula"
+author: 19867
 ---
 
 Cette Ursula a été fabriquée en tricot de coton spandex (94 % de coton, 6 % de spandex) avec un élastique à picots bordeaux.
