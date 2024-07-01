@@ -6,6 +6,7 @@ intro: "Un corset Cathrin vert à 11 panneaux"
 title: "Un corset Cathrin vert à 11 panneaux"
 designs:
   - "cathrin"
+author: 19867
 ---
 
 ![cathrin1.jpg](https://posts.freesewing.org/uploads/cathrin1_4e664dbf4c.jpg)
