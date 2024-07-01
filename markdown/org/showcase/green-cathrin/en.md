@@ -5,6 +5,7 @@ date: "2021-10-19"
 intro: "A green 11-panel Cathrin corset"
 title: "A green 11-panel Cathrin corset"
 designs: ["cathrin"]
+author: 19867
 ---
 
 ![cathrin1.jpg](https://posts.freesewing.org/uploads/cathrin1_4e664dbf4c.jpg)
