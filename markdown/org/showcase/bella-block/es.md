@@ -6,6 +6,7 @@ intro: "Bloque de corpiño Bella"
 title: "Bloque de corpiño Bella"
 designs:
   - "bella"
+author: 19867
 ---
 
 
