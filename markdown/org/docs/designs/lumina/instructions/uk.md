@@ -4,11 +4,11 @@ title: "Lumina leggings: Sewing Instructions"
 
 <Note>
 
-This is a garment made from a stretch fabric. So use appropriate seam solutions. A serger is a good way to do this, as 
+This is a garment made from a stretch fabric. So use appropriate seam solutions. A serger is a good way to do this, as
 are specific stitches that certain sewing machines provide. A zigzag stitch will do if that's all you have.
 
-Keep in mind that since these seams are always under tension, it may be a good idea to double them up, or 
-provide a zigzag in addition to serging the seam. 
+Keep in mind that since these seams are always under tension, it may be a good idea to double them up, or
+provide a zigzag in addition to serging the seam.
 
 </Note>
 
@@ -29,17 +29,17 @@ add it to the seam you just sewed.
 
 ### Step 3: Pockets
 
-- Serge the top of the two panels. 
-- Fold this top over onto itself, and stitch in place. Using a double needle is a good way to do this. 
-Zigzag works too. Make sure that you fold it slightly more than the seam allowance.
+- Serge the top of the two panels.
+- Fold this top over onto itself, and stitch in place. Using a double needle is a good way to do this.
+  Zigzag works too. Make sure that you fold it slightly more than the seam allowance.
 - Lay the panel down with the right side down.
-- Lay the pocket part on top, right side down, aligning the notches. Pin in place
+- Lay the pocket part on top, right side down, aligning the notches. Штифт на місці
 - Stitch the bottom of the pocket to the panel. Again, a double needle or zigzag works well.
 
 ### Step 4: Panels
 
 - Align all the front notches of the panel to the front of the leg panel, right sides together.
-If you included the pocket option, make sure you treat the pocket and panel pieces as one piece.
+  If you included the pocket option, make sure you treat the pocket and panel pieces as one piece.
 - Seam this seam on both legs.
 - Repeat for the back side of the panel and leg parts
 
@@ -47,12 +47,12 @@ If you included the pocket option, make sure you treat the pocket and panel piec
 The number and distance of the notches on the front and back seams are different. 
 </Note>
 
-### Step 5: Attaching the waistband
+### Крок 5: Прикріплення пояса
 
 - Align the waistband seam with the seam in the back. Align the notches with the panel seams.
 - Sew all the way around, attaching the waistband to the legs. Make sure you sew both pieces of the waistband
-into this seam. This seam will combine three layers, both layers of the waistband, and one layer of the leg 
-pieces.
+  into this seam. This seam will combine three layers, both layers of the waistband, and one layer of the leg
+  pieces.
 
 <Note>
 If you have included the pocket option, take extra care not to sew the folded over part of the panel into
@@ -63,5 +63,4 @@ the waistband seam.
 
 Now you can add the elastic to the leg openings. Otherwise finish those in any way you like.
 
-
-You're all done! Enjoy your Lumina leggings!
+Ви закінчили! Enjoy your Lumina leggings!
