@@ -1,11 +1,7 @@
 ---
-title: "Waistband"
+title: Bund
 ---
 
 ***
 
 Adds a waistband
-
-
-
-
