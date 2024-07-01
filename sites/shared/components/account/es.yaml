@@ -39,7 +39,7 @@ mfaTipMsg: No aplicamos una política de contraseñas, pero te recomendamos que 
 mfaEnabled: La autenticación de dos factores está activada
 mfaDisabled: La autenticación de dos factores está desactivada
 mfaSetup: Configura la autenticación de dos factores
-mfaAdd: Añade FreeSewing a tu aplicación Authenticator escaneando el código QR de arriba.
+mfaAdd: Add FreeSewing to your Authenticator App by scanning the QR code above. If you can't scan the QR code, you can manually enter the secret below it.
 mfaScratchCodes: Códigos de rascado MFA
 mfaScratchCodesMsg1: Puedes utilizar cualquiera de estos códigos "rasca y gana" como código MFA de un solo uso cuando no tengas acceso a tu aplicación generadora de códigos (por ejemplo, cuando hayas perdido el teléfono).
 mfaScratchCodesMsg2: Puedes utilizar cada uno de estos códigos una sola vez. Anótalos, porque es la única vez que podrás verlos.
