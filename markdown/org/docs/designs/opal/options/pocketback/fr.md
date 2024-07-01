@@ -1,0 +1,14 @@
+---
+title: Poche arrière
+---
+
+Toggles whether to include back pockets in the pattern.
+
+Note: Setting this option to 'true' will enable the following options:
+
+- Back pocket horizontal position
+- Back pocket vertical position
+- Largeur de la poche arrière
+- Back pocket height
+- Back pocket corner width
+- Back pocket corner height
