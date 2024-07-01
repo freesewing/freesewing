@@ -1,5 +1,5 @@
 ---
-maker: "unbekannt"
+author: 22141
 caption: "Marineblaue Shin-Hose für ein passendes Badekostüm"
 date: "2023-01-16"
 intro: "FreeSewing-Benutzerin comixminx hat über die Winterferien einen Sturm genäht, darunter diese fantastischen Shin-Badehosen für mehrere Familienmitglieder!"
