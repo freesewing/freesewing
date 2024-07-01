@@ -10,8 +10,7 @@ Kelly Hogaboom und Julian Collins haben eine Simon(e) mitnäht, und sie haben Vi
 alle Schritte.
 Wenn Sie dieses Muster herstellen wollen, können Kelly und Julian Ihnen den Weg zum Ende weisen.
 
-Du findest das gesamte Material auf Kellys Website
-: [#simonsayssew mit kelly hogaboom & julian collins](https://agni.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
+Du findest das gesamte Material auf Kellys Website: [#simonsayssew mit kelly hogaboom & julian collins](https://agni.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
 </Tip>
 
 ### Schritt 1: Sicherungsschnittstelle
@@ -59,9 +58,9 @@ Platzieren Sie beide Teile Ihrer Manschette (eine mit Schnittstelle, eine ohne S
 
 Bevor wir dein Bündchen umdrehen, müssen wir die Nahtzugabe zurückschneiden, um den Stoff zu entfernen.
 
-#### Drücken Sie die Naht zurück
+#### Nahtzugabe zurückbügeln
 
-![Drücken Sie die Naht zurück](2c.png)
+![Nahtzugabe zurückbügeln](2c.png)
 
 Falte die Nahtzugaben auf beiden Seiten der Manschette zurück, wo die Manschette am Ärmel befestigt ist, und bügle sie nach unten.
 
@@ -79,9 +78,9 @@ Du kannst nun deine Manschetten beiseite, wir werden sie später anhängen.
 
 ### Schritt 3: Bereiten Sie den Kragen vor
 
-#### Nähen Kragen und Unterkragen zusammen
+#### Kragen und Unterkragen zusammennähen
 
-![Nähen Kragen und Unterkragen zusammen](3a.png)
+![Kragen und Unterkragen zusammennähen](3a.png)
 
 Lege beide Kragenteile mit den _guten Seiten zusammen_und nähe sie mit der normalen Nahtzugabe zusammen.
 
