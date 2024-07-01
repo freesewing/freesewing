@@ -1,5 +1,5 @@
 ---
-maker: "desconocido"
+author: 22141
 caption: "Bañador Shin azul marino para un traje de baño a juego"
 date: "2023-01-16"
 intro: "La usuaria de FreeSewing comixminx cosió una tormenta durante las vacaciones de invierno, ¡incluidos estos fantásticos bañadores Shin para varios miembros de la familia!"
