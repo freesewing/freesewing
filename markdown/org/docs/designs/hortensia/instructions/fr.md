@@ -40,7 +40,7 @@ If using bag strap webbing instead of fabric made straps do the following,
 
 ### Étape 4 : La fermeture éclair
 
-- Insérez la fermeture à glissière dans le panneau de fermeture à glissière en veillant à ce que la tirette soit du _bon côté_.
+- With _good sides together_ sew a zipper panel to each side of the zipper. We will now refer to this as **the zipper panel**.
 
 ### (Facultatif) Étape 5 : Construire les onglets.
 
@@ -82,6 +82,7 @@ Il est recommandé de laisser l'espace pour le tournage sur le côté plutôt qu
 
 - _Endroit contre endroit,_ coudre les panneaux avant et arrière de la doublure sur le panneau de doublure du bas.
 - _Endroit contre endroit_attachez les panneaux de côté de la doublure.
+- Insérez la fermeture à glissière dans le panneau de fermeture à glissière en veillant à ce que la tirette soit du _bon côté_.
 - Repassez vers le bas les marges de couture.
 - Alternatively you can bind the top edges.
 - Place the lining inside the bag _wrong sides facing_ each other.
