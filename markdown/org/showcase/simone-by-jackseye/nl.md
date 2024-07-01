@@ -6,6 +6,7 @@ intro: "Wij zijn dol op dit Simone shirt van Jackseye, die dit deelde:"
 title: "Simone door Jackseye"
 designs:
   - "simone"
+author: 28890
 ---
 
 Wij zijn dol op dit Simone shirt van Jackseye, die dit deelde:
