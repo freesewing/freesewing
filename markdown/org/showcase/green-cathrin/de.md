@@ -6,6 +6,7 @@ intro: "Ein grünes 11-teiliges Cathrin Korsett"
 title: "Ein grünes 11-teiliges Cathrin Korsett"
 designs:
   - "cathrin"
+author: 19867
 ---
 
 ![cathrin1.jpg](https://posts.freesewing.org/uploads/cathrin1_4e664dbf4c.jpg)
