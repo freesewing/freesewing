@@ -6,6 +6,7 @@ intro: "Deze gebruiker heeft Titan getest met de fit-to-knee meting. Ze gaven aa
 designs:
   - "titan"
 maker: gebruiker-3
+author: 8
 ---
 
 Een FreeSewing-maker deelde deze mock-up van Titan. Ze meldde dat ze over het algemeen erg blij was met de resultaten voor een eerste poging. Haar belangrijkste aanpassing is het verhogen van de taille van het achterstuk. De maakster vertelde dat ze meestal problemen heeft met de pasvorm van confectiebroeken en ze is blij dat Titan een goed uitgangspunt zal zijn voor kleding die bij haar past.
