@@ -9,7 +9,7 @@ title: "Charlie Chinos: Schnittanleitung"
 - Teil **4**: **4 x**
 - Teil **6**: **2 x**
 - Teil **8**: **4 x** (2 Paare _mit guten Seiten zusammen_)
-- Teil **9**: **2 x** _mit guten Seiten zusammen_
+- Part **9**: **1 x**
 - Teil **10**: **1 x** auf der Falte
 - Teil **11**: **1 x** wenn eine geradlinige Taille hergestellt wird
 - Teil **11**: **2 x** _mit guten Seiten zusammen_ wenn eine geschwungene Taille hergestellt wird
