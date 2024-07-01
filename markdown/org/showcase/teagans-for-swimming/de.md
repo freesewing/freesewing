@@ -1,5 +1,5 @@
 ---
-maker: "comixminx"
+author: 22141
 caption: "Navy Teagan in einem Schwimmstoff"
 date: "2023-01-16"
 intro: "FreeSewing-Nutzer comixminx hat dieses tolle Teagan-T-Shirt als Teil eines Badeanzugs für ein nicht-binäres Kind genäht. Die marineblaue Version in der Kopfzeile ist die endgültige Version, aber da du den Beitrag angeklickt hast, gibt es als Bonus einen ersten Entwurf in Grau!"
