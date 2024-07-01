@@ -8,7 +8,7 @@ Veillez à utiliser un point extensible
 
 <Note>
 
-When making a reversible top the second colour will be referred to as the lining fabric.  
+Lors de la réalisation d'un haut réversible, la seconde couleur sera désignée comme le tissu de doublure.  
 Les encoches de ce motif se comportent davantage comme des points, il ne faut donc **pas** les couper pour les marquer.
 
 </Note>
@@ -18,25 +18,25 @@ Les encoches de ce motif se comportent davantage comme des points, il ne faut do
 #### Bretelles de cou Méthode Une Couleur
 
 - Pliez l'un des morceaux de la bretelle en deux dans le sens de la longueur, endroit et bords bruts ensemble.
-- Coudre le long des bords bruts, laissant une des courtes extrémités ouvertes.
+- Coudre le long des bords bruts, laissant une des courtes extrémités ouverte.
 - Découpez les surplus de couture et coupez les coins.
 - Retourner et presser.
 
-<Note>Répétez ceci pour l'autre bretelle de cou</Note>
+<Note>Répétez ceci pour l'autre bretelle du cou</Note>
 
-#### Bretelles de cou Méthode Deux Couleurs
+#### Bretelles du cou Méthode Deux Couleurs
 
 - Endroit contre endroit, coudre une bretelle principale à une bretelle de doublure en laissant l'un des bords courts ouvert.
 - Découpez les surplus de couture et coupez les coins.
 - Retourner à l'envers. Repasser.
 
-<Note>Repeat this for the remaining neck tie pieces</Note>
+<Note>Répétez ces étapes pour les pièces restantes des bretelles du cou</Note>
 
 ### Étape 2 : Les bonnets
 
 #### Variante bandeau
 
-- Avec les bords bruts et le tissu principal ensemble, _coller_ l'une des bretelles sur le haut de l'un des morceaux de bonnet en veillant à ce que la bretelle aille vers le bas du bonnet.
+- Avec les bords bruts et le tissu principal ensemble, _coller_ l'une des bretelles du cou sur le haut de l'un des morceaux de bonnet en veillant à ce que la bretelle aille vers le bas du bonnet.
 - Avec la bretelle de cou priss en sandwich à l'intérieur, épinglez un morceau de bonnet de doublure, endroit contre endroit, sur le morceau de bonnet principal.
 - Cousez la doublure au bonnet principal entre les encoches le long des coutures avant, supérieures et latérales, en veillant à ne pas accrocher la bretelle et à renforcer le point au niveau des encoches.
 - (Facultatif) Pliez sur l'envers et _piquez_ le surplus de couture entre les encoches des coutures du devant et des côtés. Ne cousez pas les surplus ensemble.
@@ -51,10 +51,10 @@ Les encoches de ce motif se comportent davantage comme des points, il ne faut do
 <Tip>
 
 Si votre marge de couture est large, il se peut que vous deviez couper légèrement les marges de couture des espaces pour réduire l’excès de matière.  
-If you are having trouble turning the cups you can try one of these methods:
+Si vous avez de la difficulté à retourner les bonnets, vous pouvez essayer l'une des méthodes suivantes :
 
-- Create a 2.5cm (1") gap in the front or side seam and turn through that, either _slipstitch_-ing the gap closed or _edgestitch_-ing it closed during Step 7.
-- Élargir l'une des brèches existantes et retourner le tissus à travers. Ensuite, lorsque les points d'ornement ou point de glissements sont effectués, la partie élargie se referme.
+- Créez un espace de 2.5 cm (1") dans la couture du devant ou du côté, puis retournez à travers de cet espace. Refermez l'espace à l'aide de points de glissements (_slipstitch_) ou de point d'ornement (_edgestitch_) au cours de l'étape 7.
+- Élargissez l'une des brèches existantes et retournez le tissu à travers. Ensuite, une fois le bonnet retourné, refermez la partie élargie à l'aide de points d'ornement (_edgestitch_) ou de points de glissements (_slipstitch_).
 
 </Tip>
 <Note>
@@ -65,7 +65,7 @@ Bien qu'il s'agisse d'une option, il est recommandé de piquer le haut et les c�
 
 #### Variante lacé croisé
 
-- Avec les bords bruts et le tissu principal ensemble, _coller_ l'une des bretelles sur le haut de l'un des morceaux de bonnet en veillant à ce que la bretelle aille vers le bas du bonnet.
+- Avec les bords bruts et le tissu principal ensemble, _coller_ l'une des bretelles du cou sur le haut de l'un des morceaux de bonnet en veillant à ce que la bretelle aille vers le bas du bonnet.
 - Avec la bretelle de cou priss en sandwich à l'intérieur, épinglez un morceau de bonnet de doublure, endroit contre endroit, sur le morceau de bonnet principal.
 - Coudre la doublure au bonnet principal le long des coutures du devant, du haut et des côtés, en veillant à ne pas accrocher la bretelle.
 - Retourner les bonnets à l'endroit et les repasser.
@@ -109,7 +109,7 @@ Cette étape n'est nécessaire que pour la variante de l'attache à bandeau.
 #### Bandeau Méthode unicolore
 
 - Pliez le morceau de ruban en deux dans le sens de la longueur, endroit et bords bruts ensemble.
-- Coudre le long des bords bruts, laissant une des courtes extrémités ouvertes.
+- Coudre le long des bords bruts, laissant une des courtes extrémités ouverte.
 - Découpez les surplus de couture et coupez les coins.
 - Retourner à l'envers. Repasser.
 
