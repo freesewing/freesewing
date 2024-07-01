@@ -1,5 +1,5 @@
 ---
-maker: "comixminx"
+author: 22141
 caption: "Un Hugo rouge et gris avec des visages de chats de dessins animés sur tout le corps."
 date: "2023-01-16"
 intro: "Une autre création FreeSewing étonnante de comixminx, qui montre une excellente façon de résoudre un problème d'ajustement. Ce sweat à capuche Hugo de taille enfant (moins la capuche) s'est avéré un peu plus délicat parce que les proportions n'étaient pas tout à fait celles escomptées. Elle a donc fait quelques ajustements à mi-chemin de la couture (comme ajouter un gousset de manche parce que les manches étaient très étroites et difficiles à enfiler)."
