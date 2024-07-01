@@ -6,6 +6,7 @@ intro: "De maker deelde:"
 title: "Aangepaste Tamiko als verzorgingsovertrek"
 designs:
   - "tamiko"
+author: 19867
 ---
 
 De maker deelde:
