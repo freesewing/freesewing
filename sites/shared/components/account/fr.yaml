@@ -39,7 +39,7 @@ mfaTipMsg: Nous n'appliquons pas de politique en matière de mot de passe, mais 
 mfaEnabled: L'authentification à deux facteurs est activée
 mfaDisabled: L'authentification à deux facteurs est désactivée
 mfaSetup: Configurer l'authentification à deux facteurs
-mfaAdd: Ajoute FreeSewing à ton application Authenticator en scannant le code QR ci-dessus.
+mfaAdd: Add FreeSewing to your Authenticator App by scanning the QR code above. If you can't scan the QR code, you can manually enter the secret below it.
 mfaScratchCodes: Codes à gratter de l'AMF
 mfaScratchCodesMsg1: Tu peux utiliser n'importe lequel de ces codes à gratter comme code AMF à usage unique lorsque tu n'as pas accès à ton appli génératrice de codes (par exemple, lorsque tu as perdu ton téléphone).
 mfaScratchCodesMsg2: Tu ne peux utiliser chacun de ces codes qu'une seule fois. Note-les, car c'est la seule fois où tu pourras les voir.
