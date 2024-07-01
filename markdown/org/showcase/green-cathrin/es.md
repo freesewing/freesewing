@@ -6,6 +6,7 @@ intro: "Un corsé Cathrin verde de 11 paneles"
 title: "Un corsé Cathrin verde de 11 paneles"
 designs:
   - "cathrin"
+author: 19867
 ---
 
 ![cathrin1.jpg](https://posts.freesewing.org/uploads/cathrin1_4e664dbf4c.jpg)
