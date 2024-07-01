@@ -1,5 +1,5 @@
 ---
-maker: "comixminx"
+author: 22141
 caption: "Ein rot-grauer Hugo mit Cartoon-Katzengesichtern am ganzen Körper"
 date: "2023-01-16"
 intro: "Ein weiterer toller FreeSewing-Beitrag von comixminx, der eine tolle Lösung für eine passende Herausforderung zeigt. Dieser Hugo-Kapuzenpulli in Kindergröße (abzüglich der Kapuze) war etwas knifflig, weil die Proportionen nicht ganz so aussahen wie erwartet. Also nahm sie während des Nähens ein paar Anpassungen vor (z. B. fügte sie einen Ärmelzwickel hinzu, weil die Ärmel sehr eng waren und man nur schwer hineinkam)."
