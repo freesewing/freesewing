@@ -6,6 +6,7 @@ intro: "Deze Ursula is gemaakt in een katoenen spandex breisel (94% Katoen, 6% S
 title: "Lagere stijging Ursula"
 designs:
   - "ursula"
+author: 19867
 ---
 
 Deze Ursula is gemaakt in een katoenen spandex breisel (94% Katoen, 6% Spandex) met bordeauxrood picot elastiek.
