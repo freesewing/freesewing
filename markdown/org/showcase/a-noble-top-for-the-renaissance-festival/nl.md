@@ -5,7 +5,7 @@ date: 20231016
 intro: "Deze top is gebaseerd op het Noble blok."
 designs:
   - "tristan"
-maker: Natalia
+author: 19867
 ---
 
 This top was made based on the Noble block, and later spun off into its own design, Tristan. De drager meldt dat zijn lichaam asymmetrisch is, wat je kunt zien in het achteraanzicht. Ze waren erg blij met deze eenvoudige variant van Noble.
