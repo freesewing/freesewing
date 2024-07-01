@@ -1,11 +1,7 @@
 ---
-title: "Front gusset length"
+title: Side panel side
 ---
 
 ***
 
-Controls the length of the gusset in the front.
-
-
-
-
+Controls the width of the side panel. This is a percentage of the waist.
