@@ -1,5 +1,5 @@
 ---
-maker: "comixminx"
+author: 22141
 caption: "Marine Teagan in een zwemstof"
 date: "2023-01-16"
 intro: "FreeSewing gebruiker comixminx maakte dit geweldige Teagan T-shirt als onderdeel van een zwemkleding voor een niet-binaire jongen. De marineblauwe versie in de headerafbeelding is de definitieve versie, maar omdat je in de post hebt geklikt, is hier een bonus eerste opzet in grijs!"
