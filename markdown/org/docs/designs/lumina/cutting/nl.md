@@ -2,13 +2,13 @@
 title: "Lumina leggings: Cutting Instructions"
 ---
 
-### Materials
+### Materialen
 
-- **Main fabric**
-  - Cut **2 leg** parts
+- **Voornaamste stof**
+  - Knip **2 been** delen
   - Cut **2 panel** parts
 
-Optionally
-  - Cut **2 waistband** parts on the fold
-  - Cut **2 pocket** parts
+Eventueel
 
+- Cut **1 waistband** parts on the fold
+- Cut **2 pocket** parts
