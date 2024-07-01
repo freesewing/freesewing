@@ -6,6 +6,7 @@ intro: "Wir lieben dieses Simone-Shirt von Jackseye, der es geteilt hat:"
 title: "Simone von Jackseye"
 designs:
   - "simone"
+author: 28890
 ---
 
 Wir lieben dieses Simone-Shirt von Jackseye, der es geteilt hat:
