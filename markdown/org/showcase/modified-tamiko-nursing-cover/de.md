@@ -6,6 +6,7 @@ intro: "Der Hersteller teilte:"
 title: "Modifiziertes Tamiko als Stilldecke"
 designs:
   - "tamiko"
+author: 19867
 ---
 
 Der Hersteller teilte:
