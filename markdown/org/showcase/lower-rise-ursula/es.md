@@ -6,6 +6,7 @@ intro: "Esta Úrsula está confeccionada en punto de algodón y elastano (94% al
 title: "Subida inferior Úrsula"
 designs:
   - "ursula"
+author: 19867
 ---
 
 Esta Úrsula está confeccionada en punto de algodón y elastano (94% algodón, 6% elastano) con elástico de picotón burdeos.
