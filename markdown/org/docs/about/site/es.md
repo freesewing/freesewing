@@ -40,7 +40,7 @@ Así que no voy a hacerlo. Voy a suponer que lees con la mente abierta.
 En todas las páginas de FreeSewing.org hay el mismo encabezamiento con enlaces a las secciones más importantes del sitio:
 
 - [Diseños](/designs/) muestra nuestra colección de diseños paramétricos con los que puedes generar patrones de costura a medida
-- [Documentación](/documentation/) contiene toda la documentación, para el sitio web, para nuestros diseños, todo
+- [Documentación](/docs/) contiene toda la documentación, para el sitio web, para nuestros diseños, todo
 - [Blog](/blog/) contiene entradas de blog con actualizaciones y noticias sobre FreeSewing
 - [Escaparate](/showcase/) muestra ejemplos de la comunidad FreeSewing, cosas que han hecho con patrones FreeSewing
 - [Cuenta](/account/) es donde puedes gestionar tu cuenta de FreeSewing
