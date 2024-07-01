@@ -1,5 +1,5 @@
 ---
-maker: "comixminx"
+author: 22141
 caption: "Un Hugo rojo y gris con caras de gato de dibujos animados por todo el cuerpo"
 date: "2023-01-16"
 intro: "Otra increíble realización de FreeSewing de comixminx, que muestra una forma genial de resolver un reto de adaptación. Esta sudadera Hugo de tamaño infantil (sin capucha) resultó un poco complicada porque las proporciones no eran las esperadas. Así que hizo algunos ajustes a mitad de la costura (como añadir un refuerzo a las mangas, porque le quedaban muy estrechas y le costaba meterse en ellas)."
