@@ -1,5 +1,5 @@
 ---
-maker: "onbekend"
+author: 22141
 caption: "Navy Shin zwembroek voor een bijpassend zwempak"
 date: "2023-01-16"
 intro: "FreeSewing gebruiker comixminx naaide een storm tijdens de wintervakantie, waaronder deze fantastische Shin zwembroek voor verschillende familieleden!"
