@@ -1,23 +1,19 @@
 content_segmentation: 0
-commit_message: "skip-build"
+commit_message: skip-build
 pull_request_assignees:
   - joostdecock
-pull_request_title: New Crowdin Translations [skip build]
+pull_request_title: 'New Crowdin Translations [skip build]'
 pull_request_labels:
   - crowdin
   - i18n
 files:
-  # Markdown for documentation and posts
   - source: /markdown/org/**/en.md
     translation: /markdown/org/**/%two_letters_code%.md
-  # YAML for React components and backend code
   - source: /sites/**/en.yaml
     translation: /sites/**/%two_letters_code%.yaml
-  # JSON for jargon, designs, and the new-design package
   - source: /sites/shared/jargon/en.json
     translation: /sites/shared/jargon/%two_letters_code%.json
   - source: /designs/*/i18n/en.json
     translation: /designs/*/i18n/%two_letters_code%.json
   - source: /packages/new-design/i18n/en.json
     translation: /packages/new-design/i18n/%two_letters_code%.json
-
