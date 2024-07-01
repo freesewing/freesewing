@@ -6,6 +6,7 @@ intro: "Guin modificó este estupendo Simón dándole unas divertidas mangas de 
 title: "Linterna Guin de Guingham Simon"
 designs:
   - "simon"
+author: 27042
 ---
 
 Guin modificó este estupendo Simón dándole unas divertidas mangas de farol en un color de contraste que, definitivamente, no tiene nada que ver con haberse quedado sin guinga azul marino. Pero bien está lo que bien acaba: su camiseta quedó estupenda. También me encanta cómo ha quedado la combinación de rayas en la parte delantera.
