@@ -40,7 +40,7 @@ If using bag strap webbing instead of fabric made straps do the following,
 
 ### Paso 4: La cremallera
 
-- Introduce la cremallera en el panel de la cremallera asegurándote de que el tirador de la cremallera está en el lado bueno __.
+- With _good sides together_ sew a zipper panel to each side of the zipper. We will now refer to this as **the zipper panel**.
 
 ### (Opcional) Paso 5: Construye pestañas.
 
@@ -82,10 +82,11 @@ Se recomienda dejar el hueco para girar en el lateral en lugar de en la parte su
 
 - Con _los lados bien juntos_ cose los paneles de forro delantero y trasero al panel de forro inferior.
 - Con _los lados bien juntos_ une los paneles laterales del forro.
+- With _good sides together_ attach the lining zipper panels to the side panels.
 - Plancha por debajo de los márgenes de costura superiores.
 - Alternatively you can bind the top edges.
 - Place the lining inside the bag _wrong sides facing_ each other.
-- _Punto deslizante_ o punto elástico __ el forro al panel de la cremallera.
+- _Slipstitch_ or _Whipstitch_ the lining to the sides of the zipper.
 
 ### Paso 10: ¡Disfrútalo!
 
