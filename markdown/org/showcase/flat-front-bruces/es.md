@@ -1,5 +1,5 @@
 ---
-maker: "comixminx"
+author: 22141
 caption: "Un par de Bruces galácticamente buenos"
 date: "2023-01-16"
 intro: "Hay un precedente bien establecido de que una vez que haces un par de Bruces que te gustan, acabarás haciendo montones de ellos más. FreeSewing extraordinaire sigue esta gran tradición, confeccionando varios Bruces con la parte delantera plana para un miembro de la familia. Nos encantan los estampados combinados y los elásticos en contraste de estas impresionantes braguitas."
