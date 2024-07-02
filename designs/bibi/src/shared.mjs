@@ -44,8 +44,13 @@ export function constructFrontPoints(part) {
     measurements.hpsToBust
   )
   points.cbWaist = new Point(0, measurements.hpsToWaistBack)
-  points.cfWaist = new Point(0, Math.max(measurements.hpsToWaistBack, measurements.hpsToWaistFront))
-  points.waist = new Point((measurements.waist * (1 + options.waistEase)) / 4, points.cfWaist.y)
+  points.cfWaist = new Point(
+    0,
+    Math.max(measurements.hpsToWaistBack, measurements.hpsToWaistFront)
+  ).shiftFractionTowards(points.cbWaist, 1 - options.lengthAdjustment)
+  const defaultWaistX = (measurements.waist * (1 + options.waistEase)) / 4
+  const minWaistX = points.armhole.x * options.waistAdjustment
+  points.waist = new Point(Math.max(defaultWaistX, minWaistX), points.cfWaist.y)
   points.cfArmhole = new Point(
     0,
     points.cbWaist.y -
@@ -85,7 +90,9 @@ export function constructBackPoints(part) {
     measurements.hpsToBust
   )
   points.cbWaist = new Point(0, measurements.hpsToWaistBack)
-  points.waist = new Point((measurements.waist * (1 + options.waistEase)) / 4, points.cbWaist.y)
+  const defaultWaistX = (measurements.waist * (1 + options.waistEase)) / 4
+  const minWaistX = points.armhole.x * options.waistAdjustment
+  points.waist = new Point(Math.max(defaultWaistX, minWaistX), points.cbWaist.y)
   points.cbUnderbust = new Point(
     0,
     points.cbWaist.y - (measurements.waistToUnderbust ?? measurements.hpsToWaistBack / 6)
@@ -467,17 +474,17 @@ export function constructBackHem(part, bonusLength = 0) {
       break
     case 'seat':
       centerPoint = points.cbSeat
-      extraBackLength = (measurements.seatBack - measurements.seat / 2) / 2
+      extraBackLength = measurements.seatBack - measurements.seat / 2
       bonusLengthMeasurement *= 2
       break
     case 'knee':
       centerPoint = points.cbKnee
-      extraBackLength = (measurements.seatBack - measurements.seat / 2) / 2
+      extraBackLength = measurements.seatBack - measurements.seat / 2
       bonusLengthMeasurement *= 3
       break
     case 'floor':
       centerPoint = points.cbFloor
-      extraBackLength = (measurements.seatBack - measurements.seat / 2) / 2
+      extraBackLength = measurements.seatBack - measurements.seat / 2
       bonusLengthMeasurement *= 3
   }
 
@@ -494,7 +501,7 @@ export function constructBackHem(part, bonusLength = 0) {
     log.warn('Adjusting hem as it would be above the underbust.')
     hemBottom = points.underbust.y
   }
-  points.cbHem = new Point(0, hemBottom + extraBackLength)
+  points.cbHem = new Point(0, hemBottom + extraBackLength * options.seatBackAdjustment)
   paths.sideSeam = constructSideSeam(part, hemBottom).clean().addClass('fabric')
 
   points.midHemCp1 = new Point(points.hem.x * 0.66, points.cbHem.y)
