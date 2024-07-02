@@ -219,7 +219,7 @@ Path.prototype.clean = function () {
       if (!op.to.sitsRoughlyOn(cur)) ops.push(op)
     } else if (op.type === 'curve') {
       if (!(op.cp1.sitsRoughlyOn(cur) && op.cp2.sitsRoughlyOn(cur) && op.to.sitsRoughlyOn(cur)))
-        ops.push(ops)
+        ops.push(op)
     }
     cur = op.to
   }
