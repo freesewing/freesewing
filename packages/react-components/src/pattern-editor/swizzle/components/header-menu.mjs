@@ -1,5 +1,7 @@
 import { useState } from 'react'
 export const HeaderMenu = ({ state, Swizzled, update, Design, pattern }) => {
+  const [open, setOpen] = useState()
+
   const ViewMenu =
     Swizzled.components[`HeaderMenu${Swizzled.config.viewComponents[state.view]}`] ||
     Swizzled.components.Null
@@ -7,23 +9,24 @@ export const HeaderMenu = ({ state, Swizzled, update, Design, pattern }) => {
     <div
       className={`hidden lg:flex sticky top-0 ${
         state.ui.kiosk ? 'z-50' : 'z-20'
-      }} transition-[top] duration-300 ease-in-out z-10`}
+      } transition-[top] duration-300 ease-in-out`}
     >
       <div
         className={`hidden lg:flex flex-row flex-wrap gap-4 w-full items-center justify-center border-b border-base-300 py-1.5`}
       >
-        <Swizzled.components.HeaderMenuAllViews {...{ state, Swizzled, update }} />
-        <ViewMenu {...{ state, Swizzled, update, Design, pattern }} />
+        <Swizzled.components.HeaderMenuAllViews {...{ state, Swizzled, update, open, setOpen }} />
+        <ViewMenu {...{ state, Swizzled, update, Design, pattern, open, setOpen }} />
       </div>
     </div>
   )
 }
 
-export const HeaderMenuAllViews = ({ state, Swizzled, update }) => {
+export const HeaderMenuAllViews = ({ state, Swizzled, update, open, setOpen }) => {
   const Button = Swizzled.components.HeaderMenuButton
+
   return (
     <>
-      <Swizzled.components.HeaderMenuViewMenu {...{ state, Swizzled, update }} />
+      <Swizzled.components.HeaderMenuViewMenu {...{ state, Swizzled, update, open, setOpen }} />
       <Button
         updateHandler={update.clearPattern}
         tooltip={Swizzled.methods.t('pe:tt.resetPatternState')}
@@ -56,17 +59,16 @@ export const HeaderMenuDraftView = (props) => {
 }
 
 export const HeaderMenuDropdown = (props) => {
-  const { Swizzled, tooltip, toggle, width = '400px' } = props
-  const [open, setOpen] = useState(false)
+  const { Swizzled, tooltip, toggle, width = '400px', open, setOpen, id } = props
 
   return (
     <div className="tooltip tooltip-bottom" data-tip={tooltip}>
-      <div className={`dropdown ${open ? 'dropdown-open z-20' : ''}`}>
+      <div className={`dropdown ${open === id ? 'dropdown-open z-20' : ''}`}>
         <div
           tabIndex={0}
           role="button"
-          className="btn btn-ghost btn-sm px-2"
-          onClick={() => setOpen(!open)}
+          className="btn btn-ghost btn-sm px-2 z-20 relative"
+          onClick={() => setOpen(open === id ? false : id)}
         >
           {toggle}
         </div>
@@ -77,10 +79,11 @@ export const HeaderMenuDropdown = (props) => {
         >
           {props.children}
         </div>
-        {open && (
+        {open === id && (
           <div
-            className="w-screen h-screen fixed z-10 top-0 left-0 opacity-0"
-            onClick={() => setOpen(!open)}
+            className="w-screen h-screen absolute top-10 left-0 opacity-0"
+            style={{ width: '200vw', transform: 'translateX(-100vw)' }}
+            onClick={() => setOpen(false)}
           ></div>
         )}
       </div>
@@ -94,6 +97,7 @@ export const HeaderMenuDraftViewDesignOptions = (props) => {
   return (
     <Swizzled.components.HeaderMenuDropdown
       {...props}
+      id="designOptions"
       tooltip={Swizzled.methods.t('pe:designOptions.d')}
       toggle={
         <>
@@ -114,6 +118,7 @@ export const HeaderMenuDraftViewCoreSettings = (props) => {
     <Swizzled.components.HeaderMenuDropdown
       {...props}
       tooltip={Swizzled.methods.t('pe:coreSettings.d')}
+      id="coreSettings"
       toggle={
         <>
           <Swizzled.components.SettingsIcon />
@@ -127,13 +132,13 @@ export const HeaderMenuDraftViewCoreSettings = (props) => {
 }
 
 export const HeaderMenuDraftViewUiPreferences = (props) => {
-  const { Swizzled } = props
-  const [open, setOpen] = useState(false)
+  const { Swizzled, open, setOpen } = props
 
   return (
     <Swizzled.components.HeaderMenuDropdown
       {...props}
       tooltip={Swizzled.methods.t('pe:uiPreferences.d')}
+      id="uiPreferences"
       toggle={
         <>
           <Swizzled.components.UiIcon />
@@ -148,12 +153,12 @@ export const HeaderMenuDraftViewUiPreferences = (props) => {
 
 export const HeaderMenuDraftViewFlags = (props) => {
   const { Swizzled } = props
-  const [open, setOpen] = useState(false)
 
   return (
     <Swizzled.components.HeaderMenuDropdown
       {...props}
       tooltip={Swizzled.methods.t('pe:flagMenuMany.d')}
+      id="flags"
       toggle={
         <>
           <Swizzled.components.FlagIcon className="w-6 h-6 text-warning" />
@@ -176,7 +181,6 @@ export const HeaderMenuButton = ({ updateHandler, children, tooltip }) => (
 
 export const HeaderMenuViewMenu = (props) => {
   const { Swizzled, update, saveAs = false, state } = props
-  const [open, setOpen] = useState(false)
   const output = []
 
   let i = 1
@@ -219,6 +223,7 @@ export const HeaderMenuViewMenu = (props) => {
     <Swizzled.components.HeaderMenuDropdown
       {...props}
       tooltip={Swizzled.methods.t('pe:views.d')}
+      id="views"
       toggle={
         <>
           <Swizzled.components.RightIcon stroke={4} className="w-6 h-6 text-secondary rotate-90" />

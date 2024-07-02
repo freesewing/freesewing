@@ -48,21 +48,16 @@ export const ViewWrapper = ({
       ? { ...state, ui: { ...state.ui, control: Swizzled.config.defaultControl } }
       : state
 
-  return state.ui.kiosk ? (
+  return (
     <div className="flex flex-row items-top">
-      <Swizzled.components.ViewMenu update={update} state={passDownState} />
+      {Swizzled.config.withAside ? (
+        <Swizzled.components.ViewMenu update={update} state={passDownState} />
+      ) : null}
       <div
         className={
           state.ui.kiosk ? 'z-30 w-screen h-screen fixed top-0 left-0 bg-base-100' : 'grow w-full'
         }
       >
-        <View {...extraProps} {...{ update, designs }} state={passDownState} />
-      </div>
-    </div>
-  ) : (
-    <div className="flex flex-row items-top">
-      <Swizzled.components.ViewMenu update={update} state={passDownState} />
-      <div className="grow w-full">
         <View {...extraProps} {...{ update, designs }} state={passDownState} />
       </div>
     </div>
