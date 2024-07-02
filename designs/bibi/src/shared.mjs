@@ -27,7 +27,7 @@ function createLowerPoints(part, prefix) {
       measurements.hpsToWaistBack * 2.5
     )
   }
-  points.sideTarget = points[prefix + 'Knee'].translate(points.seatBase.x * 1.2, 0)
+  points.sideTarget = points[prefix + 'Knee'].translate(points.seatBase.x, 0)
 }
 
 export function constructFrontPoints(part) {
@@ -495,12 +495,10 @@ export function constructBackHem(part, bonusLength = 0) {
     hemBottom = points.underbust.y
   }
   points.cbHem = new Point(0, hemBottom + extraBackLength)
-  paths.sideSeam = constructSideSeam(part, hemBottom).addClass('fabric')
+  paths.sideSeam = constructSideSeam(part, hemBottom).clean().addClass('fabric')
 
   points.midHemCp1 = new Point(points.hem.x * 0.66, points.cbHem.y)
-  points.midHemCp2 = points.hem
-    .shiftTowards(points.hemCp2, points.hem.x * 0.1)
-    .rotate(90, points.hem)
+  points.midHemCp2 = points.hem.shift(paths.sideSeam.angleAt(points.hem) + 90, points.hem.x * 0.1)
   paths.hem = new Path()
     .move(points.cbHem)
     .curve(points.midHemCp1, points.midHemCp2, points.hem)
@@ -549,11 +547,9 @@ export function constructFrontHem(part, bonusLength = 0) {
     hemBottom = points.underbust.y
   }
   points.cfHem = new Point(0, hemBottom)
-  paths.sideSeam = constructSideSeam(part, hemBottom).addClass('fabric')
+  paths.sideSeam = constructSideSeam(part, hemBottom).clean().addClass('fabric')
   points.midHemCp1 = new Point(points.hem.x * 0.66, points.cfHem.y)
-  points.midHemCp2 = points.hem
-    .shiftTowards(points.hemCp2, points.hem.x * 0.1)
-    .rotate(90, points.hem)
+  points.midHemCp2 = points.hem.shift(paths.sideSeam.angleAt(points.hem) + 90, points.hem.x * 0.1)
   paths.hem = new Path()
     .move(points.cfHem)
     .curve(points.midHemCp1, points.midHemCp2, points.hem)
@@ -690,8 +686,20 @@ export function plotSideLineMeasurements(part, sideSeam) {
 }
 
 export function draftRibbing(part, length) {
-  const { store, measurements, options, points, paths, Path, Point, expand, sa, macro, units } =
-    part.shorthand()
+  const {
+    store,
+    measurements,
+    options,
+    points,
+    paths,
+    Path,
+    Point,
+    expand,
+    sa,
+    macro,
+    units,
+    complete,
+  } = part.shorthand()
   // Don't run this every time, except when sampling
   if (typeof store.get('ribbingHeight') === 'undefined' || part.context.settings.sample) {
     store.set(
@@ -743,7 +751,8 @@ export function draftRibbing(part, length) {
     .close()
     .addClass('various')
 
-  paths.fold = new Path().move(points.topFold).line(points.bottomFold).addClass('various help')
+  if (complete)
+    paths.fold = new Path().move(points.topFold).line(points.bottomFold).addClass('various help')
 
   if (sa) paths.sa = paths.seam.offset(sa).addClass('various sa')
 
@@ -769,7 +778,7 @@ export function draftRibbing(part, length) {
 }
 
 export function draftKnitBinding(part, length) {
-  const { store, absoluteOptions, points, paths, Path, Point, expand, sa, macro, units } =
+  const { store, absoluteOptions, points, paths, Path, Point, expand, sa, macro, units, complete } =
     part.shorthand()
   // Don't run this every time, except when sampling
   if (typeof store.get('bindingHeight') === 'undefined' || part.context.settings.sample) {
@@ -819,7 +828,8 @@ export function draftKnitBinding(part, length) {
     .close()
     .addClass('various')
 
-  paths.fold = new Path().move(points.topFold).line(points.bottomFold).addClass('various help')
+  if (complete)
+    paths.fold = new Path().move(points.topFold).line(points.bottomFold).addClass('various help')
 
   if (sa) {
     paths.sa = new Path()
