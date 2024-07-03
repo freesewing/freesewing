@@ -2037,10 +2037,10 @@
   resolved "https://registry.npmjs.org/@polka/url/-/url-1.0.0-next.24.tgz"
   integrity sha512-2LuNTFBIO0m7kKIQvvPHN6UE63VjpmL9rnEEaOOaiSPbZK+zUOYIzBAWcED+3XYzhYsd/0mD57VdxAEqqV52CQ==
 
-"@prisma/client@5.15.1":
-  version "5.15.1"
-  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-5.15.1.tgz#68e1f8b092a0eed6cd61d5f94ed8bb5cc3bc8ca1"
-  integrity sha512-fmZRGmsUJ9+VwC/AvfP/PwdpD0xAEyPvNsD9/B3+GYpETq9VejVRT3PiqNvl76q1uYYzNZeo8u/LmzzTetHSEg==
+"@prisma/client@5.16.1":
+  version "5.16.1"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-5.16.1.tgz#65c5649b4701c097e7fa943c91a3140ce8bf053d"
+  integrity sha512-wM9SKQjF0qLxdnOZIVAIMKiz6Hu7vDt4FFAih85K1dk/Rr2mdahy6d3QP41K62N9O0DJJA//gUDA3Mp49xsKIg==
 
 "@prisma/debug@5.16.0":
   version "5.16.0"
