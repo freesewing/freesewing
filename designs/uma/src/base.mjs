@@ -525,6 +525,7 @@ export const base = {
       toAbs: (val, { measurements }, mergedOptions) =>
         measurements.waistToUpperLeg *
         mergedOptions.gussetWidth *
+        2 *
         stretchToScale(mergedOptions.xStretch),
     },
 
