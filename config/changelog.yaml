@@ -33,8 +33,10 @@ Unreleased:
       - Increased default lengthBonus from 5% to 15%. Fixes #6820
     titan:
       - Adjust cross seam curves after fitting the waist. Fixes #6271
+    uma:
+      - Fix absolute gusset width displayed below slider.
     wahid:
-      - Add a warning when waist and hip reduction are both zero, so no back dart is required
+      - Add a warning when waist and hip reduction are both zero, so no back dart is required.
 
   Deprecated:
     plugin-bust:
