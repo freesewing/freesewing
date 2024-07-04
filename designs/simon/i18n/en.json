@@ -149,6 +149,10 @@
       "t": "Collar roll",
       "d": "The amount by which the top collar is larger than the undercollar."
     },
+    "collarWidth": {
+      "t": "Collar width",
+      "d": "Width of the collar relative to collar stand."
+    },
     "collarStandBend": {
       "t": "Collar stand bend",
       "d": "The bend of the collar stand."

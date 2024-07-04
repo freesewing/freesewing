@@ -6,6 +6,7 @@ import {
   collarFlare,
   collarGap,
   collarRoll,
+  collarWidth,
 } from './options.mjs'
 
 function simonCollar({
@@ -24,7 +25,7 @@ function simonCollar({
 }) {
   const draft = function (tweak = 1) {
     const length = measurements.neck * (1 + options.collarEase - options.collarGap) * tweak
-    const width = store.get('collarStandWidth') * 1.2 * (1 + options.collarRoll)
+    const width = store.get('collarStandWidth') * options.collarWidth * (1 + options.collarRoll)
 
     // Draft right side
     points.topMid = new Point(0, 0)
@@ -217,6 +218,7 @@ export const collar = {
     collarFlare,
     collarGap,
     collarRoll,
+    collarWidth,
   },
   draft: simonCollar,
 }
