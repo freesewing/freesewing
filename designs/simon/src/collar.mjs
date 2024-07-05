@@ -81,7 +81,7 @@ function simonCollar({
     .attr('class', 'fabric')
 
   // Draw undercollar line
-  const uc = points.topMid.dist(points.bottomMid) * 0.05
+  const uc = points.topMid.dist(points.bottomMid) * options.collarRoll
   points.ucTopMid = points.topMid.shift(-90, uc)
   points.ucRightTopHinge = points.rightTopHinge.shift(-90, uc)
   points.ucRightTopHingeCp1 = points.rightTopHingeCp1.shift(-90, uc)
