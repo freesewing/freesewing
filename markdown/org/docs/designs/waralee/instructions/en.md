@@ -110,7 +110,7 @@ If you printed them, just cut them out. If not, the *Messages from the designer*
 
 <Note>
 
-##### Tradisionally, the straps are the same size
+##### Traditionally, the straps are the same size
 
 The straps in this design have a longer and a shorter pair. Traditionally the straps are tied both in the front and in the back. 
 I find the more aesthetically pleasing to tie both in the front. And it removes the knot in the back, which can be uncomfortable.

@@ -48,13 +48,13 @@ function waraleeWaistband(
     case 'strapFront':
       partNr = 7
       waistBandLength -= waistBandLengthFront * 2
-      waistBandLength += options.knotInFront ? measurements.waist / 2 : 0
+      waistBandLength += options.knotPlacement == 'front' ? measurements.waist / 2 : 0
       break
 
     case 'strapBack':
       partNr = 8
       waistBandLength -= waistBandLengthBack * 2
-      waistBandLength += options.knotInFront ? 0 : measurements.waist / 2
+      waistBandLength += options.knotPlacement == 'back' ? measurements.waist / 2 : 0
       break
   }
 

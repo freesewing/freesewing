@@ -4,24 +4,64 @@
   "p": {
     "backPocket": "Back pocket",
     "cutout": "Cutout",
-    "facings": "Facings",
+    "facingBack": "Back Pocket Facing",
+    "facingFront": "Front Pocket Facing",
     "mini": "Mini",
     "pants": "Pants",
+    "pantsProto": "Pants prototype",
     "pocket": "Pocket",
     "strapBack": "Strap back",
     "strapFront": "Strap front",
     "waistbandBack": "Waistband back",
     "waistbandFront": "Waistband front"
   },
-  "s": {},
+  "s": {
+    "thisIsNotAPart": "This is not a real part",
+    "doNotCutFromFabric": "Do not cut this from the fabric",
+    "useMeasurementsToCutFromFabric": "Use these measurements to cut the shape from the fabric",
+    "cutBackPocket.t": "The back pocket is not shown",
+    "cutBackPocket.d": "The **back pocket** is made of two rectangles of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "cutFacingback.t": "The back pocket facing is not shown",
+    "cutFacingback.d": "The **back pocket facing** is made of a rectangle of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "cutFacingfront.t": "The front pocket facing is not shown",
+    "cutFacingfront.d": "The **front pocket facing** is made of a rectangle of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "cutwaistbandBack.t": "The back waist band is not shown",
+    "cutwaistbandBack.d": "The **back waist band** is made of two strips of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "cutwaistbandFront.t": "The front waist band is not shown",
+    "cutwaistbandFront.d": "The **front waist band** is made of two strips of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "cutstrapBack.t": "The back strap is not shown",
+    "cutstrapBack.d": "The **back strap** is made of two strips of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "cutstrapFront.t": "The front strap is not shown",
+    "cutstrapFront.d": "The **front strap** is made of two strips of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "showPants.t": "The full pants are shown",
+    "showPants.d": "The **full pants** are shown. This takes up a lot of paper to print. Consider hiding this part, and a minimized version will show with the dimensions.",
+    "hidePants.t": "The full pants are not shown",
+    "hidePants.d": "The **full pants** are not shown. Instead a minimized version is show with the dimensions, allowing you cut this directly from the fabric. This saves considerably on the required paper to print this pattern."
+  },
   "o": {
     "backPocket": {
       "t": "Poche arrière",
       "d": "S'il faut inclure une poche arrière ou non"
     },
+    "backPocketYes": {
+      "t": "Back pocket",
+      "d": "The back pocket is included"
+    },
+    "backPocketNo": {
+      "t": "No Back pocket",
+      "d": "The pattern is drawn without a back pocket"
+    },
     "frontPocket": {
       "t": "Poche avant",
       "d": "Inclure ou non des poches avant"
+    },
+    "frontPocketYes": {
+      "t": "Front pocket",
+      "d": "The front pocket is included"
+    },
+    "frontPocketNo": {
+      "t": "No Front pocket",
+      "d": "The pattern is drawn without a front pocket"
     },
     "hemWidth": {
       "t": "Taille des ourlets",
@@ -63,13 +103,65 @@
       "t": "Chevauchement de la ceinture",
       "d": "Cela indique combien vous voulez que les pans de la jambe se chevauchent à la taille. Un réglage de 0 les ferait rencontrer à la couture latérale, et un cadre de 100 les fait se rencontrer à l'avant/arrière."
     },
-    "legShortening": {
-      "t": "Réduction des jambes",
-      "d": "Cela indique la longueur du pantalon. C'est un facteur de la mesure de l'entrejambe. Plus la valeur est grande, plus elle sera retirée de la longueur."
+    "legSize": {
+      "t": "Leg Size",
+      "d": "This dictates how long the pants will be. It is a factor of the inseam measurement. The larger the value, the longer the pants."
     },
     "backRaise": {
       "t": "Élévation arrière",
       "d": "Ce réglage lève la taille dans le dos, la taille ne se pose pas horizontalement, mais est inclinée à l'arrière. Ce réglage vous permet de la relever dans le dos si vous en avez besoin pour un bon ajustement."
+    },
+    "fitWaist": {
+      "t": "Fit the garment to the waist",
+      "d": "Traditionally, wrap pants are not fitted to the waist, and just use the flexibility of the fabric to adjust."
+    },
+    "fitWaistNo": {
+      "t": "Do not fit the garment to the waist",
+      "d": "The traditional wrap pants."
+    },
+    "fitWaistYes": {
+      "t": "Fit the garment to the waist",
+      "d": "Adjust the crotch cutout to make the waist fit better."
+    },
+    "frontPocketStyle": {
+      "t": "Front pocket style",
+      "d": "A welt pocket, or a pocket hidden in the waistband."
+    },
+    "frontPocketStyle.welt": {
+      "t": "Welt style Front pocket",
+      "d": "The front pocket will be a welt pocket, slanted, and hidden by the overlap."
+    },
+    "frontPocketStyle.waistband": {
+      "t": "Waistband Front pocket",
+      "d": "The front pocket will be hidden in the seam of the waistband."
+    },
+    "knotPlacement": {
+      "t": "Placement of the knot(s)",
+      "d": "The knot of the wrap straps can be placed in the front, back, or both front and back (traditional)."
+    },
+    "knotPlacement.front": {
+      "t": "Knot in the front",
+      "d": "The knot of the wrap straps will be in the front."
+    },
+    "knotPlacement.back": {
+      "t": "Knot in the back",
+      "d": "The knot of the wrap straps will be in the back."
+    },
+    "knotPlacement.traditional": {
+      "t": "Knot in the front and back",
+      "d": "The knot of the wrap straps will be in the front and the back."
+    },
+    "separateWaistband": {
+      "t": "Create a separate waistband",
+      "d": "Create a separate waistband, or have a hem the size of the waistband."
+    },
+    "separateWaistbandNo": {
+      "t": "No separate waistband",
+      "d": "The waistband is created by a folded hem."
+    },
+    "separateWaistbandYes": {
+      "t": "Separate waistband",
+      "d": "The waistband is a separate piece, and sewn onto the pants."
     }
   }
 }
