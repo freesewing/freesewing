@@ -50,7 +50,7 @@ export const DesignOptionsMenu = ({ Design, isFirst = true, state, update, Swizz
     <Swizzled.components.MenuItemGroup
       {...{
         structure,
-        control: state.ui.control,
+        ux: state.ui.ux,
         currentValues: state.settings.options || {},
         Icon: Swizzled.components.OptionsIcon,
         Item: (props) => (
@@ -63,7 +63,7 @@ export const DesignOptionsMenu = ({ Design, isFirst = true, state, update, Swizz
         name: 'pe:designOptions',
         language: state.locale,
         passProps: {
-          control: state.ui.control,
+          ux: state.ui.ux,
           settings: state.settings,
           patternConfig: Design.patternConfig,
         },
@@ -85,13 +85,12 @@ export const DesignOptionsMenu = ({ Design, isFirst = true, state, update, Swizz
  * @param  {Object}    options.settings core settings
  * @param  {Object} options.rest     the rest of the props
  */
-export const DesignOption = ({ config, settings, control, inputs, values, Swizzled, ...rest }) => {
+export const DesignOption = ({ config, settings, ux, inputs, values, Swizzled, ...rest }) => {
   const type = Swizzled.methods.menuDesignOptionType(config)
   const Input = inputs[type]
   const Value = values[type]
   const allowOverride = ['pct', 'count', 'deg'].includes(type)
-  const allowToggle =
-    (control > 3 && type === 'bool') || (type == 'list' && config.list.length === 2)
+  const allowToggle = (ux > 3 && type === 'bool') || (type == 'list' && config.list.length === 2)
 
   // Hide option?
   if (config?.hide || (typeof config?.hide === 'function' && config.hide(settings))) return null
@@ -100,7 +99,7 @@ export const DesignOption = ({ config, settings, control, inputs, values, Swizzl
     <Swizzled.components.MenuItem
       {...{
         config,
-        control,
+        ux,
         ...rest,
         Swizzled,
         Input,

@@ -1,14 +1,14 @@
 import useLocalStorageState from 'use-local-storage-state'
 
 /*
- * Make it possible to always check for account.username and account.control
+ * Make it possible to always check for account.username and account.ux
  */
-const noAccount = { username: false, control: 3 }
+const noAccount = { username: false, ux: 3 }
 
 /*
  * The useAccount hook
  */
-export function useAccount() {
+export function useAccount(Swizzled) {
   // (persisted) State (saved to local storage)
   const [account, setAccount] = useLocalStorageState('fs-account', { defaultValue: noAccount })
   const [admin, setAdmin] = useLocalStorageState('fs-admin', { defaultValue: noAccount })
@@ -54,6 +54,6 @@ export function useAccount() {
     clearAdmin,
     impersonate,
     stopImpersonating,
-    control: account?.control || 2,
+    ux: account?.control || account?.ux || Swizzled.config.defaultUx,
   }
 }

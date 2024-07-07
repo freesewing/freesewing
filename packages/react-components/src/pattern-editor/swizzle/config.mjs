@@ -92,22 +92,22 @@ export const defaultConfig = {
   i18nPatternNamespaces: ['plugin-annotations'],
   // State backend (one of 'react', 'storage', 'session', or 'url')
   stateBackend: 'url',
-  // Control levels
-  controlLevels: {
+  // UX levels
+  uxLevels: {
     core: {
       sa: 1,
       paperless: 2,
       units: 1,
-      complete: 4,
+      complete: 3,
       expand: 4,
       only: 4,
-      scale: 4,
+      scale: 3,
       margin: 3,
     },
     ui: {
       renderer: 4,
       kiosk: 3,
-      control: 1,
+      ux: 1,
     },
     views: {
       draft: 1,
@@ -125,12 +125,21 @@ export const defaultConfig = {
       viewPicker: 1,
     },
   },
-  defaultControl: 4,
+  defaultUx: 4,
   // Flag types
   flagTypes: ['error', 'warn', 'note', 'info', 'tip', 'fixme'],
   // Show/hide layout blocs
   withAside: false,
   withHeader: true,
+  initialState: {
+    settings: {},
+    ui: {
+      renderer: 'react',
+      kiosk: 0,
+      ux: 4,
+    },
+    locale: 'en',
+  },
 }
 
 /*

@@ -80,8 +80,8 @@ export const ViewMenuIcons = ({ state, update, setDense, dense, Swizzled }) => {
   ]) {
     if (view === 'spacer') output.push(<Swizzled.components.ViewMenuSpacer key={i} />)
     else if (view === 'spacerOver3')
-      output.push(state.ui.control > 3 ? <Swizzled.components.ViewMenuSpacer key={i} /> : null)
-    else if (state.ui.control >= Swizzled.config.controlLevels.views[view])
+      output.push(state.ui.ux > 3 ? <Swizzled.components.ViewMenuSpacer key={i} /> : null)
+    else if (state.ui.ux >= Swizzled.config.uxLevels.views[view])
       output.push(
         <Swizzled.components.ViewMenuButton
           key={view}

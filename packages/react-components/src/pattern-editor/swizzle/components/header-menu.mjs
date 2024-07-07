@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 export const HeaderMenu = ({ state, Swizzled, update, Design, pattern }) => {
   const [open, setOpen] = useState()
 
@@ -12,7 +13,7 @@ export const HeaderMenu = ({ state, Swizzled, update, Design, pattern }) => {
       } transition-[top] duration-300 ease-in-out`}
     >
       <div
-        className={`hidden lg:flex flex-row flex-wrap gap-4 w-full items-center justify-center border-b border-base-300 py-1.5`}
+        className={`hidden lg:flex flex-row flex-wrap gap-4 w-full items-start justify-center border-b border-base-300 py-1.5`}
       >
         <Swizzled.components.HeaderMenuAllViews {...{ state, Swizzled, update, open, setOpen }} />
         <ViewMenu {...{ state, Swizzled, update, Design, pattern, open, setOpen }} />
@@ -21,40 +22,27 @@ export const HeaderMenu = ({ state, Swizzled, update, Design, pattern }) => {
   )
 }
 
-export const HeaderMenuAllViews = ({ state, Swizzled, update, open, setOpen }) => {
-  const Button = Swizzled.components.HeaderMenuButton
-
-  return (
-    <>
-      <Swizzled.components.HeaderMenuViewMenu {...{ state, Swizzled, update, open, setOpen }} />
-      <Button
-        updateHandler={update.clearPattern}
-        tooltip={Swizzled.methods.t('pe:tt.resetPatternState')}
-      >
-        <span className="text-warning">
-          <Swizzled.components.ResetIcon />
-        </span>
-      </Button>
-      <Button updateHandler={update.clearAll} tooltip={Swizzled.methods.t('pe:tt.resetAllState')}>
-        <span className="text-error">
-          <Swizzled.components.TrashIcon />
-        </span>
-      </Button>
-    </>
-  )
-}
+export const HeaderMenuAllViews = ({ state, Swizzled, update, open, setOpen }) => (
+  <Swizzled.components.HeaderMenuViewMenu {...{ state, Swizzled, update, open, setOpen }} />
+)
 
 export const HeaderMenuDraftView = (props) => {
   const { Swizzled } = props
-  const flags = props.pattern.setStores?.[0]?.plugins?.['plugin-annotations']?.flags
+  const flags = props.pattern?.setStores?.[0]?.plugins?.['plugin-annotations']?.flags
+  const Button = Swizzled.components.HeaderMenuButton
 
   return (
-    <>
-      <Swizzled.components.HeaderMenuDraftViewDesignOptions {...props} />
-      <Swizzled.components.HeaderMenuDraftViewCoreSettings {...props} />
-      <Swizzled.components.HeaderMenuDraftViewUiPreferences {...props} />
-      {flags ? <Swizzled.components.HeaderMenuDraftViewFlags {...props} flags={flags} /> : null}
-    </>
+    <div className="flex flex-col">
+      <div>
+        <Swizzled.components.HeaderMenuDraftViewDesignOptions {...props} />
+        <Swizzled.components.HeaderMenuDraftViewCoreSettings {...props} />
+        <Swizzled.components.HeaderMenuDraftViewUiPreferences {...props} />
+        {flags ? <Swizzled.components.HeaderMenuDraftViewFlags {...props} flags={flags} /> : null}
+      </div>
+      <div>
+        <Swizzled.components.HeaderMenuDraftViewIcons {...props} />
+      </div>
+    </div>
   )
 }
 
@@ -171,6 +159,136 @@ export const HeaderMenuDraftViewFlags = (props) => {
   )
 }
 
+export const HeaderMenuDraftViewIcons = (props) => {
+  const { Swizzled, update } = props
+  const Button = Swizzled.components.HeaderMenuButton
+  const size = 'w-5 h-5'
+  const muted = 'text-current opacity-50'
+  const ux = props.state.ui.ux
+  const levels = {
+    ...props.Swizzled.config.uxLevels.core,
+    ...props.Swizzled.config.uxLevels.ui,
+  }
+
+  return (
+    <div className="flex flex-row flex-wrap items-center">
+      {ux >= levels.sa ? (
+        <Button updateHandler={update.toggleSa} tooltip={Swizzled.methods.t('pe:tt.toggleSa')}>
+          <Swizzled.components.SaIcon
+            className={`${size} ${props.state.settings.sa ? 'txt-secondary' : muted}`}
+          />
+        </Button>
+      ) : null}
+      {ux >= levels.paperless ? (
+        <Button
+          updateHandler={() => update.settings('paperless', props.state.settings.paperless ? 0 : 1)}
+          tooltip={Swizzled.methods.t('pe:tt.togglePaperless')}
+        >
+          <Swizzled.components.PaperlessIcon
+            className={`${size} ${props.state.settings.paperless ? 'text-secondary' : muted}`}
+          />
+        </Button>
+      ) : null}
+      {ux >= levels.complete ? (
+        <Button
+          updateHandler={() => update.settings('complete', props.state.settings.complete ? 0 : 1)}
+          tooltip={Swizzled.methods.t('pe:tt.toggleComplete')}
+        >
+          <Swizzled.components.DetailIcon
+            className={`${size} ${props.state.settings.complete ? 'text-secondary' : muted}`}
+          />
+        </Button>
+      ) : null}
+      {ux >= levels.expand ? (
+        <Button
+          updateHandler={() => update.settings('expand', props.state.settings.expand ? 0 : 1)}
+          tooltip={Swizzled.methods.t('pe:tt.toggleExpand')}
+        >
+          <Swizzled.components.ExpandIcon
+            className={`${size} ${props.state.settings.expand ? 'text-secondary' : muted}`}
+          />
+        </Button>
+      ) : null}
+      {ux >= levels.units ? (
+        <Button
+          updateHandler={() =>
+            update.settings(
+              'units',
+              props.state.settings.units === 'imperial' ? 'metric' : 'imperial'
+            )
+          }
+          tooltip={Swizzled.methods.t('pe:tt.toggleUnits')}
+        >
+          <Swizzled.components.UnitsIcon
+            className={`${size} ${
+              props.state.settings.units === 'imperial' ? 'text-secondary' : muted
+            }`}
+          />
+        </Button>
+      ) : null}
+      <Swizzled.components.HeaderMenuIconSpacer />
+      {ux >= levels.ux ? (
+        <div className="flex flex-row">
+          <div
+            className="tooltip tooltip-bottom px-1"
+            data-tip={Swizzled.methods.t('pe:tt.changeUx')}
+          >
+            {[0, 1, 2, 3, 4].map((i) => (
+              <button
+                className="btn btn-ghost btn-sm px-0 -mx-0.5"
+                onClick={() => update.ui('ux', i + 1)}
+              >
+                <Swizzled.components.CircleIcon
+                  key={i}
+                  fill={i < props.state.ui.ux ? true : false}
+                  className={`${size} ${
+                    i < props.state.ui.ux ? 'stroke-secondary fill-secondary' : 'stroke-current'
+                  }`}
+                  fillOpacity={0.3}
+                />
+              </button>
+            ))}
+          </div>
+        </div>
+      ) : null}
+      {ux >= levels.kiosk ? (
+        <Button
+          updateHandler={() => update.ui('kiosk', props.state.ui.kiosk ? 0 : 1)}
+          tooltip={Swizzled.methods.t('pe:tt.toggleKiosk')}
+        >
+          <Swizzled.components.KioskIcon
+            className={`${size} ${props.state.ui.kiosk ? 'text-secondary' : muted}`}
+          />
+        </Button>
+      ) : null}
+      {ux >= levels.renderer ? (
+        <Button
+          updateHandler={() =>
+            update.ui('renderer', props.state.ui.renderer === 'react' ? 'svg' : 'react')
+          }
+          tooltip={Swizzled.methods.t('pe:tt.toggleKiosk')}
+        >
+          <Swizzled.components.RocketIcon
+            className={`${size} ${props.state.ui.renderer === 'svg' ? 'text-secondary' : muted}`}
+          />
+        </Button>
+      ) : null}
+      <Swizzled.components.HeaderMenuIconSpacer />
+      <Button
+        updateHandler={update.clearPattern}
+        tooltip={Swizzled.methods.t('pe:tt.resetPatternState')}
+      >
+        <Swizzled.components.ResetIcon className={`${size} text-warning`} />
+      </Button>
+      <Button updateHandler={update.clearAll} tooltip={Swizzled.methods.t('pe:tt.resetAllState')}>
+        <Swizzled.components.TrashIcon className={`${size} text-error`} />
+      </Button>
+    </div>
+  )
+}
+
+export const HeaderMenuIconSpacer = () => <span className="px-1 font-bold opacity-30">|</span>
+
 export const HeaderMenuButton = ({ updateHandler, children, tooltip }) => (
   <div className="tooltip tooltip-bottom" data-tip={tooltip}>
     <button className="btn btn-ghost btn-sm px-1" onClick={updateHandler}>
@@ -196,8 +314,8 @@ export const HeaderMenuViewMenu = (props) => {
   ]) {
     if (viewName === 'spacer') output.push(<Swizzled.components.ViewMenuSpacer key={i} />)
     else if (viewName === 'spacerOver3')
-      output.push(state.ui.control > 3 ? <Swizzled.components.ViewMenuSpacer key={i} /> : null)
-    else if (state.ui.control >= Swizzled.config.controlLevels.views[viewName])
+      output.push(state.ui.ux > 3 ? <Swizzled.components.ViewMenuSpacer key={i} /> : null)
+    else if (state.ui.ux >= Swizzled.config.uxLevels.views[viewName])
       output.push(
         <li key={i} className="mb-1 flex flex-row items-center justify-between w-full">
           <a
@@ -326,220 +444,6 @@ const ZoomButtons = ({ t, zoomFunctions, zoomed }) => {
         dflt
         extraClasses={smZoomClasses}
       />
-    </div>
-  )
-}
-
-const Spacer = () => <span className="opacity-50">|</span>
-
-export const __HeaderMenu = ({ state, Swizzled, update }) => {
-  //const { t, i18n } = useTranslation(ns)
-  //const { zoomFunctions, zoomed } = useContext(PanZoomContext)
-  //const backend = useBackend()
-  //const { setLoadingStatus } = useContext(LoadingStatusContext)
-  //const { theme } = useTheme()
-
-  // Override button colors for monochrome theme.
-  //const ueButtonColor = theme !== 'monochrome' ? 'text-primary' : 'text-primary-content'
-  //const resetOptionsButtonColor = theme !== 'monochrome' ? 'text-accent' : 'text-warning'
-
-  // make the zoom buttons so we can pass them to the mobile menubar
-  //const headerZoomButtons = useMemo(
-  //  () => <ZoomButtons {...{ t, zoomFunctions, zoomed }} />,
-  //  [zoomed, t, zoomFunctions]
-  //)
-  // add the zoom buttons as an action on the mobile menubar
-  //useMobileAction('zoom', { order: 0, actionContent: headerZoomButtons })
-
-  //const savePattern = async () => {
-  //  setLoadingStatus([true, 'savingPattern'])
-  //  const result = await backend.updatePattern(saveAs.pattern, { settings })
-  //  if (result.success)
-  //    setLoadingStatus([
-  //      true,
-  //      <>
-  //        {t('status:patternSaved')} <small>[#{saveAs.pattern}]</small>
-  //      </>,
-  //      true,
-  //      true,
-  //    ])
-  //  else setLoadingStatus([true, 'backendError', true, false])
-  //}
-
-  //const bookmarkPattern = async () => {
-  //  setLoadingStatus([true, 'creatingBookmark'])
-  //  const result = await backend.createBookmark({
-  //    type: 'pattern',
-  //    title: `${capitalize(design)} / ${shortDate(i18n.language)}`,
-  //    url: window.location.pathname + window.location.search + window.location.hash,
-  //  })
-  //  if (result.success) {
-  //    const id = result.data.bookmark.id
-  //    setLoadingStatus([
-  //      true,
-  //      <>
-  //        {t('status:bookmarkCreated')} <small>[#{id}]</small>
-  //      </>,
-  //      true,
-  //      true,
-  //    ])
-  //  } else setLoadingStatus([true, 'backendError', true, false])
-  //}
-  //
-
-  return (
-    <div
-      className={`hidden lg:flex sticky top-0 ${
-        ui.kiosk ? 'z-50' : 'z-20'
-      }} transition-[top] duration-300 ease-in-out z-10`}
-    >
-      <div
-        className={`hidden lg:flex flex-row flex-wrap gap-4 py-2 w-full bg-neutral text-neutral-content items-center justify-center`}
-      >
-        {headerZoomButtons}
-        <Spacer />
-        <div className="flex flex-row items-center gap-4">
-          {control < controlLevels.core.sa ? null : (
-            <IconButton
-              Icon={SaIcon}
-              dflt={settings.sabool ? false : true}
-              onClick={() => update.toggleSa()}
-              title={t('core-settings:sabool.t')}
-            />
-          )}
-          {control < controlLevels.core.paperless ? null : (
-            <IconButton
-              Icon={PaperlessIcon}
-              dflt={settings.paperless ? false : true}
-              onClick={() => update.settings(['paperless'], !settings.paperless)}
-              title={t('core-settings:paperless.t')}
-            />
-          )}
-          {control < controlLevels.core.complete ? null : (
-            <IconButton
-              Icon={DetailIcon}
-              dflt={settings.complete}
-              onClick={() =>
-                update.settings(
-                  ['complete'],
-                  typeof settings.complete === 'undefined' ? 0 : settings.complete ? 0 : 1
-                )
-              }
-              title={t('core-settings:complete.t')}
-            />
-          )}
-          {control < controlLevels.core.expand ? null : (
-            <IconButton
-              Icon={ExpandIcon}
-              dflt={settings.expand || typeof settings.expand === 'undefined' ? true : false}
-              onClick={() =>
-                update.settings(
-                  ['expand'],
-                  typeof settings.expand === 'undefined' ? 1 : settings.expand ? 0 : 1
-                )
-              }
-              title={t('core-settings:expand.t')}
-            />
-          )}
-          {control < controlLevels.core.units ? null : (
-            <IconButton
-              Icon={
-                settings.units !== 'imperial'
-                  ? UnitsIcon
-                  : ({ className }) => <UnitsIcon className={`${className} rotate-180 w-6 h-6`} />
-              }
-              dflt={settings.units !== 'imperial'}
-              onClick={() =>
-                update.settings(['units'], settings.units === 'imperial' ? 'metric' : 'imperial')
-              }
-              title={t('core-settings:units.t')}
-            />
-          )}
-        </div>
-        <Spacer />
-        <div
-          className="tooltip tooltip-primary tooltip-bottom flex flex-row items-center"
-          data-tip={t('ui-settings:control.t')}
-        >
-          {[1, 2, 3, 4, 5].map((score) => (
-            <button onClick={() => update.setControl(score)} className={ueButtonColor} key={score}>
-              <BulletIcon fill={control >= score ? true : false} />
-            </button>
-          ))}
-        </div>
-        {control < controlLevels.ui.kiosk ? null : (
-          <div className="flex flex-row items-center gap-4">
-            <IconButton
-              Icon={KioskIcon}
-              dflt={ui.kiosk ? false : true}
-              onClick={() => update.ui(['kiosk'], ui.kiosk ? 0 : 1)}
-              title={t('ui-settings:kiosk.t')}
-            />
-            {control < controlLevels.ui.renderer ? null : (
-              <IconButton
-                Icon={RocketIcon}
-                dflt={ui.renderer !== 'svg'}
-                onClick={() => update.ui(['renderer'], ui.renderer === 'react' ? 'svg' : 'react')}
-                title={t('ui-settings:renderer.t')}
-              />
-            )}
-          </div>
-        )}
-        <Spacer />
-        <div className="flex flex-row items-center gap-4">
-          <button
-            onClick={() => setSettings({ measurements: settings.measurements })}
-            className={`tooltip tooltip-primary tooltip-bottom flex flex-row items-center`}
-            data-tip={t('core-settings:clearSettingsNotMeasurements')}
-            disabled={typeof settings.options === 'undefined'}
-          >
-            <ResetIcon
-              stroke={3.5}
-              className={`w-6 h-6 ${
-                typeof settings.options === 'undefined'
-                  ? 'text-base-100 opacity-30'
-                  : resetOptionsButtonColor
-              }`}
-            />
-          </button>
-          <button
-            onClick={() => setSettings({})}
-            className="tooltip tooltip-primary tooltip-bottom flex flex-row items-center text-warning"
-            data-tip={t('core-settings:clearSettingsAndMeasurements')}
-            disabled={!(settings.measurements && Object.keys(settings.measurements).length > 0)}
-          >
-            <ResetIcon
-              stroke={3.5}
-              className={`w-6 h-6 ${
-                !(settings.measurements && Object.keys(settings.measurements).length > 0)
-                  ? 'text-base-100 opacity-30'
-                  : 'text-warning'
-              }`}
-            />
-          </button>
-        </div>
-        <Spacer />
-        <div className="flex flex-row items-center gap-4">
-          {saveAs.pattern ? (
-            <button
-              onClick={savePattern}
-              className={`tooltip tooltip-primary tooltip-bottom flex flex-row items-center disabled:opacity-50`}
-              data-tip={t('workbench:savePattern')}
-              disabled={typeof account?.username === 'undefined'}
-            >
-              <UploadIcon />
-            </button>
-          ) : null}
-          <button
-            onClick={() => bookmarkPattern()}
-            className={`tooltip tooltip-primary tooltip-bottom flex flex-row items-center disabled:opacity-50`}
-            data-tip={t('workbench:bookmarkPattern')}
-            disabled={typeof account?.username === 'undefined'}
-          >
-            <BookmarkIcon />
-          </button>
-        </div>
-      </div>
     </div>
   )
 }

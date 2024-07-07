@@ -7,7 +7,6 @@
 | `locale` | `en` | Language code |
 | `imperial`| `false` | Whether to use imperial units as the default, or not |
 | `components` | `{}` | Object holding swizzled components |
-| `defaults` | `{}` | Object holding swizzled defaults |
 | `hooks` | `{}` | Object holding swizzled hooks |
 | `methods` | `{}` | Object holding swizzled methods |
 

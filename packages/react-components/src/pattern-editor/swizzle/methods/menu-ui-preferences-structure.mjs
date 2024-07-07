@@ -1,16 +1,16 @@
 export const menuUiPreferencesStructure = (Swizzled) => {
-  const uiControl = Swizzled.config.controlLevels.ui
+  const uiUx = Swizzled.config.uxLevels.ui
   const uiPreferences = {
-    control: {
-      control: uiControl.control,
+    ux: {
+      ux: uiUx.ux,
       emoji: '🖥️',
       list: [1, 2, 3, 4, 5],
       choiceTitles: {},
-      icon: Swizzled.components.ControlIcon,
-      dflt: Swizzled.config.defaultControl,
+      icon: Swizzled.components.UxIcon,
+      dflt: Swizzled.config.defaultUx,
     },
     kiosk: {
-      control: uiControl.kiosk,
+      ux: uiUx.kiosk,
       list: [0, 1],
       choiceTitles: {
         0: 'pe:websiteMode',
@@ -24,7 +24,7 @@ export const menuUiPreferencesStructure = (Swizzled) => {
       icon: Swizzled.components.KioskIcon,
     },
     renderer: {
-      control: uiControl.renderer,
+      ux: uiUx.renderer,
       list: ['react', 'svg'],
       choiceTitles: {
         react: 'ui-settings:renderWithReact',
@@ -39,8 +39,6 @@ export const menuUiPreferencesStructure = (Swizzled) => {
     },
   }
 
-  uiPreferences.control.list.forEach(
-    (i) => (uiPreferences.control.choiceTitles[i] = 'pe:control' + i)
-  )
+  uiPreferences.ux.list.forEach((i) => (uiPreferences.ux.choiceTitles[i] = 'pe:ux' + i))
   return uiPreferences
 }

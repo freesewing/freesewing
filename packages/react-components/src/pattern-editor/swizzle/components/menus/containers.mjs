@@ -16,7 +16,7 @@ const iconButtonClass = 'btn btn-xs btn-ghost px-0 text-accent'
  * @param  {React.Component}  Input              the input component this menu item will use
  * @param  {React.Component}  Value              a value display component this menu item will use
  * @param  {Boolean} allowOverride      all a text input to be used to override the given input component
- * @param  {Number}  control            the user-defined control level
+ * @param  {Number}  ux            the user-defined ux level
  * @param {object} props.Swizzled - An object holding swizzled code
  */
 export const MenuItem = ({
@@ -28,7 +28,7 @@ export const MenuItem = ({
   changed,
   Input = () => {},
   allowOverride = false,
-  control = 5,
+  ux = 5,
   docs,
   config,
   Design,
@@ -46,7 +46,7 @@ export const MenuItem = ({
     () => ({
       name,
       config,
-      control,
+      ux,
       current,
       updateHandler,
       t: Swizzled.methods.t,
@@ -55,11 +55,11 @@ export const MenuItem = ({
       Design,
       ...passProps,
     }),
-    [name, config, current, updateHandler, changed, override, passProps, control]
+    [name, config, current, updateHandler, changed, override, passProps, ux]
   )
 
   // don't render if this item is more advanced than the user has chosen to see
-  if (config.control && config.control > control) return null
+  if (config.ux && config.ux > ux) return null
 
   // get buttons for open and closed states
   const buttons = []
@@ -119,7 +119,7 @@ export const MenuItem = ({
  * Accepts any object where menu item configurations are keyed by name
  * Items that are group headings are expected to have an isGroup: true property
  * @param  {Boolean} options.collapsible   Should this group be collapsible (use false for the top level of a menu)
- * @param  {Number}  options.control       the user-defined control level
+ * @param  {Number}  options.ux       the user-defined ux level
  * @param  {String}  options.name          the name of the group or item
  * @param  {Object}  options.currentValues a map of current values for items in the group, keyed by name
  * @param  {Object}  structure             the configuration for the group.
@@ -137,7 +137,7 @@ export const MenuItem = ({
  */
 export const MenuItemGroup = ({
   collapsible = true,
-  control,
+  ux,
   name,
   currentValues = {},
   structure,
@@ -160,7 +160,7 @@ export const MenuItemGroup = ({
     // if it's the isGroup property, or it is false, it shouldn't be shown
     if (itemName === 'isGroup' || item === false) return null
     if (!item) return null
-    if (item.control && control && item.control > control) return null
+    if (item.ux && ux && item.ux > ux) return null
 
     const ItemIcon = item.icon
       ? item.icon

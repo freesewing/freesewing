@@ -42,5 +42,12 @@ export const stateUpdateFactory = (Swizzled, setState) => ({
    */
   design: (val) => setState((cur) => Swizzled.methods.objUpdate({ ...cur }, 'design', val)),
   view: (val) => setState((cur) => Swizzled.methods.objUpdate({ ...cur }, 'view', val)),
-  control: (val) => setState((cur) => Swizzled.methods.objUpdate({ ...cur }, 'control', val)),
+  ux: (val) => setState((cur) => Swizzled.methods.objUpdate({ ...cur }, 'ux', val)),
+  clearPattern: () =>
+    setState((cur) =>
+      Swizzled.methods.objUpdate({ ...cur }, 'settings', {
+        measurements: cur.settings.measurements,
+      })
+    ),
+  clearAll: () => setState(Swizzled.config.initialState),
 })

@@ -23,7 +23,7 @@ export const ViewWrapper = ({
 }) => {
   // Editor state
   const [state, setState, update] = Swizzled.hooks.useEditorState(
-    initialEditorState(Swizzled, preload, { locale })
+    Swizzled.methods.initialEditorState(preload, { locale })
   )
 
   // Don't bother before state is initialized
@@ -36,16 +36,16 @@ export const ViewWrapper = ({
    * Almost all editor state has a default settings, and when that is selected
    * we just unset that value in the state. This way, state holds only what is
    * customized, and it makes it a lot easier to see how a pattern was edited.
-   * The big exception is the 'ui.control' setting. If it is unset, a bunch of
+   * The big exception is the 'ui.ux' setting. If it is unset, a bunch of
    * components will not function properly. We could guard against this by passing
    * the default to all of these components, but instead, we just check that state
-   * is undefined, and if so pass down the default control value here.
+   * is undefined, and if so pass down the default ux value here.
    * This way, should more of these exceptions get added over time, we can use
    * the same centralized solution.
    */
   const passDownState =
-    typeof state.ui.control === 'undefined'
-      ? { ...state, ui: { ...state.ui, control: Swizzled.config.defaultControl } }
+    state.ui.ux === undefined
+      ? { ...state, ui: { ...state.ui, ux: Swizzled.config.defaultState.ui } }
       : state
 
   return (
@@ -115,42 +115,3 @@ const viewfinder = ({ design, designs, preload, state, Swizzled }) => {
 
 const getViewComponent = (view = false, Swizzled) =>
   view ? Swizzled.components[Swizzled.config.viewComponents[view]] : false
-
-/*
- * This helper method constructs the initial state object.
- *
- * It will look for preloadSettings and preloadUi and use those to set the initial state.
- * If they are not present, it will fall back to the relevant defaults
- * @param {object} defaults - The defaults prop passed to the ViewWrapper component
- * @return {object} initial - The initial Editor State object
- */
-const initialEditorState = (Swizzled, preload = {}, locale = 'en', extra = {}) => {
-  /*
-   * Get swizzled defaults
-   */
-  const { ui: defaultUi, settings: defaultSettings } = Swizzled.defaults
-
-  /*
-   * Create initial state object
-   */
-  const initial = {
-    settings: false,
-    ui: false,
-    locale,
-    ...extra,
-  }
-
-  /*
-   * Set preload state
-   */
-  if (typeof preload.settings === 'object') initial.settings = { ...preload.settings }
-  if (typeof preload.ui === 'object') initial.ui = { ...preload.ui }
-
-  /*
-   * Fall-back to default state
-   */
-  if (initial.settings === false) initial.settings = { ...defaultSettings }
-  if (initial.ui === false) initial.ui = { ...defaultUi }
-
-  return initial
-}

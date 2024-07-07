@@ -53,7 +53,7 @@ export const CoreSettingsMenu = ({ update, state, language, Design, Swizzled }) 
     <Swizzled.components.MenuItemGroup
       {...{
         structure,
-        control: state.ui.control,
+        ux: state.ui.ux,
         currentValues: state.settings || {},
         Icon: Swizzled.components.SettingsIcon,
         Item: (props) => (
@@ -67,7 +67,7 @@ export const CoreSettingsMenu = ({ update, state, language, Design, Swizzled }) 
         name: 'pe:designOptions',
         language: state.locale,
         passProps: {
-          control: state.ui.control,
+          ux: state.ui.ux,
           settings: state.settings,
           patternConfig: Design.patternConfig,
         },
@@ -88,14 +88,14 @@ export const CoreSetting = ({
   Swizzled,
   name,
   config,
-  control,
+  ux,
   updateHandler,
   current,
   passProps,
   ...rest
 }) => {
   // is toggling allowed?
-  const allowToggle = control > 3 && config.list?.length === 2
+  const allowToggle = ux > 3 && config.list?.length === 2
 
   const handlerArgs = {
     updateHandler,
@@ -118,7 +118,7 @@ export const CoreSetting = ({
       {...{
         name,
         config,
-        control,
+        ux,
         current,
         passProps,
         ...rest,

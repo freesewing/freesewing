@@ -86,13 +86,6 @@ export const CloseIcon = (props) => (
   </IconWrapper>
 )
 
-// Looks like old-timey scales
-export const ControlIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z" />
-  </IconWrapper>
-)
-
 // Looks like a museum building
 export const CuratedMeasurementsSetIcon = (props) => (
   <IconWrapper {...props}>
@@ -104,6 +97,17 @@ export const CuratedMeasurementsSetIcon = (props) => (
 export const DesignIcon = (props) => (
   <IconWrapper {...props} stroke={0} fill>
     <path d="m11.975 2.9104c-1.5285 0-2.7845 1.2563-2.7845 2.7848 0 0.7494 0.30048 1.4389 0.78637 1.9394a0.79437 0.79437 0 0 0 0.0084 0.00839c0.38087 0.38087 0.74541 0.62517 0.94538 0.82483 0.19998 0.19966 0.25013 0.2645 0.25013 0.51907v0.65964l-9.1217 5.2665c-0.28478 0.16442-0.83603 0.46612-1.3165 0.9611-0.48047 0.49498-0.92451 1.3399-0.66684 2.2585 0.22026 0.78524 0.7746 1.3486 1.3416 1.5878 0.56697 0.23928 1.0982 0.23415 1.4685 0.23415h18.041c0.37033 0 0.90158 0.0051 1.4686-0.23415 0.56697-0.23928 1.1215-0.80261 1.3418-1.5878 0.25767-0.91859-0.18662-1.7636-0.66709-2.2585-0.48046-0.49498-1.0315-0.79669-1.3162-0.9611l-8.9844-5.1873v-0.73889c0-0.70372-0.35623-1.2837-0.71653-1.6435-0.35778-0.3572-0.70316-0.58503-0.93768-0.81789-0.20864-0.21601-0.33607-0.50298-0.33607-0.83033 0-0.67 0.52595-1.1962 1.1959-1.1962 0.67001 0 1.1962 0.5262 1.1962 1.1962a0.79429 0.79429 0 0 0 0.79434 0.79427 0.79429 0.79429 0 0 0 0.79427-0.79427c0-1.5285-1.2563-2.7848-2.7848-2.7848zm-0.06859 8.2927 8.9919 5.1914c0.28947 0.16712 0.69347 0.41336 0.94393 0.67138 0.25046 0.25803 0.31301 0.3714 0.24754 0.60483-0.10289 0.36677-0.19003 0.40213-0.35969 0.47373-0.16967 0.07161-0.47013 0.09952-0.80336 0.09952h-18.041c-0.33323 0-0.6337-0.02792-0.80336-0.09952-0.16967-0.07161-0.25675-0.10696-0.35963-0.47373-0.06548-0.23342-0.00303-0.3468 0.24748-0.60483 0.25046-0.25803 0.65471-0.50426 0.94418-0.67138z" />
+  </IconWrapper>
+)
+
+// Looks like a left and right pane with different level of detail
+export const DetailIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M 12,3.8533453 V 20.547919 M 1.5305595,3.53056 H 22.46944 V 20.469444 H 1.5305595 Z" />
+    <path
+      d="m 14.415354,11.5 h 5.669292 m -5.669292,3 h 5.669292 m -5.669292,-6 h 5.669292"
+      strokeWidth={props.stroke / 2 || 1.1}
+    />
   </IconWrapper>
 )
 
@@ -227,6 +231,17 @@ export const OptionsIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks like a grid
+export const PaperlessIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M 1.5867219,1.58672 H 22.413278 V 22.41328 H 1.5867219 Z" />
+    <path
+      d="M 22.007133,15.500122 H 1.97864 m 20.028493,-7 H 1.97864 M 15.492887,1.9858756 V 22.014369 m -7,-20.0284934 V 22.014369"
+      strokeWidth={props.stroke / 2 || 1.1}
+    />
+  </IconWrapper>
+)
+
 // Looks like a +
 export const PlusIcon = (props) => (
   <IconWrapper {...props}>
@@ -262,6 +277,14 @@ export const RocketIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks like a small solid circle with a larger dashed circle around it
+export const SaIcon = (props) => (
+  <IconWrapper {...props}>
+    <circle cx="12" cy="12" r="5" />
+    <circle cx="12" cy="12" r="10" strokeDasharray="2 4" />
+  </IconWrapper>
+)
+
 // Looks like a gear
 export const SettingsIcon = (props) => (
   <IconWrapper {...props}>
@@ -291,10 +314,28 @@ export const UiIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks like a bit of measuring tape
+export const UnitsIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="m 1.5,4.5 h 21 v 15 h -21 z" />
+    <path
+      d="m 3.5,19.316406 v -3.708984 z m 2.1035156,0 v -3.708984 z m 2.1035156,0 v -3.708984 z m 2.1035157,0 v -3.708984 z m 4.3789061,0 v -3.708984 z m 2.103516,0 v -3.708984 z m 2.103515,0 v -3.708984 z m 2.103516,0 V 15.607422 Z M 12,19.130859 v -5.082031 z m 0,-8.986328 V 5.0625001 Z M 5.6035156,8.5859371 v -3.708984 z m 12.7929684,0 v -3.708984 z"
+      strokeWidth={props.stroke / 2 || 1.1}
+    />
+  </IconWrapper>
+)
+
 // Looks like a cloud with an arrow pointing upwards in it
 export const UploadIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+  </IconWrapper>
+)
+
+// Looks like old-timey scales
+export const UxIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z" />
   </IconWrapper>
 )
 
@@ -791,16 +832,6 @@ export const PageSizeIcon = (props) => (
   </IconWrapper>
 )
 
-export const PaperlessIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M 1.5867219,1.58672 H 22.413278 V 22.41328 H 1.5867219 Z" />
-    <path
-      d="M 22.007133,15.500122 H 1.97864 m 20.028493,-7 H 1.97864 M 15.492887,1.9858756 V 22.014369 m -7,-20.0284934 V 22.014369"
-      strokeWidth={props.stroke / 2 || 1.1}
-    />
-  </IconWrapper>
-)
-
 export const PatternIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
@@ -847,13 +878,6 @@ export const ReloadIcon = (props) => (
 export const RssIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z" />
-  </IconWrapper>
-)
-
-export const SaIcon = (props) => (
-  <IconWrapper {...props}>
-    <circle cx="12" cy="12" r="5" />
-    <circle cx="12" cy="12" r="10" strokeDasharray="2 4" />
   </IconWrapper>
 )
 
@@ -943,16 +967,6 @@ export const TwitchIcon = (props) => (
 export const TwitterIcon = (props) => (
   <IconWrapper {...props} stroke={0} fill>
     <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
-  </IconWrapper>
-)
-
-export const UnitsIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="m 1.5,4.5 h 21 v 15 h -21 z" />
-    <path
-      d="m 3.5,19.316406 v -3.708984 z m 2.1035156,0 v -3.708984 z m 2.1035156,0 v -3.708984 z m 2.1035157,0 v -3.708984 z m 4.3789061,0 v -3.708984 z m 2.103516,0 v -3.708984 z m 2.103515,0 v -3.708984 z m 2.103516,0 V 15.607422 Z M 12,19.130859 v -5.082031 z m 0,-8.986328 V 5.0625001 Z M 5.6035156,8.5859371 v -3.708984 z m 12.7929684,0 v -3.708984 z"
-      strokeWidth={props.stroke / 2 || 1.1}
-    />
   </IconWrapper>
 )
 

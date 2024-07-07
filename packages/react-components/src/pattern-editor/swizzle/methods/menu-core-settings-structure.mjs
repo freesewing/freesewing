@@ -3,7 +3,7 @@ export const menuCoreSettingsStructure = (
   { language = 'en', units = 'metric', sabool = false, parts = [] }
 ) => ({
   sabool: {
-    control: Swizzled.config.controlLevels.core.sa,
+    ux: Swizzled.config.uxLevels.core.sa,
     list: [0, 1],
     choiceTitles: {
       0: 'saNo',
@@ -18,7 +18,7 @@ export const menuCoreSettingsStructure = (
   },
   samm: sabool
     ? {
-        control: Swizzled.config.controlLevels.core.sa,
+        ux: Swizzled.config.uxLevels.core.sa,
         min: 0,
         max: units === 'imperial' ? 2 : 2.5,
         dflt: Swizzled.methods.defaultSamm(units),
@@ -26,7 +26,7 @@ export const menuCoreSettingsStructure = (
       }
     : false,
   paperless: {
-    control: Swizzled.config.controlLevels.core.paperless,
+    ux: Swizzled.config.uxLevels.core.paperless,
     list: [0, 1],
     choiceTitles: {
       0: 'paperlessNo',
@@ -40,7 +40,7 @@ export const menuCoreSettingsStructure = (
     icon: Swizzled.components.PaperlessIcon,
   },
   units: {
-    control: Swizzled.config.controlLevels.core.units,
+    ux: Swizzled.config.uxLevels.core.units,
     list: ['metric', 'imperial'],
     dflt: 'metric',
     choiceTitles: {
@@ -54,7 +54,7 @@ export const menuCoreSettingsStructure = (
     icon: Swizzled.components.UnitsIcon,
   },
   complete: {
-    control: Swizzled.config.controlLevels.core.complete,
+    ux: Swizzled.config.uxLevels.core.complete,
     list: [1, 0],
     dflt: 1,
     choiceTitles: {
@@ -68,7 +68,7 @@ export const menuCoreSettingsStructure = (
     icon: Swizzled.components.DetailIcon,
   },
   expand: {
-    control: Swizzled.config.controlLevels.core.expand,
+    ux: Swizzled.config.uxLevels.core.expand,
     list: [1, 0],
     dflt: 1,
     choiceTitles: {
@@ -82,14 +82,14 @@ export const menuCoreSettingsStructure = (
     icon: Swizzled.components.ExpandIcon,
   },
   only: {
-    control: Swizzled.config.controlLevels.core.only,
+    ux: Swizzled.config.uxLevels.core.only,
     dflt: false,
     list: parts,
     parts,
     icon: Swizzled.components.IncludeIcon,
   },
   scale: {
-    control: Swizzled.config.controlLevels.core.scale,
+    ux: Swizzled.config.uxLevels.core.scale,
     min: 0.1,
     max: 5,
     dflt: 1,
@@ -97,7 +97,7 @@ export const menuCoreSettingsStructure = (
     icon: Swizzled.components.ScaleIcon,
   },
   margin: {
-    control: Swizzled.config.controlLevels.core.margin,
+    ux: Swizzled.config.uxLevels.core.margin,
     min: 0,
     max: 2.5,
     dflt: Swizzled.methods.measurementAsMm(units === 'imperial' ? 0.125 : 0.2, units),

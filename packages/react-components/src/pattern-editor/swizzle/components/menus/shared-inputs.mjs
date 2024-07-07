@@ -445,14 +445,10 @@ export const MenuOnlySettingInput = (props) => {
   return <Swizzled.components.MenuListInput {...props} />
 }
 
-export const MenuControlSettingInput = (props) => {
+export const MenuUxSettingInput = (props) => {
   const { state, update, Swizzled } = props
 
   return (
-    <Swizzled.components.MenuListInput
-      {...props}
-      updateHandler={update.ui}
-      current={state.ui.control}
-    />
+    <Swizzled.components.MenuListInput {...props} updateHandler={update.ui} current={state.ui.ux} />
   )
 }

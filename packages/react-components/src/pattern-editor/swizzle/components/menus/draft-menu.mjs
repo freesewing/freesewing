@@ -25,9 +25,9 @@ export const DraftMenu = ({ Design, pattern, state, Swizzled, update }) => {
   ]
 
   // Show tip for lower User Experiences
-  if (state.ui.control <= 3)
+  if (state.ui.ux <= 3)
     sections.push({
-      name: 'missingSettings' + state.ui.control,
+      name: 'missingSettings' + state.ui.ux,
       icon: <HelpIcon className="w-8 h-8" />,
     })
 

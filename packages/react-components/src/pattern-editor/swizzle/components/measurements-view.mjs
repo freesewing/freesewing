@@ -9,7 +9,7 @@ const iconClasses = { className: 'w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink
  * It will be automatically loaded if we do not have all required measurements for a design.
  *
  * @param {Object} props - All the props
- * @param {Object} props.Swizzled - An object with swizzled components, hooks, methods, config, and defaults
+ * @param {Object} props.Swizzled - An object with swizzled components, hooks, methods, and config
  * @param {Function} props.Design - The design constructor
  * @param {string} props.design - The design name
  * @param {Object} props.state - The editor state object

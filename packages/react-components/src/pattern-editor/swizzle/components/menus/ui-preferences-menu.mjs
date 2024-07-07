@@ -5,12 +5,12 @@ export const UiPreferencesMenu = ({ Swizzled, update, state, Design }) => {
 
   const drillProps = { Design, state, update }
   const inputs = {
-    control: (props) => <Swizzled.components.MenuControlSettingInput {...drillProps} {...props} />,
+    ux: (props) => <Swizzled.components.MenuUxSettingInput {...drillProps} {...props} />,
     kiosk: (props) => <Swizzled.components.MenuListInput {...drillProps} {...props} />,
     renderer: (props) => <Swizzled.components.MenuListInput {...drillProps} {...props} />,
   }
   const values = {
-    control: (props) => <Swizzled.components.Control control={state.ui.control} {...props} />,
+    ux: (props) => <Swizzled.components.Ux ux={state.ui.ux} {...props} />,
     kiosk: Swizzled.components.MenuListValue,
     renderer: Swizzled.components.MenuListValue,
   }
@@ -19,7 +19,7 @@ export const UiPreferencesMenu = ({ Swizzled, update, state, Design }) => {
     <Swizzled.components.MenuItemGroup
       {...{
         structure,
-        control: state.ui.control,
+        ux: state.ui.ux,
         currentValues: state.ui || {},
         Item: (props) => (
           <Swizzled.components.UiPreference
@@ -32,7 +32,7 @@ export const UiPreferencesMenu = ({ Swizzled, update, state, Design }) => {
         name: 'pe:uiPreferences',
         language: state.locale,
         passProps: {
-          control: state.ui.control,
+          ux: state.ui.ux,
           settings: state.settings,
           patternConfig: Design.patternConfig,
         },
@@ -48,11 +48,11 @@ export const UiPreferencesMenu = ({ Swizzled, update, state, Design }) => {
   )
 }
 
-export const UiPreference = ({ Swizzled, name, control, ...rest }) => (
+export const UiPreference = ({ Swizzled, name, ux, ...rest }) => (
   <Swizzled.components.MenuItem
     {...rest}
     name={name}
-    allowToggle={!['control', 'view'].includes(name) && control > 3}
-    control={control}
+    allowToggle={!['ux', 'view'].includes(name) && ux > 3}
+    ux={ux}
   />
 )

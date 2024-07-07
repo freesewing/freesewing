@@ -126,8 +126,8 @@ websiteMode.t: Use inline mode
 websiteMode.d: Embeds the pattern editor in the natural flow of the web page.
 kioskMode.t: Use kiosk mode
 kioskMode.d: Breaks out the pattern editor to fill the entire page.
-control.t: User Experience
-control.d: Which user experience do you prefer? From keep it simple, to give me all the powers.
+ux.t: User Experience
+ux.d: Which user experience do you prefer? From keep it simple, to give me all the powers.
 inspect.t: Inspect
 inspect.d: Enabling this will allow you to drill down into the pattern, and pull up information about its various parts, paths, and points.
 inspectNo.t: Disable the inspector
@@ -156,17 +156,17 @@ export.d: Allows you to export this pattern to a variety of formats
 logs.t: Pattern logs
 enterCustomValue: Enter a custom value
 
-# control
-control1.t: Keep it as simple as possible
-control1.d: Hides all but the most essential features.
-control2.t: Keep it simple, but not too simple
-control2.d: Hides the majority of features.
-control3.t: Balance simplicity with power
-control3.d: Reveals the majority of features, but not all.
-control4.t: Give me all powers, but keep me safe
-control4.d: Reveals all features, keeps handrails and safety checks.
-control5.t: Get out of my way
-control5.d: Reveals all features, removes all handrails and safety checks.
+# ux
+ux1.t: Keep it as simple as possible
+ux1.d: Hides all but the most essential features.
+ux2.t: Keep it simple, but not too simple
+ux2.d: Hides the majority of features.
+ux3.t: Balance simplicity with power
+ux3.d: Reveals the majority of features, but not all.
+ux4.t: Give me all powers, but keep me safe
+ux4.d: Reveals all features, keeps handrails and safety checks.
+ux5.t: Get out of my way
+ux5.d: Reveals all features, removes all handrails and safety checks.
 
 # Tooltips
 tt.changeEditorView: Change to a different view
