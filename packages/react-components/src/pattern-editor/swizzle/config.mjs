@@ -106,7 +106,9 @@ export const defaultConfig = {
     },
     ui: {
       renderer: 4,
+      aside: 3,
       kiosk: 3,
+      rotate: 4,
       ux: 1,
     },
     views: {
@@ -136,6 +138,7 @@ export const defaultConfig = {
     ui: {
       renderer: 'react',
       kiosk: 0,
+      aside: 1,
       ux: 4,
     },
     locale: 'en',

@@ -113,7 +113,7 @@ paperlessYes.t: Generate a paperless pattern
 paperlessYes.d:  This generates a pattern with dimensions and a grid, which allows you to transfer it on fabric or another medium without the need to print out the pattern.
 metric: Metric
 uiPreferences.t: UI Preferences
-uiPreferences.d: These preferences control the UI (User Interface) aspects of our online pattern drafting environment.
+uiPreferences.d: These preferences control the UI (User Interface) of the pattern editor
 renderer.t: Render Engine
 renderer.d: Controls how the pattern is rendered (drawn) on the screen
 renderWithReact.t: Render with FreeSewing's React components
@@ -122,6 +122,18 @@ renderWithCore.t: Render with FreeSewing's Core library
 renderWithCore.d: Render directly to SVG from Core. Allows no interactivity and is optimized for print. Use this if you want to know what it will look like when exported.
 kiosk.t: Kiosk Mode
 kiosk.d: Controls how the pattern editor is embedded in the web page.
+aside.t: Aside Menu
+aside.d: Controls whether or not to show menus on the side of larger screens
+withAside.t: Also show menus on the side
+withAside.d: Shows menus both on the side of the screen, as well as the drop-downs in the header (this only applies to larger screens)
+noAside.t: Only show menus in the header
+noAside.d: Only shows the drop-down variant of the menus, making more room for your pattern
+rotate.t: Rotate pattern
+rotate.d: Allows you to rotate your pattern 90 degrees to better fit your screen
+rotateNo.t: Do not rotate pattern
+rotateNo.d: Show the pattern as it is
+rotateYes.t: Rotate pattern 90 degrees
+rotateYes.d: Rotate the pattern 90 degrees counter clockwise
 websiteMode.t: Use inline mode
 websiteMode.d: Embeds the pattern editor in the natural flow of the web page.
 kioskMode.t: Use kiosk mode
@@ -170,7 +182,18 @@ ux5.d: Reveals all features, removes all handrails and safety checks.
 
 # Tooltips
 tt.changeEditorView: Change to a different view
-tt.resetPatternState: Reset all pattern settings to their defaults
+tt.resetPatternState: Discard pattern changes and restore the pattern to its defaults
+tt.resetAllState: Discard all changes and restore the pattern editor to its initial state
+tt.toggleSa: Turns Seam Allowance on or off (see Core Settings)
+tt.togglePaperless: Turns Paperless on or off (see Core Settings)
+tt.toggleComplete: Turns Details on or off (see Core Settings)
+tt.toggleExpand: Turns Expand on or off (see Core Settings)
+tt.toggleUnits: Switches Units between metric and imperial (see Core Settings)
+tt.changeUx: Changes your UX setting (see UI Preferences)
+tt.toggleAside: Turn the Aside Menu on or off (see UI Preferences)
+tt.toggleKiosk: Turns Kiosk Mode on or off (see UI Preferences)
+tt.toggleRotate: Turns Rotate Pattern on or off (see UI Preferences)
+tt.toggleRenderer: Switches the Render Engine between React and SVG (see UI Preferences)
 
 # flags
 apply: Apply
@@ -183,9 +206,9 @@ expandIsOn.t: This design can save space (and trees)
 expandIsOn.d: "Because the **expand** core setting is currently enabled, all parts are fully drawn. You can display this design in a more compact way by disabling the **expand** setting. \n\nDoing so will mean that some parts are not fully drawn or not shown at all. Typically, these are simple rectangles that only take up space, or things that can be cut on the fold."
 enable: Enable
 flags: Flags
-flagMenu.t: Messages from the designer
-flagMenuOne.d: The designer of this pattern has flagged something about your current draft that deserves your attention.
-flagMenuMany.d: The designer of this pattern has flagged some things about your current draft that deserve your attention.
+flagMenu.t: Flags
+flagMenuOne.d: A specific issue about your current pattern needs your attention.
+flagMenuMany.d: Some issues about your current pattern need your attention.
 hide: Hide
 increase: Increase
 show: Show

@@ -44,10 +44,14 @@ export const stateUpdateFactory = (Swizzled, setState) => ({
   view: (val) => setState((cur) => Swizzled.methods.objUpdate({ ...cur }, 'view', val)),
   ux: (val) => setState((cur) => Swizzled.methods.objUpdate({ ...cur }, 'ux', val)),
   clearPattern: () =>
-    setState((cur) =>
-      Swizzled.methods.objUpdate({ ...cur }, 'settings', {
-        measurements: cur.settings.measurements,
-      })
-    ),
+    setState((cur) => {
+      const newState = { ...cur }
+      Swizzled.methods.objUpdate(newState, 'settings', { measurements: cur.settings.measurements })
+      /*
+       * Let's also reset the renderer to React as that feels a bit like a pattern setting even though it's UI
+       */
+      Swizzled.methods.objUpdate(newState, 'ui', { ...newState.ui, renderer: 'react' })
+      return newState
+    }),
   clearAll: () => setState(Swizzled.config.initialState),
 })

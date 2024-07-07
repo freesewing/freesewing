@@ -34,7 +34,7 @@ export const PatternLayout = (props) => {
           <div className="lg:w-2/3 flex flex-col h-full grow px-4">{props.output}</div>
           {menu ? (
             <div
-              className={`hidden lg:block w-1/3 shrink grow-0 lg:p-4 max-w-2xl h-full overflow-scroll`}
+              className={`hidden xl:block w-1/3 shrink grow-0 lg:p-4 max-w-2xl h-full overflow-scroll`}
             >
               {menu}
             </div>

@@ -24,22 +24,7 @@ export const DraftMenu = ({ Design, pattern, state, Swizzled, update }) => {
     },
   ]
 
-  // Show tip for lower User Experiences
-  if (state.ui.ux <= 3)
-    sections.push({
-      name: 'missingSettings' + state.ui.ux,
-      icon: <HelpIcon className="w-8 h-8" />,
-    })
-
   const items = []
-  const flags = pattern.setStores?.[0]?.plugins?.['plugin-annotations']?.flags
-
-  if (flags)
-    items.push([
-      <FlagsAccordionTitle key={1} {...{ flags, Swizzled }} />,
-      <FlagsAccordionEntries {...{ update, state, flags }} key={2} />,
-      'flags',
-    ])
   items.push(
     ...sections.map((section) => [
       <>
@@ -53,6 +38,15 @@ export const DraftMenu = ({ Design, pattern, state, Swizzled, update }) => {
       section.name,
     ])
   )
+
+  const flags = pattern.setStores?.[0]?.plugins?.['plugin-annotations']?.flags
+
+  if (flags)
+    items.push([
+      <FlagsAccordionTitle key={1} {...{ flags, Swizzled }} />,
+      <FlagsAccordionEntries {...{ update, state, flags }} key={2} />,
+      'flags',
+    ])
 
   return <Accordion items={items} />
 }

@@ -33,7 +33,7 @@ export const HeaderMenuDraftView = (props) => {
 
   return (
     <div className="flex flex-col">
-      <div>
+      <div className="flex flex-row gap-1">
         <Swizzled.components.HeaderMenuDraftViewDesignOptions {...props} />
         <Swizzled.components.HeaderMenuDraftViewCoreSettings {...props} />
         <Swizzled.components.HeaderMenuDraftViewUiPreferences {...props} />
@@ -50,19 +50,19 @@ export const HeaderMenuDropdown = (props) => {
   const { Swizzled, tooltip, toggle, width = '400px', open, setOpen, id } = props
 
   return (
-    <div className="tooltip tooltip-bottom" data-tip={tooltip}>
+    <Swizzled.components.Tooltip tip={tooltip}>
       <div className={`dropdown ${open === id ? 'dropdown-open z-20' : ''}`}>
         <div
           tabIndex={0}
           role="button"
-          className="btn btn-ghost btn-sm px-2 z-20 relative"
+          className="btn btn-ghost hover:bg-secondary hover:bg-opacity-20 hover:border-solid hover:boder-2 hover:border-secondary border border-secondary border-2 border-dotted btn-sm px-2 z-20 relative"
           onClick={() => setOpen(open === id ? false : id)}
         >
           {toggle}
         </div>
         <div
           tabIndex={0}
-          className="dropdown-content bg-base-100 bg-opacity-95 z-20 shadow"
+          className="dropdown-content bg-base-100 bg-opacity-90 z-20 shadow"
           style={{ width }}
         >
           {props.children}
@@ -75,7 +75,7 @@ export const HeaderMenuDropdown = (props) => {
           ></div>
         )}
       </div>
-    </div>
+    </Swizzled.components.Tooltip>
   )
 }
 
@@ -89,7 +89,7 @@ export const HeaderMenuDraftViewDesignOptions = (props) => {
       tooltip={Swizzled.methods.t('pe:designOptions.d')}
       toggle={
         <>
-          <Swizzled.components.OptionsIcon />
+          <Swizzled.components.HeaderMenuIcon name="options" extraClasses="text-secondary" />
           {Swizzled.methods.t('pe:designOptions.t')}
         </>
       }
@@ -109,7 +109,7 @@ export const HeaderMenuDraftViewCoreSettings = (props) => {
       id="coreSettings"
       toggle={
         <>
-          <Swizzled.components.SettingsIcon />
+          <Swizzled.components.HeaderMenuIcon name="settings" extraClasses="text-secondary" />
           {Swizzled.methods.t('pe:coreSettings.t')}
         </>
       }
@@ -129,7 +129,7 @@ export const HeaderMenuDraftViewUiPreferences = (props) => {
       id="uiPreferences"
       toggle={
         <>
-          <Swizzled.components.UiIcon />
+          <Swizzled.components.HeaderMenuIcon name="ui" extraClasses="text-secondary" />
           {Swizzled.methods.t('pe:uiPreferences.t')}
         </>
       }
@@ -141,6 +141,7 @@ export const HeaderMenuDraftViewUiPreferences = (props) => {
 
 export const HeaderMenuDraftViewFlags = (props) => {
   const { Swizzled } = props
+  const count = Object.keys(Swizzled.methods.flattenFlags(props.flags)).length
 
   return (
     <Swizzled.components.HeaderMenuDropdown
@@ -149,8 +150,9 @@ export const HeaderMenuDraftViewFlags = (props) => {
       id="flags"
       toggle={
         <>
-          <Swizzled.components.FlagIcon className="w-6 h-6 text-warning" />
+          <Swizzled.components.HeaderMenuIcon name="flag" extraClasses="text-secondary" />
           {Swizzled.methods.t('pe:flags')}
+          <span>({count})</span>
         </>
       }
     >
@@ -195,7 +197,7 @@ export const HeaderMenuDraftViewIcons = (props) => {
           tooltip={Swizzled.methods.t('pe:tt.toggleComplete')}
         >
           <Swizzled.components.DetailIcon
-            className={`${size} ${props.state.settings.complete ? 'text-secondary' : muted}`}
+            className={`${size} ${!props.state.settings.complete ? 'text-secondary' : muted}`}
           />
         </Button>
       ) : null}
@@ -228,11 +230,8 @@ export const HeaderMenuDraftViewIcons = (props) => {
       ) : null}
       <Swizzled.components.HeaderMenuIconSpacer />
       {ux >= levels.ux ? (
-        <div className="flex flex-row">
-          <div
-            className="tooltip tooltip-bottom px-1"
-            data-tip={Swizzled.methods.t('pe:tt.changeUx')}
-          >
+        <div className="flex flex-row px-1">
+          <Swizzled.components.Tooltip tip={Swizzled.methods.t('pe:tt.changeUx')}>
             {[0, 1, 2, 3, 4].map((i) => (
               <button
                 className="btn btn-ghost btn-sm px-0 -mx-0.5"
@@ -248,8 +247,18 @@ export const HeaderMenuDraftViewIcons = (props) => {
                 />
               </button>
             ))}
-          </div>
+          </Swizzled.components.Tooltip>
         </div>
+      ) : null}
+      {ux >= levels.aside ? (
+        <Button
+          updateHandler={() => update.ui('aside', props.state.ui.aside ? 0 : 1)}
+          tooltip={Swizzled.methods.t('pe:tt.toggleAside')}
+        >
+          <Swizzled.components.MenuIcon
+            className={`${size} ${!props.state.ui.aside ? 'text-secondary' : muted}`}
+          />
+        </Button>
       ) : null}
       {ux >= levels.kiosk ? (
         <Button
@@ -258,6 +267,16 @@ export const HeaderMenuDraftViewIcons = (props) => {
         >
           <Swizzled.components.KioskIcon
             className={`${size} ${props.state.ui.kiosk ? 'text-secondary' : muted}`}
+          />
+        </Button>
+      ) : null}
+      {ux >= levels.rotate ? (
+        <Button
+          updateHandler={() => update.ui('rotate', props.state.ui.rotate ? 0 : 1)}
+          tooltip={Swizzled.methods.t('pe:tt.toggleRotate')}
+        >
+          <Swizzled.components.RotateIcon
+            className={`${size} ${props.state.ui.rotate ? 'text-secondary' : muted}`}
           />
         </Button>
       ) : null}
@@ -287,14 +306,20 @@ export const HeaderMenuDraftViewIcons = (props) => {
   )
 }
 
+export const HeaderMenuIcon = (props) => {
+  const { Swizzled, name, extraClasses = '' } = props
+  const Icon =
+    Swizzled.components[`${Swizzled.methods.capitalize(name)}Icon`] || Swizzled.components.Noop
+  return <Icon {...props} className={`h-5 w-5 ${extraClasses}`} />
+}
 export const HeaderMenuIconSpacer = () => <span className="px-1 font-bold opacity-30">|</span>
 
-export const HeaderMenuButton = ({ updateHandler, children, tooltip }) => (
-  <div className="tooltip tooltip-bottom" data-tip={tooltip}>
+export const HeaderMenuButton = ({ Swizzled, updateHandler, children, tooltip }) => (
+  <Swizzled.components.Tooltip tip={tooltip}>
     <button className="btn btn-ghost btn-sm px-1" onClick={updateHandler}>
       {children}
     </button>
-  </div>
+  </Swizzled.components.Tooltip>
 )
 
 export const HeaderMenuViewMenu = (props) => {
@@ -344,7 +369,11 @@ export const HeaderMenuViewMenu = (props) => {
       id="views"
       toggle={
         <>
-          <Swizzled.components.RightIcon stroke={4} className="w-6 h-6 text-secondary rotate-90" />
+          <Swizzled.components.HeaderMenuIcon
+            name="right"
+            stroke={3}
+            extraClasses="text-secondary rotate-90"
+          />
           {Swizzled.methods.t('pe:views.t')}
         </>
       }

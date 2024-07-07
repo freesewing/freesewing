@@ -35,6 +35,7 @@ export const DraftView = ({ Design, missingMeasurements, state, update, Swizzled
       <Swizzled.components.ZoomablePattern
         renderProps={renderProps}
         patternLocale={state.locale || 'en'}
+        rotate={state.ui.rotate}
       />
     )
   }
@@ -42,7 +43,11 @@ export const DraftView = ({ Design, missingMeasurements, state, update, Swizzled
   return (
     <Swizzled.components.PatternLayout
       {...{ update, Design, output, state, pattern }}
-      menu={<Swizzled.components.DraftMenu {...{ Design, pattern, update, state }} />}
+      menu={
+        state.ui.aside ? (
+          <Swizzled.components.DraftMenu {...{ Design, pattern, update, state }} />
+        ) : null
+      }
     />
   )
 }

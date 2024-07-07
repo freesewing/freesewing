@@ -6,12 +6,16 @@ export const UiPreferencesMenu = ({ Swizzled, update, state, Design }) => {
   const drillProps = { Design, state, update }
   const inputs = {
     ux: (props) => <Swizzled.components.MenuUxSettingInput {...drillProps} {...props} />,
+    aside: (props) => <Swizzled.components.MenuListInput {...drillProps} {...props} />,
     kiosk: (props) => <Swizzled.components.MenuListInput {...drillProps} {...props} />,
+    rotate: (props) => <Swizzled.components.MenuListInput {...drillProps} {...props} />,
     renderer: (props) => <Swizzled.components.MenuListInput {...drillProps} {...props} />,
   }
   const values = {
     ux: (props) => <Swizzled.components.Ux ux={state.ui.ux} {...props} />,
+    aside: Swizzled.components.MenuListValue,
     kiosk: Swizzled.components.MenuListValue,
+    rotate: Swizzled.components.MenuListValue,
     renderer: Swizzled.components.MenuListValue,
   }
 

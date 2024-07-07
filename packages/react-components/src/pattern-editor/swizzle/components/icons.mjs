@@ -103,11 +103,7 @@ export const DesignIcon = (props) => (
 // Looks like a left and right pane with different level of detail
 export const DetailIcon = (props) => (
   <IconWrapper {...props}>
-    <path d="M 12,3.8533453 V 20.547919 M 1.5305595,3.53056 H 22.46944 V 20.469444 H 1.5305595 Z" />
-    <path
-      d="m 14.415354,11.5 h 5.669292 m -5.669292,3 h 5.669292 m -5.669292,-6 h 5.669292"
-      strokeWidth={props.stroke / 2 || 1.1}
-    />
+    <path d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" />
   </IconWrapper>
 )
 
@@ -210,6 +206,13 @@ export const MeasurementsSetIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks like 3 horizontal lines (hamburger menu)
+export const MenuIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M4 6h16M4 12h16M4 18h16" />
+  </IconWrapper>
+)
+
 // Looks like a X
 export const NoIcon = (props) => (
   <IconWrapper {...props}>
@@ -274,6 +277,13 @@ export const RightIcon = (props) => (
 export const RocketIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+  </IconWrapper>
+)
+
+// Looks like two arrows in a circular layout
+export const RotateIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
   </IconWrapper>
 )
 
@@ -736,12 +746,6 @@ export const MeasieIcon = (props) => (
 export const MegaphoneIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 110-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 01-1.44-4.282m3.102.069a18.03 18.03 0 01-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 018.835 2.535M10.34 6.66a23.847 23.847 0 008.835-2.535m0 0A23.74 23.74 0 0018.795 3m.38 1.125a23.91 23.91 0 011.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 001.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 010 3.46" />
-  </IconWrapper>
-)
-
-export const MenuIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M4 6h16M4 12h16M4 18h16" />
   </IconWrapper>
 )
 

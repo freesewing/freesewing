@@ -67,6 +67,7 @@ import {
   LeftIcon,
   ListIcon,
   MeasurementsSetIcon,
+  MenuIcon,
   NoIcon,
   OkIcon,
   OptionsIcon,
@@ -76,6 +77,7 @@ import {
   ResetIcon,
   RightIcon,
   RocketIcon,
+  RotateIcon,
   SaIcon,
   SaveIcon,
   SettingsIcon,
@@ -171,6 +173,7 @@ import {
   HeaderMenuDraftViewUiPreferences,
   HeaderMenuDraftViewFlags,
   HeaderMenuDraftViewIcons,
+  HeaderMenuIcon,
   HeaderMenuIconSpacer,
   HeaderMenuViewMenu,
 } from './header-menu.mjs'
@@ -185,6 +188,8 @@ import {
   ViewTypeIcon,
 } from './view-menu.mjs'
 import { Null } from './null.mjs'
+import { LargeScreenOnly } from './large-screen-only.mjs'
+import { Tooltip } from './tooltip.mjs'
 
 /**
  * This object holds all components that can be swizzled
@@ -224,7 +229,9 @@ const defaultComponents = {
   HeaderMenuButton,
   HeaderMenuDropdown,
   HeaderMenuDropdowns,
+  HeaderMenuIcon,
   HeaderMenuIconSpacer,
+  LargeScreenOnly,
   Link,
   ListInput,
   MarkdownInput,
@@ -232,6 +239,7 @@ const defaultComponents = {
   MeasurementsSetCard,
   MeasurementsView,
   MeasurementsEditor,
+  MenuIcon,
   NumberInput,
   Null,
   Pattern,
@@ -241,6 +249,7 @@ const defaultComponents = {
   SubAccordion,
   TemporaryLoader,
   ToggleInput,
+  Tooltip,
   UiPreferencesMenu,
   UiPreference,
   UserSetPicker,
@@ -291,6 +300,7 @@ const defaultComponents = {
   ResetIcon,
   RightIcon,
   RocketIcon,
+  RotateIcon,
   SaIcon,
   SaveIcon,
   SettingsIcon,

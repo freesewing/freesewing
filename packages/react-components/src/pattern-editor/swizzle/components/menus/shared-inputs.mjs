@@ -73,6 +73,7 @@ export const MenuListInput = ({
     dflt: config.dflt,
     updateHandler,
     name,
+    isDesignOption,
   })
 
   return config.list.map((entry) => {
@@ -391,10 +392,15 @@ export const MenuEditOption = (props) => {
  * @param  {string}                options.name       the name of the property being changed
  * @return the change handler for the input
  */
-const useSharedHandlers = ({ dflt, updateHandler, name }) => {
+const useSharedHandlers = ({ dflt, updateHandler, name, isDesignOption }) => {
   return useCallback(
     (newCurrent = '__UNSET__') => {
-      if (newCurrent === dflt) newCurrent = '__UNSET__'
+      /*
+       * When a design option is set to the default, just unset it instead
+       * This is both more efficient, and  makes it easy to see in which ways
+       * your pattern differs from the defaults
+       */
+      if (isDesignOption && newCurrent === dflt) newCurrent = '__UNSET__'
       updateHandler([name], newCurrent)
     },
     [dflt, updateHandler, name]

@@ -9,6 +9,16 @@ export const menuUiPreferencesStructure = (Swizzled) => {
       icon: Swizzled.components.UxIcon,
       dflt: Swizzled.config.defaultUx,
     },
+    aside: {
+      ux: uiUx.aside,
+      list: [0, 1],
+      choiceTitles: {
+        0: 'pe:noAside',
+        1: 'pe:withAside',
+      },
+      dflt: 1,
+      icon: Swizzled.components.MenuIcon,
+    },
     kiosk: {
       ux: uiUx.kiosk,
       list: [0, 1],
@@ -16,12 +26,18 @@ export const menuUiPreferencesStructure = (Swizzled) => {
         0: 'pe:websiteMode',
         1: 'pe:kioskMode',
       },
-      //valueTitles: {
-      //  react: 'ui-settings:regular',
-      //  svg: 'ui-settings:kiosk',
-      //},
       dflt: 0,
       icon: Swizzled.components.KioskIcon,
+    },
+    rotate: {
+      ux: uiUx.rotate,
+      list: [0, 1],
+      choiceTitles: {
+        0: 'pe:rotateNo',
+        1: 'pe:rotateYes',
+      },
+      dflt: 0,
+      icon: Swizzled.components.RotateIcon,
     },
     renderer: {
       ux: uiUx.renderer,
