@@ -55,7 +55,9 @@ export const ViewWrapper = ({
       ) : null}
       <div
         className={
-          state.ui.kiosk ? 'z-30 w-screen h-screen fixed top-0 left-0 bg-base-100' : 'grow w-full'
+          state.ui.kiosk
+            ? 'md:z-30 md:w-screen md:h-screen md:fixed md:top-0 md:left-0 md:bg-base-100'
+            : 'grow w-full'
         }
       >
         <View {...extraProps} {...{ update, designs }} state={passDownState} />
