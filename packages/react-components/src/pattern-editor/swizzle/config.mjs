@@ -130,9 +130,7 @@ export const defaultConfig = {
   defaultUx: 4,
   // Flag types
   flagTypes: ['error', 'warn', 'note', 'info', 'tip', 'fixme'],
-  // Show/hide layout blocs
-  withAside: false,
-  withHeader: true,
+  // Initial state
   initialState: {
     settings: {},
     ui: {

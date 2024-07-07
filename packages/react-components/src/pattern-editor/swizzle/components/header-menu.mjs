@@ -8,12 +8,12 @@ export const HeaderMenu = ({ state, Swizzled, update, Design, pattern }) => {
     Swizzled.components.Null
   return (
     <div
-      className={`hidden lg:flex sticky top-0 ${
+      className={`flex sticky top-0 ${
         state.ui.kiosk ? 'z-50' : 'z-20'
       } transition-[top] duration-300 ease-in-out`}
     >
       <div
-        className={`hidden lg:flex flex-row flex-wrap gap-4 w-full items-start justify-center border-b border-base-300 py-1.5`}
+        className={`flex flex-row flex-wrap gap-1 md:gap-4 w-full items-start justify-center border-b border-base-300 py-1 md:py-1.5`}
       >
         <Swizzled.components.HeaderMenuAllViews {...{ state, Swizzled, update, open, setOpen }} />
         <ViewMenu {...{ state, Swizzled, update, Design, pattern, open, setOpen }} />
@@ -32,22 +32,25 @@ export const HeaderMenuDraftView = (props) => {
   const Button = Swizzled.components.HeaderMenuButton
 
   return (
-    <div className="flex flex-col">
+    <>
       <div className="flex flex-row gap-1">
         <Swizzled.components.HeaderMenuDraftViewDesignOptions {...props} />
         <Swizzled.components.HeaderMenuDraftViewCoreSettings {...props} />
         <Swizzled.components.HeaderMenuDraftViewUiPreferences {...props} />
         {flags ? <Swizzled.components.HeaderMenuDraftViewFlags {...props} flags={flags} /> : null}
       </div>
-      <div>
-        <Swizzled.components.HeaderMenuDraftViewIcons {...props} />
-      </div>
-    </div>
+      <Swizzled.components.HeaderMenuDraftViewIcons {...props} />
+    </>
   )
 }
 
 export const HeaderMenuDropdown = (props) => {
   const { Swizzled, tooltip, toggle, width = '400px', open, setOpen, id } = props
+  /*
+   * We need to use both !fixed and md:!absolute here to override DaisyUI's
+   * classes on dropdown-content to force the dropdown to use the available
+   * screen space on mobile, rather than be positioned under its toggle button
+   */
 
   return (
     <Swizzled.components.Tooltip tip={tooltip}>
@@ -62,8 +65,7 @@ export const HeaderMenuDropdown = (props) => {
         </div>
         <div
           tabIndex={0}
-          className="dropdown-content bg-base-100 bg-opacity-90 z-20 shadow"
-          style={{ width }}
+          className="dropdown-content bg-base-100 bg-opacity-90 z-20 shadow left-0 !fixed md:!absolute top-12 w-screen md:w-96"
         >
           {props.children}
         </div>
@@ -90,7 +92,7 @@ export const HeaderMenuDraftViewDesignOptions = (props) => {
       toggle={
         <>
           <Swizzled.components.HeaderMenuIcon name="options" extraClasses="text-secondary" />
-          {Swizzled.methods.t('pe:designOptions.t')}
+          <span className="hidden lg:inline">{Swizzled.methods.t('pe:designOptions.t')}</span>
         </>
       }
     >
@@ -110,7 +112,7 @@ export const HeaderMenuDraftViewCoreSettings = (props) => {
       toggle={
         <>
           <Swizzled.components.HeaderMenuIcon name="settings" extraClasses="text-secondary" />
-          {Swizzled.methods.t('pe:coreSettings.t')}
+          <span className="hidden lg:inline">{Swizzled.methods.t('pe:coreSettings.t')}</span>
         </>
       }
     >
@@ -130,7 +132,7 @@ export const HeaderMenuDraftViewUiPreferences = (props) => {
       toggle={
         <>
           <Swizzled.components.HeaderMenuIcon name="ui" extraClasses="text-secondary" />
-          {Swizzled.methods.t('pe:uiPreferences.t')}
+          <span className="hidden lg:inline">{Swizzled.methods.t('pe:uiPreferences.t')}</span>
         </>
       }
     >
@@ -151,8 +153,10 @@ export const HeaderMenuDraftViewFlags = (props) => {
       toggle={
         <>
           <Swizzled.components.HeaderMenuIcon name="flag" extraClasses="text-secondary" />
-          {Swizzled.methods.t('pe:flags')}
-          <span>({count})</span>
+          <span className="hidden lg:inline">
+            {Swizzled.methods.t('pe:flags')}
+            <span>({count})</span>
+          </span>
         </>
       }
     >
@@ -173,7 +177,7 @@ export const HeaderMenuDraftViewIcons = (props) => {
   }
 
   return (
-    <div className="flex flex-row flex-wrap items-center">
+    <div className="flex flex-row flex-wrap items-center justify-center px-2">
       {ux >= levels.sa ? (
         <Button updateHandler={update.toggleSa} tooltip={Swizzled.methods.t('pe:tt.toggleSa')}>
           <Swizzled.components.SaIcon
@@ -344,7 +348,7 @@ export const HeaderMenuViewMenu = (props) => {
       output.push(
         <li key={i} className="mb-1 flex flex-row items-center justify-between w-full">
           <a
-            className={`w-full rounded-lg border-2 border-secondary text-base-content flex flex-row items-center gap-4
+            className={`w-full rounded-lg border-2 border-secondary text-base-content flex flex-row items-center gap-2 md:gap-4 p-2
           hover:bg-secondary hover:bg-opacity-20 hover:border-solid ${
             viewName === state.view ? 'bg-secondary border-solid bg-opacity-20' : 'border-dotted'
           }`}
@@ -355,7 +359,7 @@ export const HeaderMenuViewMenu = (props) => {
               className="w-6 h-6 grow-0"
               Swizzled={Swizzled}
             />
-            <b className="ext-right grow">{Swizzled.methods.t(`pe:view.${viewName}.t`)}</b>
+            <b className="text-left grow">{Swizzled.methods.t(`pe:view.${viewName}.t`)}</b>
           </a>
         </li>
       )
@@ -374,105 +378,16 @@ export const HeaderMenuViewMenu = (props) => {
             stroke={3}
             extraClasses="text-secondary rotate-90"
           />
-          {Swizzled.methods.t('pe:views.t')}
+          <span className="hidden lg:inline">{Swizzled.methods.t('pe:views.t')}</span>
         </>
       }
     >
       <ul
         tabIndex={i}
-        className="dropdown-content menu bg-base-100 rounded-box w-52 p-2 shadow z-20"
-        style={{ width: '300px' }}
+        className="dropdown-content bg-base-100 bg-opacity-90 z-20 shadow left-0 !fixed md:!absolute w-screen md:w-96 px-4 md:p-2 md:pt-0"
       >
         {output}
       </ul>
     </Swizzled.components.HeaderMenuDropdown>
-  )
-}
-
-//<div className="tooltip tooltip-bottom" data-tip={Swizzled.methods.t('pe:tt.changeEditorView')}>
-//  <div className={`dropdown z-20 ${open ? 'dropedown-open' : ''}`}>
-//    <div tabIndex={i} role="button" className="btn btn-ghost btn-sm border-current border-2 px-2" onClick={() => setOpen(!open)}>
-//      <Swizzled.components.ViewTypeIcon view={state.view} />
-//      Editor View
-//    </div>
-//    {open && <div className="w-screen h-screen fixed z-10 top-0 left-0 opacity-0" onClick={() => setOpen(!open)}></div>}
-//  </div>
-//</div>
-
-//  __SDEFILE__ - This file is a dependency for the stand-alone environment
-// Dependencies
-//import { capitalize, shortDate } from 'shared/utils.mjs'
-//import { controlLevels } from 'shared/config/freesewing.config.mjs'
-//// Hooks
-//import { useContext, useMemo } from 'react'
-//import { useMobileAction } from 'shared/context/mobile-menubar-context.mjs'
-//import { useTranslation } from 'next-i18next'
-//import { useBackend } from 'shared/hooks/use-backend.mjs'
-//import { useTheme } from 'shared/hooks/use-theme.mjs'
-//// Context
-//import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
-//// Components
-//import { PanZoomContext } from 'shared/components/workbench/pattern/pan-zoom-context.mjs'
-//import {
-//  PaperlessIcon,
-//  SaIcon,
-//  RocketIcon,
-//  BulletIcon,
-//  UnitsIcon,
-//  DetailIcon,
-//  ResetIcon,
-//  UploadIcon,
-//  BookmarkIcon,
-//  ZoomInIcon,
-//  ZoomOutIcon,
-//  ExpandIcon,
-//  KioskIcon,
-//} from 'shared/components/icons.mjs'
-//
-//export const ns = ['common', 'core-settings', 'ui-settings']
-//
-const IconButton = ({ Icon, onClick, dflt = true, title, hide = false, extraClasses = '' }) => (
-  <div className="tooltip tooltip-bottom tooltip-primary flex items-center" data-tip={title}>
-    <button
-      onClick={onClick}
-      className={`text-${dflt ? 'neutral-content' : 'accent'} hover:text-secondary-focus ${
-        hide ? 'invisible' : ''
-      } ${extraClasses}`}
-      title={title}
-    >
-      <Icon />
-    </button>
-  </div>
-)
-
-const smZoomClasses =
-  '[.mobile-menubar_&]:btn [.mobile-menubar_&]:btn-secondary [.mobile-menubar_&]:btn-circle [.mobile-menubar_&]:my-1'
-const ZoomButtons = ({ t, zoomFunctions, zoomed }) => {
-  if (!zoomFunctions) return null
-
-  return (
-    <div className="flex flex-col lg:flex-row items-center lg:content-center lg:gap-4">
-      <IconButton
-        Icon={ResetIcon}
-        onClick={zoomFunctions.reset}
-        title={t('resetZoom')}
-        hide={!zoomed}
-        extraClasses={smZoomClasses}
-      />
-      <IconButton
-        Icon={ZoomOutIcon}
-        onClick={() => zoomFunctions.zoomOut()}
-        title={t('zoomOut')}
-        dflt
-        extraClasses={smZoomClasses}
-      />
-      <IconButton
-        Icon={ZoomInIcon}
-        onClick={() => zoomFunctions.zoomIn()}
-        title={t('zoomIn')}
-        dflt
-        extraClasses={smZoomClasses}
-      />
-    </div>
   )
 }
