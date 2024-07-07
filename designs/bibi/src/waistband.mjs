@@ -15,16 +15,16 @@ export const waistband = {
   hide: { from: true },
 
   options: {
-    // Bibi specific, places here as this is the earliest part that drafts the sideseam
+    // Bibi specific, placed here as this is the earliest part that drafts the sideseam
     fitWaist: { bool: true, menu: 'fit', order: 'EBA' },
     waistEase: {
-      pct: 1,
+      pct: 5,
       min: -10,
       max: 20,
       menu: (settings, mergedOptions) => (mergedOptions.fitWaist ? 'fit' : false),
       order: 'EBB',
     },
-    hipsEase: { pct: 2, min: -5, max: 50, menu: 'fit', order: 'ECA' },
+    hipsEase: { pct: 5, min: -5, max: 50, menu: 'fit', order: 'ECA' },
     seatEase: { pct: 2, min: -5, max: 50, menu: 'fit', order: 'EDA' },
     chestEase: { pct: 2, min: -5, max: 25, menu: 'fit', order: 'EAB' },
     length: {
@@ -60,6 +60,38 @@ export const waistband = {
         mergedOptions.useWaistRibbing || mergedOptions.useCuffRibbing ? 'style' : false,
       toAbs: (val, { measurements }) =>
         (measurements.hpsToWaistBack + measurements.waistToHips) * val,
+    },
+    necklineWidth: { pct: 15, min: -5, max: 90, menu: 'style' },
+    strapWidth: {
+      pct: 40,
+      min: 15,
+      max: 100,
+      menu: (settings, mergedOptions) => (mergedOptions.sleeves ? false : 'style.sleeves'),
+    },
+    sleeves: { bool: true, menu: 'style.sleeves' },
+    seatBackAdjustment: {
+      pct: 20,
+      min: 0,
+      max: 100,
+      menu: 'advanced',
+    },
+    curvatureAdjustment: {
+      pct: 50,
+      min: 0.1,
+      max: 100,
+      menu: 'advanced',
+    },
+    waistAdjustment: {
+      pct: 95,
+      min: 50,
+      max: 100,
+      menu: (settings, mergedOptions) => (mergedOptions.fitWaist ? 'advanced' : false),
+    },
+    lengthAdjustment: {
+      pct: 25,
+      min: 0,
+      max: 100,
+      menu: 'advanced',
     },
   },
   draft: bibiWaistband,

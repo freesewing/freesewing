@@ -172,6 +172,14 @@
     "curvatureAdjustment": {
       "t": "Curvature adjustment",
       "d": "Controls how straight the side seam is above the hem."
+    },
+    "lengthAdjustment": {
+      "t": "Length adjustment",
+      "d": "Controls how much the front part is made longer to compensate for the curve around the bust. Has little effect on smaller busts."
+    },
+    "waistAdjustment": {
+      "t": "Waist adjustment",
+      "d": "Controls the minimum width around the waist to prevent an excessive hourglass shape."
     }
   }
 }
