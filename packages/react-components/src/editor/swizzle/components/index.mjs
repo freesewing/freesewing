@@ -123,6 +123,7 @@ import { DesignsView } from './designs-view.mjs'
 import { DraftView } from './draft-view.mjs'
 import { ErrorView } from './error-view.mjs'
 import { MeasurementsView } from './measurements-view.mjs'
+import { SaveView } from './save-view.mjs'
 import { ViewPicker } from './view-picker.mjs'
 // Pattern
 import { Pattern } from '@freesewing/react-components/pattern'
@@ -212,6 +213,7 @@ const defaultComponents = {
   DraftMenu,
   DraftView,
   ErrorView,
+  SaveView,
   Flag,
   Flags,
   FlagsAccordionTitle,

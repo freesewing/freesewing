@@ -46,7 +46,7 @@ export const defaultConfig = {
   viewComponents: {
     draft: 'DraftView',
     designs: 'DesignsView',
-    save: 'ViewPicker',
+    save: 'SaveView',
     export: 'ViewPicker',
     measurements: 'MeasurementsView',
     printLayout: 'ViewPicker',
