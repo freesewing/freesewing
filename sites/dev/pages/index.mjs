@@ -101,7 +101,11 @@ const HomePage = ({ page }) => (
           <Highlight language="shell">npx @freesewing/new-design</Highlight>
           <p>
             This command will setup the stand-alone FreeSewing development environment for you.{' '}
-            <PageLink href="/tutorials/getting-started-linux/dev-setup" txt="Learn more" />.
+            <PageLink
+              href="/tutorials/getting-started-linux/dev-setup#stand-alone-development"
+              txt="Learn more"
+            />
+            .
           </p>
         </div>
         <div className="max-w-xl w-full">
@@ -125,7 +129,12 @@ const HomePage = ({ page }) => (
             <a href="https://github.com/freesewing/freesewing">
               the freesewing/freesewing repository on GitHub
             </a>{' '}
-            and set it up for development. <PageLink href="/infra" txt="Learn more" />.
+            and set it up for development.{' '}
+            <PageLink
+              href="/tutorials/getting-started-linux/dev-setup#monorepo-development"
+              txt="Learn more"
+            />
+            .
           </p>
         </div>
       </div>
