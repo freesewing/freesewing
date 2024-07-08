@@ -24,7 +24,7 @@ path.seam.attr("data-text", "finishWithBiasTape");
 This way, different strings for different languages can be associated with
 the key, allowing translated text to be used.
 
-You can find and browse the translations and available translation keys in the
-[freesewing/freesewing project on GitHub][1].
+You can find and browse the translations and available translation keys for each design in the design's
+[i18n folder on GitHub][1].
 
-[1]: https://github.com/freesewing/freesewing/tree/develop/packages/i18n/src/locales
+[1]: https://github.com/freesewing/freesewing/tree/develop/designs/aaron/i18n
