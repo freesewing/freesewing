@@ -42,6 +42,6 @@ import { pluginMeasurements } from '@freesewing/plugin-measurements'
 
 ## Notes
 
-The measurements plugin is part of our [plugin-bundle](/reference/plugins/bundle)
+The measurements plugin is part of our [core-plugins bundle](/reference/plugins/core)
 
 [1]: https://www.npmjs.com/package/@freesewing/plugin-measurements

@@ -28,6 +28,6 @@ import { pluginSprinkle } from '@freesewing/plugin-sprinkle'
 
 ## Notes
 
-The sprinkle plugin is part of our [plugin-bundle](/reference/plugins/bundle)
+The sprinkle plugin is part of our [core-plugins bundle](/reference/plugins/core)
 
 [1]: https://www.npmjs.com/package/@freesewing/plugin-sprinkle
