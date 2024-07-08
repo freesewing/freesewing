@@ -141,7 +141,7 @@ const HomePage = ({ page }) => (
 
       <div className="flex flex-col gap-5 md:grid lg:grid-cols-2 lg:gap-4 mt-12">
         <CardLink
-          href="/reference/core"
+          href="/reference/api"
           title="Core API"
           text="Reference documentation for our core library"
         />
