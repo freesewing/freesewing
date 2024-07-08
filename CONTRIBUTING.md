@@ -11,7 +11,7 @@ Use your best judgment, and feel free to propose changes to this document in a p
 ## Code of Conduct
 
 When you engage with us, or when you engage with others, 
-please remember [the FreeSewing community standards](https://freesewing.org/docs/various/community-standards/).
+please remember [the FreeSewing community standards](https://freesewing.org/docs/about/community-standards/).
 
 As a contributor, you are also expected to uphold [the FreeSewing Code of Conduct](https://freesewing.dev/guides/code-of-conduct). 
 
