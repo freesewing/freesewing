@@ -8,13 +8,13 @@ However, there's an equivalent endpoint for JWT authentication.
 
 ## Access control
 
-- [Permission level](/reference/backend/api/rbac) `0` or higher is required to read the current API key
+- [Permission level](/reference/backend/rbac) `0` or higher is required to read the current API key
 
 ## Endpoints
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method get /> | `/whoami/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
+| <Method get /> | `/whoami/key` | [API Key & Secret](/reference/backend/authentication#key-authentication) |
 
 ## Response status codes
 

@@ -6,7 +6,7 @@ Creates a new Person.
 
 ## Access control
 
-- [Permission level](/reference/backend/api/rbac) `3` or higher is required to create a Person
+- [Permission level](/reference/backend/rbac) `3` or higher is required to create a Person
 
 ## Endpoints
 
@@ -14,8 +14,8 @@ Creating a new Person is possible via these endpoints:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method post /> | `/people/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
-| <Method post /> | `/people/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
+| <Method post /> | `/people/jwt` | [JSON Web Token](/reference/backend/authentication#jwt-authentication) |
+| <Method post /> | `/people/key` | [API Key & Secret](/reference/backend/authentication#key-authentication) |
 
 ## Request body
 

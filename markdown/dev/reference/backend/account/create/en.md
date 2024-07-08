@@ -3,7 +3,7 @@ title: Create an account
 ---
 
 Creates a new User account. The User account will remain inactive
-until [it is confirmed](/reference/backend/api/account/confirm).
+until [it is confirmed](/reference/backend/account/confirm).
 
 ## Endpoints
 

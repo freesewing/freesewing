@@ -6,7 +6,7 @@ Deletes an existing API key.
 
 ## Access control
 
-- [Permission level](/reference/backend/api/rbac) `4` or higher is required to delete an API key
+- [Permission level](/reference/backend/rbac) `4` or higher is required to delete an API key
 
 ## Endpoints
 
@@ -14,8 +14,8 @@ Deleting an API key is possible via these endpoints:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method delete /> | `/apikeys/:id/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
-| <Method delete /> | `/apikeys/:id/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
+| <Method delete /> | `/apikeys/:id/jwt` | [JSON Web Token](/reference/backend/authentication#jwt-authentication) |
+| <Method delete /> | `/apikeys/:id/key` | [API Key & Secret](/reference/backend/authentication#key-authentication) |
 
 ## Request URL
 

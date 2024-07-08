@@ -6,8 +6,8 @@ Updates an existing User account.
 
 ## Access control
 
-- [Permission level](/reference/backend/api/rbac) `4` or higher is required to update your own User account
-- [Permission level](/reference/backend/api/rbac) `8` is required to update **another user's** account
+- [Permission level](/reference/backend/rbac) `4` or higher is required to update your own User account
+- [Permission level](/reference/backend/rbac) `8` is required to update **another user's** account
 
 ## Endpoints
 
@@ -15,16 +15,16 @@ Updating an existing User account is possible via these endpoints:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method put /> | `/account/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
-| <Method put /> | `/account/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
+| <Method put /> | `/account/jwt` | [JSON Web Token](/reference/backend/authentication#jwt-authentication) |
+| <Method put /> | `/account/key` | [API Key & Secret](/reference/backend/authentication#key-authentication) |
 
 ## Request body
 
 | Property    | Type     | Description |
 | ----------: | :------- | :---------- |
 | `bio`       | `string` | The User's bio |
-| `consent`   | `string` | A number that indicates [the consent given by the user](/reference/backend/api/account#the-consent-field-is-about-data-protection) |
-| `control`   | `string` | A number that indicates [the level of control the user prefers](/reference/backend/api/account#the-control-field-is-about-keeping-it-simple) |
+| `consent`   | `string` | A number that indicates [the consent given by the user](/reference/backend/account#the-consent-field-is-about-data-protection) |
+| `control`   | `string` | A number that indicates [the level of control the user prefers](/reference/backend/account#the-control-field-is-about-keeping-it-simple) |
 | `github`    | `string` | The User's username on GitHub |
 | `imperial`  | `boolean`| Whether or not the User prefers imperial units |
 | `newsletter`| `boolean`| Whether this Person prefers imperial measurements (`true`) or not (`false`) |
