@@ -52,7 +52,7 @@ methods available for them.
 
 ## Common scenarios
 
-A common scenario is to apply [CSS classes](reference/css) to style a path:
+A common scenario is to apply [CSS classes](/reference/css) to style a path:
 
 ```js
 paths.example.attributes.add('class', 'lining dashed');
