@@ -2,11 +2,6 @@
 title: Adding a blog post
 ---
 
-Blog posts have been migrated to [Strapi](https://strapi.io/), a headless CMS
-system.
+The [New...](https://freesewing.org/new) page (specifically [freesewing.org/new/blog](https://freesewing.org/new/blog)) allows you to create/suggest a new blogpost for FreeSewing.org.
 
-Our Strapi instance can be accessed at
-[posts.freesewing.org](https://posts.freesewing.org/).
-
-If you don't have a Strapi account (yet), [reach out to us on
-Discord](https://discord.freesewing.org).
+You must be signed in to your FreeSewing.org account to add a showcase.

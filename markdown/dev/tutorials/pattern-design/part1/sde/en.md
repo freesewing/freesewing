@@ -32,11 +32,11 @@ It allows you to choose a design template to start from. The following templates
 
 - **From scratch**: Start with an (almost) empty design
 - **Tutorial**: Start with the end result of this very tutorial
-- **From Brian**: Start with a design that extends [Brian]('https://freesewing.org/designs/brian)
-- **From Bent**: Start with a design that extends [Bent]('https://freesewing.org/designs/bent)
-- **From Titan**: Start with a design that extends [Titan]('https://freesewing.org/designs/titan)
-- **From Bella**: Start with a design that extends [Bella]('https://freesewing.org/designs/bella)
-- **From Breanna**: Start with a design that extends [Breanna]('https://freesewing.org/designs/breanna)
+- **From Brian**: Start with a design that extends [Brian](https://freesewing.org/designs/brian)
+- **From Bent**: Start with a design that extends [Bent](https://freesewing.org/designs/bent)
+- **From Titan**: Start with a design that extends [Titan](https://freesewing.org/designs/titan)
+- **From Bella**: Start with a design that extends [Bella](https://freesewing.org/designs/bella)
+- **From Breanna**: Start with a design that extends [Breanna](https://freesewing.org/designs/breanna)
 
 For the following along this tutorial, you have two options:
 

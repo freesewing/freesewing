@@ -13,7 +13,7 @@ value a safe and welcoming environment for all members of the FreeSewing communi
 
 To that extend, we impose the following requirements to ensure everyone feels safe and welcome:
 
-- Any member of our community must respect [our community standards](https://freesewing.org/docs/various/community-standards/)
+- Any member of our community must respect [our community standards](https://freesewing.org/docs/about/community-standards/)
 - As a contributor, you must uphold [our Code of Conduct](/guides/code-of-conduct/)
 
 Go ahead and read those, we'll wait.
@@ -24,7 +24,7 @@ With that out of the way, here's a few more things that are _good to know_:
 
 - Nobody gets paid to work on/for FreeSewing. We are a 100% volunteer organisation.
 - We have patrons who support us financially, but all the money that comes in goes to charity —
-  See our [revenue pledge](https://freesewing.org/docs/various/pledge/) for details
+  See our [revenue pledge](https://freesewing.org/docs/about/pledge/) for details
 - FreeSewing follows the [all-contributors](https://allcontributors.org/) specification.
   Contributions of any kind are welcome.
 

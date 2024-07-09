@@ -15,12 +15,12 @@ FreeSewing is currently available in the following languages:
 
 | Code | Language       | Website |
 | ----:|:-------------- |:------- |
-| `de` | **German**     | https://de.freesewing.org/ |
-| `en` | **English**    | https://en.freesewing.org/ |
-| `es` | **Spanish**    | https://es.freesewing.org/ |
-| `fr` | **French**     | https://fr.freesewing.org/ |
-| `nl` | **Dutch**      | https://nl.freesewing.org/ |
-| `uk` | **Ukrainian**   | https://uk.freesewing.org/ |
+| `de` | **German**     | https://freesewing.org/de |
+| `en` | **English**    | https://freesewing.org/ |
+| `es` | **Spanish**    | https://freesewing.org/es |
+| `fr` | **French**     | https://freesewing.org/fr |
+| `nl` | **Dutch**      | https://freesewing.org/nl |
+| `uk` | **Ukrainian**   | https://freesewing.org/uk |
 
 <Note compact>
 English is the translation source language and the working language of the FreeSewing project

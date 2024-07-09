@@ -63,7 +63,7 @@ const html = mustache.render(
     greeting: `love,`,
     website: 'FreeSewing.org',
     seeWhy: 'You received this email because removing inactive accounts is in line with our',
-    urlWhy: 'https://freesewing.org/docs/various/privacy/account/',
+    urlWhy: 'https://freesewing.org/docs/about/privacy#how-we-use-your-account-data',
     whyDidIGetThis: 'Privacy Notice',
     notMarketing: 'This is not marketing, but a transactional email about your FreeSewing account.',
   }

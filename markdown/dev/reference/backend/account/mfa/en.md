@@ -14,8 +14,8 @@ Enabling, confirming, and disabling MFA is all possible via this endpoint:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method post /> | `/account/mfa/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
-| <Method post /> | `/account/mfa/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
+| <Method post /> | `/account/mfa/jwt` | [JSON Web Token](/reference/backend/authentication#jwt-authentication) |
+| <Method post /> | `/account/mfa/key` | [API Key & Secret](/reference/backend/authentication#key-authentication) |
 
 ## Setup MFA
 

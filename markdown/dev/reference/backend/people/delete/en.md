@@ -6,8 +6,8 @@ Deletes an existing Person.
 
 ## Access control
 
-- [Permission level](/reference/backend/api/rbac) `3` or higher is required to delete a Person
-- [Permission level](/reference/backend/api/rbac) `8` is required to delete **another user's** Person
+- [Permission level](/reference/backend/rbac) `3` or higher is required to delete a Person
+- [Permission level](/reference/backend/rbac) `8` is required to delete **another user's** Person
 
 ## Endpoints
 
@@ -15,8 +15,8 @@ Deleting a Person is possible via these endpoints:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method delete /> | `/people/:id/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
-| <Method delete /> | `/people/:id/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
+| <Method delete /> | `/people/:id/jwt` | [JSON Web Token](/reference/backend/authentication#jwt-authentication) |
+| <Method delete /> | `/people/:id/key` | [API Key & Secret](/reference/backend/authentication#key-authentication) |
 
 ## Request URL
 

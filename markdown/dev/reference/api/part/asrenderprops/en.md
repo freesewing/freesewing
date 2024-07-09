@@ -6,7 +6,7 @@ title: Part.asRenderProps()
 The `Part.asRenderProps()` method will return the data stored in the
 part as a serializable JavaScript object. This method is typically
 not invoked directly but rather called under the hood as a result of
-calling [`Pattern.getRenderProps()`](/reference/core/pattern/getrenderprops).
+calling [`Pattern.getRenderProps()`](/reference/api/pattern/getrenderprops).
 
 ## Signature
 

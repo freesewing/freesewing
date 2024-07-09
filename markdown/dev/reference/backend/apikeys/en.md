@@ -13,7 +13,7 @@ The FreeSewing backend REST API supports authentication both with JSON Web
 Tokens (JWT) as with API keys (KEY).  This describes the endpoints that deal
 with creating, reading, and removing API keys. For authentication details,
 refer to [the section on
-authenticating](/reference/backend/api#authentication).
+authenticating](/reference/backend/authentication).
 
 ## Endpoints
 

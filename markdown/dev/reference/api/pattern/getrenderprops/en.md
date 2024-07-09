@@ -4,7 +4,7 @@ title: Pattern.getRenderProps()
 
 The `Pattern.getRenderProps()` method will return an object that
 facilitates rendering the pattern by an external renderer such as
-[our Pattern React component](/fixme).
+our [Pattern React component](/reference/packages/react-components).
 It should only be called after calling `Pattern.draft()`.
 
 ## Pattern.getRenderProps() signature
