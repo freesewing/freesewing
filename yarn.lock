@@ -11370,10 +11370,10 @@ periscopic@^3.0.0:
     estree-walker "^3.0.0"
     is-reference "^3.0.0"
 
-picocolors@^1, picocolors@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/picocolors/-/picocolors-1.0.0.tgz"
-  integrity sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==
+picocolors@^1, picocolors@^1.0.0, picocolors@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.0.1.tgz#a8ad579b571952f0e5d25892de5445bcfe25aaa1"
+  integrity sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==
 
 picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.3.1:
   version "2.3.1"
@@ -11561,13 +11561,13 @@ postcss@8.4.31:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-postcss@8.4.38, postcss@^8.4.23:
-  version "8.4.38"
-  resolved "https://registry.npmjs.org/postcss/-/postcss-8.4.38.tgz"
-  integrity sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==
+postcss@8.4.39, postcss@^8.4.23:
+  version "8.4.39"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.39.tgz#aa3c94998b61d3a9c259efa51db4b392e1bde0e3"
+  integrity sha512-0vzE+lAiG7hZl1/9I8yzKLx3aR9Xbof3fBHKunvMfOCYAtMhrsnccJY2iTURb9EZd5+pLuiNV9/c/GZJOHsgIw==
   dependencies:
     nanoid "^3.3.7"
-    picocolors "^1.0.0"
+    picocolors "^1.0.1"
     source-map-js "^1.2.0"
 
 postcss@^5.0.0, postcss@^5.0.21:
