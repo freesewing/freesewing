@@ -524,15 +524,15 @@ export const front = {
     // Bibi specific, placed here as this is the earliest part that drafts the sideseam
     fitWaist: { bool: true, menu: 'fit', order: 'EBA' },
     waistEase: {
-      pct: 1,
+      pct: 5,
       min: -10,
       max: 20,
       menu: (settings, mergedOptions) => (mergedOptions.fitWaist ? 'fit' : false),
       order: 'EBB',
     },
-    hipsEase: { pct: 2, min: -5, max: 50, menu: 'fit', order: 'ECA' },
+    hipsEase: { pct: 5, min: -5, max: 50, menu: 'fit', order: 'ECA' },
     seatEase: { pct: 2, min: -5, max: 50, menu: 'fit', order: 'EDA' },
-    chestEase: { pct: 2, min: -5, max: 25, menu: 'fit', order: 'EAB' },
+    chestEase: { pct: 10, min: -5, max: 25, menu: 'fit', order: 'EAB' },
     length: {
       dflt: 'seat',
       list: ['underbust', 'waist', 'hips', 'seat', 'knee', 'floor'],
@@ -570,7 +570,7 @@ export const front = {
     armholeDepthFactor: 0.5,
     shoulderEase: { pct: 0, min: -2, max: 6, menu: 'fit' },
 
-    frontCoverage: { pct: 45, min: -75, max: 95, menu: 'style' },
+    frontCoverage: { pct: 70, min: -75, max: 95, menu: 'style' },
     frontEase: { pct: -6, min: -30, max: 0, menu: 'fit' },
     sideGathering: { pct: 0, min: 0, max: 50, menu: 'fit' },
     plotFitHelpers: { bool: false, menu: 'advanced' },
