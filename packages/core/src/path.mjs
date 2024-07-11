@@ -2,6 +2,7 @@ import { Attributes } from './attributes.mjs'
 import { Point } from './point.mjs'
 import { Bezier } from 'bezier-js'
 import {
+  deg2rad,
   linesIntersect,
   lineIntersectsCurve,
   curvesIntersect,
@@ -198,6 +199,43 @@ Path.prototype.bbox = function () {
   }
 
   return __bbbbox(bbs)
+}
+
+/**
+ * Adds a circle section to this path.
+ * Positive angles create a counter-clockwise arc starting from the current point,
+ * negative angles create a clockwise arc.
+ *
+ * Note: This is unrelated to SVG arc segments in paths, we approximate the circle segment using
+ * standard cubic Bézier curves
+ *
+ * @param {number} deg span of the new circle section in degrees.
+ * @param {Point} origin center point of the circle (rotation origin)
+ * @returns {Path} this
+ */
+Path.prototype.circleSegment = function (deg, origin) {
+  const radius = this.end().dist(origin)
+  // ensure a full circle gets 4 segments for a good approximation
+  // We could use more, but this is not necessary
+  const steps = Math.ceil(Math.abs(deg / 90))
+  const stepAngle = deg / steps
+  const stepAngleRad = deg2rad(stepAngle)
+
+  // magic formula, calculate distance of control points for a good circle segment approximation
+  const distance = radius * (4.0 / 3.0) * Math.tan(stepAngleRad / 4)
+
+  // Append individual segments for arc approximation
+  // steps is usually between 1 and 4
+  for (let i = 0; i < steps; i++) {
+    const startPoint = this.end()
+    const endPoint = startPoint.rotate(stepAngle, origin)
+    const startAngle = startPoint.angle(origin) - 90
+    const endAngle = endPoint.angle(origin) + 90
+    const cp1 = startPoint.shift(startAngle, distance)
+    const cp2 = endPoint.shift(endAngle, distance)
+    this.curve(cp1, cp2, endPoint)
+  }
+  return this
 }
 
 /**
