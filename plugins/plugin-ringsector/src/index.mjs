@@ -11,34 +11,9 @@ export const getIds = (keys, id) => {
 }
 
 /*
- * Helper method to calculate the arc
- */
-const roundExtended = (radius, angle = 90, utils) => {
-  const arg = utils.deg2rad(angle / 2)
-
-  return (radius * 4 * (1 - Math.cos(arg))) / Math.sin(arg) / 3
-}
-
-/*
  * Short IDs
  */
-const keys = [
-  'center',
-  'in1',
-  'in1c',
-  'in2',
-  'in2c',
-  'ex1',
-  'ex1c',
-  'ex2',
-  'ex2c',
-  'in2Flipped',
-  'in2cFlipped',
-  'in1cFlipped',
-  'ex1cFlipped',
-  'ex2cFlipped',
-  'ex2Flipped',
-]
+const keys = ['center', 'in1', 'in2', 'ex1', 'ex2', 'in2Flipped', 'ex2Flipped']
 
 /*
  * The plugin object itself
@@ -52,7 +27,7 @@ export const plugin = {
       for (const id of Object.values(store.get([...storeRoot, 'paths']))) delete paths[id]
       for (const id of Object.values(store.get([...storeRoot, 'points']))) delete points[id]
     },
-    ringsector: function (mc, { utils, Point, points, Path, paths, store }) {
+    ringsector: function (mc, { Point, points, Path, paths, store }) {
       const {
         angle,
         insideRadius,
@@ -68,21 +43,8 @@ export const plugin = {
       const ids = getIds(keys, id)
       const pathIds = getIds(['path'], id)
 
-      /**
-       * Calculates the distance of the control point for the internal
-       * and external arcs using bezierCircleExtended
-       */
-      const distIn = roundExtended(insideRadius, angle / 2, utils)
-      const distEx = roundExtended(outsideRadius, angle / 2, utils)
       // The centre of the circles
       points[ids.center] = center.copy()
-
-      /**
-       * This function is expected to draft ring sectors for
-       * angles up to 180%. Since roundExtended works
-       * best for angles until 90º, we generate the ring
-       * sector using the half angle and then duplicate it
-       */
 
       /**
        * The first point of the internal arc, situated at
@@ -91,41 +53,20 @@ export const plugin = {
       points[ids.in1] = points[ids.center].shift(-90, insideRadius)
 
       /**
-       * The control point for 'in1'. It's situated at a
-       * distance $distIn calculated with bezierCircleExtended
-       * and the line between it and 'in1' is perpendicular to
-       * the line between 'in1' and the centre, so it's
-       * shifted in the direction 0º
-       */
-      points[ids.in1c] = points[ids.in1].shift(0, distIn)
-
-      /**
        * The second point of the internal arc, situated at
        * a $insideRadius distance of the centre in the direction
        * $angle/2 - 90º
        */
       points[ids.in2] = points[ids.center].shift(angle / 2 - 90, insideRadius)
-
-      /**
-       * The control point for 'in2'. It's situated at a
-       * distance $distIn calculated with bezierCircleExtended
-       * and the line between it and 'in2' is perpendicular to
-       * the line between 'in2' and the centre, so it's
-       * shifted in the direction $angle/2 + 180º
-       */
-      points[ids.in2c] = points[ids.in2].shift(angle / 2 + 180, distIn)
-
       /**
        * The points for the external arc are generated in the
        * same way, using $outsideRadius and $distEx instead
        */
       points[ids.ex1] = points[ids.center].shift(-90, outsideRadius)
-      points[ids.ex1c] = points[ids.ex1].shift(0, distEx)
       points[ids.ex2] = points[ids.center].shift(angle / 2 - 90, outsideRadius)
-      points[ids.ex2c] = points[ids.ex2].shift(angle / 2 + 180, distEx)
 
       // Flip all the points to generate the full ring sector
-      for (const id of ['in2', 'in2c', 'in1c', 'ex1c', 'ex2c', 'ex2']) {
+      for (const id of ['in2', 'ex2']) {
         points[ids[id + 'Flipped']] = points[ids[id]].flipX(center)
       }
 
@@ -148,12 +89,9 @@ export const plugin = {
       // Construct the path of the full ring sector
       paths[pathIds.path] = new Path()
         .move(points[ids.ex2Flipped])
-        .curve(points[ids.ex2cFlipped], points[ids.ex1cFlipped], points[ids.ex1])
-        .curve(points[ids.ex1c], points[ids.ex2c], points[ids.ex2])
+        .circleSegment(angle, points[ids.center])
         .line(points[ids.in2])
-        .curve(points[ids.in2c], points[ids.in1c], points[ids.in1])
-        .curve(points[ids.in1cFlipped], points[ids.in2cFlipped], points[ids.in2Flipped])
-        .line(points[ids.ex2Flipped])
+        .circleSegment(-angle, points[ids.center])
         .close()
 
       /*
