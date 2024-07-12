@@ -3,6 +3,60 @@ import { round, Path, Point } from '../src/index.mjs'
 import { pathsProxy } from '../src/path.mjs'
 
 describe('Path', () => {
+  describe('circleSegment', () => {
+    it('Should draw a circleSegment', () => {
+      const points = {}
+      points.origin = new Point(10, 20)
+      // radius = 100
+      points.start = points.origin.shift(77, 100)
+
+      const test = new Path().move(points.start).circleSegment(90, points.origin)
+
+      const endPoint = test.end()
+      const expectedEndPoint = points.start.rotate(90, points.origin)
+
+      expect(round(endPoint.x)).to.equal(round(expectedEndPoint.x))
+      expect(round(endPoint.y)).to.equal(round(expectedEndPoint.y))
+      expect(endPoint.sitsOn(expectedEndPoint)).to.equal(true)
+      expect(Math.round(test.length())).to.equal(Math.round(Math.PI * 50))
+    })
+
+    it('Should draw a circleSegment with negative angle', () => {
+      const points = {}
+      points.origin = new Point(10, 20)
+      // radius = 100
+      points.start = points.origin.shift(-122, 100)
+
+      const test = new Path().move(points.start).circleSegment(-45, points.origin)
+
+      const endPoint = test.end()
+      const expectedEndPoint = points.start.rotate(-45, points.origin)
+
+      expect(round(endPoint.x)).to.equal(round(expectedEndPoint.x))
+      expect(round(endPoint.y)).to.equal(round(expectedEndPoint.y))
+      expect(endPoint.sitsOn(expectedEndPoint)).to.equal(true)
+      expect(Math.round(test.length())).to.equal(Math.round(Math.PI * 25))
+    })
+
+    it('Should draw a full circle', () => {
+      const points = {}
+
+      points.origin = new Point(0, 0)
+      // radius = 100
+      points.start = points.origin.shift(0, 100)
+
+      const test = new Path().move(points.start).circleSegment(360, points.origin)
+
+      const endPoint = test.end()
+
+      expect(round(endPoint.x)).to.equal(round(points.start.x))
+      expect(round(endPoint.y)).to.equal(round(points.start.y))
+      expect(endPoint.sitsOn(points.start)).to.equal(true)
+      expect(Math.round(test.length())).to.equal(Math.round(Math.PI * 200))
+      expect(test.ops.length).to.equal(5) // 1 move + 4 cubic curves
+    })
+  })
+
   describe('smurve', () => {
     it('Should draw a smurve', () => {
       const points = {}
