@@ -2,6 +2,7 @@ Unreleased:
   Added:
     core:
       - The `Path.rotate()` method was added to the core API.
+      - The `Path.circleSegment()` method was added to the core API.
 
   Changed:
     brian:
