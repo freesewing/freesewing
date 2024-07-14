@@ -89,11 +89,11 @@ export function draftCurvedWaistband({
     )
     points.centerNotch = new Path()
       .move(points.ex1Rotated)
-      .curve(points.ex1cFlippedRotated, points.ex2cFlippedRotated, points.ex2FlippedRotated)
+      .circleSegment(-(an + anExtra), points.center)
       .shiftAlong(store.get('waistbandOverlap') / 2)
     points.buttonNotch = new Path()
       .move(points.ex2Rotated)
-      .curve(points.ex2cRotated, points.ex1cRotated, points.ex1Rotated)
+      .circleSegment(an + anExtra, points.center)
       .shiftAlong(store.get('waistbandOverlap'))
     macro('sprinkle', {
       snippet: 'notch',
