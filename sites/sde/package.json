@@ -54,7 +54,7 @@
     "echarts": "5.5.1",
     "echarts-for-react": "3.0.2",
     "file-saver": "2.0.5",
-    "i18next": "23.11.5",
+    "i18next": "23.12.1",
     "jotai": "2.8.4",
     "jotai-location": "0.5.5",
     "js-yaml": "4.1.0",
