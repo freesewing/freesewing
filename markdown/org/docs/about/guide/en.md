@@ -79,7 +79,7 @@ To generate bespoke sewing patterns, we need your measurements.
 Asking for them every time would be rather tedious, so we store them in your account.
 
 Your account data is stored on our backend, subject to [our privacy notice](/docs/about/privacy),
-and with respect for [your rights](docs/about/rights/).
+and with respect for [your rights](/docs/about/rights/).
 
 </Note>
 
