@@ -22,7 +22,7 @@ Loved by home sewers and fashion entrepreneurs alike, FreeSewing provides the te
 
 FreeSewing is the brain-child of [Joost De Cock](https://github.com/joostdecock), the FreeSewing maintainer.
 Various other people have contributed to FreeSewing over the years (the
-[FreeSewing contributors](/contributors)), and the project is financially
+[FreeSewing contributors](https://github.com/freesewing/freesewing?tab=readme-ov-file#contributors-)), and the project is financially
 supported by [the FreeSewing patrons](/patrons).
 
 <Tip>
