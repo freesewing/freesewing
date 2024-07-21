@@ -35,6 +35,7 @@ export const collarBend = { pct: 3.5, min: 0, max: 10, menu: 'style.collar' }
 export const collarFlare = { deg: 3.5, min: 0, max: 10, menu: 'style.collar' }
 export const collarGap = { pct: 2.5, min: 0, max: 6, menu: 'style.collar' }
 export const collarRoll = { pct: 3, min: 0, max: 6, menu: 'style.collar' }
+export const collarWidth = { pct: 120, min: 90, max: 200, menu: 'style.collar' }
 // Collar stand
 export const collarStandBend = { deg: 3, min: 0, max: 5, menu: 'style.collar' }
 export const collarStandCurve = { deg: 2, min: 0, max: 5, menu: 'style.collar' }
