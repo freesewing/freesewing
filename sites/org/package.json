@@ -67,7 +67,7 @@
     "remark": "15.0.1",
     "remark-copy-linked-files": "git+https://git@github.com/joostdecock/remark-copy-linked-files",
     "remark-gfm": "4.0.0",
-    "remark-mdx-frontmatter": "4.0.0",
+    "remark-mdx-frontmatter": "5.0.0",
     "strip-markdown": "6.0.0",
     "use-local-storage-state": "19.3.1",
     "yaml-loader": "0.8.1"
@@ -77,7 +77,7 @@
     "js-yaml": "4.1.0",
     "postcss": "8.4.39",
     "remark-extract-frontmatter": "3.2.0",
-    "remark-mdx-frontmatter": "4.0.0",
+    "remark-mdx-frontmatter": "5.0.0",
     "tailwindcss": "3.4.6",
     "yaml-loader": "0.8.1"
   },
