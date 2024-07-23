@@ -78,7 +78,7 @@
     "postcss": "8.4.39",
     "remark-extract-frontmatter": "3.2.0",
     "remark-mdx-frontmatter": "4.0.0",
-    "tailwindcss": "3.4.4",
+    "tailwindcss": "3.4.6",
     "yaml-loader": "0.8.1"
   },
   "engines": {
