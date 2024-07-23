@@ -82,7 +82,7 @@ It is best practice to make a paper pattern from the mock-up if you have made an
 ### Bent is a block, looking for a finalised pattern?
 
 > Here are some of the patterns based on Bent:
-> [Carlton](/patterns/carlton),
-> [Carlita](/patterns/carlita),
+> [Carlton](/designs/carlton),
+> [Carlita](/designs/carlita),
 > and
-> [Jaeger](/patterns/jaeger).
+> [Jaeger](/designs/jaeger).
