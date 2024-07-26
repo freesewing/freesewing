@@ -107,7 +107,7 @@ control each quarter individually.
 
 We now have all the start and end points to draw the 5 curves that will make up our sleevecaps.
 What we're missing are the control points
-(see [our info on Bézier curves](https://freesewing.dev/concepts/beziercurves) to learn more
+(see [our info on Bézier curves](https://freesewing.dev/guides/prerequisites/bezier-curves) to learn more
 about how curves are constructed). These are determined by the so-called _spread_.
 
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option
