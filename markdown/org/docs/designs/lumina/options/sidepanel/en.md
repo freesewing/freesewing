@@ -1,15 +1,7 @@
 ---
-title: "Side panel"
+title: "Side panel size"
 ---
 
 ***
 
-Have either a fixed width side panel, or one that follows the contours of the legs.
-
-<Note>
-Even a fixed width side panel will taper towards the ankle
-</Note>
-
-
-
-
+Size (width) of the side panel. This is a percentage of the waist circumference.
