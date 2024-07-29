@@ -6,7 +6,7 @@ title: "Tiberius Tunica: Cutting Instructions"
 
 ##### Use the power of the _paperless_ option - do _not_ print this pattern
 
-Tiberius is just a big rectangle, so printing the pattern out is a bit of a waste. Save a tree, toggle the [paperless](/docs/guide/options/paperless) option, and copy the dimensions to your fabric, while respecting the grainline.
+Tiberius is just a big rectangle, so printing the pattern out is a bit of a waste. Save a tree, toggle the [paperless](/docs/about/site/draft/core-settings/paperless) option, and copy the dimensions to your fabric, while respecting the grainline.
 
 </Tip>
 
