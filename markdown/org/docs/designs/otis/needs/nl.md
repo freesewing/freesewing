@@ -5,7 +5,7 @@ title: "Otis, de eenvoudige baby romper: Wat je nodig hebt"
 Om Otis te maken heb je het volgende nodig:
 
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-- Ongeveer 1 meter van een geschikte stof ([zie Otis stofopties](/docs/patterns/otis/fabric/))
+- Ongeveer 1 meter van een geschikte stof ([zie Stofopties](/docs/designs/otis/fabric/))
 - 3 snaps.
 - Een beetje vlieseline als je stof erg rekbaar is.
 
