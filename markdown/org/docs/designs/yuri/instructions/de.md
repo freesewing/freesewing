@@ -42,7 +42,7 @@ If using a overlocker/serger you can sew seams which need finishing in one go ra
 
 <Note>
 
-Auf dem Schnittmuster ist die hintere Kerbe als Kreuzkerbe gekennzeichnet (siehe [unsere Anleitung zur Schnittmusternotation](/docs/about/notation/notches/)). Es wird empfohlen, dies zu einer doppelten Note zu machen, wenn Sie Ihre Teile ausschneiden, um die Rückseite leichter von der Vorderseite zu unterscheiden.
+On the pattern the back notch is marked as a cross-notch (see [our pattern notation guide](/docs/about/notation#notches)). Es wird empfohlen, dies zu einer doppelten Note zu machen, wenn Sie Ihre Teile ausschneiden, um die Rückseite leichter von der Vorderseite zu unterscheiden.
 
 </Note>
 
