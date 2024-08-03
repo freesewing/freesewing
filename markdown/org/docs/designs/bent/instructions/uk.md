@@ -81,4 +81,4 @@ title: "Блок для викрійки тіла зігнутої форми: �
 
 ### Бент - це блок, шукаєте завершений візерунок?
 
-> Here are some of the patterns based on Bent: [Carlton](/patterns/carlton), [Carlita](/patterns/carlita), and [Jaeger](/patterns/jaeger).
+> Here are some of the patterns based on Bent: [Carlton](/designs/carlton), [Carlita](/designs/carlita), and [Jaeger](/designs/jaeger).
