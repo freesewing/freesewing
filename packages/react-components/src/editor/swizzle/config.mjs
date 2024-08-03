@@ -141,6 +141,13 @@ export const defaultConfig = {
     },
     locale: 'en',
   },
+  loadingStatus: {
+    timeout: 2,
+    defaults: {
+      color: 'secondary',
+      icon: 'Spinner',
+    },
+  },
 }
 
 /*

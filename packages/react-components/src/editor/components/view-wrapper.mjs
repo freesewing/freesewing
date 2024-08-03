@@ -21,9 +21,15 @@ export const ViewWrapper = ({
   design = false,
   Swizzled,
 }) => {
+  /*
+   * Ephemeral state will not be stored in the state backend
+   * It is used for things like loading state and so on
+   */
+  const [ephemeralState, setEphemeralState] = useState({})
   // Editor state
   const [state, setState, update] = Swizzled.hooks.useEditorState(
-    Swizzled.methods.initialEditorState(preload, { locale })
+    Swizzled.methods.initialEditorState(preload),
+    setEphemeralState
   )
 
   // Don't bother before state is initialized
@@ -45,8 +51,8 @@ export const ViewWrapper = ({
    */
   const passDownState =
     state.ui.ux === undefined
-      ? { ...state, ui: { ...state.ui, ux: Swizzled.config.defaultState.ui } }
-      : state
+      ? { ...state, ui: { ...state.ui, ux: Swizzled.config.defaultState.ui }, _: ephemeralState }
+      : { ...state, _: ephemeralState }
 
   return (
     <div className="flex flex-row items-top">
@@ -60,6 +66,7 @@ export const ViewWrapper = ({
             : 'grow w-full'
         }
       >
+        <Swizzled.components.LoadingStatus state={passDownState} update={update} />
         <View {...extraProps} {...{ update, designs }} state={passDownState} />
       </div>
     </div>

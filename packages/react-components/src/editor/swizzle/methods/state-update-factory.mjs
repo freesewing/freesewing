@@ -1,7 +1,7 @@
 /*
  * This creates the helper object for state updates
  */
-export const stateUpdateFactory = (Swizzled, setState) => ({
+export const stateUpdateFactory = (Swizzled, setState, setEphemeralState) => ({
   /*
    * This allows raw access to the entire state object
    */
@@ -54,4 +54,43 @@ export const stateUpdateFactory = (Swizzled, setState) => ({
       return newState
     }),
   clearAll: () => setState(Swizzled.config.initialState),
+  /*
+   * These are setters for the ephemeral state which is passed down as part of the
+   * state object, but is not managed in the state backend because it's ephemeral
+   */
+  startLoading: (id, val) =>
+    setEphemeralState((cur) => {
+      const newState = { ...cur }
+      if (typeof newState.loading !== 'object') newState.loading = {}
+      newState.loading[id] = val
+      return newState
+    }),
+  stopLoading: (id) =>
+    setEphemeralState((cur) => {
+      const newState = { ...cur }
+      if (typeof newState.loading[id] !== 'undefined') delete newState.loading[id]
+      return newState
+    }),
+  clearLoading: (id) => setEphemeralState((cur) => ({ ...cur, loading: {} })),
+  notify: (conf) =>
+    setEphemeralState((cur) => {
+      const newState = { ...cur }
+      if (typeof newState.loading !== 'object') newState.loading = {}
+      const id = Date.now()
+      newState.loading[id] = { ...conf, id, fadeTimer: 4000 }
+      return newState
+    }),
+  fadeNotify: (id) =>
+    setEphemeralState((cur) => {
+      const newState = { ...cur }
+      newState.loading[id] = { ...newState.loading[id], clearTimer: 600, id, fading: true }
+      delete newState.loading[id].fadeTimer
+      return newState
+    }),
+  clearNotify: (id) =>
+    setEphemeralState((cur) => {
+      const newState = { ...cur }
+      if (typeof newState.loading[id] !== 'undefined') delete newState.loading[id]
+      return newState
+    }),
 })

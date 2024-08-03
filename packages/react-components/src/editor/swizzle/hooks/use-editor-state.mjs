@@ -12,9 +12,12 @@ import { useSearchParams } from 'next/navigation'
  * @params {object} init - Initial pattern settings
  * @return {array} return - And array with get, set, and update methods
  */
-export const useReactEditorState = (Swizzled, init = {}) => {
+export const useReactEditorState = (Swizzled, init = {}, setEphemeralState) => {
   const [state, setState] = useState(init)
-  const update = useMemo(() => Swizzled.methods.stateUpdateFactory(setState), [setState])
+  const update = useMemo(
+    () => Swizzled.methods.stateUpdateFactory(setState, setEphemeralState),
+    [setState]
+  )
 
   return [state, setState, update]
 }
@@ -27,9 +30,12 @@ export const useReactEditorState = (Swizzled, init = {}) => {
  * @params {object} init - Initial pattern settings
  * @return {array} return - And array with get, set, and update methods
  */
-export const useStorageEditorState = (Swizzled, init = {}) => {
+export const useStorageEditorState = (Swizzled, init = {}, setEphemeralState) => {
   const [state, setState] = useLocalStorageState('fs-editor', { defaultValue: init })
-  const update = useMemo(() => Swizzled.methods.stateUpdateFactory(setState), [setState])
+  const update = useMemo(
+    () => Swizzled.methods.stateUpdateFactory(setState, setEphemeralState),
+    [setState]
+  )
 
   return [state, setState, update]
 }
@@ -42,9 +48,12 @@ export const useStorageEditorState = (Swizzled, init = {}) => {
  * @params {object} init - Initial pattern settings
  * @return {array} return - And array with get, set, and update methods
  */
-export const useSessionEditorState = (Swizzled, init = {}) => {
+export const useSessionEditorState = (Swizzled, init = {}, setEphemeralState) => {
   const [state, setState] = useSessionStorageState('fs-editor', { defaultValue: init })
-  const update = useMemo(() => Swizzled.methods.stateUpdateFactory(setState), [setState])
+  const update = useMemo(
+    () => Swizzled.methods.stateUpdateFactory(setState, setEphemeralState),
+    [setState]
+  )
 
   return [state, setState, update]
 }
@@ -57,10 +66,13 @@ export const useSessionEditorState = (Swizzled, init = {}) => {
  * @params {object} init - Initial pattern settings
  * @return {array} return - And array with get, set, and update methods
  */
-export const useUrlEditorState = (Swizzled, init = {}) => {
+export const useUrlEditorState = (Swizzled, init = {}, setEphemeralState) => {
   const searchParams = useSearchParams()
   const [state, setState] = useQueryState('s', pojoParser)
-  const update = useMemo(() => Swizzled.methods.stateUpdateFactory(setState), [setState])
+  const update = useMemo(
+    () => Swizzled.methods.stateUpdateFactory(setState, setEphemeralState),
+    [setState]
+  )
 
   /*
    * Set the initial state

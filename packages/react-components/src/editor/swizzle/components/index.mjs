@@ -81,6 +81,7 @@ import {
   SaIcon,
   SaveIcon,
   SettingsIcon,
+  SpinnerIcon,
   TrashIcon,
   UiIcon,
   UnitsIcon,
@@ -191,6 +192,7 @@ import {
 import { Null } from './null.mjs'
 import { LargeScreenOnly } from './large-screen-only.mjs'
 import { Tooltip } from './tooltip.mjs'
+import { LoadingStatus } from './loading-status.mjs'
 
 /**
  * This object holds all components that can be swizzled
@@ -236,6 +238,7 @@ const defaultComponents = {
   LargeScreenOnly,
   Link,
   ListInput,
+  LoadingStatus,
   MarkdownInput,
   MeasurementInput,
   MeasurementsSetCard,
@@ -249,6 +252,7 @@ const defaultComponents = {
   Popout,
   StringInput,
   SubAccordion,
+  SpinnerIcon,
   TemporaryLoader,
   ToggleInput,
   Tooltip,
