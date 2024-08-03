@@ -1,9 +1,9 @@
 ---
-title: "Suit!!!!!!!!!!!!!!!!!!!"
+title: "I made a Suit!"
 caption: "I made a suit!"
 date: 20240730
 intro: "A suit using the Jeager Jacket and Charlie Chinos patters. The main fabric is a silk noil, and the liner is silk as well."
-author: Tinker-Tim-The-Toolman-Taylor-Soldier-Spy
+author: 62144
 designs: ["jaeger", "charlie"]
 ---
 
