@@ -2,6 +2,6 @@
 title: "Taillenzugabe"
 ---
 
-Wenn (und nur wenn) du [die Taille anpassen möchtest](/docs/designs/teagan/options/curvetowaist), kannst du mit dieser Option den Grad der Erleichterung in der Taille einstellen.
+If (and only if) you request to [fit the waist](/docs/designs/teagan/options/fitwaist), this option allows you to control the amount of ease at the waist.
 
 Wenn die Taille nicht angepasst ist, wird diese Option ignoriert.
