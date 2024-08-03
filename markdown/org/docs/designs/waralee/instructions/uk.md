@@ -6,7 +6,7 @@ title: "Штани з запахом Waralee: Інструкція з пошит
 
 ##### Ключовим елементом Waralee є пояс
 
-По суті, Waralee - це просто пояс з прикріпленим до нього довгим шматком тканини. Пояс потрібно продовжити з тканини в дві нитки, які використовуються для зав'язування штанів спереду і дві ззаду. Ці рядки не включені в шаблон. Традиційно вони мають однакову довжину. Ви можете зробити довші для передньої панелі (сторона, яка трохи коротша за іншу, зліва на ілюстраціях нижче), щоб можна було зав'язати обидва комплекти спереду. Я віддаю перевагу цьому варіанту, оскільки його легше зав'язувати, і основна частина вузла не припадає на спину.
+По суті, Waralee - це просто пояс з прикріпленим до нього довгим шматком тканини. The waist band needs to continue from the fabric into two straps of fabric that are used to tie the pants in the front and two in the back. These straps are pieces 7 and 8 in the pattern. Традиційно вони мають однакову довжину. I made longer ones for the front panel (the side that is a little shorter than the other, on the left in the illustrations below), to allow you to tie both sets in the front. Я віддаю перевагу цьому варіанту, оскільки його легше зав'язувати, і основна частина вузла не припадає на спину.
 
 </Warning>
 
@@ -102,28 +102,18 @@ title: "Штани з запахом Waralee: Інструкція з пошит
 - Накладіть дві деталі штанів одна на одну _лицьовими сторонами разом_ і прошийте шов вздовж вирізу.
 - _Виконайте_ цей шов і припрасуйте.
 
-### Крок 4: Підготуйте чотири струни
+### Step 4: Prepare the four straps
 
-Струни - це просто довгі трубки з тканини.
+The straps are just long tubes of fabric.
 
-- Візьміть чверть обхвату талії. Додайте це число до 40 см (17"). Додайте припуски на шви. Це довжина кожного рядка.
-- Виріжте чотири смужки тканини такої довжини і шириною 5 см (2 дюйми).
-
-<Tip>
-
-Наприклад, якщо мій обхват талії 84,6 см: 84,6 см розділити на 4 - 21,2 см. 21,2 см плюс 40 см - 61,2 см. 61,2 см плюс припуск на шви в 1 см - 62,2 см. Я вирізаю чотири смужки тканини розміром 62,2 см на 5 см.
-
-</Tip>
+If you printed them, just cut them out. If not, the *Messages from the designer* will have a note about their sizes.
 
 <Note>
 
-##### Ви можете подовжити передні зав'язки
+##### Traditionally, the straps are the same size
 
-За бажанням, щоб зробити передні зав'язки довшими, подовжте їх на чверть обхвату талії.
-
-При створенні викрійки один з варіантів стилю називається "Пояс". Складені струни повинні мати ту саму ширину, яку ви вказали для цієї опції, 2,5 см (1") за замовчуванням.
-
-Додаткові 40 см (17") довжини потрібні для того, щоб зробити вузол.
+The straps in this design have a longer and a shorter pair. Traditionally the straps are tied both in the front and in the back. 
+I find the more aesthetically pleasing to tie both in the front. And it removes the knot in the back, which can be uncomfortable.
 
 Якщо ваш матеріал делікатний або крихкий, ви можете додати до нього прокладку, щоб надати йому міцності.
 
@@ -149,14 +139,14 @@ title: "Штани з запахом Waralee: Інструкція з пошит
 
 - Якщо ваша тканина делікатна, додайте прокладку на виворітний бік штанів над лінією пояса. (червоний)
 - Припуски швів підверніть всередину, а потім складіть по лінії пояса. (червоний)
-- Вставте по одній нитці, яку ви зробили на попередньому кроці, з обох боків.
-- Прошийте по лінії пояса і зробіть кілька додаткових стібків, щоб переконатися, що нитки добре закріплені. (синій)
+- Insert one of the straps you made in the previous step on each side.
+- Sew along the waist band line, and add some additional stitching to make sure those straps are attached well. (синій)
 
 <Warning>
 
-##### Добре закріпіть шнурки
+##### Secure the straps well
 
-Шнурки утримують ваші штани, тому якщо шов не буде закріплений, це призведе до незручних моментів.
+The straps keep your pants up, so having that stitching fail will result in awkward moments.
 
 </Warning>
 
@@ -164,7 +154,7 @@ title: "Штани з запахом Waralee: Інструкція з пошит
 
 Притисніть штани і приміряйте їх!
 
-Притисніть лицьову сторону до живота, оберніть обидві нитки навколо себе і зав'яжіть ззаду (або, якщо у вас довгі нитки, оберніть їх навколо себе і зав'яжіть спереду). Потім протягніть задню сторону через ноги до себе і зав'яжіть інші нитки спереду.
+Hold the front side against your belly and wrap both straps around you and tie in the back (or, if you have long straps, wrap them all the way around you and tie in the front). Then hand the back side through your legs to yourself and tie the other straps in the front.
 
 Ось стаття, що демонструє, як зав'язати штани-обгортки: [Як зав'язати штани-обгортки](https://www.wikihow.com/Tie-Wrap-Pants)
 
