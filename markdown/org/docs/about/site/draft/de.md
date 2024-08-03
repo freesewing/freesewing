@@ -10,7 +10,7 @@ Diese Umgebung bietet eine Vielzahl von Funktionen, die wir auf diesen Seiten er
 
 ## Der Herausgeber
 
-Unten siehst du einen Screenshot des Schnittmuster-Editors von FreeSewing im [Kioskmodus](/docs/about/site/draft/ui-settings/kiosk) , der die Kopf- und Fußzeile der Website ausblendet und den Editor den gesamten Bildschirm einnehmen lässt. Außerdem ist das Menü **Ansicht** (auf der linken Seite) erweitert. Standardmäßig siehst du nur die Symbole, aber nicht den Text des Menüs auf der linken Seite.
+Unten siehst du einen Screenshot des Schnittmuster-Editors von FreeSewing im **Kioskmodus** , der die Kopf- und Fußzeile der Website ausblendet und den Editor den gesamten Bildschirm einnehmen lässt. Außerdem ist das Menü **Ansicht** (auf der linken Seite) erweitert. Standardmäßig siehst du nur die Symbole, aber nicht den Text des Menüs auf der linken Seite.
 
 ![Screenshot des Schnittmuster-Editors von FreeSewing](editor.png "Screenshot des Muster-Editors von Freesewing")
 
