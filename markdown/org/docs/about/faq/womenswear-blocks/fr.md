@@ -6,7 +6,7 @@ Cette question revient de temps à autres. L'expression varie, mais on peut rés
 
 Commençons par dire que ce n'est pas faux. À la fois [Breanna](/designs/breanna/) et [Bella](/designs/bella/) présentent de sérieuses lacunes.
 
-Moi-même ([joost](/makers/joostdecock/)) en suis douloureusement conscient, et j'ai flirté avec l'idée de totalement retirer ces patrons.
+Moi-même ([joost](/users/user?id=1)) en suis douloureusement conscient, et j'ai flirté avec l'idée de totalement retirer ces patrons.
 
 Mais il y a une minorité de personnes qui en obtiennent de bons résultats. J'ai vu plusieurs belles réalisations basées sur Bella, et Breanna semble être populaire auprès des gens qui fabriquent des vêtements de poupées pour une raison quelconque.
 
