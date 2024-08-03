@@ -6,7 +6,7 @@ title: "Waralee wrap pants: Sewing Instructions"
 
 ##### The key to Waralee is the waist band
 
-In a way, Waralee is just a waist band with a long piece of fabric attached. The waist band needs to continue from the fabric into two strings of fabric that are used to tie the pants in the front and two in the back. These strings are not included in the pattern. Traditionally, they are of similar length. You can make longer ones for the front panel (the side that is a little shorter than the other, on the left in the illustrations below), to allow you to tie both sets in the front. I prefer this as it is easier to tie, and you don't have the bulk of the knot in the back.
+In a way, Waralee is just a waist band with a long piece of fabric attached. The waist band needs to continue from the fabric into two straps of fabric that are used to tie the pants in the front and two in the back. These straps are pieces 7 and 8 in the pattern. Traditionally, they are of similar length. I made longer ones for the front panel (the side that is a little shorter than the other, on the left in the illustrations below), to allow you to tie both sets in the front. I prefer this as it is easier to tie, and you don't have the bulk of the knot in the back.
 
 </Warning>
 
@@ -102,28 +102,18 @@ Now you get to sew the two pants parts together.
 - Lay the two pants parts on top of one another with _good sides together_ and sew the seam along the cutout.
 - _Finish_ this seam and press it.
 
-### Step 4: Prepare the four strings
+### Step 4: Prepare the four straps
 
-The strings are just long tubes of fabric.
+The straps are just long tubes of fabric.
 
-- Take a quarter of your waist measurement. Add that number to 40cm (17”). Add your seam allowance. This is the length of each string.
-- Cut out four strips of fabric that are that long and 5cm (2”) wide.
-
-<Tip>
-
-For example, if my waist circumference is 84.6cm: 84.6cm divided by 4 is 21.2cm. 21.2cm plus 40cm is 61.2cm. 61.2cm plus my seam allowance of 1cm is 62.2cm. I will cut four strips of fabric that are 62.2cm by 5cm.
-
-</Tip>
+If you printed them, just cut them out. If not, the *Messages from the designer* will have a note about their sizes.
 
 <Note>
 
-##### You can lengthen the front ties
+##### Traditionally, the straps are the same size
 
-Optionally, to make the front ties longer, extend them by your quarter waist measurement.
-
-When generating your pattern, one of the style options is called “Waist Band”. The strings, when folded, should have the same width as you specified for that option, 2.5cm (1") by default.
-
-The extra 40cm (17") of length is to make the knot.
+The straps in this design have a longer and a shorter pair. Traditionally the straps are tied both in the front and in the back. 
+I find the more aesthetically pleasing to tie both in the front. And it removes the knot in the back, which can be uncomfortable.
 
 If your material is delicate or flimsy, you can add some interfacing to this to give it strength.
 
@@ -149,14 +139,14 @@ Now it is time to sew the waist band.
 
 - If your fabric is delicate, add interfacing to the wrong side of the pants above the waist band line. (red)
 - Fold the seam allowance in, and then fold along the waist band line. (red)
-- Insert one of the strings you made in the previous step on each side.
-- Sew along the waist band line, and add some additional stitching to make sure those strings are attached well. (blue)
+- Insert one of the straps you made in the previous step on each side.
+- Sew along the waist band line, and add some additional stitching to make sure those straps are attached well. (blue)
 
 <Warning>
 
-##### Secure the strings well
+##### Secure the straps well
 
-The strings keep your pants up, so having that stitching fail will result in awkward moments.
+The straps keep your pants up, so having that stitching fail will result in awkward moments.
 
 </Warning>
 
@@ -164,7 +154,7 @@ The strings keep your pants up, so having that stitching fail will result in awk
 
 Press your pants, and try them on!
 
-Hold the front side against your belly and wrap both strings around you and tie in the back (or, if you have long strings, wrap them all the way around you and tie in the front). Then hand the back side through your legs to yourself and tie the other strings in the front.
+Hold the front side against your belly and wrap both straps around you and tie in the back (or, if you have long straps, wrap them all the way around you and tie in the front). Then hand the back side through your legs to yourself and tie the other straps in the front.
 
 Here is an article demonstrating how to tie wrap pants: [How to Tie Wrap Pants](https://www.wikihow.com/Tie-Wrap-Pants)
 
