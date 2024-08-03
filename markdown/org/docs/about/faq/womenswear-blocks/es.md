@@ -6,7 +6,7 @@ Esta pregunta aparece de vez en cuando. The wording varies, but the sentiment ca
 
 Os digo, algo de razón hay. Tanto [Breanna](/designs/breanna/) como [Bella](/designs/bella/) tienen defectos importantes.
 
-I myself ([joost](/makers/joostdecock/)) am painfully aware of them, and I have toyed with the idea of retracting these patterns altogether.
+I myself ([joost](/users/user?id=1)) am painfully aware of them, and I have toyed with the idea of retracting these patterns altogether.
 
 Pero hay un subconjunto de gente que consigue buenos resultados con ellos. He visto bastantes trabajos muy bonitos basados on Bella, y por algún motivo Breanna parece ser popular con gente que hace ropa de muñecas.
 
