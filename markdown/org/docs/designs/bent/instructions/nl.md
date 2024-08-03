@@ -82,4 +82,4 @@ Het is het beste om een papieren patroon te maken van de mock-up als je wijzigin
 
 ### Bent is een blok, op zoek naar een afgerond patroon?
 
-> Here are some of the patterns based on Bent: [Carlton](/patterns/carlton), [Carlita](/patterns/carlita), and [Jaeger](/patterns/jaeger).
+> Here are some of the patterns based on Bent: [Carlton](/designs/carlton), [Carlita](/designs/carlita), and [Jaeger](/designs/jaeger).
