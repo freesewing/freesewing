@@ -24,7 +24,7 @@ Circle skirts can look very different dependant on these things and whether you 
 
 <Note>
 
-Need some inspo? check out [Sandy's showcase](/showcase/designs/sandy/) page and see some finished Sandy's made by our wonderful community.
+Need some inspo? check out [Sandy's showcase](/showcase#filter="sandy") page and see some finished Sandy's made by our wonderful community.
 
 </Note>
 

@@ -11,7 +11,7 @@ This environment provides a wide range of features, and on these pages we will e
 
 ## The editor 
 
-Below is a screenshot of FreeSewing's pattern editor in [kiosk mode](/docs/about/site/draft/ui-settings/kiosk) which hides the site header and footer and lets the editor take up the entire screen. It also has the **View menu** (on the left) expanded. By default you will only see the icons, and not the text of the menu on the left.
+Below is a screenshot of FreeSewing's pattern editor in **kiosk mode** which hides the site header and footer and lets the editor take up the entire screen. It also has the **View menu** (on the left) expanded. By default you will only see the icons, and not the text of the menu on the left.
 
 ![Screenshot of FreeSewing's pattern editor](editor.png "Screenshot of Freesewing's pattern editor")
 

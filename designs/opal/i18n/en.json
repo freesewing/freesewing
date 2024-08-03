@@ -158,6 +158,14 @@
       "t": "Bib pocket on fold",
       "d": "Toggles whether to draft the bib pocket pattern on-the-fold, or as a full pattern piece."
     },
+    "bibPocketOnFoldNo": {
+      "t": "Full piece",
+      "d": "Draft the bib pocket as a full pattern piece."
+    },
+    "bibPocketOnFoldYes": {
+      "t": "On-the-fold",
+      "d": "Draft the bib pocket on-the-fold."
+    },
     "bibPlacketWidth": {
       "t": "Bib placket width",
       "d": "Controls how wide to make the placket at the top of the front bib."
