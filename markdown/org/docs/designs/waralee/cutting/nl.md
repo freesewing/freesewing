@@ -18,11 +18,16 @@ Je moet de zakken en zakomslagen op de traditionele manier uitprinten.
 ### Materialen
 
 - **Buitenstof**
-  - Snijd **2 broek** delen.
-  - (Optioneel) Knip **2 Pocket** delen op de vouw uit.
-  - Snijd **4 backPocket** onderdelen
+  - Cut **2 pants** parts.
+  - Cut **2 long strap** parts.
+  - Cut **2 short strap** parts.
+
+Optional (pockets) **Main fabric**
   - Snijd **4 voorwaarts gerichte** delen.
-  - Snijd **4 backFacing** delen.
+  - Cut **4 backFacing** parts **Lining fabric**
+  - Cut **2 frontPocket** parts on the fold.
+  - Snijd **4 backPocket** onderdelen
+
 
 <Note>
 
@@ -42,4 +47,5 @@ Je moet een smalle strook uitknippen uit wat het voorpand zal worden, en een kle
 En in het midden hiertussen zal het kleine uitgeknipte patroonstuk zijn.
 Zorg ervoor dat je dit goed meet en je hebt de stof gekruist voordat je begint te knippen.
 
+Of course, you'll need to cut out the straps too. They're just simple long rectangles. 
 </Tip>
