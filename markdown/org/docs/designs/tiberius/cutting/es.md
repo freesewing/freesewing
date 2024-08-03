@@ -6,7 +6,7 @@ title: "Tiberio Tunica: Instrucciones de corte"
 
 ##### Utiliza el poder de la opción _paperless_ (sin papel) - no imprimas este patrón
 
-Tiberio es sólo un gran rectángulo, por lo que imprimir el patrón es un poco un desperdicio. Guarda un árbol, activa la opción [paperless](/docs/guide/options/paperless) y copia las dimensiones en tu tejido, respetando la línea de grano.
+Tiberio es sólo un gran rectángulo, por lo que imprimir el patrón es un poco un desperdicio. Save a tree, toggle the [paperless](/docs/about/site/draft/core-settings/paperless) option, and copy the dimensions to your fabric, while respecting the grainline.
 
 </Tip>
 
