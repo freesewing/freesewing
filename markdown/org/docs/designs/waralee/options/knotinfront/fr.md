@@ -2,4 +2,4 @@
 title: "Nœud sur le devant"
 ---
 
-Normalement, le Waralee est fermé avec la cravate sur le devant. This allows you to change that to a bow tie in the back.
+Normally the Waralee is closed with all straps tied in the front. This allows you to change that to a set tied in the front and in the back, the traditional way.
