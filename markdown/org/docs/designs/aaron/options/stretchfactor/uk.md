@@ -8,7 +8,7 @@ title: "Еластичність"
 
 > ##### Ця опція впливає лише на розтягнення в один бік (по горизонталі).
 > 
-> Four-way stretch is not really a concern for this top, but if you want you can play with the [length bonus](../lengthbonus) option.
+> Four-way stretch is not really a concern for this top, but if you want you can play with the [length bonus](lengthbonus) option.
 
 
 
