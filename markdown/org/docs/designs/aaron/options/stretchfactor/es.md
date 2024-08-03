@@ -8,7 +8,7 @@ title: "Extensión"
 
 > ##### Esta opción sólo afecta a la corriente de una sola vía (horizontal).
 > 
-> Four-way stretch is not really a concern for this top, but if you want you can play with the [length bonus](../lengthbonus) option.
+> Four-way stretch is not really a concern for this top, but if you want you can play with the [length bonus](lengthbonus) option.
 
 
 
