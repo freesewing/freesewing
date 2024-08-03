@@ -6,7 +6,7 @@ Diese Frage stellt sich von Zeit zu Zeit. Der Wortlaut ist unterschiedlich, aber
 
 Lass mich damit anfangen, dass du da nicht falsch liegst. Sowohl [Breanna](/designs/breanna/) als auch [Bella](/designs/bella/) weisen gravierende Mängel auf.
 
-Ich selbst ([Joost](/makers/joostdecock/)) bin mir dessen schmerzlichst bewusst, und habe häufiger in Erwägung gezogen, diese Schnittmuster vollständig zurückzuziehen.
+Ich selbst ([Joost](/users/user?id=1)) bin mir dessen schmerzlichst bewusst, und habe häufiger in Erwägung gezogen, diese Schnittmuster vollständig zurückzuziehen.
 
 Aber es gibt eine Teilmenge von Leuten, die mit ihnen gute Ergebnisse erzielen. Ich habe mehrere gut aussehende Kreationen gesehen, die auf Bella basieren, und Breanna scheint aus irgendeinem Grund bei Leuten beliebt zu sein, die Puppenkleidung nähen.
 
