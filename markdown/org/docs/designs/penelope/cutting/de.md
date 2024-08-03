@@ -23,7 +23,7 @@ Deshalb wird in der Zuschnittliste nicht angegeben, wie viele Rückenteile gesch
 
 <Note>
 
-[Siehe Penelope-Anleitung](docs/patterns/penelope/instructions/#lining), um zu verstehen, welche Änderungen an den Vorder- und Rückenteilen für das Futter erforderlich sind.
+[See Penelope Instructions](/docs/designs/penelope/instructions/#lining) to understand alterations to the front and back parts required for the lining.
 
 </Note>
 
