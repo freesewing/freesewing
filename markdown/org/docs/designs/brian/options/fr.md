@@ -82,7 +82,7 @@ Comme l'option d'offset, les dernières options pour déterminer la forme de not
 
 ![Contrôle des points d'ancrage](sleevecapspread.svg)
 
-Nous disposons maintenant de tous les points de départ et d'arrivée pour dessiner les 5 courbes qui constitueront nos capuchons de manche. What we're missing are the control points (see [our info on Bézier curves](https://freesewing.dev/concepts/beziercurves) to learn more about how curves are constructed). Celles-ci sont déterminées par ce que l'on appelle _répartition_.
+Nous disposons maintenant de tous les points de départ et d'arrivée pour dessiner les 5 courbes qui constitueront nos capuchons de manche. What we're missing are the control points (see [our info on Bézier curves](https://freesewing.dev/guides/prerequisites/bezier-curves) to learn more about how curves are constructed). Celles-ci sont déterminées par ce que l'on appelle _répartition_.
 
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option to control the spread upwards, and downwards:
 
