@@ -40,7 +40,7 @@ const ProfilePage = ({ page }) => {
       <DynamicAuthWrapper>
         <DynamicAccountProfile />
         <Popout link compact>
-          <PageLink href={`/users/${account.username}`} txt={`/users/${account.username}`} />
+          <PageLink href={`/users/user?id=${account.id}`} txt={`/users/user?id=${account.id}`} />
         </Popout>
       </DynamicAuthWrapper>
       <BackToAccountButton />

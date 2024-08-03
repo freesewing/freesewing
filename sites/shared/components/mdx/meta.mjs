@@ -21,7 +21,7 @@ const PersonList = ({ list }) =>
       {list.map((id) => (
         <li key={id}>
           {allAuthors[id] ? (
-            <PageLink href={`/users/${allAuthors[id].id}`} txt={allAuthors[id].name} />
+            <PageLink href={`/users/user?id=${allAuthors[id].id}`} txt={allAuthors[id].name} />
           ) : (
             <span className="font-medium">{id}</span>
           )}
