@@ -6,7 +6,7 @@ title: "Pantalones Waralee: Instrucciones de costura"
 
 ##### La clave de Waralee es la banda de cintura
 
-de alguna manera, Waralee es sólo una banda de cintura con un largo trozo de tejido adjunto. La banda de cintura debe continuar de la tela a dos cuerdas de tela que se utilizan para atar los pantalones en la parte delantera y dos en la espalda. Estas cadenas no están incluidas en el patrón. Tradicionalmente, tienen una longitud similar. Puedes hacer más largas para el panel frontal (el lado que es un poco más corto que el otro, en la izquierda en las ilustraciones de abajo), para permitirle atar ambos conjuntos en el frente. Prefiero esto ya que es más fácil de atar, y usted no tiene la mayor parte del nudo en la espalda.
+de alguna manera, Waralee es sólo una banda de cintura con un largo trozo de tejido adjunto. The waist band needs to continue from the fabric into two straps of fabric that are used to tie the pants in the front and two in the back. These straps are pieces 7 and 8 in the pattern. Tradicionalmente, tienen una longitud similar. I made longer ones for the front panel (the side that is a little shorter than the other, on the left in the illustrations below), to allow you to tie both sets in the front. Prefiero esto ya que es más fácil de atar, y usted no tiene la mayor parte del nudo en la espalda.
 
 </Warning>
 
@@ -102,28 +102,18 @@ Ahora tienes que coser las dos partes del pantalón.
 - Coloca las dos partes del pantalón una encima de la otra con _los lados bien juntos_ y cose la costura a lo largo del recorte.
 - _Termina_ esta costura y presiónala.
 
-### Paso 4: Prepara las cuatro cadenas
+### Step 4: Prepare the four straps
 
-Las cuerdas son sólo tubos largos de tejido.
+The straps are just long tubes of fabric.
 
-- Tome una cuarta parte de su medida de cintura. Añadir ese número a 40cm (17”). Añade tu franquicia de costura. Es la longitud de cada cadena.
-- Cortar cuatro tiras de tela que son de tan largo y 5 cm (2”) de largo.
-
-<Tip>
-
-Por ejemplo, si mi circunstancia de cintura es 84.6cm: 84.6cm dividido por 4 es 21.2cm. 21,2cm más 40cm es 61,2cm. 61,2 cm más mi franquicia de costura de 1 cm es 62,2cm. Cortaré cuatro tiras de tela de 62,2 cm en 5cm.
-
-</Tip>
+If you printed them, just cut them out. If not, the *Messages from the designer* will have a note about their sizes.
 
 <Note>
 
-##### Puedes alargar los lazos frontales
+##### Traditionally, the straps are the same size
 
-Opcionalmente, para hacer los lazos frontales más largos, agrandarlos con la medida de cintura de tu cuarto.
-
-Al generar tu patrón, una de las opciones de estilo se llama “Waist Band”. Las cadenas, cuando se doblan, deben tener el mismo ancho que ha especificado para esa opción, 2,5cm (1") por defecto.
-
-El extra de 40cm (17") de longitud es hacer el nudo.
+The straps in this design have a longer and a shorter pair. Traditionally the straps are tied both in the front and in the back. 
+I find the more aesthetically pleasing to tie both in the front. And it removes the knot in the back, which can be uncomfortable.
 
 Si su material es delicado o endeble, puede añadir alguna interfaz para darle fuerza.
 
@@ -149,14 +139,14 @@ Ahora es el momento de coser la banda de cintura.
 
 - Si tu tejido es delicado, añade entretela en el revés del pantalón por encima de la línea de la cintura. (rojo)
 - Doblar la franquicia de costura y luego doblar a lo largo de la línea de banda de cintura. (rojo)
-- Inserte una de las cadenas que hizo en el paso anterior de cada lado.
-- Se sienta a lo largo de la línea de banda de la cintura y añada un poco de unión adicional para asegurarse de que esas cuerdas están bien sujetadas. (azul)
+- Insert one of the straps you made in the previous step on each side.
+- Sew along the waist band line, and add some additional stitching to make sure those straps are attached well. (azul)
 
 <Warning>
 
-##### Asegure bien las cuerdas
+##### Secure the straps well
 
-Las cuerdas mantienen tus pantalones arriba, por lo que tener esa falla resultará en momentos incómodos.
+The straps keep your pants up, so having that stitching fail will result in awkward moments.
 
 </Warning>
 
@@ -164,7 +154,7 @@ Las cuerdas mantienen tus pantalones arriba, por lo que tener esa falla resultar
 
 ¡Presiona tus pantalones y pruébalos!
 
-Mantenga la parte frontal contra su vientre y envuelva ambas cuerdas a su alrededor y empate en la espalda (o, si tiene largas cuerdas, envuelva todo el camino a su alrededor y empate en la parte delantera). Luego, mano la parte posterior a través de las piernas a ti mismo y atar las otras cuerdas en la parte delantera.
+Hold the front side against your belly and wrap both straps around you and tie in the back (or, if you have long straps, wrap them all the way around you and tie in the front). Then hand the back side through your legs to yourself and tie the other straps in the front.
 
 Aquí hay un artículo que muestra cómo atar pantalones de envoltorio: [Cómo envolver pantalones](https://www.wikihow.com/Tie-Wrap-Pants)
 
