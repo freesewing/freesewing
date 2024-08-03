@@ -9,8 +9,8 @@ title: "Безшовне повне коло"
 <Note>
 
 - Це призведе до повного кола, ігноруючи опцію _Circle percent_.
-- Можливо, вам доведеться скористатися [опцією збирання] (пісочний/опції/збирання), щоб збільшити обхват талії, щоб вона помістилася на сидінні/стегнах.
-- Вам потрібно встановити [перекриття пояса](sandy/options/waistbandoverlap) на 0%.
+- You may need to use the [gathering option](/docs/designs/sandy/options/gathering) to increase the waist circumference to fit over your seat/hips.
+- You will need to set the [waistband overlap](/docs/designs/sandy/options/waistbandoverlap) to 0%.
 
 </Note>
 
