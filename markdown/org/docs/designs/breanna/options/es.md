@@ -87,7 +87,7 @@ controlar cada cuarto individualmente.
 
 ![Controlar los puntos de anclaje](sleevecapspread.svg)
 
-Ahora tenemos todos los puntos de inicio y final para dibujar las 5 curvas que compondrán nuestras mangas. What we're missing are the control points (see [our info on Bézier curves](https://freesewing.dev/concepts/beziercurves) to learn more about how curves are constructed). Estos son determinados por la así llamada _difusión_.
+Ahora tenemos todos los puntos de inicio y final para dibujar las 5 curvas que compondrán nuestras mangas. What we're missing are the control points (see [our info on Bézier curves](https://freesewing.dev/guides/prerequisites/bezier-curves) to learn more about how curves are constructed). Estos son determinados por la así llamada _difusión_.
 
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option to control the spread upwards, and downwards:
 
