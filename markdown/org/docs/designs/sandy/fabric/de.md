@@ -24,7 +24,7 @@ Kreisröcke können sehr unterschiedlich aussehen, je nachdem, ob es sich um ein
 
 <Note>
 
-Brauchst du ein paar Inspirationen? Schau dir die Seite [Sandy's showcase](/showcase/designs/sandy/) an und sieh dir einige fertige Sandy's an, die von unserer wunderbaren Community gemacht wurden.
+Brauchst du ein paar Inspirationen? check out [Sandy's showcase](/showcase#filter="sandy") page and see some finished Sandy's made by our wonderful community.
 
 </Note>
 
