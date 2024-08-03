@@ -6,7 +6,7 @@ title: "Tiberius Tunica: Anleitung zum Schneiden"
 
 ##### Nutze die Macht der _papierlosen_ Option - drucke dieses Muster _nicht_ aus
 
-Tiberius ist nur ein großes Rechteck, also ist das Ausdrucken des Musters eine ziemliche Verschwendung. Rette einen Baum, aktiviere die [papierlos](/docs/guide/options/paperless)-Option und übertrage die Dimensionen auf deinen Stoff, unter Beachtung des Fadenlaufs.
+Tiberius ist nur ein großes Rechteck, also ist das Ausdrucken des Musters eine ziemliche Verschwendung. Save a tree, toggle the [paperless](/docs/about/site/draft/core-settings/paperless) option, and copy the dimensions to your fabric, while respecting the grainline.
 
 </Tip>
 
