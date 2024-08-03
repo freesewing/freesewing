@@ -10,7 +10,7 @@ Este entorno proporciona una amplia gama de funciones, y en estas páginas las e
 
 ## El editor
 
-A continuación se muestra una captura de pantalla del editor de patrones de FreeSewing en el modo quiosco [](/docs/about/site/draft/ui-settings/kiosk) , que oculta la cabecera y el pie de página del sitio y permite que el editor ocupe toda la pantalla. También tiene expandido el menú **Ver** (a la izquierda). Por defecto sólo verás los iconos, y no el texto del menú de la izquierda.
+A continuación se muestra una captura de pantalla del editor de patrones de FreeSewing en el modo quiosco **** , que oculta la cabecera y el pie de página del sitio y permite que el editor ocupe toda la pantalla. También tiene expandido el menú **Ver** (a la izquierda). Por defecto sólo verás los iconos, y no el texto del menú de la izquierda.
 
 ![Captura de pantalla del editor de patrones de FreeSewing](editor.png "Captura de pantalla del editor de patrones de Freesewing")
 
