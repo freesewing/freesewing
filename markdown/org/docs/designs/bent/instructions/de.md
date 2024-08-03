@@ -81,4 +81,4 @@ Wenn du Änderungen vorgenommen hast, ist es am besten, ein Papiermuster aus dem
 
 ### Bent ist ein Block, der nach einem fertigen Muster sucht?
 
-> Hier sind einige der Schnittmuster, die auf Bent basieren: [Carlton](/patterns/carlton), [Carlita](/patterns/carlita), und [Jaeger](/patterns/jaeger).
+> Here are some of the patterns based on Bent: [Carlton](/designs/carlton), [Carlita](/designs/carlita), and [Jaeger](/designs/jaeger).
