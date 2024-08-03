@@ -5,7 +5,7 @@ title: "Opal Overalls: What You Need"
 To make Opal, you will need the following:
 
 - Grundlegendes Nähzubehör
-- Between 1 - 3 meters (1.1 - 3.3 yards) of a suitable fabric, depending on size and style ([see Fabric options](/docs/patterns/opal/fabric)).
+- Between 1 - 3 meters (1.1 - 3.3 yards) of a suitable fabric, depending on size and style ([see Fabric options](/docs/designs/opal/fabric)).
 - (optional) Fasteners to attach the straps to the front bib. I make my overalls using tack buttons on the bib, and a buckle and slider on each strap.
 
 <Warning>
