@@ -6,7 +6,7 @@ title: "Waralee Wickelhose: Anleitung zum Nähen"
 
 ##### Der Schlüssel zu Waralee ist die Taillenband
 
-in gewisser Weise Warale ist nur eine Taillenband mit einem langen Stück Stoff befestigt. Das Taillenband muss aus dem Stoff in zwei Stoffsaiten weitergehen, die die Hosen vorne und hinten binden. Diese Zeichenketten sind nicht im Muster enthalten. Traditionell sind sie ähnlich lang. Sie können längere für die Frontleiste machen (die Seite ist etwas kürzer als die andere, Auf der linken Seite in den Abbildungen unten) können Sie beide Sätze an der Vorderseite binden. Ich bevorzuge dies, da es einfacher ist zu binden, und du hast nicht den Großteil des Knotens im Rücken.
+in gewisser Weise Warale ist nur eine Taillenband mit einem langen Stück Stoff befestigt. The waist band needs to continue from the fabric into two straps of fabric that are used to tie the pants in the front and two in the back. These straps are pieces 7 and 8 in the pattern. Traditionell sind sie ähnlich lang. I made longer ones for the front panel (the side that is a little shorter than the other, on the left in the illustrations below), to allow you to tie both sets in the front. Ich bevorzuge dies, da es einfacher ist zu binden, und du hast nicht den Großteil des Knotens im Rücken.
 
 </Warning>
 
@@ -102,28 +102,18 @@ Jetzt kannst du die beiden Hosenteile zusammennähen.
 - Lege die beiden Hosenteile mit _guten Seiten aufeinander_ und nähe die Naht entlang des Ausschnitts.
 - _Beende_ diese Naht und bügle sie.
 
-### Schritt 4: Bereiten Sie die vier Zeichenketten vor
+### Step 4: Prepare the four straps
 
-Die Saiten sind nur lange Rohre aus Stoff.
+The straps are just long tubes of fabric.
 
-- Nehmen Sie ein Viertel Ihrer Taillenmessung. Fügen Sie diese Zahl auf 40cm hinzu (17”). Fügen Sie Ihre Nahtgenehmigung hinzu. Das ist die Länge der einzelnen Strings.
-- Schneiden Sie vier Stoffstreifen aus, die so lang und 5cm breit sind.
-
-<Tip>
-
-Zum Beispiel, wenn meine Taillenumfang ist 84,6cm: 84,6cm geteilt durch 4 21,2cm. 21,2cm plus 40cm 61,2cm. 61,2cm plus meine Naht von 1cm ist 62,2cm. Ich werde vier Streifen Stoff schneiden, die 62,2cm um 5cm sind.
-
-</Tip>
+If you printed them, just cut them out. If not, the *Messages from the designer* will have a note about their sizes.
 
 <Note>
 
-##### Du kannst die Frontverbindungen
+##### Traditionally, the straps are the same size
 
-optional verlängern, um die Frontverbindungen zu verlängern, sie um deine Viertel-Taillemessung zu verlängern.
-
-Bei der Generierung Ihres Musters wird eine der Stiloptionen „Taillenband“ genannt. Die Zeichenketten, wenn sie gefaltet sind, sollten die gleiche Breite haben, wie Sie sie für diese Option angegeben haben, standardmäßig 2.5cm (1").
-
-Die extra 40cm (17") Länge ist es, den Knoten herzustellen.
+The straps in this design have a longer and a shorter pair. Traditionally the straps are tied both in the front and in the back. 
+I find the more aesthetically pleasing to tie both in the front. And it removes the knot in the back, which can be uncomfortable.
 
 Wenn Ihr Material empfindlich oder fadenscheinig ist, können Sie eine Schnittstelle hinzufügen, um ihm Stärke zu verleihen.
 
@@ -149,14 +139,14 @@ Jetzt ist es an der Zeit, die Taillenband zu nähen.
 
 - Wenn dein Stoff empfindlich ist, füge auf der linken Seite der Hose oberhalb des Taillenbandes eine Einlage hinzu. (rot)
 - Falten Sie die Nahtgenehmigung ein und falten Sie dann entlang der Taillenbandlinie. (rot)
-- Fügen Sie eine der Zeichenketten ein, die Sie im vorherigen Schritt auf jeder Seite gemacht haben.
-- Nähen Sie die Taillenbandlinie entlang und fügen Sie ein paar zusätzliche Nähte hinzu, um sicherzustellen, dass diese Saiten gut befestigt sind. (blau)
+- Insert one of the straps you made in the previous step on each side.
+- Sew along the waist band line, and add some additional stitching to make sure those straps are attached well. (blau)
 
 <Warning>
 
-##### Sichern Sie die Zeichenketten gut
+##### Secure the straps well
 
-Die Zeichenketten halten Ihre Hosen auf, so dass ein Stitchversagen zu schwierigen Momenten führt.
+The straps keep your pants up, so having that stitching fail will result in awkward moments.
 
 </Warning>
 
@@ -164,7 +154,7 @@ Die Zeichenketten halten Ihre Hosen auf, so dass ein Stitchversagen zu schwierig
 
 Drücken Sie Ihre Hose, und probieren Sie sie an!
 
-Halten Sie die Vorderseite gegen Ihren Bauch und wickeln Sie beide Saiten um Sie herum und binden Sie im Rücken (oder, Wenn Sie lange Saiten haben, wickeln Sie sie ganz um Sie herum und binden Sie vorne). Dann übergeben Sie sich die Rückseite durch die Beine und binden Sie die anderen Saiten vorne.
+Hold the front side against your belly and wrap both straps around you and tie in the back (or, if you have long straps, wrap them all the way around you and tie in the front). Then hand the back side through your legs to yourself and tie the other straps in the front.
 
 Hier ist ein Artikel, der zeigt, wie man die Wickelhose bindet: [Wie man die Hosen umwickeln kann](https://www.wikihow.com/Tie-Wrap-Pants)
 
