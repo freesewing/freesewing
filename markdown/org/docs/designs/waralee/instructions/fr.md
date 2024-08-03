@@ -6,7 +6,7 @@ title: "Pantalon portefeuille Waralee : Instructions de couture"
 
 ##### La clé de Waralee est la bande de taille
 
-D'une certaine manière, Waralee est juste une bande de taille avec un long morceau de tissu attaché. La bande de taille doit continuer à partir du tissu en deux cordes de tissu qui sont utilisées pour attacher le pantalon à l'avant et deux autres pour le dos. Ces bandes ne sont pas incluses dans le patron. Traditionnellement, elles sont de la même longueur. Vous pouvez en faire des plus longues pour le panneau avant (le côté qui est un peu plus court que l'autre, sur la gauche dans les illustrations ci-dessous), pour vous permettre d'attacher les deux nœuds à l'avant. Je préfère comme ça car c'est pour facile à attacher et vous n'avez pas la bosse du nœud dans le dos.
+D'une certaine manière, Waralee est juste une bande de taille avec un long morceau de tissu attaché. The waist band needs to continue from the fabric into two straps of fabric that are used to tie the pants in the front and two in the back. These straps are pieces 7 and 8 in the pattern. Traditionnellement, elles sont de la même longueur. I made longer ones for the front panel (the side that is a little shorter than the other, on the left in the illustrations below), to allow you to tie both sets in the front. Je préfère comme ça car c'est pour facile à attacher et vous n'avez pas la bosse du nœud dans le dos.
 
 </Warning>
 
@@ -102,28 +102,18 @@ Il te reste maintenant à coudre les deux parties du pantalon ensemble.
 - Pose les deux parties du pantalon l'une sur l'autre avec _bons côtés ensemble_ et couds la couture le long de la découpe.
 - _Termine_ cette couture et repasse-la.
 
-### Étape 4 : Préparez les quatre chaînes
+### Step 4: Prepare the four straps
 
-Les cordes ne sont que de longs tubes de tissu.
+The straps are just long tubes of fabric.
 
-- Prenez un quart de la mesure de votre tour de taille. Ajoutez ce numéro à 40cm (17”). Ajoutez votre marge de couture. C'est la longueur de chaque chaîne.
-- Découpez quatre bandes de tissu de longueur et de largeur de 5cm (2").
-
-<Tip>
-
-Par exemple, si ma tour de taille est de 84,6 cm : 84,6 cm divisée par 4 est de 21,2 cm. 21,2cm plus 40cm est 61,2cm. 61,2cm plus ma couture de 1cm est 62,2cm. Je couperai quatre bandes de tissu qui sont 62,2cm par 5cm.
-
-</Tip>
+If you printed them, just cut them out. If not, the *Messages from the designer* will have a note about their sizes.
 
 <Note>
 
-##### Vous pouvez allonger les attaches avant
+##### Traditionally, the straps are the same size
 
-Optionnellement, pour allonger les attaches avant, les étendre par la mesure de votre quart de taille.
-
-Lors de la génération de votre patron, une des options de style est appelée « Bande de taille ». Les chaînes, lorsqu'elles sont pliées, doivent avoir la même largeur que celle que vous avez spécifiée pour cette option, soit 2,5cm (1") par défaut.
-
-La longueur supplémentaire de 40cm (17") est de faire le nœud.
+The straps in this design have a longer and a shorter pair. Traditionally the straps are tied both in the front and in the back. 
+I find the more aesthetically pleasing to tie both in the front. And it removes the knot in the back, which can be uncomfortable.
 
 Si votre matériau est délicat ou mince, vous pouvez ajouter un peu d'interfaçage pour lui donner de la force.
 
@@ -149,14 +139,14 @@ Il est maintenant temps de coudre le bandeau de taille.
 
 - Si ton tissu est délicat, ajoute de l'entoilage sur l'envers du pantalon au-dessus de la ligne de la ceinture. (rouge)
 - Repliez la marge de couture et pliez le long de la bande de la taille. (rouge)
-- Insérez une des chaînes que vous avez faites à l'étape précédente de chaque côté.
-- Coudre le long de la bande de taille et ajouter quelques coutures supplémentaires pour s'assurer que ces cordes sont bien attachées. (bleu)
+- Insert one of the straps you made in the previous step on each side.
+- Sew along the waist band line, and add some additional stitching to make sure those straps are attached well. (bleu)
 
 <Warning>
 
-##### Sécurisez bien les chaînes de caractères
+##### Secure the straps well
 
-Les cordes maintiennent votre pantalon, donc avoir cette panne de broderie entraînera des instants difficiles.
+The straps keep your pants up, so having that stitching fail will result in awkward moments.
 
 </Warning>
 
@@ -164,7 +154,7 @@ Les cordes maintiennent votre pantalon, donc avoir cette panne de broderie entra
 
 Appuyez sur votre pantalon, et essayez-les!
 
-Tenez le côté avant contre votre ventre et enveloppez les deux cordes autour de vous et attachez dans le dos (ou, si vous avez de longues cordes, enveloppez-les tout le chemin autour de vous et attachez à l'avant). Puis mettez le dos à travers vos jambes et attachez les autres cordes à l'avant.
+Hold the front side against your belly and wrap both straps around you and tie in the back (or, if you have long straps, wrap them all the way around you and tie in the front). Then hand the back side through your legs to yourself and tie the other straps in the front.
 
 Voici un article qui montre comment attacher des pantalons d'écharpe : [Comment attacher des pantalons](https://www.wikihow.com/Tie-Wrap-Pants)
 
