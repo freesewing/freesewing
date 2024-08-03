@@ -6,7 +6,7 @@ Deze vraag komt af en toe op. De verwoording varieert, maar het sentiment kan sa
 
 Laat ik beginnen door te zeggen dat je het niet verkeerd hebt. Beide [Breanna](/designs/breanna/) en [Bella](/designs/bella/) hebben ernstige tekortkomingen.
 
-Ikzelf ([joost](/makers/joostdecock/)) ben pijnlijk bewust hiervan en ik heb overwogen om deze patronen algeheel te herroepen.
+Ikzelf ([joost](/users/user?id=1)) ben pijnlijk bewust hiervan en ik heb overwogen om deze patronen algeheel te herroepen.
 
 Maar een deel van de mensen hebben er goede resultaten mee gekregen. Ik heb verschillende goeduitziende creaties gezien gebaseerd op Bella en om een of andere reden blijkt Breanna populair te zijn met mensen die poppenkleren maken.
 
