@@ -4,5 +4,5 @@ title: "Profundidad del orificio"
 
 Esta opción controla la profundidad del agujero de armadura.
 
-Esta opción se aplica a la nueva forma v3 de calcular la profundidad de la sisa. Si activas la opción [profundidad de sisa heredada](/docs/designs/hugo/options/legacyarmholedepth) , esta opción no se aplicará, pero sí lo hará su versión heredada [factor de profundidad de sisa](/docs/designs/hugo/options/armholedepthfactor) .
+Esta opción se aplica a la nueva forma v3 de calcular la profundidad de la sisa. If you enable the [legacy armhole depth](/docs/designs/hugo/options/legacyarmholedepth) option, this option will not apply, but instead a fixed factor will be applied.
 
