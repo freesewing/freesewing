@@ -2,4 +2,4 @@
 title: "Knoop vooraan"
 ---
 
-Normaal gesproken wordt de Waralee gesloten met de stropdas aan de voorkant. This allows you to change that to a bow tie in the back.
+Normally the Waralee is closed with all straps tied in the front. This allows you to change that to a set tied in the front and in the back, the traditional way.
