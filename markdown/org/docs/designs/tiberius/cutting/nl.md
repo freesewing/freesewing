@@ -6,7 +6,7 @@ title: "Tiberius Tunica: Snij-instructies"
 
 ##### Gebruik de kracht van de _paperless_ optie - druk dit patroon _niet_ af
 
-Tiberius is gewoon een grote rechthoek, dus het patroon afdrukken is een beetje zonde. Sla een boom op, schakel de optie [paperless](/docs/guide/options/paperless) in en kopieer de afmetingen naar je stof, met inachtneming van de nerflijn.
+Tiberius is gewoon een grote rechthoek, dus het patroon afdrukken is een beetje zonde. Save a tree, toggle the [paperless](/docs/about/site/draft/core-settings/paperless) option, and copy the dimensions to your fabric, while respecting the grainline.
 
 </Tip>
 
