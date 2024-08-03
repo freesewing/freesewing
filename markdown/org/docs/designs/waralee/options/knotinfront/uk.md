@@ -2,4 +2,4 @@
 title: "Вузол спереду"
 ---
 
-Зазвичай Варалі закривається зав'язкою спереду. Це дозволяє змінити на краватку-метелика ззаду.
+Normally the Waralee is closed with all straps tied in the front. This allows you to change that to a set tied in the front and in the back, the traditional way.
