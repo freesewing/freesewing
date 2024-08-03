@@ -10,7 +10,7 @@ Cet environnement offre un large éventail de fonctionnalités, qui seront toute
 
 ## L'Éditeur
 
-Tu trouveras ci-dessous une capture d'écran de l'éditeur de patrons de FreeSewing en [mode kiosque ](/docs/about/site/draft/ui-settings/kiosk), qui masque l'en-tête et le pied de page du site et permet à l'éditeur d'occuper tout l'écran. Le menu **View** (à gauche) est également développé. Par défaut, tu ne verras que les icônes, et non le texte du menu de gauche.
+Tu trouveras ci-dessous une capture d'écran de l'éditeur de patrons de FreeSewing en **mode kiosque **, qui masque l'en-tête et le pied de page du site et permet à l'éditeur d'occuper tout l'écran. Le menu **View** (à gauche) est également développé. Par défaut, tu ne verras que les icônes, et non le texte du menu de gauche.
 
 ![Capture d'écran de l'éditeur de patron de FreeSewing](editor.png "Capture d'écran de l'éditeur de patron de Freesewing")
 
