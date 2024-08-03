@@ -42,7 +42,7 @@ If using a overlocker/serger you can sew seams which need finishing in one go ra
 
 <Note>
 
-Op het patroon is de inkeping aan de achterkant gemarkeerd als een kruisinkeping (zie [onze patroonnotatiegids](/docs/over/notatie/notches/)). Het wordt aangeraden om dit een dubbel merkteken te maken bij het uitknippen van je stukken zodat het merkteken makkelijker te onderscheiden is van voorpand.
+On the pattern the back notch is marked as a cross-notch (see [our pattern notation guide](/docs/about/notation#notches)). Het wordt aangeraden om dit een dubbel merkteken te maken bij het uitknippen van je stukken zodat het merkteken makkelijker te onderscheiden is van voorpand.
 
 </Note>
 
