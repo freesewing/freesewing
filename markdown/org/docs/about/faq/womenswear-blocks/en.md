@@ -9,7 +9,7 @@ _why even publish this garbage, it doesn't work at all_.
 Let me start by saying that you are not wrong. Both [Breanna](/designs/breanna/)
 and [Bella](/designs/bella/) have serious shortcomings.
 
-I myself ([joost](/makers/joostdecock/)) am painfully aware of them,
+I myself ([joost](/users/user?id=1)) am painfully aware of them,
 and I have toyed with the idea of retracting these patterns altogether.
 
 But there's a subset of people who get good results with them.
