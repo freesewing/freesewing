@@ -24,7 +24,7 @@ Les jupes circulaires peuvent avoir un aspect très différent selon ces éléme
 
 <Note>
 
-Tu as besoin d'inspiration ? Va voir la page [Sandy's showcase](/showcase/designs/sandy/) pour voir quelques Sandy's terminées par notre merveilleuse communauté.
+Tu as besoin d'inspiration ? check out [Sandy's showcase](/showcase#filter="sandy") page and see some finished Sandy's made by our wonderful community.
 
 </Note>
 
