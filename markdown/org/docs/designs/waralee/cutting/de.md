@@ -18,11 +18,16 @@ Du musst die Taschen und Taschenbesätze auf die herkömmliche Weise ausdrucken.
 ### Materialien
 
 - **Oberstoff**
-  - Schneide **2 Hosen** Teile.
-  - (Optional) Schneide **2 Pocket** Teile an der Falte aus.
-  - Schneide **4 backPocket** Teile
+  - Cut **2 pants** parts.
+  - Cut **2 long strap** parts.
+  - Cut **2 short strap** parts.
+
+Optional (pockets) **Main fabric**
   - Schneide **4 nach vorne gerichtete** Teile
-  - Schneide **4 nach hinten gerichtete** Teile
+  - Cut **4 backFacing** parts **Lining fabric**
+  - Cut **2 frontPocket** parts on the fold.
+  - Schneide **4 backPocket** Teile
+
 
 <Note>
 
@@ -42,4 +47,5 @@ Du musst einen schmalen Streifen von der Vorderseite schneiden, und ein kleines 
 Und in der Mitte zwischen diesen wird das kleine Ausschnittmusterstück sein.
 Vergewissern Sie sich, dass Sie dies richtig messen und dass Sie den Stoff quadriert haben, bevor Sie mit dem Schneiden beginnen.
 
+Of course, you'll need to cut out the straps too. They're just simple long rectangles. 
 </Tip>
