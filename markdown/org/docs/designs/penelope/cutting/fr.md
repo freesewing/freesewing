@@ -23,7 +23,7 @@ Pour cette raison, la liste de coupe ne précise pas combien de parties du dos d
 
 <Note>
 
-[Voir les instructions de Pénélope](docs/patterns/pénélope/instructions/#lining) pour comprendre les altérations des parties avant et arrière nécessaires pour la doublure.
+[See Penelope Instructions](/docs/designs/penelope/instructions/#lining) to understand alterations to the front and back parts required for the lining.
 
 </Note>
 
