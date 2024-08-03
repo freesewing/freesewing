@@ -82,4 +82,4 @@ Si vous avez effectué des modifications, il est préférable de créer un modè
 
 ### Bent est un bloc, à la recherche d'un modèle finalisé ?
 
-> Here are some of the patterns based on Bent: [Carlton](/patterns/carlton), [Carlita](/patterns/carlita), and [Jaeger](/patterns/jaeger).
+> Here are some of the patterns based on Bent: [Carlton](/designs/carlton), [Carlita](/designs/carlita), and [Jaeger](/designs/jaeger).
