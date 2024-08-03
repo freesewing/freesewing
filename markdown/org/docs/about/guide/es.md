@@ -20,7 +20,7 @@ Si eres nuevo en FreeSewing, tómate unos minutos para leer esta página y apren
 FreeSewing es la principal biblioteca de código abierto [](https://github.com/freesewing) para la confección de prendas bajo demanda.  
 FreeSewing, apreciado tanto por los costureros domésticos como por los empresarios de la moda, proporciona la pila tecnológica para tus esfuerzos creativos.
 
-FreeSewing es la creación de [Joost De Cock](https://github.com/joostdecock), el mantenedor de FreeSewing. Various other people have contributed to FreeSewing over the years (the [FreeSewing contributors](/contributors)), and the project is financially supported by [the FreeSewing patrons](/patrons).
+FreeSewing es la creación de [Joost De Cock](https://github.com/joostdecock), el mantenedor de FreeSewing. Various other people have contributed to FreeSewing over the years (the [FreeSewing contributors](https://github.com/freesewing/freesewing?tab=readme-ov-file#contributors-)), and the project is financially supported by [the FreeSewing patrons](/patrons).
 
 <Tip>
 
@@ -68,8 +68,8 @@ Puedes guardar tantos patrones como quieras.
 Para generar patrones de costura a medida, necesitamos tus medidas.
 Pedirlos cada vez sería bastante tedioso, así que los almacenamos en tu cuenta.
 
-Los datos de tu cuenta se almacenan en nuestro backend, sujetos a [nuestro aviso de privacidad](/docs/about/privacy),
-y respetando [tus derechos](docs/about/rights/).
+Your account data is stored on our backend, subject to [our privacy notice](/docs/about/privacy),
+and with respect for [your rights](/docs/about/rights/).
 
 </Note>
 
