@@ -9,8 +9,8 @@ Sélectionnez 'oui' pour un cercle transparent, qui est coupé sur un double pli
 <Note>
 
 - Cela produit un cercle complet en ignorant l'option _Pourcentage de cercle_.
-- Il se peut que tu doives utiliser l'option [gathering](sandy/options/gathering) pour augmenter le tour de taille afin qu'il s'adapte à ton siège et à tes hanches.
-- Tu devras régler le [chevauchement de la ceinture](sandy/options/waistbandoverlap) sur 0 %.
+- You may need to use the [gathering option](/docs/designs/sandy/options/gathering) to increase the waist circumference to fit over your seat/hips.
+- You will need to set the [waistband overlap](/docs/designs/sandy/options/waistbandoverlap) to 0%.
 
 </Note>
 
