@@ -23,7 +23,7 @@ Hierdoor geeft de snijlijst niet aan hoeveel rugdelen je moet snijden, omdat de 
 
 <Note>
 
-[Zie Penelope Instructies](docs/patterns/penelope/instructions/#lining) om te begrijpen welke veranderingen aan de voor- en achterkant nodig zijn voor de voering.
+[See Penelope Instructions](/docs/designs/penelope/instructions/#lining) to understand alterations to the front and back parts required for the lining.
 
 </Note>
 
