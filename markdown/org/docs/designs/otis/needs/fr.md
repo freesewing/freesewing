@@ -5,7 +5,7 @@ title: "Otis, la grenouillère simple pour bébé : Ce dont tu as besoin"
 Pour fabriquer Otis, tu auras besoin des éléments suivants :
 
 - [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
-- Environ 1 mètre d'un tissu approprié ([voir les options de tissu Otis](/docs/patterns/otis/fabric/))
+- Environ 1 mètre (1.1 yards) d'un tissu adapté ([voir Options de tissu](/docs/designs/otis/fabric/))
 - 3 boutons-pression.
 - Un peu d'entoilage si ton tissu est très extensible.
 
