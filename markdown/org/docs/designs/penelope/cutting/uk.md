@@ -23,7 +23,7 @@ title: "Спідниця-олівець Пенелопа: Інструкція �
 
 <Note>
 
-[Див. інструкцію Penelope] (docs/patterns/penelope/instructions/#lining), щоб зрозуміти, як змінювати передню і задню частини, необхідні для підкладки.
+[See Penelope Instructions](/docs/designs/penelope/instructions/#lining) to understand alterations to the front and back parts required for the lining.
 
 </Note>
 
