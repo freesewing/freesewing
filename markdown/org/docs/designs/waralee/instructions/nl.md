@@ -6,7 +6,7 @@ title: "Waralee wikkelbroek: Naai-instructies"
 
 ##### De sleutel van Waralee is de tailleband
 
-Op een manier Waralee is slechts een tailleband met een lang stuk stof vast. De tailleband moet doorgaan van de stof in twee tekenreeksen die gebruikt worden om de voorpanden en twee aan de achterkant vast te zetten. Deze tekenreeksen zijn niet opgenomen in het patroon. Traditioneel hebben ze een vergelijkbare lengte. Je kunt de extra maken voor het voorpaneel (de zijde die iets korter is dan de andere, aan de linkerkant van de illustraties hieronder), zodat je beide sets aan de voorkant kunt binden. Ik geef er de voorkeur aan omdat het makkelijker is om aan te das en je hebt niet het grootste deel van de knoop in de rug.
+Op een manier Waralee is slechts een tailleband met een lang stuk stof vast. The waist band needs to continue from the fabric into two straps of fabric that are used to tie the pants in the front and two in the back. These straps are pieces 7 and 8 in the pattern. Traditioneel hebben ze een vergelijkbare lengte. I made longer ones for the front panel (the side that is a little shorter than the other, on the left in the illustrations below), to allow you to tie both sets in the front. Ik geef er de voorkeur aan omdat het makkelijker is om aan te das en je hebt niet het grootste deel van de knoop in de rug.
 
 </Warning>
 
@@ -102,28 +102,18 @@ Nu mag je de twee broekdelen aan elkaar naaien.
 - Leg de twee broekdelen op elkaar met _goede kanten op elkaar_ en naai de naad langs de uitsnede.
 - _Maak_ deze naad af en pers hem.
 
-### Stap 4: Bereid de vier tekenreeksen voor
+### Step 4: Prepare the four straps
 
-De tekenreeksen zijn slechts lange buizen.
+The straps are just long tubes of fabric.
 
-- Neem een kwart van uw taillemaat. Voeg dat nummer toe aan 40cm (17). Voeg je naadwaarde toe. Dit is de lengte van elke string.
-- Knip vier stroken stof die zo lang en 5 cm breed zijn.
-
-<Tip>
-
-Als mijn tailleomtrek bijvoorbeeld 84,6 cm: 84,6 cm gedeeld door 4 is 2cm. 2cm plus 40cm is 61,2cm. 61,2 cm plus mijn naadwaarde van 1 cm is 62,2 cm. Ik knip vier stroken stof die 62,2 cm bij 5 cm zijn.
-
-</Tip>
+If you printed them, just cut them out. If not, the *Messages from the designer* will have a note about their sizes.
 
 <Note>
 
-##### Je kunt de voorpanden verlengen
+##### Traditionally, the straps are the same size
 
-optioneel om de voorpanden langer te maken, verleng ze met je kwarttaillemeting.
-
-Bij het genereren van je patroon wordt een van de stijlopties "Waist Band" genoemd. De strings, wanneer geplooid moet dezelfde breedte hebben als je hebt opgegeven voor die optie, 2,5 cm (1") als standaard.
-
-De extra lengte van 40 cm (17") is om de knoop te maken.
+The straps in this design have a longer and a shorter pair. Traditionally the straps are tied both in the front and in the back. 
+I find the more aesthetically pleasing to tie both in the front. And it removes the knot in the back, which can be uncomfortable.
 
 Als je materiaal gevoelig of zwak is, kun je hier wat tussenvoering aan toevoegen om het kracht te geven.
 
@@ -149,14 +139,14 @@ Nu is het tijd om de tailleband vast te naaien.
 
 - Als je stof gevoelig is, voeg dan versteviging toe aan de verkeerde kant van de broek boven de taillebandlijn. (rood)
 - Plooi de naadwaarde in en plooi dan langs de lijn. (rood)
-- Voeg aan beide kanten één van de tekenreeksen toe die u in de vorige stap hebt gemaakt.
-- Stik langs de lijn van de tailleband en voeg wat extra stiksel toe om ervoor te zorgen dat deze snoorden goed vastzitten. (blauw)
+- Insert one of the straps you made in the previous step on each side.
+- Sew along the waist band line, and add some additional stitching to make sure those straps are attached well. (blauw)
 
 <Warning>
 
-##### Beveilig de tekenreeksen goed
+##### Secure the straps well
 
-De tekenreeksen houden je pannen, dus als je mislukken krijg je ongemakkelijke momenten.
+The straps keep your pants up, so having that stitching fail will result in awkward moments.
 
 </Warning>
 
@@ -164,7 +154,7 @@ De tekenreeksen houden je pannen, dus als je mislukken krijg je ongemakkelijke m
 
 Strijk je broek en probeer het op!
 
-Houd de voorkant tegen je broekriem en pak beide tekenreeksen om je heen en strijk in de rug (of, als je lange strings hebt, pak ze helemaal om je heen en strijk aan het voorp). Leg de achterkant dan door je benen aan jezelf en pas de andere tekenreeksen aan de voorkant.
+Hold the front side against your belly and wrap both straps around you and tie in the back (or, if you have long straps, wrap them all the way around you and tie in the front). Then hand the back side through your legs to yourself and tie the other straps in the front.
 
 Hier is een artikel dat laat zien hoe ingepakte broek moet worden [Hoe Tie Wrap Broek](https://www.wikihow.com/Tie-Wrap-Pants)
 
