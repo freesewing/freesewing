@@ -24,7 +24,7 @@ Cirkelrokken kunnen er heel verschillend uitzien, afhankelijk van deze dingen en
 
 <Note>
 
-Inspiratie nodig? Kijk op de [Sandy's showcase](/showcase/designs/sandy/) pagina en bekijk een aantal voltooide Sandy's die door onze geweldige community zijn gemaakt.
+Inspiratie nodig? check out [Sandy's showcase](/showcase#filter="sandy") page and see some finished Sandy's made by our wonderful community.
 
 </Note>
 
