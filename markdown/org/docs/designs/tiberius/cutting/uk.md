@@ -6,7 +6,7 @@ title: "Туніка Тіберія: Інструкція з крою"
 
 ##### Використовуйте можливості опції _безпаперового_ друку - не друкуйте цей шаблон
 
-Тиберій - це просто великий прямокутник, тому роздруковувати шаблон - це трохи марнотратство. Збережіть дерево, увімкніть опцію [paperless](/docs/guide/options/paperless) і скопіюйте розміри на тканину, дотримуючись дольової лінії.
+Тиберій - це просто великий прямокутник, тому роздруковувати шаблон - це трохи марнотратство. Save a tree, toggle the [paperless](/docs/about/site/draft/core-settings/paperless) option, and copy the dimensions to your fabric, while respecting the grainline.
 
 </Tip>
 
