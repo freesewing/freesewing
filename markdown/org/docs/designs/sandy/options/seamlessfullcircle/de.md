@@ -9,8 +9,8 @@ Wählen Sie 'Ja' für einen nahtlosen Kreis, der auf ein doppeltes Falten zugesc
 <Note>
 
 - Dies erzeugt einen Vollkreis, ohne die Option _Kreisprozent_ zu berücksichtigen.
-- Möglicherweise musst du die [Raffoption](sandy/options/gathering) verwenden, um den Taillenumfang so zu vergrößern, dass er über dein Gesäß/Hüftgelenk passt.
-- Du musst die [Bundüberlappung] (sandy/options/waistbandoverlap) auf 0% setzen.
+- You may need to use the [gathering option](/docs/designs/sandy/options/gathering) to increase the waist circumference to fit over your seat/hips.
+- You will need to set the [waistband overlap](/docs/designs/sandy/options/waistbandoverlap) to 0%.
 
 </Note>
 
