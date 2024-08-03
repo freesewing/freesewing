@@ -42,7 +42,7 @@ If using a overlocker/serger you can sew seams which need finishing in one go ra
 
 <Note>
 
-Sur le patron, l'encoche arrière est marquée comme une encoche transversale (voir [notre guide de notation des patrons](/docs/about/notation/notches/)). Il est recommandé d'en faire un double repère lors de la découpe de vos pièces pour faciliter la différenciation de l'arrière par rapport à l'avant.
+On the pattern the back notch is marked as a cross-notch (see [our pattern notation guide](/docs/about/notation#notches)). Il est recommandé d'en faire un double repère lors de la découpe de vos pièces pour faciliter la différenciation de l'arrière par rapport à l'avant.
 
 </Note>
 
