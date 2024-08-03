@@ -17,11 +17,16 @@ Vous devrez imprimer les poches et les faces de poche de la manière traditionne
 ### Matériaux
 
 - **Tissu principal**
-  - Couper **2 pièces de pantalon**.
-  - (Optionel) Couper** 2 pièces de poches dans le pli**.
-  - Couper **4 poches arrière**
+  - Cut **2 pants** parts.
+  - Cut **2 long strap** parts.
+  - Cut **2 short strap** parts.
+
+Optional (pockets) **Main fabric**
   - Couper **4 poches avant**
-  - Couper **4 faces arrière**
+  - Cut **4 backFacing** parts **Lining fabric**
+  - Cut **2 frontPocket** parts on the fold.
+  - Couper **4 poches arrière**
+
 
 <Note>
 
@@ -41,4 +46,5 @@ Vous devrez couper une bande étroite de ce qui deviendra le devant, et un petit
 Et au milieu entre elles se trouve la petite pièce de motif coupé.
 Assurez-vous de bien mesurer cela et d'avoir le tissus bien carré avant de commencer à couper.
 
+Of course, you'll need to cut out the straps too. They're just simple long rectangles. 
 </Tip>
