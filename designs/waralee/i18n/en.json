@@ -135,17 +135,21 @@
       "t": "Waistband Front pocket",
       "d": "The front pocket will be hidden in the seam of the waistband."
     },
-    "knotInFront": {
-      "t": "Place the knot in the front",
-      "d": "The knot of the wrap straps can be placed in the front or back."
+    "knotPlacement": {
+      "t": "Placement of the knot(s)",
+      "d": "The knot of the wrap straps can be placed in the front, back, or both front and back (traditional)."
     },
-    "knotInFrontNo": {
+    "knotPlacement.front": {
+      "t": "Knot in the front",
+      "d": "The knot of the wrap straps will be in the front."
+    },
+    "knotPlacement.back": {
       "t": "Knot in the back",
       "d": "The knot of the wrap straps will be in the back."
     },
-    "knotInFrontYes": {
-      "t": "Knot in the front",
-      "d": "The knot of the wrap straps will be in the front."
+    "knotPlacement.traditional": {
+      "t": "Knot in the front and back",
+      "d": "The knot of the wrap straps will be in the front and the back."
     },
     "separateWaistband": {
       "t": "Create a separate waistband",

@@ -19,10 +19,17 @@ You will need to print out the pockets and pocket facings in the traditional way
 
 - **Main fabric**
   - Cut **2 pants** parts.
-  - (Optional) Cut **2 Pocket** parts on the fold.
-  - Cut **4 backPocket** parts
+  - Cut **2 long strap** parts.
+  - Cut **2 short strap** parts.
+  
+Optional (pockets)
+ **Main fabric**
   - Cut **4 frontFacing** parts
   - Cut **4 backFacing** parts
+ **Lining fabric**
+  - Cut **2 frontPocket** parts on the fold.
+  - Cut **4 backPocket** parts
+
 
 <Note>
 
@@ -42,4 +49,5 @@ You will need to cut a narrow strip out from what will become the front, and a s
 And in the middle between these will be the little cut-out pattern piece.
 Make sure you measure this correctly, and you have the fabric squared before you start cutting.
 
+Of course, you'll need to cut out the straps too. They're just simple long rectangles. 
 </Tip>

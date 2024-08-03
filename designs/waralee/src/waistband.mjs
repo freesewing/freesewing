@@ -29,8 +29,20 @@ function waraleeWaistband(
   let partNr = 0
 
   switch (type) {
+    case 'strapFront':
+      partNr = 7
+      waistBandLength -= waistBandLengthFront * 2
+      waistBandLength += 'front' === options.knotPlacement ? measurements.waist / 2 : 0
+      break
+
+    case 'strapBack':
+      partNr = 8
+      waistBandLength -= waistBandLengthBack * 2
+      waistBandLength += 'back' === options.knotPlacement ? measurements.waist / 2 : 0
+      break
+
     case 'waistBandFront':
-      if (false == options.separateWaistband && 'welt' == options.frontPocketStyle) {
+      if (false == options.separateWaistband && 'welt' === options.frontPocketStyle) {
         return part.hide()
       }
       partNr = 9
@@ -38,23 +50,11 @@ function waraleeWaistband(
       break
 
     case 'waistBandBack':
-      if (false == options.separateWaistband && 'welt' == options.frontPocketStyle) {
+      if (false == options.separateWaistband && 'welt' === options.frontPocketStyle) {
         return part.hide()
       }
       partNr = 10
       waistBandLength = waistBandLengthBack * 2
-      break
-
-    case 'strapFront':
-      partNr = 7
-      waistBandLength -= waistBandLengthFront * 2
-      waistBandLength += options.knotInFront ? measurements.waist / 2 : 0
-      break
-
-    case 'strapBack':
-      partNr = 8
-      waistBandLength -= waistBandLengthBack * 2
-      waistBandLength += options.knotInFront ? 0 : measurements.waist / 2
       break
   }
 
