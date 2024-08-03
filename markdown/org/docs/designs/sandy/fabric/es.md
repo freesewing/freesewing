@@ -24,7 +24,7 @@ Las faldas circulares pueden tener un aspecto muy diferente dependiendo de estas
 
 <Note>
 
-¿Necesitas inspiración? Need some inspo? check out [Sandy's showcase](/showcase/designs/sandy/) page and see some finished Sandy's made by our wonderful community.
+¿Necesitas inspiración? check out [Sandy's showcase](/showcase#filter="sandy") page and see some finished Sandy's made by our wonderful community.
 
 </Note>
 
