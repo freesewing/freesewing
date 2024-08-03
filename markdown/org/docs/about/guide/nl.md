@@ -20,7 +20,7 @@ Klinkt goed? Laten we dan direct gaan duiken in:
 FreeSewing is de toonaangevende [open source bibliotheek](https://github.com/freesewing) voor kledingproductie op aanvraag.  
 FreeSewing is geliefd bij zowel thuisnaaiers als modeondernemers en biedt de technische stack voor je creatieve inspanningen.
 
-FreeSewing is het geesteskind van [Joost De Cock](https://github.com/joostdecock), de beheerder van FreeSewing. Various other people have contributed to FreeSewing over the years (the [FreeSewing contributors](/contributors)), and the project is financially supported by [the FreeSewing patrons](/patrons).
+FreeSewing is het geesteskind van [Joost De Cock](https://github.com/joostdecock), de beheerder van FreeSewing. Various other people have contributed to FreeSewing over the years (the [FreeSewing contributors](https://github.com/freesewing/freesewing?tab=readme-ov-file#contributors-)), and the project is financially supported by [the FreeSewing patrons](/patrons).
 
 <Tip>
 
@@ -68,8 +68,8 @@ Je kunt zoveel patronen opslaan als je wilt.
 Om naaipatronen op maat te maken, hebben we je maten nodig.
 Er elke keer om vragen zou nogal vervelend zijn, dus slaan we ze op in je account.
 
-Je accountgegevens worden opgeslagen op onze backend, met inachtneming van [onze privacyverklaring](/docs/about/privacy),
-en met respect voor [je rechten](docs/about/rights/).
+Your account data is stored on our backend, subject to [our privacy notice](/docs/about/privacy),
+and with respect for [your rights](/docs/about/rights/).
 
 </Note>
 
