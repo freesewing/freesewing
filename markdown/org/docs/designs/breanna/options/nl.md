@@ -87,7 +87,7 @@ elk kwart afzonderlijk kunt regelen.
 
 ![Controleren van de ankerpunten](sleevecapspread.svg)
 
-We hebben nu alle start- en eindpunten om de 5 curves te tekenen die samen onze mouwkoppen zullen vormen. What we're missing are the control points (see [our info on Bézier curves](https://freesewing.dev/concepts/beziercurves) to learn more about how curves are constructed). Deze worden bepaald door de zogenaamde _spread_.
+We hebben nu alle start- en eindpunten om de 5 curves te tekenen die samen onze mouwkoppen zullen vormen. What we're missing are the control points (see [our info on Bézier curves](https://freesewing.dev/guides/prerequisites/bezier-curves) to learn more about how curves are constructed). Deze worden bepaald door de zogenaamde _spread_.
 
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option to control the spread upwards, and downwards:
 
