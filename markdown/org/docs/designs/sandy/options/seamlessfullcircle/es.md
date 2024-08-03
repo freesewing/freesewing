@@ -9,8 +9,8 @@ Selecciona "Sí" para un círculo sin costuras, que se corta en un doble pliegue
 <Note>
 
 - Esto produce un círculo completo ignorando la opción _Porcentaje de círculo_.
-- Puede que necesites utilizar la [opción de fruncido](arena/opciones/fruncido) para aumentar la circunferencia de la cintura y que se ajuste a tu asiento/cadera.
-- Tendrás que establecer el [solapamiento de la cintura](sandy/options/waistbandoverlap) en 0%.
+- You may need to use the [gathering option](/docs/designs/sandy/options/gathering) to increase the waist circumference to fit over your seat/hips.
+- You will need to set the [waistband overlap](/docs/designs/sandy/options/waistbandoverlap) to 0%.
 
 </Note>
 
