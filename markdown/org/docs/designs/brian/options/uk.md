@@ -87,7 +87,7 @@ In other words, point 4 can be made higher and lower and, perhaps less intuitive
 
 ![Контроль опорних точок](sleevecapspread.svg)
 
-Тепер у нас є всі початкові та кінцеві точки, щоб накреслити 5 кривих, з яких складатимуться рукава. Нам не вистачає контрольних точок (див. [нашу інформацію про криві Безьє](https://freesewing.dev/concepts/beziercurves) , щоб дізнатися більше про те, як будуються криві). Вони визначаються так званим _спредом_.
+Тепер у нас є всі початкові та кінцеві точки, щоб накреслити 5 кривих, з яких складатимуться рукава. What we're missing are the control points (see [our info on Bézier curves](https://freesewing.dev/guides/prerequisites/bezier-curves) to learn more about how curves are constructed). Вони визначаються так званим _спредом_.
 
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option to control the spread upwards, and downwards:
 
