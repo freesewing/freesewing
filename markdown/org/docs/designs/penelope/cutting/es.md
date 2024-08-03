@@ -23,7 +23,7 @@ Debido a esto, la lista de corte no especifica cuántas partes traseras cortar, 
 
 <Note>
 
-[Consulta las instrucciones de Penélope](docs/patrones/penélope/instrucciones/#forro) para comprender las alteraciones de las partes delantera y trasera necesarias para el forro.
+[See Penelope Instructions](/docs/designs/penelope/instructions/#lining) to understand alterations to the front and back parts required for the lining.
 
 </Note>
 
