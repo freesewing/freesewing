@@ -87,7 +87,7 @@ jedes Viertel einzeln steuern kannst.
 
 ![Steuerung der Ankerpunkte](sleevecapspread.svg)
 
-Wir haben jetzt alle Anfangs- und Endpunkte, um die 5 Kurven zu zeichnen, die unsere Ärmel ausmachen. Was uns fehlt, sind die Kontrollpunkte (siehe [unsere Infos zu Bézier-Kurven](https://freesewing.dev/concepts/beziercurves) um mehr darüber zu erfahren, wie Kurven konstruiert werden). Diese werden durch den so genannten _Spread_ bestimmt.
+Wir haben jetzt alle Anfangs- und Endpunkte, um die 5 Kurven zu zeichnen, die unsere Ärmel ausmachen. What we're missing are the control points (see [our info on Bézier curves](https://freesewing.dev/guides/prerequisites/bezier-curves) to learn more about how curves are constructed). Diese werden durch den so genannten _Spread_ bestimmt.
 
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option to control the spread upwards, and downwards:
 
