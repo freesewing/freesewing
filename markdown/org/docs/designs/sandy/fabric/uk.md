@@ -24,7 +24,7 @@ title: "Пісочна спідниця-коло: Варіанти тканин"
 
 <Note>
 
-Потрібне натхнення? завітайте на сторінку [Вітрина Сенді] (/showcase/designs/sandy/) і подивіться кілька готових Сенді, створених нашою чудовою спільнотою.
+Потрібне натхнення? check out [Sandy's showcase](/showcase#filter="sandy") page and see some finished Sandy's made by our wonderful community.
 
 </Note>
 
