@@ -20,7 +20,7 @@ order: 100
 FreeSewing - це провідна бібліотека [з відкритим вихідним кодом](https://github.com/freesewing) для виготовлення одягу на замовлення.  
 Улюблена як домашніми швачками, так і модними підприємцями, FreeSewing надає технологічний стек для ваших творчих починань.
 
-FreeSewing - це дітище [Joost De Cock](https://github.com/joostdecock), супровідника FreeSewing. Протягом багатьох років до FreeSewing долучалися й інші люди ( [учасники FreeSewing](/contributors)), а фінансово проект підтримують [меценати FreeSewing](/patrons).
+FreeSewing - це дітище [Joost De Cock](https://github.com/joostdecock), супровідника FreeSewing. Протягом багатьох років до FreeSewing долучалися й інші люди ( [учасники FreeSewing](https://github.com/freesewing/freesewing?tab=readme-ov-file#contributors-)), а фінансово проект підтримують [меценати FreeSewing](/patrons).
 
 <Tip>
 
@@ -68,8 +68,8 @@ If you came to this site looking for _sewing patterns_ and did not immediately f
 Щоб створити викрійки на замовлення, нам потрібні ваші мірки.
 Запитувати їх щоразу було б досить нудно, тому ми зберігаємо їх у вашому акаунті.
 
-Дані вашого облікового запису зберігаються на нашому сервері, відповідно до [нашого повідомлення про конфіденційність] (/docs/about/privacy),
-та з повагою до [ваших прав] (docs/about/rights/).
+Your account data is stored on our backend, subject to [our privacy notice](/docs/about/privacy),
+and with respect for [your rights](/docs/about/rights/).
 
 </Note>
 
