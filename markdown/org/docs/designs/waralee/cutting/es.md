@@ -18,11 +18,16 @@ Tendrás que imprimir los bolsillos y los revestimientos de los bolsillos de la 
 ### Materiales
 
 - **Tela principal**
-  - Corta **2 pantalones** partes.
-  - (Opcional) Corta **2 Piezas de bolsillo** en el pliegue.
-  - Corta **4 piezas backPocket**
+  - Cut **2 pants** parts.
+  - Cut **2 long strap** parts.
+  - Cut **2 short strap** parts.
+
+Optional (pockets) **Main fabric**
   - Corta **4 piezas frontales**
-  - Corta **4 piezas orientadas hacia atrás**
+  - Cut **4 backFacing** parts **Lining fabric**
+  - Cut **2 frontPocket** parts on the fold.
+  - Corta **4 piezas backPocket**
+
 
 <Note>
 
@@ -42,4 +47,5 @@ Necesitarás cortar una tira estrecha de lo que se convertirá en el frente, y u
 Y en el medio entre estos será la pequeña pieza de patrón de corte.
 Asegúrese de medir esto correctamente, y tiene la tela cuadrada antes de empezar a cortar.
 
+Of course, you'll need to cut out the straps too. They're just simple long rectangles. 
 </Tip>
