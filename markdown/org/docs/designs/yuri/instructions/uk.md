@@ -42,7 +42,7 @@ If using a overlocker/serger you can sew seams which need finishing in one go ra
 
 <Note>
 
-На викрійці задня надсічка позначена як перехресна (див. [наш посібник з позначення викрійок](/docs/about/notation/notches/)). Рекомендується робити подвійний надріз при вирізанні деталей, щоб задній надріз було легше відрізнити від переднього.
+On the pattern the back notch is marked as a cross-notch (see [our pattern notation guide](/docs/about/notation#notches)). Рекомендується робити подвійний надріз при вирізанні деталей, щоб задній надріз було легше відрізнити від переднього.
 
 </Note>
 
