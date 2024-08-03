@@ -9,8 +9,8 @@ Kies 'ja' voor een naadloze cirkel, die aan een dubbele stofvouw geknipt wordt. 
 <Note>
 
 - Dit produceert een volledige cirkel waarbij de optie _Circle percent_ wordt genegeerd.
-- Mogelijk moet je de [rimpeloptie](sandy/options/gathering) gebruiken om de tailleomtrek te vergroten zodat deze over je zitvlak/heupen past.
-- Je moet de [taillebandoverlap] (sandy/opties/waistbandoverlap) instellen op 0%.
+- You may need to use the [gathering option](/docs/designs/sandy/options/gathering) to increase the waist circumference to fit over your seat/hips.
+- You will need to set the [waistband overlap](/docs/designs/sandy/options/waistbandoverlap) to 0%.
 
 </Note>
 
