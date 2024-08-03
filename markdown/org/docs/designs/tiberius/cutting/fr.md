@@ -6,7 +6,7 @@ title: "Tiberius Tunica : Instructions de coupe"
 
 ##### Utilise la puissance de l'option _paperless_ - n'imprime _pas_ ce motif
 
-Tibère n'est qu'un grand rectangle, donc imprimer le motif est un peu du gaspillage. Sauvegarde un arbre, active l'option [paperless](/docs/guide/options/paperless), et copie les dimensions sur ton tissu, tout en respectant la ligne de grain.
+Tibère n'est qu'un grand rectangle, donc imprimer le motif est un peu du gaspillage. Save a tree, toggle the [paperless](/docs/about/site/draft/core-settings/paperless) option, and copy the dimensions to your fabric, while respecting the grainline.
 
 </Tip>
 
