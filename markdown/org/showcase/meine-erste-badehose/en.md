@@ -1,5 +1,5 @@
 ---
-title: "Meine erste Badehose"
+title: "My first swim trunks"
 caption: ""
 date: 20240703
 intro: ""
