@@ -9,8 +9,8 @@ import { useState, useEffect } from 'react'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { Loading } from 'shared/components/spinner.mjs'
 
-const ghPrefix = 'https://raw.githubusercontent.com/freesewing/freesewing/develop/markdown'
-const fromGithub = true
+const remotePrefix = '/markdown'
+const fromRemote = true
 
 const titles = {
   1: ({ title }) => <h1>{title}</h1>,
@@ -27,9 +27,9 @@ export const DynamicMdx = ({ site = 'org', slug, language, title = 1 }) => {
 
   useEffect(() => {
     const loadMdx = async () => {
-      const response = await fetch(`${ghPrefix}/${site}/${slug}/${language}.md`)
+      const response = await fetch(`${remotePrefix}/${site}/${slug}/${language}.md`)
       const md = await response.text()
-      const mdx = await compileMdx({ site, slug, language, md, fromGithub })
+      const mdx = await compileMdx({ site, slug, language, md, fromRemote })
       const { frontmatter: fm } = await run(mdx, runtime)
       setMdx(mdx)
       setFrontmatter(fm)

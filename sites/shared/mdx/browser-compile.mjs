@@ -7,7 +7,7 @@ import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 import remarkGfm from 'remark-gfm'
 import smartypants from 'remark-smartypants'
 // FreeSewing custom remark plugins
-import { remarkGithubImages } from './remark-github-images.mjs'
+import { remarkRemoteImages } from './remark-remote-images.mjs'
 
 /*
  * Compiles markdown/mdx to a function body
@@ -22,7 +22,7 @@ export const compileMdx = async ({
    * This is also used for inline markdown (like what users provide)
    * in which case we do not need this plugin
    */
-  if (site && slug) remarkPlugins.push([remarkGithubImages, { site, slug }])
+  if (site && slug) remarkPlugins.push([remarkRemoteImages, { site, slug }])
   const mdx = String(
     await compile(md, {
       outputFormat: 'function-body',

@@ -2,7 +2,11 @@
 import { oraPromise } from 'ora'
 import { capitalize } from '../utils.mjs'
 // Handlers
-import { prebuildDocs as docs, prebuildPosts as posts } from './markdown.mjs'
+import {
+  prebuildDocs as docs,
+  prebuildPosts as posts,
+  prebuildMdRaw as mdRaw,
+} from './markdown.mjs'
 import { prebuildNavigation as navigation } from './navigation.mjs'
 import { prebuildGitData as git } from './git.mjs'
 import { prebuildContributors as contributors } from './contributors.mjs'
@@ -40,6 +44,7 @@ const handlers = {
   'Page Templates': true,
   search,
   ogImages,
+  mdRaw,
 }
 
 /*

@@ -22,5 +22,6 @@ prebuildRunner({
     git: false,
     patrons: false,
     posts: false,
+    mdRaw: false,
   },
 })

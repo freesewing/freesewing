@@ -309,6 +309,28 @@ const writeFile = async (filename, exportname, site, content) => {
 }
 
 /*
+ * Copy all the markdown resources + image assets to the public folder
+ */
+const copyMdRawFiles = async (site) => {
+  const src = await path.resolve(process.cwd(), '..', '..', 'markdown', site)
+  const dst = await path.resolve(process.cwd(), '..', site, 'public', 'markdown')
+
+  await new Promise((resolve, reject) => {
+    exec(`mkdir -p ${dst}`, { maxBuffer: 2048 * 1024 }, (error, stdout, stderr) => {
+      if (error) reject(error)
+      resolve(stdout)
+    })
+  })
+
+  await new Promise((resolve, reject) => {
+    exec(`cp -r ${src} ${dst}`, { maxBuffer: 2048 * 1024 }, (error, stdout, stderr) => {
+      if (error) reject(error)
+      resolve(stdout)
+    })
+  })
+}
+
+/*
  * Main method that does what needs doing for the docs
  */
 export const prebuildDocs = async (store) => {
@@ -341,4 +363,11 @@ export const prebuildPosts = async (store) => {
   await writeFile('showcase-meta', 'meta', 'org', store.posts.showcase.meta)
   await writeFile('design-examples', 'examples', 'org', store.posts.showcase.designShowcases)
   await writeFile('authors', 'authors', 'org', store.users)
+}
+
+/*
+ * Main method to collect all the raw resource paths to be served as static resources for client-side rendering
+ */
+export const prebuildMdRaw = async (store) => {
+  await copyMdRawFiles(store.site)
 }
