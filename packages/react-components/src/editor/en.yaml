@@ -18,6 +18,7 @@ requiredMeasurements: Required Measurements
 optionalMeasurements: Optional Measurements
 missingMeasurements: Missing Measurements
 missingMeasurementsInfo: To generate this pattern, we need the following additional measurements
+missingMeasurementsNotify: To generate this pattern, we need some additional measurements
 
 # Measurements sets
 noOwnSets: You do not have any of your own measurements sets (yet)
@@ -216,3 +217,51 @@ saIncluded: (This includes seam allowance)
 saExcluded: (This does not include seam allowance)
 saUnused: (This part does not require any seam allowance)
 partHiddenByExpand: This part is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.
+
+# Auth
+authRequired: Authentication required
+membersOnly: This functionality requires a FreeSewing account.
+signUp: Sign Up
+signIn: Sign In
+statusUnknown: Account status warning
+statusUnknownMsg: Your account status prohibits us from processing your data. Please contact support.
+consentLacking: Consent lacking
+consentLackingMsg: We do not have your consent for processing your data. Without consent, we have no legal basis to process your data.
+accountProhibited: Your account has been disabled
+accountProhibitedMsg: Your account has been administratively disabled.
+accountDisabled: Account disabled
+accountDisabledMsg: You cannot re-enable a disabled account. You need to contact support to address this.
+accountInactive: Your account is inactive
+accountInactiveMsg: You must activate your account via the signup link we sent you.
+signupAgain: If you cannot find the link, you can receive a new one by signing up again.
+cannotUse: A disabled account cannot be used.
+contactSupport: Contact support
+reviewConsent: Review your consent
+roleLacking: You lack the required role to access this content
+roleLackingMsg: This content requires the <b>{ requiredRole }</b> role. Your role is <b>{ role }</b> which does not grant you access to this content.
+
+# save pattern
+bookmarkPattern: Bookmark pattern
+savePattern: Save pattern
+saveAsNewPattern: Save as new pattern
+savePatternAs: Save pattern as...
+savePatternAsHellip: Save pattern as...
+patternBookmarkCreated: Pattern bookmark created
+see: See
+whereToGoAfterSaveAs: After saving the new pattern, what do you want to do?
+continueEditingTitle: Continue editing
+continueEditingDesc: Load the newly saved pattern in the pattern editor, so you can make more changes.
+goToPatternTitle: Navigate to the pattern page
+goToPatternDesc: Exit the pattern editor and navigate to the pattern page where you can update the pattern's metadata.
+addNotes: Add notes
+addSettingsToNotes: Add settings to notes
+exporting: Exporting
+exportAsData: Export as data
+exportForEditing: Export for editing
+exportForPrinting: Export for printing
+exportPattern-txt: Export a PDF suitable for your printer, or download this pattern in a variety of formats
+exportPattern: Export pattern
+settings: Settings
+patternTitle: Pattern Title
+patternNotes: Pattern Notes
+exitEditor: Exit editor

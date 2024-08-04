@@ -602,7 +602,6 @@ Backend.prototype.adminImpersonateUser = async function (id) {
  * Load newsletter subscribers (admin method)
  */
 Backend.prototype.adminLoadSubscribers = async function () {
-  console.log(this.auth)
   return responseHandler(await api.get(`/admin/subscribers/jwt`, this.auth))
 }
 

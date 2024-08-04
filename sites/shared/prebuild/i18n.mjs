@@ -12,7 +12,7 @@ import { plugins } from '../i18n/plugins.mjs'
  * This holds aliases for namespaces so we can write them shorter
  */
 const shorterNs = {
-  'pattern-editor': 'pe',
+  editor: 'pe',
 }
 
 /*

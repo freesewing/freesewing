@@ -1,15 +1,7 @@
-import { useState, useEffect } from 'react'
-//import { Spinner } from 'shared/components/spinner.mjs'
-//import { OkIcon, WarningIcon } from 'shared/components/icons.mjs'
-//import { useTranslation } from 'next-i18next'
+import { useEffect } from 'react'
 
 export const LoadingStatus = ({ Swizzled, state, update }) => {
-  //const { t } = useTranslation(ns)
-  console.log('component')
-  const [fade, setFade] = useState('opacity-100')
-  //const [timer, setTimer] = useState(false)
   useEffect(() => {
-    console.log('fade effect')
     if (typeof state._.loading === 'object') {
       for (const conf of Object.values(state._.loading)) {
         if (conf.fadeTimer)
@@ -22,31 +14,9 @@ export const LoadingStatus = ({ Swizzled, state, update }) => {
           }, conf.clearTimer)
       }
     }
-    //  if (state._.loading loadingStatus[2]) {
-    //    if (timer) clearTimeout(timer)
-    //    setTimer(
-    //      window.setTimeout(
-    //        () => {
-    //          setFade('opacity-0')
-    //        },
-    //        timeout * 1000 - 350
-    //      )
-    //    )
-    //  }
   }, [state._])
 
   if (!state._.loading || Object.keys(state._.loading).length < 1) return null
-
-  //let color = 'secondary'
-  //let icon = <Swizzled.components.Spinner />
-  //if (loadingStatus[2]) {
-  //  color = loadingStatus[3] ? 'success' : 'error'
-  //  icon = loadingStatus[3] ? (
-  //    <OkIcon stroke={4} className="w-8 h-8" />
-  //  ) : (
-  //    <WarningIcon className="w-8 h-8" stroke={2} />
-  //  )
-  //}
 
   return (
     <div className="fixed bottom-0 md:buttom-28 left-0 w-full z-30 md:px-4 md:mx-auto mb-4">

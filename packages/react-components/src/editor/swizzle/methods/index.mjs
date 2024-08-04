@@ -56,6 +56,8 @@ import { flattenFlags } from './flatten-flags.mjs'
 import { stateUpdateFactory } from './state-update-factory.mjs'
 import { statePrefixPath } from './state-prefix-path.mjs'
 import { initialEditorState } from './initial-editor-state.mjs'
+import { shortDate } from './short-date.mjs'
+import { notEmpty } from './not-empty.mjs'
 /*
  * Placeholder for methods that need to be swizzled or won't be available
  */
@@ -91,12 +93,14 @@ const defaultMethods = {
   menuRoundPct,
   menuValidateNumericValue,
   menuValueWasChanged,
+  notEmpty,
   nsMerge,
   objUpdate,
   parseDistanceInput,
   round,
   roundMm,
   setModal: noop,
+  shortDate,
   stateUpdateFactory,
   statePrefixPath,
   structureMeasurementsAsDesign,

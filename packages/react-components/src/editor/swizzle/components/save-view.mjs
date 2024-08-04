@@ -1,43 +1,34 @@
-//  __SDEFILE__ - This file is a dependency for the stand-alone environment
-// Dependencies
-//import { capitalize, shortDate, notEmpty, horFlexClassesNoSm } from 'shared/utils.mjs'
-//import yaml from 'js-yaml'
-//// Context
-//import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
-//// Hooks
-//import { useState, useContext } from 'react'
-//import { useTranslation } from 'next-i18next'
-//import { useRouter } from 'next/router'
-//import { useBackend } from 'shared/hooks/use-backend.mjs'
-//// Components
-//import { AuthWrapper } from 'shared/components/wrappers/auth/index.mjs'
-//import { StringInput, MarkdownInput, ListInput } from 'shared/components/inputs.mjs'
-//import {
-//  SaveIcon,
-//  SaveAsIcon,
-//  EditIcon,
-//  PlusIcon,
-//  BookmarkIcon,
-//  ExportIcon,
-//} from 'shared/components/icons.mjs'
-//import { Popout } from 'shared/components/popout/index.mjs'
-//import { PageLink } from 'shared/components/link.mjs'
-//import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
+import { useState } from 'react'
+import yaml from 'js-yaml'
 
 export const SaveView = ({ Swizzled, state, update }) => {
   // Hooks
-  const backend = Swizzled.hooks.useBackend()
+  //const backend = Swizzled.hooks.useBackend()
+  const { t } = Swizzled.methods
 
   // State
-  const [name, setName] = useState(`${capitalize(design)} / ${shortDate(router.locale)}`)
+  const [name, setName] = useState(
+    `${Swizzled.methods.capitalize(state.design)} / ${Swizzled.methods.shortDate(status.locale)}`
+  )
   const [withNotes, setWithNotes] = useState(false)
   const [notes, setNotes] = useState('')
   const [savedId, setSavedId] = useState()
   const [bookmarkedId, setBookmarkedId] = useState()
   const [editAfterSaveAs, setEditAfterSaveAs] = useState(true)
+  const [saveAs, setSaveAs] = useState(false)
+  const [settingsAdded, setSettingsAdded] = useState(false)
 
   const addSettingsToNotes = () => {
-    setNotes(notes + '\n```yaml\n' + yaml.dump(settings) + '````')
+    setNotes(
+      notes +
+        '\n\n#### ' +
+        Swizzled.methods.t('pe:settings') +
+        '\n\n' +
+        '```yaml\n' +
+        yaml.dump(state.settings) +
+        '````'
+    )
+    setSettingsAdded(true)
   }
 
   const saveAsNewPattern = async () => {
@@ -100,21 +91,17 @@ export const SaveView = ({ Swizzled, state, update }) => {
     } else setLoadingStatus([true, 'backendError', true, false])
   }
 
-  const docs = {}
-  for (const field of ['name', 'notes', 'goto']) {
-    docs[field] = <DynamicMdx language={i18n.language} slug={`docs/about/site/patterns/${field}`} />
-  }
-
   return (
-    <AuthWrapper>
+    <Swizzled.components.AuthWrapper>
+      <Swizzled.components.HeaderMenu {...{ state, update }} />
       <div className="m-auto mt-8 max-w-2xl px-4">
         {saveAs && saveAs.pattern ? (
           <>
-            <h2>{t('workbench:savePattern')}</h2>
+            <h2>{t('pe:savePattern')}</h2>
             {savedId && (
               <Popout link>
                 <h5>{t('workbend:patternSaved')}</h5>
-                {t('workbench:see')}:{' '}
+                {t('pe:see')}:{' '}
                 <PageLink
                   href={`/account/patterns/${savedId}`}
                   txt={`/account/patterns/${savedId}`}
@@ -122,19 +109,19 @@ export const SaveView = ({ Swizzled, state, update }) => {
               </Popout>
             )}
             <button
-              className={`${horFlexClassesNoSm} btn btn-primary btn-lg w-full mt-2 mb-8`}
+              className={`${Swizzled.config.classeshorFlexNoSm} btn btn-primary btn-lg w-full mt-2 my-8`}
               onClick={savePattern}
             >
               <SaveIcon className="h-8 w-8" />
-              {t('workbench:savePattern')} #{saveAs.pattern}
+              {t('pe:savePattern')} #{saveAs.pattern}
             </button>
           </>
         ) : null}
-        <h2>{t('workbench:saveAsNewPattern')}</h2>
+        <h2>{t('pe:saveAsNewPattern')}</h2>
         {bookmarkedId && (
           <Popout link>
-            <h5>{t('workbench:patternBookmarkCreated')}</h5>
-            {t('workbench:see')}:{' '}
+            <h5>{t('pe:patternBookmarkCreated')}</h5>
+            {t('pe:see')}:{' '}
             <PageLink
               href={`/account/bookmarks/${bookmarkedId}`}
               txt={`/account/bookmarks/${bookmarkedId}`}
@@ -142,89 +129,82 @@ export const SaveView = ({ Swizzled, state, update }) => {
           </Popout>
         )}
         <div className="mb-4">
-          <StringInput
-            label={t('workbench:name')}
+          <Swizzled.components.StringInput
+            label={t('pe:patternTitle')}
             current={name}
             update={setName}
-            valid={notEmpty}
-            docs={docs.name}
+            valid={Swizzled.methods.notEmpty}
+            labelBR={
+              <>
+                {withNotes ? (
+                  <div className="flex flex-row items-center gap-4">
+                    <button
+                      className={`font-bold ${Swizzled.config.classes.link}`}
+                      onClick={() => setWithNotes(false)}
+                    >
+                      {t('pe:hideNotes')}
+                    </button>
+                    <button
+                      className={`font-bold ${Swizzled.config.classes.link}`}
+                      onClick={addSettingsToNotes}
+                    >
+                      {t('pe:addSettingsToNotes')}
+                    </button>
+                  </div>
+                ) : (
+                  <button
+                    className={`font-bold ${Swizzled.config.classes.link}`}
+                    onClick={() => setWithNotes(true)}
+                  >
+                    {t('pe:addNotes')}
+                  </button>
+                )}
+              </>
+            }
           />
-
           {withNotes ? (
-            <MarkdownInput
-              label={t('workbench:notes')}
+            <Swizzled.components.MarkdownInput
+              label={t('pe:patternNotes')}
               current={notes}
               update={setNotes}
-              docs={docs.notes}
             />
           ) : null}
-        </div>
-        <ListInput
-          update={setEditAfterSaveAs}
-          label={t('workbench:whereToGoAfterSaveAs')}
-          current={editAfterSaveAs}
-          docs={docs.goto}
-          list={[
-            {
-              val: true,
-              label: t('workbench:continueEditingTitle'),
-              desc: t('workbench:continueEditingDesc'),
-            },
-            {
-              val: false,
-              label: t('workbench:goToPatternTitle'),
-              desc: t('workbench:goToPatternDesc'),
-            },
-          ]}
-        />
-        <div className="grid md:grid-cols-2 gap-2 mt-4 mb-8">
-          {withNotes ? (
-            <button
-              className={`${horFlexClassesNoSm} btn btn-primary btn-outline`}
-              onClick={addSettingsToNotes}
-            >
-              <PlusIcon />
-              {t('workbench:addSettingsToNotes')}
-            </button>
-          ) : (
-            <button
-              className={`${horFlexClassesNoSm} btn btn-primary btn-outline`}
-              onClick={() => setWithNotes(true)}
-            >
-              <EditIcon />
-              {t('workbench:addNotes')}
-            </button>
-          )}
           <button
-            className={`${horFlexClassesNoSm} btn btn-primary w-full`}
+            className={`${Swizzled.config.classes.horFlex} btn btn-primary btn-lg w-full mt-8`}
             onClick={saveAsNewPattern}
+            title={t('pe:continueEditingDesc')}
           >
-            <SaveAsIcon />
-            {t('workbench:saveAsNewPattern')}
-          </button>
-        </div>
-        <h2>
-          {t('workbench:bookmarkPattern')}
-          <span className="px-2">/</span>
-          {t('workbench:exportPattern')}
-        </h2>
-        <div className="grid md:grid-cols-2 gap-2 mt-4 mb-8">
-          <button
-            className={`${horFlexClassesNoSm} btn btn-primary btn-outline w-full`}
-            onClick={bookmarkPattern}
-          >
-            <BookmarkIcon />
-            {t('workbench:bookmarkPattern')}
+            <div className="flex flex-row items-center">
+              <Swizzled.components.SaveAsIcon className="w-8 h-8" />
+              <span className="opacity-60">→</span>
+              <Swizzled.components.EditIcon className="w-6 h-6 opacity-60" />
+            </div>
+            <div className="flex flex-col gap-1 items-start">
+              <span className="mt-2">{t('pe:saveAsNewPattern')}</span>
+              <br />
+              <span className="text-sm -mt-2 opacity-80 italic">
+                & {t('pe:continueEditingTitle')}
+              </span>
+            </div>
           </button>
           <button
-            className={`${horFlexClassesNoSm} btn btn-primary btn-outline w-full`}
-            onClick={() => setView('export')}
+            className={`${Swizzled.config.classes.horFlex} btn btn-primary btn-lg w-full btn-outline mt-2 mb-8`}
+            onClick={saveAsNewPattern}
+            title={t('pe:goToPatternDesc')}
           >
-            <ExportIcon />
-            {t('workbench:exportPattern')}
+            <div className="flex flex-row items-center">
+              <Swizzled.components.SaveAsIcon className="w-8 h-8" />
+              <span className="opacity-60">→</span>
+              <Swizzled.components.DocsIcon className="w-6 h-6 opacity-60" />
+            </div>
+            <div className="flex flex-col gap-1 items-start">
+              <span className="mt-2">{t('pe:saveAsNewPattern')}</span>
+              <br />
+              <span className="text-sm -mt-2 opacity-80 italic">& {t('pe:exitEditor')}</span>
+            </div>
           </button>
         </div>
       </div>
-    </AuthWrapper>
+    </Swizzled.components.AuthWrapper>
   )
 }

@@ -18,11 +18,17 @@
     "freesewing"
   ],
   "type": "module",
+  "module": "dist/index.mjs",
   "exports": {
+    ".": {
+      "internal": "./src/index.mjs",
+      "default": "./dist/index.mjs"
+    },
     "./pattern": "./src/pattern/index.mjs",
     "./xray": "./src/pattern-xray/index.mjs",
     "./editor": "./src/editor/index.mjs",
     "./icons": "./src/editor/swizzle/components/icons.mjs"
+
   },
   "scripts": {
     "build": "node build.mjs",
@@ -39,14 +45,18 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "react": ">=14"
+    "react": "^18.2.0"
   },
   "dependencies": {
-    "html-react-parser": "^5.0.7"
+    "axios": "1.6.8",
+    "html-react-parser": "^5.0.7",
+    "nuqs": "^1.17.6",
+    "react-markdown": "^9.0.1",
+    "use-local-storage-state": "19.1.0",
+    "use-session-storage-state": "^19.0.0"
   },
   "devDependencies": {},
   "files": [
-    "src/**",
     "dist/*",
     "README.md"
   ],

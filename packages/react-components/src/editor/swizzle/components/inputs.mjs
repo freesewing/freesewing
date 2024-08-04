@@ -24,18 +24,18 @@ export const FormControl = ({
             className="btn btn-ghost btn-sm btn-circle hover:btn-secondary"
             onClick={() =>
               Swizzled.methods.setModal(
-                <ModalWrapper
+                <Swizzled.components.ModalWrapper
                   flex="col"
                   justify="top lg:justify-center"
                   slideFrom="right"
                   keepOpenOnClick
                 >
                   <div className="mdx max-w-prose">{docs}</div>
-                </ModalWrapper>
+                </Swizzled.components.ModalWrapper>
               )
             }
           >
-            <DocsIcon />
+            <Swizzled.components.DocsIcon />
           </button>
         </span>
       ) : null}
@@ -114,8 +114,9 @@ export const NumberInput = ({
   max = 0,
   min = 220,
   step = 1,
+  Swizzled, // Object holding swizzled code
 }) => (
-  <FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
+  <Swizzled.components.FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
     <input
       id={id}
       type="number"
@@ -127,7 +128,7 @@ export const NumberInput = ({
       }`}
       {...{ max, min, step }}
     />
-  </FormControl>
+  </Swizzled.components.FormControl>
 )
 
 /*
@@ -144,8 +145,9 @@ export const StringInput = ({
   id = '', // An id to tie the input to the label
   labelBL = false, // Bottom-Left label
   labelBR = false, // Bottom-Right label
+  Swizzled, // Object holding swizzled code
 }) => (
-  <FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
+  <Swizzled.components.FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
     <input
       id={id}
       type="text"
@@ -156,7 +158,7 @@ export const StringInput = ({
         current === original ? 'input-secondary' : valid(current) ? 'input-success' : 'input-error'
       }`}
     />
-  </FormControl>
+  </Swizzled.components.FormControl>
 )
 
 /*
@@ -174,7 +176,7 @@ export const DesignDropdown = ({
   const { t } = Swizzled.methods
 
   return (
-    <FormControl label={label} docs={docs} forId={id}>
+    <Swizzled.components.FormControl label={label} docs={docs} forId={id}>
       <select
         id={id}
         className="select select-bordered w-full"
@@ -188,7 +190,7 @@ export const DesignDropdown = ({
           </option>
         ))}
       </select>
-    </FormControl>
+    </Swizzled.components.FormControl>
   )
 }
 
@@ -201,10 +203,15 @@ export const ListInput = ({
   list, // The list of items to present { val, label, desc }
   current, // The (value of the) current item
   docs = false, // Docs to load, if any
+  Swizzled, // Object holding swizzled code
 }) => (
-  <FormControl label={label} docs={docs}>
+  <Swizzled.components.FormControl label={label} docs={docs}>
     {list.map((item, i) => (
-      <ButtonFrame key={i} active={item.val === current} onClick={() => update(item.val)}>
+      <Swizzled.components.ButtonFrame
+        key={i}
+        active={item.val === current}
+        onClick={() => update(item.val)}
+      >
         <div className="w-full flex flex-col gap-2">
           <div className="w-full text-lg leading-5">{item.label}</div>
           {item.desc ? (
@@ -213,9 +220,9 @@ export const ListInput = ({
             </div>
           ) : null}
         </div>
-      </ButtonFrame>
+      </Swizzled.components.ButtonFrame>
     ))}
-  </FormControl>
+  </Swizzled.components.FormControl>
 )
 
 /*
@@ -230,10 +237,11 @@ export const MarkdownInput = ({
   id = '', // An id to tie the input to the label
   labelBL = false, // Bottom-Left label
   labelBR = false, // Bottom-Right label
+  Swizzled, // Swizzled code
 }) => (
-  <FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
-    <Tabs tabs={['edit', 'preview']}>
-      <Tab key="edit">
+  <Swizzled.components.FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
+    <Swizzled.components.Tabs tabs={['edit', 'preview']}>
+      <Swizzled.components.Tab key="edit">
         <div className="flex flex-row items-center mt-4">
           <textarea
             id={id}
@@ -244,14 +252,14 @@ export const MarkdownInput = ({
             onChange={(evt) => update(evt.target.value)}
           />
         </div>
-      </Tab>
-      <Tab key="preview">
-        <div className="flex flex-row items-center mt-4">
-          <Mdx md={current} />
+      </Swizzled.components.Tab>
+      <Swizzled.components.Tab key="preview">
+        <div className="mdx mt-4 shadow p-2 px-4 rounded">
+          <Swizzled.components.Markdown>{current}</Swizzled.components.Markdown>
         </div>
-      </Tab>
-    </Tabs>
-  </FormControl>
+      </Swizzled.components.Tab>
+    </Swizzled.components.Tabs>
+  </Swizzled.components.FormControl>
 )
 
 export const MeasurementInput = ({
@@ -317,7 +325,7 @@ export const MeasurementInput = ({
    * See: https://github.com/facebook/react/issues/16554
    */
   return (
-    <FormControl
+    <Swizzled.components.FormControl
       label={t(m) + (isDegree ? ' (°)' : '')}
       docs={docs}
       forId={id}
@@ -331,7 +339,7 @@ export const MeasurementInput = ({
         onChange={(evt) => localUpdate(evt.target.value)}
         className={`input w-full input-bordered ${inputClasses}`}
       />
-    </FormControl>
+    </Swizzled.components.FormControl>
   )
 }
 
@@ -350,8 +358,9 @@ export const ToggleInput = ({
   labelTR = false, // Top-Right label
   labelBL = false, // Bottom-Left label
   labelBR = false, // Bottom-Right label
+  Swizzled, // Object holding swizzled code
 }) => (
-  <FormControl
+  <Swizzled.components.FormControl
     {...{ labelBL, labelBR, labelTR }}
     label={
       label
@@ -369,5 +378,5 @@ export const ToggleInput = ({
       className="toggle my-3 toggle-primary"
       checked={list.indexOf(current) === 0 ? true : false}
     />
-  </FormControl>
+  </Swizzled.components.FormControl>
 )

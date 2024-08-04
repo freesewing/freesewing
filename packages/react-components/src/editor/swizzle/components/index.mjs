@@ -24,6 +24,19 @@
 import Link from 'next/link'
 // Accordion
 import { BaseAccordion, SubAccordion, Accordion } from './accordion.mjs'
+// Auth wrapper
+import {
+  AuthWrapper,
+  AuthMessageWrapper,
+  ContactSupport,
+  AuthRequired,
+  AccountInactive,
+  AccountDisabled,
+  AccountProhibited,
+  AccountStatusUnknown,
+  RoleLacking,
+  ConsentLacking,
+} from './auth-wrapper.mjs'
 // Ux
 import { Ux } from './ux.mjs'
 // Popout
@@ -66,6 +79,7 @@ import {
   KioskIcon,
   LeftIcon,
   ListIcon,
+  LockIcon,
   MeasurementsSetIcon,
   MenuIcon,
   NoIcon,
@@ -80,8 +94,10 @@ import {
   RotateIcon,
   SaIcon,
   SaveIcon,
+  SaveAsIcon,
   SettingsIcon,
   SpinnerIcon,
+  TipIcon,
   TrashIcon,
   UiIcon,
   UnitsIcon,
@@ -193,12 +209,25 @@ import { Null } from './null.mjs'
 import { LargeScreenOnly } from './large-screen-only.mjs'
 import { Tooltip } from './tooltip.mjs'
 import { LoadingStatus } from './loading-status.mjs'
+import { Spinner, Loading } from './spinner.mjs'
+import { Tab, Tabs } from './tabs.mjs'
+import { Markdown } from './markdown.mjs'
 
 /**
  * This object holds all components that can be swizzled
  */
 const defaultComponents = {
   Accordion,
+  AuthWrapper,
+  AuthMessageWrapper,
+  ContactSupport,
+  AuthRequired,
+  AccountInactive,
+  AccountDisabled,
+  AccountProhibited,
+  AccountStatusUnknown,
+  RoleLacking,
+  ConsentLacking,
   BaseAccordion,
   BookmarkedSetPicker,
   ButtonFrame,
@@ -238,7 +267,9 @@ const defaultComponents = {
   LargeScreenOnly,
   Link,
   ListInput,
+  Loading,
   LoadingStatus,
+  Markdown,
   MarkdownInput,
   MeasurementInput,
   MeasurementsSetCard,
@@ -252,7 +283,10 @@ const defaultComponents = {
   Popout,
   StringInput,
   SubAccordion,
+  Spinner,
   SpinnerIcon,
+  Tab,
+  Tabs,
   TemporaryLoader,
   ToggleInput,
   Tooltip,
@@ -281,6 +315,7 @@ const defaultComponents = {
   DocsIcon,
   EditIcon,
   ExpandIcon,
+  ExportIcon,
   FlagIcon,
   FlagNoteIcon,
   FlagInfoIcon,
@@ -296,6 +331,7 @@ const defaultComponents = {
   KioskIcon,
   LeftIcon,
   ListIcon,
+  LockIcon,
   MeasurementsSetIcon,
   NoIcon,
   OkIcon,
@@ -309,7 +345,9 @@ const defaultComponents = {
   RotateIcon,
   SaIcon,
   SaveIcon,
+  SaveAsIcon,
   SettingsIcon,
+  TipIcon,
   TrashIcon,
   UiIcon,
   UnitsIcon,
