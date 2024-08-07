@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "Dijeron que estaba loca por hacer una chaqueta de cebra, así que la hice de todos modos. Y se hundió en el pantano."
 date: "2017-09-04"
 intro: "Para los no iniciados, el refashioners es un evento/concurso anual organizado por la encantadora (y muy persuasiva) Portia Lawrie ."
