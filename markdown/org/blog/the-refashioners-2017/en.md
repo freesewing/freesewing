@@ -1,5 +1,5 @@
 ---
-author: "joostdecock"
+author: 1
 caption: "They said I was crazy to make a zebra jacket, so I made it anyway. And it sank into the swamp."
 date: "2017-09-04"
 intro: "For the uninitiated, the refashioners is a yearly event/competition hosted by the charming (and very persuasive) Portia Lawrie ."
