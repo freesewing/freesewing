@@ -113,13 +113,33 @@ export const frontSideDart = {
       0.8
     )
 
-    // Bust dart
+    // Bust dart and side seam
+    let dartTopAngle = 0
+    const sideSeamLength = store.get('sideSeamLength')
+    const maxRotations = 1000 // Avoid runaway rotations
+    const minimumBelowDart = sideSeamLength * 0.2
     points.bustDartTop = utils.beamsIntersect(
       points.armhole,
       points.sideHem,
       points.bust,
-      points.bust.shift(0, 100)
+      points.bust.shift(dartTopAngle, 100)
     )
+    let aboveDart = points.armhole.dist(points.bustDartTop)
+    let belowDart = sideSeamLength - aboveDart
+    let rotations = 1
+    while (belowDart < minimumBelowDart && rotations < maxRotations) {
+      dartTopAngle += 0.05
+      points.bustDartTop = utils.beamsIntersect(
+        points.armhole,
+        points.sideHem,
+        points.bust,
+        points.bust.shift(dartTopAngle, 100)
+      )
+      aboveDart = points.armhole.dist(points.bustDartTop)
+      belowDart = sideSeamLength - aboveDart
+      rotations++
+    }
+
     points.bustDartBottom = points.bustDartTop.rotate(angle * -1, points.bust)
     points.bustDartMiddle = points.bustDartTop.shiftFractionTowards(points.bustDartBottom, 0.5)
     points.bustDartTip = points.bustDartMiddle.shiftFractionTowards(
@@ -139,9 +159,6 @@ export const frontSideDart = {
       .shiftFractionTowards(points.bustDartBottom, 0.666)
       .rotate(-5 * options.bustDartCurve, points.bust)
 
-    // Side seam length
-    let aboveDart = points.armhole.dist(points.bustDartTop)
-    let belowDart = store.get('sideSeamLength') - aboveDart
     points.sideHemInitial = points.bustDartBottom
       .shift(-90, belowDart)
       .shift(180, store.get('sideReduction'))
