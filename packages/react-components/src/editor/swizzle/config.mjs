@@ -35,11 +35,14 @@ export const defaultConfig = {
   mainViews: ['draft', 'designs', 'save', 'export'],
   extraViews: ['measurements', 'printLayout', 'editSettings', 'docs'],
   devViews: ['inspect', 'logs', 'test', 'timing'],
+  measurementsFreeViews: ['designs', 'measurements', 'docs', 'picker'],
   mainViewColors: {
     draft: 'primary',
     save: 'none',
     export: 'none',
     designs: 'accent',
+    measurements: 'primary',
+    docs: 'secondary',
   },
   // View components
   // Facilitate lookup of view components
@@ -124,7 +127,7 @@ export const defaultConfig = {
       inspect: 4,
       docs: 1,
       designs: 1,
-      viewPicker: 1,
+      picker: 1,
     },
   },
   defaultUx: 4,
@@ -168,6 +171,8 @@ export const defaultConfig = {
     },
     base: 'user',
   },
+  // Ms before to fade out a notification
+  notifyTimeout: 6660,
 }
 
 /*

@@ -58,11 +58,15 @@ export const stateUpdateFactory = (Swizzled, setState, setEphemeralState) => ({
    * These are setters for the ephemeral state which is passed down as part of the
    * state object, but is not managed in the state backend because it's ephemeral
    */
-  startLoading: (id, val) =>
+  startLoading: (id, conf = {}) =>
     setEphemeralState((cur) => {
       const newState = { ...cur }
       if (typeof newState.loading !== 'object') newState.loading = {}
-      newState.loading[id] = val
+      if (typeof conf.color === 'undefined') conf.color = 'info'
+      newState.loading[id] = {
+        msg: Swizzled.methods.t('pe:genericLoadingMsg'),
+        ...conf,
+      }
       return newState
     }),
   stopLoading: (id) =>
@@ -72,12 +76,55 @@ export const stateUpdateFactory = (Swizzled, setState, setEphemeralState) => ({
       return newState
     }),
   clearLoading: (id) => setEphemeralState((cur) => ({ ...cur, loading: {} })),
-  notify: (conf) =>
+  notify: (conf, id = false) =>
     setEphemeralState((cur) => {
       const newState = { ...cur }
+      /*
+       * Passing in an id allows making sure the same notification is not repeated
+       * So if the id is set, and we have a loading state with that id, we just return
+       */
+      if (id && cur.loading?.[id]) return newState
       if (typeof newState.loading !== 'object') newState.loading = {}
-      const id = Date.now()
-      newState.loading[id] = { ...conf, id, fadeTimer: 4000 }
+      if (id === false) id = Date.now()
+      newState.loading[id] = { ...conf, id, fadeTimer: Swizzled.config.notifyTimeout }
+      return newState
+    }),
+  notifySuccess: (msg, id = false) =>
+    setEphemeralState((cur) => {
+      const newState = { ...cur }
+      /*
+       * Passing in an id allows making sure the same notification is not repeated
+       * So if the id is set, and we have a loading state with that id, we just return
+       */
+      if (id && cur.loading?.[id]) return newState
+      if (typeof newState.loading !== 'object') newState.loading = {}
+      if (id === false) id = Date.now()
+      newState.loading[id] = {
+        msg,
+        icon: 'success',
+        color: 'success',
+        id,
+        fadeTimer: Swizzled.config.notifyTimeout,
+      }
+      return newState
+    }),
+  notifyFailure: (msg, id = false) =>
+    setEphemeralState((cur) => {
+      const newState = { ...cur }
+      /*
+       * Passing in an id allows making sure the same notification is not repeated
+       * So if the id is set, and we have a loading state with that id, we just return
+       */
+      if (id && cur.loading?.[id]) return newState
+      if (typeof newState.loading !== 'object') newState.loading = {}
+      if (id === false) id = Date.now()
+      newState.loading[id] = {
+        msg,
+        icon: 'failure',
+        color: 'error',
+        id,
+        fadeTimer: Swizzled.config.notifyTimeout,
+      }
       return newState
     }),
   fadeNotify: (id) =>

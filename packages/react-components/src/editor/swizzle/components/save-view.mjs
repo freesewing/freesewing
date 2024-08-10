@@ -3,7 +3,7 @@ import yaml from 'js-yaml'
 
 export const SaveView = ({ Swizzled, state, update }) => {
   // Hooks
-  //const backend = Swizzled.hooks.useBackend()
+  const backend = Swizzled.hooks.useBackend()
   const { t } = Swizzled.methods
 
   // State
@@ -32,25 +32,34 @@ export const SaveView = ({ Swizzled, state, update }) => {
   }
 
   const saveAsNewPattern = async () => {
-    setLoadingStatus([true, 'savingPattern'])
-    const patternData = { design, name, public: false, settings, data: {} }
+    const loadingId = 'savePatternAs'
+    update.startLoading(loadingId)
+    const patternData = {
+      design: state.design,
+      name,
+      public: false,
+      settings: state.settings,
+      data: {},
+    }
     if (withNotes) patternData.notes = notes
     const result = await backend.createPattern(patternData)
     if (result.success) {
       const id = result.data.pattern.id
-      setLoadingStatus([
-        true,
-        <>
-          {t('status:patternSaved')} <small>[#{id}]</small>
-        </>,
-        true,
-        true,
-      ])
-      router.push(
-        editAfterSaveAs ? `/account/patterns/${design}/edit?id=${id}` : `/account/pattern?id=${id}`
+      update.stopLoading(loadingId)
+      update.view('draft')
+      update.notifySuccess(
+        <span>
+          {t('pe:patternSavedAs')}:{' '}
+          <Swizzled.components.Link
+            href={`/account/pattern?id=${id}`}
+            className={`${Swizzled.config.classes.link} text-secondary-content`}
+          >
+            /account/pattern?id={id}
+          </Swizzled.components.Link>
+        </span>,
+        id
       )
-      if (editAfterSaveAs) setView('draft')
-    } else setLoadingStatus([true, 'backendError', true, false])
+    } else update.notifyFailure('oops', id)
   }
 
   const savePattern = async () => {
@@ -67,6 +76,7 @@ export const SaveView = ({ Swizzled, state, update }) => {
         true,
       ])
       setSavedId(saveAs.pattern)
+      update.notify({ color: 'success', msg: 'boom' }, saveAs.pattern)
     } else setLoadingStatus([true, 'backendError', true, false])
   }
 
@@ -174,35 +184,17 @@ export const SaveView = ({ Swizzled, state, update }) => {
             onClick={saveAsNewPattern}
             title={t('pe:continueEditingDesc')}
           >
-            <div className="flex flex-row items-center">
-              <Swizzled.components.SaveAsIcon className="w-8 h-8" />
-              <span className="opacity-60">→</span>
-              <Swizzled.components.EditIcon className="w-6 h-6 opacity-60" />
-            </div>
-            <div className="flex flex-col gap-1 items-start">
-              <span className="mt-2">{t('pe:saveAsNewPattern')}</span>
-              <br />
-              <span className="text-sm -mt-2 opacity-80 italic">
-                & {t('pe:continueEditingTitle')}
-              </span>
-            </div>
+            <Swizzled.components.SaveAsIcon className="w-8 h-8" />
+            <span>{t('pe:saveAsNewPattern')}</span>
           </button>
-          <button
-            className={`${Swizzled.config.classes.horFlex} btn btn-primary btn-lg w-full btn-outline mt-2 mb-8`}
-            onClick={saveAsNewPattern}
-            title={t('pe:goToPatternDesc')}
-          >
-            <div className="flex flex-row items-center">
-              <Swizzled.components.SaveAsIcon className="w-8 h-8" />
-              <span className="opacity-60">→</span>
-              <Swizzled.components.DocsIcon className="w-6 h-6 opacity-60" />
-            </div>
-            <div className="flex flex-col gap-1 items-start">
-              <span className="mt-2">{t('pe:saveAsNewPattern')}</span>
-              <br />
-              <span className="text-sm -mt-2 opacity-80 italic">& {t('pe:exitEditor')}</span>
-            </div>
-          </button>
+          <p className="text-sm text-right">
+            To access your saved patterns, go to:{' '}
+            <b>
+              <Swizzled.components.PageLink href="//account/patterns">
+                /account/patterns
+              </Swizzled.components.PageLink>
+            </b>
+          </p>
         </div>
       </div>
     </Swizzled.components.AuthWrapper>

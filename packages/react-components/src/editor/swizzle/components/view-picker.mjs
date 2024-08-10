@@ -11,6 +11,29 @@ import { useState } from 'react'
 export const ViewPicker = ({ designs, design, Design, Swizzled, update, state }) => {
   const [showDev, setShowDev] = useState(false)
 
+  /*
+   * If we don't have the measurments, only present measurements free views
+   */
+  if (state._.missingMeasurements.length > 1)
+    return (
+      <div className="text-center mt-8 mb-24 px-4 max-w-xl mx-auto">
+        <h2>{Swizzled.methods.t('Choose an activity')}</h2>
+        <div className="flex flex-col mx-auto justify-center gap-2 mt-4">
+          {Swizzled.config.measurementsFreeViews
+            .filter((view) => view !== 'picker')
+            .map((view) => (
+              <MainCard key={view} {...{ view, update, Design, Swizzled }} />
+            ))}
+          <Swizzled.components.Popout note>
+            <div className="text-left">
+              <h5>{Swizzled.methods.t('pe:measurementsFreeViewsOnly.t')}:</h5>
+              <p>{Swizzled.methods.t('pe:measurementsFreeViewsOnly.d')}</p>
+            </div>
+          </Swizzled.components.Popout>
+        </div>
+      </div>
+    )
+
   return (
     <div className="text-center mt-8 mb-24 px-4">
       <h2>{Swizzled.methods.t('Choose an activity')}</h2>

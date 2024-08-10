@@ -1,6 +1,6 @@
 import { useState, Fragment } from 'react'
 
-export const ViewMenuButton = ({
+export const AsideViewMenuButton = ({
   href,
   label,
   children,
@@ -36,14 +36,16 @@ export const ViewTypeIcon = ({ Swizzled, view, className = 'h-6 w-6 grow-0' }) =
   return <Icon className={className} />
 }
 
-export const ViewMenuSpacer = () => <hr className="my-1 w-full opacity-20 font-bold border-t-2" />
+export const AsideViewMenuSpacer = () => (
+  <hr className="my-1 w-full opacity-20 font-bold border-t-2" />
+)
 
-export const ViewMenuIcons = ({ state, update, setDense, dense, Swizzled }) => {
+export const AsideViewMenuIcons = ({ state, update, setDense, dense, Swizzled }) => {
   const { t } = Swizzled.methods
   const iconSize = 'h-6 w-6 grow-0'
 
   const output = [
-    <Swizzled.components.ViewMenuButton
+    <Swizzled.components.AsideViewMenuButton
       onClick={() => setDense(!dense)}
       label={
         dense ? (
@@ -64,7 +66,7 @@ export const ViewMenuIcons = ({ state, update, setDense, dense, Swizzled }) => {
       ) : (
         <Swizzled.components.LeftIcon className={`${iconSize} animate-bounce-right`} stroke={4} />
       )}
-    </Swizzled.components.ViewMenuButton>,
+    </Swizzled.components.AsideViewMenuButton>,
   ]
 
   let i = 1
@@ -76,21 +78,21 @@ export const ViewMenuIcons = ({ state, update, setDense, dense, Swizzled }) => {
     'spacerOver3',
     ...Swizzled.config.devViews,
     'spacer',
-    'viewPicker',
+    'picker',
   ]) {
-    if (view === 'spacer') output.push(<Swizzled.components.ViewMenuSpacer key={i} />)
+    if (view === 'spacer') output.push(<Swizzled.components.AsideViewMenuSpacer key={i} />)
     else if (view === 'spacerOver3')
-      output.push(state.ui.ux > 3 ? <Swizzled.components.ViewMenuSpacer key={i} /> : null)
+      output.push(state.ui.ux > 3 ? <Swizzled.components.AsideViewMenuSpacer key={i} /> : null)
     else if (state.ui.ux >= Swizzled.config.uxLevels.views[view])
       output.push(
-        <Swizzled.components.ViewMenuButton
+        <Swizzled.components.AsideViewMenuButton
           key={view}
           onClick={() => update.view(view)}
           label={t(`pe:view.${view}.t`)}
           active={state.view === view}
         >
           <Swizzled.components.ViewTypeIcon view={view} />
-        </Swizzled.components.ViewMenuButton>
+        </Swizzled.components.AsideViewMenuButton>
       )
     i++
   }
@@ -98,7 +100,7 @@ export const ViewMenuIcons = ({ state, update, setDense, dense, Swizzled }) => {
   return output
 }
 
-export const ViewMenu = ({ Swizzled, view, update, saveAs = false, state }) => {
+export const AsideViewMenu = ({ Swizzled, view, update, saveAs = false, state }) => {
   const [dense, setDense] = useState(true)
   return (
     <div
@@ -111,7 +113,7 @@ export const ViewMenu = ({ Swizzled, view, update, saveAs = false, state }) => {
     >
       <aside className="sticky top-4 group">
         <div className="flex flex-col items-center w-full">
-          <Swizzled.components.ViewMenuIcons {...{ update, state, setDense, dense }} />
+          <Swizzled.components.AsideViewMenuIcons {...{ update, state, setDense, dense }} />
         </div>
       </aside>
     </div>

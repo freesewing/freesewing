@@ -21,7 +21,7 @@
 /*
  * Import of components that can be swizzled
  */
-import Link from 'next/link'
+import { Link, AnchorLink, PageLink, WebLink, CardLink } from './link.mjs'
 // Accordion
 import { BaseAccordion, SubAccordion, Accordion } from './accordion.mjs'
 // Auth wrapper
@@ -64,6 +64,7 @@ import {
   EditIcon,
   ExpandIcon,
   ExportIcon,
+  FailureIcon,
   FlagIcon,
   FlagNoteIcon,
   FlagInfoIcon,
@@ -97,6 +98,7 @@ import {
   SaveAsIcon,
   SettingsIcon,
   SpinnerIcon,
+  SuccessIcon,
   TipIcon,
   TrashIcon,
   UiIcon,
@@ -199,12 +201,12 @@ import {
 import { Flag, Flags, FlagTypeIcon, FlagsAccordionTitle, FlagsAccordionEntries } from './flags.mjs'
 // View Menu
 import {
-  ViewMenu,
-  ViewMenuIcons,
-  ViewMenuButton,
-  ViewMenuSpacer,
+  AsideViewMenu,
+  AsideViewMenuIcons,
+  AsideViewMenuButton,
+  AsideViewMenuSpacer,
   ViewTypeIcon,
-} from './view-menu.mjs'
+} from './aside-view-menu.mjs'
 import { Null } from './null.mjs'
 import { LargeScreenOnly } from './large-screen-only.mjs'
 import { Tooltip } from './tooltip.mjs'
@@ -226,11 +228,17 @@ const defaultComponents = {
   AccountDisabled,
   AccountProhibited,
   AccountStatusUnknown,
+  AnchorLink,
+  AsideViewMenu,
+  AsideViewMenuIcons,
+  AsideViewMenuButton,
+  AsideViewMenuSpacer,
   RoleLacking,
   ConsentLacking,
   BaseAccordion,
   BookmarkedSetPicker,
   ButtonFrame,
+  CardLink,
   CircleIcon,
   CoreSetting,
   CoreSettingsMenu,
@@ -278,6 +286,7 @@ const defaultComponents = {
   MenuIcon,
   NumberInput,
   Null,
+  PageLink,
   Pattern,
   PatternLayout,
   Popout,
@@ -294,13 +303,10 @@ const defaultComponents = {
   UiPreference,
   UserSetPicker,
   Ux,
-  ViewMenu,
-  ViewMenuIcons,
-  ViewMenuButton,
-  ViewMenuSpacer,
   HeaderMenuViewMenu,
   ViewPicker,
   ViewTypeIcon,
+  WebLink,
   ZoomablePattern,
   ZoomContextProvider,
   // icons
@@ -316,6 +322,7 @@ const defaultComponents = {
   EditIcon,
   ExpandIcon,
   ExportIcon,
+  FailureIcon,
   FlagIcon,
   FlagNoteIcon,
   FlagInfoIcon,
@@ -347,6 +354,7 @@ const defaultComponents = {
   SaveIcon,
   SaveAsIcon,
   SettingsIcon,
+  SuccessIcon,
   TipIcon,
   TrashIcon,
   UiIcon,

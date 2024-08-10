@@ -64,11 +64,14 @@ view.docs.t: Documentation
 view.docs.d: More information and links to documentation
 view.designs.t: Choose a different Design
 view.designs.d: "Current design: {- design }"
-view.viewPicker.t: Choose a different view
+view.picker.t: Choose a different view
 showAdvancedOptions: Show advanced options
 hideAdvancedOptions: Hide advanced options
 views.t: Views
 views.d: Choose between the main views of the pattern editor
+measurementsFreeViewsOnly.t: We are only showing activities that do not require measurements
+measurementsFreeViewsOnly.d: Once we have all measurements required to generate a pattern, you will have more choices here.
+
 
 # menus
 youAreUsingTheDefaultValue: You are using the default value
@@ -243,16 +246,11 @@ roleLackingMsg: This content requires the <b>{ requiredRole }</b> role. Your rol
 # save pattern
 bookmarkPattern: Bookmark pattern
 savePattern: Save pattern
-saveAsNewPattern: Save as new pattern
+saveAsNewPattern: Save as a New Pattern
 savePatternAs: Save pattern as...
 savePatternAsHellip: Save pattern as...
 patternBookmarkCreated: Pattern bookmark created
 see: See
-whereToGoAfterSaveAs: After saving the new pattern, what do you want to do?
-continueEditingTitle: Continue editing
-continueEditingDesc: Load the newly saved pattern in the pattern editor, so you can make more changes.
-goToPatternTitle: Navigate to the pattern page
-goToPatternDesc: Exit the pattern editor and navigate to the pattern page where you can update the pattern's metadata.
 addNotes: Add notes
 addSettingsToNotes: Add settings to notes
 exporting: Exporting
@@ -264,4 +262,6 @@ exportPattern: Export pattern
 settings: Settings
 patternTitle: Pattern Title
 patternNotes: Pattern Notes
-exitEditor: Exit editor
+toAccessPatternsGoTo: To access your patterns, go to
+genericLoadingMessage: Hang tight, we're working on it...
+patternSavedAs: Pattern saved as

@@ -51,9 +51,9 @@ export const MeasurementsView = ({
    */
   useEffect(() => {
     if (!config.views.includes(state.view)) update.view('measurements')
-    if (missingMeasurements && missingMeasurements.length > 0)
-      update.notify({ msg: t('pe:missingMeasurementsNotify'), icon: 'tip' })
-    else update.notify({ msg: t('pe:measurementsAreOk'), icon: 'ok', color: 'success' })
+    if (state._.missingMeasurements && state._.missingMeasurements.length > 0)
+      update.notify({ msg: t('pe:missingMeasurementsNotify'), icon: 'tip' }, 'missingMeasurements')
+    else update.notifySuccess(t('pe:measurementsAreOk'))
   }, [state.view])
 
   const loadMeasurements = (set) => {

@@ -329,7 +329,6 @@ export const HeaderMenuButton = ({ Swizzled, updateHandler, children, tooltip })
 export const HeaderMenuViewMenu = (props) => {
   const { Swizzled, update, saveAs = false, state } = props
   const output = []
-
   let i = 1
   for (const viewName of [
     'spacer',
@@ -339,19 +338,25 @@ export const HeaderMenuViewMenu = (props) => {
     'spacerOver3',
     ...Swizzled.config.devViews,
     'spacer',
-    'viewPicker',
+    'picker',
   ]) {
-    if (viewName === 'spacer') output.push(<Swizzled.components.ViewMenuSpacer key={i} />)
+    if (viewName === 'spacer') output.push(<Swizzled.components.AsideViewMenuSpacer key={i} />)
     else if (viewName === 'spacerOver3')
-      output.push(state.ui.ux > 3 ? <Swizzled.components.ViewMenuSpacer key={i} /> : null)
-    else if (state.ui.ux >= Swizzled.config.uxLevels.views[viewName])
+      output.push(state.ui.ux > 3 ? <Swizzled.components.AsideViewMenuSpacer key={i} /> : null)
+    else if (
+      state.ui.ux >= Swizzled.config.uxLevels.views[viewName] &&
+      (Swizzled.config.measurementsFreeViews.includes(viewName) ||
+        state._.missingMeasurements.length < 1)
+    )
       output.push(
         <li key={i} className="mb-1 flex flex-row items-center justify-between w-full">
           <a
-            className={`w-full rounded-lg border-2 border-secondary text-base-content flex flex-row items-center gap-2 md:gap-4 p-2
-          hover:bg-secondary hover:bg-opacity-20 hover:border-solid ${
-            viewName === state.view ? 'bg-secondary border-solid bg-opacity-20' : 'border-dotted'
-          }`}
+            className={`w-full rounded-lg border-2 border-secondary text-base-content
+            flex flex-row items-center gap-2 md:gap-4 p-2
+            hover:cursor-pointer
+            hover:bg-secondary hover:bg-opacity-20 hover:border-solid ${
+              viewName === state.view ? 'bg-secondary border-solid bg-opacity-20' : 'border-dotted'
+            }`}
             onClick={() => update.view(viewName)}
           >
             <Swizzled.components.ViewTypeIcon

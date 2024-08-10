@@ -39,6 +39,11 @@ export const ViewWrapper = ({
   const [View, extraProps] = viewfinder({ design, designs, preload, state, Swizzled })
 
   /*
+   * Pass this down to allow disabling features that require measurements
+   */
+  const { missingMeasurements = [] } = extraProps
+
+  /*
    * Almost all editor state has a default settings, and when that is selected
    * we just unset that value in the state. This way, state holds only what is
    * customized, and it makes it a lot easier to see how a pattern was edited.
@@ -51,13 +56,17 @@ export const ViewWrapper = ({
    */
   const passDownState =
     state.ui.ux === undefined
-      ? { ...state, ui: { ...state.ui, ux: Swizzled.config.defaultState.ui }, _: ephemeralState }
-      : { ...state, _: ephemeralState }
+      ? {
+          ...state,
+          ui: { ...state.ui, ux: Swizzled.config.defaultState.ui },
+          _: { ...ephemeralState, missingMeasurements },
+        }
+      : { ...state, _: { ...ephemeralState, missingMeasurements } }
 
   return (
     <div className="flex flex-row items-top">
       {Swizzled.config.withAside ? (
-        <Swizzled.components.ViewMenu update={update} state={passDownState} />
+        <Swizzled.components.AsideViewMenu update={update} state={passDownState} />
       ) : null}
       <div
         className={
@@ -100,21 +109,29 @@ const viewfinder = ({ design, designs, preload, state, Swizzled }) => {
   /*
    * If we have a design, do we have the measurements?
    */
-  const [measurementsOk, missing] = Swizzled.methods.hasRequiredMeasurements(
+  const [measurementsOk, missingMeasurements] = Swizzled.methods.hasRequiredMeasurements(
     designs[design],
     state.settings?.measurements
   )
-  if (!measurementsOk)
-    return [
-      getViewComponent('measurements', Swizzled),
-      { ...extraProps, missingMeasurements: missing },
-    ]
+  if (missingMeasurements) extraProps.missingMeasurements = missingMeasurements
+
+  /*
+   * Allow all views that do not require measurements before
+   * we force the user to the measurements view
+   */
+  if (state.view && Swizzled.config.measurementsFreeViews.includes(state.view)) {
+    const view = getViewComponent(state.view, Swizzled)
+    console.log(state.view, view)
+    if (view) return [view, extraProps]
+  }
+
+  if (!measurementsOk) return [getViewComponent('measurements', Swizzled), extraProps]
 
   /*
    * If a view is set, return that
    */
   const view = getViewComponent(state?.view, Swizzled)
-  if (view) return [view, { ...extraProps, missingMeasurements: missing }]
+  if (view) return [view, extraProps]
 
   /*
    * If no obvious view was found, return the view picker

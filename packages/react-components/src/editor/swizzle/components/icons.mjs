@@ -142,6 +142,11 @@ export const ExportIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks like a ! in a triangle, is intended to be shown on an error background
+export const FailureIcon = ({ size = 6 }) => (
+  <NoIcon className={`w-${size} h-${size} text-secondary-content`} stroke={4} />
+)
+
 // Looks lik a flag
 export const FlagIcon = (props) => (
   <IconWrapper {...props}>
@@ -338,6 +343,11 @@ export const SpinnerIcon = (props) => (
       d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
     ></path>
   </IconWrapper>
+)
+
+// Looks like a white checkbox, intended to be shown on a success-colored background
+export const SuccessIcon = ({ size = 6 }) => (
+  <OkIcon className={`w-${size} h-${size} text-secondary-content`} stroke={4} />
 )
 
 // Looks like a light bulb
