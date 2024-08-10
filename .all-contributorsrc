@@ -34,12 +34,14 @@
       ]
     },
     {
-      "login": "lucibytes",
-      "name": "Lucian",
+      "login": "l3xander",
+      "name": "Lexander",
       "avatar_url": "https://avatars.githubusercontent.com/u/77203781?v=4",
-      "profile": "https://github.com/lucibytes",
+      "profile": "https://github.com/l3xander",
       "contributions": [
-        "eventOrganizing"
+        "blog",
+        "talk",
+        "translation"
       ]
     },
     {
@@ -69,6 +71,7 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/16866285?v=4",
       "profile": "https://github.com/bobgeorgethe3rd",
       "contributions": [
+        "blog",
         "code",
         "doc",
         "design"
