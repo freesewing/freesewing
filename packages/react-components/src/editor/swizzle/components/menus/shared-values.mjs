@@ -4,8 +4,8 @@ export const MenuConstantOptionValue = () => (
 )
 
 /** Displays a count value*/
-export const MenuCountOptionValue = ({ config, current, changed }) => (
-  <MenuShowValue {...{ current, changed, dflt: config.count }} />
+export const MenuCountOptionValue = ({ Swizzled, config, current, changed }) => (
+  <Swizzled.components.MenuShowValue {...{ current, changed, dflt: config.count }} />
 )
 
 /** Displays a degree value */
@@ -121,8 +121,8 @@ export const MenuPctOptionValue = ({
  * @param  {Number|String|Boolean} options.dflt - The default value
  * @param  {Boolean} options.changed - Has the value been changed?
  */
-export const MenuShowValue = ({ current, dflt, changed, components }) => {
-  const { MenuHighlightValue } = components
+export const MenuShowValue = ({ Swizzled, current, dflt, changed, components }) => {
+  const { MenuHighlightValue } = Swizzled.components
 
   return <MenuHighlightValue changed={changed}> {changed ? current : dflt} </MenuHighlightValue>
 }

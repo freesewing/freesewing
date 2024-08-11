@@ -51,6 +51,7 @@ import { MeasurementsSetCard } from './measurements-set-card.mjs'
 // Icons
 import {
   ApplyIcon,
+  BackIcon,
   BeakerIcon,
   BookmarkIcon,
   BoolNoIcon,
@@ -61,6 +62,7 @@ import {
   DesignIcon,
   DetailIcon,
   DocsIcon,
+  DownIcon,
   EditIcon,
   ExpandIcon,
   ExportIcon,
@@ -103,6 +105,7 @@ import {
   TrashIcon,
   UiIcon,
   UnitsIcon,
+  UpIcon,
   UploadIcon,
   UxIcon,
   XrayIcon,
@@ -119,6 +122,7 @@ import {
   ViewDocsIcon,
   ViewDesignsIcon,
   ViewViewPickerIcon,
+  ViewUndosIcon,
 } from './icons.mjs'
 // Measurements Editor
 import { MeasurementsEditor } from './measurements-editor.mjs'
@@ -144,6 +148,7 @@ import { ErrorView } from './error-view.mjs'
 import { MeasurementsView } from './measurements-view.mjs'
 import { SaveView } from './save-view.mjs'
 import { ViewPicker } from './view-picker.mjs'
+import { UndoStep, UndosView } from './undos-view.mjs'
 // Pattern
 import { Pattern } from '@freesewing/react-components/pattern'
 // Menus
@@ -222,6 +227,7 @@ const defaultComponents = {
   Accordion,
   AuthWrapper,
   AuthMessageWrapper,
+  BackIcon,
   ContactSupport,
   AuthRequired,
   AccountInactive,
@@ -301,6 +307,8 @@ const defaultComponents = {
   Tooltip,
   UiPreferencesMenu,
   UiPreference,
+  UndoStep,
+  UndosView,
   UserSetPicker,
   Ux,
   HeaderMenuViewMenu,
@@ -319,6 +327,7 @@ const defaultComponents = {
   DesignIcon,
   DetailIcon,
   DocsIcon,
+  DownIcon,
   EditIcon,
   ExpandIcon,
   ExportIcon,
@@ -359,6 +368,7 @@ const defaultComponents = {
   TrashIcon,
   UiIcon,
   UnitsIcon,
+  UpIcon,
   UploadIcon,
   UxIcon,
   XrayIcon,
@@ -375,6 +385,7 @@ const defaultComponents = {
   ViewDocsIcon,
   ViewDesignsIcon,
   ViewViewPickerIcon,
+  ViewUndosIcon,
   // menus
   MenuItem,
   MenuItemGroup,

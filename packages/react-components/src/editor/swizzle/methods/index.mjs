@@ -29,7 +29,7 @@ import { isDegreeMeasurement } from './is-degree-measurement.mjs'
 import { measurementAsMm } from './measurement-as-mm.mjs'
 import { measurementAsUnits } from './measurement-as-units.mjs'
 import { nsMerge } from './ns-merge.mjs'
-import { objUpdate } from './obj-update.mjs'
+import { objUpdate, undoableObjUpdate } from './obj-update.mjs'
 import { parseDistanceInput } from './parse-distance-input.mjs'
 import { round } from './round.mjs'
 import { structureMeasurementsAsDesign } from './structure-measurements-as-design.mjs'
@@ -59,6 +59,7 @@ import { initialEditorState } from './initial-editor-state.mjs'
 import { shortDate } from './short-date.mjs'
 import { notEmpty } from './not-empty.mjs'
 import { missingMeasurements } from './missing-measurements.mjs'
+import { getOptionStructure, findOption } from './get-option-structure.mjs'
 /*
  * Placeholder for methods that need to be swizzled or won't be available
  */
@@ -74,11 +75,13 @@ const defaultMethods = {
   defaultSamm,
   designMeasurements,
   draft,
+  findOption,
   flattenFlags,
   formatFraction128,
   formatImperial,
   formatMm,
   formatPercentage,
+  getOptionStructure,
   hasRequiredMeasurements,
   initialEditorState,
   isDegreeMeasurement,
@@ -98,6 +101,7 @@ const defaultMethods = {
   notEmpty,
   nsMerge,
   objUpdate,
+  undoableObjUpdate,
   parseDistanceInput,
   round,
   roundMm,

@@ -33,8 +33,8 @@ export const defaultConfig = {
   cloudImageVariants: ['public', 'sq100', 'sq200', 'sq500', 'w200', 'w500', 'w1000', 'w2000'],
   // Views
   mainViews: ['draft', 'designs', 'save', 'export'],
-  extraViews: ['measurements', 'printLayout', 'editSettings', 'docs'],
-  devViews: ['inspect', 'logs', 'test', 'timing'],
+  extraViews: ['measurements', 'undos', 'printLayout', 'docs'],
+  devViews: ['editSettings', 'inspect', 'logs', 'test', 'timing'],
   utilViews: ['picker'],
   measurementsFreeViews: ['designs', 'measurements', 'docs', 'picker'],
   mainViewColors: {
@@ -53,6 +53,7 @@ export const defaultConfig = {
     save: 'SaveView',
     export: 'ViewPicker',
     measurements: 'MeasurementsView',
+    undos: 'UndosView',
     printLayout: 'ViewPicker',
     editSettings: 'ViewPicker',
     docs: 'ViewPicker',
@@ -123,6 +124,7 @@ export const defaultConfig = {
       printLayout: 2,
       export: 1,
       save: 1,
+      undos: 2,
       editSettings: 3,
       logs: 4,
       inspect: 4,

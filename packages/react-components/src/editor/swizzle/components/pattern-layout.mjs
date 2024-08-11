@@ -24,6 +24,7 @@ export const PatternLayout = (props) => {
   return (
     <Swizzled.components.ZoomContextProvider>
       <div className="flex flex-col h-full">
+        <pre>{JSON.stringify(props.state._, null, 2)}</pre>
         <Swizzled.components.HeaderMenu
           state={props.state}
           {...{ Swizzled, update, Design, pattern }}

@@ -18,24 +18,34 @@ export const stateUpdateFactory = (Swizzled, setState, setEphemeralState) => ({
     if (Array.isArray(path) && val === null) {
       for (const sub of path)
         setState((cur) =>
-          Swizzled.methods.objUpdate(
+          Swizzled.methods.undoableObjUpdate(
+            'settings',
             { ...cur },
             Swizzled.methods.statePrefixPath('settings', sub[0]),
-            sub[1]
+            sub[1],
+            setEphemeralState
           )
         )
     } else
       setState((cur) =>
-        Swizzled.methods.objUpdate(
+        Swizzled.methods.undoableObjUpdate(
+          'settings',
           { ...cur },
           Swizzled.methods.statePrefixPath('settings', path),
-          val
+          val,
+          setEphemeralState
         )
       )
   },
   ui: (path, val) =>
     setState((cur) =>
-      Swizzled.methods.objUpdate({ ...cur }, Swizzled.methods.statePrefixPath('ui', path), val)
+      Swizzled.methods.undoableObjUpdate(
+        'ui',
+        { ...cur },
+        Swizzled.methods.statePrefixPath('ui', path),
+        val,
+        setEphemeralState
+      )
     ),
   /*
    * These only hold a string, so we only take a value

@@ -48,6 +48,13 @@ export const BeakerIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks like a left U-turn that we slightly rotate
+export const BackIcon = (props) => (
+  <IconWrapper {...props} className={`${props.className || 'w-6 h-h'} -rotate-45`}>
+    <path d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
+  </IconWrapper>
+)
+
 // Looks like a red X
 export const BoolNoIcon = ({ size = 6 }) => (
   <NoIcon className={`w-${size} h-${size} text-error`} stroke={4} />
@@ -111,6 +118,18 @@ export const DetailIcon = (props) => (
 export const DocsIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+  </IconWrapper>
+)
+
+// Looks like a down pointing chevron
+export const DownIcon = (props) => (
+  <IconWrapper {...props}>
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={props.stroke || 2}
+      d="M19 9l-7 7-7-7"
+    />
   </IconWrapper>
 )
 
@@ -382,6 +401,17 @@ export const UnitsIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks like an up pointing chevron
+export const UpIcon = (props) => (
+  <IconWrapper {...props}>
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={props.stroke || 2}
+      d="M19 16l-7 -7-7 7"
+    />
+  </IconWrapper>
+)
 // Looks like a cloud with an arrow pointing upwards in it
 export const UploadIcon = (props) => (
   <IconWrapper {...props}>
@@ -432,6 +462,7 @@ export const ViewInspectIcon = XrayIcon
 export const ViewDocsIcon = DocsIcon
 export const ViewDesignsIcon = DesignIcon
 export const ViewViewPickerIcon = UiIcon
+export const ViewUndosIcon = BackIcon
 // Flag icons
 export const FlagNoteIcon = ChatIcon
 export const FlagInfoIcon = DocsIcon
@@ -624,16 +655,6 @@ export const DoubleLeftIcon = (props) => (
 export const DoubleRightIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M5 5l7 7-7 7 M13 5l7 7-7 7" />
-  </IconWrapper>
-)
-export const DownIcon = (props) => (
-  <IconWrapper {...props}>
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={props.stroke || 2}
-      d="M19 9l-7 7-7-7"
-    />
   </IconWrapper>
 )
 

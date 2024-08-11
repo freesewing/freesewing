@@ -37,6 +37,7 @@ export const ViewPicker = ({ designs, design, Design, Swizzled, update, state })
   return (
     <div className="text-center mt-8 mb-24 px-4">
       <h2>{Swizzled.methods.t('Choose an activity')}</h2>
+      <pre>{JSON.stringify(state._, null, 2)}</pre>
       <div className="max-w-6xl grid grid-cols-1 lg:grid-cols-2 mx-auto justify-center gap-2 lg:gap-4 mt-4">
         {Swizzled.config.mainViews.map((view) => (
           <MainCard key={view} {...{ view, update, Design, Swizzled }} />

@@ -43,8 +43,8 @@ export const menuUiPreferencesStructure = (Swizzled) => {
       ux: uiUx.renderer,
       list: ['react', 'svg'],
       choiceTitles: {
-        react: 'ui-settings:renderWithReact',
-        svg: 'ui-settings:renderWithCore',
+        react: 'pe:renderWithReact',
+        svg: 'pe:renderWithCore',
       },
       valueTitles: {
         react: 'React',
