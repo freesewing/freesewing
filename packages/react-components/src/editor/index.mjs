@@ -4,6 +4,8 @@ import { swizzleComponents } from './swizzle/components/index.mjs'
 import { swizzleHooks } from './swizzle/hooks/index.mjs'
 import { swizzleMethods } from './swizzle/methods/index.mjs'
 import { ViewWrapper } from './components/view-wrapper.mjs'
+// This is an exception as we need to show something before Swizzled components are ready
+import { TemporaryLoader as UnswizzledTemporaryLoader } from './swizzle/components/loaders.mjs'
 
 /*
  * Namespaces used by the pattern editor
@@ -39,7 +41,7 @@ export const PatternEditor = (props) => {
     }
   }, [swizzled])
 
-  if (!swizzled?.hooks) return <p>One moment please....</p>
+  if (!swizzled?.hooks) return <UnswizzledTemporaryLoader />
   /*
    * First of all, make sure we have all the required props
    */

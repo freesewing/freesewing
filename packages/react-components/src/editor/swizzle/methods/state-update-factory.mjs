@@ -41,7 +41,27 @@ export const stateUpdateFactory = (Swizzled, setState, setEphemeralState) => ({
    * These only hold a string, so we only take a value
    */
   design: (val) => setState((cur) => Swizzled.methods.objUpdate({ ...cur }, 'design', val)),
-  view: (val) => setState((cur) => Swizzled.methods.objUpdate({ ...cur }, 'view', val)),
+  view: (val) => {
+    // Only take valid view names
+    if (!Swizzled.config.views.includes(val)) return console.log('not a valid view:', val)
+    setState((cur) => ({ ...cur, view: val }))
+    // Also add it onto the views (history)
+    setEphemeralState((cur) => {
+      if (!Array.isArray(cur.views)) cur.views = []
+      return { ...cur, views: [val, ...cur.views] }
+    })
+  },
+  viewBack: () => {
+    setEphemeralState((eph) => {
+      if (Array.isArray(eph.views) && Swizzled.config.views.includes(eph.views[1])) {
+        // Load view at the 1 position of the history
+        setState((cur) => ({ ...cur, view: eph.views[1] }))
+        return { ...eph, views: eph.views.slice(1) }
+      }
+
+      return eph
+    })
+  },
   ux: (val) => setState((cur) => Swizzled.methods.objUpdate({ ...cur }, 'ux', val)),
   clearPattern: () =>
     setState((cur) => {

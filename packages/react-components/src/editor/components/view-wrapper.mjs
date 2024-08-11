@@ -121,11 +121,11 @@ const viewfinder = ({ design, designs, preload, state, Swizzled }) => {
    */
   if (state.view && Swizzled.config.measurementsFreeViews.includes(state.view)) {
     const view = getViewComponent(state.view, Swizzled)
-    console.log(state.view, view)
     if (view) return [view, extraProps]
   }
 
   if (!measurementsOk) return [getViewComponent('measurements', Swizzled), extraProps]
+  console.log('still here?')
 
   /*
    * If a view is set, return that

@@ -16,7 +16,7 @@ export const DesignsView = ({ designs = {}, Swizzled, update, state }) => (
             className={`btn btn-primary btn-outline btn-sm capitalize font-bold `}
             onClick={() => {
               update.design(name)
-              update.view()
+              update.view('draft')
             }}
           >
             {name}

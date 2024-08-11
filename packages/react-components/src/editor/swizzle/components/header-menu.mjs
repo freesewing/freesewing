@@ -3,9 +3,16 @@ import { useState } from 'react'
 export const HeaderMenu = ({ state, Swizzled, update, Design, pattern }) => {
   const [open, setOpen] = useState()
 
+  /*
+   * Guard views that require measurements agains missing measurements
+   * and make sure there's a view-specific header menu
+   */
   const ViewMenu =
-    Swizzled.components[`HeaderMenu${Swizzled.config.viewComponents[state.view]}`] ||
-    Swizzled.components.Null
+    !Swizzled.methods.missingMeasurements(state) &&
+    Swizzled.components[`HeaderMenu${Swizzled.config.viewComponents[state.view]}`]
+      ? Swizzled.components[`HeaderMenu${Swizzled.config.viewComponents[state.view]}`]
+      : Swizzled.components.Null
+
   return (
     <div
       className={`flex sticky top-0 ${

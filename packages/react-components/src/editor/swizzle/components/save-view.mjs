@@ -179,14 +179,23 @@ export const SaveView = ({ Swizzled, state, update }) => {
               update={setNotes}
             />
           ) : null}
-          <button
-            className={`${Swizzled.config.classes.horFlex} btn btn-primary btn-lg w-full mt-8`}
-            onClick={saveAsNewPattern}
-            title={t('pe:continueEditingDesc')}
-          >
-            <Swizzled.components.SaveAsIcon className="w-8 h-8" />
-            <span>{t('pe:saveAsNewPattern')}</span>
-          </button>
+          <div className="flex flex-row gap-2 mt-8">
+            <button
+              className={`btn btn-primary btn-lg btn-outline`}
+              onClick={update.viewBack}
+              title={t('pe:cancel')}
+            >
+              <span>{t('pe:cancel')}</span>
+            </button>
+            <button
+              className={`flex flex-row items-center justify-between btn btn-primary btn-lg grow`}
+              onClick={saveAsNewPattern}
+              title={t('pe:saveAsNewPattern')}
+            >
+              <Swizzled.components.SaveAsIcon className="w-8 h-8" />
+              <span>{t('pe:saveAsNewPattern')}</span>
+            </button>
+          </div>
           <p className="text-sm text-right">
             To access your saved patterns, go to:{' '}
             <b>

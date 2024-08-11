@@ -58,6 +58,7 @@ import { statePrefixPath } from './state-prefix-path.mjs'
 import { initialEditorState } from './initial-editor-state.mjs'
 import { shortDate } from './short-date.mjs'
 import { notEmpty } from './not-empty.mjs'
+import { missingMeasurements } from './missing-measurements.mjs'
 /*
  * Placeholder for methods that need to be swizzled or won't be available
  */
@@ -93,6 +94,7 @@ const defaultMethods = {
   menuRoundPct,
   menuValidateNumericValue,
   menuValueWasChanged,
+  missingMeasurements,
   notEmpty,
   nsMerge,
   objUpdate,

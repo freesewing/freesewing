@@ -35,6 +35,7 @@ export const defaultConfig = {
   mainViews: ['draft', 'designs', 'save', 'export'],
   extraViews: ['measurements', 'printLayout', 'editSettings', 'docs'],
   devViews: ['inspect', 'logs', 'test', 'timing'],
+  utilViews: ['picker'],
   measurementsFreeViews: ['designs', 'measurements', 'docs', 'picker'],
   mainViewColors: {
     draft: 'primary',
@@ -187,6 +188,7 @@ export const swizzleConfig = (config = {}) => {
     ...mergedConfig.mainViews,
     ...mergedConfig.extraViews,
     ...mergedConfig.devViews,
+    ...mergedConfig.utilViews,
   ]
 
   return mergedConfig

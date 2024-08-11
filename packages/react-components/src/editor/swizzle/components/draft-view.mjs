@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react'
+
 /**
  * The draft view allows users to tweak their pattern
  *
@@ -11,6 +13,20 @@
  * @return {function} DraftView - React component
  */
 export const DraftView = ({ Design, missingMeasurements, state, update, Swizzled }) => {
+  /*
+   * Don't trust that we have all measurements
+   *
+   * We do not need to change the view here. That is done in the central
+   * ViewWrapper componenet. However, checking the measurements against
+   * the design takes a brief moment, so this component will typically
+   * render before that happens, and if measurments are missing it will
+   * throw and error.
+   *
+   * So when measurements are missing, we just return here and the view
+   * will switch on the next render loop.
+   */
+  if (Swizzled.methods.missingMeasurements(state)) return null
+
   /*
    * First, attempt to draft
    */
@@ -51,3 +67,9 @@ export const DraftView = ({ Design, missingMeasurements, state, update, Swizzled
     />
   )
 }
+//
+//        <Swizzled.components.HeaderMenu
+//          state={props.state}
+//          {...{ Swizzled, update, Design, pattern }}
+//        />
+//

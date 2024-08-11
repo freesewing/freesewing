@@ -2,7 +2,8 @@
  * A temporary loader 'one moment please' style
  * Just a spinner in this case, but could also be branded.
  */
-export const TemporaryLoader = () => <div className="">One moment please</div>
+export const TemporaryLoader = ({ Swizzled = false }) =>
+  Swizzled ? <Swizzled.components.Spinner /> : <div className="text-center m-auto">...</div>
 
 /**
  * The design view is loaded if and only if not design is passed to the editor
