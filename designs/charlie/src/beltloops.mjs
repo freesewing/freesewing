@@ -25,7 +25,7 @@ function draftCharlieBeltLoops({
       msg: `charlie:cutBeltloops`,
       notes: ['flag:saUnused', 'flag:partHiddenByExpand'],
       replace: {
-        count: 7,
+        count: count,
         width: units(width * 4),
         length: units(length / count),
       },
