@@ -33,7 +33,7 @@ function draftCharlieWaistband({
       msg: `charlie:cutWaistband`,
       notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
       replace: {
-        width: units(2 * absoluteOptions.waistbandWidth + extraSa),
+        width: units(2 * absoluteOptions.waistbandWidth + extraSa * 1.5),
         length: units(
           2 * store.get('waistbandBack') +
             2 * store.get('waistbandFront') +
