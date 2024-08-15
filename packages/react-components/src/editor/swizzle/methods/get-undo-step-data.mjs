@@ -46,6 +46,8 @@ export const getCoreSettingUndoStepData = (Swizzled, { step, state, Design, impe
       parts: Design.patternConfig.draftOrder,
     })[field],
   }
+  const FieldIcon = data.structure.icon
+  data.fieldIcon = <FieldIcon />
 
   /*
    * Save us some typing
@@ -62,7 +64,9 @@ export const getCoreSettingUndoStepData = (Swizzled, { step, state, Design, impe
     case 'margin':
     case 'sa':
     case 'samm':
-      if (data.field !== 'margin') data.optCode = `samm.t`
+      if (data.field !== 'margin') {
+        data.optCode = `samm.t`
+      }
       data.oldVal = <Html html={formatMm(cord(step.old, data.structure.dflt))} />
       data.newVal = <Html html={formatMm(cord(step.new, data.structure.dflt))} />
       return data
@@ -79,22 +83,20 @@ export const getCoreSettingUndoStepData = (Swizzled, { step, state, Design, impe
       )
       return data
     case 'only':
-      //data.oldVal = cord(step.oldSwizzled.methods.t(step.new === 'imperial' ? 'pe:metricUnits' : 'pe:imperialUnits')
-      // FIXME
-      return false
+      data.oldVal = cord(step.old, data.structure.dflt) || Swizzled.methods.t('pe:includeAllParts')
+      data.newVal = cord(step.new, data.structure.dflt) || Swizzled.methods.t('pe:includeAllParts')
+      return data
     default:
-      console.log('HANDLE EXPAND')
-      if (1 || !data.field) return false
-      const choices = data.structure[field].choiceTitles
+      const choices = data.structure.choiceTitles
       data.oldVal = Swizzled.methods.t(
-        choices[String(step.old)]
+        (choices[String(step.old)]
           ? choices[String(step.old)]
-          : choices[String(structure[field].dflt)] + '.t'
+          : choices[String(data.structure.dflt)]) + '.t'
       )
       data.newVal = Swizzled.methods.t(
-        choices[String(step.new)]
+        (choices[String(step.new)]
           ? choices[String(step.new)]
-          : choices[String(structure[field].dflt)] + '.t'
+          : choices[String(data.structure.dflt)]) + '.t'
       )
       return data
   }

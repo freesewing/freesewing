@@ -195,6 +195,14 @@ export const HelpIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks like a pie with a slice a bit out of it
+export const IncludeIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
+    <path d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+  </IconWrapper>
+)
+
 // Looks like a rectangle with rounded corners (like a full screen display)
 export const KioskIcon = (props) => (
   <IconWrapper {...props}>
@@ -220,6 +228,13 @@ export const ListIcon = (props) => (
 export const LockIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+  </IconWrapper>
+)
+
+// Looks like 4 boxes spaces out
+export const MarginIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="m 2.4889452,14.488945 h 7.0221096 v 7.02211 H 2.4889452 Z M 14.488945,2.4889452 h 7.02211 v 7.0221096 h -7.02211 z m -11.9999998,0 H 9.5110548 V 9.5110548 H 2.4889452 Z M 14.488945,14.488945 h 7.02211 v 7.02211 h -7.02211 z" />
   </IconWrapper>
 )
 
@@ -330,6 +345,15 @@ export const SaIcon = (props) => (
   <IconWrapper {...props}>
     <circle cx="12" cy="12" r="5" />
     <circle cx="12" cy="12" r="10" strokeDasharray="2 4" />
+  </IconWrapper>
+)
+
+// Looks like lines of varying thickness
+export const ScaleIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M 2 20 h 20" strokeWidth={props.stroke / 2 || 1} />
+    <path d="M 2 12 h 20" />
+    <path d="M 2 4 h 20" strokeWidth={props.stroke * 2 || 4} />
   </IconWrapper>
 )
 

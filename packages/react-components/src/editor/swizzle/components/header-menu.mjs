@@ -24,9 +24,11 @@ export const HeaderMenu = ({ state, Swizzled, update, Design, pattern }) => {
       >
         <Swizzled.components.HeaderMenuAllViews {...{ state, Swizzled, update, open, setOpen }} />
         {/* FIXME: Remove this line when done with undos debug */}
-        <Swizzled.components.HeaderMenuDraftView
-          {...{ state, Swizzled, update, Design, pattern, open, setOpen }}
-        />
+        {Design && (
+          <Swizzled.components.HeaderMenuDraftView
+            {...{ state, Swizzled, update, Design, pattern, open, setOpen }}
+          />
+        )}
         <ViewMenu {...{ state, Swizzled, update, Design, pattern, open, setOpen }} />
       </div>
     </div>

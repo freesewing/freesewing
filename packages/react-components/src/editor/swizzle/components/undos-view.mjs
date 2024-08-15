@@ -102,15 +102,22 @@ export const UndoStep = ({ Swizzled, update, state, step, Design }) => {
       </p>
       <Swizzled.components.ButtonFrame>
         <div className="flex flex-row items-center justify-between gap-2 w-full m-0 p-0 -mt-2 text-lg">
-          <span>{t(`pe:${data.optCode}`)}</span>
+          <span className="flex flex-row gap-2 items-center">
+            {data.fieldIcon || null}
+            {t(`pe:${data.optCode}`)}
+          </span>
           <span className="opacity-70 flex flex-row gap-1 items-center text-base">
             {data.icon} {t(`pe:${data.titleCode}`)}
           </span>
         </div>
         <div className="flex flex-row gap-1 items-center align-start w-full">
-          <span className="">{data.newVal}</span>
+          <span className="">
+            {Array.isArray(data.newVal) ? data.newVal.join(', ') : data.newVal}
+          </span>
           <Swizzled.components.LeftIcon className="w-4 h-4 text-secondary shrink-0" stroke={4} />
-          <span className="line-through decoration-1 opacity-70">{data.oldVal}</span>
+          <span className="line-through decoration-1 opacity-70">
+            {Array.isArray(data.oldVal) ? data.oldVal.join(', ') : data.oldVal}
+          </span>
         </div>
       </Swizzled.components.ButtonFrame>
     </div>
