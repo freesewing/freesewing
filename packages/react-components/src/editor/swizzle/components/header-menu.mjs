@@ -23,6 +23,10 @@ export const HeaderMenu = ({ state, Swizzled, update, Design, pattern }) => {
         className={`flex flex-row flex-wrap gap-1 md:gap-4 w-full items-start justify-center border-b border-base-300 py-1 md:py-1.5`}
       >
         <Swizzled.components.HeaderMenuAllViews {...{ state, Swizzled, update, open, setOpen }} />
+        {/* FIXME: Remove this line when done with undos debug */}
+        <Swizzled.components.HeaderMenuDraftView
+          {...{ state, Swizzled, update, Design, pattern, open, setOpen }}
+        />
         <ViewMenu {...{ state, Swizzled, update, Design, pattern, open, setOpen }} />
       </div>
     </div>

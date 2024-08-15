@@ -148,7 +148,7 @@ import { ErrorView } from './error-view.mjs'
 import { MeasurementsView } from './measurements-view.mjs'
 import { SaveView } from './save-view.mjs'
 import { ViewPicker } from './view-picker.mjs'
-import { UndoStep, UndosView } from './undos-view.mjs'
+import { UndoStep, UndoStepTimeAgo, UndosView } from './undos-view.mjs'
 // Pattern
 import { Pattern } from '@freesewing/react-components/pattern'
 // Menus
@@ -219,7 +219,7 @@ import { LoadingStatus } from './loading-status.mjs'
 import { Spinner, Loading } from './spinner.mjs'
 import { Tab, Tabs } from './tabs.mjs'
 import { Markdown } from './markdown.mjs'
-
+import { HtmlSpan } from './html-span.mjs'
 /**
  * This object holds all components that can be swizzled
  */
@@ -278,6 +278,7 @@ const defaultComponents = {
   HeaderMenuDropdowns,
   HeaderMenuIcon,
   HeaderMenuIconSpacer,
+  HtmlSpan,
   LargeScreenOnly,
   Link,
   ListInput,
@@ -308,6 +309,7 @@ const defaultComponents = {
   UiPreferencesMenu,
   UiPreference,
   UndoStep,
+  UndoStepTimeAgo,
   UndosView,
   UserSetPicker,
   Ux,

@@ -9,34 +9,16 @@ export const stateUpdateFactory = (Swizzled, setState, setEphemeralState) => ({
   /*
    * These hold an object, so we take a path
    */
-  settings: (path = null, val = null) => {
-    /*
-     * Allow passing an array of update operations.
-     * Note that we're not doing rigorous checking on the structure of the array.
-     * If you mess it up, it's on you.
-     */
-    if (Array.isArray(path) && val === null) {
-      for (const sub of path)
-        setState((cur) =>
-          Swizzled.methods.undoableObjUpdate(
-            'settings',
-            { ...cur },
-            Swizzled.methods.statePrefixPath('settings', sub[0]),
-            sub[1],
-            setEphemeralState
-          )
-        )
-    } else
-      setState((cur) =>
-        Swizzled.methods.undoableObjUpdate(
-          'settings',
-          { ...cur },
-          Swizzled.methods.statePrefixPath('settings', path),
-          val,
-          setEphemeralState
-        )
+  settings: (path = null, val = null) =>
+    setState((cur) =>
+      Swizzled.methods.undoableObjUpdate(
+        'settings',
+        { ...cur },
+        Swizzled.methods.statePrefixPath('settings', path),
+        val,
+        setEphemeralState
       )
-  },
+    ),
   ui: (path, val) =>
     setState((cur) =>
       Swizzled.methods.undoableObjUpdate(

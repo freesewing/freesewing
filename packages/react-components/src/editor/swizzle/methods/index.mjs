@@ -60,6 +60,13 @@ import { shortDate } from './short-date.mjs'
 import { notEmpty } from './not-empty.mjs'
 import { missingMeasurements } from './missing-measurements.mjs'
 import { getOptionStructure, findOption } from './get-option-structure.mjs'
+import {
+  getUiPreferenceUndoStepData,
+  getCoreSettingUndoStepData,
+  getDesignOptionUndoStepData,
+  getUndoStepData,
+} from './get-undo-step-data.mjs'
+import { settingsValueIsCustom, settingsValueCustomOrDefault } from './settings-value-is-custom.mjs'
 /*
  * Placeholder for methods that need to be swizzled or won't be available
  */
@@ -82,6 +89,10 @@ const defaultMethods = {
   formatMm,
   formatPercentage,
   getOptionStructure,
+  getUiPreferenceUndoStepData,
+  getCoreSettingUndoStepData,
+  getDesignOptionUndoStepData,
+  getUndoStepData,
   hasRequiredMeasurements,
   initialEditorState,
   isDegreeMeasurement,
@@ -106,6 +117,8 @@ const defaultMethods = {
   round,
   roundMm,
   setModal: noop,
+  settingsValueIsCustom,
+  settingsValueCustomOrDefault,
   shortDate,
   stateUpdateFactory,
   statePrefixPath,

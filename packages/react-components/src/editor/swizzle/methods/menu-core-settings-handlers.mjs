@@ -2,8 +2,8 @@
 export const menuCoreSettingsOnlyHandler =
   (Swizzled, { updateHandler, current }) =>
   (path, part) => {
-    // if there's no part being set, it's a reset
-    if (part === undefined) return updateHandler(path, part)
+    // Is this a reset?
+    if (part === undefined || part === '__UNSET__') return updateHandler(path, part)
 
     // add or remove the part from the set
     let newParts = new Set(current || [])

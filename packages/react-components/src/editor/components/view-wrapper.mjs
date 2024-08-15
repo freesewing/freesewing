@@ -58,7 +58,7 @@ export const ViewWrapper = ({
     state.ui.ux === undefined
       ? {
           ...state,
-          ui: { ...state.ui, ux: Swizzled.config.defaultState.ui },
+          ui: { ...state.ui, ux: Swizzled.config.defaultUx },
           _: { ...ephemeralState, missingMeasurements },
         }
       : { ...state, _: { ...ephemeralState, missingMeasurements } }

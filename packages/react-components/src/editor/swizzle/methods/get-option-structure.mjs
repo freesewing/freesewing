@@ -8,6 +8,7 @@ export const getOptionStructure = (Swizzled, option, Design, state) => {
     Design.patternConfig.options,
     state.settings
   )
+  console.log({ structure })
 
   return Swizzled.methods.findOption(structure, option)
 }
