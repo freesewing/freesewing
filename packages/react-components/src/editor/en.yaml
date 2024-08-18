@@ -192,8 +192,6 @@ ux5.d: Reveals all features, removes all handrails and safety checks.
 
 # Tooltips
 tt.changeEditorView: Change to a different view
-tt.resetPatternState: Discard pattern changes and restore the pattern to its defaults
-tt.resetAllState: Discard all changes and restore the pattern editor to its initial state
 tt.toggleSa: Turns Seam Allowance on or off (see Core Settings)
 tt.togglePaperless: Turns Paperless on or off (see Core Settings)
 tt.toggleComplete: Turns Details on or off (see Core Settings)
@@ -204,6 +202,13 @@ tt.toggleAside: Turn the Aside Menu on or off (see UI Preferences)
 tt.toggleKiosk: Turns Kiosk Mode on or off (see UI Preferences)
 tt.toggleRotate: Turns Rotate Pattern on or off (see UI Preferences)
 tt.toggleRenderer: Switches the Render Engine between React and SVG (see UI Preferences)
+tt.exportPattern: Export pattern
+tt.savePattern: Save pattern
+tt.savePatternAs: Save pattern as...
+tt.undo: Undo most recent change
+tt.undoAll: Undo all changes since the last save point
+tt.resetDesign: Reset all settings, but keep the design and measurements
+tt.resetAll: Reset the editor completely
 
 # flags
 apply: Apply
@@ -280,3 +285,5 @@ hoursAgo: hours ago
 undos.unknown.t: Unknown Change
 defaultRestored: Cleared (default restored)
 includeAllParts: Include all parts
+allFirstLetter: A
+undo: Undo

@@ -9,8 +9,16 @@ export const stateUpdateFactory = (Swizzled, setState, setEphemeralState) => ({
   /*
    * These hold an object, so we take a path
    */
-  settings: (path = null, val = null) =>
-    setState((cur) =>
+  settings: (path = null, val = null) => {
+    /*
+     * This check can be removed once all code is migrated to the new editor
+     */
+    if (Array.isArray(path) && Array.isArray(path[0]) && val === null) {
+      throw new Error(
+        'Update.settings was called with an array of operations. This is no longer supported.'
+      )
+    }
+    return setState((cur) =>
       Swizzled.methods.undoableObjUpdate(
         'settings',
         { ...cur },
@@ -18,7 +26,54 @@ export const stateUpdateFactory = (Swizzled, setState, setEphemeralState) => ({
         val,
         setEphemeralState
       )
-    ),
+    )
+  },
+  /*
+   * Helper to restore from undo state
+   * Takes the index of the undo step in the array in ephemeral state
+   */
+  restore: async (i, ephemeralState) => {
+    console.log({ i, ephemeralState })
+    setState(ephemeralState.undos[i].restore)
+    setEphemeralState((cur) => {
+      cur.undos = cur.undos.slice(i + 1)
+      return cur
+    })
+  },
+  /*
+   * Helper to toggle SA on or off as that requires managing sa, samm, and sabool
+   */
+  toggleSa: () =>
+    setState((cur) => {
+      const sa = cur.settings?.samm || (cur.settings?.units === 'imperial' ? 15.3125 : 10)
+      const restore = Swizzled.methods.cloneObject(cur)
+      // This requires 3 changes
+      const update = cur.settings.sabool
+        ? [
+            ['sabool', 0],
+            ['sa', 0],
+            ['samm', sa],
+          ]
+        : [
+            ['sabool', 1],
+            ['sa', sa],
+            ['samm', sa],
+          ]
+      for (const [key, val] of update) Swizzled.methods.objUpdate(cur, `settings.${key}`, val)
+      // Which we'll group as 1 undo action
+      Swizzled.methods.addUndoStep(
+        {
+          name: 'settings',
+          path: ['settings', 'sa'],
+          new: cur.settings.sabool ? 0 : sa,
+          old: cur.settings.sabool ? sa : 0,
+        },
+        restore,
+        setEphemeralState
+      )
+
+      return cur
+    }),
   ui: (path, val) =>
     setState((cur) =>
       Swizzled.methods.undoableObjUpdate(

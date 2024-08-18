@@ -23,12 +23,6 @@ export const HeaderMenu = ({ state, Swizzled, update, Design, pattern }) => {
         className={`flex flex-row flex-wrap gap-1 md:gap-4 w-full items-start justify-center border-b border-base-300 py-1 md:py-1.5`}
       >
         <Swizzled.components.HeaderMenuAllViews {...{ state, Swizzled, update, open, setOpen }} />
-        {/* FIXME: Remove this line when done with undos debug */}
-        {Design && (
-          <Swizzled.components.HeaderMenuDraftView
-            {...{ state, Swizzled, update, Design, pattern, open, setOpen }}
-          />
-        )}
         <ViewMenu {...{ state, Swizzled, update, Design, pattern, open, setOpen }} />
       </div>
     </div>
@@ -53,6 +47,8 @@ export const HeaderMenuDraftView = (props) => {
         {flags ? <Swizzled.components.HeaderMenuDraftViewFlags {...props} flags={flags} /> : null}
       </div>
       <Swizzled.components.HeaderMenuDraftViewIcons {...props} />
+      <Swizzled.components.HeaderMenuUndoIcons {...props} />
+      <Swizzled.components.HeaderMenuSaveIcons {...props} />
     </>
   )
 }
@@ -65,7 +61,18 @@ export const HeaderMenuDropdown = (props) => {
    * screen space on mobile, rather than be positioned under its toggle button
    */
 
-  return (
+  return props.disabled ? (
+    <Swizzled.components.Tooltip tip={tooltip}>
+      <button
+        disabled
+        tabIndex={0}
+        role="button"
+        className="btn btn-ghost hover:bg-secondary hover:bg-opacity-20 hover:border-solid hover:boder-2 hover:border-secondary border border-secondary border-2 border-dotted btn-sm px-2 z-20 relative"
+      >
+        {toggle}
+      </button>
+    </Swizzled.components.Tooltip>
+  ) : (
     <Swizzled.components.Tooltip tip={tooltip}>
       <div className={`dropdown ${open === id ? 'dropdown-open z-20' : ''}`}>
         <div
@@ -194,7 +201,7 @@ export const HeaderMenuDraftViewIcons = (props) => {
       {ux >= levels.sa ? (
         <Button updateHandler={update.toggleSa} tooltip={Swizzled.methods.t('pe:tt.toggleSa')}>
           <Swizzled.components.SaIcon
-            className={`${size} ${props.state.settings.sa ? 'txt-secondary' : muted}`}
+            className={`${size} ${props.state.settings.sabool ? 'text-secondary' : muted}`}
           />
         </Button>
       ) : null}
@@ -302,22 +309,130 @@ export const HeaderMenuDraftViewIcons = (props) => {
           updateHandler={() =>
             update.ui('renderer', props.state.ui.renderer === 'react' ? 'svg' : 'react')
           }
-          tooltip={Swizzled.methods.t('pe:tt.toggleKiosk')}
+          tooltip={Swizzled.methods.t('pe:tt.toggleRenderer')}
         >
           <Swizzled.components.RocketIcon
             className={`${size} ${props.state.ui.renderer === 'svg' ? 'text-secondary' : muted}`}
           />
         </Button>
       ) : null}
-      <Swizzled.components.HeaderMenuIconSpacer />
+    </div>
+  )
+}
+
+export const HeaderMenuUndoIcons = (props) => {
+  const { Swizzled, update, state, Design } = props
+  const Button = Swizzled.components.HeaderMenuButton
+  const size = 'w-5 h-5'
+  const muted = 'text-current opacity-50'
+  const ux = props.state.ui.ux
+  const levels = {
+    ...props.Swizzled.config.uxLevels.core,
+    ...props.Swizzled.config.uxLevels.ui,
+  }
+  const undos = props.state._?.undos && props.state._.undos.length > 0 ? props.state._.undos : false
+
+  return (
+    <div className="flex flex-row flex-wrap items-center justify-center px-2">
+      <Button
+        updateHandler={() => update.restore(0, state._)}
+        tooltip={Swizzled.methods.t('pe:tt.undo')}
+        disabled={undos ? false : true}
+      >
+        <Swizzled.components.UndoIcon
+          className={`${size} ${undos ? 'text-secondary' : ''}`}
+          text="1"
+        />
+      </Button>
+      <Button
+        updateHandler={() => update.restore(undos.length - 1, state._)}
+        tooltip={Swizzled.methods.t('pe:tt.undoAll')}
+        disabled={undos ? false : true}
+      >
+        <Swizzled.components.UndoIcon
+          className={`${size} ${undos ? 'text-secondary' : ''}`}
+          text={Swizzled.methods.t('pe:allFirstLetter')}
+        />
+      </Button>
+      <Swizzled.components.HeaderMenuDropdown
+        {...props}
+        tooltip={Swizzled.methods.t('pe:view.undos.t')}
+        id="undos"
+        disabled={undos ? false : true}
+        toggle={
+          <>
+            <Swizzled.components.UndoIcon className="w-4 h-4" stroke={3} />
+            <span className="hidden lg:inline">{Swizzled.methods.t('pe:undo')}</span>
+          </>
+        }
+      >
+        {undos ? (
+          <ul className="dropdown-content bg-base-100 bg-opacity-90 z-20 shadow left-0 !fixed md:!absolute w-screen md:w-96 px-4 md:p-2 md:pt-0">
+            {undos.slice(0, 9).map((step, index) => (
+              <li key={index}>
+                <Swizzled.components.UndoStep {...{ step, update, state, Design, index }} compact />
+              </li>
+            ))}
+            <li key="view">
+              <Swizzled.components.ButtonFrame
+                dense
+                ative
+                onClick={() => update.state(index, state._)}
+              >
+                <div className="flex flex-row items-center align-center justify-between gap-2 w-full">
+                  <div className="flex flex-row items-center align-start gap-2 grow">
+                    <Swizzled.components.UndoIcon className="w-5 h-5 text-secondary" />
+                    {Swizzled.methods.t(`pe:view.undos.t`)}...
+                  </div>
+                  {undos.length}
+                </div>
+              </Swizzled.components.ButtonFrame>
+            </li>
+          </ul>
+        ) : null}
+      </Swizzled.components.HeaderMenuDropdown>
+      <Button updateHandler={update.clearAll} tooltip={Swizzled.methods.t('pe:tt.resetDesign')}>
+        <Swizzled.components.TrashIcon className={`${size} text-secondary`} />
+      </Button>
+      <Button updateHandler={update.clearAll} tooltip={Swizzled.methods.t('pe:tt.resetAll')}>
+        <Swizzled.components.ResetAllIcon className={`${size} text-secondary`} />
+      </Button>
+    </div>
+  )
+}
+
+export const HeaderMenuSaveIcons = (props) => {
+  const { Swizzled, update } = props
+  const Button = Swizzled.components.HeaderMenuButton
+  const size = 'w-5 h-5'
+  const muted = 'text-current opacity-50'
+  const ux = props.state.ui.ux
+  const levels = {
+    ...props.Swizzled.config.uxLevels.core,
+    ...props.Swizzled.config.uxLevels.ui,
+  }
+  const saveable = props.state._?.undos && props.state._.undos.length > 0
+
+  return (
+    <div className="flex flex-row flex-wrap items-center justify-center px-2">
       <Button
         updateHandler={update.clearPattern}
-        tooltip={Swizzled.methods.t('pe:tt.resetPatternState')}
+        tooltip={Swizzled.methods.t('pe:tt.savePattern')}
+        disabled={saveable ? false : true}
       >
-        <Swizzled.components.ResetIcon className={`${size} text-warning`} />
+        <Swizzled.components.SaveIcon className={`${size} ${saveable ? 'text-success' : ''}`} />
       </Button>
-      <Button updateHandler={update.clearAll} tooltip={Swizzled.methods.t('pe:tt.resetAllState')}>
-        <Swizzled.components.TrashIcon className={`${size} text-error`} />
+      <Button
+        updateHandler={() => update.view('save')}
+        tooltip={Swizzled.methods.t('pe:tt.savePatternAs')}
+      >
+        <Swizzled.components.SaveAsIcon className={`${size} text-secondary`} />
+      </Button>
+      <Button
+        updateHandler={update.clearPattern}
+        tooltip={Swizzled.methods.t('pe:tt.exportPattern')}
+      >
+        <Swizzled.components.ExportIcon className={`${size} text-secondary`} />
       </Button>
     </div>
   )
@@ -331,9 +446,19 @@ export const HeaderMenuIcon = (props) => {
 }
 export const HeaderMenuIconSpacer = () => <span className="px-1 font-bold opacity-30">|</span>
 
-export const HeaderMenuButton = ({ Swizzled, updateHandler, children, tooltip }) => (
+export const HeaderMenuButton = ({
+  Swizzled,
+  updateHandler,
+  children,
+  tooltip,
+  disabled = false,
+}) => (
   <Swizzled.components.Tooltip tip={tooltip}>
-    <button className="btn btn-ghost btn-sm px-1" onClick={updateHandler}>
+    <button
+      className="btn btn-ghost btn-sm px-1 disabled:bg-transparent"
+      onClick={updateHandler}
+      disabled={disabled}
+    >
       {children}
     </button>
   </Swizzled.components.Tooltip>

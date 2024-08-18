@@ -17,6 +17,8 @@ export const getUiPreferenceUndoStepData = (Swizzled, { step }) => {
     titleCode: 'uiPreferences.t',
     structure: Swizzled.methods.menuUiPreferencesStructure()[field],
   }
+  const FieldIcon = data.structure.icon
+  data.fieldIcon = <FieldIcon />
 
   /*
    * Add oldval and newVal if they exist, or fall back to default
@@ -33,20 +35,22 @@ export const getUiPreferenceUndoStepData = (Swizzled, { step }) => {
 
 export const getCoreSettingUndoStepData = (Swizzled, { step, state, Design, imperial }) => {
   const field = step.path[1]
+  const structure = Swizzled.methods.menuCoreSettingsStructure({
+    language: state.language,
+    units: state.settings.units,
+    sabool: state.settings.sabool,
+    parts: Design.patternConfig.draftOrder,
+  })
 
   const data = {
     field,
     titleCode: 'coreSettings.t',
     optCode: `${field}.t`,
     icon: <Swizzled.components.SettingsIcon />,
-    structure: Swizzled.methods.menuCoreSettingsStructure({
-      language: state.language,
-      units: state.settings.units,
-      sabool: state.settings.sabool,
-      parts: Design.patternConfig.draftOrder,
-    })[field],
+    structure: structure[field],
   }
-  const FieldIcon = data.structure.icon
+  if (!data.structure && field === 'sa') data.structure = structure.samm
+  const FieldIcon = data.structure?.icon || Swizzled.components.FixmeIcon
   data.fieldIcon = <FieldIcon />
 
   /*
@@ -128,6 +132,7 @@ export const getUndoStepData = (Swizzled, props) => {
     props.step.name === 'settings' &&
     [
       'sa',
+      'samm',
       'margin',
       'scale',
       'only',

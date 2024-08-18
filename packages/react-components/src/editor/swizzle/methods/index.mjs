@@ -29,7 +29,7 @@ import { isDegreeMeasurement } from './is-degree-measurement.mjs'
 import { measurementAsMm } from './measurement-as-mm.mjs'
 import { measurementAsUnits } from './measurement-as-units.mjs'
 import { nsMerge } from './ns-merge.mjs'
-import { objUpdate, undoableObjUpdate } from './obj-update.mjs'
+import { objUpdate, undoableObjUpdate, cloneObject, addUndoStep } from './obj-update.mjs'
 import { parseDistanceInput } from './parse-distance-input.mjs'
 import { round } from './round.mjs'
 import { structureMeasurementsAsDesign } from './structure-measurements-as-design.mjs'
@@ -76,7 +76,9 @@ import { noop } from './noop.mjs'
  * This object holds all methods that can be swizzled
  */
 const defaultMethods = {
+  addUndoStep,
   capitalize,
+  cloneObject,
   cloudImageUrl,
   defaultSa,
   defaultSamm,

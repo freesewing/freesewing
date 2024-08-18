@@ -70,6 +70,7 @@ export const CoreSettingsMenu = ({ update, state, language, Design, Swizzled }) 
           ux: state.ui.ux,
           settings: state.settings,
           patternConfig: Design.patternConfig,
+          toggleSa: update.toggleSa,
         },
         updateHandler: update.settings,
         isDesignOptionsGroup: false,

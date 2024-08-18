@@ -24,19 +24,8 @@ export const menuCoreSettingsSammHandler =
     // convert to millimeters if there's a value
     newCurrent = newCurrent === undefined ? config.dflt : newCurrent
     // update both values to match
-    updateHandler([
-      [['samm'], newCurrent],
-      [['sa'], newCurrent],
-    ])
+    updateHandler(['samm'], newCurrent)
+    updateHandler(['sa'], newCurrent)
   }
 
-export const menuCoreSettingsSaboolHandler =
-  (Swizzled, { updateHandler, samm }) =>
-  (_path, newCurrent) => {
-    updateHandler([
-      // update sabool to the new current
-      [['sabool'], newCurrent],
-      // set sa based on whether there's a current value or not
-      [['sa'], newCurrent ? samm : undefined],
-    ])
-  }
+export const menuCoreSettingsSaboolHandler = (Swizzled, { toggleSa }) => toggleSa

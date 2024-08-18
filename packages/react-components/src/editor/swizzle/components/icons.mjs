@@ -305,10 +305,17 @@ export const PrintIcon = (props) => (
   </IconWrapper>
 )
 
-// Looks like a rewind arrow
+// Looks like a single rewind arrow
 export const ResetIcon = (props) => (
   <IconWrapper {...props}>
-    <path d="m 2.447878,2.716835 v 4.38448 h 4.38448 M 3.1307,6.882055 c 1.771085,-3.0536 5.075566,-5.10727 8.859706,-5.10727 5.65253,0 10.234811,4.58228 10.234811,10.23481 0,5.65253 -4.582281,10.23481 -10.234811,10.23481 -5.440329,0 -9.889258,-4.24469 -10.215624,-9.60291" />
+    <path d="M16 18 l 0 -12 l -8 6 z M 6 6 l 0 12 l 1 0 l 0 -10 z" />
+  </IconWrapper>
+)
+
+// Looks like a double rewind arrow
+export const ResetAllIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M12 18 l 0 -12 l -8 6 z M 20 18 l 0 -12 l -8 6 z M 2 6 l 0 12 l 1 0 l 0 -10 z" />
   </IconWrapper>
 )
 
@@ -330,6 +337,13 @@ export const RocketIcon = (props) => (
 export const RotateIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+  </IconWrapper>
+)
+
+// Looks like a cloud with a plus sign in it
+export const SaveIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M12 24V12.5m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
   </IconWrapper>
 )
 
@@ -414,6 +428,28 @@ export const UiIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks like a rewind arrow, but takes text to go inside it
+export const UndoIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="m 2.447878,2.716835 v 4.38448 h 4.38448 M 3.1307,6.882055 c 1.771085,-3.0536 5.075566,-5.10727 8.859706,-5.10727 5.65253,0 10.234811,4.58228 10.234811,10.23481 0,5.65253 -4.582281,10.23481 -10.234811,10.23481 -5.440329,0 -9.889258,-4.24469 -10.215624,-9.60291" />
+    {props.text ? (
+      <text
+        x="12"
+        y="17"
+        style={{
+          fontSize: '15px',
+          textAnchor: 'middle',
+          fontWeight: 500,
+          fill: 'currentColor',
+          stroke: 'none',
+        }}
+      >
+        {props.text}
+      </text>
+    ) : null}
+  </IconWrapper>
+)
+
 // Looks like a bit of measuring tape
 export const UnitsIcon = (props) => (
   <IconWrapper {...props}>
@@ -472,7 +508,6 @@ export const XrayIcon = (props) => (
 )
 
 // These icons all reuse existing icons
-export const SaveIcon = UploadIcon
 export const ViewDraftIcon = OptionsIcon
 export const ViewMeasurementsIcon = MeasurementsIcon
 export const ViewTestIcon = BeakerIcon
