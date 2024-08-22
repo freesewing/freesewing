@@ -41,6 +41,7 @@ import {
   BoolYesIcon,
   BoolNoIcon,
   CloneIcon,
+  DetailIcon,
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { Mdx } from 'shared/components/mdx/dynamic.mjs'
@@ -58,6 +59,7 @@ import {
 } from 'shared/components/inputs.mjs'
 import { BookmarkButton } from 'shared/components/bookmarks.mjs'
 import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
+import { validateMset } from './msetvalidation.mjs'
 
 export const ns = [inputNs, 'account', 'patterns', 'status', 'measurements', 'sets']
 
@@ -324,6 +326,11 @@ export const Mset = ({ id, publicOnly = false }) => {
     } else setLoadingStatus([true, 'backendError', true, false])
   }
 
+  const validateMeasurements = (measies) => {
+    alert(validateMset(t, measies).join('\n\n'))
+    return true
+  }
+
   const importSet = async () => {
     setLoadingStatus([true, t('account.importing')])
     // Compile data
@@ -471,6 +478,14 @@ export const Mset = ({ id, publicOnly = false }) => {
               )}
             </>
           )}
+          {!edit ? (
+            <button onClick={() => validateMeasurements(measies)} className="btn btn-secondary">
+              <div className="flex flex-row gap-4 justify-between items-center w-full">
+                <DetailIcon />
+                {t('validateMeasurements')}
+              </div>
+            </button>
+          ) : null}
           {account.control > 2 && mset.userId === account.id ? (
             <button className="btn btn-neutral" title={t('account:cloneSet')} onClick={importSet}>
               <div className="flex flex-row gap-4 justify-between items-center w-full">
@@ -742,13 +757,19 @@ export const Mset = ({ id, publicOnly = false }) => {
           docs={docs.notes}
         />
       ) : null}
-      <button
-        onClick={save}
-        className="btn btn-primary btn-lg flex flex-row items-center gap-4 mx-auto mt-8"
-      >
-        <UploadIcon />
-        {t('saveThing', { thing: t('account:set') })}
-      </button>
+      <div className="flex flex-row justify-center gap-4 mt-8">
+        <button onClick={save} className="btn btn-primary btn-lg flex flex-row items-center gap-4">
+          <UploadIcon />
+          {t('saveThing', { thing: t('account:set') })}
+        </button>
+        <button
+          onClick={() => validateMeasurements(measies)}
+          className="btn btn-secondary btn-lg flex flex-row items-center gap-4"
+        >
+          <DetailIcon />
+          {t('validateMeasurements')}
+        </button>
+      </div>
     </div>
   )
 }
