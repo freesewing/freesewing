@@ -71,4 +71,18 @@ describe('Attributes', () => {
     const props = a.asPropsIfPrefixIs('')
     expect(props.className).to.equal('fabric')
   })
+
+  it('Should clone an attribute', () => {
+    const a = newAttr().set('class', 'fabric')
+    const b = a.clone()
+    const c = a.get('class')
+    expect(c).to.equal('fabric')
+  })
+
+  it('Should not clone a non-cloneable attribute', () => {
+    const a = newAttr().set('class-noclone', 'fabric')
+    const b = a.clone()
+    const c = a.get('class')
+    expect(c).to.equal(false)
+  })
 })
