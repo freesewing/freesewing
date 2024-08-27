@@ -14,12 +14,11 @@ To set it up, I will open a terminal and enter the following command:
 npx @freesewing/new-design
 ```
 
-It will ask if it is ok to install the development environment in a new folder
-named `freesewing`. You can accept the default, or pick a different folder name
-if you prefer.
+It will ask what folder name to create and install the development
+environment into.
 
-It will also ask what package manager you would like to use. 
-Here too the default (`npm`) is fine., unless you are certain you have **yarn** installed.
+It will also ask what package manager you would like to use.
+Here too the default (`npm`) is fine, unless you are certain you have `yarn` installed.
 
 After answering these questions, files will be downloaded, dependencies installed,
 and it will also initialize a git repository for you (if you have git on your system).
@@ -31,7 +30,7 @@ of dependencies that need to be downloaded.
 
 </Note>
 
-When it's ready, you can enter the `freesewing` directory that was just created and run `npm run dev`:
+When it's ready, you can enter the directory that was just created and run `npm run dev`:
 
 ```sh
 cd freesewing
