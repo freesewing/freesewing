@@ -89,6 +89,9 @@ Or do you want it to be what you see when your trousers lie on the floor with th
 
 There's no right or wrong answer here. You do you.
 
+(The images in these instructions assume that the good side of the
+fabric is on the inside of the pocket.)
+
 </Note>
 
 ![Pocket bags sewn to facings](step04a.svg)
