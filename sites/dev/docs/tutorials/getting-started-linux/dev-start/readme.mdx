@@ -33,12 +33,6 @@ Just make sure to re-start the lab afterwards with `yarn lab`
 
 ## Stand-alone development
 
-You will have a new folder that has the name you picked for your design.
-If you chose `test`, you will have a folder named `test`.
-If you chose `banana`, you'll have a folder named `banana`.
-(Within this new folder, the `design` subfolder holds your design's configuration file and source code.
-You can ignore all other subfolders and files; they are part of the development environment.)
-
 To start the development environment, enter the folder that was created
 and run `yarn dev` (or `npm run dev` if you're using npm as a package manager).
 

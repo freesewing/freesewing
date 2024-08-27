@@ -168,29 +168,17 @@ In VSCode or in a terminal, navigate to the folder you wish to contain your new 
 After you've answered [some questions](#questions), it will take a while to set everything up.
 When it's done, you will have a new folder with the development environment inside.
 
-:::tip
-The folder will have the name you chose above.
-:::
-
 :::note
 
 ### Questions
 
-#### What template to use
+#### What folder name to use
 
-Use `From scratch` unless you want to start from our of our blocks:
-
-- Use `Extend Brian` to start from [Brian](https://freesewing.org/designs/brian)
-- Use `Extend Bent` to start from [Bent](https://freesewing.org/designs/bent)
-- Use `Extend Bella` to start from [Bella](https://freesewing.org/designs/bella)
-- Use `Extend Breanna` to start from [Breanna](https://freesewing.org/designs/breanna)
-- Use `Extend Titan` to start from [Titan](https://freesewing.org/designs/titan)
-
-#### What name to use
-
-This will become the name of your design. Stick to \[a-z] here to avoid problems.
-
-If you're not certain what to pick, just mash some keys, it doesn't matter.
+- Select a new folder name to create a new installation
+- Select a folder name containing an existing installation to:
+  - `Overwrite` the installation with an entirely new installation
+  - `Re-initialize` the installation by re-installing dependencies and re-dowloading files
+  - `Re-download` files in the installation
 
 #### What package manager to use
 
@@ -203,12 +191,6 @@ You can choose either `yarn` or `npm` as you wish.
 :::
 
 ## Start the development environment
-
-You will have a new folder that has the name you picked for your design.
-If you chose `test`, you will have a folder named `test`.
-If you chose `banana`, you'll have a folder named `banana`.
-(Within this new folder, the `design` subfolder holds your design's configuration file and source code.
-You can ignore all other subfolders and files; they are part of the development environment.)
 
 To start the development environment, navigate to the folder that was created
 and run `yarn dev` (or `npm run dev` if you're using npm as a package manager).
