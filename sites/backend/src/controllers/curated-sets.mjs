@@ -36,7 +36,7 @@ CuratedSetsController.prototype.list = async (req, res, tools, format = false) =
   if (curatedSets) {
     if (!format) CuratedSet.setResponse(200, 'success', { curatedSets })
     else CuratedSet.setResponse(200, 'success', curatedSets, true)
-  } else CuratedSet.setResponse(404, 'notFound')
+  } else CuratedSet.setResponse(404)
 
   return format === 'yaml' && curatedSets
     ? CuratedSet.sendYamlResponse(res)

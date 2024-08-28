@@ -33,7 +33,7 @@ SetsController.prototype.list = async (req, res, tools) => {
   const sets = await Set.userSets(req.user.uid)
 
   if (sets) Set.setResponse(200, 'success', { sets })
-  else Set.setResponse(404, 'notFound')
+  else Set.setResponse(404)
 
   return Set.sendResponse(res)
 }
