@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 -20 300 220" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+
+  <path d="M 0 200 L 300 200" id="floor" stroke="#ccc" stroke-width="1" />
+  <g id="metric">
+    <g fill="#000" fill-opacity="0.1">
+      <rect x="0" y="0"    width="300" height="20" />
+      <rect x="0" y="40"   width="300" height="20" />
+      <rect x="0" y="80"   width="300" height="20" />
+      <rect x="0" y="120"  width="300" height="20" />
+      <rect x="0" y="160"  width="300" height="20" />
+    </g>
+    <g fill="#fff" fill-opacity="0.1">
+      <rect x="0" y="20"   width="300" height="20" />
+      <rect x="0" y="60"   width="300" height="20" />
+      <rect x="0" y="100"  width="300" height="20" />
+      <rect x="0" y="140"  width="300" height="20" />
+      <rect x="0" y="180"  width="300" height="20" />
+    </g>
+    <text fill="#000" font-size="4">
+      <tspan x="1" y="140">0.60m</tspan>
+      <tspan x="1" y="120">0.80m</tspan>
+      <tspan x="1" y="100">1.00m</tspan>
+      <tspan x="1" y="80">1.20m</tspan>
+      <tspan x="1" y="60">1.40m</tspan>
+      <tspan x="1" y="40">1.60m</tspan>
+      <tspan x="1" y="20">1.80m</tspan>
+      <tspan x="1" y="0">2.00m</tspan>
+    </text>
+  </g>
+  <g id="imperial">
+    <path d="M 0 -13.36 h 300" stroke-width="0.5" stroke="#000" stroke-dasharray="10 10" stroke-opacity="0.4" />
+    <path d="M 0 -13.36 h 300" stroke-width="0.5" stroke="#fff" stroke-dasharray="10 10" stroke-dashoffset="10" stroke-opacity="0.4" />
+    <path d="M 0 17.12  h 300" stroke-width="0.5" stroke="#000" stroke-dasharray="10 10" stroke-opacity="0.4" />
+    <path d="M 0 17.12  h 300" stroke-width="0.5" stroke="#fff" stroke-dasharray="10 10" stroke-dashoffset="10" stroke-opacity="0.4" />
+    <path d="M 0 47.6   h 300" stroke-width="0.5" stroke="#000" stroke-dasharray="10 10" stroke-opacity="0.4" />
+    <path d="M 0 47.6   h 300" stroke-width="0.5" stroke="#fff" stroke-dasharray="10 10" stroke-dashoffset="10" stroke-opacity="0.4" />
+    <path d="M 0 78.08  h 300" stroke-width="0.5" stroke="#000" stroke-dasharray="10 10" stroke-opacity="0.4" />
+    <path d="M 0 78.08  h 300" stroke-width="0.5" stroke="#fff" stroke-dasharray="10 10" stroke-dashoffset="10" stroke-opacity="0.4" />
+    <path d="M 0 108.56 h 300" stroke-width="0.5" stroke="#000" stroke-dasharray="10 10" stroke-opacity="0.4" />
+    <path d="M 0 108.56 h 300" stroke-width="0.5" stroke="#fff" stroke-dasharray="10 10" stroke-dashoffset="10" stroke-opacity="0.4" />
+    <path d="M 0 139.31 h 300" stroke-width="0.5" stroke="#000" stroke-dasharray="10 10" stroke-opacity="0.4" />
+    <path d="M 0 139.31 h 300" stroke-width="0.5" stroke="#fff" stroke-dasharray="10 10" stroke-dashoffset="10" stroke-opacity="0.4" />
+    <text fill="#000" font-size="4" text-anchor="end">
+      <tspan x="299" y="139.31">2f</tspan>
+      <tspan x="299" y="108.56">3f</tspan>
+      <tspan x="299" y="78.08">4f</tspan>
+      <tspan x="299" y="47.6">5f</tspan>
+      <tspan x="299" y="17.12">6f</tspan>
+      <tspan x="299" y="-13.36">7f</tspan>
+    </text>
+  </g>
+
+</svg>
