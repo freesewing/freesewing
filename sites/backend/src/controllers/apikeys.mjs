@@ -27,7 +27,7 @@ ApikeysController.prototype.list = async (req, res, tools) => {
   const apikeys = await Apikey.userApikeys(req.user.uid)
 
   if (apikeys) Apikey.setResponse(200, 'success', { apikeys })
-  else Apikey.setResponse(404, 'notFound')
+  else Apikey.setResponse(404)
 
   return Apikey.sendResponse(res)
 }
@@ -71,7 +71,7 @@ ApikeysController.prototype.whoami = async (req, res, tools) => {
         userId: key[0].userId,
       },
     })
-  else Apikey.setResponse(404, 'notFound')
+  else Apikey.setResponse(404)
 
   return Apikey.sendResponse(res)
 }

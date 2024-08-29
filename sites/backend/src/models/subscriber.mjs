@@ -240,7 +240,7 @@ SubscriberModel.prototype.verifySubscription = async function (body) {
   /*
    * If it is not found, return 404
    */
-  if (!this.record) return this.setResponse(404, 'subscriberNotFound')
+  if (!this.record) return this.setResponse(404)
 
   return this
 }
