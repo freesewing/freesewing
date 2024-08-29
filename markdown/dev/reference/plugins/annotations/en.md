@@ -86,13 +86,6 @@ The annotations plugin also provides store methods:
 
 ## Installation
 
-<Note>
-
-This plugin is part of [core-plugins](/reference/plugins/core), so there is no
-need to install it manually unless you want to forego loading of core plugins,
-yet still want to load this plugin.
-</Note>
-
 ```sh
 npm install @freesewing/plugin-annotations
 ```
@@ -104,6 +97,7 @@ npm install @freesewing/plugin-annotations
 This plugin is part of [core-plugins](/reference/plugins/core), so there is no
 need to load it manually unless you want to forego loading of core plugins,
 yet still want to load this plugin.
+
 </Note>
 
 Either [add it as a part plugin](/reference/api/part/config/plugins) in your
@@ -115,3 +109,8 @@ To import the plugin for use:
 import { plugin } from '@freesewing/plugin-annotations'
 ```
 
+## Notes
+
+This plugin is part of [core-plugins](/reference/plugins/core),
+so there is no need to load it manually unless you wish to forego
+loading of core plugins yet still want to load this plugin.

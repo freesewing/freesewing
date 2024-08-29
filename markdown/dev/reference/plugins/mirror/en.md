@@ -27,6 +27,8 @@ import { pluginMirror } from '@freesewing/plugin-mirror'
 
 ## Notes
 
-The mirror plugin is part of our [core-plugins bundle](/reference/plugins/core)
+This plugin is part of [core-plugins](/reference/plugins/core),
+so there is no need to load it manually unless you wish to forego
+loading of core plugins yet still want to load this plugin.
 
 [1]: https://www.npmjs.com/package/@freesewing/plugin-mirror
