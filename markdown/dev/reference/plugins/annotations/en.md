@@ -92,14 +92,6 @@ npm install @freesewing/plugin-annotations
 
 ## Usage
 
-<Note>
-
-This plugin is part of [core-plugins](/reference/plugins/core), so there is no
-need to load it manually unless you want to forego loading of core plugins,
-yet still want to load this plugin.
-
-</Note>
-
 Either [add it as a part plugin](/reference/api/part/config/plugins) in your
 design, or [add it to a pattern instance with
 Pattern.use()](/reference/api/pattern/use).
@@ -111,6 +103,6 @@ import { plugin } from '@freesewing/plugin-annotations'
 
 ## Notes
 
-This plugin is part of [core-plugins](/reference/plugins/core),
-so there is no need to load it manually unless you wish to forego
+This plugin is part of the [core-plugins bundle](/reference/plugins/core),
+so there is no need to install or import it manually unless you wish to forego
 loading of core plugins yet still want to load this plugin.

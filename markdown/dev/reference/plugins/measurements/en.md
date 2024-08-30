@@ -42,8 +42,8 @@ import { pluginMeasurements } from '@freesewing/plugin-measurements'
 
 ## Notes
 
-This plugin is part of [core-plugins](/reference/plugins/core),
-so there is no need to load it manually unless you wish to forego
+This plugin is part of the [core-plugins bundle](/reference/plugins/core),
+so there is no need to install or import it manually unless you wish to forego
 loading of core plugins yet still want to load this plugin.
 
 [1]: https://www.npmjs.com/package/@freesewing/plugin-measurements
