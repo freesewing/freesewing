@@ -8,7 +8,7 @@ This method is called internally by [the `grainline` macro](/reference/macros/gr
 to store information for cutting layout tools.
 In other words, you typically have no reason to call this method manually.
 
-#### Signature
+## Signature
 
 ```js
 undefined store.cutlist.setGrain(Number grainAngle)
