@@ -11,17 +11,30 @@ However, in our own UI on FreeSewing.org, we use this mechanism to allow
 designer to flag information to the user, and even suggest changes to the
 pattern configuration.
 
+<Tip>
+
+The Signature, Configuration, and Example information below applies to the
+`flag.error()`, `flag.fixme()`, `flag.info()`, `flag.note()`,
+`flag.tip()`, and `flag.warn()` methods.
+
+</Tip>
 
 ## Signature
 
 ```js
 undefined Store.flag.info({
+  id: 'id_string',
   title: 'flag:expandIsOn.t',
   desc: 'flag:expandIsOn.d',
+  msg: 'flag:expandIsOn',
   notes: [
     'sorcha:moreInfo1',
     'sorcha:moreInfo2',
   ],
+  replace: {
+    key1: //code for replacement value,
+    key2: //code for replacement value,
+  },
   suggest: {
     text: 'flag:disable',
     icon: 'expand',
@@ -40,26 +53,45 @@ The example above is from our implementation, which uses the following propertie
 | Property   | Type                | Description |
 | ----------:| ------------------- | ----------- |
 | `id`       | String              | An ID for this flag message. If none is provided, `title` will be used |
-| `title`    | String              | The title of the message |
-| `desc`     | String              | The description of the message |
-| `notes`    | String or  Array of Strings | More information/notes (see [Notes](#notes))|
+| `title`    | String              | The translation key for the title of the message |
+| `desc`     | String              | The translation key for the description of the message |
+| `msg`      | String              | The translation key for the message |
+| `notes`    | String or  Array of Strings | Translation keys for more information/notes (see [Notes](#notes))|
+| `replace`  | Object              | Key/values for text replacements (see [Replacement Values](#replacement-values))|
 | `suggest.text`  | String         | Text to go on the button to implement the suggested configuration change |
 | `suggest.icon`  | String         | Icon name to go on the button to implement the suggested configuration change. (see [suggest.icon](#suggesticon)) |
 | `suggest.update.settings` | Array | An array describing the changes to apply to the `settings` if the user accepts the suggestion. (see [suggest.update](#suggestupdate)) |
 | `suggest.update.ui` | Array | An array describing the changes to apply to the `ui` if the user accepts the suggestion. (see [suggest.update](#suggestupdate)) |
 
+- If `msg` is provided:
+  - `title` will be set to the contents of `msg` appended with ".t".
+  - 'desc' will be set to the contents of `msg` appended with ".d".
+- It is required that at least one of `id` or `title` (or `msg`) be provided.
+- `title` and `desc` are translation keys, and their translation strings
+will be rendered as markdown.
+
 ### Notes
 
 Notes are optional, but allow you to add more text/content to the flag message.
 
-Unlike `desc` which can only hold a string, `notes` can hold either a string or an array of strings.
+Unlike `title` or `desc` which can only hold a string, `notes` can hold either a string or an array of strings.
 
-Both `desc` and `notes` will be rendered as markdown.
+`notes` are also translation keys, and the translation strings will be
+rendered as markdown.
+
+### Replacement Values
+
+The translation strings for `title`, `desc`, and `notes` can contain
+variables that allow calculated values to be inserted into messages.
+
+The optional `replace` object holds key/value pair properties where
+keys are variable names and values contain code that generates
+the replacement text for that variable.
 
 ### suggest.icon
 
-An optional name of an icon. Or leave it out to not render and icon.
-The idea is that the icon helps convey the message, the following icon names are supported:
+An optional name of an icon. Or leave it out to not render an icon.
+The idea is that the icon helps convey the message, with the following icon names supported:
 
 - `note`
 - `info`
@@ -77,12 +109,12 @@ Any other name will be ignored.
 Note that the `suggest` object is optional. Without it, it will merely display a message to the user.
 However, when a suggest key is present, a button will be created that the user can click to accept the suggested changes.
 
-The `suggest.update` object has only two possible top-level keys: 
+The `suggest.update` object has only two possible top-level keys:
 
-- `settings` 
+- `settings`
 - `ui`
 
-They both take the same parameter, an array with two elements: 
+They both take the same parameter, an array with two elements:
 
 ```mjs
 Array [`path`, `value`]
@@ -129,4 +161,3 @@ So to set the `waistEase` option to `0.2`, it should look like this:
   return part
 }
 ```
-
