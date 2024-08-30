@@ -2,9 +2,9 @@
 title: Read the current API key
 ---
 
-Reads the current API key used to authenticate the request. 
+Reads the current API key used to authenticate the request.
 For obvious reasons, this endpoint is only available with API key authentication.
-However, there's an equivalent endpoint for JWT authentication.
+There is no equivalent endpoint for JWT authentication.
 
 ## Access control
 
@@ -23,15 +23,7 @@ Possible status codes for these endpoints are:
 | Status code | Description |
 | ----------: | :---------- |
 | <StatusCode status="200"/> | success |
-| <StatusCode status="400"/> | the request was malformed |
-| <StatusCode status="401"/> | the request lacks authentication |
-| <StatusCode status="403"/> | authentication failed |
-| <StatusCode status="500"/> | server error |
-
-<Note>
-If the status code is not <StatusCode status="200" /> the `error` property
-in the response body should indicate the nature of the problem.
-</Note>
+| <StatusCode status="404"/> | API key not found |
 
 ## Response body
 
@@ -41,6 +33,7 @@ in the response body should indicate the nature of the problem.
 | `error`             | `string` | Will give info on the nature of the error. Only set if an error occurred. |
 | `apikey.key`        | `string` | The API key |
 | `apikey.level`      | `number` | The privilege level of the API key |
+| `apikey.createdAt`  | `string` | A string representation of the moment the API key was created |
 | `apikey.expiresAt`  | `string` | A string representation of the moment the API key expires |
 | `apikey.name`       | `string` | The name of the API key |
 | `apikey.userId`     | `number` | The ID of the user who created the API key |
@@ -66,6 +59,7 @@ const keyInfo = await axios.get(
   "apikey": {
     "key": "7ea12968-7758-40b6-8c73-75cc99be762b",
     "level": 3,
+    "createdAt": "2022-11-06T15:57:30.190Z",
     "expiresAt": "2022-11-06T15:57:30.190Z",
     "name": "My first API key",
     "userId": 61

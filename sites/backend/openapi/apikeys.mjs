@@ -189,12 +189,10 @@ paths['/whoami/key'] = {
     description:
       'Retrieves information about the API key that ' +
       'was used to authenticate the request.\n\n' +
-      '**Note:** _See `GET /whoami/jwt` for the JWT equivalent._',
+      '**Note:** _There is no JWT equivalent._',
     responses: {
       200: paths['/apikeys/{key}/{auth}'].get.responses['200'],
-      401: response.status['401'],
-      403: paths['/apikeys/{key}/{auth}'].get.responses['403'],
-      500: response.status['500'],
+      404: response.status['404'],
     },
   },
 }
