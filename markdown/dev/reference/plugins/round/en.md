@@ -29,6 +29,8 @@ import { pluginRound } from '@freesewing/plugin-round'
 The `round` macro is intended for rounding 90° angles.
 It does not support rounding other angles/corners.
 
-The round plugin is part of our [core-plugins bundle](/reference/plugins/core)
+This plugin is part of the [core-plugins bundle](/reference/plugins/core),
+so there is no need to install or import it manually unless you wish to forego
+loading of core plugins yet still want to load this plugin.
 
 [1]: https://www.npmjs.com/package/@freesewing/plugin-round

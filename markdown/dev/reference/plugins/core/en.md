@@ -10,7 +10,7 @@ Specifically, loading this plugin will have the same effect as loading these
 plugins individually:
 
 
-- [plugin-annotations](/reference/plugins/annotations)
+- [plugin-annotations](/reference/plugins/annotations) : A variety of snippets, macros, and store methods for annotating patterns
 - [plugin-measurements](/reference/plugins/measurements) : Make extra, calculated measurements available to your patterns
 - [plugin-mirror](/reference/plugins/mirror) : Mirror points and paths in your patterns
 - [plugin-round](/reference/plugins/round) : Create rounded corners in your patterns

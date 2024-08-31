@@ -1,15 +1,15 @@
 ---
-title: plugin-mirror
+title: plugin-bin-pack
 ---
 
-Published as [@freesewing/plugin-mirror][1], this plugin provides [the mirror
-macro](/reference/macros/mirror) which facilitates mirroring a number of
-points and/or paths around a given mirror line.
+Published as [@freesewing/plugin-bin-pack][1], this plugin provides
+an optimized [pack()](/reference/store-methods/pack) store method which
+automatically lays out pattern parts.
 
 ## Installation
 
 ```sh
-npm install @freesewing/plugin-mirror
+npm install @freesewing/plugin-bin-pack
 ```
 
 ## Usage
@@ -20,9 +20,11 @@ Pattern.use()](/reference/api/pattern/use).
 
 To import the plugin for use:
 ```js
-import { mirrorPlugin } from '@freesewing/plugin-mirror'
+import { packPlugin } from '@freesewing/plugin-bin-pack'
 // or
-import { pluginMirror } from '@freesewing/plugin-mirror'
+import { binPackPlugin } from '@freesewing/plugin-bin-pack'
+// or
+import { binpackPlugin } from '@freesewing/plugin-bin-pack'
 ```
 
 ## Notes
@@ -31,4 +33,4 @@ This plugin is part of the [core-plugins bundle](/reference/plugins/core),
 so there is no need to install or import it manually unless you wish to forego
 loading of core plugins yet still want to load this plugin.
 
-[1]: https://www.npmjs.com/package/@freesewing/plugin-mirror
+[1]: https://www.npmjs.com/package/@freesewing/plugin-bin-pack
