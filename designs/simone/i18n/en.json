@@ -33,7 +33,7 @@
     },
     "bustAlignedButtons.disabled": {
       "t": "Disabled",
-      "d": "Different button spacings are calculated and used for buttons above and below the bustline."
+      "d": "The same spacing is used for buttons above and below the bustline."
     },
     "bustDartAngle": {
       "t": "Bust dart angle",
