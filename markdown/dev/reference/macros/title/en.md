@@ -88,7 +88,7 @@ macro('title', {
 | `dy`       | `8`     | Number              | SVG-equivalent of line height, controls the vertical spacing between text lines |
 | `force`    | `false` | `boolean`           | Set this to `true` to display the macro output even when `complete` is `false` |
 | `id`       | `title` | `string` | The ID of this macro instance. See [Removing macros and the role of the macro id](/reference/macros#removing-macros-and-the-role-of-the-macro-id) |
-| `notes`    | | String | Any notes to go under the title |
+| `notes`    | | String or Array | Any notes to go under the title |
 | `nr`       |         | String              | The number of the pattern part |
 | `rotation` | `0`     | Number              | Rotation in degrees |
 | `scale`    | 1       | Number              | An optional scaling factor to make the title bigger/smaller |
@@ -101,4 +101,4 @@ macro('title', {
 - This macro takes the `complete` setting into account and won't output anything when both complete and `force` are `false`.
 - This macro will check the value of `store.version` and `store.name` for the design version and name. These are auto-set by core.
 - This macro will check the value of `store.for` for info of who this pattern was generated for. This is something to be done at run-time by your frontend.
-
+- The `notes` property can be a string or an array of strings.
