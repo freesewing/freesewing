@@ -12,7 +12,11 @@ import {
   round,
   __addNonEnumProp,
   __asNumber,
+  beamsIntersect,
 } from './utils.mjs'
+import { addLengthGuard } from 'chai/lib/chai/utils/index.js'
+
+const newJoinEnabled = true
 
 //////////////////////////////////////////////
 //               CONSTRUCTOR                //
@@ -304,6 +308,18 @@ Path.prototype.clone = function () {
  * @return {Path} this - The Path instance
  */
 Path.prototype.close = function () {
+  // join up the end of this path with the start of this path in a similar way to the __joinPathsCornered method
+  // (only we join this path with its own beginning)
+  const reversed = this.reverse()
+  let prevCp = this.ops[1].cp1 ?? this.ops[1].to
+  let prevEnd = this.ops[0].to
+  let nextEnd = reversed.ops[0].to
+  let nextCp = reversed.ops[1].cp1 ?? reversed.ops[1].to
+  let join = __createJoin(prevCp, prevEnd, nextEnd, nextCp, 0, this.log)
+  if (join) {
+    this.ops.push(...join.ops.slice(1))
+  }
+
   this.ops.push({ type: 'close' })
 
   return this
@@ -590,7 +606,9 @@ Path.prototype.join = function (...paths) {
     this.log.warn(
       '`Path.join()` was called with the legacy signature passing a bool as second parameter. This is deprecated and will be removed in FreeSewing v4'
     )
-    return paths[1] ? __joinPaths([this, paths[0]]).close() : __joinPaths([this, paths[0]])
+    return paths[1]
+      ? __joinPathsCornered([this, paths[0]]).close()
+      : __joinPathsCornered([this, paths[0]])
   }
 
   /*
@@ -605,7 +623,7 @@ Path.prototype.join = function (...paths) {
     i++
   }
 
-  return __joinPaths([this, ...paths])
+  return __joinPathsCornered([this, ...paths])
 }
 
 /**
@@ -1436,6 +1454,61 @@ function __joinPaths(paths) {
 }
 
 /**
+ * Joins path segments together into one path while extending corners so that the paths meet
+ *
+ * @private
+ * @param {Array} paths - An Array of Path objects
+ * @param fixIntersections - cut off intersections between adjacent paths
+ * @return {object} path - A Path instance
+ */
+function __joinPathsCornered(paths, fixIntersections = false) {
+  let joint = new Path().__withLog(paths[0].log).move(paths[0].ops[0].to)
+  let current
+  let prevPath
+  for (let p of paths) {
+    if (prevPath && prevPath.ops.length > 1) {
+      const intersects = prevPath.intersects(p)
+      if (intersects.length > 0 && fixIntersections) {
+        // paths intersect, so fix
+        const intersection = intersects.pop()
+        prevPath = prevPath.split(intersection).pop()
+        p = p.split(intersection)[0]
+      } else {
+        const reversed = prevPath.reverse()
+        let prevCp = reversed.ops[1].cp1 ?? reversed.ops[1].to
+        let prevEnd = reversed.ops[0].to
+        let nextEnd = p.ops[0].to
+        let nextCp = p.ops[1].cp1 ?? p.ops[1].to
+        let join = __createJoin(prevCp, prevEnd, nextEnd, nextCp, 0, joint.log)
+        if (join) {
+          joint.ops.push(...join.ops.slice(1))
+        }
+      }
+    }
+    for (let op of p.ops) {
+      if (op.type === 'curve') {
+        joint.curve(op.cp1, op.cp2, op.to)
+      } else if (op.type === 'noop') {
+        joint.noop(op.id)
+      } else if (op.type !== 'close') {
+        // We're using sitsRoughlyOn here to avoid miniscule line segments
+        if (current && !op.to.sitsRoughlyOn(current)) {
+          joint.line(op.to)
+        }
+      } else {
+        let err = 'Cannot join a closed path with another'
+        joint.log.error(err)
+        throw new Error(err)
+      }
+      if (op.to) current = op.to
+    }
+    prevPath = p
+  }
+
+  return joint
+}
+
+/**
  * Returns an object holding topLeft and bottomRight Points of the bounding box of a line
  *
  * @private
@@ -1490,6 +1563,76 @@ function __offsetLine(from, to, distance, log = false) {
 }
 
 /**
+ * Creates a join between two paths
+ * @param from node (or control point) before `before` (determining the angle of the first segment
+ * @param before node at the end of the first segment
+ * @param after node at the start of the second segment
+ * @param to node (or control point) after the `after` node (determining the angle at the start of the second segment)
+ * @param distance offset distance (if used from offset function)
+ * @param log log
+ * @returns {Path|boolean} path for corner if it could be determined, else `false`
+ * @private
+ */
+function __createJoin(from, before, after, to, distance, log = false) {
+  if (!newJoinEnabled) return false
+  if (!from) return false
+  if (!before) return false
+  if (!after) return false
+  if (from.dist(before) < 1) return false
+  if (after.dist(to) < 1) return false
+  if (from.dist(to) < 1) return false
+  let startAngle = from.angle(before) - 90
+  let endAngle = after.angle(to) - 90
+
+  let angleDiff = startAngle - endAngle
+  while (angleDiff > 180) {
+    angleDiff -= 360
+  }
+  while (angleDiff < -180) {
+    angleDiff += 360
+  }
+  if (Math.abs(angleDiff) < 5) {
+    // No join necessary
+    return false
+  }
+  if (angleDiff > 0) {
+    // No join necessary
+    return false
+  }
+
+  const fromShifted = from.shift(startAngle, distance)
+  const currentShiftedStart = before.shift(startAngle, distance)
+  const currentShiftedEnd = after.shift(endAngle, distance)
+  const toShifted = to.shift(endAngle, distance)
+
+  if (angleDiff < -150) {
+    if (!before.sitsOn(after)) {
+      return false
+    }
+
+    // use circleSegment instead
+    return new Path().move(currentShiftedStart).circleSegment(-angleDiff, before)
+  }
+
+  const intersection = beamsIntersect(
+    fromShifted,
+    currentShiftedStart,
+    currentShiftedEnd,
+    toShifted
+  )
+
+  if (!intersection) {
+    return false
+  }
+
+  return new Path()
+    .__withLog(log)
+    .move(currentShiftedStart)
+    .line(intersection)
+    .line(currentShiftedEnd)
+}
+
+/**
  * Offsets a path by distance
  *
  * @private
@@ -1499,12 +1642,18 @@ function __offsetLine(from, to, distance, log = false) {
  */
 function __pathOffset(path, distance, log) {
   let offset = []
+  let prev
   let current
   let start = false
   let closed = false
   for (let i in path.ops) {
     let op = path.ops[i]
     if (op.type === 'line') {
+      let join = __createJoin(prev, current, current, op.to, distance, path.log)
+      if (join) {
+        offset.push(join)
+      }
+      prev = current
       let segment = __offsetLine(current, op.to, distance, path.log)
       if (segment) offset.push(segment)
     } else if (op.type === 'curve') {
@@ -1519,6 +1668,13 @@ function __pathOffset(path, distance, log) {
         cp2 = new Path().__withLog(path.log).move(op.to).curve(op.cp2, op.cp1, current)
         cp2 = cp2.shiftAlong(cp2.length() > 2 ? 2 : cp2.length() / 10)
       } else cp2 = op.cp2
+
+      let join = __createJoin(prev, current, current, cp1, distance, path.log)
+      if (join) {
+        offset.push(join)
+      }
+      prev = cp2
+
       let b = new Bezier(
         { x: current.x, y: current.y },
         { x: cp1.x, y: cp1.y },
@@ -1529,7 +1685,25 @@ function __pathOffset(path, distance, log) {
         const segment = __asPath(bezier, path.log)
         if (segment) offset.push(segment)
       }
-    } else if (op.type === 'close') closed = true
+    } else if (op.type === 'close') {
+      let next = path.ops[1].cp1 ?? path.ops[1].to
+      if (current.sitsOn(start)) {
+        let join = __createJoin(prev, current, current, next, distance, path.log)
+        if (join) {
+          offset.push(join)
+        }
+      } else {
+        let joinA = __createJoin(prev, current, current, start, distance, path.log)
+        if (joinA) {
+          offset.push(joinA)
+        }
+        let joinB = __createJoin(current, start, start, next, distance, path.log)
+        if (joinB) {
+          offset.push(joinB)
+        }
+      }
+      closed = true
+    }
     if (op.to) current = op.to
     if (!start) start = current
   }
@@ -1537,7 +1711,7 @@ function __pathOffset(path, distance, log) {
   let result
 
   if (offset.length !== 0) {
-    result = __joinPaths(offset)
+    result = __joinPathsCornered(offset)
   } else {
     // degenerate case: Original path was likely short, so all the "if (segment)" checks returned false
     // retry treating the path as a simple straight line from start to end
