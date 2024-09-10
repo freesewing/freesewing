@@ -1151,9 +1151,9 @@ Path.prototype.trim = function () {
           first = false
         }
         let joint
-        if (trimmedStart.length > 0) joint = __joinPaths(trimmedStart).join(glue)
+        if (trimmedStart.length > 0) joint = __joinPaths([...trimmedStart, glue])
         else joint = glue
-        if (trimmedEnd.length > 0) joint = joint.join(__joinPaths(trimmedEnd))
+        if (trimmedEnd.length > 0) joint = __joinPaths([joint, ...trimmedEnd])
 
         return joint.trim()
       }
