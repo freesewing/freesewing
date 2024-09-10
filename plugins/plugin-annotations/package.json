@@ -53,7 +53,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "10.7.0",
+    "mocha": "10.7.3",
     "chai": "5.1.1"
   },
   "files": [
