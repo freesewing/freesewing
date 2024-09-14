@@ -1,6 +1,6 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Components
-import { Point as ShowPoint, utils } from 'pkgs/react-components/src/index.mjs'
+import { Point as ShowPoint, getId, withinPartBounds } from 'pkgs/react-components/src/index.mjs'
 import { Attributes, pointCoords, KeyValTable } from './shared.mjs'
 import { TrashIcon, PrintIcon, SearchIcon } from 'shared/components/icons.mjs'
 
@@ -113,7 +113,7 @@ const InspectPoint = ({
   inspector,
   color = 'contrast',
 }) => {
-  const id = utils.getId({ stackName, pointName, settings: { idPrefix: 'point-' } })
+  const id = getId({ stackName, pointName, settings: { idPrefix: 'point-' } })
 
   return (
     <g>
@@ -149,7 +149,7 @@ export const Point = ({
   inspector,
 }) => {
   // Don't include parts outside the part bounding box
-  if (!utils.withinPartBounds(point, part)) return null
+  if (!withinPartBounds(point, part)) return null
 
   return (
     <>

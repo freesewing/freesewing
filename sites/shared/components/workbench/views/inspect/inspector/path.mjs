@@ -1,6 +1,6 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Components
-import { Path as ShowPath, utils } from 'pkgs/react-components/src/index.mjs'
+import { Path as ShowPath, getId, getProps } from 'pkgs/react-components/src/index.mjs'
 import { Attributes, pointCoords, KeyValTable } from './shared.mjs'
 import { formatMm } from 'shared/utils.mjs'
 import { TrashIcon, PrintIcon, SearchIcon } from 'shared/components/icons.mjs'
@@ -131,13 +131,13 @@ export const pathInfo = ({ id, pathName, stackName, path, inspector, t }) => {
 const InspectPath = ({ stackName, pathName, path, t, inspector }) => {
   const classes = path.attributes.list.class
   if (typeof classes === 'string' && classes.includes('skip-inspector')) return null
-  const id = utils.getId({ stackName, pathName, settings: { idPrefix: 'path-' } })
+  const id = getId({ stackName, pathName, settings: { idPrefix: 'path-' } })
 
   return (
     <g>
       <path
         d={path.d}
-        {...utils.getProps(path)}
+        {...getProps(path)}
         className={`hover:opacity-20 text-primary hover:cursor-pointer ${
           inspector.data.reveal[id] ? 'pulse-stroke stroke-3xl' : 'opacity-0 stroko-0 stroke-5xl'
         }`}
