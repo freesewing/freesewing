@@ -57,12 +57,12 @@ The annotations plugin provides the following macros:
 - [rmvd](/reference/macros/rmvd)
 - [rmpleat](/reference/macros/rmpleat)
 - [rmscalebox](/reference/macros/rmscalebox)
-- [rmsewTogether](/reference/macros/rmsetogether)
+- [rmsewTogether](/reference/macros/rmsewtogether)
 - [rmtitle](/reference/macros/rmtitle)
 - [pd](/reference/macros/pd)
 - [pleat](/reference/macros/pleat)
 - [scalebox](/reference/macros/scalebox)
-- [sewTogether](/reference/macros/setogether)
+- [sewTogether](/reference/macros/sewtogether)
 - [title](/reference/macros/title)
 - [vd](/reference/macros/vd)
 
@@ -86,25 +86,11 @@ The annotations plugin also provides store methods:
 
 ## Installation
 
-<Note>
-
-This plugin is part of [core-plugins](/reference/plugins/core), so there is no
-need to install it manually unless you want to forego loading of core plugins,
-yet still want to load this plugin.
-</Note>
-
 ```sh
 npm install @freesewing/plugin-annotations
 ```
 
 ## Usage
-
-<Note>
-
-This plugin is part of [core-plugins](/reference/plugins/core), so there is no
-need to load it manually unless you want to forego loading of core plugins,
-yet still want to load this plugin.
-</Note>
 
 Either [add it as a part plugin](/reference/api/part/config/plugins) in your
 design, or [add it to a pattern instance with
@@ -115,3 +101,8 @@ To import the plugin for use:
 import { plugin } from '@freesewing/plugin-annotations'
 ```
 
+## Notes
+
+This plugin is part of the [core-plugins bundle](/reference/plugins/core),
+so there is no need to install or import it manually unless you wish to forego
+loading of core plugins yet still want to load this plugin.

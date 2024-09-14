@@ -8,6 +8,7 @@ import {
   horFlexClasses,
   newPatternUrl,
 } from 'shared/utils.mjs'
+import orderBy from 'lodash.orderby'
 import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'
 // Context
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
@@ -35,6 +36,7 @@ import {
   CameraIcon,
   EditIcon,
   ResetIcon,
+  RightIcon,
   UploadIcon,
   FreeSewingIcon,
   CloneIcon,
@@ -540,6 +542,19 @@ export const PatternCard = ({
   return <div {...wrapperProps}>{inner}</div>
 }
 
+// Component to show the sort header in the pattern table
+const SortButton = ({ field, label, order, orderAsc, updateOrder }) => (
+  <button
+    onClick={() => updateOrder(field)}
+    className="btn-link text-secondary flex flex-row gap-2 items-center decoration-0 no-underline"
+  >
+    {label}
+    {order === field ? (
+      <RightIcon className={`w-5 h-5 ${orderAsc ? '-rotate-90' : 'rotate-90'}`} stroke={3} />
+    ) : null}
+  </button>
+)
+
 // Component for the account/patterns page
 export const Patterns = () => {
   const router = useRouter()
@@ -554,6 +569,8 @@ export const Patterns = () => {
   const [patterns, setPatterns] = useState([])
   const [selected, setSelected] = useState({})
   const [refresh, setRefresh] = useState(0)
+  const [order, setOrder] = useState('id')
+  const [orderAsc, setOrderAsc] = useState(true)
 
   // Helper var to see how many are selected
   const selCount = Object.keys(selected).length
@@ -601,6 +618,14 @@ export const Patterns = () => {
     setLoadingStatus([true, 'nailedIt', true, true])
   }
 
+  // Helper method to update the order state
+  const updateOrder = (field) => {
+    if (order !== field) {
+      setOrder(field)
+      setOrderAsc(true)
+    } else setOrderAsc(!orderAsc)
+  }
+
   return (
     <div className="max-w-4xl xl:pl-4">
       <p className="text-center md:text-right">
@@ -624,16 +649,42 @@ export const Patterns = () => {
                   checked={patterns.length === selCount}
                 />
               </th>
-              <th>#</th>
+              <th>
+                <SortButton field="id" label="#" {...{ order, orderAsc, updateOrder }} />
+              </th>
               <th>{t('account:img')}</th>
-              <th>{t('account:name')}</th>
-              <th>{t('account:design')}</th>
-              <th>{t('account:createdAt')}</th>
-              <th>{t('account:public')}</th>
+              <th>
+                <SortButton
+                  field="name"
+                  label={t('account:name')}
+                  {...{ order, orderAsc, updateOrder }}
+                />
+              </th>
+              <th>
+                <SortButton
+                  field="design"
+                  label={t('account:design')}
+                  {...{ order, orderAsc, updateOrder }}
+                />
+              </th>
+              <th>
+                <SortButton
+                  field="createdAt"
+                  label={t('account:createdAt')}
+                  {...{ order, orderAsc, updateOrder }}
+                />
+              </th>
+              <th>
+                <SortButton
+                  field="public"
+                  label={t('account:public')}
+                  {...{ order, orderAsc, updateOrder }}
+                />
+              </th>
             </tr>
           </thead>
           <tbody>
-            {patterns.map((pattern, i) => (
+            {orderBy(patterns, order, orderAsc ? 'asc' : 'desc').map((pattern, i) => (
               <tr key={i}>
                 <td className="text-base font-medium">
                   <input

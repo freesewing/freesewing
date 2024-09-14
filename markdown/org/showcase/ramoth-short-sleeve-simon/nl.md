@@ -1,5 +1,5 @@
 ---
-maker: "Ramoth"
+author: 23386
 caption: "Ramoths Simon met korte mouwen, waarbij de meeste vorm is verplaatst naar de figuurnaden op de rug"
 date: "2021-09-30"
 intro: "Simon overhemd met korte mouwen van Ramoth"

@@ -1,5 +1,5 @@
 ---
-maker: "Ramoth"
+author: 23386
 caption: "Me encantan las polillas de esta preciosa franela Simon"
 date: "2023-02-03"
 intro: "Franela Simon de Ramoth"

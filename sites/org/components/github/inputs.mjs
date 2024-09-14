@@ -16,7 +16,9 @@ export const AuthorInput = ({ author, setAuthor }) => (
     className={`input input-text input-bordered input-lg w-full mb-2 ${
       author ? 'input-success' : 'input-error'
     }`}
-    type="number"
+    type="text"
+    inputMode="numeric"
+    pattern="[0-9]*"
     value={author}
     placeholder="Enter the user ID here"
     onChange={(evt) => setAuthor(evt.target.value)}

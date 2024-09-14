@@ -5,7 +5,7 @@ title: Svg.asRenderProps()
 The `Svg.asRenderProps()` method will return the data stored in the
 svg as a serializable JavaScript object. This method is typically
 not invoked directly but rather called under the hood as a result of
-calling [`Pattern.getRenderProps()`](/reference/core/pattern/getrenderprops).
+calling [`Pattern.getRenderProps()`](/reference/api/pattern/getrenderprops).
 
 ## Signature
 

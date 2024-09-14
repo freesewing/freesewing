@@ -24,8 +24,8 @@ function pacoWaistband({
       msg: `paco:cutWaistband`,
       notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
       replace: {
-        w: units(w + 2 * extraSa),
-        l: units(l + 2 * extraSa),
+        w: units(2 * w + 2 * extraSa),
+        l: units(l + extraSa),
       },
       suggest: {
         text: 'flag:show',

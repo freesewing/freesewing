@@ -14,7 +14,7 @@ not merely a string with its name.
 <Tip>
 
 Dependencies configured on parts do not need to be included in the `parts` property
-passed to [the Design constructor](/referene/api/design). FreeSewing core will 
+passed to [the Design constructor](/reference/api/design). FreeSewing core will 
 recursively resolve all dependencies and add them to the design for you.
 
 </Tip>

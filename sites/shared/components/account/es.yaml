@@ -188,6 +188,8 @@ customBookmark: Marcadores personalizados
 yourBookmarks: Tus favoritos
 bookmarkThisThing: Marca este { thing }
 page: Página
+doc: Documentación
+pattern: Patrón
 #sets
 set: Conjunto de medidas
 name: Nombre
@@ -250,7 +252,6 @@ andMore: and more
 unitsMustSave: "Note: You must save after changing Units to have the change take effect on this page."
 makePublic: Make public
 makePrivate: Make private
-pattern: Patrón
 patternNew: Generar un nuevo patrón
 patternNewInfo: Elige un diseño, añade tu juego de medidas y generaremos un patrón de costura a medida para ti.
 designNew: Crear un nuevo diseño

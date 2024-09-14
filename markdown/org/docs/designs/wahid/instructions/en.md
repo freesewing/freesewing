@@ -86,7 +86,7 @@ When you are done, press open this seam.
 
 #### Mark where your pocket needs to go
 
-![Mark where your pocket needs to go](05a.png)
+![Mark where your pocket needs to go](05b.png)
 
 Your front pattern piece has a helpline on it to show where the welt pocket should go. It's two half rectangles that got joined together when you closed the dart to form the shape of your welt pocket.
 
@@ -117,7 +117,7 @@ Now sew along the helpline which marks the long edge of your pocket.
 
 #### Cut open the pocket
 
-![Cut open the pocket](05c.png)
+![Cut open the pocket](05e.png)
 
 Time to carefully cut open the pocket. Start in the middle of the pocket, and cut towards along the longest edges towards the side.
 
@@ -127,7 +127,7 @@ At the edges of your pocket you need to stop cutting open the center and instead
 
 #### Press open the seam allowance
 
-![Press open the seam allowance](05c.png)
+![Press open the seam allowance](05f.png)
 
 Press open the seam allowance along the long edges of your pocket.
 

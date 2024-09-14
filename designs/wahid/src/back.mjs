@@ -130,6 +130,7 @@ function wahidBack({
    */
   // Cutlist
   store.cutlist.setCut({ cut: 2, from: 'fabric' })
+  store.cutlist.addCut({ cut: 2, from: 'lining' })
 
   // Title
   macro('title', {

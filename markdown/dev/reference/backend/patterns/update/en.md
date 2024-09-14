@@ -6,8 +6,8 @@ Updates an existing Pattern.
 
 ## Access control
 
-- [Permission level](/reference/backend/api/rbac) `3` or higher is required to update a Pattern
-- [Permission level](/reference/backend/api/rbac) `8` is required to update **another user's** Pattern
+- [Permission level](/reference/backend/rbac) `3` or higher is required to update a Pattern
+- [Permission level](/reference/backend/rbac) `8` is required to update **another user's** Pattern
 
 ## Endpoints
 
@@ -15,8 +15,8 @@ Updating an existing Pattern is possible via these endpoints:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method put /> | `/patterns/:id/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
-| <Method put /> | `/patterns/:id/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
+| <Method put /> | `/patterns/:id/jwt` | [JSON Web Token](/reference/backend/authentication#jwt-authentication) |
+| <Method put /> | `/patterns/:id/key` | [API Key & Secret](/reference/backend/authentication#key-authentication) |
 
 ## Request URL
 

@@ -44,9 +44,7 @@ function jaegerChestPiece({
     .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
     .line(points.neck)
     .line(points.collarCorner)
-    .line(points.notch)
-    .line(points.notchEdge)
-    ._curve(points.lapelStraightEndCp1, points.lapelStraightEnd)
+    .line(points.shoulderRoll)
     .line(points.lapelBreakPoint)
     .curve(points.cutawayPoint, points.waist, points.fsArmhole)
     .close()
@@ -61,12 +59,12 @@ function jaegerChestPiece({
   store.cutlist.setCut({ cut: 2, from: 'canvas' })
 
   // Logo
-  snippets.logo = new Snippet('logo', points.innerPocketBottomLeft)
+  snippets.logo = new Snippet('logo', points.innerPocketBottomRight)
 
   // Grainline
   macro('grainline', {
-    from: new Point(points.cfNeck.x, points.lapelBreakPoint.y),
-    to: points.cfNeck,
+    from: new Point(points.collarCorner.x, points.lapelBreakPoint.y),
+    to: points.collarCorner,
   })
 
   // Title

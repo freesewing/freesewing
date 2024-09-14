@@ -6,7 +6,7 @@ Reads an existing Person.
 
 ## Access control
 
-The [Permission level](/reference/backend/api/rbac) required to read a
+The [Permission level](/reference/backend/rbac) required to read a
 Person depends on:
 
 - Whether the Person is  `public`
@@ -25,8 +25,8 @@ Reading a Person is possible via these endpoints:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method get /> | `/people/:id/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
-| <Method get /> | `/people/:id/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
+| <Method get /> | `/people/:id/jwt` | [JSON Web Token](/reference/backend/authentication#jwt-authentication) |
+| <Method get /> | `/people/:id/key` | [API Key & Secret](/reference/backend/authentication#key-authentication) |
 
 ## Request url
 

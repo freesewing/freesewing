@@ -40,7 +40,7 @@ y sigue así.
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -95,7 +95,7 @@ para aportar ideas. Hasta entonces, veremos qué nos depara el futuro.
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -125,7 +125,7 @@ Realmente aprecio el enfoque de Wouter, que tiene sus propias necesidades como i
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -164,7 +164,7 @@ Supongo que ya veremos cómo va. Puedes averiguarlo por ti mismo, estamos [@free
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -178,7 +178,7 @@ Vale, espero que al final todo haya ido bien. Pero como recordatorio: Puedes rec
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 

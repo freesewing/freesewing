@@ -10,12 +10,12 @@ Specifically, loading this plugin will have the same effect as loading these
 plugins individually:
 
 
-- [plugin-annotations](/reference/plugins/annotations)
+- [plugin-annotations](/reference/plugins/annotations) : A variety of snippets, macros, and store methods for annotating patterns
 - [plugin-measurements](/reference/plugins/measurements) : Make extra, calculated measurements available to your patterns
 - [plugin-mirror](/reference/plugins/mirror) : Mirror points and paths in your patterns
 - [plugin-round](/reference/plugins/round) : Create rounded corners in your patterns
 - [plugin-sprinkle](/reference/plugins/sprinkle) : Add multiple snippets to your patterns
-- [plugin-binpack](/reference/plugins/binpack) : The default bin packing algorithm used to handle auto-generated layouts in core
+- [plugin-binpack](https://github.com/freesewing/freesewing/tree/develop/plugins/plugin-bin-pack) : The default bin packing algorithm used to handle auto-generated layouts in core
 
 ## Installation
 

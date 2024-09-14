@@ -6,7 +6,7 @@ Reads an existing Pattern.
 
 ## Access control
 
-The [Permission level](/reference/backend/api/rbac) required to read a
+The [Permission level](/reference/backend/rbac) required to read a
 Pattern depends on:
 
 - Whether the Pattern is  `public`
@@ -25,8 +25,8 @@ Reading a Pattern is possible via these endpoints:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method get /> | `/patterns/:id/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
-| <Method get /> | `/patterns/:id/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
+| <Method get /> | `/patterns/:id/jwt` | [JSON Web Token](/reference/backend/authentication#jwt-authentication) |
+| <Method get /> | `/patterns/:id/key` | [API Key & Secret](/reference/backend/authentication#key-authentication) |
 
 ## Request URL
 

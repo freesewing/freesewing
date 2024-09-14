@@ -1,5 +1,5 @@
 ---
-maker: "Ramoth"
+author: 23386
 caption: "L'impressionnant premier Simon de Ramoth"
 date: "2021-08-24"
 intro: "Ramoth a réalisé cette fantastique première ébauche de la chemise Simon et a généreusement partagé quelques notes utiles sur la coupe. Ils ont dit :"

@@ -19,16 +19,6 @@ export const frontOutside = {
       .curve(points.armholeCutCp, points.strapOutsideCp, points.strapOutside)
       .hide()
 
-    paths.princessSeam = new Path()
-      .move(points.shoulderDartOutside)
-      .curve(
-        points.shoulderDartTipCpDownOutside,
-        points.waistUpDartRightCpUp,
-        points.waistUpDartRight
-      )
-      .curve(points.waistUpDartRightCpDown, points.waistCpUp, points.waistDartRight)
-      .hide()
-
     paths.armhole = new Path()
       .move(points.armhole)
       .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)

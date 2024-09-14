@@ -3,7 +3,7 @@ title: Point.setCircle()
 ---
 
 The `Point.setCircle()` method adds a circle to a Point. It yields similar
-results as the [`Point.addCircle()`](/reference/api/points/addcircle) method,
+results as the [`Point.addCircle()`](/reference/api/point/addcircle) method,
 the different is that `Point.setCircle()` will overwrite any previous circle
 set.
 

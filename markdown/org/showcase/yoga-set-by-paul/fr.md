@@ -7,5 +7,6 @@ title: "Tenue de yoga par Paul"
 designs:
   - "aaron"
   - "bruce"
+author: 433
 ---
 

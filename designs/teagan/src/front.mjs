@@ -94,8 +94,26 @@ function teaganFront({
   )
 
   // Draw seamline
-  paths.hemBase = new Path().move(points.cfHem).line(points.hem).hide()
   if (options.fitWaist) {
+    // Fix problem when length bonus becomes too small and the hem is above the hips
+    if (points.hem.y < points.hipsCp2.y) {
+      const tempSeam = new Path()
+        .move(new Point(points.hem.x, points.hipsCp2.y))
+        .curve(points.hipsCp2, points.waistCp1, points.waist)
+        .curve_(points.waistCp2, points.armhole)
+      points.hem = tempSeam.intersectsY(points.hem.y)[0]
+      const splitSeam = tempSeam.split(points.hem)
+      if (splitSeam[1].ops.length < 3) {
+        points.hipsCp2 = points.hem.copy()
+        points.waistCp1 = points.hem.copy()
+        points.waist = points.hem.copy()
+      } else {
+        points.hipsCp2 = splitSeam[1].ops[1].cp1.copy()
+        points.waistCp1 = splitSeam[1].ops[1].cp2.copy()
+        points.waist = splitSeam[1].ops[1].to.copy()
+        points.waistCp2 = splitSeam[1].ops[2].cp1.copy()
+      }
+    }
     paths.sideSeam = new Path()
       .move(points.hem)
       .curve(points.hipsCp2, points.waistCp1, points.waist)
@@ -104,6 +122,8 @@ function teaganFront({
   } else {
     paths.sideSeam = new Path().move(points.hem).curve_(points.waistCp2, points.armhole).hide()
   }
+  paths.hemBase = new Path().move(points.cfHem).line(points.hem).hide()
+
   paths.saBase = new Path()
     .move(points.armhole)
     .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
@@ -243,7 +263,7 @@ export const front = {
     // Brian overrides
     chestEase: { pct: 12, min: 5, max: 25, menu: 'fit' },
     sleeveLength: { pct: 30, min: 20, max: 100, menu: 'fit' },
-    lengthBonus: { pct: 5, min: -20, max: 60, menu: 'style' },
+    lengthBonus: { pct: 15, min: -20, max: 60, menu: 'style' },
     backNeckCutout: { pct: 8, min: 4, max: 12, menu: 'fit' },
     // Teagan specific
     draftForHighBust: { bool: false, menu: 'fit' },

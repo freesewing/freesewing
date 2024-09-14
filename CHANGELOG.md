@@ -9,7 +9,24 @@
 
  - Always load plugin-bust due to its changes in how it handle conditionality.
 
+### cathrin
+
+#### Changed
+
+ - Allow negative values in backDrop option. Fixes
+ - Allow negative values for the frontRise options. Fixes
+
+### charlie
+
+#### Fixed
+
+ - Fix cut instructions for fly facing, only 1 to be cut. Fixes
+
 ### huey
+
+#### Changed
+
+ - The lengthBonus option default was changed from 0% to 15%. Fixes
 
 #### Fixed
 
@@ -23,6 +40,13 @@
 
  - Add missing dimension id attributes
 
+### noble
+
+#### Fixed
+
+ - Fix 'cutonfold' text for Noble's back part. Fixes
+ - Improve dart shaping. Fixes
+
 ### onyx
 
 #### Changed
@@ -35,11 +59,33 @@
 
  - Always load plugin-bust due to its changes in how it handle conditionality.
 
+### simon
+
+#### Changed
+
+ - Allow negative values for the buttonFreeLength option. Fixes
+
+### simone
+
+#### Fixed
+
+ - Added missing translation for various options
+
 ### tamiko
 
 #### Changed
 
  - Always load plugin-bust due to its changes in how it handle conditionality.
+
+### teagan
+
+#### Changed
+
+ - Increased default lengthBonus from 5% to 15%. Fixes
+
+#### Fixed
+
+ - Fix side seam when length is cropped. Fixes
 
 ### uma
 
@@ -64,6 +110,16 @@
 #### Deprecated
 
  - The `withCondition` named  export is deprecated and will always return true.
+
+### core
+
+#### Added
+
+ - The `Path.rotate()` method was added to the core API.
+
+#### Fixed
+
+ - Fix an issue when splitting path on start or end point. Fixes
 
 
 ## 3.2.0 (2024-02-11)

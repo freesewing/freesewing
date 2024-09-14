@@ -4,6 +4,7 @@ import { plugin as ringsectorPlugin } from '@freesewing/plugin-ringsector'
 export const CreateShape = ({
   points,
   paths,
+  Path,
   options,
   macro,
   store,
@@ -16,9 +17,10 @@ export const CreateShape = ({
   const double =
     type == options.zipperLocation || (true == options.lacing && type == options.lacingLocation)
 
+  const angle = (options.peplumFullness / 2) * ratio * (double ? 0.5 : 1)
   macro('ringsector', {
     id: type + 'Peblum',
-    angle: (options.peplumFullness / 2) * ratio * (double ? 0.5 : 1),
+    angle: angle,
     insideRadius: radius,
     outsideRadius: radius + width,
     rotate: false,
@@ -45,10 +47,20 @@ export const CreateShape = ({
     scale: options.peplumSize * 2,
   })
 
-  if (sa)
-    paths[type + 'SA'] = paths['__macro_ringsector_' + type + 'Peblum_path']
-      .offset(sa)
+  if (sa) {
+    paths[type + 'SA'] = new Path()
+      .line(points['__macro_ringsector_' + type + 'Peblum_ex2Flipped'])
+      .join(
+        new Path()
+          .move(points['__macro_ringsector_' + type + 'Peblum_ex2Flipped'])
+          .circleSegment(angle, points['__macro_ringsector_' + type + 'Peblum_center'])
+          .line(points['__macro_ringsector_' + type + 'Peblum_in2'])
+          .circleSegment(-angle, points['__macro_ringsector_' + type + 'Peblum_center'])
+          .offset(sa)
+      )
+      .line(points['__macro_ringsector_' + type + 'Peblum_in2Flipped'])
       .attr('class', 'fabric sa')
+  }
 
   macro('hd', {
     id: 'topWidth',
@@ -92,7 +104,7 @@ export const peplumFront = {
     },
   },
   plugins: [ringsectorPlugin],
-  draft: ({ sa, Point, points, paths, options, macro, store, units, part }) => {
+  draft: ({ sa, Point, points, paths, Path, options, macro, store, units, part }) => {
     if (false == options.peplum) {
       return part.hide()
     }
@@ -127,6 +139,7 @@ export const peplumFront = {
       Point: Point,
       points: points,
       paths: paths,
+      Path: Path,
       options: options,
       macro: macro,
       store: store,

@@ -6,7 +6,7 @@ Creates a new Pattern. This is typically used when users choose to save a patter
 
 ## Access control
 
-- [Permission level](/reference/backend/api/rbac) `3` or higher is required to create a Pattern
+- [Permission level](/reference/backend/rbac) `3` or higher is required to create a Pattern
 
 ## Endpoints
 
@@ -14,8 +14,8 @@ Creating a new Pattern is possible via these endpoints:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method post /> | `/patterns/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
-| <Method post /> | `/patterns/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
+| <Method post /> | `/patterns/jwt` | [JSON Web Token](/reference/backend/authentication#jwt-authentication) |
+| <Method post /> | `/patterns/key` | [API Key & Secret](/reference/backend/authentication#key-authentication) |
 
 ## Request body
 The request body is a JSON object with the following properties:

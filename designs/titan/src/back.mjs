@@ -226,6 +226,13 @@ function titanBack({
       points.waistIn,
       points.crossSeamCurveStart
     )
+    if (points.styleWaistIn.y >= points.crossSeamCurveStart.y) {
+      store.flag.warn({ msg: 'titan:lowBackHeight' })
+      points.crossSeamCurveStart = points.styleWaistIn.shiftFractionTowards(
+        points.crossSeamCurveMax,
+        0.001
+      )
+    }
   } else {
     points.styleWaistIn = points.waistIn.clone()
     points.styleWaistOut = points.waistOut.clone()

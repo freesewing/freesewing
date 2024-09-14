@@ -1,0 +1,185 @@
+{
+  "t": "Bibi body block",
+  "d": "Bibi is a multifunctional building block for knit tops and dresses.",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "sleeve": "Sleeve",
+    "waistband": "Waistband",
+    "cuff": "Cuff",
+    "neckBinding": "Neck Binding",
+    "armholeBinding": "Armhole Binding"
+  },
+  "s": {
+    "dartNo.t": "No bust dart",
+    "dartNo.d": "Gather fabric instead",
+    "dartYes.t": "Create a bust dart",
+    "dartYes.d": "If necessary, draft a bust dart to match side seam lengths",
+    "sleevesNo.t": "Sleeveless",
+    "sleevesNo.d": "Draft the pattern without sleeves",
+    "sleevesYes.t": "With sleeves",
+    "sleevesYes.d": "Draft the pattern with sleeves",
+    "fitWaistNo.t": "Don't fit the waist",
+    "fitWaistNo.d": "Create a loose fit and a more rectangular shape",
+    "fitWaistYes.t": "Fit the waist",
+    "fitWaistYes.d": "Create a more body-fitting shape",
+    "length.underbust.t": "Underbust",
+    "length.underbust.d": "Create a bralette top that only covers the bust.",
+    "length.waist.t": "Waist",
+    "length.waist.d": "Create a crop top.",
+    "length.hips.t": "Hips",
+    "length.hips.d": "Create a hip-length top.",
+    "length.seat.t": "Seat",
+    "length.seat.d": "Create a seat-length top.",
+    "length.knee.t": "Knee",
+    "length.knee.d": "Create a knee-length dress.",
+    "length.floor.t": "Floor",
+    "length.floor.d": "Create a floor-length dress. Use a negative length bonus to prevent the garment from actually dragging on the floor.",
+    "cutCuff.t": "The cuff is not shown",
+    "cutCuff.d": "The **Cuff** (6) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long.",
+    "cutWaistband.t": "The waistband is not shown",
+    "cutWaistband.d": "The **Waistband** (5) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long.",
+    "cutNeckBinding.t": "The neck binding is not shown",
+    "cutNeckBinding.d": "The **Neck Binding** (3) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long.",
+    "cutArmholeBinding.t": "The armhole binding is not shown",
+    "cutArmholeBinding.d": "The **Armhole Binding** (4) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long.",
+    "useWaistRibbingNo.t": "No ribbing",
+    "useWaistRibbingNo.d": "Do not include ribbing",
+    "useWaistRibbingYes.t": "Include ribbing",
+    "useWaistRibbingYes.d": "Include ribbing on the waistband",
+    "useCuffRibbingNo.t": "No ribbing",
+    "useCuffRibbingNo.d": "Do not include ribbing",
+    "useCuffRibbingYes.t": "Include ribbing",
+    "useCuffRibbingYes.d": "Include ribbing on the sleeve"
+  },
+  "o": {
+    "draftForHighBust": {
+      "t": "Bust adjustment",
+      "d": "If the pattern should be drafted with a basic full bust adjustment (FBA). This will result in a more fitted garment for people with breasts."
+    },
+    "draftForHighBustYes": {
+      "t": "Draft with bust adjustment",
+      "d": "Suggested for most people with breasts. This option only has an effect if the optional bust-related measurements are available."
+    },
+    "draftForHighBustNo": {
+      "t": "Draft without bust adjustment",
+      "d": "Drafts a pattern using the chest measurement only."
+    },
+    "cuffEase": {
+      "t": "Sleeve fullness",
+      "d": "Controls how wide the sleeves are."
+    },
+    "sleeveLength": {
+      "t": "Sleeve length",
+      "d": "Controls the length of your sleeves"
+    },
+    "necklineBend": {
+      "t": "Front Neckline curvature",
+      "d": "Controls the curvature of the front neckline."
+    },
+    "backNeckBend": {
+      "t": "Back Neckline curvature",
+      "d": "Controls the curvature of the back neckline."
+    },
+    "necklineDepth": {
+      "t": "Front Neckline depth",
+      "d": "Controls how deep the neck opening plunges down at the front."
+    },
+    "backNeckCutout": {
+      "t": "Back Neckline depth",
+      "d": "Controls how deep the neck opening plunges down on the back."
+    },
+    "necklineWidth": {
+      "t": "Neckline width",
+      "d": "Controls the width of the neck opening."
+    },
+    "fitWaist": {
+      "t": "Fit the waist",
+      "d": "Whether or not to fit the waist."
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Ease at the waist (only applies when the waist is fitted)."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Ease at the hips."
+    },
+    "seatEase": {
+      "t": "Seat ease",
+      "d": "Ease at the seat."
+    },
+    "bustEase": {
+      "t": "Bust ease",
+      "d": "Ease at the bust. Only applies when bust adjustment is enabled."
+    },
+    "flare": {
+      "t": "Flare",
+      "d": "How much fabric to use at the bottom hem of the design. Only applies when the design goes below the waist."
+    },
+    "dart": {
+      "t": "Allow bust dart",
+      "d": "Allow creating a bust dart if this is necessary"
+    },
+    "sleeves": {
+      "t": "Sleeves",
+      "d": "Draft the pattern with sleeves"
+    },
+    "strapWidth": {
+      "t": "Strap width",
+      "d": "How wide the shoulder straps are. Only applies when sleeves are disabled."
+    },
+    "armholeCurveFront": {
+      "t": "Armhole curve front",
+      "d": "How round the armhole curve is at the front. Higher options expose more skin."
+    },
+    "armholeCurveBack": {
+      "t": "Armhole curve back",
+      "d": "How round the armhole curve is at the back. Higher options leave the shoulder blades free."
+    },
+    "armholeDropBack": {
+      "t": "Armhole drop back",
+      "d": "How much the back armhole curves towards the bottom."
+    },
+    "length": {
+      "t": "Length",
+      "d": "Which measurement line to use for the bottom hem. You can do fine adjustments using the bonus length option."
+    },
+    "useWaistRibbing": {
+      "t": "Waistband Ribbing",
+      "d": "Include ribbing on the waistband"
+    },
+    "useCuffRibbing": {
+      "t": "Cuff Ribbing",
+      "d": "Include ribbing on the sleeve"
+    },
+    "ribbingHeight": {
+      "t": "Ribbing Height",
+      "d": "Controls the height of the ribbing"
+    },
+    "ribbingStretch": {
+      "t": "Ribbing stretch",
+      "d": "Use this to adapt the pattern to how stretchy the ribbing that you are using is."
+    },
+    "bindingHeight": {
+      "t": "Knit binding height",
+      "d": "Controls the height of the knit binding for neck and armhole."
+    },
+    "seatBackAdjustment": {
+      "t": "Seat back adjustment",
+      "d": "Controls the influence of the seat back measurement."
+    },
+    "curvatureAdjustment": {
+      "t": "Curvature adjustment",
+      "d": "Controls how straight the side seam is above the hem."
+    },
+    "lengthAdjustment": {
+      "t": "Length adjustment",
+      "d": "Controls how much the front part is made longer to compensate for the curve around the bust. Has little effect on smaller busts."
+    },
+    "waistAdjustment": {
+      "t": "Waist adjustment",
+      "d": "Controls the minimum width around the waist to prevent an excessive hourglass shape."
+    }
+  }
+}

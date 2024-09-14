@@ -304,6 +304,13 @@ function titanFront({
       points.waistIn,
       points.crotchSeamCurveStart
     )
+    if (points.styleWaistIn.y >= points.crotchSeamCurveStart.y) {
+      store.flag.warn({ msg: 'titan:lowFrontHeight' })
+      points.crotchSeamCurveStart = points.styleWaistIn.shiftFractionTowards(
+        points.crotchSeamCurveMax,
+        0.001
+      )
+    }
   } else {
     points.styleWaistIn = points.waistIn.clone()
     points.styleWaistOut = points.waistOut.clone()

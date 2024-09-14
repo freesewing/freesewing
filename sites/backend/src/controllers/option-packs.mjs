@@ -35,7 +35,7 @@ OptionPacksController.prototype.list = async (req, res, tools, format = false) =
   if (optionPacks) {
     if (!format) OptionPack.setResponse(200, 'success', { optionPacks })
     else OptionPack.setResponse(200, 'success', optionPacks, true)
-  } else OptionPack.setResponse(404, 'notFound')
+  } else OptionPack.setResponse(404)
 
   return format === 'yaml' && optionPacks
     ? OptionPack.sendYamlResponse(res)

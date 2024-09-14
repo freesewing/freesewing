@@ -35,6 +35,10 @@
       "t": "Longueur de la pince de taille",
       "d": "Contrôle la longueur de la pince de taille"
     },
+    "shoulderDartCurvature": {
+      "t": "Shoulder dart curvature",
+      "d": "Controls the curvature of the upper part of the shoulder dart"
+    },
     "shoulderDartPosition": {
       "t": "Position de la pince d'épaule",
       "d": "Contrôle la position de la pince d'épaule"

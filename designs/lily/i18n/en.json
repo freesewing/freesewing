@@ -1,0 +1,80 @@
+{
+  "t": "Lily Leggings",
+  "d": "A FreeSewing pattern for basic leggings",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "waistband": "Waistband"
+   },
+  "s": {
+		"adjustEase.t": "Adjust ease settings to match fabric stretch",
+		"adjustEase.d": "Knee, seat and waist ease should be set to fabric stretch * -1/10; click the button to adjust all three.",
+		"adjustEase": "adjust ease"
+	},
+  "o": { 
+    "lengthReduction": {
+      "t": "Length reduction",
+      "d": "Controls how much the leggings are shortened with respect to ankle length"
+    },
+    "fabricStretch": {
+      "t": "Fabric stretch",
+      "d": "How much the fabric can stretch horizontally; this is used to calculate ease"
+    },
+    "fitGuides": {
+      "t": "Show measurement guides",
+      "d": "Show measurement guides for horizontal measures"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at your waist"
+    },
+    "seatEase": {
+      "t": "Seat ease",
+      "d": "Controls the amount of ease at your seat"
+    },
+    "kneeEase": {
+      "t": "Knee ease",
+      "d": "Controls the amount of ease at the knee"
+    },
+    "waistHeight": {
+      "t": "Waist height",
+      "d": "Controls the height of the waist, 100% = waist height, 0% = hip height"
+    },
+    "crotchDrop": {
+      "t": "Crotch drop",
+      "d": "Lowers the crotch for a more relaxed fit"
+    },
+    "crossSeamCurveStart": {
+      "t": "Start of the cross seam curve",
+      "d": "Controls how far into the cross seam we start to curve"
+    },
+    "crossSeamCurveBend": {
+      "t": "Cross seam bend",
+      "d": "Controls the curvature of the cross seam"
+    },
+    "crossSeamCurveAngle": {
+      "t": "Cross seam angle",
+      "d": "Controls the angle of the cross seam"
+    },
+    "crotchSeamCurveStart": {
+      "t": "Start of the crotch seam curve",
+      "d": "Controls how far into the crotch seam we start to curve"
+    },
+    "crotchSeamCurveBend": {
+      "t": "Crotch seam bend",
+      "d": "Controls the curvature of the crotch seam"
+    },
+    "crotchSeamCurveAngle": {
+      "t": "Crotch seam angle",
+      "d": "Controls the angle of the crotch seam"
+    },
+    "grainlinePosition": {
+      "t": "Grainline position",
+      "d": "Controls the horizontal position of the leg relative to the seat"
+    },
+    "waistbandWidth": {
+      "t": "Waistband width",
+      "d": "The width of the waistband"
+    }
+  }
+}

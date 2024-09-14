@@ -6,6 +6,7 @@ intro: "Брюки від Paul"
 title: "Брюки від Paul"
 designs:
   - "Брюс."
+author: 433
 ---
 
 ![Вид ззаду](https://posts.freesewing.org/uploads/bruces_by_paul_back_19f9daa0e8.jpg "Вид ззаду")

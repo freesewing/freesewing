@@ -79,7 +79,7 @@ const bgPlugin = {
   version: 1,
   hooks: {
     preRender: function (svg) {
-      if (svg.defs.indexOf(example) === -1) svg.defs += example
+      svg.defs.setIfUnset( 'background', background)
     },
   },
 }
@@ -92,7 +92,6 @@ export const part = {
   name: 'example.part',
   draft: draftPart,
   plugins: [
-    pluginBundle,
     // Here's our plugin to add the snippet
     bgPlugin,
   ]
@@ -108,9 +107,10 @@ function draftPart ({ Point, points, Path, paths, part }) {
   snippets.background = new Snippet('bg', new Point(0,0))
 
   // Snippets aren't taken into account for the bounding box
+  points.anchor = new Point(0,0)
   paths.diagonal = new Path()
     .move(points.anchor)
-    .line(new Point(2000,2000)
+    .line(new Point(2000,2000))
     .setClass('hidden')
 
   // Develop your part here

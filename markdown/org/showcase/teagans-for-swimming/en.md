@@ -1,5 +1,5 @@
 ---
-maker: "comixminx"
+author: 22141
 caption: "Navy Teagan in a swim fabric"
 date: "2023-01-16"
 intro: "FreeSewing user comixminx made this great Teagan tee as part of a swimming costume for a non-binary kid. The navy version in the header image is the final version, but since you clicked into the post, here's a bonus first draft in gray!"

@@ -157,7 +157,7 @@ paths.quarterNeck = new Path()
 - We're following up with a `Path.move()` call that takes one Point as argument
 - Then, there's a `Path.curve()` call that takes 3 points as arguments
 
-If you've read through the high-level [Pattern guide](/guides/patterns) you
+If you've read through the high-level [Design guide](/guides/designs) you
 will have learned that paths always start with a `move()` operation. In this
 case, we moved to our `right` points.
 

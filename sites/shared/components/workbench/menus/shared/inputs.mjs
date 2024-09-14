@@ -120,7 +120,7 @@ export const NumberInput = ({
   return (
     <input
       type="text"
-      inputMode="number"
+      inputMode="decimal"
       className={`input input-secondary ${className || 'input-sm grow text-base-content'}
         ${valid.current === false && 'input-error'}
         ${valid.current && 'input-success'}

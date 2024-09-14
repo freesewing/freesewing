@@ -45,7 +45,7 @@ export const fields = {
   level: {
     description: `
 One of the [API permission
-levels](https://freesewing.dev/reference/backend/api/rbac#permission-levels) which
+levels](https://freesewing.dev/reference/backend/rbac#permission-levels) which
 is an integer between (and including) \`0\` and \`8\`.`,
     type: 'number',
     example: 5,

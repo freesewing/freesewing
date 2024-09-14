@@ -78,7 +78,7 @@
       "d": "Depth (height) of the pocket. This is a percentage of the Waist-To-Seat measurement."
     },
     "fixedsidepanel": {
-      "t": "Side panel",
+      "t": "Fixed-width side panel",
       "d": "Fixed-width, or shaped side panel"
     },
     "fixedsidepanelYes": {

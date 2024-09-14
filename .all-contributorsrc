@@ -34,12 +34,14 @@
       ]
     },
     {
-      "login": "lucibytes",
-      "name": "Lucian",
+      "login": "l3xander",
+      "name": "Lexander",
       "avatar_url": "https://avatars.githubusercontent.com/u/77203781?v=4",
-      "profile": "https://github.com/lucibytes",
+      "profile": "https://github.com/l3xander",
       "contributions": [
-        "eventOrganizing"
+        "blog",
+        "talk",
+        "translation"
       ]
     },
     {
@@ -69,6 +71,7 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/16866285?v=4",
       "profile": "https://github.com/bobgeorgethe3rd",
       "contributions": [
+        "blog",
         "code",
         "doc",
         "design"
@@ -1166,6 +1169,42 @@
       "profile": "https://rachel.ostic.ca",
       "contributions": [
         "doc"
+      ]
+    },
+    {
+      "login": "karlnippoldt",
+      "name": "Karl Nippoldt",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7821608?v=4",
+      "profile": "https://karlnippoldt.com",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "RockerKitten",
+      "name": "Corey",
+      "avatar_url": "https://avatars.githubusercontent.com/u/84648053?v=4",
+      "profile": "https://github.com/RockerKitten",
+      "contributions": [
+        "question"
+      ]
+    },
+    {
+      "login": "GeniaHarrietBoeing",
+      "name": "Niabon",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73827848?v=4",
+      "profile": "https://github.com/GeniaHarrietBoeing",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "jlvandenhout",
+      "name": "Jeroen van den Hout",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22611689?v=4",
+      "profile": "https://github.com/jlvandenhout",
+      "contributions": [
+        "code"
       ]
     }
   ],

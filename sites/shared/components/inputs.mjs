@@ -156,7 +156,8 @@ export const NumberInput = ({
   <FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
     <input
       id={id}
-      type="number"
+      type="text"
+      inputMode="decimal"
       placeholder={placeholder}
       value={current}
       onChange={(evt) => update(evt.target.value)}
@@ -529,8 +530,8 @@ export const MeasieInput = ({
     typeof original === 'undefined'
       ? original
       : isDegree
-        ? Number(original)
-        : measurementAsUnits(original, units)
+      ? Number(original)
+      : measurementAsUnits(original, units)
   )
   const [validatedVal, setValidatedVal] = useState(measurementAsUnits(original, units))
   const [valid, setValid] = useState(null)
@@ -578,7 +579,9 @@ export const MeasieInput = ({
     >
       <input
         id={id}
-        type="number"
+        type="text"
+        inputMode="numeric"
+        pattern="[0-9]*"
         placeholder={placeholder}
         value={localVal}
         onChange={(evt) => localUpdate(evt.target.value)}

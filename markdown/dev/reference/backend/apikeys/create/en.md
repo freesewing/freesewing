@@ -7,7 +7,7 @@ backend API.
 
 ## Access control
 
-- [Permission level](/reference/backend/api/rbac) `4` or higher is required to create an API key
+- [Permission level](/reference/backend/rbac) `4` or higher is required to create an API key
 
 ## Endpoints
 
@@ -15,8 +15,8 @@ Creating a new API key is possible via these endpoints:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method post /> | `/apikeys/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
-| <Method post /> | `/apikeys/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
+| <Method post /> | `/apikeys/jwt` | [JSON Web Token](/reference/backend/authentication#jwt-authentication) |
+| <Method post /> | `/apikeys/key` | [API Key & Secret](/reference/backend/authentication#key-authentication) |
 
 ## Request body
 

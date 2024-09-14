@@ -1,5 +1,5 @@
 ---
-maker: "Ramoth"
+author: 23386
 caption: "Corsé Ramoth Cathrin ...¡con mariposas!"
 date: "2023-01-31"
 intro: "Aquí tienes un fantástico corsé Cathrin mariposa fabricado por Ramoth, ¡el primero! Compartieron esto sobre futuras alteraciones:"

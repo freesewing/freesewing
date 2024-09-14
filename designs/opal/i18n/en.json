@@ -1,0 +1,346 @@
+{
+  "t": "Opal Overalls",
+  "d": "A FreeSewing design for overalls",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "bib": "Bib",
+    "pocketSlash": "Slash pocket",
+    "pocketBack": "Back pocket",
+    "pocketBib": "Bib pocket",
+    "pocketShield": "Pocket shield",
+    "pocketCarpenter": "Carpenter pocket",
+    "pocketCarpenterExtra": "2nd Carpenter pocket",
+    "hammerLoop": "Hammer loop",
+    "waistband": "Waistband",
+    "bibPlacket": "Bib placket"
+ },
+  "s": {
+    "crossSeamFrontTooSmall.t": "The **front** cannot be drafted.",
+    "crossSeamFrontTooSmall.d": "The **cross seam front**, of length {{{length}}}, is too short to be drafted onto a body with a seat located {{{depth}}} below the waist and a crotch fork extending {{{girth}}} horizontally beyond the waist. Please check your measurements and options, especially *cross seam front*, *waist to seat*, and *crotch ease*.",
+    "fold": "Fold",
+    "grainlineEitherWay": "Grainline goes either way"
+ },
+  "o": {
+    "hemAllowance": {
+      "t": "Hem allowance",
+      "d": "Sets how wide the hems around the front and back bibs and the straps are, as a percent of the seam allowance."
+    },
+    "legHemAllowance": {
+      "t": "Leg hem allowance",
+      "d": "Sets how wide the hems around the legs are, as a percent of the seam allowance."
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls how wide the garment will be around the waist."
+    },
+    "waistBalance": {
+      "t": "Waist balance",
+      "d": "Controls how much of the waist is part of the front piece and how much is part of the back piece."
+    },
+    "seatEase": {
+      "t": "Seat ease",
+      "d": "Controls how wide the garment will be around the seat."
+    },
+    "seatBalance": {
+      "t": "Seat balance",
+      "d": "Controls how much of the seat is part of the front piece and how much is part of the back piece."
+    },
+    "thighShape": {
+      "t": "Thigh shape",
+      "d": "Controls how elongated the thighs of the garment are. Higher values are used for deeper but narrower thighs."
+    },
+    "legHemEase": {
+      "t": "Leg hem ease",
+      "d": "Controls how much ease there is at the bottom of the legs."
+    },
+    "legLength": {
+      "t": "Leg length",
+      "d": "Controls how long the legs of the garment will be."
+    },
+    "crossSeamCurveStart": {
+      "t": "Cross seam curve start",
+      "d": "Controls where the cross seam starts curving on the back."
+    },
+    "crossSeamCurveBend": {
+      "t": "Cross seam curve bend",
+      "d": "Controls how deeply scooped the cross seam is."
+    },
+    "crossSeamCurveAngle": {
+      "t": "Cross seam curve angle",
+      "d": "Controls at what angle the cross seam reaches the crotch fork."
+    },
+    "crotchSeamCurveStart": {
+      "t": "Crotch seam curve start",
+      "d": "Controls where the crotch seam starts curving on the front."
+    },
+    "crotchSeamCurveBend": {
+      "t": "Crotch seam curve bend",
+      "d": "Controls how deeply scooped the crotch seam is."
+    },
+    "crotchSeamCurveAngle": {
+      "t": "Crotch seam curve angle",
+      "d": "Controls at what angle the crotch seam reaches the crotch fork."
+    },
+    "crotchForkBalance": {
+      "t": "Crotch fork balance",
+      "d": "Controls how far back/forward the crotch fork is placed."
+    },
+    "crotchEase": {
+      "t": "Crotch ease",
+      "d": "Controls horizontal ease at the crotch fork."
+    },
+    "crotchDrop": {
+      "t": "Crotch drop",
+      "d": "Controls vertical ease at the crotch fork."
+    },
+    "legBalance": {
+      "t": "Leg balance",
+      "d": "Positive values move more of the fabric to the back piece, negative values to the front piece."
+    },
+    "waistPosition": {
+      "t": "Waist position",
+      "d": "Controls where the waistband is on the front of the overalls. 0 is at the natural waist and -100 is at the seat."
+    },
+    "outseamHeight": {
+      "t": "Outseam height",
+      "d": "Controls how far up past the waist the outseam extends, and thus how far up the front and back bibs separate."
+    },
+    "waistbandWidth": {
+      "t": "Waistband width",
+      "d": "Controls how wide the front waistband is."
+    },
+    "waistbandLayers": {
+      "t": "Waistband layers",
+      "d": "Sets how many layers the front waistband is folded into."
+    },
+    "pocketSlash": {
+      "t": "Slash pocket",
+      "d": "Toggles whether or not to include slash (front) pockets in the pattern."
+    },
+    "pocketSlashOpeningWidth": {
+      "t": "Slash pocket opening width",
+      "d": "Controls how wide the openings of the slash pockets are."
+    },
+    "pocketSlashOpeningHeight": {
+      "t": "Slash pocket opening height",
+      "d": "Controls how high the openings of the slash pockets are."
+    },
+    "pocketSlashOpeningCurve": {
+      "t": "Slash pocket curve",
+      "d": "Controls the shape of the openings the slash pockets. 0 is a straight opening, while larger values are more deeply curved."
+    },
+    "pocketSlashWidth": {
+      "t": "Slash pocket width",
+      "d": "Controls how wide the slash pocket bags are."
+    },
+    "pocketSlashHeight": {
+      "t": "Slash pocket height",
+      "d": "Controls how deep the slash pocket bags are."
+    },
+    "pocketSlashShieldOverlap": {
+      "t": "Slash pocket shield overlap",
+      "d": "Controls how far the pocket shield extends past the opening of the slash pockets."
+    },
+    "bibWaistDrop": {
+      "t": "Waist drop",
+      "d": "Places extra fabric in the center of the waist, to help the garment better wrap around the belly."
+    },
+    "bibHeight": {
+      "t": "Bib height",
+      "d": "Controls how tall the front bib is."
+    },
+    "bibWidth": {
+      "t": "Bib width",
+      "d": "Controls how wide the top of the front bib is."
+    },
+    "bibPocketOnFold": {
+      "t": "Bib pocket on fold",
+      "d": "Toggles whether to draft the bib pocket pattern on-the-fold, or as a full pattern piece."
+    },
+    "bibPocketOnFoldNo": {
+      "t": "Full piece",
+      "d": "Draft the bib pocket as a full pattern piece."
+    },
+    "bibPocketOnFoldYes": {
+      "t": "On-the-fold",
+      "d": "Draft the bib pocket on-the-fold."
+    },
+    "bibPlacketWidth": {
+      "t": "Bib placket width",
+      "d": "Controls how wide to make the placket at the top of the front bib."
+    },
+    "bibPlacketLayers": {
+      "t": "Bib placket layers",
+      "d": "Sets how many layers of fabric are used for the placket at the top of the front bib."
+    },
+    "pocketBib": {
+      "t": "Bib pocket",
+      "d": "Toggles whether to include a bib pocket in the pattern."
+    },
+    "pocketBibVerticalPosition": {
+      "t": "Bib pocket vertical position",
+      "d": "Controls where the bib pocket is located on the bib vertically."
+    },
+    "pocketBibStyle": {
+      "t": "Bib pocket style",
+      "d": "Choose among the available types/styles of bib pockets."
+    },
+    "pocketBibWidth": {
+      "t": "Bib pocket width",
+      "d": "Controls how wide the top of the bib pocket is."
+    },
+    "pocketBibHeight": {
+      "t": "Bib pocket height",
+      "d": "Controls how tall the bib pocket is."
+    },
+    "pocketBibFeatureWidth": {
+      "t": "Bib pocket feature width",
+      "d": "The exact effect of this option varies based on the selected bib pocket style."
+    },
+    "pocketBibFeatureHeight": {
+      "t": "Bib pocket feature height",
+      "d": "The exact effect of this option varies based on the selected bib pocket style."
+    },
+    "pocketBibFeatureCurve": {
+      "t": "Bib pocket feature curve",
+      "d": "The exact effect of this option varies based on the selected bib pocket style."
+    },
+    "backBibBaseAngle": {
+      "t": "Back bib base angle",
+      "d": "Controls the angle at which the back bib rises from side seam."
+    },
+    "backBibBaseCurve": {
+      "t": "Back bib base curve",
+      "d": "Controls how strongly curved the back bib is as it rises from the side seam."
+    },
+    "backBibHexagonVerticalPosition": {
+      "t": "Back bib hexagon vertical position",
+      "d": "Controls how far up the hexagon formed by the straps crossing is."
+    },
+    "backBibHexagonHeight": {
+      "t": "Back bib hexagon height",
+      "d": "Controls how tall the hexagon formed by the straps crossing is."
+    },
+    "backBibHexagonWidth": {
+      "t": "Back bib hexagon width",
+      "d": "Controls how wide the hexagon formed by the straps crossing is."
+    },
+    "backBibHexagonSideHeight": {
+      "t": "Back bib hexagon side height",
+      "d": "Controls how tall the left and right sides of the hexagon formed by the straps crossing are."
+    },
+    "strapLength": {
+      "t": "Strap length",
+      "d": "Controls how long the straps are."
+    },
+    "strapWidth": {
+      "t": "Strap width",
+      "d": "Controls how wide the straps are."
+    },
+    "strapPosition": {
+      "t": "Strap position",
+      "d": "Controls where the straps are positioned with respect to the hexagon."
+    },
+    "strapTaperCurve": {
+      "t": "Strap taper curve",
+      "d": "Controls how strongly curved the taper of the straps is."
+    },
+    "strapTaperPosition": {
+      "t": "Strap taper position",
+      "d": "Controls how long the tapered portion of the straps is."
+    },
+    "pocketBack": {
+      "t": "Back pocket",
+      "d": "Toggles whether to include back pockets in the pattern."
+    },
+    "pocketBackPositionX": {
+      "t": "Back pocket horizontal position",
+      "d": "Controls where the back pockets are horizontally."
+    },
+    "pocketBackPositionY": {
+      "t": "Back pocket vertical position",
+      "d": "Controls where the back pockets are vertically."
+    },
+      "pocketBackWidth": {
+      "t": "Back pocket width",
+      "d": "Controls how wide the back pockets are."
+    },
+      "pocketBackHeight": {
+      "t": "Back pocket height",
+      "d": "Controls how tall the back pockets are."
+    },
+      "pocketBackCornerWidth": {
+      "t": "Back pocket corner width",
+      "d": "Controls how wide the bottom-left and bottom-right corners of the back pocket are."
+    },
+      "pocketBackCornerHeight": {
+      "t": "Back pocket corner height",
+      "d": "Controls how tall the bottom-left and bottom-right corners of the back pocket are."
+    },
+    "pocketCarpenter": {
+      "t": "Carpenter pocket",
+      "d": "Toggles whether to include a carpenter pocket under the right back pocket."
+    },
+    "pocketCarpenterHeight": {
+      "t": "Carpenter pocket height",
+      "d": "Controls how tall the carpenter pocket is."
+    },
+    "pocketCarpenterAnchorX": {
+      "t": "Carpenter pocket anchor horizontal position",
+      "d": "Controls where the carpenter pocket is anchored under the back pocket horizontally."
+    },
+    "pocketCarpenterAnchorY": {
+      "t": "Carpenter pocket anchor vertical position",
+      "d": "Controls where the carpenter pocket is anchored under the back pocket vertically."
+    },
+    "pocketCarpenterAnchorWidth": {
+      "t": "Carpenter pocket anchor width",
+      "d": "Controls how wide the section of the carpenter pocket anchored under the back pocket is."
+    },
+    "pocketCarpenterOpeningHeight": {
+      "t": "Carpenter pocket opening height",
+      "d": "Controls how tall the opening to the carpenter pocket is."
+    },
+    "pocketCarpenterExtra": {
+      "t": "Carpenter pocket extra",
+      "d": "Toggles whether to include a second pocket over the bottom portion of the carpenter pocket."
+    },
+    "pocketCarpenterExtraHeight": {
+      "t": "Carpenter pocket extra height",
+      "d": "Controls how tall to make the second carpenter pocket."
+    },
+    "hammerLoop": {
+      "t": "Hammer loop",
+      "d": "Toggles whether to include a hammer loop under the left back pocket."
+    },
+    "hammerLoopWidth": {
+      "t": "Hammer loop width",
+      "d": "How wide to make the hammer loop."
+    },
+    "hammerLoopCornerX": {
+      "t": "Hammer loop corner horizontal position",
+      "d": "Controls where the hammer loop curves towards. Used for calculating its length."
+    },
+    "hammerLoopCornerY": {
+      "t": "Hammer loop corner vertical position",
+      "d": "Controls where the hammer loop curves towards. Used for calculating its length."
+    },
+    "hammerLoopCurve": {
+      "t": "Hammer loop curve",
+      "d": "Controls how deeply the hammer loop is curved. Used for calculating its length."
+    },
+    "hammerLoopOutseam": {
+      "t": "Hammer loop outseam",
+      "d": "Controls how far down the outseam the hammer loop is inserted. Used for calculating its length."
+    },
+    "hammerLoopFirstFold": {
+      "t": "Hammer loop first fold",
+      "d": "Controls how wide the first fold of the hammer loop is."
+    },
+    "hammerLoopSecondFold": {
+      "t": "Hammer loop second fold",
+      "d": "Controls how wide the second fold of the hammer loop is."
+    }
+}
+}

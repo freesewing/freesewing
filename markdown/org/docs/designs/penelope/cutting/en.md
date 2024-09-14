@@ -23,7 +23,7 @@ Due to this, the cutting list does not specify how many back parts to cut as the
 
 <Note>
 
-[See Penelope Instructions](docs/patterns/penelope/instructions/#lining) to understand alterations to the front and back parts required for the lining.
+[See Penelope Instructions](/docs/designs/penelope/instructions/#lining) to understand alterations to the front and back parts required for the lining.
 
 </Note>
 

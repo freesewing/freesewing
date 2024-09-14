@@ -29,8 +29,8 @@ const Page404 = () => (
               <h5>Did you arrive here from a link?</h5>
               <p>In that case, that link is broken.</p>
               <p>
-                If it was one of our links, please <PageLink href="/contact" txt="let us know" /> so
-                we can fix it.
+                If it was one of our links, please{' '}
+                <PageLink href="/howtos/help" txt="let us know" /> so we can fix it.
               </p>
             </Popout>
           </div>

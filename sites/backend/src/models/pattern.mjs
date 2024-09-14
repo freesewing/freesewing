@@ -182,7 +182,7 @@ PatternModel.prototype.guardedRead = async function ({ params, user }) {
   /*
    * Return 404 if it cannot be found
    */
-  if (!this.record) return this.setResponse(404, 'notFound')
+  if (!this.record) return this.setResponse(404)
 
   /*
    * You need at least the bughunter role to read another user's pattern

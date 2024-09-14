@@ -3,6 +3,60 @@ import { round, Path, Point } from '../src/index.mjs'
 import { pathsProxy } from '../src/path.mjs'
 
 describe('Path', () => {
+  describe('circleSegment', () => {
+    it('Should draw a circleSegment', () => {
+      const points = {}
+      points.origin = new Point(10, 20)
+      // radius = 100
+      points.start = points.origin.shift(77, 100)
+
+      const test = new Path().move(points.start).circleSegment(90, points.origin)
+
+      const endPoint = test.end()
+      const expectedEndPoint = points.start.rotate(90, points.origin)
+
+      expect(round(endPoint.x)).to.equal(round(expectedEndPoint.x))
+      expect(round(endPoint.y)).to.equal(round(expectedEndPoint.y))
+      expect(endPoint.sitsOn(expectedEndPoint)).to.equal(true)
+      expect(Math.round(test.length())).to.equal(Math.round(Math.PI * 50))
+    })
+
+    it('Should draw a circleSegment with negative angle', () => {
+      const points = {}
+      points.origin = new Point(10, 20)
+      // radius = 100
+      points.start = points.origin.shift(-122, 100)
+
+      const test = new Path().move(points.start).circleSegment(-45, points.origin)
+
+      const endPoint = test.end()
+      const expectedEndPoint = points.start.rotate(-45, points.origin)
+
+      expect(round(endPoint.x)).to.equal(round(expectedEndPoint.x))
+      expect(round(endPoint.y)).to.equal(round(expectedEndPoint.y))
+      expect(endPoint.sitsOn(expectedEndPoint)).to.equal(true)
+      expect(Math.round(test.length())).to.equal(Math.round(Math.PI * 25))
+    })
+
+    it('Should draw a full circle', () => {
+      const points = {}
+
+      points.origin = new Point(0, 0)
+      // radius = 100
+      points.start = points.origin.shift(0, 100)
+
+      const test = new Path().move(points.start).circleSegment(360, points.origin)
+
+      const endPoint = test.end()
+
+      expect(round(endPoint.x)).to.equal(round(points.start.x))
+      expect(round(endPoint.y)).to.equal(round(points.start.y))
+      expect(endPoint.sitsOn(points.start)).to.equal(true)
+      expect(Math.round(test.length())).to.equal(Math.round(Math.PI * 200))
+      expect(test.ops.length).to.equal(5) // 1 move + 4 cubic curves
+    })
+  })
+
   describe('smurve', () => {
     it('Should draw a smurve', () => {
       const points = {}
@@ -117,6 +171,28 @@ describe('Path', () => {
       const bbox = offset.bbox()
       expect(round(bbox.bottomRight.x)).to.equal(119.86)
       expect(round(bbox.bottomRight.y)).to.equal(43.49)
+    })
+
+    it('Should offset small curves', () => {
+      const curve = new Path()
+        .move(new Point(0, 0))
+        .curve(new Point(0.1, 0.1), new Point(0.2, 0.2), new Point(0.1, 1.1))
+      const offset = curve.offset(1)
+      const bbox = offset.bbox()
+      expect(round(bbox.bottomRight.x)).to.equal(-0.9)
+      expect(round(bbox.bottomRight.y)).to.equal(1.19)
+    })
+
+    it('Should offset zero length path', () => {
+      let logged = false
+      const log = { warn: () => (logged = true) }
+      const curve = new Path().__withLog(log).move(new Point(0, 0)).line(new Point(0, 0)).close()
+      expect(logged).to.equal(false)
+      const offset = curve.offset(1)
+      expect(logged).to.equal(true)
+      const bbox = offset.bbox()
+      expect(round(bbox.bottomRight.x)).to.equal(0)
+      expect(round(bbox.bottomRight.y)).to.equal(0)
     })
   })
 
@@ -354,6 +430,15 @@ describe('Path', () => {
     expect(box.bottomRight.y).to.equal(456)
   })
 
+  it('Should find the bounding box of an empty path', () => {
+    const path = new Path().move(new Point(123, 456)).close()
+    const box = path.bbox()
+    expect(box.topLeft.x).to.equal(123)
+    expect(box.topLeft.y).to.equal(456)
+    expect(box.bottomRight.x).to.equal(123)
+    expect(box.bottomRight.y).to.equal(456)
+  })
+
   it('Should reverse a path', () => {
     const test = new Path()
       .move(new Point(123, 456))
@@ -369,6 +454,20 @@ describe('Path', () => {
     expect(tb.bottomRight.y).to.equal(rb.bottomRight.y)
     expect(rev.ops[1].type).to.equal('curve')
     expect(rev.ops[2].type).to.equal('line')
+  })
+
+  it('Should rotate a path', () => {
+    const test = new Path()
+      .move(new Point(123, 456))
+      .line(new Point(12, 23))
+      .curve(new Point(0, 40), new Point(123, 34), new Point(230, 4))
+      .close()
+    let deg = 60
+    let rotationOrigin = new Point(42, 100)
+    let rotated = test.rotate(deg, rotationOrigin, true)
+    expect(test.length()).to.equal(rotated.length())
+    expect(test.ops[0].to.rotate(deg, rotationOrigin).x).to.equal(rotated.ops[0].to.x)
+    expect(test.ops[0].to.rotate(deg, rotationOrigin).y).to.equal(rotated.ops[0].to.y)
   })
 
   it('Should find the edges of a path', () => {
@@ -616,10 +715,10 @@ describe('Path', () => {
     const test = new Path().move(a).line(b).line(c)
 
     let halves = test.split(new Point(10.1, 29.9))
-    expect(halves[0].ops[1].to.x).to.equal(10.1)
-    expect(halves[0].ops[1].to.y).to.equal(29.9)
-    expect(halves[1].ops[0].to.x).to.equal(10.1)
-    expect(halves[1].ops[0].to.y).to.equal(29.9)
+    expect(halves[0].ops[1].to.x).to.equal(10)
+    expect(halves[0].ops[1].to.y).to.equal(30)
+    expect(halves[1].ops[0].to.x).to.equal(10)
+    expect(halves[1].ops[0].to.y).to.equal(30)
   })
 
   it('Should split a path on a curve joint', () => {
@@ -633,6 +732,61 @@ describe('Path', () => {
     expect(halves[0].ops[1].to.y).to.equal(30)
     expect(halves[1].ops[0].to.x).to.equal(10)
     expect(halves[1].ops[0].to.y).to.equal(30)
+  })
+
+  // Issue 6816: https://github.com/freesewing/freesewing/issues/6816
+  it('Should split a path on the start of that same path', () => {
+    const A = new Point(45, 60)
+    const B = new Point(10, 30)
+
+    const test = new Path().move(A).line(B)
+    let halves = test.split(A)
+    expect(halves[0]).to.equal(null)
+    expect(halves[1].ops[0].to.x).to.equal(45)
+    expect(halves[1].ops[0].to.y).to.equal(60)
+    expect(halves[1].ops[1].to.x).to.equal(10)
+    expect(halves[1].ops[1].to.y).to.equal(30)
+  })
+
+  // Issue 6816: https://github.com/freesewing/freesewing/issues/6816
+  it('Should split a path on the end of that same path', () => {
+    const A = new Point(45, 60)
+    const B = new Point(10, 30)
+
+    const test = new Path().move(A).line(B)
+    let halves = test.split(B)
+    expect(halves[1]).to.equal(null)
+    expect(halves[0].ops[0].to.x).to.equal(45)
+    expect(halves[0].ops[0].to.y).to.equal(60)
+    expect(halves[0].ops[1].to.x).to.equal(10)
+    expect(halves[0].ops[1].to.y).to.equal(30)
+  })
+
+  it('Should determine the angle on a path', () => {
+    const a = new Point(0, 0)
+    const b = new Point(0, 40)
+    const c = new Point(40, 40)
+    const d = new Point(100, 40)
+    const e = new Point(100, 0)
+
+    const linePoint = new Point(80, 40)
+    const curvePoint = new Point(5, 35)
+
+    const path = new Path().move(a).curve(b, b, c).line(d).line(e)
+
+    let angleAtStart = path.angleAt(a)
+    let angleOnCurve = path.angleAt(curvePoint)
+    let angleOnJoint = path.angleAt(c)
+    let angleOnLine = path.angleAt(linePoint)
+    let angleOnCorner = path.angleAt(d)
+    let angleOnEnd = path.angleAt(e)
+
+    expect(angleAtStart).to.equal(-90)
+    expect(angleOnCurve).to.equal(-45)
+    expect(angleOnJoint).to.equal(0)
+    expect(angleOnLine).to.equal(0)
+    expect(angleOnCorner).to.equal(0)
+    expect(angleOnEnd).to.equal(90)
   })
 
   it('Should trim a path when lines overlap', () => {
@@ -912,6 +1066,21 @@ describe('Path', () => {
       p1.move(b).curve_('a', b)
     } catch (err) {
       expect('' + err).to.contain('copy is not a function')
+    }
+    expect(invalid).to.equal(true)
+  })
+
+  it('Should log a warning when calling rotate with an origin that is not a point', () => {
+    let invalid = false
+    const log = { warn: () => (invalid = true) }
+    const test = new Path().__withLog(log).move(new Point(123, 456)).line(new Point(12, 23))
+
+    expect(invalid).to.equal(false)
+    let deg = 60
+    try {
+      test.rotate(deg, 'someOrigin')
+    } catch (err) {
+      expect('' + err).to.contain('Cannot read properties of')
     }
     expect(invalid).to.equal(true)
   })

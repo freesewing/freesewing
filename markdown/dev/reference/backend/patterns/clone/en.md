@@ -6,7 +6,7 @@ Create a new Pattern by cloning an existing one.
 
 ## Access control
 
-The [Permission level](/reference/backend/api/rbac) required to clone a
+The [Permission level](/reference/backend/rbac) required to clone a
 Pattern depends on:
 
 - Whether the Pattern is `public`
@@ -25,8 +25,8 @@ Creating a new Person is possible via these endpoints:
 
 | Method    | Path | Authentication |
 | --------: | :--- | :------------- |
-| <Method post /> | `/patterns/:id/clone/jwt` | [JSON Web Token](/reference/backend/api/authentication#jwt-authentication) |
-| <Method post /> | `/patterns/:id/clone/key` | [API Key & Secret](/reference/backend/api/authentication#key-authentication) |
+| <Method post /> | `/patterns/:id/clone/jwt` | [JSON Web Token](/reference/backend/authentication#jwt-authentication) |
+| <Method post /> | `/patterns/:id/clone/key` | [API Key & Secret](/reference/backend/authentication#key-authentication) |
 
 ## Request URL
 

@@ -1,5 +1,5 @@
 // Dependencies
-import { useState, useContext } from 'react'
+import { useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Context
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
@@ -52,9 +52,8 @@ export const Importer = () => {
         }
       }
     } catch (err) {
-      setError(err)
       console.log(err)
-      setLoadingStatus([true, `Import of ${name} failed`, true, false])
+      setLoadingStatus([true, `Import of ${name || 'file'} failed`, true, false])
     }
   }
 

@@ -30,7 +30,7 @@ export const checkNodeVersion = () => {
       chalk.yellow(nlt + `⚠️  FreeSewing requires Node v${config.node} or newer`) +
         nl +
         nlt +
-        'We hightly recommend using NVM to manage your Node versions:' +
+        'We highly recommend using NVM to manage your Node versions:' +
         nlt +
         chalk.blue('https://github.com/nvm-sh/nvm') +
         nl +
@@ -91,7 +91,7 @@ export const getChoices = async () => {
           title: 'Re-initialize',
           value: 'reinit',
           description:
-            'Re-install depenencies, and update the development environment in this folder',
+            'Re-install dependencies, and update the development environment in this folder',
         },
         {
           title: 'Re-download',
