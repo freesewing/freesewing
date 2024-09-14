@@ -40,7 +40,6 @@ export function flattenFlags(Swizzled, flags) {
 
   return all
 }
-import { useCallback } from 'react'
 
 export function getUiPreferenceUndoStepData(Swizzled, { step }) {
   /*
@@ -75,7 +74,7 @@ export function getUiPreferenceUndoStepData(Swizzled, { step }) {
   return data
 }
 
-export function getCoreSettingUndoStepData(Swizzled, { step, state, Design, imperial }) {
+export function getCoreSettingUndoStepData(Swizzled, { step, state, Design }) {
   const field = step.path[1]
   const structure = Swizzled.methods.menuCoreSettingsStructure({
     language: state.language,
