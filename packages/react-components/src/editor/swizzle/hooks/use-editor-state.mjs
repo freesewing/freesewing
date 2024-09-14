@@ -1,8 +1,7 @@
-import React, { useMemo, useState, useEffect } from 'react'
+import { useMemo, useState, useEffect } from 'react'
 import useLocalStorageState from 'use-local-storage-state'
 import useSessionStorageState from 'use-session-storage-state'
 import { useQueryState, createParser } from 'nuqs'
-import { useSearchParams } from 'next/navigation'
 
 /**
  * react
@@ -67,7 +66,6 @@ export const useSessionEditorState = (Swizzled, init = {}, setEphemeralState) =>
  * @return {array} return - And array with get, set, and update methods
  */
 export const useUrlEditorState = (Swizzled, init = {}, setEphemeralState) => {
-  const searchParams = useSearchParams()
   const [state, setState] = useQueryState('s', pojoParser)
   const update = useMemo(
     () => Swizzled.methods.stateUpdateFactory(setState, setEphemeralState),

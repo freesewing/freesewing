@@ -9,17 +9,7 @@
  * @param {object} props.Swizzled - An object holding swizzled code
  */
 export const PatternLayout = (props) => {
-  const {
-    Header = false,
-    menu = null,
-    title = '',
-    Design,
-    pattern,
-    settings,
-    ui,
-    update,
-    Swizzled,
-  } = props
+  const { menu = null, Design, pattern, update, Swizzled } = props
 
   return (
     <Swizzled.components.ZoomContextProvider>

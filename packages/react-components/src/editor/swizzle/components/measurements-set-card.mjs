@@ -12,7 +12,7 @@ export const MeasurementsSetCard = ({
   config,
 }) => {
   const s = sizes[size]
-  const { t, imageUrl, hasRequiredMeasurements } = Swizzled.methods
+  const { t, hasRequiredMeasurements } = Swizzled.methods
   const { NoIcon, OkIcon } = Swizzled.components
 
   const wrapperProps = {

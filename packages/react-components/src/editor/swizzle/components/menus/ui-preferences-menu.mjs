@@ -1,5 +1,3 @@
-const Alt = () => <p>alt</p>
-
 export const UiPreferencesMenu = ({ Swizzled, update, state, Design }) => {
   const structure = Swizzled.methods.menuUiPreferencesStructure()
 
@@ -23,7 +21,7 @@ export const UiPreferencesMenu = ({ Swizzled, update, state, Design }) => {
     <Swizzled.components.MenuItemGroup
       {...{
         structure,
-        ux: state.ui.ux,
+        ux: state.ui?.ux,
         currentValues: state.ui || {},
         Item: (props) => (
           <Swizzled.components.UiPreference

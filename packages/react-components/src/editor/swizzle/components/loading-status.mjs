@@ -33,6 +33,7 @@ export const LoadingStatus = ({ Swizzled, state, update }) => {
                 Swizzled.components.Noop
           return (
             <div
+              key={id}
               className={`w-full md:max-w-2xl m-auto bg-${
                 conf.color
               } flex flex-row items-center gap-4 p-4 px-4 ${

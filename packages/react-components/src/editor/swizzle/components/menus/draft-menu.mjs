@@ -2,7 +2,7 @@ export const DraftMenu = ({ Design, pattern, state, Swizzled, update }) => {
   // Swizzled methods
   const { t } = Swizzled.methods
   // Swizzled components
-  const { FlagsAccordionTitle, FlagsAccordionEntries, Accordion, HelpIcon } = Swizzled.components
+  const { FlagsAccordionTitle, FlagsAccordionEntries, Accordion } = Swizzled.components
 
   const menuProps = { Design, state, Swizzled, pattern, update }
 

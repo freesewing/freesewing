@@ -1,5 +1,5 @@
 // Hooks
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useMemo } from 'react'
 
 /**
  * The editor view wrapper component
@@ -98,7 +98,7 @@ const viewfinder = ({ design, designs, preload, state, Swizzled }) => {
    * Grab Design from props or state and make them extra props
    */
   if (!design && state?.design) design = state.design
-  const Design = designs?.[design] || false
+  const Design = designs[design] || false
   const extraProps = { design, Design }
 
   /*
@@ -129,7 +129,7 @@ const viewfinder = ({ design, designs, preload, state, Swizzled }) => {
   /*
    * If a view is set, return that
    */
-  const view = getViewComponent(state?.view, Swizzled)
+  const view = getViewComponent(state.view, Swizzled)
   if (view) return [view, extraProps]
 
   /*

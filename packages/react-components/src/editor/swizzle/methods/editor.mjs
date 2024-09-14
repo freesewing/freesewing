@@ -99,7 +99,7 @@ export function getCoreSettingUndoStepData(Swizzled, { step, state, Design, impe
    * Save us some typing
    */
   const cord = Swizzled.methods.settingsValueCustomOrDefault
-  const formatMm = useCallback((val) => Swizzled.methods.formatMm(val, imperial))
+  const formatMm = useCallback((val) => Swizzled.methods.formatMm(val, imperial), [val, imperial])
   const Html = Swizzled.components.HtmlSpan
 
   /*
@@ -146,8 +146,6 @@ export function getCoreSettingUndoStepData(Swizzled, { step, state, Design, impe
       )
       return data
   }
-
-  return false
 }
 
 export function getDesignOptionUndoStepData(Swizzled, { step, state, Design }) {
@@ -218,7 +216,7 @@ export function getUndoStepData(Swizzled, props) {
         newVal: Swizzled.methods.formatMm(props.step.new, props.imperial),
       }
     let count = 0
-    for (const m of new Set([...Object.keys(props.step.new), ...Object.keys(props.step.old)])) {
+    for (const m of Object.keys(props.step.new)) {
       if (props.step.new[m] !== props.step.old?.[m]) count++
     }
     return { ...data, msg: Swizzled.methods.t('pe:xMeasurementsChanged', { count }) }

@@ -1,35 +1,5 @@
 import mustache from 'mustache'
-//// Dependencies
-//import { nsMerge } from 'shared/utils.mjs'
-//// Hooks
-//import { useTranslation } from 'next-i18next'
-//// Components
-//import {
-//  ChatIcon,
-//  TipIcon,
-//  WarningIcon,
-//  ErrorIcon,
-//  WrenchIcon as FixmeIcon,
-//  ExpandIcon,
-//  FlagIcon,
-//  OptionsIcon,
-//  DocsIcon,
-//} from 'shared/components/icons.mjs'
-//import { Mdx } from 'shared/components/mdx/dynamic.mjs'
-//import { SubAccordion } from 'shared/components/accordion.mjs'
-//
-//const flagIcons = {
-//  note: ChatIcon,
-//  info: DocsIcon,
-//  tip: TipIcon,
-//  warn: WarningIcon,
-//  error: ErrorIcon,
-//  fixme: FixmeIcon,
-//  // Used in content
-//  expand: ExpandIcon,
-//  options: OptionsIcon,
-//}
-//
+
 export const FlagTypeIcon = ({ Swizzled, type, className = 'w-6 h-6' }) => {
   const Icon = Swizzled.components[`Flag${Swizzled.methods.capitalize(type)}Icon`]
 
@@ -79,7 +49,6 @@ export const Flag = ({ Swizzled, data, handleUpdate }) => {
 
 export const FlagsAccordionTitle = ({ flags, Swizzled }) => {
   const { t } = Swizzled.methods
-  const { FlagIcon } = Swizzled.components
   const flagList = Swizzled.methods.flattenFlags(flags)
 
   if (Object.keys(flagList).length < 1) return null

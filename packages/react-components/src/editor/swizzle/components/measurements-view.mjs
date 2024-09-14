@@ -63,14 +63,9 @@ export const MeasurementsView = ({
     if (set[`name${capitalize(locale)}`])
       // Curated measurement set
       update.settings(['metadata'], { setName: set[`name${capitalize(locale)}`] })
-    else if (set?.name)
+    else if (set.name)
       // User measurement set
       update.settings(['metadata'], { setName: set.name })
-  }
-
-  const loadMissingMeasurements = (set) => {
-    update.settings(['measurements'], designMeasurements(Design, set.measies))
-    update.settings(['units'], set.imperial ? 'imperial' : 'metric')
   }
 
   // Construct accordion items based on the editor configuration

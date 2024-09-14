@@ -280,8 +280,8 @@ export const MeasurementInput = ({
     typeof original === 'undefined'
       ? original
       : isDegree
-      ? Number(original)
-      : Swizzled.methods.measurementAsUnits(original, units)
+        ? Number(original)
+        : Swizzled.methods.measurementAsUnits(original, units)
   )
   const [validatedVal, setValidatedVal] = useState(
     Swizzled.methods.measurementAsUnits(original, units)

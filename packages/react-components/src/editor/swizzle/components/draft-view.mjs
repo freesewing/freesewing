@@ -1,5 +1,3 @@
-import { useState, useEffect } from 'react'
-
 /**
  * The draft view allows users to tweak their pattern
  *
@@ -30,7 +28,7 @@ export const DraftView = ({ Design, missingMeasurements, state, update, Swizzled
   /*
    * First, attempt to draft
    */
-  const { pattern, errors, failure } = Swizzled.methods.draft(Design, state.settings)
+  const { pattern } = Swizzled.methods.draft(Design, state.settings)
 
   let output = null
   let renderProps = false
@@ -60,16 +58,10 @@ export const DraftView = ({ Design, missingMeasurements, state, update, Swizzled
     <Swizzled.components.PatternLayout
       {...{ update, Design, output, state, pattern }}
       menu={
-        state.ui.aside ? (
+        state.ui?.aside ? (
           <Swizzled.components.DraftMenu {...{ Design, pattern, update, state }} />
         ) : null
       }
     />
   )
 }
-//
-//        <Swizzled.components.HeaderMenu
-//          state={props.state}
-//          {...{ Swizzled, update, Design, pattern }}
-//        />
-//

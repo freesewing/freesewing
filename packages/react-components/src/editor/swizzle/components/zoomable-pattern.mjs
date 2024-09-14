@@ -5,35 +5,7 @@ import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch'
  * A pattern you can pan and zoom
  */
 export const ZoomablePattern = forwardRef((props, ref) => {
-  const { locale, renderProps, Swizzled, rotate } = props
-  //const { renderProps = false, components = {}, design, patternLocale } = props
-  //const { locale } = useRouter()
-
-  //const { i18n } = useTranslation([design, ...ns])
-  /*
-   * We setup a dedicated i18n instance here that is configured to handle
-   * pattern translation. This is required because the UI languauge and
-   * pattern language can be different, and setting the pattern
-   * language on the i18n instance here would change the entire UI language
-   * (which is not what we want).
-   *
-   * But even if both languages are the same, we still want to setup a
-   * dedicated instance because we want to load the current design's namespace
-   * as the default, and add the plugin namespaces and so on.
-   *
-   * In other words, translation inside patterns is more complex than the UI
-   * so we need this specific 'p18n' instance. To create it, we clone the
-   * UI instance, and then set some specific options.
-   */
-  //const p18n = i18n.cloneInstance({
-  //  lng: patternLocale, // The pattern locale, passed down as a prop
-  //  fallbackLng: locale, // The UI locale, from the router
-  //  ns: [design, ...pns], // A list of namespaces optimized for designs
-  //  defaultNS: design, // Set the default namespace to the design
-  //})
-  //// Now set the languauge to the pattern language
-  //p18n.changeLanguage(patternLocale)
-
+  const { renderProps, Swizzled, rotate } = props
   const { onTransformed, setZoomFunctions } = useContext(ZoomContext)
 
   return (

@@ -17,9 +17,9 @@ export const UserSetPicker = ({
   Swizzled,
 }) => {
   // Swizzled components
-  const { Popout, Link, PlusIcon, MeasurementsSetCard } = Swizzled.components
+  const { Popout, MeasurementsSetCard } = Swizzled.components
   // Swizzled hooks
-  const { useBackend, useAccount } = Swizzled.hooks
+  const { useBackend } = Swizzled.hooks
   const backend = useBackend()
   // Swizzled methods
   const { t, hasRequiredMeasurements } = Swizzled.methods
@@ -83,7 +83,6 @@ export const UserSetPicker = ({
               href={false}
               {...{ set, Design, methods, config }}
               onClick={clickHandler}
-              href={href}
               key={set.id}
               size={size}
             />
@@ -98,10 +97,9 @@ export const UserSetPicker = ({
           <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
             {lackingSets.map((set) => (
               <MeasurementsSetCard
-                href={false}
                 {...{ set, Design }}
                 onClick={missingClickHandler}
-                href={href}
+                href={false}
                 key={set.id}
                 size={size}
               />
@@ -121,9 +119,9 @@ export const BookmarkedSetPicker = ({
   Swizzled,
 }) => {
   // Swizzled components
-  const { Popout, Link, PlusIcon, MeasurementsSetCard } = Swizzled.components
+  const { Popout, MeasurementsSetCard } = Swizzled.components
   // Swizzled hooks
-  const { useBackend, useAccount } = Swizzled.hooks
+  const { useBackend } = Swizzled.hooks
   const backend = useBackend()
   // Swizzled methods
   const { t, hasRequiredMeasurements } = Swizzled.methods

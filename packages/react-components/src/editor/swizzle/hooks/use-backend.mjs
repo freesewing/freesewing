@@ -3,7 +3,6 @@ import axios from 'axios'
 // Hooks
 import { useMemo } from 'react'
 import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
-import { useAccount } from 'shared/hooks/use-account.mjs'
 
 /*
  * Helper methods to interact with the FreeSewing backend

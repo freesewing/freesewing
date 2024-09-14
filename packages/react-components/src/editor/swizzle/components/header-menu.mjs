@@ -36,7 +36,6 @@ export const HeaderMenuAllViews = ({ state, Swizzled, update, open, setOpen }) =
 export const HeaderMenuDraftView = (props) => {
   const { Swizzled } = props
   const flags = props.pattern?.setStores?.[0]?.plugins?.['plugin-annotations']?.flags
-  const Button = Swizzled.components.HeaderMenuButton
 
   return (
     <>
@@ -54,7 +53,7 @@ export const HeaderMenuDraftView = (props) => {
 }
 
 export const HeaderMenuDropdown = (props) => {
-  const { Swizzled, tooltip, toggle, width = '400px', open, setOpen, id } = props
+  const { Swizzled, tooltip, toggle, open, setOpen, id } = props
   /*
    * We need to use both !fixed and md:!absolute here to override DaisyUI's
    * classes on dropdown-content to force the dropdown to use the available
@@ -142,7 +141,7 @@ export const HeaderMenuDraftViewCoreSettings = (props) => {
 }
 
 export const HeaderMenuDraftViewUiPreferences = (props) => {
-  const { Swizzled, open, setOpen } = props
+  const { Swizzled } = props
 
   return (
     <Swizzled.components.HeaderMenuDropdown
@@ -258,6 +257,7 @@ export const HeaderMenuDraftViewIcons = (props) => {
           <Swizzled.components.Tooltip tip={Swizzled.methods.t('pe:tt.changeUx')}>
             {[0, 1, 2, 3, 4].map((i) => (
               <button
+                key={i}
                 className="btn btn-ghost btn-sm px-0 -mx-0.5"
                 onClick={() => update.ui('ux', i + 1)}
               >
@@ -324,12 +324,6 @@ export const HeaderMenuUndoIcons = (props) => {
   const { Swizzled, update, state, Design } = props
   const Button = Swizzled.components.HeaderMenuButton
   const size = 'w-5 h-5'
-  const muted = 'text-current opacity-50'
-  const ux = props.state.ui.ux
-  const levels = {
-    ...props.Swizzled.config.uxLevels.core,
-    ...props.Swizzled.config.uxLevels.ui,
-  }
   const undos = props.state._?.undos && props.state._.undos.length > 0 ? props.state._.undos : false
 
   return (
@@ -405,12 +399,6 @@ export const HeaderMenuSaveIcons = (props) => {
   const { Swizzled, update } = props
   const Button = Swizzled.components.HeaderMenuButton
   const size = 'w-5 h-5'
-  const muted = 'text-current opacity-50'
-  const ux = props.state.ui.ux
-  const levels = {
-    ...props.Swizzled.config.uxLevels.core,
-    ...props.Swizzled.config.uxLevels.ui,
-  }
   const saveable = props.state._?.undos && props.state._.undos.length > 0
 
   return (
@@ -465,7 +453,7 @@ export const HeaderMenuButton = ({
 )
 
 export const HeaderMenuViewMenu = (props) => {
-  const { Swizzled, update, saveAs = false, state } = props
+  const { Swizzled, update, state } = props
   const output = []
   let i = 1
   for (const viewName of [

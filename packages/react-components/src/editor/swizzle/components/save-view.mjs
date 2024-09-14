@@ -80,26 +80,26 @@ export const SaveView = ({ Swizzled, state, update }) => {
     } else setLoadingStatus([true, 'backendError', true, false])
   }
 
-  const bookmarkPattern = async () => {
-    setLoadingStatus([true, 'creatingBookmark'])
-    const result = await backend.createBookmark({
-      type: 'pattern',
-      title: name,
-      url: window.location.pathname + window.location.search + window.location.hash,
-    })
-    if (result.success) {
-      const id = result.data.bookmark.id
-      setLoadingStatus([
-        true,
-        <>
-          {t('status:bookmarkCreated')} <small>[#{id}]</small>
-        </>,
-        true,
-        true,
-      ])
-      setBookmarkedId(id)
-    } else setLoadingStatus([true, 'backendError', true, false])
-  }
+  //const bookmarkPattern = async () => {
+  //  setLoadingStatus([true, 'creatingBookmark'])
+  //  const result = await backend.createBookmark({
+  //    type: 'pattern',
+  //    title: name,
+  //    url: window.location.pathname + window.location.search + window.location.hash,
+  //  })
+  //  if (result.success) {
+  //    const id = result.data.bookmark.id
+  //    setLoadingStatus([
+  //      true,
+  //      <>
+  //        {t('status:bookmarkCreated')} <small>[#{id}]</small>
+  //      </>,
+  //      true,
+  //      true,
+  //    ])
+  //    setBookmarkedId(id)
+  //  } else setLoadingStatus([true, 'backendError', true, false])
+  //}
 
   return (
     <Swizzled.components.AuthWrapper>

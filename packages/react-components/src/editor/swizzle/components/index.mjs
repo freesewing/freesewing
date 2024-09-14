@@ -198,7 +198,6 @@ import {
   HeaderMenuDraftView,
   HeaderMenuButton,
   HeaderMenuDropdown,
-  HeaderMenuDropdowns,
   HeaderMenuDraftViewDesignOptions,
   HeaderMenuDraftViewCoreSettings,
   HeaderMenuDraftViewUiPreferences,
@@ -211,7 +210,7 @@ import {
   HeaderMenuViewMenu,
 } from './header-menu.mjs'
 // Flags
-import { Flag, Flags, FlagTypeIcon, FlagsAccordionTitle, FlagsAccordionEntries } from './flags.mjs'
+import { Flag, FlagTypeIcon, FlagsAccordionTitle, FlagsAccordionEntries } from './flags.mjs'
 // View Menu
 import {
   AsideViewMenu,
@@ -268,7 +267,6 @@ const defaultComponents = {
   ErrorView,
   SaveView,
   Flag,
-  Flags,
   FlagsAccordionTitle,
   FlagsAccordionEntries,
   FlagTypeIcon,
@@ -283,7 +281,6 @@ const defaultComponents = {
   HeaderMenuDraftViewIcons,
   HeaderMenuButton,
   HeaderMenuDropdown,
-  HeaderMenuDropdowns,
   HeaderMenuIcon,
   HeaderMenuIconSpacer,
   HeaderMenuSaveIcons,

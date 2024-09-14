@@ -1,5 +1,3 @@
-import { useMemo } from 'react'
-
 /**
  * The core settings menu
  * @param  {Object} options.update        settings and ui update functions
@@ -12,18 +10,10 @@ import { useMemo } from 'react'
 export const CoreSettingsMenu = ({ update, state, language, Design, Swizzled }) => {
   const structure = Swizzled.methods.menuCoreSettingsStructure({
     language,
-    units: state.settings.units,
+    units: state.settings?.units,
     sabool: state.settings.sabool,
     parts: Design.patternConfig.draftOrder,
   })
-
-  const passProps = {
-    samm:
-      typeof state.settings.samm === 'undefined'
-        ? Swizzled.methods.defaultSa(state.settings.units, true)
-        : state.settings.samm,
-    units: state.settings.units,
-  }
 
   const inputs = {
     complete: Swizzled.components.MenuListInput,
