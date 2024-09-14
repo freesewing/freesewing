@@ -1,5 +1,5 @@
 // Hooks
-import { useState, useMemo } from 'react'
+import { useState } from 'react'
 
 /**
  * The editor view wrapper component

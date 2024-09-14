@@ -34,7 +34,7 @@ export const UiPreferencesMenu = ({ Swizzled, update, state, Design }) => {
         name: 'pe:uiPreferences',
         language: state.locale,
         passProps: {
-          ux: state.ui.ux,
+          ux: state.ui?.ux,
           settings: state.settings,
           patternConfig: Design.patternConfig,
         },
