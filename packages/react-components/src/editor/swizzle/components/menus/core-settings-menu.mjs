@@ -10,8 +10,8 @@
 export const CoreSettingsMenu = ({ update, state, language, Design, Swizzled }) => {
   const structure = Swizzled.methods.menuCoreSettingsStructure({
     language,
-    units: state.settings.units,
-    sabool: state.settings.sabool,
+    units: state.settings?.units,
+    sabool: state.settings?.sabool,
     parts: Design.patternConfig.draftOrder,
   })
 
