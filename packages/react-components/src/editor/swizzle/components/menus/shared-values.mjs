@@ -1,3 +1,5 @@
+import { mergeOptions } from '@freesewing/core'
+
 /** Displays that constant values are not implemented in the front end */
 export const MenuConstantOptionValue = () => (
   <span className="text-error">FIXME: No ConstantOptionvalue implemented</span>
@@ -121,7 +123,7 @@ export const MenuPctOptionValue = ({
  * @param  {Number|String|Boolean} options.dflt - The default value
  * @param  {Boolean} options.changed - Has the value been changed?
  */
-export const MenuShowValue = ({ Swizzled, current, dflt, changed, components }) => {
+export const MenuShowValue = ({ Swizzled, current, dflt, changed }) => {
   const { MenuHighlightValue } = Swizzled.components
 
   return <MenuHighlightValue changed={changed}> {changed ? current : dflt} </MenuHighlightValue>

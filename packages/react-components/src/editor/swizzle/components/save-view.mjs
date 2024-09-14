@@ -14,7 +14,7 @@ export const SaveView = ({ Swizzled, state, update }) => {
   const [notes, setNotes] = useState('')
   const [savedId, setSavedId] = useState()
   const [bookmarkedId] = useState() // FIXME
-  const [saveAs, setSaveAs] = useState(false)
+  const [saveAs] = useState(false) // FIXME
 
   const addSettingsToNotes = () => {
     setNotes(

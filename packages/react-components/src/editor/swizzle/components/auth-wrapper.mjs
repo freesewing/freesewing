@@ -90,23 +90,23 @@ export const ConsentLacking = ({ banner, refresh, Swizzled }) => {
   const { setAccount, setToken, setSeenUser } = Swizzled.hooks.useAccount()
   const backend = Swizzled.hooks.useBackend()
 
-  const updateConsent = async ({ consent1, consent2 }) => {
-    let consent = 0
-    if (consent1) consent = 1
-    if (consent1 && consent2) consent = 2
-    if (consent > 0) {
-      const result = await backend.updateConsent(consent)
-      if (result.success) {
-        setToken(result.data.token)
-        setAccount(result.data.account)
-        setSeenUser(result.data.account.username)
-        refresh()
-      } else {
-        console.log('something went wrong', result)
-        refresh()
-      }
-    }
-  }
+  //const updateConsent = async ({ consent1, consent2 }) => {
+  //  let consent = 0
+  //  if (consent1) consent = 1
+  //  if (consent1 && consent2) consent = 2
+  //  if (consent > 0) {
+  //    const result = await backend.updateConsent(consent)
+  //    if (result.success) {
+  //      setToken(result.data.token)
+  //      setAccount(result.data.account)
+  //      setSeenUser(result.data.account.username)
+  //      refresh()
+  //    } else {
+  //      console.log('something went wrong', result)
+  //      refresh()
+  //    }
+  //  }
+  //}
 
   return (
     <Swizzled.components.AuthMessageWrapper>
@@ -119,7 +119,7 @@ export const ConsentLacking = ({ banner, refresh, Swizzled }) => {
   )
 }
 
-export const AuthWrapper = ({ children, requiredRole = 'user', Swizzled, update }) => {
+export const AuthWrapper = ({ children, requiredRole = 'user', Swizzled }) => {
   const { t } = Swizzled.methods
   const { useAccount, useBackend } = Swizzled.hooks
   const { account, setAccount, token, admin, stopImpersonating, signOut } = useAccount()

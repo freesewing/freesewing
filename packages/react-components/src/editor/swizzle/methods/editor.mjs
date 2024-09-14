@@ -99,7 +99,7 @@ export function getCoreSettingUndoStepData(Swizzled, { step, state, Design, impe
    * Save us some typing
    */
   const cord = Swizzled.methods.settingsValueCustomOrDefault
-  const formatMm = useCallback((val) => Swizzled.methods.formatMm(val, imperial), [imperial])
+  const formatMm = Swizzled.methods.formatMm
   const Html = Swizzled.components.HtmlSpan
 
   /*

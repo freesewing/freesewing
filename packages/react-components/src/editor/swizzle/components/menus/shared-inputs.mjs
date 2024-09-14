@@ -1,4 +1,4 @@
-import { useMemo, useCallback, useState, useEffect } from 'react'
+import { useMemo, useCallback, useState } from 'react'
 
 /** A boolean version of {@see MenuListInput} that sets up the necessary configuration */
 export const MenuBoolInput = (props) => {
