@@ -1,4 +1,4 @@
-export const menuUiPreferencesStructure = (Swizzled) => {
+export function menuUiPreferencesStructure(Swizzled) {
   const uiUx = Swizzled.config.uxLevels.ui
   const uiPreferences = {
     ux: {

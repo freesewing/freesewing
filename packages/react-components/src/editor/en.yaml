@@ -287,3 +287,4 @@ defaultRestored: Cleared (default restored)
 includeAllParts: Include all parts
 allFirstLetter: A
 undo: Undo
+xMeasurementsChanged: "{ count } Measurements changed"

@@ -12,7 +12,7 @@
  *                                                                       *
  * To use a custom version, simply pas it as a prop into the editor      *
  * under the 'methods' key. So to pass a custom 't' method (used for     *
- * translate(, you do:                                                   *
+ * translation(, you do:                                                 *
  *                                                                       *
  * <PatternEditor methods={{ t: myCustomTranslationMethod }} />          *
  *                                                                       *
@@ -21,111 +21,131 @@
 /*
  * Import of methods that can be swizzled
  */
-import { capitalize } from './capitalize.mjs'
-import { cloudImageUrl } from './cloud-image-url.mjs'
-import { designMeasurements } from './design-measurements.mjs'
-import { hasRequiredMeasurements } from './has-required-measurements.mjs'
-import { isDegreeMeasurement } from './is-degree-measurement.mjs'
-import { measurementAsMm } from './measurement-as-mm.mjs'
-import { measurementAsUnits } from './measurement-as-units.mjs'
-import { nsMerge } from './ns-merge.mjs'
-import { objUpdate, undoableObjUpdate, cloneObject, addUndoStep } from './obj-update.mjs'
-import { parseDistanceInput } from './parse-distance-input.mjs'
-import { round } from './round.mjs'
-import { structureMeasurementsAsDesign } from './structure-measurements-as-design.mjs'
-import { t } from './t.mjs'
-import { draft } from './draft.mjs'
-import { menuCoreSettingsStructure } from './menu-core-settings-structure.mjs'
-import { menuDesignOptionsStructure } from './menu-design-options-structure.mjs'
-import { menuUiPreferencesStructure } from './menu-ui-preferences-structure.mjs'
-import { menuDesignOptionType } from './menu-design-option-type.mjs'
-import { menuRoundPct, menuValidateNumericValue, menuValueWasChanged } from './menus.mjs'
-import { formatPercentage } from './format-percentage.mjs'
-import { defaultSa } from './default-sa.mjs'
-import { formatFraction128 } from './format-fraction-128.mjs'
-import { formatImperial } from './format-imperial.mjs'
-import { formatMm } from './format-mm.mjs'
-import { roundMm } from './round-mm.mjs'
 import {
+  defaultSa,
+  defaultSamm,
   menuCoreSettingsOnlyHandler,
-  menuCoreSettingsSammHandler,
   menuCoreSettingsSaboolHandler,
-} from './menu-core-settings-handlers.mjs'
-import { defaultSamm } from './default-samm.mjs'
-import { flattenFlags } from './flatten-flags.mjs'
-import { stateUpdateFactory } from './state-update-factory.mjs'
-import { statePrefixPath } from './state-prefix-path.mjs'
-import { initialEditorState } from './initial-editor-state.mjs'
-import { shortDate } from './short-date.mjs'
-import { notEmpty } from './not-empty.mjs'
-import { missingMeasurements } from './missing-measurements.mjs'
-import { getOptionStructure, findOption } from './get-option-structure.mjs'
+  menuCoreSettingsSammHandler,
+  menuCoreSettingsStructure,
+} from './core-settings.mjs'
 import {
-  getUiPreferenceUndoStepData,
+  designOptionType,
+  findOption,
+  getOptionStructure,
+  menuDesignOptionsStructure,
+} from './design-options.mjs'
+import {
+  addUndoStep,
+  cloneObject,
+  cloudImageUrl,
+  draft,
+  flattenFlags,
   getCoreSettingUndoStepData,
   getDesignOptionUndoStepData,
+  getUiPreferenceUndoStepData,
   getUndoStepData,
-} from './get-undo-step-data.mjs'
-import { settingsValueIsCustom, settingsValueCustomOrDefault } from './settings-value-is-custom.mjs'
-/*
- * Placeholder for methods that need to be swizzled or won't be available
- */
-import { noop } from './noop.mjs'
+  initialEditorState,
+  menuRoundPct,
+  menuValidateNumericValue,
+  menuValueWasChanged,
+  noop,
+  notEmpty,
+  nsMerge,
+  objUpdate,
+  settingsValueIsCustom,
+  settingsValueCustomOrDefault,
+  statePrefixPath,
+  stateUpdateFactory,
+  t,
+  undoableObjUpdate,
+} from './editor.mjs'
+import {
+  capitalize,
+  formatDesignOptionValue,
+  formatFraction128,
+  formatImperial,
+  formatMm,
+  formatPercentage,
+  round,
+  roundMm,
+  fractionToDecimal,
+  measurementAsMm,
+  measurementAsUnits,
+  shortDate,
+  parseDistanceInput,
+} from './formatting.mjs'
+import {
+  designMeasurements,
+  hasRequiredMeasurements,
+  isDegreeMeasurement,
+  missingMeasurements,
+  structureMeasurementsAsDesign,
+} from './measurements.mjs'
+import { menuUiPreferencesStructure } from './ui-preferences.mjs'
 
 /**
  * This object holds all methods that can be swizzled
  */
 const defaultMethods = {
-  addUndoStep,
-  capitalize,
-  cloneObject,
-  cloudImageUrl,
+  // core-settings.mjs
   defaultSa,
   defaultSamm,
-  designMeasurements,
-  draft,
+  menuCoreSettingsOnlyHandler,
+  menuCoreSettingsSaboolHandler,
+  menuCoreSettingsSammHandler,
+  menuCoreSettingsStructure,
+  // design-options.mjs
+  designOptionType,
   findOption,
+  getOptionStructure,
+  menuDesignOptionsStructure,
+  // editor.mjs
+  addUndoStep,
+  cloneObject,
+  cloudImageUrl,
+  draft,
   flattenFlags,
+  getCoreSettingUndoStepData,
+  getDesignOptionUndoStepData,
+  getUiPreferenceUndoStepData,
+  getUndoStepData,
+  initialEditorState,
+  menuRoundPct,
+  menuValidateNumericValue,
+  menuValueWasChanged,
+  noop,
+  notEmpty,
+  nsMerge,
+  objUpdate,
+  settingsValueIsCustom,
+  settingsValueCustomOrDefault,
+  statePrefixPath,
+  stateUpdateFactory,
+  t,
+  undoableObjUpdate,
+  // formatting.mjs
+  capitalize,
+  formatDesignOptionValue,
   formatFraction128,
   formatImperial,
   formatMm,
   formatPercentage,
-  getOptionStructure,
-  getUiPreferenceUndoStepData,
-  getCoreSettingUndoStepData,
-  getDesignOptionUndoStepData,
-  getUndoStepData,
-  hasRequiredMeasurements,
-  initialEditorState,
-  isDegreeMeasurement,
-  measurementAsMm,
-  measurementAsUnits,
-  menuCoreSettingsStructure,
-  menuCoreSettingsOnlyHandler,
-  menuCoreSettingsSammHandler,
-  menuCoreSettingsSaboolHandler,
-  menuDesignOptionsStructure,
-  menuDesignOptionType,
-  menuUiPreferencesStructure,
-  menuRoundPct,
-  menuValidateNumericValue,
-  menuValueWasChanged,
-  missingMeasurements,
-  notEmpty,
-  nsMerge,
-  objUpdate,
-  undoableObjUpdate,
-  parseDistanceInput,
   round,
   roundMm,
-  setModal: noop,
-  settingsValueIsCustom,
-  settingsValueCustomOrDefault,
+  fractionToDecimal,
+  measurementAsMm,
+  measurementAsUnits,
   shortDate,
-  stateUpdateFactory,
-  statePrefixPath,
+  parseDistanceInput,
+  // measurements.mjs
+  designMeasurements,
+  hasRequiredMeasurements,
+  isDegreeMeasurement,
+  missingMeasurements,
   structureMeasurementsAsDesign,
-  t,
+  // ui-preferences.mjs
+  menuUiPreferencesStructure,
 }
 
 /*

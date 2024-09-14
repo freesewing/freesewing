@@ -356,7 +356,7 @@ export const MenuSliderInput = ({
 export const MenuEditOption = (props) => {
   const [manualEdit, setManualEdit] = useState(props.current)
   const { config, handleChange, Swizzled } = props
-  const type = Swizzled.methods.menuDesignOptionType(config)
+  const type = Swizzled.methods.designOptionType(config)
 
   const onUpdate = useCallback(
     (validVal) => {

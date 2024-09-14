@@ -144,7 +144,6 @@ export const MeasurementsView = ({
     <>
       <Swizzled.components.HeaderMenu state={state} {...{ Swizzled, update }} />
       <div className="max-w-7xl mt-8 mx-auto px-4">
-        <pre>{JSON.stringify(state._, null, 2)}</pre>
         <h2>{t('pe:measurements')}</h2>
         {missingMeasurements && missingMeasurements.length > 0 ? (
           <Popout note dense noP>

@@ -1,8 +1,18 @@
+export function designOptionType(Swizzled, option) {
+  if (typeof option?.pct !== 'undefined') return 'pct'
+  if (typeof option?.bool !== 'undefined') return 'bool'
+  if (typeof option?.count !== 'undefined') return 'count'
+  if (typeof option?.deg !== 'undefined') return 'deg'
+  if (typeof option?.list !== 'undefined') return 'list'
+  if (typeof option?.mm !== 'undefined') return 'mm'
+
+  return 'constant'
+}
 import { mergeOptions } from '@freesewing/core'
 import set from 'lodash.set'
 import orderBy from 'lodash.orderby'
 
-export const menuDesignOptionsStructure = (Swizzled, options, settings, asFullList = false) => {
+export function menuDesignOptionsStructure(Swizzled, options, settings, asFullList = false) {
   if (!options) return options
   const sorted = {}
   for (const [name, option] of Object.entries(options)) {
@@ -13,7 +23,7 @@ export const menuDesignOptionsStructure = (Swizzled, options, settings, asFullLi
   // Fixme: One day we should sort this based on the translation
   for (const option of orderBy(sorted, ['order', 'menu', 'name'], ['asc', 'asc', 'asc'])) {
     if (typeof option === 'object') {
-      const oType = Swizzled.methods.menuDesignOptionType(option)
+      const oType = Swizzled.methods.designOptionType(option)
       option.dflt = option.dflt || option[oType]
       if (oType === 'pct') option.dflt /= 100
       if (typeof option.menu === 'function')
@@ -48,4 +58,30 @@ export const menuDesignOptionsStructure = (Swizzled, options, settings, asFullLi
   }
 
   return menu
+}
+/*
+ * Helper method to grab an option from an Design options structure
+ *
+ * Since these structures can be nested with option groups, this needs some extra logic
+ */
+export function getOptionStructure(Swizzled, option, Design, state) {
+  const structure = Swizzled.methods.menuDesignOptionsStructure(
+    Design.patternConfig.options,
+    state.settings
+  )
+  console.log({ structure })
+
+  return Swizzled.methods.findOption(structure, option)
+}
+
+export function findOption(Swizzled, structure, option) {
+  for (const [key, val] of Object.entries(structure)) {
+    if (key === option) return val
+    if (val.isGroup) {
+      const sub = findOption(val, option)
+      if (sub) return sub
+    }
+  }
+
+  return false
 }

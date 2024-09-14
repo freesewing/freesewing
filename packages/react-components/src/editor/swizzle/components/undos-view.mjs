@@ -103,7 +103,7 @@ export const UndoStep = ({ Swizzled, update, state, step, Design, compact = fals
       <Swizzled.components.ButtonFrame dense onClick={() => update.restore(index, state._)}>
         <div className="flex flex-row items-center align-start gap-2 w-full">
           <Swizzled.components.UndoIcon text={index} className="w-5 h-5 text-secondary" />
-          {t(`pe:${data.optCode}`)}
+          {data.msg ? data.msg : t(`pe:${data.optCode}`)}
         </div>
       </Swizzled.components.ButtonFrame>
     )
@@ -124,13 +124,22 @@ export const UndoStep = ({ Swizzled, update, state, step, Design, compact = fals
           </span>
         </div>
         <div className="flex flex-row gap-1 items-center align-start w-full">
-          <span className="">
-            {Array.isArray(data.newVal) ? data.newVal.join(', ') : data.newVal}
-          </span>
-          <Swizzled.components.LeftIcon className="w-4 h-4 text-secondary shrink-0" stroke={4} />
-          <span className="line-through decoration-1 opacity-70">
-            {Array.isArray(data.oldVal) ? data.oldVal.join(', ') : data.oldVal}
-          </span>
+          {data.msg ? (
+            data.msg
+          ) : (
+            <>
+              <span className="">
+                {Array.isArray(data.newVal) ? data.newVal.join(', ') : data.newVal}
+              </span>
+              <Swizzled.components.LeftIcon
+                className="w-4 h-4 text-secondary shrink-0"
+                stroke={4}
+              />
+              <span className="line-through decoration-1 opacity-70">
+                {Array.isArray(data.oldVal) ? data.oldVal.join(', ') : data.oldVal}
+              </span>
+            </>
+          )}
         </div>
       </Swizzled.components.ButtonFrame>
     </>

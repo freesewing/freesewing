@@ -9,7 +9,6 @@
 export const DesignsView = ({ designs = {}, Swizzled, update, state }) => (
   <div className="text-center mt-8 mb-24">
     <h2>{Swizzled.methods.t('pe:chooseADesign')}</h2>
-    <pre>{JSON.stringify(state._, null, 2)}</pre>
     <ul className="flex flex-row flex-wrap gap-2 items-center justify-center max-w-2xl px-8 mx-auto">
       {Object.entries(designs).map(([name, design]) => (
         <li key={name}>

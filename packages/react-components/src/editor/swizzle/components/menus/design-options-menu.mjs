@@ -86,7 +86,7 @@ export const DesignOptionsMenu = ({ Design, isFirst = true, state, update, Swizz
  * @param  {Object} options.rest     the rest of the props
  */
 export const DesignOption = ({ config, settings, ux, inputs, values, Swizzled, ...rest }) => {
-  const type = Swizzled.methods.menuDesignOptionType(config)
+  const type = Swizzled.methods.designOptionType(config)
   const Input = inputs[type]
   const Value = values[type]
   const allowOverride = ['pct', 'count', 'deg'].includes(type)
