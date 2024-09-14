@@ -9,7 +9,6 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { EditorLayout } from 'site/components/layouts/editor.mjs'
 // The FreeSewing pattern editor
 import { PatternEditor, ns as editorNs } from '@freesewing/react-components/editor'
-import { CloseIcon } from '@freesewing/react-components/icons'
 // The useDesign hook and FreeSewing collection
 import { designs } from 'site/hooks/use-design.mjs'
 
