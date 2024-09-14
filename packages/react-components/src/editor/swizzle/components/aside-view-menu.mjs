@@ -46,6 +46,7 @@ export const AsideViewMenuIcons = ({ state, update, setDense, dense, Swizzled })
 
   const output = [
     <Swizzled.components.AsideViewMenuButton
+      key={1}
       onClick={() => setDense(!dense)}
       label={
         dense ? (
@@ -100,7 +101,7 @@ export const AsideViewMenuIcons = ({ state, update, setDense, dense, Swizzled })
   return output
 }
 
-export const AsideViewMenu = ({ Swizzled, view, update, saveAs = false, state }) => {
+export const AsideViewMenu = ({ Swizzled, update, state }) => {
   const [dense, setDense] = useState(true)
   return (
     <div

@@ -1,5 +1,5 @@
 export const Tooltip = (props) => {
-  const { children, tip, Swizzled, state, ...rest } = props
+  const { children, tip, ...rest } = props
 
   return (
     <div

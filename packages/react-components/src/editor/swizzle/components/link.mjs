@@ -16,7 +16,7 @@ const PageLink = ({ href, txt = false, children, Swizzled }) => (
   </Swizzled.components.Link>
 )
 
-const WebLink = ({ href, txt = false, children }) => (
+const WebLink = ({ href, txt = false, children, Swizzled }) => (
   <a href={href} className={Swizzled.config.classes.link} title={txt ? txt : ''}>
     {children ? children : txt}
   </a>

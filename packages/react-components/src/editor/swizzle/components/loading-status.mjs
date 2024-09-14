@@ -14,7 +14,7 @@ export const LoadingStatus = ({ Swizzled, state, update }) => {
           }, conf.clearTimer)
       }
     }
-  }, [state._])
+  }, [state._, update])
 
   if (!state._.loading || Object.keys(state._.loading).length < 1) return null
 

@@ -9,7 +9,6 @@ export const MeasurementsSetCard = ({
   language = false,
   size = 'lg',
   Swizzled,
-  config,
 }) => {
   const s = sizes[size]
   const { t, hasRequiredMeasurements } = Swizzled.methods
@@ -59,7 +58,7 @@ export const MeasurementsSetCard = ({
     <>
       {icon}
       <span className="bg-neutral text-neutral-content px-4 w-full bg-opacity-50 py-2 rounded rounded-t-none font-bold leading-5">
-        {language ? set[`name${capitalize(language)}`] : set.name}
+        {language ? set[`name${Swizzled.methods.capitalize(language)}`] : set.name}
         {linebreak}
         {missingMeasies}
       </span>
@@ -77,9 +76,9 @@ export const MeasurementsSetCard = ({
   // Returns a link to an internal page
   if (href && !useA)
     return (
-      <Link {...wrapperProps} href={href}>
+      <Swizzled.components.Link {...wrapperProps} href={href}>
         {inner}
-      </Link>
+      </Swizzled.components.Link>
     )
 
   // Returns a link to an external page

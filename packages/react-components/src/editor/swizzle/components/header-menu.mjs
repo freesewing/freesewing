@@ -370,8 +370,9 @@ export const HeaderMenuUndoIcons = (props) => {
             <li key="view">
               <Swizzled.components.ButtonFrame
                 dense
-                ative
-                onClick={() => update.state(index, state._)}
+                onClick={() => {
+                  return null /*update.state(index, state._) */
+                }}
               >
                 <div className="flex flex-row items-center align-center justify-between gap-2 w-full">
                   <div className="flex flex-row items-center align-start gap-2 grow">

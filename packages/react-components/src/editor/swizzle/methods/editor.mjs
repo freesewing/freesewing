@@ -99,7 +99,7 @@ export function getCoreSettingUndoStepData(Swizzled, { step, state, Design, impe
    * Save us some typing
    */
   const cord = Swizzled.methods.settingsValueCustomOrDefault
-  const formatMm = useCallback((val) => Swizzled.methods.formatMm(val, imperial), [val, imperial])
+  const formatMm = useCallback((val) => Swizzled.methods.formatMm(val, imperial), [imperial])
   const Html = Swizzled.components.HtmlSpan
 
   /*
@@ -133,16 +133,15 @@ export function getCoreSettingUndoStepData(Swizzled, { step, state, Design, impe
       data.newVal = cord(step.new, data.structure.dflt) || Swizzled.methods.t('pe:includeAllParts')
       return data
     default:
-      const choices = data.structure.choiceTitles
       data.oldVal = Swizzled.methods.t(
-        (choices[String(step.old)]
-          ? choices[String(step.old)]
-          : choices[String(data.structure.dflt)]) + '.t'
+        (data.structure.choiceTitles[String(step.old)]
+          ? data.structure.choiceTitles[String(step.old)]
+          : data.structure.choiceTitles[String(data.structure.dflt)]) + '.t'
       )
       data.newVal = Swizzled.methods.t(
-        (choices[String(step.new)]
-          ? choices[String(step.new)]
-          : choices[String(data.structure.dflt)]) + '.t'
+        (data.structure.choiceTitles[String(step.new)]
+          ? data.structure.choiceTitles[String(step.new)]
+          : data.structure.choiceTitles[String(data.structure.dflt)]) + '.t'
       )
       return data
   }
@@ -232,9 +231,8 @@ export function getUndoStepData(Swizzled, props) {
  *
  * If they are not present, it will fall back to the relevant defaults
  * @param {object} Swizzled - The swizzled data
- * @return {object} initial - The initial Editor State object
  */
-export function initialEditorState(Swizzled, preload) {
+export function initialEditorState(Swizzled) {
   /*
    * Create initial state object
    */
@@ -305,7 +303,7 @@ export function menuValidateNumericValue(
   // replace comma with period
   const parsedVal = val.replace(',', '.')
   // if fractions are allowed, parse for fractions, otherwise use the number as a value
-  const useVal = allowFractions ? fractionToDecimal(parsedVal) : parsedVal
+  const useVal = allowFractions ? Swizzled.methods.fractionToDecimal(parsedVal) : parsedVal
 
   // check that it's a number and it's in the range
   if (isNaN(useVal) || useVal > max || useVal < min) return false
@@ -580,7 +578,7 @@ export function stateUpdateFactory(Swizzled, setState, setEphemeralState) {
         if (typeof newState.loading[id] !== 'undefined') delete newState.loading[id]
         return newState
       }),
-    clearLoading: (id) => setEphemeralState((cur) => ({ ...cur, loading: {} })),
+    clearLoading: () => setEphemeralState((cur) => ({ ...cur, loading: {} })),
     notify: (conf, id = false) =>
       setEphemeralState((cur) => {
         const newState = { ...cur }

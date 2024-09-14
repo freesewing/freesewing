@@ -13,10 +13,8 @@ export const SaveView = ({ Swizzled, state, update }) => {
   const [withNotes, setWithNotes] = useState(false)
   const [notes, setNotes] = useState('')
   const [savedId, setSavedId] = useState()
-  const [bookmarkedId, setBookmarkedId] = useState()
-  const [editAfterSaveAs, setEditAfterSaveAs] = useState(true)
+  const [bookmarkedId] = useState() // FIXME
   const [saveAs, setSaveAs] = useState(false)
-  const [settingsAdded, setSettingsAdded] = useState(false)
 
   const addSettingsToNotes = () => {
     setNotes(
@@ -28,7 +26,6 @@ export const SaveView = ({ Swizzled, state, update }) => {
         yaml.dump(state.settings) +
         '````'
     )
-    setSettingsAdded(true)
   }
 
   const saveAsNewPattern = async () => {
@@ -59,25 +56,31 @@ export const SaveView = ({ Swizzled, state, update }) => {
         </span>,
         id
       )
-    } else update.notifyFailure('oops', id)
+    } else update.notifyFailure('oops', loadingId)
   }
 
   const savePattern = async () => {
-    setLoadingStatus([true, 'savingPattern'])
-    const patternData = { design, name, public: false, settings, data: {} }
+    //setLoadingStatus([true, 'savingPattern'])
+    const patternData = {
+      design: state.design,
+      settings: state.settings,
+      name,
+      public: false,
+      data: {},
+    }
     const result = await backend.updatePattern(saveAs.pattern, patternData)
     if (result.success) {
-      setLoadingStatus([
-        true,
-        <>
-          {t('status:patternSaved')} <small>[#{saveAs.pattern}]</small>
-        </>,
-        true,
-        true,
-      ])
+      //setLoadingStatus([
+      //  true,
+      //  <>
+      //    {t('status:patternSaved')} <small>[#{saveAs.pattern}]</small>
+      //  </>,
+      //  true,
+      //  true,
+      //])
       setSavedId(saveAs.pattern)
       update.notify({ color: 'success', msg: 'boom' }, saveAs.pattern)
-    } else setLoadingStatus([true, 'backendError', true, false])
+    } //else setLoadingStatus([true, 'backendError', true, false])
   }
 
   //const bookmarkPattern = async () => {
@@ -109,34 +112,34 @@ export const SaveView = ({ Swizzled, state, update }) => {
           <>
             <h2>{t('pe:savePattern')}</h2>
             {savedId && (
-              <Popout link>
+              <Swizzled.components.Popout link>
                 <h5>{t('workbend:patternSaved')}</h5>
                 {t('pe:see')}:{' '}
-                <PageLink
+                <Swizzled.components.PageLink
                   href={`/account/patterns/${savedId}`}
                   txt={`/account/patterns/${savedId}`}
                 />
-              </Popout>
+              </Swizzled.components.Popout>
             )}
             <button
               className={`${Swizzled.config.classeshorFlexNoSm} btn btn-primary btn-lg w-full mt-2 my-8`}
               onClick={savePattern}
             >
-              <SaveIcon className="h-8 w-8" />
+              <Swizzled.components.SaveIcon className="h-8 w-8" />
               {t('pe:savePattern')} #{saveAs.pattern}
             </button>
           </>
         ) : null}
         <h2>{t('pe:saveAsNewPattern')}</h2>
         {bookmarkedId && (
-          <Popout link>
+          <Swizzled.components.Popout link>
             <h5>{t('pe:patternBookmarkCreated')}</h5>
             {t('pe:see')}:{' '}
-            <PageLink
+            <Swizzled.components.PageLink
               href={`/account/bookmarks/${bookmarkedId}`}
               txt={`/account/bookmarks/${bookmarkedId}`}
             />
-          </Popout>
+          </Swizzled.components.Popout>
         )}
         <div className="mb-4">
           <Swizzled.components.StringInput

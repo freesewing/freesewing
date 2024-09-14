@@ -1,4 +1,4 @@
-import { useMemo, useCallback, useState } from 'react'
+import { useMemo, useCallback, useState, useEffect } from 'react'
 
 /** A boolean version of {@see MenuListInput} that sets up the necessary configuration */
 export const MenuBoolInput = (props) => {
@@ -185,62 +185,62 @@ export const MenuMmInput = (props) => {
  * @param  {Function}  options.onUpdate  a function to handle when the value is updated to a valid value
  * @param  {Boolean} options.fractions should the input allow fractional input
  */
-export const MenuNumberInput = ({
-  value,
-  onUpdate,
-  onMount,
-  className,
-  fractions = true,
-  min = -Infinity,
-  max = Infinity,
-  swizzled,
-}) => {
-  const valid = useRef(validateVal(value, fractions, min, max))
-
-  const handleChange = useCallback(
-    (newVal) => {
-      // only actually update if the value is valid
-      if (typeof onUpdate === 'function') {
-        onUpdate(valid.current, newVal)
-      }
-    },
-    [onUpdate, valid]
-  )
-
-  // onChange
-  const onChange = useCallback(
-    (evt) => {
-      const newVal = evt.target.value
-      // set validity so it will display
-      valid.current = validateVal(newVal, fractions, min, max)
-
-      // handle the change
-      handleChange(newVal)
-    },
-    [fractions, min, max, valid]
-  )
-
-  const val = typeof value === 'undefined' ? config.dflt : value
-
-  useEffect(() => {
-    if (typeof onMount === 'function') {
-      onMount(valid.current)
-    }
-  }, [onMount, valid])
-
-  return (
-    <input
-      type="text"
-      inputMode="number"
-      className={`input input-secondary ${className || 'input-sm grow text-base-content'}
-        ${valid.current === false && 'input-error'}
-        ${valid.current && 'input-success'}
-      `}
-      value={val}
-      onChange={onChange}
-    />
-  )
-}
+//export const MenuNumberInput = ({
+//  value,
+//  onUpdate,
+//  onMount,
+//  className,
+//  fractions = true,
+//  min = -Infinity,
+//  max = Infinity,
+//  swizzled,
+//}) => {
+//  const valid = useRef(validateVal(value, fractions, min, max))
+//
+//  const handleChange = useCallback(
+//    (newVal) => {
+//      // only actually update if the value is valid
+//      if (typeof onUpdate === 'function') {
+//        onUpdate(valid.current, newVal)
+//      }
+//    },
+//    [onUpdate, valid]
+//  )
+//
+//  // onChange
+//  const onChange = useCallback(
+//    (evt) => {
+//      const newVal = evt.target.value
+//      // set validity so it will display
+//      valid.current = validateVal(newVal, fractions, min, max)
+//
+//      // handle the change
+//      handleChange(newVal)
+//    },
+//    [fractions, min, max, valid]
+//  )
+//
+//  const val = typeof value === 'undefined' ? config.dflt : value
+//
+//  useEffect(() => {
+//    if (typeof onMount === 'function') {
+//      onMount(valid.current)
+//    }
+//  }, [onMount, valid])
+//
+//  return (
+//    <input
+//      type="text"
+//      inputMode="number"
+//      className={`input input-secondary ${className || 'input-sm grow text-base-content'}
+//        ${valid.current === false && 'input-error'}
+//        ${valid.current && 'input-success'}
+//      `}
+//      value={val}
+//      onChange={onChange}
+//    />
+//  )
+//}
 
 /** A {@see SliderInput} to handle percentage values */
 export const MenuPctInput = ({ current, changed, updateHandler, config, Swizzled, ...rest }) => {
@@ -287,7 +287,6 @@ export const MenuSliderInput = ({
   config,
   current,
   updateHandler,
-  t,
   override,
   suffix = '',
   valFormatter = (val) => val,
@@ -403,7 +402,7 @@ const useSharedHandlers = ({ dflt, updateHandler, name, isDesignOption }) => {
       if (isDesignOption && newCurrent === dflt) newCurrent = '__UNSET__'
       updateHandler([name], newCurrent)
     },
-    [dflt, updateHandler, name]
+    [dflt, updateHandler, name, isDesignOption]
   )
 }
 

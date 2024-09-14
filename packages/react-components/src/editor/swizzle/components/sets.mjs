@@ -1,16 +1,8 @@
 import { useState, useEffect } from 'react'
 import orderBy from 'lodash.orderby'
 
-export const MeasieVal = ({ val, m, imperial }) =>
-  isDegreeMeasurement(m) ? (
-    <span>{val}°</span>
-  ) : (
-    <span dangerouslySetInnerHTML={{ __html: formatMm(val, imperial) }}></span>
-  )
-
 export const UserSetPicker = ({
   Design,
-  href,
   clickHandler,
   missingClickHandler,
   size = 'lg',
@@ -81,7 +73,7 @@ export const UserSetPicker = ({
           {okSets.map((set) => (
             <MeasurementsSetCard
               href={false}
-              {...{ set, Design, methods, config }}
+              {...{ set, Design, config }}
               onClick={clickHandler}
               key={set.id}
               size={size}
@@ -167,7 +159,7 @@ export const BookmarkedSetPicker = ({
           {okSets.map((set) => (
             <MeasurementsSetCard
               href={false}
-              {...{ set, Design, methods, config }}
+              {...{ set, Design, config }}
               onClick={clickHandler}
               key={set.id}
               size={size}
@@ -197,14 +189,7 @@ export const BookmarkedSetPicker = ({
   )
 }
 
-export const CuratedSetPicker = ({
-  Design,
-  clickHandler,
-  missingClickHandler,
-  size = 'lg',
-  Swizzled,
-  locale,
-}) => {
+export const CuratedSetPicker = ({ clickHandler, Swizzled, locale }) => {
   // Swizzled components
   const { CuratedMeasurementsSetLineup } = Swizzled.components
   // Swizzled hooks

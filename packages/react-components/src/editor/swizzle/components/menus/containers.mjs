@@ -36,11 +36,6 @@ export const MenuItem = ({
   // Local state - whether the override input should be shown
   const [override, setOverride] = useState(false)
 
-  if (!config) {
-    console.log('no config in containers', { name, current, config })
-    return null
-  }
-
   // generate properties to pass to the Input
   const drillProps = useMemo(
     () => ({
@@ -57,6 +52,11 @@ export const MenuItem = ({
     }),
     [name, config, current, updateHandler, changed, override, passProps, ux]
   )
+
+  if (!config) {
+    console.log('no config in containers', { name, current, config })
+    return null
+  }
 
   // don't render if this item is more advanced than the user has chosen to see
   if (config.ux && config.ux > ux) return null
@@ -138,7 +138,6 @@ export const MenuItem = ({
 export const MenuItemGroup = ({
   collapsible = true,
   ux,
-  name,
   currentValues = {},
   structure,
   Icon,
@@ -257,11 +256,11 @@ export const MenuItemGroup = ({
  */
 export const MenuItemTitle = ({
   name,
-  t,
   current = null,
   open = false,
   emoji = '',
   Icon = false,
+  Swizzled,
 }) => (
   <div className={`flex flex-row gap-1 items-center w-full ${open ? '' : 'justify-between'}`}>
     <span className="font-medium capitalize flex flex-row gap-2">

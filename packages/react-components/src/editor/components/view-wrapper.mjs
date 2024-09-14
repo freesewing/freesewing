@@ -14,23 +14,19 @@ import { useState } from 'react'
  * @param {object} props.design - A design name to force the editor to use this design
  * @param {object} props.Swizzled - An object holding swizzled code
  */
-export const ViewWrapper = ({
-  designs = {},
-  preload = {},
-  locale = 'en',
-  design = false,
-  Swizzled,
-}) => {
+export const ViewWrapper = ({ designs = {}, preload = {}, design = false, Swizzled }) => {
   /*
    * Ephemeral state will not be stored in the state backend
    * It is used for things like loading state and so on
    */
   const [ephemeralState, setEphemeralState] = useState({})
   // Editor state
-  const [state, setState, update] = Swizzled.hooks.useEditorState(
+  const allState = Swizzled.hooks.useEditorState(
     Swizzled.methods.initialEditorState(preload),
     setEphemeralState
   )
+  const state = allState[0]
+  const update = allState[2]
 
   // Don't bother before state is initialized
   if (!state) return <Swizzled.components.TemporaryLoader />
@@ -90,10 +86,9 @@ export const ViewWrapper = ({
  * @param (object) props - All the props
  * @param {object} props.design - The (name of the) current design
  * @param {object} props.designs - An object holding all designs
- * @param {object} props.preload - Object holding state to preload
  * @param (object) props.state - React state passed down from the wrapper view
  */
-const viewfinder = ({ design, designs, preload, state, Swizzled }) => {
+const viewfinder = ({ design, designs, state, Swizzled }) => {
   /*
    * Grab Design from props or state and make them extra props
    */

@@ -120,16 +120,15 @@ export const CoreSetting = ({
   )
 }
 
-export const ClearAllButton = ({ setSettings, compact = false }) => {
-  const { t } = useTranslation('core-settings')
+export const ClearAllButton = ({ setSettings, compact = false, Swizzled }) => {
   return (
     <div className={`${compact ? '' : 'text-center mt-8'}`}>
       <button
         className={`justify-self-center btn btn-error btn-outline ${compact ? 'btn-sm' : ''}`}
         onClick={() => setSettings({})}
       >
-        <TrashIcon />
-        {t('clearSettings')}
+        <Swizzled.components.TrashIcon />
+        {Swizzled.methods.t('clearSettings')}
       </button>
     </div>
   )

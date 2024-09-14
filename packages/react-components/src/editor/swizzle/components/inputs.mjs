@@ -162,39 +162,6 @@ export const StringInput = ({
 )
 
 /*
- * Dropdown for designs
- */
-export const DesignDropdown = ({
-  label, // Label to use
-  update, // onChange handler
-  current, // The current value
-  docs = false, // Docs to load, if any
-  firstOption = null, // Any first option to add in addition to designs
-  id = '', // An id to tie the input to the label
-  Swizzled, // Swizzled code
-}) => {
-  const { t } = Swizzled.methods
-
-  return (
-    <Swizzled.components.FormControl label={label} docs={docs} forId={id}>
-      <select
-        id={id}
-        className="select select-bordered w-full"
-        onChange={(evt) => update(evt.target.value)}
-        value={current}
-      >
-        {firstOption}
-        {collection.map((design) => (
-          <option key={design} value={design}>
-            {t(`${design}.t`)}
-          </option>
-        ))}
-      </select>
-    </Swizzled.components.FormControl>
-  )
-}
-
-/*
  * Input for a list of things to pick from
  */
 export const ListInput = ({

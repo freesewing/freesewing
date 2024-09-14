@@ -4,7 +4,7 @@ export const AuthMessageWrapper = ({ children }) => (
   <div className="m-auto max-w-xl text-center mt-8 p-8">{children}</div>
 )
 
-export const ContactSupport = ({ t }) => (
+export const ContactSupport = ({ t, Swizzled }) => (
   <div className="flex flex-row items-center justify-center gap-4 mt-8">
     <Swizzled.components.Link href="/support" className="btn btn-success w-full">
       {t('contactSupport')}
@@ -50,7 +50,7 @@ export const AccountInactive = ({ t, banner, Swizzled }) => (
   </Swizzled.components.AuthMessageWrapper>
 )
 
-export const AccountDisabled = ({ t, banner }) => (
+export const AccountDisabled = ({ t, banner, Swizzled }) => (
   <Swizzled.components.AuthMessageWrapper>
     {banner}
     <h1>{t('accountDisabled')}</h1>
@@ -59,7 +59,7 @@ export const AccountDisabled = ({ t, banner }) => (
   </Swizzled.components.AuthMessageWrapper>
 )
 
-export const AccountProhibited = ({ t, banner }) => (
+export const AccountProhibited = ({ t, banner, Swizzled }) => (
   <Swizzled.components.AuthMessageWrapper>
     {banner}
     <h1>{t('accountProhibited')}</h1>
@@ -68,7 +68,7 @@ export const AccountProhibited = ({ t, banner }) => (
   </Swizzled.components.AuthMessageWrapper>
 )
 
-export const AccountStatusUnknown = ({ t, banner }) => (
+export const AccountStatusUnknown = ({ t, banner, Swizzled }) => (
   <Swizzled.components.AuthMessageWrapper>
     {banner}
     <h1>{t('statusUnknown')}</h1>
@@ -77,7 +77,7 @@ export const AccountStatusUnknown = ({ t, banner }) => (
   </Swizzled.components.AuthMessageWrapper>
 )
 
-export const RoleLacking = ({ t, requiredRole, role, banner }) => (
+export const RoleLacking = ({ t, requiredRole, role, banner, Swizzled }) => (
   <Swizzled.components.AuthMessageWrapper>
     {banner}
     <h1>{t('roleLacking')}</h1>
@@ -86,9 +86,9 @@ export const RoleLacking = ({ t, requiredRole, role, banner }) => (
   </Swizzled.components.AuthMessageWrapper>
 )
 
-export const ConsentLacking = ({ banner, refresh }) => {
-  const { setAccount, setToken, setSeenUser } = useAccount()
-  const backend = useBackend()
+export const ConsentLacking = ({ banner, refresh, Swizzled }) => {
+  const { setAccount, setToken, setSeenUser } = Swizzled.hooks.useAccount()
+  const backend = Swizzled.hooks.useBackend()
 
   const updateConsent = async ({ consent1, consent2 }) => {
     let consent = 0
@@ -112,7 +112,8 @@ export const ConsentLacking = ({ banner, refresh }) => {
     <Swizzled.components.AuthMessageWrapper>
       <div className="text-left">
         {banner}
-        <ConsentForm submit={updateConsent} />
+        <p>FIXME: Handle content form</p>
+        {/*<ConsentForm submit={updateConsent} />*/}
       </div>
     </Swizzled.components.AuthMessageWrapper>
   )

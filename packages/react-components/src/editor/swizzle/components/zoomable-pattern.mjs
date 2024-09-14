@@ -4,7 +4,7 @@ import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch'
 /*
  * A pattern you can pan and zoom
  */
-export const ZoomablePattern = forwardRef((props, ref) => {
+export const ZoomablePattern = forwardRef(function ZoomablePatternRef(props, ref) {
   const { renderProps, Swizzled, rotate } = props
   const { onTransformed, setZoomFunctions } = useContext(ZoomContext)
 

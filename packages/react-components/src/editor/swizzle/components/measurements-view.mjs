@@ -17,14 +17,7 @@ const iconClasses = { className: 'w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink
  * @param {Array} props.missingMeasurements - List of missing measurements for the current design
  * @return {Function} MeasurementsView - React component
  */
-export const MeasurementsView = ({
-  Design,
-  design,
-  missingMeasurements,
-  update,
-  Swizzled,
-  state,
-}) => {
+export const MeasurementsView = ({ Design, missingMeasurements, update, Swizzled, state }) => {
   // Swizzled components
   const {
     Accordion,
@@ -54,7 +47,7 @@ export const MeasurementsView = ({
     if (state._.missingMeasurements && state._.missingMeasurements.length > 0)
       update.notify({ msg: t('pe:missingMeasurementsNotify'), icon: 'tip' }, 'missingMeasurements')
     else update.notifySuccess(t('pe:measurementsAreOk'))
-  }, [state.view])
+  }, [state.view, update])
 
   const loadMeasurements = (set) => {
     update.settings(['measurements'], designMeasurements(Design, set.measies))

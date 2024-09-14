@@ -9,9 +9,7 @@ import orderBy from 'lodash.orderby'
  * @param {object} designs - Object holding all designs
  * @param {object} update - ViewWrapper state update object
  */
-export const UndosView = ({ designs, design, Design, Swizzled, update, state }) => {
-  const [showDev, setShowDev] = useState(false)
-
+export const UndosView = ({ Design, Swizzled, update, state }) => {
   const steps = orderBy(state._.undos, 'time', 'desc')
 
   return (

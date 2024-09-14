@@ -10,7 +10,6 @@ export const IconWrapper = ({
   children = null,
   fill = false,
   fillOpacity = 1,
-  strokeOpacity = 1,
   dasharray = null,
   wrapped = true,
 }) =>

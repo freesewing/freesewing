@@ -15,7 +15,7 @@ import { designs } from 'site/hooks/use-design.mjs'
 // Translation namespaces used on this page
 const ns = nsMerge(pageNs, editorNs)
 
-const PatternEditorPage = ({ page, docs }) => {
+const PatternEditorPage = ({ page }) => {
   const { t } = useTranslation(ns)
   const router = useRouter()
   const { locale } = router

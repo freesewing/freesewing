@@ -36,7 +36,7 @@ export const Tabs = ({ tabs = '', active = 0, children, withModal = false, Swizz
               key={tabId}
               className={btnClasses}
               onClick={() =>
-                setModal(
+                Swizzled.methods.setModal(
                   <Swizzled.components.ModalWrapper
                     flex="col"
                     justify="top lg:justify-center"

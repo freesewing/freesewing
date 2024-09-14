@@ -10,7 +10,7 @@
  * @param {object} props.Swizzled - An object holding swizzled code
  * @return {function} DraftView - React component
  */
-export const DraftView = ({ Design, missingMeasurements, state, update, Swizzled }) => {
+export const DraftView = ({ Design, state, update, Swizzled }) => {
   /*
    * Don't trust that we have all measurements
    *

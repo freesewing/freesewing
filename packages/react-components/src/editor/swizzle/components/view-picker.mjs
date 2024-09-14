@@ -8,7 +8,7 @@ import { useState } from 'react'
  * @param {object} designs - Object holding all designs
  * @param {object} update - ViewWrapper state update object
  */
-export const ViewPicker = ({ designs, design, Design, Swizzled, update, state }) => {
+export const ViewPicker = ({ Design, Swizzled, update, state }) => {
   const [showDev, setShowDev] = useState(false)
 
   /*

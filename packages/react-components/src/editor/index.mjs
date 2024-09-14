@@ -39,7 +39,7 @@ export const PatternEditor = (props) => {
       merged.hooks = swizzleHooks(props.hooks, merged)
       setSwizzled(merged)
     }
-  }, [swizzled])
+  }, [swizzled, props.components, props.config, props.hooks, props.methods])
 
   if (!swizzled?.hooks) return <UnswizzledTemporaryLoader />
   /*

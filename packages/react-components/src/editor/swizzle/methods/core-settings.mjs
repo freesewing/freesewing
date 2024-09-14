@@ -41,7 +41,7 @@ export function menuCoreSettingsSaboolHandler(Swizzled, { toggleSa }) {
 }
 export function menuCoreSettingsStructure(
   Swizzled,
-  { language = 'en', units = 'metric', sabool = false, parts = [] }
+  { units = 'metric', sabool = false, parts = [] }
 ) {
   return {
     sabool: {
