@@ -86,9 +86,9 @@ export const RoleLacking = ({ t, requiredRole, role, banner, Swizzled }) => (
   </Swizzled.components.AuthMessageWrapper>
 )
 
-export const ConsentLacking = ({ banner, refresh, Swizzled }) => {
-  const { setAccount, setToken, setSeenUser } = Swizzled.hooks.useAccount()
-  const backend = Swizzled.hooks.useBackend()
+export const ConsentLacking = ({ banner, Swizzled }) => {
+  //const { setAccount, setToken, setSeenUser } = Swizzled.hooks.useAccount()
+  //const backend = Swizzled.hooks.useBackend()
 
   //const updateConsent = async ({ consent1, consent2 }) => {
   //  let consent = 0
