@@ -7,5 +7,5 @@ author: auxsuivants
 designs: ["umbra"]
 ---
 
-I've been wanting to attempt a pair of these forever, but i've had so many other projects going. But I finally got to them tonight and they're definitely comfy and cute as all hell. Gonna be  making a lot more of these <3
+I've been wanting to attempt a pair of these forever, but i've had so many other projects going. But I finally got to them tonight and they're definitely comfy and cute as all hell. Gonna be  making a lot more of these &lt;3
 
