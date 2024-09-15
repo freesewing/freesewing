@@ -61,7 +61,7 @@ import { Waralee as waralee } from '@freesewing/waralee'
 import { Yuri as yuri } from '@freesewing/yuri'
 import { Lily as lily } from '@freesewing/lily'
 
-const designs = {
+export const designs = {
   aaron,
   albert,
   bee,

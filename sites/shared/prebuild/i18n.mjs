@@ -9,16 +9,46 @@ import { designs as sdeDesigns } from '../i18n/sde-designs.mjs'
 import { plugins } from '../i18n/plugins.mjs'
 
 /*
+ * This holds aliases for namespaces so we can write them shorter
+ */
+const shorterNs = {
+  editor: 'pe',
+}
+
+/*
+ * Helper method to shorten certain namespaces to something ... shorter
+ */
+const shortenNamespace = (ns) => (shorterNs[ns] ? shorterNs[ns] : ns)
+
+/*
  * This is where we configure what folders we should check for
  * code-adjacent translation source files
  */
 const sitesFolder = path.join(fileURLToPath(import.meta.url), '..', '..', '..')
+const reactFolder = path.join(
+  fileURLToPath(import.meta.url),
+  '..',
+  '..',
+  '..',
+  '..',
+  'packages',
+  'react-components',
+  'src'
+)
 export const folders = {
   backend: [path.join(sitesFolder, 'backend', 'src', 'templates', 'email')],
-  org: [path.join(sitesFolder, 'org', 'pages'), path.join(sitesFolder, 'org', 'components')],
+  org: [
+    path.join(sitesFolder, 'org', 'pages'),
+    path.join(sitesFolder, 'org', 'components'),
+    reactFolder,
+  ],
   dev: [path.join(sitesFolder, 'dev', 'pages'), path.join(sitesFolder, 'dev', 'components')],
-  lab: [path.join(sitesFolder, 'lab', 'pages'), path.join(sitesFolder, 'lab', 'components')],
-  sde: [path.join(sitesFolder, 'sde', 'pages')],
+  lab: [
+    path.join(sitesFolder, 'lab', 'pages'),
+    path.join(sitesFolder, 'lab', 'components'),
+    reactFolder,
+  ],
+  sde: [path.join(sitesFolder, 'sde', 'pages'), reactFolder],
   shared: [
     path.join(sitesFolder, 'shared', 'components'),
     path.join(sitesFolder, 'shared', 'i18n'),
@@ -79,7 +109,7 @@ const getI18nFileList = async (site, languages) => {
  */
 const languageAndNamespaceFromFilename = (file) => [
   path.basename(file).split('.')[0],
-  path.dirname(file).split('/').pop(),
+  shortenNamespace(path.dirname(file).split('/').pop()),
 ]
 
 /*

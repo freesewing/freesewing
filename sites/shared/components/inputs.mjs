@@ -530,8 +530,8 @@ export const MeasieInput = ({
     typeof original === 'undefined'
       ? original
       : isDegree
-        ? Number(original)
-        : measurementAsUnits(original, units)
+      ? Number(original)
+      : measurementAsUnits(original, units)
   )
   const [validatedVal, setValidatedVal] = useState(measurementAsUnits(original, units))
   const [valid, setValid] = useState(null)

@@ -5,8 +5,7 @@ import { useTranslation } from 'next-i18next'
 import { WrenchIcon } from 'shared/components/icons.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
 // Dependencies
-import { utils } from 'pkgs/react-components/src/index.mjs'
-const { getId } = utils
+import { getId } from 'pkgs/react-components/src/index.mjs'
 import orderBy from 'lodash.orderby'
 import { stackInfo } from './stack.mjs'
 import { pathInfo } from './path.mjs'
