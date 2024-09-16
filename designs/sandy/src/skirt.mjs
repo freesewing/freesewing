@@ -113,9 +113,13 @@ function sandySkirt({
   if (sa) {
     paths.hemBase = new Path()
       .move(points.ex2Flipped)
-      .circleSegment(angle, points.center)
+      .curve(points.ex2cFlipped, points.ex1cFlipped, points.ex1)
+      .curve(points.ex1c, points.ex2c, points.ex2)
       .offset(store.get('fullLength') * options.lengthBonus * options.hemWidth)
-    paths.saBase = new Path().move(points.in2).circleSegment(-angle, points.center)
+    paths.saBase = new Path()
+      .move(points.in2)
+      .curve(points.in2c, points.in1c, points.in1)
+      .curve(points.in1cFlipped, points.in2cFlipped, points.in2Flipped)
 
     if (!options.seamlessFullCircle)
       paths.saBase = new Path().move(points.ex2).line(points.ex2).join(paths.saBase)
