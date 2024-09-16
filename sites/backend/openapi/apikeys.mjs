@@ -148,15 +148,12 @@ paths['/apikeys/{key}/{auth}'] = {
           apikey: local.response.body.regular,
         }),
       },
-      401: response.status['401'],
       403: {
         ...response.status['403'],
         description:
-          response.status['403'].description +
-          errorExamples(['accountStatusLacking', 'insufficientAccessLevel']),
+          response.status['403'].description + errorExamples(['insufficientAccessLevel']),
       },
       404: response.status['404'],
-      500: response.status['500'],
     },
   },
   // Remove API key
