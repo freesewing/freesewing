@@ -24,6 +24,11 @@ The [waist to armpit](https://freesewing.org/docs/measurements/waisttoarmpit) is
 
 ![Waist to armpit](waisttoarmpit.jpg) 
 
+The waist to armpit measurement is used to calculate where the bottom
+of the sleeve opening is located. An incorrect, too-large
+waist to armpit measurement can result in a too-small sleeve opening
+and too-narrow sleeves.
+
 #### High point shoulder (HPS)
 
 [HPS](https://freesewing.org/docs/sewing/hps), which is used in several measurements, is one of the harder spots to get perfect.
@@ -50,6 +55,12 @@ Another way is with a ribbon. Take a longer ribbon and put it over your neck/sho
 
 Many have had luck using an inclinometer app on a smartphone to measure [shoulder slope](https://freesewing.org/docs/measurements/shoulderslope).
 
+Another way to measure shoulder slope is to take a photo.
+1. Measure the shoulder slope angle directly on the photo, or
+2. Use photo-editing software to rotate the photo until the
+shoulder is horizontal. The software should tell you how many degrees
+of rotation was used.
+
 #### Seat and hips
 
 Sometimes people have [seat](https://freesewing.org/docs/measurements/seat) and [hips](https://freesewing.org/docs/measurements/hips) reversed.
@@ -58,8 +69,31 @@ In FreeSewing terms, hips is measured at the upper point of the hip bones. Some 
 
 Seat is across the fullest part of your butt. Some other sources call this the "hip".
 
-##### Waist
+#### Waist
 
-Where you take the [waist](https://freesewing.org/docs/measurements/waist) measurements is not necessarily connected to where, for instance, a waistband is.
+The [waist](https://freesewing.org/docs/measurements/waist) measurement
+is important, and unfortunately it is also one of the most difficult
+measurements to take correctly.
+
+The location of the waist is not related to where the waistband on pants
+or trousers sits.
+Most trousers waistbands are located much lower than the actual waist.
+
+Instead, the waist is the location on the body that is sometimes known as
+the "natural waist".
+- It is sometimes described as the narrowest part of your torso.
+- Other times it is described as the point where the upper body bends
+when you bend sideways.
+- Often it is higher up on the torso than people expect, closer to the
+ribcage than it is to the hips.
 
 Try bending sideways and noting the point where your body creases. (For bonus points, put your hand on your waist and sing "I'm a little teapot".)
+
+Or, take a length of 3/4-inch wide elastic and sew the ends together
+into a band that is slightly smaller than your waist circumference.
+Slip the elastic band around your torso and start bending, moving, and
+walking around.
+The elastic band should naturally slip into place at your waist.
+(Keep wearing this elastic band as you take other measurements, as
+a reference for where your waistline is located.
+It will make it easier to take other waist-related measurements.)
