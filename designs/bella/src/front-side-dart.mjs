@@ -15,6 +15,7 @@ export const frontSideDart = {
     macro,
     utils,
     measurements,
+    log,
     part,
   }) => {
     // Get to work
@@ -152,6 +153,16 @@ export const frontSideDart = {
     let reduce = points.cfHem.dist(points.sideHemInitial) - hemLen
 
     // Waist dart
+    let includeWaistDart = true
+    if (reduce <= 0) {
+      includeWaistDart = false
+      log.info(
+        '`' +
+          part.name +
+          '`: Front waist dart omitted (because the calculated dart' +
+          ' width was 0.0 mm/inches or less).'
+      )
+    }
     points.waistDartHem = new Point(points.bust.x, points.cfHem.y)
     points.waistDartLeft = points.waistDartHem.shift(180, reduce / 2)
     points.waistDartRight = points.waistDartHem.shift(0, reduce / 2)
@@ -168,11 +179,14 @@ export const frontSideDart = {
       points.waistDartHem.dist(points.bust) / 2
     )
 
-    paths.seam = new Path()
-      .move(points.cfHem)
-      .line(points.waistDartLeft)
-      .curve_(points.waistDartLeftCp, points.waistDartTip)
-      ._curve(points.waistDartRightCp, points.waistDartRight)
+    paths.seam = new Path().move(points.cfHem)
+    if (includeWaistDart)
+      paths.seam
+        .line(points.waistDartLeft)
+        .curve_(points.waistDartLeftCp, points.waistDartTip)
+        ._curve(points.waistDartRightCp, points.waistDartRight)
+        .line(points.waistDartRight)
+    paths.seam
       .line(points.sideHem)
       .line(points.bustDartBottom)
       ._curve(points.bustDartCpBottom, points.bustDartTip)
@@ -186,10 +200,9 @@ export const frontSideDart = {
       .close()
       .attr('class', 'fabric')
 
-    paths.saBase = new Path()
-      .move(points.cfHem)
-      .line(points.waistDartLeft)
-      .line(points.waistDartRight)
+    paths.saBase = new Path().move(points.cfHem)
+    if (includeWaistDart) paths.saBase.line(points.waistDartLeft).line(points.waistDartRight)
+    paths.saBase
       .line(points.sideHem)
       .line(points.bustDartBottom)
       .line(points.bustDartEdge)
@@ -248,29 +261,33 @@ export const frontSideDart = {
     })
 
     // Dimensions
-    macro('vd', {
-      id: 'hCfHemToWaistDartTop',
-      from: points.cfHem,
-      to: points.waistDartTip,
-      x: 0 - 15,
-    })
+    let dimensionOffset = 0
+    if (includeWaistDart) {
+      dimensionOffset = 15
+      macro('vd', {
+        id: 'hCfHemToWaistDartTop',
+        from: points.cfHem,
+        to: points.waistDartTip,
+        x: 0 - 15,
+      })
+    }
     macro('vd', {
       id: 'hCfHemToBustPoint',
       from: points.cfHem,
       to: points.bust,
-      x: 0 - 30,
+      x: 0 - 15 - dimensionOffset,
     })
     macro('vd', {
       id: 'hCfHemToNeckCutout',
       from: points.cfHem,
       to: points.cfNeck,
-      x: 0 - 45,
+      x: 0 - 30 - dimensionOffset,
     })
     macro('vd', {
       id: 'hTotal',
       from: points.cfHem,
       to: points.hps,
-      x: 0 - 60,
+      x: 0 - 45 - dimensionOffset,
     })
     macro('hd', {
       id: 'wCfToWaistDartTip',
@@ -284,35 +301,39 @@ export const frontSideDart = {
       to: points.bustDartTip,
       y: points.bust.y - 30,
     })
-    macro('hd', {
-      id: 'wCfToWaistDartLeft',
-      from: points.cfHem,
-      to: points.waistDartLeft,
-      y: points.cfHem.y + sa + 15,
-    })
-    macro('hd', {
-      id: 'wCfToWaistDartRight',
-      from: points.cfHem,
-      to: points.waistDartRight,
-      y: points.cfHem.y + sa + 30,
-    })
+    dimensionOffset = 0
+    if (includeWaistDart) {
+      dimensionOffset = 30
+      macro('hd', {
+        id: 'wCfToWaistDartLeft',
+        from: points.cfHem,
+        to: points.waistDartLeft,
+        y: points.cfHem.y + sa + 15,
+      })
+      macro('hd', {
+        id: 'wCfToWaistDartRight',
+        from: points.cfHem,
+        to: points.waistDartRight,
+        y: points.cfHem.y + sa + 30,
+      })
+    }
     macro('hd', {
       id: 'wHemTotal',
       from: points.cfHem,
       to: points.sideHem,
-      y: points.cfHem.y + sa + 45,
+      y: points.cfHem.y + sa + 15 + dimensionOffset,
     })
     macro('hd', {
       id: 'wCfHemToBustDartBottom',
       from: points.cfHem,
       to: points.bustDartBottom,
-      y: points.cfHem.y + sa + 60,
+      y: points.cfHem.y + sa + 30 + dimensionOffset,
     })
     macro('hd', {
       id: 'wCfHemToBustDartTop',
       from: points.cfHem,
       to: points.bustDartTop,
-      y: points.cfHem.y + sa + 75,
+      y: points.cfHem.y + sa + 45 + dimensionOffset,
     })
     macro('vd', {
       id: 'hHemRightToBustDartBottom',
