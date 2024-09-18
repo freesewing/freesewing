@@ -61,6 +61,8 @@ For example because you are splitting a `Path` on its start or end point.
 [null, Path]
 // Return value when calling Path.split() on/near the path's end point
 [Path, null]
+// Return value when calling Path.split() with a point not on the path
+[null, null]
 ```
 
 ### This method will snap the split point to start or end points
