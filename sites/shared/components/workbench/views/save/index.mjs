@@ -121,8 +121,8 @@ export const SaveView = ({ design, settings, setView, saveAs }) => {
                 <h5>{t('workbend:patternSaved')}</h5>
                 {t('workbench:see')}:{' '}
                 <PageLink
-                  href={`/account/patterns/${savedId}`}
-                  txt={`/account/patterns/${savedId}`}
+                  href={`/account/pattern?id=${savedId}`}
+                  txt={`/account/pattern?id=${savedId}`}
                 />
               </Popout>
             )}
