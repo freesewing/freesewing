@@ -31,7 +31,7 @@ export const back = {
     waistEase: { pct: 5, min: 1, max: 20, menu: 'fit' },
     // Darts
     backDartHeight: { pct: 46, min: 38, max: 54, menu: 'darts' },
-    bustDartCurve: { pct: 100, min: 0, max: 100, menu: 'darts' },
+    bustDartCurve: { pct: 100, min: -100, max: 100, menu: 'darts' },
     bustDartLength: { pct: 90, min: 75, max: 100, menu: 'darts' },
     waistDartLength: { pct: 90, min: 75, max: 95, menu: 'darts' },
     // Armhole
