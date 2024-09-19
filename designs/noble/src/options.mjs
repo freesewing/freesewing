@@ -4,6 +4,8 @@ import { pctBasedOn } from '@freesewing/core'
 export const shoulderToShoulderCorrection = 0.995
 export const bustDartCurve = 1
 export const bustDartLength = 0.9
+export const bustDartAngle = 0
+export const bustDartMinimumFabric = 0
 // Percentages
 export const bustSpanEase = { pct: 0, min: -5, max: 20, ...pctBasedOn('bustSpan'), menu: 'fit' }
 export const backHemSlope = { deg: 2.5, min: 0, max: 5, menu: 'advanced' }
