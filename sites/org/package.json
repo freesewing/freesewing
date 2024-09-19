@@ -45,7 +45,7 @@
     "lodash.get": "4.4.2",
     "lodash.orderby": "4.6.0",
     "lodash.set": "4.3.2",
-    "luxon": "3.4.4",
+    "luxon": "3.5.0",
     "next": "14.2.12",
     "next-i18next": "15.3.1",
     "ora": "8.0.1",
