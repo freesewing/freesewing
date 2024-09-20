@@ -5,7 +5,8 @@ function draftBentSleeve({ Path, paths, points, store, options, part }) {
     let { Point, Path, points, store, options, measurements, utils } = part.shorthand()
     // Sleeve frame
     points.top = new Point(0, 0)
-    points.boxTopRight = points.top.shift(0, (store.get('sleevecapTarget') / 5.8) * tweak)
+    const easedQuarterBiceps = (measurements.biceps / 4) * (1 + options.bicepsEase)
+    points.boxTopRight = points.top.shift(0, easedQuarterBiceps * tweak)
     points.boxTopLeft = points.boxTopRight.flipX()
     points.boxBottom = points.top.shift(
       -90,
