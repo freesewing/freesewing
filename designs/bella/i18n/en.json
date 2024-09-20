@@ -50,6 +50,10 @@
       "t": "Bust dart curve",
       "d": "Controls the curvature of the bust dart"
     },
+    "waistDartCurve": {
+      "t": "Waist dart curve",
+      "d": "Controls the curvature of the waist dart"
+    },
     "armholeDepth": {
       "t": "Armhole depth",
       "d": "Controls the depth of the armhole"
