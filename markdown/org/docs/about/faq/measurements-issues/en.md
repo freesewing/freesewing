@@ -117,7 +117,8 @@ Now try bending from side to side (think "I'm a little teapot" movements),
 or otherwise moving and walking around to see if the elastic band
 naturally slips into place at the natural waist.
 Or, if this is uncomfortable or does not work, you can simply place
-the elastic band at the location of your natural waist.
+the elastic band at the location you think most accurately denotes
+your natural waist.
 
 Keep wearing this elastic band as you take other measurements, as
 a consistent reference for the location of the waistline.
