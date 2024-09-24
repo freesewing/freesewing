@@ -13,6 +13,7 @@ Object settings = {
   Object absoluteOptions,
   Boolean complete=true,
   Boolean embed=false,
+  Boolean expand=true,
   String idPrefix='fs-',
   Object|Boolean layout=true,
   String locale='en',

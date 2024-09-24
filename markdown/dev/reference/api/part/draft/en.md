@@ -26,6 +26,7 @@ access the following properties:
 || **_Access to settings_** |
 | `absoluteOptions` | Access to `settings.absoluteOptions` |
 | `complete`        | Access to `settings.complete` |
+| `expand`          | Access to `settings.expand` |
 | `measurements`    | Access to `settings.measurements` |
 | `options`         | Access to `settings.options` |
 | `paperless`       | Access to `settings.paperless` |
