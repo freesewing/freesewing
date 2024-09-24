@@ -23,4 +23,10 @@ undefined Store.flag.tip({
 
 Since these methods are not part of FreeSewing's core API, what you pass to this method does depend on your own implementation.
 
-For a more detailed example of how we use this, see [flag.info()](/reference/store-methods/flag.info).
+<Related>
+
+The above Signature contains abbreviated information.
+For full details about this method's Signature, Configuration, and
+Example usage, see [flag.info()](/reference/store-methods/flag.info).
+
+</Related>
