@@ -94,32 +94,60 @@ export function beamIntersectsY(from, to, y) {
  * @param {Point} a2 - Point 2 of line A
  * @param {Point} b1 - Point 1 of line B
  * @param {Point} b2 - Point 2 of line B
- * @return {Point} intersections - The Point at the intersection
+ * @return {Point|false} intersections - The Point at the intersection or `false` if the lines are parallel
  */
 export function beamsIntersect(a1, a2, b1, b2) {
-  let slopeA = a1.slope(a2)
-  let slopeB = b1.slope(b2)
-  if (slopeA === slopeB) return false // Parallel lines
+  const intersection = beamIntersection(a1, a2, b1, b2)
+  if (!intersection) return false
+  return intersection.p
+}
 
-  // Check for vertical line A
-  if (Math.round(a1.x * 10000) === Math.round(a2.x * 10000))
-    return new Point(a1.x, slopeB * a1.x + (b1.y - slopeB * b1.x))
-  // Check for vertical line B
-  else if (Math.round(b1.x * 10000) === Math.round(b2.x * 10000))
-    return new Point(b1.x, slopeA * b1.x + (a1.y - slopeA * a1.x))
-  else {
-    // Swap points if line A or B goes from right to left
-    if (a1.x > a2.x) a1 = a2.copy()
-    if (b1.x > b2.x) b1 = b2.copy()
-    // Find y intercept
-    let iA = a1.y - slopeA * a1.x
-    let iB = b1.y - slopeB * b1.x
+/**
+ * Finds the intersection of two endless lines (beams)
+ *
+ * @param {Point} a1 - Point 1 of line A
+ * @param {Point} a2 - Point 2 of line A
+ * @param {Point} b1 - Point 1 of line B
+ * @param {Point} b2 - Point 2 of line B
+ * @return {{p:Point, t: number, u:number}|false} the intersection.
+ * The method will return `false` if the lines are (approximately) parallel or undefined,
+ * e.g., if both points of a line have (approximately) the same coordinate.
+ * Otherwise, p is the point of the intersection,
+ * t and u determine where the intersection lies relative to the points of line A and line B respectively.
+ * 0.0 means the intersection is on the first point, 1.0 on the second point.
+ */
+function beamIntersection(a1, a2, b1, b2) {
+  // Function to compute the cross-product of two vectors
+  function crossProduct(v1, v2) {
+    return v1.x * v2.y - v1.y * v2.x
+  }
 
-    // Find intersection
-    let x = (iB - iA) / (slopeA - slopeB)
-    let y = slopeA * x + iA
+  // Vector from a1 to a2
+  const r = { x: a2.x - a1.x, y: a2.y - a1.y }
+  // Vector from b1 to b2
+  const s = { x: b2.x - b1.x, y: b2.y - b1.y }
 
-    return new Point(x, y)
+  // Vector from a1 to b1
+  const ab = { x: b1.x - a1.x, y: b1.y - a1.y }
+
+  // Compute the cross-product of r and s
+  const rCrossS = crossProduct(r, s)
+
+  // If the cross-product is close to zero, the lines are parallel or nearly parallel
+  const EPSILON = 1e-10 // small threshold to handle numerical stability
+  if (Math.abs(rCrossS) < EPSILON) {
+    return false // The lines are parallel (or almost parallel), or the points had (almost) the same coordinate
+  }
+
+  // Compute the parameters t and u where the beams intersect
+  const t = crossProduct(ab, s) / rCrossS
+  const u = crossProduct(ab, r) / rCrossS
+
+  // Compute the intersection point using a1 + t * r and return result
+  return {
+    p: new Point(a1.x + t * r.x, a1.y + t * r.y),
+    t: t,
+    u: u,
   }
 }
 
@@ -133,12 +161,28 @@ export function beamsIntersect(a1, a2, b1, b2) {
  * @param {Point} cp1 - Control Point at the start of the curve
  * @param {Point} cp2 - Control Point at the end of the curve
  * @param {Point} to - End Point of the curve
- * @return {Array} intersections - An array of Points at the intersections
+ * @return {false|Point|Array} intersections - false if no intersections, else a singular point or an array of Points at the intersections
  */
 export function beamIntersectsCurve(start, end, from, cp1, cp2, to) {
-  let _start = new Point(start.x + (start.x - end.x) * 1000, start.y + (start.y - end.y) * 1000)
-  let _end = new Point(end.x + (end.x - start.x) * 1000, end.y + (end.y - start.y) * 1000)
-  return lineIntersectsCurve(_start, _end, from, cp1, cp2, to)
+  let intersections = []
+  let bz = new Bezier(
+    { x: from.x, y: from.y },
+    { x: cp1.x, y: cp1.y },
+    { x: cp2.x, y: cp2.y },
+    { x: to.x, y: to.y }
+  )
+  let line = {
+    p1: { x: start.x, y: start.y },
+    p2: { x: end.x, y: end.y },
+  }
+  for (let t of Bezier.getUtils().roots(bz.points, line)) {
+    let isect = bz.get(t)
+    intersections.push(new Point(isect.x, isect.y))
+  }
+
+  if (intersections.length === 0) return false
+  else if (intersections.length === 1) return intersections[0]
+  else return intersections
 }
 
 /**
@@ -410,14 +454,29 @@ export function lineIntersectsCircle(c, r, p1, p2, sort = 'x') {
  * @return {Point} intersection - The Point at the intersection
  */
 export function linesIntersect(a1, a2, b1, b2) {
-  let p = beamsIntersect(a1, a2, b1, b2)
-  if (!p) return false
-  let lenA = a1.dist(a2)
-  let lenB = b1.dist(b2)
-  let lenC = a1.dist(p) + p.dist(a2)
-  let lenD = b1.dist(p) + p.dist(b2)
-  if (Math.round(lenA) == Math.round(lenC) && Math.round(lenB) == Math.round(lenD)) return p
-  else return false
+  const intersection = beamIntersection(a1, a2, b1, b2)
+  if (!intersection) return false
+  const EPSILON = 1e-10
+  if (intersection.t < -EPSILON || intersection.t > 1 + EPSILON) return false // outside of line segment A
+  if (intersection.u < -EPSILON || intersection.u > 1 + EPSILON) return false // outside of line segment B
+  return intersection.p
+}
+
+/**
+ * Finds the intersection of a beam and a line segment
+ *
+ * @param {Point} a1 - Point 1 of beam
+ * @param {Point} a2 - Point 2 of beam
+ * @param {Point} b1 - Point 1 of line segment
+ * @param {Point} b2 - Point 2 of line segment
+ * @return {Point} intersection - The Point at the intersection
+ */
+export function beamIntersectsLine(a1, a2, b1, b2) {
+  const intersection = beamIntersection(a1, a2, b1, b2)
+  if (!intersection) return false
+  const EPSILON = 1e-10
+  if (intersection.u < -EPSILON || intersection.u > 1 + EPSILON) return false // outside of line segment
+  return intersection.p
 }
 
 /**
@@ -429,7 +488,7 @@ export function linesIntersect(a1, a2, b1, b2) {
  * @param {Point} cp1 - Control Point at the start of the curve
  * @param {Point} cp2 - Control Point at the end of the curve
  * @param {Point} to - End Point of the curve
- * @return {Array} intersections - An array of Points at the intersections
+ * @return {false|Point|Array} intersections - false if no intersections, else a singular point or an array of Points at the intersections
  */
 export function lineIntersectsCurve(start, end, from, cp1, cp2, to) {
   let intersections = []
