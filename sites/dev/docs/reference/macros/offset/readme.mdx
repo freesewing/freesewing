@@ -1,0 +1,84 @@
+---
+title: offset
+---
+
+The `offset` macro will offset and join paths.
+
+Unlike the core `path.join(...)` and `path.offset(...)` functions, the `offset` macro can extend line ends to meet in a sharp corner and will automatically
+trim useless path ends when adjacent paths in the array are intersecting.
+
+The offset macro accepts an array of `Path` objects with their offset, like `{p: 'somePath', offset: 30}` or `{p: ['path1', 'path2'], offset: sa * 3, hidden: true}`.
+For the paths in the `p` attribute, you can reference either names in the `paths` array or insert direct references to `Path` objects.
+The array can contain `null` values to create gaps (e.g. for cuts on the fold or for other sections that don't need seam allowance).
+
+By default, the `offset` macro will offset the paths in a circular fashion, joining the end
+of the last path in the array to the start of the first path, creating a full outline.
+If this is not desired, insert `null` elements where you want to create gaps.
+
+You can use `offset: 0` to include paths which don't need an additional offset.
+
+You can use `hidden: true` to hide path segments from the output, but still build corner joins as if they were there.
+This can be used for cut-on-fold lines, where no seam allowance is needed.
+
+:::note
+To create a seam allowance, prefer the `sa` macro instead of the `offset` macro. It does pretty much the same,
+but the `sa` macro defaults to offsetting paths by the user defined seam allowance.
+:::
+
+## Signature
+
+```js
+Path macro('offset', {
+  Array paths,
+  number limit,
+  string mode,
+  string class
+})
+```
+
+## Example
+
+<Example caption="An example of the offset macro">
+
+```js
+;({ Point, points, Path, paths, macro, part }) => {
+  paths.outline = new Path()
+    .move(new Point(10, 30))
+    .line(new Point(30, 30))
+    .line(new Point(30, 50))
+    .line(new Point(50, 50))
+    .line(new Point(50, 70))
+    .line(new Point(70, 70))
+    .curve(new Point(55, 15), new Point(55, 15), new Point(30, 0))
+
+  paths.outline2 = new Path().move(new Point(30, 0)).line(new Point(10, 30))
+
+  paths.offset = macro('offset', {
+    paths: [
+      { p: 'outline', offset: 10 },
+      { p: 'outline2', offset: 30 },
+    ],
+  }).setClass('stroke-sm mark dotted')
+
+  paths.halfCircle = new Path().move(new Point(100, 0)).circleSegment(37, new Point(200, 0)).hide()
+
+  paths.halfCircleClosed = paths.halfCircle.clone().line(new Point(200, 0)).unhide().close()
+
+  paths.halfCircleSa = macro('offset', {
+    paths: [{ p: 'halfCircle', offset: 10 }, null],
+  }).setClass('stroke-sm mark dotted')
+
+  return part
+}
+```
+
+</Example>
+
+## Configuration
+
+| Property | Default    | Type     | Description                                                                                                                                                                    |
+| -------: | ---------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+|  `paths` |            | `array`  | An array of paths with their offset ad visibility. You can use path names in the `paths` array or reference `Path` objects directly, or insert `null` elements to create gaps. |
+|   `mode` | `'corner'` | `string` | Mode for joining paths. Either `'corner'` or `'cut'`. `'cut'` will join the paths directly (like `path.join(...)`) without extending the corners.                              |
+|  `limit` | `null`     | `number` | Allows limiting the length of extended path corners in `'corner'` mode. Prevents overly long joins on very sharp angles. Ignored if `null` or `false`.                         |
+|  `class` | `'offset'` | `string` | CSS class that is automatically applied to the resulting path.                                                                                                                 |
