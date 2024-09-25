@@ -1,0 +1,67 @@
+---
+title: join
+---
+
+The `join` macro joins multiple paths together.
+
+Unlike the core `path.join(...)` function, the `join` macro can extend line ends to meet in a sharp corner and will automatically
+trim useless path ends when adjacent paths in the array are intersecting.
+
+The join function accepts an array of `Path` objects
+(either names in the `paths` array or direct references to `Path` objects).
+This array can contain `null` values or hidden paths (created with `path.hide()`) to create gaps.
+
+By default, the `join` macro will join the paths in a circular fashion, joining the end
+of the last path in the array to the start of the first path, creating a full outline.
+If this is not desired, insert a `null` element between paths where you want the gap
+(or at the end of the `paths` parameter).
+
+Note that a `null` value will create a basic gap in the output,
+if you instead include a hidden path, this method will still create sharp corners as if the path were present,
+but the actual path will be skipped in the output.
+
+## Signature
+
+```js
+Path macro('join', {
+  Array paths,
+  number limit,
+  string mode
+})
+```
+
+## Example
+
+<Example caption="An example of the join macro">
+
+```js
+;({ Point, points, Path, paths, macro, part }) => {
+  paths.a = new Path().move(new Point(10, 10)).line(new Point(10, 20))
+
+  paths.b = new Path().move(new Point(25, 30)).line(new Point(55, 30))
+
+  paths.c = new Path().move(new Point(40, 20)).line(new Point(40, 50))
+
+  paths.d = new Path().move(new Point(50, 60)).line(new Point(60, 60))
+
+  paths.e = new Path()
+    .move(new Point(70, 40))
+    .curve(new Point(55, 15), new Point(55, 15), new Point(30, 0))
+
+  paths.join = macro('join', {
+    paths: ['a', 'b', 'c', null, 'd', 'e'],
+  }).setClass('stroke-sm mark dotted')
+
+  return part
+}
+```
+
+</Example>
+
+## Configuration
+
+| Property | Default    | Type     | Description                                                                                                                                                       |
+| -------: | ---------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  `paths` |            | `array`  | An array of pathnames, the names of Paths in the `paths` array to join (you can also reference `Path` objects directly, or insert `null` elements to create gaps) |
+|   `mode` | `'corner'` | `string` | Mode for joining paths. Either `'corner'` or `'cut'`. `'cut'` will join the paths directly without extending them (like `path.join(...)`).                        |
+|  `limit` | `null`     | `number` | Allows limiting the length of corners in `'corner'` mode. Prevents overly long joins on very sharp angles. Ignored if `null` or `false`.                          |

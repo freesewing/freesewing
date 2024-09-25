@@ -4,6 +4,7 @@ import { mirrorPlugin } from '../../plugin-mirror/src/index.mjs'
 import { roundPlugin } from '../../plugin-round/src/index.mjs'
 import { sprinklePlugin } from '../../plugin-sprinkle/src/index.mjs'
 import { binpackPlugin } from '../../plugin-bin-pack/src/index.mjs'
+import { pathUtilsPlugin } from '../../plugin-path-utils/src/index.mjs'
 import { name, version } from '../data.mjs'
 
 const bundledPlugins = [
@@ -13,6 +14,7 @@ const bundledPlugins = [
   roundPlugin,
   sprinklePlugin,
   binpackPlugin,
+  pathUtilsPlugin,
 ]
 
 const hooks = {}
