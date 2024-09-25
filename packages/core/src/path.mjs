@@ -360,6 +360,92 @@ Path.prototype.curve_ = function (cp1, to) {
 }
 
 /**
+ * Adds a curve operation to Point to
+ *
+ * @param {Point} cp1 - The start control Point
+ * @param {Point} cp2 - The end control Point
+ * @param {Point} through - The point where the curve needs to go though
+ * @param {Point} to - The end point
+ * @return {Path} this - The Path instance
+ */
+Path.prototype._curveThrough = function (cp1, cp2, through, to, min = 0, max = 1) {
+  let from = this.end()
+  let collisionPath = new Path()
+    .move(through)
+    .line(to.rotate(90, through).shiftFractionTowards(through, -9))
+
+  function curveThroughTest(alpha) {
+    return (
+      collisionPath.intersects(
+        new Path().move(from).curve(from.shiftFractionTowards(cp1, alpha), cp2, to)
+      ).length > 0
+    )
+  }
+
+  let low = curveThroughTest(min)
+  let high = curveThroughTest(max)
+
+  if (low === high) {
+    this.log.warn('Could not construct a curveThrough with given parameters')
+    return this.curve(cp1, cp2, to)
+  }
+
+  for (let i = 0; i < 8; i++) {
+    let mid = (min + max) / 2
+    if (curveThroughTest(mid) === low) {
+      min = mid
+    } else {
+      max = mid
+    }
+  }
+  let mid = (min + max) / 2
+  return this.curve(from.shiftFractionTowards(cp1, mid), cp2, to)
+}
+
+/**
+ * Adds a curve operation to Point to
+ *
+ * @param {Point} cp1 - The start control Point
+ * @param {Point} cp2 - The end control Point
+ * @param {Point} through - The point where the curve needs to go though
+ * @param {Point} to - The end point
+ * @return {Path} this - The Path instance
+ */
+Path.prototype.curveThrough_ = function (cp1, cp2, through, to, min = 0, max = 1) {
+  let from = this.end()
+  let collisionPath = new Path()
+    .move(through)
+    .line(to.rotate(90, through).shiftFractionTowards(through, -9))
+
+  function curveThroughTest(alpha) {
+    return (
+      collisionPath.intersects(
+        new Path().move(from).curve(cp1, to.shiftFractionTowards(cp2, alpha), to)
+      ).length > 0
+    )
+  }
+
+  let low = curveThroughTest(min)
+  let high = curveThroughTest(max)
+
+  if (low === high) {
+    this.log.warn('Could not construct a curveThrough with given parameters')
+    return this.curve(cp1, cp2, to)
+  }
+
+  for (let i = 0; i < 8; i++) {
+    let mid = (min + max) / 2
+    if (curveThroughTest(mid) === low) {
+      min = mid
+    } else {
+      max = mid
+    }
+  }
+  let mid = (min + max) / 2
+  return this.curve(cp1, to.shiftFractionTowards(cp2, mid), to)
+}
+
+/**
  * Divides this Path in atomic paths
  *
  * @return {Array} paths - An array of atomic paths that together make up this Path
@@ -1035,6 +1121,17 @@ Path.prototype.split = function (point) {
     secondHalf.length > 0 && secondHalf[0].ops.length > 1 ? __joinPaths(secondHalf) : null
 
   return [firstHalf, secondHalf]
+}
+
+Path.prototype.safeSplit = function (point) {
+  const result = this.split(point)
+  if (result[0] === null) {
+    result[0] = new Path().move(this.start())
+  }
+  if (result[1] === null) {
+    result[1] = new Path().move(this.end())
+  }
+  return result
 }
 
 /**

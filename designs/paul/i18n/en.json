@@ -1,0 +1,178 @@
+{
+  "t": "Paul pants",
+  "d": "Paul is a pattern for jeans-like pants.",
+  "p": {
+    "back": "Back",
+    "backPocket": "Back pocket",
+    "beltLoops": "Beltloops",
+    "flyExtension": "Fly extension",
+    "flyFacing": "Fly facing",
+    "flyPlacket": "Fly placket",
+    "front": "Front",
+    "gusset": "Gusset",
+    "pocketBag": "Front pocket bag",
+    "pocketFacing": "Front pocket facing",
+    "pocketTrim": "Front pocket entry facing",
+    "waistband": "Waistband",
+    "waistbandCurved": "Curved waistband",
+    "yoke": "Yoke"
+  },
+  "s": {
+    "cutBeltloops.t": "The belt loops are not shown",
+    "cutBeltloops.d": "The **Belt loops** are {{{ count }}} rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "cutWaistband.t": "The waistband is not shown",
+    "cutWaistband.d": "The **Waistband** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "cutBackPocket.t": "The back pocket is not shown",
+    "cutBackPocket.d": "The **Back Pocket** is a piece of fabric than can be traced from the **Back** part.",
+    "fly.t":  "Fly",
+    "fly.d": "Fly settings",
+    "yoke.t": "Yoke",
+    "yoke.d": "Yoke settings"
+  },
+  "o": {
+    "yokeHorizontalCenter": {
+      "t": "Yoke horizontal placement",
+      "d": "Controls the horizontal placement of the yoke"
+    },
+    "beltLoops": {
+      "t": "Belt loops",
+      "d": "Controls the amount of belt loops"
+    },
+    "flyCurve": {
+      "t": "Fly curve",
+      "d": "Controls the curvature of the fly J-seam"
+    },
+    "flyLength": {
+      "t": "Fly length",
+      "d": "Controls the length of the fly"
+    },
+    "length": {
+      "t": "Length",
+      "d": "Controls the length of the pants"
+    },
+     "flyWidth": {
+      "t": "Fly width",
+      "d": "Controls how far the J-seam of offset from the fly edge"
+    },
+    "waistbandCurve": {
+      "t": "Waistband curve",
+      "d": "Controls how curved the waistband is"
+    },
+    "ankleEase": {
+      "t": "Ankle ease",
+      "d": "Ease at the ankle"
+    },
+    "ankleShape": {
+      "t": "Ankle shape",
+      "d": "Controls how fast the width of the pants increases above the ankle"
+    },
+    "frontPockets": {
+      "t": "Front pockets",
+      "d": "If the pants should have front pockets"
+    },
+     "backPockets": {
+      "t": "Back pockets",
+      "d": "If the pants should have back pockets"
+    },
+       "backPocketAsymmetry": {
+      "t": "Back pocket asymmetry",
+      "d": "Controls the shape of the back pockets"
+    },
+    "pocketOpeningWidth": {
+      "t": "Pocket opening width",
+      "d": "How wide the opening of the front pockets should be"
+    },
+    "pocketOpeningHeight": {
+      "t": "Pocket opening height",
+      "d": "How high the opening of the front pockets should be"
+    } ,
+    "pocketCurveShape": {
+      "t": "Pocket curve shape",
+      "d": "Controls the curve of the front pocket opening"
+    },
+    "pocketDepth": {
+      "t": "Pocket depth",
+      "d": "Controls the amount of room in your pockets"
+    },
+    "gusset": {
+      "t": "Gusset",
+      "d": "Controls if a crotch gusset should be constructed"
+    },
+      "gussetNo": {
+      "t": "Without Gusset",
+      "d": "Don't construct a crotch gusset"
+    },
+       "gussetYes": {
+      "t": "With Gusset",
+      "d": "Add a crotch gusset"
+    },
+       "gussetSize": {
+      "t": "Gusset size",
+      "d": "Controls the size of the gusset"
+    },
+    "gussetWidth": {
+      "t": "Gusset width",
+      "d": "Controls the width of the gusset compared to its general size"
+    },
+     "gussetBalance": {
+      "t": "Gusset balance",
+      "d": "Controls how much of the front part is cut off to construct the gusset"
+    },
+    "yokeAngle": {
+      "t": "Yoke angle",
+      "d": "Controls the angle of the virtual yoke dart"
+    },
+    "yokeHeight": {
+      "t": "Yoke height",
+      "d": "Controls the height of the yoke"
+    },
+    "yokeBalance": {
+      "t": "Yoke balance",
+      "d": "Controls the shifts the height of the yoke in- or outwards"
+    },
+    "buttons": {
+      "t": "Buttons",
+      "d": "Controls the number of buttons in the fly"
+    },
+    "flyStyle": {
+      "t": "Fly style",
+      "d": "Controls the construction of the fly"
+    },
+    "flyStyle.buttons": {
+      "t": "Buttons",
+      "d": "Use buttons for the fly (default)"
+    },
+    "flyStyle.visibleButtons": {
+      "t": "Visible Buttons",
+      "d": "Use visible buttons for the fly"
+    },
+    "flyStyle.zipper": {
+      "t": "Zipper",
+      "d": "Use a zipper for the fly"
+    },
+    "pocketBagCurve": {
+      "t": "Pocket bag curve",
+      "d": "Controls the curve of the pocket bag"
+    },
+    "pocketBagCurveShape": {
+      "t": "Pocket bag curve shape",
+      "d": "Controls the curve of the pocket bag"
+    },
+    "pocketBagSlant": {
+      "t": "Pocket bag slant",
+      "d": "Controls the slant of the pocket bag"
+    },
+     "pocketBagWidth": {
+      "t": "Pocket bag width",
+      "d": "Controls the width of the pocket bag"
+    },
+    "pocketFacing": {
+      "t": "Front pocket facing",
+      "d": "Enables facing the front pocket"
+    },
+    "pocketTrim": {
+      "t": "Front pocket entry facing",
+      "d": "Enables facing the front pocket entry"
+    }
+  }
+}
