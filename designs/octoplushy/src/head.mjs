@@ -613,15 +613,16 @@ const options = {
     min: 5,
     max: 500,
     menu: 'style',
+    // eslint-disable-next-line no-unused-vars
     toAbs: (val, { options }, mergedOptions) =>
       ((mergedOptions.sizeConstant * val * 2) / 3.1415) *
-      (options.type === undefined
+      (mergedOptions.type === undefined
         ? 1
-        : options.type == 'octopus'
-        ? 1.7
-        : options.type == 'squid'
-        ? 2
-        : 1),
+        : mergedOptions.type == 'octopus'
+          ? 1.7
+          : mergedOptions.type == 'squid'
+            ? 2
+            : 1),
   },
   type: { dflt: 'octoplushy', list: ['octoplushy', 'octopus', 'squid'], menu: 'style' },
   armWidth: { pct: 15, min: 10, max: 30, menu: 'style' },
@@ -630,19 +631,17 @@ const options = {
     min: 100,
     max: 500,
     menu: 'style',
+    // eslint-disable-next-line no-unused-vars
     toAbs: (val, { options }, mergedOptions) =>
-      ((mergedOptions.sizeConstant *
-        (options.size === undefined ? mergedOptions.size : options.size) *
-        2) /
-        3.1415) *
+      ((mergedOptions.sizeConstant * mergedOptions.size * 2) / 3.1415) *
       val *
-      (options.type === undefined
+      (mergedOptions.type === undefined
         ? 1
-        : options.type == 'octopus'
-        ? 2
-        : options.type == 'squid'
-        ? 1.8
-        : 1),
+        : mergedOptions.type == 'octopus'
+          ? 2
+          : mergedOptions.type == 'squid'
+            ? 1.8
+            : 1),
   },
   neckWidth: { pct: 25, min: 25, max: 45, menu: 'style' },
   armTaper: { pct: 25, min: 0, max: 50, menu: 'style' },
@@ -652,14 +651,14 @@ const options = {
     min: 75,
     max: 125,
     // eslint-disable-next-line no-unused-vars
-    menu: (settings, mergedOptions) => (mergedOptions?.type === 'octoplushy' ? 'style' : false),
+    menu: (settings, mergedOptions) => (mergedOptions?.type !== 'octoplushy' ? 'style' : false),
   },
   bottomArmReductionPlushy: {
     pct: 80,
     min: 75,
     max: 125,
     // eslint-disable-next-line no-unused-vars
-    menu: (settings, mergedOptions) => (mergedOptions?.type !== 'octoplushy' ? 'style' : false),
+    menu: (settings, mergedOptions) => (mergedOptions?.type === 'octoplushy' ? 'style' : false),
   },
 }
 
