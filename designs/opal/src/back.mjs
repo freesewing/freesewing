@@ -639,8 +639,8 @@ export const back = {
   after: bib,
   draft: draftBack,
   options: {
-    // What angle the back bib leaves the outseam at. 0 is horizontal, 90 is vertical.
-    backBibBaseAngle: { deg: 25, min: 0, max: 90, menu: 'style' },
+    // What angle the back bib leaves the outseam at. 0 is horizontal, 90 would be vertical.
+    backBibBaseAngle: { deg: 25, min: 0, max: 85, menu: 'style' },
     // How deep to make the curve connecting the top of the outseam with the hexagon of the back bib.
     backBibBaseCurve: { pct: 40, min: 0, max: 100, menu: 'style' },
     // How high up the hexagon of the back bib is located. 0% refers to the waist, while 100% refers to the HPS.
