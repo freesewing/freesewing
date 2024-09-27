@@ -624,8 +624,7 @@ const options = {
     min: 100,
     max: 500,
     menu: 'style',
-    // eslint-disable-next-line no-unused-vars
-    toAbs: (val, { options }, mergedOptions) =>
+    toAbs: (val, _, mergedOptions) =>
       ((mergedOptions.sizeConstant * mergedOptions.size * 2) / Math.PI) *
       val *
       (mergedOptions.type === 'octopus' ? 2 : mergedOptions.type === 'squid' ? 1.8 : 1),
