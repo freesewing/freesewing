@@ -28,9 +28,9 @@ function octoplushyHeadSection(
 
   const sectionWidth = (w * 2) / sections
   const neckWidth = sectionWidth * options.neckWidth
-  const armWidth = w * options.armWidth * options.bottomTopArmRatio * 3.1415
+  const armWidth = w * options.armWidth * options.bottomTopArmRatio * Math.PI
   const armAdjustedWidth = armWidth * options.bottomTopArmRatio
-  let armLength = ((w * 2) / 3.1415) * options.armLength
+  let armLength = ((w * 2) / Math.PI) * options.armLength
   if (options.type == 'octopus') {
     armLength *= 2
   }
@@ -613,16 +613,9 @@ const options = {
     min: 5,
     max: 500,
     menu: 'style',
-    // eslint-disable-next-line no-unused-vars
-    toAbs: (val, { options }, mergedOptions) =>
-      ((mergedOptions.sizeConstant * val * 2) / 3.1415) *
-      (mergedOptions.type === undefined
-        ? 1
-        : mergedOptions.type == 'octopus'
-          ? 1.7
-          : mergedOptions.type == 'squid'
-            ? 2
-            : 1),
+    toAbs: (val, {}, mergedOptions) =>
+      ((mergedOptions.sizeConstant * val * 2) / Math.PI) *
+      (mergedOptions.type === 'octopus' ? 1.7 : mergedOptions.type === 'squid' ? 2 : 1),
   },
   type: { dflt: 'octoplushy', list: ['octoplushy', 'octopus', 'squid'], menu: 'style' },
   armWidth: { pct: 15, min: 10, max: 30, menu: 'style' },
@@ -633,15 +626,9 @@ const options = {
     menu: 'style',
     // eslint-disable-next-line no-unused-vars
     toAbs: (val, { options }, mergedOptions) =>
-      ((mergedOptions.sizeConstant * mergedOptions.size * 2) / 3.1415) *
+      ((mergedOptions.sizeConstant * mergedOptions.size * 2) / Math.PI) *
       val *
-      (mergedOptions.type === undefined
-        ? 1
-        : mergedOptions.type == 'octopus'
-          ? 2
-          : mergedOptions.type == 'squid'
-            ? 1.8
-            : 1),
+      (mergedOptions.type === 'octopus' ? 2 : mergedOptions.type === 'squid' ? 1.8 : 1),
   },
   neckWidth: { pct: 25, min: 25, max: 45, menu: 'style' },
   armTaper: { pct: 25, min: 0, max: 50, menu: 'style' },
