@@ -48,7 +48,7 @@ const config = {
           resolve: { alias: {} },
         }
         // Load plugins from source, rather than compiled package
-        for (const plugin in [
+        for (const plugin of [
           'plugin-annotations',
           'plugin-bin-pack',
           'plugin-bust',
@@ -67,14 +67,14 @@ const config = {
         ]) {
           fsConfig.resolve.alias[`@freesewing/${plugin}`] = path.resolve(
             __dirname,
-            `plugins/${plugin}/src/index.mjs`
+            `../../plugins/${plugin}/src/index.mjs`
           )
         }
         // Load these from source, rather than compiled package
         for (const pkg of ['core', 'i18n', 'models', 'snapseries']) {
           fsConfig.resolve.alias[`@freesewing/${pkg}`] = path.resolve(
             __dirname,
-            `packages/${pkg}/src/index.mjs`
+            `../../packages/${pkg}/src/index.mjs`
           )
         }
 
