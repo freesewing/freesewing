@@ -5,7 +5,11 @@ title: cutlist.addCut()
 The `cutlist.addCut()` store method will add a set of cutting instructions for the part.
 This information is not use by the core library, it is merely stored.
 
-#### Signature
+## Signature
+
+`cutlist.addCut()` accepts either an object or an array of objects
+with the following signature:
+
 ```js
 undefined store.cutlist.addCut({
   Number cut,
@@ -14,9 +18,11 @@ undefined store.cutlist.addCut({
   Bool onBias = false,
   Bool onFold = false,
 })
-````
+```
 
-Pass an object to the `store.cutlist.addCut` method with any of the following keys; any you don't provide will be filled with the defaults:
+Pass an object or an array of objects to the `cutlist.addCut()`
+method with any of the following keys;
+any you don't provide will be filled with the defaults:
 
 | Key | Type | Default | Description |
 | :-- | :--- | :------ | :---------- |
@@ -40,9 +46,9 @@ You can use any `string` you want for your material, but here are some standard 
 
 </Note>
 
-#### Example
+## Example
 
-<Example caption="An example of the title macro">
+<Example caption="An example of the cutlist.addCut() store method">
 ```js
 ({ Point, Path, paths, macro, store, part }) => {
 
@@ -52,16 +58,16 @@ You can use any `string` you want for your material, but here are some standard 
   macro('title', {
     nr: 9,
     title: 'The title',
-    at: new Point(0,0)
+    at: new Point(0,0),
+    scale: 0.5,
   })
 
   // Prevent clipping
   paths.diag = new Path()
-    .move(new Point(-20,-50))
+    .move(new Point(-10,-20))
     .move(new Point(80,35))
 
   return part
 }
 ```
 </Example>
-
