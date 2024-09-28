@@ -37,7 +37,7 @@ function draftHueyFront({
   points.pocketTopRight = points.pocketCfTop.shift(0, points.hem.x * options.pocketWidth)
   points.pocketTip = new Point(
     points.pocketTopRight.x * 1.2,
-    points.pocketTopRight.y + (points.hem.y - points.pocketTopRight.y) * 0.9
+    points.pocketTopRight.y + (points.hem.y - points.pocketTopRight.y) * options.pocketOpening
   )
   points.pocketHem = new Point(
     points.pocketTopRight.x + points.pocketTopRight.dx(points.pocketTip) / 2,
@@ -134,6 +134,7 @@ export const front = {
     pocket: { bool: true, menu: 'style' },
     pocketHeight: { pct: 30, min: 25, max: 35, menu: 'style' },
     pocketWidth: { pct: 60, min: 50, max: 70, menu: 'style' },
+    pocketOpening: { pct: 90, min: 60, max: 90, menu: 'style' },
   },
   draft: draftHueyFront,
 }
