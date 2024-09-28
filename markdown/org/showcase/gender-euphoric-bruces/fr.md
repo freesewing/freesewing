@@ -6,6 +6,7 @@ intro: "Genre euphorique Bruces"
 title: "Genre euphorique Bruces"
 designs:
   - "bruce"
+author: 28322
 ---
 
 Zag (elle/ils/tout le monde) a fabriqué ces caleçons Bruce avec un devant plat et un élastique arc-en-ciel ! Ils ont rapporté "L'euphorie du genre au maximum, merci pour ce modèle !", ce qui est à peu près le meilleur compliment que l'on puisse demander.
