@@ -6,6 +6,7 @@ intro: "La brillante MagicantAce est de retour avec un autre patron de poupée, 
 title: "Une version poupée de Cathrin"
 designs:
   - "cathrin"
+author: 24546
 ---
 
 La brillante MagicantAce est de retour avec un autre patron de poupée, ce minuscule corset Cathrin !
