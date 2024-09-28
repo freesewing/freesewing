@@ -37,7 +37,6 @@ export const back = {
     bustDartMinimumFabric: { pct: 5, min: 1, max: 50, menu: 'darts' },
     waistDartLength: { pct: 90, min: 75, max: 95, menu: 'darts' },
     waistDartCurve: { pct: 100, min: -100, max: 100, menu: 'darts' },
-    waistDartLength: { pct: 90, min: 75, max: 100, menu: 'darts' },
     // Armhole
     armholeDepth: { pct: 44, min: 38, max: 46, menu: 'armhole' },
     backArmholeCurvature: { pct: 63, min: 50, max: 85, menu: 'armhole' },
