@@ -113,25 +113,25 @@
   /*
    * These are variables to style FreeSewing SVG output (drafts, examples, and so on)
    */
-  --pattern-bg: #FAFAFA;
+  --pattern-bg: #fafafa;
   --pattern-fabric: #404040;
-  --pattern-lining: #10B981;
-  --pattern-interfacing: #A3A3A3;
-  --pattern-canvas: #D97706;
-  --pattern-various: #EF4444;
-  --pattern-mark: #3B82F6;
-  --pattern-contrast: #EC4899;
-  --pattern-note: #8B5CF6;
-  --pattern-color-0: #EF4444;
-  --pattern-color-1: #22C55E;
-  --pattern-color-2: #3B82F6;
-  --pattern-color-3: #EAB308;
-  --pattern-color-4: #EC4899;
-  --pattern-color-5: #8B5CF6;
-  --pattern-color-6: #14B8A6;
-  --pattern-color-7: #F59E0B;
-  --pattern-color-8: #D946EF;
-  --pattern-color-9: #06B6D4;
+  --pattern-lining: #10b981;
+  --pattern-interfacing: #a3a3a3;
+  --pattern-canvas: #d97706;
+  --pattern-various: #ef4444;
+  --pattern-mark: #3b82f6;
+  --pattern-contrast: #ec4899;
+  --pattern-note: #8b5cf6;
+  --pattern-color-0: #ef4444;
+  --pattern-color-1: #22c55e;
+  --pattern-color-2: #3b82f6;
+  --pattern-color-3: #eab308;
+  --pattern-color-4: #ec4899;
+  --pattern-color-5: #8b5cf6;
+  --pattern-color-6: #14b8a6;
+  --pattern-color-7: #f59e0b;
+  --pattern-color-8: #d946ef;
+  --pattern-color-9: #06b6d4;
   --pattern-text-xs: 0.2rem;
   --pattern-text-sm: 0.3rem;
   --pattern-text: 0.4rem;
@@ -152,6 +152,12 @@
   --pattern-stroke-5xl: 12px;
   --pattern-stroke-6xl: 16px;
   --pattern-stroke-7xl: 20px;
+}
+
+@media screen and (max-width: 996px) {
+  :root {
+    --ifm-menu-color: hsl(var(--neutral-50));
+  }
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
