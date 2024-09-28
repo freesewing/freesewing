@@ -66,13 +66,15 @@ const config = {
           'plugin-versionfree-svg',
         ]) {
           fsConfig.resolve.alias[`@freesewing/${plugin}`] = path.resolve(
-            `../../plugins/${plugin}/src/index.mjs`
+            __dirname,
+            `plugins/${plugin}/src/index.mjs`
           )
         }
         // Load these from source, rather than compiled package
         for (const pkg of ['core', 'i18n', 'models', 'snapseries']) {
           fsConfig.resolve.alias[`@freesewing/${pkg}`] = path.resolve(
-            `../../packages/${pkg}/src/index.mjs`
+            __dirname,
+            `packages/${pkg}/src/index.mjs`
           )
         }
 
