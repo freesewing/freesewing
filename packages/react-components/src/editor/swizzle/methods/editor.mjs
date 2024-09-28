@@ -705,6 +705,10 @@ export function nsMerge(Swizzled, ...args) {
  * @return {string} key - The input is returned
  */
 export function t(Swizzled, key) {
+  /*
+   * Make sure this works when Swizzled is not passed in
+   */
+  if (typeof Swizzled.components === 'undefined') key = Swizzled
   return Array.isArray(key) ? key[0] : key
 }
 export function settingsValueIsCustom(Swizzled, val, dflt) {

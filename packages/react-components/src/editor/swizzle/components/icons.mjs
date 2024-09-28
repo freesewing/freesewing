@@ -1,3 +1,4 @@
+import React from 'react'
 /*
  * Used inside the pattern editor
  */

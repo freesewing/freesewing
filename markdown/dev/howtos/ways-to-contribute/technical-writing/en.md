@@ -1,5 +1,0 @@
----
-title: Technical writing
----
-
-<ReadMore />

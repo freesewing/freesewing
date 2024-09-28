@@ -1,0 +1,28 @@
+---
+title: Part.hide()
+---
+
+The `Part.hide()` method will mark the part as hidden.
+This method returns the `part` object, so it's chainable.
+
+:::tip
+This method can be destructured as `hidden` 
+in [a part's draft method](/reference/api/part/draft).
+:::
+
+:::note RELATED
+
+The [unhide](/reference/api/part/unhide) and
+[setHidden](/reference/api/part/sethidden) methods also control a
+part's visibility
+
+:::
+
+## Part.hide() example
+
+```js
+cont part = {
+  name: 'examples.hide',
+  draft: ({ hide, part }) =>  part.hide()
+}
+```
