@@ -6,6 +6,7 @@ intro: "Súper colorido Hi de Zag"
 title: "Súper colorido Hi de Zag"
 designs:
   - "hola"
+author: 28322
 ---
 
 La usuaria de FreeSewing Zag compartió esto sobre su nuevo Hi pequeñito: "He hecho un Hi pequeñito (estoy de alquiler, así que no me cabe uno de tamaño normal 😆), ¡con un montón de colores que se adaptan a mi sexo! Lo hice a mano, así que me lo puse todo mucho más difícil, y fue duro hacerlo tan pequeño (20%), pero al final lo conseguí".
