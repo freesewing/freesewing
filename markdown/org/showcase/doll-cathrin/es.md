@@ -6,6 +6,7 @@ intro: "La genial MagicantAce ha vuelto con otro patrón para muñecas, ¡este d
 title: "Una versión muñeca de Cathrin"
 designs:
   - "cathrin"
+author: 24546
 ---
 
 La genial MagicantAce ha vuelto con otro patrón para muñecas, ¡este diminuto corsé de Cathrin!
