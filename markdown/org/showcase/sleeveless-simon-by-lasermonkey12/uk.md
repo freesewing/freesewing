@@ -6,7 +6,7 @@ intro: Maker lasermonkey12 has made lots of great Simon shirts, including this s
 designs:
   - симона
 maker: lasermonkey12
-author: 22007
+author: 31287
 ---
 
 Maker lasermonkey12 has made lots of great Simon and Simone shirts. This sleeveless one is a Simone. We love the fresh look, well-suited for hot weather! This was shared on [Discord](https://discord.freesewing.org/) and is reposted here with permission.
