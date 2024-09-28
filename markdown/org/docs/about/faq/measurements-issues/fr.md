@@ -12,7 +12,11 @@ En attendant, voici quelques endroits où commencer à chercher si tu as des pro
 
 Les problèmes de pantalon sont presque toujours causés par les mesures verticales qui déterminent l'espace dont nous disposons pour construire le haut du pantalon. Par exemple, la longueur de la taille a la cuisse _doit_ être supérieure à celle de la taille à l'assise, sinon il y a un espace négatif pour construire le pantalon.
 
-La mesure de la taille est un plan de référence vertical important. L'endroit où tu le prends n'a pas beaucoup d'importance, tant que toutes les mesures verticales sont cohérentes (de la taille au siège, de la taille aux hanches, des HPS à la taille, de la taille au sol, ...) avec ce plan horizontal.
+The [waist](#waist) measurement location is an important vertical reference
+that should remain consistent during the measurement process.
+You should be measuring all waist-related vertical measurements
+(waist to seat, waist to hips, HPS to waist, waist to floor, ...)
+avec ce plan horizontal.
 
 ### Probèmes de mesures
 
@@ -23,6 +27,11 @@ Nous avons remarqué que certaines mesures ont tendance à poser des problèmes.
 La mesure [de la taille à l'aisselle] (https\://freesewing.org/docs/measurements/waisttoarmpit) est une mesure verticale droite, et non curviligne (qui suit la courbe du corps). Il doit se situer au niveau du bord inférieur de ton aisselle, pas plus haut que le max qu'une chemise peux l'être (sans s'enfoncer).
 
 ![De la taille à l'aisselle](waisttoarmpit.jpg)
+
+The waist to armpit measurement is used to calculate where the bottom
+of the sleeve opening is located.
+An incorrect waist to armpit measurement can affect the shape of the
+sleevecap and size of the sleeve opening.
 
 #### Point Haut de l'Épaule (ou PHE)
 
@@ -58,8 +67,60 @@ En termes de FreeSewing, les hanches sont mesurées au point supérieur des os d
 
 L'assise se trouve sur la partie la plus large de tes fesses. D'autres sources appellent cela la "hanche".
 
-##### Taille
+For FreeSewing patterns and measurements,
+the seat is always located below the hips.
 
-L'endroit où tu prends les mesures de la [taille] (https://freesewing.org/docs/measurements/waist) n'est pas nécessairement lié à l'endroit où se trouve, par exemple, une ceinture.
+#### Taille
+
+The [waist](https://freesewing.org/docs/measurements/waist) measurement
+is important, and unfortunately it is also one of the most difficult
+measurements to locate and take correctly.
+
+##### Description
+
+When people hear "waist", they might think of where the waistband on
+trousers sits on the body.
+However, the "waist" is entirely different when referring to the
+sewing measurement.
+Instead, it is is the location on the body that is sometimes known as
+the "natural waist".
+
+- Typically it is above the hip bone and below the bottom of the ribcage.
+  For some this is a very small area, and for others there's a much larger
+  gap between the two.
+
+- It is sometimes described as the point at which your upper body bends
+  when you bend sideways.
+
+- It is sometimes described as the narrowest part of your torso,
+  (although this description will be unhelpful for people with larger
+  stomachs, whose waists might _not_ be the narrowest part).
+
+- Often it is higher up on the torso than people expect,
+  nearer to the ribcage than to the hips and above the navel.
+
+Again, thinking about trousers waistbands is often misleading and
+results in incorrect measurements.
+Trousers, slacks, and jeans that are not "high rise" have waistbands
+that sit well below the natural waist.
+Only high rise jeans sit close to, sometimes at, the natural waist.
+
+##### Measuring Tips
 
 Essaie de te pencher sur le côté et de noter l'endroit où ton corps se plisse. (Pour les points bonus, mets ta main sur ta taille et chante "Je suis une petite théière")
+
+Or, take a length of 1/4-to-3/4-inch wide elastic and
+tie or sew the ends together to form a band around your waist,
+snug enough not to slide off, but loose enough to not change the
+waist circumference measurement.
+Now try bending from side to side (think "I'm a little teapot" movements),
+or otherwise moving and walking around to see if the elastic band
+naturally slips into place at the natural waist.
+Or, if this is uncomfortable or does not work, you can simply place
+the elastic band at the location you think most accurately denotes
+your natural waist.
+
+Keep wearing this elastic band as you take other measurements, as
+a consistent reference for the location of the waistline.
+It will make it easier to take other waist-related measurements
+like waist to floor, waist to armpit, etc.
