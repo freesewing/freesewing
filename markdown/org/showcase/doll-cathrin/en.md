@@ -5,6 +5,7 @@ date: "2021-10-23"
 intro: "The brilliant MagicantAce is back with another doll pattern, this tiny Cathrin corset!"
 title: "A doll version of Cathrin"
 designs: ["cathrin"]
+author: 24546
 ---
 
 The brilliant MagicantAce is back with another doll pattern, this tiny Cathrin corset!
