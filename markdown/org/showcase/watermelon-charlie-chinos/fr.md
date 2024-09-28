@@ -3,7 +3,7 @@ title: Watermelon Charlie Chinos
 caption: Splash of green on the right, splash of pink on the left
 date: 20240615
 intro: Watermelon 🍉 Themed Pants!
-author: null
+author: 61987
 designs:
   - charlie
 ---
