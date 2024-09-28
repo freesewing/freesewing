@@ -33,6 +33,10 @@
       "t": "Pocket height",
       "d": "Controls the height of the pocket"
     },
+    "pocketOpening": {
+      "t": "Pocket opening",
+      "d": "Controls the opening size of the pocket"
+    },
     "hoodHeight": {
       "t": "Hood height",
       "d": "Controls the height of the hood"

@@ -6,6 +6,7 @@ export const bustDartCurve = 1
 export const bustDartLength = 0.9
 export const bustDartAngle = 0
 export const bustDartMinimumFabric = 0
+export const waistDartCurve = 1
 // Percentages
 export const bustSpanEase = { pct: 0, min: -5, max: 20, ...pctBasedOn('bustSpan'), menu: 'fit' }
 export const backHemSlope = { deg: 2.5, min: 0, max: 5, menu: 'advanced' }

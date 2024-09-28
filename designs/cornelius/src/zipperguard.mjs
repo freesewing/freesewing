@@ -6,8 +6,8 @@ export const zipperguard = {
   draft: ({ Point, Path, points, paths, Snippet, snippets, sa, store, macro, part }) => {
     const cc = 0.551915024494 // circle constant
 
-    const halfInch = store.get('halfInch')
-    const flyWidth = store.get('flyWidth') * halfInch
+    const flyConst = store.get('flyConst')
+    const flyWidth = store.get('flyWidth') * flyConst
     const flyLength = store.get('flyLength')
 
     points.pA = new Point(0, 0)

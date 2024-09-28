@@ -50,18 +50,21 @@ export const front = {
       waistAngle -= 180
     }
 
+    const flyConst = 14
+    store.set('flyConst',flyConst)
+
     points.flyTop = points.pW.shift(
       points.pW.angle(points.pZ) - 180 + waistAngle,
-      halfInch * flyWidth
+      flyConst * flyWidth
     )
     points.flyBottom = points.flyTop.shift(
       points.pW.angle(points.pZ),
-      points.pW.dist(points.pZ) - halfInch * flyWidth
+      points.pW.dist(points.pZ) - flyConst * flyWidth
     )
 
     points.pZcpFB = points.pZ.shift(
       points.pW.angle(points.pZ) - waistAngle,
-      halfInch * flyWidth * cc
+      flyConst * flyWidth * cc
     )
     points.pFBcpZ = points.flyBottom.shift(points.pW.angle(points.pZ), halfInch * flyWidth * cc)
 

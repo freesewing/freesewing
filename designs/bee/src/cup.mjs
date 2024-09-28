@@ -28,6 +28,7 @@ export const cup = {
     bustDartCurve: 1,
     bustDartLength: 1,
     waistDartLength: 1,
+    waistDartCurve: 1,
     backHemSlope: 2.5,
     backNeckCutout: 0.06,
     bustDartAngle: 0,

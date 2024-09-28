@@ -58,6 +58,10 @@
       "t": "Bust dart minimum fabric",
       "d": "The minimum amount of side seam above and below the bust dart"
     },
+    "waistDartCurve": {
+      "t": "Waist dart curve",
+      "d": "Controls the curvature of the waist dart"
+    },
     "armholeDepth": {
       "t": "Armhole depth",
       "d": "Controls the depth of the armhole"
