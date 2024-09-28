@@ -6,6 +6,7 @@ intro: "De briljante MagicantAce is terug met een nieuw poppenpatroon, dit klein
 title: "Een poppenversie van Cathrin"
 designs:
   - "cathrin"
+author: 24546
 ---
 
 De briljante MagicantAce is terug met een nieuw poppenpatroon, dit kleine Cathrin korset!
