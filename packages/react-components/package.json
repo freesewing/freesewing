@@ -29,7 +29,6 @@
     "./editor": "./src/editor/index.mjs",
     "./icons": "./src/editor/swizzle/components/icons.mjs",
     "./popout": "./src/popout.mjs",
-    "./test": "./src/test.mjs",
     "./methods": "./src/editor/swizzle/methods/index.mjs"
   },
   "imports": {
