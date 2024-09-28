@@ -17,7 +17,7 @@ const config = {
   plugins: [
     () => ({
       name: 'mjs-loader',
-      configureWebpack(config) {
+      configureWebpack() {
         return {
           module: {
             rules: [
@@ -43,7 +43,7 @@ const config = {
     }),
     () => ({
       name: 'fs-loader',
-      configureWebpack(config) {
+      configureWebpack() {
         const fsConfig = {
           resolve: { alias: {} },
         }
