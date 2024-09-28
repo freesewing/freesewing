@@ -6,6 +6,7 @@ intro: "Die brillante MagicantAce ist mit einem weiteren Puppenschnittmuster zur
 title: "Eine Puppenversion von Cathrin"
 designs:
   - "cathrin"
+author: 24546
 ---
 
 Die brillante MagicantAce ist mit einem weiteren Puppenschnittmuster zurück, diesem kleinen Cathrin-Korsett!
