@@ -152,7 +152,7 @@ const defaultMethods = {
  * This method returns methods that can be swizzled
  * So either the passed-in methods, or the default ones
  */
-export const swizzleMethods = (methods, Swizzled) => {
+const swizzleMethods = (methods, Swizzled) => {
   /*
    * We need to pass down the resulting methods, swizzled or not
    * because some methods rely on other (possibly swizzled) methods.
@@ -171,4 +171,70 @@ export const swizzleMethods = (methods, Swizzled) => {
    * Return all methods
    */
   return all
+}
+
+/*
+ * Named exports
+ */
+export {
+  swizzleMethods,
+  // Re-export all methods for specific imports
+  // core-settings.mjs
+  defaultSa,
+  defaultSamm,
+  menuCoreSettingsOnlyHandler,
+  menuCoreSettingsSaboolHandler,
+  menuCoreSettingsSammHandler,
+  menuCoreSettingsStructure,
+  // design-options.mjs
+  designOptionType,
+  findOption,
+  getOptionStructure,
+  menuDesignOptionsStructure,
+  // editor.mjs
+  addUndoStep,
+  cloneObject,
+  cloudImageUrl,
+  draft,
+  flattenFlags,
+  getCoreSettingUndoStepData,
+  getDesignOptionUndoStepData,
+  getUiPreferenceUndoStepData,
+  getUndoStepData,
+  initialEditorState,
+  menuRoundPct,
+  menuValidateNumericValue,
+  menuValueWasChanged,
+  noop,
+  notEmpty,
+  nsMerge,
+  objUpdate,
+  settingsValueIsCustom,
+  settingsValueCustomOrDefault,
+  statePrefixPath,
+  stateUpdateFactory,
+  t,
+  undoableObjUpdate,
+  // formatting.mjs
+  capitalize,
+  formatDesignOptionValue,
+  formatFraction128,
+  formatImperial,
+  formatMm,
+  formatPercentage,
+  round,
+  roundMm,
+  fractionToDecimal,
+  measurementAsMm,
+  measurementAsUnits,
+  shortDate,
+  parseDistanceInput,
+  // measurements.mjs
+  designMeasurements,
+  hasRequiredMeasurements,
+  isDegreeMeasurement,
+  missingMeasurements,
+  structureMeasurementsAsDesign,
+  // ui-preferences.mjs
+  menuUiPreferencesStructure,
 }

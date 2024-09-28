@@ -1,5 +1,4 @@
-//  __SDEFILE__ - This file is a dependency for the stand-alone environment
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 const colors = {
   comment: 'secondary',
@@ -35,8 +34,8 @@ export const Popout = (props) => {
   if (hide) return null
 
   let type = 'none'
-  for (const t in colors) {
-    if (props[t]) type = t
+  for (const c in colors) {
+    if (props[c]) type = c
   }
   const color = colors[type]
   const { className = '' } = props
