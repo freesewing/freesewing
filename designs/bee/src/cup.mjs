@@ -31,6 +31,8 @@ export const cup = {
     waistDartCurve: 1,
     backHemSlope: 2.5,
     backNeckCutout: 0.06,
+    bustDartAngle: 0,
+    bustDartMinimumFabric: 0,
     //catergory changed from Bella
     armholeDepth: { pct: 44, min: 38, max: 46, menu: 'advanced' },
     frontArmholePitchDepth: { pct: 29, max: 31, min: 27, menu: 'advanced' },

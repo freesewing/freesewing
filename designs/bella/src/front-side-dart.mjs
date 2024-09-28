@@ -115,12 +115,32 @@ export const frontSideDart = {
     )
 
     // Bust dart
+    const sideSeamLength = store.get('sideSeamLength')
+    const minimumFabric = sideSeamLength * options.bustDartMinimumFabric
     points.bustDartTop = utils.beamsIntersect(
       points.armhole,
       points.sideHem,
       points.bust,
-      points.bust.shift(0, 100)
+      points.bust.shift(Number(options.bustDartAngle), 100)
     )
+    // Ensure minimum fabric above the bust dart
+    if (points.bustDartTop.y < points.armhole.y + minimumFabric) {
+      points.bustDartTop = points.armhole.shiftTowards(points.sideHem, minimumFabric)
+      log.info(
+        part.name + ': Restricted bust dart angle to ensure minimum fabric above the bust dart.'
+      )
+    }
+    // Ensure minimum fabric below the bust dart
+    if (points.armhole.dist(points.bustDartTop) > sideSeamLength - minimumFabric) {
+      points.bustDartTop = points.armhole.shiftTowards(
+        points.sideHem,
+        sideSeamLength - minimumFabric
+      )
+      log.info(
+        part.name + ': Restricted bust dart angle to ensure minimum fabric below the bust dart.'
+      )
+    }
+
     points.bustDartBottom = points.bustDartTop.rotate(angle * -1, points.bust)
     points.bustDartMiddle = points.bustDartTop.shiftFractionTowards(points.bustDartBottom, 0.5)
     points.bustDartTip = points.bustDartMiddle.shiftFractionTowards(
@@ -141,8 +161,8 @@ export const frontSideDart = {
       .rotate(-5 * options.bustDartCurve, points.bust)
 
     // Side seam length
-    let aboveDart = points.armhole.dist(points.bustDartTop)
-    let belowDart = store.get('sideSeamLength') - aboveDart
+    const aboveDart = points.armhole.dist(points.bustDartTop)
+    const belowDart = sideSeamLength - aboveDart
     points.sideHemInitial = points.bustDartBottom
       .shift(-90, belowDart)
       .shift(180, store.get('sideReduction'))
