@@ -49,6 +49,7 @@ const config = {
         }
         // Load plugins from source, rather than compiled package
         for (const plugin of [
+          'core-plugins',
           'plugin-annotations',
           'plugin-bin-pack',
           'plugin-bust',
