@@ -613,8 +613,7 @@ const options = {
     min: 5,
     max: 500,
     menu: 'style',
-    // eslint-disable-next-line no-empty-pattern
-    toAbs: (val, {}, mergedOptions) =>
+    toAbs: (val, _, mergedOptions) =>
       ((mergedOptions.sizeConstant * val * 2) / Math.PI) *
       (mergedOptions.type === 'octopus' ? 1.7 : mergedOptions.type === 'squid' ? 2 : 1),
   },
