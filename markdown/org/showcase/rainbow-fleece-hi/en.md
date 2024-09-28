@@ -3,7 +3,7 @@ title: "rainbow fleece Hi"
 caption: "Face close-up"
 date: 20240910
 intro: "My miniature Hi the Shark, with rainbow and lavender fleece."
-author: starfirebird
+author: 21873
 designs: ["hi"]
 ---
 
