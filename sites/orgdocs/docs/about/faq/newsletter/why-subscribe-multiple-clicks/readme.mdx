@@ -13,7 +13,7 @@ This one is pretty easy to understand. One should not be able
 to subscribe somebody else's email address to the FreeSewing newsletter.
 
 This is why, after indicating you want to sign up, we sent you a confirmation
-email to the email address you provided. 
+email to the email address you provided.
 If you receive this email, it confirms not only that the email address
 is working, but also that you have access to it.
 
@@ -28,9 +28,10 @@ That's where it would be over. Except for one technical detail that's also impor
 ## GET requests should not make changes
 
 :::warning
-This is more technical and harder to understand</Warning>
+This is more technical and harder to understand
+:::
 
-Another reason is that while we could make it so that clicking the link in your 
+Another reason is that while we could make it so that clicking the link in your
 email would immediately subscribe you, it would be in violation of internet standards.
 Specifically, the __HTTP__ protocol's __GET method__ definition which states that:
 
@@ -60,9 +61,9 @@ and those can make changes.
 
 None of this applies to users who subscribe to our newsletter by enabling the
 option in our account.  In this case, we do not need to go through the email
-validation process, since we already did that when you signed up. 
+validation process, since we already did that when you signed up.
 
-For users, subscribing (and unsubscribing) is instant (If you are curious, 
+For users, subscribing (and unsubscribing) is instant (If you are curious,
 we use an idempotent __PUT request__ under the hood).
 :::
 
