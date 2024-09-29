@@ -10,7 +10,9 @@ The `Path.addClass()` method adds a CSS class to the path.
 Path path.addClass(string className)
 ```
 
-:::tipThis method is chainable as it returns the `Path` object:::
+:::tip
+This method is chainable as it returns the `Path` object
+:::
 
 ## Example
 
@@ -18,17 +20,18 @@ Path path.addClass(string className)
 ```js
 ({ Point, points, Path, paths, part }) => {
 
-  points.from = new Point(5, 10)
-  points.to = new Point(95, 10)
+points.from = new Point(5, 10)
+points.to = new Point(95, 10)
 
-  paths.line = new Path()
-    .move(points.from)
-    .line(points.to)
-    .addClass('note dashed')
+paths.line = new Path()
+.move(points.from)
+.line(points.to)
+.addClass('note dashed')
 
-  return part
+return part
 }
-```
+
+````
 </Example>
 
 ## Notes
@@ -39,4 +42,4 @@ as the two following calls yield the same result:
 ```js
 path.attr('class', 'fabric')
 path.addClass('fabric')
-```
+````

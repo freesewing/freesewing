@@ -10,12 +10,12 @@ The `Store.unset()` value removes a `key` from the store.
 Store store.unset(string key)
 ```
 
-:::tipThis method is chainable as it returns the `Store` object:::
+:::tip
+This method is chainable as it returns the `Store` object
+:::
 
 ## Example
 
 ```js
-const store = new Store()
-  .set('example', 'I will be gone before you know it')
-  .unset('example')
+const store = new Store().set('example', 'I will be gone before you know it').unset('example')
 ```

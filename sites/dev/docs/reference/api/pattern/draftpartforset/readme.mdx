@@ -5,7 +5,9 @@ title: Pattern.draftPartForSet()
 A pattern's `draftPartForSet()` method will draft a part using a
 given set of settings.
 
-:::noteThis method is chainable as it returns the Pattern object:::
+:::note
+This method is chainable as it returns the Pattern object
+:::
 
 ## Pattern.draftPartForSet() signature
 
@@ -16,14 +18,10 @@ Pattern pattern.draftPartForSet(part, set)
 ## Pattern.draftPartForSet() example
 
 ```js
-import { Aaron } from "@freesewing/aaron"
+import { Aaron } from '@freesewing/aaron'
 
 // Load a public test settings set from the FreeSewing backend
-const set = (
-  await (
-    await fetch("https://backend3.freesewing.org/curated-sets/1.json")
-  ).json()
-)
+const set = await (await fetch('https://backend3.freesewing.org/curated-sets/1.json')).json()
 
 const pattern = new Aaron()
 

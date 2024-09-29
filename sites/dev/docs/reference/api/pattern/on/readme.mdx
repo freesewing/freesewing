@@ -7,7 +7,9 @@ pattern's [lifecycle hooks](/reference/hooks/). It takes the
 lifecycle hook's name as the first argument and the function as the second.
 This method will then be triggered by the lifecycle hook.
 
-:::noteThis method is chainable as it returns the Pattern object:::
+:::note
+This method is chainable as it returns the Pattern object
+:::
 
 ## Pattern.on() signature
 
@@ -26,8 +28,8 @@ should pass it.
 ## Pattern.on() example
 
 ```js
-pattern.on('preRender', function(svg) {
-  svg.style += "svg { background: yellow;}";
+pattern.on('preRender', function (svg) {
+  svg.style += 'svg { background: yellow;}'
 })
 ```
 

@@ -11,7 +11,9 @@ given point.
 Path path.line(Point to)
 ```
 
-:::tipThis method is chainable as it returns the `Path` object:::
+:::tip
+This method is chainable as it returns the `Path` object
+:::
 
 ## Example
 
@@ -19,15 +21,17 @@ Path path.line(Point to)
 ```js
 ({ Point, points, Path, paths, part }) => {
 
-  points.from = new Point(10, 10)
-  points.to = new Point(90, 10)
+points.from = new Point(10, 10)
+points.to = new Point(90, 10)
 
-  paths.line = new Path()
-    .move(points.from)
-    .line(points.to)
-    .setText("Path.line()", "text-sm center fill-note")
+paths.line = new Path()
+.move(points.from)
+.line(points.to)
+.setText("Path.line()", "text-sm center fill-note")
 
-  return part
+return part
 }
+
 ```
 </Example>
+```

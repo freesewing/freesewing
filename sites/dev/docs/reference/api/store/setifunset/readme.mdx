@@ -11,7 +11,9 @@ The `Store.set()` method stores the value of `value` in the store under key
 Store store.set(mixed key, mixed value)
 ```
 
-:::tipThis method is chainable as it returns the `Store` object:::
+:::tip
+This method is chainable as it returns the `Store` object
+:::
 
 ## Example
 
@@ -20,4 +22,3 @@ const store = new Store()
 store.set('example', 'Hi there')
 store.setIfUnset('example', 'Hi again') // This has no effect
 ```
-
