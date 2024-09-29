@@ -331,6 +331,8 @@ svg.freesewing.pattern circle.stroke-xl {
   stroke-width: calc(var(--pattern-stroke-xl) * var(--pattern-scale));
 }
 
+svg.freesewing.pattern path.stroke-xxl,
+svg.freesewing.pattern circle.stroke-xxl,
 svg.freesewing.pattern path.stroke-2xl,
 svg.freesewing.pattern circle.stroke-2xl {
   stroke-width: calc(var(--pattern-stroke-2xl) * var(--pattern-scale));

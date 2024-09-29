@@ -1,21 +1,22 @@
 // Ejected Docusaurus components
-import React from 'react';
-import Head from '@docusaurus/Head';
-import MDXCode from '@theme/MDXComponents/Code';
-import MDXA from '@theme/MDXComponents/A';
-import MDXPre from '@theme/MDXComponents/Pre';
-import MDXDetails from '@theme/MDXComponents/Details';
-import MDXHeading from '@theme/MDXComponents/Heading';
-import MDXUl from '@theme/MDXComponents/Ul';
-import MDXLi from '@theme/MDXComponents/Li';
-import MDXImg from '@theme/MDXComponents/Img';
-import Admonition from '@theme/Admonition';
-import Mermaid from '@theme/Mermaid';
+import React from 'react'
+import Head from '@docusaurus/Head'
+import MDXCode from '@theme/MDXComponents/Code'
+import MDXA from '@theme/MDXComponents/A'
+import MDXPre from '@theme/MDXComponents/Pre'
+import MDXDetails from '@theme/MDXComponents/Details'
+import MDXHeading from '@theme/MDXComponents/Heading'
+import MDXUl from '@theme/MDXComponents/Ul'
+import MDXLi from '@theme/MDXComponents/Li'
+import MDXImg from '@theme/MDXComponents/Img'
+import Admonition from '@theme/Admonition'
+import Mermaid from '@theme/Mermaid'
 // Other Docusaurus components
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
 // Custom FreeSewing components
 import { Example } from './example.mjs'
+import { Legend } from './legend.mjs'
 import { ReadMore } from './readmore.js'
 
 const MDXComponents = {
@@ -41,6 +42,7 @@ const MDXComponents = {
   TabItem,
   // Custom FreeSewing components
   Example,
+  Legend,
   ReadMore,
 }
 
