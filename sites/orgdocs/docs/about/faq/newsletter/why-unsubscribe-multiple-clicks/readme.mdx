@@ -7,11 +7,12 @@ email would immediately unsubscribe you, it would be in violation of internet st
 Specifically, the __HTTP__ protocol's __GET method__ definition which states that:
 
 
-<Note>
+:::note
+
 <h5>GET requests should only retrieve data and should have no other effect.</h5>
 
 [wikipedia.org/wiki/HTTP#HTTP/1.1_request_messages](https://en.wikipedia.org/wiki/HTTP#HTTP/1.1_request_messages)
-</Note>
+:::
 
 A _GET request_ is what happens when you follow a link. Merely following a link
 should not make any changes (like unsubscribing you from a newsletter).
@@ -24,7 +25,8 @@ Obviously, this preloading should not unsubscribe you. Which is why
 you need to click a button to confirm. Because that will trigger a __POST request__
 and those can make changes.
 
-<Tip>
+:::tip
+
 
 ##### This does not apply to users unsubscribing through their account
 
@@ -33,6 +35,6 @@ option in their account. In this case, you are already clicking a button, rather
 than a link in your email.
 
 If you are curious, we use an idempotent __PUT request__ under the hood.
-</Tip>
+:::
 
 

@@ -27,18 +27,20 @@ That's where it would be over. Except for one technical detail that's also impor
 
 ## GET requests should not make changes
 
-<Warning compact>This is more technical and harder to understand</Warning>
+:::warning
+This is more technical and harder to understand</Warning>
 
 Another reason is that while we could make it so that clicking the link in your 
 email would immediately subscribe you, it would be in violation of internet standards.
 Specifically, the __HTTP__ protocol's __GET method__ definition which states that:
 
 
-<Note>
+:::note
+
 <h5>GET requests should only retrieve data and should have no other effect.</h5>
 
 [wikipedia.org/wiki/HTTP#HTTP/1.1_request_messages](https://en.wikipedia.org/wiki/HTTP#HTTP/1.1_request_messages)
-</Note>
+:::
 
 A _GET request_ is what happens when you follow a link. Merely following a link
 should not make any changes (like subscribing you to a newsletter).
@@ -51,7 +53,8 @@ Obviously, this preloading should not confirm your subscription. Which is why
 you need to click a button to confirm. Because that will trigger a __POST request__
 and those can make changes.
 
-<Tip>
+:::tip
+
 
 ##### This does not apply to users subscribing through their account
 
@@ -61,6 +64,6 @@ validation process, since we already did that when you signed up.
 
 For users, subscribing (and unsubscribing) is instant (If you are curious, 
 we use an idempotent __PUT request__ under the hood).
-</Tip>
+:::
 
 
