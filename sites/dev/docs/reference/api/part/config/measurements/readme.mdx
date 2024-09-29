@@ -6,7 +6,9 @@ The `measurements` and `optionalMeasurements` properties on the
 part configuration object list the part's required and optional
 measurements respectively.
 
-:::tipYou should only include what's required by the part itself, not its dependencies:::
+:::tip
+You should only include what's required by the part itself, not its dependencies
+:::
 
 ## measurements
 
@@ -16,8 +18,8 @@ that are required to draft the current part.
 ```js
 const part = {
   name: 'example.front',
-  measurements: [ 'head', 'chest' ],
-  draft: ({ part }) => part
+  measurements: ['head', 'chest'],
+  draft: ({ part }) => part,
 }
 ```
 
@@ -31,9 +33,9 @@ import { pluginBust } from '@freesewing/plugin-bust'
 
 const part = {
   name: 'example.front',
-  plugins: [ pluginBust ],
-  measurements: [ 'head', 'chest' ],
-  optionalMeasurements: [ 'highBust' ],
-  draft: ({ part }) => part
+  plugins: [pluginBust],
+  measurements: ['head', 'chest'],
+  optionalMeasurements: ['highBust'],
+  draft: ({ part }) => part,
 }
 ```

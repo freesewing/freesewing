@@ -21,7 +21,9 @@ Point point.setCircle(
 )
 ```
 
-:::tipThis method is chainable as it returns the `Point` object:::
+:::tip
+This method is chainable as it returns the `Point` object
+:::
 
 ## Example
 
@@ -29,22 +31,24 @@ Point point.setCircle(
 ```js
 ({ Point, points, part }) => {
 
-  points.a = new Point(30, 10)
-    .setCircle(3, 'lining dashed')
-    .setCircle(7, 'mark dashed')
+points.a = new Point(30, 10)
+.setCircle(3, 'lining dashed')
+.setCircle(7, 'mark dashed')
 
-  points.b = new Point(50, 10)
-    .setCircle(1, 'interfacing')
-    .setCircle(3, 'fabric')
-    .setCircle(5, 'lining')
-    .setCircle(7, 'mark')
-    .setCircle(9, 'note')
+points.b = new Point(50, 10)
+.setCircle(1, 'interfacing')
+.setCircle(3, 'fabric')
+.setCircle(5, 'lining')
+.setCircle(7, 'mark')
+.setCircle(9, 'note')
 
-  points.c = new Point(70, 10)
-    .setCircle(3, 'interfacing')
-    .setCircle(7, 'mark lashed')
+points.c = new Point(70, 10)
+.setCircle(3, 'interfacing')
+.setCircle(7, 'mark lashed')
 
-  return part
+return part
 }
+
 ```
 </Example>
+```

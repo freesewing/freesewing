@@ -1,5 +1,5 @@
 ---
-title: Design 
+title: Design
 ---
 
 The `Design` named export in FreeSewing's core library is a constructor that
@@ -17,7 +17,7 @@ Pattern Design({
 ## Example
 
 ```js
-const Sorcha = new Design({ 
+const Sorcha = new Design({
   // design configuration here
 })
 ```
@@ -32,12 +32,14 @@ the Design configuration object only requires a `parts` property that should
 hold an array of parts to include in the Design.
 
 ```js
-const Sorcha = new Design({ 
-  parts: [ front, back, sleeve ],
+const Sorcha = new Design({
+  parts: [front, back, sleeve],
 })
 ```
 
-:::tipA Design in FreeSewing is little more than a container for various Parts:::
+:::tip
+A Design in FreeSewing is little more than a container for various Parts
+:::
 
 Optionally, you can also pass it a `data` attribute
 to hold any custom data you'd like to add to your Design.
@@ -46,20 +48,19 @@ Any `data` you add to the Design constructor will be added
 to [the Store](/reference/api/store).
 
 ```js
-const Sorcha = new Design({ 
-  parts: [ front, back, sleeve ],
+const Sorcha = new Design({
+  parts: [front, back, sleeve],
   data: {
     version: 3,
     price: 12,
-    currency: 'euro'
-  }
+    currency: 'euro',
+  },
 })
 ```
 
 ## Notes
 
-
-The Design constructor is a _super-constructor_. 
+The Design constructor is a _super-constructor_.
 It will return a constructor method that will a pattern based on your design.
 
 ## Properties
@@ -74,4 +75,3 @@ This holds the design configuration as passed to the Design constructor.
 ### Design.patternConfig
 
 Holds the resolved pattern configuration based on the configuration passed to the Design constructor.
-

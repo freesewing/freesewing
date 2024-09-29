@@ -3,7 +3,7 @@ title: Path.curve_()
 ---
 
 The `Path.curve_()` method draws a cubic Bézier curve from the current position
-via two control points to a given endpoint.  However, the end control point is
+via two control points to a given endpoint. However, the end control point is
 identical to the end point.
 
 ## Signature
@@ -12,16 +12,16 @@ identical to the end point.
 Path path.curve_(Point cp1, Point to)
 ```
 
-:::tipThis method is chainable as it returns the `Path` object:::
+:::tip
+This method is chainable as it returns the `Path` object
+:::
 
 ## Example
-
 
 <Example caption="Example of the Path.curve\_() method">
 
 ```js
-({ Point, points, Path, paths, part }) => {
-
+;({ Point, points, Path, paths, part }) => {
   points.from = new Point(10, 20)
   points.cp1 = new Point(40, 0)
   points.to = new Point(90, 20)
@@ -29,12 +29,13 @@ Path path.curve_(Point cp1, Point to)
   paths.line = new Path()
     .move(points.from)
     .curve_(points.cp1, points.to)
-    .setText("Path.curve_()", "text-sm center fill-note")
-    .attr("data-text-dy", -1)
+    .setText('Path.curve_()', 'text-sm center fill-note')
+    .attr('data-text-dy', -1)
 
   return part
 }
 ```
+
 </Example>
 
 ## Notes

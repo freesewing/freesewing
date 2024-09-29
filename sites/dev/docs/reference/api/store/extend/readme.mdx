@@ -13,7 +13,9 @@ rather through a plugin.
 Store Store.extend(Array methods=[])
 ```
 
-:::tipThis method is chainable as it returns the `Store` object:::
+:::tip
+This method is chainable as it returns the `Store` object
+:::
 
 The single argument should be an Array of methods to add to the
 store. Each entry in the array should be an array itself holding a path in
@@ -23,13 +25,11 @@ The expected first parameter for the method is the `Store` instance.
 
 ```js
 function myCustomMethod(store, ...otherArguments) {
- // Do something clever
+  // Do something clever
 }
 
-const store = new Store([
-  ["path.to.the.method", myCustomMethod ]
-])
-```  
+const store = new Store([['path.to.the.method', myCustomMethod]])
+```
 
 With the configuration above, you can call `store.path.to.the.method()` and it
 will run `myCustomMethod()`.
@@ -46,5 +46,3 @@ The Store will not allow you to extend any of the following keys:
 - `unset`
 - `get`
 - `extend`
-
-

@@ -18,7 +18,9 @@ Path path.attr(
 )
 ```
 
-:::tipThis method is chainable as it returns the `Path` object:::
+:::tip
+This method is chainable as it returns the `Path` object
+:::
 
 ## Example
 
@@ -26,19 +28,20 @@ Path path.attr(
 ```js
 ({ Point, points, Path, paths, part }) => {
 
-  points.from = new Point(10, 20)
-  points.cp1 = new Point(20, -10)
-  points.cp2 = new Point(50, 50)
-  points.to = new Point(70, 20)
+points.from = new Point(10, 20)
+points.cp1 = new Point(20, -10)
+points.cp2 = new Point(50, 50)
+points.to = new Point(70, 20)
 
-  paths.example = new Path()
-    .move(points.from)
-    .curve(points.cp1, points.cp2, points.to)
-    .attr("class", "canvas")
-    .setText("FreeSewing rocks", "text-xs center")
+paths.example = new Path()
+.move(points.from)
+.curve(points.cp1, points.cp2, points.to)
+.attr("class", "canvas")
+.setText("FreeSewing rocks", "text-xs center")
 
-  return part
+return part
 }
+
 ```
 </Example>
 
@@ -54,3 +57,4 @@ all call this method under the hood.
 
 See [Using Attributes](/howtos/code/attributes)
 for information about custom Attributes that can be used with Paths.
+```

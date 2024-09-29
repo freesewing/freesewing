@@ -15,7 +15,9 @@ Point point.setText(
 )
 ```
 
-:::tipThis method is chainable as it returns the `Point` object:::
+:::tip
+This method is chainable as it returns the `Point` object
+:::
 
 ## Example
 
@@ -23,21 +25,23 @@ Point point.setText(
 ```js
 ({ Point, points, Path, paths, part }) => {
 
-  points.anchor = new Point(100, 25)
-    .setText('FreeSewing')
-    .setText('rocks')
+points.anchor = new Point(100, 25)
+.setText('FreeSewing')
+.setText('rocks')
 
-  // Avoid the text getting cropped
-  paths.hidden = new Path()
-    .move(points.anchor)
-    .line(points.anchor.shift(0, 80))
-    .addClass('hidden')
+// Avoid the text getting cropped
+paths.hidden = new Path()
+.move(points.anchor)
+.line(points.anchor.shift(0, 80))
+.addClass('hidden')
 
-  return part
+return part
 }
+
 ```
 </Example>
 
 ## Notes
 
 Remember to [use translation keys, not text](/guides/best-practices#use-translation-keys)
+```

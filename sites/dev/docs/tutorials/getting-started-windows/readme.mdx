@@ -35,11 +35,13 @@ FreeSewing project.
 
 ### Install WSL
 
-:::warning This guide uses WSL version 2, which requires installing the Hyper-V
+:::warning
+This guide uses WSL version 2, which requires installing the Hyper-V
 virtualisation system. If you have another virtualisation system installed (such
 as VirtualBox or VMWare) you may run into conflicts which require either
 updating that system to a version which can use the HyperV backend or porting
-your existing machines to use HyperV.  :::
+your existing machines to use HyperV.
+:::
 
 Follow the [Windows Subsystem for Linux Installation Guide for Windows
 10](https://docs.microsoft.com/en-gb/windows/wsl/install-win10) (requires a
@@ -48,8 +50,8 @@ recent version of Windows 10).
 #### Install NVM
 
 Open a new WSL terminal from the shortcuts created or by searching for "WSL
-Terminal" in the start menu.  [Install NVM by following the NVM setup
-guide](https://github.com/nvm-sh/nvm#install--update-script).  Once installed
+Terminal" in the start menu. [Install NVM by following the NVM setup
+guide](https://github.com/nvm-sh/nvm#install--update-script). Once installed
 you will need to activate NVM by either following the instructions printed to
 the screen or opening a new terminal.
 
@@ -63,10 +65,12 @@ then activate using `nvm use <version>`. You can determine what version the
 FreeSewing project uses by checking
 [freesewing/freesewing/.nvmrc](https://github.com/freesewing/freesewing/blob/develop/.nvmrc).
 
-:::warning At the time this guide was written the latest version of Node.js/npm has
+:::warning
+At the time this guide was written the latest version of Node.js/npm has
 a bug in the dependency resolution process which causes the freesewing project
 to fail to build. Use the latest LTS version (currently 18.17.0) or the specific
-version used by the main project to avoid this issue.  :::
+version used by the main project to avoid this issue.
+:::
 
 Node.js comes with the Node Package Manager (npm) by default which can be used to
 set up the project. The default package manager uses a fairly simplistic approach
@@ -122,7 +126,6 @@ this guide you have already done steps 1 and 2, you will only need to install
 the [remote development
 extension](https://aka.ms/vscode-remote/download/extension))
 
-
 ## Setting up a development environment in Windows.
 
 ### Install NVM
@@ -165,9 +168,12 @@ In VSCode or in a terminal, navigate to the folder you wish to contain your new 
 After you've answered [some questions](#questions), it will take a while to set everything up.
 When it's done, you will have a new folder with the development environment inside.
 
-:::tipThe folder will have the name you chose above.:::
+:::tip
+The folder will have the name you chose above.
+:::
 
 :::note
+
 ### Questions
 
 #### What template to use

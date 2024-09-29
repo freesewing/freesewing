@@ -6,7 +6,9 @@ The `Pattern.sample()` method will _sample_ the pattern which means
 to draft multiple variants of the same pattern, and stack them on
 top of each other.
 
-:::noteThis method is chainable as it returns the Pattern object:::
+:::note
+This method is chainable as it returns the Pattern object
+:::
 
 Under the hood, this method will call one of
 [Pattern.sampleOption()](/reference/api/pattern/sampleoption),
@@ -34,19 +36,17 @@ Pattern pattern.sample()
 ## Pattern.sample() example
 
 ```js
-import { Aaron } from "@freesewing/aaron"
+import { Aaron } from '@freesewing/aaron'
 
 // Load some public test measurements from the FreeSewing backend
 const measurements = (
-  await (
-    await fetch("https://backend3.freesewing.org/curated-sets/1.json")
-  ).json()
+  await (await fetch('https://backend3.freesewing.org/curated-sets/1.json')).json()
 ).measurements
 
 const pattern = new Aaron({
   sample: {
-    models: measurements
-  }
+    models: measurements,
+  },
 })
 
 const svg = pattern.sample().render()

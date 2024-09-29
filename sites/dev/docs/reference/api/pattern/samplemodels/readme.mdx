@@ -12,7 +12,9 @@ In this particular case, it will draft a variants for each of the models you pas
 The goal of model sampling is to verify that a pattern grades correctly up and down as sizes change.
 :::
 
-:::noteThis method is chainable as it returns the Pattern object:::
+:::note
+This method is chainable as it returns the Pattern object
+:::
 
 ## Pattern.sampleModels() signature
 
@@ -52,16 +54,14 @@ identifying your model in the models object.
 ## Pattern.sampleModels() example
 
 ```js
-import { Aaron } from "@freesewing/aaron"
+import { Aaron } from '@freesewing/aaron'
 
 const Aaron = new Aaron()
 
 // Load some public test measurements from the FreeSewing backend
 const measurements = (
-  await (
-    await fetch("https://backend3.freesewing.org/curated-sets/1.json")
-  ).json()
+  await (await fetch('https://backend3.freesewing.org/curated-sets/1.json')).json()
 ).measurements
 
-const svg = aaron.sampleModels(measurements, "34").render()
+const svg = aaron.sampleModels(measurements, '34').render()
 ```
