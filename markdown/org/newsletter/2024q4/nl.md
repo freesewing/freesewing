@@ -7,7 +7,7 @@ titel: "2024 Herfsteditie"
 
 Welkom bij de 2024 herfst editie van de FreeSewing nieuwsbrief.
 
-Dit is wat we op deze eerste dag van juli voor je in elkaar hebben geflanst:
+Dit is wat we hebben bij elkaar gesprokkeld:
 
 - 🕵️ Achter de Naden: Vili (7-minuten lezing door Vili & Karen)
 - Hoogtepunten van het Need Help-kanaal op Discord (2 minuten gelezen door Ben)

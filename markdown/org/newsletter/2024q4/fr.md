@@ -7,7 +7,7 @@ title : "2024 Autumn edition"
 
 Bienvenue dans l'édition d'automne 2024 de la newsletter de FreeSewing.
 
-Voici ce que nous avons concocté pour vous en ce premier jour de juillet :
+Voici ce que nous avons concocté pour vous:
 
 - 🕵️ Derrière les coutures : Vili (lecture de 7 minutes par Vili & Karen)
 - 🛟 Highlights from the Need Help channel on Discord (lecture de 2 minutes par Ben)

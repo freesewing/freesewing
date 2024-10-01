@@ -7,7 +7,7 @@ title: "2024 Autumn edition"
 
 Welcome to the 2024 Autumn edition of the FreeSewing newsletter.
 
-Here's what we've cobbled together for you on this first day of July:
+Here's what we've cobbled together for you:
 
 - 🕵️ Behind the Seams: Vili (7-minute read by Vili & Karen)
 - 🛟 Highlights from the Need Help channel on Discord (2-minte read by Ben)

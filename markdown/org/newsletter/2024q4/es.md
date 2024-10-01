@@ -7,7 +7,7 @@ título: "2024 edición de otoño"
 
 Bienvenidos a la edición de otoño 2024 del boletín FreeSewing.
 
-Esto es lo que hemos preparado para ti en este primer día de julio:
+Esto es lo que hemos preparado para ti:
 
 - 🕵️ Detrás de las costuras: Vili (lectura de 7 minutos por Vili y Karen)
 - 🛟 Lo más destacado del canal Need Help en Discord (lectura de 2 minutos por Ben)

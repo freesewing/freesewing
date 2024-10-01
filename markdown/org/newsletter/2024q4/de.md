@@ -7,7 +7,7 @@ title: "24 Herbstausgabe"
 
 Willkommen zur Herbstausgabe 2024 des FreeSewing-Newsletters.
 
-Hier ist, was wir an diesem ersten Juli-Tag für Sie zusammengeschustert haben:
+Hier ist, was wir für Sie zusammengeschustert haben:
 
 - 🕵️ Hinter den Nähten: Vili (7-minütige Lesung von Vili & Karen)
 - 🛟 Highlights aus dem Need Help-Kanal auf Discord (2-minütige Lesung von Ben)

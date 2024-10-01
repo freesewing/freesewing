@@ -7,10 +7,10 @@ title: "2024 Autumn edition"
 
 Welcome to the 2024 Autumn edition of the FreeSewing newsletter.
 
-Here's what we've cobbled together for you on this first day of July:
+Here's what we've got for you for our last newsletter of this year:
 
 - 🕵️ Behind the Seams: Vili (7-minute read by Vili & Karen)
-- 🛟 Highlights from the Need Help channel on Discord (2-minte read by Ben)
+- 🛟 Highlights from the Need Help channel on Discord (2-minute read by Ben)
 - 🏋️ Six languages weigh more than one (5-minute read buy Joost)
 
 Shall we get started?
@@ -251,7 +251,7 @@ It's arguably not really new, and I don't think anyone is waiting for yet anothe
 open source maintainer apologizing for being busy.
 
 However, this was the first time this feeling crossed over from _phew, this is
-a lot_ into _I can't do this any longer_ teritory.
+a lot_ into _I can't do this any longer_ territory.
 
 It's always darkest before dawn, and now that I've acknowledged that there's a
 problem and came up with a plan to deal with it (which I'll get to in a second)
@@ -265,11 +265,11 @@ and what we don't do.
 
 I've already ported [FreeSewing.dev](https://freesewing.dev/) to
 [Docusaurus](https://docusaurus.io/), which makes it a lot easier to maintain.
-There will be more under-the-hood changes like these that make our life eaiser,
+There will be more under-the-hood changes like these that make our life easier,
 without creating a material difference to our users.
 
 Unfortunately, that alone won't cut it, so I also intent to drop support
-for translation, and only maintain English from now onwards.
+for translation, and only maintain English from now onward.
 This too will go unnoticed for the vast majority of our users, but obviously
 not for all of them.
 
@@ -277,7 +277,7 @@ In May 2018, I wrote the following on the subject:
 
 > *I’ve decided to add a new challenge to the mix: i18n.*
 > 
-> *In case you’re wondering, i18n is short for internationalisation, aka making
+> *In case you’re wondering, i18n is short for internationalization, aka making
 > the site available in different languages.*
 > 
 > *Yes, May 25th will be here soon, and yes I need more work like I need
@@ -293,7 +293,7 @@ candidate of things to drop.
 To put things in perspective: 87.9% of FreeSewing users have selected English
 as their language of choice and thus will be unaffected by such a move.  Of the
 remaining users, those who prefer French form the largest contingent (7%)
-followed by Spanish (3.2%), German (1.7%), Dutch (1.1%) and finally Ukranian
+followed by Spanish (3.2%), German (1.7%), Dutch (1.1%) and finally Ukrainian
 (less then 0.1%). I don't have an easy way to extract similar data for our
 patrons, but I can safely say that if you combine the US, Canada, UK, Ireland, 
 and Australia you have covered the vast majority of patrons too.
@@ -316,14 +316,14 @@ least impactful because in practice, I'm not convinced it matters all that much.
 Today's browsers will translate pages on the fly, and I've more than once seen
 people interact with the site in non-English, not because they opted for a
 different language, but rather because their browser is in the habit of
-translating all English content to whatever is their prefered language.
+translating all English content to whatever is their preferred language.
 Furthermore, despite the great work of our many volunteer translators, a
 significant amount of FreeSewing content remains machine-translated because
 there's just _a lot_ of it. Does it really matter all that much whether it's
 us providing the (machine) translation or the browser?
 I don't believe it matters all that much.
 
-To come full cirlce, I feel it's worth pointing out that nobody has ever asked
+To come full circle, I feel it's worth pointing out that nobody has ever asked
 me to add translation to FreeSewing. I decided to add it because I felt that in
 a perfect world, everyone could access FreeSewing in the language of their
 choice. With the way machine learning (or _AI_ if you want) is going, that 
