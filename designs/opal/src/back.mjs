@@ -136,11 +136,10 @@ function draftBack({
     options.backBibBaseCurve
   )
 
-  points.strapTaperCurveMax = utils.beamsIntersect(
+  points.strapTaperCurveMax = utils.beamIntersectsX(
     points.bibHexagonUpperInside,
     points.bibHexagonTop,
-    points.strapTaperInside,
-    points.strapEndInside
+    points.strapEndInside.x
   )
   // Avoids an ugly case if the taper point is set too low.
   if (points.strapTaperInside.y > points.strapTaperCurveMax.y) {
