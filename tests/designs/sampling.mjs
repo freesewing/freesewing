@@ -50,6 +50,23 @@ export const testPatternSampling = (Pattern, log = false) => {
     }
   }
 
+  const doesItDraftAndRender = (pattern, log = false) => {
+    try {
+      pattern.draft().render()
+      if (log) {
+        console.log(pattern.store.logs)
+        console.log(pattern.setStores[0].logs)
+      }
+      if (pattern.store.logs.error.length < 1 && pattern.setStores[0].logs.error.length < 1)
+        return true
+      return false
+    } catch (err) {
+      if (log) console.log(err)
+
+      return false
+    }
+  }
+
   if (!isUtilityDesign(design)) {
     /*
      * Sample different measurements
@@ -77,22 +94,73 @@ export const testPatternSampling = (Pattern, log = false) => {
      * Sample different options
      */
     describe('Sample options:', () => {
+      let hasSampledCoreSettings = false
       for (const option in config.options) {
-        if (typeof config.options[option] === 'object') {
-          it(`  Sample ${option}:`, () => {
-            expect(
-              doesItSample(
-                new Pattern({
-                  sample: {
-                    type: 'option',
-                    option,
-                  },
-                  measurements: adult.cisFemale['36'],
-                }),
-                log
-              )
-            ).to.equal(true)
-          })
+        let saValues = [0, 10]
+        let paperlessValues = [false, true]
+        let completeValues = [true, false]
+        if (option.list || option.bool) {
+          hasSampledCoreSettings = true
+        } else {
+          // Performance optimization:
+          // sample different sa and paperless/complete settings only for options,
+          // which likely change the pattern structure (e.g. enable/disable parts).
+          // These are 'list' and 'bool' options.
+          // The hasSampledCoreSettings variable is used to ensure that all variants are tested at least once,
+          // even if no such options are present.
+          saValues = [0]
+          paperlessValues = [false]
+          completeValues = [true]
+        }
+        for (const sa of saValues) {
+          for (const complete of completeValues) {
+            for (const paperless of paperlessValues) {
+              if (typeof config.options[option] === 'object') {
+                it(`  Sample ${option} with sa:${sa} complete:${complete} paperless:${paperless}`, () => {
+                  expect(
+                    doesItSample(
+                      new Pattern({
+                        sample: {
+                          type: 'option',
+                          option,
+                        },
+                        measurements: adult.cisFemale['36'],
+                        sa: sa,
+                        complete: complete,
+                        paperless: paperless,
+                      }),
+                      log
+                    )
+                  ).to.equal(true)
+                })
+              }
+            }
+          }
+        }
+      }
+      if (!hasSampledCoreSettings) {
+        // test core settings without sampling a specific option
+        let saValues = [0, 10]
+        let paperlessValues = [false, true]
+        let completeValues = [true, false]
+        for (const sa of saValues) {
+          for (const complete of completeValues) {
+            for (const paperless of paperlessValues) {
+              it(`  Draft sa:${sa} complete:${complete} paperless:${paperless}`, () => {
+                expect(
+                  doesItDraftAndRender(
+                    new Pattern({
+                      measurements: adult.cisFemale['36'],
+                      sa: sa,
+                      complete: complete,
+                      paperless: paperless,
+                    }),
+                    log
+                  )
+                ).to.equal(true)
+              })
+            }
+          }
         }
       }
     })

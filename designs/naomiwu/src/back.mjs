@@ -210,6 +210,16 @@ function draftBack({
    */
   store.set('sideSeam', points.topRight.dist(points.bottomRight))
 
+  paths.flap = new Path()
+    .move(points.flapTopRight)
+    .line(points.flapTopLeft)
+    .line(points.flapBottomLeft)
+    .line(points.flapBottomRight)
+    .line(points.flapTopRight)
+    .close()
+    .addClass('note dashed stroke-sm')
+    .hide()
+
   /*
    * If the user wants a complete pattern, let's add some more guidance
    */
@@ -223,14 +233,7 @@ function draftBack({
      * Some thing with the pocket flap. Note that drawing both pocket and pocket flap
      * also helps people know which side is up, so to speak.
      */
-    paths.flap = new Path()
-      .move(points.flapTopRight)
-      .line(points.flapTopLeft)
-      .line(points.flapBottomLeft)
-      .line(points.flapBottomRight)
-      .line(points.flapTopRight)
-      .close()
-      .addClass('note dashed stroke-sm')
+    paths.flap.unhide()
 
     /*
      * Add a note on the center back seam (CB) to clarify this is center back

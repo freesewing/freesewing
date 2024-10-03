@@ -33,7 +33,7 @@ function draftBackPocket({
   delete paths.hipLine
   delete paths.side
   delete paths.backSeam
-  if (!complete) delete paths.flap
+  if (!complete) paths.flap.hide()
   delete snippets['dartLeft-bnotch']
   delete snippets['dartRight-bnotch']
   delete snippets['dartTip-bnotch']
