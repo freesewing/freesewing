@@ -585,7 +585,7 @@ export function pctBasedOn(measurement) {
  * @param {Point} from - First Point on the line
  * @param {Point} to - Second Point on the line
  * @param {Point} check - Point to check
- * @param {float} preciesion - How precise we should check
+ * @param {float} precision - How precise we should check
  * @return {bool} result - True of the Point is on the line, false when not
  */
 export function pointOnBeam(from, to, check, precision = 1e6) {
@@ -658,7 +658,7 @@ export function curveParameterFromPoint(start, cp1, cp2, end, check) {
  * @param {Point} from - Start of the line segment
  * @param {Point} to - End of the line segment
  * @param {Point} check - Point to check
- * @param {float} preciesion - How precise we should check
+ * @param {float} precision - How precise we should check
  * @return {bool} result - True of the Point is on the line segment, false when not
  */
 export function pointOnLine(from, to, check, precision = 1e6) {
