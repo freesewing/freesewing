@@ -126,9 +126,9 @@ const config = {
       },
       items: [
         { to: '/docs/about', label: 'About FreeSewing', position: 'left' },
-        { to: '/docs/designs', label: 'Designs docs', position: 'left' },
-        { to: '/docs/measurements', label: 'Measurements docs', position: 'left' },
-        { to: '/docs/sewing', label: 'Sewing docs', position: 'left' },
+        { to: '/docs/designs', label: 'FreeSewing Designs', position: 'left' },
+        { to: '/docs/measurements', label: 'Measurements we use', position: 'left' },
+        { to: '/docs/sewing', label: 'Sewing Terminology', position: 'left' },
         {
           href: 'https://freesewing.org/',
           label: 'FreeSewing.org',
