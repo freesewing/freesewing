@@ -1,9 +1,82 @@
 ---
-title: Measurements Sets
+title: Your Measurements Sets
+sidebar_position: 30
 ---
 
 A _measurements set_ holds a set of measurements along with meta data.
 
-In addition to the measurements -- which is the most important data in a set -- a FreeSewing measurements set also has the following fields:
+In addition to the measurements -- which is the most important data in a set --
+a FreeSewing measurements set also has the following fields:
 
-<ReadMore />
+- [Name](#name)
+- [Notes](#notes)
+- [Image](#img)
+- [Units](#units)
+- [Public](#public)
+
+## Name
+
+Every measurements set has a **name** attribute that is mandatory.\
+In other words, you must give each of your measurements sets a name, but that
+name can be anything you want.
+
+Typically, people give names that describe the set, like:
+
+- Myself, January 2024
+- Tony with binder
+- Jenny post augmentation
+
+But you do you.
+
+## Notes
+
+Every measurements set has a **notes** attribute that is optional.\
+The notes field allows you to add your notes to a measurements set.
+This field supports markdown, so you can use rich formatting, or even embed images.
+
+:::note
+If you make your measurements set public, your notes will also be public.
+:::
+
+### Image
+
+Every measurements set has a **image** attribute that is optional.
+
+A picture says more than a 1000 words, so if you have multiple measurements
+sets, this can help you tell them apart.
+
+So if you want, you can add an image to your measurements set. It's up to you.
+
+:::note
+If you make your measurements set public, your image will also be public.
+:::
+
+## Units
+
+Every measurements set has a **units** attribute that controls what units will
+be used to display measurements in the set.
+
+While each FreeSewing user has a **units** setting in their account that
+controls their overall preference between imperial or metric units, it is common
+to also have measurements sets for different people, and those different people
+might have other preferences.
+
+That is why we allow you to set the units on each measurements set.
+
+## Public
+
+Every measurements set has a **public** attribute that controls whether or not
+the measurements set is public.
+
+By default, measurements sets are private and you are the only one who can use
+them.
+
+But, you can choose to make your measurements set public which allows other
+users to utilize the measurements in this set to generate or test their own
+patterns.
+
+:::note
+If you make your measurements set public, this applies to all data in the
+measurements set. In other words, not only the measurements, but also the
+name, notes, and picture will be visible to other users.
+:::
