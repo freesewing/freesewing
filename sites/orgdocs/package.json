@@ -27,7 +27,8 @@
   "devDependencies": {
     "@babel/plugin-syntax-import-attributes": "^7.25.6",
     "@docusaurus/module-type-aliases": "3.5.2",
-    "@docusaurus/types": "3.5.2"
+    "@docusaurus/types": "3.5.2",
+    "yaml-loader": "^0.8.1"
   },
   "browserslist": {
     "production": [

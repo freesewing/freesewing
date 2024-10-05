@@ -79,6 +79,19 @@ const config = {
           )
         }
 
+        // i18n folder
+        fsConfig.resolve.alias[`@i18n`] = path.resolve(__dirname, `../../i18n`)
+
+        // Yaml loader
+        fsConfig.module = {
+          rules: [
+            {
+              test: /\.ya?ml$/,
+              use: 'yaml-loader',
+            },
+          ],
+        }
+
         return fsConfig
       },
     }),

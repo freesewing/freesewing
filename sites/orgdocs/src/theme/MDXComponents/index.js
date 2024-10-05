@@ -18,6 +18,7 @@ import TabItem from '@theme/TabItem'
 import { DesignInfo } from './design-info.mjs'
 import { Example } from './example.mjs'
 import { Legend } from './legend.mjs'
+import { MeasurementImage } from './measurement-image.mjs'
 import { ReadMore } from './readmore.js'
 
 const MDXComponents = {
@@ -45,6 +46,7 @@ const MDXComponents = {
   DesignInfo,
   Example,
   Legend,
+  MeasurementImage,
   ReadMore,
 }
 
