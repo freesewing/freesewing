@@ -71,7 +71,7 @@ export const DesignPicker = ({ linkTo = 'new', altLinkTo = 'docs' }) => {
             </h6>
             <div className="flex flex-row gap-1 items-center justify-center flex-wrap my-2">
               <b>{t('tags:tags')}:</b>
-              {tags.map((tag) => (
+              {tags.sort().map((tag) => (
                 <button
                   key={tag}
                   className={`badge font-medium hover:shadow
@@ -88,7 +88,7 @@ export const DesignPicker = ({ linkTo = 'new', altLinkTo = 'docs' }) => {
             </div>
             <div className="flex flex-row gap-1 items-center justify-center flex-wrap my-4">
               <b>{t('techniques:techniques')}:</b>
-              {techniques.map((tech) => (
+              {techniques.sort().map((tech) => (
                 <button
                   key={tech}
                   className={`badge font-medium hover:shadow
