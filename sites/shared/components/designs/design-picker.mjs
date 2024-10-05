@@ -71,37 +71,41 @@ export const DesignPicker = ({ linkTo = 'new', altLinkTo = 'docs' }) => {
             </h6>
             <div className="flex flex-row gap-1 items-center justify-center flex-wrap my-2">
               <b>{t('tags:tags')}:</b>
-              {tags.sort().map((tag) => (
-                <button
-                  key={tag}
-                  className={`badge font-medium hover:shadow
+              {tags
+                .sort((a, b) => t(`tags:${a}`).localeCompare(t(`tags:${b}`)))
+                .map((tag) => (
+                  <button
+                    key={tag}
+                    className={`badge font-medium hover:shadow
                  ${
                    filter?.tag && Array.isArray(filter.tag) && filter.tag.includes(tag)
                      ? 'badge badge-success hover:badge-error'
                      : 'badge badge-primary hover:badge-success'
                  }`}
-                  onClick={() => toggle('tag', tag)}
-                >
-                  {t(`tags:${tag}`)}
-                </button>
-              ))}
+                    onClick={() => toggle('tag', tag)}
+                  >
+                    {t(`tags:${tag}`)}
+                  </button>
+                ))}
             </div>
             <div className="flex flex-row gap-1 items-center justify-center flex-wrap my-4">
               <b>{t('techniques:techniques')}:</b>
-              {techniques.sort().map((tech) => (
-                <button
-                  key={tech}
-                  className={`badge font-medium hover:shadow
+              {techniques
+                .sort((a, b) => t(`techniques:${a}`).localeCompare(t(`techniques:${b}`)))
+                .map((tech) => (
+                  <button
+                    key={tech}
+                    className={`badge font-medium hover:shadow
                  ${
                    filter?.tech && Array.isArray(filter.tech) && filter.tech.includes(tech)
                      ? 'badge badge-success hover:badge-error'
                      : 'badge badge-accent hover:badge-success'
                  }`}
-                  onClick={() => toggle('tech', tech)}
-                >
-                  {t(`techniques:${tech}`)}
-                </button>
-              ))}
+                    onClick={() => toggle('tech', tech)}
+                  >
+                    {t(`techniques:${tech}`)}
+                  </button>
+                ))}
             </div>
             <div className="flex flex-row gap-2 items-center justify-center flex-wrap my-4">
               <b>{t('tags:difficulty')}:</b>
