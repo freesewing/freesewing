@@ -605,3 +605,16 @@ figure.develop.example div.develop {
   font-style: italic;
   margin-top: -1rem;
 }
+
+.tag,
+.technique {
+  background: var(--ifm-color-primary);
+  padding: 0.2rem 0.5rem;
+  font-weight: bold;
+  color: var(--ifm-font-color-light);
+  border-radius: 0.5rem;
+}
+
+.technique {
+  background: hsl(var(--pink-500));
+}
