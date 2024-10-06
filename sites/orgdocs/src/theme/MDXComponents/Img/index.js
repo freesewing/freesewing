@@ -7,7 +7,7 @@ function transformImgClassName(className) {
 export default function MDXImg(props) {
   // eslint-disable-next-line jsx-a11y/alt-text
   return (
-    <figure>
+    <figure className="mdx">
       <img
         decoding="async"
         loading="lazy"

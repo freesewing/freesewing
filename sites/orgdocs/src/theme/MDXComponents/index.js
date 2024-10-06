@@ -20,6 +20,7 @@ import { Example } from './example.mjs'
 import { Legend } from './legend.mjs'
 import { MeasurementImage } from './measurement-image.mjs'
 import { ReadMore } from './readmore.js'
+import { YouTube } from './youtube.mjs'
 
 const MDXComponents = {
   // Ejected Docusaurus components
@@ -48,6 +49,7 @@ const MDXComponents = {
   Legend,
   MeasurementImage,
   ReadMore,
+  YouTube,
 }
 
 export default MDXComponents

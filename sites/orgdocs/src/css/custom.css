@@ -619,9 +619,21 @@ figure.develop.example div.develop {
   background: hsl(var(--pink-500));
 }
 
+p > figure.mdx {
+  padding: 0;
+  margin: 0;
+}
+figure.mdx {
+  margin: 0;
+  padding: 1rem 0 0;
+}
+figure.mdx > img {
+  box-shadow: 1px 1px 4px #0006;
+}
 figcaption.mdx {
   font-style: italic;
-  margin-top: -0.5rem;
+  margin-top: -0.25rem;
+  opacity: 0.8;
   padding: 0 0.5rem;
   font-size: 90%;
 }
