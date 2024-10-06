@@ -1,6 +1,25 @@
 import path from 'node:path'
 import { themes as prismThemes } from 'prism-react-renderer'
 
+/*
+ * We bundle the options as one page, so keep them out the sidebar
+ */
+function hideDesignOptionsFromSidebar(items) {
+  const filtered = []
+  for (const item in items) {
+    if (items[item].label === 'FreeSewing Designs') {
+      for (const design in items[item].items) {
+        for (const subpage in items[item].items[design].items) {
+          if (items[item].items[design].items[subpage].label === 'Design Options') {
+            items[item].items[design].items[subpage].items = []
+          }
+        }
+      }
+    }
+  }
+  return items
+}
+
 const config = {
   title: 'FreeSewing',
   tagline: 'FreeSewing documentation for makers',
@@ -107,6 +126,10 @@ const config = {
           //routeBasePath: '/',
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/freesewing/freesewing/tree/main/sites/dev/',
+          async sidebarItemsGenerator({ defaultSidebarItemsGenerator, ...args }) {
+            const sidebarItems = await defaultSidebarItemsGenerator(args)
+            return hideDesignOptionsFromSidebar(sidebarItems)
+          },
         },
         theme: {
           customCss: './src/css/custom.css',
