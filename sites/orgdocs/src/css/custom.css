@@ -618,3 +618,10 @@ figure.develop.example div.develop {
 .technique {
   background: hsl(var(--pink-500));
 }
+
+figcaption.mdx {
+  font-style: italic;
+  margin-top: -0.5rem;
+  padding: 0 0.5rem;
+  font-size: 90%;
+}
