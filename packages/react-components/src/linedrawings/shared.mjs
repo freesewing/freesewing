@@ -13,6 +13,7 @@ export const LineDrawingWrapper = ({
   viewBox = '0 0 100 100', // SVG viewBox
   stroke = 1, // Stroke to use
   children = [], // The actual linedrawing
+  style = { maxHeight: 'inherit' },
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -23,6 +24,7 @@ export const LineDrawingWrapper = ({
     strokeLinecap="round"
     strokeLinejoin="round"
     className={className + ' linedrawing'}
+    style={style}
   >
     {children}
   </svg>
