@@ -34,7 +34,7 @@ const PatronsJoinPage = ({ page }) => {
           <h5>{t('patrons:watchYourInbox')}</h5>
           <p>{t('patrons:thanksMsg1')}</p>
           <p>
-            {t('patrons:thanksMsg2')}
+            {t('patrons:thanksMsg2')}{' '}
             <a
               href="mailto:joost@freesewing.org"
               className="font-bold underline decoration-2 hover:decoration-4"
