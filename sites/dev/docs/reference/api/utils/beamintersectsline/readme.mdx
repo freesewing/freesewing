@@ -1,0 +1,45 @@
+---
+title: utils.beamIntersectsLine()
+---
+
+The `utils.beamIntersectsLine()` function finds the intersection between an endless
+line (beam) and a (limited) line segment. Returns a [Point](/reference/api/point) object for the
+intersection, or `false` if the beam doesn't intersect the line.
+
+The first two points in the parameter list form the beam, the last two points form the line.
+
+## Signature
+
+```js
+Point | false utils.beamIntersectsLine(
+  Point beamA,
+  Point beamB,
+  Point lineA,
+  Point lineB
+)
+```
+
+## Example
+
+<Example caption="A Utils.beamIntersectsLine() example">
+
+```js
+;({ Point, points, Path, paths, Snippet, snippets, utils, part }) => {
+  points.A = new Point(45, 20)
+  points.B = new Point(60, 15)
+  points.C = new Point(10, 10)
+  points.D = new Point(50, 40)
+
+  paths.AB = new Path().move(points.A).line(points.B).addClass('dotted')
+  paths.CD = new Path().move(points.C).line(points.D)
+
+  snippets.x = new Snippet(
+    'notch',
+    utils.beamIntersectsLine(points.A, points.B, points.C, points.D)
+  )
+
+  return part
+}
+```
+
+</Example>

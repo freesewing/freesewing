@@ -12,6 +12,8 @@ import {
   round,
   __addNonEnumProp,
   __asNumber,
+  beamIntersectsCurve,
+  beamIntersectsLine,
 } from './utils.mjs'
 
 //////////////////////////////////////////////
@@ -537,6 +539,38 @@ Path.prototype.intersects = function (path) {
     }
   }
 
+  return intersections
+}
+
+/**
+ * Finds intersections between this Path and an endless line (beam) defined by two points
+ *
+ * @param {Point} start - The first point on the beam
+ * @param {Point} end - The second point on the beam
+ * @return {Array} intersections - An array of Point objects where the path intersects the beam
+ */
+Path.prototype.intersectsBeam = function (start, end) {
+  let intersections = []
+  for (let pathA of this.divide()) {
+    if (pathA.ops[1].type === 'line') {
+      __addIntersectionsToArray(
+        beamIntersectsLine(start, end, pathA.ops[0].to, pathA.ops[1].to),
+        intersections
+      )
+    } else if (pathA.ops[1].type === 'curve') {
+      __addIntersectionsToArray(
+        beamIntersectsCurve(
+          start,
+          end,
+          pathA.ops[0].to,
+          pathA.ops[1].cp1,
+          pathA.ops[1].cp2,
+          pathA.ops[1].to
+        ),
+        intersections
+      )
+    }
+  }
   return intersections
 }
 
@@ -1319,7 +1353,7 @@ export function pathsProxy(paths, log) {
  *
  * @private
  * @param {Array|Object|false} candidates - One Point or an array of Points to check for intersection
- * @param {Path} path - The Path instance to add as intersection if it has coordinates
+ * @param {Path} intersections - The Path instance to add as intersection if it has coordinates
  * @return {Array} intersections - An array of Point objects where the paths intersect
  */
 function __addIntersectionsToArray(candidates, intersections) {
