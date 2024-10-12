@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import { designs, designInfo } from '@site/src/lib/designs.mjs'
+import { pluginInfo } from '@site/src/lib/plugins.mjs'
 import { capitalize, optionsMenuStructure, optionType } from '@site/src/lib/utils.mjs'
 import Link from '@docusaurus/Link'
 import { lineDrawings } from '@freesewing/react-components/linedrawings'
@@ -35,33 +36,37 @@ const Cols = ({ children }) => (
   </div>
 )
 
-const Option = ({ id, option, design }) =>
+const Option = ({ id, option, design, i18n }) =>
   optionType(option) === 'constant' ? null : (
     <li key={option.name}>
-      <Link href={`/docs/designs/${design}/options/${id.toLowerCase()}`}>{id}</Link>
+      <Link href={`/docs/designs/${design}/options#${id.toLowerCase()}`}>
+        {i18n?.o?.[id].t}
+      </Link>
+      <br />
+      <small>{i18n?.o?.[id].d}</small>
     </li>
   )
 
-const OptionGroup = ({ id, group, design }) => (
+const OptionGroup = ({ id, group, design, i18n }) => (
   <li key={id}>
     <b>{optionGroupTranslations[id]}</b>
     <ul className="list list-inside list-disc pl-2">
       {Object.entries(group).map(([sid, entry]) =>
         entry.isGroup ? (
-          <OptionGroup id={sid} key={sid} t={t} group={entry} design={design} />
+          <OptionGroup id={sid} key={sid} t={t} group={entry} design={design} i18n={i18n} />
         ) : (
-          <Option key={sid} id={sid} option={entry} design={design} />
+          <Option key={sid} id={sid} option={entry} design={design} i18n={i18n} />
         )
       )}
     </ul>
   </li>
 )
 
-export const SimpleOptionsList = ({ options, design }) => {
+export const SimpleOptionsList = ({ options, design, i18n }) => {
   const structure = optionsMenuStructure(options, {}, true)
   const output = []
   for (const [key, entry] of Object.entries(structure)) {
-    const shared = { key, t, design, id: key }
+    const shared = { key, t, design, id: key, i18n }
     if (entry.isGroup) output.push(<OptionGroup {...shared} group={entry} />)
     else output.push(<Option {...shared} option={entry} />)
   }
@@ -110,16 +115,18 @@ const Subtle = ({ children }) => (
 )
 
 export const DesignInfo = ({ design }) => {
+  // Design
   const Design = designs[design][capitalize(design)]
   const config = Design.patternConfig
+  const i18n = designs[design].i18n.en
 
-  // Translate measurements
+  // Measurements
   const measies = { required: {}, optional: {} }
   if (config?.measurements) {
-    for (const m of config.measurements) measies.required[m] = t(`measurements:${m}`)
+    for (const m of config.measurements) measies.required[m] = m
   }
   if (config?.optionalMeasurements) {
-    for (const m of config.optionalMeasurements) measies.optional[m] = t(`measurements:${m}`)
+    for (const m of config.optionalMeasurements) measies.optional[m] = m
   }
 
   // Linedrawing
@@ -287,23 +294,50 @@ export const DesignInfo = ({ design }) => {
         </TabItem>
         {Object.keys(config.options).length > 0 ? (
           <TabItem value="desopts" label="Design Options">
-            <SimpleOptionsList options={config.options} design={design} />
+            <SimpleOptionsList options={config.options} design={design} i18n={i18n} />
           </TabItem>
         ) : null}
         <TabItem value="parts" label="Design Parts">
-          <ul>
-            {config.draftOrder.map((part) => (
-              <li key={part}>{part}</li>
-            ))}
-          </ul>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              {config.draftOrder.map((part) => (
+                <tr key={part}>
+                  <td style={{ textAlign: 'right'}}><code>{part}</code></td>
+                  <td>{i18n.p[part.split('.').pop()]}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </TabItem>
         {Object.keys(config.plugins).length > 0 ? (
           <TabItem value="plugins" label="Plugins used">
-            <ul>
-              {Object.keys(config.plugins).map((plugin) => (
-                <li key={plugin}>{plugin}</li>
-              ))}
-            </ul>
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                {Object.keys(config.plugins).map((plugin) => (
+                  <tr key={plugin}>
+                    <td style={{ textAlign: 'right'}}>
+                      <a target="_BLANK" rel="nofollow"
+                        href={`https://freesewing.dev/reference/plugins/${plugin.split('/plugin-').pop()}`}>
+                        <code>{plugin}</code>
+                      </a>
+                    </td>
+                    <td>{pluginInfo[plugin.split('/').pop()]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </TabItem>
         ) : null}
       </Tabs>
