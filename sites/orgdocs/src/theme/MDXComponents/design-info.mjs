@@ -157,7 +157,11 @@ export const DesignInfo = ({ design }) => {
                 }}
               >
                 {designInfo[design].tags.map((tag) => (
-                  <span style={{ margin: '3px 0', padding: '0 2px', fontSize: '80%' }} key={tag}>
+                  <span
+                    key={tag}
+                    style={{ margin: '3px 0', padding: '0 2px', fontSize: '80%' }}
+                    key={tag}
+                  >
                     <span className="tag" key={tag}>
                       {tag}
                     </span>
@@ -198,7 +202,7 @@ export const DesignInfo = ({ design }) => {
                 ) : (
                   designInfo[design].design
                     .map((person) => <span key={person}>{person}</span>)
-                    .join(<span key={`${peron}_join`}>, </span>)
+                    .join(<span key={`${person}_join`}>, </span>)
                 )}
                 <Subtle>
                   ( designer{typeof designInfo[design].design === 'string' ? '' : 's'} )
@@ -215,7 +219,7 @@ export const DesignInfo = ({ design }) => {
                 ) : (
                   designInfo[design].code
                     .map((person) => <span key={person}>{person}</span>)
-                    .join(<span key={`${peron}_join`}>, </span>)
+                    .join(<span key={`${person}_join`}>, </span>)
                 )}
                 <Subtle>
                   ( developer{typeof designInfo[design].code === 'string' ? '' : 's'} )

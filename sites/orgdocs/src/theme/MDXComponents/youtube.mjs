@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const YouTube = (props) => (
   <iframe
     style={{ width: '100%', aspectRatio: '16/9' }}

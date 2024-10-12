@@ -1,5 +1,6 @@
 import orderBy from 'lodash.orderby'
 import set from 'lodash.set'
+import { mergeOptions } from '@freesewing/core'
 
 export const capitalize = (string) =>
   typeof string === 'string' ? string.charAt(0).toUpperCase() + string.slice(1) : ''
@@ -62,5 +63,3 @@ export const optionType = (option) => {
 
   return 'constant'
 }
-
-
