@@ -1,0 +1,53 @@
+---
+title: Pattern.sample()
+---
+
+The `Pattern.sample()` method will _sample_ the pattern which means
+to draft multiple variants of the same pattern, and stack them on
+top of each other.
+
+:::note
+This method is chainable as it returns the Pattern object
+:::
+
+Under the hood, this method will call one of
+[Pattern.sampleOption()](/reference/api/pattern/sampleoption),
+[Pattern.sampleMeasurement()](/reference/api/pattern/samplemeasurement), or
+[Pattern.sampleModels()](/reference/api/pattern/samplemodels) to sample
+an option, a measurement, or different models respectively.
+
+Unlike those three methods where you pass the relevant info to to the method,
+this `Pattern.sample()` method will instead read the
+[`settings.sample`](/reference/settings/sample)
+object to determine what needs to be done.
+
+See the specific sample methods below for more details:
+
+- [Pattern.sampleOption()](/reference/api/pattern/sampleoption)
+- [Pattern.sampleMeasurement()](/reference/api/pattern/samplemeasurement)
+- [Pattern.sampleModels()](/reference/api/pattern/samplemodels)
+
+## Pattern.sample() signature
+
+```js
+Pattern pattern.sample()
+```
+
+## Pattern.sample() example
+
+```js
+import { Aaron } from '@freesewing/aaron'
+
+// Load some public test measurements from the FreeSewing backend
+const measurements = (
+  await (await fetch('https://backend3.freesewing.org/curated-sets/1.json')).json()
+).measurements
+
+const pattern = new Aaron({
+  sample: {
+    models: measurements,
+  },
+})
+
+const svg = pattern.sample().render()
+```

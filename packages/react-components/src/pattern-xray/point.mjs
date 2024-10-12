@@ -1,4 +1,5 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
+import React from 'react'
 // Components
 import { Point } from '../pattern/point.mjs'
 import { withinPartBounds } from '../pattern/utils.mjs'

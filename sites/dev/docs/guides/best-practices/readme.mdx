@@ -1,0 +1,193 @@
+---
+title: Pattern design best practices
+---
+
+Here is a list of best practices when designing patterns:
+
+## Re-use measurements
+
+When designing patterns, re-use the measurements that are already in use as much as possible.
+Nobody wins when every pattern requires its own set of measurements, or names
+certain measurements differently.
+
+:::tip
+
+###### See our measurements page for standard measurement names
+
+The [measurements reference page](/reference/measurements/)
+contains all our standard measurement names.
+
+:::
+
+## Re-use options
+
+The same arguments for re-using measurements are also (somewhat) true for options.
+
+While your pattern may require some very specific
+options, there's probably a bunch that are similar to other patterns. Re-use those names.
+
+As in, `bicepsEase` exists. So don't go creating an `upperArmEase` option.
+
+## Re-use CSS classes
+
+While you can style your pattern however you want, try to re-use the
+[CSS class names](/reference/css) that
+are in use in our default `@freesewing/plugin-theme` plugin.
+
+Doing so will ensure consistent styling for patterns.
+
+## Respect draft settings
+
+Apart from the pattern options that you configure for your pattern,
+all FreeSewing patterns have a set of [draft settings](/reference/settings) that can be tweaked
+by the user.
+
+While many of these will automatically be handled by FreeSewing, there are some
+that you will need to take into account while developing your pattern. They are:
+
+### Complete
+
+The [`complete`](/reference/settings/complete) setting is a boolean that is either true or false.
+
+Its goal is to determine whether we should draft a _complete_ pattern which
+includes elements such as seam allowance lines, labels, and markings for
+buttons and notches,
+or if the pattern should include the part outlines only.
+
+It is your job when developing your pattern to ensure that the pattern
+checks the `complete` setting and includes or omits the appropriate elements
+based on the setting's value.
+
+### Paperless
+
+The [`paperless`](/reference/settings/paperless) setting is a boolean that is either true or false.
+
+A _paperless_ pattern is a pattern that has extra dimension markings so
+users can trace or transfer the pattern onto fabric or paper without having
+the need to print it.
+
+It is your job when developing your pattern to ensure that the pattern
+checks the `paperless` setting and includes or omits the dimensions
+based on the setting's value.
+
+### Seam allowance
+
+The [`sa`](/reference/settings/sa) setting is a number that controls the seam allowance width.
+
+Unless `sa` is zero, patterns are drafted with seam allowance lines included.
+
+It is your job when developing your pattern to ensure that the pattern
+checks the `sa` setting and includes or omits the seam allowance lines
+based on the setting's value.
+
+:::tip
+
+##### Use a multiple of `sa` for your hem allowance
+
+Resist the temptation to use an absolute value for any seam allowance,
+including at the hem.
+
+Instead, always use a multiple of the `sa` value.
+This will help to ensure that the seam allowances will scale to appropriate
+values when the pattern is scaled up or down to giant or doll sizes.
+
+:::
+
+## Use percentage options where possible
+
+When designing patterns, you should refrain from using absolute values.
+
+That 6 cm ease you add might be fine for all scenarios you tested.
+But, then somebody comes around who is twice your size or who is making clothes for a doll,
+and things will go off the rails.
+
+Don't be tempted to add absolute values to your patterns, as they don't scale.
+Instead, embrace percentages as options.
+By using values that are percentages of measurements, the values will scale
+and continue to work as the measurements scale up or down.
+
+:::tip
+
+##### Use the doll and giant tests
+
+To check how well your pattern scales, you can
+use the _doll_ and _giant_ tests by sampling the pattern for 3 measurements sets:
+
+1. A set of measurements from an average person (the person)
+2. A set of measurements 1/10th of an average person (the doll)
+3. A set of measurements 3 times that of an average person (the giant)
+
+A well-designed pattern will scale a factor 10 down or 3 up and still hold its shape.
+If your pattern makes assumptions about size, these tests will show that.
+
+FreeSewing's development environment provides these tests out of the box,
+so you can see their results at the click of a button.
+
+:::
+
+## Use translation keys, not text
+
+Don't insert literal text in your patterns. Instead, insert a key that can then be translated.
+
+For example, if you want to put "_Finish with bias tape_" on your pattern, don't be
+tempted to do this:
+
+```js
+path.seam.attr("data-text", "Finish with bias tape");
+```
+
+That (English) string is now hard-coded in your pattern. As FreeSewing supports
+translation out of the box, it would be a real shame not to make use of it.
+
+Instead, insert a key to identify the string:
+
+```js
+path.seam.attr("data-text", "finishWithBiasTape");
+```
+
+This way, different strings for different languages can be associated with
+the key, allowing translated text to be used.
+
+You can find and browse the translations and available translation keys for each design in the design's
+[i18n folder on GitHub][1].
+
+[1]: https://github.com/freesewing/freesewing/tree/develop/designs/aaron/i18n
+
+## Construct paths counter-clockwise
+
+Construct your paths _counter-clockwise_ (anti-clockwise). You have to pick a direction anyway, and going
+counter-clockwise is a bit of a convention.
+
+This applies both to naming points (specifically the control points of curves)
+and the order in which you define your points.
+
+Obviously, the order in which you add points to your code needs to take a backseat
+to the logic of your code. But typically what you're doing is constructing an outline
+of (a part of) a garment.
+
+So pick a point, and make your way around counter-clockwise.
+
+When naming control points for curves, re-use the name of the point they are attached to
+and add `Cp1` to the control point before and `Cp2` to the control point after the point if,
+once again, you follow your path counter-clockwise.
+
+For example:
+
+```js
+part.paths.seam = new Path()
+  .move(points.hemCenter)
+  .line(points.hemSide)
+  .line(points.waistSide)
+  .curve(points.waistSideCp2, points.armholeCp1, points.armhole)
+```
+
+:::tip
+
+##### This convention helps with `Path.offset()` too
+
+Constructing a path counter-clockwise will also ensure that the path offset goes outwards
+rather than inwards.
+
+:::
+
+

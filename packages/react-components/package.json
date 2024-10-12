@@ -18,17 +18,23 @@
     "freesewing"
   ],
   "type": "module",
-  "module": "dist/index.mjs",
+  "module": "src/index.mjs",
   "exports": {
     ".": {
       "internal": "./src/index.mjs",
-      "default": "./dist/index.mjs"
+      "default": "./src/index.mjs"
     },
     "./pattern": "./src/pattern/index.mjs",
     "./xray": "./src/pattern-xray/index.mjs",
     "./editor": "./src/editor/index.mjs",
-    "./icons": "./src/editor/swizzle/components/icons.mjs"
-
+    "./icons": "./src/editor/swizzle/components/icons.mjs",
+    "./linedrawings": "./src/linedrawings/index.mjs",
+    "./popout": "./src/popout.mjs",
+    "./methods": "./src/editor/swizzle/methods/index.mjs"
+  },
+  "imports": {
+    "#components": "./src/editor/swizzle/components/index.mjs",
+    "#methods": "./src/editor/swizzle/methods/index.mjs"
   },
   "scripts": {
     "build": "node build.mjs",
@@ -48,7 +54,7 @@
     "react": "^18.2.0"
   },
   "dependencies": {
-    "axios": "1.6.8",
+    "axios": "1.7.4",
     "html-react-parser": "^5.0.7",
     "nuqs": "^1.17.6",
     "react-markdown": "^9.0.1",

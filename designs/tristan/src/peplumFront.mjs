@@ -17,10 +17,9 @@ export const CreateShape = ({
   const double =
     type == options.zipperLocation || (true == options.lacing && type == options.lacingLocation)
 
-  const angle = (options.peplumFullness / 2) * ratio * (double ? 0.5 : 1)
   macro('ringsector', {
     id: type + 'Peblum',
-    angle: angle,
+    angle: (options.peplumFullness / 2) * ratio * (double ? 0.5 : 1),
     insideRadius: radius,
     outsideRadius: radius + width,
     rotate: false,
@@ -53,9 +52,27 @@ export const CreateShape = ({
       .join(
         new Path()
           .move(points['__macro_ringsector_' + type + 'Peblum_ex2Flipped'])
-          .circleSegment(angle, points['__macro_ringsector_' + type + 'Peblum_center'])
+          .curve(
+            points['__macro_ringsector_' + type + 'Peblum_ex2cFlipped'],
+            points['__macro_ringsector_' + type + 'Peblum_ex1cFlipped'],
+            points['__macro_ringsector_' + type + 'Peblum_ex1']
+          )
+          .curve(
+            points['__macro_ringsector_' + type + 'Peblum_ex1c'],
+            points['__macro_ringsector_' + type + 'Peblum_ex2c'],
+            points['__macro_ringsector_' + type + 'Peblum_ex2']
+          )
           .line(points['__macro_ringsector_' + type + 'Peblum_in2'])
-          .circleSegment(-angle, points['__macro_ringsector_' + type + 'Peblum_center'])
+          .curve(
+            points['__macro_ringsector_' + type + 'Peblum_in2c'],
+            points['__macro_ringsector_' + type + 'Peblum_in1c'],
+            points['__macro_ringsector_' + type + 'Peblum_in1']
+          )
+          .curve(
+            points['__macro_ringsector_' + type + 'Peblum_in1cFlipped'],
+            points['__macro_ringsector_' + type + 'Peblum_in2cFlipped'],
+            points['__macro_ringsector_' + type + 'Peblum_in2Flipped']
+          )
           .offset(sa)
       )
       .line(points['__macro_ringsector_' + type + 'Peblum_in2Flipped'])

@@ -28,6 +28,9 @@ sites/*/package-lock.json
 # Nx cache
 .nx/cache
 
+# Docusaurus cache
+.docusaurus
+
 # Sites prebuild artifacts
 sites/*/public/locales/*/*.json
 !sites/sde/public/locales/*/*.json

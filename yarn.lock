@@ -5279,9 +5279,9 @@ domhandler@5.0.3, domhandler@^5.0.2, domhandler@^5.0.3:
     domelementtype "^2.3.0"
 
 dompurify@^3.0.5:
-  version "3.0.8"
-  resolved "https://registry.npmjs.org/dompurify/-/dompurify-3.0.8.tgz"
-  integrity sha512-b7uwreMYL2eZhrSCRC4ahLTeZcPZxSmYfmcQGXGkXiZSNW1X85v+SDM5KsWcpivIiUBH47Ji7NtyUdpLeF5JZQ==
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/dompurify/-/dompurify-3.1.6.tgz#43c714a94c6a7b8801850f82e756685300a027e2"
+  integrity sha512-cTOAhc36AalkjtBpfG6O8JimdTMWNXjiePT2xQH/ppBGi/4uIpmj8eKyIkMJErXWARyINV/sB38yf8JCLF5pbQ==
 
 domutils@1.5:
   version "1.5.1"
@@ -8274,10 +8274,10 @@ jotai-location@0.5.5:
   resolved "https://registry.yarnpkg.com/jotai-location/-/jotai-location-0.5.5.tgz#2b2622da6ee49493bc4d69e5610e2e5d382894ed"
   integrity sha512-6QW/7W9IJHjhbn7gRgAw4sC30k0/G6JiC4uPlKi8ZPZGYk7R7r9PyMD2eVhL4XSxxag89JxS1iSyr6BIXsB4Sw==
 
-jotai@2.9.2:
-  version "2.9.2"
-  resolved "https://registry.yarnpkg.com/jotai/-/jotai-2.9.2.tgz#0b1036bc1672d02ea7cf73c6b01728de461d6ecf"
-  integrity sha512-jIBXEadOHCziOuMY6HAy2KQcHipGhnsbF+twqh8Lcmcz/Yei0gdBtW5mOYdKmbQxGqkvfvXM3w/oHtJ2WNGSFg==
+jotai@2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/jotai/-/jotai-2.10.0.tgz#7483b81ab21ba28778f04b29368728f25efe4e89"
+  integrity sha512-8W4u0aRlOIwGlLQ0sqfl/c6+eExl5D8lZgAUolirZLktyaj4WnxO/8a0HEPmtriQAB6X5LMhXzZVmw02X0P0qQ==
 
 jpeg-exif@^1.1.4:
   version "1.1.4"

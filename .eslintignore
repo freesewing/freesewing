@@ -6,6 +6,7 @@
 *.svg
 *.sh
 *.md
+*.mdx
 *.prisma
 *.css
 *.mustache

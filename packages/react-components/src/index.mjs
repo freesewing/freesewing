@@ -13,6 +13,8 @@ import { Svg } from './pattern/svg.mjs'
 import { Text, TextOnPath } from './pattern/text.mjs'
 // Pattern Utils
 import { getId, getProps, translateStrings, withinPartBounds } from './pattern/utils.mjs'
+// Stand alone components
+import { Popout } from './popout.mjs'
 
 /**
  * Translation namespaces used by these components
@@ -44,4 +46,6 @@ export {
   withinPartBounds,
   // These are not React components but various helpers
   ns,
+  // Stand along components
+  Popout,
 }

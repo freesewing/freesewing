@@ -1,0 +1,221 @@
+---
+title: Your FreeSewing Account
+sidebar_position: 20
+---
+
+Your FreeSewing account is where we store your data.
+Your account itself can hold the following fields:
+
+- About you:
+  - [Username](#username)
+  - [Email Address](#email)
+  - [Bio](#bio)
+  - [Profile Image](#img)
+  - [Social media platforms](#social)
+  - [GitHub identity](#github)
+- Preferences:
+  - [Units](#units)
+  - [Measurements Sets Comparison](#compare)
+  - [User Experience](#control)
+  - [Newsletter](#newsletter)
+  - [Password](#password)
+- Internal:
+  - [User ID](#uid)
+  - [Role](#role)
+
+:::note
+In addition, any
+[bookmarks](/docs/about/site/bookmarks/),
+[measurements sets](/docs/about/site/sets/),
+[patterns](/docs/about/site/patterns/), and
+[API keys](/docs/about/site/apikeys/) are strictly speaking also part
+of your _account data_ but they are stored as individual records, rather than
+as fields in your account.
+:::
+
+## About you
+
+These fields tell a little bit about yourself and -- with the exception of your
+email address -- are visible to other FreeSewing users when they visit your
+profile.
+
+### Username
+
+Your username is special name that uniquely identifies you.
+
+You can choose your own username, so anything goes.
+
+To avoid confusion, usernames must be unique when lowercased. In other words,
+the username `Joost` will not be available if a user `joost` exists.
+
+### Email Address {#email}
+
+Your email address ensures we can reach you when it's needed.
+For example when you have forgotten your password.
+
+### Bio
+
+Your account **bio** is the place where you can tell a little bit about
+yourself.
+
+Other FreeSewing users can see your bio, so this is a way to find like-minded
+people or promote your own content.
+
+This field supports Markdown, so you can add links and even images.
+
+### Profile Image {#img}
+
+You can choose a **profile image** to further personalize your account.
+
+It can be a picture of you, your cat, your favourite cartoon character. You do
+you.
+
+### Social media platforms {#social}
+
+You can set your username/identity on other social media platforms in your
+FreeSewing account.
+
+We do not use this data in any way. This is only here so FreeSewing users can
+connect the dots across platforms.
+
+### GitHub identity {#github}
+
+If you add your **GitHub username** and **GitHub email address** to your
+account, we will use them when interacting with GitHub on your behalf.
+
+Note that both your GitHub username and email is public info. This merely
+allows us to make a link between your FreeSewing account and GitHub account.
+
+For example, when you report a problem on this website, we can mention you so
+you will receive notifications when there is an update. For this, your username
+is sufficient.
+
+When you submit a showcase post or make changed to our content, we can credit
+those commits to you if we have both your username and the email address you
+use on GitHub.
+
+:::note
+If all of this in confusing, you don't have to provide this info. It's an
+advanced feature.
+:::
+
+## Preferences
+
+These fields register your preferences for using the site.
+
+### Units
+
+FreeSewing support both **metric units** (cm) and **imperial units** (inch).
+
+Here you can choose which type of units you prefer.
+
+Note that you can override these default units in various places, such as on a
+specific pattern or measurements set.
+
+### Measurements Sets Comparison {#compare}
+
+We can occasionally show how your sets of measurements compare to other
+measurements sets. This allows us to detect potential problems in your
+measurements or patterns.
+
+Comparing yourself to others is the fastest way to be unhappy, so if you'd
+rather not see any comparisons, you can disable this feature altogether.
+
+### User Experience {#control}
+
+This setting allows you to control what sort of a user experience you want.
+One that is more simple, with advanced features hidden. Or one that has all
+bells and whistles.
+
+FreeSewing is a rather advanced platform, and that can be intimidating for new
+users. This setting was created to allow people to start simple, and then
+unlock more features later.
+
+#### Levels and Features
+
+Each User Experience level adds additional features and settings
+to the ones provided by the levels below it.
+
+<details>
+<summary>Show details of what features are available at the various levels</summary>
+
+|    Level    | Pattern Drafting UI                                                                                                                                    | Account Settings                                                                                                                                                                                                                                                     |
+| :---------: | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|    **1**    | **Settings:** Units<br />**Views:** Pattern Editor, Pattern Measurements, Print Layout, Save Pattern As, Export Pattern, Documentation                 | <br />**Data:** Patterns, Measurement Sets <br />**Settings:** User Experience<br /> **Patterns:** Name, Image<br /> **Measurement Sets:** Name, Image, Units                                                                                                        |
+|    **2**    | **Settings:** Seam Allowance, Paperless<br />**UI:** Kiosk Mode<br />**Views:** Pattern Logs                                                           | <br />**Data:** Bookmarks<br />**Info:** Username, Bio, Img<br />**Settings:** Language, Units, Newsletter Subscription, Consent & Privacy<br />**Security:** Password<br />**Patterns:** Notes, Created, Updated<br />**Measurement Sets:** Notes, Created, Updated |
+|    **3**    | **Settings:** Language<br />**Views:** Test Design, Time Design                                                                                        | <br />**Info:** Email Address<br />**Settings:** Metricset Comparison<br />**Security:** Two-Factor Authentication<br />**Social:** GitHub, Instagram, Mastodon, Reddit, Twitch, TikTok, Website<br />**Patterns:** Public<br />**Measurement Sets:** Public         |
+| <br />**4** | <br />**Settings:** Details, Expand, Included Parts, Scale, Margin<br />**UI:** Render Engine<br />**Views:** Edit Settings by Hand, Pattern Inspector | **Data:** API Keys<br />**Security:** API Keys<br />**Patterns:** ID<br />**Measurement Sets:** ID                                                                                                                                                                   |
+| <br />**5** | <br />("_Are you sure?_" confirmation guardrails removed.)                                                                                             | <br />("_Are you sure?_" confirmation guardrails removed.)                                                                                                                                                                                                           |
+
+</details>
+
+### Newsletter
+
+This allows you to subscribe to the FreeSewing newsletter. Or not.
+
+### Password
+
+Your password guards your account so that only you can access it.
+
+We do not enforce a password policy, but recommend you
+enable [Two-Factor Authentication](https://freesewing.org/account/mfa/).
+
+## Internal
+
+These fields are required for the site to function. You cannot change them.
+
+### User ID {#uid}
+
+Every FreeSewing user has a user ID, sometimes referred to as `UID` or just
+`ID`. It is a number that uniquely identifies one particular user.
+
+You can find it on [your account page](https://freesewing.org/account) under
+**info**. Or navigate to [/id](https://freesewing.org/id) and -- if you are
+logged in -- you will see your ID there.
+
+:::tip
+Make sure to always mention your ID when [contacting
+support]https://freesewing.org(/support).
+:::
+
+### Role
+
+Every FreeSewing user has a role that determines their privileges on the site.
+
+You can see your role on [your account page](https://freesewing.org/account)
+under **info**. Or navigate to [/id]https://freesewing.org(/id) and -- if you
+are logged in -- you will see your role there.
+
+The following roles exist:
+
+- **user**
+- **bughunter**
+- **support**
+- **admin**
+
+### User
+
+More that 99.99% of FreeSewing users have the **user** role. It is the default
+role, and it is exceedingly rare to have a user that has a different role.
+
+### Bughunter
+
+The **bughunter** role grants you permission to read measurments and patterns
+data from other users.
+
+It is a role that is reserved for people in the community who want to help
+other users troubleshoot their patterns.
+
+### Support
+
+The **support** role grants you permission to read all account data from other
+users.
+
+It is a role reserved for contributors who hunt down bugs reported by users.
+
+### Admin
+
+The **admin** role grants you all permissions, including changing the roles of
+other users.
+
+Only [joost]https://freesewing.org(/users/user?id=1) holds the admin role.

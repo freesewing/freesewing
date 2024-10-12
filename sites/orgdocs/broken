@@ -1,0 +1,22 @@
+  Exhaustive list of all broken links found:
+  - Broken link on source page path = /docs:
+     -> linking to /tutorials/getting-started-linux/dev-setup
+     -> linking to /guides/
+     -> linking to /howtos/
+     -> linking to /tutorials/
+     -> linking to /reference/
+     -> linking to /training/git/
+  - Broken link on source page path = /docs/designs/aaron/:
+     -> linking to /designs/brian
+  - Broken link on source page path = /docs/designs/brian/options/:
+     -> linking to /docs/designs/brian/options$armholedepthfactor
+  - Broken link on source page path = /docs/designs/brian/options/armholedepth/:
+     -> linking to /docs/designs/brian/options$armholedepthfactor
+  - Broken link on source page path = /:
+     -> linking to /tutorials/getting-started-linux/dev-setup
+     -> linking to /guides/
+     -> linking to /howtos/
+     -> linking to /tutorials/
+     -> linking to /reference/
+     -> linking to /training/git/
+
