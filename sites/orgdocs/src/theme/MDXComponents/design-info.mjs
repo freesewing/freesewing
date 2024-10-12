@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { designs, designInfo } from '@site/src/lib/designs.mjs'
 import { pluginInfo } from '@site/src/lib/plugins.mjs'
 import { capitalize, optionsMenuStructure, optionType } from '@site/src/lib/utils.mjs'
@@ -7,7 +7,6 @@ import { lineDrawings } from '@freesewing/react-components/linedrawings'
 import { designs as designTranslations } from '../../../../../i18n/designs.mjs'
 import measurementTranslations from '../../../../../i18n/measurements.yaml'
 import optionGroupTranslations from '../../../../../i18n/optiongroups.yaml'
-import Admonition from '@theme/Admonition'
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
@@ -18,6 +17,7 @@ export const Difficulty = ({ score = 0, color = false }) => (
   <>
     {five.map((i) => (
       <span
+        key={i}
         role="img"
         style={{
           padding: '0 1px 0 0 ',
@@ -40,9 +40,7 @@ const Cols = ({ children }) => (
 const Option = ({ id, option, design, i18n }) =>
   optionType(option) === 'constant' ? null : (
     <li key={option.name}>
-      <Link href={`/docs/designs/${design}/options#${id.toLowerCase()}`}>
-        {i18n?.o?.[id].t}
-      </Link>
+      <Link href={`/docs/designs/${design}/options#${id.toLowerCase()}`}>{i18n?.o?.[id].t}</Link>
       <br />
       <small>{i18n?.o?.[id].d}</small>
     </li>
@@ -119,14 +117,12 @@ export const DesignInfo = ({ design }) => {
   const config = Design.patternConfig
   const i18n = designs[design].i18n.en
 
-  if (!Design) return null
-
   // Measurements
   const measies = { required: {}, optional: {} }
-  if (config?.measurements) {
+  if (config.measurements) {
     for (const m of config.measurements) measies.required[m] = m
   }
-  if (config?.optionalMeasurements) {
+  if (config.optionalMeasurements) {
     for (const m of config.optionalMeasurements) measies.optional[m] = m
   }
 
@@ -161,7 +157,7 @@ export const DesignInfo = ({ design }) => {
                 }}
               >
                 {designInfo[design].tags.map((tag) => (
-                  <span style={{ margin: '3px 0', padding: '0 2px', fontSize: '80%' }}>
+                  <span style={{ margin: '3px 0', padding: '0 2px', fontSize: '80%' }} key={tag}>
                     <span className="tag" key={tag}>
                       {tag}
                     </span>
@@ -309,7 +305,9 @@ export const DesignInfo = ({ design }) => {
             <tbody>
               {config.draftOrder.map((part) => (
                 <tr key={part}>
-                  <td style={{ textAlign: 'right'}}><code>{part}</code></td>
+                  <td style={{ textAlign: 'right' }}>
+                    <code>{part}</code>
+                  </td>
                   <td>{i18n.p[part.split('.').pop()]}</td>
                 </tr>
               ))}
@@ -328,9 +326,14 @@ export const DesignInfo = ({ design }) => {
               <tbody>
                 {Object.keys(config.plugins).map((plugin) => (
                   <tr key={plugin}>
-                    <td style={{ textAlign: 'right'}}>
-                      <a target="_BLANK" rel="nofollow"
-                        href={`https://freesewing.dev/reference/plugins/${plugin.split('/plugin-').pop()}`}>
+                    <td style={{ textAlign: 'right' }}>
+                      <a
+                        target="_BLANK"
+                        rel="nofollow"
+                        href={`https://freesewing.dev/reference/plugins/${plugin
+                          .split('/plugin-')
+                          .pop()}`}
+                      >
                         <code>{plugin}</code>
                       </a>
                     </td>
@@ -345,4 +348,3 @@ export const DesignInfo = ({ design }) => {
     </>
   )
 }
-

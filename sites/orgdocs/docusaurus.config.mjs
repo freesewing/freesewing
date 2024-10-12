@@ -5,7 +5,6 @@ import { themes as prismThemes } from 'prism-react-renderer'
  * We bundle the options as one page, so keep them out the sidebar
  */
 function hideDesignOptionsFromSidebar(items) {
-  const filtered = []
   for (const item in items) {
     if (items[item].label === 'FreeSewing Designs') {
       for (const design in items[item].items) {

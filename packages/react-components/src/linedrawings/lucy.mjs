@@ -1,5 +1,5 @@
 import React from 'react'
-import { LineDrawingWrapper, thin, dashed } from './shared.mjs'
+import { LineDrawingWrapper } from './shared.mjs'
 
 const strokeScale = 0.6
 

@@ -1,7 +1,4 @@
-import Link from '@docusaurus/Link'
 import Layout from '@theme/Layout'
-import NewDesign from './_new-design.md'
-import SetupMonorepo from './_setup-monorepo.md'
 import MDXContent from '@theme/MDXContent'
 
 const styles = {
@@ -69,24 +66,16 @@ export default function Home() {
         </div>
         <div style={styles.cards}>
           <Card title="FreeSewing Designs" icon="🤓" href="/docs/designs/">
-            <p style={styles.cardp}>
-              Documentation for all our designs.
-            </p>
+            <p style={styles.cardp}>Documentation for all our designs.</p>
           </Card>
           <Card title="About FreeSewing" icon="👕" href="/docs/about/">
-            <p style={styles.cardp}>
-              Documentation about FreeSewing.org and how to use it.
-            </p>
+            <p style={styles.cardp}>Documentation about FreeSewing.org and how to use it.</p>
           </Card>
           <Card title="Measurements we use" icon="🚀" href="/docs/measurements/">
-            <p style={styles.cardp}>
-              Documentation for all the measurements we use.
-            </p>
+            <p style={styles.cardp}>Documentation for all the measurements we use.</p>
           </Card>
           <Card title="Sewing terminology" icon="🧑‍🤝‍🧑" href="/docs/sewing/">
-            <p style={styles.cardp}>
-              Documentation for various terms that are used in sewing.
-            </p>
+            <p style={styles.cardp}>Documentation for various terms that are used in sewing.</p>
           </Card>
         </div>
       </MDXContent>
