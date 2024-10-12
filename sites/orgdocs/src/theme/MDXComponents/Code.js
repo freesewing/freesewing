@@ -1,3 +1,4 @@
+import React from 'react'
 import CodeBlock from '@theme/CodeBlock'
 import CodeInline from '@theme/CodeInline'
 function shouldBeInline(props) {
