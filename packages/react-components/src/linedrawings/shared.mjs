@@ -31,12 +31,17 @@ export const LineDrawingWrapper = ({
 )
 
 /*
- * Think stroke-width helper to ensure consistency across linedrawings
+ * Regular stroke-width helper to ensure consistency across linedrawings
+ */
+export const regular = (stroke = 1) => ({ strokeWidth: stroke })
+
+/*
+ * Thin stroke-width helper to ensure consistency across linedrawings
  */
 export const thin = (stroke = 1) => ({ strokeWidth: stroke / 2 })
 
 /*
- * Think stroke-width helper to ensure consistency across linedrawings
+ * Very thin stroke-width helper to ensure consistency across linedrawings
  */
 export const veryThin = (stroke = 1) => ({ strokeWidth: stroke / 3 })
 
