@@ -1,6 +1,5 @@
 import { collection } from '../../org/hooks/use-design.mjs'
 import { siteConfig as orgConfig } from '../../org/site.config.mjs'
-import { siteConfig as devConfig } from '../../dev/site.config.mjs'
 import { algoliaClient, indexSettings } from './algolia.mjs'
 import fs from 'fs'
 import path from 'path'
@@ -9,7 +8,6 @@ import strip from 'strip-markdown'
 
 const siteConfig = {
   org: orgConfig,
-  dev: devConfig,
 }
 
 export const loadMdText = async ({
