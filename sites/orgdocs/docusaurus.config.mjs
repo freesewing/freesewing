@@ -1,5 +1,6 @@
 import path from 'node:path'
 import { themes as prismThemes } from 'prism-react-renderer'
+import designs from '../../config/software/designs.json'
 
 /*
  * We bundle the options as one page, so keep them out the sidebar
@@ -94,6 +95,14 @@ const config = {
           fsConfig.resolve.alias[`@freesewing/${pkg}`] = path.resolve(
             __dirname,
             `../../packages/${pkg}/src/index.mjs`
+          )
+        }
+
+        // Load designs from source, rather than compiled package
+        for (const pkg of Object.keys(designs)) {
+          fsConfig.resolve.alias[`@freesewing/${pkg}`] = path.resolve(
+            __dirname,
+            `../../designs/${pkg}/src/index.mjs`
           )
         }
 
