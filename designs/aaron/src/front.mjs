@@ -16,7 +16,7 @@ export const front = {
     frontArmholeDeeper: 0,
     armholeDepthFactor: 0.6,
     shoulderSlopeReduction: 0,
-    chestEase: { pct: 8, min: 0, max: 20, ...pctBasedOn('chest'), menu: 'style' },
+    chestEase: { pct: 8, min: 0, max: 20, ...pctBasedOn('chest'), menu: 'fit' },
     draftForHighBust: { bool: false, menu: 'fit' },
     hipsEase: { pct: 8, min: 0, max: 20, menu: 'fit' },
     stretchFactor: { pct: 5, min: 0, max: 15, menu: 'fit' },

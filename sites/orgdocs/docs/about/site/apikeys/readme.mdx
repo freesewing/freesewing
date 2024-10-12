@@ -1,0 +1,60 @@
+---
+title: Your API Keys
+sidebar_position: 60
+---
+
+An _API_ key is a unique identifier used to authenticate and authorize a
+request to the FreeSewing backend. Whereas a username (and password) are
+intended for users, API keys (and secret) are intended to authenticate and
+authorize a robot, program, or script rather than a human user.
+
+To create a FreeSewing API key, you need to provide the following fields:
+
+- [Name](#name)
+- [Permission level](#level)
+- [Expiry](#expiry)
+
+:::note
+API keys are an advanced feature aimed at developers and geeky users.
+:::
+
+## Name
+
+Every API key has a **name** attribute that is mandatory.
+In other words, you must give each of your API keys a name, but that name can
+be anything you want.
+
+Typically, people give names that describe where the key is used, like:
+
+- Production backend
+- GitLab runner
+- Local development on my laptop
+
+But you do you.
+
+## Permission level {#level}
+
+Every API key has a **permission level** the controls what the key can do.
+
+The permission level is a number from `0` to `4` with the following significance:
+
+- `0` : Authenticate only
+- `1` : Read access to your own patterns and measurements sets
+- `2` : Read access to all your account data
+- `3` : Write access to your own patterns and measurements sets
+- `4` : Write access to all your account data
+
+:::tip
+For more details, refer to [the backend documentation on FreeSewing.dev](https://freesewing.dev/reference/backend/rbac#permission-levels)
+:::
+
+## Expiry
+
+Every API key has an **expiry date** after which the key will stop working.
+
+By default, API keys expire after 1 month, but we support up to two years.
+
+:::note
+When your key is about to expire, you must replace it with a new one.
+You cannot extend the expiry date of a key once set.
+:::

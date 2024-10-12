@@ -28,6 +28,7 @@
     "./xray": "./src/pattern-xray/index.mjs",
     "./editor": "./src/editor/index.mjs",
     "./icons": "./src/editor/swizzle/components/icons.mjs",
+    "./linedrawings": "./src/linedrawings/index.mjs",
     "./popout": "./src/popout.mjs",
     "./methods": "./src/editor/swizzle/methods/index.mjs"
   },
