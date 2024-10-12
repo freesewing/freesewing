@@ -1,5 +1,5 @@
 import React from 'react'
-import { LineDrawingWrapper } from './shared.mjs'
+import { LineDrawingWrapper, regular } from './shared.mjs'
 
 const strokeScale = 0.5
 
@@ -42,6 +42,7 @@ export const Front = ({ stroke }) => (
     <path
       key="folds"
       opacity={0.3}
+      {...regular(stroke)}
       d="m 109.14,106.83
       c 0,0 36.32,8.99 40.28,9.11
 
@@ -72,6 +73,7 @@ export const Front = ({ stroke }) => (
     />
     <path
       key="outline"
+      {...regular(stroke)}
       d="m 158.93,97.78
       a 4.83,3.82 15.24 0 1 -5.66,2.42 4.83,3.82 15.24 0 1 -3.65,-4.96 4.83,3.82 15.24 0 1 5.66,-2.42 4.83,3.82 15.24 0 1 3.65,4.96
       z
