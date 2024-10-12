@@ -103,7 +103,11 @@ const config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
+    algolia: {
+      appId: 'VBV9JOCO5C',
+      apiKey: '663aefa13d332c45801dc32d9d5ea718',
+      indexName: 'freesewing',
+    },
     image: 'img/freesewing-social-card.png',
     navbar: {
       title: 'FreeSewing.dev',
