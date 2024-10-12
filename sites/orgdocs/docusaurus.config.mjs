@@ -165,10 +165,10 @@ const config = {
         {
           title: 'Docs',
           items: [
-            { label: 'Guides', to: '/guides' },
-            { label: 'Howtos', to: '/howtos' },
-            { label: 'Reference', to: '/reference' },
-            { label: 'Tutorials', to: '/tutorials' },
+            { label: 'FreeSewing designs', to: '/docs/designs/' },
+            { label: 'About FreeSewing', to: '/docs/about/' },
+            { label: 'Measurements we use', to: '/docs/measurements/' },
+            { label: 'Sewing terminology', to: '/docs/sewing/' },
           ],
         },
         {

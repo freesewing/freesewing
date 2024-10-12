@@ -12,6 +12,7 @@ import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
 const five = [0, 1, 2, 3, 4]
+const t = (str) => str
 
 export const Difficulty = ({ score = 0, color = false }) => (
   <>
@@ -66,15 +67,13 @@ export const SimpleOptionsList = ({ options, design, i18n }) => {
   const structure = optionsMenuStructure(options, {}, true)
   const output = []
   for (const [key, entry] of Object.entries(structure)) {
-    const shared = { key, t, design, id: key, i18n }
+    const shared = { key, design, id: key, i18n }
     if (entry.isGroup) output.push(<OptionGroup {...shared} group={entry} />)
     else output.push(<Option {...shared} option={entry} />)
   }
 
   return <ul className="list list-inside pl-2 list-disc">{output}</ul>
 }
-
-const t = (str) => str
 
 const Info = ({ design, list }) => (
   <div
@@ -119,6 +118,8 @@ export const DesignInfo = ({ design }) => {
   const Design = designs[design][capitalize(design)]
   const config = Design.patternConfig
   const i18n = designs[design].i18n.en
+
+  if (!Design) return null
 
   // Measurements
   const measies = { required: {}, optional: {} }
@@ -344,3 +345,4 @@ export const DesignInfo = ({ design }) => {
     </>
   )
 }
+

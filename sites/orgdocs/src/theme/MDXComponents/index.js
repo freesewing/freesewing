@@ -22,6 +22,8 @@ import { MeasurementImage } from './measurement-image.mjs'
 import { ReadMore } from './readmore.js'
 import { YouTube } from './youtube.mjs'
 
+const Noop = () => null
+
 const MDXComponents = {
   // Ejected Docusaurus components
   Head,

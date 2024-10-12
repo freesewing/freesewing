@@ -25,7 +25,8 @@ hides the site header and footer and lets the editor take up the entire screen.
 It also has the **View menu** (on the left) expanded. By default you will only
 see the icons, and not the text of the menu on the left.
 
-![Screenshot of FreeSewing's pattern editor](editor.png "Screenshot of Freesewing's pattern editor")
+![Screenshot of FreeSewing's pattern editor](editor.png "Screenshot of
+Freesewing's pattern editor")
 
 ### The view menu
 
@@ -70,19 +71,19 @@ up of four sections:
 - **Core settings**: These are settings that are not provided by the design(er)
   but rather by FreeSewing's core library. As such, the settings you'll find
   here are the same accross all designs as they all use the same core library.
-  Refer to [Core Settings](/docs/about/site/draft/core-settings) for all
+  Refer to [Core Settings](#core-settings) for all
   details, or check the inline documentation.
-- **UI settings**: And finally, these settings do not control the pattern as
+- **UI preferences**: And finally, these settings do not control the pattern as
   such, but rather the user interface. For example, here you can enable kiosk
   mode or tweak the user experience setting to see more or less features. Like
-  the core settings, the UI settings are the same for every design. Refer to
-  [UI Settings](/docs/about/site/draft/ui-settings) or check the inline
+  the core settings, the UI preferences are the same for every design. Refer to
+  [UI preferences](/docs/about/site/draft/#ui-preferences) or check the inline
   documentation.
 
 ### The header menu
 
 At the top is a header with icons to give you quick access to both Core
-settings and UI settings. There is also an icon to clear your settings, clear
+settings and UI preferences. There is also an icon to clear your settings, clear
 both settings and measurements, or to bookmark the current pattern.
 
 ## Design Options Menu
@@ -95,7 +96,7 @@ different for each design, but you typically find options to adjust the fit --
 such as changing the amount of ease -- as well options to change the style of
 the pattern.
 
-## Core Settings Menu
+## Core Settings Menu {#core-settings}
 
 The editor's **Core Settings** menu allows you to tweak various aspects of the
 FreeSewing Core library, which -- under the hood -- generates your pattern for
@@ -174,23 +175,24 @@ use this setting to change that to SVG.
 
 ### Include Seam Allowance {#sabool}
 
-This [Core Setting][core-settings] controls whether or not to include seam
+This [Core Setting][#core-settings] controls whether or not to include seam
 allowance on your pattern.
 
 By default, seam allowance is not included. To generate a pattern with seam
 allowance, you should enable it by changing this option to **Yes**.
 
 :::note
-FreeSewing's core library only takes a single setting to handle seam allowance: `sa`.
-However, for convenience, we've split this up into two different settings on the website:
+FreeSewing's core library only takes a single setting to handle seam allowance:
+`sa`.  However, for convenience, we've split this up into two different
+settings on the website:
 
-- **[Include Seam Allowance](/docs/about/site/draft#sabool)**: Controls whether or not to include seam allowance
-- **[Seam Allowance Size](/docs/about/site/draft/#samm)**: Controls how big to make the seam allowance, if it is included
+- **[Include Seam Allowance](/docs/about/site/draft#sabool)**: Controls whether
+  or not to include seam allowance
+- **[Seam Allowance Size](/docs/about/site/draft/#samm)**: Controls how big to
+  make the seam allowance, if it is included
 
 The latter will only be shown if you've enabled the former.
 :::
-
-[core-settings]: /docs/about/site/draft/core-settings/
 
 ### Seam Allowance Size {#samm}
 
@@ -200,23 +202,28 @@ allowance that is intended to be wider, like hem allowance, will be a multiple
 of this size.
 
 :::note
-FreeSewing's core library only takes a single setting to handle seam allowance: `sa`.
-However, for convenience, we've split this up into two different settings on the website:
+FreeSewing's core library only takes a single setting to handle seam allowance:
+`sa`.  However, for convenience, we've split this up into two different
+settings on the website:
 
-- **[Include Seam Allowance](/docs/about/site/draft/core-settings/sabool)**: Controls whether or not to include seam allowance
-- **[Seam Allowance Size](/docs/about/site/draft/core-settings/samm)**: Controls how big to make the seam allowance, if it is included
+- **[Include Seam Allowance](#sabool)**:
+  Controls whether or not to include seam allowance
+- **[Seam Allowance Size](/docs/about/site/draft/#samm)**:
+  Controls how big to make the seam allowance, if it is included
 
 The latter will only be shown if you've enabled the former.
 :::
 
 ### Scale
 
-The scale settings allow you to scale those parts of a pattern that do not scale with measurements.
-Things like logos, line widths, font sizes, and so on.
+The scale settings allow you to scale those parts of a pattern that do not
+scale with measurements.  Things like logos, line widths, font sizes, and so
+on.
 
-This setting was added at the requests of people who like to use our patterns to make doll clothes.
-When generating such a small pattern, the arrowheads, titles, and so on tend to obscure much of the pattern.
-This setting allows you to scale them down or -- if you so wish -- scale them up.
+This setting was added at the requests of people who like to use our patterns
+to make doll clothes.  When generating such a small pattern, the arrowheads,
+titles, and so on tend to obscure much of the pattern.  This setting allows you
+to scale them down or -- if you so wish -- scale them up.
 
 ### Units
 
