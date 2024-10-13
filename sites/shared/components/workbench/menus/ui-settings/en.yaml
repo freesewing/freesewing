@@ -53,3 +53,6 @@ edit.t: Hand-edit the pattern settings
 edit.d: This allows you to hand-edit the pattern settings, giving you full control over how your pattern will be drafted
 view: View
 view.d: These are the various views you can pick from. Includes those views available via the navigation bar or menu, and some additional ones
+zoomIn: Zoom In
+zoomOut: Zoom Out
+resetZoom: Reset Zoom

@@ -59,3 +59,4 @@ saYes.t: Include seam allowance
 saYes.d: This generates a pattern that will include seam allowance. The size of the seam allowance is set individually.
 clearSettingsNotMeasurements: Clear settings, but keep measurements
 clearSettingsAndMeasurements: Clear settings & Clear measurements
+clearSettings: Clear Settings
