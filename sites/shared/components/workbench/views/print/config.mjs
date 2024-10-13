@@ -23,7 +23,7 @@ export const loadPrintConfig = (units) => {
   const defaults = defaultPrintSettings(units)
   const config = {
     size: {
-      control: 2,
+      control: 1,
       list: sizes,
       dflt: defaults.size,
       choiceTitles: {},
@@ -31,7 +31,7 @@ export const loadPrintConfig = (units) => {
       icon: PageSizeIcon,
     },
     orientation: {
-      control: 2,
+      control: 1,
       list: ['portrait', 'landscape'],
       choiceTitles: {
         portrait: 'portrait',
@@ -45,7 +45,7 @@ export const loadPrintConfig = (units) => {
       icon: PageOrientationIcon,
     },
     margin: {
-      control: 2,
+      control: 1,
       min: units === 'imperial' ? 0.25 : 0.5,
       max: 2.5,
       step: units === 'imperial' ? 0.125 : 0.1,
@@ -53,12 +53,12 @@ export const loadPrintConfig = (units) => {
       icon: PageMarginIcon,
     },
     coverPage: {
-      control: 3,
+      control: 1,
       dflt: defaults.coverPage,
       icon: CoverPageIcon,
     },
     cutlist: {
-      control: 3,
+      control: 1,
       dflt: defaults.cutlist,
       icon: CuttingLayoutIcon,
     },
