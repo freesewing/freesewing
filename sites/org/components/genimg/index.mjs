@@ -1,5 +1,6 @@
 import { nsMerge } from 'shared/utils.mjs'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useTranslation } from 'next-i18next'
 import { StringInput, ListInput, ns as inputNs } from 'shared/components/inputs.mjs'
@@ -8,6 +9,7 @@ export const ns = nsMerge('genimg', inputNs)
 
 export const GenerateImage = () => {
   const backend = useBackend()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const { t } = useTranslation(ns)
 
   const [title, setTitle] = useState('')
@@ -19,12 +21,16 @@ export const GenerateImage = () => {
   const generate = async () => {
     let result
     try {
+      setLoadingStatus([true, 'status:contactingBackend'])
       result = await backend.img({ title, intro, type, site })
       if (result.success) {
         const uint8Array = new Uint8Array(result.data)
-        const base64String = btoa(String.fromCharCode.apply(null, uint8Array))
+        let uint8String = ''
+        uint8Array.map((byte) => (uint8String += String.fromCharCode(byte)))
+        setLoadingStatus([true, 'status:nailedIt', true, true])
+        const base64String = btoa(uint8String)
         setPreview(`data:image/png;base64,${base64String}`)
-      }
+      } else setLoadingStatus([true, 'status:backendError', true, false])
     } catch (err) {
       console.log(err)
     }
