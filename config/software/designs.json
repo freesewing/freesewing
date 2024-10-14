@@ -106,9 +106,7 @@
   "bibi": {
     "code": "Jonathan Haas",
     "description": "A FreeSewing pattern for a knit top body block",
-    "design": [
-      "Jonathan Haas"
-    ],
+    "design": "Jonathan Haas",
     "difficulty": 2,
     "lab": true,
     "org": true,
