@@ -200,9 +200,14 @@ export const DesignInfo = ({ design }) => {
                 {typeof designInfo[design].design === 'string' ? (
                   <span>{designInfo[design].design}</span>
                 ) : (
-                  designInfo[design].design
-                    .map((person) => <span key={person}>{person}</span>)
-                    .join(<span key={`${person}_join`}>, </span>)
+                  designInfo[design].design.map((person, index) => (
+                    <span key={person}>
+                      {person}
+                      {index < designInfo[design].design.length - 1 && (
+                        <span key={`${person}_join`}>, </span>
+                      )}
+                    </span>
+                  ))
                 )}
                 <Subtle>
                   ( designer{typeof designInfo[design].design === 'string' ? '' : 's'} )
@@ -217,9 +222,14 @@ export const DesignInfo = ({ design }) => {
                 {typeof designInfo[design].code === 'string' ? (
                   <span>{designInfo[design].code}</span>
                 ) : (
-                  designInfo[design].code
-                    .map((person) => <span key={person}>{person}</span>)
-                    .join(<span key={`${person}_join`}>, </span>)
+                  designInfo[design].map((person, index) => (
+                    <span key={person}>
+                      {person}
+                      {index < designInfo[design].design.length - 1 && (
+                        <span key={`${person}_join`}>, </span>
+                      )}
+                    </span>
+                  ))
                 )}
                 <Subtle>
                   ( developer{typeof designInfo[design].code === 'string' ? '' : 's'} )
