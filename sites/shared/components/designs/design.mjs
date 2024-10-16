@@ -93,20 +93,20 @@ export const DesignCard = ({ name, lineDrawing = false }) => {
       }
     >
       <div
-        className={`flex flex-col flex-nowrap items-start justify-start gap-2 h-80 w-full
+        className={`flex flex-col flex-nowrap items-start justify-start gap-0 h-80 w-full
         btn btn-ghost border border-neutral p-0 border-b-none
         hover:border hover:border-secondary
         relative`}
         style={bg}
       >
         <h5
-          className={`text-center py-2 px-4 rounded-t-lg m-0 w-full
+          className={`text-center py-1 px-4 rounded-t-lg m-0 w-full
         ${lineDrawing ? '' : 'bg-neutral text-neutral-content bg-opacity-70'}`}
         >
           {t(`designs:${name}.t`)}
         </h5>
         <div className={lineDrawing ? 'p-4 grow w-full' : 'py-8'}>
-          <LineDrawing className="h-64 max-w-full m-auto my-4 text-base-content" />
+          <LineDrawing className="h-64 max-w-full m-auto max-w-full text-base-content" />
         </div>
         <div
           className={`pt-0 m-0 -mt-2 text-center w-full
