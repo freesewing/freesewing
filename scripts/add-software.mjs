@@ -217,7 +217,7 @@ function createDesign(name) {
     design: 'Designer name',
     difficulty: 1,
     lab: true,
-    org: false,
+    org: true,
     tags: ['tagname'],
     techniques: ['techname'],
   }
