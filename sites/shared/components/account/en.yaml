@@ -212,6 +212,7 @@ pattern: Pattern
 # sets
 set: Measurements Set
 name: Name
+id: ID
 setNameDesc: A name to identify this measurements set
 setNewInfo: Create a new set of measurements which you can then use to generate patterns for.
 notes: Notes
