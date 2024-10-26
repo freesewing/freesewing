@@ -59,3 +59,4 @@ saYes.t: Nahtzugabe hinzufügen
 saYes.d: Dadurch wird ein Muster erstellt, das die Nahtzugabe enthält. Die Größe der Nahtzugabe wird individuell festgelegt.
 clearSettingsNotMeasurements: Einstellungen löschen, aber Messungen beibehalten
 clearSettingsAndMeasurements: Einstellungen löschen & Messungen löschen
+clearSettings: Clear Settings
