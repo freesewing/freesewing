@@ -193,6 +193,7 @@ pattern: Schnittmuster
 #sets
 set: Satz Maße
 name: Name
+id: ID
 setNameDesc: Ein Name zur Identifizierung dieser Messreihe
 setNewInfo: Erstelle einen neuen Satz Maße, für den du dann Schnittmuster erstellen kannst.
 notes: Notizen
