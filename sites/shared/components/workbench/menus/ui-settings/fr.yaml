@@ -53,3 +53,6 @@ edit.t: Modifie à la main les paramètres du modèle
 edit.d: Cela te permet d'éditer à la main les paramètres du modèle, ce qui te donne un contrôle total sur la façon dont ton modèle sera dessiné
 view: Voir
 view.d: Voici les différentes vues que tu peux choisir. Comprend les vues disponibles via la barre de navigation ou le menu, ainsi que quelques vues supplémentaires.
+zoomIn: Zoom In
+zoomOut: Zoom Out
+resetZoom: Reset Zoom
