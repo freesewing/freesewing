@@ -86,6 +86,9 @@ Ou vous voulez que ce soit ce que vous voyez quand votre pantalon est allongé s
 
 Il n'y a pas de bonne ou mauvaise réponse ici. Faites comme vous voulez.
 
+(The images in these instructions assume that the good side of the
+fabric is on the inside of the pocket.)
+
 </Note>
 
 ![Sacs de poche cousus aux parements](step04a.svg)
