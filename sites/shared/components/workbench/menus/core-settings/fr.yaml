@@ -59,3 +59,4 @@ saYes.t: Inclure la marge de couture
 saYes.d: Cela génère un modèle qui comprendra une marge de couture. La taille de la marge de couture est définie individuellement.
 clearSettingsNotMeasurements: Efface les paramètres, mais conserve les mesures
 clearSettingsAndMeasurements: Effacer les paramètres & Effacer les mesures
+clearSettings: Clear Settings
