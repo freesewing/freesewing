@@ -27,6 +27,7 @@ sites/*/package-lock.json
 
 # Nx cache
 .nx/cache
+.nx/workspace-data
 
 # Docusaurus cache
 .docusaurus
