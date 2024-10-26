@@ -87,6 +87,9 @@ Oder wollen Sie, dass es das ist, was Sie sehen, wenn Ihre Hosen auf dem Boden l
 
 Hier gibt es keine richtige oder falsche Antwort. Sie tun das.
 
+(The images in these instructions assume that the good side of the
+fabric is on the inside of the pocket.)
+
 </Note>
 
 ![Taschenbeutel an Verkleidungen genäht](step04a.svg)
