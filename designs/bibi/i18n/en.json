@@ -74,19 +74,19 @@
       "d": "Controls the length of your sleeves"
     },
     "necklineBend": {
-      "t": "Front Neckline curvature",
+      "t": "Front neckline curvature",
       "d": "Controls the curvature of the front neckline."
     },
     "backNeckBend": {
-      "t": "Back Neckline curvature",
+      "t": "Back neckline curvature",
       "d": "Controls the curvature of the back neckline."
     },
     "necklineDepth": {
-      "t": "Front Neckline depth",
+      "t": "Front neckline depth",
       "d": "Controls how deep the neck opening plunges down at the front."
     },
     "backNeckCutout": {
-      "t": "Back Neckline depth",
+      "t": "Back neckline depth",
       "d": "Controls how deep the neck opening plunges down on the back."
     },
     "necklineWidth": {
@@ -146,15 +146,15 @@
       "d": "Which measurement line to use for the bottom hem. You can do fine adjustments using the bonus length option."
     },
     "useWaistRibbing": {
-      "t": "Waistband Ribbing",
+      "t": "Waistband ribbing",
       "d": "Include ribbing on the waistband"
     },
     "useCuffRibbing": {
-      "t": "Cuff Ribbing",
+      "t": "Cuff ribbing",
       "d": "Include ribbing on the sleeve"
     },
     "ribbingHeight": {
-      "t": "Ribbing Height",
+      "t": "Ribbing height",
       "d": "Controls the height of the ribbing"
     },
     "ribbingStretch": {
