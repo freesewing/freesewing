@@ -603,6 +603,17 @@ describe('Path', () => {
     expect(round(intersections[5].y)).to.equal(93.31)
   })
 
+  it('Should find an intersection with a beam', () => {
+    const test = new Path()
+      .move(new Point(300, 400))
+      .line(new Point(300, 380))
+      .curve(new Point(350, 200), new Point(350, 100), new Point(350, 0))
+    let intersectsBeam = test.intersectsBeam(new Point(0, 370), new Point(100, 370))
+    expect(intersectsBeam.length).to.equal(1)
+    expect(round(intersectsBeam[0].x)).to.equal(302.75)
+    expect(round(intersectsBeam[0].y)).to.equal(370)
+  })
+
   it('Should throw an error when running path.intersect on an identical path', () => {
     const test = new Path()
     expect(() => test.intersects(test)).to.throw()
