@@ -32,7 +32,7 @@ delete local.response.body.regular.properties.secret
 // Paths
 export const paths = {}
 
-// Create API key
+// List API keys or Create an API key
 paths['/apikeys/{auth}'] = {
   get: {
     ...common,
@@ -55,14 +55,7 @@ paths['/apikeys/{auth}'] = {
           },
         }),
       },
-      401: response.status['401'],
-      403: {
-        ...response.status['403'],
-        description:
-          response.status['403'].description +
-          errorExamples(['accountStatusLacking', 'insufficientAccessLevel']),
-      },
-      500: response.status['500'],
+      404: response.status['404'],
     },
   },
   post: {
