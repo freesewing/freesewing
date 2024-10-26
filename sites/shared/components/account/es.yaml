@@ -193,6 +193,7 @@ pattern: Patrón
 #sets
 set: Conjunto de medidas
 name: Nombre
+id: ID
 setNameDesc: Un nombre para identificar este conjunto de medidas
 setNewInfo: Crea un nuevo conjunto de medidas que luego podrás utilizar para generar patrones.
 notes: Notas
