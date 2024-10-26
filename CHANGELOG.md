@@ -3,6 +3,14 @@
 
 ## Unreleased
 
+### bibi
+
+#### Changed
+
+ - Changed the algorithm to draft the side seam, so the measurements are followed more precisely
+ - Reduced default influence of the seat back measurement and added an option to adjust it.
+ - Added various options for ribbing and knit binding on waistband, armscyes/cuffs and neck hole and included more documentation
+
 ### brian
 
 #### Changed
@@ -17,6 +25,10 @@
  - Allow negative values for the frontRise options. Fixes
 
 ### charlie
+
+#### Changed
+
+ - Fix crash when drawing the jseamStitchLine is not possible. Fixes
 
 #### Fixed
 
@@ -87,7 +99,17 @@
 
  - Fix side seam when length is cropped. Fixes
 
+### titan
+
+#### Changed
+
+ - Adjust cross seam curves after fitting the waist. Fixes
+
 ### uma
+
+#### Changed
+
+ - Fix absolute gusset width displayed below slider.
 
 #### Fixed
 
@@ -97,7 +119,7 @@
 
 #### Changed
 
- - Add a warning when waist and hip reduction are both zero, so no back dart is required
+ - Add a warning when waist and hip reduction are both zero, so no back dart is required.
 
 ### plugin-bust
 
@@ -116,6 +138,7 @@
 #### Added
 
  - The `Path.rotate()` method was added to the core API.
+ - The `Path.circleSegment()` method was added to the core API.
 
 #### Fixed
 
