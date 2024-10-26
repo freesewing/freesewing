@@ -59,3 +59,4 @@ saYes.t: Враховувати припуски на шви
 saYes.d: При цьому генерується деталь з припусками на шви. Розмір припуску на шов задається індивідуально.
 clearSettingsNotMeasurements: Очистити налаштування, але зберегти вимірювання
 clearSettingsAndMeasurements: Чіткі налаштування та чіткі вимірювання
+clearSettings: Clear Settings
