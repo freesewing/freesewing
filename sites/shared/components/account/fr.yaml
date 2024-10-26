@@ -193,6 +193,7 @@ pattern: Patron
 #sets
 set: Jeux de mesures
 name: Nom
+id: ID
 setNameDesc: Un nom pour identifier ce jeu de mesures
 setNewInfo: Crée un nouvel ensemble de mesures que tu pourras ensuite utiliser pour générer des motifs.
 notes: Remarques
