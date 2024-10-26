@@ -88,6 +88,9 @@ Or do you want it to be what you see when your trousers lie on the floor with th
 
 No hay ninguna respuesta correcta o equivocada aquí. Te haces.
 
+(The images in these instructions assume that the good side of the
+fabric is on the inside of the pocket.)
+
 </Note>
 
 ![Bolsas de bolsillo cosidas a los revestimientos](step04a.svg)
