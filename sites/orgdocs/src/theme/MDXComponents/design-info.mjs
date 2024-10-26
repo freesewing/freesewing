@@ -48,7 +48,7 @@ const Option = ({ id, option, design, i18n }) =>
 
 const OptionGroup = ({ id, group, design, i18n }) => (
   <li key={id}>
-    <b>{optionGroupTranslations[id]}</b>
+    <b>{optionGroupTranslations[id] || id}</b>
     <ul className="list list-inside list-disc pl-2">
       {Object.entries(group).map(([sid, entry]) =>
         entry.isGroup ? (
