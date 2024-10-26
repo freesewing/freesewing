@@ -87,6 +87,9 @@ Of wilt u dat het is wat u ziet wanneer uw broek op de vloer ligt en hun ingewan
 
 Er is hier geen juist of verkeerd antwoord. Jullie doen jullie.
 
+(The images in these instructions assume that the good side of the
+fabric is on the inside of the pocket.)
+
 </Note>
 
 ![Zakjes vastgenaaid aan facings](step04a.svg)
