@@ -53,3 +53,6 @@ edit.t: Bearbeiten Sie die Mustereinstellungen von Hand
 edit.d: So kannst du die Mustereinstellungen von Hand bearbeiten und hast die volle Kontrolle darüber, wie dein Muster gezeichnet wird.
 view: Siehe
 view.d: Dies sind die verschiedenen Ansichten, aus denen du wählen kannst. Dazu gehören die Ansichten, die über die Navigationsleiste oder das Menü verfügbar sind, sowie einige zusätzliche Ansichten
+zoomIn: Zoom In
+zoomOut: Zoom Out
+resetZoom: Reset Zoom
