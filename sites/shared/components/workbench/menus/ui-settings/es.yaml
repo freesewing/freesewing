@@ -53,3 +53,6 @@ edit.t: Edita a mano los ajustes del patrón
 edit.d: Esto te permite editar a mano los ajustes del patrón, dándote un control total sobre cómo se redactará tu patrón.
 view: Ver
 view.d: Estas son las distintas vistas que puedes elegir. Incluye las vistas disponibles a través de la barra de navegación o el menú, y algunas adicionales
+zoomIn: Zoom In
+zoomOut: Zoom Out
+resetZoom: Reset Zoom
