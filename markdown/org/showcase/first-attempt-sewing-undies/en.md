@@ -3,7 +3,7 @@ title: "First Attempt Sewing Undies"
 caption: "Not bad for first try"
 date: 20240908
 intro: "Had some trouble with the elastic and had a few sloppy seams, but all in all these Umbras came out super cute :)"
-author: auxsuivants
+author: 83003
 designs: ["umbra"]
 ---
 
