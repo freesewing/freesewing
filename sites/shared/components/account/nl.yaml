@@ -193,6 +193,7 @@ pattern: Patroon
 #sets
 set: Meetset
 name: Naam
+id: ID
 setNameDesc: Een naam om deze maten set te identificeren
 setNewInfo: Creëer een nieuwe maten set waar je vervolgens patronen voor kunt genereren.
 notes: Notities
