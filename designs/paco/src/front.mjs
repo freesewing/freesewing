@@ -126,8 +126,15 @@ function pacoFront({
       absoluteOptions.frontPocketFlapSize
     )
 
-    points.flapTopLeft = points.pocketFlapTopOut.flipX(points.pocketFlapTopIn)
-    points.flapBottomLeft = points.pocketFlapBottomOut.flipX(points.pocketFlapBottomIn)
+    points.flapTopLeft = points.pocketFlapTopOut.shiftTowards(
+      points.pocketFlapTopIn,
+      absoluteOptions.frontPocketFlapSize * 2
+    )
+    points.flapBottomLeft = points.pocketFlapBottomOut.translate(
+      points.pocketFlapTopOut.dx(points.flapTopLeft),
+      points.pocketFlapTopOut.dy(points.flapTopLeft)
+    )
+
     points.topLeft = utils.beamsIntersect(
       points.flapBottomLeft,
       points.flapTopLeft,
