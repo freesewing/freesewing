@@ -53,3 +53,6 @@ edit.t: De patrooninstellingen met de hand bewerken
 edit.d: Hiermee kun je de patrooninstellingen met de hand bewerken, zodat je volledige controle hebt over hoe je patroon wordt opgesteld.
 view: Bekijk
 view.d: Dit zijn de verschillende weergaven waaruit je kunt kiezen. Inclusief de weergaven die beschikbaar zijn via de navigatiebalk of het menu, en enkele extra weergaven
+zoomIn: Zoom In
+zoomOut: Zoom Out
+resetZoom: Reset Zoom
