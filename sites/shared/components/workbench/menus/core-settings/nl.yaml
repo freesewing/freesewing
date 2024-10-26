@@ -59,3 +59,4 @@ saYes.t: Inclusief naadtoeslag
 saYes.d: Dit genereert een patroon met naadtoeslag. De grootte van de naadtoeslag wordt individueel ingesteld.
 clearSettingsNotMeasurements: Instellingen wissen, maar metingen behouden
 clearSettingsAndMeasurements: Instellingen wissen & metingen wissen
+clearSettings: Clear Settings
