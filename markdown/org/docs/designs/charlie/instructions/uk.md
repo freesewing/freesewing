@@ -87,6 +87,9 @@ What we want to to prevent these edges from ravelling after we've completed our 
 
 Тут немає правильної чи неправильної відповіді. Ти - це ти.
 
+(The images in these instructions assume that the good side of the
+fabric is on the inside of the pocket.)
+
 </Note>
 
 ![Кишенькові мішечки пришиті до облицювання](step04a.svg)
