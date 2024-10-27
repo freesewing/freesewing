@@ -40,7 +40,6 @@ const skip = [
   'sandy',
   'shelly',
   'skully',
-  'sven',
   'tamiko',
   'teagan',
   'tiberius',
@@ -177,6 +176,21 @@ async function generateDesignsDocs() {
                 `<${capitalize(skey.toLowerCase())} />`,
                 ''
               )
+            } else if (sval.isGroup) {
+              content.push(`### ${i18n.o[skey]?.t || capitalize(skey)} {#${skey.toLowerCase()}}`)
+              for (const [sskey, ssval] of Object.entries(sval)) {
+                if (!ssval.isGroup && optionType(ssval) !== 'constant') {
+                  content.push(
+                    `#### ${i18n.o[sskey]?.t || sskey} {#${sskey.toLowerCase()}}`,
+                    '',
+                    `**${i18n.o[sskey]?.d}**`,
+                    ...optionInfo(ssval),
+                    '',
+                    `<${capitalize(sskey.toLowerCase())} />`,
+                    ''
+                  )
+                }
+              }
             }
           }
         }
