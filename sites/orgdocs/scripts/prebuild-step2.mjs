@@ -42,7 +42,6 @@ const skip = [
   'skully',
   'tiberius',
   'titan',
-  'trayvon',
   'tristan',
   'uma',
   'wahid',
