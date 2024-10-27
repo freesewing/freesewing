@@ -40,7 +40,6 @@ const skip = [
   'sandy',
   'shelly',
   'skully',
-  'tamiko',
   'teagan',
   'tiberius',
   'titan',
@@ -201,27 +200,6 @@ async function generateDesignsDocs() {
     }
   }
 }
-/*
-import Armholedepth from '@site/docs/designs/aaron/options/armholedepth/readme.mdx'
-import Armholedrop from '@site/docs/designs/aaron/options/armholedrop/readme.mdx'
-import Backlinebend from '@site/docs/designs/aaron/options/backlinebend/readme.mdx'
-import Chestease from '@site/docs/designs/aaron/options/chestease/readme.mdx'
-import Draftforhighbust from '@site/docs/designs/aaron/options/draftforhighbust/readme.mdx'
-import Hipsease from '@site/docs/designs/aaron/options/hipsease/readme.mdx'
-import Knitbindingwidth from '@site/docs/designs/aaron/options/knitbindingwidth/readme.mdx'
-import Legacyarmholedepth from '@site/docs/designs/aaron/options/legacyarmholedepth/readme.mdx'
-import Lengthbonus from '@site/docs/designs/aaron/options/lengthbonus/readme.mdx'
-import Necklinebend from '@site/docs/designs/aaron/options/necklinebend/readme.mdx'
-import Necklinedrop from '@site/docs/designs/aaron/options/necklinedrop/readme.mdx'
-import Shoulderstrapplacement from '@site/docs/designs/aaron/options/shoulderstrapplacement/readme.mdx'
-import Shoulderstrapwidth from '@site/docs/designs/aaron/options/shoulderstrapwidth/readme.mdx'
-import Stretchfactor from '@site/docs/designs/aaron/options/stretchfactor/readme.mdx'
-    header,
-    `import designInfo from '../../../../config/software/designs.json' with { type: 'json' }`,
-  ]
-
-}
-*/
 
 function prebuild() {
   generateDesignsDocs()
