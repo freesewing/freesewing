@@ -30,7 +30,6 @@ const skip = [
   'lucy',
   'lumina',
   'lumira',
-  'lunetius',
   'noble',
   'octoplushy',
   'onyx',
