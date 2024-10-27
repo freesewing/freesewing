@@ -18,7 +18,6 @@ import { header } from './prebuild-step1.mjs'
  */
 const skip = [
   'breanna',
-  'huey',
   'charlie',
   'cornelius',
   'diana',
@@ -26,7 +25,6 @@ const skip = [
   'holmes',
   'hortensia',
   'huey',
-  'hugo',
   'jane',
   'lily',
   'lucy',
