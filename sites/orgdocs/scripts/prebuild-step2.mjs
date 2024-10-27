@@ -39,7 +39,6 @@ const skip = [
   'penelope',
   'sandy',
   'shelly',
-  'shin',
   'skully',
   'sven',
   'tamiko',
