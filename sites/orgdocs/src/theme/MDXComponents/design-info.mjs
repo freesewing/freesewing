@@ -224,7 +224,7 @@ export const DesignInfo = ({ design }) => {
                 {typeof designInfo[design].code === 'string' ? (
                   <span>{designInfo[design].code}</span>
                 ) : (
-                  designInfo[design].map((person, index) => (
+                  designInfo[design].code.map((person, index) => (
                     <span key={person}>
                       {person}
                       {index < designInfo[design].design.length - 1 && (
