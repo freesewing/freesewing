@@ -628,7 +628,7 @@ figure.mdx {
   padding: 1rem 0 0;
 }
 figure.mdx > img {
-  box-shadow: 1px 1px 4px #0006;
+  padding: 1rem;
 }
 figcaption.mdx {
   font-style: italic;
