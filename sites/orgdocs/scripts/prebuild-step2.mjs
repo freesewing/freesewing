@@ -44,7 +44,6 @@ const skip = [
   'titan',
   'tristan',
   'uma',
-  'wahid',
   'walburga',
   'waralee',
   'yuri',
