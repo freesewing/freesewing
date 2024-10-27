@@ -23,7 +23,10 @@
     ".": {
       "internal": "./src/index.mjs",
       "default": "./dist/index.mjs"
-    }
+    },
+    "./linedrawings": "./src/linedrawings/index.mjs",
+    "./pattern": "./src/pattern/index.mjs",
+    "./xray": "./src/pattern-xray/index.mjs"
   },
   "scripts": {
     "build": "node build.mjs",
