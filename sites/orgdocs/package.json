@@ -9,6 +9,9 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
+    "prebuild": "node scripts/prebuild-step1.mjs && node scripts/prebuild-step2.mjs",
+    "predev": "npm run prebuild",
+    "prestart": "npm run prebuild",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids"

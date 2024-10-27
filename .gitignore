@@ -42,6 +42,12 @@ packages/new-design/shared/.gitignore
 packages/new-design/lib/banner.mjs
 sites/*/public/img/og/*
 
+# Orgdocs prebuild artifacts
+sites/orgdocs/src/lib/designs.mjs
+sites/orgdocs/src/lib/designinfo.mjs
+sites/orgdocs/src/lib/i18n.mjs
+sites/orgdocs/docs/designs/*/options/readme.mdx
+
 # Lab auto-generated content
 sites/lab/lib
 sites/lab/public/android-chrome-192x192.png
