@@ -22,7 +22,6 @@ const skip = [
   'charlie',
   'cornelius',
   'diana',
-  'florence',
   'florent',
   'hi',
   'holmes',
