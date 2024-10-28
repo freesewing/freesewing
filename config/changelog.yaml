@@ -48,6 +48,7 @@ Unreleased:
       - Fix cut instructions for fly facing, only 1 to be cut. Fixes #6392
     core:
       - Fix an issue when splitting path on start or end point. Fixes #6816
+      - Fix e-mail sign-in not working properly with 2FA enabled. Fixes #7215
     huey:
       - Fixed an issue where ribbing height would distort the pocket under certain conditions. Fixes #6238
       - Adding missing translation for ribbing option

@@ -139,8 +139,10 @@ Backend.prototype.signIn = async function ({ username, password = false, token =
 /*
  * Backend.prototype.signInFromLink: Trade in sign-in link id & check for JWT token
  */
-Backend.prototype.signInFromLink = async function ({ id, check }) {
-  return responseHandler(await api.post(`/signinlink/${id}/${check}`))
+Backend.prototype.signInFromLink = async function ({ id, check, token }) {
+  return responseHandler(
+    await api.post(`/signinlink/${id}/${check}`, token ? { token: token } : null)
+  )
 }
 
 /*
