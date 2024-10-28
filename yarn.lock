@@ -8471,11 +8471,6 @@ emoticon@^4.0.1:
   resolved "https://registry.yarnpkg.com/emoticon/-/emoticon-4.1.0.tgz#d5a156868ee173095627a33de3f1e914c3dde79e"
   integrity sha512-VWZfnxqwNcc51hIy/sbOdEem6D+cVtpPzEEtVAFdaas30+1dgkyaOQ4sQ6Bp0tOMqWO1v+HQfYaoodOkdhK6SQ==
 
-encode-utf8@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/encode-utf8/-/encode-utf8-1.0.3.tgz#f30fdd31da07fb596f281beb2f6b027851994cda"
-  integrity sha512-ucAnuBEhUK4boH2HjVYG5Q2mQyPorvv0u/ocS+zhdw0S8AlHYY+GOFhP1Gio5z4icpP2ivFSvhtFjQi8+T9ppw==
-
 encodeurl@~1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/encodeurl/-/encodeurl-1.0.2.tgz"
@@ -16142,13 +16137,12 @@ pupa@^3.1.0:
   dependencies:
     escape-goat "^4.0.0"
 
-qrcode@1.5.3:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/qrcode/-/qrcode-1.5.3.tgz#03afa80912c0dccf12bc93f615a535aad1066170"
-  integrity sha512-puyri6ApkEHYiVl4CFzo1tDkAZ+ATcnbJrJ6RiBM1Fhctdn/ix9MTE3hRph33omisEbC/2fcfemsseiKgBPKZg==
+qrcode@1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/qrcode/-/qrcode-1.5.4.tgz#5cb81d86eb57c675febb08cf007fff963405da88"
+  integrity sha512-1ca71Zgiu6ORjHqFBDpnSMTR2ReToX4l1Au1VFLyVeBTFavzQnv5JxMFr3ukHVKpSrSA2MCk0lNJSykjUfz7Zg==
   dependencies:
     dijkstrajs "^1.0.1"
-    encode-utf8 "^1.0.3"
     pngjs "^5.0.0"
     yargs "^15.3.1"
 
