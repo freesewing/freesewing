@@ -36,7 +36,6 @@ const skip = [
   'opal',
   'otis',
   'penelope',
-  'sandy',
   'shelly',
   'skully',
   'titan',
