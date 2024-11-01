@@ -17,7 +17,6 @@ import { header } from './prebuild-step1.mjs'
  * when you run `npm run start`
  */
 const skip = [
-  'breanna',
   'charlie',
   'cornelius',
   'diana',
