@@ -41,7 +41,6 @@ const skip = [
   'skully',
   'titan',
   'tristan',
-  'uma',
   'waralee',
 ]
 
