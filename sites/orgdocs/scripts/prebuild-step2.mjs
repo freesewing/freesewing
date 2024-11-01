@@ -43,7 +43,6 @@ const skip = [
   'tristan',
   'uma',
   'waralee',
-  'yuri',
 ]
 
 /*
