@@ -31,7 +31,6 @@ const skip = [
   'lumira',
   'noble',
   'octoplushy',
-  'onyx',
   'otis',
   'penelope',
   'skully',
