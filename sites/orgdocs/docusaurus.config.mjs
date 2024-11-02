@@ -142,6 +142,50 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        blog: {
+          path: 'blog',
+          // Simple use-case: string editUrl
+          editUrl: 'https://github.com/freesewing/freesewing/site/orgdocs/',
+          editLocalizedFiles: false,
+          blogTitle: 'FreeSewing Blog',
+          blogDescription: 'News and updates from the people behind FreeSewing',
+          blogSidebarCount: 5,
+          blogSidebarTitle: 'Recent blog posts',
+          routeBasePath: 'blog',
+          include: ['*/index.mdx'],
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+          ],
+          postsPerPage: 10,
+          blogListComponent: '@theme/BlogListPage',
+          blogPostComponent: '@theme/BlogPostPage',
+          blogTagsListComponent: '@theme/BlogTagsListPage',
+          blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
+          //remarkPlugins: [require('./my-remark-plugin')],
+          //rehypePlugins: [],
+          //beforeDefaultRemarkPlugins: [],
+          //beforeDefaultRehypePlugins: [],
+          truncateMarker: /<!--\s*(truncate)\s*-->/,
+          showReadingTime: true,
+          feedOptions: {
+            type: 'rss',
+            title: 'FreeSewing Blog Posts',
+            description: 'News and updates from the people behind FreeSewing',
+            copyright: 'FreeSewing',
+            language: 'en',
+            createFeedItems: async (params) => {
+              const { blogPosts, defaultCreateFeedItems, ...rest } = params
+              return defaultCreateFeedItems({
+                // keep only the 10 most recent blog posts in the feed
+                blogPosts: blogPosts.filter((item, index) => index < 10),
+                ...rest,
+              })
+            },
+          },
+        },
       },
     ],
   ],
