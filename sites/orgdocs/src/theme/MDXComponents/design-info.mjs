@@ -4,9 +4,11 @@ import { pluginInfo } from '@site/src/lib/plugins.mjs'
 import { capitalize, optionsMenuStructure, optionType } from '@site/src/lib/utils.mjs'
 import Link from '@docusaurus/Link'
 import { lineDrawings } from '@freesewing/react-components/linedrawings'
-import { designs as designTranslations } from '../../../../../i18n/designs.mjs'
-import measurementTranslations from '../../../../../i18n/measurements.yaml'
-import optionGroupTranslations from '../../../../../i18n/optiongroups.yaml'
+import {
+  designs as designTranslations,
+  measurements as measurementTranslations,
+  optiongroups as optionGroupTranslations,
+} from '@site/src/lib/i18n.mjs'
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 
@@ -222,7 +224,7 @@ export const DesignInfo = ({ design }) => {
                 {typeof designInfo[design].code === 'string' ? (
                   <span>{designInfo[design].code}</span>
                 ) : (
-                  designInfo[design].map((person, index) => (
+                  designInfo[design].code.map((person, index) => (
                     <span key={person}>
                       {person}
                       {index < designInfo[design].design.length - 1 && (
