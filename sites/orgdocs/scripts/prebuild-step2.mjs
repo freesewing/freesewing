@@ -7,7 +7,6 @@ import {
   optiongroups as optiongroupTranslations,
 } from '../src/lib/i18n.mjs'
 import { capitalize, optionsMenuStructure, optionType } from '../src/lib/utils.mjs'
-import { header } from './prebuild-step1.mjs'
 
 /*
  * If you are looking to port a design, remove it from the list below
