@@ -1,37 +1,66 @@
 ---
-title: 'Otis romper: Design Options'
+title: "Otis romper: Design Options"
 sidebar_label: Design Options
 sidebar_position: 10
+toc_max_heading_level: 5
 ---
 
-import Binding from '@site.org/docs/designs/otis/binding/readme.mdx'
-import Ease from '@site.org/docs/designs/otis/ease/readme.mdx'
-import Hem from '@site.org/docs/designs/otis/hem/readme.mdx'
-import SleeveType from '@site.org/docs/designs/otis/sleevetype/readme.mdx'
-import SnapPlacket from '@site.org/docs/designs/otis/snapplacket/readme.mdx'
+import Binding from '@site/docs/designs/otis/options/binding/readme.mdx'
+import Ease from '@site/docs/designs/otis/options/ease/readme.mdx'
+import Hem from '@site/docs/designs/otis/options/hem/readme.mdx'
+import Sleevetype from '@site/docs/designs/otis/options/sleevetype/readme.mdx'
+import Snapplacket from '@site/docs/designs/otis/options/snapplacket/readme.mdx'
 
-## Fit
-
+## Fit {#fit}
 ### Ease {#ease}
+
+**The ease is a percentage of the waist measurement. Default is 14%**
+- Type: **Percentage**
+- Default: **14%**
+- Minimum: **0%**
+- Maximum: **30%**
 
 <Ease />
 
-## Style
-
+## Style {#style}
 ### Sleeve Type {#sleevetype}
 
-<SleeveType />
+**Otis can be made with short or long sleeves.**
+- Type: **List**
+- Default: **short**
+- options:
+  - short
+  - long
 
-## Advanced
+<Sleevetype />
 
+## Advanced {#advanced}
 ### Binding {#binding}
+
+**Binding determines the size of the binding for the neck and leg openings.**
+- Type: **Percentage**
+- Default: **11%**
+- Minimum: **2%**
+- Maximum: **30%**
 
 <Binding />
 
 ### Hem {#hem}
 
+**Hem determines the size of the hem on the sleeves.**
+- Type: **Percentage**
+- Default: **10%**
+- Minimum: **0%**
+- Maximum: **30%**
+
 <Hem />
 
 ### Snap Placket {#snapplacket}
 
-<SnapPlacket />
+**This option controls the depth of the placket that holds the snaps. **
+- Type: **Percentage**
+- Default: **5%**
+- Minimum: **0%**
+- Maximum: **30%**
+
+<Snapplacket />

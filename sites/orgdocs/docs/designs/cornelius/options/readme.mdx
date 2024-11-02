@@ -1,57 +1,111 @@
 ---
-title: 'Cornelius cycling breeches: Design Options'
+title: "Cornelius cycling breeches: Design Options"
 sidebar_label: Design Options
 sidebar_position: 10
+toc_max_heading_level: 5
 ---
 
-import BandBelowKnee from '@site/docs/designs/cornelius/options/bandbelowknee/readme.mdx'
-import CuffStyle from '@site/docs/designs/cornelius/options/cuffstyle/readme.mdx'
-import CuffWidth from '@site/docs/designs/cornelius/options/cuffwidth/readme.mdx'
-import FlyWidth from '@site/docs/designs/cornelius/options/flywidth/readme.mdx'
+import Bandbelowknee from '@site/docs/designs/cornelius/options/bandbelowknee/readme.mdx'
+import Cuffstyle from '@site/docs/designs/cornelius/options/cuffstyle/readme.mdx'
+import Cuffwidth from '@site/docs/designs/cornelius/options/cuffwidth/readme.mdx'
+import Flywidth from '@site/docs/designs/cornelius/options/flywidth/readme.mdx'
 import Fullness from '@site/docs/designs/cornelius/options/fullness/readme.mdx'
-import KneeToBelow from '@site/docs/designs/cornelius/options/kneetobelow/readme.mdx'
-import VentLength from '@site/docs/designs/cornelius/options/ventlength/readme.mdx'
-import WaistbandBelowWaist from '@site/docs/designs/cornelius/options/waistbandbelowwaist/readme.mdx'
-import WaistReduction from '@site/docs/designs/cornelius/options/waistreduction/readme.mdx'
+import Kneetobelow from '@site/docs/designs/cornelius/options/kneetobelow/readme.mdx'
+import Ventlength from '@site/docs/designs/cornelius/options/ventlength/readme.mdx'
+import Waistreduction from '@site/docs/designs/cornelius/options/waistreduction/readme.mdx'
+import Waistbandbelowwaist from '@site/docs/designs/cornelius/options/waistbandbelowwaist/readme.mdx'
 
-## Fit
+## Fit {#fit}
+### Fullness of the legs {#fullness}
 
-### Fullness {#fullness}
+**Influences the ease on the legs for a looser style**
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **0%**
+- Maximum: **55%**
 
 <Fullness />
 
-### Waist Reduction {#waistreduction}
+### Waist reduction {#waistreduction}
 
-<Waist Reduction />
+**Percentage to reduce the waistband**
+- Type: **Percentage**
+- Default: **1%**
+- Minimum: **-2%**
+- Maximum: **10%**
 
-## Style
+<Waistreduction />
 
-### Cuff Style {#cuffstyle}
+## Style {#style}
+### Cuff style {#cuffstyle}
 
-<CuffStyle />
+**Style of the leg cuff**
+- Type: **List**
+- Default: **elegant**
+- options:
+  - traditional
+  - elegant
+  - keystone
 
-### Cuff Width {#cuffwidth}
+<Cuffstyle />
 
-<CuffWidth />
+### Cuff width {#cuffwidth}
 
-### Fly Guard Width {#flywidth}
+**Width of the leg cuff**
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **-50%**
+- Maximum: **150%**
 
-<FlyWidth />
+<Cuffwidth />
 
-### Vent Length {#ventlength}
+### Fly Guard width {#flywidth}
 
-<VentLength />
+**Width of the fly guard**
+- Type: **Percentage**
+- Default: **0.38%**
+- Minimum: **0.2%**
+- Maximum: **0.6%**
 
-### Lower Waistband {#waistbandbelowwaist}
+<Flywidth />
 
-<WaistbandBelowWaist />
+### Vent length {#ventlength}
 
-## Advanced
+**Controls the length of the vent between knee and cuff**
+- Type: **Percentage**
+- Default: **70%**
+- Minimum: **25%**
+- Maximum: **110%**
 
-###Cuff Below Knee {#bandbelowknee}
+<Ventlength />
 
-<BandBelowKnee />
+### Lower waistband {#waistbandbelowwaist}
 
-###Cuff Length {#kneetobelow}
+**Percentage to move the waistband below the actual waist**
+- Type: **Percentage**
+- Default: **5%**
+- Minimum: **0%**
+- Maximum: **15%**
 
-<KneeToBelow />
+<Waistbandbelowwaist />
+
+## Advanced {#advanced}
+### Cuff below knee {#bandbelowknee}
+
+**Controls the cuff distance from the knee**
+- Type: **Percentage**
+- Default: **25%**
+- Minimum: **15%**
+- Maximum: **50%**
+
+<Bandbelowknee />
+
+### Cuff length {#kneetobelow}
+
+**Controls the tightness of the cuff as compared to the knee**
+- Type: **Percentage**
+- Default: **94%**
+- Minimum: **85%**
+- Maximum: **110%**
+
+<Kneetobelow />

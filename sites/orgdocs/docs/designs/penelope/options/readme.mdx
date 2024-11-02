@@ -1,92 +1,182 @@
 ---
-title: 'Penelope pencil skirt: Design Options'
+title: "Penelope pencil skirt: Design Options"
 sidebar_label: Design Options
 sidebar_position: 10
+toc_max_heading_level: 5
 ---
 
-import BackDartDepthFactor from '@site.org/docs/design/penelope/backdartdepthfactor/readme.mdx'
-import BackVent from '@site.org/docs/design/penelope/backvent/readme.mdx'
-import BackVentLength from '@site.org/docs/design/penelope/backventlength/readme.mdx'
-import CurvedDarts from '@site.org/docs/design/penelope/curveddarts/readme.mdx'
-import DartToSideSeamFactor from '@site.org/docs/design/penelope/darttosideseamfactor/readme.mdx'
-import FrontDartDepthFactor from '@site.org/docs/design/penelope/frontdartdepthfactor/readme.mdx'
-import HemBonus from '@site.org/docs/design/penelope/hembonus/readme.mdx'
-import Hem from '@site.org/docs/design/penelope/hem/readme.mdx'
-import LengthBonus from '@site.org/docs/design/penelope/lengthbonus/readme.mdx'
-import NrOfDarts from '@site.org/docs/design/penelope/nrofdarts/readme.mdx'
-import SeatEase from '@site.org/docs/design/penelope/seatease/readme.mdx'
-import Waistband from '@site.org/docs/design/penelope/waistband/readme.mdx'
-import WaistbandOverlap from '@site.org/docs/design/penelope/waistbandoverlap/readme.mdx'
-import WaistbandWidth from '@site.org/docs/design/penelope/waistbandwidth/readme.mdx'
-import WaistEase from '@site.org/docs/design/penelope/waistease/readme.mdx'
-import ZipperLocation from '@site.org/docs/design/penelope/zipperlocation/readme.mdx'
+import Backdartdepthfactor from '@site/docs/designs/penelope/options/backdartdepthfactor/readme.mdx'
+import Backvent from '@site/docs/designs/penelope/options/backvent/readme.mdx'
+import Backventlength from '@site/docs/designs/penelope/options/backventlength/readme.mdx'
+import Curveddarts from '@site/docs/designs/penelope/options/curveddarts/readme.mdx'
+import Darttosideseamfactor from '@site/docs/designs/penelope/options/darttosideseamfactor/readme.mdx'
+import Frontdartdepthfactor from '@site/docs/designs/penelope/options/frontdartdepthfactor/readme.mdx'
+import Hem from '@site/docs/designs/penelope/options/hem/readme.mdx'
+import Hembonus from '@site/docs/designs/penelope/options/hembonus/readme.mdx'
+import Lengthbonus from '@site/docs/designs/penelope/options/lengthbonus/readme.mdx'
+import Nrofdarts from '@site/docs/designs/penelope/options/nrofdarts/readme.mdx'
+import Seatease from '@site/docs/designs/penelope/options/seatease/readme.mdx'
+import Waistease from '@site/docs/designs/penelope/options/waistease/readme.mdx'
+import Waistband from '@site/docs/designs/penelope/options/waistband/readme.mdx'
+import Waistbandoverlap from '@site/docs/designs/penelope/options/waistbandoverlap/readme.mdx'
+import Waistbandwidth from '@site/docs/designs/penelope/options/waistbandwidth/readme.mdx'
+import Zipperlocation from '@site/docs/designs/penelope/options/zipperlocation/readme.mdx'
 
-## style
+## Conditional Options {#conditional}
+### Back vent length {#backventlength}
 
-### BackVent {#backvent}
+**Length of the Back Vent as a percentage of the skirt length.**
+- Type: **Percentage**
+- Default: **40%**
+- Minimum: **5%**
+- Maximum: **70%**
 
-<BackVent />
+<Backventlength />
 
-### BackVentLength {#backventlength}
+### Waistband overlap {#waistbandoverlap}
 
-<BackVentLength />
+**How much the waistband should overlap at the front.**
+- Type: **Percentage**
+- Default: **3.5%**
+- Minimum: **0%**
+- Maximum: **10%**
 
-### NrOfDarts {#nrofdarts}
+<Waistbandoverlap />
 
-<NrOfDarts />
+### Waistband width {#waistbandwidth}
 
-### CurvedDarts {#curveddarts}
+**The width of the waistband.**
+- Type: **Percentage**
+- Default: **10%**
+- Minimum: **5%**
+- Maximum: **20%**
 
-<CurvedDarts />
+<Waistbandwidth />
 
-### Hem {#hem}
+## Fit {#fit}
+### Seat ease {#seatease}
+
+**Amount of ease at the seat level.**
+- Type: **Percentage**
+- Default: **1%**
+- Minimum: **0%**
+- Maximum: **8%**
+
+<Seatease />
+
+### Waist ease {#waistease}
+
+**Amount of ease at the waist level.**
+- Type: **Percentage**
+- Default: **1%**
+- Minimum: **0%**
+- Maximum: **8%**
+
+<Waistease />
+
+## Style {#style}
+### Back vent {#backvent}
+
+**Add a vent in the back of the skirt.**
+- Type: **Boolean**
+- Default: **true**
+
+<Backvent />
+
+### Curved darts {#curveddarts}
+
+**Whether or not to used curved darts.**
+- Type: **Boolean**
+- Default: **true**
+
+<Curveddarts />
+
+### Size of the hem {#hem}
+
+**The size of the hem. Measurement in absolute values.**
+- Type: **Percentage**
+- Default: **2%**
+- Minimum: **0%**
+- Maximum: **5%**
 
 <Hem />
 
-### HemBonus {#hembonus}
+### Hem bonus {#hembonus}
 
-<HemBonus />
+**This option will reduce the circumference of the skirt at the hem. Percentage of the Seat measurement.**
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **-35%**
+- Maximum: **0%**
 
-### LengthBonus {#lengthbonus}
+<Hembonus />
 
-<LengthBonus />
+### Length bonus {#lengthbonus}
+
+**This sets the length of the skirt. Percentage of the Natural Waist to Knee measurement.**
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **-50%**
+- Maximum: **50%**
+
+<Lengthbonus />
+
+### Number of darts {#nrofdarts}
+
+**The number of darts used in the pattern. Maximum is 2. This option can be reduced by the pattern if the calculations create darts that are too small.**
+- Type: **Percentage**
+- Default: **undefined**
+- Minimum: **1**
+- Maximum: **2**
+
+<Nrofdarts />
 
 ### Waistband {#waistband}
 
+**Add a waistband to the pattern.**
+- Type: **Boolean**
+- Default: **true**
+
 <Waistband />
 
-### WaistbandOverlap {#waistbandoverlap}
+### Zipper location {#zipperlocation}
 
-<WaistbandOverlap />
+**The location of the zipper.**
+- Type: **List**
+- Default: **backSeam**
+- options:
+  - backSeam
+  - sideSeam
 
-### WaistbandWidth {#waistbandwidth}
+<Zipperlocation />
 
-<WaistbandWidth />
+## Advanced {#advanced}
+### Back dart depth factor {#backdartdepthfactor}
 
-### ZipperLocation {#zipperlocation}
+**How far down does the back dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.**
+- Type: **Percentage**
+- Default: **50%**
+- Minimum: **35%**
+- Maximum: **70%**
 
-<ZipperLocation />
+<Backdartdepthfactor />
 
-## Fit
+### Dart to side seam factor {#darttosideseamfactor}
 
-### SeatEase {#seatease}
+**Percentage of how much of the hip to waist reduction has to be taken in by the darts versus the side seam.**
+- Type: **Percentage**
+- Default: **50%**
+- Minimum: **30%**
+- Maximum: **70%**
 
-<SeatEase />
+<Darttosideseamfactor />
 
-### WaistEase {#waistease}
+### Front dart depth factor {#frontdartdepthfactor}
 
-<WaistEase />
+**How far down does the front dart go from the waistband. This is a factor of the Natural Waist To Seat measurement.**
+- Type: **Percentage**
+- Default: **45%**
+- Minimum: **30%**
+- Maximum: **65%**
 
-## Advanced
-
-### BackDartDepthFactor {#backdartdepthfactor}
-
-<BackDartDepthFactor />
-
-### FrontDartDepthFactor {#frontdartdepthfactor}
-
-<FrontDartDepthFactor />
-
-### DartToSideSeamFactor {#darttosideseamfactor}
-
-<DartToSideSeamFactor />
+<Frontdartdepthfactor />

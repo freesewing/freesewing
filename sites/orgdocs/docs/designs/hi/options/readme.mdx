@@ -1,28 +1,50 @@
 ---
-title: 'Hi the shark: Design Options'
+title: "Hi the shark: Design Options"
 sidebar_label: Design Options
 sidebar_position: 10
+toc_max_heading_level: 5
 ---
 
-import Aggressive from '@site/org/docs/designs/hi/options/aggressive/readme.mdx
-import Hungry from '@site/org/docs/designs/hi/options/hungry/readme.mdx
-import NosePointiness from '@site/org/docs/designs/hi/options/nosepointiness/readme.mdx
-import Size from '@site/org/docs/designs/hi/options/size/readme.mdx
+import Aggressive from '@site/docs/designs/hi/options/aggressive/readme.mdx'
+import Hungry from '@site/docs/designs/hi/options/hungry/readme.mdx'
+import Nosepointiness from '@site/docs/designs/hi/options/nosepointiness/readme.mdx'
+import Size from '@site/docs/designs/hi/options/size/readme.mdx'
 
-## Style
-
+## Style {#style}
 ### Aggressive {#aggressive}
+
+**Give Hi pointy teeth, or not**
+- Type: **Boolean**
+- Default: **false**
 
 <Aggressive />
 
 ### Hungry {#hungry}
 
+**Changes the belly shape to convey if Hi has just eaten**
+- Type: **Percentage**
+- Default: **50%**
+- Minimum: **0%**
+- Maximum: **100%**
+
 <Hungry />
 
-### NosePointiness {#nosepointiness}
+### Nose pointiness {#nosepointiness}
 
-<NosePointiness />
+**Controls how pointy Hi's nose is**
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **-5%**
+- Maximum: **10%**
+
+<Nosepointiness />
 
 ### Size {#size}
+
+**Sharks come in all sizes, and so does Hi**
+- Type: **Percentage**
+- Default: **100%**
+- Minimum: **5%**
+- Maximum: **500%**
 
 <Size />

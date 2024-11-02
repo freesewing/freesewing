@@ -15,27 +15,7 @@ import { capitalize, optionsMenuStructure, optionType } from '../src/lib/utils.m
  * Run 'npm run prestart' to force it, or it will happen automatically
  * when you run `npm run start`
  */
-const skip = [
-  'charlie',
-  'cornelius',
-  'diana',
-  'hi',
-  'holmes',
-  'hortensia',
-  'huey',
-  'jane',
-  'lucy',
-  'lumina',
-  'lumira',
-  'noble',
-  'octoplushy',
-  'otis',
-  'penelope',
-  'skully',
-  'titan',
-  'tristan',
-  'waralee',
-]
+const skip = ['charlie', 'diana', 'holmes', 'huey', 'jane', 'lucy', 'titan', 'tristan', 'waralee']
 
 /*
  * mkdir helper

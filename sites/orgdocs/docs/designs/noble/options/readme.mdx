@@ -1,129 +1,266 @@
 ---
-title: 'Noble body block: Design Options'
+title: "Noble body block: Design Options"
 sidebar_label: Design Options
 sidebar_position: 10
+toc_max_heading_level: 5
 ---
 
-import armholedartposition fromt '@site.org/docs/designs/noble/armholedartposition/readme.mdx'
-import armholedepth fromt '@site.org/docs/designs/noble/armholedepth/readme.mdx'
-import backarmholecurvature fromt '@site.org/docs/designs/noble/backarmholecurvature/readme.mdx'
-import backarmholepitchdepth fromt '@site.org/docs/designs/noble/backarmholepitchdepth/readme.mdx'
-import backarmholeslant fromt '@site.org/docs/designs/noble/backarmholeslant/readme.mdx'
-import backdartheight fromt '@site.org/docs/designs/noble/backdartheight/readme.mdx'
-import backhemslope fromt '@site.org/docs/designs/noble/backhemslope/readme.mdx'
-import backneckcutout fromt '@site.org/docs/designs/noble/backneckcutout/readme.mdx'
-import bustspanease fromt '@site.org/docs/designs/noble/bustspanease/readme.mdx'
-import chestease fromt '@site.org/docs/designs/noble/chestease/readme.mdx'
-import dartposition fromt '@site.org/docs/designs/noble/dartposition/readme.mdx'
-import frontarmholecurvature fromt '@site.org/docs/designs/noble/frontarmholecurvature/readme.mdx'
-import frontarmholepitchdepth fromt '@site.org/docs/designs/noble/frontarmholepitchdepth/readme.mdx'
-import frontshoulderwidth fromt '@site.org/docs/designs/noble/frontshoulderwidth/readme.mdx'
-import fullchesteasereduction fromt '@site.org/docs/designs/noble/fullchesteasereduction/readme.mdx'
-import highbustwidth fromt '@site.org/docs/designs/noble/highbustwidth/readme.mdx'
-import shoulderdartcurvature fromt '@site.org/docs/designs/noble/shoulderdartcurvature/readme.mdx'
-import shoulderdartposition fromt '@site.org/docs/designs/noble/shoulderdartposition/readme.mdx'
-import shouldertoshoulderease fromt '@site.org/docs/designs/noble/shouldertoshoulderease/readme.mdx'
-import upperdartlength fromt '@site.org/docs/designs/noble/upperdartlength/readme.mdx'
-import waistdartlength fromt '@site.org/docs/designs/noble/waistdartlength/readme.mdx'
-import waistdartposition fromt '@site.org/docs/designs/noble/waistdartposition/readme.mdx'
-import waistease fromt '@site.org/docs/designs/noble/waistease/readme.mdx'
+import Armholedartposition from '@site/docs/designs/noble/options/armholedartposition/readme.mdx'
+import Armholedepth from '@site/docs/designs/noble/options/armholedepth/readme.mdx'
+import Backarmholecurvature from '@site/docs/designs/noble/options/backarmholecurvature/readme.mdx'
+import Backarmholepitchdepth from '@site/docs/designs/noble/options/backarmholepitchdepth/readme.mdx'
+import Backarmholeslant from '@site/docs/designs/noble/options/backarmholeslant/readme.mdx'
+import Backdartheight from '@site/docs/designs/noble/options/backdartheight/readme.mdx'
+import Backhemslope from '@site/docs/designs/noble/options/backhemslope/readme.mdx'
+import Backneckcutout from '@site/docs/designs/noble/options/backneckcutout/readme.mdx'
+import Bustspanease from '@site/docs/designs/noble/options/bustspanease/readme.mdx'
+import Chestease from '@site/docs/designs/noble/options/chestease/readme.mdx'
+import Dartposition from '@site/docs/designs/noble/options/dartposition/readme.mdx'
+import Frontarmholecurvature from '@site/docs/designs/noble/options/frontarmholecurvature/readme.mdx'
+import Frontarmholepitchdepth from '@site/docs/designs/noble/options/frontarmholepitchdepth/readme.mdx'
+import Frontshoulderwidth from '@site/docs/designs/noble/options/frontshoulderwidth/readme.mdx'
+import Fullchesteasereduction from '@site/docs/designs/noble/options/fullchesteasereduction/readme.mdx'
+import Highbustwidth from '@site/docs/designs/noble/options/highbustwidth/readme.mdx'
+import Shoulderdartcurvature from '@site/docs/designs/noble/options/shoulderdartcurvature/readme.mdx'
+import Shoulderdartposition from '@site/docs/designs/noble/options/shoulderdartposition/readme.mdx'
+import Shouldertoshoulderease from '@site/docs/designs/noble/options/shouldertoshoulderease/readme.mdx'
+import Upperdartlength from '@site/docs/designs/noble/options/upperdartlength/readme.mdx'
+import Waistdartlength from '@site/docs/designs/noble/options/waistdartlength/readme.mdx'
+import Waistease from '@site/docs/designs/noble/options/waistease/readme.mdx'
+import Waistdartposition from '@site/docs/designs/noble/options/waistdartposition/readme.mdx'
 
-## darts
+## Conditional Options {#conditional}
+### Armhole dart position {#armholedartposition}
 
-### DartPosition {#dartposition}
+**Controls the position of the armhole dart**
+- Type: **Percentage**
+- Default: **50%**
+- Minimum: **10%**
+- Maximum: **90%**
 
-<dartposition />
+<Armholedartposition />
 
-### ArmholeDartPosition {#armholedartposition}
+### Shoulder dart curvature {#shoulderdartcurvature}
 
-<armholedartposition />
+**Controls the curvature of the upper part of the shoulder dart**
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **-5%**
+- Maximum: **2.5%**
 
-### ShoulderDartCurvature {#shoulderdartcurvature}
+<Shoulderdartcurvature />
 
-<shoulderdartcurvature />
+### Shoulder dart position {#shoulderdartposition}
 
-### ShoulderDartPosition {#shoulderdartposition}
+**Controls the position of the shoulder dart**
+- Type: **Percentage**
+- Default: **50%**
+- Minimum: **10%**
+- Maximum: **90%**
 
-<shoulderdartposition />
+<Shoulderdartposition />
 
-### BackDartHeight {#backdartheight}
+## Armhole {#armhole}
+### Armhole depth {#armholedepth}
 
-<backdartheight />
+**Controls the depth of the armhole**
+- Type: **Percentage**
+- Default: **44%**
+- Minimum: **38%**
+- Maximum: **46%**
 
-### UpperDartLength {#upperdartlength}
+<Armholedepth />
 
-<upperdartlength />
+### Back armhole curvature {#backarmholecurvature}
 
-### WaistDartLength {#waistdartlength}
+**Controls how deep the armhole is scooped out at the back**
+- Type: **Percentage**
+- Default: **63%**
+- Minimum: **50%**
+- Maximum: **85%**
 
-<waistdartlength />
+<Backarmholecurvature />
 
-### WaistDartPosition {#waistdartposition}
+### Back armhole pitch depth {#backarmholepitchdepth}
 
-<waistdartposition />
+**Controls how deep the armhole cuts into the back**
+- Type: **Percentage**
+- Default: **35%**
+- Minimum: **30%**
+- Maximum: **40%**
 
-## Armhole
+<Backarmholepitchdepth />
 
-### ArmholeDepth {#armholedepth}
+### Back armhole slant {#backarmholeslant}
 
-<armholedepth />
+**Controls the slant of the armhole at the back**
+- Type: **Degrees**
+- Default: **5°**
+- Minimum: **1°**
+- Maximum: **9°**
 
-### BackArmholeCurvature {#backarmholecurvature}
+<Backarmholeslant />
 
-<backarmholecurvature />
+### Front armhole curvature {#frontarmholecurvature}
 
-### BackArmholePitchDepth {#backarmholepitchdepth}
+**Controls how deep the armhole is scooped out at the front bottom**
+- Type: **Percentage**
+- Default: **63%**
+- Minimum: **50%**
+- Maximum: **85%**
 
-<backarmholepitchdepth />
+<Frontarmholecurvature />
 
-### BackArmholeSlant {#backarmholeslant}
+### Front armhole pitch depth {#frontarmholepitchdepth}
 
-<backarmholeslant />
+**Controls how deep the armhole cuts into the front**
+- Type: **Percentage**
+- Default: **29%**
+- Minimum: **27%**
+- Maximum: **31%**
 
-### FrontArmholeCurvature {#frontarmholecurvature}
+<Frontarmholepitchdepth />
 
-<frontarmholecurvature />
+## Darts {#darts}
+### Controls the height of the back dart {#backdartheight}
 
-### FrontArmholePitchDepth {#frontarmholepitchdepth}
+**Back dart height**
+- Type: **Percentage**
+- Default: **46%**
+- Minimum: **38%**
+- Maximum: **54%**
 
-<frontarmholepitchdepth />
+<Backdartheight />
 
-## Fit
+### Dart position {#dartposition}
 
-### BustSpanEase {#bustspanease}
+**Controls whether to split at the shoulder or armhole**
+- Type: **List**
+- Default: **shoulder**
+- options:
+  - shoulder
+  - armhole
 
-<bustspanease />
+<Dartposition />
 
-### ChestEase {#chestease}
+### Upper dart length {#upperdartlength}
 
-<chestease />
+**Controls the length of the upper dart**
+- Type: **Percentage**
+- Default: **90%**
+- Minimum: **80%**
+- Maximum: **95%**
 
-### FullChestEaseReduction {#fullchesteasereduction}
+<Upperdartlength />
 
-<fullchesteasereduction />
+### Waist dart length {#waistdartlength}
 
-### ShoulderToShoulderEase {#shouldertoshoulderease}
+**Controls the length of the waist dart**
+- Type: **Percentage**
+- Default: **90%**
+- Minimum: **75%**
+- Maximum: **95%**
 
-<shouldertoshoulderease />
+<Waistdartlength />
 
-### WaistEase {#waistease}
+### Waist dart position {#waistdartposition}
 
-<waistease />
+**Controls the position of the waist 'dart', moving it to the center (negative) or side (positive)**
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **-100%**
+- Maximum: **100%**
 
-## Advanced
+<Waistdartposition />
 
-### BackHemSlope {#backhemslope}
+## Fit {#fit}
+### Bust span ease {#bustspanease}
 
-<backhemslope />
+**Controls the amount of ease along the bust span**
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **-5%**
+- Maximum: **20%**
 
-### BackNeckCutout {#backneckcutout}
+<Bustspanease />
 
-<backneckcutout />
+### Chest ease {#chestease}
 
-### FrontShoulderWidth {#frontshoulderwidth}
+**Controls the amount of ease at the chest**
+- Type: **Percentage**
+- Default: **11%**
+- Minimum: **5%**
+- Maximum: **20%**
 
-<frontshoulderwidth />
+<Chestease />
 
-### HighBustWidth {#highbustwidth}
+### Full chest ease reduction {#fullchesteasereduction}
 
-<highbustwidth />
+**Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area**
+- Type: **Percentage**
+- Default: **4%**
+- Minimum: **0%**
+- Maximum: **8%**
+
+<Fullchesteasereduction />
+
+### Shoulder to shoulder ease {#shouldertoshoulderease}
+
+**Controls the amount of ease along the shoulder to shoulder measurement**
+- Type: **Percentage**
+- Default: **-0.5%**
+- Minimum: **-1%**
+- Maximum: **5%**
+
+<Shouldertoshoulderease />
+
+### Waist ease {#waistease}
+
+**Controls the amount of ease at the waist**
+- Type: **Percentage**
+- Default: **5%**
+- Minimum: **1%**
+- Maximum: **20%**
+
+<Waistease />
+
+## Advanced {#advanced}
+### Back hem slope {#backhemslope}
+
+**Constrols the slope of the back hem**
+- Type: **Degrees**
+- Default: **2.5°**
+- Minimum: **0°**
+- Maximum: **5°**
+
+<Backhemslope />
+
+### Back neck cutout {#backneckcutout}
+
+**Controls how deep the neck is cutout in the back**
+- Type: **Percentage**
+- Default: **6%**
+- Minimum: **3%**
+- Maximum: **9%**
+
+<Backneckcutout />
+
+### Front shoulder width {#frontshoulderwidth}
+
+**Controls how much width is added to the shoulder in the front**
+- Type: **Percentage**
+- Default: **95%**
+- Minimum: **92%**
+- Maximum: **98%**
+
+<Frontshoulderwidth />
+
+### High bust width {#highbustwidth}
+
+**Controls the width of the high bust**
+- Type: **Percentage**
+- Default: **86%**
+- Minimum: **80%**
+- Maximum: **92%**
+
+<Highbustwidth />

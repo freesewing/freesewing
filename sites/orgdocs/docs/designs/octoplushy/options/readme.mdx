@@ -1,53 +1,110 @@
 ---
-title: 'Octoplushy, the plushy octopus: Design Options'
+title: "Octoplushy the octopus: Design Options"
 sidebar_label: Design Options
 sidebar_position: 10
+toc_max_heading_level: 5
 ---
 
-import ArmLength from '@site.org/docs/designs/octoplushy/armlength/readme.mdx'
-import ArmTaper from '@site.org/docs/designs/octoplushy/armtaper/readme.mdx'
-import ArmWidth from '@site.org/docs/designs/octoplushy/armwidth/readme.mdx'
-import BottomarmReduction from '@site.org/docs/designs/octoplushy/bottomarmreduction/readme.mdx'
-import BottomArmReductionPlushy from '@site.org/docs/designs/octoplushy/bottomarmreductionplushy/readme.mdx'
-import BottomTopArmRatio from '@site.org/docs/designs/octoplushy/bottomtoparmratio/readme.mdx'
-import NeckWidth from '@site.org/docs/designs/octoplushy/neckwidth/readme.mdx'
-import Size from '@site.org/docs/designs/octoplushy/size/readme.mdx'
-import Type from '@site.org/docs/designs/octoplushy/type/readme.mdx'
+import Armlength from '@site/docs/designs/octoplushy/options/armlength/readme.mdx'
+import Armtaper from '@site/docs/designs/octoplushy/options/armtaper/readme.mdx'
+import Armwidth from '@site/docs/designs/octoplushy/options/armwidth/readme.mdx'
+import Bottomarmreduction from '@site/docs/designs/octoplushy/options/bottomarmreduction/readme.mdx'
+import Bottomarmreductionplushy from '@site/docs/designs/octoplushy/options/bottomarmreductionplushy/readme.mdx'
+import Bottomtoparmratio from '@site/docs/designs/octoplushy/options/bottomtoparmratio/readme.mdx'
+import Neckwidth from '@site/docs/designs/octoplushy/options/neckwidth/readme.mdx'
+import Size from '@site/docs/designs/octoplushy/options/size/readme.mdx'
+import Type from '@site/docs/designs/octoplushy/options/type/readme.mdx'
 
-## Style
+## Conditional Options {#conditional}
+### Bottom arm reduction (plushy) {#bottomarmreductionplushy}
 
-### Type {#armlength}
+**This changes how long the bottom fabric of the arms is compared to the top fabric. It makes the arms more curly**
+- Type: **Percentage**
+- Default: **80%**
+- Minimum: **75%**
+- Maximum: **125%**
 
-<Type />
+<Bottomarmreductionplushy />
 
-### Size {#armtaper}
+### Bottom arm reduction {#bottomarmreduction}
+
+**This changes how long the bottom fabric of the arms is compared to the top fabric. It makes the arms more curly**
+- Type: **Percentage**
+- Default: **90%**
+- Minimum: **75%**
+- Maximum: **125%**
+
+<Bottomarmreduction />
+
+## Style {#style}
+### Arm length {#armlength}
+
+**Controls the length of the arms**
+- Type: **Percentage**
+- Default: **200%**
+- Minimum: **100%**
+- Maximum: **500%**
+
+<Armlength />
+
+### Arm tapering {#armtaper}
+
+**Controls the amount by which the arms taper**
+- Type: **Percentage**
+- Default: **25%**
+- Minimum: **0%**
+- Maximum: **50%**
+
+<Armtaper />
+
+### Arm width {#armwidth}
+
+**Controls the width of the arms**
+- Type: **Percentage**
+- Default: **15%**
+- Minimum: **10%**
+- Maximum: **30%**
+
+<Armwidth />
+
+### Bottom/Top arm ratio {#bottomtoparmratio}
+
+**Changes the ratio between the fabric on the top of the arms versus that on the bottom of the arms**
+- Type: **Percentage**
+- Default: **57%**
+- Minimum: **25%**
+- Maximum: **75%**
+
+<Bottomtoparmratio />
+
+### Neck width {#neckwidth}
+
+**Determines the width at the neck**
+- Type: **Percentage**
+- Default: **25%**
+- Minimum: **25%**
+- Maximum: **45%**
+
+<Neckwidth />
+
+### Size {#size}
+
+**Controls the overall size (value shown is the size of the head)**
+- Type: **Percentage**
+- Default: **100%**
+- Minimum: **5%**
+- Maximum: **500%**
 
 <Size />
 
-### ArmLength {#armwidth}
+### Type {#type}
 
-<ArmLength />
+**Allows you to choose one of the variants of this design**
+- Type: **List**
+- Default: **octoplushy**
+- options:
+  - octoplushy
+  - octopus
+  - squid
 
-### ArmTaper {#bottomarmreduction}
-
-<ArmTaper />
-
-### ArmWidth {#bottomarmreductionplushy}
-
-<ArmWidth />
-
-### NeckWidth {#bottomtoparmratio}
-
-<NeckWidth />
-
-### BottomarmReduction {#neckwidth}
-
-<BottomarmReduction />
-
-### BottomArmReductionPlushy {#size}
-
-<BottomArmReductionPlushy />
-
-### BottomTopArmRatio {#type}
-
-<BottomTopArmRatio />
+<Type />
