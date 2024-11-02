@@ -25,7 +25,6 @@ const skip = [
   'hortensia',
   'huey',
   'jane',
-  'lily',
   'lucy',
   'lumina',
   'lumira',
