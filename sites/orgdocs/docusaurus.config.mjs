@@ -128,7 +128,7 @@ const config = {
         id: 'showcase',
         routeBasePath: 'showcase',
         path: './showcase',
-        authorsMapPath: './authors.yml',
+        authorsMapPath: '../authors.json',
       },
     ],
     [
@@ -137,7 +137,7 @@ const config = {
         id: 'newsletter',
         routeBasePath: 'newsletter',
         path: './newsletter',
-        authorsMapPath: './authors.yml',
+        authorsMapPath: '../authors.json',
         blogTitle: 'FreeSewing Newsletter',
         blogDescription: 'Four times per year, honest wholesome content, no ads, no nonsense',
         blogSidebarCount: 50,
@@ -189,6 +189,7 @@ const config = {
           blogSidebarCount: 5,
           blogSidebarTitle: 'Recent blog posts',
           routeBasePath: 'blog',
+          authorsMapPath: '../authors.json',
           include: ['*/index.mdx'],
           exclude: [
             '**/_*.{js,jsx,ts,tsx,md,mdx}',
