@@ -122,6 +122,43 @@ const config = {
         return fsConfig
       },
     }),
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'showcase',
+        routeBasePath: 'showcase',
+        path: './showcase',
+        authorsMapPath: './authors.yml',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'newsletter',
+        routeBasePath: 'newsletter',
+        path: './newsletter',
+        authorsMapPath: './authors.yml',
+        blogTitle: 'FreeSewing Newsletter',
+        blogDescription: 'Four times per year, honest wholesome content, no ads, no nonsense',
+        blogSidebarCount: 50,
+        blogSidebarTitle: 'Newsletter Editions',
+        postsPerPage: 10,
+        feedOptions: {
+          type: 'rss',
+          title: 'FreeSewing Newsletter Editions',
+          description: 'A feed for the FreeSewing newsletter',
+          copyright: 'FreeSewing',
+          language: 'en',
+          createFeedItems: async (params) => {
+            const { blogPosts, defaultCreateFeedItems, ...rest } = params
+            return defaultCreateFeedItems({
+              blogPosts: blogPosts.filter((item, index) => index < 10),
+              ...rest,
+            })
+          },
+        },
+      },
+    ],
   ],
 
   i18n: { defaultLocale: 'en', locales: ['en'] },
@@ -189,7 +226,6 @@ const config = {
       },
     ],
   ],
-
   themeConfig: {
     // Replace with your project's social card
     image: 'img/freesewing-social-card.png',
