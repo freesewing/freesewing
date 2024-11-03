@@ -94,6 +94,7 @@ function mmOption(option) {
 
 /*
  * Generate options page for each design
+ * Also create placeholder /designs/NAME page
  */
 async function generateDesignsDocs() {
   // Iterate over designs
@@ -163,6 +164,7 @@ async function generateDesignsDocs() {
         await ensuredir(dir)
         fs.writeFileSync(`${dir}/readme.mdx`, content.join('\n'))
       }
+      fs.writeFileSync(`./src/pages/designs/${name}.md`, name)
     }
   }
 }
