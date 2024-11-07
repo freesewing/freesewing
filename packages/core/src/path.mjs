@@ -1553,16 +1553,39 @@ function __pathOffset(path, distance, log) {
         cp2 = new Path().__withLog(path.log).move(op.to).curve(op.cp2, op.cp1, current)
         cp2 = cp2.shiftAlong(cp2.length() > 2 ? 2 : cp2.length() / 10)
       } else cp2 = op.cp2
-      let b = new Bezier(
+      const curve_offset_forward = []
+      const curve_offset_reverse = []
+      const forward = new Bezier(
         { x: current.x, y: current.y },
         { x: cp1.x, y: cp1.y },
         { x: cp2.x, y: cp2.y },
         { x: op.to.x, y: op.to.y }
       )
-      for (let bezier of b.offset(distance)) {
+      const reverse = new Bezier(
+        { x: op.to.x, y: op.to.y },
+        { x: cp2.x, y: cp2.y },
+        { x: cp1.x, y: cp1.y },
+        { x: current.x, y: current.y }
+      )
+      for (const bezier of forward.offset(distance)) {
         const segment = __asPath(bezier, path.log)
-        if (segment) offset.push(segment)
+        if (segment) curve_offset_forward.push(segment)
       }
+      for (const bezier of reverse.offset(-distance).reverse()) {
+        const reversed_bezier = new Bezier(
+          bezier.points[3],
+          bezier.points[2],
+          bezier.points[1],
+          bezier.points[0]
+        )
+        const segment = __asPath(reversed_bezier, path.log)
+        if (segment) curve_offset_reverse.push(segment)
+      }
+      offset = offset.concat(
+        curve_offset_forward.length >= curve_offset_reverse.length
+          ? curve_offset_forward
+          : curve_offset_reverse
+      )
     } else if (op.type === 'close') closed = true
     if (op.to) current = op.to
     if (!start) start = current
