@@ -1,0 +1,30 @@
+// Handle themes
+import { themes } from '../shared/themes/index.mjs'
+
+export default {
+  content: [
+    './blog/*/*.mdx',
+    './showcase/*/*.mdx',
+    './newsletter/*/*.mdx',
+    './src/*.js',
+    './src/**/*.js',
+    './src/*.mjs',
+    './src/**/*.mjs',
+  ],
+  plugins: [require('daisyui'), require('tailwindcss/nesting')],
+  daisyui: {
+    styled: true,
+    themes: [themes],
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false,
+  },
+  theme: {
+    extend: {
+      aspectRatio: {
+        '9/16': '9 / 16',
+      },
+    },
+  },
+}

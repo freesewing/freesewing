@@ -9,6 +9,7 @@ const authors = [
   20400, // Lex
   20650, // Bobgeorge
   28838, // Ben
+  31287, // Laser
   31336, // Vili
 ]
 
@@ -22,6 +23,7 @@ const userAsAuthor = (user) => ({
   title: titles[user.profile.role],
   url: `https://freesewing.org/users/user?id=${user.profile.id}`,
   image_url: `https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/uid-${user.profile.ihash}/public`,
+  bio: user.profile.bio,
 })
 
 const loadUser = async (id) => {

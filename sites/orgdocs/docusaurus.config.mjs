@@ -1,6 +1,8 @@
 import path from 'node:path'
 import { themes as prismThemes } from 'prism-react-renderer'
 import designs from '../../config/software/designs.json'
+import tailwindcss from 'tailwindcss'
+import autoprefixer from 'autoprefixer'
 
 /*
  * We bundle the options as one page, so keep them out the sidebar
@@ -159,6 +161,17 @@ const config = {
         },
       },
     ],
+    async function myPlugin(context, options) {
+      return {
+        name: 'docusaurus-tailwindcss',
+        configurePostCss(postcssOptions) {
+          // Appends TailwindCSS and AutoPrefixer.
+          postcssOptions.plugins.push(tailwindcss)
+          postcssOptions.plugins.push(autoprefixer)
+          return postcssOptions
+        },
+      }
+    },
   ],
 
   i18n: { defaultLocale: 'en', locales: ['en'] },
@@ -199,7 +212,7 @@ const config = {
           ],
           postsPerPage: 10,
           blogListComponent: '@theme/BlogListPage',
-          blogPostComponent: '@theme/BlogPostPage',
+          //blogPostComponent: '@site/src/components/blog/post.mjs',
           blogTagsListComponent: '@theme/BlogTagsListPage',
           blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
           //remarkPlugins: [require('./my-remark-plugin')],
@@ -237,15 +250,12 @@ const config = {
         src: 'img/logo-white.svg',
       },
       items: [
-        { to: '/docs/about', label: 'About FreeSewing', position: 'left' },
-        { to: '/docs/designs', label: 'FreeSewing Designs', position: 'left' },
-        { to: '/docs/measurements', label: 'Measurements we use', position: 'left' },
-        { to: '/docs/sewing', label: 'Sewing Terminology', position: 'left' },
-        {
-          href: 'https://freesewing.org/',
-          label: 'FreeSewing.org',
-          position: 'right',
-        },
+        { to: '/editor/', label: '🪄 Editor', position: 'left' },
+        { to: '/designs/', label: '👕 Designs', position: 'left' },
+        { to: '/docs/', label: '📖 Docs', position: 'left' },
+        { to: '/showcase/', label: '📷 Showcase', position: 'left' },
+        { to: '/blog/', label: '📰 Blog', position: 'left' },
+        { to: '/account/', label: '📰 Account', position: 'right' },
       ],
     },
     footer: {
