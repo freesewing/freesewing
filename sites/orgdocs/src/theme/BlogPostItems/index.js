@@ -3,6 +3,8 @@ import { BlogPostProvider } from '@docusaurus/plugin-content-blog/client'
 import Link from '@docusaurus/Link'
 import BlogPostItem from '@theme/BlogPostItem'
 import { imgUrl } from '../BlogPostItem/index.js'
+import { useLocation } from '@docusaurus/router'
+import { designInfo } from '@site/src/lib/designinfo.mjs'
 
 const textShadow = {
   textShadow:
@@ -30,12 +32,140 @@ const BlogPostTeaser = ({ post }) => (
   </Link>
 )
 
-const BlogPostItems = ({ items }) => (
-  <div className="grid grid-cols-1 gap-2 lg:grid-cols-2 max-w-7xl mb-8">
-    {items.map((post) => (
-      <BlogPostTeaser post={post} key={post.content.metadata.permalink} />
-    ))}
+const headers = {
+  showcase: (
+    <>
+      <h1>Showcase</h1>
+      <ul className="mdx flex flex-row flex-wrap mb-4">
+        {Object.keys(designInfo)
+          .filter((d) => designInfo[d].org)
+          .map((d) => (
+            <li key={d} className="inline pr-1.5 m-0 leading-5">
+              <Link href={`/showcase/tags/${d}`} className="text-secondary capitalize text-sm">
+                {d}
+              </Link>
+            </li>
+          ))}
+      </ul>
+    </>
+  ),
+  blog: (
+    <>
+      <h1>Blog</h1>
+    </>
+  ),
+  newsletter: (
+    <>
+      <h1>Newsletter</h1>
+    </>
+  ),
+}
+
+const Breadcrumb = ({ crumb, active }) => (
+  <li className="breadcrumbs__item">
+    <Link href={crumb.href} className="capitalize text-sm breadcrumbs__link">
+      {crumb.label}
+    </Link>
+  </li>
+)
+const Breadcrumbs = ({ breadcrumbs }) => {
+  return (
+    <ul className="breadcrumbs text-sm">
+      {breadcrumbs.map((crumb) => (
+        <Breadcrumb crumb={crumb} active={false} key={crumb.href} />
+      ))}
+    </ul>
+  )
+}
+
+const BlogPostItems = ({ items }) => {
+  const location = useLocation()
+  /*
+   * This code is shared between all blog instances
+   * which means: blog, showcase, and newsletter
+   * so we need to figure out which it is
+   */
+  const type = items[0].content.metadata.permalink.split('/')[1]
+
+  if (type === 'showcase') return <ShowcaseItems items={items} slug={location.pathname} />
+
+  return (
+    <>
+      <Breadcrumbs
+        breadcrumbs={[
+          {
+            href: '/',
+            label: <HomeIcon />,
+          },
+          {
+            href: `/${type}/`,
+            label: type,
+          },
+        ]}
+      />
+      {headers[type]}
+      <div className="grid grid-cols-1 gap-2 lg:grid-cols-2 max-w-7xl mb-8">
+        {items.map((post) => (
+          <BlogPostTeaser post={post} key={post.content.metadata.permalink} />
+        ))}
+      </div>
+    </>
+  )
+}
+
+export default BlogPostItems
+
+const ShowcasePostTeaser = ({ post }) => (
+  <div className="mb-4">
+    <Link className="relative block shadow rounded-lg" href={post.content.metadata.permalink}>
+      <img
+        src={imgUrl(post.content.metadata.permalink)}
+        loading="lazy"
+        className={`
+      "rounded md:rounded-lg top-0 left-0 z-0"
+        `}
+      />
+      <div className={teaserClasses} style={textShadow}>
+        {post.content.metadata.title}
+      </div>
+    </Link>
+    <ul className="block text-right font-medium -mt-2 z-10 relative">
+      {post.content.metadata.tags.map((tag) => (
+        <li className="text-sm inline pr-1" key={tag.label}>
+          <Link href={tag.permalink} className="text-secondary captalize">
+            <span className="badge badge-secondary capitalize">{`${tag.label}`}</span>
+          </Link>
+        </li>
+      ))}
+    </ul>
   </div>
 )
 
-export default BlogPostItems
+const ShowcaseItems = ({ items, slug }) => {
+  return (
+    <>
+      {slug === '/showcase/' ? (
+        <>
+          <Breadcrumbs
+            breadcrumbs={[
+              {
+                href: '/',
+                label: 'home',
+              },
+              {
+                href: `/showcase/`,
+                label: 'Showcase',
+              },
+            ]}
+          />
+          {headers.showcase}
+        </>
+      ) : null}
+      <div className="columns-2 lg:columns-3 mb-4">
+        {items.map((post) => (
+          <ShowcasePostTeaser post={post} key={post.content.metadata.permalink} />
+        ))}
+      </div>
+    </>
+  )
+}

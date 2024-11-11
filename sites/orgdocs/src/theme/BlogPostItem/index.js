@@ -26,7 +26,7 @@ const BlogPostHeader = () => {
  * Get blog post image from permalink
  */
 export const imgPrefix = 'https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/'
-export const imgUrl = (permalink) => `${imgPrefix}${permalink.slice(1).split('/').join('-')}/w1000`
+export const imgUrl = (permalink) => `${imgPrefix}${permalink.slice(1).split('/').join('-')}/public`
 
 export default function BlogPostItem(props) {
   const { children, className } = props

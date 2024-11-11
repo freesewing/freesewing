@@ -327,3 +327,6 @@ figcaption.mdx {
   width: var(--ifm-avatar-photo-size);
   height: var(--ifm-avatar-photo-size);
 }
+.avatar > div {
+  aspect-ratio: auto;
+}

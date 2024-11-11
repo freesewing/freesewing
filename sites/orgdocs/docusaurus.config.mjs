@@ -131,6 +131,8 @@ const config = {
         routeBasePath: 'showcase',
         path: './showcase',
         authorsMapPath: '../authors.json',
+        postsPerPage: 50,
+        blogSidebarCount: 10,
       },
     ],
     [
