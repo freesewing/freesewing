@@ -133,6 +133,7 @@ const config = {
         authorsMapPath: '../authors.json',
         postsPerPage: 50,
         blogSidebarCount: 10,
+        blogSidebarTitle: 'Recent Showcases',
       },
     ],
     [

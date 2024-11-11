@@ -2,58 +2,56 @@ import fs from 'fs'
 
 const authors = [
   1, // joost
+  8, // reseved for anynymous users
   132, // Wouter
+  292,
+  433, // Paul
   840, // Eleonore
+  1972, // Ferdi
   13050, // Karen
   19867, // Natalia
+  20165, // Saber
   20400, // Lex
   20650, // Bobgeorge
-  22007,
+  21873, // Starfirebird
+  22007, // modern_dragon
+  22141, // comixminx
+  22693, // tuesday
+  22708, // Starfetch
+  23123, // Braveness
+  23364, // Renee-mariposa
+  23386, // Ramoth
+  24546, // MagicantAce
+  27042, // Guin
+  27667, // Talatrix
+  27669, // Gaelle
+  28322, // Zag
+  28514, // Halbmoki (thomas)
   28838, // Ben
+  28890, // Jacques
+  29576, // Ojensen
+  29683, // JenBarb_
   31287, // Laser
   31336, // Vili
-  33070,
-
-  8,
-  433,
-  1972,
-  20165,
-  21873,
-  22007,
-  22141,
-  22693,
-  22708,
-  23123,
-  23364,
-  23386,
-  24546,
-  27042,
-  27667,
-  27669,
-  28322,
-  28514,
-  28890,
-  29576,
-  29683,
-  31761,
-  31916,
-  32339,
-  32412,
-  46488,
-  47151,
-  49445,
-  50461,
-  50818,
-  61987,
-  62144,
-  64919,
-  65187,
-  71794,
-  72337,
-  73391,
-  77515,
-  83003,
-  83912,
+  31761, // JoshShabtaiCa
+  31916, // dylanwhat
+  32339, // lmunar
+  32412, // petit_lutin
+  33070, // Thrunic
+  46488, // Nisaea
+  47151, // iderias
+  49445, // Galit
+  50461, // Vlad
+  50818, // RockerKitten
+  61987, // posh tunic
+  62144, // Tinker-Tim-The-Toolman-Taylor-Soldier-Spy
+  64919, // paula_
+  65187, // user-65187
+  71794, // Karlo
+  72337, // amaan hammadi
+  73391, // user 73391
+  83003, // AuxSuivants0
+  83912, // GursMan123
 ]
 
 const titles = {
