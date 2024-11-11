@@ -68,7 +68,7 @@ const Breadcrumb = ({ crumb, active }) => (
     </Link>
   </li>
 )
-const Breadcrumbs = ({ breadcrumbs }) => {
+export const Breadcrumbs = ({ breadcrumbs }) => {
   return (
     <ul className="breadcrumbs text-sm">
       {breadcrumbs.map((crumb) => (
@@ -88,6 +88,7 @@ const BlogPostItems = ({ items }) => {
   const type = items[0].content.metadata.permalink.split('/')[1]
 
   if (type === 'showcase') return <ShowcaseItems items={items} slug={location.pathname} />
+  if (type === 'newsletter') return <NewsletterItems items={items} slug={location.pathname} />
 
   return (
     <>
@@ -95,7 +96,7 @@ const BlogPostItems = ({ items }) => {
         breadcrumbs={[
           {
             href: '/',
-            label: <HomeIcon />,
+            label: 'Home',
           },
           {
             href: `/${type}/`,
@@ -144,7 +145,7 @@ const ShowcasePostTeaser = ({ post }) => (
 const ShowcaseItems = ({ items, slug }) => {
   return (
     <>
-      {slug === '/showcase/' ? (
+      {slug.slice(0, 9) === '/showcase' ? (
         <>
           <Breadcrumbs
             breadcrumbs={[
@@ -166,6 +167,37 @@ const ShowcaseItems = ({ items, slug }) => {
           <ShowcasePostTeaser post={post} key={post.content.metadata.permalink} />
         ))}
       </div>
+    </>
+  )
+}
+
+const NewsletterItems = ({ items, slug }) => {
+  return (
+    <>
+      {slug.slice(0, 11) === '/newsletter' ? (
+        <>
+          <Breadcrumbs
+            breadcrumbs={[
+              {
+                href: '/',
+                label: 'home',
+              },
+              {
+                href: `/newsletter/`,
+                label: 'Newsletter',
+              },
+            ]}
+          />
+          {headers.newsletter}
+        </>
+      ) : null}
+      <ul className="mdx list list-disc ml-8">
+        {items.map((post) => (
+          <li key={post.content.metadata.permalink}>
+            <Link href={post.content.metadata.permalink}>{post.content.metadata.title}</Link>
+          </li>
+        ))}
+      </ul>
     </>
   )
 }
