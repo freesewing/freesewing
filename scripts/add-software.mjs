@@ -77,7 +77,7 @@ async function addDesign() {
 
   👉  We've created your design skeleton at ${chalk.green('designs/' + name)}
   👉  We've configured the packages via the ${chalk.green('package.json')} file
-  👉  We've added ${chalk.green('designs/' + name)} to the lab
+  👉  We've added ${chalk.green('designs/' + name)} to the local repository
 
 
   ${chalk.bold.yellow('✏️  Make it your own')}
@@ -103,7 +103,7 @@ async function addDesign() {
   ${chalk.bold.yellow('👷 Get to work')}
   ${chalk.gray('≡≡≡≡≡≡≡≡≡≡≡≡≡≡')}
 
-  🚀  You can now start the development environment with ${chalk.blue('yarn lab')}
+  🚀  You can now start the org development environment with ${chalk.blue('yarn org')}
   📖  Documentation is available at ${chalk.green('https://freesewing.dev/')}
   🤓  Happy hacking
 
@@ -175,7 +175,7 @@ async function addPlugin() {
   ${chalk.bold.yellow('👷 Get to work')}
   ${chalk.gray('≡≡≡≡≡≡≡≡≡≡≡≡≡≡')}
 
-  🛠️   You can now start the development environment with ${chalk.blue('yarn lab')}
+  🛠️   You can now start the org development environment with ${chalk.blue('yarn org')}
   📖  Documentation is available at ${chalk.green('https://freesewing.dev/')}
   🤓  Happy hacking
 
