@@ -88,6 +88,26 @@
       "t": "Waist ease",
       "d": "Controls the amount of ease at your waist"
     },
+    "waistAngle":  {
+      "t": "Waistband angle",
+      "d": "Change the angle of the waistband when viewed from the side"
+    },
+    "useWaistAngleFor": {
+      "t": "Use waistband angle for",
+      "d": "Apply the waistband angle to the front, back or both"
+    },
+    "useWaistAngleFor.both": {
+      "t": "Both",
+      "d": "Apply the waistband angle to the front and back"
+    },
+     "useWaistAngleFor.backOnly": {
+      "t": "Back",
+      "d": "Apply the waistband angle only to the back"
+    },
+     "useWaistAngleFor.frontOnly": {
+      "t": "Front",
+      "d": "Apply the waistband angle only to the front"
+    },
     "grainlinePosition": {
       "t": "Grainline position",
       "d": "Controls the horizontal position of the leg relative to the seat"
