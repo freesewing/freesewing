@@ -76,7 +76,7 @@ function pacoBack({
   // Adapt waist so we can get these pants over our bum without a zipper
   let delta =
     (measurements.seat * options.legBalance) / 2 - points.styleWaistIn.dist(points.styleWaistOut)
-  let angle = points.styleWaistIn.angle(points.styleWaistOut)
+  let angle = points.styleWaistInNoAngle.angle(points.styleWaistOut)
   points.styleWaistOut = points.styleWaistOut.shift(angle, delta)
   points.seatOut = points.seatOut.shift(angle, delta)
 

@@ -17,6 +17,7 @@ function titanBack({
   sa,
   absoluteOptions,
   log,
+  units,
   part,
 }) {
   /*
@@ -237,6 +238,32 @@ function titanBack({
     points.styleWaistIn = points.waistIn.clone()
     points.styleWaistOut = points.waistOut.clone()
   }
+
+  // Now angle the waist (if requested)
+  // create a backup of the unangled position, for use in dependent patterns
+  points.styleWaistInNoAngle = points.styleWaistIn.clone()
+  if (
+    options.waistAngle !== 0 &&
+    (options.useWaistAngleFor === 'both' || options.useWaistAngleFor === 'backOnly')
+  ) {
+    // calculate how much to add/subtract
+    // assume that from the crossSeamCurveStart upwards, the crotch seam will be vertical
+    // base of the triangle is then horizontal distance from crossSeamCurveStart to fork
+    let triangleBase, triangleHeight
+    // use positive value for triangleBase: positive angle means higher back
+    triangleBase = points.fork.dx(points.crossSeamCurveStart)
+    // length of opposite side is length of adjacent side times tangent of the angle
+    triangleHeight = Math.tan((options.waistAngle * Math.PI) / 180) * triangleBase
+
+    // top of cross seam is a straight line, so just extend
+    points.styleWaistIn = points.crossSeamCurveStart.shiftOutwards(
+      points.styleWaistIn,
+      triangleHeight
+    )
+
+    // report the change in height
+    log.info(['additionalHeightCenterBack', units(triangleHeight)])
+  }
   // Adapt the vertical placement of the seat control point to the lowered waist
   points.seatOutCp2.y = points.seatOut.y - points.styleWaistOut.dy(points.seatOut) / 2
 
@@ -425,6 +452,13 @@ export const back = {
     lengthBonus: { pct: 2, min: -20, max: 10, menu: 'style' },
     crotchDrop: { pct: 2, min: 0, max: 15, menu: 'style' },
     fitKnee: { bool: false, menu: 'style' },
+    waistAngle: { deg: 0, min: -20, max: 20, menu: 'style' },
+    useWaistAngleFor: {
+      dflt: 'both',
+      list: ['both', 'backOnly', 'frontOnly'],
+      menu: 'style',
+    },
+
     // Advanced
     legBalance: { pct: 57.5, min: 52.5, max: 62.5, menu: 'advanced' },
     crossSeamCurveStart: { pct: 85, min: 60, max: 100, menu: 'advanced' },

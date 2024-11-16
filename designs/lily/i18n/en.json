@@ -11,7 +11,7 @@
 		"adjustEase.d": "Knee, seat and waist ease should be set to fabric stretch * -1/10; click the button to adjust all three.",
 		"adjustEase": "adjust ease"
 	},
-  "o": { 
+  "o": {
     "lengthReduction": {
       "t": "Length reduction",
       "d": "Controls how much the leggings are shortened with respect to ankle length"
@@ -75,6 +75,26 @@
     "waistbandWidth": {
       "t": "Waistband width",
       "d": "The width of the waistband"
+    },
+    "waistAngle":  {
+      "t": "Waistband angle",
+      "d": "Change the angle of the waistband when viewed from the side"
+    },
+    "useWaistAngleFor": {
+      "t": "Use waistband angle for",
+      "d": "Apply the waistband angle to the front, back or both"
+    },
+    "useWaistAngleFor.both": {
+      "t": "Both",
+      "d": "Apply the waistband angle to the front and back"
+    },
+    "useWaistAngleFor.backOnly": {
+      "t": "Back",
+      "d": "Apply the waistband angle only to the back"
+    },
+    "useWaistAngleFor.frontOnly": {
+      "t": "Front",
+      "d": "Apply the waistband angle only to the front"
     }
   }
 }
