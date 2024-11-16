@@ -250,7 +250,7 @@ const config = {
       title: 'FreeSewing',
       logo: {
         alt: 'FreeSewing Logo',
-        src: 'img/logo-white.svg',
+        src: 'img/logo.svg',
       },
       items: [
         { to: '/editor/', label: '🪄 Editor', position: 'left' },
