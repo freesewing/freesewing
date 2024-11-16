@@ -5,88 +5,13 @@
  */
 
 /*
- * Add Tailwindcss
+ * Add Tailwindcss but only inside a container
+ * This is needed because docusaurus and tailwind will clash
  */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer components {
-  /* Applied styles for common HTML tags */
-  h1 {
-    @apply text-base-content text-4xl py-5 font-bold lg:text-6xl;
-  }
-  h2 {
-    @apply text-base-content text-3xl pt-4 pb-3 m-0 font-medium lg:text-4xl;
-  }
-  h3 {
-    @apply text-base-content text-2xl pt-3 pb-2 m-0 font-medium lg:text-3xl;
-  }
-  h4 {
-    @apply text-base-content text-xl pt-2 pb-1 m-0 font-medium lg:text-2xl;
-  }
-  h5 {
-    @apply text-base-content text-lg py-1 m-0 font-medium lg:text-xl;
-  }
-  h6 {
-    @apply text-base-content text-base py-0 m-0 font-medium lg:text-lg;
-  }
-  p {
-    @apply text-base-content my-1 py-2 text-base leading-6;
-  }
-  .btn {
-    @apply normal-case;
-  }
-  /* Keep spacing after headings between p and non-p consistent */
-  h1 + p,
-  h2 + p,
-  h3 + p,
-  h4 + p,
-  h5 + p,
-  h6 + p {
-    padding-top: 0;
-    margin-top: 0;
-  }
-
-  /* mdx styles */
-  .md a:not(.btn),
-  .mdx a:not(.btn) {
-    @apply underline decoration-2 text-secondary;
-  }
-  .md a:hover,
-  .mdx a:hover {
-    @apply decoration-4;
-  }
-  .mdx ul {
-    @apply pl-0 lg:pl-4  list-disc list-inside text-base-content;
-  }
-  .mdx ol ul,
-  .mdx ul ul {
-    @apply pl-2 lg:pl-4  list-disc list-inside text-base-content;
-  }
-  .mdx ol {
-    @apply pl-0 lg:pl-4 list-decimal list-inside text-base-content;
-  }
-  .mdx ul ol,
-  .mdx ol ol {
-    @apply pl-2 lg:pl-4 list-decimal list-inside text-base-content;
-  }
-  .mdx code {
-    @apply bg-base-300 px-1.5 text-base-content font-mono font-medium bg-opacity-10 py-0.5 border-base-content rounded border;
-  }
-  .mdx pre code {
-    @apply bg-inherit border-0;
-  }
-  .mdx a.heading-autolink {
-    color: currentColor;
-    text-decoration: none;
-  }
-  .mdx a.heading-autolink:after {
-    content: '';
-    color: hsl(var(--s));
-    font-size: 75%;
-    padding-left: 0.5rem;
-  }
+.tailwind-container {
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 }
 
 /* You can override the default Infima variables here. */

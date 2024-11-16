@@ -1,5 +1,5 @@
 // Handle themes
-import { themes } from '../shared/themes/index.mjs'
+import { themes } from './themes/index.mjs'
 
 export default {
   content: [
