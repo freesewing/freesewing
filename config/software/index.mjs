@@ -1,7 +1,6 @@
 import designs from './designs.json' assert { type: 'json' }
 import packages from './packages.json' assert { type: 'json' }
 import plugins from './plugins.json' assert { type: 'json' }
-import sites from './sites.json' assert { type: 'json' }
 
 // Helper method to construct summary objects
 const unpack = (obj, folder) =>
@@ -22,14 +21,13 @@ const unpackDesigns = (obj, folder) =>
   )
 
 // Re-Export imported JSON
-export { designs, packages, plugins, sites }
+export { designs, packages, plugins }
 
 // All software
 export const software = {
   ...unpackDesigns(designs, 'designs'),
   ...unpack(plugins, 'plugins'),
   ...unpack(packages, 'packages'),
-  ...unpack(sites, 'sites'),
 }
 
 // All software published on NPM
@@ -40,4 +38,4 @@ export const publishedSoftware = {
 }
 
 export const publishedTypes = ['designs', 'packages', 'plugins']
-export const types = [...publishedTypes, 'sites']
+export const types = publishedTypes
