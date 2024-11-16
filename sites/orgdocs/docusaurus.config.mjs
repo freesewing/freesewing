@@ -164,7 +164,7 @@ const config = {
         },
       },
     ],
-    async function myPlugin(context, options) {
+    async function myPlugin() {
       return {
         name: 'docusaurus-tailwindcss',
         configurePostCss(postcssOptions) {
