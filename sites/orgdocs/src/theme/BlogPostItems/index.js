@@ -1,7 +1,5 @@
 import React from 'react'
-import { BlogPostProvider } from '@docusaurus/plugin-content-blog/client'
 import Link from '@docusaurus/Link'
-import BlogPostItem from '@theme/BlogPostItem'
 import { imgUrl } from '../BlogPostItem/index.js'
 import { useLocation } from '@docusaurus/router'
 import { designInfo } from '@site/src/lib/designinfo.mjs'
