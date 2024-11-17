@@ -1,7 +1,5 @@
 import fs from 'fs'
-import path from 'path'
 import { glob } from 'glob'
-import { designs } from '../src/lib/designs.mjs'
 import matter from 'gray-matter'
 
 /*
