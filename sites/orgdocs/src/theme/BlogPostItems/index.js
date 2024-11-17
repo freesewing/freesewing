@@ -2,7 +2,6 @@ import React from 'react'
 import Link from '@docusaurus/Link'
 import { imgUrl } from '../BlogPostItem/index.js'
 import { useLocation } from '@docusaurus/router'
-import { designInfo } from '@site/src/lib/designinfo.mjs'
 import { tags as showcaseTags } from '@site/showcase-tags.mjs'
 
 const textShadow = {
