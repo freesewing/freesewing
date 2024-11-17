@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link'
 import { imgUrl } from '../BlogPostItem/index.js'
 import { useLocation } from '@docusaurus/router'
 import { designInfo } from '@site/src/lib/designinfo.mjs'
+import { tags as showcaseTags } from '@site/showcase-tags.mjs'
 
 const textShadow = {
   textShadow:
@@ -29,35 +30,6 @@ const BlogPostTeaser = ({ post }) => (
     </div>
   </Link>
 )
-
-const headers = {
-  showcase: (
-    <>
-      <h1>Showcase</h1>
-      <ul className="mdx flex flex-row flex-wrap mb-4">
-        {Object.keys(designInfo)
-          .filter((d) => designInfo[d].org)
-          .map((d) => (
-            <li key={d} className="inline pr-1.5 m-0 leading-5">
-              <Link href={`/showcase/tags/${d}`} className="text-secondary capitalize text-sm">
-                {d}
-              </Link>
-            </li>
-          ))}
-      </ul>
-    </>
-  ),
-  blog: (
-    <>
-      <h1>Blog</h1>
-    </>
-  ),
-  newsletter: (
-    <>
-      <h1>Newsletter</h1>
-    </>
-  ),
-}
 
 const Breadcrumb = ({ crumb, active }) => (
   <li className="breadcrumbs__item">
@@ -102,7 +74,7 @@ const BlogPostItems = ({ items }) => {
           },
         ]}
       />
-      {headers[type]}
+      <h1>Blog</h1>
       <div className="grid grid-cols-1 gap-2 lg:grid-cols-2 max-w-7xl mb-8">
         {items.map((post) => (
           <BlogPostTeaser post={post} key={post.content.metadata.permalink} />
@@ -157,13 +129,29 @@ const ShowcaseItems = ({ items, slug }) => {
               },
             ]}
           />
-          {headers.showcase}
+          <h1>Showcase</h1>
+          <div className="tailwind-container">
+            <ul className="mdx flex flex-row flex-wrap mb-4">
+              {showcaseTags.map((d) => (
+                <li key={d} className="inline pr-1 m-0 leading-6">
+                  <Link
+                    href={`/showcase/tags/${d}`}
+                    className="badge badge-sm text-secondary capitalize text-sm"
+                  >
+                    {d}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </>
       ) : null}
-      <div className="columns-2 lg:columns-3 mb-4">
-        {items.map((post) => (
-          <ShowcasePostTeaser post={post} key={post.content.metadata.permalink} />
-        ))}
+      <div className="tailwind-container">
+        <div className="columns-2 lg:columns-3 mb-4">
+          {items.map((post) => (
+            <ShowcasePostTeaser post={post} key={post.content.metadata.permalink} />
+          ))}
+        </div>
       </div>
     </>
   )
@@ -186,7 +174,7 @@ const NewsletterItems = ({ items, slug }) => {
               },
             ]}
           />
-          {headers.newsletter}
+          <h1>Newsletter</h1>
         </>
       ) : null}
       <ul className="mdx list list-disc ml-8">

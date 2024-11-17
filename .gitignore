@@ -48,6 +48,7 @@ sites/orgdocs/src/lib/designinfo.mjs
 sites/orgdocs/src/lib/i18n.mjs
 sites/orgdocs/docs/designs/*/options/readme.mdx
 sites/orgdocs/authors.json
+sites/orgdocs/showcase-tags.mjs
 
 # Lab auto-generated content
 sites/lab/lib
