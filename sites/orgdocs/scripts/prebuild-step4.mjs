@@ -18,7 +18,7 @@ async function prebuild() {
     if (data.data.tags) {
       if (Array.isArray(data.data.tags)) tags.push(...data.data.tags)
       else tags.push(data.data.tags)
-    } else console.log(data.data)
+    } else console.log('Missing design tag in showcase post:', { file, data: data.data })
   }
   fs.writeFileSync(
     `./showcase-tags.mjs`,
