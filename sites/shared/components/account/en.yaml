@@ -363,6 +363,6 @@ validateMeasurements: Check Measurements
 backChest.t: Back Chest Measurement
 backChest.d: Both calculations should measure the back half of your ribcage and should thus be roughly equal.
 bustFront.t: Front Bust measurements
-bustFront.d: Measuring from the HPS point to the waist across your front should be equal or smaller than the sum of the individual vertical bust measurements.
+bustFront.d: Measuring from the HPS point directly to the waist across your front can't be larger than the sum of the individual vertical bust measurements. However note that waist to underbust is measured at the side of the body instead of at the front, but usually this doesn't make a large difference.
 waistToUpperLeg.t: Vertical leg measurements
-waistToUpperLeg.d: The waist-to-upper-leg measurement goes from the waist along the body to a bit below the crotch and the inseam measurement goes vertically from the crotch to the floor. Thus, going directly vertically from the waist to the floor should be a bit smaller than the sum.
+waistToUpperLeg.d: The waist-to-upper-leg measurement goes from the waist along the body to a bit below the crotch and the inseam measurement goes vertically from the crotch to the floor. Thus, going directly vertically from the waist to the floor should be a bit smaller than the sum of the other measurements.
