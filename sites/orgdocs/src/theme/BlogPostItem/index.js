@@ -7,6 +7,7 @@ import { useLocation } from '@docusaurus/router'
 import BlogPostItemHeaderInfo from '@theme/BlogPostItem/Header/Info'
 import BlogPostItemHeaderAuthors from '@theme/BlogPostItem/Header/Authors'
 import { Breadcrumbs } from '../BlogPostItems/index.js'
+import { capitalize } from '@site/src/lib/utils.mjs'
 
 // apply a bottom margin in list view
 function useContainerClassName() {
@@ -27,8 +28,8 @@ const BlogPostHeader = ({ type }) => {
               label: 'Home',
             },
             {
-              href: `${type}`,
-              label: type,
+              href: `/${type}/`,
+              label: capitalize(type),
             },
             {
               href: metadata.permalink,
