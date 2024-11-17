@@ -2,19 +2,11 @@
 import { themes } from './themes/index.mjs'
 
 export default {
-  content: [
-    './blog/*/*.mdx',
-    './showcase/*/*.mdx',
-    './newsletter/*/*.mdx',
-    './src/*.js',
-    './src/**/*.js',
-    './src/*.mjs',
-    './src/**/*.mjs',
-  ],
+  content: ['./src/*.js', './src/**/*.js', './src/*.mjs', './src/**/*.mjs'],
   plugins: [require('daisyui'), require('tailwindcss/nesting')],
   daisyui: {
     styled: true,
-    themes: [themes],
+    themes,
     base: true,
     utils: true,
     logs: true,
