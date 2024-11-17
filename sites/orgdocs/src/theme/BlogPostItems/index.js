@@ -121,7 +121,7 @@ const ShowcaseItems = ({ items, slug }) => {
             breadcrumbs={[
               {
                 href: '/',
-                label: 'home',
+                label: 'Home',
               },
               {
                 href: `/showcase/`,
@@ -131,12 +131,13 @@ const ShowcaseItems = ({ items, slug }) => {
           />
           <h1>Showcase</h1>
           <div className="tailwind-container">
-            <ul className="mdx flex flex-row flex-wrap mb-4">
+            <span className="block font-medium text-sm opacity-70">Browse by design:</span>
+            <ul className="mdx flex flex-row flex-wrap mb-4 items-center">
               {showcaseTags.map((d) => (
-                <li key={d} className="inline pr-1 m-0 leading-6">
+                <li key={d} className="inline pr-0.5 m-0 leading-5">
                   <Link
                     href={`/showcase/tags/${d}`}
-                    className="badge badge-sm text-secondary capitalize text-sm"
+                    className="badge badge-sm badge-secondary capitalize text-xs font-medium"
                   >
                     {d}
                   </Link>

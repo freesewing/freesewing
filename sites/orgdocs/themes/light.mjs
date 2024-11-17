@@ -1,12 +1,6 @@
 /**
- * This is a theme file for FreeSewing's NextJS-based website
- *
+ * This is a theme file for DaisyUI for FreeSewing's Docusaurus-based website
  * You can change colors, fonts, and a few other things here.
- * While technically, you can change more, it is not recommended.
- * Best to stick to the examples in this light theme
- *
- * If you want to make your own theme, copy this file to a new name.
- * Then update the index.js to include it, and you're good to go.
  */
 
 /*
@@ -17,7 +11,7 @@
 import colors from 'tailwindcss/colors'
 
 /*
- * This export is the Tailwind theme
+ * This export is the DaisyUI theme
  */
 export const theme = {
   /* FONTS
