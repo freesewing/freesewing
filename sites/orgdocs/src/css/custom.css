@@ -4,6 +4,16 @@
  * work well for content-centric websites.
  */
 
+/*
+ * Add Tailwindcss but only inside a container
+ * This is needed because docusaurus and tailwind will clash
+ */
+.tailwind-container {
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+}
+
 /* You can override the default Infima variables here. */
 :root {
   /* Neutral */
@@ -102,9 +112,9 @@
   --ifm-sidebar-item-spacing: 8px;
 
   /* Navbar Customizations */
-  --ifm-navbar-background-color: hsl(var(--sky-700));
-  --ifm-navbar-link-color: hsl(var(--neutral-50));
-  --ifm-navbar-link-hover-color: hsl(var(--sky-300));
+  --ifm-navbar-background-color: hsl(var(--neutral-50));
+  --ifm-navbar-link-color: hsl(var(--neutral-900));
+  --ifm-navbar-link-hover-color: hsl(var(--sky-500));
 
   /* Footer colors */
   --ifm-footer-background-color: hsl(var(--neutral-100));
@@ -197,409 +207,6 @@ div.footer__copyright a {
   font-weight: bold;
 }
 
-/* Don't let the SVG surpass the parent container */
-svg.freesewing.pattern {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-/* Reset & defaults */
-svg.freesewing.pattern path,
-svg.freesewing.pattern circle {
-  fill: none;
-  stroke: none;
-  stroke-opacity: 1;
-  stroke-width: calc(var(--pattern-stroke) * var(--pattern-scale));
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke: currentColor;
-}
-
-svg.freesewing.pattern path.fabric,
-svg.freesewing.pattern circle.fabric,
-svg.freesewing.pattern .stroke-fabric {
-  stroke: var(--pattern-fabric);
-}
-
-svg.freesewing.pattern path.lining,
-svg.freesewing.pattern circle.lining,
-svg.freesewing.pattern .stroke-lining {
-  stroke: var(--pattern-lining);
-}
-
-svg.freesewing.pattern path.interfacing,
-svg.freesewing.pattern circle.interfacing,
-svg.freesewing.pattern .stroke-interfacing {
-  stroke: var(--pattern-interfacing);
-}
-
-svg.freesewing.pattern path.canvas,
-svg.freesewing.pattern circle.canvas,
-svg.freesewing.pattern .stroke-canvas {
-  stroke: var(--pattern-canvas);
-}
-
-svg.freesewing.pattern path.various,
-svg.freesewing.pattern circle.various,
-svg.freesewing.pattern .stroke-various {
-  stroke: var(--pattern-various);
-}
-
-svg.freesewing.pattern path.mark,
-svg.freesewing.pattern circle.mark,
-svg.freesewing.pattern .stroke-mark {
-  stroke: var(--pattern-mark);
-}
-
-svg.freesewing.pattern path.contrast,
-svg.freesewing.pattern circle.contrast,
-svg.freesewing.pattern .stroke-contrast {
-  stroke: var(--pattern-contrast);
-}
-
-svg.freesewing.pattern path.note,
-svg.freesewing.pattern circle.note,
-svg.freesewing.pattern .stroke-note {
-  stroke: var(--pattern-note);
-}
-
-svg.freesewing.pattern tspan.fabric,
-svg.freesewing.pattern text.fabric,
-svg.freesewing.pattern .fill-fabric {
-  fill: var(--pattern-fabric);
-}
-
-svg.freesewing.pattern tspan.lining,
-svg.freesewing.pattern text.lining,
-svg.freesewing.pattern .fill-lining {
-  fill: var(--pattern-lining);
-}
-
-svg.freesewing.pattern tspan.interfacing,
-svg.freesewing.pattern text.interfacing,
-svg.freesewing.pattern .fill-interfacing {
-  fill: var(--pattern-interfacing);
-}
-
-svg.freesewing.pattern tspan.canvas,
-svg.freesewing.pattern text.canvas,
-svg.freesewing.pattern .fill-canvas {
-  fill: var(--pattern-canvas);
-}
-
-svg.freesewing.pattern tspan.various,
-svg.freesewing.pattern text.various,
-svg.freesewing.pattern .fill-various {
-  fill: var(--pattern-various);
-}
-
-svg.freesewing.pattern tspan.mark,
-svg.freesewing.pattern text.mark,
-svg.freesewing.pattern .fill-mark {
-  fill: var(--pattern-mark);
-}
-
-svg.freesewing.pattern tspan.contrast,
-svg.freesewing.pattern text.contrast,
-svg.freesewing.pattern .fill-contrast {
-  fill: var(--pattern-contrast);
-}
-
-svg.freesewing.pattern tspan.note,
-svg.freesewing.pattern text.note,
-svg.freesewing.pattern .fill-note {
-  fill: var(--pattern-note);
-}
-
-svg.freesewing.pattern path.stroke-xs,
-svg.freesewing.pattern circle.stroke-xs {
-  stroke-width: calc(var(--pattern-stroke-xs) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern path.stroke-sm,
-svg.freesewing.pattern circle.stroke-sm {
-  stroke-width: calc(var(--pattern-stroke-sm) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern path.stroke-lg,
-svg.freesewing.pattern circle.stroke-lg {
-  stroke-width: calc(var(--pattern-stroke-lg) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern path.stroke-xl,
-svg.freesewing.pattern circle.stroke-xl {
-  stroke-width: calc(var(--pattern-stroke-xl) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern path.stroke-xxl,
-svg.freesewing.pattern circle.stroke-xxl,
-svg.freesewing.pattern path.stroke-2xl,
-svg.freesewing.pattern circle.stroke-2xl {
-  stroke-width: calc(var(--pattern-stroke-2xl) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern path.stroke-3xl,
-svg.freesewing.pattern circle.stroke-3xl {
-  stroke-width: calc(var(--pattern-stroke-3xl) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern path.stroke-4xl,
-svg.freesewing.pattern circle.stroke-4xl {
-  stroke-width: calc(var(--pattern-stroke-4xl) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern path.stroke-5xl,
-svg.freesewing.pattern circle.stroke-5xl {
-  stroke-width: calc(var(--pattern-stroke-5xl) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern path.stroke-6xl,
-svg.freesewing.pattern circle.stroke-6xl {
-  stroke-width: calc(var(--pattern-stroke-6xl) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern path.stroke-7xl,
-svg.freesewing.pattern circle.stroke-7xl {
-  stroke-width: calc(var(--pattern-stroke-7xl) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern path.stroke-8xl,
-svg.freesewing.pattern circle.stroke-8xl {
-  stroke-width: calc(var(--pattern-stroke-8xl) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern path.sa,
-svg.freesewing.pattern circle.sa {
-  stroke-dasharray: 1, 3;
-}
-
-svg.freesewing.pattern path.help,
-svg.freesewing.pattern circle.help {
-  stroke-dasharray: 15, 5, 2, 5;
-}
-
-svg.freesewing.pattern path.dotted,
-svg.freesewing.pattern circle.dotted {
-  stroke-dasharray: 0.5, 1;
-}
-
-svg.freesewing.pattern path.dashed,
-svg.freesewing.pattern circle.dashed {
-  stroke-dasharray: 2, 2;
-}
-
-svg.freesewing.pattern path.lashed,
-svg.freesewing.pattern circle.lashed {
-  stroke-dasharray: 8, 3;
-}
-
-svg.freesewing.pattern path.hidden,
-svg.freesewing.pattern circle.hidden {
-  stroke: none !important;
-  fill: none !important;
-}
-
-svg.freesewing.pattern path.no-stroke,
-svg.freesewing.pattern circle.no-stroke {
-  stroke: none !important;
-}
-
-svg.freesewing.pattern path.no-fill,
-svg.freesewing.pattern circle.no-fill {
-  fill: none !important;
-}
-
-svg.freesewing.pattern text {
-  font-size: calc(var(--pattern-text) * var(--pattern-scale));
-  text-anchor: start;
-  font-weight: normal;
-  fill: currentColor;
-  dominant-baseline: ideographic;
-}
-
-svg.freesewing.pattern .text-xs {
-  font-size: calc(var(--pattern-text-xs) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern .text-sm {
-  font-size: calc(var(--pattern-text-sm) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern .text-lg {
-  font-size: calc(var(--pattern-text-lg) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern .text-xl {
-  font-size: calc(var(--pattern-text-xl) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern .text-2xl {
-  font-size: calc(var(--pattern-text-2xl) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern .text-3xl {
-  font-size: calc(var(--pattern-text-3xl) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern .text-4xl {
-  font-size: calc(var(--pattern-text-4xl) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern .text-5xl {
-  font-size: calc(var(--pattern-text-5xl) * var(--pattern-scale));
-}
-
-svg.freesewing.pattern .bold {
-  font-weight: bold;
-}
-
-svg.freesewing.pattern .italic {
-  font-style: italic;
-}
-
-svg.freesewing.pattern text.capitalize {
-  text-transform: capitalize;
-}
-
-svg.freesewing.pattern .center {
-  text-anchor: middle;
-}
-
-svg.freesewing.pattern .baseline-center {
-  dominant-baseline: central;
-}
-
-svg.freesewing.pattern .right {
-  text-anchor: end;
-}
-
-svg.freesewing.pattern .muted {
-  opacity: 0.15;
-}
-
-/* Developer view */
-g.develop.point {
-  circle.center {
-    stroke: var(--pattern-contrast);
-    stroke-width: calc(var(--pattern-stroke) * var(--pattern-scale) / 2);
-    fill: transparent;
-  }
-}
-circle.develop.path.cp {
-  stroke: none;
-  fill: var(--pattern-lining);
-  fill-opacity: 0.4;
-}
-path.develop.path.cp {
-  stroke: var(--pattern-lining);
-  stroke-width: calc(var(--pattern-stroke) * var(--pattern-scale) / 2);
-}
-
-/* Styling the shadow DOM is hard to do
- * This is for styling FreeSewing snippets
- * TODO: Update snippets to use inline styles with CSS vars
- */
-g#notch circle.note,
-g#bnotch path.note,
-g#bnotch circle.note {
-  stroke: var(--pattern-note);
-  fill: none;
-}
-g#notch circle.fill-note,
-g#bnotch circle.fill-note {
-  fill: var(--pattern-note);
-}
-g#button circle.mark {
-  stroke: var(--pattern-mark);
-  fill: none;
-}
-g#button circle.fill-mark {
-  fill: var(--pattern-mark);
-}
-g#button circle.no-stroke {
-  stroke: none;
-}
-g#buttonhole path.mark,
-g#buttonhole-start path.mark,
-g#buttonhole-end path.mark {
-  fill: none;
-  stroke: var(--pattern-mark);
-}
-
-/* Same for paperless grid, also in shadow DOM */
-rect.grid {
-  stroke-width: 1;
-  stroke: currentColor;
-}
-path.gridline {
-  stroke-linecap: butt;
-  stroke-width: 0.3 !important;
-  stroke-dasharray: none;
-}
-path.gridline.sm {
-  stroke-width: 0.15 !important;
-}
-path.gridline.xs {
-  stroke-width: 0.1 !important;
-}
-path.gridline.metric.sm {
-  stroke-dasharray: 3 1;
-}
-path.gridline.metric.xs {
-  stroke-dasharray: 1 1;
-}
-path.gridline.imperial {
-  stroke-dasharray: 5 5;
-}
-path.gridline.imperial.sm {
-  stroke-dasharray: 2 2;
-}
-
-figure.develop.example div.develop {
-  .path,
-  .point {
-    border-left: 0.25rem solid transparent;
-    padding-left: 0.25rem;
-    margin-bottom: 0.5rem;
-  }
-  .path {
-    border-left: 3px dotted transparent;
-    padding-left: 4px;
-  }
-  .path.c0,
-  .point.c0 {
-    border-color: var(--pattern-dev-0);
-  }
-  .path.c1,
-  .point.c1 {
-    border-color: var(--pattern-dev-1);
-  }
-  .path.c2,
-  .point.c2 {
-    border-color: var(--pattern-dev-2);
-  }
-  .path.c3,
-  .point.c3 {
-    border-color: var(--pattern-dev-3);
-  }
-  .path.c4,
-  .point.c4 {
-    border-color: var(--pattern-dev-4);
-  }
-  .path.c5,
-  .point.c5 {
-    border-color: var(--pattern-dev-5);
-  }
-  .path.c6,
-  .point.c6 {
-    border-color: var(--pattern-dev-6);
-  }
-  .path.c7,
-  .point.c7 {
-    border-color: var(--pattern-dev-7);
-  }
-}
-
 .caption {
   text-align: center;
   font-style: italic;
@@ -636,4 +243,15 @@ figcaption.mdx {
   opacity: 0.8;
   padding: 0 0.5rem;
   font-size: 90%;
+}
+
+/*
+ * fixes
+ */
+.avatar img {
+  width: var(--ifm-avatar-photo-size);
+  height: var(--ifm-avatar-photo-size);
+}
+.avatar > div {
+  aspect-ratio: auto;
 }

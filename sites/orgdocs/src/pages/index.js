@@ -62,7 +62,7 @@ export default function Home() {
     >
       <MDXContent>
         <div style={styles.top}>
-          <h1>Documentation</h1>
+          <h1>Fixme: Build home page</h1>
         </div>
         <div style={styles.cards}>
           <Card title="FreeSewing Designs" icon="🤓" href="/docs/designs/">

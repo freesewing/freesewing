@@ -1,6 +1,6 @@
 ---
 title: Completing the neck opening
-order: 80
+sidebar_position: 80
 ---
 
 We've constructed the perfectly sized quarter neck, and we're going to use this
@@ -25,36 +25,38 @@ function draftBib({
   part,
 }) {
 
-  /*
-   * Construct the quarter neck opening
-   */
+/\*
+
+- Construct the quarter neck opening
+  _/
   let tweak = 1
-  let target = (measurements.head * options.neckRatio) /4
+  let target = (measurements.head _ options.neckRatio) /4
   let delta
   do {
-    points.right = new Point(
-      tweak * measurements.head / 10, 
-      0
-    )
-    points.bottom = new Point(
-      0, 
-      tweak * measurements.head / 12
-    )
+  points.right = new Point(
+  tweak _ measurements.head / 10,
+  0
+  )
+  points.bottom = new Point(
+  0,
+  tweak _ measurements.head / 12
+  )
+
 
     points.rightCp1 = points.right.shift(
-      90, 
+      90,
       points.bottom.dy(points.right) / 2
     )
     points.bottomCp2 = points.bottom.shift(
-      0, 
+      0,
       points.bottom.dx(points.right) / 2
     )
 
     paths.quarterNeck = new Path()
       .move(points.right)
       .curve(
-        points.rightCp1, 
-        points.bottomCp2, 
+        points.rightCp1,
+        points.bottomCp2,
         points.bottom
       )
       // highlight-start
@@ -64,11 +66,13 @@ function draftBib({
     delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
     else tweak = tweak * 1.02
-  } while (Math.abs(delta) > 1)
 
-  return part
+} while (Math.abs(delta) > 1)
+
+return part
 }
-```
+
+````
 </Example>
 
 We're saying: _hide this path_. In other words, don't show it.
@@ -105,28 +109,28 @@ function draftBib({
   let delta
   do {
     points.right = new Point(
-      tweak * measurements.head / 10, 
+      tweak * measurements.head / 10,
       0
     )
     points.bottom = new Point(
-      0, 
+      0,
       tweak * measurements.head / 12
     )
 
     points.rightCp1 = points.right.shift(
-      90, 
+      90,
       points.bottom.dy(points.right) / 2
     )
     points.bottomCp2 = points.bottom.shift(
-      0, 
+      0,
       points.bottom.dx(points.right) / 2
     )
-    
+
     paths.quarterNeck = new Path()
       .move(points.right)
       .curve(
-        points.rightCp1, 
-        points.bottomCp2, 
+        points.rightCp1,
+        points.bottomCp2,
         points.bottom
       )
       .hide()
@@ -160,11 +164,12 @@ function draftBib({
 // highlight-end
   return part
 }
-```
+````
+
 </Example>
 
 To add the points, we're using the `Point.flipX()` and `Point.flipY()` methods
-here.  There's a few new Path methods too, like `close()` and `addClass()`.
+here. There's a few new Path methods too, like `close()` and `addClass()`.
 
 Perhaps you can figure out what they do? If not, both [the Point
 documentation](/reference/api/point/) and [the Path

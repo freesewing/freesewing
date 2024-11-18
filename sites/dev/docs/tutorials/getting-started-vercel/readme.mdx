@@ -1,6 +1,6 @@
 ---
 title: Getting started with Vercel
-order: 14
+sidebar_position: 14
 ---
 
 ## What is Vercel?
@@ -23,6 +23,7 @@ containing a fork of the FreeSewing repository.
 ## Why you might want to use Vercel
 
 There are reasons why you might want your own Vercel account:
+
 - You can preview your changes:
   - if you develop on a mobile device or if you do not have access to a
     computer.
@@ -61,7 +62,7 @@ Free Hobby accounts are limited to 3 Projects per Git repository.
 
 Under each project there will be many, many deployments.
 
-_Deployments are simply builds, an instance of a website/app
+\_Deployments are simply builds, an instance of a website/app
 built from a specific commit version of a specific branch of the repository.
 These deployments can be accessed using a web browser to preview
 the web app or website.
@@ -103,11 +104,11 @@ account/credentials without having to create a separate username
 or password.
 
 1. On the [Vercel website][v] select the "Sign Up" button.
-(A shortcut URL is: [https://vercel.com/signup][vsu].)
+   (A shortcut URL is: [https://vercel.com/signup][vsu].)
 2. Select the "Continue with GitHub" button.
 3. A pop-up window will appear asking you for permission to access
-your GitHub information.
-Press the green "Authorize Vercel" button to continue.
+   your GitHub information.
+   Press the green "Authorize Vercel" button to continue.
 
 [v]: https://vercel.com
 [vsu]: https://vercel.com/signup
@@ -125,12 +126,12 @@ FreeSewing repository.
 2. Select your personal GitHub account from the list.
 3. Select the "Only select repositories" radio button.
 4. In "Select repositories" drop-down menu, select your `freesewing`
-repository.
+   repository.
 5. Click the green "Install" button.
 6. Confirm that you are giving permission to access the repository
-by entering your GitHub password.
+   by entering your GitHub password.
 7. Finally, back at the Import Git Repository screen complete the
-import by selecting the white "Import" button.
+   import by selecting the white "Import" button.
 
 ## Creating a project
 
@@ -139,15 +140,16 @@ create a project.
 
 By default, the default Root Directory will be `sites/dev`.
 The Root Directory setting will determine the build type for the project.
+
 - `sites/dev` will build a freesewing.dev website
 - `sites/org` will build a freesewing.org website
 
 1. Change the name of the project, if you wish.
-Names can consist of alphanumeric lowercase and hyphen characters.
+   Names can consist of alphanumeric lowercase and hyphen characters.
 2. Change the Root Directory to the desired setting, as described above.
 3. In the Build & Development Settings,
-add `yarn build` as the Build Command override.
-(All the other settings will work fine with the default values.)
+   add `yarn build` as the Build Command override.
+   (All the other settings will work fine with the default values.)
 4. Press the white "Deploy" button.
 
 Vercel will then create the project and start building the project's first
@@ -167,17 +169,18 @@ ones based on the `develop` branch
 `develop` instead of `main).
 
 Created deployments include:
+
 1. The initial production deployment. (Because you don't have a branch named
-`main` in your repository, Vercel will instead create the initial
-production deployment from the default `develop` branch.)
+   `main` in your repository, Vercel will instead create the initial
+   production deployment from the default `develop` branch.)
 2. A new preview deployment every time you update your `develop` branch in GitHub
-(for example, whenever you sync it with the latest `freesewing/freesewing`
-updates)
+   (for example, whenever you sync it with the latest `freesewing/freesewing`
+   updates)
 3. A new preview deployment for every new branch you push to GitHub
 4. A new preview deployment for every update you make to these new branches
-when you push to GitHub
+   when you push to GitHub
 5. A new preview deployment for every update you make to your existing branches
-when you push to GitHub
+   when you push to GitHub
 
 If you have multiple projects for the same repository
 (for example, if you have both `sites/org` and `sites/dev` projects),
@@ -196,7 +199,7 @@ Once they start, deployments take about
 You will manage your account and projects from the Vercel Dashboard
 page, [https://vercel.com/dashboard][vd].
 
-The default __Overview__ tab at the top of the Dashboard page will show your repositories
+The default **Overview** tab at the top of the Dashboard page will show your repositories
 and projects.
 Click on a project name to go to its project page.
 
@@ -204,31 +207,32 @@ Click on a project name to go to its project page.
 
 ## Project pages
 
-The default __Project__ tab at the top of the project page will show the
+The default **Project** tab at the top of the project page will show the
 the production deployment and some of the most recent preview
 deployments for that project.
 
-Click on the __Deployments__ tab to see all of the project's deployments.
+Click on the **Deployments** tab to see all of the project's deployments.
 Click on a deployment name to go to its deployment page.
 
-Click on the __Settings__ tab to see the project's settings.
+Click on the **Settings** tab to see the project's settings.
 
 ## Deployment pages
 
-On the default __Deployment__ tab at the top of the deployment page
+On the default **Deployment** tab at the top of the deployment page
 you will see information about the deployment.
 
-Under __Domains__ you will see one or more URLs that can be used to
+Under **Domains** you will see one or more URLs that can be used to
 access the deployment.
 These are also the URLs that you can share with others so they
 can view your deployments.
+
 - URLs containing hash characters link to the deployment for a single
-commit.
+  commit.
 - URLs without a hash point to the deployment for the latest version
-of that branch.
+  of that branch.
 
 If you ever want to delete a deployment you can do so on its
-deployment page, under the "__...__" three dots menu.
+deployment page, under the "**...**" three dots menu.
 
 ## Usage and Billing
 
@@ -237,11 +241,12 @@ Vercel's free Hobby accounts come with
 This should be at least 10-15x the amount you will actually use in
 a month, so do not worry about this.
 
-If you want to check your usage, please seee the __Usage__ tab at the
+If you want to check your usage, please seee the **Usage** tab at the
 top of the Dashboard page.
+
 - A shortcut URL is [https://vercel.com/dashboard/usage][vu]
 - Or, [https://vercel.com/account/billing][vb] will show a summary
-of your usage.
+  of your usage.
 
 ## Disabling automatic deployments
 
@@ -249,8 +254,8 @@ You can disable and enable automatic deployments for a project,
 for example if you wish to temporarily stop them while working on
 a bug that prevents successful builds.
 
-On the Project Settings page, select __Git__ from the menu on the
-left.  Change the __Ignored Build Step__ behavior from "Automatic" to
+On the Project Settings page, select **Git** from the menu on the
+left. Change the **Ignored Build Step** behavior from "Automatic" to
 "Don't build anything".
 
 [vu]: https://vercel.com/dashboard/usage

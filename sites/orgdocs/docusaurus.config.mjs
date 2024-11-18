@@ -1,6 +1,8 @@
 import path from 'node:path'
 import { themes as prismThemes } from 'prism-react-renderer'
 import designs from '../../config/software/designs.json'
+import tailwindcss from 'tailwindcss'
+import autoprefixer from 'autoprefixer'
 
 /*
  * We bundle the options as one page, so keep them out the sidebar
@@ -122,6 +124,57 @@ const config = {
         return fsConfig
       },
     }),
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'showcase',
+        routeBasePath: 'showcase',
+        path: './showcase',
+        authorsMapPath: '../authors.json',
+        postsPerPage: 50,
+        blogSidebarCount: 10,
+        blogSidebarTitle: 'Recent Showcases',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'newsletter',
+        routeBasePath: 'newsletter',
+        path: './newsletter',
+        authorsMapPath: '../authors.json',
+        blogTitle: 'FreeSewing Newsletter',
+        blogDescription: 'Four times per year, honest wholesome content, no ads, no nonsense',
+        blogSidebarCount: 50,
+        blogSidebarTitle: 'Newsletter Editions',
+        postsPerPage: 10,
+        feedOptions: {
+          type: 'rss',
+          title: 'FreeSewing Newsletter Editions',
+          description: 'A feed for the FreeSewing newsletter',
+          copyright: 'FreeSewing',
+          language: 'en',
+          createFeedItems: async (params) => {
+            const { blogPosts, defaultCreateFeedItems, ...rest } = params
+            return defaultCreateFeedItems({
+              blogPosts: blogPosts.filter((item, index) => index < 10),
+              ...rest,
+            })
+          },
+        },
+      },
+    ],
+    async function myPlugin() {
+      return {
+        name: 'docusaurus-tailwindcss',
+        configurePostCss(postcssOptions) {
+          // Appends TailwindCSS and AutoPrefixer.
+          postcssOptions.plugins.push(tailwindcss)
+          postcssOptions.plugins.push(autoprefixer)
+          return postcssOptions
+        },
+      }
+    },
   ],
 
   i18n: { defaultLocale: 'en', locales: ['en'] },
@@ -142,10 +195,54 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        blog: {
+          path: 'blog',
+          // Simple use-case: string editUrl
+          editUrl: 'https://github.com/freesewing/freesewing/site/orgdocs/',
+          editLocalizedFiles: false,
+          blogTitle: 'FreeSewing Blog',
+          blogDescription: 'News and updates from the people behind FreeSewing',
+          blogSidebarCount: 5,
+          blogSidebarTitle: 'Recent blog posts',
+          routeBasePath: 'blog',
+          authorsMapPath: '../authors.json',
+          include: ['*/index.mdx'],
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+          ],
+          postsPerPage: 10,
+          blogListComponent: '@theme/BlogListPage',
+          //blogPostComponent: '@site/src/components/blog/post.mjs',
+          blogTagsListComponent: '@theme/BlogTagsListPage',
+          blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
+          //remarkPlugins: [require('./my-remark-plugin')],
+          //rehypePlugins: [],
+          //beforeDefaultRemarkPlugins: [],
+          //beforeDefaultRehypePlugins: [],
+          truncateMarker: /<!--\s*(truncate)\s*-->/,
+          showReadingTime: true,
+          feedOptions: {
+            type: 'rss',
+            title: 'FreeSewing Blog Posts',
+            description: 'News and updates from the people behind FreeSewing',
+            copyright: 'FreeSewing',
+            language: 'en',
+            createFeedItems: async (params) => {
+              const { blogPosts, defaultCreateFeedItems, ...rest } = params
+              return defaultCreateFeedItems({
+                // keep only the 10 most recent blog posts in the feed
+                blogPosts: blogPosts.filter((item, index) => index < 10),
+                ...rest,
+              })
+            },
+          },
+        },
       },
     ],
   ],
-
   themeConfig: {
     // Replace with your project's social card
     image: 'img/freesewing-social-card.png',
@@ -153,18 +250,15 @@ const config = {
       title: 'FreeSewing',
       logo: {
         alt: 'FreeSewing Logo',
-        src: 'img/logo-white.svg',
+        src: 'img/logo.svg',
       },
       items: [
-        { to: '/docs/about', label: 'About FreeSewing', position: 'left' },
-        { to: '/docs/designs', label: 'FreeSewing Designs', position: 'left' },
-        { to: '/docs/measurements', label: 'Measurements we use', position: 'left' },
-        { to: '/docs/sewing', label: 'Sewing Terminology', position: 'left' },
-        {
-          href: 'https://freesewing.org/',
-          label: 'FreeSewing.org',
-          position: 'right',
-        },
+        { to: '/editor/', label: '🪄 Editor', position: 'left' },
+        { to: '/designs/', label: '👕 Designs', position: 'left' },
+        { to: '/docs/', label: '📖 Docs', position: 'left' },
+        { to: '/showcase/', label: '📷 Showcase', position: 'left' },
+        { to: '/blog/', label: '📰 Blog', position: 'left' },
+        { to: '/account/', label: '📰 Account', position: 'right' },
       ],
     },
     footer: {

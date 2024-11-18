@@ -1,6 +1,6 @@
 ---
 title: Adding options
-order: 40
+sidebar_position: 40
 ---
 
 I have shown what our bib should look like, and added the _head_ measurement
@@ -12,7 +12,7 @@ to work with. But there's still a number of choices I have to make:
 
 I could make all of these choices for the user and set them in stone, so to speak.
 
-But since the pattern I am designing is code, it is trivial (and _IMHO_ very satisfying) 
+But since the pattern I am designing is code, it is trivial (and _IMHO_ very satisfying)
 to make a pattern flexible and let the user choose.
 All I need to do to give control to the user is add _options_ to the part.
 
@@ -34,10 +34,10 @@ export const bib = {
   measurements: [ 'head' ],
   // highlight-start
   options: {
-    neckRatio: { 
-      pct: 80, 
-      min: 70, 
-      max: 90, 
+    neckRatio: {
+      pct: 80,
+      min: 70,
+      max: 90,
       menu: 'fit'
     },
   },
@@ -61,7 +61,7 @@ They are all documented [in the part reference docs](/reference/api/part/config/
 
 ##### What is `menu` and why should you care?
 
-The `menu` property on our option is *extra*. 
+The `menu` property on our option is _extra_.
 It will be ignored by FreeSewing's core library and if we leave it out, our design will produce the same result.
 
 Instead, this `menu` property is there for the benefit of FreeSewing's development environment which will use this to build a menu structure for the various
@@ -85,25 +85,25 @@ export const bib = {
   draft: draftBib,
   measurements: [ 'head' ],
   options: {
-    neckRatio: { 
-      pct: 80, 
-      min: 70, 
-      max: 90, 
+    neckRatio: {
+      pct: 80,
+      min: 70,
+      max: 90,
       menu: 'fit'
     },
-    
+
     // highlight-start
-    widthRatio: { 
-      pct: 45, 
-      min: 35, 
-      max: 55, 
-      menu: 'style' 
+    widthRatio: {
+      pct: 45,
+      min: 35,
+      max: 55,
+      menu: 'style'
     },
-    lengthRatio: { 
-      pct: 75, 
-      min: 55, 
-      max: 85, 
-      menu: 'style' 
+    lengthRatio: {
+      pct: 75,
+      min: 55,
+      max: 85,
+      menu: 'style'
     },
     // highlight-end
   },
@@ -116,4 +116,3 @@ Later, I will test-drive our pattern to see how it behaves when we adapt the opt
 between their minimum and maximum values. At that time, I may need to tweak these values.
 
 With that out of the way, I will start drawing the bib.
-
