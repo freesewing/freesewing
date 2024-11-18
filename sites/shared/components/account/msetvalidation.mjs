@@ -4,6 +4,8 @@ import { formatMm } from '../../utils.mjs'
 const descendingCheck = [
   ['hpsToWaistFront', 'hpsToBust'],
   ['hpsToWaistFront', 'waistToUnderbust'],
+  ['hpsToWaistFront', 'waistToArmpit'],
+  ['hpsToWaistBack', 'waistToArmpit'],
   ['shoulderToWrist', 'shoulderToElbow'],
   ['waistToFloor', 'waistToKnee', 'waistToUpperLeg', 'waistToSeat', 'waistToHips'],
   ['waistToFloor', 'inseam'],
@@ -47,6 +49,26 @@ const constraintCheck = [
     tolerance: 0.1,
     lhsMustBeSmaller: true,
     key: 'waistToUpperLeg',
+  },
+  {
+    lhs: [{ m: 'waist', coefficient: 1 }],
+    rhs: [{ m: 'waistBack', coefficient: 2 }],
+    tolerance: 0.1,
+    lhsMustBeSmaller: true,
+    key: 'waistBack',
+  },
+  {
+    lhs: [{ m: 'chest', coefficient: 1 }],
+    rhs: [{ m: 'bustFront', coefficient: 2 }],
+    tolerance: 0.1,
+    lhsMustBeSmaller: true,
+    key: 'bustFront',
+  },
+  {
+    lhs: [{ m: 'highBust', coefficient: 1 }],
+    rhs: [{ m: 'highBustFront', coefficient: 2 }],
+    tolerance: 0.1,
+    key: 'highBustFront',
   },
 ]
 
