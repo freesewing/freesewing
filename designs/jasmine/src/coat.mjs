@@ -16,7 +16,7 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
   const chesthorizontal = (nyx_chest_circum / 2) * options.chest_circum * globalscale
 
   const neckcircum = nyx_neck_circum * options.neck_circum * globalscale
-  const neckradius = neckcircum / 3.14
+  const neckradius = neckcircum * (1 / 3.14)
   //Neckbandwidth assumes 3 inches to start
   const neckbandwidth = options.neckband_width * neckcircum
 
@@ -35,6 +35,9 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     chesthorizontal,
     armholevert + (vertlength - armholevert) * options.bellyclosurelength
   )
+
+  points.bellyoverlapfront = points.closurefront.shift(0, chesthorizontal * options.bellyoverlap)
+  points.bellyoverlapback = points.closureback.shift(0, chesthorizontal * options.bellyoverlap)
 
   points.armholetop = new Point(armholehoriz, armholevert * 0.6)
 
@@ -71,6 +74,8 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     .line(points.backCenter)
     .line(points.backedge)
     .line(points.closureback)
+    .line(points.bellyoverlapback)
+    .line(points.bellyoverlapfront)
     .line(points.closurefront)
     .curve(points.closurefrontCp, points.armholetopCp2, points.armholetop)
     //.line(points.armholetop)
@@ -91,6 +96,14 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     .move(points.neckbandtop)
     .line(points.neckbandbottom)
     .attr('class', 'sa')
+  paths.bellyoverlapline = new Path()
+    .move(points.closureback)
+    .line(points.closurefront)
+    .attr('class', 'sa')
+
+  paths.neckmeasure = new Path()
+    .move(points.neckCenter)
+    .curve(points.neckCenterCp2, points.neckbandtopCp1, points.neckbandtop)
 
   points.logo = points.armholetop.shiftFractionTowards(points.backedge, 0.5)
   snippets.logo = new Snippet('logo', points.logo)
@@ -141,6 +154,10 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     to: points.neckCenter,
     x: points.backCenter.x - sa - 15,
   })
+  macro('pd', {
+    path: paths.neckmeasure,
+    d: 15,
+  })
 
   macro('cutonfold', {
     from: points.neckCenter,
@@ -167,7 +184,7 @@ export const coat = {
     },
     chest_circum: {
       pct: 100,
-      min: 10,
+      min: 50,
       max: 250,
       menu: 'fit',
       toAbs: (pct, settings) =>
@@ -175,7 +192,7 @@ export const coat = {
     },
     neck_circum: {
       pct: 100,
-      min: 10,
+      min: 50,
       max: 250,
       menu: 'fit',
       toAbs: (pct, settings) =>
@@ -207,10 +224,16 @@ export const coat = {
     bellyoverlap: { pct: 5, min: 0, max: 30, menu: 'style' },
 
     bellyclosurelength: { pct: 40, min: 10, max: 100, menu: 'style' },
-    neckband_width: { pct: 24, min: 10, max: 50, menu: 'style' },
+    neckband_width: {
+      pct: 24,
+      min: 10,
+      max: 50,
+      menu: 'style',
+      toAbs: (pct, settings) =>
+        pct * nyx_neck_circum * (settings.options?.neck_circum ? settings.options.neck_circum : 1),
+    },
 
-    armholecurve: { pct: 100, min: 10, max: 150, menu: 'advanced' },
-    neck_percentage: { pct: 50, min: 10, max: 100, menu: 'advanced' },
+    armholecurve: { pct: 50, min: 10, max: 150, menu: 'advanced' },
   },
   draft: draftcoat,
 }
