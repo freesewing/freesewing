@@ -17,13 +17,11 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
   const neckcircum = nyx_neck_circum * options.neck_circum * globalscale
   const neckradius = neckcircum / (2 * 3.14)
   //Neckbandwidth assumes 3 inches to start
-  const neckbandwidth = 76 * options.neck_circum * globalscale
+  const neckbandwidth = options.neckband_width * neckcircum
 
   const armholevert = 101 * options.necktochest * globalscale
   const armholehoriz =
     ((nyx_across_back / 2) * options.chest_circum * options.shouldertoshoulder * globalscale) / 2
-
-  const frontdepth = globalscale * 101
 
   points.neckCenter = new Point(0, 0)
 
@@ -52,7 +50,7 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
   points.armholetopCp1 = points.armholetop.shift(90, points.neckbandtop.dy(points.neckCenter) / 2)
   points.armholetopCp2 = points.armholetop.shift(270, points.neckbandtop.dy(points.neckCenter) / 2)
 
-  points.closurefrontCp = points.closurefront.shift(180, frontdepth)
+  points.closurefrontCp = points.closurefront.shift(180, neckbandwidth)
 
   //Neck curve control points
   points.neckbandtopCp1 = points.neckbandtop.shift(
@@ -115,7 +113,7 @@ export const coat = {
       pct: 100,
       min: 10,
       max: 250,
-      menu: 'fit',
+      menu: 'first',
       toAbs: function (value, settings) {
         return value * nyx_vert_length
       },
@@ -125,27 +123,27 @@ export const coat = {
       min: 10,
       max: 250,
       menu: 'fit',
-      toAbs: function (value, settings) {
-        return value * nyx_chest_circum
-      },
+      toAbs: (pct, settings) =>
+        nyx_chest_circum * pct * (settings.options?.backlength ? settings.options.backlength : 1),
     },
     neck_circum: {
       pct: 100,
       min: 10,
       max: 250,
       menu: 'fit',
-      toAbs: function (value, settings) {
-        return value * nyx_neck_circum
-      },
+      toAbs: (pct, settings) =>
+        nyx_neck_circum * pct * (settings.options?.backlength ? settings.options.backlength : 1),
     },
 
     necktochest: { pct: 100, min: 10, max: 250, menu: 'fit' },
     shouldertoshoulder: { pct: 100, min: 10, max: 250, menu: 'fit' },
 
     neckoverlap: { pct: 5, min: 0, max: 30, menu: 'style' },
+
     bellyoverlap: { pct: 5, min: 0, max: 30, menu: 'style' },
 
     bellyclosurelength: { pct: 70, min: 10, max: 100, menu: 'style' },
+    neckband_width: { pct: 24, min: 10, max: 50, menu: 'style' },
   },
   draft: draftcoat,
 }
