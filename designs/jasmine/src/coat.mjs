@@ -16,7 +16,7 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
   const chesthorizontal = (nyx_chest_circum / 2) * options.chest_circum * globalscale
 
   const neckcircum = nyx_neck_circum * options.neck_circum * globalscale
-  const neckradius = neckcircum / (2 * 3.14)
+  const neckradius = neckcircum / 3.14
   //Neckbandwidth assumes 3 inches to start
   const neckbandwidth = options.neckband_width * neckcircum
 
@@ -209,7 +209,8 @@ export const coat = {
     bellyclosurelength: { pct: 40, min: 10, max: 100, menu: 'style' },
     neckband_width: { pct: 24, min: 10, max: 50, menu: 'style' },
 
-    armholecurve: { pct: 100, min: 10, max: 150, menu: 'style' },
+    armholecurve: { pct: 100, min: 10, max: 150, menu: 'advanced' },
+    neck_percentage: { pct: 50, min: 10, max: 100, menu: 'advanced' },
   },
   draft: draftcoat,
 }
