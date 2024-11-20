@@ -3,7 +3,8 @@
 const nyx_vert_length = 380
 const nyx_chest_circum = 584
 const nyx_neck_circum = 368
-const nyx_across_back = 381
+const nyx_shoulder_to_shoulder = 228
+const nyx_neck_to_chest = 127
 
 function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa, macro, part }) {
   const globalscale = options.backlength
@@ -19,9 +20,9 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
   //Neckbandwidth assumes 3 inches to start
   const neckbandwidth = options.neckband_width * neckcircum
 
-  const armholevert = 101 * options.necktochest * globalscale
+  const armholevert = nyx_neck_to_chest * options.neck_to_chest * globalscale
   const armholehoriz =
-    ((nyx_across_back / 2) * options.chest_circum * options.shouldertoshoulder * globalscale) / 2
+    (nyx_shoulder_to_shoulder / 2) * options.chest_circum * options.shouldertoshoulder * globalscale
 
   points.neckCenter = new Point(0, 0)
 
@@ -35,7 +36,7 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     armholevert + (vertlength - armholevert) * options.bellyclosurelength
   )
 
-  points.armholetop = new Point(armholehoriz, armholevert * 0.7)
+  points.armholetop = new Point(armholehoriz, armholevert * 0.6)
 
   points.neckbandtop = new Point(neckradius, -neckradius)
   points.neckbandbottom = new Point(neckradius + neckbandwidth, -neckradius)
@@ -47,8 +48,14 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     270,
     points.neckbandtop.dy(points.neckCenter)
   )
-  points.armholetopCp1 = points.armholetop.shift(90, points.neckbandtop.dy(points.neckCenter) / 2)
-  points.armholetopCp2 = points.armholetop.shift(270, points.neckbandtop.dy(points.neckCenter) / 2)
+  points.armholetopCp1 = points.armholetop.shift(
+    90,
+    points.neckbandtop.dy(points.neckCenter) * options.armholecurve
+  )
+  points.armholetopCp2 = points.armholetop.shift(
+    270,
+    points.neckbandtop.dy(points.neckCenter) * options.armholecurve
+  )
 
   points.closurefrontCp = points.closurefront.shift(180, neckbandwidth)
 
@@ -80,9 +87,13 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     .close()
     .attr('class', 'fabric')
 
-  points.logo = points.neckCenter.shiftFractionTowards(points.closureback, 0.5)
+  paths.neckoverlapline = new Path()
+    .move(points.neckbandtop)
+    .line(points.neckbandbottom)
+    .attr('class', 'sa')
+
+  points.logo = points.armholetop.shiftFractionTowards(points.backedge, 0.5)
   snippets.logo = new Snippet('logo', points.logo)
-  points.text = points.logo.shift(-90, 90).addText('hello', 'center')
 
   if (sa) {
     paths.sa = paths.seam.offset(sa).addClass('fabric sa')
@@ -92,13 +103,49 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     id: 'hWidth',
     from: points.neckCenter,
     to: points.closurefront,
-    y: points.backCenter.y + sa + 15,
+    y: points.closureback.y,
   })
   macro('vd', {
     id: 'vHeight',
-    from: points.neckbandtop,
+    from: points.neckclosuretop,
     to: points.backCenter,
     x: points.closurefront.x + sa + 15,
+  })
+  macro('hd', {
+    id: 'neckRadius',
+    from: points.neckCenter,
+    to: points.neckbandtop,
+    y: points.neckbandtop.y,
+  })
+  macro('hd', {
+    id: 'neckbandwidth',
+    from: points.neckbandtop,
+    to: points.neckbandbottom,
+    y: points.neckclosuretop.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'shoulderwidth',
+    from: points.neckCenter,
+    to: points.armholetop,
+    y: points.armholetop.y,
+  })
+  macro('vd', {
+    id: 'shoulderHeight',
+    from: points.armholetop,
+    to: points.backCenter,
+    x: points.armholetop.x,
+  })
+  macro('vd', {
+    id: 'centerlength',
+    from: points.backCenter,
+    to: points.neckCenter,
+    x: points.backCenter.x - sa - 15,
+  })
+
+  macro('cutonfold', {
+    from: points.neckCenter,
+    to: points.backCenter,
+    grainline: true,
   })
 
   return part
@@ -135,15 +182,34 @@ export const coat = {
         nyx_neck_circum * pct * (settings.options?.backlength ? settings.options.backlength : 1),
     },
 
-    necktochest: { pct: 100, min: 10, max: 250, menu: 'fit' },
-    shouldertoshoulder: { pct: 100, min: 10, max: 250, menu: 'fit' },
+    neck_to_chest: {
+      pct: 100,
+      min: 50,
+      max: 200,
+      menu: 'fit',
+      toAbs: (pct, settings) =>
+        nyx_neck_to_chest * pct * (settings.options?.backlength ? settings.options.backlength : 1),
+    },
+    shouldertoshoulder: {
+      pct: 100,
+      min: 50,
+      max: 200,
+      menu: 'fit',
+      toAbs: (pct, settings) =>
+        nyx_shoulder_to_shoulder *
+        pct *
+        (settings.options?.backlength ? settings.options.backlength : 1) *
+        (settings.options?.chest_circum ? settings.options.chest_circum : 1),
+    },
 
     neckoverlap: { pct: 5, min: 0, max: 30, menu: 'style' },
 
     bellyoverlap: { pct: 5, min: 0, max: 30, menu: 'style' },
 
-    bellyclosurelength: { pct: 70, min: 10, max: 100, menu: 'style' },
+    bellyclosurelength: { pct: 40, min: 10, max: 100, menu: 'style' },
     neckband_width: { pct: 24, min: 10, max: 50, menu: 'style' },
+
+    armholecurve: { pct: 100, min: 10, max: 150, menu: 'style' },
   },
   draft: draftcoat,
 }
