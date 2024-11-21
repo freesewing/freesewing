@@ -309,7 +309,7 @@ export const coat = {
     },
 
     armholecurve: { pct: 47.5, min: 10, max: 150, menu: 'advanced' },
-    neck_circle_percentage: { pct: 50, min: 10, max: 100, menu: 'advanced' },
+    neck_circle_percentage: { pct: 50, min: 20, max: 90, menu: 'advanced' },
   },
   draft: draftcoat,
 }
