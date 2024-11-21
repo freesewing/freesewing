@@ -7,15 +7,15 @@ const nyx_shoulder_to_shoulder = 304
 const nyx_neck_to_chest = 76
 
 function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa, macro, part }) {
-  const globalscale = options.backlength
+  const globalscale = options.chest_circum
 
   //15 inches * backlength percentage
-  const vertlength = nyx_vert_length * options.backlength
+  const vertlength = nyx_vert_length * options.backlength * globalscale
 
   const back_adjusted_length = vertlength * options.back_length_percentage
 
-  //23 inches /2 (for mirror) * chest_circum percentage *
-  const chesthorizontal = (nyx_chest_circum / 2) * options.chest_circum * globalscale
+  //23 inches /2 (for mirror) * chest_circum percentage
+  const chesthorizontal = (nyx_chest_circum / 2) * options.chest_circum
 
   const neckcircum = nyx_neck_circum * options.neck_circum * globalscale
   const neckradius = neckcircum * (1 / 3.14) * (0.5 / options.neck_circle_percentage)
@@ -25,9 +25,8 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
   //Neckbandwidth assumes 3 inches to start
   const neckbandwidth = options.neckband_width * neckcircum
 
-  const armholevert = nyx_neck_to_chest * options.neck_to_chest * globalscale
-  const armholehoriz =
-    (nyx_shoulder_to_shoulder / 2) * options.chest_circum * options.shouldertoshoulder * globalscale
+  const armholevert = nyx_neck_to_chest * options.neck_to_chest * options.backlength * globalscale
+  const armholehoriz = (nyx_shoulder_to_shoulder / 2) * options.shouldertoshoulder * globalscale
 
   points.neckCenter = new Point(0, 0)
   points.neckCircleCenter = new Point(0, -neckradius)
@@ -146,7 +145,7 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     id: 'hWidth',
     from: points.neckCenter,
     to: points.closurefront,
-    y: points.closureback.y,
+    y: points.closureback.shiftFractionTowards(points.closurefront, 0.5).y,
   })
   macro('vd', {
     id: 'vHeight',
@@ -167,10 +166,16 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     x: points.closureback.x + sa + 15,
   })
   macro('vd', {
-    id: 'bellyclosurevertiacl',
+    id: 'bellyclosurevertical',
     from: points.closurefront,
     to: points.closureback,
     x: points.closureback.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'necktochest',
+    from: points.neckCenter,
+    to: points.closurefront,
+    x: points.armholetop.shiftFractionTowards(points.closurefront, 0.8).x,
   })
   macro('hd', {
     id: 'neckRadius',
@@ -232,24 +237,26 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
 export const coat = {
   name: 'coat',
   options: {
-    size: { pct: 50, min: 10, max: 100 },
-
-    backlength: {
+    chest_circum: {
       pct: 100,
       min: 10,
       max: 250,
       menu: 'first',
-      toAbs: function (value, settings) {
-        return value * nyx_vert_length
-      },
+      toAbs: (pct, settings) => nyx_chest_circum * pct,
     },
-    chest_circum: {
+
+    backlength: {
       pct: 100,
-      min: 50,
+      min: 40,
       max: 250,
       menu: 'fit',
-      toAbs: (pct, settings) =>
-        nyx_chest_circum * pct * (settings.options?.backlength ? settings.options.backlength : 1),
+      toAbs: function (value, settings) {
+        return (
+          value *
+          nyx_vert_length *
+          (settings.options?.chest_circum ? settings.options.chest_circum : 1)
+        )
+      },
     },
     neck_circum: {
       pct: 100,
@@ -257,7 +264,9 @@ export const coat = {
       max: 250,
       menu: 'fit',
       toAbs: (pct, settings) =>
-        nyx_neck_circum * pct * (settings.options?.backlength ? settings.options.backlength : 1),
+        nyx_neck_circum *
+        pct *
+        (settings.options?.chest_circum ? settings.options.chest_circum : 1),
     },
 
     neck_to_chest: {
@@ -266,7 +275,10 @@ export const coat = {
       max: 200,
       menu: 'fit.bonus',
       toAbs: (pct, settings) =>
-        nyx_neck_to_chest * pct * (settings.options?.backlength ? settings.options.backlength : 1),
+        nyx_neck_to_chest *
+        pct *
+        (settings.options?.chest_circum ? settings.options.chest_circum : 1) *
+        (settings.options?.backlength ? settings.options.backlength : 1),
     },
     shouldertoshoulder: {
       pct: 100,
@@ -276,7 +288,6 @@ export const coat = {
       toAbs: (pct, settings) =>
         nyx_shoulder_to_shoulder *
         pct *
-        (settings.options?.backlength ? settings.options.backlength : 1) *
         (settings.options?.chest_circum ? settings.options.chest_circum : 1),
     },
 
