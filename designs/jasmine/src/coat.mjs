@@ -6,13 +6,13 @@ const nyx_neck_circum = 368
 const nyx_shoulder_to_shoulder = 304
 const nyx_neck_to_chest = 76
 
-const nyx_hip_back = 381
-
 function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa, macro, part }) {
   const globalscale = options.backlength
 
   //15 inches * backlength percentage
   const vertlength = nyx_vert_length * options.backlength
+
+  const back_adjusted_length = vertlength * options.back_length_percentage
 
   //23 inches /2 (for mirror) * chest_circum percentage *
   const chesthorizontal = (nyx_chest_circum / 2) * options.chest_circum * globalscale
@@ -32,9 +32,11 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
   points.neckCenter = new Point(0, 0)
   points.neckCircleCenter = new Point(0, -neckradius)
 
-  const hip_back = (globalscale * nyx_hip_back) / 2
-  points.backCenter = new Point(0, vertlength)
-  points.backedge = new Point(hip_back, vertlength)
+  const hip_back = chesthorizontal * options.back_width
+  points.backCenter = new Point(0, back_adjusted_length)
+  points.backedge = new Point(hip_back, back_adjusted_length)
+
+  points.backedgeCp = points.backedge.shift(0, chesthorizontal / 3)
 
   // I want closureback to use options.bellyclosurelength but i'm not sure how yet
   points.closurefront = new Point(chesthorizontal, armholevert)
@@ -42,6 +44,8 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     chesthorizontal,
     armholevert + (vertlength - armholevert) * options.bellyclosurelength
   )
+
+  points.closurebackCp = points.closureback.shift(180, chesthorizontal / 3)
 
   points.bellyoverlapfront = points.closurefront.shift(
     0,
@@ -86,14 +90,20 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
   )
   points.neckCenterCp2 = points.neckCenter.shift(
     0,
-    neckcircum * 0.25 * options.neck_circle_percentage
+    Math.max(
+      neckcircum * 0.25 * options.neck_circle_percentage,
+      points.neckCenter.dx(points.neckbandtop) / 2
+    )
   )
 
   paths.seam = new Path()
     .move(points.neckCenter)
     .line(points.backCenter)
+
     .line(points.backedge)
-    .line(points.closureback)
+    //.line(points.closureback)
+    .curve(points.backedgeCp, points.closurebackCp, points.closureback)
+
     .line(points.bellyoverlapback)
     .line(points.bellyoverlapfront)
     .line(points.closurefront)
@@ -125,7 +135,7 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     .move(points.neckCenter)
     .curve(points.neckCenterCp2, points.neckbandtopCp1, points.neckbandtop)
 
-  points.logo = points.armholetop.shiftFractionTowards(points.backedge, 0.5)
+  points.logo = points.closurefront.shiftFractionTowards(points.backCenter, 0.5)
   snippets.logo = new Snippet('logo', points.logo)
 
   if (sa) {
@@ -142,7 +152,25 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     id: 'vHeight',
     from: points.neckclosuretop,
     to: points.backCenter,
-    x: points.closurefront.x + sa + 15,
+    x: points.bellyoverlapfront.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'bellybackvertical',
+    from: points.closureback,
+    to: points.backCenter,
+    x: points.closureback.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'bellyfrontvertical',
+    from: points.closurefront,
+    to: points.neckclosuretop,
+    x: points.closureback.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'bellyclosurevertiacl',
+    from: points.closurefront,
+    to: points.closureback,
+    x: points.closureback.x + sa + 15,
   })
   macro('hd', {
     id: 'neckRadius',
@@ -150,17 +178,23 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     to: points.neckbandtop,
     y: points.neckbandtop.y,
   })
-  macro('hd', {
+  macro('ld', {
     id: 'neckbandwidth',
     from: points.neckbandtop,
     to: points.neckbandbottom,
-    y: points.neckclosuretop.y - sa - 15,
+    //y: points.neckclosuretop.y - sa - 15,
   })
   macro('hd', {
     id: 'shoulderwidth',
     from: points.neckCenter,
     to: points.armholetop,
     y: points.armholetop.y,
+  })
+  macro('hd', {
+    id: 'hipwidth',
+    from: points.backCenter,
+    to: points.backedge,
+    y: points.backedge.y - 15,
   })
   macro('vd', {
     id: 'shoulderHeight',
@@ -174,12 +208,13 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     to: points.neckCenter,
     x: points.backCenter.x - sa - 15,
   })
+  /*
   macro('vd', {
-    id: 'neckradius',
+    id: 'neckcenterpoint',
     from: points.neckCenter,
     to: points.neckCircleCenter,
     x: points.neckCenter.x,
-  })
+  })*/
   macro('pd', {
     path: paths.neckmeasure,
     d: 15,
@@ -245,9 +280,23 @@ export const coat = {
         (settings.options?.chest_circum ? settings.options.chest_circum : 1),
     },
 
+    back_width: {
+      pct: 35,
+      min: 10,
+      max: 100,
+      menu: 'advanced',
+      toAbs: (pct, settings) =>
+        nyx_chest_circum *
+        pct *
+        (settings.options?.backlength ? settings.options.backlength : 1) *
+        (settings.options?.chest_circum ? settings.options.chest_circum : 1),
+    },
+
     neckoverlap: { pct: 5, min: 0, max: 30, menu: 'style' },
 
     bellyoverlap: { pct: 5, min: 0, max: 30, menu: 'style' },
+
+    back_length_percentage: { pct: 100, min: 40, max: 100, menu: 'style' },
 
     bellyclosurelength: { pct: 40, min: 10, max: 100, menu: 'style' },
     neckband_width: {
