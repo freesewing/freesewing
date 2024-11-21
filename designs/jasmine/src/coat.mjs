@@ -264,7 +264,7 @@ export const coat = {
       pct: 100,
       min: 50,
       max: 200,
-      menu: 'fit',
+      menu: 'fit.bonus',
       toAbs: (pct, settings) =>
         nyx_neck_to_chest * pct * (settings.options?.backlength ? settings.options.backlength : 1),
     },
@@ -272,7 +272,7 @@ export const coat = {
       pct: 100,
       min: 50,
       max: 200,
-      menu: 'fit',
+      menu: 'fit.bonus',
       toAbs: (pct, settings) =>
         nyx_shoulder_to_shoulder *
         pct *
