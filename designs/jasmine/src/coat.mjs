@@ -1,5 +1,3 @@
-// First import the method
-
 const nyx_vert_length = 380
 const nyx_chest_circum = 584
 const nyx_neck_circum = 368
@@ -22,7 +20,6 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
 
   const neck_angle_offset = -1 * (0.5 - options.neck_circle_percentage) * 180
 
-  //Neckbandwidth assumes 3 inches to start
   const neckbandwidth = options.neckband_width * neckcircum
 
   const armholevert = nyx_neck_to_chest * options.neck_to_chest * options.backlength * globalscale
@@ -37,7 +34,6 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
 
   points.backedgeCp = points.backedge.shift(0, chesthorizontal / 3)
 
-  // I want closureback to use options.bellyclosurelength but i'm not sure how yet
   points.closurefront = new Point(chesthorizontal, armholevert)
   points.closureback = new Point(
     chesthorizontal,
