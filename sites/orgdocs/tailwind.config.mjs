@@ -4,6 +4,7 @@ import { themes } from './themes/index.mjs'
 export default {
   content: ['./src/*.js', './src/**/*.js', './src/*.mjs', './src/**/*.mjs'],
   plugins: [require('daisyui'), require('tailwindcss/nesting')],
+  corePlugins: { preflight: false },
   daisyui: {
     themes: [themes],
     styled: true,
