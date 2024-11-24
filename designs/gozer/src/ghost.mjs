@@ -1,20 +1,31 @@
 export const ghost = {
   name: 'gozer.ghost',
   measurements: ['hpsToWaistBack', 'waistToFloor', 'head'],
-  draft: ({ measurements, Point, points, Snippet, snippets, sa, macro, part }) => {
+  draft: ({
+    measurements,
+    Point,
+    points,
+    Snippet,
+    snippets,
+    sa,
+    macro,
+    expand,
+    store,
+    units,
+    part,
+  }) => {
     const eyeSize = measurements.head * (1 / 24)
     const eyeLine = measurements.head / 2.25
     const eyeOffset = measurements.head * (1 / 12.7)
-    const size =
+    const fullSize =
       measurements.hpsToWaistBack + measurements.waistToFloor + measurements.head / Math.PI
-    const partialSize = eyeWidth * 3
+    const partialSize = eyeLine + eyeSize * 3
     const fullFabric = 'fabric'
     const partialFabric = 'help note'
     let size = fullSize
     let fabric = fullFabric
 
-    points.middle = new Point(0, 0).addCircle(size, 'fabric')
-
+    points.middle = new Point(0, 0)
     points.eyeLine = points.middle.shift(270, eyeLine)
     points.eyeLeft = points.eyeLine.shift(180, eyeOffset)
     points.eyeRight = points.eyeLine.shift(0, eyeOffset)
