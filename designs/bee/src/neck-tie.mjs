@@ -118,12 +118,8 @@ export const neckTie = {
     )
 
     // Cut list
-    if (options.reversible) {
-      store.cutlist.addCut({ cut: 2, from: 'fabric', onFold: true })
-      store.cutlist.addCut({ cut: 2, from: 'altFabric1', onFold: true })
-    } else {
-      store.cutlist.addCut({ cut: 4, from: 'fabric', onFold: true })
-    }
+    store.cutlist.addCut({ cut: 2, from: 'fabric', onFold: true })
+    if (options.duoColorTies) store.cutlist.addCut({ cut: 2, from: 'altFabric1', onFold: true })
 
     // Title
     points.title = points.topLeft.translate(

@@ -81,8 +81,8 @@ export const bandTie = {
      */
 
     // Cut list
-    if (options.crossBackTies) store.cutlist.addCut({ cut: 1, from: 'fabric' })
-    else store.cutlist.addCut({ cut: 2, from: 'fabric' })
+    store.cutlist.addCut({ cut: 1, from: 'fabric', onFold: true })
+    if (options.duoColorTies) store.cutlist.addCut({ cut: 1, from: 'altFabric1', onFold: true })
 
     points.cofLeft = points.bottomLeft.shift(0, bandTieWidth * (1 / 8))
     points.grainlineLeft = points.topLeft.translate(bandTieWidth * (1 / 8), bandTieLength * (3 / 4))
@@ -147,7 +147,7 @@ export const bandTie = {
     macro('hd', {
       id: 'wTop',
       from: points.topLeft,
-      to: options.duoColorties ? points.middleRight : points.topRight,
+      to: options.duoColorTies ? points.middleRight : points.topRight,
       y: points.topLeft.x - sa - 20,
     })
 

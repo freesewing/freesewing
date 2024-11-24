@@ -205,19 +205,19 @@ export const cup = {
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
+    points.gridAnchor = points.lefti
+
     /*
      * Annotations
      */
+
     // Cut list
-    // Removing the cutonfold indicator should do the trick, but it does not
-    // So I am setting ignoreOnFold below until I fix this
-    macro('rmcutonfold')
-    store.cutlist.addCut({ cut: 2, material: 'fabric', ignoreOnFold: true })
+    store.cutlist.removeCut('fabric')
+    if (options.reversible) {
+      store.cutlist.addCut({ cut: 2, from: 'fabric' })
+      store.cutlist.addCut({ cut: 2, from: 'altFabric1' })
+    } else store.cutlist.addCut({ cut: 4, from: 'fabric' })
 
-    points.gridAnchor = points.lefti
-
-    if (options.reversible)
-      store.cutlist.addCut({ cut: 2, material: 'altFabric1', ignoreOnFold: true })
     // Grainline
     points.grainlineTop = points.top.shiftFractionTowards(points.bustA, 0.05)
     points.grainlineBottom = points.bustA.shiftFractionTowards(points.top, 0.05)
