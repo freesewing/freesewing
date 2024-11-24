@@ -18,7 +18,7 @@ const TypographyPage = ({ page }) => {
       description="FreeSewing is an open source Javascript library for parametric sewing patterns"
     >
       <div className="tailwind-container">
-        <div className="tw-text-base-content mdx tw-max-w-prose tw-text-base-content tw-max-w-prose tw-text-base tw-xl:pl-4 tw-mx-auto tw-my-8">
+        <div className="text-base-content mdx max-w-prose text-base-content max-w-prose text-base xl:pl-4 mx-auto my-8">
           <h1>Typography</h1>
           <p>
             This typography page shows an overview of different elements and how they are styled.
@@ -39,11 +39,11 @@ const TypographyPage = ({ page }) => {
             A regular link <a href="#">looks like this</a>, whereas buttons look like this:
           </p>
           <h3>Main button styles</h3>
-          <div className="tw-flex tw-flex-row tw-gap-2 tw-flex-wrap">
-            <button className="tw-dsy-btn tw-dsy-btn-neutral">Neutral button</button>
-            <button className="tw-dsy-btn tw-dsy-btn-primary">Primary button</button>
-            <button className="tw-dsy-btn tw-dsy-btn-secondary">Secondary button</button>
-            <button className="tw-dsy-btn tw-dsy-btn-accent">Accent button</button>
+          <div className="flex flex-row gap-2 flex-wrap">
+            <button className="btn btn-neutral">Neutral button</button>
+            <button className="btn btn-primary">Primary button</button>
+            <button className="btn btn-secondary">Secondary button</button>
+            <button className="btn btn-accent">Accent button</button>
           </div>
           <h3>State button styles</h3>
           <div className="flex flex-row gap-2 flex-wrap">
