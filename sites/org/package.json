@@ -82,7 +82,7 @@
     "yaml-loader": "0.8.1"
   },
   "engines": {
-    "node": ">= 18.17.0 <22"
+    "node": ">= 18.17.0"
   },
   "private": true
 }

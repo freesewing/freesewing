@@ -56,7 +56,7 @@
     "prisma": "5.15.0"
   },
   "engines": {
-    "node": ">= 18.17.0 <22"
+    "node": ">= 18.17.0"
   },
   "private": true
 }
