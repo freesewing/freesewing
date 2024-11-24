@@ -42,16 +42,17 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
 
   points.closurebackCp = points.closureback.shift(180, chesthorizontal / 3)
 
-  points.bellyoverlapfront = points.closurefront.shift(
-    0,
-    chesthorizontal * 2 * options.bellyoverlap
-  )
-  points.bellyoverlapback = points.closureback.shift(0, chesthorizontal * 2 * options.bellyoverlap)
+  const belly_overlap_width = chesthorizontal * 2 * options.bellyoverlap
+  points.bellyoverlapfront = points.closurefront.shift(0, belly_overlap_width)
+  points.bellyoverlapback = points.closureback.shift(0, belly_overlap_width)
 
   points.armholetop = new Point(armholehoriz, armholevert * 0.6)
 
+  //Overlap points at end of neckband
   points.neckbandtop = points.neckCircleCenter.shift(neck_angle_offset, neckradius)
   points.neckbandbottom = points.neckbandtop.shift(neck_angle_offset, neckbandwidth)
+
+  //Actual ends of neckband
 
   points.neckclosuretop = points.neckbandtop.shift(
     neck_angle_offset + 90,
@@ -117,6 +118,7 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     .close()
     .attr('class', 'fabric')
 
+  //Overlap line markings
   paths.neckoverlapline = new Path()
     .move(points.neckbandtop)
     .line(points.neckbandbottom)
@@ -125,6 +127,154 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     .move(points.closureback)
     .line(points.closurefront)
     .attr('class', 'sa')
+
+  if (options.closure_style == 'velcro') {
+    const neck_velcro_y = neckcircum * options.neckoverlap
+    const neck_velcro_x = neckbandwidth
+
+    const velcro_neck_corner_offset = Math.min(
+      (options.neck_velcro_shrink * (neck_velcro_x + neck_velcro_y)) / 2,
+      neck_velcro_y * 0.6
+    )
+
+    const velcro_width_neck = neck_velcro_y - velcro_neck_corner_offset
+
+    //Neck velcro rectangle first
+    points.neck_velcro_top_center = points.neckbandtop.shiftTowards(
+      points.neckbandbottom,
+      velcro_neck_corner_offset
+    )
+    points.neck_velcro_bottom_center = points.neckbandbottom.shiftTowards(
+      points.neckbandtop,
+      velcro_neck_corner_offset
+    )
+
+    points.neck_velcro_top_inner = points.neck_velcro_top_center.shift(
+      neck_angle_offset + 90,
+      velcro_width_neck
+    )
+    points.neck_velcro_top_outer = points.neck_velcro_top_center.shift(
+      -(neck_angle_offset + 90),
+      velcro_width_neck
+    )
+
+    points.neck_velcro_bottom_inner = points.neck_velcro_bottom_center.shift(
+      neck_angle_offset + 90,
+      velcro_width_neck
+    )
+    points.neck_velcro_bottom_outer = points.neck_velcro_bottom_center.shift(
+      -(neck_angle_offset + 90),
+      velcro_width_neck
+    )
+
+    paths.neck_velcro_rectangle = new Path()
+      .move(points.neck_velcro_top_inner)
+      .line(points.neck_velcro_top_outer)
+      .line(points.neck_velcro_bottom_outer)
+      .line(points.neck_velcro_bottom_inner)
+      .line(points.neck_velcro_top_inner)
+      .attr('class', 'sa')
+
+    const belly_velcro_x = belly_overlap_width
+    const belly_velcro_y = (vertlength - armholevert) * options.bellyclosurelength
+
+    const velcro_belly_corner_offset = Math.min(
+      (options.belly_velcro_shrink * (belly_velcro_x + belly_velcro_y)) / 2,
+      belly_velcro_x * 0.6,
+      belly_velcro_y * 0.15
+    )
+
+    const velcro_width_belly = belly_overlap_width - velcro_belly_corner_offset
+
+    //Belly velcro rectangle
+    points.belly_velcro_top_center = points.closurefront.shiftTowards(
+      points.closureback,
+      velcro_belly_corner_offset
+    )
+    points.belly_velcro_bottom_center = points.closureback.shiftTowards(
+      points.closurefront,
+      velcro_belly_corner_offset
+    )
+
+    points.belly_velcro_top_inner = points.belly_velcro_top_center.shift(0, velcro_width_belly)
+    points.belly_velcro_top_outer = points.belly_velcro_top_center.shift(180, velcro_width_belly)
+
+    points.belly_velcro_bottom_inner = points.belly_velcro_bottom_center.shift(
+      0,
+      velcro_width_belly
+    )
+    points.belly_velcro_bottom_outer = points.belly_velcro_bottom_center.shift(
+      180,
+      velcro_width_belly
+    )
+
+    paths.belly_velcro_rectangle = new Path()
+      .move(points.belly_velcro_top_inner)
+      .line(points.belly_velcro_top_outer)
+      .line(points.belly_velcro_bottom_outer)
+      .line(points.belly_velcro_bottom_inner)
+      .line(points.belly_velcro_top_inner)
+      .attr('class', 'sa')
+
+    macro('hd', {
+      id: 'belly_velcro_width',
+      from: points.belly_velcro_top_outer,
+      to: points.belly_velcro_top_inner,
+      y: points.closureback.shiftFractionTowards(points.closurefront, 0.2).y,
+    })
+    macro('pd', {
+      id: 'neck_velcro_width',
+      path: new Path().move(points.neck_velcro_bottom_inner).line(points.neck_velcro_bottom_outer),
+      d: neckbandwidth / 4,
+    })
+  }
+
+  if (options.closure_style == 'buttons' || options.closure_style == 'snaps') {
+    let j = options.neck_button_count
+    j++
+
+    let k = options.belly_button_count
+    k++
+    let neckButtonPoints = []
+    let bellyButtonPoints = []
+
+    //Identify points to place closures
+    for (let i = 1; i < j; i++) {
+      neckButtonPoints.push(points.neckbandtop.shiftFractionTowards(points.neckbandbottom, i / j))
+    }
+    for (let i = 1; i < k; i++) {
+      bellyButtonPoints.push(points.closurefront.shiftFractionTowards(points.closureback, i / k))
+    }
+
+    //Generate snippets for closures
+    let typestring
+    if (options.closure_style == 'buttons') typestring = 'button'
+    else typestring = 'snap-socket'
+
+    for (let b in neckButtonPoints) {
+      snippets[b + 'neck'] = new Snippet(typestring, neckButtonPoints[b]).attr(
+        'data-scale',
+        options.button_scale
+      )
+      if (options.closure_style == 'buttons') {
+        snippets[b + 'neck_hole'] = new Snippet('buttonhole-end', neckButtonPoints[b])
+          .attr('data-rotate', -neck_angle_offset)
+          .attr('data-scale', options.button_scale)
+      }
+    }
+    for (let b in bellyButtonPoints) {
+      snippets[b + 'stomach'] = new Snippet(typestring, bellyButtonPoints[b]).attr(
+        'data-scale',
+        options.button_scale
+      )
+
+      if (options.closure_style == 'buttons') {
+        snippets[b + 'stomach_hole'] = new Snippet('buttonhole-end', bellyButtonPoints[b])
+          .attr('data-rotate', 90)
+          .attr('data-scale', options.button_scale)
+      }
+    }
+  }
 
   paths.neckmeasure = new Path()
     .move(points.neckCenter)
@@ -136,6 +286,25 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
   if (sa) {
     paths.sa = paths.seam.offset(sa).addClass('fabric sa')
   }
+
+  /*
+  macro('round', {
+    id: 'necktopcorner',
+    from: points.neckbandtop,
+    to: points.neckclosurebottom,
+    via: points.neckclosuretop,
+    radius: neckbandwidth/3,
+    hide: false,
+  })
+  macro('round', {
+    id: 'neckbottomcorner',
+    from: points.neckclosuretop,
+    to: points.neckbandbottom,
+    via: points.neckclosurebottom,
+    radius: neckbandwidth/3,
+    hide: false,
+  })
+    */
 
   macro('hd', {
     id: 'hWidth',
@@ -291,7 +460,7 @@ export const coat = {
       pct: 35,
       min: 10,
       max: 100,
-      menu: 'advanced',
+      menu: 'style',
       toAbs: (pct, settings) =>
         nyx_chest_circum *
         pct *
@@ -299,9 +468,9 @@ export const coat = {
         (settings.options?.chest_circum ? settings.options.chest_circum : 1),
     },
 
-    neckoverlap: { pct: 5, min: 0, max: 30, menu: 'style' },
+    neckoverlap: { pct: 5, min: 0, max: 30, menu: 'style.closures' },
 
-    bellyoverlap: { pct: 5, min: 0, max: 30, menu: 'style' },
+    bellyoverlap: { pct: 5, min: 0, max: 30, menu: 'style.closures' },
 
     back_length_percentage: { pct: 100, min: 40, max: 100, menu: 'style' },
 
@@ -317,6 +486,19 @@ export const coat = {
 
     armholecurve: { pct: 47.5, min: 10, max: 150, menu: 'advanced' },
     neck_circle_percentage: { pct: 50, min: 20, max: 90, menu: 'advanced' },
+
+    closure_style: {
+      dflt: 'velcro',
+      list: ['none', 'buttons', 'snaps', 'velcro'],
+      menu: 'style.closures',
+    },
+
+    neck_button_count: { count: 2, min: 1, max: 3, menu: 'style.closures.buttons' },
+    belly_button_count: { count: 4, min: 1, max: 8, menu: 'style.closures.buttons' },
+    button_scale: { pct: 100, min: 20, max: 400, menu: 'style.closures.buttons' },
+
+    belly_velcro_shrink: { pct: 10, min: 0, max: 50, menu: 'style.closures.velcro' },
+    neck_velcro_shrink: { pct: 10, min: 0, max: 50, menu: 'style.closures.velcro' },
   },
   draft: draftcoat,
 }
