@@ -133,8 +133,10 @@ export const bandTie = {
 
     if (complete && options.crossBackTies) {
       let gatherLength = store.get('gatherLength')
-      snippets.centreNotch = new Snippet('notch', points.bottomRight)
-      points.sideNotch = points.bottomRight.shift(90, gatherLength)
+      points.centreNotch = points.bottomRight.clone()
+      if (options.duoColorTies) points.centreNotch = points.bottomMiddle.clone()
+      snippets.centreNotch = new Snippet('notch', points.centreNotch)
+      points.sideNotch = points.centreNotch.shift(90, gatherLength)
       snippets.sideNotch = new Snippet('notch', points.sideNotch)
     }
 
@@ -147,7 +149,7 @@ export const bandTie = {
     macro('hd', {
       id: 'wTop',
       from: points.topLeft,
-      to: options.duoColorties ? points.middleRight : points.topRight,
+      to: options.duoColorTies ? points.middleRight : points.topRight,
       y: points.topLeft.x - sa - 20,
     })
 
