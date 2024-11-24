@@ -63,7 +63,7 @@
     "html-to-text": "^9.0.5"
   },
   "engines": {
-    "node": ">= 18.17.0 <22"
+    "node": ">= 18.17.0"
   },
   "private": true
 }
