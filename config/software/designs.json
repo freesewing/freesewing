@@ -1052,17 +1052,20 @@
     ]
   },
   "jasmine": {
-    "code": "Coder name",
-    "description": "A FreeSewing pattern that needs a description",
-    "design": "Designer name",
+    "code": "candlecoveblooperreel",
+    "description": "A FreeSewing pattern for a dog jacket",
+    "design": "candlecoveblooperreel",
     "difficulty": 1,
     "lab": true,
     "org": true,
     "tags": [
-      "tagname"
+      "onePiece"
     ],
     "techniques": [
-      "techname"
+      "biasTape",
+      "curvedSeam",
+      "snap",
+      "button"
     ]
   }
 }
