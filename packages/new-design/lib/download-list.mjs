@@ -1,5 +1,5 @@
 export const downloads = {
-  'sites': [
+  sites: [
     'sde/README.md',
     'sde/env.local',
     'sde/i18n.config.mjs',
@@ -678,7 +678,6 @@ export const downloads = {
     'shared/components/control/tip.mjs',
     'shared/components/wordmark.mjs',
     'shared/components/joost.mjs',
-    'shared/config/social.mjs',
     'shared/config/paypal.mjs',
     'shared/config/i18n.config.mjs',
     'shared/config/tailwind-force.html',
@@ -711,9 +710,9 @@ export const downloads = {
     'shared/themes/lgbtq.mjs',
     'shared/prebuild/data/design-options.mjs',
     'shared/prebuild/data/designs.mjs',
-    'shared/prebuild/data/design-measurements.mjs'
+    'shared/prebuild/data/design-measurements.mjs',
   ],
-  'pkgs': [
+  pkgs: [
     'react-components/src/pattern-xray/index.mjs',
     'react-components/src/pattern-xray/point.mjs',
     'react-components/src/pattern-xray/path.mjs',
@@ -730,6 +729,6 @@ export const downloads = {
     'react-components/src/pattern/grid.mjs',
     'react-components/src/pattern/path.mjs',
     'react-components/src/pattern/circle.mjs',
-    'react-components/src/editor/swizzle/components/popout.mjs'
-  ]
+    'react-components/src/editor/swizzle/components/popout.mjs',
+  ],
 }
