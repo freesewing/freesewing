@@ -208,6 +208,7 @@ export const cup = {
       from: points.grainlineFrom,
       to: points.grainlineTo,
     })
+    //cutlist
     if (options.reversible) {
       store.cutlist.setCut({ cut: 2, from: 'fabric', identical: 'true' })
       store.cutlist.addCut({ cut: 2, from: 'constrast', identical: 'true' })

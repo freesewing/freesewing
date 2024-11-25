@@ -43,13 +43,11 @@ export const neckTie = {
     const neckTieLength = options.crossBackTies
       ? Math.sqrt(
           Math.pow(measurements.hpsToWaistFront, 2) +
-            Math.pow(measurements.underbust - measurements.underbust * options.neckTieLength, 2)
+            Math.pow(measurements.underbust * (1 - options.neckTieLength), 2)
         ) +
-        measurements.underbust -
-        measurements.underbust * options.bandLength +
-        measurements.underbust -
-        measurements.underbust * options.bandLength * options.neckTieLength
-      : measurements.hpsToBust + measurements.hpsToBust * options.neckTieLength
+        measurements.underbust * (1 - options.bandLength) +
+        measurements.underbust * (1 - options.bandLength * options.neckTieLength)
+      : measurements.hpsToBust * (1 + options.neckTieLength)
     const neckTieWidth = options.duoNeckTieColours
       ? absoluteOptions.neckTieWidth
       : absoluteOptions.neckTieWidth * 2
@@ -63,19 +61,10 @@ export const neckTie = {
         msg: `bee:cutNeckTie`,
         notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
         replace: {
-          width: units(absoluteOptions.neckTieWidth * 2 + extraSa),
-          length: units(neckTieLength * 2),
-        },
-        suggest: {
-          text: 'flag:show',
-          icon: 'expand',
-          update: {
-            settings: ['expand', 1],
-          },
+          width: units(neckTieWidth + extraSa),
+          length: units(neckTieLength),
         },
       })
-      // Also hint about expand
-      store.flag.preset('expand')
 
       return part.hide()
     }
@@ -143,33 +132,33 @@ export const neckTie = {
         from: points.topLeft,
         to: points.bottomLeft,
         x: points.topLeft.x - sa - 15,
-        id: 'vDist',
+        id: 'vd0',
       })
       macro('hd', {
         from: points.bottomLeft,
         to: points.bottomRight,
         y: points.bottomLeft.y + sa + 15,
-        id: 'hDist',
+        id: 'hd0',
       })
       if (options.pointedNeckTieEnds) {
         macro('vd', {
           from: points.topPeak,
           to: points.topLeft,
           x: points.topLeft.x - sa - 15,
-          id: 'peakVDist',
+          id: 'vdP0',
         })
         macro('vd', {
           from: points.topPeak,
           to: points.bottomLeft,
           x: points.topLeft.x - sa - 30,
-          id: 'peakTieDist',
+          id: 'vdP1',
         })
         if (!options.duoNeckTieColours) {
           macro('hd', {
             from: points.topLeft,
             to: points.topPeak,
             y: points.topPeak.y - sa - 15,
-            id: 'peakHWidth',
+            id: 'hdP0',
           })
         }
       }
