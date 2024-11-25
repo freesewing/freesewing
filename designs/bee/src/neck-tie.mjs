@@ -18,7 +18,7 @@ export const neckTie = {
       ...pctBasedOn('bustSpan'),
     },
     pointedNeckTieEnds: { bool: false, menu: 'style' },
-    neckTieFolded: { bool: false, menu: 'style' },
+    duoNeckTieColours: { bool: false, menu: 'style' },
     reversible: { bool: false, menu: 'style' },
   },
   draft: ({
@@ -38,7 +38,7 @@ export const neckTie = {
     part,
   }) => {
     //lock option
-    if (options.reversible) options.neckTieFolded = true
+    if (options.reversible) options.duoNeckTieColours = true
     //measures
     const neckTieLength = options.crossBackTies
       ? Math.sqrt(
@@ -50,16 +50,14 @@ export const neckTie = {
         measurements.underbust -
         measurements.underbust * options.bandLength * options.neckTieLength
       : measurements.hpsToBust + measurements.hpsToBust * options.neckTieLength
-    const neckTieWidth = options.neckTieFolded
+    const neckTieWidth = options.duoNeckTieColours
       ? absoluteOptions.neckTieWidth
       : absoluteOptions.neckTieWidth * 2
     store.set('neckTieLength', neckTieLength)
-    //set Render
-    if (!options.ties) return part.hide()
     /*
      * Don't bother unless expand is set
      */
-    if (!expand) {
+    if ((!expand && !options.pointedNeckTieEnds) || !options.ties) {
       const extraSa = sa ? 2 * sa : 0
       store.flag.note({
         msg: `bee:cutNeckTie`,
@@ -90,7 +88,7 @@ export const neckTie = {
     points.bottomMid = new Point(points.topMid.x, points.bottomLeft.y)
 
     points.topPeak = options.pointedNeckTieEnds
-      ? options.neckTieFolded
+      ? options.duoNeckTieColours
         ? points.topRight.shift(90, neckTieWidth)
         : points.topMid.shift(90, neckTieWidth / 2)
       : points.topMid
@@ -117,7 +115,7 @@ export const neckTie = {
       to: points.grainlineTo,
     })
     //cutlist
-    if (options.neckTieFolded) store.cutlist.addCut({ cut: 2, from: 'constrast' })
+    if (options.duoNeckTieColours) store.cutlist.addCut({ cut: 2, from: 'constrast' })
     store.cutlist.addCut({ cut: 2, from: 'fabric' })
     //title
     points.title = points.topLeft.translate(
@@ -131,7 +129,7 @@ export const neckTie = {
       scale: 0.2,
     })
     //fold line
-    if (!options.neckTieFolded) {
+    if (!options.duoNeckTieColours) {
       paths.foldline = new Path()
         .move(points.topPeak)
         .line(points.bottomMid)
@@ -165,12 +163,12 @@ export const neckTie = {
           x: points.topLeft.x - sa - 30,
           id: 'peakTieDist',
         })
-        if (!options.neckTieFolded) {
+        if (!options.duoNeckTieColours) {
           macro('hd', {
             from: points.topLeft,
             to: points.topPeak,
             y: points.topPeak.y - sa - 15,
-            id: 'peakTieWidth',
+            id: 'peakHWidth',
           })
         }
       }
