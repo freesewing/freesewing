@@ -309,7 +309,7 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
   macro('hd', {
     id: 'hWidth',
     from: points.neckCenter,
-    to: points.closurefront,
+    to: points.bellyoverlapfront,
     y: points.closureback.shiftFractionTowards(points.closurefront, 0.5).y,
   })
   macro('vd', {
