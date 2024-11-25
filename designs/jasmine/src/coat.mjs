@@ -154,8 +154,8 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
       velcro_width_neck
     )
     points.neck_velcro_top_outer = points.neck_velcro_top_center.shift(
-      -(neck_angle_offset + 90),
-      velcro_width_neck
+      neck_angle_offset + 90,
+      -1 * velcro_width_neck
     )
 
     points.neck_velcro_bottom_inner = points.neck_velcro_bottom_center.shift(
@@ -163,8 +163,8 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
       velcro_width_neck
     )
     points.neck_velcro_bottom_outer = points.neck_velcro_bottom_center.shift(
-      -(neck_angle_offset + 90),
-      velcro_width_neck
+      neck_angle_offset + 90,
+      -1 * velcro_width_neck
     )
 
     paths.neck_velcro_rectangle = new Path()
