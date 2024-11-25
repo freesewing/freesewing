@@ -412,8 +412,8 @@ export const coat = {
 
     backlength: {
       pct: 100,
-      min: 40,
-      max: 250,
+      min: 60,
+      max: 170,
       menu: 'fit',
       toAbs: function (value, settings) {
         return (
@@ -425,8 +425,8 @@ export const coat = {
     },
     neck_circum: {
       pct: 100,
-      min: 50,
-      max: 250,
+      min: 60,
+      max: 170,
       menu: 'fit',
       toAbs: (pct, settings) =>
         nyx_neck_circum *
