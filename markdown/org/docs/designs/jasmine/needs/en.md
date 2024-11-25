@@ -1,5 +1,5 @@
 ---
-title: "jasmine Dog Jacket: What you need"
+title: "Jasmine Dog Jacket: What you need"
 ---
 
 To determine how much fabric you need for jasmine you take:

@@ -1,5 +1,5 @@
 ---
-title: "jasmine Dog Jacket: Required Measurements"
+title: "Jasmine Dog Jacket: Required Measurements"
 ---
 
 <DesignMeasurements design='jasmine' />

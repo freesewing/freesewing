@@ -1,5 +1,5 @@
 ---
-title: "jasmine Dog Jacket: Fabric Options"
+title: "Jasmine Dog Jacket: Fabric Options"
 ---
 
 ## Historically Accurate Fabrics
