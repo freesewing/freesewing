@@ -7,6 +7,6 @@ export const logoDefs = [
     def: (scale) =>
       `<g id="logo" transform="scale(${
         2 * scale
-      }) translate(-23 -36)"><path class="logo" fill="currentColor" d="${logoPath}"/></g>`,
+      }) translate(-12.55 -18)"><path class="logo" fill="currentColor" d="${logoPath}"/></g>`,
   },
 ]
