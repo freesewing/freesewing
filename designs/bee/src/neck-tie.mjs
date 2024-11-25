@@ -59,7 +59,7 @@ export const neckTie = {
       const extraSa = sa ? 2 * sa : 0
       store.flag.note({
         msg: `bee:cutNeckTie`,
-        notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
+        notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded'],
         replace: {
           width: units(neckTieWidth + extraSa),
           length: units(neckTieLength),

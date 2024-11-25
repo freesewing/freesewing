@@ -53,7 +53,7 @@ export const bandTie = {
       const extraSa = sa ? 2 * sa : 0
       store.flag.note({
         msg: `bee:cutBandTie`,
-        notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
+        notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded'],
         replace: {
           width: utils.units(bandTieWidth + extraSa),
           length: utils.units(bandTieLength * 2),
