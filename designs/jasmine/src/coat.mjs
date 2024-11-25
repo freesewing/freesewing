@@ -1,3 +1,5 @@
+import { hoodiepocket } from './hoodiepocket.mjs'
+
 const nyx_vert_length = 380
 const nyx_chest_circum = 584
 const nyx_neck_circum = 368
@@ -396,11 +398,16 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     grainline: true,
   })
 
+  if (options.pocket_type == 'hoodie') {
+    //paths.hoodiepocketplacement = pocketpath()
+  }
+
   return part
 }
 
 export const coat = {
   name: 'coat',
+  after: hoodiepocket,
   options: {
     chest_circum: {
       pct: 100,
@@ -500,6 +507,12 @@ export const coat = {
 
     belly_velcro_shrink: { pct: 10, min: 0, max: 50, menu: 'style.closures.velcro' },
     neck_velcro_shrink: { pct: 10, min: 0, max: 50, menu: 'style.closures.velcro' },
+
+    pocket_type: {
+      dflt: 'none',
+      list: ['none', 'hoodie'],
+      menu: 'style',
+    },
   },
   draft: draftcoat,
 }
