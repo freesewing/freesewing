@@ -1,7 +1,77 @@
 {
   "t": "Jasmine",
-  "d": "A FreeSewing pattern that needs a description",
-  "p": { },
+  "d": "A simple, single-piece jacket for a dog or other quadruped",
+  "p": { "coat": "Coat"},
   "s": { },
-  "o": { }
+  "o": {
+    "chest_circum": {
+      "t": "Chest circumference",
+      "d": "The measurement around the chest, just behind the elbows. Everything else scales to this, so set it first!"
+    },
+    "backlength": {
+      "t": "Back length",
+      "d": "Measurement from the back of the collar to the base of the tail"
+    },
+    "neck_circum": {
+      "t": "Neck circumference",
+      "d": "Measurement around the neck at the level of the collar - or just take off and measure the collar"
+    },
+    "neck_to_chest": {
+      "t": "Collar to chest",
+      "d": "Measure from the back of the collar to the top of the chest measurement"
+    },
+    "shouldertoshoulder": {
+      "t": "Shoulder to shoulder",
+      "d": "Horizontal measurement across the back, from the top of one armhole to the other"
+    },
+    "back_width": {
+      "t": "Back width",
+      "d": "How wide the jacket should be at the back"
+    },
+    "neck_overlap": {
+      "t": "Neck overlap",
+      "d": "How far the neck should overlap itself at the front"
+    },
+    "bellyoverlap": {
+      "t": "Belly overlap",
+      "d": "How far the belly should overlap itself at the bottom"
+    },
+    "back_length_percentage": {
+      "t": "Back length percentage",
+      "d": "Used to shorten the back of the jacket"
+    },
+    "bellyclosurelength": {
+      "t": "Belly closure length",
+      "d": "How long the closure at the bottom should be, relative to total length"
+    },
+    "neckband_width": {
+      "t": "Neckband width",
+      "d": "Width of the neckband, or how far the jacket should come down the chest from the front of the collar"
+    },
+    "armholecurve": {
+      "t": "Armhole curve",
+      "d": "How wide to carve the armhole"
+    },
+    "neck_circle_percentage": {
+      "t": "Neck circle percentage",
+      "d": "Affects the angle of the neck. 50 is perfect for most dogs, 90 is better for humans"
+    },
+    "closure_style": {
+      "t": "Closure style",
+      "d": "Type of closure"
+    },
+    "neck_button_count": {
+      "t": "Neck button count",
+      "d": "How many buttons or snaps to place at the neck"
+    },
+    "belly_button_count": {
+      "t": "Belly button count",
+      "d": "How many buttons or snaps to place at the belly"
+    },
+    "button_scale": {
+      "t": "Button scale",
+      "d": "Scale the buttons"
+    }
+
+  }
 }

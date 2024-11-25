@@ -154,8 +154,8 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
       velcro_width_neck
     )
     points.neck_velcro_top_outer = points.neck_velcro_top_center.shift(
-      -(neck_angle_offset + 90),
-      velcro_width_neck
+      neck_angle_offset + 90,
+      -1 * velcro_width_neck
     )
 
     points.neck_velcro_bottom_inner = points.neck_velcro_bottom_center.shift(
@@ -163,8 +163,8 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
       velcro_width_neck
     )
     points.neck_velcro_bottom_outer = points.neck_velcro_bottom_center.shift(
-      -(neck_angle_offset + 90),
-      velcro_width_neck
+      neck_angle_offset + 90,
+      -1 * velcro_width_neck
     )
 
     paths.neck_velcro_rectangle = new Path()
@@ -180,7 +180,7 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
 
     const velcro_belly_corner_offset = Math.min(
       (options.belly_velcro_shrink * (belly_velcro_x + belly_velcro_y)) / 2,
-      belly_velcro_x * 0.6,
+      belly_velcro_x * 0.25,
       belly_velcro_y * 0.15
     )
 
@@ -475,6 +475,7 @@ export const coat = {
     back_length_percentage: { pct: 100, min: 40, max: 100, menu: 'style' },
 
     bellyclosurelength: { pct: 40, min: 10, max: 100, menu: 'style' },
+
     neckband_width: {
       pct: 24,
       min: 10,
