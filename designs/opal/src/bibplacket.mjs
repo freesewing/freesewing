@@ -113,7 +113,7 @@ function draftBibPlacket({
 }
 
 export const bibPlacket = {
-  name: 'bibPlacket',
+  name: 'opal.bibPlacket',
   draft: draftBibPlacket,
   after: bib,
 }

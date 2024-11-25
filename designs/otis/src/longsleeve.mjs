@@ -1,7 +1,7 @@
 import { shortsleeve } from './shortsleeve.mjs'
 
 export const longsleeve = {
-  name: 'longsleeve',
+  name: 'otis.longsleeve',
   from: shortsleeve,
   draft: ({ options, Path, points, paths, Snippet, snippets, sa, store, macro, utils, part }) => {
     const waist = store.get('waist')

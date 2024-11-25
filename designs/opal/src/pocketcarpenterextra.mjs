@@ -67,7 +67,7 @@ function draftPocketCarpenterExtra({
 }
 
 export const pocketCarpenterExtra = {
-  name: 'pocketCarpenterExtra',
+  name: 'opal.pocketCarpenterExtra',
   draft: draftPocketCarpenterExtra,
   from: back,
 }

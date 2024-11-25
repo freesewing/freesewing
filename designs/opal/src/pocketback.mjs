@@ -93,7 +93,7 @@ function draftPocketBack({
 }
 
 export const pocketBack = {
-  name: 'pocketBack',
+  name: 'opal.pocketBack',
   draft: draftPocketBack,
   from: back,
 }

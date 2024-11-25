@@ -93,7 +93,7 @@ function draftPocketCarpenter({
 }
 
 export const pocketCarpenter = {
-  name: 'pocketCarpenter',
+  name: 'opal.pocketCarpenter',
   draft: draftPocketCarpenter,
   from: back,
 }

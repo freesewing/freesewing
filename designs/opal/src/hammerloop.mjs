@@ -135,7 +135,7 @@ function draftHammerLoop({ options, Point, Path, points, paths, sa, macro, part,
 }
 
 export const hammerLoop = {
-  name: 'HammerLoop',
+  name: 'opal.HammerLoop',
   draft: draftHammerLoop,
   after: back,
   options: { hammerLoopLengthFactor: 1 },

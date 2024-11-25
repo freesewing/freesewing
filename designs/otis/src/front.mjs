@@ -1,7 +1,7 @@
 import { back } from './back.mjs'
 
 export const front = {
-  name: 'front',
+  name: 'otis.front',
   after: back,
   draft: ({
     options,
