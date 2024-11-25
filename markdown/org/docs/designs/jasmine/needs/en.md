@@ -1,5 +1,5 @@
 ---
-title: "jasmine 1790's Shift: What you need"
+title: "jasmine Dog Jacket: What you need"
 ---
 
 To determine how much fabric you need for jasmine you take:

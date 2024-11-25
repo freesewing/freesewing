@@ -1,5 +1,5 @@
 ---
-title: "jasmine 1790's shift"
+title: "jasmine Dog Jacket"
 ---
 
 <DesignInfo design='jasmine' docs />

@@ -1,5 +1,5 @@
 ---
-title: "jasmine 1790's Shift: Fabric Options"
+title: "jasmine Dog Jacket: Fabric Options"
 ---
 
 ## Historically Accurate Fabrics

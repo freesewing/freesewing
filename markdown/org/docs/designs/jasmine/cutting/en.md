@@ -1,5 +1,5 @@
 ---
-title: "jasmine 1790's Shift: Cutting Instructions"
+title: "jasmine Dog Jacket: Cutting Instructions"
 ---
 
 The best way to get a truly straight line for all the straight seams in jasmine is to pull a thread. This is done by snipping into the fabric at the right measurement and then carefully pulling on the single thread that the cut exposes. Once pulled all the way out of the fabric it creates a void that is easily followed to cut a straight line. 

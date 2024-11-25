@@ -1,5 +1,5 @@
 ---
-title: "jasmine 1790's Shift: Sewing Instructions"
+title: "jasmine Dog Jacket: Sewing Instructions"
 ---
 
 You can sew your jasmine entirely by machine, or by hand. But it is also possible to mix and match techniques to your liking. It is common practice for modern makers of historical clothing to sew the seams by machine but finish them by hand.
