@@ -5,12 +5,13 @@ import { i18n } from '../i18n/index.mjs'
 import { data } from '../data.mjs'
 // Parts
 import { coat } from './coat.mjs'
+import { kangaroopocket } from './kangaroopocket.mjs'
 
 // Create new design
 const Jasmine = new Design({
   data,
-  parts: [coat],
+  parts: [coat, kangaroopocket],
 })
 
 // Named exports
-export { coat, i18n, Jasmine }
+export { coat, kangaroopocket, i18n, Jasmine }
