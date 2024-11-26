@@ -39,7 +39,6 @@ Most of FreeSewing's source code lives in [our monorepo](https://github.com/free
 
 There are some exceptions:
 
- - [`svgtopdf`](https://github.com/freesewing/svgtopdf): The repository holding the source code for our on-demand tiler backend
  - [`tile`](https://github.com/freesewing/tile): The repository holding the source code for our command-line tiler
 
 ### FreeSewing packages
@@ -50,12 +49,13 @@ We publish a lot of JavaScript packages on NPM. You can find the full list [in t
 
 This file is mostly geared towards code contributors, but there's plenty of other ways you can contribute.
 
-As it happens, we keep a list of suggestions at: https://freesewing.dev/howtos/ways-to-contribute
+As it happens, we keep a list of suggestions at: https://github.com/freesewing/freesewing/wiki/Ways-to-Contribute
 
 ### Your first contribution
 
-Unsure where to begin contributing to FreeSewing? 
-You can start by looking through the issues labeled [good first issue](https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3A%22%F0%9F%91%8D+good+first+issue%22).
+Unsure where to begin contributing to FreeSewing?
+You can start by looking through the issues labeled
+[good first issue](https://github.com/freesewing/freesewing/issues?q=is%3Aopen+is%3Aissue+label%3A%22%3A%2B1%3A+good+first+issue%22).
 
 Don't be afraid to take on an issue. If you get stuck, [we'll help you out](https://discord.freesewing.org/).
 
