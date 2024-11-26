@@ -49,7 +49,18 @@ function draftkangaroopocket({
       macro,
       part,
     })
-
+    macro('hd', {
+      id: 'pocket_width',
+      from: points.pocket_bottom_center,
+      to: points.pocket_outer_point,
+      y: points.pocket_outer_point.y,
+    })
+    macro('vd', {
+      id: 'pocket_height',
+      from: points.pocket_bottom_center,
+      to: points.pocket_top_center,
+      x: points.pocket_bottom_outer_edge.x,
+    })
     macro('cutonfold', {
       from: points.pocket_bottom_center,
       to: points.pocket_top_center,
@@ -59,19 +70,6 @@ function draftkangaroopocket({
       paths.sa = paths.kangaroopocketseam.offset(sa).addClass('fabric sa')
     }
   }
-
-  macro('hd', {
-    id: 'pocket_width',
-    from: points.pocket_bottom_center,
-    to: points.pocket_outer_point,
-    y: points.pocket_outer_point.y,
-  })
-  macro('vd', {
-    id: 'pocket_height',
-    from: points.pocket_bottom_center,
-    to: points.pocket_top_center,
-    x: points.pocket_bottom_outer_edge.x,
-  })
 
   return part
 }
