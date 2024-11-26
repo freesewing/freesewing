@@ -4,7 +4,20 @@ const nyx_neck_circum = 368
 const nyx_shoulder_to_shoulder = 304
 const nyx_neck_to_chest = 76
 
-function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa, macro, part }) {
+function draftcoat({
+  options,
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  sa,
+  macro,
+  part,
+  store,
+  units,
+}) {
   const globalscale = options.chest_circum
 
   //15 inches * backlength percentage
@@ -92,19 +105,16 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     )
   )
 
-  paths.seam = new Path()
-    .move(points.neckCenter)
-    .line(points.backCenter)
+  paths.outer_edge = new Path()
+    .move(points.backCenter)
 
     .line(points.backedge)
-    //.line(points.closureback)
     .curve(points.backedgeCp, points.closurebackCp, points.closureback)
 
     .line(points.bellyoverlapback)
     .line(points.bellyoverlapfront)
     .line(points.closurefront)
     .curve(points.closurefrontCp, points.armholetopCp2, points.armholetop)
-    //.line(points.armholetop)
 
     .curve(points.armholetopCp1, points.neckbandbottomCp2, points.neckbandbottom)
 
@@ -114,9 +124,17 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     .line(points.neckbandtop)
     .curve(points.neckbandtopCp1, points.neckCenterCp2, points.neckCenter)
 
-    //.line(points.neckCenter)
-    .close()
-    .attr('class', 'fabric')
+    .hide()
+
+  paths.seam = paths.outer_edge.unhide().close().attr('class', 'fabric')
+
+  //Let the user know about the bias tape requirements
+  store.flag.info({
+    msg: 'jasmine:biasTapeLength',
+    replace: {
+      l: units(2 * paths.outer_edge.length()),
+    },
+  })
 
   //Overlap line markings
   paths.neckoverlapline = new Path()

@@ -18,7 +18,7 @@
     },
     "neck_to_chest": {
       "t": "Collar to chest",
-      "d": "Measure from the back of the collar to the top of the chest measurement"
+      "d": "Measure from the back of the collar to the back of the chest measurement"
     },
     "shouldertoshoulder": {
       "t": "Shoulder to shoulder",
@@ -71,6 +71,19 @@
     "button_scale": {
       "t": "Button scale",
       "d": "Scale the buttons"
+    },
+
+    "biasTapeLength": {
+      "t": "Bias tape: {{{ l }}}",
+      "d": "To finish the edge, you will need {{{ l }}} of [bias tape](/docs/sewing/bias-tape)"
+    },
+
+
+    "s": {
+      "biasTapeLength.t": "Bias tape: {{{ l }}}",
+      "biasTapeLength.d": "To finish the edge, you will need {{{ l }}} of [bias tape](/docs/sewing/bias-tape)",
+      "fabricNeeded": "You need a {{{ w }}} by {{{ h }}} piece of [suitable fabric](/docs/designs/jasmine/fabric) to make this bib",
+      "finishWithBiasTape": "Finish raw edge with bias tape"
     }
 
   }
