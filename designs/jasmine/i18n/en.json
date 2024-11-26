@@ -84,6 +84,15 @@
       "t": "Pocket type",
       "d": "Whether to generate a pocket, and what kind"
     },
+    "pocket_type.none": {
+      "t": "None",
+      "d": "Don't generate a pocket"
+    },
+    "pocket_type.kangaroo": {
+      "t": "Kangaroo",
+      "d": "Generate a hoodie-style kangaroo pocket on the back"
+    },
+
     "pocket_depth": {
       "t": "Pocket depth",
       "d": "Depth of the pocket, as a percentage of the back length"
@@ -95,6 +104,7 @@
     "pocket_vert_offset": {
       "t": "Pocket vertical offset",
       "d": "How far down the back to place the pocket"
+    },
 
     "biasTapeLength": {
       "t": "Bias tape: {{{ l }}}",
