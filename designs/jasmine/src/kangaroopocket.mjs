@@ -12,8 +12,7 @@ function pocketpath({ options, Point, Path, points, paths, Snippet, snippets, sa
   points.pocket_top_center = new Point(0, pocket_depth)
 
   let pocket = new Path()
-    .move(points.pocket_bottom_center)
-    .line(points.pocket_top_center)
+    .move(points.pocket_top_center)
     .line(points.pocket_top_outer_edge)
     .line(points.pocket_outer_point)
     .line(points.pocket_bottom_outer_edge)
@@ -60,6 +59,19 @@ function draftkangaroopocket({
       paths.sa = paths.kangaroopocketseam.offset(sa).addClass('fabric sa')
     }
   }
+
+  macro('hd', {
+    id: 'pocket_width',
+    from: points.pocket_bottom_center,
+    to: points.pocket_outer_point,
+    y: points.pocket_outer_point.y,
+  })
+  macro('vd', {
+    id: 'pocket_height',
+    from: points.pocket_bottom_center,
+    to: points.pocket_top_center,
+    x: points.pocket_bottom_outer_edge.x,
+  })
 
   return part
 }

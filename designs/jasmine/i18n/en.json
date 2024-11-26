@@ -48,6 +48,14 @@
       "t": "Neckband width",
       "d": "Width of the neckband, or how far the jacket should come down the chest from the front of the collar"
     },
+    "neck_round_edges": {
+      "t": "Neck round edges",
+      "d": "Round the edges of the neck closure"
+    },
+    "belly_round_edges": {
+      "t": "Belly round edges",
+      "d": "Round the edges of the belly closure"
+    },
     "armholecurve": {
       "t": "Armhole curve",
       "d": "How wide to carve the armhole"
@@ -59,6 +67,22 @@
     "closure_style": {
       "t": "Closure style",
       "d": "Type of closure"
+    },
+    "closure_style.none": {
+      "t": "None",
+      "d": "Only mark overlap lines for closures"
+    },
+    "closure_style.buttons": {
+      "t": "Buttons",
+      "d": "Mark buttons and buttonholes for closures"
+    },
+    "closure_style.snaps": {
+      "t": "Snaps",
+      "d": "Mark snaps for closures"
+    },
+    "closure_style.velcro": {
+      "t": "Velcro",
+      "d": "Mark velcro rectangles for closures"
     },
     "neck_button_count": {
       "t": "Neck button count",

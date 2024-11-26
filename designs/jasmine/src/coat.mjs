@@ -515,8 +515,6 @@ function draftcoat({
   })
 
   if (options.pocket_type == 'kangaroo') {
-    paths.seam.addText('kangaroo')
-
     const pocket_width = chesthorizontal * options.pocket_width
     const pocket_depth = vertlength * options.pocket_depth
 
