@@ -139,14 +139,20 @@ function draftcoat({
       from: points.neckclosurebottom,
       to: points.neckbandtop_overlap_inner,
       via: points.neckclosuretop,
-      radius: neckcircum * options.neckoverlap * options.neck_round_edges,
+      radius: Math.min(
+        neckcircum * options.neckoverlap * options.neck_round_edges,
+        neckbandwidth / 2
+      ),
     }),
     neckclosurebottom: macro('round', {
       id: 'neckbottomcorner',
       from: points.neckbandbottom_overlap_inner,
       to: points.neckclosuretop,
       via: points.neckclosurebottom,
-      radius: neckcircum * options.neckoverlap * options.neck_round_edges,
+      radius: Math.min(
+        neckcircum * options.neckoverlap * options.neck_round_edges,
+        neckbandwidth / 2
+      ),
     }),
   }
   //Create points from them with easy names
@@ -238,7 +244,7 @@ function draftcoat({
 
     const velcro_neck_corner_offset = Math.min(
       (options.neck_velcro_shrink * (neck_velcro_x + neck_velcro_y)) / 2,
-      neck_velcro_y * 0.6
+      neck_velcro_y * 0.7
     )
 
     const velcro_width_neck = neck_velcro_y - velcro_neck_corner_offset
@@ -284,8 +290,8 @@ function draftcoat({
 
     const velcro_belly_corner_offset = Math.min(
       (options.belly_velcro_shrink * (belly_velcro_x + belly_velcro_y)) / 2,
-      belly_velcro_x * 0.25,
-      belly_velcro_y * 0.15
+      belly_velcro_x * 0.7,
+      belly_velcro_y * 0.7
     )
 
     const velcro_width_belly = belly_overlap_width - velcro_belly_corner_offset
@@ -600,8 +606,8 @@ export const coat = {
     armholecurve: { pct: 47.5, min: 10, max: 150, menu: 'advanced' },
     neck_circle_percentage: { pct: 50, min: 20, max: 90, menu: 'advanced' },
 
-    neck_round_edges: { pct: 60, min: 0, max: 200, menu: 'advanced' },
-    belly_round_edges: { pct: 100, min: 0, max: 200, menu: 'advanced' },
+    neck_round_edges: { pct: 60, min: 0, max: 200, menu: 'style.closures' },
+    belly_round_edges: { pct: 65, min: 0, max: 200, menu: 'style.closures' },
 
     closure_style: {
       dflt: 'velcro',
