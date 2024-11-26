@@ -1,23 +1,23 @@
 function pocketpath({ options, Point, Path, points, paths, Snippet, snippets, sa, macro, part }) {
-  const x_scale = options.chest_circum
-  const y_scale = options.chest_circum * options.backlength
+  const chesthorizontal = (options.chest_circum * 584) / 2
+  const vertlength = 380 * options.chest_circum * options.backlength
 
-  let width = (584 / 4) * x_scale
-  let height = y_scale * 100
+  const pocket_width = chesthorizontal * options.pocket_width
+  const pocket_depth = vertlength * options.pocket_depth
 
-  points.bottom_center = new Point(0, 0)
-  points.bottom_outer_edge = new Point(0.8 * width, 0)
-  points.pocket_outer_point = new Point(width, height * 0.7)
-  points.top_outer_edge = new Point(0.9 * width, height)
-  points.top_center = new Point(0, height)
+  points.pocket_bottom_center = new Point(0, 0)
+  points.pocket_bottom_outer_edge = new Point(0.8 * pocket_width, 0)
+  points.pocket_outer_point = new Point(pocket_width, pocket_depth * 0.7)
+  points.pocket_top_outer_edge = new Point(0.9 * pocket_width, pocket_depth)
+  points.pocket_top_center = new Point(0, pocket_depth)
 
   let pocket = new Path()
-    .move(points.bottom_center)
-    .line(points.top_center)
-    .line(points.top_outer_edge)
+    .move(points.pocket_bottom_center)
+    .line(points.pocket_top_center)
+    .line(points.pocket_top_outer_edge)
     .line(points.pocket_outer_point)
-    .line(points.bottom_outer_edge)
-    .line(points.bottom_center)
+    .line(points.pocket_bottom_outer_edge)
+    .line(points.pocket_bottom_center)
 
     .close()
     .attr('class', 'fabric')
@@ -52,8 +52,8 @@ function drafthoodiepocket({
     })
 
     macro('cutonfold', {
-      from: points.bottom_center,
-      to: points.top_center,
+      from: points.pocket_bottom_center,
+      to: points.pocket_top_center,
       grainline: true,
     })
     if (sa) {
@@ -75,6 +75,9 @@ export const hoodiepocket = {
       list: ['none', 'hoodie'],
       menu: 'style',
     },
+
+    pocket_width: {},
+    pocket_depth: {},
   },
   draft: drafthoodiepocket,
 }

@@ -1,5 +1,3 @@
-import { hoodiepocket } from './hoodiepocket.mjs'
-
 const nyx_vert_length = 380
 const nyx_chest_circum = 584
 const nyx_neck_circum = 368
@@ -399,7 +397,33 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
   })
 
   if (options.pocket_type == 'hoodie') {
-    //paths.hoodiepocketplacement = pocketpath()
+    paths.seam.addText('Hoodie')
+
+    const pocket_width = chesthorizontal * options.pocket_width
+    const pocket_depth = vertlength * options.pocket_depth
+
+    const pocket_vert_offset = Math.min(
+      vertlength * options.pocket_vert_offset,
+      back_adjusted_length - pocket_depth
+    )
+
+    points.pocket_bottom_center = new Point(0, 0)
+    points.pocket_bottom_outer_edge = new Point(0.8 * pocket_width, 0)
+    points.pocket_outer_point = new Point(pocket_width, pocket_depth * 0.7)
+    points.pocket_top_outer_edge = new Point(0.9 * pocket_width, pocket_depth)
+    points.pocket_top_center = new Point(0, pocket_depth)
+
+    paths.pocket = new Path()
+      .move(points.pocket_bottom_center)
+      .line(points.pocket_top_center)
+      .line(points.pocket_top_outer_edge)
+      .line(points.pocket_outer_point)
+      .line(points.pocket_bottom_outer_edge)
+      .line(points.pocket_bottom_center)
+
+      .close()
+      .translate(0, pocket_vert_offset)
+      .attr('class', 'sa')
   }
 
   return part
@@ -407,7 +431,6 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
 
 export const coat = {
   name: 'coat',
-  after: hoodiepocket,
   options: {
     chest_circum: {
       pct: 100,
@@ -511,8 +534,12 @@ export const coat = {
     pocket_type: {
       dflt: 'none',
       list: ['none', 'hoodie'],
-      menu: 'style',
+      menu: 'style.pocket',
     },
+
+    pocket_vert_offset: { pct: 50, min: 0, max: 100, menu: 'style.pocket' },
+    pocket_width: { pct: 40, min: 10, max: 100, menu: 'style.pocket' },
+    pocket_depth: { pct: 25, min: 10, max: 50, menu: 'style.pocket' },
   },
   draft: draftcoat,
 }
