@@ -77,12 +77,18 @@
       "t": "Bias tape: {{{ l }}}",
       "d": "To finish the edge, you will need {{{ l }}} of [bias tape](/docs/sewing/bias-tape)"
     },
+
+    "measurementsWarning": {
+      "t": "Measurements Warning",
+      "d": "Don't change any of the other fit settings before setting the chest circumference!"
+    },
     
     "s": {
       "biasTapeLength.t": "Bias tape: {{{ l }}}",
       "biasTapeLength.d": "To finish the edge, you will need {{{ l }}} of [bias tape](/docs/sewing/bias-tape)",
       "fabricNeeded": "You need a {{{ w }}} by {{{ h }}} piece of [suitable fabric](/docs/designs/jasmine/fabric) to make this bib",
-      "finishWithBiasTape": "Finish raw edge with bias tape"
+      "finishWithBiasTape": "Finish raw edge with bias tape",
+      "measurementsWarning": "Don't change any of the other fit settings before setting the chest circumference!"
     }
 
   }
