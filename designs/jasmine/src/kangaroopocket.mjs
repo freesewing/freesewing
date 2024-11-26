@@ -25,7 +25,7 @@ function pocketpath({ options, Point, Path, points, paths, Snippet, snippets, sa
   return pocket
 }
 
-function drafthoodiepocket({
+function draftkangaroopocket({
   options,
   Point,
   Path,
@@ -37,8 +37,8 @@ function drafthoodiepocket({
   macro,
   part,
 }) {
-  if (options.pocket_type == 'hoodie') {
-    paths.hoodiepocketseam = pocketpath({
+  if (options.pocket_type == 'kangaroo') {
+    paths.kangaroopocketseam = pocketpath({
       options,
       Point,
       Path,
@@ -57,27 +57,27 @@ function drafthoodiepocket({
       grainline: true,
     })
     if (sa) {
-      paths.sa = paths.hoodiepocketseam.offset(sa).addClass('fabric sa')
+      paths.sa = paths.kangaroopocketseam.offset(sa).addClass('fabric sa')
     }
   }
 
   return part
 }
 
-export const hoodiepocket = {
-  name: 'hoodiepocket',
+export const kangaroopocket = {
+  name: 'kangaroopocket',
   options: {
     chest_circum: {},
     backlength: {},
 
     pocket_type: {
       dflt: 'none',
-      list: ['none', 'hoodie'],
+      list: ['none', 'kangaroo'],
       menu: 'style',
     },
 
     pocket_width: {},
     pocket_depth: {},
   },
-  draft: drafthoodiepocket,
+  draft: draftkangaroopocket,
 }

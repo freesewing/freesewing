@@ -396,8 +396,8 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     grainline: true,
   })
 
-  if (options.pocket_type == 'hoodie') {
-    paths.seam.addText('Hoodie')
+  if (options.pocket_type == 'kangaroo') {
+    paths.seam.addText('kangaroo')
 
     const pocket_width = chesthorizontal * options.pocket_width
     const pocket_depth = vertlength * options.pocket_depth
@@ -533,7 +533,7 @@ export const coat = {
 
     pocket_type: {
       dflt: 'none',
-      list: ['none', 'hoodie'],
+      list: ['none', 'kangaroo'],
       menu: 'style.pocket',
     },
 
