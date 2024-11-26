@@ -187,6 +187,18 @@ const config = {
     prism: {
       theme: prismThemes.dracula,
       darkTheme: prismThemes.dracula,
+      magicComments: [
+        {
+          className: 'fs-code-block-highlight-line',
+          line: 'highlight-next-line',
+          block: { start: 'highlight-start', end: 'highlight-end' },
+        },
+        {
+          className: 'fs-code-block-strikeout-line',
+          line: 'strikeout-next-line',
+          block: { start: 'strikeout-start', end: 'strikeout-end' },
+        },
+      ],
     },
   },
 }
