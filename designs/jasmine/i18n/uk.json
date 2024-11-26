@@ -95,6 +95,17 @@
     "pocket_vert_offset": {
       "t": "Pocket vertical offset",
       "d": "How far down the back to place the pocket"
+
+    "biasTapeLength": {
+      "t": "Bias tape: {{{ l }}}",
+      "d": "To finish the edge, you will need {{{ l }}} of [bias tape](/docs/sewing/bias-tape)"
+    },
+
+    "s": {
+      "biasTapeLength.t": "Bias tape: {{{ l }}}",
+      "biasTapeLength.d": "To finish the edge, you will need {{{ l }}} of [bias tape](/docs/sewing/bias-tape)",
+      "fabricNeeded": "You need a {{{ w }}} by {{{ h }}} piece of [suitable fabric](/docs/designs/jasmine/fabric) to make this bib",
+      "finishWithBiasTape": "Finish raw edge with bias tape"
     }
 
   }
