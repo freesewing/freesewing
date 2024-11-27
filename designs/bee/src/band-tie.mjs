@@ -116,7 +116,7 @@ export const bandTie = {
       at: points.title,
       nr: 3,
       title: options.crossBackTies ? 'band' : 'bandTie',
-      scale: 0.7,
+      scale: 0.5,
     })
     //fold-line
     if (options.crossBackTies || !options.duoBandTieColours) {

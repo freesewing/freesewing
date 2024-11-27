@@ -43,10 +43,12 @@ export const neckTie = {
     const neckTieLength = options.crossBackTies
       ? Math.sqrt(
           Math.pow(measurements.hpsToWaistFront, 2) +
-            Math.pow(measurements.underbust * (1 - options.neckTieLength), 2)
-        ) +
-        measurements.underbust * (1 - options.bandLength) +
-        measurements.underbust * (1 - options.bandLength * options.neckTieLength)
+            Math.pow(
+              (measurements.underbust * options.bandLength - measurements.underbust * 0.5) * 0.5,
+              2
+            )
+        ) *
+        (1 + options.neckTieLength)
       : measurements.hpsToBust * (1 + options.neckTieLength)
     const neckTieWidth = options.duoNeckTieColours
       ? absoluteOptions.neckTieWidth
