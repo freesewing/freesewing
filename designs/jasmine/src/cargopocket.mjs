@@ -1,0 +1,108 @@
+function draftcargopocket({
+  options,
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  sa,
+  macro,
+  part,
+}) {
+  if (options.pocket_type == 'cargo') {
+    const chesthorizontal = (options.chest_circum * 584) / 2
+    const vertlength = 380 * options.chest_circum * options.backlength
+
+    let pocket_width = chesthorizontal * options.pocket_width * 0.35
+    let pocket_depth = vertlength * options.pocket_depth
+
+    //Swap the orientation if the flap is on the other side
+    if (options.cargo_pocket_orientation == 'horizontal') {
+      pocket_width = vertlength * options.pocket_depth * 0.5
+      pocket_depth = chesthorizontal * options.pocket_width * 0.35 * 2
+    }
+
+    const folds_width = (pocket_width + pocket_depth) * options.cargo_pocket_fold
+
+    points.inner_top_center = new Point(0, 0)
+    points.inner_bottom_center = points.inner_top_center.shift(270, pocket_depth)
+
+    points.inner_top_edge_right = points.inner_top_center.shift(0, pocket_width)
+    points.inner_bottom_edge_right = points.inner_bottom_center.shift(0, pocket_width)
+
+    //Bottom edge offset
+    points.bottom_edge_center = points.inner_bottom_center.shift(270, folds_width)
+    points.bottom_edge_outer = points.inner_bottom_edge_right.shift(270, folds_width)
+
+    //Right edge offset
+    points.right_edge_top = points.inner_top_edge_right.shift(0, folds_width)
+    points.right_edge_bottom = points.inner_bottom_edge_right.shift(0, folds_width)
+
+    paths.cargopocketsquare = new Path()
+      .move(points.inner_top_center)
+      .line(points.inner_top_edge_right)
+      .line(points.inner_bottom_edge_right)
+      .line(points.inner_bottom_center)
+      .attr('class', 'sa')
+
+    paths.cargopocketjagged = new Path()
+      .move(points.bottom_edge_center)
+      .line(points.bottom_edge_outer)
+      .line(points.inner_bottom_edge_right)
+      .line(points.right_edge_bottom)
+      .line(points.right_edge_top)
+      .hide()
+
+    paths.cargopockettop = new Path()
+      .move(points.right_edge_top)
+      .line(points.inner_top_center)
+      .hide()
+
+    paths.seam = paths.cargopockettop.join(paths.cargopocketjagged).attr('class', 'fabric')
+
+    if (sa) {
+      paths.sa = paths.cargopocketjagged
+        .offset(sa)
+        .join(paths.cargopockettop.offset(sa * 2))
+        .close()
+        .attr('class', 'fabric sa')
+    }
+
+    macro('cutonfold', {
+      to: points.bottom_edge_center,
+      from: points.inner_top_center,
+      grainline: true,
+    })
+
+    snippets.pockettopnotch = new Snippet('notch', points.inner_top_center)
+  }
+
+  return part
+}
+
+export const cargopocket = {
+  name: 'cargopocket',
+  options: {
+    chest_circum: {},
+    backlength: {},
+
+    pocket_type: {
+      dflt: 'none',
+      list: ['none', 'kangaroo', 'cargo'],
+      menu: 'style',
+    },
+
+    pocket_width: {},
+    pocket_depth: {},
+
+    cargo_pocket_fold: { pct: 15, min: 0, max: 50, menu: 'style.pocket.cargo' },
+
+    cargo_pocket_orientation: {
+      dflt: 'vertical',
+      list: ['vertical', 'horizontal'],
+      menu: 'style.pocket.cargo',
+    },
+  },
+  draft: draftcargopocket,
+}

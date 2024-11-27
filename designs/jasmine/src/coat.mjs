@@ -542,6 +542,45 @@ function draftcoat({
       .attr('class', 'sa')
   }
 
+  if (options.pocket_type == 'cargo') {
+    const pocket_width = chesthorizontal * options.pocket_width * 0.35
+    const pocket_depth = vertlength * options.pocket_depth
+
+    const pocket_vert_offset = Math.min(
+      vertlength * options.pocket_vert_offset,
+      back_adjusted_length - pocket_depth
+    )
+
+    const pocket_horiz_offset = chesthorizontal * options.pocket_horiz_offset
+
+    points.inner_top_center = new Point(pocket_horiz_offset, pocket_vert_offset)
+    points.inner_bottom_center = points.inner_top_center.shift(270, pocket_depth)
+
+    points.inner_top_edge_right = points.inner_top_center.shift(0, 2 * pocket_width)
+    points.inner_bottom_edge_right = points.inner_bottom_center.shift(0, 2 * pocket_width)
+
+    paths.pocketline = new Path()
+      .move(points.inner_top_center)
+      .line(points.inner_top_edge_right)
+      .line(points.inner_bottom_edge_right)
+      .line(points.inner_bottom_center)
+      .close()
+      .attr('class', 'fabric sa')
+
+    paths.pocket_top_edge = new Path().move(points.inner_top_center)
+    if (options.cargo_pocket_orientation == 'vertical') {
+      paths.pocket_top_edge.line(points.inner_top_edge_right)
+    } else {
+      paths.pocket_top_edge.line(points.inner_bottom_center)
+    }
+
+    paths.pocket_top_edge.hide()
+
+    points.pocket_top_center = paths.pocket_top_edge.shiftFractionAlong(0.5, 15)
+
+    snippets.pockettopnotch = new Snippet('notch', points.pocket_top_center)
+  }
+
   return part
 }
 
@@ -652,13 +691,20 @@ export const coat = {
 
     pocket_type: {
       dflt: 'none',
-      list: ['none', 'kangaroo'],
+      list: ['none', 'kangaroo', 'cargo'],
       menu: 'style.pocket',
     },
 
     pocket_vert_offset: { pct: 50, min: 0, max: 100, menu: 'style.pocket' },
     pocket_width: { pct: 40, min: 10, max: 100, menu: 'style.pocket' },
     pocket_depth: { pct: 25, min: 10, max: 50, menu: 'style.pocket' },
+
+    pocket_horiz_offset: { pct: 15, min: 5, max: 50, menu: 'style.pocket.cargo' },
+    cargo_pocket_orientation: {
+      dflt: 'vertical',
+      list: ['vertical', 'horizontal'],
+      menu: 'style.pocket.cargo',
+    },
   },
   draft: draftcoat,
 }

@@ -116,6 +116,10 @@
       "t": "Kangaroo",
       "d": "Generate a hoodie-style kangaroo pocket on the back"
     },
+    "pocket_type.cargo": {
+      "t": "Cargo",
+      "d": "Generate two cargo pockets on the back"
+    },
 
     "pocket_depth": {
       "t": "Pocket depth",
@@ -128,6 +132,27 @@
     "pocket_vert_offset": {
       "t": "Pocket vertical offset",
       "d": "How far down the back to place the pocket"
+    },
+    "pocket_horiz_offset": {
+      "t": "Pocket horizontal offset",
+      "d": "How far away from the spine to place the pocket"
+    },
+
+    "cargo_pocket_fold": {
+      "t": "Cargo pocket fold width",
+      "d": "How far to pleat the edges of the cargo pocket"
+    },
+    "cargo_pocket_orientation": {
+      "t": "Cargo pocket orientation",
+      "d": "Which side to place the cargo pocket closure on"
+    },
+    "cargo_pocket_orientation.vertical": {
+      "t": "Vertical",
+      "d": "The pocket opens towards the front of the jacket"
+    },
+    "cargo_pocket_orientation.horizontal": {
+      "t": "Horizontal",
+      "d": "The pocket opens towards the spine of the jacket"
     },
 
     "biasTapeLength": {
