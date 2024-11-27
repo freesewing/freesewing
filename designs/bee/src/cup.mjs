@@ -21,6 +21,9 @@ export const cup = {
     waistDartLength: 1, //Altered from Bella
     backHemSlope: 2.5, //Altered from Bella
     backNeckCutout: 0.06, //Altered from Bella
+    bustDartAngle: 0, //Altered from Bella
+    waistDartCurve: 1, //Altered from Bella
+    bustDartMinimumFabric: 0.05, //Altered from Bella
     //Fit
     topDepth: { pct: 54, min: 50, max: 80, menu: 'fit' },
     bottomCupDepth: { pct: 8, min: 0, max: 20, menu: 'fit' },
