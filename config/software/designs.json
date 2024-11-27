@@ -1059,7 +1059,8 @@
     "lab": true,
     "org": true,
     "tags": [
-      "onePiece"
+      "onePiece",
+      "pets"
     ],
     "techniques": [
       "biasTape",
