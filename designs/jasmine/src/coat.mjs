@@ -568,17 +568,44 @@ function draftcoat({
       .attr('class', 'fabric sa')
 
     paths.pocket_top_edge = new Path().move(points.inner_top_center)
+
     if (options.cargo_pocket_orientation == 'vertical') {
       paths.pocket_top_edge.line(points.inner_top_edge_right)
     } else {
       paths.pocket_top_edge.line(points.inner_bottom_center)
+      paths.pocket_top_edge = paths.pocket_top_edge.reverse()
     }
 
-    paths.pocket_top_edge.hide()
-
-    points.pocket_top_center = paths.pocket_top_edge.shiftFractionAlong(0.5, 15)
+    points.pocket_top_center = paths.pocket_top_edge.shiftFractionAlong(0.5, 5)
 
     snippets.pockettopnotch = new Snippet('notch', points.pocket_top_center)
+
+    if (options.cargo_pocket_orientation == 'vertical') {
+      points.pocket_flap_bottom = points.pocket_top_center.shift(270, pocket_depth / 3)
+      points.pocket_flap_edge_0 = paths.pocket_top_edge
+        .shiftFractionAlong(0)
+        .shift(270, pocket_depth / 6)
+      points.pocket_flap_edge_1 = paths.pocket_top_edge
+        .shiftFractionAlong(1)
+        .shift(270, pocket_depth / 6)
+    } else {
+      points.pocket_flap_bottom = points.pocket_top_center.shift(0, (pocket_width * 2) / 3)
+      points.pocket_flap_edge_0 = paths.pocket_top_edge
+        .shiftFractionAlong(0)
+        .shift(0, pocket_width / 3)
+      points.pocket_flap_edge_1 = paths.pocket_top_edge
+        .shiftFractionAlong(1)
+        .shift(0, pocket_width / 3)
+    }
+
+    paths.pocket_flap_outline = new Path()
+      .move(paths.pocket_top_edge.shiftFractionAlong(0))
+      .line(points.pocket_flap_edge_0)
+      .line(points.pocket_flap_bottom)
+      .line(points.pocket_flap_edge_1)
+      .line(paths.pocket_top_edge.shiftFractionAlong(1))
+
+      .attr('class', 'sa')
   }
 
   return part
