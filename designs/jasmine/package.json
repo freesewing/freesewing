@@ -1,8 +1,8 @@
 {
   "name": "@freesewing/jasmine",
   "version": "3.3.0-rc.1",
-  "description": "A FreeSewing pattern that needs a description",
-  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "description": "A FreeSewing pattern for a dog jacket",
+  "author": "candlecoveblooperreel",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
   "license": "MIT",

@@ -18,7 +18,7 @@
     },
     "neck_to_chest": {
       "t": "Collar to chest",
-      "d": "Measure from the back of the collar to the top of the chest measurement"
+      "d": "Measure from the back of the collar to the back of the chest measurement"
     },
     "shouldertoshoulder": {
       "t": "Shoulder to shoulder",
@@ -71,6 +71,57 @@
     "button_scale": {
       "t": "Button scale",
       "d": "Scale the buttons"
+    },
+    "belly_velcro_shrink": {
+      "t": "Belly velcro shrink",
+      "d": "How much margin the belly velcro should leave on the edges"
+    },
+    "neck_velcro_shrink": {
+      "t": "Neck velcro shrink",
+      "d": "How much margin the neck velcro should leave on the edges"
+    },
+    "pocket_type": {
+      "t": "Pocket type",
+      "d": "Whether to generate a pocket, and what kind"
+    },
+    "pocket_type.none": {
+      "t": "None",
+      "d": "Don't generate a pocket"
+    },
+    "pocket_type.kangaroo": {
+      "t": "Kangaroo",
+      "d": "Generate a hoodie-style kangaroo pocket on the back"
+    },
+
+    "pocket_depth": {
+      "t": "Pocket depth",
+      "d": "Depth of the pocket, as a percentage of the back length"
+    },
+    "pocket_width": {
+      "t": "Pocket width",
+      "d": "Width of the pocket, as a percentage of the chest circumference"
+    },
+    "pocket_vert_offset": {
+      "t": "Pocket vertical offset",
+      "d": "How far down the back to place the pocket"
+    },
+
+    "biasTapeLength": {
+      "t": "Bias tape: {{{ l }}}",
+      "d": "To finish the edge, you will need {{{ l }}} of [bias tape](/docs/sewing/bias-tape)"
+    },
+
+    "measurementsWarning": {
+      "t": "Measurements Warning",
+      "d": "Don't change any of the other fit settings before setting the chest circumference!"
+    },
+    
+    "s": {
+      "biasTapeLength.t": "Bias tape: {{{ l }}}",
+      "biasTapeLength.d": "To finish the edge, you will need {{{ l }}} of [bias tape](/docs/sewing/bias-tape)",
+      "fabricNeeded": "You need a {{{ w }}} by {{{ h }}} piece of [suitable fabric](/docs/designs/jasmine/fabric) to make this bib",
+      "finishWithBiasTape": "Finish raw edge with bias tape",
+      "measurementsWarning": "Don't change any of the other fit settings before setting the chest circumference!"
     }
 
   }

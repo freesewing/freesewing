@@ -4,13 +4,42 @@ const nyx_neck_circum = 368
 const nyx_shoulder_to_shoulder = 304
 const nyx_neck_to_chest = 76
 
-function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa, macro, part }) {
+function draftcoat({
+  options,
+  Point,
+  Path,
+  points,
+  paths,
+  Snippet,
+  snippets,
+  sa,
+  macro,
+  part,
+  store,
+  units,
+  utils,
+}) {
   const globalscale = options.chest_circum
 
   //15 inches * backlength percentage
   const vertlength = nyx_vert_length * options.backlength * globalscale
 
   const back_adjusted_length = vertlength * options.back_length_percentage
+
+  //If other fit settings are adjusted before the chest circumference, put up a warning
+  if (options.chest_circum == 1) {
+    if (
+      options.backlength *
+        options.neck_circum *
+        options.neck_to_chest *
+        options.shouldertoshoulder !=
+      1
+    ) {
+      store.flag.note({
+        msg: 'jasmine:measurementsWarning',
+      })
+    }
+  }
 
   //23 inches /2 (for mirror) * chest_circum percentage
   const chesthorizontal = (nyx_chest_circum / 2) * options.chest_circum
@@ -34,17 +63,43 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
 
   points.backedgeCp = points.backedge.shift(0, chesthorizontal / 3)
 
+  const bellyclosurelength = (vertlength - armholevert) * options.bellyclosurelength
+
   points.closurefront = new Point(chesthorizontal, armholevert)
-  points.closureback = new Point(
-    chesthorizontal,
-    armholevert + (vertlength - armholevert) * options.bellyclosurelength
-  )
+  points.closureback = new Point(chesthorizontal, armholevert + bellyclosurelength)
 
   points.closurebackCp = points.closureback.shift(180, chesthorizontal / 3)
 
   const belly_overlap_width = chesthorizontal * 2 * options.bellyoverlap
   points.bellyoverlapfront = points.closurefront.shift(0, belly_overlap_width)
   points.bellyoverlapback = points.closureback.shift(0, belly_overlap_width)
+
+  points.bellyclosurefront_inner = points.closurefront.shift(0, -belly_overlap_width)
+  points.bellyclosureback_inner = points.closureback.shift(0, -belly_overlap_width)
+
+  //Create control points for belly round edges
+  const belly_round_ids = {
+    bellyoverlapfront: macro('round', {
+      id: 'bellyoverlapfront',
+      from: points.bellyoverlapback,
+      to: points.bellyclosurefront_inner,
+      via: points.bellyoverlapfront,
+      radius: Math.min(belly_overlap_width * options.belly_round_edges, bellyclosurelength / 2),
+    }),
+    bellyoverlapback: macro('round', {
+      id: 'bellyoverlapback',
+      from: points.bellyclosureback_inner,
+      to: points.bellyoverlapfront,
+      via: points.bellyoverlapback,
+      radius: Math.min(belly_overlap_width * options.belly_round_edges, bellyclosurelength / 2),
+    }),
+  }
+  //Create points from them with easy names
+  for (const side in belly_round_ids) {
+    for (const id of ['start', 'cp1', 'cp2', 'end']) {
+      points[`${side}${utils.capitalize(id)}`] = points[belly_round_ids[side].points[id]].copy()
+    }
+  }
 
   points.armholetop = new Point(armholehoriz, armholevert * 0.6)
 
@@ -63,10 +118,49 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     neckcircum * options.neckoverlap
   )
 
+  points.neckbandtop_overlap_inner = points.neckbandtop.shift(
+    neck_angle_offset + 90,
+    neckcircum * options.neckoverlap * -1
+  )
+  points.neckbandbottom_overlap_inner = points.neckbandbottom.shift(
+    neck_angle_offset + 90,
+    neckcircum * options.neckoverlap * -1
+  )
+
   points.neckbandbottomCp2 = points.neckbandbottom.shift(
     neck_angle_offset - 90,
     points.neckbandtop.dy(points.neckCenter)
   )
+
+  //Create control points for neck round edges
+  const neck_round_ids = {
+    neckclosuretop: macro('round', {
+      id: 'necktopcorner',
+      from: points.neckclosurebottom,
+      to: points.neckbandtop_overlap_inner,
+      via: points.neckclosuretop,
+      radius: Math.min(
+        neckcircum * options.neckoverlap * options.neck_round_edges,
+        neckbandwidth / 2
+      ),
+    }),
+    neckclosurebottom: macro('round', {
+      id: 'neckbottomcorner',
+      from: points.neckbandbottom_overlap_inner,
+      to: points.neckclosuretop,
+      via: points.neckclosurebottom,
+      radius: Math.min(
+        neckcircum * options.neckoverlap * options.neck_round_edges,
+        neckbandwidth / 2
+      ),
+    }),
+  }
+  //Create points from them with easy names
+  for (const side in neck_round_ids) {
+    for (const id of ['start', 'cp1', 'cp2', 'end']) {
+      points[`${side}${utils.capitalize(id)}`] = points[neck_round_ids[side].points[id]].copy()
+    }
+  }
 
   points.armholetopCp1 = points.armholetop.shift(
     90,
@@ -92,31 +186,47 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     )
   )
 
-  paths.seam = new Path()
-    .move(points.neckCenter)
-    .line(points.backCenter)
+  paths.outer_edge = new Path()
+    .move(points.backCenter)
 
     .line(points.backedge)
-    //.line(points.closureback)
     .curve(points.backedgeCp, points.closurebackCp, points.closureback)
 
-    .line(points.bellyoverlapback)
-    .line(points.bellyoverlapfront)
-    .line(points.closurefront)
+    //Round edges of belly closure
+    .line(points.bellyoverlapbackStart)
+    .curve(points.bellyoverlapbackCp1, points.bellyoverlapbackCp2, points.bellyoverlapbackEnd)
+
+    .line(points.bellyoverlapfrontStart)
+    .curve(points.bellyoverlapfrontCp1, points.bellyoverlapfrontCp2, points.bellyoverlapfrontEnd)
+
+    //Curve from the belly closure up to the armhole
     .curve(points.closurefrontCp, points.armholetopCp2, points.armholetop)
-    //.line(points.armholetop)
 
-    .curve(points.armholetopCp1, points.neckbandbottomCp2, points.neckbandbottom)
+    //Curve from the armhole up to the neck
+    .curve(points.armholetopCp1, points.neckbandbottomCp2, points.neckbandbottom_overlap_inner)
 
-    .line(points.neckclosurebottom)
-    .line(points.neckclosuretop)
+    //Round edges for the corners of the neck
+    .line(points.neckclosurebottomStart)
+    .curve(points.neckclosurebottomCp1, points.neckclosurebottomCp2, points.neckclosurebottomEnd)
 
-    .line(points.neckbandtop)
+    .line(points.neckclosuretopStart)
+    .curve(points.neckclosuretopCp1, points.neckclosuretopCp2, points.neckclosuretopEnd)
+
+    //Curve back to the center of the neck
+    .line(points.neckbandtop_overlap_inner)
     .curve(points.neckbandtopCp1, points.neckCenterCp2, points.neckCenter)
 
-    //.line(points.neckCenter)
-    .close()
-    .attr('class', 'fabric')
+    .hide()
+
+  paths.seam = paths.outer_edge.unhide().close().attr('class', 'fabric')
+
+  //Let the user know about the bias tape requirements
+  store.flag.info({
+    msg: 'jasmine:biasTapeLength',
+    replace: {
+      l: units(2 * paths.outer_edge.length()),
+    },
+  })
 
   //Overlap line markings
   paths.neckoverlapline = new Path()
@@ -134,7 +244,7 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
 
     const velcro_neck_corner_offset = Math.min(
       (options.neck_velcro_shrink * (neck_velcro_x + neck_velcro_y)) / 2,
-      neck_velcro_y * 0.6
+      neck_velcro_y * 0.7
     )
 
     const velcro_width_neck = neck_velcro_y - velcro_neck_corner_offset
@@ -180,8 +290,8 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
 
     const velcro_belly_corner_offset = Math.min(
       (options.belly_velcro_shrink * (belly_velcro_x + belly_velcro_y)) / 2,
-      belly_velcro_x * 0.25,
-      belly_velcro_y * 0.15
+      belly_velcro_x * 0.7,
+      belly_velcro_y * 0.7
     )
 
     const velcro_width_belly = belly_overlap_width - velcro_belly_corner_offset
@@ -278,7 +388,9 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
 
   paths.neckmeasure = new Path()
     .move(points.neckCenter)
-    .curve(points.neckCenterCp2, points.neckbandtopCp1, points.neckbandtop)
+    .curve(points.neckCenterCp2, points.neckbandtopCp1, points.neckbandtop_overlap_inner)
+    .line(points.neckbandtop)
+    .hide()
 
   points.logo = points.closurefront.shiftFractionTowards(points.backCenter, 0.5)
   snippets.logo = new Snippet('logo', points.logo)
@@ -309,7 +421,7 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
   macro('hd', {
     id: 'hWidth',
     from: points.neckCenter,
-    to: points.closurefront,
+    to: points.bellyoverlapfront,
     y: points.closureback.shiftFractionTowards(points.closurefront, 0.5).y,
   })
   macro('vd', {
@@ -347,6 +459,12 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     from: points.neckCenter,
     to: points.neckbandtop,
     y: points.neckbandtop.y,
+  })
+  macro('vd', {
+    id: 'neckRadius_v',
+    from: points.neckCenter,
+    to: points.neckCircleCenter,
+    y: points.neckCircleCenter.y,
   })
   macro('ld', {
     id: 'neckbandwidth',
@@ -396,6 +514,34 @@ function draftcoat({ options, Point, Path, points, paths, Snippet, snippets, sa,
     grainline: true,
   })
 
+  if (options.pocket_type == 'kangaroo') {
+    const pocket_width = chesthorizontal * options.pocket_width
+    const pocket_depth = vertlength * options.pocket_depth
+
+    const pocket_vert_offset = Math.min(
+      vertlength * options.pocket_vert_offset,
+      back_adjusted_length - pocket_depth
+    )
+
+    points.pocket_bottom_center = new Point(0, 0)
+    points.pocket_bottom_outer_edge = new Point(0.8 * pocket_width, 0)
+    points.pocket_outer_point = new Point(pocket_width, pocket_depth * 0.7)
+    points.pocket_top_outer_edge = new Point(0.9 * pocket_width, pocket_depth)
+    points.pocket_top_center = new Point(0, pocket_depth)
+
+    paths.pocket = new Path()
+      .move(points.pocket_bottom_center)
+      .line(points.pocket_top_center)
+      .line(points.pocket_top_outer_edge)
+      .line(points.pocket_outer_point)
+      .line(points.pocket_bottom_outer_edge)
+      .line(points.pocket_bottom_center)
+
+      .close()
+      .translate(0, pocket_vert_offset)
+      .attr('class', 'sa')
+  }
+
   return part
 }
 
@@ -412,8 +558,8 @@ export const coat = {
 
     backlength: {
       pct: 100,
-      min: 40,
-      max: 250,
+      min: 60,
+      max: 170,
       menu: 'fit',
       toAbs: function (value, settings) {
         return (
@@ -425,8 +571,8 @@ export const coat = {
     },
     neck_circum: {
       pct: 100,
-      min: 50,
-      max: 250,
+      min: 60,
+      max: 170,
       menu: 'fit',
       toAbs: (pct, settings) =>
         nyx_neck_circum *
@@ -468,7 +614,7 @@ export const coat = {
         (settings.options?.chest_circum ? settings.options.chest_circum : 1),
     },
 
-    neckoverlap: { pct: 5, min: 0, max: 30, menu: 'style.closures' },
+    neckoverlap: { pct: 5, min: 0, max: 15, menu: 'style.closures' },
 
     bellyoverlap: { pct: 5, min: 0, max: 30, menu: 'style.closures' },
 
@@ -488,6 +634,9 @@ export const coat = {
     armholecurve: { pct: 47.5, min: 10, max: 150, menu: 'advanced' },
     neck_circle_percentage: { pct: 50, min: 20, max: 90, menu: 'advanced' },
 
+    neck_round_edges: { pct: 60, min: 0, max: 200, menu: 'style.closures' },
+    belly_round_edges: { pct: 65, min: 0, max: 200, menu: 'style.closures' },
+
     closure_style: {
       dflt: 'velcro',
       list: ['none', 'buttons', 'snaps', 'velcro'],
@@ -500,6 +649,16 @@ export const coat = {
 
     belly_velcro_shrink: { pct: 10, min: 0, max: 50, menu: 'style.closures.velcro' },
     neck_velcro_shrink: { pct: 10, min: 0, max: 50, menu: 'style.closures.velcro' },
+
+    pocket_type: {
+      dflt: 'none',
+      list: ['none', 'kangaroo'],
+      menu: 'style.pocket',
+    },
+
+    pocket_vert_offset: { pct: 50, min: 0, max: 100, menu: 'style.pocket' },
+    pocket_width: { pct: 40, min: 10, max: 100, menu: 'style.pocket' },
+    pocket_depth: { pct: 25, min: 10, max: 50, menu: 'style.pocket' },
   },
   draft: draftcoat,
 }
