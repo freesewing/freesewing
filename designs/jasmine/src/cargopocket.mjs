@@ -66,6 +66,7 @@ function draftcargopocket({
         .offset(sa)
         .join(paths.cargopockettop.offset(sa * 2))
         .close()
+        .trim()
         .attr('class', 'fabric sa')
     }
 
@@ -76,6 +77,9 @@ function draftcargopocket({
     })
 
     snippets.pockettopnotch = new Snippet('notch', points.inner_top_center)
+
+    points.button_position = points.inner_top_center.shift(270, pocket_depth * 0.3 * 0.6)
+    snippets.pocketbutton = new Snippet('button', points.button_position)
   }
 
   return part

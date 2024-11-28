@@ -392,7 +392,7 @@ function draftcoat({
     .line(points.neckbandtop)
     .hide()
 
-  points.logo = points.closurefront.shiftFractionTowards(points.backCenter, 0.5)
+  points.logo = points.neckCenter.shiftFractionTowards(points.closureback, 0.5)
   snippets.logo = new Snippet('logo', points.logo)
 
   if (sa) {
