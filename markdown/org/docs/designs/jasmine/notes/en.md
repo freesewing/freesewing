@@ -2,4 +2,18 @@
 title: "Jasmine Dog Jacket: Designer Notes"
 ---
 
-I made jasmine because shifts are a very fundamental part of historical sewing but its hard to make or find a pattern that works for you. A lot of blogs have instructions for drafting, but drafting can be overwhelming. Freesewing allowed me to code a pattern that is sized to your body without you having to do all the work of drafting. The shift jasmine is based on is one I made following [Sharon Ann Burnstons instructions](http://sharonburnston.com/). Her work got me interested in shifts and the details and minutia of making one that does what you want it to do. I wanted to make jasmine to give people a great place to start their historical sewing journey, a pattern that is easy to use and lets you move on to the exciting things if you feel that way or play around in the world of squarecut garments like I have. -Zee
+This pattern works differently from most on freesewing. Because it's made to fit a dog, it doesn't
+make sense to use freesewing's human measurements sets, and because dogs tend to be squirmy and
+not fond of being measured, requiring a full set of fine-grained measurements in order to generate
+the pattern at all might be prohibitive.
+
+Instead, all the fit settings for this pattern cascade. If the only measurement you can get off your
+dog is their chest circumference, set only first -> Chest Circumference to match and leave all the
+others at defaults. This will give you a pattern sized to fit the designer's dog, but linearly
+scaled to match the chest of yours.
+
+Ideally, try to get your dog's chest cirumference, collar circumference, and back length, in that
+order of importance. To fine-tune the shape of the armhole, there are also options for the
+collar-to-chest and shoulder-to-shoulder measurements. Those are harder to measure on a dog
+with precision, but if you leave them at 100% each, the pattern's scaling for the back length
+and chest circumference alone should place the armhole properly for most dogs.
