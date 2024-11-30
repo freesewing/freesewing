@@ -87,6 +87,32 @@ function draftcargopocket({
       scale: titlescale,
     })
 
+    macro('vd', {
+      id: 'vHeight',
+      from: points.inner_top_center,
+      to: points.bottom_edge_center,
+      x: points.inner_top_center.x - sa - 15,
+    })
+    macro('hd', {
+      id: 'hWidth',
+      from: points.inner_top_center,
+      to: points.right_edge_top,
+      y: points.inner_top_center.y - sa - 15,
+    })
+
+    macro('hd', {
+      id: 'pleatWidth',
+      from: points.inner_top_edge_right,
+      to: points.right_edge_top,
+      y: points.inner_top_center.y + 15,
+    })
+    macro('vd', {
+      id: 'pleatWidthV',
+      from: points.inner_bottom_center,
+      to: points.bottom_edge_center,
+      x: points.inner_top_center.x + 15,
+    })
+
     snippets.pockettopnotch = new Snippet('notch', points.inner_top_center)
 
     points.button_position = points.inner_top_center.shift(270, pocket_depth * 0.3 * 0.6)

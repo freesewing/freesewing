@@ -62,6 +62,20 @@ function draftcargopockettop({
       title: 'cargopockettop',
       scale: titlescale,
     })
+
+    macro('hd', {
+      id: 'hWidth',
+      from: points.top_edge_left,
+      to: points.top_edge_right,
+      y: points.top_edge_right.y - sa - 15,
+    })
+
+    macro('vd', {
+      id: 'vHeight',
+      from: points.top_center,
+      to: points.pocket_center_bottom,
+      x: points.top_center.x,
+    })
   }
 
   return part

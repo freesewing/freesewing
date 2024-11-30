@@ -582,10 +582,10 @@ function draftcoat({
     paths.pocket_top_edge = new Path().move(points.inner_top_center)
 
     if (options.cargo_pocket_orientation == 'vertical') {
-      paths.pocket_top_edge.line(points.inner_top_edge_right)
+      paths.pocket_top_edge.line(points.inner_top_edge_right).hide()
     } else {
       paths.pocket_top_edge.line(points.inner_bottom_center)
-      paths.pocket_top_edge = paths.pocket_top_edge.reverse()
+      paths.pocket_top_edge = paths.pocket_top_edge.reverse().hide()
     }
 
     points.pocket_top_center = paths.pocket_top_edge.shiftFractionAlong(0.5, 5)
@@ -618,6 +618,19 @@ function draftcoat({
       .line(paths.pocket_top_edge.shiftFractionAlong(1))
 
       .attr('class', 'sa')
+
+    macro('hd', {
+      id: 'pocketWidth',
+      from: points.inner_top_center,
+      to: points.inner_top_edge_right,
+      y: points.inner_top_center.y - 15,
+    })
+    macro('vd', {
+      id: 'pocketDepth',
+      from: points.inner_top_center,
+      to: points.inner_bottom_center,
+      x: points.inner_top_center.x - 15,
+    })
   }
 
   return part
