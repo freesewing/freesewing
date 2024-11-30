@@ -51,6 +51,17 @@ function draftcargopockettop({
     points.button_position = points.top_center.shift(270, pocket_depth * 0.3 * 0.6)
 
     snippets.pockettopnotch = new Snippet('buttonhole', points.button_position)
+
+    let titlescale = options.chest_circum * options.pocket_width
+
+    points.titleanchor = points.button_position.shiftFractionTowards(points.bottom_edge_right, 0.3)
+
+    macro('title', {
+      at: points.titleanchor,
+      nr: 4,
+      title: 'cargopockettop',
+      scale: titlescale,
+    })
   }
 
   return part

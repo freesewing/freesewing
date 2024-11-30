@@ -392,8 +392,20 @@ function draftcoat({
     .line(points.neckbandtop)
     .hide()
 
-  points.logo = points.neckCenter.shiftFractionTowards(points.closureback, 0.5)
-  snippets.logo = new Snippet('logo', points.logo)
+  points.logoanchor = points.neckCenter
+    .shiftFractionTowards(points.backCenter, 0.5)
+    .shiftFractionTowards(points.closureback, 0.5)
+  snippets.logo = new Snippet('logo', points.logoanchor).attr('data-scale', globalscale)
+
+  points.titleanchor = points.neckCenter
+    .shiftFractionTowards(points.backCenter, 0.3)
+    .shiftFractionTowards(points.armholetop, 0.5)
+  macro('title', {
+    at: points.titleanchor,
+    nr: 1,
+    title: 'coat',
+    scale: globalscale,
+  })
 
   if (sa) {
     paths.sa = paths.seam.offset(sa).addClass('fabric sa')

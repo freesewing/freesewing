@@ -66,6 +66,20 @@ function draftkangaroopocket({
       to: points.pocket_top_center,
       grainline: true,
     })
+
+    let titlescale = options.chest_circum * options.pocket_width * 2
+
+    points.titleanchor = points.pocket_top_center
+      .shiftFractionTowards(points.pocket_bottom_center, 0.5)
+      .shiftFractionTowards(points.pocket_outer_point, 0.3)
+
+    macro('title', {
+      at: points.titleanchor,
+      nr: 2,
+      title: 'kangaroopocket',
+      scale: titlescale,
+    })
+
     if (sa) {
       paths.sa = paths.kangaroopocketseam.offset(sa).addClass('fabric sa')
     }

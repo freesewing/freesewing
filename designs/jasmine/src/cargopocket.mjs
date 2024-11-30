@@ -76,6 +76,17 @@ function draftcargopocket({
       grainline: true,
     })
 
+    let titlescale = options.chest_circum * options.pocket_width
+
+    points.titleanchor = points.inner_top_center.shiftFractionTowards(points.bottom_edge_outer, 0.7)
+
+    macro('title', {
+      at: points.titleanchor,
+      nr: 3,
+      title: 'cargopocket',
+      scale: titlescale,
+    })
+
     snippets.pockettopnotch = new Snippet('notch', points.inner_top_center)
 
     points.button_position = points.inner_top_center.shift(270, pocket_depth * 0.3 * 0.6)
