@@ -392,7 +392,7 @@ function draftcoat({
     .line(points.neckbandtop)
     .hide()
 
-  points.logo = points.closurefront.shiftFractionTowards(points.backCenter, 0.5)
+  points.logo = points.neckCenter.shiftFractionTowards(points.closureback, 0.5)
   snippets.logo = new Snippet('logo', points.logo)
 
   if (sa) {
@@ -542,11 +542,77 @@ function draftcoat({
       .attr('class', 'sa')
   }
 
+  if (options.pocket_type == 'cargo') {
+    const pocket_width = chesthorizontal * options.pocket_width * 0.35
+    const pocket_depth = vertlength * options.pocket_depth
+
+    const pocket_vert_offset = Math.min(
+      vertlength * options.pocket_vert_offset,
+      back_adjusted_length - pocket_depth
+    )
+
+    const pocket_horiz_offset = chesthorizontal * options.pocket_horiz_offset
+
+    points.inner_top_center = new Point(pocket_horiz_offset, pocket_vert_offset)
+    points.inner_bottom_center = points.inner_top_center.shift(270, pocket_depth)
+
+    points.inner_top_edge_right = points.inner_top_center.shift(0, 2 * pocket_width)
+    points.inner_bottom_edge_right = points.inner_bottom_center.shift(0, 2 * pocket_width)
+
+    paths.pocketline = new Path()
+      .move(points.inner_top_center)
+      .line(points.inner_top_edge_right)
+      .line(points.inner_bottom_edge_right)
+      .line(points.inner_bottom_center)
+      .close()
+      .attr('class', 'fabric sa')
+
+    paths.pocket_top_edge = new Path().move(points.inner_top_center)
+
+    if (options.cargo_pocket_orientation == 'vertical') {
+      paths.pocket_top_edge.line(points.inner_top_edge_right)
+    } else {
+      paths.pocket_top_edge.line(points.inner_bottom_center)
+      paths.pocket_top_edge = paths.pocket_top_edge.reverse()
+    }
+
+    points.pocket_top_center = paths.pocket_top_edge.shiftFractionAlong(0.5, 5)
+
+    snippets.pockettopnotch = new Snippet('notch', points.pocket_top_center)
+
+    if (options.cargo_pocket_orientation == 'vertical') {
+      points.pocket_flap_bottom = points.pocket_top_center.shift(270, pocket_depth / 3)
+      points.pocket_flap_edge_0 = paths.pocket_top_edge
+        .shiftFractionAlong(0)
+        .shift(270, pocket_depth / 6)
+      points.pocket_flap_edge_1 = paths.pocket_top_edge
+        .shiftFractionAlong(1)
+        .shift(270, pocket_depth / 6)
+    } else {
+      points.pocket_flap_bottom = points.pocket_top_center.shift(0, (pocket_width * 2) / 3)
+      points.pocket_flap_edge_0 = paths.pocket_top_edge
+        .shiftFractionAlong(0)
+        .shift(0, pocket_width / 3)
+      points.pocket_flap_edge_1 = paths.pocket_top_edge
+        .shiftFractionAlong(1)
+        .shift(0, pocket_width / 3)
+    }
+
+    paths.pocket_flap_outline = new Path()
+      .move(paths.pocket_top_edge.shiftFractionAlong(0))
+      .line(points.pocket_flap_edge_0)
+      .line(points.pocket_flap_bottom)
+      .line(points.pocket_flap_edge_1)
+      .line(paths.pocket_top_edge.shiftFractionAlong(1))
+
+      .attr('class', 'sa')
+  }
+
   return part
 }
 
 export const coat = {
-  name: 'coat',
+  name: 'jasmine.coat',
   options: {
     chest_circum: {
       pct: 100,
@@ -652,13 +718,20 @@ export const coat = {
 
     pocket_type: {
       dflt: 'none',
-      list: ['none', 'kangaroo'],
+      list: ['none', 'kangaroo', 'cargo'],
       menu: 'style.pocket',
     },
 
     pocket_vert_offset: { pct: 50, min: 0, max: 100, menu: 'style.pocket' },
     pocket_width: { pct: 40, min: 10, max: 100, menu: 'style.pocket' },
     pocket_depth: { pct: 25, min: 10, max: 50, menu: 'style.pocket' },
+
+    pocket_horiz_offset: { pct: 15, min: 5, max: 50, menu: 'style.pocket.cargo' },
+    cargo_pocket_orientation: {
+      dflt: 'vertical',
+      list: ['vertical', 'horizontal'],
+      menu: 'style.pocket.cargo',
+    },
   },
   draft: draftcoat,
 }

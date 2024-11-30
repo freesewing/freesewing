@@ -1,8 +1,18 @@
+
+
 {
   "t": "Jasmine Dog Jacket",
   "d": "A simple, single-piece jacket for a dog or other quadruped",
-  "p": { "coat": "Coat"},
-  "s": { },
+  "p": { "coat": "Coat",
+    "kangaroopocket": "Kangaroo pocket",
+    "cargopocket": "Cargo pocket bag",
+    "cargopockettop": "Cargo pocket flap"},
+  "s": {
+    "biasTapeLength.t": "Bias tape: {{{ l }}}",
+    "biasTapeLength.d": "To finish the edge, you will need {{{ l }}} of [bias tape](/docs/sewing/bias-tape)",
+    "finishWithBiasTape": "Finish raw edge with bias tape",
+    "measurementsWarning": "Don't change any of the other fit settings before setting the chest circumference!"
+  },
   "o": {
     "chest_circum": {
       "t": "Chest circumference",
@@ -116,6 +126,10 @@
       "t": "Kangaroo",
       "d": "Generate a hoodie-style kangaroo pocket on the back"
     },
+    "pocket_type.cargo": {
+      "t": "Cargo",
+      "d": "Generate two cargo pockets on the back"
+    },
 
     "pocket_depth": {
       "t": "Pocket depth",
@@ -129,6 +143,27 @@
       "t": "Pocket vertical offset",
       "d": "How far down the back to place the pocket"
     },
+    "pocket_horiz_offset": {
+      "t": "Pocket horizontal offset",
+      "d": "How far away from the spine to place the pocket"
+    },
+
+    "cargo_pocket_fold": {
+      "t": "Cargo pocket fold width",
+      "d": "How far to pleat the edges of the cargo pocket"
+    },
+    "cargo_pocket_orientation": {
+      "t": "Cargo pocket orientation",
+      "d": "Which side to place the cargo pocket closure on"
+    },
+    "cargo_pocket_orientation.vertical": {
+      "t": "Vertical",
+      "d": "The pocket opens towards the front of the jacket"
+    },
+    "cargo_pocket_orientation.horizontal": {
+      "t": "Horizontal",
+      "d": "The pocket opens towards the spine of the jacket"
+    },
 
     "biasTapeLength": {
       "t": "Bias tape: {{{ l }}}",
@@ -138,14 +173,6 @@
     "measurementsWarning": {
       "t": "Measurements Warning",
       "d": "Don't change any of the other fit settings before setting the chest circumference!"
-    },
-    
-    "s": {
-      "biasTapeLength.t": "Bias tape: {{{ l }}}",
-      "biasTapeLength.d": "To finish the edge, you will need {{{ l }}} of [bias tape](/docs/sewing/bias-tape)",
-      "fabricNeeded": "You need a {{{ w }}} by {{{ h }}} piece of [suitable fabric](/docs/designs/jasmine/fabric) to make this bib",
-      "finishWithBiasTape": "Finish raw edge with bias tape",
-      "measurementsWarning": "Don't change any of the other fit settings before setting the chest circumference!"
     }
 
   }
