@@ -1,5 +1,5 @@
 ---
-title: 'Jasmine Dog Jacket: Sewing Instructions'
+title: "Jasmine Dog Jacket: Sewing Instructions"
 sidebar_label: Sewing Instructions
 sidebar_position: 20
 ---
