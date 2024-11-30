@@ -612,7 +612,7 @@ function draftcoat({
 }
 
 export const coat = {
-  name: 'coat',
+  name: 'jasmine.coat',
   options: {
     chest_circum: {
       pct: 100,

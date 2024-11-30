@@ -57,7 +57,7 @@ function draftcargopockettop({
 }
 
 export const cargopockettop = {
-  name: 'cargopockettop',
+  name: 'jasmine.cargopockettop',
   options: {
     chest_circum: {},
     backlength: {},

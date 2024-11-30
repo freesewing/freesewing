@@ -1,8 +1,18 @@
+
+
 {
   "t": "Jasmine",
   "d": "A simple, single-piece jacket for a dog or other quadruped",
-  "p": { "coat": "Coat"},
-  "s": { },
+  "p": { "coat": "Coat",
+    "kangaroopocket": "Kangaroo pocket",
+    "cargopocket": "Cargo pocket bag",
+    "cargopockettop": "Cargo pocket flap"},
+  "s": {
+    "biasTapeLength.t": "Bias tape: {{{ l }}}",
+    "biasTapeLength.d": "To finish the edge, you will need {{{ l }}} of [bias tape](/docs/sewing/bias-tape)",
+    "finishWithBiasTape": "Finish raw edge with bias tape",
+    "measurementsWarning": "Don't change any of the other fit settings before setting the chest circumference!"
+  },
   "o": {
     "chest_circum": {
       "t": "Chest circumference",
@@ -163,14 +173,6 @@
     "measurementsWarning": {
       "t": "Measurements Warning",
       "d": "Don't change any of the other fit settings before setting the chest circumference!"
-    },
-    
-    "s": {
-      "biasTapeLength.t": "Bias tape: {{{ l }}}",
-      "biasTapeLength.d": "To finish the edge, you will need {{{ l }}} of [bias tape](/docs/sewing/bias-tape)",
-      "fabricNeeded": "You need a {{{ w }}} by {{{ h }}} piece of [suitable fabric](/docs/designs/jasmine/fabric) to make this bib",
-      "finishWithBiasTape": "Finish raw edge with bias tape",
-      "measurementsWarning": "Don't change any of the other fit settings before setting the chest circumference!"
     }
 
   }

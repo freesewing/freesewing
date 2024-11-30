@@ -16,4 +16,4 @@ const Jasmine = new Design({
 })
 
 // Named exports
-export { coat, kangaroopocket, i18n, Jasmine }
+export { coat, kangaroopocket, cargopocket, cargopockettop, Jasmine, i18n }

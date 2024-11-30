@@ -75,7 +75,7 @@ function draftkangaroopocket({
 }
 
 export const kangaroopocket = {
-  name: 'kangaroopocket',
+  name: 'jasmine.kangaroopocket',
   options: {
     chest_circum: {},
     backlength: {},
