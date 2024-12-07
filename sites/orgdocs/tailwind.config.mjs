@@ -16,6 +16,7 @@ export default {
     themes: [themes],
     logs: true,
     themeRoot: '*',
+    prefix: 'daisy-',
   },
   theme: {
     extend: {

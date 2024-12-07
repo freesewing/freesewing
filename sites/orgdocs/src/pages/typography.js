@@ -18,7 +18,7 @@ const TypographyPage = ({ page }) => {
       description="FreeSewing is an open source Javascript library for parametric sewing patterns"
     >
       <div className="tailwind-container">
-        <div className="text-base-content mdx max-w-prose text-base-content max-w-prose text-base xl:pl-4 mx-auto my-8">
+        <div className="text-base-content mdx max-w-prose text-base-content max-w-prose text-current xl:pl-4 mx-auto my-8">
           <h1>Typography</h1>
           <p>
             This typography page shows an overview of different elements and how they are styled.
@@ -40,40 +40,52 @@ const TypographyPage = ({ page }) => {
           </p>
           <h3>Main button styles</h3>
           <div className="flex flex-row gap-2 flex-wrap">
-            <button className="btn btn-neutral">Neutral button</button>
-            <button className="btn btn-primary">Primary button</button>
-            <button className="btn btn-secondary">Secondary button</button>
-            <button className="btn btn-accent">Accent button</button>
+            <button className="daisy-btn daisy-btn-neutral">Neutral button</button>
+            <button className="daisy-btn daisy-btn-primary">Primary button</button>
+            <button className="daisy-btn daisy-btn-secondary">Secondary button</button>
+            <button className="daisy-btn daisy-btn-accent">Accent button</button>
           </div>
           <h3>State button styles</h3>
           <div className="flex flex-row gap-2 flex-wrap">
-            <button className="btn btn-info">Info button</button>
-            <button className="btn btn-success">Success button</button>
-            <button className="btn btn-warning">Warning button</button>
-            <button className="btn btn-error">Error button</button>
+            <button className="daisy-btn daisy-btn-info">Info button</button>
+            <button className="daisy-btn daisy-btn-success">Success button</button>
+            <button className="daisy-btn daisy-btn-warning">Warning button</button>
+            <button className="daisy-btn daisy-btn-error">Error button</button>
           </div>
           <h3>Other button styles</h3>
           <div className="flex flex-row gap-2 flex-wrap">
-            <button className="btn btn-ghost">Ghost button</button>
-            <button className="btn btn-link">Link button</button>
+            <button className="daisy-btn daisy-btn-ghost">Ghost button</button>
+            <button className="daisy-btn daisy-btn-link">Link button</button>
           </div>
           <h3>Outlined button styles</h3>
           <div className="flex flex-row gap-2 flex-wrap">
-            <button className="btn btn-outline btn-neutral">Neutral button</button>
-            <button className="btn btn-outline btn-primary">Primary button</button>
-            <button className="btn btn-outline btn-secondary">Secondary button</button>
-            <button className="btn btn-outline btn-accent">Accent button</button>
+            <button className="daisy-btn daisy-btn-outline daisy-btn-neutral">
+              Neutral button
+            </button>
+            <button className="daisy-btn daisy-btn-outline daisy-btn-primary">
+              Primary button
+            </button>
+            <button className="daisy-btn daisy-btn-outline daisy-btn-secondary">
+              Secondary button
+            </button>
+            <button className="daisy-btn daisy-btn-outline daisy-btn-accent">Accent button</button>
           </div>
           <h3>Button sizes</h3>
           <div className="flex flex-row gap-2 flex-wrap">
-            <button className="btn btn-primary btn-lg">Large</button>
-            <button className="btn btn-primary">Normal</button>
-            <button className="btn btn-primary btn-sm">Small</button>
-            <button className="btn btn-primary btn-xs">Tiny</button>
-            <button className="btn btn-primary btn-lg btn-wide">Large wide</button>
-            <button className="btn btn-primary btn-wide">Normal wide</button>
-            <button className="btn btn-primary btn-sm btn-wide">Small wide</button>
-            <button className="btn btn-primary btn-xs bnt-wide">Tiny wide</button>
+            <button className="daisy-btn daisy-btn-primary daisy-btn-lg">Large</button>
+            <button className="daisy-btn daisy-btn-primary">Normal</button>
+            <button className="daisy-btn daisy-btn-primary daisy-btn-sm">Small</button>
+            <button className="daisy-btn daisy-btn-primary daisy-btn-xs">Tiny</button>
+            <button className="daisy-btn daisy-btn-primary daisy-btn-lg daisy-btn-wide">
+              Large wide
+            </button>
+            <button className="daisy-btn daisy-btn-primary daisy-btn-wide">Normal wide</button>
+            <button className="daisy-btn daisy-btn-primary daisy-btn-sm daisy-btn-wide">
+              Small wide
+            </button>
+            <button className="daisy-btn daisy-btn-primary daisy-btn-xs daisy-bnt-wide">
+              Tiny wide
+            </button>
           </div>
           <h2>Tabs</h2>
           <h2>Docusaurus Tabs</h2>
@@ -91,6 +103,19 @@ const TypographyPage = ({ page }) => {
               <p>This is 4</p>
             </TabItem>
           </Tabs>
+          <h2>DaisyUI Tabs</h2>
+          <p>Do not use these. The tab elements clash with the docusaurus styles.</p>
+          <div role="tablist" className="daisy-tabs daisy-tabs-bordered">
+            <a role="tab" className="daisy-tab">
+              Tab 1
+            </a>
+            <a role="tab" className="daisy-tab daisy-tab-active">
+              Tab 2
+            </a>
+            <a role="tab" className="daisy-tab">
+              Tab 3
+            </a>
+          </div>
         </div>
       </div>
     </Layout>
