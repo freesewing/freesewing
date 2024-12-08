@@ -225,12 +225,6 @@
 
  - Calling `Path.join` with a second parameter to indicate that the resulting paths most be closed is now deprecated and will be removed in FreeSewing v4.
 
-### react-components
-
-#### Added
-
- - This Pattern component now supports translation of nested arrays of strings, giving you more flexibility to concatenate translated parts of strings
-
 
 ## 3.1.0 (2023-12-26)
 

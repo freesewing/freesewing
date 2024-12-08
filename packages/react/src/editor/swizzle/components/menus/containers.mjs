@@ -164,10 +164,10 @@ export const MenuItemGroup = ({
     const ItemIcon = item.icon
       ? item.icon
       : item.isGroup
-        ? Swizzled.components.GroupIcon
-        : Icon
-          ? Icon
-          : () => <span role="img">fixme-icon</span>
+      ? Swizzled.components.GroupIcon
+      : Icon
+      ? Icon
+      : () => <span role="img">fixme-icon</span>
     const Value = item.isGroup
       ? () => (
           <div className="flex flex-row gap-2 items-center font-medium">
@@ -176,10 +176,10 @@ export const MenuItemGroup = ({
           </div>
         )
       : isDesignOptionsGroup
-        ? values[Swizzled.methods.designOptionType(item)]
-        : values[itemName]
-          ? values[itemName]
-          : () => <span>¯\_(ツ)_/¯</span>
+      ? values[Swizzled.methods.designOptionType(item)]
+      : values[itemName]
+      ? values[itemName]
+      : () => <span>¯\_(ツ)_/¯</span>
 
     return [
       <div className="flex flex-row items-center justify-between w-full" key="a">

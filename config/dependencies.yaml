@@ -124,7 +124,7 @@ plugintest:
     '@freesewing/plugin-sprinkle': *freesewing
     '@freesewing/plugin-svgattr': *freesewing
     '@freesewing/plugin-theme': *freesewing
-react-components:
+react:
   _:
     axios: *axios
     html-react-parser: "^5.0.7"
@@ -399,7 +399,7 @@ sde:
     "@freesewing/plugin-theme": *freesewing
     "@freesewing/plugin-i18n": *freesewing
     "@freesewing/snapseries": *freesewing
-    "@freesewing/react-components": *freesewing
+    "@freesewing/react": *freesewing
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': *mdxRuntime

@@ -6,7 +6,7 @@ customBuild:
   - new-design
   - prettier-config
   - core-plugins
-  - react-components
+  - react
   - rehype-jargon
   - rehype-highlight-lines
 skipTests:
@@ -67,13 +67,14 @@ packageJson:
   prettier-config:
     type: 'module'
     exports: { .: './index.json' }
-    scripts: { build: 'echo "prettier-config: No build required" && exit 0' }
+    scripts:
+      build: 'echo "prettier-config: No build required" && exit 0'
     keywords:
       - prettier
     files:
       - index.json
       - package.json
-  react-components:
+  react:
     exports:
       ".":
         "internal": "./src/index.mjs"
@@ -81,6 +82,22 @@ packageJson:
       "./linedrawings": "./src/linedrawings/index.mjs"
       "./pattern": "./src/pattern/index.mjs"
       "./xray": "./src/pattern-xray/index.mjs"
+      "./config/freesewing": "./config/freesewing/index.mjs"
+      # Context
+      "./context/loadingStatus": "./context/loadingStatus/index.mjs"
+      # Hooks
+      "./hooks/useBackend": "./hooks/useBackend/index.mjs"
+      # Lib
+      "./lib/RestClient": "./lib/RestClient/index.mjs"
+    files:
+      - "components/**"
+      - "hooks/**"
+      - "lib/**"
+      - "README.md"
+    scripts:
+      lint: "eslint 'components/**/*.mjs' 'hooks/**/*.mjs' 'lib/**/*.mjs' 'context/**/*.mjs' 'config/**/*.mjs'"
+      prettier: "npx prettier --write 'components/**/*.mjs' 'hooks/**/*.mjs' 'lib/**/*.mjs' 'context/**/*.mjs' 'config/**/*.mjs'"
+
   rehype-hightlight-lines:
     private: true
   sandy:

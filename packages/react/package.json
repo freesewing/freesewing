@@ -1,7 +1,7 @@
 {
-  "name": "@freesewing/react-components",
+  "name": "@freesewing/react",
   "version": "3.3.0-rc.1",
-  "description": "React components by/for FreeSewing",
+  "description": "React components, hooks and context  by/for FreeSewing",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
@@ -26,21 +26,15 @@
     },
     "./linedrawings": "./src/linedrawings/index.mjs",
     "./pattern": "./src/pattern/index.mjs",
-    "./xray": "./src/pattern-xray/index.mjs"
+    "./xray": "./src/pattern-xray/index.mjs",
+    "./config/freesewing": "./config/freesewing/index.mjs",
+    "./context/loadingStatus": "./context/loadingStatus/index.mjs",
+    "./hooks/useBackend": "./hooks/useBackend/index.mjs",
+    "./lib/RestClient": "./lib/RestClient/index.mjs"
   },
   "scripts": {
-    "build": "node build.mjs",
-    "build:all": "yarn build",
-    "clean": "rimraf dist",
-    "mbuild": "NO_MINIFY=1 node build.mjs",
-    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "test": "echo \"react-components: No tests configured. Perhaps you could write some?\" && exit 0",
-    "vbuild": "VERBOSE=1 node build.mjs",
-    "lab": "cd ../../sites/lab && yarn start",
-    "tips": "node ../../scripts/help.mjs",
-    "lint": "eslint 'src/**/*.mjs'",
-    "wbuild": "node build.mjs",
-    "wbuild:all": "yarn wbuild"
+    "lint": "eslint 'components/**/*.mjs' 'hooks/**/*.mjs' 'lib/**/*.mjs' 'context/**/*.mjs' 'config/**/*.mjs'",
+    "prettier": "npx prettier --write 'components/**/*.mjs' 'hooks/**/*.mjs' 'lib/**/*.mjs' 'context/**/*.mjs' 'config/**/*.mjs'"
   },
   "peerDependencies": {
     "react": "^18.2.0"
@@ -55,7 +49,9 @@
   },
   "devDependencies": {},
   "files": [
-    "dist/*",
+    "components/**",
+    "hooks/**",
+    "lib/**",
     "README.md"
   ],
   "publishConfig": {

@@ -4,8 +4,8 @@
  * @param {mixed} obj - The value to check
  * @return {bool} result - True of obj is of type object
  */
-export function isObject (obj) {
-  return (typeof obj === 'object' && !Array.isArray(obj))
+export function isObject(obj) {
+  return typeof obj === 'object' && !Array.isArray(obj)
 }
 
 /*
@@ -16,13 +16,12 @@ export function isObject (obj) {
  * @param {object} methods - Any swizzled methods to add
  * @return {object} props - The merged props object
  */
-export function mergeProps (props, components=false, methods=false) {
-  const Swizzled = isObject(props.Swizzled)
-    ? props.Swizzled
-    : { components: {}, methods: {} }
+export function mergeProps(props, components = false, methods = false) {
+  const Swizzled = isObject(props.Swizzled) ? props.Swizzled : { components: {}, methods: {} }
 
   if (components) {
-    if (isObject(Swizzled.components)) Swizzled.components = { ...components, ...Swizzled.components }
+    if (isObject(Swizzled.components))
+      Swizzled.components = { ...components, ...Swizzled.components }
     else Swizzled.components = components
   }
 
@@ -33,5 +32,3 @@ export function mergeProps (props, components=false, methods=false) {
 
   return { ...props, Swizzled }
 }
-
-

@@ -1,12 +1,12 @@
 <p align='center'><a
-  href="https://www.npmjs.com/package/@freesewing/react-components"
-  title="@freesewing/react-components on NPM"
-  ><img src="https://img.shields.io/npm/v/@freesewing/react-components.svg"
-  alt="@freesewing/react-components on NPM"/>
+  href="https://www.npmjs.com/package/@freesewing/react"
+  title="@freesewing/react on NPM"
+  ><img src="https://img.shields.io/npm/v/@freesewing/react.svg"
+  alt="@freesewing/react on NPM"/>
   </a><a
   href="https://opensource.org/licenses/MIT"
   title="License: MIT"
-  ><img src="https://img.shields.io/npm/l/@freesewing/react-components.svg?label=License"
+  ><img src="https://img.shields.io/npm/l/@freesewing/react.svg?label=License"
   alt="License: MIT"/>
   </a><a
   href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
@@ -14,10 +14,10 @@
   ><img src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg"
   alt="Code quality on DeepScan"/>
   </a><a
-  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Areact-components"
-  title="Open issues tagged pkg:react-components"
-  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:react-components.svg?label=Issues"
-  alt="Open issues tagged pkg:react-components"/>
+  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Areact"
+  title="Open issues tagged pkg:react"
+  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:react.svg?label=Issues"
+  alt="Open issues tagged pkg:react"/>
   </a><a
   href="#contributors-"
   title="All Contributors"
@@ -45,9 +45,9 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-# @freesewing/react-components
+# @freesewing/react
 
-React components by&#x2F;for FreeSewing
+React components, hooks and context  by&#x2F;for FreeSewing
 
 
 
@@ -65,7 +65,7 @@ hardship, then you should [join us and become a patron](https://freesewing.org/c
 
 This repository is the FreeSewing *monorepo* holding all FreeSewing's websites, documentation, designs, plugins, and other NPM packages.
 
-This folder holds: @freesewing/react-components
+This folder holds: @freesewing/react
 
 If you're not entirely sure what to do or how to start, type this command:
 
