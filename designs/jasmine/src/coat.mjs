@@ -685,7 +685,7 @@ export const coat = {
     shouldertoshoulder: {
       pct: 100,
       min: 50,
-      max: 200,
+      max: 150,
       menu: 'fit.bonus',
       toAbs: (pct, settings) =>
         nyx_shoulder_to_shoulder *
