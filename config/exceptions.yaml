@@ -79,9 +79,13 @@ packageJson:
       ".":
         "internal": "./src/index.mjs"
         "default": "./dist/index.mjs"
+      # Legacy
       "./linedrawings": "./src/linedrawings/index.mjs"
       "./pattern": "./src/pattern/index.mjs"
       "./xray": "./src/pattern-xray/index.mjs"
+      # Components
+      "./components/LineDrawing": "./components/LineDrawing/index.mjs"
+      # Config
       "./config/freesewing": "./config/freesewing/index.mjs"
       # Context
       "./context/loadingStatus": "./context/loadingStatus/index.mjs"

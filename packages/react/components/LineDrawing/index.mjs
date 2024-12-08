@@ -35,7 +35,10 @@ import { Uma, UmaFront, UmaBack } from './uma.mjs'
 import { Umbra, UmbraFront, UmbraBack } from './umbra.mjs'
 import { Wahid, WahidFront, WahidBack } from './wahid.mjs'
 
-export const lineDrawingsFront = {
+/*
+ * Bundle all fronts
+ */
+const lineDrawingsFront = {
   aaron: AaronFront,
   albert: AlbertFront,
   bee: BeeFront,
@@ -74,7 +77,10 @@ export const lineDrawingsFront = {
   wahid: WahidFront,
 }
 
-export const lineDrawingsBack = {
+/*
+ * Bundle all backs
+ */
+const lineDrawingsBack = {
   aaron: AaronBack,
   bella: BellaBack,
   bent: BentBack,
@@ -103,7 +109,10 @@ export const lineDrawingsBack = {
   wahid: WahidBack,
 }
 
-export const lineDrawings = {
+/*
+ * Bundle all linedrawings
+ */
+const lineDrawings = {
   aaron: Aaron,
   albert: Albert,
   bee: Bee,
@@ -140,4 +149,148 @@ export const lineDrawings = {
   uma: Uma,
   umbra: Umbra,
   wahid: Wahid,
+}
+
+/*
+ * Named exports
+ */
+export {
+  // Bundles
+  lineDrawings,
+  lineDrawingsBack,
+  lineDrawingsFront,
+  // Aaron
+  Aaron,
+  AaronFront,
+  AaronBack,
+  // Albert
+  Albert,
+  AlbertFront,
+  // Bee
+  Bee,
+  BeeFront,
+  // Bella
+  Bella,
+  BellaFront,
+  BellaBack,
+  // Benjamin
+  Benjamin,
+  BenjaminFront,
+  // Bent
+  Bent,
+  BentFront,
+  BentBack,
+  // Bibi
+  Bibi,
+  BibiFront,
+  BibiBack,
+  // Bob
+  Bob,
+  BobFront,
+  BobBack,
+  // Breanna
+  Breanna,
+  BreannaFront,
+  BreannaBack,
+  // Brian
+  Brian,
+  BrianFront,
+  BrianBack,
+  // Bruce
+  Bruce,
+  BruceFront,
+  BruceBack,
+  // Carlita
+  Carlita,
+  CarlitaFront,
+  CarlitaBack,
+  // Carlton
+  Carlton,
+  CarltonFront,
+  CarltonBack,
+  // Cathrin
+  Cathrin,
+  CathrinFront,
+  CathrinBack,
+  // Charlie
+  Charlie,
+  CharlieFront,
+  CharlieBack,
+  // Cornelius
+  Cornelius,
+  CorneliusFront,
+  CorneliusBack,
+  // Diana
+  Diana,
+  DianaFront,
+  DianaBack,
+  // Florence
+  Florence,
+  FlorenceFront,
+  // Florent
+  Florent,
+  FlorentFront,
+  // Gozer
+  Gozer,
+  GozerFront,
+  GozerBack,
+  // Hi
+  Hi,
+  HiFront,
+  // Holmes
+  Holmes,
+  HolmesFront,
+  // Hortensia
+  Hortensia,
+  HortensiaFront,
+  // Huey
+  Huey,
+  HueyFront,
+  HueyBack,
+  // Hugo
+  Hugo,
+  HugoFront,
+  HugoBack,
+  // Lucy
+  Lucy,
+  LucyFront,
+  // Lumina
+  Lumina,
+  LuminaFront,
+  LuminaBack,
+  // Lumira
+  Lumira,
+  LumiraFront,
+  LumiraBack,
+  // Lunetius
+  Lunetius,
+  LunetiusFront,
+  // Noble
+  Noble,
+  NobleFront,
+  NobleBack,
+  // Simon
+  Simon,
+  SimonFront,
+  SimonBack,
+  // Teagan
+  Teagan,
+  TeaganFront,
+  TeaganBack,
+  // Tristan
+  Tristan,
+  TristanFront,
+  TristanBack,
+  // Uma
+  Uma,
+  UmaFront,
+  UmaBack,
+  // Umbra
+  Umbra,
+  UmbraFront,
+  UmbraBack,
+  // Wahid
+  Wahid,
+  WahidFront,
+  WahidBack,
 }
