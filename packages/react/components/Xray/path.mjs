@@ -1,8 +1,8 @@
-//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import React from 'react'
-// Components
-import { Path } from '../pattern/path.mjs'
-import { getProps } from '../pattern/utils.mjs'
+import {
+  getProps,
+  defaultComponents as patternComponents,
+} from '@freesewing/react/components/Pattern'
 
 const coords = (point) => `${point.x},${point.y}`
 
@@ -10,7 +10,7 @@ const Cp = ({ at }) => (
   <circle cx={at.x} cy={at.y} r={0.75} className="stroke-md opacity-50  text-warning" />
 )
 
-const Xray = ({ path }) => {
+export const Xray = ({ path, components }) => {
   const output = []
   let prev
   let i = 0
@@ -38,9 +38,18 @@ const Xray = ({ path }) => {
   return output
 }
 
-export const PathXray = ({ stackName, pathName, part, path, settings, components, t }) => (
-  <>
-    <Xray path={path} />
-    <Path {...{ stackName, pathName, path, part, settings, components, t }} />
-  </>
-)
+export const PathXray = ({ stackName, pathName, part, path, settings, components, t }) => {
+  /*
+   * We use the Path component from Pattern here
+   * If we would extract Path from the components passed down,
+   * we'd create a recursion loop as the Path we call below
+   * would be this very PathXray component.
+   */
+  const { Path } = patternComponents
+  return (
+    <g>
+      <Xray path={path} />
+      <Path {...{ stackName, pathName, path, part, settings, components, t }} />
+    </g>
+  )
+}

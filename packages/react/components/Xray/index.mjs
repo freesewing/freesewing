@@ -1,72 +1,66 @@
-//  __SDEFILE__ - This file is a dependency for the stand-alone environment
-// eslint-disable-next-line no-unused-vars
 import React, { forwardRef } from 'react'
-import { defaultPatternComponents } from '../pattern/index.mjs'
-// Components that can be swizzled
+import { defaultComponents as patternComponents } from '@freesewing/react/components/Pattern'
 import { PointXray } from './point.mjs'
 import { PathXray } from './path.mjs'
+
 /*
- * Allow people to swizzle these components
+ * Allow people to override these components
  */
-export const defaultPatternXrayComponents = {
-  ...defaultPatternComponents,
+const defaultComponents = {
   Point: PointXray,
   Path: PathXray,
 }
 
-export const PatternXray = forwardRef(
-  (
-    {
-      renderProps = false,
-      t = (string) => string,
-      components = {},
-      children = false,
-      className = 'freesewing pattern',
-    },
-    ref
-  ) => {
-    if (!renderProps) return null
+export const Xray = forwardRef((props, ref) => {
+  if (!props.renderProps) return null
 
-    // Merge default and swizzled components
-    components = {
-      ...defaultPatternXrayComponents,
-      ...components,
-    }
+  // desctructure props
+  const {
+    renderProps = false,
+    t = (string) => string,
+    children = false,
+    className = 'freesewing pattern',
+    components = {},
+  } = props
 
-    const { Svg, Defs, Stack, Group } = components
-
-    const optionalProps = {}
-    if (className) optionalProps.className = className
-
-    return (
-      <Svg
-        viewBox={`0 0 ${renderProps.width} ${renderProps.height}`}
-        embed={renderProps.settings.embed}
-        {...renderProps}
-        {...optionalProps}
-        ref={ref}
-      >
-        <Defs {...renderProps} />
-        <style>{`:root { --pattern-scale: ${renderProps.settings.scale || 1}} ${
-          renderProps.svg.style
-        }`}</style>
-        <Group>
-          {children
-            ? children
-            : Object.keys(renderProps.stacks).map((stackName) => (
-                <Stack
-                  key={stackName}
-                  stackName={stackName}
-                  stack={renderProps.stacks[stackName]}
-                  settings={renderProps.settings}
-                  components={components}
-                  t={t}
-                />
-              ))}
-        </Group>
-      </Svg>
-    )
+  // Merge pattern, default, and custom components
+  const mergedComponents = {
+    ...patternComponents,
+    ...defaultComponents,
+    ...components,
   }
-)
 
-PatternXray.displayName = 'PatternXray'
+  const { Svg, Defs, Stack, Group } = mergedComponents
+
+  const optionalProps = {}
+  if (className) optionalProps.className = className
+
+  return (
+    <Svg
+      viewBox={`0 0 ${renderProps.width} ${renderProps.height}`}
+      embed={renderProps.settings.embed}
+      {...renderProps}
+      {...optionalProps}
+      ref={ref}
+    >
+      <Defs {...renderProps} />
+      <style>{`:root { --pattern-scale: ${renderProps.settings.scale || 1}} ${
+        renderProps.svg.style
+      }`}</style>
+      <Group>
+        {children
+          ? children
+          : Object.keys(renderProps.stacks).map((stackName) => (
+              <Stack
+                key={stackName}
+                stackName={stackName}
+                stack={renderProps.stacks[stackName]}
+                settings={renderProps.settings}
+                components={mergedComponents}
+                t={t}
+              />
+            ))}
+      </Group>
+    </Svg>
+  )
+})
