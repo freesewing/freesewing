@@ -92,6 +92,7 @@ packageJson:
       # Components
       "./components/Breadcrumbs": "./components/Breadcrumbs/index.mjs"
       "./components/DocusaurusPage": "./components/DocusaurusPage/index.mjs"
+      "./components/Editor": "./components/Editor/index.mjs"
       "./components/Icon": "./components/Icon/index.mjs"
       "./components/Input": "./components/Input/index.mjs"
       "./components/Layout": "./components/Layout/index.mjs"
@@ -99,9 +100,12 @@ packageJson:
       "./components/Link": "./components/Link/index.mjs"
       "./components/Logo": "./components/Logo/index.mjs"
       "./components/Modal": "./components/Modal/index.mjs"
+      "./components/Pattern": "./components/Pattern/index.mjs"
+      "./components/Popout": "./components/Popout/index.mjs"
       "./components/SignIn": "./components/SignIn/index.mjs"
       "./components/Spinner": "./components/Spinner/index.mjs"
       "./components/Tab": "./components/Tab/index.mjs"
+      "./components/Xray": "./components/Xray/index.mjs"
       # Config
       "./config/freesewing": "./config/freesewing/index.mjs"
       # Context

@@ -49,7 +49,7 @@
     "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
     "jsdoc": "jsdoc -c jsdoc.json -r src",
     "wbuild": "node build.mjs",
-    "wbuild:all": "yarn wbuild"
+    "wbuild:all": "npm run wbuild"
   },
   "peerDependencies": {},
   "dependencies": {

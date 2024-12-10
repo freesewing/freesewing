@@ -31,7 +31,7 @@
     "tips": "node ../../scripts/help.mjs",
     "lint": "npx eslint 'src/**' 'tests/*.mjs'",
     "wbuild": "node build.mjs",
-    "wbuild:all": "yarn wbuild"
+    "wbuild:all": "npm run wbuild"
   },
   "peerDependencies": {},
   "dependencies": {},

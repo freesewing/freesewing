@@ -30,9 +30,9 @@
     "prebuild": "node --conditions=internal ./prebuild.mjs",
     "wbuild": "node build.mjs",
     "prewbuild": "node --conditions=internal ./prebuild.mjs",
-    "wbuild:all": "yarn wbuild",
-    "prebuild:all": "yarn prebuild",
-    "prewbuild:all": "yarn prewbuild"
+    "wbuild:all": "npm run wbuild",
+    "prebuild:all": "npm run prebuild",
+    "prewbuild:all": "npm run prewbuild"
   },
   "peerDependencies": {},
   "dependencies": {

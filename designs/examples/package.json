@@ -41,7 +41,7 @@
     "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
     "testci": "NODE_OPTIONS=\"--conditions=internal\" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
     "wbuild": "node build.mjs",
-    "wbuild:all": "yarn wbuild"
+    "wbuild:all": "npm run wbuild"
   },
   "peerDependencies": {
     "@freesewing/core": "3.3.0-rc.1",
