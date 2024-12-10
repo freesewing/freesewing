@@ -3,20 +3,43 @@
     "default": {
       "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build", "wbuild", "build:all"],
+        "cacheableOperations": [
+          "build",
+          "wbuild",
+          "build:all"
+        ],
         "parallel": 5
       }
     }
   },
   "targetDefaults": {
     "build": {
-      "dependsOn": ["^build", "prebuild"]
+      "dependsOn": [
+        "^build",
+        "prebuild"
+      ]
     },
     "wbuild": {
-      "dependsOn": ["^wbuild", "prewbuild"]
+      "dependsOn": [
+        "^wbuild",
+        "prewbuild"
+      ]
     },
     "e2e": {
-      "dependsOn": ["prebuild"]
+      "dependsOn": [
+        "prebuild"
+      ]
     }
-  }
+  },
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "defaultBase": "main",
+  "plugins": [
+    {
+      "plugin": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "eslint:lint"
+      }
+    }
+  ],
+  "nxCloudId": "67582a7f5f5bd66e08aff696"
 }
