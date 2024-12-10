@@ -1,14 +1,10 @@
-//  __SDEFILE__ - This file is a dependency for the stand-alone environment
-/* eslint-disable */
-// Not sure why but eslint does not seem to understand this file
-// and I don't have time to hold its hand.
-import { useState, useEffect, createContext } from 'react'
-import { Spinner } from 'shared/components/spinner.mjs'
-import { OkIcon, WarningIcon } from 'shared/components/icons.mjs'
-import { useTranslation } from 'next-i18next'
+import React, { useState, useEffect, createContext } from 'react'
+import { Spinner } from '@freesewing/react/components/Spinner'
+import { OkIcon, WarningIcon } from '@freesewing/react/components/Icon'
 
-export const ns = ['status']
-
+/*
+ * The actual context
+ */
 export const LoadingStatusContext = createContext([false])
 
 /*
@@ -16,9 +12,10 @@ export const LoadingStatusContext = createContext([false])
  */
 const timeout = 2
 
+/*
+ * The React component displaying the loading status
+ */
 const LoadingStatus = ({ loadingStatus }) => {
-  const { t } = useTranslation(ns)
-
   const [fade, setFade] = useState('opacity-100')
   const [timer, setTimer] = useState(false)
 
@@ -26,9 +23,12 @@ const LoadingStatus = ({ loadingStatus }) => {
     if (loadingStatus[2]) {
       if (timer) clearTimeout(timer)
       setTimer(
-        window.setTimeout(() => {
-          setFade('opacity-0')
-        }, timeout * 1000 - 350)
+        window.setTimeout(
+          () => {
+            setFade('opacity-0')
+          },
+          timeout * 1000 - 350
+        )
       )
     }
   }, [loadingStatus[2]])
@@ -54,14 +54,15 @@ const LoadingStatus = ({ loadingStatus }) => {
         md:rounded-lg shadow text-secondary-content text-lg lg:text-xl font-medium md:bg-opacity-90`}
       >
         <span className="shrink-0">{icon}</span>
-        {typeof loadingStatus[1] === 'object' && loadingStatus[1].props
-          ? loadingStatus[1]
-          : t(loadingStatus[1])}
+        {loadingStatus[1]}
       </div>
     </div>
   )
 }
 
+/*
+ * An animated loading state
+ */
 const LoadingProgress = ({ val = 0, max = 1, msg }) => (
   <div className="flex flex-col gap-2 w-full grow-0">
     {msg}
@@ -69,6 +70,9 @@ const LoadingProgress = ({ val = 0, max = 1, msg }) => (
   </div>
 )
 
+/*
+ * The Context provider
+ */
 export const LoadingStatusContextProvider = ({ children }) => {
   /*
    * LoadingStatus should hold an array with 1 to 4 elements:

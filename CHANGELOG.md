@@ -1092,6 +1092,12 @@
 
  - Migrated from Rollup to Esbuild for all builds
 
+### utils
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
 
 ## 2.20.8 (2022-05-21)
 
@@ -2037,6 +2043,12 @@
 
 ## 2.17.3 (2021-08-16)
 
+### utils
+
+#### Fixed
+
+ - Added missing `bustPointToUnderbust` measurement to `neckstimate`
+
 
 ## 2.17.2 (2021-08-15)
 
@@ -2383,6 +2395,13 @@
 
  - Changed `department` setting in config in line with new grouping
 
+### utils
+
+#### Changed
+
+ - neckstimate now takes an extra `noRound` parameter to return the unrounded value
+ - measurementDiffers takes an extra `absolute` value that can be set to false to get the non-absolute and non-rounded value
+
 
 ## 2.16.0 (2021-05-24)
 
@@ -2604,6 +2623,12 @@
 #### Fixed
 
  - Added missing sleeve notch on yoke
+
+### utils
+
+#### Added
+
+ - Pass pattern handle to tiler
 
 
 ## 2.13.0 (2021-02-13)
@@ -2969,6 +2994,12 @@
  - Added a new `debug` setting
  - Shorthand now proxies objects to allow debug and raise
 
+### utils
+
+#### Added
+
+ - Added backend calls for creating gists/issues on Github
+
 
 ## 2.7.0 (2020-07-12)
 
@@ -3254,6 +3285,21 @@
  - Ported models to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
  - Removed `Circumference` suffix from measurement names
 
+### utils
+
+#### Added
+
+ - Added new `isDegMeasurement` method. See [#358](https://github.com/freesewing/freesewing/issues/358)
+ - `neckStimate` now supports all new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
+#### Changed
+
+ - Changed `neckstimate` to handle new `shoulderSlope` degree measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
+ - Changed `neckstimate` to support all new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+ - Ported `neckstimate` to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
+ - Removed `Circumference` suffix from measurement names
+ - Added the `isDegMeasurement` method
+
 
 ## 2.6.0 (2020-05-01)
 
@@ -3325,6 +3371,12 @@
 
  - Check whether frontScyeDart option is zero prior to implementing it
 
+### utils
+
+#### Changed
+
+ - neckstimate() now returns values rounded to nearest mm
+
 
 ## 2.4.4 (2020-03-15)
 
@@ -3366,6 +3418,12 @@
 
 
 ## 2.4.1 (2020-03-04)
+
+### utils
+
+#### Fixed
+
+ - [#542](https://github.com/freesewing/freesewing.org/issues/542): Prevent neckstimate from throwing when getting an unexpected measurement 
 
 
 ## 2.4.0 (2020-02-29)
@@ -3536,6 +3594,12 @@
 
  - Extended the menswear size range to have 10 different sizes, just like womenswear
 
+### utils
+
+#### Changed
+
+ - Neckstimate now uses proportions only
+
 
 ## 2.1.9 (2020-01-18)
 
@@ -3573,6 +3637,12 @@
 
 ## 2.1.6 (2019-11-24)
 
+### utils
+
+#### Fixed
+
+ - [#317](https://github.com/freesewing/freesewing.org/issues/317): Fixed bug where format was not passed to formatImperial
+
 
 ## 2.1.5 (2019-11-19)
 
@@ -3582,11 +3652,27 @@
 
 ## 2.1.3 (2019-10-18)
 
+### utils
+
+#### Changed
+
+ - Adjusted slope of the shoulderToShoulder measurement in neckstimate data
+
+#### Fixed
+
+ - [#250](https://github.com/freesewing/freesewing.org/issues/250): Model page stays empty with pre 2.0 model data: Error: 'neckstimate() requires a valid measurement name as second parameter. (received underBust)'
+
 
 ## 2.1.2 (2019-10-14)
 
 
 ## 2.1.1 (2019-10-13)
+
+### utils
+
+#### Fixed
+
+ - Fixed an issue with the formatMm method not adding units
 
 
 ## 2.1.0 (2019-10-06)
@@ -3633,6 +3719,17 @@
 
  - The pattern super constructor now sets a `config` property that holds the pattern configuration. This means that unlike before, there is no need to instantiate a pattern to access its config. You can just import the pattern, and it's config property will contain the pattern config.
 
+### utils
+
+#### Added
+
+ - Added backend methods for administration
+ - Added the resendActivationEmail method to backend
+
+#### Fixed
+
+ - Fixed an issue where optionDefault was not handling list options correctly
+
 
 ## 2.0.4 (2019-09-27)
 
@@ -3650,6 +3747,12 @@
 #### Fixed
 
  - [#106](https://github.com/freesewing/freesewing/issues/106): Fix incorrect hem allowance
+
+### utils
+
+#### Fixed
+
+ - Fix measurementDiffers to pass breasts parameter to neckstimate
 
 
 ## 2.0.2 (2019-09-06)
@@ -3674,6 +3777,12 @@
  - [#102](https://github.com/freesewing/freesewing.org/issues/102): Fixed 'Snippets not defined' error when drafting a seperate button placket
  - [#103](https://github.com/freesewing/freesewing.org/issues/103): Fixed 'hemSa not defined' when drafting paperless Simon without seam allowance
 
+### utils
+
+#### Fixed
+
+ - Removed lingering debug statement in formatImperial
+
 
 ## 2.0.1 (2019-09-01)
 
@@ -3691,6 +3800,12 @@
 #### Fixed
 
  - [#86](https://github.com/freesewing/freesewing/issues/86): The `seatCircumference` measurement was missing, thus making it unavailable on the website
+
+### utils
+
+#### Added
+
+ - The `measurementDiffers` method is new.
 
 
 ## 2.0.0 (2019-08-25)
@@ -3876,6 +3991,12 @@
  - Initial release
 
 ### prettier-config
+
+#### Added
+
+ - Initial release
+
+### utils
 
 #### Added
 

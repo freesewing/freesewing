@@ -3,7 +3,7 @@ import { designs, designInfo } from '@site/src/lib/designs.mjs'
 import { pluginInfo } from '@site/src/lib/plugins.mjs'
 import { capitalize, optionsMenuStructure, optionType } from '@site/src/lib/utils.mjs'
 import Link from '@docusaurus/Link'
-import { lineDrawings } from '@freesewing/react-components/linedrawings'
+import { lineDrawings } from '@freesewing/react/components/LineDrawing'
 import {
   designs as designTranslations,
   measurements as measurementTranslations,

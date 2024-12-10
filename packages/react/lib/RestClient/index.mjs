@@ -115,6 +115,18 @@ async function withBody(method = 'POST', url, data, headers, raw = false, log = 
 
   /*
    * If we end up here, status code is 400 or higher so it's an error
+   * We still attempt to parse the body though
    */
-  return [response?.status || 500, false]
+  let body
+  try {
+    body = raw ? await response.text() : await response.json()
+  } catch (err) {
+    try {
+      body = await response.text()
+    } catch (err) {
+      body = false
+    }
+  }
+
+  return [response?.status || 500, body]
 }

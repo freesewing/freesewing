@@ -1,18 +1,26 @@
 /*
- * This configuration file has the following named exports:
+ * This configuration file holds various control levels.
+ * Control is a setting that determines what to hide/show in the UI
  *
- * account: Fields and control levels, and other account related settings
- * backend: URL of the FreeSewing backend
- * editor: Configuration for the pattern editor
- * monorepo: URL of the FreeSewing monorepo
- * social : Social media and other account links for FreeSewing
+ * This file has the following named exports:
+ *
+ * accountControlLevels: Fields and control levels, and other account related settings
  * controlLevels: Consolidated object holding all control levels
+ * defaultControlLevel: The default control level to apply when we have no user-specific level
+ * editorControlLevels: Configuration for the pattern editor
+ *
+ * They are all re-exported from index.mjs
  */
+
+/*
+ * The default control level in case we have nothing more specific
+ */
+const dflt = 3
 
 /*
  * Structure of the various account fields and their control levels
  */
-export const account = {
+const account = {
   fields: {
     data: {
       bookmarks: 2,
@@ -89,19 +97,9 @@ export const account = {
 }
 
 /*
- * URL of the FreeSewing backend
- */
-export const backend = 'https://backend3.freesewing.org'
-
-/*
- * The default control level in case we have nothing more specific
- */
-export const defaultControlLevel = 3
-
-/*
  * Editor control levels
  */
-export const editor = {
+const editor = {
   core: {
     sa: 2,
     paperless: 2,
@@ -132,36 +130,19 @@ export const editor = {
   },
 }
 
-/*
- * URL of the FreeSewing monorepo
- */
-export const monorepo = 'https://github.com/freesewing/freesewing'
-
-/*
- * Social media and other account links for FreeSewing
- */
-export const social = {
-  YouTube: 'https://www.youtube.com/@freesewing',
-  Discord: 'https://discord.freesewing.org/',
-  Instagram: 'https://instagram.com/freesewing_org',
-  Facebook: 'https://www.facebook.com/groups/627769821272714/',
-  GitHub: 'https://github.com/freesewing',
-  Reddit: 'https://www.reddit.com/r/freesewing/',
-  Mastodon: 'https://freesewing.social/@freesewing',
-  Bluesky: 'https://bsky.app/profile/freesewing.org',
-}
-
-/*
- * Consolidated object holding all control levels
- */
-export const controlLevels = {
-  ...account.fields.data,
-  ...account.fields.info,
-  ...account.fields.settings,
-  ...account.fields.security,
-  ...account.fields.identities,
-  sets: account.sets,
-  core: editor.core,
-  ui: editor.ui,
-  views: editor.views,
+export const control = {
+  account,
+  editor,
+  dflt,
+  flat: {
+    ...account.fields.data,
+    ...account.fields.info,
+    ...account.fields.settings,
+    ...account.fields.security,
+    ...account.fields.identities,
+    sets: account.sets,
+    core: editor.core,
+    ui: editor.ui,
+    views: editor.views,
+  },
 }

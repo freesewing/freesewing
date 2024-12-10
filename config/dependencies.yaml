@@ -184,6 +184,75 @@ yuri:
     '@freesewing/brian': *freesewing
     '@freesewing/plugin-bust': *freesewing
 
+collection:
+  _:
+    # Designs
+    '@freesewing/aaron': *freesewing
+    '@freesewing/albert': *freesewing
+    '@freesewing/bee': *freesewing
+    '@freesewing/bella': *freesewing
+    '@freesewing/benjamin': *freesewing
+    '@freesewing/bent': *freesewing
+    '@freesewing/bibi': *freesewing
+    '@freesewing/bob': *freesewing
+    '@freesewing/breanna': *freesewing
+    '@freesewing/brian': *freesewing
+    '@freesewing/bruce': *freesewing
+    '@freesewing/carlita': *freesewing
+    '@freesewing/carlton': *freesewing
+    '@freesewing/cathrin': *freesewing
+    '@freesewing/charlie': *freesewing
+    '@freesewing/cornelius': *freesewing
+    '@freesewing/diana': *freesewing
+    '@freesewing/florence': *freesewing
+    '@freesewing/florent': *freesewing
+    '@freesewing/gozer': *freesewing
+    '@freesewing/hi': *freesewing
+    '@freesewing/holmes': *freesewing
+    '@freesewing/hortensia': *freesewing
+    '@freesewing/huey': *freesewing
+    '@freesewing/hugo': *freesewing
+    '@freesewing/jaeger': *freesewing
+    '@freesewing/jane': *freesewing
+    '@freesewing/lily': *freesewing
+    '@freesewing/lucy': *freesewing
+    '@freesewing/lumina': *freesewing
+    '@freesewing/lumira': *freesewing
+    '@freesewing/lunetius': *freesewing
+    '@freesewing/noble': *freesewing
+    '@freesewing/octoplushy': *freesewing
+    '@freesewing/onyx': *freesewing
+    '@freesewing/opal': *freesewing
+    '@freesewing/otis': *freesewing
+    '@freesewing/paco': *freesewing
+    '@freesewing/penelope': *freesewing
+    '@freesewing/sandy': *freesewing
+    '@freesewing/shelly': *freesewing
+    '@freesewing/shin': *freesewing
+    '@freesewing/simon': *freesewing
+    '@freesewing/simone': *freesewing
+    '@freesewing/skully': *freesewing
+    '@freesewing/sven': *freesewing
+    '@freesewing/tamiko': *freesewing
+    '@freesewing/teagan': *freesewing
+    '@freesewing/tiberius': *freesewing
+    '@freesewing/titan': *freesewing
+    '@freesewing/trayvon': *freesewing
+    '@freesewing/tristan': *freesewing
+    '@freesewing/uma': *freesewing
+    '@freesewing/umbra': *freesewing
+    '@freesewing/wahid': *freesewing
+    '@freesewing/walburga': *freesewing
+    '@freesewing/waralee': *freesewing
+    '@freesewing/yuri': *freesewing
+    # Plugins
+    '@freesewing/plugin-bust': *freesewing
+    '@freesewing/plugin-flip': *freesewing
+    '@freesewing/core-plugins': *freesewing
+    # Other
+    '@freesewing/core': *freesewing
+    '@freesewing/snapseries': *freesewing
+
 # Sites go here
 
 backend:

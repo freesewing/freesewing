@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
-import { backend } from '@freesewing/react-components/config/freesewing'
-import { RestClient } from '@freesewing/react-components/lib/restClient'
-import { useAccount } from '@freesewing/react-components/hooks/useAccount'
+import { backend } from '@freesewing/react/config/freesewing'
+import { RestClient } from '@freesewing/react/lib/RestClient'
+import { useAccount } from '@freesewing/react/hooks/useAccount'
 
 /**
  * The useBackend hook

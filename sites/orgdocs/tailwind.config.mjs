@@ -6,10 +6,13 @@ export default {
   content: [
     './src/**/*.{js,mjs,mdx}',
     '../../node_modules/daisyui/**/*.{js,mjs,ts,tsx}',
+    '../../packages/react/components/**/*.mjs',
+    '../../packages/react/context/**/*.mjs',
+    '../../packages/react/hooks/**/*.mjs',
     './tailwind-force.html',
   ],
   plugins: [daisyui],
-  corePlugins: { preflight: false },
+  //corePlugins: { preflight: false },
   darkMode: ['class', "[data-theme='dark']"],
   //prefix: 'tw-',
   daisyui: {

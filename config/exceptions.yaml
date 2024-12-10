@@ -18,6 +18,12 @@ packageJson:
     author: bobgeorgethe3rd (https://github.com/bobgeorgethe3rd)
   benjamin:
     author: woutervdub (https://github.com/woutervdub)
+  collection:
+    exports: '!'
+    module: "./src/index.mjs"
+  config:
+    exports: '!'
+    module: "./src/index.mjs"
   code:
     c8:
       reporter: html
@@ -84,12 +90,26 @@ packageJson:
       "./pattern": "./src/pattern/index.mjs"
       "./xray": "./src/pattern-xray/index.mjs"
       # Components
+      "./components/Breadcrumbs": "./components/Breadcrumbs/index.mjs"
+      "./components/Button": "./components/Button/index.mjs"
+      "./components/DocusaurusPage": "./components/DocusaurusPage/index.mjs"
+      "./components/Icon": "./components/Icon/index.mjs"
+      "./components/Input": "./components/Input/index.mjs"
+      "./components/Layout": "./components/Layout/index.mjs"
       "./components/LineDrawing": "./components/LineDrawing/index.mjs"
+      "./components/Link": "./components/Link/index.mjs"
+      "./components/Logo": "./components/Logo/index.mjs"
+      "./components/Modal": "./components/Modal/index.mjs"
+      "./components/SignIn": "./components/SignIn/index.mjs"
+      "./components/Spinner": "./components/Spinner/index.mjs"
+      "./components/Tab": "./components/Tab/index.mjs"
       # Config
       "./config/freesewing": "./config/freesewing/index.mjs"
       # Context
-      "./context/loadingStatus": "./context/loadingStatus/index.mjs"
+      "./context/LoadingStatus": "./context/LoadingStatus/index.mjs"
+      "./context/Modal": "./context/Modal/index.mjs"
       # Hooks
+      "./hooks/useAccount": "./hooks/useAccount/index.mjs"
       "./hooks/useBackend": "./hooks/useBackend/index.mjs"
       # Lib
       "./lib/RestClient": "./lib/RestClient/index.mjs"
@@ -108,6 +128,9 @@ packageJson:
     author: AlfaLyr (https://github.com/alfalyr)
   shelly:
     author: Thrunic (https://github.com/Thrunic)
+  utils:
+    exports: '!'
+    module: "./src/index.mjs"
   onyx:
     author: Thrunic (https://github.com/Thrunic)
   opal:

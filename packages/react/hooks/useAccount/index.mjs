@@ -1,5 +1,5 @@
 import useLocalStorageState from 'use-local-storage-state'
-import { defaultControlLevel } from '@freesewing/react-components/config/freesewing'
+import { defaultControlLevel } from '@freesewing/react/config/freesewing'
 
 /*
  * When there is no account, we use this making it easy to check for username

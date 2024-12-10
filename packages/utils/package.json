@@ -1,0 +1,50 @@
+{
+  "name": "@freesewing/utils",
+  "version": "3.3.0-rc.1",
+  "description": "A number of utilities, typically used by FreeSewing frontend code",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
+  },
+  "keywords": [
+    "freesewing",
+    "freesewing"
+  ],
+  "type": "module",
+  "module": "./src/index.mjs",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:all": "yarn build",
+    "clean": "rimraf dist",
+    "mbuild": "NO_MINIFY=1 node build.mjs",
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
+    "test": "echo \"utils: No tests configured. Perhaps you could write some?\" && exit 0",
+    "vbuild": "VERBOSE=1 node build.mjs",
+    "lab": "cd ../../sites/lab && yarn start",
+    "tips": "node ../../scripts/help.mjs",
+    "lint": "npx eslint 'src/**' 'tests/*.mjs'",
+    "wbuild": "node build.mjs",
+    "wbuild:all": "yarn wbuild"
+  },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "files": [
+    "dist/*",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "next"
+  },
+  "engines": {
+    "node": ">= 18.17.0"
+  }
+}
