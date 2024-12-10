@@ -28,3 +28,5 @@ yarn.lock
 .nvmrc
 ansible.cfg
 sites/shared/prebuild/data/*.mjs
+
+/.nx/workspace-data

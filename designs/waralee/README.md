@@ -117,13 +117,13 @@ To get started with FreeSewing, you can spin up our development environment with
 npx @freesewing/new-design
 ```
 
-To work with FreeSewing's monorepo, you'll need [NodeJS v18](https://nodejs.org), [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.  
-Once you have those, clone (or fork) this repo and run `yarn kickstart`:
+To work with FreeSewing's monorepo, you'll need [NodeJS v20](https://nodejs.org) on your system.  
+Once you have that, clone (or fork) this repo and run `npm run kickstart`:
 
 ```bash
 git clone git@github.com:freesewing/freesewing.git
 cd freesewing
-yarn kickstart
+npm run kickstart
 ```
 
 ## Links 👩‍💻

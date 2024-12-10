@@ -16,27 +16,22 @@ console.log(`
     📦  ${chalk.green('packages/')} holds code for other NPM packages
     🔗  ${chalk.green('sites/')} holds code for our various websites and APIs
 
-  You can show this help at any moment by running: ${chalk.blue('yarn tips')}
+  You can show this help at any moment by running: ${chalk.blue('npm run tips')}
 
 
   ${chalk.bold.yellow('🚀 Getting started')}
   ${chalk.gray('≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡')}
 
-  This repository relies on ${chalk.green('yarn')} workspaces.
-  To install yarn, run this command:
+  To get started, run this command in the monorepo root:
 
-  ${chalk.blue('npm install --global yarn')}
-
-  Then, run this command in the monorepo root:
-
-  ${chalk.blue('yarn kickstart')}
+  ${chalk.blue('npm run kickstart')}
 
   It will install and link all dependencies.
 
 
   If something goes wrong in the configuration, you can run
 
-  ${chalk.blue('yarn reconfigure')}
+  ${chalk.blue('npm run reconfigure')}
 
   It will (re)configure all packages and dependencies.
 
@@ -52,7 +47,7 @@ console.log(`
 
   To start the org development environment, run this command:
 
-  ${chalk.blue('yarn org')}
+  ${chalk.blue('npm run org')}
 
   Now open your browser and navigate to ${chalk.green('http://localhost:8000/')}
 
@@ -62,7 +57,7 @@ console.log(`
 
   To add a new design to this repository, run this command:
 
-  ${chalk.blue('yarn new design')}
+  ${chalk.blue('npm run new design')}
 
   It will ask you some questions, and set everything up for you, and add your design to the local repository.
 
@@ -71,7 +66,7 @@ console.log(`
     'config/dependencies.yaml'
   )}, then run
 
-  ${chalk.blue('yarn reconfigure')}
+  ${chalk.blue('npm run reconfigure')}
 
   They will be added to your design's ${chalk.green('package.json')}
 

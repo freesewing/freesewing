@@ -1,12 +1,12 @@
 _:
   build: &build 'node build.mjs'
-  'build:all': 'yarn build'
+  'build:all': 'npm run build'
   clean: 'rimraf dist'
   mbuild: &mbuild 'NO_MINIFY=1 node build.mjs'
   symlink: 'mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -'
   test: 'echo "{{name}}: No tests configured. Perhaps you could write some?" && exit 0'
   vbuild: &vbuild 'VERBOSE=1 node build.mjs'
-  lab: 'cd ../../sites/lab && yarn start'
+  lab: 'cd ../../sites/lab && npm run start'
   tips: 'node ../../scripts/help.mjs'
   lint: "npx eslint 'src/**' 'tests/*.mjs'"
 _types:
@@ -64,7 +64,7 @@ backend:
 
 dev:
   build: &nextBuild 'next build'
-  cibuild: 'yarn build && node scripts/algolia.mjs'
+  cibuild: 'npm run build && node scripts/algolia.mjs'
   clean: &nextClean 'rimraf prebuild/* && rimraf public/locales/*/* && rimraf public/feeds/* && rimraf ../shared/prebuild/data/*'
   dev: &nextDev 'next dev -p 8000'
   develop: *nextDev
@@ -72,7 +72,7 @@ dev:
   lint: &nextLint 'next lint'
   prebuild: &sitePrebuild 'node --conditions=internal --experimental-json-modules ./prebuild.mjs'
   serve: "pm2 start npm --name 'dev' -- run start"
-  start: &nextStart 'yarn prebuild && yarn dev'
+  start: &nextStart 'npm run prebuild && npm run dev'
 
 email:
   build: 'maizzle build production'
@@ -80,17 +80,17 @@ email:
 
 lab:
   build: *nextBuild
-  cibuild: 'yarn build'
+  cibuild: 'npm run build'
   dev: *nextDev
   develop: *nextDev
   i18n: 'SITE=lab node --conditions=internal ../shared/prebuild/i18n-only.mjs'
   lint: *nextLint
   prebuild: *sitePrebuild
-  start: 'cd ../org && yarn prebuild && cd - && yarn prebuild && yarn dev'
+  start: 'cd ../org && npm run prebuild && cd - && npm run prebuild && npm run dev'
 
 sde:
   build: *nextBuild
-  cibuild: 'yarn build'
+  cibuild: 'npm run build'
   dev: *nextDev
   develop: *nextDev
   i18n: 'SITE=sde node --conditions=internal ../shared/prebuild/i18n-only.mjs'
@@ -100,7 +100,7 @@ sde:
 
 org:
   build: *nextBuild
-  cibuild: 'yarn build'
+  cibuild: 'npm run build'
   clean: *nextClean
   dev: *nextDev
   develop: *nextDev

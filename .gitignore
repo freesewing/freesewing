@@ -5,6 +5,7 @@ production.sqlite
 # .env
 .env
 *.key
+*.env
 
 # Plugins
 plugins/plugin-theme/src/bundle.css.js
@@ -14,16 +15,17 @@ plugins/plugin-theme/css
 packages/core/coverage
 packages/*/report
 
-# Any NPM or Yarn lock files
+# Any Yarn lock files
 designs/*/package-lock.json
 designs/*/yarn.lock
 packages/*/package-lock.json
 packages/*/yarn.lock
 plugins/*/package-lock.json
 plugins/*/yarn.lock
+yarn.lock
 
-# NPM lock files for sites (we use yarn)
-sites/*/package-lock.json
+# Yarn lock files for sites (we use npm)
+sites/*/yarn.lock
 
 # Nx cache
 .nx/cache

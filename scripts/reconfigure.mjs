@@ -268,11 +268,11 @@ function scripts(pkg) {
 
   // make prebuild:all and windows versions of build:all and prebuild:all
   if (runScripts['build:all'] !== undefined) {
-    runScripts['wbuild:all'] = runScripts['wbuild:all'] || (runScripts.wbuild && 'yarn wbuild')
+    runScripts['wbuild:all'] = runScripts['wbuild:all'] || (runScripts.wbuild && 'npm run wbuild')
     runScripts['prebuild:all'] =
-      runScripts['prebuild:all'] || (runScripts.prebuild && 'yarn prebuild')
+      runScripts['prebuild:all'] || (runScripts.prebuild && 'npm run prebuild')
     runScripts['prewbuild:all'] =
-      runScripts['prewbuild:all'] || (runScripts.prewbuild && 'yarn prewbuild')
+      runScripts['prewbuild:all'] || (runScripts.prewbuild && 'npm run prewbuild')
   }
 
   return runScripts

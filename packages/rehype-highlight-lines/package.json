@@ -29,7 +29,7 @@
     "clean": "rimraf dist",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "test": "echo \"rehype-highlight-lines: No tests configured. Perhaps you could write some?\" && exit 0",
-    "lab": "cd ../../sites/lab && yarn start",
+    "lab": "cd ../../sites/lab && npm run start",
     "tips": "node ../../scripts/help.mjs",
     "lint": "npx eslint 'src/*.mjs'"
   },

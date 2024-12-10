@@ -1,37 +1,58 @@
 {
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "nx/tasks-runners/default",
-      "options": {
-        "cacheableOperations": [
-          "build",
-          "wbuild",
-          "build:all"
-        ],
-        "parallel": 5
-      }
-    }
-  },
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
     "build": {
-      "dependsOn": [
-        "^build",
-        "prebuild"
-      ]
+      "outputs": [
+        "{projectRoot}/dist"
+      ],
+      "cache": true
+    },
+    "build:all": {
+      "cache": true
+    },
+    "mbuild": {
+      "cache": true
+    },
+    "symlink": {
+      "cache": true
+    },
+    "test": {
+      "cache": true
+    },
+    "vbuild": {
+      "cache": true
+    },
+    "lint": {
+      "cache": true
+    },
+    "prettier": {
+      "cache": true
+    },
+    "testci": {
+      "cache": true
     },
     "wbuild": {
-      "dependsOn": [
-        "^wbuild",
-        "prewbuild"
-      ]
+      "cache": true
     },
-    "e2e": {
-      "dependsOn": [
-        "prebuild"
-      ]
+    "wbuild:all": {
+      "cache": true
+    },
+    "report": {
+      "cache": true
+    },
+    "prebuild": {
+      "cache": true
+    },
+    "prewbuild": {
+      "cache": true
+    },
+    "prebuild:all": {
+      "cache": true
+    },
+    "prewbuild:all": {
+      "cache": true
     }
   },
-  "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "defaultBase": "main",
   "plugins": [
     {
