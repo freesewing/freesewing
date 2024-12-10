@@ -14,23 +14,23 @@
     "new": "node --experimental-json-modules --no-warnings scripts/add-software.mjs",
     "?": "node scripts/help.mjs",
     "tips": "node scripts/help.mjs",
-    "org": "cd sites/org && yarn start",
-    "dev": "cd sites/dev && yarn start",
-    "kickstart": "npx yarn install && yarn prepare && yarn tips",
-    "kickstart:windows": "npx yarn install && yarn prepare && yarn tips",
+    "org": "cd sites/org && npm run start",
+    "dev": "cd sites/dev && npm run start",
+    "kickstart": "npm install && npm run prepare && npm run tips",
+    "kickstart:windows": "npm install && npm run prepare && npm run tips",
     "cleanall": "lerna run clean",
     "test": "lerna run test",
     "e2e": "lerna run e2e",
     "prettier": "npx prettier --write 'config/*' 'config/**/*' 'packages/**/src/*.mjs' 'packages/i18n/src/locales/**/*.*' 'packages/**/tests/*.mjs' 'packages/react-components/src/**/*.mjs'",
     "reconfigure": "all-contributors generate && node --experimental-json-modules --no-warnings scripts/reconfigure.mjs",
     "sitebuildconfigure": "SITEBUILD=1 node --experimental-json-modules --no-warnings scripts/reconfigure.mjs",
-    "prerelease": "lerna version --no-git-tag-version --no-push && yarn reconfigure && yarn buildall",
+    "prerelease": "lerna version --no-git-tag-version --no-push && npm run reconfigure && npm run buildall",
     "buildall": "lerna run build:all",
-    "build": "yarn buildall",
+    "build": "npm run buildall",
     "wbuild": "lerna run wbuild:all",
     "testall": "node scripts/testall.js",
     "lint": "LINTER=1 lerna run --no-bail lint -- ",
-    "qa": "yarn qa:prettier && yarn qa:lint",
+    "qa": "npm run qa:prettier && npm run qa:lint",
     "qa:prettier": "npx prettier",
     "qa:lint": "npx eslint",
     "release": "lerna exec --no-bail -- npm publish",
@@ -45,7 +45,7 @@
     "strapi:translate": "node scripts/strapi-en-to-other.mjs",
     "fixdocs": "remark markdown --quiet --frail --output",
     "wbuildall": "lerna run wbuildall",
-    "prepare": "husky && yarn buildall"
+    "prepare": "husky && npm run buildall"
   },
   "repository": {
     "type": "git",
@@ -88,7 +88,9 @@
     "prop-types": "^15.7.2",
     "react": "^18.2.0",
     "rimraf": "^5.0.0",
-    "standard": "^17.0.0"
+    "standard": "^17.0.0",
+    "nx": "20.2.1",
+    "@nx/eslint": "20.2.1"
   },
   "workspaces": [
     "designs/*",
@@ -104,11 +106,9 @@
     "c8": "^10.1.2",
     "eslint-config-next": "^14.0.1",
     "glob": "^10.3.10",
-    "rehype-format": "^5.0.0",
-    "yarn": "^1.22.19"
+    "rehype-format": "^5.0.0"
   },
   "engines": {
-    "node": ">=18.0"
-  },
-  "packageManager": "yarn@1.22.19"
+    "node": ">=20.0"
+  }
 }
