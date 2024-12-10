@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useContext } from 'react'
 import {
   LoadingStatusContext,
   LoadingStatusContextProvider,
@@ -19,7 +19,6 @@ import { Layout as DefaultLayout } from '@freesewing/react/components/Layout'
  */
 export const DocusaurusPage = (props) => {
   const DocusaurusLayout = props.DocusaurusLayout
-  console.log({ props })
   return DocusaurusLayout ? (
     <DocusaurusLayout title={props.title} description={props.description}>
       <ModalContextProvider>

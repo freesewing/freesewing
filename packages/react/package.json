@@ -28,7 +28,6 @@
     "./pattern": "./src/pattern/index.mjs",
     "./xray": "./src/pattern-xray/index.mjs",
     "./components/Breadcrumbs": "./components/Breadcrumbs/index.mjs",
-    "./components/Button": "./components/Button/index.mjs",
     "./components/DocusaurusPage": "./components/DocusaurusPage/index.mjs",
     "./components/Icon": "./components/Icon/index.mjs",
     "./components/Input": "./components/Input/index.mjs",

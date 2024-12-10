@@ -101,8 +101,8 @@ async function withBody(method = 'POST', url, data, headers, raw = false, log = 
   /*
    * Some status codes have no response body
    */
-  if (response?.status && [204].includes(response.status)) return [response.status, {}]
-  else if (response?.status && response.status < 400) {
+  if (response.status && [204].includes(response.status)) return [response.status, {}]
+  else if (response.status && response.status < 400) {
     let data
     try {
       data = raw ? await response.text() : await response.json()
@@ -128,5 +128,5 @@ async function withBody(method = 'POST', url, data, headers, raw = false, log = 
     }
   }
 
-  return [response?.status || 500, body]
+  return [response.status || 500, body]
 }

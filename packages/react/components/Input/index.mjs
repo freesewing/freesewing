@@ -542,7 +542,7 @@ export const MeasieInput = ({
   // Update onChange
   const localUpdate = (newVal) => {
     setLocalVal(newVal)
-    const parsedVal = isDegree ? Number(newVal) : parseDistanceInput(newVal, imperial)
+    const parsedVal = isDegree ? Number(newVal) : distanceAsMm(newVal, imperial)
     if (parsedVal) {
       update(m, isDegree ? parsedVal : measurementAsMm(parsedVal, units))
       setValid(true)

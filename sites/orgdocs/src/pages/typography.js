@@ -1,5 +1,4 @@
 import Layout from '@theme/Layout'
-import MDXContent from '@theme/MDXContent'
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 

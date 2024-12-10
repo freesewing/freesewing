@@ -30,11 +30,6 @@ export const Breadcrumbs = ({ crumbs = [], title, Link = false }) => {
 }
 
 /*
- * We always start from home
- */
-const homeCrumbs = { label: 'Home', href: '/' }
-
-/*
  * People can pass in a custom Link component,
  * which is useful when using one from your framework.
  * If not, we use a regular a tag
