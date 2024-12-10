@@ -44,26 +44,13 @@ packages/new-design/shared/.gitignore
 packages/new-design/lib/banner.mjs
 sites/*/public/img/og/*
 
-# Orgdocs prebuild artifacts
-sites/orgdocs/src/lib/designs.mjs
-sites/orgdocs/src/lib/designinfo.mjs
-sites/orgdocs/src/lib/i18n.mjs
-sites/orgdocs/docs/designs/*/options/readme.mdx
-sites/orgdocs/authors.json
-sites/orgdocs/showcase-tags.mjs
-
-# Lab auto-generated content
-sites/lab/lib
-sites/lab/public/android-chrome-192x192.png
-sites/lab/public/android-chrome-384x384.png
-sites/lab/public/apple-touch-icon.png
-sites/lab/public/browserconfig.xml
-sites/lab/public/favicon-16x16.png
-sites/lab/public/favicon-32x32.png
-sites/lab/public/favicon.ico
-sites/lab/public/mstile-150x150.png
-sites/lab/public/safari-pinned-tab.svg
-sites/lab/public/site.webmanifest
+# Org prebuild artifacts
+sites/org/src/lib/designs.mjs
+sites/org/src/lib/designinfo.mjs
+sites/org/src/lib/i18n.mjs
+sites/org/docs/designs/*/options/readme.mdx
+sites/org/authors.json
+sites/org/showcase-tags.mjs
 
 # sde auto-generated content
 sites/sde/public/android-chrome-192x192.png
@@ -88,18 +75,6 @@ sites/dev/public/favicon.ico
 sites/dev/public/mstile-150x150.png
 sites/dev/public/safari-pinned-tab.svg
 sites/dev/public/site.webmanifest
-
-# org auto-generated content
-sites/org/public/android-chrome-192x192.png
-sites/org/public/android-chrome-384x384.png
-sites/org/public/apple-touch-icon.png
-sites/org/public/browserconfig.xml
-sites/org/public/favicon-16x16.png
-sites/org/public/favicon-32x32.png
-sites/org/public/favicon.ico
-sites/org/public/mstile-150x150.png
-sites/org/public/safari-pinned-tab.svg
-sites/org/public/site.webmanifest
 
 # Node dependencies
 node_modules

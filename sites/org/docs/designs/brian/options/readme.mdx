@@ -1,0 +1,415 @@
+---
+title: "Brian body block: Design Options"
+sidebar_label: Design Options
+sidebar_position: 10
+toc_max_heading_level: 5
+---
+
+import Acrossbackfactor from '@site/docs/designs/brian/options/acrossbackfactor/readme.mdx'
+import Armholedepth from '@site/docs/designs/brian/options/armholedepth/readme.mdx'
+import Armholedepthfactor from '@site/docs/designs/brian/options/armholedepthfactor/readme.mdx'
+import Backneckcutout from '@site/docs/designs/brian/options/backneckcutout/readme.mdx'
+import Bicepsease from '@site/docs/designs/brian/options/bicepsease/readme.mdx'
+import Chestease from '@site/docs/designs/brian/options/chestease/readme.mdx'
+import Collarease from '@site/docs/designs/brian/options/collarease/readme.mdx'
+import Cuffease from '@site/docs/designs/brian/options/cuffease/readme.mdx'
+import Draftforhighbust from '@site/docs/designs/brian/options/draftforhighbust/readme.mdx'
+import Frontarmholedeeper from '@site/docs/designs/brian/options/frontarmholedeeper/readme.mdx'
+import Legacyarmholedepth from '@site/docs/designs/brian/options/legacyarmholedepth/readme.mdx'
+import Lengthbonus from '@site/docs/designs/brian/options/lengthbonus/readme.mdx'
+import S3armhole from '@site/docs/designs/brian/options/s3armhole/readme.mdx'
+import S3collar from '@site/docs/designs/brian/options/s3collar/readme.mdx'
+import Shoulderease from '@site/docs/designs/brian/options/shoulderease/readme.mdx'
+import Shoulderslopereduction from '@site/docs/designs/brian/options/shoulderslopereduction/readme.mdx'
+import Sleevelengthbonus from '@site/docs/designs/brian/options/sleevelengthbonus/readme.mdx'
+import Sleevewidthguarantee from '@site/docs/designs/brian/options/sleevewidthguarantee/readme.mdx'
+import Sleevecapbackfactorx from '@site/docs/designs/brian/options/sleevecapbackfactorx/readme.mdx'
+import Sleevecapbackfactory from '@site/docs/designs/brian/options/sleevecapbackfactory/readme.mdx'
+import Sleevecapease from '@site/docs/designs/brian/options/sleevecapease/readme.mdx'
+import Sleevecapfrontfactorx from '@site/docs/designs/brian/options/sleevecapfrontfactorx/readme.mdx'
+import Sleevecapfrontfactory from '@site/docs/designs/brian/options/sleevecapfrontfactory/readme.mdx'
+import Sleevecapq1offset from '@site/docs/designs/brian/options/sleevecapq1offset/readme.mdx'
+import Sleevecapq1spread1 from '@site/docs/designs/brian/options/sleevecapq1spread1/readme.mdx'
+import Sleevecapq1spread2 from '@site/docs/designs/brian/options/sleevecapq1spread2/readme.mdx'
+import Sleevecapq2offset from '@site/docs/designs/brian/options/sleevecapq2offset/readme.mdx'
+import Sleevecapq2spread1 from '@site/docs/designs/brian/options/sleevecapq2spread1/readme.mdx'
+import Sleevecapq2spread2 from '@site/docs/designs/brian/options/sleevecapq2spread2/readme.mdx'
+import Sleevecapq3offset from '@site/docs/designs/brian/options/sleevecapq3offset/readme.mdx'
+import Sleevecapq3spread1 from '@site/docs/designs/brian/options/sleevecapq3spread1/readme.mdx'
+import Sleevecapq3spread2 from '@site/docs/designs/brian/options/sleevecapq3spread2/readme.mdx'
+import Sleevecapq4offset from '@site/docs/designs/brian/options/sleevecapq4offset/readme.mdx'
+import Sleevecapq4spread1 from '@site/docs/designs/brian/options/sleevecapq4spread1/readme.mdx'
+import Sleevecapq4spread2 from '@site/docs/designs/brian/options/sleevecapq4spread2/readme.mdx'
+import Sleevecaptopfactorx from '@site/docs/designs/brian/options/sleevecaptopfactorx/readme.mdx'
+import Sleevecaptopfactory from '@site/docs/designs/brian/options/sleevecaptopfactory/readme.mdx'
+
+## Conditional Options {#conditional}
+### Armhole depth {#armholedepth}
+
+**Controls the depth of the armhole. Higher values make a deeper armhole.**
+- Type: **Percentage**
+- Default: **2%**
+- Minimum: **-10%**
+- Maximum: **50%**
+
+<Armholedepth />
+
+### Armhole depth factor (legacy) {#armholedepthfactor}
+
+**Controls the depth of the armhole. Higher values make a deeper armhole. This option only applies to the legacy (v2) way of calculating the armhole depth.**
+- Type: **Percentage**
+- Default: **55%**
+- Minimum: **50%**
+- Maximum: **70%**
+
+<Armholedepthfactor />
+
+### Draft for high bust {#draftforhighbust}
+
+**Draft the pattern using the high bust measurement if it is available, instead of using the chest measurement. This can result in a more fitted garment for people with breasts. (Please note that no additional adjustments or shaping is performed. Further manual adjustments may be needed for those with a larger difference between high bust and chest measurements.)**
+- Type: **Boolean**
+- Default: **false**
+
+<Draftforhighbust />
+
+## Fit {#fit}
+### Biceps ease {#bicepsease}
+
+**The amount of ease at your upper arm. Note that while we try to respect this, fitting the sleeve to the armhole takes precedence over respecting the exact amount of ease.**
+- Type: **Percentage**
+- Default: **15%**
+- Minimum: **0%**
+- Maximum: **50%**
+
+<Bicepsease />
+
+### Chest ease {#chestease}
+
+**The amount of ease at your chest.**
+- Type: **Percentage**
+- Default: **15%**
+- Minimum: **-4%**
+- Maximum: **35%**
+
+<Chestease />
+
+### Collar ease {#collarease}
+
+**The amount of ease around your neck**
+- Type: **Percentage**
+- Default: **5%**
+- Minimum: **0%**
+- Maximum: **10%**
+
+<Collarease />
+
+### Cuff ease {#cuffease}
+
+**The amount of ease at your wrist.**
+- Type: **Percentage**
+- Default: **20%**
+- Minimum: **0%**
+- Maximum: **200%**
+
+<Cuffease />
+
+### Shoulder ease {#shoulderease}
+
+**The amount of ease at your shoulder. This increases the shoulder to shoulder distance to accommodate additional layers or thickness.**
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **-2%**
+- Maximum: **6%**
+
+<Shoulderease />
+
+## Style {#style}
+### Length bonus {#lengthbonus}
+
+**The amount to lengthen the garment. A negative value will shorten it.**
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **-4%**
+- Maximum: **60%**
+
+<Lengthbonus />
+
+### Shoulder seam shift: armhole side {#s3armhole}
+
+**Increase this option to shift the shoulder seam forward on the armhole side. Decreasing it shifts it backwards.**
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **-100%**
+- Maximum: **100%**
+
+<S3armhole />
+
+### Shoulder seam shift: collar side {#s3collar}
+
+**Increase this option to shift the shoulder seam forward on the collar side. Decreasing it shifts it backwards.**
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **-100%**
+- Maximum: **100%**
+
+<S3collar />
+
+### Sleeve length bonus {#sleevelengthbonus}
+
+**The amount to lengthen the sleeve. A negative value will shorten it.**
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **-40%**
+- Maximum: **10%**
+
+<Sleevelengthbonus />
+
+## Advanced {#advanced}
+### Across back factor {#acrossbackfactor}
+
+**Controls your across back width as a factor of your shoulder to shoulder measurement.**
+- Type: **Percentage**
+- Default: **98%**
+- Minimum: **93%**
+- Maximum: **100%**
+
+<Acrossbackfactor />
+
+### Back neck cutout {#backneckcutout}
+
+**How deep the neck is cut out at the back**
+- Type: **Percentage**
+- Default: **5%**
+- Minimum: **2%**
+- Maximum: **8%**
+
+<Backneckcutout />
+
+### Front armhole extra cutout {#frontarmholedeeper}
+
+**How much do you want the front armhole to be cut out deeper than the back.**
+- Type: **Percentage**
+- Default: **0.2%**
+- Minimum: **0%**
+- Maximum: **0.5%**
+
+<Frontarmholedeeper />
+
+### Legacy armhole depth {#legacyarmholedepth}
+
+**Enable this option to use the legacy way to calculate the armhole depth (using biceps circumference) rather than the v3 way (using the waist to armpit measurement)**
+- Type: **Boolean**
+- Default: **false**
+
+<Legacyarmholedepth />
+
+### Shoulder slope reduction {#shoulderslopereduction}
+
+**The amount by which the shoulder slope is reduced to allow for shoulder padding.**
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **0%**
+- Maximum: **80%**
+
+<Shoulderslopereduction />
+
+### Sleeve width guarantee {#sleevewidthguarantee}
+
+**Controls how much of the sleeve width will be guaranteed. This determines how much we can alter the sleeve width to fit the sleeve in the armhole.**
+- Type: **Percentage**
+- Default: **90%**
+- Minimum: **25%**
+- Maximum: **100%**
+
+<Sleevewidthguarantee />
+
+### Sleevecap {#sleevecap}
+#### Sleevecap back X {#sleevecapbackfactorx}
+
+**Controls the placement of the sleevecap back pitchpoint on the X-axis (horizontal)**
+- Type: **Percentage**
+- Default: **60%**
+- Minimum: **35%**
+- Maximum: **65%**
+
+<Sleevecapbackfactorx />
+
+#### Sleevecap back Y {#sleevecapbackfactory}
+
+**Controls the placement of the sleevecap back pitchpoint on the Y-axis (vertical)**
+- Type: **Percentage**
+- Default: **33%**
+- Minimum: **30%**
+- Maximum: **65%**
+
+<Sleevecapbackfactory />
+
+#### Sleevecap ease {#sleevecapease}
+
+**The amount by which the sleevecap seam is longer than the armhole seam.**
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **0%**
+- Maximum: **10%**
+
+<Sleevecapease />
+
+#### Sleevecap front X {#sleevecapfrontfactorx}
+
+**Controls the placement of the sleevecap front pitchpoint on the X-axis (horizontal)**
+- Type: **Percentage**
+- Default: **55%**
+- Minimum: **35%**
+- Maximum: **65%**
+
+<Sleevecapfrontfactorx />
+
+#### Sleevecap front Y {#sleevecapfrontfactory}
+
+**Controls the placement of the sleevecap front pitchpoint on the Y-axis (vertical)**
+- Type: **Percentage**
+- Default: **33%**
+- Minimum: **30%**
+- Maximum: **65%**
+
+<Sleevecapfrontfactory />
+
+#### Sleevecap Q1 offset {#sleevecapq1offset}
+
+**Controls the curvature of the sleevecap in the first quadrant (front armhole)**
+- Type: **Percentage**
+- Default: **1.7%**
+- Minimum: **0%**
+- Maximum: **7%**
+
+<Sleevecapq1offset />
+
+#### Sleevecap Q1 downward spread {#sleevecapq1spread1}
+
+**Controls the spread of the sleevecap first quadrant curvature towards the armhole**
+- Type: **Percentage**
+- Default: **10%**
+- Minimum: **4%**
+- Maximum: **20%**
+
+<Sleevecapq1spread1 />
+
+#### Sleevecap Q1 upward spread {#sleevecapq1spread2}
+
+**Controls the spread of the sleevecap first quadrant curvature towards the shoulder**
+- Type: **Percentage**
+- Default: **15%**
+- Minimum: **4%**
+- Maximum: **20%**
+
+<Sleevecapq1spread2 />
+
+#### Sleevecap Q2 offset {#sleevecapq2offset}
+
+**Controls the curvature of the sleevecap in the second quadrant (front shoulder)**
+- Type: **Percentage**
+- Default: **3.5%**
+- Minimum: **0%**
+- Maximum: **7%**
+
+<Sleevecapq2offset />
+
+#### Sleevecap Q2 downward spread {#sleevecapq2spread1}
+
+**Controls the spread of the sleevecap second quadrant curvature towards the armhole**
+- Type: **Percentage**
+- Default: **15%**
+- Minimum: **4%**
+- Maximum: **20%**
+
+<Sleevecapq2spread1 />
+
+#### Sleevecap Q2 upward spread {#sleevecapq2spread2}
+
+**Controls the spread of the sleevecap second quadrant curvature towards the shoulder**
+- Type: **Percentage**
+- Default: **10%**
+- Minimum: **4%**
+- Maximum: **20%**
+
+<Sleevecapq2spread2 />
+
+#### Sleevecap Q3 offset {#sleevecapq3offset}
+
+**Controls the curvature of the sleevecap in the third quadrant (back shoulder)**
+- Type: **Percentage**
+- Default: **2.5%**
+- Minimum: **0%**
+- Maximum: **7%**
+
+<Sleevecapq3offset />
+
+#### Sleevecap Q3 upward spread {#sleevecapq3spread1}
+
+**Controls the spread of the sleevecap third quadrant curvature towards the shoulder**
+- Type: **Percentage**
+- Default: **10%**
+- Minimum: **4%**
+- Maximum: **20%**
+
+<Sleevecapq3spread1 />
+
+#### Sleevecap Q3 downward spread {#sleevecapq3spread2}
+
+**Controls the spread of the sleevecap third quadrant curvature towards the armhole**
+- Type: **Percentage**
+- Default: **8%**
+- Minimum: **4%**
+- Maximum: **20%**
+
+<Sleevecapq3spread2 />
+
+#### Sleevecap Q4 offset {#sleevecapq4offset}
+
+**Controls the curvature of the sleevecap in the fourth quadrant (back armhole)**
+- Type: **Percentage**
+- Default: **1%**
+- Minimum: **0%**
+- Maximum: **7%**
+
+<Sleevecapq4offset />
+
+#### Sleevecap Q4 upward spread {#sleevecapq4spread1}
+
+**Controls the spread of the sleevecap fourth quadrant curvature towards the shoulder**
+- Type: **Percentage**
+- Default: **7%**
+- Minimum: **4%**
+- Maximum: **20%**
+
+<Sleevecapq4spread1 />
+
+#### Sleevecap Q4 downward spread {#sleevecapq4spread2}
+
+**Controls the spread of the sleevecap fourth quadrant curvature towards the armhole**
+- Type: **Percentage**
+- Default: **6.3%**
+- Minimum: **4%**
+- Maximum: **20%**
+
+<Sleevecapq4spread2 />
+
+#### Sleevecap top X {#sleevecaptopfactorx}
+
+**Controls the horizontal location of the sleevecap top.**
+- Type: **Percentage**
+- Default: **50%**
+- Minimum: **25%**
+- Maximum: **75%**
+
+<Sleevecaptopfactorx />
+
+#### Sleevecap top Y {#sleevecaptopfactory}
+
+**Controls the height of the sleevecap. A higher value results in a higher and more narrow sleevecap.**
+- Type: **Percentage**
+- Default: **45%**
+- Minimum: **35%**
+- Maximum: **125%**
+
+<Sleevecaptopfactory />

@@ -16,7 +16,7 @@
     "tips": "node scripts/help.mjs",
     "org": "cd sites/org && npm run start",
     "dev": "cd sites/dev && npm run start",
-    "kickstart": "npm install && npm run prepare && npm run tips",
+    "kickstart": "npm install && husky && npm run buildall && npm run tips",
     "cleanall": "nx run-many --target=clean",
     "test": "nx run-many --target=test",
     "e2e": "nx run-many --target=e2e",
@@ -42,8 +42,7 @@
     "checkdocs": "remark markdown --quiet --frail",
     "strapi:translate": "node scripts/strapi-en-to-other.mjs",
     "fixdocs": "remark markdown --quiet --frail --output",
-    "wbuildall": "nx run-many --target=wbuildall",
-    "prepare": "husky && npm run buildall"
+    "wbuildall": "nx run-many --target=wbuildall"
   },
   "repository": {
     "type": "git",

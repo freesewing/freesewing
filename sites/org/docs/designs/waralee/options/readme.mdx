@@ -1,0 +1,203 @@
+---
+title: "Waralee wrap pants: Design Options"
+sidebar_label: Design Options
+sidebar_position: 10
+toc_max_heading_level: 5
+---
+
+import Backpocket from '@site/docs/designs/waralee/options/backpocket/readme.mdx'
+import Backraise from '@site/docs/designs/waralee/options/backraise/readme.mdx'
+import Crotchback from '@site/docs/designs/waralee/options/crotchback/readme.mdx'
+import Crotchfactorbackhor from '@site/docs/designs/waralee/options/crotchfactorbackhor/readme.mdx'
+import Crotchfactorbackver from '@site/docs/designs/waralee/options/crotchfactorbackver/readme.mdx'
+import Crotchfactorfronthor from '@site/docs/designs/waralee/options/crotchfactorfronthor/readme.mdx'
+import Crotchfactorfrontver from '@site/docs/designs/waralee/options/crotchfactorfrontver/readme.mdx'
+import Crotchfront from '@site/docs/designs/waralee/options/crotchfront/readme.mdx'
+import Fitwaist from '@site/docs/designs/waralee/options/fitwaist/readme.mdx'
+import Frontpocket from '@site/docs/designs/waralee/options/frontpocket/readme.mdx'
+import Frontpocketstyle from '@site/docs/designs/waralee/options/frontpocketstyle/readme.mdx'
+import Hemwidth from '@site/docs/designs/waralee/options/hemwidth/readme.mdx'
+import Knotplacement from '@site/docs/designs/waralee/options/knotplacement/readme.mdx'
+import Legsize from '@site/docs/designs/waralee/options/legsize/readme.mdx'
+import Separatewaistband from '@site/docs/designs/waralee/options/separatewaistband/readme.mdx'
+import Waistoverlap from '@site/docs/designs/waralee/options/waistoverlap/readme.mdx'
+import Waistraise from '@site/docs/designs/waralee/options/waistraise/readme.mdx'
+import Waistbandwidth from '@site/docs/designs/waralee/options/waistbandwidth/readme.mdx'
+
+## Fit {#fit}
+### Back Raise {#backraise}
+
+**This setting raises the waist in the back. Our waist does not sit horizontally, but is angled up at the back. This setting allows you to raise this in the back if you need it for a good fit.**
+- Type: **Percentage**
+- Default: **10%**
+- Minimum: **0%**
+- Maximum: **25%**
+
+<Backraise />
+
+### Fit the garment to the waist {#fitwaist}
+
+**Traditionally, wrap pants are not fitted to the waist, and just use the flexibility of the fabric to adjust.**
+- Type: **Boolean**
+- Default: **true**
+
+<Fitwaist />
+
+### Waist Raise {#waistraise}
+
+**How much to raise the waist from the seat depth measurement. This influences the depth of the crotch cut-out.**
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **-20%**
+- Maximum: **40%**
+
+<Waistraise />
+
+## Style {#style}
+### Back pocket {#backpocket}
+
+**Whether to include a back pocket or not**
+- Type: **Boolean**
+- Default: **true**
+
+<Backpocket />
+
+### Front pocket {#frontpocket}
+
+**Whether to include a front pocket or not**
+- Type: **Boolean**
+- Default: **true**
+
+<Frontpocket />
+
+### Front pocket style {#frontpocketstyle}
+
+**A welt pocket, or a pocket hidden in the waistband.**
+- Type: **List**
+- Default: **welt**
+- options:
+  - welt
+  - waistband
+
+<Frontpocketstyle />
+
+### Hem size {#hemwidth}
+
+**Size of the hem at the bottom of the pants**
+- Type: **Percentage**
+- Default: **1.75%**
+- Minimum: **1%**
+- Maximum: **2.5%**
+
+<Hemwidth />
+
+### Placement of the knot(s) {#knotplacement}
+
+**The knot of the wrap straps can be placed in the front, back, or both front and back (traditional).**
+- Type: **List**
+- Default: **front**
+- options:
+  - front
+  - back
+  - traditional
+
+<Knotplacement />
+
+### Leg Size {#legsize}
+
+**This dictates how long the pants will be. It is a factor of the inseam measurement. The larger the value, the longer the pants.**
+- Type: **Percentage**
+- Default: **75%**
+- Minimum: **50%**
+- Maximum: **90%**
+
+<Legsize />
+
+### Create a separate waistband {#separatewaistband}
+
+**Create a separate waistband, or have a hem the size of the waistband.**
+- Type: **Boolean**
+- Default: **false**
+
+<Separatewaistband />
+
+### Waist Overlap {#waistoverlap}
+
+**This dicates how much you want the leg flaps to overlap at the waist. A setting of 0 would have them meet at the side seam, and a setting of 100 makes them meet at the front/back.**
+- Type: **Percentage**
+- Default: **50%**
+- Minimum: **10%**
+- Maximum: **100%**
+
+<Waistoverlap />
+
+### Waist Band {#waistbandwidth}
+
+**Size of the waist band**
+- Type: **Percentage**
+- Default: **3.5%**
+- Minimum: **2%**
+- Maximum: **5%**
+
+<Waistbandwidth />
+
+## Advanced {#advanced}
+### Crotch Back {#crotchback}
+
+**The percentage of the seat circumference that the back crotch needs to occupy. This creates more or less space between the side seam and the back.**
+- Type: **Percentage**
+- Default: **45%**
+- Minimum: **10%**
+- Maximum: **70%**
+
+<Crotchback />
+
+### Back Crotch Factor Horizontal {#crotchfactorbackhor}
+
+**Used to move the curve of the crotch in the back horizontally**
+- Type: **Percentage**
+- Default: **90%**
+- Minimum: **10%**
+- Maximum: **100%**
+
+<Crotchfactorbackhor />
+
+### Back Crotch Factor Vertical {#crotchfactorbackver}
+
+**Used to move the curve of the crotch in the back vertically**
+- Type: **Percentage**
+- Default: **60%**
+- Minimum: **20%**
+- Maximum: **90%**
+
+<Crotchfactorbackver />
+
+### Front Crotch Factor Horizontal {#crotchfactorfronthor}
+
+**Used to move the curve of the crotch in the front horizontally**
+- Type: **Percentage**
+- Default: **90%**
+- Minimum: **10%**
+- Maximum: **100%**
+
+<Crotchfactorfronthor />
+
+### Front Crotch Factor Vertical {#crotchfactorfrontver}
+
+**Used to move the curve of the crotch in the front vertically**
+- Type: **Percentage**
+- Default: **30%**
+- Minimum: **10%**
+- Maximum: **70%**
+
+<Crotchfactorfrontver />
+
+### Crotch Front {#crotchfront}
+
+**The percentage of the seat circumference that the front crotch needs to occupy. This creates more or less space between the side seam and the front.**
+- Type: **Percentage**
+- Default: **30%**
+- Minimum: **10%**
+- Maximum: **70%**
+
+<Crotchfront />
