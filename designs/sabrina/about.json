@@ -1,0 +1,17 @@
+{
+  "code": "Jonathan Haas",
+  "description": "A FreeSewing pattern for a sports bra",
+  "design": "Jonathan Haas",
+  "difficulty": 2,
+  "tags": [
+    "tops",
+    "underwear"
+  ],
+  "techniques": [
+    "elastic",
+    "curvedSeams",
+    "stretch"
+  ],
+  "version": "3.3.0-rc.1",
+  "pkg": "@freesewing/undefined"
+}

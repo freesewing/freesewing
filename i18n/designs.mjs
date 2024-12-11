@@ -46,6 +46,7 @@ import { i18n as paco } from '@freesewing/paco'
 import { i18n as penelope } from '@freesewing/penelope'
 import { i18n as plugintest } from '@freesewing/plugintest'
 import { i18n as rendertest } from '@freesewing/rendertest'
+import { i18n as sabrina } from '@freesewing/sabrina'
 import { i18n as sandy } from '@freesewing/sandy'
 import { i18n as shelly } from '@freesewing/shelly'
 import { i18n as shin } from '@freesewing/shin'
@@ -111,6 +112,7 @@ export const designs = {
   penelope: penelope.en,
   plugintest: plugintest.en,
   rendertest: rendertest.en,
+  sabrina: sabrina.en,
   sandy: sandy.en,
   shelly: shelly.en,
   shin: shin.en,

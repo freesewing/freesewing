@@ -1,0 +1,101 @@
+{
+  "t": "Sabrina",
+  "d": "A FreeSewing pattern that needs a description",
+  "p": {
+    "base": "Base",
+    "front": "Front",
+    "side": "Side",
+    "back": "Back",
+    "waistband": "Waistband"
+  },
+  "s": {
+    "cutWaistband.t": "The waistband is not shown",
+    "cutWaistband.d": "The **waistband** is a rectangular piece of main fabric {{{ w }}} wide and {{{ l }}} long."
+  },
+  "o": {
+    "length": {
+      "t": "Length",
+      "d": "The length of the garment"
+    },
+    "neckHeightFront": {
+      "t": "Neck depth front",
+      "d": "The depth of the neck hole at the front"
+    },
+    "neckHeightBack": {
+      "t": "Neck depth back",
+      "d": "The depth of the neck hole at the back"
+    },
+    "armpitAdjustment": {
+      "t": "Armpit adjustment",
+      "d": "Move the armpit up or down"
+    },
+    "strapPosition": {
+      "t": "Strap position",
+      "d": "Move the straps towards your shoulders or neck"
+    },
+    "strapAngle": {
+      "t": "Strap angle",
+      "d": "The angle of the straps on your shoulder line"
+    },
+    "strapWidth": {
+      "t": "Strap width",
+      "d": "The width of the shoulder straps"
+    },
+    "backWidth": {
+      "t": "Back width",
+      "d": "The width of narrow part on the back"
+    },
+    "bustPointFocus": {
+      "t": "Bust point focus",
+      "d": "How much the virtual bust darts aim at the bust point"
+    },
+    "backDartAngle": {
+      "t": "Back dart angle",
+      "d": "The angle of the virtual back dart"
+    },
+    "upperBackShape": {
+      "t": "Upper back shape",
+      "d": "The upper curve of the C shape on the back"
+    },
+    "lowerBackShape": {
+      "t": "Lower back shape",
+      "d": "The lower curve of the C shape on the back"
+    },
+    "strapCurveFront": {
+      "t": "Strap curve front",
+      "d": "How straight the shoulder straps are on the front"
+    },
+    "strapCurveBack": {
+      "t": "Strap curve back",
+      "d": "How straight the shoulder straps are on the back"
+    },
+    "elasticWidth": {
+      "t": "Elastic width",
+      "d": "The width of the elastic band you use for the underbust band"
+    },
+    "verticalStretch": {
+      "t": "Vertical stretch",
+      "d": "How much the fabric will stretch vertically, when worn"
+    },
+    "strapStretch": {
+      "t": "Strap stretch",
+      "d": "How much the fabric will stretch along the straps, when worn"
+    },
+    "horizontalBustStretch": {
+      "t": "Bust stretch",
+      "d": "How much the fabric will stretch along the bust line, when worn"
+    },
+    "horizontalBandStretch": {
+      "t": "Elastic band stretch",
+      "d": "How much the fabric will stretch along the elastic band, when worn"
+    },
+    "splitOffsetFront": {
+      "t": "Front split offset",
+      "d": "Shifts the front seam towards the side or the bust"
+    },
+    "splitOffsetBack": {
+      "t": "Back split offset",
+      "d": "Shifts the back seam towards the side or the back"
+    }
+  }
+}

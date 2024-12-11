@@ -445,7 +445,7 @@
       "hem"
     ]
   },
-    "legend": {
+  "legend": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern to document pattern notation"
   },
@@ -632,6 +632,23 @@
   "rendertest": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern to test (y)our render engine our CSS"
+  },
+  "sabrina": {
+    "code": "Jonathan Haas",
+    "description": "A FreeSewing pattern for a sports bra",
+    "design": "Jonathan Haas",
+    "difficulty": 2,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "tops",
+      "underwear"
+    ],
+    "techniques": [
+      "elastic",
+      "curvedSeams",
+      "stretch"
+    ]
   },
   "sandy": {
     "code": [
