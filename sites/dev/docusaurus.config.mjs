@@ -93,7 +93,7 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/freesewing/freesewing/tree/main/sites/dev/',
+          editUrl: 'https://github.com/freesewing/freesewing/tree/v4/sites/dev/',
         },
         theme: {
           customCss: './src/css/custom.css',
