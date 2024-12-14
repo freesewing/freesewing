@@ -34,3 +34,16 @@ export const Link = ({ href, title = false, children, className = linkClasses })
     {children}
   </a>
 )
+
+const BaseLink = Link
+
+export const CardLink = ({ href, title, Icon, children, Link }) => {
+  if (!Link) Link = BaseLink
+
+  return (
+    <Link className="">
+      {title}
+      {children}
+    </Link>
+  )
+}

@@ -293,3 +293,28 @@ figcaption.mdx {
 .avatar > div {
   aspect-ratio: auto;
 }
+
+/*
+ * Make the 'edit this page' link look consistent
+ */
+a.theme-edit-this-page {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-pagination-nav-border-radius);
+  line-height: var(--ifm-heading-line-height);
+  padding: var(--ifm-global-spacing);
+  transition: border-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+  color: var(--ifm-link-color);
+  text-decoration: var(--ifm-link-decoration);
+  transition: color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+  font-size: var(--ifm-h4-font-size);
+  font-weight: var(--ifm-heading-font-weight);
+  word-break: break-word;
+}
+a.theme-edit-this-page:hover {
+  border-color: var(--ifm-pagination-nav-color-hover);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}

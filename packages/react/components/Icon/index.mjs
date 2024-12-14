@@ -349,6 +349,20 @@ export const MenuIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks like a person icon with a + sign
+export const NewMsetIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
+  </IconWrapper>
+)
+
+// Looks like page with a + sign in it
+export const NewPatternIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+  </IconWrapper>
+)
+
 // Looks like a newspaper
 export const NewsletterIcon = (props) => (
   <IconWrapper {...props}>
@@ -462,6 +476,13 @@ export const RocketIcon = (props) => (
 export const RotateIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+  </IconWrapper>
+)
+
+// Looks like the RSS symbol
+export const RssIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z" />
   </IconWrapper>
 )
 

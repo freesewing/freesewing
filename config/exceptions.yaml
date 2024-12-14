@@ -102,6 +102,7 @@ packageJson:
       "./components/Link": "./components/Link/index.mjs"
       "./components/Logo": "./components/Logo/index.mjs"
       "./components/Modal": "./components/Modal/index.mjs"
+      "./components/New": "./components/New/index.mjs"
       "./components/Pattern": "./components/Pattern/index.mjs"
       "./components/Popout": "./components/Popout/index.mjs"
       "./components/Role": "./components/Role/index.mjs"
