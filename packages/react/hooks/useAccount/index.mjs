@@ -5,7 +5,7 @@ import { defaultControlLevel } from '@freesewing/react/config/freesewing'
  * When there is no account, we use this making it easy to check for username
  * or control
  */
-const noAccount = { username: false, control: defaultControlLevel }
+const noAccount = { username: false, control: defaultControlLevel, these: 'nuts' }
 
 /*
  * FreeSewing's useAccount hook. Grants access to the (data in the) user's account
@@ -39,6 +39,7 @@ export function useAccount() {
    *  Clear user data when signing out
    */
   const signOut = () => {
+    console.log('SIGN OUT')
     setAccount(noAccount)
     setToken(null)
   }

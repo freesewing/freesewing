@@ -35,7 +35,6 @@ const account = {
       email: 3,
     },
     settings: {
-      language: 2,
       units: 2,
       newsletter: 2,
       compare: 3,

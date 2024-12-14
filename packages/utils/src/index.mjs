@@ -1,3 +1,5 @@
+import { cloudflare as cloudflareConfig } from '@freesewing/config'
+
 /*
  * VARIABLES
  */

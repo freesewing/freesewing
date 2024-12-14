@@ -435,20 +435,20 @@ sde:
     'daisyui': *daisyui
     'echarts': *echarts
     'echarts-for-react': *echartsReact
-    'file-saver': *filesaver
+    'file-saver': latest
     'i18next': *i18next
     'jotai': *jotai
     'jotai-location': *jotai-location
     'js-yaml': *jsyaml
-    'lodash.debounce': *_debounce
+    'lodash.debounce': latest
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
     'mustache': *mustache
     "next": *next
     'next-i18next': *nextI18next
-    'pdfkit': *pdfkit
-    'postcss-for': *postcssfor
+    'pdfkit': latest
+    'postcss-for': latest
     "react": *react
     "react-dom": *react
     'react-copy-to-clipboard': *reactCopyToClipboard
@@ -459,13 +459,13 @@ sde:
     'react-timeago': *reactTimeago
     'react-zoom-pan-pinch': *zoompanpinch
     'remark-gfm': *remarkGfm
-    'remark-frontmatter': *remarkfrontmatter
+    'remark-frontmatter': latest
     'remark-mdx-frontmatter': *mdxfrontmatter
-    'remark-smartypants': *smartypants
-    "slugify": *slugify
-    'svg-to-pdfkit': *svgtopdfkit
+    'remark-smartypants': latest
+    "slugify": latest
+    'svg-to-pdfkit': latest
     'tailwindcss': *tailwindcss
-    'tlds': *rlds
+    'tlds': latest
     'use-local-storage-state': *use-local-storage-state
-    'web-worker': *webworker
+    'web-worker': latest
 

@@ -90,7 +90,9 @@ packageJson:
       "./pattern": "./src/pattern/index.mjs"
       "./xray": "./src/pattern-xray/index.mjs"
       # Components
+      "./components/Account": "./components/Account/index.mjs"
       "./components/Breadcrumbs": "./components/Breadcrumbs/index.mjs"
+      "./components/Control": "./components/Control/index.mjs"
       "./components/DocusaurusPage": "./components/DocusaurusPage/index.mjs"
       "./components/Editor": "./components/Editor/index.mjs"
       "./components/Icon": "./components/Icon/index.mjs"
@@ -102,6 +104,7 @@ packageJson:
       "./components/Modal": "./components/Modal/index.mjs"
       "./components/Pattern": "./components/Pattern/index.mjs"
       "./components/Popout": "./components/Popout/index.mjs"
+      "./components/Role": "./components/Role/index.mjs"
       "./components/SignIn": "./components/SignIn/index.mjs"
       "./components/Spinner": "./components/Spinner/index.mjs"
       "./components/Tab": "./components/Tab/index.mjs"

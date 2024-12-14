@@ -102,11 +102,7 @@ export function useBackend() {
  * @return {object} headers - An object holding headers for the REST API call
  */
 function authenticationHeaders(token) {
-  return token
-    ? {
-        headers: { Authorization: 'Bearer ' + token },
-      }
-    : { headers: {} }
+  return token ? { Authorization: 'Bearer ' + token } : {}
 }
 
 /**

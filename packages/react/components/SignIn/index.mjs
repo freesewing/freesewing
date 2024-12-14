@@ -24,7 +24,7 @@ import { MfaInput, StringInput, PasswordInput } from '@freesewing/react/componen
  * This SignIn component holds the entire sign-in form
  *
  * @param {object} props - All React props
- * @param {function} props.onSuccess - A method to run when the sign in is successful
+ * @param {function} props.onSuccess - Optional: A method to run when the sign in is successful
  */
 export const SignIn = ({ onSuccess = false }) => {
   const { setAccount, setToken, seenUser, setSeenUser } = useAccount()
@@ -64,7 +64,6 @@ export const SignIn = ({ onSuccess = false }) => {
   const signinHandler = async (evt) => {
     evt.preventDefault()
     setLoadingStatus([true, 'Contacting FreeSewing backend'])
-    console.log({ magicLink })
     const result = magicLink
       ? await backend.signIn({ username, password: false })
       : await backend.signIn({ username, password, token: mfaCode })
@@ -89,7 +88,7 @@ export const SignIn = ({ onSuccess = false }) => {
         setSeenUser(body.account.username)
         setLoadingStatus([true, `Welcome back ${body.account.username}`, true, true])
         // Call the onSuccess handler
-        onSuccess(body)
+        if (typeof onSuccess === 'function') onSuccess(body)
       }
     }
     // Sign-in failed
