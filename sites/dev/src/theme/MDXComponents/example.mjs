@@ -8,7 +8,6 @@ import { Design } from '@freesewing/core'
 import yaml from 'js-yaml'
 import { Pattern } from '@freesewing/react/components/Pattern'
 import { Xray } from '@freesewing/react/components/Xray'
-//import { t } from '@freesewing/react-components/methods'
 import Markdown from 'react-markdown'
 
 // Get code from children
