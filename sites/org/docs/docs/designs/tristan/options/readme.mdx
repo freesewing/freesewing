@@ -1,0 +1,340 @@
+---
+title: 'Tristan top: Design Options'
+sidebar_label: Design Options
+sidebar_position: 10
+toc_max_heading_level: 5
+---
+
+import Armholedepth from '@site/docs/docs/designs/tristan/options/armholedepth/readme.mdx'
+import Bustspanease from '@site/docs/docs/designs/tristan/options/bustspanease/readme.mdx'
+import Chestease from '@site/docs/docs/designs/tristan/options/chestease/readme.mdx'
+import Cutdepthback from '@site/docs/docs/designs/tristan/options/cutdepthback/readme.mdx'
+import Cutdepthfront from '@site/docs/docs/designs/tristan/options/cutdepthfront/readme.mdx'
+import Cutroundnessback from '@site/docs/docs/designs/tristan/options/cutroundnessback/readme.mdx'
+import Cutroundnessfront from '@site/docs/docs/designs/tristan/options/cutroundnessfront/readme.mdx'
+import Frontshoulderwidth from '@site/docs/docs/designs/tristan/options/frontshoulderwidth/readme.mdx'
+import Fullchesteasereduction from '@site/docs/docs/designs/tristan/options/fullchesteasereduction/readme.mdx'
+import Hem from '@site/docs/docs/designs/tristan/options/hem/readme.mdx'
+import Hemsize from '@site/docs/docs/designs/tristan/options/hemsize/readme.mdx'
+import Highbustwidth from '@site/docs/docs/designs/tristan/options/highbustwidth/readme.mdx'
+import Lacing from '@site/docs/docs/designs/tristan/options/lacing/readme.mdx'
+import Lacinglocation from '@site/docs/docs/designs/tristan/options/lacinglocation/readme.mdx'
+import Lacingwidth from '@site/docs/docs/designs/tristan/options/lacingwidth/readme.mdx'
+import Peplum from '@site/docs/docs/designs/tristan/options/peplum/readme.mdx'
+import Peplumfullness from '@site/docs/docs/designs/tristan/options/peplumfullness/readme.mdx'
+import Peplumsize from '@site/docs/docs/designs/tristan/options/peplumsize/readme.mdx'
+import Shoulderdartcurvature from '@site/docs/docs/designs/tristan/options/shoulderdartcurvature/readme.mdx'
+import Shoulderdartposition from '@site/docs/docs/designs/tristan/options/shoulderdartposition/readme.mdx'
+import Shouldertoshoulderease from '@site/docs/docs/designs/tristan/options/shouldertoshoulderease/readme.mdx'
+import Strapwidth from '@site/docs/docs/designs/tristan/options/strapwidth/readme.mdx'
+import Upperdartlength from '@site/docs/docs/designs/tristan/options/upperdartlength/readme.mdx'
+import Waistdartlength from '@site/docs/docs/designs/tristan/options/waistdartlength/readme.mdx'
+import Waistease from '@site/docs/docs/designs/tristan/options/waistease/readme.mdx'
+import Waistdartposition from '@site/docs/docs/designs/tristan/options/waistdartposition/readme.mdx'
+import Zipperlocation from '@site/docs/docs/designs/tristan/options/zipperlocation/readme.mdx'
+
+## Conditional Options {#conditional}
+
+### Size of the hem {#hemsize}
+
+**Size of the hem, a percentage of the distance between the neckline and the waist**
+
+- Type: **Percentage**
+- Default: **5.62%**
+- Minimum: **1%**
+- Maximum: **25%**
+
+<Hemsize />
+
+### Location of the lacing {#lacinglocation}
+
+**Lacing in the front, or the back**
+
+- Type: **List**
+- Default: **front**
+- options:
+  - front
+  - back
+
+<Lacinglocation />
+
+### Lacing width {#lacingwidth}
+
+**Width of the lacing opening**
+
+- Type: **Percentage**
+- Default: **20%**
+- Minimum: **0%**
+- Maximum: **50%**
+
+<Lacingwidth />
+
+### Hem option {#hem}
+
+**Add a hem.**
+
+- Type: **Boolean**
+- Default: **false**
+
+<Hem />
+
+### Peplum fullness {#peplumfullness}
+
+**Controls the 'fullness' of the peplum. Basically from a half-circle to a full-circle.**
+
+- Type: **Degrees**
+- Default: **180°**
+- Minimum: **180°**
+- Maximum: **360°**
+
+<Peplumfullness />
+
+### Peplum size {#peplumsize}
+
+**Controls the size of the peplum**
+
+- Type: **Percentage**
+- Default: **10%**
+- Minimum: **5%**
+- Maximum: **250%**
+
+<Peplumsize />
+
+### Shoulder dart curvature {#shoulderdartcurvature}
+
+**Controls the curvature of the upper part of the shoulder dart**
+
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **-5%**
+- Maximum: **2.5%**
+
+<Shoulderdartcurvature />
+
+## Darts {#darts}
+
+### Waist dart position {#waistdartposition}
+
+**Controls the position of the waist 'dart', moving it to the center (negative) or side (positive)**
+
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **-100%**
+- Maximum: **100%**
+
+<Waistdartposition />
+
+## Fit {#fit}
+
+### Bust span ease {#bustspanease}
+
+**Controls the amount of ease along the bust span**
+
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **-5%**
+- Maximum: **20%**
+
+<Bustspanease />
+
+### Chest ease {#chestease}
+
+**Controls the amount of ease at the chest**
+
+- Type: **Percentage**
+- Default: **11%**
+- Minimum: **5%**
+- Maximum: **20%**
+
+<Chestease />
+
+### Full chest ease reduction {#fullchesteasereduction}
+
+**Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area**
+
+- Type: **Percentage**
+- Default: **4%**
+- Minimum: **0%**
+- Maximum: **8%**
+
+<Fullchesteasereduction />
+
+### Shoulder to shoulder ease {#shouldertoshoulderease}
+
+**Controls the amount of ease along the shoulder to shoulder measurement**
+
+- Type: **Percentage**
+- Default: **-0.5%**
+- Minimum: **-1%**
+- Maximum: **5%**
+
+<Shouldertoshoulderease />
+
+### Waist ease {#waistease}
+
+**Controls the amount of ease at the waist**
+
+- Type: **Percentage**
+- Default: **5%**
+- Minimum: **1%**
+- Maximum: **20%**
+
+<Waistease />
+
+## options {#options}
+
+### Lacing option {#lacing}
+
+**This removes part of the seam to create an opening for lacing**
+
+- Type: **Boolean**
+- Default: **true**
+
+<Lacing />
+
+### Peplum {#peplum}
+
+**Add a peplum**
+
+- Type: **Boolean**
+- Default: **false**
+
+<Peplum />
+
+### Zipper location {#zipperlocation}
+
+**The location of the zipper: side, back, or front**
+
+- Type: **List**
+- Default: **side**
+- options:
+  - front
+  - side
+  - back
+
+<Zipperlocation />
+
+## Style {#style}
+
+### Depth of the Armhole {#armholedepth}
+
+**Controls how deep the armhole is**
+
+- Type: **Percentage**
+- Default: **44%**
+- Minimum: **38%**
+- Maximum: **55%**
+
+<Armholedepth />
+
+### Depth of the cut in the back {#cutdepthback}
+
+**Controls the depth of the cut in the back**
+
+- Type: **Percentage**
+- Default: **40%**
+- Minimum: **5%**
+- Maximum: **90%**
+
+<Cutdepthback />
+
+### Depth of the cut in the front {#cutdepthfront}
+
+**Controls the depth of the cut in the front**
+
+- Type: **Percentage**
+- Default: **80%**
+- Minimum: **0%**
+- Maximum: **125%**
+
+<Cutdepthfront />
+
+### Roundness of the cut in the back {#cutroundnessback}
+
+**Controls how 'round' the cut in the back is, from V to round to square**
+
+- Type: **Percentage**
+- Default: **20%**
+- Minimum: **0%**
+- Maximum: **100%**
+
+<Cutroundnessback />
+
+### Roundness of the cut in the front {#cutroundnessfront}
+
+**Controls how 'round' the cut in the front is, from V to round to square**
+
+- Type: **Percentage**
+- Default: **10%**
+- Minimum: **0%**
+- Maximum: **100%**
+
+<Cutroundnessfront />
+
+### Shoulder dart position {#shoulderdartposition}
+
+**Controls the position of the shoulder dart**
+
+- Type: **Percentage**
+- Default: **50%**
+- Minimum: **10%**
+- Maximum: **90%**
+
+<Shoulderdartposition />
+
+### Width of the straps {#strapwidth}
+
+**Controls the width of the straps**
+
+- Type: **Percentage**
+- Default: **45%**
+- Minimum: **5%**
+- Maximum: **90%**
+
+<Strapwidth />
+
+## Advanced {#advanced}
+
+### Front shoulder width {#frontshoulderwidth}
+
+**Controls how much width is added to the shoulder in the front**
+
+- Type: **Percentage**
+- Default: **95%**
+- Minimum: **92%**
+- Maximum: **98%**
+
+<Frontshoulderwidth />
+
+### High bust width {#highbustwidth}
+
+**Controls the width of the high bust**
+
+- Type: **Percentage**
+- Default: **86%**
+- Minimum: **80%**
+- Maximum: **92%**
+
+<Highbustwidth />
+
+### Upper dart length {#upperdartlength}
+
+**Controls the length of the upper dart**
+
+- Type: **Percentage**
+- Default: **90%**
+- Minimum: **80%**
+- Maximum: **95%**
+
+<Upperdartlength />
+
+### Waist dart length {#waistdartlength}
+
+**Controls the length of the waist dart**
+
+- Type: **Percentage**
+- Default: **90%**
+- Minimum: **75%**
+- Maximum: **95%**
+
+<Waistdartlength />

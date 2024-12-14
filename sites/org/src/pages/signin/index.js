@@ -11,8 +11,6 @@ import { useHistory } from 'react-router-dom'
 export default function SignInPage() {
   const history = useHistory()
 
-  const onSuccess = (data) => history.push('/account')
-
   return (
     <DocusaurusPage
       DocusaurusLayout={DocusaurusLayout}
@@ -22,7 +20,7 @@ export default function SignInPage() {
     >
       <div className="flex flex-col items-center h-screen justify-center text-base-content px-4">
         <div className="max-w-lg w-full">
-          <SignIn onSuccess={onSuccess} />
+          <SignIn />
         </div>
       </div>
     </DocusaurusPage>

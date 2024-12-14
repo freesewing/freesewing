@@ -109,7 +109,7 @@ async function generateDesignsDocs() {
         .sort()
         .map(
           (opt) =>
-            `import ${capitalize(opt.toLowerCase())} from '@site/docs/designs/${name}/options/${opt.toLowerCase()}/readme.mdx'`
+            `import ${capitalize(opt.toLowerCase())} from '@site/docs/docs/designs/${name}/options/${opt.toLowerCase()}/readme.mdx'`
         )
       const content = [
         `---`,
@@ -160,7 +160,7 @@ async function generateDesignsDocs() {
             }
           }
         }
-        const dir = `./docs/designs/${name}/options`
+        const dir = `./docs/docs/designs/${name}/options`
         await ensuredir(dir)
         fs.writeFileSync(`${dir}/readme.mdx`, content.join('\n'))
       }

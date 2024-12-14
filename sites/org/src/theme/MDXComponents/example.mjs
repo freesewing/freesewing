@@ -6,8 +6,8 @@ import { pluginGore } from '@freesewing/plugin-gore'
 import { pluginRingsector } from '@freesewing/plugin-ringsector'
 import { Design } from '@freesewing/core'
 import yaml from 'js-yaml'
-import { Pattern } from '@freesewing/react/pattern'
-import { PatternXray } from '@freesewing/react/xray'
+import { Pattern } from '@freesewing/react/components/Pattern'
+import { Xray } from '@freesewing/react/components/Xray'
 //import { t } from '@freesewing/react-components/methods'
 import Markdown from 'react-markdown'
 
@@ -74,7 +74,7 @@ export const ShowPattern = ({ renderProps, logs, mode = 'normal' }) => {
     )
 
   return mode === 'xray' ? (
-    <PatternXray {...{ renderProps }} className="freesewing pattern text-base-content" />
+    <Xray {...{ renderProps }} className="freesewing pattern text-base-content" />
   ) : (
     <Pattern {...{ renderProps }} className="freesewing pattern text-base-content" />
   )

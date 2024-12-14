@@ -1,0 +1,279 @@
+---
+title: 'Umbra undies: Design Options'
+sidebar_label: Design Options
+sidebar_position: 10
+toc_max_heading_level: 5
+---
+
+import Backdip from '@site/docs/docs/designs/umbra/options/backdip/readme.mdx'
+import Backdipshape from '@site/docs/docs/designs/umbra/options/backdipshape/readme.mdx'
+import Backexposure from '@site/docs/docs/designs/umbra/options/backexposure/readme.mdx'
+import Bulge from '@site/docs/docs/designs/umbra/options/bulge/readme.mdx'
+import Bulgefullness from '@site/docs/docs/designs/umbra/options/bulgefullness/readme.mdx'
+import Elasticstretch from '@site/docs/docs/designs/umbra/options/elasticstretch/readme.mdx'
+import Flipback from '@site/docs/docs/designs/umbra/options/flipback/readme.mdx'
+import Frontdip from '@site/docs/docs/designs/umbra/options/frontdip/readme.mdx'
+import Frontdipshape from '@site/docs/docs/designs/umbra/options/frontdipshape/readme.mdx'
+import Frontexposure from '@site/docs/docs/designs/umbra/options/frontexposure/readme.mdx'
+import Frontreduction from '@site/docs/docs/designs/umbra/options/frontreduction/readme.mdx'
+import Gussetposition from '@site/docs/docs/designs/umbra/options/gussetposition/readme.mdx'
+import Gussetwidth from '@site/docs/docs/designs/umbra/options/gussetwidth/readme.mdx'
+import Legrise from '@site/docs/docs/designs/umbra/options/legrise/readme.mdx'
+import Minfabricwidth from '@site/docs/docs/designs/umbra/options/minfabricwidth/readme.mdx'
+import Pocketgap from '@site/docs/docs/designs/umbra/options/pocketgap/readme.mdx'
+import Pocketheight from '@site/docs/docs/designs/umbra/options/pocketheight/readme.mdx'
+import Pockets from '@site/docs/docs/designs/umbra/options/pockets/readme.mdx'
+import Rise from '@site/docs/docs/designs/umbra/options/rise/readme.mdx'
+import Splitposition from '@site/docs/docs/designs/umbra/options/splitposition/readme.mdx'
+import Xstretch from '@site/docs/docs/designs/umbra/options/xstretch/readme.mdx'
+import Ystretch from '@site/docs/docs/designs/umbra/options/ystretch/readme.mdx'
+
+## Conditional Options {#conditional}
+
+### Bulge fullness {#bulgefullness}
+
+**Determines the roundness of the bulge. Doesn't have an effect if the bulge is disabled.**
+
+- Type: **Percentage**
+- Default: **75%**
+- Minimum: **25%**
+- Maximum: **100%**
+
+<Bulgefullness />
+
+### Pocket gap {#pocketgap}
+
+**Controls how much space is left in the front between both pockets. Only has an effect with pockets enabled.**
+
+- Type: **Percentage**
+- Default: **25%**
+- Minimum: **15%**
+- Maximum: **35%**
+
+<Pocketgap />
+
+### Pocket height {#pocketheight}
+
+**Controls the position of the pocket hem or the zippers. Increasing this option results in shorter pockets. Only has an effect with pockets enabled.**
+
+- Type: **Percentage**
+- Default: **20%**
+- Minimum: **10%**
+- Maximum: **30%**
+
+<Pocketheight />
+
+## Fit {#fit}
+
+### Bulge {#bulge}
+
+**Increase the bugle angle to create more room in the front pouch. Doesn't kick in below 2 degrees.**
+
+- Type: **Degrees**
+- Default: **0°**
+- Minimum: **0°**
+- Maximum: **30°**
+
+<Bulge />
+
+### Elastic stretch {#elasticstretch}
+
+**Adjust how much the elastics are stretched relative to the fabric**
+
+- Type: **Percentage**
+- Default: **5%**
+- Minimum: **0%**
+- Maximum: **10%**
+
+<Elasticstretch />
+
+### Gusset position {#gussetposition}
+
+**Shift the gusset (crotch position with the smallest width) forwards or backwards. The default position equals the cross seam front measurement.**
+
+- Type: **Percentage**
+- Default: **50%**
+- Minimum: **20%**
+- Maximum: **100%**
+
+<Gussetposition />
+
+### Gusset width {#gussetwidth}
+
+**Controls the minimum width in the crotch area**
+
+- Type: **Percentage**
+- Default: **12%**
+- Minimum: **3%**
+- Maximum: **20%**
+
+<Gussetwidth />
+
+### Crotch seam {#splitposition}
+
+**Determines the position of the crotch seam**
+
+- Type: **Percentage**
+- Default: **11%**
+- Minimum: **0%**
+- Maximum: **45%**
+
+<Splitposition />
+
+### Horizontal fabric stretch {#xstretch}
+
+**Adjust this for more or less stretchy fabric in the horizontal direction**
+
+- Type: **Percentage**
+- Default: **15%**
+- Minimum: **0%**
+- Maximum: **75%**
+
+<Xstretch />
+
+### Vertical fabric stretch {#ystretch}
+
+**Adjust this for more or less stretchy fabric in the vertical direction**
+
+- Type: **Percentage**
+- Default: **5%**
+- Minimum: **0%**
+- Maximum: **50%**
+
+<Ystretch />
+
+## Style {#style}
+
+### Back waist dip {#backdip}
+
+**Controls how much the back waist curves (revealing more or less skin)**
+
+- Type: **Percentage**
+- Default: **-2.5%**
+- Minimum: **-15%**
+- Maximum: **10%**
+
+<Backdip />
+
+### Back waist dip shape {#backdipshape}
+
+**Controls the shape of the back waist dip. Doesn't have much effect if the back waist dip is zero.**
+
+- Type: **Percentage**
+- Default: **80%**
+- Minimum: **0%**
+- Maximum: **95%**
+
+<Backdipshape />
+
+### Back exposure {#backexposure}
+
+**Controls the amount of exposed skin on the back**
+
+- Type: **Percentage**
+- Default: **15%**
+- Minimum: **0%**
+- Maximum: **100%**
+
+<Backexposure />
+
+### Front waist dip {#frontdip}
+
+**Controls how much the front waist curves (revealing more or less skin)**
+
+- Type: **Percentage**
+- Default: **2.5%**
+- Minimum: **-5%**
+- Maximum: **15%**
+
+<Frontdip />
+
+### Front waist dip shape {#frontdipshape}
+
+**Controls the shape of the front waist dip. Doesn't have much effect if the front waist dip is zero.**
+
+- Type: **Percentage**
+- Default: **75%**
+- Minimum: **0%**
+- Maximum: **95%**
+
+<Frontdipshape />
+
+### Front exposure {#frontexposure}
+
+**Controls the amount of exposed skin on the front**
+
+- Type: **Percentage**
+- Default: **70%**
+- Minimum: **5%**
+- Maximum: **100%**
+
+<Frontexposure />
+
+### Front narrowing {#frontreduction}
+
+**Controls by how much the front part is slimmer than the back part**
+
+- Type: **Percentage**
+- Default: **10%**
+- Minimum: **0%**
+- Maximum: **30%**
+
+<Frontreduction />
+
+### Leg rise {#legrise}
+
+**Controls how high the leg is cut out**
+
+- Type: **Percentage**
+- Default: **0%**
+- Minimum: **-20%**
+- Maximum: **40%**
+
+<Legrise />
+
+### Minimum fabric width {#minfabricwidth}
+
+**Controls the minimum width of the thong strip and side band. Does not have an effect if the back exposure and the leg rise is low.**
+
+- Type: **Percentage**
+- Default: **2%**
+- Minimum: **0.5%**
+- Maximum: **5%**
+
+<Minfabricwidth />
+
+### Pockets {#pockets}
+
+**Choose if you want pockets**
+
+- Type: **List**
+- Default: **none**
+- options:
+  - none
+  - inside
+  - zipper
+
+<Pockets />
+
+### Rise {#rise}
+
+**Controls the height of the waist. A value of 100% puts the waistband onto the measured hip line.**
+
+- Type: **Percentage**
+- Default: **75%**
+- Minimum: **20%**
+- Maximum: **150%**
+
+<Rise />
+
+## Advanced {#advanced}
+
+### Flip back {#flipback}
+
+**Determines if the back part should be rendered upside down**
+
+- Type: **Boolean**
+- Default: **true**
+
+<Flipback />

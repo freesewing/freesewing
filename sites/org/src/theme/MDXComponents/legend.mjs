@@ -1,6 +1,6 @@
 import React from 'react'
 import { Legend as LegendDesign } from '@freesewing/legend'
-import { Pattern } from '@freesewing/react/pattern'
+import { Pattern } from '@freesewing/react/components/Pattern'
 
 export const Legend = ({ part = '' }) => {
   const settings = {
