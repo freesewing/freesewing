@@ -688,7 +688,7 @@ export const ToggleInput = ({
       type="checkbox"
       value={current}
       onChange={() => update(list.indexOf(current) === 0 ? list[1] : list[0])}
-      className="toggle my-3 toggle-primary"
+      className="daisy-toggle my-3 daisy-toggle-primary"
       checked={list.indexOf(current) === 0 ? true : false}
     />
   </FormControl>

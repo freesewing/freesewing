@@ -110,7 +110,7 @@ const t = (input) => input
  * @param {object} props - All the React props
  * @param {function} Link - A custom Link component, typically the Docusaurus one, but it's optional
  */
-export const AccountLinks = ({ Link = false }) => {
+export const Links = ({ Link = false }) => {
   // Use custom Link component if available
   if (!Link) Link = DefaultLink
 

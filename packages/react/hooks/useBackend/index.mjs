@@ -114,7 +114,9 @@ function Backend(token) {
   this.token = token
   this.headers = authenticationHeaders(token)
   this.restClient = new RestClient(backend, this.headers)
+  this.delete = this.restClient.delete
   this.get = this.restClient.get
+  this.patch = this.restClient.patch
   this.put = this.restClient.put
   this.post = this.restClient.post
 }

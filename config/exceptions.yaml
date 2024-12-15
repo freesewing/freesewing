@@ -93,7 +93,7 @@ packageJson:
       "./components/Account": "./components/Account/index.mjs"
       "./components/Breadcrumbs": "./components/Breadcrumbs/index.mjs"
       "./components/Control": "./components/Control/index.mjs"
-      "./components/DocusaurusPage": "./components/DocusaurusPage/index.mjs"
+      "./components/Docusaurus": "./components/Docusaurus/index.mjs"
       "./components/Editor": "./components/Editor/index.mjs"
       "./components/Icon": "./components/Icon/index.mjs"
       "./components/Input": "./components/Input/index.mjs"

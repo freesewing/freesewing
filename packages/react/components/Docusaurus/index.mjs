@@ -33,6 +33,23 @@ export const DocusaurusPage = (props) => {
 }
 
 /*
+ * This component should be the top level of a Docusaurus doc (mdx)
+ * where you want access to context (typically account pages and so on)
+ *
+ * This sets up the various context providers before
+ * passing all props down to the InnerPageWrapper.
+ * This is required because the context providers need to
+ * be setup for the modal and loading state work we do in the InnerPageWrapper
+ */
+export const DocusaurusDoc = (props) => (
+  <ModalContextProvider>
+    <LoadingStatusContextProvider>
+      <InnerDocusaurusPage {...props} Layout={false} />
+    </LoadingStatusContextProvider>
+  </ModalContextProvider>
+)
+
+/*
  * This component needs to be a child of the ContextWrapper
  *
  * @param {object} props - All React props

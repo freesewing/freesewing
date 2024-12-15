@@ -1,26 +1,36 @@
+// Dependencies
+import { horFlexClasses, notEmpty } from '@freesewing/utils'
 // Hooks
 import React, { useState, useEffect, Fragment, useContext } from 'react'
 import { useBackend } from '@freesewing/react/hooks/useBackend'
 // Context
 import { LoadingStatusContext } from '@freesewing/react/context/LoadingStatus'
+import { ModalContext } from '@freesewing/react/context/Modal'
 // Components
-import { PlusIcon, TrashIcon, LeftIcon } from '@freesewing/react/components/Icon'
+import { BookmarkIcon, LeftIcon, PlusIcon, TrashIcon } from '@freesewing/react/components/Icon'
 import { Link as WebLink } from '@freesewing/react/components/Link'
-//import { DisplayRow } from './shared.mjs'
-//import { StringInput } from 'shared/components/inputs.mjs'
-//import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
+import { ModalWrapper } from '@freesewing/react/components/Modal'
+import { StringInput } from '@freesewing/react/components/Input'
+
+/*
+ * Various bookmark types
+ */
+const types = {
+  design: 'Designs',
+  pattern: 'Patterns',
+  set: 'Measurements Sets',
+  cset: 'Curated Measurements Sets',
+  doc: 'Documentation',
+  custom: 'Custom Bookmarks',
+}
 
 /**
  * Component for the account/bookmarks page
- *
- * @param {object} props - All React props
- * @param {function} Link - An optional custom Link component
  */
-export const AccountBookmarks = ({ Link = false }) => {
-  if (!Link) Link = WebLink
-
-  // Hooks
+export const Bookmarks = () => {
+  // Hooks & Context
   const backend = useBackend()
+  const { setModal, clearModal } = useContext(ModalContext)
   const { setLoadingStatus, LoadingProgress } = useContext(LoadingStatusContext)
 
   // State
@@ -66,12 +76,12 @@ export const AccountBookmarks = ({ Link = false }) => {
       await backend.removeBookmark(id)
       setLoadingStatus([
         true,
-        <LoadingProgress val={i} max={selCount} msg={t('removingBookmarks')} key="linter" />,
+        <LoadingProgress val={i} max={selCount} msg="Removing Bookmarks" key="linter" />,
       ])
     }
     setSelected({})
     setRefresh(refresh + 1)
-    setLoadingStatus([true, 'nailedIt', true, true])
+    setLoadingStatus([true, 'Nailed it', true, true])
   }
 
   const perType = {}
@@ -80,13 +90,27 @@ export const AccountBookmarks = ({ Link = false }) => {
   return (
     <div className="max-w-4xl xl:pl-4">
       <p className="text-center md:text-right">
-        <Link
+        <button
           className="daisy-btn daisy-btn-primary capitalize w-full md:w-auto hover:text-primary-content hover:no-underline"
-          href="/new/bookmark"
+          onClick={() =>
+            setModal(
+              <ModalWrapper
+                flex="col"
+                justify="top lg:justify-center"
+                slideFrom="right"
+                keepOpenOnClick
+              >
+                <div className="w-full max-w-xl">
+                  <h2>New Bookmark</h2>
+                  <NewBookmark onCreated={() => setRefresh(refresh + 1)} />
+                </div>
+              </ModalWrapper>
+            )
+          }
         >
           <PlusIcon />
           New Bookmark
-        </Link>
+        </button>
       </p>
       {bookmarks.length > 0 ? (
         <button
@@ -129,9 +153,7 @@ export const AccountBookmarks = ({ Link = false }) => {
                           onClick={() => toggleSelect(bookmark.id)}
                         />
                       </td>
-                      <td className="text-base font-medium">
-                        <Link href={`/account/bookmark?id=${bookmark.id}`}>{bookmark.title}</Link>
-                      </td>
+                      <td className="text-base font-medium">{bookmark.title}</td>
                       <td className="text-base font-medium">
                         <WebLink href={bookmark.url}>
                           {bookmark.url.length > 30
@@ -150,84 +172,58 @@ export const AccountBookmarks = ({ Link = false }) => {
   )
 }
 
-const types = {
-  design: 'Designs',
-  pattern: 'Patterns',
-  set: 'Measurements Sets',
-  cset: 'Curated Measurements Sets',
-  doc: 'Documentation',
-  custom: 'Custom Bookmarks',
-}
-
-export const Bookmark = ({ bookmark }) => {
-  const { t } = useTranslation(ns)
-
-  return bookmark ? (
-    <div>
-      <DisplayRow title={t('title')}>{bookmark.title}</DisplayRow>
-      <DisplayRow title={t('url')}>
-        {bookmark.url.length > 30 ? bookmark.url.slice(0, 30) + '...' : bookmark.url}
-      </DisplayRow>
-      <DisplayRow title={t('type')}>{t(`${bookmark.type}Bookmark`)}</DisplayRow>
-      <div className="flex flex-row flex-wrap md:gap-2 md:items-center md:justify-between mt-8">
-        <Link
-          href="/account/bookmarks"
-          className="w-full md:w-auto daisy-btn daisy-btn-secondary pr-6 flex flex-row items-center gap-2"
-        >
-          <LeftIcon />
-          {t('bookmarks')}
-        </Link>
-      </div>
-    </div>
-  ) : null
-}
-
-// Component for the 'new/bookmark' page
-export const NewBookmark = () => {
+/*
+ * Component to create a new bookmark
+ *
+ * @param {object} props - All the React props
+ * @param {function} onCreated - An optional method to call when the bookmark is created
+ */
+export const NewBookmark = ({ onCreated = false }) => {
   // Hooks
   const { setLoadingStatus } = useContext(LoadingStatusContext)
-  const router = useRouter()
+  const { clearModal } = useContext(ModalContext)
   const backend = useBackend()
-  const { t, i18n } = useTranslation(ns)
-  const docs = {}
-  for (const option of ['title', 'location', 'type']) {
-    docs[option] = (
-      <DynamicMdx language={i18n.language} slug={`docs/about/site/bookmarks/${option}`} />
-    )
-  }
 
   // State
   const [title, setTitle] = useState('')
   const [url, setUrl] = useState('')
 
+  // This method will create the bookmark
   const createBookmark = async () => {
-    setLoadingStatus([true, 'processingUpdate'])
-    const result = await backend.createBookmark({
+    setLoadingStatus([true, 'Processing update'])
+    const [status, body] = await backend.createBookmark({
       title,
       url,
       type: 'custom',
     })
-    if (result.success) {
-      setLoadingStatus([true, 'nailedIt', true, true])
-      router.push('/account/bookmarks')
-    } else setLoadingStatus([true, 'backendError', true, false])
+    if (status === 201) setLoadingStatus([true, 'Bookmark created', true, true])
+    else
+      setLoadingStatus([
+        true,
+        'An error occured, the bookmark was not created. Please report this.',
+        true,
+        false,
+      ])
+    if (typeof onCreated === 'function') onCreated()
+    clearModal()
   }
 
+  // Render the form
   return (
-    <div className="max-w-2xl xl:pl-4">
+    <div className="max-w-2xl w-full">
       <StringInput
         id="bookmark-title"
-        label={t('title')}
-        docs={docs.title}
+        label="Title"
+        labelBL="The title/name of your bookmark"
         update={setTitle}
         current={title}
         valid={(val) => val.length > 0}
-        placeholder={t('account')}
+        placeholder="Bookmark title"
       />
       <StringInput
         id="bookmark-url"
-        label={t('location')}
-        docs={docs.location}
+        label="Location"
+        labelBL="The location/url of your bookmark"
         update={setUrl}
         current={url}
         valid={(val) => val.length > 0}
@@ -239,11 +235,82 @@ export const NewBookmark = () => {
           disabled={!(title.length > 0 && url.length > 0)}
           onClick={createBookmark}
         >
-          {t('newBookmark')}
+          New bookmark
         </button>
       </div>
     </div>
   )
 }
 
-const t = (input) => input
+/*
+ * A component to add a bookmark from wherever
+ *
+ * @params {object} props - All React props
+ * @params {string} props.href - The bookmark href
+ * @params {string} props.title - The bookmark title
+ * @params {string} props.type - The bookmark type
+ */
+export const BookmarkButton = ({ slug, type, title }) => {
+  const { setModal } = useContext(ModalContext)
+  const typeTitles = { docs: 'page' }
+
+  return (
+    <button
+      className={`daisy-btn daisy-btn-secondary daisy-btn-outline ${horFlexClasses}`}
+      onClick={() =>
+        setModal(
+          <ModalWrapper flex="col" justify="top lg:justify-center" slideFrom="right">
+            <CreateBookmark {...{ type, title, slug }} />
+          </ModalWrapper>
+        )
+      }
+    >
+      <BookmarkIcon />
+      <span>Bookmark this {typeTitles[type] ? typeTitles[type] : type}</span>
+    </button>
+  )
+}
+
+/*
+ * A component to create a bookmark, preloaded with props
+ *
+ * @params {object} props - All React props
+ * @params {string} props.href - The bookmark href
+ * @params {string} props.title - The bookmark title
+ * @params {string} props.type - The bookmark type
+ *
+ */
+export const CreateBookmark = ({ type, title, slug }) => {
+  const backend = useBackend()
+  const [name, setName] = useState(title)
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
+  const { setModal } = useContext(ModalContext)
+
+  const url = `/${slug}`
+
+  const bookmark = async (evt) => {
+    evt.stopPropagation()
+    setLoadingStatus([true, 'Contacting backend'])
+    const [status] = await backend.createBookmark({ type, title, url })
+    if (status === 201) {
+      setLoadingStatus([true, 'Bookmark created', true, true])
+      setModal(false)
+    } else
+      setLoadingStatus([
+        true,
+        'Something unexpected happened, failed to create a bookmark',
+        true,
+        false,
+      ])
+  }
+
+  return (
+    <div className="mt-12">
+      <h2>New bookmark</h2>
+      <StringInput label="Title" current={name} update={setName} valid={notEmpty} labelBL={url} />
+      <button className="daisy-btn daisy-btn-primary w-full mt-4" onClick={bookmark}>
+        Create bookmark
+      </button>
+    </div>
+  )
+}

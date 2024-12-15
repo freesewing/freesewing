@@ -16,6 +16,12 @@ export const horFlexClassesNoSm =
   'md:flex md:flex-row md:items-center md:justify-between md:gap-4 md-w-full'
 
 /*
+ * These classes are what makes a link a link
+ */
+export const linkClasses =
+  'underline decoration-2 hover:decoration-4 text-secondary hover:text-secondary-focus'
+
+/*
  * FUNCTIONS
  */
 
@@ -81,6 +87,87 @@ export function distanceAsMm(val = false, imperial = false) {
   return isNaN(val) ? false : Number(val)
 }
 
+/**
+ * Format a number using fractions, typically used for imperial
+ *
+ * @param {number} fraction - the value to process
+ * @param {string} format - One of
+ * fraction: the value to process
+ * format: one of the the type of formatting to apply. html, notags, or anything else which will only return numbers
+ */
+export const formatFraction128 = (fraction, format = 'html') => {
+  let negative = ''
+  let inches = ''
+  let rest = ''
+  if (fraction < 0) {
+    fraction = fraction * -1
+    negative = '-'
+  }
+  if (Math.abs(fraction) < 1) rest = fraction
+  else {
+    inches = Math.floor(fraction)
+    rest = fraction - inches
+  }
+  let fraction128 = Math.round(rest * 128)
+  if (fraction128 == 0) return formatImperial(negative, inches || fraction128, false, false, format)
+
+  for (let i = 1; i < 7; i++) {
+    const numoFactor = Math.pow(2, 7 - i)
+    if (fraction128 % numoFactor === 0)
+      return formatImperial(negative, inches, fraction128 / numoFactor, Math.pow(2, i), format)
+  }
+
+  return (
+    negative +
+    Math.round(fraction * 100) / 100 +
+    (format === 'html' || format === 'notags' ? '"' : '')
+  )
+}
+
+/*
+ * Format an imperial value
+ *
+ * @param {bool} neg - Whether or not to render as a negative value
+ * @param {number} inch - The inches
+ * @param {number} numo - The fration numerator
+ * @param {number} deno - The fration denominator
+ * @param {string} format - One of 'html', 'notags', or anything else for numbers only
+ * @return {string} formatted - The formatted value
+ */
+export function formatImperial(neg, inch, numo = false, deno = false, format = 'html') {
+  if (format === 'html') {
+    if (numo) return `${neg}${inch}&nbsp;<sup>${numo}</sup>/<sub>${deno}</sub>"`
+    else return `${neg}${inch}"`
+  } else if (format === 'notags') {
+    if (numo) return `${neg}${inch} ${numo}/${deno}"`
+    else return `${neg}${inch}"`
+  } else {
+    if (numo) return `${neg}${inch} ${numo}/${deno}`
+    else return `${neg}${inch}`
+  }
+}
+
+/**
+ * Format a value in mm, taking units into account
+ *
+ * @param {number} val - The value to format
+ * @param {units} units - Both 'imperial' and true will result in imperial, everything else is metric
+ * @param {string} format - One of 'html', 'notags', or anything else for numbers only
+ * @return {string} result - The formatted result
+ */
+export function formatMm(val, units, format = 'html') {
+  val = roundDistance(val)
+  if (units === 'imperial' || units === true) {
+    if (val == 0) return formatImperial('', 0, false, false, format)
+
+    let fraction = val / 25.4
+    return formatFraction128(fraction, format)
+  } else {
+    if (format === 'html' || format === 'notags') return roundDistance(val / 10) + 'cm'
+    else return roundDistance(val / 10)
+  }
+}
+
 /** convert a value that may contain a fraction to a decimal */
 export function fractionToDecimal(value) {
   // if it's just a number, return it
@@ -119,6 +206,17 @@ export function fractionToDecimal(value) {
 }
 
 /*
+ * Get search parameters from the browser
+ *
+ * @param {string} name - Name of the parameter to retrieve
+ * @return {string} value - Value of the parameter
+ */
+export function getSearchParam(name = 'id') {
+  if (typeof window === 'undefined') return undefined
+  return new URLSearchParams(window.location.search).get(name) // eslint-disable-line
+}
+
+/*
  * Convert a measurement to millimeter
  *
  * @param {number} value - The current value
@@ -147,6 +245,14 @@ export function measurementAsUnits(mmValue, units = 'metric') {
 }
 
 /*
+ * A method to ensure input is not empty
+ *
+ * @param {string} input - The input
+ * @return {bool} notEmpty - True if input is not an emtpy strign, false of not
+ */
+export const notEmpty = (input) => `${input}`.length > 0
+
+/*
  * Generic rounding method
  *
  * @param {number} val - The input number
@@ -155,4 +261,71 @@ export function measurementAsUnits(mmValue, units = 'metric') {
  */
 export function round(val, decimals = 1) {
   return Math.round(val * Math.pow(10, decimals)) / Math.pow(10, decimals)
+}
+
+/*
+ * Rounds a value that is a distance, either mm or inch
+ *
+ * @param {number} val - The value to round
+ * @param {string} units - Use 'imperial' or true for imperial, anything else and you get metric
+ * @return {number} rounded - The rounded value
+ */
+export function roundDistance(val, units) {
+  return units === 'imperial' || units === true
+    ? Math.round(val * 1000000) / 1000000
+    : Math.round(val * 10) / 10
+}
+
+/*
+ * A method to render a date in a way that is concise
+ *
+ * @param {number} timestamp - The timestamp to render, or current time if none is provided
+ * @param {bool} withTime - Set this to true to also include time (in addition to date)
+ * @return {string} date - The formatted date
+ */
+export function shortDate(timestamp = false, withTime = true) {
+  const options = {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  }
+  if (withTime) {
+    options.hour = '2-digit'
+    options.minute = '2-digit'
+    options.hour12 = false
+  }
+  const ts = timestamp ? new Date(timestamp) : new Date()
+
+  return ts.toLocaleDateString('en', options)
+}
+
+/*
+ * We used to use react-timeago but that's too much overhead
+ * This is a drop-in replacement that does not rerender
+ *
+ * @param {string/number} timestamp - The time to parse
+ * @return {string} timeago - How long ago it was
+ */
+export function timeAgo(timestamp, terse = true) {
+  const delta = new Date() - new Date(timestamp)
+
+  const seconds = Math.floor(delta / 1000)
+  const minutes = Math.floor(seconds / 60)
+  const hours = Math.floor(minutes / 60)
+  const days = Math.floor(hours / 24)
+  const months = Math.floor(days / 30)
+  const years = Math.floor(days / 365)
+  const suffix = ' ago'
+
+  if (seconds < 1) return 'Now'
+  if (seconds === 1) return `${terse ? '1s' : '1 second'}${suffix}`
+  if (seconds === 60) return `${terse ? '1m' : '1 minute'}${suffix}`
+  if (seconds < 91) return `${seconds}${terse ? 's' : ' seconds'}${suffix}`
+  if (minutes === 60) return `${terse ? '1h' : '1 hour'}${suffix}`
+  if (minutes < 120) return `${minutes}${terse ? 'm' : ' minutes'}${suffix}`
+  if (hours === 24) return `${terse ? '1d' : '1 day'}${suffix}`
+  if (hours < 48) return `${hours}${terse ? 'h' : ' hours'}${suffix}`
+  if (days < 61) return `${days}${terse ? 'd' : ' days'}${suffix}`
+  if (months < 25) return `${months}${terse ? 'M' : ' months'}${suffix}`
+  return `${years}${terse ? 'Y' : ' years'}${suffix}`
 }

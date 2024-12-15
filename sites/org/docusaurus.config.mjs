@@ -5,9 +5,12 @@ import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
 
 /*
- * We bundle the options as one page, so keep them out the sidebar
+ * We customize the sidebar somewhat:
+ *  - We bundle the options as one page, so keep them out the sidebar
+ *  - We hide certain dynamic pages (like for measurements sets, patterns, and so on)
  */
-function hideDesignOptionsFromSidebar(items) {
+function customizeSidebar(items) {
+  // Filter out design options
   const docs = items.filter((entry) => entry.label === 'Docs').pop().items
   for (const item in docs) {
     if (docs[item].label === 'FreeSewing Designs') {
@@ -20,6 +23,7 @@ function hideDesignOptionsFromSidebar(items) {
       }
     }
   }
+
   return items
 }
 
@@ -190,7 +194,7 @@ const config = {
           editUrl: 'https://github.com/freesewing/freesewing/tree/v4/sites/org/',
           async sidebarItemsGenerator({ defaultSidebarItemsGenerator, ...args }) {
             const sidebarItems = await defaultSidebarItemsGenerator(args)
-            return hideDesignOptionsFromSidebar(sidebarItems)
+            return customizeSidebar(sidebarItems)
           },
         },
         theme: {

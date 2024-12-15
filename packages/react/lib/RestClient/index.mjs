@@ -27,6 +27,10 @@ export function RestClient(baseUrl = '', baseHeaders = {}) {
     return withoutBody('HEAD', baseUrl + url, { ...baseHeaders, ...headers }, raw, log)
   }
 
+  this.patch = async function (url, data, headers, raw, log) {
+    return withBody('PATCH', baseUrl + url, data, { ...baseHeaders, ...headers }, raw, log)
+  }
+
   this.post = async function (url, data, headers, raw, log) {
     return withBody('POST', baseUrl + url, data, { ...baseHeaders, ...headers }, raw, log)
   }

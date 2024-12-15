@@ -92,6 +92,13 @@ export const CircleIcon = (props) => (
   </IconWrapper>
 )
 
+// FIXME
+export const CloneIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75" />
+  </IconWrapper>
+)
+
 // Looks like a X
 export const CloseIcon = (props) => (
   <IconWrapper {...props}>
@@ -350,7 +357,7 @@ export const MenuIcon = (props) => (
 )
 
 // Looks like a person icon with a + sign
-export const NewMsetIcon = (props) => (
+export const NewMeasurementsSetIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
   </IconWrapper>

@@ -47,7 +47,7 @@ const LoadingStatus = ({ loadingStatus }) => {
   }
 
   return (
-    <div className="fixed top-0 md:top-28 left-0 w-full z-30 md:px-4 md:mx-auto">
+    <div className="fixed bottom-14 md:top-28 left-0 w-full z-50 md:px-4 md:mx-auto">
       <div
         className={`w-full md:max-w-2xl m-auto bg-${color} flex flex-row items-center gap-4 p-4 px-4 ${fade}
         transition-opacity delay-[${timeout * 1000 - 400}ms] duration-300

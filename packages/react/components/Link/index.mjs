@@ -1,10 +1,5 @@
 import React from 'react'
-
-/*
- * These classes are what makes a link a link
- */
-export const linkClasses =
-  'underline decoration-2 hover:decoration-4 text-secondary hover:text-secondary-focus'
+import { linkClasses } from '@freesewing/utils'
 
 /**
  * An anchor link component
@@ -28,9 +23,10 @@ export const AnchorLink = ({ children, id = '', title = false }) => (
  * @param {array} props.href - The target to link to
  * @param {array} props.title - An optional link title
  * @param {string} props.className - Any non-default CSS classes to apply
+ * @param {string} props.style - Any non-default styles to apply
  */
-export const Link = ({ href, title = false, children, className = linkClasses }) => (
-  <a href={href} className={className} title={title ? title : ''}>
+export const Link = ({ href, title = false, children, className = linkClasses, style = {} }) => (
+  <a href={href} className={className} title={title ? title : ''} style={style}>
     {children}
   </a>
 )

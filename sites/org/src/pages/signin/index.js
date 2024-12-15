@@ -1,5 +1,5 @@
 import DocusaurusLayout from '@theme/Layout'
-import { DocusaurusPage } from '@freesewing/react/components/DocusaurusPage'
+import { DocusaurusPage } from '@freesewing/react/components/Docusaurus'
 import { NoTitleLayout } from '@freesewing/react/components/Layout'
 import { SignIn } from '@freesewing/react/components/SignIn'
 import { useHistory } from 'react-router-dom'

@@ -68,7 +68,7 @@ export const ModalWrapper = ({
     <div
       className={`fixed top-0 left-0 m-0 p-0 shadow w-full h-screen
         transform-all duration-150 ${animation}
-        bg-${bg} bg-opacity-${bgOpacity} z-50 hover:cursor-pointer
+        bg-${bg} bg-opacity-${bgOpacity} z-40 hover:cursor-pointer
         flex flex-${flex} justify-${justify} items-${items} lg:p-12`}
       onClick={close}
     >

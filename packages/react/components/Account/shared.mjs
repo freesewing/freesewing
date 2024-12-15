@@ -1,4 +1,18 @@
-//  __SDEFILE__ - This file is a dependency for the stand-alone environment
+import React from 'react'
+
+/*
+ * A component to display a row of data
+ */
+export const DisplayRow = ({ title, children, keyWidth = 'w-24' }) => (
+  <div className="flex flex-row flex-wrap items-center lg:gap-4 my-2 w-full">
+    <div className={`${keyWidth} text-left md:text-right block md:inline font-bold pr-4 shrink-0`}>
+      {title}
+    </div>
+    <div className="grow">{children}</div>
+  </div>
+)
+
+/*
 import { Spinner } from 'shared/components/spinner.mjs'
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
@@ -126,11 +140,4 @@ export const welcomeSteps = {
   5: [''],
 }
 
-export const DisplayRow = ({ title, children, keyWidth = 'w-24' }) => (
-  <div className="flex flex-row flex-wrap items-center lg:gap-4 my-2 w-full">
-    <div className={`${keyWidth} text-left md:text-right block md:inline font-bold pr-4 shrink-0`}>
-      {title}
-    </div>
-    <div className="grow">{children}</div>
-  </div>
-)
+*/

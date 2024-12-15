@@ -5,7 +5,7 @@ import { useBackend } from '@freesewing/react/hooks/useBackend'
 // Components
 import { Link as DefaultLink } from '@freesewing/react/components/Link'
 import {
-  NewMsetIcon,
+  NewMeasurementsSetIcon,
   NewPatternIcon,
   ShowcaseIcon,
   KioskIcon,
@@ -43,7 +43,7 @@ const newLinks = {
       'Pick a design, add your measurements set, and we will generate a bespoke sewing pattern for you.',
   },
   set: {
-    Icon: NewMsetIcon,
+    Icon: NewMeasurementsSetIcon,
     title: 'Create new measurements set',
     description:
       'Create a new set of measurements which you can then use to generate patterns for.',
