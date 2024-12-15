@@ -28,6 +28,7 @@ import { Lumina, LuminaFront, LuminaBack } from './lumina.mjs'
 import { Lumira, LumiraFront, LumiraBack } from './lumira.mjs'
 import { Lunetius, LunetiusFront } from './lunetius.mjs'
 import { Noble, NobleFront, NobleBack } from './noble.mjs'
+import { Sabrina, SabrinaFront, SabrinaBack } from './sabrina.mjs'
 import { Simon, SimonFront, SimonBack } from './simon.mjs'
 import { Teagan, TeaganFront, TeaganBack } from './teagan.mjs'
 import { Tristan, TristanFront, TristanBack } from './tristan.mjs'
@@ -83,6 +84,7 @@ const lineDrawingsFront = {
   sandy: MissingLinedrawing,
   shelly: MissingLinedrawing,
   shin: MissingLinedrawing,
+  sabrina: SabrinaFront,
   simon: SimonFront,
   simone: MissingLinedrawing,
   skully: MissingLinedrawing,
@@ -124,6 +126,7 @@ const lineDrawingsBack = {
   lumina: LuminaBack,
   lumira: LumiraBack,
   noble: NobleBack,
+  sabrina: SabrinaBack,
   simon: SimonBack,
   teagan: TeaganBack,
   tristan: TristanBack,
@@ -178,6 +181,7 @@ const lineDrawings = {
   sandy: MissingLinedrawing,
   shelly: MissingLinedrawing,
   shin: MissingLinedrawing,
+  sabrina: Sabrina,
   simon: Simon,
   simone: MissingLinedrawing,
   skully: MissingLinedrawing,
