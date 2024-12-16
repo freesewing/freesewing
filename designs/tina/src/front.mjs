@@ -522,7 +522,10 @@ export const front = {
   hide: { from: true },
   options: {
     // Bibi specific, placed here as this is the earliest part that drafts the sideseam
-    fitWaist: { bool: true, menu: 'fit', order: 'EBA' },
+    lengthAdjustment: 0,
+    seatBackAdjustment: 0,
+    necklineWidth: { pct: 0, min: -5, max: 90, menu: 'style' },
+    fitWaist: { bool: false, menu: 'fit', order: 'EBA' },
     waistEase: {
       pct: 5,
       min: -10,
@@ -570,7 +573,7 @@ export const front = {
     armholeDepthFactor: 0.5,
     shoulderEase: { pct: 0, min: -2, max: 6, menu: 'fit' },
 
-    frontCoverage: { pct: 70, min: -75, max: 95, menu: 'style' },
+    frontCoverage: { pct: 50, min: -75, max: 95, menu: 'style' },
     frontEase: { pct: -6, min: -30, max: 0, menu: 'fit' },
     sideGathering: { pct: 0, min: 0, max: 50, menu: 'fit' },
     plotFitHelpers: { bool: false, menu: 'advanced' },
