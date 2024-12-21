@@ -55,16 +55,49 @@ import Zipperposition from '@site/docs/docs/designs/onyx/options/zipperposition/
 
 ## Conditional Options {#conditional}
 
-### Leg hem {#leghem}
+### Hood hem {#hoodhem}
 
-**Sets the hem allowance of the hem along the bottom of the legs, as a multiple of the seam allowance.**
+**Sets the hem allowance along the front of the hood, as a multiple of the seam allowance.**
 
 - Type: **Percentage**
 - Default: **200%**
 - Minimum: **0%**
 - Maximum: **800%**
 
-<Leghem />
+<Hoodhem />
+
+### Neck guard length {#neckguardlength}
+
+**How far to have the zipper guard extend past the top of the zipper.**
+
+- Type: **Percentage**
+- Default: **2%**
+- Minimum: **0%**
+- Maximum: **5%**
+
+<Neckguardlength />
+
+### Neckband length {#neckbandlength}
+
+**Controls how long the neckband is, as a percentage of the circumference of the neckline.**
+
+- Type: **Percentage**
+- Default: **80%**
+- Minimum: **50%**
+- Maximum: **100%**
+
+<Neckbandlength />
+
+### Neckband width {#neckbandwidth}
+
+**Controls how wide the finished neckband will be.**
+
+- Type: **Percentage**
+- Default: **20%**
+- Minimum: **0%**
+- Maximum: **100%**
+
+<Neckbandwidth />
 
 ### Leg Ribbing Length {#legribbinglength}
 
@@ -88,16 +121,16 @@ import Zipperposition from '@site/docs/docs/designs/onyx/options/zipperposition/
 
 <Legribbingwidth />
 
-### Hood hem {#hoodhem}
+### Leg hem {#leghem}
 
-**Sets the hem allowance along the front of the hood, as a multiple of the seam allowance.**
+**Sets the hem allowance of the hem along the bottom of the legs, as a multiple of the seam allowance.**
 
 - Type: **Percentage**
 - Default: **200%**
 - Minimum: **0%**
 - Maximum: **800%**
 
-<Hoodhem />
+<Leghem />
 
 ### Hood depth {#hooddepth}
 
@@ -154,39 +187,6 @@ import Zipperposition from '@site/docs/docs/designs/onyx/options/zipperposition/
 
 <Hoodfrontpiecesize />
 
-### Neck guard length {#neckguardlength}
-
-**How far to have the zipper guard extend past the top of the zipper.**
-
-- Type: **Percentage**
-- Default: **2%**
-- Minimum: **0%**
-- Maximum: **5%**
-
-<Neckguardlength />
-
-### Neckband length {#neckbandlength}
-
-**Controls how long the neckband is, as a percentage of the circumference of the neckline.**
-
-- Type: **Percentage**
-- Default: **80%**
-- Minimum: **50%**
-- Maximum: **100%**
-
-<Neckbandlength />
-
-### Neckband width {#neckbandwidth}
-
-**Controls how wide the finished neckband will be.**
-
-- Type: **Percentage**
-- Default: **20%**
-- Minimum: **0%**
-- Maximum: **100%**
-
-<Neckbandwidth />
-
 ### Skirt hem {#skirthem}
 
 **Sets the hem allowance of the hem along the bottom of the skirt, as a multiple of the seam allowance.**
@@ -231,17 +231,6 @@ import Zipperposition from '@site/docs/docs/designs/onyx/options/zipperposition/
 
 <Skirtwidth />
 
-### Sleeve hem {#sleevehem}
-
-**Sets the hem allowance of the hem along the end of the sleeves, as a multiple of the seam allowance.**
-
-- Type: **Percentage**
-- Default: **200%**
-- Minimum: **0%**
-- Maximum: **800%**
-
-<Sleevehem />
-
 ### Sleeve Ribbing Length {#sleeveribbinglength}
 
 **Controls how long the ribbing around the sleeve is, as a percentage of the sleeve circumference.**
@@ -263,6 +252,17 @@ import Zipperposition from '@site/docs/docs/designs/onyx/options/zipperposition/
 - Maximum: **100%**
 
 <Sleeveribbingwidth />
+
+### Sleeve hem {#sleevehem}
+
+**Sets the hem allowance of the hem along the end of the sleeves, as a multiple of the seam allowance.**
+
+- Type: **Percentage**
+- Default: **200%**
+- Minimum: **0%**
+- Maximum: **800%**
+
+<Sleevehem />
 
 ## Construction {#construction}
 
