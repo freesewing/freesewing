@@ -1,7 +1,12 @@
 import { useMemo } from 'react'
-import { backend } from '@freesewing/react/config/freesewing'
+import { urls } from '@freesewing/config'
 import { RestClient } from '@freesewing/react/lib/RestClient'
 import { useAccount } from '@freesewing/react/hooks/useAccount'
+
+/*
+ * Get backend URL from config
+ */
+const { backend } = urls
 
 /**
  * The useBackend hook

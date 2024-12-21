@@ -1,5 +1,5 @@
 import React from 'react'
-import { logoPath } from '@freesewing/react/components/Logo'
+import { logoPath } from '@freesewing/config'
 
 /*
  * Used inside the pattern editor
@@ -117,6 +117,13 @@ export const CompareIcon = (props) => (
 export const ControlIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971z" />
+  </IconWrapper>
+)
+
+// Looks like two rounded squares above each other with a bit of offset
+export const CopyIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
   </IconWrapper>
 )
 

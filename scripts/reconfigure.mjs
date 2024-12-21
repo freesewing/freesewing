@@ -7,7 +7,7 @@ import mustache from 'mustache'
 import conf from '../lerna.json' assert { type: 'json' }
 const { version } = conf
 import { software, publishedTypes as types, designs, plugins } from '../config/software/index.mjs'
-import { capitalize } from '../packages/core/src/index.mjs'
+import { capitalize } from '../packages/utils/src/index.mjs'
 
 // Working directory
 const cwd = process.cwd()

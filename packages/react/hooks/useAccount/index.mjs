@@ -1,11 +1,11 @@
 import useLocalStorageState from 'use-local-storage-state'
-import { defaultControlLevel } from '@freesewing/react/config/freesewing'
+import { control as defaultControlLevel } from '@freesewing/config'
 
 /*
  * When there is no account, we use this making it easy to check for username
  * or control
  */
-const noAccount = { username: false, control: defaultControlLevel, these: 'nuts' }
+const noAccount = { username: false, control: defaultControlLevel }
 
 /*
  * FreeSewing's useAccount hook. Grants access to the (data in the) user's account

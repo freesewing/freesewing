@@ -1,5 +1,4 @@
-// Export defs
-import { logoPath } from '../../../config/logo.mjs'
+import { logoPath } from '@freesewing/config'
 
 export const logoDefs = [
   {

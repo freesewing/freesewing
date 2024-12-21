@@ -10,12 +10,6 @@ packageJson:
     author: bobgeorgethe3rd (https://github.com/bobgeorgethe3rd)
   benjamin:
     author: woutervdub (https://github.com/woutervdub)
-  collection:
-    exports: '!'
-    module: "./src/index.mjs"
-  config:
-    exports: '!'
-    module: "./src/index.mjs"
   code:
     c8:
       reporter: html
@@ -83,10 +77,13 @@ packageJson:
       "./components/Account": "./components/Account/index.mjs"
       "./components/Breadcrumbs": "./components/Breadcrumbs/index.mjs"
       "./components/Control": "./components/Control/index.mjs"
+      "./components/CopyToClipboard": "./components/CopyToClipboard/index.mjs"
       "./components/Docusaurus": "./components/Docusaurus/index.mjs"
       "./components/Editor": "./components/Editor/index.mjs"
+      "./components/Highlight": "./components/Highlight/index.mjs"
       "./components/Icon": "./components/Icon/index.mjs"
       "./components/Input": "./components/Input/index.mjs"
+      "./components/Json": "./components/Json/index.mjs"
       "./components/Layout": "./components/Layout/index.mjs"
       "./components/LineDrawing": "./components/LineDrawing/index.mjs"
       "./components/Link": "./components/Link/index.mjs"
@@ -99,9 +96,8 @@ packageJson:
       "./components/SignIn": "./components/SignIn/index.mjs"
       "./components/Spinner": "./components/Spinner/index.mjs"
       "./components/Tab": "./components/Tab/index.mjs"
+      "./components/Yaml": "./components/Yaml/index.mjs"
       "./components/Xray": "./components/Xray/index.mjs"
-      # Config
-      "./config/freesewing": "./config/freesewing/index.mjs"
       # Context
       "./context/LoadingStatus": "./context/LoadingStatus/index.mjs"
       "./context/Modal": "./context/Modal/index.mjs"
@@ -110,6 +106,7 @@ packageJson:
       "./hooks/useBackend": "./hooks/useBackend/index.mjs"
       # Lib
       "./lib/RestClient": "./lib/RestClient/index.mjs"
+      "./lib/logoPath": "./components/Logo/path.mjs"
     files:
       - "components/**"
       - "hooks/**"

@@ -1,5 +1,6 @@
 import { cloudflare } from './cloudflare.mjs'
 import { control } from './control.mjs'
+import { logoPath } from './logo.mjs'
 import { measurements, degreeMeasurements, isDegreeMeasurement } from './measurements.mjs'
 import { sewingTechniques } from './sewing.mjs'
 import { roles } from './roles.mjs'
@@ -11,6 +12,7 @@ import { urls } from './urls.mjs'
 export {
   cloudflare,
   control,
+  logoPath,
   measurements,
   degreeMeasurements,
   isDegreeMeasurement,

@@ -40,6 +40,8 @@ import { ToggleInput } from '@freesewing/react/components/Input'
 import { DisplayRow } from './shared.mjs'
 import Markdown from 'react-markdown'
 import { ModalWrapper } from '@freesewing/react/components/Modal'
+import { Json } from '@freesewing/react/components/Json'
+import { Yaml } from '@freesewing/react/components/Yaml'
 
 //import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
 //import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'

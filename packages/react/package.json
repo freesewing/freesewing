@@ -30,10 +30,13 @@
     "./components/Account": "./components/Account/index.mjs",
     "./components/Breadcrumbs": "./components/Breadcrumbs/index.mjs",
     "./components/Control": "./components/Control/index.mjs",
+    "./components/CopyToClipboard": "./components/CopyToClipboard/index.mjs",
     "./components/Docusaurus": "./components/Docusaurus/index.mjs",
     "./components/Editor": "./components/Editor/index.mjs",
+    "./components/Highlight": "./components/Highlight/index.mjs",
     "./components/Icon": "./components/Icon/index.mjs",
     "./components/Input": "./components/Input/index.mjs",
+    "./components/Json": "./components/Json/index.mjs",
     "./components/Layout": "./components/Layout/index.mjs",
     "./components/LineDrawing": "./components/LineDrawing/index.mjs",
     "./components/Link": "./components/Link/index.mjs",
@@ -46,13 +49,14 @@
     "./components/SignIn": "./components/SignIn/index.mjs",
     "./components/Spinner": "./components/Spinner/index.mjs",
     "./components/Tab": "./components/Tab/index.mjs",
+    "./components/Yaml": "./components/Yaml/index.mjs",
     "./components/Xray": "./components/Xray/index.mjs",
-    "./config/freesewing": "./config/freesewing/index.mjs",
     "./context/LoadingStatus": "./context/LoadingStatus/index.mjs",
     "./context/Modal": "./context/Modal/index.mjs",
     "./hooks/useAccount": "./hooks/useAccount/index.mjs",
     "./hooks/useBackend": "./hooks/useBackend/index.mjs",
-    "./lib/RestClient": "./lib/RestClient/index.mjs"
+    "./lib/RestClient": "./lib/RestClient/index.mjs",
+    "./lib/logoPath": "./components/Logo/path.mjs"
   },
   "scripts": {
     "lint": "eslint 'components/**/*.mjs' 'hooks/**/*.mjs' 'lib/**/*.mjs' 'context/**/*.mjs' 'config/**/*.mjs'",
@@ -63,6 +67,7 @@
   },
   "dependencies": {
     "axios": "1.7.2",
+    "highlight.js": "^11.11.0",
     "html-react-parser": "^5.0.7",
     "nuqs": "^1.17.6",
     "react-markdown": "^9.0.1",
