@@ -18,18 +18,13 @@
     "freesewing"
   ],
   "type": "module",
-  "module": "dist/index.mjs",
+  "module": "src/index.mjs",
   "exports": {
-    ".": {
-      "internal": "./src/index.mjs",
-      "default": "./dist/index.mjs"
-    }
+    ".": "./src/index.mjs"
   },
   "scripts": {
-    "clean": "rimraf dist",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "test": "echo \"rehype-highlight-lines: No tests configured. Perhaps you could write some?\" && exit 0",
-    "lab": "cd ../../sites/lab && npm run start",
     "tips": "node ../../scripts/help.mjs",
     "lint": "npx eslint 'src/*.mjs'"
   },
@@ -39,7 +34,7 @@
   },
   "devDependencies": {},
   "files": [
-    "dist/*",
+    "src/**",
     "README.md"
   ],
   "publishConfig": {
@@ -47,6 +42,6 @@
     "tag": "next"
   },
   "engines": {
-    "node": ">= 18.17.0"
+    "node": ">= 20"
   }
 }

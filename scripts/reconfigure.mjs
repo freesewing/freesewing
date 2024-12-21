@@ -13,7 +13,7 @@ import { capitalize } from '../packages/core/src/index.mjs'
 const cwd = process.cwd()
 
 /*
- * When we're building a site (on Vercel for example) SITEBUILD
+ * When we're building a site (on Netlify for example) SITEBUILD
  * will be set and we'll do things differently to speed up the build.
  * To make that check easy, we setup this SITEBUILD variable
  */
@@ -38,7 +38,6 @@ const repo = {
     pkg: readTemplateFile('package.dflt.json'),
     changelog: SITEBUILD ? null : readTemplateFile('changelog.dflt.md'),
     readme: SITEBUILD ? null : readTemplateFile('readme.dflt.md'),
-    build: SITEBUILD ? null : readTemplateFile('build.dflt.mjs'),
     pluginTests: SITEBUILD ? null : readTemplateFile('plugin.test.mjs'),
     designTests: SITEBUILD ? null : readTemplateFile('design.test.mjs.mustache'),
     data: SITEBUILD ? null : readTemplateFile('data.dflt.mjs.mustache'),
@@ -99,9 +98,6 @@ for (const pkg of Object.values(software)) {
         mustache.render(repo.templates.data, { name: fullName(pkg.name), version })
       )
       fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'README.md'), readme(pkg))
-      if (repo.exceptions.customBuild.indexOf(pkg.name) === -1) {
-        fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'build.mjs'), repo.templates.build)
-      }
       fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'CHANGELOG.md'), changelog(pkg))
     }
   }
@@ -219,19 +215,6 @@ function scripts(pkg) {
           name: pkg.name,
         })
     }
-  }
-
-  // make windows versions of build prebuild scripts
-  runScripts.wbuild = runScripts.wbuild || runScripts.build
-  runScripts.prewbuild = runScripts.prewbuild || runScripts.prebuild
-
-  // make prebuild:all and windows versions of build:all and prebuild:all
-  if (runScripts['build:all'] !== undefined) {
-    runScripts['wbuild:all'] = runScripts['wbuild:all'] || (runScripts.wbuild && 'npm run wbuild')
-    runScripts['prebuild:all'] =
-      runScripts['prebuild:all'] || (runScripts.prebuild && 'npm run prebuild')
-    runScripts['prewbuild:all'] =
-      runScripts['prewbuild:all'] || (runScripts.prewbuild && 'npm run prewbuild')
   }
 
   return runScripts

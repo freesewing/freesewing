@@ -18,7 +18,7 @@
     "freesewing"
   ],
   "type": "module",
-  "module": "dist/index.mjs",
+  "module": "src/index.mjs",
   "exports": {
     ".": {
       "internal": "./src/index.mjs",
@@ -81,6 +81,6 @@
     "tag": "next"
   },
   "engines": {
-    "node": ">= 18.17.0"
+    "node": ">= 20"
   }
 }

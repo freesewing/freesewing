@@ -1,14 +1,6 @@
 noNamespace:
   - rehype-jargon
   - rehype-highlight-lines
-customBuild:
-  - i18n
-  - new-design
-  - prettier-config
-  - core-plugins
-  - react
-  - rehype-jargon
-  - rehype-highlight-lines
 skipTests:
   - theo
 packageJson:
@@ -73,8 +65,6 @@ packageJson:
   prettier-config:
     type: 'module'
     exports: { .: './index.json' }
-    scripts:
-      build: 'echo "prettier-config: No build required" && exit 0'
     keywords:
       - prettier
     files:

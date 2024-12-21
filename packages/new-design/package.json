@@ -19,20 +19,9 @@
   ],
   "type": "module",
   "scripts": {
-    "build": "node build.mjs",
-    "build:all": "npm run build",
-    "clean": "rimraf dist",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "lab": "cd ../../sites/lab && npm run start",
     "tips": "node ../../scripts/help.mjs",
-    "lint": "npx eslint 'lib/*.mjs'",
-    "i18n-only": "SITE=\"new-design/shared\" node --conditions=internal ../../sites/shared/prebuild/i18n-only.mjs",
-    "prebuild": "node --conditions=internal ./prebuild.mjs",
-    "wbuild": "node build.mjs",
-    "prewbuild": "node --conditions=internal ./prebuild.mjs",
-    "wbuild:all": "npm run wbuild",
-    "prebuild:all": "npm run prebuild",
-    "prewbuild:all": "npm run prewbuild"
+    "lint": "npx eslint 'lib/*.mjs'"
   },
   "peerDependencies": {},
   "dependencies": {
@@ -60,7 +49,7 @@
     "tag": "next"
   },
   "engines": {
-    "node": ">= 18.17.0"
+    "node": ">= 20"
   },
   "bin": {
     "new-design": "./index.mjs"

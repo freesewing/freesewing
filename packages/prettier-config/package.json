@@ -17,12 +17,15 @@
     "prettier"
   ],
   "type": "module",
-  "module": "dist/index.mjs",
+  "module": "src/index.mjs",
   "exports": {
     ".": "./index.json"
   },
   "scripts": {
-    "build": "echo \"prettier-config: No build required\" && exit 0"
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
+    "test": "echo \"prettier-config: No tests configured. Perhaps you could write some?\" && exit 0",
+    "tips": "node ../../scripts/help.mjs",
+    "lint": "npx eslint 'src/**' 'tests/*.mjs'"
   },
   "peerDependencies": {},
   "dependencies": {},
@@ -36,6 +39,6 @@
     "tag": "next"
   },
   "engines": {
-    "node": ">= 18.17.0"
+    "node": ">= 20"
   }
 }

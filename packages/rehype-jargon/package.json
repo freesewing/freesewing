@@ -18,26 +18,15 @@
     "freesewing"
   ],
   "type": "module",
-  "module": "dist/index.mjs",
+  "module": "src/index.mjs",
   "exports": {
-    ".": {
-      "internal": "./src/index.mjs",
-      "default": "./dist/index.mjs"
-    }
+    ".": "./src/index.mjs"
   },
   "scripts": {
-    "build": "node build.mjs",
-    "build:all": "npm run build",
-    "clean": "rimraf dist",
-    "mbuild": "NO_MINIFY=1 node build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "test": "echo \"rehype-jargon: No tests configured. Perhaps you could write some?\" && exit 0",
-    "vbuild": "VERBOSE=1 node build.mjs",
-    "lab": "cd ../../sites/lab && npm run start",
     "tips": "node ../../scripts/help.mjs",
-    "lint": "npx eslint 'src/*.mjs'",
-    "wbuild": "node build.mjs",
-    "wbuild:all": "npm run wbuild"
+    "lint": "npx eslint 'src/*.mjs'"
   },
   "peerDependencies": {},
   "dependencies": {
@@ -46,7 +35,7 @@
   },
   "devDependencies": {},
   "files": [
-    "dist/*",
+    "src/**",
     "README.md"
   ],
   "publishConfig": {
@@ -54,6 +43,6 @@
     "tag": "next"
   },
   "engines": {
-    "node": ">= 18.17.0"
+    "node": ">= 20"
   }
 }
