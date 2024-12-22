@@ -119,3 +119,16 @@ export const designs = {
 }
 
 export const collection = Object.keys(designs)
+
+export const requiredMeasurements = {}
+export const optionalMeasurements = {}
+export const measurements = {}
+
+for (const design in designs) {
+  requiredMeasurements[design] = designs[design].patternConfig.measurements
+  optionalMeasurements[design] = designs[design].patternConfig.optionalMeasurements
+  measurements[design] = [
+    ...designs[design].patternConfig.measurements,
+    ...designs[design].patternConfig.optionalMeasurements,
+  ]
+}

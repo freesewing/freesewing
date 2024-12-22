@@ -29,8 +29,8 @@ export const ModalWrapper = ({
   flex = 'row',
   justify = 'center',
   items = 'center',
-  bg = 'base-100 lg:bg-base-300',
-  bgOpacity = '100 lg:bg-opacity-95',
+  bg = 'neutral lg:neutral',
+  bgOpacity = '100 lg:bg-opacity-70',
   bare = false,
   keepOpenOnClick = false,
   slideFrom = 'left',
@@ -68,9 +68,10 @@ export const ModalWrapper = ({
     <div
       className={`fixed top-0 left-0 m-0 p-0 shadow w-full h-screen
         transform-all duration-150 ${animation}
-        bg-${bg} bg-opacity-${bgOpacity} z-40 hover:cursor-pointer
-        flex flex-${flex} justify-${justify} items-${items} lg:p-12`}
+        bg-${bg} bg-opacity-${bgOpacity} hover:cursor-pointer
+        flex flex-${flex} justify-${justify} items-${items} lg:p-12 backdrop-blur-md`}
       onClick={close}
+      style={{ zIndex: 250 }}
     >
       {bare ? (
         children

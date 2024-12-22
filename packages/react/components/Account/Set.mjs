@@ -1,11 +1,19 @@
 // Dependencies
-import { measurements, isDegreeMeasurement, control as controlConfig } from '@freesewing/config'
+import {
+  measurements,
+  isDegreeMeasurement,
+  control as controlConfig,
+  urls,
+} from '@freesewing/config'
+import { measurements as measurementTranslations } from '@freesewing/i18n'
+import { measurements as designMeasurements } from '@freesewing/collection'
 import {
   cloudflareImageUrl,
   capitalize,
   formatMm,
   horFlexClasses,
   linkClasses,
+  notEmpty,
   roundDistance,
   shortDate,
   timeAgo,
@@ -18,8 +26,10 @@ import React, { useState, useEffect, Fragment, useContext } from 'react'
 import { useAccount } from '@freesewing/react/hooks/useAccount'
 import { useBackend } from '@freesewing/react/hooks/useBackend'
 // Components
-import { Link as WebLink } from '@freesewing/react/components/Link'
+import { Link as WebLink, AnchorLink } from '@freesewing/react/components/Link'
 import {
+  BoolNoIcon,
+  BoolYesIcon,
   CloneIcon,
   CuratedMeasurementsSetIcon,
   EditIcon,
@@ -36,54 +46,26 @@ import {
   //  BoolNoIcon,
 } from '@freesewing/react/components/Icon'
 import { BookmarkButton, MsetCard } from '@freesewing/react/components/Account'
-import { ToggleInput } from '@freesewing/react/components/Input'
+import {
+  DesignInput,
+  MarkdownInput,
+  ListInput,
+  MeasieInput,
+  PassiveImageInput,
+  StringInput,
+  ToggleInput,
+} from '@freesewing/react/components/Input'
 import { DisplayRow } from './shared.mjs'
 import Markdown from 'react-markdown'
 import { ModalWrapper } from '@freesewing/react/components/Modal'
 import { Json } from '@freesewing/react/components/Json'
 import { Yaml } from '@freesewing/react/components/Yaml'
+import { Popout } from '@freesewing/react/components/Popout'
 
-//import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
-//import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'
-//import { isDegreeMeasurement } from 'config/measurements.mjs'
-//import {
-//  shortDate,
-//  cloudflareImageUrl,
-//  formatMm,
-//  hasRequiredMeasurements,
-//  capitalize,
-//  horFlexClasses,
-//} from 'shared/utils.mjs'
-//// Hooks
-//import { useState, useEffect, useContext } from 'react'
-//import { useTranslation } from 'next-i18next'
-//import { useAccount } from 'shared/hooks/use-account.mjs'
-//import { useBackend } from 'shared/hooks/use-backend.mjs'
-//import { useRouter } from 'next/router'
-//// Context
-//import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
-//import { ModalContext } from 'shared/context/modal-context.mjs'
-//// Components
-//import { Popout } from 'shared/components/popout/index.mjs'
-//import { BackToAccountButton } from './shared.mjs'
-//import { AnchorLink, PageLink, Link } from 'shared/components/link.mjs'
-//import { Json } from 'shared/components/json.mjs'
-//import { Yaml } from 'shared/components/yaml.mjs'
-//import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-//import { Mdx } from 'shared/components/mdx/dynamic.mjs'
-//import Timeago from 'react-timeago'
-//import {
-//  StringInput,
-//  ToggleInput,
-//  PassiveImageInput,
-//  ListInput,
-//  MarkdownInput,
-//  MeasieInput,
-//  DesignDropdown,
-//  ns as inputNs,
-//} from 'shared/components/inputs.mjs'
-//import { BookmarkButton } from 'shared/components/bookmarks.mjs'
-//import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
+const t = (input) => {
+  console.log('t called', input)
+  return input
+}
 
 /*
  * Component to show an individual measurements set
@@ -163,10 +145,8 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
     }
   }, [id, publicOnly])
 
-  const filterMeasurements = () => {
-    if (!filter) return measurements.map((m) => `measurements:${m}` + `|${m}`).sort()
-    else return designMeasurements[filter].map((m) => `measurements:${m}` + `|${m}`).sort()
-  }
+  const filterMeasurements = () =>
+    filter ? designMeasurements[filter].sort() : measurements.sort()
 
   if (!id || !mset) return null
 
@@ -192,7 +172,7 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
     setLoadingStatus([true, 'Saving measurements set'])
     const [status, body] = await backend.updateSet(mset.id, data)
     if (status === 200 && body.result === 'success') {
-      setMset(body.data.set)
+      setMset(body.set)
       setEdit(false)
       setLoadingStatus([true, 'Nailed it', true, true])
     } else
@@ -218,10 +198,9 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
     }
     delete data.img
     const [status, body] = await backend.createSet(data)
-    if (status === 200 && body.result === 'success') {
-      setMset(body.data.set)
-      setEdit(false)
-      setLoadingStatus([true, 'Nailed it', true, true])
+    if (status === 201 && body.result === 'created') {
+      setLoadingStatus([true, 'Loading newly created set', true, true])
+      window.location = `/account/set/?id=${body.set.id}`
     } else setLoadingStatus([true, 'We failed to create this measurements set', true, false])
   }
 
@@ -235,14 +214,14 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
           {account.control > 2 && mset.public && mset.userId !== account.id ? (
             <div className="flex flex-row gap-2 items-center">
               <a
-                className="badge badge-secondary font-bold badge-lg"
-                href={`${conf.backend}/sets/${mset.id}.json`}
+                className="daisy-badge daisy-badge-secondary font-bold daisy-badge-lg"
+                href={`${urls.backend}/sets/${mset.id}.json`}
               >
                 JSON
               </a>
               <a
-                className="badge badge-success font-bold badge-lg"
-                href={`${conf.backend}/sets/${mset.id}.yaml`}
+                className="daisy-badge daisy-badge-success font-bold daisy-badge-lg"
+                href={`${urls.backend}/sets/${mset.id}.yaml`}
               >
                 YAML
               </a>
@@ -253,7 +232,7 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
           {account.control > 3 && mset.userId === account.id ? (
             <div className="flex flex-row gap-2 items-center">
               <button
-                className="badge badge-secondary font-bold badge-lg"
+                className="daisy-badge daisy-badge-secondary font-bold daisy-badge-lg"
                 onClick={() =>
                   setModal(
                     <ModalWrapper keepOpenOnClick>
@@ -265,7 +244,7 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
                 JSON
               </button>
               <button
-                className="badge badge-success font-bold badge-lg"
+                className="daisy-badge daisy-badge-success font-bold daisy-badge-lg text-neutral-content"
                 onClick={() =>
                   setModal(
                     <ModalWrapper keepOpenOnClick>
@@ -283,12 +262,12 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
           {account.id && account.control > 2 && mset.public && mset.userId !== account.id ? (
             <button
               className="daisy-btn daisy-btn-primary"
-              title={t('account:importSet')}
+              title="Import measurements set"
               onClick={importSet}
             >
               <div className="flex flex-row gap-4 justify-between items-center w-full">
                 <UploadIcon />
-                {t('account:importSet')}
+                Import measurements set
               </div>
             </button>
           ) : null}
@@ -379,7 +358,7 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
     return (
       <div className="max-w-2xl">
         {heading}
-        <SuggestCset {...{ mset, setLoadingStatus, backend, t }} />
+        <SuggestCset {...{ mset, setLoadingStatus, backend, Link }} />
       </div>
     )
 
@@ -466,56 +445,27 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
   return (
     <div className="max-w-2xl">
       {heading}
-      <ul className="list list-disc list-inside ml-4">
-        {['measies', 'data'].map((s) => (
-          <li key={s}>
-            <AnchorLink id={s}>{s}</AnchorLink>
-          </li>
-        ))}
-        <ul className="list list-disc list-inside ml-4">
-          <li>
-            <AnchorLink id="name">Name</AnchorLink>
-          </li>
-          {account.control >= conf.account.sets.img ? (
-            <li>
-              <AnchorLink id="image">Image</AnchorLink>
-            </li>
-          ) : null}
-          {['public', 'units', 'notes'].map((id) =>
-            account.control >= conf.account.sets[id] ? (
-              <li key={id}>
-                <AnchorLink id="units">{id}</AnchorLink>
-              </li>
-            ) : null
-          )}
-        </ul>
-      </ul>
-
-      <h2 id="measies">{t('measies')}</h2>
+      <h2 id="measies">Measurements</h2>
       <div className="bg-secondary px-4 pt-1 pb-4 rounded-lg shadow bg-opacity-10">
-        <DesignDropdown
+        <DesignInput
           update={setFilter}
           label="Filter by design"
           current={filter}
           firstOption={<option value="">Clear filter</option>}
         />
       </div>
-      {filterMeasurements().map((mplus) => {
-        const [translated, m] = mplus.split('|')
-
-        return (
-          <MeasieInput
-            id={`measie-${m}`}
-            key={m}
-            m={m}
-            imperial={mset.imperial}
-            label={translated}
-            current={mset.measies[m]}
-            original={mset.measies[m]}
-            update={updateMeasies}
-          />
-        )
-      })}
+      {filterMeasurements().map((m) => (
+        <MeasieInput
+          id={`measie-${m}`}
+          key={m}
+          m={m}
+          imperial={mset.imperial}
+          label={measurementTranslations[m]}
+          current={mset.measies[m]}
+          original={mset.measies[m]}
+          update={updateMeasies}
+        />
+      ))}
 
       <h2 id="data">Data</h2>
 
@@ -533,7 +483,7 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
 
       {/* img: Control level determines whether or not to show this */}
       <span id="image"></span>
-      {account.control >= conf.account.sets.img ? (
+      {account.control >= controlConfig.account.sets.img ? (
         <PassiveImageInput
           id="set-img"
           label="Image"
@@ -545,7 +495,7 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
 
       {/* public: Control level determines whether or not to show this */}
       <span id="public"></span>
-      {account.control >= conf.account.sets.public ? (
+      {account.control >= controlConfig.account.sets.public ? (
         <ListInput
           id="set-public"
           label="Public"
@@ -581,7 +531,7 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
 
       {/* units: Control level determines whether or not to show this */}
       <span id="units"></span>
-      {account.control >= conf.account.sets.units ? (
+      {account.control >= controlConfig.account.sets.units ? (
         <>
           <ListInput
             id="set-units"
@@ -611,13 +561,15 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
             ]}
             current={imperial}
           />
-          <span className="text-large text-warning">{t('unitsMustSave')}</span>
+          <span className="text-large text-warning">
+            Note: You must save after changing Units to have the change take effect on this page.
+          </span>
         </>
       ) : null}
 
       {/* notes: Control level determines whether or not to show this */}
       <span id="notes"></span>
-      {account.control >= conf.account.sets.notes ? (
+      {account.control >= controlConfig.account.sets.notes ? (
         <MarkdownInput
           id="set-notes"
           label="Notes"
@@ -652,14 +604,137 @@ export const MeasurementValue = ({ val, m, imperial = false }) =>
     <span dangerouslySetInnerHTML={{ __html: formatMm(val, imperial) }}></span>
   )
 
-/*
+/**
+ * React component to suggest a measurements set for curation
+ *
+ * @param {object} props - All React props
+ * @param {string} mset - The measurements set
+ */
+export const SuggestCset = ({ mset, Link }) => {
+  // State
+  const [height, setHeight] = useState('')
+  const [img, setImg] = useState('')
+  const [name, setName] = useState('')
+  const [notes, setNotes] = useState('')
+  const [submission, setSubmission] = useState(false)
+
+  console.log(mset)
+
+  // Hooks
+  const backend = useBackend()
+
+  // Method to submit the form
+  const suggestSet = async () => {
+    setLoadingStatus([true, 'Contacting backend'])
+    const result = await backend.suggestCset({ set: mset.id, height, img, name, notes })
+    if (result.success && result.data.submission) {
+      setSubmission(result.data.submission)
+      setLoadingStatus([true, 'Nailed it', true, true])
+    } else setLoadingStatus([true, 'An unexpected error occured. Please report this.', true, false])
+  }
+
+  const missing = []
+  for (const m of measurements) {
+    if (typeof mset.measies[m] === 'undefined') missing.push(m)
+  }
+
+  if (submission) {
+    const url = `/curate/sets/suggested/${submission.id}`
+
+    return (
+      <>
+        <h2>Thank you</h2>
+        <p>Your submission has been registered and will be processed by one of our curators.</p>
+        <p>
+          It is available at: <Link href={url}>{url}</Link>
+        </p>
+      </>
+    )
+  }
+
+  return (
+    <>
+      <h2>Suggest a measurements set for curation</h2>
+      <h4 className="flex flex-row items-center gap-2">
+        {missing.length > 0 ? <BoolNoIcon /> : <BoolYesIcon />}
+        Measurements
+      </h4>
+      {missing.length > 0 ? (
+        <>
+          <p>
+            To ensure curated measurements sets work for all designs, you need to provide a full set
+            of measurements.
+          </p>
+          <p>Your measurements set is missing the following measurements:</p>
+          <ul className="list list-inside list-disc ml-4">
+            {missing.map((m) => (
+              <li key={m}>{m}</li>
+            ))}
+          </ul>
+        </>
+      ) : (
+        <p>All measurements are available.</p>
+      )}
+      <h4 className="flex flex-row items-center gap-2">
+        {name.length > 1 ? <BoolYesIcon /> : <BoolNoIcon />}
+        Name
+      </h4>
+      <p>Each curated set has a name. You can suggest your own name or a pseudonym.</p>
+      <StringInput label="Name" current={name} update={setName} valid={(val) => val.length > 1} />
+      <h4 className="flex flex-row items-center gap-2">
+        {height.length > 1 ? <BoolYesIcon /> : <BoolNoIcon />}
+        Height
+      </h4>
+      <p>
+        To allow organizing and presenting our curated sets in a structured way, we organize them by
+        height.
+      </p>
+      <StringInput
+        label="height"
+        current={height}
+        update={setHeight}
+        valid={(val) => val.length > 1}
+      />
+      <h4 className="flex flex-row items-center gap-2 mt-4">
+        {img.length > 0 ? <BoolYesIcon /> : <BoolNoIcon />}
+        Image
+      </h4>
+      <p>
+        Finally, we need a picture. Please refer to the documentation to see what makes a good
+        picture for a curated measurements set.
+        <Link href="/docs/about/site/csets">Documentation</Link>
+      </p>
+      <PassiveImageInput
+        label="Image"
+        current={img}
+        update={setImg}
+        valid={(val) => val.length > 1}
+      />
+      <h4 className="flex flex-row items-center gap-2 mt-4">
+        <BoolYesIcon />
+        Notes
+      </h4>
+      <p>If you would like to add any notes, you can do so here.</p>
+      <Popout tip compact>
+        This field supports markdown
+      </Popout>
+      <MarkdownInput label="Notes" current={notes} update={setNotes} valid={() => true} />
+      <button
+        className="daisy-btn daisy-btn-primary w-full mt-4"
+        disabled={!(missing.length === 0 && height.length > 1 && img.length > 0)}
+        onClick={suggestSet}
+      >
+        Suggest for curation
+      </button>
+    </>
+  )
+}
+
 export const NewSet = () => {
   // Hooks
-  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
-  const { t } = useTranslation(ns)
-  const router = useRouter()
   const { account } = useAccount()
+  const { setLoadingStatus, LoadingProgress } = useContext(LoadingStatusContext)
 
   // State
   const [name, setName] = useState('')
@@ -669,39 +744,46 @@ export const NewSet = () => {
 
   // Helper method to create a new set
   const createSet = async () => {
-    setLoadingStatus([true, 'processingUpdate'])
-    const result = await backend.createSet({ name, imperial })
-    if (result.success) {
-      setLoadingStatus([true, t('nailedIt'), true, true])
-      router.push(`/account/set?id=${result.data.set.id}`)
-    } else setLoadingStatus([true, 'backendError', true, false])
+    setLoadingStatus([true, 'Storing new measurements set'])
+    const [status, body] = await backend.createSet({ name, imperial })
+    if (status === 201 && body.result === 'created') {
+      setLoadingStatus([true, 'Nailed it', true, true])
+      window.location = `/account/set?id=${body.set.id}`
+    } else
+      setLoadingStatus([
+        true,
+        'Failed to save the measurments set. Please report this.',
+        true,
+        false,
+      ])
   }
 
   return (
     <div className="max-w-xl">
-      <h5>{t('name')}</h5>
-      <p>{t('setNameDesc')}</p>
-      <input
-        autoFocus
-        value={name}
-        onChange={(evt) => setName(evt.target.value)}
-        className="input w-full input-bordered flex flex-row"
-        type="text"
+      <h5>Name</h5>
+      <p>Give this set of measurements a name. That will help tell them apart.</p>
+      <StringInput
+        id="new-set"
+        label="Name"
+        update={setName}
+        current={name}
+        valid={(val) => val && val.length > 0}
         placeholder={'Georg Cantor'}
       />
       <div className="flex flex-row gap-2 items-center w-full mt-8 mb-2">
         <button
-          className="btn btn-primary grow capitalize"
+          className="daisy-btn daisy-btn-primary grow capitalize"
           disabled={name.length < 1}
           onClick={createSet}
         >
-          {t('newSet')}
+          New Measurements Set
         </button>
       </div>
     </div>
   )
 }
 
+/*
 
 export const SetCard = ({
   set,
@@ -950,122 +1032,5 @@ export const BookmarkedSetPicker = ({ design, clickHandler, t, size, href }) => 
   )
 }
 
-const SuggestCset = ({ mset, backend, setLoadingStatus, t }) => {
-  // State
-  const [height, setHeight] = useState('')
-  const [img, setImg] = useState('')
-  const [name, setName] = useState('')
-  const [notes, setNotes] = useState('')
-  const [submission, setSubmission] = useState(false)
-
-  // Method to submit the form
-  const suggestSet = async () => {
-    setLoadingStatus([true, 'status:contactingBackend'])
-    const result = await backend.suggestCset({ set: mset.id, height, img, name, notes })
-    if (result.success && result.data.submission) {
-      setSubmission(result.data.submission)
-      setLoadingStatus([true, 'status:nailedIt', true, true])
-    } else setLoadingStatus([true, 'backendError', true, false])
-  }
-
-  const missing = []
-  for (const m of measurements) {
-    if (typeof mset.measies[m] === 'undefined') missing.push(m)
-  }
-
-  if (submission) {
-    const url = `/curate/sets/suggested/${submission.id}`
-
-    return (
-      <>
-        <h2>{t('account:thankYouVeryMuch')}</h2>
-        <p>{t('account:csetSuggestedMsg')}</p>
-        <p>
-          {t('account:itIsAvailableAt')}: <PageLink href={url} txt={url} />
-        </p>
-      </>
-    )
-  }
-
-  return (
-    <>
-      <h2>{t('account:suggestCset')}</h2>
-      <h4 className="flex flex-row items-center gap-2">
-        {missing.length > 0 ? <BoolNoIcon /> : <BoolYesIcon />}
-        {t('account:measurements')}
-      </h4>
-      {missing.length > 0 ? (
-        <>
-          <p>{t('account:csetAllMeasies')}</p>
-          <p>{t('account:csetMissing')}:</p>
-          <ul className="list list-inside list-disc ml-4">
-            {missing.map((m) => (
-              <li key={m}>{t(`measurements:${m}`)}</li>
-            ))}
-          </ul>
-        </>
-      ) : (
-        <p>{t('account:allMeasiesAvailable')}</p>
-      )}
-      <h4 className="flex flex-row items-center gap-2">
-        {name.length > 1 ? <BoolYesIcon /> : <BoolNoIcon />}
-        {t('account:name')}
-      </h4>
-      <p>{t('account:csetNameMsg')}</p>
-      <StringInput
-        label={t('account:name')}
-        current={name}
-        update={setName}
-        valid={(val) => val.length > 1}
-      />
-      <h4 className="flex flex-row items-center gap-2">
-        {height.length > 1 ? <BoolYesIcon /> : <BoolNoIcon />}
-        {t('measurements:height')}
-      </h4>
-      <p>{t('account:csetHeightMsg1')}</p>
-      <StringInput
-        label={t('measurements:height')}
-        current={height}
-        update={setHeight}
-        valid={(val) => val.length > 1}
-      />
-      <h4 className="flex flex-row items-center gap-2 mt-4">
-        {img.length > 0 ? <BoolYesIcon /> : <BoolNoIcon />}
-        {t('account:img')}
-      </h4>
-      <p>
-        {t('account:csetImgMsg')}:{' '}
-        <PageLink href="/docs/about/site/csets">{t('account:docs')}</PageLink>
-      </p>
-      <PassiveImageInput
-        label={t('account:img')}
-        current={img}
-        update={setImg}
-        valid={(val) => val.length > 1}
-      />
-      <h4 className="flex flex-row items-center gap-2 mt-4">
-        <BoolYesIcon />
-        {t('account:notes')}
-      </h4>
-      <p>{t('account:csetNotesMsg')}</p>
-      <Popout tip compact>
-        {t('account:mdSupport')}
-      </Popout>
-      <MarkdownInput
-        label={t('account:notes')}
-        current={notes}
-        update={setNotes}
-        valid={() => true}
-      />
-      <button
-        className="btn btn-primary w-full mt-4"
-        disabled={!(missing.length === 0 && height.length > 1 && img.length > 0)}
-        onClick={suggestSet}
-      >
-        {t('account:suggestForCuration')}
-      </button>
-    </>
-  )
-}
 
 */

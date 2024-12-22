@@ -12,6 +12,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * Add CSS for code
+ */
+@import './code.css';
+
 @layer components {
   /* Applied styles for common HTML tags */
   h1 {

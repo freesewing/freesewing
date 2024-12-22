@@ -14,13 +14,11 @@ import React, { useState, useCallback, useContext } from 'react'
 import { useDropzone } from 'react-dropzone'
 import { useBackend } from '@freesewing/react/hooks/useBackend'
 // Components
-//import { Mdx } from 'shared/components/mdx/dynamic.mjs'
-import { ResetIcon, DocsIcon, UploadIcon } from '@freesewing/react/components/Icon'
+import { ResetIcon, UploadIcon } from '@freesewing/react/components/Icon'
 import { ModalWrapper } from '@freesewing/react/components/Modal'
 import { isDegreeMeasurement } from '@freesewing/config'
 import { Tabs, Tab } from '@freesewing/react/components/Tab'
-
-export const ns = ['account', 'measurements', 'designs']
+import Markdown from 'react-markdown'
 
 /*
  * Helper component to display a tab heading
@@ -32,8 +30,8 @@ export const _Tab = ({
   setActiveTab, // Method to set the active tab
 }) => (
   <button
-    className={`text-lg font-bold capitalize tab tab-bordered grow
-    ${activeTab === id ? 'tab-active' : ''}`}
+    className={`text-lg font-bold capitalize daisy-tab daisy-tab-bordered grow
+    ${activeTab === id ? 'daisy-tab-active' : ''}`}
     onClick={() => setActiveTab(id)}
   >
     {label ? label : id}
@@ -46,42 +44,16 @@ export const _Tab = ({
 export const FormControl = ({
   label, // the (top-left) label
   children, // Children to go inside the form control
-  docs = false, // Optional top-right label
   labelBL = false, // Optional bottom-left label
   labelBR = false, // Optional bottom-right label
   forId = false, // ID of the for element we are wrapping
 }) => {
-  const { setModal } = useContext(ModalContext)
-
   if (labelBR && !labelBL) labelBL = <span></span>
 
   const topLabelChildren = (
-    <>
-      <span className="daisy-label-text text-sm lg:text-base font-bold mb-1 text-inherit">
-        {label}
-      </span>
-      {docs ? (
-        <span className="daisy-label-text-alt">
-          <button
-            className="daisy-btn daisy-btn-ghost daisy-btn-sm daisy-btn-circle hover:daisy-btn-secondary"
-            onClick={() =>
-              setModal(
-                <ModalWrapper
-                  flex="col"
-                  justify="top lg:justify-center"
-                  slideFrom="right"
-                  keepOpenOnClick
-                >
-                  <div className="markdown max-w-prose">{docs}</div>
-                </ModalWrapper>
-              )
-            }
-          >
-            <DocsIcon />
-          </button>
-        </span>
-      ) : null}
-    </>
+    <span className="daisy-label-text text-sm lg:text-base font-bold mb-1 text-inherit">
+      {label}
+    </span>
   )
   const bottomLabelChildren = (
     <>
@@ -149,7 +121,6 @@ export const NumberInput = ({
   current, // The current value
   original, // The original value
   placeholder, // The placeholder text
-  docs = false, // Docs to load, if any
   id = '', // An id to tie the input to the label
   labelBL = false, // Bottom-Left label
   labelBR = false, // Bottom-Right label
@@ -157,7 +128,7 @@ export const NumberInput = ({
   min = 220,
   step = 1,
 }) => (
-  <FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
+  <FormControl {...{ label, labelBL, labelBR }} forId={id}>
     <input
       id={id}
       type="text"
@@ -183,12 +154,11 @@ export const StringInput = ({
   current, // The current value
   original, // The original value
   placeholder, // The placeholder text
-  docs = false, // Docs to load, if any
   id = '', // An id to tie the input to the label
   labelBL = false, // Bottom-Left label
   labelBR = false, // Bottom-Right label
 }) => (
-  <FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
+  <FormControl {...{ label, labelBL, labelBR }} forId={id}>
     <input
       id={id}
       type="text"
@@ -220,7 +190,6 @@ export const MfaInput = ({
       valid={(val) => val.length > 4}
       {...{ update, current, id }}
       placeholder="MFA Code"
-      docs={false}
     />
   )
 }
@@ -234,7 +203,6 @@ export const PasswordInput = ({
   valid, // Method that should return whether the value is valid or not
   current, // The current value
   placeholder = '¯\\_(ツ)_/¯', // The placeholder text
-  docs = false, // Docs to load, if any
   id = '', // An id to tie the input to the label
   onKeyDown = false, // Optionall capture certain keys (like enter)
 }) => {
@@ -245,7 +213,6 @@ export const PasswordInput = ({
   return (
     <FormControl
       label={label}
-      docs={docs}
       forId={id}
       labelBR={
         <button
@@ -281,12 +248,11 @@ export const EmailInput = ({
   current, // The current value
   original, // The original value
   placeholder, // The placeholder text
-  docs = false, // Docs to load, if any
   id = '', // An id to tie the input to the label
   labelBL = false, // Bottom-Left label
   labelBR = false, // Bottom-Right label
 }) => (
-  <FormControl {...{ label, docs, labelBL, labelBR }} forId={id}>
+  <FormControl {...{ label, labelBL, labelBR }} forId={id}>
     <input
       id={id}
       type="email"
@@ -301,21 +267,20 @@ export const EmailInput = ({
 )
 
 /*
- * Dropdown for designs
+ * Input for designs
  */
-export const DesignDropdown = ({
+export const DesignInput = ({
   label, // Label to use
   update, // onChange handler
   current, // The current value
-  docs = false, // Docs to load, if any
   firstOption = null, // Any first option to add in addition to designs
   id = '', // An id to tie the input to the label
 }) => {
   return (
-    <FormControl label={label} docs={docs} forId={id}>
+    <FormControl label={label} forId={id}>
       <select
         id={id}
-        className="select select-bordered w-full"
+        className="daisy-select daisy-select-bordered w-full"
         onChange={(evt) => update(evt.target.value)}
         value={current}
       >
@@ -338,7 +303,6 @@ export const ImageInput = ({
   update, // The onChange handler
   current, // The current value
   original, // The original value
-  docs = false, // Docs to load, if any
   active = false, // Whether or not to upload images
   imgType = 'showcase', // The image type
   imgSubid, // The image sub-id
@@ -383,7 +347,7 @@ export const ImageInput = ({
 
   if (current)
     return (
-      <FormControl label={label} docs={docs}>
+      <FormControl label={label}>
         <div
           className="bg-base-100 w-full h-36 mb-2 mx-auto flex flex-col items-center text-center justify-center"
           style={{
@@ -396,7 +360,7 @@ export const ImageInput = ({
           }}
         >
           <button
-            className="btn btn-neutral btn-circle opacity-50 hover:opacity-100"
+            className="daisy-btn daisy-btn-neutral daisy-btn-circle opacity-50 hover:opacity-100"
             onClick={() => update(original)}
           >
             <ResetIcon />
@@ -406,7 +370,7 @@ export const ImageInput = ({
     )
 
   return (
-    <FormControl label={label} docs={docs} forId={id}>
+    <FormControl label={label} forId={id}>
       <div
         {...getRootProps()}
         className={`
@@ -417,7 +381,7 @@ export const ImageInput = ({
         <input {...getInputProps()} />
         <p className="hidden lg:block p-0 m-0">Drag and drop and image here</p>
         <p className="hidden lg:block p-0 my-2">or</p>
-        <button className={`btn btn-secondary btn-outline mt-4 px-8`}>
+        <button className={`daisy-btn daisy-btn-secondary daisy-btn-outline mt-4 px-8`}>
           Select an image to use
         </button>
       </div>
@@ -433,7 +397,7 @@ export const ImageInput = ({
         />
         {active && (
           <button
-            className="btn btn-secondary ml-2 capitalize"
+            className="daisy-btn daisy-btn-secondary ml-2 capitalize"
             disabled={!url || url.length < 1}
             onClick={() => upload(url, true)}
           >
@@ -463,9 +427,8 @@ export const ListInput = ({
   label, // The label
   list, // The list of items to present { val, label, desc }
   current, // The (value of the) current item
-  docs = false, // Docs to load, if any
 }) => (
-  <FormControl label={label} docs={docs}>
+  <FormControl label={label}>
     {list.map((item, i) => (
       <ButtonFrame key={i} active={item.val === current} onClick={() => update(item.val)}>
         <div className="w-full flex flex-col gap-2">
@@ -489,15 +452,18 @@ export const MarkdownInput = ({
   current, // The current value (markdown)
   update, // The onChange handler
   placeholder, // The placeholder content
-  docs = false, // Docs to load, if any
   id = '', // An id to tie the input to the label
   labelBL = false, // Bottom-Left label
   labelBR = false, // Bottom-Right label
 }) => (
-  <FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
+  <FormControl
+    {...{ label, labelBR }}
+    forId={id}
+    labelBL={labelBL ? labelBL : 'This field supports markdown'}
+  >
     <Tabs tabs={['edit', 'preview']}>
       <Tab key="edit">
-        <div className="flex flex-row items-center mt-4">
+        <div className="flex flex-row items-center">
           <textarea
             id={id}
             rows="5"
@@ -509,8 +475,8 @@ export const MarkdownInput = ({
         </div>
       </Tab>
       <Tab key="preview">
-        <div className="flex flex-row items-center mt-4">
-          <Mdx md={current} />
+        <div className="flex flex-row items-center">
+          <Markdown>{current}</Markdown>
         </div>
       </Tab>
     </Tabs>
@@ -523,7 +489,6 @@ export const MeasieInput = ({
   original, // The original value
   update, // The onChange handler
   placeholder, // The placeholder content
-  docs = false, // Docs to load, if any
   id = '', // An id to tie the input to the label
 }) => {
   const isDegree = isDegreeMeasurement(m)
@@ -553,14 +518,14 @@ export const MeasieInput = ({
   if (!m) return null
 
   // Various visual indicators for validating the input
-  let inputClasses = 'input-secondary'
+  let inputClasses = 'daisy-input-secondary'
   let bottomLeftLabel = null
   if (valid === true) {
-    inputClasses = 'input-success'
+    inputClasses = 'daisy-input-success'
     const val = `${validatedVal}${isDegree ? '°' : imperial ? '"' : 'cm'}`
     bottomLeftLabel = <span className="font-medium text-base text-success -mt-2 block">{val}</span>
   } else if (valid === false) {
-    inputClasses = 'input-error'
+    inputClasses = 'daisy-input-error'
     bottomLeftLabel = (
       <span className="font-medium text-error text-base -mt-2 block">¯\_(ツ)_/¯</span>
     )
@@ -574,12 +539,7 @@ export const MeasieInput = ({
    * See: https://github.com/facebook/react/issues/16554
    */
   return (
-    <FormControl
-      label={t(m) + (isDegree ? ' (°)' : '')}
-      docs={docs}
-      forId={id}
-      labelBL={bottomLeftLabel}
-    >
+    <FormControl label={m + (isDegree ? ' (°)' : '')} forId={id} labelBL={bottomLeftLabel}>
       <input
         id={id}
         type="text"
@@ -588,7 +548,7 @@ export const MeasieInput = ({
         placeholder={placeholder}
         value={localVal}
         onChange={(evt) => localUpdate(evt.target.value)}
-        className={`input w-full input-bordered ${inputClasses}`}
+        className={`daisy-input w-full daisy-input-bordered ${inputClasses}`}
       />
     </FormControl>
   )
@@ -628,7 +588,7 @@ export const FileInput = ({
       <FormControl label={label} isValid={valid(current)}>
         <div className="bg-base-100 w-full h-36 mb-2 mx-auto flex flex-col items-center text-center justify-center">
           <button
-            className="btn btn-neutral btn-circle opacity-50 hover:opacity-100"
+            className="daisy-btn daisy-btn-neutral daisy-btn-circle opacity-50 hover:opacity-100"
             onClick={() => update(original)}
           >
             <ResetIcon />
@@ -651,7 +611,9 @@ export const FileInput = ({
       >
         <input {...getInputProps()} />
         <p className="hidden lg:block p-0 m-0">Drag and drop your file here</p>
-        <button className={`btn btn-secondary btn-outline mt-4 px-8`}>Browse...</button>
+        <button className={`daisy-btn daisy-btn-secondary daisy-btn-outline mt-4 px-8`}>
+          Browse...
+        </button>
       </div>
     </FormControl>
   )

@@ -1086,6 +1086,16 @@
  - Migrated from Rollup to Esbuild for all builds
  - The `pctBasedOn()` helper method for pattern config was moved to config-helpers We did not make this a breaking change since it's only used internally.
 
+### i18n
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+#### Fixed
+
+ - Added missing lab namespace for English
+
 ### models
 
 #### Changed
@@ -1224,6 +1234,12 @@
 
 
 ## 2.20.2 (2022-01-27)
+
+### i18n
+
+#### Fixed
+
+ - Patterns options were always in English due to symlinks being used
 
 
 ## 2.20.1 (2022-01-27)
@@ -1552,6 +1568,12 @@
 #### Added
 
  - Added support for `settings.scale`
+
+### i18n
+
+#### Fixed
+
+ - Fixed issue that was causing plugin translations to always be in English
 
 
 ## 2.19.9 (2022-01-09)
@@ -1985,6 +2007,13 @@
 
  - Pattern.on() is now chainable as it returns the Pattern object
 
+### i18n
+
+#### Fixed
+
+ - Fixed bug in resolving of shared pattern options
+ - Removed optional chaining which broke node v12 support
+
 ### snapseries
 
 #### Added
@@ -2031,6 +2060,16 @@
 
  - Handle path.offset() of very short curves with control points on the start or end point Closes [#1257](https://github.com/freesewing/freesewing/issues/1257)
 
+### i18n
+
+#### Added
+
+ - Added translations for Yuri
+
+#### Fixed
+
+ - Added optional chaining so missing options always lead to clear error message
+
 
 ## 2.17.4 (2021-08-20)
 
@@ -2042,6 +2081,12 @@
 
 
 ## 2.17.3 (2021-08-16)
+
+### i18n
+
+#### Added
+
+ - New translations
 
 ### utils
 
@@ -2063,6 +2108,12 @@
 #### Added
 
  - Added new ffsa option to let the user control the extra SA for flat-felled seams Closes [#1251](https://github.com/freesewing/freesewing/issues/1251)
+
+### i18n
+
+#### Added
+
+ - Added new ffsa option for simon & simone
 
 ### models
 
@@ -2185,8 +2236,20 @@
 
  - Fix a bug in `path.shiftAlong` where no point is returned if the distance to shift is a fraction of one step (1/25mm) into a new path segment See [#1140](https://github.com/freesewing/freesewing/issues/1140)
 
+### i18n
+
+#### Changed
+
+ - Changed antman references to antperson
+
 
 ## 2.16.2 (2021-05-05)
+
+### i18n
+
+#### Changed
+
+ - String updates
 
 
 ## 2.16.1 (2021-05-30)
@@ -2395,6 +2458,12 @@
 
  - Changed `department` setting in config in line with new grouping
 
+### i18n
+
+#### Added
+
+ - New translations for pattern filter
+
 ### utils
 
 #### Changed
@@ -2429,6 +2498,12 @@
 #### Fixed
 
  - Fixed third button not showing up See [#973](https://github.com/freesewing/freesewing/issues/973)
+
+### i18n
+
+#### Changed
+
+ - Changes to cfp strings
 
 
 ## 2.15.4 (2021-05-08)
@@ -2561,6 +2636,13 @@
 
  - Don't round coordinates internally to avoid path.split misses
 
+### i18n
+
+#### Added
+
+ - Added translation for new Titan options
+ - Added translations for Charlie
+
 
 ## 2.14.0 (2021-03-07)
 
@@ -2575,6 +2657,12 @@
 #### Fixed
 
  - Replaced grainline indicator on pocket with cut-on-fold indicator
+
+### i18n
+
+#### Added
+
+ - Added translations for Cornelius
 
 
 ## 2.13.2 (2021-02-21)
@@ -2682,6 +2770,12 @@
 #### Fixed
 
  - Make sure roudEnd and roundStart points are always available
+
+### i18n
+
+#### Added
+
+ - Translation for Hortensia
 
 
 ## 2.12.1 (2021-01-27)
@@ -2807,6 +2901,16 @@
 
  - Removed unused lengthBonus option
 
+### i18n
+
+#### Changed
+
+ - New strings for new features
+
+#### Fixed
+
+ - Type in Simon title
+
 
 ## 2.10.7 (2020-11-18)
 
@@ -2821,6 +2925,12 @@
 
 
 ## 2.10.5 (2020-11-14)
+
+### i18n
+
+#### Fixed
+
+ - Added missing `cty.` translations to non-English language files
 
 
 ## 2.10.4 (2020-11-13)
@@ -2883,6 +2993,18 @@
  - Parts not get a `name` property set that hold their (own) name/id
  - Added the `info` type to raised events
  - Added support for conditional loading of plugins
+
+### i18n
+
+#### Added
+
+ - Added translations for plugin-title
+ - Added translations for teagan
+ - Added some translations for the UI
+
+#### Fixed
+
+ - Replaced a few identical files with symlinks
 
 
 ## 2.8.1 (2020-08-16)
@@ -3277,6 +3399,13 @@
 
  - [Properly escape quotes in imperial units](https://github.com/freesewing/freesewing/issues/437)
 
+### i18n
+
+#### Changed
+
+ - Added translations for Titan
+ - Removed `Circumference` suffix from measurement names
+
 ### models
 
 #### Changed
@@ -3344,6 +3473,12 @@
  - utils now includes `Bezier` which holds the bezier-js library so you don't need to re-import it
  - We no longer set the plugin configuration/data object to fall in `pattern.use()`
 
+### i18n
+
+#### Changed
+
+ - Changes to support the renaming of @freesewing/fu to @freesewing/florence
+
 
 ## 2.5.0 (2020-04-05)
 
@@ -3353,8 +3488,20 @@
 
  - Diana is a top with a draped neck
 
+### i18n
+
+#### Added
+
+ - title, description, and options for Dianna
+
 
 ## 2.4.6 (2020-03-23)
+
+### i18n
+
+#### Fixed
+
+ - Fixed an bug in the i18n package
 
 
 ## 2.4.5 (2020-03-19)
@@ -3413,8 +3560,20 @@
 
 ## 2.4.3 (2020-03-12)
 
+### i18n
+
+#### Added
+
+ - Added more translations
+
 
 ## 2.4.2 (2020-03-08)
+
+### i18n
+
+#### Added
+
+ - Added more strings
 
 
 ## 2.4.1 (2020-03-04)
@@ -3588,6 +3747,22 @@
  - Added the `Path.noop()` method
  - Added the `Path.insop()` methods
 
+### i18n
+
+#### Added
+
+ - Added translations for Breanna
+
+#### Changed
+
+ - Added/Updated strings for the 2.2 frontend changes
+ - Changed `Joost De Cock` to `Joost` because spam filters don't like cock
+
+#### Removed
+
+ - Removed the files for homepage translation, and moved that content to markdown
+ - Removed the files for editor translation, as it is no longer used
+
 ### models
 
 #### Changed
@@ -3652,6 +3827,12 @@
 
 ## 2.1.3 (2019-10-18)
 
+### i18n
+
+#### Added
+
+ - More translated strings
+
 ### utils
 
 #### Changed
@@ -3664,6 +3845,12 @@
 
 
 ## 2.1.2 (2019-10-14)
+
+### i18n
+
+#### Fixed
+
+ - Fixed issue where symlinks were causing all languages to export English strings
 
 
 ## 2.1.1 (2019-10-13)
@@ -3718,6 +3905,12 @@
 #### Changed
 
  - The pattern super constructor now sets a `config` property that holds the pattern configuration. This means that unlike before, there is no need to instantiate a pattern to access its config. You can just import the pattern, and it's config property will contain the pattern config.
+
+### i18n
+
+#### Added
+
+ - Added translations for Penelope, Waralee, and Simone
 
 ### utils
 
@@ -3776,6 +3969,12 @@
  - [#100](https://github.com/freesewing/freesewing.org/issues/100): Updated simon with more sensible defaults for ease options
  - [#102](https://github.com/freesewing/freesewing.org/issues/102): Fixed 'Snippets not defined' error when drafting a seperate button placket
  - [#103](https://github.com/freesewing/freesewing.org/issues/103): Fixed 'hemSa not defined' when drafting paperless Simon without seam allowance
+
+### i18n
+
+#### Added
+
+ - [#90](https://github.com/freesewing/freesewing/issues/90): Added missing option translations for Benjamin, Florent, Sandy, Shin, and Theo
 
 ### utils
 
@@ -3979,6 +4178,12 @@
  - Initial release
 
 ### core
+
+#### Added
+
+ - Initial release
+
+### i18n
 
 #### Added
 

@@ -10,6 +10,11 @@ export const Yaml = (props) => {
   else code = props.children
 
   return (
-    <Highlight {...props} language="yaml" raw={hljs.highlight(code, { language: 'yaml' }).value} />
+    <Highlight
+      {...props}
+      language="yaml"
+      raw={hljs.highlight(code, { language: 'yaml' }).value}
+      copy={code}
+    />
   )
 }

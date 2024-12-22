@@ -1,25 +1,41 @@
 import React from 'react'
 import { CopyToClipboard } from '@freesewing/react/components/CopyToClipboard'
 
-const names = {
+const defaultTitles = {
   js: 'Javascript',
-  bash: 'Bash prompt',
-  sh: 'Shell prompt',
+  bash: 'Bash commands',
+  sh: 'Shell commands',
   json: 'JSON',
-  yaml: 'file.yaml',
+  yaml: 'YAML',
 }
 
-export const Highlight = (props) => {
-  let language = 'txt'
-  if (props.language) language = props.language
-  if (props.children?.props?.className) {
-    language = props.children.props.className.split('-').pop()
+/**
+ * A React component to highlight code
+ *
+ * @params {object} props - All React props
+ * @params  {string} language - The language to highlight
+ * @params {object} children - The React children
+ * @params {bool} raw - Set this to true to not escape tags
+ * @params {string} title - Title for the highlight
+ * @params {string} copy - Content to copy to clipboard
+ */
+export const Highlight = ({
+  language = 'txt',
+  children,
+  raw = false,
+  title = false,
+  copy = false,
+}) => {
+  if (children?.props?.className) {
+    language = children.props.className.split('-').pop()
   }
 
   const preProps = {
     className: `language-${language} hljs text-base lg:text-lg whitespace-break-spaces overflow-scroll pr-4`,
   }
-  if (props.raw) preProps.dangerouslySetInnerHTML = { __html: props.raw }
+  if (raw) preProps.dangerouslySetInnerHTML = { __html: raw }
+
+  const label = title ? title : defaultTitles[language] ? defaultTitles[language] : language
 
   return (
     <div className="hljs my-4">
@@ -31,10 +47,10 @@ export const Highlight = (props) => {
         px-4 py-1 mb-2 lg:text-sm
       `}
       >
-        <span>{props.title ? props.title : names[language] ? names[language] : language}</span>
-        <CopyToClipboard content={props.children} />
+        <span>{label}</span>
+        <CopyToClipboard content={copy ? copy : children} label={label} />
       </div>
-      <pre {...preProps}>{props.children}</pre>
+      <pre {...preProps}>{children}</pre>
     </div>
   )
 }

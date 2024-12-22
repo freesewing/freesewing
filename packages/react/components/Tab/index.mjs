@@ -31,16 +31,17 @@ export const Tabs = ({ tabs = '', active = 0, children, withModal = false }) => 
   )
 
   return (
-    <div className="my-4">
-      <div className="tabs">
+    <div className="">
+      <div className="daisy-tabs daisy-tabs-bordered" role="tablist">
         {tablist.map((title, tabId) => {
-          const btnClasses = `text-lg font-bold capitalize tab h-auto tab-bordered grow py-2 ${
-            activeTab === tabId ? 'tab-active' : ''
+          const btnClasses = `text-lg font-bold capitalize daisy-tab h-auto daisy-tabs-bordered grow py-1 ${
+            activeTab === tabId ? 'daisy-tab-active' : ''
           }`
 
           return withModal && activeTab === tabId ? (
             <button
               key={tabId}
+              role="tab"
               className={btnClasses}
               onClick={() =>
                 setModal(
