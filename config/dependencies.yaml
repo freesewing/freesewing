@@ -129,6 +129,7 @@ react:
     axios: *axios
     highlight.js: "^11.11.0"
     html-react-parser: "^5.0.7"
+    luxon: "^3.5.0"
     nuqs: "^1.17.6"
     react-markdown: "^9.0.1"
     use-local-storage-state: "19.1.0"

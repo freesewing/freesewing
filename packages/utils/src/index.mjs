@@ -244,6 +244,12 @@ export function measurementAsUnits(mmValue, units = 'metric') {
   return round(mmValue / (units === 'imperial' ? 25.4 : 10), 3)
 }
 
+/** Generate a URL to create a new pattern with a given design, settings, and view */
+export const newPatternUrl = ({ design, settings = {}, view = 'draft' }) =>
+  `/-/#settings=${encodeURIComponent(
+    JSON.stringify(settings)
+  )}&view=${encodeURIComponent('"' + view + '"')}`
+
 /*
  * A method to ensure input is not empty
  *

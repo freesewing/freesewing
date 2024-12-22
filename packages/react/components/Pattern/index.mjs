@@ -1,3 +1,6 @@
+// Dependencies
+import { cloudflareImageUrl } from '@freesewing/utils'
+// Components
 import React, { forwardRef } from 'react'
 import { Svg as DefaultSvg } from './svg.mjs'
 import { Defs as DefaultDefs } from './defs.mjs'
@@ -11,6 +14,7 @@ import { Grid as DefaultGrid } from './grid.mjs'
 import { Text as DefaultText, TextOnPath as DefaultTextOnPath } from './text.mjs'
 import { Circle as DefaultCircle } from './circle.mjs'
 import { getId, getProps, withinPartBounds, translateStrings } from './utils.mjs'
+import { Link as WebLink } from '@freesewing/react/components/Link'
 
 /*
  * Allow people to override these components
