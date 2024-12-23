@@ -27,6 +27,5 @@ yarn.lock
 .all-contributorsrc
 .nvmrc
 ansible.cfg
-sites/shared/prebuild/data/*.mjs
-
+sites/org/docs/docs/designs/*/options/readme.mdx
 /.nx/workspace-data
