@@ -200,7 +200,7 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
     const [status, body] = await backend.createSet(data)
     if (status === 201 && body.result === 'created') {
       setLoadingStatus([true, 'Loading newly created set', true, true])
-      window.location = `/account/set/?id=${body.set.id}`
+      window.location = `/account/data/sets/set?id=${body.set.id}`
     } else setLoadingStatus([true, 'We failed to create this measurements set', true, false])
   }
 

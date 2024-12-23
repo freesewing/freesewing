@@ -1,3 +1,4 @@
+import tlds from 'tlds/index.json' with { type: 'json' }
 import { cloudflare as cloudflareConfig } from '@freesewing/config'
 
 /*
@@ -342,4 +343,30 @@ export function timeAgo(timestamp, terse = true) {
   if (days < 61) return `${days}${terse ? 'd' : ' days'}${suffix}`
   if (months < 25) return `${months}${terse ? 'M' : ' months'}${suffix}`
   return `${years}${terse ? 'Y' : ' years'}${suffix}`
+}
+
+/**
+ * Validates an email address for correct syntax
+ *
+ * @param {string} email - The email input to check
+ * @return {bool} valid - True if it's a valid email address
+ */
+export function validateEmail(email) {
+  /* eslint-disable */
+  const re =
+    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  /* eslint-enable */
+  return re.test(email)
+}
+
+/**
+ * Validates the top level domain (TLT) for an email address
+ *
+ * @param {string} email - The email input to check
+ * @return {bool} valid - True if it's a valid email address
+ */
+export function validateTld(email) {
+  const tld = email.split('@').pop().split('.').pop().toLowerCase()
+  if (tlds.indexOf(tld) === -1) return tld
+  else return true
 }

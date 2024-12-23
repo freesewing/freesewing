@@ -88,7 +88,7 @@ export const Bookmarks = () => {
   for (const type in types) perType[type] = bookmarks.filter((b) => b.type === type)
 
   return (
-    <div className="max-w-4xl xl:pl-4">
+    <div className="w-full">
       <p className="text-center md:text-right">
         <button
           className="daisy-btn daisy-btn-primary capitalize w-full md:w-auto hover:text-primary-content hover:no-underline"
@@ -100,7 +100,7 @@ export const Bookmarks = () => {
                 slideFrom="right"
                 keepOpenOnClick
               >
-                <div className="w-full max-w-xl">
+                <div className="w-full">
                   <h2>New Bookmark</h2>
                   <NewBookmark onCreated={() => setRefresh(refresh + 1)} />
                 </div>

@@ -51,7 +51,7 @@ export const UsernameSettings = ({ welcome = false }) => {
   else btnClasses += 'w-full btn-primary'
 
   return (
-    <div className="max-w-xl">
+    <div className="w-full">
       <StringInput
         id="account-username"
         label={t('usernameTitle')}

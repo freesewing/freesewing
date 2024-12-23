@@ -1,17 +1,15 @@
 ---
-title: Measurement Set
-sidebar_label: ' '
-sidebar_position: 99
+title: Remove your account
+sidebar_position: 43
 ---
 
-import { getSearchParam } from '@freesewing/utils'
 import { DocusaurusDoc } from '@freesewing/react/components/Docusaurus'
 import { RoleBlock } from '@freesewing/react/components/Role'
-import { Set } from '@freesewing/react/components/Account'
+import { Bio } from '@freesewing/react/components/Account'
 import Link from '@docusaurus/Link'
 
 <DocusaurusDoc>
   <RoleBlock user>
-    <Set Link={Link} id={getSearchParam('id')} />
+    <Bio Link={Link} />
   </RoleBlock>
 </DocusaurusDoc>

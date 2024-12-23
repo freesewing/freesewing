@@ -259,8 +259,12 @@ export const EmailInput = ({
       placeholder={placeholder}
       value={current}
       onChange={(evt) => update(evt.target.value)}
-      className={`input w-full input-bordered ${
-        current === original ? 'input-secondary' : valid(current) ? 'input-success' : 'input-error'
+      className={`daisy-input w-full daisy-input-bordered ${
+        current === original
+          ? 'daisy-input-secondary'
+          : valid(current)
+            ? 'daisy-input-success'
+            : 'daisy-input-error'
       }`}
     />
   </FormControl>
@@ -390,7 +394,7 @@ export const ImageInput = ({
         <input
           id={id}
           type="url"
-          className="input input-secondary w-full input-bordered"
+          className="daisy-input daisy-input-secondary w-full daisy-input-bordered"
           placeholder="Paste an image URL here"
           value={current}
           onChange={active ? (evt) => setUrl(evt.target.value) : (evt) => update(evt.target.value)}
@@ -475,7 +479,7 @@ export const MarkdownInput = ({
         </div>
       </Tab>
       <Tab key="preview">
-        <div className="flex flex-row items-center">
+        <div className="mdx markdown">
           <Markdown>{current}</Markdown>
         </div>
       </Tab>

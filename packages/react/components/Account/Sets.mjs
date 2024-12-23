@@ -3,6 +3,7 @@ import { measurements } from '@freesewing/config'
 import { cloudflareImageUrl, capitalize } from '@freesewing/utils'
 // Context
 import { LoadingStatusContext } from '@freesewing/react/context/LoadingStatus'
+import { ModalContext } from '@freesewing/react/context/Modal'
 // Hooks
 import React, { useState, useEffect, Fragment, useContext } from 'react'
 import { useAccount } from '@freesewing/react/hooks/useAccount'
@@ -10,6 +11,8 @@ import { useBackend } from '@freesewing/react/hooks/useBackend'
 // Components
 import { Link as WebLink } from '@freesewing/react/components/Link'
 import { NoIcon, OkIcon, PlusIcon, TrashIcon, UploadIcon } from '@freesewing/react/components/Icon'
+import { ModalWrapper } from '@freesewing/react/components/Modal'
+import { NewSet } from './Set.mjs'
 
 /*
  * The component for the an account/sets page
@@ -23,12 +26,15 @@ export const Sets = ({ Link = false }) => {
   // Hooks
   const { control } = useAccount()
   const backend = useBackend()
-  const { setLoadingStatus, LoadingProgress } = useContext(LoadingStatusContext)
 
   // State
   const [sets, setSets] = useState([])
   const [selected, setSelected] = useState({})
   const [refresh, setRefresh] = useState(0)
+
+  // Context
+  const { setLoadingStatus, LoadingProgress } = useContext(LoadingStatusContext)
+  const { setModal } = useContext(ModalContext)
 
   // Effects
   useEffect(() => {
@@ -90,15 +96,19 @@ export const Sets = ({ Link = false }) => {
               <UploadIcon />
               Import Measurements Sets
             </Link>
-            <Link
+            <button
               className="daisy-btn daisy-btn-primary capitalize w-full md:w-auto hover:no-underline hover:text-primary-content"
-              bottom
-              primary
-              href="/new/set"
+              onClick={() =>
+                setModal(
+                  <ModalWrapper keepOpenOnClick>
+                    <NewSet />
+                  </ModalWrapper>
+                )
+              }
             >
               <PlusIcon />
               Create a new Measurements Set
-            </Link>
+            </button>
           </p>
           <div className="flex flex-row gap-2 border-b-2 mb-4 pb-4 mt-8 h-14 items-center">
             <input
@@ -145,7 +155,12 @@ export const Sets = ({ Link = false }) => {
               />
             </label>
             <div className="w-full">
-              <MsetCard control={control} href={`/account/set?id=${set.id}`} set={set} size="md" />
+              <MsetCard
+                control={control}
+                href={`/account/data/sets/set?id=${set.id}`}
+                set={set}
+                size="md"
+              />
             </div>
           </div>
         ))}

@@ -12,6 +12,14 @@ export const DisplayRow = ({ title, children, keyWidth = 'w-24' }) => (
   </div>
 )
 
+export const welcomeSteps = {
+  1: [''],
+  2: ['', 'newsletter', 'units'],
+  3: ['', 'newsletter', 'units', 'compare', 'username'],
+  4: ['', 'newsletter', 'units', 'compare', 'username', 'bio', 'img'],
+  5: [''],
+}
+
 /*
 import { Spinner } from 'shared/components/spinner.mjs'
 import Link from 'next/link'
@@ -132,12 +140,5 @@ const icons = {
   img: UserIcon,
 }
 
-export const welcomeSteps = {
-  1: [''],
-  2: ['', 'newsletter', 'units'],
-  3: ['', 'newsletter', 'units', 'compare', 'username'],
-  4: ['', 'newsletter', 'units', 'compare', 'username', 'bio', 'img'],
-  5: [''],
-}
 
 */

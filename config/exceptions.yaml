@@ -109,6 +109,7 @@ packageJson:
       # Hooks
       "./hooks/useAccount": "./hooks/useAccount/index.mjs"
       "./hooks/useBackend": "./hooks/useBackend/index.mjs"
+      "./hooks/useControl": "./hooks/useControl/index.mjs"
       "./hooks/useSelection": "./hooks/useSelection/index.mjs"
       # Lib
       "./lib/RestClient": "./lib/RestClient/index.mjs"

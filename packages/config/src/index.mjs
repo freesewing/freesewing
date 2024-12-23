@@ -1,5 +1,5 @@
 import { cloudflare } from './cloudflare.mjs'
-import { control } from './control.mjs'
+import { control, controlDesc } from './control.mjs'
 import { logoPath } from './logo.mjs'
 import { measurements, degreeMeasurements, isDegreeMeasurement } from './measurements.mjs'
 import { sewingTechniques } from './sewing.mjs'
@@ -14,6 +14,7 @@ export {
   apikeyLevels,
   cloudflare,
   control,
+  controlDesc,
   logoPath,
   measurements,
   degreeMeasurements,

@@ -26,7 +26,6 @@ const account = {
       bookmarks: 2,
       sets: 1,
       patterns: 1,
-      apikeys: 4,
     },
     info: {
       username: 2,
@@ -143,5 +142,28 @@ export const control = {
     core: editor.core,
     ui: editor.ui,
     views: editor.views,
+  },
+}
+
+export const controlDesc = {
+  1: {
+    title: `Keep it as simple as possible`,
+    desc: `Hides all but the most crucial features.`,
+  },
+  2: {
+    title: `Keep it simple, but not too simple`,
+    desc: `Hides the majority of features.`,
+  },
+  3: {
+    title: `Balance simplicity with power`,
+    desc: `Reveals the majority of features, but not all.`,
+  },
+  4: {
+    title: `Give me all powers, but keep me safe`,
+    desc: `Reveals all features, keeps handrails and safety checks`,
+  },
+  5: {
+    title: `Get out of my way`,
+    desc: `Reveals all features, removes handrails and safety checks`,
   },
 }

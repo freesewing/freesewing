@@ -7,6 +7,14 @@ import { Sets, MsetCard } from './Sets.mjs'
 import { Patterns } from './Patterns.mjs'
 import { Pattern, PatternCard } from './Pattern.mjs'
 import { Apikeys } from './Apikeys.mjs'
+import { Username } from './Username.mjs'
+import { Bio } from './Bio.mjs'
+import { Avatar } from './Avatar.mjs'
+import { Email } from './Email.mjs'
+import { Github } from './Github.mjs'
+import { Instagram, Mastodon, Reddit, Twitch, Tiktok, Website } from './Platform.mjs'
+import { Compare } from './Compare.mjs'
+import { Control } from './Control.mjs'
 
 export {
   Bookmarks,
@@ -20,4 +28,17 @@ export {
   Pattern,
   PatternCard,
   Apikeys,
+  Username,
+  Bio,
+  Avatar,
+  Email,
+  Github,
+  Instagram,
+  Mastodon,
+  Reddit,
+  Twitch,
+  Tiktok,
+  Website,
+  Compare,
+  Control,
 }
