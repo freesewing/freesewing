@@ -52,6 +52,7 @@
     "./components/Tab": "./components/Tab/index.mjs",
     "./components/Table": "./components/Table/index.mjs",
     "./components/Time": "./components/Time/index.mjs",
+    "./components/Uuid": "./components/Uuid/index.mjs",
     "./components/Yaml": "./components/Yaml/index.mjs",
     "./components/Xray": "./components/Xray/index.mjs",
     "./context/LoadingStatus": "./context/LoadingStatus/index.mjs",

@@ -306,6 +306,14 @@ export function shortDate(timestamp = false, withTime = true) {
 }
 
 /*
+ * Shorten a UUID
+ *
+ * @param {string} uuid - The input UUID
+ * @return {string} short - The shortened UUID
+ */
+export const shortUuid = (uuid) => uuid.slice(0, 5)
+
+/*
  * We used to use react-timeago but that's too much overhead
  * This is a drop-in replacement that does not rerender
  *

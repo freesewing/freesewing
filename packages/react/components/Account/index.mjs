@@ -6,6 +6,7 @@ import { Set, NewSet } from './Set.mjs'
 import { Sets, MsetCard } from './Sets.mjs'
 import { Patterns } from './Patterns.mjs'
 import { Pattern, PatternCard } from './Pattern.mjs'
+import { Apikeys } from './Apikeys.mjs'
 
 export {
   Bookmarks,
@@ -18,4 +19,5 @@ export {
   Patterns,
   Pattern,
   PatternCard,
+  Apikeys,
 }
