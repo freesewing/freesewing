@@ -44,6 +44,7 @@
     "./components/Logo": "./components/Logo/index.mjs",
     "./components/Modal": "./components/Modal/index.mjs",
     "./components/New": "./components/New/index.mjs",
+    "./components/Number": "./components/Number/index.mjs",
     "./components/Pattern": "./components/Pattern/index.mjs",
     "./components/Popout": "./components/Popout/index.mjs",
     "./components/Role": "./components/Role/index.mjs",

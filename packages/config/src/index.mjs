@@ -5,11 +5,13 @@ import { measurements, degreeMeasurements, isDegreeMeasurement } from './measure
 import { sewingTechniques } from './sewing.mjs'
 import { roles } from './roles.mjs'
 import { urls } from './urls.mjs'
+import { apikeyLevels } from './apikeys.mjs'
 
 /*
  * This top-level file bundles all (named) exports for the config package
  */
 export {
+  apikeyLevels,
   cloudflare,
   control,
   logoPath,

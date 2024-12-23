@@ -84,7 +84,7 @@ export const ModalWrapper = ({
         >
           {children}
           <button
-            className="fixed bottom-2 right-2 btn btn-neutral btn-circle lg:hidden"
+            className="fixed bottom-2 right-2 daisy-btn daisy-btn-neutral daisy-btn-circle lg:hidden"
             onClick={close}
           >
             <CloseIcon className="w-8 h-8" />

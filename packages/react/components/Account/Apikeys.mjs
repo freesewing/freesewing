@@ -1,10 +1,11 @@
 // Dependencies
+import { DateTime } from 'luxon'
 import orderBy from 'lodash/orderBy.js'
 import { capitalize, shortDate } from '@freesewing/utils'
-
+import { apikeyLevels } from '@freesewing/config'
 // Context
+import { ModalContext } from '@freesewing/react/context/Modal'
 import { LoadingStatusContext } from '@freesewing/react/context/LoadingStatus'
-//import { ModalContext } from '@freesewing/react/context/Modal'
 
 // Hooks
 import React, { useState, useEffect, useContext } from 'react'
@@ -23,10 +24,28 @@ import {
   TrashIcon,
 } from '@freesewing/react/components/Icon'
 import { Uuid } from '@freesewing/react/components/Uuid'
+import { Popout } from '@freesewing/react/components/Popout'
+import { ModalWrapper } from '@freesewing/react/components/Modal'
+import { NumberCircle } from '@freesewing/react/components/Number'
+import { StringInput, FormControl, ListInput } from '@freesewing/react/components/Input'
+import { DisplayRow } from './shared.mjs'
+import { CopyToClipboard } from '@freesewing/react/components/CopyToClipboard'
+import { TimeAgo, TimeToGo } from '@freesewing/react/components/Time'
+import { KeyVal } from '@freesewing/react/components/KeyVal'
 
 const t = (input) => {
   console.log('t called', input)
   return input
+}
+
+const fields = {
+  id: 'Key',
+  name: 'Name',
+  calls: 'Calls',
+  level: 'Level',
+  level: 'Level',
+  createdAt: 'Created',
+  expiresAt: 'Expires',
 }
 
 /*
@@ -48,6 +67,9 @@ export const Apikeys = ({ Link = false }) => {
   const backend = useBackend()
   const { setLoadingStatus, LoadingProgress } = useContext(LoadingStatusContext)
   const { count, selection, setSelection, toggle, toggleAll } = useSelection(apikeys)
+
+  // Context
+  const { setModal } = useContext(ModalContext)
 
   // Effects
   useEffect(() => {
@@ -78,16 +100,6 @@ export const Apikeys = ({ Link = false }) => {
     setLoadingStatus([true, 'Nailed it', true, true])
   }
 
-  const fields = {
-    id: 'Key',
-    name: 'Name',
-    calls: 'Calls',
-    level: 'Level',
-    level: 'Level',
-    createdAt: 'Created',
-    expiresAt: 'Expires',
-  }
-
   return (
     <>
       <div className="flex flex-row flex-wrap gap-2 items-center justify-between mb-4">
@@ -98,13 +110,19 @@ export const Apikeys = ({ Link = false }) => {
         >
           <TrashIcon /> {count} API Keys
         </button>
-        <Link
+        <button
           className="daisy-btn daisy-btn-primary capitalize w-full md:w-auto hover:text-primary-content"
-          href="/-/"
+          onClick={() =>
+            setModal(
+              <ModalWrapper keepOpenOnClick>
+                <NewApikey onCreate={() => setRefresh(refresh + 1)} />
+              </ModalWrapper>
+            )
+          }
         >
           <PlusIcon />
           Create a new API key
-        </Link>
+        </button>
       </div>
       <TableWrapper>
         <table className="table table-auto">
@@ -149,10 +167,21 @@ export const Apikeys = ({ Link = false }) => {
                   <Uuid uuid={apikey.id} label="Key" />
                 </td>
                 {Object.keys(fields)
-                  .slice(1, 3)
+                  .slice(1, 4)
                   .map((field) => (
                     <td key={field} className="text-base font-medium">
-                      {apikey[field]}
+                      <button
+                        className="daisy-btn daisy-btn-link text-secondary hover:decoration-4"
+                        onClick={() =>
+                          setModal(
+                            <ModalWrapper>
+                              <ApiKey apikey={apikey} />
+                            </ModalWrapper>
+                          )
+                        }
+                      >
+                        {apikey[field]}
+                      </button>
                     </td>
                   ))}
                 <td className="text-base font-medium">{shortDate(apikey.createdAt)}</td>
@@ -163,5 +192,159 @@ export const Apikeys = ({ Link = false }) => {
         </table>
       </TableWrapper>
     </>
+  )
+}
+
+const ApiKey = ({ apikey }) => (
+  <>
+    <h2 className="flex flex-row items-center gap-2">
+      API Key <Uuid uuid={apikey.id} />
+    </h2>
+    <ul className="list list-disc ml-4">
+      {Object.entries(fields).map(([key, label]) => (
+        <li key={key}>
+          {label}: <b>{apikey[key]}</b>
+        </li>
+      ))}
+    </ul>
+  </>
+)
+
+const NewApikey = ({ onCreate = false }) => {
+  // State
+  const [name, setName] = useState('')
+  const [level, setLevel] = useState(1)
+  const [expires, setExpires] = useState(Date.now())
+  const [apikey, setApikey] = useState(false)
+
+  // Hooks
+  const { account } = useAccount()
+  const backend = useBackend()
+
+  // Context
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
+
+  const levels = account.role === 'admin' ? [0, 1, 2, 3, 4, 5, 6, 7, 8] : [0, 1, 2, 3, 4]
+
+  const createKey = async () => {
+    setLoadingStatus([true, 'Creating new API key'])
+    const [status, body] = await backend.createApikey({
+      name,
+      level,
+      expiresIn: Math.floor((expires.valueOf() - Date.now().valueOf()) / 1000),
+    })
+    if (status === 201 && body.result === 'created') {
+      setLoadingStatus([true, 'API key created', true, true])
+      setApikey(body.apikey)
+      if (typeof onCreate === 'function') onCreate(body.apikey)
+    } else setLoadingStatus([true, 'An error occured. Please report this', true, false])
+  }
+
+  const clear = () => {
+    setApikey(false)
+    setGenerate(false)
+    setName('')
+    setLevel(1)
+  }
+
+  return (
+    <div className="w-full">
+      <h2>New API key {apikey ? `: ${apikey.name}` : ''}</h2>
+      {apikey ? (
+        <ShowNewApikey {...{ apikey }} />
+      ) : (
+        <>
+          <StringInput
+            id="apikey-name"
+            label="Key Name"
+            current={name}
+            update={setName}
+            valid={(val) => val.length > 0}
+            placeholder={'Alicia Key'}
+          />
+          <ExpiryPicker {...{ expires, setExpires }} />
+          <ListInput
+            id="apikey-level"
+            label="Key Level"
+            list={levels.map((l) => ({
+              val: l,
+              label: (
+                <div className="flex flex-row items-center w-full justify-between">
+                  <span>{apikeyLevels[l]}</span>
+                  <NumberCircle nr={l} color="secondary" />
+                </div>
+              ),
+            }))}
+            current={level}
+            update={setLevel}
+          />
+          <div className="flex flex-row gap-2 items-center w-full my-8">
+            <button
+              className="daisy-btn daisy-btn-primary capitalize w-full md:w-auto"
+              disabled={name.length < 1}
+              onClick={createKey}
+            >
+              New API key
+            </button>
+          </div>
+        </>
+      )}
+    </div>
+  )
+}
+
+const ShowNewApikey = ({ apikey }) => (
+  <div>
+    <div className="flex flex-row flex-wrap gap-2 items-center mb-2">
+      <KeyVal k="name" val={apikey.name} color="secondary" />
+      <KeyVal k="level" val={apikey.level} color="secondary" />
+      <KeyVal k="created" val={<TimeAgo iso={apikey.createdAt} />} color="secondary" />
+      <KeyVal k="expires" val={<TimeToGo iso={apikey.expiresAt} />} color="secondary" />
+    </div>
+    <h6 className="flex flex-row items-center">
+      Key
+      <CopyToClipboard sup content={apikey.key} label="API key ID" />
+    </h6>
+    <pre>{apikey.key}</pre>
+    <h6 className="flex flex-row items-center">
+      Secret
+      <CopyToClipboard sup content={apikey.secret} label="API key secret" />
+    </h6>
+    <pre>{apikey.secret}</pre>
+    <Popout warning compact>
+      This is the only time you can see the key secret, make sure to copy it.
+    </Popout>
+  </div>
+)
+
+const ExpiryPicker = ({ expires, setExpires }) => {
+  const [days, setDays] = useState(1)
+
+  // Run update when component mounts
+  useEffect(() => update(days), [])
+
+  const update = (evt) => {
+    const value = typeof evt === 'number' ? evt : evt.target.value
+    setExpires(DateTime.now().plus({ days: value }))
+    setDays(value)
+  }
+
+  return (
+    <div className="flex flex-row gap-2 items-center">
+      <FormControl
+        label="Key Expiry"
+        labelBL={shortDate(expires)}
+        labelBR={<TimeToGo iso={expires} />}
+      >
+        <input
+          type="range"
+          min="1"
+          max={731}
+          value={days}
+          className="daisy-range daisy-range-secondary w-full"
+          onChange={update}
+        />
+      </FormControl>
+    </div>
   )
 }
