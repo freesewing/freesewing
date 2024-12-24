@@ -8,7 +8,7 @@ import { cloudflare as cloudflareConfig } from '@freesewing/config'
 /*
  * CSS classes to  spread icon + text horizontally on a button
  */
-export const horFlexClasses = 'flex flex-row items-center justify-between gap-4 w-full'
+export const horFlexClasses = 'flex flex-row items-center justify-between gap-4'
 
 /*
  * CSS classes to  spread icon + text horizontally on a button, only from md upwards

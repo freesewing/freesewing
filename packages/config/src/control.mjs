@@ -41,9 +41,9 @@ const account = {
       control: 1,
     },
     security: {
-      password: 2,
-      mfa: 3,
       apikeys: 4,
+      mfa: 3,
+      password: 2,
     },
     identities: {
       github: 3,

@@ -18,6 +18,8 @@ import { Control } from './Control.mjs'
 import { Units } from './Units.mjs'
 import { Newsletter } from './Newsletter.mjs'
 import { Consent } from './Consent.mjs'
+import { Password } from './Password.mjs'
+import { Mfa } from './Mfa.mjs'
 
 export {
   Bookmarks,
@@ -47,4 +49,6 @@ export {
   Units,
   Newsletter,
   Consent,
+  Password,
+  Mfa,
 }
