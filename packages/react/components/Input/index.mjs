@@ -467,11 +467,11 @@ export const MarkdownInput = ({
   >
     <Tabs tabs={['edit', 'preview']}>
       <Tab key="edit">
-        <div className="flex flex-row items-center">
+        <div className="flex flex-row items-center mt-2">
           <textarea
             id={id}
             rows="5"
-            className="textarea textarea-bordered textarea-lg w-full"
+            className="daisy-textarea daisy-textarea-bordered daisy-textarea-lg w-full"
             value={current}
             placeholder={placeholder}
             onChange={(evt) => update(evt.target.value)}

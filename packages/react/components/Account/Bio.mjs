@@ -11,8 +11,10 @@ import { useBackend } from '@freesewing/react/hooks/useBackend'
 
 // Components
 import { Link as WebLink } from '@freesewing/react/components/Link'
-import { SaveIcon } from '@freesewing/react/components/Icon'
+import { SaveIcon, RightIcon } from '@freesewing/react/components/Icon'
 import { MarkdownInput } from '@freesewing/react/components/Input'
+import { IconButton } from '@freesewing/react/components/Button'
+import { WelcomeIcons } from './shared.mjs'
 
 /*
  * Component for the account/bio page
@@ -60,18 +62,20 @@ export const Bio = ({ welcome = false, Link = false }) => {
 
       {welcome ? (
         <>
-          <ContinueButton btnProps={{ href: nextHref }} link />
+          <IconButton href={nextHref} className="mt-4">
+            <RightIcon stroke={3} /> Continue
+          </IconButton>
           {welcomeSteps[account.control].length > 0 ? (
             <>
               <progress
-                className="progress progress-primary w-full mt-12"
+                className="daisy-progress daisy-progress-primary w-full mt-12"
                 value={600 / welcomeSteps[account.control].length}
                 max="100"
               ></progress>
               <span className="pt-4 text-sm font-bold opacity-50">
                 6 / {welcomeSteps[account.control].length}
               </span>
-              <Icons
+              <WelcomeIcons
                 done={welcomeSteps[account.control].slice(0, 5)}
                 todo={welcomeSteps[account.control].slice(6)}
                 current="bio"

@@ -12,24 +12,11 @@ import { useBackend } from '@freesewing/react/hooks/useBackend'
 
 // Components
 import { Link as WebLink } from '@freesewing/react/components/Link'
-import { NoIcon, OkIcon, SaveIcon } from '@freesewing/react/components/Icon'
+import { NoIcon, OkIcon, SaveIcon, RightIcon } from '@freesewing/react/components/Icon'
 import { ListInput } from '@freesewing/react/components/Input'
 import { Popout } from '@freesewing/react/components/Popout'
-
-const strings = {
-  yes: {
-    title: 'Yes, in case it may help me',
-    desc:
-      'Allowing us to compare your measurments to a baseline or others measurements sets ' +
-      'allows us to detect potential problems in your measurements or patterns.',
-  },
-  no: {
-    title: 'No, never compare',
-    desc:
-      'We get it, comparison is the thief of joy. Just be aware that this limits our ability ' +
-      'to warn you about potential problems in your measurements sets or patterns.',
-  },
-}
+import { IconButton } from '@freesewing/react/components/Button'
+import { WelcomeIcons } from './shared.mjs'
 
 /*
  * Component for the account/preferences/newsletter page
@@ -99,18 +86,20 @@ export const Newsletter = ({ welcome = false, Link = false }) => {
       />
       {welcome ? (
         <>
-          <ContinueButton btnProps={{ href: nextHref }} link />
+          <IconButton href={nextHref} className="mt-4">
+            <RightIcon stroke={3} /> Continue
+          </IconButton>
           {welcomeSteps[account?.control].length > 0 ? (
             <>
               <progress
-                className="progress progress-primary w-full mt-12"
+                className="daisy-progress daisy-progress-primary w-full mt-12"
                 value={200 / welcomeSteps[account?.control].length}
                 max="100"
               ></progress>
               <span className="pt-4 text-sm font-bold opacity-50">
                 2 / {welcomeSteps[account?.control].length}
               </span>
-              <Icons
+              <WelcomeIcons
                 done={welcomeSteps[account?.control].slice(0, 1)}
                 todo={welcomeSteps[account?.control].slice(2)}
                 current="newsletter"
@@ -119,21 +108,23 @@ export const Newsletter = ({ welcome = false, Link = false }) => {
           ) : null}
         </>
       ) : null}
-      <Popout tip>
-        <h5>You can unsubscribe at any time with the link below</h5>
-        <p>
-          This unsubscribe link will also be included at the bottom of every newsletter we send you,
-          so you do not need to bookmark it, but you can if you want to.
-        </p>
-        <p>
-          <Link href={`/newsletter/unsubscribe?x=${account?.ehash}`} className={linkClasses}>
-            Unsubscribe link
-          </Link>
-        </p>
-        <p className="text-sm">
-          This link is to unsubscribe you specifically, do not share it with other subscribers.
-        </p>
-      </Popout>
+      {welcome ? null : (
+        <Popout tip>
+          <h5>You can unsubscribe at any time with the link below</h5>
+          <p>
+            This unsubscribe link will also be included at the bottom of every newsletter we send
+            you, so you do not need to bookmark it, but you can if you want to.
+          </p>
+          <p>
+            <Link href={`/newsletter/unsubscribe?x=${account?.ehash}`} className={linkClasses}>
+              Unsubscribe link
+            </Link>
+          </p>
+          <p className="text-sm">
+            This link is to unsubscribe you specifically, do not share it with other subscribers.
+          </p>
+        </Popout>
+      )}
     </div>
   )
 }

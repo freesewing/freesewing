@@ -11,8 +11,10 @@ import { useBackend } from '@freesewing/react/hooks/useBackend'
 
 // Components
 import { Link as WebLink } from '@freesewing/react/components/Link'
-import { NoIcon, OkIcon, SaveIcon } from '@freesewing/react/components/Icon'
+import { NoIcon, OkIcon, SaveIcon, RightIcon } from '@freesewing/react/components/Icon'
 import { ListInput } from '@freesewing/react/components/Input'
+import { IconButton } from '@freesewing/react/components/Button'
+import { WelcomeIcons } from './shared.mjs'
 
 const strings = {
   yes: {
@@ -91,18 +93,20 @@ export const Compare = ({ welcome = false }) => {
       />
       {welcome ? (
         <>
-          <ContinueButton btnProps={{ href: nextHref }} link />
+          <IconButton href={nextHref} className="mt-4">
+            <RightIcon stroke={3} /> Continue
+          </IconButton>
           {welcomeSteps[account?.control].length > 0 ? (
             <>
               <progress
-                className="progress progress-primary w-full mt-12"
+                className="daisy-progress daisy-progress-primary w-full mt-12"
                 value={400 / welcomeSteps[account?.control].length}
                 max="100"
               ></progress>
               <span className="pt-4 text-sm font-bold opacity-50">
                 4 / {welcomeSteps[account?.control].length}
               </span>
-              <Icons
+              <WelcomeIcons
                 done={welcomeSteps[account?.control].slice(0, 3)}
                 todo={welcomeSteps[account?.control].slice(4)}
                 current="compare"

@@ -13,9 +13,11 @@ import { useControl } from '@freesewing/react/hooks/useControl'
 
 // Components
 import { Link as WebLink } from '@freesewing/react/components/Link'
-import { NoIcon, OkIcon, SaveIcon } from '@freesewing/react/components/Icon'
+import { RightIcon, NoIcon, OkIcon, SaveIcon } from '@freesewing/react/components/Icon'
 import { ListInput } from '@freesewing/react/components/Input'
 import { ControlScore } from '@freesewing/react/components/Control'
+import { IconButton } from '@freesewing/react/components/Button'
+import { WelcomeIcons } from './shared.mjs'
 
 const strings = {
   1: {
@@ -53,7 +55,7 @@ export const Control = ({ welcome = false }) => {
     <div className="w-full">
       <ListInput
         id="account-control"
-        label="User Experience"
+        label="What user experience do you prefer?"
         list={[1, 2, 3, 4, 5].map((val) => ({
           val,
           label: (
@@ -69,18 +71,20 @@ export const Control = ({ welcome = false }) => {
       />
       {welcome ? (
         <>
-          <ContinueButton btnProps={{ href: nextHref }} link />
+          <IconButton href={nextHref} className="mt-4">
+            <RightIcon stroke={3} /> Continue
+          </IconButton>
           {welcomeSteps[control].length > 1 ? (
             <>
               <progress
-                className="progress progress-primary w-full mt-12"
+                className="daisy-progress daisy-progress-primary w-full mt-12"
                 value={100 / welcomeSteps[control].length}
                 max="100"
               ></progress>
               <span className="pt-4 text-sm font-bold opacity-50">
                 1 / {welcomeSteps[control].length}
               </span>
-              <Icons done={[]} todo={welcomeSteps[control].slice(1)} current="" />
+              <WelcomeIcons done={[]} todo={welcomeSteps[control].slice(1)} current="" />
             </>
           ) : null}
         </>

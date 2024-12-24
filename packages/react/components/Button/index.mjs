@@ -19,7 +19,7 @@ export const IconButton = ({
   btnProps = {},
 }) => {
   const allProps = {
-    className: `flex flex-row gap-2 lg:gap-12 items-center justify-between w-full lg:w-auto daisy-btn daisy-btn-${color} capitalize my-2 ${className}`,
+    className: `${staticLinkClasses} daisy-btn-${color} hover:text-${color}-content ${className}`,
     title: title,
     ...btnProps,
   }
@@ -28,3 +28,5 @@ export const IconButton = ({
 
   return onClick ? <button {...allProps}>{children}</button> : <a {...allProps}>{children}</a>
 }
+
+const staticLinkClasses = `flex flex-row gap-2 lg:gap-12 items-center justify-between w-full lg:w-auto daisy-btn hover:no-underline capitalize my-2`

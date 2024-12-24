@@ -12,8 +12,8 @@ import { useBackend } from '@freesewing/react/hooks/useBackend'
  */
 export const useControl = () => {
   // Hooks
-  const { account, setAccount, token } = useAccount()
   const backend = useBackend()
+  const { account, setAccount, token } = useAccount()
   const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
@@ -32,10 +32,10 @@ export const useControl = () => {
         } else
           setLoadingStatus([true, 'Failed to update preferences. Please report this', true, true])
       } else {
-      /*
-       * Control is used even when people are not logged in
-       * So this ensures control is always available, even if people are not authenticated
-       */
+        /*
+         * Control is used even when people are not logged in
+         * So this ensures control is always available, even if people are not authenticated
+         */
         setAccount({ ...account, control: newControl })
         setControl(newControl)
       }

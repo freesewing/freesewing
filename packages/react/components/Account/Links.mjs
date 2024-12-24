@@ -83,7 +83,7 @@ const titles = {
   img: 'Avatar',
   email: 'E-mail Address',
   newsletter: 'Newsletter Subscription',
-  compare: 'Measurements Sets Comparison',
+  compare: 'Measurements Comparison',
   consent: 'Consent & Privacy',
   control: 'User Experience',
   github: 'GitHub',
