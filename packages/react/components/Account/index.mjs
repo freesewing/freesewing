@@ -15,6 +15,9 @@ import { Github } from './Github.mjs'
 import { Instagram, Mastodon, Reddit, Twitch, Tiktok, Website } from './Platform.mjs'
 import { Compare } from './Compare.mjs'
 import { Control } from './Control.mjs'
+import { Units } from './Units.mjs'
+import { Newsletter } from './Newsletter.mjs'
+import { Consent } from './Consent.mjs'
 
 export {
   Bookmarks,
@@ -41,4 +44,7 @@ export {
   Website,
   Compare,
   Control,
+  Units,
+  Newsletter,
+  Consent,
 }

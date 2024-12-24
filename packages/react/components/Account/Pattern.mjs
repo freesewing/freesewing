@@ -112,7 +112,7 @@ export const Pattern = ({ id, Link }) => {
     const [status, body] = await backend.createPattern(data)
     if (status === 201 && body.result === 'created') {
       setLoadingStatus([true, 'Loading newly created pattern', true, true])
-      window.location = `/account/pattern/?id=${body.pattern.id}`
+      window.location = `/account/data/patterns/pattern?id=${body.pattern.id}`
     } else setLoadingStatus([true, 'We failed to create this pattern', true, false])
   }
 

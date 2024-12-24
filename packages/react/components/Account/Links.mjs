@@ -74,12 +74,12 @@ const itemIcons = {
 
 const btnClasses = 'daisy-btn capitalize flex flex-row justify-between'
 const itemClasses = 'flex flex-row items-center justify-between bg-opacity-10 p-2 px-4 rounded mb-1'
+const linkClasses = `hover:bg-secondary hover:bg-opacity-10 max-w-md hover:no-underline`
 
 const titles = {
-  apikeys: 'Your API Keys',
-  bookmarks: 'Your Bookmarks',
-  sets: 'Your Measurements Sets',
-  patterns: 'Your Patterns',
+  apikeys: 'API Keys',
+  sets: 'Measurements Sets',
+  patterns: 'Patterns',
   img: 'Avatar',
   email: 'E-mail Address',
   newsletter: 'Newsletter Subscription',
@@ -90,22 +90,12 @@ const titles = {
   mfa: 'Multi-Factor Authentication',
 }
 
-const AccountLink = ({ item, children, Link }) => (
-  <Link
-    className={`${itemClasses} hover:bg-secondary hover:bg-opacity-10 max-w-md`}
-    href={`/account/${item}/`}
-    title={titles[item] ? titles.item : capitalize(item)}
-  >
-    {children}
-  </Link>
-)
-
 const YesNo = ({ check }) => (check ? <BoolYesIcon /> : <BoolNoIcon />)
 
 const t = (input) => input
 
 /**
- * The AccountLinks component shows all of the links to manage your account
+ * The Links component shows all of the links to manage your account
  *
  * @param {object} props - All the React props
  * @param {function} Link - A custom Link component, typically the Docusaurus one, but it's optional
@@ -177,13 +167,18 @@ export const Links = ({ Link = false }) => {
           <h4 className="my-2">Your Data</h4>
           {Object.keys(controlConfig.account.fields.data).map((item) =>
             controlConfig.flat[item] > control ? null : (
-              <AccountLink {...{ item, Link }} key={item}>
+              <Link
+                key={item}
+                title={titles[item]}
+                href={`/account/data/${item}/`}
+                className={`${itemClasses} ${linkClasses}`}
+              >
                 <div className="flex flex-row items-center gap-3 font-medium">
                   {itemIcons[item]}
                   {titles[item] ? titles[item] : capitalize(item)}
                 </div>
                 <div className="">{itemPreviews[item]}</div>
-              </AccountLink>
+              </Link>
             )
           )}
         </div>
@@ -193,13 +188,18 @@ export const Links = ({ Link = false }) => {
             <h4 className="my-2">About You</h4>
             {Object.keys(controlConfig.account.fields.info).map((item) =>
               controlConfig.flat[item] > control ? null : (
-                <AccountLink {...{ item, Link }} key={item}>
+                <Link
+                  key={item}
+                  title={titles[item] || capitalize(item)}
+                  href={`/account/about/${item}/`}
+                  className={`${itemClasses} ${linkClasses}`}
+                >
                   <div className="flex flex-row items-center gap-3 font-medium">
                     {itemIcons[item]}
                     {titles[item] ? titles[item] : capitalize(item)}
                   </div>
                   <div className="">{itemPreviews[item]}</div>
-                </AccountLink>
+                </Link>
               )
             )}
             <div className={`${itemClasses} opacity-60 max-w-md`}>
@@ -223,13 +223,18 @@ export const Links = ({ Link = false }) => {
           <h4 className="my-2">Preferences</h4>
           {Object.keys(controlConfig.account.fields.settings).map((item) =>
             controlConfig.flat[item] > control ? null : (
-              <AccountLink {...{ item, Link }} key={item}>
+              <Link
+                key={item}
+                title={titles[item] || capitalize(item)}
+                href={`/account/preferences/${item}/`}
+                className={`${itemClasses} ${linkClasses}`}
+              >
                 <div className="flex flex-row items-center gap-3 font-medium">
                   {itemIcons[item]}
                   {titles[item] ? titles[item] : capitalize(item)}
                 </div>
                 <div className="">{itemPreviews[item]}</div>
-              </AccountLink>
+              </Link>
             )
           )}
         </div>
@@ -239,13 +244,18 @@ export const Links = ({ Link = false }) => {
             <h4 className="my-2">Linked Identities</h4>
             {Object.keys(controlConfig.account.fields.identities).map((item) =>
               controlConfig.flat[item] > control ? null : (
-                <AccountLink {...{ item, Link }} key={item}>
+                <Link
+                  key={item}
+                  title={titles[item] || capitalize(item)}
+                  href={`/account/social/${item}/`}
+                  className={`${itemClasses} ${linkClasses}`}
+                >
                   <div className="flex flex-row items-center gap-3 font-medium">
                     {itemIcons[item]}
                     {titles[item] ? titles[item] : capitalize(item)}
                   </div>
                   <div className="">{itemPreviews[item]}</div>
-                </AccountLink>
+                </Link>
               )
             )}
           </div>
@@ -256,13 +266,18 @@ export const Links = ({ Link = false }) => {
             <h4 className="my-2">Security</h4>
             {Object.keys(controlConfig.account.fields.security).map((item) =>
               controlConfig.flat[item] > control ? null : (
-                <AccountLink {...{ item, Link }} key={item}>
+                <Link
+                  key={item}
+                  title={titles[item] || capitalize(item)}
+                  href={`/account/security/${item}/`}
+                  className={`${itemClasses} ${linkClasses}`}
+                >
                   <div className="flex flex-row items-center gap-3 font-medium">
                     {itemIcons[item]}
                     {titles[item] ? titles[item] : capitalize(item)}
                   </div>
                   <div className="">{itemPreviews[item]}</div>
-                </AccountLink>
+                </Link>
               )
             )}
           </div>
@@ -272,33 +287,53 @@ export const Links = ({ Link = false }) => {
           <div className="">
             <h4 className="my-2">Actions</h4>
             {control > 2 && (
-              <AccountLink item="import" Link={Link}>
+              <Link
+                className={`${itemClasses} ${linkClasses}`}
+                title="Import data"
+                href="/account/actions/import/"
+              >
                 <UploadIcon />
-                Import data
-              </AccountLink>
+                <span className="font-medium">Import data</span>
+              </Link>
             )}
             {control > 2 && (
-              <AccountLink item="export" Link={Link}>
+              <Link
+                className={`${itemClasses} ${linkClasses}`}
+                title="Export your data"
+                href="/account/actions/export/"
+              >
                 <DownloadIcon />
-                Export your data
-              </AccountLink>
+                <span className="font-medium">Export your data</span>
+              </Link>
             )}
             {control > 2 && (
-              <AccountLink item="reload" Link={Link}>
+              <Link
+                className={`${itemClasses} ${linkClasses}`}
+                title="Reload account data"
+                href="/account/actions/reload/"
+              >
                 <ReloadIcon />
-                Reload account data
-              </AccountLink>
+                <span className="font-medium">Reload account data</span>
+              </Link>
             )}
             {control > 3 && (
-              <AccountLink item="restrict" Link={Link}>
+              <Link
+                className={`${itemClasses} ${linkClasses}`}
+                title="Restrict processing of your data"
+                href="/account/actions/restrict/"
+              >
                 <CloseIcon className="w-6 h-6 text-warning" stroke={3} />
-                Restrict processing of your data
-              </AccountLink>
+                <span className="font-medium">Restrict processing of your data</span>
+              </Link>
             )}
-            <AccountLink item="remove" Link={Link}>
+            <Link
+              className={`${itemClasses} ${linkClasses}`}
+              title="Remove your account"
+              href="/account/actions/remove/"
+            >
               <TrashIcon className="w-6 h-6 text-warning" />
-              Remove your account
-            </AccountLink>
+              <span className="font-medium">Remove your account</span>
+            </Link>
           </div>
         )}
       </div>

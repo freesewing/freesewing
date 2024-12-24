@@ -200,7 +200,7 @@ export const Patterns = ({ Link = false }) => {
                 <td className="text-base font-medium">{pattern.id}</td>
                 <td className="text-base font-medium">
                   <PatternCard
-                    href={`/account/pattern?id=${pattern.id}`}
+                    href={`/account/data/patterns/pattern?id=${pattern.id}`}
                     pattern={pattern}
                     size="xs"
                     Link={Link}
@@ -208,7 +208,7 @@ export const Patterns = ({ Link = false }) => {
                 </td>
                 <td className="text-base font-medium">
                   <Link
-                    href={`/account/pattern?id=${pattern.id}`}
+                    href={`/account/data/patterns/pattern?id=${pattern.id}`}
                     className="text-secondary underline decoration-2 hover:decoration-4"
                   >
                     {pattern.name}

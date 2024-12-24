@@ -748,7 +748,7 @@ export const NewSet = () => {
     const [status, body] = await backend.createSet({ name, imperial })
     if (status === 201 && body.result === 'created') {
       setLoadingStatus([true, 'Nailed it', true, true])
-      window.location = `/account/set?id=${body.set.id}`
+      window.location = `/account/data/sets/set?id=${body.set.id}`
     } else
       setLoadingStatus([
         true,

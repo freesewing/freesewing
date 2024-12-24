@@ -28,17 +28,17 @@ const account = {
       patterns: 1,
     },
     info: {
-      username: 2,
-      bio: 2,
       img: 2,
+      bio: 2,
       email: 3,
+      username: 2,
     },
     settings: {
-      units: 2,
-      newsletter: 2,
-      compare: 3,
-      control: 1,
       consent: 2,
+      compare: 3,
+      newsletter: 2,
+      units: 2,
+      control: 1,
     },
     security: {
       password: 2,
