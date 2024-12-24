@@ -20,6 +20,11 @@ import { Newsletter } from './Newsletter.mjs'
 import { Consent } from './Consent.mjs'
 import { Password } from './Password.mjs'
 import { Mfa } from './Mfa.mjs'
+import { ImportSet } from './Import.mjs'
+import { Export } from './Export.mjs'
+import { Reload } from './Reload.mjs'
+import { Remove } from './Remove.mjs'
+import { Restrict } from './Restrict.mjs'
 
 export {
   Bookmarks,
@@ -51,4 +56,9 @@ export {
   Consent,
   Password,
   Mfa,
+  ImportSet,
+  Export,
+  Reload,
+  Remove,
+  Restrict,
 }

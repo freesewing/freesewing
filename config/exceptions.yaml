@@ -76,6 +76,7 @@ packageJson:
       # Components
       "./components/Account": "./components/Account/index.mjs"
       "./components/Breadcrumbs": "./components/Breadcrumbs/index.mjs"
+      "./components/Button": "./components/Button/index.mjs"
       "./components/Control": "./components/Control/index.mjs"
       "./components/CopyToClipboard": "./components/CopyToClipboard/index.mjs"
       "./components/Docusaurus": "./components/Docusaurus/index.mjs"
