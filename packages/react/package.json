@@ -50,6 +50,7 @@
     "./components/Popout": "./components/Popout/index.mjs",
     "./components/Role": "./components/Role/index.mjs",
     "./components/SignIn": "./components/SignIn/index.mjs",
+    "./components/SignUp": "./components/SignUp/index.mjs",
     "./components/Spinner": "./components/Spinner/index.mjs",
     "./components/Tab": "./components/Tab/index.mjs",
     "./components/Table": "./components/Table/index.mjs",

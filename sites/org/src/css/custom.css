@@ -4,113 +4,8 @@
  * work well for content-centric websites.
  */
 
-/*
- * Add Tailwindcss but only inside a container
- * This is needed because docusaurus and tailwind will clash
- */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/*
- * Add CSS for code
- */
-@import './code.css';
-
-@layer components {
-  /* Applied styles for common HTML tags */
-  h1 {
-    @apply text-base-content text-4xl py-5 font-bold lg:text-6xl;
-  }
-  h2 {
-    @apply text-base-content text-3xl pt-4 pb-3 m-0 font-medium lg:text-4xl;
-  }
-  h3 {
-    @apply text-base-content text-2xl pt-3 pb-2 m-0 font-medium lg:text-3xl;
-  }
-  h4 {
-    @apply text-base-content text-xl pt-2 pb-1 m-0 font-medium lg:text-2xl;
-  }
-  h5 {
-    @apply text-base-content text-lg py-1 m-0 font-medium lg:text-xl;
-  }
-  h6 {
-    @apply text-base-content text-base py-0 m-0 font-medium lg:text-lg;
-  }
-  p {
-    @apply text-base-content my-1 py-2 text-base leading-6;
-  }
-  .btn {
-    @apply normal-case;
-  }
-  /* Fix color issues when Tailwind clashes with Infima*/
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  label,
-  .daisy-label {
-    color: var(--ifm-font-color-base);
-  }
-}
-
 /* You can override the default Infima variables here. */
 :root {
-  /* Neutral */
-  --neutral-50: 0 0% 98%;
-  --neutral-100: 0 0% 96.1%;
-  --neutral-200: 0 0% 89.8%;
-  --neutral-300: 0 0% 83.1%;
-  --neutral-400: 0 0% 63.9%;
-  --neutral-500: 0 0% 45.1%;
-  --neutral-600: 0 0% 32.2%;
-  --neutral-700: 0 0% 25.1%;
-  --neutral-800: 0 0% 14.9%;
-  --neutral-900: 0 0% 9%;
-  --neutral-950: 0 0% 3.9%;
-
-  /* Sky */
-  --sky-50: 204 100% 97.1%;
-  --sky-100: 204 93.8% 93.7%;
-  --sky-200: 200.6 94.4% 86.1%;
-  --sky-300: 199.4 95.5% 73.9%;
-  --sky-400: 198.4 93.2% 59.6%;
-  --sky-500: 198.6 88.7% 48.4%;
-  --sky-600: 200.4 98% 39.4%;
-  --sky-700: 201.3 96.3% 32.2%;
-  --sky-800: 201 90% 27.5%;
-  --sky-900: 202 80.3% 23.9%;
-  --sky-950: 204 80.2% 15.9%;
-
-  /* Violet */
-  --violet-50: 250 100% 97.6%;
-  --violet-100: 251.4 91.3% 95.5%;
-  --violet-200: 250.5 95.2% 91.8%;
-  --violet-300: 252.5 94.7% 85.1%;
-  --violet-400: 255.1 91.7% 76.3%;
-  --violet-500: 258.3 89.5% 66.3%;
-  --violet-600: 262.1 83.3% 57.8%;
-  --violet-700: 263.4 70% 50.4%;
-  --violet-800: 263.4 69.3% 42.2%;
-  --violet-900: 263.5 67.4% 34.9%;
-  --violet-950: 261.2 72.6% 22.9%;
-
-  /* Pink */
-  --pink-50: 327.3 73.3% 97.1%;
-  --pink-100: 325.7 77.8% 94.7%;
-  --pink-200: 325.9 84.6% 89.8%;
-  --pink-300: 327.4 87.1% 81.8%;
-  --pink-400: 328.6 85.5% 70.2%;
-  --pink-500: 330.4 81.2% 60.4%;
-  --pink-600: 333.3 71.4% 50.6%;
-  --pink-700: 335.1 77.6% 42%;
-  --pink-800: 335.8 74.4% 35.3%;
-  --pink-900: 335.9 69% 30.4%;
-  --pink-950: 336.2 83.9% 17.1%;
-
   /* Color Palette */
   --ifm-color-primary: hsl(var(--sky-500));
   --ifm-color-primary-dark: hsl(var(--sky-600));
@@ -122,6 +17,9 @@
   --ifm-font-color-base: hsl(var(--neutral-900));
   --ifm-font-color-light: hsl(var(--neutral-50));
   --ifm-font-color-secondary: hsl(var(--sky-500));
+
+  /* State colors */
+  --ifm-color-success: hsl(var(--sky-400));
 
   /* Background Colors */
   --ifm-background-color: hsl(var(--neutral-50));
@@ -207,12 +105,6 @@
   --pattern-stroke-7xl: 20px;
 }
 
-@media screen and (max-width: 996px) {
-  :root {
-    --ifm-menu-color: hsl(var(--neutral-50));
-  }
-}
-
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   /* Text Colors */
@@ -242,6 +134,11 @@
   --ifm-footer-background-color: hsl(var(--neutral-900));
   --ifm-footer-link-color: hsl(var(--sky-300));
 }
+
+/*
+ * Add CSS for code
+ */
+@import './code.css';
 
 div.footer__copyright {
   font-size: 0.8rem;
@@ -323,3 +220,15 @@ a.theme-edit-this-page:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
+
+a.daisy-btn-neutral:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Add Tailwindcss
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

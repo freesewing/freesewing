@@ -17,7 +17,7 @@ const TypographyPage = ({ page }) => {
       description="FreeSewing is an open source Javascript library for parametric sewing patterns"
     >
       <div className="tailwind-container">
-        <div className="text-base-content mdx max-w-prose text-base-content max-w-prose text-current xl:pl-4 mx-auto my-8">
+        <div className="tw-text-base-content mdx tw-max-w-prose tw-text-base-content tw-max-w-prose tw-text-current tw-xl:pl-4 tw-mx-auto tw-my-8">
           <h1>Typography</h1>
           <p>
             This typography page shows an overview of different elements and how they are styled.
@@ -38,51 +38,55 @@ const TypographyPage = ({ page }) => {
             A regular link <a href="#">looks like this</a>, whereas buttons look like this:
           </p>
           <h3>Main button styles</h3>
-          <div className="flex flex-row gap-2 flex-wrap">
-            <button className="daisy-btn daisy-btn-neutral">Neutral button</button>
-            <button className="daisy-btn daisy-btn-primary">Primary button</button>
-            <button className="daisy-btn daisy-btn-secondary">Secondary button</button>
-            <button className="daisy-btn daisy-btn-accent">Accent button</button>
+          <div className="tw-flex tw-flex-row tw-gap-2 tw-flex-wrap">
+            <button className="tw-daisy-btn tw-daisy-btn-neutral">Neutral button</button>
+            <button className="tw-daisy-btn tw-daisy-btn-primary">Primary button</button>
+            <button className="tw-daisy-btn tw-daisy-btn-secondary">Secondary button</button>
+            <button className="tw-daisy-btn tw-daisy-btn-accent">Accent button</button>
           </div>
           <h3>State button styles</h3>
-          <div className="flex flex-row gap-2 flex-wrap">
-            <button className="daisy-btn daisy-btn-info">Info button</button>
-            <button className="daisy-btn daisy-btn-success">Success button</button>
-            <button className="daisy-btn daisy-btn-warning">Warning button</button>
-            <button className="daisy-btn daisy-btn-error">Error button</button>
+          <div className="tw-flex tw-flex-row tw-gap-2 tw-flex-wrap">
+            <button className="tw-daisy-btn tw-daisy-btn-info">Info button</button>
+            <button className="tw-daisy-btn tw-daisy-btn-success">Success button</button>
+            <button className="tw-daisy-btn tw-daisy-btn-warning">Warning button</button>
+            <button className="tw-daisy-btn tw-daisy-btn-error">Error button</button>
           </div>
           <h3>Other button styles</h3>
-          <div className="flex flex-row gap-2 flex-wrap">
-            <button className="daisy-btn daisy-btn-ghost">Ghost button</button>
-            <button className="daisy-btn daisy-btn-link">Link button</button>
+          <div className="tw-flex tw-flex-row tw-gap-2 tw-flex-wrap">
+            <button className="tw-daisy-btn tw-daisy-btn-ghost">Ghost button</button>
+            <button className="tw-daisy-btn tw-daisy-btn-link">Link button</button>
           </div>
           <h3>Outlined button styles</h3>
-          <div className="flex flex-row gap-2 flex-wrap">
-            <button className="daisy-btn daisy-btn-outline daisy-btn-neutral">
+          <div className="tw-flex tw-flex-row tw-gap-2 tw-flex-wrap">
+            <button className="tw-daisy-btn tw-daisy-btn-outline tw-daisy-btn-neutral">
               Neutral button
             </button>
-            <button className="daisy-btn daisy-btn-outline daisy-btn-primary">
+            <button className="tw-daisy-btn tw-daisy-btn-outline tw-daisy-btn-primary">
               Primary button
             </button>
-            <button className="daisy-btn daisy-btn-outline daisy-btn-secondary">
+            <button className="tw-daisy-btn tw-daisy-btn-outline tw-daisy-btn-secondary">
               Secondary button
             </button>
-            <button className="daisy-btn daisy-btn-outline daisy-btn-accent">Accent button</button>
+            <button className="tw-daisy-btn tw-daisy-btn-outline tw-daisy-btn-accent">
+              Accent button
+            </button>
           </div>
           <h3>Button sizes</h3>
-          <div className="flex flex-row gap-2 flex-wrap">
-            <button className="daisy-btn daisy-btn-primary daisy-btn-lg">Large</button>
-            <button className="daisy-btn daisy-btn-primary">Normal</button>
-            <button className="daisy-btn daisy-btn-primary daisy-btn-sm">Small</button>
-            <button className="daisy-btn daisy-btn-primary daisy-btn-xs">Tiny</button>
-            <button className="daisy-btn daisy-btn-primary daisy-btn-lg daisy-btn-wide">
+          <div className="tw-flex tw-flex-row tw-gap-2 tw-flex-wrap">
+            <button className="tw-daisy-btn tw-daisy-btn-primary tw-daisy-btn-lg">Large</button>
+            <button className="tw-daisy-btn tw-daisy-btn-primary">Normal</button>
+            <button className="tw-daisy-btn tw-daisy-btn-primary tw-daisy-btn-sm">Small</button>
+            <button className="tw-daisy-btn tw-daisy-btn-primary tw-daisy-btn-xs">Tiny</button>
+            <button className="tw-daisy-btn tw-daisy-btn-primary tw-daisy-btn-lg tw-daisy-btn-wide">
               Large wide
             </button>
-            <button className="daisy-btn daisy-btn-primary daisy-btn-wide">Normal wide</button>
-            <button className="daisy-btn daisy-btn-primary daisy-btn-sm daisy-btn-wide">
+            <button className="tw-daisy-btn tw-daisy-btn-primary tw-daisy-btn-wide">
+              Normal wide
+            </button>
+            <button className="tw-daisy-btn tw-daisy-btn-primary tw-daisy-btn-sm tw-daisy-btn-wide">
               Small wide
             </button>
-            <button className="daisy-btn daisy-btn-primary daisy-btn-xs daisy-bnt-wide">
+            <button className="tw-daisy-btn tw-daisy-btn-primary tw-daisy-btn-xs tw-daisy-bnt-wide">
               Tiny wide
             </button>
           </div>
@@ -104,14 +108,14 @@ const TypographyPage = ({ page }) => {
           </Tabs>
           <h2>DaisyUI Tabs</h2>
           <p>Do not use these. The tab elements clash with the docusaurus styles.</p>
-          <div role="tablist" className="daisy-tabs daisy-tabs-bordered">
-            <a role="tab" className="daisy-tab">
+          <div role="tablist" className="tw-daisy-tabs tw-daisy-tabs-bordered">
+            <a role="tab" className="tw-daisy-tab">
               Tab 1
             </a>
-            <a role="tab" className="daisy-tab daisy-tab-active">
+            <a role="tab" className="tw-daisy-tab tw-daisy-tab-active">
               Tab 2
             </a>
-            <a role="tab" className="daisy-tab">
+            <a role="tab" className="tw-daisy-tab">
               Tab 3
             </a>
           </div>

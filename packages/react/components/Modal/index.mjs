@@ -3,10 +3,10 @@ import { ModalContext } from '@freesewing/react/context/Modal'
 import { CloseIcon } from '@freesewing/react/components/Icon'
 
 const slideClasses = {
-  left: '-translate-x-full',
-  right: 'translate-x-full',
-  top: '-translate-y-full',
-  bottom: 'translate-y-full',
+  left: 'tw--translate-x-full',
+  right: 'tw-translate-x-full',
+  top: 'tw--translate-y-full',
+  bottom: 'tw-translate-y-full',
 }
 
 /**
@@ -29,8 +29,8 @@ export const ModalWrapper = ({
   flex = 'row',
   justify = 'center',
   items = 'center',
-  bg = 'neutral lg:neutral',
-  bgOpacity = '100 lg:bg-opacity-70',
+  bg = 'neutral lg:tw-neutral',
+  bgOpacity = '100 lg:tw-bg-opacity-70',
   bare = false,
   keepOpenOnClick = false,
   slideFrom = 'left',
@@ -53,8 +53,8 @@ export const ModalWrapper = ({
 
   // CSS classes for animation
   const animation = animate
-    ? `lg:opacity-0 ${slideClasses[slideFrom]} lg:translate-x-0 lg:translate-y-0`
-    : 'opacity-100 translate-none'
+    ? `lg:tw-opacity-0 ${slideClasses[slideFrom]} lg:tw-translate-x-0 lg:tw-translate-y-0`
+    : 'tw-opacity-100 tw-translate-none'
 
   const stopClick = (evt) => {
     /*
@@ -66,10 +66,10 @@ export const ModalWrapper = ({
 
   return (
     <div
-      className={`fixed top-0 left-0 m-0 p-0 shadow w-full h-screen
-        transform-all duration-150 ${animation}
-        bg-${bg} bg-opacity-${bgOpacity} hover:cursor-pointer
-        flex flex-${flex} justify-${justify} items-${items} lg:p-12 backdrop-blur-md`}
+      className={`tw-fixed tw-top-0 tw-left-0 tw-m-0 tw-p-0 tw-shadow tw-w-full tw-h-screen
+        tw-transform-all tw-duration-150 ${animation}
+        tw-bg-${bg} tw-bg-opacity-${bgOpacity} hover:tw-cursor-pointer
+        tw-flex tw-flex-${flex} tw-justify-${justify} tw-items-${items} lg:tw-p-12 tw-backdrop-blur-md`}
       onClick={close}
       style={{ zIndex: 250 }}
     >
@@ -78,16 +78,16 @@ export const ModalWrapper = ({
       ) : (
         <div
           onClick={keepOpenOnClick ? stopClick : null}
-          className={`z-30 bg-base-100 p-4 lg:px-8 lg:rounded-lg lg:shadow-lg max-h-full overflow-auto hover:cursor-default ${
-            fullWidth ? 'w-full' : ''
+          className={`tw-z-30 tw-bg-base-100 tw-p-4 lg:tw-px-8 lg:tw-rounded-lg lg:tw-shadow-lg tw-max-h-full tw-overflow-auto hover:tw-cursor-default ${
+            fullWidth ? 'tw-w-full' : ''
           }`}
         >
           {children}
           <button
-            className="fixed bottom-2 right-2 daisy-btn daisy-btn-neutral daisy-btn-circle lg:hidden"
+            className="tw-fixed tw-bottom-2 tw-right-2 tw-daisy-btn tw-daisy-btn-neutral tw-daisy-btn-circle lg:tw-hidden"
             onClick={close}
           >
-            <CloseIcon className="w-8 h-8" />
+            <CloseIcon className="tw-w-8 tw-h-8" />
           </button>
         </div>
       )}

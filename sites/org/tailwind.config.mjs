@@ -1,5 +1,5 @@
 // Handle themes
-import { themes } from './themes/index.mjs'
+import { light, dark } from './themes/index.mjs'
 import daisyui from 'daisyui'
 
 export default {
@@ -12,11 +12,11 @@ export default {
     './tailwind-force.html',
   ],
   plugins: [daisyui],
-  //corePlugins: { preflight: false },
+  corePlugins: { preflight: false },
   darkMode: ['class', "[data-theme='dark']"],
-  //prefix: 'tw-',
+  prefix: 'tw-',
   daisyui: {
-    themes: [themes],
+    themes: [{ light, dark }],
     logs: true,
     themeRoot: '*',
     prefix: 'daisy-',

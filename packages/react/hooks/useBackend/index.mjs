@@ -723,7 +723,7 @@ Backend.prototype.signInFromLink = async function ({ id, check }) {
  * @return {array} result - The REST response, a [status, data] array
  */
 Backend.prototype.signUp = async function ({ email }) {
-  return await this.post('/signup', { email })
+  return await this.post('/signup', { email, language: 'en' })
 }
 
 /*

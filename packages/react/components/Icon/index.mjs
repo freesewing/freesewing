@@ -5,7 +5,7 @@ import { logoPath } from '@freesewing/config'
  * Used inside the pattern editor
  */
 export const IconWrapper = ({
-  className = 'w-6 h-6',
+  className = 'tw-w-6 tw-h-6',
   stroke = 2,
   children = null,
   fill = false,
@@ -49,19 +49,19 @@ export const BeakerIcon = (props) => (
 
 // Looks like a left U-turn that we slightly rotate
 export const BackIcon = (props) => (
-  <IconWrapper {...props} className={`${props.className || 'w-6 h-h'} -rotate-45`}>
+  <IconWrapper {...props} className={`${props.className || 'tw-w-6 tw-h-6'} tw--rotate-45`}>
     <path d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
   </IconWrapper>
 )
 
 // Looks like a red X
 export const BoolNoIcon = ({ size = 6 }) => (
-  <NoIcon className={`w-${size} h-${size} text-error`} stroke={4} />
+  <NoIcon className={`tw-w-${size} tw-h-${size} tw-text-error`} stroke={4} />
 )
 
 // Looks like a green checkbox
 export const BoolYesIcon = ({ size = 6 }) => (
-  <OkIcon className={`w-${size} h-${size} text-success`} stroke={4} />
+  <OkIcon className={`tw-w-${size} tw-h-${size} tw-text-success`} stroke={4} />
 )
 
 // Looks like a bookmark
@@ -211,7 +211,7 @@ export const ExportIcon = (props) => (
 
 // Looks like a ! in a triangle, is intended to be shown on an error background
 export const FailureIcon = ({ size = 6 }) => (
-  <NoIcon className={`w-${size} h-${size} text-secondary-content`} stroke={4} />
+  <NoIcon className={`tw-w-${size} tw-h-${size} tw-text-secondary-content`} stroke={4} />
 )
 
 // Looks like a fingerprint
@@ -565,10 +565,10 @@ export const SignoutIcon = (props) => (
 export const SpinnerIcon = (props) => (
   <IconWrapper
     {...props}
-    className={`${props.className ? props.className : 'h-6 w-6'} animate-spin`}
+    className={`${props.className ? props.className : 'tw-h-6 tw-w-6'} tw-animate-spin`}
   >
     <circle
-      className="opacity-25"
+      className="tw-opacity-25"
       cx="12"
       cy="12"
       r="10"
@@ -576,7 +576,7 @@ export const SpinnerIcon = (props) => (
       strokeWidth="4"
     ></circle>
     <path
-      className="opacity-85"
+      className="tw-opacity-85"
       fill="currentColor"
       stroke="none"
       d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
@@ -586,7 +586,7 @@ export const SpinnerIcon = (props) => (
 
 // Looks like a white checkbox, intended to be shown on a success-colored background
 export const SuccessIcon = ({ size = 6 }) => (
-  <OkIcon className={`w-${size} h-${size} text-secondary-content`} stroke={4} />
+  <OkIcon className={`tw-w-${size} tw-h-${size} tw-text-secondary-content`} stroke={4} />
 )
 
 // Looks like the TikTok t
