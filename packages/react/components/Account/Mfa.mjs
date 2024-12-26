@@ -89,14 +89,14 @@ export const Mfa = ({ welcome = false, title = true }) => {
   if (enable) titleText = 'Set up Multi-Factor Authentication'
 
   return (
-    <div className="w-full">
+    <div className="tw-w-full">
       {title ? <h2>{titleText}</h2> : null}
       {enable ? (
         <>
-          <div className="flex flex-row items-center justify-center px-8 lg:px-36">
+          <div className="tw-flex tw-flex-row tw-items-center tw-justify-center tw-px-8 lg:tw-px-36">
             <div dangerouslySetInnerHTML={{ __html: enable.qrcode }} />
           </div>
-          <p className="flex flex-row items-center justify-center">{enable.secret}</p>
+          <p className="tw-flex tw-flex-row tw-items-center tw-justify-center">{enable.secret}</p>
           <Bullet num="1">
             Add FreeSewing to your Authenticator App by scanning the QR code above. If you cannot
             scan the QR code, you can manually enter the secret below it.
@@ -107,14 +107,14 @@ export const Mfa = ({ welcome = false, title = true }) => {
           <input
             value={code}
             onChange={(evt) => setCode(evt.target.value)}
-            className="daisy-input w-64 m-auto text-4xl daisy-input-bordered daisy-input-lg flex flex-row text-center mb-8 tracking-widest"
+            className="tw-daisy-input tw-w-64 tw-m-auto tw-text-4xl tw-daisy-input-bordered tw-daisy-input-lg tw-flex tw-flex-row tw-text-center tw-mb-8 tw-tracking-widest"
             type="text"
             inputMode="numeric"
             pattern="[0-9]{6}"
             placeholder="000000"
           />
           <button
-            className={`${horFlexClasses} daisy-btn daisy-btn-success daisy-btn-lg block w-full md:w-auto mx-auto`}
+            className={`${horFlexClasses} tw-daisy-btn tw-daisy-btn-success tw-daisy-btn-lg tw-block tw-w-full md:tw-w-auto tw-mx-auto`}
             onClick={confirmMfa}
           >
             <LockIcon />
@@ -123,7 +123,7 @@ export const Mfa = ({ welcome = false, title = true }) => {
         </>
       ) : null}
       {disable ? (
-        <div className="my-8 max-w-xl">
+        <div className="tw-my-8 tw-max-w-xl">
           <Bullet num="1">
             <h5>Please enter your password to confirm this action</h5>
             <PasswordInput
@@ -138,13 +138,13 @@ export const Mfa = ({ welcome = false, title = true }) => {
             <input
               value={code}
               onChange={(evt) => setCode(evt.target.value)}
-              className="input w-full text-4xl  input-bordered input-lg flex flex-row text-center mb-8 tracking-widest"
+              className="tw-input tw-w-full tw-text-4xl tw-input-bordered tw-input-lg tw-flex tw-flex-row tw-text-center tw-mb-8 tw-tracking-widest"
               type="text"
               placeholder={'000000'}
             />
           </Bullet>
           <button
-            className={`${horFlexClasses} daisy-btn daisy-btn-error daisy-btn-lg`}
+            className={`${horFlexClasses} tw-daisy-btn tw-daisy-btn-error tw-daisy-btn-lg`}
             onClick={disableMfa}
             disabled={code.length < 4 || password.length < 3}
           >
@@ -163,8 +163,8 @@ export const Mfa = ({ welcome = false, title = true }) => {
             You can use each of these codes only once. Write them down, because this is the only
             time you will get to see them.
           </p>
-          <div className="hljs my-4">
-            <div className=" flex flex-row justify-between items-center text-xs font-medium text-warning mt-1 border-b border-neutral-content border-opacity-25 px-4 py-1 mb-2 lg:text-sm">
+          <div className="hljs tw-my-4">
+            <div className="tw-flex tw-flex-row tw-justify-between tw-items-center tw-text-xs tw-font-medium tw-text-warning tw-mt-1 tw-border-b tw-border-neutral-content tw-border-opacity-25 tw-px-4 tw-py-1 tw-mb-2 lg:tw-text-sm">
               <span>MFA Scratch Codes</span>
               <CopyToClipboard
                 content={
@@ -173,17 +173,17 @@ export const Mfa = ({ welcome = false, title = true }) => {
                 }
               />
             </div>
-            <pre className="language-shell hljs text-base lg:text-lg whitespace-break-spaces overflow-scroll pr-4">
+            <pre className="language-shell hljs tw-text-base lg:tw-text-lg tw-whitespace-break-spaces tw-overflow-scroll tw-pr-4">
               {scratchCodes.map((code) => code + '\n')}
             </pre>
           </div>
         </>
       ) : (
-        <div className="mt-4">
+        <div className="tw-mt-4">
           {account.mfaEnabled ? (
             disable ? null : (
               <button
-                className={`${horFlexClasses} daisy-btn daisy-btn-primary w-full md:w-auto daisy-btn-outline`}
+                className={`${horFlexClasses} tw-daisy-btn tw-daisy-btn-primary tw-w-full md:tw-w-auto tw-daisy-btn-outline`}
                 onClick={() => setDisable(true)}
               >
                 <NoIcon stroke={3} />
@@ -193,7 +193,7 @@ export const Mfa = ({ welcome = false, title = true }) => {
           ) : enable ? null : (
             <div>
               <button
-                className={`${horFlexClasses} daisy-btn daisy-btn-primary w-full md:w-auto daisy-btn-lg`}
+                className={`${horFlexClasses} tw-daisy-btn tw-daisy-btn-primary tw-w-full md:tw-w-auto tw-daisy-btn-lg`}
                 onClick={enableMfa}
               >
                 <LockIcon />
@@ -215,10 +215,10 @@ export const Mfa = ({ welcome = false, title = true }) => {
 }
 
 const Bullet = ({ num, children }) => (
-  <div className="flex flex-row items-start py-4 w-full gap-4">
-    <span className="bg-secondary text-secondary-content rounded-full w-8 h-8 p-1 inline-block text-center font-bold mr-4 shrink-0">
+  <div className="tw-flex tw-flex-row tw-items-start tw-py-4 tw-w-full tw-gap-4">
+    <span className="tw-bg-secondary tw-text-secondary-content tw-rounded-full tw-w-8 tw-h-8 tw-p-1 tw-inline-block tw-text-center tw-font-bold tw-mr-4 tw-shrink-0">
       {num}
     </span>
-    <div className="text-lg grow">{children}</div>
+    <div className="tw-text-lg tw-grow">{children}</div>
   </div>
 )

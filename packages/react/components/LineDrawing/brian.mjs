@@ -1,45 +1,44 @@
 import React from 'react'
 import { LineDrawingWrapper, thin, dashed } from './shared.mjs'
 
+/*
+ * This strokeScale factor is used to normalize the stroke across
+ * designs so we have a consistent look when showing our collection
+ */
 const strokeScale = 0.5
 
-export const Brian = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
-
-  return (
-    <LineDrawingWrapper viewBox="0 0 189 90" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-      <Back stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
-
-/*
- * React component for the front
+/**
+ * A linedrawing component for Brian
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
  */
-export const BrianFront = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
+export const Brian = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="0 -40 189 189" {...{ className }}>
+    <Front stroke={strokeScale * stroke} />
+    <Back stroke={strokeScale * stroke} />
+  </LineDrawingWrapper>
+)
 
-  return (
-    <LineDrawingWrapper viewBox="0 0 94 90" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
+/**
+ * A linedrawing component for the front of Brian
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
+ */
+export const BrianFront = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="0 0 93 93" {...{ className, stroke }}>
+    <Front stroke={strokeScale * stroke} />
+  </LineDrawingWrapper>
+)
 
 /*
  * React component for the back
  */
 export const BrianBack = ({
-  className = 'w-64', // CSS classes to apply
+  className = 'tw-w-full', // CSS classes to apply
   stroke = 1, // Stroke width to use
 }) => {
   // Normalize stroke across designs

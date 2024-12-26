@@ -58,21 +58,21 @@ export const Newsletter = ({ welcome = false, Link = false }) => {
       : '/docs/about/guide'
 
   return (
-    <div className="w-full">
+    <div className="tw-w-full">
       <ListInput
         id="account-newsletter"
         label="Would you like to receive the FreeSewing newsletter?"
         list={['yes', 'no'].map((val) => ({
           val,
           label: (
-            <div className="flex flex-row items-center w-full justify-between">
+            <div className="tw-flex tw-flex-row tw-items-center tw-w-full tw-justify-between">
               <span>
                 {val === 'yes' ? 'Yes, I would like to receive the newsletter' : 'No thanks'}
               </span>
               {val === 'yes' ? (
-                <OkIcon className="w-8 h-8 text-success" stroke={4} />
+                <OkIcon className="tw-w-8 tw-h-8 tw-text-success" stroke={4} />
               ) : (
-                <NoIcon className="w-8 h-8 text-error" stroke={3} />
+                <NoIcon className="tw-w-8 tw-h-8 tw-text-error" stroke={3} />
               )}
             </div>
           ),
@@ -86,17 +86,17 @@ export const Newsletter = ({ welcome = false, Link = false }) => {
       />
       {welcome ? (
         <>
-          <IconButton href={nextHref} className="mt-4">
+          <IconButton href={nextHref} className="tw-mt-4">
             <RightIcon stroke={3} /> Continue
           </IconButton>
           {welcomeSteps[account?.control].length > 0 ? (
             <>
               <progress
-                className="daisy-progress daisy-progress-primary w-full mt-12"
+                className="tw-daisy-progress tw-daisy-progress-primary tw-w-full tw-mt-12"
                 value={200 / welcomeSteps[account?.control].length}
                 max="100"
               ></progress>
-              <span className="pt-4 text-sm font-bold opacity-50">
+              <span className="tw-pt-4 tw-text-sm tw-font-bold tw-opacity-50">
                 2 / {welcomeSteps[account?.control].length}
               </span>
               <WelcomeIcons
@@ -120,7 +120,7 @@ export const Newsletter = ({ welcome = false, Link = false }) => {
               Unsubscribe link
             </Link>
           </p>
-          <p className="text-sm">
+          <p className="tw-text-sm">
             This link is to unsubscribe you specifically, do not share it with other subscribers.
           </p>
         </Popout>

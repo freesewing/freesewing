@@ -32,7 +32,7 @@ export const Reload = () => {
   }
 
   return (
-    <div className="w-full">
+    <div className="tw-w-full">
       <p>
         The data stored in your browser can sometimes get out of sync with the data stored in our
         backend.

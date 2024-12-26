@@ -56,7 +56,7 @@ const Platform = ({ platform = false }) => {
   }
 
   return (
-    <div className="w-full">
+    <div className="tw-w-full">
       <StringInput
         id={`account-${platform}`}
         label={platform === 'website' ? `Website URL` : `${labels[platform]} account`}
@@ -65,8 +65,11 @@ const Platform = ({ platform = false }) => {
         valid={(val) => val.length > 0}
         placeholder={'joostdecock'}
       />
-      <p className="text-right">
-        <button className="daisy-btn daisy-btn-primary w-full lg:w-auto mt-8" onClick={save}>
+      <p className="tw-text-right">
+        <button
+          className="tw-daisy-btn tw-daisy-btn-primary tw-w-full lg:tw-w-auto tw-mt-8"
+          onClick={save}
+        >
           <SaveIcon /> Save
         </button>
       </p>

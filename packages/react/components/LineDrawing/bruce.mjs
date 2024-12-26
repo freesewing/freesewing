@@ -1,45 +1,46 @@
 import React from 'react'
 import { LineDrawingWrapper, thin, dashed } from './shared.mjs'
 
-const strokeScale = 0.6
-
-export const Bruce = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
-
-  return (
-    <LineDrawingWrapper viewBox="0 0 202 78" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-      <Back stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
-
 /*
- * React component for the front
+ * This strokeScale factor is used to normalize the stroke across
+ * designs so we have a consistent look when showing our collection
  */
-export const BruceFront = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
+const strokeScale = 0.5
 
-  return (
-    <LineDrawingWrapper viewBox="0 0 101 78" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
+/**
+ * A linedrawing component for Bruce
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
+ */
+export const Bruce = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="-27 0 155 155" {...{ className, stroke }}>
+    <Front stroke={strokeScale * stroke} />
+    <g transform="translate(-100.5, 76)">
+      <Back stroke={strokeScale * stroke} />
+    </g>
+  </LineDrawingWrapper>
+)
+
+/**
+ * A linedrawing component for the front of Bruce
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
+ */
+export const BruceFront = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="0 -10 101 101" {...{ className }}>
+    <Front stroke={strokeScale * stroke} />
+  </LineDrawingWrapper>
+)
 
 /*
  * React component for the back
  */
 export const BruceBack = ({
-  className = 'w-64', // CSS classes to apply
+  className = 'tw-w-full', // CSS classes to apply
   stroke = 1, // Stroke width to use
 }) => {
   // Normalize stroke across designs

@@ -1,6 +1,5 @@
 import { Design } from '@freesewing/core'
 import { gorePlugin } from '@freesewing/plugin-gore'
-import { data } from '../data.mjs'
 import { i18n } from '../i18n/index.mjs'
 
 // Stacks
@@ -19,7 +18,6 @@ import { settings_sa } from './settings.mjs'
 
 // Setup our new design
 const Examples = new Design({
-  data,
   parts: [
     // Stacks
     stacks_top,

@@ -1,5 +1,5 @@
 import { Design, mergeI18n } from '@freesewing/core'
-import { data } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 import { cup } from './cup.mjs'
 import { neckTie } from './neck-tie.mjs'
 import { bandTie } from './band-tie.mjs'
@@ -7,7 +7,7 @@ import { i18n as beeI18n } from '../i18n/index.mjs'
 import { i18n as bellaI18n } from '@freesewing/bella'
 
 const Bee = new Design({
-  data,
+  data: about,
   parts: [cup, neckTie, bandTie],
 })
 
@@ -50,4 +50,4 @@ const i18n = mergeI18n([bellaI18n, beeI18n], {
   o: { keep: i18nKeepOptions },
 })
 
-export { cup, neckTie, bandTie, Bee, i18n }
+export { cup, neckTie, bandTie, Bee, i18n, about }

@@ -206,21 +206,21 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
 
   const heading = (
     <>
-      <div className="flex flex-wrap md:flex-nowrap flex-row gap-2 w-full">
-        <div className="w-full md:w-96 shrink-0">
+      <div className="tw-flex tw-flex-wrap md:tw-flex-nowrap tw-flex-row tw-gap-2 tw-w-full">
+        <div className="tw-w-full md:tw-w-96 tw-shrink-0">
           <MsetCard set={mset} control={control} Link={Link} />
         </div>
-        <div className="flex flex-col justify-end gap-2 mb-2 grow">
+        <div className="tw-flex tw-flex-col tw-justify-end tw-gap-2 tw-mb-2 tw-grow">
           {account.control > 2 && mset.public && mset.userId !== account.id ? (
-            <div className="flex flex-row gap-2 items-center">
+            <div className="tw-flex tw-flex-row tw-gap-2 tw-items-center">
               <a
-                className="daisy-badge daisy-badge-secondary font-bold daisy-badge-lg"
+                className="tw-daisy-badge tw-daisy-badge-secondary tw-font-bold tw-daisy-badge-lg"
                 href={`${urls.backend}/sets/${mset.id}.json`}
               >
                 JSON
               </a>
               <a
-                className="daisy-badge daisy-badge-success font-bold daisy-badge-lg"
+                className="tw-daisy-badge tw-daisy-badge-success tw-font-bold tw-daisy-badge-lg"
                 href={`${urls.backend}/sets/${mset.id}.yaml`}
               >
                 YAML
@@ -230,9 +230,9 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
             <span></span>
           )}
           {account.control > 3 && mset.userId === account.id ? (
-            <div className="flex flex-row gap-2 items-center">
+            <div className="tw-flex tw-flex-row tw-gap-2 tw-items-center">
               <button
-                className="daisy-badge daisy-badge-secondary font-bold daisy-badge-lg"
+                className="tw-daisy-badge tw-daisy-badge-secondary tw-font-bold tw-daisy-badge-lg"
                 onClick={() =>
                   setModal(
                     <ModalWrapper keepOpenOnClick>
@@ -244,7 +244,7 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
                 JSON
               </button>
               <button
-                className="daisy-badge daisy-badge-success font-bold daisy-badge-lg text-neutral-content"
+                className="tw-daisy-badge tw-daisy-badge-success tw-font-bold tw-daisy-badge-lg tw-text-neutral-content"
                 onClick={() =>
                   setModal(
                     <ModalWrapper keepOpenOnClick>
@@ -261,11 +261,11 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
           )}
           {account.id && account.control > 2 && mset.public && mset.userId !== account.id ? (
             <button
-              className="daisy-btn daisy-btn-primary"
+              className="tw-daisy-btn tw-daisy-btn-primary"
               title="Import measurements set"
               onClick={importSet}
             >
-              <div className="flex flex-row gap-4 justify-between items-center w-full">
+              <div className="tw-flex tw-flex-row tw-gap-4 tw-justify-between tw-items-center tw-w-full">
                 <UploadIcon />
                 Import measurements set
               </div>
@@ -282,7 +282,7 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
                 </ModalWrapper>
               )
             }
-            className={`daisy-btn daisy-btn-secondary btn-outline ${horFlexClasses}`}
+            className={`tw-daisy-btn tw-daisy-btn-secondary tw-btn-outline ${horFlexClasses}`}
           >
             <ShowcaseIcon />
             Show Image
@@ -295,9 +295,9 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
                     setSuggest(!suggest)
                     setEdit(false)
                   }}
-                  className={`daisy-btn ${
-                    suggest ? 'daisy-btn-neutral' : 'daisy-btn-primary'
-                  } daisy-btn-outline ${horFlexClasses}`}
+                  className={`tw-daisy-btn ${
+                    suggest ? 'tw-daisy-btn-neutral' : 'tw-daisy-btn-primary'
+                  } tw-daisy-btn-outline ${horFlexClasses}`}
                 >
                   {suggest ? <ResetIcon /> : <CuratedMeasurementsSetIcon />}
                   {suggest ? 'Cancel' : 'Suggest for curation'}
@@ -310,14 +310,14 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
                       setEdit(false)
                       setSuggest(false)
                     }}
-                    className={`daisy-btn daisy-btn-neutral daisy-btn-outline ${horFlexClasses}`}
+                    className={`tw-daisy-btn tw-daisy-btn-neutral tw-daisy-btn-outline ${horFlexClasses}`}
                   >
                     <ResetIcon />
                     Cancel
                   </button>
                   <button
                     onClick={save}
-                    className={`daisy-btn daisy-btn-primary ${horFlexClasses}`}
+                    className={`tw-daisy-btn tw-daisy-btn-primary ${horFlexClasses}`}
                   >
                     <UploadIcon />
                     Save measurements set
@@ -329,7 +329,7 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
                     setEdit(true)
                     setSuggest(false)
                   }}
-                  className={`daisy-btn daisy-btn-primary ${horFlexClasses}`}
+                  className={`tw-daisy-btn tw-daisy-btn-primary ${horFlexClasses}`}
                 >
                   <EditIcon /> Edit measurements set
                 </button>
@@ -338,11 +338,11 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
           )}
           {account.control > 2 && mset.userId === account.id ? (
             <button
-              className="daisy-btn daisy-btn-neutral"
+              className="tw-daisy-btn tw-daisy-btn-neutral"
               title="Clone measurements set"
               onClick={importSet}
             >
-              <div className="flex flex-row gap-4 justify-between items-center w-full">
+              <div className="tw-flex tw-flex-row tw-gap-4 tw-justify-between tw-items-center tw-w-full">
                 <CloneIcon />
                 Clone measurements set
               </div>
@@ -350,13 +350,13 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
           ) : null}
         </div>
       </div>
-      <div className="flex flex-row flex-wrap gap-4 text-sm items-center justify-between mb-2"></div>
+      <div className="tw-flex tw-flex-row tw-flex-wrap tw-gap-4 tw-text-sm tw-items-center tw-justify-between tw-mb-2"></div>
     </>
   )
 
   if (suggest)
     return (
-      <div className="max-w-2xl">
+      <div className="tw-w-full">
         {heading}
         <SuggestCset {...{ mset, setLoadingStatus, backend, Link }} />
       </div>
@@ -364,7 +364,7 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
 
   if (!edit)
     return (
-      <div className="max-w-2xl">
+      <div className="tw-w-full">
         {heading}
 
         <h2>Data</h2>
@@ -379,14 +379,14 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
           <>
             {mset.userId === account.id && (
               <DisplayRow title="Public">
-                <div className="flex flex-row gap-2 items-center justify-between">
+                <div className="tw-flex tw-flex-row tw-gap-2 tw-items-center tw-justify-between">
                   {mset.public ? (
-                    <OkIcon className="w-6 h-6 text-success" stroke={4} />
+                    <OkIcon className="tw-w-6 tw-h-6 tw-text-success" stroke={4} />
                   ) : (
-                    <NoIcon className="w-6 h-6 text-error" stroke={3} />
+                    <NoIcon className="tw-w-6 tw-h-6 tw-text-error" stroke={3} />
                   )}
                   <button
-                    className="daisy-btn daisy-btn-secondary daisy-btn-sm"
+                    className="tw-daisy-btn tw-daisy-btn-secondary tw-daisy-btn-sm"
                     onClick={togglePublic}
                   >
                     Make {mset.public ? 'Private' : 'Public'}
@@ -407,13 +407,13 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
         {control >= controlConfig.account.sets.createdAt && (
           <DisplayRow title="Created">
             {timeAgo(mset.createdAt, false)}
-            <span className="text-sm pl-2">({shortDate(mset.createdAt, false)})</span>
+            <span className="tw-text-sm tw-pl-2">({shortDate(mset.createdAt, false)})</span>
           </DisplayRow>
         )}
         {control >= controlConfig.account.sets.updatedAt && (
           <DisplayRow title="Updated">
             {timeAgo(mset.updatedAt, false)}
-            <span className="text-sm pl-2">({shortDate(mset.updatedAt, false)})</span>
+            <span className="tw-text-sm tw-pl-2">({shortDate(mset.updatedAt, false)})</span>
           </DisplayRow>
         )}
         {control >= controlConfig.account.sets.id && <DisplayRow title="ID">{mset.id}</DisplayRow>}
@@ -433,7 +433,7 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
                   title={<MeasurementValue {...{ m, val, imperial: !displayAsMetric }} />}
                   key={m}
                 >
-                  <span className="font-medium">{m}</span>
+                  <span className="tw-font-medium">{m}</span>
                 </DisplayRow>
               ) : null
             )}
@@ -443,10 +443,10 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
     )
 
   return (
-    <div className="max-w-2xl">
+    <div className="tw-w-full">
       {heading}
       <h2 id="measies">Measurements</h2>
-      <div className="bg-secondary px-4 pt-1 pb-4 rounded-lg shadow bg-opacity-10">
+      <div className="tw-bg-secondary tw-px-4 tw-pt-1 tw-pb-4 tw-rounded-lg tw-shadow tw-bg-opacity-10">
         <DesignInput
           update={setFilter}
           label="Filter by design"
@@ -504,10 +504,10 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
             {
               val: true,
               label: (
-                <div className="flex flex-row items-center flex-wrap justify-between w-full">
+                <div className="tw-flex tw-flex-row tw-items-center tw-flex-wrap tw-justify-between tw-w-full">
                   <span>Public measurements set</span>
                   <OkIcon
-                    className="w-8 h-8 text-success bg-base-100 rounded-full p-1"
+                    className="tw-w-8 tw-h-8 tw-text-success tw-bg-base-100 tw-rounded-full tw-p-1"
                     stroke={4}
                   />
                 </div>
@@ -517,9 +517,12 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
             {
               val: false,
               label: (
-                <div className="flex flex-row items-center flex-wrap justify-between w-full">
+                <div className="tw-flex tw-flex-row tw-items-center tw-flex-wrap tw-justify-between tw-w-full">
                   <span>Private measurements set</span>
-                  <NoIcon className="w-8 h-8 text-error bg-base-100 rounded-full p-1" stroke={3} />
+                  <NoIcon
+                    className="tw-w-8 tw-h-8 tw-text-error tw-bg-base-100 tw-rounded-full tw-p-1"
+                    stroke={3}
+                  />
                 </div>
               ),
               desc: 'These measurements cannot be used by other users or visitors',
@@ -541,9 +544,9 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
               {
                 val: false,
                 label: (
-                  <div className="flex flex-row items-center flex-wrap justify-between w-full">
+                  <div className="tw-flex tw-flex-row tw-items-center tw-flex-wrap tw-justify-between tw-w-full">
                     <span>Metric units (cm)</span>
-                    <span className="text-inherit text-2xl pr-2">cm</span>
+                    <span className="tw-text-inherit tw-text-2xl tw-pr-2">cm</span>
                   </div>
                 ),
                 desc: 'Pick this if you prefer cm over inches',
@@ -551,9 +554,9 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
               {
                 val: true,
                 label: (
-                  <div className="flex flex-row items-center flex-wrap justify-between w-full">
+                  <div className="tw-flex tw-flex-row tw-items-center tw-flex-wrap tw-justify-between tw-w-full">
                     <span>Imperial units (inch)</span>
-                    <span className="text-inherit text-4xl pr-2">″</span>
+                    <span className="tw-text-inherit tw-text-4xl tw-pr-2">″</span>
                   </div>
                 ),
                 desc: 'Pick this if you prefer inches over cm',
@@ -561,7 +564,7 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
             ]}
             current={imperial}
           />
-          <span className="text-large text-warning">
+          <span className="tw-text-large tw-text-warning">
             Note: You must save after changing Units to have the change take effect on this page.
           </span>
         </>
@@ -580,7 +583,7 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
       ) : null}
       <button
         onClick={save}
-        className="daisy-btn daisy-btn-primary daisy-btn-lg flex flex-row items-center gap-4 mx-auto mt-8"
+        className="tw-daisy-btn tw-daisy-btn-primary tw-daisy-btn-lg tw-flex tw-flex-row tw-items-center tw-gap-4 tw-mx-auto tw-mt-8"
       >
         <UploadIcon />
         Save Measurements Set
@@ -655,7 +658,7 @@ export const SuggestCset = ({ mset, Link }) => {
   return (
     <>
       <h2>Suggest a measurements set for curation</h2>
-      <h4 className="flex flex-row items-center gap-2">
+      <h4 className="tw-flex tw-flex-row tw-items-center tw-gap-2">
         {missing.length > 0 ? <BoolNoIcon /> : <BoolYesIcon />}
         Measurements
       </h4>
@@ -666,7 +669,7 @@ export const SuggestCset = ({ mset, Link }) => {
             of measurements.
           </p>
           <p>Your measurements set is missing the following measurements:</p>
-          <ul className="list list-inside list-disc ml-4">
+          <ul className="tw-list tw-list-inside tw-list-disc tw-ml-4">
             {missing.map((m) => (
               <li key={m}>{m}</li>
             ))}
@@ -675,13 +678,13 @@ export const SuggestCset = ({ mset, Link }) => {
       ) : (
         <p>All measurements are available.</p>
       )}
-      <h4 className="flex flex-row items-center gap-2">
+      <h4 className="tw-flex tw-flex-row tw-items-center tw-gap-2">
         {name.length > 1 ? <BoolYesIcon /> : <BoolNoIcon />}
         Name
       </h4>
       <p>Each curated set has a name. You can suggest your own name or a pseudonym.</p>
       <StringInput label="Name" current={name} update={setName} valid={(val) => val.length > 1} />
-      <h4 className="flex flex-row items-center gap-2">
+      <h4 className="tw-flex tw-flex-row tw-items-center tw-gap-2">
         {height.length > 1 ? <BoolYesIcon /> : <BoolNoIcon />}
         Height
       </h4>
@@ -695,7 +698,7 @@ export const SuggestCset = ({ mset, Link }) => {
         update={setHeight}
         valid={(val) => val.length > 1}
       />
-      <h4 className="flex flex-row items-center gap-2 mt-4">
+      <h4 className="tw-flex tw-flex-row tw-items-center tw-gap-2 tw-mt-4">
         {img.length > 0 ? <BoolYesIcon /> : <BoolNoIcon />}
         Image
       </h4>
@@ -710,7 +713,7 @@ export const SuggestCset = ({ mset, Link }) => {
         update={setImg}
         valid={(val) => val.length > 1}
       />
-      <h4 className="flex flex-row items-center gap-2 mt-4">
+      <h4 className="tw-flex tw-flex-row tw-items-center tw-gap-2 tw-mt-4">
         <BoolYesIcon />
         Notes
       </h4>
@@ -720,7 +723,7 @@ export const SuggestCset = ({ mset, Link }) => {
       </Popout>
       <MarkdownInput label="Notes" current={notes} update={setNotes} valid={() => true} />
       <button
-        className="daisy-btn daisy-btn-primary w-full mt-4"
+        className="tw-daisy-btn tw-daisy-btn-primary tw-w-full tw-mt-4"
         disabled={!(missing.length === 0 && height.length > 1 && img.length > 0)}
         onClick={suggestSet}
       >
@@ -759,7 +762,7 @@ export const NewSet = () => {
   }
 
   return (
-    <div className="max-w-xl">
+    <div className="tw-max-w-xl">
       <h5>Name</h5>
       <p>Give this set of measurements a name. That will help tell them apart.</p>
       <StringInput
@@ -770,9 +773,9 @@ export const NewSet = () => {
         valid={(val) => val && val.length > 0}
         placeholder={'Georg Cantor'}
       />
-      <div className="flex flex-row gap-2 items-center w-full mt-8 mb-2">
+      <div className="tw-flex tw-flex-row tw-gap-2 tw-items-center tw-w-full tw-mt-8 tw-mb-2">
         <button
-          className="daisy-btn daisy-btn-primary grow capitalize"
+          className="tw-daisy-btn tw-daisy-btn-primary tw-grow tw-capitalize"
           disabled={name.length < 1}
           onClick={createSet}
         >
@@ -782,255 +785,3 @@ export const NewSet = () => {
     </div>
   )
 }
-
-/*
-
-export const SetCard = ({
-  set,
-  requiredMeasies = [],
-  href = false,
-  onClick = false,
-  useA = false,
-}) => {
-  // Hooks
-  const { t } = useTranslation(['sets'])
-
-  const [hasMeasies] = hasRequiredMeasurements(requiredMeasies, set.measies, true)
-
-  const wrapperProps = {
-    className:
-      'bg-base-300 w-full mb-2 mx-auto flex flex-col items-start text-center justify-center rounded shadow py-4',
-    style: {
-      backgroundImage: `url(${cloudflareImageUrl({ type: 'w1000', id: set.img })})`,
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: '50%',
-    },
-  }
-  if (set.img === 'default-avatar') wrapperProps.style.backgroundPosition = 'bottom right'
-
-  const inner = hasMeasies ? null : (
-    <div className="flex flex-row gap-2 items-center">
-      <WarningIcon className="w-6 h-6 shrink-0 text-error" />
-      <span>{t('setLacksMeasiesForDesign')}</span>
-    </div>
-  )
-
-  // Is it a button with an onClick handler?
-  if (onClick)
-    return (
-      <button {...wrapperProps} onClick={onClick}>
-        {inner}
-      </button>
-    )
-
-  // Returns a link to an internal page
-  if (href && !useA)
-    return (
-      <Link {...wrapperProps} href={href}>
-        {inner}
-      </Link>
-    )
-
-  // Returns a link to an external page
-  if (href && useA)
-    return (
-      <a {...wrapperProps} href={href}>
-        {inner}
-      </a>
-    )
-
-  // Returns a div
-  return <div {...wrapperProps}>{inner}</div>
-}
-
-export const MsetButton = (props) => <MsetCard {...props} href={false} />
-export const MsetLink = (props) => <MsetCard {...props} onClick={false} useA={false} />
-export const MsetA = (props) => <MsetCard {...props} onClick={false} useA={true} />
-
-export const UserSetPicker = ({
-  design,
-  t,
-  href,
-  clickHandler,
-  missingClickHandler,
-  size = 'lg',
-}) => {
-  // Hooks
-  const backend = useBackend()
-  const { control } = useAccount()
-
-  // State
-  const [sets, setSets] = useState({})
-
-  // Effects
-  useEffect(() => {
-    const getSets = async () => {
-      const result = await backend.getSets()
-      if (result.success) {
-        const all = {}
-        for (const set of result.data.sets) all[set.id] = set
-        setSets(all)
-      }
-    }
-    getSets()
-  }, [backend])
-
-  let hasSets = false
-  const okSets = []
-  const lackingSets = []
-  if (Object.keys(sets).length > 0) {
-    hasSets = true
-    for (const setId in sets) {
-      const [hasMeasies] = hasRequiredMeasurements(
-        designMeasurements[design],
-        sets[setId].measies,
-        true
-      )
-      if (hasMeasies) okSets.push(sets[setId])
-      else lackingSets.push(sets[setId])
-    }
-  }
-
-  if (!hasSets)
-    return (
-      <div className="w-full max-w-3xl mx-auto">
-        <Popout tip>
-          <h5>{t('account:noOwnSets')}</h5>
-          <p className="text-lg">{t('account:pleaseMtm')}</p>
-          <p className="text-lg">{t('account:noOwnSetsMsg')}</p>
-          <p className="text-center md:text-right">
-            <Link
-              className="btn btn-primary capitalize w-full md:w-auto"
-              bottom
-              primary
-              href="/new/set"
-            >
-              <PlusIcon />
-              {t('account:newSet')}
-            </Link>
-          </p>
-        </Popout>
-      </div>
-    )
-
-  return (
-    <>
-      {okSets.length > 0 && (
-        <div className="flex flex-row flex-wrap gap-2">
-          {okSets.map((set) => (
-            <MsetButton
-              {...{ set, control, design }}
-              onClick={clickHandler}
-              href={href}
-              requiredMeasies={measurements[design]}
-              key={set.id}
-              size={size}
-            />
-          ))}
-        </div>
-      )}
-      {lackingSets.length > 0 && (
-        <div className="my-4">
-          <Popout note compact>
-            {t('account:someSetsLacking')}
-          </Popout>
-          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
-            {lackingSets.map((set) => (
-              <MsetButton
-                {...{ set, control, design }}
-                onClick={missingClickHandler}
-                href={href}
-                requiredMeasies={measurements[design]}
-                key={set.id}
-                size={size}
-              />
-            ))}
-          </div>
-        </div>
-      )}
-    </>
-  )
-}
-
-export const BookmarkedSetPicker = ({ design, clickHandler, t, size, href }) => {
-  // Hooks
-  const { control } = useAccount()
-  const backend = useBackend()
-
-  // State
-  const [sets, setSets] = useState({})
-
-  // Effects
-  useEffect(() => {
-    const getBookmarks = async () => {
-      const result = await backend.getBookmarks()
-      const loadedSets = {}
-      if (result.success) {
-        for (const bookmark of result.data.bookmarks.filter(
-          (bookmark) => bookmark.type === 'set'
-        )) {
-          let set
-          try {
-            set = await backend.getSet(bookmark.url.slice(6))
-            if (set.success) {
-              const [hasMeasies] = hasRequiredMeasurements(
-                designMeasurements[design],
-                set.data.set.measies,
-                true
-              )
-              loadedSets[set.data.set.id] = { ...set.data.set, hasMeasies }
-            }
-          } catch (err) {
-            console.log(err)
-          }
-        }
-      }
-      setSets(loadedSets)
-    }
-    getBookmarks()
-  }, [])
-
-  const okSets = Object.values(sets).filter((set) => set.hasMeasies)
-  const lackingSets = Object.values(sets).filter((set) => !set.hasMeasies)
-
-  return (
-    <>
-      {okSets.length > 0 && (
-        <div className="flex flex-row flex-wrap gap-2">
-          {okSets.map((set) => (
-            <MsetButton
-              {...{ set, control, design }}
-              onClick={clickHandler}
-              href={href}
-              requiredMeasies={designMeasurements[design]}
-              key={set.id}
-              size={size}
-            />
-          ))}
-        </div>
-      )}
-      {lackingSets.length > 0 && (
-        <div className="my-4">
-          <Popout note compact>
-            {t('account:someSetsLacking')}
-          </Popout>
-          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
-            {lackingSets.map((set) => (
-              <MsetLink
-                {...{ set, control, design }}
-                onClick={clickHandler}
-                requiredMeasies={designMeasurements[design]}
-                key={set.id}
-                size={size}
-              />
-            ))}
-          </div>
-        </div>
-      )}
-    </>
-  )
-}
-
-
-*/

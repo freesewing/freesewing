@@ -1,0 +1,18 @@
+{
+  "id": "bruce",
+  "name": "Bruce boxer briefs",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for boxer briefs",
+  "design": "Joost De Cock",
+  "difficulty": 3,
+  "tags": [
+    "bottoms",
+    "underwear"
+  ],
+  "techniques": [
+    "stretch",
+    "hem",
+    "curved-seam",
+    "elastic"
+  ]
+}

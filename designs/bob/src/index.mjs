@@ -1,13 +1,13 @@
 import { Design } from '@freesewing/core'
-import { data } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 import { bib } from './bib.mjs'
 import { i18n } from '../i18n/index.mjs'
 
 // Setup our new design
 const Bob = new Design({
-  data,
+  data: about,
   parts: [bib],
 })
 
 //Named exports
-export { bib, Bob, i18n }
+export { bib, Bob, i18n, about }

@@ -42,7 +42,7 @@ export const Password = ({ welcome = false }) => {
   }
 
   return (
-    <div className="w-full">
+    <div className="tw-w-full">
       <PasswordInput
         id="account-password"
         label="Something only you know"
@@ -52,7 +52,7 @@ export const Password = ({ welcome = false }) => {
         placeholder="Tip: use a password manager"
       />
       <button
-        className={`flex flex-row gap-2 items-center daisy-btn justify-between daisy-btn-primary w-full md:w-auto w-full`}
+        className={`tw-flex tw-flex-row tw-gap-2 tw-items-center tw-daisy-btn tw-justify-between tw-daisy-btn-primary tw-w-full md:tw-w-auto tw-w-full`}
         onClick={save}
         disabled={password.length < 4}
       >
@@ -65,9 +65,9 @@ export const Password = ({ welcome = false }) => {
             We do not enforce a password policy, but we do recommend you enable Two-Factor
             Authentication to keep your FreeSewing account safe.
           </p>
-          <p className="text-right m-0 pt-0">
-            <Link className="btn btn-secondary btn-accent" href="/account/mfa">
-              Two-Factor Authentication <RightIcon className="h-6 w-6 ml-2" />
+          <p className="tw-text-right tw-m-0 tw-pt-0">
+            <Link className="tw-btn tw-btn-secondary tw-btn-accent" href="/account/mfa">
+              Two-Factor Authentication <RightIcon className="tw-h-6 tw-w-6 tw-ml-2" />
             </Link>
           </p>
         </Popout>

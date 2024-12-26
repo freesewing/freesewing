@@ -1,3 +1,4 @@
+// Designs
 import { Aaron as aaron } from '@freesewing/aaron'
 import { Albert as albert } from '@freesewing/albert'
 import { Bee as bee } from '@freesewing/bee'
@@ -56,7 +57,12 @@ import { Walburga as walburga } from '@freesewing/walburga'
 import { Waralee as waralee } from '@freesewing/waralee'
 import { Yuri as yuri } from '@freesewing/yuri'
 import { Lily as lily } from '@freesewing/lily'
+// Examples
+import { designExampleIds, designExampleHrefs } from './examples.mjs'
 
+/*
+ * Export the designs themselves
+ */
 export const designs = {
   aaron,
   albert,
@@ -118,11 +124,23 @@ export const designs = {
   lily,
 }
 
+/*
+ * Export a list of names that make up the FreeSewing collection
+ */
 export const collection = Object.keys(designs)
 
+/*
+ * Create various helper exports to get info about the collection
+ */
 export const requiredMeasurements = {}
 export const optionalMeasurements = {}
 export const measurements = {}
+export const about = {}
+
+const _tags = new Set()
+const _techniques = new Set()
+const _devs = new Set()
+const _dess = new Set()
 
 for (const design in designs) {
   requiredMeasurements[design] = designs[design].patternConfig.measurements
@@ -131,4 +149,31 @@ for (const design in designs) {
     ...designs[design].patternConfig.measurements,
     ...designs[design].patternConfig.optionalMeasurements,
   ]
+  about[design] = { ...designs[design].designConfig.data }
+  if (about[design].tags) _tags.add(...about[design].tags)
+  if (about[design].techniques) _techniques.add(...about[design].techniques)
+  if (Array.isArray(about[design].code)) _devs.add(...about[design].code)
+  else _devs.add(about[design].code)
+  if (Array.isArray(about[design].design)) _devs.add(...about[design].design)
+  else _devs.add(about[design].design)
+}
+export const tags = Array.from(_tags)
+  .filter((t) => (t ? true : false))
+  .sort()
+export const techniques = Array.from(_techniques)
+  .filter((t) => (t ? true : false))
+  .sort()
+export const developers = Array.from(_devs)
+  .filter((t) => (t ? true : false))
+  .sort()
+export const designers = Array.from(_dess)
+  .filter((t) => (t ? true : false))
+  .sort()
+
+/*
+ * These are examples
+ */
+export const examples = {
+  id: designExampleIds,
+  href: designExampleHrefs,
 }

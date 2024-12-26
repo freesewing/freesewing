@@ -102,16 +102,16 @@ export const Apikeys = ({ Link = false }) => {
 
   return (
     <>
-      <div className="flex flex-row flex-wrap gap-2 items-center justify-between mb-4">
+      <div className="tw-flex tw-flex-row tw-flex-wrap tw-gap-2 tw-items-center tw-justify-between tw-mb-4">
         <button
-          className="daisy-btn daisy-btn-error"
+          className="tw-daisy-btn tw-daisy-btn-error"
           onClick={removeSelectedApikeys}
           disabled={count < 1}
         >
           <TrashIcon /> {count} API Keys
         </button>
         <button
-          className="daisy-btn daisy-btn-primary capitalize w-full md:w-auto hover:text-primary-content"
+          className="tw-daisy-btn tw-daisy-btn-primary tw-capitalize tw-w-full md:tw-w-auto hover:tw-text-primary-content"
           onClick={() =>
             setModal(
               <ModalWrapper keepOpenOnClick>
@@ -125,13 +125,13 @@ export const Apikeys = ({ Link = false }) => {
         </button>
       </div>
       <TableWrapper>
-        <table className="table table-auto">
-          <thead className="border border-base-300 border-b-2 border-t-0 border-x-0">
+        <table className="tw-table tw-table-auto">
+          <thead className="tw-border tw-border-base-300 tw-border-b-2 tw-border-t-0 tw-border-x-0">
             <tr className="">
               <th className="">
                 <input
                   type="checkbox"
-                  className="daisy-checkbox daisy-checkbox-secondary"
+                  className="tw-daisy-checkbox tw-daisy-checkbox-secondary"
                   onClick={toggleAll}
                   checked={apikeys.length === count}
                 />
@@ -139,13 +139,13 @@ export const Apikeys = ({ Link = false }) => {
               {Object.keys(fields).map((field) => (
                 <th key={field}>
                   <button
-                    className="daisy-btn daisy-btn-link capitalize px-0 underline hover:decoration-4 decoration-2 text-secondary"
+                    className="tw-daisy-btn tw-daisy-btn-link tw-capitalize tw-px-0 underline tw-hover:decoration-4 tw-decoration-2 tw-text-secondary"
                     onClick={() => (order === field ? setDesc(!desc) : setOrder(field))}
                   >
                     {fields[field]}{' '}
                     <RightIcon
                       stroke={3}
-                      className={`w-4 h-4 ${desc ? '-' : ''}rotate-90 ${order === field ? '' : 'opacity-0'}`}
+                      className={`tw-w-4 tw-h-4 ${desc ? 'tw--' : 'tw-'}rotate-90 ${order === field ? '' : 'tw-opacity-0'}`}
                     />
                   </button>
                 </th>
@@ -155,23 +155,23 @@ export const Apikeys = ({ Link = false }) => {
           <tbody>
             {orderBy(apikeys, order, desc ? 'desc' : 'asc').map((apikey, i) => (
               <tr key={i}>
-                <td className="text-base font-medium">
+                <td className="tw-text-base tw-font-medium">
                   <input
                     type="checkbox"
                     checked={selection[apikey.id] ? true : false}
-                    className="daisy-checkbox daisy-checkbox-secondary"
+                    className="tw-daisy-checkbox tw-daisy-checkbox-secondary"
                     onClick={() => toggle(apikey.id)}
                   />
                 </td>
-                <td className="text-base font-medium">
+                <td className="tw-text-base tw-font-medium">
                   <Uuid uuid={apikey.id} label="Key" />
                 </td>
                 {Object.keys(fields)
                   .slice(1, 4)
                   .map((field) => (
-                    <td key={field} className="text-base font-medium">
+                    <td key={field} className="tw-text-base tw-font-medium">
                       <button
-                        className="daisy-btn daisy-btn-link text-secondary hover:decoration-4"
+                        className="tw-daisy-btn tw-daisy-btn-link tw-text-secondary hover:tw-decoration-4"
                         onClick={() =>
                           setModal(
                             <ModalWrapper>
@@ -184,8 +184,8 @@ export const Apikeys = ({ Link = false }) => {
                       </button>
                     </td>
                   ))}
-                <td className="text-base font-medium">{shortDate(apikey.createdAt)}</td>
-                <td className="text-base font-medium">{shortDate(apikey.expiresAt)}</td>
+                <td className="tw-text-base tw-font-medium">{shortDate(apikey.createdAt)}</td>
+                <td className="tw-text-base tw-font-medium">{shortDate(apikey.expiresAt)}</td>
               </tr>
             ))}
           </tbody>
@@ -197,10 +197,10 @@ export const Apikeys = ({ Link = false }) => {
 
 const ApiKey = ({ apikey }) => (
   <>
-    <h2 className="flex flex-row items-center gap-2">
+    <h2 className="tw-flex tw-flex-row tw-items-center tw-gap-2">
       API Key <Uuid uuid={apikey.id} />
     </h2>
-    <ul className="list list-disc ml-4">
+    <ul className="tw-list tw-list-disc tw-ml-4">
       {Object.entries(fields).map(([key, label]) => (
         <li key={key}>
           {label}: <b>{apikey[key]}</b>
@@ -248,7 +248,7 @@ const NewApikey = ({ onCreate = false }) => {
   }
 
   return (
-    <div className="w-full">
+    <div className="tw-w-full">
       <h2>New API key {apikey ? `: ${apikey.name}` : ''}</h2>
       {apikey ? (
         <ShowNewApikey {...{ apikey }} />
@@ -269,7 +269,7 @@ const NewApikey = ({ onCreate = false }) => {
             list={levels.map((l) => ({
               val: l,
               label: (
-                <div className="flex flex-row items-center w-full justify-between">
+                <div className="tw-flex tw-flex-row tw-items-center tw-w-full tw-justify-between">
                   <span>{apikeyLevels[l]}</span>
                   <NumberCircle nr={l} color="secondary" />
                 </div>
@@ -278,9 +278,9 @@ const NewApikey = ({ onCreate = false }) => {
             current={level}
             update={setLevel}
           />
-          <div className="flex flex-row gap-2 items-center w-full my-8">
+          <div className="tw-flex tw-flex-row tw-gap-2 tw-items-center tw-w-full tw-my-8">
             <button
-              className="daisy-btn daisy-btn-primary capitalize w-full md:w-auto"
+              className="tw-daisy-btn tw-daisy-btn-primary tw-capitalize tw-w-full md:tw-w-auto"
               disabled={name.length < 1}
               onClick={createKey}
             >
@@ -295,18 +295,18 @@ const NewApikey = ({ onCreate = false }) => {
 
 const ShowNewApikey = ({ apikey }) => (
   <div>
-    <div className="flex flex-row flex-wrap gap-2 items-center mb-2">
+    <div className="tw-flex tw-flex-row tw-flex-wrap tw-gap-2 tw-items-center tw-mb-2">
       <KeyVal k="name" val={apikey.name} color="secondary" />
       <KeyVal k="level" val={apikey.level} color="secondary" />
       <KeyVal k="created" val={<TimeAgo iso={apikey.createdAt} />} color="secondary" />
       <KeyVal k="expires" val={<TimeToGo iso={apikey.expiresAt} />} color="secondary" />
     </div>
-    <h6 className="flex flex-row items-center">
+    <h6 className="tw-flex tw-flex-row tw-items-center">
       Key
       <CopyToClipboard sup content={apikey.key} label="API key ID" />
     </h6>
     <pre>{apikey.key}</pre>
-    <h6 className="flex flex-row items-center">
+    <h6 className="tw-flex tw-flex-row tw-items-center">
       Secret
       <CopyToClipboard sup content={apikey.secret} label="API key secret" />
     </h6>
@@ -330,7 +330,7 @@ const ExpiryPicker = ({ expires, setExpires }) => {
   }
 
   return (
-    <div className="flex flex-row gap-2 items-center">
+    <div className="tw-flex tw-flex-row tw-gap-2 tw-items-center">
       <FormControl
         label="Key Expiry"
         labelBL={shortDate(expires)}
@@ -341,7 +341,7 @@ const ExpiryPicker = ({ expires, setExpires }) => {
           min="1"
           max={731}
           value={days}
-          className="daisy-range daisy-range-secondary w-full"
+          className="tw-daisy-range tw-daisy-range-secondary tw-w-full"
           onChange={update}
         />
       </FormControl>

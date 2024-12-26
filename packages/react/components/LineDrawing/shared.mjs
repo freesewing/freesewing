@@ -9,7 +9,7 @@ import React from 'react'
  * @return LineDrawing as JSX
  */
 export const LineDrawingWrapper = ({
-  className = 'w-64', // CSS classes to apply
+  className = 'tw-w-full', // CSS classes to apply
   viewBox = '0 0 100 100', // SVG viewBox
   stroke = 1, // Stroke to use
   children = [], // The actual linedrawing
@@ -23,7 +23,7 @@ export const LineDrawingWrapper = ({
     stroke="currentColor"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className={className + ' linedrawing'}
+    className={className + ' linedrawing tw-bg-base-300'}
     style={style}
   >
     {children}
@@ -38,12 +38,12 @@ export const regular = (stroke = 1) => ({ strokeWidth: stroke })
 /*
  * Thin stroke-width helper to ensure consistency across linedrawings
  */
-export const thin = (stroke = 1) => ({ strokeWidth: stroke / 2 })
+export const thin = (stroke = 1) => ({ strokeWidth: stroke / 1.3 })
 
 /*
  * Very thin stroke-width helper to ensure consistency across linedrawings
  */
-export const veryThin = (stroke = 1) => ({ strokeWidth: stroke / 3 })
+export const veryThin = (stroke = 1) => ({ strokeWidth: stroke / 2 })
 
 /*
  * Dashed stroke-dasharray helper to ensure consistency across linedrawings

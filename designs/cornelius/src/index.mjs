@@ -1,5 +1,5 @@
 import { Design } from '@freesewing/core'
-import { data } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 // Parts
 import { frontpoints } from './frontpoints.mjs'
 import { front } from './front.mjs'
@@ -15,7 +15,7 @@ import { i18n } from '../i18n/index.mjs'
 
 // Create new design
 const Cornelius = new Design({
-  data,
+  data: about,
   parts: [front, back, legband, legbandKeystone, waistband, pocketFacing, pocket, zipperguard],
 })
 
@@ -32,4 +32,5 @@ export {
   frontpoints,
   Cornelius,
   i18n,
+  about,
 }

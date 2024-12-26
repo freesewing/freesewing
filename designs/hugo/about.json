@@ -1,0 +1,17 @@
+{
+  "id": "hugo",
+  "name": "Hugo hoodie",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for a hooded jumper with raglan sleeves",
+  "design": "Joost De Cock",
+  "difficulty": 3,
+  "tags": [
+    "tops"
+  ],
+  "techniques": [
+    "curved-seam",
+    "pocket",
+    "ribbing",
+    "raglan-sleeve"
+  ]
+}

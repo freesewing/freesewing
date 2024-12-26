@@ -1,56 +1,51 @@
 import React from 'react'
 import { LineDrawingWrapper, thin, dashed } from './shared.mjs'
 
+/*
+ * This strokeScale factor is used to normalize the stroke across
+ * designs so we have a consistent look when showing our collection
+ */
 const strokeScale = 0.5
 
-export const Aaron = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
-
-  return (
-    <LineDrawingWrapper viewBox="0 0 148 119" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-      <Back stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
-
-/*
- * React component for the front
+/**
+ * A linedrawing component for Aaron
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
  */
-export const AaronFront = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
+export const Aaron = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="-2 -15 152 152" {...{ stroke, className }}>
+    <Front stroke={stroke * strokeScale} />
+    <Back stroke={stroke * strokeScale} />
+  </LineDrawingWrapper>
+)
 
-  return (
-    <LineDrawingWrapper viewBox="0 0 74 119" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
-
-/*
- * React component for the back
+/**
+ * A linedrawing component for the front of Aaron
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
  */
-export const AaronBack = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
+export const AaronFront = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="-23 0 119 119" {...{ className }}>
+    <Front stroke={stroke * strokeScale} />
+  </LineDrawingWrapper>
+)
 
-  return (
-    <LineDrawingWrapper viewBox="74 0 74 119" {...{ className, stroke }}>
-      <Back stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
+/**
+ * A linedrawing component for the front of Aaron
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
+ */
+export const AaronBack = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="74 0 74 119" {...props}>
+    <Back stroke={stroke * strokeScale} />
+  </LineDrawingWrapper>
+)
 
 /*
  * SVG elements for the front

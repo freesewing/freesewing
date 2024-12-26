@@ -1,0 +1,19 @@
+{
+  "id": "simon",
+  "name": "Simon button-down shirt",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for a button down shirt",
+  "design": "Joost De Cock",
+  "difficulty": 4,
+  "tags": [
+    "tops"
+  ],
+  "techniques": [
+    "hem",
+    "button",
+    "interfacing",
+    "curved-seam",
+    "flat-felled-seam",
+    "flat-sleeve"
+  ]
+}

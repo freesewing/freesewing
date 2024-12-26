@@ -1,0 +1,19 @@
+{
+  "id": "wahid",
+  "name": "Wahid waistcoat",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for a classic fitted waistcoat",
+  "design": "Joost De Cock",
+  "difficulty": 4,
+  "tags": [
+    "tops"
+  ],
+  "techniques": [
+    "curved-seam",
+    "hem",
+    "interfacing",
+    "lining",
+    "welt-pocket",
+    "button"
+  ]
+}

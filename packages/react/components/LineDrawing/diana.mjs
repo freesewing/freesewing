@@ -1,39 +1,38 @@
 import React from 'react'
 import { LineDrawingWrapper, thin, dashed } from './shared.mjs'
 
-const strokeScale = 0.5
-
-export const Diana = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
-
-  return (
-    <LineDrawingWrapper viewBox="0 0 282 111" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-      <Back stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
-
 /*
- * React component for the front
+ * This strokeScale factor is used to normalize the stroke across
+ * designs so we have a consistent look when showing our collection
  */
-export const DianaFront = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
+const strokeScale = 1
 
-  return (
-    <LineDrawingWrapper viewBox="0 0 141 111" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
+/**
+ * A linedrawing component for Diana
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
+ */
+export const Diana = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="0 0 282 111" {...{ className }}>
+    <Front stroke={stroke * strokeScale} />
+    <Back stroke={stroke * strokeScale} />
+  </LineDrawingWrapper>
+)
+
+/**
+ * A linedrawing component for the front Diana
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
+ */
+export const DianaFront = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="0 -10 141 141" {...{ className }}>
+    <Front stroke={stroke * strokeScale} />
+  </LineDrawingWrapper>
+)
 
 /*
  * React component for the back
@@ -47,7 +46,7 @@ export const DianaBack = ({
 
   return (
     <LineDrawingWrapper viewBox="141 0 141 111" {...{ className, stroke }}>
-      <Back stroke={stroke} />
+      <Back stroke={stroke * strokeScale} />
     </LineDrawingWrapper>
   )
 }

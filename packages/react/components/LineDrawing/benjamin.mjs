@@ -1,38 +1,29 @@
 import React from 'react'
 import { LineDrawingWrapper, regular, thin } from './shared.mjs'
 
-const strokeScale = 0.5
+/*
+ * This strokeScale factor is used to normalize the stroke across
+ * designs so we have a consistent look when showing our collection
+ */
+const strokeScale = 1
 
-export const Benjamin = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
-
-  return (
-    <LineDrawingWrapper viewBox="0 0 138 53" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
+/**
+ * A linedrawing component for Benjamin
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
+ */
+export const Benjamin = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="0 -44 138 138" {...{ className, stroke }}>
+    <Front stroke={stroke * strokeScale} />
+  </LineDrawingWrapper>
+)
 
 /*
- * React component for the front
+ * Front is the same
  */
-export const BenjaminFront = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
-
-  return (
-    <LineDrawingWrapper viewBox="0 0 138 53" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
+export const BenjaminFront = Benjamin
 
 /*
  * SVG elements for the front

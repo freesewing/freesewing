@@ -1,13 +1,13 @@
 import { Design } from '@freesewing/core'
-import { data } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 import { i18n } from '../i18n/index.mjs'
 import { top } from './top.mjs'
 
 // Setup our new design
 const Tamiko = new Design({
-  data,
+  data: about,
   parts: [top],
 })
 
 // Named exports
-export { top, Tamiko, i18n }
+export { top, Tamiko, i18n, about }

@@ -10,12 +10,12 @@ export const KeyVal = ({ k, val, color = 'primary', small = false }) => {
     <Copy text={val} onCopy={() => handleCopied(setCopied, setLoadingStatus, k)}>
       <button>
         <span
-          className={`${sharedClasses} rounded-l${small ? '' : '-lg'} text-${color}-content bg-${color} border-${color} ${small ? 'text-xs' : ''}`}
+          className={`${sharedClasses} tw-rounded-l${small ? '' : '-lg'} tw-text-${color}-content tw-bg-${color} tw-border-${color} ${small ? 'tw-text-xs' : ''}`}
         >
           {k}
         </span>
         <span
-          className={`${sharedClasses} rounded-r${small ? '' : '-lg'} text-${color} bg-base-100 border-${color} ${small ? 'text-xs' : ''}`}
+          className={`${sharedClasses} tw-rounded-r${small ? '' : '-lg'} tw-text-${color} tw-bg-base-100 tw-border-${color} ${small ? 'tw-text-xs' : ''}`}
         >
           {val}
         </span>
@@ -24,7 +24,7 @@ export const KeyVal = ({ k, val, color = 'primary', small = false }) => {
   )
 }
 
-const sharedClasses = `px-1 text-sm font-medium whitespace-nowrap border-2`
+const sharedClasses = `tw-px-1 tw-text-sm tw-font-medium tw-whitespace-nowrap tw-border-2`
 
 const handleCopied = (setCopied, setLoadingStatus, label) => {
   setCopied(true)

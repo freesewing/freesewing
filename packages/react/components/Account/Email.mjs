@@ -50,7 +50,7 @@ export const Email = ({ welcome = false, Link = false }) => {
   const valid = (validateEmail(email) && validateTld(email)) || false
 
   return (
-    <div className="w-full">
+    <div className="tw-w-full">
       {changed ? (
         <Popout note>
           <h3>Please confirm this change</h3>
@@ -71,9 +71,9 @@ export const Email = ({ welcome = false, Link = false }) => {
             original={account.email}
             valid={() => valid}
           />
-          <p className="text-right">
+          <p className="tw-text-right">
             <button
-              className="daisy-btn daisy-btn-primary w-full lg:w-auto mt-8"
+              className="tw-daisy-btn tw-daisy-btn-primary tw-w-full lg:tw-w-auto tw-mt-8"
               onClick={save}
               disabled={!valid || email.toLowerCase() === account.email}
             >

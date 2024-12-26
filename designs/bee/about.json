@@ -1,0 +1,18 @@
+{
+  "id": "bee",
+  "name": "Bee bikini top",
+  "code": "bobgeorgethe3rd",
+  "description": "A FreeSewing pattern for a bikini top",
+  "design": "PrudenceRabbit",
+  "difficulty": 3,
+  "tags": [
+    "tops",
+    "swimwear"
+  ],
+  "techniques": [
+    "hem",
+    "stretch",
+    "curved-seam",
+    "precision"
+  ]
+}

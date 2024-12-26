@@ -92,6 +92,20 @@ export const CircleIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks like a female-projecting bathing suit
+export const CisFemaleIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="m 8.233159,2.5000002 c 0,0 0.03684,1.4367676 0.07562,2.1541457 C 8.413989,6.5901608 7.3671071,6.9496995 7.3372662,8.1692173 7.3029172,9.5719723 8.2152,10.315942 8.255388,12.267223 8.290568,13.973294 7.1739465,15.012709 7.1739465,17.259683 9.46861,17.549817 10.668009,19.205086 11.354231,21.5 h 0.109763 0.93923 0.109803 c 0.686181,-2.294914 1.88558,-3.950183 4.180285,-4.240317 0,-2.246974 -1.116622,-3.286389 -1.081483,-4.99246 0.04015,-1.951281 0.952433,-2.6952507 0.918122,-4.0980057 -0.0298,-1.2195178 -1.076723,-1.5790565 -0.971513,-3.5150714 0.0389,-0.7173781 0.07562,-2.1541457 0.07562,-2.1541457 h -0.722313 c 0,1.5276628 -1.146752,3.7763442 -2.978112,3.7763442 -1.831402,0 -2.978154,-2.2486814 -2.978154,-3.7763442 z" />
+  </IconWrapper>
+)
+
+// Looks like male-projecting swim trunks
+export const CisMaleIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M 6.2021092,6.7988281 C 5.0433189,10.972649 5.2215488,13.211802 5.2215488,16.798828 h 5.8983122 l 0.143133,-1.21128 c 0.331559,-1.834081 0.655671,-2.543616 1.078829,0.07477 l 0.134587,1.136509 h 5.896176 c 0,-3.587026 0.180363,-5.826179 -0.978425,-9.9999999 z" />
+  </IconWrapper>
+)
+
 // FIXME
 export const CloneIcon = (props) => (
   <IconWrapper {...props}>
@@ -212,6 +226,13 @@ export const ExportIcon = (props) => (
 // Looks like a ! in a triangle, is intended to be shown on an error background
 export const FailureIcon = ({ size = 6 }) => (
   <NoIcon className={`tw-w-${size} tw-h-${size} tw-text-secondary-content`} stroke={4} />
+)
+
+// Looks like a funnel
+export const FilterIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+  </IconWrapper>
 )
 
 // Looks like a fingerprint

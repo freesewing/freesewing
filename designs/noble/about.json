@@ -1,0 +1,18 @@
+{
+  "id": "noble",
+  "name": "Noble body block",
+  "code": "Wouter Van Wageningen",
+  "description": "A FreeSewing pattern for a princess seam bodice block",
+  "design": "Wouter Van Wageningen",
+  "difficulty": 3,
+  "tags": [
+    "blocks",
+    "tops"
+  ],
+  "techniques": [
+    "block",
+    "curved-seam",
+    "precision",
+    "princess-seam"
+  ]
+}

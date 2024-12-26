@@ -34,11 +34,11 @@ export const Export = () => {
   }
 
   return (
-    <div className="max-w-xl">
+    <div className="tw-max-w-xl">
       {link ? (
         <Popout link>
           <h5>Your data was exported and is available for download at the following location:</h5>
-          <p className="text-lg">
+          <p className="tw-text-lg">
             <WebLink href={link}>{link}</WebLink>
           </p>
         </Popout>

@@ -53,7 +53,7 @@ export const Restrict = ({ Link = false }) => {
     )
 
   return (
-    <div className="w-full">
+    <div className="tw-w-full">
       <p>
         The GDPR guarantees{' '}
         <Link href="/docs/about/rights/#the-right-to-restrict-processing" className={linkClasses}>
@@ -66,21 +66,21 @@ export const Restrict = ({ Link = false }) => {
         onClick={() =>
           setModal(
             <ModalWrapper keepOpenOnClick>
-              <div className="text-center w-full max-w-xl">
+              <div className="tw-text-center tw-w-full tw-max-w-xl">
                 <h2>Proceed with caution</h2>
                 <p>
                   While no data will be removed, this will disable your account. Furthermore, you
                   can not undo this on your own, but will have to contact support when you want to
                   restore access to your account.
                 </p>
-                <IconButton onClick={restrictAccount} color="error" className="mx-auto">
+                <IconButton onClick={restrictAccount} color="error" className="tw-mx-auto">
                   <NoIcon stroke={3} />
                   Restrict processing of your FreeSewing data
                 </IconButton>
                 <IconButton
                   onClick={clearModal}
                   color="primary"
-                  className="mx-auto daisy-btn-outline mt-4"
+                  className="tw-mx-auto tw-daisy-btn-outline tw-mt-4"
                 >
                   <BackIcon />
                   Back to safety

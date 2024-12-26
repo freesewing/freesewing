@@ -48,22 +48,22 @@ export const Remove = () => {
     )
 
   return (
-    <div className="w-full">
+    <div className="tw-w-full">
       <IconButton
         onClick={() =>
           setModal(
             <ModalWrapper keepOpenOnClick>
-              <div className="text-center w-full">
+              <div className="tw-text-center tw-w-full">
                 <h2>There is no way back from this</h2>
                 <p>If this is what you want, then go ahead.</p>
-                <IconButton onClick={removeAccount} color="error" className="mx-auto">
+                <IconButton onClick={removeAccount} color="error" className="tw-mx-auto">
                   <TrashIcon />
                   Remove your FreeSewing account
                 </IconButton>
                 <IconButton
                   onClick={clearModal}
                   color="primary"
-                  className="mx-auto daisy-btn-outline mt-4"
+                  className="tw-mx-auto tw-daisy-btn-outline tw-mt-4"
                 >
                   <ExitIcon />
                   Back to safety

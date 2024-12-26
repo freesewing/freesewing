@@ -1,45 +1,46 @@
 import React from 'react'
 import { LineDrawingWrapper, thin, dashed } from './shared.mjs'
 
-const strokeScale = 0.5
-
-export const Breanna = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
-
-  return (
-    <LineDrawingWrapper viewBox="0 0 184 58" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-      <Back stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
-
 /*
- * React component for the front
+ * This strokeScale factor is used to normalize the stroke across
+ * designs so we have a consistent look when showing our collection
  */
-export const BreannaFront = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
+const strokeScale = 0.3
 
-  return (
-    <LineDrawingWrapper viewBox="0 0 92 58" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
+/**
+ * A linedrawing component for Breanna
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
+ */
+export const Breanna = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="-5 0 106 106" {...{ className, stroke }}>
+    <Front stroke={strokeScale * stroke} />
+    <g transform="translate(-91 48)">
+      <Back stroke={strokeScale * stroke} />
+    </g>
+  </LineDrawingWrapper>
+)
+
+/**
+ * A linedrawing component for Breanna
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
+ */
+export const BreannaFront = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="0 -15 92 92" {...{ className }}>
+    <Front stroke={stroke * strokeScale} />
+  </LineDrawingWrapper>
+)
 
 /*
  * React component for the back
  */
 export const BreannaBack = ({
-  className = 'w-64', // CSS classes to apply
+  className = 'tw-w-full', // CSS classes to apply
   stroke = 1, // Stroke width to use
 }) => {
   // Normalize stroke across designs

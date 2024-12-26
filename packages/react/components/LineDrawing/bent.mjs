@@ -1,45 +1,44 @@
 import React from 'react'
 import { LineDrawingWrapper, thin, dashed } from './shared.mjs'
 
-const strokeScale = 0.5
-
-export const Bent = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
-
-  return (
-    <LineDrawingWrapper viewBox="0 0 210 100" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-      <Back stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
-
 /*
- * React component for the front
+ * This strokeScale factor is used to normalize the stroke across
+ * designs so we have a consistent look when showing our collection
  */
-export const BentFront = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
+const strokeScale = 0.7
 
-  return (
-    <LineDrawingWrapper viewBox="0 0 110 100" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
+/**
+ * A linedrawing component for Bent
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
+ */
+export const Bent = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="0 -70 210 210" {...{ stroke }}>
+    <Front stroke={strokeScale * stroke} />
+    <Back stroke={strokeScale * stroke} />
+  </LineDrawingWrapper>
+)
+
+/**
+ * A linedrawing component for the front of Bent
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
+ */
+export const BentFront = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="0 -1 103 103" {...{ className, stroke }}>
+    <Front stroke={strokeScale * stroke} />
+  </LineDrawingWrapper>
+)
 
 /*
  * React component for the back
  */
 export const BentBack = ({
-  className = 'w-64', // CSS classes to apply
+  className = 'tw-w-full', // CSS classes to apply
   stroke = 1, // Stroke width to use
 }) => {
   // Normalize stroke across designs

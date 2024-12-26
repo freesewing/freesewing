@@ -1,5 +1,7 @@
 import tlds from 'tlds/index.json' with { type: 'json' }
 import { cloudflare as cloudflareConfig } from '@freesewing/config'
+import set from 'lodash/set.js'
+import unset from 'lodash/unset.js'
 
 /*
  * VARIABLES
@@ -243,6 +245,30 @@ export function measurementAsMm(value, units = 'metric') {
 /** convert a millimeter value to a Number value in the given units */
 export function measurementAsUnits(mmValue, units = 'metric') {
   return round(mmValue / (units === 'imperial' ? 25.4 : 10), 3)
+}
+
+/*
+ * Helper method to handle updates to nested object properties
+ *
+ * This is mostly using lodash.set but also has a quirk
+ * where passing 'unset' as value unsets the value
+ *
+ * @param {object} obj - The object to mutate
+ * @param {string|array} path - The path to the property to change, either an array or dot notation
+ * @param {mixed} val - The value to set it to, or 'unset' to remove/unset it
+ * @return {object} obj - The mutated object
+ */
+export const mutateObject = (obj = {}, path, val = 'unset') => {
+  if (val === 'unset') {
+    if (Array.isArray(path) && Array.isArray(path[0])) {
+      for (const [ipath, ival = 'unset'] of path) {
+        if (ival === 'unset') unset(obj, ipath)
+        else set(obj, ipath, ival)
+      }
+    } else unset(obj, path)
+  } else set(obj, path, val)
+
+  return obj
 }
 
 /** Generate a URL to create a new pattern with a given design, settings, and view */

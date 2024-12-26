@@ -1,0 +1,15 @@
+{
+  "id": "benjamin",
+  "name": "Benjamin bow tie",
+  "code": "Wouter Van Wageningen",
+  "description": "A FreeSewing pattern for a bow tie",
+  "design": "Wouter Van Wageningen",
+  "difficulty": 3,
+  "tags": [
+    "accessories"
+  ],
+  "techniques": [
+    "precision",
+    "interfacing"
+  ]
+}

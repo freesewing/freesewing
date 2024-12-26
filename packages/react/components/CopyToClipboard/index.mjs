@@ -31,14 +31,14 @@ export const CopyToClipboard = ({ content, label = false, sup = false }) => {
 
   return (
     <Copy text={text} onCopy={() => handleCopied(setCopied, setLoadingStatus, label)}>
-      <button className={copied ? 'text-success' : ''}>
+      <button className={copied ? 'tw-text-success' : ''}>
         {copied ? (
           <OkIcon
-            className={`${style} text-success-content bg-success rounded-full p-1`}
+            className={`${style} tw-text-success-content tw-bg-success tw-rounded-full tw-p-1`}
             stroke={4}
           />
         ) : (
-          <CopyIcon className={`${style} text-inherit`} />
+          <CopyIcon className={`${style} tw-text-inherit`} />
         )}
       </button>
     </Copy>

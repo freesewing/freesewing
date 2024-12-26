@@ -1,5 +1,4 @@
 import { Design } from '@freesewing/core'
-import { data } from '../data.mjs'
 import { i18n } from '../i18n/index.mjs'
 import { fabricLines, saLines, otherLines, lineWidths, lineStrokes } from './lines.mjs'
 import { notches } from './notches.mjs'
@@ -17,7 +16,6 @@ import { sa } from './sa.mjs'
 
 // Setup our new design
 const Legend = new Design({
-  data,
   parts: [
     fabricLines,
     saLines,

@@ -77,16 +77,16 @@ export const Consent = ({ welcome = false, Link = false, title = false }) => {
   }
 
   return (
-    <div className="w-full mdx">
-      {title ? <h2 className="text-4xl">Privacy Matters</h2> : null}
+    <div className="tw-w-full mdx">
+      {title ? <h2 className="tw-text-4xl">Privacy Matters</h2> : null}
       {text.intro}
-      <h5 className="mt-8">Do you give your consent to process your account data?</h5>
+      <h5 className="tw-mt-8">Do you give your consent to process your account data?</h5>
       {text.account}
       {consent1 ? (
         <Checkbox value={consent1} setter={setConsent1} label="Yes, I do" />
       ) : (
         <button
-          className="daisy-btn daisy-btn-primary daisy-btn-lg w-full mt-4"
+          className="tw-daisy-btn tw-daisy-btn-primary tw-daisy-btn-lg tw-w-full tw-mt-4"
           onClick={() => setConsent1(!consent1)}
         >
           Click here to give your consent
@@ -94,7 +94,9 @@ export const Consent = ({ welcome = false, Link = false, title = false }) => {
       )}
       {consent1 ? (
         <>
-          <h5 className="mt-8">Do you give your consent to share your anonymized measurements</h5>
+          <h5 className="tw-mt-8">
+            Do you give your consent to share your anonymized measurements
+          </h5>
           <Checkbox
             value={consent2}
             setter={setConsent2}
@@ -105,19 +107,19 @@ export const Consent = ({ welcome = false, Link = false, title = false }) => {
       ) : null}
       {!consent1 && <Popout warning>This consent is required for a FreeSewing account.</Popout>}
       {consent1 ? (
-        <button className="daisy-btn daisy-btn-primary w-full mt-4" onClick={update}>
+        <button className="tw-daisy-btn tw-daisy-btn-primary tw-w-full tw-mt-4" onClick={update}>
           Save
         </button>
       ) : (
         <button
-          className="daisy-btn mt-4 capitalize w-full daisy-btn-error"
+          className="tw-daisy-btn tw-mt-4 tw-capitalize tw-w-full tw-daisy-btn-error"
           onClick={removeAccount}
         >
           Remove your account
         </button>
       )}
-      <p className="text-center opacity-50 mt-12">
-        <Link href="/docs/about/privacy" className="hover:text-secondary underline">
+      <p className="tw-text-center tw-opacity-50 tw-mt-12">
+        <Link href="/docs/about/privacy" className="hover:tw-text-secondary tw-underline">
           FreeSewing Privacy Notice
         </Link>
       </p>
@@ -127,19 +129,19 @@ export const Consent = ({ welcome = false, Link = false, title = false }) => {
 
 const Checkbox = ({ value, setter, label, children = null }) => (
   <div
-    className={`form-control p-4 hover:cursor-pointer rounded border-l-8 my-2
-    ${value ? 'border-success bg-success' : 'border-error bg-error'}
-    bg-opacity-10 shadow`}
+    className={`tw-form-control tw-p-4 hover:tw-cursor-pointer tw-rounded tw-border-l-8 tw-my-2
+    ${value ? 'tw-border-success tw-bg-success' : 'tw-border-error tw-bg-error'}
+    btw-g-opacity-10 tw-shadow`}
     onClick={() => setter(value ? false : true)}
   >
-    <div className="form-control flex flex-row items-center gap-2">
+    <div className="tw-form-control tw-flex tw-flex-row tw-items-center tw-gap-2">
       <input
         type="checkbox"
-        className="daisy-checkbox"
+        className="tw-daisy-checkbox"
         checked={value ? 'checked' : ''}
         onChange={() => setter(value ? false : true)}
       />
-      <span className="label-text">{label}</span>
+      <span className="tw-label-text">{label}</span>
     </div>
     {children}
   </div>
@@ -163,7 +165,7 @@ const text = {
     </>
   ),
   account: (
-    <div className="border-l-4 ml-1 pl-4 my-2 opacity-80">
+    <div className="tw-border-l-4 tw-ml-1 tw-pl-4 tw-my-2 tw-opacity-80">
       <h6>What is account data?</h6>
       <p>
         Your <b>email address</b>, <b>username</b>, and <b>password</b>, and any <b>measurements</b>{' '}
@@ -183,7 +185,7 @@ const text = {
       <p>
         <b>No</b>, never.
       </p>
-      <p className="text-sm italic">
+      <p className="tw-text-sm tw-italic">
         Note: Freesewing publishes anonymized measurements as open data for scientific research. You
         have the right to object to this.
       </p>

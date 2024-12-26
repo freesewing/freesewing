@@ -1,0 +1,18 @@
+{
+  "id": "shin",
+  "name": "Shin swim trunks",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for swim trunks",
+  "design": "Joost De Cock",
+  "difficulty": 2,
+  "tags": [
+    "bottoms",
+    "swimwear"
+  ],
+  "techniques": [
+    "hem",
+    "stretch",
+    "curved-seam",
+    "elastic"
+  ]
+}

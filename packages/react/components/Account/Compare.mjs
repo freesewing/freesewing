@@ -70,19 +70,19 @@ export const Compare = ({ welcome = false }) => {
       : '/docs/about/guide'
 
   return (
-    <div className="max-w-xl">
+    <div className="tw-w-full">
       <ListInput
         id="account-compare"
         label="Are you comfortable with your measurements sets being compared?"
         list={['yes', 'no'].map((val) => ({
           val,
           label: (
-            <div className="flex flex-row items-center w-full justify-between">
+            <div className="tw-flex tw-flex-row tw-items-center tw-w-full tw-justify-between">
               <span>{strings[val].title}</span>
               {val === 'yes' ? (
-                <OkIcon className="w-8 h-8 text-success" stroke={4} />
+                <OkIcon className="tw-w-8 h-8 tw-text-success" stroke={4} />
               ) : (
-                <NoIcon className="w-8 h-8 text-error" stroke={3} />
+                <NoIcon className="tw-w-8 h-8 tw-text-error" stroke={3} />
               )}
             </div>
           ),
@@ -93,17 +93,17 @@ export const Compare = ({ welcome = false }) => {
       />
       {welcome ? (
         <>
-          <IconButton href={nextHref} className="mt-4">
+          <IconButton href={nextHref} className="tw-mt-4">
             <RightIcon stroke={3} /> Continue
           </IconButton>
           {welcomeSteps[account?.control].length > 0 ? (
             <>
               <progress
-                className="daisy-progress daisy-progress-primary w-full mt-12"
+                className="tw-daisy-progress tw-daisy-progress-primary tw-w-full tw-mt-12"
                 value={400 / welcomeSteps[account?.control].length}
                 max="100"
               ></progress>
-              <span className="pt-4 text-sm font-bold opacity-50">
+              <span className="tw-pt-4 tw-text-sm tw-font-bold tw-opacity-50">
                 4 / {welcomeSteps[account?.control].length}
               </span>
               <WelcomeIcons

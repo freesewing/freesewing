@@ -1,0 +1,18 @@
+{
+  "id": "shelly",
+  "name": "Shelly swim shirt",
+  "code": "Thrunic",
+  "description": "A FreeSewing pattern for a raglan shirt, perfect for swim shirts",
+  "design": "Thrunic",
+  "difficulty": 2,
+  "tags": [
+    "tops",
+    "swimwear"
+  ],
+  "techniques": [
+    "hem",
+    "stretch",
+    "curved-seam",
+    "raglan-sleeve"
+  ]
+}

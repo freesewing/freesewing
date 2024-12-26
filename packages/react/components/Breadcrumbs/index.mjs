@@ -12,18 +12,21 @@ export const Breadcrumbs = ({ crumbs = [], title, Link = false }) => {
   if (Link === false) Link = RegularLink
 
   return (
-    <div className="tailwind-container p-0">
-      <ul className="flex flex-row items-center gap-2 m-0 py-4" style={{ paddingLeft: 0 }}>
-        <li className="inline">
+    <div className="tw-tailwind-container tw-p-0">
+      <ul
+        className="tw-flex tw-flex-row tw-items-center tw-gap-2 tw-m-0 tw-py-4"
+        style={{ paddingLeft: 0 }}
+      >
+        <li className="tw-inline">
           <Link href="/">Home</Link>
         </li>
         <Spacer />
         {crumbs.map((crumb, i) => (
-          <li key={i} className="inline">
+          <li key={i} className="tw-inline">
             <Link href={crumb.href}>{crumb.label}</Link>
           </li>
         ))}
-        <li className="inline">{title}</li>
+        <li className="tw-inline">{title}</li>
       </ul>
     </div>
   )
@@ -39,4 +42,4 @@ const RegularLink = ({ href, children }) => <a href={href}>{children}</a>
 /*
  * This goes between breadcrumbs
  */
-const Spacer = () => <li className="inline">&raquo;</li>
+const Spacer = () => <li className="tw-inline">&raquo;</li>

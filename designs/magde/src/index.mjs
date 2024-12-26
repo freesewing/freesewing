@@ -1,5 +1,5 @@
 import { Design } from '@freesewing/core'
-import { data } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 import { i18n } from '../i18n/index.mjs'
 // Parts
 import { bodyLiner } from './bodyLiner.mjs'
@@ -16,7 +16,7 @@ import { strapAttachments } from './strapAttachments.mjs'
 
 // Create new design
 const Magde = new Design({
-  data,
+  data: about,
   parts: [
     backPanel,
     frontPanel,
@@ -47,4 +47,5 @@ export {
   internalOrganiser,
   Magde,
   i18n,
+  about,
 }

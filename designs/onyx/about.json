@@ -1,0 +1,21 @@
+{
+  "id": "onyx",
+  "name": "Onyx one-piece",
+  "code": "Thrunic",
+  "description": "A FreeSewing pattern for one-piece garments",
+  "design": "Thrunic",
+  "difficulty": 4,
+  "tags": [
+    "swimwear",
+    "pajamas",
+    "onePiece"
+  ],
+  "techniques": [
+    "hem",
+    "curved-seam",
+    "stretch",
+    "lining",
+    "zipper",
+    "ribbing"
+  ]
+}

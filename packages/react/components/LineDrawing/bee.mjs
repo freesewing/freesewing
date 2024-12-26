@@ -1,38 +1,29 @@
 import React from 'react'
 import { LineDrawingWrapper, thin, dashed } from './shared.mjs'
 
-const strokeScale = 0.5
-
-export const Bee = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
-
-  return (
-    <LineDrawingWrapper viewBox="0 0 74 140" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
-
 /*
- * React component for the front
+ * This strokeScale factor is used to normalize the stroke across
+ * designs so we have a consistent look when showing our collection
  */
-export const BeeFront = ({
-  className = 'h-full max-w-full m-auto text-base-content linedrawing', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
+const strokeScale = 0.4
 
-  return (
-    <LineDrawingWrapper viewBox="0 0 74 140" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
+/**
+ * A linedrawing component for Bee
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
+ */
+export const Bee = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="-20 0 120 120" {...{ stroke, className }}>
+    <Front stroke={stroke * strokeScale} />
+  </LineDrawingWrapper>
+)
+
+/**
+ * Front is the same
+ */
+export const BeeFront = Bee
 
 /*
  * SVG elements for the front

@@ -4,7 +4,6 @@ import { capitalize, shortDate } from '@freesewing/utils'
 
 // Context
 import { LoadingStatusContext } from '@freesewing/react/context/LoadingStatus'
-//import { ModalContext } from '@freesewing/react/context/Modal'
 
 // Hooks
 import React, { useState, useEffect, useContext } from 'react'
@@ -12,30 +11,6 @@ import { useAccount } from '@freesewing/react/hooks/useAccount'
 import { useBackend } from '@freesewing/react/hooks/useBackend'
 import { useSelection } from '@freesewing/react/hooks/useSelection'
 
-//import {
-//  measurements,
-//  isDegreeMeasurement,
-//  control as controlConfig,
-//  urls,
-//} from '@freesewing/config'
-//import { measurements as measurementTranslations } from '@freesewing/i18n'
-//import { measurements as designMeasurements } from '@freesewing/collection'
-//import {
-//  cloudflareImageUrl,
-//  capitalize,
-//  formatMm,
-//  horFlexClasses,
-//  linkClasses,
-//  notEmpty,
-//  roundDistance,
-//  shortDate,
-//  timeAgo,
-//} from '@freesewing/utils'
-
-//// Hooks
-//import React, { useState, useEffect, Fragment, useContext } from 'react'
-//import { useAccount } from '@freesewing/react/hooks/useAccount'
-//import { useBackend } from '@freesewing/react/hooks/useBackend'
 // Components
 import { TableWrapper } from '@freesewing/react/components/Table'
 import { PatternCard } from '@freesewing/react/components/Account'
@@ -43,38 +18,10 @@ import { Link as WebLink } from '@freesewing/react/components/Link'
 import {
   BoolNoIcon,
   BoolYesIcon,
-  //  CloneIcon,
-  //  CuratedMeasurementsSetIcon,
-  //  EditIcon,
-  //  ShowcaseIcon,
-  //  NewMeasurementsSetIcon,
-  //  NoIcon,
-  //  OkIcon,
   PlusIcon,
   RightIcon,
-  //  ResetIcon,
   TrashIcon,
-  //  UploadIcon,
-  //  //  WarningIcon,
-  //  //  BoolYesIcon,
-  //  //  BoolNoIcon,
 } from '@freesewing/react/components/Icon'
-//import { BookmarkButton, MsetCard } from '@freesewing/react/components/Account'
-//import {
-//  DesignInput,
-//  MarkdownInput,
-//  ListInput,
-//  MeasieInput,
-//  PassiveImageInput,
-//  StringInput,
-//  ToggleInput,
-//} from '@freesewing/react/components/Input'
-//import { DisplayRow } from './shared.mjs'
-//import Markdown from 'react-markdown'
-//import { ModalWrapper } from '@freesewing/react/components/Modal'
-//import { Json } from '@freesewing/react/components/Json'
-//import { Yaml } from '@freesewing/react/components/Yaml'
-//import { Popout } from '@freesewing/react/components/Popout'
 
 const t = (input) => {
   console.log('t called', input)
@@ -142,16 +89,16 @@ export const Patterns = ({ Link = false }) => {
 
   return (
     <>
-      <div className="flex flex-row flex-wrap gap-2 items-center justify-between mb-4">
+      <div className="tw-flex tw-flex-row tw-flex-wrap tw-gap-2 tw-items-center tw-justify-between tw-mb-4">
         <button
-          className="daisy-btn daisy-btn-error"
+          className="tw-daisy-btn tw-daisy-btn-error"
           onClick={removeSelectedPatterns}
           disabled={count < 1}
         >
           <TrashIcon /> {count} {t('patterns')}
         </button>
         <Link
-          className="daisy-btn daisy-btn-primary capitalize w-full md:w-auto hover:text-primary-content"
+          className="tw-daisy-btn tw-daisy-btn-primary tw-capitalize tw-w-full md:tw-w-auto hover:tw-text-primary-content"
           href="/-/"
         >
           <PlusIcon />
@@ -159,13 +106,13 @@ export const Patterns = ({ Link = false }) => {
         </Link>
       </div>
       <TableWrapper>
-        <table className="table table-auto">
-          <thead className="border border-base-300 border-b-2 border-t-0 border-x-0">
+        <table className="tw-table tw-table-auto">
+          <thead className="tw-border tw-border-base-300 tw-border-b-2 tw-border-t-0 tw-border-x-0">
             <tr className="">
               <th className="">
                 <input
                   type="checkbox"
-                  className="daisy-checkbox daisy-checkbox-secondary"
+                  className="tw-daisy-checkbox tw-daisy-checkbox-secondary"
                   onClick={toggleAll}
                   checked={patterns.length === count}
                 />
@@ -173,13 +120,13 @@ export const Patterns = ({ Link = false }) => {
               {Object.keys(fields).map((field) => (
                 <th key={field}>
                   <button
-                    className="daisy-btn daisy-btn-link capitalize px-0 underline hover:decoration-4 decoration-2 text-secondary"
+                    className="tw-daisy-btn tw-daisy-btn-link tw-capitalize tw-px-0 tw-underline hover:tw-decoration-4 tw-decoration-2 tw-text-secondary"
                     onClick={() => (order === field ? setDesc(!desc) : setOrder(field))}
                   >
                     {fields[field]}{' '}
                     <RightIcon
                       stroke={3}
-                      className={`w-4 h-4 ${desc ? '-' : ''}rotate-90 ${order === field ? '' : 'opacity-0'}`}
+                      className={`tw-w-4 tw-h-4 ${desc ? 'tw--' : 'tw-'}rotate-90 ${order === field ? '' : 'tw-opacity-0'}`}
                     />
                   </button>
                 </th>
@@ -189,16 +136,16 @@ export const Patterns = ({ Link = false }) => {
           <tbody>
             {orderBy(patterns, order, desc ? 'desc' : 'asc').map((pattern, i) => (
               <tr key={i}>
-                <td className="text-base font-medium">
+                <td className="tw-text-base tw-font-medium">
                   <input
                     type="checkbox"
                     checked={selection[pattern.id] ? true : false}
-                    className="daisy-checkbox daisy-checkbox-secondary"
+                    className="tw-daisy-checkbox tw-daisy-checkbox-secondary"
                     onClick={() => toggle(pattern.id)}
                   />
                 </td>
-                <td className="text-base font-medium">{pattern.id}</td>
-                <td className="text-base font-medium">
+                <td className="tw-text-base tw-font-medium">{pattern.id}</td>
+                <td className="tw-text-base tw-font-medium">
                   <PatternCard
                     href={`/account/data/patterns/pattern?id=${pattern.id}`}
                     pattern={pattern}
@@ -206,24 +153,24 @@ export const Patterns = ({ Link = false }) => {
                     Link={Link}
                   />
                 </td>
-                <td className="text-base font-medium">
+                <td className="tw-text-base tw-font-medium">
                   <Link
                     href={`/account/data/patterns/pattern?id=${pattern.id}`}
-                    className="text-secondary underline decoration-2 hover:decoration-4"
+                    className="tw-text-secondary tw-underline tw-decoration-2 hover:tw-decoration-4"
                   >
                     {pattern.name}
                   </Link>
                 </td>
-                <td className="text-base font-medium">
+                <td className="tw-text-base tw-font-medium">
                   <Link
                     href={`/designs/${pattern.design}`}
-                    className="text-secondary underline decoration-2 hover:decoration-4"
+                    className="tw-text-secondary tw-underline tw-decoration-2 hover:tw-decoration-4"
                   >
                     {capitalize(pattern.design)}
                   </Link>
                 </td>
-                <td className="text-base font-medium">{shortDate(pattern.createdAt)}</td>
-                <td className="text-base font-medium">
+                <td className="tw-text-base tw-font-medium">{shortDate(pattern.createdAt)}</td>
+                <td className="tw-text-base tw-font-medium">
                   {pattern.public ? <BoolYesIcon /> : <BoolNoIcon />}
                 </td>
               </tr>

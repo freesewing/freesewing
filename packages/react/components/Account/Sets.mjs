@@ -83,12 +83,12 @@ export const Sets = ({ Link = false }) => {
   }
 
   return (
-    <div className="max-w-7xl xl:pl-4">
+    <div className="tw-max-w-7xl xl:tw-pl-4">
       {sets.length > 0 ? (
         <>
-          <p className="text-center md:text-right">
+          <p className="tw-text-center md:tw-text-right">
             <Link
-              className="daisy-btn daisy-btn-primary daisy-btn-outline capitalize w-full md:w-auto mr-2 mb-2 hover:no-underline hover:text-primary-content"
+              className="tw-daisy-btn tw-daisy-btn-primary tw-daisy-btn-outline tw-capitalize tw-w-full md:tw-w-auto tw-mr-2 tw-mb-2 hover:tw-no-underline hover:tw-text-primary-content"
               bottom
               primary
               href="/account/import"
@@ -97,7 +97,7 @@ export const Sets = ({ Link = false }) => {
               Import Measurements Sets
             </Link>
             <button
-              className="daisy-btn daisy-btn-primary capitalize w-full md:w-auto hover:no-underline hover:text-primary-content"
+              className="tw-daisy-btn tw-daisy-btn-primary tw-capitalize tw-w-full md:tw-w-auto hover:tw-no-underline hover:tw-text-primary-content"
               onClick={() =>
                 setModal(
                   <ModalWrapper keepOpenOnClick>
@@ -110,15 +110,15 @@ export const Sets = ({ Link = false }) => {
               Create a new Measurements Set
             </button>
           </p>
-          <div className="flex flex-row gap-2 border-b-2 mb-4 pb-4 mt-8 h-14 items-center">
+          <div className="tw-flex tw-flex-row tw-gap-2 tw-border-b-2 tw-mb-4 tw-pb-4 tw-mt-8 tw-h-14 tw-items-center">
             <input
               type="checkbox"
-              className="checkbox checkbox-secondary"
+              className="tw-daisy-checkbox tw-daisy-checkbox-secondary"
               onClick={toggleSelectAll}
               checked={sets.length === selCount}
             />
             <button
-              className="daisy-btn daisy-btn-error"
+              className="tw-daisy-btn tw-daisy-btn-error"
               onClick={removeSelectedSets}
               disabled={selCount < 1}
             >
@@ -128,7 +128,7 @@ export const Sets = ({ Link = false }) => {
         </>
       ) : (
         <Link
-          className="daisy-btn daisy-btn-primary capitalize w-full md:w-auto btn-lg hover:no-underline hover:text-primary-content"
+          className="tw-daisy-btn tw-daisy-btn-primary tw-capitalize tw-w-full md:tw-w-auto tw-btn-lg hover:tw-no-underline hover:tw-text-primary-content"
           bottom
           primary
           href="/new/set"
@@ -137,24 +137,26 @@ export const Sets = ({ Link = false }) => {
           Create a new Measurements Set
         </Link>
       )}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
+      <div className="tw-grid tw-grid-cols-2 lg:tw-grid-cols-4 tw-gap-2">
         {sets.map((set, i) => (
           <div
             key={i}
-            className={`flex flex-row items-start gap-1 border-2
+            className={`tw-flex tw-flex-row tw-items-start tw-gap-1 tw-border-2
           ${
-            selected[set.id] ? 'border-solid border-secondary' : 'border-dotted border-base-300'
-          } rounded-lg p-2`}
+            selected[set.id]
+              ? 'tw-border-solid tw-border-secondary'
+              : 'tw-border-dotted tw-border-base-300'
+          } tw-rounded-lg p-2`}
           >
-            <label className="w-8 h-full shrink-0">
+            <label className="tw-w-8 tw-h-full tw-shrink-0">
               <input
                 type="checkbox"
                 checked={selected[set.id] ? true : false}
-                className="daisy-checkbox daisy-checkbox-secondary"
+                className="tw-daisy-checkbox tw-daisy-checkbox-secondary"
                 onClick={() => toggleSelect(set.id)}
               />
             </label>
-            <div className="w-full">
+            <div className="tw-w-full">
               <MsetCard
                 control={control}
                 href={`/account/data/sets/set?id=${set.id}`}
@@ -199,8 +201,8 @@ export const MsetCard = ({
   const s = sizes[size]
 
   const wrapperProps = {
-    className: `bg-base-300 aspect-square h-${s} w-${s} mb-2 grow
-      mx-auto flex flex-col items-start text-center justify-between rounded-none md:rounded shadow`,
+    className: `tw-bg-base-300 tw-aspect-square tw-h-${s} tw-w-${s} tw-mb-2 tw-grow
+      tw-mx-auto tw-flex tw-flex-col tw-items-start tw-text-center tw-justify-between tw-rounded-none md:tw-rounded shadow`,
     style: {
       backgroundImage: `url(${cloudflareImageUrl({ type: 'w500', id: set.img })})`,
       backgroundSize: 'cover',
@@ -221,11 +223,11 @@ export const MsetCard = ({
       set.measies,
       true
     )
-    const iconClasses = 'w-8 h-8 p-1 rounded-full -mt-2 -ml-2 shadow'
+    const iconClasses = 'tw-w-8 tw-h-8 tw-p-1 tw-rounded-full tw--mt-2 tw--ml-2 tw-shadow'
     icon = hasMeasies ? (
-      <OkIcon className={`${iconClasses} bg-success text-success-content`} stroke={4} />
+      <OkIcon className={`${iconClasses} tw-bg-success tw-text-success-content`} stroke={4} />
     ) : (
-      <NoIcon className={`${iconClasses} bg-error text-error-content`} stroke={3} />
+      <NoIcon className={`${iconClasses} tw-bg-error tw-text-error-content`} stroke={3} />
     )
     if (missing.length > 0) {
       const translated = missing.map((m) => {
@@ -236,7 +238,7 @@ export const MsetCard = ({
         const lastSpace = missingString.lastIndexOf(', ', maxLength)
         missingString = missingString.substring(0, lastSpace) + ', ' + t('andMore') + '...'
       }
-      const measieClasses = 'font-normal text-xs'
+      const measieClasses = 'tw-font-normal tw-text-xs'
       missingMeasies = <span className={`${measieClasses}`}>{missingString}</span>
       linebreak = <br />
     }
@@ -245,7 +247,7 @@ export const MsetCard = ({
   const inner = (
     <>
       {icon}
-      <span className="bg-neutral text-neutral-content px-4 w-full bg-opacity-50 py-2 rounded rounded-t-none font-bold leading-5">
+      <span className="tw-bg-neutral tw-text-neutral-content tw-px-4 tw-w-full tw-bg-opacity-50 tw-py-2 tw-rounded tw-rounded-t-none tw-font-bold tw-leading-5">
         {set.name}
         {linebreak}
         {missingMeasies}

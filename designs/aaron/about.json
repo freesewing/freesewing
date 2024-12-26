@@ -1,0 +1,18 @@
+{
+  "id": "aaron",
+  "code": "Joost De Cock",
+  "name": "Aaron A-shirt",
+  "description": "A FreeSewing pattern for a A-shirt or tank top",
+  "design": "Joost De Cock",
+  "difficulty": 2,
+  "tags": [
+    "tops",
+    "underwear"
+  ],
+  "techniques": [
+    "hem",
+    "stretch",
+    "knit-binding",
+    "curved-seam"
+  ]
+}

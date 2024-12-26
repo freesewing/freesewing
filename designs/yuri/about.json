@@ -1,0 +1,17 @@
+{
+  "id": "yuri",
+  "name": "Yuri sweater",
+  "code": "Hellgy",
+  "description": "A FreeSewing pattern for a fancy zipless sweater based on the Huey hoodie",
+  "design": "Biou",
+  "difficulty": 3,
+  "tags": [
+    "tops"
+  ],
+  "techniques": [
+    "curved-seam",
+    "flat-sleeve",
+    "hem",
+    "button"
+  ]
+}

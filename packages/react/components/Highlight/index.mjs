@@ -31,20 +31,18 @@ export const Highlight = ({
   }
 
   const preProps = {
-    className: `language-${language} hljs text-base lg:text-lg whitespace-break-spaces overflow-scroll pr-4`,
+    className: `language-${language} hljs tw-text-base lg:tw-text-lg tw-whitespace-break-spaces tw-overflow-scroll tw-pr-4`,
   }
   if (raw) preProps.dangerouslySetInnerHTML = { __html: raw }
 
   const label = title ? title : defaultTitles[language] ? defaultTitles[language] : language
 
   return (
-    <div className="hljs my-4">
+    <div className="hljs tw-my-4">
       <div
         className={`
-        flex flex-row justify-between items-center
-        text-xs font-medium text-warning
-        mt-1 border-b border-neutral-content border-opacity-25
-        px-4 py-1 mb-2 lg:text-sm
+        tw-flex tw-flex-row tw-justify-between tw-items-center tw-text-xs tw-font-medium tw-text-warning
+        tw-mt-1 tw-border-b tw-border-neutral-content tw-border-opacity-25 tw-px-4 tw-py-1 tw-mb-2 lg:tw-text-sm
       `}
       >
         <span>{label}</span>
