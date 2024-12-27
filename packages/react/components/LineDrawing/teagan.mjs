@@ -1,39 +1,38 @@
 import React from 'react'
 import { LineDrawingWrapper, thin, dashed } from './shared.mjs'
 
+/*
+ * This strokeScale factor is used to normalize the stroke across
+ * designs so we have a consistent look when showing our collection
+ */
 const strokeScale = 0.5
 
-export const Teagan = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
-
-  return (
-    <LineDrawingWrapper viewBox="0 0 170 90" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-      <Back stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
-
-/*
- * React component for the front
+/**
+ * A linedrawing component for Teagan
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
  */
-export const TeaganFront = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
+export const Teagan = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="0 0 170 90" {...{ className }}>
+    <Front stroke={stroke * strokeScale} />
+    <Back stroke={stroke * strokeScale} />
+  </LineDrawingWrapper>
+)
 
-  return (
-    <LineDrawingWrapper viewBox="0 0 85 90" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
+/**
+ * A linedrawing component for the front of Teagan
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
+ */
+export const TeaganFront = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="-2 0 90 90" {...{ className }}>
+    <Front stroke={stroke * strokeScale} />
+  </LineDrawingWrapper>
+)
 
 /*
  * React component for the back

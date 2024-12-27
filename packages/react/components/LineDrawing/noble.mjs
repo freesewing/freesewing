@@ -1,39 +1,38 @@
 import React from 'react'
 import { LineDrawingWrapper, thin, dashed } from './shared.mjs'
 
-const strokeScale = 0.5
-
-export const Noble = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
-
-  return (
-    <LineDrawingWrapper viewBox="0 0 152 83" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-      <Back stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
-
 /*
- * React component for the front
+ * This strokeScale factor is used to normalize the stroke across
+ * designs so we have a consistent look when showing our collection
  */
-export const NobleFront = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
+const strokeScale = 0.4
 
-  return (
-    <LineDrawingWrapper viewBox="0 0 76 83" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
+/**
+ * A linedrawing component for Noble
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
+ */
+export const Noble = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="0 0 152 83" {...{ className, stroke }}>
+    <Front stroke={stroke * strokeScale} />
+    <Back stroke={stroke * strokeScale} />
+  </LineDrawingWrapper>
+)
+
+/**
+ * A linedrawing component for the front of Noble
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
+ */
+export const NobleFront = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="-5 0 83 83" {...{ className, stroke }}>
+    <Front stroke={stroke * strokeScale} />
+  </LineDrawingWrapper>
+)
 
 /*
  * React component for the back

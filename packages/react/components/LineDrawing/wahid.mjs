@@ -1,36 +1,38 @@
 import React from 'react'
 import { LineDrawingWrapper, thin, dashed } from './shared.mjs'
 
-const strokeScale = 0.4
+/*
+ * This strokeScale factor is used to normalize the stroke across
+ * designs so we have a consistent look when showing our collection
+ */
+const strokeScale = 0.5
 
-export const Wahid = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
+/**
+ * A linedrawing component for Wahid
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
+ */
+export const Wahid = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="0 0 162 126" {...{ className }}>
+    <Front stroke={stroke * strokeScale} />
+    <Back stroke={stroke * strokeScale} />
+  </LineDrawingWrapper>
+)
 
-  return (
-    <LineDrawingWrapper viewBox="0 0 162 126" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-      <Back stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
-
-export const WahidFront = ({
-  className = 'w-64', // CSS classes to apply
-  stroke = 1, // Stroke width to use
-}) => {
-  // Normalize stroke across designs
-  stroke = stroke * strokeScale
-
-  return (
-    <LineDrawingWrapper viewBox="0 0 81 126" {...{ className, stroke }}>
-      <Front stroke={stroke} />
-    </LineDrawingWrapper>
-  )
-}
+/**
+ * A linedrawing component for the front of Wahid
+ *
+ * @param {object} props - All React props
+ * @param {string} props.className - Any CSS classes to apply
+ * @param {number} props.stroke - The stroke width to apply
+ */
+export const WahidFront = ({ className, stroke = 1 }) => (
+  <LineDrawingWrapper viewBox="-20 0 126 126" {...{ className }}>
+    <Front stroke={stroke * strokeScale} />
+  </LineDrawingWrapper>
+)
 
 export const WahidBack = ({
   className = 'w-64', // CSS classes to apply

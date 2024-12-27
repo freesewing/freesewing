@@ -280,15 +280,19 @@ const DesignCard = ({ name, lineDrawing = false, linkTo, Link }) => {
   }
 
   return (
-    <Link href={linkTo === 'new' ? `/-/` : `/designs/${name}/`}>
+    <Link
+      href={linkTo === 'new' ? `/-/` : `/designs/${name}/`}
+      className="hover:tw-bg-secondary hover:tw-bg-opacity-10 tw-rounded-lg tw-group hover:tw-no-underline"
+      title={about[name].description}
+    >
       <div
-        className={`tw-flex tw-flex-col tw-flex-nowrap tw-items-start tw-justify-between tw-gap-2 tw-border-neutral-500
+        className={`tw-flex tw-flex-col tw-flex-nowrap tw-items-start tw-justify-between tw-gap-2 tw-border-neutral-500 group-hover:tw-border-secondary
         tw-w-full tw-h-full tw-border tw-border-2 tw-border-solid tw-p-0 tw-relative tw-rounded-lg tw-rounded-lg`}
         style={bg}
       >
         <h5
-          className={`tw-text-center tw-py-2 tw-px-4 tw-rounded-t tw-m-0 tw-w-full
-        ${lineDrawing ? '' : 'tw-bg-neutral tw-text-neutral-content tw-bg-opacity-70'}`}
+          className={`tw-text-center tw-py-2 tw-px-4 tw-rounded-t tw-m-0 tw-w-full group-hover:tw-no-underline group-hover:tw-bg-secondary group-hover:tw-bg-opacity-70
+        ${lineDrawing ? '' : 'tw-bg-neutral tw-text-neutral-content tw-bg-opacity-80'}`}
         >
           {about[name].name}
         </h5>
@@ -303,7 +307,7 @@ const DesignCard = ({ name, lineDrawing = false, linkTo, Link }) => {
           className={`tw-flex tw-flex-row tw-items-center tw-justify-center tw-py-1 tw-px-2 tw-rounded-b tw-m-0 tw-w-full
         ${lineDrawing ? '' : `tw-text-neutral-content`}`}
         >
-          <Difficulty score={about[name].difficulty} />
+          <Difficulty score={about[name].difficulty} className="group-hover:tw-text-secondary" />
         </div>
       </div>
     </Link>
@@ -316,8 +320,8 @@ const DesignCard = ({ name, lineDrawing = false, linkTo, Link }) => {
  * @param {object} props - All React props
  * @param {number} props.score - The difficulty score of the design (1-5)
  */
-const Difficulty = ({ score = 0 }) => (
-  <div className="tw-flex tw-flex-row">
+const Difficulty = ({ score = 0, className = '' }) => (
+  <div className={`tw-flex tw-flex-row ${className}`}>
     {[0, 1, 2, 3, 4].map((i) => (
       <CircleIcon fill={i < score ? true : false} className={`tw-w-4 tw-h-4`} />
     ))}

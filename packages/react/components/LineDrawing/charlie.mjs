@@ -5,7 +5,7 @@ import { LineDrawingWrapper, thin, dashed } from './shared.mjs'
  * This strokeScale factor is used to normalize the stroke across
  * designs so we have a consistent look when showing our collection
  */
-const strokeScale = 1
+const strokeScale = 1.5
 
 /**
  * A linedrawing component for Charlie

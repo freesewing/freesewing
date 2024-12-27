@@ -23,7 +23,7 @@ export const LineDrawingWrapper = ({
     stroke="currentColor"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className={className + ' linedrawing tw-bg-base-300'}
+    className={className + ' linedrawing'}
     style={style}
   >
     {children}
