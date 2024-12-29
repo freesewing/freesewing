@@ -5,7 +5,9 @@ function draftFront({ points, paths, Snippet, snippets, sa, macro, store, part }
   paths.side.hide()
   paths.front.addClass('fabric')
 
-  points.titleAnchor = points.bustPoint.shiftFractionTowards(points.strapFrontLeft, 0.3)
+  points.titleAnchor = points.bustPoint
+    .shiftFractionTowards(points.strapFrontLeft, 0.3)
+    .shiftFractionTowards(points.cfNeckCp, 0.5)
 
   store.cutlist.setCut({ cut: 2, from: 'fabric', onFold: true })
 

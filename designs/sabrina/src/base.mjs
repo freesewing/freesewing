@@ -158,9 +158,9 @@ function draftBase({ options, measurements, Point, Path, points, paths, utils, s
   points.sbBandCp1 = points.sbBand.shiftFractionTowards(points.sfBand, 1 / 3)
   points.sbBandCp2 = points.sbBand.shiftFractionTowards(points.cbBand, 1 / 3)
 
-  let bottomDartWidth = Math.max(0, (chestCirc - bandCirc) / 4)
-  let bustDartWidth = Math.max(0, (chestFront - ribcageFront) / 2) + chestCirc * 0.01
-  let backDartWidth = chestCirc * 0.01
+  const bottomDartWidth = Math.max(0, (chestCirc - bandCirc) / 4)
+  const bustDartWidth = Math.max(0, (chestFront - ribcageFront) / 2) + chestCirc * 0.01
+  const backDartWidth = chestCirc * 0.01
 
   function constructDart(dartPoint, centerPointName, prevCpPointName, nextCpPointName, dartWidth) {
     const centerPoint = points[centerPointName]
@@ -183,6 +183,15 @@ function draftBase({ options, measurements, Point, Path, points, paths, utils, s
     return new Point(sumX / points.length, sumY / points.length)
   }
 
+  /**
+   * This function moves the given dart control point left or right, until two bezier curves just barely touch near the original dart point.
+   * @param dartPoint original control point
+   * @param referencePath second bezier curve that should be touched
+   * @param tester function constructs the new path with the given new probe control point as an argument
+   * @param collisionPointName this function will set a point in the points array where bots paths collide
+   * @param adjust initial adjustment step size
+   * @returns {Point} new dart control point
+   */
   function adjustDart(dartPoint, referencePath, tester, collisionPointName = null, adjust = 10) {
     let dist = adjust
     let offset = 0
@@ -225,7 +234,7 @@ function draftBase({ options, measurements, Point, Path, points, paths, utils, s
         .curve(points.sfDart, points.sfDart, points.sfArmpitDartRight),
       (p) => new Path().move(points.sfArmpitDartLeft).curve(p, p, points.sfBandDartRight),
       'frontJoin',
-      -10
+      bustDist * -0.1
     )
 
     points.sbDartSide = adjustDart(
@@ -235,7 +244,7 @@ function draftBase({ options, measurements, Point, Path, points, paths, utils, s
         .curve(points.sbDart, points.sbDart, points.sbArmpitDartLeft),
       (p) => new Path().move(points.sbArmpitDartRight).curve(p, p, points.sbBandDartLeft),
       'backJoin',
-      10
+      bustDist * 0.1
     )
   } else {
     points.sfDartSide = points.sfDart
@@ -371,7 +380,7 @@ export const base = {
       menu: 'style',
     },
     bustPointFocus: { pct: 0, min: -50, max: 100, menu: 'fit' },
-    backDartAngle: { deg: 15, min: 0, max: 15, menu: 'advanced' },
+    backDartAngle: { deg: 15, min: 0, max: 22, menu: 'advanced' },
     upperBackShape: { pct: 40, min: 20, max: 60, menu: 'advanced' },
     lowerBackShape: { pct: 40, min: 20, max: 80, menu: 'advanced' },
     strapCurveFront: { pct: 5, min: 2, max: 10, menu: 'advanced' },

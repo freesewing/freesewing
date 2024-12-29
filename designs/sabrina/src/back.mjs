@@ -5,23 +5,9 @@ function draftBack({ points, paths, Snippet, snippets, sa, macro, store, part })
   paths.side.hide()
   paths.back.addClass('fabric')
 
-  // macro('mirror', {
-  //   clone: true,
-  //   mirror: [
-  //     points.cbNeck.shiftFractionTowards(points.cfNeck, 0.5),
-  //     points.cbBand.shiftFractionTowards(points.cfBand, 0.5),
-  //   ],
-  //   paths: ['back', 'backSideJoin', 'backBand', 'backStrap'],
-  //   points: Object.keys(points),
-  // })
-  //
-  // // mirror plugin doesn't reverse paths
-  // paths.mirroredBack = paths.mirroredBack.reverse().addClass('fabric')
-  // paths.mirroredBackSideJoin = paths.mirroredBackSideJoin.reverse().hide()
-  // paths.mirroredBackBand = paths.mirroredBackBand.reverse().hide()
-  // paths.mirroredBackStrap = paths.mirroredBackStrap.reverse().hide()
-
-  points.titleAnchor = points.cbBand.shiftFractionTowards(points.cbNeck, 0.1).translate(-80, 0)
+  points.titleAnchor = points.cbBand
+    .shiftFractionTowards(points.cbNeck, 0.8)
+    .shiftFractionTowards(points.sbBand, 0.8)
 
   snippets.backJoin = new Snippet('bnotch', points.backJoin)
 

@@ -5,7 +5,7 @@ function draftSide({ Point, points, paths, Snippet, snippets, sa, macro, store, 
   paths.front.hide()
   paths.side.addClass('fabric')
 
-  points.titleAnchor = points.armpitBottom.translate(10, 30)
+  points.titleAnchor = points.armpitBottom.shiftFractionTowards(points.sfBand, 0.5)
 
   store.cutlist.setCut({ cut: 4, from: 'fabric' })
 
