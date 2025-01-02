@@ -5,7 +5,7 @@ import { LineDrawingWrapper, regular } from './shared.mjs'
  * This strokeScale factor is used to normalize the stroke across
  * designs so we have a consistent look when showing our collection
  */
-const strokeScale = 0.7
+const strokeScale = 0.9
 
 /**
  * A linedrawing component for Hugo

@@ -1,12 +1,17 @@
 import fs from 'fs'
 import { mkdir } from 'node:fs/promises'
 import path from 'path'
-import { designs, designInfo } from '../src/lib/designs.mjs'
+import { designs, about, i18n } from '@freesewing/collection'
 import {
   designs as designTranslations,
   optiongroups as optiongroupTranslations,
 } from '../src/lib/i18n.mjs'
-import { capitalize, optionsMenuStructure, optionType } from '../src/lib/utils.mjs'
+import {
+  capitalize,
+  optionsMenuStructure,
+  optionType,
+  orderBy,
+} from '../../../packages/utils/src/index.mjs'
 
 /*
  * If you are looking to port a design, remove it from the list below
@@ -92,19 +97,45 @@ function mmOption(option) {
   ]
 }
 
+const designPageTemplate = (design) => `---
+title: ${i18n[design].en.t}
+---
+
+{/* This page is auto-generated. Manual changes will be lost. */}
+
+import { DocusaurusDoc } from '@freesewing/react/components/Docusaurus'
+import { DesignInfo } from '@freesewing/react/components/Collection'
+import Link from '@docusaurus/Link'
+import Notes from '@site/docs/docs/designs/${design}/_notes.mdx'
+import DesignExamples from '@site/src/components/DesignExamples.mjs'
+
+<DocusaurusDoc>
+
+<DesignInfo design="${design}" Link={Link} />
+
+## Designer notes {#notes}
+
+<Notes />
+
+## Examples
+
+<DesignExamples design="${design}" Link={Link} />
+
+</DocusaurusDoc>
+
+`
+
 /*
  * Generate options page for each design
- * Also create placeholder /designs/NAME page
+ * Also create the /designs/NAME page
  */
 async function generateDesignsDocs() {
   // Iterate over designs
-  for (const [name, design] of Object.entries(designInfo)) {
-    if (design.org && !skip.includes(name)) {
-      const imports = Object.keys(designs[name][capitalize(name)].patternConfig.options)
+  for (const [name, design] of Object.entries(designs)) {
+    if (!skip.includes(name)) {
+      const imports = Object.keys(designs[name].patternConfig.options)
         .filter(
-          (optName) =>
-            optionType(designs[name][capitalize(name)].patternConfig.options[optName]) !==
-            'constant'
+          (optName) => optionType(designs[name].patternConfig.options[optName]) !== 'constant'
         )
         .sort()
         .map(
@@ -122,34 +153,31 @@ async function generateDesignsDocs() {
         ...imports,
         '',
       ]
-      const i18n = designs[name].i18n.en
-      const structure = optionsMenuStructure(
-        designs[name][capitalize(name)].patternConfig.options,
-        {},
-        true
-      )
+      const structure = optionsMenuStructure(designs[name].patternConfig.options, {}, true)
       for (const [key, val] of Object.entries(structure)) {
         content.push(`## ${optiongroupTranslations[key] || key} {#${key}}`)
         if (val.isGroup) {
           for (const [skey, sval] of Object.entries(val)) {
             if (!sval.isGroup && optionType(sval) !== 'constant') {
               content.push(
-                `### ${i18n.o[skey]?.t} {#${skey.toLowerCase()}}`,
+                `### ${i18n[name].en.o[skey]?.t} {#${skey.toLowerCase()}}`,
                 '',
-                `**${i18n.o[skey]?.d}**`,
+                `**${i18n[name].en.o[skey]?.d}**`,
                 ...optionInfo(sval),
                 '',
                 `<${capitalize(skey.toLowerCase())} />`,
                 ''
               )
             } else if (sval.isGroup) {
-              content.push(`### ${i18n.o[skey]?.t || capitalize(skey)} {#${skey.toLowerCase()}}`)
+              content.push(
+                `### ${i18n[name].en.o[skey]?.t || capitalize(skey)} {#${skey.toLowerCase()}}`
+              )
               for (const [sskey, ssval] of Object.entries(sval)) {
                 if (!ssval.isGroup && optionType(ssval) !== 'constant') {
                   content.push(
-                    `#### ${i18n.o[sskey]?.t || sskey} {#${sskey.toLowerCase()}}`,
+                    `#### ${i18n[name].en.o[sskey]?.t || sskey} {#${sskey.toLowerCase()}}`,
                     '',
-                    `**${i18n.o[sskey]?.d}**`,
+                    `**${i18n[name].en.o[sskey]?.d}**`,
                     ...optionInfo(ssval),
                     '',
                     `<${capitalize(sskey.toLowerCase())} />`,
@@ -164,7 +192,7 @@ async function generateDesignsDocs() {
         await ensuredir(dir)
         fs.writeFileSync(`${dir}/readme.mdx`, content.join('\n'))
       }
-      fs.writeFileSync(`./src/pages/designs/${name}.md`, name)
+      fs.writeFileSync(`./docs/designs/${name}.mdx`, designPageTemplate(name))
     }
   }
 }

@@ -3,7 +3,9 @@ title: 'Noble body block'
 sidebar_label: Noble body block
 ---
 
-<DesignInfo design="noble" />
+import { DocusaurusDoc } from '@freesewing/react/components/Docusaurus'
+import { DesignInfo } from '@freesewing/react/components/Collection'
+import Notes from '@site/docs/docs/designs/noble/_notes.mdx'
 
 :::warning Noble is a block, not a pattern
 
@@ -14,17 +16,13 @@ different things.
 Blocks are typically not made as-is but rather serve as a basis for other patterns.
 :::
 
+<DocusaurusDoc>
+  <DesignInfo design="noble" noDocsLink />
+</DocusaurusDoc>
+
 ## Designer Notes {#notes}
 
-Noble is a design for a block with prince(ss) seams instead of darts. It is
-based on `bella`.
-
-This is not intended to be made as is, but merely to base other designs on.
-This is also why I made it. I wanted to make a coat, and for it I needed a
-block with prince(ss) seams. So I made that first, and the coat would come
-later.
-
-Wouter
+<Notes />
 
 ## What You Need {#needs}
 

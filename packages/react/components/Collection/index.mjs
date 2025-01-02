@@ -426,7 +426,7 @@ export const DesignInfo = ({ Link = false, design = false, noDocsLink = false })
           <div className="tw-mt-2 tw-text-sm tw-opacity-70 tw-font-medium">Difficulty</div>
           <Difficulty score={about[design].difficulty} />
 
-          {optionalMeasurements[design] ? (
+          {optionalMeasurements[design].length > 0 ? (
             <>
               <div className="tw-mt-2 tw-text-sm tw-opacity-70 tw-font-medium">
                 Optional Measurements
@@ -434,7 +434,11 @@ export const DesignInfo = ({ Link = false, design = false, noDocsLink = false })
               <div className="">
                 {optionalMeasurements[design].map((m, i) => (
                   <>
-                    <Link href={`/docs/measurements/${m.toLowerCase()}`} key={m}>
+                    <Link
+                      href={`/docs/measurements/${m.toLowerCase()}`}
+                      key={m}
+                      className={linkClasses}
+                    >
                       {measurementsTranslations[m]}
                     </Link>
                     {i < optionalMeasurements[design].length - 1 ? <span>, </span> : null}
@@ -444,7 +448,7 @@ export const DesignInfo = ({ Link = false, design = false, noDocsLink = false })
             </>
           ) : null}
 
-          {requiredMeasurements[design] ? (
+          {requiredMeasurements[design].length > 0 ? (
             <>
               <div className="tw-mt-2 tw-text-sm tw-opacity-70 tw-font-medium">
                 Required Measurements
@@ -452,7 +456,11 @@ export const DesignInfo = ({ Link = false, design = false, noDocsLink = false })
               <div className="">
                 {requiredMeasurements[design].map((m, i) => (
                   <>
-                    <Link href={`/docs/measurements/${m.toLowerCase()}`} key={m}>
+                    <Link
+                      href={`/docs/measurements/${m.toLowerCase()}`}
+                      key={m}
+                      className={linkClasses}
+                    >
                       {measurementsTranslations[m]}
                     </Link>
                     {i < requiredMeasurements[design].length - 1 ? <span>, </span> : null}

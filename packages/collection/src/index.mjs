@@ -57,6 +57,8 @@ import { Walburga as walburga } from '@freesewing/walburga'
 import { Waralee as waralee } from '@freesewing/waralee'
 import { Yuri as yuri } from '@freesewing/yuri'
 import { Lily as lily } from '@freesewing/lily'
+// Translations
+import { i18n as translations } from './i18n.mjs'
 // Examples
 import { designExampleIds, designExampleHrefs } from './examples.mjs'
 
@@ -169,6 +171,11 @@ export const developers = Array.from(_devs)
 export const designers = Array.from(_dess)
   .filter((t) => (t ? true : false))
   .sort()
+
+/*
+ * Export the translations
+ */
+export const i18n = translations
 
 /*
  * These are examples
