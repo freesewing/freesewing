@@ -6,20 +6,18 @@ import { Units } from '@freesewing/react/components/Account'
 export default function WelcomeNewsletterPage() {
   return (
     <Layout title="Welcome to FreeSewing" description="Just a few questions to set up your account">
-      <div className="tailwind-container">
-        <div className="text-base-content mdx max-w-prose text-base-content max-w-prose text-current xl:pl-4 mx-auto my-8">
-          <h1>Units</h1>
-          <p>
-            FreeSewing supports both metric units, and the imperial system.
-            <br />
-            <small>The latter one slightly reluctant, but support it we do.</small>
-          </p>
-          <DocusaurusDoc>
-            <RoleBlock user>
-              <Units welcome />
-            </RoleBlock>
-          </DocusaurusDoc>
-        </div>
+      <div className="tw-text-base-content tw-max-w-prose tw-text-base-content tw-text-current tw-mx-auto tw-my-8">
+        <h1>Units</h1>
+        <p>
+          FreeSewing supports both metric units, and the imperial system.
+          <br />
+          <small>The latter one slightly reluctant, but support it we do.</small>
+        </p>
+        <DocusaurusDoc>
+          <RoleBlock user>
+            <Units welcome />
+          </RoleBlock>
+        </DocusaurusDoc>
       </div>
     </Layout>
   )

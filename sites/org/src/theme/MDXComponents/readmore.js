@@ -1,6 +1,7 @@
 import React from 'react'
 import DocCardList from '@theme/DocCardList'
 import { useCurrentSidebarCategory } from '@docusaurus/theme-common'
+import Link from '@docusaurus/Link'
 
 export const ReadMore = ({ cards = false }) =>
   cards ? (

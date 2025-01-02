@@ -31,7 +31,7 @@ export const _Tab = ({
 }) => (
   <button
     className={`tw-text-lg tw-font-bold tw-capitalize tw-daisy-tab tw-daisy-tab-bordered tw-grow
-    ${activeTab === id ? 'daisy-tab-active' : ''}`}
+    ${activeTab === id ? 'tw-daisy-tab-active' : ''}`}
     onClick={() => setActiveTab(id)}
   >
     {label ? label : id}

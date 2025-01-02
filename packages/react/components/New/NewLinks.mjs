@@ -16,16 +16,20 @@ const NewLink = ({ title, Icon, description, href, Link }) => {
   const linkProps = {
     href,
     className:
-      'p-8 -ml-4 -mr-4 md:m-0 rounded-none md:rounded-xl md:shadow hover:bg-secondary bg-base-200 hover:bg-opacity-10 w-full max-w-lg hover:no-underline',
+      'tw-p-8 tw--ml-4 tw--mr-4 md:tw-m-0 tw-rounded-none md:tw-rounded-xl ' +
+      'md:tw-shadow hover:tw-bg-secondary tw-bg-base-200 hover:tw-bg-opacity-10 ' +
+      'tw-w-full tw-max-w-lg hover:tw-no-underline',
   }
 
   const inner = (
     <>
-      <h4 className="flex flex-row items-start justify-between w-full m-0 p-0 text-inherit">
+      <h4 className="tw-flex tw-flex-row tw-items-start tw-justify-between tw-w-full tw-m-0 tw-p-0 tw-text-inherit">
         <span>{title}</span>
-        <Icon className="w-12 h-12 -mt-2" stroke={1.5} />
+        <Icon className="tw-w-12 tw-h-12 tw--mt-2" stroke={1.5} />
       </h4>
-      <div className={`normal-case text-base font-medium text-left pt-2 text-inherit`}>
+      <div
+        className={`tw-normal-case tw-text-base tw-font-medium tw-text-left tw-pt-2 tw-text-inherit`}
+      >
         {description}
       </div>
     </>
@@ -76,8 +80,8 @@ export const NewLinks = ({ Link = false }) => {
   const { account } = useAccount()
 
   return (
-    <div className="w-full max-w-7xl">
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 mb-8">
+    <div className="tw-w-full tw-max-w-7xl">
+      <div className="tw-grid tw-grid-cols-1 xl:tw-grid-cols-2 tw-gap-4 tw-mb-8">
         {Object.entries(newLinks).map(([href, link]) => (
           <NewLink key={href} href={href} {...link} />
         ))}

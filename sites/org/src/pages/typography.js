@@ -34,7 +34,7 @@ const TypographyPage = ({ page }) => {
           <h6>This is h6</h6>
           {p} {p}
           <h2>Links and buttons</h2>
-          <p>
+          <p className="markdown">
             A regular link <a href="#">looks like this</a>, whereas buttons look like this:
           </p>
           <h3>Main button styles</h3>
@@ -91,7 +91,6 @@ const TypographyPage = ({ page }) => {
             </button>
           </div>
           <h2>Tabs</h2>
-          <h2>Docusaurus Tabs</h2>
           <Tabs>
             <TabItem value="1" label="Tab 1">
               <p>This is 1</p>
@@ -106,19 +105,6 @@ const TypographyPage = ({ page }) => {
               <p>This is 4</p>
             </TabItem>
           </Tabs>
-          <h2>DaisyUI Tabs</h2>
-          <p>Do not use these. The tab elements clash with the docusaurus styles.</p>
-          <div role="tablist" className="tw-daisy-tabs tw-daisy-tabs-bordered">
-            <a role="tab" className="tw-daisy-tab">
-              Tab 1
-            </a>
-            <a role="tab" className="tw-daisy-tab tw-daisy-tab-active">
-              Tab 2
-            </a>
-            <a role="tab" className="tw-daisy-tab">
-              Tab 3
-            </a>
-          </div>
         </div>
       </div>
     </Layout>

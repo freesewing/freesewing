@@ -6,38 +6,53 @@
 
 /* You can override the default Infima variables here. */
 :root {
+  /* Colors from tailwind that we use here*/
+  --sky-300: #7dd3fc;
+  --sky-400: #38bdf8;
+  --sky-500: #0ea5e9;
+  --sky-600: #0284c7;
+  --sky-700: #0369a1;
+  --pink-300: #f9a8d4;
+  --pink-500: #ec4899;
+  --neutral-50: #fafafa;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #e5e5e5;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --neutral-900: #0a0a0a;
+
   /* Color Palette */
-  --ifm-color-primary: hsl(var(--sky-500));
-  --ifm-color-primary-dark: hsl(var(--sky-600));
-  --ifm-color-primary-light: hsl(var(--sky-400));
-  --ifm-color-secondary: hsl(var(--sky-300));
-  --ifm-color-tertiary: hsl(var(--pink-500));
+  --ifm-color-primary: var(--sky-500);
+  --ifm-color-primary-dark: var(--sky-600);
+  --ifm-color-primary-light: var(--sky-400);
+  --ifm-color-secondary: var(--sky-300);
+  --ifm-color-tertiary: var(--pink-500);
 
   /* Text Colors */
-  --ifm-font-color-base: hsl(var(--neutral-900));
-  --ifm-font-color-light: hsl(var(--neutral-50));
-  --ifm-font-color-secondary: hsl(var(--sky-500));
+  --ifm-font-color-base: var(--neutral-900);
+  --ifm-font-color-light: var(--neutral-50);
+  --ifm-font-color-secondary: var(--sky-500);
 
   /* State colors */
-  --ifm-color-success: hsl(var(--sky-400));
+  --ifm-color-success: var(--sky-400);
 
   /* Background Colors */
   --ifm-background-color: #fcfcfc;
-  --ifm-background-color-secondary: hsl(var(--neutral-100));
+  --ifm-background-color-secondary: var(--neutral-100);
 
   /* Borders and Outlines */
-  --ifm-border-color: hsl(var(--neutral-200));
-  --ifm-outline-color: hsl(var(--pink-300));
+  --ifm-border-color: var(--neutral-200);
+  --ifm-outline-color: var(--pink-300);
 
   /* Link colors */
-  --ifm-link-color: hsl(var(--sky-600));
-  --ifm-link-hover-color: hsl(var(--sky-700));
+  --ifm-link-color: var(--sky-600);
+  --ifm-link-hover-color: var(--sky-700);
 
   /* Button Colors */
-  --ifm-button-color: hsl(var(--neutral-50));
-  --ifm-button-background-color: hsl(var(--sky-500));
-  --ifm-button-background-hover-color: hsl(var(--sky-700));
-  --ifm-button-border-color: hsl(var(--sky-600));
+  --ifm-button-color: var(--neutral-50);
+  --ifm-button-background-color: var(--sky-500);
+  --ifm-button-background-hover-color: var(--sky-700);
+  --ifm-button-border-color: var(--sky-600);
 
   /* Font Sizes and Spacing */
   --ifm-font-size-base: 16px;
@@ -46,20 +61,20 @@
   --ifm-spacing-base: 16px;
 
   /* Sidebar/Navigation Customizations */
-  --ifm-sidebar-background-color: hsl(var(--neutral-50));
-  --ifm-sidebar-link-color: hsl(var(--neutral-500));
-  --ifm-sidebar-link-hover-color: hsl(var(--sky-600));
-  --ifm-sidebar-active-link-color: hsl(var(--sky-600));
+  --ifm-sidebar-background-color: var(--neutral-50);
+  --ifm-sidebar-link-color: var(--neutral-500);
+  --ifm-sidebar-link-hover-color: var(--sky-600);
+  --ifm-sidebar-active-link-color: var(--sky-600);
   --ifm-sidebar-item-spacing: 8px;
 
   /* Navbar Customizations */
-  --ifm-navbar-background-color: hsl(var(--neutral-50));
-  --ifm-navbar-link-color: hsl(var(--neutral-900));
-  --ifm-navbar-link-hover-color: hsl(var(--sky-500));
+  --ifm-navbar-background-color: var(--neutral-50);
+  --ifm-navbar-link-color: var(--neutral-900);
+  --ifm-navbar-link-hover-color: var(--sky-500);
 
   /* Footer colors */
-  --ifm-footer-background-color: hsl(var(--neutral-100));
-  --ifm-footer-link-color: hsl(var(--sky-600));
+  --ifm-footer-background-color: var(--neutral-100);
+  --ifm-footer-link-color: var(--sky-600);
 
   /*
    * These are variables to style FreeSewing SVG output (drafts, examples, and so on)
@@ -108,31 +123,31 @@
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   /* Text Colors */
-  --ifm-font-color-base: hsl(var(--neutral-200));
-  --ifm-font-color-light: hsl(var(--neutral-50));
+  --ifm-font-color-base: var(--neutral-200);
+  --ifm-font-color-light: var(--neutral-50);
 
   /* Background Colors */
-  --ifm-background-color: hsl(var(--neutral-900));
-  --ifm-background-color-secondary: hsl(var(--neutral-100));
+  --ifm-background-color: var(--neutral-900);
+  --ifm-background-color-secondary: var(--neutral-100);
 
   /* Borders and Outlines */
-  --ifm-border-color: hsl(var(--neutral-200));
+  --ifm-border-color: var(--neutral-200);
 
   /* Link colors */
-  --ifm-link-color: hsl(var(--sky-400));
-  --ifm-link-hover-color: hsl(var(--sky-500));
+  --ifm-link-color: var(--sky-400);
+  --ifm-link-hover-color: var(--sky-500);
 
   /* Button Colors */
-  --ifm-button-color: hsl(var(--neutral-600));
+  --ifm-button-color: var(--neutral-600);
 
   /* Navbar Customizations */
-  --ifm-navbar-background-color: hsl(var(--neutral-900));
-  --ifm-navbar-link-color: hsl(var(--neutral-50));
-  --ifm-navbar-link-hover-color: hsl(var(--sky-300));
+  --ifm-navbar-background-color: var(--neutral-900);
+  --ifm-navbar-link-color: var(--neutral-50);
+  --ifm-navbar-link-hover-color: var(--sky-300);
 
   /* Footer colors */
-  --ifm-footer-background-color: hsl(var(--neutral-900));
-  --ifm-footer-link-color: hsl(var(--sky-300));
+  --ifm-footer-background-color: var(--neutral-900);
+  --ifm-footer-link-color: var(--sky-300);
 }
 
 /*
@@ -163,7 +178,7 @@ div.footer__copyright a {
 }
 
 .technique {
-  background: hsl(var(--pink-500));
+  background: var(--pink-500);
 }
 
 p > figure.mdx {
@@ -194,6 +209,18 @@ figcaption.mdx {
 }
 .avatar > div {
   aspect-ratio: auto;
+}
+
+.markdown a:not([class]) {
+  color: var(--ifm-link-color);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.markdown a:not([class]):hover {
+  color: var(--ifm-link-hover-color);
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
 }
 
 /*
