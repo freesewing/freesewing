@@ -30,5 +30,5 @@ export const IconButton = ({
 }
 
 const staticLinkClasses =
-  'tw-flex tw-flex-row tw-gap-2 lg:tw-gap-12 tw-items-center ' +
-  'tw-justify-between tw-w-full lg:tw-w-auto tw-daisy-btn hover:tw-no-underline tw-capitalize tw-my-2'
+  'tw-flex tw-flex-row tw-gap-2 lg:tw-gap-6 tw-items-center tw-grow ' +
+  'tw-justify-between tw-w-full md:tw-w-auto tw-daisy-btn hover:tw-no-underline tw-capitalize'

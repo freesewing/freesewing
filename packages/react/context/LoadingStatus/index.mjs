@@ -16,7 +16,7 @@ const timeout = 2
  * The React component displaying the loading status
  */
 const LoadingStatus = ({ loadingStatus }) => {
-  const [fade, setFade] = useState('opacity-100')
+  const [fade, setFade] = useState('tw-opacity-100')
   const [timer, setTimer] = useState(false)
 
   useEffect(() => {
@@ -40,23 +40,23 @@ const LoadingStatus = ({ loadingStatus }) => {
   if (loadingStatus[2]) {
     color = loadingStatus[3] ? 'success' : 'error'
     icon = loadingStatus[3] ? (
-      <OkIcon stroke={4} className="w-8 h-8" />
+      <OkIcon stroke={4} className="tw-w-8 tw-h-8" />
     ) : (
-      <WarningIcon className="w-8 h-8" stroke={2} />
+      <WarningIcon className="tw-w-8 tw-h-8" stroke={2} />
     )
   }
 
   return (
     <div
-      className="fixed bottom-14 md:top-28 left-0 w-full z-50 md:px-4 md:mx-auto"
+      className="tw-fixed tw-bottom-14 md:tw-top-28 tw-left-0 tw-w-full tw-z-50 md:tw-px-4 md:tw-mx-auto"
       style={{ zIndex: 500 }}
     >
       <div
-        className={`w-full md:max-w-2xl m-auto bg-${color} flex flex-row items-center gap-4 p-4 px-4 ${fade}
-        transition-opacity delay-[${timeout * 1000 - 400}ms] duration-300
-        md:rounded-lg shadow text-secondary-content text-lg lg:text-xl font-medium md:bg-opacity-90`}
+        className={`tw-w-full md:tw-max-w-2xl tw-m-auto tw-bg-${color} tw-flex tw-flex-row tw-items-center tw-gap-4 tw-p-4 tw-px-4 ${fade}
+        tw-transition-opacity tw-delay-[${timeout * 1000 - 400}ms] tw-duration-300
+        md:tw-rounded-lg tw-shadow tw-text-secondary-content tw-text-lg lg:tw-text-xl tw-font-medium md:tw-bg-opacity-90`}
       >
-        <span className="shrink-0">{icon}</span>
+        <span className="tw-shrink-0">{icon}</span>
         {loadingStatus[1]}
       </div>
     </div>
@@ -67,9 +67,9 @@ const LoadingStatus = ({ loadingStatus }) => {
  * An animated loading state
  */
 const LoadingProgress = ({ val = 0, max = 1, msg }) => (
-  <div className="flex flex-col gap-2 w-full grow-0">
+  <div className="tw-flex tw-flex-col tw-gap-2 tw-w-full tw-grow-0">
     {msg}
-    <progress className="progress progress-white" value={val} max={max}></progress>
+    <progress className="tw-progress tw-progress-white" value={val} max={max}></progress>
   </div>
 )
 

@@ -15,7 +15,7 @@ import Mermaid from '@theme/Mermaid'
 import Tabs from '@theme/Tabs'
 import TabItem from '@theme/TabItem'
 // Custom FreeSewing components
-import { DesignInfo } from './design-info.mjs'
+//import { DesignInfo } from './design-info.mjs'
 import { Example } from './example.mjs'
 import { Legend } from './legend.mjs'
 import { MeasurementImage } from './measurement-image.mjs'
@@ -44,7 +44,7 @@ const MDXComponents = {
   Tabs,
   TabItem,
   // Custom FreeSewing components
-  DesignInfo,
+  // DesignInfo,
   Example,
   Legend,
   MeasurementImage,

@@ -22,7 +22,7 @@ export const horFlexClassesNoSm =
  * These classes are what makes a link a link
  */
 export const linkClasses =
-  'underline decoration-2 hover:decoration-4 text-secondary hover:text-secondary-focus'
+  'tw-underline tw-decoration-2 hover:tw-decoration-4 tw-text-secondary hover:tw-text-secondary-focus tw-font-medium'
 
 /*
  * FUNCTIONS

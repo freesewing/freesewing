@@ -51,6 +51,7 @@ sites/org/src/lib/i18n.mjs
 sites/org/docs/designs/*/options/readme.mdx
 sites/org/authors.json
 sites/org/showcase-tags.mjs
+sites/org/design-examples.mjs
 
 # sde auto-generated content
 sites/sde/public/android-chrome-192x192.png

@@ -3,13 +3,13 @@ import path from 'path'
 import yaml from 'yaml'
 import designInfo from '../../../config/software/designs.json' with { type: 'json' }
 import { designs as designTranslations } from '../../../i18n/designs.mjs'
+import { measurements as measurementsTranslations } from '@freesewing/i18n'
 
 /*
  * Load translations as there's no YAML loader
  * We are loading this sync because NodeJS 20 does not support
  * top-level await out of the box
  */
-const measurementsTranslations = loadYaml('../../i18n/measurements.yaml')
 const optionGroupTranslations = loadYaml('../../i18n/optiongroups.yaml')
 
 /*

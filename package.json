@@ -97,7 +97,8 @@
     "c8": "^10.1.2",
     "eslint-config-next": "^14.0.1",
     "glob": "^10.3.10",
-    "rehype-format": "^5.0.0"
+    "rehype-format": "^5.0.0",
+    "rehype-stringify": "^10.0.1"
   },
   "engines": {
     "node": ">=20.0"

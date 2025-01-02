@@ -44,22 +44,22 @@ export const Popout = (props) => {
 
   return props.compact ? (
     <div
-      className={`relative ${
-        props.dense ? 'my-1' : 'my-8'
-      } bg-${color} bg-opacity-5 -ml-4 -mr-4 sm:ml-0 sm:mr-0 ${className}`}
+      className={`tw-relative ${
+        props.dense ? 'tw-my-1' : 'tw-my-8'
+      } tw-bg-${color} tw-bg-opacity-5 tw--ml-4 tw--mr-4 sm:tw-ml-0 sm:tw-mr-0 ${className}`}
     >
       <div
         className={`
-          border-y-4 sm:border-0 sm:border-l-4 px-4
-          shadow text-base border-${color}
-          flex flex-row items-center
+          tw-border-y-4 sm:tw-border-0 sm:tw-border-l-4 tw-px-4
+          tw-shadow tw-text-base border-${color}
+          tw-flex tw-flex-row tw-items-center
         `}
       >
-        <div className={`font-bold uppercase text-${color}`}>
+        <div className={`tw-font-bold tw-uppercase tw-text-${color}`}>
           {props.title || (
             <>
               <span>{type.toUpperCase()}</span>
-              <span className="px-3">|</span>
+              <span className="tw-px-3">|</span>
             </>
           )}
         </div>
@@ -68,21 +68,23 @@ export const Popout = (props) => {
     </div>
   ) : (
     <div
-      className={`relative my-8 bg-${color} bg-opacity-5 -ml-4 -mr-4 sm:ml-0 sm:mr-0 ${className}`}
+      className={`tw-relative tw-my-8 tw-bg-${color} tw-bg-opacity-5 tw--ml-4 tw--mr-4 sm:tw-ml-0 sm:tw-mr-0 ${className}`}
     >
       <div
         className={`
-          border-y-4 sm:border-0 sm:border-l-4 px-6 sm:px-8 py-4 sm:py-2
-          shadow text-base border-${color}
+          tw-border-y-4 sm:tw-border-0 sm:tw-border-l-4 tw-px-6 sm:tw-px-8 tw-py-4 sm:tw-py-2
+          tw-shadow tw-text-base tw-border-${color} tw-border-solid
         `}
       >
-        <div className={`font-bold flex flex-row gap-1 items-end justify-between`}>
+        <div
+          className={`tw-font-bold tw-flex tw-flex-row tw-gap-1 tw-items-end tw-justify-between`}
+        >
           <div>
-            <span className={`font-bold uppercase text-${color}`}>
+            <span className={`tw-font-bold tw-uppercase tw-text-${color}`}>
               {type === 'tldr' ? 'TL;DR' : type.toUpperCase()}
             </span>
-            <span className={`font-normal text-base text-${color}`}>
-              {type === 'comment' && (
+            <span className={`tw-font-normal tw-text-base text-${color}`}>
+              {type === 'tw-comment' && (
                 <>
                   {' '}
                   by <b>{props.by}</b>
@@ -91,13 +93,15 @@ export const Popout = (props) => {
             </span>
           </div>
           {props.hideable && (
-            <button onClick={() => setHide(true)} className="hover:text-secondary" title="Close">
+            <button onClick={() => setHide(true)} className="hover:tw-text-secondary" title="Close">
               <CloseIcon />
             </button>
           )}
         </div>
-        <div className="py-1 first:mt-0 popout-content">{props.children}</div>
-        {type === 'comment' && <div className={`font-bold italic text-${color}`}>{props.by}</div>}
+        <div className="tw-py-1 first:tw-mt-0 tw-popout-content">{props.children}</div>
+        {type === 'comment' && (
+          <div className={`tw-font-bold tw-italic text-${color}`}>{props.by}</div>
+        )}
       </div>
     </div>
   )

@@ -57,6 +57,7 @@ export const theme = {
   // secondary-focus: The :hover link color for default backgrounds. Or:
   // secondary-focus: An alternative link color for on dark backgrounds
   'secondary-focus': colors.sky['500'],
+  '--ifm-link-hover-color': colors.sky['500'],
   // secondary-content: The text color on a secondary button
   'secondary-content': colors.neutral['50'],
 

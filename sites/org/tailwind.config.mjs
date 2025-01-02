@@ -9,6 +9,7 @@ export default {
     '../../packages/react/components/**/*.mjs',
     '../../packages/react/context/**/*.mjs',
     '../../packages/react/hooks/**/*.mjs',
+    '../../packages/react/lib/tailwind-force.mjs',
     './tailwind-force.html',
   ],
   plugins: [daisyui],

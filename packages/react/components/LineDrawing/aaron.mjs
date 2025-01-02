@@ -42,7 +42,7 @@ export const AaronFront = ({ className, stroke = 1 }) => (
  * @param {number} props.stroke - The stroke width to apply
  */
 export const AaronBack = ({ className, stroke = 1 }) => (
-  <LineDrawingWrapper viewBox="74 0 74 119" {...props}>
+  <LineDrawingWrapper viewBox="51 0 119 119" {...{ className }}>
     <Back stroke={stroke * strokeScale} />
   </LineDrawingWrapper>
 )

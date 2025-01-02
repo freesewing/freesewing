@@ -2,7 +2,7 @@ import fs from 'fs'
 import { glob } from 'glob'
 import matter from 'gray-matter'
 
-const loadTagsAndAuthors = async () => {
+const loadExamplesTagsAndAuthors = async () => {
   const lists = {
     blog: await glob('./blog/*/index.mdx'),
     newsletter: await glob('./newsletter/*/index.mdx'),
@@ -11,6 +11,7 @@ const loadTagsAndAuthors = async () => {
 
   const tags = []
   const authors = []
+  const examples = {}
   for (const type of Object.keys(lists)) {
     for (const file of lists[type]) {
       const content = await fs.readFileSync(file, 'utf-8')
@@ -26,12 +27,19 @@ const loadTagsAndAuthors = async () => {
       } else if (type === 'showcase') console.warn('Missing authors in showcase post:', file)
       else if (type === 'blog') console.warn('Missing authors in blog post:', file)
       else if (type === 'newsletter') console.warn('Missing authors in newsletter edition:', file)
+      if (type === 'showcase') {
+        for (const tag of data.data.tags) {
+          if (typeof examples[tag] === 'undefined') examples[tag] = []
+          examples[tag].push({ title: data.data.title, id: file.split('/')[1] })
+        }
+      }
     }
   }
 
   return {
     authors: [...new Set(authors.sort())], // Make them unique
     tags: [...new Set(tags.sort())], // Make them unique
+    examples,
   }
 }
 
@@ -61,7 +69,7 @@ const loadUser = async (id) => {
 
 async function prebuild() {
   const all = {}
-  const { authors, tags } = await loadTagsAndAuthors()
+  const { authors, examples, tags } = await loadExamplesTagsAndAuthors()
   for (const author of authors) {
     const user = await loadUser(author)
     if (user.profile.id) all[user.profile.id] = userAsAuthor(user)
@@ -71,6 +79,7 @@ async function prebuild() {
     `./showcase-tags.mjs`,
     `export const tags = ${JSON.stringify([...new Set(tags.sort())])}`
   )
+  fs.writeFileSync(`./design-examples.mjs`, `export const examples = ${JSON.stringify(examples)}`)
 }
 
 prebuild()

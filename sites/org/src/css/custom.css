@@ -22,7 +22,7 @@
   --ifm-color-success: hsl(var(--sky-400));
 
   /* Background Colors */
-  --ifm-background-color: hsl(var(--neutral-50));
+  --ifm-background-color: #fcfcfc;
   --ifm-background-color-secondary: hsl(var(--neutral-100));
 
   /* Borders and Outlines */
@@ -232,3 +232,7 @@ a.daisy-btn-neutral:hover {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+nav.navbar {
+  background-color: var(--ifm-background-color);
+}
