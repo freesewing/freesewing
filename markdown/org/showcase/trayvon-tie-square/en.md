@@ -3,7 +3,7 @@ title: "Trayvon Tie + Square"
 caption: "outfit for my cousin's wedding"
 date: 20240709
 intro: "Custom Tie and Square"
-author: GursMan123
+author: 83912
 designs: ["trayvon"]
 ---
 
