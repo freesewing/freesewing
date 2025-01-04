@@ -64,7 +64,7 @@ export const testPatternConfig = (Pattern, about) => {
       }
     })
     it(`  - 'dfficulty' should be set and be a [1-5] number`, () => {
-      expect(typeof abbout.difficulty).to.equal('number')
+      expect(typeof about.difficulty).to.equal('number')
       expect([1, 2, 3, 4, 5].indexOf(about.difficulty) === -1).to.be.false
     })
 
