@@ -13,5 +13,7 @@
     "curved-seam",
     "hem",
     "welt-pocket"
-  ]
+  ],
+  "version": "3.3.0-rc.1",
+  "pkg": "@freesewing/waralee"
 }

@@ -1,5 +1,5 @@
 // This file is auto-generated | Any changes you make will be overwritten.
-import { Noble, i18n } from '../src/index.mjs'
+import { Noble, about, i18n } from '../src/index.mjs'
 
 // Shared tests
 import { testPatternConfig } from '../../../tests/designs/config.mjs'
@@ -8,7 +8,7 @@ import { testPatternDrafting } from '../../../tests/designs/drafting.mjs'
 import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
 
 // Test config
-testPatternConfig(Noble)
+testPatternConfig(Noble, about)
 
 // Test translation
 testPatternI18n(Noble, i18n)

@@ -13,5 +13,7 @@
     "hem",
     "flat-sleeve",
     "knit-band"
-  ]
+  ],
+  "version": "3.3.0-rc.1",
+  "pkg": "@freesewing/teagan"
 }

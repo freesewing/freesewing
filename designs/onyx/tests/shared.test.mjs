@@ -1,5 +1,5 @@
 // This file is auto-generated | Any changes you make will be overwritten.
-import { Onyx, i18n } from '../src/index.mjs'
+import { Onyx, about, i18n } from '../src/index.mjs'
 
 // Shared tests
 import { testPatternConfig } from '../../../tests/designs/config.mjs'
@@ -8,7 +8,7 @@ import { testPatternDrafting } from '../../../tests/designs/drafting.mjs'
 import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
 
 // Test config
-testPatternConfig(Onyx)
+testPatternConfig(Onyx, about)
 
 // Test translation
 testPatternI18n(Onyx, i18n)

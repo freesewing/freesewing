@@ -6,5 +6,7 @@
   "design": "Wouter Van Wageningen",
   "difficulty": 2,
   "tags": [],
-  "techniques": []
+  "techniques": [],
+  "version": "3.3.0-rc.1",
+  "pkg": "@freesewing/otis"
 }

@@ -1,5 +1,5 @@
 // This file is auto-generated | Any changes you make will be overwritten.
-import { Trayvon, i18n } from '../src/index.mjs'
+import { Trayvon, about, i18n } from '../src/index.mjs'
 
 // Shared tests
 import { testPatternConfig } from '../../../tests/designs/config.mjs'
@@ -8,7 +8,7 @@ import { testPatternDrafting } from '../../../tests/designs/drafting.mjs'
 import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
 
 // Test config
-testPatternConfig(Trayvon)
+testPatternConfig(Trayvon, about)
 
 // Test translation
 testPatternI18n(Trayvon, i18n)

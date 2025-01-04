@@ -11,5 +11,7 @@
   ],
   "techniques": [
     "hem"
-  ]
+  ],
+  "version": "3.3.0-rc.1",
+  "pkg": "@freesewing/walburga"
 }

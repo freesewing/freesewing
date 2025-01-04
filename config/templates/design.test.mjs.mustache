@@ -4,7 +4,7 @@
 //    Dollar signs are allowed in EcmaScript identifier names,
 //    which is helpful when running unrendered Mustache templates through eslint.
 //}}{{=$$ $$=}}
-import { $$Name$$, i18n } from '../src/index.mjs'
+import { $$Name$$, about, i18n } from '../src/index.mjs'
 
 // Shared tests
 import { testPatternConfig } from '../../../tests/designs/config.mjs'
@@ -13,7 +13,7 @@ import { testPatternDrafting } from '../../../tests/designs/drafting.mjs'
 import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
 
 // Test config
-testPatternConfig($$Name$$)
+testPatternConfig($$Name$$, about)
 
 // Test translation
 testPatternI18n($$Name$$, i18n)

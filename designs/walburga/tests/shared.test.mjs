@@ -1,5 +1,5 @@
 // This file is auto-generated | Any changes you make will be overwritten.
-import { Walburga, i18n } from '../src/index.mjs'
+import { Walburga, about, i18n } from '../src/index.mjs'
 
 // Shared tests
 import { testPatternConfig } from '../../../tests/designs/config.mjs'
@@ -8,7 +8,7 @@ import { testPatternDrafting } from '../../../tests/designs/drafting.mjs'
 import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
 
 // Test config
-testPatternConfig(Walburga)
+testPatternConfig(Walburga, about)
 
 // Test translation
 testPatternI18n(Walburga, i18n)

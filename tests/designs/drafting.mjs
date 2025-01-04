@@ -1,5 +1,5 @@
 import { adult, doll, giant } from '@freesewing/models'
-import { getShortName, isUtilityDesign } from './config.mjs'
+import { getShortName } from './config.mjs'
 import { expect } from 'chai'
 import { timingPlugin } from '@freesewing/plugin-timing'
 
@@ -36,18 +36,40 @@ export const testPatternDrafting = (Pattern, log = false) => {
   /*
    * Draft pattern for different models
    */
-  if (!isUtilityDesign(design)) {
-    describe('Draft for humans:', function () {
+  describe('Draft for humans:', function () {
+    this.timeout(ciTimeout)
+    for (const type of ['cisFemale', 'cisMale']) {
+      describe(type, () => {
+        for (const size in adult[type]) {
+          it(`  - Drafting for size ${size}`, () => {
+            expect(
+              doesItDraftAndRender(
+                new Pattern({
+                  measurements: adult[type][size],
+                }).use(timingPlugin),
+                log
+              )
+            ).to.equal(true)
+          })
+        }
+      })
+    }
+  })
+
+  // Do the same for fantastical models (doll, giant)
+  const fams = { doll, giant }
+  for (const family of ['doll', 'giant']) {
+    describe(`Draft for ${family}:`, function () {
       this.timeout(ciTimeout)
       for (const type of ['cisFemale', 'cisMale']) {
         describe(type, () => {
-          for (const size in adult[type]) {
-            it(`  - Drafting for size ${size}`, () => {
+          for (const size in fams[family][type]) {
+            it(`  - Drafting at ${size}%`, () => {
               expect(
                 doesItDraftAndRender(
                   new Pattern({
-                    measurements: adult[type][size],
-                  }).use(timingPlugin),
+                    measurements: fams[family][type][size],
+                  }),
                   log
                 )
               ).to.equal(true)
@@ -56,44 +78,6 @@ export const testPatternDrafting = (Pattern, log = false) => {
         })
       }
     })
-
-    // Do the same for fantastical models (doll, giant)
-    const fams = { doll, giant }
-    for (const family of ['doll', 'giant']) {
-      describe(`Draft for ${family}:`, function () {
-        this.timeout(ciTimeout)
-        for (const type of ['cisFemale', 'cisMale']) {
-          describe(type, () => {
-            for (const size in fams[family][type]) {
-              it(`  - Drafting at ${size}%`, () => {
-                expect(
-                  doesItDraftAndRender(
-                    new Pattern({
-                      measurements: fams[family][type][size],
-                    }),
-                    log
-                  )
-                ).to.equal(true)
-              })
-            }
-          })
-        }
-      })
-    }
-  } else {
-    // Utility pattern - Just draft them once
-    // FIXME: This hangs when running all tests, not sure why
-    //it(`  - Draft utility pattern`, function() {
-    //  this.timeout(5000);
-    //  expect(
-    //    doesItDraftAndRender(
-    //      new Pattern({
-    //        measurements: adult.cisFemale[34]
-    //      }), log
-    //    )
-    //  ).to.equal(true)
-    //  done()
-    //})
   }
 }
 

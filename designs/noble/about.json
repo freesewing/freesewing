@@ -14,5 +14,7 @@
     "curved-seam",
     "precision",
     "princess-seam"
-  ]
+  ],
+  "version": "3.3.0-rc.1",
+  "pkg": "@freesewing/noble"
 }

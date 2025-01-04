@@ -6,7 +6,8 @@ import chalk from 'chalk'
 import mustache from 'mustache'
 import conf from '../lerna.json' assert { type: 'json' }
 const { version } = conf
-import { software, publishedTypes as types, designs, plugins } from '../config/software/index.mjs'
+import { software, publishedTypes as types, plugins } from '../config/software/index.mjs'
+import { collection } from '@freesewing/collection'
 import { capitalize } from '../packages/utils/src/index.mjs'
 
 // Working directory
@@ -84,7 +85,7 @@ if (!SITEBUILD) {
   if (validate()) log.write(chalk.green(' Done\n'))
 }
 
-// Step 3: Generate package.json, pkg.mjs, README, and CHANGELOG
+// Step 3: Generate package.json, README, and CHANGELOG
 log.write(chalk.blueBright('Generating package-specific files...'))
 for (const pkg of Object.values(software)) {
   fs.writeFileSync(
@@ -93,12 +94,15 @@ for (const pkg of Object.values(software)) {
   )
   if (!SITEBUILD) {
     if (pkg.type !== 'site') {
-      fs.writeFileSync(
-        path.join(cwd, pkg.folder, pkg.name, 'data.mjs'),
-        mustache.render(repo.templates.data, { name: fullName(pkg.name), version })
-      )
       fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'README.md'), readme(pkg))
       fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'CHANGELOG.md'), changelog(pkg))
+      if (collection.includes(pkg.name)) {
+        const aboutFile = path.join(cwd, 'designs', pkg.name, 'about.json')
+        const about = JSON.parse(fs.readFileSync(aboutFile, 'utf-8'))
+        about.version = version
+        about.pkg = `@freesewing/${about.id}`
+        fs.writeFileSync(aboutFile, JSON.stringify(about, null, 2))
+      }
     }
   }
 }
@@ -109,7 +113,7 @@ if (!SITEBUILD) fs.writeFileSync(path.join(repo.path, 'CHANGELOG.md'), changelog
 
 // Step 5: Generate tests for designs and plugins
 if (!SITEBUILD) {
-  for (const design in designs) {
+  for (const design of collection) {
     fs.writeFileSync(
       path.join(repo.path, 'designs', design, 'tests', 'shared.test.mjs'),
       mustache.render(repo.templates.designTests, { name: design, Name: capitalize(design) })

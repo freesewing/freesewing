@@ -1,5 +1,5 @@
 import { adult, doll, giant } from '@freesewing/models'
-import { getShortName, isUtilityDesign } from './config.mjs'
+import { getShortName } from './config.mjs'
 import { expect } from 'chai'
 
 // Some patterns are deprecated and won't support more stringent doll/giant tests
@@ -50,19 +50,41 @@ export const testPatternSampling = (Pattern, log = false) => {
     }
   }
 
-  if (!isUtilityDesign(design)) {
-    /*
-     * Sample different measurements
-     */
-    describe('Sample measurements:', () => {
-      for (const measurement of config.measurements || []) {
-        it(`  Sample ${measurement}:`, () => {
+  /*
+   * Sample different measurements
+   */
+  describe('Sample measurements:', () => {
+    for (const measurement of config.measurements || []) {
+      it(`  Sample ${measurement}:`, () => {
+        expect(
+          doesItSample(
+            new Pattern({
+              sample: {
+                type: 'measurement',
+                measurement,
+              },
+              measurements: adult.cisFemale['36'],
+            }),
+            log
+          )
+        ).to.equal(true)
+      })
+    }
+  })
+
+  /*
+   * Sample different options
+   */
+  describe('Sample options:', () => {
+    for (const option in config.options) {
+      if (typeof config.options[option] === 'object') {
+        it(`  Sample ${option}:`, () => {
           expect(
             doesItSample(
               new Pattern({
                 sample: {
-                  type: 'measurement',
-                  measurement,
+                  type: 'option',
+                  option,
                 },
                 measurements: adult.cisFemale['36'],
               }),
@@ -71,76 +93,52 @@ export const testPatternSampling = (Pattern, log = false) => {
           ).to.equal(true)
         })
       }
-    })
+    }
+  })
 
+  /*
+   * Sample pattern for different models
+   */
+  describe(`Sample human measurements:`, () => {
+    for (const type of ['cisFemale', 'cisMale']) {
+      it(`Sample pattern for adult ${type} size range:`, () => {
+        expect(
+          doesItSample(
+            new Pattern({
+              sample: {
+                type: 'models',
+                models: adult[type],
+              },
+            }),
+            log
+          )
+        ).to.equal(true)
+      })
+    }
+  })
+
+  if (deprecated.indexOf(design) === -1) {
     /*
-     * Sample different options
+     * Sample pattern for doll & giant
      */
-    describe('Sample options:', () => {
-      for (const option in config.options) {
-        if (typeof config.options[option] === 'object') {
-          it(`  Sample ${option}:`, () => {
+    for (const family of ['doll', 'giant']) {
+      describe(`Sample ${family} measurements:`, () => {
+        for (const type of ['cisFemale', 'cisMale']) {
+          it(`Sample pattern for ${family} ${type} size range:`, () => {
             expect(
               doesItSample(
                 new Pattern({
                   sample: {
-                    type: 'option',
-                    option,
+                    type: 'models',
+                    models: family === 'doll' ? doll[type] : giant[type],
                   },
-                  measurements: adult.cisFemale['36'],
                 }),
                 log
               )
             ).to.equal(true)
           })
         }
-      }
-    })
-
-    /*
-     * Sample pattern for different models
-     */
-    describe(`Sample human measurements:`, () => {
-      for (const type of ['cisFemale', 'cisMale']) {
-        it(`Sample pattern for adult ${type} size range:`, () => {
-          expect(
-            doesItSample(
-              new Pattern({
-                sample: {
-                  type: 'models',
-                  models: adult[type],
-                },
-              }),
-              log
-            )
-          ).to.equal(true)
-        })
-      }
-    })
-
-    if (deprecated.indexOf(design) === -1) {
-      /*
-       * Sample pattern for doll & giant
-       */
-      for (const family of ['doll', 'giant']) {
-        describe(`Sample ${family} measurements:`, () => {
-          for (const type of ['cisFemale', 'cisMale']) {
-            it(`Sample pattern for ${family} ${type} size range:`, () => {
-              expect(
-                doesItSample(
-                  new Pattern({
-                    sample: {
-                      type: 'models',
-                      models: family === 'doll' ? doll[type] : giant[type],
-                    },
-                  }),
-                  log
-                )
-              ).to.equal(true)
-            })
-          }
-        })
-      }
+      })
     }
   }
 }
