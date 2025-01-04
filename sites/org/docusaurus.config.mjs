@@ -37,6 +37,10 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  future: {
+    experimental_faster: false, // Too many bugs for now
+  },
+
   /*
    * We need to make sure we can import from .mjs files
    */

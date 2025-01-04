@@ -19,7 +19,6 @@ import TabItem from '@theme/TabItem'
 import { Example } from './example.mjs'
 import { Legend } from './legend.mjs'
 import { MeasurementImage } from './measurement-image.mjs'
-import { ReadMore } from './readmore.js'
 import { YouTube } from './youtube.mjs'
 
 const MDXComponents = {
@@ -48,7 +47,6 @@ const MDXComponents = {
   Example,
   Legend,
   MeasurementImage,
-  ReadMore,
   YouTube,
 }
 

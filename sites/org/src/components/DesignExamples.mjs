@@ -17,6 +17,7 @@ function DesignExamples({ design }) {
     <div className="tw-grid tw-grid-cols-2 tw-gap-2 md:tw-grid-cols-3 2xl:tw-grid-cols-4">
       {examples[design].map((example) => (
         <Link
+          key={example.id}
           href={`/showcase/${example.id}/`}
           title={example.title}
           className="tw-w-full tw-aspect-square tw-rounded-lg tw-shadow"

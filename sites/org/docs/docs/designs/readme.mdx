@@ -2,4 +2,20 @@
 title: FreeSewing Designs
 ---
 
-<ReadMore />
+import { collection, about } from '@freesewing/collection'
+import Link from '@docusaurus/Link'
+
+Documentation for all designs in the FreeSewing collection:
+
+<ul className="tw-list-disc">
+  {collection.map((design) => (
+    <li key={design} className="tw-list-disc">
+      <Link
+        href={`/docs/designs/${design}`}
+        className="tw-capitalize tw-font-medium tw-underline tw-decoration-2 hover:tw-decoration-4"
+      >
+        {about[design].name}
+      </Link>
+    </li>
+  ))}
+</ul>

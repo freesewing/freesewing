@@ -20,7 +20,7 @@ import { LoadingStatusContext } from '@freesewing/react/context/LoadingStatus'
 import { ModalContext } from '@freesewing/react/context/Modal'
 
 // Hooks
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, Fragment } from 'react'
 import { useAtom } from 'jotai'
 
 // Components
@@ -319,7 +319,7 @@ const DesignCard = ({ name, lineDrawing = false, linkTo, Link }) => {
 const Difficulty = ({ score = 0, className = '' }) => (
   <div className={`tw-flex tw-flex-row tw-items-center ${className}`}>
     {[0, 1, 2, 3, 4].map((i) => (
-      <CircleIcon fill={i < score ? true : false} className={`tw-w-4 tw-h-4`} />
+      <CircleIcon key={i} fill={i < score ? true : false} className={`tw-w-4 tw-h-4`} />
     ))}
   </div>
 )
@@ -351,6 +351,12 @@ export const DesignInfo = ({ Link = false, design = false, noDocsLink = false })
   const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   if (!design) return null
+  if (['teagan', 'trayvon'].includes(design))
+    return (
+      <p>
+        We are not rendering the design info for {design} because of a bug we are still working on.
+      </p>
+    )
 
   // Line drawings
   const LineDrawing = lineDrawings[design] || []
@@ -433,7 +439,7 @@ export const DesignInfo = ({ Link = false, design = false, noDocsLink = false })
               </div>
               <div className="">
                 {optionalMeasurements[design].map((m, i) => (
-                  <>
+                  <Fragment key={m}>
                     <Link
                       href={`/docs/measurements/${m.toLowerCase()}`}
                       key={m}
@@ -442,7 +448,7 @@ export const DesignInfo = ({ Link = false, design = false, noDocsLink = false })
                       {measurementsTranslations[m]}
                     </Link>
                     {i < optionalMeasurements[design].length - 1 ? <span>, </span> : null}
-                  </>
+                  </Fragment>
                 ))}
               </div>
             </>
@@ -455,7 +461,7 @@ export const DesignInfo = ({ Link = false, design = false, noDocsLink = false })
               </div>
               <div className="">
                 {requiredMeasurements[design].map((m, i) => (
-                  <>
+                  <Fragment key={m}>
                     <Link
                       href={`/docs/measurements/${m.toLowerCase()}`}
                       key={m}
@@ -464,7 +470,7 @@ export const DesignInfo = ({ Link = false, design = false, noDocsLink = false })
                       {measurementsTranslations[m]}
                     </Link>
                     {i < requiredMeasurements[design].length - 1 ? <span>, </span> : null}
-                  </>
+                  </Fragment>
                 ))}
               </div>
             </>
