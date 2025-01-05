@@ -50,7 +50,7 @@ import {
   DesignInput,
   MarkdownInput,
   ListInput,
-  MeasieInput,
+  MeasurementInput,
   PassiveImageInput,
   StringInput,
   ToggleInput,
@@ -455,7 +455,7 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
         />
       </div>
       {filterMeasurements().map((m) => (
-        <MeasieInput
+        <MeasurementInput
           id={`measie-${m}`}
           key={m}
           m={m}

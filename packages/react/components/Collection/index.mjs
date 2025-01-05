@@ -55,8 +55,10 @@ export const useFilter = () => {
  *
  * @param {object} props - All React props
  * @param {function} Link - An optional framework specific Link component for client-side routing
+ * @param {bool} editor - Set this to when loaded in the editor (this will make the display more dense)
+ * @param {bool} onClick - Set this to trigger an onClick event, rather than using links
  */
-export const Collection = ({ Link = false, linkTo = 'about' }) => {
+export const Collection = ({ Link = false, linkTo = 'about', editor = false, onClick = false }) => {
   if (!Link) Link = WebLink
 
   // State
@@ -104,15 +106,25 @@ export const Collection = ({ Link = false, linkTo = 'about' }) => {
         <div className="tw-flex tw-flex-row tw-flex-wrap tw-gap-1 tw-justify-center tw-font-medium tw-mb-2">
           {Object.keys(filtered)
             .sort()
-            .map((d) => (
-              <Link
-                key={d}
-                href={linkBuilders[linkTo](d)}
-                className="tw-text-secondary tw-decoration-2 tw-underline tw-capitalize hover:tw-decoration-4 hover:tw-text-secondary"
-              >
-                {d}
-              </Link>
-            ))}
+            .map((d) =>
+              onClick ? (
+                <button
+                  key={d}
+                  onClick={() => onClick(d)}
+                  className="tw-text-secondary tw-decoration-2 tw-underline tw-capitalize hover:tw-decoration-4 hover:tw-text-secondary tw-bg-transparent tw-border-0 tw-font-medium tw-p-0 tw-text-base hover:tw-cursor-pointer"
+                >
+                  {d}
+                </button>
+              ) : (
+                <Link
+                  key={d}
+                  href={linkBuilders[linkTo](d)}
+                  className="tw-text-secondary tw-decoration-2 tw-underline tw-capitalize hover:tw-decoration-4 hover:tw-text-secondary"
+                >
+                  {d}
+                </Link>
+              )
+            )}
         </div>
         {showFilters ? (
           <>
@@ -212,7 +224,9 @@ export const Collection = ({ Link = false, linkTo = 'about' }) => {
           </div>
         )}
       </div>
-      <div className="tw-grid tw-grid-cols-2 tw-gap-2 tw-mt-4 tw-justify-center sm:tw-grid-cols-3 md:tw-grid-cols-4 tw-mb-8">
+      <div
+        className={`tw-grid tw-grid-cols-2 tw-gap-2 tw-mt-4 tw-justify-center sm:tw-grid-cols-3 md:tw-grid-cols-4 ${editor ? 'lg:tw-grid-cols-6 2xl:tw-grid-cols-12' : ''} tw-mb-8`}
+      >
         {Object.keys(filtered)
           .sort()
           .map((d) => (
@@ -220,6 +234,7 @@ export const Collection = ({ Link = false, linkTo = 'about' }) => {
               name={d}
               key={d}
               linkTo={linkTo}
+              onClick={onClick}
               lineDrawing={filter.example ? false : true}
             />
           ))}
@@ -260,7 +275,7 @@ const Tag = ({ Link = WebLink, technique }) => (
   </Link>
 )
 
-const DesignCard = ({ name, lineDrawing = false, linkTo, Link }) => {
+const DesignCard = ({ name, lineDrawing = false, linkTo, Link, onClick }) => {
   if (!Link) Link = WebLink
 
   const LineDrawing =
@@ -275,37 +290,49 @@ const DesignCard = ({ name, lineDrawing = false, linkTo, Link }) => {
     bg.backgroundPosition = 'center center'
   }
 
-  return (
+  const inner = (
+    <div
+      className={`tw-flex tw-flex-col tw-flex-nowrap tw-items-start tw-justify-between tw-gap-2 tw-border-neutral-500 group-hover:tw-border-secondary
+      tw-w-full tw-h-full tw-border tw-border-2 tw-border-solid tw-p-0 tw-relative tw-rounded-lg tw-rounded-lg`}
+      style={bg}
+    >
+      <h5
+        className={`tw-text-center tw-py-2 tw-px-4 tw-rounded-t tw-m-0 tw-w-full group-hover:tw-no-underline group-hover:tw-bg-secondary group-hover:tw-bg-opacity-70
+      ${lineDrawing ? '' : 'tw-bg-neutral tw-text-neutral-content tw-bg-opacity-80'}`}
+      >
+        {about[name].name}
+      </h5>
+      {lineDrawing ? (
+        <div className="tw-p-1 tw-grow tw-w-full tw-h-auto tw-square tw-text-center">
+          <LineDrawing className="tw-max-w-full tw-m-auto tw-my-4 tw-text-base-content" />
+        </div>
+      ) : (
+        <span />
+      )}
+      <div
+        className={`tw-flex tw-flex-row tw-items-center tw-justify-center tw-py-1 tw-px-2 tw-rounded-b tw-m-0 tw-w-full
+      ${lineDrawing ? '' : `tw-text-neutral-content`}`}
+      >
+        <Difficulty score={about[name].difficulty} className="group-hover:tw-text-secondary" />
+      </div>
+    </div>
+  )
+
+  return onClick ? (
+    <button
+      onClick={() => onClick(name)}
+      className="hover:tw-bg-secondary hover:tw-bg-opacity-10 tw-rounded-lg tw-group hover:tw-no-underline tw-bg-transparent tw-border-0 hover:tw-cursor-pointer tw-p-0"
+      title={about[name].description}
+    >
+      {inner}
+    </button>
+  ) : (
     <Link
       href={linkTo === 'new' ? `/-/` : `/designs/${name}/`}
       className="hover:tw-bg-secondary hover:tw-bg-opacity-10 tw-rounded-lg tw-group hover:tw-no-underline"
       title={about[name].description}
     >
-      <div
-        className={`tw-flex tw-flex-col tw-flex-nowrap tw-items-start tw-justify-between tw-gap-2 tw-border-neutral-500 group-hover:tw-border-secondary
-        tw-w-full tw-h-full tw-border tw-border-2 tw-border-solid tw-p-0 tw-relative tw-rounded-lg tw-rounded-lg`}
-        style={bg}
-      >
-        <h5
-          className={`tw-text-center tw-py-2 tw-px-4 tw-rounded-t tw-m-0 tw-w-full group-hover:tw-no-underline group-hover:tw-bg-secondary group-hover:tw-bg-opacity-70
-        ${lineDrawing ? '' : 'tw-bg-neutral tw-text-neutral-content tw-bg-opacity-80'}`}
-        >
-          {about[name].name}
-        </h5>
-        {lineDrawing ? (
-          <div className="tw-p-1 tw-grow tw-w-full tw-h-auto tw-square tw-text-center">
-            <LineDrawing className="tw-max-w-full tw-m-auto tw-my-4 tw-text-base-content" />
-          </div>
-        ) : (
-          <span />
-        )}
-        <div
-          className={`tw-flex tw-flex-row tw-items-center tw-justify-center tw-py-1 tw-px-2 tw-rounded-b tw-m-0 tw-w-full
-        ${lineDrawing ? '' : `tw-text-neutral-content`}`}
-        >
-          <Difficulty score={about[name].difficulty} className="group-hover:tw-text-secondary" />
-        </div>
-      </div>
+      {inner}
     </Link>
   )
 }

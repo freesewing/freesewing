@@ -1,3 +1,5 @@
+import { MeasurementInput } from '@freesewing/react/components/Input'
+
 /**
  * This MeasurementsEditor component allows inline-editing of the measurements
  *
@@ -6,10 +8,9 @@
  * @param {object} props.state - The ViewWrapper state object
  * @param {object} props.state.settings - The current settings
  * @param {object} props.update - Helper object for updating the ViewWrapper state
- * @param {object} props.Swizzled - An object holding swizzled code
  * @return {function} MeasurementsEditor - React component
  */
-export const MeasurementsEditor = ({ Design, update, state, Swizzled }) => {
+export const MeasurementsEditor = ({ Design, update, state }) => {
   /*
    * Helper method to handle state updates for measurements
    */
@@ -19,13 +20,13 @@ export const MeasurementsEditor = ({ Design, update, state, Swizzled }) => {
 
   return (
     <div className="max-w-2xl">
-      <h5>{Swizzled.methods.t('pe:requiredMeasurements')}</h5>
+      <h5>Required Measurments</h5>
       {Object.keys(Design.patternConfig.measurements).length === 0 ? (
-        <p>({Swizzled.methods.t('account:none')})</p>
+        <p>This design does not require any measurements.</p>
       ) : (
         <div>
           {Design.patternConfig.measurements.map((m) => (
-            <Swizzled.components.MeasurementInput
+            <MeasurementInput
               key={m}
               m={m}
               imperial={state.settings.units === 'imperial' ? true : false}
@@ -37,12 +38,12 @@ export const MeasurementsEditor = ({ Design, update, state, Swizzled }) => {
           <br />
         </div>
       )}
-      <h5>{Swizzled.methods.t('pe:optionalMeasurements')}</h5>
+      <h5>Optional Measurements</h5>
       {Object.keys(Design.patternConfig.optionalMeasurements).length === 0 ? (
-        <p>({Swizzled.methods.t('account:none')})</p>
+        <p>This design does not use any optional measurements.</p>
       ) : (
         Design.patternConfig.optionalMeasurements.map((m) => (
-          <Swizzled.components.MeasurementInput
+          <MeasurementInput
             key={m}
             m={m}
             imperial={state.settings.units === 'umperial' ? true : false}

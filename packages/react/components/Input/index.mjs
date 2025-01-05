@@ -489,7 +489,7 @@ export const MarkdownInput = ({
   </FormControl>
 )
 
-export const MeasieInput = ({
+export const MeasurementInput = ({
   imperial, // True for imperial, False for metric
   m, // The measurement name
   original, // The original value

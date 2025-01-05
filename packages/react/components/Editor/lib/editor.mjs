@@ -1,12 +1,21 @@
+// Components
+import {
+  ErrorIcon,
+  MeasurementsIcon,
+  OptionsIcon,
+  SettingsIcon,
+  UiIcon,
+} from '@freesewing/react/components/Icon'
+import { HtmlSpan } from '../components/HtmlSpan.mjs'
+
 /*
  * This method drafts the pattern
  *
- * @param {object} Swizzled - Swizzled code, not used here
  * @param {function} Design - The Design constructor
  * @param {object} settings - The settings for the pattern
  * @return {object} data - The drafted pattern, along with errors and failure data
  */
-export function draft(Swizzled, Design, settings) {
+export function draft(Design, settings) {
   const data = {
     // The pattern
     pattern: new Design(settings),
@@ -26,9 +35,9 @@ export function draft(Swizzled, Design, settings) {
 
   return data
 }
-export function flattenFlags(Swizzled, flags) {
+export function flattenFlags(flags, config) {
   const all = {}
-  for (const type of Swizzled.config.flagTypes) {
+  for (const type of config.flagTypes) {
     let i = 0
     if (flags[type]) {
       for (const flag of Object.values(flags[type])) {
@@ -41,22 +50,22 @@ export function flattenFlags(Swizzled, flags) {
   return all
 }
 
-export function getUiPreferenceUndoStepData(Swizzled, { step }) {
+export function getUiPreferenceUndoStepData({ step }) {
   /*
    * We'll need these
    */
   const field = step.name === 'ui' ? step.path[1] : step.path[2]
-  const structure = Swizzled.methods.menuUiPreferencesStructure()[field]
+  const structure = menuUiPreferencesStructure()[field]
 
   /*
    * This we'll end up returning
    */
   const data = {
-    icon: <Swizzled.components.UiIcon />,
+    icon: <UiIcon />,
     field,
     optCode: `${field}.t`,
     titleCode: 'uiPreferences.t',
-    structure: Swizzled.methods.menuUiPreferencesStructure()[field],
+    structure: menuUiPreferencesStructure()[field],
   }
   const FieldIcon = data.structure.icon
   data.fieldIcon = <FieldIcon />
@@ -65,7 +74,7 @@ export function getUiPreferenceUndoStepData(Swizzled, { step }) {
    * Add oldval and newVal if they exist, or fall back to default
    */
   for (const key of ['old', 'new'])
-    data[key + 'Val'] = Swizzled.methods.t(
+    data[key + 'Val'] = t(
       structure.choiceTitles[
         structure.choiceTitles[String(step[key])] ? String(step[key]) : String(structure.dflt)
       ] + '.t'
@@ -74,9 +83,9 @@ export function getUiPreferenceUndoStepData(Swizzled, { step }) {
   return data
 }
 
-export function getCoreSettingUndoStepData(Swizzled, { step, state, Design }) {
+export function getCoreSettingUndoStepData({ step, state, Design }) {
   const field = step.path[1]
-  const structure = Swizzled.methods.menuCoreSettingsStructure({
+  const structure = menuCoreSettingsStructure({
     language: state.language,
     units: state.settings.units,
     sabool: state.settings.sabool,
@@ -87,19 +96,19 @@ export function getCoreSettingUndoStepData(Swizzled, { step, state, Design }) {
     field,
     titleCode: 'coreSettings.t',
     optCode: `${field}.t`,
-    icon: <Swizzled.components.SettingsIcon />,
+    icon: <SettingsIcon />,
     structure: structure[field],
   }
   if (!data.structure && field === 'sa') data.structure = structure.samm
-  const FieldIcon = data.structure?.icon || Swizzled.components.FixmeIcon
+  const FieldIcon = data.structure?.icon || ErrorIcon
   data.fieldIcon = <FieldIcon />
 
   /*
    * Save us some typing
    */
-  const cord = Swizzled.methods.settingsValueCustomOrDefault
-  const formatMm = Swizzled.methods.formatMm
-  const Html = Swizzled.components.HtmlSpan
+  const cord = settingsValueCustomOrDefault
+  const formatMm = formatMm
+  const Html = HtmlSpan
 
   /*
    * Need to allow HTML in some of these in case this is
@@ -120,24 +129,20 @@ export function getCoreSettingUndoStepData(Swizzled, { step, state, Design }) {
       data.newVal = cord(step.new, data.structure.dflt)
       return data
     case 'units':
-      data.oldVal = Swizzled.methods.t(
-        step.new === 'imperial' ? 'pe:metricUnits' : 'pe:imperialUnits'
-      )
-      data.newVal = Swizzled.methods.t(
-        step.new === 'imperial' ? 'pe:imperialUnits' : 'pe:metricUnits'
-      )
+      data.oldVal = t(step.new === 'imperial' ? 'pe:metricUnits' : 'pe:imperialUnits')
+      data.newVal = t(step.new === 'imperial' ? 'pe:imperialUnits' : 'pe:metricUnits')
       return data
     case 'only':
-      data.oldVal = cord(step.old, data.structure.dflt) || Swizzled.methods.t('pe:includeAllParts')
-      data.newVal = cord(step.new, data.structure.dflt) || Swizzled.methods.t('pe:includeAllParts')
+      data.oldVal = cord(step.old, data.structure.dflt) || t('pe:includeAllParts')
+      data.newVal = cord(step.new, data.structure.dflt) || t('pe:includeAllParts')
       return data
     default:
-      data.oldVal = Swizzled.methods.t(
+      data.oldVal = t(
         (data.structure.choiceTitles[String(step.old)]
           ? data.structure.choiceTitles[String(step.old)]
           : data.structure.choiceTitles[String(data.structure.dflt)]) + '.t'
       )
-      data.newVal = Swizzled.methods.t(
+      data.newVal = t(
         (data.structure.choiceTitles[String(step.new)]
           ? data.structure.choiceTitles[String(step.new)]
           : data.structure.choiceTitles[String(data.structure.dflt)]) + '.t'
@@ -146,32 +151,32 @@ export function getCoreSettingUndoStepData(Swizzled, { step, state, Design }) {
   }
 }
 
-export function getDesignOptionUndoStepData(Swizzled, { step, state, Design }) {
+export function getDesignOptionUndoStepData({ step, state, Design }) {
   const option = Design.patternConfig.options[step.path[2]]
   const data = {
-    icon: <Swizzled.components.OptionsIcon />,
+    icon: <OptionsIcon />,
     field: step.path[2],
     optCode: `${state.design}:${step.path[2]}.t`,
     titleCode: `designOptions.t`,
-    oldVal: Swizzled.methods.formatDesignOptionValue(option, step.old, state.units === 'imperial'),
-    newVal: Swizzled.methods.formatDesignOptionValue(option, step.new, state.units === 'imperial'),
+    oldVal: formatDesignOptionValue(option, step.old, state.units === 'imperial'),
+    newVal: formatDesignOptionValue(option, step.new, state.units === 'imperial'),
   }
 
   return data
 }
 
-export function getUndoStepData(Swizzled, props) {
+export function getUndoStepData(props) {
   /*
    * UI Preferences
    */
   if ((props.step.name === 'settings' && props.step.path[1] === 'ui') || props.step.name === 'ui')
-    return Swizzled.methods.getUiPreferenceUndoStepData(props)
+    return getUiPreferenceUndoStepData(props)
 
   /*
    * Design options
    */
   if (props.step.name === 'settings' && props.step.path[1] === 'options')
-    return Swizzled.methods.getDesignOptionUndoStepData(props)
+    return getDesignOptionUndoStepData(props)
 
   /*
    * Core Settings
@@ -191,14 +196,14 @@ export function getUndoStepData(Swizzled, props) {
       'expand',
     ].includes(props.step.path[1])
   )
-    return Swizzled.methods.getCoreSettingUndoStepData(props)
+    return getCoreSettingUndoStepData(props)
 
   /*
    * Measurements
    */
   if (props.step.name === 'settings' && props.step.path[1] === 'measurements') {
     const data = {
-      icon: <Swizzled.components.MeasurementsIcon />,
+      icon: <MeasurementsIcon />,
       field: 'measurements',
       optCode: `measurements`,
       titleCode: 'measurements',
@@ -210,14 +215,14 @@ export function getUndoStepData(Swizzled, props) {
       return {
         ...data,
         field: props.step.path[2],
-        oldVal: Swizzled.methods.formatMm(props.step.old, props.imperial),
-        newVal: Swizzled.methods.formatMm(props.step.new, props.imperial),
+        oldVal: formatMm(props.step.old, props.imperial),
+        newVal: formatMm(props.step.new, props.imperial),
       }
     let count = 0
     for (const m of Object.keys(props.step.new)) {
       if (props.step.new[m] !== props.step.old?.[m]) count++
     }
-    return { ...data, msg: Swizzled.methods.t('pe:xMeasurementsChanged', { count }) }
+    return { ...data, msg: t('pe:xMeasurementsChanged', { count }) }
   }
 
   /*
@@ -229,13 +234,12 @@ export function getUndoStepData(Swizzled, props) {
  * This helper method constructs the initial state object.
  *
  * If they are not present, it will fall back to the relevant defaults
- * @param {object} Swizzled - The swizzled data
  */
-export function initialEditorState(Swizzled) {
+export function initialEditorState(preload = {}, config) {
   /*
    * Create initial state object
    */
-  const initial = { ...Swizzled.config.initialState }
+  const initial = { ...config.initialState, ...preload }
 
   /*
    * FIXME: Add preload support, from URL or other sources, rather than just passing in an object
@@ -243,6 +247,7 @@ export function initialEditorState(Swizzled) {
 
   return initial
 }
+
 /**
  * round a value to the correct number of decimal places to display all supplied digits after multiplication
  * this is a workaround for floating point errors
@@ -250,13 +255,11 @@ export function initialEditorState(Swizzled) {
  * roundPct(0.72, 100) === 72
  * roundPct(7.5, 0.01) === 0.075
  * roundPct(7.50, 0.01) === 0.0750
- * @param {object} Swizzled - Swizzled code, not used here
  * @param  {Number} num the number to be operated on
  * @param  {Number} factor the number to multiply by
  * @return {Number}     the given num multiplied by the factor, rounded appropriately
  */
-export function menuRoundPct(Swizzled, num, factor) {
-  const { round } = Swizzled.methods
+export function menuRoundPct(num, factor) {
   // stringify
   const str = '' + num
   // get the index of the decimal point in the number
@@ -273,7 +276,6 @@ const menuFractionInputMatcher = /^-?[0-9]*(\s?[0-9]+\/|[.,eE])?[0-9]+$/ // matc
 
 /**
  * Validate and parse a value that should be a number
- * @param {object} Swizzled - Swizzled code, not used here
  * @param  {any}  val            the value to validate
  * @param  {Boolean} allowFractions should fractions be considered valid input?
  * @param  {Number}  min            the minimum allowable value
@@ -283,7 +285,6 @@ const menuFractionInputMatcher = /^-?[0-9]*(\s?[0-9]+\/|[.,eE])?[0-9]+$/ // matc
  *                                  or the value parsed to a number if it is valid
  */
 export function menuValidateNumericValue(
-  Swizzled,
   val,
   allowFractions = true,
   min = -Infinity,
@@ -302,7 +303,7 @@ export function menuValidateNumericValue(
   // replace comma with period
   const parsedVal = val.replace(',', '.')
   // if fractions are allowed, parse for fractions, otherwise use the number as a value
-  const useVal = allowFractions ? Swizzled.methods.fractionToDecimal(parsedVal) : parsedVal
+  const useVal = allowFractions ? fractionToDecimal(parsedVal) : parsedVal
 
   // check that it's a number and it's in the range
   if (isNaN(useVal) || useVal > max || useVal < min) return false
@@ -313,12 +314,11 @@ export function menuValidateNumericValue(
 
 /**
  * Check to see if a value is different from its default
- * @param {object} Swizzled - Swizzled code, not used here
  * @param {Number|String|Boolean} current the current value
  * @param {Object} config  configuration containing a dflt key
  * @return {Boolean}         was the value changed?
  */
-export function menuValueWasChanged(Swizzled, current, config) {
+export function menuValueWasChanged(current, config) {
   if (typeof current === 'undefined') return false
   if (current == config.dflt) return false
 
@@ -332,13 +332,12 @@ const UNSET = '__UNSET__'
 /*
  * Helper method to handle object updates
  *
- * @param {object} methods - An object holding possibly swizzled methods (unused here)
  * @param {object} obj - The object to update
  * @param {string|array} path - The path to the key to update, either as array or dot notation
  * @param {mixed} val - The new value to set or 'unset' to unset the value
  * @return {object} result - The updated object
  */
-export function objUpdate(Swizzled, obj = {}, path, val = '__UNSET__') {
+export function objUpdate(obj = {}, path, val = '__UNSET__') {
   if (val === UNSET) unset(obj, path)
   else set(obj, path, val)
 
@@ -348,21 +347,13 @@ export function objUpdate(Swizzled, obj = {}, path, val = '__UNSET__') {
 /*
  * Helper method to handle object updates that also updates the undo history in ephemeral state
  *
- * @param {object} methods - An object holding possibly swizzled methods (unused here)
  * @param {object} obj - The object to update
  * @param {string|array} path - The path to the key to update, either as array or dot notation
  * @param {mixed} val - The new value to set or 'unset' to unset the value
  * @param {function} setEphemeralState - The ephemeral state setter
  * @return {object} result - The updated object
  */
-export function undoableObjUpdate(
-  Swizzled,
-  name,
-  obj = {},
-  path,
-  val = '__UNSET__',
-  setEphemeralState
-) {
+export function undoableObjUpdate(name, obj = {}, path, val = '__UNSET__', setEphemeralState) {
   const current = get(obj, path)
   setEphemeralState((cur) => {
     if (!Array.isArray(cur.undos)) cur.undos = []
@@ -375,14 +366,14 @@ export function undoableObjUpdate(
           path,
           old: current,
           new: val,
-          restore: Swizzled.methods.cloneObject(obj),
+          restore: cloneObject(obj),
         },
         ...cur.undos,
       ],
     }
   })
 
-  return Swizzled.methods.objUpdate(obj, path, val)
+  return objUpdate(obj, path, val)
 }
 
 /*
@@ -393,20 +384,16 @@ export function undoableObjUpdate(
  * - sa: sa value for core
  * - samm: Holds the sa value in mm even when sa is off
  *
- * @param {object} Swizzled - An object holding possibly swizzled code (unused here)
  * @param {object} undo - The undo step to add
  * @param {object} restore - The state to restore for this step
  * @param {function} setEphemeralState - The ephemeral state setter
  */
-export function addUndoStep(Swizzled, undo, restore, setEphemeralState) {
+export function addUndoStep(undo, restore, setEphemeralState) {
   setEphemeralState((cur) => {
     if (!Array.isArray(cur.undos)) cur.undos = []
     return {
       ...cur,
-      undos: [
-        { time: Date.now(), ...undo, restore: Swizzled.methods.cloneObject(restore) },
-        ...cur.undos,
-      ],
+      undos: [{ time: Date.now(), ...undo, restore: cloneObject(restore) }, ...cur.undos],
     }
   })
 }
@@ -414,9 +401,10 @@ export function addUndoStep(Swizzled, undo, restore, setEphemeralState) {
 /*
  * Helper method to clone an object
  */
-export function cloneObject(Swizzled, obj) {
+export function cloneObject(obj) {
   return JSON.parse(JSON.stringify(obj))
 }
+
 /**
  * Helper method to push a prefix to a set path
  *
@@ -427,19 +415,20 @@ export function cloneObject(Swizzled, obj) {
  * @param {string|array} path - The path to prefix either as array or a string in dot notation
  * @return {array} newPath - The prefixed path
  */
-export function statePrefixPath(Swizzled, prefix, path) {
+export function statePrefixPath(prefix, path) {
   if (Array.isArray(path)) return [prefix, ...path]
   else return [prefix, ...path.split('.')]
 }
+
 /*
  * This creates the helper object for state updates
  */
-export function stateUpdateFactory(Swizzled, setState, setEphemeralState) {
+export function stateUpdateFactory(setState, setEphemeralState, config) {
   return {
     /*
      * This allows raw access to the entire state object
      */
-    state: (path, val) => setState((cur) => Swizzled.methods.objUpdate({ ...cur }, path, val)),
+    state: (path, val) => setState((cur) => objUpdate({ ...cur }, path, val)),
     /*
      * These hold an object, so we take a path
      */
@@ -453,10 +442,10 @@ export function stateUpdateFactory(Swizzled, setState, setEphemeralState) {
         )
       }
       return setState((cur) =>
-        Swizzled.methods.undoableObjUpdate(
+        undoableObjUpdate(
           'settings',
           { ...cur },
-          Swizzled.methods.statePrefixPath('settings', path),
+          statePrefixPath('settings', path),
           val,
           setEphemeralState
         )
@@ -479,7 +468,7 @@ export function stateUpdateFactory(Swizzled, setState, setEphemeralState) {
     toggleSa: () =>
       setState((cur) => {
         const sa = cur.settings?.samm || (cur.settings?.units === 'imperial' ? 15.3125 : 10)
-        const restore = Swizzled.methods.cloneObject(cur)
+        const restore = cloneObject(cur)
         // This requires 3 changes
         const update = cur.settings.sabool
           ? [
@@ -492,9 +481,9 @@ export function stateUpdateFactory(Swizzled, setState, setEphemeralState) {
               ['sa', sa],
               ['samm', sa],
             ]
-        for (const [key, val] of update) Swizzled.methods.objUpdate(cur, `settings.${key}`, val)
+        for (const [key, val] of update) objUpdate(cur, `settings.${key}`, val)
         // Which we'll group as 1 undo action
-        Swizzled.methods.addUndoStep(
+        addUndoStep(
           {
             name: 'settings',
             path: ['settings', 'sa'],
@@ -509,21 +498,15 @@ export function stateUpdateFactory(Swizzled, setState, setEphemeralState) {
       }),
     ui: (path, val) =>
       setState((cur) =>
-        Swizzled.methods.undoableObjUpdate(
-          'ui',
-          { ...cur },
-          Swizzled.methods.statePrefixPath('ui', path),
-          val,
-          setEphemeralState
-        )
+        undoableObjUpdate('ui', { ...cur }, statePrefixPath('ui', path), val, setEphemeralState)
       ),
     /*
      * These only hold a string, so we only take a value
      */
-    design: (val) => setState((cur) => Swizzled.methods.objUpdate({ ...cur }, 'design', val)),
+    design: (val) => setState((cur) => objUpdate({ ...cur }, 'design', val)),
     view: (val) => {
       // Only take valid view names
-      if (!Swizzled.config.views.includes(val)) return console.log('not a valid view:', val)
+      if (!config.views.includes(val)) return console.log('not a valid view:', val)
       setState((cur) => ({ ...cur, view: val }))
       // Also add it onto the views (history)
       setEphemeralState((cur) => {
@@ -533,7 +516,7 @@ export function stateUpdateFactory(Swizzled, setState, setEphemeralState) {
     },
     viewBack: () => {
       setEphemeralState((eph) => {
-        if (Array.isArray(eph.views) && Swizzled.config.views.includes(eph.views[1])) {
+        if (Array.isArray(eph.views) && config.views.includes(eph.views[1])) {
           // Load view at the 1 position of the history
           setState((cur) => ({ ...cur, view: eph.views[1] }))
           return { ...eph, views: eph.views.slice(1) }
@@ -542,20 +525,20 @@ export function stateUpdateFactory(Swizzled, setState, setEphemeralState) {
         return eph
       })
     },
-    ux: (val) => setState((cur) => Swizzled.methods.objUpdate({ ...cur }, 'ux', val)),
+    ux: (val) => setState((cur) => objUpdate({ ...cur }, 'ux', val)),
     clearPattern: () =>
       setState((cur) => {
         const newState = { ...cur }
-        Swizzled.methods.objUpdate(newState, 'settings', {
+        objUpdate(newState, 'settings', {
           measurements: cur.settings.measurements,
         })
         /*
          * Let's also reset the renderer to React as that feels a bit like a pattern setting even though it's UI
          */
-        Swizzled.methods.objUpdate(newState, 'ui', { ...newState.ui, renderer: 'react' })
+        objUpdate(newState, 'ui', { ...newState.ui, renderer: 'react' })
         return newState
       }),
-    clearAll: () => setState(Swizzled.config.initialState),
+    clearAll: () => setState(config.initialState),
     /*
      * These are setters for the ephemeral state which is passed down as part of the
      * state object, but is not managed in the state backend because it's ephemeral
@@ -566,7 +549,7 @@ export function stateUpdateFactory(Swizzled, setState, setEphemeralState) {
         if (typeof newState.loading !== 'object') newState.loading = {}
         if (typeof conf.color === 'undefined') conf.color = 'info'
         newState.loading[id] = {
-          msg: Swizzled.methods.t('pe:genericLoadingMsg'),
+          msg: t('pe:genericLoadingMsg'),
           ...conf,
         }
         return newState
@@ -588,7 +571,7 @@ export function stateUpdateFactory(Swizzled, setState, setEphemeralState) {
         if (id && cur.loading?.[id]) return newState
         if (typeof newState.loading !== 'object') newState.loading = {}
         if (id === false) id = Date.now()
-        newState.loading[id] = { ...conf, id, fadeTimer: Swizzled.config.notifyTimeout }
+        newState.loading[id] = { ...conf, id, fadeTimer: config.notifyTimeout }
         return newState
       }),
     notifySuccess: (msg, id = false) =>
@@ -606,7 +589,7 @@ export function stateUpdateFactory(Swizzled, setState, setEphemeralState) {
           icon: 'success',
           color: 'success',
           id,
-          fadeTimer: Swizzled.config.notifyTimeout,
+          fadeTimer: config.notifyTimeout,
         }
         return newState
       }),
@@ -625,7 +608,7 @@ export function stateUpdateFactory(Swizzled, setState, setEphemeralState) {
           icon: 'failure',
           color: 'error',
           id,
-          fadeTimer: Swizzled.config.notifyTimeout,
+          fadeTimer: config.notifyTimeout,
         }
         return newState
       }),
@@ -646,21 +629,20 @@ export function stateUpdateFactory(Swizzled, setState, setEphemeralState) {
 }
 /*
  * Returns the URL of a cloud-hosted image (cloudflare in this case) based on the ID and Variant
- * @param {object} Swizzled - Swizzled code, not used here
  */
-export function cloudImageUrl(Swizzled, { id = 'default-avatar', variant = 'public' }) {
+export function cloudImageUrl({ id = 'default-avatar', variant = 'public' }) {
   /*
    * Return something default so that people will actually change it
    */
-  if (!id || id === 'default-avatar') return Swizzled.config.cloudImageDflt
+  if (!id || id === 'default-avatar') return config.cloudImageDflt
 
   /*
    * If the variant is invalid, set it to the smallest thumbnail so
    * people don't load enourmous images by accident
    */
-  if (!Swizzled.config.cloudImageVariants.includes(variant)) variant = 'sq100'
+  if (!config.cloudImageVariants.includes(variant)) variant = 'sq100'
 
-  return `${Swizzled.config.cloudImageUrl}${id}/${variant}`
+  return `${config.cloudImageUrl}${id}/${variant}`
 }
 /**
  * This method does nothing. It is used to disable certain methods
@@ -682,11 +664,10 @@ export function notEmpty(value) {
  *
  * Note that this method is variadic
  *
- * @param {object} methods - An object holding possibly swizzled methods (unused here)
  * @param {[string]} namespaces - A string or array of strings of namespaces
  * @return {[string]} namespaces - A merged array of all namespaces
  */
-export function nsMerge(Swizzled, ...args) {
+export function nsMerge(...args) {
   const ns = new Set()
   for (const arg of args) {
     if (typeof arg === 'string') ns.add(arg)
@@ -697,24 +678,21 @@ export function nsMerge(Swizzled, ...args) {
 
   return [...ns]
 }
+
 /*
  * A translation fallback method in case none is passed in
  *
- * @param {object} Swizzled - Swizzled code, not used here
  * @param {string} key - The input
  * @return {string} key - The input is returned
  */
-export function t(Swizzled, key) {
-  /*
-   * Make sure this works when Swizzled is not passed in
-   */
-  if (typeof Swizzled.components === 'undefined') key = Swizzled
+export function t(key) {
   return Array.isArray(key) ? key[0] : key
 }
-export function settingsValueIsCustom(Swizzled, val, dflt) {
+
+export function settingsValueIsCustom(val, dflt) {
   return typeof val === 'undefined' || val === '__UNSET__' || val === dflt ? false : true
 }
 
-export function settingsValueCustomOrDefault(Swizzled, val, dflt) {
+export function settingsValueCustomOrDefault(val, dflt) {
   return typeof val === 'undefined' || val === '__UNSET__' || val === dflt ? dflt : val
 }

@@ -1,5 +1,21 @@
-import { Fragment, useEffect } from 'react'
+// Dependencies
 import { horFlexClasses } from '../../utils.mjs'
+import { t, designMeasurements } from '../../lib/index.mjs'
+import { capitalize } from '@freesewing/utils'
+// Hooks
+import React, { Fragment, useEffect } from 'react'
+// Components
+import { Popout } from '@freesewing/react/components/Popout'
+import {
+  BookmarkIcon,
+  CuratedMeasurementsSetIcon,
+  EditIcon,
+  MeasurementsSetIcon,
+} from '@freesewing/react/components/Icon'
+import { Accordion } from '../Accordion.mjs'
+import { MeasurementsEditor } from '../MeasurementsEditor.mjs'
+import { SetPicker, BookmarkedSetPicker, CuratedSetPicker, UserSetPicker } from '../Set.mjs'
+import { HeaderMenu } from '../HeaderMenu.mjs'
 
 const iconClasses = { className: 'w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink-0', stroke: 1.5 }
 
@@ -9,41 +25,20 @@ const iconClasses = { className: 'w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink
  * It will be automatically loaded if we do not have all required measurements for a design.
  *
  * @param {Object} props - All the props
- * @param {Object} props.Swizzled - An object with swizzled components, hooks, methods, and config
+ * @param {Function} props.config - The editor configuration
  * @param {Function} props.Design - The design constructor
- * @param {string} props.design - The design name
- * @param {Object} props.state - The editor state object
- * @param {Object} props.update - Helper object for updating the ViewWrapper state
  * @param {Array} props.missingMeasurements - List of missing measurements for the current design
+ * @param {Object} props.state - The editor state object
+ * @param {Object} props.update - Helper object for updating the editor state
  * @return {Function} MeasurementsView - React component
  */
-export const MeasurementsView = ({ Design, missingMeasurements, update, Swizzled, state }) => {
-  // Swizzled components
-  const {
-    Accordion,
-    Popout,
-    MeasurementsEditor,
-    MeasurementsSetIcon,
-    UserSetPicker,
-    BookmarkIcon,
-    BookmarkedSetPicker,
-    CuratedMeasurementsSetIcon,
-    CuratedSetPicker,
-    EditIcon,
-  } = Swizzled.components
-  // Swizzled methods
-  const { t, designMeasurements, capitalize } = Swizzled.methods
-  // Swizzled config
-  const { config } = Swizzled
-  // Editor state
-  const { locale } = state
-
+export const MeasurementsView = ({ config, Design, missingMeasurements, state, update }) => {
   /*
    * If there is no view set, completing measurements will switch to the view picker
    * Which is a bit confusing. So in this case, set the view to measurements.
    */
   useEffect(() => {
-    if (!config.views.includes(state.view)) update.view('measurements')
+    if (!config?.views || !config.views.includes(state.view)) update.view('measurements')
     if (state._.missingMeasurements && state._.missingMeasurements.length > 0)
       update.notify({ msg: t('pe:missingMeasurementsNotify'), icon: 'tip' }, 'missingMeasurements')
     else update.notifySuccess(t('pe:measurementsAreOk'))
@@ -78,7 +73,7 @@ export const MeasurementsView = ({ Design, missingMeasurements, update, Swizzled
           size="md"
           clickHandler={loadMeasurements}
           missingClickHandler={loadMeasurements}
-          {...{ Swizzled, Design }}
+          {...{ config, Design }}
         />,
         'ownSets',
       ],
@@ -95,7 +90,7 @@ export const MeasurementsView = ({ Design, missingMeasurements, update, Swizzled
           size="md"
           clickHandler={loadMeasurements}
           missingClickHandler={loadMeasurements}
-          {...{ Swizzled, Design }}
+          {...{ config, Design }}
         />,
         'bmSets',
       ],
@@ -107,11 +102,7 @@ export const MeasurementsView = ({ Design, missingMeasurements, update, Swizzled
           </div>
           <p className="text-left">{t('pe:chooseFromCuratedSetsDesc')}</p>
         </Fragment>,
-        <CuratedSetPicker
-          key={2}
-          clickHandler={loadMeasurements}
-          {...{ Swizzled, Design, locale }}
-        />,
+        <CuratedSetPicker key={2} clickHandler={loadMeasurements} {...{ config, Design }} />,
         'csets',
       ]
     )
@@ -124,13 +115,13 @@ export const MeasurementsView = ({ Design, missingMeasurements, update, Swizzled
       </div>
       <p className="text-left">{t('pe:editMeasurementsDesc')}</p>
     </Fragment>,
-    <MeasurementsEditor key={2} {...{ Design, Swizzled, update, state }} />,
+    <MeasurementsEditor key={2} {...{ Design, config, update, state }} />,
     'edit',
   ])
 
   return (
     <>
-      <Swizzled.components.HeaderMenu state={state} {...{ Swizzled, update }} />
+      <HeaderMenu state={state} {...{ config, update }} />
       <div className="max-w-7xl mt-8 mx-auto px-4">
         <h2>{t('pe:measurements')}</h2>
         {missingMeasurements && missingMeasurements.length > 0 ? (

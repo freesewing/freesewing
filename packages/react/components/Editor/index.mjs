@@ -1,89 +1,159 @@
-import { useState, useEffect } from 'react'
-import { swizzleConfig } from './swizzle/config.mjs'
-import { swizzleComponents } from './swizzle/components/index.mjs'
-import { swizzleHooks } from './swizzle/hooks/index.mjs'
-import { swizzleMethods } from './swizzle/methods/index.mjs'
-import { ViewWrapper } from './components/view-wrapper.mjs'
-// This is an exception as we need to show something before Swizzled components are ready
-import { TemporaryLoader as UnswizzledTemporaryLoader } from './swizzle/components/loaders.mjs'
-
-/*
- * Namespaces used by the pattern editor
- */
-export const ns = ['pe', 'measurements']
+// Dependencies
+import { designs } from '@freesewing/collection'
+import { hasRequiredMeasurements, initialEditorState } from './lib/index.mjs'
+import { mergeConfig } from './config/index.mjs'
+// Hooks
+import React, { useState } from 'react'
+import { useEditorState } from './hooks/useEditorState.mjs'
+// Components
+import { View } from './components/views/index.mjs'
+import { Spinner } from '@freesewing/react/components/Spinner'
+import { AsideViewMenu } from './components/AsideViewMenu.mjs'
+import { LoadingStatus } from './components/LoadingStatus.mjs'
 
 /**
- * PatternEditor is the high-level FreeSewing component
+ * FreeSewing's pattern editor
+ *
+ * Editor is the high-level FreeSewing component
  * that provides the entire pattern editing environment
+ * This is a high-level wrapper that figures out what view to load initially,
+ * and handles state for the pattern, including the view
  *
- * @param {object} props.design = The name of the design we are editing
- * @param {object} props.designs = An object holding the designs code
- * @param {object} props.components = An object holding components to swizzle
- * @param {object} props.hooks = An object holding hooks to swizzle
- * @param {object} props.methods = An object holding methods to swizzle
- * @param {object} props.config = An object holding the editor config to swizzle
- * @param {object} props.locale = The locale (language) code
- * @param {object} props.preload = Any state to preload
- *
+ * @param {object} props - All React props
+ * @param {object} props.config - A configuration object for the editor
+ * @param {object} props.design - A design name to force the editor to use this design
+ * @param {object} props.preload - Any state to preload
  */
-export const PatternEditor = (props) => {
-  const [swizzled, setSwizzled] = useState(false)
-
-  useEffect(() => {
-    if (!swizzled) {
-      const merged = {
-        config: swizzleConfig(props.config),
-      }
-      merged.methods = swizzleMethods(props.methods, merged)
-      merged.components = swizzleComponents(props.components, merged)
-      merged.hooks = swizzleHooks(props.hooks, merged)
-      setSwizzled(merged)
-    }
-  }, [swizzled, props.components, props.config, props.hooks, props.methods])
-
-  if (!swizzled?.hooks) return <UnswizzledTemporaryLoader />
+export const Editor = ({ config = {}, design = false, preload = {} }) => {
   /*
-   * First of all, make sure we have all the required props
+   * Ephemeral state will not be stored in the state backend
+   * It is used for things like loading state and so on
    */
-  const lackingProps = lackingPropsCheck(props)
-  if (lackingProps !== false) return <LackingPropsError error={lackingProps} />
+  const [ephemeralState, setEphemeralState] = useState({})
 
   /*
-   * Extract props we care about
+   * Merge custom and default configuration
    */
-  const { designs = {}, locale = 'en', preload } = props
+  const editorConfig = mergeConfig(config)
 
   /*
-   * Now return the view wrapper and pass it the relevant props and the swizzled props
+   * The Editor state is kept in a state backend (URL)
    */
-  return <ViewWrapper {...{ designs, locale, preload }} Swizzled={swizzled} />
+  const allState = useEditorState(
+    initialEditorState(preload, config),
+    setEphemeralState,
+    editorConfig
+  )
+
+  const state = allState[0]
+  const update = allState[2]
+
+  /*
+   * Don't bother before state is initialized
+   */
+  if (!state) return <Spinner />
+
+  // Figure out what view to load
+  const [view, extraProps] = viewfinder({ design, designs, preload, state, config: editorConfig })
+
+  /*
+   * Pass this down to allow disabling features that require measurements
+   */
+  const { missingMeasurements = [] } = extraProps
+
+  /*
+   * Almost all editor state has a default settings, and when that is selected
+   * we just unset that value in the state. This way, state holds only what is
+   * customized, and it makes it a lot easier to see how a pattern was edited.
+   * The big exception is the 'ui.ux' setting. If it is unset, a bunch of
+   * components will not function properly. We could guard against this by passing
+   * the default to all of these components, but instead, we just check that state
+   * is undefined, and if so pass down the default ux value here.
+   * This way, should more of these exceptions get added over time, we can use
+   * the same centralized solution.
+   */
+  const passDownState =
+    state.ui?.ux === undefined
+      ? {
+          ...state,
+          ui: { ...(state.ui || {}), ux: editorConfig.defaultUx },
+          _: { ...ephemeralState, missingMeasurements },
+        }
+      : { ...state, _: { ...ephemeralState, missingMeasurements } }
+
+  return (
+    <div className="flex flex-row items-top">
+      {editorConfig.withAside ? <AsideViewMenu update={update} state={passDownState} /> : null}
+      <div
+        className={
+          state.ui?.kiosk
+            ? 'md:z-30 md:w-screen md:h-screen md:fixed md:top-0 md:left-0 md:bg-base-100'
+            : 'grow w-full'
+        }
+      >
+        <LoadingStatus state={passDownState} update={update} />
+        <View
+          {...extraProps}
+          {...{ view, update, designs, config: editorConfig }}
+          state={passDownState}
+        />
+      </div>
+    </div>
+  )
 }
 
 /**
- * Helper function to verify that all props that are required to
- * run the editor are present.
+ * Helper method to figure out what view to load
+ * based on the props passed in, and destructure
+ * the props we need for it.
  *
- * Note that these errors are not translation, because they are
- * not intended for end-users, but rather for developers.
- *
- * @param {object} props - The props passed to the PatternEditor component
- * @return {bool} result - Either true or false depending on required props being present
+ * @param (object) props - All the props
+ * @param {object} props.design - The (name of the) current design
+ * @param {object} props.designs - An object holding all designs
+ * @param (object) props.state - React state passed down from the wrapper view
+ * @param (object) props.config - The editor config
  */
-const lackingPropsCheck = (props) => {
-  if (typeof props.designs !== 'object')
-    return "Please pass a 'designs' prop with the designs supported by this editor"
-  if (Object.keys(props.designs).length < 1) return "The 'designs' prop does not hold any designs"
+const viewfinder = ({ design, designs, state, config }) => {
+  /*
+   * Grab Design from props or state and make them extra props
+   */
+  if (!design && state?.design) design = state.design
+  const Design = designs[design] || false
+  const extraProps = { design, Design }
 
-  return false
+  /*
+   * If no design is set, return the designs view
+   */
+  if (!designs[design]) return ['designs', extraProps]
+
+  /*
+   * If we have a design, do we have the measurements?
+   */
+  const [measurementsOk, missingMeasurements] = hasRequiredMeasurements(
+    designs[design],
+    state.settings?.measurements
+  )
+  if (missingMeasurements) extraProps.missingMeasurements = missingMeasurements
+
+  /*
+   * Allow all views that do not require measurements before
+   * we force the user to the measurements view
+   */
+  if (state.view && config.measurementsFreeViews.includes(state.view))
+    return [state.view, extraProps]
+
+  /*
+   * Force the measurements view if measurements are missing
+   */
+  if (!measurementsOk) return ['measurements', extraProps]
+
+  /*
+   * If a view is set, return that
+   */
+  if (state.view) return [state.view, extraProps]
+
+  /*
+   * If no obvious view was found, return the view picker
+   */
+  return ['picker', extraProps]
 }
-
-/**
- * A component to inform the user that the editor cannot be started
- * because there are missing required props
- */
-const LackingPropsError = ({ error }) => (
-  <div className="w-full p-0 text-center py-24">
-    <h2>Unable to initialize pattern editor</h2>
-    <p>{error}</p>
-  </div>
-)

@@ -1,23 +1,5 @@
-/*************************************************************************
- *                                                                       *
- * FreeSewing's pattern editor allows swizzling the config               *
- *                                                                       *
- * To 'swizzle' means to replace a default implementation with a         *
- * custom one. It allows one to customize the pattern editor.            *
- *                                                                       *
- * This file holds the 'swizzleConfig' method that will return           *
- * the merged configuration.                                             *
- *                                                                       *
- * To use a custom config, simply pas it as a prop into the editor       *
- * under the 'config' key. So to pass a custom 'newSet' link (used to    *
- * link to a page to create a new measurements set), you do:             *
- *                                                                       *
- * <PatternEditor config={{ newSet: '/my/custom/page' }} />              *
- *                                                                       *
- *************************************************************************/
-
 /*
- * Default config for the FreeSewing pattern editor
+ * Default configuration for the FreeSewing pattern editor
  */
 export const defaultConfig = {
   // Enable use of a (FreeSewing) backend to load data from
@@ -145,14 +127,6 @@ export const defaultConfig = {
       aside: 1,
       ux: 4,
     },
-    locale: 'en',
-  },
-  loadingStatus: {
-    timeout: 2,
-    defaults: {
-      color: 'secondary',
-      icon: 'Spinner',
-    },
   },
   classes: {
     horFlex: 'flex flex-row items-center justify-between gap-4 w-full',
@@ -180,9 +154,9 @@ export const defaultConfig = {
 }
 
 /*
- * This method returns the swizzled configuration
+ * This method returns a merged configuration
  */
-export const swizzleConfig = (config = {}) => {
+export const mergeConfig = (config = {}) => {
   const mergedConfig = {
     ...defaultConfig,
     ...config,

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 export const AsideViewMenuButton = ({
   href,
@@ -27,13 +27,6 @@ export const AsideViewMenuButton = ({
       {children}
     </Swizzled.components.Link>
   )
-}
-
-export const ViewTypeIcon = ({ Swizzled, view, className = 'h-6 w-6 grow-0' }) => {
-  const Icon = Swizzled.components[`View${Swizzled.methods.capitalize(view)}Icon`]
-  if (!Icon) return <Swizzled.components.OptionsIcon />
-
-  return <Icon className={className} />
 }
 
 export const AsideViewMenuSpacer = () => (

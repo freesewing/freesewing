@@ -1,6 +1,15 @@
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
+import { Spinner } from '@freesewing/react/components/Spinner'
 
-export const LoadingStatus = ({ Swizzled, state, update }) => {
+const config = {
+  timeout: 2,
+  defaults: {
+    color: 'secondary',
+    icon: 'Spinner',
+  },
+}
+
+export const LoadingStatus = ({ state, update }) => {
   useEffect(() => {
     if (typeof state._.loading === 'object') {
       for (const conf of Object.values(state._.loading)) {
@@ -21,16 +30,12 @@ export const LoadingStatus = ({ Swizzled, state, update }) => {
   return (
     <div className="fixed bottom-0 md:buttom-28 left-0 w-full z-30 md:px-4 md:mx-auto mb-4">
       <div className="flex flex-col gap-2">
-        {Object.entries(state._.loading).map(([id, config]) => {
+        {Object.entries(state._.loading).map(([id, custom]) => {
           const conf = {
-            ...Swizzled.config.loadingStatus.defaults,
-            ...config,
+            ...config.defaults,
+            ...custom,
           }
-          const Icon =
-            typeof conf.icon === 'undefined'
-              ? Swizzled.components.Spinner
-              : Swizzled.components[`${Swizzled.methods.capitalize(conf.icon)}Icon`] ||
-                Swizzled.components.Noop
+          const Icon = typeof conf.icon === 'undefined' ? Spinner : Spinner //Swizzled.components[`${Swizzled.methods.capitalize(conf.icon)}Icon`] || Swizzled.components.Noop
           return (
             <div
               key={id}
@@ -39,9 +44,7 @@ export const LoadingStatus = ({ Swizzled, state, update }) => {
               } flex flex-row items-center gap-4 p-4 px-4 ${
                 conf.fading ? 'opacity-0' : 'opacity-100'
               }
-              transition-opacity delay-[${
-                Swizzled.config.loadingStatus.timeout * 1000 - 400
-              }ms] duration-300
+              transition-opacity delay-[${config.timeout * 1000 - 400}ms] duration-300
               md:rounded-lg shadow text-secondary-content text-lg lg:text-xl font-medium md:bg-opacity-90`}
             >
               <span className="shrink-0">

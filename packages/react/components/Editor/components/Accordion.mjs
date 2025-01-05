@@ -1,22 +1,22 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 /*
  * DaisyUI's accordion seems rather unreliable.
  * So instead, we handle this in React state
  */
 const getProps = (isActive) => ({
-  className: `p-2 px-4 rounded-lg bg-transparent shadow
-    w-full mt-2 py-4 h-auto content-start text-left bg-opacity-20
-    ${isActive ? 'hover:bg-transparent' : 'hover:bg-secondary hover:bg-opacity-10'}`,
+  className: `tw-p-2 tw-px-4 tw-rounded-lg tw-bg-transparent tw-shadow
+    tw-w-full tw-mt-2 tw-py-4 tw-h-auto tw-content-start tw-text-left tw-bg-opacity-20
+    ${isActive ? 'hover:tw-bg-transparent' : 'hover:tw-bg-secondary hover:tw-bg-opacity-10'}`,
 })
 
 const getSubProps = (isActive) => ({
-  className: ` p-2 px-4 rounded bg-transparent w-full mt-2 py-4 h-auto
-  content-start bg-secondary text-left bg-opacity-20
+  className: ` tw-p-2 tw-px-4 tw-rounded tw-bg-transparent tw-w-full tw-mt-2 tw-py-4 tw-h-auto
+  tw-content-start tw-bg-secondary tw-text-left tw-bg-opacity-20
   ${
     isActive
-      ? 'bg-opacity-100 hover:bg-transparent shadow'
-      : 'hover:bg-opacity-10 hover:bg-secondary '
+      ? 'tw-bg-opacity-100 hover:tw-bg-transparent tw-shadow'
+      : 'hover:tw-bg-opacity-10 hover:tw-bg-secondary '
   }`,
 })
 
@@ -41,7 +41,7 @@ export const BaseAccordion = ({
         .map((item, i) =>
           active === item[2] ? (
             <div key={i} {...propsGetter(true)}>
-              <Component onClick={setActive} className="w-full hover:cursor-pointer">
+              <Component onClick={setActive} className="tw-w-full hover:tw-cursor-pointer">
                 {item[0]}
               </Component>
               {item[1]}

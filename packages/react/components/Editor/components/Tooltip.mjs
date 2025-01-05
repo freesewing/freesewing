@@ -1,3 +1,5 @@
+import React from 'react'
+
 export const Tooltip = (props) => {
   const { children, tip, ...rest } = props
 

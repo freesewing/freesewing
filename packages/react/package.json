@@ -81,13 +81,12 @@
     "highlight.js": "^11.11.0",
     "html-react-parser": "^5.0.7",
     "luxon": "^3.5.0",
-    "nuqs": "^1.17.6",
+    "nuqs": "^2.3.0",
     "react-markdown": "^9.0.1",
     "tlds": "^1.255.0",
     "use-local-storage-state": "19.1.0",
     "use-session-storage-state": "^19.0.0"
   },
-  "devDependencies": {},
   "files": [
     "components/**",
     "hooks/**",
