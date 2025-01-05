@@ -12,7 +12,8 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
-import { KeyIcon } from 'shared/components/icons.mjs'
+import { KeyIcon, LockIcon } from 'shared/components/icons.mjs'
+import { MfaInput } from 'shared/components/inputs.mjs'
 import Link from 'next/link'
 
 // Translation namespaces used on this page
@@ -36,6 +37,9 @@ const SigninFailed = ({ error }) => {
     } else if (error === 'accountBlocked') {
       title = t('susi:accountBlocked')
       msg = t('susi:accountBlockedMsg')
+    } else if (error === 'signInFailed') {
+      title = t('susi:signInFailed')
+      msg = t('susi:signInFailedMsg')
     }
   }
 
@@ -74,6 +78,8 @@ const ConfirmSignInPage = ({ page }) => {
   const [error, setError] = useState(false)
   const [id, setId] = useState()
   const [check, setCheck] = useState()
+  const [mfa, setMfa] = useState(false)
+  const [mfaCode, setMfaCode] = useState()
 
   useEffect(() => {
     const newId = getSearchParam('id')
@@ -82,27 +88,34 @@ const ConfirmSignInPage = ({ page }) => {
     if (newCheck !== check) setCheck(newCheck)
   }, [id, check])
 
-  useEffect(() => {
-    const storeAccount = async (data) => {
-      if (data?.token && data?.account) {
-        setToken(data.token)
-        setAccount(data.account)
-        router.push('/account')
-      } else {
-        setError(data)
-      }
+  const storeAccount = async (data) => {
+    if (data?.token && data?.account) {
+      setToken(data.token)
+      setAccount(data.account)
+      router.push('/account')
+    } else {
+      setError(data)
     }
+  }
+
+  useEffect(() => {
     // Async inside useEffect requires this approach
     const getConfirmation = async () => {
       // Reach out to backend
-      const result = await backend.signInFromLink({ id, check })
+      const result = await backend.signInFromLink({ id, check, token: mfaCode })
       if (result.data?.token) return storeAccount(result.data)
-      if (result.data.error) return setError(result.data.error)
+      if (result.data.error) {
+        if (result.data.error === 'mfaTokenRequired') {
+          return setMfa(true)
+        } else {
+          return setError(result.data.error)
+        }
+      }
       return setError(true)
     }
     // Call async method
     if (id) getConfirmation()
-  }, [backend, id, check, router, setAccount, setToken])
+  }, [backend, id, check, router, setAccount, setToken, setMfa])
 
   if (page) page.path = ['confirm', 'emailchange', id]
 
@@ -113,6 +126,41 @@ const ConfirmSignInPage = ({ page }) => {
         <SigninFailed error={error} />
       </Wrapper>
     )
+
+  if (mfa) {
+    const btnClasses = `btn btn-primary capitalize w-full mt-4 'btn-primary'
+    } transition-colors ease-in-out duration-300 ${horFlexClasses}`
+    return (
+      <Wrapper page={page} t={t}>
+        <h1 className="text-inherit text-3xl lg:text-5xl mb-4 pb-0 text-center">
+          {t('susi:mfaCode')}
+        </h1>
+        <p className="text-inherit text-lg text-center">{t('susi:mfaCodeMsg')}</p>
+        <MfaInput label={t('susi:mfaCode')} update={setMfaCode} value={mfaCode} />
+        <button
+          className={btnClasses}
+          tabIndex="-1"
+          role="button"
+          onClick={async () => {
+            const result = await backend.signInFromLink({ id, check, token: mfaCode })
+            if (result.data?.token) return storeAccount(result.data)
+            if (result.data.error) {
+              return setError(result.data.error)
+            }
+            return setError(true)
+          }}
+        >
+          <span className="hidden lg:block">
+            <KeyIcon />
+          </span>
+          <span className="pl-2">{t('susi:signIn')}</span>
+          <span className="hidden lg:block">
+            <LockIcon />
+          </span>
+        </button>
+      </Wrapper>
+    )
+  }
 
   return (
     <Wrapper page={page} t={t}>
