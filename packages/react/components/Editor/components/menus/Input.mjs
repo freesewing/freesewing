@@ -1,11 +1,13 @@
-import { useMemo, useCallback, useState } from 'react'
+import React, { useMemo, useCallback, useState } from 'react'
+import { round } from '@freesewing/utils'
+import { ButtonFrame } from '@freesewing/react/components/Input'
 
 /** A boolean version of {@see MenuListInput} that sets up the necessary configuration */
 export const MenuBoolInput = (props) => {
-  const { name, config, Swizzled } = props
+  const { name, config } = props
   const boolConfig = useBoolConfig(name, config)
 
-  return <Swizzled.components.MenuListInput {...props} config={boolConfig} />
+  return <MenuListInput {...props} config={boolConfig} />
 }
 
 /** A placeholder for an input to handle constant values */
@@ -33,8 +35,6 @@ export const MenuConstantInput = ({
 /** A {@see MenuSliderInput} to handle degree values */
 export const MenuDegInput = (props) => {
   const { updateHandler } = props
-  const { MenuSliderInput } = props.Swizzled.components
-  const { round } = props.Swizzled.methods
   const degUpdateHandler = useCallback(
     (path, newVal) => {
       updateHandler(path, newVal === undefined ? undefined : Number(newVal))
@@ -67,7 +67,6 @@ export const MenuListInput = ({
   changed,
   design,
   isDesignOption = false,
-  Swizzled,
 }) => {
   const handleChange = useSharedHandlers({
     dflt: config.dflt,
@@ -87,7 +86,7 @@ export const MenuListInput = ({
     const sideBySide = config.sideBySide || desc.length + title.length < 42
 
     return (
-      <Swizzled.components.ButtonFrame
+      <ButtonFrame
         dense={config.dense || false}
         key={entry}
         active={
@@ -107,7 +106,7 @@ export const MenuListInput = ({
           <div className="font-bold text-lg shrink-0">{title}</div>
           {compact ? null : <div className="text-base font-normal">{desc}</div>}
         </div>
-      </Swizzled.components.ButtonFrame>
+      </ButtonFrame>
     )
   })
 }
@@ -137,13 +136,10 @@ export const MenuListToggle = ({ config, changed, updateHandler, name }) => {
 
 export const MenuMmInput = (props) => {
   const { units, updateHandler, current, config } = props
-  const { MenuSliderInput } = props.Swizzled.components
   const mmUpdateHandler = useCallback(
     (path, newCurrent) => {
       const calcCurrent =
-        typeof newCurrent === 'undefined'
-          ? undefined
-          : props.Swizzled.methods.measurementAsMm(newCurrent, units)
+        typeof newCurrent === 'undefined' ? undefined : measurementAsMm(newCurrent, units)
       updateHandler(path, calcCurrent)
     },
     [updateHandler, units]
@@ -159,15 +155,11 @@ export const MenuMmInput = (props) => {
         config: {
           step: defaultStep,
           ...config,
-          dflt: props.Swizzled.methods.measurementAsUnits(config.dflt, units),
+          dflt: measurementAsUnits(config.dflt, units),
         },
-        current:
-          current === undefined
-            ? undefined
-            : props.Swizzled.methods.measurementAsUnits(current, units),
+        current: current === undefined ? undefined : measurementAsUnits(current, units),
         updateHandler: mmUpdateHandler,
-        valFormatter: (val) =>
-          units === 'imperial' ? props.Swizzle.methods.formatFraction128(val, null) : val,
+        valFormatter: (val) => (units === 'imperial' ? formatFraction128(val, null) : val),
         suffix: units === 'imperial' ? '"' : 'cm',
       }}
     />
@@ -243,27 +235,24 @@ export const MenuMmInput = (props) => {
 //}
 
 /** A {@see SliderInput} to handle percentage values */
-export const MenuPctInput = ({ current, changed, updateHandler, config, Swizzled, ...rest }) => {
+export const MenuPctInput = ({ current, changed, updateHandler, config, ...rest }) => {
   const factor = 100
-  let pctCurrent = changed ? Swizzled.methods.menuRoundPct(current, factor) : current
+  let pctCurrent = changed ? menuRoundPct(current, factor) : current
   const pctUpdateHandler = useCallback(
     (path, newVal) =>
-      updateHandler(
-        path,
-        newVal === undefined ? undefined : Swizzled.methods.menuRoundPct(newVal, 1 / factor)
-      ),
+      updateHandler(path, newVal === undefined ? undefined : menuRoundPct(newVal, 1 / factor)),
     [updateHandler]
   )
 
   return (
-    <Swizzled.components.MenuSliderInput
+    <MenuSliderInput
       {...{
         ...rest,
-        config: { ...config, dflt: Swizzled.methods.menuRoundPct(config.dflt, factor) },
+        config: { ...config, dflt: menuRoundPct(config.dflt, factor) },
         current: pctCurrent,
         updateHandler: pctUpdateHandler,
         suffix: '%',
-        valFormatter: Swizzled.methods.round,
+        valFormatter: round,
         changed,
       }}
     />
@@ -293,7 +282,6 @@ export const MenuSliderInput = ({
   setReset,
   children,
   changed,
-  Swizzled,
 }) => {
   const { max, min } = config
   const handleChange = useSharedHandlers({
@@ -310,10 +298,9 @@ export const MenuSliderInput = ({
     return (
       <>
         <div className="flex flex-row justify-between">
-          <Swizzled.components.MenuEditOption
+          <MenuEditOption
             {...{
               config,
-              Swizzled,
               current: val,
               handleChange,
               min,
@@ -354,8 +341,8 @@ export const MenuSliderInput = ({
 
 export const MenuEditOption = (props) => {
   const [manualEdit, setManualEdit] = useState(props.current)
-  const { config, handleChange, Swizzled } = props
-  const type = Swizzled.methods.designOptionType(config)
+  const { config, handleChange } = props
+  const type = designOptionType(config)
 
   const onUpdate = useCallback(
     (validVal) => {
@@ -370,14 +357,12 @@ export const MenuEditOption = (props) => {
   return (
     <div className="form-control mb-2 w-full">
       <label className="label font-medium text-accent">
-        <em>
-          {Swizzled.methods.t('pe:enterCustomValue')} ({Swizzled.config.menuOptionEditLabels[type]})
-        </em>
+        <em>Enter a custom value ({config.menuOptionEditLabels[type]})</em>
       </label>
       <label className="input-group input-group-sm flex flex-row items-center gap-2 -mt-4">
-        <Swizzled.components.NumberInput value={manualEdit} update={setManualEdit} />
+        <NumberInput value={manualEdit} update={setManualEdit} />
         <button className="btn btn-secondary mt-4" onClick={() => onUpdate(manualEdit)}>
-          <Swizzled.components.ApplyIcon />
+          <ApplyIcon />
         </button>
       </label>
     </div>
@@ -427,16 +412,13 @@ const useBoolConfig = (name, config) => {
 
 /** an input for the 'only' setting. toggles individual parts*/
 export const MenuOnlySettingInput = (props) => {
-  const { Swizzled, config } = props
-  const { t } = Swizzled.methods
+  const { config } = props
   config.sideBySide = true
   config.titleMethod = (entry, t) => {
     const chunks = entry.split('.')
     return <span className="font-medium text-base">{t(`${chunks[0]}:${chunks[1]}`)}</span>
   }
-  config.valueMethod = (entry) => (
-    <span className="text-sm">{Swizzled.methods.capitalize(entry.split('.')[0])}</span>
-  )
+  config.valueMethod = (entry) => <span className="text-sm">{capitalize(entry.split('.')[0])}</span>
   config.dense = true
   // Sort alphabetically (translated)
   const order = []
@@ -447,13 +429,11 @@ export const MenuOnlySettingInput = (props) => {
   order.sort()
   config.list = order.map((entry) => entry.split('|')[1])
 
-  return <Swizzled.components.MenuListInput {...props} />
+  return <MenuListInput {...props} />
 }
 
 export const MenuUxSettingInput = (props) => {
-  const { state, update, Swizzled } = props
+  const { state, update } = props
 
-  return (
-    <Swizzled.components.MenuListInput {...props} updateHandler={update.ui} current={state.ui.ux} />
-  )
+  return <MenuListInput {...props} updateHandler={update.ui} current={state.ui.ux} />
 }

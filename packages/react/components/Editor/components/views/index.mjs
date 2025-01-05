@@ -2,19 +2,8 @@ import React from 'react'
 import { ViewPicker } from './ViewPicker.mjs'
 import { DesignsView } from './DesignsView.mjs'
 import { MeasurementsView } from './MeasurementsView.mjs'
+import { DraftView } from './DraftView.mjs'
 import { ErrorIcon } from '@freesewing/react/components/Icon'
-
-/*
- * This allows us to load a view component from the view name
- */
-export const viewComponents = {
-  //  DraftView,
-  DesignsView,
-  //  SaveView,
-  ViewPicker,
-  MeasurementsView,
-  //  UndosView,
-}
 
 /*
  * This returns a view-specific component
@@ -24,6 +13,7 @@ export const View = (props) => {
 
   if (view === 'designs') return <DesignsView {...props} />
   if (view === 'measurements') return <MeasurementsView {...props} />
+  if (view === 'draft') return <DraftView {...props} />
   /*
   viewComponents: {
     draft: 'DraftView',
@@ -44,7 +34,7 @@ export const View = (props) => {
   },
   */
 
-  return <p>No view component for view {props.view}</p>
+  return <h1 className="tw-ext-center tw-my-12">No view component for view {props.view}</h1>
 }
 
 /*

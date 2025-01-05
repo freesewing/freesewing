@@ -5,7 +5,7 @@ import React, { useState } from 'react'
  * So instead, we handle this in React state
  */
 const getProps = (isActive) => ({
-  className: `tw-p-2 tw-px-4 tw-rounded-lg tw-bg-transparent tw-shadow
+  className: `tw-p-2 tw-px-4 tw-rounded-lg tw-bg-transparent tw-shadow hover:tw-cursor-pointer
     tw-w-full tw-mt-2 tw-py-4 tw-h-auto tw-content-start tw-text-left tw-bg-opacity-20
     ${isActive ? 'hover:tw-bg-transparent' : 'hover:tw-bg-secondary hover:tw-bg-opacity-10'}`,
 })
@@ -41,7 +41,10 @@ export const BaseAccordion = ({
         .map((item, i) =>
           active === item[2] ? (
             <div key={i} {...propsGetter(true)}>
-              <Component onClick={setActive} className="tw-w-full hover:tw-cursor-pointer">
+              <Component
+                onClick={setActive}
+                className="tw-w-full tw-bg-transparent tw-border-0 hover:tw-bg-secondary hover:tw-bg-opacity-20  hover:tw-cursor-pointer"
+              >
                 {item[0]}
               </Component>
               {item[1]}

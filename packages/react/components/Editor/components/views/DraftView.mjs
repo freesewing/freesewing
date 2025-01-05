@@ -1,34 +1,43 @@
+// Dependencies
+import React from 'react'
+import { draft, missingMeasurements } from '../../lib/index.mjs'
+// Components
+import { Null } from '../Null.mjs'
+import { ZoomablePattern } from '../ZoomablePattern.mjs'
+import { PatternLayout } from '../PatternLayout.mjs'
+import { DraftMenu } from '../menus/DraftMenu.mjs'
+
 /**
  * The draft view allows users to tweak their pattern
  *
  * @param (object) props - All the props
+ * @param {function} props.config - The editor configuration
  * @param {function} props.Design - The design constructor
  * @param {array} props.missingMeasurements - List of missing measurements for the current design
  * @param {object} props.state - The ViewWrapper state object
  * @param {object} props.state.settings - The current settings
  * @param {object} props.update - Helper object for updating the ViewWrapper state
- * @param {object} props.Swizzled - An object holding swizzled code
  * @return {function} DraftView - React component
  */
-export const DraftView = ({ Design, state, update, Swizzled }) => {
+export const DraftView = ({ Design, state, update, config }) => {
   /*
    * Don't trust that we have all measurements
    *
    * We do not need to change the view here. That is done in the central
    * ViewWrapper componenet. However, checking the measurements against
    * the design takes a brief moment, so this component will typically
-   * render before that happens, and if measurments are missing it will
+   * render before that happens, and if measurements are missing it will
    * throw and error.
    *
    * So when measurements are missing, we just return here and the view
    * will switch on the next render loop.
    */
-  if (Swizzled.methods.missingMeasurements(state)) return null
+  if (missingMeasurements(state)) return <Null />
 
   /*
    * First, attempt to draft
    */
-  const { pattern } = Swizzled.methods.draft(Design, state.settings)
+  const { pattern } = draft(Design, state.settings)
 
   let output = null
   let renderProps = false
@@ -36,9 +45,9 @@ export const DraftView = ({ Design, state, update, Swizzled }) => {
     try {
       const __html = pattern.render()
       output = (
-        <Swizzled.components.ZoomablePattern>
+        <ZoomablePattern>
           <div className="w-full h-full" dangerouslySetInnerHTML={{ __html }} />
-        </Swizzled.components.ZoomablePattern>
+        </ZoomablePattern>
       )
     } catch (err) {
       console.log(err)
@@ -46,7 +55,7 @@ export const DraftView = ({ Design, state, update, Swizzled }) => {
   } else {
     renderProps = pattern.getRenderProps()
     output = (
-      <Swizzled.components.ZoomablePattern
+      <ZoomablePattern
         renderProps={renderProps}
         patternLocale={state.locale || 'en'}
         rotate={state.ui.rotate}
@@ -55,13 +64,9 @@ export const DraftView = ({ Design, state, update, Swizzled }) => {
   }
 
   return (
-    <Swizzled.components.PatternLayout
-      {...{ update, Design, output, state, pattern }}
-      menu={
-        state.ui?.aside ? (
-          <Swizzled.components.DraftMenu {...{ Design, pattern, update, state }} />
-        ) : null
-      }
+    <PatternLayout
+      {...{ update, Design, output, state, pattern, config }}
+      menu={state.ui?.aside ? <DraftMenu {...{ Design, pattern, update, state }} /> : null}
     />
   )
 }

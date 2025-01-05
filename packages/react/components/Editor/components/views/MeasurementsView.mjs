@@ -1,7 +1,7 @@
 // Dependencies
-import { horFlexClasses } from '../../utils.mjs'
 import { t, designMeasurements } from '../../lib/index.mjs'
 import { capitalize } from '@freesewing/utils'
+import { measurements as measurementsTranslations } from '@freesewing/i18n'
 // Hooks
 import React, { Fragment, useEffect } from 'react'
 // Components
@@ -17,7 +17,11 @@ import { MeasurementsEditor } from '../MeasurementsEditor.mjs'
 import { SetPicker, BookmarkedSetPicker, CuratedSetPicker, UserSetPicker } from '../Set.mjs'
 import { HeaderMenu } from '../HeaderMenu.mjs'
 
-const iconClasses = { className: 'w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink-0', stroke: 1.5 }
+const iconClasses = {
+  className: 'tw-w-8 tw-h-8 md:tw-w-10 md:tw-h-10 lg:tw-w-12 lg:tw-h-12 tw-shrink-0',
+  stroke: 1.5,
+}
+const horFlexClasses = 'tw-flex tw-flex-row tw-items-center tw-justify-between tw-gap-4 tw-w-full'
 
 /**
  * The measurements view is loaded to update/set measurements
@@ -40,7 +44,13 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
   useEffect(() => {
     if (!config?.views || !config.views.includes(state.view)) update.view('measurements')
     if (state._.missingMeasurements && state._.missingMeasurements.length > 0)
-      update.notify({ msg: t('pe:missingMeasurementsNotify'), icon: 'tip' }, 'missingMeasurements')
+      update.notify(
+        {
+          msg: 'To generate this pattern, we need some additional measurements',
+          icon: 'tip',
+        },
+        'missingMeasurements'
+      )
     else update.notifySuccess(t('pe:measurementsAreOk'))
   }, [state.view, update])
 
@@ -48,9 +58,9 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
     update.settings(['measurements'], designMeasurements(Design, set.measies))
     update.settings(['units'], set.imperial ? 'imperial' : 'metric')
     // Save the measurement set name to pattern settings
-    if (set[`name${capitalize(locale)}`])
+    if (set.nameEn)
       // Curated measurement set
-      update.settings(['metadata'], { setName: set[`name${capitalize(locale)}`] })
+      update.settings(['metadata'], { setName: set.nameEn })
     else if (set.name)
       // User measurement set
       update.settings(['metadata'], { setName: set.name })
@@ -63,10 +73,13 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
       [
         <Fragment key={1}>
           <div className={horFlexClasses}>
-            <h5 id="ownsets">{t('pe:chooseFromOwnSets')}</h5>
+            <h4 id="ownsets">Choose one of your own measurements sets</h4>
             <MeasurementsSetIcon {...iconClasses} />
           </div>
-          <p className="text-left">{t('pe:chooseFromOwnSetsDesc')}</p>
+          <p className="tw-text-left">
+            Pick any of your own measurements sets that have all required measurements to generate
+            this pattern.
+          </p>
         </Fragment>,
         <UserSetPicker
           key={2}
@@ -80,10 +93,12 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
       [
         <Fragment key={1}>
           <div className={horFlexClasses}>
-            <h5 id="bookmarkedsets">{t('pe:chooseFromBookmarkedSets')}</h5>
+            <h4 id="bookmarkedsets">Choose one of the measurements sets you have bookmarked</h4>
             <BookmarkIcon {...iconClasses} />
           </div>
-          <p className="text-left">{t('pe:chooseFromBookmarkedSetsDesc')}</p>
+          <p className="tw-text-left">
+            If you have bookmarked any measurements sets, you can select from those too.
+          </p>
         </Fragment>,
         <BookmarkedSetPicker
           key={2}
@@ -97,10 +112,13 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
       [
         <Fragment key={1}>
           <div className={horFlexClasses}>
-            <h5 id="curatedsets">{t('pe:chooseFromCuratedSets')}</h5>
+            <h4 id="curatedsets">Choose one of FreeSewing&apos;s curated measurements sets</h4>
             <CuratedMeasurementsSetIcon {...iconClasses} />
           </div>
-          <p className="text-left">{t('pe:chooseFromCuratedSetsDesc')}</p>
+          <p className="tw-text-left">
+            If you&apos;re just looking to try out our platform, you can select from our list of
+            curated measurements sets.
+          </p>
         </Fragment>,
         <CuratedSetPicker key={2} clickHandler={loadMeasurements} {...{ config, Design }} />,
         'csets',
@@ -110,10 +128,10 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
   items.push([
     <Fragment key={1}>
       <div className={horFlexClasses}>
-        <h5 id="editmeasurements">{t('pe:editMeasurements')}</h5>
+        <h4 id="editmeasurements">Edit Measurements</h4>
         <EditIcon {...iconClasses} />
       </div>
-      <p className="text-left">{t('pe:editMeasurementsDesc')}</p>
+      <p className="tw-text-left">You can manually set or override measurements below.</p>
     </Fragment>,
     <MeasurementsEditor key={2} {...{ Design, config, update, state }} />,
     'edit',
@@ -122,35 +140,38 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
   return (
     <>
       <HeaderMenu state={state} {...{ config, update }} />
-      <div className="max-w-7xl mt-8 mx-auto px-4">
-        <h2>{t('pe:measurements')}</h2>
+      <div className="tw-max-w-7xl tw-mt-8 tw-mx-auto tw-px-4 tw-mb-4">
+        <h1 className="tw-text-center">Measurements</h1>
         {missingMeasurements && missingMeasurements.length > 0 ? (
           <Popout note dense noP>
-            <h5>{t('pe:missingMeasurementsInfo')}:</h5>
-            <ol className="list list-inside flex flex-row flex-wrap">
+            <h3>
+              To generate this pattern, we need {missingMeasurements.length} additional measurement
+              {missingMeasurements.length === 1 ? '' : 's'}:
+            </h3>
+            <ol className="tw-list tw-list-inside tw-flex tw-flex-row tw-flex-wrap tw-ml-0 tw-pl-0">
               {missingMeasurements.map((m, i) => (
-                <li key={i}>
-                  {i > 0 ? <span className="pr-2">,</span> : null}
-                  <span className="font-medium">{t(`measurements:${m}`)}</span>
+                <li key={i} className="tw-flex">
+                  {i > 0 ? <span className="tw-pr-2">,</span> : null}
+                  <span className="tw-font-medium">{measurementsTranslations[m]}</span>
                 </li>
               ))}
             </ol>
-            <p className="text-sm m-0 p-0 pt-2">
-              ({missingMeasurements.length} {t('pe:missingMeasurements')})
-            </p>
           </Popout>
         ) : (
           <Popout tip dense noP>
-            <h5>{t('pe:measurementsAreOk')}</h5>
-            <div className="flex flex-row flex-wrap gap-2 mt-2">
-              <button className="btn btn-primary lg:btn-lg" onClick={() => update.view('draft')}>
-                {t('pe:view.draft.t')}
+            <h5>We have all required measurements to draft this pattern</h5>
+            <div className="tw-flex tw-flex-row tw-flex-wrap tw-gap-2 tw-mt-2">
+              <button
+                className="tw-daisy-btn tw-daisy-btn-primary lg:tw-daisy-btn-lg"
+                onClick={() => update.view('draft')}
+              >
+                {viewLabels.draft.t}
               </button>
               <button
-                className="btn btn-primary btn-outline lg:btn-lg"
+                className="tw-daisy-btn tw-daisy-btn-primary tw-daisy-btn-outline lg:tw-daisy-btn-lg"
                 onClick={() => update.view('picker')}
               >
-                {t('pe:chooseAnotherActivity')}
+                Choose a different view
               </button>
             </div>
           </Popout>

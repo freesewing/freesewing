@@ -1,4 +1,6 @@
+import React from 'react'
 import { MeasurementInput } from '@freesewing/react/components/Input'
+import { measurements as measurementsTranslations } from '@freesewing/i18n'
 
 /**
  * This MeasurementsEditor component allows inline-editing of the measurements
@@ -19,8 +21,8 @@ export const MeasurementsEditor = ({ Design, update, state }) => {
   }
 
   return (
-    <div className="max-w-2xl">
-      <h5>Required Measurments</h5>
+    <div className="tw-max-w-2xl tw-mx-auto">
+      <h4>Required Measurements</h4>
       {Object.keys(Design.patternConfig.measurements).length === 0 ? (
         <p>This design does not require any measurements.</p>
       ) : (
@@ -38,7 +40,7 @@ export const MeasurementsEditor = ({ Design, update, state }) => {
           <br />
         </div>
       )}
-      <h5>Optional Measurements</h5>
+      <h4>Optional Measurements</h4>
       {Object.keys(Design.patternConfig.optionalMeasurements).length === 0 ? (
         <p>This design does not use any optional measurements.</p>
       ) : (

@@ -1,33 +1,32 @@
-import { useState, useEffect } from 'react'
-import orderBy from 'lodash.orderby'
+// Dependencies
+import { capitalize, cloudflareImageUrl, hasRequiredMeasurements, orderBy } from '@freesewing/utils'
+// Hooks
+import React, { useState, useEffect } from 'react'
+import { useBackend } from '@freesewing/react/hooks/useBackend'
+// Components
+import { Popout } from '@freesewing/react/components/Popout'
+import { MsetCard } from '@freesewing/react/components/Account'
 
 export const UserSetPicker = ({
   Design,
   clickHandler,
   missingClickHandler,
   size = 'lg',
-  Swizzled,
+  config,
 }) => {
-  // Swizzled components
-  const { Popout, MeasurementsSetCard } = Swizzled.components
-  // Swizzled hooks
-  const { useBackend } = Swizzled.hooks
+  // Hooks
   const backend = useBackend()
-  // Swizzled methods
-  const { t, hasRequiredMeasurements } = Swizzled.methods
-  // Swizzled config
-  const { config } = Swizzled
 
-  // Local state
+  // State (local)
   const [sets, setSets] = useState({})
 
   // Effects
   useEffect(() => {
     const getSets = async () => {
-      const result = await backend.getSets()
-      if (result.success) {
+      const [status, body] = await backend.getSets()
+      if (status === 200 && body.result === 'success') {
         const all = {}
-        for (const set of result.data.sets) all[set.id] = set
+        for (const set of body.sets) all[set.id] = set
         setSets(all)
       }
     }
@@ -47,21 +46,26 @@ export const UserSetPicker = ({
 
   if (!hasSets)
     return (
-      <div className="w-full max-w-3xl mx-auto">
+      <div className="tw-w-full tw-max-w-3xl tw-mx-auto">
         <Popout tip>
-          <h5>{t('pe:noOwnSets')}</h5>
-          <p className="">{t('pe:noOwnSetsMsg')}</p>
+          <h5> You do not (yet) have any of your own measurements sets</h5>
+          <p>
+            You can store your measurements as a measurements set, after which you can generate as
+            many patterns as you want for them.
+          </p>
           {config.hrefNewSet ? (
             <a
               href={config.hrefNewSet}
-              className="btn btn-accent capitalize"
+              className="tw-daisy-btn tw-daisy-btn-accent tw-capitalize"
               target="_BLANK"
               rel="nofollow"
             >
-              {t('pe:newSet')}
+              Create a new measurements set
             </a>
           ) : null}
-          <p className="text-sm">{t('pe:pleaseMtm')}</p>
+          <p className="tw-text-sm">
+            Because our patterns are bespoke, we strongly suggest you take accurate measurements.
+          </p>
         </Popout>
       </div>
     )
@@ -69,10 +73,11 @@ export const UserSetPicker = ({
   return (
     <>
       {okSets.length > 0 && (
-        <div className="flex flex-row flex-wrap gap-2">
+        <div className="tw-flex tw-flex-row tw-flex-wrap tw-gap-2">
           {okSets.map((set) => (
-            <MeasurementsSetCard
+            <MsetCard
               href={false}
+              design={Design.designConfig.data.id}
               {...{ set, Design, config }}
               onClick={clickHandler}
               key={set.id}
@@ -82,14 +87,17 @@ export const UserSetPicker = ({
         </div>
       )}
       {lackingSets.length > 0 ? (
-        <div className="my-4">
-          <Popout note compact>
-            {t('pe:someSetsLacking')}
+        <div className="tw-my-4">
+          <Popout note>
+            <h5>
+              Some of your measurements sets lack the measurements required to generate this pattern
+            </h5>
           </Popout>
-          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
+          <div className="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 lg:tw-grid-cols-6 tw-gap-2">
             {lackingSets.map((set) => (
-              <MeasurementsSetCard
+              <MsetCard
                 {...{ set, Design }}
+                design={Design.designConfig.data.id}
                 onClick={missingClickHandler}
                 href={false}
                 key={set.id}
@@ -103,41 +111,26 @@ export const UserSetPicker = ({
   )
 }
 
-export const BookmarkedSetPicker = ({
-  Design,
-  clickHandler,
-  missingClickHandler,
-  size = 'lg',
-  Swizzled,
-}) => {
-  // Swizzled components
-  const { Popout, MeasurementsSetCard } = Swizzled.components
-  // Swizzled hooks
-  const { useBackend } = Swizzled.hooks
+export const BookmarkedSetPicker = ({ Design, clickHandler, missingClickHandler, size = 'lg' }) => {
+  // Hooks
   const backend = useBackend()
-  // Swizzled methods
-  const { t, hasRequiredMeasurements } = Swizzled.methods
-  // Swizzled config
-  const { config } = Swizzled
 
-  // Local state
+  // State (local)
   const [sets, setSets] = useState({})
 
   // Effects
   useEffect(() => {
     const getBookmarks = async () => {
-      const result = await backend.getBookmarks()
+      const [status, body] = await backend.getBookmarks()
       const loadedSets = {}
-      if (result.success) {
-        for (const bookmark of result.data.bookmarks.filter(
-          (bookmark) => bookmark.type === 'set'
-        )) {
+      if (status === 200 && body.result === 'success') {
+        for (const bookmark of body.bookmarks.filter((bookmark) => bookmark.type === 'set')) {
           let set
           try {
-            set = await backend.getSet(bookmark.url.slice(6))
-            if (set.success) {
-              const [hasMeasies] = hasRequiredMeasurements(Design, set.data.set.measies)
-              loadedSets[set.data.set.id] = { ...set.data.set, hasMeasies }
+            const [status, body] = await backend.getSet(bookmark.url.slice(6))
+            if (status === 200 && body.result === 'success') {
+              const [hasMeasies] = hasRequiredMeasurements(Design, body.set.measies)
+              loadedSets[body.set.id] = { ...body.set, hasMeasies }
             }
           } catch (err) {
             console.log(err)
@@ -155,11 +148,12 @@ export const BookmarkedSetPicker = ({
   return (
     <>
       {okSets.length > 0 && (
-        <div className="flex flex-row flex-wrap gap-2">
+        <div className="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 lg:tw-grid-cols-6 tw-gap-2">
           {okSets.map((set) => (
-            <MeasurementsSetCard
+            <MsetCard
               href={false}
               {...{ set, Design, config }}
+              design={Design.designConfig.data.id}
               onClick={clickHandler}
               key={set.id}
               size={size}
@@ -168,15 +162,19 @@ export const BookmarkedSetPicker = ({
         </div>
       )}
       {lackingSets.length > 0 && (
-        <div className="my-4">
-          <Popout note compact>
-            {t('pe:someSetsLacking')}
+        <div className="tw-my-4">
+          <Popout note>
+            <h5>
+              Some of these measurements sets lack the measurements required to generate this
+              pattern
+            </h5>
           </Popout>
-          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
+          <div className="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 lg:tw-grid-cols-6 tw-gap-2">
             {lackingSets.map((set) => (
-              <MeasurementsSetCard
+              <MsetCard
                 href={false}
                 {...{ set, Design }}
+                design={Design.designConfig.data.id}
                 onClick={missingClickHandler}
                 key={set.id}
                 size={size}
@@ -189,23 +187,20 @@ export const BookmarkedSetPicker = ({
   )
 }
 
-export const CuratedSetPicker = ({ clickHandler, Swizzled, locale }) => {
-  // Swizzled components
-  const { CuratedMeasurementsSetLineup } = Swizzled.components
-  // Swizzled hooks
-  const { useBackend } = Swizzled.hooks
+export const CuratedSetPicker = ({ clickHandler }) => {
+  // Hooks
   const backend = useBackend()
 
-  // Local state
+  // State (local)
   const [sets, setSets] = useState([])
 
   // Effects
   useEffect(() => {
     const getSets = async () => {
-      const result = await backend.getCuratedSets()
-      if (result.success) {
+      const [status, body] = await backend.getCuratedSets()
+      if (status === 200 && body.result === 'success') {
         const allSets = {}
-        for (const set of result.data.curatedSets) {
+        for (const set of body.curatedSets) {
           if (set.published) allSets[set.id] = set
         }
         setSets(allSets)
@@ -215,11 +210,50 @@ export const CuratedSetPicker = ({ clickHandler, Swizzled, locale }) => {
   }, [])
 
   return (
-    <div className="max-w-7xl xl:pl-4">
+    <div className="tw-max-w-7xl">
       <CuratedMeasurementsSetLineup
-        {...{ locale, clickHandler }}
+        clickHandler={clickHandler}
         sets={orderBy(sets, 'height', 'asc')}
       />
     </div>
   )
 }
+
+export const CuratedMeasurementsSetLineup = ({ sets = [], clickHandler }) => (
+  <div
+    className={`tw-w-full tw-flex tw-flex-row ${
+      sets.length > 1 ? 'tw-justify-start tw-px-8' : 'tw-justify-center'
+    } tw-overflow-x-scroll`}
+    style={{
+      backgroundImage: `url(/img/lineup-backdrop.svg)`,
+      width: 'auto',
+      backgroundSize: 'auto 100%',
+      backgroundRepeat: 'repeat-x',
+    }}
+  >
+    {sets.map((set) => {
+      const props = {
+        className:
+          'tw-aspect-[1/3] tw-w-auto tw-h-96 tw-bg-transparent tw-border-0 hover:tw-cursor-pointer tw-grayscale hover:tw-grayscale-0',
+        style: {
+          backgroundImage: `url(${cloudflareImageUrl({
+            id: `cset-${set.id}`,
+            type: 'lineup',
+          })})`,
+          width: 'auto',
+          backgroundSize: 'contain',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+        },
+        onClick: () => clickHandler(set),
+      }
+
+      return (
+        <div className="tw-flex tw-flex-col tw-items-center" key={set.id}>
+          <button {...props} key={set.id}></button>
+          <b>{set.nameEn}</b>
+        </div>
+      )
+    })}
+  </div>
+)

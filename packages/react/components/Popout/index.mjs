@@ -72,7 +72,7 @@ export const Popout = (props) => {
     >
       <div
         className={`
-          tw-border-y-4 sm:tw-border-0 sm:tw-border-l-4 tw-px-6 sm:tw-px-8 tw-py-4 sm:tw-py-2
+          tw-border-y-4 tw-border-x-0 sm:tw-border-0 sm:tw-border-l-4 tw-px-6 sm:tw-px-8 tw-py-4 sm:tw-py-2
           tw-shadow tw-text-base tw-border-${color} tw-border-solid
         `}
       >

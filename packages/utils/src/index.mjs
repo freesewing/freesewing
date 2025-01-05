@@ -227,6 +227,36 @@ export function getSearchParam(name = 'id') {
   return new URLSearchParams(window.location.search).get(name) // eslint-disable-line
 }
 
+/**
+ * Helper method to determine whether all required measurements for a design are present
+ *
+ * @param {object} Design - The FreeSewing design (or a plain object holding measurements)
+ * @param {object} measurements - An object holding the user's measurements
+ * @return {array} result - An array where the first element is true when we
+ * have all measurements, and false if not. The second element is a list of
+ * missing measurements.
+ */
+export function hasRequiredMeasurements(Design, measurements = {}) {
+  /*
+   * If design is just a plain object holding measurements, we restructure it as a Design
+   * As it happens, this method is smart enough to test for this, so we call it always
+   */
+  Design = structureMeasurementsAsDesign(Design)
+
+  /*
+   * Walk required measurements, and keep track of what's missing
+   */
+  const missing = []
+  for (const m of Design.patternConfig?.measurements || []) {
+    if (typeof measurements[m] === 'undefined') missing.push(m)
+  }
+
+  /*
+   * Return true or false, plus a list of missing measurements
+   */
+  return [missing.length === 0, missing]
+}
+
 /*
  * Convert a measurement to millimeter
  *
@@ -413,6 +443,15 @@ export function shortDate(timestamp = false, withTime = true) {
  */
 export const shortUuid = (uuid) => uuid.slice(0, 5)
 
+/*
+ * This takes a POJO of measurements, and turns it into a structure that matches a design object
+ *
+ * @param {object} measurements - The POJO of measurments
+ * @return {object} design - The measurements structured as a design object
+ */
+export function structureMeasurementsAsDesign(measurements) {
+  return measurements.patternConfig ? measurements : { patternConfig: { measurements } }
+}
 /*
  * We used to use react-timeago but that's too much overhead
  * This is a drop-in replacement that does not rerender

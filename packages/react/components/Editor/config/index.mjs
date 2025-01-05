@@ -5,7 +5,7 @@ export const defaultConfig = {
   // Enable use of a (FreeSewing) backend to load data from
   enableBackend: true,
   // Link to create a new measurements set, set to false to disable
-  hrefNewSet: 'https://freesewing.org/new/set',
+  hrefNewSet: '/new/set',
   // Cloud default image
   cloudImageDflt:
     'https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/365cc64e-1502-4d2b-60e0-cc8beee73f00/public',
@@ -55,12 +55,6 @@ export const defaultConfig = {
     list: 'ListOptionValue',
     mm: 'MmOptionValue',
     pct: 'PctOptionValue',
-  },
-  // Facilitate custom handlers for core settings
-  menuCoreSettingsHandlerMethods: {
-    only: 'menuCoreSettingsOnlyHandler',
-    sabool: 'menuCoreSettingsSaboolHandler',
-    samm: 'menuCoreSettingsSammHandler',
   },
   menuGroupEmojis: {
     advanced: '🤓',

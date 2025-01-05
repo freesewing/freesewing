@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import { Spinner } from '@freesewing/react/components/Spinner'
+import { TipIcon } from '@freesewing/react/components/Icon'
+import { Null } from './Null.mjs'
 
 const config = {
   timeout: 2,
@@ -7,6 +9,11 @@ const config = {
     color: 'secondary',
     icon: 'Spinner',
   },
+}
+
+const icons = {
+  tip: TipIcon,
+  spinner: Spinner,
 }
 
 export const LoadingStatus = ({ state, update }) => {
@@ -28,26 +35,26 @@ export const LoadingStatus = ({ state, update }) => {
   if (!state._.loading || Object.keys(state._.loading).length < 1) return null
 
   return (
-    <div className="fixed bottom-0 md:buttom-28 left-0 w-full z-30 md:px-4 md:mx-auto mb-4">
-      <div className="flex flex-col gap-2">
+    <div className="tw-fixed tw-bottom-4 md:tw-buttom-28 tw-left-0 tw-w-full tw-z-30 md:tw-px-4 md:tw-mx-auto mb-4">
+      <div className="tw-flex tw-flex-col tw-gap-2">
         {Object.entries(state._.loading).map(([id, custom]) => {
           const conf = {
             ...config.defaults,
             ...custom,
           }
-          const Icon = typeof conf.icon === 'undefined' ? Spinner : Spinner //Swizzled.components[`${Swizzled.methods.capitalize(conf.icon)}Icon`] || Swizzled.components.Noop
+          const Icon = icons[conf.icon] ? icons[conf.icon] : Null
           return (
             <div
               key={id}
-              className={`w-full md:max-w-2xl m-auto bg-${
+              className={`tw-w-full md:tw-max-w-2xl tw-m-auto tw-bg-${
                 conf.color
-              } flex flex-row items-center gap-4 p-4 px-4 ${
-                conf.fading ? 'opacity-0' : 'opacity-100'
+              } tw-flex tw-flex-row tw-items-center tw-gap-4 tw-p-4 tw-px-4 ${
+                conf.fading ? 'tw-opacity-0' : 'tw-opacity-100'
               }
-              transition-opacity delay-[${config.timeout * 1000 - 400}ms] duration-300
-              md:rounded-lg shadow text-secondary-content text-lg lg:text-xl font-medium md:bg-opacity-90`}
+              tw-transition-opacity tw-delay-[${config.timeout * 1000 - 400}ms] tw-duration-300
+              md:tw-rounded-lg tw-shadow tw-text-secondary-content tw-text-lg lg:tw-text-xl tw-font-medium md:tw-bg-opacity-90`}
             >
-              <span className="shrink-0">
+              <span className="tw-shrink-0">
                 <Icon />
               </span>
               {conf.msg}

@@ -1,13 +1,32 @@
-export function defaultSa(Swizzled, units, inMm = true) {
+// Dependencies
+import { defaultConfig as config } from '../config/index.mjs'
+import { measurementAsMm } from '@freesewing/utils'
+/*
+ * Components
+ * Note that these are only used as returns values
+ * There's no JSX in here so no React import needed
+ */
+import {
+  DetailIcon,
+  ExpandIcon,
+  IncludeIcon,
+  MarginIcon,
+  PaperlessIcon,
+  SaIcon,
+  ScaleIcon,
+  UnitsIcon,
+} from '@freesewing/react/components/Icon'
+
+export function defaultSa(units, inMm = true) {
   const dflt = units === 'imperial' ? 0.5 : 1
-  return inMm ? Swizzled.methods.measurementAsMm(dflt, units) : dflt
+  return inMm ? measurementAsMm(dflt, units) : dflt
 }
-export function defaultSamm(Swizzled, units, inMm = true) {
+export function defaultSamm(units, inMm = true) {
   const dflt = units === 'imperial' ? 0.5 : 1
-  return inMm ? Swizzled.methods.measurementAsMm(dflt, units) : dflt
+  return inMm ? measurementAsMm(dflt, units) : dflt
 }
 /** custom event handlers for inputs that need them */
-export function menuCoreSettingsOnlyHandler(Swizzled, { updateHandler, current }) {
+export function menuCoreSettingsOnlyHandler({ updateHandler, current }) {
   return function (path, part) {
     // Is this a reset?
     if (part === undefined || part === '__UNSET__') return updateHandler(path, part)
@@ -26,7 +45,7 @@ export function menuCoreSettingsOnlyHandler(Swizzled, { updateHandler, current }
   }
 }
 
-export function menuCoreSettingsSammHandler(Swizzled, { updateHandler, config }) {
+export function menuCoreSettingsSammHandler({ updateHandler, config }) {
   return function (_path, newCurrent) {
     // convert to millimeters if there's a value
     newCurrent = newCurrent === undefined ? config.dflt : newCurrent
@@ -36,16 +55,13 @@ export function menuCoreSettingsSammHandler(Swizzled, { updateHandler, config })
   }
 }
 
-export function menuCoreSettingsSaboolHandler(Swizzled, { toggleSa }) {
+export function menuCoreSettingsSaboolHandler({ toggleSa }) {
   return toggleSa
 }
-export function menuCoreSettingsStructure(
-  Swizzled,
-  { units = 'metric', sabool = false, parts = [] }
-) {
+export function menuCoreSettingsStructure({ units = 'metric', sabool = false, parts = [] }) {
   return {
     sabool: {
-      ux: Swizzled.config.uxLevels.core.sa,
+      ux: config.uxLevels.core.sa,
       list: [0, 1],
       choiceTitles: {
         0: 'saNo',
@@ -56,19 +72,19 @@ export function menuCoreSettingsStructure(
         1: 'yes',
       },
       dflt: 0,
-      icon: Swizzled.components.SaIcon,
+      icon: SaIcon,
     },
     samm: sabool
       ? {
-          ux: Swizzled.config.uxLevels.core.sa,
+          ux: config.uxLevels.core.sa,
           min: 0,
           max: units === 'imperial' ? 2 : 2.5,
-          dflt: Swizzled.methods.defaultSamm(units),
-          icon: Swizzled.components.SaIcon,
+          dflt: defaultSamm(units),
+          icon: SaIcon,
         }
       : false,
     paperless: {
-      ux: Swizzled.config.uxLevels.core.paperless,
+      ux: config.uxLevels.core.paperless,
       list: [0, 1],
       choiceTitles: {
         0: 'paperlessNo',
@@ -79,10 +95,10 @@ export function menuCoreSettingsStructure(
         1: 'yes',
       },
       dflt: 0,
-      icon: Swizzled.components.PaperlessIcon,
+      icon: PaperlessIcon,
     },
     units: {
-      ux: Swizzled.config.uxLevels.core.units,
+      ux: config.uxLevels.core.units,
       list: ['metric', 'imperial'],
       dflt: 'metric',
       choiceTitles: {
@@ -93,10 +109,10 @@ export function menuCoreSettingsStructure(
         metric: 'metric',
         imperial: 'imperial',
       },
-      icon: Swizzled.components.UnitsIcon,
+      icon: UnitsIcon,
     },
     complete: {
-      ux: Swizzled.config.uxLevels.core.complete,
+      ux: config.uxLevels.core.complete,
       list: [1, 0],
       dflt: 1,
       choiceTitles: {
@@ -107,10 +123,10 @@ export function menuCoreSettingsStructure(
         0: 'no',
         1: 'yes',
       },
-      icon: Swizzled.components.DetailIcon,
+      icon: DetailIcon,
     },
     expand: {
-      ux: Swizzled.config.uxLevels.core.expand,
+      ux: config.uxLevels.core.expand,
       list: [1, 0],
       dflt: 1,
       choiceTitles: {
@@ -121,29 +137,29 @@ export function menuCoreSettingsStructure(
         0: 'no',
         1: 'yes',
       },
-      icon: Swizzled.components.ExpandIcon,
+      icon: ExpandIcon,
     },
     only: {
-      ux: Swizzled.config.uxLevels.core.only,
+      ux: config.uxLevels.core.only,
       dflt: false,
       list: parts,
       parts,
-      icon: Swizzled.components.IncludeIcon,
+      icon: IncludeIcon,
     },
     scale: {
-      ux: Swizzled.config.uxLevels.core.scale,
+      ux: config.uxLevels.core.scale,
       min: 0.1,
       max: 5,
       dflt: 1,
       step: 0.1,
-      icon: Swizzled.components.ScaleIcon,
+      icon: ScaleIcon,
     },
     margin: {
-      ux: Swizzled.config.uxLevels.core.margin,
+      ux: config.uxLevels.core.margin,
       min: 0,
       max: 2.5,
-      dflt: Swizzled.methods.measurementAsMm(units === 'imperial' ? 0.125 : 0.2, units),
-      icon: Swizzled.components.MarginIcon,
+      dflt: measurementAsMm(units === 'imperial' ? 0.125 : 0.2, units),
+      icon: MarginIcon,
     },
   }
 }

@@ -1,6 +1,8 @@
 // Dependencies
 import { measurements } from '@freesewing/config'
-import { cloudflareImageUrl, capitalize } from '@freesewing/utils'
+import { measurements as measurementsTranslations } from '@freesewing/i18n'
+import { requiredMeasurements as designMeasurements } from '@freesewing/collection'
+import { cloudflareImageUrl, capitalize, hasRequiredMeasurements } from '@freesewing/utils'
 // Context
 import { LoadingStatusContext } from '@freesewing/react/context/LoadingStatus'
 import { ModalContext } from '@freesewing/react/context/Modal'
@@ -201,7 +203,8 @@ export const MsetCard = ({
   const s = sizes[size]
 
   const wrapperProps = {
-    className: `tw-bg-base-300 tw-aspect-square tw-h-${s} tw-w-${s} tw-mb-2 tw-grow
+    className: `tw-bg-base-300 tw-aspect-square tw-h-${s} tw-w-${s} tw-mb-2 tw-grow tw-w-full
+      hover:tw-cursor-pointer tw-border-0 tw-opacity-80 hover:tw-opacity-100
       tw-mx-auto tw-flex tw-flex-col tw-items-start tw-text-center tw-justify-between tw-rounded-none md:tw-rounded shadow`,
     style: {
       backgroundImage: `url(${cloudflareImageUrl({ type: 'w500', id: set.img })})`,
@@ -230,13 +233,11 @@ export const MsetCard = ({
       <NoIcon className={`${iconClasses} tw-bg-error tw-text-error-content`} stroke={3} />
     )
     if (missing.length > 0) {
-      const translated = missing.map((m) => {
-        return t(m)
-      })
-      let missingString = t('missing') + ': ' + translated.join(', ')
+      const translated = missing.map((m) => measurementsTranslations[m])
+      let missingString = 'Missing:' + translated.join(', ')
       if (missingString.length > maxLength) {
         const lastSpace = missingString.lastIndexOf(', ', maxLength)
-        missingString = missingString.substring(0, lastSpace) + ', ' + t('andMore') + '...'
+        missingString = missingString.substring(0, lastSpace) + ', and more...'
       }
       const measieClasses = 'tw-font-normal tw-text-xs'
       missingMeasies = <span className={`${measieClasses}`}>{missingString}</span>

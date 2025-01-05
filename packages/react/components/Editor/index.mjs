@@ -1,6 +1,7 @@
 // Dependencies
 import { designs } from '@freesewing/collection'
-import { hasRequiredMeasurements, initialEditorState } from './lib/index.mjs'
+import { hasRequiredMeasurements } from '@freesewing/utils'
+import { initialEditorState } from './lib/index.mjs'
 import { mergeConfig } from './config/index.mjs'
 // Hooks
 import React, { useState } from 'react'

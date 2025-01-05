@@ -6,6 +6,7 @@ import {
   distanceAsMm,
 } from '@freesewing/utils'
 import { collection } from '@freesewing/collection'
+import { measurements as measurementsTranslations } from '@freesewing/i18n'
 // Context
 import { ModalContext } from '@freesewing/react/context/Modal'
 import { LoadingStatusContext } from '@freesewing/react/context/LoadingStatus'
@@ -527,7 +528,7 @@ export const MeasurementInput = ({
   let inputClasses = 'daisy-input-secondary'
   let bottomLeftLabel = null
   if (valid === true) {
-    inputClasses = 'daisy-input-success'
+    inputClasses = 'daisy-input-success tw-outline-success'
     const val = `${validatedVal}${isDegree ? '°' : imperial ? '"' : 'cm'}`
     bottomLeftLabel = (
       <span className="tw-font-medium tw-text-base tw-text-success tw--mt-2 tw-block">{val}</span>
@@ -549,17 +550,26 @@ export const MeasurementInput = ({
    * See: https://github.com/facebook/react/issues/16554
    */
   return (
-    <FormControl label={m + (isDegree ? ' (°)' : '')} forId={id} labelBL={bottomLeftLabel}>
-      <input
-        id={id}
-        type="text"
-        inputMode="numeric"
-        pattern="[0-9]*"
-        placeholder={placeholder}
-        value={localVal}
-        onChange={(evt) => localUpdate(evt.target.value)}
-        className={`tw-daisy-input tw-w-full tw-daisy-input-bordered ${inputClasses}`}
-      />
+    <FormControl
+      label={measurementsTranslations[m] + (isDegree ? ' (°)' : '')}
+      forId={id}
+      labelBL={bottomLeftLabel}
+    >
+      <label
+        className={`tw-daisy-input tw-daisy-input-bordered tw-flex tw-items-center tw-gap-2 tw-border ${inputClasses} tw-mb-1 tw-outline tw-outline-base-300 tw-bg-transparent tw-outline-2 tw-outline-offset-2`}
+      >
+        <input
+          id={id}
+          type="text"
+          inputMode="numeric"
+          pattern="[0-9]*"
+          placeholder={placeholder}
+          value={localVal}
+          onChange={(evt) => localUpdate(evt.target.value)}
+          className={`tw-border-0 tw-grow-2 tw-w-full`}
+        />
+        {isDegree ? '°' : imperial ? 'inch' : 'cm'}
+      </label>
     </FormControl>
   )
 }

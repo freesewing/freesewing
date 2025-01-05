@@ -1,4 +1,4 @@
-export function designOptionType(Swizzled, option) {
+export function designOptionType(option) {
   if (typeof option?.pct !== 'undefined') return 'pct'
   if (typeof option?.bool !== 'undefined') return 'bool'
   if (typeof option?.count !== 'undefined') return 'count'
@@ -12,7 +12,7 @@ import { mergeOptions } from '@freesewing/core'
 import set from 'lodash.set'
 import orderBy from 'lodash.orderby'
 
-export function menuDesignOptionsStructure(Swizzled, options, settings, asFullList = false) {
+export function menuDesignOptionsStructure(options, settings, asFullList = false) {
   if (!options) return options
   const sorted = {}
   for (const [name, option] of Object.entries(options)) {
@@ -23,7 +23,7 @@ export function menuDesignOptionsStructure(Swizzled, options, settings, asFullLi
   // Fixme: One day we should sort this based on the translation
   for (const option of orderBy(sorted, ['order', 'menu', 'name'], ['asc', 'asc', 'asc'])) {
     if (typeof option === 'object') {
-      const oType = Swizzled.methods.designOptionType(option)
+      const oType = designOptionType(option)
       option.dflt = option.dflt || option[oType]
       if (oType === 'pct') option.dflt /= 100
       if (typeof option.menu === 'function')
@@ -64,17 +64,14 @@ export function menuDesignOptionsStructure(Swizzled, options, settings, asFullLi
  *
  * Since these structures can be nested with option groups, this needs some extra logic
  */
-export function getOptionStructure(Swizzled, option, Design, state) {
-  const structure = Swizzled.methods.menuDesignOptionsStructure(
-    Design.patternConfig.options,
-    state.settings
-  )
+export function getOptionStructure(option, Design, state) {
+  const structure = menuDesignOptionsStructure(Design.patternConfig.options, state.settings)
   console.log({ structure })
 
-  return Swizzled.methods.findOption(structure, option)
+  return findOption(structure, option)
 }
 
-export function findOption(Swizzled, structure, option) {
+export function findOption(structure, option) {
   for (const [key, val] of Object.entries(structure)) {
     if (key === option) return val
     if (val.isGroup) {

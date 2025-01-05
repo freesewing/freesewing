@@ -34,7 +34,7 @@ export const useEditorState = (init = {}, setEphemeralState, config) => {
     if (typeof URLSearchParams !== 'undefined') {
       try {
         const data = getHashData()
-        if (data.s === 'object') setState(data.s)
+        if (typeof data.s === 'object') setState(data.s)
         else setState(init)
       } catch (err) {
         setState(init)

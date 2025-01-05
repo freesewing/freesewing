@@ -1,4 +1,11 @@
-import { useState, useMemo } from 'react'
+// Dependencies
+import { menuValueWasChanged } from '../../lib/index.mjs'
+// Hooks
+import React, { useState, useMemo } from 'react'
+// Components
+import { SubAccordion } from '../Accordion.mjs'
+import { GroupIcon, OptionsIcon } from '@freesewing/react/components/Icon'
+import { CoreSettingsMenu } from './CoreSettingsMenu.mjs'
 
 /** @type {String} class to apply to buttons on open menu items */
 const iconButtonClass = 'btn btn-xs btn-ghost px-0 text-accent'
@@ -17,11 +24,9 @@ const iconButtonClass = 'btn btn-xs btn-ghost px-0 text-accent'
  * @param  {React.Component}  Value              a value display component this menu item will use
  * @param  {Boolean} allowOverride      all a text input to be used to override the given input component
  * @param  {Number}  ux            the user-defined ux level
- * @param {object} props.Swizzled - An object holding swizzled code
  */
 export const MenuItem = ({
   name,
-  Swizzled,
   current,
   updateHandler,
   passProps = {},
@@ -44,7 +49,6 @@ export const MenuItem = ({
       ux,
       current,
       updateHandler,
-      t: Swizzled.methods.t,
       changed,
       override,
       Design,
@@ -73,7 +77,7 @@ export const MenuItem = ({
           setOverride(!override)
         }}
       >
-        <Swizzled.components.EditIcon
+        <EditIcon
           className={`w-6 h-6 ${
             override ? 'bg-secondary text-secondary-content rounded' : 'text-secondary'
           }`}
@@ -89,28 +93,28 @@ export const MenuItem = ({
         updateHandler([name], '__UNSET__')
       }}
     >
-      <Swizzled.components.ResetIcon />
+      <ResetIcon />
     </button>
   )
 
   buttons.push(<ResetButton open disabled={!changed} key="clear" />)
 
   return (
-    <Swizzled.components.FormControl
-      label={<span className="text-base font-normal">{Swizzled.methods.t(`${name}.d`)}</span>}
+    <FormControl
+      label={<span className="text-base font-normal">{name}.d</span>}
       id={config.name}
       labelBR={<div className="flex flex-row items-center gap-2">{buttons}</div>}
       labelBL={
         <span
           className={`text-base font-medium -mt-2 block ${changed ? 'text-accent' : 'opacity-50'}`}
         >
-          {Swizzled.methods.t(`pe:youAreUsing${changed ? 'ACustom' : 'TheDefault'}Value`)}
+          pe:youAreUsing{changed ? 'ACustom' : 'TheDefault'}Value
         </span>
       }
       docs={docs}
     >
       <Input {...drillProps} />
-    </Swizzled.components.FormControl>
+    </FormControl>
   )
 }
 
@@ -132,8 +136,6 @@ export const MenuItem = ({
  * @param  {Function}  updateHandler          the function called by change handlers on inputs within menu items
  * @param  {Boolean}  topLevel             is this group the top level group? false for nested
  * @param  {Function}  t                   translation function
- * @param {object} props.Swizzled - An object holding swizzled code
-
  */
 export const MenuItemGroup = ({
   collapsible = true,
@@ -149,10 +151,9 @@ export const MenuItemGroup = ({
   topLevel = false,
   isDesignOptionsGroup = false,
   Design,
-  Swizzled,
   state,
 }) => {
-  if (!Item) Item = Swizzled.components.MenuItem
+  if (!Item) Item = MenuItem
 
   // map the entries in the structure
   const content = Object.entries(structure).map(([itemName, item]) => {
@@ -164,7 +165,7 @@ export const MenuItemGroup = ({
     const ItemIcon = item.icon
       ? item.icon
       : item.isGroup
-        ? Swizzled.components.GroupIcon
+        ? GroupIcon
         : Icon
           ? Icon
           : () => <span role="img">fixme-icon</span>
@@ -172,11 +173,11 @@ export const MenuItemGroup = ({
       ? () => (
           <div className="flex flex-row gap-2 items-center font-medium">
             {Object.keys(item).filter((i) => i !== 'isGroup').length}
-            <Swizzled.components.OptionsIcon className="w-5 h-5" />
+            <OptionsIcon className="w-5 h-5" />
           </div>
         )
       : isDesignOptionsGroup
-        ? values[Swizzled.methods.designOptionType(item)]
+        ? values[designOptionType(item)]
         : values[itemName]
           ? values[itemName]
           : () => <span>¯\_(ツ)_/¯</span>
@@ -186,15 +187,14 @@ export const MenuItemGroup = ({
         <div className="flex flex-row items-center gap-4 w-full">
           <ItemIcon />
           <span className="font-medium">
-            {Swizzled.methods.t([`pe:${itemName}.t`, `pe:${itemName}`])}
+            pe:{itemName}.t pe:{itemName}
           </span>
         </div>
         <div className="font-bold">
           <Value
             current={currentValues[itemName]}
             config={item}
-            t={Swizzled.methods.t}
-            changed={Swizzled.methods.menuValueWasChanged(currentValues[itemName], item)}
+            changed={menuValueWasChanged(currentValues[itemName], item)}
             Design={Design}
           />
         </div>
@@ -218,7 +218,6 @@ export const MenuItemGroup = ({
             updateHandler,
             isDesignOptionsGroup,
             Design,
-            Swizzled,
           }}
         />
       ) : (
@@ -229,13 +228,12 @@ export const MenuItemGroup = ({
             current: currentValues[itemName],
             config: item,
             state,
-            changed: Swizzled.methods.menuValueWasChanged(currentValues[itemName], item),
+            changed: menuValueWasChanged(currentValues[itemName], item),
             Value: values[itemName],
             Input: inputs[itemName],
             updateHandler,
             passProps,
             Design,
-            Swizzled,
           }}
         />
       ),
@@ -243,7 +241,7 @@ export const MenuItemGroup = ({
     ]
   })
 
-  return <Swizzled.components.SubAccordion items={content.filter((item) => item !== null)} />
+  return <SubAccordion items={content.filter((item) => item !== null)} />
 }
 
 /**
@@ -254,18 +252,11 @@ export const MenuItemGroup = ({
  * @param  {Boolean} options.open    is the menu item open?
  * @param  {String}  options.emoji   the emoji icon of the menu item
  */
-export const MenuItemTitle = ({
-  name,
-  current = null,
-  open = false,
-  emoji = '',
-  Icon = false,
-  Swizzled,
-}) => (
+export const MenuItemTitle = ({ name, current = null, open = false, emoji = '', Icon = false }) => (
   <div className={`flex flex-row gap-1 items-center w-full ${open ? '' : 'justify-between'}`}>
     <span className="font-medium capitalize flex flex-row gap-2">
       {Icon ? <Icon /> : <span role="img">{emoji}</span>}
-      {Swizzled.methods.t([`${name}.t`, name])}
+      fixme: {name}
     </span>
     <span className="font-bold">{current}</span>
   </div>

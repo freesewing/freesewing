@@ -1,3 +1,11 @@
+import React from 'react'
+import {
+  menuCoreSettingsOnlyHandler,
+  menuCoreSettingsSaboolHandler,
+  menuCoreSettingsSammHandler,
+  menuCoreSettingsStructure,
+} from '../../lib/index.mjs'
+
 /**
  * The core settings menu
  * @param  {Object} options.update        settings and ui update functions
@@ -7,8 +15,8 @@
  * @param  {Object} options.account       the user account data
  * @param {object} props.Swizzled - An object holding swizzled code
  */
-export const CoreSettingsMenu = ({ update, state, language, Design, Swizzled }) => {
-  const structure = Swizzled.methods.menuCoreSettingsStructure({
+export const CoreSettingsMenu = ({ update, state, language, Design }) => {
+  const structure = menuCoreSettingsStructure({
     language,
     units: state.settings?.units,
     sabool: state.settings?.sabool,
@@ -16,42 +24,38 @@ export const CoreSettingsMenu = ({ update, state, language, Design, Swizzled }) 
   })
 
   const inputs = {
-    complete: Swizzled.components.MenuListInput,
-    expand: Swizzled.components.MenuListInput,
-    margin: Swizzled.components.MenuMmInput,
-    only: Swizzled.components.MenuOnlySettingInput,
-    paperless: Swizzled.components.MenuBoolInput,
-    sabool: Swizzled.components.MenuBoolInput,
-    samm: Swizzled.components.MenuMmInput,
-    scale: Swizzled.components.MenuSliderInput,
-    units: Swizzled.components.MenuBoolInput,
+    complete: MenuListInput,
+    expand: MenuListInput,
+    margin: MenuMmInput,
+    only: MenuOnlySettingInput,
+    paperless: MenuBoolInput,
+    sabool: MenuBoolInput,
+    samm: MenuMmInput,
+    scale: MenuSliderInput,
+    units: MenuBoolInput,
   }
 
   const values = {
-    complete: Swizzled.components.MenuListValue,
-    expand: Swizzled.components.MenuListValue,
-    margin: Swizzled.components.MenuMmValue,
-    only: Swizzled.components.MenuOnlySettingValue,
-    paperless: Swizzled.components.MenuListValue,
-    sabool: Swizzled.components.MenuListValue,
-    samm: Swizzled.components.MenuMmValue,
-    scale: Swizzled.components.MenuScaleSettingValue,
-    units: Swizzled.components.MenuListValue,
+    complete: MenuListValue,
+    expand: MenuListValue,
+    margin: MenuMmValue,
+    only: MenuOnlySettingValue,
+    paperless: MenuListValue,
+    sabool: MenuListValue,
+    samm: MenuMmValue,
+    scale: MenuScaleSettingValue,
+    units: MenuListValue,
   }
 
   return (
-    <Swizzled.components.MenuItemGroup
+    <MenuItemGroup
       {...{
         structure,
         ux: state.ui.ux,
         currentValues: state.settings || {},
-        Icon: Swizzled.components.SettingsIcon,
+        Icon: SettingsIcon,
         Item: (props) => (
-          <Swizzled.components.CoreSetting
-            updateHandler={update}
-            {...{ inputs, values, Swizzled, Design }}
-            {...props}
-          />
+          <CoreSetting updateHandler={update} {...{ inputs, values, Design }} {...props} />
         ),
         isFirst: true,
         name: 'pe:designOptions',
@@ -64,7 +68,6 @@ export const CoreSettingsMenu = ({ update, state, language, Design, Swizzled }) 
         },
         updateHandler: update.settings,
         isDesignOptionsGroup: false,
-        Swizzled,
         state,
         Design,
         inputs,
@@ -74,17 +77,15 @@ export const CoreSettingsMenu = ({ update, state, language, Design, Swizzled }) 
   )
 }
 
+// Facilitate custom handlers for core settings
+const coreSettingsHandlerMethods = {
+  only: menuCoreSettingsOnlyHandler,
+  sabool: menuCoreSettingsSaboolHandler,
+  samm: menuCoreSettingsSammHandler,
+}
+
 /** A wrapper for {@see MenuItem} to handle core settings-specific business */
-export const CoreSetting = ({
-  Swizzled,
-  name,
-  config,
-  ux,
-  updateHandler,
-  current,
-  passProps,
-  ...rest
-}) => {
+export const CoreSetting = ({ name, config, ux, updateHandler, current, passProps, ...rest }) => {
   // is toggling allowed?
   const allowToggle = ux > 3 && config.list?.length === 2
 
@@ -98,10 +99,8 @@ export const CoreSetting = ({
   /*
    * Load a specific update handler if one is configured
    */
-  const handler = Swizzled.config.menuCoreSettingsHandlerMethods?.[name.toLowerCase()]
-    ? Swizzled.methods[Swizzled.config.menuCoreSettingsHandlerMethods[name.toLowerCase()]](
-        handlerArgs
-      )
+  const handler = coreSettingsHandlerMethods[name.toLowerCase()]
+    ? coreSettingsHandlerMethods[name.toLowerCase()](handlerArgs)
     : updateHandler
 
   return (

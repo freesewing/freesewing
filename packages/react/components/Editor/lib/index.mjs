@@ -55,13 +55,7 @@ import {
   shortDate,
   parseDistanceInput,
 } from './formatting.mjs'
-import {
-  designMeasurements,
-  hasRequiredMeasurements,
-  isDegreeMeasurement,
-  missingMeasurements,
-  structureMeasurementsAsDesign,
-} from './measurements.mjs'
+import { designMeasurements, missingMeasurements } from './measurements.mjs'
 import { menuUiPreferencesStructure } from './ui-preferences.mjs'
 
 /*
@@ -120,10 +114,7 @@ export {
   parseDistanceInput,
   // measurements.mjs
   designMeasurements,
-  hasRequiredMeasurements,
-  isDegreeMeasurement,
   missingMeasurements,
-  structureMeasurementsAsDesign,
   // ui-preferences.mjs
   menuUiPreferencesStructure,
 }
