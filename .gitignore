@@ -86,6 +86,9 @@ dist
 build
 export
 
+# But don't ignore point/dist reference
+!/sites/dev/docs/reference/api/point/dist/
+
 # Prebuild files
 prebuild/*.json
 
