@@ -72,11 +72,9 @@ function draftPaulPocketFacing({
     paths: [
       new Path().move(paths.outerFacingCurve.end()).line(points.styleWaistOut),
       outseam,
-      paths.outerFacingCurve,
+      paths.outerFacingCurve.clone().unhide(),
     ],
-  })
-    .close()
-    .setClass('fabric')
+  }).setClass('fabric')
 
   if (sa) {
     paths.sa = macro('sa', {

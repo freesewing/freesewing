@@ -238,9 +238,9 @@ function draftPaulFront({
     points.pocketTop,
     height * options.pocketCurveShape
   )
-  points.pocketCornerCp2 = points.pocketCorner.shiftTowards(
+  points.pocketCornerCp2 = points.pocketCorner.shiftFractionTowards(
     points.pocketLeft,
-    height * options.pocketCurveShape
+    options.pocketCurveShape
   )
 
   paths.pocketCurve = new Path()
@@ -503,7 +503,7 @@ export const front = {
       menu: (_, mergedOptions) => (mergedOptions.frontPockets ? 'style.frontPockets' : false),
     },
     pocketDepth: {
-      pct: 50,
+      pct: 70,
       min: 25,
       max: 100,
       menu: (_, mergedOptions) => (mergedOptions.frontPockets ? 'style.frontPockets' : false),
