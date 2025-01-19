@@ -2,6 +2,7 @@
 import { missingMeasurements, flattenFlags } from '../lib/index.mjs'
 // Hooks
 import React, { useState } from 'react'
+import { useDesignTranslation } from '@freesewing/react/hooks/useDesignTranslation'
 // Components
 import { Null } from './Null.mjs'
 import { AsideViewMenuSpacer } from './AsideViewMenu.mjs'
@@ -65,15 +66,16 @@ export const HeaderMenuAllViews = ({ config, state, update, open, setOpen }) => 
 )
 
 export const HeaderMenuDraftView = (props) => {
+  const i18n = useDesignTranslation(props.Design.designConfig.data.id)
   const flags = props.pattern?.setStores?.[0]?.plugins?.['plugin-annotations']?.flags
 
   return (
     <>
       <div className="tw-flex tw-flex-row tw-gap-1">
-        <HeaderMenuDraftViewDesignOptions {...props} />
-        <HeaderMenuDraftViewCoreSettings {...props} />
-        <HeaderMenuDraftViewUiPreferences {...props} />
-        {flags ? <HeaderMenuDraftViewFlags {...props} flags={flags} /> : null}
+        <HeaderMenuDraftViewDesignOptions {...props} i18n={i18n} />
+        <HeaderMenuDraftViewCoreSettings {...props} i18n={i18n} />
+        <HeaderMenuDraftViewUiPreferences {...props} i18n={i18n} />
+        {flags ? <HeaderMenuDraftViewFlags {...props} flags={flags} i18n={i18n} /> : null}
       </div>
       <HeaderMenuDraftViewIcons {...props} />
       <HeaderMenuUndoIcons {...props} />
@@ -114,7 +116,8 @@ export const HeaderMenuDropdown = (props) => {
         </div>
         <div
           tabIndex={0}
-          className="tw-daisy-dropdown-content tw-bg-base-100 tw-bg-opacity-90 tw-z-20 tw-shadow tw-left-0 !tw-fixed md:!tw-absolute tw-top-12 tw-w-screen md:tw-max-w-lg"
+          className="tw-daisy-dropdown-content tw-bg-base-100 tw-bg-opacity-90 tw-z-20 tw-shadow tw-left-0 !tw-fixed md:!tw-absolute tw-top-12 tw-w-screen md:tw-max-w-lg tw-overflow-y-scroll tw-mb-12"
+          style={{ maxHeight: 'calc(100vh - 12rem)' }}
         >
           {props.children}
         </div>

@@ -3,7 +3,6 @@ import { menuDesignOptionsStructure } from '../../lib/index.mjs'
 import { designOptionType } from '@freesewing/utils'
 // Hooks
 import React, { useCallback, useMemo } from 'react'
-import { useDesignTranslation } from '@freesewing/react/hooks/useDesignTranslation'
 // Components
 import {
   MenuBoolInput,
@@ -25,16 +24,16 @@ import {
 import { MenuItemGroup, MenuItem } from './Container.mjs'
 import { OptionsIcon } from '@freesewing/react/components/Icon'
 
-//
 /**
  * The design options menu
+ *
  * @param {object} props.Design - An object holding the Design instance
  * @param {String} props.isFirst - Boolean indicating whether this is the first/top entry of the menu
  * @param {Object} props.state - Object holding state
+ * @param {Object} props.i18n - Object holding translations loaded from the design
  * @param {Object} props.update - Object holding state handlers
  */
-export const DesignOptionsMenu = ({ Design, isFirst = true, state, update }) => {
-  const i18n = useDesignTranslation(Design.designConfig.data.id)
+export const DesignOptionsMenu = ({ Design, isFirst = true, state, i18n, update }) => {
   const structure = useMemo(
     () => menuDesignOptionsStructure(Design.patternConfig.options, state.settings),
     [Design.patternConfig, state.settings]

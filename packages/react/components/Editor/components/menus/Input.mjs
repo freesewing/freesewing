@@ -49,6 +49,41 @@ export const MenuDegInput = (props) => {
   )
 }
 
+const getTitleAndDesc = (config = {}, i18n = {}, isDesignOption = false) => {
+  if (config.choiceTitles && config.choiceDescriptions) {
+    const current = typeof config.current === 'undefined' ? config.dflt : config.current
+    return {
+      title: config.choiceTitles[current],
+      desc: config.choiceDescriptions[current],
+    }
+  }
+
+  console.log(config)
+  let titleKey = config.choiceTitles
+    ? config.choiceTitles[entry]
+    : isDesignOption
+      ? i18n.en.o[name]
+      : `${name}.o.${entry}`
+  if (!config.choiceTitles && i18n && i18n.en.o[`${name}.${entry}`])
+    titleKey = i18n.en.o[`${name}.${entry}`]
+  console.log({ titleKey, titles: config.choiceTitles, isDesignOption })
+  const title = config.titleMethod
+    ? config.titleMethod(entry)
+    : typeof titleKey === 'string'
+      ? i18n.en.o[titleKey]?.t
+      : titleKey.t
+  const desc = config.valueMethod
+    ? config.valueMethod(entry)
+    : typeof titleKey === 'string'
+      ? i18n.en.o[titleKey]?.d
+      : titleKey.d
+
+  return {
+    title: 'fixmeTitle',
+    desc: 'fixmeDesc',
+  }
+}
+
 /**
  * An input for selecting and item from a list
  * @param  {String}  options.name       the name of the property this input changes
@@ -80,23 +115,7 @@ export const MenuListInput = ({
   })
 
   return config.list.map((entry) => {
-    let titleKey = config.choiceTitles
-      ? config.choiceTitles[entry]
-      : isDesignOption
-        ? i18n.en.o[name]
-        : `${name}.o.${entry}`
-    if (i18n.en.o[`${name}.${entry}`]) titleKey = i18n.en.o[`${name}.${entry}`]
-    console.log({ titleKey, titles: config.choiceTitles, isDesignOption })
-    const title = config.titleMethod
-      ? config.titleMethod(entry)
-      : typeof titleKey === 'string'
-        ? i18n.en.o[titleKey]?.t
-        : titleKey.t
-    const desc = config.valueMethod
-      ? config.valueMethod(entry)
-      : typeof titleKey === 'string'
-        ? i18n.en.o[titleKey]?.d
-        : titleKey.d
+    const { title, desc } = getTitleAndDesc(config, i18n, isDesignOption)
     const sideBySide = config.sideBySide || desc.length + title.length < 42
 
     return (

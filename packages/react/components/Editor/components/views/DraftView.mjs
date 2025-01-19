@@ -46,7 +46,7 @@ export const DraftView = ({ Design, state, update, config }) => {
       const __html = pattern.render()
       output = (
         <ZoomablePattern>
-          <div className="w-full h-full" dangerouslySetInnerHTML={{ __html }} />
+          <div className="tw-w-full tw-h-full" dangerouslySetInnerHTML={{ __html }} />
         </ZoomablePattern>
       )
     } catch (err) {

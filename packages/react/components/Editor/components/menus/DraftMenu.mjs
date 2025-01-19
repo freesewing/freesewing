@@ -1,26 +1,32 @@
-export const DraftMenu = ({ Design, pattern, state, Swizzled, update }) => {
-  // Swizzled methods
-  const { t } = Swizzled.methods
-  // Swizzled components
-  const { FlagsAccordionTitle, FlagsAccordionEntries, Accordion } = Swizzled.components
+import React from 'react'
+import { OptionsIcon, SettingsIcon, UiIcon } from '@freesewing/react/components/Icon'
+import { DesignOptionsMenu } from './DesignOptionsMenu.mjs'
+import { CoreSettingsMenu } from './CoreSettingsMenu.mjs'
+import { UiPreferencesMenu } from './UiPreferencesMenu.mjs'
+import { FlagsAccordionEntries } from '../Flag.mjs'
+import { Accordion } from '../Accordion.mjs'
 
-  const menuProps = { Design, state, Swizzled, pattern, update }
+export const DraftMenu = ({ Design, pattern, state, update }) => {
+  const menuProps = { Design, state, pattern, update }
 
   const sections = [
     {
-      name: 'designOptions',
-      icon: <Swizzled.components.OptionsIcon className="w-8 h-8" />,
-      menu: <Swizzled.components.DesignOptionsMenu {...menuProps} />,
+      t: 'Design Options',
+      d: 'These options are specific to this design. You can use them to customize your pattern in a variety of ways.',
+      icon: <OptionsIcon className="tw-w-8 tw-h-8" />,
+      menu: <DesignOptionsMenu {...menuProps} />,
     },
     {
-      name: 'coreSettings',
-      icon: <Swizzled.components.SettingsIcon className="w-8 h-8" />,
-      menu: <Swizzled.components.CoreSettingsMenu {...menuProps} />,
+      t: 'Core Settings',
+      d: 'These settings are not specific to the design, but instead allow you to customize various parameters of the FreeSewing core library, which generates the design for you.',
+      icon: <SettingsIcon className="tw-w-8 tw-h-8" />,
+      menu: <CoreSettingsMenu {...menuProps} />,
     },
     {
-      name: 'uiPreferences',
-      icon: <Swizzled.components.UiIcon className="w-8 h-8" />,
-      menu: <Swizzled.components.UiPreferencesMenu {...menuProps} />,
+      t: 'UI Preferences',
+      d: 'These preferences control the UI (User Interface) of the pattern editor',
+      icon: <UiIcon className="tw-w-8 tw-h-8" />,
+      menu: <UiPreferencesMenu {...menuProps} />,
     },
   ]
 
@@ -28,11 +34,11 @@ export const DraftMenu = ({ Design, pattern, state, Swizzled, update }) => {
   items.push(
     ...sections.map((section) => [
       <>
-        <h5 className="flex flex-row gap-2 items-center justify-between w-full">
-          <span>{t(`pe:${section.name}.t`)}</span>
+        <h5 className="tw-flex tw-flex-row tw-gap-2 tw-items-center tw-justify-between tw-w-full tw-font-bold tw-text-lg">
+          <span>{section.t}</span>
           {section.icon}
         </h5>
-        <p className="text-left">{t(`pe:${section.name}.d`)}</p>
+        <p className="tw-text-left">{section.d}</p>
       </>,
       section.menu,
       section.name,
@@ -43,7 +49,7 @@ export const DraftMenu = ({ Design, pattern, state, Swizzled, update }) => {
 
   if (flags)
     items.push([
-      <FlagsAccordionTitle key={1} {...{ flags, Swizzled }} />,
+      <FlagsAccordionTitle key={1} {...{ flags }} />,
       <FlagsAccordionEntries {...{ update, state, flags }} key={2} />,
       'flags',
     ])

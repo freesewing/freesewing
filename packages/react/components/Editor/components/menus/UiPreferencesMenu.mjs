@@ -4,7 +4,7 @@ import { menuUiPreferencesStructure } from '../../lib/index.mjs'
 // Components
 import { MenuUxSettingInput, MenuListInput } from './Input.mjs'
 import { MenuListValue } from './Value.mjs'
-import { MenuItemGroup } from './Container.mjs'
+import { MenuItemGroup, MenuItem } from './Container.mjs'
 import { Ux } from '@freesewing/react/components/Ux'
 
 export const UiPreferencesMenu = ({ update, state, Design }) => {

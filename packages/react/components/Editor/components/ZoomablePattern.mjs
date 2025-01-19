@@ -28,7 +28,7 @@ export const ZoomablePattern = forwardRef(function ZoomablePatternRef(props, ref
           <Pattern
             {...{ renderProps }}
             ref={ref}
-            className={`freesewing pattern w-full ${rotate ? '-rotate-90' : ''}`}
+            className={`freesewing pattern tw-w-full ${rotate ? 'tw--rotate-90' : ''}`}
           />
         )}
       </TransformComponent>

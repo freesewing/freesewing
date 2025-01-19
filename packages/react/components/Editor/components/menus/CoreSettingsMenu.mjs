@@ -19,21 +19,19 @@ import {
   MenuOnlySettingValue,
   MenuScaleSettingValue,
 } from './Value.mjs'
-import { MenuItemGroup } from './Container.mjs'
+import { MenuItemGroup, MenuItem } from './Container.mjs'
 import { SettingsIcon } from '@freesewing/react/components/Icon'
 
 /**
  * The core settings menu
- * @param  {Object} options.update        settings and ui update functions
- * @param  {Object} options.settings      core settings
- * @param  {Object} options.patternConfig the configuration from the pattern
- * @param  {String} options.language      the menu language
- * @param  {Object} options.account       the user account data
- * @param {object} props.Swizzled - An object holding swizzled code
+ *
+ * @param {object} props.Design - An object holding the Design instance
+ * @param {Object} props.state - Object holding state
+ * @param {Object} props.i18n - Object holding translations loaded from the design
+ * @param {Object} props.update - Object holding state handlers
  */
-export const CoreSettingsMenu = ({ update, state, language, Design }) => {
+export const CoreSettingsMenu = ({ Design, state, i18n, update }) => {
   const structure = menuCoreSettingsStructure({
-    language,
     units: state.settings?.units,
     sabool: state.settings?.sabool,
     parts: Design.patternConfig.draftOrder,
@@ -71,11 +69,10 @@ export const CoreSettingsMenu = ({ update, state, language, Design }) => {
         currentValues: state.settings || {},
         Icon: SettingsIcon,
         Item: (props) => (
-          <CoreSetting updateHandler={update} {...{ inputs, values, Design }} {...props} />
+          <CoreSetting updateHandler={update} {...{ inputs, values, Design, i18n }} {...props} />
         ),
         isFirst: true,
-        name: 'pe:designOptions',
-        language: state.locale,
+        name: 'Core Settings',
         passProps: {
           ux: state.ui.ux,
           settings: state.settings,
@@ -88,6 +85,7 @@ export const CoreSettingsMenu = ({ update, state, language, Design }) => {
         Design,
         inputs,
         values,
+        i18n,
       }}
     />
   )
@@ -120,7 +118,7 @@ export const CoreSetting = ({ name, config, ux, updateHandler, current, passProp
     : updateHandler
 
   return (
-    <Swizzled.components.MenuItem
+    <MenuItem
       {...{
         name,
         config,
@@ -135,15 +133,15 @@ export const CoreSetting = ({ name, config, ux, updateHandler, current, passProp
   )
 }
 
-export const ClearAllButton = ({ setSettings, compact = false, Swizzled }) => {
+export const ClearAllButton = ({ setSettings, compact = false }) => {
   return (
     <div className={`${compact ? '' : 'text-center mt-8'}`}>
       <button
         className={`justify-self-center btn btn-error btn-outline ${compact ? 'btn-sm' : ''}`}
         onClick={() => setSettings({})}
       >
-        <Swizzled.components.TrashIcon />
-        {Swizzled.methods.t('clearSettings')}
+        <TrashIcon />
+        Clear Settings
       </button>
     </div>
   )

@@ -17,13 +17,15 @@ export const PatternLayout = (props) => {
 
   return (
     <ZoomContextProvider>
-      <div className="flex flex-col h-full">
+      <div className="tw-flex tw-flex-col tw-h-full">
         <HeaderMenu state={props.state} {...{ update, Design, pattern, config }} />
-        <div className="flex lg:flex-row grow lg:max-h-[90vh] max-h-[calc(100vh-3rem)] h-full py-4 lg:mt-6">
-          <div className="lg:w-2/3 flex flex-col h-full grow px-4">{props.output}</div>
+        <div className="tw-flex lg:tw-flex-row tw-grow lg:tw-max-h-[90vh] tw-max-h-[calc(100vh-3rem)] tw-h-full tw-py-4 lg:tw-mt-6">
+          <div className="lg:tw-w-2/3 tw-flex tw-flex-col tw-h-full tw-grow px-4">
+            {props.output}
+          </div>
           {menu ? (
             <div
-              className={`hidden xl:block w-1/3 shrink grow-0 lg:p-4 max-w-2xl h-full overflow-scroll`}
+              className={`tw-hidden xl:tw-block tw-w-1/3 tw-shrink tw-grow-0 lg:tw-p-4 tw-max-w-2xl tw-h-full tw-overflow-scroll`}
             >
               {menu}
             </div>

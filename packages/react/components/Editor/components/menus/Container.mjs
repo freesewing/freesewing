@@ -104,7 +104,11 @@ export const MenuItem = ({
 
   return (
     <FormControl
-      label={<span className="tw-text-base tw-font-normal">{i18n.en.o[name].d}</span>}
+      label={
+        <span className="tw-text-base tw-font-normal">
+          {config.choiceTitles ? config.choiceTitles[current] : i18n.en.o[name].d}
+        </span>
+      }
       id={config.name}
       labelBR={<div className="tw-flex tw-flex-row tw-items-center tw-gap-2">{buttons}</div>}
       labelBL={
@@ -118,6 +122,19 @@ export const MenuItem = ({
       <Input {...drillProps} />
     </FormControl>
   )
+}
+
+const coreLabels = {
+  complete: 'Details',
+  only: 'Included Parts',
+  paperless: 'Paperless',
+  sabool: 'Include Seam Allowance',
+}
+
+const getItemLabel = (i18n, name) => {
+  if (Object.keys(coreLabels).includes(name)) return coreLabels[name]
+
+  return i18n && i18n.en.o[name]?.t ? i18n.en.o[name].t : name
 }
 
 /**
@@ -189,9 +206,7 @@ export const MenuItemGroup = ({
       <div className="tw-flex tw-flex-row tw-items-center tw-justify-between tw-w-full" key="a">
         <div className="tw-flex tw-flex-row tw-items-center tw-gap-4 tw-w-full">
           <ItemIcon />
-          <span className="tw-font-medium tw-capitalize">
-            {i18n && i18n.en.o[itemName]?.t ? i18n.en.o[itemName].t : itemName}
-          </span>
+          <span className="tw-font-medium tw-capitalize">{getItemLabel(i18n, itemName)}</span>
         </div>
         <div className="tw-font-bold">
           <Value

@@ -25,6 +25,10 @@ export function menuUiPreferencesStructure() {
         0: 'pe:noAside',
         1: 'pe:withAside',
       },
+      choiceDescriptions: {
+        0: 'pe:noAside',
+        1: 'pe:withAside',
+      },
       dflt: 1,
       icon: MenuIcon,
     },
@@ -34,6 +38,10 @@ export function menuUiPreferencesStructure() {
       choiceTitles: {
         0: 'pe:websiteMode',
         1: 'pe:kioskMode',
+      },
+      choiceDescriptions: {
+        0: 'pe:noAside',
+        1: 'pe:withAside',
       },
       dflt: 0,
       icon: KioskIcon,
@@ -45,6 +53,10 @@ export function menuUiPreferencesStructure() {
         0: 'pe:rotateNo',
         1: 'pe:rotateYes',
       },
+      choiceDescriptions: {
+        0: 'pe:noAside',
+        1: 'pe:withAside',
+      },
       dflt: 0,
       icon: RotateIcon,
     },
@@ -54,6 +66,10 @@ export function menuUiPreferencesStructure() {
       choiceTitles: {
         react: 'pe:renderWithReact',
         svg: 'pe:renderWithCore',
+      },
+      choiceDescriptions: {
+        0: 'pe:noAside',
+        1: 'pe:withAside',
       },
       valueTitles: {
         react: 'React',
