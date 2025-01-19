@@ -4,6 +4,43 @@ import { DesignsView } from './DesignsView.mjs'
 import { MeasurementsView } from './MeasurementsView.mjs'
 import { DraftView } from './DraftView.mjs'
 import { ErrorIcon } from '@freesewing/react/components/Icon'
+import {
+  OptionsIcon,
+  MeasurementsIcon,
+  BeakerIcon,
+  GaugeIcon,
+  PrintIcon,
+  SaveIcon,
+  ExportIcon,
+  EditIcon,
+  FixmeIcon,
+  ListIcon,
+  XrayIcon,
+  DocsIcon,
+  DesignIcon,
+  UiIcon,
+  BackIcon,
+} from '@freesewing/react/components/Icon'
+
+/*
+ * A lookup table for view icons
+ */
+const viewIcons = {
+  draft: OptionsIcon,
+  measurements: MeasurementsIcon,
+  test: BeakerIcon,
+  timing: GaugeIcon,
+  printLayout: PrintIcon,
+  save: SaveIcon,
+  export: ExportIcon,
+  editSettings: EditIcon,
+  logs: ListIcon,
+  inspect: XrayIcon,
+  docs: DocsIcon,
+  designs: DesignIcon,
+  picker: UiIcon,
+  undos: BackIcon,
+}
 
 /*
  * This returns a view-specific component
@@ -41,10 +78,9 @@ export const View = (props) => {
  * This returns a view-specific icon
  */
 export const ViewIcon = ({ view, className = 'tw-w-6 tw-h-6' }) => {
-  //designs: <ErrorIcon className={className} />,
-  //measurements: <ErrorIcon className={className} />,
-  //
-  return <ErrorIcon />
+  const Icon = viewIcons[view] || FixmeIcon
+
+  return <Icon className={className} />
 }
 
 export const viewLabels = {
@@ -100,7 +136,7 @@ export const viewLabels = {
     t: 'Choose a different view',
     d: 'fixme',
   },
-  undo: {
+  undos: {
     t: 'Undo History',
     d: 'Time-travel through your recent pattern changes',
   },

@@ -13,10 +13,12 @@ import {
   ErrorIcon,
   ExpandIcon,
   ExportIcon,
+  FixmeIcon,
   KioskIcon,
   MenuIcon,
   PaperlessIcon,
   ResetAllIcon,
+  RightIcon,
   RocketIcon,
   RotateIcon,
   SaIcon,
@@ -30,6 +32,27 @@ import { DesignOptionsMenu } from './menus/DesignOptionsMenu.mjs'
 import { CoreSettingsMenu } from './menus/CoreSettingsMenu.mjs'
 import { UiPreferencesMenu } from './menus/UiPreferencesMenu.mjs'
 import { FlagsAccordionEntries } from './Flag.mjs'
+
+/*
+ * Lookup object for header menu icons
+ */
+const headerMenuIcons = {
+  flag: RocketIcon,
+  options: RocketIcon,
+  right: RightIcon,
+  settings: RocketIcon,
+  ui: RocketIcon,
+}
+
+export const HeaderMenuIcon = (props) => {
+  const { name, extraClasses = '' } = props
+  const Icon = headerMenuIcons[name] || FixmeIcon
+
+  // FIXME: Remove this when ready
+  if (!headerMenuIcons[name]) console.log('FIXME: Add headerMenuIcon for ', name)
+
+  return <Icon {...props} className={`tw-h-5 tw-w-5 ${extraClasses}`} />
+}
 
 export const HeaderMenuAllViews = ({ config, state, update, open, setOpen }) => (
   <HeaderMenuViewMenu {...{ config, state, update, open, setOpen }} />
@@ -339,7 +362,7 @@ export const HeaderMenuUndoIcons = (props) => {
       </Button>
       <HeaderMenuDropdown
         {...props}
-        tooltip={viewLabels.undo.t}
+        tooltip={viewLabels.undos.t}
         id="undos"
         disabled={undos ? false : true}
         toggle={
@@ -413,11 +436,6 @@ export const HeaderMenuSaveIcons = (props) => {
   )
 }
 
-export const HeaderMenuIcon = (props) => {
-  const { name, extraClasses = '' } = props
-  //const Icon = Swizzled.components[`${Swizzled.methods.capitalize(name)}Icon`] || Swizzled.components.Noop
-  return <ErrorIcon {...props} className={`tw-h-5 tw-w-5 ${extraClasses}`} />
-}
 export const HeaderMenuIconSpacer = () => (
   <span className="tw-px-1 tw-font-bold tw-opacity-30">|</span>
 )
@@ -463,8 +481,8 @@ export const HeaderMenuViewMenu = (props) => {
           <a
             className={`tw-w-full tw-rounded-lg tw-border-2 tw-border-secondary tw-text-base-content
             tw-flex tw-flex-row tw-items-center tw-gap-2 md:tw-gap-4 tw-p-2
-            hover:tw-cursor-pointer
-            hover:tw-bg-secondary hover:tw-bg-opacity-20 hover:tw-border-solid ${
+            hover:tw-cursor-pointer hover:tw-text-base-content
+            hover:tw-bg-secondary hover:tw-bg-opacity-10 hover:tw-border-solid ${
               viewName === state.view
                 ? 'tw-bg-secondary tw-border-solid tw-bg-opacity-20'
                 : 'tw-border-dotted'

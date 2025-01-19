@@ -744,19 +744,3 @@ export const XrayIcon = (props) => (
     <path d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
   </IconWrapper>
 )
-
-// These icons all reuse existing icons
-export const ViewDraftIcon = OptionsIcon
-export const ViewMeasurementsIcon = MeasurementsIcon
-export const ViewTestIcon = BeakerIcon
-export const ViewTimingIcon = GaugeIcon
-export const ViewPrintLayoutIcon = PrintIcon
-export const ViewSaveIcon = SaveIcon
-export const ViewExportIcon = ExportIcon
-export const ViewEditSettingsIcon = EditIcon
-export const ViewLogsIcon = ListIcon
-export const ViewInspectIcon = XrayIcon
-export const ViewDocsIcon = DocsIcon
-export const ViewDesignsIcon = DesignIcon
-export const ViewViewPickerIcon = UiIcon
-export const ViewUndosIcon = BackIcon
