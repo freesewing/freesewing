@@ -14,8 +14,10 @@ import {
   ExpandIcon,
   ExportIcon,
   FixmeIcon,
+  FlagIcon,
   KioskIcon,
   MenuIcon,
+  OptionsIcon,
   PaperlessIcon,
   ResetAllIcon,
   RightIcon,
@@ -24,24 +26,28 @@ import {
   SaIcon,
   SaveAsIcon,
   SaveIcon,
+  SettingsIcon,
   TrashIcon,
+  UiIcon,
   UndoIcon,
   UnitsIcon,
 } from '@freesewing/react/components/Icon'
+import { ButtonFrame } from '@freesewing/react/components/Input'
 import { DesignOptionsMenu } from './menus/DesignOptionsMenu.mjs'
 import { CoreSettingsMenu } from './menus/CoreSettingsMenu.mjs'
 import { UiPreferencesMenu } from './menus/UiPreferencesMenu.mjs'
 import { FlagsAccordionEntries } from './Flag.mjs'
+import { UndoStep } from './views/UndosView.mjs'
 
 /*
  * Lookup object for header menu icons
  */
 const headerMenuIcons = {
-  flag: RocketIcon,
-  options: RocketIcon,
+  flag: FlagIcon,
+  options: OptionsIcon,
   right: RightIcon,
-  settings: RocketIcon,
-  ui: RocketIcon,
+  settings: SettingsIcon,
+  ui: UiIcon,
 }
 
 export const HeaderMenuIcon = (props) => {
@@ -101,7 +107,7 @@ export const HeaderMenuDropdown = (props) => {
         <div
           tabIndex={0}
           role="button"
-          className="tw-daisy-btn tw-daisy-btn-ghost hover:tw-bg-secondary hover:tw-bg-opacity-20 hover:tw-border-solid hover:tw-boder-2 hover:tw-border-secondary tw-border tw-border-secondary tw-border-2 tw-border-dotted tw-daisy-btn-sm tw-px-2 tw-z-20 tw-relative"
+          className="tw-daisy-btn tw-daisy-btn-ghost hover:tw-bg-secondary hover:tw-bg-opacity-20 tw-border-secondary/10 hover:tw-boder-2 hover:tw-border-secondary tw-border tw-border-secondary tw-border-2 tw-border-solid tw-daisy-btn-sm tw-px-2 tw-z-20 tw-relative"
           onClick={() => setOpen(open === id ? false : id)}
         >
           {toggle}
@@ -129,11 +135,11 @@ export const HeaderMenuDraftViewDesignOptions = (props) => {
     <HeaderMenuDropdown
       {...props}
       id="designOptions"
-      tooltip="fixme: 'pe:designOptions.d'"
+      tooltip="These options are specific to this design. You can use them to customize your pattern in a variety of ways."
       toggle={
         <>
           <HeaderMenuIcon name="options" extraClasses="tw-text-secondary" />
-          <span className="tw-hidden lg:tw-inline">fixme: pe:designOptions.t</span>
+          <span className="tw-hidden lg:tw-inline">Design Options</span>
         </>
       }
     >
@@ -146,12 +152,12 @@ export const HeaderMenuDraftViewCoreSettings = (props) => {
   return (
     <HeaderMenuDropdown
       {...props}
-      tooltip="fixme: pe:coreSettings.d"
+      tooltip="These settings are not specific to the design, but instead allow you to customize various parameters of the FreeSewing core library, which generates the design for you."
       id="coreSettings"
       toggle={
         <>
           <HeaderMenuIcon name="settings" extraClasses="tw-text-secondary" />
-          <span className="tw-hidden lg:tw-inline">fixme: pe:coreSettings.t</span>
+          <span className="tw-hidden lg:tw-inline">Core Settings</span>
         </>
       }
     >
@@ -164,12 +170,12 @@ export const HeaderMenuDraftViewUiPreferences = (props) => {
   return (
     <HeaderMenuDropdown
       {...props}
-      tooltip="fixme: pe:uiPreferences.d"
+      tooltip="These preferences control the UI (User Interface) of the pattern editor"
       id="uiPreferences"
       toggle={
         <>
           <HeaderMenuIcon name="ui" extraClasses="tw-text-secondary" />
-          <span className="tw-hidden lg:tw-inline">fixme: pe:uiPreferences.t</span>
+          <span className="tw-hidden lg:tw-inline">UI Preferences</span>
         </>
       }
     >
@@ -184,7 +190,7 @@ export const HeaderMenuDraftViewFlags = (props) => {
   return (
     <HeaderMenuDropdown
       {...props}
-      tooltip="fixme: pe:flagMenuMany.d"
+      tooltip="Some issues about your current pattern need your attention."
       id="flags"
       toggle={
         <>
@@ -389,7 +395,7 @@ export const HeaderMenuUndoIcons = (props) => {
                 <div className="tw-flex tw-flex-row tw-items-center tw-align-center tw-justify-between tw-gap-2 tw-w-full">
                   <div className="tw-flex tw-flex-row tw-items-center tw-align-start tw-gap-2 tw-grow">
                     <UndoIcon className="tw-w-5 tw-h-5 tw-text-secondary" />
-                    {viewLabels.undo.t}
+                    {viewLabels.undos.t}
                   </div>
                   {undos.length}
                 </div>
@@ -479,18 +485,18 @@ export const HeaderMenuViewMenu = (props) => {
           className="tw-mb-1 tw-flex tw-flex-row tw-items-center tw-justify-between tw-w-full"
         >
           <a
-            className={`tw-w-full tw-rounded-lg tw-border-2 tw-border-secondary tw-text-base-content
-            tw-flex tw-flex-row tw-items-center tw-gap-2 md:tw-gap-4 tw-p-2
+            className={`tw-w-full tw-text-base-content
+            tw-flex tw-flex-row tw-items-center tw-gap-2 md:tw-gap-4 tw-p-2 tw-px-4
             hover:tw-cursor-pointer hover:tw-text-base-content
-            hover:tw-bg-secondary hover:tw-bg-opacity-10 hover:tw-border-solid ${
-              viewName === state.view
-                ? 'tw-bg-secondary tw-border-solid tw-bg-opacity-20'
-                : 'tw-border-dotted'
+            hover:tw-bg-secondary hover:tw-bg-opacity-20 ${
+              viewName === state.view ? 'tw-bg-secondary tw-bg-opacity-20' : ''
             }`}
             onClick={() => update.view(viewName)}
           >
             <ViewIcon view={viewName} className="tw-w-6 tw-h-6 tw-grow-0" />
-            <b className="tw-text-left tw-grow">{viewLabels[viewName]?.t || viewName}</b>
+            <span className="tw-text-left tw-grow tw-font-medium">
+              {viewLabels[viewName]?.t || viewName}
+            </span>
           </a>
         </li>
       )
@@ -511,7 +517,7 @@ export const HeaderMenuViewMenu = (props) => {
     >
       <ul
         tabIndex={i}
-        className="tw-dropdown-content tw-bg-base-100 tw-bg-opacity-90 tw-z-20 tw-shadow tw-left-0 !tw-fixed md:!tw-absolute tw-w-screen md:tw-w-96 tw-px-4 md:tw-p-2 md:tw-pt-0"
+        className="tw-dropdown-content tw-bg-base-100 tw-bg-opacity-95 tw-z-20 tw-shadow tw-left-0 !tw-fixed md:!tw-absolute tw-w-screen md:tw-w-96 md:tw-pt-0 tw-mt-14 md:tw-mt-0"
       >
         {output}
       </ul>

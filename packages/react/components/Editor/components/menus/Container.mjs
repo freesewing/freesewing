@@ -1,14 +1,16 @@
 // Dependencies
 import { menuValueWasChanged } from '../../lib/index.mjs'
+import { designOptionType } from '@freesewing/utils'
 // Hooks
 import React, { useState, useMemo } from 'react'
 // Components
 import { SubAccordion } from '../Accordion.mjs'
-import { GroupIcon, OptionsIcon } from '@freesewing/react/components/Icon'
+import { EditIcon, GroupIcon, OptionsIcon, ResetIcon } from '@freesewing/react/components/Icon'
 import { CoreSettingsMenu } from './CoreSettingsMenu.mjs'
+import { FormControl } from '@freesewing/react/components/Input'
 
 /** @type {String} class to apply to buttons on open menu items */
-const iconButtonClass = 'btn btn-xs btn-ghost px-0 text-accent'
+const iconButtonClass = 'tw-daisy-btn tw-daisy-btn-xs tw-daisy-btn-ghost tw-px-0 tw-text-accent'
 
 /**
  * A generic component for handling a menu item.
@@ -37,6 +39,7 @@ export const MenuItem = ({
   docs,
   config,
   Design,
+  i18n,
 }) => {
   // Local state - whether the override input should be shown
   const [override, setOverride] = useState(false)
@@ -78,15 +81,15 @@ export const MenuItem = ({
         }}
       >
         <EditIcon
-          className={`w-6 h-6 ${
-            override ? 'bg-secondary text-secondary-content rounded' : 'text-secondary'
+          className={`tw-w-6 tw-h-6 ${
+            override ? 'tw-bg-secondary tw-text-secondary-content tw-rounded' : 'tw-text-secondary'
           }`}
         />
       </button>
     )
   const ResetButton = ({ disabled = false }) => (
     <button
-      className={`${iconButtonClass} disabled:bg-opacity-0`}
+      className={`${iconButtonClass} disabled:tw-bg-opacity-0`}
       disabled={disabled}
       onClick={(evt) => {
         evt.stopPropagation()
@@ -101,17 +104,16 @@ export const MenuItem = ({
 
   return (
     <FormControl
-      label={<span className="text-base font-normal">{name}.d</span>}
+      label={<span className="tw-text-base tw-font-normal">{i18n.en.o[name].d}</span>}
       id={config.name}
-      labelBR={<div className="flex flex-row items-center gap-2">{buttons}</div>}
+      labelBR={<div className="tw-flex tw-flex-row tw-items-center tw-gap-2">{buttons}</div>}
       labelBL={
         <span
-          className={`text-base font-medium -mt-2 block ${changed ? 'text-accent' : 'opacity-50'}`}
+          className={`tw-text-base tw-font-medium tw--mt-2 tw-block ${changed ? 'tw-text-accent' : 'tw-opacity-50'}`}
         >
-          pe:youAreUsing{changed ? 'ACustom' : 'TheDefault'}Value
+          {changed ? 'This is a custom value' : 'This is the default value'}
         </span>
       }
-      docs={docs}
     >
       <Input {...drillProps} />
     </FormControl>
@@ -152,6 +154,7 @@ export const MenuItemGroup = ({
   isDesignOptionsGroup = false,
   Design,
   state,
+  i18n,
 }) => {
   if (!Item) Item = MenuItem
 
@@ -171,9 +174,9 @@ export const MenuItemGroup = ({
           : () => <span role="img">fixme-icon</span>
     const Value = item.isGroup
       ? () => (
-          <div className="flex flex-row gap-2 items-center font-medium">
+          <div className="tw-flex tw-flex-row tw-gap-2 tw-items-center tw-font-medium">
             {Object.keys(item).filter((i) => i !== 'isGroup').length}
-            <OptionsIcon className="w-5 h-5" />
+            <OptionsIcon className="tw-w-5 tw-h-5" />
           </div>
         )
       : isDesignOptionsGroup
@@ -183,14 +186,14 @@ export const MenuItemGroup = ({
           : () => <span>¯\_(ツ)_/¯</span>
 
     return [
-      <div className="flex flex-row items-center justify-between w-full" key="a">
-        <div className="flex flex-row items-center gap-4 w-full">
+      <div className="tw-flex tw-flex-row tw-items-center tw-justify-between tw-w-full" key="a">
+        <div className="tw-flex tw-flex-row tw-items-center tw-gap-4 tw-w-full">
           <ItemIcon />
-          <span className="font-medium">
-            pe:{itemName}.t pe:{itemName}
+          <span className="tw-font-medium tw-capitalize">
+            {i18n && i18n.en.o[itemName]?.t ? i18n.en.o[itemName].t : itemName}
           </span>
         </div>
-        <div className="font-bold">
+        <div className="tw-font-bold">
           <Value
             current={currentValues[itemName]}
             config={item}
@@ -218,6 +221,7 @@ export const MenuItemGroup = ({
             updateHandler,
             isDesignOptionsGroup,
             Design,
+            i18n,
           }}
         />
       ) : (
@@ -234,6 +238,7 @@ export const MenuItemGroup = ({
             updateHandler,
             passProps,
             Design,
+            i18n,
           }}
         />
       ),
@@ -241,7 +246,7 @@ export const MenuItemGroup = ({
     ]
   })
 
-  return <SubAccordion items={content.filter((item) => item !== null)} />
+  return <SubAccordion items={content.filter((item) => item !== null)} dense />
 }
 
 /**
@@ -253,11 +258,13 @@ export const MenuItemGroup = ({
  * @param  {String}  options.emoji   the emoji icon of the menu item
  */
 export const MenuItemTitle = ({ name, current = null, open = false, emoji = '', Icon = false }) => (
-  <div className={`flex flex-row gap-1 items-center w-full ${open ? '' : 'justify-between'}`}>
-    <span className="font-medium capitalize flex flex-row gap-2">
+  <div
+    className={`tw-flex tw-flex-row tw-gap-1 tw-items-center tw-w-full ${open ? '' : 'tw-justify-between'}`}
+  >
+    <span className="tw-font-medium tw-capitalize tw-flex tw-flex-row tw-gap-2">
       {Icon ? <Icon /> : <span role="img">{emoji}</span>}
       fixme: {name}
     </span>
-    <span className="font-bold">{current}</span>
+    <span className="tw-font-bold">{current}</span>
   </div>
 )

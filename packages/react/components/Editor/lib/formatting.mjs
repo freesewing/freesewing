@@ -1,28 +1,22 @@
+import { designOptionType } from '@freesewing/utils'
+
 /*
  * Method that capitalizes a string (make the first character uppercase)
  *
- * @param {object} Swizzled - Swizzled code, not used here
  * @param {string} string - The input string to capitalize
  * @return {string} String - The capitalized input string
  */
-export function capitalize(Swizzled, string) {
+export function capitalize(string) {
   return typeof string === 'string' ? string.charAt(0).toUpperCase() + string.slice(1) : ''
 }
 
-export function formatDesignOptionValue(Swizzled, option, value, imperial) {
-  const oType = Swizzled.methods.designOptionType(option)
-  if (oType === 'pct') return Swizzled.methods.formatPercentage(value ? value : option.pct / 100)
+export function formatDesignOptionValue(option, value, imperial) {
+  const oType = designOptionType(option)
+  if (oType === 'pct') return formatPercentage(value ? value : option.pct / 100)
   if (oType === 'deg') return `${value ? value : option.deg}°`
   if (oType === 'bool')
-    return typeof value === 'undefined' ? (
-      option.bool
-    ) : value ? (
-      <Swizzled.components.BoolYesIcon />
-    ) : (
-      <Swizzled.components.BoolNoIcon />
-    )
-  if (oType === 'mm')
-    return Swizzled.methods.formatMm(typeof value === 'undefined' ? option.mm : value, imperial)
+    return typeof value === 'undefined' ? option.bool : value ? <BoolYesIcon /> : <BoolNoIcon />
+  if (oType === 'mm') return formatMm(typeof value === 'undefined' ? option.mm : value, imperial)
   if (oType === 'list') return typeof value === 'undefined' ? option.dflt : value
 
   return value
@@ -36,7 +30,7 @@ export function formatDesignOptionValue(Swizzled, option, value, imperial) {
  * fraction: the value to process
  * format: the type of formatting to apply. html, notags, or anything else which will only return numbers
  */
-export function formatFraction128(Swizzled, fraction, format = 'html') {
+export function formatFraction128(fraction, format = 'html') {
   let negative = ''
   let inches = ''
   let rest = ''
@@ -50,19 +44,12 @@ export function formatFraction128(Swizzled, fraction, format = 'html') {
     rest = fraction - inches
   }
   let fraction128 = Math.round(rest * 128)
-  if (fraction128 == 0)
-    return Swizzled.methods.formatImperial(negative, inches || fraction128, false, false, format)
+  if (fraction128 == 0) return formatImperial(negative, inches || fraction128, false, false, format)
 
   for (let i = 1; i < 7; i++) {
     const numoFactor = Math.pow(2, 7 - i)
     if (fraction128 % numoFactor === 0)
-      return Swizzled.methods.formatImperial(
-        negative,
-        inches,
-        fraction128 / numoFactor,
-        Math.pow(2, i),
-        format
-      )
+      return formatImperial(negative, inches, fraction128 / numoFactor, Math.pow(2, i), format)
   }
 
   return (
@@ -73,7 +60,7 @@ export function formatFraction128(Swizzled, fraction, format = 'html') {
 }
 
 // Formatting for imperial values
-export function formatImperial(Swizzled, neg, inch, numo = false, deno = false, format = 'html') {
+export function formatImperial(neg, inch, numo = false, deno = false, format = 'html') {
   if (format === 'html') {
     if (numo) return `${neg}${inch}&nbsp;<sup>${numo}</sup>/<sub>${deno}</sub>"`
     else return `${neg}${inch}"`
@@ -88,28 +75,27 @@ export function formatImperial(Swizzled, neg, inch, numo = false, deno = false, 
 
 // Format a value in mm based on the user's units
 // Format can be html, notags, or anything else which will only return numbers
-export function formatMm(Swizzled, val, units, format = 'html') {
-  val = Swizzled.methods.roundMm(val)
+export function formatMm(val, units, format = 'html') {
+  val = roundMm(val)
   if (units === 'imperial' || units === true) {
-    if (val == 0) return Swizzled.methods.formatImperial('', 0, false, false, format)
+    if (val == 0) return formatImperial('', 0, false, false, format)
 
     let fraction = val / 25.4
-    return Swizzled.methods.formatFraction128(fraction, format)
+    return formatFraction128(fraction, format)
   } else {
-    if (format === 'html' || format === 'notags') return Swizzled.methods.roundMm(val / 10) + 'cm'
-    else return Swizzled.methods.roundMm(val / 10)
+    if (format === 'html' || format === 'notags') return roundMm(val / 10) + 'cm'
+    else return roundMm(val / 10)
   }
 }
 
 // Format a percentage (as in, between 0 and 1)
-export function formatPercentage(Swizzled, val) {
+export function formatPercentage(val) {
   return Math.round(1000 * val) / 10 + '%'
 }
 
 /**
  * A generic rounding method
  *
- * @param {object} Swizzled - Swizzled code, not used here
  * @param {number} val - The input number to round
  * @param {number} decimals - The number of decimal points to use when rounding
  * @return {number} result - The rounded number
@@ -119,7 +105,7 @@ export function round(methods, val, decimals = 1) {
 }
 
 // Rounds a value in mm
-export function roundMm(Swizzled, val, units) {
+export function roundMm(val, units) {
   if (units === 'imperial') return Math.round(val * 1000000) / 1000000
   else return Math.round(val * 10) / 10
 }
@@ -127,11 +113,10 @@ export function roundMm(Swizzled, val, units) {
 /**
  * Converts a value that contain a fraction to a decimal
  *
- * @param {object} Swizzled - Swizzled code, not used here
  * @param {number} value - The input value
  * @return {number} result - The resulting decimal value
  */
-export function fractionToDecimal(Swizzled, value) {
+export function fractionToDecimal(value) {
   // if it's just a number, return it
   if (!isNaN(value)) return value
 
@@ -170,12 +155,11 @@ export function fractionToDecimal(Swizzled, value) {
 /**
  * Helper method to turn a measurement in millimeter regardless of units
  *
- * @param {object} Swizzled - Swizzled code, including methods
  * @param {number} value - The input value
  * @param {string} units - One of 'metric' or 'imperial'
  * @return {number} result - Value in millimeter
  */
-export function measurementAsMm(Swizzled, value, units = 'metric') {
+export function measurementAsMm(value, units = 'metric') {
   if (typeof value === 'number') return value * (units === 'imperial' ? 25.4 : 10)
 
   if (String(value).endsWith('.')) return false
@@ -185,7 +169,7 @@ export function measurementAsMm(Swizzled, value, units = 'metric') {
     if (isNaN(value)) return false
     return value * 10
   } else {
-    const decimal = Swizzled.methods.fractionToDecimal(value)
+    const decimal = fractionToDecimal(value)
     if (isNaN(decimal)) return false
     return decimal * 24.5
   }
@@ -194,13 +178,12 @@ export function measurementAsMm(Swizzled, value, units = 'metric') {
 /**
  * Converts a millimeter value to a Number value in the given units
  *
- * @param {object} Swizzled - Swizzled code, not used here
  * @param {number} mmValue - The input value in millimeter
  * @param {string} units - One of 'metric' or 'imperial'
  * @result {number} result - The result in millimeter
  */
-export function measurementAsUnits(Swizzled, mmValue, units = 'metric') {
-  return Swizzled.methods.round(mmValue / (units === 'imperial' ? 25.4 : 10), 3)
+export function measurementAsUnits(mmValue, units = 'metric') {
+  return round(mmValue / (units === 'imperial' ? 25.4 : 10), 3)
 }
 export function shortDate(locale = 'en', timestamp = false, withTime = true) {
   const options = {
@@ -220,12 +203,11 @@ export function shortDate(locale = 'en', timestamp = false, withTime = true) {
 /*
  * Parses value that should be a distance (cm or inch)
  *
- * @param {object} Swizzled - Swizzled code, including methods
  * @param {number} val - The input value
  * @param {bool} imperial - True if the units are imperial, false for metric
  * @return {number} result - The distance in the relevant units
  */
-export function parseDistanceInput(Swizzled, val = false, imperial = false) {
+export function parseDistanceInput(val = false, imperial = false) {
   // No input is not valid
   if (!val) return false
 
@@ -239,7 +221,7 @@ export function parseDistanceInput(Swizzled, val = false, imperial = false) {
   if (!val.match(regex)) return false
 
   // if fractions are allowed, parse for fractions, otherwise use the number as a value
-  if (imperial) val = Swizzled.methods.fractionToDecimal(val)
+  if (imperial) val = fractionToDecimal(val)
 
   return isNaN(val) ? false : Number(val)
 }

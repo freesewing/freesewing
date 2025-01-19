@@ -9,12 +9,7 @@ import {
   menuCoreSettingsSammHandler,
   menuCoreSettingsStructure,
 } from './core-settings.mjs'
-import {
-  designOptionType,
-  findOption,
-  getOptionStructure,
-  menuDesignOptionsStructure,
-} from './design-options.mjs'
+import { findOption, getOptionStructure, menuDesignOptionsStructure } from './design-options.mjs'
 import {
   addUndoStep,
   cloneObject,
@@ -70,7 +65,6 @@ export {
   menuCoreSettingsSammHandler,
   menuCoreSettingsStructure,
   // design-options.mjs
-  designOptionType,
   findOption,
   getOptionStructure,
   menuDesignOptionsStructure,

@@ -1,6 +1,9 @@
 import React, { useMemo, useCallback, useState } from 'react'
-import { round } from '@freesewing/utils'
-import { ButtonFrame } from '@freesewing/react/components/Input'
+import { designOptionType, round } from '@freesewing/utils'
+import { menuRoundPct } from '../../lib/index.mjs'
+import { ButtonFrame, NumberInput } from '@freesewing/react/components/Input'
+import { defaultConfig } from '../../config/index.mjs'
+import { ApplyIcon } from '@freesewing/react/components/Icon'
 
 /** A boolean version of {@see MenuListInput} that sets up the necessary configuration */
 export const MenuBoolInput = (props) => {
@@ -23,8 +26,8 @@ export const MenuConstantInput = ({
     <input
       type={type}
       className={`
-      input input-bordered w-full text-base-content
-      input-${changed ? 'secondary' : 'accent'}
+      tw-daisy-input tw-daisy-input-bordered tw-w-full tw-text-base-content
+      ${changed ? 'tw-daisy-input-secondary' : 'tw-daisy-input-accent'}
     `}
       value={changed ? current : config.dflt}
       onChange={(evt) => updateHandler([name], evt.target.value)}
@@ -99,12 +102,12 @@ export const MenuListInput = ({
         onClick={() => handleChange(entry)}
       >
         <div
-          className={`w-full flex items-start ${
-            sideBySide ? 'flex-row justify-between gap-2' : 'flex-col'
+          className={`tw-w-full tw-flex tw-items-start ${
+            sideBySide ? 'tw-flex-row tw-justify-between tw-gap-2' : 'tw-flex-col'
           }`}
         >
-          <div className="font-bold text-lg shrink-0">{title}</div>
-          {compact ? null : <div className="text-base font-normal">{desc}</div>}
+          <div className="tw-font-bold tw-text-lg tw-shrink-0">{title}</div>
+          {compact ? null : <div className="tw-text-base tw-font-normal">{desc}</div>}
         </div>
       </ButtonFrame>
     )
@@ -126,7 +129,7 @@ export const MenuListToggle = ({ config, changed, updateHandler, name }) => {
   return (
     <input
       type="checkbox"
-      className={`toggle ${changed ? 'toggle-accent' : 'toggle-secondary'}`}
+      className={`tw-daisy-toggle ${changed ? 'tw-daisy-toggle-accent' : 'tw-daisy-toggle-secondary'}`}
       checked={checked}
       onChange={doToggle}
       onClick={(evt) => evt.stopPropagation()}
@@ -282,6 +285,7 @@ export const MenuSliderInput = ({
   setReset,
   children,
   changed,
+  i18n,
 }) => {
   const { max, min } = config
   const handleChange = useSharedHandlers({
@@ -297,7 +301,7 @@ export const MenuSliderInput = ({
   if (override)
     return (
       <>
-        <div className="flex flex-row justify-between">
+        <div className="tw-flex tw-flex-row tw-justify-between">
           <MenuEditOption
             {...{
               config,
@@ -314,14 +318,16 @@ export const MenuSliderInput = ({
 
   return (
     <>
-      <div className="flex flex-row justify-between">
-        <span className="opacity-50">
+      <div className="tw-flex tw-flex-row tw-justify-between">
+        <span className="tw-opacity-50">
           <span dangerouslySetInnerHTML={{ __html: valFormatter(min) + suffix }} />
         </span>
-        <span className={`font-bold ${val === config.dflt ? 'text-secondary' : 'text-accent'}`}>
+        <span
+          className={`tw-font-bold ${val === config.dflt ? 'tw-text-secondary' : 'tw-text-accent'}`}
+        >
           <span dangerouslySetInnerHTML={{ __html: valFormatter(val) + suffix }} />
         </span>
-        <span className="opacity-50">
+        <span className="tw-opacity-50">
           <span dangerouslySetInnerHTML={{ __html: valFormatter(max) + suffix }} />
         </span>
       </div>
@@ -330,8 +336,8 @@ export const MenuSliderInput = ({
         {...{ min, max, value: val, step: config.step || 0.1 }}
         onChange={(evt) => handleChange(evt.target.value)}
         className={`
-          range range-sm mt-1
-          ${changed ? 'range-accent' : 'range-secondary'}
+          tw-daisy-range tw-daisy-range-sm tw-mt-1
+          ${changed ? 'tw-daisy-range-accent' : 'tw-daisy-range-secondary'}
         `}
       />
       {children}
@@ -355,13 +361,16 @@ export const MenuEditOption = (props) => {
     return <p>This design option type does not have a component to handle manual input.</p>
 
   return (
-    <div className="form-control mb-2 w-full">
-      <label className="label font-medium text-accent">
-        <em>Enter a custom value ({config.menuOptionEditLabels[type]})</em>
+    <div className="tw-daisy-form-control tw-mb-2 tw-w-full">
+      <label className="tw-daisy-label tw-font-medium tw-text-accent">
+        <em>Enter a custom value ({defaultConfig.menuOptionEditLabels[type]})</em>
       </label>
-      <label className="input-group input-group-sm flex flex-row items-center gap-2 -mt-4">
+      <label className="tw-daisy-input-group tw-daisy-input-group-sm tw-flex tw-flex-row tw-items-center tw-gap-2 tw--mt-4">
         <NumberInput value={manualEdit} update={setManualEdit} />
-        <button className="btn btn-secondary mt-4" onClick={() => onUpdate(manualEdit)}>
+        <button
+          className="tw-daisy-btn tw-daisy-btn-secondary tw-mt-4"
+          onClick={() => onUpdate(manualEdit)}
+        >
           <ApplyIcon />
         </button>
       </label>
@@ -416,9 +425,11 @@ export const MenuOnlySettingInput = (props) => {
   config.sideBySide = true
   config.titleMethod = (entry, t) => {
     const chunks = entry.split('.')
-    return <span className="font-medium text-base">{t(`${chunks[0]}:${chunks[1]}`)}</span>
+    return <span className="tw-font-medium tw-text-base">{t(`${chunks[0]}:${chunks[1]}`)}</span>
   }
-  config.valueMethod = (entry) => <span className="text-sm">{capitalize(entry.split('.')[0])}</span>
+  config.valueMethod = (entry) => (
+    <span className="tw-text-sm">{capitalize(entry.split('.')[0])}</span>
+  )
   config.dense = true
   // Sort alphabetically (translated)
   const order = []

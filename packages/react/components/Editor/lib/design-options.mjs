@@ -1,16 +1,5 @@
-export function designOptionType(option) {
-  if (typeof option?.pct !== 'undefined') return 'pct'
-  if (typeof option?.bool !== 'undefined') return 'bool'
-  if (typeof option?.count !== 'undefined') return 'count'
-  if (typeof option?.deg !== 'undefined') return 'deg'
-  if (typeof option?.list !== 'undefined') return 'list'
-  if (typeof option?.mm !== 'undefined') return 'mm'
-
-  return 'constant'
-}
 import { mergeOptions } from '@freesewing/core'
-import set from 'lodash.set'
-import orderBy from 'lodash.orderby'
+import { designOptionType, set, orderBy } from '@freesewing/utils'
 
 export function menuDesignOptionsStructure(options, settings, asFullList = false) {
   if (!options) return options
@@ -59,6 +48,7 @@ export function menuDesignOptionsStructure(options, settings, asFullList = false
 
   return menu
 }
+
 /*
  * Helper method to grab an option from an Design options structure
  *
@@ -66,7 +56,6 @@ export function menuDesignOptionsStructure(options, settings, asFullList = false
  */
 export function getOptionStructure(option, Design, state) {
   const structure = menuDesignOptionsStructure(Design.patternConfig.options, state.settings)
-  console.log({ structure })
 
   return findOption(structure, option)
 }

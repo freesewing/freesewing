@@ -1,7 +1,9 @@
 // Dependencies
 import { menuDesignOptionsStructure } from '../../lib/index.mjs'
+import { designOptionType } from '@freesewing/utils'
 // Hooks
 import React, { useCallback, useMemo } from 'react'
+import { useDesignTranslation } from '@freesewing/react/hooks/useDesignTranslation'
 // Components
 import {
   MenuBoolInput,
@@ -20,7 +22,7 @@ import {
   MenyMmOptionValue,
   MenuPctOptionValue,
 } from './Value.mjs'
-import { MenuItemGroup } from './Container.mjs'
+import { MenuItemGroup, MenuItem } from './Container.mjs'
 import { OptionsIcon } from '@freesewing/react/components/Icon'
 
 //
@@ -32,6 +34,7 @@ import { OptionsIcon } from '@freesewing/react/components/Icon'
  * @param {Object} props.update - Object holding state handlers
  */
 export const DesignOptionsMenu = ({ Design, isFirst = true, state, update }) => {
+  const i18n = useDesignTranslation(Design.designConfig.data.id)
   const structure = useMemo(
     () => menuDesignOptionsStructure(Design.patternConfig.options, state.settings),
     [Design.patternConfig, state.settings]
@@ -41,7 +44,7 @@ export const DesignOptionsMenu = ({ Design, isFirst = true, state, update }) => 
     [update.settings]
   )
 
-  const drillProps = { Design, state, update }
+  const drillProps = { Design, state, update, i18n }
   const inputs = {
     bool: (props) => <MenuBoolInput {...drillProps} {...props} />,
     constant: (props) => <MenuConstantInput {...drillProps} {...props} />,
@@ -72,8 +75,7 @@ export const DesignOptionsMenu = ({ Design, isFirst = true, state, update }) => 
         Icon: OptionsIcon,
         Item: (props) => <DesignOption {...{ inputs, values, update, Design }} {...props} />,
         isFirst,
-        name: 'pe:designOptions',
-        language: state.locale,
+        name: 'Design Options',
         passProps: {
           ux: state.ui.ux,
           settings: state.settings,
@@ -85,6 +87,7 @@ export const DesignOptionsMenu = ({ Design, isFirst = true, state, update }) => 
         Design,
         inputs,
         values,
+        i18n,
       }}
     />
   )

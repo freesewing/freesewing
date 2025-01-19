@@ -1,6 +1,6 @@
 import React from 'react'
 import { mergeOptions } from '@freesewing/core'
-import { formatMm } from '@freesewing/utils'
+import { formatMm, formatPercentage } from '@freesewing/utils'
 import { BoolYesIcon, BoolNoIcon } from '@freesewing/react/components/Icon'
 
 /**

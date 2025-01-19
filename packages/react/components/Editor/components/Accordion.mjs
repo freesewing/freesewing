@@ -4,14 +4,14 @@ import React, { useState } from 'react'
  * DaisyUI's accordion seems rather unreliable.
  * So instead, we handle this in React state
  */
-const getProps = (isActive) => ({
+const getProps = (isActive = false) => ({
   className: `tw-p-2 tw-px-4 tw-rounded-lg tw-bg-transparent tw-shadow hover:tw-cursor-pointer
-    tw-w-full tw-mt-2 tw-py-4 tw-h-auto tw-content-start tw-text-left tw-bg-opacity-20
+    tw-w-full tw-h-auto tw-content-start tw-text-left tw-bg-opacity-20
     ${isActive ? 'hover:tw-bg-transparent' : 'hover:tw-bg-secondary hover:tw-bg-opacity-10'}`,
 })
 
 const getSubProps = (isActive) => ({
-  className: ` tw-p-2 tw-px-4 tw-rounded tw-bg-transparent tw-w-full tw-mt-2 tw-py-4 tw-h-auto
+  className: `tw-p-2 tw-px-4 tw-rounded-none tw-bg-transparent tw-w-full tw-h-auto
   tw-content-start tw-bg-secondary tw-text-left tw-bg-opacity-20
   ${
     isActive

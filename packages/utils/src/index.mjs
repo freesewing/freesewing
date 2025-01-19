@@ -69,6 +69,23 @@ export function cloudflareImageUrl({ id = 'default-avatar', variant = 'public' }
   return `${cloudflareConfig.url}${id}/${variant}`
 }
 
+/**
+ * Determines the design optino type based on the option's config
+ *
+ * @param {object} option - The option config
+ * @return {string} type - The option type
+ */
+export function designOptionType(option) {
+  if (typeof option?.pct !== 'undefined') return 'pct'
+  if (typeof option?.bool !== 'undefined') return 'bool'
+  if (typeof option?.count !== 'undefined') return 'count'
+  if (typeof option?.deg !== 'undefined') return 'deg'
+  if (typeof option?.list !== 'undefined') return 'list'
+  if (typeof option?.mm !== 'undefined') return 'mm'
+
+  return 'constant'
+}
+
 /*
  * Parses value that should be a distance (cm or inch) into a value in mm
  *
@@ -177,6 +194,16 @@ export function formatMm(val, units, format = 'html') {
     if (format === 'html' || format === 'notags') return roundDistance(val / 10) + 'cm'
     else return roundDistance(val / 10)
   }
+}
+
+/**
+ * Format a percentage (as in, between 0 and 1)
+ *
+ * @param {number} val - The value
+ * @return {string} pct - The value formatted as percentage
+ */
+export function formatPercentage(val) {
+  return Math.round(1000 * val) / 10 + '%'
 }
 
 /** convert a value that may contain a fraction to a decimal */

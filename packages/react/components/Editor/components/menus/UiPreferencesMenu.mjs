@@ -8,7 +8,6 @@ import { MenuItemGroup } from './Container.mjs'
 import { Ux } from '@freesewing/react/components/Ux'
 
 export const UiPreferencesMenu = ({ update, state, Design }) => {
-  console.log(state)
   const structure = menuUiPreferencesStructure()
 
   const drillProps = { Design, state, update }
