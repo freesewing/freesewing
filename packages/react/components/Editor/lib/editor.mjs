@@ -2,7 +2,7 @@
 import React from 'react'
 import { defaultConfig } from '../config/index.mjs'
 import { round } from '@freesewing/utils'
-import { formatDesignOptionValue } from './index.mjs'
+import { formatDesignOptionValue, menuCoreSettingsStructure } from './index.mjs'
 // Components
 import {
   ErrorIcon,

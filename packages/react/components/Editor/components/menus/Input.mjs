@@ -70,6 +70,7 @@ export const MenuListInput = ({
   changed,
   design,
   isDesignOption = false,
+  i18n,
 }) => {
   const handleChange = useSharedHandlers({
     dflt: config.dflt,
@@ -79,13 +80,23 @@ export const MenuListInput = ({
   })
 
   return config.list.map((entry) => {
-    const titleKey = config.choiceTitles
+    let titleKey = config.choiceTitles
       ? config.choiceTitles[entry]
       : isDesignOption
-        ? `${design}:${name}.${entry}`
+        ? i18n.en.o[name]
         : `${name}.o.${entry}`
-    const title = config.titleMethod ? config.titleMethod(entry, t) : t(`${titleKey}.t`)
-    const desc = config.valueMethod ? config.valueMethod(entry, t) : t(`${titleKey}.d`)
+    if (i18n.en.o[`${name}.${entry}`]) titleKey = i18n.en.o[`${name}.${entry}`]
+    console.log({ titleKey, titles: config.choiceTitles, isDesignOption })
+    const title = config.titleMethod
+      ? config.titleMethod(entry)
+      : typeof titleKey === 'string'
+        ? i18n.en.o[titleKey]?.t
+        : titleKey.t
+    const desc = config.valueMethod
+      ? config.valueMethod(entry)
+      : typeof titleKey === 'string'
+        ? i18n.en.o[titleKey]?.d
+        : titleKey.d
     const sideBySide = config.sideBySide || desc.length + title.length < 42
 
     return (

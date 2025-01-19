@@ -100,7 +100,7 @@ export const viewLabels = {
     t: 'Time Design',
     d: 'Shows detailed timing of the pattern being drafted, allowing you to find bottlenecks in performance',
   },
-  layout: {
+  printLayout: {
     t: 'Pattern Layout',
     d: 'Organize your pattern parts to minimize paper use',
   },

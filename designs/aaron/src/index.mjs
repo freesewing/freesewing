@@ -27,6 +27,8 @@ const i18n = mergeI18n([brianI18n, aaronI18n], {
       'legacyArmholeDepthNo',
       'legacyArmholeDepthYes',
       'armholeDepth',
+      'draftForHighBustNo',
+      'draftForHighBustYes',
     ],
   },
   s: { drop: [] },

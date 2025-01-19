@@ -1,4 +1,6 @@
+import React from 'react'
 import { designOptionType } from '@freesewing/utils'
+import { BoolNoIcon, BoolYesIcon } from '@freesewing/react/components/Icon'
 
 /*
  * Method that capitalizes a string (make the first character uppercase)

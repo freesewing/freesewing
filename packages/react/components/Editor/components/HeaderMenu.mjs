@@ -114,7 +114,7 @@ export const HeaderMenuDropdown = (props) => {
         </div>
         <div
           tabIndex={0}
-          className="tw-daisy-dropdown-content tw-bg-base-100 tw-bg-opacity-90 tw-z-20 tw-shadow tw-left-0 !tw-fixed md:!tw-absolute tw-top-12 tw-w-screen md:tw-w-96"
+          className="tw-daisy-dropdown-content tw-bg-base-100 tw-bg-opacity-90 tw-z-20 tw-shadow tw-left-0 !tw-fixed md:!tw-absolute tw-top-12 tw-w-screen md:tw-max-w-lg"
         >
           {props.children}
         </div>
@@ -517,7 +517,7 @@ export const HeaderMenuViewMenu = (props) => {
     >
       <ul
         tabIndex={i}
-        className="tw-dropdown-content tw-bg-base-100 tw-bg-opacity-95 tw-z-20 tw-shadow tw-left-0 !tw-fixed md:!tw-absolute tw-w-screen md:tw-w-96 md:tw-pt-0 tw-mt-14 md:tw-mt-0"
+        className="tw-dropdown-content tw-bg-base-100 tw-bg-opacity-95 tw-z-20 tw-shadow tw-left-0 !tw-fixed md:!tw-absolute tw-w-screen md:tw-max-w-lg md:tw-pt-0 tw-mt-14 md:tw-mt-0"
       >
         {output}
       </ul>
