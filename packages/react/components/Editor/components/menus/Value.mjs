@@ -1,34 +1,62 @@
 import React from 'react'
 import { mergeOptions } from '@freesewing/core'
+import { formatMm } from '@freesewing/utils'
+import { BoolYesIcon, BoolNoIcon } from '@freesewing/react/components/Icon'
 
-/** Displays that constant values are not implemented in the front end */
+/**
+ * this method is here to capture deprecated use of the translation method
+ *
+ * @param {string} key - The translation key
+ * @retunr {string} key - Returns the key as-is
+ */
+const t = (key) => {
+  console.log('FIXME: t method called in react/components/Editor/components/menus/Value.mjs')
+  return key
+}
+
+/**
+ * Displays that constant values are not implemented in the front end
+ */
 export const MenuConstantOptionValue = () => (
   <span className="text-error">FIXME: No ConstantOptionvalue implemented</span>
 )
 
-/** Displays a count value*/
+/**
+ * Displays a count value
+ *
+ * @param {object} config - The option config
+ * @param {number} current - The current (count) value
+ * @param {bool} changed - Whether or not the value is non-default
+ */
 export const MenuCountOptionValue = ({ config, current, changed }) => (
   <MenuShowValue {...{ current, changed, dflt: config.count }} />
 )
 
-/** Displays a degree value */
+/**
+ * Displays a degree value
+ *
+ * @param {object} config - The option config
+ * @param {number} current - The current (count) value
+ * @param {bool} changed - Whether or not the value is non-default
+ */
 export const MenuDegOptionValue = ({ config, current, changed }) => (
   <MenuHighlightValue changed={changed}> {changed ? current : config.deg}&deg;</MenuHighlightValue>
 )
 
 /**
  * A component to highlight a changed value
- * @param {Boolean} changed - Whether the value is changed or not
+ *
+ * @param {Boolean} changed - Whether the value is non-default
  * @param {Function} children - The React children
  */
 export const MenuHighlightValue = ({ changed, children }) => (
   <span className={changed ? 'text-accent' : ''}> {children} </span>
 )
 
-/** Displays a list option value */
-export const MenuListOptionValue = (props) => (
-  <MenuListValue {...props} t={(input) => 'fixme handle option translation'} />
-)
+/**
+ * Displays a list option value
+ */
+export const MenuListOptionValue = (props) => <MenuListValue {...props} t={t} />
 
 /**
  * Displays the correct, translated value for a list
@@ -51,20 +79,26 @@ export const MenuListValue = ({ current, config, changed }) => {
   else if (val) key = <BoolYesIcon />
   else key = <BoolNoIcon />
 
-  const translated = config.doNotTranslate || typeof key !== 'string' ? key : t(key)
+  const translated = config.doNotTranslate || key
 
   return <MenuHighlightValue changed={changed}>{translated}</MenuHighlightValue>
 }
 
-/** Displays the corrent, translated value for a boolean */
+/**
+ * Displays the corrent, translated value for a boolean
+ */
 export const MenuBoolValue = MenuListOptionValue
 
-/** Displays the MmOptions are not supported */
+/**
+ * Displays the MmOptions are not supported
+ */
 export const MenuMmOptionValue = () => (
   <span className="text-error">FIXME: No Mm Options are not supported</span>
 )
 
-/** Displays a formated mm value based on the current units */
+/**
+ * Displays a formated mm value based on the current units
+ */
 export const MenuMmValue = ({ current, config, units, changed }) => (
   <MenuHighlightValue changed={changed}>
     <span
@@ -75,7 +109,8 @@ export const MenuMmValue = ({ current, config, units, changed }) => (
   </MenuHighlightValue>
 )
 
-/** Displays the current percentage value, and the absolute value if configured
+/**
+ * Displays the current percentage value, and the absolute value if configured
  *
  **************************************************************************
  * SliderIcon  Title                                                 THIS *
@@ -83,7 +118,7 @@ export const MenuMmValue = ({ current, config, units, changed }) => (
  * ----------------------0----------------------------------------------- *
  * msg                                               PencilIcon ResetIcon *
  **************************************************************************
- * */
+ */
 export const MenuPctOptionValue = ({ config, current, settings, changed, patternConfig }) => {
   const val = changed ? current : config.pct / 100
 
@@ -101,6 +136,7 @@ export const MenuPctOptionValue = ({ config, current, settings, changed, pattern
 
 /**
  * A component to display a value, highligting it if it changed
+ *
  * @param  {Number|String|Boolean} options.current - The current value, if it has been changed
  * @param  {Number|String|Boolean} options.dflt - The default value
  * @param  {Boolean} options.changed - Has the value been changed?
@@ -109,10 +145,24 @@ export const MenuShowValue = ({ current, dflt, changed }) => {
   return <MenuHighlightValue changed={changed}> {changed ? current : dflt} </MenuHighlightValue>
 }
 
+/**
+ * Displays the value for core's scale setting
+ *
+ * @param {object} config - The option config
+ * @param {number} current - The current (count) value
+ * @param {bool} changed - Whether or not the value is non-default
+ */
 export const MenuScaleSettingValue = ({ current, config, changed }) => (
   <MenuHighlightValue current={current} dflt={config.dflt} changed={changed} />
 )
 
+/**
+ * Displays the value for core's only setting
+ *
+ * @param {object} config - The option config
+ * @param {number} current - The current (count) value
+ * @param {bool} changed - Whether or not the value is non-default
+ */
 export const MenuOnlySettingValue = ({ current, config }) => (
   <MenuHighlightValue
     current={current?.length}

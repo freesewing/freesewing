@@ -1,11 +1,12 @@
 import React, { useState, useMemo, useCallback, forwardRef, useContext } from 'react'
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch'
+import { Pattern } from '@freesewing/react/components/Pattern'
 
 /*
  * A pattern you can pan and zoom
  */
 export const ZoomablePattern = forwardRef(function ZoomablePatternRef(props, ref) {
-  const { renderProps, Swizzled, rotate } = props
+  const { renderProps, rotate } = props
   const { onTransformed, setZoomFunctions } = useContext(ZoomContext)
 
   return (
@@ -24,9 +25,8 @@ export const ZoomablePattern = forwardRef(function ZoomablePatternRef(props, ref
         id="pan-zoom-pattern"
       >
         {props.children || (
-          <Swizzled.components.Pattern
+          <Pattern
             {...{ renderProps }}
-            t={Swizzled.methods.t}
             ref={ref}
             className={`freesewing pattern w-full ${rotate ? '-rotate-90' : ''}`}
           />

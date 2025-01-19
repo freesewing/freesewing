@@ -5,6 +5,22 @@ import {
   menuCoreSettingsSammHandler,
   menuCoreSettingsStructure,
 } from '../../lib/index.mjs'
+import {
+  MenuBoolInput,
+  MenuListInput,
+  MenuMmInput,
+  MenuOnlySettingInput,
+  MenuSliderInput,
+} from './Input.mjs'
+import {
+  //MenuBoolValue,
+  MenuListValue,
+  MenuMmValue,
+  MenuOnlySettingValue,
+  MenuScaleSettingValue,
+} from './Value.mjs'
+import { MenuItemGroup } from './Container.mjs'
+import { SettingsIcon } from '@freesewing/react/components/Icon'
 
 /**
  * The core settings menu

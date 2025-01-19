@@ -242,6 +242,13 @@ export const FingerprintIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks lik an exclamation point inside a circle
+export const FixmeIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
+  </IconWrapper>
+)
+
 // Looks lik a flag
 export const FlagIcon = (props) => (
   <IconWrapper {...props}>
@@ -753,12 +760,3 @@ export const ViewDocsIcon = DocsIcon
 export const ViewDesignsIcon = DesignIcon
 export const ViewViewPickerIcon = UiIcon
 export const ViewUndosIcon = BackIcon
-// Flag icons
-export const FlagNoteIcon = ChatIcon
-export const FlagInfoIcon = DocsIcon
-export const FlagTipIcon = TipIcon
-export const FlagWarningIcon = WarningIcon
-export const FlagErrorIcon = ErrorIcon
-export const FlagFixmeIcon = WrenchIcon
-export const FlagExpandIcon = ExpandIcon
-export const FlagOtionsIcon = OptionsIcon

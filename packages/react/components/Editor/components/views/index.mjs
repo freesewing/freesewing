@@ -100,7 +100,7 @@ export const viewLabels = {
     t: 'Choose a different view',
     d: 'fixme',
   },
-  undos: {
+  undo: {
     t: 'Undo History',
     d: 'Time-travel through your recent pattern changes',
   },

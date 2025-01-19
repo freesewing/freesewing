@@ -1,13 +1,22 @@
-export function menuUiPreferencesStructure(Swizzled) {
-  const uiUx = Swizzled.config.uxLevels.ui
+import { defaultConfig } from '../config/index.mjs'
+import {
+  MenuIcon,
+  KioskIcon,
+  RotateIcon,
+  RocketIcon,
+  UxIcon,
+} from '@freesewing/react/components/Icon'
+
+export function menuUiPreferencesStructure() {
+  const uiUx = defaultConfig.uxLevels.ui
   const uiPreferences = {
     ux: {
       ux: uiUx.ux,
       emoji: '🖥️',
       list: [1, 2, 3, 4, 5],
       choiceTitles: {},
-      icon: Swizzled.components.UxIcon,
-      dflt: Swizzled.config.defaultUx,
+      icon: UxIcon,
+      dflt: defaultConfig.defaultUx,
     },
     aside: {
       ux: uiUx.aside,
@@ -17,7 +26,7 @@ export function menuUiPreferencesStructure(Swizzled) {
         1: 'pe:withAside',
       },
       dflt: 1,
-      icon: Swizzled.components.MenuIcon,
+      icon: MenuIcon,
     },
     kiosk: {
       ux: uiUx.kiosk,
@@ -27,7 +36,7 @@ export function menuUiPreferencesStructure(Swizzled) {
         1: 'pe:kioskMode',
       },
       dflt: 0,
-      icon: Swizzled.components.KioskIcon,
+      icon: KioskIcon,
     },
     rotate: {
       ux: uiUx.rotate,
@@ -37,7 +46,7 @@ export function menuUiPreferencesStructure(Swizzled) {
         1: 'pe:rotateYes',
       },
       dflt: 0,
-      icon: Swizzled.components.RotateIcon,
+      icon: RotateIcon,
     },
     renderer: {
       ux: uiUx.renderer,
@@ -51,7 +60,7 @@ export function menuUiPreferencesStructure(Swizzled) {
         svg: 'SVG',
       },
       dflt: 'react',
-      icon: Swizzled.components.RocketIcon,
+      icon: RocketIcon,
     },
   }
 

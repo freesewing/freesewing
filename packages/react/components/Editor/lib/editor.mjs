@@ -1,3 +1,5 @@
+// Dependencies
+import { defaultConfig } from '../config/index.mjs'
 // Components
 import {
   ErrorIcon,
@@ -35,9 +37,10 @@ export function draft(Design, settings) {
 
   return data
 }
-export function flattenFlags(flags, config) {
+
+export function flattenFlags(flags) {
   const all = {}
-  for (const type of config.flagTypes) {
+  for (const type of defaultConfig.flagTypes) {
     let i = 0
     if (flags[type]) {
       for (const flag of Object.values(flags[type])) {

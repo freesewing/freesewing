@@ -1,5 +1,5 @@
 // Dependencies
-import { missingMeasurements } from '../lib/index.mjs'
+import { missingMeasurements, flattenFlags } from '../lib/index.mjs'
 // Hooks
 import React, { useState } from 'react'
 // Components
@@ -7,9 +7,29 @@ import { Null } from './Null.mjs'
 import { AsideViewMenuSpacer } from './AsideViewMenu.mjs'
 import { ViewIcon, viewLabels } from './views/index.mjs'
 import { Tooltip } from './Tooltip.mjs'
-import { ErrorIcon } from '@freesewing/react/components/Icon'
+import {
+  CircleIcon,
+  DetailIcon,
+  ErrorIcon,
+  ExpandIcon,
+  ExportIcon,
+  KioskIcon,
+  MenuIcon,
+  PaperlessIcon,
+  ResetAllIcon,
+  RocketIcon,
+  RotateIcon,
+  SaIcon,
+  SaveAsIcon,
+  SaveIcon,
+  TrashIcon,
+  UndoIcon,
+  UnitsIcon,
+} from '@freesewing/react/components/Icon'
 import { DesignOptionsMenu } from './menus/DesignOptionsMenu.mjs'
 import { CoreSettingsMenu } from './menus/CoreSettingsMenu.mjs'
+import { UiPreferencesMenu } from './menus/UiPreferencesMenu.mjs'
+import { FlagsAccordionEntries } from './Flag.mjs'
 
 export const HeaderMenuAllViews = ({ config, state, update, open, setOpen }) => (
   <HeaderMenuViewMenu {...{ config, state, update, open, setOpen }} />
