@@ -64,9 +64,9 @@ export const DraftView = ({ Design, state, update, config }) => {
   }
 
   return (
-    <PatternLayout
-      {...{ update, Design, output, state, pattern, config }}
-      menu={state.ui?.aside ? <DraftMenu {...{ Design, pattern, update, state }} /> : null}
-    />
+    <>
+      <PatternLayout {...{ update, Design, output, state, pattern, config }} />
+      <p className="tw-clear-both">where does this go?</p>
+    </>
   )
 }

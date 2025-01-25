@@ -69,9 +69,9 @@ export const FormControl = ({
         <label className="tw-daisy-label tw-pb-0" htmlFor={forId}>
           {topLabelChildren}
         </label>
-      ) : (
+      ) : label ? (
         <div className="tw-daisy-label tw-pb-0">{topLabelChildren}</div>
-      )}
+      ) : null}
       {children}
       {labelBL || labelBR ? (
         forId ? (
@@ -99,7 +99,7 @@ export const ButtonFrame = ({
   <button
     className={`
     tw-daisy-btn tw-daisy-btn-ghost tw-daisy-btn-secondary
-    tw-w-full ${dense ? 'tw-mt-1 tw-py-0 tw-daisy-btn-sm' : 'tw-mt-2 tw-py-4 tw-h-auto tw-content-start'}
+    tw-w-full ${dense ? 'tw-mt-1 tw-daisy-btn-sm tw-font-light' : 'tw-mt-2 tw-py-4 tw-h-auto tw-content-start'}
     tw-border-2 tw-border-secondary tw-text-left tw-bg-opacity-20
     ${accordion ? 'hover:tw-bg-transparent' : 'hover:tw-bg-secondary hover:tw-bg-opacity-10'}
     hover:tw-border-secondary hover:tw-border-solid hover:tw-border-2

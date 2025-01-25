@@ -58,20 +58,21 @@ const getTitleAndDesc = (config = {}, i18n = {}, isDesignOption = false) => {
     }
   }
 
-  console.log(config)
   let titleKey = config.choiceTitles
-    ? config.choiceTitles[entry]
+    ? 'fixme' //config.choiceTitles[entry]
     : isDesignOption
       ? i18n.en.o[name]
       : `${name}.o.${entry}`
   if (!config.choiceTitles && i18n && i18n.en.o[`${name}.${entry}`])
     titleKey = i18n.en.o[`${name}.${entry}`]
   console.log({ titleKey, titles: config.choiceTitles, isDesignOption })
-  const title = config.titleMethod
-    ? config.titleMethod(entry)
-    : typeof titleKey === 'string'
-      ? i18n.en.o[titleKey]?.t
-      : titleKey.t
+  const title = config.title
+    ? config.title
+    : config.titleMethod
+      ? config.titleMethod(entry)
+      : typeof titleKey === 'string'
+        ? i18n.en.o[titleKey]?.t
+        : titleKey.t
   const desc = config.valueMethod
     ? config.valueMethod(entry)
     : typeof titleKey === 'string'
@@ -115,8 +116,9 @@ export const MenuListInput = ({
   })
 
   return config.list.map((entry) => {
-    const { title, desc } = getTitleAndDesc(config, i18n, isDesignOption)
-    const sideBySide = config.sideBySide || desc.length + title.length < 42
+    const { title = false, about = false } = config //getTitleAndDesc(config, i18n, isDesignOption)
+    if (!title || !about) console.log('No title or about in', { name, config, design })
+    const sideBySide = config.sideBySide || about.length + title.length < 42
 
     return (
       <ButtonFrame
@@ -136,8 +138,10 @@ export const MenuListInput = ({
             sideBySide ? 'tw-flex-row tw-justify-between tw-gap-2' : 'tw-flex-col'
           }`}
         >
-          <div className="tw-font-bold tw-text-lg tw-shrink-0">{title}</div>
-          {compact ? null : <div className="tw-text-base tw-font-normal">{desc}</div>}
+          <div className="tw-font-semibold tw-shrink-0">{config.choiceTitles[entry]}</div>
+          {compact || !config.choiceDescriptions ? null : (
+            <div className="tw-text-base tw-font-normal">{config.choiceDescriptions[entry]}</div>
+          )}
         </div>
       </ButtonFrame>
     )
@@ -198,74 +202,6 @@ export const MenuMmInput = (props) => {
     />
   )
 }
-
-/**
- * A number input that accepts comma or period decimal separators.
- * Because our use case is almost never going to include thousands, we're using a very simple way of accepting commas:
- * The validator checks for the presence of a single comma or period followed by numbers
- * The parser replaces a single comma with a period
- *
- * optionally accepts fractions
- * @param  {Number}  options.val       the value of the input
- * @param  {Function}  options.onUpdate  a function to handle when the value is updated to a valid value
- * @param  {Boolean} options.fractions should the input allow fractional input
- */
-//export const MenuNumberInput = ({
-//  value,
-//  onUpdate,
-//  onMount,
-//  className,
-//  fractions = true,
-//  min = -Infinity,
-//  max = Infinity,
-//  swizzled,
-//}) => {
-//  const valid = useRef(validateVal(value, fractions, min, max))
-//
-//  const handleChange = useCallback(
-//    (newVal) => {
-//      // only actually update if the value is valid
-//      if (typeof onUpdate === 'function') {
-//        onUpdate(valid.current, newVal)
-//      }
-//    },
-//    [onUpdate, valid]
-//  )
-//
-//  // onChange
-//  const onChange = useCallback(
-//    (evt) => {
-//      const newVal = evt.target.value
-//      // set validity so it will display
-//      valid.current = validateVal(newVal, fractions, min, max)
-//
-//      // handle the change
-//      handleChange(newVal)
-//    },
-//    [fractions, min, max, valid]
-//  )
-//
-//  const val = typeof value === 'undefined' ? config.dflt : value
-//
-//  useEffect(() => {
-//    if (typeof onMount === 'function') {
-//      onMount(valid.current)
-//    }
-//  }, [onMount, valid])
-//
-//  return (
-//    <input
-//      type="text"
-//      inputMode="number"
-//      className={`input input-secondary ${className || 'input-sm grow text-base-content'}
-//        ${valid.current === false && 'input-error'}
-//        ${valid.current && 'input-success'}
-//      `}
-//      value={val}
-//      onChange={onChange}
-//    />
-//  )
-//}
 
 /** A {@see SliderInput} to handle percentage values */
 export const MenuPctInput = ({ current, changed, updateHandler, config, ...rest }) => {

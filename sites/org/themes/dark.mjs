@@ -70,7 +70,7 @@ export const theme = {
   '--focus-ring-offset': '2px',
 
   '--pattern-bg': colors.neutral['900'],
-  '--pattern-fabric': colors.neutral['300'],
+  '--pattern-fabric': colors.neutral['50'],
   '--pattern-lining': colors.emerald['300'],
   '--pattern-interfacing': colors.neutral['500'],
   '--pattern-canvas': colors.amber['300'],

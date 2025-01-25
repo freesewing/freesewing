@@ -5,7 +5,13 @@ import { designOptionType } from '@freesewing/utils'
 import React, { useState, useMemo } from 'react'
 // Components
 import { SubAccordion } from '../Accordion.mjs'
-import { EditIcon, GroupIcon, OptionsIcon, ResetIcon } from '@freesewing/react/components/Icon'
+import {
+  EditIcon,
+  GroupIcon,
+  OptionsIcon,
+  ResetIcon,
+  TipIcon,
+} from '@freesewing/react/components/Icon'
 import { CoreSettingsMenu } from './CoreSettingsMenu.mjs'
 import { FormControl } from '@freesewing/react/components/Input'
 
@@ -103,24 +109,37 @@ export const MenuItem = ({
   buttons.push(<ResetButton open disabled={!changed} key="clear" />)
 
   return (
-    <FormControl
-      label={
-        <span className="tw-text-base tw-font-normal">
-          {config.choiceTitles ? config.choiceTitles[current] : i18n.en.o[name].d}
-        </span>
-      }
-      id={config.name}
-      labelBR={<div className="tw-flex tw-flex-row tw-items-center tw-gap-2">{buttons}</div>}
-      labelBL={
-        <span
-          className={`tw-text-base tw-font-medium tw--mt-2 tw-block ${changed ? 'tw-text-accent' : 'tw-opacity-50'}`}
-        >
-          {changed ? 'This is a custom value' : 'This is the default value'}
-        </span>
-      }
-    >
-      <Input {...drillProps} />
-    </FormControl>
+    <>
+      <FormControl
+        FIXME_REMOVED_label={
+          <span className="tw-text-base tw-font-normal">
+            {config.choiceTitles ? config.choiceTitles[current] : i18n.en.o[name].d}
+          </span>
+        }
+        label={false}
+        id={config.name}
+        labelBR={<div className="tw-flex tw-flex-row tw-items-center tw-gap-2">{buttons}</div>}
+        labelBL={
+          <span
+            className={`tw-text-base tw-font-medium tw--mt-2 tw-block ${changed ? 'tw-text-accent' : 'tw-opacity-50'}`}
+          >
+            {changed ? 'This is a custom value' : 'This is the default value'}
+          </span>
+        }
+      >
+        <Input {...drillProps} />
+      </FormControl>
+      {config.about ? (
+        <div className="tw-flex tw-flex-row tw-border tw-border-success tw-rounded">
+          <div className="tw-bg-success tw-text-success-content tw-p-1 tw-rounded-l tw-flex tw-flex-row tw-items-center">
+            <TipIcon className="tw-w-6 tw-h-6 tw-text-success-content" />
+          </div>
+          <div className="tw-p-1 tw-text-sm tw-font-medium tw-bg-success/10 tw-grow tw-rounded-r">
+            {config.about}
+          </div>
+        </div>
+      ) : null}
+    </>
   )
 }
 
@@ -206,7 +225,9 @@ export const MenuItemGroup = ({
       <div className="tw-flex tw-flex-row tw-items-center tw-justify-between tw-w-full" key="a">
         <div className="tw-flex tw-flex-row tw-items-center tw-gap-4 tw-w-full">
           <ItemIcon />
-          <span className="tw-font-medium tw-capitalize">{getItemLabel(i18n, itemName)}</span>
+          <span className="tw-font-medium tw-capitalize">
+            {item.title ? item.title : getItemLabel(i18n, itemName)}
+          </span>
         </div>
         <div className="tw-font-bold">
           <Value

@@ -13,15 +13,15 @@ export const UiPreferencesMenu = ({ update, state, Design }) => {
   const drillProps = { Design, state, update }
   const inputs = {
     ux: (props) => <MenuUxSettingInput {...drillProps} {...props} />,
-    aside: (props) => <MenuListInput {...drillProps} {...props} />,
-    kiosk: (props) => <MenuListInput {...drillProps} {...props} />,
+    //aside: (props) => <MenuListInput {...drillProps} {...props} />,
+    //kiosk: (props) => <MenuListInput {...drillProps} {...props} />,
     rotate: (props) => <MenuListInput {...drillProps} {...props} />,
     renderer: (props) => <MenuListInput {...drillProps} {...props} />,
   }
   const values = {
-    ux: (props) => <Ux ux={state.ui.ux} {...props} />,
-    aside: MenuListValue,
-    kiosk: MenuListValue,
+    ux: (props) => <span>{state.ui.ux}/5</span>,
+    //aside: MenuListValue,
+    //kiosk: MenuListValue,
     rotate: MenuListValue,
     renderer: MenuListValue,
   }
@@ -36,7 +36,7 @@ export const UiPreferencesMenu = ({ update, state, Design }) => {
           <UiPreference updateHandler={update} {...{ inputs, values, Design }} {...props} />
         ),
         isFirst: true,
-        name: 'pe:uiPreferences',
+        name: 'UI Preferences',
         language: state.locale,
         passProps: {
           ux: state.ui?.ux,

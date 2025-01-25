@@ -20,7 +20,7 @@ export const PatternLayout = (props) => {
       <div className="tw-flex tw-flex-col tw-h-full">
         <HeaderMenu state={props.state} {...{ update, Design, pattern, config }} />
         <div className="tw-flex lg:tw-flex-row tw-grow lg:tw-max-h-[90vh] tw-max-h-[calc(100vh-3rem)] tw-h-full tw-py-4 lg:tw-mt-6">
-          <div className="lg:tw-w-2/3 tw-flex tw-flex-col tw-h-full tw-grow px-4">
+          <div className="lg:tw-w-2/3 tw-flex tw-flex-col tw-h-full tw-grow tw-p-2 tw-shadow tw-mx-2">
             {props.output}
           </div>
           {menu ? (

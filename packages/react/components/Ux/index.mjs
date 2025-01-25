@@ -13,3 +13,9 @@ export const Ux = ({ ux = 0 }) => (
     ))}
   </div>
 )
+
+export const UxMini = ({ ux = 0 }) => (
+  <div className="flex flex-row">
+    <CircleIcon className={`tw-w-6 tw-h-6 tw-stroke-secondary tw-fill-secondary/20`} label={ux} />
+  </div>
+)

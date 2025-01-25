@@ -170,7 +170,7 @@ export const theme = {
   // Pattern background color
   '--pattern-bg': colors.neutral['50'],
   // Color for the main fabric
-  '--pattern-fabric': colors.neutral['700'],
+  '--pattern-fabric': colors.neutral['900'],
   // Color for lining fabric
   '--pattern-lining': colors.emerald['500'],
   // Color for interfacing

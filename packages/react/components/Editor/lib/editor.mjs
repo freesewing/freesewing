@@ -3,6 +3,7 @@ import React from 'react'
 import { defaultConfig } from '../config/index.mjs'
 import { round } from '@freesewing/utils'
 import { formatDesignOptionValue, menuCoreSettingsStructure } from './index.mjs'
+import { menuUiPreferencesStructure } from './ui-preferences.mjs'
 // Components
 import {
   ErrorIcon,
@@ -113,7 +114,6 @@ export function getCoreSettingUndoStepData({ step, state, Design }) {
    * Save us some typing
    */
   const cord = settingsValueCustomOrDefault
-  const formatMm = formatMm
   const Html = HtmlSpan
 
   /*

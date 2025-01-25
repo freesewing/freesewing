@@ -17,9 +17,15 @@
   --neutral-50: #fafafa;
   --neutral-100: #f5f5f5;
   --neutral-200: #e5e5e5;
+  --neutral-400: #a3a3a3;
   --neutral-500: #737373;
   --neutral-600: #525252;
   --neutral-900: #0a0a0a;
+  --amber-600: #d97706;
+  --red-500: #ef4444;
+  --blue-500: #3b82f6;
+  --pink-500: #ec4899;
+  --violet-500: #8b5cf6;
 
   /* Color Palette */
   --ifm-color-primary: var(--sky-500);
@@ -77,47 +83,17 @@
   --ifm-footer-link-color: var(--sky-600);
 
   /*
-   * These are variables to style FreeSewing SVG output (drafts, examples, and so on)
+   * FreeSewing pattern vars
    */
-  --pattern-bg: #fafafa;
-  --pattern-fabric: #404040;
-  --pattern-lining: #10b981;
-  --pattern-interfacing: #a3a3a3;
-  --pattern-canvas: #d97706;
-  --pattern-various: #ef4444;
-  --pattern-mark: #3b82f6;
-  --pattern-contrast: #ec4899;
-  --pattern-note: #8b5cf6;
-  --pattern-color-0: #ef4444;
-  --pattern-color-1: #22c55e;
-  --pattern-color-2: #3b82f6;
-  --pattern-color-3: #eab308;
-  --pattern-color-4: #ec4899;
-  --pattern-color-5: #8b5cf6;
-  --pattern-color-6: #14b8a6;
-  --pattern-color-7: #f59e0b;
-  --pattern-color-8: #d946ef;
-  --pattern-color-9: #06b6d4;
-  --pattern-text-xs: 0.2rem;
-  --pattern-text-sm: 0.3rem;
-  --pattern-text: 0.4rem;
-  --pattern-text-lg: 0.6rem;
-  --pattern-text-xl: 0.8rem;
-  --pattern-text-2xl: 1.5rem;
-  --pattern-text-3xl: 2rem;
-  --pattern-text-4xl: 3rem;
-  --pattern-scale: 1;
-  --pattern-stroke-xs: 0.2px;
-  --pattern-stroke-sm: 0.4px;
-  --pattern-stroke: 0.7px;
-  --pattern-stroke-lg: 1.3px;
-  --pattern-stroke-xl: 2px;
-  --pattern-stroke-2xl: 4px;
-  --pattern-stroke-3xl: 6px;
-  --pattern-stroke-4xl: 8px;
-  --pattern-stroke-5xl: 12px;
-  --pattern-stroke-6xl: 16px;
-  --pattern-stroke-7xl: 20px;
+  '--pattern-bg':var(--neutral-50);
+  '--pattern-fabric':var(--neutral-900);
+  '--pattern-lining':var(--emerald-500);
+  '--pattern-interfacing':var(--neutral-400);
+  ,'--pattern-canvas': var(--amber-600);
+  '--pattern-various':var(--red-500);
+  '--pattern-mark':var(--blue-500);
+  '--pattern-contrast':var(--pink-500);
+  '--pattern-note':var(--violet-500);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -148,12 +124,30 @@
   /* Footer colors */
   --ifm-footer-background-color: var(--neutral-900);
   --ifm-footer-link-color: var(--sky-300);
+
+  /*
+   * FreeSewing pattern vars
+   */
+  '--pattern-bg':var(--neutral-900);
+  '--pattern-fabric':var(--neutral-5);
+  '--pattern-lining':var(--emerald-500);
+  '--pattern-interfacing':var(--neutral-400);
+  ,'--pattern-canvas': var(--amber-600);
+  '--pattern-various':var(--red-500);
+  '--pattern-mark':var(--blue-500);
+  '--pattern-contrast':var(--pink-500);
+  '--pattern-note':var(--violet-500);
 }
 
 /*
  * Add CSS for code
  */
 @import './code.css';
+
+/*
+ * Add styling for FreeSewing patterns
+ */
+@import './patterns.css';
 
 div.footer__copyright {
   font-size: 0.8rem;

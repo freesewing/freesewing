@@ -89,6 +89,11 @@ export const ChatIcon = (props) => (
 export const CircleIcon = (props) => (
   <IconWrapper {...props}>
     <circle cx="12" cy="12" r="10" />
+    {props.label ? (
+      <text x="12" y="17.5" stroke="none" fill="currentColor" textAnchor="middle">
+        {props.label}
+      </text>
+    ) : null}
   </IconWrapper>
 )
 
