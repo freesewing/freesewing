@@ -113,7 +113,7 @@ export const MenuItem = ({
       <FormControl
         FIXME_REMOVED_label={
           <span className="tw-text-base tw-font-normal">
-            {config.choiceTitles ? config.choiceTitles[current] : i18n.en.o[name].d}
+            {config.choiceTitles ? config.choiceTitles[current] : i18n?.en?.o?.[name]?.d}
           </span>
         }
         label={false}
@@ -153,7 +153,7 @@ const coreLabels = {
 const getItemLabel = (i18n, name) => {
   if (Object.keys(coreLabels).includes(name)) return coreLabels[name]
 
-  return i18n && i18n.en.o[name]?.t ? i18n.en.o[name].t : name
+  return i18n?.en?.o?.[name]?.t || name
 }
 
 /**

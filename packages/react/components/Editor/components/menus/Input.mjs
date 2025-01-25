@@ -4,6 +4,7 @@ import { menuRoundPct } from '../../lib/index.mjs'
 import { ButtonFrame, NumberInput } from '@freesewing/react/components/Input'
 import { defaultConfig } from '../../config/index.mjs'
 import { ApplyIcon } from '@freesewing/react/components/Icon'
+import { capitalize } from '@freesewing/core'
 
 /** A boolean version of {@see MenuListInput} that sets up the necessary configuration */
 export const MenuBoolInput = (props) => {
@@ -61,7 +62,7 @@ const getTitleAndDesc = (config = {}, i18n = {}, isDesignOption = false) => {
   let titleKey = config.choiceTitles
     ? 'fixme' //config.choiceTitles[entry]
     : isDesignOption
-      ? i18n.en.o[name]
+      ? i18n?.en?.o?.[name] || name
       : `${name}.o.${entry}`
   if (!config.choiceTitles && i18n && i18n.en.o[`${name}.${entry}`])
     titleKey = i18n.en.o[`${name}.${entry}`]
@@ -399,9 +400,11 @@ export const MenuOnlySettingInput = (props) => {
   config.dense = true
   // Sort alphabetically (translated)
   const order = []
+  config.choiceTitles = {}
   for (const part of config.list) {
     const [ns, name] = part.split('.')
-    order.push(t(`${ns}:${name}`) + `|${part}`)
+    order.push(`${ns}:${name}|${part}`)
+    config.choiceTitles[part] = `${ns}:${name}`
   }
   order.sort()
   config.list = order.map((entry) => entry.split('|')[1])
