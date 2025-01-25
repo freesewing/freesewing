@@ -120,8 +120,8 @@ export function menuCoreSettingsStructure({ units = 'metric', sabool = false, pa
       list: ['metric', 'imperial'],
       dflt: 'metric',
       choiceTitles: {
-        metric: 'Metric',
-        imperial: 'Imperial',
+        metric: 'Metric Units (cm)',
+        imperial: 'Imperial Units (inch)',
       },
       valueTitles: {
         metric: 'Metric',

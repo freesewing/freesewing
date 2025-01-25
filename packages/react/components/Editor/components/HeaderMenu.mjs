@@ -233,6 +233,23 @@ export const HeaderMenuDraftViewIcons = (props) => {
           />
         </Button>
       ) : null}
+      {ux >= levels.units ? (
+        <Button
+          updateHandler={() =>
+            update.settings(
+              'units',
+              props.state.settings.units === 'imperial' ? 'metric' : 'imperial'
+            )
+          }
+          tooltip="Switches Units between metric and imperial (see Core Settings)"
+        >
+          <UnitsIcon
+            className={`${size} ${
+              props.state.settings.units === 'imperial' ? 'tw-text-secondary' : muted
+            }`}
+          />
+        </Button>
+      ) : null}
       {ux >= levels.paperless ? (
         <Button
           updateHandler={() => update.settings('paperless', props.state.settings.paperless ? 0 : 1)}
@@ -263,64 +280,7 @@ export const HeaderMenuDraftViewIcons = (props) => {
           />
         </Button>
       ) : null}
-      {ux >= levels.units ? (
-        <Button
-          updateHandler={() =>
-            update.settings(
-              'units',
-              props.state.settings.units === 'imperial' ? 'metric' : 'imperial'
-            )
-          }
-          tooltip="Switches Units between metric and imperial (see Core Settings)"
-        >
-          <UnitsIcon
-            className={`${size} ${
-              props.state.settings.units === 'imperial' ? 'tw-text-secondary' : muted
-            }`}
-          />
-        </Button>
-      ) : null}
       <HeaderMenuIconSpacer />
-      {ux >= levels.ux ? (
-        <div className="tw-flex tw-flex-row tw-px-1">
-          <Tooltip tip="Changes your UX setting (see UI Preferences)">
-            {[0, 1, 2, 3, 4].map((i) => (
-              <button
-                key={i}
-                className="tw-daisy-btn tw-daisy-btn-ghost tw-daisy-btn-sm tw-px-0 tw--mx-0.5"
-                onClick={() => update.ui('ux', i + 1)}
-              >
-                <CircleIcon
-                  key={i}
-                  fill={i < props.state.ui.ux ? true : false}
-                  className={`${size} ${
-                    i < props.state.ui.ux
-                      ? 'tw-stroke-secondary tw-fill-secondary'
-                      : 'tw-stroke-current'
-                  }`}
-                  fillOpacity={0.3}
-                />
-              </button>
-            ))}
-          </Tooltip>
-        </div>
-      ) : null}
-      {ux >= levels.aside ? (
-        <Button
-          updateHandler={() => update.ui('aside', props.state.ui.aside ? 0 : 1)}
-          tooltip="Turn the Aside Menu on or off (see UI Preferences)"
-        >
-          <MenuIcon className={`${size} ${!props.state.ui.aside ? 'tw-text-secondary' : muted}`} />
-        </Button>
-      ) : null}
-      {ux >= levels.kiosk ? (
-        <Button
-          updateHandler={() => update.ui('kiosk', props.state.ui.kiosk ? 0 : 1)}
-          tooltip="Turns Kiosk Mode on or off (see UI Preferences)"
-        >
-          <KioskIcon className={`${size} ${props.state.ui.kiosk ? 'tw-text-secondary' : muted}`} />
-        </Button>
-      ) : null}
       {ux >= levels.rotate ? (
         <Button
           updateHandler={() => update.ui('rotate', props.state.ui.rotate ? 0 : 1)}

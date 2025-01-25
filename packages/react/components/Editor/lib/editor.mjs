@@ -1,7 +1,7 @@
 // Dependencies
 import React from 'react'
 import { defaultConfig } from '../config/index.mjs'
-import { round } from '@freesewing/utils'
+import { round, formatMm } from '@freesewing/utils'
 import { formatDesignOptionValue, menuCoreSettingsStructure } from './index.mjs'
 import { menuUiPreferencesStructure } from './ui-preferences.mjs'
 // Components
