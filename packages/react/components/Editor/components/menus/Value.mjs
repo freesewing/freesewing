@@ -50,7 +50,7 @@ export const MenuDegOptionValue = ({ config, current, changed }) => (
  * @param {Function} children - The React children
  */
 export const MenuHighlightValue = ({ changed, children }) => (
-  <span className={changed ? 'text-accent' : ''}> {children} </span>
+  <span className={changed ? 'tw-text-accent' : ''}> {children} </span>
 )
 
 /**
@@ -148,12 +148,14 @@ export const MenuShowValue = ({ current, dflt, changed }) => {
 /**
  * Displays the value for core's scale setting
  *
- * @param {object} config - The option config
  * @param {number} current - The current (count) value
+ * @param  {Object} options.config  the item config
  * @param {bool} changed - Whether or not the value is non-default
  */
 export const MenuScaleSettingValue = ({ current, config, changed }) => (
-  <MenuHighlightValue current={current} dflt={config.dflt} changed={changed} />
+  <MenuHighlightValue changed={changed}>
+    {typeof current === 'undefined' ? config.dflt : current}
+  </MenuHighlightValue>
 )
 
 /**
