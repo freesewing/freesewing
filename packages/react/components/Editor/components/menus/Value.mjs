@@ -166,9 +166,7 @@ export const MenuScaleSettingValue = ({ current, config, changed }) => (
  * @param {bool} changed - Whether or not the value is non-default
  */
 export const MenuOnlySettingValue = ({ current, config }) => (
-  <MenuHighlightValue
-    current={current?.length}
-    dflt={config.parts.length}
-    changed={current !== undefined}
-  />
+  <MenuHighlightValue changed={current !== undefined}>
+    {current === undefined ? '-' : current.length}
+  </MenuHighlightValue>
 )
