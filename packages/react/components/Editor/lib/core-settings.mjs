@@ -201,6 +201,12 @@ export function menuCoreSettingsStructure({ units = 'metric', sabool = false, pa
     only: {
       dense: true,
       title: 'Only included selected pattern parts',
+      about: (
+        <>
+          Allows you to control what parts to include in your pattern.
+          <CoreDocsLink item="only" />
+        </>
+      ),
       ux: config.uxLevels.core.only,
       dflt: false,
       list: parts,
@@ -209,6 +215,13 @@ export function menuCoreSettingsStructure({ units = 'metric', sabool = false, pa
     },
     scale: {
       title: 'Pattern annotations scale',
+      about: (
+        <>
+          Allows you to control the scale of annotations on the pattern. This is most useful when
+          generating very small patterns, like for doll outfits.
+          <CoreDocsLink item="scale" />
+        </>
+      ),
       ux: config.uxLevels.core.scale,
       min: 0.1,
       max: 5,
@@ -218,6 +231,13 @@ export function menuCoreSettingsStructure({ units = 'metric', sabool = false, pa
     },
     margin: {
       title: 'Pattern parts margin',
+      about: (
+        <>
+          Controls the gap between pattern parts, as well as the gap between the parts and the page
+          edge.
+          <CoreDocsLink item="margin" />
+        </>
+      ),
       ux: config.uxLevels.core.margin,
       min: 0,
       max: 2.5,
