@@ -61,17 +61,13 @@ export const HeaderMenuIcon = (props) => {
   return <Icon {...props} className={`tw-h-5 tw-w-5 ${extraClasses}`} />
 }
 
-export const HeaderMenuAllViews = ({ config, state, update, open, setOpen }) => (
-  <HeaderMenuViewMenu {...{ config, state, update, open, setOpen }} />
-)
-
 export const HeaderMenuDraftView = (props) => {
   const i18n = useDesignTranslation(props.Design.designConfig.data.id)
   const flags = props.pattern?.setStores?.[0]?.plugins?.['plugin-annotations']?.flags
 
   return (
     <>
-      <div className="tw-flex tw-flex-row tw-gap-1">
+      <div className="tw-flex tw-flex-row tw-gap-0.5 lg:tw-gap-1">
         <HeaderMenuDraftViewDesignOptions {...props} i18n={i18n} />
         <HeaderMenuDraftViewCoreSettings {...props} i18n={i18n} />
         <HeaderMenuDraftViewUiPreferences {...props} i18n={i18n} />
@@ -222,7 +218,7 @@ export const HeaderMenuDraftViewIcons = (props) => {
   }
 
   return (
-    <div className="tw-hidden lg:tw-flex tw-flex-row tw-flex-wrap tw-items-center tw-justify-center tw-px-2">
+    <div className="tw-hidden lg:tw-flex tw-flex-row tw-flex-wrap tw-items-center tw-justify-center tw-px-0.5 lg:tw-px-1">
       {ux >= levels.sa ? (
         <Button
           lgOnly
@@ -317,11 +313,11 @@ export const HeaderMenuDraftViewIcons = (props) => {
 export const HeaderMenuUndoIcons = (props) => {
   const { update, state, Design } = props
   const Button = HeaderMenuButton
-  const size = 'w-5 h-5'
+  const size = 'tw-w-5 tw-h-5'
   const undos = props.state._?.undos && props.state._.undos.length > 0 ? props.state._.undos : false
 
   return (
-    <div className="tw-flex tw-flex-row tw-flex-wrap tw-items-center tw-justify-center tw-px-2">
+    <div className="tw-flex tw-flex-row tw-flex-wrap tw-items-center tw-justify-center tw-px-0.5 lg:tw-px-1">
       <Button
         lgOnly
         updateHandler={() => update.restore(0, state._)}
@@ -519,7 +515,7 @@ export const HeaderMenu = ({ config, Design, pattern, state, update }) => {
    * Guard views that require measurements agains missing measurements
    * and make sure there's a view-specific header menu
    */
-  const ViewMenu =
+  const ViewSpecificMenu =
     !missingMeasurements(state) && headerMenus[state.view] ? headerMenus[state.view] : Null
 
   return (
@@ -529,10 +525,10 @@ export const HeaderMenu = ({ config, Design, pattern, state, update }) => {
       } tw-transition-[top] tw-duration-300 tw-ease-in-out`}
     >
       <div
-        className={`tw-flex tw-flex-row tw-flex-wrap tw-gap-1 md:tw-gap-4 tw-w-full tw-items-start tw-justify-center tw-border-b tw-border-base-300 tw-py-1 md:tw-py-1.5`}
+        className={`tw-flex tw-flex-row tw-flex-wrap tw-gap-0.5 lg:tw-gap-1 tw-w-full tw-items-start tw-justify-center tw-border-b tw-border-base-300 tw-py-1 md:tw-py-1.5`}
       >
-        <HeaderMenuAllViews {...{ config, state, update, open, setOpen }} />
-        <ViewMenu {...{ config, state, update, Design, pattern, open, setOpen }} />
+        <HeaderMenuViewMenu {...{ config, state, update, open, setOpen }} />
+        <ViewSpecificMenu {...{ config, state, update, Design, pattern, open, setOpen }} />
       </div>
     </div>
   )
