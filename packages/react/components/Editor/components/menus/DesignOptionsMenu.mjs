@@ -35,8 +35,13 @@ import { OptionsIcon } from '@freesewing/react/components/Icon'
  */
 export const DesignOptionsMenu = ({ Design, isFirst = true, state, i18n, update }) => {
   const structure = useMemo(
-    () => menuDesignOptionsStructure(Design.patternConfig.options, state.settings),
-    [Design.patternConfig, state.settings]
+    () =>
+      menuDesignOptionsStructure(
+        Design.designConfig.data.id,
+        Design.patternConfig.options,
+        state.settings
+      ),
+    [Design.designConfig.data.id, Design.patternConfig, state.settings]
   )
   const updateHandler = useCallback(
     (name, value = '__UNSET__') => update.settings(['options', ...name], value),

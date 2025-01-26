@@ -10,9 +10,9 @@ import { capitalize } from '@freesewing/core'
 /** A boolean version of {@see MenuListInput} that sets up the necessary configuration */
 export const MenuBoolInput = (props) => {
   const { name, config } = props
-  const boolConfig = useBoolConfig(name, config)
+  //const boolConfig = useBoolConfig(name, config)
 
-  return <MenuListInput {...props} config={boolConfig} />
+  return <MenuListInput {...props} />
 }
 
 /** A placeholder for an input to handle constant values */
@@ -136,13 +136,19 @@ export const MenuListInput = ({
         onClick={() => handleChange(entry)}
       >
         <div
-          className={`tw-w-full tw-flex tw-items-start ${
-            sideBySide ? 'tw-flex-row tw-justify-between tw-gap-2' : 'tw-flex-col'
+          className={`tw-w-full tw-flex ${
+            sideBySide
+              ? 'tw-flex-row tw-justify-between tw-gap-2 tw-items-center'
+              : 'tw-flex-col tw-items-start'
           }`}
         >
-          <div className="tw-font-semibold tw-shrink-0">{config.choiceTitles[entry]}</div>
+          <div className="tw-font-semibold">{config.choiceTitles[entry]}</div>
           {compact || !config.choiceDescriptions ? null : (
-            <div className="tw-text-base tw-font-normal">{config.choiceDescriptions[entry]}</div>
+            <div
+              className={`${config.dense ? 'tw-text-sm tw-leading-5 tw-py-1' : 'tw-text-base'} tw-font-normal`}
+            >
+              {config.choiceDescriptions[entry]}
+            </div>
           )}
         </div>
       </ButtonFrame>
@@ -390,19 +396,6 @@ const useBoolConfig = (name, config) => {
 /** an input for the 'only' setting. toggles individual parts*/
 export const MenuOnlySettingInput = (props) => {
   const { config } = props
-  //config.sideBySide = true
-  //config.titleMethod = (entry, t) => {
-  //  const chunks = entry.split('.')
-  //  return <span className="tw-font-medium tw-text-base">{entry}</span> //t(`${chunks[0]}:${chunks[1]}`)}</span>
-  //}
-  //config.valueMethod = (entry) => (
-  //  <span className="tw-text-sm">{capitalize(entry.split('.')[0])}</span>
-  //)
-  //config.dense = true
-  // Sort alphabetically
-  //const order = []
-  //order.sort()
-  console.log(i18n)
   config.list = config.list.sort()
   config.choiceTitles = {}
   for (const part of config.list) {

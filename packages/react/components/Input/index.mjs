@@ -98,7 +98,7 @@ export const ButtonFrame = ({
 }) => (
   <button
     className={`
-    tw-daisy-btn tw-daisy-btn-ghost tw-daisy-btn-secondary
+    tw-daisy-btn tw-daisy-btn-ghost tw-daisy-btn-secondary tw-h-fit
     tw-w-full ${dense ? 'tw-mt-1 tw-daisy-btn-sm tw-font-light' : 'tw-mt-2 tw-py-4 tw-h-auto tw-content-start'}
     tw-border-2 tw-border-secondary tw-text-left tw-bg-opacity-20
     ${accordion ? 'hover:tw-bg-transparent' : 'hover:tw-bg-secondary hover:tw-bg-opacity-10'}
