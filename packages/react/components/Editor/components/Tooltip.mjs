@@ -6,7 +6,7 @@ export const Tooltip = (props) => {
   return (
     <div
       {...rest}
-      className={`tooltip tooltip-bottom before:bg-base-200 before:shadow before:text-base-content`}
+      className={`tw-daisy-tooltip tw-daisy-tooltip-bottom before:tw-bg-base-200 before:tw-shadow before:tw-text-base-content`}
       data-tip={tip}
     >
       {children}
