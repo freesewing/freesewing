@@ -1,4 +1,5 @@
 import React, { useMemo, useCallback, useState } from 'react'
+import { i18n } from '@freesewing/collection'
 import { designOptionType, round, measurementAsUnits, measurementAsMm } from '@freesewing/utils'
 import { menuRoundPct } from '../../lib/index.mjs'
 import { ButtonFrame, NumberInput } from '@freesewing/react/components/Input'
@@ -389,25 +390,31 @@ const useBoolConfig = (name, config) => {
 /** an input for the 'only' setting. toggles individual parts*/
 export const MenuOnlySettingInput = (props) => {
   const { config } = props
-  config.sideBySide = true
-  config.titleMethod = (entry, t) => {
-    const chunks = entry.split('.')
-    return <span className="tw-font-medium tw-text-base">{t(`${chunks[0]}:${chunks[1]}`)}</span>
-  }
-  config.valueMethod = (entry) => (
-    <span className="tw-text-sm">{capitalize(entry.split('.')[0])}</span>
-  )
-  config.dense = true
-  // Sort alphabetically (translated)
-  const order = []
+  //config.sideBySide = true
+  //config.titleMethod = (entry, t) => {
+  //  const chunks = entry.split('.')
+  //  return <span className="tw-font-medium tw-text-base">{entry}</span> //t(`${chunks[0]}:${chunks[1]}`)}</span>
+  //}
+  //config.valueMethod = (entry) => (
+  //  <span className="tw-text-sm">{capitalize(entry.split('.')[0])}</span>
+  //)
+  //config.dense = true
+  // Sort alphabetically
+  //const order = []
+  //order.sort()
+  console.log(i18n)
+  config.list = config.list.sort()
   config.choiceTitles = {}
   for (const part of config.list) {
-    const [ns, name] = part.split('.')
-    order.push(`${ns}:${name}|${part}`)
-    config.choiceTitles[part] = `${ns}:${name}`
+    const [design, name] = part.split('.')
+    config.choiceTitles[part] = (
+      <span>
+        <span className="tw-font-medium tw-opacity-80 tw-capitalize">{design}</span>
+        <span className="tw-font-medium tw-opacity-80 tw-capitalize tw-px-2">&raquo;</span>
+        {i18n[design].en.p[name]}
+      </span>
+    )
   }
-  order.sort()
-  config.list = order.map((entry) => entry.split('|')[1])
 
   return <MenuListInput {...props} />
 }

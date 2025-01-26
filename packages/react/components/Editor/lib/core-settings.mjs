@@ -199,6 +199,7 @@ export function menuCoreSettingsStructure({ units = 'metric', sabool = false, pa
       icon: ExpandIcon,
     },
     only: {
+      dense: true,
       title: 'Only included selected pattern parts',
       ux: config.uxLevels.core.only,
       dflt: false,
