@@ -222,9 +222,10 @@ export const HeaderMenuDraftViewIcons = (props) => {
   }
 
   return (
-    <div className="tw-flex tw-flex-row tw-flex-wrap tw-items-center tw-justify-center tw-px-2">
+    <div className="tw-hidden lg:tw-flex tw-flex-row tw-flex-wrap tw-items-center tw-justify-center tw-px-2">
       {ux >= levels.sa ? (
         <Button
+          lgOnly
           updateHandler={update.toggleSa}
           tooltip="Turns Seam Allowance on or off (see Core Settings)"
         >
@@ -235,6 +236,7 @@ export const HeaderMenuDraftViewIcons = (props) => {
       ) : null}
       {ux >= levels.units ? (
         <Button
+          lgOnly
           updateHandler={() =>
             update.settings(
               'units',
@@ -252,6 +254,7 @@ export const HeaderMenuDraftViewIcons = (props) => {
       ) : null}
       {ux >= levels.paperless ? (
         <Button
+          lgOnly
           updateHandler={() => update.settings('paperless', props.state.settings.paperless ? 0 : 1)}
           tooltip="Turns Paperless on or off (see Core Settings)"
         >
@@ -262,6 +265,7 @@ export const HeaderMenuDraftViewIcons = (props) => {
       ) : null}
       {ux >= levels.complete ? (
         <Button
+          lgOnly
           updateHandler={() => update.settings('complete', props.state.settings.complete ? 0 : 1)}
           tooltip="Turns Details on or off (see Core Settings)"
         >
@@ -272,6 +276,7 @@ export const HeaderMenuDraftViewIcons = (props) => {
       ) : null}
       {ux >= levels.expand ? (
         <Button
+          lgOnly
           updateHandler={() => update.settings('expand', props.state.settings.expand ? 0 : 1)}
           tooltip="Turns Expand on or off (see Core Settings)"
         >
@@ -283,6 +288,7 @@ export const HeaderMenuDraftViewIcons = (props) => {
       <HeaderMenuIconSpacer />
       {ux >= levels.rotate ? (
         <Button
+          lgOnly
           updateHandler={() => update.ui('rotate', props.state.ui.rotate ? 0 : 1)}
           tooltip="Turns Rotate Pattern on or off (see UI Preferences)"
         >
@@ -293,6 +299,7 @@ export const HeaderMenuDraftViewIcons = (props) => {
       ) : null}
       {ux >= levels.renderer ? (
         <Button
+          lgOnly
           updateHandler={() =>
             update.ui('renderer', props.state.ui.renderer === 'react' ? 'svg' : 'react')
           }
@@ -316,6 +323,7 @@ export const HeaderMenuUndoIcons = (props) => {
   return (
     <div className="tw-flex tw-flex-row tw-flex-wrap tw-items-center tw-justify-center tw-px-2">
       <Button
+        lgOnly
         updateHandler={() => update.restore(0, state._)}
         tooltip="Undo the most recent change"
         disabled={undos ? false : true}
@@ -323,6 +331,7 @@ export const HeaderMenuUndoIcons = (props) => {
         <UndoIcon className={`${size} ${undos ? 'tw-text-secondary' : ''}`} text="1" />
       </Button>
       <Button
+        lgOnly
         updateHandler={() => update.restore(undos.length - 1, state._)}
         tooltip="Undo all changes since the last save point"
         disabled={undos ? false : true}
@@ -406,13 +415,19 @@ export const HeaderMenuSaveIcons = (props) => {
 }
 
 export const HeaderMenuIconSpacer = () => (
-  <span className="tw-px-1 tw-font-bold tw-opacity-30">|</span>
+  <span className="tw-hidden lg:tw-inline tw-px-1 tw-font-bold tw-opacity-30">|</span>
 )
 
-export const HeaderMenuButton = ({ updateHandler, children, tooltip, disabled = false }) => (
+export const HeaderMenuButton = ({
+  updateHandler,
+  children,
+  tooltip,
+  lgOnly = false,
+  disabled = false,
+}) => (
   <Tooltip tip={tooltip}>
     <button
-      className="tw-daisy-btn tw-daisy-btn-ghost tw-daisy-btn-sm tw-px-1 disabled:tw-bg-transparent"
+      className={`${lgOnly ? 'tw-hidden lg:tw-inline' : ''} tw-daisy-btn tw-daisy-btn-ghost tw-daisy-btn-sm tw-px-1 disabled:tw-bg-transparent`}
       onClick={updateHandler}
       disabled={disabled}
     >

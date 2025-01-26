@@ -1,5 +1,5 @@
 import React, { useMemo, useCallback, useState } from 'react'
-import { designOptionType, round } from '@freesewing/utils'
+import { designOptionType, round, measurementAsUnits, measurementAsMm } from '@freesewing/utils'
 import { menuRoundPct } from '../../lib/index.mjs'
 import { ButtonFrame, NumberInput } from '@freesewing/react/components/Input'
 import { defaultConfig } from '../../config/index.mjs'
