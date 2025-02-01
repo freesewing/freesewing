@@ -8,22 +8,23 @@ import { useBackend } from '@freesewing/react/hooks/useBackend'
 import { Link as DefaultLink } from '@freesewing/react/components/Link'
 import { LockIcon, PlusIcon } from '@freesewing/react/components/Icon'
 import { Spinner } from '@freesewing/react/components/Spinner'
+import { H1, H2, H3 } from '@freesewing/react/components/Heading'
 
 //import { ConsentForm, ns as gdprNs } from 'shared/components/gdpr/form.mjs'
 
 const ConsentForm = () => null
 
 const Wrap = ({ children }) => (
-  <div className="m-auto max-w-xl text-center mt-8 p-8">{children}</div>
+  <div className="tw-m-auto tw-max-w-xl tw-text-center tw-mt-8 tw-p-8">{children}</div>
 )
 
 const ContactSupport = ({ Link = false }) => {
   if (!Link) Link = DefaultLink
 
   return (
-    <div className="flex flex-row items-center justify-center gap-4 mt-8">
-      <Link href="/support" className="btn btn-success w-full">
-        {t('contactSupport')}
+    <div className="tw-flex tw-flex-row tw-items-center tw-justify-center tw-gap-4 tw-mt-8">
+      <Link href="/support" className="tw-daisy-btn tw-daisy-btn-success tw-w-full">
+        Contact Support
       </Link>
     </div>
   )
@@ -35,16 +36,19 @@ const AuthRequired = ({ Link, banner }) => {
   return (
     <Wrap>
       {banner}
-      <h2>Authentication Required</h2>
+      <H3>Authentication Required</H3>
       <p>This functionality requires a FreeSewing account</p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-8">
-        <Link href="/signup" className={`${horFlexClasses} daisy-btn daisy-btn-secondary w-full`}>
+      <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-2 tw-mt-8">
+        <Link
+          href="/signup"
+          className={`${horFlexClasses} tw-daisy-btn tw-daisy-btn-secondary tw-w-full`}
+        >
           <PlusIcon />
           Sign Up
         </Link>
         <Link
           href="/signin"
-          className={`${horFlexClasses} daisy-btn daisy-btn-secondary daisy-btn-outline w-full`}
+          className={`${horFlexClasses} tw-daisy-btn tw-daisy-btn-secondary tw-daisy-btn-outline tw-w-full`}
         >
           <LockIcon />
           Sign In
@@ -60,12 +64,12 @@ const AccountInactive = ({ Link, banner }) => {
   return (
     <Wrap>
       {banner}
-      <h1>{t('accountInactive')}</h1>
-      <p>{t('accountInactiveMsg')}</p>
-      <p>{t('signupAgain')}</p>
-      <div className="flex flex-row items-center justify-center gap-4 mt-8">
-        <Link href="/signup" className="btn btn-primary w-full">
-          {t('signUp')}
+      <H3>Account Inactive</H3>
+      <p>You must activate your account via the signup link we sent you.</p>
+      <p>If you cannot find the link, you can receive a new one by signing up again.</p>
+      <div className="tw-flex tw-flex-row tw-items-center tw-justify-center tw-gap-4 tw-mt-8">
+        <Link href="/signup" className="tw-daisy-btn tw-daisy-btn-primary tw-w-full">
+          Sign Up
         </Link>
       </div>
     </Wrap>
@@ -75,36 +79,42 @@ const AccountInactive = ({ Link, banner }) => {
 const AccountDisabled = ({ banner }) => (
   <Wrap>
     {banner}
-    <h1>{t('accountDisabled')}</h1>
-    <p>{t('accountDisabledMsg')}</p>
-    <ContactSupport t={t} />
+    <H3>Acccount Disabled</H3>
+    <p>
+      You cannot re-enable a disabled account. You need to contact support to resolve this
+      situation.
+    </p>
+    <ContactSupport />
   </Wrap>
 )
 
 const AccountProhibited = ({ banner }) => (
   <Wrap>
     {banner}
-    <h1>{t('accountProhibited')}</h1>
-    <p>{t('accountProhibitedMsg')}</p>
-    <ContactSupport t={t} />
+    <H3>Your account has been disabled</H3>
+    <p>Your account has been administratively disabled.</p>
+    <ContactSupport />
   </Wrap>
 )
 
-const AccountStatusUnknown = ({ t, banner }) => (
+const AccountStatusUnknown = ({ banner }) => (
   <Wrap>
     {banner}
-    <h1>{t('statusUnknown')}</h1>
-    <p>{t('statusUnknownMsg')}</p>
-    <ContactSupport t={t} />
+    <H3>Account status warning</H3>
+    <p>Your account status prohibits us from processing your data. Please contact support.</p>
+    <ContactSupport />
   </Wrap>
 )
 
 const RoleLacking = ({ t, requiredRole, role, banner }) => (
   <Wrap>
     {banner}
-    <h1>{t('roleLacking')}</h1>
-    <p dangerouslySetInnerHTML={{ __html: t('roleLackingMsg', { requiredRole, role }) }} />
-    <ContactSupport t={t} />
+    <H3>You lack the required role to access this content</H3>
+    <p>
+      This content requires the <b>{requiredRole}</b> role. Your role is <b>{role}</b> which does
+      not grant you access to this content.
+    </p>
+    <ContactSupport />
   </Wrap>
 )
 
@@ -132,15 +142,13 @@ const ConsentLacking = ({ banner, refresh }) => {
 
   return (
     <Wrap>
-      <div className="text-left">
+      <div className="tw-text-left">
         {banner}
         <ConsentForm submit={updateConsent} />
       </div>
     </Wrap>
   )
 }
-
-const t = (input) => input
 
 export const RoleBlock = ({ children, user = false, Link = false }) => {
   if (!Link) Link = DefaultLink
@@ -181,9 +189,8 @@ export const RoleBlock = ({ children, user = false, Link = false }) => {
       } else {
         if (data?.error?.error) setError(data.error.error)
         else {
-          console.log('WOULD SIGN OUT', data)
+          signOut()
         }
-        //else signOut()
       }
       setReady(true)
     }
@@ -200,26 +207,20 @@ export const RoleBlock = ({ children, user = false, Link = false }) => {
     setError(false)
   }
 
-  if (!ready)
-    return (
-      <>
-        <p>not ready</p>
-        <Spinner />
-      </>
-    )
+  if (!ready) return <Spinner />
 
   const banner = impersonating ? (
-    <div className="bg-warning rounded-lg shadow py-4 px-6 flex flex-row items-center gap-4 justify-between">
-      <span className="text-base-100 text-left">
+    <div className="tw-bg-warning tw-rounded-lg tw-shadow tw-py-4 tw-px-6 tw-flex tw-flex-row tw-items-center tw-gap-4 tw-justify-between">
+      <span className="tw-text-base-100 tw-text-left">
         Hi <b>{impersonating.admin}</b>, you are currently impersonating <b>{impersonating.user}</b>
       </span>
-      <button className="btn btn-neutral" onClick={stopImpersonating}>
+      <button className="tw-daisy-btn tw-daisy-btn-neutral" onClick={stopImpersonating}>
         Stop Impersonating
       </button>
     </div>
   ) : null
 
-  const childProps = { t, banner }
+  const childProps = { banner }
 
   if (!token || !account.username) return <AuthRequired {...childProps} />
   if (error) {
