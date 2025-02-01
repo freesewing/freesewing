@@ -63,10 +63,5 @@ export const DraftView = ({ Design, state, update, config }) => {
     )
   }
 
-  return (
-    <>
-      <PatternLayout {...{ update, Design, output, state, pattern, config }} />
-      <p className="tw-clear-both">where does this go?</p>
-    </>
-  )
+  return <PatternLayout {...{ update, Design, output, state, pattern, config }} />
 }

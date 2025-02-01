@@ -525,7 +525,7 @@ export const HeaderMenu = ({ config, Design, pattern, state, update }) => {
       } tw-transition-[top] tw-duration-300 tw-ease-in-out`}
     >
       <div
-        className={`tw-flex tw-flex-row tw-flex-wrap tw-gap-0.5 lg:tw-gap-1 tw-w-full tw-items-start tw-justify-center tw-border-b tw-border-base-300 tw-py-1 md:tw-py-1.5`}
+        className={`tw-flex tw-flex-row tw-flex-wrap tw-gap-0.5 lg:tw-gap-1 tw-w-full tw-items-start tw-justify-center tw-py-1 md:tw-py-1.5`}
       >
         <HeaderMenuViewMenu {...{ config, state, update, open, setOpen }} />
         <ViewSpecificMenu {...{ config, state, update, Design, pattern, open, setOpen }} />

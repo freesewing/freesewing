@@ -15,14 +15,14 @@ import ErrorPageContent from '@theme/ErrorPageContent'
  *
  * @params {object} props - All React props
  * @params {object} children - The React children to render
- * @params {bool} noFooter - Set this to true to not render a footer
+ * @params {bool} footer - Set this to true to render the site footer
  * @params {string} className - CSS classes for the main content wrapper
  * @params {string} title - Page title
  * @params {string} description - Page description
  */
 export function BareLayout({
   children = null,
-  noFooter = false,
+  footer = false,
   noHeader = false,
   className = 'tw-bg-transparent tw-p-0 tw-m-0',
   title = 'FreeSewing.org',
@@ -40,7 +40,7 @@ export function BareLayout({
           {children}
         </ErrorBoundary>
       </div>
-      {!noFooter && <Footer />}
+      {footer && <Footer />}
     </LayoutProvider>
   )
 }
