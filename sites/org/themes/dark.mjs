@@ -24,7 +24,7 @@ export const theme = {
   'neutral-focus': colors.neutral['700'],
   'neutral-content': colors.neutral['50'],
 
-  info: colors.indigo['400'],
+  info: colors.yellow['400'],
   success: colors.green['400'],
   warning: colors.orange['400'],
   error: colors.red['400'],

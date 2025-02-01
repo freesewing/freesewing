@@ -36,6 +36,7 @@
     "./components/Design": "./components/Design/index.mjs",
     "./components/Docusaurus": "./components/Docusaurus/index.mjs",
     "./components/Editor": "./components/Editor/index.mjs",
+    "./components/Heading": "./components/Heading/index.mjs",
     "./components/Highlight": "./components/Highlight/index.mjs",
     "./components/Icon": "./components/Icon/index.mjs",
     "./components/Input": "./components/Input/index.mjs",

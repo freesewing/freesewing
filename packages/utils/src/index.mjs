@@ -3,6 +3,7 @@ import { cloudflare as cloudflareConfig } from '@freesewing/config'
 import _set from 'lodash/set.js'
 import _unset from 'lodash/unset.js'
 import _orderBy from 'lodash/orderBy.js'
+import { loadingMessages } from './loading-messages.mjs'
 
 /*
  * Re-export lodash utils
@@ -18,13 +19,14 @@ export const orderBy = _orderBy
 /*
  * CSS classes to  spread icon + text horizontally on a button
  */
-export const horFlexClasses = 'flex flex-row items-center justify-between gap-4'
+export const horFlexClasses =
+  'tw-flex tw-flex-row tw-items-center tw-justify-between tw-gap-4 tw-w-full'
 
 /*
  * CSS classes to  spread icon + text horizontally on a button, only from md upwards
  */
 export const horFlexClassesNoSm =
-  'md:flex md:flex-row md:items-center md:justify-between md:gap-4 md-w-full'
+  'md:tw-flex md:tw-flex-row md:tw-items-center md:tw-justify-between md:tw-gap-4 tw-w-full'
 
 /*
  * These classes are what makes a link a link
@@ -413,6 +415,15 @@ export const optionType = (option) => {
   if (typeof option?.mm !== 'undefined') return 'mm'
 
   return 'constant'
+}
+
+/*
+ * Returns a random loading message
+ *
+ * @return {string} msg - A random loading message
+ */
+export function randomLoadingMessage() {
+  return loadingMessages[Math.floor(Math.random() * loadingMessages.length)]
 }
 
 /*

@@ -1,7 +1,7 @@
 // Dependencies
 import React from 'react'
 import { defaultConfig } from '../config/index.mjs'
-import { round, formatMm } from '@freesewing/utils'
+import { round, formatMm, randomLoadingMessage, horFlexClasses } from '@freesewing/utils'
 import { formatDesignOptionValue, menuCoreSettingsStructure } from './index.mjs'
 import { menuUiPreferencesStructure } from './ui-preferences.mjs'
 // Components
@@ -13,6 +13,7 @@ import {
   UiIcon,
 } from '@freesewing/react/components/Icon'
 import { HtmlSpan } from '../components/HtmlSpan.mjs'
+import { Spinner } from '@freesewing/react/components/Spinner'
 
 /*
  * This method drafts the pattern
@@ -531,6 +532,8 @@ export function stateUpdateFactory(setState, setEphemeralState, config) {
         return eph
       })
     },
+    // Pattern ID (pid)
+    pid: (val) => setState((cur) => ({ ...cur, pid: val })),
     ux: (val) => setState((cur) => objUpdate({ ...cur }, 'ux', val)),
     clearPattern: () =>
       setState((cur) => {
@@ -555,7 +558,8 @@ export function stateUpdateFactory(setState, setEphemeralState, config) {
         if (typeof newState.loading !== 'object') newState.loading = {}
         if (typeof conf.color === 'undefined') conf.color = 'info'
         newState.loading[id] = {
-          msg: t('pe:genericLoadingMsg'),
+          msg: randomLoadingMessage(),
+          icon: 'spinner',
           ...conf,
         }
         return newState

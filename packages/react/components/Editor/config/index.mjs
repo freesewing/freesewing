@@ -122,11 +122,6 @@ export const defaultConfig = {
       ux: 4,
     },
   },
-  classes: {
-    horFlex: 'flex flex-row items-center justify-between gap-4 w-full',
-    horFlexNoSm: 'md:flex md:flex-row md:items-center md:justify-between md:gap-4 md-w-full',
-    link: 'underline decoration-2 hover:decoration-4 text-secondary hover:text-secondary-focus',
-  },
   roles: {
     levels: {
       readNone: 0,

@@ -79,9 +79,9 @@ export const theme = {
 
   // info: Used rarely, can be another color best somewhat neutral looking
   // and should work with the default text color
-  info: colors.indigo['600'],
+  info: colors.yellow['300'],
   // Text color on info
-  'info-content': colors.neutral[50],
+  'info-content': colors.neutral[900],
 
   // success: Used rarely, but if it is it's in notifications indicating success
   // Typically some shade of green

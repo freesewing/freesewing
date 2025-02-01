@@ -1,6 +1,6 @@
 // Dependencies
 import { t, designMeasurements } from '../../lib/index.mjs'
-import { capitalize } from '@freesewing/utils'
+import { capitalize, horFlexClasses as horFlexClasses } from '@freesewing/utils'
 import { measurements as measurementsTranslations } from '@freesewing/i18n'
 // Hooks
 import React, { Fragment, useEffect } from 'react'
@@ -21,7 +21,6 @@ const iconClasses = {
   className: 'tw-w-8 tw-h-8 md:tw-w-10 md:tw-h-10 lg:tw-w-12 lg:tw-h-12 tw-shrink-0',
   stroke: 1.5,
 }
-const horFlexClasses = 'tw-flex tw-flex-row tw-items-center tw-justify-between tw-gap-4 tw-w-full'
 
 /**
  * The measurements view is loaded to update/set measurements
@@ -72,7 +71,7 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
     items.push(
       [
         <Fragment key={1}>
-          <div className={horFlexClasses}>
+          <div className={`${horFlexClasses} tw-w-full`}>
             <h4 id="ownsets">Choose one of your own measurements sets</h4>
             <MeasurementsSetIcon {...iconClasses} />
           </div>
@@ -92,7 +91,7 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
       ],
       [
         <Fragment key={1}>
-          <div className={horFlexClasses}>
+          <div className={`${horFlexClasses} tw-w-full`}>
             <h4 id="bookmarkedsets">Choose one of the measurements sets you have bookmarked</h4>
             <BookmarkIcon {...iconClasses} />
           </div>
@@ -111,7 +110,7 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
       ],
       [
         <Fragment key={1}>
-          <div className={horFlexClasses}>
+          <div className={`${horFlexClasses} tw-w-full`}>
             <h4 id="curatedsets">Choose one of FreeSewing&apos;s curated measurements sets</h4>
             <CuratedMeasurementsSetIcon {...iconClasses} />
           </div>
@@ -127,7 +126,7 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
   // Manual editing is always an option
   items.push([
     <Fragment key={1}>
-      <div className={horFlexClasses}>
+      <div className={`${horFlexClasses} tw-w-full`}>
         <h4 id="editmeasurements">Edit Measurements</h4>
         <EditIcon {...iconClasses} />
       </div>

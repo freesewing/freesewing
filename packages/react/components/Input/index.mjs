@@ -138,7 +138,11 @@ export const NumberInput = ({
       value={current}
       onChange={(evt) => update(evt.target.value)}
       className={`tw-daisy-input tw-w-full tw-daisy-input-bordered ${
-        current === original ? 'input-secondary' : valid(current) ? 'input-success' : 'input-error'
+        current === original
+          ? 'tw-daisy-input-secondary'
+          : valid(current)
+            ? 'tw-daisy-input-success'
+            : 'tw-daisy-input-error'
       }`}
       {...{ max, min, step }}
     />
@@ -166,12 +170,12 @@ export const StringInput = ({
       placeholder={placeholder}
       value={current}
       onChange={(evt) => update(evt.target.value)}
-      className={`tw-daisy-input tw-w-full tw-daisy-input-bordered ${
+      className={`tw-daisy-input tw-w-full tw-daisy-input-bordered tw-text-current ${
         current === original
-          ? 'daisy-input-secondary'
+          ? 'tw-daisy-input-secondary'
           : valid(current)
-            ? 'daisy-input-success'
-            : 'daisy-input-error'
+            ? 'tw-daisy-input-success'
+            : 'tw-daisy-input-error'
       }`}
     />
   </FormControl>

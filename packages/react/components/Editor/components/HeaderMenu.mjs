@@ -2,6 +2,7 @@
 import { missingMeasurements, flattenFlags } from '../lib/index.mjs'
 // Hooks
 import React, { useState } from 'react'
+import { useBackend } from '@freesewing/react/hooks/useBackend'
 import { useDesignTranslation } from '@freesewing/react/hooks/useDesignTranslation'
 // Components
 import { Null } from './Null.mjs'
@@ -207,11 +208,11 @@ export const HeaderMenuDraftViewFlags = (props) => {
 }
 
 export const HeaderMenuDraftViewIcons = (props) => {
-  const { update } = props
+  const { update, state } = props
   const Button = HeaderMenuButton
   const size = 'tw-w-5 tw-h-5'
   const muted = 'tw-text-current tw-opacity-50'
-  const ux = props.state.ui.ux
+  const ux = state.ui.ux
   const levels = {
     ...props.config.uxLevels.core,
     ...props.config.uxLevels.ui,
@@ -225,25 +226,20 @@ export const HeaderMenuDraftViewIcons = (props) => {
           updateHandler={update.toggleSa}
           tooltip="Turns Seam Allowance on or off (see Core Settings)"
         >
-          <SaIcon
-            className={`${size} ${props.state.settings.sabool ? 'tw-text-secondary' : muted}`}
-          />
+          <SaIcon className={`${size} ${state.settings.sabool ? 'tw-text-secondary' : muted}`} />
         </Button>
       ) : null}
       {ux >= levels.units ? (
         <Button
           lgOnly
           updateHandler={() =>
-            update.settings(
-              'units',
-              props.state.settings.units === 'imperial' ? 'metric' : 'imperial'
-            )
+            update.settings('units', state.settings.units === 'imperial' ? 'metric' : 'imperial')
           }
           tooltip="Switches Units between metric and imperial (see Core Settings)"
         >
           <UnitsIcon
             className={`${size} ${
-              props.state.settings.units === 'imperial' ? 'tw-text-secondary' : muted
+              state.settings.units === 'imperial' ? 'tw-text-secondary' : muted
             }`}
           />
         </Button>
@@ -251,33 +247,33 @@ export const HeaderMenuDraftViewIcons = (props) => {
       {ux >= levels.paperless ? (
         <Button
           lgOnly
-          updateHandler={() => update.settings('paperless', props.state.settings.paperless ? 0 : 1)}
+          updateHandler={() => update.settings('paperless', state.settings.paperless ? 0 : 1)}
           tooltip="Turns Paperless on or off (see Core Settings)"
         >
           <PaperlessIcon
-            className={`${size} ${props.state.settings.paperless ? 'tw-text-secondary' : muted}`}
+            className={`${size} ${state.settings.paperless ? 'tw-text-secondary' : muted}`}
           />
         </Button>
       ) : null}
       {ux >= levels.complete ? (
         <Button
           lgOnly
-          updateHandler={() => update.settings('complete', props.state.settings.complete ? 0 : 1)}
+          updateHandler={() => update.settings('complete', state.settings.complete ? 0 : 1)}
           tooltip="Turns Details on or off (see Core Settings)"
         >
           <DetailIcon
-            className={`${size} ${!props.state.settings.complete ? 'tw-text-secondary' : muted}`}
+            className={`${size} ${!state.settings.complete ? 'tw-text-secondary' : muted}`}
           />
         </Button>
       ) : null}
       {ux >= levels.expand ? (
         <Button
           lgOnly
-          updateHandler={() => update.settings('expand', props.state.settings.expand ? 0 : 1)}
+          updateHandler={() => update.settings('expand', state.settings.expand ? 0 : 1)}
           tooltip="Turns Expand on or off (see Core Settings)"
         >
           <ExpandIcon
-            className={`${size} ${props.state.settings.expand ? 'tw-text-secondary' : muted}`}
+            className={`${size} ${state.settings.expand ? 'tw-text-secondary' : muted}`}
           />
         </Button>
       ) : null}
@@ -285,24 +281,22 @@ export const HeaderMenuDraftViewIcons = (props) => {
       {ux >= levels.rotate ? (
         <Button
           lgOnly
-          updateHandler={() => update.ui('rotate', props.state.ui.rotate ? 0 : 1)}
+          updateHandler={() => update.ui('rotate', state.ui.rotate ? 0 : 1)}
           tooltip="Turns Rotate Pattern on or off (see UI Preferences)"
         >
-          <RotateIcon
-            className={`${size} ${props.state.ui.rotate ? 'tw-text-secondary' : muted}`}
-          />
+          <RotateIcon className={`${size} ${state.ui.rotate ? 'tw-text-secondary' : muted}`} />
         </Button>
       ) : null}
       {ux >= levels.renderer ? (
         <Button
           lgOnly
           updateHandler={() =>
-            update.ui('renderer', props.state.ui.renderer === 'react' ? 'svg' : 'react')
+            update.ui('renderer', state.ui.renderer === 'react' ? 'svg' : 'react')
           }
           tooltip="Switches the Render Engine between React and SVG (see UI Preferences)"
         >
           <RocketIcon
-            className={`${size} ${props.state.ui.renderer === 'svg' ? 'tw-text-secondary' : muted}`}
+            className={`${size} ${state.ui.renderer === 'svg' ? 'tw-text-secondary' : muted}`}
           />
         </Button>
       ) : null}
@@ -314,7 +308,7 @@ export const HeaderMenuUndoIcons = (props) => {
   const { update, state, Design } = props
   const Button = HeaderMenuButton
   const size = 'tw-w-5 tw-h-5'
-  const undos = props.state._?.undos && props.state._.undos.length > 0 ? props.state._.undos : false
+  const undos = state._?.undos && state._.undos.length > 0 ? state._.undos : false
 
   return (
     <div className="tw-flex tw-flex-row tw-flex-wrap tw-items-center tw-justify-center tw-px-0.5 lg:tw-px-1">
@@ -386,18 +380,35 @@ export const HeaderMenuUndoIcons = (props) => {
 }
 
 export const HeaderMenuSaveIcons = (props) => {
-  const { update } = props
+  const { update, state } = props
+  const backend = useBackend()
   const Button = HeaderMenuButton
   const size = 'tw-w-5 tw-h-5'
-  const saveable = props.state._?.undos && props.state._.undos.length > 0
+  const saveable = state._?.undos && state._.undos.length > 0
+
+  /*
+   * Save or Save As, depending on state.pattern
+   */
+  const savePattern = async () => {
+    const pid = state.pid || false
+    if (pid) {
+      const loadingId = 'savePattern'
+      update.startLoading(loadingId)
+      const patternData = {
+        settings: state.settings,
+      }
+      const result = await backend.updatePattern(pid, patternData)
+      if (result[0] === 200) {
+        update.stopLoading(loadingId)
+        update.view('draft')
+        update.notifySuccess('Pattern saved')
+      } else update.notifyFailure('oops', loadingId)
+    } else update.view('save')
+  }
 
   return (
     <div className="tw-flex tw-flex-row tw-flex-wrap tw-items-center tw-justify-center tw-px-2">
-      <Button
-        updateHandler={update.clearPattern}
-        tooltip="Save pattern"
-        disabled={saveable ? false : true}
-      >
+      <Button updateHandler={savePattern} tooltip="Save pattern" disabled={saveable ? false : true}>
         <SaveIcon className={`${size} ${saveable ? 'tw-text-success' : ''}`} />
       </Button>
       <Button updateHandler={() => update.view('save')} tooltip="Save pattern as...">

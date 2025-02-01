@@ -33,6 +33,28 @@ export const Link = ({ href, title = false, children, className = linkClasses, s
 
 const BaseLink = Link
 
+/**
+ * A regular link, but on a success background
+ *
+ * @param {object} props - All React props
+ * @param {array} props.children - The content to go in the layout
+ * @param {array} props.href - The target to link to
+ * @param {array} props.title - An optional link title
+ * @param {string} props.className - Any non-default CSS classes to apply
+ * @param {string} props.style - Any non-default styles to apply
+ */
+export const SuccessLink = ({
+  href,
+  title = false,
+  children,
+  className = `${linkClasses} tw-text-success-content hover:tw-text-success-content`,
+  style = {},
+}) => (
+  <a href={href} className={className} title={title ? title : ''} style={style}>
+    {children}
+  </a>
+)
+
 export const CardLink = ({ href, title, Icon, children, Link }) => {
   if (!Link) Link = BaseLink
 

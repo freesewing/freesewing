@@ -15,8 +15,8 @@ export default function SignInPage() {
       title="Sign In"
       description="Sign In to your FreeSewing account to unlock all features"
     >
-      <div className="flex flex-col items-center h-screen justify-center text-base-content px-4">
-        <div className="max-w-lg w-full">
+      <div className="tw-flex tw-flex-col tw-items-center tw-text-base-content tw-px-4">
+        <div className="tw-max-w-lg tw-w-full">
           <SignIn />
         </div>
       </div>
