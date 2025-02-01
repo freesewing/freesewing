@@ -105,14 +105,14 @@ export const HeaderMenuDropdown = (props) => {
         <div
           tabIndex={0}
           role="button"
-          className="tw-daisy-btn tw-daisy-btn-ghost hover:tw-bg-secondary hover:tw-bg-opacity-20 tw-border-secondary/10 hover:tw-boder-2 hover:tw-border-secondary tw-border tw-border-secondary tw-border-2 tw-border-solid tw-daisy-btn-sm tw-px-2 tw-z-20 tw-relative"
+          className="tw-daisy-btn tw-daisy-btn-ghost hover:tw-bg-secondary hover:tw-bg-opacity-20 tw-border-secondary/10 hover:tw-border-2 hover:tw-border-secondary tw-border tw-border-secondary tw-border-2 tw-border-solid tw-daisy-btn-sm tw-px-2 tw-z-20 tw-relative"
           onClick={() => setOpen(open === id ? false : id)}
         >
           {toggle}
         </div>
         <div
           tabIndex={0}
-          className="tw-daisy-dropdown-content tw-bg-base-100 tw-bg-opacity-90 tw-z-20 tw-shadow tw-left-0 !tw-fixed md:!tw-absolute tw-top-12 tw-w-screen md:tw-max-w-lg tw-overflow-y-scroll tw-mb-12"
+          className="tw-daisy-dropdown-content tw-bg-base-100 tw-bg-opacity-90 tw-z-20 tw-shadow tw-left-0 !tw-fixed md:!tw-absolute tw-top-12 tw-w-screen md:tw-max-w-lg tw-overflow-y-scroll tw-mb-12 tw-h-fit"
           style={{ maxHeight: 'calc(100vh - 12rem)' }}
         >
           {props.children}
@@ -491,7 +491,7 @@ export const HeaderMenuViewMenu = (props) => {
     >
       <ul
         tabIndex={i}
-        className="tw-dropdown-content tw-bg-base-100 tw-bg-opacity-95 tw-z-20 tw-shadow tw-left-0 !tw-fixed md:!tw-absolute tw-w-screen md:tw-max-w-lg md:tw-pt-0 tw-mt-14 md:tw-mt-0"
+        className="tw-dropdown-content tw-bg-base-100 tw-bg-opacity-95 tw-z-20 tw-shadow tw-left-0 !tw-fixed md:!tw-absolute tw-w-screen md:tw-max-w-lg md:tw-pt-0 tw-mt-14 md:tw-mt-0 tw-contents"
       >
         {output}
       </ul>
