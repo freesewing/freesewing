@@ -138,7 +138,7 @@ export const defaultConfig = {
     base: 'user',
   },
   // Ms before to fade out a notification
-  notifyTimeout: 6660,
+  notifyTimeout: 2500,
   degreeMeasurements: ['shoulderSlope'],
 }
 

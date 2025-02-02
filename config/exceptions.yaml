@@ -93,6 +93,7 @@ packageJson:
       "./components/LineDrawing": "./components/LineDrawing/index.mjs"
       "./components/Link": "./components/Link/index.mjs"
       "./components/Logo": "./components/Logo/index.mjs"
+      "./components/Mini": "./components/Mini/index.mjs"
       "./components/Modal": "./components/Modal/index.mjs"
       "./components/New": "./components/New/index.mjs"
       "./components/Number": "./components/Number/index.mjs"

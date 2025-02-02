@@ -1,7 +1,11 @@
 import React from 'react'
 import { orderBy } from '@freesewing/utils'
 import { ButtonFrame } from '@freesewing/react/components/Input'
-import { UndoIcon } from '@freesewing/react/components/Icon'
+import { Popout } from '@freesewing/react/components/Popout'
+import { UndoIcon, TipIcon, LeftIcon } from '@freesewing/react/components/Icon'
+import { HeaderMenu } from '../HeaderMenu.mjs'
+import { H1 } from '@freesewing/react/components/Heading'
+import { MiniTip } from '@freesewing/react/components/Mini'
 
 import { getUndoStepData } from '../../lib/index.mjs'
 
@@ -12,18 +16,15 @@ import { getUndoStepData } from '../../lib/index.mjs'
  * @param {object} designs - Object holding all designs
  * @param {object} update - ViewWrapper state update object
  */
-export const UndosView = ({ Design, update, state }) => {
+export const UndosView = ({ Design, update, state, config }) => {
   const steps = orderBy(state._.undos, 'time', 'desc')
 
   return (
     <>
-      <HeaderMenu state={state} {...{ update, Design }} />
+      <HeaderMenu {...{ update, Design, config, state }} />
       <div className="tw-text-left tw-mt-8 tw-mb-24 tw-px-4 tw-max-w-xl tw-mx-auto">
-        <h2>Undo History</h2>
-        <p>Time-travel through your recent pattern changes</p>
-        <small>
-          <b>Tip:</b> Click on any change to undo all changes up to, and including, that change.
-        </small>
+        <H1>Undo History</H1>
+        <p className="tw-mb-4">Time-travel through your recent pattern changes.</p>
         {steps.length < 1 ? (
           <Popout note>
             <h4>Your undo history is currently empty</h4>
@@ -38,11 +39,16 @@ export const UndosView = ({ Design, update, state }) => {
             <p>As soon as you do, the change will show up here, and you can undo it.</p>
           </Popout>
         ) : (
-          <div className="tw-flex tw-flex-col tw-gap-2 tw-mt-4">
-            {steps.map((step, index) => (
-              <UndoStep key={step.time} {...{ step, update, state, Design, index }} />
-            ))}
-          </div>
+          <>
+            <MiniTip>
+              Click on any change to undo all changes up to, and including, that change.
+            </MiniTip>
+            <div className="tw-flex tw-flex-col tw-gap-2 tw-mt-4">
+              {steps.map((step, index) => (
+                <UndoStep key={step.time} {...{ step, update, state, Design, index }} />
+              ))}
+            </div>
+          </>
         )}
       </div>
     </>
@@ -93,7 +99,7 @@ export const UndoStep = ({ update, state, step, Design, compact = false, index =
       <ButtonFrame dense onClick={() => update.restore(index, state._)}>
         <div className="tw-flex tw-flex-row tw-items-center tw-align-start tw-gap-2 tw-w-full">
           <UndoIcon text={index} className="tw-w-5 tw-h-5 tw-text-secondary" />
-          {data.msg ? data.msg : `pe:${data.optCode}`}
+          {data.msg ? data.msg : data.title}
         </div>
       </ButtonFrame>
     )
@@ -107,10 +113,10 @@ export const UndoStep = ({ update, state, step, Design, compact = false, index =
         <div className="tw-flex tw-flex-row tw-items-center tw-justify-between tw-gap-2 tw-w-full tw-m-0 tw-p-0 tw--mt-2 tw-text-lg">
           <span className="tw-flex tw-flex-row tw-gap-2 tw-items-center">
             {data.fieldIcon || null}
-            {`pe:${data.optCode}`}
+            {data.title}
           </span>
           <span className="tw-opacity-70 tw-flex tw-flex-row tw-gap-1 tw-items-center tw-text-base">
-            {data.icon || null} {`pe:${data.titleCode}`}
+            {data.icon || null} {data.menu}
           </span>
         </div>
         <div className="tw-flex tw-flex-row tw-gap-1 tw-items-center tw-align-start tw-w-full">

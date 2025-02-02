@@ -82,7 +82,7 @@ export const HeaderMenuDraftView = (props) => {
 }
 
 export const HeaderMenuDropdown = (props) => {
-  const { tooltip, toggle, open, setOpen, id } = props
+  const { tooltip, toggle, open, setOpen, id, end = false } = props
   /*
    * We need to use both !fixed and md:!absolute here to override DaisyUI's
    * classes on dropdown-content to force the dropdown to use the available
@@ -95,14 +95,16 @@ export const HeaderMenuDropdown = (props) => {
         disabled
         tabIndex={0}
         role="button"
-        className="tw-daisy-btn tw-daisy-btn-ghost hover:tw-bg-secondary hover:tw-bg-opacity-20 hover:tw-border-solid hover:tw-border-2 hover:tw-border-secondary tw-border tw-border-secondary tw-border-2 tw-border-dotted tw-daisy-btn-sm tw-px-2 tw-z-20 tw-relative"
+        className={`tw-daisy-btn tw-daisy-btn-ghost hover:tw-bg-secondary hover:tw-bg-opacity-20 hover:tw-border-solid hover:tw-border-2 hover:tw-border-secondary tw-border tw-border-secondary tw-border-2 tw-border-dotted tw-daisy-btn-sm tw-px-2 tw-z-20 tw-relative`}
       >
         {toggle}
       </button>
     </Tooltip>
   ) : (
     <Tooltip tip={tooltip}>
-      <div className={`tw-daisy-dropdown ${open === id ? 'tw-daisy-dropdown-open tw-z-20' : ''}`}>
+      <div
+        className={`tw-daisy-dropdown ${open === id ? 'tw-daisy-dropdown-open tw-z-20' : ''} ${end ? ' tw-daisy-dropdown-end' : ''}`}
+      >
         <div
           tabIndex={0}
           role="button"
@@ -113,7 +115,7 @@ export const HeaderMenuDropdown = (props) => {
         </div>
         <div
           tabIndex={0}
-          className="tw-daisy-dropdown-content tw-bg-base-100 tw-bg-opacity-90 tw-z-20 tw-shadow tw-left-0 !tw-fixed md:!tw-absolute tw-top-12 tw-w-screen md:tw-max-w-lg tw-overflow-y-scroll tw-mb-12 tw-h-fit"
+          className="tw-daisy-dropdown-content tw-bg-base-100 tw-bg-opacity-90 tw-z-20 tw-shadow tw-left-0 !tw-fixed md:!tw-absolute tw-top-12 tw-w-screen md:tw-max-w-md tw-overflow-y-scroll tw-mb-12 tw-h-fit"
           style={{ maxHeight: 'calc(100vh - 12rem)' }}
         >
           {props.children}
@@ -329,6 +331,7 @@ export const HeaderMenuUndoIcons = (props) => {
         <UndoIcon className={`${size} ${undos ? 'tw-text-secondary' : ''}`} text="A" />
       </Button>
       <HeaderMenuDropdown
+        end
         {...props}
         tooltip={viewLabels.undos.t}
         id="undos"
@@ -341,19 +344,14 @@ export const HeaderMenuUndoIcons = (props) => {
         }
       >
         {undos ? (
-          <ul className="tw-daisy-dropdown-content tw-bg-base-100 tw-bg-opacity-90 tw-z-20 tw-shadow tw-left-0 !tw-fixed md:!tw-absolute tw-w-screen md:tw-w-96 tw-px-4 md:tw-p-2 md:tw-pt-0">
+          <ul className="tw-daisy-dropdown-content tw-bg-base-100 tw-bg-opacity-90 tw-z-20 tw-shadow tw-left-0 !tw-fixed md:!tw-absolute tw-w-screen md:tw-w-96 tw-px-4 md:tw-p-2 md:tw-pt-0 tw-contents">
             {undos.slice(0, 9).map((step, index) => (
               <li key={index}>
                 <UndoStep {...{ step, update, state, Design, index }} compact />
               </li>
             ))}
             <li key="view">
-              <ButtonFrame
-                dense
-                onClick={() => {
-                  return null /*update.state(index, state._) */
-                }}
-              >
+              <ButtonFrame dense onClick={() => update.view('undos')}>
                 <div className="tw-flex tw-flex-row tw-items-center tw-align-center tw-justify-between tw-gap-2 tw-w-full">
                   <div className="tw-flex tw-flex-row tw-items-center tw-align-start tw-gap-2 tw-grow">
                     <UndoIcon className="tw-w-5 tw-h-5 tw-text-secondary" />
@@ -502,7 +500,7 @@ export const HeaderMenuViewMenu = (props) => {
     >
       <ul
         tabIndex={i}
-        className="tw-dropdown-content tw-bg-base-100 tw-bg-opacity-95 tw-z-20 tw-shadow tw-left-0 !tw-fixed md:!tw-absolute tw-w-screen md:tw-max-w-lg md:tw-pt-0 tw-mt-14 md:tw-mt-0 tw-contents"
+        className="tw-daisy-dropdown-content tw-bg-base-100 tw-bg-opacity-95 tw-z-20 tw-shadow tw-left-0 !tw-fixed md:!tw-absolute tw-w-screen md:tw-max-w-lg md:tw-pt-0 tw-mt-14 md:tw-mt-0 tw-contents"
       >
         {output}
       </ul>

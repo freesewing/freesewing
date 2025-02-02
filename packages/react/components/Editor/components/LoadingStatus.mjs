@@ -4,7 +4,7 @@ import { TipIcon, OkIcon } from '@freesewing/react/components/Icon'
 import { Null } from './Null.mjs'
 
 const config = {
-  timeout: 2,
+  timeout: 2.5,
   defaults: {
     color: 'secondary',
     icon: 'Spinner',

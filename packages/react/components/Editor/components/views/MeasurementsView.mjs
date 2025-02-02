@@ -3,19 +3,23 @@ import { t, designMeasurements } from '../../lib/index.mjs'
 import { capitalize, horFlexClasses as horFlexClasses } from '@freesewing/utils'
 import { measurements as measurementsTranslations } from '@freesewing/i18n'
 // Hooks
-import React, { Fragment, useEffect } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
+import { useBackend } from '@freesewing/react/hooks/useBackend'
 // Components
 import { Popout } from '@freesewing/react/components/Popout'
+import { NumberInput } from '@freesewing/react/components/Input'
 import {
   BookmarkIcon,
   CuratedMeasurementsSetIcon,
   EditIcon,
   MeasurementsSetIcon,
+  FingerprintIcon,
 } from '@freesewing/react/components/Icon'
 import { Accordion } from '../Accordion.mjs'
 import { MeasurementsEditor } from '../MeasurementsEditor.mjs'
 import { SetPicker, BookmarkedSetPicker, CuratedSetPicker, UserSetPicker } from '../Set.mjs'
 import { HeaderMenu } from '../HeaderMenu.mjs'
+import { H1, H5 } from '@freesewing/react/components/Heading'
 
 const iconClasses = {
   className: 'tw-w-8 tw-h-8 md:tw-w-10 md:tw-h-10 lg:tw-w-12 lg:tw-h-12 tw-shrink-0',
@@ -35,7 +39,14 @@ const iconClasses = {
  * @param {Object} props.update - Helper object for updating the editor state
  * @return {Function} MeasurementsView - React component
  */
-export const MeasurementsView = ({ config, Design, missingMeasurements, state, update }) => {
+export const MeasurementsView = ({
+  config,
+  Design,
+  missingMeasurements,
+  state,
+  update,
+  design,
+}) => {
   /*
    * If there is no view set, completing measurements will switch to the view picker
    * Which is a bit confusing. So in this case, set the view to measurements.
@@ -50,7 +61,7 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
         },
         'missingMeasurements'
       )
-    else update.notifySuccess(t('pe:measurementsAreOk'))
+    else update.notifySuccess(`We have all measurements to draft ${capitalize(design)}`)
   }, [state.view, update])
 
   const loadMeasurements = (set) => {
@@ -72,7 +83,7 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
       [
         <Fragment key={1}>
           <div className={`${horFlexClasses} tw-w-full`}>
-            <h4 id="ownsets">Choose one of your own measurements sets</h4>
+            <H5 id="ownsets">Choose one of your own measurements sets</H5>
             <MeasurementsSetIcon {...iconClasses} />
           </div>
           <p className="tw-text-left">
@@ -92,7 +103,7 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
       [
         <Fragment key={1}>
           <div className={`${horFlexClasses} tw-w-full`}>
-            <h4 id="bookmarkedsets">Choose one of the measurements sets you have bookmarked</h4>
+            <H5 id="bookmarkedsets">Choose one of the measurements sets you have bookmarked</H5>
             <BookmarkIcon {...iconClasses} />
           </div>
           <p className="tw-text-left">
@@ -111,7 +122,7 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
       [
         <Fragment key={1}>
           <div className={`${horFlexClasses} tw-w-full`}>
-            <h4 id="curatedsets">Choose one of FreeSewing&apos;s curated measurements sets</h4>
+            <H5 id="curatedsets">Choose one of FreeSewing&apos;s curated measurements sets</H5>
             <CuratedMeasurementsSetIcon {...iconClasses} />
           </div>
           <p className="tw-text-left">
@@ -121,13 +132,27 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
         </Fragment>,
         <CuratedSetPicker key={2} clickHandler={loadMeasurements} {...{ config, Design }} />,
         'csets',
+      ],
+      [
+        <Fragment key={1}>
+          <div className={`${horFlexClasses} tw-w-full`}>
+            <H5 id="loadid">Load a measurements set by ID</H5>
+            <FingerprintIcon {...iconClasses} />
+          </div>
+          <p className="tw-text-left">
+            If you know the ID of a measurements set — either one of your own or a public set — we
+            can load it for you.
+          </p>
+        </Fragment>,
+        <LoadMeasurementsSetById key={2} {...{ loadMeasurements, update }} />,
+        'setid',
       ]
     )
   // Manual editing is always an option
   items.push([
     <Fragment key={1}>
       <div className={`${horFlexClasses} tw-w-full`}>
-        <h4 id="editmeasurements">Edit Measurements</h4>
+        <H5 id="editmeasurements">Edit measurements by hand</H5>
         <EditIcon {...iconClasses} />
       </div>
       <p className="tw-text-left">You can manually set or override measurements below.</p>
@@ -140,7 +165,7 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
     <>
       <HeaderMenu state={state} {...{ config, update }} />
       <div className="tw-max-w-7xl tw-mt-8 tw-mx-auto tw-px-4 tw-mb-4">
-        <h1 className="tw-text-center">Measurements</h1>
+        <H1>Measurements</H1>
         {missingMeasurements && missingMeasurements.length > 0 ? (
           <Popout note dense noP>
             <h3>
@@ -158,16 +183,16 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
           </Popout>
         ) : (
           <Popout tip dense noP>
-            <h5>We have all required measurements to draft this pattern</h5>
+            <H5>We have all required measurements to draft this pattern</H5>
             <div className="tw-flex tw-flex-row tw-flex-wrap tw-gap-2 tw-mt-2">
               <button
-                className="tw-daisy-btn tw-daisy-btn-primary lg:tw-daisy-btn-lg"
+                className="tw-daisy-btn tw-daisy-btn-primary"
                 onClick={() => update.view('draft')}
               >
-                {viewLabels.draft.t}
+                Draft Pattern
               </button>
               <button
-                className="tw-daisy-btn tw-daisy-btn-primary tw-daisy-btn-outline lg:tw-daisy-btn-lg"
+                className="tw-daisy-btn tw-daisy-btn-primary tw-daisy-btn-outline"
                 onClick={() => update.view('picker')}
               >
                 Choose a different view
@@ -179,4 +204,44 @@ export const MeasurementsView = ({ config, Design, missingMeasurements, state, u
       </div>
     </>
   )
+}
+
+const LoadMeasurementsSetById = ({ loadMeasurements, update }) => {
+  const backend = useBackend()
+  const [id, setId] = useState('')
+
+  return (
+    <div>
+      <div className="tw-flex tw-flex-row tw-gap-2 tw-items-end">
+        <NumberInput
+          label="Measurements Set ID"
+          update={setId}
+          current={id}
+          valid={(val) => Number(val) == val}
+        />
+        <button
+          className="tw-daisy-btn tw-daisy-btn-primary"
+          onClick={() => loadMeasurementsSet(id, backend, loadMeasurements, update)}
+        >
+          Load set
+        </button>
+      </div>
+    </div>
+  )
+}
+
+async function loadMeasurementsSet(id, backend, loadMeasurements, update) {
+  update.startLoading('getset', {
+    msg: 'Loading measurements set from the FreeSewing backend',
+    icon: 'spinner',
+  })
+  const result = await backend.getSet(id)
+  if (result[0] === 200 && result[1].set) {
+    loadMeasurements(result[1].set)
+    update.clearLoading()
+    update.notifySuccess('Measurements set loaded', 'getsetok')
+  } else {
+    update.clearLoading()
+    update.notifySuccess('Measurements set loaded', 'getsetko')
+  }
 }

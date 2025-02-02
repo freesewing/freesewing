@@ -5,15 +5,10 @@ import { designOptionType } from '@freesewing/utils'
 import React, { useState, useMemo } from 'react'
 // Components
 import { SubAccordion } from '../Accordion.mjs'
-import {
-  EditIcon,
-  GroupIcon,
-  OptionsIcon,
-  ResetIcon,
-  TipIcon,
-} from '@freesewing/react/components/Icon'
+import { EditIcon, GroupIcon, OptionsIcon, ResetIcon } from '@freesewing/react/components/Icon'
 import { CoreSettingsMenu } from './CoreSettingsMenu.mjs'
 import { FormControl } from '@freesewing/react/components/Input'
+import { MiniTip } from '@freesewing/react/components/Mini'
 
 /** @type {String} class to apply to buttons on open menu items */
 const iconButtonClass = 'tw-daisy-btn tw-daisy-btn-xs tw-daisy-btn-ghost tw-px-0 tw-text-accent'
@@ -129,16 +124,7 @@ export const MenuItem = ({
       >
         <Input {...drillProps} />
       </FormControl>
-      {config.about ? (
-        <div className="tw-flex tw-flex-row tw-border tw-border-success tw-rounded">
-          <div className="tw-bg-success tw-text-success-content tw-p-1 tw-rounded-l tw-flex tw-flex-row tw-items-center">
-            <TipIcon className="tw-w-6 tw-h-6 tw-text-success-content" />
-          </div>
-          <div className="tw-p-1 tw-text-sm tw-font-medium tw-bg-success/10 tw-grow tw-rounded-r">
-            {config.about}
-          </div>
-        </div>
-      ) : null}
+      {config.about ? <MiniTip>{config.about}</MiniTip> : null}
     </>
   )
 }

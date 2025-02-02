@@ -71,8 +71,8 @@ export function getUiPreferenceUndoStepData({ step }) {
   const data = {
     icon: <UiIcon />,
     field,
-    optCode: `${field}.t`,
-    titleCode: 'uiPreferences.t',
+    title: structure.title,
+    menu: 'UI Preferences',
     structure: menuUiPreferencesStructure()[field],
   }
   const FieldIcon = data.structure.icon
@@ -85,7 +85,7 @@ export function getUiPreferenceUndoStepData({ step }) {
     data[key + 'Val'] = t(
       structure.choiceTitles[
         structure.choiceTitles[String(step[key])] ? String(step[key]) : String(structure.dflt)
-      ] + '.t'
+      ]
     )
 
   return data
@@ -102,8 +102,8 @@ export function getCoreSettingUndoStepData({ step, state, Design }) {
 
   const data = {
     field,
-    titleCode: 'coreSettings.t',
-    optCode: `${field}.t`,
+    menu: 'Core Settings',
+    title: structure?.[field] ? structure[field].title : '',
     icon: <SettingsIcon />,
     structure: structure[field],
   }
@@ -125,9 +125,7 @@ export function getCoreSettingUndoStepData({ step, state, Design }) {
     case 'margin':
     case 'sa':
     case 'samm':
-      if (data.field !== 'margin') {
-        data.optCode = `samm.t`
-      }
+      if (data.field !== 'margin') data.title = 'Seam Allowance'
       data.oldVal = <Html html={formatMm(cord(step.old, data.structure.dflt))} />
       data.newVal = <Html html={formatMm(cord(step.new, data.structure.dflt))} />
       return data
@@ -136,23 +134,23 @@ export function getCoreSettingUndoStepData({ step, state, Design }) {
       data.newVal = cord(step.new, data.structure.dflt)
       return data
     case 'units':
-      data.oldVal = t(step.new === 'imperial' ? 'pe:metricUnits' : 'pe:imperialUnits')
-      data.newVal = t(step.new === 'imperial' ? 'pe:imperialUnits' : 'pe:metricUnits')
+      data.oldVal = t(step.new === 'imperial' ? 'Metric Units' : 'Imperial Units')
+      data.newVal = t(step.new === 'imperial' ? 'Imperial Units' : 'Metric Units')
       return data
     case 'only':
-      data.oldVal = cord(step.old, data.structure.dflt) || t('pe:includeAllParts')
-      data.newVal = cord(step.new, data.structure.dflt) || t('pe:includeAllParts')
+      data.oldVal = cord(step.old, data.structure.dflt) || 'Include all parts'
+      data.newVal = cord(step.new, data.structure.dflt) || 'Include all parts'
       return data
     default:
       data.oldVal = t(
-        (data.structure.choiceTitles[String(step.old)]
+        data.structure.choiceTitles[String(step.old)]
           ? data.structure.choiceTitles[String(step.old)]
-          : data.structure.choiceTitles[String(data.structure.dflt)]) + '.t'
+          : data.structure.choiceTitles[String(data.structure.dflt)]
       )
       data.newVal = t(
-        (data.structure.choiceTitles[String(step.new)]
+        data.structure.choiceTitles[String(step.new)]
           ? data.structure.choiceTitles[String(step.new)]
-          : data.structure.choiceTitles[String(data.structure.dflt)]) + '.t'
+          : data.structure.choiceTitles[String(data.structure.dflt)]
       )
       return data
   }
@@ -163,8 +161,8 @@ export function getDesignOptionUndoStepData({ step, state, Design }) {
   const data = {
     icon: <OptionsIcon />,
     field: step.path[2],
-    optCode: `${state.design}:${step.path[2]}.t`,
-    titleCode: `designOptions.t`,
+    title: `${state.design}:${step.path[2]}`,
+    menu: `Design Options`,
     oldVal: formatDesignOptionValue(option, step.old, state.units === 'imperial'),
     newVal: formatDesignOptionValue(option, step.new, state.units === 'imperial'),
   }
@@ -212,8 +210,8 @@ export function getUndoStepData(props) {
     const data = {
       icon: <MeasurementsIcon />,
       field: 'measurements',
-      optCode: `measurements`,
-      titleCode: 'measurements',
+      title: `measurements`,
+      menu: 'measurements',
     }
     /*
      * Single measurements change?
@@ -229,7 +227,7 @@ export function getUndoStepData(props) {
     for (const m of Object.keys(props.step.new)) {
       if (props.step.new[m] !== props.step.old?.[m]) count++
     }
-    return { ...data, msg: t('pe:xMeasurementsChanged', { count }) }
+    return { ...data, msg: `${count} measurements updated` }
   }
 
   /*

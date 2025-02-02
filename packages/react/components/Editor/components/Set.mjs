@@ -111,7 +111,13 @@ export const UserSetPicker = ({
   )
 }
 
-export const BookmarkedSetPicker = ({ Design, clickHandler, missingClickHandler, size = 'lg' }) => {
+export const BookmarkedSetPicker = ({
+  Design,
+  config,
+  clickHandler,
+  missingClickHandler,
+  size = 'lg',
+}) => {
   // Hooks
   const backend = useBackend()
 
