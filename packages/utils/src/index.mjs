@@ -1,5 +1,6 @@
 import tlds from 'tlds/index.json' with { type: 'json' }
 import { cloudflare as cloudflareConfig } from '@freesewing/config'
+import _get from 'lodash/get.js'
 import _set from 'lodash/set.js'
 import _unset from 'lodash/unset.js'
 import _orderBy from 'lodash/orderBy.js'
@@ -8,6 +9,7 @@ import { loadingMessages } from './loading-messages.mjs'
 /*
  * Re-export lodash utils
  */
+export const get = _get
 export const set = _set
 export const unset = _unset
 export const orderBy = _orderBy
@@ -31,8 +33,7 @@ export const horFlexClassesNoSm =
 /*
  * These classes are what makes a link a link
  */
-export const linkClasses =
-  'tw-underline tw-decoration-2 hover:tw-decoration-4 tw-text-secondary hover:tw-text-secondary-focus tw-font-medium'
+export const linkClasses = 'tw-text-secondary hover:tw-underline hover:tw-cursor-pointer'
 
 /*
  * FUNCTIONS
@@ -46,6 +47,18 @@ export const linkClasses =
  */
 export function capitalize(string) {
   return typeof string === 'string' ? string.charAt(0).toUpperCase() + string.slice(1) : ''
+}
+
+/**
+ * A method to clone objects
+ *
+ * Note that as this uses JSON, this can only clone what can be serialized.
+ *
+ * @param {object} obj - The object to clone
+ * @return {object} clone - The cloned object
+ */
+export function clone(obj) {
+  return JSON.parse(JSON.stringify(obj))
 }
 
 /*
@@ -72,7 +85,7 @@ export function cloudflareImageUrl({ id = 'default-avatar', variant = 'public' }
 }
 
 /**
- * Determines the design optino type based on the option's config
+ * Determines the design option type based on the option's config
  *
  * @param {object} option - The option config
  * @return {string} type - The option type
@@ -339,10 +352,20 @@ export const mutateObject = (obj = {}, path, val = 'unset') => {
 }
 
 /** Generate a URL to create a new pattern with a given design, settings, and view */
-export const newPatternUrl = ({ design, settings = {}, view = 'draft' }) =>
-  `/-/#settings=${encodeURIComponent(
-    JSON.stringify(settings)
-  )}&view=${encodeURIComponent('"' + view + '"')}`
+export const patternUrlFromState = (state = {}, includeMeasurements = false, view = 'draft') => {
+  // Avoid changing state by accident
+  const newState = clone(state)
+  const measurements = includeMeasurements ? { ...(newState.settings?.measurements || {}) } : {}
+  const settings = { ...(newState.settings || {}) }
+  settings.measurements = measurements
+  const obj = {
+    design: newState.design,
+    settings,
+    view,
+  }
+
+  return `/editor/#s=${encodeURIComponent(JSON.stringify(obj))}`
+}
 
 /*
  * A method to ensure input is not empty

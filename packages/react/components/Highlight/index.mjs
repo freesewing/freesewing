@@ -18,6 +18,7 @@ const defaultTitles = {
  * @params {bool} raw - Set this to true to not escape tags
  * @params {string} title - Title for the highlight
  * @params {string} copy - Content to copy to clipboard
+ * @params {bool} noCopy - Do not add copy to clipboard
  */
 export const Highlight = ({
   language = 'txt',
@@ -25,6 +26,7 @@ export const Highlight = ({
   raw = false,
   title = false,
   copy = false,
+  noCopy = false,
 }) => {
   if (children?.props?.className) {
     language = children.props.className.split('-').pop()
@@ -46,7 +48,7 @@ export const Highlight = ({
       `}
       >
         <span>{label}</span>
-        <CopyToClipboard content={copy ? copy : children} label={label} />
+        {noCopy ? null : <CopyToClipboard content={copy ? copy : children} label={label} />}
       </div>
       <pre {...preProps}>{children}</pre>
     </div>

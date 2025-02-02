@@ -27,7 +27,7 @@ export const CopyToClipboard = ({ content, label = false, sup = false }) => {
   const text =
     typeof content === 'string' ? content : strip(ReactDOMServer.renderToStaticMarkup(content))
 
-  const style = sup ? 'w-4 h-4 -mt-4' : 'w-5 h-5'
+  const style = sup ? 'tw-w-4 tw-h-4 tw--mt-4' : 'tw-w-5 tw-h-5'
 
   return (
     <Copy text={text} onCopy={() => handleCopied(setCopied, setLoadingStatus, label)}>

@@ -4,6 +4,7 @@ import { DesignsView } from './DesignsView.mjs'
 import { MeasurementsView } from './MeasurementsView.mjs'
 import { DraftView } from './DraftView.mjs'
 import { SaveView } from './SaveView.mjs'
+import { ExportView } from './ExportView.mjs'
 import { ErrorIcon } from '@freesewing/react/components/Icon'
 import {
   OptionsIcon,
@@ -53,6 +54,7 @@ export const View = (props) => {
   if (view === 'measurements') return <MeasurementsView {...props} />
   if (view === 'draft') return <DraftView {...props} />
   if (view === 'save') return <SaveView {...props} />
+  if (view === 'export') return <ExportView {...props} />
   /*
   viewComponents: {
     draft: 'DraftView',
