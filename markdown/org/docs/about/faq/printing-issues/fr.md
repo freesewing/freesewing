@@ -25,7 +25,7 @@ Veuillez vous assurer que :
 2. Vous imprimez le PDF sur le bon format de papier.
    Si vous avez un PDF A4, assurez-vous que le programme d'impression est réglé pour imprimer sur du papier A4.
 
-3. Le papier chargé dans votre imprimante est de la bonne taille. Si vous avez un PDF A4, vérifiez qu'il contient bien des feuilles au format A4.
+3. Le papier chargé dans votre imprimante est de la bonne taille. Si vous avez un PDF A4, vérifiez que votre imprimante contient bien des feuilles au format A4.
 
 4. Vous imprimez à la "taille réelle" ou a une échelle de 100%.
    Par défaut, de nombreux programmes d'impression sont réglés sur "Ajuster" ou
@@ -33,14 +33,8 @@ Veuillez vous assurer que :
 
 ## Dépannage supplémentaire
 
-If you have followed the above troubleshooting steps but your printed
-patterns are still incorrectly scaled, it may be possible that
-your printer has been configured to print all documents
-(not just our patterns) at a non-100% scale.
+Si vous avez suivi les étapes de dépannage précédentes mais vos patrons sont toujours imprimés à la mauvaise échelle, il se peut que votre imprimante soit configurer pour imprimer tous documents (et pas que vos patrons) à une échelle autre que 100%.
 
-If this is the case, you might want to try reconfiguring your printer
-or updating drivers to see if either helps.
-If you are unable to resolve the issue, you may simply need to use
-a different printer.
-Or, experiment with adjusting the scale at which you print so the
-resulting printouts end up at the correct scale.
+Si c'est le cas, vous pouvez essayer de reconfigurer votre imprimante ou de mettre à jour ses pilotes.
+Si vous n'arrivez pas à résoudre le problème, il se peut que vous deviez utiliser un autre imprimante.
+Sinon, vous pouvez tenter d'ajuster l'échelle à laquelle vous imprimez jusqu'à ce que l'échelle de l'impression correspondre à la bonne.
