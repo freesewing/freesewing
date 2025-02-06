@@ -1,11 +1,10 @@
 ---
-title: Printed PDFs are incorrectly sized/scaled?
+title: Les PDF imprimés sont de mauvaise taille ?
 ---
 
-It is important that PDF patterns be printed at the correct
-size and scale so that the resulting garments are also correctly-sized.
+Il est important que les patrons soient imprimés à la bonne taille et à la bonne échelle afin que les vêtements qui en résultent soient également à la bonne taille.
 
-## Verifying size and scale
+## Vérification de la taille et de l'échelle
 
 Our printed patterns include rulers at the upper left corner
 of each page as an aid to verify that the printed pattern has been
