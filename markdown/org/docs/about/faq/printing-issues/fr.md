@@ -6,42 +6,32 @@ Il est important que les patrons soient imprimés à la bonne taille et à la bo
 
 ## Vérification de la taille et de l'échelle
 
-Our printed patterns include rulers at the upper left corner
-of each page as an aid to verify that the printed pattern has been
-printed at the correct size and scale.
+Nos patrons incluent des règles dans le coin supérieur gauche de chaque page afin de vérifier qu'ils ont été imprimés à la bonne taille et échelle.
 
-Many of our patterns also include a scale box as a similar aid.
-For example, the scale box might say that its outer dimensions
-are 4" x 2" and its inner dimensions are 10 cm x 5 cm.
+Plusieurs de nos patrons incluent également un carré d'échelle.
+Par exemple, le carré d'échelle peut indiquer que ses dimensions extérieures sont de 4" x 2" et que ses dimensions intérieures sont de 10 cm x 5 cm.
 
-If you measure the ruler or scale box on your printed pattern and
-discover that they are different than the expected dimensions,
-then the size and scale of your pattern was incorrectly changed.
-This can happen somewhere during either:
-a. the PDF generating/export process or b. the printing process.
+Si vous mesurez la règle ou le carré d'échelle de vos patrons imprimés et découvrez qu'ils ne font pas les dimensions attendues, c'est que leur taille et leur échelle n'ont pas été ajustées correctement.
+Cela peut se produire soit pendant la generation/l'exportation du patron, soit pendant l'impression.
 
-## Troubleshooting steps
+## Étapes de dépannage
 
-Please make sure that:
+Veuillez vous assurer que :
 
-1. You are generating or exporting a PDF using the correct paper size.
-   The default paper size is A4, and you should change it if you wish
-   to use a different paper size.
-   (For example, if you want to use Letter size paper instead.)
+1. Vous générez ou exportez un PDF en utilisant le bon format de papier.
+   Le format de papier par défaut est A4, vous devez le modifiez si vous voulez en utiliser un autre.
+   (Par exemple, si vous voulez utiliser le format Lettre à la place.)
 
-2. You are printing the PDF to the correct paper size.
-   If you have an A4 PDF, make sure the printing program is set to
-   print to A4 paper.
+2. Vous imprimez le PDF sur le bon format de papier.
+   Si vous avez un PDF A4, assurez-vous que le programme d'impression est réglé pour imprimer sur du papier A4.
 
-3. The paper loaded into your printer is the correct size,
-   If you have an A4 PDF, verify that your printer actually has
-   A4-sized paper loaded in it.
+3. Le papier chargé dans votre imprimante est de la bonne taille. Si vous avez un PDF A4, vérifiez qu'il contient bien des feuilles au format A4.
 
-4. You are printing at "Actual size" or at 100% scale.
-   By default, many printing programs are set to "Fit" or
-   "Shrink oversize pages" which will produce incorrectly-scaled printouts.
+4. Vous imprimez à la "taille réelle" ou a une échelle de 100%.
+   Par défaut, de nombreux programmes d'impression sont réglés sur "Ajuster" ou
+   "Réduire les pages surdimensionnées", ce qui produit des impressions à la mauvaise échelle.
 
-## Further troubleshooting
+## Dépannage supplémentaire
 
 If you have followed the above troubleshooting steps but your printed
 patterns are still incorrectly scaled, it may be possible that
