@@ -22,10 +22,10 @@ export function menuDesignOptionsStructure(design, options, settings, asFullList
       sorted[name] = {
         ...option,
         name,
-        title: i18n[design].en.o[name].t,
+        title: i18n[design]?.en?.o?.[name]?.t || name,
         about: (
           <span>
-            {i18n[design].en.o[name].d}
+            {i18n[design]?.en?.o?.[name]?.d || name}
             <DesignDocsLink item={name} design={design} />
           </span>
         ),

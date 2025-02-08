@@ -92,8 +92,14 @@ export const MenuBoolValue = MenuListOptionValue
 /**
  * Displays the MmOptions are not supported
  */
-export const MenuMmOptionValue = () => (
-  <span className="text-error">FIXME: No Mm Options are not supported</span>
+export const MenuMmOptionValue = ({ config, changed, current, state }) => (
+  <MenuHighlightValue changed={changed}>
+    <span
+      dangerouslySetInnerHTML={{
+        __html: formatMm(changed ? current : config.dflt, state.settings?.units),
+      }}
+    />
+  </MenuHighlightValue>
 )
 
 /**
@@ -111,13 +117,6 @@ export const MenuMmValue = ({ current, config, units, changed }) => (
 
 /**
  * Displays the current percentage value, and the absolute value if configured
- *
- **************************************************************************
- * SliderIcon  Title                                                 THIS *
- * min%                                                              max% *
- * ----------------------0----------------------------------------------- *
- * msg                                               PencilIcon ResetIcon *
- **************************************************************************
  */
 export const MenuPctOptionValue = ({ config, current, settings, changed, patternConfig }) => {
   const val = changed ? current : config.pct / 100

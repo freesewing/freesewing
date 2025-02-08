@@ -6,6 +6,7 @@ import { DraftView } from './DraftView.mjs'
 import { SaveView } from './SaveView.mjs'
 import { ExportView } from './ExportView.mjs'
 import { UndosView } from './UndosView.mjs'
+//import { LayoutView } from './LayoutView.mjs'
 import { ErrorIcon } from '@freesewing/react/components/Icon'
 import {
   OptionsIcon,
@@ -33,7 +34,7 @@ const viewIcons = {
   measurements: MeasurementsIcon,
   test: BeakerIcon,
   timing: GaugeIcon,
-  printLayout: PrintIcon,
+  layout: PrintIcon,
   save: SaveIcon,
   export: ExportIcon,
   editSettings: EditIcon,
@@ -57,6 +58,7 @@ export const View = (props) => {
   if (view === 'save') return <SaveView {...props} />
   if (view === 'export') return <ExportView {...props} />
   if (view === 'undos') return <UndosView {...props} />
+  //if (view === 'layout') return <LayoutView {...props} />
   /*
   viewComponents: {
     draft: 'DraftView',
@@ -65,7 +67,7 @@ export const View = (props) => {
     export: 'ViewPicker',
     measurements: 'MeasurementsView',
     undos: 'UndosView',
-    printLayout: 'ViewPicker',
+    layout: 'ViewPicker',
     editSettings: 'ViewPicker',
     docs: 'ViewPicker',
     inspect: 'ViewPicker',
@@ -106,7 +108,7 @@ export const viewLabels = {
     t: 'Time Design',
     d: 'Shows detailed timing of the pattern being drafted, allowing you to find bottlenecks in performance',
   },
-  printLayout: {
+  layout: {
     t: 'Pattern Layout',
     d: 'Organize your pattern parts to minimize paper use',
   },

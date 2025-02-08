@@ -1,11 +1,19 @@
 import React, { useMemo, useCallback, useState } from 'react'
 import { i18n } from '@freesewing/collection'
-import { designOptionType, round, measurementAsUnits, measurementAsMm } from '@freesewing/utils'
+import {
+  designOptionType,
+  round,
+  measurementAsUnits,
+  measurementAsMm,
+  formatMm,
+  formatFraction128,
+} from '@freesewing/utils'
 import { menuRoundPct } from '../../lib/index.mjs'
 import { ButtonFrame, NumberInput } from '@freesewing/react/components/Input'
 import { defaultConfig } from '../../config/index.mjs'
 import { ApplyIcon } from '@freesewing/react/components/Icon'
-import { capitalize } from '@freesewing/core'
+import { capitalize, mergeOptions } from '@freesewing/core'
+import { KeyVal } from '@freesewing/react/components/KeyVal'
 
 /** A boolean version of {@see MenuListInput} that sets up the necessary configuration */
 export const MenuBoolInput = (props) => {
@@ -67,7 +75,6 @@ const getTitleAndDesc = (config = {}, i18n = {}, isDesignOption = false) => {
       : `${name}.o.${entry}`
   if (!config.choiceTitles && i18n && i18n.en.o[`${name}.${entry}`])
     titleKey = i18n.en.o[`${name}.${entry}`]
-  console.log({ titleKey, titles: config.choiceTitles, isDesignOption })
   const title = config.title
     ? config.title
     : config.titleMethod
@@ -180,7 +187,9 @@ export const MenuListToggle = ({ config, changed, updateHandler, name }) => {
 }
 
 export const MenuMmInput = (props) => {
-  const { units, updateHandler, current, config } = props
+  const { updateHandler, current, config } = props
+  const units = props.state.settings?.units
+  const imperial = units === 'imperial'
   const mmUpdateHandler = useCallback(
     (path, newCurrent) => {
       const calcCurrent =
@@ -200,6 +209,8 @@ export const MenuMmInput = (props) => {
         config: {
           step: defaultStep,
           ...config,
+          min: imperial ? config.min / 25.4 : config.min,
+          max: imperial ? config.max / 25.4 : config.min,
           dflt: measurementAsUnits(config.dflt, units),
         },
         current: current === undefined ? undefined : measurementAsUnits(current, units),
@@ -260,6 +271,8 @@ export const MenuSliderInput = ({
   children,
   changed,
   i18n,
+  state,
+  Design,
 }) => {
   const { max, min } = config
   const handleChange = useSharedHandlers({
@@ -283,6 +296,7 @@ export const MenuSliderInput = ({
               handleChange,
               min,
               max,
+              state,
             }}
           />
         </div>
@@ -296,11 +310,28 @@ export const MenuSliderInput = ({
         <span className="tw-opacity-50">
           <span dangerouslySetInnerHTML={{ __html: valFormatter(min) + suffix }} />
         </span>
-        <span
+        <div
           className={`tw-font-bold ${val === config.dflt ? 'tw-text-secondary' : 'tw-text-accent'}`}
         >
           <span dangerouslySetInnerHTML={{ __html: valFormatter(val) + suffix }} />
-        </span>
+          {typeof config.toAbs === 'function' ? (
+            <span>
+              <span className="tw-px-2">|</span>
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: formatMm(
+                    config.toAbs(
+                      val / 100,
+                      state.settings,
+                      mergeOptions(state.settings, Design.patternConfig.options)
+                    ),
+                    state.settings?.units
+                  ),
+                }}
+              />
+            </span>
+          ) : null}
+        </div>
         <span className="tw-opacity-50">
           <span dangerouslySetInnerHTML={{ __html: valFormatter(max) + suffix }} />
         </span>
@@ -320,30 +351,59 @@ export const MenuSliderInput = ({
 }
 
 export const MenuEditOption = (props) => {
-  const [manualEdit, setManualEdit] = useState(props.current)
   const { config, handleChange } = props
   const type = designOptionType(config)
 
+  const [manualEdit, setManualEdit] = useState(props.current)
+  const [abs, setAbs] = useState(false)
+  const [units, setUnits] = useState(
+    abs
+      ? props.state.settings?.units === 'imperial'
+        ? 'inch'
+        : 'cm'
+      : defaultConfig.menuOptionEditLabels[type]
+  )
+
   const onUpdate = useCallback(
-    (validVal) => {
-      if (validVal !== null && validVal !== false) handleChange(validVal)
+    (validVal, units) => {
+      if (validVal !== null && validVal !== false) {
+        if (type === 'pct' && units === 'cm')
+          return handleChange(config.fromAbs(Number(validVal) * 1000, props.state.settings))
+        if (type === 'pct' && units === 'inch')
+          return handleChange(config.fromAbs(Number(validVal) * 2540, props.state.settings))
+        return handleChange(validVal)
+      }
     },
     [handleChange]
   )
+
+  const toggleInputUnits = () => {
+    if (abs) setUnits(defaultConfig.menuOptionEditLabels[type])
+    else setUnits(props.state.settings?.units === 'imperial' ? 'inch' : 'cm')
+    setAbs(!abs)
+    console.log('in toogg;e')
+  }
 
   if (!['pct', 'count', 'deg', 'mm'].includes(type))
     return <p>This design option type does not have a component to handle manual input.</p>
 
   return (
     <div className="tw-daisy-form-control tw-mb-2 tw-w-full">
-      <label className="tw-daisy-label tw-font-medium tw-text-accent">
-        <em>Enter a custom value ({defaultConfig.menuOptionEditLabels[type]})</em>
-      </label>
-      <label className="tw-daisy-input-group tw-daisy-input-group-sm tw-flex tw-flex-row tw-items-center tw-gap-2 tw--mt-4">
+      <div className="tw-daisy-label tw-font-medium tw-text-accent">
+        <label className="tw-daisy-label-text">
+          <em>Enter a custom value</em> {units}
+        </label>
+        {type === 'pct' && typeof config.fromAbs === 'function' ? (
+          <label className="tw-daisy-label-text">
+            <KeyVal k="units" val={units} onClick={toggleInputUnits} color="secondary" />
+          </label>
+        ) : null}
+      </div>
+      <label className="tw-daisy-input-group tw-daisy-input-group-sm tw-flex tw-flex-row tw-items-end tw-gap-2 tw--mt-4">
         <NumberInput value={manualEdit} update={setManualEdit} />
         <button
           className="tw-daisy-btn tw-daisy-btn-secondary tw-mt-4"
-          onClick={() => onUpdate(manualEdit)}
+          onClick={() => onUpdate(manualEdit, units)}
         >
           <ApplyIcon />
         </button>

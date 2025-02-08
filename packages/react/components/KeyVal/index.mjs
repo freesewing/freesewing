@@ -2,7 +2,14 @@ import React, { useState, useContext } from 'react'
 import { CopyToClipboard as Copy } from 'react-copy-to-clipboard'
 import { LoadingStatusContext } from '@freesewing/react/context/LoadingStatus'
 
-export const KeyVal = ({ k, val, color = 'primary', small = false, href = false }) => {
+export const KeyVal = ({
+  k,
+  val,
+  color = 'primary',
+  small = false,
+  href = false,
+  onClick = false,
+}) => {
   const [copied, setCopied] = useState(false)
   const { setLoadingStatus } = useContext(LoadingStatusContext)
 
@@ -24,21 +31,32 @@ export const KeyVal = ({ k, val, color = 'primary', small = false, href = false 
 
   if (href) return <LinkKeyVal {...{ k, val, color, small, href, colorClasses1, colorClasses2 }} />
 
-  return (
+  const inner = (
+    <>
+      <span
+        className={`${sharedClasses} ${small ? 'tw-rounded-l' : 'tw-rounded-l-lg'} ${colorClasses1} ${small ? 'tw-text-xs' : ''} tw-pr-0.5`}
+      >
+        {k}
+      </span>
+      <span
+        className={`${sharedClasses} ${small ? 'tw-rounded-r' : 'tw-rounded-r-lg'} ${colorClasses2} ${small ? 'tw-text-xs' : ''} tw-pl-0.5`}
+      >
+        {val}
+      </span>
+    </>
+  )
+
+  return onClick === false ? (
     <Copy text={val} onCopy={() => (noCopy ? null : handleCopied(setCopied, setLoadingStatus, k))}>
-      <button className="tw-daisy-btn-ghost tw-p-0">
-        <span
-          className={`${sharedClasses} ${small ? 'tw-rounded-l' : 'tw-rounded-l-lg'} ${colorClasses1} ${small ? 'tw-text-xs' : ''} tw-pr-0.5`}
-        >
-          {k}
-        </span>
-        <span
-          className={`${sharedClasses} ${small ? 'tw-rounded-r' : 'tw-rounded-r-lg'} ${colorClasses2} ${small ? 'tw-text-xs' : ''} tw-pl-0.5`}
-        >
-          {val}
-        </span>
-      </button>
+      <button className="tw-daisy-btn-ghost tw-p-0">{inner}</button>
     </Copy>
+  ) : (
+    <button
+      className="tw-daisy-btn-ghost tw-p-0"
+      onClick={typeof onClick === 'function' ? onClick : null}
+    >
+      {inner}
+    </button>
   )
 }
 

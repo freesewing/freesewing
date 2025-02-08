@@ -10,6 +10,7 @@ import {
   MenuSliderInput,
   MenuDegInput,
   MenuListInput,
+  MenuMmInput,
   MenuPctInput,
 } from './Input.mjs'
 import {
@@ -18,7 +19,7 @@ import {
   MenuCountOptionValue,
   MenuDegOptionValue,
   MenuListOptionValue,
-  MenyMmOptionValue,
+  MenuMmOptionValue,
   MenuPctOptionValue,
 } from './Value.mjs'
 import { MenuItemGroup, MenuItem } from './Container.mjs'
@@ -57,7 +58,7 @@ export const DesignOptionsMenu = ({ Design, isFirst = true, state, i18n, update 
     ),
     deg: (props) => <MenuDegInput {...drillProps} {...props} />,
     list: (props) => <MenuListInput {...drillProps} {...props} isDesignOption />,
-    mm: () => <span>FIXME: Mm options are deprecated. Please report this </span>,
+    mm: (props) => <MenuMmInput {...drillProps} {...props} />,
     pct: (props) => <MenuPctInput {...drillProps} {...props} />,
   }
   const values = {
@@ -107,7 +108,7 @@ export const DesignOption = ({ config, settings, ux, inputs, values, ...rest }) 
   const type = designOptionType(config)
   const Input = inputs[type]
   const Value = values[type]
-  const allowOverride = ['pct', 'count', 'deg'].includes(type)
+  const allowOverride = ['pct', 'count', 'deg', 'mm'].includes(type)
   const allowToggle = (ux > 3 && type === 'bool') || (type == 'list' && config.list.length === 2)
 
   // Hide option?

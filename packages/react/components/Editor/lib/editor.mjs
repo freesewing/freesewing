@@ -20,12 +20,15 @@ import { Spinner } from '@freesewing/react/components/Spinner'
  *
  * @param {function} Design - The Design constructor
  * @param {object} settings - The settings for the pattern
+ * @param {array} plugins - Any (extra) plugins to load into the pattern
  * @return {object} data - The drafted pattern, along with errors and failure data
  */
-export function draft(Design, settings) {
+export function draft(Design, settings, plugins = []) {
+  const pattern = new Design(settings)
+  for (const plugin of plugins) pattern.use(plugin)
   const data = {
     // The pattern
-    pattern: new Design(settings),
+    pattern,
     // Any errors logged by the pattern
     errors: [],
     // If the pattern fails to draft, this will hold the error

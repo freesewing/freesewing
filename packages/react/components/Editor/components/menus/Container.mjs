@@ -106,11 +106,6 @@ export const MenuItem = ({
   return (
     <>
       <FormControl
-        FIXME_REMOVED_label={
-          <span className="tw-text-base tw-font-normal">
-            {config.choiceTitles ? config.choiceTitles[current] : i18n?.en?.o?.[name]?.d}
-          </span>
-        }
         label={false}
         id={config.name}
         labelBR={<div className="tw-flex tw-flex-row tw-items-center tw-gap-2">{buttons}</div>}
