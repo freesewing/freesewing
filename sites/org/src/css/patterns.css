@@ -278,6 +278,44 @@ svg.freesewing.pattern .muted {
   opacity: 0.15;
 }
 
+/* layout rectangles */
+svg.freesewing.pattern .layout-rect {
+  fill: var(--pattern-canvas);
+  fill-opacity: 0.05;
+}
+svg.freesewing.pattern .layout-rect:hover {
+  fill: var(--pattern-lining);
+  fill-opacity: 0.15;
+}
+svg.freesewing.pattern .layout-rect.move:hover {
+  cursor: move;
+}
+svg.freesewing.pattern .layout-rect.rotate:hover {
+  cursor: crosshair;
+}
+svg.freesewing.pattern .svg-layout-button {
+  fill: var(--pattern-note);
+  fill-opacity: 0;
+  stroke: none;
+}
+svg.freesewing.pattern .svg-layout-button:hover {
+  fill: var(--pattern-note);
+  fill-opacity: 1;
+  stroke: none;
+  cursor: pointer;
+}
+svg.freesewing.pattern .svg-layout-button path {
+  stroke-width: calc(var(--pattern-stroke) * 2 * var(--pattern-scale));
+  color: var(--pattern-contrast);
+}
+svg.freesewing.pattern .svg-layout-button:hover path {
+  stroke: #fff;
+}
+svg.freesewing.pattern .svg-layout-button:hover > rect.button {
+  fill: var(--pattern-contrast);
+  stroke: none;
+}
+
 /* Developer view */
 g.develop.point {
   circle.center {

@@ -1,6 +1,10 @@
 import React from 'react'
 import { logoPath } from '@freesewing/config'
 
+// Used in several icons
+const page =
+  'M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z'
+
 /*
  * Used inside the pattern editor
  */
@@ -153,6 +157,16 @@ export const CopyIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks like a page with a smiley on it
+export const CoverPageIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d={page} />
+    <circle cx="9" cy="12" r="1" />
+    <circle cx="14" cy="12" r="1" />
+    <path d="M 9 16 C 11 18 12 18 14 16" />
+  </IconWrapper>
+)
+
 // Looks like a museum building
 export const CuratedMeasurementsSetIcon = (props) => (
   <IconWrapper {...props}>
@@ -265,6 +279,13 @@ export const FixmeIcon = (props) => (
 export const FlagIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+  </IconWrapper>
+)
+
+// Looks lik a flag
+export const FlipIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
   </IconWrapper>
 )
 
@@ -452,6 +473,36 @@ export const OptionsIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks like a page with a margin drawn around
+export const PageMarginIcon = (props) => (
+  <IconWrapper {...props}>
+    <path
+      d="M 4.5 2.5 v 19.2 h 15 v -13.3 h-3 v 10.3 h-9 v-13.2 h 6 v-3 z"
+      strokeWidth={0.1}
+      stroke="none"
+      fill="currentColor"
+      fillOpacity="0.666"
+    />
+    <path d={page} />
+  </IconWrapper>
+)
+
+// Looks like a portrait and landscape page stacked
+export const PageOrientationIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d={page} transform="scale(-1 1) translate(-21 0)" />
+    <path d="M 16.5 7.75 h 5 v 14 h-5" />
+  </IconWrapper>
+)
+
+// Looks like two differently sizes pages stacked
+export const PageSizeIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d={page} />
+    <path d={page} transform="scale(0.666) translate(3, 11)" />
+  </IconWrapper>
+)
+
 // Looks like a grid
 export const PaperlessIcon = (props) => (
   <IconWrapper {...props}>
@@ -466,7 +517,7 @@ export const PaperlessIcon = (props) => (
 // Looks like a page
 export const PatternIcon = (props) => (
   <IconWrapper {...props}>
-    <path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+    <path d={page} />
   </IconWrapper>
 )
 
@@ -536,7 +587,12 @@ export const RocketIcon = (props) => (
 // Looks like two arrows in a circular layout
 export const RotateIcon = (props) => (
   <IconWrapper {...props}>
-    <path d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M 19.5,12 C 19.5,10.768 19.454,9.547 19.362,8.338 19.21576,6.3582806 17.641719,4.7842398 15.662,4.638 14.504476,4.5506731 13.344609,4.5048098 12.184624,4.5004103 M 19.5,12 l 3,-3 m -3,3 -3,-3 m -12,3 c 0,1.232 0.046,2.453 0.138,3.662 0.1462398,1.979719 1.7202806,3.55376 3.7,3.7 1.295324,0.09777 2.593584,0.143587 3.891661,0.13746 M 4.5,12 l 3,3 m -3,-3 -3,3"
+      {...props}
+    />
   </IconWrapper>
 )
 

@@ -1,7 +1,7 @@
 // Dependencies
 import { missingMeasurements, flattenFlags } from '../lib/index.mjs'
 // Hooks
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useBackend } from '@freesewing/react/hooks/useBackend'
 import { useDesignTranslation } from '@freesewing/react/hooks/useDesignTranslation'
 // Components
@@ -21,7 +21,9 @@ import {
   MenuIcon,
   OptionsIcon,
   PaperlessIcon,
+  PrintIcon,
   ResetAllIcon,
+  ResetIcon,
   RightIcon,
   RocketIcon,
   RotateIcon,
@@ -38,6 +40,7 @@ import { ButtonFrame } from '@freesewing/react/components/Input'
 import { DesignOptionsMenu } from './menus/DesignOptionsMenu.mjs'
 import { CoreSettingsMenu } from './menus/CoreSettingsMenu.mjs'
 import { UiPreferencesMenu } from './menus/UiPreferencesMenu.mjs'
+import { LayoutSettingsMenu } from './menus/LayoutMenu.mjs'
 import { FlagsAccordionEntries } from './Flag.mjs'
 import { UndoStep } from './views/UndosView.mjs'
 
@@ -50,6 +53,7 @@ const headerMenuIcons = {
   right: RightIcon,
   settings: SettingsIcon,
   ui: UiIcon,
+  layout: PrintIcon,
 }
 
 export const HeaderMenuIcon = (props) => {
@@ -508,8 +512,106 @@ export const HeaderMenuViewMenu = (props) => {
   )
 }
 
+export const HeaderMenuLayoutView = (props) => (
+  <>
+    <HeaderMenuDropdown
+      {...props}
+      id="layoutOptions"
+      tooltip="These options are specific to this design. You can use them to customize your pattern in a variety of ways."
+      toggle={
+        <>
+          <HeaderMenuIcon name="layout" extraClasses="tw-text-secondary" />
+          <span className="tw-hidden lg:tw-inline">Print Settings</span>
+        </>
+      }
+    >
+      <LayoutSettingsMenu {...props} />
+    </HeaderMenuDropdown>
+    <HeaderMenuLayoutViewIcons {...props} />
+  </>
+)
+
+export const HeaderMenuLayoutViewIcons = (props) => {
+  const { pattern, update, state } = props
+  const [tweaks, setTweaks] = useState(0)
+
+  useEffect(() => {
+    /*
+     * When the layout is reset, the UI won't update to changes
+     * unless we apply them on the first change
+     */
+    if (
+      tweaks === 0 &&
+      typeof props.state.ui?.layout === 'object' &&
+      typeof props.state.settings?.layout !== 'object'
+    )
+      applyLayout()
+    setTweaks(tweaks + 1)
+  }, [props.state.ui.layout])
+
+  const applyLayout = () => {
+    setTweaks(-1)
+    update.settings('layout', state.ui.layout)
+  }
+  const resetLayout = () => {
+    setTweaks(-1)
+    update.ui('layout', true)
+    update.settings('layout', true)
+  }
+
+  const pages = pattern.setStores[0].get('pages', {})
+  const format = state.ui.print?.pages?.size
+    ? state.ui.print.pages.size
+    : state.settings?.units === 'imperial'
+      ? 'letter'
+      : 'a4'
+  const { cols, rows, count } = pages
+  const blank = cols * rows - count
+
+  return (
+    <>
+      <Tooltip tip="Number of pages required for the current layout">
+        <span className="tw-px-1 tw-font-bold tw-text-sm tw-block tw-h-8 tw-py-1 tw-opacity-80">
+          <span className="">
+            {count} pages
+            <span className="tw-pl-1 tw-text-xs tw-font-medium">
+              ({cols}x{rows}, {blank} blank)
+            </span>
+          </span>
+        </span>
+      </Tooltip>
+      <Tooltip tip="Apply this layout to the pattern">
+        <button
+          className="tw-daisy-btn tw-daisy-btn-ghost tw-daisy-btn-sm tw-px-1 disabled:tw-bg-transparent tw-text-secondary"
+          onClick={applyLayout}
+          disabled={tweaks === 0}
+        >
+          Apply Layout
+        </button>
+      </Tooltip>
+      <Tooltip tip="Generate a PDF that you can print">
+        <button
+          className="tw-daisy-btn tw-daisy-btn-ghost tw-daisy-btn-sm tw-px-1 disabled:tw-bg-transparent tw-text-secondary"
+          onClick={() => update.view('export')}
+        >
+          <PrintIcon />
+        </button>
+      </Tooltip>
+      <Tooltip tip="Reset the custom layout">
+        <button
+          className="tw-daisy-btn tw-daisy-btn-ghost tw-daisy-btn-sm tw-px-1 disabled:tw-bg-transparent tw-text-secondary"
+          onClick={resetLayout}
+        >
+          <ResetIcon />
+        </button>
+      </Tooltip>
+    </>
+  )
+}
+
 const headerMenus = {
   draft: HeaderMenuDraftView,
+  layout: HeaderMenuLayoutView,
   //HeaderMenuDraftViewDesignOptions,
   //HeaderMenuDraftViewCoreSettings,
   //HeaderMenuDraftViewUiPreferences,

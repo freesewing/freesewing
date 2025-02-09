@@ -1,19 +1,26 @@
-import React, { useRef } from 'react'
-import { PanZoomPattern } from 'shared/components/workbench/pan-zoom-pattern.mjs'
-import { MovableStack } from './stack.mjs'
+import React, { useRef, useState, useEffect, useCallback } from 'react'
+import { ZoomablePattern } from './ZoomablePattern.mjs'
+import { generateStackTransform, getTransformedBounds } from '@freesewing/core'
+import { getProps } from '@freesewing/react/components/Pattern'
+import { FlipIcon, RotateIcon, ResetIcon } from '@freesewing/react/components/Icon'
+import { drag } from 'd3-drag'
+import { select } from 'd3-selection'
+//import { Buttons } from './transform-buttons.mjs'
 
 export const MovablePattern = ({
   renderProps,
-  showButtons = true,
+  state,
   update,
   fitImmovable = false,
   immovable = [],
-  layoutPath,
+  t,
 }) => {
   const svgRef = useRef(null)
   if (!renderProps) return null
 
-  // keep a fresh copy of the layout because we might manipulate it without saving to the gist
+  /* keep a fresh copy of the layout because we might manipulate it without
+   * update the state
+   */
   let layout =
     renderProps.settings[0].layout === true
       ? {
@@ -52,9 +59,15 @@ export const MovablePattern = ({
     newLayout.topLeft = topLeft
 
     if (history) {
-      update.ui(layoutPath, newLayout)
+      update.ui('layout', newLayout)
     } else {
-      // we don't put it in the gist if it shouldn't contribute to history because we need some of the data calculated here for rendering purposes on the initial layout, but we don't want to actually save a layout until the user manipulates it. This is what allows the layout to respond appropriately to settings changes. Once the user has starting playing with the layout, all bets are off
+      /* we don't put it in the gist if it shouldn't contribute to history
+       * because we need some of the data calculated here for rendering
+       * purposes on the initial layout, but we don't want to actually save a
+       * layout until the user manipulates it. This is what allows the layout
+       * to respond appropriately to settings changes. Once the user has
+       * starting playing with the layout, all bets are off
+       */
       layout = newLayout
     }
   }
@@ -82,20 +95,22 @@ export const MovablePattern = ({
         movable: !immovable.includes(stackName),
         layout: layout.stacks[stackName],
         updateLayout,
-        showButtons,
         settings,
+        state,
       }}
     />
   )
 
   return (
-    <PanZoomPattern
-      {...{
-        renderProps: sortedRenderProps,
-        components: { Stack },
-      }}
-      ref={svgRef}
-    />
+    <div className="" style={{ height: 'calc(100vh - 12rem)' }}>
+      <ZoomablePattern
+        {...{
+          renderProps: sortedRenderProps,
+          components: { Stack },
+        }}
+        ref={svgRef}
+      />
+    </div>
   )
 }
 
@@ -141,13 +156,6 @@ export const MovablePattern = ({
  *    more data and factors in the transforms. We then use our `domToSvg`
  *    function to move the points back into the SVG space.
  */
-//import { useRef, useState, useEffect, useCallback } from 'react'
-//import { generateStackTransform, getTransformedBounds } from '@freesewing/core'
-//import { getProps } from 'pkgs/react-components/src/pattern/utils.mjs'
-//import { angle } from '../utils.mjs'
-//import { drag } from 'd3-drag'
-//import { select } from 'd3-selection'
-//import { Buttons } from './transform-buttons.mjs'
 
 export const MovableStack = ({
   stackName,
@@ -157,8 +165,8 @@ export const MovableStack = ({
   movable = true,
   layout,
   updateLayout,
-  showButtons,
   settings,
+  state,
 }) => {
   const stackExists = !movable || typeof layout?.move?.x !== 'undefined'
 
@@ -198,7 +206,7 @@ export const MovableStack = ({
     return transforms
   }, [liveTransforms, stackRef, stack])
 
-  /** update the layout either locally or in the gist */
+  /** update the layout either locally or in the state */
   const updateStacklayout = useCallback(
     (history = true) => {
       /** don't mess with what we don't lay out */
@@ -327,9 +335,12 @@ export const MovableStack = ({
   }, [stackRef, movable, stackExists, handleDrag])
 
   // // Don't just assume this makes sense
-  if (!stackExists) return null
+  if (!stackExists) {
+    return null
+  }
 
   const { Group, Part } = components
+
   return (
     <Group id={`stack-${stackName}`} {...getProps(stack)} ref={stackRef}>
       <Group id={`stack-inner-${stackName}`} ref={innerRef}>
@@ -348,23 +359,120 @@ export const MovableStack = ({
             id={`${stackName}-layout-rect`}
             onClick={toggleDragRotate}
           />
-          {showButtons ? (
-            <Buttons
-              transform={`translate(${center.x}, ${
-                center.y
-              }) rotate(${-liveTransforms.rotation}) scale(${liveTransforms.flipX ? -1 : 1},${
-                liveTransforms.flipY ? -1 : 1
-              })`}
-              flip={flip}
-              rotate={rotate}
-              setRotate={setRotate}
-              resetPart={resetPart}
-              rotate90={rotate90}
-              partName={stackName}
-            />
-          ) : null}
+          <Buttons
+            transform={`translate(${center.x}, ${
+              center.y
+            }) rotate(${-liveTransforms.rotation}) scale(${liveTransforms.flipX ? -1 : 1},${
+              liveTransforms.flipY ? -1 : 1
+            })`}
+            flip={flip}
+            rotate={rotate}
+            setRotate={setRotate}
+            resetPart={resetPart}
+            rotate90={rotate90}
+            partName={stackName}
+            iconSize={state.ui?.layout?.iconSize}
+          />
         </>
       )}
     </Group>
+  )
+}
+
+function dx(pointA, pointB) {
+  return pointB.x - pointA.x
+}
+function dy(pointA, pointB) {
+  return pointB.y - pointA.y
+}
+function rad2deg(radians) {
+  return radians * 57.29577951308232
+}
+function angle(pointA, pointB) {
+  let rad = Math.atan2(-1 * dy(pointA, pointB), dx(pointA, pointB))
+  while (rad < 0) rad += 2 * Math.PI
+
+  return rad2deg(rad)
+}
+
+const rectSize = 24
+
+const Button = ({ onClickCb, transform, Icon, children, title = '' }) => {
+  const _onClick = (event) => {
+    event.stopPropagation()
+    onClickCb(event)
+  }
+
+  return (
+    <g transform={transform} className="svg-layout-button group">
+      <title>{title}</title>
+      <rect width={rectSize} height={rectSize} className="button" rx="2" ry="2" />
+      <Icon className="group-hover:tw-text-primary-content" />
+      <rect width={rectSize} height={rectSize} onClick={_onClick} className="tw-fill-transparent" />
+    </g>
+  )
+}
+
+export const ShowButtonsToggle = ({ ui, update }) => {
+  const hideButtons = (evt) => {
+    update.ui('hideMovableButtons', !evt.target.checked)
+  }
+  return (
+    <label className="label cursor-pointer">
+      <span className="label-text text-lg mr-2">{t('showMovableButtons')}</span>
+      <input
+        type="checkbox"
+        className="toggle toggle-primary"
+        checked={!ui.hideMovableButtons}
+        onChange={hideButtons}
+      />
+    </label>
+  )
+}
+
+/** buttons for manipulating the part */
+export const Buttons = ({ transform, flip, rotate, resetPart, rotate90, iconSize }) => {
+  return (
+    <g transform={transform}>
+      <g style={{ transform: `scale(${iconSize || 0.5}` }}>
+        {rotate ? (
+          <circle cx="0" cy="0" r="50" className="stroke-2xl muted" />
+        ) : (
+          <path d="M -50, 0 l 100,0 M 0,-50 l 0,100" className="stroke-2xl muted" />
+        )}
+        <Button
+          onClickCb={resetPart}
+          transform={`translate(${rectSize / -2}, ${rectSize / -2})`}
+          Icon={() => <ResetIcon wrapped={0} />}
+          title="Reset part orientation"
+        />
+        <Button
+          onClickCb={() => rotate90(-1)}
+          transform={`translate(${rectSize * -2.7}, ${rectSize / -2})`}
+          Icon={() => <RotateIcon wrapped={0} style={{}} />}
+          title="Rotate part clockwise"
+        />
+        <Button
+          onClickCb={() => flip('y')}
+          transform={`translate(${rectSize * 0.6}, ${rectSize / -2})`}
+          Icon={() => (
+            <FlipIcon style={{ transform: 'rotate(90deg) translate(0, -24px)' }} wrapped={0} />
+          )}
+          title="Flip part top/bottom"
+        />
+        <Button
+          onClickCb={() => flip('x')}
+          transform={`translate(${rectSize * -1.6}, ${rectSize / -2})`}
+          Icon={() => <FlipIcon style={{}} wrapped={0} />}
+          title="Flip part left/right"
+        />
+        <Button
+          onClickCb={() => rotate90()}
+          transform={`translate(${rectSize * 1.7}, ${rectSize / -2})`}
+          Icon={() => <RotateIcon transform="scale(-1,1), translate(-24,0)" wrapped={0} />}
+          title="Rotate part counter-clockwise"
+        />
+      </g>
+    </g>
   )
 }

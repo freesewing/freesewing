@@ -151,9 +151,10 @@ export const ExportView = (props) => {
   )
 }
 
-function exportPattern(props) {
-  props.setLink(false)
-  props.setFormat(props.format)
+export function exportPattern(props) {
+  if (props.setLink) props.setLink(false)
+  if (props.setFormat) props.setFormat(props.format)
+
   handleExport({
     ...props,
     onComplete: (e) => (e.data?.link ? props.setLink(e.data.link) : null),

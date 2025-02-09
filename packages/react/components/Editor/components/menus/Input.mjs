@@ -192,6 +192,7 @@ export const MenuMmInput = (props) => {
   const imperial = units === 'imperial'
   const mmUpdateHandler = useCallback(
     (path, newCurrent) => {
+      console.log('mmUpdateHandler', { path, newCurrent })
       const calcCurrent =
         typeof newCurrent === 'undefined' ? undefined : measurementAsMm(newCurrent, units)
       updateHandler(path, calcCurrent)
@@ -199,7 +200,9 @@ export const MenuMmInput = (props) => {
     [updateHandler, units]
   )
 
-  // add a default step that's appropriate to the unit. can be overwritten by config
+  /*
+   * Set a default step that matches the unit
+   */
   const defaultStep = units === 'imperial' ? 0.125 : 0.1
 
   return (
@@ -209,8 +212,8 @@ export const MenuMmInput = (props) => {
         config: {
           step: defaultStep,
           ...config,
-          min: imperial ? config.min / 25.4 : config.min,
-          max: imperial ? config.max / 25.4 : config.min,
+          min: imperial ? config.min / 25.4 : config.min / 10,
+          max: imperial ? config.max / 25.4 : config.max / 10,
           dflt: measurementAsUnits(config.dflt, units),
         },
         current: current === undefined ? undefined : measurementAsUnits(current, units),
@@ -391,7 +394,7 @@ export const MenuEditOption = (props) => {
     <div className="tw-daisy-form-control tw-mb-2 tw-w-full">
       <div className="tw-daisy-label tw-font-medium tw-text-accent">
         <label className="tw-daisy-label-text">
-          <em>Enter a custom value</em> {units}
+          <em>Enter a custom value</em>
         </label>
         {type === 'pct' && typeof config.fromAbs === 'function' ? (
           <label className="tw-daisy-label-text">

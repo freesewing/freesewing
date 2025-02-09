@@ -10,6 +10,7 @@ import {
   menuCoreSettingsStructure,
 } from './core-settings.mjs'
 import { findOption, getOptionStructure, menuDesignOptionsStructure } from './design-options.mjs'
+import { menuLayoutSettingsStructure } from './layout-settings.mjs'
 import {
   addUndoStep,
   cloneObject,
@@ -68,6 +69,8 @@ export {
   findOption,
   getOptionStructure,
   menuDesignOptionsStructure,
+  // layout-settings.mjs
+  menuLayoutSettingsStructure,
   // editor.mjs
   addUndoStep,
   cloneObject,
