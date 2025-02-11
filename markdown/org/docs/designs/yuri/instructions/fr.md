@@ -4,11 +4,11 @@ title: "Sweat à capuche Yuri : Instructions de couture"
 
 <Note>
 
-Ce patron peut être cousu avec ou sans surjeteuse. To _finish_ seams without a overlocker/serger you can either use your preferred method or one of the methods below:
+Ce patron peut être cousu avec ou sans surjeteuse. Pour _finir_ les coutures sans surjeteuse/recouvreuse, tu peux utiliser ta méthode préférée ou l'une des méthodes ci-dessous :
 
-##### Finishing Method 1
+##### Méthode de finition 1
 
-- Press open the seam allowances.
+- Ouvre les surplus de couture au fer à repasser.
 - Ensuite, sur le bon côté, _pique_ à 3 mm (1/8 de pouce) ou plus près des deux côtés de la couture en attrapant les surplus de couture en dessous.
 - Sur le côté envers couper les marges de couture près du bord.
 
