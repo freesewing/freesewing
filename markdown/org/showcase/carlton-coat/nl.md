@@ -6,6 +6,7 @@ intro: Carlton jas
 designs:
   - carlton
 maker: Vlad
+author: 50461
 ---
 
 Despite of the sleeves, which are not made exactly as the pattern suggested, everything else is similar. We did not make any more changes.

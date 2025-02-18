@@ -44,7 +44,8 @@ export const options = {
   waistbandWidth: { pct: 3.5, min: 2, max: 5, ...pctBasedOn('inseam'), menu: 'style' },
   frontPocketStyle: { dflt: 'welt', list: ['welt', 'waistband'], menu: 'style' },
   separateWaistband: { bool: false, menu: 'style' },
-  knotInFront: { bool: true, menu: 'style' },
+  // knotInFront: { bool: true, menu: 'style' },
+  knotPlacement: { dflt: 'front', list: ['front', 'back', 'traditional'], menu: 'style' },
   // Advanced
   crotchFront: { pct: 30, min: 10, max: 70, menu: 'advanced' },
   crotchBack: { pct: 45, min: 10, max: 70, menu: 'advanced' },

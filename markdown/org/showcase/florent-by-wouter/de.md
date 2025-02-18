@@ -6,6 +6,7 @@ intro: "Ein Test von Florent, um zu sehen, ob das Muster auch bei anderen funkti
 title: "Ein Test von Florent, um zu sehen, ob das Muster auch bei anderen funktioniert, von Wouter.vdub"
 designs:
   - "florent"
+author: 132
 ---
 
 ![Blick auf die Rückseite ](https://posts.freesewing.org/uploads/florent_by_wouter_high_back_20ec93b7c1.jpg "Blick auf die Rückseite ") ![Blick auf die Vorderseite](https://posts.freesewing.org/uploads/florent_by_wouter_high_front_9f28a1eb39.jpg "Blick auf die Vorderseite")

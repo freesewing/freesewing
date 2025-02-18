@@ -6,6 +6,7 @@ intro: "Was für eine attraktive Version des Simon-Shirts! Der Hersteller sagt:"
 title: "Simon als Überhemd von Ferdi"
 designs:
   - "simon"
+author: 1972
 ---
 
 Was für eine attraktive Version des Simon-Shirts! Der Hersteller sagt:

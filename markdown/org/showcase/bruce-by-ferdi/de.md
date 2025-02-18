@@ -6,6 +6,7 @@ intro: "Wir lieben die witzige Stoffauswahl bei diesen Bruce Boxershorts. sagt F
 title: "Bruce von Ferdi"
 designs:
   - "bruce"
+author: 1972
 ---
 
 Wir lieben die witzige Stoffauswahl bei diesen Bruce Boxershorts. sagt Ferdi:

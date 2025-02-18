@@ -1,5 +1,6 @@
 ---
 title: Aan de stofvouw
+jargon: true
 ---
 
 Wanneer je een symmetrisch patroondeel hebt kan het dat de instructies zeggen dat je het _aan de stofvouw_ moet knippen.

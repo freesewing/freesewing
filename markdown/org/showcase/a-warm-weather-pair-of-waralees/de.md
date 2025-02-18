@@ -6,6 +6,7 @@ intro: "Wouter hat diese Waralee Wickelhose herausgeholt, weil es endlich warm u
 title: "Ein Paar Waralees für warmes Wetter"
 designs:
   - "waralee"
+author: 132
 ---
 
 Wouter hat diese Waralee Wickelhose herausgeholt, weil es endlich warm und schön draußen ist!

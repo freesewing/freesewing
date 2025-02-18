@@ -1,5 +1,6 @@
 ---
 title: Sargento
+jargon: true
 ---
 
 ![La parte trasera acabada de una costura sergada](serged-seam.jpg)

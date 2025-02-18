@@ -4,7 +4,7 @@ import useLocalStorageState from 'use-local-storage-state'
 /*
  * Make it possible to always check for account.username and account.control
  */
-const noAccount = { username: false, control: 2 }
+const noAccount = { username: false, control: 3 }
 
 /*
  * The useAccount hook
@@ -55,6 +55,6 @@ export function useAccount() {
     clearAdmin,
     impersonate,
     stopImpersonating,
-    control: account.control || 2,
+    control: account?.control || 2,
   }
 }

@@ -6,6 +6,7 @@ intro: "Wij vinden dat dit Wahid-gilet - de eerste poging van de maker - er haar
 title: "Wahid vest van womp"
 designs:
   - "wahid"
+author: 72337
 ---
 
 Wij vinden dat dit Wahid-gilet - de eerste poging van de maker - er haarscherp uitziet!

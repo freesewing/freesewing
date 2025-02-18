@@ -6,6 +6,7 @@ intro: "Wat een aantrekkelijke versie van het Simon shirt! De maker zegt:"
 title: "Simon als overhemd door Ferdi"
 designs:
   - "simon"
+author: 1972
 ---
 
 Wat een aantrekkelijke versie van het Simon shirt! De maker zegt:

@@ -6,6 +6,7 @@ intro: "Die erste Version von Albert, gemacht für seine Tochter, von Wouter.vdu
 title: "Die erste Version von Albert, gemacht für seine Tochter, von Wouter.vdub"
 designs:
   - "albert"
+author: 132
 ---
 
 ![Blick auf die Rückseite ](https://posts.freesewing.org/uploads/albert_by_wouter_albert_back_846f1b89ac.jpg "Blick auf die Rückseite ") ![Blick auf die Vorderseite](https://posts.freesewing.org/uploads/albert_by_wouter_albert_side_8505eb3b84.jpg "Blick auf die Vorderseite")

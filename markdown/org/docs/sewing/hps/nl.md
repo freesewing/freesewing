@@ -1,5 +1,6 @@
 ---
 title: Hoog Punt Schouder (HPS)
+jargon: true
 ---
 
 Het _hoog punt schouder_ of _HPS_ punt wordt gebruikt als basis voor verschillende verticale metingen.

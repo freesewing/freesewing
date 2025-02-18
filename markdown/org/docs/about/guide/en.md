@@ -22,7 +22,7 @@ Loved by home sewers and fashion entrepreneurs alike, FreeSewing provides the te
 
 FreeSewing is the brain-child of [Joost De Cock](https://github.com/joostdecock), the FreeSewing maintainer.
 Various other people have contributed to FreeSewing over the years (the
-[FreeSewing contributors](/contributors)), and the project is financially
+[FreeSewing contributors](https://github.com/freesewing/freesewing?tab=readme-ov-file#contributors-)), and the project is financially
 supported by [the FreeSewing patrons](/patrons).
 
 <Tip>
@@ -79,7 +79,7 @@ To generate bespoke sewing patterns, we need your measurements.
 Asking for them every time would be rather tedious, so we store them in your account.
 
 Your account data is stored on our backend, subject to [our privacy notice](/docs/about/privacy),
-and with respect for [your rights](docs/about/rights/).
+and with respect for [your rights](/docs/about/rights/).
 
 </Note>
 

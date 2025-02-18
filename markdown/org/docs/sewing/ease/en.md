@@ -1,5 +1,6 @@
 ---
 title: Ease
+jargon: true
 ---
 
 ![Without ease, you would not be able to raise your arm](ease-plus.jpg)

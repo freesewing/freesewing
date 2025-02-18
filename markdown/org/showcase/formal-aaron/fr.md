@@ -6,6 +6,7 @@ intro: "Un Aaron formel, pour les fêtes"
 title: "Un Aaron formel, pour les fêtes"
 designs:
   - "aaron"
+author: 13050
 ---
 
 Bonjour ! TangerineShark ici. J'ai fait ce haut pour un dîner de répétition de mariage auquel je devais assister en septembre (à l'époque où il faisait encore assez chaud pour appliquer la philosophie "sun's out, tum's out"), et crois-le ou non, c'est un Aaron ! Ce n'est peut-être pas vraiment très surprenant, mais il y a quelques modifications qui le rendent un peu plus formel.

@@ -43,7 +43,7 @@ const PatternPage = ({ page }) => {
   }, [id])
 
   return (
-    <PageWrapper {...page} title={`${t('patterns')}: #${id}`}>
+    <PageWrapper {...page} title={`${t('pattern')}: #${id}`}>
       <DynamicAuthWrapper>
         <DynamicPattern id={id} />
       </DynamicAuthWrapper>

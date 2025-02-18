@@ -36,7 +36,7 @@ export const CreateBookmark = ({ type, title, slug }) => {
 
   return (
     <>
-      <h2>{t('account:bookmarkThisPage')}</h2>
+      <h2>{t('account:bookmarkThisThing', { thing: t(`account:${type}`) })}</h2>
       <StringInput
         label={t('account:title')}
         current={name}
@@ -45,7 +45,7 @@ export const CreateBookmark = ({ type, title, slug }) => {
         labelBL={url}
       />
       <button className="btn btn-primary w-full mt-4" onClick={bookmark}>
-        <span>{t('account:bookmarkThisPage')}</span>
+        <span>{t('account:bookmarkThisThing', { thing: t(`account:${type}`) })}</span>
       </button>
     </>
   )

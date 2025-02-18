@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "Een modieuze Hi"
 date: "2023-05-03"
 intro: "Het kleurenschema, de geborduurde ogen en de kleine tandjes zijn enkele van de details op deze mini-Hi."

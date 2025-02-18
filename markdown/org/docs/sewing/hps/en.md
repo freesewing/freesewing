@@ -1,5 +1,6 @@
 ---
 title: High Point Shoulder (HPS)
+jargon: true
 ---
 
 The _high point shoulder_ or _HPS_ point is used as the base for several vertical measurements.

@@ -6,6 +6,7 @@ intro: RockerKitten sewed this muslin of the Simone shirt with a few mods.
 designs:
   - simone
 maker: Natalia
+author: 50818
 ---
 
 RockerKitten sewed this muslin of the Simone shirt with a few mods.

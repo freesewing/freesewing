@@ -6,6 +6,7 @@ intro: "Een FreeSewing gebruiker probeerde Teagan aan te passen en we vinden het
 title: "Een spectaculair gestreepte Teagan"
 designs:
   - "teagan"
+author: 8
 ---
 
 Een FreeSewing gebruiker probeerde Teagan aan te passen en we vinden het resultaat geweldig! Hier is een kleine uitleg over hoe ze haar Teagan heeft ontworpen en de zijnaden heeft gevormd voor een betere pasvorm.

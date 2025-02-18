@@ -1,5 +1,6 @@
 ---
 title: Tela de tejidos
+jargon: true
 ---
 
 ![Un pedazo de jerea gris (Terry Francés), un tejido de tejidos](fabric.jpg)

@@ -8,7 +8,7 @@ title: "Gozer le fantôme : Instructions de couture"
 
 ## Étape 2 : Le corps
 
-- Ourle le corps
+- Fais un ourlet sur le corps
 
 ## Étape 3: Profitez-en!
 

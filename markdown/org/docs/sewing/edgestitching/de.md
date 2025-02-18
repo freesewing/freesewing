@@ -1,5 +1,6 @@
 ---
 title: Randnaht
+jargon: stimmt
 ---
 
 Edgestitching is a specific type of _topstitching_. Sie ist aufgrund ihrer Lage besonders. Hierbei wird je nach Abstand zur Naht unter anderem das knappkantige (ca. 3mm bzw. 1/8 inch), oder auch das füßchenbreite (Nähfußkante als Abstandhalter) Absteppen unterschieden.

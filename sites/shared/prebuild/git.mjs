@@ -1,4 +1,4 @@
-import execa from 'execa'
+import { execa } from 'execa'
 import { exec } from 'node:child_process'
 import { gitToAuthor, authors as authorInfo } from '../../../config/authors.mjs'
 import path from 'path'
@@ -22,10 +22,9 @@ const fileToSlug = (file, site, lang) =>
 export const getGitMetadata = async (file, site) => {
   const slug = fileToSlug(file, site, 'en')
   if (!slug) console.log({ file, slug })
-  const log = await execa.command(
-    `git log --pretty="format:%cs${divider}%aN${divider}%aE" ${file}`,
-    { shell: true }
-  )
+  const log = await execa(`git log --pretty="format:%cs${divider}%aN${divider}%aE" ${file}`, {
+    shell: true,
+  })
 
   const authors = new Set()
   let lastUpdated = false

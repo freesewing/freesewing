@@ -4,7 +4,7 @@ title: "Lucy: Instructions"
 
 <Note>
 
-Lucy peut être cousue à la main ou à la machine, selon tes préférences. Lorsque tu couds à la main, tu peux utiliser un point courant pour coudre les pièces de la poche ensemble et les relier avec un point de fouet. 
+Lucy peut être cousue à la main ou à la machine, selon tes préférences. Lorsque tu couds à la main, tu peux utiliser un point avant pour coudre les pièces de la poche ensemble et finir avec un point de surfil. 
 
 </Note>
 
@@ -22,9 +22,9 @@ Si tu préfères, tu peux faire une couture française sur les bords extérieurs
 
 ## bind the top and thread a tie through the binding
 
-Il existe deux méthodes pour relier le bord supérieur. L'un d'eux laisse les bords latéraux de la reliure supérieure ouverts pour que les liens puissent être enfilés. La seconde utilise le ruban adhésif des attaches pour lier le bord supérieur. Lis attentivement les deux méthodes et décide de celle que tu souhaites utiliser.
+Il existe deux méthodes pour relier le bord supérieur. L'un d'eux laisse les côtés de la couture supérieure ouverts pour que les liens puissent être enfilés. La seconde utilise le ruban des attaches pour fermer le bord supérieur. Lis attentivement les deux méthodes et décide de celle que tu souhaites utiliser.
 
-### Utilisation de la reliure
+### Utilisation de biais
 
 - Coupe un morceau de reliure de la longueur du bord supérieur + le surplus de couture.
 - Replie sous les bords courts de la binguerie et couds en place.

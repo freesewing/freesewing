@@ -7,6 +7,7 @@ designs:
   - "otis"
   - "bob"
 maker: Natalia
+author: 132
 ---
 
 C'est Wouter, le concepteur, qui les a fabriquées :

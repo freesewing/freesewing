@@ -5,7 +5,7 @@ date: 20231017
 intro: "Dieses Hemd von Simone hat schöne Details wie koordinierte Knöpfe und individuelle Etiketten."
 designs:
   - "simone"
-maker: Natalia
+author: 27669
 ---
 
 Die talentierte Gaëlle hat dieses Simone-Shirt geteilt. Verpasse nicht die Detailfotos.

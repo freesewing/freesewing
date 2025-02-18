@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "Made with jean fabric"
 date: "2022-07-29"
 intro: "Hi by Gaëlle"

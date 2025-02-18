@@ -46,13 +46,13 @@ console.log(`
 
   Our development environment for ${chalk.bold('designs')} and ${chalk.bold(
     'plugins'
-  )} lives in ${chalk.green('sites/lab')}
-  We refer to it as ${chalk.bold('the FreeSewing lab')}.
+  )} lives in ${chalk.green('sites/org')}
+  We refer to it as ${chalk.bold('the org development environment')}.
   It can display any design in this repository and will hot-reload any changes you make to a design.
 
-  To start the lab, run this command:
+  To start the org development environment, run this command:
 
-  ${chalk.blue('yarn lab')}
+  ${chalk.blue('yarn org')}
 
   Now open your browser and navigate to ${chalk.green('http://localhost:8000/')}
 
@@ -64,7 +64,7 @@ console.log(`
 
   ${chalk.blue('yarn new design')}
 
-  It will ask you some questions, and set everything up for you, and add your design to the lab.
+  It will ask you some questions, and set everything up for you, and add your design to the local repository.
 
 
   If you later need to add more dependencies to your design, add them in ${chalk.green(

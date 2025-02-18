@@ -1,6 +1,7 @@
 ---
 layout: onecol
 title: Bâtir
+jargon: vrai
 ---
 
 ![La forme de cette poche en denim est bâtie avant que la poche ne soit surpiquée sur le vêtement](basting.jpg)

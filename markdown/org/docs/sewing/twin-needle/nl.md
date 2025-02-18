@@ -1,5 +1,6 @@
 ---
 title: Tweelingnaald
+jargon: true
 ---
 
 ![Een tweelingnaald van Schmetz](twin-needle.jpg)

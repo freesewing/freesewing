@@ -5,7 +5,7 @@ date: 20231017
 intro: "Esta camisa Simone tiene bonitos detalles, como botones coordinados y etiquetas personalizadas."
 designs:
   - "simone"
-maker: Natalia
+author: 27669
 ---
 
 La talentosa Gaëlle compartió esta camiseta de Simone. No te pierdas las fotos de los detalles.

@@ -1,5 +1,5 @@
 ---
-maker: "Joost De Cock"
+author: 1
 caption: "Moar Charlie"
 date: "2021-05-23"
 intro: "Joost hizo otro excelente par de Chinos Charlie en este tejido tostado."

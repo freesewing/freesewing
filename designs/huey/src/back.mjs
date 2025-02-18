@@ -28,7 +28,7 @@ function draftHueyBack({
   // Shape side seam
   points.hips.x = (measurements.hips * (1 + options.hipsEase)) / 4
   points.hem.x = points.hips.x
-  points.hemCp2 = new Point(points.hips.x, points.cbWaist.y)
+  points.hemCp2 = new Point(points.hips.x, Math.min(points.cbWaist.y, points.hem.y))
 
   // Store length of the neck seam
   store.set(
@@ -101,6 +101,8 @@ export const back = {
     ribbing: { bool: true, menu: 'style' },
     ribbingHeight: { pct: 10, min: 5, max: 15, menu: 'style' },
     hipsEase: { pct: 8, min: 4, max: 12, menu: 'fit' },
+    // Override Brian's lengthbonus. See #6596
+    lengthBonus: { pct: 15, min: -4, max: 60, menu: 'style' },
   },
   draft: draftHueyBack,
 }

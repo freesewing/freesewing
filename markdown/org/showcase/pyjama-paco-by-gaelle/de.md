@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "Pyjamahose"
 date: "2022-12-11"
 intro: "Hier ist ein Pyjama Paco von Gaëlle, ohne Taschen und elastische Bündchen."

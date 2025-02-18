@@ -45,7 +45,7 @@ export const strap = {
         msg: `albert:cutStrap`,
         notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
         replace: {
-          width: units(strapWidth + extraSa),
+          width: units(strapWidth * 2 + extraSa),
           length: units(strapLength + strapWidth * 2 + extraSa),
         },
         suggest: {

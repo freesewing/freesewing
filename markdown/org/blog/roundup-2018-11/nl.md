@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Je inlogachtergrond voor december"
 date: "2018-11-30"
 intro: "Maandelijkse roundup - november 2018: Nieuwe vitrines en een (vals) veiligheidsalarm"

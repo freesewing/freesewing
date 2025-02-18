@@ -12,7 +12,7 @@ export function AdminModel(tools) {
    */
   return decorateModel(this, tools, {
     name: 'admin',
-    models: ['user', 'subscriber'],
+    models: ['user', 'subscriber', 'pattern', 'set'],
   })
 }
 
@@ -27,7 +27,7 @@ AdminModel.prototype.searchUsers = async function ({ body, user }) {
   /*
    * Enforce RBAC
    */
-  if (!this.rbac.admin(user)) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.support(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   /*
    * Attempt to read the record from the database
@@ -48,7 +48,7 @@ AdminModel.prototype.loadUser = async function ({ params, user }) {
   /*
    * Enforce RBAC
    */
-  if (!this.rbac.admin(user)) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!this.rbac.support(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   /*
    * Is id set?
@@ -58,7 +58,10 @@ AdminModel.prototype.loadUser = async function ({ params, user }) {
   /*
    * Attempt to load the user from the database
    */
-  await this.User.read({ id: Number(params.id) })
+  await this.User.read(
+    { id: Number(params.id) }
+    //{ patterns: true, sets: true, apikeys: true, bookmarks: true }
+  )
 
   /*
    * If the user cannot be found, return 404
@@ -66,9 +69,15 @@ AdminModel.prototype.loadUser = async function ({ params, user }) {
   if (!this.User.record) return this.setResponse(404)
 
   /*
+   * Also fetch patterns and sets
+   */
+  const patterns = await this.Pattern.userPatterns(this.User.record.id)
+  const sets = await this.Set.userSets(this.User.record.id)
+
+  /*
    * Return 200 and user data
    */
-  return this.setResponse200({ user: this.User.asAccount() })
+  return this.setResponse200({ user: this.User.asAccount(), patterns, sets })
 }
 
 /*

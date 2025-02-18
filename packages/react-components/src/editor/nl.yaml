@@ -1,0 +1,23 @@
+# Popout component
+comment: Opmerking
+note: Notitie
+tip: Tip
+warning: Waarschuwing
+fixme: FIXME
+link: Link
+related: Gerelateerd
+
+# Mesurements view
+measurements: Maten
+measurementsAreOk: We hebben alle benodigde maten om dit patroon te tekenen.
+editMeasurements: Maten Aanpassen
+editMeasurementsDesc: Hier kan je manueel de maten aanpassen.
+requiredMeasurements: Vereiste Maten
+optionalMeasurements: Optionele Maten
+
+# Designs view
+pickADesign: Kies een ontwerp
+
+# View wrapper
+requiredPropsMissing.t: Vereiste props ontbreken
+requiredPropsMissing.d: De FreeSewing patroon editor moet correct geinitialiseerd worden. Momenteel ontbreken een aantal props die noodzakelijk zijn om de editor te starten.

@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Ton arrière-plan de connexion pour le mois de février"
 date: "2019-01-31"
 intro: "Est-ce vraiment la fin du mois de janvier ? Déjà ?"

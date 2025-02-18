@@ -6,6 +6,7 @@ intro: "Ein formeller Aaron, für Parteien"
 title: "Ein formeller Aaron, für Parteien"
 designs:
   - "aaron"
+author: 13050
 ---
 
 Hallo! TangerineShark hier. Ich habe dieses Oberteil für eine Hochzeitsprobe im September genäht (damals war es noch warm genug für die "Sonne ist draußen, der Tum ist draußen"-Philosophie), und ob du es glaubst oder nicht, es ist ein Aaron! Das ist vielleicht nicht wirklich super-überraschend, aber es gibt ein paar Änderungen, die es ein bisschen förmlicher machen.

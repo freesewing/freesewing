@@ -6,6 +6,7 @@ intro: "Nous adorons les choix de tissus amusants de ce boxer Bruce. dit Ferdi :
 title: "Bruce par Ferdi"
 designs:
   - "bruce"
+author: 1972
 ---
 
 Nous adorons les choix de tissus amusants de ce boxer Bruce. dit Ferdi :

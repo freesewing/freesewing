@@ -6,6 +6,7 @@ intro: "Une combinaison intégrale bleue Onyx de Thrunic"
 designs:
   - "onyx"
 maker: joost
+author: 33070
 ---
 
 Il s'agit d'une combinaison intégrale Onyx de Thrunic qui a créé [le design Onyx](/designs/onyx). Ils écrivent :

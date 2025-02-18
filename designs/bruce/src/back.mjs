@@ -94,7 +94,7 @@ function draftBruceBack({
    * Annotations
    */
   // Cut list
-  store.cutlist.addCut({ cut: 2, from: 'fabric', onFold: true })
+  store.cutlist.addCut({ cut: 1, from: 'fabric', onFold: true })
 
   // Title
   points.title = new Point(points.sideRight.x * 0.6, points.gussetTop.y * 0.6)

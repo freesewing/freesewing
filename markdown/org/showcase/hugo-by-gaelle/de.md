@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "Gaëlles Freundin in ihrem neuen Hugo-Kapuzenpulli"
 date: "2023-02-15"
 intro: "Gaëlle hat diesen Hugo gebastelt, der mit fröhlichen kleinen ... na ja, ich weiß nicht, wie man diese verschnörkelten kleinen Monster nennen soll, aber sie sind auf jeden Fall toll. Es ist für eine Freundin und wir würden uns sehr freuen, so etwas Tolles zu bekommen.  Sieh dir das tolle gestreifte Bündchen an."

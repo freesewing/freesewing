@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Tu nuevo fondo de inicio de sesión para el mes de marzo"
 date: "2018-02-28"
 intro: "Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene."

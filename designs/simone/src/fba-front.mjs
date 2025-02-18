@@ -25,6 +25,12 @@ function simoneFbaFront({
    */
 
   /*
+   * Locate bust point
+   */
+  points.bust = new Point(measurements.bustSpan / 2, points.neck.y + measurements.hpsToBust)
+  points.cfBust = new Point(0, points.bust.y)
+
+  /*
    * How much room to we need to create to fit the breasts?
    * Note that:
    *  - measurements.bust is added by the bust plugin
@@ -37,17 +43,12 @@ function simoneFbaFront({
    * If the FBA is negative, that means the high bust measurement is higher than the
    * front bust. That's not uncommon for people who don't have much breast tissue but
    * it generates a negative dart which is confusing and incorrect. So in that case, just
-   * return the original part from simon
+   * return the part from Simon without any adjustments.
    */
   if (FBA < 0) {
     log.info('No FBA required, using unaltered Simon front')
     return part
   }
-
-  /*
-   * Locate bust point
-   */
-  points.bust = new Point(measurements.bustSpan / 2, points.neck.y + measurements.hpsToBust)
 
   /*
    * Figure out how much do we need to open a dart to create the required FBA room

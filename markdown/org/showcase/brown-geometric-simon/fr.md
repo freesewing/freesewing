@@ -6,6 +6,7 @@ intro: "Le sixième Simon de cette couturière, nous adorons ce Simon à motifs 
 title: "Un Simon géométrique brun"
 designs:
   - "simon"
+author: 1972
 ---
 
 Le sixième Simon de cette couturière, nous adorons ce Simon à motifs géométriques dans une nuance de marron sillonnée de fines lignes blanches. Le créateur a déposé ceci dans un numéro GitHub pour le partager avec FreeSewing, et nous ne pourrions pas être plus satisfaits.

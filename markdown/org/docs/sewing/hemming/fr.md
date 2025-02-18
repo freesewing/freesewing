@@ -1,5 +1,6 @@
 ---
 title: Ourlet
+jargon: vrai
 ---
 
 ![L'ourlet au bas d'un T-shirt](coverlock-hem.jpg)

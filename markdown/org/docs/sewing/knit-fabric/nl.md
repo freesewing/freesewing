@@ -1,5 +1,6 @@
 ---
 title: Gebreide stof
+jargon: true
 ---
 
 ![Een stuk grijze (French Terry) jersey, een jersey stof](fabric.jpg)

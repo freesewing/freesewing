@@ -6,6 +6,7 @@ intro: "Cette casquette raffinée de Florent est signée Ferdi, qui a déclaré 
 title: "Casquette Florent par Ferdi"
 designs:
   - "florent"
+author: 1972
 ---
 
 Cette casquette raffinée de Florent est signée Ferdi, qui a déclaré :

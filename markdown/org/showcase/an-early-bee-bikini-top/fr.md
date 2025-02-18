@@ -1,5 +1,5 @@
 ---
-maker: "inconnue"
+author: 8
 caption: "Un haut de bikini Bee de la première heure"
 date: "18-10-2021"
 intro: "Une couturière de FreeSewing a confectionné ce haut de bikini Bee. Elle a utilisé les paramètres par défaut et a indiqué qu'elle s'adaptait très bien, sans problème d'espace ou de couverture, mais elle a mentionné qu'elle n'avait généralement pas besoin de beaucoup de soutien."

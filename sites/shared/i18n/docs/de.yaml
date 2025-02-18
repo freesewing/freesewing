@@ -23,7 +23,12 @@ credits: Credits
 contentsBy: Inhalt von
 translators: Übersetzerinnen und Übersetzer
 title: Titel
-xMadeThis: "<strong>{x}</strong> hat dies erstellt"
-xWroteThis: "<strong>{x}</strong> hat dies geschrieben"
+writtenBy: Written by
+madeBy: Made by
 by: Von
-
+claimThisPost: Claim this post
+iKnowWhoMadeThis: I know who made this
+iKnowWhoWroteThis: I know who wrote this
+iWroteThis: I wrote this
+iMadeThis: I made this
+term: Term

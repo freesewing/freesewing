@@ -11,6 +11,20 @@ import { DownloadIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['account']
 
+export const AuthorInput = ({ author, setAuthor }) => (
+  <input
+    className={`input input-text input-bordered input-lg w-full mb-2 ${
+      author ? 'input-success' : 'input-error'
+    }`}
+    type="text"
+    inputMode="numeric"
+    pattern="[0-9]*"
+    value={author}
+    placeholder="Enter the user ID here"
+    onChange={(evt) => setAuthor(evt.target.value)}
+  />
+)
+
 export const CaptionInput = ({ caption, setCaption }) => (
   <input
     className={`input input-text input-bordered input-lg w-full ${

@@ -7,6 +7,7 @@ title: "Tropical Pacos"
 designs:
   - "paco"
   - "teagan"
+author: 13050
 ---
 
 Les Pacos ont été confectionnés dans un challis de rayonne, avec les options par défaut (et la taille avant abaissée un peu). Ils sont présentés ici avec un T-shirt Teagan en prime.

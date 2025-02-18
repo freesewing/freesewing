@@ -1,5 +1,6 @@
 ---
 title: Épingler
+jargon: vrai
 ---
 
 ![Les épingles de couture font partie des fournitures de base en couture](sewing-pins.jpg)

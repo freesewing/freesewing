@@ -1,5 +1,6 @@
 ---
 title: Fabric grain
+jargon: true
 ---
 
 ![The grainline runs parallel to the selvedge](fabric-grain.jpg)

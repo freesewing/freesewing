@@ -4,7 +4,7 @@ caption: "A lovely Simone shirt with beautiful details"
 date: 20231017
 intro: "This Simone shirt features beautiful details, including coordinated buttons and custom labels."
 designs: ["simone"]
-maker: Natalia
+author: 27669
 ---
 
 The talented Gaëlle shared this Simone shirt. Don't miss the the detail photos.

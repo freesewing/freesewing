@@ -6,6 +6,7 @@ intro: "Felix hat drei davon gemacht, und er schreibt:"
 title: "Ein Bruce-Dreierpack"
 designs:
   - "bruce"
+author: 1972
 ---
 
 Felix hat drei davon gemacht, und er schreibt:

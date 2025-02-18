@@ -1,5 +1,5 @@
 ---
-maker: "inconnue"
+author: 1
 caption: "Sorcha porte un masque Florence en tissu écossais rouge et bleu"
 date: "2020-03-01"
 intro: "Un masque Florence en rouge et bleu"

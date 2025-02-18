@@ -6,6 +6,7 @@ intro: "Ce chapeau Holmes assez merveilleux est le premier d'une longue série p
 title: "Un Holmes modifié"
 designs:
   - "holmes"
+author: 20650
 ---
 
 Ce chapeau Holmes assez merveilleux est le premier d'une longue série pour ce fabricant. Celui-ci est modifié mais c'est Holmes à la base.

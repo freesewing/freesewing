@@ -1,6 +1,7 @@
 ---
 layout: onecol
 title: Coupe
+jargon: vrai
 ---
 
 ![Moi coupant un T-shirt](cutting.jpg)

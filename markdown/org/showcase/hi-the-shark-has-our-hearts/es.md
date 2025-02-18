@@ -6,6 +6,7 @@ intro: "Esto es Hola."
 title: "Hola el tiburón tiene nuestros corazones"
 designs:
   - "hola"
+author: 132
 ---
 
 Esto es Hola.

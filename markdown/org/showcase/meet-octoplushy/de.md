@@ -6,6 +6,7 @@ intro: "In dieser Vitrine ist das allererste fertige Octoplushy zu sehen, die St
 title: "Triff Octoplushy"
 designs:
   - "octoplushy"
+author: 132
 ---
 
 In dieser Vitrine ist das allererste fertige Octoplushy zu sehen, die Standardvariante.

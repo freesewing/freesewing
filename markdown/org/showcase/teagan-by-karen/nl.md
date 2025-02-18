@@ -6,6 +6,7 @@ intro: "Een andere versie van het Teagan T-shirt van Karen. Deze keer gemaakt me
 title: "Geschulpte zoom Teagan T-shirt van Karen"
 designs:
   - "teagan"
+author: 13050
 ---
 
 Een andere versie van [het Teagan T-shirt](/designs/teagan/) van Karen. Deze keer gemaakt met zwarte kanten stof en met de toevoeging van een geschulpte zoom.

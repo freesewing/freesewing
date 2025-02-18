@@ -1,13 +1,13 @@
-totalNumberStored: Total number stored
-totalNumberSeen: Total number seen
+totalNumberStored: Nombre total stocké
+totalNumberSeen: Nombre total vu
 users: Utilisateurs
 patterns: Patrons
 sets: Jeux de mesures
-csets: Curated Sets
-bookmarks: Signets
+csets: Sélection de sets
+bookmarks: Marques pages
 apikeys: Clés API
-jwtCalls: JWT Calls
-keyCalls: API Key Calls
-topUsers: Top Users
-topDesigns: Top Designs
+jwtCalls: Appels JWT
+keyCalls: Appels de clés API
+topUsers: Meilleurs utilisateurs
+topDesigns: Meilleurs Designs
 

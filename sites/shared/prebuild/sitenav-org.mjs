@@ -169,6 +169,7 @@ export const extendSiteNav = async (siteNav, lang) => {
 
   // Add curated measurements sets
   siteNav['curated-sets'] = {
+    _: 1,
     m: 1,
     s: 'curated-sets',
     t: t('sections:curatedSets'),
@@ -197,15 +198,12 @@ export const extendSiteNav = async (siteNav, lang) => {
     h: 1,
     t: t('patrons:freeSewingPatrons'),
     join: {
-      _: 1,
-      s: 'join',
-      h: 1,
-      t: t('patrons:joinPatrons'),
+      s: 'patrons/join',
+      t: t('patrons:joinThePatrons'),
     },
     thanks: {
       _: 1,
       s: 'thanks',
-      h: 1,
       t: t('patrons:thankYouVeryMuch'),
     },
   }
@@ -218,7 +216,7 @@ export const extendSiteNav = async (siteNav, lang) => {
     t: t('patrons:donate'),
     thanks: {
       _: 1,
-      s: 'thanks',
+      s: 'patrons/thanks',
       h: 1,
       t: t('patrons:thankYouVeryMuch'),
     },
@@ -226,6 +224,7 @@ export const extendSiteNav = async (siteNav, lang) => {
 
   // Add support
   siteNav.support = {
+    _: 1,
     m: 1,
     s: 'support',
     t: t('sections:support'),

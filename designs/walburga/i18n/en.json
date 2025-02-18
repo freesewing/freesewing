@@ -38,7 +38,7 @@
     },
     "neckoRatio": {
       "t": "Neck opening shape",
-      "d": "controls the shape of the neck opening"
+      "d": "Controls the shape of the neck opening"
     },
     "neckline": {
       "t": "Neckline",

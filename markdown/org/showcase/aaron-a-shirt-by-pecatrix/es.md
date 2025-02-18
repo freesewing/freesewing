@@ -6,6 +6,7 @@ intro: "Camiseta Aaron A de pecatrix"
 title: "Camiseta Aaron A de pecatrix"
 designs:
   - "aaron"
+author: 27667
 ---
 
 ¡pecatrix hizo a Aaron con algunas modificaciones del patrón! Se unió a nosotros en [Discord](https://discord.freesewing.org/) para charlar sobre los futuros ajustes menores que hará para conseguir una encuadernación completamente lisa y eliminar las "bandas" horizontales del reverso.

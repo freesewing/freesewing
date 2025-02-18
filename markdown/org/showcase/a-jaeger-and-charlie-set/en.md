@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "Jaeger and Charlie in a fun corduroy fabric"
 date: "2023-05-03"
 intro: "This handsome Jaeger and Waralee set are made all with a cotton corduroy, and cupro lining."

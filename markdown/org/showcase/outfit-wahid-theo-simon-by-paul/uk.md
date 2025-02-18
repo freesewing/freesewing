@@ -8,6 +8,7 @@ designs:
   - "Саймон"
   - "вахід"
   - "Тео."
+author: 433
 ---
 
 ![Вбрання від Павла](https://posts.freesewing.org/uploads/outfit_wahid_theo_simon_by_paul_high_back_808c2ace5b.jpg "Вбрання від Павла")

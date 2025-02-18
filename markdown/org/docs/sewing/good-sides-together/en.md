@@ -1,5 +1,6 @@
 ---
 title: Good sides together
+jargon: true
 ---
 
 When I refer to good sides together that can refer to either cutting or sewing:

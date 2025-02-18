@@ -1,5 +1,6 @@
 ---
 title: Suministros básicos de costura
+jargon: true
 ---
 
 > Lo que constituye exactamente la necesidad de coser es objeto de debate. Algunas personas como más herramientas, otras dicen que incluso una máquina de coser es opcional ya que se puede coser a mano.

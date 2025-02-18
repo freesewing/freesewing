@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Tu fondo de conexión para diciembre"
 date: "2018-11-30"
 intro: "Resumen mensual - Noviembre de 2018: Nuevos escaparates y una (falsa) alarma de seguridad"

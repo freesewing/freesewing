@@ -5,6 +5,7 @@ date: "2021-07-24"
 intro: "These Charlies were made in a purple stretch twill, with the rise as high as it would go (30%)."
 title: "Purple Charlies"
 designs: ["charlie"]
+author: 13050
 ---
 
 

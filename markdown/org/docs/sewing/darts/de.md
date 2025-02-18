@@ -1,5 +1,6 @@
 ---
 title: Abnäher
+jargon: stimmt
 ---
 
 ![Brustabnäher auf einer Bluse](dart.jpg)

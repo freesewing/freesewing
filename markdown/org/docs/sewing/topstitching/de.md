@@ -1,5 +1,6 @@
 ---
 title: Topstitching
+jargon: stimmt
 ---
 
 ![Ich habe für meinen Gottessohn Akki in einem kontrastierten, roten Faden auf diesen Jeans viel Stich verwendet](topstitching.jpg)

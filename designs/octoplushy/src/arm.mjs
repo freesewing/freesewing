@@ -28,9 +28,9 @@ function octoplushyArmSection(
   const sections = options.type == 'squid' ? 10 : 8
 
   const sectionWidth = (w * 2) / sections
-  const armWidth = w * options.armWidth * (1 - options.bottomTopArmRatio) * 3.1415
+  const armWidth = w * options.armWidth * (1 - options.bottomTopArmRatio) * Math.PI
   const armAdjustedWidth = armWidth * (1 - options.bottomTopArmRatio)
-  let armLength = ((w * 2) / 3.1415) * options.armLength
+  let armLength = ((w * 2) / Math.PI) * options.armLength
   switch (options.type) {
     case 'octopus':
       armLength *= 2

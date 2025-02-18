@@ -1,5 +1,7 @@
 ---
 title: User ID
+jargon: true
+terms: id, uid
 ---
 
 Every FreeSewing user has a user ID, sometimes referred to as `UID` or just `ID`.

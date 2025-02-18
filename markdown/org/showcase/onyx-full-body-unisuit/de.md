@@ -6,6 +6,7 @@ intro: "Ein blauer Onyx-Ganzkörperanzug von Thrunic"
 designs:
   - "onyx"
 maker: joost
+author: 33070
 ---
 
 Dies ist ein Onyx-Ganzkörperanzug von Thrunic, der [das Onyx-Design](/designs/onyx)entworfen hat. Sie schreiben:

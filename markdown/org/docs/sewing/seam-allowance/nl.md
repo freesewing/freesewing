@@ -1,5 +1,6 @@
 ---
 title: Naadtoeslag
+jargon: true
 ---
 
 ![De binnenkant van de pijp van een jeansbroek. De NT is het smalle stukje donkere stof naast de naad. Het is met een zigzagsteek afgewerkt zodat het niet uitrafelt](zig-zag.jpg)

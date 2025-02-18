@@ -5,7 +5,7 @@ date: 20231017
 intro: "Dit Simone overhemd heeft prachtige details, waaronder gecoördineerde knopen en aangepaste labels."
 designs:
   - "simone"
-maker: Natalia
+author: 27669
 ---
 
 De getalenteerde Gaëlle deelde dit shirt van Simone. Mis de detailfoto's niet.

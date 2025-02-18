@@ -6,6 +6,7 @@ intro: "El sexto Simón para esta costurera, nos encanta este Simón de estampad
 title: "Un Simon geométrico marrón"
 designs:
   - "simon"
+author: 1972
 ---
 
 El sexto Simón para esta costurera, nos encanta este Simón de estampado geométrico en un tono marrón entrecruzado con finas líneas blancas. El creador dejó caer esto en un tema de GitHub para compartirlo con FreeSewing, y no podríamos estar más contentos.

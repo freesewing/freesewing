@@ -6,6 +6,7 @@ intro: "Een mooi voorbeeld van het Simon overhemd door Ferdi, die dit deelde:"
 title: "Ferdi's eerste Simon shirt"
 designs:
   - "simon"
+author: 1972
 ---
 
 Een mooi voorbeeld van het Simon overhemd door Ferdi, die dit deelde:

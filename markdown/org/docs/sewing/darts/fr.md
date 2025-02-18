@@ -1,5 +1,6 @@
 ---
 title: Pinces
+jargon: vrai
 ---
 
 ![Pinces poitrine sur une blouse](dart.jpg)

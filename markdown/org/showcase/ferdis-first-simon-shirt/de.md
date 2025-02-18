@@ -6,6 +6,7 @@ intro: "Ein hübsches Exemplar des Simon-Hemdes von Ferdi, der es mit uns geteil
 title: "Ferdis erstes Simon-Hemd"
 designs:
   - "simon"
+author: 1972
 ---
 
 Ein hübsches Exemplar des Simon-Hemdes von Ferdi, der es mit uns geteilt hat:

@@ -1,7 +1,7 @@
 ---
-title: "trempette à taille arrière"
+title: "Profondeur de la taille arrière"
 ---
 
-Cette option permet de contrôler la quantité de courbes de taille arrière (révélant plus ou moins de peau).
+Cette option permet de contrôler à quel point la taille arrière est courbée (révélant plus ou moins de peau).
 
 

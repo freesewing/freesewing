@@ -3,13 +3,13 @@ blogAbout: Nouvelles et mises à jour de la communauté FreeSewing
 showcase: Galerie
 showcaseAbout: Exemples et inspiration de la communauté FreeSewing utilisant nos modèles.
 docs: Documentation
-docsAbout: Documentation approfondie pour toutes nos conceptions, notre site web, et bien plus encore.
+docsAbout: Documentation approfondie pour tous nos designs, notre site web, et bien plus encore
 account: Ton compte
-accountAbout: Manage your account settings and preferences, and your personal data
+accountAbout: Gérer les paramètres et les préférences de ton compte, ainsi que tes données personnelles
 designs: Designs
 designsAbout: Notre bibliothèque de motifs que tu peux transformer en patrons sur mesure en quelques clics.
 community: Communauté
-communityAbout: More information about the people behind FreeSewing and where to fine like-minded makers
+communityAbout: Plus d'informations sur les personnes à l'origine de FreeSewing et sur les endroits où l'on peut trouver des créateurs partageant les mêmes idées.
 apiAbout: Documentation pour notre bibliothèque d'API de base et notre API REST dorsale.
 designAbout: Tout ce que tu dois savoir pour commencer à concevoir des patrons de couture paramétriques.
 contributeAbout: Tu veux contribuer à FreeSewing ? C'est par ici.
@@ -29,10 +29,11 @@ patterns: Tes modèles
 curate: Curate
 curateSets: Curate Sets
 curatedSets: Ensembles de mesures sélectionnées
+curated-setsAbout: Des ensembles de mesures curatées par FreeSewing que tu peux utiliser pour tester notre plateforme, ou tes créations
 code: Code
 patternsAbout: Liste les modèles que tu as enregistrés dans ton compte FreeSewing.
 setsAbout: Liste les jeux de mesures que tu as enregistrés dans ton compte FreeSewing.
 codeAbout: Tu trouveras ici (liens vers) le code source de Freesewing
 new: Nouveau...
-newAbout: Commence ici si tu cherches à créer quelque chose de nouveau.
+newAbout: Commence ici si tu cherches à créer quelque chose de nouveau
 support: Support

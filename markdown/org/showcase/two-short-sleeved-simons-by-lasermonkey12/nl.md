@@ -6,6 +6,7 @@ intro: lasermonkey12 shortened the sleeves on these two Simon shirts.
 designs:
   - simon
 maker: Natalia
+author: 31287
 ---
 
 lasermonkey12 shortened the sleeves on these two Simon shirts. I've cheated by putting them together in a single showcase post. Love this variation! Great stitch details and fabric choices.

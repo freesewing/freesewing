@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "L'ami de Gaëlle dans son nouveau sweat à capuche Hugo"
 date: "02-15-2023"
 intro: "Gaëlle a réalisé ce Hugo recouvert de joyeux petits ...enfin je ne sais pas trop comment appeler ces petits monstres gribouillés, mais ils sont clairement géniaux. C'est pour une amie, et nous serions ravies de recevoir quelque chose d'aussi fabuleux.  Regarde ces superbes côtes rayées coordonnées."

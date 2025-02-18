@@ -1,6 +1,7 @@
 ---
 layout: onecol
 title: Крій
+jargon: це правда
 ---
 
 ![Я вирізаю футболки](cutting.jpg)

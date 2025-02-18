@@ -1,6 +1,6 @@
 ---
-title: "Longueur du Gusset"
+title: "Longueur du Gousset"
 ---
 
-Cette option contrôle la longueur du gusset.
+Cette option contrôle la longueur du gousset.
 

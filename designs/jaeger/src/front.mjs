@@ -431,7 +431,7 @@ function jaegerFront({
       .line(points.frontPocketTopLeft)
       .line(points.frontPocketBottomLeft)
       .line(points.frontPocketBottomEnd)
-      .attr('class', 'farbic dashed')
+      .attr('class', 'fabric dashed')
 
     paths.chestPiece = new Path()
       .move(points.lapelBreakPoint)

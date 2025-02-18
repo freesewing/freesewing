@@ -6,6 +6,7 @@ intro: "Cette vitrine présente le tout premier Octoplushy achevé, la variante 
 title: "Rencontre Octoplushy"
 designs:
   - "octoplushy"
+author: 132
 ---
 
 Cette vitrine présente le tout premier Octoplushy achevé, la variante standard.

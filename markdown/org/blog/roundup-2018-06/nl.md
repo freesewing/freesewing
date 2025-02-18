@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Je inlogachtergrond voor juli"
 date: "2018-06-30"
 intro: "Maandoverzicht - juni 2018: Duits, Penelope en meer damesmode aan de horizon"

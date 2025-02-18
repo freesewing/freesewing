@@ -21,7 +21,7 @@ const PersonList = ({ list }) =>
       {list.map((id) => (
         <li key={id}>
           {allAuthors[id] ? (
-            <PageLink href={`/users/${allAuthors[id].id}`} txt={allAuthors[id].name} />
+            <PageLink href={`/users/user?id=${allAuthors[id].id}`} txt={allAuthors[id].name} />
           ) : (
             <span className="font-medium">{id}</span>
           )}
@@ -73,14 +73,6 @@ export const MdxMetaData = ({ frontmatter, locale, slug }) => {
   const updates = docUpdates[slug] || {}
   frontmatter.maintainers = ['joostdecock']
   locale = i18n.language
-
-  /*
-   * FIXME
-   *
-   * The link to the translator status pages on this page links to
-   * next.freesewing.org because this content is not available on the current
-   * freesewing.org.
-   */
 
   return (
     <div className="hidden xl:block mb-4">

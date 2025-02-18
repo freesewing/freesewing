@@ -1,5 +1,6 @@
 ---
 title: Hemming
+jargon: true
 ---
 
 ![The hem at the bottom of a T-shirt](coverlock-hem.jpg)

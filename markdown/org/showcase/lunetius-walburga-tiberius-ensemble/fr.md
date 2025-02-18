@@ -8,6 +8,7 @@ designs:
   - "lunetius"
   - "walburga"
   - "tiberius"
+author: 22708
 ---
 
 Ce bel ensemble Lunetius-Walburga-Tiberius a été réalisé par son créateur, le vaillant et multitalentueux Starf !

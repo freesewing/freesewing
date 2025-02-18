@@ -6,6 +6,7 @@ intro: "Тест Florent, щоб побачити, чи працює шабло�
 title: "Тест Florent, щоб побачити, чи працює шаблон для інших, від Wouter.vdub"
 designs:
   - "флорентійський"
+author: 132
 ---
 
 ![Вид ззаду ](https://posts.freesewing.org/uploads/florent_by_wouter_high_back_20ec93b7c1.jpg "Вид ззаду ") ![Вид спереду](https://posts.freesewing.org/uploads/florent_by_wouter_high_front_9f28a1eb39.jpg "Вид спереду")

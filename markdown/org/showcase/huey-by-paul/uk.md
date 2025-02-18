@@ -6,5 +6,6 @@ intro: "FIXME_no_intro"
 title: "Huey by Paul"
 designs:
   - "Х'юї."
+author: 433
 ---
 

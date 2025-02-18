@@ -6,6 +6,7 @@ intro: "La variante \"pulpo\" de Octoplushy"
 title: "La variante \"pulpo\" de Octoplushy"
 designs:
   - "octoplushy"
+author: 132
 ---
 
 Esta es la variante "pulpo" original de Octoplushy, tal y como la hizo su diseñador, Wouter.

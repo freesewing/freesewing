@@ -33,7 +33,7 @@ BookmarksController.prototype.list = async (req, res, tools) => {
   const bookmarks = await Bookmark.userBookmarks(req.user.uid)
 
   if (bookmarks) Bookmark.setResponse(200, 'success', { bookmarks })
-  else Bookmark.setResponse(404, 'notFound')
+  else Bookmark.setResponse(404)
 
   return Bookmark.sendResponse(res)
 }

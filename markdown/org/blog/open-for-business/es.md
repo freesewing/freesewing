@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Abierto 24/7 a partir de ahora"
 date: "2017-08-25"
 intro: "Freesewing.org está abierto al público. Es decir, el negocio de regalar patrones de costura gratuitos"

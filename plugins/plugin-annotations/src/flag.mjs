@@ -41,7 +41,6 @@ function flag(type, store, data) {
 
   if (!data.id && !data.title) {
     store.log.warn(`store.flag.${type} called without an id or title property`)
-    console.log(data)
     return
   }
 

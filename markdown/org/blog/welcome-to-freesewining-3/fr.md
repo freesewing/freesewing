@@ -3,7 +3,7 @@ title: Bienvenue sur le nouveau site FreeSewing.org, propulsé par v3.
 caption: Une image de Johannes Plenio
 date: 20231103
 intro: FreeSewing v3 est sorti depuis un certain temps, mais maintenant nous avons également migré notre site web.
-author: 1
+author: joost
 ---
 
 FreeSewing version 3 -- la nouvelle version majeure de FreeSewing qui a été élaborée pendant plus d'un an -- est sortie à la fin du mois de septembre. Mais les visiteurs occasionnels de FreeSewing.org ne l'ont peut-être même pas remarqué, car le site Web fonctionnait toujours sur v2, et même [l'article de blog d'annonce](/blog/announcing-freesewing-v30) n'était disponible que sur le nouveau site.

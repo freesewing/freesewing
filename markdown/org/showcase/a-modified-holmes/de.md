@@ -6,6 +6,7 @@ intro: "Dieser wunderbare Holmes-Hut ist der erste von vielen für diesen Herste
 title: "Ein modifizierter Holmes"
 designs:
   - "holmes"
+author: 20650
 ---
 
 Dieser wunderbare Holmes-Hut ist der erste von vielen für diesen Hersteller. Dieser ist zwar modifiziert, aber im Kern ist er Holmes.

@@ -1,6 +1,7 @@
 ---
 layout: onecol
 title: Zuschnitt
+jargon: stimmt
 ---
 
 ![Ich, wie ich ein paar T-Shirts ausschneide](cutting.jpg)

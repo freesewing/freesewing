@@ -6,6 +6,7 @@ intro: "La variante \"pieuvre\" de l'Octoplushy"
 title: "La variante \"pieuvre\" de l'Octoplushy"
 designs:
   - "octoplushy"
+author: 132
 ---
 
 Il s'agit de la variante originale "pieuvre" d'Octoplushy telle qu'elle a été réalisée par son concepteur, Wouter.

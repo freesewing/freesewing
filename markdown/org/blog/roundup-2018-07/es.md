@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Tu fondo de conexión para agosto"
 date: "2018-07-31"
 intro: "Resumen mensual - Julio de 2018: Francés y esperando a Sandy"

@@ -1,5 +1,6 @@
 ---
 title: Endroit contre Endroit
+jargon: vrai
 ---
 
 Lorsque je parle 'endroit contre endroit, je veux parler de coupe ou de couture :

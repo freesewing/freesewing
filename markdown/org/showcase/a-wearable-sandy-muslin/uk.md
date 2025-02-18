@@ -6,6 +6,7 @@ intro: Sometimes simple is perfect! RockerKitten made this Sandy skirt as a wear
 designs:
   - піщаний
 maker: Наталя
+author: 50818
 ---
 
 Sometimes simple is perfect! RockerKitten made this Sandy skirt as a wearable muslin. We think this looks wonderfully wearable -- the perfect piece for lots of outfits.

@@ -1,5 +1,6 @@
 ---
 title: Overwijdte
+jargon: true
 ---
 
 ![Zonder overwijdte zou je je arm niet kunnen optillen](ease-plus.jpg)

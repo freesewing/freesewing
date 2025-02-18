@@ -6,6 +6,7 @@ intro: "Une autre belle chemise Simon par Ferdi, qui a partagé :"
 title: "Une autre splendide chemise Simon de Ferdi"
 designs:
   - "simon"
+author: 1972
 ---
 
 Une autre belle chemise Simon par Ferdi, qui a partagé :

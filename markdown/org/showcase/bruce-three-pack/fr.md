@@ -6,6 +6,7 @@ intro: "Félix en a fait trois, et il écrit :"
 title: "Un lot de trois Bruce"
 designs:
   - "bruce"
+author: 1972
 ---
 
 Félix en a fait trois, et il écrit :

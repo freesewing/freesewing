@@ -1,5 +1,5 @@
 ---
-title: Newsletter
+title: Lettre d'information
 ---
 
 <ReadMore />

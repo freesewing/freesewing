@@ -6,6 +6,7 @@ intro: "Un bel exemple de la chemise Simon par Ferdi, qui a partagé :"
 title: "La première chemise Simon de Ferdi"
 designs:
   - "simon"
+author: 1972
 ---
 
 Un bel exemple de la chemise Simon par Ferdi, qui a partagé :

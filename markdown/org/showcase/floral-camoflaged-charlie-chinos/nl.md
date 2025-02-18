@@ -1,6 +1,5 @@
 ---
-maker: "Joost De Cock"
-caption: "Vooruitgang camouflage Charlies"
+author: 1
 date: "2022-04-27"
 intro: "De FreeSewing gemeenschap viel als een blok voor deze Charlie chino's van joost. Ze zijn zo geweldig dat hij er - geen grap - gratis pannenkoeken mee heeft verdiend."
 title: "Gebloemde \"gecamoufleerde\" Charlie chino's"

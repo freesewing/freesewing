@@ -1,5 +1,5 @@
 ---
-title: FreeSewing Designs
+title: Patrons de FreeSewing
 ---
 
 <ReadMore />

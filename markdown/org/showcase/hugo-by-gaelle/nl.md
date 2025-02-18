@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "Gaëlle's vriend in hun nieuwe Hugo hoodie"
 date: "2023-02-15"
 intro: "Gaëlle maakte deze Hugo bedekt met vrolijke kleine ...nou ja, ik weet niet precies hoe ik deze kronkelende monstertjes moet noemen, maar ze zijn duidelijk geweldig. Het is voor een vriendin en we zouden het geweldig vinden om zoiets geweldigs te ontvangen.  Kijk eens naar die geweldige gestreepte ribboord."

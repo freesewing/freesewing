@@ -6,6 +6,7 @@ intro: "Wouter no sólo cosió este bolso Hortensia de Haring, ¡también diseñ
 title: "Hortensia por Wouter"
 designs:
   - "hortensia"
+author: 132
 ---
 
 Wouter no sólo cosió este bolso Hortensia de Haring, ¡también diseñó la tela y confeccionó el patrón! Compartió que hizo el diseño de la tela con su hija y lo hizo imprimir a través de Spoonflower.

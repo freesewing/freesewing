@@ -6,6 +6,7 @@ intro: "De eerste versie van albert, gemaakt voor zijn dochter, door Wouter.vdub
 title: "De eerste versie van albert, gemaakt voor zijn dochter, door Wouter.vdub"
 designs:
   - "albert"
+author: 132
 ---
 
 ![Zicht op de achterkant ](https://posts.freesewing.org/uploads/albert_by_wouter_albert_back_846f1b89ac.jpg "Zicht op de achterkant ") ![Zicht op de voorkant](https://posts.freesewing.org/uploads/albert_by_wouter_albert_side_8505eb3b84.jpg "Zicht op de voorkant")

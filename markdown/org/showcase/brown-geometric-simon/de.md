@@ -6,6 +6,7 @@ intro: "Die sechste Simon für diese Näherin. Wir lieben diese geometrisch gemu
 title: "Ein brauner geometrischer Simon"
 designs:
   - "simon"
+author: 1972
 ---
 
 Die sechste Simon für diese Näherin. Wir lieben diese geometrisch gemusterte Simon in einem Braunton, der mit dünnen weißen Linien durchzogen ist. Der Erfinder hat dies in einem GitHub-Problem mit FreeSewing geteilt, und wir könnten nicht zufriedener sein.

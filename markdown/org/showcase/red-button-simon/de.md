@@ -1,5 +1,5 @@
 ---
-maker: "Joost De Cock"
+author: 1
 caption: "Ein Simon-Hemd von Joost"
 date: "03.04.2017"
 intro: "Ein Simon-Hemd mit roten, kontrastierenden Knöpfen."

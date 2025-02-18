@@ -26,8 +26,8 @@ export const BaseLayoutRight = ({ children = [] }) => (
 /*
  * The main column for prose (text like docs and so on)
  */
-export const BaseLayoutProse = ({ children = [] }) => (
-  <div className="grow w-full m-auto max-w-prose my-8">{children}</div>
+export const BaseLayoutProse = ({ children = [], wide = false }) => (
+  <div className={`grow w-full m-auto max-w-${wide ? 'full' : 'prose'} my-8`}>{children}</div>
 )
 
 /*

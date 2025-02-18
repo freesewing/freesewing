@@ -1,5 +1,6 @@
 ---
 title: Rayon
+jargon: true
 ---
 
 ![Uso rayón para mi ropa interior](rayon.jpg)

@@ -103,6 +103,23 @@
       "setSleeve"
     ]
   },
+  "bibi": {
+    "code": "Jonathan Haas",
+    "description": "A FreeSewing pattern for a knit top body block",
+    "design": "Jonathan Haas",
+    "difficulty": 2,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "blocks",
+      "tops"
+    ],
+    "techniques": [
+      "curvedSeam",
+      "hem",
+      "flatSleeve"
+    ]
+  },
   "bob": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern for a bib",
@@ -160,7 +177,7 @@
     "lab": true,
     "org": true,
     "tags": [
-      "tops",
+      "bottoms",
       "underwear"
     ],
     "techniques": [
@@ -257,7 +274,7 @@
     ],
     "techniques": [
       "weltPocket",
-      "curvedSeams",
+      "curvedSeam",
       "interfacing",
       "fly",
       "zipper",
@@ -279,7 +296,7 @@
       "trousers"
     ],
     "techniques": [
-      "curvedSeams",
+      "curvedSeam",
       "fly",
       "zipper",
       "button",
@@ -468,7 +485,23 @@
       "button"
     ]
   },
-  "legend": {
+  "jane": {
+    "code": "SeaZeeZee",
+    "description": "A FreeSewing pattern for a 1790s shift",
+    "design": "SeaZeeZee",
+    "difficulty": 2,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "tops",
+      "historical",
+      "underwear"
+    ],
+    "techniques": [
+      "hem"
+    ]
+  },
+    "legend": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern to document pattern notation",
     "lab": false,
@@ -553,16 +586,6 @@
     ],
     "techniques": []
   },
-  "naomiwu": {
-    "description": "A FreeSewing pattern for Naomi Wu's signature cargo skirt",
-    "code": "Joost De Cock",
-    "design": ["Naomi Wu", "Joost De Cock"],
-    "difficulty": 3,
-    "lab": false,
-    "org": false,
-    "tags": ["bottoms", "skirts"],
-    "techniques": ["button", "hem", "pocket", "lining"]
-  },
   "noble": {
     "code": "Wouter Van Wageningen",
     "description": "A FreeSewing pattern for a princess seam bodice block",
@@ -616,6 +639,25 @@
       "lining",
       "zipper",
       "ribbing"
+    ]
+  },
+  "opal": {
+    "code": "Thrunic",
+    "description": "A FreeSewing pattern for overalls",
+    "design": "Thrunic",
+    "difficulty": 3,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "overalls",
+      "onePiece"
+    ],
+    "techniques": [
+      "flatFelledSeam",
+      "hem",
+      "curvedSeam",
+      "button",
+      "pocket"
     ]
   },
   "otis": {
@@ -897,7 +939,23 @@
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern for a basic, highly-customizable underwear pattern",
     "design": "Joost De Cock",
-    "difficulty": 1,
+    "difficulty": 2,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "bottoms",
+      "underwear"
+    ],
+    "techniques": [
+      "elastic",
+      "curvedSeam"
+    ]
+  },
+  "umbra": {
+    "code": "Joost De Cock, Jonathan Haas",
+    "description": "A FreeSewing pattern for a basic, highly-customizable underwear pattern",
+    "design": "Joost De Cock, Jonathan Haas",
+    "difficulty": 2,
     "lab": true,
     "org": true,
     "tags": [
@@ -975,6 +1033,22 @@
       "flatSleeve",
       "hem",
       "button"
+    ]
+  },
+  "lily": {
+    "code": "Anna Puk, Joost De Cock",
+    "description": "A FreeSewing pattern for basic leggings",
+    "design": "Anna Puk",
+    "difficulty": 2,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "bottoms"
+    ],
+    "techniques": [
+      "elastic",
+      "curvedSeam",
+      "hem"
     ]
   }
 }

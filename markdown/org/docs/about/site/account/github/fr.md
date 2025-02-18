@@ -8,6 +8,6 @@ Note que ton nom d'utilisateur GitHub et ton email sont des infos publiques. Cel
 
 Par exemple, lorsque tu signales un problème sur ce site Web, nous pouvons te mentionner afin que tu reçoives des notifications lorsqu'il y a une mise à jour. Pour cela, ton nom d'utilisateur suffit.
 
-Lorsque tu soumets un billet vitrine ou que tu apportes des modifications à notre contenu, nous pouvons te créditer ces commits si nous avons à la fois ton nom d'utilisateur et l'adresse e-mail que tu utilises sur GitHub.
+Lorsque tu soumets un post pour la galerie ou que tu apportes des modifications à notre contenu, nous pouvons te créditer ces commits si nous avons à la fois ton nom d'utilisateur et l'adresse e-mail que tu utilises sur GitHub.
 
 <Note compact>Si tout cela te semble confus, tu n'as pas besoin de fournir ces informations. C'est une fonction avancée.</Note>

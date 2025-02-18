@@ -1,6 +1,7 @@
 ---
 layout: en ecol
 title: Basting
+jargon: true
 ---
 
 ![La forma de este bolsillo se funde antes de que el bolsillo esté unido a la ropa](basting.jpg)

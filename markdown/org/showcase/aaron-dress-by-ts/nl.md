@@ -6,6 +6,7 @@ intro: "Hey! FreeSewing gebruiker TangerineShark hier! Ik heb dit Aaron A-shirt 
 title: "Aaron gewijzigd in een jurk"
 designs:
   - "aaron"
+author: 13050
 ---
 
 Hey! FreeSewing gebruiker TangerineShark hier! Ik heb dit Aaron A-shirt aangepast door het te verlengen tot een jurk.

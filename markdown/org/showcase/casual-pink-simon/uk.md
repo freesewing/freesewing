@@ -1,5 +1,5 @@
 ---
-maker: "Юст де Кок"
+author: 1
 caption: "Сорочка Simon від Joost"
 date: "2017-03-28"
 intro: "FIXME_no_intro"

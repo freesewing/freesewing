@@ -2,11 +2,11 @@
 title: Public
 ---
 
-Every measurements set has a **public** attribute that controls whether or not the measurements set is public.
+Chaque jeu de mesures possède un attribut **public** qui détermine si le jeu de mesures est public ou non.
 
 Par défaut, les jeux de mesures sont privés et tu es le seul à pouvoir les utiliser.
 
-But, you can choose to make your measurements set public which allows other users to utilize the measurements in this set to generate or test their own patterns.
+Mais tu peux choisir de rendre ton jeu de mesures public, ce qui permet aux autres utilisateurs de d'utiliser les mesures de ce jeu pour générer ou tester leurs propres modèles .
 
 <Note>
 Si tu rends ton jeu de mesures public, cela s'applique à toutes les données du jeu de mesures.

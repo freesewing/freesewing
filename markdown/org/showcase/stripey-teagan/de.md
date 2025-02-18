@@ -6,6 +6,7 @@ intro: "Eine FreeSewing-Benutzerin hat sich an Teagan versucht und wir sind bege
 title: "Eine spektakulär gestreifte Teagan"
 designs:
   - "teagan"
+author: 8
 ---
 
 Eine FreeSewing-Benutzerin hat sich an Teagan versucht und wir sind begeistert von dem Ergebnis! Hier ist eine kleine Erklärung, wie sie ihre Teagan entworfen und die Seitennähte für eine engere Passform geformt hat.

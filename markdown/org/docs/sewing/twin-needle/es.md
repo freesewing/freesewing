@@ -1,5 +1,6 @@
 ---
 title: Aguja gemela
+jargon: true
 ---
 
 ![Una aguja gemela de Schmetz](twin-needle.jpg)

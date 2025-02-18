@@ -6,9 +6,10 @@ intro: "Un test de Florent pour voir si le patron fonctionne pour les autres, pa
 title: "Un test de Florent pour voir si le patron fonctionne pour les autres, par Wouter.vdub"
 designs:
   - "florent"
+author: 132
 ---
 
-![Vue du dos ](https://posts.freesewing.org/uploads/florent_by_wouter_high_back_20ec93b7c1.jpg "Vue du dos ") ![Photo de l'avant](https://posts.freesewing.org/uploads/florent_by_wouter_high_front_9f28a1eb39.jpg "Photo de l'avant")
+![Vue du dos ](https://posts.freesewing.org/uploads/florent_by_wouter_high_back_20ec93b7c1.jpg "Vue du dos ") ![Vue de l'avant](https://posts.freesewing.org/uploads/florent_by_wouter_high_front_9f28a1eb39.jpg "Vue de l'avant")
 
 Wouter écrit :
 

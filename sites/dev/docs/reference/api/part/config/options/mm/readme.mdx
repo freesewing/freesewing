@@ -1,0 +1,61 @@
+---
+title: Millimeter options
+---
+
+:::warning
+
+While FreeSewing supports millimeter options, we recommend
+using [percentage options][1]. While there are [good
+reasons](#when) to use millimeter options, we may reject
+contributions that (ab)use them outside of a valid use case.
+
+:::
+
+## Structure
+
+A millimeter option should be a plain object with these properties:
+
+- `mm` : The default value in millimeters
+- `min` : The minimum that's allowed
+- `max` : The maximum that's allowed
+
+## Example
+
+```js
+options: {
+  elasticWidth: {
+    mm:  35,
+    min:  5,
+    max: 80
+  }
+}
+```
+
+:::note COMMENT (by joost)
+
+#### What's wrong with millimeter options?
+
+Millimeter options do not scale.
+Parametric design is the _raison d'être_ of FreeSewing and that core belief
+that things should seamlessly adapt goes out the window when you use a `mm`
+option because now you have a value that will not change based on the
+input measurements.
+
+When you need a millimeter option, reach for a [snapped
+percentage option][1] instead.
+
+#### When to use millimeter options?
+
+There are some use-cases where a millimeter option makes sense.
+This is not an exhaustive list, so use your own judgement.
+
+###### When the option is a de-facto measurement {#when}
+
+When an option functions as a de-facto measurement, you should use a millimeter
+option. For example, when you are designing a tent pattern, the length of the
+tent makes perfect sense as a millimeter option as FreeSewing does not have a
+_length-of-tent_ measurements, and adding one does not make a lot of sense.
+
+:::
+
+[1]: /reference/api/part/config/options/pct

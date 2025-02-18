@@ -1,5 +1,5 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
-import { Stack as ShowStack, utils } from 'pkgs/react-components/src/index.mjs'
+import { Stack as ShowStack, getId } from 'pkgs/react-components/src/index.mjs'
 import { pointCoords, KeyValTable } from './shared.mjs'
 import { TrashIcon, PrintIcon, SearchIcon } from 'shared/components/icons.mjs'
 import { formatMm } from 'shared/utils.mjs'
@@ -65,7 +65,7 @@ export const stackInfo = ({ stackName, stack, inspector, id, t }) => ({
 })
 
 export const InspectStack = ({ stackName, stack, t, inspector }) => {
-  const id = utils.getId({ stackName, settings: { idPrefix: `stack-` } })
+  const id = getId({ stackName, settings: { idPrefix: `stack-` } })
 
   const reveal = inspector.data.reveal[id] ? true : false
 

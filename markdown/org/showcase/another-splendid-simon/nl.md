@@ -6,6 +6,7 @@ intro: "Nog zo'n geweldig Simon shirt van Ferdi, die dit deelde:"
 title: "Nog een prachtig Simon overhemd van Ferdi"
 designs:
   - "simon"
+author: 1972
 ---
 
 Nog zo'n geweldig Simon shirt van Ferdi, die dit deelde:

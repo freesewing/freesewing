@@ -6,6 +6,7 @@ intro: This flat-front Bruce is a bit wider and with longer legs. They're the mo
 designs:
   - bruce
 maker: Natalia
+author: 28514
 ---
 
 These flat-front Bruces by Halbmoki, are a bit wider and with longer legs than their last version. They said these Bruce boxer briefs are the most comfy ever while still somewhat flattening the anatomy. Looks great!

@@ -6,6 +6,7 @@ intro: ""
 designs:
   - ónice
 maker: Thrunic
+author: 33070
 ---
 
 This is my favorite Onyx so far.

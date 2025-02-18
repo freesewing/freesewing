@@ -6,6 +6,7 @@
 *.svg
 *.sh
 *.md
+*.mdx
 *.prisma
 *.css
 *.mustache
@@ -19,3 +20,4 @@ node_modules
 yarn.lock
 package.json
 *.html
+sites/orgdocs/src

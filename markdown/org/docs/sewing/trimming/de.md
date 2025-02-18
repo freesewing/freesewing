@@ -1,5 +1,6 @@
 ---
 title: Zurückschneiden
+jargon: stimmt
 ---
 
 ![Nahtzugabe, die zurückgeschnitten wird](trimming.jpg)

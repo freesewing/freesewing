@@ -1,5 +1,6 @@
 ---
 title: Double welt pockets
+jargon: true
 ---
 
 ## Video

@@ -1,5 +1,6 @@
 ---
 title: Cobertura
+jargon: true
 ---
 
 ![Una lluvia en una camiseta, hecha con una máquina de cierre](coverlock-hem.jpg)

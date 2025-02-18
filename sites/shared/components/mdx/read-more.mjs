@@ -2,7 +2,7 @@ import get from 'lodash.get'
 import Link from 'next/link'
 import { useContext } from 'react'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
-import { BulletIcon, RightIcon } from 'shared/components/icons.mjs'
+import { RightIcon } from 'shared/components/icons.mjs'
 import { pageHasChildren } from 'shared/utils.mjs'
 import orderBy from 'lodash.orderby'
 
@@ -20,13 +20,16 @@ export const getRoot = {
   },
 }
 
+const onActivePath = (slug, active) => (active ? active.slice(0, slug.length) === slug : false)
+
 /*
  * This is a recursive function, so it needs to be lean
  */
 const RenderTree = ({ tree, recurse, depth = 1, level = 0, active = false }) => {
-  const orderedTree = orderBy(tree, ['o', 't'], ['asc', 'asc']).filter(
-    (item) => typeof item === 'object'
-  )
+  const orderedTree = orderBy(tree, ['o', 't'], ['asc', 'asc'])
+    .filter((item) => typeof item === 'object')
+    .filter((item) => !item.h)
+    .filter((item) => !item._)
 
   return (
     <ul className="w-full list">
@@ -35,7 +38,7 @@ const RenderTree = ({ tree, recurse, depth = 1, level = 0, active = false }) => 
          * Does this have children?
          */
         const hasChildren =
-          recurse && (!depth || level < depth) && pageHasChildren(item)
+          recurse && item.s && (!depth || level < depth) && pageHasChildren(item)
             ? item.s.replaceAll('/', '')
             : false
 
@@ -44,20 +47,31 @@ const RenderTree = ({ tree, recurse, depth = 1, level = 0, active = false }) => 
          * However, despite my best efforts, I can't seem to make it work. So this relies on a bit of CSS.
          * The 'summary-chevron' class is what does the trick.
          */
+        const liClasses =
+          'hover:bg-opacity-20 bg-secondary bg-opacity-0 block w-full p-0 break-all rounded'
         return (
-          <li key={i} className="w-full flex flex-row items-start gap-0.5 lg:gap-1">
+          <li key={i} className="w-full flex flex-row items-stretch">
             {hasChildren ? (
-              <details className={`w-full inline flex flex-row`}>
-                <summary className="hover:bg-opacity-20 bg-secondary bg-opacity-0 block w-full flex flex-row items-center gap-0.5 lg:gap-1 px-1 lg:px-2 py-1">
-                  <RightIcon className={`w-4 h-4 summary-chevron transition-all`} stroke={3} />
-                  <Link href={`/${item.s}`}>{active === item.s ? <b>{item.t}</b> : item.t}</Link>
+              <details
+                className={`w-full flex flex-row items-center`}
+                open={onActivePath(item.s, active)}
+              >
+                <summary className="hover:bg-opacity-20 bg-secondary bg-opacity-0 w-full flex flex-row items-center gap-0.5 lg:gap-1 pl-1 lg:pl-2 py-0">
+                  <Link href={`/${item.s}`} className="grow p-1">
+                    {active === item.s ? <b>{item.t}</b> : item.t}
+                  </Link>
+                  <div className="btn btn-sm btn-secondary btn-ghost h-full px-2">
+                    <RightIcon
+                      className={`details-toggle h-5 h-5 summary-chevron transition-all`}
+                      stroke={3}
+                    />
+                  </div>
                 </summary>
                 <RenderTree tree={item} {...{ recurse, depth, active }} level={level + 1} />
               </details>
             ) : (
               <>
-                <BulletIcon className="w-2 h-2 mt-2 mx-1 ml-2 lg:ml-3 shrink-0" fill stroke={0} />
-                <Link href={`/${item.s}`} className="break-all">
+                <Link href={`/${item.s}`} className={`${liClasses} p-1 pl-3`}>
                   {active === item.s ? <b>{item.t}</b> : item.t}
                 </Link>
               </>
@@ -75,6 +89,7 @@ export const ReadMore = ({
   site = 'org',
   asMenu = false,
   depth = 99,
+  from = false,
 }) => {
   const { siteNav, slug } = useContext(NavigationContext)
   let active = false
@@ -89,13 +104,14 @@ export const ReadMore = ({
   if (root === true) root = ''
 
   if (asMenu && slug.split('/').length > 1) {
-    root = slug.split('/').slice(0, -1).join('/')
+    root = from ? from : slug.split('/').slice(0, -1).join('/')
     active = slug
   }
 
-  const tree = root === false ? getRoot[site](slug, siteNav) : getRoot[site](root, siteNav)
+  const tree =
+    root === false ? getRoot[site](from ? from : slug, siteNav) : getRoot[site](root, siteNav)
 
   if (!tree) return null
 
-  return <RenderTree {...{ tree, recurse, depth, active }} />
+  return <RenderTree {...{ tree, recurse, depth, active, from }} />
 }

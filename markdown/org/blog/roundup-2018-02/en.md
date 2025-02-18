@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Your new login background for the month of March"
 date: "2018-02-28"
 intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."

@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "Gaëlle's friend in their new Hugo hoodie"
 date: "2023-02-15"
 intro: "Gaëlle made this Hugo covered in cheerful little ...well I'm not sure what to call these squiggly little monsters, but they're clearly great. It's for a friend, and we would be delighted to receive something this fabulous.  Check out that awesome coordinated striped ribbing."

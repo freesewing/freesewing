@@ -6,6 +6,7 @@ intro: "Une autre version du T-shirt Teagan de Karen. Cette fois-ci réalisée a
 title: "T-shirt Teagan à ourlet festonné de Karen"
 designs:
   - "teagan"
+author: 13050
 ---
 
 Une autre version de [le T-shirt Teagan](/designs/teagan/) par Karen. Cette fois-ci réalisée avec un tissu en dentelle noire et avec l'ajout d'un ourlet festonné.

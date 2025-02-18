@@ -1,5 +1,6 @@
 ---
 title: Goede kanten op elkaar
+jargon: true
 ---
 
 Als ik het heb over 'goede kanten op elkaar' kan dat zowel naar knippen als naar naaien verwijzen:

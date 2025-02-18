@@ -1,6 +1,6 @@
 ---
-title: "tremper la taille de la taille avant"
+title: "Profondeur de la taille avant"
 ---
 
-Cette option permet de contrôler la quantité de courbes de la taille avant (révélant plus ou moins la peau).
+Cette option permet de contrôler à quel point la taille avant est courbée (révélant plus ou moins de peau).
 

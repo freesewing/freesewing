@@ -6,6 +6,7 @@ intro: "Wouter heeft deze Waralee wikkelbroek uit de kast gehaald omdat het eind
 title: "Een Waralees voor warm weer"
 designs:
   - "waralee"
+author: 132
 ---
 
 Wouter heeft deze Waralee wikkelbroek uit de kast gehaald omdat het eindelijk warm en lekker buiten is!

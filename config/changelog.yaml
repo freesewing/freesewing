@@ -1,7 +1,23 @@
 Unreleased:
+  Added:
+    core:
+      - The `Path.rotate()` method was added to the core API.
+      - The `Path.circleSegment()` method was added to the core API.
+
   Changed:
     brian:
       - Always load plugin-bust due to its changes in how it handle conditionality.
+    cathrin:
+      - Allow negative values in backDrop option. Fixes #6563
+      - Allow negative values for the frontRise options. Fixes #6563
+    charlie:
+      - Fix crash when drawing the jseamStitchLine is not possible. Fixes #6271
+    bibi:
+      - Changed the algorithm to draft the side seam, so the measurements are followed more precisely
+      - Reduced default influence of the seat back measurement and added an option to adjust it.
+      - Added various options for ribbing and knit binding on waistband, armscyes/cuffs and neck hole and included more documentation
+    huey:
+      - The lengthBonus option default was changed from 0% to 15%. Fixes #6596
     onyx:
       - Always load plugin-bust due to its changes in how it handle conditionality.
     plugin-bust:
@@ -10,16 +26,43 @@ Unreleased:
       - The plugin will now always be loaded, but will check for each drafted set whether it should make any changes.
     shelly:
       - Always load plugin-bust due to its changes in how it handle conditionality.
+    simon:
+      - Allow negative values for the buttonFreeLength option. Fixes #6508
     tamiko:
       - Always load plugin-bust due to its changes in how it handle conditionality.
+    teagan:
+      - Increased default lengthBonus from 5% to 15%. Fixes #6820
+    titan:
+      - Adjust cross seam curves after fitting the waist. Fixes #6271
+    uma:
+      - Fix absolute gusset width displayed below slider.
+    wahid:
+      - Add a warning when waist and hip reduction are both zero, so no back dart is required.
 
   Deprecated:
     plugin-bust:
       - The `withCondition` named  export is deprecated and will always return true.
 
   Fixed:
+    charlie:
+      - Fix cut instructions for fly facing, only 1 to be cut. Fixes #6392
+    core:
+      - Fix an issue when splitting path on start or end point. Fixes #6816
+    huey:
+      - Fixed an issue where ribbing height would distort the pocket under certain conditions. Fixes #6238
+      - Adding missing translation for ribbing option
+      - Hide unused ribbing parts when ribbing option is disabled
     hugo:
       - Add missing dimension id attributes
+    noble:
+      - Fix 'cutonfold' text for Noble's back part. Fixes #6447
+      - Improve dart shaping. Fixes #64547
+    simone:
+      - Added missing translation for various options
+    teagan:
+      - Fix side seam when length is cropped. Fixes #6480
+    uma:
+      - Fix back exposure when expand is off. Fixes #6239
 
 3.2.0:
   date: 2024-02-11
@@ -155,8 +198,8 @@ Unreleased:
   date: 2023-09-30
   Changed:
     all:
-      - All FreeSewing pacakges are now ESM only.
-      - All FreeSewing pacakges now use named exports.
+      - All FreeSewing packages are now ESM only.
+      - All FreeSewing packages now use named exports.
       - Dropped support for NodeJS 14. NodeJS 18 (LTS/hydrogen) or more recent is now required.
 
   Removed:

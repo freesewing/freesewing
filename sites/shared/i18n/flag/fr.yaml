@@ -2,18 +2,18 @@ apply: Appliquer
 decrease: Diminution
 disable: Désactiver
 dismiss: Rejeter
-expandIsOff.t: Cette conception permet d'économiser de l'espace (et des arbres) car l'expansion est désactivée
-expandIsOff.d: "Because the **expand** core setting is currently disabled, some parts are not fully drawn or not shown at all. Typically, these are simple rectangles that only take up space. To expand all pattern parts to their full size, enable the expand setting."
-expandIsOn.t: Cette conception peut permettre d'économiser de l'espace (et des arbres)
-expandIsOn.d: "Because the **expand** core setting is currently enabled, all parts are fully drawn. You can display this design in a more compact way by disabling the **expand** setting. Doing so will mean that some parts are not fully drawn or not shown at all. Typically, these are simple rectangles that only take up space."
+expandIsOff.t: Ce design permet d'économiser de l'espace (et des arbres) car l'expansion est désactivée
+expandIsOff.d: "Comme le paramètre **déveloper** du noyau est actuellement désactivé, certaines pièces ne sont pas entièrement dessinées ou ne sont pas représentées du tout. Il s'agit généralement de simples rectangles qui ne font qu'occuper de l'espace, ou de choses qui peuvent être coupées au niveau du pli. \n\nPour agrandir toutes les parties du patron à leur taille réelle, active le paramètre de dévelopement."
+expandIsOn.t: Ce design peut permettre d'économiser de l'espace (et des arbres)
+expandIsOn.d: "Comme le paramètre **déveloper** core est actuellement activé, toutes les parties sont entièrement dessinées. Tu peux afficher ce dessin de façon plus compacte en désactivant le paramètre **déveloper**. \n\nDans ce cas, certaines parties ne seront pas entièrement dessinées ou ne seront pas affichées du tout. Il s'agit généralement de simples rectangles qui ne font qu'occuper de l'espace, ou de choses qui peuvent être coupées sur le pli."
 enable: Activer
 flagMenu.t: Messages du concepteur
-flagMenuOne.d: Le concepteur de ce modèle a signalé un élément de ton brouillon actuel qui mérite ton attention.
-flagMenuMany.d: Le concepteur de ce modèle a signalé certains éléments de ton brouillon actuel qui méritent ton attention.
+flagMenuOne.d: Le concepteur de ce patron a signalé un élément de ton brouillon actuel qui mérite ton attention.
+flagMenuMany.d: Le concepteur de ce patron a signalé certains éléments de ton brouillon actuel qui méritent ton attention.
 hide: Masquer
 increase: Augmentation
 show: Afficher
 saIncluded: (Ceci inclut la marge de couture)
 saExcluded: (Ceci n'inclut pas la marge de couture)
-saUnused: (Cette partie ne nécessite pas de marge de couture).
-partHiddenByExpand: Cette partie n'est pas affichée parce que le paramètre **expand** core est actuellement désactivé. Active-le pour afficher cette partie du modèle.
+saUnused: (Cette partie ne nécessite pas de marge de couture)
+partHiddenByExpand: Cette partie n'est pas affichée parce que le paramètre **déveloper** est actuellement désactivé. Active-le pour afficher cette partie du modèle.

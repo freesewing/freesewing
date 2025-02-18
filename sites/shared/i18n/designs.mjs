@@ -8,6 +8,7 @@ import { i18n as bee } from '@freesewing/bee'
 import { i18n as bella } from '@freesewing/bella'
 import { i18n as benjamin } from '@freesewing/benjamin'
 import { i18n as bent } from '@freesewing/bent'
+import { i18n as bibi } from '@freesewing/bibi'
 import { i18n as bob } from '@freesewing/bob'
 import { i18n as breanna } from '@freesewing/breanna'
 import { i18n as brian } from '@freesewing/brian'
@@ -28,6 +29,7 @@ import { i18n as hortensia } from '@freesewing/hortensia'
 import { i18n as huey } from '@freesewing/huey'
 import { i18n as hugo } from '@freesewing/hugo'
 import { i18n as jaeger } from '@freesewing/jaeger'
+import { i18n as jane } from '@freesewing/jane'
 import { i18n as legend } from '@freesewing/legend'
 import { i18n as lucy } from '@freesewing/lucy'
 import { i18n as lumina } from '@freesewing/lumina'
@@ -38,6 +40,7 @@ import { i18n as naomiwu } from '@freesewing/naomiwu'
 import { i18n as noble } from '@freesewing/noble'
 import { i18n as octoplushy } from '@freesewing/octoplushy'
 import { i18n as onyx } from '@freesewing/onyx'
+import { i18n as opal } from '@freesewing/opal'
 import { i18n as otis } from '@freesewing/otis'
 import { i18n as paco } from '@freesewing/paco'
 import { i18n as penelope } from '@freesewing/penelope'
@@ -57,10 +60,12 @@ import { i18n as titan } from '@freesewing/titan'
 import { i18n as trayvon } from '@freesewing/trayvon'
 import { i18n as tristan } from '@freesewing/tristan'
 import { i18n as uma } from '@freesewing/uma'
+import { i18n as umbra } from '@freesewing/umbra'
 import { i18n as wahid } from '@freesewing/wahid'
 import { i18n as walburga } from '@freesewing/walburga'
 import { i18n as waralee } from '@freesewing/waralee'
 import { i18n as yuri } from '@freesewing/yuri'
+import { i18n as lily } from '@freesewing/lily'
 
 export const designs = {
   aaron,
@@ -69,6 +74,7 @@ export const designs = {
   bella,
   benjamin,
   bent,
+  bibi,
   bob,
   breanna,
   brian,
@@ -89,6 +95,7 @@ export const designs = {
   huey,
   hugo,
   jaeger,
+  jane,
   legend,
   lucy,
   lumina,
@@ -99,6 +106,7 @@ export const designs = {
   noble,
   octoplushy,
   onyx,
+  opal,
   otis,
   paco,
   penelope,
@@ -118,8 +126,10 @@ export const designs = {
   trayvon,
   tristan,
   uma,
+  umbra,
   wahid,
   walburga,
   waralee,
   yuri,
+  lily,
 }

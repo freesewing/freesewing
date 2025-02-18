@@ -5,7 +5,7 @@ date: 20231017
 intro: "Cette chemise Simone présente de magnifiques détails, notamment des boutons coordonnés et des étiquettes personnalisées."
 designs:
   - "simone"
-maker: Natalia
+author: 27669
 ---
 
 La talentueuse Gaëlle a partagé cette chemise Simone. Ne manque pas les photos de détail.

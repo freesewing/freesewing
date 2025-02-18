@@ -1,17 +1,17 @@
 accountBlocked: Ton compte est bloqué
 accountBlockedMsg: C'est très inhabituel mais il semble que ton compte soit bloqué administrativement. Ton seul recours est de contacter l'assistance.
 alreadyHaveAnAccount: Vous avez déjà un compte?
-back: Dos
+back: Retour
 backToSignIn: Retour à la connexion
-backToSignUp: Back to signup
+backToSignUp: Retour à l'inscription
 checkYourInbox: Va vérifier dans ta boîte de réception si tu as reçu un courriel de
 clickSigninLink: Clique sur le lien de connexion dans cet e-mail pour te connecter à ton compte FreeSewing.
 clickSignupLink: Clique sur ton lien d'inscription personnel dans cet e-mail pour créer ton compte FreeSewing.
 consentLacking: Nous n'avons pas le consentement nécessaire pour traiter tes données
-consentLackingMsg: Getting your consent is part of sign up process. Look for the email you received when you signed up for instructions. You can sign up again with the same email address to receive the email again.
+consentLackingMsg: Obtenir ton consentement fait partie de la procédure d'inscription. Cherche l'e-mail que tu as reçu lorsque tu t'es inscrit pour obtenir des instructions. Tu peux t'inscrire à nouveau avec la même adresse e-mail pour recevoir à nouveau l'e-mail.
 contact: Contacter l'assistance
-contactingGithub: Contacter GitHub
-contactingGoogle: Contacter Google
+contactingGithub: Entrain de contacter GitHub
+contactingGoogle: Entrain de contacter Google
 createAFreeSewingAccount: Crée un compte FreeSewing
 dontHaveAV2Account: Tu n'as pas de compte v2 ?
 dontHaveAnAccount: Vous n'avez pas encore de compte ?
@@ -21,7 +21,7 @@ emailSent: Le courriel a été envoyé
 emailSignupLink: Envoie-moi un lien d'inscription par courriel
 emailSigninLink: Envoie-moi un lien de connexion par courriel
 emailUsernameId: "Ton adresse électronique, ton nom d'utilisateur ou ton numéro d'utilisateur"
-err2: Malheureusement, nous ne pouvons pas récupérer cette erreur, il faut qu'un être humain se penche sur la question.
+err2: Malheureusement, nous ne pouvons pas récupérer de cette erreur, il faut qu'un être humain se penche sur la question.
 err3: N'hésite pas à réessayer ou à contacter l'assistance pour que nous puissions t'aider.
 fewerOptions: Moins d'options
 haveAV2Account: Tu as un compte v2 ?
@@ -48,7 +48,7 @@ processing: Traitement en cours
 regainAccess: Retrouver l'accès
 signIn: Connexion
 signInAsOtherUser: Connecte-toi en tant qu'utilisateur différent
-signInFailed: S'inscrire a échoué
+signInFailed: Se connecter a échoué
 signInFailedMsg: Je ne sais pas exactement pourquoi, mais cela n'a pas fonctionné comme prévu.
 signInHere: Connectez-vous ici
 signInToThing: "Connecte-toi à { thing }"
@@ -66,6 +66,6 @@ tryAgain: Essaie à nouveau
 usePassword: Utilise ton mot de passe
 usernameMissing: Indique ton nom d'utilisateur
 welcome: Bienvenue
-welcomeBackName: "Bienvenue sur { name }"
+welcomeBackName: "Bon retour { name }"
 welcomeMigrateName: Bienvenue à FreeSewing v3 {name}. Note qu'il s'agit encore d'un code alpha.
 

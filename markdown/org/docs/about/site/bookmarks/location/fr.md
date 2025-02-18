@@ -1,8 +1,8 @@
 ---
-title: Lieu de travail
+title: Location
 ---
 
-Every bookmark has a **location** attribute that is mandatory. Il contient l'URL du signet.
+Chaque marque page possède un attribut **location** qui est obligatoire. Il contient l'URL du marque page.
 
-Un signet sans emplacement ou URL est inutile, car il contient l'emplacement vers lequel le signet doit pointer.
+Un marque page sans location ou URL est inutile, car il contient l'emplacement vers lequel le marque page doit pointer.
 

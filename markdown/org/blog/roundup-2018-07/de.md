@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Dein Login-Hintergrund für August"
 date: "2018-07-31"
 intro: "Monatliche Zusammenfassung - Juli 2018: Französisch und Warten auf Sandy"

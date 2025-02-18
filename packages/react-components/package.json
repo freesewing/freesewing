@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/react-components",
-  "version": "3.2.0",
+  "version": "3.3.0-rc.1",
   "description": "React components by/for FreeSewing",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -23,7 +23,10 @@
     ".": {
       "internal": "./src/index.mjs",
       "default": "./dist/index.mjs"
-    }
+    },
+    "./linedrawings": "./src/linedrawings/index.mjs",
+    "./pattern": "./src/pattern/index.mjs",
+    "./xray": "./src/pattern-xray/index.mjs"
   },
   "scripts": {
     "build": "node build.mjs",
@@ -40,10 +43,15 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "react": ">=14"
+    "react": "^18.2.0"
   },
   "dependencies": {
-    "html-react-parser": "^5.0.7"
+    "axios": "1.7.2",
+    "html-react-parser": "^5.0.7",
+    "nuqs": "^1.17.6",
+    "react-markdown": "^9.0.1",
+    "use-local-storage-state": "19.1.0",
+    "use-session-storage-state": "^19.0.0"
   },
   "devDependencies": {},
   "files": [
@@ -52,7 +60,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "latest"
+    "tag": "next"
   },
   "engines": {
     "node": ">= 18.17.0 <22"

@@ -6,6 +6,7 @@ intro: "Creemos que este chaleco Wahid, la primera tentativa del fabricante, es 
 title: "Chaleco Wahid de womp"
 designs:
   - "wahid"
+author: 72337
 ---
 
 Creemos que este chaleco Wahid, la primera tentativa del fabricante, es muy elegante.

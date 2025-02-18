@@ -1,6 +1,5 @@
 ---
-maker: "Joost De Cock"
-caption: "Vorab-Tarnung Charlies"
+author: 1
 date: "2022-04-27"
 intro: "Die FreeSewing-Community hat sich Hals über Kopf in diese Charlie-Chino von joost verliebt. Sie sind so toll, dass sie ihm - kein Witz - kostenlose Pfannkuchen eingebracht haben."
 title: "Geblümte \"getarnte\" Charlie Chinos"

@@ -1,5 +1,6 @@
 ---
 title: Im Stoffbruch
+jargon: stimmt
 ---
 
 Wenn du ein symmetrisches Schnittmusterstück hast, sagt dir die Anleitung vielleicht, es _im Stoffbruch_ zu schneiden.

@@ -19,10 +19,10 @@ privacyNotice: Avis de confidentialité de FreeSewing
 processing: Traitement en cours
 accountQuestion: Donnez-vous votre accord pour le traitement des données de votre compte ?
 accountShareAnswer: '<b>Non</ b>, jamais.'
-accountTimingAnswer: '<b>12 mois</b> après la dernière fois que tu t''es connecté à notre backend, ou jusqu''à ce que <b>supprime</b> ton compte ou <b>révoque</b> ce consentement.'
+accountTimingAnswer: '<b>12 mois</b> après la dernière fois que tu t''es connecté à notre backend, ou jusqu''à ce que tu <b>supprimes</b> ton compte ou <b>révoque</b> ce consentement.'
 accountWarning: Révoquer ce consentement entraînera la suppression de toutes vos données. Cela a exactement le même effet que de supprimer votre compte.
-accountWhatAnswerOptional: 'Facultatif : Une photo <b></b>, <b>bio</b>, ou <b>Nom d''utilisateur GitHub</b>'
-accountWhatAnswer: 'Ton adresse électronique <b></b>, ton nom d''utilisateur <b></b>, et ton mot de passe <b></b>, ainsi que toutes les mesures corporelles <b></b> que tu as ajoutées à ton compte.'
+accountWhatAnswerOptional: 'Facultatif : Une<b> photo </b>, <b>bio</b> ou <b>Nom d''utilisateur GitHub</b>'
+accountWhatAnswer: 'To <b>n adresse électronique</b>, ton<b> nom d''utilisateur </b> et ton<b> mot de passe </b>, ainsi que toutes le<b>s mesures corporelles </b> que tu as ajoutées à ton compte.'
 accountWhatQuestion: Qu'est-ce que les données de compte ?
 accountWhyAnswer: 'Pour <b>t''authentifier</b> , <b>te contacter</b> en cas de besoin, et générer <b>des modèles de couture</b> sur mesure.'
 readMore: Pour plus d'informations, veuillez lire notre politique de confidentialité.

@@ -6,6 +6,7 @@ intro: "Geen airco op kantoor? Waralee schiet te hulp! Wouter droeg deze op een 
 title: "Lichtgewicht Waralees voor de zomer"
 designs:
   - "waralee"
+author: 132
 ---
 
 Geen airco op kantoor? Waralee schiet te hulp! Wouter droeg deze op een nogal warme dag.

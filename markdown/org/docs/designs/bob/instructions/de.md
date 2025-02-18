@@ -25,7 +25,7 @@ Achte darauf, dass du dicht an der Kante nähst, damit die Stiche später unter 
 
 ## Schritt 2: Schrägband anbringen
 
-We're going to apply bias tape as a finish around the entire edge of the bib.
+Wir werden den gesamten Rand des Lätzchens mit Schrägband abschließen.
 
 Wahrscheinlich möchtest du am unteren Träger beginnen, denn so wird die Naht des Schrägbandes verdeckt, wenn das Lätzchen getragen wird.
 

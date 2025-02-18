@@ -1,5 +1,6 @@
 ---
 title: Rayonne ou viscose
+jargon: vrai
 ---
 
 ![J'utilise la rayonne pour mes sous-vêtements](rayon.jpg)

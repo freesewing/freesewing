@@ -6,6 +6,7 @@ intro: "Een blauw Onyx overallpak van Thrunic"
 designs:
   - "onyx"
 maker: joost
+author: 33070
 ---
 
 Dit is een full body Onyx unisuit van Thrunic die [het Onyx ontwerp](/designs/onyx)heeft gemaakt. Ze schrijven:

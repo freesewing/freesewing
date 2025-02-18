@@ -6,6 +6,7 @@ intro: "Felix maakte drie boxershorts, en schrijft:"
 title: "Een Bruce trio"
 designs:
   - "bruce"
+author: 1972
 ---
 
 Felix maakte drie boxershorts, en schrijft:

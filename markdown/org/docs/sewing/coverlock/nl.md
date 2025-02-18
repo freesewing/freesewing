@@ -1,5 +1,6 @@
 ---
 title: Coverlock
+jargon: true
 ---
 
 ![Een zoom van een t-shirt, genaaid met een coverlock](coverlock-hem.jpg)

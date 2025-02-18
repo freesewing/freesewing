@@ -2,5 +2,5 @@
 title: Від талії до початку ноги
 ---
 
-Вимір **від талії до початку ноги** знімається від лінії талії до вершечка ноги. Знімайте цю мірку збоку.
+The **waist to upper leg** is measured from your waist down to where your upper leg circumference measurement is. Знімайте цю мірку збоку.
 <MeasieImage />

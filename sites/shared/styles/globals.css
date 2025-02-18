@@ -537,13 +537,10 @@ progress.progress-white::-moz-progress-bar {
 details {
   user-select: none;
 }
-details > summary > svg.details-toggle {
-  transform: rotate(90deg);
-  opacity: 0.4;
+details > summary > div > svg.details-toggle {
 }
-details[open] > summary > svg.details-toggle {
-  transform: rotate(-90deg);
-  opacity: 0.8;
+details[open] > summary > div > svg.details-toggle {
+  transform: rotate(90deg);
 }
 details[open] summary ~ * {
   animation: ease-opacity-t-b 0.5s ease;
@@ -665,4 +662,19 @@ details[open] > summary > svg.summary-chevron {
 }
 details > summary:hover > svg.summary-chevron {
   stroke-width: 5;
+}
+
+svg.svg-world path {
+  fill: currentColor;
+  fill: theme('colors.primary');
+  fill-opacity: 0.2;
+  stroke: theme('colors.primary');
+  stroke-opacity: 0.666;
+}
+
+svg.svg-world circle.user,
+svg.svg-world path.connection {
+  fill: none;
+  stroke: theme('colors.accent');
+  stroke-opacity: 0.666;
 }

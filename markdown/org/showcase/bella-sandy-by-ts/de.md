@@ -7,6 +7,7 @@ title: "Ein himmlisches Sanderella"
 designs:
   - "bella"
   - "sandy"
+author: 13050
 ---
 
 Dieses Kleid ist eine Mischung aus dem [Bella Körperblock](https://freesewing.org/designs/bella/) und dem [Sandy Kreisrock](https://freesewing.org/designs/sandy/). Ich habe die Kombination Sanderella genannt.

@@ -1,5 +1,6 @@
 ---
 title: Dubbele paspelzak
+jargon: true
 ---
 
 ## Video

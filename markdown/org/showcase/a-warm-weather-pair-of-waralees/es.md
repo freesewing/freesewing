@@ -6,6 +6,7 @@ intro: "Wouter sacó estos pantalones Waralee, ya que por fin hace calor y hace 
 title: "Un par de Waralees para tiempo cálido"
 designs:
   - "waralee"
+author: 132
 ---
 
 Wouter sacó estos pantalones Waralee, ya que por fin hace calor y hace bueno.

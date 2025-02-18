@@ -113,26 +113,26 @@ De cette façon, il ne faut pas deviner la longueur du biais, et la couture s'aj
 
 ## Méthode alternative
 
-Bien que les instructions ci-dessus décrivent une façon d'attacher une bande de tricot ou un lien de tricot, ce n'est pas la seule méthode qui peut être utilisée. Une autre méthode consiste à couper la quantité exacte de reliure nécessaire, à la coudre dans un anneau, puis à fixer l'anneau à l'ouverture du vêtement.
+Bien que les instructions ci-dessus décrivent une façon d'attacher une bande de jersey ou un biais de jersey, ce n'est pas la seule méthode qui peut être utilisée. Une autre méthode consiste à couper la quantité exacte de biais nécessaire, à la coudre en anneau, puis à fixer l'anneau à l'ouverture du vêtement.
 
-Certaines personnes pensent que cette méthode est plus facile pour les couturiers débutants. On leur indique exactement la quantité de reliure à utiliser, et ils n'ont pas à deviner à quel point ils doivent étirer la reliure pendant qu'ils cousent.
+Certaines personnes pensent que cette méthode est plus facile pour les couturiers débutants. On leur indique exactement la quantité de biais à utiliser, et ils n'ont pas à deviner à quel point ils doivent étirer le biais pendant qu'ils cousent.
 
-1. Mesure l'ouverture du vêtement que la reliure couvrira. Veille à mesurer au niveau de la ligne de couture, pour tenir compte de la marge de couture.
+1. Mesure l'ouverture du vêtement que le biais couvrira. Veille à mesurer au niveau de la ligne de couture, pour tenir compte de la marge de couture.
 
-2. Vérifie les instructions du modèle pour connaître la longueur de reliure à utiliser. Ou bien, utilise une longueur 80-90% plus petite que l'ouverture en fonction de l'extensibilité du tissu de reliure. (Par exemple, 80 % pour un tissu très extensible, 90 % pour un tissu moins extensible).
+2. Vérifie les instructions du modèle pour connaître la longueur de biais à utiliser. Ou bien, utilise une longueur 80-90% plus petite que l'ouverture en fonction de l'extensibilité du tissu de biais. (Par exemple, 80 % pour un tissu très extensible, 90 % pour un tissu moins extensible).
 
-3. Coupe la longueur de reliure nécessaire plus la marge de couture à chaque extrémité.
+3. Coupe la longueur de biais nécessaire plus la marge de couture à chaque extrémité.
 
-4. Couds les extrémités de la reliure endroit contre endroit pour former une boucle fermée ou un anneau. Coupe l'excédent de couture.
+4. Couds les extrémités du biais endroit contre endroit pour former une boucle fermée ou un anneau. Coupe l'excédent de marge de couture.
 
-5. Plie l'anneau au niveau de la couture pour le diviser en deux moitiés égales. Marque ou insère des épingles à chaque pli d'extrémité. Une épingle sera dans la couture, et l'autre marquera le point médian autour de l'anneau.
+5. Plie l'anneau au niveau de la couture pour le diviser en deux moitiés égales. Marque ou insère des épingles à chaque pli d'extrémité. Une épingle dans la couture, et l'autre marquera le point médian autour de l'anneau.
 
-6. Déplie l'anneau et plie-le à nouveau en deux moitiés égales de façon à ce que les deux marques/épingles se rejoignent au milieu. Marque à nouveau ou insère des épingles dans chaque pli d'extrémité. Il y a maintenant 4 broches ou marques qui divisent l'anneau en 4 quarts de longueur égale.
+6. Déplie l'anneau et plie-le à nouveau en deux moitiés égales de façon à ce que les deux marques/épingles se rejoignent au milieu. Marque à nouveau ou insère des épingles dans chaque pli d'extrémité. Il y a maintenant 4 épingles ou marques qui divisent l'anneau en 4 quarts de longueur égale.
 
 7. De même, plie l'ouverture du vêtement et marque ou insère des épingles pour diviser l'ouverture du vêtement en 4 quarts de longueur égale.
 
-8. Fais correspondre les marques ou les épingles de la reliure avec celles de l'ouverture du vêtement. (Essaie de l'aligner de façon à ce que la couture se trouve à l'endroit le plus discret dans l'ouverture du vêtement. Par exemple, si tu fais une ouverture dans l'encolure, aligne la couture de façon à ce qu'elle se trouve à l'arrière de l'ouverture).
+8. Fais correspondre les marques ou les épingles du biais avec celles de l'ouverture du vêtement. (Essaie de l'aligner de façon à ce que la couture se trouve à l'endroit le plus discret dans l'ouverture du vêtement. Par exemple, si tu mets du biais sur une encolure, aligne la couture de façon à ce qu'elle se trouve à l'arrière de l'ouverture.)
 
-9. Épingle l'anneau de reliure à l'ouverture du vêtement à chaque quart de repère/épingle. Cela permet de répartir uniformément la reliure autour de l'ouverture du vêtement .
+9. Épingle l'anneau de biais à l'ouverture du vêtement à chaque quart de repère/épingle. Cela permet de répartir uniformément le biais autour de l'ouverture du vêtement.
 
-10. Couds la reliure à l'ouverture, un quart à la fois. Pendant la couture, étire uniformément chaque quart de segment de reliure pour qu'il corresponde à à la longueur du quart de segment de l'ouverture du vêtement.
+10. Couds le biais à l'ouverture, un quart à la fois. Pendant la couture, étire uniformément chaque quart de segment de biais pour qu'il corresponde à la longueur du quart de segment de l'ouverture du vêtement.

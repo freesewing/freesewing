@@ -43,7 +43,7 @@ const SetPage = ({ page }) => {
   }, [id])
 
   return (
-    <PageWrapper {...page} title={`${t('sets')}: #${id}`}>
+    <PageWrapper {...page} title={`${t('set')}: #${id}`}>
       <DynamicAuthWrapper>
         <DynamicSet id={id} />
       </DynamicAuthWrapper>

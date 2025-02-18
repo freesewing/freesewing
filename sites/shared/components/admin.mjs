@@ -14,6 +14,7 @@ import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import { AccountRole } from 'shared/components/account/role.mjs'
 import { AccountStatus } from 'shared/components/account/status.mjs'
 import { Loading } from 'shared/components/spinner.mjs'
+import { Tabs, Tab } from 'shared/components/tabs.mjs'
 
 const roles = ['user', 'curator', 'bughunter', 'support', 'admin']
 
@@ -137,15 +138,23 @@ export const ManageUser = ({ userId }) => {
   // Hooks
   const backend = useBackend()
   const { setLoadingStatus } = useContext(LoadingStatusContext)
+  const { account } = useAccount()
+  const { role } = account
 
   // State
   const [user, setUser] = useState({})
+  const [patterns, setPatterns] = useState({})
+  const [sets, setSets] = useState({})
 
   // Effect
   useEffect(() => {
     const loadUser = async () => {
       const result = await backend.adminLoadUser(userId)
-      if (result.success) setUser(result.data.user)
+      if (result.success) {
+        setUser(result.data.user)
+        setPatterns(result.data.patterns)
+        setSets(result.data.sets)
+      }
     }
     loadUser()
   }, [userId])
@@ -161,20 +170,25 @@ export const ManageUser = ({ userId }) => {
 
   return user.id ? (
     <div className="my-8">
-      <ShowUser user={user} button={<ImpersonateButton userId={user.id} />} />
-      <div className="flex flex-row flex-wrap gap-2 my-2">
-        {roles.map((role) => (
-          <button
-            key={role}
-            className="btn btn-primary btn-outline btn-sm"
-            onClick={() => updateUser({ role })}
-            disabled={role === user.role}
-          >
-            Assign {role} role
-          </button>
-        ))}
-      </div>
-      <div className="flex flex-row flex-wrap gap-2 my-2">
+      <ShowUser
+        user={user}
+        button={role === 'admin' ? <ImpersonateButton userId={user.id} /> : null}
+      />
+      {role === 'admin' ? (
+        <div className="flex flex-row flex-wrap gap-2 my-2">
+          {roles.map((role) => (
+            <button
+              key={role}
+              className="btn btn-primary btn-outline btn-sm"
+              onClick={() => updateUser({ role })}
+              disabled={role === user.role}
+            >
+              Assign {role} role
+            </button>
+          ))}
+        </div>
+      ) : null}
+      <div className="flex flex-row flex-wrap gap-2 my-2 mb-4">
         {user.mfaEnabled && (
           <button
             className="btn btn-warning btn-outline btn-sm"
@@ -194,7 +208,11 @@ export const ManageUser = ({ userId }) => {
           </button>
         ))}
       </div>
-      {user.id ? <Json js={user} /> : null}
+      <Tabs tabs="Account, Patterns, Sets">
+        <Tab tabId="Account">{user.id ? <Json js={user} /> : null}</Tab>
+        <Tab tabId="Patterns">{patterns ? <Json js={patterns} /> : null}</Tab>
+        <Tab id="Sets">{sets ? <Json js={sets} /> : null}</Tab>
+      </Tabs>
     </div>
   ) : (
     <Loading />

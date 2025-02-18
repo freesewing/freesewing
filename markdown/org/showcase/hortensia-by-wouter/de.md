@@ -6,6 +6,7 @@ intro: "Wouter hat nicht nur diese Hortensia-Handtasche von Haring genäht, er h
 title: "Hortensia von Wouter"
 designs:
   - "hortensia"
+author: 132
 ---
 
 Wouter hat nicht nur diese Hortensia-Handtasche von Haring genäht, er hat auch den Stoff entworfen und das Schnittmuster angefertigt! Er erzählte, dass er das Stoffdesign zusammen mit seiner Tochter entworfen hat und es über Spoonflower drucken ließ.

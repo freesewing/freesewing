@@ -6,6 +6,7 @@ intro: "¡Qué versión más atractiva de la camiseta Simon! Dice el fabricante:
 title: "Simon como sobrecamisa de Ferdi"
 designs:
   - "simon"
+author: 1972
 ---
 
 ¡Qué versión más atractiva de la camiseta Simon! Dice el fabricante:

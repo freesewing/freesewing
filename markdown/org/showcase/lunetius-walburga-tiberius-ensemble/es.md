@@ -8,6 +8,7 @@ designs:
   - "lunetius"
   - "walburga"
   - "tiberio"
+author: 22708
 ---
 
 ¡Este apuesto conjunto Lunecio-Walburga-Tiberio fue confeccionado por su diseñador, el valiente y polifacético Starf!

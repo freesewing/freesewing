@@ -76,7 +76,7 @@ function pacoBack({
   // Adapt waist so we can get these pants over our bum without a zipper
   let delta =
     (measurements.seat * options.legBalance) / 2 - points.styleWaistIn.dist(points.styleWaistOut)
-  let angle = points.styleWaistIn.angle(points.styleWaistOut)
+  let angle = points.styleWaistInNoAngle.angle(points.styleWaistOut)
   points.styleWaistOut = points.styleWaistOut.shift(angle, delta)
   points.seatOut = points.seatOut.shift(angle, delta)
 
@@ -173,7 +173,7 @@ function pacoBack({
       paths.pocket = new Path()
         .move(points.pocketLeft)
         .line(points.pocketRight)
-        .attr('class', 'farbic lashed')
+        .attr('class', 'fabric lashed')
       paths.pocketBag = new Path()
         .move(points.pocketBagWaistLeft)
         .line(points.pocketBagBottomLeft)

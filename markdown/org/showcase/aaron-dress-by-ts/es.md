@@ -6,6 +6,7 @@ intro: "¡Eh! ¡Aquí la usuaria de FreeSewing TangerineShark! He modificado est
 title: "Aaron modificado a un vestido"
 designs:
   - "aaron"
+author: 13050
 ---
 
 ¡Eh! ¡Aquí la usuaria de FreeSewing TangerineShark! He modificado esta camiseta Aaron A alargándola hasta convertirla en un vestido.

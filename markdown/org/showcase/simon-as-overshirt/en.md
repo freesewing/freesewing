@@ -5,6 +5,7 @@ date: "2021-11-07"
 intro: "What an attractive version of the Simon shirt! The maker says:"
 title: "Simon as overshirt by Ferdi"
 designs: ["simon"]
+author: 1972
 ---
 
 What an attractive version of the Simon shirt! The maker says:

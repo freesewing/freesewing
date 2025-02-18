@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Dein neuer Login-Hintergrund für den Monat Januar"
 date: "2017-12-31"
 intro: "Dies ist dein monatlicher Überblick über die Freesewing-Nachrichten der letzten vier Wochen und ein Ausblick auf das, was im nächsten Monat ansteht."

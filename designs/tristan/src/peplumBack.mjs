@@ -5,7 +5,7 @@ export const peplumBack = {
   name: 'tristan.peplumBack',
   after: peplumFront,
   plugins: [ringsectorPlugin],
-  draft: ({ points, paths, options, store, macro, sa, part }) => {
+  draft: ({ points, paths, Path, options, store, macro, sa, part }) => {
     if (false == options.peplum) {
       return part.hide()
     }
@@ -17,6 +17,7 @@ export const peplumBack = {
     CreateShape({
       points: points,
       paths: paths,
+      Path: Path,
       options: options,
       macro: macro,
       store: store,

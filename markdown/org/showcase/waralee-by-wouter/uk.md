@@ -6,6 +6,7 @@ intro: "Це перша версія Wouter, яку він зробив післ
 title: "Waralee від Wouter"
 designs:
   - "Waralee"
+author: 132
 ---
 
 Це перша версія Wouter, яку він зробив після завершення роботи над моделлю Waralee.

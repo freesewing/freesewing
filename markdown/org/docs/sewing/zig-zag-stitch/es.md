@@ -1,5 +1,6 @@
 ---
 title: Zig-zag stitch
+jargon: true
 ---
 
 ![Una unión zig-zag se utiliza para evitar que el SA de la denim se fríe](zig-zag.jpg)

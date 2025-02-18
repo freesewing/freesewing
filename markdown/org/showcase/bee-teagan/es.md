@@ -6,6 +6,7 @@ intro: "Un usuario de FreeSewing jugueteó con la camiseta Teagan para que le qu
 title: "Una abeja Teagan de tela tejida"
 designs:
   - "teagan"
+author: 13050
 ---
 
 

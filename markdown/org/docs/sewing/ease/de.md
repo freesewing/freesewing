@@ -1,5 +1,6 @@
 ---
 title: Zugabe
+jargon: stimmt
 ---
 
 ![Ohne eine Zugabe wärst du nicht in der Lage, deinen Arm zu heben](ease-plus.jpg)

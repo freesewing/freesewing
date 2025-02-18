@@ -5,6 +5,7 @@ date: "2023-01-05"
 intro: "Hey! FreeSewing user TangerineShark here! I modified this Aaron A-shirt by lengthening it into a dress."
 title: "Aaron modified to a dress"
 designs: ["aaron"]
+author: 13050
 ---
 
 Hey! FreeSewing user TangerineShark here! I modified this Aaron A-shirt by lengthening it into a dress.

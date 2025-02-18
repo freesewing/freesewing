@@ -6,6 +6,7 @@ intro: "Diese lustige Waralee Wickelhose wurde von Wouter gemacht. Die Säume si
 title: "Waralee Wickelhose von Wouter"
 designs:
   - "waralee"
+author: 132
 ---
 
 Diese lustige Waralee Wickelhose wurde von Wouter gemacht. Die Säume sind auf Gehrung geschnitten.

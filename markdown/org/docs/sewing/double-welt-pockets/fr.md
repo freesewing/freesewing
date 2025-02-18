@@ -1,5 +1,6 @@
 ---
 title: Poche passepoilée
+jargon: vrai
 ---
 
 ## Vidéo
@@ -114,7 +115,7 @@ Marquez la poche passepoilée de la façon suivante :
 - Alignez l'ouverture centrale de la poche avec une ligne horizontale. Laissez-la dépasser pour vous aider à aligner les rabats plus tard
 - Marquez deux lignes horizontales parallèles à la ligne centrale, à un écart égal à la hauteur d'un rabat (0,5cm dans notre exemple)
 
-The part of the horizontal lines parallel to the center line that fall in between the vertical lines is where we'll sew our welts in place. Cela est illustré par les lignes rouges.
+La partie des lignes horizontales parallèle à la ligne centrale qui se situe entre les lignes verticales est l'endroit où nous coudrons nos rabats en place. Cela est illustré par les lignes rouges.
 
 ### Étape 3 : Pliez et pressez les rabats
 

@@ -6,6 +6,7 @@ intro: "Nous avons été subjugués lorsqu'un utilisateur de FreeSewing a dépos
 title: "Un Simon géométrique bleu"
 designs:
   - "simon"
+author: 1972
 ---
 
 Nous avons été subjugués lorsqu'un utilisateur de FreeSewing a déposé ces fabuleuses photos de son nouveau Simon dans un numéro de GitHub.

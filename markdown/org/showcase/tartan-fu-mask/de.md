@@ -1,5 +1,5 @@
 ---
-maker: "unbekannt"
+author: 1
 caption: "Sorcha trägt eine rot-blaue Tartan-Maske von Florence"
 date: "01.03.2020"
 intro: "Eine Florence Gesichtsmaske in Rot und Blau"

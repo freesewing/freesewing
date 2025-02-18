@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Seguimos adelante"
 date: "2022-08-23"
 intro: "Hemos lanzado la versión 2.22 de FreeSewing. Como siempre, un pequeño salto de versión indica un nuevo diseño, y esta vez se trata del diseño Octoplushy de Wouter."

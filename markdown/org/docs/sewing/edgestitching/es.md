@@ -1,5 +1,6 @@
 ---
 title: Costura de bordes
+jargon: true
 ---
 
 Edgestitching is a specific type of _topstitching_. Es específico por su ubicación. To edgestitch means to topstitch right next to a seam, typically about 3mm or 1/8 inch next to it.

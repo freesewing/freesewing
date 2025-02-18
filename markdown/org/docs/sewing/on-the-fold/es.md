@@ -1,5 +1,6 @@
 ---
 title: En el pliegue
+jargon: true
 ---
 
 Cuando tienes un patrón que es simétrico, las instrucciones pueden decirte que se debe cortar _en el pliegue_.

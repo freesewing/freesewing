@@ -1,5 +1,6 @@
 ---
 title: Säumen
+jargon: stimmt
 ---
 
 ![Der Saum am unteren Ende eines T-Shirts](coverlock-hem.jpg)

@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "Jaeger und Charlie in einem lustigen Kordstoff"
 date: "03.05.2023"
 intro: "Dieses hübsche Set von Jaeger und Waralee besteht aus einem Baumwollcord und einem Cupro-Futter."

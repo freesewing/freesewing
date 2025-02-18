@@ -1,5 +1,5 @@
 ---
-maker: "unbekannt"
+author: 8
 caption: "Ein frühes Bikinioberteil von Bee"
 date: "10.18.2021"
 intro: "Eine FreeSewing-Macherin hat dieses Bienen-Bikinioberteil gemacht. Sie hat die Standardeinstellungen verwendet und berichtet, dass die Passform sehr gut ist und keine Lücken oder Probleme mit der Abdeckung auftreten."

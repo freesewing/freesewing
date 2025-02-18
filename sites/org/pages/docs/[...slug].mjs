@@ -2,6 +2,8 @@ import { nsMerge, localePath } from 'shared/utils.mjs'
 import { siteConfig } from 'site/site.config.mjs'
 // Used in static paths
 import { pages } from 'site/prebuild/docs.en.mjs'
+// Hooks
+import { useState } from 'react'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { loadMdxAsStaticProps } from 'shared/mdx/load.mjs'
@@ -20,17 +22,23 @@ export const ns = nsMerge(pageNs, layoutNs, designNs, 'popout')
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const Page = ({ page, locale, frontmatter, mdx, mdxSlug }) => (
-  <PageWrapper
-    {...page}
-    locale={locale}
-    title={frontmatter.title}
-    intro={frontmatter.intro || frontmatter.lead}
-    layout={(props) => <DocsLayout {...props} {...{ slug: page.path.join('/'), frontmatter }} />}
-  >
-    <MdxWrapper mdx={mdx} site="org" slug={mdxSlug} />
-  </PageWrapper>
-)
+const Page = ({ page, locale, frontmatter, mdx, mdxSlug }) => {
+  const [wide, setWide] = useState(false)
+
+  return (
+    <PageWrapper
+      {...page}
+      locale={locale}
+      title={frontmatter.title}
+      intro={frontmatter.intro || frontmatter.lead}
+      layout={(props) => (
+        <DocsLayout {...props} {...{ slug: page.path.join('/'), frontmatter, wide, setWide }} />
+      )}
+    >
+      <MdxWrapper mdx={mdx} site="org" slug={mdxSlug} wide={wide} />
+    </PageWrapper>
+  )
+}
 
 export default Page
 

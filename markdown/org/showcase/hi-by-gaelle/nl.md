@@ -1,5 +1,5 @@
 ---
-maker: "Gaëlle"
+author: 27669
 caption: "Gemaakt van jeansstof"
 date: "2022-07-29"
 intro: "Hoi door Gaëlle"

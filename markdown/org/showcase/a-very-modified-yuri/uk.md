@@ -6,6 +6,7 @@ intro: RockerKitten modified Yuri to make this cozy and cute robe.
 designs:
   - Юрій
 maker: Наталя
+author: 50818
 ---
 
 RockerKitten modified Yuri to make this cozy and cute robe. They changed the neck line, lengthened the front hood, and made the whole thing floor length. Вони поділилися:

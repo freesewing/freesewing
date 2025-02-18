@@ -1,5 +1,5 @@
 ---
-maker: "onbekend"
+author: 1
 caption: "Afhankelijk van je job is dit misschien NSFW"
 date: "2014-09-15"
 intro: "FIXME_geen_intro"

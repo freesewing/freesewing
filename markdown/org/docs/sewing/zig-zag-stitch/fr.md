@@ -1,5 +1,6 @@
 ---
 title: Point zig-zag
+jargon: vrai
 ---
 
 ![Un point de zig-zag utilisé pour empêcher la marge de couture du denim de s'effilocher](zig-zag.jpg)

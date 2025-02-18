@@ -6,6 +6,7 @@ intro: "Un par de calzoncillos Ursula a todo gas"
 title: "Un par de calzoncillos Ursula a todo gas"
 designs:
   - "ursula"
+author: 13050
 ---
 
 ¡Karen convirtió un retal de tela elástica en este divertido par de Úrsulas! Según los resultados de las pruebas, en la próxima versión estrechará el fuelle y bajará un poco más la cintura. Creemos que el "efecto Jazzercise" en la pareja de prueba es bastante divertido :)

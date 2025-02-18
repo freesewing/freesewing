@@ -5,6 +5,7 @@ date: 20240119
 intro: "Nearly perfect"
 designs: ["simon"]
 maker: ferdi
+author: 1972
 ---
 
 

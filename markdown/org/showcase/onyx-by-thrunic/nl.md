@@ -6,6 +6,7 @@ intro: Thrunic gebruikte hetzelfde Onyx-patroon als een eerdere versie, maar voe
 designs:
   - onyx
 maker: Natalia
+author: 33070
 ---
 
 Dit is het nieuwste Onyx kledingstuk van maker Thrunic. Voor deze versie heeft hij de kwaliteit van de naden en de rits sterk verbeterd en de borduursels iets naar boven verplaatst, zodat ze boven de slab van zijn verschillende shortalls uitkomen.

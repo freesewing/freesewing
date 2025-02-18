@@ -77,7 +77,7 @@ export function draftStraightWaistband({
    * Annotations
    */
   // Cutlist
-  store.cutlist.setCut({ cut: 1, from: 'farbic' })
+  store.cutlist.setCut({ cut: 1, from: 'fabric' })
 
   // Title
   points.title = points.center.shiftFractionTowards(points.centerRight, 0.5)

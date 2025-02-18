@@ -8,7 +8,7 @@ Achte darauf, dass du einen Stretchstich verwendest
 
 <Note>
 
-When making a reversible top the second colour will be referred to as the lining fabric.  
+Wenn du ein wendbares Oberteil anfertigst, wird die zweite Farbe als Futterstoff bezeichnet.  
 Die Kerben in diesem Muster wirken eher wie Punkte, also **klammere** sie nicht, um sie zu markieren.
 
 </Note>
@@ -30,7 +30,7 @@ Die Kerben in diesem Muster wirken eher wie Punkte, also **klammere** sie nicht,
 - Schneide die Nahtzugaben zurück und schneide die Ecken ab.
 - Drehe dich von innen nach außen. Presse.
 
-<Note>Repeat this for the remaining neck tie pieces</Note>
+<Note>Wiederhole diesen Vorgang für die restlichen Krawattenstücke</Note>
 
 ### Schritt 2: Die Becher
 
@@ -51,9 +51,9 @@ Die Kerben in diesem Muster wirken eher wie Punkte, also **klammere** sie nicht,
 <Tip>
 
 Wenn deine Nahtzugabe breit ist, musst du die Nahtzugaben der Lücken vielleicht ein wenig kürzen, damit sie nicht zu groß werden.  
-If you are having trouble turning the cups you can try one of these methods:
+Wenn du Probleme beim Wenden der Körbchen hast, kannst du eine der folgenden Methoden ausprobieren:
 
-- Create a 2.5cm (1") gap in the front or side seam and turn through that, either _slipstitch_-ing the gap closed or _edgestitch_-ing it closed during Step 7.
+- Erstelle eine 2,5 cm breite Lücke in der Vorder- oder Seitennaht und wende sie, indem du die Lücke entweder mit einem _Rutschstich_ schließt oder sie in Schritt 7 mit einem _Stich_ schließt.
 - Verbreitere eine der vorhandenen Lücken und biege durch sie hindurch. Dann wird beim Wenden _Gestich_ oder _Rutschstich_ der verbreiterte Teil geschlossen.
 
 </Tip>
@@ -85,7 +85,7 @@ Außerdem gibt es auf beiden Seiten der Mitte des Bandes Einkerbungen, die dir e
 
 <Note>
 
-Du kannst es auch vorziehen, den einen Becher in der Mitte über den anderen zu wickeln. To do this place the sides of the cups at the outer notches and lay their fronts pass the midpoint with the left on top.
+Du kannst es auch vorziehen, den einen Becher in der Mitte über den anderen zu wickeln. Dazu legst du die Seiten der Becher an den anderen Kerben an und legst ihre Vorderseiten über die Mitte, wobei die linke oben liegt.
 
 </Note>
 

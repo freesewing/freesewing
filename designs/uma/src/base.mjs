@@ -170,7 +170,7 @@ function draftUmaBase({
   /*
    * Make checking for bulge easy
    */
-  store.set('bulge', options.bulge >= 2 ? true : false)
+  store.set('bulge', options.bulge >= 2)
 
   /*
    * Split back from gusset unless bulge is set
@@ -280,7 +280,7 @@ function draftUmaBase({
      *
      * If not, we will split the front from the gusset
      */
-    if (options.bulge && options.bulge >= 2) {
+    if (store.get('bulge')) {
       /*
        * First, we rotate the curve to create room for the bulge
        */
@@ -525,6 +525,7 @@ export const base = {
       toAbs: (val, { measurements }, mergedOptions) =>
         measurements.waistToUpperLeg *
         mergedOptions.gussetWidth *
+        2 *
         stretchToScale(mergedOptions.xStretch),
     },
 

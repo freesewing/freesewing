@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Sie sagten, ich sei verrückt, eine Zebrajacke zu machen, also habe ich sie trotzdem gemacht. Und sie versank im Sumpf."
 date: "2017-09-04"
 intro: "Für Uneingeweihte: Die Refashioners sind ein jährlicher Wettbewerb, der von der charmanten (und sehr überzeugenden) Portia Lawrie veranstaltet wird."

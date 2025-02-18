@@ -40,7 +40,7 @@ und mach weiter so.
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -94,7 +94,7 @@ zu wenden! Bis dahin werden wir sehen, was die Zukunft bringt.
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -124,7 +124,7 @@ Ich schätze Wouters Ansatz sehr: Er hat seine eigenen Bedürfnisse, die ihn zu 
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -164,7 +164,7 @@ Wir werden sehen, wie es läuft. You can find out for yourself, we're [@freesewi
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -178,7 +178,7 @@ Ok, dann hoffen wir mal, dass am Ende alles gut gegangen ist. Aber zur Erinnerun
 
 &nbsp;
 
-***
+---
 
 &nbsp;
 
@@ -187,7 +187,7 @@ Ok, dann hoffen wir mal, dass am Ende alles gut gegangen ist. Aber zur Erinnerun
 2023 war kein einfaches Jahr für mich persönlich und auch nicht für FreeSewing. The amount of time and effort that went into v3 is something that takes a lot out of you, and I am not ashamed to admit that more than any other year before I've struggled with feelings of _why am I even doing this_.
 
 Aber heute bin ich glücklich und stolz, weil FreeSewing im Jahr 2023 einen Umsatz von **10.222,07€** ($11.301) erzielt hat.
-Wie du vielleicht weißt, gehen [alle Einnahmen von FreeSewing an Ärzte ohne Grenzen] (https\://freesewing.org/docs/about/pledge). Das bedeutet, dass 10.222,07 € für einige der bedürftigsten Menschen auf diesem Planeten gespendet wurden.
+Wie du vielleicht weißt, gehen [alle Einnahmen von FreeSewing an Ärzte ohne Grenzen] (https://freesewing.org/docs/about/pledge). Das bedeutet, dass 10.222,07 € für einige der bedürftigsten Menschen auf diesem Planeten gespendet wurden.
 
 Ich freue mich besonders, dass wir wieder über die 10-Kilometer-Marke geklettert sind, nachdem wir ein paar Jahre in Folge unter diese Marke gerutscht sind.
 

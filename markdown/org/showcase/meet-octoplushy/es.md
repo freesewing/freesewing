@@ -6,6 +6,7 @@ intro: "Este escaparate muestra el primer Octoplushy completado, la variante est
 title: "Conoce a Octoplushy"
 designs:
   - "octoplushy"
+author: 132
 ---
 
 Este escaparate muestra el primer Octoplushy completado, la variante estándar.

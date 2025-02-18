@@ -6,6 +6,7 @@ intro: "Otra versión de la camiseta Teagan de Karen. Esta vez confeccionada con
 title: "Camiseta Teagan con dobladillo festoneado de Karen"
 designs:
   - "teagan"
+author: 13050
 ---
 
 Otra versión de [la camiseta Teagan](/designs/teagan/) de Karen. Esta vez confeccionada con tela de encaje negro y con el añadido de un dobladillo festoneado.

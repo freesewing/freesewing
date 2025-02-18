@@ -6,6 +6,7 @@ intro: "Deze leuke Waralee wikkelbroek is gemaakt door Wouter. Ze zijn voorzien 
 title: "Waralee wikkelbroek van Wouter"
 designs:
   - "waralee"
+author: 132
 ---
 
 Deze leuke Waralee wikkelbroek is gemaakt door Wouter. Ze zijn voorzien van verstekzomen.

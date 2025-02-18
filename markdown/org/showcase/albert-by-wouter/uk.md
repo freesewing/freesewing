@@ -6,6 +6,7 @@ intro: "Перша версія Альберта, зроблена для йог
 title: "Перша версія Альберта, зроблена для його доньки, від Wouter.vdub"
 designs:
   - "альберт"
+author: 132
 ---
 
 ![Вид ззаду ](https://posts.freesewing.org/uploads/albert_by_wouter_albert_back_846f1b89ac.jpg "Вид ззаду ") ![Вид спереду](https://posts.freesewing.org/uploads/albert_by_wouter_albert_side_8505eb3b84.jpg "Вид спереду")

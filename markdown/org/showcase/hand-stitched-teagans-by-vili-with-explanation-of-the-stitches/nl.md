@@ -6,6 +6,7 @@ intro: The FreeSewing community enjoyed following Vili's explorations of differe
 designs:
   - teagan
 maker: Natalia
+author: 31336
 ---
 
 The FreeSewing community enjoyed following Vili's explorations of different hand stitch options on the Teagan t-shirt! Hand-stitching stretch fabrics is rather unusual and presented challenges, but we think the result looks great.

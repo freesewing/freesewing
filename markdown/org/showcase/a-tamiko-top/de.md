@@ -1,5 +1,5 @@
 ---
-maker: "unbekannt"
+author: 1
 caption: "Ein Tamiko-Top"
 date: "10.19.2021"
 intro: "Dies ist eine schöne Version des Tamiko-Oberteils, ein FreeSewing-Muster ohne Abfall."

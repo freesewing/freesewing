@@ -1,5 +1,5 @@
 ---
-maker: "desconocido"
+author: 8
 caption: "Un top de bikini Bee temprano"
 date: "2021-10-18"
 intro: "Una creadora de Costura Libre hizo este top de bikini Bee. Utilizó los ajustes predeterminados y dijo que le quedaba muy bien, sin problemas de huecos ni de cobertura, pero mencionó que normalmente no necesita mucha sujeción."

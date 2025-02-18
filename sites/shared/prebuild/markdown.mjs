@@ -39,12 +39,12 @@ const loadFolderFrontmatter = async (key, site, folder, transform = false, lang 
    * But the biggest task is combing through all the org documentation and for this
    * it's much faster to first run find to limit the number of files to open
    */
-  const cmd = `find . -type f -name "${lang ? lang : '*'}.md" -exec grep "^${key}:" -ism 1 {} +`
+  //const cmd = `find . -type f -name "${lang ? lang : '*'}.md" -exec grep "^${key}:" -ism 1 {} +`
+  const cmd = lang
+    ? `find . -type f -name "${lang ? lang : '*'}.md" -exec grep "^${key}:" -ism 1 {} +`
+    : `grep -R "^${key}:" -ism 1 .`
   const grep = exec(cmd, { cwd, maxBuffer: 2048 * 1024 }, (error, stdout, stderr) => {
-    if (error) {
-      console.error(`exec error: ${error} - ${stderr}`)
-      return
-    }
+    if (error) console.error('Exec error:', { cwd, cmd, error, stderr })
 
     return stdout
   })
@@ -151,6 +151,30 @@ const loadDocs = async (site) => {
 }
 
 /*
+ * Loads jargon and terms
+ */
+const loadJargon = async (site, docs) => {
+  const folder = site === 'org' ? 'docs' : ''
+  const jargon = await loadFolderFrontmatter('jargon', site, folder)
+  const terms = await loadFolderFrontmatter('terms', site, folder)
+
+  const data = {}
+  for (const lang in jargon) {
+    data[lang] = {}
+    for (const slug in jargon[lang]) {
+      data[lang][docs[lang][slug].t.toLowerCase()] = slug
+      if (terms[lang]?.[slug]) {
+        for (const term of terms[lang][slug].split(',').map((term) => term.trim())) {
+          data[lang][term.toLowerCase()] = slug
+        }
+      }
+    }
+  }
+
+  return data
+}
+
+/*
  * Loads all blog posts, titles and order
  */
 const loadBlog = async (store) => {
@@ -198,9 +222,9 @@ const loadShowcase = async (store) => {
   // Order is the same for all languages, so only grab EN files
   const order = await loadFolderFrontmatter('date', 'org', 'showcase', formatDate, 'en')
   // Author is the same for all languages, so only grab EN files
-  const makers = await loadFolderFrontmatter('maker', 'org', 'showcase', false, 'en')
+  const authors = await loadFolderFrontmatter('author', 'org', 'showcase', false, 'en')
   // Load user accounts of authors
-  await loadUsers(Object.values(makers.en), store)
+  await loadUsers(Object.values(authors.en), store)
 
   // Merge titles and order for EN
   const merged = {}
@@ -209,7 +233,7 @@ const loadShowcase = async (store) => {
       t: titles.en[slug],
       o: order.en[slug],
       s: slug,
-      m: makers.en[slug],
+      m: authors.en[slug],
     }
   // Order based on post data (descending)
   const ordered = orderBy(merged, 'o', 'desc')
@@ -290,6 +314,15 @@ const writeFile = async (filename, exportname, site, content) => {
 export const prebuildDocs = async (store) => {
   store.docs = await loadDocs(store.site)
   await writeFiles('docs', store.site, store.docs)
+
+  // Handle jargon
+  store.jargon = await loadJargon(store.site, store.docs)
+  fs.writeFileSync(
+    path.resolve('..', store.site, 'prebuild', `jargon.mjs`),
+    `${header}
+export const site = "${store.site}"
+export const jargon = ${JSON.stringify(store.jargon, null, 2)}`
+  )
 }
 
 /*
@@ -307,5 +340,5 @@ export const prebuildPosts = async (store) => {
   await writeFile('blog-meta', 'meta', 'org', store.posts.blog.meta)
   await writeFile('showcase-meta', 'meta', 'org', store.posts.showcase.meta)
   await writeFile('design-examples', 'examples', 'org', store.posts.showcase.designShowcases)
-  await writeFile('makers', 'makers', 'org', store.users)
+  await writeFile('authors', 'authors', 'org', store.users)
 }

@@ -48,6 +48,24 @@ describe('Utils', () => {
     expect(linesIntersect(a, b, c, d)).to.equal(false)
   })
 
+  it('Should detect parallel vertical lines', () => {
+    let a = new Point(10, 20.234)
+    let b = new Point(10, 20)
+    let c = new Point(90, 40)
+    let d = new Point(90, 45.123)
+    expect(beamsIntersect(a, b, c, d)).to.equal(false)
+    expect(linesIntersect(a, b, c, d)).to.equal(false)
+  })
+
+  it('Should detect almost parallel vertical lines', () => {
+    let a = new Point(10, 20.234)
+    let b = new Point(10, 20)
+    let c = new Point(360, 40)
+    let d = new Point(360.00000000000006, 45.123)
+    expect(beamsIntersect(a, b, c, d)).to.equal(false)
+    expect(linesIntersect(a, b, c, d)).to.equal(false)
+  })
+
   it('Should detect vertical lines', () => {
     let a = new Point(10, 20)
     let b = new Point(10, 90)

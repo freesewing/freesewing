@@ -190,7 +190,7 @@ export const measurementAsMm = (value, units = 'metric') => {
   }
 }
 
-export const optionsMenuStructure = (options, settings) => {
+export const optionsMenuStructure = (options, settings, asFullList = false) => {
   if (!options) return options
   const sorted = {}
   for (const [name, option] of Object.entries(options)) {
@@ -205,7 +205,9 @@ export const optionsMenuStructure = (options, settings) => {
       option.dflt = option.dflt || option[oType]
       if (oType === 'pct') option.dflt /= 100
       if (typeof option.menu === 'function')
-        option.menu = option.menu(settings, mergeOptions(settings, options))
+        option.menu = asFullList
+          ? 'conditional'
+          : option.menu(settings, mergeOptions(settings, options))
       if (option.menu) {
         // Handle nested groups that don't have any direct children
         if (option.menu.includes('.')) {
@@ -337,7 +339,7 @@ export const hasRequiredMeasurements = (Design, measies = {}, DesignIsMeasuremen
  * and then check if there are any left. If there are, those are child-pages.
  */
 export const pageHasChildren = (page) =>
-  Object.keys(page).filter((key) => !['t', 's', 'o', 'b', 'h'].includes(key)).length > 0
+  Object.keys(page).filter((key) => !['t', 's', 'o', 'b', 'h', '_'].includes(key)).length > 0
 
 /*
  * Returns the slug of the page above this one

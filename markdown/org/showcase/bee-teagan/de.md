@@ -6,6 +6,7 @@ intro: "Eine FreeSewing-Nutzerin hat an dem Teagan-T-Shirt herumgebastelt, damit
 title: "Eine bienenschöne Teagan aus gewebtem Stoff"
 designs:
   - "teagan"
+author: 13050
 ---
 
 

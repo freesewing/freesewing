@@ -1,5 +1,6 @@
 ---
 title: Aisance
+jargon: vrai
 ---
 
 ![Sans aisance, vous ne seriez pas en mesure de lever votre bras](ease-plus.jpg)

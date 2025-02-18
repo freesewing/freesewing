@@ -6,6 +6,7 @@ intro: The Bella block is what brought RockerKitten to FreeSewing -- and we coul
 designs:
   - Белла.
 maker: Наталя
+author: 50818
 ---
 
 The Bella block is what brought RockerKitten to FreeSewing -- and we couldn't be more grateful that she found us! She has dialed in her preferences and measurements to find her ideal fit. This is one of her muslins.

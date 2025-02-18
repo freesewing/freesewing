@@ -1,5 +1,6 @@
 ---
 title: Basic sewing supplies
+jargon: true
 ---
 
 > What exactly constitutes the bare necessities for sewing is subject to debate.

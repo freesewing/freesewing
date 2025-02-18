@@ -1,5 +1,5 @@
 ---
-author: 1
+author: "joostdecock"
 caption: "Dein Login-Hintergrund für Oktober"
 date: "2018-09-30"
 intro: "Monatliche Zusammenfassung - September 2018: Shin, jede Menge JavaScript und eine lange TODO-Liste"

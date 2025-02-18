@@ -7,6 +7,7 @@ title: "Небесна Сандерелла"
 designs:
   - "Белла."
   - "піщаний"
+author: 13050
 ---
 
 Ця сукня - гібрид боді-блоку [Bella](https://freesewing.org/designs/bella/) та спідниці [Sandy circle](https://freesewing.org/designs/sandy/). Я називав комбінацію "Сандерелла".

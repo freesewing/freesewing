@@ -6,6 +6,7 @@ intro: "Wir waren begeistert, als ein FreeSewing-Nutzer diese tollen Bilder von 
 title: "Ein blauer geometrischer Simon"
 designs:
   - "simon"
+author: 1972
 ---
 
 Wir waren begeistert, als ein FreeSewing-Nutzer diese tollen Bilder von seinem neuen Simon in einem GitHub-Problem veröffentlicht hat.

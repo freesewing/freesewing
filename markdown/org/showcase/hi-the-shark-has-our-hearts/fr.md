@@ -6,6 +6,7 @@ intro: "Voici Hi."
 title: "Bonjour, le requin a nos cœurs"
 designs:
   - "hi"
+author: 132
 ---
 
 Voici Hi.

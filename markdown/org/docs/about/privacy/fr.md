@@ -1,14 +1,14 @@
 ---
-title: Avis de confidentialité de FreeSewing
+title: Politique de confidentialité de FreeSewing
 ---
 
 **Dernière mise à jour**: 13 août 2023
 
 Cette politique de confidentialité décrit les données personnelles que nous stockons. Elle explique pourquoi nous avons besoin de ces données, combien de temps nous les conservons et si nous les partageons avec des tiers (ce n'est pas le cas).
 
-Nous sommes convaincus que ça prouve notre engagement en faveur de la protection de la vie privée.
+Nous sommes convaincus que ça prouvera notre engagement en faveur de la protection de la vie privée.
 
-Pour plus de clarté, nous avons divisé ceci en trois types de rôles différents :
+Pour plus de clarté, nous l'avons divisée ceci en trois types de rôles :
 
 - Pour **les visiteurs de notre site**, nous stockons **[les données des visiteurs][v]**
 - Pour **les abonnés à notre newsletter**, nous stockons **[les données d'abonné][s]**
@@ -17,7 +17,7 @@ Pour plus de clarté, nous avons divisé ceci en trois types de rôles différen
 ## Comment nous utilisons vos données de visiteur
 
 <Note>
-Ces données sont stockées pour toute personne qui visite notre site web et se connecte à nos API dorsales.
+Ces données sont stockées pour toute personne qui visite notre site web et se connecte à nos API.
 </Note>
 
 ##### Quelles sont les données personnelles que nous stockons ?
@@ -44,7 +44,7 @@ Ces données sont stockées pour toute personne qui visite notre site web et se 
 
 Ces données sont conservées pour toute personne qui s’abonne à notre newsletter.
 
-Pour les personnes ayant un compte sur le site qui activent l'abonnement à la newsletter dans leurs paramètres de compte, nous ne stockons pas de données personnelles supplémentaires car nous avons déjà leur e-mail dans leur [données de compte][a].
+Pour les personnes ayant un compte sur le site qui activent l'abonnement à la newsletter dans leurs paramètres de compte, nous ne stockons pas de données personnelles supplémentaires car nous avons déjà leur e-mail dans leurs [données de compte][a].
 
 </Note>
 
@@ -82,7 +82,7 @@ Ces données sont stockées pour toute personne ayant un compte sur notre site W
 
 - Pour vous authentifier
 - Pour être en mesure de vous contacter si nécessaire
-- To be able to generate made-to-measure sewing patterns for you
+- Pour pouvoir générer des patrons de couture sur mesure pour toi
 
 ##### Combien de temps les gardons-nous ?
 
@@ -94,7 +94,7 @@ Ces données sont stockées pour toute personne ayant un compte sur notre site W
 - Non, jamais.
 
 
-## Autres informations relatives à cet avis de confidentialité
+## Autres informations relatives à cette politique de confidentialité
 
 ### Utilisation par les mineurs de moins de 16 ans
 
@@ -108,7 +108,7 @@ Pour toute question concernant cette politique de confidentialité, vous pouvez 
 
 Cette politique peut être mise à jour occasionnellement. Nous l'indiquerons dans la date de **Dernière mise à jour** en haut de ce document.
 
-Un aperçu plus complet de l'historique de ce document est [disponible sur GitHub][1]
+Un aperçu plus complet de l'histoire de ce document est [disponible sur GitHub][1]
 
 ### Devoir de transparence
 
@@ -118,13 +118,13 @@ Si vous pensez que vos données personnelles ont été compromises, veuillez con
 
 ### Prestataires de services
 
-Nos fournisseurs d'hébergement gèrent divers composants de notre infrastructure nous. Cela inclut l'hébergement, le stockage et la sauvegarde.
+Nos fournisseurs d'hébergement gèrent divers composants de notre infrastructure pour nous. Cela inclut l'hébergement, le stockage et la sauvegarde.
 
-Bien que cela signifie qu'ils traitent vos données (au sens strict du mot), ils n'ont pas besoin d'accéder à des informations vous concernant. De plus, comme nous chiffrons les données de profil, ça ne leur sert à rien d'y accéder même s'ils le souhaitent.
+Bien que cela signifie qu'ils traitent vos données (au sens strict du mot), ils n'ont pas besoin d'accéder à des informations vous concernant. De plus, comme nous chiffrons les données de profil, c'est très difficile pour eux d'y accéder même s'ils le souhaitent.
 
-### Canaris de mandat
+### Déclaration de non injonction
 
-Si la loi nous oblige à le faire, ou si nous pensons que ce serait un moindre mal, nous divulguerons des données personnelles.
+Bien que nous n'ayons aucune intention de partager vos données personnelles, nous ne sommes pas au-dessus des lois.
 
 Si la loi nous oblige à le faire, ou si nous pensons que ce serait un moindre mal, nous divulguerons des données personnelles.
 
@@ -140,7 +140,7 @@ Jusqu'à présent :
 - [Vos droits][2]
 - [Votre consentement][3]
 
-[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
+[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/about/privacy
 
 [2]: /docs/about/rights/
 

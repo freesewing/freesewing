@@ -1,6 +1,5 @@
 ---
-maker: "Joost De Cock"
-caption: "Avance camuflaje Charlies"
+author: 1
 date: "2022-04-27"
 intro: "La comunidad FreeSewing se enamoró perdidamente de estos chinos Charlie de joost. Son tan geniales que -no es broma- le han hecho ganar tortitas gratis."
 title: "Chinos florales \"camuflados\" Charlie"

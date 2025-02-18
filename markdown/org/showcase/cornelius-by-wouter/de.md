@@ -6,6 +6,7 @@ intro: "Wouter hat das Cornelius-Radhosenmuster auf der Grundlage des Keystone-S
 title: "Cornelius von Wouter"
 designs:
   - "cornelius"
+author: 132
 ---
 
 Wouter hat das Cornelius-Radhosenmuster auf der Grundlage des Keystone-Systems entwickelt. Lies mehr [auf dem FreeSewing Blog](https://freesewing.org/blog/cornelius-cycling-breeches/).

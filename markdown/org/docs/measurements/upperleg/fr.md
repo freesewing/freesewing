@@ -10,7 +10,7 @@ La mesure doit être prise un peu en dessous de l'entrejambe, voir l'illustratio
 
 ##### Soyez attentif à l'emplacement vertical de cette mesure
 
-Cette mesure est également utilisées comme **une référence verticale** pour déterminer l'espace vertical dans lequel tracer le l'assise/entrejambe du pantalon. À ce titre, l'emplacement vertical de cette mesure est important.
+Cette mesure est également utilisée comme **une référence verticale** pour déterminer l'espace vertical dans lequel tracer l'assise/entrejambe du pantalon. À ce titre, l'emplacement vertical de cette mesure est important.
 
 </Tip>
 <MeasieImage />

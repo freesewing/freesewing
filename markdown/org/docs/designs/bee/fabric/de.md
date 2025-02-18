@@ -8,6 +8,6 @@ Der Haupt- und der Futterstoff sind aus demselben Material. Bee wird aus Bademod
 
 <Note>
 
-You only need lining fabric if you intend to make the pattern reversible or if you want the band for the cross back tie variant to be a contrasting fabric. Ansonsten kannst du alle benötigten Teile aus deinem Hauptstoff zuschneiden.
+Du brauchst nur dann einen Futterstoff, wenn du das Schnittmuster wendbar machen willst oder wenn du das Band für die Kreuzbindervariante aus einem Kontraststoff machen willst. Ansonsten kannst du alle benötigten Teile aus deinem Hauptstoff zuschneiden.
 
 </Note>

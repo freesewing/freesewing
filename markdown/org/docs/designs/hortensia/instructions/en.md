@@ -40,7 +40,7 @@ If using bag strap webbing instead of fabric made straps do the following,
 
 ### Step 4: The zipper
 
-- Insert the zipper into the zipper panel making sure that the zipper pull is on the _good side_.
+- With _good sides together_ sew a zipper panel to each side of the zipper. We will now refer to this as **the zipper panel**.
 
 ### (Optional) Step 5: Construct tabs.
 
@@ -82,10 +82,11 @@ It is recommended to leave the gap for turning on the side rather than the top o
 
 - With _good sides together_ sew the front and back lining panels to the bottom lining panel.
 - With _good sides together_ attach the lining side panels.
+- With _good sides together_ attach the lining zipper panels to the side panels.
 - Press under the top seam allowances.
 - Alternatively you can bind the top edges.
 - Place the lining inside the bag _wrong sides facing_ each other.
-- _Slipstitch_ or _Whipstitch_ the lining to the zipper panel.
+- _Slipstitch_ or _Whipstitch_ the lining to the sides of the zipper.
 
 ### Step 10: Enjoy!
 

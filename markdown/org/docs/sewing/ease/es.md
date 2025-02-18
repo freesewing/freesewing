@@ -1,5 +1,6 @@
 ---
 title: Único
+jargon: true
 ---
 
 ![Sin facilidad, no podrías levantar tu brazo](ease-plus.jpg)

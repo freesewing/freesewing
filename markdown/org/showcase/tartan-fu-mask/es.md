@@ -1,5 +1,5 @@
 ---
-maker: "desconocido"
+author: 1
 caption: "Sorcha lleva una máscara facial de Florencia de tartán rojo y azul"
 date: "2020-03-01"
 intro: "Una máscara facial Florence en rojo y azul"

@@ -1,5 +1,6 @@
 ---
 title: Darts
+jargon: true
 ---
 
 ![Bust darts on a blouse](dart.jpg)

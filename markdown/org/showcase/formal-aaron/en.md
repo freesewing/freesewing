@@ -5,6 +5,7 @@ date: "2023-01-14"
 intro: "A formal Aaron, for parties"
 title: "A formal Aaron, for parties"
 designs: ["aaron"]
+author: 13050
 ---
 
 Hi! TangerineShark here. I made this top for a wedding rehearsal dinner I had to attend in September (back when it was still plenty warm out for the "sun's out, tum's out" philosophy), and believe it or not, it's an Aaron! Perhaps that's not actually super-surprising, but it does have a few modifications to make it a touch more formal.

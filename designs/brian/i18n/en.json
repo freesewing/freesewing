@@ -47,15 +47,15 @@
     },
     "draftForHighBust": {
       "t": "Draft for high bust",
-      "d": "Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts."
+      "d": "Draft the pattern using the high bust measurement if it is available, instead of using the chest measurement. This can result in a more fitted garment for people with breasts. (Please note that no additional adjustments or shaping is performed. Further manual adjustments may be needed for those with a larger difference between high bust and chest measurements.)"
     },
     "draftForHighBustYes": {
       "t": "Draft using the high bust measurement",
-      "d": "Drafts a pattern using the high bust measurements as the chest measurement. Recommended for people with breasts."
+      "d": "Drafts a pattern using the high bust measurement instead of the chest measurement. Suggested for most people with breasts."
     },
     "draftForHighBustNo": {
       "t": "Draft using the chest measurement",
-      "d": "Drafts a pattern using the chest measurement. Recommended for people without breasts."
+      "d": "Drafts a pattern using the chest measurement. Suggested for most people without breasts."
     },
     "frontArmholeDeeper": {
       "t": "Front armhole extra cutout",

@@ -6,6 +6,7 @@ intro: Don't miss the sweet lining fabric on this Florent flat cap.
 designs:
   - florent
 maker: Natalia
+author: 31287
 ---
 
 Don't miss the sweet lining fabric on this Florent flat cap. Maker lasermonkey12 lined it with her favorite Dr Seuss book:

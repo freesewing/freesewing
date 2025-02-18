@@ -7,6 +7,7 @@ title: "Pacos tropicales"
 designs:
   - "paco"
   - "teagan"
+author: 13050
 ---
 
 Los Pacos se confeccionaron en un challis de rayón, con las opciones predeterminadas (y se rebajó un poco la subida delantera). Aquí se muestran con una camiseta Teagan adicional.

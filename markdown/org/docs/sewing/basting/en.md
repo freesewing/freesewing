@@ -1,6 +1,7 @@
 ---
 layout: onecol
 title: Basting
+jargon: true
 ---
 
 ![The shape of this denim back pocket is basted before the pocket is topstitched to the garment](basting.jpg)

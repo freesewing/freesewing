@@ -2,7 +2,7 @@
 title: "Sous-vêtements Uma : Ce dont tu as besoin"
 ---
 
-Pour préparer Uma, tu auras besoin des éléments suivants :
+Pour faire Uma, tu auras besoin des éléments suivants :
 
 - [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
 - Environ 0,7 mètre d'un tissu approprié (voir [Options de tissu](/docs/designs/uma/fabric)).

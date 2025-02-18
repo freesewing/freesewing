@@ -6,6 +6,7 @@ intro: "Karen a fait cette fabuleuse chemise basée sur le bloc Bella. Elle a ut
 title: "Bella par Karen"
 designs:
   - "bella"
+author: 13050
 ---
 
 

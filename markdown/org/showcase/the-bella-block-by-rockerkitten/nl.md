@@ -6,6 +6,7 @@ intro: Het Bella blok heeft RockerKitten naar FreeSewing gebracht -- en we kunne
 designs:
   - bella
 maker: Natalia
+author: 50818
 ---
 
 Het Bella blok heeft RockerKitten naar FreeSewing gebracht -- en we kunnen niet dankbaarder zijn dat ze ons gevonden heeft! Ze heeft haar voorkeuren en maten afgestemd om haar ideale pasvorm te vinden. Dit is een van haar mousselines.

@@ -18,10 +18,11 @@ import {
 import { Toc } from 'shared/components/mdx/toc.mjs'
 import { MdxMetaData, ns as metaNs } from 'shared/components/mdx/meta.mjs'
 import { PrevNext } from 'shared/components/prev-next.mjs'
+import { NarrowIcon, WideIcon } from 'shared/components/icons.mjs'
 
 export const ns = nsMerge(navNs, 'docs', metaNs)
 
-export const DocsLayout = ({ children = [], frontmatter }) => {
+export const DocsLayout = ({ children = [], frontmatter, wide, setWide }) => {
   const { slug, locale } = useContext(NavigationContext)
 
   return (
@@ -32,9 +33,16 @@ export const DocsLayout = ({ children = [], frontmatter }) => {
           <NavLinks />
         </BaseLayoutLeft>
 
-        <BaseLayoutProse>
+        <BaseLayoutProse wide={wide}>
           <div className="w-full">
-            <Breadcrumbs />
+            <div className="flex flex-row gap-2">
+              <div className="grow">
+                <Breadcrumbs />
+              </div>
+              <button className="hidden lg:inline" onClick={() => setWide(!wide)}>
+                {wide ? <NarrowIcon className="w-8 h-8" /> : <WideIcon className="w-8 h-8" />}
+              </button>
+            </div>
             <h1 className="break-words searchme">{frontmatter.title}</h1>
             <div className="block xl:hidden">
               <Toc toc={frontmatter.toc} wrap />

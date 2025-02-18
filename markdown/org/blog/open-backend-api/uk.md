@@ -20,7 +20,7 @@ author: 1
 
 Принаймні, я знаю, що так і буде.
 
-Довідкова документація [REST API знаходиться тут] (https\://freesewing.dev/reference/backend), якщо ви шукаєте специфікацію OpenAPI, то перейдіть на https\://backend3.freesewing.org/docs/
+Довідкова документація [REST API знаходиться тут] (https://freesewing.dev/reference/backend), якщо ви шукаєте специфікацію OpenAPI, то перейдіть на https://backend3.freesewing.org/docs/
 
 ## Використовуйте, але не зловживайте
 

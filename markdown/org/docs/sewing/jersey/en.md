@@ -1,5 +1,6 @@
 ---
 title: Jersey
+jargon: true
 ---
 
 ![A piece of grey jersey](knit-fabric.jpg)

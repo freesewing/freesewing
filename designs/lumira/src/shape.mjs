@@ -514,6 +514,6 @@ export const shape = {
     store.set('waistLengthFront', points.frontWaistband.dist(points.centerWaistband))
     store.set('waistLengthBack', store.get('waistLength') - store.get('waistLengthFront'))
 
-    return part
+    return part.hide()
   },
 }

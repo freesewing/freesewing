@@ -1,5 +1,5 @@
 ---
-title: Gusset width
+title: Largeur du gousset
 ---
 
 ***

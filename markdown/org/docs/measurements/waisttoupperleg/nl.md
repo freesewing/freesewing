@@ -2,5 +2,5 @@
 title: Taille tot bovenbeen
 ---
 
-De afmeting **taille tot bovenbeen ** is de afstand van je natuurlijke taille tot aan je bovenbeen. Neem deze maat aan de zijkant van je lichaam.
+The **waist to upper leg** is measured from your waist down to where your upper leg circumference measurement is. Neem deze maat aan de zijkant van je lichaam.
 <MeasieImage />

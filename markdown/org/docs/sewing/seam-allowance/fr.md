@@ -1,5 +1,6 @@
 ---
 title: Marge de couture
+jargon: vrai
 ---
 
 ![L'intérieur de la jambe sur un jean. La marge de couture est la partie sombre près de la couture. Elle a été zig-zaggée pour l'empêcher de s'effilocher](zig-zag.jpg)

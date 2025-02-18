@@ -120,14 +120,13 @@ function draftUmaBack({
     // Also Y-flip these central points
     points.cfWaistbandDipBack = points.cfWaistbandDipBack.flipY()
     points.cfBackGusset = points.cfBackGusset.flipY()
-    paths.saBase = new Path()
-      .move(points.cfWaistbandDipBack)
-      .curve_(points.cfWaistbandDipCpBack, points.sideWaistbandBack)
-      .line(points.sideLegBack)
-      .curve(points.backGussetSplitCpBottom, points.backGussetSplitCpTop, points.backGussetSplit)
-      .line(new Point(0, points.backGussetSplit.y))
-      .reverse()
-      .hide()
+    macro('mirror', {
+      mirror: [new Point(0, 0), new Point(100, 0)],
+      paths: ['back'],
+      clone: true,
+    })
+    paths.mirroredBack.hide()
+    paths.saBase = paths.mirroredBack.reverse().hide()
 
     paths.seam = paths.saBase
       .clone()
