@@ -7,6 +7,7 @@ import { SaveView } from './SaveView.mjs'
 import { ExportView } from './ExportView.mjs'
 import { UndosView } from './UndosView.mjs'
 import { LayoutView } from './LayoutView.mjs'
+import { DocsView } from './DocsView.mjs'
 import { ErrorIcon } from '@freesewing/react/components/Icon'
 import {
   OptionsIcon,
@@ -59,6 +60,7 @@ export const View = (props) => {
   if (view === 'export') return <ExportView {...props} />
   if (view === 'undos') return <UndosView {...props} />
   if (view === 'layout') return <LayoutView {...props} />
+  if (view === 'docs') return <DocsView {...props} />
 
   return <h1 className="tw-ext-center tw-my-12">No view component for view {props.view}</h1>
 }
