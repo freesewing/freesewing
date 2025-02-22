@@ -59,25 +59,6 @@ export const View = (props) => {
   if (view === 'export') return <ExportView {...props} />
   if (view === 'undos') return <UndosView {...props} />
   if (view === 'layout') return <LayoutView {...props} />
-  /*
-  viewComponents: {
-    draft: 'DraftView',
-    designs: 'DesignsView',
-    save: 'SaveView',
-    export: 'ViewPicker',
-    measurements: 'MeasurementsView',
-    undos: 'UndosView',
-    layout: 'ViewPicker',
-    editSettings: 'ViewPicker',
-    docs: 'ViewPicker',
-    inspect: 'ViewPicker',
-    logs: 'ViewPicker',
-    test: 'ViewPicker',
-    timing: 'ViewPicker',
-    picker: 'ViewPicker',
-    error: 'ViewPicker',
-  },
-  */
 
   return <h1 className="tw-ext-center tw-my-12">No view component for view {props.view}</h1>
 }
@@ -109,7 +90,7 @@ export const viewLabels = {
     d: 'Shows detailed timing of the pattern being drafted, allowing you to find bottlenecks in performance',
   },
   layout: {
-    t: 'Print Layout',
+    t: 'Pattern Layout',
     d: 'Organize your pattern parts to minimize paper use',
   },
   save: {

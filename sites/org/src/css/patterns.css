@@ -294,25 +294,25 @@ svg.freesewing.pattern .layout-rect.rotate:hover {
   cursor: crosshair;
 }
 svg.freesewing.pattern .svg-layout-button {
-  fill: var(--pattern-note);
+  fill: var(--pattern-interfacing);
   fill-opacity: 0;
   stroke: none;
 }
 svg.freesewing.pattern .svg-layout-button:hover {
-  fill: var(--pattern-note);
+  fill: var(--pattern-interfacing);
   fill-opacity: 1;
   stroke: none;
   cursor: pointer;
 }
 svg.freesewing.pattern .svg-layout-button path {
   stroke-width: calc(var(--pattern-stroke) * 2 * var(--pattern-scale));
-  color: var(--pattern-contrast);
+  color: var(--pattern-interfacing);
 }
 svg.freesewing.pattern .svg-layout-button:hover path {
   stroke: #fff;
 }
 svg.freesewing.pattern .svg-layout-button:hover > rect.button {
-  fill: var(--pattern-contrast);
+  fill: var(--pattern-note);
   stroke: none;
 }
 

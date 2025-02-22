@@ -440,6 +440,18 @@ export const Buttons = ({ transform, flip, rotate, resetPart, rotate90, iconSize
         ) : (
           <path d="M -50, 0 l 100,0 M 0,-50 l 0,100" className="stroke-2xl muted" />
         )}
+        <rect
+          x="-68"
+          y="-15"
+          width="136"
+          height="30"
+          rx="3"
+          ry="3"
+          fill="var(--pattern-interfacing)"
+          fill-opacity="0.2"
+          stroke="var(--pattern-interfacing)"
+          stroke-width="1"
+        />
         <Button
           onClickCb={resetPart}
           transform={`translate(${rectSize / -2}, ${rectSize / -2})`}
@@ -447,17 +459,15 @@ export const Buttons = ({ transform, flip, rotate, resetPart, rotate90, iconSize
           title="Reset part orientation"
         />
         <Button
-          onClickCb={() => rotate90(-1)}
+          onClickCb={() => rotate90()}
           transform={`translate(${rectSize * -2.7}, ${rectSize / -2})`}
           Icon={() => <RotateIcon wrapped={0} style={{}} />}
           title="Rotate part clockwise"
         />
         <Button
           onClickCb={() => flip('y')}
-          transform={`translate(${rectSize * 0.6}, ${rectSize / -2})`}
-          Icon={() => (
-            <FlipIcon style={{ transform: 'rotate(90deg) translate(0, -24px)' }} wrapped={0} />
-          )}
+          transform={`rotate(90) translate(${rectSize / -2}, ${rectSize * -1.6})`}
+          Icon={() => <FlipIcon wrapped={0} />}
           title="Flip part top/bottom"
         />
         <Button
@@ -467,7 +477,7 @@ export const Buttons = ({ transform, flip, rotate, resetPart, rotate90, iconSize
           title="Flip part left/right"
         />
         <Button
-          onClickCb={() => rotate90()}
+          onClickCb={() => rotate90(-1)}
           transform={`translate(${rectSize * 1.7}, ${rectSize / -2})`}
           Icon={() => <RotateIcon transform="scale(-1,1), translate(-24,0)" wrapped={0} />}
           title="Rotate part counter-clockwise"
