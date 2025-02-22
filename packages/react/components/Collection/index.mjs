@@ -42,7 +42,6 @@ import {
 import { IconButton } from '@freesewing/react/components/Button'
 import { ModalWrapper } from '@freesewing/react/components/Modal'
 import { KeyVal } from '@freesewing/react/components/KeyVal'
-import { CopyToClipboard as Copy } from 'react-copy-to-clipboard'
 
 const filterAtom = atomWithHash('filter', { example: true })
 

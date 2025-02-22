@@ -24,15 +24,7 @@
     "lint": "npx eslint 'lib/*.mjs'"
   },
   "peerDependencies": {},
-  "dependencies": {
-    "axios": "1.7.2",
-    "chalk": "5.3.0",
-    "execa": "9.2.0",
-    "mustache": "4.2.0",
-    "ora": "8.0.1",
-    "prompts": "2.4.2",
-    "recursive-readdir": "2.2.3"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "files": [
     "README.md",

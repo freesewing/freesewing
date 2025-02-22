@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { shortUuid } from '@freesewing/utils'
 import { Link } from '@freesewing/react/components/Link'
-import { CopyToClipboard } from '@freesewing/react/components/CopyToClipboard'
+import { CopyToClipboardButton } from '@freesewing/react/components/CopyToClipboardButton'
 
 /*
  * Displays a UUID, but shorter

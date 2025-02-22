@@ -16,7 +16,7 @@ import { NoIcon, LockIcon } from '@freesewing/react/components/Icon'
 import { PasswordInput } from '@freesewing/react/components/Input'
 import { Popout } from '@freesewing/react/components/Popout'
 import { NumberCircle } from '@freesewing/react/components/Number'
-import { CopyToClipboard } from '@freesewing/react/components/CopyToClipboard'
+import { CopyToClipboardButton } from '@freesewing/react/components/CopyToClipboardButton'
 
 /*
  * Component for the account/security/password page
@@ -166,7 +166,7 @@ export const Mfa = ({ welcome = false, title = true }) => {
           <div className="hljs tw-my-4">
             <div className="tw-flex tw-flex-row tw-justify-between tw-items-center tw-text-xs tw-font-medium tw-text-warning tw-mt-1 tw-border-b tw-border-neutral-content tw-border-opacity-25 tw-px-4 tw-py-1 tw-mb-2 lg:tw-text-sm">
               <span>MFA Scratch Codes</span>
-              <CopyToClipboard
+              <CopyToClipboardButton
                 content={
                   'FreeSewing MFA Scratch Codes:\n' +
                   scratchCodes.map((code) => code + '\n').join('')

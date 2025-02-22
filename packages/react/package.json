@@ -32,7 +32,7 @@
     "./components/Button": "./components/Button/index.mjs",
     "./components/Collection": "./components/Collection/index.mjs",
     "./components/Control": "./components/Control/index.mjs",
-    "./components/CopyToClipboard": "./components/CopyToClipboard/index.mjs",
+    "./components/CopyToClipboardButton": "./components/CopyToClipboardButton/index.mjs",
     "./components/Design": "./components/Design/index.mjs",
     "./components/Docusaurus": "./components/Docusaurus/index.mjs",
     "./components/Editor": "./components/Editor/index.mjs",
@@ -79,18 +79,24 @@
     "prettier": "npx prettier --write 'components/**/*.mjs' 'hooks/**/*.mjs' 'lib/**/*.mjs' 'context/**/*.mjs' 'config/**/*.mjs'"
   },
   "peerDependencies": {
-    "react": "^18.2.0"
+    "react": "^19.0.0"
   },
   "dependencies": {
-    "axios": "1.7.2",
-    "highlight.js": "^11.11.0",
-    "html-react-parser": "^5.0.7",
+    "@uiw/react-codemirror": "^4.23.8",
+    "d3-drag": "3.0.0",
+    "d3-selection": "3.0.0",
+    "file-saver": "^2.0.5",
+    "highlight.js": "^11.11.1",
+    "html-react-parser": "^5.2.2",
+    "jotai": "^2.12.1",
+    "jotai-location": "^0.5.5",
     "luxon": "^3.5.0",
-    "nuqs": "^1.17.6",
-    "react-markdown": "^9.0.1",
-    "tlds": "^1.255.0",
-    "use-local-storage-state": "19.1.0",
-    "use-session-storage-state": "^19.0.0"
+    "pdfkit": "^0.16.0",
+    "react-dropzone": "^14.3.5",
+    "react-zoom-pan-pinch": "^3.7.0",
+    "svg-to-pdfkit": "^0.1.8",
+    "use-local-storage-state": "^19.5.0",
+    "web-worker": "^1.5.0"
   },
   "devDependencies": {},
   "files": [

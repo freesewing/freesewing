@@ -569,3 +569,41 @@ export function validateTld(email) {
   if (tlds.indexOf(tld) === -1) return tld
   else return true
 }
+
+/**
+ * Copies a string to the clipboard using the clipboard API
+ *
+ * @param {string} text - The text to copy to the clipboard
+ */
+export function copyToClipboard(text) {
+  const textToCopy = text
+
+  /*
+   * This is only available in a secure browser context
+   * So when we are running a localhost dev instance,
+   * this won't work, and we fall back to the one further down.
+   */
+  if (navigator?.clipboard) {
+    navigator.clipboard.writeText(text).catch((error) => {
+      console.error('Failed to use the clipboard API to copy text to clipboard:', error)
+      copyToClipboardFallback(text)
+    })
+  } else {
+    copyToClipboardFallback(text)
+  }
+}
+
+/**
+ * Copies a string to the clipboard using DOM manipulation
+ *
+ * @param {string} text - The text to copy to the clipboard
+ */
+function copyToClipboardFallback(text) {
+  const textarea = document.createElement('textarea')
+  textarea.value = text
+  textarea.style.position = 'fixed'
+  document.body.appendChild(textarea)
+  textarea.select()
+  document.execCommand('copy')
+  document.body.removeChild(textarea)
+}

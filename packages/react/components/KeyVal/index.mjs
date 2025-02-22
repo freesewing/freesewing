@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react'
-import { CopyToClipboard as Copy } from 'react-copy-to-clipboard'
+import { copyToClipboard } from '@freesewing/utils'
 import { LoadingStatusContext } from '@freesewing/react/context/LoadingStatus'
 
 export const KeyVal = ({
@@ -47,9 +47,15 @@ export const KeyVal = ({
   )
 
   return onClick === false ? (
-    <Copy text={val} onCopy={() => (noCopy ? null : handleCopied(setCopied, setLoadingStatus, k))}>
-      <button className="tw-daisy-btn-ghost tw-p-0">{inner}</button>
-    </Copy>
+    <button
+      className="tw-daisy-btn-ghost tw-p-0"
+      onClick={() => {
+        copyToClipboard(val)
+        handleCopied(setCopied, setLoadingStatus, k)
+      }}
+    >
+      {inner}
+    </button>
   ) : (
     <button
       className="tw-daisy-btn-ghost tw-p-0"

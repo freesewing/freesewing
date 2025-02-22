@@ -26,7 +26,10 @@
     "lint": "npx eslint 'src/**' 'tests/*.mjs'"
   },
   "peerDependencies": {},
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "tlds": "^1.255.0"
+  },
   "devDependencies": {},
   "files": [
     "src/**",

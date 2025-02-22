@@ -1,4 +1,4 @@
-import orderBy from 'lodash.orderby'
+import orderBy from 'lodash/orderBy.js'
 import set from 'lodash.set'
 import { mergeOptions } from '@freesewing/core'
 

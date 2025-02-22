@@ -29,7 +29,7 @@ import { ModalWrapper } from '@freesewing/react/components/Modal'
 import { NumberCircle } from '@freesewing/react/components/Number'
 import { StringInput, FormControl, ListInput } from '@freesewing/react/components/Input'
 import { DisplayRow } from './shared.mjs'
-import { CopyToClipboard } from '@freesewing/react/components/CopyToClipboard'
+import { CopyToClipboardButton } from '@freesewing/react/components/CopyToClipboardButton'
 import { TimeAgo, TimeToGo } from '@freesewing/react/components/Time'
 import { KeyVal } from '@freesewing/react/components/KeyVal'
 
@@ -303,12 +303,12 @@ const ShowNewApikey = ({ apikey }) => (
     </div>
     <h6 className="tw-flex tw-flex-row tw-items-center">
       Key
-      <CopyToClipboard sup content={apikey.key} label="API key ID" />
+      <CopyToClipboardButton sup content={apikey.key} label="API key ID" />
     </h6>
     <pre>{apikey.key}</pre>
     <h6 className="tw-flex tw-flex-row tw-items-center">
       Secret
-      <CopyToClipboard sup content={apikey.secret} label="API key secret" />
+      <CopyToClipboardButton sup content={apikey.secret} label="API key secret" />
     </h6>
     <pre>{apikey.secret}</pre>
     <Popout warning compact>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { CopyToClipboard } from '@freesewing/react/components/CopyToClipboard'
+import { CopyToClipboardButton } from '@freesewing/react/components/CopyToClipboardButton'
 
 const defaultTitles = {
   js: 'Javascript',
@@ -48,7 +48,7 @@ export const Highlight = ({
       `}
       >
         <span>{label}</span>
-        {noCopy ? null : <CopyToClipboard content={copy ? copy : children} label={label} />}
+        {noCopy ? null : <CopyToClipboardButton content={copy ? copy : children} label={label} />}
       </div>
       <pre {...preProps}>{children}</pre>
     </div>

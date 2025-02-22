@@ -79,7 +79,7 @@ packageJson:
       "./components/Button": "./components/Button/index.mjs"
       "./components/Collection": "./components/Collection/index.mjs"
       "./components/Control": "./components/Control/index.mjs"
-      "./components/CopyToClipboard": "./components/CopyToClipboard/index.mjs"
+      "./components/CopyToClipboardButton": "./components/CopyToClipboardButton/index.mjs"
       "./components/Design": "./components/Design/index.mjs"
       "./components/Docusaurus": "./components/Docusaurus/index.mjs"
       "./components/Editor": "./components/Editor/index.mjs"

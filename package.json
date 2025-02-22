@@ -60,7 +60,6 @@
     "all-contributors-cli": "^6.26.1",
     "axios": "^1.5.1",
     "chalk": "^4.1.0",
-    "codecov": "^3.8.3",
     "cross-env": "^7.0.2",
     "eslint": "^8.23.1",
     "eslint-plugin-jsonc": "^2.4.0",
@@ -78,8 +77,6 @@
     "nyc": "^15.1.0",
     "prettier": "^3.0.0",
     "pretty-quick": "^4.0.0",
-    "prop-types": "^15.7.2",
-    "react": "^18.2.0",
     "rimraf": "^5.0.0",
     "standard": "^17.0.0"
   },
@@ -98,7 +95,8 @@
     "eslint-config-next": "^14.0.1",
     "glob": "^10.3.10",
     "rehype-format": "^5.0.0",
-    "rehype-stringify": "^10.0.1"
+    "rehype-stringify": "^10.0.1",
+    "tlds": "^1.255.0"
   },
   "engines": {
     "node": ">=20.0"
