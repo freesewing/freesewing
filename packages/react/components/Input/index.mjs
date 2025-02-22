@@ -15,7 +15,7 @@ import React, { useState, useCallback, useContext } from 'react'
 import { useDropzone } from 'react-dropzone'
 import { useBackend } from '@freesewing/react/hooks/useBackend'
 // Components
-import { ResetIcon, UploadIcon } from '@freesewing/react/components/Icon'
+import { TrashIcon, ResetIcon, UploadIcon } from '@freesewing/react/components/Icon'
 import { ModalWrapper } from '@freesewing/react/components/Modal'
 import { isDegreeMeasurement } from '@freesewing/config'
 import { Tabs, Tab } from '@freesewing/react/components/Tab'
@@ -523,7 +523,14 @@ export const MeasurementInput = ({
       update(m, isDegree ? parsedVal : measurementAsMm(parsedVal, units))
       setValid(true)
       setValidatedVal(parsedVal)
-    } else setValid(false)
+    } else if (newVal === undefined) update(m, undefined)
+    else setValid(false)
+  }
+
+  // Clear value
+  const clearValue = () => {
+    localUpdate(undefined)
+    setLocalVal('')
   }
 
   if (!m) return null
@@ -573,6 +580,11 @@ export const MeasurementInput = ({
           className={`tw-border-0 tw-grow-2 tw-w-full`}
         />
         {isDegree ? '°' : imperial ? 'inch' : 'cm'}
+        <label>
+          <button className="tw-text-warning hover:tw-text-error" onClick={clearValue}>
+            <TrashIcon className="tw-w-5 tw-h-5 tw--mb-1" />
+          </button>
+        </label>
       </label>
     </FormControl>
   )
