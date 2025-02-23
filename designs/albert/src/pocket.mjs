@@ -16,6 +16,7 @@ export const pocket = {
     units,
     store,
     part,
+    complete,
   }) => {
     const pocketSize = store.get('pocketSize')
 
@@ -53,11 +54,11 @@ export const pocket = {
       .line(points.bottomRight)
       .line(points.topRight)
       .line(points.topLeft)
-      .move(points.bottomLeft)
+      .line(points.bottomLeft)
       .close()
       .attr('class', 'fabric')
 
-    if (sa)
+    if (sa) {
       paths.sa = new Path()
         .move(points.bottomLeft)
         .line(points.bottomRight)
@@ -65,7 +66,46 @@ export const pocket = {
         .line(points.topLeft.shift(90, store.get('strapWidth')))
         .offset(sa)
         .attr('class', 'fabric sa')
+      paths.sa = new Path()
+        .move(points.bottomLeft)
+        .line(paths.sa.start())
+        .join(paths.sa)
+        .line(points.topLeft)
+        .attr('class', 'fabric sa')
 
+      if (complete) {
+        paths.SAhemHint = new Path()
+          .move(points.topRight.shift(90, store.get('strapWidth')).shift(0, sa))
+          .line(points.topLeft.shift(90, store.get('strapWidth')))
+          .addClass('note help')
+        macro('banner', {
+          id: 'SAfoldHere',
+          path: paths.SAhemHint.reverse(),
+          text: 'albert:foldHere',
+          repeat: 60,
+          spaces: 30,
+          classes: 'fill-note center',
+        })
+        paths.hemHint = new Path()
+          .move(points.topRight.shift(0, sa))
+          .line(points.topLeft)
+          .setHidden(true)
+        macro('banner', {
+          id: 'foldHere',
+          path: paths.hemHint.reverse(),
+          text: 'albert:foldHere',
+          repeat: 60,
+          spaces: 30,
+          classes: 'fill-note center',
+        })
+        macro('vd', {
+          from: points.topLeft,
+          to: points.topLeft.shift(90, store.get('strapWidth')),
+          x: points.topLeft.x - 15,
+          id: 'heightHem',
+        })
+      }
+    }
     /*
      * Annotations
      */
