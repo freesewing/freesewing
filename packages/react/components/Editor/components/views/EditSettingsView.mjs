@@ -1,14 +1,26 @@
 // Dependencies
-import { linkClasses, horFlexClasses, patternUrlFromState } from '@freesewing/utils'
+import { linkClasses, horFlexClasses, patternUrlFromState, clone } from '@freesewing/utils'
 import { exportTypes, handleExport } from '../../lib/export/index.mjs'
+import yaml from 'yaml'
 // Hooks
 import React, { useState } from 'react'
+import { useStateObject } from '@freesewing/react/hooks/useStateObject'
 // Components
-import { H1, H2, H3, H5 } from '@freesewing/react/components/Heading'
+import { H1, H2, H3, H4, H5 } from '@freesewing/react/components/Heading'
 import { Popout } from '@freesewing/react/components/Popout'
+import { DiffViewer, diffCheck } from '@freesewing/react/components/DiffViewer'
 import { HeaderMenu } from '../HeaderMenu.mjs'
-import { EditIcon, CodeIcon, TipIcon, PrintIcon } from '@freesewing/react/components/Icon'
+import {
+  ResetIcon,
+  OkIcon,
+  EditIcon,
+  ExpandIcon,
+  CodeIcon,
+  TipIcon,
+  PrintIcon,
+} from '@freesewing/react/components/Icon'
 import CodeMirror from '@uiw/react-codemirror'
+import { yaml as yamlLang } from '@codemirror/lang-yaml'
 
 /**
  * This is the editSettings view
@@ -20,13 +32,20 @@ import CodeMirror from '@uiw/react-codemirror'
  */
 export const EditSettingsView = (props) => {
   const [settings, setSettings] = useState(props.state.settings)
+  const { state, config, update } = props
 
   return (
     <>
       <HeaderMenu state={state} {...{ config, update }} />
-      <div className="tw-m-auto tw-mt-8 tw-max-w-2xl tw-px-4 tw-mb-8">
-        <H1>Documenation</H1>
-        <PrimedSettingsEditor {...props} {...{ runningSettings, dconf }} />
+      <div className="tw-m-auto tw-mt-8 tw-max-w-4xl tw-px-4 tw-mb-8">
+        <H1>Edit settings by hand</H1>
+        <p className="tw-mb-4">
+          You can hand-edit your pattern settings below.
+          <br />
+          The changes will not take effect until you click the <b>Apply changes</b> button at the
+          bottom.
+        </p>
+        <PrimedSettingsEditor {...props} />
       </div>
     </>
   )
@@ -39,70 +58,38 @@ export const PrimedSettingsEditor = (props) => {
   /*
    * Destructure props
    */
-  const { runningSettings } = props
+  const { state } = props
 
   /*
    * React state
    */
   /* eslint-disable-next-line no-unused-vars */
-  const [mSettings, update, setMSettings] = useStateObject(runningSettings) // Holds the settings
-  const [validationReport, setValidationReport] = useState(false) // Holds the validatino report
+  const [settings, update, setSettings] = useStateObject(state.settings) // Holds the settings
   const [showDelta, setShowDelta] = useState(false)
-  const [deployOngoing, setDeployOngoing] = useState(false)
-  const [doValidate, setDoValidate] = useState(false)
-  const [kiosk, setKiosk] = useState(false)
-  const [localJson, setLocalJson] = useState(JSON.stringify(runningSettings, null, 2)) // Holds the settings as JSON
-  const [localYaml, setLocalYaml] = useState(yaml.stringify(runningSettings)) // Holds the settings as YAML
+  const [localYaml, setLocalYaml] = useState(yaml.stringify(state.settings)) // Holds the settings as YAML
 
   /*
-   * Method to revert to running settings
+   * Method to revert to the settings in the editor state
    */
-  const revert = () => setMSettings(cloneAsPojo(runningSettings))
-
-  /*
-   * API client
-   */
-  const { api } = useApi()
-
-  /*
-   * Loading context
-   */
-  const { setLoadingStatus } = useContext(LoadingStatusContext)
-
-  /*
-   * Helper method to deploy the settings
-   */
-  const deploy = async () => {
-    setLoadingStatus([true, 'Uploading settings'])
-    setDeployOngoing(true)
-    const result = await api.deploy(mSettings)
-    return result[1] === 204
-      ? setLoadingStatus([true, 'Settings updated', true, true])
-      : setLoadingStatus([true, `Unable to deploy the settings`, true, false])
+  const revert = () => {
+    setSettings(clone(state.settings))
+    setLocalYaml(yaml.stringify(state.settings))
   }
 
-  if (!mSettings.cluster) return null
+  /*
+   * Method to save to the settings into the editor state
+   */
+  const save = () => {
+    props.update.state('settings', yaml.parse(localYaml))
+  }
+
+  if (!settings) return null
 
   /*
    * Handle settings delta
    */
   const delta =
-    diffCheck(yaml.stringify(runningSettings), yaml.stringify(mSettings)).length > 1 ? true : false
-
-  if (deployOngoing)
-    return (
-      <>
-        <Box color="success">
-          <div className="flex flex-row items-center gap-2 text-success-content">
-            <div className="w-6 h-6">
-              <OkIcon className="w-6 h-6 text-success-content" stroke={4} />
-            </div>
-            Settings are being deployed
-          </div>
-        </Box>
-        <p>Please wait as Morio applies the new settings.</p>
-      </>
-    )
+    diffCheck(yaml.stringify(state.settings), yaml.stringify(settings)).length > 1 ? true : false
 
   const onChangeYaml = (input) => {
     let newSettings
@@ -110,122 +97,59 @@ export const PrimedSettingsEditor = (props) => {
       newSettings = yaml.parse(input)
       if (newSettings) {
         setLocalYaml(input)
-        setMSettings(newSettings)
+        setSettings(newSettings)
       }
     } catch (err) {
-      // This is fine
-    }
-  }
-  const onChangeJson = (input) => {
-    let newSettings
-    try {
-      newSettings = JSON.parse(input)
-      if (newSettings) {
-        setLocalJson(input)
-        setMSettings(newSettings)
-      }
-    } catch (err) {
-      console.log(err)
       // This is fine
     }
   }
 
   return (
     <>
-      {mSettings.preseed?.base ? (
-        <Popout warning>
-          <h5>These settings are preseeded</h5>
-          <p>
-            This Morio deployment uses preseeded settings. This means the settings are loaded from a
-            remote system, typically a version control system like GitLab or GitHub.
-          </p>
-          <p>
-            While you <b>can</b> update the settings here, those settings will be lost next time
-            Morio is reseeded.
-            <br />
-            You probably should <b>update the preseeded setting instead</b>.
-          </p>
-        </Popout>
-      ) : null}
-      {doValidate ? (
+      <CodeMirror
+        value={localYaml}
+        height="50vh"
+        onChange={onChangeYaml}
+        extensions={[yamlLang()]}
+      />
+      {delta ? (
         <>
-          <ShowSettingsValidation
-            {...{
-              api,
-              deploy,
-              mSettings,
-              setLoadingStatus,
-              setValidationReport,
-              validationReport,
-            }}
-          />
-          <p className="text-right w-full">
+          <H4>You have made changes</H4>
+          <p>Your settings have been edited, and are now different from the editor settings.</p>
+          <div className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-3 tw-gap-2 tw-w-full">
             <button
-              className="btn btn-primary btn-outline btn-s btn-sm"
-              onClick={() => setDoValidate(false)}
+              className="tw-daisy-btn tw-daisy-btn-primary tw-daisy-btn-outline"
+              onClick={() => setShowDelta(!showDelta)}
             >
-              <NoteIcon /> Back to editor
+              {showDelta ? 'Hide' : 'Show'} Changes
             </button>
-          </p>
-        </>
-      ) : (
-        <div className={kiosk ? 'absolute top-12 left-0 w-screen h-screen z-50 bg-base-100' : ''}>
-          <Tabs tabs="YAML, JSON">
-            <Tab id="json" name="test" label="As YAML">
-              <CodeMirror
-                value={localYaml}
-                height={kiosk ? '90vh' : '70vh'}
-                onChange={onChangeYaml}
-              />
-            </Tab>
-            <Tab id="yaml" label="As JSON">
-              <CodeMirror
-                value={localJson}
-                height={kiosk ? '90vh' : '70vh'}
-                extensions={[jsonLang()]}
-                onChange={onChangeJson}
-              />
-            </Tab>
-          </Tabs>
-          <div className="my-2 w-full flex flex-row flex-wrap items-center gap-2 justify-center">
             <button
-              className="btn btn-primary btn-outline flex flex-row items-center gap-2"
-              onClick={() => setKiosk(!kiosk)}
+              className="tw-daisy-btn tw-daisy-btn-primary tw-flex tw-flex-row tw-items-center tw-justify-between"
+              onClick={save}
             >
-              <ExpandIcon /> {kiosk ? 'Collapse' : 'Expand'}
+              <OkIcon stroke={3} />
+              Save Settings
             </button>
-            <button className="btn btn-primary" onClick={() => setDoValidate(true)}>
-              Validate Settings
+            <button
+              className="tw-daisy-btn tw-daisy-btn-error tw-daisy-btn-outline tw-flex tw-flex-row tw-items-center tw-justify-between"
+              onClick={revert}
+            >
+              <ResetIcon />
+              Revert Settings
             </button>
           </div>
-        </div>
-      )}
-      {!doValidate && delta ? (
-        <Popout note>
-          <h4>You have made changes that are yet to be deployed</h4>
-          <p>The settings have been edited, and are now different from the deployed settings.</p>
           {showDelta ? (
-            <div className="my-4 w-full overflow-scroll">
+            <div className="tw-my-4 tw-w-full tw-overflow-scroll">
               <DiffViewer
-                from={yaml.stringify(runningSettings)}
-                to={yaml.stringify(mSettings)}
+                oldValue={yaml.stringify(state.settings)}
+                newValue={yaml.stringify(settings)}
+                extraLinesSurroundingDiff="1"
                 fromTitle="Currently deployed settings"
                 toTitle="Your edits"
               />
             </div>
           ) : null}
-          <div className="flex flex-row flex-wrap gap-2 justify-end w-full">
-            <button className="btn btn-warning btn-ghost" onClick={revert}>
-              Revert to Running Settings
-            </button>
-            <button
-              className="btn btn-primary btn-outline"
-              onClick={() => setShowDelta(!showDelta)}
-            >
-              {showDelta ? 'Hide' : 'Show'} Settings Delta
-            </button>
-          </div>
-        </Popout>
+        </>
       ) : null}
     </>
   )

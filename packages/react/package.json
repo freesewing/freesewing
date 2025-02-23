@@ -34,6 +34,7 @@
     "./components/Control": "./components/Control/index.mjs",
     "./components/CopyToClipboardButton": "./components/CopyToClipboardButton/index.mjs",
     "./components/Design": "./components/Design/index.mjs",
+    "./components/DiffViewer": "./components/DiffViewer/index.mjs",
     "./components/Docusaurus": "./components/Docusaurus/index.mjs",
     "./components/Editor": "./components/Editor/index.mjs",
     "./components/Heading": "./components/Heading/index.mjs",
@@ -71,6 +72,7 @@
     "./hooks/useDesign": "./hooks/useDesign/index.mjs",
     "./hooks/useDesignTranslation": "./hooks/useDesignTranslation/index.mjs",
     "./hooks/useSelection": "./hooks/useSelection/index.mjs",
+    "./hooks/useStateObject": "./hooks/useStateObject/index.mjs",
     "./lib/RestClient": "./lib/RestClient/index.mjs",
     "./lib/logoPath": "./components/Logo/path.mjs"
   },
@@ -82,9 +84,11 @@
     "react": "^19.0.0"
   },
   "dependencies": {
+    "@codemirror/lang-yaml": "^6.1.2",
     "@uiw/react-codemirror": "^4.23.8",
     "d3-drag": "3.0.0",
     "d3-selection": "3.0.0",
+    "diff": "^7.0.0",
     "file-saver": "^2.0.5",
     "highlight.js": "^11.11.1",
     "html-react-parser": "^5.2.2",
@@ -92,11 +96,13 @@
     "jotai-location": "^0.5.5",
     "luxon": "^3.5.0",
     "pdfkit": "^0.16.0",
+    "react-diff-viewer-continued": "^4.0.5",
     "react-dropzone": "^14.3.5",
     "react-zoom-pan-pinch": "^3.7.0",
     "svg-to-pdfkit": "^0.1.8",
     "use-local-storage-state": "^19.5.0",
-    "web-worker": "^1.5.0"
+    "web-worker": "^1.5.0",
+    "yaml": "^2.7.0"
   },
   "devDependencies": {},
   "files": [

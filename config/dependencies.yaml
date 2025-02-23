@@ -238,9 +238,11 @@ collection:
     '@freesewing/snapseries': *freesewing
 react:
   _:
+    "@codemirror/lang-yaml": "^6.1.2"
     "@uiw/react-codemirror": "^4.23.8"
     d3-drag: "3.0.0"
     d3-selection: "3.0.0"
+    diff: "^7.0.0"
     file-saver: "^2.0.5"
     "highlight.js": "^11.11.1"
     html-react-parser: "^5.2.2"
@@ -248,11 +250,13 @@ react:
     jotai-location: "^0.5.5"
     luxon: "^3.5.0"
     pdfkit: "^0.16.0"
+    react-diff-viewer-continued: "^4.0.5"
     react-dropzone: "^14.3.5"
     react-zoom-pan-pinch: "^3.7.0"
     svg-to-pdfkit: "^0.1.8"
     use-local-storage-state: "^19.5.0"
     web-worker: "^1.5.0"
+    yaml: "^2.7.0"
   peer:
     react: &react "^19.0.0"
 utils:

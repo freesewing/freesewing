@@ -105,7 +105,7 @@ export const viewLabels = {
     t: 'Export Pattern',
     d: 'Export this pattern into a variety of formats',
   },
-  edit: {
+  editSettings: {
     t: 'Edit settings by hand',
     d: "Throw caution to the wind, and hand-edit the pattern's settings",
   },

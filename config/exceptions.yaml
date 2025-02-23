@@ -81,6 +81,7 @@ packageJson:
       "./components/Control": "./components/Control/index.mjs"
       "./components/CopyToClipboardButton": "./components/CopyToClipboardButton/index.mjs"
       "./components/Design": "./components/Design/index.mjs"
+      "./components/DiffViewer": "./components/DiffViewer/index.mjs"
       "./components/Docusaurus": "./components/Docusaurus/index.mjs"
       "./components/Editor": "./components/Editor/index.mjs"
       "./components/Heading": "./components/Heading/index.mjs"
@@ -120,6 +121,7 @@ packageJson:
       "./hooks/useDesign": "./hooks/useDesign/index.mjs"
       "./hooks/useDesignTranslation": "./hooks/useDesignTranslation/index.mjs"
       "./hooks/useSelection": "./hooks/useSelection/index.mjs"
+      "./hooks/useStateObject": "./hooks/useStateObject/index.mjs"
       # Lib
       "./lib/RestClient": "./lib/RestClient/index.mjs"
       "./lib/logoPath": "./components/Logo/path.mjs"
