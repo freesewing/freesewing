@@ -21,6 +21,7 @@ export const Xray = forwardRef((props, ref) => {
     children = false,
     className = 'freesewing pattern',
     components = {},
+    drillProps = {},
   } = props
 
   // Merge pattern, default, and custom components
@@ -31,7 +32,6 @@ export const Xray = forwardRef((props, ref) => {
   }
 
   const { Svg, Defs, Stack, Group } = mergedComponents
-
   const optionalProps = {}
   if (className) optionalProps.className = className
 
@@ -58,6 +58,7 @@ export const Xray = forwardRef((props, ref) => {
                 settings={renderProps.settings}
                 components={mergedComponents}
                 t={t}
+                drillProps={drillProps}
               />
             ))}
       </Group>

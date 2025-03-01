@@ -4,7 +4,7 @@ import React, { forwardRef } from 'react'
 import { getId, getProps } from './utils.mjs'
 
 export const PartInner = forwardRef(
-  ({ stackName, partName, part, settings, components, t }, ref) => {
+  ({ stackName, partName, part, settings, components, t, drillProps }, ref) => {
     const { Group, Path, Point, Snippet } = components
 
     return (
@@ -16,7 +16,7 @@ export const PartInner = forwardRef(
             topLeft={part.topLeft}
             bottomRight={part.bottomRight}
             units={settings[0].units}
-            {...{ stackName, partName, pathName, part, settings, components, t }}
+            {...{ stackName, partName, pathName, part, settings, components, t, drillProps }}
           />
         ))}
         {Object.keys(part.points).map((pointName) => (
@@ -25,14 +25,14 @@ export const PartInner = forwardRef(
             point={part.points[pointName]}
             topLeft={part.topLeft}
             bottomRight={part.bottomRight}
-            {...{ stackName, partName, pointName, part, settings, components, t }}
+            {...{ stackName, partName, pointName, part, settings, components, t, drillProps }}
           />
         ))}
         {Object.keys(part.snippets).map((snippetName) => (
           <Snippet
             key={snippetName}
             snippet={part.snippets[snippetName]}
-            {...{ stackName, partName, snippetName, part, settings, components, t }}
+            {...{ stackName, partName, snippetName, part, settings, components, t, drillProps }}
           />
         ))}
       </Group>
@@ -42,12 +42,12 @@ export const PartInner = forwardRef(
 
 PartInner.displayName = 'PartInner'
 
-export const Part = ({ stackName, partName, part, settings, components, t }) => {
+export const Part = ({ stackName, partName, part, settings, components, t, drillProps }) => {
   const { Group } = components
 
   return (
     <Group {...getProps(part)} id={getId({ settings, stackName, partName })}>
-      <PartInner {...{ stackName, partName, part, settings, components, t }} />
+      <PartInner {...{ stackName, partName, part, settings, components, t, drillProps }} />
     </Group>
   )
 }

@@ -5,6 +5,7 @@ import _set from 'lodash/set.js'
 import _unset from 'lodash/unset.js'
 import _orderBy from 'lodash/orderBy.js'
 import { loadingMessages } from './loading-messages.mjs'
+import { Path, Point } from '@freesewing/core'
 
 /*
  * Re-export lodash utils
@@ -349,6 +350,32 @@ export const mutateObject = (obj = {}, path, val = 'unset') => {
   } else set(obj, path, val)
 
   return obj
+}
+
+/**
+ * This calculates teh length of a path that is obtained from renderprops
+ *
+ * In other words, a plain POJO with the path data, and not an instantiated Path object from core.
+ * This is useful if you want to know the path length after rendering.
+ *
+ * @param {object} path - A path object as available from renderProps
+ * @return {number} length - The path length in mm
+ */
+export function pathLength(path) {
+  let p = new Path()
+  for (const op of path.ops) {
+    if (op.type === 'move') p = p.move(new Point(op.to.x, op.to.y))
+    if (op.type === 'line') p = p.line(new Point(op.to.x, op.to.y))
+    if (op.type === 'curve')
+      p = p.curve(
+        new Point(op.cp1.x, op.cp1.y),
+        new Point(op.cp2.x, op.cp2.y),
+        new Point(op.to.x, op.to.y)
+      )
+    if (op.type === 'close') p = p.close()
+  }
+
+  return p.length()
 }
 
 /** Generate a URL to create a new pattern with a given design, settings, and view */

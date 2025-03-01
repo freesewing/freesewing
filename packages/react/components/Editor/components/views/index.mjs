@@ -3,6 +3,7 @@ import { ViewPicker } from './ViewPicker.mjs'
 import { DesignsView } from './DesignsView.mjs'
 import { MeasurementsView } from './MeasurementsView.mjs'
 import { DraftView } from './DraftView.mjs'
+import { InspectView } from './InspectView.mjs'
 import { SaveView } from './SaveView.mjs'
 import { ExportView } from './ExportView.mjs'
 import { UndosView } from './UndosView.mjs'
@@ -63,6 +64,7 @@ export const View = (props) => {
   if (view === 'layout') return <LayoutView {...props} />
   if (view === 'docs') return <DocsView {...props} />
   if (view === 'editSettings') return <EditSettingsView {...props} />
+  if (view === 'inspect') return <InspectView {...props} />
 
   return <h1 className="tw-ext-center tw-my-12">No view component for view {props.view}</h1>
 }

@@ -11,6 +11,8 @@ import { View } from './components/views/index.mjs'
 import { Spinner } from '@freesewing/react/components/Spinner'
 import { AsideViewMenu } from './components/AsideViewMenu.mjs'
 import { LoadingStatus } from './components/LoadingStatus.mjs'
+import { ModalContextProvider } from '@freesewing/react/context/Modal'
+import { LoadingStatusContextProvider } from '@freesewing/react/context/LoadingStatus'
 
 /**
  * FreeSewing's pattern editor
@@ -93,11 +95,15 @@ export const Editor = ({ config = {}, design = false, preload = {} }) => {
         }
       >
         <LoadingStatus state={passDownState} update={update} />
-        <View
-          {...extraProps}
-          {...{ view, update, designs, config: editorConfig }}
-          state={passDownState}
-        />
+        <ModalContextProvider>
+          <LoadingStatusContextProvider>
+            <View
+              {...extraProps}
+              {...{ view, update, designs, config: editorConfig }}
+              state={passDownState}
+            />
+          </LoadingStatusContextProvider>
+        </ModalContextProvider>
       </div>
     </div>
   )

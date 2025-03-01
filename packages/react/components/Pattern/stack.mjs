@@ -3,14 +3,14 @@
 import React from 'react'
 import { getProps } from './utils.mjs'
 
-export const Stack = ({ stackName, stack, settings, components, t }) => {
+export const Stack = ({ stackName, stack, settings, components, t, drillProps }) => {
   const { Group, Part, Grid } = components
 
   return (
     <Group {...getProps(stack)}>
-      {settings[0].paperless ? <Grid {...{ stack, stackName }} /> : null}
+      {settings[0].paperless ? <Grid {...{ stack, stackName, drillProps }} /> : null}
       {[...stack.parts].map((part, key) => (
-        <Part {...{ settings, components, t, part, stackName }} key={key} />
+        <Part {...{ settings, components, t, part, stackName, drillProps }} key={key} />
       ))}
     </Group>
   )
