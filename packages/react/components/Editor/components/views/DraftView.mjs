@@ -5,7 +5,6 @@ import { draft, missingMeasurements } from '../../lib/index.mjs'
 import { Null } from '../Null.mjs'
 import { ZoomablePattern } from '../ZoomablePattern.mjs'
 import { PatternLayout } from '../PatternLayout.mjs'
-import { DraftMenu } from '../menus/DraftMenu.mjs'
 
 /**
  * The draft view allows users to tweak their pattern

@@ -46,6 +46,37 @@ export function draft(Design, settings, plugins = []) {
   return data
 }
 
+/*
+ * This method samples a pattern option
+ *
+ * @param {function} Design - The Design constructor
+ * @param {object} settings - The settings for the pattern
+ * @param {array} plugins - Any (extra) plugins to load into the pattern
+ * @return {object} data - The drafted pattern, along with errors and failure data
+ */
+export function sample(Design, settings, plugins = []) {
+  const pattern = new Design(settings)
+  for (const plugin of plugins) pattern.use(plugin)
+  const data = {
+    // The pattern
+    pattern,
+    // Any errors logged by the pattern
+    errors: [],
+    // If the pattern fails to draft, this will hold the error
+    failure: false,
+  }
+  // Draft the pattern or die trying
+  try {
+    data.pattern.sample()
+    data.errors.push(...data.pattern.store.logs.error)
+    for (const store of data.pattern.setStores) data.errors.push(...store.logs.error)
+  } catch (error) {
+    data.failure = error
+  }
+
+  return data
+}
+
 export function flattenFlags(flags) {
   const all = {}
   for (const type of defaultConfig.flagTypes) {

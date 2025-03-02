@@ -41,6 +41,7 @@ import { DesignOptionsMenu } from './menus/DesignOptionsMenu.mjs'
 import { CoreSettingsMenu } from './menus/CoreSettingsMenu.mjs'
 import { UiPreferencesMenu } from './menus/UiPreferencesMenu.mjs'
 import { LayoutSettingsMenu } from './menus/LayoutMenu.mjs'
+import { TestOptionsMenu, TestMeasurementsMenu } from './menus/TestMenu.mjs'
 import { FlagsAccordionEntries } from './Flag.mjs'
 import { UndoStep } from './views/UndosView.mjs'
 
@@ -82,6 +83,54 @@ export const HeaderMenuDraftView = (props) => {
       <HeaderMenuUndoIcons {...props} />
       <HeaderMenuSaveIcons {...props} />
     </>
+  )
+}
+
+export const HeaderMenuTestView = (props) => {
+  const i18n = useDesignTranslation(props.Design.designConfig.data.id)
+
+  return (
+    <>
+      <HeaderMenuTestViewDesignOptions {...props} i18n={i18n} />
+      <HeaderMenuTestViewDesignMeasurements {...props} />
+      <HeaderMenuTestIcons {...props} i18n={i18n} />
+    </>
+  )
+}
+
+export const HeaderMenuTestViewDesignOptions = (props) => {
+  return (
+    <HeaderMenuDropdown
+      {...props}
+      id="designOptions"
+      tooltip="These options are specific to this design. You can use them to customize your pattern in a variety of ways."
+      toggle={
+        <>
+          <HeaderMenuIcon name="options" extraClasses="tw-text-secondary" />
+          <span className="tw-hidden lg:tw-inline">Test Options</span>
+        </>
+      }
+    >
+      <TestOptionsMenu {...props} />
+    </HeaderMenuDropdown>
+  )
+}
+
+export const HeaderMenuTestViewDesignMeasurements = (props) => {
+  return (
+    <HeaderMenuDropdown
+      {...props}
+      id="designMeasurements"
+      tooltip="These options are specific to this design. You can use them to customize your pattern in a variety of ways."
+      toggle={
+        <>
+          <HeaderMenuIcon name="options" extraClasses="tw-text-secondary" />
+          <span className="tw-hidden lg:tw-inline">Test Measurements</span>
+        </>
+      }
+    >
+      <TestMeasurementsMenu {...props} />
+    </HeaderMenuDropdown>
   )
 }
 
@@ -381,6 +430,24 @@ export const HeaderMenuUndoIcons = (props) => {
   )
 }
 
+export const HeaderMenuTestIcons = (props) => {
+  const { update, state, Design } = props
+  const Button = HeaderMenuButton
+  const size = 'tw-w-5 tw-h-5'
+  const undos = state._?.undos && state._.undos.length > 0 ? state._.undos : false
+
+  return (
+    <div className="tw-flex tw-flex-row tw-flex-wrap tw-items-center tw-justify-center tw-px-0.5 lg:tw-px-1">
+      <Button
+        updateHandler={() => update.settings('sample', undefined)}
+        tooltip="Clear the test so you can select another"
+      >
+        Clear Test
+      </Button>
+    </div>
+  )
+}
+
 export const HeaderMenuSaveIcons = (props) => {
   const { update, state } = props
   const backend = useBackend()
@@ -498,7 +565,9 @@ export const HeaderMenuViewMenu = (props) => {
       toggle={
         <>
           <HeaderMenuIcon name="right" stroke={3} extraClasses="tw-text-secondary tw-rotate-90" />
-          <span className="tw-hidden lg:tw-inline">Views</span>
+          <span className="tw-hidden lg:tw-inline">
+            {viewLabels[state.view] ? viewLabels[state.view].t : 'Views'}
+          </span>
         </>
       }
     >
@@ -611,6 +680,7 @@ export const HeaderMenuLayoutViewIcons = (props) => {
 
 const headerMenus = {
   draft: HeaderMenuDraftView,
+  test: HeaderMenuTestView,
   layout: HeaderMenuLayoutView,
   //HeaderMenuDraftViewDesignOptions,
   //HeaderMenuDraftViewCoreSettings,

@@ -10,6 +10,7 @@ import { UndosView } from './UndosView.mjs'
 import { LayoutView } from './LayoutView.mjs'
 import { DocsView } from './DocsView.mjs'
 import { LogView } from './LogView.mjs'
+import { TestView } from './TestView.mjs'
 import { EditSettingsView } from './EditSettingsView.mjs'
 import { ErrorIcon } from '@freesewing/react/components/Icon'
 import {
@@ -67,6 +68,7 @@ export const View = (props) => {
   if (view === 'editSettings') return <EditSettingsView {...props} />
   if (view === 'inspect') return <InspectView {...props} />
   if (view === 'logs') return <LogView {...props} />
+  if (view === 'test') return <TestView {...props} />
 
   return <h1 className="tw-ext-center tw-my-12">No view component for view {props.view}</h1>
 }

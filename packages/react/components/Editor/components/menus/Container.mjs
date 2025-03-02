@@ -174,6 +174,7 @@ export const MenuItemGroup = ({
   i18n,
 }) => {
   if (!Item) Item = MenuItem
+  console.log(structure)
 
   // map the entries in the structure
   const content = Object.entries(structure).map(([itemName, item]) => {
@@ -285,3 +286,79 @@ export const MenuItemTitle = ({ name, current = null, open = false, emoji = '', 
     <span className="tw-font-bold">{current}</span>
   </div>
 )
+
+/**
+ * A component for recursively displaying groups of menu buttons.
+ *
+ * This is a lot simpler than the options menu structure
+ *
+ * @param  {object}  props - All the React props
+ * @param  {object}  props.structure - The menu structure
+ * @param  {React.Component}  props.Button - The component to use for menu items
+ * @param  {freesewing.Design}  props.Design - The FreeSewing design
+ * @param  {object}  props.i18n - The translations object
+ */
+export const MenuButtonGroup = ({ structure, Button = false, Design, Icon, i18n }) => {
+  if (!Button) return null
+  /*
+   * Create structure, push groups to the end
+   */
+  const content = []
+  for (const [itemName, item] of Object.entries(structure)) {
+    if (item && !item.isGroup && !['isGroup', 'title'].includes(itemName))
+      content.push(<Button key={itemName} {...{ name: itemName }} />)
+  }
+
+  for (const [itemName, item] of Object.entries(structure)) {
+    if (item && item.isGroup) {
+      const ItemIcon = item.icon
+        ? item.icon
+        : item.isGroup
+          ? GroupIcon
+          : Icon
+            ? Icon
+            : () => <span role="img">fixme-icon</span>
+      const Value = item.isGroup
+        ? () => (
+            <div className="tw-flex tw-flex-row tw-gap-2 tw-items-center tw-font-medium">
+              {Object.keys(item).filter((i) => i !== 'isGroup').length}
+              <OptionsIcon className="tw-w-5 tw-h-5" />
+            </div>
+          )
+        : null
+
+      content.push([
+        <div
+          className="tw-flex tw-flex-row tw-items-center tw-justify-between tw-w-full tw-pl-0 tw-pr-4 tw-py-2"
+          key="a"
+        >
+          <div className="tw-flex tw-flex-row tw-items-center tw-gap-4 tw-w-full">
+            <ItemIcon />
+            <span className="tw-font-medium tw-capitalize">
+              {item.title ? item.title : getItemLabel(i18n, itemName)}
+            </span>
+          </div>
+          <div className="tw-font-bold">
+            <Value config={item} Design={Design} />
+          </div>
+        </div>,
+        <MenuButtonGroup
+          key={itemName}
+          {...{
+            structure: item,
+            Icon,
+            Button,
+            Design,
+            i18n,
+          }}
+        />,
+      ])
+    }
+  }
+
+  return (
+    <div className="tw-flex tw-flex-col tw-gap-0.5 tw-ml-4">
+      {content.filter((item) => item !== null)}
+    </div>
+  )
+}
