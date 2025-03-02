@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react'
 import { useBackend } from '@freesewing/react/hooks/useBackend'
 import { useDesignTranslation } from '@freesewing/react/hooks/useDesignTranslation'
 // Components
-import { Null } from './Null.mjs'
+import { Null } from '@freesewing/react/components/Null'
 import { AsideViewMenuSpacer } from './AsideViewMenu.mjs'
 import { ViewIcon, viewLabels } from './views/index.mjs'
 import { Tooltip } from './Tooltip.mjs'
@@ -682,6 +682,7 @@ const headerMenus = {
   draft: HeaderMenuDraftView,
   test: HeaderMenuTestView,
   layout: HeaderMenuLayoutView,
+  timing: HeaderMenuDraftView,
   //HeaderMenuDraftViewDesignOptions,
   //HeaderMenuDraftViewCoreSettings,
   //HeaderMenuDraftViewUiPreferences,

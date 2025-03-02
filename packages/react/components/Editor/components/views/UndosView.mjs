@@ -91,7 +91,7 @@ export const UndoStep = ({ update, state, step, Design, compact = false, index =
    */
   const data = getUndoStepData({ step, state, Design, imperial })
 
-  if (data === false) return <pre>{JSON.stringify(step, null, 2)}</pre> //null
+  if (data === false) return null //<pre>{JSON.stringify(step, null, 2)}</pre> //null
   if (data === null) return <p>Unsupported</p>
 
   if (compact)

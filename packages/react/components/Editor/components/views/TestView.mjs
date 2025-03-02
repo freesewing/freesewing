@@ -4,7 +4,7 @@ import { sample, missingMeasurements, menuDesignOptionsStructure } from '../../l
 import { measurements as measurementsTranslations } from '@freesewing/i18n'
 import { orderBy } from '@freesewing/utils'
 // Components
-import { Null } from '../Null.mjs'
+import { Null } from '@freesewing/react/components/Null'
 import { ZoomablePattern } from '../ZoomablePattern.mjs'
 import { PatternLayout } from '../PatternLayout.mjs'
 import { HeaderMenu } from '../HeaderMenu.mjs'

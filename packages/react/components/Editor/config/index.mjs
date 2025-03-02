@@ -19,14 +19,6 @@ export const defaultConfig = {
   devViews: ['editSettings', 'inspect', 'logs', 'test', 'timing'],
   utilViews: ['picker'],
   measurementsFreeViews: ['designs', 'measurements', 'docs', 'picker'],
-  mainViewColors: {
-    draft: 'primary',
-    save: 'none',
-    export: 'none',
-    designs: 'accent',
-    measurements: 'primary',
-    docs: 'secondary',
-  },
   // View components
   // Facilitate lookup of view components
   viewComponents: {

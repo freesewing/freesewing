@@ -11,6 +11,7 @@ import { LayoutView } from './LayoutView.mjs'
 import { DocsView } from './DocsView.mjs'
 import { LogView } from './LogView.mjs'
 import { TestView } from './TestView.mjs'
+import { TimingView } from './TimingView.mjs'
 import { EditSettingsView } from './EditSettingsView.mjs'
 import { ErrorIcon } from '@freesewing/react/components/Icon'
 import {
@@ -34,7 +35,7 @@ import {
 /*
  * A lookup table for view icons
  */
-const viewIcons = {
+export const viewIcons = {
   draft: OptionsIcon,
   measurements: MeasurementsIcon,
   test: BeakerIcon,
@@ -69,6 +70,8 @@ export const View = (props) => {
   if (view === 'inspect') return <InspectView {...props} />
   if (view === 'logs') return <LogView {...props} />
   if (view === 'test') return <TestView {...props} />
+  if (view === 'timing') return <TimingView {...props} />
+  if (view === 'picker') return <ViewPicker {...props} />
 
   return <h1 className="tw-ext-center tw-my-12">No view component for view {props.view}</h1>
 }
@@ -129,7 +132,7 @@ export const viewLabels = {
   },
   designs: {
     t: 'Choose a different Design',
-    d: 'Current design: {- design }',
+    d: 'Select a different design from the collection',
   },
   picker: {
     t: 'Choose a different view',

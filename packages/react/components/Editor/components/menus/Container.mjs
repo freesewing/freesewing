@@ -174,7 +174,6 @@ export const MenuItemGroup = ({
   i18n,
 }) => {
   if (!Item) Item = MenuItem
-  console.log(structure)
 
   // map the entries in the structure
   const content = Object.entries(structure).map(([itemName, item]) => {

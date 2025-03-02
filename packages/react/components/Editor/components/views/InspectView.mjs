@@ -5,7 +5,7 @@ import { draft, missingMeasurements } from '../../lib/index.mjs'
 import { ModalContext } from '@freesewing/react/context/Modal'
 // Components
 import { ModalWrapper } from '@freesewing/react/components/Modal'
-import { Null } from '../Null.mjs'
+import { Null } from '@freesewing/react/components/Null'
 import { ZoomablePattern } from '../ZoomablePattern.mjs'
 import { PatternLayout } from '../PatternLayout.mjs'
 import { DraftMenu } from '../menus/DraftMenu.mjs'

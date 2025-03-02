@@ -2,7 +2,7 @@
 import React from 'react'
 import { draft, missingMeasurements } from '../../lib/index.mjs'
 // Components
-import { Null } from '../Null.mjs'
+import { Null } from '@freesewing/react/components/Null'
 import { ZoomablePattern } from '../ZoomablePattern.mjs'
 import { PatternLayout } from '../PatternLayout.mjs'
 
@@ -16,9 +16,11 @@ import { PatternLayout } from '../PatternLayout.mjs'
  * @param {object} props.state - The ViewWrapper state object
  * @param {object} props.state.settings - The current settings
  * @param {object} props.update - Helper object for updating the ViewWrapper state
+ * @param {React.component} props.plugins - Any (extra) plugins to load in the pattern
+ * @param {React.component} props.PluginOutput - An optional component to display plugin-specific output
  * @return {function} DraftView - React component
  */
-export const DraftView = ({ Design, state, update, config }) => {
+export const DraftView = ({ Design, state, update, config, plugins = [], PluginOutput = Null }) => {
   /*
    * Don't trust that we have all measurements
    *
@@ -36,7 +38,7 @@ export const DraftView = ({ Design, state, update, config }) => {
   /*
    * First, attempt to draft
    */
-  const { pattern } = draft(Design, state.settings)
+  const { pattern } = draft(Design, state.settings, plugins)
 
   let output = null
   let renderProps = false
@@ -44,9 +46,12 @@ export const DraftView = ({ Design, state, update, config }) => {
     try {
       const __html = pattern.render()
       output = (
-        <ZoomablePattern>
-          <div className="tw-w-full tw-h-full" dangerouslySetInnerHTML={{ __html }} />
-        </ZoomablePattern>
+        <>
+          <PluginOutput {...{ pattern, Design, state, update, config }} />
+          <ZoomablePattern>
+            <div className="tw-w-full tw-h-full" dangerouslySetInnerHTML={{ __html }} />
+          </ZoomablePattern>
+        </>
       )
     } catch (err) {
       console.log(err)
@@ -54,11 +59,14 @@ export const DraftView = ({ Design, state, update, config }) => {
   } else {
     renderProps = pattern.getRenderProps()
     output = (
-      <ZoomablePattern
-        renderProps={renderProps}
-        patternLocale={state.locale || 'en'}
-        rotate={state.ui.rotate}
-      />
+      <>
+        <PluginOutput {...{ pattern, Design, state, update, config }} />
+        <ZoomablePattern
+          renderProps={renderProps}
+          patternLocale={state.locale || 'en'}
+          rotate={state.ui.rotate}
+        />
+      </>
     )
   }
 

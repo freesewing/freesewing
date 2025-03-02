@@ -42,7 +42,7 @@ export const EditSettingsView = (props) => {
         <p className="tw-mb-4">
           You can hand-edit your pattern settings below.
           <br />
-          The changes will not take effect until you click the <b>Apply changes</b> button at the
+          The changes will not take effect until you click the <b>Save Settings</b> button at the
           bottom.
         </p>
         <PrimedSettingsEditor {...props} />

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Spinner } from '@freesewing/react/components/Spinner'
 import { TipIcon, OkIcon } from '@freesewing/react/components/Icon'
-import { Null } from './Null.mjs'
+import { Null } from '@freesewing/react/components/Null'
 
 const config = {
   timeout: 2.5,

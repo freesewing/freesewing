@@ -1,111 +1,114 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
+import { defaultConfig as config } from '../../config/index.mjs'
+import { viewIcons, viewLabels } from './index.mjs'
+// Components
+import { Popout } from '@freesewing/react/components/Popout'
+import { H1, H2, H4, H5 } from '@freesewing/react/components/Heading'
 
 /**
  * The design view is loaded if and only if not design is passed to the editor
  *
  * @param (object) props - All the props
- * @param {object} props.swizzled - An object with swizzled components, hooks, methods, config, and defaults
  * @param {object} designs - Object holding all designs
  * @param {object} update - ViewWrapper state update object
  */
-export const ViewPicker = ({ Design, Swizzled, update, state }) => {
+export const ViewPicker = ({ Design, update, state }) => {
   const [showDev, setShowDev] = useState(false)
 
   /*
-   * If we don't have the measurments, only present measurements free views
+   * If we don't have the measurements, only present measurements free views
    */
   if (state._.missingMeasurements.length > 1)
     return (
-      <div className="text-center mt-8 mb-24 px-4 max-w-xl mx-auto">
-        <h2>{Swizzled.methods.t('Choose an activity')}</h2>
-        <div className="flex flex-col mx-auto justify-center gap-2 mt-4">
-          {Swizzled.config.measurementsFreeViews
+      <div className="tw-text-center tw-mt-8 tw-mb-24 tw-px-4 tw-max-w-xl tw-mx-auto">
+        <H2>Choose a view</H2>
+        <div className="tw-flex tw-flex-col tw-mx-auto tw-justify-center tw-gap-2 tw-mt-4">
+          {config.measurementsFreeViews
             .filter((view) => view !== 'picker')
             .map((view) => (
-              <MainCard key={view} {...{ view, update, Design, Swizzled }} />
+              <MainCard key={view} {...{ view, update, Design }} />
             ))}
-          <Swizzled.components.Popout note>
-            <div className="text-left">
-              <h5>{Swizzled.methods.t('pe:measurementsFreeViewsOnly.t')}:</h5>
-              <p>{Swizzled.methods.t('pe:measurementsFreeViewsOnly.d')}</p>
+          <Popout note>
+            <div className="tw-text-left">
+              <H5>pe:measurementsFreeViewsOnly.t:</H5>
+              <p>pe:measurementsFreeViewsOnly.d</p>
             </div>
-          </Swizzled.components.Popout>
+          </Popout>
         </div>
       </div>
     )
 
   return (
-    <div className="text-center mt-8 mb-24 px-4">
-      <h2>{Swizzled.methods.t('Choose an activity')}</h2>
-      <div className="max-w-6xl grid grid-cols-1 lg:grid-cols-2 mx-auto justify-center gap-2 lg:gap-4 mt-4">
-        {Swizzled.config.mainViews.map((view) => (
-          <MainCard key={view} {...{ view, update, Design, Swizzled }} />
+    <div className="tw-text-center tw-mt-8 tw-mb-24 tw-px-4">
+      <H2>Choose an Editor View</H2>
+      <div className="tw-max-w-6xl tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-mx-auto tw-justify-center tw-gap-2 lg:tw-gap-4 tw-mt-4">
+        {config.mainViews.map((view) => (
+          <MainCard key={view} {...{ view, update, Design }} />
         ))}
       </div>
-      <div className="max-w-6xl grid grid-cols-1 lg:grid-cols-4 mx-auto justify-center gap-2 lg:gap-4 mt-4">
-        {Swizzled.config.extraViews.map((view) => (
-          <ExtraCard key={view} {...{ view, update, Swizzled }} />
+      <div className="tw-max-w-6xl tw-grid tw-grid-cols-1 lg:tw-grid-cols-4 tw-mx-auto tw-justify-center tw-gap-2 lg:tw-gap-4 tw-mt-4">
+        {config.extraViews.map((view) => (
+          <ExtraCard key={view} {...{ view, update }} />
         ))}
       </div>
       {showDev || state.ui.ux > 3 ? (
-        <div className="max-w-6xl grid grid-cols-1 lg:grid-cols-4 mx-auto justify-center gap-2 lg:gap-4 mt-4">
-          {Swizzled.config.devViews.map((view) => (
-            <ExtraCard key={view} {...{ view, update, Swizzled }} />
+        <div className="tw-max-w-6xl tw-grid tw-grid-cols-1 lg:tw-grid-cols-4 tw-mx-auto tw-justify-center tw-gap-2 lg:tw-gap-4 tw-mt-4">
+          {config.devViews.map((view) => (
+            <ExtraCard key={view} {...{ view, update }} />
           ))}
         </div>
       ) : null}
       {state.ui.ux < 4 ? (
-        <button className="btn btn-ghost mt-2" onClick={() => setShowDev(!showDev)}>
-          {Swizzled.methods.t(`pe:${showDev ? 'hide' : 'show'}AdvancedOptions`)}
+        <button
+          className="tw-daisy-btn tw-daisy-btn-ghost tw-mt-2"
+          onClick={() => setShowDev(!showDev)}
+        >
+          {showDev ? 'Hide' : 'Show'} Advanced Views
         </button>
       ) : null}
     </div>
   )
 }
 
-const MainCard = ({ view, Swizzled, update, Design }) => {
-  const Icon = Swizzled.components[`View${Swizzled.methods.capitalize(view)}Icon`]
-  const { NoIcon } = Swizzled.components
-  const color = Swizzled.config.mainViewColors[view] || 'neutral'
+const MainCard = ({ view, update, Design }) => {
+  const Icon = viewIcons[view]
+
   return (
     <button
-      className={`border shadow p-4 rounded-lg w-full bg-${
-        color === 'none' ? 'secondary' : color
-      } ${
-        color === 'none' ? 'bg-opacity-10 hover:bg-opacity-20' : 'hover:bg-opacity-90'
-      } flex flex-col`}
-      title={Swizzled.methods.t(`pe:view.${view}.t`)}
+      className={`tw-border tw-shadow tw-p-4 tw-rounded-lg tw-w-full hover:tw-bg-secondary hover:tw-bg-opacity-20 tw-flex tw-flex-col`}
+      title={viewLabels[view].t}
       onClick={() => update.view(view)}
     >
-      <h4
-        className={`flex flex-row items-center justify-between p-0 text-${color}-content mb-2 text-left`}
-      >
-        {Swizzled.methods.t(`pe:view.${view}.t`)}
-        {Icon ? <Icon className="w-10 h-10" /> : <NoIcon className="w-10 h-10" />}
-      </h4>
-      <p className={`text-left text-lg m-0 p-0 text-${color}-content grow-2`}>
-        {Swizzled.methods.t(`pe:view.${view}.d`, {
-          design: `${Design.designConfig.data.name} v${Design.designConfig.data.version}`,
-        })}
+      <H4>
+        <div
+          className={`tw-flex tw-flex-row tw-items-start tw-justify-between tw-p-0 tw-mb-2 tw-text-left`}
+        >
+          <span>{viewLabels[view].t}</span>
+          <Icon className="tw-w-10 tw-h-10" />
+        </div>
+      </H4>
+      <p className={`tw-text-left tw-text-lg tw-m-0 tw-p-0 tw-grow-2 tw-font-medium`}>
+        {viewLabels[view].d}
       </p>
     </button>
   )
 }
 
-const ExtraCard = ({ view, Swizzled, update }) => {
-  const Icon = Swizzled.components[`View${Swizzled.methods.capitalize(view)}Icon`]
-  const { NoIcon } = Swizzled.components
+const ExtraCard = ({ view, update }) => {
+  const Icon = viewIcons[view]
   return (
     <button
-      className="border shadow p-3 rounded-lg w-full hover:bg-secondary hover:bg-opacity-20 flex flex-col"
-      title={Swizzled.methods.t(`pe:view.${view}.t`)}
+      className="tw-border tw-shadow tw-p-3 tw-rounded-lg tw-w-full hover:tw-bg-secondary hover:tw-bg-opacity-20 tw-flex tw-flex-col"
+      title={viewLabels[view].t}
       onClick={() => update.view(view)}
     >
-      <h5 className="flex flex-row items-center justify-between p-0 mb-1 text-left">
-        {Swizzled.methods.t(`pe:view.${view}.t`)}
-        {Icon ? <Icon className="w-8 h-8" /> : <NoIcon className="w-8 h-8" />}
-      </h5>
-      <p className="text-left m-0 p-0 grow-2">{Swizzled.methods.t(`pe:view.${view}.d`)}</p>
+      <H5>
+        <div className="tw-flex tw-flex-row tw-items-center tw-justify-between tw-p-0 tw-mb-1 tw-text-left">
+          <span>{viewLabels[view].t}</span>
+          <Icon className="tw-w-8 tw-h-8" />
+        </div>
+      </H5>
+      <p className="tw-text-left tw-m-0 tw-p-0 tw-grow-2">{viewLabels[view].d}</p>
     </button>
   )
 }
