@@ -103,7 +103,7 @@ export const HeaderMenuTestViewDesignOptions = (props) => {
     <HeaderMenuDropdown
       {...props}
       id="designOptions"
-      tooltip="These options are specific to this design. You can use them to customize your pattern in a variety of ways."
+      tooltip="See how design options influence the pattern being generated."
       toggle={
         <>
           <HeaderMenuIcon name="options" extraClasses="tw-text-secondary" />
@@ -121,7 +121,7 @@ export const HeaderMenuTestViewDesignMeasurements = (props) => {
     <HeaderMenuDropdown
       {...props}
       id="designMeasurements"
-      tooltip="These options are specific to this design. You can use them to customize your pattern in a variety of ways."
+      tooltip="See how changes to a measurment influence the pattern being generated."
       toggle={
         <>
           <HeaderMenuIcon name="options" extraClasses="tw-text-secondary" />
