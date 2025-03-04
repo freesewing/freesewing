@@ -24,7 +24,7 @@
     "cutWaistband.d": "The **Waistband** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long.",
     "cutBackPocket.t": "The back pocket is not shown",
     "cutBackPocket.d": "The **Back Pocket** is a piece of fabric than can be traced from the **Back** part.",
-    "fly.t":  "Fly",
+    "fly.t": "Fly",
     "fly.d": "Fly settings",
     "yoke.t": "Yoke",
     "yoke.d": "Yoke settings"
@@ -50,7 +50,7 @@
       "t": "Length",
       "d": "Controls the length of the pants"
     },
-     "flyWidth": {
+    "flyWidth": {
       "t": "Fly width",
       "d": "Controls how far the J-seam of offset from the fly edge"
     },
@@ -70,11 +70,11 @@
       "t": "Front pockets",
       "d": "If the pants should have front pockets"
     },
-     "backPockets": {
+    "backPockets": {
       "t": "Back pockets",
       "d": "If the pants should have back pockets"
     },
-       "backPocketAsymmetry": {
+    "backPocketAsymmetry": {
       "t": "Back pocket asymmetry",
       "d": "Controls the shape of the back pockets"
     },
@@ -85,7 +85,7 @@
     "pocketOpeningHeight": {
       "t": "Pocket opening height",
       "d": "How high the opening of the front pockets should be"
-    } ,
+    },
     "pocketCurveShape": {
       "t": "Pocket curve shape",
       "d": "Controls the curve of the front pocket opening"
@@ -98,15 +98,15 @@
       "t": "Gusset",
       "d": "Controls if a crotch gusset should be constructed"
     },
-      "gussetNo": {
+    "gussetNo": {
       "t": "Without Gusset",
       "d": "Don't construct a crotch gusset"
     },
-       "gussetYes": {
+    "gussetYes": {
       "t": "With Gusset",
       "d": "Add a crotch gusset"
     },
-       "gussetSize": {
+    "gussetSize": {
       "t": "Gusset size",
       "d": "Controls the size of the gusset"
     },
@@ -114,7 +114,7 @@
       "t": "Gusset width",
       "d": "Controls the width of the gusset compared to its general size"
     },
-     "gussetBalance": {
+    "gussetBalance": {
       "t": "Gusset balance",
       "d": "Controls how much of the front part is cut off to construct the gusset"
     },
@@ -128,7 +128,7 @@
     },
     "yokeBalance": {
       "t": "Yoke balance",
-      "d": "Controls the shifts the height of the yoke in- or outwards"
+      "d": "Shifts the height of the yoke in- or outwards"
     },
     "buttons": {
       "t": "Buttons",
@@ -162,7 +162,7 @@
       "t": "Pocket bag slant",
       "d": "Controls the slant of the pocket bag"
     },
-     "pocketBagWidth": {
+    "pocketBagWidth": {
       "t": "Pocket bag width",
       "d": "Controls the width of the pocket bag"
     },
