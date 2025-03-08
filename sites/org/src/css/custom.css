@@ -217,6 +217,10 @@ figcaption.mdx {
   text-decoration-thickness: 4px;
 }
 
+.markdown ul > li > p {
+  display: inline;
+}
+
 /*
  * Make the 'edit this page' link look consistent
  */
@@ -254,6 +258,30 @@ a.daisy-btn-neutral:hover {
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  /* Applied styles for common HTML tags */
+  h1 {
+    @apply tw-text-5xl tw-pt-5 tw-pb-4 tw-font-light tw-tracking-tight lg:tw-text-6xl;
+  }
+  h2 {
+    @apply tw-text-3xl tw-pt-4 tw-pb-3 tw-font-black tw-m-0 tw-tracking-tight lg:tw-text-4xl;
+  }
+  h3 {
+    @apply tw-text-2xl tw-pt-3 tw-pb-2 tw-font-extrabold tw-tracking-tight tw-m-0 lg:tw-text-3xl;
+  }
+  h4 {
+    @apply tw-text-xl tw-pt-2 tw-pb-1 tw-font-bold tw-m-0 tw-tracking-tight lg:tw-text-2xl;
+  }
+  h5 {
+    @apply tw-text-lg tw-py-1 tw-font-semibold tw-m-0 tw-tracking-tight lg:tw-text-xl;
+  }
+  h6 {
+    @apply tw-text-base tw-py-1 tw-font-medium tw-italic tw-m-0 tw-tracking-tight lg:tw-text-lg;
+  }
+  .markdown ul {
+    @apply tw-list-inside tw-list-disc tw-ml-4;
+  }
+}
 nav.navbar {
   background-color: var(--ifm-background-color);
 }
