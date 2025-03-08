@@ -55,12 +55,27 @@ export const SuccessLink = ({
   </a>
 )
 
-export const CardLink = ({ href, title, Icon, children, Link }) => {
+export const CardLink = ({
+  href,
+  title,
+  icon,
+  children,
+  Link,
+  className = 'tw-bg-base-200 tw-text-base-content',
+}) => {
   if (!Link) Link = BaseLink
 
   return (
-    <Link className="">
-      {title}
+    <Link
+      href={href}
+      className={`tw-px-8 tw-py-10 tw-rounded-lg tw-block ${className}
+      hover:tw-bg-secondary hover:tw-bg-opacity-10 tw-shadow-lg
+      tw-transition-color tw-duration-300 grow hover:tw-no-underline hover:tw-text-base-content`}
+    >
+      <h2 className="tw-mb-4 tw-text-inherit tw-flex tw-flex-row tw-gap-4 tw-justify-between tw-items-center">
+        {title}
+        <span className="tw-shrink-0">{icon}</span>
+      </h2>
       {children}
     </Link>
   )

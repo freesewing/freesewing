@@ -13,9 +13,9 @@ const textShadow = {
 
 const teaserClasses = `tw-absolute tw-bottom-4 tw-right-0 tw-ml-3
   tw-rounded-l md:tw-rounded-l-lg tw-bg-neutral tw-bg-opacity-80 tw-p-1 tw-px-4 tw-font-medium
-  tw-text-neutral-content tw-text-right tw-text-sm md:tw-text-lg`
+  tw-text-neutral-content tw-text-right tw-text-sm md:tw-text-lg lg:tw-text-xl`
 
-const BlogPostTeaser = ({ post }) => (
+export const BlogPostTeaser = ({ post }) => (
   <Link
     className="tw-aspect-video tw-relative tw-shadow tw-rounded-lg"
     href={post.content.metadata.permalink}

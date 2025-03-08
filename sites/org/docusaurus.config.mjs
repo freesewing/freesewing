@@ -268,65 +268,41 @@ const config = {
         { to: '/showcase/', label: '📷 Showcase', position: 'left' },
         { to: '/blog/', label: '📰 Blog', position: 'left' },
         { to: '/new/', label: '➕ New...', position: 'right' },
-        { to: '/account/', label: '📰 Account', position: 'right' },
+        { to: '/account/', label: '🔒 Account', position: 'right' },
       ],
     },
     footer: {
       style: 'light',
       links: [
         {
-          title: 'Docs',
+          title: 'Sections',
           items: [
-            { label: 'FreeSewing designs', to: '/docs/designs/' },
-            { label: 'About FreeSewing', to: '/docs/about/' },
-            { label: 'Measurements we use', to: '/docs/measurements/' },
-            { label: 'Sewing terminology', to: '/docs/sewing/' },
+            { label: 'FreeSewing Designs', to: '/designs/' },
+            { label: 'FreeSewing Showcase', to: '/showcase/' },
+            { label: 'FreeSewing Blog', to: '/blog/' },
+            { label: 'FreeSewing Editor', to: '/editor/' },
           ],
         },
         {
           title: 'Help & Support',
           items: [
-            {
-              label: 'Discord',
-              href: 'https://discord.freesewing.org/',
-            },
-            {
-              label: 'GitHub Issues',
-              href: 'https://github.com/freesewing/freesewing/issues',
-            },
-            {
-              label: 'GitHub Discussions',
-              href: 'https://github.com/freesewing/freesewing/discussions',
-            },
-            {
-              label: 'All Support Options',
-              href: 'https://freesewing.org/support',
-            },
+            { label: 'About FreeSewing', to: '/docs/about/' },
+            { label: 'Getting Started', to: '/docs/about/guide/' },
+            { label: 'Frequently Asked Questions', href: '/docs/about/faq/' },
+            { label: 'Need Help?', href: '/support' },
           ],
         },
         {
           title: 'More',
           items: [
-            {
-              label: 'FreeSewing.org',
-              to: 'https://freesewing.org/',
-            },
-            {
-              label: 'Blog',
-              to: 'https://freesewing.org/blog/',
-            },
-            {
-              label: 'Showcase',
-              to: 'https://freesewing.org/showccase/',
-            },
-            {
-              label: 'Code on GitHub',
-              href: 'https://github.com/freesewing/freesewing',
-            },
+            { label: 'FreeSewing.dev', to: 'https://freesewing.dev/' },
+            { label: 'FreeSewing.social', to: 'https://freesewing.social/' },
+            { label: 'Code on GitHub', to: 'https://github.com/freesewing/freesewing' },
+            { label: 'FreeSewing Revenue Pledge 💜', href: '/docs/about/pledge/' },
           ],
         },
       ],
-      copyright: `<a href="https://freesewing.org/">FreeSewing</a> is brought to you by <a href="https://github.com/joostdecock">Joost De Cock</a> and <a href="https://github.com/freesewing/freesewing/blob/develop/CONTRIBUTORS.md">contributors</a> with the financial support of <a href="https://freesewing.org/patrons/join">our patrons</a>`,
+      copyright: `<a href="https://freesewing.org/">FreeSewing</a> is brought to you by <a href="https://github.com/joostdecock">Joost De Cock</a> and <a href="https://github.com/freesewing/freesewing/blob/develop/CONTRIBUTORS.md">contributors</a> with the financial support of <a href="/patrons/join">our patrons</a>`,
     },
     prism: {
       theme: prismThemes.dracula,

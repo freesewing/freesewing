@@ -38,7 +38,7 @@ const BlogPostHeader = ({ type }) => {
           ]}
         />
         <h1>
-          <span className="block text-sm capitalize">{type}:</span>
+          <span className="tw-block tw-text-sm tw-capitalize">{type}:</span>
           {metadata.title}
         </h1>
         <BlogPostItemHeaderInfo />

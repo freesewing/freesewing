@@ -26,7 +26,7 @@ import { EmailInput } from '@freesewing/react/components/Input'
 import { IconButton } from '@freesewing/react/components/Button'
 //import { Robot } from 'shared/components/robot/index.mjs'
 
-export const SignUp = () => {
+export const SignUp = ({ embed = false }) => {
   // State
   const [email, setEmail] = useState('')
   const [emailValid, setEmailValid] = useState(false)
@@ -56,22 +56,22 @@ export const SignUp = () => {
     if (status === 201 && body.result === 'created') setResult('success')
     else {
       setModal(
-        <ModalWrapper bg="base-100 lg:bg-base-300">
-          <div className="bg-base-100 rounded-lg p-4 lg:px-8 max-w-xl lg:shadow-lg">
+        <ModalWrapper bg="tw-base-100 lg:tw-bg-base-300">
+          <div className="tw-bg-base-100 tw-rounded-lg tw-p-4 lg:tw-px-8 tw-max-w-xl lg:tw-shadow-lg">
             <h3>An error occured while trying to process your request</h3>
-            <p className="text-lg">
+            <p className="tw-text-lg">
               Unfortunately, we cannot recover from this error, we need a human being to look into
               this.
             </p>
-            <p className="text-lg">
+            <p className="tw-text-lg">
               Feel free to try again, or reach out to support so we can assist you.
             </p>
-            <div className="flex flex-row gap-4 items-center justify-center p-8 flex-wrap">
+            <div className="tw-flex tw-flex-row tw-gap-4 tw-items-center tw-justify-center tw-p-8 tw-flex-wrap">
               <IconButton onClick={() => setResult(false)}>
                 <LeftIcon />
                 Back
               </IconButton>
-              <IconButton href="/support" className="daisy-btn-outline">
+              <IconButton href="/support" className="tw-daisy-btn-outline">
                 <HelpIcon />
                 Contact support
               </IconButton>
@@ -90,10 +90,13 @@ export const SignUp = () => {
       window.location.href = result.data.authUrl
     }
   }
+  const Heading = embed
+    ? ({ children }) => <h2 className="tw-text-inherit">{children}</h2>
+    : ({ children }) => <h1 className="tw-text-inherit">{children}</h1>
 
   return (
-    <div className="w-full">
-      <h1 className="text-inherit">
+    <div className="tw-w-full">
+      <Heading className="tw-text-inherit">
         {result ? (
           result === 'success' ? (
             <span>Now check your inbox</span>
@@ -103,23 +106,23 @@ export const SignUp = () => {
         ) : (
           <span>Create a FreeSewing account</span>
         )}
-      </h1>
+      </Heading>
 
       {result ? (
         result === 'success' ? (
           <>
-            <p className="text-inherit text-lg">
+            <p className="tw-text-inherit tw-text-lg">
               Go check your inbox for an email from <b>FreeSewing.org</b>
             </p>
-            <p className="text-inherit text-lg">
+            <p className="tw-text-inherit tw-text-lg">
               Click your personal signup link in that email to create your FreeSewing account.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+            <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-2">
               <IconButton onClick={() => setResult(false)}>
                 <LeftIcon />
                 Back
               </IconButton>
-              <IconButton href="/support" className="daisy-btn-outline">
+              <IconButton href="/support" className="tw-daisy-btn-outline">
                 <HelpIcon />
                 Contact support
               </IconButton>
@@ -128,18 +131,18 @@ export const SignUp = () => {
         ) : (
           <>
             robot here
-            <p className="text-inherit text-lg">
+            <p className="tw-text-inherit tw-text-lg">
               Unfortunately, we cannot recover from this error, we need a human being to look into
               this.
             </p>
-            <p className="text-inherit text-lg">
+            <p className="tw-text-inherit tw-text-lg">
               Feel free to try again, or reach out to support so we can assist you.
             </p>
-            <div className="flex flex-row gap-4 items-center justify-center p-8">
-              <button className="btn btn-ghost" onClick={() => setResult(false)}>
+            <div className="tw-flex tw-flex-row tw-gap-4 tw-items-center tw-justify-center tw-p-8">
+              <button className="tw-daisy-btn tw-daisy-btn-ghost" onClick={() => setResult(false)}>
                 Back
               </button>
-              <Link href="/support" className="btn btn-ghost">
+              <Link href="/support" className="tw-daisy-btn tw-daisy-btn-ghost">
                 Contact support
               </Link>
             </div>
@@ -147,7 +150,7 @@ export const SignUp = () => {
         )
       ) : (
         <>
-          <p className="text-inherit">To receive a sign-up link, enter your email address</p>
+          <p className="tw-text-inherit">To receive a sign-up link, enter your email address</p>
           <form onSubmit={signupHandler}>
             <EmailInput
               id="signup-email"
@@ -161,7 +164,7 @@ export const SignUp = () => {
             <IconButton
               onClick={signupHandler}
               btnProps={{ type: 'submit' }}
-              className="lg:w-full grow"
+              className="lg:tw-w-full tw-grow tw-mt-2"
             >
               <EmailIcon />
               Email me a sign-up link
@@ -169,7 +172,7 @@ export const SignUp = () => {
           </form>
           {showAll ? (
             <>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-1 items-center">
+              <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-1 tw-items-center tw-mt-1">
                 {['Google', 'GitHub'].map((provider) => (
                   <IconButton
                     key={provider}
@@ -182,22 +185,22 @@ export const SignUp = () => {
                   </IconButton>
                 ))}
               </div>
-              <IconButton color="neutral" href="/signin" className="daisy-btn-lg">
-                <span className="hidden md:block">
-                  <KeyIcon className="h-10 w-10" />
+              <IconButton color="neutral" href="/signin" className="tw-daisy-btn-lg tw-mt-1">
+                <span className="tw-hidden md:tw-block">
+                  <KeyIcon className="tw-h-10 tw-w-10" />
                 </span>
                 Sign in here
               </IconButton>
-              <div className="flex flex-row justify-center mt-2">
+              <div className="tw-flex tw-flex-row tw-justify-center tw-mt-2">
                 <IconButton color="ghost" onClick={() => setShowAll(false)}>
-                  <DownIcon className="w-6 h-6 rotate-180" />
+                  <DownIcon className="tw-w-6 tw-h-6 tw-rotate-180" />
                   Fewer options
-                  <DownIcon className="w-6 h-6 rotate-180" />
+                  <DownIcon className="tw-w-6 tw-h-6 tw-rotate-180" />
                 </IconButton>
               </div>
             </>
           ) : (
-            <div className="flex flex-row justify-center mt-2">
+            <div className="tw-flex tw-flex-row tw-justify-center tw-mt-2">
               <IconButton color="ghost" onClick={() => setShowAll(true)}>
                 <DownIcon />
                 More options
