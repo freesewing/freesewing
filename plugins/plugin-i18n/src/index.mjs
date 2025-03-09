@@ -26,9 +26,7 @@ const translate = (locale, text, t, pattern) => {
 export const plugin = {
   name,
   version,
-  hooks: {
-    insertText: (locale, text, t, pattern) => translate(locale, text, t, pattern),
-  },
+  hooks: { insertText: translate },
 }
 
 // More specifically named exports

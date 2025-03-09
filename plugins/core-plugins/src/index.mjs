@@ -1,4 +1,4 @@
-import { annotationsPlugin } from '../../plugin-annotations/src/index.mjs'
+import { annotationsPlugin, i18n as annotationsI18n } from '../../plugin-annotations/src/index.mjs'
 import { measurementsPlugin } from '../../plugin-measurements/src/index.mjs'
 import { mirrorPlugin } from '../../plugin-mirror/src/index.mjs'
 import { roundPlugin } from '../../plugin-round/src/index.mjs'
@@ -54,3 +54,6 @@ export const plugin = {
 
 // Specific named export
 export const corePlugins = plugin
+
+// Translation (only annotations plugin has them)
+export const i18n = annotationsI18n
