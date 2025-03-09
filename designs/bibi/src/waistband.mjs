@@ -8,6 +8,7 @@ import {
   correctArmHole,
   draftRibbing,
 } from './shared.mjs'
+import { pctBasedOn } from '@freesewing/core'
 
 export const waistband = {
   name: 'bibi.waistband',
@@ -21,12 +22,13 @@ export const waistband = {
       pct: 5,
       min: -10,
       max: 20,
+      ...pctBasedOn('waist'),
       menu: (settings, mergedOptions) => (mergedOptions.fitWaist ? 'fit' : false),
       order: 'EBB',
     },
-    hipsEase: { pct: 5, min: -5, max: 50, menu: 'fit', order: 'ECA' },
-    seatEase: { pct: 2, min: -5, max: 50, menu: 'fit', order: 'EDA' },
-    chestEase: { pct: 2, min: -5, max: 25, menu: 'fit', order: 'EAB' },
+    hipsEase: { pct: 5, min: -5, max: 50, ...pctBasedOn('hips'), menu: 'fit', order: 'ECA' },
+    seatEase: { pct: 2, min: -5, max: 50, ...pctBasedOn('seat'), menu: 'fit', order: 'EDA' },
+    chestEase: { pct: 2, min: -5, max: 25, ...pctBasedOn('chest'), menu: 'fit', order: 'EAB' },
     length: {
       dflt: 'seat',
       list: ['underbust', 'waist', 'hips', 'seat', 'knee', 'floor'],

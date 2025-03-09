@@ -3,7 +3,7 @@ import { atomWithHash } from 'jotai-location'
 import { stateUpdateFactory } from '../lib/index.mjs'
 // Hooks
 import { useAtom } from 'jotai'
-import React, { useMemo, useState, useEffect } from 'react'
+import { useMemo, useEffect } from 'react'
 
 /*
  * Set up the atom

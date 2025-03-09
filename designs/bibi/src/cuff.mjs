@@ -1,5 +1,5 @@
 import { sleevecap as brianSleeveCap } from '@freesewing/brian'
-import { hidePresets } from '@freesewing/core'
+import { hidePresets, pctBasedOn } from '@freesewing/core'
 import { draftRibbing } from './shared.mjs'
 
 export const cuff = {
@@ -13,7 +13,7 @@ export const cuff = {
     s3Armhole: 0,
     brianFitSleeve: true,
     brianFitCollar: false,
-    bicepsEase: { pct: 5, min: 0, max: 50, menu: 'fit' },
+    bicepsEase: { pct: 5, min: 0, max: 50, ...pctBasedOn('biceps'), menu: 'fit' },
     collarEase: 0,
     shoulderSlopeReduction: 0,
     sleeveWidthGuarantee: 0.85,
@@ -21,12 +21,13 @@ export const cuff = {
     legacyArmholeDepth: false,
     // Unused as legacyArmholeDepth is disabled, hide option in documentation
     armholeDepthFactor: 0.5,
-    shoulderEase: { pct: 0, min: -2, max: 6, menu: 'fit' },
+    shoulderEase: { pct: 0, min: -2, max: 6, ...pctBasedOn('shoulderToShoulder'), menu: 'fit' },
     // Note: we reuse Brian's cuff ease as "armhole fullness"
     cuffEase: {
       pct: 20,
       min: 0,
       max: 200,
+      ...pctBasedOn('wrist'),
       menu: (settings, mergedOptions) =>
         mergedOptions.sleeves === false ? false : 'style.sleeves',
     },

@@ -1,6 +1,6 @@
 import { back as bentBack } from '@freesewing/bent'
 import { calculateRatios } from './shared.mjs'
-import { hidePresets } from '@freesewing/core'
+import { hidePresets, pctBasedOn } from '@freesewing/core'
 
 function draftCarltonBack({
   sa,
@@ -287,8 +287,8 @@ export const back = {
   options: {
     backPleat: 0.048,
     beltWidth: { pct: 15, min: 10, max: 20, menu: 'style' },
-    waistEase: { pct: 14, min: 8, max: 25, menu: 'fit' },
-    seatEase: { pct: 14, min: 8, max: 25, menu: 'fit' },
+    waistEase: { pct: 14, min: 8, max: 25, ...pctBasedOn('waist'), menu: 'fit' },
+    seatEase: { pct: 14, min: 8, max: 25, ...pctBasedOn('seat'), menu: 'fit' },
   },
   draft: draftCarltonBack,
 }

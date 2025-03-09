@@ -3,7 +3,7 @@ import { defaultConfig as config } from '../../config/index.mjs'
 import { viewIcons, viewLabels } from './index.mjs'
 // Components
 import { Popout } from '@freesewing/react/components/Popout'
-import { H1, H2, H4, H5 } from '@freesewing/react/components/Heading'
+import { H2, H4, H5 } from '@freesewing/react/components/Heading'
 
 /**
  * The design view is loaded if and only if not design is passed to the editor

@@ -1,13 +1,11 @@
 // Dependencies
-import { linkClasses, horFlexClasses, patternUrlFromState } from '@freesewing/utils'
-import { exportTypes, handleExport } from '../../lib/export/index.mjs'
+import { linkClasses } from '@freesewing/utils'
 // Hooks
-import React, { useState } from 'react'
+import React from 'react'
 // Components
-import { H1, H2, H3, H5 } from '@freesewing/react/components/Heading'
+import { H1, H5 } from '@freesewing/react/components/Heading'
 import { Popout } from '@freesewing/react/components/Popout'
 import { HeaderMenu } from '../HeaderMenu.mjs'
-import { EditIcon, CodeIcon, TipIcon, PrintIcon } from '@freesewing/react/components/Icon'
 
 /**
  * This is the docs view, it just shows content

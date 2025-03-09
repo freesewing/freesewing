@@ -1,23 +1,12 @@
 // Dependencies
 import React from 'react'
-import { defaultPrintSettings, handleExport } from '../../lib/export/index.mjs'
-import { tilerPlugin } from '../../lib/export/plugin-tiler.mjs'
-import { capitalize, get } from '@freesewing/utils'
-import { draft, menuLayoutSettingsStructure } from '../../lib/index.mjs'
+import { capitalize } from '@freesewing/utils'
+import { menuLayoutSettingsStructure } from '../../lib/index.mjs'
 // Components
-import { ZoomablePattern } from '../ZoomablePattern.mjs'
-import { PatternLayout } from '../PatternLayout.mjs'
-import { MovablePattern } from '../MovablePattern.mjs'
-import { Accordion } from '../Accordion.mjs'
-import {
-  CompareIcon,
-  PageSizeIcon,
-  PatternIcon,
-  PrintIcon,
-} from '@freesewing/react/components/Icon'
-import { MenuBoolInput, MenuMmInput, MenuListInput, MenuPctInput } from '../menus/Input.mjs'
-import { MenuBoolValue, MenuMmValue, MenuListValue, MenuPctOptionValue } from '../menus/Value.mjs'
-import { MenuItem, MenuItemGroup } from './Container.mjs'
+import { PatternIcon } from '@freesewing/react/components/Icon'
+import { MenuBoolInput, MenuMmInput, MenuListInput, MenuPctInput } from './Input.mjs'
+import { MenuBoolValue, MenuMmValue, MenuPctOptionValue } from './Value.mjs'
+import { MenuItemGroup } from './Container.mjs'
 import { MenuHighlightValue } from './Value.mjs'
 
 export const LayoutSettingsMenu = ({ update, state, Design }) => {

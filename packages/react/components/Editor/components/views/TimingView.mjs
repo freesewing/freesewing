@@ -1,13 +1,9 @@
 // Dependencies
 import React, { useState, useEffect } from 'react'
-import { draft, missingMeasurements } from '../../lib/index.mjs'
 import * as echarts from 'echarts'
 import { timingPlugin } from '@freesewing/plugin-timing'
 // Components
 import { ChartWrapper } from '@freesewing/react/components/Echart'
-import { Null } from '@freesewing/react/components/Null'
-import { ZoomablePattern } from '../ZoomablePattern.mjs'
-import { PatternLayout } from '../PatternLayout.mjs'
 import { DraftView } from './DraftView.mjs'
 
 /**

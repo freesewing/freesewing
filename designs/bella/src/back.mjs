@@ -1,3 +1,5 @@
+import { pctBasedOn } from '@freesewing/core'
+
 export const back = {
   name: 'bella.back',
   measurements: [
@@ -24,11 +26,17 @@ export const back = {
     backCenterWaistReduction: 0.35,
     collarFactor: 0.19,
     // Fit
-    bustSpanEase: { pct: 10, min: 0, max: 20, menu: 'fit' },
-    chestEase: { pct: 11, min: 5, max: 20, menu: 'fit' },
+    bustSpanEase: { pct: 10, min: 0, max: 20, ...pctBasedOn('bustSpan'), menu: 'fit' },
+    chestEase: { pct: 11, min: 5, max: 20, ...pctBasedOn('chest'), menu: 'fit' },
     fullChestEaseReduction: { pct: 4, min: 0, max: 8, menu: 'fit' },
-    shoulderToShoulderEase: { pct: -0.5, min: -1, max: 5, menu: 'fit' },
-    waistEase: { pct: 5, min: 1, max: 20, menu: 'fit' },
+    shoulderToShoulderEase: {
+      pct: -0.5,
+      min: -1,
+      max: 5,
+      ...pctBasedOn('shoulderToShoulder'),
+      menu: 'fit',
+    },
+    waistEase: { pct: 5, min: 1, max: 20, ...pctBasedOn('waist'), menu: 'fit' },
     // Darts
     backDartHeight: { pct: 46, min: 38, max: 54, menu: 'darts' },
     bustDartCurve: { pct: 100, min: -100, max: 100, menu: 'darts' },

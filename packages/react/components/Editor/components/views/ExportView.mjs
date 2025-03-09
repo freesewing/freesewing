@@ -1,11 +1,10 @@
 // Dependencies
 import { linkClasses, horFlexClasses, patternUrlFromState } from '@freesewing/utils'
-import { exportTypes, handleExport } from '../../lib/export/index.mjs'
+import { handleExport } from '../../lib/export/index.mjs'
 // Hooks
 import React, { useState } from 'react'
 // Components
 import { H1, H2, H3, H5 } from '@freesewing/react/components/Heading'
-import { Popout } from '@freesewing/react/components/Popout'
 import { HeaderMenu } from '../HeaderMenu.mjs'
 import { CopyToClipboardButton } from '@freesewing/react/components/CopyToClipboardButton'
 import { Highlight } from '@freesewing/react/components/Highlight'

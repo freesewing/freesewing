@@ -10,15 +10,11 @@ import { AsideViewMenuSpacer } from './AsideViewMenu.mjs'
 import { ViewIcon, viewLabels } from './views/index.mjs'
 import { Tooltip } from './Tooltip.mjs'
 import {
-  CircleIcon,
   DetailIcon,
-  ErrorIcon,
   ExpandIcon,
   ExportIcon,
   FixmeIcon,
   FlagIcon,
-  KioskIcon,
-  MenuIcon,
   OptionsIcon,
   PaperlessIcon,
   PrintIcon,

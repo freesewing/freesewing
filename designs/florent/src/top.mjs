@@ -1,3 +1,5 @@
+import { pctBasedOn } from '@freesewing/core'
+
 function draftFlorentTop({
   sa,
   points,
@@ -250,7 +252,7 @@ export const top = {
     topSide: 0.8,
     brim: 0,
     // Percentages
-    headEase: { pct: 2, min: 0, max: 5, menu: 'fit' },
+    headEase: { pct: 2, min: 0, max: 5, ...pctBasedOn('head'), menu: 'fit' },
   },
   draft: draftFlorentTop,
 }

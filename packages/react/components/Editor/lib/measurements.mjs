@@ -1,6 +1,5 @@
 // Dependencies
 import { defaultConfig } from '../config/index.mjs'
-import { degreeMeasurements } from '@freesewing/config'
 
 /*
  * Returns a list of measurements for a design

@@ -1,3 +1,5 @@
+import { pctBasedOn } from '@freesewing/core'
+
 function draftBreannaBase({ store, points, Point, measurements, options, utils, part }) {
   // HPS
   points.hps = new Point((measurements.neck * (1 + options.collarEase)) / options.collarFactor, 0)
@@ -158,17 +160,17 @@ export const base = {
     acrossBackFactor: { pct: 96, min: 93, max: 100, menu: 'advanced' },
     armholeDepthFactor: { pct: 100, min: 80, max: 120, menu: 'advanced' },
     backNeckCutout: { pct: 5, min: 2, max: 8, menu: 'advanced' },
-    bicepsEase: { pct: 15, min: 0, max: 50, menu: 'fit' },
+    bicepsEase: { pct: 15, min: 0, max: 50, ...pctBasedOn('biceps'), menu: 'fit' },
     shoulderDartSize: { pct: 7, min: 4, max: 10, menu: onlyWithShoulderDart },
     shoulderDartLength: { pct: 85, min: 60, max: 100, menu: onlyWithShoulderDart },
     waistDartSize: { pct: 10, min: 4, max: 15, menu: onlyWithWaistDart },
     waistDartLength: { pct: 85, min: 60, max: 100, menu: onlyWithWaistDart },
     verticalEase: { pct: 2, min: 0, max: 8, menu: 'fit' },
     frontArmholeDeeper: { pct: 1, min: 0, max: 5, menu: 'advanced' },
-    shoulderEase: { pct: 0, min: 0, max: 4, menu: 'fit' },
-    collarEase: { pct: 3.5, min: 0, max: 10, menu: 'fit' },
-    chestEase: { pct: 10, min: 5, max: 20, menu: 'fit' },
-    waistEase: { pct: 10, min: 5, max: 20, menu: 'fit' },
+    shoulderEase: { pct: 0, min: 0, max: 4, ...pctBasedOn('shoulderToShoulder'), menu: 'fit' },
+    collarEase: { pct: 3.5, min: 0, max: 10, ...pctBasedOn('neck'), menu: 'fit' },
+    chestEase: { pct: 10, min: 5, max: 20, ...pctBasedOn('chest'), menu: 'fit' },
+    waistEase: { pct: 10, min: 5, max: 20, ...pctBasedOn('waist'), menu: 'fit' },
     primaryBustDartShaping: { pct: 50, min: 25, max: 75, menu: 'style' },
     primaryBustDartLength: { pct: 85, min: 65, max: 95, menu: 'style' },
     secondaryBustDartLength: { pct: 85, min: 65, max: 95, menu: 'style' },

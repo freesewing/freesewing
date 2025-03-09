@@ -1,24 +1,14 @@
 // Dependencies
-import { linkClasses, horFlexClasses, patternUrlFromState, clone } from '@freesewing/utils'
-import { exportTypes, handleExport } from '../../lib/export/index.mjs'
+import { clone } from '@freesewing/utils'
 import yaml from 'yaml'
 // Hooks
 import React, { useState } from 'react'
 import { useStateObject } from '@freesewing/react/hooks/useStateObject'
 // Components
-import { H1, H2, H3, H4, H5 } from '@freesewing/react/components/Heading'
-import { Popout } from '@freesewing/react/components/Popout'
+import { H1, H4 } from '@freesewing/react/components/Heading'
 import { DiffViewer, diffCheck } from '@freesewing/react/components/DiffViewer'
 import { HeaderMenu } from '../HeaderMenu.mjs'
-import {
-  ResetIcon,
-  OkIcon,
-  EditIcon,
-  ExpandIcon,
-  CodeIcon,
-  TipIcon,
-  PrintIcon,
-} from '@freesewing/react/components/Icon'
+import { ResetIcon, OkIcon } from '@freesewing/react/components/Icon'
 import CodeMirror from '@uiw/react-codemirror'
 import { yaml as yamlLang } from '@codemirror/lang-yaml'
 

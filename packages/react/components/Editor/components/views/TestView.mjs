@@ -1,5 +1,5 @@
 // Dependencies
-import React, { useMemo, useCallback } from 'react'
+import React, { useMemo } from 'react'
 import { sample, missingMeasurements, menuDesignOptionsStructure } from '../../lib/index.mjs'
 import { measurements as measurementsTranslations } from '@freesewing/i18n'
 import { orderBy } from '@freesewing/utils'

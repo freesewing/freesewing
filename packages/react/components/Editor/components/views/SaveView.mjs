@@ -1,7 +1,7 @@
 // Dependencies
 import yaml from 'js-yaml'
 import { capitalize, shortDate, notEmpty } from '@freesewing/utils'
-import { linkClasses, classesHorFlexNoSm } from '@freesewing/utils'
+import { linkClasses } from '@freesewing/utils'
 // Hooks
 import React, { useState } from 'react'
 import { useBackend } from '@freesewing/react/hooks/useBackend'

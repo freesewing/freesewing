@@ -1,9 +1,7 @@
 // Dependencies
-import { linkClasses, horFlexClasses, patternUrlFromState } from '@freesewing/utils'
-import { exportTypes, handleExport } from '../../lib/export/index.mjs'
 import { draft } from '../../lib/index.mjs'
 // Hooks
-import React, { useState } from 'react'
+import React from 'react'
 // Components
 import Markdown from 'react-markdown'
 import { H1, H3 } from '@freesewing/react/components/Heading'
