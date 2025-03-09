@@ -406,7 +406,7 @@ export const DesignInfo = ({ Link = false, design = false, noDocsLink = false })
 
   const makeButton = (
     <div className={`tw-grid tw-grid-cols-1 tw-gap-2 tw-mb-4`}>
-      <IconButton href={`/-/?fixme`} color="primary">
+      <IconButton href={`/editor/#s={"design"%3A"${design}"%2C"view"%3A"draft"}`} color="primary">
         <NewPatternIcon className="tw-w-8 tw-h-8" />
         New {capitalize(design)} pattern
       </IconButton>
