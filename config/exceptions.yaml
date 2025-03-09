@@ -39,16 +39,10 @@ packageJson:
   new-design:
     exports: '!'
     bin:
-      new-design: './index.mjs'
+      new-design: './bin/index.mjs'
     files:
-      - README.md
-      - package.json
-      - lib/**/*
-      - shared/**/*
-      - templates/**/*
-      - index.mjs
-      - package.json
-      - data.mjs
+      - "bin/"
+      - "template/"
     module: '!'
   noble:
     author: woutervdub (https://github.com/woutervdub)

@@ -1,0 +1,287 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  /* Colors from tailwind that we use here*/
+  --sky-300: #7dd3fc;
+  --sky-400: #38bdf8;
+  --sky-500: #0ea5e9;
+  --sky-600: #0284c7;
+  --sky-700: #0369a1;
+  --pink-300: #f9a8d4;
+  --pink-500: #ec4899;
+  --neutral-50: #fafafa;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #e5e5e5;
+  --neutral-400: #a3a3a3;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --neutral-900: #0a0a0a;
+  --amber-600: #d97706;
+  --red-500: #ef4444;
+  --blue-500: #3b82f6;
+  --pink-500: #ec4899;
+  --violet-500: #8b5cf6;
+
+  /* Color Palette */
+  --ifm-color-primary: var(--sky-500);
+  --ifm-color-primary-dark: var(--sky-600);
+  --ifm-color-primary-light: var(--sky-400);
+  --ifm-color-secondary: var(--sky-300);
+  --ifm-color-tertiary: var(--pink-500);
+
+  /* Text Colors */
+  --ifm-font-color-base: var(--neutral-900);
+  --ifm-font-color-light: var(--neutral-50);
+  --ifm-font-color-secondary: var(--sky-500);
+
+  /* State colors */
+  --ifm-color-success: var(--sky-400);
+
+  /* Background Colors */
+  --ifm-background-color: #fcfcfc;
+  --ifm-background-color-secondary: var(--neutral-100);
+
+  /* Borders and Outlines */
+  --ifm-border-color: var(--neutral-200);
+  --ifm-outline-color: var(--pink-300);
+
+  /* Link colors */
+  --ifm-link-color: var(--sky-600);
+  --ifm-link-hover-color: var(--sky-700);
+
+  /* Button Colors */
+  --ifm-button-color: var(--neutral-50);
+  --ifm-button-background-color: var(--sky-500);
+  --ifm-button-background-hover-color: var(--sky-700);
+  --ifm-button-border-color: var(--sky-600);
+
+  /* Font Sizes and Spacing */
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.5;
+  --ifm-spacing-unit: 8px;
+  --ifm-spacing-base: 16px;
+
+  /* Sidebar/Navigation Customizations */
+  --ifm-sidebar-background-color: var(--neutral-50);
+  --ifm-sidebar-link-color: var(--neutral-500);
+  --ifm-sidebar-link-hover-color: var(--sky-600);
+  --ifm-sidebar-active-link-color: var(--sky-600);
+  --ifm-sidebar-item-spacing: 8px;
+
+  /* Navbar Customizations */
+  --ifm-navbar-background-color: var(--neutral-50);
+  --ifm-navbar-link-color: var(--neutral-900);
+  --ifm-navbar-link-hover-color: var(--sky-500);
+
+  /* Footer colors */
+  --ifm-footer-background-color: var(--neutral-100);
+  --ifm-footer-link-color: var(--sky-600);
+
+  /*
+   * FreeSewing pattern vars
+   */
+  '--pattern-bg':var(--neutral-50);
+  '--pattern-fabric':var(--neutral-900);
+  '--pattern-lining':var(--emerald-500);
+  '--pattern-interfacing':var(--neutral-400);
+  ,'--pattern-canvas': var(--amber-600);
+  '--pattern-various':var(--red-500);
+  '--pattern-mark':var(--blue-500);
+  '--pattern-contrast':var(--pink-500);
+  '--pattern-note':var(--violet-500);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  /* Text Colors */
+  --ifm-font-color-base: var(--neutral-200);
+  --ifm-font-color-light: var(--neutral-50);
+
+  /* Background Colors */
+  --ifm-background-color: var(--neutral-900);
+  --ifm-background-color-secondary: var(--neutral-100);
+
+  /* Borders and Outlines */
+  --ifm-border-color: var(--neutral-200);
+
+  /* Link colors */
+  --ifm-link-color: var(--sky-400);
+  --ifm-link-hover-color: var(--sky-500);
+
+  /* Button Colors */
+  --ifm-button-color: var(--neutral-600);
+
+  /* Navbar Customizations */
+  --ifm-navbar-background-color: var(--neutral-900);
+  --ifm-navbar-link-color: var(--neutral-50);
+  --ifm-navbar-link-hover-color: var(--sky-300);
+
+  /* Footer colors */
+  --ifm-footer-background-color: var(--neutral-900);
+  --ifm-footer-link-color: var(--sky-300);
+
+  /*
+   * FreeSewing pattern vars
+   */
+  '--pattern-bg':var(--neutral-900);
+  '--pattern-fabric':var(--neutral-5);
+  '--pattern-lining':var(--emerald-500);
+  '--pattern-interfacing':var(--neutral-400);
+  ,'--pattern-canvas': var(--amber-600);
+  '--pattern-various':var(--red-500);
+  '--pattern-mark':var(--blue-500);
+  '--pattern-contrast':var(--pink-500);
+  '--pattern-note':var(--violet-500);
+}
+
+/*
+ * Add CSS for code
+ */
+@import './code.css';
+
+/*
+ * Add styling for FreeSewing patterns
+ */
+@import './patterns.css';
+
+div.footer__copyright {
+  font-size: 0.8rem;
+}
+div.footer__copyright a {
+  font-weight: bold;
+}
+
+.caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: -1rem;
+}
+
+.tag,
+.technique {
+  background: var(--ifm-color-primary);
+  padding: 0.2rem 0.5rem;
+  font-weight: bold;
+  color: var(--ifm-font-color-light);
+  border-radius: 0.5rem;
+}
+
+.technique {
+  background: var(--pink-500);
+}
+
+p > figure.mdx {
+  padding: 0;
+  margin: 0;
+}
+figure.mdx {
+  margin: 0;
+  padding: 1rem 0 0;
+}
+figure.mdx > img {
+  padding: 1rem;
+}
+figcaption.mdx {
+  font-style: italic;
+  margin-top: -0.25rem;
+  opacity: 0.8;
+  padding: 0 0.5rem;
+  font-size: 90%;
+}
+
+/*
+ * fixes
+ */
+.avatar img {
+  width: var(--ifm-avatar-photo-size);
+  height: var(--ifm-avatar-photo-size);
+}
+.avatar > div {
+  aspect-ratio: auto;
+}
+
+.markdown a:not([class]) {
+  color: var(--ifm-link-color);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.markdown a:not([class]):hover {
+  color: var(--ifm-link-hover-color);
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+}
+
+.markdown ul > li > p {
+  display: inline;
+}
+
+/*
+ * Make the 'edit this page' link look consistent
+ */
+a.theme-edit-this-page {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-pagination-nav-border-radius);
+  line-height: var(--ifm-heading-line-height);
+  padding: var(--ifm-global-spacing);
+  transition: border-color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+  color: var(--ifm-link-color);
+  text-decoration: var(--ifm-link-decoration);
+  transition: color var(--ifm-transition-fast) var(--ifm-transition-timing-default);
+  font-size: var(--ifm-h4-font-size);
+  font-weight: var(--ifm-heading-font-weight);
+  word-break: break-word;
+}
+a.theme-edit-this-page:hover {
+  border-color: var(--ifm-pagination-nav-color-hover);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+a.daisy-btn-neutral:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Add Tailwindcss
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Applied styles for common HTML tags */
+  h1 {
+    @apply tw-text-5xl tw-pt-5 tw-pb-4 tw-font-light tw-tracking-tight lg:tw-text-6xl;
+  }
+  h2 {
+    @apply tw-text-3xl tw-pt-4 tw-pb-3 tw-font-black tw-m-0 tw-tracking-tight lg:tw-text-4xl;
+  }
+  h3 {
+    @apply tw-text-2xl tw-pt-3 tw-pb-2 tw-font-extrabold tw-tracking-tight tw-m-0 lg:tw-text-3xl;
+  }
+  h4 {
+    @apply tw-text-xl tw-pt-2 tw-pb-1 tw-font-bold tw-m-0 tw-tracking-tight lg:tw-text-2xl;
+  }
+  h5 {
+    @apply tw-text-lg tw-py-1 tw-font-semibold tw-m-0 tw-tracking-tight lg:tw-text-xl;
+  }
+  h6 {
+    @apply tw-text-base tw-py-1 tw-font-medium tw-italic tw-m-0 tw-tracking-tight lg:tw-text-lg;
+  }
+  .markdown ul {
+    @apply tw-list-inside tw-list-disc tw-ml-4;
+  }
+}
+nav.navbar {
+  background-color: var(--ifm-background-color);
+}

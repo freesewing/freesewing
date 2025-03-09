@@ -24,17 +24,16 @@
     "lint": "npx eslint 'lib/*.mjs'"
   },
   "peerDependencies": {},
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "commander": "^10.0.0",
+    "fs-extra": "^11.1.1",
+    "prompts": "^2.4.2"
+  },
   "devDependencies": {},
   "files": [
-    "README.md",
-    "package.json",
-    "lib/**/*",
-    "shared/**/*",
-    "templates/**/*",
-    "index.mjs",
-    "package.json",
-    "data.mjs"
+    "bin/",
+    "template/"
   ],
   "publishConfig": {
     "access": "public",
@@ -44,6 +43,6 @@
     "node": ">= 20"
   },
   "bin": {
-    "new-design": "./index.mjs"
+    "new-design": "./bin/index.mjs"
   }
 }
