@@ -73,7 +73,7 @@ export const UserSetPicker = ({
   return (
     <>
       {okSets.length > 0 && (
-        <div className="tw-flex tw-flex-row tw-flex-wrap tw-gap-2">
+        <div className="tw-grid tw-grid-cols-2 md:tw-grid-cols-4 lg:tw-grid-cols-6 tw-gap-2 tw-mt-4">
           {okSets.map((set) => (
             <MsetCard
               href={false}
@@ -240,7 +240,7 @@ export const CuratedMeasurementsSetLineup = ({ sets = [], clickHandler }) => (
     {sets.map((set) => {
       const props = {
         className:
-          'tw-aspect-[1/3] tw-w-auto tw-h-96 tw-bg-transparent tw-border-0 hover:tw-cursor-pointer tw-grayscale hover:tw-grayscale-0',
+          'tw-aspect-[1/3] tw-w-auto tw-h-96 tw-bg-transparent tw-border-0 hover:tw-cursor-pointer hover:tw-bg-secondary/20',
         style: {
           backgroundImage: `url(${cloudflareImageUrl({
             id: `cset-${set.id}`,

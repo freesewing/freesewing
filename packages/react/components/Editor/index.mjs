@@ -1,13 +1,13 @@
 // Dependencies
 import { designs } from '@freesewing/collection'
-import { hasRequiredMeasurements } from '@freesewing/utils'
+import { capitalize, hasRequiredMeasurements } from '@freesewing/utils'
 import { initialEditorState } from './lib/index.mjs'
 import { mergeConfig } from './config/index.mjs'
 // Hooks
 import React, { useState } from 'react'
 import { useEditorState } from './hooks/useEditorState.mjs'
 // Components
-import { View } from './components/views/index.mjs'
+import { View, viewLabels } from './components/views/index.mjs'
 import { Spinner } from '@freesewing/react/components/Spinner'
 import { AsideViewMenu } from './components/AsideViewMenu.mjs'
 import { LoadingStatus } from './components/LoadingStatus.mjs'
@@ -26,8 +26,9 @@ import { LoadingStatusContextProvider } from '@freesewing/react/context/LoadingS
  * @param {object} props.config - A configuration object for the editor
  * @param {object} props.design - A design name to force the editor to use this design
  * @param {object} props.preload - Any state to preload
+ * @param {function} props.setTitle - A way to set the page title (optional)
  */
-export const Editor = ({ config = {}, design = false, preload = {} }) => {
+export const Editor = ({ config = {}, design = false, preload = {}, setTitle = false }) => {
   /*
    * Ephemeral state will not be stored in the state backend
    * It is used for things like loading state and so on
@@ -63,6 +64,13 @@ export const Editor = ({ config = {}, design = false, preload = {} }) => {
    * Pass this down to allow disabling features that require measurements
    */
   const { missingMeasurements = [] } = extraProps
+
+  /*
+   * It's ok to change this inline
+   */
+  if (typeof setTitle === 'function' && state.design) {
+    setTitle(`${capitalize(state.design)}${viewLabels[view] ? ' | ' + viewLabels[view].t : ''}`)
+  }
 
   /*
    * Almost all editor state has a default settings, and when that is selected

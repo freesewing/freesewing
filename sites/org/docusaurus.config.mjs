@@ -262,7 +262,6 @@ const config = {
         src: 'img/logo.svg',
       },
       items: [
-        { to: '/editor/', label: '🪄 Editor', position: 'left' },
         { to: '/designs/', label: '👕 Designs', position: 'left' },
         { to: '/docs/', label: '📖 Docs', position: 'left' },
         { to: '/showcase/', label: '📷 Showcase', position: 'left' },

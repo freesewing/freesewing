@@ -185,23 +185,23 @@ export const HeaderMenuDropdown = (props) => {
   )
 }
 
-export const HeaderMenuDraftViewDesignOptions = (props) => {
-  return (
-    <HeaderMenuDropdown
-      {...props}
-      id="designOptions"
-      tooltip="These options are specific to this design. You can use them to customize your pattern in a variety of ways."
-      toggle={
-        <>
-          <HeaderMenuIcon name="options" extraClasses="tw-text-secondary" />
-          <span className="tw-hidden lg:tw-inline">Design Options</span>
-        </>
-      }
-    >
-      <DesignOptionsMenu {...props} />
-    </HeaderMenuDropdown>
-  )
-}
+export const HeaderMenuDraftViewDesignOptions = (props) => (
+  <HeaderMenuDropdown
+    {...props}
+    id="designOptions"
+    tooltip="These options are specific to this design. You can use them to customize your pattern in a variety of ways."
+    toggle={
+      <>
+        <HeaderMenuIcon name="options" extraClasses="tw-text-secondary" />
+        <span className="tw-hidden lg:tw-inline tw-capitalize">
+          {props.state.design ? props.state.design : 'Design'} Options
+        </span>
+      </>
+    }
+  >
+    <DesignOptionsMenu {...props} />
+  </HeaderMenuDropdown>
+)
 
 export const HeaderMenuDraftViewCoreSettings = (props) => {
   return (

@@ -35,6 +35,9 @@ export function menuDesignOptionsStructure(design, options, settings, asFullList
     }
   }
 
+  // Save us some typing to access English options
+  const eno = i18n[design]?.en?.o || {}
+
   const menu = {}
   for (const option of orderBy(sorted, ['order', 'menu', 'name'], ['asc', 'asc', 'asc'])) {
     if (typeof option === 'object') {
@@ -48,9 +51,9 @@ export function menuDesignOptionsStructure(design, options, settings, asFullList
         option.choiceTitles = {}
         option.choiceDescriptions = {}
         for (const entry of option.list) {
-          option.choiceTitles[entry] = i18n[design].en.o[`${option.name}.${entry}`].t
-          option.choiceDescriptions[entry] = i18n[design].en.o[`${option.name}.${entry}`].d
-          option.valueTitles[entry] = i18n[design].en.o[`${option.name}.${entry}`].t
+          option.choiceTitles[entry] = eno[`${option.name}.${entry}`]?.t || option.name
+          option.choiceDescriptions[entry] = eno[`${option.name}.${entry}`]?.d || ''
+          option.valueTitles[entry] = eno[`${option.name}.${entry}`]?.t || option.name
         }
       }
       // Bool option tweaks
@@ -60,11 +63,11 @@ export function menuDesignOptionsStructure(design, options, settings, asFullList
         option.choiceTitles = {}
         option.choiceDescriptions = {}
         for (const entry of option.list) {
-          option.choiceTitles.false = i18n[design].en.o[`${option.name}No`].t
-          option.choiceDescriptions.false = i18n[design].en.o[`${option.name}No`].d
+          option.choiceTitles.false = eno[`${option.name}No`]?.t || option.name
+          option.choiceDescriptions.false = eno[`${option.name}No`]?.d || 'No'
           option.valueTitles.false = 'No'
-          option.choiceTitles.true = i18n[design].en.o[`${option.name}Yes`].t
-          option.choiceDescriptions.true = i18n[design].en.o[`${option.name}Yes`].d
+          option.choiceTitles.true = eno[`${option.name}Yes`]?.t || 'Yes'
+          option.choiceDescriptions.true = eno[`${option.name}Yes`]?.d || 'No'
           option.valueTitles.true = 'Yes'
         }
       }

@@ -19,8 +19,8 @@ export const ZoomablePattern = forwardRef(function ZoomablePatternRef(props, ref
       onInit={setZoomFunctions}
     >
       <TransformComponent
-        wrapperStyle={{ width: '100%', height: '100%' }}
-        contentStyle={{ width: '100%', height: '100%' }}
+        wrapperStyle={{ width: '100%', height: 'calc(100vh - 9rem)' }}
+        contentStyle={{ width: '100%', height: 'calc(100vh - 9rem)' }}
         wrapperClass={'pan-zoom-pattern'}
         id="pan-zoom-pattern"
       >
