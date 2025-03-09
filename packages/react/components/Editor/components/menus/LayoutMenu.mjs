@@ -4,8 +4,8 @@ import { capitalize } from '@freesewing/utils'
 import { menuLayoutSettingsStructure } from '../../lib/index.mjs'
 // Components
 import { PatternIcon } from '@freesewing/react/components/Icon'
-import { MenuBoolInput, MenuMmInput, MenuListInput, MenuPctInput } from '../menus/Input.mjs'
-import { MenuBoolValue, MenuMmValue, MenuPctOptionValue } from '../menus/Value.mjs'
+import { MenuBoolInput, MenuMmInput, MenuListInput, MenuPctInput } from './Input.mjs'
+import { MenuBoolValue, MenuMmValue, MenuPctOptionValue } from './Value.mjs'
 import { MenuItemGroup } from './Container.mjs'
 import { MenuHighlightValue } from './Value.mjs'
 
