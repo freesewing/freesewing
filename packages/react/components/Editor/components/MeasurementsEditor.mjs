@@ -1,6 +1,5 @@
 import React from 'react'
 import { MeasurementInput } from '@freesewing/react/components/Input'
-import { measurements as measurementsTranslations } from '@freesewing/i18n'
 
 /**
  * This MeasurementsEditor component allows inline-editing of the measurements

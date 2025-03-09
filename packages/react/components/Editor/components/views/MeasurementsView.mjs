@@ -1,5 +1,5 @@
 // Dependencies
-import { t, designMeasurements } from '../../lib/index.mjs'
+import { designMeasurements } from '../../lib/index.mjs'
 import { capitalize, horFlexClasses as horFlexClasses } from '@freesewing/utils'
 import { measurements as measurementsTranslations } from '@freesewing/i18n'
 // Hooks
@@ -17,7 +17,7 @@ import {
 } from '@freesewing/react/components/Icon'
 import { Accordion } from '../Accordion.mjs'
 import { MeasurementsEditor } from '../MeasurementsEditor.mjs'
-import { SetPicker, BookmarkedSetPicker, CuratedSetPicker, UserSetPicker } from '../Set.mjs'
+import { BookmarkedSetPicker, CuratedSetPicker, UserSetPicker } from '../Set.mjs'
 import { HeaderMenu } from '../HeaderMenu.mjs'
 import { H1, H5 } from '@freesewing/react/components/Heading'
 

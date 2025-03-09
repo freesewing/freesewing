@@ -1,6 +1,5 @@
 import React from 'react'
 import mustache from 'mustache'
-import { defaultConfig } from '../config/index.mjs'
 import { flattenFlags } from '../lib/index.mjs'
 import {
   ChatIcon,

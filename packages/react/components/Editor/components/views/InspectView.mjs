@@ -8,7 +8,6 @@ import { ModalWrapper } from '@freesewing/react/components/Modal'
 import { Null } from '@freesewing/react/components/Null'
 import { ZoomablePattern } from '../ZoomablePattern.mjs'
 import { PatternLayout } from '../PatternLayout.mjs'
-import { DraftMenu } from '../menus/DraftMenu.mjs'
 import { Xray } from '@freesewing/react/components/Xray'
 
 /**

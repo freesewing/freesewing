@@ -6,7 +6,6 @@ import React, { useState, useMemo } from 'react'
 // Components
 import { SubAccordion } from '../Accordion.mjs'
 import { EditIcon, GroupIcon, OptionsIcon, ResetIcon } from '@freesewing/react/components/Icon'
-import { CoreSettingsMenu } from './CoreSettingsMenu.mjs'
 import { FormControl } from '@freesewing/react/components/Input'
 import { MiniTip } from '@freesewing/react/components/Mini'
 

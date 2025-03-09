@@ -1,13 +1,7 @@
 import React from 'react'
 import { defaultConfig } from '../config/index.mjs'
 import { linkClasses } from '@freesewing/utils'
-import {
-  MenuIcon,
-  KioskIcon,
-  RotateIcon,
-  RocketIcon,
-  UxIcon,
-} from '@freesewing/react/components/Icon'
+import { RotateIcon, RocketIcon, UxIcon } from '@freesewing/react/components/Icon'
 
 const UiDocsLink = ({ item }) => (
   <a href={`/docs/about/site/draft/#${item.toLowerCase()}`} className={`${linkClasses} tw-px-2`}>

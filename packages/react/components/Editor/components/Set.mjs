@@ -1,5 +1,5 @@
 // Dependencies
-import { capitalize, cloudflareImageUrl, hasRequiredMeasurements, orderBy } from '@freesewing/utils'
+import { cloudflareImageUrl, hasRequiredMeasurements, orderBy } from '@freesewing/utils'
 // Hooks
 import React, { useState, useEffect } from 'react'
 import { useBackend } from '@freesewing/react/hooks/useBackend'

@@ -12,7 +12,7 @@ import { menuRoundPct } from '../../lib/index.mjs'
 import { ButtonFrame, NumberInput } from '@freesewing/react/components/Input'
 import { defaultConfig } from '../../config/index.mjs'
 import { ApplyIcon } from '@freesewing/react/components/Icon'
-import { capitalize, mergeOptions } from '@freesewing/core'
+import { mergeOptions } from '@freesewing/core'
 import { KeyVal } from '@freesewing/react/components/KeyVal'
 
 /** A boolean version of {@see MenuListInput} that sets up the necessary configuration */

@@ -1,13 +1,7 @@
 import React from 'react'
-import { defaultConfig } from '../config/index.mjs'
 import { linkClasses } from '@freesewing/utils'
 import {
   CoverPageIcon,
-  MenuIcon,
-  KioskIcon,
-  RotateIcon,
-  RocketIcon,
-  UxIcon,
   PageMarginIcon,
   PageOrientationIcon,
   PageSizeIcon,

@@ -13,7 +13,6 @@ import { LogView } from './LogView.mjs'
 import { TestView } from './TestView.mjs'
 import { TimingView } from './TimingView.mjs'
 import { EditSettingsView } from './EditSettingsView.mjs'
-import { ErrorIcon } from '@freesewing/react/components/Icon'
 import {
   OptionsIcon,
   MeasurementsIcon,

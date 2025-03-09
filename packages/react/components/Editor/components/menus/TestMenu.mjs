@@ -1,9 +1,8 @@
 // Dependencies
 import { menuDesignOptionsStructure } from '../../lib/index.mjs'
 import { measurements as measurementsTranslations } from '@freesewing/i18n'
-import { orderBy } from '@freesewing/utils'
 // Hooks
-import React, { useCallback, useMemo } from 'react'
+import React, { useMemo } from 'react'
 // Components
 import { MenuButtonGroup } from './Container.mjs'
 import { BeakerIcon, OptionsIcon } from '@freesewing/react/components/Icon'

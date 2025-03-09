@@ -1,7 +1,7 @@
 // Dependencies
 import React from 'react'
 import { defaultConfig } from '../config/index.mjs'
-import { round, formatMm, randomLoadingMessage, horFlexClasses } from '@freesewing/utils'
+import { round, formatMm, randomLoadingMessage } from '@freesewing/utils'
 import { formatDesignOptionValue, menuCoreSettingsStructure } from './index.mjs'
 import { menuUiPreferencesStructure } from './ui-preferences.mjs'
 // Components
@@ -13,7 +13,6 @@ import {
   UiIcon,
 } from '@freesewing/react/components/Icon'
 import { HtmlSpan } from '../components/HtmlSpan.mjs'
-import { Spinner } from '@freesewing/react/components/Spinner'
 
 /*
  * This method drafts the pattern
