@@ -1,5 +1,6 @@
 import { underSleeve as bentUnderSleeve } from '@freesewing/bent'
 import { front as bentFront } from '@freesewing/bent'
+import { pctBasedOn } from '@freesewing/core'
 
 function draftCarltonUnderSleeve({
   sa,
@@ -191,9 +192,9 @@ export const underSleeve = {
     collarEase: 0.145,
     acrossBackFactor: { pct: 97, min: 93, max: 100, menu: 'fit' },
     armholeDepthFactor: { pct: 65, min: 50, max: 70, menu: 'fit' },
-    bicepsEase: { pct: 20, min: 0, max: 50, menu: 'fit' },
-    cuffEase: { pct: 60, min: 30, max: 100, menu: 'fit' },
-    shoulderEase: { pct: 0, min: -2, max: 6, menu: 'fit' },
+    bicepsEase: { pct: 20, min: 0, max: 50, ...pctBasedOn('biceps'), menu: 'fit' },
+    cuffEase: { pct: 60, min: 30, max: 100, ...pctBasedOn('wrist'), menu: 'fit' },
+    shoulderEase: { pct: 0, min: -2, max: 6, ...pctBasedOn('shoulderToShoulder'), menu: 'fit' },
     sleeveBend: { deg: 10, min: 0, max: 20, menu: 'fit' },
     sleeveLengthBonus: { pct: 7, min: 0, max: 20, menu: 'fit' },
     s3Collar: { pct: 0, min: -100, max: 100, menu: 'style' },

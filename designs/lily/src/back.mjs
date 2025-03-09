@@ -1,4 +1,5 @@
 import { back as titanBack } from '@freesewing/titan'
+import { pctBasedOn } from '@freesewing/core'
 
 function draftLilyBack({
   points,
@@ -569,9 +570,9 @@ export const back = {
     crotchDrop: { pct: 0, min: 0, max: 15, menu: 'advanced' }, // 'downgrade' to advanced menu
     waistHeight: { ...titanBack.options.waistHeight, pct: 50 }, // halfway between waist and hips
     fabricStretch: { pct: 40, min: 0, max: 50, menu: 'fit' },
-    waistEase: { pct: -4, min: -20, max: 0, menu: 'fit' }, // -fabricStretch/10,
-    seatEase: { pct: -4, min: -20, max: 0, menu: 'fit' }, // -fabricStretch/10,
-    kneeEase: { pct: -4, min: -20, max: 0, menu: 'fit' }, // -fabricStretch/10,
+    waistEase: { pct: -4, min: -20, max: 0, ...pctBasedOn('waist'), menu: 'fit' }, // -fabricStretch/10,
+    seatEase: { pct: -4, min: -20, max: 0, ...pctBasedOn('seat'), menu: 'fit' }, // -fabricStretch/10,
+    kneeEase: { pct: -4, min: -20, max: 0, ...pctBasedOn('knee'), menu: 'fit' }, // -fabricStretch/10,
     lengthBonus: 0,
     lengthReduction: {
       pct: 0,

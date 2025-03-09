@@ -1,5 +1,5 @@
 import { base } from '@freesewing/brian'
-import { hidePresets } from '@freesewing/core'
+import { hidePresets, pctBasedOn } from '@freesewing/core'
 
 function teaganFront({
   utils,
@@ -261,7 +261,7 @@ export const front = {
     sleeveWidthGuarantee: 0.85,
     frontArmholeDeeper: 0.005,
     // Brian overrides
-    chestEase: { pct: 12, min: 5, max: 25, menu: 'fit' },
+    chestEase: { pct: 12, min: 5, max: 25, ...pctBasedOn('chest'), menu: 'fit' },
     sleeveLength: { pct: 30, min: 20, max: 100, menu: 'fit' },
     lengthBonus: { pct: 15, min: -20, max: 60, menu: 'style' },
     backNeckCutout: { pct: 8, min: 4, max: 12, menu: 'fit' },
@@ -272,9 +272,10 @@ export const front = {
       pct: 25,
       min: 8,
       max: 40,
+      ...pctBasedOn('waist'),
       menu: (settings, mergedOptions) => (mergedOptions.fitWaist ? 'fit' : false),
     },
-    hipsEase: { pct: 18, min: 8, max: 30, menu: 'fit' },
+    hipsEase: { pct: 18, min: 8, max: 30, ...pctBasedOn('hips'), menu: 'fit' },
     necklineDepth: { pct: 25, min: 20, max: 40, menu: 'style' },
     necklineWidth: { pct: 30, min: 10, max: 50, menu: 'style' },
     necklineBend: { pct: 30, min: 0, max: 70, menu: 'style' },

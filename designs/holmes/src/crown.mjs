@@ -1,4 +1,5 @@
 import { pluginGore } from '@freesewing/plugin-gore'
+import { pctBasedOn } from '@freesewing/core'
 
 function draftHolmesCrown({
   Point,
@@ -101,7 +102,7 @@ export const crown = {
         metric: [6, 13, 19, 25, 32, 38, 44, 50],
         imperial: [6.35, 12.7, 19.05, 25.4, 31.75, 38.1, 44.45, 50.8],
       },
-      toAbs: (pct, { measurements }) => measurements.head * pct,
+      ...pctBasedOn('head'),
       menu: 'fit',
     },
     lengthRatio: { pct: 55, min: 40, max: 60, menu: 'style' },

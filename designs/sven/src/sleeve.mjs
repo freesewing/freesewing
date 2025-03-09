@@ -1,6 +1,6 @@
 import { sleeve as brianSleeve } from '@freesewing/brian'
 import { ribbing, front, back } from './frontback.mjs'
-import { hidePresets } from '@freesewing/core'
+import { hidePresets, pctBasedOn } from '@freesewing/core'
 
 function svenSleeve({ store, sa, points, paths, Path, macro, options, part }) {
   if (options.ribbing) {
@@ -83,7 +83,7 @@ export const sleeve = {
   after: [front, back],
   options: {
     ribbing,
-    cuffEase: { pct: 20, min: 0, max: 200, menu: 'fit' },
+    cuffEase: { pct: 20, min: 0, max: 200, ...pctBasedOn('wrist'), menu: 'fit' },
   },
   draft: svenSleeve,
 }

@@ -1,5 +1,6 @@
 import { back as brianBack } from '@freesewing/brian'
 import { sharedDimensions } from './shared.mjs'
+import { pctBasedOn } from '@freesewing/core'
 
 function draftHueyBack({
   store,
@@ -100,7 +101,7 @@ export const back = {
   options: {
     ribbing: { bool: true, menu: 'style' },
     ribbingHeight: { pct: 10, min: 5, max: 15, menu: 'style' },
-    hipsEase: { pct: 8, min: 4, max: 12, menu: 'fit' },
+    hipsEase: { pct: 8, min: 4, max: 12, ...pctBasedOn('hips'), menu: 'fit' },
     // Override Brian's lengthbonus. See #6596
     lengthBonus: { pct: 15, min: -4, max: 60, menu: 'style' },
   },

@@ -1,4 +1,5 @@
 import { bustPlugin } from '@freesewing/plugin-bust'
+import { pctBasedOn } from '@freesewing/core'
 
 function tamikoTop({
   sa,
@@ -214,7 +215,7 @@ export const top = {
   optionalMeasurements: ['highBust'],
   options: {
     armholeDepthFactor: { pct: 50, min: 40, max: 60, menu: 'fit' },
-    chestEase: { pct: 2, min: 1, max: 20, menu: 'fit' },
+    chestEase: { pct: 2, min: 1, max: 20, ...pctBasedOn('chest'), menu: 'fit' },
     flare: { deg: 15, min: -10, max: 30, menu: 'style' },
     lengthBonus: { pct: 13, min: 0, max: 60, menu: 'style' },
     shoulderseamLength: { pct: 10, min: 5, max: 25, menu: 'style' },

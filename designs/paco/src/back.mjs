@@ -358,8 +358,8 @@ export const back = {
     // Disable this option from Titan
     waistbandHeight: 0,
     // Fit
-    waistEase: { pct: 2, min: 0, max: 10, menu: 'fit' },
-    seatEase: { pct: 5, min: 0, max: 15, menu: 'fit' },
+    waistEase: { pct: 2, min: 0, max: 10, ...pctBasedOn('waist'), menu: 'fit' },
+    seatEase: { pct: 5, min: 0, max: 15, ...pctBasedOn('seat'), menu: 'fit' },
     // Style
     waistHeight: { pct: 5, min: 0, max: 100, menu: 'style' },
     lengthBonus: { pct: 0, min: -15, max: 10, menu: 'style' },
@@ -382,7 +382,7 @@ export const back = {
       ...pctBasedOn('waistToFloor'),
       menu: 'elastic',
     },
-    heelEase: { pct: 5, min: 0, max: 50, menu: 'elastic' },
+    heelEase: { pct: 5, min: 0, max: 50, ...pctBasedOn('heel'), menu: 'elastic' },
     // Pockets
     frontPockets: { bool: true, menu: 'pockets' },
     backPockets: { bool: false, menu: 'pockets' },

@@ -1,6 +1,6 @@
 import { front as frontBase } from '@freesewing/brian'
 import { back as backBase } from '@freesewing/brian'
-import { hidePresets } from '@freesewing/core'
+import { hidePresets, pctBasedOn } from '@freesewing/core'
 
 export function draftDianaFrontOrBack({
   measurements,
@@ -214,7 +214,7 @@ export const front = {
 
     // Percentages
     acrossBackFactor: { pct: 97, min: 93, max: 100, menu: 'advanced' },
-    cuffEase: { pct: 20, min: 0, max: 30, menu: 'fit' },
+    cuffEase: { pct: 20, min: 0, max: 30, ...pctBasedOn('wrist'), menu: 'fit' },
     lengthBonus: { pct: 0, min: 0, max: 50, menu: 'fit' },
     sleeveLengthBonus: { pct: 0, min: -40, max: 10, menu: 'fit' },
     shoulderSeamLength: { pct: 35, min: 0.1, max: 60, menu: 'style' },
@@ -224,11 +224,11 @@ export const front = {
 
     frontArmholeDeeper: { pct: 0, min: 0, max: 1.5, menu: 'advanced' },
 
-    shoulderEase: { pct: 0, min: -2, max: 6, menu: 'fit' },
-    waistEase: { pct: 0, min: -10, max: 20, menu: 'fit' },
-    hipsEase: { pct: 0, min: -10, max: 20, menu: 'fit' },
-    chestEase: { pct: 0, min: -10, max: 20, menu: 'fit' },
-    bicepsEase: { pct: 0, min: -5, max: 50, menu: 'fit' },
+    shoulderEase: { pct: 0, min: -2, max: 6, ...pctBasedOn('shoulderToShoulder'), menu: 'fit' },
+    waistEase: { pct: 0, min: -10, max: 20, ...pctBasedOn('waist'), menu: 'fit' },
+    hipsEase: { pct: 0, min: -10, max: 20, ...pctBasedOn('hips'), menu: 'fit' },
+    chestEase: { pct: 0, min: -10, max: 20, ...pctBasedOn('chest'), menu: 'fit' },
+    bicepsEase: { pct: 0, min: -5, max: 50, ...pctBasedOn('biceps'), menu: 'fit' },
 
     sleevecapEase: { pct: 0, min: 0, max: 10, menu: 'advanced.sleevecap' },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75, menu: 'advanced.sleevecap' },
@@ -291,7 +291,7 @@ export const back = {
 
     // Percentages
     acrossBackFactor: { pct: 97, min: 93, max: 100, menu: 'advanced' },
-    cuffEase: { pct: 20, min: 0, max: 30, menu: 'fit' },
+    cuffEase: { pct: 20, min: 0, max: 30, ...pctBasedOn('wrist'), menu: 'fit' },
     lengthBonus: { pct: 0, min: 0, max: 50, menu: 'fit' },
     sleeveLengthBonus: { pct: 0, min: -40, max: 10, menu: 'fit' },
     shoulderSeamLength: { pct: 35, min: 0.1, max: 60, menu: 'style' },
@@ -300,11 +300,11 @@ export const back = {
 
     frontArmholeDeeper: { pct: 0, min: 0, max: 1.5, menu: 'advanced' },
 
-    shoulderEase: { pct: 0, min: -2, max: 6, menu: 'fit' },
-    waistEase: { pct: 0, min: -10, max: 20, menu: 'fit' },
-    hipsEase: { pct: 0, min: -10, max: 20, menu: 'fit' },
-    chestEase: { pct: 0, min: -10, max: 20, menu: 'fit' },
-    bicepsEase: { pct: 0, min: -5, max: 50, menu: 'fit' },
+    shoulderEase: { pct: 0, min: -2, max: 6, ...pctBasedOn('shoulderToShoulder'), menu: 'fit' },
+    waistEase: { pct: 0, min: -10, max: 20, ...pctBasedOn('waist'), menu: 'fit' },
+    hipsEase: { pct: 0, min: -10, max: 20, ...pctBasedOn('hips'), menu: 'fit' },
+    chestEase: { pct: 0, min: -10, max: 20, ...pctBasedOn('chest'), menu: 'fit' },
+    bicepsEase: { pct: 0, min: -5, max: 50, ...pctBasedOn('biceps'), menu: 'fit' },
 
     sleevecapEase: { pct: 0, min: 0, max: 10, menu: 'advanced.sleevecap' },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75, menu: 'advanced.sleevecap' },

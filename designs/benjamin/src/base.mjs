@@ -1,3 +1,5 @@
+import { pctBasedOn } from '@freesewing/core'
+
 function draftBenjaminBase({
   store,
   sa,
@@ -236,7 +238,7 @@ export const base = {
     bandLength: 0.17,
     adjustmentRibbonWidth: 20,
     // Fit options
-    collarEase: { pct: 3, min: 0, max: 6, menu: 'fit' },
+    collarEase: { pct: 3, min: 0, max: 6, ...pctBasedOn('neck'), menu: 'fit' },
     adjustmentRibbon: { bool: false, menu: 'fit' },
     // Style options
     tipWidth: { pct: 15, min: 0, max: 20, menu: 'style' },

@@ -2,6 +2,7 @@ import { sleevecap } from './sleevecap.mjs'
 import { front } from './front.mjs'
 import { frontBase } from './front-base.mjs'
 import { back } from './back.mjs'
+import { pctBasedOn } from '@freesewing/core'
 
 function draftBreannaSleeve(params) {
   const {
@@ -147,7 +148,7 @@ export const sleeve = {
   after: [front, frontBase, back],
   measurements: ['shoulderToWrist', 'wrist'],
   options: {
-    cuffEase: { pct: 20, min: 0, max: 50, menu: 'fit' },
+    cuffEase: { pct: 20, min: 0, max: 50, ...pctBasedOn('wrist'), menu: 'fit' },
     sleeveLengthBonus: { pct: 0, min: -40, max: 10, menu: 'style' },
   },
   draft: draftBreannaSleeve,
