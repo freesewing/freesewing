@@ -66,11 +66,16 @@ export const getId = ({
   return id
 }
 
-export const translateStrings = (t, list) => {
+export const translateStrings = (list, translations = {}) => {
   let translated = ''
+  if (!list) return translated
   for (const string of list) {
-    if (Array.isArray(string)) translated += translateStrings(t, string)
-    else if (string) translated += t(string.toString()).replace(/&quot;/g, '"') + ' '
+    if (Array.isArray(string)) translated += translateStrings(string, translations)
+    else if (string) {
+      if (translations[string]) {
+        translated += `${translations[string]}`.replace(/&quot;/g, '"') + ' '
+      } else translated += `${string}`
+    }
   }
 
   return translated

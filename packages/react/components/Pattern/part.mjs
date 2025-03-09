@@ -1,10 +1,9 @@
-//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // eslint-disable-next-line no-unused-vars
 import React, { forwardRef } from 'react'
 import { getId, getProps } from './utils.mjs'
 
 export const PartInner = forwardRef(
-  ({ stackName, partName, part, settings, components, t, drillProps }, ref) => {
+  ({ stackName, partName, part, settings, components, strings }, ref) => {
     const { Group, Path, Point, Snippet } = components
 
     return (
@@ -16,7 +15,7 @@ export const PartInner = forwardRef(
             topLeft={part.topLeft}
             bottomRight={part.bottomRight}
             units={settings[0].units}
-            {...{ stackName, partName, pathName, part, settings, components, t, drillProps }}
+            {...{ stackName, partName, pathName, part, settings, components, strings }}
           />
         ))}
         {Object.keys(part.points).map((pointName) => (
@@ -25,14 +24,14 @@ export const PartInner = forwardRef(
             point={part.points[pointName]}
             topLeft={part.topLeft}
             bottomRight={part.bottomRight}
-            {...{ stackName, partName, pointName, part, settings, components, t, drillProps }}
+            {...{ stackName, partName, pointName, part, settings, components, strings }}
           />
         ))}
         {Object.keys(part.snippets).map((snippetName) => (
           <Snippet
             key={snippetName}
             snippet={part.snippets[snippetName]}
-            {...{ stackName, partName, snippetName, part, settings, components, t, drillProps }}
+            {...{ stackName, partName, snippetName, part, settings, components, strings }}
           />
         ))}
       </Group>
@@ -42,12 +41,12 @@ export const PartInner = forwardRef(
 
 PartInner.displayName = 'PartInner'
 
-export const Part = ({ stackName, partName, part, settings, components, t, drillProps }) => {
+export const Part = ({ stackName, partName, part, settings, components, strings }) => {
   const { Group } = components
 
   return (
     <Group {...getProps(part)} id={getId({ settings, stackName, partName })}>
-      <PartInner {...{ stackName, partName, part, settings, components, t, drillProps }} />
+      <PartInner {...{ stackName, partName, part, settings, components, strings }} />
     </Group>
   )
 }

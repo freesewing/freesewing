@@ -6,7 +6,7 @@ import { Pattern } from '@freesewing/react/components/Pattern'
  * A pattern you can pan and zoom
  */
 export const ZoomablePattern = forwardRef(function ZoomablePatternRef(props, ref) {
-  const { renderProps, rotate, components = {} } = props
+  const { renderProps, rotate, components = {}, strings = {} } = props
   const { onTransformed, setZoomFunctions } = useContext(ZoomContext)
 
   return (
@@ -26,7 +26,7 @@ export const ZoomablePattern = forwardRef(function ZoomablePatternRef(props, ref
       >
         {props.children || (
           <Pattern
-            {...{ renderProps, components }}
+            {...{ renderProps, components, strings }}
             ref={ref}
             className={`freesewing pattern tw-w-full ${rotate ? 'tw--rotate-90' : ''}`}
           />

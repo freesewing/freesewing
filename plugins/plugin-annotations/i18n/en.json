@@ -11,6 +11,7 @@
   "plugin-annotations:facing": "facing",
   "plugin-annotations:from": "from",
   "plugin-annotations:fusible": "fusible interfacing",
+  "plugin-annotations:grainline": "Grainline",
   "plugin-annotations:interfacing": "interfacing",
   "plugin-annotations:lining": "lining",
   "plugin-annotations:mirrored": "mirrored",

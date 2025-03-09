@@ -1,10 +1,10 @@
-//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import { translateStrings } from './utils.mjs'
 
-export const TextSpans = ({ point, t }) => {
-  const translated = translateStrings(t, point.attributes.list['data-text'])
+export const TextSpans = ({ point, strings }) => {
+  const translated = translateStrings(point.attributes.list['data-text'], strings)
+  console.log({ translated, strings })
   const text = []
   if (translated.indexOf('\n') !== -1) {
     // Handle muti-line text
@@ -28,18 +28,18 @@ export const TextSpans = ({ point, t }) => {
   return text
 }
 
-export const Text = ({ point, t }) => (
+export const Text = ({ point, strings }) => (
   <text x={point.x} y={point.y} {...point.attributes.textProps}>
-    <TextSpans point={point} t={t} />
+    <TextSpans point={point} strings={strings} />
   </text>
 )
 
-export const TextOnPath = ({ path, pathId, t }) => {
+export const TextOnPath = ({ path, pathId, strings }) => {
   const textPathProps = {
     xlinkHref: '#' + pathId,
     startOffset: '0%',
   }
-  const translated = translateStrings(t, path.attributes.text)
+  const translated = translateStrings(path.attributes.text, strings)
   const align = path.attributes.list['data-text-class']
     ? path.attributes.list['data-text-class'].join(' ')
     : false

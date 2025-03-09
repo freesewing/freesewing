@@ -1,9 +1,8 @@
-//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import { withinPartBounds } from './utils.mjs'
 
-export const Point = ({ stackName, partName, pointName, part, point, components, t }) => {
+export const Point = ({ stackName, partName, pointName, part, point, components, strings }) => {
   /*
    * Don't include points outside the part bounding box
    * Unless the `data-render-always` attribute is set
@@ -15,7 +14,9 @@ export const Point = ({ stackName, partName, pointName, part, point, components,
 
   return point.attributes ? (
     <>
-      {point.attributes.text ? <Text {...{ point, pointName, partName, stackName, t }} /> : null}
+      {point.attributes.text ? (
+        <Text {...{ point, pointName, partName, stackName, strings }} />
+      ) : null}
       {point.attributes.circle ? <Circle point={point} /> : null}
     </>
   ) : null

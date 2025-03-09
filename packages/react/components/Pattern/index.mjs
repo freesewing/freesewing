@@ -44,7 +44,7 @@ const Pattern = forwardRef((props, ref) => {
   // Destructure props
   const {
     renderProps = false,
-    t = (string) => string,
+    strings = {},
     children = false,
     className = 'freesewing pattern',
     components = {},
@@ -83,7 +83,7 @@ const Pattern = forwardRef((props, ref) => {
                 stack={renderProps.stacks[stackName]}
                 settings={renderProps.settings}
                 components={mergedComponents}
-                t={t}
+                strings={strings}
               />
             ))}
       </Group>

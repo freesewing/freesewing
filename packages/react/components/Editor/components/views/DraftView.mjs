@@ -1,6 +1,8 @@
 // Dependencies
 import React from 'react'
 import { draft, missingMeasurements } from '../../lib/index.mjs'
+import { i18n } from '@freesewing/collection'
+import { i18n as pluginI18n } from '@freesewing/core-plugins'
 // Components
 import { Null } from '@freesewing/react/components/Null'
 import { ZoomablePattern } from '../ZoomablePattern.mjs'
@@ -40,6 +42,19 @@ export const DraftView = ({ Design, state, update, config, plugins = [], PluginO
    */
   const { pattern } = draft(Design, state.settings, plugins)
 
+  /*
+   * Create object holding strings for translation
+   */
+  const strings = {}
+  if (i18n[pattern.designConfig.data?.id]?.en) {
+    const en = i18n[pattern.designConfig.data.id].en
+    // Parts have no prefix
+    for (const [key, val] of Object.entries(en.p || {})) strings[key] = val
+    // Strings do
+    for (const [key, val] of Object.entries(en.s || {})) strings[`simon:${key}`] = val
+  }
+  for (const [key, val] of Object.entries(pluginI18n.en)) strings[key] = val
+
   let output = null
   let renderProps = false
   if (state.ui?.renderer === 'svg') {
@@ -60,10 +75,11 @@ export const DraftView = ({ Design, state, update, config, plugins = [], PluginO
     renderProps = pattern.getRenderProps()
     output = (
       <>
-        <PluginOutput {...{ pattern, Design, state, update, config }} />
+        <PluginOutput {...{ pattern, Design, state, update, config, strings }} />
         <ZoomablePattern
           renderProps={renderProps}
           patternLocale={state.locale || 'en'}
+          strings={strings}
           rotate={state.ui.rotate}
         />
       </>
