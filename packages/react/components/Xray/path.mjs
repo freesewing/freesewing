@@ -22,7 +22,7 @@ export const PathXray = ({
   settings,
   components,
   t,
-  drillProps,
+  drillProps = {},
 }) => {
   /*
    * We use the Path component from Pattern here
