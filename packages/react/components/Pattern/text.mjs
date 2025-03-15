@@ -4,7 +4,6 @@ import { translateStrings } from './utils.mjs'
 
 export const TextSpans = ({ point, strings }) => {
   const translated = translateStrings(point.attributes.list['data-text'], strings)
-  console.log({ translated, strings })
   const text = []
   if (translated.indexOf('\n') !== -1) {
     // Handle muti-line text
