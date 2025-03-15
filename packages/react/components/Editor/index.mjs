@@ -82,15 +82,22 @@ export const Editor = ({ config = {}, design = false, preload = {}, setTitle = f
    * is undefined, and if so pass down the default ux value here.
    * This way, should more of these exceptions get added over time, we can use
    * the same centralized solution.
+   * We also ensure that settings is always set to an empty object in case there
+   * are no settings yet, as this avoids having to null-check them everywhere.
    */
   const passDownState =
     state.ui?.ux === undefined
       ? {
+          settings: {}, // Ensure settings is always set
           ...state,
           ui: { ...(state.ui || {}), ux: editorConfig.defaultUx },
           _: { ...ephemeralState, missingMeasurements },
         }
-      : { ...state, _: { ...ephemeralState, missingMeasurements } }
+      : {
+          settings: {}, // Ensure settings is always set
+          ...state,
+          _: { ...ephemeralState, missingMeasurements },
+        }
 
   return (
     <div className="flex flex-row items-top">
