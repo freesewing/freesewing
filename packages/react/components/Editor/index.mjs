@@ -92,6 +92,11 @@ export const Editor = ({ config = {}, design = false, preload = {}, setTitle = f
         }
       : { ...state, _: { ...ephemeralState, missingMeasurements } }
 
+  /*
+   * Ensure the settings object is always present, so we don't have to do null checks everywhere
+   */
+  passDownState.settings = passDownState.settings || {}
+
   return (
     <div className="flex flex-row items-top">
       {editorConfig.withAside ? <AsideViewMenu update={update} state={passDownState} /> : null}
