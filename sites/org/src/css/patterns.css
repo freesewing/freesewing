@@ -484,3 +484,77 @@ figcaption.mdx {
   width: var(--ifm-avatar-photo-size);
   height: var(--ifm-avatar-photo-size);
 }
+
+/*
+ * Sample styles
+ */
+svg.freesewing.pattern g.sample-1 path.fabric,
+svg.freesewing.pattern g.sample-1 path.lining,
+svg.freesewing.pattern g.sample-1 path.interfacing {
+  stroke: var(--pattern-sample-1);
+  fill: var(--pattern-sample-1);
+  fill-opacity: 0.01;
+}
+svg.freesewing.pattern g.sample-2 path.fabric,
+svg.freesewing.pattern g.sample-2 path.lining,
+svg.freesewing.pattern g.sample-2 path.interfacing {
+  stroke: var(--pattern-sample-2);
+  fill: var(--pattern-sample-2);
+  fill-opacity: 0.01;
+}
+svg.freesewing.pattern g.sample-3 path.fabric,
+svg.freesewing.pattern g.sample-3 path.lining,
+svg.freesewing.pattern g.sample-3 path.interfacing {
+  stroke: var(--pattern-sample-3);
+  fill: var(--pattern-sample-3);
+  fill-opacity: 0.01;
+}
+svg.freesewing.pattern g.sample-4 path.fabric,
+svg.freesewing.pattern g.sample-4 path.lining,
+svg.freesewing.pattern g.sample-4 path.interfacing {
+  stroke: var(--pattern-sample-4);
+  fill: var(--pattern-sample-4);
+  fill-opacity: 0.01;
+}
+svg.freesewing.pattern g.sample-5 path.fabric,
+svg.freesewing.pattern g.sample-5 path.lining,
+svg.freesewing.pattern g.sample-5 path.interfacing {
+  stroke: var(--pattern-sample-5);
+  fill: var(--pattern-sample-5);
+  fill-opacity: 0.01;
+}
+svg.freesewing.pattern g.sample-6 path.fabric,
+svg.freesewing.pattern g.sample-6 path.lining,
+svg.freesewing.pattern g.sample-6 path.interfacing {
+  stroke: var(--pattern-sample-6);
+  fill: var(--pattern-sample-6);
+  fill-opacity: 0.01;
+}
+svg.freesewing.pattern g.sample-7 path.fabric,
+svg.freesewing.pattern g.sample-7 path.lining,
+svg.freesewing.pattern g.sample-7 path.interfacing {
+  stroke: var(--pattern-sample-7);
+  fill: var(--pattern-sample-7);
+  fill-opacity: 0.01;
+}
+svg.freesewing.pattern g.sample-8 path.fabric,
+svg.freesewing.pattern g.sample-8 path.lining,
+svg.freesewing.pattern g.sample-8 path.interfacing {
+  stroke: var(--pattern-sample-8);
+  fill: var(--pattern-sample-8);
+  fill-opacity: 0.01;
+}
+svg.freesewing.pattern g.sample-9 path.fabric,
+svg.freesewing.pattern g.sample-9 path.lining,
+svg.freesewing.pattern g.sample-9 path.interfacing {
+  stroke: var(--pattern-sample-9);
+  fill: var(--pattern-sample-9);
+  fill-opacity: 0.01;
+}
+svg.freesewing.pattern g.sample-10 path.fabric,
+svg.freesewing.pattern g.sample-10 path.lining,
+svg.freesewing.pattern g.sample-10 path.interfacing {
+  stroke: var(--pattern-sample-10);
+  fill: var(--pattern-sample-10);
+  fill-opacity: 0.01;
+}
