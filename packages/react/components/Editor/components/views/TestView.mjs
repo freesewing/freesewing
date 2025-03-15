@@ -39,17 +39,34 @@ export const TestView = ({ Design, state, update, config }) => {
 
   const { settings } = state
   if (settings.sample) {
-    const { pattern } = sample(Design, settings)
-    const renderProps = pattern.getRenderProps()
-    const output = (
-      <ZoomablePattern
-        renderProps={renderProps}
-        patternLocale={state.locale || 'en'}
-        rotate={state.ui.rotate}
-      />
-    )
+    /*
+     * When testing/sampling one design, and then switching the editor to a different design,
+     * we run the risk that settings.sample holds invalid configuration. Like testing an unused
+     * measurement, or non-existing option.
+     * So here we try to check for that and only test/sample if things make sense
+     */
+    if (
+      (settings.sample.type === 'option' &&
+        Object.keys(Design.patternConfig.options).includes(settings.sample.option)) ||
+      (settings.sample.type === 'measurement' &&
+        [
+          ...Design.patternConfig.measurements,
+          ...Design.patternConfig.optionalMeasurements,
+        ].includes(settings.sample.measurement)) ||
+      settings.sample.type === 'models'
+    ) {
+      const { pattern } = sample(Design, settings)
+      const renderProps = pattern.getRenderProps()
+      const output = (
+        <ZoomablePattern
+          renderProps={renderProps}
+          patternLocale={state.locale || 'en'}
+          rotate={state.ui.rotate}
+        />
+      )
 
-    return <PatternLayout {...{ update, Design, output, state, pattern, config }} />
+      return <PatternLayout {...{ update, Design, output, state, pattern, config }} />
+    } else console.log('Not sampling', settings.sample)
   }
 
   // Translated measurements
