@@ -273,7 +273,7 @@ const basePlugin = ({
               .attr('class', 'fill-fabric')
               .attr(
                 'style',
-                `stroke-opacity: 0; fill-opacity: ${(col + row) % 2 === 0 ? 0.03 : 0.15};`
+                `stroke-opacity: 0; fillOpacity: ${(col + row) % 2 === 0 ? 0.03 : 0.15};`
               )
           } else {
             paths[pageName].attr('class', 'interfacing stroke-xs')

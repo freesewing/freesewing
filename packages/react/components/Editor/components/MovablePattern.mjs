@@ -448,9 +448,9 @@ export const Buttons = ({ transform, flip, rotate, resetPart, rotate90, iconSize
           rx="3"
           ry="3"
           fill="var(--pattern-interfacing)"
-          fill-opacity="0.2"
+          fillOpacity="0.2"
           stroke="var(--pattern-interfacing)"
-          stroke-width="1"
+          strokeWidth="1"
         />
         <Button
           onClickCb={resetPart}

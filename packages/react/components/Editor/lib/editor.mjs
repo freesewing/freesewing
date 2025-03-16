@@ -128,6 +128,8 @@ export function getUiPreferenceUndoStepData({ step }) {
   const field = step.name === 'ui' ? step.path[1] : step.path[2]
   const structure = menuUiPreferencesStructure()[field]
 
+  if (!structure) return false
+
   /*
    * This we'll end up returning
    */
