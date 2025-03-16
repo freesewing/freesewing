@@ -74,6 +74,17 @@ export const MeasurementsView = ({
     else if (set.name)
       // User measurement set
       update.settings(['metadata'], { setName: set.name })
+    update.notifySuccess(
+      <div className="tw-flex tw-flex-row tw-items-center tw-justify-between tw-w-full tw-flex-wrap tw-gap-2">
+        <span>Measurements loaded</span>
+        <button
+          className="tw-daisy-btn tw-daisy-btn-success tw-daisy-btn-outline tw-border-white"
+          onClick={() => update.view('draft')}
+        >
+          <span className="tw-text-white">Load Draft View</span>
+        </button>
+      </div>
+    )
   }
 
   // Construct accordion items based on the editor configuration
@@ -239,9 +250,19 @@ async function loadMeasurementsSet(id, backend, loadMeasurements, update) {
   if (result[0] === 200 && result[1].set) {
     loadMeasurements(result[1].set)
     update.clearLoading()
-    update.notifySuccess('Measurements set loaded', 'getsetok')
+    update.notifySuccess(
+      <div className="tw-flex tw-flex-row tw-items-center tw-justify-between tw-w-full tw-flex-wrap tw-gap-2">
+        <span>Measurements set loaded</span>
+        <button
+          className="tw-daisy-btn tw-daisy-btn-success tw-daisy-btn-outline tw-border-white"
+          onClick={() => update.view('draft')}
+        >
+          <span className="tw-text-white">Load Draft View</span>
+        </button>
+      </div>
+    )
   } else {
     update.clearLoading()
-    update.notifySuccess('Measurements set loaded', 'getsetko')
+    update.notifyFailure('Failed to load measurements set', 'getsetko')
   }
 }

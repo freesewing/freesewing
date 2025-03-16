@@ -65,7 +65,9 @@ export const LoadingStatus = ({ state, update }) => {
               <span className={`tw-shrink-0 tw-text-${conf.color}-content`}>
                 <Icon />
               </span>
-              <div className={conf.color === 'info' ? 'tw-text-neutral' : ''}>{conf.msg}</div>
+              <div className={conf.color === 'info' ? 'tw-text-neutral tw-w-full' : 'tw-w-full'}>
+                {conf.msg}
+              </div>
             </div>
           )
         })}
