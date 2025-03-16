@@ -14,13 +14,11 @@ export default {
     './tailwind-force.html',
   ],
   plugins: [daisyui],
-  //corePlugins: { preflight: false },
-  darkMode: ['class', "[data-theme='dark']"],
   prefix: 'tw-',
   daisyui: {
-    themes: [{ light, dark }],
+    themes: [{ dark, light }],
     logs: true,
-    themeRoot: '*',
+    //themeRoot: '*',
     prefix: 'daisy-',
   },
   theme: {
