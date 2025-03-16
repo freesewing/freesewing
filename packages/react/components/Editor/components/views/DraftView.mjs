@@ -76,5 +76,5 @@ export const DraftView = ({ Design, state, update, config, plugins = [], PluginO
     )
   }
 
-  return <PatternLayout {...{ update, Design, output, state, pattern, config }} />
+  return <PatternLayout {...{ update, Design, output, state, pattern, config, strings }} />
 }

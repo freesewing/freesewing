@@ -6,6 +6,7 @@ import { formatDesignOptionValue, menuCoreSettingsStructure } from './index.mjs'
 import { menuUiPreferencesStructure } from './ui-preferences.mjs'
 import { i18n } from '@freesewing/collection'
 import { i18n as pluginI18n } from '@freesewing/core-plugins'
+import { flags as flagTranslations } from '@freesewing/i18n'
 // Components
 import {
   ErrorIcon,
@@ -17,6 +18,13 @@ import {
 import { HtmlSpan } from '../components/HtmlSpan.mjs'
 
 /*
+ * i18n makes everything complicated
+ */
+const flagTranslationsWithNamespace = {}
+for (const [key, val] of Object.entries(flagTranslations))
+  flagTranslationsWithNamespace[`flag:${key}`] = val
+
+/*
  * This method bundles pattern translations in a object we can pass to the Pattern component
  *
  * @param {string} design - The name of the design
@@ -24,6 +32,7 @@ import { HtmlSpan } from '../components/HtmlSpan.mjs'
  */
 export const bundlePatternTranslations = (design) => {
   const strings = {}
+  for (const [key, val] of Object.entries(flagTranslationsWithNamespace)) strings[key] = val
   if (i18n[design]?.en) {
     const en = i18n[design].en
     // Parts have no prefix
@@ -433,6 +442,18 @@ export function undoableObjUpdate(name, obj = {}, path, val = '__UNSET__', setEp
   })
 
   return objUpdate(obj, path, val)
+}
+
+/*
+ * Helper method to strip a namespace: prefix from a string
+ *
+ * @param {string} key
+ * @return {string} keyWithoutNamespace
+ */
+export function stripNamespace(key) {
+  const pos = `${key}`.indexOf(':')
+
+  return pos === -1 ? key : key.slice(pos + 1)
 }
 
 /*

@@ -6,7 +6,7 @@ import { UiPreferencesMenu } from './UiPreferencesMenu.mjs'
 import { FlagsAccordionEntries } from '../Flag.mjs'
 import { Accordion } from '../Accordion.mjs'
 
-export const DraftMenu = ({ Design, pattern, state, update }) => {
+export const DraftMenu = ({ Design, pattern, state, update, i18n }) => {
   const menuProps = { Design, state, pattern, update }
 
   const sections = [
@@ -49,7 +49,7 @@ export const DraftMenu = ({ Design, pattern, state, update }) => {
 
   if (flags)
     items.push([
-      <FlagsAccordionTitle key={1} {...{ flags }} />,
+      <FlagsAccordionTitle key={1} {...{ flags, pattern, i18n }} />,
       <FlagsAccordionEntries {...{ update, state, flags }} key={2} />,
       'flags',
     ])

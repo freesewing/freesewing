@@ -1,6 +1,6 @@
 import React from 'react'
 import mustache from 'mustache'
-import { flattenFlags } from '../lib/index.mjs'
+import { flattenFlags, stripNamespace, bundlePatternTranslations } from '../lib/index.mjs'
 import {
   ChatIcon,
   ErrorIcon,
@@ -14,6 +14,8 @@ import {
   WrenchIcon,
 } from '@freesewing/react/components/Icon'
 import { SubAccordion } from './Accordion.mjs'
+import { MiniTip, MiniNote } from '@freesewing/react/components/Mini'
+import Markdown from 'react-markdown'
 
 /*
  * Helper object to look up flag icons
@@ -35,7 +37,7 @@ export const FlagTypeIcon = ({ type, className = 'tw-w-6 tw-h-6' }) => {
   return <Icon className={className} />
 }
 
-export const Flag = ({ data, handleUpdate }) => {
+export const Flag = ({ data, handleUpdate, strings }) => {
   const btnIcon = data.suggest?.icon ? (
     <FlagTypeIcon type={data.suggest.icon} className="tw-w-5 tw-h-6 sm:tw-w-6 tw-h-6" />
   ) : null
@@ -43,31 +45,48 @@ export const Flag = ({ data, handleUpdate }) => {
   const button =
     data.suggest?.text && data.suggest?.update ? (
       <button
-        className={`tw-btn tw-btn-secondary tw-btn-outline tw-flex tw-flex-row tw-items-center ${
+        className={`tw-daisy-btn tw-daisy-btn-secondary tw-daisy-btn-outline tw-flex tw-flex-row tw-items-center ${
           btnIcon ? 'tw-gap-6' : ''
         }`}
         onClick={() => handleUpdate(data.suggest.update)}
       >
         {btnIcon}
-        {data.suggest.text}
+        {strings[data.suggest.text] || data.suggest.text}
       </button>
     ) : null
 
-  const desc = data.replace ? mustache.render(data.desc, data.replace) : data.desc
+  const desc = data.replace
+    ? mustache.render(strings[data.desc] || data.desc, data.replace)
+    : strings[data.desc] || data.desc
   const notes = data.notes
     ? Array.isArray(data.notes)
       ? '\n\n' +
         data.notes
-          .map((note) => (data.replace ? mustache.render(note, data.replace) : note))
+          .map((note) =>
+            data.replace
+              ? mustache.render(strings[note] || note, data.replace)
+              : strings[note] || note
+          )
           .join('\n\n')
-      : '\n\n' + (data.replace ? mustache.render(data.notes, data.replace) : data.notes)
+      : '\n\n' +
+        (data.replace
+          ? mustache.render(strings[data.notes] || data.notes, data.replace)
+          : strings[data.notes] || data.notes)
     : null
 
   return (
     <div className="tw-flex tw-flex-col tw-gap-2 tw-items-start">
-      <div className="first:tw-mt-0 tw-grow md flag">
-        <pre>{desc}</pre>
-        <pre>{notes}</pre>
+      <div className="first:tw-mt-0 tw-grow md flag tw-flex tw-flex-col tw-gap-2">
+        {desc ? (
+          <MiniTip>
+            <Markdown>{strings[desc] || desc}</Markdown>
+          </MiniTip>
+        ) : null}
+        {notes ? (
+          <MiniNote>
+            <Markdown>{strings[notes] || notes}</Markdown>
+          </MiniNote>
+        ) : null}
       </div>
       {button ? (
         <div className="tw-mt-2 tw-w-full tw-flex tw-flex-row tw-justify-end">{button}</div>
@@ -96,7 +115,7 @@ export const FlagsAccordionTitle = ({ flags }) => {
   )
 }
 
-export const FlagsAccordionEntries = ({ flags, update }) => {
+export const FlagsAccordionEntries = ({ flags, update, pattern, strings }) => {
   const flagList = flattenFlags(flags)
 
   if (Object.keys(flagList).length < 1) return null
@@ -117,11 +136,11 @@ export const FlagsAccordionEntries = ({ flags, update }) => {
               <div className="tw-no-shrink">
                 <FlagIcon type={flag.type} />
               </div>
-              <span className="tw-font-medium tw-text-left">{title}</span>
+              <span className="tw-font-medium tw-text-left">{strings[title] || title}</span>
             </div>
             <span className="tw-uppercase tw-font-bold">{flag.type}</span>
           </div>,
-          <Flag key={key} data={flag} handleUpdate={handleUpdate} />,
+          <Flag key={key} data={flag} strings={strings} handleUpdate={handleUpdate} />,
           key,
         ]
       })}

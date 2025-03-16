@@ -35,6 +35,7 @@ import {
   settingsValueCustomOrDefault,
   statePrefixPath,
   stateUpdateFactory,
+  stripNamespace,
   t,
   undoableObjUpdate,
 } from './editor.mjs'
@@ -97,6 +98,7 @@ export {
   settingsValueCustomOrDefault,
   statePrefixPath,
   stateUpdateFactory,
+  stripNamespace,
   t,
   undoableObjUpdate,
   // formatting.mjs

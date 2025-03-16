@@ -686,7 +686,7 @@ const headerMenus = {
   //HeaderMenuDraftViewIcons,
 }
 
-export const HeaderMenu = ({ config, Design, pattern, state, update }) => {
+export const HeaderMenu = ({ config, Design, pattern, state, update, strings }) => {
   const [open, setOpen] = useState()
 
   /*
@@ -705,8 +705,8 @@ export const HeaderMenu = ({ config, Design, pattern, state, update }) => {
       <div
         className={`tw-flex tw-flex-row tw-flex-wrap tw-gap-0.5 lg:tw-gap-1 tw-w-full tw-items-start tw-justify-center tw-py-1 md:tw-py-1.5`}
       >
-        <HeaderMenuViewMenu {...{ config, state, update, open, setOpen }} />
-        <ViewSpecificMenu {...{ config, state, update, Design, pattern, open, setOpen }} />
+        <HeaderMenuViewMenu {...{ config, state, update, open, setOpen, strings }} />
+        <ViewSpecificMenu {...{ config, state, update, Design, pattern, open, setOpen, strings }} />
       </div>
     </div>
   )
