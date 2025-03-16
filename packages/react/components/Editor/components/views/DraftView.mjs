@@ -53,7 +53,7 @@ export const DraftView = ({ Design, state, update, config, plugins = [], PluginO
       output = (
         <>
           <PluginOutput {...{ pattern, Design, state, update, config }} />
-          <ZoomablePattern>
+          <ZoomablePattern update={update}>
             <div className="tw-w-full tw-h-full" dangerouslySetInnerHTML={{ __html }} />
           </ZoomablePattern>
         </>
@@ -71,6 +71,7 @@ export const DraftView = ({ Design, state, update, config, plugins = [], PluginO
           patternLocale={state.locale || 'en'}
           strings={strings}
           rotate={state.ui.rotate}
+          update={update}
         />
       </>
     )

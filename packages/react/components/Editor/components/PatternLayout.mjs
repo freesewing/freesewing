@@ -1,6 +1,17 @@
 import React from 'react'
+import { useDesignTranslation } from '@freesewing/react/hooks/useDesignTranslation'
 import { ZoomContextProvider } from './ZoomablePattern.mjs'
-import { HeaderMenu } from './HeaderMenu.mjs'
+import {
+  HeaderMenu,
+  HeaderMenuDraftViewDesignOptions,
+  HeaderMenuDraftViewCoreSettings,
+  HeaderMenuDraftViewUiPreferences,
+  HeaderMenuDraftViewFlags,
+} from './HeaderMenu.mjs'
+import { DesignOptionsMenu } from './menus/DesignOptionsMenu.mjs'
+import { CoreSettingsMenu } from './menus/CoreSettingsMenu.mjs'
+import { UiPreferencesMenu } from './menus/UiPreferencesMenu.mjs'
+import { Accordion } from './Accordion.mjs'
 
 /**
  * A layout for views that include a drafted pattern
@@ -13,7 +24,9 @@ import { HeaderMenu } from './HeaderMenu.mjs'
  * @param {object] pattern - The drafted pattern
  */
 export const PatternLayout = (props) => {
-  const { menu = null, Design, pattern, update, config } = props
+  const { menu = null, Design, pattern, update, config, state } = props
+  const i18n = useDesignTranslation(Design.designConfig.data.id)
+  const flags = props.pattern?.setStores?.[0]?.plugins?.['plugin-annotations']?.flags
 
   return (
     <ZoomContextProvider>
@@ -26,11 +39,16 @@ export const PatternLayout = (props) => {
           <div className="lg:tw-w-2/3 tw-flex tw-flex-col tw-h-full tw-grow tw-p-2 tw-shadow tw-mx-2">
             {props.output}
           </div>
-          {menu ? (
+          {state.ui?.aside ? (
             <div
               className={`tw-hidden xl:tw-block tw-w-1/3 tw-shrink tw-grow-0 lg:tw-p-4 tw-max-w-2xl tw-h-full tw-overflow-scroll`}
             >
-              {menu}
+              <h5 className="tw-capitalize">{pattern.designConfig.data.id} Options</h5>
+              <DesignOptionsMenu {...props} />
+              <h5>Core Settings</h5>
+              <CoreSettingsMenu {...props} />
+              <h5>UI Preferences</h5>
+              <UiPreferencesMenu {...props} />
             </div>
           ) : null}
         </div>

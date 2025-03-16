@@ -266,7 +266,6 @@ const config = {
         { to: '/docs/', label: '📖 Docs', position: 'left' },
         { to: '/showcase/', label: '📷 Showcase', position: 'left' },
         { to: '/blog/', label: '📰 Blog', position: 'left' },
-        { to: '/new/', label: '➕ New...', position: 'right' },
         { to: '/account/', label: '🔒 Account', position: 'right' },
       ],
     },

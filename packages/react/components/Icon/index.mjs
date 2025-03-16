@@ -44,6 +44,13 @@ export const ApplyIcon = (props) => (
   </IconWrapper>
 )
 
+// Looks like a two-column layout
+export const AsideIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M 16.004103,4.4394969 V 20.706071 M 3.1922297,4.3530908 H 20.925704 c 1.04693,0 1.889764,0.8428346 1.889764,1.8897638 V 18.889699 c 0,1.04693 -0.842834,1.889764 -1.889764,1.889764 H 3.1922297 c -1.0469291,0 -1.8897638,-0.842834 -1.8897638,-1.889764 V 6.2428546 c 0,-1.0469292 0.8428347,-1.8897638 1.8897638,-1.8897638 z" />
+  </IconWrapper>
+)
+
 // Looks like a lab beaker
 export const BeakerIcon = (props) => (
   <IconWrapper {...props}>
@@ -810,5 +817,19 @@ export const WrenchIcon = (props) => (
 export const XrayIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+  </IconWrapper>
+)
+
+// Looks like a magnifying glas with a + inside
+export const ZoomInIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607ZM10.5 7.5v6m3-3h-6" />
+  </IconWrapper>
+)
+
+// Looks like a magnifying glas with a + inside
+export const ZoomOutIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607ZM13.5 10.5h-6" />
   </IconWrapper>
 )

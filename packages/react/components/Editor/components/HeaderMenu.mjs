@@ -10,6 +10,7 @@ import { AsideViewMenuSpacer } from './AsideViewMenu.mjs'
 import { ViewIcon, viewLabels } from './views/index.mjs'
 import { Tooltip } from './Tooltip.mjs'
 import {
+  AsideIcon,
   DetailIcon,
   ExpandIcon,
   ExportIcon,
@@ -329,13 +330,13 @@ export const HeaderMenuDraftViewIcons = (props) => {
         </Button>
       ) : null}
       <HeaderMenuIconSpacer />
-      {ux >= levels.rotate ? (
+      {ux >= levels.aside ? (
         <Button
           lgOnly
-          updateHandler={() => update.ui('rotate', state.ui.rotate ? 0 : 1)}
-          tooltip="Turns Rotate Pattern on or off (see UI Preferences)"
+          updateHandler={() => update.ui('aside', state.ui.aside ? 0 : 1)}
+          tooltip="Toggles the side menu (see UI Preferences)"
         >
-          <RotateIcon className={`${size} ${state.ui.rotate ? 'tw-text-secondary' : muted}`} />
+          <AsideIcon className={`${size} ${state.ui.aside ? 'tw-text-secondary' : muted}`} />
         </Button>
       ) : null}
       {ux >= levels.renderer ? (
@@ -676,6 +677,7 @@ export const HeaderMenuLayoutViewIcons = (props) => {
 
 const headerMenus = {
   draft: HeaderMenuDraftView,
+  inspect: HeaderMenuDraftView,
   test: HeaderMenuTestView,
   layout: HeaderMenuLayoutView,
   timing: HeaderMenuDraftView,

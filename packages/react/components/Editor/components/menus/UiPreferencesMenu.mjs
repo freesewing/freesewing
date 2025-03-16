@@ -11,11 +11,13 @@ export const UiPreferencesMenu = ({ update, state, Design }) => {
 
   const drillProps = { Design, state, update }
   const inputs = {
+    aside: (props) => <MenuListInput {...drillProps} {...props} />,
     ux: (props) => <MenuUxSettingInput {...drillProps} {...props} />,
     rotate: (props) => <MenuListInput {...drillProps} {...props} />,
     renderer: (props) => <MenuListInput {...drillProps} {...props} />,
   }
   const values = {
+    aside: MenuListValue,
     ux: (props) => <span>{state.ui.ux}/5</span>,
     rotate: MenuListValue,
     renderer: MenuListValue,

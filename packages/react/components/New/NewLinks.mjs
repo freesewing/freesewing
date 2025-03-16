@@ -41,6 +41,7 @@ const NewLink = ({ title, Icon, description, href, Link }) => {
 
 const newLinks = {
   pattern: {
+    href: '/editor/',
     Icon: NewPatternIcon,
     title: 'Generate a new pattern',
     description:

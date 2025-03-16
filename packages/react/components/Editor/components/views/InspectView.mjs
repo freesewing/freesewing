@@ -1,6 +1,6 @@
 // Dependencies
 import React, { useContext } from 'react'
-import { draft, missingMeasurements } from '../../lib/index.mjs'
+import { draft, missingMeasurements, bundlePatternTranslations } from '../../lib/index.mjs'
 // Context
 import { ModalContext } from '@freesewing/react/context/Modal'
 // Components
@@ -49,6 +49,11 @@ export const InspectView = ({ Design, state, update, config }) => {
    */
   const { pattern } = draft(Design, state.settings)
 
+  /*
+   * Create object holding strings for translation
+   */
+  const strings = bundlePatternTranslations(pattern.designConfig.data.id)
+
   const renderProps = pattern.getRenderProps()
   const output = (
     <>
@@ -56,16 +61,18 @@ export const InspectView = ({ Design, state, update, config }) => {
         renderProps={renderProps}
         patternLocale={state.locale || 'en'}
         rotate={state.ui.rotate}
+        strings={strings}
       >
         <Xray
           renderProps={renderProps}
           drillProps={{ info }}
           className={`freesewing pattern tw-w-full ${state.ui?.rotate ? 'tw--rotate-90' : ''}`}
+          strings={strings}
         />
       </ZoomablePattern>
       {modalContent}
     </>
   )
 
-  return <PatternLayout {...{ update, Design, output, state, pattern, config }} />
+  return <PatternLayout {...{ update, Design, output, state, pattern, config, strings }} />
 }
