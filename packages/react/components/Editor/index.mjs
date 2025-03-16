@@ -4,7 +4,7 @@ import { capitalize, hasRequiredMeasurements } from '@freesewing/utils'
 import { initialEditorState } from './lib/index.mjs'
 import { mergeConfig } from './config/index.mjs'
 // Hooks
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useEditorState } from './hooks/useEditorState.mjs'
 // Components
 import { View, viewLabels } from './components/views/index.mjs'
@@ -53,24 +53,36 @@ export const Editor = ({ config = {}, design = false, preload = {}, setTitle = f
   const update = allState[2]
 
   /*
+   * If state is not loaded, we return early
+   * However, we cannot return before the useEffect call and we need
+   * the view in the useEffect call which depends on state.
+   * So, if state is not ready, we make sure view is set to false and
+   * then return right after the useEffect code
+   */
+  const [view, extraProps] = state
+    ? viewfinder({ design, designs, preload, state, config: editorConfig })
+    : [false, {}]
+
+  /*
+   * Title is typically kept in state by the parent component
+   * so we should not call it inside the regular render but
+   * in the useEffect hook instead
+   */
+  useEffect(() => {
+    if (typeof setTitle === 'function' && state.design) {
+      setTitle(`${capitalize(state.design)}${viewLabels[view] ? ' | ' + viewLabels[view].t : ''}`)
+    }
+  }, [setTitle, state.design, view])
+
+  /*
    * Don't bother before state is initialized
    */
   if (!state) return <Spinner />
-
-  // Figure out what view to load
-  const [view, extraProps] = viewfinder({ design, designs, preload, state, config: editorConfig })
 
   /*
    * Pass this down to allow disabling features that require measurements
    */
   const { missingMeasurements = [] } = extraProps
-
-  /*
-   * It's ok to change this inline
-   */
-  if (typeof setTitle === 'function' && state.design) {
-    setTitle(`${capitalize(state.design)}${viewLabels[view] ? ' | ' + viewLabels[view].t : ''}`)
-  }
 
   /*
    * Almost all editor state has a default settings, and when that is selected
