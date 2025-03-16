@@ -1,6 +1,11 @@
 // Dependencies
 import React, { useMemo } from 'react'
-import { sample, missingMeasurements, menuDesignOptionsStructure } from '../../lib/index.mjs'
+import {
+  sample,
+  missingMeasurements,
+  menuDesignOptionsStructure,
+  bundlePatternTranslations,
+} from '../../lib/index.mjs'
 import { measurements as measurementsTranslations } from '@freesewing/i18n'
 import { orderBy } from '@freesewing/utils'
 // Components
@@ -57,10 +62,13 @@ export const TestView = ({ Design, state, update, config }) => {
     ) {
       const { pattern } = sample(Design, settings)
       const renderProps = pattern.getRenderProps()
+      const strings = bundlePatternTranslations(pattern.designConfig.data.id)
       const output = (
         <ZoomablePattern
           renderProps={renderProps}
           patternLocale={state.locale || 'en'}
+          rotate={state.ui.rotate}
+          strings={strings}
           rotate={state.ui.rotate}
         />
       )
