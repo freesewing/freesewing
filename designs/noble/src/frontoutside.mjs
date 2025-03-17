@@ -19,7 +19,7 @@ export const frontOutside = {
     if (options.dartPosition == 'shoulder') {
       paths.armhole = new Path()
         .move(points.armhole)
-        .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
+        .curve(points.armholeOutsidePitchCp2, points.armholePitchCp1, points.armholePitch)
         .curve_(points.armholePitchCp2, points.shoulder)
         .hide()
 
