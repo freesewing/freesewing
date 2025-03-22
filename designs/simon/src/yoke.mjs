@@ -1,10 +1,24 @@
 import { back } from './back.mjs'
 import { splitYoke } from './options.mjs'
 
-function simonYoke({ sa, Point, points, Path, paths, Snippet, snippets, macro, options, part }) {
+function simonYoke({
+  sa,
+  Point,
+  points,
+  Path,
+  paths,
+  Snippet,
+  snippets,
+  macro,
+  options,
+  store,
+  part,
+}) {
   for (const id in paths) {
     if (['backCollar', 'backArmhole', 'backArmholeYoke'].indexOf(id) === -1) delete part.paths[id]
   }
+
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
 
   // Paths
   paths.saBase = new Path().move(points.cbYoke).line(points.armholeYokeSplitPreBoxpleat)
