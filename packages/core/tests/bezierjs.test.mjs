@@ -25,9 +25,9 @@ describe('BezierJS', () => {
     )
 
     const intersections = tt1.intersects(tt2)
-    expect(intersections.length).toEqual(2)
+    expect(intersections.length).to.equal(2)
 
     const ttReduced = tt1.reduce()
-    expect(ttReduced.length).toEqual(4)
+    expect(ttReduced.length).to.equal(4)
   })
 })

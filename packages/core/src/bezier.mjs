@@ -27,9 +27,7 @@ import { Bezier as UpstreamBezier } from 'bezier-js'
  */
 class Bezier extends UpstreamBezier {
   reduce(step = 0.01) {
-    // Keep the linter happy
-    const abs = this.abs
-    const utils = this.utils
+    const utils = this.getUtils()
 
     // Vars we'll use
     let i,
@@ -67,7 +65,7 @@ class Bezier extends UpstreamBezier {
             segment = p1.split(t1, t2)
             if (!segment.simple()) {
               t2 -= step
-              if (abs(t1 - t2) < step) {
+              if (Math.abs(t1 - t2) < step) {
                 throw new Error("Couldn't find a reduction")
               }
               segment = p1.split(t1, t2)
