@@ -1,20 +1,17 @@
 // Dependencies
 import {
-  measurements,
-  isDegreeMeasurement,
   control as controlConfig,
+  isDegreeMeasurement,
+  measurements,
   urls,
 } from '@freesewing/config'
 import { measurements as measurementTranslations } from '@freesewing/i18n'
-import { measurements as designMeasurements } from '@freesewing/collection'
+import { i18n, measurements as designMeasurements } from '@freesewing/collection'
 import {
   cloudflareImageUrl,
-  capitalize,
   formatMm,
   horFlexClasses,
   linkClasses,
-  notEmpty,
-  roundDistance,
   shortDate,
   timeAgo,
 } from '@freesewing/utils'
@@ -22,45 +19,51 @@ import {
 import { LoadingStatusContext } from '@freesewing/react/context/LoadingStatus'
 import { ModalContext } from '@freesewing/react/context/Modal'
 // Hooks
-import React, { useState, useEffect, Fragment, useContext } from 'react'
+import React, { Fragment, useContext, useEffect, useState } from 'react'
 import { useAccount } from '@freesewing/react/hooks/useAccount'
 import { useBackend } from '@freesewing/react/hooks/useBackend'
 // Components
-import { Link as WebLink, AnchorLink } from '@freesewing/react/components/Link'
+import { Link as WebLink } from '@freesewing/react/components/Link'
 import {
   BoolNoIcon,
   BoolYesIcon,
   CloneIcon,
+  CompareIcon,
   CuratedMeasurementsSetIcon,
   EditIcon,
-  ShowcaseIcon,
-  NewMeasurementsSetIcon,
+  FlagIcon,
+  MeasurementsSetIcon,
   NoIcon,
   OkIcon,
-  PlusIcon,
   ResetIcon,
-  TrashIcon,
+  ShowcaseIcon,
   UploadIcon,
-  //  WarningIcon,
-  //  BoolYesIcon,
-  //  BoolNoIcon,
 } from '@freesewing/react/components/Icon'
 import { BookmarkButton, MsetCard } from '@freesewing/react/components/Account'
 import {
   DesignInput,
-  MarkdownInput,
   ListInput,
+  MarkdownInput,
   MeasurementInput,
   PassiveImageInput,
   StringInput,
   ToggleInput,
 } from '@freesewing/react/components/Input'
+import { Pattern } from '../Pattern/index.mjs'
 import { DisplayRow } from './shared.mjs'
 import Markdown from 'react-markdown'
 import { ModalWrapper } from '@freesewing/react/components/Modal'
 import { Json } from '@freesewing/react/components/Json'
 import { Yaml } from '@freesewing/react/components/Yaml'
 import { Popout } from '@freesewing/react/components/Popout'
+import { bundlePatternTranslations, draft, flattenFlags } from '../Editor/lib/index.mjs'
+import { Bonny } from '@freesewing/bonny'
+import { ZoomablePattern } from '../Editor/components/ZoomablePattern.mjs'
+import { HeaderMenuDraftViewFlags } from '../Editor/components/HeaderMenu.mjs'
+import { Flag, FlagsAccordionEntries } from '../Editor/components/Flag.mjs'
+import { i18n as pluginI18n } from '@freesewing/core-plugins'
+import mustache from 'mustache'
+import { MiniNote, MiniTip } from '../Mini/index.mjs'
 
 const t = (input) => {
   console.log('t called', input)
@@ -89,6 +92,7 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
   const [filter, setFilter] = useState(false)
   const [edit, setEdit] = useState(false)
   const [suggest, setSuggest] = useState(false)
+  const [render, setRender] = useState(false)
   const [mset, setMset] = useState()
   // Set fields for editing
   const [name, setName] = useState(mset?.name)
@@ -336,6 +340,21 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
               )}
             </>
           )}
+          {account.control > 1 && account?.compare ? (
+            <button
+              className="tw-daisy-btn tw-daisy-btn-secondary tw-btn-outline"
+              title="Validate measurements"
+              onClick={() => {
+                setRender(!render)
+                setEdit(false)
+              }}
+            >
+              <div className="tw-flex tw-flex-row tw-gap-4 tw-justify-between tw-items-center tw-w-full">
+                <CompareIcon />
+                Validate measurements
+              </div>
+            </button>
+          ) : null}
           {account.control > 2 && mset.userId === account.id ? (
             <button
               className="tw-daisy-btn tw-daisy-btn-neutral"
@@ -362,7 +381,15 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
       </div>
     )
 
-  if (!edit)
+  if (!edit) {
+    if (render)
+      return (
+        <div className="tw-w-full">
+          {heading}
+          <RenderedCSet {...{ mset, setLoadingStatus, backend, imperial }} />
+        </div>
+      )
+
     return (
       <div className="tw-w-full">
         {heading}
@@ -441,6 +468,7 @@ export const Set = ({ id, publicOnly = false, Link = false }) => {
         )}
       </div>
     )
+  }
 
   return (
     <div className="tw-w-full">
@@ -729,6 +757,113 @@ export const SuggestCset = ({ mset, Link }) => {
       >
         Suggest for curation
       </button>
+    </>
+  )
+}
+
+/**
+ * React component to render a preview of a measurement set using the bonny pattern
+ *
+ * @param {object} props - All React props
+ * @param {string} mset - The measurements set
+ */
+export const RenderedCSet = ({ mset, imperial }) => {
+  const [previewVisible, setPreviewVisible] = useState(false)
+
+  const missing = []
+  for (const m of measurements) {
+    if (typeof mset.measies[m] === 'undefined') missing.push(m)
+  }
+  if (missing.length > 0)
+    return (
+      <>
+        <h4 className="tw-flex tw-flex-row tw-items-center tw-gap-2">Validation messages</h4>
+        <p>To validate and preview a measurement set, all measurements need to be entered.</p>
+        <p>Your measurements set is missing the following measurements:</p>
+        <ul className="tw-list tw-list-inside tw-list-disc tw-ml-4">
+          {missing.map((m) => (
+            <li key={m}>{m}</li>
+          ))}
+        </ul>
+      </>
+    )
+  const strings = bundlePatternTranslations('bonny')
+
+  const { pattern } = draft(Bonny, { measurements: mset.measies })
+  const flags = pattern.setStores?.[0]?.plugins?.['plugin-annotations']?.flags
+  console.log('flags', pattern, flags, strings)
+  return (
+    <>
+      <h4 className="tw-flex tw-flex-row tw-items-center tw-gap-2">Measurement analysis</h4>
+      <p>
+        Based on your measurements, we estimate your body to be about{' '}
+        <strong>{formatMm(pattern.parts[0].front.points.head.y * -1, imperial)}</strong> high.
+      </p>
+      <p>Here is what the automated analysis found:</p>
+      {Object.entries(flattenFlags(flags)).map(([key, flag], i) => {
+        const desc = strings[flag.desc] || flag.desc
+
+        return (
+          <div key={key} className="tw-flex tw-flex-row tw-mt-4">
+            {flag.type === 'warn' ? (
+              <MiniNote>
+                <Markdown>{desc}</Markdown>
+              </MiniNote>
+            ) : (
+              <MiniTip>
+                <Markdown>{desc}</Markdown>
+              </MiniTip>
+            )}
+          </div>
+        )
+      })}
+
+      <h4 className="tw-flex tw-flex-row tw-items-center tw-gap-2 tw-mt-12">Preview</h4>
+      {previewVisible ? (
+        <Pattern
+          renderProps={pattern.getRenderProps()}
+          patternLocale={'en'}
+          strings={strings}
+          rotate={false}
+        />
+      ) : (
+        <>
+          <p>This feature creates a visual preview of your body based on your measurements.</p>
+          <p>
+            It’s meant to help you spot possible mistakes and better understand how the software
+            sees your measurements, but keep in mind:
+          </p>
+          <ul>
+            <li>
+              The preview is a simple line drawing, but it does include features like chest shape
+              and crotch placement. If that feels uncomfortable, you may prefer to skip using this
+              tool.
+            </li>
+            <li>
+              This preview is an <strong>approximation</strong>, not an exact representation. Bodies
+              have many variations that can't be captured with just a few measurements. We are
+              missing some information, like how weight is distributed or your posture.
+            </li>
+            <li>
+              If something looks off, it{' '}
+              <strong>doesn’t necessarily mean your measurements are wrong</strong>, but it might be
+              worth double-checking. Sometimes, differences come from how the preview is generated
+              rather than an error in measuring.
+            </li>
+            <li>
+              Just like this preview, some sewing patterns may need to assume certain body
+              proportions. If this preview looks different from what you expect, some patterns may
+              also need adjustment, to get a perfect fit.
+            </li>
+          </ul>
+          <button
+            className={`tw-daisy-btn tw-daisy-btn-primary tw-mt-4`}
+            onClick={() => setPreviewVisible(true)}
+          >
+            <CompareIcon />I understand, render body preview
+          </button>
+        </>
+      )}
     </>
   )
 }
