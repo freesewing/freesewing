@@ -96,7 +96,7 @@ for (const pkg of Object.values(software)) {
     if (pkg.type !== 'site') {
       fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'README.md'), readme(pkg))
       fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'CHANGELOG.md'), changelog(pkg))
-      if (collection.includes(pkg.name)) {
+      if ([...collection, 'bonny'].includes(pkg.name)) {
         const aboutFile = path.join(cwd, 'designs', pkg.name, 'about.json')
         const about = JSON.parse(fs.readFileSync(aboutFile, 'utf-8'))
         about.version = version

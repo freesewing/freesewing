@@ -1,0 +1,12 @@
+{
+  "id": "bonny",
+  "code": "Jonathan Haas",
+  "name": "Bonny",
+  "description": "A FreeSewing pattern that turns measurements into a body outline",
+  "design": "Jonathan Haas",
+  "difficulty": 1,
+  "tags": [],
+  "techniques": [],
+  "version": "3.3.0-rc.1",
+  "pkg": "@freesewing/bonny"
+}

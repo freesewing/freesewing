@@ -2,6 +2,7 @@
 import { Design } from '@freesewing/core'
 import { i18n } from '../i18n/index.mjs'
 import { data } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 // Parts
 import { front } from './front.mjs'
 import { side } from './side.mjs'
@@ -13,4 +14,4 @@ const Bonny = new Design({
 })
 
 // Named exports
-export { side, i18n, Bonny }
+export { side, i18n, Bonny, about }

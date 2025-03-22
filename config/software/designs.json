@@ -121,6 +121,14 @@
       "snap"
     ]
   },
+  "bonny": {
+    "code": "Jonathan Haas",
+    "description": "A FreeSewing pattern that turns measurements into a body outline",
+    "design": "Jonathan Haas",
+    "difficulty": 1,
+    "tags": [],
+    "techniques": []
+  },
   "breanna": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern for a basic body block for womenswear",
