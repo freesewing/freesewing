@@ -22,7 +22,7 @@
     "shouldBeLarger-waistToUpperLeg-waistToSeat.t":  "Seat below upper leg",
     "shouldBeLarger-waistToUpperLeg-waistToSeat.d": "Waist to upper leg should be larger than waist to seat. The seat should be measured around the fullest part of your bum, while the upper leg measurement should be taken around your upper leg, a bit below your crotch. Place your seat measurement around the bum, even if your body is wider around your upper legs.",
     "shouldBeLarger-waistToSeat-waistToHips.t":  "Hips below seat",
-    "shouldBeLarger-waistToSeat-waistToHips.d": "Waist to seat should be larger than waist to hips as your seat measurement should be taken around the top of your hip bone. FreeSewing designs may not work correctly if your seat measurement is at or above your hips measurement.",
+    "shouldBeLarger-waistToSeat-waistToHips.d": "Waist to seat should be larger than waist to hips as your hips measurement should be taken around the top of your hip bone. FreeSewing designs may not work correctly if your seat measurement is at or above your hips measurement.",
     "shouldBeLarger-waistToFloor-inseam.t":  "Crotch above waist",
     "shouldBeLarger-waistToFloor-inseam.d": "The inseam measurement must be smaller than the waist to floor measurement, since the inseam measurement is the distance from the crotch to the floor and the crotch can't be at or above the waist.",
     "shouldBeLarger-crossSeam-crossSeamFront.t":  "Cross seam front",
