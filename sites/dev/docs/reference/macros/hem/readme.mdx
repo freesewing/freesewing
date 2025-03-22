@@ -1,0 +1,131 @@
+---
+title: hem
+---
+
+The `hem` macro drafts a hem allowance with fold lines.
+
+## Signature
+
+```js
+Path macro('hem', {
+  Path|string path1,
+  Path|string path2,
+  number offset1 = null,
+  number offset2 = null,
+  number hemAllowance,
+  number lastHemAllowance = null,
+  number folds = 2,
+  number prefix = 'hemMacro',
+  number cssClass = 'fabric'
+})
+```
+
+## Example
+
+<Example caption="An example of the hem macro">
+
+```js
+;({ Point, points, Path, paths, macro, part }) => {
+  paths.inseam = new Path().move(new Point(150, 0)).line(new Point(200, 200)).hide()
+
+  paths.outseam = new Path()
+    .move(new Point(300, 200))
+    .curve(new Point(350, 100), new Point(350, 50), new Point(350, 0))
+    .hide()
+
+  paths.fabric = paths.inseam.clone().join(paths.outseam)
+
+  paths.hem = macro('hem', {
+    class: 'fabric',
+    path1: 'inseam',
+    path2: 'outseam',
+    hemWidth: 30,
+    offset1: 10,
+    offset2: 10,
+  })
+
+  // show helper mirror paths
+  paths.hemMacroMirror1.unhide().addClass('various sa')
+  paths.hemMacroMirror2.unhide().addClass('various sa')
+
+  return part
+}
+```
+
+</Example>
+
+## Configuration
+
+|        Property | Default          | Type               | Description                                                                                                                                                                                                                              |
+| --------------: | ---------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|         `path1` |                  | `Path` or `string` | The path before the hem (when the part is seen anticlockwise), for example the inseam on a pants pattern when construction a leg hole. You can reference a Path object directly or give a name of an existing path in the `paths` array. |
+|         `path2` |                  | `Path` or `string` | The path after the hem, for example the outseam on a pants pattern when constructing a leg hole.                                                                                                                                         |
+|       `offset1` | (seam allowance) | `number`           | The seam allowance of `path1`, defaults to used seam allowance (`sa`), if not given.                                                                                                                                                     |
+|       `offset2` | (seam allowance) | `number`           | The seam allowance of `path2`, defaults to used seam allowance (`sa`), if not given.                                                                                                                                                     |
+|      `hemWidth` |                  | `number`           | The width of the hem in millimeters.                                                                                                                                                                                                     |
+| `lastFoldWidth` | (seam allowance) | `number`           | The width of the last fold, defaults to used seam allowance (`sa`), if not given.                                                                                                                                                        |
+|         `folds` | 2                | `number`           | The number of folds for the hem. `2` creates a normal double folded hem. `1` would create a single fold for hems that are overlocked or made from knit fabric. Values below 1 are invalid.                                               |
+|        `prefix` | `'hemMacro'`     | `number`           | The name prefix used for paths created by this macro.                                                                                                                                                                                    |
+|      `cssClass` | `'fabric'`       | `number`           | The CSS class added to the fold lines and the hem outline. Should usually match the CSS class for the part outline                                                                                                                       |
+
+## Detailed Description
+
+This macro will create the following paths (assuming the default `'hemMacro'` prefix is used):
+
+- `hemMacroMirror1`: The part of the offset `path1` that is used to construct the starting edge of the hem line (by repeatedly mirroring it)
+- `hemMacroMirror2`: The part of the offset `path2` that is used to construct the closing edge of the hem line (by repeatedly mirroring it)
+- `hemMacroFold1`, `hemMacroFold2`, ...: The dot-dashed lines that mark the fold lines (one less than the `fold` parameter)
+
+The Paths `hemMacroMirror1` and `hemMacroMirror2` are hidden by default, but you could use them to e.g. mark where the folded part would end up.
+
+The macro call will _return_ the outline path of the hem, so you need to do something like
+
+```js
+paths.hem = macro('hem', {
+    ...
+});
+```
+
+to get and use the actual hem path. You probably want to embed the hem path into the seam allowance path, the following example code shows how to do this using the `sa` macro.
+
+:::note
+The hem path already includes the seam allowance, so it doesn't need any additional offset.
+:::
+
+<Example caption="Embedding the hem macro in the seam allowance path">
+
+```js
+;({ Point, points, Path, paths, macro, part }) => {
+  paths.inseam = new Path().move(new Point(150, 0)).line(new Point(200, 200)).hide()
+
+  paths.outseam = new Path()
+    .move(new Point(300, 200))
+    .curve(new Point(350, 100), new Point(350, 50), new Point(350, 0))
+    .hide()
+
+  paths.fabric = paths.inseam.clone().join(paths.outseam)
+
+  paths.hem = macro('hem', {
+    class: 'fabric',
+    path1: 'inseam',
+    path2: 'outseam',
+    hemWidth: 30,
+    offset1: 10,
+    offset2: 10,
+  }).hide()
+
+  paths.sa = macro('sa', {
+    paths: ['inseam', { p: 'hem', offset: 0 }, 'outseam', null],
+    sa: 10,
+  }).setClass('fabric sa')
+
+  return part
+}
+```
+
+</Example>
+
+:::note
+When copying the example code for your design, you can probably omit the `sa`, `offset1` and `offset2` parameters.
+They're only needed here as there is no default seam allowance in this preview window.
+:::
