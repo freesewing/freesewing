@@ -7,6 +7,7 @@ import { i18n as benjamin } from '@freesewing/benjamin'
 import { i18n as bent } from '@freesewing/bent'
 import { i18n as bibi } from '@freesewing/bibi'
 import { i18n as bob } from '@freesewing/bob'
+import { i18n as bonny } from '@freesewing/bonny'
 import { i18n as breanna } from '@freesewing/breanna'
 import { i18n as brian } from '@freesewing/brian'
 import { i18n as bruce } from '@freesewing/bruce'
@@ -70,6 +71,7 @@ export const i18n = {
   bent,
   bibi,
   bob,
+  bonny,
   breanna,
   brian,
   bruce,
