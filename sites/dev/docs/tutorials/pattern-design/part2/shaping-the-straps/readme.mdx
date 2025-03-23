@@ -27,23 +27,21 @@ function draftBib({
   part,
 }) {
 
-/\*
-
-- Construct the quarter neck opening
-  _/
+  /*
+   * Construct the quarter neck opening
+   */
   let tweak = 1
-  let target = (measurements.head _ options.neckRatio) /4
+  let target = (measurements.head * options.neckRatio) /4
   let delta
   do {
-  points.right = new Point(
-  tweak _ measurements.head / 10,
-  0
-  )
-  points.bottom = new Point(
-  0,
-  tweak _ measurements.head / 12
-  )
-
+    points.right = new Point(
+      tweak * measurements.head / 10,
+      0
+    )
+    points.bottom = new Point(
+      0,
+      tweak * measurements.head / 12
+    )
 
     points.rightCp1 = points.right.shift(
       90,
@@ -66,13 +64,11 @@ function draftBib({
     delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
     else tweak = tweak * 1.02
+  } while (Math.abs(delta) > 1)
 
-} while (Math.abs(delta) > 1)
-
-/\*
-
-- Construct the complete neck opening
-  \*/
+  /*
+   * Construct the complete neck opening
+   */
   points.rightCp2 = points.rightCp1.flipY()
   points.bottomCp1 = points.bottomCp2.flipX()
   points.left = points.right.flipX()
@@ -82,81 +78,75 @@ function draftBib({
   points.topCp1 = points.bottomCp2.flipY()
   points.topCp2 = points.bottomCp1.flipY()
 
-paths.neck = new Path()
-.move(points.top)
-.curve(points.topCp2, points.leftCp1, points.left)
-.curve(points.leftCp2, points.bottomCp1, points.bottom)
-.curve(points.bottomCp2, points.rightCp1, points.right)
-.curve(points.rightCp2, points.topCp1, points.top)
-.close()
-.addClass('fabric')
+  paths.neck = new Path()
+    .move(points.top)
+    .curve(points.topCp2, points.leftCp1, points.left)
+    .curve(points.leftCp2, points.bottomCp1, points.bottom)
+    .curve(points.bottomCp2, points.rightCp1, points.right)
+    .curve(points.rightCp2, points.topCp1, points.top)
+    .close()
+    .addClass('fabric')
 
-/\*
+  /*
+   * Drawing the bib outline
+   */
+  const width = measurements.head * options.widthRatio
+  const length = measurements.head * options.lengthRatio
 
-- Drawing the bib outline
-  _/
-  const width = measurements.head _ options.widthRatio
-  const length = measurements.head \* options.lengthRatio
-
-points.topLeft = new Point(
-width / -2,
-points.top.y - (width / 2 - points.right.x)
-)
-points.topRight = points.topLeft.shift(0, width)
-points.bottomLeft = points.topLeft.shift(-90, length)
-points.bottomRight = points.topRight.shift(-90, length)
+  points.topLeft = new Point(
+    width / -2,
+    points.top.y - (width / 2 - points.right.x)
+  )
+  points.topRight = points.topLeft.shift(0, width)
+  points.bottomLeft = points.topLeft.shift(-90, length)
+  points.bottomRight = points.topRight.shift(-90, length)
 
 // strikeout-start
-/\*
-
-- Remove this path
+/*
+* Remove this path
 
   paths.rect = new Path()
-  .move(points.topLeft)
-  .line(points.bottomLeft)
-  .line(points.bottomRight)
-  .line(points.topRight)
-  .line(points.topLeft)
-  .close()
-  .addClass('fabric')
-  \*/
-  // strikeout-end
+    .move(points.topLeft)
+    .line(points.bottomLeft)
+    .line(points.bottomRight)
+    .line(points.topRight)
+    .line(points.topLeft)
+    .close()
+    .addClass('fabric')
+*/
+// strikeout-end
 
 // highlight-start
-/\*
-
-- Shape the straps
-  \*/
+  /*
+   * Shape the straps
+   */
   points.edgeLeft = new Point(points.topLeft.x, points.left.y)
   points.edgeRight = new Point(points.topRight.x, points.right.y)
   points.edgeTop = new Point(0, points.topLeft.y)
 
-points.edgeLeftCp = points.edgeLeft.shiftFractionTowards(points.topLeft, 0.5)
-points.edgeRightCp = points.edgeLeftCp.flipX()
-points.edgeTopLeftCp = points.edgeTop.shiftFractionTowards(
-points.topLeft,
-0.5
-)
-points.edgeTopRightCp = points.edgeTopLeftCp.flipX()
+  points.edgeLeftCp = points.edgeLeft.shiftFractionTowards(points.topLeft, 0.5)
+  points.edgeRightCp = points.edgeLeftCp.flipX()
+  points.edgeTopLeftCp = points.edgeTop.shiftFractionTowards(
+    points.topLeft,
+    0.5
+  )
+  points.edgeTopRightCp = points.edgeTopLeftCp.flipX()
 
-/\*
-
-- Now, adapt our `rect` path so it's no longer a rectangle:
-  \*/
+  /*
+   * Now, adapt our `rect` path so it's no longer a rectangle:
+   */
   paths.rect = new Path()
-  .move(points.edgeTop)
-  .curve(points.edgeTopLeftCp, points.edgeLeftCp, points.edgeLeft)
-  .line(points.bottomLeft)
-  .line(points.bottomRight)
-  .line(points.edgeRight)
-  .curve(points.edgeRightCp, points.edgeTopRightCp, points.edgeTop)
-  .close()
+    .move(points.edgeTop)
+    .curve(points.edgeTopLeftCp, points.edgeLeftCp, points.edgeLeft)
+    .line(points.bottomLeft)
+    .line(points.bottomRight)
+    .line(points.edgeRight)
+    .curve(points.edgeRightCp, points.edgeTopRightCp, points.edgeTop)
+    .close()
 
 // highlight-end
 
-return part
+  return part
 }
-
 ```
 </Example>
-```
