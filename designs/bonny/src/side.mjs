@@ -154,10 +154,7 @@ function draftSide({ measurements, Point, Path, points, paths, complete, store, 
   )
   points.sideUpperLegBack = points.sideUpperLegFront.shift(0, measurements.upperLeg * 0.32)
 
-  points.sideSeatBackCp1 = points.sideSeatBack.shift(
-    90,
-    points.sideSeat.dy(points.sideCrotch) * 0.4
-  )
+  points.sideSeatBackCp1 = points.sideSeatBack.shift(90, points.sideSeat.dy(points.sideHips) * -0.4)
   points.sideSeatBackCp2 = points.sideSeatBack.shift(
     -90,
     points.sideSeat.dy(points.sideCrotch) * 0.4
@@ -165,11 +162,9 @@ function draftSide({ measurements, Point, Path, points, paths, complete, store, 
   points.sideUpperLegCp1 = points.sideUpperLegBack.shift(60, measurements.upperLeg * 0.07)
   points.sideUpperLegCp2 = points.sideUpperLegBack.shift(60, measurements.upperLeg * -0.07)
 
-  points.sideHipsFront = points.sideHips.shift(
-    180,
-    (measurements.hips - measurements.waistBack) * 0.25
-  )
-  points.sideHipsBack = points.sideHips.shift(0, measurements.waistBack * 0.25)
+  const hipsBack = measurements.waistBack * 0.11 + measurements.seatBack * 0.1
+  points.sideHipsBack = points.sideHips.shift(0, hipsBack)
+  points.sideHipsFront = points.sideHips.shift(180, measurements.hips * 0.25 - hipsBack)
 
   points.sideWaistFront = points.sideWaist.shift(
     180,
@@ -253,7 +248,7 @@ function draftSide({ measurements, Point, Path, points, paths, complete, store, 
 
   points.sideShoulderFront = points.sideNeck
     .shiftFractionTowards(points.sideBust, 0.75)
-    .shift(180, measurements.highBustFront * 0.213)
+    .shift(150, measurements.highBustFront * 0.18)
 
   points.sideShoulderBack = points.sideNeck
     .shiftFractionTowards(points.sideArmpit, 0.5)

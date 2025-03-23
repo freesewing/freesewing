@@ -332,11 +332,11 @@ function draftFront({ measurements, Point, Path, points, paths, macro, utils, st
   )
 
   points.outerBustCp1 = points.outerBust.shift(
-    points.outerArmpit.angle(points.outerUnderbust),
+    points.outerBust.angle(points.outerWaist),
     measurements.highBust * 0.02
   )
   points.outerBustCp2 = points.outerBust.shift(
-    points.outerArmpit.angle(points.outerUnderbust),
+    points.outerBust.angle(points.outerWaist),
     measurements.highBust * -0.02
   )
 
