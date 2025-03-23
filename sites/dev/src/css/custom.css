@@ -603,3 +603,20 @@ figure.develop.example div.develop {
   font-style: italic;
   margin-top: -1rem;
 }
+
+.fs-code-block-highlight-line {
+  background-color: #00ff0020;
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+  border-left: 3px solid #00ff0080;
+}
+
+.fs-code-block-strikeout-line {
+  background-color: #ff000020;
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+  border-left: 3px solid #ff000080;
+  text-decoration: line-through;
+}
