@@ -38,6 +38,14 @@ export const front = {
 
     const FBA = ((1 + options.chestEase) * (measurements.bust - measurements.highBust)) / 2
 
+    console.log({
+      FBA: FBA,
+      bust: measurements.bust,
+      highBust: measurements.highBust,
+      diff: measurements.bust - measurements.highBust,
+      chestEase: options.chestEase,
+    })
+
     // Adapt the shoulder line according to the relevant options
     // Don't bother with less than 10% as that's just asking for trouble
     if (options.s3Collar < 0.1 && options.s3Collar > -0.1) {
