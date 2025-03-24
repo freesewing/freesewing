@@ -1,0 +1,19 @@
+{
+  "code": ["Jonathan Haas","Joost De Cock"],
+  "description": "A FreeSewing pattern for pants with a jeans cut",
+  "design": "Jonathan Haas",
+  "difficulty": 3,
+  "tags": [
+    "bottoms",
+    "trousers"
+  ],
+  "techniques": [
+    "button",
+    "curvedSeam",
+    "fly",
+    "pocket",
+    "hem"
+  ],
+  "version": "3.3.0-rc.1",
+  "pkg": "@freesewing/paul"
+}
