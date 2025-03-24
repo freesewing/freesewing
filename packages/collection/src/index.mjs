@@ -38,6 +38,7 @@ import { Onyx as onyx } from '@freesewing/onyx'
 import { Opal as opal } from '@freesewing/opal'
 import { Otis as otis } from '@freesewing/otis'
 import { Paco as paco } from '@freesewing/paco'
+import { Paul as paul } from '@freesewing/paul'
 import { Penelope as penelope } from '@freesewing/penelope'
 import { Sandy as sandy } from '@freesewing/sandy'
 import { Shelly as shelly } from '@freesewing/shelly'
@@ -105,6 +106,7 @@ export const designs = {
   opal,
   otis,
   paco,
+  paul,
   penelope,
   sandy,
   shelly,

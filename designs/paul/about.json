@@ -1,5 +1,8 @@
 {
-  "code": ["Jonathan Haas","Joost De Cock"],
+  "code": [
+    "Jonathan Haas",
+    "Joost De Cock"
+  ],
   "description": "A FreeSewing pattern for pants with a jeans cut",
   "design": "Jonathan Haas",
   "difficulty": 3,
@@ -15,5 +18,5 @@
     "hem"
   ],
   "version": "3.3.0-rc.1",
-  "pkg": "@freesewing/paul"
+  "pkg": "@freesewing/undefined"
 }
