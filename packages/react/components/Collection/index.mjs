@@ -42,6 +42,7 @@ import {
 import { IconButton } from '@freesewing/react/components/Button'
 import { ModalWrapper } from '@freesewing/react/components/Modal'
 import { KeyVal } from '@freesewing/react/components/KeyVal'
+import { MissingLinedrawing } from '../LineDrawing/missing.mjs'
 
 const filterAtom = atomWithHash('filter', { example: true })
 
@@ -377,17 +378,10 @@ export const DesignInfo = ({ Link = false, design = false, noDocsLink = false })
   const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   if (!design) return null
-  if (['teagan', 'trayvon'].includes(design))
-    return (
-      <p>
-        We are not rendering the design info for {design} because of a bug we are still working on.
-      </p>
-    )
 
   // Line drawings
-  const LineDrawing = lineDrawings[design] || []
-  const LineDrawingBack = lineDrawingsBack[design] || []
-  const hasBack = !Array.isArray(LineDrawingBack)
+  const LineDrawing = lineDrawings[design] || MissingLinedrawing
+  const LineDrawingBack = lineDrawingsBack[design] || null
 
   // Make sure these always hold arrays, that way we can just map() over them in the JSX output
   const codeBy = Array.isArray(about[design].code) ? about[design].code : [about[design].code]
@@ -432,14 +426,14 @@ export const DesignInfo = ({ Link = false, design = false, noDocsLink = false })
           <div className="tw tw-top-0 tw-left-0">
             {back ? <LineDrawingBack /> : <LineDrawing />}
           </div>
-          {Array.isArray(LineDrawingBack) ? null : (
+          {LineDrawingBack ? (
             <button
               className="tw-absolute tw-top-2 tw-right-4 tw-start-auto tw-daisy-btn tw-daisy-btn-neutral tw-daisy-btn-outline tw-daisy-btn-xs"
               onClick={() => setBack(!back)}
             >
               {back ? 'Front' : 'Back'} view
             </button>
-          )}
+          ) : null}
         </div>
         <div className="">
           <div className="tw-mt-2 tw-text-sm tw-opacity-70 tw-font-medium">Description</div>

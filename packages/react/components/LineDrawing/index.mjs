@@ -35,8 +35,6 @@ import { Uma, UmaFront, UmaBack } from './uma.mjs'
 import { Umbra, UmbraFront, UmbraBack } from './umbra.mjs'
 import { Wahid, WahidFront, WahidBack } from './wahid.mjs'
 
-import { MissingLinedrawing } from './missing.mjs'
-
 /*
  * Bundle all fronts
  */
@@ -66,38 +64,21 @@ const lineDrawingsFront = {
   hortensia: HortensiaFront,
   huey: HueyFront,
   hugo: HugoFront,
-  jaeger: MissingLinedrawing,
-  jane: MissingLinedrawing,
-  lily: MissingLinedrawing,
+
   lucy: LucyFront,
   lumina: LuminaFront,
   lumira: LumiraFront,
   lunetius: LunetiusFront,
   noble: NobleFront,
-  octoplushy: MissingLinedrawing,
-  onyx: MissingLinedrawing,
-  opal: MissingLinedrawing,
-  otis: MissingLinedrawing,
-  paco: MissingLinedrawing,
-  penelope: MissingLinedrawing,
-  sandy: MissingLinedrawing,
-  shelly: MissingLinedrawing,
-  shin: MissingLinedrawing,
+
   simon: SimonFront,
-  simone: MissingLinedrawing,
-  skully: MissingLinedrawing,
-  sven: MissingLinedrawing,
-  tamiko: MissingLinedrawing,
+
   teagan: TeaganFront,
-  tiberius: MissingLinedrawing,
-  titan: MissingLinedrawing,
+
   tristan: TristanFront,
   uma: UmaFront,
   umbra: UmbraFront,
   wahid: WahidFront,
-  walburga: MissingLinedrawing,
-  waralee: MissingLinedrawing,
-  yuri: MissingLinedrawing,
 }
 
 /*
@@ -161,38 +142,21 @@ const lineDrawings = {
   hortensia: Hortensia,
   huey: Huey,
   hugo: Hugo,
-  jaeger: MissingLinedrawing,
-  jane: MissingLinedrawing,
-  lily: MissingLinedrawing,
+
   lucy: Lucy,
   lumina: Lumina,
   lumira: Lumira,
   lunetius: Lunetius,
   noble: Noble,
-  octoplushy: MissingLinedrawing,
-  onyx: MissingLinedrawing,
-  opal: MissingLinedrawing,
-  otis: MissingLinedrawing,
-  paco: MissingLinedrawing,
-  penelope: MissingLinedrawing,
-  sandy: MissingLinedrawing,
-  shelly: MissingLinedrawing,
-  shin: MissingLinedrawing,
+
   simon: Simon,
-  simone: MissingLinedrawing,
-  skully: MissingLinedrawing,
-  sven: MissingLinedrawing,
-  tamiko: MissingLinedrawing,
+
   teagan: Teagan,
-  tiberius: MissingLinedrawing,
-  titan: MissingLinedrawing,
+
   tristan: Tristan,
   uma: Uma,
   umbra: Umbra,
   wahid: Wahid,
-  walburga: MissingLinedrawing,
-  waralee: MissingLinedrawing,
-  yuri: MissingLinedrawing,
 }
 
 /*

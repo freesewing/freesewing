@@ -157,8 +157,8 @@ for (const design in designs) {
   if (about[design].techniques) _techniques.add(...about[design].techniques)
   if (Array.isArray(about[design].code)) _devs.add(...about[design].code)
   else _devs.add(about[design].code)
-  if (Array.isArray(about[design].design)) _devs.add(...about[design].design)
-  else _devs.add(about[design].design)
+  if (Array.isArray(about[design].design)) _dess.add(...about[design].design)
+  else _dess.add(about[design].design)
 }
 export const tags = Array.from(_tags)
   .filter((t) => (t ? true : false))
