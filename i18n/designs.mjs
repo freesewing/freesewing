@@ -29,6 +29,7 @@ import { i18n as hortensia } from '@freesewing/hortensia'
 import { i18n as huey } from '@freesewing/huey'
 import { i18n as hugo } from '@freesewing/hugo'
 import { i18n as jaeger } from '@freesewing/jaeger'
+import { i18n as jasmine } from '@freesewing/jasmine'
 import { i18n as jane } from '@freesewing/jane'
 import { i18n as legend } from '@freesewing/legend'
 import { i18n as lily } from '@freesewing/lily'
@@ -95,6 +96,7 @@ export const designs = {
   hugo: hugo.en,
   jaeger: jaeger.en,
   jane: jane.en,
+  jasmine: jasmine.en,
   legend: legend.en,
   lily: lily.en,
   lucy: lucy.en,

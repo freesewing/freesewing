@@ -1,0 +1,179 @@
+
+
+{
+  "t": "Jasmine Dog Jacket",
+  "d": "A simple, single-piece jacket for a dog or other quadruped",
+  "p": { "coat": "Coat",
+    "kangaroopocket": "Kangaroo pocket",
+    "cargopocket": "Cargo pocket bag",
+    "cargopockettop": "Cargo pocket flap"},
+  "s": {
+    "biasTapeLength.t": "Bias tape: {{{ l }}}",
+    "biasTapeLength.d": "To finish the edge, you will need {{{ l }}} of [bias tape](/docs/sewing/bias-tape)",
+    "finishWithBiasTape": "Finish raw edge with bias tape",
+    "measurementsWarning": "Don't change any of the other fit settings before setting the chest circumference!"
+  },
+  "o": {
+    "chest_circum": {
+      "t": "Chest circumference",
+      "d": "The measurement around the chest, just behind the elbows. Everything else scales to this, so set it first!"
+    },
+    "backlength": {
+      "t": "Back length",
+      "d": "Measurement from the back of the collar to the base of the tail"
+    },
+    "neck_circum": {
+      "t": "Neck circumference",
+      "d": "Measurement around the neck at the level of the collar - or just take off and measure the collar"
+    },
+    "neck_to_chest": {
+      "t": "Collar to chest",
+      "d": "Measure from the back of the collar to the back of the chest measurement"
+    },
+    "shouldertoshoulder": {
+      "t": "Shoulder to shoulder",
+      "d": "Horizontal measurement across the back, from the top of one armhole to the other"
+    },
+    "back_width": {
+      "t": "Back width",
+      "d": "How wide the jacket should be at the back"
+    },
+    "neck_overlap": {
+      "t": "Neck overlap",
+      "d": "How far the neck should overlap itself at the front"
+    },
+    "bellyoverlap": {
+      "t": "Belly overlap",
+      "d": "How far the belly should overlap itself at the bottom"
+    },
+    "back_length_percentage": {
+      "t": "Back length percentage",
+      "d": "Used to shorten the back of the jacket"
+    },
+    "bellyclosurelength": {
+      "t": "Belly closure length",
+      "d": "How long the closure at the bottom should be, relative to total length"
+    },
+    "neckband_width": {
+      "t": "Neckband width",
+      "d": "Width of the neckband, or how far the jacket should come down the chest from the front of the collar"
+    },
+    "neck_round_edges": {
+      "t": "Neck round edges",
+      "d": "Round the edges of the neck closure"
+    },
+    "belly_round_edges": {
+      "t": "Belly round edges",
+      "d": "Round the edges of the belly closure"
+    },
+    "armholecurve": {
+      "t": "Armhole curve",
+      "d": "How wide to carve the armhole"
+    },
+    "neck_circle_percentage": {
+      "t": "Neck circle percentage",
+      "d": "Affects the angle of the neck. 50 is perfect for most dogs, 90 is better for humans"
+    },
+    "closure_style": {
+      "t": "Closure style",
+      "d": "Type of closure"
+    },
+    "closure_style.none": {
+      "t": "None",
+      "d": "Only mark overlap lines for closures"
+    },
+    "closure_style.buttons": {
+      "t": "Buttons",
+      "d": "Mark buttons and buttonholes for closures"
+    },
+    "closure_style.snaps": {
+      "t": "Snaps",
+      "d": "Mark snaps for closures"
+    },
+    "closure_style.velcro": {
+      "t": "Velcro",
+      "d": "Mark velcro rectangles for closures"
+    },
+    "neck_button_count": {
+      "t": "Neck button count",
+      "d": "How many buttons or snaps to place at the neck"
+    },
+    "belly_button_count": {
+      "t": "Belly button count",
+      "d": "How many buttons or snaps to place at the belly"
+    },
+    "button_scale": {
+      "t": "Button scale",
+      "d": "Scale the buttons"
+    },
+    "belly_velcro_shrink": {
+      "t": "Belly velcro shrink",
+      "d": "How much margin the belly velcro should leave on the edges"
+    },
+    "neck_velcro_shrink": {
+      "t": "Neck velcro shrink",
+      "d": "How much margin the neck velcro should leave on the edges"
+    },
+    "pocket_type": {
+      "t": "Pocket type",
+      "d": "Whether to generate a pocket, and what kind"
+    },
+    "pocket_type.none": {
+      "t": "None",
+      "d": "Don't generate a pocket"
+    },
+    "pocket_type.kangaroo": {
+      "t": "Kangaroo",
+      "d": "Generate a hoodie-style kangaroo pocket on the back"
+    },
+    "pocket_type.cargo": {
+      "t": "Cargo",
+      "d": "Generate two cargo pockets on the back"
+    },
+
+    "pocket_depth": {
+      "t": "Pocket depth",
+      "d": "Depth of the pocket, as a percentage of the back length"
+    },
+    "pocket_width": {
+      "t": "Pocket width",
+      "d": "Width of the pocket, as a percentage of the chest circumference"
+    },
+    "pocket_vert_offset": {
+      "t": "Pocket vertical offset",
+      "d": "How far down the back to place the pocket"
+    },
+    "pocket_horiz_offset": {
+      "t": "Pocket horizontal offset",
+      "d": "How far away from the spine to place the pocket"
+    },
+
+    "cargo_pocket_fold": {
+      "t": "Cargo pocket fold width",
+      "d": "How far to pleat the edges of the cargo pocket"
+    },
+    "cargo_pocket_orientation": {
+      "t": "Cargo pocket orientation",
+      "d": "Which side to place the cargo pocket closure on"
+    },
+    "cargo_pocket_orientation.vertical": {
+      "t": "Vertical",
+      "d": "The pocket opens towards the front of the jacket"
+    },
+    "cargo_pocket_orientation.horizontal": {
+      "t": "Horizontal",
+      "d": "The pocket opens towards the spine of the jacket"
+    },
+
+    "biasTapeLength": {
+      "t": "Bias tape: {{{ l }}}",
+      "d": "To finish the edge, you will need {{{ l }}} of [bias tape](/docs/sewing/bias-tape)"
+    },
+
+    "measurementsWarning": {
+      "t": "Measurements Warning",
+      "d": "Don't change any of the other fit settings before setting the chest circumference!"
+    }
+
+  }
+}

@@ -34,6 +34,8 @@ packageJson:
     private: true
   jane:
     author: SeaZeeZee (https://github.com/SeaZeeZee)
+  jasmine:
+    author: candlecoveblooperreel
   lab:
     private: true
   lily:
