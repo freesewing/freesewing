@@ -27,6 +27,7 @@ export const base = {
 
     // Parameters
     chestEase: { pct: 5, min: 0, max: 35, menu: 'fit' },
+    lengthBonus: { pct: 20, min: 0, max: 40, menu: 'style' },
     neckDrop: { pct: 6, min: 0, max: 10, menu: 'style' },
   },
   draft: ({

@@ -171,25 +171,26 @@ export const front = {
       options.frontHemSidePanelWidth
     )
 
-    paths.frontTempYoke = new Path().move(points.cfYoke).line(points.frontArmholeYoke)
-    paths.frontPanel = new Path().move(points.frontYokePanel).line(points.frontHemPanel)
-    paths.frontSidePanel = new Path().move(points.frontYokeSidePanel).line(points.frontHemSidePanel)
+    // paths.frontTempYoke = new Path().move(points.cfYoke).line(points.frontArmholeYoke)
+    // paths.frontPanel = new Path().move(points.frontYokePanel).line(points.frontHemPanel)
+    // paths.frontSidePanel = new Path().move(points.frontYokeSidePanel).line(points.frontHemSidePanel)
 
+    // Calculating FBA
     points.frontBustPanel = utils.beamIntersectsY(
       points.frontYokeSidePanel,
       points.frontHemSidePanel,
       points.cfChest.y
     )
-    let bustCircleInter = utils.circlesIntersect(
+    let bustCircleIntersect = utils.circlesIntersect(
       points.frontBustPanel,
       FBA,
       points.shoulder,
       points.shoulder.dist(points.frontBustPanel)
     )
-    if (bustCircleInter[0].x > bustCircleInter[1].x) {
-      points.bustFBA = bustCircleInter[0].copy()
+    if (bustCircleIntersect[0].x > bustCircleIntersect[1].x) {
+      points.bustFBA = bustCircleIntersect[0]
     } else {
-      points.bustFBA = bustCircleInter[1].copy()
+      points.bustFBA = bustCircleIntersect[1]
     }
 
     store.set('frontSidePanelUpshift', points.bustFBA.y - points.frontBustPanel.y)
@@ -204,94 +205,97 @@ export const front = {
       points.frontBustPanel.y
     )
 
-    bustCircleInter = utils.circlesIntersect(
+    bustCircleIntersect = utils.circlesIntersect(
       points.frontBustPanel,
       FBA,
       points.frontArmholeYoke,
       points.frontArmholeYoke.dist(points.frontBustPanel)
     )
-    if (bustCircleInter[0].x > bustCircleInter[1].x) {
-      points.bustFBA2 = bustCircleInter[0].copy()
+    if (bustCircleIntersect[0].x > bustCircleIntersect[1].x) {
+      points.bustFBA2 = bustCircleIntersect[0].copy()
     } else {
-      points.bustFBA2 = bustCircleInter[1].copy()
+      points.bustFBA2 = bustCircleIntersect[1].copy()
     }
 
-    paths.original1 = new Path()
-      .move(points.frontArmholeYoke)
-      .line(points.frontYokeSidePanel)
-      .line(points.frontBustPanel)
-      .line(points.frontSideBust)
-      .join(paths.frontSidePanelArmhole)
-      .attr('class', 'note')
+    // paths.original1 = new Path()
+    //   .move(points.frontArmholeYoke)
+    //   .line(points.frontYokeSidePanel)
+    //   .line(points.frontBustPanel)
+    //   .line(points.frontSideBust)
+    //   .join(paths.frontSidePanelArmhole)
+    //   .attr('class', 'note')
 
     let angleBustArmholeNew =
       points.frontArmholeYoke.angle(points.bustFBA2) -
       points.frontArmholeYoke.angle(points.frontBustPanel)
 
-    console.log({ p: paths.frontSidePanelArmhole })
-    console.log({ paths: JSON.parse(JSON.stringify(paths)) })
-
-    const rotate = ['frontArmholeYoke', 'frontYokeSidePanel', 'frontBustPanel', 'frontSideBust']
+    const rotate = [
+      'frontArmholeYoke',
+      'frontYokeSidePanel',
+      'frontBustPanel',
+      'frontSideBust',
+      'armhole',
+    ]
     for (let p of rotate) {
-      points['beta' + p] = points[p].rotate(angleBustArmholeNew, points.frontArmholeYoke)
+      points['step1' + p] = points[p].rotate(angleBustArmholeNew, points.frontArmholeYoke)
     }
-    paths.betaFrontSidePanelArmholeTemp = paths.frontSidePanelArmhole.clone()
-    console.log({ paths: JSON.parse(JSON.stringify(paths)) })
-    paths.betafrontSidePanelArmhole = paths.frontSidePanelArmhole
-      .rotate(angleBustArmholeNew, points.frontArmholeYoke, false)
-      .attr('class', 'lining')
+    // paths.step1frontSidePanelArmholeTemp = paths.frontSidePanelArmhole.clone()
+    // console.log({ paths: JSON.parse(JSON.stringify(paths)) })
+    // paths.step1frontSidePanelArmhole = paths.frontSidePanelArmhole
+    //   .rotate(angleBustArmholeNew, points.frontArmholeYoke, false)
+    //   .attr('class', 'lining')
 
-    points.betaarmhole = paths.betafrontSidePanelArmhole.start()
+    // points.step1armhole = paths.step1frontSidePanelArmhole.start()
 
-    paths.beta1 = new Path()
-      .move(points.betafrontArmholeYoke)
-      .line(points.betafrontYokeSidePanel)
-      .line(points.betafrontBustPanel)
-      .line(points.betafrontSideBust)
-      .join(paths.betafrontSidePanelArmhole)
-      .attr('class', 'lining')
+    // paths.step11 = new Path()
+    //   .move(points.step1frontArmholeYoke)
+    //   .line(points.step1frontYokeSidePanel)
+    //   .line(points.step1frontBustPanel)
+    //   .line(points.step1frontSideBust)
+    //   .join(paths.step1frontSidePanelArmhole)
+    //   .attr('class', 'lining')
 
     let deltaX = points.bustFBA2.x - points.frontBustPanel.x
     let deltaY = points.bustFBA2.y - points.frontBustPanel.y
 
-    points.betafrontHemSidePanel = points.frontHemSidePanel.translate(deltaX, deltaY)
-    points.betahem = points.hem.translate(deltaX, deltaY)
-    points.betafrontSideBust2 = points.frontSideBust.translate(deltaX, deltaY)
+    points.step1frontHemSidePanel = points.frontHemSidePanel.translate(deltaX, deltaY)
+    points.step1hem = points.hem.translate(deltaX, deltaY)
+    points.step1frontSideBust2 = points.frontSideBust.translate(deltaX, deltaY)
 
-    paths.beta2 = new Path()
-      .move(points.betahem)
-      .line(points.betafrontSideBust2)
+    paths.step12 = new Path()
+      .move(points.step1hem)
+      .line(points.step1frontSideBust2)
       .line(points.bustFBA2)
-      .line(points.betafrontHemSidePanel)
+      .line(points.step1frontHemSidePanel)
       .attr('class', 'lining')
 
     console.log({ points: JSON.parse(JSON.stringify(points)) })
 
-    points.lineExtending1 = utils.beamsIntersect(
+    points.step1frontSidePanelBustPoint1 = utils.beamsIntersect(
       points.bustFBA2,
-      points.betafrontSideBust,
+      points.step1frontSideBust,
       points.frontYokeSidePanel,
       points.frontHemSidePanel
     )
-    points.lineExtending2 = utils.beamsIntersect(
+    points.step1frontSidePanelBustPoint2 = utils.beamsIntersect(
       points.bustFBA2,
-      points.betafrontSideBust2,
+      points.step1frontSideBust2,
       points.frontYokeSidePanel,
       points.frontHemSidePanel
     )
 
-    points.newBetaHem = points.betaarmhole.shiftOutwards(
-      points.betafrontSideBust,
-      points.betafrontSideBust2.dist(points.betahem)
+    points.step2Hem = points.step1armhole.shiftOutwards(
+      points.step1frontSideBust,
+      points.step1frontSideBust2.dist(points.step1hem)
     )
 
-    points.newBetaHem.addCircle(9)
+    points.step2Hem.addCircle(9)
 
     let ihem = utils.circlesIntersect(
-      points.lineExtending2,
+      points.frontSidePanelBustPoint2,
       points.frontBustPanel.dist(points.frontHemSidePanel),
-      points.newBetaHem,
-      points.newBetaHem.dist(points.betafrontHemSidePanel)
+      points.step2Hem,
+      points.step2Hem.dist(points.step1frontHemSidePanel)
     )
 
     if (ihem[0].x < ihem[1].x) {
@@ -303,25 +307,79 @@ export const front = {
 
     console.log({ in: ihem })
 
-    points.newfrontHemSidePanel = points.lineExtending2
+    points.frontHemSidePanel = points.step1frontSidePanelBustPoint2
       .shiftTowards(points.frontHemSidePanel, points.frontBustPanel.dist(points.frontHemSidePanel))
-      .rotate(angleBustArmholeNew, points.lineExtending2)
+      .rotate(angleBustArmholeNew, points.step1frontSidePanelBustPoint2)
       .addCircle(4)
 
+    console.log({
+      len1: points.frontYokeSidePanel.dist(points.frontHemSidePanel),
+      len2:
+        points.step1frontYokeSidePanel.dist(points.frontSidePanelBustPoint1) +
+        points.frontSidePanelBustPoint1.dist(points.newfrontHemSidePanel),
+    })
+
+    deltaX = points.step1frontYokeSidePanel.x - points.frontYokeSidePanel.x
+    deltaY = points.step1frontYokeSidePanel.y - points.frontYokeSidePanel.y
+
+    const translate = [
+      'step1frontSidePanelBustPoint1',
+      'step1frontSidePanelBustPoint2',
+      'frontHemSidePanel',
+    ]
+    for (let p of translate) {
+      points[p] = points[p].translate(deltaX, deltaY)
+    }
+    points.step1frontSidePanelBustPoint2 = points.step1frontSidePanelBustPoint1.translate(
+      deltaX,
+      deltaY
+    )
+    points.step1frontSidePanelBustPoint1 = points.step1frontSidePanelBustPoint2.translate(
+      deltaX,
+      deltaY
+    )
+    points.step1frontHemSidePanel = points.newfrontHemSidePanel.translate(deltaX, deltaY)
+
+    const rotateBack1 = [
+      'frontArmholeYoke',
+      'frontYokeSidePanel',
+      'frontBustPanel',
+      'frontSideBust',
+      'armhole',
+      'frontSidePanelBustPoint1',
+      'frontSidePanelBustPoint2',
+    ]
+    for (let p of rotateBack1) {
+      points[p] = points['step1' + p].rotate(angleBustArmholeNew * -1, points.frontArmholeYoke)
+    }
+    const rotateBack2 = [
+      'hem',
+      'frontYokeSidePanel',
+      'frontBustPanel',
+      'frontSideBust',
+      'armhole',
+      'frontHemSidePanel',
+    ]
+    for (let p of rotateBack2) {
+      points[p] = points['step2' + p].rotate(angleBustArmholeNew * -1, points.frontArmholeYoke)
+    }
+
     paths.newSidePanel = new Path()
-      .move(points.newfrontHemSidePanel)
-      .line(points.newBetaHem)
-      .line(points.betaarmhole)
-      .join(paths.betafrontSidePanelArmhole)
-      .line(points.frontYokeSidePanel)
-      .line(points.lineExtending1)
-      .line(points.lineExtending2)
-      .line(points.newfrontHemSidePanel)
+      .move(points.frontHemSidePanel)
+      .line(points.step2Hem)
+      .line(points.step1armhole)
+      // .join(paths.step1frontSidePanelArmhole)
+      .line(points.step1frontYokeSidePanel)
+      .line(points.frontSidePanelBustPoint2)
+      .line(points.frontSidePanelBustPoint1)
+      .line(points.step2frontHemSidePanel)
       .attr('class', 'contrast')
 
     console.log({ angle: angleBustArmholeNew })
     console.log({ points: JSON.parse(JSON.stringify(points)) })
     console.log({ paths: JSON.parse(JSON.stringify(paths)) })
+
+    console.log({ frontLength: points.cfNeck.dist(points.cfHem) })
 
     return part
   },
