@@ -7,6 +7,19 @@ export const base = {
     from: true,
     inherited: true,
   },
+  measurements: [
+    'biceps',
+    'chest',
+    'highBust',
+    'hpsToBust',
+    'hpsToWaistBack',
+    'neck',
+    'shoulderToShoulder',
+    'shoulderSlope',
+    'waistToArmpit',
+    'waistToHips',
+  ],
+
   options: {
     // Constants
     draftForHighBust: true,
@@ -36,7 +49,7 @@ export const base = {
 
     points.cbYoke = points.cbNeck.shiftFractionTowards(points.cbWaist, options.yokeDrop)
 
-    for (let key of ['Shoulder', 'Armhole', 'Waist', 'Hips', 'Hem', 'Yoke']) {
+    for (let key of ['Shoulder', 'Armhole', 'Chest', 'Waist', 'Hips', 'Hem', 'Yoke']) {
       points[`cf${key}`] = new Point(points[`cb${key}`].x, points[`cb${key}`].y)
     }
 
