@@ -99,6 +99,8 @@ for (const pkg of Object.values(software)) {
       if ([...collection, 'bonny'].includes(pkg.name)) {
         const aboutFile = path.join(cwd, 'designs', pkg.name, 'about.json')
         const about = JSON.parse(fs.readFileSync(aboutFile, 'utf-8'))
+        // handle missing id parameter
+        about.id = about.id ?? pkg.name
         about.version = version
         about.pkg = `@freesewing/${about.id}`
         fs.writeFileSync(aboutFile, JSON.stringify(about, null, 2))

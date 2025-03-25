@@ -3,9 +3,10 @@
     "Jonathan Haas",
     "Joost De Cock"
   ],
+  "name": "Paul pants",
   "description": "A FreeSewing pattern for pants with a jeans cut",
   "design": "Jonathan Haas",
-  "difficulty": 3,
+  "difficulty": 4,
   "tags": [
     "bottoms",
     "trousers"
@@ -18,5 +19,6 @@
     "hem"
   ],
   "version": "3.3.0-rc.1",
-  "pkg": "@freesewing/undefined"
+  "pkg": "@freesewing/paul",
+  "id": "paul"
 }
