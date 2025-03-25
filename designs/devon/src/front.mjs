@@ -14,37 +14,56 @@ export const front = {
     frontYokePanelWidth: 0.3,
     frontYokeInsertWidth: 0.4,
     frontYokeSidePanelWidth: 0.3,
-    frontHemPanelWidth: 0.32,
-    frontHemInsertWidth: 0.12,
+    frontHemPanelWidth: 0.31,
+    frontHemInsertWidth: 0.13,
     frontHemSidePanelWidth: 0.56,
 
     // Parameters
   },
-  draft: ({
-    measurements,
-    options,
-    store,
-    points,
-    snippets,
-    Point,
-    Snippet,
-    Path,
-    paths,
-    utils,
-    macro,
-    part,
-  }) => {
+  draft: ({ measurements, options, store, points, Path, paths, utils, macro, part }) => {
     macro('rmcutonfold')
 
-    const FBA = ((1 + options.chestEase) * (measurements.bust - measurements.highBust)) / 2
+    const FBA =
+      ((1 + options.chestEase) *
+        ((measurements.bust === undefined ? measurements.chest : measurements.bust) -
+          measurements.highBust)) /
+      2
 
     console.log({
       FBA: FBA,
+      chest: measurements.chest,
       bust: measurements.bust,
       highBust: measurements.highBust,
       diff: measurements.bust - measurements.highBust,
       chestEase: options.chestEase,
+      u: measurements.bust === undefined,
     })
+
+    // let maxFront = Math.max(measurements.waistFront, measurements.seatFront) /2
+    let maxFront = Math.max(measurements.hips / 2, measurements.waistFront) / 2
+    maxFront *= 1 + options.hemEase
+
+    console.log({
+      maxFront: maxFront,
+      waistFront: measurements.waistFront / 2,
+      seatFront: measurements.seatFront / 2,
+      hips: measurements.hips / 4,
+      hem: points.cfHem.dist(points.hem),
+    })
+
+    console.log({ hemOld: points.hem })
+    let hemCircleIntersect = utils.circlesIntersect(
+      points.cfHem,
+      maxFront,
+      points.armhole,
+      points.armhole.dist(points.hem)
+    )
+    if (hemCircleIntersect[0].x > hemCircleIntersect[1].x) {
+      points.hem = hemCircleIntersect[0]
+    } else {
+      points.hem = hemCircleIntersect[1]
+    }
+    console.log({ hemNew: points.hem })
 
     // Adapt the shoulder line according to the relevant options
     // Don't bother with less than 10% as that's just asking for trouble
@@ -171,9 +190,9 @@ export const front = {
       options.frontHemSidePanelWidth
     )
 
-    // paths.frontTempYoke = new Path().move(points.cfYoke).line(points.frontArmholeYoke)
-    // paths.frontPanel = new Path().move(points.frontYokePanel).line(points.frontHemPanel)
-    // paths.frontSidePanel = new Path().move(points.frontYokeSidePanel).line(points.frontHemSidePanel)
+    paths.frontTempYoke = new Path().move(points.cfYoke).line(points.frontArmholeYoke)
+    paths.frontPanel = new Path().move(points.frontYokePanel).line(points.frontHemPanel)
+    paths.frontSidePanel = new Path().move(points.frontYokeSidePanel).line(points.frontHemSidePanel)
 
     // Calculating FBA
     points.frontBustPanel = utils.beamIntersectsY(
@@ -181,6 +200,9 @@ export const front = {
       points.frontHemSidePanel,
       points.cfChest.y
     )
+    // points.t1 = points.frontBustPanel.copy().addCircle(FBA)
+    // points.t2 = points.shoulder.copy().addCircle(points.shoulder.dist(points.frontBustPanel))
+
     let bustCircleIntersect = utils.circlesIntersect(
       points.frontBustPanel,
       FBA,
@@ -192,6 +214,9 @@ export const front = {
     } else {
       points.bustFBA = bustCircleIntersect[1]
     }
+
+    console.log({ FBA: FBA, bustCircleIntersect: bustCircleIntersect })
+    console.log({ bustFBA: points.bustFBA, frontBustPanel: points.frontBustPanel })
 
     store.set('frontSidePanelUpshift', points.bustFBA.y - points.frontBustPanel.y)
 
@@ -240,20 +265,6 @@ export const front = {
       points['step1' + p] = points[p].rotate(angleBustArmholeNew, points.frontArmholeYoke)
     }
     // paths.step1frontSidePanelArmholeTemp = paths.frontSidePanelArmhole.clone()
-    // console.log({ paths: JSON.parse(JSON.stringify(paths)) })
-    // paths.step1frontSidePanelArmhole = paths.frontSidePanelArmhole
-    //   .rotate(angleBustArmholeNew, points.frontArmholeYoke, false)
-    //   .attr('class', 'lining')
-
-    // points.step1armhole = paths.step1frontSidePanelArmhole.start()
-
-    // paths.step11 = new Path()
-    //   .move(points.step1frontArmholeYoke)
-    //   .line(points.step1frontYokeSidePanel)
-    //   .line(points.step1frontBustPanel)
-    //   .line(points.step1frontSideBust)
-    //   .join(paths.step1frontSidePanelArmhole)
-    //   .attr('class', 'lining')
 
     let deltaX = points.bustFBA2.x - points.frontBustPanel.x
     let deltaY = points.bustFBA2.y - points.frontBustPanel.y
@@ -261,13 +272,6 @@ export const front = {
     points.step1frontHemSidePanel = points.frontHemSidePanel.translate(deltaX, deltaY)
     points.step1hem = points.hem.translate(deltaX, deltaY)
     points.step1frontSideBust2 = points.frontSideBust.translate(deltaX, deltaY)
-
-    paths.step12 = new Path()
-      .move(points.step1hem)
-      .line(points.step1frontSideBust2)
-      .line(points.bustFBA2)
-      .line(points.step1frontHemSidePanel)
-      .attr('class', 'lining')
 
     console.log({ points: JSON.parse(JSON.stringify(points)) })
 
@@ -284,103 +288,97 @@ export const front = {
       points.frontHemSidePanel
     )
 
-    points.step2Hem = points.step1armhole.shiftOutwards(
+    points.step2hem = points.step1armhole.shiftOutwards(
       points.step1frontSideBust,
       points.step1frontSideBust2.dist(points.step1hem)
     )
 
-    points.step2Hem.addCircle(9)
-
-    let ihem = utils.circlesIntersect(
-      points.frontSidePanelBustPoint2,
-      points.frontBustPanel.dist(points.frontHemSidePanel),
-      points.step2Hem,
-      points.step2Hem.dist(points.step1frontHemSidePanel)
-    )
-
-    if (ihem[0].x < ihem[1].x) {
-      points.newHem = ihem[0].copy()
-    } else {
-      points.newHem = ihem[1].copy()
-    }
-    points.newHem.addCircle(3)
-
-    console.log({ in: ihem })
-
-    points.frontHemSidePanel = points.step1frontSidePanelBustPoint2
+    points.step2frontHemSidePanel = points.step1frontSidePanelBustPoint1
       .shiftTowards(points.frontHemSidePanel, points.frontBustPanel.dist(points.frontHemSidePanel))
-      .rotate(angleBustArmholeNew, points.step1frontSidePanelBustPoint2)
-      .addCircle(4)
+      .translate(deltaX, deltaY)
+      .rotate(angleBustArmholeNew, points.step1frontSidePanelBustPoint1)
+
+    console.log({ points: JSON.parse(JSON.stringify(points)) })
 
     console.log({
       len1: points.frontYokeSidePanel.dist(points.frontHemSidePanel),
       len2:
-        points.step1frontYokeSidePanel.dist(points.frontSidePanelBustPoint1) +
-        points.frontSidePanelBustPoint1.dist(points.newfrontHemSidePanel),
+        points.step1frontYokeSidePanel.dist(points.step1frontSidePanelBustPoint1) +
+        points.step1frontSidePanelBustPoint1.dist(points.step2frontHemSidePanel),
     })
 
-    deltaX = points.step1frontYokeSidePanel.x - points.frontYokeSidePanel.x
-    deltaY = points.step1frontYokeSidePanel.y - points.frontYokeSidePanel.y
+    if (
+      points.step1frontYokeSidePanel.dist(points.step1frontSidePanelBustPoint1) +
+        points.step1frontSidePanelBustPoint1.dist(points.step2frontHemSidePanel) -
+        points.frontYokeSidePanel.dist(points.frontHemSidePanel) >
+      9
+    ) {
+      store.set('useFBA', true)
+      store.set(
+        'sidePanelLength',
+        points.step1frontYokeSidePanel.dist(points.step1frontSidePanelBustPoint1) +
+          points.step1frontSidePanelBustPoint1.dist(points.step2frontHemSidePanel)
+      )
+      let newY = points.frontYokeSidePanel.shiftTowards(
+        points.frontHemSidePanel,
+        store.get('sidePanelLength')
+      ).y
+      let frontHemPanel = points.frontHemPanel.copy()
+      let cfHem = points.cfHem.copy()
+      frontHemPanel.y = newY
+      cfHem.y = newY
 
-    const translate = [
-      'step1frontSidePanelBustPoint1',
-      'step1frontSidePanelBustPoint2',
-      'frontHemSidePanel',
-    ]
-    for (let p of translate) {
-      points[p] = points[p].translate(deltaX, deltaY)
+      store.set('panelLength', points.frontYokePanel.dist(frontHemPanel))
+      store.set('frontLength', points.cfYoke.dist(cfHem))
+    } else {
+      store.set('useFBA', false)
+      store.set('sidePanelLength', points.frontYokeSidePanel.dist(points.frontHemSidePanel))
+      store.set('panelLength', points.frontYokePanel.dist(points.frontHemPanel))
+      store.set('frontLength', points.cfYoke.dist(points.cfHem))
     }
-    points.step1frontSidePanelBustPoint2 = points.step1frontSidePanelBustPoint1.translate(
-      deltaX,
-      deltaY
+    console.log({
+      sidePanelLength: store.get('sidePanelLength'),
+      panelLength: store.get('panelLength'),
+      frontLength: store.get('frontLength'),
+    })
+
+    console.log({ FBA: store.get('useFBA') })
+
+    if (store.get('useFBA')) {
+      const rotateBack1 = [
+        'frontArmholeYoke',
+        'frontYokeSidePanel',
+        'frontBustPanel',
+        'frontSideBust',
+        'armhole',
+        'frontSidePanelBustPoint1',
+        'frontSidePanelBustPoint2',
+      ]
+      for (let p of rotateBack1) {
+        points[p] = points['step1' + p].rotate(angleBustArmholeNew * -1, points.frontArmholeYoke)
+      }
+      const rotateBack2 = ['hem', 'frontHemSidePanel']
+      for (let p of rotateBack2) {
+        points[p] = points['step2' + p].rotate(angleBustArmholeNew * -1, points.frontArmholeYoke)
+      }
+    }
+
+    points.frontHemSidePanelSaved = points.frontHemSidePanel
+    points.frontHemPanel = points.frontYokePanel.shiftTowards(
+      points.frontHemPanel,
+      store.get('panelLength')
     )
-    points.step1frontSidePanelBustPoint1 = points.step1frontSidePanelBustPoint2.translate(
-      deltaX,
-      deltaY
+    points.frontHemSidePanel = points.frontYokeSidePanel.shiftTowards(
+      points.frontHemSidePanel,
+      store.get('sidePanelLength')
     )
-    points.step1frontHemSidePanel = points.newfrontHemSidePanel.translate(deltaX, deltaY)
+    points.cfHem = points.cfYoke.shiftTowards(points.cfHem, store.get('frontLength'))
 
-    const rotateBack1 = [
-      'frontArmholeYoke',
-      'frontYokeSidePanel',
-      'frontBustPanel',
-      'frontSideBust',
-      'armhole',
-      'frontSidePanelBustPoint1',
-      'frontSidePanelBustPoint2',
-    ]
-    for (let p of rotateBack1) {
-      points[p] = points['step1' + p].rotate(angleBustArmholeNew * -1, points.frontArmholeYoke)
-    }
-    const rotateBack2 = [
-      'hem',
-      'frontYokeSidePanel',
-      'frontBustPanel',
-      'frontSideBust',
-      'armhole',
-      'frontHemSidePanel',
-    ]
-    for (let p of rotateBack2) {
-      points[p] = points['step2' + p].rotate(angleBustArmholeNew * -1, points.frontArmholeYoke)
-    }
-
-    paths.newSidePanel = new Path()
-      .move(points.frontHemSidePanel)
-      .line(points.step2Hem)
-      .line(points.step1armhole)
-      // .join(paths.step1frontSidePanelArmhole)
-      .line(points.step1frontYokeSidePanel)
-      .line(points.frontSidePanelBustPoint2)
-      .line(points.frontSidePanelBustPoint1)
-      .line(points.step2frontHemSidePanel)
-      .attr('class', 'contrast')
-
-    console.log({ angle: angleBustArmholeNew })
     console.log({ points: JSON.parse(JSON.stringify(points)) })
     console.log({ paths: JSON.parse(JSON.stringify(paths)) })
 
     console.log({ frontLength: points.cfNeck.dist(points.cfHem) })
 
-    return part
+    return part.hide()
   },
 }

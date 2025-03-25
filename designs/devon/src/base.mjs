@@ -11,22 +11,31 @@ export const base = {
     'biceps',
     'chest',
     'highBust',
+    'hips',
     'hpsToBust',
     'hpsToWaistBack',
     'neck',
+    'seat',
+    'seatBack',
+    'seatFront',
     'shoulderToShoulder',
     'shoulderSlope',
     'waistToArmpit',
     'waistToHips',
+    'waist',
+    'waistBack',
+    'waistFront',
   ],
 
   options: {
     // Constants
     draftForHighBust: true,
     yokeDrop: 0.3,
+    pocketHeight: 0.5,
 
     // Parameters
     chestEase: { pct: 5, min: 0, max: 35, menu: 'fit' },
+    hemEase: { pct: 5, min: 0, max: 15, menu: 'fit' },
     lengthBonus: { pct: 20, min: 0, max: 40, menu: 'style' },
     neckDrop: { pct: 6, min: 0, max: 10, menu: 'style' },
   },
