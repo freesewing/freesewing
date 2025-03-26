@@ -4,29 +4,44 @@ import { data } from '../data.mjs'
 // Parts
 import { base } from './base.mjs'
 import { back } from './back.mjs'
+import { backPanel } from './backpanel.mjs'
+import { backSide } from './backside.mjs'
 import { backYoke } from './backyoke.mjs'
 import { front } from './front.mjs'
-import { frontYoke } from './frontyoke.mjs'
-import { frontSidePanel } from './frontsidepanel.mjs'
-import { frontPanel } from './frontpanel.mjs'
 import { frontInside } from './frontinside.mjs'
+import { frontPanel } from './frontpanel.mjs'
+import { frontSidePanel } from './frontsidepanel.mjs'
+import { frontYoke } from './frontyoke.mjs'
 
 // Create new design
 const Devon = new Design({
   data,
-  parts: [base, back, backYoke, front, frontYoke, frontSidePanel, frontPanel, frontInside],
+  parts: [
+    base,
+    back,
+    backPanel,
+    backSide,
+    backYoke,
+    front,
+    frontYoke,
+    frontSidePanel,
+    frontPanel,
+    frontInside,
+  ],
 })
 
 // Named exports
 export {
   base,
   back,
+  backPanel,
+  backSide,
   backYoke,
   front,
-  frontYoke,
-  frontSidePanel,
-  frontPanel,
   frontInside,
+  frontPanel,
+  frontSidePanel,
+  frontYoke,
   i18n,
   Devon,
 }

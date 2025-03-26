@@ -34,6 +34,9 @@ export const frontInside = {
       .close()
       .attr('class', 'fabric')
 
+    points.title = points.frontYokePanel.shiftFractionTowards(points.cfChest, 0.5)
+    macro('title', { nr: 4, title: 'frontInside', at: points.title })
+
     return part
   },
 }

@@ -36,6 +36,9 @@ export const frontYoke = {
       .close()
       .attr('class', 'fabric')
 
+    points.title = points.s3CollarSplit.shiftFractionTowards(points.frontArmholeYoke, 0.5)
+    macro('title', { nr: 7, title: 'frontYoke', at: points.title })
+
     return part
   },
 }

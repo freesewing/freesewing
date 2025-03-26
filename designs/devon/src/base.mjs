@@ -54,8 +54,9 @@ export const base = {
     part,
   }) => {
     for (const i in snippets) {
-      if (i.indexOf('otch')) delete snippets[i]
+      delete snippets[i]
     }
+    macro('rmtitle')
 
     points.cbYoke = points.cbNeck.shiftFractionTowards(points.cbWaist, options.yokeDrop)
 

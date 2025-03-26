@@ -34,6 +34,9 @@ export const backYoke = {
       .close()
       .attr('class', 'fabric')
 
+    points.title = points.backArmholeYoke.shiftFractionTowards(points.cbNeck, 0.5)
+    macro('title', { nr: 3, title: 'backYoke', at: points.title })
+
     return part
   },
 }

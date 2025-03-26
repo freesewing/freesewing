@@ -9,7 +9,10 @@ export const back = {
     from: true,
     inherited: true,
   },
-  options: {},
+  options: {
+    backYokePanelWidth: 0.33,
+    backHemPanelWidth: 0.6,
+  },
   draft: ({
     measurements,
     options,
@@ -133,6 +136,12 @@ export const back = {
       .hide()
 
     points.backArmholeYoke = paths.backArmholeComplete.intersectsY(points.cbYoke.y)[0]
+
+    points.backYokePanel = points.backArmholeYoke.shiftFractionTowards(
+      points.cbYoke,
+      options.backYokePanelWidth
+    )
+    points.backHemPanel = points.hem.shiftFractionTowards(points.cbHem, options.backHemPanelWidth)
 
     return part
   },

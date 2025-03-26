@@ -144,6 +144,9 @@ export const frontSidePanel = {
       .line(points.cfPocketBottom)
       .line(points.frontHemSidePanelSaved)
 
+    points.title = points.frontYokeSidePanel.shiftFractionTowards(points.hem, 0.3)
+    macro('title', { nr: 6, title: 'frontSide', at: points.title })
+
     return part
   },
 }

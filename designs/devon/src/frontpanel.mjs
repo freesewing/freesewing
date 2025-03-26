@@ -50,6 +50,9 @@ export const frontPanel = {
       .close()
       .attr('class', 'fabric')
 
+    points.title = points.panelPocketTop.shiftFractionTowards(points.mirroredCfPocketBottom, 0.5)
+    macro('title', { nr: 5, title: 'frontPanel', at: points.title })
+
     return part
   },
 }
