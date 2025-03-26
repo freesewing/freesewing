@@ -3,9 +3,9 @@
  */
 export const urls = {
   // FreeSewing Backend
-  backend: 'https://backend3.freesewing.org',
+  backend: 'https://backend.freesewing.eu',
   // FreeSewing website
-  website: 'https://freesewing.org',
+  website: 'https://freesewing.eu',
   // FreeSewing monorepo
   monorepo: 'https://github.com/freesewing/freesewing',
   // FreeSewing github organisation

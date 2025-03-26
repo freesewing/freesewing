@@ -26,9 +26,10 @@ import { H1, H2, H3, H4 } from '@freesewing/react/components/Heading'
  *
  * @param {object} props - All React props
  * @param {function} props.onSuccess - Optional: A method to run when the sign in is successful
+ * @param {function} props.silent - Optional: Silently login the user if we have a valid session
  */
-export const SignIn = ({ onSuccess = false }) => {
-  const { setAccount, setToken, seenUser, setSeenUser } = useAccount()
+export const SignIn = ({ onSuccess = false, silent = false }) => {
+  const { account, setAccount, setToken, seenUser, setSeenUser } = useAccount()
   const backend = useBackend()
   const { setLoadingStatus } = useContext(LoadingStatusContext)
 
@@ -49,6 +50,21 @@ export const SignIn = ({ onSuccess = false }) => {
 
   // Avoid SSR rendering mismatch by setting this in effect
   useEffect(() => {
+    if (silent) {
+      const checkSession = async () => {
+        const result = await backend.ping()
+        const [status, body] = Array.isArray(result) ? result : [false, false]
+        // Silent sign-in succeeded
+        if (status === 200) {
+          setAccount(body.account)
+          setSeenUser(body.account.username)
+          setLoadingStatus([true, `Welcome back ${body.account.username}`, true, true])
+          // Call the onSuccess handler
+          if (typeof onSuccess === 'function') onSuccess(body)
+        }
+      }
+      checkSession()
+    }
     if (seenUser) {
       setSeenBefore(seenUser)
       setUsername(seenUser)

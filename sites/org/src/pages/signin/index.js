@@ -2,12 +2,15 @@ import DocusaurusLayout from '@theme/Layout'
 import { DocusaurusPage } from '@freesewing/react/components/Docusaurus'
 import { NoTitleLayout } from '@freesewing/react/components/Layout'
 import { SignIn } from '@freesewing/react/components/SignIn'
+import { useLocation } from '@docusaurus/router'
 
 /*
  * This is the sign in page. Each page MUST be wrapped in the DocusaurusPage component.
  * You also MUST pass in the DocusaurusLayout compoment.
  */
 export default function SignInPage() {
+  const router = useLocation()
+
   return (
     <DocusaurusPage
       DocusaurusLayout={DocusaurusLayout}
@@ -17,7 +20,7 @@ export default function SignInPage() {
     >
       <div className="tw-flex tw-flex-col tw-items-center tw-text-base-content tw-px-4">
         <div className="tw-max-w-lg tw-w-full">
-          <SignIn />
+          <SignIn onSuccess={() => (window.location.href = '/account')} silent />
         </div>
       </div>
     </DocusaurusPage>
