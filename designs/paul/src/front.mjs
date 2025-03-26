@@ -209,10 +209,10 @@ function draftPaulFront({
   // prepare gusset
   let gussetMin = points.flyExtensionBottom.x
   let gussetMax = points.fork.x
-  const gussetIntesection = inseam.intersectsX(
+  const gussetIntersection = inseam.intersectsX(
     Math.max(points.inseamBottom.x, gussetMax - (gussetMax - gussetMin) * options.gussetSize)
   )[0]
-  points.inseamGussetIntersection = gussetIntesection ?? points.fork
+  points.inseamGussetIntersection = gussetIntersection ?? points.fork
   points.crotchCurveGussetIntersection = paths.crotchCurve.shiftAlong(
     options.gussetWidth * points.fork.dist(points.flyExtensionBottom) * options.gussetSize
   )
