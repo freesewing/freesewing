@@ -81,7 +81,7 @@ export const Popout = (props) => {
         >
           <div>
             <span className={`tw-font-bold tw-uppercase tw-text-${color}`}>
-              {type === 'tldr' ? 'TL;DR' : type.toUpperCase()}
+              {props.title ? props.title : type === 'tldr' ? 'TL;DR' : type.toUpperCase()}
             </span>
             <span className={`tw-font-normal tw-text-base text-${color}`}>
               {type === 'tw-comment' && (
