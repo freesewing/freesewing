@@ -39,6 +39,9 @@ export const base = {
     lengthBonus: { pct: 20, min: 0, max: 40, menu: 'style' },
     neckDrop: { pct: 6, min: 0, max: 10, menu: 'style' },
     shoulderEase: { pct: 2.6, min: -2, max: 6, menu: 'fit' },
+    shoulderShift: { pct: 2.6, min: 0, max: 6, menu: 'fit' },
+    s3Collar: { pct: 75, min: 0, max: 100, menu: 'style' },
+    s3Armhole: { pct: 75, min: 0, max: 100, menu: 'style' },
   },
   draft: ({ options, points, snippets, Point, macro, part }) => {
     for (const i in snippets) {

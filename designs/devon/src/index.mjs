@@ -12,6 +12,8 @@ import { frontInside } from './frontinside.mjs'
 import { frontPanel } from './frontpanel.mjs'
 import { frontSidePanel } from './frontsidepanel.mjs'
 import { frontYoke } from './frontyoke.mjs'
+import { pocket } from './pocket.mjs'
+import { pocketflap } from './pocketflap.mjs'
 
 // Create new design
 const Devon = new Design({
@@ -27,6 +29,8 @@ const Devon = new Design({
     frontSidePanel,
     frontPanel,
     frontInside,
+    pocket,
+    pocketflap,
   ],
 })
 
@@ -42,6 +46,8 @@ export {
   frontPanel,
   frontSidePanel,
   frontYoke,
+  pocket,
+  pocketflap,
   i18n,
   Devon,
 }
