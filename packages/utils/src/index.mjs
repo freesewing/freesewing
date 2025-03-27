@@ -634,3 +634,11 @@ function copyToClipboardFallback(text) {
   document.execCommand('copy')
   document.body.removeChild(textarea)
 }
+
+export function navigate(href, relative = false) {
+  // Guard against non-browser use
+  if (!window) return
+
+  if (relative) window.location.href = `${window.location.origin}${href}`
+  else window.location.href = href
+}

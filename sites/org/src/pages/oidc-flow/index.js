@@ -3,7 +3,7 @@ import { DocusaurusPage } from '@freesewing/react/components/Docusaurus'
 import { BaseLayout, Layout, NoTitleLayout } from '@freesewing/react/components/Layout'
 import { WarningIcon, FingerprintIcon, BoolYesIcon } from '@freesewing/react/components/Icon'
 import { Popout } from '@freesewing/react/components/Popout'
-import { linkClasses } from '@freesewing/utils'
+import { linkClasses, getSearchParam } from '@freesewing/utils'
 import { useEffect, useState } from 'react'
 import { RoleBlock } from '@freesewing/react/components/Role'
 import { MiniTip } from '@freesewing/react/components/Mini'
@@ -20,8 +20,7 @@ export default function SignInPage() {
   const { token, account } = useAccount()
 
   useEffect(() => {
-    const interaction = new URLSearchParams(document.location.search).get('uid')
-    console.log({ interaction })
+    const interaction = getSearchParam('uid')
     setUid(interaction || false)
   }, [])
 

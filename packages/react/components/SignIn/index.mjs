@@ -1,5 +1,5 @@
 // Utils
-import { horFlexClasses, horFlexClassesNoSm, capitalize } from '@freesewing/utils'
+import { horFlexClasses, horFlexClassesNoSm, capitalize, getSearchParam } from '@freesewing/utils'
 // Context
 import { LoadingStatusContext } from '@freesewing/react/context/LoadingStatus'
 // Hooks
@@ -8,6 +8,8 @@ import { useAccount } from '@freesewing/react/hooks/useAccount'
 import { useBackend } from '@freesewing/react/hooks/useBackend'
 // Components
 import { Link } from '@freesewing/react/components/Link'
+import { Popout } from '@freesewing/react/components/Popout'
+import { Spinner } from '@freesewing/react/components/Spinner'
 import {
   EmailIcon,
   KeyIcon,
@@ -183,40 +185,20 @@ export const SignIn = ({ onSuccess = false, silent = false }) => {
 
   if (mfa)
     return (
-      <WrapForm>
-        <H1>MFA Code</H1>
-        <p className="tw-text-inherit tw-text-lg tw-text-center">
-          Please provide a one-time MFA code, or a backup scratch code
-        </p>
-        <MfaInput
-          label="Please provide a one-time MFA code, or a backup scratch code"
-          update={setMfaCode}
-          value={mfaCode}
-        />
-        <button className={btnClasses} tabIndex="-1" role="button" onClick={signinHandler}>
-          {signInFailed ? (
-            noBueno
-          ) : (
-            <>
-              <span className="tw-hidden lg:tw-block">
-                <KeyIcon />
-              </span>
-              <span className="tw-pl-2">Sign In</span>
-              <span className="tw-hidden lg:tw-block">
-                <LockIcon />
-              </span>
-            </>
-          )}
-        </button>
-        <div className="tw-flex tw-flex-row tw-gap-4 tw-items-center tw-justify-center tw-p-8">
-          <button className="tw-daisy-btn tw-daisy-btn-ghost" onClick={() => setMfa(false)}>
-            Back
-          </button>
-          <Link href="/support" className="tw-daisy-btn tw-daisy-btn-ghost">
-            Contact support
-          </Link>
-        </div>
-      </WrapForm>
+      <MfaForm
+        {...{ mfaCode, setMfaCode }}
+        onSubmit={signinHandler}
+        post={
+          <div className="tw-flex tw-flex-row tw-gap-4 tw-items-center tw-justify-center tw-p-8">
+            <button className="tw-daisy-btn tw-daisy-btn-ghost" onClick={() => setMfa(false)}>
+              Back
+            </button>
+            <Link href="/support" className="tw-daisy-btn tw-daisy-btn-ghost">
+              Contact support
+            </Link>
+          </div>
+        }
+      />
     )
 
   return (
@@ -322,3 +304,127 @@ export const SignIn = ({ onSuccess = false, silent = false }) => {
 }
 
 const WrapForm = ({ children }) => <div className="tw-text-center tw-py-12">{children}</div>
+
+const MfaForm = ({ mfaCode, setMfaCode, onSubmit, post = [] }) => (
+  <WrapForm>
+    <H1>MFA Code</H1>
+    <p className="tw-text-inherit tw-text-lg tw-text-center">
+      Please provide a one-time MFA code, or a backup scratch code
+    </p>
+    <MfaInput
+      label="Please provide a one-time MFA code, or a backup scratch code"
+      update={setMfaCode}
+      value={mfaCode}
+    />
+    <button
+      className={`tw-daisy-btn tw-capitalize tw-w-full tw-mt-4 tw-daisy-btn-primary ${horFlexClassesNoSm}`}
+      tabIndex="-1"
+      role="button"
+      onClick={onSubmit}
+    >
+      <span className="tw-hidden lg:tw-block">
+        <KeyIcon />
+      </span>
+      <span className="tw-pl-2">Sign In</span>
+      <span className="tw-hidden lg:tw-block">
+        <LockIcon />
+      </span>
+    </button>
+    {post}
+  </WrapForm>
+)
+
+export const SignInConfirmation = ({ onSuccess = false }) => {
+  // State
+  const [error, setError] = useState(false)
+  const [id, setId] = useState()
+  const [check, setCheck] = useState()
+  const [mfa, setMfa] = useState()
+  const [mfaCode, setMfaCode] = useState()
+
+  // Hooks
+  const { setAccount, setToken } = useAccount()
+  const backend = useBackend()
+
+  // Context
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
+
+  // Effects
+  useEffect(() => {
+    const newId = getSearchParam('id')
+    const newCheck = getSearchParam('check')
+    if (newId !== id) setId(newId)
+    if (newCheck !== check) setCheck(newCheck)
+  }, [id, check])
+
+  useEffect(() => {
+    // Call async method
+    if (id) getConfirmation()
+  }, [id])
+
+  // Gets the confirmation
+  const getConfirmation = async () => {
+    setLoadingStatus([true, 'Contacting the backend', true, true])
+    // Reach out to backend
+    const [status, body] = await backend.signInFromLink({ id, check, token: mfaCode })
+
+    // If it works, store account, which runs the onSuccess handler
+    if (body.token) return storeAccount(body)
+    // If it did not work, perhaps we need to handle MFA?
+    if (status === 403 && body.error === 'mfaTokenRequired') {
+      setMfa(true)
+      setLoadingStatus([
+        true,
+        'Please provide a one-time MFA code, or a backup scratch code',
+        true,
+        true,
+      ])
+      return
+    }
+    // If we get here, we're not sure what's wrong
+    if (body.error) return setError(body.error)
+    return setError(true)
+  }
+
+  // Updates the (local) account data
+  const storeAccount = async (data) => {
+    if (data?.token && data?.account) {
+      setToken(data.token)
+      setAccount(data.account)
+      if (typeof onSuccess === 'function') onSuccess(data)
+      else navigate('/account', true)
+    } else {
+      setError(data)
+    }
+  }
+
+  // Short-circuit errors
+  if (error && mfa)
+    return error === 'signInFailed' ? (
+      <>
+        <MfaForm {...{ mfaCode, setMfaCode }} onSubmit={getConfirmation} />
+        <Popout warning title="Sign In Failed">
+          <p>Your one-time token is either invalid of expired.</p>
+        </Popout>
+      </>
+    ) : (
+      <>
+        <MfaForm {...{ mfaCode, setMfaCode }} onSubmit={getConfirmation} />
+        <p>This error is unexpected. Please report this.</p>
+      </>
+    )
+
+  // Show MFA input if required
+  if (mfa) return <MfaForm {...{ mfaCode, setMfaCode }} onSubmit={getConfirmation} />
+
+  // If we do not (yet) have the data, show a loader
+  if (!id || !check)
+    return (
+      <>
+        <h1>One moment pleae</h1>
+        <Spinner className="tw-w-8 tw-h-8 tw-m-auto tw-animate-spin" />
+      </>
+    )
+
+  return <p>fixme</p>
+}
