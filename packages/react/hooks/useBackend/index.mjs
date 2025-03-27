@@ -711,8 +711,8 @@ Backend.prototype.signIn = async function ({ username, password = false, token =
  * @param {string} data.check - The confirmation check value
  * @return {array} result - The REST response, a [status, data] array
  */
-Backend.prototype.signInFromLink = async function ({ id, check }) {
-  return await this.post(`/signinlink/${id}/${check}`)
+Backend.prototype.signInFromLink = async function ({ id, check, token }) {
+  return await this.post(`/signinlink/${id}/${check}`, { token })
 }
 
 /**
