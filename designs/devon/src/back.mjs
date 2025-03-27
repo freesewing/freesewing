@@ -18,15 +18,40 @@ export const back = {
     options,
     store,
     points,
-    snippets,
-    Point,
-    Snippet,
+    // snippets,
+    // Point,
+    // Snippet,
     Path,
     paths,
     utils,
-    macro,
+    // macro,
     part,
   }) => {
+    // let maxBack = Math.max(measurements.waistBack, measurements.seatBack) /2
+    let maxBack = Math.max(measurements.hips / 2, measurements.waistBack) / 2
+    maxBack *= 1 + options.hemEase
+
+    console.log({
+      maxBack: maxBack,
+      waistBack: measurements.waistBack / 2,
+      seatBack: measurements.seatBack / 2,
+      hips: measurements.hips / 4,
+      hem: points.cfHem.dist(points.hem),
+    })
+
+    console.log({ hemOld: points.hem })
+    let hemCircleIntersect = utils.circlesIntersect(
+      points.cfHem,
+      maxBack,
+      points.armhole,
+      points.armhole.dist(points.hem)
+    )
+    if (hemCircleIntersect[0].x > hemCircleIntersect[1].x) {
+      points.hem = hemCircleIntersect[0]
+    } else {
+      points.hem = hemCircleIntersect[1]
+    }
+
     // Adapt the shoulder seam according to the relevant options
     // Note: s3 stands for Shoulder Seam Shift
     // Don't bother with less than 10% as that's just asking for trouble
@@ -142,6 +167,14 @@ export const back = {
       options.backYokePanelWidth
     )
     points.backHemPanel = points.hem.shiftFractionTowards(points.cbHem, options.backHemPanelWidth)
+
+    console.log({
+      side: 'back',
+      shoulder: points.shoulder.dist(points.neck),
+      yoke: points.cbYoke.dist(points.backArmholeYoke),
+      yokeDown: points.cbYoke.y,
+      hem: points.cbHem.dist(points.hem),
+    })
 
     return part
   },

@@ -18,6 +18,7 @@ export const front = {
     frontHemInsertWidth: 0.13,
     frontHemSidePanelWidth: 0.56,
 
+    frontPocketRatio: 0.48,
     // Parameters
   },
   draft: ({ measurements, options, store, points, Path, paths, utils, macro, part }) => {
@@ -63,7 +64,6 @@ export const front = {
     } else {
       points.hem = hemCircleIntersect[1]
     }
-    console.log({ hemNew: points.hem })
 
     // Adapt the shoulder line according to the relevant options
     // Don't bother with less than 10% as that's just asking for trouble
@@ -374,11 +374,21 @@ export const front = {
     )
     points.cfHem = points.cfYoke.shiftTowards(points.cfHem, store.get('frontLength'))
 
+    store.set('pocketWidth', points.cfYoke.dist(points.frontArmholeYoke) * options.frontPocketRatio)
+
     console.log({ points: JSON.parse(JSON.stringify(points)) })
     console.log({ paths: JSON.parse(JSON.stringify(paths)) })
 
     console.log({ frontLength: points.cfNeck.dist(points.cfHem) })
 
-    return part.hide()
+    console.log({
+      side: 'front',
+      shoulder: points.shoulder.dist(points.neck),
+      yoke: points.cfYoke.dist(points.frontArmholeYoke),
+      yokeDown: points.cfYoke.dist(points.cfNeck),
+      hem: points.cfHem.dist(points.hem),
+    })
+
+    return part
   },
 }

@@ -30,7 +30,7 @@ export const base = {
   options: {
     // Constants
     draftForHighBust: true,
-    yokeDrop: 0.3,
+    yokeDrop: 0.335,
     pocketHeight: 0.5,
 
     // Parameters
@@ -38,21 +38,9 @@ export const base = {
     hemEase: { pct: 5, min: 0, max: 15, menu: 'fit' },
     lengthBonus: { pct: 20, min: 0, max: 40, menu: 'style' },
     neckDrop: { pct: 6, min: 0, max: 10, menu: 'style' },
+    shoulderEase: { pct: 2.6, min: -2, max: 6, menu: 'fit' },
   },
-  draft: ({
-    measurements,
-    options,
-    store,
-    points,
-    snippets,
-    Point,
-    Snippet,
-    Path,
-    paths,
-    utils,
-    macro,
-    part,
-  }) => {
+  draft: ({ options, points, snippets, Point, macro, part }) => {
     for (const i in snippets) {
       delete snippets[i]
     }

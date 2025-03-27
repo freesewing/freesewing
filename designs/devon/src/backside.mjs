@@ -10,24 +10,36 @@ export const backSide = {
   },
   options: {
     // Constants
+    backArmholeShift: 0.02,
     // Parameters
   },
-  draft: ({ points, Path, paths, macro, part }) => {
+  draft: ({ points, Path, paths, options, macro, part }) => {
     macro('rmcutonfold')
     for (const i in paths) {
       if (['backArmholeComplete'].indexOf(i) === -1) delete paths[i]
     }
 
-    // paths.backSideSeam = new Path()
-    //   .move(points.cbYoke)
-    //   .line(points.backArmholeYoke)
-    //   .attr('class', 'fabric')
+    const downShift = options.backArmholeShift * points.cbYoke.dist(points.backArmholeYoke)
 
-    paths.backYokeArmhole = paths.backArmholeComplete.split(points.backArmholeYoke)[0].hide()
+    paths.backYokeArmhole = paths.backArmholeComplete
+      .split(points.backArmholeYoke)[0]
+      .translate(0, downShift)
+      .hide()
+
+    const trans = ['hem', 'backArmholeYoke']
+    for (let p of trans) {
+      points[p] = points[p].translate(0, downShift)
+    }
+
+    points.backYokePanelCp1 = points.backYokePanel.shift(
+      0,
+      points.backYokePanel.dist(points.backArmholeYoke) * 0.5
+    )
+    console.log({ Ppoints: JSON.parse(JSON.stringify(points)) })
 
     paths.seam = new Path()
       .move(points.backArmholeYoke)
-      .line(points.backYokePanel)
+      .curve(points.backArmholeYoke, points.backYokePanelCp1, points.backYokePanel)
       .line(points.backHemPanel)
       .line(points.hem)
       .join(paths.backYokeArmhole)
