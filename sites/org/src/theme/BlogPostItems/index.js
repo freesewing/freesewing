@@ -3,6 +3,11 @@ import Link from '@docusaurus/Link'
 import { imgUrl } from '../BlogPostItem/index.js'
 import { useLocation } from '@docusaurus/router'
 import { tags as showcaseTags } from '@site/showcase-tags.mjs'
+import { Newsletter } from '@freesewing/react/components/Account'
+import { NewsletterSignup } from '@freesewing/react/components/Newsletter'
+import { UserVisitorContent } from '@freesewing/react/components/Role'
+import { linkClasses } from '@freesewing/utils'
+import { DocusaurusDoc } from '@freesewing/react/components/Docusaurus'
 
 const textShadow = {
   textShadow:
@@ -167,7 +172,7 @@ const ShowcaseItems = ({ items, slug }) => {
 
 const NewsletterItems = ({ items, slug }) => {
   return (
-    <>
+    <DocusaurusDoc>
       {slug.slice(0, 11) === '/newsletter' ? (
         <>
           <Breadcrumbs
@@ -183,15 +188,22 @@ const NewsletterItems = ({ items, slug }) => {
             ]}
           />
           <h1>Newsletter</h1>
+          <UserVisitorContent
+            userContent={<Newsletter Link={Link} />}
+            visitorContent={<NewsletterSignup />}
+          />
+          <h2>Previous editions</h2>
         </>
       ) : null}
       <ul className="mdx tw-list tw-list-disc tw-ml-8">
         {items.map((post) => (
           <li key={post.content.metadata.permalink}>
-            <Link href={post.content.metadata.permalink}>{post.content.metadata.title}</Link>
+            <Link href={post.content.metadata.permalink} className={linkClasses}>
+              {post.content.metadata.title}
+            </Link>
           </li>
         ))}
       </ul>
-    </>
+    </DocusaurusDoc>
   )
 }

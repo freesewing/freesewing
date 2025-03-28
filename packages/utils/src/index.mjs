@@ -212,6 +212,30 @@ export function formatMm(val, units, format = 'html') {
   }
 }
 
+/*
+ * Formats a number
+ *
+ * @params {number} nun = The original number
+ * @params {string} suffix = Any suffix to add
+ * @return {string} newNumber - The formatted number
+ */
+export const formatNumber = (num, suffix = '') => {
+  if (num === null || typeof num === 'undefined') return num
+  if (typeof num.value !== 'undefined') num = num.value
+  // Small values don't get formatted
+  if (num < 1) return num
+  if (num) {
+    const sizes = ['', 'K', 'M', 'B']
+    const i = Math.min(
+      parseInt(Math.floor(Math.log(num) / Math.log(1000)).toString(), 10),
+      sizes.length - 1
+    )
+    return `${(num / 1000 ** i).toFixed(i ? 1 : 0)}${sizes[i]}${suffix}`
+  }
+
+  return '0'
+}
+
 /**
  * Format a percentage (as in, between 0 and 1)
  *

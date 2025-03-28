@@ -237,3 +237,46 @@ export const RoleBlock = ({ children, user = false, Link = false }) => {
 
   return children
 }
+
+export const UserVisitorContent = ({ userContent = null, visitorContent = null }) => {
+  const { account, setAccount, token } = useAccount()
+  const backend = useBackend()
+
+  const [ready, setReady] = useState(false)
+  const [error, setError] = useState(false)
+  const [refreshCount, setRefreshCount] = useState(0)
+
+  /*
+   * Avoid hydration errors
+   */
+  useEffect(() => {
+    const verifyUser = async () => {
+      const [status, data] = await backend.ping()
+      if (status === 200 && data.result === 'success') {
+        // Refresh account in local storage
+        setAccount({
+          ...account,
+          ...data.account,
+          bestBefore: Date.now() + 3600000,
+        })
+      } else {
+        if (data?.error?.error) setError(data.error.error)
+      }
+      setReady(true)
+    }
+    if (token) {
+      // Don't hammer the backend. Check once per hour.
+      if (!account.bestBefore || account.bestBefore < Date.now()) verifyUser()
+    }
+    setReady(true)
+  }, [refreshCount])
+
+  const refresh = () => {
+    setRefreshCount(refreshCount + 1)
+    setError(false)
+  }
+
+  if (!ready) return <Spinner />
+
+  return token && account.username ? userContent : visitorContent
+}

@@ -15,6 +15,7 @@ import React, { useState, useCallback, useContext } from 'react'
 import { useDropzone } from 'react-dropzone'
 import { useBackend } from '@freesewing/react/hooks/useBackend'
 // Components
+import { Link as WebLink } from '@freesewing/react/components/Link'
 import { TrashIcon, ResetIcon, UploadIcon } from '@freesewing/react/components/Icon'
 import { ModalWrapper } from '@freesewing/react/components/Modal'
 import { isDegreeMeasurement } from '@freesewing/config'
@@ -39,22 +40,60 @@ export const _Tab = ({
   </button>
 )
 
+/**
+ * A helper component to render the help link in formcontrol
+ *
+ * @param {string|function| help - The help href of onClick method
+ * @param {React.component} Link - An optional framework-specific link component
+ */
+const HelpLink = ({ help, Link = false }) => {
+  if (!Link) Link = WebLink
+
+  if (typeof helpLink === 'function')
+    return (
+      <button onClick={() => help} title="Show help">
+        <QuestionIcon className="tw-w-5 tw-h-5" />
+      </button>
+    )
+
+  if (typeof helpLink === 'string')
+    return (
+      <Link href={help} target="_BLANK" rel="nofollow" title="Show help">
+        <QuestionIcon className="tw-w-5 tw-h-5" />
+      </Link>
+    )
+
+  return null
+}
+
 /*
  * Helper component to wrap a form control with a label
  */
 export const FormControl = ({
   label, // the (top-left) label
   children, // Children to go inside the form control
+  labelTR = false, // Optional top-right label
   labelBL = false, // Optional bottom-left label
   labelBR = false, // Optional bottom-right label
   forId = false, // ID of the for element we are wrapping
+  help = false, // An optional URL/method to link/show help/docs
+  Link = false, // An optionan framework-specific link components
 }) => {
   if (labelBR && !labelBL) labelBL = <span></span>
 
   const topLabelChildren = (
-    <span className="tw-daisy-label-text tw-text-sm lg:tw-text-base tw-font-bold tw-mb-1 tw-text-inherit">
-      {label}
-    </span>
+    <>
+      {label ? (
+        <span className="tw-daisy-label-text tw-text-sm lg:tw-text-base tw-font-bold tw-mb-1 tw-text-inherit">
+          {label} <HelpLink {...{ help, Link }} />
+        </span>
+      ) : (
+        <span>
+          <HelpLink {...{ help, Link }} />
+        </span>
+      )}
+      {labelTR ? <span className="tw-daisy-label-text-alt tw--mb-1">{labelTR}</span> : null}
+    </>
   )
   const bottomLabelChildren = (
     <>
@@ -254,10 +293,11 @@ export const EmailInput = ({
   original, // The original value
   placeholder, // The placeholder text
   id = '', // An id to tie the input to the label
+  labelTR = false, // Top-Right label
   labelBL = false, // Bottom-Left label
   labelBR = false, // Bottom-Right label
 }) => (
-  <FormControl {...{ label, labelBL, labelBR }} forId={id}>
+  <FormControl {...{ label, labelTR, labelBL, labelBR }} forId={id}>
     <input
       id={id}
       type="email"

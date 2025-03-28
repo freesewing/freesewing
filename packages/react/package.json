@@ -51,6 +51,7 @@
     "./components/Mini": "./components/Mini/index.mjs",
     "./components/Modal": "./components/Modal/index.mjs",
     "./components/New": "./components/New/index.mjs",
+    "./components/Newsletter": "./components/Newsletter/index.mjs",
     "./components/Null": "./components/Null/index.mjs",
     "./components/Number": "./components/Number/index.mjs",
     "./components/Pattern": "./components/Pattern/index.mjs",
