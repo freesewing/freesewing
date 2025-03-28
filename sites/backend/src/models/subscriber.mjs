@@ -1,5 +1,5 @@
 import { hash } from '../utils/crypto.mjs'
-import { clean, i18nUrl } from '../utils/index.mjs'
+import { clean, i18nUrl, websiteUrl } from '../utils/index.mjs'
 import { decorateModel } from '../utils/model-decorator.mjs'
 
 /*
@@ -243,6 +243,40 @@ SubscriberModel.prototype.verifySubscription = async function (body) {
   if (!this.record) return this.setResponse(404)
 
   return this
+}
+
+/*
+ * A helper method to start the unsubscribe flow manually
+ * In other words, this sends an email with an unsubscribe link.
+ *
+ * @param {email} string - The email address to unsubscribe
+ * @returns {SubscriberModal} object - The SubscriberModel
+ */
+SubscriberModel.prototype.startUnsubscribe = async function (email) {
+  /*
+   * Find the subscription record
+   */
+  await this.read({ ehash: hash(clean(email)) })
+
+  if (this.record) {
+    console.log(`Sending email to start unsubscribe flow to ehash ${this.record.ehash}`)
+    await this.mailer.send({
+      template: 'nlunsub',
+      language: 'en',
+      to: this.clear.email,
+      replacements: {
+        actionUrl: websiteUrl(`/newsletter/unsubscribe?x=${this.record.ehash}`),
+        whyUrl: websiteUrl(`/docs/faq/email/why-nlunsub`),
+        supportUrl: websiteUrl(`/patrons/join`),
+      },
+    })
+
+    return true
+  } else if (found.length > 1) {
+    console.log(`Found more than 1 subscriber for ehash, this is unexpected`)
+  }
+
+  return false
 }
 
 /*

@@ -63,3 +63,22 @@ SubscribersController.prototype.ocunsub = async (req, res, tools) => {
 
   return res.set('Content-Type', 'text/html').status(200).send(okunsubKo)
 }
+
+/*
+ * Starts the unsubscribe flow
+ *
+ * Typically, people unsubscribe from an unsubscribe link in the newsletter.
+ * However, what if they want to subscribe at an arbitrary point in time and they
+ * do not have the unsubcribe link handy?
+ * This endpoint will send them an email with the unsubscribe link. From there
+ * on, we follow the regular flow.
+ */
+SubscribersController.prototype.startUnsubscribe = async (req, res, tools) => {
+  if (!req.body.email) return res.status(400).send()
+
+  const Subscriber = new SubscriberModel(tools)
+  const result = await Subscriber.startUnsubscribe(req.body.email)
+  console.log(result)
+
+  return res.status(200).send({ result })
+}

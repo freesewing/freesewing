@@ -3,11 +3,11 @@ import chalk from 'chalk'
 import dotenv from 'dotenv'
 import { asJson } from './utils/index.mjs'
 import { randomString } from './utils/crypto.mjs'
-import { measurements } from '../../../config/measurements.mjs'
+import { measurements } from '../../../packages/config/src/measurements.mjs'
 import get from 'lodash.get'
 import { readFileSync, writeFileSync } from 'node:fs'
 import { postConfig } from '../local-config.mjs'
-import { roles } from '../../../config/roles.mjs'
+import { roles } from '../../../packages/config/src/roles.mjs'
 dotenv.config()
 
 /*
@@ -22,11 +22,11 @@ export const port = process.env.BACKEND_PORT || 3000
 export const api = process.env.BACKEND_URL || `http://localhost:${port}`
 
 /*
- * Generate/Check encryption key only once
+ * Generate/Check keys only once
  */
-const encryptionKey = process.env.BACKEND_ENC_KEY
-  ? process.env.BACKEND_ENC_KEY
-  : randomEncryptionKey()
+const encryptionKey = process.env.BACKEND_ENC_KEY || ensureKey('encryption', 64)
+const cookie1Key = process.env.BACKEND_ENC_KEY || ensureKey('cookie1', 32)
+const cookie2Key = process.env.BACKEND_ENC_KEY || ensureKey('cookie2', 32)
 
 /*
  * All environment variables are strings
@@ -62,6 +62,12 @@ const baseConfig = {
     cloudflareImages: envToBool(process.env.BACKEND_ENABLE_CLOUDFLARE_IMAGES),
     forwardmx: envToBool(process.env.BACKEND_ENABLE_FORWARDMX),
     ses: envToBool(process.env.BACKEND_ENABLE_AWS_SES),
+    oidc: {
+      provider: envToBool(process.env.BACKEND_ENABLE_OIDC_PROVIDER),
+      clients: {
+        forum: envToBool(process.env.BACKEND_ENABLE_OIDC_CLIENT_FORUM),
+      },
+    },
     tests: {
       base: envToBool(process.env.BACKEND_ENABLE_TESTS),
       email: envToBool(process.env.BACKEND_ENABLE_TESTS_EMAIL),
@@ -299,6 +305,70 @@ if (baseConfig.use.oauth?.google) {
     state
 }
 
+// OIDC Provider config
+if (baseConfig.use.oidc.provider) {
+  baseConfig.oidc = {
+    provider: {
+      proxy: true,
+      clients: [],
+      pkce: {
+        required: false,
+      },
+      features: {
+        devInteractions: { enabled: false },
+        encryption: { enabled: true },
+        introspection: { enabled: true },
+        revocation: { enabled: true },
+      },
+      cookies: {
+        keys: [cookie1Key, cookie2Key],
+      },
+      routes: {
+        authorization: '/oidc/auth',
+        backchannel_authentication: '/oidc/backchannel',
+        code_verification: '/oidc/device',
+        device_authorization: '/oidc/device/auth',
+        end_session: '/oidc/session/end',
+        introspection: '/oidc/token/introspection',
+        jwks: '/jwks',
+        pushed_authorization_request: '/oidc/request',
+        registration: '/oidc/reg',
+        revocation: '/oidc/token/revocation',
+        token: '/oidc/token',
+        userinfo: '/oidc/me',
+      },
+      ttl: {
+        Interaction: 3600,
+        Session: 24 * 60 * 60,
+        Grant: 14 * 24 * 60 * 60,
+        AccessToken: 60 * 60,
+        IdToken: 60 * 60,
+        RefreshToken: 14 * 24 * 60 * 60,
+        ClientCredentials: 10 * 60,
+      },
+      scopes: ['openid', 'email', 'profile'],
+      claims: {
+        openid: ['sub'],
+        email: ['email', 'email_verified'],
+        profile: ['name', 'preferred_username', 'picture', 'updated_at', 'bio', 'moderator'],
+      },
+    },
+    clients: [],
+  }
+  if (baseConfig.use.oidc.clients.forum)
+    baseConfig.oidc.provider.clients.push({
+      client_id: 'forum',
+      client_secret: process.env['BACKEND_OIDC_CLIENT_FORUM_SECRET'],
+      redirect_uris: [
+        'https://forum.freesewing.eu/auth/oidc/callback',
+        'https://forum.freesewing.org/auth/oidc/callback',
+      ],
+      grant_types: ['authorization_code'],
+      response_types: ['code'],
+      scope: 'openid email profile',
+    })
+}
+
 // Load local config
 const config = postConfig(baseConfig)
 
@@ -365,6 +435,12 @@ if (envToBool(process.env.BACKEND_ENABLE_OAUTH_GITHUB)) {
 if (envToBool(process.env.BACKEND_ENABLE_OAUTH_GOOGLE)) {
   vars.BACKEND_OAUTH_GOOGLE_CLIENT_ID = 'required'
   vars.BACKEND_OAUTH_GOOGLE_CLIENT_SECRET = 'requiredSecret'
+}
+
+// Vars for OIDC Provider
+if (envToBool(process.env.BACKEND_OIDC_PROVIDER)) {
+  vars.BACKEND_OIDC_PROVIDER_CLOUDFLARE_IMAGES_TOKEN = 'requiredSecret'
+  vars.BACKEND_TEST_CLOUDFLARE_IMAGES = 'optional'
 }
 
 // Vars for (unit) tests
@@ -464,21 +540,21 @@ export function verifyConfig(silent = false) {
  * this roadblock to such users, it will auto-generate an encryption key and
  * write it to disk.
  */
-function randomEncryptionKey() {
-  const filename = 'encryption.key'
-  console.log(chalk.yellow('⚠️  No encryption key provided'))
+function ensureKey(id = 'encryption', bytes = 64) {
+  const filename = `${id}.key`
+  console.log(chalk.yellow(`⚠️  No e${id} key provided`))
   let key = false
   try {
-    console.log(chalk.dim('Checking for prior auto-generated encryption key'))
+    console.log(chalk.dim(`Checking for prior auto-generated ${id} key`))
     key = readFileSync(filename, 'utf-8').trim()
   } catch (err) {
-    console.log(chalk.dim('No prior auto-generated encryption key found.'))
+    console.log(chalk.dim(`No prior auto-generated ${id} key found.`))
   }
   if (key) {
-    console.log(chalk.green('✅ Prior encryption key found.'))
+    console.log(chalk.green(`✅ Prior ${id} key found.`))
   } else {
-    console.log(chalk.green('✅ Generating new random encryption key'))
-    key = randomString(64)
+    console.log(chalk.green(`✅ Generating new random ${id} key`))
+    key = randomString(bytes)
     writeFileSync(filename, key)
   }
 

@@ -3,6 +3,8 @@ import express from 'express'
 import chalk from 'chalk'
 import { PrismaClient } from '@prisma/client'
 import passport from 'passport'
+import path from 'node:path'
+import { fileURLToPath } from 'url'
 // Routes
 import { routes } from './routes/index.mjs'
 // Config
@@ -13,6 +15,8 @@ import { loadExpressMiddleware, loadPassportMiddleware } from './middleware.mjs'
 import { encryption } from './utils/crypto.mjs'
 // Multi-Factor Authentication (MFA)
 import { mfa } from './utils/mfa.mjs'
+// OIDC Provider
+import { loadOidcProvider } from './utils/oidc-provider.mjs'
 // Role-Based Access Control (RBAC)
 import { rbac } from './utils/rbac.mjs'
 // Email
@@ -28,6 +32,7 @@ const config = verifyConfig()
 const prisma = new PrismaClient()
 const app = express()
 app.use(express.json({ limit: '12mb' })) // Required for img upload
+app.use(express.urlencoded({ extended: false })) // Form submission for OIDC
 app.use(express.static('public'))
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(openapi))
 
@@ -48,6 +53,9 @@ loadPassportMiddleware(passport, tools)
 
 // Load routes
 for (const type in routes) routes[type](tools)
+
+// Load OIDC provider
+loadOidcProvider(tools)
 
 app.get('/', async (req, res) => res.set('Content-Type', 'text/html').status(200).send(catchAll))
 

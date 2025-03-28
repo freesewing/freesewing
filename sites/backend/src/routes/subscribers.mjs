@@ -12,6 +12,9 @@ export function subscribersRoutes(tools) {
   // Subscribe to the newsletter
   app.post('/subscriber', (req, res) => Subscriber.subscribe(req, res, tools))
 
+  // Trigger unsubscribe from newsletter flow
+  app.post('/subscriber/remove', (req, res) => Subscriber.startUnsubscribe(req, res, tools))
+
   // Confirm subscription to the newsletter
   app.put('/subscriber', (req, res) => Subscriber.subscribeConfirm(req, res, tools))
 
@@ -24,6 +27,6 @@ export function subscribersRoutes(tools) {
 
   // Just in case somebody lands here with a GET request
   app.get('/ocunsub/:ehash', (req, res) =>
-    res.redirect(`https://freesewing.org/newsletter/unsubscribe?i=${req.params.ehash}`)
+    res.redirect(`https://freesewing.eu/newsletter/unsubscribe?i=${req.params.ehash}`)
   )
 }
