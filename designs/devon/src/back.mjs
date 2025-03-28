@@ -176,6 +176,11 @@ export const back = {
       hem: points.cbHem.dist(points.hem),
     })
 
+    store.set(
+      'armholeYokeBack',
+      paths.backArmholeComplete.split(points.backArmholeYoke)[0].length()
+    )
+
     return part
   },
 }

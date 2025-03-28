@@ -35,6 +35,7 @@ export const base = {
 
     // Parameters
     chestEase: { pct: 5, min: 0, max: 35, menu: 'fit' },
+    cuffEase: { pct: 25, min: 0, max: 200, menu: 'fit' },
     hemEase: { pct: 5, min: 0, max: 15, menu: 'fit' },
     lengthBonus: { pct: 20, min: 0, max: 40, menu: 'style' },
     neckDrop: { pct: 6, min: 0, max: 10, menu: 'style' },

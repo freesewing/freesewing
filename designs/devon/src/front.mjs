@@ -389,6 +389,11 @@ export const front = {
       hem: points.cfHem.dist(points.hem),
     })
 
+    store.set(
+      'armholeYokeFront',
+      paths.frontArmholeComplete.split(points.frontArmholeYoke)[0].length()
+    )
+
     return part
   },
 }

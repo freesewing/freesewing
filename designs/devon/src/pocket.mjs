@@ -12,7 +12,7 @@ export const pocket = {
     // Constants
     pocketHeightRatio: 13.5 / 12,
     pocketSideHeightRatio: 11.5 / 12,
-    pocketLowerWidthRatio: 10 / 12,
+    pocketLowerWidthRatio: 10.5 / 12,
     // Parameters
   },
   draft: ({ Point, points, Path, paths, macro, options, store, part }) => {
