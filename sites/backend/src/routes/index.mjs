@@ -11,6 +11,7 @@ import { flowsRoutes } from './flows.mjs'
 import { imgRoutes } from './img.mjs'
 import { adminRoutes } from './admin.mjs'
 import { infoRoutes } from './info.mjs'
+import { oidcRoutes } from './oidc.mjs'
 
 export const routes = {
   apikeysRoutes,
@@ -26,4 +27,5 @@ export const routes = {
   imgRoutes,
   adminRoutes,
   infoRoutes,
+  oidcRoutes,
 }

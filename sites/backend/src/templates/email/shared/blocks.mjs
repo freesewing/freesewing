@@ -228,13 +228,13 @@ export const wrap = {
         <span style="font-size: 13px; color: #737373">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
         <a href="https://freesewing.dev" target="_blank" style="text-decoration: underline; color: #868e96"><b>FreeSewing.dev</b></a>
         <span style="font-size: 13px; color: #737373">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-        <a href="https://github.com/fresewing/freesewing" target="_blank" style="text-decoration: underline; color: #868e96"><b>GitHub.com/freesewing</b></a>
+        <a href="https://freesewing.social" target="_blank" style="text-decoration: underline; color: #868e96"><b>FreeSewing.social</b></a>
       </p>
       <p style="margin: 0; font-size: 12px; margin-top: 12px; line-height: 18px; color: #868e96; text-align: center;">
         {{ notMarketing }}
         <br>
-        {{ seeWhy }}&nbsp;
-        <a href="{{{ urlWhy }}}" target="_blank" style="text-decoration: underline; color: #868e96">{{ whyDidIGetThis }}</a>
+        Recipient: {{ email }}&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="{{{ whyUrl }}}" target="_blank" style="text-decoration: underline; color: #868e96">{{ whyDidIGetThis }}</a>
         <br>
         <br>
         FreeSewing
@@ -243,7 +243,7 @@ export const wrap = {
         <br>
         Antwerp 2018
         <br>
-        Belgium
+        Belgium - European Union
       </p>
     </td>
   </tr>

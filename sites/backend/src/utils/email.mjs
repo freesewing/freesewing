@@ -1,4 +1,4 @@
-import { templates, translations } from '../templates/email/index.mjs'
+import { templates } from '../templates/email/index.mjs'
 import { SESv2Client, SendEmailCommand } from '@aws-sdk/client-sesv2'
 import mustache from 'mustache'
 import { log } from './log.mjs'
@@ -21,7 +21,7 @@ export const mailer = (config) => ({
  */
 async function sendEmailViaAwsSes(
   config,
-  { template, to, cc = false, language = 'en', replacements = {}, subject = false }
+  { template, to, cc = false, replacements = {}, subject = false }
 ) {
   // Make sure we have what it takes
   if (!template || !to || typeof templates[template] === 'undefined') {
@@ -40,12 +40,11 @@ async function sendEmailViaAwsSes(
   // Load template
   const { html, text } = templates[template]
   const replace = {
-    website: `FreeSewing.org`,
-    ...translations.shared[language],
-    ...translations[template][language],
+    website: `FreeSewing.eu`,
+    email: to,
+    ...templates[template].replacements,
     ...replacements,
   }
-  if (language !== 'en') replace.website += `/${language}`
 
   // IMHO the AWS apis are a complete clusterfuck
   const client = new SESv2Client({ region: config.aws.ses.region })
