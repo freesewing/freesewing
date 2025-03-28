@@ -38,9 +38,9 @@ export const sleeve = {
     snippets.backNotch = new Snippet('bnotch', points.backNotch)
 
     let psplit = paths.sleevecap.split(points.frontNotch)
-    paths.sleevecapFront = psplit[0].attr('class', 'canvas')
+    paths.sleevecapFront = psplit[0].attr('class', 'canvas').hide()
     psplit = psplit[1].split(points.backNotch)
-    paths.sleevecapBack = psplit[1].attr('class', 'canvas')
+    paths.sleevecapBack = psplit[1].attr('class', 'canvas').hide()
     paths.sleevecap = psplit[0]
 
     points.bicepsBack = points.bicepsLeft.shiftFractionTowards(points.bicepsRight, 0.25)
@@ -140,7 +140,7 @@ export const sleeve = {
       .attr('class', 'various')
     paths.temp14 = new Path()
       .move(points._elbowBack)
-      .line(points._elbowBack)
+      .line(points._cuffBack)
       .attr('class', 'various')
     paths.temp15 = new Path()
       .move(points._elbowCenter)
@@ -156,6 +156,23 @@ export const sleeve = {
     points.underBicepsBack = new Point(points.underSleevecapBack.x, points.bicepsFront.y)
     points.underBicepsFront = new Point(points.underSleevecapFront.x, points.bicepsFront.y)
 
+    points.underElbowRight = points._elbowCenter.shiftTowards(
+      points._elbowFront,
+      points._elbowFront.dist(points._elbowRight)
+    )
+    points.underCuffRight = points._cuffCenter.shiftTowards(
+      points._cuffFront,
+      points._cuffFront.dist(points._cuffRight)
+    )
+    points.underElbowLeft = points._elbowCenter.shiftTowards(
+      points._elbowBack,
+      points._elbowBack.dist(points._elbowLeft)
+    )
+    points.underCuffLeft = points._cuffCenter.shiftTowards(
+      points._cuffBack,
+      points._cuffBack.dist(points._cuffLeft)
+    )
+
     const sides = ['Back', 'Front']
     for (let s of sides) {
       macro('mirror', {
@@ -166,9 +183,96 @@ export const sleeve = {
       })
     }
 
+    points.topCuffLeft = points._cuffBack.shiftTowards(
+      points._cuffCenter,
+      points.mirroredUnderSleevecapBack.dist(points.underSleevecapBack)
+    )
+    points.underCuffLeft = points.underCuffLeft.shiftTowards(
+      points._cuffBack,
+      points.mirroredUnderSleevecapBack.dist(points.underSleevecapBack)
+    )
+    points.topCuffRight = points._cuffFront.shiftTowards(
+      points._cuffCenter,
+      points.mirroredUnderSleevecapFront.dist(points.underSleevecapFront)
+    )
+    points.underCuffRight = points.underCuffRight.shiftTowards(
+      points._cuffFront,
+      points.mirroredUnderSleevecapFront.dist(points.underSleevecapFront)
+    )
+
+    points._elbowFront = points._elbowFront.shiftTowards(
+      points._elbowCenter,
+      points.mirroredUnderSleevecapFront.dist(points.underSleevecapFront)
+    )
+    // points._elbowBack = points.elbowBack.shiftTowards(
+    //   points._elbowCenter,
+    //   points.mirroredUnderSleevecapFront.dist(points.underSleevecapFront)
+    // )
+    points._elbowBack = points.elbowBack.shiftTowards(
+      points._elbowLeft,
+      points.mirroredUnderSleevecapFront.dist(points.underSleevecapFront)
+    )
+    points.underElbowLeft = points.underElbowLeft.shiftTowards(
+      points._elbowLeft,
+      points.mirroredUnderSleevecapFront.dist(points.underSleevecapFront) * 2
+    )
+
+    points.underBicepsBack = points.underBicepsBack.shiftTowards(
+      points.bicepsLeft,
+      points.bicepsBack.dist(points.underBicepsBack)
+    )
+    points.mirroredUnderBicepsBack = points.mirroredUnderBicepsBack.shiftTowards(
+      points.bicepsLeft,
+      points.bicepsBack.dist(points.underBicepsBack) / 2
+    )
+
+    points.topCuffRight = points.topCuffRight.shiftTowards(
+      points._cuffCenter,
+      points.underCuffLeft.dist(points.topCuffLeft)
+    )
+    points.underCuffLeft = points.topCuffLeft.copy()
+
+    paths.under = new Path()
+      .move(points.mirroredUnderSleevecapFront)
+      .join(paths.mirroredSleevecapFront.reverse())
+      .join(paths.mirroredSleevecapBack.reverse())
+      .curve(points.mirroredUnderBicepsBack, points.underElbowLeft, points.underCuffLeft)
+      // .line(points.mirroredUnderBicepsBack)
+      // .line(points.underElbowLeft)
+      // .line(points.underCuffLeft)
+      .line(points.underCuffRight)
+      .curve(
+        points.underElbowRight,
+        points.mirroredUnderBicepsFront,
+        points.mirroredUnderSleevecapFront
+      )
+      // .line(points.underElbowRight)
+      // .line(points.mirroredUnderBicepsFront)
+      // .line(points.mirroredUnderSleevecapFront)
+      .attr('class', 'lining')
+
+    paths.top = new Path()
+      .move(points.underSleevecapFront)
+      .join(paths.sleevecap)
+      .curve(points.underBicepsBack, points._elbowBack, points.topCuffLeft)
+      // .line(points.underBicepsBack)
+      // .line(points._elbowBack)
+      // .line(points.topCuffLeft)
+      .line(points.topCuffRight)
+      .curve(points._elbowFront, points.bicepsFront, points.underSleevecapFront)
+      // .line(points._elbowFront)
+      // .line(points.underBicepsFront)
+      // .line(points.underSleevecapFront)
+      .attr('class', 'note')
+
+    console.log({ points: JSON.parse(JSON.stringify(points)) })
+
     console.log({
       side: 'sleeve',
-      cuffWidth: points.wristLeft.y - points.cuffCenter.y,
+      cuffWidth: points.wristLeft.dist(points.cuffRight),
+      newCuffWidth:
+        points.topCuffLeft.dist(points.topCuffRight) +
+        points.underCuffLeft.dist(points.underCuffRight),
     })
 
     return part

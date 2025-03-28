@@ -34,6 +34,13 @@ export const base = {
     pocketHeight: 0.5,
 
     // Parameters
+    armholeDepth: {
+      pct: 12,
+      min: -10,
+      max: 50,
+      menu: (settings, mergedOptions) => (mergedOptions?.legacyArmholeDepth ? false : 'advanced'),
+    },
+    bicepsEase: { pct: 10, min: 0, max: 50, menu: 'fit' },
     chestEase: { pct: 5, min: 0, max: 35, menu: 'fit' },
     cuffEase: { pct: 25, min: 0, max: 200, menu: 'fit' },
     hemEase: { pct: 5, min: 0, max: 15, menu: 'fit' },
