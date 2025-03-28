@@ -1,9 +1,18 @@
-import React, { useContext } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
+import { useAccount } from '@freesewing/react/hooks/useAccount'
 import {
   LoadingStatusContext,
   LoadingStatusContextProvider,
 } from '@freesewing/react/context/LoadingStatus'
 import { ModalContext, ModalContextProvider } from '@freesewing/react/context/Modal'
+import {
+  DesignIcon,
+  DocsIcon,
+  ShowcaseIcon,
+  RssIcon,
+  LockIcon,
+  UserIcon,
+} from '@freesewing/react/components/Icon'
 import { Layout as DefaultLayout } from '@freesewing/react/components/Layout'
 
 /*
@@ -82,4 +91,57 @@ const InnerDocusaurusPage = ({
       {typeof modalContent === 'function' ? modalContent() : modalContent}
     </div>
   )
+}
+
+export const NavbarItem = (props) => {
+  const { id, Default } = props
+
+  const Component = navbarItems[id] ? navbarItems[id] : Default
+
+  return <Component {...props} />
+}
+
+const AccountNavbarItem = ({ Link }) => {
+  const [loggedIn, setLoggedIn] = useState(false)
+  const { account } = useAccount()
+
+  useEffect(() => {
+    if (account?.username) setLoggedIn(true)
+  }, [account])
+
+  const itemProps =
+    loggedIn && account.username
+      ? { Link, label: account.username, Icon: UserIcon, href: '/account/' }
+      : { Link, label: 'Sign In', Icon: LockIcon, href: '/signing/' }
+
+  return <SimpleNavbarItem {...itemProps} />
+}
+
+const SimpleNavbarItem = ({ label, Icon, href, Link }) => (
+  <Link
+    className="tw-daisy-btn tw-daisy-btn-ghost hover:tw-no-underline hover:tw-text-base-content custom-navbar-item"
+    href={href}
+  >
+    <div className="tw-flex tw-flex-row tw-gap-2 tw-items-center">
+      <Icon className="tw-w-6 tw-h-6" />
+      <span className="tw-text-lg">{label}</span>
+    </div>
+  </Link>
+)
+
+/*
+ * A selection of custom navbar items
+ */
+const navbarItems = {
+  account: AccountNavbarItem,
+  designs: (props) => (
+    <SimpleNavbarItem label="Designs" href="/designs/" Icon={DesignIcon} Link={props.Link} />
+  ),
+  docs: (props) => (
+    <SimpleNavbarItem label="Docs" href="/docs/" Icon={DocsIcon} Link={props.Link} />
+  ),
+  showcase: (props) => (
+    <SimpleNavbarItem label="Showcase" href="/showcase/" Icon={ShowcaseIcon} Link={props.Link} />
+  ),
+  blog: (props) => <SimpleNavbarItem label="Blog" href="/blog/" Icon={RssIcon} Link={props.Link} />,
 }

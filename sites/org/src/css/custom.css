@@ -285,3 +285,23 @@ a.daisy-btn-neutral:hover {
 nav.navbar {
   background-color: var(--ifm-background-color);
 }
+
+/*
+ * People want the 'account' link in the navbar to show the username
+ * when people are logged in. I probably should have said No instead.
+ */
+@media only screen and (max-width: 996px) {
+  div.navbar__inner > div.navbar__items a.custom-navbar-item {
+    display: none;
+  }
+  div.navbar-sidebar ul.menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+  }
+  div.navbar-sidebar ul.menu__list a.custom-navbar-item {
+    width: 100%;
+    justify-content: start;
+  }
+}

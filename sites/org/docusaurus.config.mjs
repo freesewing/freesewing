@@ -262,11 +262,11 @@ const config = {
         src: 'img/logo.svg',
       },
       items: [
-        { to: '/designs/', label: '👕 Designs', position: 'left' },
-        { to: '/docs/', label: '📖 Docs', position: 'left' },
-        { to: '/showcase/', label: '📷 Showcase', position: 'left' },
-        { to: '/blog/', label: '📰 Blog', position: 'left' },
-        { to: '/account/', label: '🔒 Account', position: 'right' },
+        { type: 'custom-FreeSewingNavbarItem', position: 'left', id: 'designs' },
+        { type: 'custom-FreeSewingNavbarItem', position: 'left', id: 'docs' },
+        { type: 'custom-FreeSewingNavbarItem', position: 'left', id: 'showcase' },
+        { type: 'custom-FreeSewingNavbarItem', position: 'left', id: 'blog' },
+        { type: 'custom-FreeSewingNavbarItem', position: 'right', id: 'account' },
       ],
     },
     footer: {
