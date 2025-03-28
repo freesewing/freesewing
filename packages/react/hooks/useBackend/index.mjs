@@ -565,6 +565,16 @@ Backend.prototype.newsletterUnsubscribe = async function (ehash) {
 }
 
 /*
+ * Newsletter start unsubscribe flow
+ *
+ * @param {string} ehash - The email address for which to start the unsubscribe flow
+ * @return {array} result - The REST response, a [status, data] array
+ */
+Backend.prototype.newsletterStartUnsubscribe = async function (email) {
+  return await this.post(`/subscriber/remove`, { email })
+}
+
+/*
  * Init Oauth flow for oauth provider
  *
  * @param {object} data

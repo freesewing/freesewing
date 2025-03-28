@@ -42,8 +42,8 @@ export const DocusaurusPage = (props) => {
 }
 
 /*
- * This component should be the top level of a Docusaurus doc (mdx)
- * where you want access to context (typically account pages and so on)
+ * This component should be the top level of any Docusaurus content that's not
+ * a full page where you want access to context (typically account pages and so on)
  *
  * This sets up the various context providers before
  * passing all props down to the InnerPageWrapper.
