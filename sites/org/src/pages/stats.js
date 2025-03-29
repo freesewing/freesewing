@@ -1,5 +1,5 @@
 // Dependencies
-import { linkClasses, formatNumber } from '@freesewing/utils'
+import { linkClasses, formatNumber, orderBy, clone } from '@freesewing/utils'
 // Hooks
 import { useState, useEffect } from 'react'
 import { useBackend } from '@freesewing/react/hooks/useBackend'
@@ -8,10 +8,43 @@ import Layout from '@theme/Layout'
 import Link from '@docusaurus/Link'
 import { DocusaurusPage } from '@freesewing/react/components/Docusaurus'
 import { Spinner } from '@freesewing/react/components/Spinner'
+import { ChartWrapper } from '@freesewing/react/components/Echart'
 
 const meta = {
   title: 'FreeSewing by numbers',
   description: 'Some high-level numbers about Freesewing',
+}
+
+const option = {
+  tooltip: {
+    trigger: 'axis',
+    show: true,
+    axisPointer: {
+      type: 'line',
+      lineStyle: {
+        type: 'dashed',
+      },
+    },
+  },
+  title: {
+    left: 'center',
+  },
+  grid: {
+    left: '40',
+    right: '60',
+    containLabel: true,
+  },
+  toolbox: {
+    feature: {
+      saveAsImage: {},
+      magicType: {
+        type: ['line', 'bar'],
+      },
+    },
+  },
+  yAxis: {
+    type: 'value',
+  },
 }
 
 export default function StatsPage() {
@@ -32,6 +65,40 @@ export default function StatsPage() {
       </DocusaurusPage>
     )
 
+  const designTop = orderBy(
+    Object.entries(stats.designs).map(([design, count]) => ({ design, count })),
+    'count',
+    'desc'
+  ).slice(0, 50)
+
+  const optionD = clone(option)
+  optionD.title.text = 'Top 50 FreeSewing Designs'
+  optionD.xAxis = {
+    type: 'category',
+    data: designTop.map((entry) => entry.design),
+    name: 'Design',
+  }
+  optionD.series = [
+    {
+      data: designTop.map((entry) => entry.count),
+      type: 'bar',
+    },
+  ]
+
+  const optionU = clone(option)
+  optionU.title.text = 'Top 25 FreeSewing Users'
+  optionU.xAxis = {
+    type: 'category',
+    data: stats.topUsers.map((user) => user.username),
+    name: 'User',
+  }
+  optionU.series = [
+    {
+      data: stats.topUsers.map((user) => user.calls),
+      type: 'bar',
+    },
+  ]
+
   return (
     <DocusaurusPage DocusaurusLayout={Layout} {...meta}>
       <div className="tw-max-w-7xl tw-mx-auto tw-my-12 tw-px-4">
@@ -46,26 +113,39 @@ export default function StatsPage() {
           <Stat title="API Key Calls" value={stats.activity.key} desc="Total Number Seen" />
         </div>
         <h2>Top Users</h2>
-        <ol className="tw-list tw-list-inside tw-list-decimal tw-ml-4">
-          {stats.topUsers.map((u) => (
-            <li key={u.id}>
-              <Link href={`/users/user?id=${u.id}`} className={linkClasses}>
-                {u.username}
-              </Link>
-            </li>
-          ))}
-        </ol>
+        <ChartWrapper option={optionU} />
+        <small className="tw-ml-4 tw-py-1 tw-opacity-80">
+          <b>Note:</b> Ordered by JWT calls made to the FreeSewing backend
+        </small>
+        <div className="tw-max-h-96 tw-overflow-scroll">
+          <ol className="tw-list tw-list-inside tw-list-decimal tw-ml-4">
+            {stats.topUsers.map((u) => (
+              <li key={u.id}>
+                <Link href={`/users/user?id=${u.id}`} className={linkClasses}>
+                  {u.username}
+                </Link>
+                : {formatNumber(u.calls)}
+              </li>
+            ))}
+          </ol>
+        </div>
         <h2>Top Designs</h2>
-        <ol className="tw-list tw-list-inside tw-list-decimal tw-ml-4">
-          {Object.entries(stats.designs).map(([d, c]) => (
-            <li key={d}>
-              <Link href={`/designs/${d}`} className={linkClasses}>
-                <span className="tw-capitalize">{d}</span>
-              </Link>
-              : {c}
-            </li>
-          ))}
-        </ol>
+        <ChartWrapper option={optionD} />
+        <small className="tw-ml-4 tw-py-1 tw-opacity-80">
+          <b>Note:</b> Ordered by patterns stored in the FreeSewing backend
+        </small>
+        <div className="tw-max-h-96 tw-overflow-scroll">
+          <ol className="tw-list tw-list-inside tw-list-decimal tw-ml-4">
+            {Object.entries(stats.designs).map(([d, c]) => (
+              <li key={d}>
+                <Link href={`/designs/${d}`} className={linkClasses}>
+                  <span className="tw-capitalize">{d}</span>
+                </Link>
+                : {formatNumber(c)}
+              </li>
+            ))}
+          </ol>
+        </div>
       </div>
     </DocusaurusPage>
   )
