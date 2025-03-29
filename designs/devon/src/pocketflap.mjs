@@ -36,7 +36,7 @@ export const pocketflap = {
       .attr('class', 'fabric')
 
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    macro('title', { nr: 9, title: 'pocketflap', at: points.title })
+    macro('title', { nr: 11, title: 'pocketflap', at: points.title })
 
     return part
   },

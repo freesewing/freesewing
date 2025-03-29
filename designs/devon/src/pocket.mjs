@@ -51,7 +51,7 @@ export const pocket = {
       .attr('class', 'fabric')
 
     points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    macro('title', { nr: 8, title: 'pocket', at: points.title })
+    macro('title', { nr: 10, title: 'pocket', at: points.title })
 
     return part
   },
