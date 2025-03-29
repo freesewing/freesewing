@@ -21,7 +21,7 @@ export const frontYoke = {
     console.log({ paths: JSON.parse(JSON.stringify(paths)) })
 
     paths.frontYokeSeam = new Path()
-      .move(points.cfYoke)
+      .move(points.frontYoke)
       .line(points.frontArmholeYoke)
       .attr('class', 'fabric')
 
@@ -32,6 +32,8 @@ export const frontYoke = {
       .join(paths.frontYokeArmhole)
       .line(points.s3CollarSplit)
       .join(paths.frontCollar)
+      .line(points.frontNeck)
+      .line(points.frontYoke)
       .join(paths.frontYokeSeam)
       .close()
       .attr('class', 'fabric')

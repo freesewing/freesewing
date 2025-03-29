@@ -19,6 +19,7 @@ export const front = {
     frontHemSidePanelWidth: 0.56,
 
     frontPocketRatio: 0.48,
+    collarPoint: 0.33,
     // Parameters
   },
   draft: ({ measurements, options, store, points, Path, paths, utils, macro, part }) => {
@@ -393,6 +394,37 @@ export const front = {
       'armholeYokeFront',
       paths.frontArmholeComplete.split(points.frontArmholeYoke)[0].length()
     )
+
+    let frontAdd =
+      options.waistbandWidth *
+      (measurements.bust === undefined ? measurements.chest : measurements.bust) *
+      0.5
+    console.log({ wbw: options.waistbandWidth })
+    points.frontNeck = points.cfNeck.shift(180, frontAdd)
+    points.frontYoke = points.cfYoke.shift(180, frontAdd)
+    points.frontHem = points.cfHem.shift(180, frontAdd)
+
+    paths.front = new Path()
+      .move(points.cfNeck)
+      .line(points.frontNeck)
+      .line(points.frontHem)
+      .line(points.cfHem)
+
+    let collarLength = paths.backCollar.length() + paths.frontCollar.length()
+
+    console.log({
+      collarLength: collarLength,
+      collarLength33: collarLength * 0.33,
+      bcl: paths.backCollar.length(),
+      fcl: paths.frontCollar.length(),
+      cl_bcl: collarLength * 0.33 - paths.backCollar.length(),
+      cl_bcl2: (collarLength * 0.33 - paths.backCollar.length()) / 2,
+    })
+    points.frontCollarPoint = paths.frontCollar
+      .reverse()
+      .shiftAlong(collarLength * options.collarPoint)
+
+    console.log({ frontpoints: JSON.parse(JSON.stringify(points)) })
 
     return part
   },

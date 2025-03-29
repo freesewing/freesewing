@@ -43,14 +43,15 @@ export const base = {
     bicepsEase: { pct: 15, min: 0, max: 50, menu: 'fit' },
     chestEase: { pct: 20, min: 0, max: 35, menu: 'fit' },
     cuffEase: { pct: 25, min: 0, max: 200, menu: 'fit' },
-    cuffWidth: { pct: 7.5, min: 0, max: 10, menu: 'fit' },
+    cuffWidth: { pct: 7.5, min: 0, max: 10, menu: 'style' },
     hemEase: { pct: 5, min: 0, max: 15, menu: 'fit' },
     lengthBonus: { pct: 20, min: 0, max: 40, menu: 'style' },
     neckDrop: { pct: 6, min: 0, max: 10, menu: 'style' },
     shoulderEase: { pct: 2.6, min: -2, max: 6, menu: 'fit' },
-    shoulderShift: { pct: 2.6, min: 0, max: 6, menu: 'fit' },
+    shoulderShift: { pct: 2.6, min: 0, max: 6, menu: 'style' },
     s3Collar: { pct: 75, min: 0, max: 100, menu: 'style' },
     s3Armhole: { pct: 75, min: 0, max: 100, menu: 'style' },
+    waistbandWidth: { pct: 4.67, min: 1, max: 10, menu: 'style' },
   },
   draft: ({ options, points, snippets, Point, macro, part }) => {
     for (const i in snippets) {

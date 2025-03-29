@@ -8,6 +8,7 @@ import { backPanel } from './backpanel.mjs'
 import { backSide } from './backside.mjs'
 import { backYoke } from './backyoke.mjs'
 import { front } from './front.mjs'
+import { frontFacing } from './frontfacing.mjs'
 import { frontInside } from './frontinside.mjs'
 import { frontPanel } from './frontpanel.mjs'
 import { frontSidePanel } from './frontsidepanel.mjs'
@@ -29,6 +30,7 @@ const Devon = new Design({
     backSide,
     backYoke,
     front,
+    frontFacing,
     frontYoke,
     frontSidePanel,
     frontPanel,
@@ -50,6 +52,7 @@ export {
   backSide,
   backYoke,
   front,
+  frontFacing,
   frontInside,
   frontPanel,
   frontSidePanel,

@@ -27,9 +27,9 @@ export const frontInside = {
 
     paths.seam = new Path()
       .move(points.frontHemPanel)
-      .line(points.cfHem)
-      .line(points.cfYoke)
       .line(points.frontYokePanel)
+      .line(points.frontYoke)
+      .line(points.frontHem)
       .line(points.frontHemPanel)
       .close()
       .attr('class', 'fabric')
