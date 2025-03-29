@@ -22,7 +22,8 @@ import { Popout } from '@freesewing/react/components/Popout'
  * @params {object} props - All React props
  * @params {bool} props.welcome - Set to true to use this component on the welcome page
  */
-export const Password = ({ welcome = false }) => {
+export const Password = ({ welcome = false, Link = false }) => {
+  if (!Link) Link = WebLink
   // Hooks
   const backend = useBackend()
   const { account, setAccount } = useAccount()
@@ -66,7 +67,7 @@ export const Password = ({ welcome = false }) => {
             Authentication to keep your FreeSewing account safe.
           </p>
           <p className="tw-text-right tw-m-0 tw-pt-0">
-            <Link className="tw-btn tw-btn-secondary tw-btn-accent" href="/account/mfa">
+            <Link className="tw-daisy-btn tw-daisy-btn-accent" href="/account/mfa">
               Two-Factor Authentication <RightIcon className="tw-h-6 tw-w-6 tw-ml-2" />
             </Link>
           </p>

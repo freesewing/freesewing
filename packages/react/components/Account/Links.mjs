@@ -192,7 +192,7 @@ export const Links = ({ Link = false }) => {
                 <Link
                   key={item}
                   title={titles[item] || capitalize(item)}
-                  href={`/account/about/${item}/`}
+                  href={`/account/about/${item === 'img' ? 'avatar' : item}/`}
                   className={`${itemClasses} ${linkClasses}`}
                 >
                   <div className="tw-flex tw-flex-row tw-items-center tw-gap-3 tw-font-medium">

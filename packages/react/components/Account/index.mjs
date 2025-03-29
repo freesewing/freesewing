@@ -10,7 +10,7 @@ import { Apikeys } from './Apikeys.mjs'
 import { Username } from './Username.mjs'
 import { Bio } from './Bio.mjs'
 import { Avatar } from './Avatar.mjs'
-import { Email } from './Email.mjs'
+import { Email, EmailChangeConfirmation } from './Email.mjs'
 import { Github } from './Github.mjs'
 import { Instagram, Mastodon, Reddit, Twitch, Tiktok, Website } from './Platform.mjs'
 import { Compare } from './Compare.mjs'
@@ -25,6 +25,7 @@ import { Export } from './Export.mjs'
 import { Reload } from './Reload.mjs'
 import { Remove } from './Remove.mjs'
 import { Restrict } from './Restrict.mjs'
+import { UserId } from './Id.mjs'
 
 export {
   Bookmarks,
@@ -42,6 +43,7 @@ export {
   Bio,
   Avatar,
   Email,
+  EmailChangeConfirmation,
   Github,
   Instagram,
   Mastodon,
@@ -61,4 +63,5 @@ export {
   Reload,
   Remove,
   Restrict,
+  UserId,
 }

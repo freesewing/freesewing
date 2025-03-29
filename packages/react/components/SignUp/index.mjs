@@ -1,8 +1,9 @@
 // Dependencies
-import { validateEmail, validateTld } from '@freesewing/utils'
+import { validateEmail, validateTld, getSearchParam } from '@freesewing/utils'
 
 // Hooks
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
+import { useAccount } from '@freesewing/react/hooks/useAccount'
 import { useBackend } from '@freesewing/react/hooks/useBackend'
 
 // Context
@@ -24,7 +25,8 @@ import {
 import { ModalWrapper } from '@freesewing/react/components/Modal'
 import { EmailInput } from '@freesewing/react/components/Input'
 import { IconButton } from '@freesewing/react/components/Button'
-//import { Robot } from 'shared/components/robot/index.mjs'
+import { Spinner } from '@freesewing/react/components/Spinner'
+import { Consent } from '@freesewing/react/components/Account'
 
 export const SignUp = ({ embed = false }) => {
   // State
@@ -211,5 +213,35 @@ export const SignUp = ({ embed = false }) => {
         </>
       )}
     </div>
+  )
+}
+
+export const SignUpConfirmation = ({ onSuccess = false }) => {
+  // State
+  const [id, setId] = useState()
+  const [check, setCheck] = useState()
+
+  // Effects
+  useEffect(() => {
+    const newId = getSearchParam('id')
+    const newCheck = getSearchParam('check')
+    if (newId !== id) setId(newId)
+    if (newCheck !== check) setCheck(newCheck)
+  }, [id, check])
+
+  // If we do not (yet) have the data, show a loader
+  if (!id || !check)
+    return (
+      <>
+        <h1>One moment pleae</h1>
+        <Spinner className="tw-w-8 tw-h-8 tw-m-auto tw-animate-spin" />
+      </>
+    )
+
+  return (
+    <>
+      <h1>One more thing</h1>
+      <Consent signUp={id} />
+    </>
   )
 }
