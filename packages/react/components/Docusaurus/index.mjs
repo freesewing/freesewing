@@ -112,7 +112,7 @@ const AccountNavbarItem = ({ Link }) => {
   const itemProps =
     loggedIn && account.username
       ? { Link, label: account.username, Icon: UserIcon, href: '/account/' }
-      : { Link, label: 'Sign In', Icon: LockIcon, href: '/signing/' }
+      : { Link, label: 'Sign In', Icon: LockIcon, href: '/signin/' }
 
   return <SimpleNavbarItem {...itemProps} />
 }

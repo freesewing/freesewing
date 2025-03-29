@@ -1,13 +1,11 @@
 // Dependencies
 import { linkClasses, formatNumber, orderBy, clone } from '@freesewing/utils'
 // Hooks
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useBackend } from '@freesewing/react/hooks/useBackend'
 // Components
-import Layout from '@theme/Layout'
-import Link from '@docusaurus/Link'
-import { DocusaurusPage } from '@freesewing/react/components/Docusaurus'
 import { Spinner } from '@freesewing/react/components/Spinner'
+import { Link as WebLink } from '@freesewing/react/components/Link'
 import { ChartWrapper } from '@freesewing/react/components/Echart'
 
 const meta = {
@@ -47,7 +45,8 @@ const option = {
   },
 }
 
-export default function StatsPage() {
+export const Stats = ({ Link = false }) => {
+  if (!Link) Link = WebLink
   const [stats, setStats] = useState()
   const [error, setError] = useState(false)
   const backend = useBackend()
@@ -58,11 +57,9 @@ export default function StatsPage() {
 
   if (!stats)
     return (
-      <DocusaurusPage DocusaurusLayout={Layout} {...meta} Layout={false}>
-        <div className="tw-text-center tw-mt-12 tw-w-full">
-          <Spinner />
-        </div>
-      </DocusaurusPage>
+      <div className="tw-text-center tw-mt-12 tw-w-full">
+        <Spinner />
+      </div>
     )
 
   const designTop = orderBy(
@@ -100,7 +97,7 @@ export default function StatsPage() {
   ]
 
   return (
-    <DocusaurusPage DocusaurusLayout={Layout} {...meta}>
+    <>
       <div className="tw-max-w-7xl tw-mx-auto tw-my-12 tw-px-4">
         <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-2">
           <Stat title="Users" value={stats.user} />
@@ -147,7 +144,7 @@ export default function StatsPage() {
           </ol>
         </div>
       </div>
-    </DocusaurusPage>
+    </>
   )
 }
 

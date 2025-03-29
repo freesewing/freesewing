@@ -1,6 +1,6 @@
 // Dependencies
 import { welcomeSteps } from './shared.mjs'
-import { linkClasses } from '@freesewing/utils'
+import { linkClasses, navigate } from '@freesewing/utils'
 
 // Context
 import { LoadingStatusContext } from '@freesewing/react/context/LoadingStatus'
@@ -32,13 +32,13 @@ const strings = {
 }
 
 /*
- * Component for the account/preferences/newsletter page
+ * Component for the account/preferences/consent page
  *
  * @params {object} props - All React props
- * @params {bool} props.welcome - Set to true to use this component on the welcome page
+ * @params {bool} props.signUp - Set to true to use this component on the initial signUp
  * @param {function} props.Link - An optional framework-specific Link component
  */
-export const Consent = ({ welcome = false, Link = false, title = false }) => {
+export const Consent = ({ signUp = false, Link = false, title = false }) => {
   if (!Link) Link = WebLink
 
   // Hooks
@@ -55,7 +55,16 @@ export const Consent = ({ welcome = false, Link = false, title = false }) => {
     let newConsent = 0
     if (consent1) newConsent = 1
     if (consent1 && consent2) newConsent = 2
-    if (newConsent !== account.consent) {
+    if (newConsent > 0 && signUp) {
+      setLoadingStatus([true, 'Creating your account'])
+      const [status, body] = await backend.confirmSignup({ id: signUp, consent: newConsent })
+      if (status === 200) {
+        setLoadingStatus([true, 'Account created', true, true])
+        if (body?.token) setToken(body.token)
+        if (body?.account) setAccount(body.account)
+        navigate('/welcome')
+      } else setLoadingStatus([true, 'An error occured, please report this', true, true])
+    } else if (newConsent !== account.consent) {
       setLoadingStatus([true, 'Updating your account'])
       const [status, body] = await backend.updateAccount({ consent: newConsent })
       if (status === 200) {
@@ -108,9 +117,9 @@ export const Consent = ({ welcome = false, Link = false, title = false }) => {
       {!consent1 && <Popout warning>This consent is required for a FreeSewing account.</Popout>}
       {consent1 ? (
         <button className="tw-daisy-btn tw-daisy-btn-primary tw-w-full tw-mt-4" onClick={update}>
-          Save
+          {signUp ? 'Create Account' : 'Save'}
         </button>
-      ) : (
+      ) : signUp ? null : (
         <button
           className="tw-daisy-btn tw-mt-4 tw-capitalize tw-w-full tw-daisy-btn-error"
           onClick={removeAccount}
@@ -130,7 +139,7 @@ export const Consent = ({ welcome = false, Link = false, title = false }) => {
 const Checkbox = ({ value, setter, label, children = null }) => (
   <div
     className={`tw-form-control tw-p-4 hover:tw-cursor-pointer tw-rounded tw-border-l-8 tw-my-2
-    ${value ? 'tw-border-success tw-bg-success' : 'tw-border-error tw-bg-error'}
+    ${value ? 'tw-border-success tw-bg-success/30' : 'tw-border-error tw-bg-error/30'}
     btw-g-opacity-10 tw-shadow`}
     onClick={() => setter(value ? false : true)}
   >

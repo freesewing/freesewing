@@ -3,6 +3,7 @@ import { themes as prismThemes } from 'prism-react-renderer'
 import designs from '../../config/software/designs.json'
 import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
+import smartypants from 'remark-smartypants'
 
 /*
  * We customize the sidebar somewhat:
@@ -21,6 +22,9 @@ function customizeSidebar(items) {
           }
         }
       }
+    }
+    if (docs[item].label === 'hidden') {
+      console.log(docs[item])
     }
   }
 
@@ -200,6 +204,7 @@ const config = {
             const sidebarItems = await defaultSidebarItemsGenerator(args)
             return customizeSidebar(sidebarItems)
           },
+          remarkPlugins: [[smartypants, { dashes: 'oldschool' }]],
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -224,13 +229,9 @@ const config = {
           ],
           postsPerPage: 10,
           blogListComponent: '@theme/BlogListPage',
-          //blogPostComponent: '@site/src/components/blog/post.mjs',
           blogTagsListComponent: '@theme/BlogTagsListPage',
           blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
-          //remarkPlugins: [require('./my-remark-plugin')],
-          //rehypePlugins: [],
-          //beforeDefaultRemarkPlugins: [],
-          //beforeDefaultRehypePlugins: [],
+          remarkPlugins: [[smartypants, { dashes: 'oldschool' }]],
           truncateMarker: /<!--\s*(truncate)\s*-->/,
           showReadingTime: true,
           feedOptions: {
