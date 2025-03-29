@@ -121,9 +121,9 @@ InfoController.prototype.getStats = async (req, res, tools) => {
   try {
     top = await tools.prisma.user.findMany({
       orderBy: { jwtCalls: 'desc' },
-      take: 10,
+      take: 25,
     })
-    stats.topUsers = top.map((u) => ({ id: u.id, username: u.username }))
+    stats.topUsers = top.map((u) => ({ id: u.id, username: u.username, calls: u.jwtCalls }))
   } catch (err) {
     console.log(err)
     error = err
