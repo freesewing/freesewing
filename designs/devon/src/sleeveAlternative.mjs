@@ -65,10 +65,10 @@ export const sleeveAlternative = {
       points.elbowCenter.y
     )
 
-    points.cuffCenter = points.centerWrist.shift(
-      90,
-      options.cuffWidth * measurements.shoulderToWrist
-    )
+    const cuffWidth = options.cuffWidth * measurements.shoulderToWrist
+    store.set('cuffWidth', cuffWidth)
+
+    points.cuffCenter = points.centerWrist.shift(90, cuffWidth)
     points.cuffLeft = utils.beamIntersectsY(
       points.wristLeft,
       points.bicepsLeft,
@@ -273,6 +273,12 @@ export const sleeveAlternative = {
         points.topCuffLeft.dist(points.topCuffRight) +
         points.underCuffLeft.dist(points.underCuffRight),
     })
+
+    store.set(
+      'cuffLength',
+      points.topCuffLeft.dist(points.topCuffRight) +
+        points.underCuffLeft.dist(points.underCuffRight)
+    )
 
     return part
   },

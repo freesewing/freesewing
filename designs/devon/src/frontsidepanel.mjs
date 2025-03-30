@@ -104,17 +104,21 @@ export const frontSidePanel = {
         .shift(90 + angleFBA, points.cfHem.dist(points.cfYoke) * options.pocketHeight)
         .addCircle(9)
 
+      paths.sidePanelHem = new Path()
+        .move(points.frontYokeSidePanel)
+        .curve(
+          points.frontYokeSidePanelCp2,
+          points.frontHemSidePanelCp1,
+          points.frontHemSidePanelSaved
+        )
+
       paths.seam = new Path()
         .move(points.frontHemSidePanelSaved)
         .curve(points.frontHemSidePanelCp2, points.hem, points.hem)
         .line(points.armhole)
         .join(paths.frontSidePanelArmhole)
         .curve(points.frontArmholeYoke, points.frontYokeSidePanelCP1, points.frontYokeSidePanel)
-        .curve(
-          points.frontYokeSidePanelCp2,
-          points.frontHemSidePanelCp1,
-          points.frontHemSidePanelSaved
-        )
+        .join(paths.sidePanelHem)
         .close()
         .attr('class', 'fabric')
     } else {
@@ -127,6 +131,10 @@ export const frontSidePanel = {
         points.cfYoke,
         options.pocketHeight
       )
+
+      paths.sidePanelHem = new Path()
+        .move(points.frontYokeSidePanel)
+        .line(points.frontHemSidePanelSaved)
 
       paths.seam = new Path()
         .move(points.frontHemSidePanelSaved)
@@ -146,6 +154,13 @@ export const frontSidePanel = {
 
     points.title = points.frontYokeSidePanel.shiftFractionTowards(points.hem, 0.3)
     macro('title', { nr: 6, title: 'frontSide', at: points.title })
+
+    store.set(
+      'hemLength',
+      paths.sidePanelHem.length() +
+        points.frontHemSidePanelSaved.dist(points.frontHem) +
+        points.cbHem.dist(points.hem)
+    )
 
     return part
   },

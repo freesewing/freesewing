@@ -7,6 +7,8 @@ import { back } from './back.mjs'
 import { backPanel } from './backpanel.mjs'
 import { backSide } from './backside.mjs'
 import { backYoke } from './backyoke.mjs'
+import { collar } from './collar.mjs'
+import { cuff } from './cuff.mjs'
 import { front } from './front.mjs'
 import { frontFacing } from './frontfacing.mjs'
 import { frontInside } from './frontinside.mjs'
@@ -19,6 +21,7 @@ import { sleeve } from './sleeve.mjs'
 import { topSleeve } from './topsleeve.mjs'
 import { underSleeve } from './undersleeve.mjs'
 import { sleeveAlternative } from './sleeveAlternative.mjs'
+import { waistband } from './waistband.mjs'
 
 // Create new design
 const Devon = new Design({
@@ -29,6 +32,8 @@ const Devon = new Design({
     backPanel,
     backSide,
     backYoke,
+    collar,
+    cuff,
     front,
     frontFacing,
     frontYoke,
@@ -41,6 +46,7 @@ const Devon = new Design({
     topSleeve,
     underSleeve,
     sleeveAlternative,
+    waistband,
   ],
 })
 
@@ -51,6 +57,8 @@ export {
   backPanel,
   backSide,
   backYoke,
+  collar,
+  cuff,
   front,
   frontFacing,
   frontInside,
@@ -63,6 +71,7 @@ export {
   topSleeve,
   underSleeve,
   sleeveAlternative,
+  waistband,
   i18n,
   Devon,
 }

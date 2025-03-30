@@ -52,7 +52,7 @@ export const frontFacing = {
       .attr('class', 'fabric')
 
     points.title = points.frontYokePanel.shiftFractionTowards(points.cfChest, 0.5)
-    macro('title', { nr: 4, title: 'frontFacing', at: points.title })
+    macro('title', { nr: 12, title: 'frontFacing', at: points.title })
     console.log({ facingpoints: JSON.parse(JSON.stringify(points)) })
 
     return part

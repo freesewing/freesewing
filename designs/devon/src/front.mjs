@@ -11,6 +11,8 @@ export const front = {
   },
   options: {
     // Constants
+    collarLengthRatio: 3 / 83,
+
     frontYokePanelWidth: 0.3,
     frontYokeInsertWidth: 0.4,
     frontYokeSidePanelWidth: 0.3,
@@ -395,11 +397,12 @@ export const front = {
       paths.frontArmholeComplete.split(points.frontArmholeYoke)[0].length()
     )
 
-    let frontAdd =
+    store.set(
+      'waistbandWidth',
       options.waistbandWidth *
-      (measurements.bust === undefined ? measurements.chest : measurements.bust) *
-      0.5
-    console.log({ wbw: options.waistbandWidth })
+        (measurements.bust === undefined ? measurements.chest : measurements.bust)
+    )
+    const frontAdd = store.get('waistbandWidth') * 0.5
     points.frontNeck = points.cfNeck.shift(180, frontAdd)
     points.frontYoke = points.cfYoke.shift(180, frontAdd)
     points.frontHem = points.cfHem.shift(180, frontAdd)
@@ -410,7 +413,9 @@ export const front = {
       .line(points.frontHem)
       .line(points.cfHem)
 
-    let collarLength = paths.backCollar.length() + paths.frontCollar.length()
+    const collarLength = paths.backCollar.length() + paths.frontCollar.length()
+    store.set('collarLength', collarLength)
+    store.set('collarLengthBack', paths.backCollar.length())
 
     console.log({
       collarLength: collarLength,

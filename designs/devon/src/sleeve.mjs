@@ -34,6 +34,8 @@ export const sleeve = {
     console.log({ spoints: JSON.parse(JSON.stringify(points)) })
 
     const cuffWidth = options.cuffWidth * measurements.shoulderToWrist
+    store.set('cuffWidth', cuffWidth)
+
     const tsAngle = points.tsWristLeft.angle(points.tsWristRight) + 90
     const usAngle = points.usWristLeft.angle(points.usWristRight) + 90
     points.tsHelperLeft = points.tsWristLeft.shift(tsAngle, cuffWidth)
@@ -93,6 +95,11 @@ export const sleeve = {
       .line(points.usCuffRight)
       .close()
       .attr('class', 'stroke-xl interfacing')
+
+    store.set(
+      'cuffLength',
+      points.tsCuffLeft.dist(points.tsCuffRight) + points.usCuffLeft.dist(points.usCuffRight)
+    )
 
     return part.hide()
   },

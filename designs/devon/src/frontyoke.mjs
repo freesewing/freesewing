@@ -13,7 +13,7 @@ export const frontYoke = {
     // Constants
     // Parameters
   },
-  draft: ({ points, Path, paths, macro, part }) => {
+  draft: ({ points, Path, paths, macro, store, options, Snippet, snippets, part }) => {
     macro('rmcutonfold')
     for (const i in paths) {
       if (['frontArmholeComplete', 'frontCollar'].indexOf(i) === -1) delete paths[i]
@@ -37,6 +37,11 @@ export const frontYoke = {
       .join(paths.frontYokeSeam)
       .close()
       .attr('class', 'fabric')
+
+    points.frontEndOfCollar = paths.frontCollar
+      .reverse()
+      .shiftAlong(store.get('collarLength') * options.collarLengthRatio)
+    snippets.frontEndOfCollar = new Snippet('notch', points.frontEndOfCollar)
 
     points.title = points.s3CollarSplit.shiftFractionTowards(points.frontArmholeYoke, 0.5)
     macro('title', { nr: 7, title: 'frontYoke', at: points.title })
