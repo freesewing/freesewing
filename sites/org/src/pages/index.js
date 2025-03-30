@@ -79,9 +79,6 @@ export default function Home() {
               Industry sizing is a bunch of lies. Join the slow fashion revolution and enjoy clothes
               that fit you.
             </p>
-            <p className="tw-font-medium tw-text-lg">
-              Speaking of revolution, we do not tolerate nazis here.
-            </p>
           </Card>
           <Card
             title="What is FreeSewing not?"

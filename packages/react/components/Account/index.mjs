@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { AccountStatus } from './Status.mjs'
 import { Bookmarks, BookmarkButton } from './Bookmarks.mjs'
 import { Links } from './Links.mjs'
 import { Set, NewSet } from './Set.mjs'
@@ -26,8 +27,10 @@ import { Reload } from './Reload.mjs'
 import { Remove } from './Remove.mjs'
 import { Restrict } from './Restrict.mjs'
 import { UserId } from './Id.mjs'
+import { UserRole } from './Role.mjs'
 
 export {
+  AccountStatus,
   Bookmarks,
   BookmarkButton,
   Links,
@@ -64,4 +67,5 @@ export {
   Remove,
   Restrict,
   UserId,
+  UserRole,
 }
