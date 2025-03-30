@@ -69,6 +69,7 @@ packageJson:
       "./xray": "./src/pattern-xray/index.mjs"
       # Components
       "./components/Account": "./components/Account/index.mjs"
+      "./components/Admin": "./components/Admin/index.mjs"
       "./components/Breadcrumbs": "./components/Breadcrumbs/index.mjs"
       "./components/Button": "./components/Button/index.mjs"
       "./components/Collection": "./components/Collection/index.mjs"
@@ -89,6 +90,7 @@ packageJson:
       "./components/LineDrawing": "./components/LineDrawing/index.mjs"
       "./components/Link": "./components/Link/index.mjs"
       "./components/Logo": "./components/Logo/index.mjs"
+      "./components/Markdown": "./components/Markdown/index.mjs"
       "./components/Mini": "./components/Mini/index.mjs"
       "./components/Modal": "./components/Modal/index.mjs"
       "./components/New": "./components/New/index.mjs"

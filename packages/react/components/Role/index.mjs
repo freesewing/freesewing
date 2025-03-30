@@ -167,16 +167,11 @@ export const RoleBlock = ({ children, user = false, Link = false }) => {
    * Avoid hydration errors
    */
   useEffect(() => {
-    const verifyAdmin = async () => {
-      const result = await backend.adminPing(admin.token)
-      if (result.success && result.data.account.role === 'admin') {
-        setImpersonating({
-          admin: result.data.account.username,
-          user: account.username,
-        })
-      }
-      setReady(true)
-    }
+    if (admin?.account?.username && account?.username)
+      setImpersonating({
+        admin: admin.account.username,
+        user: account.username,
+      })
     const verifyUser = async () => {
       const [status, data] = await backend.ping()
       if (status === 200 && data.result === 'success') {
@@ -194,7 +189,6 @@ export const RoleBlock = ({ children, user = false, Link = false }) => {
       }
       setReady(true)
     }
-    if (admin && admin.token) verifyAdmin()
     if (token) {
       // Don't hammer the backend. Check once per hour.
       if (!account.bestBefore || account.bestBefore < Date.now()) verifyUser()

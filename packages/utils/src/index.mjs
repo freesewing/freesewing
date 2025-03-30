@@ -63,6 +63,29 @@ export function clone(obj) {
 }
 
 /*
+ * Returns the URL of a user avatar (on cloudflare)
+ * based on the ihash and Variant
+ *
+ * @param {string} ihash - The user's ihash
+ * @param {string} variant - One of the cloudflare image variants
+ * @return {string} url - The image URL
+ */
+export function userAvatarUrl({ ihash = false, variant = 'public' }) {
+  /*
+   * If the variant is invalid, set it to the smallest thumbnail so
+   * people don't load enourmous images by accident
+   */
+  if (!cloudflareConfig.variants.includes(variant)) variant = 'sq100'
+
+  /*
+   * Without an ihash, return something default
+   */
+  return ihash
+    ? cloudflareImageUrl({ id: `uid-${ihash}`, variant })
+    : cloudflareImageUrl({ id: `default-avatar`, variant })
+}
+
+/*
  * Returns the URL of a cloudflare image
  * based on the ID and Variant
  *

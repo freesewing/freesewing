@@ -13,3 +13,5 @@ export const roles = {
   },
   base: 'user',
 }
+
+export const uiRoles = ['user', 'curator', 'support', 'admin']

@@ -179,6 +179,7 @@ Backend.prototype.adminLoadSubscribers = async function () {
  * Verify an admin account while impersonating another user
  */
 Backend.prototype.adminPing = async function (token) {
+  console.log('admin ping called', token)
   return await this.get(`/whoami/jwt`, { Authorization: `Bearer: ${token}` })
 }
 /*
@@ -604,6 +605,7 @@ Backend.prototype.oauthSignIn = async function ({ state, code, provider }) {
  * @return {array} result - The REST response, a [status, data] array
  */
 Backend.prototype.ping = async function () {
+  console.log('ping called')
   return await this.get(`/whoami/jwt`)
 }
 
@@ -613,6 +615,7 @@ Backend.prototype.ping = async function () {
  * @return {array} result - The REST response, a [status, data] array
  */
 Backend.prototype.reloadAccount = async function () {
+  console.log('reloadAccount called')
   return await this.get(`/whoami/jwt`)
 }
 
