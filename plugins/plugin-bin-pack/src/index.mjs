@@ -1,9 +1,8 @@
-import { name, version } from '../package.json' with { type: 'json' }
+import about from '../about.json' with { type: 'json' }
 import { pack } from './growing-packer.mjs'
 
 export const plugin = {
-  name,
-  version,
+  ...about,
   store: [['pack', pack]],
 }
 

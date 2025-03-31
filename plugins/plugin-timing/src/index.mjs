@@ -1,4 +1,4 @@
-import { name, version } from '../package.json' with { type: 'json' }
+import about from '../about.json' with { type: 'json' }
 
 /* eslint-disable no-undef */
 
@@ -17,8 +17,7 @@ const delta = (start) => {
 /* eslint-enable no-undef */
 
 export const plugin = {
-  name,
-  version,
+  ...about,
   hooks: {
     preSetDraft: function (pattern) {
       const time = now()

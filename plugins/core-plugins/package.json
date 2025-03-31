@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/core-plugins",
-  "version": "4.0.0-rc.5",
+  "version": "4.0.0-rc.8",
   "description": "An umbrella package of essential plugins that are bundled with FreeSewing's core library",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -38,16 +38,19 @@
     "testci": "NODE_OPTIONS=\"--conditions=internal\" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "4.0.0-rc.5"
+    "@freesewing/core": "4.0.0-rc.8"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@freesewing/plugin-annotations": "4.0.0-rc.8",
+    "@freesewing/plugin-measurements": "4.0.0-rc.8",
+    "@freesewing/plugin-mirror": "4.0.0-rc.8",
+    "@freesewing/plugin-round": "4.0.0-rc.8",
+    "@freesewing/plugin-sprinkle": "4.0.0-rc.8",
+    "@freesewing/plugin-bin-pack": "4.0.0-rc.8"
+  },
   "devDependencies": {
     "mocha": "10.4.0",
-    "chai": "5.1.1",
-    "@freesewing/plugin-annotations": "4.0.0-rc.5",
-    "@freesewing/plugin-mirror": "4.0.0-rc.5",
-    "@freesewing/plugin-round": "4.0.0-rc.5",
-    "@freesewing/plugin-sprinkle": "4.0.0-rc.5"
+    "chai": "5.1.1"
   },
   "files": [
     "src/",

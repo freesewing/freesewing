@@ -1,4 +1,4 @@
-import { name, version } from '../package.json' with { type: 'json' }
+import about from '../about.json' with { type: 'json' }
 
 /*
  * These are the keys for macro IDs
@@ -7,8 +7,7 @@ const pointKeys = ['start', 'cp1', 'cp2', 'end']
 const pathKeys = ['path']
 
 export const plugin = {
-  name,
-  version,
+  ...about,
   macros: {
     round: function (mc, { points, paths, Point, Path, store }) {
       const C = 0.55191502449

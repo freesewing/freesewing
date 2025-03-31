@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/new-design",
-  "version": "4.0.0-rc.5",
+  "version": "4.0.0-rc.8",
   "description": "Initializer package for a new FreeSewing design: npx @freesewing/new-design",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",

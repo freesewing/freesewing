@@ -33,6 +33,12 @@ const config = {
                 test: /\.mjs$/,
                 include: /node_modules/,
                 type: 'javascript/auto',
+                use: {
+                  loader: 'babel-loader',
+                  options: {
+                    presets: ['@babel/preset-env', '@babel/preset-react'],
+                  },
+                },
               },
               {
                 test: /\.mjs$/,

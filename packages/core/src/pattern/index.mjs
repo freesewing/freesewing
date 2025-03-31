@@ -4,7 +4,7 @@ import { Point } from '../point.mjs'
 import { Path } from '../path.mjs'
 import { Snippet } from '../snippet.mjs'
 import { Store } from '../store.mjs'
-import { version } from '../../package.json' with { type: 'json' }
+import { version } from '../index.mjs'
 import { __loadPatternDefaults } from '../config.mjs'
 import { PatternConfig } from './pattern-config.mjs'
 import { PatternDrafter } from './pattern-drafter.mjs'

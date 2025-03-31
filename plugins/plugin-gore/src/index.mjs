@@ -1,8 +1,7 @@
-import { name, version } from '../package.json' with { type: 'json' }
+import about from '../about.json' with { type: 'json' }
 
 export const plugin = {
-  name,
-  version,
+  ...about,
   macros: {
     gore: function (so, { points, paths, Path }) {
       const from = so.from
