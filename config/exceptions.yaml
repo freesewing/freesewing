@@ -130,9 +130,10 @@ packageJson:
       "./lib/RestClient": "./lib/RestClient/index.mjs"
       "./lib/logoPath": "./components/Logo/path.mjs"
     files:
-      - "components/**"
-      - "hooks/**"
-      - "lib/**"
+      - "components/"
+      - "context/"
+      - "hooks/"
+      - "lib/"
       - "README.md"
     scripts:
       lint: "eslint 'components/**/*.mjs' 'hooks/**/*.mjs' 'lib/**/*.mjs' 'context/**/*.mjs' 'config/**/*.mjs'"
