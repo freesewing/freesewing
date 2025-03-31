@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/i18n",
-  "version": "3.3.0-rc.1",
+  "version": "4.0.0-rc.5",
   "description": "Translation for the FreeSewing project",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -36,7 +36,9 @@
   "dependencies": {},
   "devDependencies": {},
   "files": [
-    "src/**",
+    "src/",
+    "i18n/",
+    "about.json",
     "README.md"
   ],
   "publishConfig": {

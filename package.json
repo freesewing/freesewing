@@ -12,6 +12,7 @@
   "license": "MIT",
   "scripts": {
     "new": "node --experimental-json-modules --no-warnings scripts/add-software.mjs",
+    "build": "lerna run build:all",
     "?": "node scripts/help.mjs",
     "tips": "node scripts/help.mjs",
     "org": "cd sites/org && npm run start",
@@ -38,7 +39,8 @@
     "famgen": "all-contributors generate",
     "checkdocs": "remark markdown --quiet --frail",
     "strapi:translate": "node scripts/strapi-en-to-other.mjs",
-    "fixdocs": "remark markdown --quiet --frail --output"
+    "fixdocs": "remark markdown --quiet --frail --output",
+    "reversion": "node --no-warnings scripts/reversion.mjs && npm run reconfigure"
   },
   "repository": {
     "type": "git",

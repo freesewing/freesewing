@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-theme",
-  "version": "3.3.0-rc.1",
+  "version": "4.0.0-rc.5",
   "description": "A FreeSewing plugin that provides a default theme",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -38,7 +38,7 @@
     "testci": "NODE_OPTIONS=\"--conditions=internal\" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.3.0-rc.1"
+    "@freesewing/core": "4.0.0-rc.5"
   },
   "dependencies": {},
   "devDependencies": {
@@ -46,7 +46,9 @@
     "chai": "5.1.1"
   },
   "files": [
-    "src/**",
+    "src/",
+    "i18n/",
+    "about.json",
     "README.md"
   ],
   "publishConfig": {

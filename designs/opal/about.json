@@ -16,6 +16,6 @@
     "button",
     "pocket"
   ],
-  "version": "3.3.0-rc.1",
+  "version": "4.0.0-rc.5",
   "pkg": "@freesewing/opal"
 }
