@@ -1,13 +1,15 @@
 import { config } from './config.mjs'
 import { mkdir, writeFile, copyFile, open, opendir } from 'node:fs/promises'
-import { join, dirname } from 'path'
+import { lstatSync } from 'node:fs'
+import { join, dirname, resolve } from 'path'
+import ora from 'ora'
 import mustache from 'mustache'
 import chalk from 'chalk'
 import prompts from 'prompts'
-import { oraPromise } from 'ora'
 import { execa } from 'execa'
 import axios from 'axios'
 import { fileURLToPath } from 'url'
+import { glob } from 'glob'
 
 // Current working directory
 let filename
@@ -22,7 +24,7 @@ const nl = '\n'
 const tab = '  '
 const nlt = nl + tab
 
-// Checks for node 18 or higher
+// Checks for node 20 or higher
 export const checkNodeVersion = () => {
   const node_version = process.version.slice(1).split('.')[0]
   if (parseInt(node_version) < config.node) {
@@ -35,7 +37,7 @@ export const checkNodeVersion = () => {
         chalk.blue('https://github.com/nvm-sh/nvm') +
         nl +
         nlt +
-        'When in doubt, pick an active LTS version:' +
+        'When in doubt, pick an active LTS version, like lts/iron (node 20):' +
         nlt +
         chalk.blue('https://nodejs.org/en/about/releases/') +
         nl +
@@ -61,6 +63,7 @@ export const getChoices = async () => {
         type: 'text',
         name: 'name',
         message: 'Give a folder name in which we can setup the development environment? 🏷️ ',
+        initial: 'freesewing',
       })
     ).name
 
@@ -87,17 +90,6 @@ export const getChoices = async () => {
           value: 'overwrite',
           description: 'Overwrite the contents in the existing folder',
         },
-        {
-          title: 'Re-initialize',
-          value: 'reinit',
-          description:
-            'Re-install dependencies, and update the development environment in this folder',
-        },
-        {
-          title: 'Re-download',
-          value: 'redownload',
-          description: 'Update the development environment in this folder',
-        },
       ],
     })
     sideStep = nextStep
@@ -110,28 +102,7 @@ export const getChoices = async () => {
     }
   }
 
-  const { manager } = await prompts({
-    type: 'select',
-    name: 'manager',
-    message: 'What package manager should we use? 📦',
-    choices: [
-      { title: 'yarn', value: 'yarn', description: 'Yarn - Nice if you have it' },
-      { title: 'npm', value: 'npm', description: 'NPM - Comes with NodeJS' },
-    ],
-    initial: 0,
-  })
-
-  return { name, manager, overwrite, sideStep }
-}
-
-// Keep track of directories that need to be created
-const dirPromises = {}
-const ensureDir = async (file, suppress = false) => {
-  const dir = suppress ? dirname(file.replace(suppress)) : dirname(file)
-  if (!dirPromises[dir]) {
-    dirPromises[dir] = mkdir(dir, { recursive: true })
-  }
-  await dirPromises[dir]
+  return { name, overwrite }
 }
 
 // Helper method to copy template files
@@ -170,54 +141,10 @@ const copyFileOrTemplate = async (
 
 // Helper method to run [yarn|npm] install
 const installDependencies = async (config, choices) =>
-  await execa(`${choices.manager} install`, {
+  await execa(`npm install`, {
     cwd: config.dest,
     shell: true,
   })
-
-// Helper method to download web environment
-const downloadFiles = async (config) => {
-  const promises = []
-  for (const dir in config.fetch) {
-    promises.push(
-      ...config.fetch[dir].map(async (file) => {
-        const to =
-          typeof file === 'string'
-            ? join(config.dest, file.slice(0, 4) === 'sde/' ? file.slice(4) : file)
-            : join(config.dest, file.to)
-        await ensureDir(to)
-        const url = `${config.fileUri}/${config.repo}/${config.branch}/${dir}/${
-          typeof file === 'string' ? file : file.from
-        }`
-        try {
-          const res = await axios.get(url)
-          await writeFile(
-            to,
-            typeof res.data === 'object' ? JSON.stringify(res.data, null, 2) : res.data
-          )
-        } catch (err) {
-          if (err.response?.status === 404) console.log(`404: ${url}`)
-          else console.log(err)
-        }
-      })
-    )
-  }
-
-  return Promise.all(promises)
-}
-
-// Helper method to initialize a git repository
-const initGitRepo = async (config, choices) => {
-  await copyFileOrTemplate(config.gitignore, config.dest, '.gitignore', {}, choices.overwrite)
-
-  return execa(
-    `git init -b main && git add . && git commit -m ":tada: Initialized FreeSewing stand-alone development environment"`,
-    {
-      cwd: config.dest,
-      shell: true,
-    }
-  )
-}
 
 // Tips
 const showTips = (config, choices) =>
@@ -232,10 +159,8 @@ const showTips = (config, choices) =>
   To start your development environment, follow these three steps:
 
     1) Start by entering the directory: ${chalk.blue.bold('cd ' + config.dest)}
-    2) Then run this command: ${chalk.blue.bold(
-      choices.manager === 'yarn' ? 'yarn dev' : 'npm run dev'
-    )}
-    3) Now open your browser and navigate to ${chalk.green('http://localhost:8000/')}
+    2) Then run this command: ${chalk.blue.bold('npm run start')}
+    3) Now open your browser and navigate to ${chalk.green('http://localhost:3000/')}
 
   Thanks for giving FreeSewing a shot. I hope you'll 💜 it.
 
@@ -246,71 +171,118 @@ const showTips = (config, choices) =>
 
 // Creates the environment based on the user's choices
 export const createEnvironment = async (choices) => {
-  config.dest = join(process.cwd(), choices.name)
-  // Store directories for re-use
-  config.source = {
-    templateData: join(newDesignDir, `templates/from-${choices.template}.mjs`),
-    templates: join(newDesignDir, `templates/shared`),
-    shared: join(newDesignDir, `shared`),
-  }
-
-  // Output a linebreak
   console.log()
+  config.dest = join(process.cwd(), choices.name)
 
-  // Download files from GitHub
+  // Step 1: Copy template files
+  const spinner1 = ora(
+    chalk.white.bold(' 🟧⬜⬜  Setting up development environment') +
+      chalk.white.dim('  |  This should not take long')
+  ).start()
   try {
-    const count = [...config.fetch.config, ...config.fetch.sites].length
-    await oraPromise(downloadFiles(config), {
-      text:
-        chalk.white.bold(`🟧⬜⬜  Downloading ${count} (small) files from GitHub`) +
-        chalk.white.dim('  |  Give it a moment'),
-      successText: chalk.white.bold(`🟩⬜⬜  Downloaded ${count}/${count} files from GitHub`),
-      failText: chalk.white.bold(
-        '🟥⬜⬜  Failed to download components from GitHub  |  The development environment will not function'
-      ),
-    })
+    // Create target directory unless we're overwriting
+    if (choices.overwrite) await mkdir(config.dest, { recursive: true })
+    // Now copy files
+    await copyTemplateFiles(config)
+    spinner1.succeed(chalk.white.bold(' 🟩⬜⬜  Development environment created'))
   } catch (err) {
-    console.log(err)
-    /* no feedback here */
+    console.log({ err })
+    spinner1.fail(
+      ' 🟥⬜⬜   Failed to setup the environment  |  The development environment will not function'
+    )
   }
 
-  if (!choices.sideStep) {
-    // Create target directory
-    await mkdir(config.dest, { recursive: true })
-
-    // Install dependencies
-    try {
-      await oraPromise(installDependencies(config, choices), {
-        text:
-          chalk.white.bold('🟩🟧⬜  Installing dependencies') +
-          chalk.white.dim('  |  Please wait, this will take a while'),
-        successText: chalk.white.bold('🟩🟩⬜  Installed dependencies'),
-        failText: chalk.white.bold(
-          '🟩🟥⬜  Failed to install dependencies  |  The development environment will not function'
-        ),
-      })
-    } catch (err) {
-      /* no feedback here */
-    }
+  // Step 2: Install dependencies
+  const spinner2 = ora(
+    chalk.white.bold(' 🟩🟧⬜  Installing dependencies') +
+      chalk.white.dim('  |  Please wait, this will take a while')
+  ).start()
+  try {
+    await installDependencies(config, choices)
+    spinner2.succeed(chalk.white.bold(' 🟩🟩⬜  Installed dependencies'))
+  } catch (err) {
+    console.log({ err })
+    spinner2.fail(
+      ' 🟩🟥⬜  Failed to install dependencies  |  The development environment will not function'
+    )
   }
 
+  // Step 3: Initialize git repository
   if (!choices.sideStep) {
-    // Initialize git repository
+    const spinner3 = ora(
+      chalk.white.bold(' 🟩🟩🟧  Initializing git repository') +
+        chalk.white.dim('  |  You have git, right?')
+    ).start()
     try {
-      await oraPromise(initGitRepo(config, choices), {
-        text:
-          chalk.white.bold('🟩🟩🟧  Initializing git repository') +
-          chalk.white.dim('  |  You have git, right?'),
-        successText: chalk.white.bold('🟩🟩🟩  Initialized git repository'),
-        failText:
-          chalk.white.bold('🟩🟩🟥  Failed to initialize git repository') +
-          chalk.white.dim('  |  This does not stop the development environment from functioning'),
-      })
+      await initGitRepo(config.dest)
+      spinner3.succeed(chalk.white.bold(' 🟩🟩🟩  Initialized git repository'))
     } catch (err) {
-      console.log(err)
+      spinner3.fail(
+        chalk.white.bold(' 🟩🟩🟥  Failed to initialize git repository') +
+          chalk.white.dim('  |  This does not stop the development environment from functioning')
+      )
+      console.log({ err })
     }
   }
 
   // All done. Show tips
   showTips(config, choices)
+}
+
+/**
+ * Copies the template files from the NPM package contents to the target folder
+ *
+ * @param {object} config - The configuration
+ */
+async function copyTemplateFiles(config) {
+  const dir = join(newDesignDir, `template`)
+  const dirs = {}
+  const toCopy = (await globDir(join(newDesignDir, `template`))).sort()
+  for (const file of toCopy) {
+    const target = resolve(config.dest, file.slice(dir.length + 1))
+    if (isDir(file)) await mkdir(target, { recursive: true })
+    else await copyFile(file, target) // Copy file
+  }
+}
+
+/**
+ * Reads a folder from disk with an optional glob pattern
+ *
+ * @param {string} (relative) path to the file to read
+ * @param {funtion} onError - a method to call on error
+ *
+ * @return {string} File contents, or false in case of trouble
+ */
+async function globDir(
+  folderPath, // The (relative) path to the folder
+  pattern = '**/*' // Glob pattern to match
+) {
+  let list = []
+  try {
+    list = await glob(resolve(folderPath) + '/' + pattern)
+  } catch (err) {
+    if (err) console.log(err)
+    return false
+  }
+
+  return list
+}
+
+/**
+ * Helper method to determine wheter a file is a folder
+ */
+function isDir(path) {
+  return lstatSync(path) ? lstatSync(path).isDirectory() : false
+}
+
+/**
+ * Helper method to initialize a git repository
+ *
+ * @param {string} target - The target folder to use
+ */
+function initGitRepo(target) {
+  return execa(
+    `git init -b main && git add . && git commit -m ":tada: Initialized FreeSewing development environment"`,
+    { cwd: target, shell: true }
+  )
 }

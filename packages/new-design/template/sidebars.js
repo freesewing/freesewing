@@ -1,5 +1,5 @@
 /*
- * FreeSewing uses Docusaurus for its entire website.
+ * FreeSewing uses Docusaurus for its development environment.
  * We also re-use the sidebar navigation for things like the account pages.
  * However, the sidebar navigation is tigtly coupled with the docs plugin in Docusaurus.
  * So we treat all of the account apges like docs pages. We just happen to load React components in them.
