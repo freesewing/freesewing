@@ -62,7 +62,6 @@ import { ZoomablePattern } from '../Editor/components/ZoomablePattern.mjs'
 import { HeaderMenuDraftViewFlags } from '../Editor/components/HeaderMenu.mjs'
 import { Flag, FlagsAccordionEntries } from '../Editor/components/Flag.mjs'
 import { i18n as pluginI18n } from '@freesewing/core-plugins'
-import mustache from 'mustache'
 import { MiniNote, MiniTip } from '../Mini/index.mjs'
 
 const t = (input) => {
