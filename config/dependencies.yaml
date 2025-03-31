@@ -239,7 +239,7 @@ collection:
     # Other
     '@freesewing/core': *freesewing
     '@freesewing/snapseries': *freesewing
-new-design:
+studio:
   _:
     chalk: "^5.2.0"
     commander: "^10.0.0"

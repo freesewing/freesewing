@@ -1,7 +1,7 @@
 {
-  "name": "@freesewing/new-design",
-  "version": "4.0.0-rc.8",
-  "description": "Initializer package for a new FreeSewing design: npx @freesewing/new-design",
+  "name": "@freesewing/studio",
+  "version": "4.0.0-rc.9",
+  "description": "Initializer package for a the FreeSewing design studio: npx @freesewing/studio",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
@@ -45,6 +45,6 @@
     "node": ">= 20"
   },
   "bin": {
-    "new-design": "./index.mjs"
+    "studio": "./index.mjs"
   }
 }

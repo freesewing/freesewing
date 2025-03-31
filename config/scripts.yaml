@@ -21,7 +21,7 @@ core:
   jsdoc: 'jsdoc -c jsdoc.json -r src'
 models:
   test: 'npx mocha tests/*.test.mjs'
-new-design:
+studio:
   lint: "npx eslint 'lib/*.mjs'"
   test: '!'
   testci: '!'

@@ -53,7 +53,7 @@ functionality of the platform.
 If you have NodeJS installed, you can try it right now by running:
 
 ```bash
-npx @freesewing/new-design
+npx @freesewing/studio
 ```
 
 Getting started guides are available for:
@@ -69,7 +69,7 @@ show you how to create your first parametric design.
 To get started with FreeSewing, you can spin up our development environment with:
 
 ```bash
-npx @freesewing/new-design
+npx @freesewing/studio
 ```
 
 To work with FreeSewing's monorepo, you'll need [NodeJS v20](https://nodejs.org) on your system.  
