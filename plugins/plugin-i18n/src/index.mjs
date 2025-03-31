@@ -1,4 +1,4 @@
-import { name, version } from '../package.json' with { type: 'json' }
+import about from '../about.json' with { type: 'json' }
 
 const translate = (locale, text, t, pattern) => {
   /*
@@ -24,8 +24,7 @@ const translate = (locale, text, t, pattern) => {
 }
 
 export const plugin = {
-  name,
-  version,
+  ...about,
   hooks: { insertText: translate },
 }
 

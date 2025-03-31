@@ -1,4 +1,4 @@
-import { name, version } from '../package.json' with { type: 'json' }
+import about from '../about.json' with { type: 'json' }
 
 const lineValues = (start, end) => {
   const { x: x1, y: y1 } = start
@@ -36,8 +36,7 @@ const mirrorGen = (start, end) => {
 const capFirst = (string) => string.charAt(0).toUpperCase() + string.slice(1)
 
 export const plugin = {
-  name,
-  version,
+  ...about,
   macros: {
     mirror: function ({
       mirror,

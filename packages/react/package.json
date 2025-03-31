@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/react",
-  "version": "4.0.0-rc.5",
+  "version": "4.0.0-rc.8",
   "description": "React components, hooks and context  by/for FreeSewing",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -21,8 +21,7 @@
   "module": "src/index.mjs",
   "exports": {
     ".": {
-      "internal": "./src/index.mjs",
-      "default": "./dist/index.mjs"
+      "internal": "./src/index.mjs"
     },
     "./linedrawings": "./src/linedrawings/index.mjs",
     "./pattern": "./src/pattern/index.mjs",
@@ -117,6 +116,7 @@
   "devDependencies": {},
   "files": [
     "components/**",
+    "context/**",
     "hooks/**",
     "lib/**",
     "README.md"

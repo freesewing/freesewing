@@ -1,8 +1,7 @@
-import { name, version } from '../package.json' with { type: 'json' }
+import about from '../about.json' with { type: 'json' }
 
 export const plugin = {
-  name,
-  version,
+  ...about,
   hooks: {
     preSetDraft: function ({ settings, activeSet }) {
       const set = settings[Number(activeSet)]

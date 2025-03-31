@@ -105,40 +105,6 @@ export const getChoices = async () => {
   return { name, overwrite }
 }
 
-// Helper method to copy template files
-const copyFileOrTemplate = async (
-  fromRootOrTemplate,
-  toRoot,
-  relativeDest,
-  templateVars,
-  overwrite = true
-) => {
-  const to = join(toRoot, relativeDest)
-
-  // if the file shouldn't be overwritten, open it to see if it exists
-  if (!overwrite) {
-    try {
-      // if the file doesn't exist, this will throw an error
-      const fd = await open(to)
-      fd.close()
-      // we only reach this return if the file exists, which means we're safe to leave
-      return
-    } catch {
-      // don't do anything with the error because it just means the file wasn't there and we can continue
-    }
-  }
-
-  await ensureDir(to)
-
-  if (templateVars) {
-    const rendered = mustache.render(fromRootOrTemplate, templateVars)
-    await writeFile(to, rendered)
-  } else {
-    const from = join(fromRootOrTemplate, relativeDest)
-    await copyFile(from, to)
-  }
-}
-
 // Helper method to run [yarn|npm] install
 const installDependencies = async (config, choices) =>
   await execa(`npm install`, {

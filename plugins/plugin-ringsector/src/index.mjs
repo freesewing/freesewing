@@ -1,4 +1,4 @@
-import { name, version } from '../package.json' with { type: 'json' }
+import about from '../about.json' with { type: 'json' }
 
 /*
  * Helper method to get the various IDs for a macro
@@ -44,8 +44,7 @@ const keys = [
  * The plugin object itself
  */
 export const plugin = {
-  name,
-  version,
+  ...about,
   macros: {
     rmringsector: function (id = 'ringsector', { points, paths, store, part }) {
       const storeRoot = ['parts', part.name, 'macros', '@freesewing/plugin-ringsector', 'ids', id]

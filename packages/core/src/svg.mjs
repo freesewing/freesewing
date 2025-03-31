@@ -1,7 +1,7 @@
 import { Attributes } from './attributes.mjs'
 import { Defs } from './defs.mjs'
 import { __addNonEnumProp, round } from './utils.mjs'
-import { version } from '../package.json' with { type: 'json' }
+import { version } from './index.mjs'
 
 //////////////////////////////////////////////
 //               CONSTRUCTOR                //

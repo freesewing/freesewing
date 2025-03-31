@@ -4,7 +4,7 @@ import { mirrorPlugin } from '@freesewing/plugin-mirror'
 import { roundPlugin } from '@freesewing/plugin-round'
 import { sprinklePlugin } from '@freesewing/plugin-sprinkle'
 import { binpackPlugin } from '@freesewing/plugin-bin-pack'
-import { name, version } from '../package.json' with { type: 'json' }
+import about from '../about.json' with { type: 'json' }
 
 const bundledPlugins = [
   annotationsPlugin,
@@ -45,8 +45,7 @@ for (const plugin of bundledPlugins) {
 }
 
 export const plugin = {
-  name,
-  version,
+  ...about,
   store,
   hooks,
   macros,
