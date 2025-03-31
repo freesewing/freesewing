@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-bin-pack",
-  "version": "4.0.0-rc.8",
+  "version": "4.0.0-rc.9",
   "description": "A FreeSewing plugin that adds a bin-pack algorithm to the core library",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -38,7 +38,7 @@
     "testci": "NODE_OPTIONS=\"--conditions=internal\" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "4.0.0-rc.8"
+    "@freesewing/core": "4.0.0-rc.9"
   },
   "dependencies": {},
   "devDependencies": {

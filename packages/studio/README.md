@@ -1,12 +1,12 @@
 <p align='center'><a
-  href="https://www.npmjs.com/package/@freesewing/new-design"
-  title="@freesewing/new-design on NPM"
-  ><img src="https://img.shields.io/npm/v/@freesewing/new-design.svg"
-  alt="@freesewing/new-design on NPM"/>
+  href="https://www.npmjs.com/package/@freesewing/studio"
+  title="@freesewing/studio on NPM"
+  ><img src="https://img.shields.io/npm/v/@freesewing/studio.svg"
+  alt="@freesewing/studio on NPM"/>
   </a><a
   href="https://opensource.org/licenses/MIT"
   title="License: MIT"
-  ><img src="https://img.shields.io/npm/l/@freesewing/new-design.svg?label=License"
+  ><img src="https://img.shields.io/npm/l/@freesewing/studio.svg?label=License"
   alt="License: MIT"/>
   </a><a
   href="https://deepscan.io/dashboard#view=project&tid=2114&pid=2993&bid=23256"
@@ -14,10 +14,10 @@
   ><img src="https://deepscan.io/api/teams/2114/projects/2993/branches/23256/badge/grade.svg"
   alt="Code quality on DeepScan"/>
   </a><a
-  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Anew-design"
-  title="Open issues tagged pkg:new-design"
-  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:new-design.svg?label=Issues"
-  alt="Open issues tagged pkg:new-design"/>
+  href="https://github.com/freesewing/freesewing/issues?q=is%3Aissue+is%3Aopen+label%3Apkg%3Astudio"
+  title="Open issues tagged pkg:studio"
+  ><img src="https://img.shields.io/github/issues/freesewing/freesewing/pkg:studio.svg?label=Issues"
+  alt="Open issues tagged pkg:studio"/>
   </a><a
   href="#contributors-"
   title="All Contributors"
@@ -45,9 +45,9 @@
   alt="Follow @freesewing_org on Twitter"/>
   </a></p>
 
-# @freesewing/new-design
+# @freesewing/studio
 
-Initializer package for a new FreeSewing design: npx @freesewing&#x2F;new-design
+Initializer package for a the FreeSewing design studio: npx @freesewing&#x2F;studio
 
 
 
@@ -65,7 +65,7 @@ hardship, then you should [join us and become a patron](https://freesewing.org/c
 
 This repository is the FreeSewing *monorepo* holding all FreeSewing's websites, documentation, designs, plugins, and other NPM packages.
 
-This folder holds: @freesewing/new-design
+This folder holds: @freesewing/studio
 
 If you're not entirely sure what to do or how to start, type this command:
 
@@ -98,7 +98,7 @@ functionality of the platform.
 If you have NodeJS installed, you can try it right now by running:
 
 ```bash
-npx @freesewing/new-design
+npx @freesewing/studio
 ```
 
 Getting started guides are available for:
@@ -114,7 +114,7 @@ show you how to create your first parametric design.
 To get started with FreeSewing, you can spin up our development environment with:
 
 ```bash
-npx @freesewing/new-design
+npx @freesewing/studio
 ```
 
 To work with FreeSewing's monorepo, you'll need [NodeJS v20](https://nodejs.org) on your system.  

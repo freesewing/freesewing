@@ -36,10 +36,10 @@ packageJson:
     author: Starfetch (https://github.com/starfetch)
   magde:
     author: clegganator259 (https://github.com/clegganator259)
-  new-design:
+  studio:
     exports: '!'
     bin:
-      new-design: './index.mjs'
+      studio: './index.mjs'
     files:
       - "lib/"
       - "utils/"

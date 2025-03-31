@@ -4,7 +4,7 @@
   "core": "A library for creating made-to-measure sewing patterns",
   "i18n": "Translation for the FreeSewing project",
   "models": "Body measurements data for a range of default sizes",
-  "new-design": "Initializer package for a new FreeSewing design: npx @freesewing/new-design",
+  "studio": "Initializer package for a the FreeSewing design studio: npx @freesewing/studio",
   "prettier-config": "FreeSewing's shared configuration for prettier",
   "react": "React components, hooks and context  by/for FreeSewing",
   "snapseries": "A series of common sizes for elastics and other series to be used with snapped percentage options",

@@ -1,11 +1,5 @@
-# Change log for: @freesewing/new-design
+# Change log for: @freesewing/studio
 
-
-## 3.1.0 (2023-12-26)
-
-### Fixed
-
- - Removed unwanted debug output
 
 ## 3.0.0 (2023-09-30)
 
@@ -14,16 +8,6 @@
  - All FreeSewing packages are now ESM only.
  - All FreeSewing packages now use named exports.
  - Dropped support for NodeJS 14. NodeJS 18 (LTS/hydrogen) or more recent is now required.
-
-## 2.21.3 (2022-07-02)
-
-### Changed
-
- - We're now loading content from the main branch by default
-
-### Fixed
-
- - Add bin entry to package.json
 
 
 This is the **initial release**, and the start of this change log.

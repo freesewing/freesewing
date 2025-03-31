@@ -418,12 +418,6 @@
  - Make Path.split() more robust when handling edge-case. Fixes
  - Prevent utils.circlesIntersect() from running sqrt on a negative number. Fixes
 
-### new-design
-
-#### Fixed
-
- - Removed unwanted debug output
-
 
 ## 3.0.0 (2023-09-30)
 
@@ -668,16 +662,6 @@
 #### Changed
 
  - Make generatePartTransform a named export
-
-### new-design
-
-#### Changed
-
- - We're now loading content from the main branch by default
-
-#### Fixed
-
- - Add bin entry to package.json
 
 
 ## 2.21.2 (2022-06-30)
