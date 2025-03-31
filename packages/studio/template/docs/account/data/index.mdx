@@ -1,0 +1,28 @@
+---
+title: Your Data
+sidebar_position: 1
+---
+
+import { DocusaurusDoc } from '@freesewing/react/components/Docusaurus'
+import { RoleBlock } from '@freesewing/react/components/Role'
+import { Bookmarks, Patterns, Sets } from '@freesewing/react/components/Account'
+import Link from '@docusaurus/Link'
+
+<DocusaurusDoc>
+  <RoleBlock user>
+    This is the main data stored in your FreeSewing account:
+
+## Your Bookmarks
+
+<Bookmarks Link={Link} />
+
+## Your Measurements Sets
+
+<Sets Link={Link} />
+
+## Your Patterns
+
+<Patterns Link={Link} />
+
+  </RoleBlock>
+</DocusaurusDoc>

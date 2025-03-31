@@ -21,7 +21,7 @@ import { HtmlSpan } from '../components/HtmlSpan.mjs'
  * i18n makes everything complicated
  */
 const flagTranslationsWithNamespace = {}
-for (const [key, val] of Object.entries(flagTranslations))
+for (const [key, val] of Object.entries(flagTranslations || {}))
   flagTranslationsWithNamespace[`flag:${key}`] = val
 
 /*
