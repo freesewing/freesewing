@@ -41,7 +41,9 @@ packageJson:
     bin:
       new-design: './bin/index.mjs'
     files:
-      - "bin/"
+      - "lib/"
+      - "utils/"
+      - "index.mjs"
       - "template/"
     module: '!'
   noble:
