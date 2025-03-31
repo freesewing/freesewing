@@ -6,8 +6,8 @@ import autoprefixer from 'autoprefixer'
 import smartypants from 'remark-smartypants'
 
 const config = {
-  title: 'FreeSewing Development Environment',
-  tagline: 'FreeSewing for designers',
+  title: 'FreeSewing Studio',
+  tagline: 'FreeSewing for Designers',
   favicon: 'img/favicon.ico',
 
   url: 'https://freesewing.eu',
@@ -92,7 +92,6 @@ const config = {
         src: 'img/logo.svg',
       },
       items: [
-        { type: 'custom-FreeSewingNavbarItem', position: 'left', id: 'designs' },
         { type: 'custom-FreeSewingNavbarItem', position: 'left', id: 'editor' },
         { type: 'custom-FreeSewingNavbarItem', position: 'left', id: 'addDesign' },
         { type: 'custom-FreeSewingNavbarItem', position: 'right', id: 'account' },
@@ -103,10 +102,7 @@ const config = {
       links: [
         {
           title: 'Sections',
-          items: [
-            { label: 'FreeSewing Designs', to: '/designs/' },
-            { label: 'FreeSewing Editor', to: '/editor/' },
-          ],
+          items: [{ label: 'FreeSewing Editor', to: '/editor/' }],
         },
         {
           title: 'Help & Support',
@@ -117,7 +113,7 @@ const config = {
           items: [
             { label: 'FreeSewing.dev', to: 'https://freesewing.dev/' },
             { label: 'FreeSewing.social', to: 'https://freesewing.social/' },
-            { label: 'Code on GitHub', to: 'https://github.com/freesewing/freesewing' },
+            { label: 'Code on Codeberg', to: 'https://codeberg.org/freesewing/freesewing' },
             { label: 'FreeSewing Revenue Pledge 💜', href: '/docs/about/pledge/' },
           ],
         },
