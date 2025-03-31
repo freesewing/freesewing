@@ -1,27 +1,29 @@
 import colors from 'tailwindcss/colors'
-
+import { theme as light } from './light.mjs'
 export const theme = {
-  fontFamily: 'system-ui, sans-serif',
+  // Start from the light theme
+  ...light,
 
-  'base-100': colors.neutral['800'],
+  // Then override what is needed for dark more
+  'base-100': colors.neutral['900'],
   'base-200': colors.neutral['700'],
   'base-300': colors.neutral['600'],
-  'base-content': colors.neutral['200'],
+  'base-content': colors.neutral['100'],
 
   primary: colors.violet['400'],
-  'primary-focus': colors.violet['300'],
+  'primary-focus': colors.violet['500'],
   'primary-content': colors.neutral['900'],
 
   secondary: colors.sky['400'],
-  'secondary-focus': colors.sky['300'],
+  'secondary-focus': colors.sky['500'],
   'secondary-content': colors.neutral['900'],
 
   accent: colors.fuchsia['400'],
-  'accent-focus': colors.fuchsia['300'],
+  'accent-focus': colors.fuchsia['500'],
   'accent-content': colors.neutral['900'],
 
-  neutral: colors.neutral['900'],
-  'neutral-focus': colors.neutral['700'],
+  neutral: '#000',
+  'neutral-focus': colors.neutral['800'],
   'neutral-content': colors.neutral['50'],
 
   info: colors.yellow['400'],
@@ -38,36 +40,14 @@ export const theme = {
   '--code-background-highlight-color': '#191919',
   '--code-border-color': colors.neutral['800'],
   '--code-color': colors.neutral['300'],
-  '--code-font-family': `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace`,
-  '--code-border-radius': '0.5rem',
-  '--code-border-style': 'solid',
-  '--code-border-width': 2,
-  '--code-outer-padding': '0 0.5rem',
-  '--code-inner-padding': '1rem',
   '--code-color-keyword': colors.yellow['500'],
-  '--code-font-weight-keyword': 'bold',
   '--code-color-entity': colors.violet['400'],
-  '--code-font-weight-entity': 'bold',
   '--code-color-constant': colors.lime['300'],
   '--code-color-string': colors.sky['300'],
-  '--code-font-style-string': 'italic',
   '--code-color-variable': colors.indigo['300'],
   '--code-color-comment': colors.neutral['400'],
   '--code-color-tag': colors.green['600'],
   '--code-color-property': colors.yellow['200'],
-  '--code-font-weight-property': 'bold',
-
-  '--rounded-box': '0.5rem',
-  '--rounded-btn': '0.5rem',
-  '--rounded-badge': '1.9rem',
-  '--animation-btn': '0.25s',
-  '--animation-input': '.4s',
-  '--padding-card': '2rem',
-  '--btn-text-case': 'uppercase',
-  '--navbar-padding': '.5rem',
-  '--border-btn': '1px',
-  '--focus-ring': '2px',
-  '--focus-ring-offset': '2px',
 
   '--pattern-bg': colors.neutral['900'],
   '--pattern-fabric': colors.neutral['50'],

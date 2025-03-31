@@ -1,15 +1,16 @@
 import path from 'node:path'
 import { themes as prismThemes } from 'prism-react-renderer'
+//import designs from '../../config/software/designs.json'
 import tailwindcss from 'tailwindcss'
 import autoprefixer from 'autoprefixer'
-
+import smartypants from 'remark-smartypants'
 
 const config = {
-  title: 'FreeSewing',
-  tagline: 'FreeSewing Stand-Alone Development Environment',
+  title: 'FreeSewing Development Environment',
+  tagline: 'FreeSewing for designers',
   favicon: 'img/favicon.ico',
 
-  url: 'https://freesewing.org',
+  url: 'https://freesewing.eu',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -48,25 +49,6 @@ const config = {
         }
       },
     }),
-    () => ({
-      name: 'fs-loader',
-      configureWebpack() {
-        const fsConfig = {
-          resolve: { alias: {} },
-        }
-        // Yaml loader
-        fsConfig.module = {
-          rules: [
-            {
-              test: /\.ya?ml$/,
-              use: 'yaml-loader',
-            },
-          ],
-        }
-
-        return fsConfig
-      },
-    }),
     async function myPlugin() {
       return {
         name: 'docusaurus-tailwindcss',
@@ -79,17 +61,15 @@ const config = {
       }
     },
   ],
-
   i18n: { defaultLocale: 'en', locales: ['en'] },
-
   presets: [
     [
       'classic',
       {
         docs: {
-          routeBasePath: '/docs',
+          routeBasePath: '/',
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/freesewing/freesewing/tree/v4/sites/org/',
+          remarkPlugins: [[smartypants, { dashes: 'oldschool' }]],
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -106,11 +86,10 @@ const config = {
         src: 'img/logo.svg',
       },
       items: [
-        { to: '/editor/', label: '🪄 Editor', position: 'left' },
-        { to: '/designs/', label: '👕 Designs', position: 'left' },
-        { to: '/docs/', label: '📖 Docs', position: 'left' },
-        { to: '/new/', label: '➕ New...', position: 'right' },
-        { to: '/account/', label: '🔒 Account', position: 'right' },
+        { type: 'custom-FreeSewingNavbarItem', position: 'left', id: 'designs' },
+        { type: 'custom-FreeSewingNavbarItem', position: 'left', id: 'editor' },
+        { type: 'custom-FreeSewingNavbarItem', position: 'left', id: 'addDesign' },
+        { type: 'custom-FreeSewingNavbarItem', position: 'right', id: 'account' },
       ],
     },
     footer: {
@@ -125,9 +104,7 @@ const config = {
         },
         {
           title: 'Help & Support',
-          items: [
-            { label: 'Need Help?', href: '/support' },
-          ],
+          items: [{ label: 'Need Help?', href: '/support' }],
         },
         {
           title: 'More',
