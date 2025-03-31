@@ -9,7 +9,7 @@ const nodeFiles = [
   `**/prebuild.${jsSuffixes}`,
   `**/prebuild/**/*.${jsSuffixes}`,
   `**/scripts/**/*.${jsSuffixes}`,
-  `packages/new-design/lib/**/*.${jsSuffixes}`,
+  `packages/studio/lib/*.${jsSuffixes}`,
   `sites/backend/**/*.${jsSuffixes}`,
   `sites/*/mdx/**/*.${jsSuffixes}`,
   `sites/*/themes/**/*.${jsSuffixes}`,
