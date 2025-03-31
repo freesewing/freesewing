@@ -40,7 +40,7 @@ import {
   units,
   goldenRatio,
 } from './utils.mjs'
-import { version } from '../data.mjs'
+import { version } from '../package.json' with { type: 'json' }
 
 // Named exports
 export {

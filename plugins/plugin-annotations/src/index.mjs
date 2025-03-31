@@ -1,4 +1,4 @@
-import { name, version } from '../data.mjs'
+import { name, version } from '../package.json' with { type: 'json' }
 // i18n
 import { i18n as i18nAnnotations } from '../i18n/index.mjs'
 // Defs only

@@ -98,6 +98,8 @@ plugintest:
     '@freesewing/plugin-svgattr': *freesewing
     '@freesewing/plugin-theme': *freesewing
 sandy:
+  _:
+    '@freesewing/plugin-ringsector': *freesewing
   peer:
     '@freesewing/snapseries': *freesewing
 shin:
@@ -179,6 +181,7 @@ collection:
     '@freesewing/bent': *freesewing
     '@freesewing/bibi': *freesewing
     '@freesewing/bob': *freesewing
+    '@freesewing/bonny': *freesewing
     '@freesewing/breanna': *freesewing
     '@freesewing/brian': *freesewing
     '@freesewing/bruce': *freesewing

@@ -45,6 +45,6 @@
     "node": ">= 20"
   },
   "bin": {
-    "new-design": "./bin/index.mjs"
+    "new-design": "./index.mjs"
   }
 }
