@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/react",
-  "version": "4.0.0-rc.9",
+  "version": "4.0.0-rc.10",
   "description": "React components, hooks and context  by/for FreeSewing",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -105,6 +105,7 @@
     "jotai": "^2.12.1",
     "jotai-location": "^0.5.5",
     "luxon": "^3.5.0",
+    "mustache": "^4.2.0",
     "pdfkit": "^0.16.0",
     "react-diff-viewer-continued": "^4.0.5",
     "react-dropzone": "^14.3.5",
@@ -116,9 +117,10 @@
   },
   "devDependencies": {},
   "files": [
-    "components/**",
-    "hooks/**",
-    "lib/**",
+    "components/",
+    "context/",
+    "hooks/",
+    "lib/",
     "README.md"
   ],
   "publishConfig": {

@@ -2,7 +2,6 @@
  * A web worker to handle the business of exporting pattern files
  * */
 import yaml from 'js-yaml'
-import axios from 'axios'
 import { PdfMaker } from './pdf-maker.mjs'
 import { SinglePdfMaker } from './single-pdf-maker.mjs'
 
@@ -53,18 +52,4 @@ const exportPdf = async (data) => {
   const maker = data.format === 'pdf' ? new SinglePdfMaker(data) : new PdfMaker(data)
   await maker.makePdf()
   postSuccess(await maker.toBlob())
-}
-
-const exportGithubGist = (data) => {
-  axios
-    .post('https://backend.freesewing.org/github/gist', {
-      design: data.design,
-      data: yaml.dump(data),
-    })
-    .then((res) => {
-      postMessage({
-        success: true,
-        link: 'https://gist.github.com/' + res.data.id,
-      })
-    })
 }

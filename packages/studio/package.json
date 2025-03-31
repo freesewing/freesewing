@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/studio",
-  "version": "4.0.0-rc.9",
+  "version": "4.0.0-rc.10",
   "description": "Initializer package for a the FreeSewing design studio: npx @freesewing/studio",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -26,8 +26,7 @@
   "peerDependencies": {},
   "dependencies": {
     "chalk": "^5.2.0",
-    "commander": "^10.0.0",
-    "fs-extra": "^11.1.1",
+    "ora": "^8.2.0",
     "prompts": "^2.4.2"
   },
   "devDependencies": {},
