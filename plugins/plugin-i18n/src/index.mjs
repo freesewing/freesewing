@@ -1,4 +1,4 @@
-import { name, version } from '../data.mjs'
+import { name, version } from '../package.json' with { type: 'json' }
 
 const translate = (locale, text, t, pattern) => {
   /*

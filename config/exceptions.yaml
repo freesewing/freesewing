@@ -39,7 +39,7 @@ packageJson:
   new-design:
     exports: '!'
     bin:
-      new-design: './bin/index.mjs'
+      new-design: './index.mjs'
     files:
       - "lib/"
       - "utils/"
