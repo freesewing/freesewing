@@ -78,29 +78,53 @@
       "t": "Band (chest) tie length",
       "d": "Controls the length of the ties around your chest"
     },
-    "pointedTieEnds": {
-      "t": "Pointed tie ends",
-      "d": "Enable this options if you prefer tie ends to be pointy, rather than straight"
+    "pointedBandTieEnds": {
+      "t": "Pointed band tie ends",
+      "d": "Enable this options if you prefer band tie ends to be pointy, rather than straight"
     },
-    "pointedTieEndsYes": {
-      "t": "Pointy ends",
-      "d": "Make the tie ends pointy"
+    "pointedBandTieEndsYes": {
+      "t": "Pointy band tie ends",
+      "d": "Make the band tie ends pointy"
     },
-    "pointedTieEndsNo": {
-      "t": "Straight ends",
-      "d": "Make the tie ends straight"
+    "pointedBandTieEndsNo": {
+      "t": "Straight band tie ends",
+      "d": "Make the band tie ends straight"
     },
-    "duoColorTies": {
-      "t": "Duo-colored ties",
-      "d": "Enable this option to generate a pattern for bands using two colors instead of one"
+    "pointedNeckTieEnds": {
+      "t": "Pointed neck tie ends",
+      "d": "Enable this options if you prefer neck tie ends to be pointy, rather than straight"
     },
-    "duoColorTiesYes": {
-      "t": "Two colors",
-      "d": "Use two colors for the ties"
+    "pointedNeckTieEndsYes": {
+      "t": "Pointy neck tie ends",
+      "d": "Make the neck tie ends pointy"
     },
-    "duoColorTiesNo": {
-      "t": "Single color",
-      "d": "Use a single color for the ties"
+    "pointedNeckTieEndsNo": {
+      "t": "Straight neck tie ends",
+      "d": "Make the neck tie ends straight"
+    },
+    "duoBandTieColours": {
+      "t": "Duo-coloured band ties",
+      "d": "Enable this option to generate a pattern for bands using two band tie colours instead of one"
+    },
+    "duoBandTieColoursYes": {
+      "t": "Two band tie colours",
+      "d": "Use two band tie colours for the ties"
+    },
+    "duoBandTieColoursNo": {
+      "t": "Single band tie colour",
+      "d": "Use a single band tie colour for the ties"
+    },
+    "duoNeckTieColours": {
+      "t": "Duo-coloured neck ties",
+      "d": "Enable this option to generate a pattern for bands using two neck tie colours instead of one"
+    },
+    "duoNeckTieColoursYes": {
+      "t": "Two neck tie colours",
+      "d": "Use two neck tie colours for the ties"
+    },
+    "duoNeckTieColoursNo": {
+      "t": "Single neck tie colour",
+      "d": "Use a single neck tie colour for the ties"
     },
     "neckTieWidth": {
       "t": "Neck tie width",
