@@ -5,7 +5,7 @@ skipTests:
   - theo
 packageJson:
   backend:
-    name: backend.freesewing.org
+    name: backend.freesewing.eu
   bee:
     author: bobgeorgethe3rd (https://github.com/bobgeorgethe3rd)
   benjamin:
