@@ -2,14 +2,7 @@
 title: FreeSewing Collection
 ---
 
-import { collection } from '@freesewing/collection'
-import { capitalize } from '@freesewing/utils'
+import { Collection } from '@freesewing/react/components/Collection'
 import Link from '@docusaurus/Link'
 
-<ul>
-  {collection.map((name) => (
-    <li key={name}>
-      <Link href={`/editor/#s={"design"%3A"${name}"%2C"view"%3A"draft"}`}>{capitalize(name)}</Link>
-    </li>
-  ))}
-</ul>
+<Collection Link={Link} linkTo="new" />

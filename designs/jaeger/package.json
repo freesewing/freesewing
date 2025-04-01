@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/jaeger",
-  "version": "4.0.0-rc.11",
+  "version": "4.0.0-rc.12",
   "description": "A FreeSewing pattern for a sport coat style jacket",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -38,17 +38,17 @@
     "testci": "NODE_OPTIONS=\"--conditions=internal\" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "4.0.0-rc.11",
-    "@freesewing/brian": "4.0.0-rc.11",
-    "@freesewing/bent": "4.0.0-rc.11",
-    "@freesewing/plugin-bust": "4.0.0-rc.11"
+    "@freesewing/core": "4.0.0-rc.12",
+    "@freesewing/brian": "4.0.0-rc.12",
+    "@freesewing/bent": "4.0.0-rc.12",
+    "@freesewing/plugin-bust": "4.0.0-rc.12"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.4.0",
     "chai": "5.1.1",
-    "@freesewing/models": "4.0.0-rc.11",
-    "@freesewing/plugin-timing": "4.0.0-rc.11"
+    "@freesewing/models": "4.0.0-rc.12",
+    "@freesewing/plugin-timing": "4.0.0-rc.12"
   },
   "files": [
     "src/",
