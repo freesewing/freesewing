@@ -1,0 +1,64 @@
+---
+title: 'Announcing FreeSewing v4'
+caption: 'An image from Pixabay'
+date: '2025-04-01'
+intro: 'FreeSewing version 4 was released today, and we have migrated to our new website too.'
+authors: 1
+---
+
+FreeSewing version 4 was released today, and we have migrated to our new
+website too.
+
+<!-- truncate -->
+
+This new major version of FreeSewing, version 4, has been in the works for a
+while, and I _really_ wanted to get it out the door before sending out our
+Spring edition newsletter, so that's exactly what I did.
+
+As this is a major version, there are breaking changes, but we've really kept
+it to a minimum. There's only one real breaking change:
+
+- FreeSewing now requires NodeJS 20 or newer
+
+In other words, we've dropped support for NodeJS 18, which will reach
+end of life at the end of next month.
+
+A lot of work went into this new major release, especially in the realm of our
+frontend code, where we made a huge effort to make it more maintainable.
+This is the kind of thing that mostly happens under the hood, but will allow
+us to increase the project's volatility and shorten our (non-major) release
+cycle.
+
+What this means is that everything's changed, and nothing has changed.
+I've compared it to your favorite restaurant moving across the street. It's a
+different building, different kitchen, different everything. But your favorite
+waitress is still there serving that same food you've know and love.
+
+That, in a nutshell, is FreeSewing v4.
+
+## 👋 Bye bye Vercel/NextJS
+
+We have been using NextJS for several years now for the FreeSewing frontends.
+However, as I mentioned in an earlier edition of this newsletter, Vercel (the
+company behind NextJS) has revoked their sponsorship. This was nothing against
+FreeSewing, they've revoked all open source plans, but without their
+sponsorships, the cost of hosting our websites on Vercel is rather steep, and
+it was not sustainable for us to stay with them.
+
+Furthermore, Vercel is also increasingly tying NextJS to their hosted offering,
+making it harder to _just go elsewhere_.
+
+Since documentation is a critical (and large) part of both our website for
+makers and developers, we've decided to migrate to Docusaurus, which is highly
+optimized for documentation, but flexible enough that we can still do all the
+more advanced stuff that we need.
+
+To improve maintainability and facilitate code reuse between our websites and
+new studio, we've abstracted all of our frontend logic into various components
+in our new `@freesewing/react` package which now underpins all our frontends.
+
+This was a huge effort, and we are lagging behind with developer documentation,
+which is something which we'll work on going forward.
+
+Apart from that, I'm certain there will be some rough edges, but things
+_should just work_ and if not, make sure to let us know.

@@ -193,6 +193,9 @@ figcaption.mdx {
   padding: 0 0.5rem;
   font-size: 90%;
 }
+.mdx p {
+  margin: 0.75rem 0;
+}
 
 /*
  * fixes
