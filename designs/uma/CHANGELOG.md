@@ -1,6 +1,16 @@
 # Change log for: @freesewing/uma
 
 
+## 4.0.0 (2024-04-01)
+
+### Changed
+
+ - Fix absolute gusset width displayed below slider.
+
+### Fixed
+
+ - Fix back exposure when expand is off. Fixes
+
 ## 3.1.0 (2023-12-26)
 
 ### Fixed

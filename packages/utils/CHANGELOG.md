@@ -1,6 +1,12 @@
 # Change log for: @freesewing/utils
 
 
+## 4.0.0 (2024-04-01)
+
+### Added
+
+ - Added a new `@freesewing/utils` package for shared utils
+
 ## 3.0.0 (2023-09-30)
 
 ### Changed

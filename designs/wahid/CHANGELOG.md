@@ -1,6 +1,12 @@
 # Change log for: @freesewing/wahid
 
 
+## 4.0.0 (2024-04-01)
+
+### Changed
+
+ - Add a warning when waist and hip reduction are both zero, so no back dart is required.
+
 ## 3.0.0 (2023-09-30)
 
 ### Changed

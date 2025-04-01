@@ -1,6 +1,12 @@
 # Change log for: @freesewing/config
 
 
+## 4.0.0 (2024-04-01)
+
+### Added
+
+ - Added a new `@freesewing/config` package for shared configuration
+
 ## 3.0.0 (2023-09-30)
 
 ### Changed

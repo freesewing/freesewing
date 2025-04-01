@@ -1,6 +1,14 @@
 # Change log for: @freesewing/bibi
 
 
+## 4.0.0 (2024-04-01)
+
+### Changed
+
+ - Changed the algorithm to draft the side seam, so the measurements are followed more precisely
+ - Reduced default influence of the seat back measurement and added an option to adjust it.
+ - Added various options for ribbing and knit binding on waistband, armscyes/cuffs and neck hole and included more documentation
+
 ## 3.0.0 (2023-09-30)
 
 ### Changed

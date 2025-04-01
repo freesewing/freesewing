@@ -3,6 +3,9 @@
 
 ## Unreleased
 
+
+## 4.0.0 (2024-04-01)
+
 ### bibi
 
 #### Changed
@@ -133,7 +136,24 @@
 
  - The `withCondition` named  export is deprecated and will always return true.
 
+### collection
+
+#### Added
+
+ - Added a new `@freesewing/collection` package that bundles all our designs
+
+### config
+
+#### Added
+
+ - Added a new `@freesewing/config` package for shared configuration
+
 ### core
+
+#### Breaking
+
+ - FreeSewing new requires NodeJS 20 (or more recent)
+ - We removed all but English translations. We still support i18n in our core library and designs, but no longer provide translations
 
 #### Added
 
@@ -143,6 +163,30 @@
 #### Fixed
 
  - Fix an issue when splitting path on start or end point. Fixes
+
+### i18n
+
+#### Added
+
+ - The `@freesewing/i18n` package holds translations in English for where they are needed
+
+### studio
+
+#### Added
+
+ - Added `@freesewing/studio`, our new development environment
+
+### react
+
+#### Added
+
+ - The `@freesewing/react` package holds shared components, hooks, and context for our React-based frontends
+
+### utils
+
+#### Added
+
+ - Added a new `@freesewing/utils` package for shared utils
 
 
 ## 3.2.0 (2024-02-11)

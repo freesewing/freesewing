@@ -1,6 +1,13 @@
 # Change log for: @freesewing/noble
 
 
+## 4.0.0 (2024-04-01)
+
+### Fixed
+
+ - Fix 'cutonfold' text for Noble's back part. Fixes
+ - Improve dart shaping. Fixes
+
 ## 3.0.0 (2023-09-30)
 
 ### Changed

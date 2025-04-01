@@ -1,6 +1,16 @@
 # Change log for: @freesewing/teagan
 
 
+## 4.0.0 (2024-04-01)
+
+### Changed
+
+ - Increased default lengthBonus from 5% to 15%. Fixes
+
+### Fixed
+
+ - Fix side seam when length is cropped. Fixes
+
 ## 3.0.0 (2023-09-30)
 
 ### Changed

@@ -1,6 +1,18 @@
 # Change log for: @freesewing/plugin-bust
 
 
+## 4.0.0 (2024-04-01)
+
+### Changed
+
+ - This plugin now uses the `preSetDraft` rather than `preDraft` lifecycle hook
+ - Conditionality has been moved to the `preSetDraft` lifecycle hook, rather than exposing a `withCondition` named export
+ - The plugin will now always be loaded, but will check for each drafted set whether it should make any changes.
+
+### Deprecated
+
+ - The `withCondition` named  export is deprecated and will always return true.
+
 ## 3.0.0 (2023-09-30)
 
 ### Changed

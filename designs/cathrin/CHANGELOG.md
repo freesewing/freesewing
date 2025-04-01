@@ -1,6 +1,13 @@
 # Change log for: @freesewing/cathrin
 
 
+## 4.0.0 (2024-04-01)
+
+### Changed
+
+ - Allow negative values in backDrop option. Fixes
+ - Allow negative values for the frontRise options. Fixes
+
 ## 3.0.0 (2023-09-30)
 
 ### Changed

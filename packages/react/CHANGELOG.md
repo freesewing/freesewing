@@ -1,6 +1,12 @@
 # Change log for: @freesewing/react
 
 
+## 4.0.0 (2024-04-01)
+
+### Added
+
+ - The `@freesewing/react` package holds shared components, hooks, and context for our React-based frontends
+
 ## 3.0.0 (2023-09-30)
 
 ### Changed

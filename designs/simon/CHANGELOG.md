@@ -1,6 +1,12 @@
 # Change log for: @freesewing/simon
 
 
+## 4.0.0 (2024-04-01)
+
+### Changed
+
+ - Allow negative values for the buttonFreeLength option. Fixes
+
 ## 3.1.0 (2023-12-26)
 
 ### Fixed

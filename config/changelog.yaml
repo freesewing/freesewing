@@ -1,8 +1,32 @@
 Unreleased:
+  Changed:
+
+4.0.0:
+  date: 2024-04-01
+
+  Breaking:
+    core:
+      - FreeSewing new requires NodeJS 20 (or more recent)
+      - We removed all but English translations. We still support i18n in our core library and designs, but no longer provide translations
+    new-design:
+      - The `@freesewing/new-design` package is removed, use `@freesewing/studio` instead
+
   Added:
+    collection:
+      - Added a new `@freesewing/collection` package that bundles all our designs
+    config:
+      - Added a new `@freesewing/config` package for shared configuration
     core:
       - The `Path.rotate()` method was added to the core API.
       - The `Path.circleSegment()` method was added to the core API.
+    i18n:
+      - The `@freesewing/i18n` package holds translations in English for where they are needed
+    react:
+      - The `@freesewing/react` package holds shared components, hooks, and context for our React-based frontends
+    studio:
+      - Added `@freesewing/studio`, our new development environment
+    utils:
+      - Added a new `@freesewing/utils` package for shared utils
 
   Changed:
     brian:
