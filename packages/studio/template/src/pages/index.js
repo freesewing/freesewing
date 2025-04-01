@@ -50,7 +50,12 @@ export default function Home() {
               account data, and can store your patterns.
             </p>
             <p className="tw-font-medium tw-text-lg tw-text-center tw-mt-4">
-              <Link className="tw-daisy-btn tw-daisy-btn-primary">Browse Collection</Link>
+              <Link
+                className="tw-daisy-btn tw-daisy-btn-primary hover:tw-no-underline hover:tw-text-primary-content"
+                href="/collection"
+              >
+                Browse Collection
+              </Link>
             </p>
           </Card>
           <Card
@@ -72,7 +77,12 @@ export default function Home() {
               the option you want, and your new design will be added to the studio.
             </p>
             <p className="tw-font-medium tw-text-lg tw-text-center tw-mt-4">
-              <Link className="tw-daisy-btn tw-daisy-btn-primary">Add a new design</Link>
+              <Link
+                className="tw-daisy-btn tw-daisy-btn-primary hover:tw-no-underline hover:tw-text-primary-content"
+                href="/add"
+              >
+                Add a new design
+              </Link>
             </p>
           </Card>
         </div>
