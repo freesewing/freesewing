@@ -14,7 +14,7 @@
 > FreeSewing is an open source project maintained by Joost De Cock and financially supported by the FreeSewing patrons.
 >
 > If you feel FreeSewing is worthwhile, and you can spend a few coins without
-hardship, then you should [join us and become a patron](https://freesewing.org/community/join).
+hardship, then you should [join us and become a patron](https://freesewing.eu/patrons/join).
 
 ## What am I looking at? 🤔
 
@@ -31,7 +31,7 @@ npm run tips
 > [!NOTE]
 > If you don't want to set up a dev environment, you can run it in your browser:
 > 
-> [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/freesewing/freesewing)
+> [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://codeberg.org/freesewing/freesewing)
 > 
 > We recommend that you fork our repository and then 
 > put `gitpod.io/#<entire-url-of-your-fork` into a browser 
@@ -41,7 +41,7 @@ npm run tips
 
 Where the world of makers and developers collide, that's where you'll find FreeSewing.
 
-If you're a maker, checkout [freesewing.org](https://freesewing.org/) where you can generate
+If you're a maker, checkout [freesewing.eu](https://freesewing.eu/) where you can generate
 sewing patterns adapted to your measurements.
 
 If you're a developer, the FreeSewing documentation lives at [freesewing.dev](https://freesewing.dev/).
@@ -76,7 +76,7 @@ To work with FreeSewing's monorepo, you'll need [NodeJS v20](https://nodejs.org)
 Once you have that, clone (or fork) this repo and run `npm run kickstart`:
 
 ```bash
-git clone git@github.com:freesewing/freesewing.git
+git clone git@codeberg.org:freesewing/freesewing.git
 cd freesewing
 npm run kickstart
 ```
@@ -85,33 +85,29 @@ npm run kickstart
 
 **Official channels**
 
- - 💻 Makers website: [FreeSewing.org](https://freesewing.org)
- - 💻 Developers website: [FreeSewing.dev](https://freesewing.dev)
- - ✅ [Support](https://github.com/freesewing/freesewing/issues/new/choose),
-   [Issues](https://github.com/freesewing/freesewing/issues) &
-   [Discussions](https://github.com/freesewing/freesewing/discussions) on
-   [GitHub](https://github.com/freesewing/freesewing)
+ - 💻 Makers website: [FreeSewing.eu](https://freesewing.eu/)
+ - 💻 Developers website: [FreeSewing.dev](https://freesewing.dev/)
+ - ✅ [Support](https://forum.freesewing.eu/),
+   [Issues](https://codeberg.org/freesewing/freesewing/issues) &
+   [Codeberg](https://codeberg.org/freesewing/freesewing)
 
 **Social media**
 
- - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
- - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
+ - 🐘 Mastodon: [@freesewing](https://freesewing.social/@freesewing) on [FreeSewing.social](https://freesewing.social/)
+ - 🐘 Mastodon: [@joost](https://freesewing.social/@joost) on [FreeSewing.social](https://freesewing.social/)
 
 **Places the FreeSewing community hangs out**
 
+ - 💬 [Forum](https://forum.freesewing.eu/)
  - 💬 [Discord](https://discord.freesewing.org/)
- - 💬 [Facebook](https://www.facebook.com/groups/627769821272714/)
  - 💬 [Reddit](https://www.reddit.com/r/freesewing/)
 
 ## License: MIT 🤓
 
-© [Joost De Cock](https://github.com/joostdecock).  
-See [the license file](https://github.com/freesewing/freesewing/blob/develop/LICENSE) for details.
+© [Joost De Cock](https://codeberg.org/joostdecock).  
+See [the license file](https://codeberg.org/freesewing/freesewing/blob/develop/LICENSE) for details.
 
 ## Where to get help 🤯
 
-For [Support](https://github.com/freesewing/freesewing/issues/new/choose),
-please use the [Issues](https://github.com/freesewing/freesewing/issues) &
-[Discussions](https://github.com/freesewing/freesewing/discussions) on
-[GitHub](https://github.com/freesewing/freesewing).
+For [Support](https://freesewing.eu/support), please use the [forum](https://forum.freesewing.eu).
 
