@@ -1,5 +1,5 @@
 {
-  "name": "freesewing-devenv",
+  "name": "@freesewing/studio",
   "version": "0.0.0",
   "private": true,
   "scripts": {
