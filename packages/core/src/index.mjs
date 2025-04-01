@@ -1,4 +1,4 @@
-import { Bezier } from 'bezier-js'
+import { Bezier } from './bezier.mjs'
 import { Attributes } from './attributes.mjs'
 import { Design } from './design.mjs'
 import { Pattern } from './pattern/index.mjs'
