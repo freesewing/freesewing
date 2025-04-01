@@ -39,7 +39,7 @@ export const Editor = ({
   /*
    * Bundle all designs
    */
-  const designs = { ...collectionDesigns, designs }
+  const designs = { ...collectionDesigns, ...localDesigns }
 
   /*
    * Ephemeral state will not be stored in the state backend
