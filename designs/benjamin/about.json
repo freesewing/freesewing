@@ -12,6 +12,6 @@
     "precision",
     "interfacing"
   ],
-  "version": "4.0.0-rc.16",
+  "version": "4.0.0",
   "pkg": "@freesewing/benjamin"
 }
