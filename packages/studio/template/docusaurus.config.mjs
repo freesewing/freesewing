@@ -86,14 +86,17 @@ const config = {
   themeConfig: {
     image: 'img/freesewing-social-card.png',
     navbar: {
-      title: 'FreeSewing',
+      title: 'FreeSewing Studio',
       logo: {
         alt: 'FreeSewing Logo',
         src: 'img/logo.svg',
       },
       items: [
-        { type: 'custom-FreeSewingNavbarItem', position: 'left', id: 'editor' },
-        { type: 'custom-FreeSewingNavbarItem', position: 'left', id: 'addDesign' },
+        { label: 'FreeSewing Collection', to: '/collection', position: 'left' },
+        { label: 'Local Designs', to: '/local', position: 'left' },
+        { label: 'Add a Design', to: '/add', position: 'left' },
+        { label: 'Documentation', to: 'https://freesewing.dev/', position: 'left' },
+        { label: 'Support', to: '/support', position: 'left' },
         { type: 'custom-FreeSewingNavbarItem', position: 'right', id: 'account' },
       ],
     },
@@ -102,11 +105,18 @@ const config = {
       links: [
         {
           title: 'Sections',
-          items: [{ label: 'FreeSewing Editor', to: '/editor/' }],
+          items: [
+            { label: 'FreeSewing Collection', to: '/collection' },
+            { label: 'Local Designs', to: '/local' },
+            { label: 'Add a Design', to: '/add' },
+          ],
         },
         {
           title: 'Help & Support',
-          items: [{ label: 'Need Help?', href: '/support' }],
+          items: [
+            { label: 'Documentation', to: 'https://freesewing.dev/' },
+            { label: 'Support', to: '/support' },
+          ],
         },
         {
           title: 'More',

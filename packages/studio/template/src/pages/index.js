@@ -1,23 +1,9 @@
-// Hooks
-import { useState, useEffect } from 'react'
 // Components
-import Link from '@docusaurus/Link'
 import { DocusaurusPage } from '@freesewing/react/components/Docusaurus'
 import Layout from '@theme/Layout'
-import {
-  ChatIcon,
-  DesignIcon,
-  DocsIcon,
-  FreeSewingIcon,
-  HelpIcon,
-  NewsletterIcon,
-  NoIcon,
-  OkIcon,
-  ShowcaseIcon,
-} from '@freesewing/react/components/Icon'
-import { SignUp } from '@freesewing/react/components/SignUp'
-import { CardLink } from '@freesewing/react/components/Link'
-import { PleaseSubscribe } from '@freesewing/react/components/Patrons'
+import { FreeSewingIcon, NoIcon, OkIcon } from '@freesewing/react/components/Icon'
+import { linkClasses } from '@freesewing/utils'
+import Link from '@docusaurus/Link'
 
 const Card = ({ title, children, icon }) => (
   <div className={`tw-px-8 tw-bg-primary/5 tw-py-10 tw-rounded-lg tw-block tw-shadow-lg tw-grow`}>
@@ -30,7 +16,7 @@ const Card = ({ title, children, icon }) => (
 )
 
 const meta = {
-  title: 'Free Bespoke Sewing Patterns',
+  title: 'FreeSewing Studio',
   description:
     'FreeSewing is open source software to generate bespoke sewing ' +
     'patterns, loved by home sewers and fashion entrepreneurs alike.',
@@ -43,38 +29,50 @@ export default function Home() {
         <div className="tw-text-center">
           <FreeSewingIcon className="tw-w-48 tw-h-48 tw-mx-auto tw-pr-3" />
           <h1 className="tw-font-black tw-text-5xl lg:tw-text-7xl tw-tracking-tighter tw-mb-0 tw-pb-0">
-            FreeSewing
+            FreeSewing Studio
           </h1>
           <h2 className="tw-text-xl lg:tw-text-3xl tw-font-medium tw-tracking-tighter tw-mt-0 tw-pt-0">
-            Free Bespoke Sewing Patterns
+            Design your own bespoke sewing patterns
           </h2>
         </div>
 
         <div className="tw-flex tw-flex-col tw-gap-8 md:tw-grid md:tw-grid-cols-2 md:tw-gap-4 tw-mt-12 md:tw-mt-20 md:tw-px-4">
           <Card
-            title="What is FreeSewing?"
+            title="Batteries Included"
             icon={<OkIcon className="tw-w-12 tw-h-12 tw-text-success" stroke={4} />}
           >
             <p className="tw-font-medium tw-text-lg tw-mb-4">
-              FreeSewing is open source software to generate bespoke sewing patterns, loved by home
-              sewers and fashion entrepreneurs alike.
+              The FreeSewing Studio ships with <b>all FreeSewing designs</b> on board. You can
+              utilize them as they are, or extend them for your own needs.
             </p>
             <p className="tw-font-medium tw-text-lg tw-mb-4">
-              Industry sizing is a bunch of lies. Join the slow fashion revolution and enjoy clothes
-              that fit you.
+              The studio is also integrated with the FreeSewing backend, so you can access all your
+              account data, and can store your patterns.
+            </p>
+            <p className="tw-font-medium tw-text-lg tw-text-center tw-mt-4">
+              <Link className="tw-daisy-btn tw-daisy-btn-primary">Browse Collection</Link>
             </p>
           </Card>
           <Card
-            title="What is FreeSewing not?"
-            icon={<NoIcon className="tw-w-12 tw-h-12 tw-text-error" stroke={3} />}
+            title="Add your own designs"
+            icon={<OkIcon className="tw-w-12 tw-h-12 tw-text-success" stroke={4} />}
           >
             <p className="tw-font-medium tw-text-lg tw-mb-4">
-              FreeSewing is not a company. We do not sell anything. We do not have staff or
-              employees. We do not have an office. We do not get paid.
+              <Link href="/add" className={linkClasses}>
+                Adding your own custom design
+              </Link>{' '}
+              to the FreeSewing Studio is{' '}
+              <Link href="/add" className={linkClasses}>
+                a one-liner
+              </Link>
+              .
             </p>
             <p className="tw-font-medium tw-text-lg">
-              Our website does not contain any advertising. We do not track you. We do not sell your
-              personal data, or use it to train AI algorithms. We do not violate your privacy.
+              You can start a new design from scratch, or start from one of our blocks. Just pick
+              the option you want, and your new design will be added to the studio.
+            </p>
+            <p className="tw-font-medium tw-text-lg tw-text-center tw-mt-4">
+              <Link className="tw-daisy-btn tw-daisy-btn-primary">Add a new design</Link>
             </p>
           </Card>
         </div>

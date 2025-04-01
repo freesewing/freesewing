@@ -1,5 +1,5 @@
 // Dependencies
-import { designs } from '@freesewing/collection'
+import { designs as collectionDesigns } from '@freesewing/collection'
 import { capitalize, hasRequiredMeasurements } from '@freesewing/utils'
 import { initialEditorState } from './lib/index.mjs'
 import { mergeConfig } from './config/index.mjs'
@@ -27,8 +27,20 @@ import { LoadingStatusContextProvider } from '@freesewing/react/context/LoadingS
  * @param {object} props.design - A design name to force the editor to use this design
  * @param {object} props.preload - Any state to preload
  * @param {function} props.setTitle - A way to set the page title (optional)
+ * @param {object} props.localDesigns - A way to add local designs to the editor (optional)
  */
-export const Editor = ({ config = {}, design = false, preload = {}, setTitle = false }) => {
+export const Editor = ({
+  config = {},
+  design = false,
+  preload = {},
+  setTitle = false,
+  localDesigns = {},
+}) => {
+  /*
+   * Bundle all designs
+   */
+  const designs = { ...collectionDesigns, designs }
+
   /*
    * Ephemeral state will not be stored in the state backend
    * It is used for things like loading state and so on

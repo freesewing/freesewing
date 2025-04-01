@@ -34,7 +34,8 @@
     "lib/",
     "utils/",
     "index.mjs",
-    "template/"
+    "template/",
+    "template/designs/.base/"
   ],
   "publishConfig": {
     "access": "public",

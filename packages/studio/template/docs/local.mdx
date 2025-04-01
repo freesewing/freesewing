@@ -1,0 +1,16 @@
+---
+title: Local Designs
+---
+
+import { localDesigns } from '@site/src/local-designs.mjs'
+import Link from '@docusaurus/Link'
+
+<ul>
+  {Object.entries(localDesigns).map(([Name, design]) => (
+    <li key={name}>
+      <Link href={`/editor/#s={"design"%3A"${Name.toLowerCase()}"%2C"view"%3A"draft"}`}>
+        {Name}
+      </Link>
+    </li>
+  ))}
+</ul>
