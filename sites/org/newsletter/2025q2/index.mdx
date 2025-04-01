@@ -1,0 +1,253 @@
+---
+date: '2025-04-01'
+edition: '2025q2'
+intro: 'Welcome to the 2025 Spring edition of the FreeSewing newsletter.'
+title: '2025 Spring edition'
+authors:
+  - 1
+toc_max_heading_level: 2
+---
+
+Welcome to the 2025 Spring edition of the FreeSewing newsletter.
+
+Grab a drink, because this edition is no filler, all killer:
+
+- 🎉 FreeSewing v4 was released today (1-minute read by Joost)
+- 🤓 Announcing the new FreeSewing Studio (1-minute read by Joost)
+- 👋 Bye bye Vercel/NextJS (1-minute read by Joost)
+- 😟 Putting some distance between our users and the new US administration (2-minute read by Joost)
+- 💬 Announcing the FreeSewing Forum (1-minute read by Joost)
+- 🔐 FreeSewing as an OIDC provider (1-minute read by Joost)
+- ✊ Don't Panic - Organize! (2-minute read by Joost)
+
+<!-- truncate -->
+
+Let's go.
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+## 🎉 FreeSewing v4 was released today
+
+The next major version of FreeSewing, version 4, has been in the works for a
+while, and I _really_ wanted to get it out the door before sending out this
+newsletter, so that's exactly what I did.
+
+As this is a major version, there are breaking changes, but we've really kept
+it to a minimum. There's only one real breaking change:
+
+- FreeSewing now requires NodeJS 20 or newer
+
+In other words, we've dropped support for NodeJS 18, which will reach
+end of life at the end of next month.
+
+A lot of work went into this new major release, especially in the realm of our
+frontend code, where we made a huge effort to make it more maintainable.
+This is the kind of thing that mostly happens under the hood, but will allow
+us to increase the project's volatility and shorten our (non-major) release
+cycle.
+
+What this means is that everything's changed, and nothing has changed.
+I've compared it to your favorite restaurant moving across the street. It's a
+different building, different kitchen, different everything. But your favorite
+waitress is still there serving that same food you've know and love.
+
+That, in a nutshell, is FreeSewing v4.
+
+## 🤓 Announcing the new FreeSewing Studio
+
+We have created a new standalone development environment named _FreeSewing
+Studio_.
+In practical terms, this means that we have replaced `@freesewing/new-design`
+with `@freesewing/studio`.
+
+If you're unfamiliar, this is our development environment that people can use
+to generate FreeSewing designs.
+In v3, this development environment only supported a single design, and so
+`new-design` made sense.
+
+Now in v4, our development environment not only ships with all FreeSewing
+designs on board, but you can add your own, and as many as you want.
+
+In addition, it also integrates with the FreeSewing backend, so you do not only
+have access to all your measurements, you can also store your patterns in our
+backend, even from your custom designs.
+
+To try it out yourself, run:
+
+```
+npx @freesewing/studio
+```
+
+## 👋 Bye bye Vercel/NextJS
+
+We have been using NextJS for several years now for the FreeSewing frontends.
+However, as I mentioned in an earlier edition of this newsletter, Vercel (the
+company behind NextJS) has revoked their sponsorship. This was nothing against
+FreeSewing, they've revoked all open source plans, but without their
+sponsorships, the cost of hosting our websites on Vercel is rather steep, and
+it was not sustainable for us to stay with them.
+
+Furthermore, Vercel is also increasingly tying NextJS to their hosted offering,
+making it harder to _just go elsewhere_.
+
+Since documentation is a critical (and large) part of both our website for
+makers and developers, we've decided to migrate to Docusaurus, which is highly
+optimized for documentation, but flexible enough that we can still do all the
+more advanced stuff that we need.
+
+To improve maintainability and facilitate code reuse between our websites and
+new studio, we've abstracted all of our frontend logic into various components
+in our new `@freesewing/react` package which now underpins all our frontends.
+
+This was a huge effort, and we are lagging behind with developer documentation,
+which is something which we'll work on going forward.
+
+Apart from that, I'm certain there will be some rough edges, but things
+_should just work_ and if not, make sure to let us know.
+
+## 😟 Putting some distance between our users and the new US administration
+
+Part of the reason that we were only able to drag v4 over the finish line at the
+very last minute is that our planning was thrown into turmoil by the need to
+put distance between our user's data and the US administration.
+
+I will talk about our reasons for doing so at the end of this newsletter.
+Here, I will instead focus on what we actually did.
+
+Essentially, we have moved everything that is potentially sensitive to brand
+new infrastructure in Europe, using European companies, rather than US-based
+companies. Specifically:
+
+- We've moved our backend systems from DigitalOcean in the US to Scaleway in Germany
+- We've moved our software repositories from GitHub in the US to Codeberg in Germany
+- We've moved our transactional email service from AWS in the US to Scaleway in Germany (ongoing)
+- We have put a de-facto freeze on our Instagram account, and recommend you
+  follow our accounts on [freesewing.social](https://freesewing.social/), our
+  Mastodon instance hosted in Germany.
+- We have re-visited our choice to use Discord as the de-facto place for the
+  FreeSewing community, and have instead decided that here too we would step
+  both to safeguard the data of our users, as well as embrace the open web. So
+  we've created a forum for the FreeSewing community (more on that below).
+- While freesewing.org will continue to work as expected, we will henceforth
+  use freesewing.eu as our main domain name.
+
+All of these changes are already active, although some need some time to
+percolate to completion.
+
+None of this will impact you as a user of the site. So, you may find this
+overkill. But people trust us with their data, and we feel a moral
+obligation to safeguard that data even from a potential adversarial
+administration in the US.
+
+## 💬 Announcing the FreeSewing Forum
+
+The idea that a _good old forum_ would arguably be a better for for the
+FreeSewing community than the social network of the day is not new, it's
+something that has always held true.
+
+However, we were always reluctant to take on the additional burden of
+operating/maintaining/managing/moderating such a forum, because, well there's
+only 24 hours in a day.
+
+However, given the efforts we are making to keep our user's data out of the
+reach of the US administration, it felt like the time was right to do it.
+
+And so we did. The official FreeSewing forum lives at
+[forum.freesewing.eu](https://forum.freesewing.eu/) and you can (and should)
+use your FreeSewing account for authentication.
+
+It's a bit empty still, so don't be shy and come say hello.
+
+## 🔐 FreeSewing as an OIDC provider
+
+This is a bit of a nerdy sidebar, but to allow the forum to work with your
+FreeSewing account, we needed to adapt our backend and turn FreeSewing into an
+OpenID Connect (OIDC) provider.
+
+This opens the door to _sign in with your FreeSewing account_ functionality on
+any website, just as on our forum.
+We do not have any concrete plans for this, or rather, our own needs are met.
+But if you are interested in letting FreeSewing users sign in with their
+FreeSewing account (and for example access their measurements) then you can
+reach out to us to discuss.
+
+## ✊ Don't Panic - Organize!
+
+Last but not least, I want to talk about why we moved everything to Europe.
+
+With everything that is going on right now — _gestures vaguely in the
+direction of the current US administration_ — it's tempting to throw up our
+hands in despair, spend our days doomscrolling, or just check out somehow.
+
+Unfortunately, that's not going to cut it for we are way into uncharted
+territory here.
+
+I was born long after the end of the second world war, but still, my entire
+worldview along with everyone around me was shaped by what happened during and
+in the aftermath of _the great war_. The atrocities of the Nazi regime are not
+up for debate. My grandfather fought the Nazis in the trenches.
+I grew up mere miles away from the only place in Europe were
+resistance fighters were able to stop a train full of Jewish people on route to
+the Nazi concentration camp in Auschwitz. Some real evil stuff happened, and it
+happened right here where we live, to people who were still around when we grew
+up.
+
+From their role in defeating the Nazi regime, to the Marshall plan
+to rebuild post-war Europe, our gratitude, appreciation, and yes admiration
+of the United States is something that was always there, unquestioned.
+You can't throw a stone around here without hitting a square named
+after an American President, a street named in honor of one of its military
+regiments, and so on. The US could do no wrong. Its status as an ally and the
+superpower we would be aligned with come what may, was something no sane person
+would question.
+
+Today, just over two months into the second term of the Trump administration,
+everything is on the table. Nothing is sacred. Nobody knows how far things will
+unravel.
+
+It is all very scary, so what do we do?
+
+One of the houses on the street I used to live on had a large banner attached
+to the back of the house, facing the railroad that passes behind it. The
+banner protests a planned railroad extension, an extension that calls for the
+demolition of several houses on the street. I doubt many commuters know the
+reason that banner is there, because it doesn't explain any of this. Instead,
+it's a hand-drawn two-panel comic of a big fish chasing some small fish, only
+for the small fish to assemble in the shape of an even bigger fish in the next
+panel, and reverse the chase.
+
+Now that I live in Antwerp, I pass that banner every time I commute to work,
+and I remain impressed by its simple yet effective and timeless message. You
+see, it's a powerful image on its own, but it really drives the point home with
+its companion slogan: _Niet panikeren - Organiseren_ which translates as:
+_Don't panic. Organize!_
+
+<br />
+<small>
+
+&raquo; [Click here to see a picture of the
+banner](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/bc1a2a55-fd7d-4f61-3abb-12efc6266100/full)
+
+</small>
+
+Things are wild right now. I do not know what will happen next, but I do know
+that I am not comfortable with the idea of having our user's data under the
+legislative reach of an administration that is increasingly authoritarian with
+a particular penchant to go after trans people, of which we count many among
+our users.
+
+A lot of people voted for President Trump. Realistically, several of you did too.
+I am certain you had your reasons, and those reasons are valid. The vote is
+sacred. You do you.
+
+But if — like me — you are rather
+worried about everything that is happening right now,
+I hope you will not panic, but instead organize.
+
+joost
