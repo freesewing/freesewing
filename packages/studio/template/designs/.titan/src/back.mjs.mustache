@@ -1,0 +1,11 @@
+import { back as titanBack } from '@freesewing/titan'
+
+export const back = {
+  from: titanBack,
+  name: '{{ name }}.back',
+  hide: { from: true },
+  options: {},
+  draft: ({ part }) => {
+    return part
+  },
+}

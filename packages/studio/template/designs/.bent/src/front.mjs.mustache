@@ -1,8 +1,9 @@
-import { sleeve } from '@freesewing/brian'
+import { base } from '@freesewing/brian'
 
 export const front = {
-  from: sleeve,
-  name: '{{ name }}.sleeve',
+  from: base,
+  name: '{{ name }}.front',
+  hide: { from: true },
   measurements: [],
   options: {},
   draft: ({ part }) => {

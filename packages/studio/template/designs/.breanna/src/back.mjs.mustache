@@ -1,8 +1,9 @@
-import { front } from './front.mjs'
+import { front as breannaBack } from '@freesewing/breanna'
 
 export const back = {
-  from: front,
+  from: breannaBack,
   name: '{{ name }}.back',
+  hide: { from: true },
   options: {},
   draft: ({ part }) => {
     return part

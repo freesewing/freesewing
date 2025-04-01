@@ -327,7 +327,7 @@ const DesignCard = ({ name, lineDrawing = false, linkTo, Link, onClick }) => {
     </button>
   ) : (
     <Link
-      href={linkTo === 'new' ? `/-/` : `/designs/${name}/`}
+      href={linkBuilders[linkTo](name)}
       className="hover:tw-bg-secondary hover:tw-bg-opacity-10 tw-rounded-lg tw-group hover:tw-no-underline"
       title={about[name].description}
     >

@@ -1,0 +1,12 @@
+import { topSleeve as bentTopsleeve } from '@freesewing/bent'
+
+export const topSleeve = {
+  from: bentTopsleeve,
+  name: '{{ name }}.topsleeve',
+  hide: { from: true },
+  measurements: [],
+  options: {},
+  draft: ({ part }) => {
+    return part
+  },
+}
