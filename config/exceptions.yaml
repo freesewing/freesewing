@@ -43,6 +43,7 @@ packageJson:
       - "utils/"
       - "index.mjs"
       - "template/"
+      - "template/designs/.base/"
     module: '!'
   noble:
     author: woutervdub (https://github.com/woutervdub)

@@ -1,0 +1,47 @@
+export const box = {
+  name: '{{ name }}.box',
+  measurements: [],
+  optionalMeasurements: [],
+  options: { },
+  draft: ({ Point, points, Path, paths, part }) => {
+
+    /*
+     * Create the points
+     */
+    points.tl = new Point(0,0)
+    points.bl = new Point(0,100)
+    points.br = new Point(250,100)
+    points.tr = new Point(250,0)
+
+    /*
+     * Construct the path
+     */
+    paths.box = new Path()
+      .move(points.tl)
+      .line(points.bl)
+      .line(points.br)
+      .line(points.tr)
+      .line(points.tl)
+      .close()
+      .addClass('fabric')
+
+    /*
+     * Add the text
+     */
+    points.text = new Point (125,50).addText('Hello World')
+
+    /*
+     * Add the title
+     */
+    points.title = points.text.shift(-90, 45)
+    macro('title', {
+      at: points.title,
+      nr: 1,
+      title: 'box',
+      align: 'center',
+      scale: 0.8,
+    })
+
+    return part
+  },
+}

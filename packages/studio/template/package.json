@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "add": "node ./scripts/add-design.mjs",
+    "prebuild": "node ./scripts/prebuild.mjs",
+    "prestart": "node ./scripts/prebuild.mjs",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
