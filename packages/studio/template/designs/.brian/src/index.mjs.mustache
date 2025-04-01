@@ -1,0 +1,16 @@
+import { Design, mergeI18n } from '@freesewing/core'
+import { i18n as brianI18n } from '@freesewing/brian'
+import { i18n as {{ name }}I18n } from '../i18n/index.mjs'
+import about from '../about.json' with { type: 'json' }
+
+// Setup our new design
+const {{ Name }} = new Design({
+  data: about,
+  parts: [box],
+})
+
+// Merge translations
+const i18n = mergeI18n([brianI18n, {{ name }}I18n])
+
+// Named exports
+export { box, {{ Name }}, i18n, about }
