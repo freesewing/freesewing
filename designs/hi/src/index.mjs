@@ -1,5 +1,5 @@
 import { Design } from '@freesewing/core'
-import { data } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 import { i18n } from '../i18n/index.mjs'
 // Parts
 import { body } from './body.mjs'
@@ -14,7 +14,7 @@ import { upperTeeth } from './upperTeeth.mjs'
 
 // Create design
 const Hi = new Design({
-  data,
+  data: about,
   parts: [body, tail, mouth, aboveMouth, belly, topOfFin, bottomOfFin, lowerTeeth, upperTeeth],
 })
 
@@ -31,4 +31,5 @@ export {
   upperTeeth,
   Hi,
   i18n,
+  about,
 }

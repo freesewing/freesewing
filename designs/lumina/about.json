@@ -1,0 +1,19 @@
+{
+  "id": "lumina",
+  "name": "Lumina leggings",
+  "code": "Wouter Van Wageningen",
+  "description": "A FreeSewing pattern for leggings",
+  "design": "Wouter Van Wageningen",
+  "difficulty": 3,
+  "tags": [
+    "bottoms",
+    "trousers"
+  ],
+  "techniques": [
+    "stretch",
+    "curved-seam",
+    "elastic"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/lumina"
+}

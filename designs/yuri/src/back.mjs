@@ -1,6 +1,6 @@
 import { back as brianBack } from '@freesewing/brian'
 import { sharedDimensions } from './shared.mjs'
-import { hidePresets } from '@freesewing/core'
+import { hidePresets, pctBasedOn } from '@freesewing/core'
 
 function yuriBack({ store, macro, Path, Point, points, paths, sa, options, measurements, part }) {
   // Clear paths from Brian
@@ -106,8 +106,8 @@ export const back = {
     options: {
       ...brianBack.options,
       // Overrides
-      collarEase: { pct: 20, min: 10, max: 30, menu: 'fit' },
-      cuffEase: { pct: 30, min: 20, max: 60, menu: 'fit' },
+      collarEase: { pct: 20, min: 10, max: 30, ...pctBasedOn('neck'), menu: 'fit' },
+      cuffEase: { pct: 30, min: 20, max: 60, ...pctBasedOn('wrist'), menu: 'fit' },
       lengthBonus: { pct: 10, min: 5, max: 15, menu: 'fit' },
       sleeveLengthBonus: { pct: 1, min: 0, max: 10, menu: 'fit' },
     },

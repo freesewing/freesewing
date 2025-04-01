@@ -40,7 +40,9 @@ import {
   units,
   goldenRatio,
 } from './utils.mjs'
-import { version } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
+
+const version = about.version
 
 // Named exports
 export {

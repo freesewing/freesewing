@@ -1,8 +1,6 @@
-//
-
 import { Design } from '@freesewing/core'
 import { i18n } from '../i18n/index.mjs'
-import { data } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 // Parts
 import { frontPoints } from './frontpoints.mjs'
 import { frontInside } from './frontinside.mjs'
@@ -15,7 +13,7 @@ import { peplumBack } from './peplumBack.mjs'
 
 // Create new design
 const Tristan = new Design({
-  data,
+  data: about,
   parts: [
     frontPoints,
     frontInside,
@@ -40,4 +38,5 @@ export {
   peplumBack,
   i18n,
   Tristan,
+  about,
 }

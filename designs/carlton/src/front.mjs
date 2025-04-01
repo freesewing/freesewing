@@ -1,6 +1,6 @@
 import { front as bentFront } from '@freesewing/bent'
 import { calculateRatios } from './shared.mjs'
-import { hidePresets } from '@freesewing/core'
+import { hidePresets, pctBasedOn } from '@freesewing/core'
 
 function draftCarltonFront({
   sa,
@@ -574,7 +574,7 @@ export const front = {
   hide: hidePresets.HIDE_TREE,
   measurements: ['waist', 'waistToFloor', 'waistToSeat', 'seat'],
   options: {
-    chestEase: { pct: 10, min: 5, max: 20, menu: 'fit' },
+    chestEase: { pct: 10, min: 5, max: 20, ...pctBasedOn('chest'), menu: 'fit' },
     buttonSpacingHorizontal: { pct: 43.5, min: 15, max: 60, menu: 'style' },
     length: { pct: 69, min: 35, max: 100, menu: 'style' },
     lapelReduction: { pct: 5, min: 0, max: 10, menu: 'advanced' },
@@ -591,8 +591,8 @@ export const front = {
     chestPocketWidth: { pct: 25, min: 15, max: 50, menu: 'pockets' },
     innerPocketPlacement: { pct: 53, min: 42, max: 62, menu: 'pockets' },
     innerPocketWidth: { pct: 50, min: 45, max: 65, menu: 'pockets' },
-    waistEase: { pct: 14, min: 8, max: 25, menu: 'fit' },
-    seatEase: { pct: 14, min: 8, max: 25, menu: 'fit' },
+    waistEase: { pct: 14, min: 8, max: 25, ...pctBasedOn('waist'), menu: 'fit' },
+    seatEase: { pct: 14, min: 8, max: 25, ...pctBasedOn('seat'), menu: 'fit' },
     innerPocketWeltHeight: { pct: 3.5, min: 2.5, max: 5, menu: 'pockets' },
   },
   draft: draftCarltonFront,

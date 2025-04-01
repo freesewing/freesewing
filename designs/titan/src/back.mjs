@@ -444,9 +444,9 @@ export const back = {
     fitCrossSeamBack: true,
     fitGuides: true,
     // Fit
-    waistEase: { pct: 2, min: 0, max: 10, menu: 'fit' },
-    seatEase: { pct: 2, min: 0, max: 10, menu: 'fit' },
-    kneeEase: { pct: 6, min: 1, max: 25, menu: 'fit' },
+    waistEase: { pct: 2, min: 0, max: 10, ...pctBasedOn('waist'), menu: 'fit' },
+    seatEase: { pct: 2, min: 0, max: 10, ...pctBasedOn('seat'), menu: 'fit' },
+    kneeEase: { pct: 6, min: 1, max: 25, ...pctBasedOn('knee'), menu: 'fit' },
     // Style
     waistHeight: { pct: 100, min: 0, max: 100, menu: 'style' },
     lengthBonus: { pct: 2, min: -20, max: 10, menu: 'style' },

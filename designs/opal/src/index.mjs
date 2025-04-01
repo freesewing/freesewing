@@ -1,6 +1,6 @@
 import { Design } from '@freesewing/core'
 import { i18n } from '../i18n/index.mjs'
-import { data } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 // Parts
 import { front } from './front.mjs'
 import { back } from './back.mjs'
@@ -17,7 +17,7 @@ import { hammerLoop } from './hammerloop.mjs'
 
 // Create new design
 const Opal = new Design({
-  data,
+  data: about,
   parts: [
     front,
     back,
@@ -50,4 +50,5 @@ export {
   hammerLoop,
   i18n,
   Opal,
+  about,
 }

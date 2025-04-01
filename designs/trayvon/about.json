@@ -1,0 +1,17 @@
+{
+  "id": "trayvon",
+  "name": "Trayvon tie",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for a tie",
+  "design": "Joost De Cock",
+  "difficulty": 2,
+  "tags": [
+    "accessories"
+  ],
+  "techniques": [
+    "precision",
+    "lining"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/trayvon"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "lily",
+  "name": "Lily leggings",
+  "code": [
+    "Anna Puk",
+    "Joost De Cock"
+  ],
+  "description": "A FreeSewing pattern for basic leggings",
+  "design": "Anna Puk",
+  "difficulty": 2,
+  "tags": [
+    "bottoms"
+  ],
+  "techniques": [
+    "elastic",
+    "curved-seam",
+    "hem"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/lily"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "opal",
+  "name": "Opal overalls",
+  "code": "Thrunic",
+  "description": "A FreeSewing pattern for overalls",
+  "design": "Thrunic",
+  "difficulty": 3,
+  "tags": [
+    "overalls",
+    "onePiece"
+  ],
+  "techniques": [
+    "flat-felled-seam",
+    "hem",
+    "curved-seam",
+    "button",
+    "pocket"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/opal"
+}

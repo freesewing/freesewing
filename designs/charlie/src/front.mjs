@@ -533,9 +533,9 @@ export const front = {
     waistbandFactor: 0.1,
 
     // Fit (from Titan)
-    waistEase: { pct: 1, min: 0, max: 5, menu: 'fit' },
-    seatEase: { pct: 5, min: 0, max: 10, menu: 'fit' },
-    kneeEase: { pct: 15, min: 10, max: 30, menu: 'fit' },
+    waistEase: { pct: 1, min: 0, max: 5, ...pctBasedOn('waist'), menu: 'fit' },
+    seatEase: { pct: 5, min: 0, max: 10, ...pctBasedOn('seat'), menu: 'fit' },
+    kneeEase: { pct: 15, min: 10, max: 30, ...pctBasedOn('knee'), menu: 'fit' },
 
     // Style (from Titan)
     waistHeight: { pct: -4, min: -15, max: 40, menu: 'style' },

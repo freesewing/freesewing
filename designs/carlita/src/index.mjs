@@ -1,5 +1,5 @@
 import { Design, mergeI18n } from '@freesewing/core'
-import { data } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 import { front } from './front.mjs'
 import { side } from './side.mjs'
 import { frontFacing } from './front-facing.mjs'
@@ -28,7 +28,7 @@ import { i18n as carlitaI18n } from '../i18n/index.mjs'
 
 // Create new design
 const Carlita = new Design({
-  data,
+  data: about,
   parts: [
     front,
     frontFacing,
@@ -82,4 +82,5 @@ export {
   innerPocketTab,
   Carlita,
   i18n,
+  about,
 }

@@ -1,4 +1,5 @@
 import { bustPlugin } from '@freesewing/plugin-bust'
+import { pctBasedOn } from '@freesewing/core'
 
 export const base = {
   name: 'brian.base',
@@ -21,15 +22,15 @@ export const base = {
     brianFitCollar: true,
     collarFactor: 4.8,
     // Fit
-    bicepsEase: { pct: 15, min: 0, max: 50, menu: 'fit' },
-    chestEase: { pct: 15, min: -4, max: 35, menu: 'fit' },
-    collarEase: { pct: 5, min: 0, max: 10, menu: 'fit' },
-    cuffEase: { pct: 20, min: 0, max: 200, menu: 'fit' },
+    bicepsEase: { pct: 15, min: 0, max: 50, ...pctBasedOn('biceps'), menu: 'fit' },
+    chestEase: { pct: 15, min: -4, max: 35, ...pctBasedOn('chest'), menu: 'fit' },
+    collarEase: { pct: 5, min: 0, max: 10, ...pctBasedOn('neck'), menu: 'fit' },
+    cuffEase: { pct: 20, min: 0, max: 200, ...pctBasedOn('wrist'), menu: 'fit' },
     draftForHighBust: {
       bool: false,
       menu: (settings) => (settings?.measurements?.highBust ? 'fit' : false),
     },
-    shoulderEase: { pct: 0, min: -2, max: 6, menu: 'fit' },
+    shoulderEase: { pct: 0, min: -2, max: 6, ...pctBasedOn('shoulderToShoulder'), menu: 'fit' },
     // Style
     lengthBonus: { pct: 0, min: -4, max: 60, menu: 'style' },
     s3Collar: { pct: 0, min: -100, max: 100, menu: 'style' },

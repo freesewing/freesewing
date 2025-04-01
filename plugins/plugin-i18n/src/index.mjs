@@ -1,4 +1,4 @@
-import { name, version } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 
 const translate = (locale, text, t, pattern) => {
   /*
@@ -24,11 +24,8 @@ const translate = (locale, text, t, pattern) => {
 }
 
 export const plugin = {
-  name,
-  version,
-  hooks: {
-    insertText: (locale, text, t, pattern) => translate(locale, text, t, pattern),
-  },
+  ...about,
+  hooks: { insertText: translate },
 }
 
 // More specifically named exports

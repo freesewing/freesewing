@@ -1,10 +1,10 @@
-import { annotationsPlugin } from '../../plugin-annotations/src/index.mjs'
-import { measurementsPlugin } from '../../plugin-measurements/src/index.mjs'
-import { mirrorPlugin } from '../../plugin-mirror/src/index.mjs'
-import { roundPlugin } from '../../plugin-round/src/index.mjs'
-import { sprinklePlugin } from '../../plugin-sprinkle/src/index.mjs'
-import { binpackPlugin } from '../../plugin-bin-pack/src/index.mjs'
-import { name, version } from '../data.mjs'
+import { annotationsPlugin, i18n as annotationsI18n } from '@freesewing/plugin-annotations'
+import { measurementsPlugin } from '@freesewing/plugin-measurements'
+import { mirrorPlugin } from '@freesewing/plugin-mirror'
+import { roundPlugin } from '@freesewing/plugin-round'
+import { sprinklePlugin } from '@freesewing/plugin-sprinkle'
+import { binpackPlugin } from '@freesewing/plugin-bin-pack'
+import about from '../about.json' with { type: 'json' }
 
 const bundledPlugins = [
   annotationsPlugin,
@@ -45,8 +45,7 @@ for (const plugin of bundledPlugins) {
 }
 
 export const plugin = {
-  name,
-  version,
+  ...about,
   store,
   hooks,
   macros,
@@ -54,3 +53,6 @@ export const plugin = {
 
 // Specific named export
 export const corePlugins = plugin
+
+// Translation (only annotations plugin has them)
+export const i18n = annotationsI18n

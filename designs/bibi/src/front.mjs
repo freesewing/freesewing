@@ -10,6 +10,7 @@ import {
   plotSideLineMeasurements,
   verticalSplit,
 } from './shared.mjs'
+import { pctBasedOn } from '@freesewing/core'
 
 export const front = {
   name: 'bibi.front',

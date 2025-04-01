@@ -1,5 +1,5 @@
 import { front as brianFront, back as brianBack } from '@freesewing/brian'
-import { hidePresets } from '@freesewing/core'
+import { hidePresets, pctBasedOn } from '@freesewing/core'
 
 function svenFrontBack({
   store,
@@ -156,11 +156,11 @@ function svenFrontBack({
 }
 
 const measurements = ['hips', 'waist']
-export const hipsEase = { pct: 8, min: -4, max: 20, menu: 'fit' }
+export const hipsEase = { pct: 8, min: -4, max: 20, ...pctBasedOn('hips'), menu: 'fit' }
 export const ribbing = { bool: true, menu: 'style' }
 const options = {
   waistEase: 0.08,
-  collarEase: { pct: 10, min: 5, max: 30, menu: 'fit' },
+  collarEase: { pct: 10, min: 5, max: 30, ...pctBasedOn('neck'), menu: 'fit' },
   lengthBonus: { pct: 15, min: 0, max: 30, menu: 'style' },
   sleeveLengthBonus: { pct: 3, min: 0, max: 10, menu: 'style' },
   ribbingHeight: { pct: 8, min: 3, max: 15, menu: 'style' },

@@ -1,0 +1,18 @@
+{
+  "id": "uma",
+  "name": "Uma undies",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for a basic, highly-customizable underwear pattern",
+  "design": "Joost De Cock",
+  "difficulty": 2,
+  "tags": [
+    "bottoms",
+    "underwear"
+  ],
+  "techniques": [
+    "elastic",
+    "curved-seam"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/uma"
+}

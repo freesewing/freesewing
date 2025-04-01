@@ -1,0 +1,51 @@
+{
+  "name": "@freesewing/i18n",
+  "version": "4.0.0",
+  "description": "Translation for the FreeSewing project",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
+  },
+  "keywords": [
+    "freesewing",
+    "i18n",
+    "internationalisation",
+    "languages",
+    "localisation",
+    "translation"
+  ],
+  "type": "module",
+  "module": "src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "scripts": {
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
+    "test": "echo \"i18n: No tests configured. Perhaps you could write some?\" && exit 0",
+    "tips": "node ../../scripts/help.mjs",
+    "lint": "npx eslint 'src/**' 'tests/*.mjs'"
+  },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "files": [
+    "src/",
+    "i18n/",
+    "about.json",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "engines": {
+    "node": ">= 20"
+  }
+}

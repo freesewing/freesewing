@@ -1,0 +1,19 @@
+{
+  "id": "bent",
+  "name": "Bent body block",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for a menswear body block with a two-part sleeve",
+  "design": "Joost De Cock",
+  "difficulty": 3,
+  "tags": [
+    "blocks",
+    "tops"
+  ],
+  "techniques": [
+    "hem",
+    "curved-seam",
+    "set-sleeve"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/bent"
+}

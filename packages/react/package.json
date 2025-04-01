@@ -1,0 +1,133 @@
+{
+  "name": "@freesewing/react",
+  "version": "4.0.0",
+  "description": "React components, hooks and context  by/for FreeSewing",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
+  },
+  "keywords": [
+    "freesewing",
+    "freesewing"
+  ],
+  "type": "module",
+  "module": "src/index.mjs",
+  "exports": {
+    ".": {
+      "internal": "./src/index.mjs",
+      "default": "./dist/index.mjs"
+    },
+    "./linedrawings": "./src/linedrawings/index.mjs",
+    "./pattern": "./src/pattern/index.mjs",
+    "./xray": "./src/pattern-xray/index.mjs",
+    "./components/Account": "./components/Account/index.mjs",
+    "./components/Admin": "./components/Admin/index.mjs",
+    "./components/Breadcrumbs": "./components/Breadcrumbs/index.mjs",
+    "./components/Button": "./components/Button/index.mjs",
+    "./components/Collection": "./components/Collection/index.mjs",
+    "./components/Control": "./components/Control/index.mjs",
+    "./components/CopyToClipboardButton": "./components/CopyToClipboardButton/index.mjs",
+    "./components/Design": "./components/Design/index.mjs",
+    "./components/DiffViewer": "./components/DiffViewer/index.mjs",
+    "./components/Docusaurus": "./components/Docusaurus/index.mjs",
+    "./components/Echart": "./components/Echart/index.mjs",
+    "./components/Editor": "./components/Editor/index.mjs",
+    "./components/Heading": "./components/Heading/index.mjs",
+    "./components/Highlight": "./components/Highlight/index.mjs",
+    "./components/Icon": "./components/Icon/index.mjs",
+    "./components/Input": "./components/Input/index.mjs",
+    "./components/Json": "./components/Json/index.mjs",
+    "./components/KeyVal": "./components/KeyVal/index.mjs",
+    "./components/Layout": "./components/Layout/index.mjs",
+    "./components/LineDrawing": "./components/LineDrawing/index.mjs",
+    "./components/Link": "./components/Link/index.mjs",
+    "./components/Logo": "./components/Logo/index.mjs",
+    "./components/Markdown": "./components/Markdown/index.mjs",
+    "./components/Mini": "./components/Mini/index.mjs",
+    "./components/Modal": "./components/Modal/index.mjs",
+    "./components/New": "./components/New/index.mjs",
+    "./components/Newsletter": "./components/Newsletter/index.mjs",
+    "./components/Null": "./components/Null/index.mjs",
+    "./components/Number": "./components/Number/index.mjs",
+    "./components/Pattern": "./components/Pattern/index.mjs",
+    "./components/Patrons": "./components/Patrons/index.mjs",
+    "./components/Popout": "./components/Popout/index.mjs",
+    "./components/Profile": "./components/Profile/index.mjs",
+    "./components/Role": "./components/Role/index.mjs",
+    "./components/SignIn": "./components/SignIn/index.mjs",
+    "./components/SignUp": "./components/SignUp/index.mjs",
+    "./components/Spinner": "./components/Spinner/index.mjs",
+    "./components/Stats": "./components/Stats/index.mjs",
+    "./components/Tab": "./components/Tab/index.mjs",
+    "./components/Table": "./components/Table/index.mjs",
+    "./components/Time": "./components/Time/index.mjs",
+    "./components/Uuid": "./components/Uuid/index.mjs",
+    "./components/Ux": "./components/Ux/index.mjs",
+    "./components/Yaml": "./components/Yaml/index.mjs",
+    "./components/Xray": "./components/Xray/index.mjs",
+    "./context/LoadingStatus": "./context/LoadingStatus/index.mjs",
+    "./context/Modal": "./context/Modal/index.mjs",
+    "./hooks/useAccount": "./hooks/useAccount/index.mjs",
+    "./hooks/useBackend": "./hooks/useBackend/index.mjs",
+    "./hooks/useControl": "./hooks/useControl/index.mjs",
+    "./hooks/useDesign": "./hooks/useDesign/index.mjs",
+    "./hooks/useDesignTranslation": "./hooks/useDesignTranslation/index.mjs",
+    "./hooks/useSelection": "./hooks/useSelection/index.mjs",
+    "./hooks/useStateObject": "./hooks/useStateObject/index.mjs",
+    "./lib/RestClient": "./lib/RestClient/index.mjs",
+    "./lib/logoPath": "./components/Logo/path.mjs"
+  },
+  "scripts": {
+    "lint": "eslint 'components/**/*.mjs' 'hooks/**/*.mjs' 'lib/**/*.mjs' 'context/**/*.mjs' 'config/**/*.mjs'",
+    "prettier": "npx prettier --write 'components/**/*.mjs' 'hooks/**/*.mjs' 'lib/**/*.mjs' 'context/**/*.mjs' 'config/**/*.mjs'"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  },
+  "dependencies": {
+    "@codemirror/lang-yaml": "^6.1.2",
+    "@uiw/react-codemirror": "^4.23.8",
+    "d3-drag": "3.0.0",
+    "d3-selection": "3.0.0",
+    "diff": "^7.0.0",
+    "echarts": "^5.6.0",
+    "echarts-for-react": "^3.0.2",
+    "file-saver": "^2.0.5",
+    "highlight.js": "^11.11.1",
+    "html-react-parser": "^5.2.2",
+    "jotai": "^2.12.1",
+    "jotai-location": "^0.5.5",
+    "luxon": "^3.5.0",
+    "mustache": "^4.2.0",
+    "pdfkit": "^0.16.0",
+    "react-diff-viewer-continued": "^4.0.5",
+    "react-dropzone": "^14.3.5",
+    "react-zoom-pan-pinch": "^3.7.0",
+    "svg-to-pdfkit": "^0.1.8",
+    "use-local-storage-state": "^19.5.0",
+    "web-worker": "^1.5.0",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {},
+  "files": [
+    "components/",
+    "context/",
+    "hooks/",
+    "lib/",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "engines": {
+    "node": ">= 20"
+  }
+}

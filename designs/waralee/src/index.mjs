@@ -1,5 +1,5 @@
 import { Design } from '@freesewing/core'
-import { data } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 import { i18n } from '../i18n/index.mjs'
 import { pants } from './pants.mjs'
 import { cutout } from './cutout.mjs'
@@ -13,7 +13,7 @@ import { pantsProto } from './pantsproto.mjs'
 
 // Setup our new design
 const Waralee = new Design({
-  data,
+  data: about,
   parts: [
     pants,
     cutout,
@@ -45,4 +45,5 @@ export {
   pantsProto,
   Waralee,
   i18n,
+  about,
 }

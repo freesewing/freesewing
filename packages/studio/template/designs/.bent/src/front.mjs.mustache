@@ -1,0 +1,12 @@
+import { base } from '@freesewing/brian'
+
+export const front = {
+  from: base,
+  name: '{{ name }}.front',
+  hide: { from: true },
+  measurements: [],
+  options: {},
+  draft: ({ part }) => {
+    return part
+  },
+}

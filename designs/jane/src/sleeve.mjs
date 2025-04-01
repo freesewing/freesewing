@@ -1,8 +1,10 @@
+import { pctBasedOn } from '@freesewing/core'
+
 export const sleeve = {
   name: 'jane.sleeve',
   measurements: ['biceps', 'shoulderToElbow'],
   options: {
-    bicepsEase: { pct: 18, min: 18, max: 51, menu: 'fit' },
+    bicepsEase: { pct: 18, min: 18, max: 51, ...pctBasedOn('biceps'), menu: 'fit' },
     sleeveLength: { pct: 80, min: 60, max: 100, menu: 'style' },
   },
 

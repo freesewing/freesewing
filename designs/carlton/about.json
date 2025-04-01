@@ -1,0 +1,28 @@
+{
+  "id": "carlton",
+  "name": "Carlton coat",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for Sherlock Holmes cosplay; Or just a nice long coat",
+  "design": [
+    "Anneke Caramin",
+    "Joost De Cock"
+  ],
+  "difficulty": 5,
+  "tags": [
+    "tops",
+    "coats"
+  ],
+  "techniques": [
+    "hem",
+    "pocket",
+    "curved-seam",
+    "precision",
+    "set-sleeve",
+    "welt-pocket",
+    "lining",
+    "interfacing",
+    "button"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/carlton"
+}

@@ -1,19 +1,11 @@
 noNamespace:
   - rehype-jargon
   - rehype-highlight-lines
-customBuild:
-  - i18n
-  - new-design
-  - prettier-config
-  - core-plugins
-  - react-components
-  - rehype-jargon
-  - rehype-highlight-lines
 skipTests:
   - theo
 packageJson:
   backend:
-    name: backend.freesewing.org
+    name: backend.freesewing.eu
   bee:
     author: bobgeorgethe3rd (https://github.com/bobgeorgethe3rd)
   benjamin:
@@ -30,8 +22,6 @@ packageJson:
     author: woutervdub (https://github.com/woutervdub)
   holmes:
     author: AlfaLyr (https://github.com/alfalyr)
-  i18n:
-    private: true
   jane:
     author: SeaZeeZee (https://github.com/SeaZeeZee)
   lab:
@@ -44,19 +34,16 @@ packageJson:
     author: Starfetch (https://github.com/starfetch)
   magde:
     author: clegganator259 (https://github.com/clegganator259)
-  new-design:
+  studio:
     exports: '!'
     bin:
-      new-design: './index.mjs'
+      studio: './index.mjs'
     files:
-      - README.md
-      - package.json
-      - lib/**/*
-      - shared/**/*
-      - templates/**/*
-      - index.mjs
-      - package.json
-      - data.mjs
+      - "lib/"
+      - "utils/"
+      - "index.mjs"
+      - "template/"
+      - "template/designs/.base/"
     module: '!'
   noble:
     author: woutervdub (https://github.com/woutervdub)
@@ -67,26 +54,99 @@ packageJson:
   prettier-config:
     type: 'module'
     exports: { .: './index.json' }
-    scripts: { build: 'echo "prettier-config: No build required" && exit 0' }
     keywords:
       - prettier
     files:
       - index.json
       - package.json
-  react-components:
+  react:
     exports:
       ".":
         "internal": "./src/index.mjs"
         "default": "./dist/index.mjs"
+      # Legacy
       "./linedrawings": "./src/linedrawings/index.mjs"
       "./pattern": "./src/pattern/index.mjs"
       "./xray": "./src/pattern-xray/index.mjs"
+      # Components
+      "./components/Account": "./components/Account/index.mjs"
+      "./components/Admin": "./components/Admin/index.mjs"
+      "./components/Breadcrumbs": "./components/Breadcrumbs/index.mjs"
+      "./components/Button": "./components/Button/index.mjs"
+      "./components/Collection": "./components/Collection/index.mjs"
+      "./components/Control": "./components/Control/index.mjs"
+      "./components/CopyToClipboardButton": "./components/CopyToClipboardButton/index.mjs"
+      "./components/Design": "./components/Design/index.mjs"
+      "./components/DiffViewer": "./components/DiffViewer/index.mjs"
+      "./components/Docusaurus": "./components/Docusaurus/index.mjs"
+      "./components/Echart": "./components/Echart/index.mjs"
+      "./components/Editor": "./components/Editor/index.mjs"
+      "./components/Heading": "./components/Heading/index.mjs"
+      "./components/Highlight": "./components/Highlight/index.mjs"
+      "./components/Icon": "./components/Icon/index.mjs"
+      "./components/Input": "./components/Input/index.mjs"
+      "./components/Json": "./components/Json/index.mjs"
+      "./components/KeyVal": "./components/KeyVal/index.mjs"
+      "./components/Layout": "./components/Layout/index.mjs"
+      "./components/LineDrawing": "./components/LineDrawing/index.mjs"
+      "./components/Link": "./components/Link/index.mjs"
+      "./components/Logo": "./components/Logo/index.mjs"
+      "./components/Markdown": "./components/Markdown/index.mjs"
+      "./components/Mini": "./components/Mini/index.mjs"
+      "./components/Modal": "./components/Modal/index.mjs"
+      "./components/New": "./components/New/index.mjs"
+      "./components/Newsletter": "./components/Newsletter/index.mjs"
+      "./components/Null": "./components/Null/index.mjs"
+      "./components/Number": "./components/Number/index.mjs"
+      "./components/Pattern": "./components/Pattern/index.mjs"
+      "./components/Patrons": "./components/Patrons/index.mjs"
+      "./components/Popout": "./components/Popout/index.mjs"
+      "./components/Profile": "./components/Profile/index.mjs"
+      "./components/Role": "./components/Role/index.mjs"
+      "./components/SignIn": "./components/SignIn/index.mjs"
+      "./components/SignUp": "./components/SignUp/index.mjs"
+      "./components/Spinner": "./components/Spinner/index.mjs"
+      "./components/Stats": "./components/Stats/index.mjs"
+      "./components/Tab": "./components/Tab/index.mjs"
+      "./components/Table": "./components/Table/index.mjs"
+      "./components/Time": "./components/Time/index.mjs"
+      "./components/Uuid": "./components/Uuid/index.mjs"
+      "./components/Ux": "./components/Ux/index.mjs"
+      "./components/Yaml": "./components/Yaml/index.mjs"
+      "./components/Xray": "./components/Xray/index.mjs"
+      # Context
+      "./context/LoadingStatus": "./context/LoadingStatus/index.mjs"
+      "./context/Modal": "./context/Modal/index.mjs"
+      # Hooks
+      "./hooks/useAccount": "./hooks/useAccount/index.mjs"
+      "./hooks/useBackend": "./hooks/useBackend/index.mjs"
+      "./hooks/useControl": "./hooks/useControl/index.mjs"
+      "./hooks/useDesign": "./hooks/useDesign/index.mjs"
+      "./hooks/useDesignTranslation": "./hooks/useDesignTranslation/index.mjs"
+      "./hooks/useSelection": "./hooks/useSelection/index.mjs"
+      "./hooks/useStateObject": "./hooks/useStateObject/index.mjs"
+      # Lib
+      "./lib/RestClient": "./lib/RestClient/index.mjs"
+      "./lib/logoPath": "./components/Logo/path.mjs"
+    files:
+      - "components/"
+      - "context/"
+      - "hooks/"
+      - "lib/"
+      - "README.md"
+    scripts:
+      lint: "eslint 'components/**/*.mjs' 'hooks/**/*.mjs' 'lib/**/*.mjs' 'context/**/*.mjs' 'config/**/*.mjs'"
+      prettier: "npx prettier --write 'components/**/*.mjs' 'hooks/**/*.mjs' 'lib/**/*.mjs' 'context/**/*.mjs' 'config/**/*.mjs'"
+
   rehype-hightlight-lines:
     private: true
   sandy:
     author: AlfaLyr (https://github.com/alfalyr)
   shelly:
     author: Thrunic (https://github.com/Thrunic)
+  utils:
+    exports: '!'
+    module: "./src/index.mjs"
   onyx:
     author: Thrunic (https://github.com/Thrunic)
   opal:

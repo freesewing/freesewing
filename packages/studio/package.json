@@ -1,0 +1,52 @@
+{
+  "name": "@freesewing/studio",
+  "version": "4.0.0",
+  "description": "Initializer package for a the FreeSewing design studio: npx @freesewing/studio",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
+  },
+  "keywords": [
+    "freesewing",
+    "freesewing"
+  ],
+  "type": "module",
+  "scripts": {
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
+    "tips": "node ../../scripts/help.mjs",
+    "lint": "npx eslint 'lib/*.mjs'"
+  },
+  "peerDependencies": {},
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "execa": "^9.5.2",
+    "glob": "^11.0.1",
+    "ora": "^8.2.0",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {},
+  "files": [
+    "lib/",
+    "utils/",
+    "index.mjs",
+    "template/",
+    "template/designs/.base/"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "engines": {
+    "node": ">= 20"
+  },
+  "bin": {
+    "studio": "./index.mjs"
+  }
+}

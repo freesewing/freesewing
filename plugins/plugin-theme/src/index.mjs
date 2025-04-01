@@ -1,4 +1,4 @@
-import { name, version } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 import { sampleStyle, paperlessStyle, buildStylesheet } from './css.mjs'
 
 const grid = {
@@ -21,8 +21,7 @@ const grid = {
 }
 
 export const plugin = {
-  name,
-  version,
+  ...about,
   hooks: {
     preRender: function (svg, data = {}) {
       const current = svg.attributes.get('class')

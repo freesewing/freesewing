@@ -1,5 +1,0 @@
----
-title: FreeSewing Designs
----
-
-<ReadMore />

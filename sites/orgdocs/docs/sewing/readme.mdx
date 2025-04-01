@@ -1,5 +1,0 @@
----
-title: Sewing Terminology
----
-
-<ReadMore />

@@ -1,0 +1,19 @@
+{
+  "id": "bob",
+  "name": "Bob the bib",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for a bib",
+  "design": "Joost De Cock",
+  "difficulty": 3,
+  "tags": [
+    "accessories",
+    "infants"
+  ],
+  "techniques": [
+    "bias-tape",
+    "curved-seam",
+    "snap"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/bob"
+}

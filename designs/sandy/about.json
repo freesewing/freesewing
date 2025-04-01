@@ -1,0 +1,22 @@
+{
+  "id": "sandy",
+  "name": "Sandy circle skirt",
+  "code": [
+    "Erica Alcusa Sáez",
+    "Joost De Cock"
+  ],
+  "description": "A FreeSewing pattern for a circle skirt",
+  "design": "Erica Alcusa Sáez",
+  "difficulty": 3,
+  "tags": [
+    "bottoms",
+    "skirts"
+  ],
+  "techniques": [
+    "curved-seam",
+    "button",
+    "hem"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/sandy"
+}

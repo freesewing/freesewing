@@ -1,8 +1,7 @@
-import { name, version } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 
 export const plugin = {
-  name,
-  version,
+  ...about,
   macros: {
     sprinkle: function (so, { snippets, Snippet, points }) {
       for (let pid of so.on) {

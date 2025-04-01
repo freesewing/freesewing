@@ -1,6 +1,12 @@
 # Change log for: @freesewing/simone
 
 
+## 4.0.0 (2024-04-01)
+
+### Fixed
+
+ - Added missing translation for various options
+
 ## 3.0.0 (2023-09-30)
 
 ### Changed

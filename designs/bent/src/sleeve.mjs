@@ -1,4 +1,5 @@
 import { front } from '@freesewing/brian'
+import { pctBasedOn } from '@freesewing/core'
 
 function draftBentSleeve({ Path, paths, points, store, options, part }) {
   function draftSleeve(part, tweak) {
@@ -183,11 +184,11 @@ export const sleeve = {
     brianFitCollar: true,
     collarFactor: 4.8,
     // Fit
-    chestEase: { pct: 8, min: -4, max: 20, menu: 'fit' },
-    collarEase: { pct: 3.5, min: 0, max: 10, menu: 'fit' },
-    bicepsEase: { pct: 20, min: 10, max: 40, menu: 'fit' },
-    cuffEase: { pct: 40, min: 2, max: 100, menu: 'fit' },
-    shoulderEase: { pct: 0, min: -2, max: 6, menu: 'fit' },
+    chestEase: { pct: 8, min: -4, max: 20, ...pctBasedOn('chest'), menu: 'fit' },
+    collarEase: { pct: 3.5, min: 0, max: 10, ...pctBasedOn('neck'), menu: 'fit' },
+    bicepsEase: { pct: 20, min: 10, max: 40, ...pctBasedOn('biceps'), menu: 'fit' },
+    cuffEase: { pct: 40, min: 2, max: 100, ...pctBasedOn('wrist'), menu: 'fit' },
+    shoulderEase: { pct: 0, min: -2, max: 6, ...pctBasedOn('shoulderToShoulder'), menu: 'fit' },
     lengthBonus: { pct: 0, min: -4, max: 60, menu: 'fit' },
     sleeveLengthBonus: { pct: 0, min: -20, max: 15, menu: 'fit' },
     sleeveBend: { deg: 10, min: 0, max: 20, menu: 'fit' },

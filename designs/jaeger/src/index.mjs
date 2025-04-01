@@ -1,7 +1,7 @@
 import { Design, mergeI18n } from '@freesewing/core'
 import { i18n as bentI18n } from '@freesewing/bent'
 import { i18n as jaegerI18n } from '../i18n/index.mjs'
-import { data } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 import { backBase } from './backbase.mjs'
 import { frontBase } from './frontbase.mjs'
 import { side } from './side.mjs'
@@ -22,7 +22,7 @@ import { frontLining } from './front-lining.mjs'
 
 // Setup our new design
 const Jaeger = new Design({
-  data,
+  data: about,
   parts: [
     backBase,
     frontBase,
@@ -68,4 +68,5 @@ export {
   innerPocketWelt,
   Jaeger,
   i18n,
+  about,
 }

@@ -1,0 +1,18 @@
+{
+  "id": "sven",
+  "name": "Sven sweatshirt",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for a straightforward sweater",
+  "design": "Joost De Cock",
+  "difficulty": 3,
+  "tags": [
+    "tops"
+  ],
+  "techniques": [
+    "curved-seam",
+    "flat-sleeve",
+    "ribbing"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/sven"
+}

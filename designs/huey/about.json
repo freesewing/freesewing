@@ -1,0 +1,20 @@
+{
+  "id": "huey",
+  "name": "Huey hoodie",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for a zip-up hoodie",
+  "design": "Joost De Cock",
+  "difficulty": 3,
+  "tags": [
+    "tops"
+  ],
+  "techniques": [
+    "curved-seam",
+    "pocket",
+    "zipper",
+    "ribbing",
+    "flat-sleeve"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/huey"
+}

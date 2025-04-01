@@ -1,0 +1,23 @@
+{
+  "id": "cathrin",
+  "name": "Cathrin corset",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for a underbust corset / waist trainer",
+  "design": [
+    "Cathrin Åhlén",
+    "Joost De Cock"
+  ],
+  "difficulty": 4,
+  "tags": [
+    "tops",
+    "underwear"
+  ],
+  "techniques": [
+    "boning",
+    "precision",
+    "curved-seam",
+    "interfacing"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/cathrin"
+}

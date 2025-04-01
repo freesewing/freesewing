@@ -1,0 +1,18 @@
+{
+  "id": "breanna",
+  "name": "Breanna body block",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for a basic body block for womenswear",
+  "design": "Joost De Cock",
+  "difficulty": 3,
+  "tags": [
+    "blocks",
+    "tops"
+  ],
+  "techniques": [
+    "block",
+    "dart"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/breanna"
+}

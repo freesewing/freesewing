@@ -1,6 +1,6 @@
 // Import Design constructor
 import { Design } from '@freesewing/core'
-import { data } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 import { i18n } from '../i18n/index.mjs'
 // Import parts
 import { front } from './front.mjs'
@@ -10,7 +10,7 @@ import { neckband } from './neckband.mjs'
 
 // Create the new design
 const Shelly = new Design({
-  data,
+  data: about,
   // A list of parts is all that is required.
   parts: [front, back, raglanSleeve, neckband],
 })
@@ -22,4 +22,4 @@ const Shelly = new Design({
  * This allows us to re-use these parts in other designs.
  */
 
-export { front, back, raglanSleeve, neckband, Shelly, i18n }
+export { front, back, raglanSleeve, neckband, Shelly, i18n, about }

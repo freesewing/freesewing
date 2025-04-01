@@ -1,0 +1,20 @@
+{
+  "id": "penelope",
+  "name": "Penelope pencil skirt",
+  "code": "Wouter Van Wageningen",
+  "description": "A FreeSewing pattern for a pencil skirt",
+  "design": "Wouter Van Wageningen",
+  "difficulty": 3,
+  "tags": [
+    "bottoms",
+    "skirts"
+  ],
+  "techniques": [
+    "hem",
+    "curved-seam",
+    "precision",
+    "zipper"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/penelope"
+}

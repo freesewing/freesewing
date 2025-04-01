@@ -1,6 +1,16 @@
 # Change log for: @freesewing/charlie
 
 
+## 4.0.0 (2024-04-01)
+
+### Changed
+
+ - Fix crash when drawing the jseamStitchLine is not possible. Fixes
+
+### Fixed
+
+ - Fix cut instructions for fly facing, only 1 to be cut. Fixes
+
 ## 3.2.0 (2024-02-11)
 
 ### Fixed

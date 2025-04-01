@@ -1,0 +1,12 @@
+import { underSleeve as bentUndersleeve } from '@freesewing/bent'
+
+export const underSleeve = {
+  from: bentUndersleeve,
+  name: '{{ name }}.undersleeve',
+  hide: { from: true },
+  measurements: [],
+  options: {},
+  draft: ({ part }) => {
+    return part
+  },
+}

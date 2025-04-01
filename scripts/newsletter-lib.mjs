@@ -26,36 +26,6 @@ const i18n = {
     unsub1: 'You can unsubscribe at any time',
     unsub2: 'Or reply and tell us you want out',
   },
-  nl: {
-    title: 'FreeSewing nieuwsbrief',
-    support: 'Steun FreeSewing: Wordt mecenas',
-    unsub1: 'Je kan je op elk moment uitschrijven',
-    unsub2: 'Of stuur een reply en laat ons weten dat het niet meer hoeft',
-  },
-  fr: {
-    title: "Bulletin d'info FreeSewing",
-    support: 'Soutenir FreeSewing : Devenir mécène',
-    unsub1: 'Vous pouvez vous désabonner à tout moment',
-    unsub2: 'Ou répondez et dites-nous que vous voulez vous désabonner',
-  },
-  de: {
-    title: 'FreeSewing-Newsletter',
-    support: 'Unterstützen Sie FreeSewing: Werden Sie Gönner',
-    unsub1: 'Sie können sich jederzeit wieder abmelden',
-    unsub2: 'Oder antworten Sie uns und sagen Sie uns, dass Sie nicht mehr wollen',
-  },
-  es: {
-    title: 'FBoletín FreeSewing',
-    support: 'Apoya FreeSewing: Hazte mecenas',
-    unsub1: 'Puedes darte de baja en cualquier momento',
-    unsub2: 'O contesta y dinos que quieres darte de baja',
-  },
-  uk: {
-    title: 'Інформаційний бюлетень FreeSewing',
-    support: 'Підтримайте FreeSewing: Стати меценатом',
-    unsub1: 'Ви можете відписатися в будь-який час',
-    unsub2: 'Або надішліть нам відповідь і скажіть, що хочете відмовитися',
-  },
 }
 
 const asHtml = async (text) => {
@@ -98,7 +68,7 @@ const send = async (test = true) => {
     let edition
     try {
       edition = await axios.get(
-        `https://raw.githubusercontent.com/freesewing/freesewing/develop/markdown/org/newsletter/${process.env.NL_EDITION}/${lang}.md`,
+        `https://raw.githubusercontent.com/freesewing/freesewing/refs/heads/v4/sites/org/newsletter/${process.env.NL_EDITION}/index.mdx`,
         'utf8'
       )
     } catch (err) {
@@ -113,12 +83,10 @@ const send = async (test = true) => {
 
     for (let sub of subscribers[lang]) {
       if (l > 0) {
-        const unsubGet = `https://freesewing.org${
-          lang === 'en' ? '/' : '/' + lang + '/'
-        }newsletter/unsubscribe?x=${sub.ehash}`
+        const unsubGet = `https://freesewing.org/newsletter/unsubscribe?x=${sub.ehash}`
         const unsubPost = `https://backend3.freesewing.org/ocunsub/${sub.ehash}`
         const body = mustache.render(template, {
-          ...i18n[lang],
+          ...i18n.en,
           unsubscribe: unsubGet,
           content,
         })
@@ -141,7 +109,7 @@ const send = async (test = true) => {
               },
               Subject: {
                 Charset: 'utf-8',
-                Data: i18n[lang].title,
+                Data: i18n.en.title,
               },
               Headers: [
                 {

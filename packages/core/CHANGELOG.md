@@ -1,6 +1,22 @@
 # Change log for: @freesewing/core
 
 
+## 4.0.0 (2024-04-01)
+
+### Breaking
+
+ - FreeSewing new requires NodeJS 20 (or more recent)
+ - We removed all but English translations. We still support i18n in our core library and designs, but no longer provide translations
+
+### Added
+
+ - The `Path.rotate()` method was added to the core API.
+ - The `Path.circleSegment()` method was added to the core API.
+
+### Fixed
+
+ - Fix an issue when splitting path on start or end point. Fixes
+
 ## 3.2.0 (2024-02-11)
 
 ### Added

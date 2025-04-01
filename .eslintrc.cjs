@@ -9,7 +9,7 @@ const nodeFiles = [
   `**/prebuild.${jsSuffixes}`,
   `**/prebuild/**/*.${jsSuffixes}`,
   `**/scripts/**/*.${jsSuffixes}`,
-  `packages/new-design/lib/**/*.${jsSuffixes}`,
+  `packages/studio/lib/*.${jsSuffixes}`,
   `sites/backend/**/*.${jsSuffixes}`,
   `sites/*/mdx/**/*.${jsSuffixes}`,
   `sites/*/themes/**/*.${jsSuffixes}`,
@@ -58,16 +58,6 @@ module.exports = {
       },
       rules: {
         'no-console': 'off',
-      },
-    },
-    {
-      files: frontendFiles,
-      excludedFiles: nodeFiles,
-      extends: ['next'],
-      settings: {
-        next: {
-          rootDir: 'sites/dev/',
-        },
       },
     },
     {

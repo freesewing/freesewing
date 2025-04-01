@@ -1,12 +1,6 @@
 _:
-  build: &build 'node build.mjs'
-  'build:all': 'yarn build'
-  clean: 'rimraf dist'
-  mbuild: &mbuild 'NO_MINIFY=1 node build.mjs'
   symlink: 'mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -'
   test: 'echo "{{name}}: No tests configured. Perhaps you could write some?" && exit 0'
-  vbuild: &vbuild 'VERBOSE=1 node build.mjs'
-  lab: 'cd ../../sites/lab && yarn start'
   tips: 'node ../../scripts/help.mjs'
   lint: "npx eslint 'src/**' 'tests/*.mjs'"
 _types:
@@ -27,89 +21,38 @@ core:
   jsdoc: 'jsdoc -c jsdoc.json -r src'
 models:
   test: 'npx mocha tests/*.test.mjs'
-new-design:
-  i18n-only: 'SITE="new-design/shared" node --conditions=internal ../../sites/shared/prebuild/i18n-only.mjs'
-  wbuild: '!'
+studio:
   lint: "npx eslint 'lib/*.mjs'"
-  mbuild: '!'
-  prebuild: 'node --conditions=internal ./prebuild.mjs'
   test: '!'
   testci: '!'
-  vbuild: '!'
 rehype-highlight-lines:
-  build: '!'
-  mbuild: '!'
-  vbuild: '!'
-  'build:all': '!'
   lint: "npx eslint 'src/*.mjs'"
 rehype-jargon:
   lint: "npx eslint 'src/*.mjs'"
 snapseries:
   lint: "npx eslint 'src/*.mjs'"
-react-components:
+react:
   lint: "eslint 'src/**/*.mjs'"
 
 # Sites go here
 backend:
-  build: 'node build.mjs'
-  clean: 'rimraf dist'
   dev: 'nodemon src/index.mjs'
   initdb: 'npx prisma db push'
-  mbuild: *mbuild
   newdb: 'node ./scripts/newdb.mjs'
   prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
   rmdb: 'node ./scripts/rmdb.mjs'
   test: 'npx mocha --require mocha-steps tests/index.mjs'
-  vbuild: *vbuild
 
-dev:
-  build: &nextBuild 'next build'
-  cibuild: 'yarn build && node scripts/algolia.mjs'
-  clean: &nextClean 'rimraf prebuild/* && rimraf public/locales/*/* && rimraf public/feeds/* && rimraf ../shared/prebuild/data/*'
-  dev: &nextDev 'next dev -p 8000'
-  develop: *nextDev
-  i18n: "SITE=dev node --conditions=internal ../shared/prebuild/i18n-only.mjs"
-  lint: &nextLint 'next lint'
-  prebuild: &sitePrebuild 'node --conditions=internal --experimental-json-modules ./prebuild.mjs'
-  serve: "pm2 start npm --name 'dev' -- run start"
-  start: &nextStart 'yarn prebuild && yarn dev'
+dev: &docusaurus
+  build: 'docusaurus build'
+  dev: 'docusaurus start'
+  lint: 'docusuaurus lint'
+  prebuild: 'node --conditions=internal --experimental-json-modules ./prebuild.mjs'
+  start: 'docusaurus start'
 
 email:
   build: 'maizzle build production'
   dev: 'maizzle serve'
 
-lab:
-  build: *nextBuild
-  cibuild: 'yarn build'
-  dev: *nextDev
-  develop: *nextDev
-  i18n: 'SITE=lab node --conditions=internal ../shared/prebuild/i18n-only.mjs'
-  lint: *nextLint
-  prebuild: *sitePrebuild
-  start: 'cd ../org && yarn prebuild && cd - && yarn prebuild && yarn dev'
+org: *docusaurus
 
-sde:
-  build: *nextBuild
-  cibuild: 'yarn build'
-  dev: *nextDev
-  develop: *nextDev
-  i18n: 'SITE=sde node --conditions=internal ../shared/prebuild/i18n-only.mjs'
-  lint: *nextLint
-  prebuild: *sitePrebuild
-  start: *nextStart
-
-org:
-  build: *nextBuild
-  cibuild: 'yarn build'
-  clean: *nextClean
-  dev: *nextDev
-  develop: *nextDev
-  i18n: 'SITE=org node --conditions=internal ../shared/prebuild/i18n-only.mjs'
-  lint: *nextLint
-  prebuild: *sitePrebuild
-  start: *nextStart
-
-sanity:
-  dev: 'sanity dev'
-  start: 'sanity start'
-  build: 'sanity build -y'

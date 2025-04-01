@@ -1,6 +1,6 @@
 // Skully
 import { Design } from '@freesewing/core'
-import { data } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 // Parts
 import { cheek } from './cheek.mjs'
 import { cheekbone } from './cheekbone.mjs'
@@ -19,7 +19,7 @@ import { i18n } from '../i18n/index.mjs'
 
 // Create new design
 const Skully = new Design({
-  data,
+  data: about,
   parts: [
     cheek,
     cheekbone,
@@ -52,4 +52,5 @@ export {
   uppermouth,
   Skully,
   i18n,
+  about,
 }

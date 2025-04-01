@@ -1,8 +1,7 @@
-import { name, version } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 
 export const plugin = {
-  name,
-  version,
+  ...about,
   hooks: {
     preRender: function (svg) {
       for (const key in svg.attributes.list) {

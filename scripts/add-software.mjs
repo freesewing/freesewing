@@ -28,9 +28,9 @@ else if (type === 'plugin') {
   console.log(`
   Usage:
 
-    ${chalk.bold.blue('yarn new design')} 👉 Adds a new design
-    ${chalk.bold.blue('yarn new plugin')} 👉 Adds a new plugin
-    ${chalk.bold.blue('yarn new')} ${chalk.yellow('[anything else]')} 👉 Shows this help
+    ${chalk.bold.blue('npm run new design')} 👉 Adds a new design
+    ${chalk.bold.blue('npm run new plugin')} 👉 Adds a new plugin
+    ${chalk.bold.blue('npm run new')} ${chalk.yellow('[anything else]')} 👉 Shows this help
 `)
 
 async function addDesign() {
@@ -66,7 +66,7 @@ async function addDesign() {
     createDesign(name)
     execSync('npm run reconfigure')
     console.log(`  Installing & linking dependencies...`)
-    execSync('yarn install')
+    execSync('npm install')
     console.log(`  All done 🎉`)
 
     try {
@@ -97,13 +97,13 @@ async function addDesign() {
     'config/dependencies.yaml'
   )}
 
-  If you change any of these, run ${chalk.blue('yarn reconfigure')} to update the package(s).
+  If you change any of these, run ${chalk.blue('npm run reconfigure')} to update the package(s).
 
 
   ${chalk.bold.yellow('👷 Get to work')}
   ${chalk.gray('≡≡≡≡≡≡≡≡≡≡≡≡≡≡')}
 
-  🚀  You can now start the org development environment with ${chalk.blue('yarn org')}
+  🚀  You can now start the org development environment with ${chalk.blue('npm run org')}
   📖  Documentation is available at ${chalk.green('https://freesewing.dev/')}
   🤓  Happy hacking
 
@@ -169,13 +169,13 @@ async function addPlugin() {
     'config/dependencies.yaml'
   )}
 
-  If you change any of these, run ${chalk.blue('yarn reconfigure')} to update the package(s).
+  If you change any of these, run ${chalk.blue('npm run reconfigure')} to update the package(s).
 
 
   ${chalk.bold.yellow('👷 Get to work')}
   ${chalk.gray('≡≡≡≡≡≡≡≡≡≡≡≡≡≡')}
 
-  🛠️   You can now start the org development environment with ${chalk.blue('yarn org')}
+  🛠️   You can now start the org development environment with ${chalk.blue('npm run org')}
   📖  Documentation is available at ${chalk.green('https://freesewing.dev/')}
   🤓  Happy hacking
 

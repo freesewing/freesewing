@@ -1,0 +1,16 @@
+{
+  "id": "florence",
+  "name": "Florence face mask",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for a face mask",
+  "design": "Joost De Cock",
+  "difficulty": 1,
+  "tags": [
+    "accessories"
+  ],
+  "techniques": [
+    "curved-seam"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/florence"
+}

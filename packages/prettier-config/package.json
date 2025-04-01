@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/prettier-config",
-  "version": "3.3.0-rc.1",
+  "version": "4.0.0",
   "description": "FreeSewing's shared configuration for prettier",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -17,12 +17,15 @@
     "prettier"
   ],
   "type": "module",
-  "module": "dist/index.mjs",
+  "module": "src/index.mjs",
   "exports": {
     ".": "./index.json"
   },
   "scripts": {
-    "build": "echo \"prettier-config: No build required\" && exit 0"
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
+    "test": "echo \"prettier-config: No tests configured. Perhaps you could write some?\" && exit 0",
+    "tips": "node ../../scripts/help.mjs",
+    "lint": "npx eslint 'src/**' 'tests/*.mjs'"
   },
   "peerDependencies": {},
   "dependencies": {},
@@ -33,9 +36,9 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
-    "node": ">= 18.17.0 <22"
+    "node": ">= 20"
   }
 }

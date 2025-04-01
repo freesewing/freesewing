@@ -1,5 +1,5 @@
 import { Design, mergeI18n } from '@freesewing/core'
-import { data } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 import { i18n as brianI18n } from '@freesewing/brian'
 import { i18n as bibiI18n } from '../i18n/index.mjs'
 import { front } from './front.mjs'
@@ -26,7 +26,7 @@ import {
 
 // Setup our new design
 const Bibi = new Design({
-  data,
+  data: about,
   parts: [waistband, cuff, armholeBinding, neckBinding, sleeve, back, front],
 })
 
@@ -58,4 +58,5 @@ export {
   draftKnitBinding,
   Bibi,
   i18n,
+  about,
 }

@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-bust",
-  "version": "3.3.0-rc.1",
+  "version": "4.0.0",
   "description": "A FreeSewing plugin that helps with bust-adjusting menswear patterns",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -25,31 +25,20 @@
     "fashion"
   ],
   "type": "module",
-  "module": "dist/index.mjs",
+  "module": "src/index.mjs",
   "exports": {
-    ".": {
-      "internal": "./src/index.mjs",
-      "default": "./dist/index.mjs"
-    }
+    ".": "./src/index.mjs"
   },
   "scripts": {
-    "build": "node build.mjs",
-    "build:all": "yarn build",
-    "clean": "rimraf dist",
-    "mbuild": "NO_MINIFY=1 node build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "test": "npx mocha tests/*.test.mjs",
-    "vbuild": "VERBOSE=1 node build.mjs",
-    "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
     "lint": "npx eslint 'src/**' 'tests/*.mjs'",
     "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
-    "testci": "NODE_OPTIONS=\"--conditions=internal\" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
-    "wbuild": "node build.mjs",
-    "wbuild:all": "yarn wbuild"
+    "testci": "NODE_OPTIONS=\"--conditions=internal\" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.3.0-rc.1"
+    "@freesewing/core": "4.0.0"
   },
   "dependencies": {},
   "devDependencies": {
@@ -57,14 +46,16 @@
     "chai": "5.1.1"
   },
   "files": [
-    "dist/*",
+    "src/",
+    "i18n/",
+    "about.json",
     "README.md"
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
-    "node": ">= 18.17.0 <22"
+    "node": ">= 20"
   }
 }

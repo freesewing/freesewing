@@ -1,0 +1,161 @@
+---
+title: "Hugo hoodie: Design Options"
+sidebar_label: Design Options
+sidebar_position: 10
+toc_max_heading_level: 5
+---
+
+import Acrossbackfactor from '@site/docs/docs/designs/hugo/options/acrossbackfactor/readme.mdx'
+import Armholedepth from '@site/docs/docs/designs/hugo/options/armholedepth/readme.mdx'
+import Backneckcutout from '@site/docs/docs/designs/hugo/options/backneckcutout/readme.mdx'
+import Bicepsease from '@site/docs/docs/designs/hugo/options/bicepsease/readme.mdx'
+import Chestease from '@site/docs/docs/designs/hugo/options/chestease/readme.mdx'
+import Cuffease from '@site/docs/docs/designs/hugo/options/cuffease/readme.mdx'
+import Draftforhighbust from '@site/docs/docs/designs/hugo/options/draftforhighbust/readme.mdx'
+import Hipsease from '@site/docs/docs/designs/hugo/options/hipsease/readme.mdx'
+import Legacyarmholedepth from '@site/docs/docs/designs/hugo/options/legacyarmholedepth/readme.mdx'
+import Lengthbonus from '@site/docs/docs/designs/hugo/options/lengthbonus/readme.mdx'
+import Pocketwidth from '@site/docs/docs/designs/hugo/options/pocketwidth/readme.mdx'
+import Ribbingheight from '@site/docs/docs/designs/hugo/options/ribbingheight/readme.mdx'
+import Ribbingstretch from '@site/docs/docs/designs/hugo/options/ribbingstretch/readme.mdx'
+import Sleevelengthbonus from '@site/docs/docs/designs/hugo/options/sleevelengthbonus/readme.mdx'
+
+## Conditional Options {#conditional}
+### Armhole depth {#armholedepth}
+
+**Controls the depth of the armhole. Higher values make a deeper armhole.**
+- Type: **Percentage**
+- Default: **2%**
+- Minimum: **-10%**
+- Maximum: **50%**
+
+<Armholedepth />
+
+## Fit {#fit}
+### Biceps ease {#bicepsease}
+
+**The amount of ease at your upper arm. Note that while we try to respect this, fitting the sleeve to the armhole takes precedence over respecting the exact amount of ease.**
+- Type: **Percentage**
+- Default: **15%**
+- Minimum: **0%**
+- Maximum: **50%**
+
+<Bicepsease />
+
+### Chest ease {#chestease}
+
+**The amount of ease at your chest.**
+- Type: **Percentage**
+- Default: **8%**
+- Minimum: **4%**
+- Maximum: **20%**
+
+<Chestease />
+
+### Cuff ease {#cuffease}
+
+**The amount of ease at your wrist.**
+- Type: **Percentage**
+- Default: **20%**
+- Minimum: **10%**
+- Maximum: **50%**
+
+<Cuffease />
+
+### Draft for high bust {#draftforhighbust}
+
+**Draft the pattern using the high bust measurement if it is available, instead of using the chest measurement. This can result in a more fitted garment for people with breasts. (Please note that no additional adjustments or shaping is performed. Further manual adjustments may be needed for those with a larger difference between high bust and chest measurements.)**
+- Type: **Boolean**
+- Default: **false**
+
+<Draftforhighbust />
+
+### Hips ease {#hipsease}
+
+**The amount of ease at your hips.**
+- Type: **Percentage**
+- Default: **12%**
+- Minimum: **4%**
+- Maximum: **20%**
+
+<Hipsease />
+
+### Ribbing stretch {#ribbingstretch}
+
+**Use this to adapt the pattern to how stretchy the ribbing that you are using is.**
+- Type: **Percentage**
+- Default: **5%**
+- Minimum: **0%**
+- Maximum: **10%**
+
+<Ribbingstretch />
+
+## Style {#style}
+### Length bonus {#lengthbonus}
+
+**The amount to lengthen the garment. A negative value will shorten it.**
+- Type: **Percentage**
+- Default: **10%**
+- Minimum: **0%**
+- Maximum: **20%**
+
+<Lengthbonus />
+
+### Pocket width {#pocketwidth}
+
+**Determined the width of the pocket.**
+- Type: **Percentage**
+- Default: **50%**
+- Minimum: **35%**
+- Maximum: **65%**
+
+<Pocketwidth />
+
+### Ribbing height {#ribbingheight}
+
+**Controls the height of the ribbing**
+- Type: **Percentage**
+- Default: **10%**
+- Minimum: **4%**
+- Maximum: **20%**
+
+<Ribbingheight />
+
+### Sleeve length bonus {#sleevelengthbonus}
+
+**The amount to lengthen the sleeve. A negative value will shorten it.**
+- Type: **Percentage**
+- Default: **2%**
+- Minimum: **0%**
+- Maximum: **10%**
+
+<Sleevelengthbonus />
+
+## Advanced {#advanced}
+### Across back factor {#acrossbackfactor}
+
+**Controls your across back width as a factor of your shoulder to shoulder measurement.**
+- Type: **Percentage**
+- Default: **98%**
+- Minimum: **93%**
+- Maximum: **100%**
+
+<Acrossbackfactor />
+
+### Back neck cutout {#backneckcutout}
+
+**How deep the neck is cut out at the back**
+- Type: **Percentage**
+- Default: **5%**
+- Minimum: **2%**
+- Maximum: **8%**
+
+<Backneckcutout />
+
+### Legacy armhole depth {#legacyarmholedepth}
+
+**Enable this option to use the legacy way to calculate the armhole depth (using biceps circumference) rather than the v3 way (using the waist to armpit measurement)**
+- Type: **Boolean**
+- Default: **false**
+
+<Legacyarmholedepth />

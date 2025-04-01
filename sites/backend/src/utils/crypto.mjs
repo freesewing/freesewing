@@ -1,7 +1,32 @@
 import bcrypt from 'bcryptjs' // Required for legacy password hashes
+import jose from 'node-jose'
 import { createHash, createCipheriv, createDecipheriv, scryptSync, randomBytes } from 'crypto'
 import { log } from './log.mjs'
 import { asJson } from './index.mjs'
+
+/*
+ * Converts a key to JWKS
+ */
+export async function getJwks(base64Key) {
+  // Create a key store
+  const keystore = jose.JWK.createKeyStore()
+
+  // 2. RSA key (more secure, recommended for production)
+  await keystore.generate('RSA', 2048, {
+    use: 'sig',
+    alg: 'RS256',
+    kid: 'sig-' + Math.floor(Date.now() / 1000).toString(),
+  })
+
+  // Export the JWKS (include private key material)
+  const jwks = keystore.toJSON(true)
+
+  // Save to file
+  //await fs.writeFile('jwks.json', JSON.stringify(jwks, null, 2));
+  //console.log('New JWKS successfully generated');
+
+  return jwks
+}
 
 /*
  * Hashes an email address (or other string)

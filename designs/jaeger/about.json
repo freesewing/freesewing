@@ -1,0 +1,25 @@
+{
+  "id": "jaeger",
+  "name": "Jaeger jacket",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for a sport coat style jacket",
+  "design": "Joost De Cock",
+  "difficulty": 5,
+  "tags": [
+    "tops",
+    "coats"
+  ],
+  "techniques": [
+    "hem",
+    "pocket",
+    "curved-seam",
+    "precision",
+    "set-sleeve",
+    "welt-pocket",
+    "lining",
+    "interfacing",
+    "button"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/jaeger"
+}

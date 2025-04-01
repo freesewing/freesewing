@@ -1,6 +1,18 @@
 # Change log for: @freesewing/huey
 
 
+## 4.0.0 (2024-04-01)
+
+### Changed
+
+ - The lengthBonus option default was changed from 0% to 15%. Fixes
+
+### Fixed
+
+ - Fixed an issue where ribbing height would distort the pocket under certain conditions. Fixes
+ - Adding missing translation for ribbing option
+ - Hide unused ribbing parts when ribbing option is disabled
+
 ## 3.1.0 (2023-12-26)
 
 ### Changed

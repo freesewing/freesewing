@@ -1,6 +1,12 @@
 # Change log for: @freesewing/hugo
 
 
+## 4.0.0 (2024-04-01)
+
+### Fixed
+
+ - Add missing dimension id attributes
+
 ## 3.2.0 (2024-02-11)
 
 ### Fixed

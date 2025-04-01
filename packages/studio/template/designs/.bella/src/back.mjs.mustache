@@ -1,0 +1,11 @@
+import { back as bellaBack } from '@freesewing/bella'
+
+export const back = {
+  from: bellaBack,
+  name: '{{ name }}.back',
+  hide: { from: true },
+  options: {},
+  draft: ({ part }) => {
+    return part
+  },
+}

@@ -106,16 +106,23 @@ export const front = {
 
     if (sa) {
       const saBase = new Path()
-        .move(points.bottomLeft.shift(-90, sa))
-        .line(points.bottomRight.shift(-90, sa))
-        .line(points.topRightBack)
+        .move(points.bottomLeft.shift(-90, strapWidth - sa))
+        .line(points.bottomRight.shift(-90, strapWidth - sa).shift(0, strapWidth - sa))
+        .line(points.topRightBack.shift(0, strapWidth - sa))
         .curve(points.topRightBackCPfront, points.topRightCPdown, points.topRightHem)
-        .line(points.topRight.shift(90, sa))
-        .line(points.topLeft.shift(90, sa))
+        .line(points.topRight.shift(90, strapWidth - sa))
+        .line(points.topLeft.shift(90, strapWidth - sa))
       paths.sa = saBase
         .clone()
         .offset(sa * 2)
         .addClass('fabric sa')
+      paths.sa = new Path()
+        .move(points.bottomLeft)
+        .line(paths.sa.start())
+        .join(paths.sa)
+        .line(points.topLeft)
+        .attr('class', 'fabric sa')
+
       if (complete) {
         paths.hemHint = saBase.clone().offset(sa).addClass('note help')
         macro('banner', {
@@ -127,6 +134,24 @@ export const front = {
           classes: 'fill-note center',
         })
       }
+      macro('hd', {
+        from: points.bottomRight,
+        to: points.bottomRight.shift(0, strapWidth),
+        y: points.bottomLeft.y + sa + (sa ? strapWidth : 0) + 15,
+        id: 'wBottomHem',
+      })
+      macro('vd', {
+        from: points.topLeft,
+        to: points.topLeft.shift(90, strapWidth),
+        x: points.topLeftHem.x - 15,
+        id: 'foldoverTop',
+      })
+      macro('vd', {
+        from: points.bottomLeft.shift(270, strapWidth),
+        to: points.bottomLeft,
+        x: points.topLeftHem.x - 15,
+        id: 'hLeftToFoldover',
+      })
     }
 
     /*
@@ -178,52 +203,33 @@ export const front = {
     macro('hd', {
       from: points.bottomLeft,
       to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15,
+      y: points.bottomLeft.y + sa + (sa ? strapWidth : 0) + 15,
       id: 'wBottom',
     })
     macro('hd', {
       from: points.topLeft,
       to: points.topRight,
-      y: points.topLeft.y - sa - 15,
+      y: points.topLeft.y - sa - (sa ? strapWidth : 0) - 15,
       id: 'wTop',
     })
     macro('vd', {
       from: points.bottomLeft,
       to: points.topLeft,
-      x: points.topLeft.x - 30,
+      x: points.topLeft.x - 15,
       id: 'hLeft',
     })
     macro('vd', {
       from: points.bottomRight,
       to: points.topRightBack,
-      x: points.topRightBack.x + sa + 15,
+      x: points.topRightBack.x + sa + (sa ? strapWidth : 0) + 15,
       id: 'hRightBottom',
     })
     macro('vd', {
       from: points.topRightBack,
       to: points.topRight,
-      x: points.topRightBack.x + sa + 15,
+      x: points.topRightBack.x + sa + (sa ? strapWidth : 0) + 15,
       id: 'hRightTop',
     })
-    macro('vd', {
-      from: points.topLeftHem,
-      to: points.topLeft,
-      x: points.topLeftHem.x - 15,
-      id: 'foldoverTop',
-    })
-    macro('vd', {
-      from: points.bottomLeftHem,
-      to: points.topLeftHem,
-      x: points.topLeftHem.x - 15,
-      id: 'hLeftToFoldover',
-    })
-    macro('vd', {
-      from: points.bottomLeft,
-      to: points.bottomLeftHem,
-      x: points.bottomLeftHem.x + sa + 15,
-      id: 'hBottomHem',
-    })
-
     return part
   },
 }

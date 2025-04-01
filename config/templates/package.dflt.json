@@ -12,28 +12,23 @@
   },
   "keywords": ["freesewing"],
   "type": "module",
-  "module": "dist/index.mjs",
+  "module": "src/index.mjs",
   "exports": {
-    ".": {
-      "internal": "./src/index.mjs",
-      "default": "./dist/index.mjs"
-    }
+    ".": "./src/index.mjs"
   },
   "scripts": {
-    "cibuild_step1": "node build.mjs",
-    "build": "node build.mjs",
     "testonly": "BABEL_ENV=production ../../node_modules/.bin/_mocha tests/*.test.js --require @babel/register",
-    "publish": "npm run build && npm publish --access public"
+    "publish": "npm publish --access public"
   },
   "peerDependencies": {},
   "dependencies": {},
   "devDependencies": {},
-  "files": ["dist/*", "README.md"],
+  "files": ["src/", "i18n/", "about.json", "README.md"],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
-    "node": ">= 18.17.0 <22"
+    "node": ">= 20"
   }
 }

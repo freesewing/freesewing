@@ -1,6 +1,6 @@
 // Import Design constructor
 import { Design } from '@freesewing/core'
-import { data } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 import { i18n } from '../i18n/index.mjs'
 // Import Parts
 import { front } from './front.mjs'
@@ -17,7 +17,7 @@ import { legRibbing } from './legribbing.mjs'
 
 // Create new design
 const Onyx = new Design({
-  data,
+  data: about,
   parts: [
     front,
     back,
@@ -48,4 +48,5 @@ export {
   legRibbing,
   Onyx,
   i18n,
+  about,
 }

@@ -1,0 +1,21 @@
+{
+  "id": "cornelius",
+  "name": "Cornelius cycling breeches",
+  "code": "Wouter Van Wageningen",
+  "description": "A FreeSewing pattern for cycling breeches, based on the Keystone drafting system",
+  "design": "Wouter Van Wageningen",
+  "difficulty": 3,
+  "tags": [
+    "bottoms",
+    "trousers"
+  ],
+  "techniques": [
+    "curved-seam",
+    "fly",
+    "zipper",
+    "button",
+    "pocket"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/cornelius"
+}

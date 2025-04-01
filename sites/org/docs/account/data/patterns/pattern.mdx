@@ -1,0 +1,17 @@
+---
+title: Pattern
+sidebar_label: ' '
+sidebar_position: 99
+---
+
+import { getSearchParam } from '@freesewing/utils'
+import { DocusaurusDoc } from '@freesewing/react/components/Docusaurus'
+import { RoleBlock } from '@freesewing/react/components/Role'
+import { Pattern } from '@freesewing/react/components/Account'
+import Link from '@docusaurus/Link'
+
+<DocusaurusDoc>
+  <RoleBlock user>
+    <Pattern Link={Link} id={getSearchParam('id')} />
+  </RoleBlock>
+</DocusaurusDoc>

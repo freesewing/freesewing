@@ -1,0 +1,21 @@
+{
+  "id": "bella",
+  "name": "Bella body block",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for a womenswear bodice block",
+  "design": [
+    "Bella Incognito",
+    "Joost De Cock"
+  ],
+  "difficulty": 3,
+  "tags": [
+    "blocks",
+    "tops"
+  ],
+  "techniques": [
+    "dart",
+    "block"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/bella"
+}

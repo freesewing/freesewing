@@ -27,12 +27,17 @@ export const asJson = JSON.stringify
 /*
  * Builds a url using the correct scheme, language and domain
  */
-export const i18nUrl = (lang, path) => {
+export const i18nUrl = (lang = 'en', path) => {
   let url = `${website.scheme}://${website.domain}`
   if (lang !== 'en') url += `/${lang}`
 
   return url + path
 }
+
+/*
+ * Builds a url using the correct scheme and domain
+ */
+export const websiteUrl = (path) => `${website.scheme}://${website.domain}${path}`
 
 /*
  * Writes a pojo to disk as JSON under a random name

@@ -1,0 +1,18 @@
+{
+  "id": "diana",
+  "name": "Diana draped top",
+  "code": "Erica Alcusa Sáez",
+  "description": "A FreeSewing pattern for a top with a draped neck",
+  "design": "Erica Alcusa Sáez",
+  "difficulty": 2,
+  "tags": [
+    "tops"
+  ],
+  "techniques": [
+    "curved-seam",
+    "flat-sleeve",
+    "hem"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/diana"
+}

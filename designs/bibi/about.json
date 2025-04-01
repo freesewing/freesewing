@@ -1,0 +1,19 @@
+{
+  "id": "bibi",
+  "name": "Bibi body block",
+  "code": "Jonathan Haas",
+  "description": "A FreeSewing pattern for a knit top body block",
+  "design": "Jonathan Haas",
+  "difficulty": 2,
+  "tags": [
+    "blocks",
+    "tops"
+  ],
+  "techniques": [
+    "curved-seam",
+    "hem",
+    "flat-sleeve"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/bibi"
+}

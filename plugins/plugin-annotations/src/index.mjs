@@ -1,4 +1,4 @@
-import { name, version } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 // i18n
 import { i18n as i18nAnnotations } from '../i18n/index.mjs'
 // Defs only
@@ -23,8 +23,7 @@ import { sewtogetherMacros, sewtogetherDefs } from './sewtogether.mjs'
 import { flagStores } from './flag.mjs'
 
 export const plugin = {
-  name,
-  version,
+  ...about,
   hooks: {
     preRender: [
       function (svg) {

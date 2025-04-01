@@ -1,0 +1,22 @@
+---
+title: Measurements we use
+---
+
+import { measurements } from '@freesewing/config'
+import { measurements as translations } from '@freesewing/i18n'
+import Link from '@docusaurus/Link'
+
+Documentation for all measurements used by FreeSewing designs:
+
+<ul className="tw-list-disc">
+  {measurements.map((m) => (
+    <li key={m} className="tw-list-disc">
+      <Link
+        href={`/docs/measurements/${m.toLowerCase()}`}
+        className="tw-capitalize tw-font-medium tw-underline tw-decoration-2 hover:tw-decoration-4"
+      >
+        {translations[m]}
+      </Link>
+    </li>
+  ))}
+</ul>

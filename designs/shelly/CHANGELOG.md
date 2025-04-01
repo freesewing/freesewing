@@ -1,6 +1,12 @@
 # Change log for: @freesewing/shelly
 
 
+## 4.0.0 (2024-04-01)
+
+### Changed
+
+ - Always load plugin-bust due to its changes in how it handle conditionality.
+
 ## 3.0.0 (2023-09-30)
 
 ### Changed

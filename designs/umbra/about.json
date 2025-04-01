@@ -1,0 +1,24 @@
+{
+  "id": "umbra",
+  "name": "Umbra undies",
+  "code": [
+    "Joost De Cock",
+    "Jonathan Haas"
+  ],
+  "description": "A FreeSewing pattern for a basic, highly-customizable underwear pattern",
+  "design": [
+    "Joost De Cock",
+    "Jonathan Haas"
+  ],
+  "difficulty": 2,
+  "tags": [
+    "bottoms",
+    "underwear"
+  ],
+  "techniques": [
+    "elastic",
+    "curved-seam"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/umbra"
+}

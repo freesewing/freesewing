@@ -26,7 +26,6 @@
     "vbuild": "VERBOSE=1 node build.mjs",
     "wbuild": "node build.mjs"
   },
-  "peerDependencies": {},
   "dependencies": {
     "@aws-sdk/client-sesv2": "3.592.0",
     "@prisma/client": "5.15.0",
@@ -37,12 +36,15 @@
     "js-yaml": "4.1.0",
     "lodash.get": "4.4.2",
     "mustache": "4.2.0",
+    "node-jose": "^2.2.0",
+    "oidc-provider": "^8.8.1",
     "otplib": "12.0.1",
     "passport": "0.7.0",
     "passport-http": "0.3.0",
     "passport-jwt": "4.0.1",
     "pino": "9.2.0",
     "qrcode": "1.5.3",
+    "sharp": "^0.33.5",
     "swagger-ui-dist": "5.17.10",
     "swagger-ui-express": "5.0.0"
   },
@@ -56,7 +58,7 @@
     "prisma": "5.15.0"
   },
   "engines": {
-    "node": ">= 18.17.0 <22"
+    "node": ">= 18.17.0"
   },
   "private": true
 }

@@ -1,5 +1,5 @@
 import { Design, mergeI18n } from '@freesewing/core'
-import { data } from '../data.mjs'
+import about from '../about.json' with { type: 'json' }
 import { i18n as brianI18n } from '@freesewing/brian'
 import { i18n as hueyI18n } from '../i18n/index.mjs'
 // Parts
@@ -13,7 +13,7 @@ import { cuff } from './cuff.mjs'
 
 // Create design
 const Huey = new Design({
-  data,
+  data: about,
   parts: [back, front, sleeve, pocket, hood, waistband, cuff],
 })
 
@@ -21,4 +21,4 @@ const Huey = new Design({
 const i18n = mergeI18n([brianI18n, hueyI18n])
 
 // Named exports
-export { back, front, sleeve, pocket, hood, waistband, cuff, Huey, i18n }
+export { back, front, sleeve, pocket, hood, waistband, cuff, Huey, i18n, about }

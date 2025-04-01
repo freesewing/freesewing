@@ -1,0 +1,18 @@
+{
+  "id": "titan",
+  "name": "Titan trouser block",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for a unisex trouser block",
+  "design": [
+    "Debra Bean",
+    "Joost De Cock"
+  ],
+  "difficulty": 3,
+  "tags": [
+    "blocks",
+    "bottoms"
+  ],
+  "techniques": [],
+  "version": "4.0.0",
+  "pkg": "@freesewing/titan"
+}

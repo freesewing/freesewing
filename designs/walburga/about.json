@@ -1,0 +1,17 @@
+{
+  "id": "walburga",
+  "name": "Walburga wappenrock",
+  "code": "Rika Tamaike",
+  "description": "A FreeSewing pattern for a wappenrock (tabard/surcoat), a historical European/medieval (ish) garment",
+  "design": "Rika Tamaike",
+  "difficulty": 1,
+  "tags": [
+    "bottoms",
+    "historical"
+  ],
+  "techniques": [
+    "hem"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/walburga"
+}

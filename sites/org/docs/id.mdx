@@ -1,0 +1,20 @@
+---
+title: Your FreeSewing Account ID
+sidebar_class_name: tw-hidden
+---
+
+import { RoleBlock } from '@freesewing/react/components/Role'
+import { UserId } from '@freesewing/react/components/Account'
+
+<RoleBlock user>
+  Your FreeSewing account ID is:{' '}
+  <b>
+    <UserId />
+  </b>
+</RoleBlock>
+
+:::tip What is an account ID?
+Every FreeSewing account has a unique ID.
+Unlike a username --- which you can change --- the account ID never changes, so
+it is how we reference to a specific account.
+:::

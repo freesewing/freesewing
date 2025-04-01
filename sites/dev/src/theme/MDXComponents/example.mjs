@@ -1,14 +1,13 @@
-import React from 'react';
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import React from 'react'
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
 import { pluginFlip } from '@freesewing/plugin-flip'
 import { pluginGore } from '@freesewing/plugin-gore'
 import { pluginRingsector } from '@freesewing/plugin-ringsector'
 import { Design } from '@freesewing/core'
 import yaml from 'js-yaml'
-import { Pattern } from '@freesewing/react-components/pattern'
-import { PatternXray } from '@freesewing/react-components/xray'
-//import { t } from '@freesewing/react-components/methods'
+import { Pattern } from '@freesewing/react/components/Pattern'
+import { Xray } from '@freesewing/react/components/Xray'
 import Markdown from 'react-markdown'
 
 // Get code from children
@@ -74,7 +73,7 @@ export const ShowPattern = ({ renderProps, logs, mode = 'normal' }) => {
     )
 
   return mode === 'xray' ? (
-    <PatternXray {...{ renderProps }} className="freesewing pattern text-base-content" />
+    <Xray {...{ renderProps }} className="freesewing pattern text-base-content" />
   ) : (
     <Pattern {...{ renderProps }} className="freesewing pattern text-base-content" />
   )
@@ -120,7 +119,11 @@ export const Example = ({
     </TabItem>
   )
   if (children) {
-    const codeTab = <TabItem key="code" value="code" label="Code">{children}</TabItem>
+    const codeTab = (
+      <TabItem key="code" value="code" label="Code">
+        {children}
+      </TabItem>
+    )
     if (tutorial && !previewFirst) tabs.unshift(codeTab)
     else tabs.push(codeTab)
   }
@@ -132,9 +135,7 @@ export const Example = ({
 
   return (
     <div className="my-8">
-      <Tabs>
-        {tabs}
-      </Tabs>
+      <Tabs>{tabs}</Tabs>
       {caption && (
         <div className="caption">
           <Markdown>{caption}</Markdown>

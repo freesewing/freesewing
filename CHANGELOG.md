@@ -3,6 +3,9 @@
 
 ## Unreleased
 
+
+## 4.0.0 (2024-04-01)
+
 ### bibi
 
 #### Changed
@@ -133,7 +136,24 @@
 
  - The `withCondition` named  export is deprecated and will always return true.
 
+### collection
+
+#### Added
+
+ - Added a new `@freesewing/collection` package that bundles all our designs
+
+### config
+
+#### Added
+
+ - Added a new `@freesewing/config` package for shared configuration
+
 ### core
+
+#### Breaking
+
+ - FreeSewing new requires NodeJS 20 (or more recent)
+ - We removed all but English translations. We still support i18n in our core library and designs, but no longer provide translations
 
 #### Added
 
@@ -143,6 +163,30 @@
 #### Fixed
 
  - Fix an issue when splitting path on start or end point. Fixes
+
+### i18n
+
+#### Added
+
+ - The `@freesewing/i18n` package holds translations in English for where they are needed
+
+### studio
+
+#### Added
+
+ - Added `@freesewing/studio`, our new development environment
+
+### react
+
+#### Added
+
+ - The `@freesewing/react` package holds shared components, hooks, and context for our React-based frontends
+
+### utils
+
+#### Added
+
+ - Added a new `@freesewing/utils` package for shared utils
 
 
 ## 3.2.0 (2024-02-11)
@@ -224,12 +268,6 @@
 #### Deprecated
 
  - Calling `Path.join` with a second parameter to indicate that the resulting paths most be closed is now deprecated and will be removed in FreeSewing v4.
-
-### react-components
-
-#### Added
-
- - This Pattern component now supports translation of nested arrays of strings, giving you more flexibility to concatenate translated parts of strings
 
 
 ## 3.1.0 (2023-12-26)
@@ -423,12 +461,6 @@
  - The conditional loading of plugins had a bug causing them to never be loaded
  - Make Path.split() more robust when handling edge-case. Fixes
  - Prevent utils.circlesIntersect() from running sqrt on a negative number. Fixes
-
-### new-design
-
-#### Fixed
-
- - Removed unwanted debug output
 
 
 ## 3.0.0 (2023-09-30)
@@ -674,16 +706,6 @@
 #### Changed
 
  - Make generatePartTransform a named export
-
-### new-design
-
-#### Changed
-
- - We're now loading content from the main branch by default
-
-#### Fixed
-
- - Add bin entry to package.json
 
 
 ## 2.21.2 (2022-06-30)
@@ -1092,7 +1114,23 @@
  - Migrated from Rollup to Esbuild for all builds
  - The `pctBasedOn()` helper method for pattern config was moved to config-helpers We did not make this a breaking change since it's only used internally.
 
+### i18n
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+#### Fixed
+
+ - Added missing lab namespace for English
+
 ### models
+
+#### Changed
+
+ - Migrated from Rollup to Esbuild for all builds
+
+### utils
 
 #### Changed
 
@@ -1202,12 +1240,6 @@
 
  - Fix bug in Svg.escapeText() that only escaped the first quote
 
-### backend
-
-#### Fixed
-
- - Mitigate risk of denial-of-service attacks in catch-all route
-
 
 ## 2.20.4 (2022-01-28)
 
@@ -1230,6 +1262,12 @@
 
 
 ## 2.20.2 (2022-01-27)
+
+### i18n
+
+#### Fixed
+
+ - Patterns options were always in English due to symlinks being used
 
 
 ## 2.20.1 (2022-01-27)
@@ -1558,6 +1596,12 @@
 #### Added
 
  - Added support for `settings.scale`
+
+### i18n
+
+#### Fixed
+
+ - Fixed issue that was causing plugin translations to always be in English
 
 
 ## 2.19.9 (2022-01-09)
@@ -1991,6 +2035,13 @@
 
  - Pattern.on() is now chainable as it returns the Pattern object
 
+### i18n
+
+#### Fixed
+
+ - Fixed bug in resolving of shared pattern options
+ - Removed optional chaining which broke node v12 support
+
 ### snapseries
 
 #### Added
@@ -2037,6 +2088,16 @@
 
  - Handle path.offset() of very short curves with control points on the start or end point Closes [#1257](https://github.com/freesewing/freesewing/issues/1257)
 
+### i18n
+
+#### Added
+
+ - Added translations for Yuri
+
+#### Fixed
+
+ - Added optional chaining so missing options always lead to clear error message
+
 
 ## 2.17.4 (2021-08-20)
 
@@ -2048,6 +2109,18 @@
 
 
 ## 2.17.3 (2021-08-16)
+
+### i18n
+
+#### Added
+
+ - New translations
+
+### utils
+
+#### Fixed
+
+ - Added missing `bustPointToUnderbust` measurement to `neckstimate`
 
 
 ## 2.17.2 (2021-08-15)
@@ -2063,6 +2136,12 @@
 #### Added
 
  - Added new ffsa option to let the user control the extra SA for flat-felled seams Closes [#1251](https://github.com/freesewing/freesewing/issues/1251)
+
+### i18n
+
+#### Added
+
+ - Added new ffsa option for simon & simone
 
 ### models
 
@@ -2185,8 +2264,20 @@
 
  - Fix a bug in `path.shiftAlong` where no point is returned if the distance to shift is a fraction of one step (1/25mm) into a new path segment See [#1140](https://github.com/freesewing/freesewing/issues/1140)
 
+### i18n
+
+#### Changed
+
+ - Changed antman references to antperson
+
 
 ## 2.16.2 (2021-05-05)
+
+### i18n
+
+#### Changed
+
+ - String updates
 
 
 ## 2.16.1 (2021-05-30)
@@ -2395,6 +2486,19 @@
 
  - Changed `department` setting in config in line with new grouping
 
+### i18n
+
+#### Added
+
+ - New translations for pattern filter
+
+### utils
+
+#### Changed
+
+ - neckstimate now takes an extra `noRound` parameter to return the unrounded value
+ - measurementDiffers takes an extra `absolute` value that can be set to false to get the non-absolute and non-rounded value
+
 
 ## 2.16.0 (2021-05-24)
 
@@ -2422,6 +2526,12 @@
 #### Fixed
 
  - Fixed third button not showing up See [#973](https://github.com/freesewing/freesewing/issues/973)
+
+### i18n
+
+#### Changed
+
+ - Changes to cfp strings
 
 
 ## 2.15.4 (2021-05-08)
@@ -2554,6 +2664,13 @@
 
  - Don't round coordinates internally to avoid path.split misses
 
+### i18n
+
+#### Added
+
+ - Added translation for new Titan options
+ - Added translations for Charlie
+
 
 ## 2.14.0 (2021-03-07)
 
@@ -2568,6 +2685,12 @@
 #### Fixed
 
  - Replaced grainline indicator on pocket with cut-on-fold indicator
+
+### i18n
+
+#### Added
+
+ - Added translations for Cornelius
 
 
 ## 2.13.2 (2021-02-21)
@@ -2616,6 +2739,12 @@
 #### Fixed
 
  - Added missing sleeve notch on yoke
+
+### utils
+
+#### Added
+
+ - Pass pattern handle to tiler
 
 
 ## 2.13.0 (2021-02-13)
@@ -2669,6 +2798,12 @@
 #### Fixed
 
  - Make sure roudEnd and roundStart points are always available
+
+### i18n
+
+#### Added
+
+ - Translation for Hortensia
 
 
 ## 2.12.1 (2021-01-27)
@@ -2794,6 +2929,16 @@
 
  - Removed unused lengthBonus option
 
+### i18n
+
+#### Changed
+
+ - New strings for new features
+
+#### Fixed
+
+ - Type in Simon title
+
 
 ## 2.10.7 (2020-11-18)
 
@@ -2808,6 +2953,12 @@
 
 
 ## 2.10.5 (2020-11-14)
+
+### i18n
+
+#### Fixed
+
+ - Added missing `cty.` translations to non-English language files
 
 
 ## 2.10.4 (2020-11-13)
@@ -2870,6 +3021,18 @@
  - Parts not get a `name` property set that hold their (own) name/id
  - Added the `info` type to raised events
  - Added support for conditional loading of plugins
+
+### i18n
+
+#### Added
+
+ - Added translations for plugin-title
+ - Added translations for teagan
+ - Added some translations for the UI
+
+#### Fixed
+
+ - Replaced a few identical files with symlinks
 
 
 ## 2.8.1 (2020-08-16)
@@ -2980,6 +3143,12 @@
  - Added new debug functionality through the use of the `raise.debug`
  - Added a new `debug` setting
  - Shorthand now proxies objects to allow debug and raise
+
+### utils
+
+#### Added
+
+ - Added backend calls for creating gists/issues on Github
 
 
 ## 2.7.0 (2020-07-12)
@@ -3258,6 +3427,13 @@
 
  - [Properly escape quotes in imperial units](https://github.com/freesewing/freesewing/issues/437)
 
+### i18n
+
+#### Changed
+
+ - Added translations for Titan
+ - Removed `Circumference` suffix from measurement names
+
 ### models
 
 #### Changed
@@ -3265,6 +3441,21 @@
  - Models now come with the new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
  - Ported models to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
  - Removed `Circumference` suffix from measurement names
+
+### utils
+
+#### Added
+
+ - Added new `isDegMeasurement` method. See [#358](https://github.com/freesewing/freesewing/issues/358)
+ - `neckStimate` now supports all new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+
+#### Changed
+
+ - Changed `neckstimate` to handle new `shoulderSlope` degree measurement. See [#358](https://github.com/freesewing/freesewing/issues/358)
+ - Changed `neckstimate` to support all new measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
+ - Ported `neckstimate` to the crotchDepth measurement. See [#425](https://github.com/freesewing/freesewing/issues/425)
+ - Removed `Circumference` suffix from measurement names
+ - Added the `isDegMeasurement` method
 
 
 ## 2.6.0 (2020-05-01)
@@ -3310,6 +3501,12 @@
  - utils now includes `Bezier` which holds the bezier-js library so you don't need to re-import it
  - We no longer set the plugin configuration/data object to fall in `pattern.use()`
 
+### i18n
+
+#### Changed
+
+ - Changes to support the renaming of @freesewing/fu to @freesewing/florence
+
 
 ## 2.5.0 (2020-04-05)
 
@@ -3319,8 +3516,20 @@
 
  - Diana is a top with a draped neck
 
+### i18n
+
+#### Added
+
+ - title, description, and options for Dianna
+
 
 ## 2.4.6 (2020-03-23)
+
+### i18n
+
+#### Fixed
+
+ - Fixed an bug in the i18n package
 
 
 ## 2.4.5 (2020-03-19)
@@ -3336,6 +3545,12 @@
 #### Fixed
 
  - Check whether frontScyeDart option is zero prior to implementing it
+
+### utils
+
+#### Changed
+
+ - neckstimate() now returns values rounded to nearest mm
 
 
 ## 2.4.4 (2020-03-15)
@@ -3373,11 +3588,29 @@
 
 ## 2.4.3 (2020-03-12)
 
+### i18n
+
+#### Added
+
+ - Added more translations
+
 
 ## 2.4.2 (2020-03-08)
 
+### i18n
+
+#### Added
+
+ - Added more strings
+
 
 ## 2.4.1 (2020-03-04)
+
+### utils
+
+#### Fixed
+
+ - [#542](https://github.com/freesewing/freesewing.org/issues/542): Prevent neckstimate from throwing when getting an unexpected measurement 
 
 
 ## 2.4.0 (2020-02-29)
@@ -3542,11 +3775,33 @@
  - Added the `Path.noop()` method
  - Added the `Path.insop()` methods
 
+### i18n
+
+#### Added
+
+ - Added translations for Breanna
+
+#### Changed
+
+ - Added/Updated strings for the 2.2 frontend changes
+ - Changed `Joost De Cock` to `Joost` because spam filters don't like cock
+
+#### Removed
+
+ - Removed the files for homepage translation, and moved that content to markdown
+ - Removed the files for editor translation, as it is no longer used
+
 ### models
 
 #### Changed
 
  - Extended the menswear size range to have 10 different sizes, just like womenswear
+
+### utils
+
+#### Changed
+
+ - Neckstimate now uses proportions only
 
 
 ## 2.1.9 (2020-01-18)
@@ -3585,6 +3840,12 @@
 
 ## 2.1.6 (2019-11-24)
 
+### utils
+
+#### Fixed
+
+ - [#317](https://github.com/freesewing/freesewing.org/issues/317): Fixed bug where format was not passed to formatImperial
+
 
 ## 2.1.5 (2019-11-19)
 
@@ -3594,11 +3855,39 @@
 
 ## 2.1.3 (2019-10-18)
 
+### i18n
+
+#### Added
+
+ - More translated strings
+
+### utils
+
+#### Changed
+
+ - Adjusted slope of the shoulderToShoulder measurement in neckstimate data
+
+#### Fixed
+
+ - [#250](https://github.com/freesewing/freesewing.org/issues/250): Model page stays empty with pre 2.0 model data: Error: 'neckstimate() requires a valid measurement name as second parameter. (received underBust)'
+
 
 ## 2.1.2 (2019-10-14)
 
+### i18n
+
+#### Fixed
+
+ - Fixed issue where symlinks were causing all languages to export English strings
+
 
 ## 2.1.1 (2019-10-13)
+
+### utils
+
+#### Fixed
+
+ - Fixed an issue with the formatMm method not adding units
 
 
 ## 2.1.0 (2019-10-06)
@@ -3645,6 +3934,23 @@
 
  - The pattern super constructor now sets a `config` property that holds the pattern configuration. This means that unlike before, there is no need to instantiate a pattern to access its config. You can just import the pattern, and it's config property will contain the pattern config.
 
+### i18n
+
+#### Added
+
+ - Added translations for Penelope, Waralee, and Simone
+
+### utils
+
+#### Added
+
+ - Added backend methods for administration
+ - Added the resendActivationEmail method to backend
+
+#### Fixed
+
+ - Fixed an issue where optionDefault was not handling list options correctly
+
 
 ## 2.0.4 (2019-09-27)
 
@@ -3662,6 +3968,12 @@
 #### Fixed
 
  - [#106](https://github.com/freesewing/freesewing/issues/106): Fix incorrect hem allowance
+
+### utils
+
+#### Fixed
+
+ - Fix measurementDiffers to pass breasts parameter to neckstimate
 
 
 ## 2.0.2 (2019-09-06)
@@ -3686,6 +3998,18 @@
  - [#102](https://github.com/freesewing/freesewing.org/issues/102): Fixed 'Snippets not defined' error when drafting a seperate button placket
  - [#103](https://github.com/freesewing/freesewing.org/issues/103): Fixed 'hemSa not defined' when drafting paperless Simon without seam allowance
 
+### i18n
+
+#### Added
+
+ - [#90](https://github.com/freesewing/freesewing/issues/90): Added missing option translations for Benjamin, Florent, Sandy, Shin, and Theo
+
+### utils
+
+#### Fixed
+
+ - Removed lingering debug statement in formatImperial
+
 
 ## 2.0.1 (2019-09-01)
 
@@ -3703,6 +4027,12 @@
 #### Fixed
 
  - [#86](https://github.com/freesewing/freesewing/issues/86): The `seatCircumference` measurement was missing, thus making it unavailable on the website
+
+### utils
+
+#### Added
+
+ - The `measurementDiffers` method is new.
 
 
 ## 2.0.0 (2019-08-25)
@@ -3881,6 +4211,12 @@
 
  - Initial release
 
+### i18n
+
+#### Added
+
+ - Initial release
+
 ### models
 
 #### Added
@@ -3888,6 +4224,12 @@
  - Initial release
 
 ### prettier-config
+
+#### Added
+
+ - Initial release
+
+### utils
 
 #### Added
 

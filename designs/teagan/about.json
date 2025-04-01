@@ -1,0 +1,19 @@
+{
+  "id": "teagan",
+  "name": "Teagan T-shirt",
+  "code": "Joost De Cock",
+  "description": "A FreeSewing pattern for a T-shirt",
+  "design": "Joost De Cock",
+  "difficulty": 2,
+  "tags": [
+    "tops"
+  ],
+  "techniques": [
+    "curved-seam",
+    "hem",
+    "flat-sleeve",
+    "knit-band"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/teagan"
+}

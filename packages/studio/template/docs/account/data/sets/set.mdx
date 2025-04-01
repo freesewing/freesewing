@@ -1,0 +1,16 @@
+---
+title: Measurement Set
+sidebar_label: ' '
+---
+
+import { getSearchParam } from '@freesewing/utils'
+import { DocusaurusDoc } from '@freesewing/react/components/Docusaurus'
+import { RoleBlock } from '@freesewing/react/components/Role'
+import { Set } from '@freesewing/react/components/Account'
+import Link from '@docusaurus/Link'
+
+<DocusaurusDoc>
+  <RoleBlock user>
+    <Set Link={Link} id={getSearchParam('id')} />
+  </RoleBlock>
+</DocusaurusDoc>

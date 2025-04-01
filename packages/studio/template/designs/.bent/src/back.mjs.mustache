@@ -1,0 +1,11 @@
+import { front } from './front.mjs'
+
+export const back = {
+  from: front,
+  name: '{{ name }}.back',
+  hide: { from: true },
+  options: {},
+  draft: ({ part }) => {
+    return part
+  },
+}

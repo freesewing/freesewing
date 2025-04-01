@@ -1,0 +1,18 @@
+{
+  "id": "hi",
+  "name": "Hi the shark",
+  "code": "Wouter Van Wageningen",
+  "description": "A FreeSewing pattern for a shark plush toy",
+  "design": "Wouter Van Wageningen",
+  "difficulty": 4,
+  "tags": [
+    "accessories",
+    "toys"
+  ],
+  "techniques": [
+    "curved-seam",
+    "dart"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/hi"
+}

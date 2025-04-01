@@ -1,5 +1,5 @@
 import { measurements, neckstimate, CISFEMALE, CISMALE } from './neckstimate.mjs'
-import { degreeMeasurements } from '../../../config/measurements.mjs'
+import { degreeMeasurements } from '@freesewing/config'
 
 const getMeasurements = (size, index) => {
   const all = {}

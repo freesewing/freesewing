@@ -1,9 +1,8 @@
 import { measurements, cisFemaleAdult28 } from '@freesewing/models'
-import designs from '../../config/software/designs.json' assert { type: 'json' }
+//import { designs } from '@freesewing/collection'
 import { expect, assert } from 'chai'
 
 export const getShortName = (name) => name.split('/').pop()
-export const isUtilityDesign = (name) => typeof designs[name].tags === 'undefined'
 // These are ok to use mm options
 const mmAllowed = ['rendertest']
 
@@ -13,8 +12,7 @@ const mmAllowed = ['rendertest']
  *
  * @param string Pattern: The Pattern constructor
  */
-export const testPatternConfig = (Pattern) => {
-  //const pattern = new Pattern()
+export const testPatternConfig = (Pattern, about) => {
   const designConfig = Pattern.designConfig
   const patternConfig = Pattern.patternConfig
   describe('Pattern configuration:', function () {
@@ -43,72 +41,67 @@ export const testPatternConfig = (Pattern) => {
       expect(typeof name).to.equal('string')
       expect(name.length > 1).to.be.true
     })
-    const meta = designs[name]
+    // About tests
     it(`  - 'description' should be set and be a string of reasonable length`, () => {
-      expect(typeof meta.description).to.equal('string')
-      expect(meta.description.length > 15).to.be.true
-      expect(meta.description.length < 280).to.be.true
+      expect(typeof about.description).to.equal('string')
+      expect(about.description.length > 15).to.be.true
+      expect(about.description.length < 280).to.be.true
     })
-    // Config tests for non-utility patterns only
-    if (typeof designs[name].tags !== 'undefined') {
-      it(`  - 'design' should be set and be a string of reasonable length`, () => {
-        const people = Array.isArray(meta.design) ? meta.design : [meta.design]
-        for (const person of people) {
-          expect(typeof person).to.equal('string')
-          expect(person.length > 2).to.be.true
-          expect(person.length < 80).to.be.true
-        }
-      })
-      it(`  - 'code' should be set and be a string of reasonable length`, () => {
-        const people = Array.isArray(meta.code) ? meta.code : [meta.code]
-        for (const person of people) {
-          expect(typeof person).to.equal('string')
-          expect(person.length > 2).to.be.true
-          expect(person.length < 80).to.be.true
-        }
-      })
-      it(`  - 'dfficulty' should be set and be a [1-5] number`, () => {
-        expect(typeof meta.difficulty).to.equal('number')
-        expect([1, 2, 3, 4, 5].indexOf(meta.difficulty) === -1).to.be.false
+    it(`  - 'design' should be set and be a string of reasonable length`, () => {
+      const people = Array.isArray(about.design) ? about.design : [about.design]
+      for (const person of people) {
+        expect(typeof person).to.equal('string')
+        expect(person.length > 2).to.be.true
+        expect(person.length < 80).to.be.true
+      }
+    })
+    it(`  - 'code' should be set and be a string of reasonable length`, () => {
+      const people = Array.isArray(about.code) ? about.code : [about.code]
+      for (const person of people) {
+        expect(typeof person).to.equal('string')
+        expect(person.length > 2).to.be.true
+        expect(person.length < 80).to.be.true
+      }
+    })
+    it(`  - 'dfficulty' should be set and be a [1-5] number`, () => {
+      expect(typeof about.difficulty).to.equal('number')
+      expect([1, 2, 3, 4, 5].indexOf(about.difficulty) === -1).to.be.false
+    })
+
+    // Ensure required measurements are known measurements
+    it('Required measurements:', () => true)
+    for (const measurement of patternConfig.measurements || []) {
+      it(`  - '${measurement}' should be a known measurement`, () => {
+        expect(measurements.indexOf(measurement)).to.not.equal(-1)
       })
     }
-
-    if (!isUtilityDesign(name)) {
-      // Ensure required measurements are known measurements
-      it('Required measurements:', () => true)
-      for (const measurement of patternConfig.measurements || []) {
-        it(`  - '${measurement}' should be a known measurement`, () => {
-          expect(measurements.indexOf(measurement)).to.not.equal(-1)
-        })
-      }
-      it('Optional measurements:', () => true)
-      for (let measurement of patternConfig.optionalMeasurements || []) {
-        it(`  - '${measurement}' should be a known measurement`, () => {
-          expect(measurements.indexOf(measurement)).to.not.equal(-1)
-        })
-      }
-      it('Requests all measurements it uses', () => {
-        const requested = {}
-        const patternMeasies = patternConfig.measurements.concat(patternConfig.optionalMeasurements)
-        for (let measurement of patternMeasies) {
-          requested[measurement] = cisFemaleAdult28[measurement]
-        }
-
-        const draft = new Pattern({
-          measurements: requested,
-        }).draft()
-        const missWarnings = draft.setStores[0].logs.warn.filter((w, i, a) => {
-          return w.match(/tried to access `measurements/) && a.indexOf(w) === i
-        })
-        assert(
-          missWarnings.length === 0,
-          `expected part to request all used measurements. \nThe following measurements were requested in the config: ${patternMeasies.join(
-            ', '
-          )} \nbut got the following warnings: \n${missWarnings.join('\n')}
-          `
-        )
+    it('Optional measurements:', () => true)
+    for (let measurement of patternConfig.optionalMeasurements || []) {
+      it(`  - '${measurement}' should be a known measurement`, () => {
+        expect(measurements.indexOf(measurement)).to.not.equal(-1)
       })
     }
+    it('Requests all measurements it uses', () => {
+      const requested = {}
+      const patternMeasies = patternConfig.measurements.concat(patternConfig.optionalMeasurements)
+      for (let measurement of patternMeasies) {
+        requested[measurement] = cisFemaleAdult28[measurement]
+      }
+
+      const draft = new Pattern({
+        measurements: requested,
+      }).draft()
+      const missWarnings = draft.setStores[0].logs.warn.filter((w, i, a) => {
+        return w.match(/tried to access `measurements/) && a.indexOf(w) === i
+      })
+      assert(
+        missWarnings.length === 0,
+        `expected part to request all used measurements. \nThe following measurements were requested in the config: ${patternMeasies.join(
+          ', '
+        )} \nbut got the following warnings: \n${missWarnings.join('\n')}
+        `
+      )
+    })
 
     // Test validity of the pattern's options
     it('Pattern options:', () => true)

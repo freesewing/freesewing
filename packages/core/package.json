@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/core",
-  "version": "3.3.0-rc.1",
+  "version": "4.0.0",
   "description": "A library for creating made-to-measure sewing patterns",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -26,34 +26,23 @@
     "sewing patterns"
   ],
   "type": "module",
-  "module": "dist/index.mjs",
+  "module": "src/index.mjs",
   "exports": {
-    ".": {
-      "internal": "./src/index.mjs",
-      "default": "./dist/index.mjs"
-    }
+    ".": "./src/index.mjs"
   },
   "scripts": {
-    "build": "node build.mjs",
-    "build:all": "yarn build",
-    "clean": "rimraf dist",
-    "mbuild": "NO_MINIFY=1 node build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "test": "c8 mocha tests/*.test.mjs",
-    "vbuild": "VERBOSE=1 node build.mjs",
-    "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
     "lint": "npx eslint 'src/*.mjs' 'tests/*.mjs'",
     "report": "c8 report",
     "testci": "c8 mocha tests/*.test.mjs",
     "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
-    "jsdoc": "jsdoc -c jsdoc.json -r src",
-    "wbuild": "node build.mjs",
-    "wbuild:all": "yarn wbuild"
+    "jsdoc": "jsdoc -c jsdoc.json -r src"
   },
   "peerDependencies": {},
   "dependencies": {
-    "@freesewing/core-plugins": "3.3.0-rc.1",
+    "@freesewing/core-plugins": "4.0.0",
     "bezier-js": "6.1.4",
     "hooks": "0.3.2",
     "lodash.get": "4.4.2",
@@ -69,14 +58,16 @@
     "sinon": "^18.0.0"
   },
   "files": [
-    "dist/*",
+    "src/",
+    "i18n/",
+    "about.json",
     "README.md"
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
-    "node": ">= 18.17.0 <22"
+    "node": ">= 20"
   }
 }

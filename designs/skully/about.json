@@ -1,0 +1,18 @@
+{
+  "id": "skully",
+  "name": "Skully the FreeSewing mascot",
+  "code": "Wouter Van Wageningen",
+  "description": "A FreeSewing pattern for skully, our logo, a plushy toy",
+  "design": "Wouter Van Wageningen",
+  "difficulty": 4,
+  "tags": [
+    "accessories",
+    "toys"
+  ],
+  "techniques": [
+    "curved-seam",
+    "precision"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/skully"
+}

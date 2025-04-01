@@ -1,0 +1,23 @@
+{
+  "id": "hortensia",
+  "name": "Hortensia handbag",
+  "code": "Wouter Van Wageningen",
+  "description": "A FreeSewing pattern for a handbag",
+  "design": [
+    "Stoffsuchti",
+    "Wouter Van Wageningen"
+  ],
+  "difficulty": 3,
+  "tags": [
+    "accessories",
+    "bags"
+  ],
+  "techniques": [
+    "curved-seam",
+    "precision",
+    "lining",
+    "zipper"
+  ],
+  "version": "4.0.0",
+  "pkg": "@freesewing/hortensia"
+}
