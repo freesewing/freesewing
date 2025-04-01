@@ -245,6 +245,7 @@ studio:
   _:
     chalk: "^5.2.0"
     execa: "^9.5.2"
+    glob: "^11.0.1"
     ora: "^8.2.0"
     prompts: "^2.4.2"
 react:
