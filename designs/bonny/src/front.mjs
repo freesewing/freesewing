@@ -13,8 +13,6 @@ const descendingCheck = [
   ['highBust', 'highBustFront'],
   ['chest', 'bustFront', 'bustSpan'],
   ['waist', 'waistBack'],
-  ['underbust', 'waist'],
-  ['hips', 'waist'],
 ]
 
 const constraintCheck = [
@@ -52,8 +50,9 @@ const constraintCheck = [
     key: 'waistToUpperLeg',
   },
   {
-    lhs: [{ m: 'waist', coefficient: 1 }],
-    rhs: [{ m: 'waistBack', coefficient: 2 }],
+    lhs: [{ m: 'waistBack', coefficient: 2 }],
+    rhs: [{ m: 'waist', coefficient: 1 }],
+    lhsMustBeSmaller: true,
     tolerance: 0.1,
     key: 'waistBack',
   },
@@ -333,11 +332,11 @@ function draftFront({ measurements, Point, Path, points, paths, macro, utils, st
   )
 
   points.outerBustCp1 = points.outerBust.shift(
-    points.outerArmpit.angle(points.outerUnderbust),
+    points.outerBust.angle(points.outerWaist),
     measurements.highBust * 0.02
   )
   points.outerBustCp2 = points.outerBust.shift(
-    points.outerArmpit.angle(points.outerUnderbust),
+    points.outerBust.angle(points.outerWaist),
     measurements.highBust * -0.02
   )
 

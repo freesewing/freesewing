@@ -37,10 +37,6 @@
     "shouldBeLarger-bustFront-bustSpan.d": "The bust span measurement can't be larger than the bust front measurement.",
     "shouldBeLarger-waist-waistBack.t":  "Waist circumference",
     "shouldBeLarger-waist-waistBack.d": "The waist back measurement should be the back part of the waist circumference measurement and thus must be smaller than the total waist circumference.",
-    "shouldBeLarger-underbust-waist.t":  "Underbust smaller than waist circumference",
-    "shouldBeLarger-underbust-waist.d": "The waist circumference measurement should go around the smallest part around your upper body, therefore the underbust measurement is usually larger than the waist circumference. However for some people there might not be a narrowest part around the waist, or the underbust line might actually be the narrowest part, in which case this warning can be ignored.",
-    "shouldBeLarger-hips-waist.t":  "Hips smaller than waist circumference",
-    "shouldBeLarger-hips-waist.d": "The waist circumference measurement should go around the smallest part around your upper body, therefore the hips circumference measurement is usually larger than the waist circumference. However for some people there might not be a narrowest part around the waist, in which case this warning can be ignored.",
 
     "constraint-backChest.t":  "Back chest",
     "constraint-backChest.d": "The difference between the chest circumference and bust front, as well as the difference between high bust and high bust front measure both the back half of the ribcage and thus should be (at least approximately) equal.",
@@ -49,17 +45,17 @@
     "constraint-waistToUpperLeg.t":  "Upper leg above crotch",
     "constraint-waistToUpperLeg.d":  "The waist-to-upper-leg measurement goes from the waist along the body to a bit below the crotch and the inseam measurement goes vertically from the crotch to the floor. Thus, waist to upper leg should be a bit larger than the difference between waist to floor and the inseam measurement.",
     "constraint-waistBack.t": "Back waist",
-    "constraint-waistBack.d":  "The waist back measurement should be roughly half of the waist measurement.",
+    "constraint-waistBack.d":  "The waist back measurement is usually not much bigger than half the waist measurement.",
     "constraint-bustFront.t":  "Bust front",
     "constraint-bustFront.d":  "The bust front measurement is usually a bit larger than half the chest measurement.",
     "constraint-highBustFront.t": "High bust front",
     "constraint-highBustFront.d":  "The high bust front measurement is usually roughly half the high bust measurement.",
 
     "crossseam.t": "Cross seam",
-    "crossseam.d": "We could not construct a plausible cross seam curve using your measurements. You may need to reduce the inseam measurement and check that waist to seat, waist to upper leg, and the cross seam measurements use the same waist line.",
+    "crossseam.d": "We could not draw a cross seam curve using your measurements. Double check the inseam measurement and check that waist to seat, waist to upper leg, and the cross seam measurements use the same waist line.",
 
     "crossseamfront.t": "Cross seam front",
-    "crossseamfront.d": "Your cross seam front measurement seems to be implausible as the calculated fork position doesn't sit on the crotch line."
+    "crossseamfront.d": "We could not determine the fork position on the crotch line. Double check your cross seam measurements and seat measurements."
 },
   "o": { }
 }
