@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/bella",
-  "version": "4.0.0-rc.14",
+  "version": "4.0.0-rc.15",
   "description": "A FreeSewing pattern for a womenswear bodice block",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -38,14 +38,14 @@
     "testci": "NODE_OPTIONS=\"--conditions=internal\" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "4.0.0-rc.14"
+    "@freesewing/core": "4.0.0-rc.15"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.4.0",
     "chai": "5.1.1",
-    "@freesewing/models": "4.0.0-rc.14",
-    "@freesewing/plugin-timing": "4.0.0-rc.14"
+    "@freesewing/models": "4.0.0-rc.15",
+    "@freesewing/plugin-timing": "4.0.0-rc.15"
   },
   "files": [
     "src/",
