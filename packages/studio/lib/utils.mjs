@@ -205,6 +205,7 @@ async function copyTemplateFiles(config) {
   const toCopy = [
     ...(await globDir(join(newDesignDir, `template`))),
     ...(await globDir(join(newDesignDir, `template`, `designs`, `.base`))),
+    ...(await globDir(join(newDesignDir, `template`, `designs`, `.brian`))),
   ].sort()
   for (const file of toCopy) {
     const target = resolve(config.dest, file.slice(dir.length + 1))

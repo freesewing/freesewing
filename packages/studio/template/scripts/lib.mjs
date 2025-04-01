@@ -143,6 +143,8 @@ export async function bundleCustomDesigns() {
     exports.push(Name)
   }
   loader.push('')
-  loader.push(`export const localDesigns = { ${exports.join(',')} }`)
+  loader.push(
+    `export const localDesigns = { ${exports.map((Name) => `${Name.toLowerCase()}: ${Name}`).join(',')} }`
+  )
   await writeFile(path.resolve(path.join('.', 'src', 'local-designs.mjs')), loader.join('\n'))
 }
