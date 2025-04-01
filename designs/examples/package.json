@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/examples",
-  "version": "4.0.0-rc.12",
+  "version": "4.0.0-rc.13",
   "description": "A FreeSewing pattern holding examples for our documentation",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -33,15 +33,15 @@
     "testci": "NODE_OPTIONS=\"--conditions=internal\" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "4.0.0-rc.12",
-    "@freesewing/plugin-gore": "4.0.0-rc.12"
+    "@freesewing/core": "4.0.0-rc.13",
+    "@freesewing/plugin-gore": "4.0.0-rc.13"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.4.0",
     "chai": "5.1.1",
-    "@freesewing/models": "4.0.0-rc.12",
-    "@freesewing/plugin-timing": "4.0.0-rc.12"
+    "@freesewing/models": "4.0.0-rc.13",
+    "@freesewing/plugin-timing": "4.0.0-rc.13"
   },
   "files": [
     "src/",
