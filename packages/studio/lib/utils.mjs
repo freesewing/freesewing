@@ -201,7 +201,11 @@ export const createEnvironment = async (choices) => {
 async function copyTemplateFiles(config) {
   const dir = join(newDesignDir, `template`)
   const dirs = {}
-  const toCopy = (await globDir(join(newDesignDir, `template`))).sort()
+  // Need to explicitly add hidden folders
+  const toCopy = [
+    ...(await globDir(join(newDesignDir, `template`))),
+    ...(await globDir(join(newDesignDir, `template`, `designs`, `.base`))),
+  ].sort()
   for (const file of toCopy) {
     const target = resolve(config.dest, file.slice(dir.length + 1))
     if (isDir(file)) await mkdir(target, { recursive: true })
