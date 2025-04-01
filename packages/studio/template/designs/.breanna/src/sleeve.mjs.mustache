@@ -1,0 +1,12 @@
+import { sleeve as breannaSleeve } from '@freesewing/breanna'
+
+export const sleeve = {
+  from: breannaSleeve,
+  name: '{{ name }}.sleeve',
+  hide: { from: true },
+  measurements: [],
+  options: {},
+  draft: ({ part }) => {
+    return part
+  },
+}

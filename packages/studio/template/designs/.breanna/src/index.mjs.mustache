@@ -1,5 +1,5 @@
 import { Design, mergeI18n } from '@freesewing/core'
-import { i18n as brianI18n } from '@freesewing/brian'
+import { i18n as breannaI18n } from '@freesewing/breanna'
 import { i18n as {{ name }}I18n } from '../i18n/index.mjs'
 import { front } from './front.mjs'
 import { back } from './back.mjs'
@@ -13,7 +13,7 @@ const {{ Name }} = new Design({
 })
 
 // Merge translations
-const i18n = mergeI18n([brianI18n, {{ name }}I18n])
+const i18n = mergeI18n([breannaI18n, {{ name }}I18n])
 
 // Named exports
 export { front, back, sleeve, {{ Name }}, i18n, about }

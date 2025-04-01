@@ -1,0 +1,12 @@
+import { frontSideDart } from '@freesewing/bella'
+
+export const front = {
+  from: frontSideDart,
+  name: '{{ name }}.front',
+  hide: { from: true },
+  measurements: [],
+  options: {},
+  draft: ({ part }) => {
+    return part
+  },
+}

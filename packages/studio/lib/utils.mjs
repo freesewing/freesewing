@@ -1,7 +1,7 @@
 import { config } from './config.mjs'
 import { mkdir, copyFile, opendir } from 'node:fs/promises'
 import { lstatSync } from 'node:fs'
-import { join, resolve } from 'path'
+import { join, resolve, dirname } from 'path'
 import ora from 'ora'
 import chalk from 'chalk'
 import prompts from 'prompts'
@@ -205,12 +205,19 @@ async function copyTemplateFiles(config) {
   const toCopy = [
     ...(await globDir(join(newDesignDir, `template`))),
     ...(await globDir(join(newDesignDir, `template`, `designs`, `.base`))),
+    ...(await globDir(join(newDesignDir, `template`, `designs`, `.bella`))),
+    ...(await globDir(join(newDesignDir, `template`, `designs`, `.bent`))),
+    ...(await globDir(join(newDesignDir, `template`, `designs`, `.breanna`))),
     ...(await globDir(join(newDesignDir, `template`, `designs`, `.brian`))),
+    ...(await globDir(join(newDesignDir, `template`, `designs`, `.titan`))),
   ].sort()
   for (const file of toCopy) {
     const target = resolve(config.dest, file.slice(dir.length + 1))
     if (isDir(file)) await mkdir(target, { recursive: true })
-    else await copyFile(file, target) // Copy file
+    else {
+      await mkdir(dirname(target), { recursive: true })
+      await copyFile(file, target) // Copy file
+    }
   }
 }
 
