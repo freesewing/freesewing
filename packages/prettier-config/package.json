@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/prettier-config",
-  "version": "4.0.0-rc.16",
+  "version": "4.0.0",
   "description": "FreeSewing's shared configuration for prettier",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -36,7 +36,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": ">= 20"

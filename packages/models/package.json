@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/models",
-  "version": "4.0.0-rc.16",
+  "version": "4.0.0",
   "description": "Body measurements data for a range of default sizes",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -43,7 +43,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": ">= 20"

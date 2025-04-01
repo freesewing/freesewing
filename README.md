@@ -89,7 +89,7 @@ To work with FreeSewing's monorepo, you'll need [NodeJS v20](https://nodejs.org)
 Once you have those, clone (or fork) this repo and run `npm run kickstart`:
 
 ```bash
-git clone git@github.com:freesewing/freesewing.git
+git clone git@codeberg.org:freesewing/freesewing.git
 cd freesewing
 npm run kickstart
 ```

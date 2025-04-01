@@ -26,7 +26,7 @@
   "files": ["src/", "i18n/", "about.json", "README.md"],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": ">= 20"

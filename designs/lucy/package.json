@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/lucy",
-  "version": "4.0.0-rc.16",
+  "version": "4.0.0",
   "description": "A FreeSewing pattern for a historical tie-on pocket",
   "author": "SeaZeeZee (https://github.com/SeaZeeZee)",
   "homepage": "https://freesewing.org/",
@@ -38,14 +38,14 @@
     "testci": "NODE_OPTIONS=\"--conditions=internal\" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js"
   },
   "peerDependencies": {
-    "@freesewing/core": "4.0.0-rc.16"
+    "@freesewing/core": "4.0.0"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.4.0",
     "chai": "5.1.1",
-    "@freesewing/models": "4.0.0-rc.16",
-    "@freesewing/plugin-timing": "4.0.0-rc.16"
+    "@freesewing/models": "4.0.0",
+    "@freesewing/plugin-timing": "4.0.0"
   },
   "files": [
     "src/",
@@ -55,7 +55,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": ">= 20"
