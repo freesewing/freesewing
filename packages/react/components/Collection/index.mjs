@@ -351,7 +351,8 @@ const Difficulty = ({ score = 0, className = '' }) => (
 )
 
 const linkBuilders = {
-  new: (design) => `/-/?d=${design.toLowerCase()}`,
+  new: (design) =>
+    `/editor/#s={%22design%22%3A%22${design.toLowerCase()}%22%2C%22view%22%3A%22draft%22}`,
   docs: (design) => `/docs/designs/${design.toLowerCase()}/`,
   about: (design) => `/designs/${design.toLowerCase()}/`,
 }

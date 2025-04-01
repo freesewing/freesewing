@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/studio",
-  "version": "4.0.0-rc.11",
+  "version": "4.0.0-rc.12",
   "description": "Initializer package for a the FreeSewing design studio: npx @freesewing/studio",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
