@@ -1,21 +1,21 @@
+import { pctBasedOn } from '@freesewing/core'
 import { cup } from './cup.mjs'
 
 export const bandTie = {
   name: 'bee.bandTie',
   after: cup,
   options: {
+    //Style
     bandTieWidth: {
       pct: 3,
       min: 1,
       max: 9,
-      snap: {
-        metric: [6, 13, 19, 25, 32, 38],
-        imperial: [6.35, 12.7, 19.05, 25.4, 31.75, 38.1],
-      },
-      toAbs: (pct, { measurements }) => measurements.hpsToWaistFront * pct,
+      snap: 6.35,
+      ...pctBasedOn('hpsToWaistFront'),
       menu: 'style',
     },
-    bandTieLength: { pct: 35, min: 30, max: 50, menu: 'style' },
+    pointedBandTieEnds: { bool: false, menu: 'style' },
+    duoBandTieColours: { bool: false, menu: 'style' },
   },
   draft: ({
     store,
@@ -25,132 +25,145 @@ export const bandTie = {
     Path,
     paths,
     options,
-    complete,
     macro,
     measurements,
     snippets,
     expand,
     Snippet,
+    paperless,
     utils,
     absoluteOptions,
     part,
   }) => {
-    if (!options.ties && !options.crossBackTies) part.hide()
-
+    //lock option
+    if (options.reversible) options.duoBandTieColours = true
+    //measures
     const bandTieLength = options.crossBackTies
       ? (measurements.underbust * options.bandLength) / 2 + options.neckTieWidth * 2
-      : (measurements.underbust + measurements.underbust * options.bandTieLength) / 2
-    const bandTieWidth = options.crossBackTies
-      ? absoluteOptions.bandTieWidth * 2
-      : absoluteOptions.bandTieWidth
+      : (measurements.underbust * (1 + options.bandTieLength)) / 2
+    const bandTieWidth =
+      options.crossBackTies || !options.duoBandTieColours
+        ? absoluteOptions.bandTieWidth * 2
+        : absoluteOptions.bandTieWidth
 
     /*
      * Don't bother unless expand is set
      */
-    if (!expand) {
-      points.text = new Point(10, 10)
-        .addText('bee:cutBandTie', 'fill-note')
-        .addText(':')
-        .addText(utils.units((bandTieWidth + sa) * 2))
-        .addText(' x ')
-        .addText(utils.units(bandTieLength))
-      paths.diag = new Path().move(new Point(0, 0)).line(new Point(100, 15)).addClass('hidden')
+    if (((!expand && !options.pointedBandTieEnds) || !options.ties) && !options.crossBackTies) {
+      const extraSa = sa ? 2 * sa : 0
+      store.flag.note({
+        msg: `bee:cutBandTie`,
+        notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded'],
+        replace: {
+          width: utils.units(bandTieWidth + extraSa),
+          length: utils.units(bandTieLength * 2),
+        },
+      })
 
       return part
     }
-
+    //let's begin
     points.topLeft = new Point(0, 0)
-    points.topRight = new Point(bandTieWidth * 2, points.topLeft.y)
+    points.topRight = new Point(bandTieWidth, points.topLeft.y)
     points.bottomLeft = new Point(points.topLeft.x, bandTieLength)
-    points.bottomRight = new Point(points.topRight.x, bandTieLength)
+    points.bottomRight = new Point(points.topRight.x, points.bottomLeft.y)
+    points.topMid = new Point(points.topRight.x / 2, points.topLeft.y)
+    points.bottomMid = new Point(points.topMid.x, points.bottomLeft.y)
 
-    points.topMiddle = new Point(bandTieWidth, points.topLeft.y)
-    if (!options.crossBackTies && options.pointedTieEnds) points.topMiddle.y -= bandTieWidth
+    points.topPeak =
+      options.crossBackTies || !options.pointedBandTieEnds
+        ? points.topMid
+        : options.duoBandTieColours
+          ? points.topRight.shift(90, bandTieWidth)
+          : points.topMid.shift(90, bandTieWidth / 2)
+    //paths
+    paths.seam = new Path()
+      .move(points.bottomRight)
+      .line(points.topRight)
+      .line(points.topPeak)
+      .line(points.topLeft)
+      .line(points.bottomLeft)
+      .close()
+      .addClass('fabric')
 
-    points.bottomMiddle = new Point(points.topMiddle.x, bandTieLength)
+    if (sa) paths.sa = paths.seam.offset(sa).close().addClass('fabric sa')
 
-    paths.seam = options.duoColorTies
-      ? new Path().move(points.bottomMiddle)
-      : new Path().move(points.bottomRight).line(points.topRight)
-    paths.seam.line(points.topMiddle).line(points.topLeft).line(points.bottomLeft).close()
-
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-
-    /*
-     * Annotations
-     */
-
-    // Cut list
-    if (options.crossBackTies) store.cutlist.addCut({ cut: 1, from: 'fabric' })
-    else store.cutlist.addCut({ cut: 2, from: 'fabric' })
-
-    points.cofLeft = points.bottomLeft.shift(0, bandTieWidth * (1 / 8))
-    points.grainlineLeft = points.topLeft.translate(bandTieWidth * (1 / 8), bandTieLength * (3 / 4))
-    // Title
-    points.title = points.topLeft.translate(bandTieWidth * (1 / 8), bandTieLength * (1 / 4))
+    //detail
+    //grainline
+    points.cutOnFoldFrom = points.bottomLeft
+    points.cutOnFoldTo = points.bottomRight
+    macro('cutonfold', {
+      from: points.cutOnFoldFrom,
+      to: points.cutOnFoldTo,
+      grainline: true,
+    })
+    //cutlist
+    store.cutlist.addCut({ cut: 1, from: 'fabric', onfold: 'true' })
+    if (options.duoBandTieColours && !options.crossBackTies)
+      store.cutlist.addCut({ cut: 1, from: 'constrast', onfold: 'true' })
+    //notches
+    if (options.crossBackTies) {
+      points.sideNotchLeft = points.bottomLeft.shift(90, store.get('cupWidth'))
+      points.sideNotchRight = points.sideNotchLeft.flipX(points.topMid)
+      macro('sprinkle', {
+        snippet: 'notch',
+        on: ['bottomRight', 'sideNotchLeft', 'sideNotchRight'],
+      })
+    }
+    //title
+    points.title = points.topLeft.translate(bandTieWidth / 8, bandTieLength / 4)
     macro('title', {
       at: points.title,
       nr: 3,
       title: options.crossBackTies ? 'band' : 'bandTie',
-      scale: 0.7,
+      scale: 0.5,
     })
-
-    // Foldline
-    if (options.duoColorTies) {
-      points.cofRight = points.bottomLeft.shift(0, bandTieWidth * (7 / 8))
-      points.grainlineRight = points.grainlineLeft.shift(0, bandTieWidth * (7 / 8))
-    } else {
-      points.cofRight = points.bottomLeft.shift(0, bandTieWidth * (15 / 8))
-      points.grainlineRight = points.grainlineLeft.shift(0, bandTieWidth * (14 / 8))
-      if (complete)
-        paths.foldline = new Path()
-          .move(points.bottomMiddle)
-          .line(points.topMiddle)
-          .addText('foldLine', 'center fill-note text-sm')
-          .attr('class', 'note help')
+    //fold-line
+    if (options.crossBackTies || !options.duoBandTieColours) {
+      paths.foldline = new Path()
+        .move(points.topPeak)
+        .line(points.bottomMid)
+        .addText('foldLine', 'center fill-note text-sm')
+        .addClass('note help')
     }
+    //paperless
+    if (paperless) {
+      macro('vd', {
+        from: points.topLeft,
+        to: points.bottomLeft,
+        x: points.topLeft.x - sa - 15,
+        id: 'vd0',
+      })
+      macro('hd', {
+        from: points.bottomLeft,
+        to: points.bottomRight,
+        y: points.bottomLeft.y + sa + 15,
+        id: 'hd0',
+      })
 
-    // Grainline
-    macro('grainline', {
-      from: points.grainlineLeft,
-      to: points.grainlineRight,
-      classes: {
-        text: 'text-sm fill-note',
-        line: 'stroke-sm',
-      },
-    })
-
-    // Cut on fold
-    macro('cutonfold', {
-      from: points.cofLeft,
-      to: points.cofRight,
-      offset: 10,
-      classes: {
-        text: 'text-sm center fill-note',
-        line: 'stroke-sm note',
-      },
-    })
-
-    if (complete && options.crossBackTies) {
-      let gatherLength = store.get('gatherLength')
-      snippets.centreNotch = new Snippet('notch', points.bottomRight)
-      points.sideNotch = points.bottomRight.shift(90, gatherLength)
-      snippets.sideNotch = new Snippet('notch', points.sideNotch)
+      if (options.pointedBandTieEnds && !options.crossBackTies) {
+        macro('vd', {
+          from: points.topPeak,
+          to: points.topLeft,
+          x: points.topLeft.x - sa - 15,
+          id: 'vdP0',
+        })
+        macro('vd', {
+          from: points.topPeak,
+          to: points.bottomLeft,
+          x: points.topLeft.x - sa - 30,
+          id: 'vdP1',
+        })
+        if (!options.duoBandTieColours) {
+          macro('hd', {
+            from: points.topLeft,
+            to: points.topPeak,
+            y: points.topPeak.y - sa - 15,
+            id: 'hdP0',
+          })
+        }
+      }
     }
-
-    macro('vd', {
-      id: 'hLeft',
-      from: points.bottomLeft,
-      to: points.topLeft,
-      x: points.topLeft.x - sa - 20,
-    })
-    macro('hd', {
-      id: 'wTop',
-      from: points.topLeft,
-      to: options.duoColorties ? points.middleRight : points.topRight,
-      y: points.topLeft.x - sa - 20,
-    })
-
     return part
   },
 }
