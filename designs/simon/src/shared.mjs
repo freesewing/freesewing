@@ -129,7 +129,10 @@ export const draftBarrelCuff = (part) => {
 export const decorateBarrelCuff = (part) => {
   const { macro, store, snippets, Snippet, points, measurements, options, Point } = part.shorthand()
   // Cutlist
-  store.cutlist.setCut({ cut: 4, from: 'fabric' })
+  store.cutlist.setCut([
+    { cut: 4, from: 'fabric' },
+    { cut: 2, from: 'interfacing' },
+  ])
 
   // Title
   points.title = new Point(points.bottomRight.x / 2, points.bottomRight.y / 2)
@@ -188,7 +191,10 @@ export const draftFrenchCuff = (part) => {
 export const decorateFrenchCuff = (part) => {
   const { macro, store, snippets, Snippet, points, measurements, options, Point } = part.shorthand()
   // Cutlist
-  store.cutlist.setCut({ cut: 4, from: 'fabric' })
+  store.cutlist.setCut([
+    { cut: 4, from: 'fabric' },
+    { cut: 2, from: 'interfacing' },
+  ])
 
   // Title
   points.title = new Point(points.bottomRight.x / 2, points.bottomRight.y / 2)
