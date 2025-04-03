@@ -68,7 +68,7 @@ function shinFront({
   if (options.rise > 0) {
     let shift = (measurements.waistToUpperLeg - measurements.waistToHips) * options.rise
     points.hipSide = points.hipSide.shift(90, shift)
-    points.hipCb = points.hipCb.shift(0, shift)
+    points.hipCb = points.hipCb.shift(90, shift)
   }
 
   // Back rise
