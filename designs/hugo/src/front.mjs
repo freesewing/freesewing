@@ -61,6 +61,8 @@ function hugoFront({
   const neckOpening = new Path()
     .move(points.cfNeck)
     .curve(points.cfNeckCp1, points.neckCp2, points.neck)
+  const length = neckOpening.length() * 2
+  store.set('back_neck_len', length)
   points.raglanTipFront = neckOpening.shiftFractionAlong(0.8)
   const neckOpeningParts = neckOpening.split(points.raglanTipFront)
 

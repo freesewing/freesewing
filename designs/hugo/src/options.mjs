@@ -1,4 +1,3 @@
-export const collarEase = 0.05
 export const armholeDepthFactor = 0.5
 export const shoulderEase = 0
 export const shoulderSlopeReduction = 0
@@ -14,3 +13,4 @@ export const lengthBonus = { pct: 10, min: 0, max: 20, menu: 'style' }
 export const sleeveLengthBonus = { pct: 2, min: 0, max: 10, menu: 'style' }
 export const ribbingHeight = { pct: 10, min: 4, max: 20, menu: 'style' }
 export const pocketWidth = { pct: 50, min: 35, max: 65, menu: 'style' }
+export const collarEase = { pct: 15, min: 0, max: 40, menu: 'fit' }
