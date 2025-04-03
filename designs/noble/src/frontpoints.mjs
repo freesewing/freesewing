@@ -290,6 +290,7 @@ export const frontPoints = {
         )
         .curve(points.armholeOutsidePitchCp1, points.armholeCp2, points.armhole)
         .hide()
+        points.armholeOutsidePitchCp2 = points.armholeCp2.clone()
     }
 
     paths.armholeTempDart = new Path()
