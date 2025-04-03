@@ -442,6 +442,13 @@ export const fbaFront = {
       menu: 'style.closure',
     },
     lengthBonus: { pct: 25, min: -4, max: 60, menu: 'fit' },
+    buttonFreeLength: {
+      pct: 2,
+      min: -10,
+      max: 15,
+      menu: (settings, mergedOptions) =>
+        mergedOptions.bustAlignedButtons === 'even' ? false : 'style.closure',
+    },
   },
   draft: simoneFbaFront,
 }
