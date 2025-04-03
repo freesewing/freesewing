@@ -119,7 +119,7 @@ function draftPocketBib({
 }
 
 export const pocketBib = {
-  name: 'pocketBib',
+  name: 'opal.pocketBib',
   draft: draftPocketBib,
   from: bib,
 }

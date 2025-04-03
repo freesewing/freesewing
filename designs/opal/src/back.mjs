@@ -634,7 +634,7 @@ function draftBack({
 }
 
 export const back = {
-  name: 'back',
+  name: 'opal.back',
   after: bib,
   draft: draftBack,
   options: {

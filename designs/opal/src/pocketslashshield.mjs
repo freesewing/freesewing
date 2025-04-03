@@ -79,7 +79,7 @@ function draftPocketSlashShield({
 }
 
 export const pocketSlashShield = {
-  name: 'pocketSlashShield',
+  name: 'opal.pocketSlashShield',
   draft: draftPocketSlashShield,
   from: pocketSlash,
 }

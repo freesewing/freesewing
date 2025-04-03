@@ -298,7 +298,7 @@ function draftFront({
 }
 
 export const front = {
-  name: 'front',
+  name: 'opal.front',
   measurements: [
     'waist',
     'waistBack',

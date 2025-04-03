@@ -121,7 +121,7 @@ function draftStrapAttachments({
 }
 
 export const strapAttachments = {
-  name: 'strapAttachments',
+  name: 'magde.strapAttachments',
   options: {
     size: { pct: 100, min: 15, max: 200, menu: 'style' },
     taperRatio: { pct: 60, min: 50, max: 100, menu: 'style' },

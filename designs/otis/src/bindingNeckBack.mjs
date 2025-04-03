@@ -1,7 +1,7 @@
 import { bindingLeg } from './bindingLeg.mjs'
 
 export const bindingNeckBack = {
-  name: 'bindingNeckBack',
+  name: 'otis.bindingNeckBack',
   after: [bindingLeg],
   draft: ({
     Point,

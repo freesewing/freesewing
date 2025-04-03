@@ -1,7 +1,7 @@
 import { back } from './back.mjs'
 
 export const shortsleeve = {
-  name: 'shortsleeve',
+  name: 'otis.shortsleeve',
   after: back,
   options: {
     sleeveType: { dflt: 'short', list: ['short', 'long'], menu: 'style' },

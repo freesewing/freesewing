@@ -3,7 +3,7 @@ import { front } from './front.mjs'
 import { shortsleeve } from './shortsleeve.mjs'
 
 export const bindingLeg = {
-  name: 'bindingLeg',
+  name: 'otis.bindingLeg',
   after: [back, front, shortsleeve],
   options: {
     binding: {

@@ -1,7 +1,7 @@
 import { pctBasedOn } from '@freesewing/core'
 
 export const back = {
-  name: 'back',
+  name: 'otis.back',
   measurements: ['waist'],
   options: {
     ease: { pct: 14, min: 0, max: 30, ...pctBasedOn('waist'), menu: 'fit' },

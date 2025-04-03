@@ -95,7 +95,7 @@ function draftTwoPieceLidBottom({
 }
 
 export const twoPieceLidBottom = {
-  name: 'twoPieceLidBottom',
+  name: 'magde.twoPieceLidBottom',
   options: {
     size: { pct: 100, min: 15, max: 200, menu: 'style' },
     taperRatio: { pct: 60, min: 50, max: 100, menu: 'style' },

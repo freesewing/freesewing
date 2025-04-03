@@ -201,7 +201,7 @@ function draftPocketSlash({
 }
 
 export const pocketSlash = {
-  name: 'pocketSlash',
+  name: 'opal.pocketSlash',
   draft: draftPocketSlash,
   after: front,
 }

@@ -321,7 +321,7 @@ function draftBib({
 }
 
 export const bib = {
-  name: 'bib',
+  name: 'opal.bib',
   draft: draftBib,
   options: {
     // How much extra fabric to put in the waist, horizontally, to help the overalls fit around the belly. Larger values work better on larger bellies.

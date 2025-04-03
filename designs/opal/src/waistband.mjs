@@ -110,7 +110,7 @@ function draftWaistband({
 }
 
 export const waistband = {
-  name: 'waistband',
+  name: 'opal.waistband',
   draft: draftWaistband,
   after: front,
 }
