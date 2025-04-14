@@ -35,7 +35,7 @@ ApikeysController.prototype.list = async (req, res, tools) => {
 /*
  * Read API key
  *
- * This is the endpoint that handles creation of API keys/tokens
+ * This is the endpoint that handles reading of API keys/tokens
  * See: https://freesewing.dev/reference/backend/api/apikey
  */
 ApikeysController.prototype.read = async (req, res, tools) => {
