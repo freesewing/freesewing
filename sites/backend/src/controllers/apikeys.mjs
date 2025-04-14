@@ -66,6 +66,7 @@ ApikeysController.prototype.whoami = async (req, res, tools) => {
       apikey: {
         key: key[0].id,
         level: key[0].level,
+        createdAt: key[0].createdAt,
         expiresAt: key[0].expiresAt,
         name: Apikey.decrypt(key[0].name),
         userId: key[0].userId,
