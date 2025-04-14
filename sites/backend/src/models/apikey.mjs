@@ -161,7 +161,7 @@ ApikeyModel.prototype.userApikeys = async function (uid) {
      * Something went wrong, log a warning and return 404
      */
     log.warn(`Failed to search apikeys for user ${uid}: ${err}`)
-    return this.setResponse(404)
+    return false
   }
 
   /*
