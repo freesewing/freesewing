@@ -1,5 +1,6 @@
 ---
 title: Extending options
+toc_max_heading_level: 4
 ---
 
 Additional, optional information can be added to options to extend
@@ -8,12 +9,13 @@ This can be useful when using FreeSewing through a frontend UI.
 The extended information can be used by the frontend to affect
 how options are presented.
 
-
 ## Add menu structure
 
 Because FreeSewing designs have been written with the expectation that
 they will be used primarily through the freesewing.org website,
 their options have been extended with menu information.
+
+Example:
 
 ```js
 options: {
@@ -23,31 +25,69 @@ options: {
   // Style
   waistHeight: { pct: 5, min: 0, max: 100, menu: 'style', order: '400' },
   lengthBonus: { pct: 0, min: -15, max: 10, menu: 'style', order: '300' },
+  // Style -> Closure
   elasticatedCuff: { bool: true, menu: 'style' },
-  buttons = { count: 7, min: 4, max: 12, menu: 'style.closure', order: '800' }
-  extraTopButton = { bool: true, menu: 'style.closure', order: '850' }
+  buttons = { count: 7, min: 4, max: 12, menu: 'style.closure', order: '800' },
+  extraTopButton = { bool: true, menu: 'style.closure', order: '850' },
+
+  // Conditional menu item
+  specialTopButton = {
+    bool: false,
+    menu: (settings, mergedOptions) =>
+      (mergedOptions?.extraTopButton ? 'style.closure' : false),
+    order: '860' },
 }
 ```
 
-In the above example, the added `menu` attributes provide the
-freesewing.org website UI with information about the options
-should appear in menus.
-- The `waistEase` and `seatEase` options should appear in the `fit`
-menu while the other options go in the `style` menu.
-- Additionally, the `buttons` and `extraTopButton` options should
-appear in a `closure` submenu under the `style` menu.
+### The `menu` property
 
-The optional 'order' attributes provide the UI with information about
-the order in which options and menus should appear.
-- Within the `fit` menu, `waistEase` should come before `seatEase`.
-- Within the `style` menu, options should be in the order
-`lengthBonus`, `waistHeight`, `buttons`, `extraTopButton`, and
-`elasticatedCuff`.
-- The `elasticatedCuff` option does not have an `order` attribute,
-so it should appear after the options that do.
-- Because the `fit` menu has an option with an `order` value that comes
-before any of the `order` values for options in the `style` menu,
-the `fit` menu should appear before the `style` menu.
+The optional `menu` property provides the freesewing.org website UI
+with information about the menu in which the option should appear.
+
+#### Regular menus
+
+If the `menu` property is a string, its value is used as the name of the menu.
+
+- Period characters in the string are delimiters that indicate submenus.
+- If there is no `menu` property or if it is set to `false`,
+  the option will not appear in the UI menus.
+- In the example above:
+  - The `waistEase` option appears in the "fit" menu, and `waistHeight`
+    appears in the "style" menu.
+  - The `buttons` and `extraTopButton` options appear in the "closure"
+    submenu under the "style" menu.
+
+#### Conditional menus
+
+If the `menu` property is a function, the UI will evaluate the
+function to determine the value of the property.
+
+- If the result of the function is a string, that will be the menu
+  in which the option appears.
+- If the result of the function is `false`, then the option will
+  not appear in the UI menus.
+- In the example above:
+  - The `specialTopButton` option appears in the "closure" submenu under
+    the "style" menu if the `extraTopButton` option is set to `true`.
+  - The `specialTopbutton` option does not appear in the UI menus if
+    `extraTopButton` is set to `false`.
+
+The function should have the following signature:
+
+```js
+function menu(settings, mergedOptions) {
+  // return value here
+}
+```
+
+The first parameter holds the pattern's [settings](/reference/settings) object
+which holds -- among other things -- the measurements provided by the user.
+
+The second parameter holds the return value of
+[utils.mergeOptions()](/reference/api/utils/mergeoptions),
+which provides an object with all option values populated.
+Although this parameter is not required for simple values based on
+measurements, it is often required when the result depends on several options.
 
 :::note
 
@@ -59,22 +99,42 @@ frontend integration.
 
 :::
 
+### The `order` property
+
+The optional 'order' property provides the UI with information about
+the order in which options and menus should appear.
+
+- The `order` property value is used as the sort key.
+- Ordering is performed using an alphabetic, not numeric, sort.
+  For example, `order` value "99" will be placed _after_ "100" because
+  "1" comes before "9" alphabetically.
+  However, "099" will be placed before "100", so using leading zeros
+  can be helpful when using numbers as `order` values.
+- After they have been ordered using `order` attribute, if present,
+  design options and menus are arranged in alphabetical order by
+  their names.
+- The `advanced` menu, if present, is always ordered to
+  be the last menu, appearing after all other menus.
+- In the example above:
+  - Within the "fit" menu, `waistEase` appears `seatEase`.
+  - Within the "style" menu, options should be in the order
+    `lengthBonus`, `waistHeight`, `buttons`, `extraTopButton`, and
+    `elasticatedCuff`.
+  - The `elasticatedCuff` option does not have an `order` attribute,
+    so it appears after the options that do.
+  - Because the "fit" menu has an option with an `order` value that comes
+    before any of the `order` values for options in the "style" menu,
+    the "fit" menu appears before the "style" menu.
+
 :::note
 
-freesewing.org UI behavior:
-- Ordering is performed using an alphabetic, not numeric, sort.
-For example, `order` value "99" will be placed _after_ "100" because
-"1" comes before "9" alphabetically.
-However, "099" will be placed before "100", so using leading zeros
-can be helpful when using numbers as `order` values.
-- After they have been ordered using `order` attribute, if present,
-design options and menus are arranged in alphabetical order by
-their names.
-- However, the `advanced` menu, if present, is always ordered to
-be the last menu, appearing after all the other menus.
+##### This is not a core feature
+
+To be clear, setting this here does not do anything in core.
+It's merely extra metadata you can add on the option to facilitate
+frontend integration.
 
 :::
-
 
 ## Suppress translation
 
@@ -119,4 +179,3 @@ To be clear, setting this here does not do anything in core. It's merely extra
 metadata you can add on the option to facilitate frontend integration.
 
 :::
-
