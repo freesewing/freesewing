@@ -24,30 +24,29 @@ function draftBib({
   part,
 }) {
 
-points.topLeft = new Point(0,0)
-points.bottomRight = new Point(100,40)
-points.topRight = new Point(points.bottomRight.x, points.topLeft.y)
-points.bottomLeft = new Point(points.topLeft.x, points.bottomRight.y)
-points.cp1 = new Point(50, 20)
-points.cp2 = new Point(70, 60)
+  points.topLeft = new Point(0,0)
+  points.bottomRight = new Point(100,40)
+  points.topRight = new Point(points.bottomRight.x, points.topLeft.y)
+  points.bottomLeft = new Point(points.topLeft.x, points.bottomRight.y)
+  points.cp1 = new Point(50, 20)
+  points.cp2 = new Point(70, 60)
 
-paths.shape = new Path()
-.move(points.topLeft)
-.line(points.bottomLeft)
-.curve(points.cp1, points.cp2, points.bottomRight)
-.line(points.topRight)
-.line(points.topLeft)
-.close()
-.addClass('fabric')
+  paths.shape = new Path()
+    .move(points.topLeft)
+    .line(points.bottomLeft)
+    .curve(points.cp1, points.cp2, points.bottomRight)
+    .line(points.topRight)
+    .line(points.topLeft)
+    .close()
+    .addClass('fabric')
 
-// highlight-start
-if (sa) paths.sa = paths.shape.offset(sa).addClass('fabric sa')
-// highlight-end
+  // highlight-start
+  if (sa) paths.sa = paths.shape.offset(sa).addClass('fabric sa')
+  // highlight-end
 
-return part
+  return part
 }
-
-````
+```
 </Example>
 
 As you can see from the source, we can destructure an `sa` variable (short for
