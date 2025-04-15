@@ -84,8 +84,11 @@ Attributes.prototype.asRenderProps = function () {
  * @return {object} this - The Attributes instance
  */
 Attributes.prototype.clone = function () {
+  const cloneableList = {}
+  for (const key in this.list)
+    if (key.indexOf('noclone') === -1) cloneableList[key] = this.list[key]
   let clone = new Attributes()
-  clone.list = JSON.parse(JSON.stringify(this.list))
+  clone.list = JSON.parse(JSON.stringify(cloneableList))
 
   return clone
 }
